@@ -8,7 +8,6 @@ import typings.webpackConcatPlugin.webpackConcatPluginStrings.none
 import typings.webpackConcatPlugin.webpackConcatPluginStrings.prepend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,7 +17,9 @@ object mod {
     */
   @JSImport("webpack-concat-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends ConcatPlugin {
+  class ^ ()
+    extends StObject
+       with ConcatPlugin {
     def this(options: Options) = this()
   }
   
@@ -26,7 +27,9 @@ object mod {
     * A plugin to help webpack concat js and inject into html
     */
   @js.native
-  trait ConcatPlugin extends Plugin {
+  trait ConcatPlugin
+    extends StObject
+       with Plugin {
     
     def ensureTrailingSlash(str: String): String = js.native
     
@@ -50,17 +53,16 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** if set, will be used as the extra attributes of the script tag. */
-    var attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * if set, will be used as the output fileName
       * @default '[name].js'
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /**
       * supported path patterns:
@@ -68,44 +70,44 @@ object mod {
       * - npm packages
       * - glob
       */
-    var filesToConcat: js.Array[String | js.Array[String]] = js.native
+    var filesToConcat: js.Array[String | js.Array[String]]
     
     /**
       * how to auto inject to html-webpack-plugin
       * (only if html-webpack-plugin set inject option not to be false)
       * @default 'prepend'
       */
-    var injectType: js.UndefOr[prepend | append | none] = js.native
+    var injectType: js.UndefOr[prepend | append | none] = js.undefined
     
     /**
       * it's useful when you want to inject to html-webpack-plugin manually
       * @default 'result'
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * if set, will be used as the output directory of the file.
       */
-    var outputPath: js.UndefOr[String] = js.native
+    var outputPath: js.UndefOr[String] = js.undefined
     
     /**
       * if set, will be used as the public path of the script tag.
       * if set to false, will use relativePath.
       */
-    var publicPath: js.UndefOr[String | Boolean] = js.native
+    var publicPath: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * if true, will output sourcemap
       * @default false
       */
-    var sourceMap: js.UndefOr[Boolean] = js.native
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if true the output file will be uglified
       * or set uglifyjs options to customize the output
       * @default false
       */
-    var uglify: js.UndefOr[Boolean | MinifyOptions] = js.native
+    var uglify: js.UndefOr[Boolean | MinifyOptions] = js.undefined
   }
   object Options {
     

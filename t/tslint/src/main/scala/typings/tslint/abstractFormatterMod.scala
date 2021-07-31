@@ -5,14 +5,15 @@ import typings.tslint.formatterMod.IFormatterMetadata
 import typings.tslint.ruleMod.RuleFailure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractFormatterMod {
   
   @JSImport("tslint/lib/language/formatter/abstractFormatter", "AbstractFormatter")
   @js.native
-  abstract class AbstractFormatter () extends IFormatter {
+  abstract class AbstractFormatter ()
+    extends StObject
+       with IFormatter {
     
     /* protected */ def sortFailures(failures: js.Array[RuleFailure]): js.Array[RuleFailure] = js.native
   }

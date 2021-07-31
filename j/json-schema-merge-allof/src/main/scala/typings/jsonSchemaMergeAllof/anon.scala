@@ -7,31 +7,53 @@ import typings.jsonSchemaMergeAllof.mod.MergeSchemas
 import typings.jsonSchemaMergeAllof.mod.Options_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AdditionalProperties extends StObject {
     
-    def additionalProperties[T /* <: JSONSchema */](schemas: js.Array[T]): T = js.native
+    def additionalProperties[T /* <: JSONSchema */](schemas: js.Array[T]): T
     @JSName("additionalProperties")
-    var additionalProperties_Original: MergeSchemas = js.native
+    var additionalProperties_Original: MergeSchemas
     
-    def patternProperties[T /* <: JSONSchema */](schemas: js.Array[T], childSchemaName: String): T = js.native
+    def patternProperties[T /* <: JSONSchema */](schemas: js.Array[T], childSchemaName: String): T
     @JSName("patternProperties")
-    var patternProperties_Original: MergeChildSchemas = js.native
+    var patternProperties_Original: MergeChildSchemas
     
-    def properties[T /* <: JSONSchema */](schemas: js.Array[T], childSchemaName: String): T = js.native
+    def properties[T /* <: JSONSchema */](schemas: js.Array[T], childSchemaName: String): T
     @JSName("properties")
-    var properties_Original: MergeChildSchemas = js.native
+    var properties_Original: MergeChildSchemas
+  }
+  object AdditionalProperties {
+    
+    @scala.inline
+    def apply(
+      additionalProperties: /* schemas */ js.Array[JSONSchema] => JSONSchema,
+      patternProperties: (/* schemas */ js.Array[JSONSchema], /* childSchemaName */ String) => JSONSchema,
+      properties: (/* schemas */ js.Array[JSONSchema], /* childSchemaName */ String) => JSONSchema
+    ): AdditionalProperties = {
+      val __obj = js.Dynamic.literal(additionalProperties = js.Any.fromFunction1(additionalProperties), patternProperties = js.Any.fromFunction2(patternProperties), properties = js.Any.fromFunction2(properties))
+      __obj.asInstanceOf[AdditionalProperties]
+    }
+    
+    @scala.inline
+    implicit class AdditionalPropertiesMutableBuilder[Self <: AdditionalProperties] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAdditionalProperties(value: /* schemas */ js.Array[JSONSchema] => JSONSchema): Self = StObject.set(x, "additionalProperties", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setPatternProperties(value: (/* schemas */ js.Array[JSONSchema], /* childSchemaName */ String) => JSONSchema): Self = StObject.set(x, "patternProperties", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setProperties(value: (/* schemas */ js.Array[JSONSchema], /* childSchemaName */ String) => JSONSchema): Self = StObject.set(x, "properties", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
   trait Contains extends StObject {
     
-    var contains: js.UndefOr[js.Any] = js.native
+    var contains: js.UndefOr[js.Any] = js.undefined
   }
   object Contains {
     
@@ -52,7 +74,6 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultResolver[Schema /* <: JSONSchema */] extends StObject {
     
     /**
@@ -74,13 +95,13 @@ object anon {
       */
     var defaultResolver: js.UndefOr[
         js.Function4[
-          /* values */ js.Array[_], 
+          /* values */ js.Array[js.Any], 
           /* path */ js.Array[String], 
           /* mergeSchemas */ MergeSchemas, 
           /* options */ Options_[Schema], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object DefaultResolver {
     
@@ -91,11 +112,11 @@ object anon {
     }
     
     @scala.inline
-    implicit class DefaultResolverMutableBuilder[Self <: DefaultResolver[_], Schema /* <: JSONSchema */] (val x: Self with DefaultResolver[Schema]) extends AnyVal {
+    implicit class DefaultResolverMutableBuilder[Self <: DefaultResolver[?], Schema /* <: JSONSchema */] (val x: Self & DefaultResolver[Schema]) extends AnyVal {
       
       @scala.inline
       def setDefaultResolver(
-        value: (/* values */ js.Array[_], /* path */ js.Array[String], /* mergeSchemas */ MergeSchemas, /* options */ Options_[Schema]) => _
+        value: (/* values */ js.Array[js.Any], /* path */ js.Array[String], /* mergeSchemas */ MergeSchemas, /* options */ Options_[Schema]) => js.Any
       ): Self = StObject.set(x, "defaultResolver", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -103,10 +124,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Examples extends StObject {
     
-    var examples: js.UndefOr[js.Any] = js.native
+    var examples: js.UndefOr[js.Any] = js.undefined
   }
   object Examples {
     
@@ -127,11 +147,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
     @JSName("$id")
-    var $id: js.UndefOr[js.Any] = js.native
+    var $id: js.UndefOr[js.Any] = js.undefined
   }
   object Id {
     
@@ -152,16 +171,15 @@ object anon {
     }
   }
   
-  @js.native
   trait IgnoreAdditionalProperties extends StObject {
     
-    var ignoreAdditionalProperties: `true` = js.native
+    var ignoreAdditionalProperties: `true`
   }
   object IgnoreAdditionalProperties {
     
     @scala.inline
-    def apply(ignoreAdditionalProperties: `true`): IgnoreAdditionalProperties = {
-      val __obj = js.Dynamic.literal(ignoreAdditionalProperties = ignoreAdditionalProperties.asInstanceOf[js.Any])
+    def apply(): IgnoreAdditionalProperties = {
+      val __obj = js.Dynamic.literal(ignoreAdditionalProperties = true)
       __obj.asInstanceOf[IgnoreAdditionalProperties]
     }
     
@@ -173,10 +191,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PropertyNames extends StObject {
     
-    var propertyNames: js.UndefOr[js.Any] = js.native
+    var propertyNames: js.UndefOr[js.Any] = js.undefined
   }
   object PropertyNames {
     

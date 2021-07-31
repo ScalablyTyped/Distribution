@@ -3,7 +3,6 @@ package typings.floreal
 import typings.floreal.dateMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,8 +28,7 @@ object mod {
     def dayNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day_names")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("floreal", "Date.first_day_of_year")
-    @js.native
-    def firstDayOfYear(year: js.Any): js.Any = js.native
+    @scala.inline
+    def firstDayOfYear(year: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first_day_of_year")(year.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

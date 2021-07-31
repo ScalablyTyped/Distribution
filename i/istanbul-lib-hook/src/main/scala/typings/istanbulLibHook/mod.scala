@@ -5,61 +5,53 @@ import typings.istanbulLibHook.anon.PartialHookRunInContextOp
 import typings.istanbulLibHook.anon.PartialOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("istanbul-lib-hook", "hookCreateScript")
+  @JSImport("istanbul-lib-hook", JSImport.Namespace)
   @js.native
-  def hookCreateScript(matcher: Matcher, transformer: Transformer): Unit = js.native
-  @JSImport("istanbul-lib-hook", "hookCreateScript")
-  @js.native
-  def hookCreateScript(matcher: Matcher, transformer: Transformer, options: PartialOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("istanbul-lib-hook", "hookRequire")
-  @js.native
-  def hookRequire(matcher: Matcher, transformer: Transformer): js.Function0[Unit] = js.native
-  @JSImport("istanbul-lib-hook", "hookRequire")
-  @js.native
-  def hookRequire(matcher: Matcher, transformer: Transformer, options: PartialHookRequireOptions): js.Function0[Unit] = js.native
+  @scala.inline
+  def hookCreateScript(matcher: Matcher, transformer: Transformer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookCreateScript")(matcher.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hookCreateScript(matcher: Matcher, transformer: Transformer, options: PartialOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookCreateScript")(matcher.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("istanbul-lib-hook", "hookRunInContext")
-  @js.native
-  def hookRunInContext(matcher: Matcher, transformer: Transformer): Unit = js.native
-  @JSImport("istanbul-lib-hook", "hookRunInContext")
-  @js.native
-  def hookRunInContext(matcher: Matcher, transformer: Transformer, options: PartialHookRunInContextOp): Unit = js.native
+  @scala.inline
+  def hookRequire(matcher: Matcher, transformer: Transformer): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("hookRequire")(matcher.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def hookRequire(matcher: Matcher, transformer: Transformer, options: PartialHookRequireOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("hookRequire")(matcher.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("istanbul-lib-hook", "hookRunInThisContext")
-  @js.native
-  def hookRunInThisContext(matcher: Matcher, transformer: Transformer): Unit = js.native
-  @JSImport("istanbul-lib-hook", "hookRunInThisContext")
-  @js.native
-  def hookRunInThisContext(matcher: Matcher, transformer: Transformer, options: PartialOptions): Unit = js.native
+  @scala.inline
+  def hookRunInContext(matcher: Matcher, transformer: Transformer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookRunInContext")(matcher.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hookRunInContext(matcher: Matcher, transformer: Transformer, options: PartialHookRunInContextOp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookRunInContext")(matcher.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("istanbul-lib-hook", "unhookCreateScript")
-  @js.native
-  def unhookCreateScript(): Unit = js.native
+  @scala.inline
+  def hookRunInThisContext(matcher: Matcher, transformer: Transformer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookRunInThisContext")(matcher.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hookRunInThisContext(matcher: Matcher, transformer: Transformer, options: PartialOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookRunInThisContext")(matcher.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("istanbul-lib-hook", "unhookRunInContext")
-  @js.native
-  def unhookRunInContext(): Unit = js.native
+  @scala.inline
+  def unhookCreateScript(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unhookCreateScript")().asInstanceOf[Unit]
   
-  @JSImport("istanbul-lib-hook", "unhookRunInThisContext")
-  @js.native
-  def unhookRunInThisContext(): Unit = js.native
+  @scala.inline
+  def unhookRunInContext(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unhookRunInContext")().asInstanceOf[Unit]
   
-  @JSImport("istanbul-lib-hook", "unloadRequireCache")
-  @js.native
-  def unloadRequireCache(matcher: Matcher): Unit = js.native
+  @scala.inline
+  def unhookRunInThisContext(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unhookRunInThisContext")().asInstanceOf[Unit]
   
-  @js.native
-  trait HookRequireOptions extends Options {
+  @scala.inline
+  def unloadRequireCache(matcher: Matcher): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadRequireCache")(matcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  trait HookRequireOptions
+    extends StObject
+       with Options {
     
-    var extensions: js.Array[String] = js.native
+    var extensions: js.Array[String]
     
-    def postLoadHook(filename: String): Unit = js.native
+    def postLoadHook(filename: String): Unit
   }
   object HookRequireOptions {
     
@@ -83,10 +75,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait HookRunInContextOptions extends Options {
+  trait HookRunInContextOptions
+    extends StObject
+       with Options {
     
-    var coverageVariable: String = js.native
+    var coverageVariable: String
   }
   object HookRunInContextOptions {
     
@@ -106,10 +99,9 @@ object mod {
   
   type Matcher = js.Function1[/* filename */ String, Boolean]
   
-  @js.native
   trait Options extends StObject {
     
-    var verbose: Boolean = js.native
+    var verbose: Boolean
   }
   object Options {
     
@@ -129,10 +121,9 @@ object mod {
   
   type Transformer = js.Function2[/* code */ String, /* options */ TransformerOptions, String]
   
-  @js.native
   trait TransformerOptions extends StObject {
     
-    var filename: String = js.native
+    var filename: String
   }
   object TransformerOptions {
     

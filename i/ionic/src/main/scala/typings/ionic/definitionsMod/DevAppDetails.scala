@@ -3,19 +3,17 @@ package typings.ionic.definitionsMod
 import typings.ionic.anon.Address
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DevAppDetails extends StObject {
   
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
-  var commPort: Double = js.native
+  var commPort: Double
   
-  var interfaces: js.Array[Address] = js.native
+  var interfaces: js.Array[Address]
   
-  var port: Double = js.native
+  var port: Double
 }
 object DevAppDetails {
   

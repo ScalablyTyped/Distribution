@@ -2,10 +2,8 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfterViewInit extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait AfterViewInit extends StObject {
     * It is invoked only once when the view is instantiated.
     *
     */
-  def ngAfterViewInit(): Unit = js.native
+  def ngAfterViewInit(): Unit
 }
 object AfterViewInit {
   

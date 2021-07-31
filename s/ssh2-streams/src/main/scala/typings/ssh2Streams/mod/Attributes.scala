@@ -2,23 +2,21 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attributes extends StObject {
   
-  var atime: Double = js.native
+  var atime: Double
   
-  var gid: Double = js.native
+  var gid: Double
   
-  var mode: Double = js.native
+  var mode: Double
   
-  var mtime: Double = js.native
+  var mtime: Double
   
-  var size: Double = js.native
+  var size: Double
   
-  var uid: Double = js.native
+  var uid: Double
 }
 object Attributes {
   

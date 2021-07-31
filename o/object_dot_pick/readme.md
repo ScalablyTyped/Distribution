@@ -11,8 +11,8 @@ Returns a filtered copy of an object with only the specified keys, similar to `_
 | Full name          | object.pick |
 | Keywords           | object, pick |
 | # releases         | 0 |
-| # dependents       | 171 |
-| # downloads        | 537621256 |
+| # dependents       | 210 |
+| # downloads        | 648358782 |
 | # stars            | 2 |
 
 ## Links

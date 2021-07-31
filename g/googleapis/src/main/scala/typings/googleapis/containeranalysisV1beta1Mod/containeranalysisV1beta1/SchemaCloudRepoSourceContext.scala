@@ -2,30 +2,28 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A CloudRepoSourceContext denotes a particular revision in a Google Cloud
   * Source Repo.
   */
-@js.native
 trait SchemaCloudRepoSourceContext extends StObject {
   
   /**
     * An alias, which may be a branch or tag.
     */
-  var aliasContext: js.UndefOr[SchemaAliasContext] = js.native
+  var aliasContext: js.UndefOr[SchemaAliasContext] = js.undefined
   
   /**
     * The ID of the repo.
     */
-  var repoId: js.UndefOr[SchemaRepoId] = js.native
+  var repoId: js.UndefOr[SchemaRepoId] = js.undefined
   
   /**
     * A revision ID.
     */
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
 }
 object SchemaCloudRepoSourceContext {
   

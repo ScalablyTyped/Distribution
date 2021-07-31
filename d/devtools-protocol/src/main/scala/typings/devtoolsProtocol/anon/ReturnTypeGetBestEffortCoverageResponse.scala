@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Profiler.GetBestEffortCoverageResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetBestEffortCoverageResponse extends StObject {
   
-  var paramsType: js.Array[js.Any] = js.native
+  var paramsType: js.Array[js.Any]
   
-  var returnType: GetBestEffortCoverageResponse = js.native
+  var returnType: GetBestEffortCoverageResponse
 }
 object ReturnTypeGetBestEffortCoverageResponse {
   

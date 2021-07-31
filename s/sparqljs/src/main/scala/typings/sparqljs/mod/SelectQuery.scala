@@ -3,49 +3,42 @@ package typings.sparqljs.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.anon.Default
 import typings.sparqljs.sparqljsStrings.SELECT
-import typings.sparqljs.sparqljsStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectQuery
-  extends Query
+  extends StObject
      with BaseQuery
-     with Pattern {
+     with Pattern
+     with Query {
   
-  var distinct: js.UndefOr[Boolean] = js.native
+  var distinct: js.UndefOr[Boolean] = js.undefined
   
-  var from: js.UndefOr[Default] = js.native
+  var from: js.UndefOr[Default] = js.undefined
   
-  var group: js.UndefOr[js.Array[Grouping]] = js.native
+  var group: js.UndefOr[js.Array[Grouping]] = js.undefined
   
-  var having: js.UndefOr[js.Array[Expression]] = js.native
+  var having: js.UndefOr[js.Array[Expression]] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var order: js.UndefOr[js.Array[Ordering]] = js.native
+  var order: js.UndefOr[js.Array[Ordering]] = js.undefined
   
-  var queryType: SELECT = js.native
+  var queryType: SELECT
   
-  var reduced: js.UndefOr[Boolean] = js.native
+  var reduced: js.UndefOr[Boolean] = js.undefined
   
-  var variables: js.Array[Variable | Wildcard] = js.native
+  var variables: js.Array[Variable | Wildcard]
 }
 object SelectQuery {
   
   @scala.inline
-  def apply(
-    prefixes: StringDictionary[String],
-    queryType: SELECT,
-    `type`: query,
-    variables: js.Array[Variable | Wildcard]
-  ): SelectQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(prefixes: StringDictionary[String], variables: js.Array[Variable | Wildcard]): SelectQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = "SELECT", variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[SelectQuery]
   }
   

@@ -2,27 +2,25 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2InputPrompt extends StObject {
   
   /**
     * Initial prompts asking user to provide an input.
     * Only a single initial_prompt is supported.
     */
-  var initialPrompts: js.UndefOr[js.Array[GoogleActionsV2SpeechResponse]] = js.native
+  var initialPrompts: js.UndefOr[js.Array[GoogleActionsV2SpeechResponse]] = js.undefined
   
   /**
     * Prompt used to ask user when there is no input from user.
     */
-  var noInputPrompts: js.UndefOr[js.Array[GoogleActionsV2SimpleResponse]] = js.native
+  var noInputPrompts: js.UndefOr[js.Array[GoogleActionsV2SimpleResponse]] = js.undefined
   
   /**
     * Prompt payload.
     */
-  var richInitialPrompt: js.UndefOr[GoogleActionsV2RichResponse] = js.native
+  var richInitialPrompt: js.UndefOr[GoogleActionsV2RichResponse] = js.undefined
 }
 object GoogleActionsV2InputPrompt {
   

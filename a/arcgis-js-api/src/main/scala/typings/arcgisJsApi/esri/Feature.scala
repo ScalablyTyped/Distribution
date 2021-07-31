@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Feature extends Widget_ {
+trait Feature
+  extends StObject
+     with Widget_ {
   
   /**
     * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.

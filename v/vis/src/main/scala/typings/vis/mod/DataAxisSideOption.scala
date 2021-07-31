@@ -2,17 +2,15 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataAxisSideOption extends StObject {
   
-  var format: js.UndefOr[js.Function0[String]] = js.native
+  var format: js.UndefOr[js.Function0[String]] = js.undefined
   
-  var range: js.UndefOr[RangeType] = js.native
+  var range: js.UndefOr[RangeType] = js.undefined
   
-  var title: js.UndefOr[TitleOption] = js.native
+  var title: js.UndefOr[TitleOption] = js.undefined
 }
 object DataAxisSideOption {
   

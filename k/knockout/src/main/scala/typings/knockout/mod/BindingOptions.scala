@@ -2,15 +2,13 @@ package typings.knockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindingOptions extends StObject {
   
-  var bindingParams: js.UndefOr[Boolean] = js.native
+  var bindingParams: js.UndefOr[Boolean] = js.undefined
   
-  var valueAccessors: js.UndefOr[Boolean] = js.native
+  var valueAccessors: js.UndefOr[Boolean] = js.undefined
 }
 object BindingOptions {
   

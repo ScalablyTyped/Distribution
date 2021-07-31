@@ -2,43 +2,41 @@ package typings.pulumiAws.outputMod.opsworks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaticWebLayerEbsVolume extends StObject {
   
-  var encrypted: js.UndefOr[Boolean] = js.native
+  var encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * For PIOPS volumes, the IOPS per disk.
     */
-  var iops: js.UndefOr[Double] = js.native
+  var iops: js.UndefOr[Double] = js.undefined
   
   /**
     * The path to mount the EBS volume on the layer's instances.
     */
-  var mountPoint: String = js.native
+  var mountPoint: String
   
   /**
     * The number of disks to use for the EBS volume.
     */
-  var numberOfDisks: Double = js.native
+  var numberOfDisks: Double
   
   /**
     * The RAID level to use for the volume.
     */
-  var raidLevel: js.UndefOr[String] = js.native
+  var raidLevel: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the volume in gigabytes.
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * The type of volume to create. This may be `standard` (the default), `io1` or `gp2`.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object StaticWebLayerEbsVolume {
   

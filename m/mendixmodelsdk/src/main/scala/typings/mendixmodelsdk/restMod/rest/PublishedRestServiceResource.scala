@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -54,9 +53,8 @@ object PublishedRestServiceResource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceResource.create")
-  @js.native
-  def create(model: IModel): PublishedRestServiceResource = js.native
+  @scala.inline
+  def create(model: IModel): PublishedRestServiceResource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PublishedRestServiceResource]
   
   /**
     * Creates and returns a new PublishedRestServiceResource instance in the SDK and on the server.
@@ -67,9 +65,8 @@ object PublishedRestServiceResource {
     *  7.7.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceResource.createIn")
-  @js.native
-  def createIn(container: PublishedRestService): PublishedRestServiceResource = js.native
+  @scala.inline
+  def createIn(container: PublishedRestService): PublishedRestServiceResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedRestServiceResource]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceResource.structureTypeName")

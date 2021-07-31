@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicebroker/v1beta1", "servicebroker_v1beta1.Resource$Projects$Brokers")
@@ -31,7 +30,7 @@ class ResourceProjectsBrokers protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Broker] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1Broker]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Broker] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Broker] = js.native
   def create(params: ParamsResourceProjectsBrokersCreate): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Broker] = js.native
   def create(
     params: ParamsResourceProjectsBrokersCreate,
@@ -63,7 +62,7 @@ class ResourceProjectsBrokers protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceProjectsBrokersDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsBrokersDelete,
@@ -99,7 +98,7 @@ class ResourceProjectsBrokers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse] = js.native
   def list(params: ParamsResourceProjectsBrokersList): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse] = js.native
   def list(
     params: ParamsResourceProjectsBrokersList,

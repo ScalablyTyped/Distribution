@@ -3,25 +3,23 @@ package typings.screeps.anon
 import typings.screeps.PowerClassConstant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassName extends StObject {
   
-  var className: PowerClassConstant = js.native
+  var className: PowerClassConstant
   
-  var cooldown: Double = js.native
+  var cooldown: Double
   
-  var duration: js.UndefOr[Double | js.Array[Double]] = js.native
+  var duration: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var effect: js.UndefOr[js.Array[Double]] = js.native
+  var effect: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var level: js.Array[Double] = js.native
+  var level: js.Array[Double]
   
-  var ops: js.UndefOr[Double | js.Array[Double]] = js.native
+  var ops: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var range: js.UndefOr[Double] = js.native
+  var range: js.UndefOr[Double] = js.undefined
 }
 object ClassName {
   

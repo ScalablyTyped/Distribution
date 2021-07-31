@@ -2,21 +2,19 @@ package typings.mqttPacket.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISubscription extends StObject {
   
-  var nl: js.UndefOr[Boolean] = js.native
+  var nl: js.UndefOr[Boolean] = js.undefined
   
-  var qos: QoS = js.native
+  var qos: QoS
   
-  var rap: js.UndefOr[Boolean] = js.native
+  var rap: js.UndefOr[Boolean] = js.undefined
   
-  var rh: js.UndefOr[Double] = js.native
+  var rh: js.UndefOr[Double] = js.undefined
   
-  var topic: String = js.native
+  var topic: String
 }
 object ISubscription {
   

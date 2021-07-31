@@ -2,20 +2,18 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Opacity extends StObject {
   
   /**
     * Color to tint the image with
     * @default #000000
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /** Opacity value that controls the tint effect's transparency (0..1) */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
 }
 object Opacity {
   

@@ -2,45 +2,45 @@ package typings.uifabricUtilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object warnControlledUsageMod {
   
-  @JSImport("@uifabric/utilities/lib/warn/warnControlledUsage", "resetControlledWarnings")
+  @JSImport("@uifabric/utilities/lib/warn/warnControlledUsage", JSImport.Namespace)
   @js.native
-  def resetControlledWarnings(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uifabric/utilities/lib/warn/warnControlledUsage", "warnControlledUsage")
-  @js.native
-  def warnControlledUsage[P](params: IWarnControlledUsageParams[P]): Unit = js.native
+  @scala.inline
+  def resetControlledWarnings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetControlledWarnings")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def warnControlledUsage[P](params: IWarnControlledUsageParams[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnControlledUsage")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait IWarnControlledUsageParams[P] extends StObject {
     
     /** ID of the component instance. Used to prevent showing warnings repeatedly. */
-    var componentId: String = js.native
+    var componentId: String
     
     /** Name of the component class. */
-    var componentName: String = js.native
+    var componentName: String
     
     /** Name of the prop for the uncontrolled initial value. */
-    var defaultValueProp: /* keyof P */ String = js.native
+    var defaultValueProp: /* keyof P */ String
     
     /** Previous props to evaluate (undefined if called in the constructor). */
-    var oldProps: js.UndefOr[P] = js.native
+    var oldProps: js.UndefOr[P] = js.undefined
     
     /** Name of the change handler prop. */
-    var onChangeProp: /* keyof P */ String = js.native
+    var onChangeProp: /* keyof P */ String
     
     /** Current props to evaluate. */
-    var props: P = js.native
+    var props: P
     
     /** Name of the read-only prop. */
-    var readOnlyProp: js.UndefOr[/* keyof P */ String] = js.native
+    var readOnlyProp: js.UndefOr[/* keyof P */ String] = js.undefined
     
     /** Name of the prop for the controlled value. */
-    var valueProp: /* keyof P */ String = js.native
+    var valueProp: /* keyof P */ String
   }
   object IWarnControlledUsageParams {
     
@@ -58,7 +58,7 @@ object warnControlledUsageMod {
     }
     
     @scala.inline
-    implicit class IWarnControlledUsageParamsMutableBuilder[Self <: IWarnControlledUsageParams[_], P] (val x: Self with IWarnControlledUsageParams[P]) extends AnyVal {
+    implicit class IWarnControlledUsageParamsMutableBuilder[Self <: IWarnControlledUsageParams[?], P] (val x: Self & IWarnControlledUsageParams[P]) extends AnyVal {
       
       @scala.inline
       def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])

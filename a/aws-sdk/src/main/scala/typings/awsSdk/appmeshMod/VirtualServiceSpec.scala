@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualServiceSpec extends StObject {
   
   /**
     * The App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router.
     */
-  var provider: js.UndefOr[VirtualServiceProvider] = js.native
+  var provider: js.UndefOr[VirtualServiceProvider] = js.undefined
 }
 object VirtualServiceSpec {
   

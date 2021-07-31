@@ -5,19 +5,19 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WikiPageCreationInformation extends ClientValueObject {
+trait WikiPageCreationInformation
+  extends StObject
+     with ClientValueObject {
   
-  def get_serverRelativeUrl(): String = js.native
+  def get_serverRelativeUrl(): String
   
-  def get_wikiHtmlContent(): String = js.native
+  def get_wikiHtmlContent(): String
   
-  def set_serverRelativeUrl(value: String): Unit = js.native
+  def set_serverRelativeUrl(value: String): Unit
   
-  def set_wikiHtmlContent(value: String): Unit = js.native
+  def set_wikiHtmlContent(value: String): Unit
 }
 object WikiPageCreationInformation {
   

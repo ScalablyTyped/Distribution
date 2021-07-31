@@ -4,24 +4,24 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BlockEditProps[T /* <: Record[String, _] */] extends BlockSaveProps[T] {
+trait BlockEditProps[T /* <: Record[String, js.Any] */]
+  extends StObject
+     with BlockSaveProps[T] {
   
-  val className: String = js.native
+  val className: String
   
-  val clientId: String = js.native
+  val clientId: String
   
-  val isSelected: Boolean = js.native
+  val isSelected: Boolean
   
-  def setAttributes(attrs: Partial[T]): Unit = js.native
+  def setAttributes(attrs: Partial[T]): Unit
 }
 object BlockEditProps {
   
   @scala.inline
-  def apply[T /* <: Record[String, _] */](
+  def apply[T /* <: Record[String, js.Any] */](
     attributes: T,
     className: String,
     clientId: String,
@@ -33,7 +33,7 @@ object BlockEditProps {
   }
   
   @scala.inline
-  implicit class BlockEditPropsMutableBuilder[Self <: BlockEditProps[_], T /* <: Record[String, _] */] (val x: Self with BlockEditProps[T]) extends AnyVal {
+  implicit class BlockEditPropsMutableBuilder[Self <: BlockEditProps[?], T /* <: Record[String, js.Any] */] (val x: Self & BlockEditProps[T]) extends AnyVal {
     
     @scala.inline
     def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])

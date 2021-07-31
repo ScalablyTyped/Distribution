@@ -2,50 +2,50 @@ package typings.senchaTouch.Ext.field
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait INumber extends IText {
+trait INumber
+  extends StObject
+     with IText {
   
   /** [Method] Returns the value of maxValue
     * @returns Number
     */
-  var getMaxValue: js.UndefOr[js.Function0[Double]] = js.native
+  var getMaxValue: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of minValue
     * @returns Number
     */
-  var getMinValue: js.UndefOr[js.Function0[Double]] = js.native
+  var getMinValue: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of stepValue
     * @returns Number
     */
-  var getStepValue: js.UndefOr[js.Function0[Double]] = js.native
+  var getStepValue: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Config Option] (Number) */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /** [Method] Sets the value of maxValue
     * @param maxValue Number The new value.
     */
-  var setMaxValue: js.UndefOr[js.Function1[/* maxValue */ js.UndefOr[Double], Unit]] = js.native
+  var setMaxValue: js.UndefOr[js.Function1[/* maxValue */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of minValue
     * @param minValue Number The new value.
     */
-  var setMinValue: js.UndefOr[js.Function1[/* minValue */ js.UndefOr[Double], Unit]] = js.native
+  var setMinValue: js.UndefOr[js.Function1[/* minValue */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of stepValue
     * @param stepValue Number The new value.
     */
-  var setStepValue: js.UndefOr[js.Function1[/* stepValue */ js.UndefOr[Double], Unit]] = js.native
+  var setStepValue: js.UndefOr[js.Function1[/* stepValue */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var stepValue: js.UndefOr[Double] = js.native
+  var stepValue: js.UndefOr[Double] = js.undefined
 }
 object INumber {
   

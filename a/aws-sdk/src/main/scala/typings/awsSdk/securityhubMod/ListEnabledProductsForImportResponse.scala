@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEnabledProductsForImportResponse extends StObject {
   
   /**
     * The pagination token to use to request the next page of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.undefined
   
   /**
     * The list of ARNs for the resources that represent your subscriptions to products. 
     */
-  var ProductSubscriptions: js.UndefOr[ProductSubscriptionArnList] = js.native
+  var ProductSubscriptions: js.UndefOr[ProductSubscriptionArnList] = js.undefined
 }
 object ListEnabledProductsForImportResponse {
   

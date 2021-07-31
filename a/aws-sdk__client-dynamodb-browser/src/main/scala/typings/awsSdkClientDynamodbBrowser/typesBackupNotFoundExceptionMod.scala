@@ -5,27 +5,24 @@ import typings.awsSdkClientDynamodbBrowser.describeBackupExceptionsUnionMod.Desc
 import typings.awsSdkClientDynamodbBrowser.restoreTableFromBackupExceptionsUnionMod.RestoreTableFromBackupExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBackupNotFoundExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BackupNotFoundExceptionDetails> * / any */ @js.native
-  trait BackupNotFoundException
-    extends DeleteBackupExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BackupNotFoundExceptionDetails> * / any */ trait BackupNotFoundException
+    extends StObject
+       with DeleteBackupExceptionsUnion
        with DescribeBackupExceptionsUnion
        with RestoreTableFromBackupExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.BackupNotFoundException = js.native
+    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.BackupNotFoundException
   }
   object BackupNotFoundException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.BackupNotFoundException
-    ): BackupNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): BackupNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "BackupNotFoundException")
       __obj.asInstanceOf[BackupNotFoundException]
     }
     
@@ -39,13 +36,12 @@ object typesBackupNotFoundExceptionMod {
     }
   }
   
-  @js.native
   trait BackupNotFoundExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object BackupNotFoundExceptionDetails {
     

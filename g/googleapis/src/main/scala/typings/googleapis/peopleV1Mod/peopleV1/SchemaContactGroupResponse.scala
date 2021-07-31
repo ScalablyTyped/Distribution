@@ -2,29 +2,27 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for a specific contact group.
   */
-@js.native
 trait SchemaContactGroupResponse extends StObject {
   
   /**
     * The contact group.
     */
-  var contactGroup: js.UndefOr[SchemaContactGroup] = js.native
+  var contactGroup: js.UndefOr[SchemaContactGroup] = js.undefined
   
   /**
     * The original requested resource name.
     */
-  var requestedResourceName: js.UndefOr[String] = js.native
+  var requestedResourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the response.
     */
-  var status: js.UndefOr[SchemaStatus] = js.native
+  var status: js.UndefOr[SchemaStatus] = js.undefined
 }
 object SchemaContactGroupResponse {
   

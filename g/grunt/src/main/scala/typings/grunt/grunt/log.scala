@@ -2,7 +2,6 @@ package typings.grunt.grunt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object log {
@@ -12,54 +11,53 @@ object log {
     * As such, there is a plethora of logging methods, and a few useful patterns.
     * All of the methods that actually log something are chainable.
     */
-  @js.native
   trait CommonLogging[T] extends StObject {
     
     /**
       * If msg string is omitted, logs ERROR in red,
       * otherwise logs >> msg, with trailing newline.
       */
-    def error(msg: String): T = js.native
+    def error(msg: String): T
     
     /**
       * Log an error with grunt.log.error, wrapping text to 80 columns using grunt.log.wraptext.
       */
-    def errorlns(msg: String): T = js.native
+    def errorlns(msg: String): T
     
     /**
       * If msg string is omitted, logs OK in green, otherwise logs >> msg, with trailing newline.
       */
-    def ok(msg: String): T = js.native
+    def ok(msg: String): T
     
     /**
       * Log an ok message with grunt.log.ok, wrapping text to 80 columns using grunt.log.wraptext.
       */
-    def oklns(msg: String): T = js.native
+    def oklns(msg: String): T
     
     /**
       * Log the specified msg string in bold, with trailing newline.
       */
-    def subhead(msg: String): T = js.native
+    def subhead(msg: String): T
     
     /**
       * Log an warning with grunt.log.warn
       */
-    def warn(msg: String): T = js.native
+    def warn(msg: String): T
     
     /**
       * Log the specified msg string, with no trailing newline.
       */
-    def write(msg: String): T = js.native
+    def write(msg: String): T
     
     /**
       * Log a list of obj properties (good for debugging flags).
       */
-    def writeflags(obj: js.Any): T = js.native
+    def writeflags(obj: js.Any): T
     
     /**
       * Log the specified msg string, with trailing newline.
       */
-    def writeln(msg: String): T = js.native
+    def writeln(msg: String): T
   }
   object CommonLogging {
     
@@ -80,7 +78,7 @@ object log {
     }
     
     @scala.inline
-    implicit class CommonLoggingMutableBuilder[Self <: CommonLogging[_], T] (val x: Self with CommonLogging[T]) extends AnyVal {
+    implicit class CommonLoggingMutableBuilder[Self <: CommonLogging[?], T] (val x: Self & CommonLogging[T]) extends AnyVal {
       
       @scala.inline
       def setError(value: String => T): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
@@ -114,12 +112,13 @@ object log {
   /**
     * {@link http://gruntjs.com/api/grunt.log}
     */
-  @js.native
-  trait LogModule extends CommonLogging[LogModule] {
+  trait LogModule
+    extends StObject
+       with CommonLogging[LogModule] {
     
-    var notverbose: NotVerboseLogModule = js.native
+    var notverbose: NotVerboseLogModule
     
-    var verbose: VerboseLogModule = js.native
+    var verbose: VerboseLogModule
   }
   object LogModule {
     
@@ -156,10 +155,11 @@ object log {
     * @note all methods available under grunt.verbose work exactly like grunt.log methods,
     *       but only log if the --verbose command-line option was not specified.
     */
-  @js.native
-  trait NotVerboseLogModule extends CommonLogging[NotVerboseLogModule] {
+  trait NotVerboseLogModule
+    extends StObject
+       with CommonLogging[NotVerboseLogModule] {
     
-    var or: VerboseLogModule = js.native
+    var or: VerboseLogModule
   }
   object NotVerboseLogModule {
     
@@ -192,10 +192,11 @@ object log {
     * @note all methods available under grunt.verbose work exactly like grunt.log methods,
     *       but only log if the --verbose command-line option was specified.
     */
-  @js.native
-  trait VerboseLogModule extends CommonLogging[VerboseLogModule] {
+  trait VerboseLogModule
+    extends StObject
+       with CommonLogging[VerboseLogModule] {
     
-    var or: NotVerboseLogModule = js.native
+    var or: NotVerboseLogModule
   }
   object VerboseLogModule {
     

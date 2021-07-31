@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * identifies an autotext entry.
   * @deprecated Deprecated
   */
-@js.native
-trait XAutoTextEntry extends XInterface {
+trait XAutoTextEntry
+  extends StObject
+     with XInterface {
   
   /** inserts the contents represented by this auto text entry at the specified text range. */
-  def applyTo(xRange: XTextRange): Unit = js.native
+  def applyTo(xRange: XTextRange): Unit
 }
 object XAutoTextEntry {
   

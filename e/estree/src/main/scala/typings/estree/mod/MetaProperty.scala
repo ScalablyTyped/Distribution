@@ -2,27 +2,26 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetaProperty
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Expression {
   
-  var meta: Identifier = js.native
+  var meta: Identifier
   
-  var property: Identifier = js.native
+  var property: Identifier
   
   @JSName("type")
-  var type_MetaProperty: typings.estree.estreeStrings.MetaProperty = js.native
+  var type_MetaProperty: typings.estree.estreeStrings.MetaProperty
 }
 object MetaProperty {
   
   @scala.inline
-  def apply(meta: Identifier, property: Identifier, `type`: typings.estree.estreeStrings.MetaProperty): MetaProperty = {
+  def apply(meta: Identifier, property: Identifier): MetaProperty = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MetaProperty")
     __obj.asInstanceOf[MetaProperty]
   }
   

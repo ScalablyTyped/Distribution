@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the requesting app have at least one of the drive, drive.readonly, or
   * drive.file OAuth scopes.
   */
-@js.native
 trait SchemaCreateVideoRequest extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaCreateVideoRequest extends StObject {
     * specify a transform, the video will be placed at the top left corner of
     * the page.
     */
-  var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.native
+  var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.undefined
   
   /**
     * The video source&#39;s unique identifier for this video.  e.g. For
@@ -30,7 +28,7 @@ trait SchemaCreateVideoRequest extends StObject {
     * https://drive.google.com/file/d/1xCgQLFTJi5_Xl8DgW_lcUYq5e-q6Hi5Q the ID
     * is 1xCgQLFTJi5_Xl8DgW_lcUYq5e-q6Hi5Q.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A user-supplied object ID.  If you specify an ID, it must be unique among
@@ -41,12 +39,12 @@ trait SchemaCreateVideoRequest extends StObject {
     * must not be less than 5 or greater than 50.  If you don&#39;t specify an
     * ID, a unique one is generated.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The video source.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateVideoRequest {
   

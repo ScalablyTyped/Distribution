@@ -5,15 +5,15 @@ import typings.xml.mod._XmlDesc
 import typings.xml.xmlBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Attr extends _XmlDesc {
+  trait Attr
+    extends StObject
+       with _XmlDesc {
     
-    var _attr: XmlAttrs = js.native
+    var _attr: XmlAttrs
   }
   object Attr {
     
@@ -31,12 +31,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait AttrCdata extends _XmlDesc {
+  trait AttrCdata
+    extends StObject
+       with _XmlDesc {
     
-    var _attr: XmlAttrs = js.native
+    var _attr: XmlAttrs
     
-    var _cdata: String = js.native
+    var _cdata: String
   }
   object AttrCdata {
     
@@ -57,10 +58,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Cdata extends _XmlDesc {
+  trait Cdata
+    extends StObject
+       with _XmlDesc {
     
-    var _cdata: String = js.native
+    var _cdata: String
   }
   object Cdata {
     
@@ -78,12 +80,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var standalone: js.UndefOr[String] = js.native
+    var standalone: js.UndefOr[String] = js.undefined
   }
   object Encoding {
     
@@ -110,18 +111,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Indent extends StObject {
     
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
-    var stream: `true` = js.native
+    var stream: `true`
   }
   object Indent {
     
     @scala.inline
-    def apply(stream: `true`): Indent = {
-      val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
+    def apply(): Indent = {
+      val __obj = js.Dynamic.literal(stream = true)
       __obj.asInstanceOf[Indent]
     }
     

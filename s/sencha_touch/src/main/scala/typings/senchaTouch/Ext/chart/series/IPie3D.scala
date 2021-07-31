@@ -3,67 +3,67 @@ package typings.senchaTouch.Ext.chart.series
 import typings.senchaTouch.Ext.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPie3D extends IPolar {
+trait IPie3D
+  extends StObject
+     with IPolar {
   
   /** [Config Option] (Boolean/Number) */
-  var donut: js.UndefOr[js.Any] = js.native
+  var donut: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value of distortion
     * @returns Number
     */
-  var getDistortion: js.UndefOr[js.Function0[Double]] = js.native
+  var getDistortion: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of donut
     * @returns Boolean/Number
     */
-  var getDonut: js.UndefOr[js.Function0[_]] = js.native
+  var getDonut: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of field
     * @returns String
     */
-  var getField: js.UndefOr[js.Function0[String]] = js.native
+  var getField: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of region
     * @returns Array
     */
-  var getRegion: js.UndefOr[js.Function0[Array]] = js.native
+  var getRegion: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of thickness
     * @returns Number
     */
-  var getThickness: js.UndefOr[js.Function0[Double]] = js.native
+  var getThickness: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Sets the value of distortion
     * @param distortion Number The new value.
     */
-  var setDistortion: js.UndefOr[js.Function1[/* distortion */ js.UndefOr[Double], Unit]] = js.native
+  var setDistortion: js.UndefOr[js.Function1[/* distortion */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of donut
     * @param donut Boolean/Number The new value.
     */
-  var setDonut: js.UndefOr[js.Function1[/* donut */ js.UndefOr[js.Any], Unit]] = js.native
+  var setDonut: js.UndefOr[js.Function1[/* donut */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of field
     * @param field String The new value.
     */
-  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.native
+  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of region
     * @param region Array The new value.
     */
-  var setRegion: js.UndefOr[js.Function1[/* region */ js.UndefOr[Array], Unit]] = js.native
+  var setRegion: js.UndefOr[js.Function1[/* region */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of thickness
     * @param thickness Number The new value.
     */
-  var setThickness: js.UndefOr[js.Function1[/* thickness */ js.UndefOr[Double], Unit]] = js.native
+  var setThickness: js.UndefOr[js.Function1[/* thickness */ js.UndefOr[Double], Unit]] = js.undefined
 }
 object IPie3D {
   
@@ -95,7 +95,7 @@ object IPie3D {
     def setGetDistortionUndefined: Self = StObject.set(x, "getDistortion", js.undefined)
     
     @scala.inline
-    def setGetDonut(value: () => _): Self = StObject.set(x, "getDonut", js.Any.fromFunction0(value))
+    def setGetDonut(value: () => js.Any): Self = StObject.set(x, "getDonut", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDonutUndefined: Self = StObject.set(x, "getDonut", js.undefined)

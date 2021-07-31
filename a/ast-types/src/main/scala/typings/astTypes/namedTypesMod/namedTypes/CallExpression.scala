@@ -12,33 +12,32 @@ import typings.astTypes.kindsMod.TypeParameterInstantiationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Expression, 'type'> */
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.ChainElement, 'type'> */
-@js.native
 trait CallExpression
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with CallExpressionKind
      with ChainElementKind
      with ExpressionKind
      with NodeKind
      with PrintableKind {
   
-  var arguments: js.Array[ExpressionKind | SpreadElementKind] = js.native
+  var arguments: js.Array[ExpressionKind | SpreadElementKind]
   
-  var callee: ExpressionKind = js.native
+  var callee: ExpressionKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.CallExpression = js.native
+  var `type`: typings.astTypes.astTypesStrings.CallExpression
   
-  var typeArguments: js.UndefOr[Null | TypeParameterInstantiationKind] = js.native
+  var typeArguments: js.UndefOr[Null | TypeParameterInstantiationKind] = js.undefined
 }
 object CallExpression {
   

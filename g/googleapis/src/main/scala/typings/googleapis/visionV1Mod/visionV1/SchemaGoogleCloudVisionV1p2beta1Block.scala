@@ -2,19 +2,17 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Logical element on the page.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p2beta1Block extends StObject {
   
   /**
     * Detected block type (text, image etc) for this block.
     */
-  var blockType: js.UndefOr[String] = js.native
+  var blockType: js.UndefOr[String] = js.undefined
   
   /**
     * The bounding box for the block. The vertices are in the order of
@@ -26,22 +24,22 @@ trait SchemaGoogleCloudVisionV1p2beta1Block extends StObject {
     * rotated 180 degrees around the top-left corner it becomes: 2----3 |    |
     * 1----0    and the vertex order will still be (0, 1, 2, 3).
     */
-  var boundingBox: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1BoundingPoly] = js.native
+  var boundingBox: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1BoundingPoly] = js.undefined
   
   /**
     * Confidence of the OCR results on the block. Range [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * List of paragraphs in this block (if this blocks is of type text).
     */
-  var paragraphs: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p2beta1Paragraph]] = js.native
+  var paragraphs: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p2beta1Paragraph]] = js.undefined
   
   /**
     * Additional information detected for the block.
     */
-  var property: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1TextAnnotationTextProperty] = js.native
+  var property: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1TextAnnotationTextProperty] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p2beta1Block {
   

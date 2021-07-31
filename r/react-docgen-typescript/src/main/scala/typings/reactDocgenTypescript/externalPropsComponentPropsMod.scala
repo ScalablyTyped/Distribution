@@ -2,16 +2,14 @@ package typings.reactDocgenTypescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object externalPropsComponentPropsMod {
   
-  @js.native
   trait ExternalOptionalComponentProps extends StObject {
     
     /** prop1 description */
-    var prop1: js.UndefOr[String] = js.native
+    var prop1: js.UndefOr[String] = js.undefined
   }
   object ExternalOptionalComponentProps {
     
@@ -32,11 +30,10 @@ object externalPropsComponentPropsMod {
     }
   }
   
-  @js.native
   trait ExternalPropsComponentProps extends StObject {
     
     /** prop1 description */
-    var prop1: String = js.native
+    var prop1: String
   }
   object ExternalPropsComponentProps {
     

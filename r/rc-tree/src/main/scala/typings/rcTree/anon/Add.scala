@@ -2,15 +2,13 @@ package typings.rcTree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Add extends StObject {
   
-  var add: Boolean = js.native
+  var add: Boolean
   
-  var key: String | Double = js.native
+  var key: String | Double
 }
 object Add {
   

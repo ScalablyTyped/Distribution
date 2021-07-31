@@ -3,114 +3,112 @@ package typings.activexExcel.Excel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Axis extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var AxisBetweenCategories: Boolean = js.native
+  var AxisBetweenCategories: Boolean
   
-  val AxisGroup: XlAxisGroup = js.native
+  val AxisGroup: XlAxisGroup
   
-  val AxisTitle: typings.activexExcel.Excel.AxisTitle = js.native
+  val AxisTitle: typings.activexExcel.Excel.AxisTitle
   
-  var BaseUnit: XlTimeUnit = js.native
+  var BaseUnit: XlTimeUnit
   
-  var BaseUnitIsAuto: Boolean = js.native
+  var BaseUnitIsAuto: Boolean
   
-  val Border: typings.activexExcel.Excel.Border = js.native
+  val Border: typings.activexExcel.Excel.Border
   
-  var CategoryNames: SafeArray[String] | Range = js.native
+  var CategoryNames: SafeArray[String] | Range
   
-  var CategoryType: XlCategoryType = js.native
+  var CategoryType: XlCategoryType
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var Crosses: XlAxisCrosses = js.native
+  var Crosses: XlAxisCrosses
   
-  var CrossesAt: Double = js.native
+  var CrossesAt: Double
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
-  var DisplayUnit: XlDisplayUnit = js.native
+  var DisplayUnit: XlDisplayUnit
   
-  var DisplayUnitCustom: Double = js.native
+  var DisplayUnitCustom: Double
   
-  val DisplayUnitLabel: typings.activexExcel.Excel.DisplayUnitLabel = js.native
+  val DisplayUnitLabel: typings.activexExcel.Excel.DisplayUnitLabel
   
   @JSName("Excel.Axis_typekey")
-  var ExcelDotAxis_typekey: Axis = js.native
+  var ExcelDotAxis_typekey: Axis
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  var HasDisplayUnitLabel: Boolean = js.native
+  var HasDisplayUnitLabel: Boolean
   
-  var HasMajorGridlines: Boolean = js.native
+  var HasMajorGridlines: Boolean
   
-  var HasMinorGridlines: Boolean = js.native
+  var HasMinorGridlines: Boolean
   
-  var HasTitle: Boolean = js.native
+  var HasTitle: Boolean
   
-  val Height: Double = js.native
+  val Height: Double
   
-  val Left: Double = js.native
+  val Left: Double
   
-  var LogBase: Double = js.native
+  var LogBase: Double
   
-  val MajorGridlines: Gridlines = js.native
+  val MajorGridlines: Gridlines
   
-  var MajorTickMark: XlTickMark = js.native
+  var MajorTickMark: XlTickMark
   
-  var MajorUnit: Double = js.native
+  var MajorUnit: Double
   
-  var MajorUnitIsAuto: Boolean = js.native
+  var MajorUnitIsAuto: Boolean
   
-  var MajorUnitScale: XlTimeUnit = js.native
+  var MajorUnitScale: XlTimeUnit
   
-  var MaximumScale: Double = js.native
+  var MaximumScale: Double
   
-  var MaximumScaleIsAuto: Boolean = js.native
+  var MaximumScaleIsAuto: Boolean
   
-  var MinimumScale: Double = js.native
+  var MinimumScale: Double
   
-  var MinimumScaleIsAuto: Boolean = js.native
+  var MinimumScaleIsAuto: Boolean
   
-  val MinorGridlines: Gridlines = js.native
+  val MinorGridlines: Gridlines
   
-  var MinorTickMark: XlTickMark = js.native
+  var MinorTickMark: XlTickMark
   
-  var MinorUnit: Double = js.native
+  var MinorUnit: Double
   
-  var MinorUnitIsAuto: Boolean = js.native
+  var MinorUnitIsAuto: Boolean
   
-  var MinorUnitScale: XlTimeUnit = js.native
+  var MinorUnitScale: XlTimeUnit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var ReversePlotOrder: Boolean = js.native
+  var ReversePlotOrder: Boolean
   
-  var ScaleType: XlScaleType = js.native
+  var ScaleType: XlScaleType
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var TickLabelPosition: XlTickLabelPosition = js.native
+  var TickLabelPosition: XlTickLabelPosition
   
-  var TickLabelSpacing: Double = js.native
+  var TickLabelSpacing: Double
   
-  var TickLabelSpacingIsAuto: Boolean = js.native
+  var TickLabelSpacingIsAuto: Boolean
   
-  val TickLabels: typings.activexExcel.Excel.TickLabels = js.native
+  val TickLabels: typings.activexExcel.Excel.TickLabels
   
-  var TickMarkSpacing: Double = js.native
+  var TickMarkSpacing: Double
   
-  val Top: Double = js.native
+  val Top: Double
   
-  var Type: XlAxisType = js.native
+  var Type: XlAxisType
   
-  val Width: Double = js.native
+  val Width: Double
 }
 object Axis {
   

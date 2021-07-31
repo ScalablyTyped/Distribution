@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestedNamedStyles extends StObject {
   
   /**
     * A NamedStyles that only includes the changes made in this suggestion. This can be used along with the named_styles_suggestion_state to see which fields have changed and their new
     * values.
     */
-  var namedStyles: js.UndefOr[NamedStyles] = js.native
+  var namedStyles: js.UndefOr[NamedStyles] = js.undefined
   
   /** A mask that indicates which of the fields on the base NamedStyles have been changed in this suggestion. */
-  var namedStylesSuggestionState: js.UndefOr[NamedStylesSuggestionState] = js.native
+  var namedStylesSuggestionState: js.UndefOr[NamedStylesSuggestionState] = js.undefined
 }
 object SuggestedNamedStyles {
   

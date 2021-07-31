@@ -6,21 +6,22 @@ import typings.uiBox.boxTypesMod.Without
 import typings.uiBox.typesEnhancersMod.EnhancerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enhancePropsMod {
   
-  @JSImport("ui-box/dist/src/enhance-props", JSImport.Default)
+  @JSImport("ui-box/dist/src/enhance-props", JSImport.Namespace)
   @js.native
-  def default(rawProps: EnhancerProps with ComponentPropsWithoutRef[_]): EnhancedPropsResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(rawProps: EnhancerProps & ComponentPropsWithoutRef[js.Any]): EnhancedPropsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawProps.asInstanceOf[js.Any]).asInstanceOf[EnhancedPropsResult]
+  
   trait EnhancedPropsResult extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var enhancedProps: PreservedProps = js.native
+    var enhancedProps: PreservedProps
   }
   object EnhancedPropsResult {
     

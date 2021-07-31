@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait EBS extends Service {
   ): Request[CompleteSnapshotResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_EBS: ConfigBase with ClientConfiguration = js.native
+  var config_EBS: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Returns the data in a block in an Amazon Elastic Block Store snapshot.

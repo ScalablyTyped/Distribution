@@ -3,56 +3,54 @@ package typings.algoliasearch.anon
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @algolia/client-search.@algolia/client-search.UpdateApiKeyOptions & std.Pick<@algolia/transporter.@algolia/transporter.RequestOptions, std.Exclude<keyof @algolia/transporter.@algolia/transporter.RequestOptions, 'queryParameters'>> */
-@js.native
 trait UpdateApiKeyOptionsPickRe extends StObject {
   
-  var cacheable: js.UndefOr[Boolean] = js.native
+  var cacheable: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[Record[String, _]] = js.native
+  var data: js.UndefOr[Record[String, js.Any]] = js.undefined
   
   /**
     * Specify a description of the API key. Used for informative purposes only. It has impact on the functionality of the API key.
     */
-  val description: js.UndefOr[String] = js.native
+  val description: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[Record[String, String]] = js.native
+  var headers: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
     * Specify the list of targeted indices. You can target all indices starting with a prefix or ending with a suffix using the ‘*’ character.
     */
-  val indexes: js.UndefOr[js.Array[String]] = js.native
+  val indexes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specify the maximum number of hits this API key can retrieve in one call.
     * This parameter can be used to protect you from attempts at retrieving your entire index contents by massively querying the index.
     */
-  val maxHitsPerQuery: js.UndefOr[Double] = js.native
+  val maxHitsPerQuery: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify the maximum number of API calls allowed from an IP address per hour. Each time an API call is performed with this key, a check is performed.
     */
-  val maxQueriesPerIPPerHour: js.UndefOr[Double] = js.native
+  val maxQueriesPerIPPerHour: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify the list of query parameters. You can force the query parameters for a query using the url string format.
     */
-  val queryParameters: js.UndefOr[String] = js.native
+  val queryParameters: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the list of referers. You can target all referers starting with a prefix, ending with a suffix using the ‘*’ character.
     */
-  val referers: js.UndefOr[js.Array[String]] = js.native
+  val referers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /**
     * A Unix timestamp used to define the expiration date of the API key.
     */
-  val validity: js.UndefOr[Double] = js.native
+  val validity: js.UndefOr[Double] = js.undefined
 }
 object UpdateApiKeyOptionsPickRe {
   
@@ -72,7 +70,7 @@ object UpdateApiKeyOptionsPickRe {
     def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
     @scala.inline
-    def setData(value: Record[String, _]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

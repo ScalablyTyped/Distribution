@@ -9,76 +9,72 @@ import typings.stripe.stripeStrings.unverified
 import typings.stripe.stripeStrings.verified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customerTaxIds {
   
-  @js.native
   trait ITaxId extends StObject {
     
     /**
       * Two-letter ISO code representing the country of the tax ID.
       */
-    var country: string = js.native
+    var country: string
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * ID of the customer.
       */
-    var customer: String = js.native
+    var customer: String
     
     /**
       * Unique identifier for the object.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Has the value true if the object exists in live mode or the value false if the
       * object exists in test mode.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * String representing the object’s type. Objects of the same type share the same value.
       */
-    var `object`: tax_id = js.native
+    var `object`: tax_id
     
     /**
       * Type of the tax ID, one of au_abn, eu_vat, in_gst, no_vat, nz_gst, or unknown.
       */
-    var `type`: TaxIdType = js.native
+    var `type`: TaxIdType
     
     /**
       * Value of the tax ID.
       */
-    var value: String = js.native
+    var value: String
     
     /**
       * Tax ID verification information.
       */
-    var verification: ITaxIdVerification = js.native
+    var verification: ITaxIdVerification
   }
   object ITaxId {
     
     @scala.inline
     def apply(
-      country: string,
       created: Double,
       customer: String,
       id: String,
       livemode: Boolean,
-      `object`: tax_id,
       `type`: TaxIdType,
       value: String,
       verification: ITaxIdVerification
     ): ITaxId = {
-      val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(country = "string", created = created.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("tax_id")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITaxId]
     }
@@ -115,18 +111,17 @@ object customerTaxIds {
     }
   }
   
-  @js.native
   trait ITaxIdCreationOptions extends StObject {
     
     /**
       * Type of the tax ID, one of au_abn, eu_vat, in_gst, no_vat, or nz_gst
       */
-    var `type`: TaxIdType = js.native
+    var `type`: TaxIdType
     
     /**
       * Value of the tax ID.
       */
-    var value: String = js.native
+    var value: String
   }
   object ITaxIdCreationOptions {
     
@@ -148,23 +143,22 @@ object customerTaxIds {
     }
   }
   
-  @js.native
   trait ITaxIdVerification extends StObject {
     
     /**
       * Verification status, one of pending, unavailable, unverified, or verified.
       */
-    var status: pending | unavailable | unverified | verified = js.native
+    var status: pending | unavailable | unverified | verified
     
     /**
       * Verified address.
       */
-    var verified_address: String = js.native
+    var verified_address: String
     
     /**
       * Verified name.
       */
-    var verified_name: String = js.native
+    var verified_name: String
   }
   object ITaxIdVerification {
     

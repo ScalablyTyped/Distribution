@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForecastResult extends StObject {
   
   /**
     * The mean value of the forecast.
     */
-  var MeanValue: js.UndefOr[GenericString] = js.native
+  var MeanValue: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The lower limit for the prediction interval. 
     */
-  var PredictionIntervalLowerBound: js.UndefOr[GenericString] = js.native
+  var PredictionIntervalLowerBound: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The upper limit for the prediction interval. 
     */
-  var PredictionIntervalUpperBound: js.UndefOr[GenericString] = js.native
+  var PredictionIntervalUpperBound: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The period of time that the forecast covers.
     */
-  var TimePeriod: js.UndefOr[DateInterval] = js.native
+  var TimePeriod: js.UndefOr[DateInterval] = js.undefined
 }
 object ForecastResult {
   

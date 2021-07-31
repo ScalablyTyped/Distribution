@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConfigurationResponse extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait UpdateConfigurationResponse extends StObject {
     The Amazon Resource Name (ARN) of the configuration.
     
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * 
     Latest revision of the configuration.
     
     */
-  var LatestRevision: js.UndefOr[ConfigurationRevision] = js.native
+  var LatestRevision: js.UndefOr[ConfigurationRevision] = js.undefined
 }
 object UpdateConfigurationResponse {
   

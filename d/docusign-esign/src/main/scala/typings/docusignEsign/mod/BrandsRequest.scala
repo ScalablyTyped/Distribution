@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrandsRequest extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait BrandsRequest extends StObject {
     js.Array[
       /* This request object contains information about a specific brand. */ BrandRequest
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BrandsRequest {
   

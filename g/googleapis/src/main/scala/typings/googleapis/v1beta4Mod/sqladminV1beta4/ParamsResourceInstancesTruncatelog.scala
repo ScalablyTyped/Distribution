@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceInstancesTruncatelog extends StandardParameters {
+trait ParamsResourceInstancesTruncatelog
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Cloud SQL instance ID. This does not include the project ID.
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * Project ID of the Cloud SQL project.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaInstancesTruncateLogRequest] = js.native
+  var requestBody: js.UndefOr[SchemaInstancesTruncateLogRequest] = js.undefined
 }
 object ParamsResourceInstancesTruncatelog {
   

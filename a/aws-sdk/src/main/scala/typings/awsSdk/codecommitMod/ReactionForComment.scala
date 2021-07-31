@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactionForComment extends StObject {
   
   /**
     * The reaction for a specified comment.
     */
-  var reaction: js.UndefOr[ReactionValueFormats] = js.native
+  var reaction: js.UndefOr[ReactionValueFormats] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of users who have provided reactions to the comment.
     */
-  var reactionUsers: js.UndefOr[ReactionUsersList] = js.native
+  var reactionUsers: js.UndefOr[ReactionUsersList] = js.undefined
   
   /**
     * A numerical count of users who reacted with the specified emoji whose identities have been subsequently deleted from IAM. While these IAM users or roles no longer exist, the reactions might still appear in total reaction counts.
     */
-  var reactionsFromDeletedUsersCount: js.UndefOr[Count] = js.native
+  var reactionsFromDeletedUsersCount: js.UndefOr[Count] = js.undefined
 }
 object ReactionForComment {
   

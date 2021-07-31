@@ -2,19 +2,17 @@ package typings.reactDates.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateRangePickerInputPhrases extends StObject {
   
-  var clearDates: js.UndefOr[String] = js.native
+  var clearDates: js.UndefOr[String] = js.undefined
   
-  var focusStartDate: js.UndefOr[String] = js.native
+  var focusStartDate: js.UndefOr[String] = js.undefined
   
-  var keyboardBackwardNavigationInstructions: js.UndefOr[String] = js.native
+  var keyboardBackwardNavigationInstructions: js.UndefOr[String] = js.undefined
   
-  var keyboardForwardNavigationInstructions: js.UndefOr[String] = js.native
+  var keyboardForwardNavigationInstructions: js.UndefOr[String] = js.undefined
 }
 object DateRangePickerInputPhrases {
   

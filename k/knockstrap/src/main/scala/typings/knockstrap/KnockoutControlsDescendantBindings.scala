@@ -2,13 +2,11 @@ package typings.knockstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutControlsDescendantBindings extends StObject {
   
-  var controlsDescendantBindings: Boolean = js.native
+  var controlsDescendantBindings: Boolean
 }
 object KnockoutControlsDescendantBindings {
   

@@ -2,15 +2,13 @@ package typings.bmapgl.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Target extends StObject {
   
-  var target: js.Any = js.native
+  var target: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Target {
   

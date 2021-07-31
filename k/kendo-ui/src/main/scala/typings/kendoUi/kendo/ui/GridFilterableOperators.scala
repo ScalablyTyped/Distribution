@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridFilterableOperators extends StObject {
   
-  var date: js.UndefOr[GridFilterableOperatorsDate] = js.native
+  var date: js.UndefOr[GridFilterableOperatorsDate] = js.undefined
   
-  var enums: js.UndefOr[GridFilterableOperatorsEnums] = js.native
+  var enums: js.UndefOr[GridFilterableOperatorsEnums] = js.undefined
   
-  var number: js.UndefOr[GridFilterableOperatorsNumber] = js.native
+  var number: js.UndefOr[GridFilterableOperatorsNumber] = js.undefined
   
-  var string: js.UndefOr[GridFilterableOperatorsString] = js.native
+  var string: js.UndefOr[GridFilterableOperatorsString] = js.undefined
 }
 object GridFilterableOperators {
   

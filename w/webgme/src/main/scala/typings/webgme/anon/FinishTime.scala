@@ -3,19 +3,17 @@ package typings.webgme.anon
 import typings.webgme.GmeCommon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishTime extends StObject {
   
-  var finishTime: String = js.native
+  var finishTime: String
   
-  var messages: js.Array[Message] = js.native
+  var messages: js.Array[Message]
   
-  var pluginName: String = js.native
+  var pluginName: String
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object FinishTime {
   

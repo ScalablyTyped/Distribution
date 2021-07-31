@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,12 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *             .addSuggestion("First suggestion")
   *             .addSuggestion("Second suggestion"))
   */
-@js.native
 trait Suggestions extends StObject {
   
-  def addSuggestion(suggestion: String): Suggestions = js.native
+  def addSuggestion(suggestion: String): Suggestions
   
-  def addSuggestions(suggestions: js.Array[String]): Suggestions = js.native
+  def addSuggestions(suggestions: js.Array[String]): Suggestions
 }
 object Suggestions {
   

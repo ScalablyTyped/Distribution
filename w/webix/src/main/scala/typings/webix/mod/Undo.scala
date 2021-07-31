@@ -2,17 +2,15 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Undo extends StObject {
   
-  def ignoreUndo(functor: WebixCallback): Unit = js.native
+  def ignoreUndo(functor: WebixCallback): Unit
   
-  def removeUndo(id: String): Unit = js.native
+  def removeUndo(id: String): Unit
   
-  def undo(id: String): Unit = js.native
+  def undo(id: String): Unit
 }
 object Undo {
   

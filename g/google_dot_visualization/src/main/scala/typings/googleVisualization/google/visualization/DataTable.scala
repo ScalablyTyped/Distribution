@@ -3,7 +3,6 @@ package typings.googleVisualization.google.visualization
 import typings.googleVisualization.anon.Max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,16 +10,16 @@ trait DataTable extends StObject {
   
   def addColumn(descriptionObject: DataTableColumnDescription): Double = js.native
   def addColumn(`type`: String): Double = js.native
-  def addColumn(`type`: String, label: js.UndefOr[scala.Nothing], id: String): Double = js.native
   def addColumn(`type`: String, label: String): Double = js.native
   def addColumn(`type`: String, label: String, id: String): Double = js.native
+  def addColumn(`type`: String, label: Unit, id: String): Double = js.native
   
   def addRow(): Double = js.native
-  def addRow(cellArray: js.Array[_]): Double = js.native
+  def addRow(cellArray: js.Array[js.Any]): Double = js.native
   def addRow(cellObject: DataObjectCell): Double = js.native
   
   def addRows(numberOfEmptyRows: Double): Double = js.native
-  def addRows(rows: js.Array[js.Array[_ | DataObjectCell]]): Double = js.native
+  def addRows(rows: js.Array[js.Array[js.Any | DataObjectCell]]): Double = js.native
   
   def getColumnId(columnIndex: Double): String = js.native
   
@@ -38,7 +37,7 @@ trait DataTable extends StObject {
   
   def getColumnType(columnIndex: Double): String = js.native
   
-  def getDistinctValues(columnIndex: Double): js.Array[_] = js.native
+  def getDistinctValues(columnIndex: Double): js.Array[js.Any] = js.native
   
   def getFilteredRows(filters: js.Array[DataTableCellFilter]): js.Array[Double] = js.native
   
@@ -67,12 +66,12 @@ trait DataTable extends StObject {
   def getValue(rowIndex: Double, columnIndex: Double): js.Any = js.native
   
   def insertColumn(columnIndex: Double, `type`: String): Unit = js.native
-  def insertColumn(columnIndex: Double, `type`: String, label: js.UndefOr[scala.Nothing], id: String): Unit = js.native
   def insertColumn(columnIndex: Double, `type`: String, label: String): Unit = js.native
   def insertColumn(columnIndex: Double, `type`: String, label: String, id: String): Unit = js.native
+  def insertColumn(columnIndex: Double, `type`: String, label: Unit, id: String): Unit = js.native
   
   def insertRows(rowIndex: Double, numberOfEmptyRows: Double): Unit = js.native
-  def insertRows(rowIndex: Double, rows: js.Array[js.Array[_ | DataObjectCell]]): Unit = js.native
+  def insertRows(rowIndex: Double, rows: js.Array[js.Array[js.Any | DataObjectCell]]): Unit = js.native
   
   def removeColumn(columnIndex: Double): Unit = js.native
   
@@ -83,29 +82,7 @@ trait DataTable extends StObject {
   def removeRows(rowIndex: Double, numberOfRows: Double): Unit = js.native
   
   def setCell(rowIndex: Double, columnIndex: Double): Unit = js.native
-  def setCell(
-    rowIndex: Double,
-    columnIndex: Double,
-    value: js.UndefOr[scala.Nothing],
-    formattedValue: js.UndefOr[scala.Nothing],
-    properties: Properties
-  ): Unit = js.native
-  def setCell(rowIndex: Double, columnIndex: Double, value: js.UndefOr[scala.Nothing], formattedValue: String): Unit = js.native
-  def setCell(
-    rowIndex: Double,
-    columnIndex: Double,
-    value: js.UndefOr[scala.Nothing],
-    formattedValue: String,
-    properties: Properties
-  ): Unit = js.native
   def setCell(rowIndex: Double, columnIndex: Double, value: js.Any): Unit = js.native
-  def setCell(
-    rowIndex: Double,
-    columnIndex: Double,
-    value: js.Any,
-    formattedValue: js.UndefOr[scala.Nothing],
-    properties: Properties
-  ): Unit = js.native
   def setCell(rowIndex: Double, columnIndex: Double, value: js.Any, formattedValue: String): Unit = js.native
   def setCell(
     rowIndex: Double,
@@ -114,6 +91,10 @@ trait DataTable extends StObject {
     formattedValue: String,
     properties: Properties
   ): Unit = js.native
+  def setCell(rowIndex: Double, columnIndex: Double, value: js.Any, formattedValue: Unit, properties: Properties): Unit = js.native
+  def setCell(rowIndex: Double, columnIndex: Double, value: Unit, formattedValue: String): Unit = js.native
+  def setCell(rowIndex: Double, columnIndex: Double, value: Unit, formattedValue: String, properties: Properties): Unit = js.native
+  def setCell(rowIndex: Double, columnIndex: Double, value: Unit, formattedValue: Unit, properties: Properties): Unit = js.native
   
   def setColumnLabel(columnIndex: Double, label: String): Unit = js.native
   

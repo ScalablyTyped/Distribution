@@ -2,21 +2,20 @@ package typings.dragscroll
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dragscroll", "reset")
+  @JSImport("dragscroll", JSImport.Namespace)
   @js.native
-  def reset(): Unit = js.native
-  @JSImport("dragscroll", "reset")
-  @js.native
-  def reset(i: js.UndefOr[scala.Nothing], el: js.Any): Unit = js.native
-  @JSImport("dragscroll", "reset")
-  @js.native
-  def reset(i: Double): Unit = js.native
-  @JSImport("dragscroll", "reset")
-  @js.native
-  def reset(i: Double, el: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  @scala.inline
+  def reset(i: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(i.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def reset(i: Double, el: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(i.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reset(i: Unit, el: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(i.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

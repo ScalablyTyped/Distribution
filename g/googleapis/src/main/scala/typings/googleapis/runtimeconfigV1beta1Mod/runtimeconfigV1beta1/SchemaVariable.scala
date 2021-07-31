@@ -2,7 +2,6 @@ package typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * leaf variables can have values (that is, variables that do not have any
   * child variables).
   */
-@js.native
 trait SchemaVariable extends StObject {
   
   /**
@@ -30,27 +28,27 @@ trait SchemaVariable extends StObject {
     * characters.  Once you create a variable, you cannot change the variable
     * name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The current state of the variable. The variable state
     * indicates the outcome of the `variables().watch` call and is visible
     * through the `get` and `list` calls.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * The string value of the variable. The length of the value must be less
     * than 4096 bytes. Empty values are also accepted. For example, `text:
     * &quot;my text value&quot;`. The string must be valid UTF-8.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time of the last variable update. Timestamp will be UTC
     * timestamp.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The binary value of the variable. The length of the value must be less
@@ -59,7 +57,7 @@ trait SchemaVariable extends StObject {
     * (https://www.ietf.org/rfc/rfc4648.txt). Only one of `value` or `text` can
     * be set.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaVariable {
   

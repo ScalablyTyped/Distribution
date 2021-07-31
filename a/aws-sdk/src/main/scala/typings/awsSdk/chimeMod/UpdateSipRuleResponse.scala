@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSipRuleResponse extends StObject {
   
   /**
     * Updated SIP rule details.
     */
-  var SipRule: js.UndefOr[typings.awsSdk.chimeMod.SipRule] = js.native
+  var SipRule: js.UndefOr[typings.awsSdk.chimeMod.SipRule] = js.undefined
 }
 object UpdateSipRuleResponse {
   

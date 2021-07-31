@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportInstanceTaskDetails extends StObject {
   
   /**
     * A description of the task.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The instance operating system.
     */
-  var Platform: js.UndefOr[PlatformValues] = js.native
+  var Platform: js.UndefOr[PlatformValues] = js.undefined
   
   /**
     * The volumes.
     */
-  var Volumes: js.UndefOr[ImportInstanceVolumeDetailSet] = js.native
+  var Volumes: js.UndefOr[ImportInstanceVolumeDetailSet] = js.undefined
 }
 object ImportInstanceTaskDetails {
   

@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLTableCaption extends StObject {
   
   @JSName("MSHTML.IHTMLTableCaption_typekey")
-  var MSHTMLDotIHTMLTableCaption_typekey: IHTMLTableCaption = js.native
+  var MSHTMLDotIHTMLTableCaption_typekey: IHTMLTableCaption
   
-  var align: String = js.native
+  var align: String
   
-  var vAlign: String = js.native
+  var vAlign: String
 }
 object IHTMLTableCaption {
   

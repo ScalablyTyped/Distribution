@@ -5,34 +5,30 @@ import typings.ethersprojectBytes.mod.BytesLike
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("@ethersproject/json-wallets/lib/utils", "getPassword")
+  @JSImport("@ethersproject/json-wallets/lib/utils", JSImport.Namespace)
   @js.native
-  def getPassword(password: String): Uint8Array = js.native
-  @JSImport("@ethersproject/json-wallets/lib/utils", "getPassword")
-  @js.native
-  def getPassword(password: Bytes): Uint8Array = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ethersproject/json-wallets/lib/utils", "looseArrayify")
-  @js.native
-  def looseArrayify(hexString: String): Uint8Array = js.native
+  @scala.inline
+  def getPassword(password: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getPassword")(password.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def getPassword(password: Bytes): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getPassword")(password.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("@ethersproject/json-wallets/lib/utils", "searchPath")
-  @js.native
-  def searchPath(`object`: js.Any, path: String): String = js.native
+  @scala.inline
+  def looseArrayify(hexString: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("looseArrayify")(hexString.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("@ethersproject/json-wallets/lib/utils", "uuidV4")
-  @js.native
-  def uuidV4(randomBytes: BytesLike): String = js.native
+  @scala.inline
+  def searchPath(`object`: js.Any, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("searchPath")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/json-wallets/lib/utils", "zpad")
-  @js.native
-  def zpad(value: String, length: Double): String = js.native
-  @JSImport("@ethersproject/json-wallets/lib/utils", "zpad")
-  @js.native
-  def zpad(value: Double, length: Double): String = js.native
+  @scala.inline
+  def uuidV4(randomBytes: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuidV4")(randomBytes.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def zpad(value: String, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("zpad")(value.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def zpad(value: Double, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("zpad")(value.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
 }

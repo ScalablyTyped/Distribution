@@ -6,14 +6,13 @@ import typings.tablesorter.controlOptionsMod.ControlOptions
 import typings.tablesorter.dateOptionsMod.DateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uidatecompareoptionsMod {
   
-  @js.native
   trait UIDateCompareOptions
-    extends DatepickerOptions
+    extends StObject
+       with DatepickerOptions
        with DateOptions
        with ControlOptions
        with ComparableOptions

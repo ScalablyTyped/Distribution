@@ -2,16 +2,14 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TracingConfigResponse extends StObject {
   
   /**
     * The tracing mode.
     */
-  var Mode: js.UndefOr[TracingMode] = js.native
+  var Mode: js.UndefOr[TracingMode] = js.undefined
 }
 object TracingConfigResponse {
   

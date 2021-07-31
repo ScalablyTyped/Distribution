@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEndpointsRequest extends StObject {
   
   /**
     * Optional. Max number of endpoints, up to twenty, that will be returned at one time.
     */
-  var MaxResults: js.UndefOr[integer] = js.native
+  var MaxResults: js.UndefOr[integer] = js.undefined
   
   /**
     * Optional field, defaults to DEFAULT. Specify DEFAULT for this operation to return your endpoints if any exist, or to create an endpoint for you and return it if one doesn't already exist. Specify GET_ONLY to return your endpoints if any exist, or an empty list if none exist.
     */
-  var Mode: js.UndefOr[DescribeEndpointsMode] = js.native
+  var Mode: js.UndefOr[DescribeEndpointsMode] = js.undefined
   
   /**
     * Use this string, provided with the response to a previous request, to request the next batch of endpoints.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object DescribeEndpointsRequest {
   

@@ -3,15 +3,13 @@ package typings.expoFileSystem.fileSystemTypesMod
 import typings.expoFileSystem.anon.TotalBytesExpectedToWrite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressEvent extends StObject {
   
-  var data: TotalBytesExpectedToWrite = js.native
+  var data: TotalBytesExpectedToWrite
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object ProgressEvent {
   

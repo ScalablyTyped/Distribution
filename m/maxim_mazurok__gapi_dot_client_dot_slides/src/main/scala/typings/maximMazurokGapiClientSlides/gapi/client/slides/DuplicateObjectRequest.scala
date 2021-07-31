@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DuplicateObjectRequest extends StObject {
   
   /** The ID of the object to duplicate. */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The object being duplicated may contain other objects, for example when duplicating a slide or a group page element. This map defines how the IDs of duplicated objects are
@@ -23,8 +21,8 @@ trait DuplicateObjectRequest extends StObject {
   var objectIds: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.DuplicateObjectRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.DuplicateObjectRequest & TopLevel[js.Any]
+  ] = js.undefined
 }
 object DuplicateObjectRequest {
   
@@ -47,7 +45,7 @@ object DuplicateObjectRequest {
     def setObjectIds(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.DuplicateObjectRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.DuplicateObjectRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -3,14 +3,27 @@ package typings.semanticUiVisibility.anon
 import typings.semanticUiVisibility.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl, 'onAllLoaded'> */
-@js.native
 trait PickImplonAllLoaded extends StObject {
   
-  def onAllLoaded(): Unit = js.native
+  def onAllLoaded(): Unit
   @JSName("onAllLoaded")
-  var onAllLoaded_Original: js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  var onAllLoaded_Original: js.ThisFunction0[/* this */ JQuery, Unit]
+}
+object PickImplonAllLoaded {
+  
+  @scala.inline
+  def apply(onAllLoaded: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonAllLoaded = {
+    val __obj = js.Dynamic.literal(onAllLoaded = onAllLoaded.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickImplonAllLoaded]
+  }
+  
+  @scala.inline
+  implicit class PickImplonAllLoadedMutableBuilder[Self <: PickImplonAllLoaded] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOnAllLoaded(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onAllLoaded", value.asInstanceOf[js.Any])
+  }
 }

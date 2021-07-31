@@ -28,76 +28,74 @@ import typings.plotlyJs.plotlyJsStrings.width
 import typings.plotlyJs.scatterMod.ScatterSelectedMarker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object violinMod {
   
-  @js.native
   trait ViolinData extends StObject {
     
-    var alignmentgroup: String = js.native
+    var alignmentgroup: String
     
-    var bandwidth: Double = js.native
+    var bandwidth: Double
     
-    var box: Partialvisiblebooleanwidt = js.native
+    var box: Partialvisiblebooleanwidt
     
-    var fillcolor: Color = js.native
+    var fillcolor: Color
     
-    var hoveron: violins | points | kde | all | String = js.native
+    var hoveron: violins | points | kde | all | String
     
-    var hovertemplate: String | js.Array[String] = js.native
+    var hovertemplate: String | js.Array[String]
     
-    var hovertext: String | js.Array[String] = js.native
+    var hovertext: String | js.Array[String]
     
-    var jitter: Double = js.native
+    var jitter: Double
     
-    var line: PartialcolorColorwidthnumColor = js.native
+    var line: PartialcolorColorwidthnumColor
     
-    var marker: PartialoutliercolorColors = js.native
+    var marker: PartialoutliercolorColors
     
-    var meanline: Partialvisiblebooleancolo = js.native
+    var meanline: Partialvisiblebooleancolo
     
-    var name: String = js.native
+    var name: String
     
-    var offsetgroup: String = js.native
+    var offsetgroup: String
     
-    var opacity: Double = js.native
+    var opacity: Double
     
     // Missing from the list of attributes
-    var orientation: v | h = js.native
+    var orientation: v | h
     
-    var pointpos: Double = js.native
+    var pointpos: Double
     
-    var points: all | outliers | suspectedoutliers | `false` = js.native
+    var points: all | outliers | suspectedoutliers | `false`
     
-    var scalegroup: String = js.native
+    var scalegroup: String
     
-    var scalemode: width | count = js.native
+    var scalemode: width | count
     
-    var selected: ScatterSelectedMarker = js.native
+    var selected: ScatterSelectedMarker
     
-    var side: both | positive | negative = js.native
+    var side: both | positive | negative
     
-    var span: js.Array[_] = js.native
+    var span: js.Array[js.Any]
     
-    var spanmode: soft | hard | manual = js.native
+    var spanmode: soft | hard | manual
     
-    var text: String | js.Array[String] = js.native
+    var text: String | js.Array[String]
     
-    var `type`: violin = js.native
+    var `type`: violin
     
-    var unselected: ScatterSelectedMarker = js.native
+    var unselected: ScatterSelectedMarker
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: (js.Array[js.Array[Datum] | Datum]) | TypedArray = js.native
+    var x: (js.Array[js.Array[Datum] | Datum]) | TypedArray
     
-    var x0: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/box.BoxPlotData['x0'] */ js.Any = js.native
+    var x0: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/box.BoxPlotData['x0'] */ js.Any
     
-    var y: (js.Array[js.Array[Datum] | Datum]) | TypedArray = js.native
+    var y: (js.Array[js.Array[Datum] | Datum]) | TypedArray
     
-    var y0: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/box.BoxPlotData['y0'] */ js.Any = js.native
+    var y0: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/box.BoxPlotData['y0'] */ js.Any
   }
   object ViolinData {
     
@@ -124,10 +122,9 @@ object violinMod {
       scalemode: width | count,
       selected: ScatterSelectedMarker,
       side: both | positive | negative,
-      span: js.Array[_],
+      span: js.Array[js.Any],
       spanmode: soft | hard | manual,
       text: String | js.Array[String],
-      `type`: violin,
       unselected: ScatterSelectedMarker,
       width: Double,
       x: (js.Array[js.Array[Datum] | Datum]) | TypedArray,
@@ -136,7 +133,7 @@ object violinMod {
       y0: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/box.BoxPlotData['y0'] */ js.Any
     ): ViolinData = {
       val __obj = js.Dynamic.literal(alignmentgroup = alignmentgroup.asInstanceOf[js.Any], bandwidth = bandwidth.asInstanceOf[js.Any], box = box.asInstanceOf[js.Any], fillcolor = fillcolor.asInstanceOf[js.Any], hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], hovertext = hovertext.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], meanline = meanline.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offsetgroup = offsetgroup.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], pointpos = pointpos.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], scalegroup = scalegroup.asInstanceOf[js.Any], scalemode = scalemode.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], side = side.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], spanmode = spanmode.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], unselected = unselected.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x0 = x0.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y0 = y0.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("violin")
       __obj.asInstanceOf[ViolinData]
     }
     
@@ -216,7 +213,7 @@ object violinMod {
       def setSide(value: both | positive | negative): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSpan(value: js.Array[_]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      def setSpan(value: js.Array[js.Any]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSpanVarargs(value: js.Any*): Self = StObject.set(x, "span", js.Array(value :_*))

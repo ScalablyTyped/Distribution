@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRemoteAccessSessionRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the remote access session about which you want to get session information.
     */
-  var arn: AmazonResourceName = js.native
+  var arn: AmazonResourceName
 }
 object GetRemoteAccessSessionRequest {
   

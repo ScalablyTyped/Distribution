@@ -8,14 +8,13 @@ import typings.winrtUwp.winrtUwpStrings.completed
 import typings.winrtUwp.winrtUwpStrings.resultgenerated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages speech input for free-form dictation, or an arbitrary sequence of words or phrases that are defined in a grammar set. */
 @js.native
 trait SpeechContinuousRecognitionSession extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_completed(
     `type`: completed,
@@ -40,16 +39,14 @@ trait SpeechContinuousRecognitionSession extends StObject {
   def cancelAsync(): IPromiseWithIAsyncAction = js.native
   
   /** Occurs when a continuous recognition session ends. */
-  def oncompleted(
-    ev: SpeechContinuousRecognitionCompletedEventArgs with WinRTEvent[SpeechContinuousRecognitionSession]
-  ): Unit = js.native
+  def oncompleted(ev: SpeechContinuousRecognitionCompletedEventArgs & WinRTEvent[SpeechContinuousRecognitionSession]): Unit = js.native
   /** Occurs when a continuous recognition session ends. */
   @JSName("oncompleted")
   var oncompleted_Original: TypedEventHandler[SpeechContinuousRecognitionSession, SpeechContinuousRecognitionCompletedEventArgs] = js.native
   
   /** Occurs when the speech recognizer returns the result from a continuous recognition session. */
   def onresultgenerated(
-    ev: SpeechContinuousRecognitionResultGeneratedEventArgs with WinRTEvent[SpeechContinuousRecognitionSession]
+    ev: SpeechContinuousRecognitionResultGeneratedEventArgs & WinRTEvent[SpeechContinuousRecognitionSession]
   ): Unit = js.native
   /** Occurs when the speech recognizer returns the result from a continuous recognition session. */
   @JSName("onresultgenerated")
@@ -64,7 +61,7 @@ trait SpeechContinuousRecognitionSession extends StObject {
     */
   def pauseAsync(): IPromiseWithIAsyncAction = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_completed(
     `type`: completed,

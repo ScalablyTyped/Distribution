@@ -11,7 +11,6 @@ import typings.std.HTMLDivElement
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollBarMod {
@@ -70,24 +69,23 @@ object scrollBarMod {
     var visibleTimeout: Timeout = js.native
   }
   
-  @js.native
   trait ScrollBarProps extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    def onScroll(scrollTop: Double): Unit = js.native
+    def onScroll(scrollTop: Double): Unit
     
-    def onStartMove(): Unit = js.native
+    def onStartMove(): Unit
     
-    def onStopMove(): Unit = js.native
+    def onStopMove(): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var scrollHeight: Double = js.native
+    var scrollHeight: Double
     
-    var scrollTop: Double = js.native
+    var scrollTop: Double
   }
   object ScrollBarProps {
     
@@ -135,16 +133,15 @@ object scrollBarMod {
     }
   }
   
-  @js.native
   trait ScrollBarState extends StObject {
     
-    var dragging: Boolean = js.native
+    var dragging: Boolean
     
-    var pageY: Double = js.native
+    var pageY: Double
     
-    var startTop: Double = js.native
+    var startTop: Double
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object ScrollBarState {
     

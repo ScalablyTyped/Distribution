@@ -2,20 +2,18 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.setHeight()
-@js.native
 trait SetHeightConfig extends StObject {
   
-  var full: js.UndefOr[Boolean] = js.native
+  var full: js.UndefOr[Boolean] = js.undefined
   
-  var fullViewport: js.UndefOr[Boolean] = js.native
+  var fullViewport: js.UndefOr[Boolean] = js.undefined
   
-  var growOnly: js.UndefOr[Boolean] = js.native
+  var growOnly: js.UndefOr[Boolean] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
 }
 object SetHeightConfig {
   

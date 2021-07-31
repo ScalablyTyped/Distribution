@@ -7,18 +7,16 @@ import typings.aliApp.aliAppStrings.point
 import typings.aliApp.aliAppStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.Badge> */
-@js.native
 trait PartialBadge extends StObject {
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[none | point | num | text | more | String] = js.native
+  var `type`: js.UndefOr[none | point | num | text | more | String] = js.undefined
 }
 object PartialBadge {
   

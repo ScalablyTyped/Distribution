@@ -2,15 +2,14 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseLocationOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   @JSName("success")
-  def success_MChooseLocationOptions(res: ChooseLocationData): Unit = js.native
+  def success_MChooseLocationOptions(res: ChooseLocationData): Unit
 }
 object ChooseLocationOptions {
   

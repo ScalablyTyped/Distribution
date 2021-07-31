@@ -3,27 +3,26 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.IntersectionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait IntersectionTypeAnnotation_
-  extends Flow
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait IntersectionTypeAnnotation_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowType {
   
   @JSName("type")
-  var type_IntersectionTypeAnnotation_ : IntersectionTypeAnnotation = js.native
+  var type_IntersectionTypeAnnotation_ : IntersectionTypeAnnotation
   
-  var types: js.Array[FlowType] = js.native
+  var types: js.Array[FlowType]
 }
 object IntersectionTypeAnnotation_ {
   
   @scala.inline
-  def apply(`type`: IntersectionTypeAnnotation, types: js.Array[FlowType]): IntersectionTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(types: js.Array[FlowType]): IntersectionTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("IntersectionTypeAnnotation")
     __obj.asInstanceOf[IntersectionTypeAnnotation_]
   }
   

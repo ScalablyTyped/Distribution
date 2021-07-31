@@ -2,45 +2,43 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChampionDto extends StObject {
   
-  var allytips: js.Array[String] = js.native
+  var allytips: js.Array[String]
   
-  var blurb: String = js.native
+  var blurb: String
   
-  var enemytips: js.Array[String] = js.native
+  var enemytips: js.Array[String]
   
-  var id: Double = js.native
+  var id: Double
   
-  var image: ImageDto = js.native
+  var image: ImageDto
   
-  var info: InfoDto = js.native
+  var info: InfoDto
   
-  var key: String = js.native
+  var key: String
   
-  var lore: String = js.native
+  var lore: String
   
-  var name: String = js.native
+  var name: String
   
-  var partype: String = js.native
+  var partype: String
   
-  var passive: PassiveDto = js.native
+  var passive: PassiveDto
   
-  var recommended: js.Array[RecommendedDto] = js.native
+  var recommended: js.Array[RecommendedDto]
   
-  var skins: js.Array[SkinDto] = js.native
+  var skins: js.Array[SkinDto]
   
-  var spells: js.Array[ChampionSpellDto] = js.native
+  var spells: js.Array[ChampionSpellDto]
   
-  var stats: StatsDto = js.native
+  var stats: StatsDto
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
-  var title: String = js.native
+  var title: String
 }
 object ChampionDto {
   

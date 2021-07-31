@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The data that is stored in this container may contain different types.
   */
-@js.native
-trait XLabeledDataSequence extends XInterface {
+trait XLabeledDataSequence
+  extends StObject
+     with XInterface {
   
   /** returns an {@link XDataSequence} containing the label for the labeled sequence. */
-  var Label: XDataSequence = js.native
+  var Label: XDataSequence
   
   /** returns an {@link XDataSequence} containing the actual data. */
-  var Values: XDataSequence = js.native
+  var Values: XDataSequence
   
   /** returns an {@link XDataSequence} containing the label for the labeled sequence. */
-  def getLabel(): XDataSequence = js.native
+  def getLabel(): XDataSequence
   
   /** returns an {@link XDataSequence} containing the actual data. */
-  def getValues(): XDataSequence = js.native
+  def getValues(): XDataSequence
   
   /** sets a new {@link XDataSequence} containing the label for the labeled sequence. */
-  def setLabel(xSequence: XDataSequence): Unit = js.native
+  def setLabel(xSequence: XDataSequence): Unit
   
   /** sets a new {@link XDataSequence} containing the actual data. */
-  def setValues(xSequence: XDataSequence): Unit = js.native
+  def setValues(xSequence: XDataSequence): Unit
 }
 object XLabeledDataSequence {
   

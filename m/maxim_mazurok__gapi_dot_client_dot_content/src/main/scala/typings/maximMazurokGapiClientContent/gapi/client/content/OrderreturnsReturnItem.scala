@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderreturnsReturnItem extends StObject {
   
   /** Refunds the item. */
-  var refund: js.UndefOr[OrderreturnsRefundOperation] = js.native
+  var refund: js.UndefOr[OrderreturnsRefundOperation] = js.undefined
   
   /** Rejects the item. */
-  var reject: js.UndefOr[OrderreturnsRejectOperation] = js.native
+  var reject: js.UndefOr[OrderreturnsRejectOperation] = js.undefined
   
   /** Unit level ID for the return item. Different units of the same product will have different IDs. */
-  var returnItemId: js.UndefOr[String] = js.native
+  var returnItemId: js.UndefOr[String] = js.undefined
 }
 object OrderreturnsReturnItem {
   

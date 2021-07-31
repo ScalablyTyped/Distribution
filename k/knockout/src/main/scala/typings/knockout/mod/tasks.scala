@@ -2,7 +2,6 @@ package typings.knockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tasks {
@@ -11,17 +10,14 @@ object tasks {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("knockout", "tasks.cancel")
-  @js.native
-  def cancel(handle: Double): Unit = js.native
+  @scala.inline
+  def cancel(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("knockout", "tasks.runEarly")
-  @js.native
-  def runEarly(): Unit = js.native
+  @scala.inline
+  def runEarly(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runEarly")().asInstanceOf[Unit]
   
-  @JSImport("knockout", "tasks.schedule")
-  @js.native
-  def schedule(callback: js.Function0[_]): Double = js.native
+  @scala.inline
+  def schedule(callback: js.Function0[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("knockout", "tasks.scheduler")
   @js.native

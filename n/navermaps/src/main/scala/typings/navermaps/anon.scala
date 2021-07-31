@@ -3,23 +3,21 @@ package typings.navermaps
 import typings.navermaps.naver.maps.Service.AddressItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Country extends StObject {
     
-    var country: String = js.native
+    var country: String
     
-    var dongmyun: String = js.native
+    var dongmyun: String
     
-    var rest: String = js.native
+    var rest: String
     
-    var sido: String = js.native
+    var sido: String
     
-    var sigugun: String = js.native
+    var sigugun: String
   }
   object Country {
     
@@ -49,14 +47,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Items extends StObject {
     
-    var items: js.Array[AddressItem] = js.native
+    var items: js.Array[AddressItem]
     
-    var total: Double = js.native
+    var total: Double
     
-    var userquery: js.Any = js.native
+    var userquery: js.Any
   }
   object Items {
     
@@ -83,14 +80,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Total extends StObject {
     
-    var items: js.Array[AddressItem] = js.native
+    var items: js.Array[AddressItem]
     
-    var total: Double = js.native
+    var total: Double
     
-    var userquery: String = js.native
+    var userquery: String
   }
   object Total {
     

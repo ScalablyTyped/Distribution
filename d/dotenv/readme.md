@@ -10,9 +10,9 @@ Loads environment variables from .env file
 | ------------------ | :-------------: |
 | Full name          | dotenv |
 | Keywords           | dotenv, env, .env, environment, variables, config, settings |
-| # releases         | 9 |
-| # dependents       | 11161 |
-| # downloads        | 460569060 |
+| # releases         | 5 |
+| # dependents       | 12707 |
+| # downloads        | 583510759 |
 | # stars            | 444 |
 
 ## Links

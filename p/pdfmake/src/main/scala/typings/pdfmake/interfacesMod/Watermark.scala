@@ -2,34 +2,32 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Watermark extends StObject {
   
   /** angle of text rotation (minimal version: 0.1.60) */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /** bold style of text */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /** color of text */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
   /** own font size of text (ideal size is calculated automatically) (minimal version: 0.1.60) */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /** italics style of text */
-  var italics: js.UndefOr[Boolean] = js.native
+  var italics: js.UndefOr[Boolean] = js.undefined
   
   /** opacity of text */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /** watermark text */
-  var text: String = js.native
+  var text: String
 }
 object Watermark {
   

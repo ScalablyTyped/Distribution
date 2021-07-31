@@ -10,9 +10,9 @@ Stylable module creation utilities
 | ------------------ | :-------------: |
 | Full name          | @stylable/module-utils |
 | Keywords           | - |
-| # releases         | 67 |
+| # releases         | 90 |
 | # dependents       | 4 |
-| # downloads        | 131876 |
+| # downloads        | 212946 |
 | # stars            | 0 |
 
 ## Links

@@ -3,28 +3,26 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storagegateway {
   
-  @js.native
   trait GatewaySmbActiveDirectorySettings extends StObject {
     
     /**
       * The name of the domain that you want the gateway to join.
       */
-    var domainName: Input[String] = js.native
+    var domainName: Input[String]
     
     /**
       * The password of the user who has permission to add the gateway to the Active Directory domain.
       */
-    var password: Input[String] = js.native
+    var password: Input[String]
     
     /**
       * The user name of user who has permission to add the gateway to the Active Directory domain.
       */
-    var username: Input[String] = js.native
+    var username: Input[String]
   }
   object GatewaySmbActiveDirectorySettings {
     
@@ -48,7 +46,6 @@ object storagegateway {
     }
   }
   
-  @js.native
   trait NfsFileShareCacheAttributes extends StObject {
     
     /**
@@ -56,7 +53,7 @@ object storagegateway {
       * TTL is the length of time since the last refresh after which access to the directory would cause the file gateway
       * to first refresh that directory's contents from the Amazon S3 bucket. Valid Values: 300 to 2,592,000 seconds (5 minutes to 30 days)
       */
-    var cacheStaleTimeoutInSeconds: js.UndefOr[Input[Double]] = js.native
+    var cacheStaleTimeoutInSeconds: js.UndefOr[Input[Double]] = js.undefined
   }
   object NfsFileShareCacheAttributes {
     
@@ -77,28 +74,27 @@ object storagegateway {
     }
   }
   
-  @js.native
   trait NfsFileShareNfsFileShareDefaults extends StObject {
     
     /**
       * The Unix directory mode in the string form "nnnn". Defaults to `"0777"`.
       */
-    var directoryMode: js.UndefOr[Input[String]] = js.native
+    var directoryMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Unix file mode in the string form "nnnn". Defaults to `"0666"`.
       */
-    var fileMode: js.UndefOr[Input[String]] = js.native
+    var fileMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The default group ID for the file share (unless the files have another group ID specified). Defaults to `65534` (`nfsnobody`). Valid values: `0` through `4294967294`.
       */
-    var groupId: js.UndefOr[Input[Double]] = js.native
+    var groupId: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The default owner ID for the file share (unless the files have another owner ID specified). Defaults to `65534` (`nfsnobody`). Valid values: `0` through `4294967294`.
       */
-    var ownerId: js.UndefOr[Input[Double]] = js.native
+    var ownerId: js.UndefOr[Input[Double]] = js.undefined
   }
   object NfsFileShareNfsFileShareDefaults {
     
@@ -137,7 +133,6 @@ object storagegateway {
     }
   }
   
-  @js.native
   trait SmbFileShareCacheAttributes extends StObject {
     
     /**
@@ -145,7 +140,7 @@ object storagegateway {
       * TTL is the length of time since the last refresh after which access to the directory would cause the file gateway
       * to first refresh that directory's contents from the Amazon S3 bucket. Valid Values: 300 to 2,592,000 seconds (5 minutes to 30 days)
       */
-    var cacheStaleTimeoutInSeconds: js.UndefOr[Input[Double]] = js.native
+    var cacheStaleTimeoutInSeconds: js.UndefOr[Input[Double]] = js.undefined
   }
   object SmbFileShareCacheAttributes {
     

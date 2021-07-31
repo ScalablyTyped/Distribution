@@ -5,25 +5,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Screenshot extends Object {
+trait Screenshot
+  extends StObject
+     with Object {
   
   /**
     * The raw RGBA image data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#Screenshot)
     */
-  var data: ImageData = js.native
+  var data: ImageData
   
   /**
     * A data url representing the screenshot.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#Screenshot)
     */
-  var dataUrl: String = js.native
+  var dataUrl: String
 }
 object Screenshot {
   

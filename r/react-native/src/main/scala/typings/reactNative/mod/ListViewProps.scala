@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListViewProps extends ScrollViewProps {
+trait ListViewProps
+  extends StObject
+     with ScrollViewProps {
   
   /**
     * An instance of [ListView.DataSource](docs/listviewdatasource.html) to use

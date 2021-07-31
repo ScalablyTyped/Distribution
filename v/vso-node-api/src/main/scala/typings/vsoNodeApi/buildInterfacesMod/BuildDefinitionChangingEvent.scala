@@ -2,17 +2,15 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildDefinitionChangingEvent extends StObject {
   
-  var changeType: AuditAction = js.native
+  var changeType: AuditAction
   
-  var newDefinition: BuildDefinition = js.native
+  var newDefinition: BuildDefinition
   
-  var originalDefinition: BuildDefinition = js.native
+  var originalDefinition: BuildDefinition
 }
 object BuildDefinitionChangingEvent {
   

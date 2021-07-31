@@ -11,8 +11,8 @@ An extension to GeoJSON that encodes topology.
 | Full name          | topojson |
 | Keywords           | topojson, geojson |
 | # releases         | 1 |
-| # dependents       | 156 |
-| # downloads        | 4729884 |
+| # dependents       | 160 |
+| # downloads        | 5839811 |
 | # stars            | 7 |
 
 ## Links

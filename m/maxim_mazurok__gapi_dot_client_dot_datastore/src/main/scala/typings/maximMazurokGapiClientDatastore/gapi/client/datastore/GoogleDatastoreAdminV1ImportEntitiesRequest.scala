@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDatastoreAdminV1ImportEntitiesRequest extends StObject {
   
   /**
     * Optionally specify which kinds/namespaces are to be imported. If provided, the list must be a subset of the EntityFilter used in creating the export, otherwise a FAILED_PRECONDITION
     * error will be returned. If no filter is specified then all entities from the export are imported.
     */
-  var entityFilter: js.UndefOr[GoogleDatastoreAdminV1EntityFilter] = js.native
+  var entityFilter: js.UndefOr[GoogleDatastoreAdminV1EntityFilter] = js.undefined
   
   /**
     * Required. The full resource URL of the external storage location. Currently, only Google Cloud Storage is supported. So input_url should be of the form:
@@ -22,14 +20,14 @@ trait GoogleDatastoreAdminV1ImportEntitiesRequest extends StObject {
     * Cloud Storage namespace paths, see [Object name considerations](https://cloud.google.com/storage/docs/naming#object-considerations). For more information, see
     * google.datastore.admin.v1.ExportEntitiesResponse.output_url.
     */
-  var inputUrl: js.UndefOr[String] = js.native
+  var inputUrl: js.UndefOr[String] = js.undefined
   
   /** Client-assigned labels. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1ImportEntitiesRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1ImportEntitiesRequest & TopLevel[js.Any]
+  ] = js.undefined
 }
 object GoogleDatastoreAdminV1ImportEntitiesRequest {
   
@@ -58,7 +56,7 @@ object GoogleDatastoreAdminV1ImportEntitiesRequest {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1ImportEntitiesRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1ImportEntitiesRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

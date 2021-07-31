@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAutomationExecutionResult extends StObject {
   
   /**
     * Detailed information about the current state of an automation execution.
     */
-  var AutomationExecution: js.UndefOr[typings.awsSdk.ssmMod.AutomationExecution] = js.native
+  var AutomationExecution: js.UndefOr[typings.awsSdk.ssmMod.AutomationExecution] = js.undefined
 }
 object GetAutomationExecutionResult {
   

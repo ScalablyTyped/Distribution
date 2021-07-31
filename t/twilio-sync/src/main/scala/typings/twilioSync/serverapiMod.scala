@@ -2,15 +2,13 @@ package typings.twilioSync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverapiMod {
   
-  @js.native
   trait PublishMessageRequest extends StObject {
     
-    var data: js.Object = js.native
+    var data: js.Object
   }
   object PublishMessageRequest {
     
@@ -28,10 +26,9 @@ object serverapiMod {
     }
   }
   
-  @js.native
   trait PublishMessageResponse extends StObject {
     
-    var sid: String = js.native
+    var sid: String
   }
   object PublishMessageResponse {
     
@@ -49,18 +46,17 @@ object serverapiMod {
     }
   }
   
-  @js.native
   trait StreamDescriptor extends StObject {
     
-    var date_expires: String = js.native
+    var date_expires: String
     
-    var links: StreamLinks = js.native
+    var links: StreamLinks
     
-    var sid: String = js.native
+    var sid: String
     
-    var unique_name: String = js.native
+    var unique_name: String
     
-    var url: String = js.native
+    var url: String
   }
   object StreamDescriptor {
     
@@ -90,10 +86,9 @@ object serverapiMod {
     }
   }
   
-  @js.native
   trait StreamLinks extends StObject {
     
-    var messages: String = js.native
+    var messages: String
   }
   object StreamLinks {
     

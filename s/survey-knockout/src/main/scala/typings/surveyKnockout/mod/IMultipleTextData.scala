@@ -2,27 +2,26 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMultipleTextData
-  extends IPanel
-     with ILocalizableOwner {
+  extends StObject
+     with ILocalizableOwner
+     with IPanel {
   
-  def getAllValues(): js.Any = js.native
+  def getAllValues(): js.Any
   
-  def getIsRequiredText(): String = js.native
+  def getIsRequiredText(): String
   
-  def getItemDefaultValue(name: String): js.Any = js.native
+  def getItemDefaultValue(name: String): js.Any
   
-  def getMultipleTextValue(name: String): js.Any = js.native
+  def getMultipleTextValue(name: String): js.Any
   
-  def getSurvey(): ISurvey = js.native
+  def getSurvey(): ISurvey
   
-  def getTextProcessor(): ITextProcessor = js.native
+  def getTextProcessor(): ITextProcessor
   
-  def setMultipleTextValue(name: String, value: js.Any): js.Any = js.native
+  def setMultipleTextValue(name: String, value: js.Any): js.Any
 }
 object IMultipleTextData {
   

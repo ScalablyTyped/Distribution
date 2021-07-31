@@ -11,8 +11,8 @@ Format data using ECMA-376 spreadsheet Format Codes
 | Full name          | ssf |
 | Keywords           | format, sprintf, spreadsheet |
 | # releases         | 5 |
-| # dependents       | 174 |
-| # downloads        | 30146523 |
+| # dependents       | 206 |
+| # downloads        | 43122166 |
 | # stars            | 1 |
 
 ## Links

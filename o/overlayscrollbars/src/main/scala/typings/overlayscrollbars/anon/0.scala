@@ -3,15 +3,13 @@ package typings.overlayscrollbars.anon
 import typings.overlayscrollbars.mod.OverflowBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var x: js.UndefOr[OverflowBehavior] = js.native
+  var x: js.UndefOr[OverflowBehavior] = js.undefined
   
-  var y: js.UndefOr[OverflowBehavior] = js.native
+  var y: js.UndefOr[OverflowBehavior] = js.undefined
 }
 object `0` {
   

@@ -2,20 +2,18 @@ package typings.reactRelay.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<relay-runtime.relay-runtime.PageInfo> */
-@js.native
 trait PartialPageInfo extends StObject {
   
-  var endCursor: js.UndefOr[String | Null] = js.native
+  var endCursor: js.UndefOr[String | Null] = js.undefined
   
-  var hasNextPage: js.UndefOr[Boolean] = js.native
+  var hasNextPage: js.UndefOr[Boolean] = js.undefined
   
-  var hasPreviousPage: js.UndefOr[Boolean] = js.native
+  var hasPreviousPage: js.UndefOr[Boolean] = js.undefined
   
-  var startCursor: js.UndefOr[String | Null] = js.native
+  var startCursor: js.UndefOr[String | Null] = js.undefined
 }
 object PartialPageInfo {
   

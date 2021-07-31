@@ -2,22 +2,20 @@ package typings.scrivito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundImageTagProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var style: CSSPropsWithoutBackground with BackgroundImageBackgroundProp = js.native
+  var style: CSSPropsWithoutBackground & BackgroundImageBackgroundProp
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object BackgroundImageTagProps {
   
   @scala.inline
-  def apply(style: CSSPropsWithoutBackground with BackgroundImageBackgroundProp): BackgroundImageTagProps = {
+  def apply(style: CSSPropsWithoutBackground & BackgroundImageBackgroundProp): BackgroundImageTagProps = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundImageTagProps]
   }
@@ -32,7 +30,7 @@ object BackgroundImageTagProps {
     def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setStyle(value: CSSPropsWithoutBackground with BackgroundImageBackgroundProp): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    def setStyle(value: CSSPropsWithoutBackground & BackgroundImageBackgroundProp): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])

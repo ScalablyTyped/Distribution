@@ -2,51 +2,49 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEventPredictionRequest extends StObject {
   
   /**
     * The detector ID.
     */
-  var detectorId: String = js.native
+  var detectorId: String
   
   /**
     * The detector version ID.
     */
-  var detectorVersionId: js.UndefOr[wholeNumberVersionString] = js.native
+  var detectorVersionId: js.UndefOr[wholeNumberVersionString] = js.undefined
   
   /**
     * The entity type (associated with the detector's event type) and specific entity ID representing who performed the event. If an entity id is not available, use "UNKNOWN."
     */
-  var entities: listOfEntities = js.native
+  var entities: listOfEntities
   
   /**
     * The unique ID used to identify the event.
     */
-  var eventId: String = js.native
+  var eventId: String
   
   /**
     * Timestamp that defines when the event under evaluation occurred.
     */
-  var eventTimestamp: String = js.native
+  var eventTimestamp: String
   
   /**
     * The event type associated with the detector specified for the prediction.
     */
-  var eventTypeName: String = js.native
+  var eventTypeName: String
   
   /**
     * Names of the event type's variables you defined in Amazon Fraud Detector to represent data elements and their corresponding values for the event you are sending for evaluation.
     */
-  var eventVariables: EventVariableMap = js.native
+  var eventVariables: EventVariableMap
   
   /**
     * The Amazon SageMaker model endpoint input data blobs.
     */
-  var externalModelEndpointDataBlobs: js.UndefOr[ExternalModelEndpointDataBlobMap] = js.native
+  var externalModelEndpointDataBlobs: js.UndefOr[ExternalModelEndpointDataBlobMap] = js.undefined
 }
 object GetEventPredictionRequest {
   

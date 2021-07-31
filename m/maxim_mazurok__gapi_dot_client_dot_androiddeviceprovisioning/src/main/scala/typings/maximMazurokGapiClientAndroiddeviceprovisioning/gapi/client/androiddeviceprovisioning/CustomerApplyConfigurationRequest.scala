@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerApplyConfigurationRequest extends StObject {
   
   /** Required. The configuration applied to the device in the format `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. */
-  var configuration: js.UndefOr[String] = js.native
+  var configuration: js.UndefOr[String] = js.undefined
   
   /** Required. The device the configuration is applied to. */
-  var device: js.UndefOr[DeviceReference] = js.native
+  var device: js.UndefOr[DeviceReference] = js.undefined
 }
 object CustomerApplyConfigurationRequest {
   

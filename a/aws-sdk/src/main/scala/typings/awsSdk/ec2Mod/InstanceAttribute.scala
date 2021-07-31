@@ -2,91 +2,89 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceAttribute extends StObject {
   
   /**
     * The block device mapping of the instance.
     */
-  var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingList] = js.native
+  var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingList] = js.undefined
   
   /**
     * If the value is true, you can't terminate the instance through the Amazon EC2 console, CLI, or API; otherwise, you can.
     */
-  var DisableApiTermination: js.UndefOr[AttributeBooleanValue] = js.native
+  var DisableApiTermination: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
     * Indicates whether the instance is optimized for Amazon EBS I/O.
     */
-  var EbsOptimized: js.UndefOr[AttributeBooleanValue] = js.native
+  var EbsOptimized: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
     * Indicates whether enhanced networking with ENA is enabled.
     */
-  var EnaSupport: js.UndefOr[AttributeBooleanValue] = js.native
+  var EnaSupport: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
     * To enable the instance for AWS Nitro Enclaves, set this parameter to true; otherwise, set it to false.
     */
-  var EnclaveOptions: js.UndefOr[typings.awsSdk.ec2Mod.EnclaveOptions] = js.native
+  var EnclaveOptions: js.UndefOr[typings.awsSdk.ec2Mod.EnclaveOptions] = js.undefined
   
   /**
     * The security groups associated with the instance.
     */
-  var Groups: js.UndefOr[GroupIdentifierList] = js.native
+  var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown).
     */
-  var InstanceInitiatedShutdownBehavior: js.UndefOr[AttributeValue] = js.native
+  var InstanceInitiatedShutdownBehavior: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * The instance type.
     */
-  var InstanceType: js.UndefOr[AttributeValue] = js.native
+  var InstanceType: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * The kernel ID.
     */
-  var KernelId: js.UndefOr[AttributeValue] = js.native
+  var KernelId: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * A list of product codes.
     */
-  var ProductCodes: js.UndefOr[ProductCodeList] = js.native
+  var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
   
   /**
     * The RAM disk ID.
     */
-  var RamdiskId: js.UndefOr[AttributeValue] = js.native
+  var RamdiskId: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * The device name of the root device volume (for example, /dev/sda1).
     */
-  var RootDeviceName: js.UndefOr[AttributeValue] = js.native
+  var RootDeviceName: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * Indicates whether source/destination checking is enabled. A value of true means that checking is enabled, and false means that checking is disabled. This value must be false for a NAT instance to perform NAT.
     */
-  var SourceDestCheck: js.UndefOr[AttributeBooleanValue] = js.native
+  var SourceDestCheck: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
     * Indicates whether enhanced networking with the Intel 82599 Virtual Function interface is enabled.
     */
-  var SriovNetSupport: js.UndefOr[AttributeValue] = js.native
+  var SriovNetSupport: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * The user data.
     */
-  var UserData: js.UndefOr[AttributeValue] = js.native
+  var UserData: js.UndefOr[AttributeValue] = js.undefined
 }
 object InstanceAttribute {
   

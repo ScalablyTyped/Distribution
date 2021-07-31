@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChefConfiguration extends StObject {
   
   /**
     * The Berkshelf version.
     */
-  var BerkshelfVersion: js.UndefOr[String] = js.native
+  var BerkshelfVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to enable Berkshelf.
     */
-  var ManageBerkshelf: js.UndefOr[Boolean] = js.native
+  var ManageBerkshelf: js.UndefOr[Boolean] = js.undefined
 }
 object ChefConfiguration {
   

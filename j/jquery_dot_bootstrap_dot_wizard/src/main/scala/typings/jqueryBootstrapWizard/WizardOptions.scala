@@ -2,53 +2,51 @@ package typings.jqueryBootstrapWizard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WizardOptions extends StObject {
   
-  var firstSelector: js.UndefOr[String] = js.native
+  var firstSelector: js.UndefOr[String] = js.undefined
   
-  var lastSelector: js.UndefOr[String] = js.native
+  var lastSelector: js.UndefOr[String] = js.undefined
   
-  var nextSelector: js.UndefOr[String] = js.native
+  var nextSelector: js.UndefOr[String] = js.undefined
   
   var onFirst: js.UndefOr[
     js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* firstIndex */ Double, Boolean]
-  ] = js.native
+  ] = js.undefined
   
   var onInit: js.UndefOr[
     js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onLast: js.UndefOr[
     js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* lastIndex */ Double, Boolean]
-  ] = js.native
+  ] = js.undefined
   
   var onNext: js.UndefOr[
     js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* nextIndex */ Double, Boolean]
-  ] = js.native
+  ] = js.undefined
   
   var onPrevious: js.UndefOr[
     js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* previousIndex */ Double, Boolean]
-  ] = js.native
+  ] = js.undefined
   
   var onShow: js.UndefOr[
     js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* nextIndex */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onTabClick: js.UndefOr[
     js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double, Boolean]
-  ] = js.native
+  ] = js.undefined
   
   var onTabShow: js.UndefOr[
     js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double, Boolean]
-  ] = js.native
+  ] = js.undefined
   
-  var previousSelector: js.UndefOr[String] = js.native
+  var previousSelector: js.UndefOr[String] = js.undefined
   
-  var tabClass: js.UndefOr[String] = js.native
+  var tabClass: js.UndefOr[String] = js.undefined
 }
 object WizardOptions {
   

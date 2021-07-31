@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteSet")
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class WriteSet () extends Message {
   
   def addWriteSet(): WriteOp = js.native
-  def addWriteSet(value: js.UndefOr[scala.Nothing], index: Double): WriteOp = js.native
+  def addWriteSet(value: Unit, index: Double): WriteOp = js.native
   def addWriteSet(value: WriteOp): WriteOp = js.native
   def addWriteSet(value: WriteOp, index: Double): WriteOp = js.native
   
@@ -34,13 +33,11 @@ object WriteSet {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteSet.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): WriteSet = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): WriteSet = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[WriteSet]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteSet.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: WriteSet, reader: BinaryReader): WriteSet = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: WriteSet, reader: BinaryReader): WriteSet = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[WriteSet]
   
   @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteSet.extensions")
   @js.native
@@ -55,18 +52,15 @@ object WriteSet {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteSet.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: WriteSet, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: WriteSet, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteSet.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: WriteSet): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: WriteSet): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var writeSetList: js.Array[typings.libraCore.transactionPbMod.WriteOp.AsObject] = js.native
+    var writeSetList: js.Array[typings.libraCore.transactionPbMod.WriteOp.AsObject]
   }
   object AsObject {
     

@@ -8,7 +8,6 @@ import typings.std.Event
 import typings.std.HTMLAudioElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -52,60 +51,59 @@ object mod {
     def updateVolume(volume: Double): Unit = js.native
   }
   
-  @js.native
   trait ReactAudioPlayerProps extends StObject {
     
-    var autoPlay: js.UndefOr[Boolean] = js.native
+    var autoPlay: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var controls: js.UndefOr[Boolean] = js.native
+    var controls: js.UndefOr[Boolean] = js.undefined
     
-    var controlsList: js.UndefOr[String] = js.native
+    var controlsList: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var listenInterval: js.UndefOr[Double] = js.native
+    var listenInterval: js.UndefOr[Double] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var muted: js.UndefOr[Boolean] = js.native
+    var muted: js.UndefOr[Boolean] = js.undefined
     
-    var onAbort: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.native
+    var onAbort: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
     
-    var onCanPlay: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.native
+    var onCanPlay: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.native
+    var onCanPlayThrough: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
     
-    var onEnded: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.native
+    var onEnded: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
     
-    var onListen: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.native
+    var onListen: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.native
+    var onLoadedMetadata: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
     
-    var onPause: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.native
+    var onPause: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
     
-    var onPlay: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.native
+    var onPlay: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
     
-    var onSeeked: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.native
+    var onSeeked: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
     
-    var onVolumeChanged: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.native
+    var onVolumeChanged: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
     
-    var preload: js.UndefOr[Preload] = js.native
+    var preload: js.UndefOr[Preload] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var volume: js.UndefOr[Double] = js.native
+    var volume: js.UndefOr[Double] = js.undefined
   }
   object ReactAudioPlayerProps {
     

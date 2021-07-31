@@ -10,7 +10,6 @@ import typings.libraCore.transactionPbMod.TransactionArgument.ArgType
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionArgument")
@@ -44,32 +43,38 @@ object TransactionArgument {
   object ArgType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ArgType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ArgType & Double] = js.native
     
     @js.native
-    sealed trait ADDRESS extends ArgType
-    /* 1 */ val ADDRESS: typings.libraCore.transactionPbMod.TransactionArgument.ArgType.ADDRESS with Double = js.native
+    sealed trait ADDRESS
+      extends StObject
+         with ArgType
+    /* 1 */ val ADDRESS: typings.libraCore.transactionPbMod.TransactionArgument.ArgType.ADDRESS & Double = js.native
     
     @js.native
-    sealed trait BYTEARRAY extends ArgType
-    /* 3 */ val BYTEARRAY: typings.libraCore.transactionPbMod.TransactionArgument.ArgType.BYTEARRAY with Double = js.native
+    sealed trait BYTEARRAY
+      extends StObject
+         with ArgType
+    /* 3 */ val BYTEARRAY: typings.libraCore.transactionPbMod.TransactionArgument.ArgType.BYTEARRAY & Double = js.native
     
     @js.native
-    sealed trait STRING extends ArgType
-    /* 2 */ val STRING: typings.libraCore.transactionPbMod.TransactionArgument.ArgType.STRING with Double = js.native
+    sealed trait STRING
+      extends StObject
+         with ArgType
+    /* 2 */ val STRING: typings.libraCore.transactionPbMod.TransactionArgument.ArgType.STRING & Double = js.native
     
     @js.native
-    sealed trait U64 extends ArgType
-    /* 0 */ val U64: typings.libraCore.transactionPbMod.TransactionArgument.ArgType.U64 with Double = js.native
+    sealed trait U64
+      extends StObject
+         with ArgType
+    /* 0 */ val U64: typings.libraCore.transactionPbMod.TransactionArgument.ArgType.U64 & Double = js.native
   }
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionArgument.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): TransactionArgument = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): TransactionArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionArgument]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionArgument.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: TransactionArgument, reader: BinaryReader): TransactionArgument = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: TransactionArgument, reader: BinaryReader): TransactionArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[TransactionArgument]
   
   @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionArgument.extensions")
   @js.native
@@ -84,20 +89,17 @@ object TransactionArgument {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionArgument.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: TransactionArgument, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: TransactionArgument, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionArgument.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: TransactionArgument): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: TransactionArgument): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var data: Uint8Array | String = js.native
+    var data: Uint8Array | String
     
-    var `type`: ArgType = js.native
+    var `type`: ArgType
   }
   object AsObject {
     

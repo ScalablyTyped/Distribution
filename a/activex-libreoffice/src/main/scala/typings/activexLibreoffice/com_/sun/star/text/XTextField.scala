@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A text field is embedded in text and expands to a sequence of characters.
   * @see TextField
   */
-@js.native
-trait XTextField extends XTextContent {
+trait XTextField
+  extends StObject
+     with XTextContent {
   
   /**
     * @param bShowCommand if `TRUE` the command of the field will be returned
     * @returns the display string of the text field either as the command of the field or as the output string.
     */
-  def getPresentation(bShowCommand: Boolean): String = js.native
+  def getPresentation(bShowCommand: Boolean): String
 }
 object XTextField {
   

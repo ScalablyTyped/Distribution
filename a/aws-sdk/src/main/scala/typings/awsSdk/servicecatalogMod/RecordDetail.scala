@@ -2,81 +2,79 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordDetail extends StObject {
   
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.CreatedTime] = js.native
+  var CreatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.CreatedTime] = js.undefined
   
   /**
     * The ARN of the launch role associated with the provisioned product.
     */
-  var LaunchRoleArn: js.UndefOr[RoleArn] = js.native
+  var LaunchRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The path identifier.
     */
-  var PathId: js.UndefOr[Id] = js.native
+  var PathId: js.UndefOr[Id] = js.undefined
   
   /**
     * The product identifier.
     */
-  var ProductId: js.UndefOr[Id] = js.native
+  var ProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * The identifier of the provisioned product.
     */
-  var ProvisionedProductId: js.UndefOr[Id] = js.native
+  var ProvisionedProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * The user-friendly name of the provisioned product.
     */
-  var ProvisionedProductName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisionedProductName] = js.native
+  var ProvisionedProductName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisionedProductName] = js.undefined
   
   /**
     * The type of provisioned product. The supported values are CFN_STACK and CFN_STACKSET.
     */
-  var ProvisionedProductType: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisionedProductType] = js.native
+  var ProvisionedProductType: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisionedProductType] = js.undefined
   
   /**
     * The identifier of the provisioning artifact.
     */
-  var ProvisioningArtifactId: js.UndefOr[Id] = js.native
+  var ProvisioningArtifactId: js.UndefOr[Id] = js.undefined
   
   /**
     * The errors that occurred.
     */
-  var RecordErrors: js.UndefOr[typings.awsSdk.servicecatalogMod.RecordErrors] = js.native
+  var RecordErrors: js.UndefOr[typings.awsSdk.servicecatalogMod.RecordErrors] = js.undefined
   
   /**
     * The identifier of the record.
     */
-  var RecordId: js.UndefOr[Id] = js.native
+  var RecordId: js.UndefOr[Id] = js.undefined
   
   /**
     * One or more tags.
     */
-  var RecordTags: js.UndefOr[typings.awsSdk.servicecatalogMod.RecordTags] = js.native
+  var RecordTags: js.UndefOr[typings.awsSdk.servicecatalogMod.RecordTags] = js.undefined
   
   /**
     * The record type.    PROVISION_PRODUCT     UPDATE_PROVISIONED_PRODUCT     TERMINATE_PROVISIONED_PRODUCT   
     */
-  var RecordType: js.UndefOr[typings.awsSdk.servicecatalogMod.RecordType] = js.native
+  var RecordType: js.UndefOr[typings.awsSdk.servicecatalogMod.RecordType] = js.undefined
   
   /**
     * The status of the provisioned product.    CREATED - The request was created but the operation has not started.    IN_PROGRESS - The requested operation is in progress.    IN_PROGRESS_IN_ERROR - The provisioned product is under change but the requested operation failed and some remediation is occurring. For example, a rollback.    SUCCEEDED - The requested operation has successfully completed.    FAILED - The requested operation has unsuccessfully completed. Investigate using the error messages returned.  
     */
-  var Status: js.UndefOr[RecordStatus] = js.native
+  var Status: js.UndefOr[RecordStatus] = js.undefined
   
   /**
     * The time when the record was last updated.
     */
-  var UpdatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.UpdatedTime] = js.native
+  var UpdatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.UpdatedTime] = js.undefined
 }
 object RecordDetail {
   

@@ -4,19 +4,17 @@ import typings.algoliaClientRecommendation.mod.GetPersonalizationStrategyRespons
 import typings.algoliaClientRecommendation.mod.SetPersonalizationStrategyResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait EventName extends StObject {
     
-    var eventName: String = js.native
+    var eventName: String
     
-    var eventType: String = js.native
+    var eventType: String
     
-    var score: Double = js.native
+    var score: Double
   }
   object EventName {
     
@@ -40,14 +38,13 @@ object anon {
     }
   }
   
-  @js.native
   trait EventType extends StObject {
     
-    val eventName: String = js.native
+    val eventName: String
     
-    val eventType: String = js.native
+    val eventType: String
     
-    val score: Double = js.native
+    val score: Double
   }
   object EventType {
     
@@ -71,12 +68,11 @@ object anon {
     }
   }
   
-  @js.native
   trait FacetName extends StObject {
     
-    var facetName: String = js.native
+    var facetName: String
     
-    var score: Double = js.native
+    var score: Double
   }
   object FacetName {
     
@@ -98,14 +94,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<std.Promise<@algolia/client-recommendation.@algolia/client-recommendation.GetPersonalizationStrategyResponse>> */
-  @js.native
   trait ReadonlyPromiseGetPersona extends StObject {
     
-    def `catch`[TResult](): js.Promise[GetPersonalizationStrategyResponse | TResult] = js.native
+    def `catch`[TResult](): js.Promise[GetPersonalizationStrategyResponse | TResult]
     
-    def `finally`(): js.Promise[GetPersonalizationStrategyResponse] = js.native
+    def `finally`(): js.Promise[GetPersonalizationStrategyResponse]
     
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromiseGetPersona {
     
@@ -137,14 +132,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<std.Promise<@algolia/client-recommendation.@algolia/client-recommendation.SetPersonalizationStrategyResponse>> */
-  @js.native
   trait ReadonlyPromiseSetPersona extends StObject {
     
-    def `catch`[TResult](): js.Promise[SetPersonalizationStrategyResponse | TResult] = js.native
+    def `catch`[TResult](): js.Promise[SetPersonalizationStrategyResponse | TResult]
     
-    def `finally`(): js.Promise[SetPersonalizationStrategyResponse] = js.native
+    def `finally`(): js.Promise[SetPersonalizationStrategyResponse]
     
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromiseSetPersona {
     
@@ -175,12 +169,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Score extends StObject {
     
-    val facetName: String = js.native
+    val facetName: String
     
-    val score: Double = js.native
+    val score: Double
   }
   object Score {
     

@@ -11,7 +11,7 @@ Converts HTML to JSX for use with React
 | Keywords           | react, jsx, htmltojsx, html, react-component |
 | # releases         | 0 |
 | # dependents       | 29 |
-| # downloads        | 139361 |
+| # downloads        | 132132 |
 | # stars            | 4 |
 
 ## Links

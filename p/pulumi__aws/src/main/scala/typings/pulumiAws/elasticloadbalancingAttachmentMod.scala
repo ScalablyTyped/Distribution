@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticloadbalancingAttachmentMod {
@@ -39,6 +38,10 @@ object elasticloadbalancingAttachmentMod {
   /* static members */
   object Attachment {
     
+    @JSImport("@pulumi/aws/elasticloadbalancing/attachment", "Attachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Attachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,40 +51,34 @@ object elasticloadbalancingAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticloadbalancing/attachment", "Attachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Attachment = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/attachment", "Attachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Attachment = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/attachment", "Attachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AttachmentState): Attachment = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/attachment", "Attachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AttachmentState, opts: CustomResourceOptions): Attachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Attachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Attachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AttachmentState): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Attachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AttachmentState, opts: CustomResourceOptions): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Attachment]
     
     /**
       * Returns true if the given object is an instance of Attachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticloadbalancing/attachment", "Attachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/attachment.Attachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/attachment.Attachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/attachment.Attachment */ Boolean]
   }
   
-  @js.native
   trait AttachmentArgs extends StObject {
     
     /**
       * The name of the ELB.
       */
-    val elb: Input[String] = js.native
+    val elb: Input[String]
     
     /**
       * Instance ID to place in the ELB pool.
       */
-    val instance: Input[String] = js.native
+    val instance: Input[String]
   }
   object AttachmentArgs {
     
@@ -102,18 +99,17 @@ object elasticloadbalancingAttachmentMod {
     }
   }
   
-  @js.native
   trait AttachmentState extends StObject {
     
     /**
       * The name of the ELB.
       */
-    val elb: js.UndefOr[Input[String]] = js.native
+    val elb: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Instance ID to place in the ELB pool.
       */
-    val instance: js.UndefOr[Input[String]] = js.native
+    val instance: js.UndefOr[Input[String]] = js.undefined
   }
   object AttachmentState {
     

@@ -8,21 +8,21 @@ import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod extends Shortcut {
   
   @JSImport("antd/lib/popover", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PopoverProps with RefAttributes[_]] = js.native
+  val default: ForwardRefExoticComponent[PopoverProps & RefAttributes[js.Any]] = js.native
   
-  @js.native
-  trait PopoverProps extends AbstractTooltipProps {
+  trait PopoverProps
+    extends StObject
+       with AbstractTooltipProps {
     
-    var content: js.UndefOr[ReactNode | RenderFunction] = js.native
+    var content: js.UndefOr[ReactNode | RenderFunction] = js.undefined
     
-    var title: js.UndefOr[ReactNode | RenderFunction] = js.native
+    var title: js.UndefOr[ReactNode | RenderFunction] = js.undefined
   }
   object PopoverProps {
     
@@ -55,8 +55,8 @@ object popoverMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[PopoverProps with RefAttributes[_]]
+  type _To = ForwardRefExoticComponent[PopoverProps & RefAttributes[js.Any]]
   
   /* This means you don't have to write `default`, but can instead just say `popoverMod.foo` */
-  override def _to: ForwardRefExoticComponent[PopoverProps with RefAttributes[_]] = default
+  override def _to: ForwardRefExoticComponent[PopoverProps & RefAttributes[js.Any]] = default
 }

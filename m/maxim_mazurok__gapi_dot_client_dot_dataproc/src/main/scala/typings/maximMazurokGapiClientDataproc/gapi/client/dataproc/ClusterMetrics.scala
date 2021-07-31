@@ -3,25 +3,23 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterMetrics extends StObject {
   
   /** The HDFS metrics. */
   var hdfsMetrics: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The YARN metrics. */
   var yarnMetrics: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[js.Any]
+  ] = js.undefined
 }
 object ClusterMetrics {
   
@@ -38,7 +36,7 @@ object ClusterMetrics {
     def setHdfsMetrics(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[js.Any]
     ): Self = StObject.set(x, "hdfsMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -48,7 +46,7 @@ object ClusterMetrics {
     def setYarnMetrics(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[js.Any]
     ): Self = StObject.set(x, "yarnMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline

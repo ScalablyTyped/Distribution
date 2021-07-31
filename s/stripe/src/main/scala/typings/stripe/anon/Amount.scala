@@ -2,27 +2,25 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Amount extends StObject {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var application: String = js.native
+  var application: String
   
   /**
     * Three-letter ISO currency code representing the currency of the amount that was disputed.
     */
-  var currency: String = js.native
+  var currency: String
   
-  var description: String = js.native
+  var description: String
   
   /**
     * Type of the fee, one of: "application_fee", "stripe_fee"" or "tax".
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object Amount {
   

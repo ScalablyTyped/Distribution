@@ -1,6 +1,9 @@
 package typings.sixRuntime
 
 import typings.sixRuntime.Six.PluginsMap
+import typings.sixRuntime.Six.plugins.dataProvider.DataProvider
+import typings.sixRuntime.Six.plugins.http
+import typings.sixRuntime.Six.plugins.log
 import typings.sixRuntime.Six.plugins.rpc
 import typings.sixRuntime.Six.plugins.sso.ssoConf
 import typings.sixRuntime.Six.plugins.sso.ssoFactory
@@ -17,16 +20,14 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Six extends StObject {
   
   /**
     * DataProvider类，所有的data-provider必须继承这个类
     */
-  var DataProvider: typings.sixRuntime.Six.plugins.dataProvider.DataProvider = js.native
+  var DataProvider: typings.sixRuntime.Six.plugins.dataProvider.DataProvider
   
   /**
     * NODE_ENV的缩短版
@@ -35,97 +36,190 @@ trait Six extends StObject {
     *
     * dev、develop、development => dev
     */
-  val ENV: String = js.native
+  val ENV: String
   
   /**
     * process.env.NODE_ENV
     */
-  val NODE_ENV: String = js.native
+  val NODE_ENV: String
   
   /**
     * Six的rootPath
     */
-  val ROOT_PATH: String = js.native
+  val ROOT_PATH: String
   
   /**
     * 执行某个data-provider，并返回执行之后的值
     */
-  def dp(name: String): js.Any = js.native
+  def dp(name: String): js.Any
   
   /**
     * 针对这次请求生效的数据缓存 get
     */
-  def get(key: String): js.Any = js.native
+  def get(key: String): js.Any
   
   /**
     * 发送请求的工具方法，会将用户的cookie和traceId透传过去
     */
-  var http: typings.sixRuntime.Six.plugins.http = js.native
+  var http: typings.sixRuntime.Six.plugins.http
   
   /**
     * 打日志方法
     */
-  var log: typings.sixRuntime.Six.plugins.log = js.native
+  var log: typings.sixRuntime.Six.plugins.log
   
   /**
     * Six的plugin的map
     */
-  val plugins: PluginsMap = js.native
+  val plugins: PluginsMap
   
   /**
     * 渲染函数
     */
-  def render(name: String): js.Promise[_] = js.native
-  def render(name: String, runtimeConf: js.UndefOr[scala.Nothing], data: js.Object): js.Promise[_] = js.native
-  def render(name: String, runtimeConf: Null, data: js.Object): js.Promise[_] = js.native
-  def render(name: String, runtimeConf: runtimeConf): js.Promise[_] = js.native
-  def render(name: String, runtimeConf: runtimeConf, data: js.Object): js.Promise[_] = js.native
+  def render(name: String): js.Promise[js.Any]
+  def render(name: String, runtimeConf: Null, data: js.Object): js.Promise[js.Any]
+  def render(name: String, runtimeConf: Unit, data: js.Object): js.Promise[js.Any]
+  def render(name: String, runtimeConf: runtimeConf): js.Promise[js.Any]
+  def render(name: String, runtimeConf: runtimeConf, data: js.Object): js.Promise[js.Any]
   /**
     * 渲染函数
     */
   @JSName("render")
-  var render_Original: render = js.native
+  var render_Original: render
   
   /**
     * rpc调用工具方法，返回ThriftPool实例
     */
-  def rpc(config: js.Object): js.Object = js.native
+  def rpc(config: js.Object): js.Object
   /**
     * rpc调用工具方法，返回ThriftPool实例
     */
   @JSName("rpc")
-  var rpc_Original: rpc = js.native
+  var rpc_Original: rpc
   
   /**
     * 针对这次请求生效的数据缓存 set
     */
-  def set(key: String, value: js.Any): Unit = js.native
+  def set(key: String, value: js.Any): Unit
   
   /**
     * 时间统计工具
     */
-  var time: timmer = js.native
+  var time: timmer
 }
 object Six {
   
-  @js.native
+  @scala.inline
+  def apply(
+    DataProvider: DataProvider,
+    ENV: String,
+    NODE_ENV: String,
+    ROOT_PATH: String,
+    dp: String => js.Any,
+    get: String => js.Any,
+    http: http,
+    log: log,
+    plugins: PluginsMap,
+    render: (/* name */ String, /* runtimeConf */ js.UndefOr[runtimeConf | Null], /* data */ js.UndefOr[js.Object]) => js.Promise[js.Any],
+    rpc: /* config */ js.Object => js.Object,
+    set: (String, js.Any) => Unit,
+    time: timmer
+  ): Six = {
+    val __obj = js.Dynamic.literal(DataProvider = DataProvider.asInstanceOf[js.Any], ENV = ENV.asInstanceOf[js.Any], NODE_ENV = NODE_ENV.asInstanceOf[js.Any], ROOT_PATH = ROOT_PATH.asInstanceOf[js.Any], dp = js.Any.fromFunction1(dp), get = js.Any.fromFunction1(get), http = http.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], render = js.Any.fromFunction3(render), rpc = js.Any.fromFunction1(rpc), set = js.Any.fromFunction2(set), time = time.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Six]
+  }
+  
   trait PluginsMap extends StObject {
     
-    def sso(conf: ssoConf): js.Any = js.native
+    def sso(conf: ssoConf): js.Any
     @JSName("sso")
-    var sso_Original: ssoFactory = js.native
+    var sso_Original: ssoFactory
     
-    def static(conf: staticConf): middleware = js.native
+    def static(conf: staticConf): middleware
     @JSName("static")
-    var static_Original: staticFactory = js.native
+    var static_Original: staticFactory
     
-    def uac(conf: uacConf): js.Any = js.native
+    def uac(conf: uacConf): js.Any
     @JSName("uac")
-    var uac_Original: uacFactory = js.native
+    var uac_Original: uacFactory
     
-    def upm(conf: upmConf): js.Any = js.native
+    def upm(conf: upmConf): js.Any
     @JSName("upm")
-    var upm_Original: upmFactory = js.native
+    var upm_Original: upmFactory
+  }
+  object PluginsMap {
+    
+    @scala.inline
+    def apply(
+      sso: /* conf */ ssoConf => js.Any,
+      static: /* conf */ staticConf => middleware,
+      uac: /* conf */ uacConf => js.Any,
+      upm: /* conf */ upmConf => js.Any
+    ): PluginsMap = {
+      val __obj = js.Dynamic.literal(sso = js.Any.fromFunction1(sso), static = js.Any.fromFunction1(static), uac = js.Any.fromFunction1(uac), upm = js.Any.fromFunction1(upm))
+      __obj.asInstanceOf[PluginsMap]
+    }
+    
+    @scala.inline
+    implicit class PluginsMapMutableBuilder[Self <: PluginsMap] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setSso(value: /* conf */ ssoConf => js.Any): Self = StObject.set(x, "sso", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setStatic(value: /* conf */ staticConf => middleware): Self = StObject.set(x, "static", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setUac(value: /* conf */ uacConf => js.Any): Self = StObject.set(x, "uac", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setUpm(value: /* conf */ upmConf => js.Any): Self = StObject.set(x, "upm", js.Any.fromFunction1(value))
+    }
+  }
+  
+  @scala.inline
+  implicit class SixMutableBuilder[Self <: Six] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDataProvider(value: DataProvider): Self = StObject.set(x, "DataProvider", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDp(value: String => js.Any): Self = StObject.set(x, "dp", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setENV(value: String): Self = StObject.set(x, "ENV", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setHttp(value: http): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLog(value: log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNODE_ENV(value: String): Self = StObject.set(x, "NODE_ENV", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPlugins(value: PluginsMap): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setROOT_PATH(value: String): Self = StObject.set(x, "ROOT_PATH", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRender(
+      value: (/* name */ String, /* runtimeConf */ js.UndefOr[runtimeConf | Null], /* data */ js.UndefOr[js.Object]) => js.Promise[js.Any]
+    ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setRpc(value: /* config */ js.Object => js.Object): Self = StObject.set(x, "rpc", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setTime(value: timmer): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
   
   type middleware = js.Function2[/* ctx */ js.Object, /* next */ next, js.Any]
@@ -136,12 +230,11 @@ object Six {
     
     object dataProvider {
       
-      @js.native
       trait DataProvider extends StObject {
         
-        def execute(ctx: js.Object, args: js.Any): js.Any = js.native
+        def execute(ctx: js.Object, args: js.Any): js.Any
         
-        def prepare(ctx: js.Object, depsRes: js.Object): js.Any = js.native
+        def prepare(ctx: js.Object, depsRes: js.Object): js.Any
       }
       object DataProvider {
         
@@ -166,25 +259,25 @@ object Six {
     @js.native
     trait http extends StObject {
       
-      def del(url: js.Any): js.Promise[_] = js.native
-      def del(url: js.Any, options: js.Object): js.Promise[_] = js.native
+      def del(url: js.Any): js.Promise[js.Any] = js.native
+      def del(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
       
-      def get(url: js.Any): js.Promise[_] = js.native
-      def get(url: js.Any, options: js.Object): js.Promise[_] = js.native
+      def get(url: js.Any): js.Promise[js.Any] = js.native
+      def get(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
       
-      def head(url: js.Any): js.Promise[_] = js.native
-      def head(url: js.Any, options: js.Object): js.Promise[_] = js.native
+      def head(url: js.Any): js.Promise[js.Any] = js.native
+      def head(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
       
-      def patch(url: js.Any): js.Promise[_] = js.native
-      def patch(url: js.Any, options: js.Object): js.Promise[_] = js.native
+      def patch(url: js.Any): js.Promise[js.Any] = js.native
+      def patch(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
       
-      def post(url: js.Any): js.Promise[_] = js.native
-      def post(url: js.Any, options: js.Object): js.Promise[_] = js.native
+      def post(url: js.Any): js.Promise[js.Any] = js.native
+      def post(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
       
       def proxy(options: js.Object): middleware = js.native
       
-      def put(url: js.Any): js.Promise[_] = js.native
-      def put(url: js.Any, options: js.Object): js.Promise[_] = js.native
+      def put(url: js.Any): js.Promise[js.Any] = js.native
+      def put(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
     }
     
     @js.native
@@ -204,22 +297,21 @@ object Six {
     
     object sso {
       
-      @js.native
       trait ssoClientConf extends StObject {
         
-        var callbackUrl: String = js.native
+        var callbackUrl: String
         
-        var clientId: String = js.native
+        var clientId: String
         
-        var env: String = js.native
+        var env: String
         
-        def errorHook(error: Error): Unit = js.native
+        def errorHook(error: Error): Unit
         
-        var protocol: String = js.native
+        var protocol: String
         
-        var secret: String = js.native
+        var secret: String
         
-        var token: typings.sixRuntime.Six.plugins.sso.token = js.native
+        var token: typings.sixRuntime.Six.plugins.sso.token
       }
       object ssoClientConf {
         
@@ -263,18 +355,17 @@ object Six {
         }
       }
       
-      @js.native
       trait ssoConf extends StObject {
         
-        def adapter(user: js.Object): js.Object = js.native
+        def adapter(user: js.Object): js.Object
         
-        var enableCache: Boolean = js.native
+        var enableCache: Boolean
         
-        var hasLoginCacheMaxAge: Double = js.native
+        var hasLoginCacheMaxAge: Double
         
-        var ssoConf: ssoClientConf = js.native
+        var ssoConf: ssoClientConf
         
-        var whiteList: String | RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList = js.native
+        var whiteList: String | RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList
       }
       object ssoConf {
         
@@ -318,16 +409,15 @@ object Six {
       
       type ssoFactory = js.Function1[/* conf */ ssoConf, js.Any]
       
-      @js.native
       trait token extends StObject {
         
-        var expiredTime: Double = js.native
+        var expiredTime: Double
         
-        var httpOnly: Boolean = js.native
+        var httpOnly: Boolean
         
-        var name: String = js.native
+        var name: String
         
-        var path: String = js.native
+        var path: String
       }
       object token {
         
@@ -357,20 +447,19 @@ object Six {
     
     object static {
       
-      @js.native
       trait cacheConf extends StObject {
         
-        var cache: Boolean = js.native
+        var cache: Boolean
         
-        var defer: Boolean = js.native
+        var defer: Boolean
         
-        var extensions: Boolean | js.Array[String] = js.native
+        var extensions: Boolean | js.Array[String]
         
-        var gzip: Boolean = js.native
+        var gzip: Boolean
         
-        var index: String = js.native
+        var index: String
         
-        var maxAge: Double = js.native
+        var maxAge: Double
       }
       object cacheConf {
         
@@ -413,12 +502,11 @@ object Six {
         }
       }
       
-      @js.native
       trait staticConf extends StObject {
         
-        var cacheConf: typings.sixRuntime.Six.plugins.static.cacheConf = js.native
+        var cacheConf: typings.sixRuntime.Six.plugins.static.cacheConf
         
-        var rootPath: String = js.native
+        var rootPath: String
       }
       object staticConf {
         
@@ -454,13 +542,13 @@ object Six {
         def now(): js.Any = js.native
         
         def serialize(): String = js.native
-        def serialize(between: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], filter: filter): String = js.native
-        def serialize(between: js.UndefOr[scala.Nothing], end: String): String = js.native
-        def serialize(between: js.UndefOr[scala.Nothing], end: String, filter: filter): String = js.native
         def serialize(between: String): String = js.native
-        def serialize(between: String, end: js.UndefOr[scala.Nothing], filter: filter): String = js.native
         def serialize(between: String, end: String): String = js.native
         def serialize(between: String, end: String, filter: filter): String = js.native
+        def serialize(between: String, end: Unit, filter: filter): String = js.native
+        def serialize(between: Unit, end: String): String = js.native
+        def serialize(between: Unit, end: String, filter: filter): String = js.native
+        def serialize(between: Unit, end: Unit, filter: filter): String = js.native
         
         def start(key: String): Unit = js.native
       }
@@ -468,22 +556,21 @@ object Six {
     
     object uac {
       
-      @js.native
       trait uacConf extends StObject {
         
-        var client_id: String = js.native
+        var client_id: String
         
-        var client_secret: String = js.native
+        var client_secret: String
         
-        var enableMock: Boolean = js.native
+        var enableMock: Boolean
         
-        def failHook(err: Error, ctx: js.Object, next: next): js.Any = js.native
+        def failHook(err: Error, ctx: js.Object, next: next): js.Any
         
-        def getPath(ctx: js.Object): String = js.native
+        def getPath(ctx: js.Object): String
         
-        var skipOffline: Boolean = js.native
+        var skipOffline: Boolean
         
-        var whiteList: String | RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList = js.native
+        var whiteList: String | RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList
       }
       object uacConf {
         
@@ -538,26 +625,25 @@ object Six {
     
     object upm {
       
-      @js.native
       trait upmConf extends StObject {
         
-        var clientId: String = js.native
+        var clientId: String
         
-        var clientSecret: String = js.native
+        var clientSecret: String
         
-        var domain: String = js.native
+        var domain: String
         
-        var enableMock: Boolean = js.native
+        var enableMock: Boolean
         
-        def failHook(err: Error, ctx: js.Object, next: next): js.Any = js.native
+        def failHook(err: Error, ctx: js.Object, next: next): js.Any
         
-        def getPath(ctx: js.Object): String = js.native
+        def getPath(ctx: js.Object): String
         
-        var path: String = js.native
+        var path: String
         
-        var skipOffline: Boolean = js.native
+        var skipOffline: Boolean
         
-        var whiteList: String | RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList = js.native
+        var whiteList: String | RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList
       }
       object upmConf {
         
@@ -627,14 +713,13 @@ object Six {
             js.Promise[js.Any]
           ]
       
-      @js.native
       trait runtimeConf extends StObject {
         
-        var codeKey: String = js.native
+        var codeKey: String
         
-        var dataKey: String = js.native
+        var dataKey: String
         
-        var msgKey: String = js.native
+        var msgKey: String
       }
       object runtimeConf {
         

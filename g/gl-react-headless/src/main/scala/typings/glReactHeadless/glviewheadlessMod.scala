@@ -8,7 +8,6 @@ import typings.std.WebGLContextAttributes
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glviewheadlessMod {
@@ -41,24 +40,23 @@ object glviewheadlessMod {
     var webglContextAttributes: WebGLContextAttributes = js.native
   }
   
-  @js.native
   trait GLViewHeadlessProps extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var onContextCreate: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.native
+    var onContextCreate: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.undefined
     
-    var onContextFailure: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.native
+    var onContextFailure: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
     
-    var onContextLost: js.UndefOr[js.Function0[Unit]] = js.native
+    var onContextLost: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onContextRestored: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.native
+    var onContextRestored: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.undefined
     
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
     
-    var webglContextAttributes: js.UndefOr[WebGLContextAttributes] = js.native
+    var webglContextAttributes: js.UndefOr[WebGLContextAttributes] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
   }
   object GLViewHeadlessProps {
     

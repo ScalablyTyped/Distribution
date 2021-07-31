@@ -8,7 +8,6 @@ import typings.std.Error
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -112,36 +111,37 @@ object mod {
     def theme_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IProps extends HTMLAttributes[HTMLElement] {
+  trait IProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
-    var booleanStyle: js.UndefOr[String] = js.native
+    var booleanStyle: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var errorStyle: js.UndefOr[String] = js.native
+    var errorStyle: js.UndefOr[String] = js.undefined
     
-    var json: js.UndefOr[js.Any] = js.native
+    var json: js.UndefOr[js.Any] = js.undefined
     
-    var keyStyle: js.UndefOr[String] = js.native
+    var keyStyle: js.UndefOr[String] = js.undefined
     
-    var mainStyle: js.UndefOr[String] = js.native
+    var mainStyle: js.UndefOr[String] = js.undefined
     
-    var onJSONPrettyError: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.native
+    var onJSONPrettyError: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
     
-    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _ | Null]] = js.native
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any | Null]] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var space: js.UndefOr[Double | String] = js.native
+    var space: js.UndefOr[Double | String] = js.undefined
     
-    var stringStyle: js.UndefOr[String] = js.native
+    var stringStyle: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
-    var themeClassName: js.UndefOr[String] = js.native
+    var themeClassName: js.UndefOr[String] = js.undefined
     
-    var valueStyle: js.UndefOr[String] = js.native
+    var valueStyle: js.UndefOr[String] = js.undefined
   }
   object IProps {
     
@@ -197,7 +197,7 @@ object mod {
       def setOnJSONPrettyErrorUndefined: Self = StObject.set(x, "onJSONPrettyError", js.undefined)
       
       @scala.inline
-      def setReplacer(value: (/* key */ String, /* value */ js.Any) => _ | Null): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any | Null): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)

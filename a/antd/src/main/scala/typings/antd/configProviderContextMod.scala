@@ -15,10 +15,13 @@ import typings.react.mod.FC
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configProviderContextMod {
+  
+  @JSImport("antd/lib/config-provider/context", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("antd/lib/config-provider/context", "ConfigConsumer")
   @js.native
@@ -28,14 +31,12 @@ object configProviderContextMod {
   @js.native
   val ConfigContext: Context[ConfigConsumerProps] = js.native
   
-  @JSImport("antd/lib/config-provider/context", "withConfigConsumer")
-  @js.native
-  def withConfigConsumer[ExportProps /* <: BasicExportProps */](config: ConsumerConfig): js.Function1[/* Component */ IReactComponent[_], FC[ExportProps] with js.Any] = js.native
+  @scala.inline
+  def withConfigConsumer[ExportProps /* <: BasicExportProps */](config: ConsumerConfig): js.Function1[/* Component */ IReactComponent[js.Any], FC[ExportProps] & js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfigConsumer")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ IReactComponent[js.Any], FC[ExportProps] & js.Any]]
   
-  @js.native
   trait BasicExportProps extends StObject {
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object BasicExportProps {
     
@@ -56,10 +57,9 @@ object configProviderContextMod {
     }
   }
   
-  @js.native
   trait CSPConfig extends StObject {
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
   }
   object CSPConfig {
     
@@ -96,9 +96,9 @@ object configProviderContextMod {
     var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.native
     
     def getPrefixCls(): String = js.native
-    def getPrefixCls(suffixCls: js.UndefOr[scala.Nothing], customizePrefixCls: String): String = js.native
     def getPrefixCls(suffixCls: String): String = js.native
     def getPrefixCls(suffixCls: String, customizePrefixCls: String): String = js.native
+    def getPrefixCls(suffixCls: Unit, customizePrefixCls: String): String = js.native
     
     var getTargetContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
     
@@ -117,10 +117,9 @@ object configProviderContextMod {
     var virtual: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait ConsumerConfig extends StObject {
     
-    var prefixCls: String = js.native
+    var prefixCls: String
   }
   object ConsumerConfig {
     
@@ -141,7 +140,7 @@ object configProviderContextMod {
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.ltr
     - typings.antd.antdStrings.rtl
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type DirectionType = js.UndefOr[_DirectionType]
   

@@ -4,14 +4,14 @@ import typings.arcgisJsApi.arcgisJsApiStrings.tile
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.arcgisJsApi.esri.ArcGISCachedService because var conflicts: copyright. Inlined tileInfo
 - typings.arcgisJsApi.esri.ArcGISMapService because var conflicts: fullExtent. Inlined capabilities, copyright, legendEnabled, spatialReference, version */ @js.native
 trait TileLayer
-  extends Layer
+  extends StObject
+     with Layer
      with SublayersOwner
      with RefreshableLayer
      with ScaleRangeLayer

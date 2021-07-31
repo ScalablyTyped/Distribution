@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlashCommandMetadata extends StObject {
   
   /** The bot whose command was invoked. */
-  var bot: js.UndefOr[User] = js.native
+  var bot: js.UndefOr[User] = js.undefined
   
   /** The command id of the invoked slash command. */
-  var commandId: js.UndefOr[String] = js.native
+  var commandId: js.UndefOr[String] = js.undefined
   
   /** The name of the invoked slash command. */
-  var commandName: js.UndefOr[String] = js.native
+  var commandName: js.UndefOr[String] = js.undefined
   
   /** Indicating whether the slash command is for a dialog. */
-  var triggersDialog: js.UndefOr[Boolean] = js.native
+  var triggersDialog: js.UndefOr[Boolean] = js.undefined
   
   /** The type of slash command. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SlashCommandMetadata {
   

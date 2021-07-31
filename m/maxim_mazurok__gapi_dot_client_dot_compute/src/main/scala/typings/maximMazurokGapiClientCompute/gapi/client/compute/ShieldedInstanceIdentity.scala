@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShieldedInstanceIdentity extends StObject {
   
   /** An Endorsement Key (EK) made by the RSA 2048 algorithm issued to the Shielded Instance's vTPM. */
-  var encryptionKey: js.UndefOr[ShieldedInstanceIdentityEntry] = js.native
+  var encryptionKey: js.UndefOr[ShieldedInstanceIdentityEntry] = js.undefined
   
   /** [Output Only] Type of the resource. Always compute#shieldedInstanceIdentity for shielded Instance identity entry. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** An Attestation Key (AK) made by the RSA 2048 algorithm issued to the Shielded Instance's vTPM. */
-  var signingKey: js.UndefOr[ShieldedInstanceIdentityEntry] = js.native
+  var signingKey: js.UndefOr[ShieldedInstanceIdentityEntry] = js.undefined
 }
 object ShieldedInstanceIdentity {
   

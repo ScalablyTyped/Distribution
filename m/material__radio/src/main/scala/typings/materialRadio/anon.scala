@@ -2,17 +2,15 @@ package typings.materialRadio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DISABLED extends StObject {
     
-    var DISABLED: String = js.native
+    var DISABLED: String
     
-    var ROOT: String = js.native
+    var ROOT: String
   }
   object DISABLED {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NATIVECONTROLSELECTOR extends StObject {
     
-    var NATIVE_CONTROL_SELECTOR: String = js.native
+    var NATIVE_CONTROL_SELECTOR: String
   }
   object NATIVECONTROLSELECTOR {
     
@@ -55,14 +52,13 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/radio.@material/radio/adapter.MDCRadioAdapter> */
-  @js.native
   trait PartialMDCRadioAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setNativeControlDisabled: js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]] = js.native
+    var setNativeControlDisabled: js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]] = js.undefined
   }
   object PartialMDCRadioAdapter {
     

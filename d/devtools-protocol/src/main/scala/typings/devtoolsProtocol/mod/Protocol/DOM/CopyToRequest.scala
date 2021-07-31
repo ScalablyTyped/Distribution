@@ -2,27 +2,25 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyToRequest extends StObject {
   
   /**
     * Drop the copy before this node (if absent, the copy becomes the last child of
     * `targetNodeId`).
     */
-  var insertBeforeNodeId: js.UndefOr[NodeId] = js.native
+  var insertBeforeNodeId: js.UndefOr[NodeId] = js.undefined
   
   /**
     * Id of the node to copy.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
   
   /**
     * Id of the element to drop the copy into.
     */
-  var targetNodeId: NodeId = js.native
+  var targetNodeId: NodeId
 }
 object CopyToRequest {
   

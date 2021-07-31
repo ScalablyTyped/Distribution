@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSparkline
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,7 +16,7 @@ trait IgSparkline
   /**
     * Gets or sets the sparkline brush.
     */
-  var brush: js.UndefOr[String] = js.native
+  var brush: js.UndefOr[String] = js.undefined
   
   /**
     * Event which is raised before data binding.
@@ -25,7 +24,7 @@ trait IgSparkline
     * Use ui.owner to obtain reference to igSparkline.
     * Use ui.dataSource to obtain reference to instance of $.ig.DataSource.
     */
-  var dataBinding: js.UndefOr[DataBindingEvent] = js.native
+  var dataBinding: js.UndefOr[DataBindingEvent] = js.undefined
   
   /**
     * Event which is raised after data binding.
@@ -34,29 +33,29 @@ trait IgSparkline
     * Use ui.data to obtain reference to array actual data which is displayed by chart.
     * Use ui.dataSource to obtain reference to instance of $.ig.DataSource.
     */
-  var dataBound: js.UndefOr[DataBoundEvent] = js.native
+  var dataBound: js.UndefOr[DataBoundEvent] = js.undefined
   
   /**
     * Gets sets a valid data source.
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets sets data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
     */
-  var dataSourceType: js.UndefOr[String] = js.native
+  var dataSourceType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets sets url which is used for sending JSON on request for remote data.
     */
-  var dataSourceUrl: js.UndefOr[String] = js.native
+  var dataSourceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the position of the normal range on the sparkline.
     */
-  var displayNormalRangeInFront: js.UndefOr[Boolean] = js.native
+  var displayNormalRangeInFront: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the display type of the sparkline.
@@ -67,17 +66,17 @@ trait IgSparkline
     * "column" Display the sparkline as a set of columns.
     * "winLoss" Display the sparkline as a set of columns on a boolean scale.
     */
-  var displayType: js.UndefOr[String] = js.native
+  var displayType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the first marker brush of the sparkline.
     */
-  var firstMarkerBrush: js.UndefOr[String] = js.native
+  var firstMarkerBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the first marker size of the sparkline.
     */
-  var firstMarkerSize: js.UndefOr[Double] = js.native
+  var firstMarkerSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the first marker visibility of the sparkline.
@@ -86,17 +85,17 @@ trait IgSparkline
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var firstMarkerVisibility: js.UndefOr[String] = js.native
+  var firstMarkerVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.
     */
-  var formatLabel: js.UndefOr[js.Any] = js.native
+  var formatLabel: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The height of the sparkline. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Event which is raised before tooltip is hidden.
@@ -106,17 +105,17 @@ trait IgSparkline
     * Use ui.item to obtain reference to item.
     * Use ui.element to obtain reference to jquery object which represents tooltip or value of ui.element from last updateTooltip event. Value of that member can be replaced by custom element.
     */
-  var hideTooltip: js.UndefOr[HideTooltipEvent] = js.native
+  var hideTooltip: js.UndefOr[HideTooltipEvent] = js.undefined
   
   /**
     * Gets or sets the high marker brush of the sparkline.
     */
-  var highMarkerBrush: js.UndefOr[String] = js.native
+  var highMarkerBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the high marker size of the sparkline.
     */
-  var highMarkerSize: js.UndefOr[Double] = js.native
+  var highMarkerSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the high marker visibility of the sparkline.
@@ -125,18 +124,18 @@ trait IgSparkline
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var highMarkerVisibility: js.UndefOr[String] = js.native
+  var highMarkerVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the horizontal axis line brush of the sparkline.
     */
-  var horizontalAxisBrush: js.UndefOr[String] = js.native
+  var horizontalAxisBrush: js.UndefOr[String] = js.undefined
   
   /**
     * The value or content to display on the horizontal axis.
     * This can be set to a formatted string, such as "{0}", or it can be set to a DataTemplate.
     */
-  var horizontalAxisLabel: js.UndefOr[js.Any] = js.native
+  var horizontalAxisLabel: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the display state of the horizontal axis.
@@ -145,22 +144,22 @@ trait IgSparkline
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var horizontalAxisVisibility: js.UndefOr[String] = js.native
+  var horizontalAxisVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * String identifier of a column or property name to get labels from on each item in the data source.  These labels will be retrieved from the first and last item, and displayed by the horizontal axis.
     */
-  var labelMemberPath: js.UndefOr[String] = js.native
+  var labelMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the last marker brush of the sparkline.
     */
-  var lastMarkerBrush: js.UndefOr[String] = js.native
+  var lastMarkerBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the last marker size of the sparkline.
     */
-  var lastMarkerSize: js.UndefOr[Double] = js.native
+  var lastMarkerSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the last marker visibility of the sparkline.
@@ -169,22 +168,22 @@ trait IgSparkline
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var lastMarkerVisibility: js.UndefOr[String] = js.native
+  var lastMarkerVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the line thickness of the sparkline.
     */
-  var lineThickness: js.UndefOr[Double] = js.native
+  var lineThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the low marker brush of the sparkline.
     */
-  var lowMarkerBrush: js.UndefOr[String] = js.native
+  var lowMarkerBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the low marker size of the sparkline.
     */
-  var lowMarkerSize: js.UndefOr[Double] = js.native
+  var lowMarkerSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the low marker visibility of the sparkline.
@@ -193,17 +192,17 @@ trait IgSparkline
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var lowMarkerVisibility: js.UndefOr[String] = js.native
+  var lowMarkerVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the marker brush of the sparkline.
     */
-  var markerBrush: js.UndefOr[String] = js.native
+  var markerBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the marker size of the sparkline.
     */
-  var markerSize: js.UndefOr[Double] = js.native
+  var markerSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the marker visibility of the sparkline.
@@ -212,27 +211,27 @@ trait IgSparkline
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var markerVisibility: js.UndefOr[String] = js.native
+  var markerVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets sets maximum number of displayed records in chart.
     */
-  var maxRecCount: js.UndefOr[Double] = js.native
+  var maxRecCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the negative brush of the sparkline.
     */
-  var negativeBrush: js.UndefOr[String] = js.native
+  var negativeBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the negative marker brush of the sparkline.
     */
-  var negativeMarkerBrush: js.UndefOr[String] = js.native
+  var negativeMarkerBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the negative marker size of the sparkline.
     */
-  var negativeMarkerSize: js.UndefOr[Double] = js.native
+  var negativeMarkerSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the negative marker visibility of the sparkline.
@@ -241,22 +240,22 @@ trait IgSparkline
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var negativeMarkerVisibility: js.UndefOr[String] = js.native
+  var negativeMarkerVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the normal range brush of the sparkline.
     */
-  var normalRangeFill: js.UndefOr[String] = js.native
+  var normalRangeFill: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the maximum value of the normal range.
     */
-  var normalRangeMaximum: js.UndefOr[Double] = js.native
+  var normalRangeMaximum: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the minimum value of the normal range.
     */
-  var normalRangeMinimum: js.UndefOr[Double] = js.native
+  var normalRangeMinimum: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the normal range visibility of the sparkline.
@@ -265,45 +264,45 @@ trait IgSparkline
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var normalRangeVisibility: js.UndefOr[String] = js.native
+  var normalRangeVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
     * to appear blurry.
     */
-  var pixelScalingRatio: js.UndefOr[Double] = js.native
+  var pixelScalingRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * See $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped.
     */
-  var responseDataKey: js.UndefOr[String] = js.native
+  var responseDataKey: js.UndefOr[String] = js.undefined
   
   /**
     * See $.ig.DataSource. property in the response specifying the total number of records on the server.
     */
-  var responseTotalRecCountKey: js.UndefOr[String] = js.native
+  var responseTotalRecCountKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets sets template for tooltip associated with chart item.
     * Example: "Value: $(ValueMemberPathInDataSource)"
     */
-  var tooltipTemplate: js.UndefOr[String] = js.native
+  var tooltipTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the trendline brush of the sparkline.
     */
-  var trendLineBrush: js.UndefOr[String] = js.native
+  var trendLineBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the trendline period used by the sparkline.
     */
-  var trendLinePeriod: js.UndefOr[Double] = js.native
+  var trendLinePeriod: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the thickness of the sparkline's trendline.
     */
-  var trendLineThickness: js.UndefOr[Double] = js.native
+  var trendLineThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the type of trendline used by the sparkline.
@@ -324,7 +323,7 @@ trait IgSparkline
     * "cumulativeAverage" Cumulative moving average.
     * "weightedAverage" Weighted moving average.
     */
-  var trendLineType: js.UndefOr[String] = js.native
+  var trendLineType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the way null values are interpreted.
@@ -333,7 +332,7 @@ trait IgSparkline
     * "linearInterpolate" Plot the unknown value as the midpoint between surrounding known values using linear interpolation.
     * "dontPlot" Do not plot the unknown value on the chart.
     */
-  var unknownValuePlotting: js.UndefOr[String] = js.native
+  var unknownValuePlotting: js.UndefOr[String] = js.undefined
   
   /**
     * Event which is raised before tooltip is updated.
@@ -346,23 +345,23 @@ trait IgSparkline
     * Use ui.y to obtain top position of tooltip in pixels relative to widget. Value of that member can be modified.
     * Use ui.element to obtain reference to jquery object which represents tooltip. Value of that member can be replaced by custom element.
     */
-  var updateTooltip: js.UndefOr[UpdateTooltipEvent] = js.native
+  var updateTooltip: js.UndefOr[UpdateTooltipEvent] = js.undefined
   
   /**
     * Gets or sets the string path to the value column.
     */
-  var valueMemberPath: js.UndefOr[String] = js.native
+  var valueMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the vertical axis line brush of the sparkline.
     */
-  var verticalAxisBrush: js.UndefOr[String] = js.native
+  var verticalAxisBrush: js.UndefOr[String] = js.undefined
   
   /**
     * The value or content to display on the vertical axis.
     * This can be set to a formatted string, such as "{0:n}", or it can be set to a DataTemplate.
     */
-  var verticalAxisLabel: js.UndefOr[js.Any] = js.native
+  var verticalAxisLabel: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the display state of the vertical axis.
@@ -371,12 +370,12 @@ trait IgSparkline
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var verticalAxisVisibility: js.UndefOr[String] = js.native
+  var verticalAxisVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the sparkline. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object IgSparkline {
   

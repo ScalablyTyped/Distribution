@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionResponse extends StObject {
   
   /** Partitions created by this request. */
-  var partitions: js.UndefOr[js.Array[Partition]] = js.native
+  var partitions: js.UndefOr[js.Array[Partition]] = js.undefined
   
   /** Transaction created by this request. */
-  var transaction: js.UndefOr[Transaction] = js.native
+  var transaction: js.UndefOr[Transaction] = js.undefined
 }
 object PartitionResponse {
   

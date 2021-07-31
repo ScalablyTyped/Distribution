@@ -8,76 +8,74 @@ import typings.tampermonkey.tampermonkeyStrings.blob
 import typings.tampermonkey.tampermonkeyStrings.json
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request[TContext] extends StObject {
   
   /** Don't send cookies with the requests (please see the fetch notes) */
-  var anonymous: js.UndefOr[Boolean] = js.native
+  var anonymous: js.UndefOr[Boolean] = js.undefined
   
   /** Send the data string in binary mode */
-  var binary: js.UndefOr[Boolean] = js.native
+  var binary: js.UndefOr[Boolean] = js.undefined
   
   /** Property which will be added to the response object */
-  var context: js.UndefOr[TContext] = js.native
+  var context: js.UndefOr[TContext] = js.undefined
   
   /** String to send via a POST request */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * (Beta) Use a fetch instead of a xhr request(at Chrome this causes
     * `xhr.abort`, `details.timeout` and `xhr.onprogress` to not work and
     * makes `xhr.onreadystatechange` receive only readyState 4 events)
     */
-  var fetch: js.UndefOr[Boolean] = js.native
+  var fetch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * i.e. user-agent, referer... (some special headers are not supported
     * by Safari and Android browsers)
     */
-  var headers: js.UndefOr[RequestHeaders] = js.native
+  var headers: js.UndefOr[RequestHeaders] = js.undefined
   
-  var method: js.UndefOr[GET | HEAD | POST] = js.native
+  var method: js.UndefOr[GET | HEAD | POST] = js.undefined
   
   // Events
   /** Callback to be executed if the request was aborted */
-  var onabort: js.UndefOr[js.Function0[Unit]] = js.native
+  var onabort: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** Callback to be executed if the request ended up with an error */
-  var onerror: js.UndefOr[RequestEventListener[ErrorResponse]] = js.native
+  var onerror: js.UndefOr[RequestEventListener[ErrorResponse]] = js.undefined
   
   /** Callback to be executed if the request was loaded */
-  var onload: js.UndefOr[RequestEventListener[Response[TContext]]] = js.native
+  var onload: js.UndefOr[RequestEventListener[Response[TContext]]] = js.undefined
   
   /** Callback to be executed if the request started to load */
-  var onloadstart: js.UndefOr[RequestEventListener[Response[TContext]]] = js.native
+  var onloadstart: js.UndefOr[RequestEventListener[Response[TContext]]] = js.undefined
   
   /** Callback to be executed if the request made some progress */
-  var onprogress: js.UndefOr[RequestEventListener[ProgressResponse[TContext]]] = js.native
+  var onprogress: js.UndefOr[RequestEventListener[ProgressResponse[TContext]]] = js.undefined
   
   /** Callback to be executed if the request's ready state changed */
-  var onreadystatechange: js.UndefOr[RequestEventListener[Response[TContext]]] = js.native
+  var onreadystatechange: js.UndefOr[RequestEventListener[Response[TContext]]] = js.undefined
   
   /** Callback to be executed if the request failed due to a timeout */
-  var ontimeout: js.UndefOr[js.Function0[Unit]] = js.native
+  var ontimeout: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** MIME type for the request */
-  var overrideMimeType: js.UndefOr[String] = js.native
+  var overrideMimeType: js.UndefOr[String] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var responseType: js.UndefOr[arraybuffer | blob | json] = js.native
+  var responseType: js.UndefOr[arraybuffer | blob | json] = js.undefined
   
   /** Timeout in ms */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** Destination URL */
-  var url: String = js.native
+  var url: String
   
   /** Username for authentication */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object Request {
   
@@ -88,7 +86,7 @@ object Request {
   }
   
   @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request[_], TContext] (val x: Self with Request[TContext]) extends AnyVal {
+  implicit class RequestMutableBuilder[Self <: Request[?], TContext] (val x: Self & Request[TContext]) extends AnyVal {
     
     @scala.inline
     def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])

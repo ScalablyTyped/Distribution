@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about what might have caused a failure, such as an image that is too large. Not returned when there is no error. */
-@js.native
 trait ErrorInfo extends StObject {
   
   /** HTTP status code. */
-  var code: Double = js.native
+  var code: Double
   
   /** Human-readable error description. For example, `File size limit exceeded`. */
-  var description: String = js.native
+  var description: String
   
   /** Codified error string. For example, `limit_exceeded`. */
-  var error_id: String = js.native
+  var error_id: String
 }
 object ErrorInfo {
   

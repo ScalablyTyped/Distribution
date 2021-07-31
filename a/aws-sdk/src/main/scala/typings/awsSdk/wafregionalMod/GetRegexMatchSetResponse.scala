@@ -2,16 +2,14 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRegexMatchSetResponse extends StObject {
   
   /**
     * Information about the RegexMatchSet that you specified in the GetRegexMatchSet request. For more information, see RegexMatchTuple.
     */
-  var RegexMatchSet: js.UndefOr[typings.awsSdk.wafregionalMod.RegexMatchSet] = js.native
+  var RegexMatchSet: js.UndefOr[typings.awsSdk.wafregionalMod.RegexMatchSet] = js.undefined
 }
 object GetRegexMatchSetResponse {
   

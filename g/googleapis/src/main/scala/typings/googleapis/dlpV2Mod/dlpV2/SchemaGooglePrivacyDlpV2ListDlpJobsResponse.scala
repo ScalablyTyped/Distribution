@@ -2,24 +2,22 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response message for listing DLP jobs.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ListDlpJobsResponse extends StObject {
   
   /**
     * A list of DlpJobs that matches the specified filter in the request.
     */
-  var jobs: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2DlpJob]] = js.native
+  var jobs: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2DlpJob]] = js.undefined
   
   /**
     * The standard List next-page token.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ListDlpJobsResponse {
   

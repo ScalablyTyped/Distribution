@@ -4,7 +4,6 @@ import typings.fridaGum.Arm64WriterOptions
 import typings.fridaGum.NativePointerValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Arm64Writer")
 @js.native
 class Arm64Writer protected ()
-  extends typings.fridaGum.Arm64Writer {
+  extends StObject
+     with typings.fridaGum.Arm64Writer {
   /**
     * Creates a new code writer for generating AArch64 machine code
     * written directly to memory at `codeAddress`.

@@ -2,49 +2,47 @@ package typings.chromecastCafSender.cast.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemotePlayerController extends StObject {
   
   def addEventListener(
     `type`: RemotePlayerEventType,
-    handler: js.Function1[/* event */ RemotePlayerChangedEvent[_], Unit]
-  ): Unit = js.native
+    handler: js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]
+  ): Unit
   
-  def getFormattedTime(timeInSec: Double): String = js.native
+  def getFormattedTime(timeInSec: Double): String
   
-  def getSeekPosition(currentTime: Double, duration: Double): Double = js.native
+  def getSeekPosition(currentTime: Double, duration: Double): Double
   
-  def getSeekTime(currentPosition: Double, duration: Double): Double = js.native
+  def getSeekTime(currentPosition: Double, duration: Double): Double
   
-  def muteOrUnmute(): Unit = js.native
+  def muteOrUnmute(): Unit
   
-  def playOrPause(): Unit = js.native
+  def playOrPause(): Unit
   
   def removeEventListener(
     `type`: RemotePlayerEventType,
-    handler: js.Function1[/* event */ RemotePlayerChangedEvent[_], Unit]
-  ): Unit = js.native
+    handler: js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]
+  ): Unit
   
-  def seek(): Unit = js.native
+  def seek(): Unit
   
-  def setVolumeLevel(): Unit = js.native
+  def setVolumeLevel(): Unit
   
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object RemotePlayerController {
   
   @scala.inline
   def apply(
-    addEventListener: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[_], Unit]) => Unit,
+    addEventListener: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]) => Unit,
     getFormattedTime: Double => String,
     getSeekPosition: (Double, Double) => Double,
     getSeekTime: (Double, Double) => Double,
     muteOrUnmute: () => Unit,
     playOrPause: () => Unit,
-    removeEventListener: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[_], Unit]) => Unit,
+    removeEventListener: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]) => Unit,
     seek: () => Unit,
     setVolumeLevel: () => Unit,
     stop: () => Unit
@@ -58,7 +56,7 @@ object RemotePlayerController {
     
     @scala.inline
     def setAddEventListener(
-      value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[_], Unit]) => Unit
+      value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]) => Unit
     ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
@@ -78,7 +76,7 @@ object RemotePlayerController {
     
     @scala.inline
     def setRemoveEventListener(
-      value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[_], Unit]) => Unit
+      value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]) => Unit
     ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline

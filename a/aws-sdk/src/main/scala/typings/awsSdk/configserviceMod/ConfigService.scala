@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -43,7 +42,7 @@ trait ConfigService extends Service {
   ): Request[BatchGetResourceConfigResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_ConfigService: ConfigBase with ClientConfiguration = js.native
+  var config_ConfigService: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Deletes the authorization granted to the specified configuration aggregator account in a specified region.

@@ -4,28 +4,28 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A {@link LicenseException} reflects the necessity of someone agreeing to a license.
   * @since OOo 2.0.4
   */
-@js.native
-trait LicenseException extends Exception {
+trait LicenseException
+  extends StObject
+     with Exception {
   
   /** contains the value of the attribute `/description/registration/simple-license/@accept-by` from the description.xml */
-  var AcceptBy: String = js.native
+  var AcceptBy: String
   
   /**
     * name of the extension.
     *
     * The display name of the extension. See {@link XPackage.getDisplayName()}
     */
-  var ExtensionName: String = js.native
+  var ExtensionName: String
   
   /** contains the text of the license. */
-  var Text: String = js.native
+  var Text: String
 }
 object LicenseException {
   

@@ -2,26 +2,24 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparkHorizontalAxis extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Axis: SparkColor = js.native
+  val Axis: SparkColor
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.SparkHorizontalAxis_typekey")
-  var ExcelDotSparkHorizontalAxis_typekey: SparkHorizontalAxis = js.native
+  var ExcelDotSparkHorizontalAxis_typekey: SparkHorizontalAxis
   
-  val IsDateAxis: Boolean = js.native
+  val IsDateAxis: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RightToLeftPlotOrder: Boolean = js.native
+  var RightToLeftPlotOrder: Boolean
 }
 object SparkHorizontalAxis {
   

@@ -3,37 +3,35 @@ package typings.dynatable.JQueryDynatable
 import typings.dynatable.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessingIndicator extends StObject {
   
   /** Insert the processing indicator inside the page */
-  def attach(): Unit = js.native
+  def attach(): Unit
   
   /**
     * Generate the html markup for the processing indicator
     *
     * @return A jQuery object containing the generated html
     */
-  def create(): JQuery = js.native
+  def create(): JQuery
   
   /** Hide the processing indicator */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /** Set up the processing indicator */
-  def init(): Unit = js.native
+  def init(): Unit
   
   /**
     * Position the processing indicator at the center
     *
     * @return A jQuery object containing the processing indicator
     */
-  def position(): JQuery = js.native
+  def position(): JQuery
   
   /** Show the processing indicator */
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object ProcessingIndicator {
   

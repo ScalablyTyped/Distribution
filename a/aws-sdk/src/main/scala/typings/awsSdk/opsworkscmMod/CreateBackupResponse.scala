@@ -2,16 +2,14 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBackupResponse extends StObject {
   
   /**
     * Backup created by request.
     */
-  var Backup: js.UndefOr[typings.awsSdk.opsworkscmMod.Backup] = js.native
+  var Backup: js.UndefOr[typings.awsSdk.opsworkscmMod.Backup] = js.undefined
 }
 object CreateBackupResponse {
   

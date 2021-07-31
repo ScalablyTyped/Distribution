@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateInstanceMarketOptions extends StObject {
   
   /**
     * The market type.
     */
-  var MarketType: js.UndefOr[typings.awsSdk.ec2Mod.MarketType] = js.native
+  var MarketType: js.UndefOr[typings.awsSdk.ec2Mod.MarketType] = js.undefined
   
   /**
     * The options for Spot Instances.
     */
-  var SpotOptions: js.UndefOr[LaunchTemplateSpotMarketOptions] = js.native
+  var SpotOptions: js.UndefOr[LaunchTemplateSpotMarketOptions] = js.undefined
 }
 object LaunchTemplateInstanceMarketOptions {
   

@@ -4,16 +4,14 @@ import typings.leafletFullscreen.anon.PseudoFullscreen
 import typings.leafletFullscreen.leafletFullscreenBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait MapOptions extends StObject {
     
-    var fullscreenControl: js.UndefOr[`true` | PseudoFullscreen] = js.native
+    var fullscreenControl: js.UndefOr[`true` | PseudoFullscreen] = js.undefined
   }
   object MapOptions {
     

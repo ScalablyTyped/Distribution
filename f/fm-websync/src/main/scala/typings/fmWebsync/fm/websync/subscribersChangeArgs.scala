@@ -3,21 +3,21 @@ package typings.fmWebsync.fm.websync
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait subscribersChangeArgs extends baseResponseArgs {
+trait subscribersChangeArgs
+  extends StObject
+     with baseResponseArgs {
   
   /**
     * The details of the change that occurred.
     */
-  var change: js.UndefOr[subscribersChange] = js.native
+  var change: js.UndefOr[subscribersChange] = js.undefined
   
   /**
     * The channel on which the change occurred.
     */
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
 }
 object subscribersChangeArgs {
   

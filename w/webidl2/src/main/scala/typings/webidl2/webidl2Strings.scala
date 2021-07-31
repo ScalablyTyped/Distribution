@@ -2,7 +2,6 @@ package typings.webidl2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webidl2Strings {
@@ -98,9 +97,9 @@ object webidl2Strings {
   def dictionary: dictionary = "dictionary".asInstanceOf[dictionary]
   
   @js.native
-  sealed trait enum extends StObject
+  sealed trait `enum` extends StObject
   @scala.inline
-  def enum: enum = "enum".asInstanceOf[enum]
+  def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
   sealed trait `enum-value` extends StObject

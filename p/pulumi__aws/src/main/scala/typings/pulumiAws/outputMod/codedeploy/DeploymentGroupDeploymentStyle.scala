@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.codedeploy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentGroupDeploymentStyle extends StObject {
   
   /**
     * Indicates whether to route deployment traffic behind a load balancer. Valid Values are `WITH_TRAFFIC_CONTROL` or `WITHOUT_TRAFFIC_CONTROL`. Default is `WITHOUT_TRAFFIC_CONTROL`.
     */
-  var deploymentOption: js.UndefOr[String] = js.native
+  var deploymentOption: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether to run an in-place deployment or a blue/green deployment. Valid Values are `IN_PLACE` or `BLUE_GREEN`. Default is `IN_PLACE`.
     */
-  var deploymentType: js.UndefOr[String] = js.native
+  var deploymentType: js.UndefOr[String] = js.undefined
 }
 object DeploymentGroupDeploymentStyle {
   

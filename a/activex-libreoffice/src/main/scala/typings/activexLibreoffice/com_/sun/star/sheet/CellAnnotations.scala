@@ -6,16 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of cell annotations.
   * @see com.sun.star.sheet.Spreadsheet
   */
-@js.native
 trait CellAnnotations
-  extends XSheetAnnotations
+  extends StObject
+     with XSheetAnnotations
      with XEnumerationAccess
 object CellAnnotations {
   

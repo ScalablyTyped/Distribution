@@ -2,25 +2,23 @@ package typings.sourceMap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NullableMappedPosition extends StObject {
   
-  var column: Double | Null = js.native
+  var column: Double | Null
   
-  var line: Double | Null = js.native
+  var line: Double | Null
   
-  var name: String | Null = js.native
+  var name: String | Null
   
-  var source: String | Null = js.native
+  var source: String | Null
 }
 object NullableMappedPosition {
   
   @scala.inline
   def apply(): NullableMappedPosition = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(column = null, line = null, name = null, source = null)
     __obj.asInstanceOf[NullableMappedPosition]
   }
   

@@ -2,13 +2,11 @@ package typings.chui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepeaterName extends StObject {
   
-  var repeaterName: js.UndefOr[js.Any] = js.native
+  var repeaterName: js.UndefOr[js.Any] = js.undefined
 }
 object RepeaterName {
   

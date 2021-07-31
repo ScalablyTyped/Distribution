@@ -3,7 +3,6 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.SpatialStyle.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,7 +27,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options {(H.map.SpatialStyle | H.map.SpatialStyle.Options)=} - The optional style attributes
   */
 class SpatialStyle ()
-  extends typings.heremaps.H.map.SpatialStyle {
+  extends StObject
+     with typings.heremaps.H.map.SpatialStyle {
   def this(opt_options: typings.heremaps.H.map.SpatialStyle) = this()
   def this(opt_options: Options) = this()
 }

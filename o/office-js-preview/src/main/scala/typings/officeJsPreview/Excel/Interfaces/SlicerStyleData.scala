@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `slicerStyle.toJSON()`. */
-@js.native
 trait SlicerStyleData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SlicerStyleData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait SlicerStyleData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
 }
 object SlicerStyleData {
   

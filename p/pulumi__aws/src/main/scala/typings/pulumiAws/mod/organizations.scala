@@ -19,10 +19,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizations {
+  
+  @JSImport("@pulumi/aws", "organizations")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "organizations.Account")
   @js.native
@@ -41,6 +44,10 @@ object organizations {
   /* static members */
   object Account {
     
+    @JSImport("@pulumi/aws", "organizations.Account")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Account resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -50,26 +57,21 @@ object organizations {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "organizations.Account.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsAccountMod.Account = js.native
-    @JSImport("@pulumi/aws", "organizations.Account.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationsAccountMod.Account = js.native
-    @JSImport("@pulumi/aws", "organizations.Account.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccountState): typings.pulumiAws.organizationsAccountMod.Account = js.native
-    @JSImport("@pulumi/aws", "organizations.Account.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccountState, opts: CustomResourceOptions): typings.pulumiAws.organizationsAccountMod.Account = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsAccountMod.Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsAccountMod.Account]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.organizationsAccountMod.Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsAccountMod.Account]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccountState): typings.pulumiAws.organizationsAccountMod.Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsAccountMod.Account]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccountState, opts: CustomResourceOptions): typings.pulumiAws.organizationsAccountMod.Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsAccountMod.Account]
     
     /**
       * Returns true if the given object is an instance of Account.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "organizations.Account.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/account.Account */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/account.Account */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/account.Account */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "organizations.Organization")
@@ -85,11 +87,15 @@ object organizations {
       */
     def this(name: String) = this()
     def this(name: String, args: OrganizationArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: OrganizationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Organization {
+    
+    @JSImport("@pulumi/aws", "organizations.Organization")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Organization resource's state with the given name, ID, and optional extra
@@ -100,26 +106,21 @@ object organizations {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "organizations.Organization.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationMod.Organization = js.native
-    @JSImport("@pulumi/aws", "organizations.Organization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationMod.Organization = js.native
-    @JSImport("@pulumi/aws", "organizations.Organization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationState): typings.pulumiAws.organizationMod.Organization = js.native
-    @JSImport("@pulumi/aws", "organizations.Organization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationState, opts: CustomResourceOptions): typings.pulumiAws.organizationMod.Organization = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationMod.Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationMod.Organization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.organizationMod.Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationMod.Organization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationState): typings.pulumiAws.organizationMod.Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationMod.Organization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationState, opts: CustomResourceOptions): typings.pulumiAws.organizationMod.Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationMod.Organization]
     
     /**
       * Returns true if the given object is an instance of Organization.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "organizations.Organization.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "organizations.OrganizationalUnit")
@@ -139,6 +140,10 @@ object organizations {
   /* static members */
   object OrganizationalUnit {
     
+    @JSImport("@pulumi/aws", "organizations.OrganizationalUnit")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing OrganizationalUnit resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -148,26 +153,21 @@ object organizations {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "organizations.OrganizationalUnit.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
-    @JSImport("@pulumi/aws", "organizations.OrganizationalUnit.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
-    @JSImport("@pulumi/aws", "organizations.OrganizationalUnit.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationalUnitState): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
-    @JSImport("@pulumi/aws", "organizations.OrganizationalUnit.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationalUnitState, opts: CustomResourceOptions): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationalUnitMod.OrganizationalUnit]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationalUnitMod.OrganizationalUnit]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationalUnitState): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationalUnitMod.OrganizationalUnit]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationalUnitState, opts: CustomResourceOptions): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationalUnitMod.OrganizationalUnit]
     
     /**
       * Returns true if the given object is an instance of OrganizationalUnit.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "organizations.OrganizationalUnit.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organizationalUnit.OrganizationalUnit */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organizationalUnit.OrganizationalUnit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/organizationalUnit.OrganizationalUnit */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "organizations.Policy")
@@ -187,6 +187,10 @@ object organizations {
   /* static members */
   object Policy {
     
+    @JSImport("@pulumi/aws", "organizations.Policy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Policy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -196,26 +200,21 @@ object organizations {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "organizations.Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
-    @JSImport("@pulumi/aws", "organizations.Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
-    @JSImport("@pulumi/aws", "organizations.Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyState): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
-    @JSImport("@pulumi/aws", "organizations.Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsPolicyMod.Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsPolicyMod.Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyState): typings.pulumiAws.organizationsPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsPolicyMod.Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsPolicyMod.Policy]
     
     /**
       * Returns true if the given object is an instance of Policy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "organizations.Policy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/policy.Policy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/policy.Policy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/policy.Policy */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "organizations.PolicyAttachment")
@@ -235,6 +234,10 @@ object organizations {
   /* static members */
   object PolicyAttachment {
     
+    @JSImport("@pulumi/aws", "organizations.PolicyAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PolicyAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -244,39 +247,30 @@ object organizations {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "organizations.PolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
-    @JSImport("@pulumi/aws", "organizations.PolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
-    @JSImport("@pulumi/aws", "organizations.PolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyAttachmentState): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
-    @JSImport("@pulumi/aws", "organizations.PolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyAttachmentState): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment]
     
     /**
       * Returns true if the given object is an instance of PolicyAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "organizations.PolicyAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/policyAttachment.PolicyAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/policyAttachment.PolicyAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/policyAttachment.PolicyAttachment */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "organizations.getOrganization")
-  @js.native
-  def getOrganization(): js.Promise[GetOrganizationResult] = js.native
-  @JSImport("@pulumi/aws", "organizations.getOrganization")
-  @js.native
-  def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] = js.native
+  @scala.inline
+  def getOrganization(): js.Promise[GetOrganizationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganization")().asInstanceOf[js.Promise[GetOrganizationResult]]
+  @scala.inline
+  def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganization")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrganizationResult]]
   
-  @JSImport("@pulumi/aws", "organizations.getOrganizationalUnits")
-  @js.native
-  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs): js.Promise[GetOrganizationalUnitsResult] = js.native
-  @JSImport("@pulumi/aws", "organizations.getOrganizationalUnits")
-  @js.native
-  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs, opts: InvokeOptions): js.Promise[GetOrganizationalUnitsResult] = js.native
+  @scala.inline
+  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs): js.Promise[GetOrganizationalUnitsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganizationalUnits")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrganizationalUnitsResult]]
+  @scala.inline
+  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs, opts: InvokeOptions): js.Promise[GetOrganizationalUnitsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrganizationalUnits")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOrganizationalUnitsResult]]
 }

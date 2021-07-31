@@ -9,36 +9,32 @@ import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
 import typings.grpcGrpcJs.uriParserMod.GrpcUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolverMod {
   
-  @JSImport("@grpc/grpc-js/build/src/resolver", "createResolver")
+  @JSImport("@grpc/grpc-js/build/src/resolver", JSImport.Namespace)
   @js.native
-  def createResolver(target: GrpcUri, listener: ResolverListener, options: ChannelOptions): Resolver = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@grpc/grpc-js/build/src/resolver", "getDefaultAuthority")
-  @js.native
-  def getDefaultAuthority(target: GrpcUri): String = js.native
+  @scala.inline
+  def createResolver(target: GrpcUri, listener: ResolverListener, options: ChannelOptions): Resolver = (^.asInstanceOf[js.Dynamic].applyDynamic("createResolver")(target.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Resolver]
   
-  @JSImport("@grpc/grpc-js/build/src/resolver", "mapUriDefaultScheme")
-  @js.native
-  def mapUriDefaultScheme(target: GrpcUri): GrpcUri | Null = js.native
+  @scala.inline
+  def getDefaultAuthority(target: GrpcUri): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAuthority")(target.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@grpc/grpc-js/build/src/resolver", "registerAll")
-  @js.native
-  def registerAll(): Unit = js.native
+  @scala.inline
+  def mapUriDefaultScheme(target: GrpcUri): GrpcUri | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("mapUriDefaultScheme")(target.asInstanceOf[js.Any]).asInstanceOf[GrpcUri | Null]
   
-  @JSImport("@grpc/grpc-js/build/src/resolver", "registerDefaultScheme")
-  @js.native
-  def registerDefaultScheme(scheme: String): Unit = js.native
+  @scala.inline
+  def registerAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAll")().asInstanceOf[Unit]
   
-  @JSImport("@grpc/grpc-js/build/src/resolver", "registerResolver")
-  @js.native
-  def registerResolver(scheme: String, resolverClass: ResolverConstructor): Unit = js.native
+  @scala.inline
+  def registerDefaultScheme(scheme: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDefaultScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def registerResolver(scheme: String, resolverClass: ResolverConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResolver")(scheme.asInstanceOf[js.Any], resolverClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Resolver extends StObject {
     
     /**
@@ -47,7 +43,7 @@ object resolverMod {
       * functions, but that is not guaranteed. Those functions will never be
       * called synchronously with the constructor or updateResolution.
       */
-    def updateResolution(): Unit = js.native
+    def updateResolution(): Unit
   }
   object Resolver {
     
@@ -66,7 +62,9 @@ object resolverMod {
   }
   
   @js.native
-  trait ResolverConstructor extends Instantiable3[
+  trait ResolverConstructor
+    extends StObject
+       with Instantiable3[
           /* target */ GrpcUri, 
           /* listener */ ResolverListener, 
           /* channelOptions */ ChannelOptions, 

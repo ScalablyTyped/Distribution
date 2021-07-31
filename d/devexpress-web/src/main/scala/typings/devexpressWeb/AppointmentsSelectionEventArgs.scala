@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientScheduler.AppointmentsSelectionChanged event.
   */
-@js.native
-trait AppointmentsSelectionEventArgs extends ASPxClientEventArgs {
+trait AppointmentsSelectionEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets identifiers of the selected appointments.
     */
-  var appointmentIds: js.Array[String] = js.native
+  var appointmentIds: js.Array[String]
 }
 object AppointmentsSelectionEventArgs {
   

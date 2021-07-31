@@ -2,7 +2,6 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,13 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * lookup to find all attached attestation occurrences, even if they don&#39;t
   * all live in the same project.
   */
-@js.native
 trait SchemaAuthority extends StObject {
   
   /**
     * Hint hints at the purpose of the attestation authority.
     */
-  var hint: js.UndefOr[SchemaHint] = js.native
+  var hint: js.UndefOr[SchemaHint] = js.undefined
 }
 object SchemaAuthority {
   

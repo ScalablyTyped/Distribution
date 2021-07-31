@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointEventsOptionsObject extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait PointEventsOptionsObject extends StObject {
     * the point's click event is to toggle the point's select state. Returning
     * `false` cancels this action.
     */
-  var click: js.UndefOr[PointClickCallbackFunction] = js.native
+  var click: js.UndefOr[PointClickCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Callback that fires while dragging a
@@ -28,7 +26,7 @@ trait PointEventsOptionsObject extends StObject {
     * from `e.newPointId`. The `this` context is the point being dragged. To
     * stop the default drag action, return false. See drag and drop options.
     */
-  var drag: js.UndefOr[PointDragCallbackFunction] = js.native
+  var drag: js.UndefOr[PointDragCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Callback that fires when starting to drag
@@ -36,14 +34,14 @@ trait PointEventsOptionsObject extends StObject {
     * handle is used, `e.updateProp` is set to the data property being dragged.
     * The `this` context is the point. See drag and drop options.
     */
-  var dragStart: js.UndefOr[PointDragStartCallbackFunction] = js.native
+  var dragStart: js.UndefOr[PointDragStartCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Callback that fires when the point is
     * dropped. The parameters passed are the same as for drag. To stop the
     * default drop action, return false. See drag and drop options.
     */
-  var drop: js.UndefOr[PointDropCallbackFunction] = js.native
+  var drop: js.UndefOr[PointDropCallbackFunction] = js.undefined
   
   /**
     * (Highcharts) Fires when the legend item belonging to the pie point
@@ -52,42 +50,42 @@ trait PointEventsOptionsObject extends StObject {
     * information. The default action is to toggle the visibility of the point.
     * This can be prevented by calling `event.preventDefault()`.
     */
-  var legendItemClick: js.UndefOr[PointLegendItemClickCallbackFunction] = js.native
+  var legendItemClick: js.UndefOr[PointLegendItemClickCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Fires when the mouse leaves the area close
     * to the point. One parameter, `event`, is passed to the function,
     * containing common event information.
     */
-  var mouseOut: js.UndefOr[PointMouseOutCallbackFunction] = js.native
+  var mouseOut: js.UndefOr[PointMouseOutCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Fires when the mouse enters the area close
     * to the point. One parameter, `event`, is passed to the function,
     * containing common event information.
     */
-  var mouseOver: js.UndefOr[PointMouseOverCallbackFunction] = js.native
+  var mouseOver: js.UndefOr[PointMouseOverCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Fires when the point is removed using the
     * `.remove()` method. One parameter, `event`, is passed to the function.
     * Returning `false` cancels the operation.
     */
-  var remove: js.UndefOr[PointRemoveCallbackFunction] = js.native
+  var remove: js.UndefOr[PointRemoveCallbackFunction] = js.undefined
   
   /**
     * Fires when the point is selected either programmatically or following a
     * click on the point. One parameter, `event`, is passed to the function.
     * Returning `false` cancels the operation.
     */
-  var select: js.UndefOr[PointSelectCallbackFunction] = js.native
+  var select: js.UndefOr[PointSelectCallbackFunction] = js.undefined
   
   /**
     * Fires when the point is unselected either programmatically or following a
     * click on the point. One parameter, `event`, is passed to the function.
     * Returning `false` cancels the operation.
     */
-  var unselect: js.UndefOr[PointUnselectCallbackFunction] = js.native
+  var unselect: js.UndefOr[PointUnselectCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Fires when the point is updated
@@ -95,7 +93,7 @@ trait PointEventsOptionsObject extends StObject {
     * is passed to the function. The new point options can be accessed through
     * `event.options`. Returning `false` cancels the operation.
     */
-  var update: js.UndefOr[PointUpdateCallbackFunction] = js.native
+  var update: js.UndefOr[PointUpdateCallbackFunction] = js.undefined
 }
 object PointEventsOptionsObject {
   

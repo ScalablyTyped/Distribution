@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepricingRuleEligibleOfferMatcher extends StObject {
   
   /** Filter by the brand. */
-  var brandMatcher: js.UndefOr[RepricingRuleEligibleOfferMatcherStringMatcher] = js.native
+  var brandMatcher: js.UndefOr[RepricingRuleEligibleOfferMatcherStringMatcher] = js.undefined
   
   /** Filter by the item group id. */
-  var itemGroupIdMatcher: js.UndefOr[RepricingRuleEligibleOfferMatcherStringMatcher] = js.native
+  var itemGroupIdMatcher: js.UndefOr[RepricingRuleEligibleOfferMatcherStringMatcher] = js.undefined
   
   /** Determines whether to use the custom matchers or the product feed attribute "repricing_rule_id" to specify offer-rule mapping. */
-  var matcherOption: js.UndefOr[String] = js.native
+  var matcherOption: js.UndefOr[String] = js.undefined
   
   /** Filter by the offer id. */
-  var offerIdMatcher: js.UndefOr[RepricingRuleEligibleOfferMatcherStringMatcher] = js.native
+  var offerIdMatcher: js.UndefOr[RepricingRuleEligibleOfferMatcherStringMatcher] = js.undefined
 }
 object RepricingRuleEligibleOfferMatcher {
   

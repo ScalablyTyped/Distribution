@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSlotTypeRequest extends StObject {
   
   /**
     * The name of the slot type. The name is case sensitive. 
     */
-  var name: SlotTypeName = js.native
+  var name: SlotTypeName
   
   /**
     * The version of the slot type. 
     */
-  var version: Version = js.native
+  var version: Version
 }
 object GetSlotTypeRequest {
   

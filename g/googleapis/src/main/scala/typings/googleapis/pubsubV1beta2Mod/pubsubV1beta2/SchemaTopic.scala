@@ -2,13 +2,11 @@ package typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A topic resource.
   */
-@js.native
 trait SchemaTopic extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaTopic extends StObject {
     * or percent signs (`%`). It must be between 3 and 255 characters in
     * length, and it must not start with `&quot;goog&quot;`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaTopic {
   

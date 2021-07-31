@@ -2,17 +2,17 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SkContourMeasure extends EmbindObject[SkContourMeasure] {
+trait SkContourMeasure
+  extends StObject
+     with EmbindObject[SkContourMeasure] {
   
   /**
     * Returns the given position and tangent line for the distance on the given contour.
     * @param distance - will be pinned between 0 and length().
     */
-  def getPosTan(distance: Double): PosTan = js.native
+  def getPosTan(distance: Double): PosTan
   
   /**
     * Returns an SkPath representing the segement of this contour.
@@ -20,17 +20,17 @@ trait SkContourMeasure extends EmbindObject[SkContourMeasure] {
     * @param stopD - will be pinned between 0 and length()
     * @param startWithMoveTo
     */
-  def getSegment(startD: Double, stopD: Double, startWithMoveTo: Boolean): SkPath = js.native
+  def getSegment(startD: Double, stopD: Double, startWithMoveTo: Boolean): SkPath
   
   /**
     * Returns true if the contour is closed.
     */
-  def isClosed(): Boolean = js.native
+  def isClosed(): Boolean
   
   /**
     * Returns the length of this contour.
     */
-  def length(): Double = js.native
+  def length(): Double
 }
 object SkContourMeasure {
   

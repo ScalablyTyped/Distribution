@@ -2,15 +2,13 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOptionsConfiguration extends StObject {
   
-  var fetchStrategy: js.UndefOr[FetchStrategySymbol] = js.native
+  var fetchStrategy: js.UndefOr[FetchStrategySymbol] = js.undefined
   
-  var mergeStrategy: js.UndefOr[MergeStrategySymbol] = js.native
+  var mergeStrategy: js.UndefOr[MergeStrategySymbol] = js.undefined
 }
 object QueryOptionsConfiguration {
   

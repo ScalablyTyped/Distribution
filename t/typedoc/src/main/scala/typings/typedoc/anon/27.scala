@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.disableOutputCheck
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `27` extends StObject {
   
-  var name: disableOutputCheck = js.native
+  var name: disableOutputCheck
 }
 object `27` {
   
   @scala.inline
-  def apply(name: disableOutputCheck): `27` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `27` = {
+    val __obj = js.Dynamic.literal(name = "disableOutputCheck")
     __obj.asInstanceOf[`27`]
   }
   

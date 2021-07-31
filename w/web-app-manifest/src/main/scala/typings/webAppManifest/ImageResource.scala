@@ -2,7 +2,6 @@ package typings.webAppManifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see https://w3c.github.io/manifest/#imageresource-and-its-members
   */
-@js.native
 trait ImageResource extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait ImageResource extends StObject {
     *
     * @see https://w3c.github.io/manifest/#platform-member
     */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /**
     * The purpose member is an unordered set of unique space-separated tokens that are ASCII case-
@@ -28,7 +26,7 @@ trait ImageResource extends StObject {
     *
     * @see https://w3c.github.io/manifest/#purpose-member
     */
-  var purpose: js.UndefOr[String] = js.native
+  var purpose: js.UndefOr[String] = js.undefined
   
   /**
     * The `sizes` member of an ImageResource is a string consisting of an unordered set of unique space-
@@ -36,21 +34,21 @@ trait ImageResource extends StObject {
     *
     * @see https://w3c.github.io/manifest/#sizes-member
     */
-  var sizes: js.UndefOr[String] = js.native
+  var sizes: js.UndefOr[String] = js.undefined
   
   /**
     * The `src` member of an `ImageResource` is a URL from which a user agent can fetch the image's data.
     *
     * @see https://w3c.github.io/manifest/#src-member
     */
-  var src: String = js.native
+  var src: String
   
   /**
     * The `type` member of an `ImageResource` is a hint as to the MIME type of the image.
     *
     * @see https://w3c.github.io/manifest/#type-member
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ImageResource {
   

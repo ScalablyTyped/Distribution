@@ -2,13 +2,11 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEventSubscriptionResult extends StObject {
   
-  var EventSubscription: js.UndefOr[typings.awsSdk.neptuneMod.EventSubscription] = js.native
+  var EventSubscription: js.UndefOr[typings.awsSdk.neptuneMod.EventSubscription] = js.undefined
 }
 object DeleteEventSubscriptionResult {
   

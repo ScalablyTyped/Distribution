@@ -5,18 +5,21 @@ import typings.reactVirtualized.esTableMod.SortDirectionType
 import typings.reactVirtualized.mod.Alignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactVirtualizedStrings {
   
   @js.native
-  sealed trait ASC extends SortDirectionType
+  sealed trait ASC
+    extends StObject
+       with SortDirectionType
   @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]
   
   @js.native
-  sealed trait DESC extends SortDirectionType
+  sealed trait DESC
+    extends StObject
+       with SortDirectionType
   @scala.inline
   def DESC: DESC = "DESC".asInstanceOf[DESC]
   
@@ -26,7 +29,9 @@ object reactVirtualizedStrings {
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait auto extends Alignment
+  sealed trait auto
+    extends StObject
+       with Alignment
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -36,7 +41,9 @@ object reactVirtualizedStrings {
   def cells: cells = "cells".asInstanceOf[cells]
   
   @js.native
-  sealed trait center extends Alignment
+  sealed trait center
+    extends StObject
+       with Alignment
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -46,7 +53,9 @@ object reactVirtualizedStrings {
   def edges: edges = "edges".asInstanceOf[edges]
   
   @js.native
-  sealed trait end extends Alignment
+  sealed trait end
+    extends StObject
+       with Alignment
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   
@@ -56,7 +65,9 @@ object reactVirtualizedStrings {
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait horizontal extends ScrollDirection
+  sealed trait horizontal
+    extends StObject
+       with ScrollDirection
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
@@ -66,12 +77,16 @@ object reactVirtualizedStrings {
   def rowgroup: rowgroup = "rowgroup".asInstanceOf[rowgroup]
   
   @js.native
-  sealed trait start extends Alignment
+  sealed trait start
+    extends StObject
+       with Alignment
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait vertical extends ScrollDirection
+  sealed trait vertical
+    extends StObject
+       with ScrollDirection
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

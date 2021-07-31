@@ -2,36 +2,34 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFacetRequest extends StObject {
   
   /**
     * The attributes that are associated with the Facet.
     */
-  var Attributes: js.UndefOr[FacetAttributeList] = js.native
+  var Attributes: js.UndefOr[FacetAttributeList] = js.undefined
   
   /**
     * There are two different styles that you can define on any given facet, Static and Dynamic. For static facets, all attributes must be defined in the schema. For dynamic facets, attributes can be defined during data plane operations.
     */
-  var FacetStyle: js.UndefOr[typings.awsSdk.clouddirectoryMod.FacetStyle] = js.native
+  var FacetStyle: js.UndefOr[typings.awsSdk.clouddirectoryMod.FacetStyle] = js.undefined
   
   /**
     * The name of the Facet, which is unique for a given schema.
     */
-  var Name: FacetName = js.native
+  var Name: FacetName
   
   /**
     * Specifies whether a given object created from this facet is of type node, leaf node, policy or index.   Node: Can have multiple children but one parent.     Leaf node: Cannot have children but can have multiple parents.     Policy: Allows you to store a policy document and policy type. For more information, see Policies.     Index: Can be created with the Index API.  
     */
-  var ObjectType: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectType] = js.native
+  var ObjectType: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectType] = js.undefined
   
   /**
     * The schema ARN in which the new Facet will be created. For more information, see arns.
     */
-  var SchemaArn: Arn = js.native
+  var SchemaArn: Arn
 }
 object CreateFacetRequest {
   

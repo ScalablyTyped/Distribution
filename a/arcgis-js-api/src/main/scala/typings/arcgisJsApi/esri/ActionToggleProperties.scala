@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ActionToggleProperties extends ActionBaseProperties {
+trait ActionToggleProperties
+  extends StObject
+     with ActionBaseProperties {
   
   /**
     * Indicates the value of whether the action is toggled on/off.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html#value)
     */
-  var value: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Boolean] = js.undefined
 }
 object ActionToggleProperties {
   

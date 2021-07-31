@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MylibraryResource extends StObject {
   
-  var annotations: AnnotationsResource = js.native
+  var annotations: AnnotationsResource
   
-  var bookshelves: BookshelvesResource = js.native
+  var bookshelves: BookshelvesResource
   
-  var readingpositions: ReadingpositionsResource = js.native
+  var readingpositions: ReadingpositionsResource
 }
 object MylibraryResource {
   

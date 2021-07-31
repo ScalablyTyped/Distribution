@@ -2,32 +2,34 @@ package typings.marko
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getComponentFilesMod {
   
+  @scala.inline
+  def apply(filename: String): ComponentFiles | Null = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[ComponentFiles | Null]
+  
   @JSImport("marko/src/components/taglib/TransformHelper/getComponentFiles", JSImport.Namespace)
   @js.native
-  def apply(filename: String): ComponentFiles | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait ComponentFiles extends StObject {
     
     @JSName("package")
-    var _package: String | Null = js.native
+    var _package: String | Null
     
-    var browserFile: String | Null = js.native
+    var browserFile: String | Null
     
-    var file: String | Null = js.native
+    var file: String | Null
     
-    var styles: js.Array[String] = js.native
+    var styles: js.Array[String]
   }
   object ComponentFiles {
     
     @scala.inline
     def apply(styles: js.Array[String]): ComponentFiles = {
-      val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any], browserFile = null, file = null)
+      __obj.updateDynamic("package")(null)
       __obj.asInstanceOf[ComponentFiles]
     }
     

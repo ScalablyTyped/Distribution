@@ -3,7 +3,6 @@ package typings.uifabricUtilities
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fabricPerformanceMod {
@@ -30,17 +29,14 @@ object fabricPerformanceMod {
       * @param name - The name of this measurement
       * @param func - The logic to be measured for execution time
       */
-    @JSImport("@uifabric/utilities/lib/FabricPerformance", "FabricPerformance.measure")
-    @js.native
-    def measure(name: String, func: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def measure(name: String, func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@uifabric/utilities/lib/FabricPerformance", "FabricPerformance.reset")
-    @js.native
-    def reset(): Unit = js.native
+    @scala.inline
+    def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
     
-    @JSImport("@uifabric/utilities/lib/FabricPerformance", "FabricPerformance.setPeriodicReset")
-    @js.native
-    def setPeriodicReset(): Unit = js.native
+    @scala.inline
+    def setPeriodicReset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPeriodicReset")().asInstanceOf[Unit]
     
     @JSImport("@uifabric/utilities/lib/FabricPerformance", "FabricPerformance.summary")
     @js.native
@@ -49,12 +45,11 @@ object fabricPerformanceMod {
     def summary_=(x: IPerfSummary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("summary")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IPerfData extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var timeStamp: Double = js.native
+    var timeStamp: Double
   }
   object IPerfData {
     
@@ -75,14 +70,13 @@ object fabricPerformanceMod {
     }
   }
   
-  @js.native
   trait IPerfMeasurement extends StObject {
     
-    var all: js.Array[IPerfData] = js.native
+    var all: js.Array[IPerfData]
     
-    var count: Double = js.native
+    var count: Double
     
-    var totalDuration: Double = js.native
+    var totalDuration: Double
   }
   object IPerfMeasurement {
     

@@ -4,20 +4,18 @@ import typings.plotlyJs.mod.Annotations
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<plotly.js.plotly.js.ClickAnnotationEvent> */
-@js.native
 trait ReadonlyClickAnnotationEv extends StObject {
   
-  val annotation: Annotations = js.native
+  val annotation: Annotations
   
-  val event: MouseEvent = js.native
+  val event: MouseEvent
   
-  val fullAnnotation: Annotations = js.native
+  val fullAnnotation: Annotations
   
-  val index: Double = js.native
+  val index: Double
 }
 object ReadonlyClickAnnotationEv {
   

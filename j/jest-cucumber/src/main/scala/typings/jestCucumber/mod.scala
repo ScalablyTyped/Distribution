@@ -6,49 +6,41 @@ import typings.jestCucumber.modelsMod.Options
 import typings.jestCucumber.modelsMod.ParsedFeature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jest-cucumber", "autoBindSteps")
+  @JSImport("jest-cucumber", JSImport.Namespace)
   @js.native
-  def autoBindSteps(features: js.Array[ParsedFeature], stepDefinitions: js.Array[StepsDefinitionCallbackFunction]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jest-cucumber", "defineFeature")
-  @js.native
-  def defineFeature(featureFromFile: ParsedFeature, scenariosDefinitionCallback: ScenariosDefinitionCallbackFunction): Unit = js.native
+  @scala.inline
+  def autoBindSteps(features: js.Array[ParsedFeature], stepDefinitions: js.Array[StepsDefinitionCallbackFunction]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autoBindSteps")(features.asInstanceOf[js.Any], stepDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-cucumber", "generateCodeFromFeature")
-  @js.native
-  def generateCodeFromFeature(feature: ParsedFeature, lineNumber: Double): String | Null = js.native
+  @scala.inline
+  def defineFeature(featureFromFile: ParsedFeature, scenariosDefinitionCallback: ScenariosDefinitionCallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineFeature")(featureFromFile.asInstanceOf[js.Any], scenariosDefinitionCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-cucumber", "generateCodeWithSeparateFunctionsFromFeature")
-  @js.native
-  def generateCodeWithSeparateFunctionsFromFeature(feature: ParsedFeature, lineNumber: Double): String | Null = js.native
+  @scala.inline
+  def generateCodeFromFeature(feature: ParsedFeature, lineNumber: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFromFeature")(feature.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("jest-cucumber", "loadFeature")
-  @js.native
-  def loadFeature(featureFilePath: String): ParsedFeature = js.native
-  @JSImport("jest-cucumber", "loadFeature")
-  @js.native
-  def loadFeature(featureFilePath: String, options: Options): ParsedFeature = js.native
+  @scala.inline
+  def generateCodeWithSeparateFunctionsFromFeature(feature: ParsedFeature, lineNumber: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeWithSeparateFunctionsFromFeature")(feature.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("jest-cucumber", "loadFeatures")
-  @js.native
-  def loadFeatures(globPattern: String): js.Array[ParsedFeature] = js.native
-  @JSImport("jest-cucumber", "loadFeatures")
-  @js.native
-  def loadFeatures(globPattern: String, options: Options): js.Array[ParsedFeature] = js.native
+  @scala.inline
+  def loadFeature(featureFilePath: String): ParsedFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFeature")(featureFilePath.asInstanceOf[js.Any]).asInstanceOf[ParsedFeature]
+  @scala.inline
+  def loadFeature(featureFilePath: String, options: Options): ParsedFeature = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeature")(featureFilePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedFeature]
   
-  @JSImport("jest-cucumber", "parseFeature")
-  @js.native
-  def parseFeature(featureText: String): ParsedFeature = js.native
-  @JSImport("jest-cucumber", "parseFeature")
-  @js.native
-  def parseFeature(featureText: String, options: Options): ParsedFeature = js.native
+  @scala.inline
+  def loadFeatures(globPattern: String): js.Array[ParsedFeature] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFeatures")(globPattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[ParsedFeature]]
+  @scala.inline
+  def loadFeatures(globPattern: String, options: Options): js.Array[ParsedFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeatures")(globPattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedFeature]]
   
-  @JSImport("jest-cucumber", "setJestCucumberConfiguration")
-  @js.native
-  def setJestCucumberConfiguration(options: Options): Unit = js.native
+  @scala.inline
+  def parseFeature(featureText: String): ParsedFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFeature")(featureText.asInstanceOf[js.Any]).asInstanceOf[ParsedFeature]
+  @scala.inline
+  def parseFeature(featureText: String, options: Options): ParsedFeature = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFeature")(featureText.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedFeature]
+  
+  @scala.inline
+  def setJestCucumberConfiguration(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setJestCucumberConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

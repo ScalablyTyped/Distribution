@@ -11,7 +11,6 @@ import typings.fineUploader.mod.UIOptions
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3 {
@@ -144,8 +143,9 @@ object s3 {
   
   type OnCredentialsExpired = js.Function0[PromiseOptions]
   
-  @js.native
-  trait S3ChunkingOptions extends ChunkingOptions {
+  trait S3ChunkingOptions
+    extends StObject
+       with ChunkingOptions {
     
     /**
       * The maximum size of each part, in bytes
@@ -153,7 +153,7 @@ object s3 {
       * @default `5242880`
       */
     @JSName("partSize")
-    var partSize_S3ChunkingOptions: js.UndefOr[Double] = js.native
+    var partSize_S3ChunkingOptions: js.UndefOr[Double] = js.undefined
   }
   object S3ChunkingOptions {
     
@@ -174,51 +174,52 @@ object s3 {
     }
   }
   
-  @js.native
-  trait S3CoreOptions extends CoreOptions {
+  trait S3CoreOptions
+    extends StObject
+       with CoreOptions {
     
     /**
       * chunking options
       */
     @JSName("chunking")
-    var chunking_S3CoreOptions: js.UndefOr[S3ChunkingOptions] = js.native
+    var chunking_S3CoreOptions: js.UndefOr[S3ChunkingOptions] = js.undefined
     
     /**
       * cors options
       */
     @JSName("cors")
-    var cors_S3CoreOptions: js.UndefOr[S3CorsOptions] = js.native
+    var cors_S3CoreOptions: js.UndefOr[S3CorsOptions] = js.undefined
     
     /**
       * credentials
       */
-    var credentials: js.UndefOr[S3CredentialsOptions] = js.native
+    var credentials: js.UndefOr[S3CredentialsOptions] = js.undefined
     
     /**
       * iframeSupport options
       */
-    var iframeSupport: js.UndefOr[S3iFrameSupportOptions] = js.native
+    var iframeSupport: js.UndefOr[S3iFrameSupportOptions] = js.undefined
     
     /**
       * objectProperties
       */
-    var objectProperties: js.UndefOr[S3ObjectPropertyOptions] = js.native
+    var objectProperties: js.UndefOr[S3ObjectPropertyOptions] = js.undefined
     
     /**
       * request options
       */
     @JSName("request")
-    var request_S3CoreOptions: js.UndefOr[S3RequestOptions] = js.native
+    var request_S3CoreOptions: js.UndefOr[S3RequestOptions] = js.undefined
     
     /**
       * signature options
       */
-    var signature: js.UndefOr[S3SignatureOptions] = js.native
+    var signature: js.UndefOr[S3SignatureOptions] = js.undefined
     
     /**
       * upload success options
       */
-    var uploadSuccess: js.UndefOr[S3UploadSuccessOptions] = js.native
+    var uploadSuccess: js.UndefOr[S3UploadSuccessOptions] = js.undefined
   }
   object S3CoreOptions {
     
@@ -281,8 +282,9 @@ object s3 {
     }
   }
   
-  @js.native
-  trait S3CorsOptions extends CorsOptions
+  trait S3CorsOptions
+    extends StObject
+       with CorsOptions
   object S3CorsOptions {
     
     @scala.inline
@@ -292,7 +294,6 @@ object s3 {
     }
   }
   
-  @js.native
   trait S3CredentialsOptions extends StObject {
     
     /**
@@ -300,28 +301,28 @@ object s3 {
       *
       * @default `null`
       */
-    var accessKey: js.UndefOr[String] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
     
     /**
       * Expiration date for temporary credentials. May be an ISO 8601 String or a `Date` object.
       *
       * @default `null`
       */
-    var expiration: js.UndefOr[String | Date] = js.native
+    var expiration: js.UndefOr[String | Date] = js.undefined
     
     /**
       * Temporary secret AWS key
       *
       * @default `null`
       */
-    var secretKey: js.UndefOr[String] = js.native
+    var secretKey: js.UndefOr[String] = js.undefined
     
     /**
       * Session token associated with the temporary credentials
       *
       * @default `null`
       */
-    var sessionToken: js.UndefOr[String] = js.native
+    var sessionToken: js.UndefOr[String] = js.undefined
   }
   object S3CredentialsOptions {
     
@@ -362,8 +363,9 @@ object s3 {
   
   type S3CustomHeaderFunction = js.Function1[/* id */ Double, Unit]
   
-  @js.native
-  trait S3Events extends CoreEvents {
+  trait S3Events
+    extends StObject
+       with CoreEvents {
     
     /**
       * Called before a request is sent to S3 if the temporary credentials have expired.
@@ -371,7 +373,7 @@ object s3 {
       * You must return a promise. If your attempt to refresh the temporary credentials is successful, you must fulfill the promise via the success method, passing the new credentials object.
       * Otherwise, call failure with a descriptive reason.
       */
-    var onCredentialsExpired: js.UndefOr[OnCredentialsExpired] = js.native
+    var onCredentialsExpired: js.UndefOr[OnCredentialsExpired] = js.undefined
   }
   object S3Events {
     
@@ -392,7 +394,6 @@ object s3 {
     }
   }
   
-  @js.native
   trait S3FailedUploadTextDisplayOptions extends StObject {
     
     /**
@@ -400,7 +401,7 @@ object s3 {
       *
       * @default `'custom'`
       */
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
   }
   object S3FailedUploadTextDisplayOptions {
     
@@ -421,7 +422,6 @@ object s3 {
     }
   }
   
-  @js.native
   trait S3ObjectPropertyOptions extends StObject {
     
     /**
@@ -429,7 +429,7 @@ object s3 {
       *
       * @default `'private'`
       */
-    var acl: js.UndefOr[String] = js.native
+    var acl: js.UndefOr[String] = js.undefined
     
     /**
       * Describes the name of the bucket used to house the file in S3.
@@ -442,7 +442,7 @@ object s3 {
       *
       * @default `(assumes the bucket can be determined by parsing the endpoint string)`
       */
-    var bucket: js.UndefOr[String | BucketFunction] = js.native
+    var bucket: js.UndefOr[String | BucketFunction] = js.undefined
     
     /**
       * The hostname of your S3 bucket.
@@ -455,7 +455,7 @@ object s3 {
       *
       * @default `(uses the request endpoint to determine the hostname)`
       */
-    var host: js.UndefOr[String | HostFunction] = js.native
+    var host: js.UndefOr[String | HostFunction] = js.undefined
     
     /**
       * Describes the object key used to identify the file in your S3 bucket.
@@ -467,28 +467,28 @@ object s3 {
       *
       * @default `'uuid'`
       */
-    var key: js.UndefOr[String | KeyFunction] = js.native
+    var key: js.UndefOr[String | KeyFunction] = js.undefined
     
     /**
       * Set this to true if you would like to use the reduced redundancy storage class for all objects uploaded to S3
       *
       * @default `false`
       */
-    var reducedRedundancy: js.UndefOr[Boolean] = js.native
+    var reducedRedundancy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Version 4 signatures only: The S3 region identifier for the target bucket
       *
       * @default `'us-east-1'`
       */
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
     /**
       * Set this to true if you would like all uploaded files to be encrypted by AWS
       *
       * @default `false`
       */
-    var serverSideEncryption: js.UndefOr[Boolean] = js.native
+    var serverSideEncryption: js.UndefOr[Boolean] = js.undefined
   }
   object S3ObjectPropertyOptions {
     
@@ -554,22 +554,23 @@ object s3 {
     }
   }
   
-  @js.native
-  trait S3RequestOptions extends RequestOptions {
+  trait S3RequestOptions
+    extends StObject
+       with RequestOptions {
     
     /**
       * Your AWS public key. NOT YOUR SECRET KEY. Ignored if `credentials` have been set
       *
       * @default `null`
       */
-    var accessKey: js.UndefOr[String] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
     
     /**
       * Number of milliseconds to add to the `x-amz-date` header and the policy expiration date to account for clock drift on the browser/client machine
       *
       * @default `0`
       */
-    var clockDrift: js.UndefOr[Double] = js.native
+    var clockDrift: js.UndefOr[Double] = js.undefined
   }
   object S3RequestOptions {
     
@@ -596,13 +597,14 @@ object s3 {
     }
   }
   
-  @js.native
-  trait S3ResumableFileObject extends ResumableFileObject {
+  trait S3ResumableFileObject
+    extends StObject
+       with ResumableFileObject {
     
     /**
       * The associated object's S3 key
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object S3ResumableFileObject {
     
@@ -623,7 +625,6 @@ object s3 {
     }
   }
   
-  @js.native
   trait S3SignatureOptions extends StObject {
     
     /**
@@ -633,21 +634,21 @@ object s3 {
       *
       * @default `{}`
       */
-    var customHeaders: js.UndefOr[js.Any | S3CustomHeaderFunction] = js.native
+    var customHeaders: js.UndefOr[js.Any | S3CustomHeaderFunction] = js.undefined
     
     /**
       * The endpoint that Fine Uploader can use to send policy documents (HTML form uploads) or other strings to sign (REST requests) before sending requests off to S3
       *
       * @default `null`
       */
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
     /**
       * The AWS/S3 signature version to use. Currently supported values are `2` and `4`. Directly related to `objectProperties.region`
       *
       * @default `2`
       */
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object S3SignatureOptions {
     
@@ -685,57 +686,58 @@ object s3 {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.fineUploader.coreMod.CoreOptions because Already inherited
-  - typings.fineUploader.s3Mod.s3.S3CoreOptions because var conflicts: autoUpload, blobs, button, callbacks, camera, chunking, cors, debug, deleteFile, disableCancelForFormUploads, extraButtons, form, formatFileName, maxConnections, messages, multiple, paste, request, resume, scaling, session, text, validation, warnBeforeUnload, workarounds. Inlined credentials, iframeSupport, objectProperties, signature, uploadSuccess */ @js.native
-  trait S3UIOptions extends UIOptions {
+  - typings.fineUploader.s3Mod.s3.S3CoreOptions because var conflicts: autoUpload, blobs, button, callbacks, camera, chunking, cors, debug, deleteFile, disableCancelForFormUploads, extraButtons, form, formatFileName, maxConnections, messages, multiple, paste, request, resume, scaling, session, text, validation, warnBeforeUnload, workarounds. Inlined credentials, iframeSupport, objectProperties, signature, uploadSuccess */ trait S3UIOptions
+    extends StObject
+       with UIOptions {
     
     /**
       * chunking options
       */
     @JSName("chunking")
-    var chunking_S3UIOptions: js.UndefOr[S3ChunkingOptions] = js.native
+    var chunking_S3UIOptions: js.UndefOr[S3ChunkingOptions] = js.undefined
     
     /**
       * cors options
       */
     @JSName("cors")
-    var cors_S3UIOptions: js.UndefOr[S3CorsOptions] = js.native
+    var cors_S3UIOptions: js.UndefOr[S3CorsOptions] = js.undefined
     
     /**
       * credentials
       */
-    var credentials: js.UndefOr[S3CredentialsOptions] = js.native
+    var credentials: js.UndefOr[S3CredentialsOptions] = js.undefined
     
     /**
       * failedUploadText options
       */
     @JSName("failedUploadTextDisplay")
-    var failedUploadTextDisplay_S3UIOptions: js.UndefOr[S3FailedUploadTextDisplayOptions] = js.native
+    var failedUploadTextDisplay_S3UIOptions: js.UndefOr[S3FailedUploadTextDisplayOptions] = js.undefined
     
     /**
       * iframeSupport options
       */
-    var iframeSupport: js.UndefOr[S3iFrameSupportOptions] = js.native
+    var iframeSupport: js.UndefOr[S3iFrameSupportOptions] = js.undefined
     
     /**
       * objectProperties
       */
-    var objectProperties: js.UndefOr[S3ObjectPropertyOptions] = js.native
+    var objectProperties: js.UndefOr[S3ObjectPropertyOptions] = js.undefined
     
     /**
       * request options
       */
     @JSName("request")
-    var request_S3UIOptions: js.UndefOr[S3RequestOptions] = js.native
+    var request_S3UIOptions: js.UndefOr[S3RequestOptions] = js.undefined
     
     /**
       * signature options
       */
-    var signature: js.UndefOr[S3SignatureOptions] = js.native
+    var signature: js.UndefOr[S3SignatureOptions] = js.undefined
     
     /**
       * upload success options
       */
-    var uploadSuccess: js.UndefOr[S3UploadSuccessOptions] = js.native
+    var uploadSuccess: js.UndefOr[S3UploadSuccessOptions] = js.undefined
   }
   object S3UIOptions {
     
@@ -804,7 +806,6 @@ object s3 {
     }
   }
   
-  @js.native
   trait S3UploadSuccessOptions extends StObject {
     
     /**
@@ -812,21 +813,21 @@ object s3 {
       *
       * @default `{}`
       */
-    var customHeaders: js.UndefOr[js.Any] = js.native
+    var customHeaders: js.UndefOr[js.Any] = js.undefined
     
     /**
       * An endpoint that Fine Uploader should POST to when a file has been successfully uploaded to S3
       *
       * @default `null`
       */
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
     /**
       * The request method (i.e. POST/PUT)
       *
       * @default `POST`
       */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /**
       * Any additional parameters to attach to upload success file requests.
@@ -836,7 +837,7 @@ object s3 {
       *
       * @default `{}`
       */
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
   }
   object S3UploadSuccessOptions {
     
@@ -875,7 +876,6 @@ object s3 {
     }
   }
   
-  @js.native
   trait S3iFrameSupportOptions extends StObject {
     
     /**
@@ -884,7 +884,7 @@ object s3 {
       *
       * @default `null`
       */
-    var localBlankPagePath: js.UndefOr[String] = js.native
+    var localBlankPagePath: js.UndefOr[String] = js.undefined
   }
   object S3iFrameSupportOptions {
     

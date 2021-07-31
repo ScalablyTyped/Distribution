@@ -2,16 +2,14 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupPolicyDescription extends StObject {
   
   /**
     * Describes the file system's backup policy, indicating whether automatic backups are turned on or off..
     */
-  var BackupPolicy: js.UndefOr[typings.awsSdk.efsMod.BackupPolicy] = js.native
+  var BackupPolicy: js.UndefOr[typings.awsSdk.efsMod.BackupPolicy] = js.undefined
 }
 object BackupPolicyDescription {
   

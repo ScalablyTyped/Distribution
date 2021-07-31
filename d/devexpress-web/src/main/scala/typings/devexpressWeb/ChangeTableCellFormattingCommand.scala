@@ -2,25 +2,23 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the cell formatting of the selected table elements.
   */
-@js.native
 trait ChangeTableCellFormattingCommand extends StObject {
   
   /**
     * Executes the ChangeTableCellFormattingCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings A TableFormattingSettings object specifying cell formatting of the selected table elements.
     */
-  def execute(settings: TableCellFormattingSettings): Boolean = js.native
+  def execute(settings: TableCellFormattingSettings): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[TableCellFormattingSettings] = js.native
+  def getState(): CommandState[TableCellFormattingSettings]
 }
 object ChangeTableCellFormattingCommand {
   

@@ -2,7 +2,6 @@ package typings.microsoftAjax.global.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initializes a new instance of the EventArgs class.
   */
 class EventArgs ()
-  extends typings.microsoftAjax.Sys.EventArgs
+  extends StObject
+     with typings.microsoftAjax.Sys.EventArgs {
+  
+  /**
+    * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
+    */
+  /* CompleteClass */
+  var Empty: typings.microsoftAjax.Sys.EventArgs = js.native
+}
 object EventArgs {
   
   @JSGlobal("Sys.EventArgs")

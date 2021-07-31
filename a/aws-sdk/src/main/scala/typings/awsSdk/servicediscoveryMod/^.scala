@@ -2,7 +2,6 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/servicediscovery", JSImport.Namespace)
@@ -10,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ^ () extends ServiceDiscovery {
+class ^ ()
+  extends StObject
+     with ServiceDiscovery {
   def this(options: ClientConfiguration) = this()
 }

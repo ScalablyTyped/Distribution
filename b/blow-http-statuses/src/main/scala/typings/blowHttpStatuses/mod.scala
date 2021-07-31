@@ -2,10 +2,13 @@ package typings.blowHttpStatuses
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("blow-http-statuses", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object Codes {
     
@@ -587,31 +590,25 @@ object mod {
     val `511`: String = js.native
   }
   
-  @JSImport("blow-http-statuses", "isEmpty")
-  @js.native
-  def isEmpty(code: js.Any): Boolean = js.native
+  @scala.inline
+  def isEmpty(code: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("blow-http-statuses", "isRedirect")
-  @js.native
-  def isRedirect(code: js.Any): Boolean = js.native
+  @scala.inline
+  def isRedirect(code: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("blow-http-statuses", "isRetry")
-  @js.native
-  def isRetry(code: js.Any): Boolean = js.native
+  @scala.inline
+  def isRetry(code: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRetry")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("blow-http-statuses", "status")
-  @js.native
-  def status(codeOrLiteral: String): IStatus = js.native
-  @JSImport("blow-http-statuses", "status")
-  @js.native
-  def status(codeOrLiteral: Double): IStatus = js.native
+  @scala.inline
+  def status(codeOrLiteral: String): IStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("status")(codeOrLiteral.asInstanceOf[js.Any]).asInstanceOf[IStatus]
+  @scala.inline
+  def status(codeOrLiteral: Double): IStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("status")(codeOrLiteral.asInstanceOf[js.Any]).asInstanceOf[IStatus]
   
-  @js.native
   trait IStatus extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var message: String = js.native
+    var message: String
   }
   object IStatus {
     

@@ -3,22 +3,22 @@ package typings.awsSdkClientSqsNode
 import typings.awsSdkClientSqsNode.sendMessageExceptionsUnionMod.SendMessageExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidMessageContentsMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidMessageContentsDetails> * / any */ @js.native
-  trait InvalidMessageContents extends SendMessageExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidMessageContentsDetails> * / any */ trait InvalidMessageContents
+    extends StObject
+       with SendMessageExceptionsUnion {
     
-    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidMessageContents = js.native
+    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidMessageContents
   }
   object InvalidMessageContents {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidMessageContents): InvalidMessageContents = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidMessageContents = {
+      val __obj = js.Dynamic.literal(name = "InvalidMessageContents")
       __obj.asInstanceOf[InvalidMessageContents]
     }
     
@@ -30,6 +30,5 @@ object typesInvalidMessageContentsMod {
     }
   }
   
-  @js.native
   trait InvalidMessageContentsDetails extends StObject
 }

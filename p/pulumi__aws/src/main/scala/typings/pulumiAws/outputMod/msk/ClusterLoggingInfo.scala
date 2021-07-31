@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.msk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterLoggingInfo extends StObject {
   
   /**
     * Configuration block for Broker Logs settings for logging info. See below.
     */
-  var brokerLogs: ClusterLoggingInfoBrokerLogs = js.native
+  var brokerLogs: ClusterLoggingInfoBrokerLogs
 }
 object ClusterLoggingInfo {
   

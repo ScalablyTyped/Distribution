@@ -5,7 +5,6 @@ import typings.couchbase.mod.SearchQuery.HighlightStyle
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("couchbase", "SearchQuery")
@@ -73,6 +72,10 @@ abstract class SearchQuery () extends StObject {
   def timeout(timeout: Double): this.type = js.native
 }
 object SearchQuery {
+  
+  @JSImport("couchbase", "SearchQuery")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("couchbase", "SearchQuery.BooleanFieldQuery")
   @js.native
@@ -158,14 +161,16 @@ object SearchQuery {
   object Consistency extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Consistency with Double] = js.native
+    def apply(value: Double): js.UndefOr[Consistency & Double] = js.native
     
     /**
       * This is the default (for single-statement requests).
       */
     @js.native
-    sealed trait NOT_BOUNDED extends Consistency
-    /* 0 */ val NOT_BOUNDED: typings.couchbase.mod.SearchQuery.Consistency.NOT_BOUNDED with Double = js.native
+    sealed trait NOT_BOUNDED
+      extends StObject
+         with Consistency
+    /* 0 */ val NOT_BOUNDED: typings.couchbase.mod.SearchQuery.Consistency.NOT_BOUNDED & Double = js.native
   }
   
   @JSImport("couchbase", "SearchQuery.DateRangeQuery")
@@ -288,28 +293,34 @@ object SearchQuery {
   object HighlightStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[HighlightStyle with Double] = js.native
+    def apply(value: Double): js.UndefOr[HighlightStyle & Double] = js.native
     
     /**
       * This causes hits to be highlighted with ANSI character codes.
       */
     @js.native
-    sealed trait ANSI extends HighlightStyle
-    /* 2 */ val ANSI: typings.couchbase.mod.SearchQuery.HighlightStyle.ANSI with Double = js.native
+    sealed trait ANSI
+      extends StObject
+         with HighlightStyle
+    /* 2 */ val ANSI: typings.couchbase.mod.SearchQuery.HighlightStyle.ANSI & Double = js.native
     
     /**
       * This causes hits to be highlighted using the default style.
       */
     @js.native
-    sealed trait DEFAULT extends HighlightStyle
-    /* 0 */ val DEFAULT: typings.couchbase.mod.SearchQuery.HighlightStyle.DEFAULT with Double = js.native
+    sealed trait DEFAULT
+      extends StObject
+         with HighlightStyle
+    /* 0 */ val DEFAULT: typings.couchbase.mod.SearchQuery.HighlightStyle.DEFAULT & Double = js.native
     
     /**
       * This causes hits to be highlighted using HTML tags.
       */
     @js.native
-    sealed trait HTML extends HighlightStyle
-    /* 1 */ val HTML: typings.couchbase.mod.SearchQuery.HighlightStyle.HTML with Double = js.native
+    sealed trait HTML
+      extends StObject
+         with HighlightStyle
+    /* 1 */ val HTML: typings.couchbase.mod.SearchQuery.HighlightStyle.HTML & Double = js.native
   }
   
   @JSImport("couchbase", "SearchQuery.MatchAllQuery")
@@ -560,70 +571,61 @@ object SearchQuery {
     * Creates a compound BooleanQuery composed of several other query objects.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.boolean")
-  @js.native
-  def boolean(): BooleanQuery = js.native
+  @scala.inline
+  def boolean(): BooleanQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")().asInstanceOf[BooleanQuery]
   
   /**
     * Creates a BooleanFieldQuery for searching boolean fields in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.booleanField")
-  @js.native
-  def booleanField(`val`: Boolean): BooleanFieldQuery = js.native
+  @scala.inline
+  def booleanField(`val`: Boolean): BooleanFieldQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("booleanField")(`val`.asInstanceOf[js.Any]).asInstanceOf[BooleanFieldQuery]
   
   /**
     * Creates a query for matches all of a list of subqueries in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.conjuncts")
-  @js.native
-  def conjuncts(queries: Query*): ConjunctionQuery = js.native
+  @scala.inline
+  def conjuncts(queries: Query*): ConjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("conjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[ConjunctionQuery]
   /**
     * Creates a query for matches all of a list of subqueries in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.conjuncts")
-  @js.native
-  def conjuncts(queries: js.Array[Query]): ConjunctionQuery = js.native
+  @scala.inline
+  def conjuncts(queries: js.Array[Query]): ConjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("conjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[ConjunctionQuery]
   
   /**
     * Creates a search query for matching date ranges in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.dateRange")
-  @js.native
-  def dateRange(): DateRangeQuery = js.native
+  @scala.inline
+  def dateRange(): DateRangeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("dateRange")().asInstanceOf[DateRangeQuery]
   
   /**
     * Creates a query for matches any of a list of subqueries in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.disjuncts")
-  @js.native
-  def disjuncts(queries: Query*): DisjunctionQuery = js.native
+  @scala.inline
+  def disjuncts(queries: Query*): DisjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("disjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[DisjunctionQuery]
   /**
     * Creates a query for matches any of a list of subqueries in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.disjuncts")
-  @js.native
-  def disjuncts(queries: js.Array[Query]): DisjunctionQuery = js.native
+  @scala.inline
+  def disjuncts(queries: js.Array[Query]): DisjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("disjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[DisjunctionQuery]
   
   /**
     * Creates a query which allows you to match a list of document IDs in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.docIds")
-  @js.native
-  def docIds(ids: String*): DocIdQuery = js.native
+  @scala.inline
+  def docIds(ids: String*): DocIdQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("docIds")(ids.asInstanceOf[js.Any]).asInstanceOf[DocIdQuery]
   /**
     * Creates a query which allows you to match a list of document IDs in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.docIds")
-  @js.native
-  def docIds(ids: js.Array[String]): DocIdQuery = js.native
+  @scala.inline
+  def docIds(ids: js.Array[String]): DocIdQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("docIds")(ids.asInstanceOf[js.Any]).asInstanceOf[DocIdQuery]
   
   /**
     * Creates a geographical bounding-box based query.
@@ -633,65 +635,73 @@ object SearchQuery {
     * @param br_lon Bottom-right longitude.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.geoBoundingBoxQuery")
-  @js.native
-  def geoBoundingBoxQuery(tl_lat: Double, tl_lon: Double, br_lat: Double, br_lon: Double): GeoBoundingBoxQuery_ = js.native
+  @scala.inline
+  def geoBoundingBoxQuery(tl_lat: Double, tl_lon: Double, br_lat: Double, br_lon: Double): GeoBoundingBoxQuery_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoBoundingBoxQuery")(tl_lat.asInstanceOf[js.Any], tl_lon.asInstanceOf[js.Any], br_lat.asInstanceOf[js.Any], br_lon.asInstanceOf[js.Any])).asInstanceOf[GeoBoundingBoxQuery_]
   
   /**
     * Creates a geographical distance based query.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.geoDistanceQuery")
-  @js.native
-  def geoDistanceQuery(): GeoDistanceQuery_ = js.native
+  @scala.inline
+  def geoDistanceQuery(): GeoDistanceQuery_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoDistanceQuery")().asInstanceOf[GeoDistanceQuery_]
+  
+  /**
+    * Creates a search query for matching text.
+    */
+  /* static member */
+  @scala.inline
+  def `match`(`match`: String): MatchQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(`match`.asInstanceOf[js.Any]).asInstanceOf[MatchQuery]
   
   /**
     * Creates a search query which matches anything.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.matchAll")
-  @js.native
-  def matchAll(): MatchAllQuery = js.native
+  @scala.inline
+  def matchAll(): MatchAllQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("matchAll")().asInstanceOf[MatchAllQuery]
   
   /**
     * Creates a search query which matches nothing.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.matchNone")
-  @js.native
-  def matchNone(): MatchAllQuery = js.native
+  @scala.inline
+  def matchNone(): MatchAllQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("matchNone")().asInstanceOf[MatchAllQuery]
   
   /**
     * Creates a search query for matching phrases in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.matchPhrase")
-  @js.native
-  def matchPhrase(phrase: String): MatchPhraseQuery = js.native
+  @scala.inline
+  def matchPhrase(phrase: String): MatchPhraseQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("matchPhrase")(phrase.asInstanceOf[js.Any]).asInstanceOf[MatchPhraseQuery]
+  
+  /**
+    * Creates a new search query from an index name and search query definition.
+    * @param indexName The FTS index to search in.
+    * @param query The body of the FTS query.
+    */
+  /* static member */
+  @scala.inline
+  def `new`(indexName: String, query: Query): SearchQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("new")(indexName.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[SearchQuery]
   
   /**
     * Creates a search query for matching numeric ranges in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.numericRange")
-  @js.native
-  def numericRange(): NumericRangeQuery = js.native
+  @scala.inline
+  def numericRange(): NumericRangeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("numericRange")().asInstanceOf[NumericRangeQuery]
   
   /**
     * Creates a search query for a prefix in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.phrase")
-  @js.native
-  def phrase(terms: js.Array[String]): PhraseQuery = js.native
+  @scala.inline
+  def phrase(terms: js.Array[String]): PhraseQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("phrase")(terms.asInstanceOf[js.Any]).asInstanceOf[PhraseQuery]
   
   /**
     * Creates a search query for a prefix in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.prefix")
-  @js.native
-  def prefix(prefix: String): PrefixQuery = js.native
+  @scala.inline
+  def prefix(prefix: String): PrefixQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[PrefixQuery]
   
   /**
     * Creates a query for matches any of a list of subqueries in an index.
@@ -700,57 +710,34 @@ object SearchQuery {
     * Creates a search query for matching string.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.queryString")
-  @js.native
-  def queryString(query: String): QueryStringQuery = js.native
+  @scala.inline
+  def queryString(query: String): QueryStringQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("queryString")(query.asInstanceOf[js.Any]).asInstanceOf[QueryStringQuery]
   
   /**
     * Creates a search query for matching against a regexp query in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.regexp")
-  @js.native
-  def regexp(regexp: String): RegexpQuery = js.native
+  @scala.inline
+  def regexp(regexp: String): RegexpQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(regexp.asInstanceOf[js.Any]).asInstanceOf[RegexpQuery]
   
   /**
     * Creates a search query for searching terms in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.term")
-  @js.native
-  def term(term: String): TermQuery = js.native
+  @scala.inline
+  def term(term: String): TermQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("term")(term.asInstanceOf[js.Any]).asInstanceOf[TermQuery]
   
   /**
     * Creates a search query for matching term ranges in the index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.termRange")
-  @js.native
-  def termRange(): TermRangeQuery = js.native
+  @scala.inline
+  def termRange(): TermRangeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("termRange")().asInstanceOf[TermRangeQuery]
   
   /**
     * Creates a search query for matching a string with wildcards in an index.
     */
   /* static member */
-  @JSImport("couchbase", "SearchQuery.wildcard")
-  @js.native
-  def wildcard(wildcard: String): WildcardQuery = js.native
-  
-  /**
-    * Creates a search query for matching text.
-    */
-  /* static member */
-  @JSImport("couchbase", "SearchQuery.match")
-  @js.native
-  def `match`(`match`: String): MatchQuery = js.native
-  
-  /**
-    * Creates a new search query from an index name and search query definition.
-    * @param indexName The FTS index to search in.
-    * @param query The body of the FTS query.
-    */
-  /* static member */
-  @JSImport("couchbase", "SearchQuery.new")
-  @js.native
-  def `new`(indexName: String, query: Query): SearchQuery = js.native
+  @scala.inline
+  def wildcard(wildcard: String): WildcardQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("wildcard")(wildcard.asInstanceOf[js.Any]).asInstanceOf[WildcardQuery]
 }

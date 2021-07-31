@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamedStyleSuggestionState extends StObject {
   
   /** The named style type that this suggestion state corresponds to. This field is provided as a convenience for matching the NamedStyleSuggestionState with its corresponding NamedStyle. */
-  var namedStyleType: js.UndefOr[String] = js.native
+  var namedStyleType: js.UndefOr[String] = js.undefined
   
   /** A mask that indicates which of the fields in paragraph style have been changed in this suggestion. */
-  var paragraphStyleSuggestionState: js.UndefOr[ParagraphStyleSuggestionState] = js.native
+  var paragraphStyleSuggestionState: js.UndefOr[ParagraphStyleSuggestionState] = js.undefined
   
   /** A mask that indicates which of the fields in text style have been changed in this suggestion. */
-  var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.native
+  var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.undefined
 }
 object NamedStyleSuggestionState {
   

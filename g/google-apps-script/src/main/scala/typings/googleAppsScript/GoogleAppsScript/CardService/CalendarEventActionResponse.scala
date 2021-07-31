@@ -2,16 +2,14 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a response that makes changes to the calendar event that the user is currently editing in reaction to an action taken in the UI, such as a button click.
   */
-@js.native
 trait CalendarEventActionResponse extends StObject {
   
-  def printJson(): String = js.native
+  def printJson(): String
 }
 object CalendarEventActionResponse {
   

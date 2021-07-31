@@ -2,36 +2,34 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInputDeviceThumbnailResponse extends StObject {
   
   /**
     * The binary data for the thumbnail that the Link device has most recently sent to MediaLive.
     */
-  var Body: js.UndefOr[InputDeviceThumbnail] = js.native
+  var Body: js.UndefOr[InputDeviceThumbnail] = js.undefined
   
   /**
     * The length of the content.
     */
-  var ContentLength: js.UndefOr[long] = js.native
+  var ContentLength: js.UndefOr[long] = js.undefined
   
   /**
     * Specifies the media type of the thumbnail.
     */
-  var ContentType: js.UndefOr[typings.awsSdk.medialiveMod.ContentType] = js.native
+  var ContentType: js.UndefOr[typings.awsSdk.medialiveMod.ContentType] = js.undefined
   
   /**
     * The unique, cacheable version of this thumbnail.
     */
-  var ETag: js.UndefOr[string] = js.native
+  var ETag: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time the thumbnail was last updated at the device.
     */
-  var LastModified: js.UndefOr[timestamp] = js.native
+  var LastModified: js.UndefOr[timestamp] = js.undefined
 }
 object DescribeInputDeviceThumbnailResponse {
   

@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.panelHeaderMod.PanelHeader.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelHeaderMod {
@@ -24,14 +23,13 @@ object panelHeaderMod {
   
   object PanelHeader {
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * The text that will be rendered as the title of the `Panel`. Will be
         * rendered in an `<h2>` tag.
         */
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
     }
     object Props {
       

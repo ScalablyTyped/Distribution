@@ -12,7 +12,6 @@ import typings.reaptcha.reaptchaStrings.light
 import typings.reaptcha.reaptchaStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -34,42 +33,41 @@ object mod {
     def reset(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait ReaptchaProps extends StObject {
     
-    var badge: js.UndefOr[bottomright | bottomleft | `inline`] = js.native
+    var badge: js.UndefOr[bottomright | bottomleft | `inline`] = js.undefined
     
-    var children: js.UndefOr[js.Function1[/* renderProps */ RenderProps, ReactNode]] = js.native
+    var children: js.UndefOr[js.Function1[/* renderProps */ RenderProps, ReactNode]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var explicit: js.UndefOr[Boolean] = js.native
+    var explicit: js.UndefOr[Boolean] = js.undefined
     
-    var hl: js.UndefOr[String] = js.native
+    var hl: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inject: js.UndefOr[Boolean] = js.native
+    var inject: js.UndefOr[Boolean] = js.undefined
     
-    var isolated: js.UndefOr[Boolean] = js.native
+    var isolated: js.UndefOr[Boolean] = js.undefined
     
-    var onError: js.UndefOr[js.Function0[Unit]] = js.native
+    var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onExpire: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExpire: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onRender: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRender: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def onVerify(response: String): Unit = js.native
+    def onVerify(response: String): Unit
     
-    var sitekey: String = js.native
+    var sitekey: String
     
-    var size: js.UndefOr[compact | normal | invisible] = js.native
+    var size: js.UndefOr[compact | normal | invisible] = js.undefined
     
-    var tabindex: js.UndefOr[Double] = js.native
+    var tabindex: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[light | dark] = js.native
+    var theme: js.UndefOr[light | dark] = js.undefined
   }
   object ReaptchaProps {
     
@@ -180,18 +178,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RenderProps extends StObject {
     
-    def execute(): js.Promise[Unit] = js.native
+    def execute(): js.Promise[Unit]
     
-    def getResponse(): js.Promise[String] = js.native
+    def getResponse(): js.Promise[String]
     
-    var recaptchaComponent: ReactNode = js.native
+    var recaptchaComponent: ReactNode
     
-    def renderExplicitly(): js.Promise[Unit] = js.native
+    def renderExplicitly(): js.Promise[Unit]
     
-    def reset(): js.Promise[Unit] = js.native
+    def reset(): js.Promise[Unit]
   }
   object RenderProps {
     

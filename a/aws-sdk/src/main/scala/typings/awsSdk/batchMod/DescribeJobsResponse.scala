@@ -2,16 +2,14 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobsResponse extends StObject {
   
   /**
     * The list of jobs.
     */
-  var jobs: js.UndefOr[JobDetailList] = js.native
+  var jobs: js.UndefOr[JobDetailList] = js.undefined
 }
 object DescribeJobsResponse {
   

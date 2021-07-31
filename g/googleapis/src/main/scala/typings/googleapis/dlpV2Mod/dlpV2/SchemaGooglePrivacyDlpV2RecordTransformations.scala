@@ -2,26 +2,24 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type of transformation that is applied over structured data such as a
   * table.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2RecordTransformations extends StObject {
   
   /**
     * Transform the record by applying various field transformations.
     */
-  var fieldTransformations: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldTransformation]] = js.native
+  var fieldTransformations: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldTransformation]] = js.undefined
   
   /**
     * Configuration defining which records get suppressed entirely. Records
     * that match any suppression rule are omitted from the output [optional].
     */
-  var recordSuppressions: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2RecordSuppression]] = js.native
+  var recordSuppressions: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2RecordSuppression]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2RecordTransformations {
   

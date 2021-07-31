@@ -2,16 +2,14 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisFirehoseConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the delivery stream.
     */
-  var FirehoseArn: ARN = js.native
+  var FirehoseArn: ARN
 }
 object KinesisFirehoseConfig {
   

@@ -2,20 +2,18 @@ package typings.strongholdPayJs.mod.global.Stronghold
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChargeDropin extends StObject {
   
   /**
     * The amount to charge, specified in the smallest divisible currency unit. For example, number of cents of United States dollar.
     */
-  var amount: Double = js.native
+  var amount: Double
   
-  var externalId: js.UndefOr[String] = js.native
+  var externalId: js.UndefOr[String] = js.undefined
   
-  var paymentSourceId: String = js.native
+  var paymentSourceId: String
 }
 object ChargeDropin {
   

@@ -10,9 +10,9 @@ Module for executing heavy tasks under forked processes in parallel, by providin
 | ------------------ | :-------------: |
 | Full name          | jest-worker |
 | Keywords           | - |
-| # releases         | 37 |
-| # dependents       | 139 |
-| # downloads        | 639393493 |
+| # releases         | 29 |
+| # dependents       | 169 |
+| # downloads        | 800503066 |
 | # stars            | 0 |
 
 ## Links

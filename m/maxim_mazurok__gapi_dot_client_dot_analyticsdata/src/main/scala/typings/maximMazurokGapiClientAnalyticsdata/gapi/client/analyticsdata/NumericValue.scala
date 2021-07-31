@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumericValue extends StObject {
   
   /** Double value */
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
   /** Integer value */
-  var int64Value: js.UndefOr[String] = js.native
+  var int64Value: js.UndefOr[String] = js.undefined
 }
 object NumericValue {
   

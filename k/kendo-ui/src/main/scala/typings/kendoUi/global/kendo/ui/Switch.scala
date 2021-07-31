@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.SwitchOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Switch")
 @js.native
 class Switch protected ()
-  extends typings.kendoUi.kendo.ui.Switch {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Switch {
   def this(element: Element) = this()
   def this(element: Element, options: SwitchOptions) = this()
 }
@@ -21,9 +21,8 @@ object Switch {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Switch.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Switch = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Switch = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Switch]
   
   /* static member */
   @JSGlobal("kendo.ui.Switch.fn")

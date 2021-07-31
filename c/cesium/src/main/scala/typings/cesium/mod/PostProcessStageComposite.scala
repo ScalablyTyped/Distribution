@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PostProcessStageComposite")
@@ -10,34 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class PostProcessStageComposite protected () extends StObject {
   def this(stages: js.Array[PostProcessStage]) = this()
   def this(stages: js.Array[PostProcessStage], inputPreviousStageTexture: Boolean) = this()
-  def this(
-    stages: js.Array[PostProcessStage],
-    inputPreviousStageTexture: js.UndefOr[scala.Nothing],
-    name: String
-  ) = this()
   def this(stages: js.Array[PostProcessStage], inputPreviousStageTexture: Boolean, name: String) = this()
+  def this(stages: js.Array[PostProcessStage], inputPreviousStageTexture: Unit, name: String) = this()
   def this(
     stages: js.Array[PostProcessStage],
-    inputPreviousStageTexture: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    uniforms: js.Object
-  ) = this()
-  def this(
-    stages: js.Array[PostProcessStage],
-    inputPreviousStageTexture: js.UndefOr[scala.Nothing],
+    inputPreviousStageTexture: Boolean,
     name: String,
     uniforms: js.Object
   ) = this()
   def this(
     stages: js.Array[PostProcessStage],
     inputPreviousStageTexture: Boolean,
-    name: js.UndefOr[scala.Nothing],
+    name: Unit,
     uniforms: js.Object
   ) = this()
   def this(
     stages: js.Array[PostProcessStage],
-    inputPreviousStageTexture: Boolean,
+    inputPreviousStageTexture: Unit,
     name: String,
+    uniforms: js.Object
+  ) = this()
+  def this(
+    stages: js.Array[PostProcessStage],
+    inputPreviousStageTexture: Unit,
+    name: Unit,
     uniforms: js.Object
   ) = this()
   
@@ -57,7 +52,7 @@ class PostProcessStageComposite protected () extends StObject {
   
   val ready: Boolean = js.native
   
-  var select: js.Array[_] = js.native
+  var select: js.Array[js.Any] = js.native
   
   var uniforms: js.Object = js.native
 }

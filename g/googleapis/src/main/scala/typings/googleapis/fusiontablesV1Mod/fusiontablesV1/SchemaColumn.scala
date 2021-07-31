@@ -3,52 +3,50 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 import typings.googleapis.anon.ColumnId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the id, name and type of a column in a table.
   */
-@js.native
 trait SchemaColumn extends StObject {
   
   /**
     * Optional identifier of the base column. If present, this column is
     * derived from the specified base column.
     */
-  var baseColumn: js.UndefOr[ColumnId] = js.native
+  var baseColumn: js.UndefOr[ColumnId] = js.undefined
   
   /**
     * Identifier for the column.
     */
-  var columnId: js.UndefOr[Double] = js.native
+  var columnId: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional column description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Optional column predicate. Used to map table to graph data model
     * (subject,predicate,object) See
     * http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/#data-model
     */
-  var graph_predicate: js.UndefOr[String] = js.native
+  var graph_predicate: js.UndefOr[String] = js.undefined
   
   /**
     * Type name: a template for an individual column.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Required name of the column.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Required type of the column.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaColumn {
   

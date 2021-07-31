@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait OpenWebOptions extends StObject
 object OpenWebOptions extends StObject {
   
   @js.native
-  sealed trait initNavigationCache extends OpenWebOptions
+  sealed trait initNavigationCache
+    extends StObject
+       with OpenWebOptions
   
   @js.native
-  sealed trait none extends OpenWebOptions
+  sealed trait none
+    extends StObject
+       with OpenWebOptions
 }

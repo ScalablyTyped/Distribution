@@ -4,25 +4,26 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toggleChildrenMod {
   
-  @JSImport("@react-md/menu/types/ToggleChildren", "ToggleChildren")
+  @JSImport("@react-md/menu/types/ToggleChildren", JSImport.Namespace)
   @js.native
-  def ToggleChildren(hasDropdownIconDisableDropdownIconChildrenVisible: ToggleChildrenProps): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def ToggleChildren(hasDropdownIconDisableDropdownIconChildrenVisible: ToggleChildrenProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleChildren")(hasDropdownIconDisableDropdownIconChildrenVisible.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait ToggleChildrenProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var disableDropdownIcon: Boolean = js.native
+    var disableDropdownIcon: Boolean
     
-    var dropdownIcon: ReactNode = js.native
+    var dropdownIcon: ReactNode
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object ToggleChildrenProps {
     

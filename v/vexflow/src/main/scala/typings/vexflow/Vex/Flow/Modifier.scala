@@ -4,48 +4,46 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Modifier extends StObject {
   
-  def alignSubNotesWithNote(subNotes: js.Array[Note], note: Note): Unit = js.native
+  def alignSubNotesWithNote(subNotes: js.Array[Note], note: Note): Unit
   
   //inconsistent type: void -> Modifier
-  def draw(): Unit = js.native
+  def draw(): Unit
   
-  def getCategory(): String = js.native
+  def getCategory(): String
   
-  def getContext(): IRenderContext = js.native
+  def getContext(): IRenderContext
   
-  def getIndex(): Double = js.native
+  def getIndex(): Double
   
-  def getModifierContext(): ModifierContext = js.native
+  def getModifierContext(): ModifierContext
   
-  def getNote(): Note = js.native
+  def getNote(): Note
   
-  def getPosition(): Position = js.native
+  def getPosition(): Position
   
-  def getWidth(): Double = js.native
+  def getWidth(): Double
   
-  def setContext(context: IRenderContext): Modifier = js.native
+  def setContext(context: IRenderContext): Modifier
   
-  def setIndex(index: Double): Modifier = js.native
+  def setIndex(index: Double): Modifier
   
-  def setModifierContext(c: ModifierContext): Modifier = js.native
+  def setModifierContext(c: ModifierContext): Modifier
   
-  def setNote(note: Note): Modifier = js.native
+  def setNote(note: Note): Modifier
   
-  def setPosition(position: Position): Modifier = js.native
+  def setPosition(position: Position): Modifier
   
-  def setTextLine(line: Double): Modifier = js.native
+  def setTextLine(line: Double): Modifier
   
-  def setWidth(width: Double): Modifier = js.native
+  def setWidth(width: Double): Modifier
   
-  def setXShift(x: Double): Unit = js.native
+  def setXShift(x: Double): Unit
   
-  def setYShift(y: Double): Modifier = js.native
+  def setYShift(y: Double): Modifier
 }
 object Modifier {
   
@@ -81,16 +79,24 @@ object Modifier {
   object Position extends StObject {
     
     @js.native
-    sealed trait ABOVE extends Position
+    sealed trait ABOVE
+      extends StObject
+         with Position
     
     @js.native
-    sealed trait BELOW extends Position
+    sealed trait BELOW
+      extends StObject
+         with Position
     
     @js.native
-    sealed trait LEFT extends Position
+    sealed trait LEFT
+      extends StObject
+         with Position
     
     @js.native
-    sealed trait RIGHT extends Position
+    sealed trait RIGHT
+      extends StObject
+         with Position
   }
   
   @scala.inline

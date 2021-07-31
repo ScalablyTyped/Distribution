@@ -2,29 +2,27 @@ package typings.stripe.mod.paymentMethods
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WalletAddress extends StObject {
   
   /** City/District/Suburb/Town/Village. */
-  var city: String = js.native
+  var city: String
   
   /** 2-letter country code. */
-  var country: String = js.native
+  var country: String
   
   /** Address line 1 (Street address/PO Box/Company name). */
-  var line1: String = js.native
+  var line1: String
   
   /** Address line 2 (Apartment/Suite/Unit/Building). */
-  var line2: String = js.native
+  var line2: String
   
   /** ZIP or postal code. */
-  var postal_code: String = js.native
+  var postal_code: String
   
   /** State/County/Province/Region. */
-  var state: String = js.native
+  var state: String
 }
 object WalletAddress {
   

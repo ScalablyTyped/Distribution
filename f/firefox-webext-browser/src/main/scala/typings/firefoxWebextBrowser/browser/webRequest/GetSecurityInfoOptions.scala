@@ -2,17 +2,15 @@ package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSecurityInfoOptions extends StObject {
   
   /** Include the entire certificate chain. */
-  var certificateChain: js.UndefOr[Boolean] = js.native
+  var certificateChain: js.UndefOr[Boolean] = js.undefined
   
   /** Include raw certificate data for processing by the extension. */
-  var rawDER: js.UndefOr[Boolean] = js.native
+  var rawDER: js.UndefOr[Boolean] = js.undefined
 }
 object GetSecurityInfoOptions {
   

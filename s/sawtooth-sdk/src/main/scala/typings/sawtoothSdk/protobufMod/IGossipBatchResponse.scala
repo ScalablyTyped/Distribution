@@ -3,14 +3,12 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGossipBatchResponse extends StObject {
   
   /** GossipBatchResponse content */
-  var content: js.UndefOr[Uint8Array | Null] = js.native
+  var content: js.UndefOr[Uint8Array | Null] = js.undefined
 }
 object IGossipBatchResponse {
   

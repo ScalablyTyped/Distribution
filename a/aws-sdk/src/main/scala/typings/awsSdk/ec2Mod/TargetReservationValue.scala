@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetReservationValue extends StObject {
   
   /**
     * The total value of the Convertible Reserved Instances that make up the exchange. This is the sum of the list value, remaining upfront price, and additional upfront cost of the exchange.
     */
-  var ReservationValue: js.UndefOr[typings.awsSdk.ec2Mod.ReservationValue] = js.native
+  var ReservationValue: js.UndefOr[typings.awsSdk.ec2Mod.ReservationValue] = js.undefined
   
   /**
     * The configuration of the Convertible Reserved Instances that make up the exchange.
     */
-  var TargetConfiguration: js.UndefOr[typings.awsSdk.ec2Mod.TargetConfiguration] = js.native
+  var TargetConfiguration: js.UndefOr[typings.awsSdk.ec2Mod.TargetConfiguration] = js.undefined
 }
 object TargetReservationValue {
   

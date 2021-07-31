@@ -2,26 +2,24 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyReplicationSubnetGroupMessage extends StObject {
   
   /**
     * A description for the replication instance subnet group.
     */
-  var ReplicationSubnetGroupDescription: js.UndefOr[String] = js.native
+  var ReplicationSubnetGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the replication instance subnet group.
     */
-  var ReplicationSubnetGroupIdentifier: String = js.native
+  var ReplicationSubnetGroupIdentifier: String
   
   /**
     * A list of subnet IDs.
     */
-  var SubnetIds: SubnetIdentifierList = js.native
+  var SubnetIds: SubnetIdentifierList
 }
 object ModifyReplicationSubnetGroupMessage {
   

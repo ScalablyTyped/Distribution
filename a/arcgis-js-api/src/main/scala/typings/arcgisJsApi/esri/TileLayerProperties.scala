@@ -2,14 +2,13 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.arcgisJsApi.esri.ArcGISCachedServiceProperties because var conflicts: copyright. Inlined tileInfo
-- typings.arcgisJsApi.esri.ArcGISMapServiceProperties because var conflicts: fullExtent. Inlined copyright, legendEnabled */ @js.native
-trait TileLayerProperties
-  extends LayerProperties
+- typings.arcgisJsApi.esri.ArcGISMapServiceProperties because var conflicts: fullExtent. Inlined copyright, legendEnabled */ trait TileLayerProperties
+  extends StObject
+     with LayerProperties
      with RefreshableLayerProperties
      with ScaleRangeLayerProperties
      with PortalLayerProperties
@@ -20,49 +19,49 @@ trait TileLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#copyright)
     */
-  var copyright: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the layer will be included in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#legendEnabled)
     */
-  var legendEnabled: js.UndefOr[Boolean] = js.native
+  var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Resampling is enabled by default in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#resampling)
     */
-  var resampling: js.UndefOr[Boolean] = js.native
+  var resampling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The [tiled map service's metadata JSON](https://developers.arcgis.com/rest/services-reference/map-service.htm) exposed by the ArcGIS REST API.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.native
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Contains information about the tiling scheme for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#tileInfo)
     */
-  var tileInfo: js.UndefOr[TileInfoProperties] = js.native
+  var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
   
   /**
     * An array of tile servers used for changing map tiles.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#tileServers)
     */
-  var tileServers: js.UndefOr[js.Array[String]] = js.native
+  var tileServers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The URL of the REST endpoint of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object TileLayerProperties {
   

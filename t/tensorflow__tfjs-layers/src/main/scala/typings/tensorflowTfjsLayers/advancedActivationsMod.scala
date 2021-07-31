@@ -10,7 +10,6 @@ import typings.tensorflowTfjsLayers.topologyMod.Layer
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object advancedActivationsMod {
@@ -168,13 +167,14 @@ object advancedActivationsMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ELULayerArgs extends LayerArgs {
+  trait ELULayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Float `>= 0`. Negative slope coefficient. Defaults to `1.0`.
       */
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
   }
   object ELULayerArgs {
     
@@ -195,13 +195,14 @@ object advancedActivationsMod {
     }
   }
   
-  @js.native
-  trait LeakyReLULayerArgs extends LayerArgs {
+  trait LeakyReLULayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Float `>= 0`. Negative slope coefficient. Defaults to `0.3`.
       */
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
   }
   object LeakyReLULayerArgs {
     
@@ -222,23 +223,24 @@ object advancedActivationsMod {
     }
   }
   
-  @js.native
-  trait PReLULayerArgs extends LayerArgs {
+  trait PReLULayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Constraint for the learnable alpha.
       */
-    var alphaConstraint: js.UndefOr[Constraint] = js.native
+    var alphaConstraint: js.UndefOr[Constraint] = js.undefined
     
     /**
       * Initializer for the learnable alpha.
       */
-    var alphaInitializer: js.UndefOr[Initializer | InitializerIdentifier] = js.native
+    var alphaInitializer: js.UndefOr[Initializer | InitializerIdentifier] = js.undefined
     
     /**
       * Regularizer for the learnable alpha.
       */
-    var alphaRegularizer: js.UndefOr[Regularizer] = js.native
+    var alphaRegularizer: js.UndefOr[Regularizer] = js.undefined
     
     /**
       * The axes along which to share learnable parameters for the activation
@@ -248,7 +250,7 @@ object advancedActivationsMod {
       * each filter channels has only one set of parameters, set
       * `shared_axes: [1, 2]`.
       */
-    var sharedAxes: js.UndefOr[Double | js.Array[Double]] = js.native
+    var sharedAxes: js.UndefOr[Double | js.Array[Double]] = js.undefined
   }
   object PReLULayerArgs {
     
@@ -290,13 +292,14 @@ object advancedActivationsMod {
     }
   }
   
-  @js.native
-  trait ReLULayerArgs extends LayerArgs {
+  trait ReLULayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Float, the maximum output value.
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
   }
   object ReLULayerArgs {
     
@@ -317,14 +320,15 @@ object advancedActivationsMod {
     }
   }
   
-  @js.native
-  trait SoftmaxLayerArgs extends LayerArgs {
+  trait SoftmaxLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Integer, axis along which the softmax normalization is applied.
       * Defaults to `-1` (i.e., the last axis).
       */
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
   }
   object SoftmaxLayerArgs {
     
@@ -345,13 +349,14 @@ object advancedActivationsMod {
     }
   }
   
-  @js.native
-  trait ThresholdedReLULayerArgs extends LayerArgs {
+  trait ThresholdedReLULayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Float >= 0. Threshold location of activation.
       */
-    var theta: js.UndefOr[Double] = js.native
+    var theta: js.UndefOr[Double] = js.undefined
   }
   object ThresholdedReLULayerArgs {
     

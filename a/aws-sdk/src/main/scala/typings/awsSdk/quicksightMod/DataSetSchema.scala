@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSetSchema extends StObject {
   
   /**
     * A structure containing the list of column schemas.
     */
-  var ColumnSchemaList: js.UndefOr[typings.awsSdk.quicksightMod.ColumnSchemaList] = js.native
+  var ColumnSchemaList: js.UndefOr[typings.awsSdk.quicksightMod.ColumnSchemaList] = js.undefined
 }
 object DataSetSchema {
   

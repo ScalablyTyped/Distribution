@@ -2,7 +2,6 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,40 +12,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * https://github.com/Project-OSRM/node-osrm/blob/master/docs/api.md#tile
   */
-@js.native
-trait MatchOptions extends Options {
+trait MatchOptions
+  extends StObject
+     with Options {
   
   /**
     * Return annotations for each route leg for duration, nodes, distance, weight, datasources and/or speed.
     * Annotations can be false or true (no/full annotations) or an array of strings with duration, nodes, distance, weight, datasources, speed. (optional, default false)
     */
-  var annotations: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var annotations: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   
   /**
     * Returned route geometry format (influences overview and per step). Can also be geojson. (optional, default polyline)
     */
-  var geometries: js.UndefOr[String] = js.native
+  var geometries: js.UndefOr[String] = js.undefined
   
   /**
     * Add overview geometry either full, simplified according to highest zoom level it could be display on, or not at all (false). (optional, default simplified)
     */
-  var overview: js.UndefOr[String] = js.native
+  var overview: js.UndefOr[String] = js.undefined
   
   /**
     * Standard deviation of GPS precision used for map matching. If applicable use GPS accuracy (double >= 0, default 5m).
     */
   @JSName("radiuses")
-  var radiuses_MatchOptions: js.UndefOr[js.Array[Double]] = js.native
+  var radiuses_MatchOptions: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Return route steps for each route. (optional, default false)
     */
-  var steps: js.UndefOr[Boolean] = js.native
+  var steps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Timestamp of the input location (integers, UNIX-like timestamp).
     */
-  var timestamps: js.UndefOr[js.Array[Double]] = js.native
+  var timestamps: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object MatchOptions {
   

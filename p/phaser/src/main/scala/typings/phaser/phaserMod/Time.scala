@@ -3,7 +3,6 @@ package typings.phaser.phaserMod
 import typings.phaser.Phaser.Types.Time.TimerEventConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Time {
@@ -14,7 +13,8 @@ object Time {
   @JSImport("phaser", "Time.Clock")
   @js.native
   class Clock protected ()
-    extends typings.phaser.Phaser.Time.Clock {
+    extends StObject
+       with typings.phaser.Phaser.Time.Clock {
     /**
       * 
       * @param scene The Scene which owns this Clock.
@@ -30,7 +30,8 @@ object Time {
   @JSImport("phaser", "Time.TimerEvent")
   @js.native
   class TimerEvent protected ()
-    extends typings.phaser.Phaser.Time.TimerEvent {
+    extends StObject
+       with typings.phaser.Phaser.Time.TimerEvent {
     /**
       * 
       * @param config The configuration for the Timer Event, including its delay and callback.

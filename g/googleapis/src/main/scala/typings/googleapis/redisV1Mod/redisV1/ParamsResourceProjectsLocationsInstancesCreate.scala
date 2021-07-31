@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsInstancesCreate extends StandardParameters {
+trait ParamsResourceProjectsLocationsInstancesCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The logical name of the Redis instance in the customer project
@@ -24,19 +24,19 @@ trait ParamsResourceProjectsLocationsInstancesCreate extends StandardParameters 
     * characters. * Must end with a number or a letter. * Must be unique within
     * the customer project / location
     */
-  var instanceId: js.UndefOr[String] = js.native
+  var instanceId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The resource name of the instance location using the form:
     * `projects/{project_id}/locations/{location_id}` where `location_id`
     * refers to a GCP region
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaInstance] = js.native
+  var requestBody: js.UndefOr[SchemaInstance] = js.undefined
 }
 object ParamsResourceProjectsLocationsInstancesCreate {
   

@@ -3,17 +3,15 @@ package typings.jqueryAjaxfile
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AjaxFileKnockout {
   
-  @js.native
   trait IFileInputWrapper extends StObject {
     
-    def fileSelected(): Boolean = js.native
+    def fileSelected(): Boolean
     
-    def getElement(): HTMLInputElement = js.native
+    def getElement(): HTMLInputElement
   }
   object IFileInputWrapper {
     

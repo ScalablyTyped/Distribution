@@ -6,28 +6,25 @@ import typings.awsSdkClientCodecommitNode.postCommentReplyExceptionsUnionMod.Pos
 import typings.awsSdkClientCodecommitNode.updateCommentExceptionsUnionMod.UpdateCommentExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCommentIdRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommentIdRequiredExceptionDetails> * / any */ @js.native
-  trait CommentIdRequiredException
-    extends DeleteCommentContentExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommentIdRequiredExceptionDetails> * / any */ trait CommentIdRequiredException
+    extends StObject
+       with DeleteCommentContentExceptionsUnion
        with GetCommentExceptionsUnion
        with PostCommentReplyExceptionsUnion
        with UpdateCommentExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentIdRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentIdRequiredException
   }
   object CommentIdRequiredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentIdRequiredException
-    ): CommentIdRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): CommentIdRequiredException = {
+      val __obj = js.Dynamic.literal(name = "CommentIdRequiredException")
       __obj.asInstanceOf[CommentIdRequiredException]
     }
     
@@ -41,6 +38,5 @@ object typesCommentIdRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait CommentIdRequiredExceptionDetails extends StObject
 }

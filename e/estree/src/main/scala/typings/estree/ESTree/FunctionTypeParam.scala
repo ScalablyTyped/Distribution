@@ -2,17 +2,15 @@ package typings.estree.ESTree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionTypeParam extends StObject {
   
-  var name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any = js.native
+  var name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
   
-  var optional: Boolean = js.native
+  var optional: Boolean
   
-  var typeAnnotation: FlowTypeAnnotation = js.native
+  var typeAnnotation: FlowTypeAnnotation
 }
 object FunctionTypeParam {
   

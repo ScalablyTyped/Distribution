@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In addition to just get notified when an data update happened, the listener has a chance to veto updates **before** they happen.
   * @see XUpdateBroadcaster
   */
-@js.native
-trait XUpdateListener extends XEventListener {
+trait XUpdateListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked to check the current data.
@@ -24,13 +24,13 @@ trait XUpdateListener extends XEventListener {
     * @param aEvent An event descriptor specifying the broadcaster of the change.
     * @returns `TRUE` when the update was approved, otherwise `FALSE` .
     */
-  def approveUpdate(aEvent: EventObject): Boolean = js.native
+  def approveUpdate(aEvent: EventObject): Boolean
   
   /**
     * is invoked when an object has finished processing the updates and the data has been successfully written.
     * @param aEvent A event descriptor specifying the broadcaster of the change.
     */
-  def updated(aEvent: EventObject): Unit = js.native
+  def updated(aEvent: EventObject): Unit
 }
 object XUpdateListener {
   

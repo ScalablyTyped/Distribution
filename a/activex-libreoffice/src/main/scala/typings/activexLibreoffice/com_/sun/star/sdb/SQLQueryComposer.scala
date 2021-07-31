@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.sdbcx.XTablesSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It hides the complexity of parsing and evaluating SQL Statements and provides sophisticated methods for expanding a SQL-Statement with filter and
   * order criteria.
   */
-@js.native
 trait SQLQueryComposer
-  extends XSQLQueryComposer
+  extends StObject
+     with XSQLQueryComposer
      with XTablesSupplier
      with XColumnsSupplier
 object SQLQueryComposer {

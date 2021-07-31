@@ -2,20 +2,18 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientPagingResponse extends StObject {
   
   /** ClientPagingResponse limit */
-  var limit: js.UndefOr[Double | Null] = js.native
+  var limit: js.UndefOr[Double | Null] = js.undefined
   
   /** ClientPagingResponse next */
-  var next: js.UndefOr[String | Null] = js.native
+  var next: js.UndefOr[String | Null] = js.undefined
   
   /** ClientPagingResponse start */
-  var start: js.UndefOr[String | Null] = js.native
+  var start: js.UndefOr[String | Null] = js.undefined
 }
 object IClientPagingResponse {
   

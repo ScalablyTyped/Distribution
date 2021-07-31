@@ -3,19 +3,17 @@ package typings.wordpressBlocks.anon
 import typings.wordpressBlocks.wordpressBlocksStrings.INLINE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mode extends StObject {
   
-  var mode: INLINE = js.native
+  var mode: INLINE
 }
 object Mode {
   
   @scala.inline
-  def apply(mode: INLINE): Mode = {
-    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+  def apply(): Mode = {
+    val __obj = js.Dynamic.literal(mode = "INLINE")
     __obj.asInstanceOf[Mode]
   }
   

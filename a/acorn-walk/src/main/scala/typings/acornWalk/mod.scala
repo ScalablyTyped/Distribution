@@ -4,726 +4,315 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.acorn.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("acorn-walk", "ancestor")
+  @JSImport("acorn-walk", JSImport.Namespace)
   @js.native
-  def ancestor[TState](node: Node, visitors: AncestorVisitors[TState]): Unit = js.native
-  @JSImport("acorn-walk", "ancestor")
-  @js.native
-  def ancestor[TState](node: Node, visitors: AncestorVisitors[TState], base: js.UndefOr[scala.Nothing], state: TState): Unit = js.native
-  @JSImport("acorn-walk", "ancestor")
-  @js.native
-  def ancestor[TState](node: Node, visitors: AncestorVisitors[TState], base: RecursiveVisitors[TState]): Unit = js.native
-  @JSImport("acorn-walk", "ancestor")
-  @js.native
-  def ancestor[TState](node: Node, visitors: AncestorVisitors[TState], base: RecursiveVisitors[TState], state: TState): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: js.UndefOr[scala.Nothing], `type`: String): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: String,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: js.UndefOr[scala.Nothing], `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: String,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: js.UndefOr[scala.Nothing], `type`: FindPredicate): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: Double): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](
-    node: Node,
-    start: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: Double, `type`: js.UndefOr[scala.Nothing], base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](
-    node: Node,
-    start: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: Double, `type`: String): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: Double, `type`: String, base: js.UndefOr[scala.Nothing], state: TState): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: Double, `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: Double, `type`: String, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: Double, `type`: FindPredicate): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: Double, `type`: FindPredicate, base: js.UndefOr[scala.Nothing], state: TState): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: Double, `type`: FindPredicate, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAfter")
-  @js.native
-  def findNodeAfter[TState](node: Node, start: Double, `type`: FindPredicate, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = js.native
+  @scala.inline
+  def ancestor[TState](node: Node, visitors: AncestorVisitors[TState]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestor")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ancestor[TState](node: Node, visitors: AncestorVisitors[TState], base: Unit, state: TState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestor")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ancestor[TState](node: Node, visitors: AncestorVisitors[TState], base: RecursiveVisitors[TState]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestor")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ancestor[TState](node: Node, visitors: AncestorVisitors[TState], base: RecursiveVisitors[TState], state: TState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestor")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: js.UndefOr[scala.Nothing], `type`: String): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: String,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: js.UndefOr[scala.Nothing], `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: String,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: js.UndefOr[scala.Nothing], `type`: FindPredicate): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: Double): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](
-    node: Node,
-    start: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: Double, `type`: js.UndefOr[scala.Nothing], base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](
-    node: Node,
-    start: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: Double, `type`: String): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: Double, `type`: String, base: js.UndefOr[scala.Nothing], state: TState): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: Double, `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: Double, `type`: String, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: Double, `type`: FindPredicate): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: Double, `type`: FindPredicate, base: js.UndefOr[scala.Nothing], state: TState): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: Double, `type`: FindPredicate, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAround")
-  @js.native
-  def findNodeAround[TState](node: Node, start: Double, `type`: FindPredicate, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = js.native
+  @scala.inline
+  def findNodeAfter[TState](node: Node): js.UndefOr[Found[TState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double, `type`: String): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double, `type`: String, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double, `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double, `type`: String, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double, `type`: Unit, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double, `type`: Unit, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double, `type`: Unit, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double, `type`: FindPredicate): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double, `type`: FindPredicate, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double, `type`: FindPredicate, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Double, `type`: FindPredicate, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Unit, `type`: String): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Unit, `type`: String, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Unit, `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Unit, `type`: String, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Unit, `type`: Unit, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Unit, `type`: Unit, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Unit, `type`: Unit, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Unit, `type`: FindPredicate): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Unit, `type`: FindPredicate, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Unit, `type`: FindPredicate, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAfter[TState](node: Node, start: Unit, `type`: FindPredicate, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
   
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], `type`: String): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    `type`: String,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    `type`: String,
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    `type`: String,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: js.UndefOr[scala.Nothing], end: Double): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: js.UndefOr[scala.Nothing], end: Double, `type`: String): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: Double,
-    `type`: String,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: Double,
-    `type`: String,
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: Double,
-    `type`: String,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: js.UndefOr[scala.Nothing], end: Double, `type`: FindPredicate): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: Double,
-    `type`: FindPredicate,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: Double,
-    `type`: FindPredicate,
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: js.UndefOr[scala.Nothing],
-    end: Double,
-    `type`: FindPredicate,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: Double): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: Double, end: js.UndefOr[scala.Nothing], `type`: String): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: js.UndefOr[scala.Nothing],
-    `type`: String,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: js.UndefOr[scala.Nothing],
-    `type`: String,
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: js.UndefOr[scala.Nothing],
-    `type`: String,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: Double, end: js.UndefOr[scala.Nothing], `type`: FindPredicate): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: js.UndefOr[scala.Nothing],
-    `type`: FindPredicate,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: Double, end: Double): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState]
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: String): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: Double,
-    `type`: String,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: Double,
-    `type`: String,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: FindPredicate): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: Double,
-    `type`: FindPredicate,
-    base: js.UndefOr[scala.Nothing],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: FindPredicate, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = js.native
-  @JSImport("acorn-walk", "findNodeAt")
-  @js.native
-  def findNodeAt[TState](
-    node: Node,
-    start: Double,
-    end: Double,
-    `type`: FindPredicate,
-    base: RecursiveVisitors[TState],
-    state: TState
-  ): js.UndefOr[Found[TState]] = js.native
+  @scala.inline
+  def findNodeAround[TState](node: Node): js.UndefOr[Found[TState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double, `type`: String): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double, `type`: String, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double, `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double, `type`: String, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double, `type`: Unit, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double, `type`: Unit, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double, `type`: Unit, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double, `type`: FindPredicate): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double, `type`: FindPredicate, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double, `type`: FindPredicate, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Double, `type`: FindPredicate, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Unit, `type`: String): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Unit, `type`: String, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Unit, `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Unit, `type`: String, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Unit, `type`: Unit, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Unit, `type`: Unit, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Unit, `type`: Unit, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Unit, `type`: FindPredicate): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Unit, `type`: FindPredicate, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Unit, `type`: FindPredicate, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAround[TState](node: Node, start: Unit, `type`: FindPredicate, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAround")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
   
-  @JSImport("acorn-walk", "full")
-  @js.native
-  def full[TState](node: Node, callback: FullWalkerCallback[TState]): Unit = js.native
-  @JSImport("acorn-walk", "full")
-  @js.native
-  def full[TState](node: Node, callback: FullWalkerCallback[TState], base: js.UndefOr[scala.Nothing], state: TState): Unit = js.native
-  @JSImport("acorn-walk", "full")
-  @js.native
-  def full[TState](node: Node, callback: FullWalkerCallback[TState], base: RecursiveVisitors[TState]): Unit = js.native
-  @JSImport("acorn-walk", "full")
-  @js.native
-  def full[TState](node: Node, callback: FullWalkerCallback[TState], base: RecursiveVisitors[TState], state: TState): Unit = js.native
-  
-  @JSImport("acorn-walk", "fullAncestor")
-  @js.native
-  def fullAncestor[TState](node: Node, callback: FullAncestorWalkerCallback[TState]): Unit = js.native
-  @JSImport("acorn-walk", "fullAncestor")
-  @js.native
-  def fullAncestor[TState](
+  @scala.inline
+  def findNodeAt[TState](node: Node): js.UndefOr[Found[TState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Double): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: String): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: String, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](
     node: Node,
-    callback: FullAncestorWalkerCallback[TState],
-    base: js.UndefOr[scala.Nothing],
+    start: Double,
+    end: Double,
+    `type`: String,
+    base: RecursiveVisitors[TState],
     state: TState
-  ): Unit = js.native
-  @JSImport("acorn-walk", "fullAncestor")
-  @js.native
-  def fullAncestor[TState](node: Node, callback: FullAncestorWalkerCallback[TState], base: RecursiveVisitors[TState]): Unit = js.native
-  @JSImport("acorn-walk", "fullAncestor")
-  @js.native
+  ): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: Unit, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: Unit, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](
+    node: Node,
+    start: Double,
+    end: Double,
+    `type`: Unit,
+    base: RecursiveVisitors[TState],
+    state: TState
+  ): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: FindPredicate): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: FindPredicate, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Double, `type`: FindPredicate, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](
+    node: Node,
+    start: Double,
+    end: Double,
+    `type`: FindPredicate,
+    base: RecursiveVisitors[TState],
+    state: TState
+  ): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Unit, `type`: String): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Unit, `type`: String, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Unit, `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](
+    node: Node,
+    start: Double,
+    end: Unit,
+    `type`: String,
+    base: RecursiveVisitors[TState],
+    state: TState
+  ): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Unit, `type`: Unit, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Unit, `type`: Unit, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Unit, `type`: Unit, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Unit, `type`: FindPredicate): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Unit, `type`: FindPredicate, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Double, end: Unit, `type`: FindPredicate, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](
+    node: Node,
+    start: Double,
+    end: Unit,
+    `type`: FindPredicate,
+    base: RecursiveVisitors[TState],
+    state: TState
+  ): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Double): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Double, `type`: String): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Double, `type`: String, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Double, `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](
+    node: Node,
+    start: Unit,
+    end: Double,
+    `type`: String,
+    base: RecursiveVisitors[TState],
+    state: TState
+  ): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Double, `type`: Unit, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Double, `type`: Unit, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Double, `type`: Unit, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Double, `type`: FindPredicate): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Double, `type`: FindPredicate, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Double, `type`: FindPredicate, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](
+    node: Node,
+    start: Unit,
+    end: Double,
+    `type`: FindPredicate,
+    base: RecursiveVisitors[TState],
+    state: TState
+  ): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Unit, `type`: String): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Unit, `type`: String, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Unit, `type`: String, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Unit, `type`: String, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Unit, `type`: Unit, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Unit, `type`: Unit, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Unit, `type`: Unit, base: RecursiveVisitors[TState], state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Unit, `type`: FindPredicate): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Unit, `type`: FindPredicate, base: Unit, state: TState): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](node: Node, start: Unit, end: Unit, `type`: FindPredicate, base: RecursiveVisitors[TState]): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  @scala.inline
+  def findNodeAt[TState](
+    node: Node,
+    start: Unit,
+    end: Unit,
+    `type`: FindPredicate,
+    base: RecursiveVisitors[TState],
+    state: TState
+  ): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAt")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
+  
+  @scala.inline
+  def full[TState](node: Node, callback: FullWalkerCallback[TState]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("full")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def full[TState](node: Node, callback: FullWalkerCallback[TState], base: Unit, state: TState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("full")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def full[TState](node: Node, callback: FullWalkerCallback[TState], base: RecursiveVisitors[TState]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("full")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def full[TState](node: Node, callback: FullWalkerCallback[TState], base: RecursiveVisitors[TState], state: TState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("full")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def fullAncestor[TState](node: Node, callback: FullAncestorWalkerCallback[TState]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fullAncestor")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fullAncestor[TState](node: Node, callback: FullAncestorWalkerCallback[TState], base: Unit, state: TState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fullAncestor")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fullAncestor[TState](node: Node, callback: FullAncestorWalkerCallback[TState], base: RecursiveVisitors[TState]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fullAncestor")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def fullAncestor[TState](
     node: Node,
     callback: FullAncestorWalkerCallback[TState],
     base: RecursiveVisitors[TState],
     state: TState
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fullAncestor")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("acorn-walk", "make")
-  @js.native
-  def make[TState](functions: RecursiveVisitors[TState]): RecursiveVisitors[TState] = js.native
-  @JSImport("acorn-walk", "make")
-  @js.native
-  def make[TState](functions: RecursiveVisitors[TState], base: RecursiveVisitors[TState]): RecursiveVisitors[TState] = js.native
+  @scala.inline
+  def make[TState](functions: RecursiveVisitors[TState]): RecursiveVisitors[TState] = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(functions.asInstanceOf[js.Any]).asInstanceOf[RecursiveVisitors[TState]]
+  @scala.inline
+  def make[TState](functions: RecursiveVisitors[TState], base: RecursiveVisitors[TState]): RecursiveVisitors[TState] = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(functions.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[RecursiveVisitors[TState]]
   
-  @JSImport("acorn-walk", "recursive")
-  @js.native
-  def recursive[TState](node: Node, state: TState, functions: RecursiveVisitors[TState]): Unit = js.native
-  @JSImport("acorn-walk", "recursive")
-  @js.native
-  def recursive[TState](node: Node, state: TState, functions: RecursiveVisitors[TState], base: RecursiveVisitors[TState]): Unit = js.native
+  @scala.inline
+  def recursive[TState](node: Node, state: TState, functions: RecursiveVisitors[TState]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(node.asInstanceOf[js.Any], state.asInstanceOf[js.Any], functions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def recursive[TState](node: Node, state: TState, functions: RecursiveVisitors[TState], base: RecursiveVisitors[TState]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(node.asInstanceOf[js.Any], state.asInstanceOf[js.Any], functions.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("acorn-walk", "simple")
-  @js.native
-  def simple[TState](node: Node, visitors: SimpleVisitors[TState]): Unit = js.native
-  @JSImport("acorn-walk", "simple")
-  @js.native
-  def simple[TState](node: Node, visitors: SimpleVisitors[TState], base: js.UndefOr[scala.Nothing], state: TState): Unit = js.native
-  @JSImport("acorn-walk", "simple")
-  @js.native
-  def simple[TState](node: Node, visitors: SimpleVisitors[TState], base: RecursiveVisitors[TState]): Unit = js.native
-  @JSImport("acorn-walk", "simple")
-  @js.native
-  def simple[TState](node: Node, visitors: SimpleVisitors[TState], base: RecursiveVisitors[TState], state: TState): Unit = js.native
+  @scala.inline
+  def simple[TState](node: Node, visitors: SimpleVisitors[TState]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simple")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def simple[TState](node: Node, visitors: SimpleVisitors[TState], base: Unit, state: TState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simple")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def simple[TState](node: Node, visitors: SimpleVisitors[TState], base: RecursiveVisitors[TState]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simple")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def simple[TState](node: Node, visitors: SimpleVisitors[TState], base: RecursiveVisitors[TState], state: TState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simple")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type AncestorVisitors[TState] = StringDictionary[AncestorWalkerFn[TState]]
   
@@ -736,12 +325,11 @@ object mod {
   
   type FindPredicate = js.Function2[/* type */ String, /* node */ Node, Boolean]
   
-  @js.native
   trait Found[TState] extends StObject {
     
-    var node: Node = js.native
+    var node: Node
     
-    var state: TState = js.native
+    var state: TState
   }
   object Found {
     
@@ -752,7 +340,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class FoundMutableBuilder[Self <: Found[_], TState] (val x: Self with Found[TState]) extends AnyVal {
+    implicit class FoundMutableBuilder[Self <: Found[?], TState] (val x: Self & Found[TState]) extends AnyVal {
       
       @scala.inline
       def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])

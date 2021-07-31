@@ -2,24 +2,22 @@ package typings.materialUiLab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/SpeedDialAction/SpeedDialAction.SpeedDialActionClassKey>> */
-@js.native
 trait PartialClassNameMapSpeedD extends StObject {
   
-  var fab: js.UndefOr[String] = js.native
+  var fab: js.UndefOr[String] = js.undefined
   
-  var fabClosed: js.UndefOr[String] = js.native
+  var fabClosed: js.UndefOr[String] = js.undefined
   
-  var staticTooltip: js.UndefOr[String] = js.native
+  var staticTooltip: js.UndefOr[String] = js.undefined
   
-  var staticTooltipClosed: js.UndefOr[String] = js.native
+  var staticTooltipClosed: js.UndefOr[String] = js.undefined
   
-  var staticTooltipLabel: js.UndefOr[String] = js.native
+  var staticTooltipLabel: js.UndefOr[String] = js.undefined
   
-  var tooltipPlacementLeft: js.UndefOr[String] = js.native
+  var tooltipPlacementLeft: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapSpeedD {
   

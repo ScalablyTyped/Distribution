@@ -4,7 +4,6 @@ import typings.cote.coteStrings.coteColonadded
 import typings.cote.coteStrings.coteColonremoved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cote", "Responder")
@@ -25,7 +24,7 @@ class Responder protected () extends Component {
   discoveryOptions: DiscoveryOptions
   ) = this()
   
-  def on[T /* <: Event */](`type`: String, listener: js.Function1[/* event */ T, js.Promise[_]]): this.type = js.native
+  def on[T /* <: Event */](`type`: String, listener: js.Function1[/* event */ T, js.Promise[js.Any]]): this.type = js.native
   /**
     * Responds to certain requests from a Requester.
     *
@@ -40,7 +39,7 @@ class Responder protected () extends Component {
       Unit
     ]
   ): this.type = js.native
-  def on[T /* <: Event */](`type`: js.Array[String], listener: js.Function1[/* event */ T, js.Promise[_]]): this.type = js.native
+  def on[T /* <: Event */](`type`: js.Array[String], listener: js.Function1[/* event */ T, js.Promise[js.Any]]): this.type = js.native
   def on[T /* <: Event */](
     `type`: js.Array[String],
     listener: js.Function2[

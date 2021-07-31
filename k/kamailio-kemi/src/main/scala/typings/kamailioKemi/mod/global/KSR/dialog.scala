@@ -2,88 +2,71 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialog {
   
-  @JSGlobal("KSR.dialog.dlg_bye")
+  @JSGlobal("KSR.dialog")
   @js.native
-  def dlgBye(side: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.dialog.dlg_db_load_callid")
-  @js.native
-  def dlgDbLoadCallid(callid: String): Double = js.native
+  @scala.inline
+  def dlgBye(side: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dlg_bye")(side.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.dlg_db_load_extra")
-  @js.native
-  def dlgDbLoadExtra(): Double = js.native
+  @scala.inline
+  def dlgDbLoadCallid(callid: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dlg_db_load_callid")(callid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.dlg_get")
-  @js.native
-  def dlgGet(sc: String, sf: String, st: String): Double = js.native
+  @scala.inline
+  def dlgDbLoadExtra(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dlg_db_load_extra")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.dlg_isflagset")
-  @js.native
-  def dlgIsflagset(`val`: Double): Double = js.native
+  @scala.inline
+  def dlgGet(sc: String, sf: String, st: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dlg_get")(sc.asInstanceOf[js.Any], sf.asInstanceOf[js.Any], st.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.dlg_manage")
-  @js.native
-  def dlgManage(): Double = js.native
+  @scala.inline
+  def dlgIsflagset(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dlg_isflagset")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.dlg_resetflag")
-  @js.native
-  def dlgResetflag(`val`: Double): Double = js.native
+  @scala.inline
+  def dlgManage(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dlg_manage")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.dlg_set_property")
-  @js.native
-  def dlgSetProperty(pval: String): Double = js.native
+  @scala.inline
+  def dlgResetflag(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dlg_resetflag")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.dlg_set_timeout")
-  @js.native
-  def dlgSetTimeout(to: Double): Double = js.native
+  @scala.inline
+  def dlgSetProperty(pval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dlg_set_property")(pval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.dlg_set_timeout_id")
-  @js.native
-  def dlgSetTimeoutId(to: Double, he: Double, hi: Double): Double = js.native
+  @scala.inline
+  def dlgSetTimeout(to: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dlg_set_timeout")(to.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.dlg_setflag")
-  @js.native
-  def dlgSetflag(`val`: Double): Double = js.native
+  @scala.inline
+  def dlgSetTimeoutId(to: Double, he: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dlg_set_timeout_id")(to.asInstanceOf[js.Any], he.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.get_profile_size")
-  @js.native
-  def getProfileSize(sprofile: String, svalue: String, spv: String): Double = js.native
+  @scala.inline
+  def dlgSetflag(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dlg_setflag")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.get_profile_size_static")
-  @js.native
-  def getProfileSizeStatic(sprofile: String, spv: String): Double = js.native
+  @scala.inline
+  def getProfileSize(sprofile: String, svalue: String, spv: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get_profile_size")(sprofile.asInstanceOf[js.Any], svalue.asInstanceOf[js.Any], spv.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.is_in_profile")
-  @js.native
-  def isInProfile(sprofile: String, svalue: String): Double = js.native
+  @scala.inline
+  def getProfileSizeStatic(sprofile: String, spv: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get_profile_size_static")(sprofile.asInstanceOf[js.Any], spv.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.is_in_profile_static")
-  @js.native
-  def isInProfileStatic(sprofile: String): Double = js.native
+  @scala.inline
+  def isInProfile(sprofile: String, svalue: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("is_in_profile")(sprofile.asInstanceOf[js.Any], svalue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.is_known_dlg")
-  @js.native
-  def isKnownDlg(): Double = js.native
+  @scala.inline
+  def isInProfileStatic(sprofile: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_in_profile_static")(sprofile.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.set_dlg_profile")
-  @js.native
-  def setDlgProfile(sprofile: String, svalue: String): Double = js.native
+  @scala.inline
+  def isKnownDlg(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_known_dlg")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.set_dlg_profile_static")
-  @js.native
-  def setDlgProfileStatic(sprofile: String): Double = js.native
+  @scala.inline
+  def setDlgProfile(sprofile: String, svalue: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("set_dlg_profile")(sprofile.asInstanceOf[js.Any], svalue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.unset_dlg_profile")
-  @js.native
-  def unsetDlgProfile(sprofile: String, svalue: String): Double = js.native
+  @scala.inline
+  def setDlgProfileStatic(sprofile: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("set_dlg_profile_static")(sprofile.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.dialog.unset_dlg_profile_static")
-  @js.native
-  def unsetDlgProfileStatic(sprofile: String): Double = js.native
+  @scala.inline
+  def unsetDlgProfile(sprofile: String, svalue: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unset_dlg_profile")(sprofile.asInstanceOf[js.Any], svalue.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def unsetDlgProfileStatic(sprofile: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unset_dlg_profile_static")(sprofile.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

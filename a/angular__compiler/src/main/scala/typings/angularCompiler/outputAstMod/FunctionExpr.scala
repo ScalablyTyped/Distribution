@@ -3,7 +3,6 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "FunctionExpr")
@@ -14,13 +13,13 @@ class FunctionExpr protected () extends Expression {
   def this(
     params: js.Array[FnParam],
     statements: js.Array[Statement],
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(
     params: js.Array[FnParam],
     statements: js.Array[Statement],
-    `type`: Null,
+    `type`: Unit,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(
@@ -32,36 +31,15 @@ class FunctionExpr protected () extends Expression {
   def this(
     params: js.Array[FnParam],
     statements: js.Array[Statement],
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: js.UndefOr[scala.Nothing],
-    name: String
-  ) = this()
-  def this(
-    params: js.Array[FnParam],
-    statements: js.Array[Statement],
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: Null,
-    name: String
-  ) = this()
-  def this(
-    params: js.Array[FnParam],
-    statements: js.Array[Statement],
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: ParseSourceSpan,
     name: String
   ) = this()
   def this(
     params: js.Array[FnParam],
     statements: js.Array[Statement],
     `type`: Null,
-    sourceSpan: js.UndefOr[scala.Nothing],
-    name: String
-  ) = this()
-  def this(
-    params: js.Array[FnParam],
-    statements: js.Array[Statement],
-    `type`: Null,
-    sourceSpan: Null,
+    sourceSpan: Unit,
     name: String
   ) = this()
   def this(
@@ -74,8 +52,22 @@ class FunctionExpr protected () extends Expression {
   def this(
     params: js.Array[FnParam],
     statements: js.Array[Statement],
-    `type`: Type,
-    sourceSpan: js.UndefOr[scala.Nothing],
+    `type`: Unit,
+    sourceSpan: Null,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: Unit,
+    sourceSpan: Unit,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: Unit,
+    sourceSpan: ParseSourceSpan,
     name: String
   ) = this()
   def this(
@@ -83,6 +75,13 @@ class FunctionExpr protected () extends Expression {
     statements: js.Array[Statement],
     `type`: Type,
     sourceSpan: Null,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: Type,
+    sourceSpan: Unit,
     name: String
   ) = this()
   def this(

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object secretPolicyMod {
@@ -40,6 +39,10 @@ object secretPolicyMod {
   /* static members */
   object SecretPolicy {
     
+    @JSImport("@pulumi/aws/secretsmanager/secretPolicy", "SecretPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SecretPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -49,42 +52,36 @@ object secretPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/secretsmanager/secretPolicy", "SecretPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SecretPolicy = js.native
-    @JSImport("@pulumi/aws/secretsmanager/secretPolicy", "SecretPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SecretPolicy = js.native
-    @JSImport("@pulumi/aws/secretsmanager/secretPolicy", "SecretPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretPolicyState): SecretPolicy = js.native
-    @JSImport("@pulumi/aws/secretsmanager/secretPolicy", "SecretPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretPolicyState, opts: CustomResourceOptions): SecretPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretPolicyState): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretPolicyState, opts: CustomResourceOptions): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
     
     /**
       * Returns true if the given object is an instance of SecretPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/secretsmanager/secretPolicy", "SecretPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretPolicy.SecretPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretPolicy.SecretPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secretPolicy.SecretPolicy */ Boolean]
   }
   
-  @js.native
   trait SecretPolicyArgs extends StObject {
     
     /**
       * Makes an optional API call to Zelkova to validate the Resource Policy to prevent broad access to your secret.
       */
-    val blockPublicPolicy: js.UndefOr[Input[Boolean]] = js.native
+    val blockPublicPolicy: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val policy: Input[String] = js.native
+    val policy: Input[String]
     
     /**
       * Secret ARN.
       */
-    val secretArn: Input[String] = js.native
+    val secretArn: Input[String]
   }
   object SecretPolicyArgs {
     
@@ -111,20 +108,19 @@ object secretPolicyMod {
     }
   }
   
-  @js.native
   trait SecretPolicyState extends StObject {
     
     /**
       * Makes an optional API call to Zelkova to validate the Resource Policy to prevent broad access to your secret.
       */
-    val blockPublicPolicy: js.UndefOr[Input[Boolean]] = js.native
+    val blockPublicPolicy: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Secret ARN.
       */
-    val secretArn: js.UndefOr[Input[String]] = js.native
+    val secretArn: js.UndefOr[Input[String]] = js.undefined
   }
   object SecretPolicyState {
     

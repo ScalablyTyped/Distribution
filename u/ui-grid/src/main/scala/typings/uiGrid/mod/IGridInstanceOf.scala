@@ -5,7 +5,6 @@ import typings.angular.mod.IPromise
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,9 +17,9 @@ trait IGridInstanceOf[TEntity] extends StObject {
     * @param {boolean} stopColumnBuild Prevents the buildColumn callback from being triggered. This is useful to improve performance of the grid during initial load.
     */
   def addRowHeaderColumn(colDef: IColumnDefOf[TEntity]): Unit = js.native
-  def addRowHeaderColumn(colDef: IColumnDefOf[TEntity], order: js.UndefOr[scala.Nothing], stopColumnBuild: Boolean): Unit = js.native
   def addRowHeaderColumn(colDef: IColumnDefOf[TEntity], order: Double): Unit = js.native
   def addRowHeaderColumn(colDef: IColumnDefOf[TEntity], order: Double, stopColumnBuild: Boolean): Unit = js.native
+  def addRowHeaderColumn(colDef: IColumnDefOf[TEntity], order: Unit, stopColumnBuild: Boolean): Unit = js.native
   
   /**
     * reference to the application scope (the parent scope of the ui-grid element). Assigned in ui-grid controller
@@ -47,7 +46,7 @@ trait IGridInstanceOf[TEntity] extends StObject {
     *        according to the order within the column definitions
     * @returns {ng.IPromise} A promise to load any needed column resources
     */
-  def buildColumns(options: IBuildColumnsOptions): IPromise[_] = js.native
+  def buildColumns(options: IBuildColumnsOptions): IPromise[js.Any] = js.native
   
   /**
     * calls each styleComputation function
@@ -70,7 +69,7 @@ trait IGridInstanceOf[TEntity] extends StObject {
     * @param {boolean} [clearFlags=true] Clear flags?
     * @returns {ng.IPromise<any>} If refreshRows is true, returns a promise of the rows refreshing
     */
-  def clearAllFilters(refreshRows: Boolean, clearConditions: Boolean, clearFlags: Boolean): IPromise[_] = js.native
+  def clearAllFilters(refreshRows: Boolean, clearConditions: Boolean, clearFlags: Boolean): IPromise[js.Any] = js.native
   
   /**
     * returns the total column footer height
@@ -249,7 +248,7 @@ trait IGridInstanceOf[TEntity] extends StObject {
     * @param {Array<TEntity>} newRawData The new grid data
     * @return {ng.IPromise<any>} Promise which resolves when the rows have been created or removed
     */
-  def modifyRows(newRawData: js.Array[TEntity]): IPromise[_] = js.native
+  def modifyRows(newRawData: js.Array[TEntity]): IPromise[js.Any] = js.native
   
   /**
     * Notify the grid that a data or config change has occurred,
@@ -320,14 +319,14 @@ trait IGridInstanceOf[TEntity] extends StObject {
     * @returns {ng.IPromise<any>} promise that is resolved when the canvas
     *          has been refreshed
     */
-  def refreshCanvas(): IPromise[_] = js.native
-  def refreshCanvas(buildStyles: Boolean): IPromise[_] = js.native
+  def refreshCanvas(): IPromise[js.Any] = js.native
+  def refreshCanvas(buildStyles: Boolean): IPromise[js.Any] = js.native
   
   /**
     * Refresh the rendered rows on screen?  Note: not functional at present
     * @returns {ng.IPromise<any>} promise that is resolved when render completes?
     */
-  def refreshRows(): IPromise[_] = js.native
+  def refreshRows(): IPromise[js.Any] = js.native
   
   /**
     * When the build creates columns from column definitions, the columnbuilders will be called to add
@@ -434,10 +433,10 @@ trait IGridInstanceOf[TEntity] extends StObject {
     * @param {IColumnDef} colDef to make visible
     * @returns {ng.IPromise<any>} a promise that is resolved after any scrolling is finished
     */
-  def scrollTo(): IPromise[_] = js.native
-  def scrollTo(rowEntity: TEntity): IPromise[_] = js.native
-  def scrollTo(rowEntity: TEntity, colDef: IColumnDefOf[TEntity]): IPromise[_] = js.native
-  def scrollTo(rowEntity: js.UndefOr[scala.Nothing], colDef: IColumnDefOf[TEntity]): IPromise[_] = js.native
+  def scrollTo(): IPromise[js.Any] = js.native
+  def scrollTo(rowEntity: TEntity): IPromise[js.Any] = js.native
+  def scrollTo(rowEntity: TEntity, colDef: IColumnDefOf[TEntity]): IPromise[js.Any] = js.native
+  def scrollTo(rowEntity: Unit, colDef: IColumnDefOf[TEntity]): IPromise[js.Any] = js.native
   
   /**
     * Scrolls the grid to make a certain row and column combo visible,
@@ -446,7 +445,7 @@ trait IGridInstanceOf[TEntity] extends StObject {
     * @param {IGridColumn} gridCol column to make visible
     * @returns {ng.IPromise<any>} a promise that is resolved when scrolling is complete
     */
-  def scrollToIfNecessary(gridRow: IGridRowOf[TEntity], gridCol: IGridColumnOf[TEntity]): IPromise[_] = js.native
+  def scrollToIfNecessary(gridRow: IGridRowOf[TEntity], gridCol: IGridColumnOf[TEntity]): IPromise[js.Any] = js.native
   
   /**
     * Set the sorting on a given column, optionally resetting any existing sorting on the Grid.
@@ -460,9 +459,9 @@ trait IGridInstanceOf[TEntity] extends StObject {
     * @returns {ng.IPromise<IGridColumn>} A resolved promise that supplies the column.
     */
   def sortColumn(column: IGridColumnOf[TEntity]): IPromise[IGridColumnOf[TEntity]] = js.native
-  def sortColumn(column: IGridColumnOf[TEntity], direction: js.UndefOr[scala.Nothing], add: Boolean): IPromise[IGridColumnOf[TEntity]] = js.native
   def sortColumn(column: IGridColumnOf[TEntity], direction: String): IPromise[IGridColumnOf[TEntity]] = js.native
   def sortColumn(column: IGridColumnOf[TEntity], direction: String, add: Boolean): IPromise[IGridColumnOf[TEntity]] = js.native
+  def sortColumn(column: IGridColumnOf[TEntity], direction: Unit, add: Boolean): IPromise[IGridColumnOf[TEntity]] = js.native
   
   /**
     * flags all render containers to update their canvas height

@@ -11,8 +11,8 @@ Utility to "pipe" async iterables together
 | Full name          | it-pipe |
 | Keywords           | pipe, pipeline, iterable, iterator, async, await, stream, pump, pull |
 | # releases         | 5 |
-| # dependents       | 28 |
-| # downloads        | 158288 |
+| # dependents       | 45 |
+| # downloads        | 283403 |
 | # stars            | 0 |
 
 ## Links

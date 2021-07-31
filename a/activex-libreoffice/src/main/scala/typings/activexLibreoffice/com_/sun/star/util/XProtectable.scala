@@ -4,28 +4,28 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to protect objects from modifications. */
-@js.native
-trait XProtectable extends XInterface {
+trait XProtectable
+  extends StObject
+     with XInterface {
   
   /** @returns the current state of protection. */
-  def isProtected(): Boolean = js.native
+  def isProtected(): Boolean
   
   /**
     * activates the protection.
     * @param aPassword a string to specify new password.
     */
-  def protect(aPassword: String): Unit = js.native
+  def protect(aPassword: String): Unit
   
   /**
     * removes the protection.
     * @param aPassword a string to match with the current password.
     * @throws com::sun::star::lang::IllegalArgumentException if invalid password is specified.
     */
-  def unprotect(aPassword: String): Unit = js.native
+  def unprotect(aPassword: String): Unit
 }
 object XProtectable {
   

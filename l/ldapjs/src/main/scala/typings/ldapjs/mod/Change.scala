@@ -3,15 +3,13 @@ package typings.ldapjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Change extends StObject {
   
-  var modification: StringDictionary[js.Any] = js.native
+  var modification: StringDictionary[js.Any]
   
-  var operation: String = js.native
+  var operation: String
 }
 object Change {
   

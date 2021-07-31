@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForStreamOutput extends StObject {
   
   /**
     * If set to true, more tags are available. To request additional tags, set ExclusiveStartTagKey to the key of the last tag returned.
     */
-  var HasMoreTags: BooleanObject = js.native
+  var HasMoreTags: BooleanObject
   
   /**
     * A list of tags associated with StreamName, starting with the first tag after ExclusiveStartTagKey and up to the specified Limit. 
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object ListTagsForStreamOutput {
   

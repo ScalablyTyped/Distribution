@@ -2,15 +2,13 @@ package typings.smartFoxServer.SFS2X
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPLAYER_TO_SPECTATOR_ERROR extends StObject {
   
-  var errorCode: Double = js.native
+  var errorCode: Double
   
-  var errorMessage: String = js.native
+  var errorMessage: String
 }
 object IPLAYER_TO_SPECTATOR_ERROR {
   

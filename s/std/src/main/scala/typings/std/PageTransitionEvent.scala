@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The PageTransitionEvent is fired when a document is being loaded or unloaded. */
 @js.native
-trait PageTransitionEvent extends Event {
+trait PageTransitionEvent
+  extends StObject
+     with Event {
   
   /**
     * For the pageshow event, returns false if the page is newly being loaded (and the load event will fire). Otherwise, returns true.

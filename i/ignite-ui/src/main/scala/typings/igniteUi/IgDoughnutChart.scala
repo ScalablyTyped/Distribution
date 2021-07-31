@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgDoughnutChart
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,59 +16,59 @@ trait IgDoughnutChart
   /**
     * Gets or sets whether the slices can be exploded.
     */
-  var allowSliceExplosion: js.UndefOr[Boolean] = js.native
+  var allowSliceExplosion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether the slices can be selected.
     */
-  var allowSliceSelection: js.UndefOr[Boolean] = js.native
+  var allowSliceSelection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Event fired when the control is displayed on a non HTML5 compliant browser
     */
-  var browserNotSupported: js.UndefOr[BrowserNotSupportedEvent] = js.native
+  var browserNotSupported: js.UndefOr[BrowserNotSupportedEvent] = js.undefined
   
   /**
     * The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Raised when the dimensions (center point or radius) of the doughnut hole change.
     */
-  var holeDimensionsChanged: js.UndefOr[HoleDimensionsChangedEvent] = js.native
+  var holeDimensionsChanged: js.UndefOr[HoleDimensionsChangedEvent] = js.undefined
   
   /**
     * Gets or sets the inner extent of the doughnut chart. It is percent from the outer ring's radius.
     */
-  var innerExtent: js.UndefOr[Double] = js.native
+  var innerExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets whether all surface interactions with the plot area should be disabled.
     */
-  var isSurfaceInteractionDisabled: js.UndefOr[Boolean] = js.native
+  var isSurfaceInteractionDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
     * to appear blurry.
     */
-  var pixelScalingRatio: js.UndefOr[Double] = js.native
+  var pixelScalingRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the style used when a slice is selected.
     */
-  var selectedStyle: js.UndefOr[js.Any] = js.native
+  var selectedStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * An array of series objects.
     */
-  var series: js.UndefOr[js.Array[IgDoughnutChartSeries]] = js.native
+  var series: js.UndefOr[js.Array[IgDoughnutChartSeries]] = js.undefined
   
   /**
     * Raised when the slice is clicked.
     */
-  var sliceClick: js.UndefOr[SliceClickEvent] = js.native
+  var sliceClick: js.UndefOr[SliceClickEvent] = js.undefined
   
   /**
     * Event fired after a tooltip is hidden
@@ -81,7 +80,7 @@ trait IgDoughnutChart
     * Use ui.actualItemBrush to get item brush.
     * Use ui.actualSeriesBrush to get series brush.
     */
-  var tooltipHidden: js.UndefOr[TooltipHiddenEvent] = js.native
+  var tooltipHidden: js.UndefOr[TooltipHiddenEvent] = js.undefined
   
   /**
     * Event fired when the mouse has left a series and the tooltip is about to hide
@@ -93,7 +92,7 @@ trait IgDoughnutChart
     * Use ui.actualItemBrush to get item brush.
     * Use ui.actualSeriesBrush to get series brush.
     */
-  var tooltipHiding: js.UndefOr[TooltipHidingEvent] = js.native
+  var tooltipHiding: js.UndefOr[TooltipHidingEvent] = js.undefined
   
   /**
     * Event fired when the mouse has hovered on a series and the tooltip is about to show
@@ -105,7 +104,7 @@ trait IgDoughnutChart
     * Use ui.actualItemBrush to get item brush.
     * Use ui.actualSeriesBrush to get series brush.
     */
-  var tooltipShowing: js.UndefOr[TooltipShowingEvent] = js.native
+  var tooltipShowing: js.UndefOr[TooltipShowingEvent] = js.undefined
   
   /**
     * Event fired after a tooltip is shown
@@ -117,12 +116,12 @@ trait IgDoughnutChart
     * Use ui.actualItemBrush to get item brush.
     * Use ui.actualSeriesBrush to get series brush.
     */
-  var tooltipShown: js.UndefOr[TooltipShownEvent] = js.native
+  var tooltipShown: js.UndefOr[TooltipShownEvent] = js.undefined
   
   /**
     * The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object IgDoughnutChart {
   

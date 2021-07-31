@@ -6,18 +6,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewEnvironmentAtmosphereProperties extends Object {
+trait SceneViewEnvironmentAtmosphereProperties
+  extends StObject
+     with Object {
   
   /**
     * Indicates the quality of the atmosphere visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var quality: js.UndefOr[low | high] = js.native
+  var quality: js.UndefOr[low | high] = js.undefined
 }
 object SceneViewEnvironmentAtmosphereProperties {
   

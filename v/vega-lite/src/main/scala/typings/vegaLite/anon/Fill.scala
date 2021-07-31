@@ -2,15 +2,13 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fill extends StObject {
   
-  var fill: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.undefined
   
-  var stroke: js.UndefOr[Boolean] = js.native
+  var stroke: js.UndefOr[Boolean] = js.undefined
 }
 object Fill {
   

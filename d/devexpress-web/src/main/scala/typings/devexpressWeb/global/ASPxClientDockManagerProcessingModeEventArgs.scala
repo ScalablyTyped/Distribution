@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientDockManagerProcessingModeEventArgs")
 @js.native
 class ASPxClientDockManagerProcessingModeEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientDockManagerProcessingModeEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientDockManagerProcessingModeEventArgs {
   /**
     * Initializes a new object of the ASPxClientDockManagerProcessingModeEventArgs type with the specified settings.
     * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
@@ -23,4 +23,22 @@ class ASPxClientDockManagerProcessingModeEventArgs protected ()
     panel: typings.devexpressWeb.ASPxClientDockPanel,
     zone: typings.devexpressWeb.ASPxClientDockZone
   ) = this()
+  
+  /**
+    * Gets the panel currently being processed.
+    */
+  /* CompleteClass */
+  var panel: typings.devexpressWeb.ASPxClientDockPanel = js.native
+  
+  /**
+    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
+    */
+  /* CompleteClass */
+  var processOnServer: Boolean = js.native
+  
+  /**
+    * Gets the zone currently being processed.
+    */
+  /* CompleteClass */
+  var zone: typings.devexpressWeb.ASPxClientDockZone = js.native
 }

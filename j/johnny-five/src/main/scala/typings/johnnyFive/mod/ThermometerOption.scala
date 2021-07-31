@@ -2,19 +2,17 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThermometerOption extends StObject {
   
-  var controller: js.UndefOr[String] = js.native
+  var controller: js.UndefOr[String] = js.undefined
   
-  var freq: js.UndefOr[Double] = js.native
+  var freq: js.UndefOr[Double] = js.undefined
   
-  var pin: String | Double = js.native
+  var pin: String | Double
   
-  var toCelsius: js.UndefOr[js.Function1[/* val */ Double, Double]] = js.native
+  var toCelsius: js.UndefOr[js.Function1[/* val */ Double, Double]] = js.undefined
 }
 object ThermometerOption {
   

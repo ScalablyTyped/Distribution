@@ -4,18 +4,16 @@ import typings.semanticUiApi.SemanticUI.ApiSettings
 import typings.semanticUiApi.semanticUiApiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, 'mockResponseAsync'> */
-@js.native
 trait PickImplmockResponseAsync extends StObject {
   
   var mockResponseAsync: (js.Function2[
     /* settings */ ApiSettings, 
     /* callback */ js.Function1[/* response */ js.Any, Unit], 
     Unit
-  ]) | `false` = js.native
+  ]) | `false`
 }
 object PickImplmockResponseAsync {
   

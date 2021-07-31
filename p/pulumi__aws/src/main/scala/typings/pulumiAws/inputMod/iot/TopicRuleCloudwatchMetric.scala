@@ -3,41 +3,39 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleCloudwatchMetric extends StObject {
   
   /**
     * The CloudWatch metric name.
     */
-  var metricName: Input[String] = js.native
+  var metricName: Input[String]
   
   /**
     * The CloudWatch metric namespace name.
     */
-  var metricNamespace: Input[String] = js.native
+  var metricNamespace: Input[String]
   
   /**
     * An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
     */
-  var metricTimestamp: js.UndefOr[Input[String]] = js.native
+  var metricTimestamp: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)
     */
-  var metricUnit: Input[String] = js.native
+  var metricUnit: Input[String]
   
   /**
     * The CloudWatch metric value.
     */
-  var metricValue: Input[String] = js.native
+  var metricValue: Input[String]
   
   /**
     * The IAM role ARN that allows access to the CloudWatch metric.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
 }
 object TopicRuleCloudwatchMetric {
   

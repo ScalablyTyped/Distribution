@@ -21,7 +21,6 @@ import typings.chrome.chrome.cast.SessionRequest
 import typings.chrome.chrome.cast.Volume
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -108,7 +107,7 @@ trait Typeofcast extends StObject {
   def requestSession(
     successCallback: js.Function1[/* session */ Session, Unit],
     errorCallback: js.Function1[/* error */ Error, Unit],
-    sessionRequest: js.UndefOr[scala.Nothing],
+    sessionRequest: Unit,
     label: String
   ): Unit = js.native
   def requestSession(

@@ -2,19 +2,17 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrilldownActiveDataLabelStyleOptions extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
 }
 object DrilldownActiveDataLabelStyleOptions {
   

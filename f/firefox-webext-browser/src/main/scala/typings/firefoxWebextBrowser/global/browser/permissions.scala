@@ -5,7 +5,6 @@ import typings.firefoxWebextBrowser.browser.permissions.AnyPermissions
 import typings.firefoxWebextBrowser.browser.permissions.Permissions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,16 +14,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object permissions {
   
-  /** Check if the extension has the given permissions. */
-  @JSGlobal("browser.permissions.contains")
+  @JSGlobal("browser.permissions")
   @js.native
-  def contains(permissions: AnyPermissions): js.Promise[Boolean] = js.native
+  val ^ : js.Any = js.native
+  
+  /** Check if the extension has the given permissions. */
+  @scala.inline
+  def contains(permissions: AnyPermissions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(permissions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   /* permissions functions */
   /** Get a list of all the extension's permissions. */
-  @JSGlobal("browser.permissions.getAll")
-  @js.native
-  def getAll(): js.Promise[AnyPermissions] = js.native
+  @scala.inline
+  def getAll(): js.Promise[AnyPermissions] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Promise[AnyPermissions]]
   
   /* permissions events */
   /** Fired when the extension acquires new permissions. */
@@ -38,16 +39,14 @@ object permissions {
   val onRemoved: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]] = js.native
   
   /** Relinquish the given permissions. */
-  @JSGlobal("browser.permissions.remove")
-  @js.native
-  def remove(permissions: Permissions): js.Promise[Boolean] = js.native
+  @scala.inline
+  def remove(permissions: Permissions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(permissions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   /**
     * Request the given permissions.
     *
     * Not allowed in: Devtools pages
     */
-  @JSGlobal("browser.permissions.request")
-  @js.native
-  def request(permissions: Permissions): js.Promise[Boolean] = js.native
+  @scala.inline
+  def request(permissions: Permissions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(permissions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
 }

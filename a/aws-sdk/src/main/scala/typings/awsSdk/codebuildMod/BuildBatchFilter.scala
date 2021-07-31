@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBatchFilter extends StObject {
   
   /**
     * The status of the batch builds to retrieve. Only batch builds that have this status will be retrieved.
     */
-  var status: js.UndefOr[StatusType] = js.native
+  var status: js.UndefOr[StatusType] = js.undefined
 }
 object BuildBatchFilter {
   

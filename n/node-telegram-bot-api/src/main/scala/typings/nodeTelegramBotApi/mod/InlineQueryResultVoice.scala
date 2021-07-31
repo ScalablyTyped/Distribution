@@ -3,32 +3,31 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.voice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultVoice
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: voice = js.native
+  var `type`: voice
   
-  var voice_duration: js.UndefOr[Double] = js.native
+  var voice_duration: js.UndefOr[Double] = js.undefined
   
-  var voice_url: String = js.native
+  var voice_url: String
 }
 object InlineQueryResultVoice {
   
   @scala.inline
-  def apply(id: String, title: String, `type`: voice, voice_url: String): InlineQueryResultVoice = {
+  def apply(id: String, title: String, voice_url: String): InlineQueryResultVoice = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], voice_url = voice_url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("voice")
     __obj.asInstanceOf[InlineQueryResultVoice]
   }
   

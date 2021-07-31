@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FindTaskProperties extends TaskProperties {
+trait FindTaskProperties
+  extends StObject
+     with TaskProperties {
   
   /**
     * Specify the geodatabase version to search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-FindTask.html#gdbVersion)
     */
-  var gdbVersion: js.UndefOr[String] = js.native
+  var gdbVersion: js.UndefOr[String] = js.undefined
 }
 object FindTaskProperties {
   

@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceLivebroadcastsControl extends StandardParameters {
+trait ParamsResourceLivebroadcastsControl
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The displaySlate parameter specifies whether the slate is being enabled
     * or disabled.
     */
-  var displaySlate: js.UndefOr[Boolean] = js.native
+  var displaySlate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The id parameter specifies the YouTube live broadcast ID that uniquely
     * identifies the broadcast in which the slate is being updated.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The offsetTimeMs parameter specifies a positive time offset when the
@@ -41,7 +41,7 @@ trait ParamsResourceLivebroadcastsControl extends StandardParameters {
     * for more details.  Important: You should only specify a value for this
     * parameter if your broadcast stream is delayed.
     */
-  var offsetTimeMs: js.UndefOr[String] = js.native
+  var offsetTimeMs: js.UndefOr[String] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -55,7 +55,7 @@ trait ParamsResourceLivebroadcastsControl extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * This parameter can only be used in a properly authorized request. Note:
@@ -75,7 +75,7 @@ trait ParamsResourceLivebroadcastsControl extends StandardParameters {
     * without having to provide authentication credentials for each separate
     * channel.
     */
-  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies a comma-separated list of one or more
@@ -83,14 +83,14 @@ trait ParamsResourceLivebroadcastsControl extends StandardParameters {
     * part names that you can include in the parameter value are id, snippet,
     * contentDetails, and status.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * The walltime parameter specifies the wall clock time at which the
     * specified slate change will occur. The value is specified in ISO 8601
     * (YYYY-MM-DDThh:mm:ss.sssZ) format.
     */
-  var walltime: js.UndefOr[String] = js.native
+  var walltime: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceLivebroadcastsControl {
   

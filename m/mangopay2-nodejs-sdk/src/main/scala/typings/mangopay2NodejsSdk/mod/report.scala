@@ -10,7 +10,6 @@ import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object report {
@@ -162,22 +161,21 @@ object report {
   }
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.report.ReportData, 'Tag' | 'CallbackURL' | 'DownloadFormat' | 'Sort' | 'Preview' | 'Filters' | 'Columns'> */
-  @js.native
   trait CreateReport extends StObject {
     
-    var CallbackURL: js.UndefOr[String] = js.native
+    var CallbackURL: js.UndefOr[String] = js.undefined
     
-    var Columns: js.UndefOr[js.Array[Column]] = js.native
+    var Columns: js.UndefOr[js.Array[Column]] = js.undefined
     
-    var DownloadFormat: js.UndefOr[CSV] = js.native
+    var DownloadFormat: js.UndefOr[CSV] = js.undefined
     
-    var Filters: js.UndefOr[typings.mangopay2NodejsSdk.mod.report.Filters] = js.native
+    var Filters: js.UndefOr[typings.mangopay2NodejsSdk.mod.report.Filters] = js.undefined
     
-    var Preview: js.UndefOr[Boolean] = js.native
+    var Preview: js.UndefOr[Boolean] = js.undefined
     
-    var Sort: js.UndefOr[String] = js.native
+    var Sort: js.UndefOr[String] = js.undefined
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object CreateReport {
     
@@ -237,83 +235,82 @@ object report {
     }
   }
   
-  @js.native
   trait Filters extends StObject {
     
     /**
       * To return only resources that have CreationDate AFTER this date
       */
-    var AfterDate: Timestamp = js.native
+    var AfterDate: Timestamp
     
     /**
       * A user's ID
       */
-    var AuthorId: String = js.native
+    var AuthorId: String
     
     /**
       * To return only resources that have CreationDate BEFORE this date
       */
-    var BeforeDate: Timestamp = js.native
+    var BeforeDate: Timestamp
     
     /**
       * The maximum amount of DebitedFunds
       */
-    var MaxDebitedFundsAmount: Double = js.native
+    var MaxDebitedFundsAmount: Double
     
     /**
       * The currency for the maximum amount of DebitedFunds
       */
-    var MaxDebitedFundsCurrency: CurrencyISO = js.native
+    var MaxDebitedFundsCurrency: CurrencyISO
     
     /**
       * The maximum amount of Fees
       */
-    var MaxFeesAmount: Double = js.native
+    var MaxFeesAmount: Double
     
     /**
       * The currency for the maximum amount of Fees
       */
-    var MaxFeesCurrency: CurrencyISO = js.native
+    var MaxFeesCurrency: CurrencyISO
     
     /**
       * The minimum amount of DebitedFunds
       */
-    var MinDebitedFundsAmount: Double = js.native
+    var MinDebitedFundsAmount: Double
     
     /**
       * The currency for the minimum amount of DebitedFunds
       */
-    var MinDebitedFundsCurrency: CurrencyISO = js.native
+    var MinDebitedFundsCurrency: CurrencyISO
     
     /**
       * The minimum amount of Fees
       */
-    var MinFeesAmount: Double = js.native
+    var MinFeesAmount: Double
     
     /**
       * The currency for the minimum amount of Fees
       */
-    var MinFeesCurrency: CurrencyISO = js.native
+    var MinFeesCurrency: CurrencyISO
     
     /**
       * The nature of the transaction
       */
-    var Nature: js.Array[TransactionNature] = js.native
+    var Nature: js.Array[TransactionNature]
     
     /**
       * The status of the transaction
       */
-    var Status: js.Array[TransactionStatus] = js.native
+    var Status: js.Array[TransactionStatus]
     
     /**
       * The type of the transaction
       */
-    var Type: js.Array[TransactionType] = js.native
+    var Type: js.Array[TransactionType]
     
     /**
       * The ID of a wallet
       */
-    var WalletId: String = js.native
+    var WalletId: String
   }
   object Filters {
     
@@ -376,63 +373,64 @@ object report {
     }
   }
   
-  @js.native
-  trait ReportData extends EntityBaseData {
+  trait ReportData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * A URL that we will ping when the report is ready to download(works in a similar way to the hooks)
       */
-    var CallbackURL: String = js.native
+    var CallbackURL: String
     
     /**
       * A list of columns / infos to show in the report
       */
-    var Columns: js.Array[Column] = js.native
+    var Columns: js.Array[Column]
     
     /**
       * The format of the report download
       */
-    var DownloadFormat: CSV = js.native
+    var DownloadFormat: CSV
     
     /**
       * The URL to download the report
       */
-    var DownloadURL: String = js.native
+    var DownloadURL: String
     
     /**
       * An object of various filters for the report
       */
-    var Filters: typings.mangopay2NodejsSdk.mod.report.Filters = js.native
+    var Filters: typings.mangopay2NodejsSdk.mod.report.Filters
     
     /**
       * Whether the report should be limited to the first 10 lines(and therefore quicker to execute)
       */
-    var Preview: Boolean = js.native
+    var Preview: Boolean
     
     /**
       * The date when the report was executed
       */
-    var ReportDate: Timestamp = js.native
+    var ReportDate: Timestamp
     
     /**
       * The type of report
       */
-    var ReportType: TRANSACTIONS = js.native
+    var ReportType: TRANSACTIONS
     
     /**
       * The result code
       */
-    var ResultCode: String = js.native
+    var ResultCode: String
     
     /**
       * A verbal explanation of the ResultCode
       */
-    var ResultMessage: String = js.native
+    var ResultMessage: String
     
     /**
       * The column to sort against and direction seperate by a `:`
       */
-    var Sort: String = js.native
+    var Sort: String
   }
   object ReportData {
     
@@ -441,19 +439,17 @@ object report {
       CallbackURL: String,
       Columns: js.Array[Column],
       CreationDate: Double,
-      DownloadFormat: CSV,
       DownloadURL: String,
       Filters: Filters,
       Id: String,
       Preview: Boolean,
       ReportDate: Timestamp,
-      ReportType: TRANSACTIONS,
       ResultCode: String,
       ResultMessage: String,
       Sort: String,
       Tag: String
     ): ReportData = {
-      val __obj = js.Dynamic.literal(CallbackURL = CallbackURL.asInstanceOf[js.Any], Columns = Columns.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], DownloadFormat = DownloadFormat.asInstanceOf[js.Any], DownloadURL = DownloadURL.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Preview = Preview.asInstanceOf[js.Any], ReportDate = ReportDate.asInstanceOf[js.Any], ReportType = ReportType.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Sort = Sort.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(CallbackURL = CallbackURL.asInstanceOf[js.Any], Columns = Columns.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], DownloadFormat = "CSV", DownloadURL = DownloadURL.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Preview = Preview.asInstanceOf[js.Any], ReportDate = ReportDate.asInstanceOf[js.Any], ReportType = "TRANSACTIONS", ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Sort = Sort.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReportData]
     }
     

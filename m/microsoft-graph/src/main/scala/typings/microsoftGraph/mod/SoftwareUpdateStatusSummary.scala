@@ -2,56 +2,56 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SoftwareUpdateStatusSummary extends Entity {
+trait SoftwareUpdateStatusSummary
+  extends StObject
+     with Entity {
   
   // Number of compliant devices.
-  var compliantDeviceCount: js.UndefOr[Double] = js.native
+  var compliantDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of compliant users.
-  var compliantUserCount: js.UndefOr[Double] = js.native
+  var compliantUserCount: js.UndefOr[Double] = js.undefined
   
   // Number of conflict devices.
-  var conflictDeviceCount: js.UndefOr[Double] = js.native
+  var conflictDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of conflict users.
-  var conflictUserCount: js.UndefOr[Double] = js.native
+  var conflictUserCount: js.UndefOr[Double] = js.undefined
   
   // The name of the policy.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Number of devices had error.
-  var errorDeviceCount: js.UndefOr[Double] = js.native
+  var errorDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of users had error.
-  var errorUserCount: js.UndefOr[Double] = js.native
+  var errorUserCount: js.UndefOr[Double] = js.undefined
   
   // Number of non compliant devices.
-  var nonCompliantDeviceCount: js.UndefOr[Double] = js.native
+  var nonCompliantDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of non compliant users.
-  var nonCompliantUserCount: js.UndefOr[Double] = js.native
+  var nonCompliantUserCount: js.UndefOr[Double] = js.undefined
   
   // Number of not applicable devices.
-  var notApplicableDeviceCount: js.UndefOr[Double] = js.native
+  var notApplicableDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of not applicable users.
-  var notApplicableUserCount: js.UndefOr[Double] = js.native
+  var notApplicableUserCount: js.UndefOr[Double] = js.undefined
   
   // Number of remediated devices.
-  var remediatedDeviceCount: js.UndefOr[Double] = js.native
+  var remediatedDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of remediated users.
-  var remediatedUserCount: js.UndefOr[Double] = js.native
+  var remediatedUserCount: js.UndefOr[Double] = js.undefined
   
   // Number of unknown devices.
-  var unknownDeviceCount: js.UndefOr[Double] = js.native
+  var unknownDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of unknown users.
-  var unknownUserCount: js.UndefOr[Double] = js.native
+  var unknownUserCount: js.UndefOr[Double] = js.undefined
 }
 object SoftwareUpdateStatusSummary {
   

@@ -2,19 +2,17 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A server-stored registry credential used to validate device credentials.
   */
-@js.native
 trait SchemaRegistryCredential extends StObject {
   
   /**
     * A public key certificate used to verify the device credentials.
     */
-  var publicKeyCertificate: js.UndefOr[SchemaPublicKeyCertificate] = js.native
+  var publicKeyCertificate: js.UndefOr[SchemaPublicKeyCertificate] = js.undefined
 }
 object SchemaRegistryCredential {
   

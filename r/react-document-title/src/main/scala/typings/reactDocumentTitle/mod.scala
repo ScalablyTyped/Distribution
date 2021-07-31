@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactChild
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,12 +15,11 @@ object mod {
   
   type DocumentTitle = Component[DocumentTitleProps, js.Any, js.Any]
   
-  @js.native
   trait DocumentTitleProps extends StObject {
     
-    var children: js.UndefOr[ReactChild | Null] = js.native
+    var children: js.UndefOr[ReactChild | Null] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object DocumentTitleProps {
     

@@ -24,64 +24,64 @@ import typings.ink.inkStrings.wrap
 import typings.yogaLayout.mod.YogaNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applyStylesMod {
   
-  @JSImport("ink/build/apply-styles", "applyStyles")
+  @JSImport("ink/build/apply-styles", JSImport.Namespace)
   @js.native
-  def applyStyles(node: YogaNode): Unit = js.native
-  @JSImport("ink/build/apply-styles", "applyStyles")
-  @js.native
-  def applyStyles(node: YogaNode, style: Styles): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def applyStyles(node: YogaNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyStyles")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def applyStyles(node: YogaNode, style: Styles): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyStyles")(node.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Styles extends StObject {
     
-    var alignItems: js.UndefOr[`flex-start` | center | `flex-end` | stretch] = js.native
+    var alignItems: js.UndefOr[`flex-start` | center | `flex-end` | stretch] = js.undefined
     
-    var display: js.UndefOr[flex | none] = js.native
+    var display: js.UndefOr[flex | none] = js.undefined
     
-    var flexBasis: js.UndefOr[Double | String] = js.native
+    var flexBasis: js.UndefOr[Double | String] = js.undefined
     
-    var flexDirection: js.UndefOr[row | column | `row-reverse` | `column-reverse`] = js.native
+    var flexDirection: js.UndefOr[row | column | `row-reverse` | `column-reverse`] = js.undefined
     
-    var flexGrow: js.UndefOr[Double] = js.native
+    var flexGrow: js.UndefOr[Double] = js.undefined
     
-    var flexShrink: js.UndefOr[Double] = js.native
+    var flexShrink: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var justifyContent: js.UndefOr[`flex-start` | `flex-end` | `space-between` | `space-around` | center] = js.native
+    var justifyContent: js.UndefOr[`flex-start` | `flex-end` | `space-between` | `space-around` | center] = js.undefined
     
-    var marginBottom: js.UndefOr[Double] = js.native
+    var marginBottom: js.UndefOr[Double] = js.undefined
     
-    var marginLeft: js.UndefOr[Double] = js.native
+    var marginLeft: js.UndefOr[Double] = js.undefined
     
-    var marginRight: js.UndefOr[Double] = js.native
+    var marginRight: js.UndefOr[Double] = js.undefined
     
-    var marginTop: js.UndefOr[Double] = js.native
+    var marginTop: js.UndefOr[Double] = js.undefined
     
-    var minHeight: js.UndefOr[Double | String] = js.native
+    var minHeight: js.UndefOr[Double | String] = js.undefined
     
-    var minWidth: js.UndefOr[Double | String] = js.native
+    var minWidth: js.UndefOr[Double | String] = js.undefined
     
-    var paddingBottom: js.UndefOr[Double] = js.native
+    var paddingBottom: js.UndefOr[Double] = js.undefined
     
-    var paddingLeft: js.UndefOr[Double] = js.native
+    var paddingLeft: js.UndefOr[Double] = js.undefined
     
-    var paddingRight: js.UndefOr[Double] = js.native
+    var paddingRight: js.UndefOr[Double] = js.undefined
     
-    var paddingTop: js.UndefOr[Double] = js.native
+    var paddingTop: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[absolute | relative] = js.native
+    var position: js.UndefOr[absolute | relative] = js.undefined
     
     var textWrap: js.UndefOr[
         wrap | end | middle | `truncate-end` | truncate | `truncate-middle` | `truncate-start`
-      ] = js.native
+      ] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object Styles {
     

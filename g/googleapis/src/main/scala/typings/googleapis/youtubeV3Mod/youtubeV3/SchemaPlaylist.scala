@@ -3,7 +3,6 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,51 +22,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * or remove items from those lists by calling the   playlistItems.insert and
   * playlistItems.delete methods.
   */
-@js.native
 trait SchemaPlaylist extends StObject {
   
   /**
     * The contentDetails object contains information like video count.
     */
-  var contentDetails: js.UndefOr[SchemaPlaylistContentDetails] = js.native
+  var contentDetails: js.UndefOr[SchemaPlaylistContentDetails] = js.undefined
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the playlist.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#playlist&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Localizations for different languages
     */
-  var localizations: js.UndefOr[StringDictionary[SchemaPlaylistLocalization]] = js.native
+  var localizations: js.UndefOr[StringDictionary[SchemaPlaylistLocalization]] = js.undefined
   
   /**
     * The player object contains information that you would use to play the
     * playlist in an embedded player.
     */
-  var player: js.UndefOr[SchemaPlaylistPlayer] = js.native
+  var player: js.UndefOr[SchemaPlaylistPlayer] = js.undefined
   
   /**
     * The snippet object contains basic details about the playlist, such as its
     * title and description.
     */
-  var snippet: js.UndefOr[SchemaPlaylistSnippet] = js.native
+  var snippet: js.UndefOr[SchemaPlaylistSnippet] = js.undefined
   
   /**
     * The status object contains status information for the playlist.
     */
-  var status: js.UndefOr[SchemaPlaylistStatus] = js.native
+  var status: js.UndefOr[SchemaPlaylistStatus] = js.undefined
 }
 object SchemaPlaylist {
   

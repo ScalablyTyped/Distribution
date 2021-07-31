@@ -3,20 +3,18 @@ package typings.chartist.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // data formats are not well documented on all the ways they can be passed to the constructors
 // this definition gives some intellisense, but does not protect the user from misuse
 // TODO: come in and tidy this up and make it fit better
-@js.native
 trait IChartistData extends StObject {
   
-  var labels: js.UndefOr[js.Array[Date | Double | String]] = js.native
+  var labels: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
   
   var series: js.Array[
     (js.Array[Double | IChartistData | IChartistSeriesData]) | Double | IChartistSeriesData
-  ] = js.native
+  ]
 }
 object IChartistData {
   

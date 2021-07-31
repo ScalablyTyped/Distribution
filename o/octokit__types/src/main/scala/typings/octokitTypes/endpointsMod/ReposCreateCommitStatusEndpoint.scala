@@ -6,39 +6,37 @@ import typings.octokitTypes.octokitTypesStrings.pending
 import typings.octokitTypes.octokitTypesStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateCommitStatusEndpoint extends StObject {
   
   /**
     * A string label to differentiate this status from the status of other systems.
     */
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
   /**
     * A short description of the status.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
-  var sha: String = js.native
+  var sha: String
   
   /**
     * The state of the status. Can be one of `error`, `failure`, `pending`, or `success`.
     */
-  var state: error | failure | pending | success = js.native
+  var state: error | failure | pending | success
   
   /**
     * The target URL to associate with this status. This URL will be linked from the GitHub UI to allow users to easily see the source of the status.
     * For example, if your continuous integration system is posting build status, you would want to provide the deep link for the build output for this specific SHA:
     * `http://ci.example.com/user/repo/build/sha`
     */
-  var target_url: js.UndefOr[String] = js.native
+  var target_url: js.UndefOr[String] = js.undefined
 }
 object ReposCreateCommitStatusEndpoint {
   

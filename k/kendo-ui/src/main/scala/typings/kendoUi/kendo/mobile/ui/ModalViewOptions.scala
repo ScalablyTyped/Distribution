@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalViewOptions extends StObject {
   
-  var beforeOpen: js.UndefOr[js.Function1[/* e */ ModalViewBeforeOpenEvent, Unit]] = js.native
+  var beforeOpen: js.UndefOr[js.Function1[/* e */ ModalViewBeforeOpenEvent, Unit]] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ ModalViewCloseEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ ModalViewCloseEvent, Unit]] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var init: js.UndefOr[js.Function1[/* e */ ModalViewInitEvent, Unit]] = js.native
+  var init: js.UndefOr[js.Function1[/* e */ ModalViewInitEvent, Unit]] = js.undefined
   
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ ModalViewOpenEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ ModalViewOpenEvent, Unit]] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ModalViewOptions {
   

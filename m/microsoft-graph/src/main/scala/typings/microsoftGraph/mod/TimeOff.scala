@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeOff extends ChangeTrackedEntity {
+trait TimeOff
+  extends StObject
+     with ChangeTrackedEntity {
   
   // The draft version of this timeOff that is viewable by managers. Required.
-  var draftTimeOff: js.UndefOr[NullableOption[TimeOffItem]] = js.native
+  var draftTimeOff: js.UndefOr[NullableOption[TimeOffItem]] = js.undefined
   
   // The shared version of this timeOff that is viewable by both employees and managers. Required.
-  var sharedTimeOff: js.UndefOr[NullableOption[TimeOffItem]] = js.native
+  var sharedTimeOff: js.UndefOr[NullableOption[TimeOffItem]] = js.undefined
   
   // ID of the user assigned to the timeOff. Required.
-  var userId: js.UndefOr[NullableOption[String]] = js.native
+  var userId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TimeOff {
   

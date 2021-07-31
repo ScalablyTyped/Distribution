@@ -5,36 +5,31 @@ import typings.images.anon.Height
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("images", JSImport.Namespace)
-  @js.native
-  def apply(buffer: Buffer): ImagesStatic = js.native
-  @JSImport("images", JSImport.Namespace)
-  @js.native
-  def apply(buffer: Buffer, start: js.UndefOr[scala.Nothing], end: Double): ImagesStatic = js.native
-  @JSImport("images", JSImport.Namespace)
-  @js.native
-  def apply(buffer: Buffer, start: Double): ImagesStatic = js.native
-  @JSImport("images", JSImport.Namespace)
-  @js.native
-  def apply(buffer: Buffer, start: Double, end: Double): ImagesStatic = js.native
-  @JSImport("images", JSImport.Namespace)
-  @js.native
-  def apply(file: String): ImagesStatic = js.native
-  @JSImport("images", JSImport.Namespace)
-  @js.native
-  def apply(image: ImagesStatic): ImagesStatic = js.native
+  @scala.inline
+  def apply(buffer: Buffer): ImagesStatic = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[ImagesStatic]
+  @scala.inline
+  def apply(buffer: Buffer, start: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
+  @scala.inline
+  def apply(buffer: Buffer, start: Double, end: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
+  @scala.inline
+  def apply(buffer: Buffer, start: Unit, end: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
+  @scala.inline
+  def apply(file: String): ImagesStatic = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[ImagesStatic]
+  @scala.inline
+  def apply(image: ImagesStatic): ImagesStatic = ^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any]).asInstanceOf[ImagesStatic]
   // tslint:disable-line unified-signatures
+  @scala.inline
+  def apply(image: ImagesStatic, x: Double, y: Double, width: Double, height: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
+  @scala.inline
+  def apply(width: Double, height: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
+  
   @JSImport("images", JSImport.Namespace)
   @js.native
-  def apply(image: ImagesStatic, x: Double, y: Double, width: Double, height: Double): ImagesStatic = js.native
-  @JSImport("images", JSImport.Namespace)
-  @js.native
-  def apply(width: Double, height: Double): ImagesStatic = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("images", "ImagesStatic")
   @js.native
@@ -58,13 +53,13 @@ object mod {
     def loadFromBuffer(buffer: Buffer): ImagesStatic = js.native
     
     def resize(width: Double): ImagesStatic = js.native
-    def resize(width: Double, height: js.UndefOr[scala.Nothing], filter: String): ImagesStatic = js.native
     def resize(width: Double, height: Double): ImagesStatic = js.native
     def resize(width: Double, height: Double, filter: String): ImagesStatic = js.native
+    def resize(width: Double, height: Unit, filter: String): ImagesStatic = js.native
     
     def save(file: String): Unit = js.native
     def save(file: String, config: ImagesConfig): Unit = js.native
-    def save(file: String, `type`: js.UndefOr[scala.Nothing], config: ImagesConfig): Unit = js.native
+    def save(file: String, `type`: Unit, config: ImagesConfig): Unit = js.native
     def save(file: String, `type`: SupportType): Unit = js.native
     def save(file: String, `type`: SupportType, config: ImagesConfig): Unit = js.native
     

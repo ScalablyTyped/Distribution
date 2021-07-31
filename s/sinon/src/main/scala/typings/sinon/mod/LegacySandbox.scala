@@ -3,13 +3,11 @@ package typings.sinon.mod
 import typings.sinon.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegacySandbox extends StObject {
   
-  var sandbox: `0` = js.native
+  var sandbox: `0`
 }
 object LegacySandbox {
   

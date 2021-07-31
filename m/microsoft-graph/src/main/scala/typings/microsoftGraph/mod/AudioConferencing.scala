@@ -2,22 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioConferencing extends StObject {
   
-  var conferenceId: js.UndefOr[NullableOption[String]] = js.native
+  var conferenceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A URL to the externally-accessible web page that contains dial-in information.
-  var dialinUrl: js.UndefOr[NullableOption[String]] = js.native
+  var dialinUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The toll-free number that connects to the Audio Conference Provider.
-  var tollFreeNumber: js.UndefOr[NullableOption[String]] = js.native
+  var tollFreeNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The toll number that connects to the Audio Conference Provider.
-  var tollNumber: js.UndefOr[NullableOption[String]] = js.native
+  var tollNumber: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AudioConferencing {
   

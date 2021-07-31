@@ -6,17 +6,17 @@ import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HoverLabel extends Label {
+trait HoverLabel
+  extends StObject
+     with Label {
   
   /**
     * Sets the horizontal alignment of the text content within hover label box.
     * @default "auto"
     */
-  var align: left | right | auto = js.native
+  var align: left | right | auto
   
   /**
     * Sets the default length (in number of characters) of the trace name
@@ -24,7 +24,7 @@ trait HoverLabel extends Label {
     * -1 shows the whole name regardless of length.
     * @default 15
     */
-  var namelength: Double = js.native
+  var namelength: Double
 }
 object HoverLabel {
   

@@ -3,11 +3,12 @@ package typings.grunt.grunt
 import typings.grunt.grunt.task.CommonTaskModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITaskComponents extends CommonTaskModule {
+trait ITaskComponents
+  extends StObject
+     with CommonTaskModule {
   
   /**
     * Load tasks from the specified Grunt plugin.

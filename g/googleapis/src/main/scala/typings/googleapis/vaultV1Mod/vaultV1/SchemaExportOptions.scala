@@ -2,39 +2,37 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Export advanced options
   */
-@js.native
 trait SchemaExportOptions extends StObject {
   
   /**
     * Option available for Drive export.
     */
-  var driveOptions: js.UndefOr[SchemaDriveExportOptions] = js.native
+  var driveOptions: js.UndefOr[SchemaDriveExportOptions] = js.undefined
   
   /**
     * Option available for groups export.
     */
-  var groupsOptions: js.UndefOr[SchemaGroupsExportOptions] = js.native
+  var groupsOptions: js.UndefOr[SchemaGroupsExportOptions] = js.undefined
   
   /**
     * Option available for hangouts chat export.
     */
-  var hangoutsChatOptions: js.UndefOr[SchemaHangoutsChatExportOptions] = js.native
+  var hangoutsChatOptions: js.UndefOr[SchemaHangoutsChatExportOptions] = js.undefined
   
   /**
     * Option available for mail export.
     */
-  var mailOptions: js.UndefOr[SchemaMailExportOptions] = js.native
+  var mailOptions: js.UndefOr[SchemaMailExportOptions] = js.undefined
   
   /**
     * The requested export location.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object SchemaExportOptions {
   

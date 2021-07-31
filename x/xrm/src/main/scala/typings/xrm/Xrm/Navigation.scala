@@ -33,7 +33,6 @@ import typings.xrm.xrmStrings.userquery
 import typings.xrm.xrmStrings.webresource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,25 +41,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Navigation extends StObject {
   
-  def navigateTo(pageInput: PageInputEntityList): PromiseLike[_] = js.native
-  def navigateTo(pageInput: PageInputEntityList, navigationOptions: NavigationOptions): PromiseLike[_] = js.native
+  def navigateTo(pageInput: PageInputEntityList): PromiseLike[js.Any] = js.native
+  def navigateTo(pageInput: PageInputEntityList, navigationOptions: NavigationOptions): PromiseLike[js.Any] = js.native
   /**
     * Navigates to the specified page.
     * @param pageInput Input about the page to navigate to. The object definition changes depending on the type of page to navigate to: entity list or HTML web resource.
     * @param navigationOptions Options for navigating to a page: whether to open inline or in a dialog. If you don't specify this parameter, page is opened inline by default.
     */
-  def navigateTo(pageInput: PageInputEntityRecord): PromiseLike[_] = js.native
-  def navigateTo(pageInput: PageInputEntityRecord, navigationOptions: NavigationOptions): PromiseLike[_] = js.native
-  def navigateTo(pageInput: PageInputHtmlWebResource): PromiseLike[_] = js.native
-  def navigateTo(pageInput: PageInputHtmlWebResource, navigationOptions: NavigationOptions): PromiseLike[_] = js.native
+  def navigateTo(pageInput: PageInputEntityRecord): PromiseLike[js.Any] = js.native
+  def navigateTo(pageInput: PageInputEntityRecord, navigationOptions: NavigationOptions): PromiseLike[js.Any] = js.native
+  def navigateTo(pageInput: PageInputHtmlWebResource): PromiseLike[js.Any] = js.native
+  def navigateTo(pageInput: PageInputHtmlWebResource, navigationOptions: NavigationOptions): PromiseLike[js.Any] = js.native
   
   /**
     * Displays an alert dialog containing a message and a button.
     * @param alertStrings The strings to be used in the alert dialog.
     * @param alertOptions The height and width options for alert dialog
     */
-  def openAlertDialog(alertStrings: AlertStrings): PromiseLike[_] = js.native
-  def openAlertDialog(alertStrings: AlertStrings, alertOptions: DialogSizeOptions): PromiseLike[_] = js.native
+  def openAlertDialog(alertStrings: AlertStrings): PromiseLike[js.Any] = js.native
+  def openAlertDialog(alertStrings: AlertStrings, alertOptions: DialogSizeOptions): PromiseLike[js.Any] = js.native
   
   /**
     * Displays a confirmation dialog box containing a message and two buttons.
@@ -74,7 +73,7 @@ trait Navigation extends StObject {
     * Displays an error dialog.
     * @param errorOptions An object to specify the options for error dialog.
     */
-  def openErrorDialog(errorOptions: ErrorDialogOptions): PromiseLike[_] = js.native
+  def openErrorDialog(errorOptions: ErrorDialogOptions): PromiseLike[js.Any] = js.native
   
   /**
     * Opens a file.
@@ -103,7 +102,7 @@ trait Navigation extends StObject {
     *                                                 It is advised to use encodeURIcomponent() to encode the value.
     */
   def openWebResource(webResourceName: String): Unit = js.native
-  def openWebResource(webResourceName: String, windowOptions: js.UndefOr[scala.Nothing], data: String): Unit = js.native
+  def openWebResource(webResourceName: String, windowOptions: Unit, data: String): Unit = js.native
   def openWebResource(webResourceName: String, windowOptions: OpenWebresourceOptions): Unit = js.native
   def openWebResource(webResourceName: String, windowOptions: OpenWebresourceOptions, data: String): Unit = js.native
 }
@@ -113,23 +112,22 @@ trait Navigation extends StObject {
   */
 object Navigation {
   
-  @js.native
   trait AlertStrings extends StObject {
     
     /**
       * (Optional) The confirm button label.If you do not specify the button label, OK is used as the button label.
       */
-    var confirmButtonLabel: js.UndefOr[String] = js.native
+    var confirmButtonLabel: js.UndefOr[String] = js.undefined
     
     /**
       *  The message to be displyed in the alert dialog.
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * (Optional) The title of the alert dialog.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object AlertStrings {
     
@@ -162,13 +160,12 @@ object Navigation {
   /**
     * An object with the confirmed (Boolean) attribute is passed that indicates whether the confirm button was clicked to close the dialog.
     */
-  @js.native
   trait ConfirmResult extends StObject {
     
     /**
       * true if the confirm button was clicked to close the dialog.
       */
-    var confirmed: Boolean = js.native
+    var confirmed: Boolean
   }
   object ConfirmResult {
     
@@ -186,33 +183,32 @@ object Navigation {
     }
   }
   
-  @js.native
   trait ConfirmStrings extends StObject {
     
     /**
       * (Optional) The cancel button label. If you do not specify the cancel button label, Cancel is used as the button label.
       */
-    var cancelButtonLabel: js.UndefOr[String] = js.native
+    var cancelButtonLabel: js.UndefOr[String] = js.undefined
     
     /**
       * (Optional) The confirm button label.If you do not specify the button label, OK is used as the button label.
       */
-    var confirmButtonLabel: js.UndefOr[String] = js.native
+    var confirmButtonLabel: js.UndefOr[String] = js.undefined
     
     /**
       * (Optional) The subtitle to be displayed in the confirmation dialog.
       */
-    var subtitle: js.UndefOr[String] = js.native
+    var subtitle: js.UndefOr[String] = js.undefined
     
     /**
       * The message to be displyed in the alert dialog.
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * (Optional) The title to be displyed in the confirmation dialog.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ConfirmStrings {
     
@@ -254,18 +250,17 @@ object Navigation {
     }
   }
   
-  @js.native
   trait DialogSizeOptions extends StObject {
     
     /**
       * Height of the alert dialog in pixels.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Width of the alert dialog pixels.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object DialogSizeOptions {
     
@@ -289,48 +284,47 @@ object Navigation {
   /**
     * Entity form options for opening the form
     */
-  @js.native
   trait EntityFormOptions extends StObject {
     
     /**
       * Indicates whether to display the command bar.If you do not specify this parameter, the command bar is displayed by default.
       */
-    var cmdbar: js.UndefOr[Boolean] = js.native
+    var cmdbar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Designates a record that will provide default values based on mapped attribute values.The lookup object has the following String properties: entityType, id, and name (optional).
       */
-    var createFromEntity: js.UndefOr[LookupValue] = js.native
+    var createFromEntity: js.UndefOr[LookupValue] = js.undefined
     
     /**
       * ID of the entity record to display the form for.
       */
-    var entityId: js.UndefOr[String] = js.native
+    var entityId: js.UndefOr[String] = js.undefined
     
     /**
       * Logical name of the entity to display the form for.
       */
-    var entityName: js.UndefOr[String] = js.native
+    var entityName: js.UndefOr[String] = js.undefined
     
     /**
       * ID of the form instance to be displayed.
       */
-    var formId: js.UndefOr[String] = js.native
+    var formId: js.UndefOr[String] = js.undefined
     
     /**
       * Height of the form window to be displayed in pixels.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Undocumented at this time
       */
-    var isCrossEntityNavigate: js.UndefOr[Boolean] = js.native
+    var isCrossEntityNavigate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Undocumented at this time
       */
-    var isOfflineSyncError: js.UndefOr[Boolean] = js.native
+    var isOfflineSyncError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls whether the navigation bar is displayed and whether application navigation is available using the areas and subareas defined in the sitemap.Valid vlaues are: "on", "off", or "entity".
@@ -338,49 +332,49 @@ object Navigation {
       * * off: The navigation bar is not displayed.People can navigate using other user interface elements or the back and forward buttons.
       * * entity: On an entity form, only the navigation options for related entities are available.After navigating to a related entity, a back button is displayed in the navigation bar to allow returning to the original record.
       */
-    var navBar: js.UndefOr[NavBarDisplay] = js.native
+    var navBar: js.UndefOr[NavBarDisplay] = js.undefined
     
     /**
       * Indicates whether to display form in a new window.
       */
-    var openInNewWindow: js.UndefOr[Boolean] = js.native
+    var openInNewWindow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ID of the business process to be displayed on the form.
       */
-    var processId: js.UndefOr[String] = js.native
+    var processId: js.UndefOr[String] = js.undefined
     
     /**
       * ID of the business process instance to be displayed on the form.
       */
-    var processInstanceId: js.UndefOr[String] = js.native
+    var processInstanceId: js.UndefOr[String] = js.undefined
     
     /**
       * Define a relationship object to display the related records on the form.
       */
-    var relationship: js.UndefOr[Relationship] = js.native
+    var relationship: js.UndefOr[Relationship] = js.undefined
     
     /**
       * ID of the selected stage in business process instance.
       */
-    var selectedStageId: js.UndefOr[String] = js.native
+    var selectedStageId: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates whether to open a quick create form.
       */
-    var useQuickCreateForm: js.UndefOr[Boolean] = js.native
+    var useQuickCreateForm: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Width of the form window to be displayed in pixels.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify one of the following values for the window position of the form on the screen:
       * * 1:center
       * * 2:side
       */
-    var windowPosition: js.UndefOr[WindowPositions] = js.native
+    var windowPosition: js.UndefOr[WindowPositions] = js.undefined
   }
   object EntityFormOptions {
     
@@ -500,26 +494,25 @@ object Navigation {
   /**
     * Details to show in the Error dialog
     */
-  @js.native
   trait ErrorDialogOptions extends StObject {
     
     /**
       * Details about the error. When you specify this, the Download Log File button is available in the error message,
       * and clicking it will let users download a text file with the content specified in this attribute.
       */
-    var details: js.UndefOr[String] = js.native
+    var details: js.UndefOr[String] = js.undefined
     
     /**
       * The error code. If you just set errorCode, the message for the error code is automatically
       * retrieved from the server and displayed in the error dialog.
       * If you specify an invalid errorCode value, an error dialog with a default error message is displyed.
       */
-    var errorCode: js.UndefOr[Double] = js.native
+    var errorCode: js.UndefOr[Double] = js.undefined
     
     /**
       *  The message to be displayed in the error dialog.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ErrorDialogOptions {
     
@@ -552,28 +545,27 @@ object Navigation {
     }
   }
   
-  @js.native
   trait FileDetails extends StObject {
     
     /**
       * Contents of the file.
       */
-    var fileContent: String = js.native
+    var fileContent: String
     
     /**
       * Name of the file.
       */
-    var fileName: String = js.native
+    var fileName: String
     
     /**
       * Size of the file in KB.
       */
-    var fileSize: Double = js.native
+    var fileSize: Double
     
     /**
       * String. MIME type of the file.
       */
-    var mimeType: String = js.native
+    var mimeType: String
   }
   object FileDetails {
     
@@ -603,29 +595,28 @@ object Navigation {
   /**
     * Options for navigating to a page: whether to open inline or in a dialog. If you don't specify this parameter, page is opened inline by default.
     * */
-  @js.native
   trait NavigationOptions extends StObject {
     
     /**
       * The width of dialog. To specify the width in pixels, just type a numeric value. To specify the width in percentage, specify an object of type
       * */
-    var height: js.UndefOr[Double | SizeValue] = js.native
+    var height: js.UndefOr[Double | SizeValue] = js.undefined
     
     /**
       * Specify 1 to open the dialog in center; 2 to open the dialog on the side. Default is 1 (center).
       * */
-    var position: js.UndefOr[`1` | `2`] = js.native
+    var position: js.UndefOr[`1` | `2`] = js.undefined
     
     /**
       * Specify 1 to open the page inline; 2 to open the page in a dialog.
       * Entity lists can only be opened inline; web resources can be opened either inline or in a dialog.
       * */
-    var target: `1` | `2` = js.native
+    var target: `1` | `2`
     
     /**
       * The width of dialog. To specify the width in pixels, just type a numeric value. To specify the width in percentage, specify an object of type
       * */
-    var width: js.UndefOr[Double | SizeValue] = js.native
+    var width: js.UndefOr[Double | SizeValue] = js.undefined
   }
   object NavigationOptions {
     
@@ -660,18 +651,17 @@ object Navigation {
       def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
     
-    @js.native
     trait SizeValue extends StObject {
       
       /**
         * The unit of measurement. Specify "%" or "px". Default value is "px"
         * */
-      var unit: Percentsign | px = js.native
+      var unit: Percentsign | px
       
       /**
         * The numerical value
         * */
-      var value: Double = js.native
+      var value: Double
     }
     object SizeValue {
       
@@ -693,13 +683,12 @@ object Navigation {
     }
   }
   
-  @js.native
   trait OpenFormResult extends StObject {
     
     /**
       * Identifies the record displayed or created
       */
-    var savedEntityReference: js.Array[LookupValue] = js.native
+    var savedEntityReference: js.Array[LookupValue]
   }
   object OpenFormResult {
     
@@ -720,13 +709,14 @@ object Navigation {
     }
   }
   
-  @js.native
-  trait OpenWebresourceOptions extends DialogSizeOptions {
+  trait OpenWebresourceOptions
+    extends StObject
+       with DialogSizeOptions {
     
     /**
       * Indicates whether to open the web resource in a new window.
       */
-    var openInNewWindow: Boolean = js.native
+    var openInNewWindow: Boolean
   }
   object OpenWebresourceOptions {
     
@@ -744,31 +734,30 @@ object Navigation {
     }
   }
   
-  @js.native
   trait PageInputEntityList extends StObject {
     
     /**
       * The logical name of the entity to load in the list control.
       * */
-    var entityName: String = js.native
+    var entityName: String
     
-    var pageType: entitylist = js.native
+    var pageType: entitylist
     
     /**
       * The ID of the view to load. If you don't specify it, navigates to the default main view for the entity.
       * */
-    var viewId: js.UndefOr[String] = js.native
+    var viewId: js.UndefOr[String] = js.undefined
     
     /**
       * Type of view to load. Specify "savedquery" or "userquery".
       * */
-    var viewType: js.UndefOr[savedquery | userquery] = js.native
+    var viewType: js.UndefOr[savedquery | userquery] = js.undefined
   }
   object PageInputEntityList {
     
     @scala.inline
-    def apply(entityName: String, pageType: entitylist): PageInputEntityList = {
-      val __obj = js.Dynamic.literal(entityName = entityName.asInstanceOf[js.Any], pageType = pageType.asInstanceOf[js.Any])
+    def apply(entityName: String): PageInputEntityList = {
+      val __obj = js.Dynamic.literal(entityName = entityName.asInstanceOf[js.Any], pageType = "entitylist")
       __obj.asInstanceOf[PageInputEntityList]
     }
     
@@ -795,71 +784,70 @@ object Navigation {
     }
   }
   
-  @js.native
   trait PageInputEntityRecord extends StObject {
     
     /**
       * Designates a record that will provide default values based on mapped attribute values. The lookup object has the following String properties: entityType, id, and name (optional).
       */
-    var createFromEntity: js.UndefOr[Boolean] = js.native
+    var createFromEntity: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A dictionary object that passes extra parameters to the form. Invalid parameters will cause an error.
       */
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * ID of the entity record to display the form for. If you don't specify this value, the form will be opened in create mode.
       * */
-    var entityId: js.UndefOr[String] = js.native
+    var entityId: js.UndefOr[String] = js.undefined
     
     /**
       * Logical name of the entity to display the form for.
       * */
-    var entityName: String = js.native
+    var entityName: String
     
     /**
       * ID of the form instance to be displayed.
       */
-    var formId: js.UndefOr[String] = js.native
+    var formId: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates whether the form is navigated to from a different entity using cross-entity business process flow.
       */
-    var isCrossEntityNavigate: js.UndefOr[Boolean] = js.native
+    var isCrossEntityNavigate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether there are any offline sync errors.
       */
-    var isOfflineSyncError: js.UndefOr[Boolean] = js.native
+    var isOfflineSyncError: js.UndefOr[Boolean] = js.undefined
     
-    var pageType: entityrecord = js.native
+    var pageType: entityrecord
     
     /**
       * ID of the business process to be displayed on the form.
       */
-    var processId: js.UndefOr[String] = js.native
+    var processId: js.UndefOr[String] = js.undefined
     
     /**
       * ID of the business process instance to be displayed on the form.
       */
-    var processInstanceId: js.UndefOr[String] = js.native
+    var processInstanceId: js.UndefOr[String] = js.undefined
     
     /**
       * Define a relationship object to display the related records on the form.
       */
-    var relationship: js.UndefOr[Relationship] = js.native
+    var relationship: js.UndefOr[Relationship] = js.undefined
     
     /**
       * ID of the selected stage in business process instance.
       */
-    var selectedStageId: js.UndefOr[String] = js.native
+    var selectedStageId: js.UndefOr[String] = js.undefined
   }
   object PageInputEntityRecord {
     
     @scala.inline
-    def apply(entityName: String, pageType: entityrecord): PageInputEntityRecord = {
-      val __obj = js.Dynamic.literal(entityName = entityName.asInstanceOf[js.Any], pageType = pageType.asInstanceOf[js.Any])
+    def apply(entityName: String): PageInputEntityRecord = {
+      val __obj = js.Dynamic.literal(entityName = entityName.asInstanceOf[js.Any], pageType = "entityrecord")
       __obj.asInstanceOf[PageInputEntityRecord]
     }
     
@@ -934,26 +922,25 @@ object Navigation {
     }
   }
   
-  @js.native
   trait PageInputHtmlWebResource extends StObject {
     
     /**
       * The data to pass to the web resource.
       * */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var pageType: webresource = js.native
+    var pageType: webresource
     
     /**
       * The name of the web resource to load.
       * */
-    var webresourceName: String = js.native
+    var webresourceName: String
   }
   object PageInputHtmlWebResource {
     
     @scala.inline
-    def apply(pageType: webresource, webresourceName: String): PageInputHtmlWebResource = {
-      val __obj = js.Dynamic.literal(pageType = pageType.asInstanceOf[js.Any], webresourceName = webresourceName.asInstanceOf[js.Any])
+    def apply(webresourceName: String): PageInputHtmlWebResource = {
+      val __obj = js.Dynamic.literal(pageType = "webresource", webresourceName = webresourceName.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageInputHtmlWebResource]
     }
     
@@ -974,30 +961,29 @@ object Navigation {
     }
   }
   
-  @js.native
   trait Relationship extends StObject {
     
     /**
       * Name of the attribute used for relationship.
       */
-    var attributeName: String = js.native
+    var attributeName: String
     
     /**
       * Name of the relationship.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Name of the navigation property for this relationship.
       */
-    var navigationPropertyName: js.UndefOr[String] = js.native
+    var navigationPropertyName: js.UndefOr[String] = js.undefined
     
     /**
       * Relationship type.Specify one of the following values:
       * * 0:OneToMany
       * * 1:ManyToMany
       */
-    var relationshipType: js.UndefOr[RelationshipType] = js.native
+    var relationshipType: js.UndefOr[RelationshipType] = js.undefined
     
     //
     /**
@@ -1005,7 +991,7 @@ object Navigation {
       * * 1:Referencing
       * * 2:AssociationEntity
       */
-    var roleType: js.UndefOr[RoleType] = js.native
+    var roleType: js.UndefOr[RoleType] = js.undefined
   }
   object Relationship {
     

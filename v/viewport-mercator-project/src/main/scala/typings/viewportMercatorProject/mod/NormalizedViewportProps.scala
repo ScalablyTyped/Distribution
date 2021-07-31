@@ -2,15 +2,15 @@ package typings.viewportMercatorProject.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NormalizedViewportProps extends FlyToViewportProps {
+trait NormalizedViewportProps
+  extends StObject
+     with FlyToViewportProps {
   
-  var bearing: Double = js.native
+  var bearing: Double
   
-  var pitch: Double = js.native
+  var pitch: Double
 }
 object NormalizedViewportProps {
   

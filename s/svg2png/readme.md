@@ -12,7 +12,7 @@ Converts SVGs to PNGs, using PhantomJS
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 91 |
-| # downloads        | 2296734 |
+| # downloads        | 1929827 |
 | # stars            | 16 |
 
 ## Links

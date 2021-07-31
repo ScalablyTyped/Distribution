@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecuritySettings extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SecuritySettings extends StObject {
     * If left blank, communications are not encrypted.
     * Note: This field currently has no impact.
     */
-  var clientTlsPolicy: js.UndefOr[String] = js.native
+  var clientTlsPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A list of Subject Alternative Names (SANs) that the client verifies during a mutual TLS handshake with an server/endpoint for this BackendService. When the server presents
@@ -25,7 +23,7 @@ trait SecuritySettings extends StObject {
     * clientCertificate (mTLS mode).
     * Note: This field currently has no impact.
     */
-  var subjectAltNames: js.UndefOr[js.Array[String]] = js.native
+  var subjectAltNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SecuritySettings {
   

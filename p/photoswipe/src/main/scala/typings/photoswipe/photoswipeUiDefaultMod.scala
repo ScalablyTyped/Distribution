@@ -6,7 +6,6 @@ import typings.photoswipe.mod.UIFramework
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object photoswipeUiDefaultMod {
@@ -16,18 +15,32 @@ object photoswipeUiDefaultMod {
     */
   @JSImport("photoswipe/dist/photoswipe-ui-default", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PhotoSwipeUIDefault {
+  class ^ protected ()
+    extends StObject
+       with PhotoSwipeUIDefault {
     def this(pswp: typings.photoswipe.mod.^[Options], framework: UIFramework) = this()
+    
+    /**
+      * Called by PhotoSwipe after it constructs the UI.
+      */
+    /* CompleteClass */
+    override def init(): Unit = js.native
+    
+    /**
+      * Call this method to update the UI after the items array has been modified in the original PhotoSwipe element.
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
   }
   
-  @js.native
   trait Item
-    extends typings.photoswipe.mod.Item {
+    extends StObject
+       with typings.photoswipe.mod.Item {
     
     /**
       * The caption for this item.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Item {
     
@@ -48,9 +61,9 @@ object photoswipeUiDefaultMod {
     }
   }
   
-  @js.native
   trait Options
-    extends typings.photoswipe.mod.Options {
+    extends StObject
+       with typings.photoswipe.mod.Options {
     
     /**
       * Function to build caption markup. The function takes three parameters:
@@ -76,14 +89,14 @@ object photoswipeUiDefaultMod {
       */
     var addCaptionHTMLFn: js.UndefOr[
         js.Function3[/* item */ Item, /* captionEl */ HTMLElement, /* isFake */ Boolean, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Whether to show the left/right directional arrows.
       *
       * Default true.
       */
-    var arrowEl: js.UndefOr[Boolean] = js.native
+    var arrowEl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Size of top & bottom bars in pixels. "bottom" parameter can be 'auto' (will calculate height of caption).
@@ -92,28 +105,28 @@ object photoswipeUiDefaultMod {
       *
       * Default {top: 44, bottom: "auto"}.
       */
-    var barsSize: js.UndefOr[Bottom] = js.native
+    var barsSize: js.UndefOr[Bottom] = js.undefined
     
     /**
       * Whether to show the caption.
       *
       * Default true.
       */
-    var captionEl: js.UndefOr[Boolean] = js.native
+    var captionEl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Mouse click on image should close the gallery, only when image is smaller than size of the viewport.
       *
       * Default true.
       */
-    var clickToCloseNonZoomable: js.UndefOr[Boolean] = js.native
+    var clickToCloseNonZoomable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show the close button.
       *
       * Default true.
       */
-    var closeEl: js.UndefOr[Boolean] = js.native
+    var closeEl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Element classes that should close PhotoSwipe when clicked on.
@@ -124,21 +137,21 @@ object photoswipeUiDefaultMod {
       *
       * Default ['item', 'caption', 'zoom-wrap', 'ui', 'top-bar'].
       */
-    var closeElClasses: js.UndefOr[js.Array[String]] = js.native
+    var closeElClasses: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Whether to show the current image's index in the gallery (located in top-left corner by default).
       *
       * Default true.
       */
-    var counterEl: js.UndefOr[Boolean] = js.native
+    var counterEl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show the fullscreen button.
       *
       * Default true.
       */
-    var fullscreenEl: js.UndefOr[Boolean] = js.native
+    var fullscreenEl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback that should return the URL for the currently selected image. The callback is passed
@@ -156,7 +169,7 @@ object photoswipeUiDefaultMod {
       * }
       *
       */
-    var getImageURLForShare: js.UndefOr[js.Function1[/* shareButtonData */ ShareButtonData, String]] = js.native
+    var getImageURLForShare: js.UndefOr[js.Function1[/* shareButtonData */ ShareButtonData, String]] = js.undefined
     
     /**
       * A callback that should return the "Page" associated with the selected image. (e.g. on Facebook, the shared
@@ -170,7 +183,7 @@ object photoswipeUiDefaultMod {
       * }
       *
       */
-    var getPageURLForShare: js.UndefOr[js.Function1[/* shareButtonData */ ShareButtonData, String]] = js.native
+    var getPageURLForShare: js.UndefOr[js.Function1[/* shareButtonData */ ShareButtonData, String]] = js.undefined
     
     /**
       * A callback that should return the Text associated with the selected image. The callback is passed
@@ -183,21 +196,21 @@ object photoswipeUiDefaultMod {
       * }
       *
       */
-    var getTextForShare: js.UndefOr[js.Function1[/* shareButtonData */ ShareButtonData, String]] = js.native
+    var getTextForShare: js.UndefOr[js.Function1[/* shareButtonData */ ShareButtonData, String]] = js.undefined
     
     /**
       * Separator for "1 of X" counter.
       *
       * Default ' / '.
       */
-    var indexIndicatorSep: js.UndefOr[String] = js.native
+    var indexIndicatorSep: js.UndefOr[String] = js.undefined
     
     /**
       * Delay in milliseconds until loading indicator is displayed.
       *
       * Default 1000.
       */
-    var loadingIndicatorDelay: js.UndefOr[Double] = js.native
+    var loadingIndicatorDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * A final output callback that you can use to further modify the share button's HTML. The callback is passed
@@ -212,14 +225,14 @@ object photoswipeUiDefaultMod {
       */
     var parseShareButtonOut: js.UndefOr[
         js.Function2[/* shareButtonData */ ShareButtonData, /* shareButtonOut */ String, String]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Whether to show the preloader element.
       *
       * Default true.
       */
-    var preloaderEl: js.UndefOr[Boolean] = js.native
+    var preloaderEl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The entries that show up when you click the Share button.
@@ -234,49 +247,49 @@ object photoswipeUiDefaultMod {
       * ]
       *
       */
-    var shareButtons: js.UndefOr[js.Array[ShareButtonData]] = js.native
+    var shareButtons: js.UndefOr[js.Array[ShareButtonData]] = js.undefined
     
     /**
       * Whether to show the share button.
       *
       * Default true.
       */
-    var shareEl: js.UndefOr[Boolean] = js.native
+    var shareEl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Tap on sliding area should close gallery.
       *
       * Default false.
       */
-    var tapToClose: js.UndefOr[Boolean] = js.native
+    var tapToClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Tap should toggle visibility of controls.
       *
       * Default true.
       */
-    var tapToToggleControls: js.UndefOr[Boolean] = js.native
+    var tapToToggleControls: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adds class pswp__ui--idle to pswp__ui element when mouse isn't moving for timeToIdle milliseconds.
       *
       * Default 4000.
       */
-    var timeToIdle: js.UndefOr[Double] = js.native
+    var timeToIdle: js.UndefOr[Double] = js.undefined
     
     /**
       * Adds class pswp__ui--idle to pswp__ui element when mouse leaves the window for timeToIdleOutside milliseconds.
       *
       * Default 1000.
       */
-    var timeToIdleOutside: js.UndefOr[Double] = js.native
+    var timeToIdleOutside: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to show the zoom button.
       *
       * Default true.
       */
-    var zoomEl: js.UndefOr[Boolean] = js.native
+    var zoomEl: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -438,13 +451,14 @@ object photoswipeUiDefaultMod {
   /**
     * Default UI class for PhotoSwipe. This class is largely undocumented and doesn't seem to have a public facing API.
     */
-  @js.native
-  trait PhotoSwipeUIDefault extends UI[Options] {
+  trait PhotoSwipeUIDefault
+    extends StObject
+       with UI[Options] {
     
     /**
       * Call this method to update the UI after the items array has been modified in the original PhotoSwipe element.
       */
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object PhotoSwipeUIDefault {
     
@@ -462,7 +476,6 @@ object photoswipeUiDefaultMod {
     }
   }
   
-  @js.native
   trait ShareButtonData extends StObject {
     
     /**
@@ -470,18 +483,18 @@ object photoswipeUiDefaultMod {
       *
       * Default false.
       */
-    var download: js.UndefOr[Boolean] = js.native
+    var download: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An id for this share button entry. The share element associated with this entry will be classed with
       * 'pswp__share--' + id
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The user-visible text to display for this entry.
       */
-    var label: String = js.native
+    var label: String
     
     /**
       * The full sharing endpoint URL for this social media site (e.g. Facebook's is facebook.com/sharer/sharer.php), with URL parameters.
@@ -493,7 +506,7 @@ object photoswipeUiDefaultMod {
       * {{raw_image_url}} becomes the raw url of the selected image (as returned by getImageURLForShare).
       * {{text}} becomes the (URIEncoded) share text of the selected image (as returned by getTextForShare).
       */
-    var url: String = js.native
+    var url: String
   }
   object ShareButtonData {
     

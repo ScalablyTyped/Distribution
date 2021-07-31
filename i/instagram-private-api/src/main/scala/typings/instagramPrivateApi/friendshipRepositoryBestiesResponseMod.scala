@@ -3,17 +3,15 @@ package typings.instagramPrivateApi
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object friendshipRepositoryBestiesResponseMod {
   
-  @js.native
   trait FriendshipRepositorySetBestiesResponseRootObject extends StObject {
     
-    var friendship_statuses: Record[String, FriendshipRepositorySetBestiesResponseRootObjectStatus] = js.native
+    var friendship_statuses: Record[String, FriendshipRepositorySetBestiesResponseRootObjectStatus]
     
-    var status: String = js.native
+    var status: String
   }
   object FriendshipRepositorySetBestiesResponseRootObject {
     
@@ -37,24 +35,23 @@ object friendshipRepositoryBestiesResponseMod {
     }
   }
   
-  @js.native
   trait FriendshipRepositorySetBestiesResponseRootObjectStatus extends StObject {
     
-    var blocking: Boolean = js.native
+    var blocking: Boolean
     
-    var followed_by: Boolean = js.native
+    var followed_by: Boolean
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var muting: Boolean = js.native
+    var muting: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object FriendshipRepositorySetBestiesResponseRootObjectStatus {
     

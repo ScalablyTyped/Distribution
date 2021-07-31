@@ -2,24 +2,21 @@ package typings.vegaLite.channeldefMod
 
 import typings.vegaLite.binMod.BinParams
 import typings.vegaLite.sortMod.SortOrder
-import typings.vegaLite.srcGuideMod.TitleMixins
 import typings.vegaLite.srcTypeMod.StandardType
 import typings.vegaLite.vegaLiteStrings.binned
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderFieldDef[F /* <: Field */]
-  extends FieldDefBase[F, Boolean | BinParams | binned | Null]
-     with TitleMixins
-     with TypeMixins[StandardType] {
+  extends StObject
+     with TypedFieldDef[F, StandardType, Boolean | BinParams | binned | Null]
+     with _ChannelDef[F] {
   
   /**
     * The sort order. One of `"ascending"` (default) or `"descending"`.
     */
-  var sort: js.UndefOr[SortOrder] = js.native
+  var sort: js.UndefOr[SortOrder] = js.undefined
 }
 object OrderFieldDef {
   
@@ -30,7 +27,7 @@ object OrderFieldDef {
   }
   
   @scala.inline
-  implicit class OrderFieldDefMutableBuilder[Self <: OrderFieldDef[_], F /* <: Field */] (val x: Self with OrderFieldDef[F]) extends AnyVal {
+  implicit class OrderFieldDefMutableBuilder[Self <: OrderFieldDef[?], F /* <: Field */] (val x: Self & OrderFieldDef[F]) extends AnyVal {
     
     @scala.inline
     def setSort(value: SortOrder): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])

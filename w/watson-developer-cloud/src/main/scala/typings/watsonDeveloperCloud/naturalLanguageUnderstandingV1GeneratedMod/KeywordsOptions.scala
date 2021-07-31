@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Returns important keywords in the content. Supported languages: English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish, Swedish. */
-@js.native
 trait KeywordsOptions extends StObject {
   
   /** Set this to `true` to analyze emotion for detected keywords. */
-  var emotion: js.UndefOr[Boolean] = js.native
+  var emotion: js.UndefOr[Boolean] = js.undefined
   
   /** Maximum number of keywords to return. */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /** Set this to `true` to return sentiment information for detected keywords. */
-  var sentiment: js.UndefOr[Boolean] = js.native
+  var sentiment: js.UndefOr[Boolean] = js.undefined
 }
 object KeywordsOptions {
   

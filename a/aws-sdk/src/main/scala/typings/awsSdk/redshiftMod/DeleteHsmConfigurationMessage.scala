@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteHsmConfigurationMessage extends StObject {
   
   /**
     * The identifier of the Amazon Redshift HSM configuration to be deleted.
     */
-  var HsmConfigurationIdentifier: String = js.native
+  var HsmConfigurationIdentifier: String
 }
 object DeleteHsmConfigurationMessage {
   

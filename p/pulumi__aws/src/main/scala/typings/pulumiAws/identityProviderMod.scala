@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object identityProviderMod {
@@ -59,6 +58,10 @@ object identityProviderMod {
   /* static members */
   object IdentityProvider {
     
+    @JSImport("@pulumi/aws/cognito/identityProvider", "IdentityProvider")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IdentityProvider resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,60 +71,54 @@ object identityProviderMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito/identityProvider", "IdentityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID]): IdentityProvider = js.native
-    @JSImport("@pulumi/aws/cognito/identityProvider", "IdentityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IdentityProvider = js.native
-    @JSImport("@pulumi/aws/cognito/identityProvider", "IdentityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityProviderState): IdentityProvider = js.native
-    @JSImport("@pulumi/aws/cognito/identityProvider", "IdentityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityProviderState, opts: CustomResourceOptions): IdentityProvider = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityProviderState): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityProviderState, opts: CustomResourceOptions): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
     
     /**
       * Returns true if the given object is an instance of IdentityProvider.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito/identityProvider", "IdentityProvider.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean]
   }
   
-  @js.native
   trait IdentityProviderArgs extends StObject {
     
     /**
       * The map of attribute mapping of user pool attributes. [AttributeMapping in AWS API documentation](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-AttributeMapping)
       */
-    val attributeMapping: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val attributeMapping: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The list of identity providers.
       */
-    val idpIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val idpIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The map of identity details, such as access token
       */
-    val providerDetails: Input[StringDictionary[Input[String]]] = js.native
+    val providerDetails: Input[StringDictionary[Input[String]]]
     
     /**
       * The provider name
       */
-    val providerName: Input[String] = js.native
+    val providerName: Input[String]
     
     /**
       * The provider type.  [See AWS API for valid values](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-ProviderType)
       */
-    val providerType: Input[String] = js.native
+    val providerType: Input[String]
     
     /**
       * The user pool id
       */
-    val userPoolId: Input[String] = js.native
+    val userPoolId: Input[String]
   }
   object IdentityProviderArgs {
     
@@ -168,38 +165,37 @@ object identityProviderMod {
     }
   }
   
-  @js.native
   trait IdentityProviderState extends StObject {
     
     /**
       * The map of attribute mapping of user pool attributes. [AttributeMapping in AWS API documentation](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-AttributeMapping)
       */
-    val attributeMapping: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val attributeMapping: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The list of identity providers.
       */
-    val idpIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val idpIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The map of identity details, such as access token
       */
-    val providerDetails: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val providerDetails: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The provider name
       */
-    val providerName: js.UndefOr[Input[String]] = js.native
+    val providerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The provider type.  [See AWS API for valid values](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-ProviderType)
       */
-    val providerType: js.UndefOr[Input[String]] = js.native
+    val providerType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user pool id
       */
-    val userPoolId: js.UndefOr[Input[String]] = js.native
+    val userPoolId: js.UndefOr[Input[String]] = js.undefined
   }
   object IdentityProviderState {
     

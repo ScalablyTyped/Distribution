@@ -9,9 +9,9 @@ Typings are for version 4.10.1
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cli-types |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 18 |
 | # dependents       | 2 |
-| # downloads        | 14609477 |
+| # downloads        | 17405880 |
 | # stars            | 0 |
 
 ## Links

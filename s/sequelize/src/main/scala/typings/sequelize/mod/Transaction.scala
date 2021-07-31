@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * To run a query under a transaction, you should pass the transaction in the options object.
   */
-@js.native
 trait Transaction extends StObject {
   
   /**
@@ -25,17 +23,17 @@ trait Transaction extends StObject {
     *
     * @see TransactionStatic
     */
-  var LOCK: TransactionLock = js.native
+  var LOCK: TransactionLock
   
   /**
     * Commit the transaction
     */
-  def commit(): typings.bluebird.mod.^[Unit] = js.native
+  def commit(): typings.bluebird.mod.^[Unit]
   
   /**
     * Rollback (abort) the transaction
     */
-  def rollback(): typings.bluebird.mod.^[Unit] = js.native
+  def rollback(): typings.bluebird.mod.^[Unit]
 }
 object Transaction {
   

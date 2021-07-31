@@ -4,24 +4,41 @@ import typings.zipkin.mod.Context
 import typings.zipkin.mod.TraceId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("zipkin-context-cls", JSImport.Namespace)
   @js.native
-  class ^ protected () extends CLSContext {
+  class ^ protected ()
+    extends StObject
+       with CLSContext {
     def this(name: String) = this()
+    
+    /* CompleteClass */
+    override def getContext(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def letContext[V](ctx: js.Any, callback: js.Function0[V]): V = js.native
+    /* CompleteClass */
+    override def letContext[V](ctx: TraceId, callback: js.Function0[V]): V = js.native
+    
+    /* CompleteClass */
+    override def scoped[V](callback: js.Function0[V]): V = js.native
+    
+    /* CompleteClass */
+    override def setContext(ctx: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def setContext(ctx: TraceId): Unit = js.native
   }
   
-  @js.native
   trait CLSContext
-    extends Context[js.Any] {
+    extends StObject
+       with Context[js.Any] {
     
-    def letContext[V](ctx: TraceId, callback: js.Function0[V]): V = js.native
+    def letContext[V](ctx: TraceId, callback: js.Function0[V]): V
     
-    def setContext(ctx: TraceId): Unit = js.native
+    def setContext(ctx: TraceId): Unit
   }
   object CLSContext {
     

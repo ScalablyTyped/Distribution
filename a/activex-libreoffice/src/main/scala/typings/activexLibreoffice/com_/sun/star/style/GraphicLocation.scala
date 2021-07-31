@@ -14,7 +14,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** These enumeration values are used to specify the location of a graphic object within its surroundings. */

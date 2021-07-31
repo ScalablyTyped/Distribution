@@ -5,7 +5,6 @@ import typings.notyf.anon.DeepPartialINotyfNotifica
 import typings.notyf.notyfBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notyfOptionsMod {
@@ -21,31 +20,34 @@ object notyfOptionsMod {
   object NotyfEvent extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[NotyfEvent with String] = js.native
+    def apply(value: String): js.UndefOr[NotyfEvent & String] = js.native
     
     @js.native
-    sealed trait Click extends NotyfEvent
-    /* "click" */ val Click: typings.notyf.notyfOptionsMod.NotyfEvent.Click with String = js.native
+    sealed trait Click
+      extends StObject
+         with NotyfEvent
+    /* "click" */ val Click: typings.notyf.notyfOptionsMod.NotyfEvent.Click & String = js.native
     
     @js.native
-    sealed trait Dismiss extends NotyfEvent
-    /* "dismiss" */ val Dismiss: typings.notyf.notyfOptionsMod.NotyfEvent.Dismiss with String = js.native
+    sealed trait Dismiss
+      extends StObject
+         with NotyfEvent
+    /* "dismiss" */ val Dismiss: typings.notyf.notyfOptionsMod.NotyfEvent.Dismiss & String = js.native
   }
   
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias notyf.notyf/notyf.options.DeepPartial<T[P]> * / object}
-    */ typings.notyf.notyfStrings.DeepPartial with TopLevel[js.Any]
+    */ typings.notyf.notyfStrings.DeepPartial & TopLevel[js.Any]
   
-  @js.native
   trait INotyfIcon extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var color: String = js.native
+    var color: String
     
-    var tagName: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any = js.native
+    var tagName: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any
     
-    var text: String = js.native
+    var text: String
   }
   object INotyfIcon {
     
@@ -79,31 +81,30 @@ object notyfOptionsMod {
     }
   }
   
-  @js.native
   trait INotyfNotificationOptions extends StObject {
     
-    var background: String = js.native
+    var background: String
     
     /**
       * @deprecated Use `background` instead. Removal target: v4.0.0.
       */
-    var backgroundColor: String = js.native
+    var backgroundColor: String
     
-    var className: String = js.native
+    var className: String
     
-    var dismissible: Boolean = js.native
+    var dismissible: Boolean
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var icon: INotyfIcon | `false` = js.native
+    var icon: INotyfIcon | `false`
     
-    var message: String = js.native
+    var message: String
     
-    var position: INotyfPosition = js.native
+    var position: INotyfPosition
     
-    var ripple: Boolean = js.native
+    var ripple: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object INotyfNotificationOptions {
     
@@ -160,18 +161,17 @@ object notyfOptionsMod {
     }
   }
   
-  @js.native
   trait INotyfOptions extends StObject {
     
-    var dismissible: Boolean = js.native
+    var dismissible: Boolean
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var position: INotyfPosition = js.native
+    var position: INotyfPosition
     
-    var ripple: Boolean = js.native
+    var ripple: Boolean
     
-    var types: js.Array[DeepPartialINotyfNotifica] = js.native
+    var types: js.Array[DeepPartialINotyfNotifica]
   }
   object INotyfOptions {
     
@@ -210,12 +210,11 @@ object notyfOptionsMod {
     }
   }
   
-  @js.native
   trait INotyfPosition extends StObject {
     
-    var x: NotyfHorizontalPosition = js.native
+    var x: NotyfHorizontalPosition
     
-    var y: NotyfVerticalPosition = js.native
+    var y: NotyfVerticalPosition
   }
   object INotyfPosition {
     

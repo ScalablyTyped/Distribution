@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultEventLogOperations extends StObject {
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  def ClearRange(FirstEventID: Double, LastEventID: Double): Unit = js.native
+  def ClearRange(FirstEventID: Double, LastEventID: Double): Unit
   
-  def ClearRange_32bit(FirstEventID: String, LastEventID: String): Unit = js.native
+  def ClearRange_32bit(FirstEventID: String, LastEventID: String): Unit
   
-  def ExportAll(): String = js.native
+  def ExportAll(): String
   
-  def ExportRange(FirstEventID: Double, LastEventID: Double, DeleteEventsAfterExporting: Boolean): String = js.native
+  def ExportRange(FirstEventID: Double, LastEventID: Double, DeleteEventsAfterExporting: Boolean): String
   
-  def ExportRange_32bit(FirstEventID: String, LastEventID: String, DeleteEventsAfterExporting: Boolean): String = js.native
+  def ExportRange_32bit(FirstEventID: String, LastEventID: String, DeleteEventsAfterExporting: Boolean): String
   
-  def GetIDRange(): IIDRange = js.native
+  def GetIDRange(): IIDRange
   
-  def IsLoggingEnabled(): Boolean = js.native
+  def IsLoggingEnabled(): Boolean
   
-  def SetLoggingEnabled(Enabled: Boolean): Unit = js.native
+  def SetLoggingEnabled(Enabled: Boolean): Unit
 }
 object IVaultEventLogOperations {
   

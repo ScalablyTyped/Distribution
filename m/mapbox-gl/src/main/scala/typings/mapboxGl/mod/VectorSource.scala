@@ -5,39 +5,38 @@ import typings.mapboxGl.mapboxGlStrings.vector
 import typings.mapboxGl.mapboxGlStrings.xyz
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorSource
-  extends Source
+  extends StObject
+     with Source
      with AnySourceData {
   
-  var attribution: js.UndefOr[String] = js.native
+  var attribution: js.UndefOr[String] = js.undefined
   
-  var bounds: js.UndefOr[js.Array[Double]] = js.native
+  var bounds: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var maxzoom: js.UndefOr[Double] = js.native
+  var maxzoom: js.UndefOr[Double] = js.undefined
   
-  var minzoom: js.UndefOr[Double] = js.native
+  var minzoom: js.UndefOr[Double] = js.undefined
   
-  var promoteId: js.UndefOr[PromoteIdSpecification] = js.native
+  var promoteId: js.UndefOr[PromoteIdSpecification] = js.undefined
   
-  var scheme: js.UndefOr[xyz | tms] = js.native
+  var scheme: js.UndefOr[xyz | tms] = js.undefined
   
-  var tiles: js.UndefOr[js.Array[String]] = js.native
+  var tiles: js.UndefOr[js.Array[String]] = js.undefined
   
   @JSName("type")
-  var type_VectorSource: vector = js.native
+  var type_VectorSource: vector
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object VectorSource {
   
   @scala.inline
-  def apply(`type`: vector): VectorSource = {
+  def apply(): VectorSource = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("vector")
     __obj.asInstanceOf[VectorSource]
   }
   

@@ -2,31 +2,29 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpRoute extends StObject {
   
   /**
     * An object that represents the action to take if a match is determined.
     */
-  var action: HttpRouteAction = js.native
+  var action: HttpRouteAction
   
   /**
     * An object that represents the criteria for determining a request match.
     */
-  var `match`: HttpRouteMatch = js.native
+  var `match`: HttpRouteMatch
   
   /**
     * An object that represents a retry policy.
     */
-  var retryPolicy: js.UndefOr[HttpRetryPolicy] = js.native
+  var retryPolicy: js.UndefOr[HttpRetryPolicy] = js.undefined
   
   /**
     * An object that represents types of timeouts. 
     */
-  var timeout: js.UndefOr[HttpTimeout] = js.native
+  var timeout: js.UndefOr[HttpTimeout] = js.undefined
 }
 object HttpRoute {
   

@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getBillingServiceAccountMod {
   
-  @JSImport("@pulumi/aws/getBillingServiceAccount", "getBillingServiceAccount")
+  @JSImport("@pulumi/aws/getBillingServiceAccount", JSImport.Namespace)
   @js.native
-  def getBillingServiceAccount(): js.Promise[GetBillingServiceAccountResult] = js.native
-  @JSImport("@pulumi/aws/getBillingServiceAccount", "getBillingServiceAccount")
-  @js.native
-  def getBillingServiceAccount(opts: InvokeOptions): js.Promise[GetBillingServiceAccountResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getBillingServiceAccount(): js.Promise[GetBillingServiceAccountResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBillingServiceAccount")().asInstanceOf[js.Promise[GetBillingServiceAccountResult]]
+  @scala.inline
+  def getBillingServiceAccount(opts: InvokeOptions): js.Promise[GetBillingServiceAccountResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBillingServiceAccount")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBillingServiceAccountResult]]
+  
   trait GetBillingServiceAccountResult extends StObject {
     
     /**
       * The ARN of the AWS billing service account.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
   }
   object GetBillingServiceAccountResult {
     

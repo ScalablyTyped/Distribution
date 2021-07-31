@@ -10,21 +10,19 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `997` extends StObject {
   
-  var parameters: RequestParameters with (Omit[ReposListPullRequestsAssociatedWithCommitEndpoint, baseUrl | headers | mediaType]) = js.native
+  var parameters: RequestParameters & (Omit[ReposListPullRequestsAssociatedWithCommitEndpoint, baseUrl | headers | mediaType])
   
-  var response: OctokitResponse[ReposListPullRequestsAssociatedWithCommitResponseData] = js.native
+  var response: OctokitResponse[ReposListPullRequestsAssociatedWithCommitResponseData]
 }
 object `997` {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[ReposListPullRequestsAssociatedWithCommitEndpoint, baseUrl | headers | mediaType]),
+    parameters: RequestParameters & (Omit[ReposListPullRequestsAssociatedWithCommitEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[ReposListPullRequestsAssociatedWithCommitResponseData]
   ): `997` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -36,7 +34,7 @@ object `997` {
     
     @scala.inline
     def setParameters(
-      value: RequestParameters with (Omit[ReposListPullRequestsAssociatedWithCommitEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters & (Omit[ReposListPullRequestsAssociatedWithCommitEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

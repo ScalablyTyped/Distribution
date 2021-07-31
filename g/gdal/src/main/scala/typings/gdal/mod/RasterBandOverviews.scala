@@ -2,21 +2,19 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RasterBandOverviews extends StObject {
   
-  def count(): Double = js.native
+  def count(): Double
   
-  def forEach(callback: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, Unit]): Unit = js.native
+  def forEach(callback: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, Unit]): Unit
   
-  def get(index: Double): RasterBand = js.native
+  def get(index: Double): RasterBand
   
-  def getBySampleCount(samples: Double): RasterBand = js.native
+  def getBySampleCount(samples: Double): RasterBand
   
-  def map[T](callback: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, T]): js.Array[T] = js.native
+  def map[T](callback: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, T]): js.Array[T]
 }
 object RasterBandOverviews {
   

@@ -2,20 +2,18 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for Datastore.Rollback.
   */
-@js.native
 trait SchemaRollbackRequest extends StObject {
   
   /**
     * The transaction identifier, returned by a call to
     * Datastore.BeginTransaction.
     */
-  var transaction: js.UndefOr[String] = js.native
+  var transaction: js.UndefOr[String] = js.undefined
 }
 object SchemaRollbackRequest {
   

@@ -2,19 +2,17 @@ package typings.chui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassName extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[js.Array[String]] = js.native
+  var labels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var selected: js.UndefOr[Double] = js.native
+  var selected: js.UndefOr[Double] = js.undefined
 }
 object ClassName {
   

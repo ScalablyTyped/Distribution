@@ -4,7 +4,6 @@ import typings.reactNativeSafeAreaContext.safeAreaTypesMod.EdgeInsets
 import typings.reactNativeSafeAreaContext.safeAreaTypesMod.Metrics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object initialWindowNativeMod {

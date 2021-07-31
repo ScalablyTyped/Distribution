@@ -2,13 +2,13 @@ package typings.typescriptServices.global.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.Services.ScriptElementKind")
 @js.native
 class ScriptElementKind ()
-  extends typings.typescriptServices.TypeScript.Services.ScriptElementKind
+  extends StObject
+     with typings.typescriptServices.TypeScript.Services.ScriptElementKind
 object ScriptElementKind {
   
   @JSGlobal("TypeScript.Services.ScriptElementKind")

@@ -2,43 +2,41 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolBarItemButton extends StObject {
   
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
-  var click: js.UndefOr[js.Function] = js.native
+  var click: js.UndefOr[js.Function] = js.undefined
   
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var showIcon: js.UndefOr[String] = js.native
+  var showIcon: js.UndefOr[String] = js.undefined
   
-  var showText: js.UndefOr[String] = js.native
+  var showText: js.UndefOr[String] = js.undefined
   
-  var spriteCssClass: js.UndefOr[String] = js.native
+  var spriteCssClass: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var togglable: js.UndefOr[Boolean] = js.native
+  var togglable: js.UndefOr[Boolean] = js.undefined
   
-  var toggle: js.UndefOr[js.Function] = js.native
+  var toggle: js.UndefOr[js.Function] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ToolBarItemButton {
   

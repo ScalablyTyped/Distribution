@@ -3,22 +3,22 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OptionalType extends Type_ {
+trait OptionalType
+  extends StObject
+     with Type_ {
   
-  var expression: Type_ = js.native
+  var expression: Type_
   
-  var `type`: typings.doctrine.doctrineStrings.OptionalType = js.native
+  var `type`: typings.doctrine.doctrineStrings.OptionalType
 }
 object OptionalType {
   
   @scala.inline
-  def apply(expression: Type_, `type`: typings.doctrine.doctrineStrings.OptionalType): OptionalType = {
+  def apply(expression: Type_): OptionalType = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("OptionalType")
     __obj.asInstanceOf[OptionalType]
   }
   

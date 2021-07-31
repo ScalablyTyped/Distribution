@@ -5,20 +5,24 @@ import typings.tensorflowTfjsConverter.compiledApiMod.ISignatureDef
 import typings.tensorflowTfjsConverter.executorTypesMod.FunctionExecutor
 import typings.tensorflowTfjsConverter.operationsTypesMod.Graph
 import typings.tensorflowTfjsConverter.resourceManagerMod.ResourceManager
+import typings.tensorflowTfjsConverter.typesMod.NamedTensorsMap
+import typings.tensorflowTfjsConverter.typesMod.TensorArrayMap
 import typings.tensorflowTfjsConverter.typesMod.TensorInfo
+import typings.tensorflowTfjsConverter.typesMod.TensorListMap
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object graphExecutorMod {
   
   @JSImport("@tensorflow/tfjs-converter/dist/executor/graph_executor", "GraphExecutor")
   @js.native
-  class GraphExecutor protected () extends FunctionExecutor {
+  class GraphExecutor protected ()
+    extends StObject
+       with FunctionExecutor {
     /**
       *
       * @param graph Graph the model or function graph to be executed.
@@ -111,6 +115,9 @@ object graphExecutorMod {
     def executeAsync(inputs: NamedTensorMap): js.Promise[js.Array[Tensor[Rank]]] = js.native
     def executeAsync(inputs: NamedTensorMap, outputs: js.Array[String]): js.Promise[js.Array[Tensor[Rank]]] = js.native
     
+    /* CompleteClass */
+    override def executeFunctionAsync(inputs: js.Array[Tensor[Rank]], tensorArrayMap: TensorArrayMap, tensorListMap: TensorListMap): js.Promise[js.Array[Tensor[Rank]]] = js.native
+    
     /**
       * When there are control flow nodes in the graph, the graph execution use
       * ExecutionContext to keep track of the frames and loop iterators.
@@ -159,5 +166,8 @@ object graphExecutorMod {
     var resourceManager: ResourceManager = js.native
     
     val weightIds: js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    var weightMap: NamedTensorsMap = js.native
   }
 }

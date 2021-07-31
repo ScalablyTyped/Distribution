@@ -2,17 +2,15 @@ package typings.nodeGettext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Debug extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var sourceLocale: js.UndefOr[String] = js.native
+    var sourceLocale: js.UndefOr[String] = js.undefined
   }
   object Debug {
     

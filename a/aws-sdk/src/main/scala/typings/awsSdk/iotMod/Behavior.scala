@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Behavior extends StObject {
   
   /**
     * The criteria that determine if a device is behaving normally in regard to the metric.
     */
-  var criteria: js.UndefOr[BehaviorCriteria] = js.native
+  var criteria: js.UndefOr[BehaviorCriteria] = js.undefined
   
   /**
     * What is measured by the behavior.
     */
-  var metric: js.UndefOr[BehaviorMetric] = js.native
+  var metric: js.UndefOr[BehaviorMetric] = js.undefined
   
   /**
     * The dimension for a metric in your behavior. For example, using a TOPIC_FILTER dimension, you can narrow down the scope of the metric only to MQTT topics whose name match the pattern specified in the dimension.
     */
-  var metricDimension: js.UndefOr[MetricDimension] = js.native
+  var metricDimension: js.UndefOr[MetricDimension] = js.undefined
   
   /**
     * The name you have given to the behavior.
     */
-  var name: BehaviorName = js.native
+  var name: BehaviorName
 }
 object Behavior {
   

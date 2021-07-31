@@ -2,17 +2,15 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnabledModule extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var module: String = js.native
+  var module: String
   
-  var req: js.UndefOr[js.Object] = js.native
+  var req: js.UndefOr[js.Object] = js.undefined
 }
 object EnabledModule {
   

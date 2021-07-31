@@ -2,43 +2,41 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserData[A, U] extends StObject {
   
-  var app_metadata: js.UndefOr[A] = js.native
+  var app_metadata: js.UndefOr[A] = js.undefined
   
-  var blocked: js.UndefOr[Boolean] = js.native
+  var blocked: js.UndefOr[Boolean] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var email_verified: js.UndefOr[Boolean] = js.native
+  var email_verified: js.UndefOr[Boolean] = js.undefined
   
-  var family_name: js.UndefOr[String] = js.native
+  var family_name: js.UndefOr[String] = js.undefined
   
-  var given_name: js.UndefOr[String] = js.native
+  var given_name: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var nickname: js.UndefOr[String] = js.native
+  var nickname: js.UndefOr[String] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var phone_number: js.UndefOr[String] = js.native
+  var phone_number: js.UndefOr[String] = js.undefined
   
-  var phone_verified: js.UndefOr[Boolean] = js.native
+  var phone_verified: js.UndefOr[Boolean] = js.undefined
   
-  var picture: js.UndefOr[String] = js.native
+  var picture: js.UndefOr[String] = js.undefined
   
-  var user_id: js.UndefOr[String] = js.native
+  var user_id: js.UndefOr[String] = js.undefined
   
-  var user_metadata: js.UndefOr[U] = js.native
+  var user_metadata: js.UndefOr[U] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
-  var verify_email: js.UndefOr[Boolean] = js.native
+  var verify_email: js.UndefOr[Boolean] = js.undefined
 }
 object UserData {
   
@@ -49,7 +47,7 @@ object UserData {
   }
   
   @scala.inline
-  implicit class UserDataMutableBuilder[Self <: UserData[_, _], A, U] (val x: Self with (UserData[A, U])) extends AnyVal {
+  implicit class UserDataMutableBuilder[Self <: UserData[?, ?], A, U] (val x: Self & (UserData[A, U])) extends AnyVal {
     
     @scala.inline
     def setApp_metadata(value: A): Self = StObject.set(x, "app_metadata", value.asInstanceOf[js.Any])

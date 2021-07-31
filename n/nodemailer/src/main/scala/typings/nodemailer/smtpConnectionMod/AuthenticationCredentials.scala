@@ -2,14 +2,12 @@ package typings.nodemailer.smtpConnectionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationCredentials extends StObject {
   
   /** normal authentication object */
-  var credentials: Credentials = js.native
+  var credentials: Credentials
 }
 object AuthenticationCredentials {
   

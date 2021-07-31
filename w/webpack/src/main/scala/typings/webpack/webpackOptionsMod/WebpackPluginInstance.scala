@@ -3,12 +3,11 @@ package typings.webpack.webpackOptionsMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebpackPluginInstance
-  extends /* k */ StringDictionary[js.Any] {
+  extends StObject
+     with /* k */ StringDictionary[js.Any] {
   
   /**
   	 * The run point of the plugin, required method.
@@ -16,7 +15,7 @@ trait WebpackPluginInstance
   @JSName("apply")
   def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Compiler */ js.Any
-  ): Unit = js.native
+  ): Unit
 }
 object WebpackPluginInstance {
   

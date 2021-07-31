@@ -2,34 +2,32 @@ package typings.facebookInstantGames.FBInstant
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents content to be shared by the user.
   */
-@js.native
 trait SharePayload extends StObject {
   
   /**
     * A blob of data to attach to the share. All game sessions launched from the share will be able to access this blob through FBInstant.getEntryPointData().
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A base64 encoded image to be shared.
     */
-  var image: String = js.native
+  var image: String
   
   /**
     * Indicates the intent of the share.
     */
-  var intent: Intent = js.native
+  var intent: Intent
   
   /**
     * A text message to be shared.
     */
-  var text: String = js.native
+  var text: String
 }
 object SharePayload {
   

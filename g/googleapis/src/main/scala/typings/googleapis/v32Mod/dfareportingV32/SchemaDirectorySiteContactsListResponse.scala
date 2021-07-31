@@ -2,30 +2,28 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Directory Site Contact List Response
   */
-@js.native
 trait SchemaDirectorySiteContactsListResponse extends StObject {
   
   /**
     * Directory site contact collection
     */
-  var directorySiteContacts: js.UndefOr[js.Array[SchemaDirectorySiteContact]] = js.native
+  var directorySiteContacts: js.UndefOr[js.Array[SchemaDirectorySiteContact]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#directorySiteContactsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaDirectorySiteContactsListResponse {
   

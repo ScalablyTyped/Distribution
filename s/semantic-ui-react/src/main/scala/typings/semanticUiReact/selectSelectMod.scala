@@ -14,7 +14,6 @@ import typings.semanticUiReact.dropdownItemMod.DropdownItemProps
 import typings.semanticUiReact.dropdownMenuMod.DropdownMenuProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectSelectMod {
@@ -59,7 +58,9 @@ object selectSelectMod {
   }
   
   @js.native
-  trait SelectComponent extends FunctionComponent[SelectProps] {
+  trait SelectComponent
+    extends StObject
+       with FunctionComponent[SelectProps] {
     
     var Divider: ComponentClass[DropdownDividerProps, ComponentState] = js.native
     
@@ -70,9 +71,9 @@ object selectSelectMod {
     var Menu: StatelessComponent[DropdownMenuProps] = js.native
   }
   
-  @js.native
   trait SelectProps
-    extends StrictSelectProps
+    extends StObject
+       with StrictSelectProps
        with /* key */ StringDictionary[js.Any]
   object SelectProps {
     
@@ -83,12 +84,13 @@ object selectSelectMod {
     }
   }
   
-  @js.native
-  trait StrictSelectProps extends StrictDropdownProps {
+  trait StrictSelectProps
+    extends StObject
+       with StrictDropdownProps {
     
     /** Array of Dropdown.Item props e.g. `{ text: '', value: '' }` */
     @JSName("options")
-    var options_StrictSelectProps: js.Array[DropdownItemProps] = js.native
+    var options_StrictSelectProps: js.Array[DropdownItemProps]
   }
   object StrictSelectProps {
     

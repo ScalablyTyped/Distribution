@@ -2,17 +2,15 @@ package typings.oauth2orize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object Express {
     
-    @js.native
     trait Request extends StObject {
       
-      var oauth2: js.UndefOr[OAuth2] = js.native
+      var oauth2: js.UndefOr[OAuth2] = js.undefined
     }
     object Request {
       

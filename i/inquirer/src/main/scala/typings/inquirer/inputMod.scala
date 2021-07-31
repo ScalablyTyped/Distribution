@@ -7,7 +7,6 @@ import typings.inquirer.mod.prompts.SuccessfulPromptStateData
 import typings.node.readlineMod.Interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputMod {
@@ -73,7 +72,7 @@ object inputMod {
       * @param eventArgs
       * An object which contains eventr-data.
       */
-    /* protected */ def onEnd(eventArgs: SuccessfulPromptStateData[_]): Unit = js.native
+    /* protected */ def onEnd(eventArgs: SuccessfulPromptStateData[js.Any]): Unit = js.native
     
     /**
       * Handles the `error`-event of the prompt.

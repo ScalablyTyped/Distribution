@@ -2,15 +2,13 @@ package typings.coreObject
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Super[Base] extends StObject {
     
-    var _super: typings.coreObject.utilsMod.Super[Base] = js.native
+    var _super: typings.coreObject.utilsMod.Super[Base]
   }
   object Super {
     
@@ -21,7 +19,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class SuperMutableBuilder[Self <: Super[_], Base] (val x: Self with Super[Base]) extends AnyVal {
+    implicit class SuperMutableBuilder[Self <: Super[?], Base] (val x: Self & Super[Base]) extends AnyVal {
       
       @scala.inline
       def set_super(value: typings.coreObject.utilsMod.Super[Base]): Self = StObject.set(x, "_super", value.asInstanceOf[js.Any])

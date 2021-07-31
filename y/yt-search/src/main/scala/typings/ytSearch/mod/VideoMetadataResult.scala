@@ -2,39 +2,37 @@ package typings.ytSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoMetadataResult extends StObject {
   
-  var ago: String = js.native
+  var ago: String
   
-  var author: Author = js.native
+  var author: Author
   
-  var description: String = js.native
+  var description: String
   
-  var duration: Duration = js.native
+  var duration: Duration
   
-  var genre: String = js.native
+  var genre: String
   
-  var image: String = js.native
+  var image: String
   
-  var seconds: Double = js.native
+  var seconds: Double
   
-  var thumbnail: String = js.native
+  var thumbnail: String
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var title: String = js.native
+  var title: String
   
-  var uploadDate: String = js.native
+  var uploadDate: String
   
-  var url: String = js.native
+  var url: String
   
-  var videoId: String = js.native
+  var videoId: String
   
-  var views: Double = js.native
+  var views: Double
 }
 object VideoMetadataResult {
   

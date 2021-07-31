@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConfigurationRecorderRequest extends StObject {
   
   /**
     * The name of the configuration recorder to be deleted. You can retrieve the name of your configuration recorder by using the DescribeConfigurationRecorders action.
     */
-  var ConfigurationRecorderName: RecorderName = js.native
+  var ConfigurationRecorderName: RecorderName
 }
 object DeleteConfigurationRecorderRequest {
   

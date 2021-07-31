@@ -2,35 +2,33 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryRequest extends StObject {
   
-  var defaultDataset: js.UndefOr[DatasetReference] = js.native
+  var defaultDataset: js.UndefOr[DatasetReference] = js.undefined
   
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
-  var parameterMode: js.UndefOr[String] = js.native
+  var parameterMode: js.UndefOr[String] = js.undefined
   
-  var preserveNulls: js.UndefOr[Boolean] = js.native
+  var preserveNulls: js.UndefOr[Boolean] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var queryParameters: js.UndefOr[js.Array[QueryParameter]] = js.native
+  var queryParameters: js.UndefOr[js.Array[QueryParameter]] = js.undefined
   
-  var timeoutMs: js.UndefOr[Double] = js.native
+  var timeoutMs: js.UndefOr[Double] = js.undefined
   
-  var useLegacySql: js.UndefOr[Boolean] = js.native
+  var useLegacySql: js.UndefOr[Boolean] = js.undefined
   
-  var useQueryCache: js.UndefOr[Boolean] = js.native
+  var useQueryCache: js.UndefOr[Boolean] = js.undefined
 }
 object QueryRequest {
   

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetCollaboratorPermissionLevelResp
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetCollaboratorPermissionLevelEndpoint extends StObject {
   
-  var parameters: ReposGetCollaboratorPermissionLevelEndpoint = js.native
+  var parameters: ReposGetCollaboratorPermissionLevelEndpoint
   
-  var request: ReposGetCollaboratorPermissionLevelRequestOptions = js.native
+  var request: ReposGetCollaboratorPermissionLevelRequestOptions
   
-  var response: OctokitResponse[ReposGetCollaboratorPermissionLevelResponseData] = js.native
+  var response: OctokitResponse[ReposGetCollaboratorPermissionLevelResponseData]
 }
 object ParametersReposGetCollaboratorPermissionLevelEndpoint {
   

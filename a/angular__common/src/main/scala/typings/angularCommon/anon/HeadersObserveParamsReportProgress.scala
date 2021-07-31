@@ -7,29 +7,27 @@ import typings.angularCommon.httpHttpMod.HttpHeaders
 import typings.angularCommon.httpHttpMod.HttpParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadersObserveParamsReportProgress extends StObject {
   
-  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.native
+  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var observe: js.UndefOr[body] = js.native
+  var observe: js.UndefOr[body] = js.undefined
   
-  var params: js.UndefOr[HttpParams | (StringDictionary[String | js.Array[String]])] = js.native
+  var params: js.UndefOr[HttpParams | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var reportProgress: js.UndefOr[Boolean] = js.native
+  var reportProgress: js.UndefOr[Boolean] = js.undefined
   
-  var responseType: text = js.native
+  var responseType: text
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object HeadersObserveParamsReportProgress {
   
   @scala.inline
-  def apply(responseType: text): HeadersObserveParamsReportProgress = {
-    val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any])
+  def apply(): HeadersObserveParamsReportProgress = {
+    val __obj = js.Dynamic.literal(responseType = "text")
     __obj.asInstanceOf[HeadersObserveParamsReportProgress]
   }
   

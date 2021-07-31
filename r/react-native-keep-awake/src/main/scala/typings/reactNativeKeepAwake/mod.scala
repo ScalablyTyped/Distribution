@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactNativeKeepAwake.anon.Children
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,15 +14,17 @@ object mod {
     extends Component[Children, js.Object, js.Any]
   object default {
     
-    /* static member */
-    @JSImport("react-native-keep-awake", "default.activate")
+    @JSImport("react-native-keep-awake", JSImport.Default)
     @js.native
-    def activate(): Unit = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("react-native-keep-awake", "default.deactivate")
-    @js.native
-    def deactivate(): Unit = js.native
+    @scala.inline
+    def activate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("activate")().asInstanceOf[Unit]
+    
+    /* static member */
+    @scala.inline
+    def deactivate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivate")().asInstanceOf[Unit]
   }
   
   type KeepAwake = Component[Children, js.Object, js.Any]

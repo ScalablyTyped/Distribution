@@ -2,7 +2,6 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * peering name, peer network, peering state, and a flag indicating whether
   * Google Compute Engine should automatically create routes for the peering.
   */
-@js.native
 trait SchemaNetworkPeering extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaNetworkPeering extends StObject {
     * state is ACTIVE. Otherwise, user needs to create routes manually to route
     * packets to peer network.
     */
-  var autoCreateRoutes: js.UndefOr[Boolean] = js.native
+  var autoCreateRoutes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether full mesh connectivity is created and managed automatically. When
@@ -30,7 +28,7 @@ trait SchemaNetworkPeering extends StObject {
     * Otherwise, user needs to create routes manually to route packets to peer
     * network.
     */
-  var exchangeSubnetRoutes: js.UndefOr[Boolean] = js.native
+  var exchangeSubnetRoutes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of this peering. Provided by the client when the peering is created.
@@ -40,7 +38,7 @@ trait SchemaNetworkPeering extends StObject {
     * following characters must be a dash, lowercase letter, or digit, except
     * the last character, which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the peer network. It can be either full URL or partial URL.
@@ -48,17 +46,17 @@ trait SchemaNetworkPeering extends StObject {
     * does not contain project, it is assumed that the peer network is in the
     * same project as the current network.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] State for the peering.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Details about the current state of the peering.
     */
-  var stateDetails: js.UndefOr[String] = js.native
+  var stateDetails: js.UndefOr[String] = js.undefined
 }
 object SchemaNetworkPeering {
   

@@ -2,21 +2,19 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsLinked extends StObject {
   
   /**
     * Indicates whether the channel data identifies a user that is already linked to either a YouTube username or a Google+ account. A user that has one of these links already has a public YouTube identity, which is a prerequisite for several actions, such as uploading videos.
     */
-  var isLinked: Boolean = js.native
+  var isLinked: Boolean
   
   /**
     * Privacy status of the channel.
     */
-  var privacyStatus: String = js.native
+  var privacyStatus: String
 }
 object IsLinked {
   

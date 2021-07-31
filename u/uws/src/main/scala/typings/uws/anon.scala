@@ -4,15 +4,13 @@ import typings.node.httpMod.IncomingMessage
 import typings.uws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var target: this.type = js.native
+    var target: this.type
   }
   object `0` {
     
@@ -30,12 +28,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Binary extends StObject {
     
-    var binary: js.UndefOr[Boolean] = js.native
+    var binary: js.UndefOr[Boolean] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
   }
   object Binary {
     
@@ -62,10 +59,9 @@ object anon {
     }
   }
   
-  @js.native
   trait BinaryBoolean extends StObject {
     
-    var binary: Boolean = js.native
+    var binary: Boolean
   }
   object BinaryBoolean {
     
@@ -83,16 +79,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var reason: String = js.native
+    var reason: String
     
-    var target: WebSocket = js.native
+    var target: WebSocket
     
-    var wasClean: Boolean = js.native
+    var wasClean: Boolean
   }
   object Code {
     
@@ -119,14 +114,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var target: WebSocket = js.native
+    var target: WebSocket
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Data {
     
@@ -151,14 +145,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Origin extends StObject {
     
-    var origin: String = js.native
+    var origin: String
     
-    var req: IncomingMessage = js.native
+    var req: IncomingMessage
     
-    var secure: Boolean = js.native
+    var secure: Boolean
   }
   object Origin {
     
@@ -182,16 +175,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Reason extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var reason: String = js.native
+    var reason: String
     
-    var target: this.type = js.native
+    var target: this.type
     
-    var wasClean: Boolean = js.native
+    var wasClean: Boolean
   }
   object Reason {
     
@@ -218,10 +210,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var target: WebSocket = js.native
+    var target: WebSocket
   }
   object Target {
     
@@ -239,14 +230,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var target: this.type = js.native
+    var target: this.type
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Type {
     

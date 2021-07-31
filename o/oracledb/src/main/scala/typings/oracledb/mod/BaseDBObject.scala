@@ -4,103 +4,101 @@ import typings.oracledb.anon.TypeClass
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see https://oracle.github.io/node-oracledb/doc/api.html#objects
   * @since 4.0
   */
-@js.native
 trait BaseDBObject[T] extends StObject {
   
   /**
     * Add the given value to the end of the collection.
     */
-  def append(value: T): Unit = js.native
+  def append(value: T): Unit
   
   /**
     * When dbObject.isCollection is false, this will be an object containing attributes corresponding to the Oracle Database object attributes. 
     */
-  var attributes: Record[String, TypeClass[T]] = js.native
+  var attributes: Record[String, TypeClass[T]]
   
   /**
     * Deletes the value from collection at the given index.
     */
-  def deleteElement(index: Double): Unit = js.native
+  def deleteElement(index: Double): Unit
   
   /** When dbObject.isCollection is true, this will be one of the DB_TYPE constants. */
-  val elementType: Double = js.native
+  val elementType: Double
   
-  val elementTypeClass: DBObjectClass[T] = js.native
+  val elementTypeClass: DBObjectClass[T]
   
   /** When dbObject.isCollection is true, this will have the name of the element type, such as “VARCHAR2” or “NUMBER”. */
-  val elementTypeName: String = js.native
+  val elementTypeName: String
   
   /** The fully qualified name of the Oracle Database object or collection. */
-  val fqn: String = js.native
+  val fqn: String
   
   /**
     * Return the value associated with the given index.
     */
-  def getElement(index: Double): js.Any = js.native
+  def getElement(index: Double): js.Any
   
   /**
     * Returns the first index for later use to obtain the value.
     */
-  def getFirstIndex(): Double = js.native
+  def getFirstIndex(): Double
   
   /**
     * Returns a JavaScript array containing the ‘index’ keys.
     */
-  def getKeys(): js.Array[Double | (/* keyof T */ String)] = js.native
+  def getKeys(): js.Array[Double | (/* keyof T */ String)]
   
   /**
     * To obtain the last index for later use to obtain a value.
     */
-  def getLastIndex(): Double = js.native
+  def getLastIndex(): Double
   
   /**
     * Returns the next index value for later use to obtain a value.
     */
-  def getNextIndex(): Double = js.native
+  def getNextIndex(): Double
   
   /**
     * Returns the previous index for later use to obtain the value.
     */
-  def getPrevIndex(): Double = js.native
+  def getPrevIndex(): Double
   
   /**
     * Returns an array of element values as a JavaScript array in key order.
     */
-  def getValues(): js.Array[T] = js.native
+  def getValues(): js.Array[T]
   
   /**
     * Returns true if an element exists in the collection at the given index. Returns false otherwise.
     */
-  def hasElement(): Boolean = js.native
+  def hasElement(): Boolean
   
   /** True if the object is a collection, false otherwise. */
-  val isCollection: Boolean = js.native
+  val isCollection: Boolean
   
   /** When dbObject.isCollection is true, this will have the number of elements in the collection. It is undefined for non-collections. */
-  val length: js.UndefOr[Double] = js.native
+  val length: js.UndefOr[Double] = js.undefined
   
   /** Name of the Oracle Database object or collection. */
-  val name: String = js.native
+  val name: String
   
   /** Schema owning the Oracle Database object or collection. */
-  val schema: String = js.native
+  val schema: String
   
   /**
     * To set the given value at the position of the given index.
     */
-  def setElement(index: Double, value: T): Unit = js.native
+  def setElement(index: Double, value: T): Unit
   
   /**
     * Trims the specified number of elements from the end of the collection.
     */
-  def trim(count: Double): Unit = js.native
+  def trim(count: Double): Unit
 }
 object BaseDBObject {
   
@@ -132,7 +130,7 @@ object BaseDBObject {
   }
   
   @scala.inline
-  implicit class BaseDBObjectMutableBuilder[Self <: BaseDBObject[_], T] (val x: Self with BaseDBObject[T]) extends AnyVal {
+  implicit class BaseDBObjectMutableBuilder[Self <: BaseDBObject[?], T] (val x: Self & BaseDBObject[T]) extends AnyVal {
     
     @scala.inline
     def setAppend(value: T => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))

@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalMod {
@@ -22,10 +21,9 @@ object portalMod {
     var container: Element = js.native
   }
   
-  @js.native
   trait PortalProps extends StObject {
     
-    def getContainer(): Element = js.native
+    def getContainer(): Element
   }
   object PortalProps {
     

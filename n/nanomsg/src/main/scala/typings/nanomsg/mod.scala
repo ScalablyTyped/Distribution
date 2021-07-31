@@ -5,10 +5,13 @@ import typings.nanomsg.nanomsgStrings.text
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("nanomsg", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("nanomsg", "Socket")
   @js.native
@@ -29,45 +32,42 @@ object mod {
     def shutdown(addr: String): Unit = js.native
   }
   
-  @JSImport("nanomsg", "socket")
-  @js.native
-  def socket(`type`: String): Socket_ = js.native
-  @JSImport("nanomsg", "socket")
-  @js.native
-  def socket(`type`: String, opts: Options): Socket_ = js.native
+  @scala.inline
+  def socket(`type`: String): Socket_ = ^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any]).asInstanceOf[Socket_]
+  @scala.inline
+  def socket(`type`: String, opts: Options): Socket_ = (^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Socket_]
   
-  @js.native
   trait Options extends StObject {
     
-    var chan: js.UndefOr[js.Array[String]] = js.native
+    var chan: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ipv6: js.UndefOr[Boolean] = js.native
+    var ipv6: js.UndefOr[Boolean] = js.undefined
     
-    var linger: js.UndefOr[Double] = js.native
+    var linger: js.UndefOr[Double] = js.undefined
     
-    var maxreconn: js.UndefOr[Double] = js.native
+    var maxreconn: js.UndefOr[Double] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var rcvbuf: js.UndefOr[Double] = js.native
+    var rcvbuf: js.UndefOr[Double] = js.undefined
     
-    var rcvmaxsize: js.UndefOr[Double] = js.native
+    var rcvmaxsize: js.UndefOr[Double] = js.undefined
     
-    var rcvprio: js.UndefOr[Double] = js.native
+    var rcvprio: js.UndefOr[Double] = js.undefined
     
-    var rcvtimeo: js.UndefOr[Double] = js.native
+    var rcvtimeo: js.UndefOr[Double] = js.undefined
     
-    var reconn: js.UndefOr[Double] = js.native
+    var reconn: js.UndefOr[Double] = js.undefined
     
-    var sndbuf: js.UndefOr[Double] = js.native
+    var sndbuf: js.UndefOr[Double] = js.undefined
     
-    var sndprio: js.UndefOr[Double] = js.native
+    var sndprio: js.UndefOr[Double] = js.undefined
     
-    var sndtimeo: js.UndefOr[Double] = js.native
+    var sndtimeo: js.UndefOr[Double] = js.undefined
     
-    var tcpnodelay: js.UndefOr[Boolean] = js.native
+    var tcpnodelay: js.UndefOr[Boolean] = js.undefined
     
-    var wsopt: js.UndefOr[text | binary] = js.native
+    var wsopt: js.UndefOr[text | binary] = js.undefined
   }
   object Options {
     

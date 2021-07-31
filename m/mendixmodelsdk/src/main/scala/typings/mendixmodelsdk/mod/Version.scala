@@ -2,7 +2,6 @@ package typings.mendixmodelsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "Version")
@@ -30,7 +29,6 @@ object Version {
     * This function is memoised to keep memory and time consumption low,
     * given that only a handful of versions exist at any time anyway.
     */
-  @JSImport("mendixmodelsdk", "Version.parse")
-  @js.native
-  def parse(versionString: String): typings.mendixmodelsdk.versionChecksMod.Version = js.native
+  @scala.inline
+  def parse(versionString: String): typings.mendixmodelsdk.versionChecksMod.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(versionString.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.versionChecksMod.Version]
 }

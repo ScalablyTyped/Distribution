@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductsGenerateApprovalUrlResponse extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ProductsGenerateApprovalUrlResponse extends StObject {
     * approved, a URL will only be generated if that product has added permissions since it was last approved, and the URL will only display those new permissions that have not yet been
     * accepted.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ProductsGenerateApprovalUrlResponse {
   

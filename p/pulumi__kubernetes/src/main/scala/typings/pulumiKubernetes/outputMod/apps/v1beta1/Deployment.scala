@@ -4,7 +4,6 @@ import typings.pulumiKubernetes.outputMod.meta.v1.ObjectMeta
 import typings.pulumiKubernetes.pulumiKubernetesStrings.appsSlashv1beta1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -32,45 +31,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * time out and mark the resource update as Failed. You can override the default timeout value
   * by setting the 'customTimeouts' option on the resource.
   */
-@js.native
 trait Deployment extends StObject {
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: appsSlashv1beta1 = js.native
+  var apiVersion: appsSlashv1beta1
   
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Deployment = js.native
+  var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Deployment
   
   /**
     * Standard object metadata.
     */
-  var metadata: ObjectMeta = js.native
+  var metadata: ObjectMeta
   
   /**
     * Specification of the desired behavior of the Deployment.
     */
-  var spec: DeploymentSpec = js.native
+  var spec: DeploymentSpec
   
   /**
     * Most recently observed status of the Deployment.
     */
-  var status: DeploymentStatus = js.native
+  var status: DeploymentStatus
 }
 object Deployment {
   
   @scala.inline
-  def apply(
-    apiVersion: appsSlashv1beta1,
-    kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Deployment,
-    metadata: ObjectMeta,
-    spec: DeploymentSpec,
-    status: DeploymentStatus
-  ): Deployment = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+  def apply(metadata: ObjectMeta, spec: DeploymentSpec, status: DeploymentStatus): Deployment = {
+    val __obj = js.Dynamic.literal(apiVersion = "apps/v1beta1", kind = "Deployment", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deployment]
   }
   

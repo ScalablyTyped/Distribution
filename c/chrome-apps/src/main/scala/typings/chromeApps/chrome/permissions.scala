@@ -5,7 +5,6 @@ import typings.chromeApps.chrome.runtime.OptionalPermission
 import typings.chromeApps.chrome.runtime.UrlMatches
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -22,7 +21,6 @@ object permissions {
   
   type PermissionEvent = Event[js.Function1[/* permissions */ Permissions, Unit]]
   
-  @js.native
   trait Permissions extends StObject {
     
     /**
@@ -33,13 +31,13 @@ object permissions {
       * you can request an origin of http://help.example.com/.
       * Any path is ignored.
       */
-    var origins: js.UndefOr[js.Array[String | UrlMatches]] = js.native
+    var origins: js.UndefOr[js.Array[String | UrlMatches]] = js.undefined
     
     /**
       * List of named permissions (does not include hosts or origins).
       * Anything listed here must appear in the optional_permissions list in the manifest.
       */
-    var permissions: js.UndefOr[js.Array[OptionalPermission]] = js.native
+    var permissions: js.UndefOr[js.Array[OptionalPermission]] = js.undefined
   }
   object Permissions {
     

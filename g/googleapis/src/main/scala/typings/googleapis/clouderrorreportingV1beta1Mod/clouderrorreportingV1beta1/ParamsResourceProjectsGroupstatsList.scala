@@ -6,52 +6,52 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsGroupstatsList extends StandardParameters {
+trait ParamsResourceProjectsGroupstatsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * [Optional] The alignment of the timed counts to be returned. Default is
     * `ALIGNMENT_EQUAL_AT_END`.
     */
-  var alignment: js.UndefOr[String] = js.native
+  var alignment: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] Time where the timed counts shall be aligned if rounded
     * alignment is chosen. Default is 00:00 UTC.
     */
-  var alignmentTime: js.UndefOr[String] = js.native
+  var alignmentTime: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * [Optional] List all <code>ErrorGroupStats</code> with these IDs.
     */
-  var groupId: js.UndefOr[js.Array[String]] = js.native
+  var groupId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Optional] The sort order in which the results are returned. Default is
     * `COUNT_DESC`.
     */
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The maximum number of results to return per response. Default
     * is 20.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * [Optional] A `next_page_token` provided by a previous response. To view
     * additional results, pass this token along with the identical query
     * parameters as the first request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The resource name of the Google Cloud Platform project.
@@ -59,40 +59,40 @@ trait ParamsResourceProjectsGroupstatsList extends StandardParameters {
     * href="https://support.google.com/cloud/answer/6158840">Google Cloud
     * Platform project ID</a>.  Example: <code>projects/my-project-123</code>.
     */
-  var projectName: js.UndefOr[String] = js.native
+  var projectName: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The exact value to match against
     * [`ServiceContext.resource_type`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.resource_type).
     */
   @JSName("serviceFilter.resourceType")
-  var serviceFilterDotresourceType: js.UndefOr[String] = js.native
+  var serviceFilterDotresourceType: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The exact value to match against
     * [`ServiceContext.service`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.service).
     */
   @JSName("serviceFilter.service")
-  var serviceFilterDotservice: js.UndefOr[String] = js.native
+  var serviceFilterDotservice: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The exact value to match against
     * [`ServiceContext.version`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.version).
     */
   @JSName("serviceFilter.version")
-  var serviceFilterDotversion: js.UndefOr[String] = js.native
+  var serviceFilterDotversion: js.UndefOr[String] = js.undefined
   
   /**
     * Restricts the query to the specified time range.
     */
   @JSName("timeRange.period")
-  var timeRangeDotperiod: js.UndefOr[String] = js.native
+  var timeRangeDotperiod: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The preferred duration for a single returned `TimedCount`. If
     * not set, no timed counts are returned.
     */
-  var timedCountDuration: js.UndefOr[String] = js.native
+  var timedCountDuration: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsGroupstatsList {
   

@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details about one network registration state change. */
-@js.native
 trait MobileBroadbandNetworkRegistrationStateChange extends StObject {
   
   /** Gets the unique identifier of the device associated with a network registration state change. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** Gets an object which contains details about the network associated with this network state change. */
-  var network: MobileBroadbandNetwork = js.native
+  var network: MobileBroadbandNetwork
 }
 object MobileBroadbandNetworkRegistrationStateChange {
   

@@ -2,37 +2,35 @@ package typings.googleapis.dnsV1beta2Mod.dnsV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDnsKey extends StObject {
   
-  var algorithm: js.UndefOr[String] = js.native
+  var algorithm: js.UndefOr[String] = js.undefined
   
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var digests: js.UndefOr[js.Array[SchemaDnsKeyDigest]] = js.native
+  var digests: js.UndefOr[js.Array[SchemaDnsKeyDigest]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var isActive: js.UndefOr[Boolean] = js.native
+  var isActive: js.UndefOr[Boolean] = js.undefined
   
-  var keyLength: js.UndefOr[Double] = js.native
+  var keyLength: js.UndefOr[Double] = js.undefined
   
-  var keyTag: js.UndefOr[Double] = js.native
+  var keyTag: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dns#dnsKey&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var publicKey: js.UndefOr[String] = js.native
+  var publicKey: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaDnsKey {
   

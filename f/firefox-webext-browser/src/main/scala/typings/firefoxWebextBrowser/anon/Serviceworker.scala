@@ -3,13 +3,11 @@ package typings.firefoxWebextBrowser.anon
 import typings.firefoxWebextBrowser.browser.manifest.ExtensionURL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Serviceworker extends StObject {
   
-  var service_worker: ExtensionURL = js.native
+  var service_worker: ExtensionURL
 }
 object Serviceworker {
   

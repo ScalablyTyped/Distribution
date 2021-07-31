@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,16 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setDebugText("This text is only shown to admins.")
   *       .throwException();
   */
-@js.native
 trait UserError extends StObject {
   
-  def printJson(): String = js.native
+  def printJson(): String
   
-  def setDebugText(text: String): UserError = js.native
+  def setDebugText(text: String): UserError
   
-  def setText(text: String): UserError = js.native
+  def setText(text: String): UserError
   
-  def throwException(): scala.Nothing = js.native
+  def throwException(): scala.Nothing
 }
 object UserError {
   

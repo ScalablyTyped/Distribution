@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcMod {
@@ -21,36 +20,35 @@ object srcMod {
     def this(props: AnimatorProps, context: js.Any) = this()
   }
   
-  @js.native
   trait AnimatorProps extends StObject {
     
-    var childClassName: js.UndefOr[String] = js.native
+    var childClassName: js.UndefOr[String] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dataHook: js.UndefOr[String] = js.native
+    var dataHook: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var delay: js.UndefOr[Delay] = js.native
+    var delay: js.UndefOr[Delay] = js.undefined
     
-    var height: js.UndefOr[Boolean | Double | (js.Function1[/* element */ js.Any, Double])] = js.native
+    var height: js.UndefOr[Boolean | Double | (js.Function1[/* element */ js.Any, Double])] = js.undefined
     
-    var opacity: js.UndefOr[Boolean] = js.native
+    var opacity: js.UndefOr[Boolean] = js.undefined
     
-    var scale: js.UndefOr[Boolean] = js.native
+    var scale: js.UndefOr[Boolean] = js.undefined
     
-    var sequence: js.UndefOr[Sequence | Boolean] = js.native
+    var sequence: js.UndefOr[Sequence | Boolean] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var timing: js.UndefOr[Timing] = js.native
+    var timing: js.UndefOr[Timing] = js.undefined
     
-    var translate: js.UndefOr[Translate | Boolean | String] = js.native
+    var translate: js.UndefOr[Translate | Boolean | String] = js.undefined
     
-    var width: js.UndefOr[Boolean | Double | (js.Function1[/* element */ js.Any, Double])] = js.native
+    var width: js.UndefOr[Boolean | Double | (js.Function1[/* element */ js.Any, Double])] = js.undefined
   }
   object AnimatorProps {
     
@@ -155,12 +153,11 @@ object srcMod {
     }
   }
   
-  @js.native
   trait Delay extends StObject {
     
-    var enter: js.UndefOr[Double] = js.native
+    var enter: js.UndefOr[Double] = js.undefined
     
-    var exit: js.UndefOr[Double] = js.native
+    var exit: js.UndefOr[Double] = js.undefined
   }
   object Delay {
     
@@ -209,12 +206,11 @@ object srcMod {
     def top: typings.wixAnimations.wixAnimationsStrings.top = "top".asInstanceOf[typings.wixAnimations.wixAnimationsStrings.top]
   }
   
-  @js.native
   trait Segment extends StObject {
     
-    var direction: js.UndefOr[Direction] = js.native
+    var direction: js.UndefOr[Direction] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object Segment {
     
@@ -285,12 +281,11 @@ object srcMod {
     def small: typings.wixAnimations.wixAnimationsStrings.small = "small".asInstanceOf[typings.wixAnimations.wixAnimationsStrings.small]
   }
   
-  @js.native
   trait Translate extends StObject {
     
-    var enter: js.UndefOr[Direction | Segment] = js.native
+    var enter: js.UndefOr[Direction | Segment] = js.undefined
     
-    var exit: js.UndefOr[Direction | Segment] = js.native
+    var exit: js.UndefOr[Direction | Segment] = js.undefined
   }
   object Translate {
     

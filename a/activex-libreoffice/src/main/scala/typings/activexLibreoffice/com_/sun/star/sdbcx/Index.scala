@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,26 +16,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ** Note: ** All properties and columns of an index could by modified before they are appended to a table. In that case the service is a data
   * descriptor.
   */
-@js.native
 trait Index
-  extends XDataDescriptorFactory
+  extends StObject
+     with XDataDescriptorFactory
      with XColumnsSupplier
      with XPropertySet {
   
   /** is the name of the index catalog, may be empty. */
-  var Catalog: String = js.native
+  var Catalog: String
   
   /** indicates that the index is clustered. */
-  var IsClustered: Boolean = js.native
+  var IsClustered: Boolean
   
   /** indicates that the index is used for the primary key. */
-  var IsPrimaryKeyIndex: Boolean = js.native
+  var IsPrimaryKeyIndex: Boolean
   
   /** indicates that the index allow only unique values. */
-  var IsUnique: Boolean = js.native
+  var IsUnique: Boolean
   
   /** is the name of the index. */
-  var Name: String = js.native
+  var Name: String
 }
 object Index {
   

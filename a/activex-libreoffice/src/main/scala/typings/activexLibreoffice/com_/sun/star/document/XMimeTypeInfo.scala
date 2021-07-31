@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides information regarding which MIME types are supported by a filter. */
-@js.native
-trait XMimeTypeInfo extends XInterface {
+trait XMimeTypeInfo
+  extends StObject
+     with XInterface {
   
   /** @returns a sequence of the names of all supported MIME types. */
-  val SupportedMimeTypeNames: SafeArray[String] = js.native
+  val SupportedMimeTypeNames: SafeArray[String]
   
   /** @returns a sequence of the names of all supported MIME types. */
-  def getSupportedMimeTypeNames(): SafeArray[String] = js.native
+  def getSupportedMimeTypeNames(): SafeArray[String]
   
   /** asks whether a MIME type is supported or not. */
-  def supportsMimeType(MimeTypeName: String): Boolean = js.native
+  def supportsMimeType(MimeTypeName: String): Boolean
 }
 object XMimeTypeInfo {
   

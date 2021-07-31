@@ -2,36 +2,34 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateImageRequest extends StObject {
   
   /**
     * A list of properties to delete. Only the Description and DisplayName properties can be deleted.
     */
-  var DeleteProperties: js.UndefOr[ImageDeletePropertyList] = js.native
+  var DeleteProperties: js.UndefOr[ImageDeletePropertyList] = js.undefined
   
   /**
     * The new description for the image.
     */
-  var Description: js.UndefOr[ImageDescription] = js.native
+  var Description: js.UndefOr[ImageDescription] = js.undefined
   
   /**
     * The new display name for the image.
     */
-  var DisplayName: js.UndefOr[ImageDisplayName] = js.native
+  var DisplayName: js.UndefOr[ImageDisplayName] = js.undefined
   
   /**
     * The name of the image to update.
     */
-  var ImageName: typings.awsSdk.sagemakerMod.ImageName = js.native
+  var ImageName: typings.awsSdk.sagemakerMod.ImageName
   
   /**
     * The new Amazon Resource Name (ARN) for the IAM role that enables Amazon SageMaker to perform tasks on your behalf.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.sagemakerMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.sagemakerMod.RoleArn] = js.undefined
 }
 object UpdateImageRequest {
   

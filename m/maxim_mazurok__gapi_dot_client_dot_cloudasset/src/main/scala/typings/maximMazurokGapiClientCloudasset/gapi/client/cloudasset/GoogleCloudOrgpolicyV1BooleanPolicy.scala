@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudOrgpolicyV1BooleanPolicy extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait GoogleCloudOrgpolicyV1BooleanPolicy extends StObject {
     * enforced. Example 3 (RestoreDefault): `organizations/foo` has a `Policy` with: {enforced: true} `projects/bar` has a `Policy` with: {RestoreDefault: {}} The constraint at
     * `organizations/foo` is enforced. The constraint at `projects/bar` is not enforced, because `constraint_default` for the `Constraint` is `ALLOW`.
     */
-  var enforced: js.UndefOr[Boolean] = js.native
+  var enforced: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleCloudOrgpolicyV1BooleanPolicy {
   

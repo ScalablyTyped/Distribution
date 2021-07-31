@@ -2,31 +2,29 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedshiftDestinationProperties extends StObject {
   
   /**
     *  The object key for the bucket in which Amazon AppFlow places the destination files. 
     */
-  var bucketPrefix: js.UndefOr[BucketPrefix] = js.native
+  var bucketPrefix: js.UndefOr[BucketPrefix] = js.undefined
   
   /**
     *  The settings that determine how Amazon AppFlow handles an error when placing data in the Amazon Redshift destination. For example, this setting would determine if the flow should fail after one insertion error, or continue and attempt to insert every record regardless of the initial failure. ErrorHandlingConfig is a part of the destination connector details. 
     */
-  var errorHandlingConfig: js.UndefOr[ErrorHandlingConfig] = js.native
+  var errorHandlingConfig: js.UndefOr[ErrorHandlingConfig] = js.undefined
   
   /**
     *  The intermediate bucket that Amazon AppFlow uses when moving data into Amazon Redshift. 
     */
-  var intermediateBucketName: BucketName = js.native
+  var intermediateBucketName: BucketName
   
   /**
     *  The object specified in the Amazon Redshift flow destination. 
     */
-  var `object`: Object = js.native
+  var `object`: Object
 }
 object RedshiftDestinationProperties {
   

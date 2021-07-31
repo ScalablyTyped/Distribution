@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergeOperations extends StObject {
   
   /**
     * The operation on a file in the destination of a merge or pull request.
     */
-  var destination: js.UndefOr[ChangeTypeEnum] = js.native
+  var destination: js.UndefOr[ChangeTypeEnum] = js.undefined
   
   /**
     * The operation (add, modify, or delete) on a file in the source of a merge or pull request.
     */
-  var source: js.UndefOr[ChangeTypeEnum] = js.native
+  var source: js.UndefOr[ChangeTypeEnum] = js.undefined
 }
 object MergeOperations {
   

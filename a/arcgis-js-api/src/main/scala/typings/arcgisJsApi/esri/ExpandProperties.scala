@@ -6,95 +6,95 @@ import typings.arcgisJsApi.arcgisJsApiStrings.floating
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExpandProperties extends WidgetProperties {
+trait ExpandProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * Automatically collapses the expand widget instance when the view's viewpoint updates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#autoCollapse)
     */
-  var autoCollapse: js.UndefOr[Boolean] = js.native
+  var autoCollapse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Icon font used to style the Expand button.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapseIconClass)
     */
-  var collapseIconClass: js.UndefOr[String] = js.native
+  var collapseIconClass: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip to display to indicate Expand widget can be collapsed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapseTooltip)
     */
-  var collapseTooltip: js.UndefOr[String] = js.native
+  var collapseTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * The content to display within the expanded Expand widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#content)
     */
-  var content: js.UndefOr[Node | String | WidgetProperties] = js.native
+  var content: js.UndefOr[Node | String | WidgetProperties] = js.undefined
   
   /**
     * Icon font used to style the Expand button.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expandIconClass)
     */
-  var expandIconClass: js.UndefOr[String] = js.native
+  var expandIconClass: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip to display to indicate Expand widget can be expanded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expandTooltip)
     */
-  var expandTooltip: js.UndefOr[String] = js.native
+  var expandTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the widget is currently expanded or not.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expanded)
     */
-  var expanded: js.UndefOr[Boolean] = js.native
+  var expanded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This value associates two or more Expand widget instances with each other, allowing one instance to auto collapse when another instance in the same group is expanded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#group)
     */
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
   /**
     * A number to display at the corner of the widget to indicate the number of, for example, open issues or unread notices.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#iconNumber)
     */
-  var iconNumber: js.UndefOr[Double] = js.native
+  var iconNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * The mode in which the widget displays.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#mode)
     */
-  var mode: js.UndefOr[auto | floating | drawer] = js.native
+  var mode: js.UndefOr[auto | floating | drawer] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#viewModel)
     */
-  var viewModel: js.UndefOr[ExpandViewModelProperties] = js.native
+  var viewModel: js.UndefOr[ExpandViewModelProperties] = js.undefined
 }
 object ExpandProperties {
   

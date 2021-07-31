@@ -2,7 +2,6 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,29 +9,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * chat. A chat moderator has the ability to ban/unban users from a chat,
   * remove message, etc.
   */
-@js.native
 trait SchemaLiveChatModerator extends StObject {
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube assigns to uniquely identify the moderator.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#liveChatModerator&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet object contains basic details about the moderator.
     */
-  var snippet: js.UndefOr[SchemaLiveChatModeratorSnippet] = js.native
+  var snippet: js.UndefOr[SchemaLiveChatModeratorSnippet] = js.undefined
 }
 object SchemaLiveChatModerator {
   

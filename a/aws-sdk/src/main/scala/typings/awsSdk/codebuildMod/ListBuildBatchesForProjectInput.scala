@@ -2,36 +2,34 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBuildBatchesForProjectInput extends StObject {
   
   /**
     * A BuildBatchFilter object that specifies the filters for the search.
     */
-  var filter: js.UndefOr[BuildBatchFilter] = js.native
+  var filter: js.UndefOr[BuildBatchFilter] = js.undefined
   
   /**
     * The maximum number of results to return.
     */
-  var maxResults: js.UndefOr[PageSize] = js.native
+  var maxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * The nextToken value returned from a previous call to ListBuildBatchesForProject. This specifies the next item to return. To return the beginning of the list, exclude this parameter.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the project.
     */
-  var projectName: js.UndefOr[NonEmptyString] = js.native
+  var projectName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Specifies the sort order of the returned items. Valid values include:    ASCENDING: List the batch build identifiers in ascending order by identifier.    DESCENDING: List the batch build identifiers in descending order by identifier.  
     */
-  var sortOrder: js.UndefOr[SortOrderType] = js.native
+  var sortOrder: js.UndefOr[SortOrderType] = js.undefined
 }
 object ListBuildBatchesForProjectInput {
   

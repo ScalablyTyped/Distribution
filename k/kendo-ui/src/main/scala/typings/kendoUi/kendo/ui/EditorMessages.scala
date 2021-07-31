@@ -2,197 +2,195 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorMessages extends StObject {
   
-  var accessibilityTab: js.UndefOr[String] = js.native
+  var accessibilityTab: js.UndefOr[String] = js.undefined
   
-  var addColumnLeft: js.UndefOr[String] = js.native
+  var addColumnLeft: js.UndefOr[String] = js.undefined
   
-  var addColumnRight: js.UndefOr[String] = js.native
+  var addColumnRight: js.UndefOr[String] = js.undefined
   
-  var addRowAbove: js.UndefOr[String] = js.native
+  var addRowAbove: js.UndefOr[String] = js.undefined
   
-  var addRowBelow: js.UndefOr[String] = js.native
+  var addRowBelow: js.UndefOr[String] = js.undefined
   
-  var alignCenter: js.UndefOr[String] = js.native
+  var alignCenter: js.UndefOr[String] = js.undefined
   
-  var alignCenterBottom: js.UndefOr[String] = js.native
+  var alignCenterBottom: js.UndefOr[String] = js.undefined
   
-  var alignCenterMiddle: js.UndefOr[String] = js.native
+  var alignCenterMiddle: js.UndefOr[String] = js.undefined
   
-  var alignCenterTop: js.UndefOr[String] = js.native
+  var alignCenterTop: js.UndefOr[String] = js.undefined
   
-  var alignLeft: js.UndefOr[String] = js.native
+  var alignLeft: js.UndefOr[String] = js.undefined
   
-  var alignLeftBottom: js.UndefOr[String] = js.native
+  var alignLeftBottom: js.UndefOr[String] = js.undefined
   
-  var alignLeftMiddle: js.UndefOr[String] = js.native
+  var alignLeftMiddle: js.UndefOr[String] = js.undefined
   
-  var alignLeftTop: js.UndefOr[String] = js.native
+  var alignLeftTop: js.UndefOr[String] = js.undefined
   
-  var alignRemove: js.UndefOr[String] = js.native
+  var alignRemove: js.UndefOr[String] = js.undefined
   
-  var alignRight: js.UndefOr[String] = js.native
+  var alignRight: js.UndefOr[String] = js.undefined
   
-  var alignRightBottom: js.UndefOr[String] = js.native
+  var alignRightBottom: js.UndefOr[String] = js.undefined
   
-  var alignRightMiddle: js.UndefOr[String] = js.native
+  var alignRightMiddle: js.UndefOr[String] = js.undefined
   
-  var alignRightTop: js.UndefOr[String] = js.native
+  var alignRightTop: js.UndefOr[String] = js.undefined
   
-  var alignment: js.UndefOr[String] = js.native
+  var alignment: js.UndefOr[String] = js.undefined
   
-  var applyFormat: js.UndefOr[String] = js.native
+  var applyFormat: js.UndefOr[String] = js.undefined
   
-  var associateCellsWithHeaders: js.UndefOr[String] = js.native
+  var associateCellsWithHeaders: js.UndefOr[String] = js.undefined
   
-  var backColor: js.UndefOr[String] = js.native
+  var backColor: js.UndefOr[String] = js.undefined
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var bold: js.UndefOr[String] = js.native
+  var bold: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[String] = js.native
+  var border: js.UndefOr[String] = js.undefined
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var cellMargin: js.UndefOr[String] = js.native
+  var cellMargin: js.UndefOr[String] = js.undefined
   
-  var cellPadding: js.UndefOr[String] = js.native
+  var cellPadding: js.UndefOr[String] = js.undefined
   
-  var cellSpacing: js.UndefOr[String] = js.native
+  var cellSpacing: js.UndefOr[String] = js.undefined
   
-  var cellTab: js.UndefOr[String] = js.native
+  var cellTab: js.UndefOr[String] = js.undefined
   
-  var cleanFormatting: js.UndefOr[String] = js.native
+  var cleanFormatting: js.UndefOr[String] = js.undefined
   
-  var collapseBorders: js.UndefOr[String] = js.native
+  var collapseBorders: js.UndefOr[String] = js.undefined
   
-  var columns: js.UndefOr[String] = js.native
+  var columns: js.UndefOr[String] = js.undefined
   
-  var copyFormat: js.UndefOr[String] = js.native
+  var copyFormat: js.UndefOr[String] = js.undefined
   
-  var createLink: js.UndefOr[String] = js.native
+  var createLink: js.UndefOr[String] = js.undefined
   
-  var createTable: js.UndefOr[String] = js.native
+  var createTable: js.UndefOr[String] = js.undefined
   
-  var createTableHint: js.UndefOr[String] = js.native
+  var createTableHint: js.UndefOr[String] = js.undefined
   
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
-  var deleteColumn: js.UndefOr[String] = js.native
+  var deleteColumn: js.UndefOr[String] = js.undefined
   
-  var deleteRow: js.UndefOr[String] = js.native
+  var deleteRow: js.UndefOr[String] = js.undefined
   
-  var dialogCancel: js.UndefOr[String] = js.native
+  var dialogCancel: js.UndefOr[String] = js.undefined
   
-  var dialogInsert: js.UndefOr[String] = js.native
+  var dialogInsert: js.UndefOr[String] = js.undefined
   
-  var dialogOk: js.UndefOr[String] = js.native
+  var dialogOk: js.UndefOr[String] = js.undefined
   
-  var dialogUpdate: js.UndefOr[String] = js.native
+  var dialogUpdate: js.UndefOr[String] = js.undefined
   
-  var editAreaTitle: js.UndefOr[String] = js.native
+  var editAreaTitle: js.UndefOr[String] = js.undefined
   
-  var fileTitle: js.UndefOr[String] = js.native
+  var fileTitle: js.UndefOr[String] = js.undefined
   
-  var fileWebAddress: js.UndefOr[String] = js.native
+  var fileWebAddress: js.UndefOr[String] = js.undefined
   
-  var fontName: js.UndefOr[String] = js.native
+  var fontName: js.UndefOr[String] = js.undefined
   
-  var fontNameInherit: js.UndefOr[String] = js.native
+  var fontNameInherit: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
-  var fontSizeInherit: js.UndefOr[String] = js.native
+  var fontSizeInherit: js.UndefOr[String] = js.undefined
   
-  var foreColor: js.UndefOr[String] = js.native
+  var foreColor: js.UndefOr[String] = js.undefined
   
-  var formatBlock: js.UndefOr[String] = js.native
+  var formatBlock: js.UndefOr[String] = js.undefined
   
-  var formatting: js.UndefOr[String] = js.native
+  var formatting: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var imageAltText: js.UndefOr[String] = js.native
+  var imageAltText: js.UndefOr[String] = js.undefined
   
-  var imageHeight: js.UndefOr[String] = js.native
+  var imageHeight: js.UndefOr[String] = js.undefined
   
-  var imageWebAddress: js.UndefOr[String] = js.native
+  var imageWebAddress: js.UndefOr[String] = js.undefined
   
-  var imageWidth: js.UndefOr[String] = js.native
+  var imageWidth: js.UndefOr[String] = js.undefined
   
-  var indent: js.UndefOr[String] = js.native
+  var indent: js.UndefOr[String] = js.undefined
   
-  var insertFile: js.UndefOr[String] = js.native
+  var insertFile: js.UndefOr[String] = js.undefined
   
-  var insertHtml: js.UndefOr[String] = js.native
+  var insertHtml: js.UndefOr[String] = js.undefined
   
-  var insertImage: js.UndefOr[String] = js.native
+  var insertImage: js.UndefOr[String] = js.undefined
   
-  var insertOrderedList: js.UndefOr[String] = js.native
+  var insertOrderedList: js.UndefOr[String] = js.undefined
   
-  var insertUnorderedList: js.UndefOr[String] = js.native
+  var insertUnorderedList: js.UndefOr[String] = js.undefined
   
-  var italic: js.UndefOr[String] = js.native
+  var italic: js.UndefOr[String] = js.undefined
   
-  var justifyCenter: js.UndefOr[String] = js.native
+  var justifyCenter: js.UndefOr[String] = js.undefined
   
-  var justifyFull: js.UndefOr[String] = js.native
+  var justifyFull: js.UndefOr[String] = js.undefined
   
-  var justifyLeft: js.UndefOr[String] = js.native
+  var justifyLeft: js.UndefOr[String] = js.undefined
   
-  var justifyRight: js.UndefOr[String] = js.native
+  var justifyRight: js.UndefOr[String] = js.undefined
   
-  var linkOpenInNewWindow: js.UndefOr[String] = js.native
+  var linkOpenInNewWindow: js.UndefOr[String] = js.undefined
   
-  var linkText: js.UndefOr[String] = js.native
+  var linkText: js.UndefOr[String] = js.undefined
   
-  var linkToolTip: js.UndefOr[String] = js.native
+  var linkToolTip: js.UndefOr[String] = js.undefined
   
-  var linkWebAddress: js.UndefOr[String] = js.native
+  var linkWebAddress: js.UndefOr[String] = js.undefined
   
-  var outdent: js.UndefOr[String] = js.native
+  var outdent: js.UndefOr[String] = js.undefined
   
-  var overflowAnchor: js.UndefOr[String] = js.native
+  var overflowAnchor: js.UndefOr[String] = js.undefined
   
-  var print: js.UndefOr[String] = js.native
+  var print: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[String] = js.native
+  var rows: js.UndefOr[String] = js.undefined
   
-  var selectAllCells: js.UndefOr[String] = js.native
+  var selectAllCells: js.UndefOr[String] = js.undefined
   
-  var strikethrough: js.UndefOr[String] = js.native
+  var strikethrough: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var subscript: js.UndefOr[String] = js.native
+  var subscript: js.UndefOr[String] = js.undefined
   
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
-  var superscript: js.UndefOr[String] = js.native
+  var superscript: js.UndefOr[String] = js.undefined
   
-  var tableTab: js.UndefOr[String] = js.native
+  var tableTab: js.UndefOr[String] = js.undefined
   
-  var tableWizard: js.UndefOr[String] = js.native
+  var tableWizard: js.UndefOr[String] = js.undefined
   
-  var underline: js.UndefOr[String] = js.native
+  var underline: js.UndefOr[String] = js.undefined
   
-  var units: js.UndefOr[String] = js.native
+  var units: js.UndefOr[String] = js.undefined
   
-  var unlink: js.UndefOr[String] = js.native
+  var unlink: js.UndefOr[String] = js.undefined
   
-  var viewHtml: js.UndefOr[String] = js.native
+  var viewHtml: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
   
-  var wrapText: js.UndefOr[String] = js.native
+  var wrapText: js.UndefOr[String] = js.undefined
 }
 object EditorMessages {
   

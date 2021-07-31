@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccountSettingsResponse extends StObject {
   
   /**
     * The QuickSight settings for this AWS account. This information includes the edition of Amazon QuickSight that you subscribed to (Standard or Enterprise) and the notification email for the QuickSight subscription. In the QuickSight console, the QuickSight subscription is sometimes referred to as a QuickSight "account" even though it's technically not an account by itself. Instead, it's a subscription to the QuickSight service for your AWS account. The edition that you subscribe to applies to QuickSight in every AWS Region where you use it.
     */
-  var AccountSettings: js.UndefOr[typings.awsSdk.quicksightMod.AccountSettings] = js.native
+  var AccountSettings: js.UndefOr[typings.awsSdk.quicksightMod.AccountSettings] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
 }
 object DescribeAccountSettingsResponse {
   

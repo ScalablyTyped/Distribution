@@ -4,11 +4,12 @@ import typings.googleVisualization.anon.End
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationChart extends ChartBaseClearable {
+trait AnnotationChart
+  extends StObject
+     with ChartBaseClearable {
   
   def draw(data: DataTable, options: AnnotationChartOptions): Unit = js.native
   def draw(data: DataTable, options: AnnotationChartOptions, state: js.Any): Unit = js.native

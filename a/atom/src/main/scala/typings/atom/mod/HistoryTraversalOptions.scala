@@ -2,14 +2,12 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryTraversalOptions extends StObject {
   
   /** Restore snapshot of selections marker layer to given selectionsMarkerLayer. */
-  var selectionsMarkerLayer: js.UndefOr[MarkerLayer] = js.native
+  var selectionsMarkerLayer: js.UndefOr[MarkerLayer] = js.undefined
 }
 object HistoryTraversalOptions {
   

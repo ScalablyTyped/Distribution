@@ -62,14 +62,14 @@ import typings.antd.uploadInterfaceMod.UploadType
 import typings.antd.useSelectionMod.INTERNAL_SELECTION_ITEM
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antdStrings {
   
   @js.native
   sealed trait default
-    extends ButtonType
+    extends StObject
+       with ButtonType
        with CardSize
        with ListSize
        with ProgressSize
@@ -81,12 +81,16 @@ object antdStrings {
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `403` extends ExceptionStatusType
+  sealed trait `403`
+    extends StObject
+       with ExceptionStatusType
   @scala.inline
   def `403`: `403` = "403".asInstanceOf[`403`]
   
   @js.native
-  sealed trait `404` extends ExceptionStatusType
+  sealed trait `404`
+    extends StObject
+       with ExceptionStatusType
   @scala.inline
   def `404`: `404` = "404".asInstanceOf[`404`]
   
@@ -96,37 +100,51 @@ object antdStrings {
   def `4Dot8Dot5`: `4Dot8Dot5` = "4.8.5".asInstanceOf[`4Dot8Dot5`]
   
   @js.native
-  sealed trait `500` extends ExceptionStatusType
+  sealed trait `500`
+    extends StObject
+       with ExceptionStatusType
   @scala.inline
   def `500`: `500` = "500".asInstanceOf[`500`]
   
   @js.native
-  sealed trait Calendar extends LocaleComponent
+  sealed trait Calendar
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Calendar: Calendar = "Calendar".asInstanceOf[Calendar]
   
   @js.native
-  sealed trait DatePicker extends LocaleComponent
+  sealed trait DatePicker
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def DatePicker: DatePicker = "DatePicker".asInstanceOf[DatePicker]
   
   @js.native
-  sealed trait Empty extends LocaleComponent
+  sealed trait Empty
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Empty: Empty = "Empty".asInstanceOf[Empty]
   
   @js.native
-  sealed trait Form extends LocaleComponent
+  sealed trait Form
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Form: Form = "Form".asInstanceOf[Form]
   
   @js.native
-  sealed trait Icon extends LocaleComponent
+  sealed trait Icon
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Icon: Icon = "Icon".asInstanceOf[Icon]
   
   @js.native
-  sealed trait Modal extends LocaleComponent
+  sealed trait Modal
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Modal: Modal = "Modal".asInstanceOf[Modal]
   
@@ -146,17 +164,23 @@ object antdStrings {
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait PageHeader extends LocaleComponent
+  sealed trait PageHeader
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def PageHeader: PageHeader = "PageHeader".asInstanceOf[PageHeader]
   
   @js.native
-  sealed trait Pagination extends LocaleComponent
+  sealed trait Pagination
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Pagination: Pagination = "Pagination".asInstanceOf[Pagination]
   
   @js.native
-  sealed trait Popconfirm extends LocaleComponent
+  sealed trait Popconfirm
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Popconfirm: Popconfirm = "Popconfirm".asInstanceOf[Popconfirm]
   
@@ -166,47 +190,65 @@ object antdStrings {
   def SECRET_COMBOBOX_MODE_DO_NOT_USE: SECRET_COMBOBOX_MODE_DO_NOT_USE = "SECRET_COMBOBOX_MODE_DO_NOT_USE".asInstanceOf[SECRET_COMBOBOX_MODE_DO_NOT_USE]
   
   @js.native
-  sealed trait SELECT_ALL extends INTERNAL_SELECTION_ITEM
+  sealed trait SELECT_ALL
+    extends StObject
+       with INTERNAL_SELECTION_ITEM
   @scala.inline
   def SELECT_ALL: SELECT_ALL = "SELECT_ALL".asInstanceOf[SELECT_ALL]
   
   @js.native
-  sealed trait SELECT_INVERT extends INTERNAL_SELECTION_ITEM
+  sealed trait SELECT_INVERT
+    extends StObject
+       with INTERNAL_SELECTION_ITEM
   @scala.inline
   def SELECT_INVERT: SELECT_INVERT = "SELECT_INVERT".asInstanceOf[SELECT_INVERT]
   
   @js.native
-  sealed trait Select extends LocaleComponent
+  sealed trait Select
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Select: Select = "Select".asInstanceOf[Select]
   
   @js.native
-  sealed trait Table extends LocaleComponent
+  sealed trait Table
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Table: Table = "Table".asInstanceOf[Table]
   
   @js.native
-  sealed trait Text extends LocaleComponent
+  sealed trait Text
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Text: Text = "Text".asInstanceOf[Text]
   
   @js.native
-  sealed trait TimePicker extends LocaleComponent
+  sealed trait TimePicker
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def TimePicker: TimePicker = "TimePicker".asInstanceOf[TimePicker]
   
   @js.native
-  sealed trait Transfer extends LocaleComponent
+  sealed trait Transfer
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Transfer: Transfer = "Transfer".asInstanceOf[Transfer]
   
   @js.native
-  sealed trait Upload extends LocaleComponent
+  sealed trait Upload
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def Upload: Upload = "Upload".asInstanceOf[Upload]
   
   @js.native
-  sealed trait _empty extends ValidateStatus
+  sealed trait _empty
+    extends StObject
+       with ValidateStatus
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -491,7 +533,9 @@ object antdStrings {
   def `aria-valuetext`: `aria-valuetext` = "aria-valuetext".asInstanceOf[`aria-valuetext`]
   
   @js.native
-  sealed trait ascend extends _SortOrder
+  sealed trait ascend
+    extends StObject
+       with _SortOrder
   @scala.inline
   def ascend: ascend = "ascend".asInstanceOf[ascend]
   
@@ -506,7 +550,9 @@ object antdStrings {
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait auto extends _FlexType
+  sealed trait auto
+    extends StObject
+       with _FlexType
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -536,13 +582,16 @@ object antdStrings {
   def bordered: bordered = "bordered".asInstanceOf[bordered]
   
   @js.native
-  sealed trait both extends PaginationPosition
+  sealed trait both
+    extends StObject
+       with PaginationPosition
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   
   @js.native
   sealed trait bottom
-    extends DotPosition
+    extends StObject
+       with DotPosition
        with MentionPlacement
        with PaginationPosition
        with TabsPosition
@@ -553,14 +602,16 @@ object antdStrings {
   
   @js.native
   sealed trait bottomCenter
-    extends Placement
+    extends StObject
+       with Placement
        with TablePaginationPosition
   @scala.inline
   def bottomCenter: bottomCenter = "bottomCenter".asInstanceOf[bottomCenter]
   
   @js.native
   sealed trait bottomLeft
-    extends NotificationPlacement
+    extends StObject
+       with NotificationPlacement
        with Placement
        with TablePaginationPosition
        with TooltipPlacement
@@ -569,7 +620,8 @@ object antdStrings {
   
   @js.native
   sealed trait bottomRight
-    extends NotificationPlacement
+    extends StObject
+       with NotificationPlacement
        with Placement
        with TablePaginationPosition
        with TooltipPlacement
@@ -583,7 +635,8 @@ object antdStrings {
   
   @js.native
   sealed trait button
-    extends ButtonHTMLType
+    extends StObject
+       with ButtonHTMLType
        with RadioGroupOptionType
   @scala.inline
   def button: button = "button".asInstanceOf[button]
@@ -594,7 +647,9 @@ object antdStrings {
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait card extends TabsType
+  sealed trait card
+    extends StObject
+       with TabsType
   @scala.inline
   def card: card = "card".asInstanceOf[card]
   
@@ -609,7 +664,9 @@ object antdStrings {
   def check: check = "check".asInstanceOf[check]
   
   @js.native
-  sealed trait checkbox extends RowSelectionType
+  sealed trait checkbox
+    extends StObject
+       with RowSelectionType
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
@@ -620,7 +677,8 @@ object antdStrings {
   
   @js.native
   sealed trait circle
-    extends ButtonShape
+    extends StObject
+       with ButtonShape
        with ProgressType
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
@@ -637,13 +695,16 @@ object antdStrings {
   
   @js.native
   sealed trait click
-    extends CascaderExpandTrigger
+    extends StObject
+       with CascaderExpandTrigger
        with ExpandAction
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait clickTrigger extends CollapseType
+  sealed trait clickTrigger
+    extends StObject
+       with CollapseType
   @scala.inline
   def clickTrigger: clickTrigger = "clickTrigger".asInstanceOf[clickTrigger]
   
@@ -653,7 +714,9 @@ object antdStrings {
   def color: color = "color".asInstanceOf[color]
   
   @js.native
-  sealed trait column extends ColumnType
+  sealed trait column
+    extends StObject
+       with ColumnType
   @scala.inline
   def column: column = "column".asInstanceOf[column]
   
@@ -673,7 +736,9 @@ object antdStrings {
   def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait countdown extends _Formatter
+  sealed trait countdown
+    extends StObject
+       with _Formatter
   @scala.inline
   def countdown: countdown = "countdown".asInstanceOf[countdown]
   
@@ -684,26 +749,31 @@ object antdStrings {
   
   @js.native
   sealed trait danger
-    extends BaseType
+    extends StObject
+       with BaseType
        with LegacyButtonType
   @scala.inline
   def danger: danger = "danger".asInstanceOf[danger]
   
   @js.native
   sealed trait dark
-    extends MenuTheme
+    extends StObject
+       with MenuTheme
        with SiderTheme
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
-  sealed trait dashboard extends ProgressType
+  sealed trait dashboard
+    extends StObject
+       with ProgressType
   @scala.inline
   def dashboard: dashboard = "dashboard".asInstanceOf[dashboard]
   
   @js.native
   sealed trait dashed
-    extends ButtonType
+    extends StObject
+       with ButtonType
        with DropdownButtonType
   @scala.inline
   def dashed: dashed = "dashed".asInstanceOf[dashed]
@@ -744,12 +814,16 @@ object antdStrings {
   def defaultPickerValue: defaultPickerValue = "defaultPickerValue".asInstanceOf[defaultPickerValue]
   
   @js.native
-  sealed trait defaultValue extends OmitAttrs
+  sealed trait defaultValue
+    extends StObject
+       with OmitAttrs
   @scala.inline
   def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
   
   @js.native
-  sealed trait descend extends _SortOrder
+  sealed trait descend
+    extends StObject
+       with _SortOrder
   @scala.inline
   def descend: descend = "descend".asInstanceOf[descend]
   
@@ -799,12 +873,16 @@ object antdStrings {
   def disabledTime: disabledTime = "disabledTime".asInstanceOf[disabledTime]
   
   @js.native
-  sealed trait done extends UploadFileStatus
+  sealed trait done
+    extends StObject
+       with UploadFileStatus
   @scala.inline
   def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait doubleClick extends ExpandAction
+  sealed trait doubleClick
+    extends StObject
+       with ExpandAction
   @scala.inline
   def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
   
@@ -814,7 +892,9 @@ object antdStrings {
   def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait drag extends UploadType
+  sealed trait drag
+    extends StObject
+       with UploadType
   @scala.inline
   def drag: drag = "drag".asInstanceOf[drag]
   
@@ -829,7 +909,9 @@ object antdStrings {
   def dropdownClassName: dropdownClassName = "dropdownClassName".asInstanceOf[dropdownClassName]
   
   @js.native
-  sealed trait `editable-card` extends TabsType
+  sealed trait `editable-card`
+    extends StObject
+       with TabsType
   @scala.inline
   def `editable-card`: `editable-card` = "editable-card".asInstanceOf[`editable-card`]
   
@@ -839,7 +921,9 @@ object antdStrings {
   def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait end extends RibbonPlacement
+  sealed trait end
+    extends StObject
+       with RibbonPlacement
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   
@@ -850,7 +934,8 @@ object antdStrings {
   
   @js.native
   sealed trait error
-    extends IconType
+    extends StObject
+       with IconType
        with NoticeType
        with ResultStatusType
        with UploadFileStatus
@@ -869,7 +954,9 @@ object antdStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait fade extends CarouselEffect
+  sealed trait fade
+    extends StObject
+       with CarouselEffect
   @scala.inline
   def fade: fade = "fade".asInstanceOf[fade]
   
@@ -879,7 +966,9 @@ object antdStrings {
   def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait filter extends TableAction
+  sealed trait filter
+    extends StObject
+       with TableAction
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   
@@ -920,13 +1009,16 @@ object antdStrings {
   
   @js.native
   sealed trait ghost
-    extends ButtonType
+    extends StObject
+       with ButtonType
        with DropdownButtonType
   @scala.inline
   def ghost: ghost = "ghost".asInstanceOf[ghost]
   
   @js.native
-  sealed trait global extends LocaleComponent
+  sealed trait global
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   
@@ -956,7 +1048,9 @@ object antdStrings {
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait gutter extends ColumnType
+  sealed trait gutter
+    extends StObject
+       with ColumnType
   @scala.inline
   def gutter: gutter = "gutter".asInstanceOf[gutter]
   
@@ -992,7 +1086,8 @@ object antdStrings {
   
   @js.native
   sealed trait horizontal
-    extends FormLayout
+    extends StObject
+       with FormLayout
        with ListItemLayout
        with MenuMode
   @scala.inline
@@ -1004,7 +1099,9 @@ object antdStrings {
   def hourStep: hourStep = "hourStep".asInstanceOf[hourStep]
   
   @js.native
-  sealed trait hover extends CascaderExpandTrigger
+  sealed trait hover
+    extends StObject
+       with CascaderExpandTrigger
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   
@@ -1020,7 +1117,8 @@ object antdStrings {
   
   @js.native
   sealed trait info
-    extends IconType
+    extends StObject
+       with IconType
        with NoticeType
        with ResultStatusType
   @scala.inline
@@ -1033,7 +1131,8 @@ object antdStrings {
   
   @js.native
   sealed trait `inline`
-    extends FormLayout
+    extends StObject
+       with FormLayout
        with MenuMode
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
@@ -1065,7 +1164,8 @@ object antdStrings {
   
   @js.native
   sealed trait large
-    extends ListSize
+    extends StObject
+       with ListSize
        with SpinSize
        with _AvatarSize
        with _SizeType
@@ -1074,7 +1174,8 @@ object antdStrings {
   
   @js.native
   sealed trait left
-    extends DotPosition
+    extends StObject
+       with DotPosition
        with FormLabelAlign
        with TabsPosition
        with TooltipPlacement
@@ -1085,25 +1186,31 @@ object antdStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait leftBottom extends TooltipPlacement
+  sealed trait leftBottom
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def leftBottom: leftBottom = "leftBottom".asInstanceOf[leftBottom]
   
   @js.native
-  sealed trait leftTop extends TooltipPlacement
+  sealed trait leftTop
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def leftTop: leftTop = "leftTop".asInstanceOf[leftTop]
   
   @js.native
   sealed trait lg
-    extends Breakpoint
+    extends StObject
+       with Breakpoint
        with ColumnType
   @scala.inline
   def lg: lg = "lg".asInstanceOf[lg]
   
   @js.native
   sealed trait light
-    extends MenuTheme
+    extends StObject
+       with MenuTheme
        with SiderTheme
   @scala.inline
   def light: light = "light".asInstanceOf[light]
@@ -1115,13 +1222,16 @@ object antdStrings {
   
   @js.native
   sealed trait line
-    extends ProgressType
+    extends StObject
+       with ProgressType
        with TabsType
   @scala.inline
   def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait link extends ButtonType
+  sealed trait link
+    extends StObject
+       with ButtonType
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   
@@ -1136,12 +1246,16 @@ object antdStrings {
   def listbox: listbox = "listbox".asInstanceOf[listbox]
   
   @js.native
-  sealed trait loading extends NoticeType
+  sealed trait loading
+    extends StObject
+       with NoticeType
   @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
-  sealed trait locale extends LocaleComponent
+  sealed trait locale
+    extends StObject
+       with LocaleComponent
   @scala.inline
   def locale: locale = "locale".asInstanceOf[locale]
   
@@ -1151,7 +1265,9 @@ object antdStrings {
   def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait ltr extends _DirectionType
+  sealed trait ltr
+    extends StObject
+       with _DirectionType
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   
@@ -1177,7 +1293,8 @@ object antdStrings {
   
   @js.native
   sealed trait md
-    extends Breakpoint
+    extends StObject
+       with Breakpoint
        with ColumnType
   @scala.inline
   def md: md = "md".asInstanceOf[md]
@@ -1188,7 +1305,9 @@ object antdStrings {
   def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
-  sealed trait middle extends _SizeType
+  sealed trait middle
+    extends StObject
+       with _SizeType
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   
@@ -1208,7 +1327,9 @@ object antdStrings {
   def mode: mode = "mode".asInstanceOf[mode]
   
   @js.native
-  sealed trait month extends CalendarMode
+  sealed trait month
+    extends StObject
+       with CalendarMode
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
@@ -1238,7 +1359,9 @@ object antdStrings {
   def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
-  sealed trait nest extends _ExpandType
+  sealed trait nest
+    extends StObject
+       with _ExpandType
   @scala.inline
   def nest: nest = "nest".asInstanceOf[nest]
   
@@ -1258,7 +1381,9 @@ object antdStrings {
   def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait none extends _FlexType
+  sealed trait none
+    extends StObject
+       with _FlexType
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -1268,7 +1393,9 @@ object antdStrings {
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait number extends _Formatter
+  sealed trait number
+    extends StObject
+       with _Formatter
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
@@ -1298,7 +1425,9 @@ object antdStrings {
   def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
   
   @js.native
-  sealed trait onChange extends OmitAttrs
+  sealed trait onChange
+    extends StObject
+       with OmitAttrs
   @scala.inline
   def onChange: onChange = "onChange".asInstanceOf[onChange]
   
@@ -1378,7 +1507,9 @@ object antdStrings {
   def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait outline extends RadioGroupButtonStyle
+  sealed trait outline
+    extends StObject
+       with RadioGroupButtonStyle
   @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
   
@@ -1388,7 +1519,9 @@ object antdStrings {
   def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait paginate extends TableAction
+  sealed trait paginate
+    extends StObject
+       with TableAction
   @scala.inline
   def paginate: paginate = "paginate".asInstanceOf[paginate]
   
@@ -1428,12 +1561,16 @@ object antdStrings {
   def pickerRef: pickerRef = "pickerRef".asInstanceOf[pickerRef]
   
   @js.native
-  sealed trait picture extends UploadListType
+  sealed trait picture
+    extends StObject
+       with UploadListType
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
-  sealed trait `picture-card` extends UploadListType
+  sealed trait `picture-card`
+    extends StObject
+       with UploadListType
   @scala.inline
   def `picture-card`: `picture-card` = "picture-card".asInstanceOf[`picture-card`]
   
@@ -1489,7 +1626,8 @@ object antdStrings {
   
   @js.native
   sealed trait primary
-    extends ButtonType
+    extends StObject
+       with ButtonType
        with DropdownButtonType
   @scala.inline
   def primary: primary = "primary".asInstanceOf[primary]
@@ -1515,7 +1653,9 @@ object antdStrings {
   def put_ : put_ = "put".asInstanceOf[put_]
   
   @js.native
-  sealed trait radio extends RowSelectionType
+  sealed trait radio
+    extends StObject
+       with RowSelectionType
   @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
   
@@ -1550,7 +1690,9 @@ object antdStrings {
   def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
-  sealed trait removed extends UploadFileStatus
+  sealed trait removed
+    extends StObject
+       with UploadFileStatus
   @scala.inline
   def removed: removed = "removed".asInstanceOf[removed]
   
@@ -1560,18 +1702,23 @@ object antdStrings {
   def renderExtraFooter: renderExtraFooter = "renderExtraFooter".asInstanceOf[renderExtraFooter]
   
   @js.native
-  sealed trait reset extends ButtonHTMLType
+  sealed trait reset
+    extends StObject
+       with ButtonHTMLType
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait responsive extends CollapseType
+  sealed trait responsive
+    extends StObject
+       with CollapseType
   @scala.inline
   def responsive: responsive = "responsive".asInstanceOf[responsive]
   
   @js.native
   sealed trait right
-    extends DotPosition
+    extends StObject
+       with DotPosition
        with FormLabelAlign
        with TabsPosition
        with TooltipPlacement
@@ -1582,12 +1729,16 @@ object antdStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait rightBottom extends TooltipPlacement
+  sealed trait rightBottom
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def rightBottom: rightBottom = "rightBottom".asInstanceOf[rightBottom]
   
   @js.native
-  sealed trait rightTop extends TooltipPlacement
+  sealed trait rightTop
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def rightTop: rightTop = "rightTop".asInstanceOf[rightTop]
   
@@ -1597,22 +1748,30 @@ object antdStrings {
   def role: role = "role".asInstanceOf[role]
   
   @js.native
-  sealed trait round extends ButtonShape
+  sealed trait round
+    extends StObject
+       with ButtonShape
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait row extends _ExpandType
+  sealed trait row
+    extends StObject
+       with _ExpandType
   @scala.inline
   def row: row = "row".asInstanceOf[row]
   
   @js.native
-  sealed trait rtl extends _DirectionType
+  sealed trait rtl
+    extends StObject
+       with _DirectionType
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait scrollx extends CarouselEffect
+  sealed trait scrollx
+    extends StObject
+       with CarouselEffect
   @scala.inline
   def scrollx: scrollx = "scrollx".asInstanceOf[scrollx]
   
@@ -1627,7 +1786,9 @@ object antdStrings {
   def secondStep: secondStep = "secondStep".asInstanceOf[secondStep]
   
   @js.native
-  sealed trait secondary extends BaseType
+  sealed trait secondary
+    extends StObject
+       with BaseType
   @scala.inline
   def secondary: secondary = "secondary".asInstanceOf[secondary]
   
@@ -1637,7 +1798,9 @@ object antdStrings {
   def section: section = "section".asInstanceOf[section]
   
   @js.native
-  sealed trait select_ extends UploadType
+  sealed trait select_
+    extends StObject
+       with UploadType
   @scala.inline
   def select_ : select_ = "select".asInstanceOf[select_]
   
@@ -1677,20 +1840,24 @@ object antdStrings {
   def showToday: showToday = "showToday".asInstanceOf[showToday]
   
   @js.native
-  sealed trait size extends OmitAttrs
+  sealed trait size
+    extends StObject
+       with OmitAttrs
   @scala.inline
   def size: size = "size".asInstanceOf[size]
   
   @js.native
   sealed trait sm
-    extends Breakpoint
+    extends StObject
+       with Breakpoint
        with ColumnType
   @scala.inline
   def sm: sm = "sm".asInstanceOf[sm]
   
   @js.native
   sealed trait small
-    extends CardSize
+    extends StObject
+       with CardSize
        with ListSize
        with ProgressSize
        with SpinSize
@@ -1701,12 +1868,16 @@ object antdStrings {
   def small: small = "small".asInstanceOf[small]
   
   @js.native
-  sealed trait solid extends RadioGroupButtonStyle
+  sealed trait solid
+    extends StObject
+       with RadioGroupButtonStyle
   @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
-  sealed trait sort extends TableAction
+  sealed trait sort
+    extends StObject
+       with TableAction
   @scala.inline
   def sort: sort = "sort".asInstanceOf[sort]
   
@@ -1731,7 +1902,9 @@ object antdStrings {
   def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait start extends RibbonPlacement
+  sealed trait start
+    extends StObject
+       with RibbonPlacement
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   
@@ -1751,13 +1924,16 @@ object antdStrings {
   def style: style = "style".asInstanceOf[style]
   
   @js.native
-  sealed trait submit extends ButtonHTMLType
+  sealed trait submit
+    extends StObject
+       with ButtonHTMLType
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
   sealed trait success
-    extends BaseType
+    extends StObject
+       with BaseType
        with IconType
        with NoticeType
        with ResultStatusType
@@ -1808,7 +1984,8 @@ object antdStrings {
   
   @js.native
   sealed trait text_
-    extends ButtonType
+    extends StObject
+       with ButtonType
        with UploadListType
   @scala.inline
   def text_ : text_ = "text".asInstanceOf[text_]
@@ -1820,7 +1997,8 @@ object antdStrings {
   
   @js.native
   sealed trait top
-    extends DotPosition
+    extends StObject
+       with DotPosition
        with MentionPlacement
        with PaginationPosition
        with TabsPosition
@@ -1831,14 +2009,16 @@ object antdStrings {
   
   @js.native
   sealed trait topCenter
-    extends Placement
+    extends StObject
+       with Placement
        with TablePaginationPosition
   @scala.inline
   def topCenter: topCenter = "topCenter".asInstanceOf[topCenter]
   
   @js.native
   sealed trait topLeft
-    extends NotificationPlacement
+    extends StObject
+       with NotificationPlacement
        with Placement
        with TablePaginationPosition
        with TooltipPlacement
@@ -1847,7 +2027,8 @@ object antdStrings {
   
   @js.native
   sealed trait topRight
-    extends NotificationPlacement
+    extends StObject
+       with NotificationPlacement
        with Placement
        with TablePaginationPosition
        with TooltipPlacement
@@ -1870,7 +2051,9 @@ object antdStrings {
   def up: up = "up".asInstanceOf[up]
   
   @js.native
-  sealed trait uploading extends UploadFileStatus
+  sealed trait uploading
+    extends StObject
+       with UploadFileStatus
   @scala.inline
   def uploading: uploading = "uploading".asInstanceOf[uploading]
   
@@ -1885,7 +2068,9 @@ object antdStrings {
   def use12Hours: use12Hours = "use12Hours".asInstanceOf[use12Hours]
   
   @js.native
-  sealed trait validating extends ValidateStatus
+  sealed trait validating
+    extends StObject
+       with ValidateStatus
   @scala.inline
   def validating: validating = "validating".asInstanceOf[validating]
   
@@ -1896,19 +2081,24 @@ object antdStrings {
   
   @js.native
   sealed trait vertical
-    extends FormLayout
+    extends StObject
+       with FormLayout
        with ListItemLayout
        with MenuMode
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait `vertical-left` extends MenuMode
+  sealed trait `vertical-left`
+    extends StObject
+       with MenuMode
   @scala.inline
   def `vertical-left`: `vertical-left` = "vertical-left".asInstanceOf[`vertical-left`]
   
   @js.native
-  sealed trait `vertical-right` extends MenuMode
+  sealed trait `vertical-right`
+    extends StObject
+       with MenuMode
   @scala.inline
   def `vertical-right`: `vertical-right` = "vertical-right".asInstanceOf[`vertical-right`]
   
@@ -1922,7 +2112,8 @@ object antdStrings {
   
   @js.native
   sealed trait warning
-    extends BaseType
+    extends StObject
+       with BaseType
        with IconType
        with NoticeType
        with ResultStatusType
@@ -1937,27 +2128,32 @@ object antdStrings {
   
   @js.native
   sealed trait xl
-    extends Breakpoint
+    extends StObject
+       with Breakpoint
        with ColumnType
   @scala.inline
   def xl: xl = "xl".asInstanceOf[xl]
   
   @js.native
   sealed trait xs
-    extends Breakpoint
+    extends StObject
+       with Breakpoint
        with ColumnType
   @scala.inline
   def xs: xs = "xs".asInstanceOf[xs]
   
   @js.native
   sealed trait xxl
-    extends Breakpoint
+    extends StObject
+       with Breakpoint
        with ColumnType
   @scala.inline
   def xxl: xxl = "xxl".asInstanceOf[xxl]
   
   @js.native
-  sealed trait year extends CalendarMode
+  sealed trait year
+    extends StObject
+       with CalendarMode
   @scala.inline
   def year: year = "year".asInstanceOf[year]
   

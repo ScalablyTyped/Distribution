@@ -2,65 +2,63 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains a set properties providing the current information about certain document structural elements.
   */
-@js.native
 trait RichEditDocument extends StObject {
   
   /**
     * Provides information about numbered paragraphs in the document.
     */
-  val abstractNumberingListsInfo: js.Array[AbstractNumberingList] = js.native
+  val abstractNumberingListsInfo: js.Array[AbstractNumberingList]
   
   /**
     * Provides the information about the active sub-document.
     */
-  val activeSubDocument: SubDocument = js.native
+  val activeSubDocument: SubDocument
   
   /**
     * Provides information about character styles in the current document.
     */
-  val characterStylesInfo: js.Array[CharacterStyle] = js.native
+  val characterStylesInfo: js.Array[CharacterStyle]
   
   /**
     * Returns the sub-document with the specified identifier. A SubDocument value specifying the sub-document.
     * @param subDocumentId An integer value specifying the required sub-document.
     */
-  def getSubDocumentById(subDocumentId: Double): SubDocument = js.native
+  def getSubDocumentById(subDocumentId: Double): SubDocument
   
   /**
     * Provides access to the document's main sub-document.
     */
-  val mainSubDocument: SubDocument = js.native
+  val mainSubDocument: SubDocument
   
   /**
     * Provides information about paragraph styles in the current document.
     */
-  val paragraphStylesInfo: js.Array[ParagraphStyle] = js.native
+  val paragraphStylesInfo: js.Array[ParagraphStyle]
   
   /**
     * Provides information about sections in the current document.
     */
-  val sectionsInfo: js.Array[Section] = js.native
+  val sectionsInfo: js.Array[Section]
   
   /**
     * Provides information about spell checking in the current document.
     */
-  val spellingInfo: SpellingInfo = js.native
+  val spellingInfo: SpellingInfo
   
   /**
     * Provides access to the document's sub-documents.
     */
-  val subDocuments: js.Array[SubDocument] = js.native
+  val subDocuments: js.Array[SubDocument]
   
   /**
     * Provides information about table styles in the current document.
     */
-  val tableStylesInfo: js.Array[TableStyle] = js.native
+  val tableStylesInfo: js.Array[TableStyle]
 }
 object RichEditDocument {
   

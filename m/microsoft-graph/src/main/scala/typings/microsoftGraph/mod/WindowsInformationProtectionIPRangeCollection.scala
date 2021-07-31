@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowsInformationProtectionIPRangeCollection extends StObject {
   
   // Display name
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // Collection of Internet protocol address ranges
-  var ranges: js.UndefOr[js.Array[IpRange]] = js.native
+  var ranges: js.UndefOr[js.Array[IpRange]] = js.undefined
 }
 object WindowsInformationProtectionIPRangeCollection {
   

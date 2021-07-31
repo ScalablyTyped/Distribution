@@ -2,19 +2,17 @@ package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetClipboardDataParams extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var data: String = js.native
+  var data: String
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object SetClipboardDataParams {
   

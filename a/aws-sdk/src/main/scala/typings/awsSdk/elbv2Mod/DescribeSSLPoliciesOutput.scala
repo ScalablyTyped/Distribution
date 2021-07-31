@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSSLPoliciesOutput extends StObject {
   
   /**
     * If there are additional results, this is the marker for the next set of results. Otherwise, this is null.
     */
-  var NextMarker: js.UndefOr[Marker] = js.native
+  var NextMarker: js.UndefOr[Marker] = js.undefined
   
   /**
     * Information about the security policies.
     */
-  var SslPolicies: js.UndefOr[typings.awsSdk.elbv2Mod.SslPolicies] = js.native
+  var SslPolicies: js.UndefOr[typings.awsSdk.elbv2Mod.SslPolicies] = js.undefined
 }
 object DescribeSSLPoliciesOutput {
   

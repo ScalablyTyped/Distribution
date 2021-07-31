@@ -2,27 +2,26 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoWhileStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var test: Expression = js.native
+  var test: Expression
   
   @JSName("type")
-  var type_DoWhileStatement: typings.estree.estreeStrings.DoWhileStatement = js.native
+  var type_DoWhileStatement: typings.estree.estreeStrings.DoWhileStatement
 }
 object DoWhileStatement {
   
   @scala.inline
-  def apply(body: Statement, test: Expression, `type`: typings.estree.estreeStrings.DoWhileStatement): DoWhileStatement = {
+  def apply(body: Statement, test: Expression): DoWhileStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DoWhileStatement")
     __obj.asInstanceOf[DoWhileStatement]
   }
   

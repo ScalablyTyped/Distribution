@@ -2,10 +2,8 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceMapOptions extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait SourceMapOptions extends StObject {
     *
     * If you have set inline: true, annotation cannot be disabled.
     */
-  var annotation: js.UndefOr[String | Boolean] = js.native
+  var annotation: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * Override "from" in map's sources.
     */
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that the source map should be embedded in the output CSS as a
@@ -35,7 +33,7 @@ trait SourceMapOptions extends StObject {
     * If you have an inline source map, the result.map property will be empty,
     * as the source map will be contained within the text of result.css.
     */
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Source map content from a previous processing step (e.g., Sass compilation).
@@ -43,7 +41,7 @@ trait SourceMapOptions extends StObject {
     * within the source CSS), but you can use this option to identify it manually.
     * If desired, you can omit the previous map with prev: false.
     */
-  var prev: js.UndefOr[js.Any] = js.native
+  var prev: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Indicates that PostCSS should set the origin content (e.g., Sass source)
@@ -51,7 +49,7 @@ trait SourceMapOptions extends StObject {
     * contain sources content, PostCSS will also leave it out even if you do not set
     * this option.
     */
-  var sourcesContent: js.UndefOr[Boolean] = js.native
+  var sourcesContent: js.UndefOr[Boolean] = js.undefined
 }
 object SourceMapOptions {
   

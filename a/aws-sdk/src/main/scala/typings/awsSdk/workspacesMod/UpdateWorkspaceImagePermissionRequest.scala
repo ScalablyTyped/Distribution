@@ -2,26 +2,24 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateWorkspaceImagePermissionRequest extends StObject {
   
   /**
     * The permission to copy the image. This permission can be revoked only after an image has been shared.
     */
-  var AllowCopyImage: BooleanObject = js.native
+  var AllowCopyImage: BooleanObject
   
   /**
     * The identifier of the image.
     */
-  var ImageId: WorkspaceImageId = js.native
+  var ImageId: WorkspaceImageId
   
   /**
     * The identifier of the AWS account to share or unshare the image with.  Before sharing the image, confirm that you are sharing to the correct AWS account ID. 
     */
-  var SharedAccountId: AwsAccount = js.native
+  var SharedAccountId: AwsAccount
 }
 object UpdateWorkspaceImagePermissionRequest {
   

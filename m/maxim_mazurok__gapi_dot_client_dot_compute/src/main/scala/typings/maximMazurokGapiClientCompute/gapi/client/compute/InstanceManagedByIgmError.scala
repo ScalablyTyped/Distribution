@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceManagedByIgmError extends StObject {
   
   /** [Output Only] Contents of the error. */
-  var error: js.UndefOr[InstanceManagedByIgmErrorManagedInstanceError] = js.native
+  var error: js.UndefOr[InstanceManagedByIgmErrorManagedInstanceError] = js.undefined
   
   /** [Output Only] Details of the instance action that triggered this error. May be null, if the error was not caused by an action on an instance. This field is optional. */
-  var instanceActionDetails: js.UndefOr[InstanceManagedByIgmErrorInstanceActionDetails] = js.native
+  var instanceActionDetails: js.UndefOr[InstanceManagedByIgmErrorInstanceActionDetails] = js.undefined
   
   /** [Output Only] The time that this error occurred. This value is in RFC3339 text format. */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object InstanceManagedByIgmError {
   

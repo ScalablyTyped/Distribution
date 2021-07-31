@@ -4,15 +4,15 @@ import typings.cytoscape.mod.Css.Edge
 import typings.cytoscape.mod.Css.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StylesheetStyle extends Stylesheet {
+trait StylesheetStyle
+  extends StObject
+     with Stylesheet {
   
-  var selector: String = js.native
+  var selector: String
   
-  var style: Node | Edge | typings.cytoscape.mod.Css.Core = js.native
+  var style: Node | Edge | typings.cytoscape.mod.Css.Core
 }
 object StylesheetStyle {
   

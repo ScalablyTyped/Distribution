@@ -10,44 +10,43 @@ import typings.activexLibreoffice.com_.sun.star.i18n.XForbiddenCharacters
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes properties that apply to the whole presentation document. */
-@js.native
 trait DocumentSettings
-  extends Settings
+  extends StObject
+     with Settings
      with HeaderFooterSettings {
   
   /** enables or disables the printing of the drawing pages */
-  var IsPrintDrawing: Boolean = js.native
+  var IsPrintDrawing: Boolean
   
   /** enables or disables the fitting of the page to the printable area during print */
-  var IsPrintFitPage: Boolean = js.native
+  var IsPrintFitPage: Boolean
   
   /** enables or disables the printing of the handout pages */
-  var IsPrintHandout: Boolean = js.native
+  var IsPrintHandout: Boolean
   
   /** enables or disables the printing of draw pages that are marked hidden */
-  var IsPrintHiddenPages: Boolean = js.native
+  var IsPrintHiddenPages: Boolean
   
   /** enables or disables the printing of the notes pages */
-  var IsPrintNotes: Boolean = js.native
+  var IsPrintNotes: Boolean
   
   /** enables or disables the printing of the outline pages */
-  var IsPrintOutline: Boolean = js.native
+  var IsPrintOutline: Boolean
   
   /** if this is true and the paper size for printing is larger than the paper size of the printer than the content is tiled over multiple pages. */
-  var IsPrintTilePage: Boolean = js.native
+  var IsPrintTilePage: Boolean
   
   /** is the number format used for page number fields */
-  var PageNumberFormat: Double = js.native
+  var PageNumberFormat: Double
   
   /**
     * If this is true, the distance between two paragraphs is the sum of ParaTopMargin of the previous and ParaBottomMargin of the next paragraph. If false,
     * only the greater of the two is chosen.
     */
-  var ParagraphSummation: Boolean = js.native
+  var ParagraphSummation: Boolean
 }
 object DocumentSettings {
   

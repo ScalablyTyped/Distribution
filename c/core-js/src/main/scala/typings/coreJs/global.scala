@@ -18,7 +18,6 @@ import typings.std.WeakMapConstructor
 import typings.std.WeakSetConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -34,182 +33,150 @@ object global {
   
   object core {
     
+    @JSGlobal("core")
+    @js.native
+    val ^ : js.Any = js.native
+    
     object Array {
       
-      @JSGlobal("core.Array.concat")
+      @JSGlobal("core.Array")
       @js.native
-      def concat[T](array: ArrayLike[T], items: (typings.coreJs.Array[T] | T)*): typings.coreJs.Array[T] = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("core.Array.copyWithin")
-      @js.native
-      def copyWithin[T](array: ArrayLike[T], target: Double, start: Double): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.copyWithin")
-      @js.native
-      def copyWithin[T](array: ArrayLike[T], target: Double, start: Double, end: Double): typings.coreJs.Array[T] = js.native
+      @scala.inline
+      def concat[T](array: ArrayLike[T], items: (typings.coreJs.Array[T] | T)*): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(array.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
       
-      @JSGlobal("core.Array.entries")
-      @js.native
-      def entries[T](array: ArrayLike[T]): IterableIterator[js.Tuple2[Double, T]] = js.native
+      @scala.inline
+      def copyWithin[T](array: ArrayLike[T], target: Double, start: Double): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyWithin")(array.asInstanceOf[js.Any], target.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
+      def copyWithin[T](array: ArrayLike[T], target: Double, start: Double, end: Double): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyWithin")(array.asInstanceOf[js.Any], target.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
       
-      @JSGlobal("core.Array.every")
-      @js.native
+      @scala.inline
+      def entries[T](array: ArrayLike[T]): IterableIterator[js.Tuple2[Double, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(array.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[js.Tuple2[Double, T]]]
+      
+      @scala.inline
       def every[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean]
-      ): Boolean = js.native
-      @JSGlobal("core.Array.every")
-      @js.native
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
       def every[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean],
         thisArg: js.Any
-      ): Boolean = js.native
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Array.fill")
-      @js.native
-      def fill[T](array: ArrayLike[T], value: T): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.fill")
-      @js.native
-      def fill[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], end: Double): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.fill")
-      @js.native
-      def fill[T](array: ArrayLike[T], value: T, start: Double): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.fill")
-      @js.native
-      def fill[T](array: ArrayLike[T], value: T, start: Double, end: Double): typings.coreJs.Array[T] = js.native
+      @scala.inline
+      def fill[T](array: ArrayLike[T], value: T): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
+      def fill[T](array: ArrayLike[T], value: T, start: Double): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
+      def fill[T](array: ArrayLike[T], value: T, start: Double, end: Double): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
+      def fill[T](array: ArrayLike[T], value: T, start: Unit, end: Double): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
       
-      @JSGlobal("core.Array.filter")
-      @js.native
+      @scala.inline
       def filter[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean]
-      ): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.filter")
-      @js.native
+      ): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
       def filter[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean],
         thisArg: js.Any
-      ): typings.coreJs.Array[T] = js.native
+      ): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
       
-      @JSGlobal("core.Array.find")
-      @js.native
+      @scala.inline
       def find[T](
         array: ArrayLike[T],
         predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ typings.coreJs.Array[T], Boolean]
-      ): T = js.native
-      @JSGlobal("core.Array.find")
-      @js.native
+      ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+      @scala.inline
       def find[T](
         array: ArrayLike[T],
         predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ typings.coreJs.Array[T], Boolean],
         thisArg: js.Any
-      ): T = js.native
+      ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[T]
       
-      @JSGlobal("core.Array.findIndex")
-      @js.native
-      def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean]): Double = js.native
-      @JSGlobal("core.Array.findIndex")
-      @js.native
-      def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean], thisArg: js.Any): Double = js.native
+      @scala.inline
+      def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Double]
+      @scala.inline
+      def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean], thisArg: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("core.Array.forEach")
-      @js.native
+      @scala.inline
       def forEach[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Unit]
-      ): Unit = js.native
-      @JSGlobal("core.Array.forEach")
-      @js.native
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
       def forEach[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Unit],
         thisArg: js.Any
-      ): Unit = js.native
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("core.Array.from")
-      @js.native
-      def from[T](arrayLike: ArrayLike[T]): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.from")
-      @js.native
-      def from[T](arrayLike: Iterable[T]): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.from")
-      @js.native
-      def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): typings.coreJs.Array[U] = js.native
-      @JSGlobal("core.Array.from")
-      @js.native
-      def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): typings.coreJs.Array[U] = js.native
-      @JSGlobal("core.Array.from")
-      @js.native
-      def from[T, U](arrayLike: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): typings.coreJs.Array[U] = js.native
-      @JSGlobal("core.Array.from")
-      @js.native
-      def from[T, U](arrayLike: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): typings.coreJs.Array[U] = js.native
+      @scala.inline
+      def from[T](arrayLike: ArrayLike[T]): typings.coreJs.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any]).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
+      def from[T](arrayLike: Iterable[T]): typings.coreJs.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any]).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
+      def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): typings.coreJs.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[U]]
+      @scala.inline
+      def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): typings.coreJs.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[U]]
+      @scala.inline
+      def from[T, U](arrayLike: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): typings.coreJs.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[U]]
+      @scala.inline
+      def from[T, U](arrayLike: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): typings.coreJs.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[U]]
       
-      @JSGlobal("core.Array.includes")
-      @js.native
-      def includes[T](array: ArrayLike[T], value: T): Boolean = js.native
-      @JSGlobal("core.Array.includes")
-      @js.native
-      def includes[T](array: ArrayLike[T], value: T, fromIndex: Double): Boolean = js.native
+      @scala.inline
+      def includes[T](array: ArrayLike[T], value: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def includes[T](array: ArrayLike[T], value: T, fromIndex: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Array.indexOf")
-      @js.native
-      def indexOf[T](array: ArrayLike[T], searchElement: T): Double = js.native
-      @JSGlobal("core.Array.indexOf")
-      @js.native
-      def indexOf[T](array: ArrayLike[T], searchElement: T, fromIndex: Double): Double = js.native
+      @scala.inline
+      def indexOf[T](array: ArrayLike[T], searchElement: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+      @scala.inline
+      def indexOf[T](array: ArrayLike[T], searchElement: T, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("core.Array.isArray")
-      @js.native
-      def isArray(arg: js.Any): /* is core-js.Array<any> */ Boolean = js.native
+      @scala.inline
+      def isArray(arg: js.Any): /* is core-js.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is core-js.Array<any> */ Boolean]
       
-      @JSGlobal("core.Array.join")
-      @js.native
-      def join[T](array: ArrayLike[T]): java.lang.String = js.native
-      @JSGlobal("core.Array.join")
-      @js.native
-      def join[T](array: ArrayLike[T], separator: java.lang.String): java.lang.String = js.native
+      @scala.inline
+      def join[T](array: ArrayLike[T]): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(array.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+      @scala.inline
+      def join[T](array: ArrayLike[T], separator: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(array.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
       
-      @JSGlobal("core.Array.keys")
-      @js.native
-      def keys[T](array: ArrayLike[T]): IterableIterator[Double] = js.native
+      @scala.inline
+      def keys[T](array: ArrayLike[T]): IterableIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(array.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Double]]
       
-      @JSGlobal("core.Array.lastIndexOf")
-      @js.native
-      def lastIndexOf[T](array: ArrayLike[T], earchElement: T): Double = js.native
-      @JSGlobal("core.Array.lastIndexOf")
-      @js.native
-      def lastIndexOf[T](array: ArrayLike[T], earchElement: T, fromIndex: Double): Double = js.native
+      @scala.inline
+      def lastIndexOf[T](array: ArrayLike[T], earchElement: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], earchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+      @scala.inline
+      def lastIndexOf[T](array: ArrayLike[T], earchElement: T, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], earchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("core.Array.map")
-      @js.native
+      @scala.inline
       def map[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], U]
-      ): typings.coreJs.Array[U] = js.native
-      @JSGlobal("core.Array.map")
-      @js.native
+      ): typings.coreJs.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[U]]
+      @scala.inline
       def map[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], U],
         thisArg: js.Any
-      ): typings.coreJs.Array[U] = js.native
+      ): typings.coreJs.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[U]]
       
-      @JSGlobal("core.Array.of")
-      @js.native
-      def of[T](items: T*): typings.coreJs.Array[T] = js.native
+      @scala.inline
+      def of[T](items: T*): typings.coreJs.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[js.Any]).asInstanceOf[typings.coreJs.Array[T]]
       
-      @JSGlobal("core.Array.pop")
-      @js.native
-      def pop[T](array: ArrayLike[T]): T = js.native
+      @scala.inline
+      def pop[T](array: ArrayLike[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(array.asInstanceOf[js.Any]).asInstanceOf[T]
       
-      @JSGlobal("core.Array.push")
-      @js.native
-      def push[T](array: ArrayLike[T], items: T*): Double = js.native
+      @scala.inline
+      def push[T](array: ArrayLike[T], items: T*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(array.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("core.Array.reduce")
-      @js.native
+      @scala.inline
       def reduce[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -219,9 +186,8 @@ object global {
               /* array */ typings.coreJs.Array[T], 
               T
             ]
-      ): T = js.native
-      @JSGlobal("core.Array.reduce")
-      @js.native
+      ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[T]
+      @scala.inline
       def reduce[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -232,10 +198,9 @@ object global {
               T
             ],
         initialValue: T
-      ): T = js.native
+      ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[T]
       
-      @JSGlobal("core.Array.reduceRight")
-      @js.native
+      @scala.inline
       def reduceRight[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -245,9 +210,8 @@ object global {
               /* array */ typings.coreJs.Array[T], 
               T
             ]
-      ): T = js.native
-      @JSGlobal("core.Array.reduceRight")
-      @js.native
+      ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[T]
+      @scala.inline
       def reduceRight[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -258,9 +222,9 @@ object global {
               T
             ],
         initialValue: T
-      ): T = js.native
-      @JSGlobal("core.Array.reduceRight")
-      @js.native
+      ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[T]
+      
+      @scala.inline
       def reduceRight_TU_U[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -271,10 +235,9 @@ object global {
               U
             ],
         initialValue: U
-      ): U = js.native
+      ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[U]
       
-      @JSGlobal("core.Array.reduce")
-      @js.native
+      @scala.inline
       def reduce_TU_U[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -285,59 +248,46 @@ object global {
               U
             ],
         initialValue: U
-      ): U = js.native
+      ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[U]
       
-      @JSGlobal("core.Array.reverse")
-      @js.native
-      def reverse[T](array: ArrayLike[T]): typings.coreJs.Array[T] = js.native
+      @scala.inline
+      def reverse[T](array: ArrayLike[T]): typings.coreJs.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(array.asInstanceOf[js.Any]).asInstanceOf[typings.coreJs.Array[T]]
       
-      @JSGlobal("core.Array.shift")
-      @js.native
-      def shift[T](array: ArrayLike[T]): T = js.native
+      @scala.inline
+      def shift[T](array: ArrayLike[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(array.asInstanceOf[js.Any]).asInstanceOf[T]
       
-      @JSGlobal("core.Array.slice")
-      @js.native
-      def slice[T](array: ArrayLike[T]): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.slice")
-      @js.native
-      def slice[T](array: ArrayLike[T], start: js.UndefOr[scala.Nothing], end: Double): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.slice")
-      @js.native
-      def slice[T](array: ArrayLike[T], start: Double): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.slice")
-      @js.native
-      def slice[T](array: ArrayLike[T], start: Double, end: Double): typings.coreJs.Array[T] = js.native
+      @scala.inline
+      def slice[T](array: ArrayLike[T]): typings.coreJs.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any]).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
+      def slice[T](array: ArrayLike[T], start: Double): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
+      def slice[T](array: ArrayLike[T], start: Double, end: Double): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
+      def slice[T](array: ArrayLike[T], start: Unit, end: Double): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
       
-      @JSGlobal("core.Array.some")
-      @js.native
+      @scala.inline
       def some[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean]
-      ): Boolean = js.native
-      @JSGlobal("core.Array.some")
-      @js.native
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
       def some[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean],
         thisArg: js.Any
-      ): Boolean = js.native
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Array.sort")
-      @js.native
-      def sort[T](array: ArrayLike[T]): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.sort")
-      @js.native
-      def sort[T](array: ArrayLike[T], compareFn: js.Function2[/* a */ T, /* b */ T, Double]): typings.coreJs.Array[T] = js.native
+      @scala.inline
+      def sort[T](array: ArrayLike[T]): typings.coreJs.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any]).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
+      def sort[T](array: ArrayLike[T], compareFn: js.Function2[/* a */ T, /* b */ T, Double]): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any], compareFn.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
       
-      @JSGlobal("core.Array.splice")
-      @js.native
-      def splice[T](array: ArrayLike[T], start: Double, deleteCount: js.UndefOr[scala.Nothing], items: T*): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.splice")
-      @js.native
-      def splice[T](array: ArrayLike[T], start: Double, deleteCount: Double, items: T*): typings.coreJs.Array[T] = js.native
+      @scala.inline
+      def splice[T](array: ArrayLike[T], start: Double, deleteCount: Double, items: T*): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
+      def splice[T](array: ArrayLike[T], start: Double, deleteCount: Unit, items: T*): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
       
-      @JSGlobal("core.Array.turn")
-      @js.native
+      @scala.inline
       def turn[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -347,9 +297,8 @@ object global {
               /* array */ typings.coreJs.Array[T], 
               Unit
             ]
-      ): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.turn")
-      @js.native
+      ): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("turn")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
       def turn[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -360,9 +309,8 @@ object global {
               Unit
             ],
         memo: typings.coreJs.Array[T]
-      ): typings.coreJs.Array[T] = js.native
-      @JSGlobal("core.Array.turn")
-      @js.native
+      ): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("turn")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], memo.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
+      @scala.inline
       def turn[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -373,9 +321,9 @@ object global {
               Unit
             ],
         memo: U
-      ): U = js.native
-      @JSGlobal("core.Array.turn")
-      @js.native
+      ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("turn")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], memo.asInstanceOf[js.Any])).asInstanceOf[U]
+      
+      @scala.inline
       def turn_TU_U[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -385,40 +333,36 @@ object global {
               /* array */ typings.coreJs.Array[T], 
               Unit
             ]
-      ): U = js.native
+      ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("turn")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[U]
       
-      @JSGlobal("core.Array.unshift")
-      @js.native
-      def unshift[T](array: ArrayLike[T], items: T*): Double = js.native
+      @scala.inline
+      def unshift[T](array: ArrayLike[T], items: T*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unshift")(array.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("core.Array.values")
-      @js.native
-      def values[T](array: ArrayLike[T]): IterableIterator[T] = js.native
+      @scala.inline
+      def values[T](array: ArrayLike[T]): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(array.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
     }
     
     object Date {
       
-      @JSGlobal("core.Date.format")
+      @JSGlobal("core.Date")
       @js.native
-      def format(date: typings.coreJs.Date, template: java.lang.String): java.lang.String = js.native
-      @JSGlobal("core.Date.format")
-      @js.native
-      def format(date: typings.coreJs.Date, template: java.lang.String, locale: java.lang.String): java.lang.String = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("core.Date.formatUTC")
-      @js.native
-      def formatUTC(date: typings.coreJs.Date, template: java.lang.String): java.lang.String = js.native
-      @JSGlobal("core.Date.formatUTC")
-      @js.native
-      def formatUTC(date: typings.coreJs.Date, template: java.lang.String, locale: java.lang.String): java.lang.String = js.native
+      @scala.inline
+      def format(date: typings.coreJs.Date, template: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(date.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+      @scala.inline
+      def format(date: typings.coreJs.Date, template: java.lang.String, locale: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(date.asInstanceOf[js.Any], template.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
       
-      @JSGlobal("core.Date.now")
-      @js.native
-      def now(): Double = js.native
+      @scala.inline
+      def formatUTC(date: typings.coreJs.Date, template: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatUTC")(date.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+      @scala.inline
+      def formatUTC(date: typings.coreJs.Date, template: java.lang.String, locale: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatUTC")(date.asInstanceOf[js.Any], template.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
       
-      @JSGlobal("core.Date.toISOString")
-      @js.native
-      def toISOString(date: typings.coreJs.Date): java.lang.String = js.native
+      @scala.inline
+      def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+      
+      @scala.inline
+      def toISOString(date: typings.coreJs.Date): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("toISOString")(date.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
     }
     
     @JSGlobal("core.Dict")
@@ -427,20 +371,23 @@ object global {
     
     object Function {
       
-      @JSGlobal("core.Function.bind")
+      @JSGlobal("core.Function")
       @js.native
-      def bind(target: typings.coreJs.Function, thisArg: js.Any, argArray: js.Any*): js.Any = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("core.Function.part")
-      @js.native
-      def part(target: typings.coreJs.Function, args: js.Any*): js.Any = js.native
+      @scala.inline
+      def bind(target: typings.coreJs.Function, thisArg: js.Any, argArray: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], argArray.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      
+      @scala.inline
+      def part(target: typings.coreJs.Function, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("part")(target.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("core.Map")
     @js.native
     class Map[K, V] ()
-      extends typings.std.Map[K, V] {
+      extends StObject
+         with typings.std.Map[K, V] {
       def this(entries: js.Array[js.Tuple2[K, V]]) = this()
       def this(iterable: Iterable[js.Tuple2[K, V]]) = this()
     }
@@ -450,73 +397,60 @@ object global {
     
     object Math {
       
-      @JSGlobal("core.Math.acosh")
+      @JSGlobal("core.Math")
       @js.native
-      def acosh(x: Double): Double = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("core.Math.asinh")
-      @js.native
-      def asinh(x: Double): Double = js.native
+      @scala.inline
+      def acosh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.atanh")
-      @js.native
-      def atanh(x: Double): Double = js.native
+      @scala.inline
+      def asinh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.cbrt")
-      @js.native
-      def cbrt(x: Double): Double = js.native
+      @scala.inline
+      def atanh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.clz32")
-      @js.native
-      def clz32(x: Double): Double = js.native
+      @scala.inline
+      def cbrt(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cbrt")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.cosh")
-      @js.native
-      def cosh(x: Double): Double = js.native
+      @scala.inline
+      def clz32(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clz32")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.expm1")
-      @js.native
-      def expm1(x: Double): Double = js.native
+      @scala.inline
+      def cosh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.fround")
-      @js.native
-      def fround(x: Double): Double = js.native
+      @scala.inline
+      def expm1(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("expm1")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.hypot")
-      @js.native
-      def hypot(values: Double*): Double = js.native
+      @scala.inline
+      def fround(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fround")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.imul")
-      @js.native
-      def imul(x: Double, y: Double): Double = js.native
+      @scala.inline
+      def hypot(values: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.log10")
-      @js.native
-      def log10(x: Double): Double = js.native
+      @scala.inline
+      def imul(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("imul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.log1p")
-      @js.native
-      def log1p(x: Double): Double = js.native
+      @scala.inline
+      def log10(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log10")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.log2")
-      @js.native
-      def log2(x: Double): Double = js.native
+      @scala.inline
+      def log1p(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log1p")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.sign")
-      @js.native
-      def sign(x: Double): Double = js.native
+      @scala.inline
+      def log2(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.sinh")
-      @js.native
-      def sinh(x: Double): Double = js.native
+      @scala.inline
+      def sign(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.tanh")
-      @js.native
-      def tanh(x: Double): Double = js.native
+      @scala.inline
+      def sinh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Math.trunc")
-      @js.native
-      def trunc(x: Double): Double = js.native
+      @scala.inline
+      def tanh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+      
+      @scala.inline
+      def trunc(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("trunc")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     object Number {
@@ -543,219 +477,172 @@ object global {
       @scala.inline
       def MIN_SAFE_INTEGER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_SAFE_INTEGER")(x.asInstanceOf[js.Any])
       
-      @JSGlobal("core.Number.acosh")
-      @js.native
-      def acosh(x: Double): Double = js.native
+      @scala.inline
+      def acosh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.asinh")
-      @js.native
-      def asinh(x: Double): Double = js.native
+      @scala.inline
+      def asinh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.atanh")
-      @js.native
-      def atanh(x: Double): Double = js.native
+      @scala.inline
+      def atanh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.cbrt")
-      @js.native
-      def cbrt(x: Double): Double = js.native
+      @scala.inline
+      def cbrt(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cbrt")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.clz32")
-      @js.native
-      def clz32(x: Double): Double = js.native
+      @scala.inline
+      def clz32(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clz32")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.cosh")
-      @js.native
-      def cosh(x: Double): Double = js.native
+      @scala.inline
+      def cosh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.expm1")
-      @js.native
-      def expm1(x: Double): Double = js.native
+      @scala.inline
+      def expm1(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("expm1")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.fround")
-      @js.native
-      def fround(x: Double): Double = js.native
+      @scala.inline
+      def fround(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fround")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.hypot")
-      @js.native
-      def hypot(values: Double*): Double = js.native
+      @scala.inline
+      def hypot(values: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.imul")
-      @js.native
-      def imul(x: Double, y: Double): Double = js.native
+      @scala.inline
+      def imul(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("imul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.isFinite")
-      @js.native
-      def isFinite(number: Double): Boolean = js.native
+      @scala.inline
+      def isFinite(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFinite")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Number.isInteger")
-      @js.native
-      def isInteger(number: Double): Boolean = js.native
+      @scala.inline
+      def isInteger(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Number.isNaN")
-      @js.native
-      def isNaN(number: Double): Boolean = js.native
+      @scala.inline
+      def isNaN(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Number.isSafeInteger")
-      @js.native
-      def isSafeInteger(number: Double): Boolean = js.native
+      @scala.inline
+      def isSafeInteger(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeInteger")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Number.log10")
-      @js.native
-      def log10(x: Double): Double = js.native
+      @scala.inline
+      def log10(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log10")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.log1p")
-      @js.native
-      def log1p(x: Double): Double = js.native
+      @scala.inline
+      def log1p(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log1p")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.log2")
-      @js.native
-      def log2(x: Double): Double = js.native
+      @scala.inline
+      def log2(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.parseFloat")
-      @js.native
-      def parseFloat(string: java.lang.String): Double = js.native
+      @scala.inline
+      def parseFloat(string: java.lang.String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFloat")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.parseInt")
-      @js.native
-      def parseInt(string: java.lang.String): Double = js.native
-      @JSGlobal("core.Number.parseInt")
-      @js.native
-      def parseInt(string: java.lang.String, radix: Double): Double = js.native
+      @scala.inline
+      def parseInt(string: java.lang.String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseInt")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
+      @scala.inline
+      def parseInt(string: java.lang.String, radix: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("parseInt")(string.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.random")
-      @js.native
-      def random(): Double = js.native
-      @JSGlobal("core.Number.random")
-      @js.native
-      def random(lim: Double): Double = js.native
+      @scala.inline
+      def random(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Double]
+      @scala.inline
+      def random(lim: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(lim.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.sign")
-      @js.native
-      def sign(x: Double): Double = js.native
+      @scala.inline
+      def sign(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.sinh")
-      @js.native
-      def sinh(x: Double): Double = js.native
+      @scala.inline
+      def sinh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.tanh")
-      @js.native
-      def tanh(x: Double): Double = js.native
+      @scala.inline
+      def tanh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("core.Number.trunc")
-      @js.native
-      def trunc(x: Double): Double = js.native
+      @scala.inline
+      def trunc(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("trunc")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     object Object {
       
-      @JSGlobal("core.Object.assign")
+      @JSGlobal("core.Object")
       @js.native
-      def assign(target: js.Any, sources: js.Any*): js.Any = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("core.Object.classof")
-      @js.native
-      def classof(value: js.Any): java.lang.String = js.native
+      @scala.inline
+      def assign(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSGlobal("core.Object.create")
-      @js.native
-      def create(o: js.Any): js.Any = js.native
-      @JSGlobal("core.Object.create")
-      @js.native
-      def create(o: js.Any, properties: PropertyDescriptorMap): js.Any = js.native
+      @scala.inline
+      def classof(value: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("classof")(value.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
       
-      @JSGlobal("core.Object.define")
-      @js.native
-      def define[T](target: T, mixin: js.Any): T = js.native
+      @scala.inline
+      def create(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      @scala.inline
+      def create(o: js.Any, properties: PropertyDescriptorMap): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(o.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSGlobal("core.Object.defineProperties")
-      @js.native
-      def defineProperties(o: js.Any, properties: PropertyDescriptorMap): js.Any = js.native
+      @scala.inline
+      def define[T](target: T, mixin: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(target.asInstanceOf[js.Any], mixin.asInstanceOf[js.Any])).asInstanceOf[T]
       
-      @JSGlobal("core.Object.defineProperty")
-      @js.native
-      def defineProperty(o: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): js.Any = js.native
+      @scala.inline
+      def defineProperties(o: js.Any, properties: PropertyDescriptorMap): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperties")(o.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSGlobal("core.Object.entries")
-      @js.native
-      def entries(`object`: js.Any): Array[_] = js.native
+      @scala.inline
+      def defineProperty(o: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(o.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSGlobal("core.Object.freeze")
-      @js.native
-      def freeze[T](o: T): T = js.native
+      @scala.inline
+      def entries(`object`: js.Any): Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(`object`.asInstanceOf[js.Any]).asInstanceOf[Array[js.Any]]
       
-      @JSGlobal("core.Object.getOwnPropertyDescriptor")
-      @js.native
-      def getOwnPropertyDescriptor(o: js.Any, propertyKey: PropertyKey): PropertyDescriptor = js.native
+      @scala.inline
+      def freeze[T](o: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("freeze")(o.asInstanceOf[js.Any]).asInstanceOf[T]
       
-      @JSGlobal("core.Object.getOwnPropertyDescriptors")
-      @js.native
-      def getOwnPropertyDescriptors(`object`: js.Any): PropertyDescriptorMap = js.native
+      @scala.inline
+      def getOwnPropertyDescriptor(o: js.Any, propertyKey: PropertyKey): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnPropertyDescriptor")(o.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
       
-      @JSGlobal("core.Object.getOwnPropertyNames")
-      @js.native
-      def getOwnPropertyNames(o: js.Any): Array[java.lang.String] = js.native
+      @scala.inline
+      def getOwnPropertyDescriptors(`object`: js.Any): PropertyDescriptorMap = ^.asInstanceOf[js.Dynamic].applyDynamic("getOwnPropertyDescriptors")(`object`.asInstanceOf[js.Any]).asInstanceOf[PropertyDescriptorMap]
       
-      @JSGlobal("core.Object.getOwnPropertySymbols")
-      @js.native
-      def getOwnPropertySymbols(o: js.Any): Array[js.Symbol] = js.native
+      @scala.inline
+      def getOwnPropertyNames(o: js.Any): Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOwnPropertyNames")(o.asInstanceOf[js.Any]).asInstanceOf[Array[java.lang.String]]
       
-      @JSGlobal("core.Object.getPrototypeOf")
-      @js.native
-      def getPrototypeOf(o: js.Any): js.Any = js.native
+      @scala.inline
+      def getOwnPropertySymbols(o: js.Any): Array[js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOwnPropertySymbols")(o.asInstanceOf[js.Any]).asInstanceOf[Array[js.Symbol]]
       
-      @JSGlobal("core.Object.is")
-      @js.native
-      def is(value1: js.Any, value2: js.Any): Boolean = js.native
+      @scala.inline
+      def getPrototypeOf(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototypeOf")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @JSGlobal("core.Object.isExtensible")
-      @js.native
-      def isExtensible(o: js.Any): Boolean = js.native
+      @scala.inline
+      def is(value1: js.Any, value2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Object.isFrozen")
-      @js.native
-      def isFrozen(o: js.Any): Boolean = js.native
+      @scala.inline
+      def isExtensible(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtensible")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Object.isObject")
-      @js.native
-      def isObject(value: js.Any): Boolean = js.native
+      @scala.inline
+      def isFrozen(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFrozen")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Object.isSealed")
-      @js.native
-      def isSealed(o: js.Any): Boolean = js.native
+      @scala.inline
+      def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Object.keys")
-      @js.native
-      def keys(o: js.Any): Array[java.lang.String] = js.native
+      @scala.inline
+      def isSealed(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSealed")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Object.make")
-      @js.native
-      def make[T](proto: T): T = js.native
-      @JSGlobal("core.Object.make")
-      @js.native
-      def make[T](proto: T, mixin: js.Any): T = js.native
+      @scala.inline
+      def keys(o: js.Any): Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(o.asInstanceOf[js.Any]).asInstanceOf[Array[java.lang.String]]
       
-      @JSGlobal("core.Object.preventExtensions")
-      @js.native
-      def preventExtensions[T](o: T): T = js.native
+      @scala.inline
+      def make[T](proto: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(proto.asInstanceOf[js.Any]).asInstanceOf[T]
+      @scala.inline
+      def make[T](proto: T, mixin: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(proto.asInstanceOf[js.Any], mixin.asInstanceOf[js.Any])).asInstanceOf[T]
       
-      @JSGlobal("core.Object.seal")
-      @js.native
-      def seal[T](o: T): T = js.native
+      @scala.inline
+      def preventExtensions[T](o: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("preventExtensions")(o.asInstanceOf[js.Any]).asInstanceOf[T]
       
-      @JSGlobal("core.Object.setPrototypeOf")
-      @js.native
-      def setPrototypeOf(o: js.Any, proto: js.Any): js.Any = js.native
+      @scala.inline
+      def seal[T](o: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("seal")(o.asInstanceOf[js.Any]).asInstanceOf[T]
       
-      @JSGlobal("core.Object.values")
-      @js.native
-      def values(`object`: js.Any): Array[_] = js.native
+      @scala.inline
+      def setPrototypeOf(o: js.Any, proto: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setPrototypeOf")(o.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      
+      @scala.inline
+      def values(`object`: js.Any): Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(`object`.asInstanceOf[js.Any]).asInstanceOf[Array[js.Any]]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("core.Promise")
     @js.native
     class Promise[T] protected ()
-      extends typings.std.Promise[T] {
+      extends StObject
+         with typings.std.Promise[T] {
       /**
         * Creates a new Promise.
         * @param executor A callback used to initialize the promise. This callback is passed two arguments:
@@ -774,13 +661,15 @@ object global {
     
     object Reflect {
       
-      @JSGlobal("core.Reflect.apply")
+      @JSGlobal("core.Reflect")
       @js.native
-      def apply(target: Function, thisArgument: js.Any, argumentsList: ArrayLike[_]): js.Any = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("core.Reflect.construct")
-      @js.native
-      def construct(target: Function, argumentsList: ArrayLike[_]): js.Any = js.native
+      @scala.inline
+      def apply(target: Function, thisArgument: js.Any, argumentsList: ArrayLike[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(target.asInstanceOf[js.Any], thisArgument.asInstanceOf[js.Any], argumentsList.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      
+      @scala.inline
+      def construct(target: Function, argumentsList: ArrayLike[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(target.asInstanceOf[js.Any], argumentsList.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       /**
         * Define a unique metadata entry on the target.
@@ -804,19 +693,15 @@ object global {
         *  }
         * ```
         */
-      @JSGlobal("core.Reflect.defineMetadata")
-      @js.native
-      def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object): Unit = js.native
-      @JSGlobal("core.Reflect.defineMetadata")
-      @js.native
-      def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object, targetKey: java.lang.String): Unit = js.native
-      @JSGlobal("core.Reflect.defineMetadata")
-      @js.native
-      def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object, targetKey: js.Symbol): Unit = js.native
+      @scala.inline
+      def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineMetadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object, targetKey: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineMetadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object, targetKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineMetadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("core.Reflect.defineProperty")
-      @js.native
-      def defineProperty(target: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): Boolean = js.native
+      @scala.inline
+      def defineProperty(target: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /**
         * Deletes the metadata entry from the target object with the provided key.
@@ -835,26 +720,20 @@ object global {
         *  result = Reflect.deleteMetadata("custom:annotation", Example);
         * ```
         */
-      @JSGlobal("core.Reflect.deleteMetadata")
-      @js.native
-      def deleteMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
-      @JSGlobal("core.Reflect.deleteMetadata")
-      @js.native
-      def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
-      @JSGlobal("core.Reflect.deleteMetadata")
-      @js.native
-      def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
+      @scala.inline
+      def deleteMetadata(metadataKey: js.Any, target: Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Reflect.deleteProperty")
-      @js.native
-      def deleteProperty(target: js.Any, propertyKey: PropertyKey): Boolean = js.native
+      @scala.inline
+      def deleteProperty(target: js.Any, propertyKey: PropertyKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Reflect.get")
-      @js.native
-      def get(target: js.Any, propertyKey: PropertyKey): js.Any = js.native
-      @JSGlobal("core.Reflect.get")
-      @js.native
-      def get(target: js.Any, propertyKey: PropertyKey, receiver: js.Any): js.Any = js.native
+      @scala.inline
+      def get(target: js.Any, propertyKey: PropertyKey): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def get(target: js.Any, propertyKey: PropertyKey, receiver: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       /**
         * Gets the metadata value for the provided metadata key on the target object or its prototype chain.
@@ -873,15 +752,12 @@ object global {
         *  result = Reflect.getMetadata("custom:annotation", Example);
         * ```
         */
-      @JSGlobal("core.Reflect.getMetadata")
-      @js.native
-      def getMetadata(metadataKey: js.Any, target: Object): js.Any = js.native
-      @JSGlobal("core.Reflect.getMetadata")
-      @js.native
-      def getMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): js.Any = js.native
-      @JSGlobal("core.Reflect.getMetadata")
-      @js.native
-      def getMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): js.Any = js.native
+      @scala.inline
+      def getMetadata(metadataKey: js.Any, target: Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def getMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def getMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       /**
         * Gets the metadata keys defined on the target object or its prototype chain.
@@ -899,15 +775,12 @@ object global {
         *  result = Reflect.getMetadataKeys(Example);
         * ```
         */
-      @JSGlobal("core.Reflect.getMetadataKeys")
-      @js.native
-      def getMetadataKeys(target: Object): Array[_] = js.native
-      @JSGlobal("core.Reflect.getMetadataKeys")
-      @js.native
-      def getMetadataKeys(target: Object, targetKey: java.lang.String): Array[_] = js.native
-      @JSGlobal("core.Reflect.getMetadataKeys")
-      @js.native
-      def getMetadataKeys(target: Object, targetKey: js.Symbol): Array[_] = js.native
+      @scala.inline
+      def getMetadataKeys(target: Object): Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataKeys")(target.asInstanceOf[js.Any]).asInstanceOf[Array[js.Any]]
+      @scala.inline
+      def getMetadataKeys(target: Object, targetKey: java.lang.String): Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Array[js.Any]]
+      @scala.inline
+      def getMetadataKeys(target: Object, targetKey: js.Symbol): Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Array[js.Any]]
       
       /**
         * Gets the metadata value for the provided metadata key on the target object.
@@ -926,15 +799,12 @@ object global {
         *  result = Reflect.getOwnMetadata("custom:annotation", Example);
         * ```
         */
-      @JSGlobal("core.Reflect.getOwnMetadata")
-      @js.native
-      def getOwnMetadata(metadataKey: js.Any, target: Object): js.Any = js.native
-      @JSGlobal("core.Reflect.getOwnMetadata")
-      @js.native
-      def getOwnMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): js.Any = js.native
-      @JSGlobal("core.Reflect.getOwnMetadata")
-      @js.native
-      def getOwnMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): js.Any = js.native
+      @scala.inline
+      def getOwnMetadata(metadataKey: js.Any, target: Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def getOwnMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def getOwnMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       /**
         * Gets the unique metadata keys defined on the target object.
@@ -952,30 +822,23 @@ object global {
         *  result = Reflect.getOwnMetadataKeys(Example);
         * ```
         */
-      @JSGlobal("core.Reflect.getOwnMetadataKeys")
-      @js.native
-      def getOwnMetadataKeys(target: Object): Array[_] = js.native
-      @JSGlobal("core.Reflect.getOwnMetadataKeys")
-      @js.native
-      def getOwnMetadataKeys(target: Object, targetKey: java.lang.String): Array[_] = js.native
-      @JSGlobal("core.Reflect.getOwnMetadataKeys")
-      @js.native
-      def getOwnMetadataKeys(target: Object, targetKey: js.Symbol): Array[_] = js.native
+      @scala.inline
+      def getOwnMetadataKeys(target: Object): Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadataKeys")(target.asInstanceOf[js.Any]).asInstanceOf[Array[js.Any]]
+      @scala.inline
+      def getOwnMetadataKeys(target: Object, targetKey: java.lang.String): Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Array[js.Any]]
+      @scala.inline
+      def getOwnMetadataKeys(target: Object, targetKey: js.Symbol): Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Array[js.Any]]
       
-      @JSGlobal("core.Reflect.getOwnPropertyDescriptor")
-      @js.native
-      def getOwnPropertyDescriptor(target: js.Any, propertyKey: PropertyKey): PropertyDescriptor = js.native
+      @scala.inline
+      def getOwnPropertyDescriptor(target: js.Any, propertyKey: PropertyKey): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnPropertyDescriptor")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
       
-      @JSGlobal("core.Reflect.getPrototypeOf")
-      @js.native
-      def getPrototypeOf(target: js.Any): js.Any = js.native
+      @scala.inline
+      def getPrototypeOf(target: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototypeOf")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @JSGlobal("core.Reflect.has")
-      @js.native
-      def has(target: js.Any, propertyKey: java.lang.String): Boolean = js.native
-      @JSGlobal("core.Reflect.has")
-      @js.native
-      def has(target: js.Any, propertyKey: js.Symbol): Boolean = js.native
+      @scala.inline
+      def has(target: js.Any, propertyKey: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def has(target: js.Any, propertyKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /**
         * Gets a value indicating whether the target object or its prototype chain has the provided metadata key defined.
@@ -994,15 +857,12 @@ object global {
         *  result = Reflect.hasMetadata("custom:annotation", Example);
         * ```
         */
-      @JSGlobal("core.Reflect.hasMetadata")
-      @js.native
-      def hasMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
-      @JSGlobal("core.Reflect.hasMetadata")
-      @js.native
-      def hasMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
-      @JSGlobal("core.Reflect.hasMetadata")
-      @js.native
-      def hasMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
+      @scala.inline
+      def hasMetadata(metadataKey: js.Any, target: Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def hasMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def hasMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /**
         * Gets a value indicating whether the target object has the provided metadata key defined.
@@ -1022,19 +882,15 @@ object global {
         *  result = Reflect.hasOwnMetadata("custom:annotation", Example);
         * ```
         */
-      @JSGlobal("core.Reflect.hasOwnMetadata")
-      @js.native
-      def hasOwnMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
-      @JSGlobal("core.Reflect.hasOwnMetadata")
-      @js.native
-      def hasOwnMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
-      @JSGlobal("core.Reflect.hasOwnMetadata")
-      @js.native
-      def hasOwnMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
+      @scala.inline
+      def hasOwnMetadata(metadataKey: js.Any, target: Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def hasOwnMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def hasOwnMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Reflect.isExtensible")
-      @js.native
-      def isExtensible(target: js.Any): Boolean = js.native
+      @scala.inline
+      def isExtensible(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtensible")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * A default metadata decorator factory that can be used on a class, class member, or parameter.
@@ -1079,42 +935,40 @@ object global {
         *  }
         * ```
         */
-      @JSGlobal("core.Reflect.metadata")
-      @js.native
-      def metadata(metadataKey: js.Any, metadataValue: js.Any): FnCall = js.native
+      @scala.inline
+      def metadata(metadataKey: js.Any, metadataValue: js.Any): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any])).asInstanceOf[FnCall]
       
-      @JSGlobal("core.Reflect.ownKeys")
-      @js.native
-      def ownKeys(target: js.Any): Array[PropertyKey] = js.native
+      @scala.inline
+      def ownKeys(target: js.Any): Array[PropertyKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("ownKeys")(target.asInstanceOf[js.Any]).asInstanceOf[Array[PropertyKey]]
       
-      @JSGlobal("core.Reflect.preventExtensions")
-      @js.native
-      def preventExtensions(target: js.Any): Boolean = js.native
+      @scala.inline
+      def preventExtensions(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("preventExtensions")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Reflect.set")
-      @js.native
-      def set(target: js.Any, propertyKey: PropertyKey, value: js.Any): Boolean = js.native
-      @JSGlobal("core.Reflect.set")
-      @js.native
-      def set(target: js.Any, propertyKey: PropertyKey, value: js.Any, receiver: js.Any): Boolean = js.native
+      @scala.inline
+      def set(target: js.Any, propertyKey: PropertyKey, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def set(target: js.Any, propertyKey: PropertyKey, value: js.Any, receiver: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("core.Reflect.setPrototypeOf")
-      @js.native
-      def setPrototypeOf(target: js.Any, proto: js.Any): Boolean = js.native
+      @scala.inline
+      def setPrototypeOf(target: js.Any, proto: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setPrototypeOf")(target.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     }
     
     object RegExp {
       
-      @JSGlobal("core.RegExp.escape")
+      @JSGlobal("core.RegExp")
       @js.native
-      def escape(str: java.lang.String): java.lang.String = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def escape(str: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("core.Set")
     @js.native
     class Set[T] ()
-      extends typings.std.Set[T] {
+      extends StObject
+         with typings.std.Set[T] {
       def this(values: js.Array[T]) = this()
     }
     @JSGlobal("core.Set")
@@ -1123,68 +977,55 @@ object global {
     
     object String {
       
-      @JSGlobal("core.String.at")
+      @JSGlobal("core.String")
       @js.native
-      def at(text: java.lang.String, index: Double): java.lang.String = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("core.String.codePointAt")
-      @js.native
-      def codePointAt(text: java.lang.String, pos: Double): Double = js.native
+      @scala.inline
+      def at(text: java.lang.String, index: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("at")(text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
       
-      @JSGlobal("core.String.endsWith")
-      @js.native
-      def endsWith(text: java.lang.String, searchString: java.lang.String): Boolean = js.native
-      @JSGlobal("core.String.endsWith")
-      @js.native
-      def endsWith(text: java.lang.String, searchString: java.lang.String, endPosition: Double): Boolean = js.native
+      @scala.inline
+      def codePointAt(text: java.lang.String, pos: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("codePointAt")(text.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("core.String.escapeHTML")
-      @js.native
-      def escapeHTML(text: java.lang.String): java.lang.String = js.native
+      @scala.inline
+      def endsWith(text: java.lang.String, searchString: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("endsWith")(text.asInstanceOf[js.Any], searchString.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def endsWith(text: java.lang.String, searchString: java.lang.String, endPosition: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("endsWith")(text.asInstanceOf[js.Any], searchString.asInstanceOf[js.Any], endPosition.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("core.String.fromCodePoint")
-      @js.native
-      def fromCodePoint(codePoints: Double*): java.lang.String = js.native
+      @scala.inline
+      def escapeHTML(text: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(text.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
       
-      @JSGlobal("core.String.includes")
-      @js.native
-      def includes(text: java.lang.String, searchString: java.lang.String): Boolean = js.native
-      @JSGlobal("core.String.includes")
-      @js.native
-      def includes(text: java.lang.String, searchString: java.lang.String, position: Double): Boolean = js.native
+      @scala.inline
+      def fromCodePoint(codePoints: Double*): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCodePoint")(codePoints.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
       
-      @JSGlobal("core.String.padEnd")
-      @js.native
-      def padEnd(text: java.lang.String, length: Double): java.lang.String = js.native
-      @JSGlobal("core.String.padEnd")
-      @js.native
-      def padEnd(text: java.lang.String, length: Double, fillStr: java.lang.String): java.lang.String = js.native
+      @scala.inline
+      def includes(text: java.lang.String, searchString: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(text.asInstanceOf[js.Any], searchString.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def includes(text: java.lang.String, searchString: java.lang.String, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(text.asInstanceOf[js.Any], searchString.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("core.String.padStart")
-      @js.native
-      def padStart(text: java.lang.String, length: Double): java.lang.String = js.native
-      @JSGlobal("core.String.padStart")
-      @js.native
-      def padStart(text: java.lang.String, length: Double, fillStr: java.lang.String): java.lang.String = js.native
+      @scala.inline
+      def padEnd(text: java.lang.String, length: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("padEnd")(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+      @scala.inline
+      def padEnd(text: java.lang.String, length: Double, fillStr: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("padEnd")(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any], fillStr.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
       
-      @JSGlobal("core.String.raw")
-      @js.native
-      def raw(template: TemplateStringsArray, substitutions: js.Any*): java.lang.String = js.native
+      @scala.inline
+      def padStart(text: java.lang.String, length: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("padStart")(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+      @scala.inline
+      def padStart(text: java.lang.String, length: Double, fillStr: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("padStart")(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any], fillStr.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
       
-      @JSGlobal("core.String.repeat")
-      @js.native
-      def repeat(text: java.lang.String, count: Double): java.lang.String = js.native
+      @scala.inline
+      def raw(template: TemplateStringsArray, substitutions: js.Any*): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("raw")(template.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
       
-      @JSGlobal("core.String.startsWith")
-      @js.native
-      def startsWith(text: java.lang.String, searchString: java.lang.String): Boolean = js.native
-      @JSGlobal("core.String.startsWith")
-      @js.native
-      def startsWith(text: java.lang.String, searchString: java.lang.String, position: Double): Boolean = js.native
+      @scala.inline
+      def repeat(text: java.lang.String, count: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(text.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
       
-      @JSGlobal("core.String.unescapeHTML")
-      @js.native
-      def unescapeHTML(text: java.lang.String): java.lang.String = js.native
+      @scala.inline
+      def startsWith(text: java.lang.String, searchString: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startsWith")(text.asInstanceOf[js.Any], searchString.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def startsWith(text: java.lang.String, searchString: java.lang.String, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startsWith")(text.asInstanceOf[js.Any], searchString.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      
+      @scala.inline
+      def unescapeHTML(text: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeHTML")(text.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
     }
     
     @JSGlobal("core.Symbol")
@@ -1195,7 +1036,8 @@ object global {
     @JSGlobal("core.WeakMap")
     @js.native
     class WeakMap[K /* <: js.Object */, V] ()
-      extends typings.std.WeakMap[K, V] {
+      extends StObject
+         with typings.std.WeakMap[K, V] {
       def this(entries: js.Array[js.Tuple2[K, V]]) = this()
     }
     @JSGlobal("core.WeakMap")
@@ -1206,7 +1048,8 @@ object global {
     @JSGlobal("core.WeakSet")
     @js.native
     class WeakSet[T /* <: js.Object */] ()
-      extends typings.std.WeakSet[T] {
+      extends StObject
+         with typings.std.WeakSet[T] {
       def this(iterable: Iterable[T]) = this()
       def this(values: js.Array[T]) = this()
     }
@@ -1218,73 +1061,58 @@ object global {
     @js.native
     val _underscore: Boolean = js.native
     
-    @JSGlobal("core.addLocale")
-    @js.native
-    def addLocale(lang: java.lang.String, locale: Locale): Typeofcore = js.native
+    @scala.inline
+    def addLocale(lang: java.lang.String, locale: Locale): Typeofcore = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(lang.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Typeofcore]
     
-    @JSGlobal("core.clearImmediate")
-    @js.native
-    def clearImmediate(handle: Double): Unit = js.native
+    @scala.inline
+    def clearImmediate(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearImmediate")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("core.delay")
-    @js.native
-    def delay(msec: Double): js.Promise[Unit] = js.native
+    @scala.inline
+    def delay(msec: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @JSGlobal("core.getIterator")
-    @js.native
-    def getIterator[T](iterable: Iterable[T]): Iterator[T, _, js.UndefOr[scala.Nothing]] = js.native
+    @scala.inline
+    def `for`[T](iterable: Iterable[T]): typings.coreJs.`for`[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("$for")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.coreJs.`for`[T]]
+    
+    @scala.inline
+    def getIterator[T](iterable: Iterable[T]): Iterator[T, js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIterator")(iterable.asInstanceOf[js.Any]).asInstanceOf[Iterator[T, js.Any, Unit]]
     
     @JSGlobal("core.global")
     @js.native
     val global: js.Any = js.native
     
-    @JSGlobal("core.isIterable")
-    @js.native
-    def isIterable(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isIterable(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSGlobal("core.locale")
-    @js.native
-    def locale(): java.lang.String = js.native
-    @JSGlobal("core.locale")
-    @js.native
-    def locale(lang: java.lang.String): java.lang.String = js.native
+    @scala.inline
+    def locale(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[java.lang.String]
+    @scala.inline
+    def locale(lang: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(lang.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
     
-    @JSGlobal("core.setImmediate")
-    @js.native
-    def setImmediate(expression: js.Any, args: js.Any*): Double = js.native
+    @scala.inline
+    def setImmediate(expression: js.Any, args: js.Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(expression.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSGlobal("core.setInterval")
-    @js.native
-    def setInterval(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
-    @JSGlobal("core.setInterval")
-    @js.native
-    def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
+    @scala.inline
+    def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def setInterval(handler: js.Any, timeout: Unit, args: js.Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSGlobal("core.setTimeout")
-    @js.native
-    def setTimeout(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
-    @JSGlobal("core.setTimeout")
-    @js.native
-    def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
+    @scala.inline
+    def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def setTimeout(handler: js.Any, timeout: Unit, args: js.Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     @JSGlobal("core.version")
     @js.native
     val version: java.lang.String = js.native
-    
-    @JSGlobal("core.$for")
-    @js.native
-    def `for`[T](iterable: Iterable[T]): typings.coreJs.`for`[T] = js.native
   }
   
   // #############################################################################################
   // delay - https://github.com/zloirock/core-js/#delay
   // Modules: core.delay
   // #############################################################################################
-  @JSGlobal("delay")
-  @js.native
-  def delay(msec: Double): js.Promise[Unit] = js.native
+  @scala.inline
+  def delay(msec: Double): js.Promise[Unit] = js.Dynamic.global.applyDynamic("delay")(msec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSGlobal("$for")
-  @js.native
-  def `for`[T](iterable: Iterable[T]): typings.coreJs.`for`[T] = js.native
+  @scala.inline
+  def `for`[T](iterable: Iterable[T]): typings.coreJs.`for`[T] = js.Dynamic.global.applyDynamic("$for")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.coreJs.`for`[T]]
 }

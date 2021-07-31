@@ -6,14 +6,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refresherMod {
   
   @JSImport("@ionic/core/dist/types/components/refresher/refresher", "Refresher")
   @js.native
-  class Refresher () extends ComponentInterface {
+  class Refresher ()
+    extends StObject
+       with ComponentInterface {
     
     var animations: js.Any = js.native
     

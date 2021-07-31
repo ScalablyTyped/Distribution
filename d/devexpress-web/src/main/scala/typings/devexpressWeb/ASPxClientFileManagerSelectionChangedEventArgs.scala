@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.SelectionChanged event.
   */
-@js.native
-trait ASPxClientFileManagerSelectionChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFileManagerSelectionChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the full name of the file currently being processed.
     */
-  var fullName: String = js.native
+  var fullName: String
   
   /**
     * Gets whether the item has been selected.
     */
-  var isSelected: Boolean = js.native
+  var isSelected: Boolean
   
   /**
     * Gets the file manager item object related to the event.
     */
-  var item: ASPxClientFileManagerItem = js.native
+  var item: ASPxClientFileManagerItem
   
   /**
     * Gets the name of the currently processed file.
     */
-  var name: String = js.native
+  var name: String
 }
 object ASPxClientFileManagerSelectionChangedEventArgs {
   

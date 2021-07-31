@@ -2,17 +2,15 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxValidationError extends StObject {
   
-  var qContext: String = js.native
+  var qContext: String
   
-  var qErrorCode: Double = js.native
+  var qErrorCode: Double
   
-  var qExtendedMessage: String = js.native
+  var qExtendedMessage: String
 }
 object NxValidationError {
   

@@ -3,17 +3,15 @@ package typings.aliOss.anon
 import typings.aliOss.mod.NormalSuccessResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var error: String = js.native
+  var error: String
   
-  var index: String = js.native
+  var index: String
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object Error {
   

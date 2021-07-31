@@ -4,7 +4,6 @@ import typings.saxes.mod.EventName
 import typings.saxes.mod.SaxesAttributeNSIncomplete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object saxesStrings {
@@ -20,87 +19,121 @@ object saxesStrings {
   def `1Dot1`: `1Dot1` = "1.1".asInstanceOf[`1Dot1`]
   
   @js.native
-  sealed trait attribute extends EventName
+  sealed trait attribute
+    extends StObject
+       with EventName
   @scala.inline
   def attribute: attribute = "attribute".asInstanceOf[attribute]
   
   @js.native
-  sealed trait cdata extends EventName
+  sealed trait cdata
+    extends StObject
+       with EventName
   @scala.inline
   def cdata: cdata = "cdata".asInstanceOf[cdata]
   
   @js.native
-  sealed trait closetag extends EventName
+  sealed trait closetag
+    extends StObject
+       with EventName
   @scala.inline
   def closetag: closetag = "closetag".asInstanceOf[closetag]
   
   @js.native
-  sealed trait comment extends EventName
+  sealed trait comment
+    extends StObject
+       with EventName
   @scala.inline
   def comment: comment = "comment".asInstanceOf[comment]
   
   @js.native
-  sealed trait doctype extends EventName
+  sealed trait doctype
+    extends StObject
+       with EventName
   @scala.inline
   def doctype: doctype = "doctype".asInstanceOf[doctype]
   
   @js.native
-  sealed trait end extends EventName
+  sealed trait end
+    extends StObject
+       with EventName
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait error extends EventName
+  sealed trait error
+    extends StObject
+       with EventName
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait local extends SaxesAttributeNSIncomplete
+  sealed trait local
+    extends StObject
+       with SaxesAttributeNSIncomplete
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   
   @js.native
-  sealed trait name extends SaxesAttributeNSIncomplete
+  sealed trait name
+    extends StObject
+       with SaxesAttributeNSIncomplete
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait opentag extends EventName
+  sealed trait opentag
+    extends StObject
+       with EventName
   @scala.inline
   def opentag: opentag = "opentag".asInstanceOf[opentag]
   
   @js.native
-  sealed trait opentagstart extends EventName
+  sealed trait opentagstart
+    extends StObject
+       with EventName
   @scala.inline
   def opentagstart: opentagstart = "opentagstart".asInstanceOf[opentagstart]
   
   @js.native
-  sealed trait prefix extends SaxesAttributeNSIncomplete
+  sealed trait prefix
+    extends StObject
+       with SaxesAttributeNSIncomplete
   @scala.inline
   def prefix: prefix = "prefix".asInstanceOf[prefix]
   
   @js.native
-  sealed trait processinginstruction extends EventName
+  sealed trait processinginstruction
+    extends StObject
+       with EventName
   @scala.inline
   def processinginstruction: processinginstruction = "processinginstruction".asInstanceOf[processinginstruction]
   
   @js.native
-  sealed trait ready extends EventName
+  sealed trait ready
+    extends StObject
+       with EventName
   @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait text extends EventName
+  sealed trait text
+    extends StObject
+       with EventName
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait value extends SaxesAttributeNSIncomplete
+  sealed trait value
+    extends StObject
+       with SaxesAttributeNSIncomplete
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   
   @js.native
-  sealed trait xmldecl extends EventName
+  sealed trait xmldecl
+    extends StObject
+       with EventName
   @scala.inline
   def xmldecl: xmldecl = "xmldecl".asInstanceOf[xmldecl]
 }

@@ -2,13 +2,11 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveNonSerializable extends StObject {
   
-  var removeNonSerializable: js.UndefOr[Boolean] = js.native
+  var removeNonSerializable: js.UndefOr[Boolean] = js.undefined
 }
 object RemoveNonSerializable {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.CustomCommand event.
   */
-@js.native
-trait ASPxClientFileManagerCustomCommandEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFileManagerCustomCommandEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the name of the processed command.
     */
-  var commandName: String = js.native
+  var commandName: String
 }
 object ASPxClientFileManagerCustomCommandEventArgs {
   

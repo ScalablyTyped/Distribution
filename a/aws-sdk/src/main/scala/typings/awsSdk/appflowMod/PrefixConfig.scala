@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrefixConfig extends StObject {
   
   /**
     *  Determines the format of the prefix, and whether it applies to the file name, file path, or both. 
     */
-  var prefixFormat: js.UndefOr[PrefixFormat] = js.native
+  var prefixFormat: js.UndefOr[PrefixFormat] = js.undefined
   
   /**
     *  Determines the level of granularity that's included in the prefix. 
     */
-  var prefixType: js.UndefOr[PrefixType] = js.native
+  var prefixType: js.UndefOr[PrefixType] = js.undefined
 }
 object PrefixConfig {
   

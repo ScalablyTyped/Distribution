@@ -13,7 +13,6 @@ import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeRequestsMod {
@@ -27,13 +26,13 @@ object mergeRequestsMod {
     def accept(
       projectId: String,
       mergerequestIId: Double,
-      options: AcceptMergeRequestOptions with BaseRequestOptions
+      options: AcceptMergeRequestOptions & BaseRequestOptions
     ): js.Promise[js.Object] = js.native
     def accept(projectId: Double, mergerequestIId: Double): js.Promise[js.Object] = js.native
     def accept(
       projectId: Double,
       mergerequestIId: Double,
-      options: AcceptMergeRequestOptions with BaseRequestOptions
+      options: AcceptMergeRequestOptions & BaseRequestOptions
     ): js.Promise[js.Object] = js.native
     
     def addSpentTime(projectId: String, mergerequestIId: Double, duration: String): js.Promise[js.Object] = js.native
@@ -46,7 +45,7 @@ object mergeRequestsMod {
     def addTimeEstimate(projectId: Double, mergerequestIId: Double, duration: String): js.Promise[js.Object] = js.native
     def addTimeEstimate(projectId: Double, mergerequestIId: Double, duration: String, options: Sudo): js.Promise[js.Object] = js.native
     
-    def all(hasProjectIdGroupIdOptions: (`0` | `1` | js.Object) with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdGroupIdOptions: (`0` | `1` | js.Object) & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
     
     def approvalState(projectId: String, mergerequestIId: Double): js.Promise[GetResponse] = js.native
     def approvalState(projectId: String, mergerequestIId: Double, options: shastringundefinedBaseReq): js.Promise[GetResponse] = js.native
@@ -104,7 +103,7 @@ object mergeRequestsMod {
       sourceBranch: String,
       targetBranch: String,
       title: String,
-      options: CreateMergeRequestOptions with BaseRequestOptions
+      options: CreateMergeRequestOptions & BaseRequestOptions
     ): js.Promise[js.Object] = js.native
     def create(projectId: Double, sourceBranch: String, targetBranch: String, title: String): js.Promise[js.Object] = js.native
     def create(
@@ -112,20 +111,20 @@ object mergeRequestsMod {
       sourceBranch: String,
       targetBranch: String,
       title: String,
-      options: CreateMergeRequestOptions with BaseRequestOptions
+      options: CreateMergeRequestOptions & BaseRequestOptions
     ): js.Promise[js.Object] = js.native
     
     def edit(projectId: String, mergerequestIId: Double): js.Promise[js.Object] = js.native
     def edit(
       projectId: String,
       mergerequestIId: Double,
-      options: UpdateMergeRequestOptions with BaseRequestOptions
+      options: UpdateMergeRequestOptions & BaseRequestOptions
     ): js.Promise[js.Object] = js.native
     def edit(projectId: Double, mergerequestIId: Double): js.Promise[js.Object] = js.native
     def edit(
       projectId: Double,
       mergerequestIId: Double,
-      options: UpdateMergeRequestOptions with BaseRequestOptions
+      options: UpdateMergeRequestOptions & BaseRequestOptions
     ): js.Promise[js.Object] = js.native
     
     def editApprovals(projectId: String): js.Promise[js.Object] = js.native
@@ -159,17 +158,9 @@ object mergeRequestsMod {
     def resetTimeEstimate(projectId: Double, mergerequestIId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
     def show(projectId: String, mergerequestIId: Double): js.Promise[GetResponse] = js.native
-    def show(
-      projectId: String,
-      mergerequestIId: Double,
-      options: ShowMergeRequestOptions with BaseRequestOptions
-    ): js.Promise[GetResponse] = js.native
+    def show(projectId: String, mergerequestIId: Double, options: ShowMergeRequestOptions & BaseRequestOptions): js.Promise[GetResponse] = js.native
     def show(projectId: Double, mergerequestIId: Double): js.Promise[GetResponse] = js.native
-    def show(
-      projectId: Double,
-      mergerequestIId: Double,
-      options: ShowMergeRequestOptions with BaseRequestOptions
-    ): js.Promise[GetResponse] = js.native
+    def show(projectId: Double, mergerequestIId: Double, options: ShowMergeRequestOptions & BaseRequestOptions): js.Promise[GetResponse] = js.native
     
     def timeStats(projectId: String, mergerequestIId: Double): js.Promise[GetResponse] = js.native
     def timeStats(projectId: String, mergerequestIId: Double, options: Sudo): js.Promise[GetResponse] = js.native
@@ -197,20 +188,19 @@ object mergeRequestsMod {
     def versions(projectId: Double, mergerequestIId: Double, options: Sudo): js.Promise[GetResponse] = js.native
   }
   
-  @js.native
   trait AcceptMergeRequestOptions extends StObject {
     
-    var merge_commit_message: js.UndefOr[String] = js.native
+    var merge_commit_message: js.UndefOr[String] = js.undefined
     
-    var merge_when_pipeline_succeeds: js.UndefOr[Boolean] = js.native
+    var merge_when_pipeline_succeeds: js.UndefOr[Boolean] = js.undefined
     
-    var sha: js.UndefOr[String] = js.native
+    var sha: js.UndefOr[String] = js.undefined
     
-    var should_remove_source_branch: js.UndefOr[Boolean] = js.native
+    var should_remove_source_branch: js.UndefOr[Boolean] = js.undefined
     
-    var squash: js.UndefOr[Boolean] = js.native
+    var squash: js.UndefOr[Boolean] = js.undefined
     
-    var squash_commit_message: js.UndefOr[String] = js.native
+    var squash_commit_message: js.UndefOr[String] = js.undefined
   }
   object AcceptMergeRequestOptions {
     
@@ -261,26 +251,25 @@ object mergeRequestsMod {
     }
   }
   
-  @js.native
   trait CreateMergeRequestOptions extends StObject {
     
-    var allow_collaboration: js.UndefOr[Boolean] = js.native
+    var allow_collaboration: js.UndefOr[Boolean] = js.undefined
     
-    var allow_maintainer_to_push: js.UndefOr[Boolean] = js.native
+    var allow_maintainer_to_push: js.UndefOr[Boolean] = js.undefined
     
-    var assignee_id: js.UndefOr[Double] = js.native
+    var assignee_id: js.UndefOr[Double] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var labels: js.UndefOr[String] = js.native
+    var labels: js.UndefOr[String] = js.undefined
     
-    var milestone_id: js.UndefOr[Double] = js.native
+    var milestone_id: js.UndefOr[Double] = js.undefined
     
-    var remove_source_branch: js.UndefOr[Boolean] = js.native
+    var remove_source_branch: js.UndefOr[Boolean] = js.undefined
     
-    var squash: js.UndefOr[Boolean] = js.native
+    var squash: js.UndefOr[Boolean] = js.undefined
     
-    var target_project_id: js.UndefOr[Double] = js.native
+    var target_project_id: js.UndefOr[Double] = js.undefined
   }
   object CreateMergeRequestOptions {
     
@@ -349,14 +338,13 @@ object mergeRequestsMod {
     }
   }
   
-  @js.native
   trait ShowMergeRequestOptions extends StObject {
     
-    var include_diverged_commits_count: js.UndefOr[`true`] = js.native
+    var include_diverged_commits_count: js.UndefOr[`true`] = js.undefined
     
-    var include_rebase_in_progress: js.UndefOr[Boolean] = js.native
+    var include_rebase_in_progress: js.UndefOr[Boolean] = js.undefined
     
-    var render_html: js.UndefOr[Boolean] = js.native
+    var render_html: js.UndefOr[Boolean] = js.undefined
   }
   object ShowMergeRequestOptions {
     
@@ -389,32 +377,31 @@ object mergeRequestsMod {
     }
   }
   
-  @js.native
   trait UpdateMergeRequestOptions extends StObject {
     
-    var allow_collaboration: js.UndefOr[Boolean] = js.native
+    var allow_collaboration: js.UndefOr[Boolean] = js.undefined
     
-    var allow_maintainer_to_push: js.UndefOr[Boolean] = js.native
+    var allow_maintainer_to_push: js.UndefOr[Boolean] = js.undefined
     
-    var assignee_id: js.UndefOr[Double] = js.native
+    var assignee_id: js.UndefOr[Double] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var discussion_locked: js.UndefOr[Boolean] = js.native
+    var discussion_locked: js.UndefOr[Boolean] = js.undefined
     
-    var labels: js.UndefOr[String] = js.native
+    var labels: js.UndefOr[String] = js.undefined
     
-    var milestone_id: js.UndefOr[Double] = js.native
+    var milestone_id: js.UndefOr[Double] = js.undefined
     
-    var remove_source_branch: js.UndefOr[Boolean] = js.native
+    var remove_source_branch: js.UndefOr[Boolean] = js.undefined
     
-    var squash: js.UndefOr[Boolean] = js.native
+    var squash: js.UndefOr[Boolean] = js.undefined
     
-    var state_event: js.UndefOr[String] = js.native
+    var state_event: js.UndefOr[String] = js.undefined
     
-    var target_branch: js.UndefOr[Double] = js.native
+    var target_branch: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object UpdateMergeRequestOptions {
     

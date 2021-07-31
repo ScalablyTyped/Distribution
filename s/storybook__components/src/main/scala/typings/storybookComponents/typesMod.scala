@@ -3,20 +3,19 @@ package typings.storybookComponents
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ArgType
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object ArgType {
     
@@ -53,12 +52,11 @@ object typesMod {
   
   type Args = StringDictionary[js.Any]
   
-  @js.native
   trait JsDocParam extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object JsDocParam {
     
@@ -82,10 +80,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait JsDocReturns extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
   }
   object JsDocReturns {
     
@@ -106,12 +103,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait JsDocTags extends StObject {
     
-    var params: js.UndefOr[js.Array[JsDocParam]] = js.native
+    var params: js.UndefOr[js.Array[JsDocParam]] = js.undefined
     
-    var returns: js.UndefOr[JsDocReturns] = js.native
+    var returns: js.UndefOr[JsDocReturns] = js.undefined
   }
   object JsDocTags {
     
@@ -143,14 +139,13 @@ object typesMod {
   
   type PropDefaultValue = PropSummaryValue
   
-  @js.native
   trait PropSummaryValue extends StObject {
     
-    var detail: js.UndefOr[String] = js.native
+    var detail: js.UndefOr[String] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var summary: String = js.native
+    var summary: String
   }
   object PropSummaryValue {
     
@@ -182,16 +177,15 @@ object typesMod {
   
   type PropType = PropSummaryValue
   
-  @js.native
   trait TableAnnotation extends StObject {
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var defaultValue: js.UndefOr[PropDefaultValue] = js.native
+    var defaultValue: js.UndefOr[PropDefaultValue] = js.undefined
     
-    var jsDocTags: js.UndefOr[JsDocTags] = js.native
+    var jsDocTags: js.UndefOr[JsDocTags] = js.undefined
     
-    var `type`: PropType = js.native
+    var `type`: PropType
   }
   object TableAnnotation {
     

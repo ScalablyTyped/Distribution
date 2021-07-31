@@ -17,10 +17,13 @@ import typings.rsocketTypes.reactiveSocketTypesMod.ErrorFrame
 import typings.rsocketTypes.reactiveSocketTypesMod.Frame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("rsocket-core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rsocket-core", "APPLICATION_AVRO")
   @js.native
@@ -535,7 +538,7 @@ object mod {
   class RSocketResumableTransport protected ()
     extends typings.rsocketCore.rsocketresumabletransportMod.default {
     def this(source: js.Function0[DuplexConnection], options: Options) = this()
-    def this(source: js.Function0[DuplexConnection], options: Options, encoders: Encoders[_]) = this()
+    def this(source: js.Function0[DuplexConnection], options: Options, encoders: Encoders[js.Any]) = this()
   }
   
   @JSImport("rsocket-core", "RSocketServer")
@@ -609,6 +612,10 @@ object mod {
   /* static members */
   object WellKnownMimeType {
     
+    @JSImport("rsocket-core", "WellKnownMimeType")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Find the {@link WellKnownMimeType} for the given identifier (as an {@code int}). Valid
       * identifiers are defined to be integers between 0 and 127, inclusive. Identifiers outside of
@@ -623,9 +630,8 @@ object mod {
       *     of the specification's range, or {@link #UNKNOWN_RESERVED_MIME_TYPE} if the id is one that
       *     is merely reserved but unknown to this implementation.
       */
-    @JSImport("rsocket-core", "WellKnownMimeType.fromIdentifier")
-    @js.native
-    def fromIdentifier(id: Double): typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
+    @scala.inline
+    def fromIdentifier(id: Double): typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdentifier")(id.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType]
     
     /**
       * Find the {@link WellKnownMimeType} for the given {@link String} representation. If the
@@ -635,9 +641,8 @@ object mod {
       * @param mimeType the looked up mime type
       * @return the matching {@link WellKnownMimeType}, or {@link #UNPARSEABLE_MIME_TYPE} if none matches
       */
-    @JSImport("rsocket-core", "WellKnownMimeType.fromString")
-    @js.native
-    def fromString(mimeType: String): typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
+    @scala.inline
+    def fromString(mimeType: String): typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(mimeType.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType]
   }
   
   @JSImport("rsocket-core", "WellKnownMimeTypeEntry")
@@ -647,113 +652,85 @@ object mod {
     def this(content: Buffer, `type`: typings.rsocketCore.wellKnownMimeTypeMod.default) = this()
   }
   
-  @JSImport("rsocket-core", "byteLength")
-  @js.native
-  def byteLength(data: js.Any, encoding: Encoding): Double = js.native
+  @scala.inline
+  def byteLength(data: js.Any, encoding: Encoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("rsocket-core", "createBuffer")
-  @js.native
-  def createBuffer(args: js.Any*): Buffer = js.native
+  @scala.inline
+  def createBuffer(args: js.Any*): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createBuffer")(args.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("rsocket-core", "createErrorFromFrame")
-  @js.native
-  def createErrorFromFrame(frame: ErrorFrame): ErrorsourceErrorSource = js.native
+  @scala.inline
+  def createErrorFromFrame(frame: ErrorFrame): ErrorsourceErrorSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createErrorFromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[ErrorsourceErrorSource]
   
-  @JSImport("rsocket-core", "deserializeFrame")
-  @js.native
-  def deserializeFrame(buffer: Buffer): Frame = js.native
-  @JSImport("rsocket-core", "deserializeFrame")
-  @js.native
-  def deserializeFrame(buffer: Buffer, encoders: Encoders[_]): Frame = js.native
+  @scala.inline
+  def deserializeFrame(buffer: Buffer): Frame = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrame")(buffer.asInstanceOf[js.Any]).asInstanceOf[Frame]
+  @scala.inline
+  def deserializeFrame(buffer: Buffer, encoders: Encoders[js.Any]): Frame = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrame")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Frame]
   
-  @JSImport("rsocket-core", "deserializeFrameWithLength")
-  @js.native
-  def deserializeFrameWithLength(buffer: Buffer): Frame = js.native
-  @JSImport("rsocket-core", "deserializeFrameWithLength")
-  @js.native
-  def deserializeFrameWithLength(buffer: Buffer, encoders: Encoders[_]): Frame = js.native
+  @scala.inline
+  def deserializeFrameWithLength(buffer: Buffer): Frame = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrameWithLength")(buffer.asInstanceOf[js.Any]).asInstanceOf[Frame]
+  @scala.inline
+  def deserializeFrameWithLength(buffer: Buffer, encoders: Encoders[js.Any]): Frame = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrameWithLength")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Frame]
   
-  @JSImport("rsocket-core", "deserializeFrames")
-  @js.native
-  def deserializeFrames(buffer: Buffer): js.Tuple2[js.Array[Frame], Buffer] = js.native
-  @JSImport("rsocket-core", "deserializeFrames")
-  @js.native
-  def deserializeFrames(buffer: Buffer, encoders: Encoders[_]): js.Tuple2[js.Array[Frame], Buffer] = js.native
+  @scala.inline
+  def deserializeFrames(buffer: Buffer): js.Tuple2[js.Array[Frame], Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrames")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Frame], Buffer]]
+  @scala.inline
+  def deserializeFrames(buffer: Buffer, encoders: Encoders[js.Any]): js.Tuple2[js.Array[Frame], Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrames")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Frame], Buffer]]
   
-  @JSImport("rsocket-core", "encodeAndAddCustomMetadata")
-  @js.native
-  def encodeAndAddCustomMetadata(compositeMetaData: Buffer, customMimeType: String, metadata: Buffer): Buffer = js.native
+  @scala.inline
+  def encodeAndAddCustomMetadata(compositeMetaData: Buffer, customMimeType: String, metadata: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeAndAddCustomMetadata")(compositeMetaData.asInstanceOf[js.Any], customMimeType.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("rsocket-core", "encodeAndAddWellKnownMetadata")
-  @js.native
-  def encodeAndAddWellKnownMetadata(compositeMetaData: Buffer, knownMimeType: Double, metadata: Buffer): Buffer = js.native
-  @JSImport("rsocket-core", "encodeAndAddWellKnownMetadata")
-  @js.native
+  @scala.inline
+  def encodeAndAddWellKnownMetadata(compositeMetaData: Buffer, knownMimeType: Double, metadata: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeAndAddWellKnownMetadata")(compositeMetaData.asInstanceOf[js.Any], knownMimeType.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
   def encodeAndAddWellKnownMetadata(
     compositeMetaData: Buffer,
     knownMimeType: typings.rsocketCore.wellKnownMimeTypeMod.default,
     metadata: Buffer
-  ): Buffer = js.native
+  ): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeAndAddWellKnownMetadata")(compositeMetaData.asInstanceOf[js.Any], knownMimeType.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("rsocket-core", "getErrorCodeExplanation")
-  @js.native
-  def getErrorCodeExplanation(code: Double): String = js.native
+  @scala.inline
+  def getErrorCodeExplanation(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorCodeExplanation")(code.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("rsocket-core", "isComplete")
-  @js.native
-  def isComplete(flags: Double): Boolean = js.native
+  @scala.inline
+  def isComplete(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComplete")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("rsocket-core", "isIgnore")
-  @js.native
-  def isIgnore(flags: Double): Boolean = js.native
+  @scala.inline
+  def isIgnore(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIgnore")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("rsocket-core", "isLease")
-  @js.native
-  def isLease(flags: Double): Boolean = js.native
+  @scala.inline
+  def isLease(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLease")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("rsocket-core", "isMetadata")
-  @js.native
-  def isMetadata(flags: Double): Boolean = js.native
+  @scala.inline
+  def isMetadata(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMetadata")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("rsocket-core", "isNext")
-  @js.native
-  def isNext(flags: Double): Boolean = js.native
+  @scala.inline
+  def isNext(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNext")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("rsocket-core", "isRespond")
-  @js.native
-  def isRespond(flags: Double): Boolean = js.native
+  @scala.inline
+  def isRespond(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRespond")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("rsocket-core", "isResumeEnable")
-  @js.native
-  def isResumeEnable(flags: Double): Boolean = js.native
+  @scala.inline
+  def isResumeEnable(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResumeEnable")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("rsocket-core", "printFrame")
-  @js.native
-  def printFrame(frame: Frame): String = js.native
+  @scala.inline
+  def printFrame(frame: Frame): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("rsocket-core", "readUInt24BE")
-  @js.native
-  def readUInt24BE(buffer: Buffer, offset: Double): Double = js.native
+  @scala.inline
+  def readUInt24BE(buffer: Buffer, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt24BE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("rsocket-core", "serializeFrame")
-  @js.native
-  def serializeFrame(frame: Frame): Buffer = js.native
-  @JSImport("rsocket-core", "serializeFrame")
-  @js.native
-  def serializeFrame(frame: Frame, encoders: Encoders[_]): Buffer = js.native
+  @scala.inline
+  def serializeFrame(frame: Frame): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def serializeFrame(frame: Frame, encoders: Encoders[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrame")(frame.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("rsocket-core", "serializeFrameWithLength")
-  @js.native
-  def serializeFrameWithLength(frame: Frame): Buffer = js.native
-  @JSImport("rsocket-core", "serializeFrameWithLength")
-  @js.native
-  def serializeFrameWithLength(frame: Frame, encoders: Encoders[_]): Buffer = js.native
+  @scala.inline
+  def serializeFrameWithLength(frame: Frame): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrameWithLength")(frame.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def serializeFrameWithLength(frame: Frame, encoders: Encoders[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrameWithLength")(frame.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("rsocket-core", "toBuffer")
-  @js.native
-  def toBuffer(data: js.Any): Buffer = js.native
+  @scala.inline
+  def toBuffer(data: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("rsocket-core", "writeUInt24BE")
-  @js.native
-  def writeUInt24BE(buffer: Buffer, value: Double, offset: Double): Double = js.native
+  @scala.inline
+  def writeUInt24BE(buffer: Buffer, value: Double, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUInt24BE")(buffer.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

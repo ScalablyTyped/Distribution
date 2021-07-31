@@ -2,34 +2,32 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownBars extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Border: ChartBorder = js.native
+  val Border: ChartBorder
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  val Interior: typings.activexPowerpoint.PowerPoint.Interior = js.native
+  val Interior: typings.activexPowerpoint.PowerPoint.Interior
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.DownBars_typekey")
-  var PowerPointDotDownBars_typekey: DownBars = js.native
+  var PowerPointDotDownBars_typekey: DownBars
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
 }
 object DownBars {
   

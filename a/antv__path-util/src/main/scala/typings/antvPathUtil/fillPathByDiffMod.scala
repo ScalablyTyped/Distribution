@@ -2,21 +2,22 @@ package typings.antvPathUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fillPathByDiffMod {
   
-  @JSImport("@antv/path-util/lib/fill-path-by-diff", JSImport.Default)
+  @JSImport("@antv/path-util/lib/fill-path-by-diff", JSImport.Namespace)
   @js.native
-  def default(source: String, target: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(source: String, target: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait DiffType extends StObject {
     
-    var min: Double = js.native
+    var min: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object DiffType {
     

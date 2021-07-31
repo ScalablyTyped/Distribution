@@ -10,10 +10,13 @@ import typings.xmlrpc.anon.Processors
 import typings.xmlrpc.xmlrpcStrings.NotFound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("xmlrpc", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("xmlrpc", "CustomType")
   @js.native
@@ -27,81 +30,69 @@ object mod {
     var tagName: String = js.native
   }
   
-  @JSImport("xmlrpc", "createClient")
-  @js.native
-  def createClient(options: String): Client = js.native
-  @JSImport("xmlrpc", "createClient")
-  @js.native
-  def createClient(options: ClientOptions): Client = js.native
+  @scala.inline
+  def createClient(options: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
+  @scala.inline
+  def createClient(options: ClientOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @JSImport("xmlrpc", "createSecureClient")
-  @js.native
-  def createSecureClient(options: String): Client = js.native
-  @JSImport("xmlrpc", "createSecureClient")
-  @js.native
-  def createSecureClient(options: ClientOptions): Client = js.native
+  @scala.inline
+  def createSecureClient(options: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecureClient")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
+  @scala.inline
+  def createSecureClient(options: ClientOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecureClient")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @JSImport("xmlrpc", "createSecureServer")
-  @js.native
-  def createSecureServer(options: String): Server = js.native
-  @JSImport("xmlrpc", "createSecureServer")
-  @js.native
-  def createSecureServer(options: String, callback: js.Function0[Unit]): Server = js.native
-  @JSImport("xmlrpc", "createSecureServer")
-  @js.native
-  def createSecureServer(options: TlsOptions): Server = js.native
-  @JSImport("xmlrpc", "createSecureServer")
-  @js.native
-  def createSecureServer(options: TlsOptions, callback: js.Function0[Unit]): Server = js.native
+  @scala.inline
+  def createSecureServer(options: String): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
+  def createSecureServer(options: String, callback: js.Function0[Unit]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Server]
+  @scala.inline
+  def createSecureServer(options: TlsOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
+  def createSecureServer(options: TlsOptions, callback: js.Function0[Unit]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Server]
   
-  @JSImport("xmlrpc", "createServer")
-  @js.native
-  def createServer(options: String): Server = js.native
-  @JSImport("xmlrpc", "createServer")
-  @js.native
-  def createServer(options: String, callback: js.Function0[Unit]): Server = js.native
-  @JSImport("xmlrpc", "createServer")
-  @js.native
-  def createServer(options: ServerOptions): Server = js.native
-  @JSImport("xmlrpc", "createServer")
-  @js.native
-  def createServer(options: ServerOptions, callback: js.Function0[Unit]): Server = js.native
+  @scala.inline
+  def createServer(options: String): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
+  def createServer(options: String, callback: js.Function0[Unit]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Server]
+  @scala.inline
+  def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
+  def createServer(options: ServerOptions, callback: js.Function0[Unit]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Server]
   
   object dateFormatter {
     
-    @JSImport("xmlrpc", "dateFormatter.decodeIso8601")
+    @JSImport("xmlrpc", "dateFormatter")
     @js.native
-    def decodeIso8601(time: String): Date = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("xmlrpc", "dateFormatter.encodeIso8601")
-    @js.native
-    def encodeIso8601(date: Date): String = js.native
+    @scala.inline
+    def decodeIso8601(time: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeIso8601")(time.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @JSImport("xmlrpc", "dateFormatter.setOpts")
-    @js.native
-    def setOpts(opts: DateFormatterOptions): Unit = js.native
+    @scala.inline
+    def encodeIso8601(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeIso8601")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def setOpts(opts: DateFormatterOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpts")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait Client extends StObject {
     
-    var cookies: js.UndefOr[Cookies] = js.native
+    var cookies: js.UndefOr[Cookies] = js.undefined
     
-    def getCookie(name: String): String = js.native
+    def getCookie(name: String): String
     
-    var headersProcessors: Processors = js.native
+    var headersProcessors: Processors
     
-    var isSecure: Boolean = js.native
+    var isSecure: Boolean
     
     def methodCall(
       method: String,
-      params: js.Array[_],
+      params: js.Array[js.Any],
       callback: js.Function2[/* error */ js.Object, /* value */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit
     
-    var options: ClientOptions = js.native
+    var options: ClientOptions
     
-    def setCookie(name: String, value: String): this.type = js.native
+    def setCookie(name: String, value: String): this.type
   }
   object Client {
     
@@ -110,7 +101,7 @@ object mod {
       getCookie: String => String,
       headersProcessors: Processors,
       isSecure: Boolean,
-      methodCall: (String, js.Array[_], js.Function2[/* error */ js.Object, /* value */ js.Any, Unit]) => Unit,
+      methodCall: (String, js.Array[js.Any], js.Function2[/* error */ js.Object, /* value */ js.Any, Unit]) => Unit,
       options: ClientOptions,
       setCookie: (String, String) => Client
     ): Client = {
@@ -138,7 +129,7 @@ object mod {
       
       @scala.inline
       def setMethodCall(
-        value: (String, js.Array[_], js.Function2[/* error */ js.Object, /* value */ js.Any, Unit]) => Unit
+        value: (String, js.Array[js.Any], js.Function2[/* error */ js.Object, /* value */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "methodCall", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -149,24 +140,23 @@ object mod {
     }
   }
   
-  @js.native
   trait ClientOptions extends StObject {
     
-    var basic_auth: js.UndefOr[Pass] = js.native
+    var basic_auth: js.UndefOr[Pass] = js.undefined
     
-    var cookies: js.UndefOr[Boolean] = js.native
+    var cookies: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ClientOptions {
     
@@ -238,18 +228,17 @@ object mod {
     def set(name: String, value: String, options: Expires): Unit = js.native
   }
   
-  @js.native
   trait DateFormatterOptions extends StObject {
     
-    var colons: js.UndefOr[Boolean] = js.native
+    var colons: js.UndefOr[Boolean] = js.undefined
     
-    var hyphens: js.UndefOr[Boolean] = js.native
+    var hyphens: js.UndefOr[Boolean] = js.undefined
     
-    var local: js.UndefOr[Boolean] = js.native
+    var local: js.UndefOr[Boolean] = js.undefined
     
-    var ms: js.UndefOr[Boolean] = js.native
+    var ms: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Boolean] = js.native
+    var offset: js.UndefOr[Boolean] = js.undefined
   }
   object DateFormatterOptions {
     
@@ -296,12 +285,11 @@ object mod {
   
   type Headers = StringDictionary[String]
   
-  @js.native
   trait HeadersProcessor extends StObject {
     
-    def composeRequest(headers: Headers): Unit = js.native
+    def composeRequest(headers: Headers): Unit
     
-    def parseResponse(headers: Headers): Unit = js.native
+    def parseResponse(headers: Headers): Unit
   }
   object HeadersProcessor {
     
@@ -341,14 +329,13 @@ object mod {
   
   type ServerNotFoundFunction = js.Function2[/* methodName */ String, /* params */ js.Array[js.Any], Unit]
   
-  @js.native
   trait ServerOptions extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object ServerOptions {
     

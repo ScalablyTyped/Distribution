@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItem extends StObject {
   
   /** Work item-specific configuration as an opaque blob. */
-  var configuration: js.UndefOr[String] = js.native
+  var configuration: js.UndefOr[String] = js.undefined
   
   /** Identifies this WorkItem. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The initial index to use when reporting the status of the WorkItem. */
-  var initialReportIndex: js.UndefOr[String] = js.native
+  var initialReportIndex: js.UndefOr[String] = js.undefined
   
   /** Identifies the workflow job this WorkItem belongs to. */
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
   /** Time when the lease on this Work will expire. */
-  var leaseExpireTime: js.UndefOr[String] = js.native
+  var leaseExpireTime: js.UndefOr[String] = js.undefined
   
   /** Additional information for MapTask WorkItems. */
-  var mapTask: js.UndefOr[MapTask] = js.native
+  var mapTask: js.UndefOr[MapTask] = js.undefined
   
   /** Any required packages that need to be fetched in order to execute this WorkItem. */
-  var packages: js.UndefOr[js.Array[Package]] = js.native
+  var packages: js.UndefOr[js.Array[Package]] = js.undefined
   
   /** Identifies the cloud project this WorkItem belongs to. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Recommended reporting interval. */
-  var reportStatusInterval: js.UndefOr[String] = js.native
+  var reportStatusInterval: js.UndefOr[String] = js.undefined
   
   /** Additional information for SeqMapTask WorkItems. */
-  var seqMapTask: js.UndefOr[SeqMapTask] = js.native
+  var seqMapTask: js.UndefOr[SeqMapTask] = js.undefined
   
   /** Additional information for ShellTask WorkItems. */
-  var shellTask: js.UndefOr[ShellTask] = js.native
+  var shellTask: js.UndefOr[ShellTask] = js.undefined
   
   /** Additional information for source operation WorkItems. */
-  var sourceOperationTask: js.UndefOr[SourceOperationRequest] = js.native
+  var sourceOperationTask: js.UndefOr[SourceOperationRequest] = js.undefined
   
   /** Additional information for StreamingComputationTask WorkItems. */
-  var streamingComputationTask: js.UndefOr[StreamingComputationTask] = js.native
+  var streamingComputationTask: js.UndefOr[StreamingComputationTask] = js.undefined
   
   /** Additional information for StreamingConfigTask WorkItems. */
-  var streamingConfigTask: js.UndefOr[StreamingConfigTask] = js.native
+  var streamingConfigTask: js.UndefOr[StreamingConfigTask] = js.undefined
   
   /** Additional information for StreamingSetupTask WorkItems. */
-  var streamingSetupTask: js.UndefOr[StreamingSetupTask] = js.native
+  var streamingSetupTask: js.UndefOr[StreamingSetupTask] = js.undefined
 }
 object WorkItem {
   

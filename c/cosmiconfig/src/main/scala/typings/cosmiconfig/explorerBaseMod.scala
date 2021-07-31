@@ -8,10 +8,13 @@ import typings.cosmiconfig.typesMod.ExplorerOptionsSync
 import typings.cosmiconfig.typesMod.LoadedFileContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object explorerBaseMod {
+  
+  @JSImport("cosmiconfig/dist/ExplorerBase", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("cosmiconfig/dist/ExplorerBase", "ExplorerBase")
   @js.native
@@ -45,7 +48,6 @@ object explorerBaseMod {
     /* protected */ def validateFilePath(filepath: String): Unit = js.native
   }
   
-  @JSImport("cosmiconfig/dist/ExplorerBase", "getExtensionDescription")
-  @js.native
-  def getExtensionDescription(filepath: String): String = js.native
+  @scala.inline
+  def getExtensionDescription(filepath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensionDescription")(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
 }

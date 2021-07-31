@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object restApiMod {
@@ -26,7 +25,7 @@ object restApiMod {
       */
     def this(name: String) = this()
     def this(name: String, args: RestApiArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: RestApiArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -99,6 +98,10 @@ object restApiMod {
   /* static members */
   object RestApi {
     
+    @JSImport("@pulumi/aws/apigateway/restApi", "RestApi")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RestApi resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -108,75 +111,69 @@ object restApiMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/restApi", "RestApi.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RestApi = js.native
-    @JSImport("@pulumi/aws/apigateway/restApi", "RestApi.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RestApi = js.native
-    @JSImport("@pulumi/aws/apigateway/restApi", "RestApi.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RestApiState): RestApi = js.native
-    @JSImport("@pulumi/aws/apigateway/restApi", "RestApi.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RestApiState, opts: CustomResourceOptions): RestApi = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RestApi]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApi]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RestApiState): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RestApi]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RestApiState, opts: CustomResourceOptions): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApi]
     
     /**
       * Returns true if the given object is an instance of RestApi.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/restApi", "RestApi.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/restApi.RestApi */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/restApi.RestApi */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/restApi.RestApi */ Boolean]
   }
   
-  @js.native
   trait RestApiArgs extends StObject {
     
     /**
       * The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
       */
-    val apiKeySource: js.UndefOr[Input[String]] = js.native
+    val apiKeySource: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
       */
-    val binaryMediaTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val binaryMediaTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
       */
-    val body: js.UndefOr[Input[String]] = js.native
+    val body: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the REST API
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument defining API endpoint configuration including endpoint type. Defined below.
       */
-    val endpointConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.RestApiEndpointConfiguration]] = js.native
+    val endpointConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.RestApiEndpointConfiguration]] = js.undefined
     
     /**
       * Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
       */
-    val minimumCompressionSize: js.UndefOr[Input[Double]] = js.native
+    val minimumCompressionSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of the REST API
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * JSON formatted policy document that controls access to the API Gateway. This provider will only perform drift detection of its value when present in a configuration. It is recommended to use the `aws.apigateway.RestApiPolicy` resource instead.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RestApiArgs {
     
@@ -248,75 +245,74 @@ object restApiMod {
     }
   }
   
-  @js.native
   trait RestApiState extends StObject {
     
     /**
       * The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
       */
-    val apiKeySource: js.UndefOr[Input[String]] = js.native
+    val apiKeySource: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN)
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
       */
-    val binaryMediaTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val binaryMediaTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
       */
-    val body: js.UndefOr[Input[String]] = js.native
+    val body: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The creation date of the REST API
       */
-    val createdDate: js.UndefOr[Input[String]] = js.native
+    val createdDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the REST API
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument defining API endpoint configuration including endpoint type. Defined below.
       */
-    val endpointConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.RestApiEndpointConfiguration]] = js.native
+    val endpointConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.RestApiEndpointConfiguration]] = js.undefined
     
     /**
       * The execution ARN part to be used in `lambdaPermission`'s `sourceArn`
       * when allowing API Gateway to invoke a Lambda function,
       * e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
       */
-    val executionArn: js.UndefOr[Input[String]] = js.native
+    val executionArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
       */
-    val minimumCompressionSize: js.UndefOr[Input[Double]] = js.native
+    val minimumCompressionSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of the REST API
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * JSON formatted policy document that controls access to the API Gateway. This provider will only perform drift detection of its value when present in a configuration. It is recommended to use the `aws.apigateway.RestApiPolicy` resource instead.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The resource ID of the REST API's root
       */
-    val rootResourceId: js.UndefOr[Input[String]] = js.native
+    val rootResourceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RestApiState {
     

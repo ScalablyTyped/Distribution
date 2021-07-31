@@ -8,31 +8,29 @@ import typings.saucelabs.saucelabsStrings.staging
 import typings.saucelabs.saucelabsStrings.us
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SauceLabsOptions extends StObject {
   
   /**
     * If you want to set request headers, as example {'User-Agent': 'node-saucelabs'}
     */
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /**
     * If set to true you are accessing the headless Sauce instances (this discards the region option).
     */
-  var headless: js.UndefOr[Boolean] = js.native
+  var headless: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Your Sauce Labs access key.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * If you want to tunnel your API request through a proxy please provide your proxy URL.
     */
-  var proxy: js.UndefOr[String] = js.native
+  var proxy: js.UndefOr[String] = js.undefined
   
   /**
     * Your Sauce Labs datacenter region. The following regions are available:
@@ -41,12 +39,12 @@ trait SauceLabsOptions extends StObject {
     * - eu-central-1 (short 'eu')
     * - us-east-1 (headless)
     */
-  var region: js.UndefOr[us | eu | `us-west-1` | `us-east-1` | `eu-central-1` | staging] = js.native
+  var region: js.UndefOr[us | eu | `us-west-1` | `us-east-1` | `eu-central-1` | staging] = js.undefined
   
   /**
     * Your Sauce Labs username.
     */
-  var user: String = js.native
+  var user: String
 }
 object SauceLabsOptions {
   

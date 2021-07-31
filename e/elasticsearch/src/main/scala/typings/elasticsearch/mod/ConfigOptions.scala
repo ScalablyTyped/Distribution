@@ -4,57 +4,55 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.elasticsearch.httpMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigOptions extends StObject {
   
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
-  var connectionClass: js.UndefOr[String | (Instantiable2[/* host */ js.Any, /* config */ js.Any, ^])] = js.native
+  var connectionClass: js.UndefOr[String | (Instantiable2[/* host */ js.Any, /* config */ js.Any, ^])] = js.undefined
   
-  var createNodeAgent: js.UndefOr[js.Any] = js.native
+  var createNodeAgent: js.UndefOr[js.Any] = js.undefined
   
-  var deadTimeout: js.UndefOr[Double] = js.native
+  var deadTimeout: js.UndefOr[Double] = js.undefined
   
-  var defer: js.UndefOr[js.Function0[Unit]] = js.native
+  var defer: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var host: js.UndefOr[js.Any] = js.native
+  var host: js.UndefOr[js.Any] = js.undefined
   
-  var hosts: js.UndefOr[js.Any] = js.native
+  var hosts: js.UndefOr[js.Any] = js.undefined
   
-  var httpAuth: js.UndefOr[String] = js.native
+  var httpAuth: js.UndefOr[String] = js.undefined
   
-  var keepAlive: js.UndefOr[Boolean] = js.native
+  var keepAlive: js.UndefOr[Boolean] = js.undefined
   
-  var log: js.UndefOr[js.Any] = js.native
+  var log: js.UndefOr[js.Any] = js.undefined
   
-  var maxRetries: js.UndefOr[Double] = js.native
+  var maxRetries: js.UndefOr[Double] = js.undefined
   
-  var maxSockets: js.UndefOr[Double] = js.native
+  var maxSockets: js.UndefOr[Double] = js.undefined
   
-  var nodesToHostCallback: js.UndefOr[js.Any] = js.native
+  var nodesToHostCallback: js.UndefOr[js.Any] = js.undefined
   
-  var pingTimeout: js.UndefOr[Double] = js.native
+  var pingTimeout: js.UndefOr[Double] = js.undefined
   
-  var plugins: js.UndefOr[js.Any] = js.native
+  var plugins: js.UndefOr[js.Any] = js.undefined
   
-  var requestTimeout: js.UndefOr[Double] = js.native
+  var requestTimeout: js.UndefOr[Double] = js.undefined
   
-  var selector: js.UndefOr[js.Any] = js.native
+  var selector: js.UndefOr[js.Any] = js.undefined
   
-  var sniffInterval: js.UndefOr[Double] = js.native
+  var sniffInterval: js.UndefOr[Double] = js.undefined
   
-  var sniffOnConnectionFault: js.UndefOr[Boolean] = js.native
+  var sniffOnConnectionFault: js.UndefOr[Boolean] = js.undefined
   
-  var sniffOnStart: js.UndefOr[Boolean] = js.native
+  var sniffOnStart: js.UndefOr[Boolean] = js.undefined
   
-  var sniffedNodesProtocol: js.UndefOr[String] = js.native
+  var sniffedNodesProtocol: js.UndefOr[String] = js.undefined
   
-  var ssl: js.UndefOr[js.Object] = js.native
+  var ssl: js.UndefOr[js.Object] = js.undefined
   
-  var suggestCompression: js.UndefOr[Boolean] = js.native
+  var suggestCompression: js.UndefOr[Boolean] = js.undefined
 }
 object ConfigOptions {
   

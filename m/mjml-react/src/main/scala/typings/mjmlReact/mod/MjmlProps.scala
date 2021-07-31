@@ -2,15 +2,13 @@ package typings.mjmlReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlProps extends StObject {
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var owa: js.UndefOr[String] = js.native
+  var owa: js.UndefOr[String] = js.undefined
 }
 object MjmlProps {
   

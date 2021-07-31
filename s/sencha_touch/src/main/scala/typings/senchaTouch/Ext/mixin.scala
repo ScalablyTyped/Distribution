@@ -3,69 +3,71 @@ package typings.senchaTouch.Ext
 import typings.senchaTouch.Ext.data.IRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mixin {
   
   type IBindable = IMixin
   
-  @js.native
-  trait IFilterable extends IBase {
+  trait IFilterable
+    extends StObject
+       with IBase {
     
     /** [Method] This method adds a filter
       * @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
       */
-    var addFilter: js.UndefOr[js.Function1[/* filter */ js.UndefOr[js.Any], Unit]] = js.native
+    var addFilter: js.UndefOr[js.Function1[/* filter */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] This method adds all the filters in a passed array
       * @param filters Array An array with filters. A filter can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
       * @returns Object
       */
-    var addFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], _]] = js.native
+    var addFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], js.Any]] = js.undefined
     
     /** [Property] (Object) */
-    var currentSortFn: js.UndefOr[js.Any] = js.native
+    var currentSortFn: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Boolean) */
-    var dirtyFilterFn: js.UndefOr[Boolean] = js.native
+    var dirtyFilterFn: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] This method will sort an array based on the currently configured sorters
       * @param data Array The array you want to have sorted.
       * @returns Array The array you passed after it is sorted.
       */
-    var filter: js.UndefOr[js.Function1[/* data */ js.UndefOr[Array], Array]] = js.native
+    var filter: js.UndefOr[js.Function1[/* data */ js.UndefOr[Array], Array]] = js.undefined
     
     /** [Config Option] (String) */
-    var filterRoot: js.UndefOr[java.lang.String] = js.native
+    var filterRoot: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Boolean) */
-    var filtered: js.UndefOr[Boolean] = js.native
+    var filtered: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Array) */
-    var filters: js.UndefOr[Array] = js.native
+    var filters: js.UndefOr[Array] = js.undefined
     
     /** [Method] Returns an up to date sort function
       * @returns Function sortFn The sort function.
       */
-    var getFilterFn: js.UndefOr[js.Function0[_]] = js.native
+    var getFilterFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of filterRoot
       * @returns String
       */
-    var getFilterRoot: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getFilterRoot: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of filters
       * @returns Array
       */
-    var getFilters: js.UndefOr[js.Function0[Array]] = js.native
+    var getFilters: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] This method adds a filter at a given index
       * @param index Number The index at which to insert the filter.
       * @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
       * @returns Object
       */
-    var insertFilter: js.UndefOr[js.Function2[/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[js.Any], _]] = js.native
+    var insertFilter: js.UndefOr[
+        js.Function2[/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[js.Any], js.Any]
+      ] = js.undefined
     
     /** [Method] This method inserts all the filters in the passed array at the given index
       * @param index Number The index at which to insert the filters.
@@ -74,22 +76,22 @@ object mixin {
       */
     var insertFilters: js.UndefOr[
         js.Function2[/* index */ js.UndefOr[Double], /* filters */ js.UndefOr[Array], Array]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] This method removes all the filters in a passed array
       * @param filters Array Each value in the array can be a string (property name), function (sorterFn), an object containing a property and value keys or Sorter instance.
       */
-    var removeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], Unit]] = js.native
+    var removeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of filterRoot
       * @param filterRoot String The new value.
       */
-    var setFilterRoot: js.UndefOr[js.Function1[/* filterRoot */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setFilterRoot: js.UndefOr[js.Function1[/* filterRoot */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of filters
       * @param filters Array The new value.
       */
-    var setFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], Unit]] = js.native
+    var setFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], Unit]] = js.undefined
   }
   object IFilterable {
     
@@ -109,7 +111,7 @@ object mixin {
       def setAddFilterUndefined: Self = StObject.set(x, "addFilter", js.undefined)
       
       @scala.inline
-      def setAddFilters(value: /* filters */ js.UndefOr[Array] => _): Self = StObject.set(x, "addFilters", js.Any.fromFunction1(value))
+      def setAddFilters(value: /* filters */ js.UndefOr[Array] => js.Any): Self = StObject.set(x, "addFilters", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAddFiltersUndefined: Self = StObject.set(x, "addFilters", js.undefined)
@@ -151,7 +153,7 @@ object mixin {
       def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
       @scala.inline
-      def setGetFilterFn(value: () => _): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
+      def setGetFilterFn(value: () => js.Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetFilterFnUndefined: Self = StObject.set(x, "getFilterFn", js.undefined)
@@ -169,7 +171,7 @@ object mixin {
       def setGetFiltersUndefined: Self = StObject.set(x, "getFilters", js.undefined)
       
       @scala.inline
-      def setInsertFilter(value: (/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "insertFilter", js.Any.fromFunction2(value))
+      def setInsertFilter(value: (/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "insertFilter", js.Any.fromFunction2(value))
       
       @scala.inline
       def setInsertFilterUndefined: Self = StObject.set(x, "insertFilter", js.undefined)
@@ -200,13 +202,14 @@ object mixin {
     }
   }
   
-  @js.native
-  trait IIdentifiable extends IBase {
+  trait IIdentifiable
+    extends StObject
+       with IBase {
     
     /** [Method] Retrieves the id of this component
       * @returns any id
       */
-    var getId: js.UndefOr[js.Function0[_]] = js.native
+    var getId: js.UndefOr[js.Function0[js.Any]] = js.undefined
   }
   object IIdentifiable {
     
@@ -220,7 +223,7 @@ object mixin {
     implicit class IIdentifiableMutableBuilder[Self <: IIdentifiable] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetId(value: () => _): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
@@ -229,8 +232,9 @@ object mixin {
   
   type IMixin = IBase
   
-  @js.native
-  trait IObservable extends IIdentifiable {
+  trait IObservable
+    extends StObject
+       with IIdentifiable {
     
     /** [Method] Appends an after event handler
       * @param eventName String/String[]/Object The name of the event to listen for.
@@ -246,7 +250,7 @@ object mixin {
           /* options */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Appends a before event handler
       * @param eventName String/String[]/Object The name of the event to listen for.
@@ -262,12 +266,12 @@ object mixin {
           /* options */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Adds the specified events to the list of events which this Observable may fire
       * @param eventNames Object/String... Either an object with event names as properties with a value of true or the first event name string if multiple event names are being passed as separate parameters.
       */
-    var addEvents: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.native
+    var addEvents: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Appends an event handler to this object
       * @param eventName String/String[]/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -285,7 +289,7 @@ object mixin {
           /* order */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Adds listeners to any Observable object or Element which are automatically removed when this Component is destroyed
       * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -303,18 +307,18 @@ object mixin {
           /* options */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var bubbleEvents: js.UndefOr[js.Any] = js.native
+    var bubbleEvents: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Removes all listeners for this object  */
-    var clearListeners: js.UndefOr[js.Function0[Unit]] = js.native
+    var clearListeners: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
       * @param events String/String[] The event name to bubble, or an Array of event names.
       */
-    var enableBubble: js.UndefOr[js.Function1[/* events */ js.UndefOr[js.Any], Unit]] = js.native
+    var enableBubble: js.UndefOr[js.Function1[/* events */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Fires the specified event with the passed parameters and execute a function action at the end if there are no liste
       * @param eventName String The name of the event to fire.
@@ -329,35 +333,35 @@ object mixin {
           /* args */ js.UndefOr[Array], 
           /* fn */ js.UndefOr[js.Any], 
           /* scope */ js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
       * @param eventName String The name of the event to fire.
       * @param args Object... Variable number of parameters are passed to handlers.
       * @returns Boolean Returns false if any of the handlers return false.
       */
-    var fireEvent: js.UndefOr[js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, Boolean]] = js.native
+    var fireEvent: js.UndefOr[js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, Boolean]] = js.undefined
     
     /** [Method] Returns the value of bubbleEvents
       * @returns String/String[]
       */
-    var getBubbleEvents: js.UndefOr[js.Function0[_]] = js.native
+    var getBubbleEvents: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of listeners
       * @returns Object
       */
-    var getListeners: js.UndefOr[js.Function0[_]] = js.native
+    var getListeners: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Checks to see if this object has any listeners for a specified event
       * @param eventName String The name of the event to check for
       * @returns Boolean True if the event is being listened for, else false
       */
-    var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[java.lang.String], Boolean]] = js.native
+    var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
     
     /** [Config Option] (Object) */
-    var listeners: js.UndefOr[js.Any] = js.native
+    var listeners: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Alias for addManagedListener
       * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -375,7 +379,7 @@ object mixin {
           /* options */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Alias for removeManagedListener
       * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -391,7 +395,7 @@ object mixin {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Alias for addListener
       * @param eventName String/String[]/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -409,7 +413,7 @@ object mixin {
           /* order */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Alias for addAfterListener
       * @param eventName String/String[]/Object The name of the event to listen for.
@@ -425,7 +429,7 @@ object mixin {
           /* options */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Alias for addBeforeListener
       * @param eventName String/String[]/Object The name of the event to listen for.
@@ -441,7 +445,7 @@ object mixin {
           /* options */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -450,7 +454,7 @@ object mixin {
       */
     var relayEvents: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], this.type]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Removes a before event handler
       * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -466,7 +470,7 @@ object mixin {
           /* options */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Removes a before event handler
       * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -482,7 +486,7 @@ object mixin {
           /* options */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Removes an event handler
       * @param eventName String/String[]/Object The type of event the handler was associated with.
@@ -500,7 +504,7 @@ object mixin {
           /* order */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Adds listeners to any Observable object or Element which are automatically removed when this Component is destroyed
       * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -516,25 +520,25 @@ object mixin {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Resumes firing events see suspendEvents
       * @param discardQueuedEvents Boolean Pass as true to discard any queued events.
       */
-    var resumeEvents: js.UndefOr[js.Function1[/* discardQueuedEvents */ js.UndefOr[Boolean], Unit]] = js.native
+    var resumeEvents: js.UndefOr[js.Function1[/* discardQueuedEvents */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of bubbleEvents
       * @param bubbleEvents String/String[] The new value.
       */
-    var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[js.Any], Unit]] = js.native
+    var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of listeners
       * @param listeners Object The new value.
       */
-    var setListeners: js.UndefOr[js.Function1[/* listeners */ js.UndefOr[js.Any], Unit]] = js.native
+    var setListeners: js.UndefOr[js.Function1[/* listeners */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Suspends the firing of all events  */
-    var suspendEvents: js.UndefOr[js.Function0[Unit]] = js.native
+    var suspendEvents: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Alias for removeListener
       * @param eventName String/String[]/Object The type of event the handler was associated with.
@@ -552,7 +556,7 @@ object mixin {
           /* order */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Alias for removeAfterListener
       * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -568,7 +572,7 @@ object mixin {
           /* options */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Alias for removeBeforeListener
       * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -584,7 +588,7 @@ object mixin {
           /* options */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IObservable {
     
@@ -655,7 +659,7 @@ object mixin {
       
       @scala.inline
       def setFireAction(
-        value: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _
+        value: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "fireAction", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -668,13 +672,13 @@ object mixin {
       def setFireEventUndefined: Self = StObject.set(x, "fireEvent", js.undefined)
       
       @scala.inline
-      def setGetBubbleEvents(value: () => _): Self = StObject.set(x, "getBubbleEvents", js.Any.fromFunction0(value))
+      def setGetBubbleEvents(value: () => js.Any): Self = StObject.set(x, "getBubbleEvents", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBubbleEventsUndefined: Self = StObject.set(x, "getBubbleEvents", js.undefined)
       
       @scala.inline
-      def setGetListeners(value: () => _): Self = StObject.set(x, "getListeners", js.Any.fromFunction0(value))
+      def setGetListeners(value: () => js.Any): Self = StObject.set(x, "getListeners", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetListenersUndefined: Self = StObject.set(x, "getListeners", js.undefined)
@@ -819,86 +823,87 @@ object mixin {
     }
   }
   
-  @js.native
-  trait IProgressable extends IBase {
+  trait IProgressable
+    extends StObject
+       with IBase {
     
     /** [Config Option] (Boolean) */
-    var dynamic: js.UndefOr[Boolean] = js.native
+    var dynamic: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the value of dynamic
       * @returns Boolean
       */
-    var getDynamic: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getDynamic: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of maxProgressInput
       * @returns Number
       */
-    var getMaxProgressInput: js.UndefOr[js.Function0[Double]] = js.native
+    var getMaxProgressInput: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of maxProgressOutput
       * @returns Number
       */
-    var getMaxProgressOutput: js.UndefOr[js.Function0[Double]] = js.native
+    var getMaxProgressOutput: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of minProgressInput
       * @returns Number
       */
-    var getMinProgressInput: js.UndefOr[js.Function0[Double]] = js.native
+    var getMinProgressInput: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of minProgressOutput
       * @returns Number
       */
-    var getMinProgressOutput: js.UndefOr[js.Function0[Double]] = js.native
+    var getMinProgressOutput: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of state
       * @returns String
       */
-    var getState: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getState: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Config Option] (Number) */
-    var maxProgressInput: js.UndefOr[Double] = js.native
+    var maxProgressInput: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var maxProgressOutput: js.UndefOr[Double] = js.native
+    var maxProgressOutput: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minProgressInput: js.UndefOr[Double] = js.native
+    var minProgressInput: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minProgressOutput: js.UndefOr[Double] = js.native
+    var minProgressOutput: js.UndefOr[Double] = js.undefined
     
     /** [Method] Sets the value of dynamic
       * @param dynamic Boolean The new value.
       */
-    var setDynamic: js.UndefOr[js.Function1[/* dynamic */ js.UndefOr[Boolean], Unit]] = js.native
+    var setDynamic: js.UndefOr[js.Function1[/* dynamic */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of maxProgressInput
       * @param maxProgressInput Number The new value.
       */
-    var setMaxProgressInput: js.UndefOr[js.Function1[/* maxProgressInput */ js.UndefOr[Double], Unit]] = js.native
+    var setMaxProgressInput: js.UndefOr[js.Function1[/* maxProgressInput */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of maxProgressOutput
       * @param maxProgressOutput Number The new value.
       */
-    var setMaxProgressOutput: js.UndefOr[js.Function1[/* maxProgressOutput */ js.UndefOr[Double], Unit]] = js.native
+    var setMaxProgressOutput: js.UndefOr[js.Function1[/* maxProgressOutput */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of minProgressInput
       * @param minProgressInput Number The new value.
       */
-    var setMinProgressInput: js.UndefOr[js.Function1[/* minProgressInput */ js.UndefOr[Double], Unit]] = js.native
+    var setMinProgressInput: js.UndefOr[js.Function1[/* minProgressInput */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of minProgressOutput
       * @param minProgressOutput Number The new value.
       */
-    var setMinProgressOutput: js.UndefOr[js.Function1[/* minProgressOutput */ js.UndefOr[Double], Unit]] = js.native
+    var setMinProgressOutput: js.UndefOr[js.Function1[/* minProgressOutput */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of state
       * @param state String The new value.
       */
-    var setState: js.UndefOr[js.Function1[/* state */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setState: js.UndefOr[js.Function1[/* state */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var state: js.UndefOr[java.lang.String] = js.native
+    var state: js.UndefOr[java.lang.String] = js.undefined
   }
   object IProgressable {
     
@@ -1021,14 +1026,15 @@ object mixin {
     }
   }
   
-  @js.native
-  trait ISelectable extends IBase {
+  trait ISelectable
+    extends StObject
+       with IBase {
     
     /** [Config Option] (Boolean) */
-    var allowDeselect: js.UndefOr[Boolean] = js.native
+    var allowDeselect: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Deselects any currently selected records and clears all stored selections  */
-    var clearSelections: js.UndefOr[js.Function0[Unit]] = js.native
+    var clearSelections: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Deselects the given record s
       * @param records Number/Array/Ext.data.Model The record(s) to deselect. Can also be a number to reference by index.
@@ -1036,18 +1042,18 @@ object mixin {
       */
     var deselect: js.UndefOr[
         js.Function2[/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Deselects all records
       * @param supress Object
       */
-    var deselectAll: js.UndefOr[js.Function1[/* supress */ js.UndefOr[js.Any], Unit]] = js.native
+    var deselectAll: js.UndefOr[js.Function1[/* supress */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var deselectOnContainerClick: js.UndefOr[Boolean] = js.native
+    var deselectOnContainerClick: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var disableSelection: js.UndefOr[Boolean] = js.native
+    var disableSelection: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Deselects a record instance by record instance or index
       * @param records Ext.data.Model/Number An array of records or an index.
@@ -1055,7 +1061,7 @@ object mixin {
       */
     var doDeselect: js.UndefOr[
         js.Function2[/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Selects a record instance by record instance or index
       * @param records Ext.data.Model/Number An array of records or an index.
@@ -1069,74 +1075,74 @@ object mixin {
           /* suppressEvent */ js.UndefOr[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of allowDeselect
       * @returns Boolean
       */
-    var getAllowDeselect: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAllowDeselect: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the number of selections
       * @returns Number
       */
-    var getCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of deselectOnContainerClick
       * @returns Boolean
       */
-    var getDeselectOnContainerClick: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getDeselectOnContainerClick: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of disableSelection
       * @returns Boolean
       */
-    var getDisableSelection: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getDisableSelection: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the array of previously selected items
       * @returns Array The previous selection.
       */
-    var getLastSelected: js.UndefOr[js.Function0[Array]] = js.native
+    var getLastSelected: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of mode
       * @returns String
       */
-    var getMode: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getMode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns an array of the currently selected records
       * @returns Array An array of selected records.
       */
-    var getSelection: js.UndefOr[js.Function0[Array]] = js.native
+    var getSelection: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the number of selections
       * @returns Number
       */
-    var getSelectionCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getSelectionCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the selection mode currently used by this Selectable
       * @returns String The current mode.
       */
-    var getSelectionMode: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getSelectionMode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns true if there is a selected record
       * @returns Boolean
       */
-    var hasSelection: js.UndefOr[js.Function0[Boolean]] = js.native
+    var hasSelection: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns true if the Selectable is currently locked
       * @returns Boolean True if currently locked
       */
-    var isLocked: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isLocked: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns true if the specified row is selected
       * @param record Ext.data.Model/Number The record or index of the record to check.
       * @returns Boolean
       */
-    var isSelected: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], Boolean]] = js.native
+    var isSelected: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], Boolean]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var locked: js.UndefOr[Boolean] = js.native
+    var locked: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var mode: js.UndefOr[java.lang.String] = js.native
+    var mode: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Adds the given records to the currently selected set
       * @param records Ext.data.Model/Array/Number The records to select.
@@ -1150,12 +1156,12 @@ object mixin {
           /* suppressEvent */ js.UndefOr[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Selects all records
       * @param silent Boolean true to suppress all select events.
       */
-    var selectAll: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.native
+    var selectAll: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Selects a range of rows if the selection model getDisableSelection is not locked
       * @param startRecord Number The index of the first row in the range.
@@ -1169,30 +1175,30 @@ object mixin {
           /* keepExisting */ js.UndefOr[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of allowDeselect
       * @param allowDeselect Boolean The new value.
       */
-    var setAllowDeselect: js.UndefOr[js.Function1[/* allowDeselect */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAllowDeselect: js.UndefOr[js.Function1[/* allowDeselect */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of deselectOnContainerClick
       * @param deselectOnContainerClick Boolean The new value.
       */
-    var setDeselectOnContainerClick: js.UndefOr[js.Function1[/* deselectOnContainerClick */ js.UndefOr[Boolean], Unit]] = js.native
+    var setDeselectOnContainerClick: js.UndefOr[js.Function1[/* deselectOnContainerClick */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of disableSelection
       * @param disableSelection Boolean The new value.
       */
-    var setDisableSelection: js.UndefOr[js.Function1[/* disableSelection */ js.UndefOr[Boolean], Unit]] = js.native
+    var setDisableSelection: js.UndefOr[js.Function1[/* disableSelection */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] This was an internal function accidentally exposed in 1 x and now deprecated  */
-    var setLastFocused: js.UndefOr[js.Function0[Unit]] = js.native
+    var setLastFocused: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Sets the value of mode
       * @param mode String The new value.
       */
-    var setMode: js.UndefOr[js.Function1[/* mode */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setMode: js.UndefOr[js.Function1[/* mode */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets a record as the last focused record
       * @param newRecord Ext.data.Record
@@ -1200,7 +1206,7 @@ object mixin {
       */
     var updateLastFocused: js.UndefOr[
         js.Function2[/* newRecord */ js.UndefOr[IRecord], /* oldRecord */ js.UndefOr[IRecord], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object ISelectable {
     
@@ -1407,8 +1413,9 @@ object mixin {
     }
   }
   
-  @js.native
-  trait ISortable extends IBase {
+  trait ISortable
+    extends StObject
+       with IBase {
     
     /** [Method] This method adds a sorter
       * @param sorter Ext.util.Sorter/String/Function/Object Can be an instance of Ext.util.Sorter, a string indicating a property name, an object representing an Ext.util.Sorter configuration, or a sort function.
@@ -1420,7 +1427,7 @@ object mixin {
           /* defaultDirection */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] This method adds all the sorters in a passed array
       * @param sorters Array An array with sorters. A sorter can be an instance of Ext.util.Sorter, a string indicating a property name, an object representing an Ext.util.Sorter configuration, or a sort function.
@@ -1432,16 +1439,16 @@ object mixin {
           /* defaultDirection */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Property] (Object) */
-    var currentSortFn: js.UndefOr[js.Any] = js.native
+    var currentSortFn: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var defaultSortDirection: js.UndefOr[java.lang.String] = js.native
+    var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Boolean) */
-    var dirtySortFn: js.UndefOr[Boolean] = js.native
+    var dirtySortFn: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] This method returns the index that a given item would be inserted into a given array based on the current sorters
       * @param items Array The array that you want to insert the item into.
@@ -1450,27 +1457,27 @@ object mixin {
       */
     var findInsertionIndex: js.UndefOr[
         js.Function2[/* items */ js.UndefOr[Array], /* item */ js.UndefOr[js.Any], Double]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of defaultSortDirection
       * @returns String
       */
-    var getDefaultSortDirection: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getDefaultSortDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns an up to date sort function
       * @returns Function The sort function.
       */
-    var getSortFn: js.UndefOr[js.Function0[_]] = js.native
+    var getSortFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of sortRoot
       * @returns String
       */
-    var getSortRoot: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getSortRoot: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of sorters
       * @returns Array
       */
-    var getSorters: js.UndefOr[js.Function0[Array]] = js.native
+    var getSorters: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] This method adds a sorter at a given index
       * @param index Number The index at which to insert the sorter.
@@ -1484,7 +1491,7 @@ object mixin {
           /* defaultDirection */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] This method inserts all the sorters in the passed array at the given index
       * @param index Number The index at which to insert the sorters.
@@ -1498,47 +1505,47 @@ object mixin {
           /* defaultDirection */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] This method removes a sorter
       * @param sorter Ext.util.Sorter/String/Function/Object Can be an instance of Ext.util.Sorter, a string indicating a property name, an object representing an Ext.util.Sorter configuration, or a sort function.
       */
-    var removeSorter: js.UndefOr[js.Function1[/* sorter */ js.UndefOr[js.Any], Unit]] = js.native
+    var removeSorter: js.UndefOr[js.Function1[/* sorter */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] This method removes all the sorters in a passed array
       * @param sorters Array Each value in the array can be a string (property name), function (sorterFn) or Sorter instance.
       */
-    var removeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], Unit]] = js.native
+    var removeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of defaultSortDirection
       * @param defaultSortDirection String The new value.
       */
-    var setDefaultSortDirection: js.UndefOr[js.Function1[/* defaultSortDirection */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setDefaultSortDirection: js.UndefOr[js.Function1[/* defaultSortDirection */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of sortRoot
       * @param sortRoot String The new value.
       */
-    var setSortRoot: js.UndefOr[js.Function1[/* sortRoot */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setSortRoot: js.UndefOr[js.Function1[/* sortRoot */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of sorters
       * @param sorters Array The new value.
       */
-    var setSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], Unit]] = js.native
+    var setSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] This method will sort an array based on the currently configured sorters
       * @param data Array The array you want to have sorted.
       * @returns Array The array you passed after it is sorted.
       */
-    var sort: js.UndefOr[js.Function1[/* data */ js.UndefOr[Array], Array]] = js.native
+    var sort: js.UndefOr[js.Function1[/* data */ js.UndefOr[Array], Array]] = js.undefined
     
     /** [Config Option] (String) */
-    var sortRoot: js.UndefOr[java.lang.String] = js.native
+    var sortRoot: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Boolean) */
-    var sorted: js.UndefOr[Boolean] = js.native
+    var sorted: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Array) */
-    var sorters: js.UndefOr[Array] = js.native
+    var sorters: js.UndefOr[Array] = js.undefined
   }
   object ISortable {
     
@@ -1598,7 +1605,7 @@ object mixin {
       def setGetDefaultSortDirectionUndefined: Self = StObject.set(x, "getDefaultSortDirection", js.undefined)
       
       @scala.inline
-      def setGetSortFn(value: () => _): Self = StObject.set(x, "getSortFn", js.Any.fromFunction0(value))
+      def setGetSortFn(value: () => js.Any): Self = StObject.set(x, "getSortFn", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetSortFnUndefined: Self = StObject.set(x, "getSortFn", js.undefined)

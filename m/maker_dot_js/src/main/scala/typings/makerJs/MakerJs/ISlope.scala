@@ -2,34 +2,32 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Slope and y-intercept of a line.
   */
-@js.native
 trait ISlope extends StObject {
   
   /**
     * Boolean to see if line has slope or is vertical.
     */
-  var hasSlope: Boolean = js.native
+  var hasSlope: Boolean
   
   /**
     * Line used to calculate this slope.
     */
-  var line: IPathLine = js.native
+  var line: IPathLine
   
   /**
     * Optional value of non-vertical slope.
     */
-  var slope: js.UndefOr[Double] = js.native
+  var slope: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional value of y when x = 0.
     */
-  var yIntercept: js.UndefOr[Double] = js.native
+  var yIntercept: js.UndefOr[Double] = js.undefined
 }
 object ISlope {
   

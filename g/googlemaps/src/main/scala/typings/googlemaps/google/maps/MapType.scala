@@ -4,29 +4,27 @@ import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapType extends StObject {
   
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
-  def getTile(tileCoord: Point, zoom: Double, ownerDocument: Document): Element = js.native
+  def getTile(tileCoord: Point, zoom: Double, ownerDocument: Document): Element
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var projection: js.UndefOr[Projection] = js.native
+  var projection: js.UndefOr[Projection] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  def releaseTile(tile: Element): Unit = js.native
+  def releaseTile(tile: Element): Unit
   
-  var tileSize: js.UndefOr[Size] = js.native
+  var tileSize: js.UndefOr[Size] = js.undefined
 }
 object MapType {
   

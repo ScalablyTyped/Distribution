@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration extends StObject {
   
   /**
     * Describes the [Lambda function](https://www.terraform.io/docs/providers/aws/r/lambda_function.html) that is used to preprocess the records in the stream before being processed by your application code.
     */
-  var inputLambdaProcessor: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor = js.native
+  var inputLambdaProcessor: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration {
   

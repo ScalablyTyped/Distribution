@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,26 +15,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface allows generic services to navigate between arbitrary elements of a connection.
   */
-@js.native
-trait XConnectable extends XInterface {
+trait XConnectable
+  extends StObject
+     with XInterface {
   
   /** @returns the predecessor of this object. */
-  var Predecessor: XConnectable = js.native
+  var Predecessor: XConnectable
   
   /** @returns the successor of this object. */
-  var Successor: XConnectable = js.native
+  var Successor: XConnectable
   
   /** @returns the predecessor of this object. */
-  def getPredecessor(): XConnectable = js.native
+  def getPredecessor(): XConnectable
   
   /** @returns the successor of this object. */
-  def getSuccessor(): XConnectable = js.native
+  def getSuccessor(): XConnectable
   
   /** sets the source of the data flow for this object. */
-  def setPredecessor(aPredecessor: XConnectable): Unit = js.native
+  def setPredecessor(aPredecessor: XConnectable): Unit
   
   /** sets the sink of the data flow for this object. */
-  def setSuccessor(aSuccessor: XConnectable): Unit = js.native
+  def setSuccessor(aSuccessor: XConnectable): Unit
 }
 object XConnectable {
   

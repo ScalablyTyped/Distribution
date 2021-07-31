@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Networking.XboxLive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-@js.native
 trait XboxLiveQualityOfServiceMetricResult extends StObject {
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var deviceAddress: XboxLiveDeviceAddress = js.native
+  var deviceAddress: XboxLiveDeviceAddress
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var metric: XboxLiveQualityOfServiceMetric = js.native
+  var metric: XboxLiveQualityOfServiceMetric
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var status: XboxLiveQualityOfServiceMeasurementStatus = js.native
+  var status: XboxLiveQualityOfServiceMeasurementStatus
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var value: Double = js.native
+  var value: Double
 }
 object XboxLiveQualityOfServiceMetricResult {
   

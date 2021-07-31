@@ -15,66 +15,59 @@ import typings.reactRouter.mod.SwitchProps
 import typings.reactRouter.mod.`match`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-router-config", "matchRoutes")
+  @JSImport("react-router-config", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def matchRoutes[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.reactRouterConfig.reactRouterConfigStrings.matchRoutes with TopLevel[js.Any] */](routes: js.Array[RouteConfig], pathname: String): js.Array[MatchedRoute[Params]] = js.native
+    */ typings.reactRouterConfig.reactRouterConfigStrings.matchRoutes & TopLevel[js.Any] */](routes: js.Array[RouteConfig], pathname: String): js.Array[MatchedRoute[Params]] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any])).asInstanceOf[js.Array[MatchedRoute[Params]]]
   
-  @JSImport("react-router-config", "renderRoutes")
-  @js.native
-  def renderRoutes(): Element = js.native
-  @JSImport("react-router-config", "renderRoutes")
-  @js.native
-  def renderRoutes(routes: js.UndefOr[scala.Nothing], extraProps: js.UndefOr[scala.Nothing], switchProps: SwitchProps): Element = js.native
-  @JSImport("react-router-config", "renderRoutes")
-  @js.native
-  def renderRoutes(routes: js.UndefOr[scala.Nothing], extraProps: js.Any): Element = js.native
-  @JSImport("react-router-config", "renderRoutes")
-  @js.native
-  def renderRoutes(routes: js.UndefOr[scala.Nothing], extraProps: js.Any, switchProps: SwitchProps): Element = js.native
-  @JSImport("react-router-config", "renderRoutes")
-  @js.native
-  def renderRoutes(routes: js.Array[RouteConfig]): Element = js.native
-  @JSImport("react-router-config", "renderRoutes")
-  @js.native
-  def renderRoutes(routes: js.Array[RouteConfig], extraProps: js.UndefOr[scala.Nothing], switchProps: SwitchProps): Element = js.native
-  @JSImport("react-router-config", "renderRoutes")
-  @js.native
-  def renderRoutes(routes: js.Array[RouteConfig], extraProps: js.Any): Element = js.native
-  @JSImport("react-router-config", "renderRoutes")
-  @js.native
-  def renderRoutes(routes: js.Array[RouteConfig], extraProps: js.Any, switchProps: SwitchProps): Element = js.native
+  @scala.inline
+  def renderRoutes(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("renderRoutes")().asInstanceOf[Element]
+  @scala.inline
+  def renderRoutes(routes: js.Array[RouteConfig]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("renderRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @scala.inline
+  def renderRoutes(routes: js.Array[RouteConfig], extraProps: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("renderRoutes")(routes.asInstanceOf[js.Any], extraProps.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def renderRoutes(routes: js.Array[RouteConfig], extraProps: js.Any, switchProps: SwitchProps): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("renderRoutes")(routes.asInstanceOf[js.Any], extraProps.asInstanceOf[js.Any], switchProps.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def renderRoutes(routes: js.Array[RouteConfig], extraProps: Unit, switchProps: SwitchProps): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("renderRoutes")(routes.asInstanceOf[js.Any], extraProps.asInstanceOf[js.Any], switchProps.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def renderRoutes(routes: Unit, extraProps: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("renderRoutes")(routes.asInstanceOf[js.Any], extraProps.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def renderRoutes(routes: Unit, extraProps: js.Any, switchProps: SwitchProps): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("renderRoutes")(routes.asInstanceOf[js.Any], extraProps.asInstanceOf[js.Any], switchProps.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def renderRoutes(routes: Unit, extraProps: Unit, switchProps: SwitchProps): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("renderRoutes")(routes.asInstanceOf[js.Any], extraProps.asInstanceOf[js.Any], switchProps.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @js.native
   trait MatchedRoute[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.reactRouterConfig.reactRouterConfigStrings.MatchedRoute with TopLevel[js.Any] */] extends StObject {
+    */ typings.reactRouterConfig.reactRouterConfigStrings.MatchedRoute & TopLevel[js.Any] */] extends StObject {
     
-    var `match`: typings.reactRouter.mod.`match`[Params] = js.native
+    var `match`: typings.reactRouter.mod.`match`[Params]
     
-    var route: RouteConfig = js.native
+    var route: RouteConfig
   }
   object MatchedRoute {
     
     @scala.inline
     def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reactRouterConfig.reactRouterConfigStrings.MatchedRoute with TopLevel[js.Any] */](`match`: `match`[Params], route: RouteConfig): MatchedRoute[Params] = {
+      */ typings.reactRouterConfig.reactRouterConfigStrings.MatchedRoute & TopLevel[js.Any] */](`match`: `match`[Params], route: RouteConfig): MatchedRoute[Params] = {
       val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchedRoute[Params]]
     }
     
     @scala.inline
-    implicit class MatchedRouteMutableBuilder[Self <: MatchedRoute[_], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    implicit class MatchedRouteMutableBuilder[Self <: MatchedRoute[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reactRouterConfig.reactRouterConfigStrings.MatchedRoute with TopLevel[js.Any] */] (val x: Self with MatchedRoute[Params]) extends AnyVal {
+      */ typings.reactRouterConfig.reactRouterConfigStrings.MatchedRoute & TopLevel[js.Any] */] (val x: Self & MatchedRoute[Params]) extends AnyVal {
       
       @scala.inline
       def setMatch(value: `match`[Params]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
@@ -84,25 +77,25 @@ object mod {
     }
   }
   
-  @js.native
   trait RouteConfig
-    extends /* propName */ StringDictionary[js.Any] {
+    extends StObject
+       with /* propName */ StringDictionary[js.Any] {
     
-    var component: js.UndefOr[ComponentType[js.Object | RouteConfigComponentProps[_]]] = js.native
+    var component: js.UndefOr[ComponentType[js.Object | RouteConfigComponentProps[js.Any]]] = js.undefined
     
-    var exact: js.UndefOr[Boolean] = js.native
+    var exact: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var location: js.UndefOr[Location[LocationState]] = js.native
+    var location: js.UndefOr[Location[LocationState]] = js.undefined
     
-    var path: js.UndefOr[String | js.Array[String]] = js.native
+    var path: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* props */ RouteConfigComponentProps[_], ReactNode]] = js.native
+    var render: js.UndefOr[js.Function1[/* props */ RouteConfigComponentProps[js.Any], ReactNode]] = js.undefined
     
-    var routes: js.UndefOr[js.Array[RouteConfig]] = js.native
+    var routes: js.UndefOr[js.Array[RouteConfig]] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object RouteConfig {
     
@@ -116,7 +109,7 @@ object mod {
     implicit class RouteConfigMutableBuilder[Self <: RouteConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponent(value: ComponentType[js.Object | RouteConfigComponentProps[_]]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ComponentType[js.Object | RouteConfigComponentProps[js.Any]]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
@@ -149,7 +142,7 @@ object mod {
       def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
       
       @scala.inline
-      def setRender(value: /* props */ RouteConfigComponentProps[_] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      def setRender(value: /* props */ RouteConfigComponentProps[js.Any] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -171,28 +164,29 @@ object mod {
     }
   }
   
-  @js.native
   trait RouteConfigComponentProps[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with TopLevel[js.Any] */] extends RouteComponentProps[Params, StaticContext, LocationState] {
+    */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps & TopLevel[js.Any] */]
+    extends StObject
+       with RouteComponentProps[Params, StaticContext, LocationState] {
     
-    var route: js.UndefOr[RouteConfig] = js.native
+    var route: js.UndefOr[RouteConfig] = js.undefined
   }
   object RouteConfigComponentProps {
     
     @scala.inline
     def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with TopLevel[js.Any] */](history: History[LocationState], location: Location[LocationState], `match`: `match`[Params]): RouteConfigComponentProps[Params] = {
+      */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps & TopLevel[js.Any] */](history: History[LocationState], location: Location[LocationState], `match`: `match`[Params]): RouteConfigComponentProps[Params] = {
       val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteConfigComponentProps[Params]]
     }
     
     @scala.inline
-    implicit class RouteConfigComponentPropsMutableBuilder[Self <: RouteConfigComponentProps[_], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    implicit class RouteConfigComponentPropsMutableBuilder[Self <: RouteConfigComponentProps[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with TopLevel[js.Any] */] (val x: Self with RouteConfigComponentProps[Params]) extends AnyVal {
+      */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps & TopLevel[js.Any] */] (val x: Self & RouteConfigComponentProps[Params]) extends AnyVal {
       
       @scala.inline
       def setRoute(value: RouteConfig): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])

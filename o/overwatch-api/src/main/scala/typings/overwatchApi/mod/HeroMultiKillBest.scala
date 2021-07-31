@@ -2,13 +2,13 @@ package typings.overwatchApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeroMultiKillBest extends Hero {
+trait HeroMultiKillBest
+  extends StObject
+     with Hero {
   
-  var multikill_best: String = js.native
+  var multikill_best: String
 }
 object HeroMultiKillBest {
   

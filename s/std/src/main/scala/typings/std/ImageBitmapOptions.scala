@@ -2,23 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageBitmapOptions extends StObject {
   
-  var colorSpaceConversion: js.UndefOr[ColorSpaceConversion] = js.native
+  var colorSpaceConversion: js.UndefOr[ColorSpaceConversion] = js.undefined
   
-  var imageOrientation: js.UndefOr[ImageOrientation] = js.native
+  var imageOrientation: js.UndefOr[ImageOrientation] = js.undefined
   
-  var premultiplyAlpha: js.UndefOr[PremultiplyAlpha] = js.native
+  var premultiplyAlpha: js.UndefOr[PremultiplyAlpha] = js.undefined
   
-  var resizeHeight: js.UndefOr[Double] = js.native
+  var resizeHeight: js.UndefOr[Double] = js.undefined
   
-  var resizeQuality: js.UndefOr[ResizeQuality] = js.native
+  var resizeQuality: js.UndefOr[ResizeQuality] = js.undefined
   
-  var resizeWidth: js.UndefOr[Double] = js.native
+  var resizeWidth: js.UndefOr[Double] = js.undefined
 }
 object ImageBitmapOptions {
   

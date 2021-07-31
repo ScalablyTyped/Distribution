@@ -7,30 +7,30 @@ import typings.pulumiAws.inputMod.ec2.GetInstanceTypeInstanceDisk
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInstanceTypeMod {
   
-  @JSImport("@pulumi/aws/ec2/getInstanceType", "getInstanceType")
+  @JSImport("@pulumi/aws/ec2/getInstanceType", JSImport.Namespace)
   @js.native
-  def getInstanceType(args: GetInstanceTypeArgs): js.Promise[GetInstanceTypeResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInstanceType", "getInstanceType")
-  @js.native
-  def getInstanceType(args: GetInstanceTypeArgs, opts: InvokeOptions): js.Promise[GetInstanceTypeResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getInstanceType(args: GetInstanceTypeArgs): js.Promise[GetInstanceTypeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstanceTypeResult]]
+  @scala.inline
+  def getInstanceType(args: GetInstanceTypeArgs, opts: InvokeOptions): js.Promise[GetInstanceTypeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceType")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceTypeResult]]
+  
   trait GetInstanceTypeArgs extends StObject {
     
     /**
       * The default number of cores for the instance type.
       */
-    val defaultCores: js.UndefOr[Double] = js.native
+    val defaultCores: js.UndefOr[Double] = js.undefined
     
     /**
       * The  default  number of threads per core for the instance type.
       */
-    val defaultThreadsPerCore: js.UndefOr[Double] = js.native
+    val defaultThreadsPerCore: js.UndefOr[Double] = js.undefined
     
     /**
       * Describes the FPGA accelerator settings for the instance type.
@@ -39,7 +39,7 @@ object getInstanceTypeMod {
       * * `fpgas.#.memory_size` - The size (in MiB) for the memory available to the FPGA accelerator.
       * * `fpgas.#.name` - The name of the FPGA accelerator.
       */
-    val fpgas: js.UndefOr[js.Array[GetInstanceTypeFpga]] = js.native
+    val fpgas: js.UndefOr[js.Array[GetInstanceTypeFpga]] = js.undefined
     
     /**
       * Describes the GPU accelerators for the instance type.
@@ -48,7 +48,7 @@ object getInstanceTypeMod {
       * * `gpus.#.memory_size` - The size (in MiB) for the memory available to the GPU accelerator.
       * * `gpus.#.name` - The name of the GPU accelerator.
       */
-    val gpuses: js.UndefOr[js.Array[GetInstanceTypeGpus]] = js.native
+    val gpuses: js.UndefOr[js.Array[GetInstanceTypeGpus]] = js.undefined
     
     /**
       * Indicates the hypervisor used for the instance type.
@@ -57,9 +57,9 @@ object getInstanceTypeMod {
       * * `inference_accelerators.#.manufacturer` - The manufacturer of the Inference accelerator.
       * * `inference_accelerators.#.name` - The name of the Inference accelerator.
       */
-    val hypervisor: js.UndefOr[String] = js.native
+    val hypervisor: js.UndefOr[String] = js.undefined
     
-    val inferenceAccelerators: js.UndefOr[js.Array[GetInstanceTypeInferenceAccelerator]] = js.native
+    val inferenceAccelerators: js.UndefOr[js.Array[GetInstanceTypeInferenceAccelerator]] = js.undefined
     
     /**
       * Describes the disks for the instance type.
@@ -67,32 +67,32 @@ object getInstanceTypeMod {
       * * `instance_disks.#.size` - The size of the disk in GB.
       * * `instance_disks.#.type` - The type of disk.
       */
-    val instanceDisks: js.UndefOr[js.Array[GetInstanceTypeInstanceDisk]] = js.native
+    val instanceDisks: js.UndefOr[js.Array[GetInstanceTypeInstanceDisk]] = js.undefined
     
     /**
       * Instance
       */
-    val instanceType: String = js.native
+    val instanceType: String
     
     /**
       * The maximum number of IPv6 addresses per network interface.
       */
-    val maximumIpv6AddressesPerInterface: js.UndefOr[Double] = js.native
+    val maximumIpv6AddressesPerInterface: js.UndefOr[Double] = js.undefined
     
     /**
       * The total memory of all FPGA accelerators for the instance type (in MiB).
       */
-    val totalFpgaMemory: js.UndefOr[Double] = js.native
+    val totalFpgaMemory: js.UndefOr[Double] = js.undefined
     
     /**
       * The total size of the memory for the GPU accelerators for the instance type (in MiB).
       */
-    val totalGpuMemory: js.UndefOr[Double] = js.native
+    val totalGpuMemory: js.UndefOr[Double] = js.undefined
     
     /**
       * The total size of the instance disks, in GB.
       */
-    val totalInstanceStorage: js.UndefOr[Double] = js.native
+    val totalInstanceStorage: js.UndefOr[Double] = js.undefined
   }
   object GetInstanceTypeArgs {
     
@@ -188,103 +188,102 @@ object getInstanceTypeMod {
     }
   }
   
-  @js.native
   trait GetInstanceTypeResult extends StObject {
     
     /**
       * `true` if auto recovery is supported.
       */
-    val autoRecoverySupported: Boolean = js.native
+    val autoRecoverySupported: Boolean
     
     /**
       * `true` if it is a bare metal instance type.
       */
-    val bareMetal: Boolean = js.native
+    val bareMetal: Boolean
     
     /**
       * `true` if the instance type is a burstable performance instance type.
       */
-    val burstablePerformanceSupported: Boolean = js.native
+    val burstablePerformanceSupported: Boolean
     
     /**
       * `true`  if the instance type is a current generation.
       */
-    val currentGeneration: Boolean = js.native
+    val currentGeneration: Boolean
     
     /**
       * `true` if Dedicated Hosts are supported on the instance type.
       */
-    val dedicatedHostsSupported: Boolean = js.native
+    val dedicatedHostsSupported: Boolean
     
     /**
       * The default number of cores for the instance type.
       */
-    val defaultCores: Double = js.native
+    val defaultCores: Double
     
     /**
       * The  default  number of threads per core for the instance type.
       */
-    val defaultThreadsPerCore: Double = js.native
+    val defaultThreadsPerCore: Double
     
     /**
       * The default number of vCPUs for the instance type.
       */
-    val defaultVcpus: Double = js.native
+    val defaultVcpus: Double
     
     /**
       * Indicates whether Amazon EBS encryption is supported.
       */
-    val ebsEncryptionSupport: String = js.native
+    val ebsEncryptionSupport: String
     
     /**
       * Indicates whether non-volatile memory express (NVMe) is supported.
       */
-    val ebsNvmeSupport: String = js.native
+    val ebsNvmeSupport: String
     
     /**
       * Indicates that the instance type is Amazon EBS-optimized.
       */
-    val ebsOptimizedSupport: String = js.native
+    val ebsOptimizedSupport: String
     
     /**
       * The baseline bandwidth performance for an EBS-optimized instance type, in Mbps.
       */
-    val ebsPerformanceBaselineBandwidth: Double = js.native
+    val ebsPerformanceBaselineBandwidth: Double
     
     /**
       * The baseline input/output storage operations per seconds for an EBS-optimized instance type.
       */
-    val ebsPerformanceBaselineIops: Double = js.native
+    val ebsPerformanceBaselineIops: Double
     
     /**
       * The baseline throughput performance for an EBS-optimized instance type, in MBps.
       */
-    val ebsPerformanceBaselineThroughput: Double = js.native
+    val ebsPerformanceBaselineThroughput: Double
     
     /**
       * The maximum bandwidth performance for an EBS-optimized instance type, in Mbps.
       */
-    val ebsPerformanceMaximumBandwidth: Double = js.native
+    val ebsPerformanceMaximumBandwidth: Double
     
     /**
       * The maximum input/output storage operations per second for an EBS-optimized instance type.
       */
-    val ebsPerformanceMaximumIops: Double = js.native
+    val ebsPerformanceMaximumIops: Double
     
     /**
       * The maximum throughput performance for an EBS-optimized instance type, in MBps.
       */
-    val ebsPerformanceMaximumThroughput: Double = js.native
+    val ebsPerformanceMaximumThroughput: Double
     
     /**
       * Indicates whether Elastic Fabric Adapter (EFA) is supported.
       */
-    val efaSupported: Boolean = js.native
+    val efaSupported: Boolean
     
     /**
       * Indicates whether Elastic Network Adapter (ENA) is supported.
       */
-    val enaSupport: String = js.native
+    val enaSupport: String
     
     /**
       * Describes the FPGA accelerator settings for the instance type.
@@ -293,12 +292,12 @@ object getInstanceTypeMod {
       * * `fpgas.#.memory_size` - The size (in MiB) for the memory available to the FPGA accelerator.
       * * `fpgas.#.name` - The name of the FPGA accelerator.
       */
-    val fpgas: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeFpga] = js.native
+    val fpgas: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeFpga]
     
     /**
       * `true` if the instance type is eligible for the free tier.
       */
-    val freeTierEligible: Boolean = js.native
+    val freeTierEligible: Boolean
     
     /**
       * Describes the GPU accelerators for the instance type.
@@ -307,12 +306,12 @@ object getInstanceTypeMod {
       * * `gpus.#.memory_size` - The size (in MiB) for the memory available to the GPU accelerator.
       * * `gpus.#.name` - The name of the GPU accelerator.
       */
-    val gpuses: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeGpus] = js.native
+    val gpuses: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeGpus]
     
     /**
       * `true` if On-Demand hibernation is supported.
       */
-    val hibernationSupported: Boolean = js.native
+    val hibernationSupported: Boolean
     
     /**
       * Indicates the hypervisor used for the instance type.
@@ -321,14 +320,14 @@ object getInstanceTypeMod {
       * * `inference_accelerators.#.manufacturer` - The manufacturer of the Inference accelerator.
       * * `inference_accelerators.#.name` - The name of the Inference accelerator.
       */
-    val hypervisor: String = js.native
+    val hypervisor: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val inferenceAccelerators: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeInferenceAccelerator] = js.native
+    val inferenceAccelerators: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeInferenceAccelerator]
     
     /**
       * Describes the disks for the instance type.
@@ -336,99 +335,99 @@ object getInstanceTypeMod {
       * * `instance_disks.#.size` - The size of the disk in GB.
       * * `instance_disks.#.type` - The type of disk.
       */
-    val instanceDisks: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeInstanceDisk] = js.native
+    val instanceDisks: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeInstanceDisk]
     
     /**
       * `true` if instance storage is supported.
       */
-    val instanceStorageSupported: Boolean = js.native
+    val instanceStorageSupported: Boolean
     
-    val instanceType: String = js.native
+    val instanceType: String
     
     /**
       * `true` if IPv6 is supported.
       */
-    val ipv6Supported: Boolean = js.native
+    val ipv6Supported: Boolean
     
     /**
       * The maximum number of IPv4 addresses per network interface.
       */
-    val maximumIpv4AddressesPerInterface: Double = js.native
+    val maximumIpv4AddressesPerInterface: Double
     
     /**
       * The maximum number of IPv6 addresses per network interface.
       */
-    val maximumIpv6AddressesPerInterface: Double = js.native
+    val maximumIpv6AddressesPerInterface: Double
     
     /**
       * The maximum number of network interfaces for the instance type.
       */
-    val maximumNetworkInterfaces: Double = js.native
+    val maximumNetworkInterfaces: Double
     
     /**
       * Size of the instance memory, in MiB.
       */
-    val memorySize: Double = js.native
+    val memorySize: Double
     
     /**
       * Describes the network performance.
       */
-    val networkPerformance: String = js.native
+    val networkPerformance: String
     
     /**
       * A list of architectures supported by the instance type.
       */
-    val supportedArchitectures: js.Array[String] = js.native
+    val supportedArchitectures: js.Array[String]
     
     /**
       * A list of supported placement groups types.
       */
-    val supportedPlacementStrategies: js.Array[String] = js.native
+    val supportedPlacementStrategies: js.Array[String]
     
     /**
       * Indicates the supported root device types.
       */
-    val supportedRootDeviceTypes: js.Array[String] = js.native
+    val supportedRootDeviceTypes: js.Array[String]
     
     /**
       * Indicates whether the instance type is offered for spot or On-Demand.
       */
-    val supportedUsagesClasses: js.Array[String] = js.native
+    val supportedUsagesClasses: js.Array[String]
     
     /**
       * The supported virtualization types.
       */
-    val supportedVirtualizationTypes: js.Array[String] = js.native
+    val supportedVirtualizationTypes: js.Array[String]
     
     /**
       * The speed of the processor, in GHz.
       */
-    val sustainedClockSpeed: Double = js.native
+    val sustainedClockSpeed: Double
     
     /**
       * The total memory of all FPGA accelerators for the instance type (in MiB).
       */
-    val totalFpgaMemory: Double = js.native
+    val totalFpgaMemory: Double
     
     /**
       * The total size of the memory for the GPU accelerators for the instance type (in MiB).
       */
-    val totalGpuMemory: Double = js.native
+    val totalGpuMemory: Double
     
     /**
       * The total size of the instance disks, in GB.
       */
-    val totalInstanceStorage: Double = js.native
+    val totalInstanceStorage: Double
     
     /**
       * List of the valid number of cores that can be configured for the instance type.
       */
-    val validCores: js.Array[Double] = js.native
+    val validCores: js.Array[Double]
     
     /**
       * List of the valid number of threads per core that can be configured for the instance type.
       */
-    val validThreadsPerCores: js.Array[Double] = js.native
+    val validThreadsPerCores: js.Array[Double]
   }
   object GetInstanceTypeResult {
     

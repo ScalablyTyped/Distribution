@@ -3,15 +3,13 @@ package typings.vexflow.anon
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context extends StObject {
   
-  var align_rests: js.UndefOr[Boolean] = js.native
+  var align_rests: js.UndefOr[Boolean] = js.undefined
   
-  var context: IRenderContext = js.native
+  var context: IRenderContext
 }
 object Context {
   

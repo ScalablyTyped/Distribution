@@ -2,7 +2,6 @@ package typings.sharedb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sharedb", "DB")
@@ -20,7 +19,7 @@ abstract class DB () extends StObject {
     op: Op,
     snapshot: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   var disableSubscribe: Boolean = js.native
@@ -31,7 +30,7 @@ abstract class DB () extends StObject {
     snapshot: js.Any,
     op: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   def getOps(
@@ -40,7 +39,7 @@ abstract class DB () extends StObject {
     from: Double,
     to: Double,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   def getOps(
     collection: String,
@@ -48,7 +47,7 @@ abstract class DB () extends StObject {
     from: Double,
     to: Null,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   def getOps(
     collection: String,
@@ -56,7 +55,7 @@ abstract class DB () extends StObject {
     from: Null,
     to: Double,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   def getOps(
     collection: String,
@@ -64,7 +63,7 @@ abstract class DB () extends StObject {
     from: Null,
     to: Null,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   def getOpsBulk(
@@ -72,7 +71,7 @@ abstract class DB () extends StObject {
     fromMap: js.Any,
     toMap: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   def getOpsToSnapshot(
@@ -81,7 +80,7 @@ abstract class DB () extends StObject {
     from: Double,
     snapshot: Double,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   def getOpsToSnapshot(
     collection: String,
@@ -89,7 +88,7 @@ abstract class DB () extends StObject {
     from: Null,
     snapshot: Double,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   def getSnapshot(
@@ -97,7 +96,7 @@ abstract class DB () extends StObject {
     id: String,
     fields: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   def getSnapshotBulk(
@@ -105,18 +104,12 @@ abstract class DB () extends StObject {
     ids: js.Array[String],
     fields: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   var projectsSnapshots: Boolean = js.native
   
-  def query(
-    collection: String,
-    query: js.Any,
-    fields: js.UndefOr[scala.Nothing],
-    options: js.Any,
-    callback: DBQueryCallback
-  ): Unit = js.native
+  def query(collection: String, query: js.Any, fields: Unit, options: js.Any, callback: DBQueryCallback): Unit = js.native
   def query(
     collection: String,
     query: js.Any,
@@ -129,7 +122,7 @@ abstract class DB () extends StObject {
     collection: String,
     query: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   def queryPollDoc(
@@ -137,7 +130,7 @@ abstract class DB () extends StObject {
     id: String,
     query: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   @JSName("query")

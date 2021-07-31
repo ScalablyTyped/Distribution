@@ -2,26 +2,24 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Repository extends StObject {
   
   /**
     *  Information about a Bitbucket repository. 
     */
-  var Bitbucket: js.UndefOr[ThirdPartySourceRepository] = js.native
+  var Bitbucket: js.UndefOr[ThirdPartySourceRepository] = js.undefined
   
   /**
     * Information about an AWS CodeCommit repository.
     */
-  var CodeCommit: js.UndefOr[CodeCommitRepository] = js.native
+  var CodeCommit: js.UndefOr[CodeCommitRepository] = js.undefined
   
   /**
     *  Information about a GitHub Enterprise Server repository. 
     */
-  var GitHubEnterpriseServer: js.UndefOr[ThirdPartySourceRepository] = js.native
+  var GitHubEnterpriseServer: js.UndefOr[ThirdPartySourceRepository] = js.undefined
 }
 object Repository {
   

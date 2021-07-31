@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows notification when range selection is completed or aborted.
   * @see com.sun.star.sheet.XRangeSelection
   */
-@js.native
-trait XRangeSelectionListener extends XEventListener {
+trait XRangeSelectionListener
+  extends StObject
+     with XEventListener {
   
   /** is called when range selection is aborted. */
-  def aborted(aEvent: RangeSelectionEvent): Unit = js.native
+  def aborted(aEvent: RangeSelectionEvent): Unit
   
   /** is called when range selection is completed. */
-  def done(aEvent: RangeSelectionEvent): Unit = js.native
+  def done(aEvent: RangeSelectionEvent): Unit
 }
 object XRangeSelectionListener {
   

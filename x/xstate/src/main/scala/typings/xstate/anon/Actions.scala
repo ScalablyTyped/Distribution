@@ -7,21 +7,19 @@ import typings.xstate.typesMod.Guard
 import typings.xstate.xstateStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Actions[TContext, TEvent /* <: EventObject */] extends StObject {
   
-  var actions: js.Array[ActionObject[TContext, TEvent]] = js.native
+  var actions: js.Array[ActionObject[TContext, TEvent]]
   
-  var cond: js.UndefOr[Guard[TContext, TEvent]] = js.native
+  var cond: js.UndefOr[Guard[TContext, TEvent]] = js.undefined
   
-  var eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk = js.native
+  var eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
   
-  var source: String = js.native
+  var source: String
   
-  var target: js.UndefOr[js.Array[String]] = js.native
+  var target: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Actions {
   
@@ -36,7 +34,7 @@ object Actions {
   }
   
   @scala.inline
-  implicit class ActionsMutableBuilder[Self <: Actions[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (Actions[TContext, TEvent])) extends AnyVal {
+  implicit class ActionsMutableBuilder[Self <: Actions[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (Actions[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])

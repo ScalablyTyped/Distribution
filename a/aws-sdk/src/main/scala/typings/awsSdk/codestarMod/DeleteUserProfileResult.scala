@@ -2,16 +2,14 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUserProfileResult extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the user deleted from AWS CodeStar.
     */
-  var userArn: UserArn = js.native
+  var userArn: UserArn
 }
 object DeleteUserProfileResult {
   

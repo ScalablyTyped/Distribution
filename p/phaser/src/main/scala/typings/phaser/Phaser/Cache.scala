@@ -5,7 +5,6 @@ import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Structs.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Cache {
@@ -17,7 +16,6 @@ object Cache {
     * 
     * Keys are string-based.
     */
-  @js.native
   trait BaseCache extends StObject {
     
     /**
@@ -26,49 +24,49 @@ object Cache {
       * @param key The unique key by which the data added to the cache will be referenced.
       * @param data The data to be stored in the cache.
       */
-    def add(key: String, data: js.Any): this.type = js.native
+    def add(key: String, data: js.Any): this.type
     
     /**
       * Destroys this cache and all items within it.
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * The Map in which the cache objects are stored.
       * 
       * You can query the Map directly or use the BaseCache methods.
       */
-    var entries: Map[String, _] = js.native
+    var entries: Map[String, js.Any]
     
     /**
       * An instance of EventEmitter used by the cache to emit related events.
       */
-    var events: EventEmitter = js.native
+    var events: EventEmitter
     
     /**
       * Checks if this cache contains an item matching the given key.
       * This performs the same action as `BaseCache.has` and is called directly by the Loader.
       * @param key The unique key of the item to be checked in this cache.
       */
-    def exists(key: String): Boolean = js.native
+    def exists(key: String): Boolean
     
     /**
       * Gets an item from this cache based on the given key.
       * @param key The unique key of the item to be retrieved from this cache.
       */
-    def get(key: String): js.Any = js.native
+    def get(key: String): js.Any
     
     /**
       * Returns all keys in use in this cache.
       */
-    def getKeys(): js.Array[String] = js.native
+    def getKeys(): js.Array[String]
     
     /**
       * Checks if this cache contains an item matching the given key.
       * This performs the same action as `BaseCache.exists`.
       * @param key The unique key of the item to be checked in this cache.
       */
-    def has(key: String): Boolean = js.native
+    def has(key: String): Boolean
     
     /**
       * Removes and item from this cache based on the given key.
@@ -78,7 +76,7 @@ object Cache {
       * are relying on this item, it is up to you to sever those relationships prior to removing the item.
       * @param key The unique key of the item to remove from the cache.
       */
-    def remove(key: String): this.type = js.native
+    def remove(key: String): this.type
   }
   object BaseCache {
     
@@ -86,7 +84,7 @@ object Cache {
     def apply(
       add: (String, js.Any) => BaseCache,
       destroy: () => Unit,
-      entries: Map[String, _],
+      entries: Map[String, js.Any],
       events: EventEmitter,
       exists: String => Boolean,
       get: String => js.Any,
@@ -108,7 +106,7 @@ object Cache {
       def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setEntries(value: Map[String, _]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      def setEntries(value: Map[String, js.Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
@@ -137,7 +135,6 @@ object Cache {
     * it has loaded. The manager itself doesn't store any files, but instead owns multiple BaseCache
     * instances, one per type of file. You can also add your own custom caches.
     */
-  @js.native
   trait CacheManager extends StObject {
     
     /**
@@ -146,85 +143,85 @@ object Cache {
       * The cache will only be created if the key is not already in use.
       * @param key The unique key of your custom cache.
       */
-    def addCustom(key: String): BaseCache = js.native
+    def addCustom(key: String): BaseCache
     
     /**
       * A Cache storing all non-streaming audio files, typically added via the Loader.
       */
-    var audio: BaseCache = js.native
+    var audio: BaseCache
     
     /**
       * A Cache storing all binary files, typically added via the Loader.
       */
-    var binary: BaseCache = js.native
+    var binary: BaseCache
     
     /**
       * A Cache storing all bitmap font data files, typically added via the Loader.
       * Only the font data is stored in this cache, the textures are part of the Texture Manager.
       */
-    var bitmapFont: BaseCache = js.native
+    var bitmapFont: BaseCache
     
     /**
       * An object that contains your own custom BaseCache entries.
       * Add to this via the `addCustom` method.
       */
-    var custom: StringDictionary[BaseCache] = js.native
+    var custom: StringDictionary[BaseCache]
     
     /**
       * Removes all entries from all BaseCaches and destroys all custom caches.
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * A reference to the Phaser.Game instance that owns this CacheManager.
       */
-    var game: Game = js.native
+    var game: Game
     
     /**
       * A Cache storing all html files, typically added via the Loader.
       */
-    var html: BaseCache = js.native
+    var html: BaseCache
     
     /**
       * A Cache storing all JSON data files, typically added via the Loader.
       */
-    var json: BaseCache = js.native
+    var json: BaseCache
     
     /**
       * A Cache storing all WaveFront OBJ files, typically added via the Loader.
       */
-    var obj: BaseCache = js.native
+    var obj: BaseCache
     
     /**
       * A Cache storing all physics data files, typically added via the Loader.
       */
-    var physics: BaseCache = js.native
+    var physics: BaseCache
     
     /**
       * A Cache storing all shader source files, typically added via the Loader.
       */
-    var shader: BaseCache = js.native
+    var shader: BaseCache
     
     /**
       * A Cache storing all text files, typically added via the Loader.
       */
-    var text: BaseCache = js.native
+    var text: BaseCache
     
     /**
       * A Cache storing all tilemap data files, typically added via the Loader.
       * Only the data is stored in this cache, the textures are part of the Texture Manager.
       */
-    var tilemap: BaseCache = js.native
+    var tilemap: BaseCache
     
     /**
       * A Cache storing all non-streaming video files, typically added via the Loader.
       */
-    var video: BaseCache = js.native
+    var video: BaseCache
     
     /**
       * A Cache storing all xml data files, typically added via the Loader.
       */
-    var xml: BaseCache = js.native
+    var xml: BaseCache
   }
   object CacheManager {
     

@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,68 +9,67 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * been changed in this suggestion. For any field set to true, there is a new
   * suggested value.
   */
-@js.native
 trait SchemaTableCellStyleSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to background_color.
     */
-  var backgroundColorSuggested: js.UndefOr[Boolean] = js.native
+  var backgroundColorSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to border_bottom.
     */
-  var borderBottomSuggested: js.UndefOr[Boolean] = js.native
+  var borderBottomSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to border_left.
     */
-  var borderLeftSuggested: js.UndefOr[Boolean] = js.native
+  var borderLeftSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to border_right.
     */
-  var borderRightSuggested: js.UndefOr[Boolean] = js.native
+  var borderRightSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to border_top.
     */
-  var borderTopSuggested: js.UndefOr[Boolean] = js.native
+  var borderTopSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to column_span.
     */
-  var columnSpanSuggested: js.UndefOr[Boolean] = js.native
+  var columnSpanSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to content_alignment.
     */
-  var contentAlignmentSuggested: js.UndefOr[Boolean] = js.native
+  var contentAlignmentSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to padding_bottom.
     */
-  var paddingBottomSuggested: js.UndefOr[Boolean] = js.native
+  var paddingBottomSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to padding_left.
     */
-  var paddingLeftSuggested: js.UndefOr[Boolean] = js.native
+  var paddingLeftSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to padding_right.
     */
-  var paddingRightSuggested: js.UndefOr[Boolean] = js.native
+  var paddingRightSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to padding_top.
     */
-  var paddingTopSuggested: js.UndefOr[Boolean] = js.native
+  var paddingTopSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to row_span.
     */
-  var rowSpanSuggested: js.UndefOr[Boolean] = js.native
+  var rowSpanSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaTableCellStyleSuggestionState {
   

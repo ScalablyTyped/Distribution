@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceState extends StObject {
   
   /**
     * The status code for the instance.
     */
-  var code: js.UndefOr[integer] = js.native
+  var code: js.UndefOr[integer] = js.undefined
   
   /**
     * The state of the instance (e.g., running or pending).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object InstanceState {
   

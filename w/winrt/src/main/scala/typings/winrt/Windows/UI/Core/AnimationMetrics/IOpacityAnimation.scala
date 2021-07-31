@@ -3,15 +3,15 @@ package typings.winrt.Windows.UI.Core.AnimationMetrics
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IOpacityAnimation extends IPropertyAnimation {
+trait IOpacityAnimation
+  extends StObject
+     with IPropertyAnimation {
   
-  var finalOpacity: Double = js.native
+  var finalOpacity: Double
   
-  var initialOpacity: Double = js.native
+  var initialOpacity: Double
 }
 object IOpacityAnimation {
   

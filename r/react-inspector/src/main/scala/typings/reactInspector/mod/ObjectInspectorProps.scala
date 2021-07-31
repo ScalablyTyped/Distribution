@@ -2,23 +2,22 @@ package typings.reactInspector.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectInspectorProps
-  extends TreeViewProps
+  extends StObject
+     with TreeViewProps
      with ThemedComponentProps {
   
   /**
     * Show non-enumerable properties.
     */
-  var showNonenumerable: js.UndefOr[Boolean] = js.native
+  var showNonenumerable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sort object keys with optional compare function.
     */
-  var sortObjectKeys: js.UndefOr[Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.native
+  var sortObjectKeys: js.UndefOr[Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.undefined
 }
 object ObjectInspectorProps {
   

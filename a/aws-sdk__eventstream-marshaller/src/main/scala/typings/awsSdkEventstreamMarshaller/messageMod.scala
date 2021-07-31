@@ -15,24 +15,24 @@ import typings.std.Date
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod {
   
-  @js.native
-  trait BinaryHeaderValue extends MessageHeaderValue {
+  trait BinaryHeaderValue
+    extends StObject
+       with MessageHeaderValue {
     
-    var `type`: binary = js.native
+    var `type`: binary
     
-    var value: Uint8Array = js.native
+    var value: Uint8Array
   }
   object BinaryHeaderValue {
     
     @scala.inline
-    def apply(`type`: binary, value: Uint8Array): BinaryHeaderValue = {
+    def apply(value: Uint8Array): BinaryHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("binary")
       __obj.asInstanceOf[BinaryHeaderValue]
     }
     
@@ -47,19 +47,20 @@ object messageMod {
     }
   }
   
-  @js.native
-  trait BooleanHeaderValue extends MessageHeaderValue {
+  trait BooleanHeaderValue
+    extends StObject
+       with MessageHeaderValue {
     
-    var `type`: boolean = js.native
+    var `type`: boolean
     
-    var value: Boolean = js.native
+    var value: Boolean
   }
   object BooleanHeaderValue {
     
     @scala.inline
-    def apply(`type`: boolean, value: Boolean): BooleanHeaderValue = {
+    def apply(value: Boolean): BooleanHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("boolean")
       __obj.asInstanceOf[BooleanHeaderValue]
     }
     
@@ -74,19 +75,20 @@ object messageMod {
     }
   }
   
-  @js.native
-  trait ByteHeaderValue extends MessageHeaderValue {
+  trait ByteHeaderValue
+    extends StObject
+       with MessageHeaderValue {
     
-    var `type`: byte = js.native
+    var `type`: byte
     
-    var value: Double = js.native
+    var value: Double
   }
   object ByteHeaderValue {
     
     @scala.inline
-    def apply(`type`: byte, value: Double): ByteHeaderValue = {
+    def apply(value: Double): ByteHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("byte")
       __obj.asInstanceOf[ByteHeaderValue]
     }
     
@@ -101,19 +103,20 @@ object messageMod {
     }
   }
   
-  @js.native
-  trait IntegerHeaderValue extends MessageHeaderValue {
+  trait IntegerHeaderValue
+    extends StObject
+       with MessageHeaderValue {
     
-    var `type`: integer = js.native
+    var `type`: integer
     
-    var value: Double = js.native
+    var value: Double
   }
   object IntegerHeaderValue {
     
     @scala.inline
-    def apply(`type`: integer, value: Double): IntegerHeaderValue = {
+    def apply(value: Double): IntegerHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("integer")
       __obj.asInstanceOf[IntegerHeaderValue]
     }
     
@@ -128,19 +131,20 @@ object messageMod {
     }
   }
   
-  @js.native
-  trait LongHeaderValue extends MessageHeaderValue {
+  trait LongHeaderValue
+    extends StObject
+       with MessageHeaderValue {
     
-    var `type`: long = js.native
+    var `type`: long
     
-    var value: Int64 = js.native
+    var value: Int64
   }
   object LongHeaderValue {
     
     @scala.inline
-    def apply(`type`: long, value: Int64): LongHeaderValue = {
+    def apply(value: Int64): LongHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("long")
       __obj.asInstanceOf[LongHeaderValue]
     }
     
@@ -155,12 +159,11 @@ object messageMod {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var body: Uint8Array = js.native
+    var body: Uint8Array
     
-    var headers: MessageHeaders = js.native
+    var headers: MessageHeaders
   }
   object Message {
     
@@ -196,84 +199,85 @@ object messageMod {
   object MessageHeaderValue {
     
     @scala.inline
-    def BinaryHeaderValue(`type`: binary, value: Uint8Array): typings.awsSdkEventstreamMarshaller.messageMod.BinaryHeaderValue = {
+    def BinaryHeaderValue(value: Uint8Array): typings.awsSdkEventstreamMarshaller.messageMod.BinaryHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("binary")
       __obj.asInstanceOf[typings.awsSdkEventstreamMarshaller.messageMod.BinaryHeaderValue]
     }
     
     @scala.inline
-    def BooleanHeaderValue(`type`: boolean, value: Boolean): typings.awsSdkEventstreamMarshaller.messageMod.BooleanHeaderValue = {
+    def BooleanHeaderValue(value: Boolean): typings.awsSdkEventstreamMarshaller.messageMod.BooleanHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("boolean")
       __obj.asInstanceOf[typings.awsSdkEventstreamMarshaller.messageMod.BooleanHeaderValue]
     }
     
     @scala.inline
-    def ByteHeaderValue(`type`: byte, value: Double): typings.awsSdkEventstreamMarshaller.messageMod.ByteHeaderValue = {
+    def ByteHeaderValue(value: Double): typings.awsSdkEventstreamMarshaller.messageMod.ByteHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("byte")
       __obj.asInstanceOf[typings.awsSdkEventstreamMarshaller.messageMod.ByteHeaderValue]
     }
     
     @scala.inline
-    def IntegerHeaderValue(`type`: integer, value: Double): typings.awsSdkEventstreamMarshaller.messageMod.IntegerHeaderValue = {
+    def IntegerHeaderValue(value: Double): typings.awsSdkEventstreamMarshaller.messageMod.IntegerHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("integer")
       __obj.asInstanceOf[typings.awsSdkEventstreamMarshaller.messageMod.IntegerHeaderValue]
     }
     
     @scala.inline
-    def LongHeaderValue(`type`: long, value: Int64): typings.awsSdkEventstreamMarshaller.messageMod.LongHeaderValue = {
+    def LongHeaderValue(value: Int64): typings.awsSdkEventstreamMarshaller.messageMod.LongHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("long")
       __obj.asInstanceOf[typings.awsSdkEventstreamMarshaller.messageMod.LongHeaderValue]
     }
     
     @scala.inline
-    def ShortHeaderValue(`type`: short, value: Double): typings.awsSdkEventstreamMarshaller.messageMod.ShortHeaderValue = {
+    def ShortHeaderValue(value: Double): typings.awsSdkEventstreamMarshaller.messageMod.ShortHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("short")
       __obj.asInstanceOf[typings.awsSdkEventstreamMarshaller.messageMod.ShortHeaderValue]
     }
     
     @scala.inline
-    def StringHeaderValue(`type`: string, value: String): typings.awsSdkEventstreamMarshaller.messageMod.StringHeaderValue = {
+    def StringHeaderValue(value: String): typings.awsSdkEventstreamMarshaller.messageMod.StringHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[typings.awsSdkEventstreamMarshaller.messageMod.StringHeaderValue]
     }
     
     @scala.inline
-    def TimestampHeaderValue(`type`: timestamp, value: Date): typings.awsSdkEventstreamMarshaller.messageMod.TimestampHeaderValue = {
+    def TimestampHeaderValue(value: Date): typings.awsSdkEventstreamMarshaller.messageMod.TimestampHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("timestamp")
       __obj.asInstanceOf[typings.awsSdkEventstreamMarshaller.messageMod.TimestampHeaderValue]
     }
     
     @scala.inline
-    def UuidHeaderValue(`type`: uuid, value: String): typings.awsSdkEventstreamMarshaller.messageMod.UuidHeaderValue = {
+    def UuidHeaderValue(value: String): typings.awsSdkEventstreamMarshaller.messageMod.UuidHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("uuid")
       __obj.asInstanceOf[typings.awsSdkEventstreamMarshaller.messageMod.UuidHeaderValue]
     }
   }
   
   type MessageHeaders = StringDictionary[MessageHeaderValue]
   
-  @js.native
-  trait ShortHeaderValue extends MessageHeaderValue {
+  trait ShortHeaderValue
+    extends StObject
+       with MessageHeaderValue {
     
-    var `type`: short = js.native
+    var `type`: short
     
-    var value: Double = js.native
+    var value: Double
   }
   object ShortHeaderValue {
     
     @scala.inline
-    def apply(`type`: short, value: Double): ShortHeaderValue = {
+    def apply(value: Double): ShortHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("short")
       __obj.asInstanceOf[ShortHeaderValue]
     }
     
@@ -288,19 +292,20 @@ object messageMod {
     }
   }
   
-  @js.native
-  trait StringHeaderValue extends MessageHeaderValue {
+  trait StringHeaderValue
+    extends StObject
+       with MessageHeaderValue {
     
-    var `type`: string = js.native
+    var `type`: string
     
-    var value: String = js.native
+    var value: String
   }
   object StringHeaderValue {
     
     @scala.inline
-    def apply(`type`: string, value: String): StringHeaderValue = {
+    def apply(value: String): StringHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[StringHeaderValue]
     }
     
@@ -315,19 +320,20 @@ object messageMod {
     }
   }
   
-  @js.native
-  trait TimestampHeaderValue extends MessageHeaderValue {
+  trait TimestampHeaderValue
+    extends StObject
+       with MessageHeaderValue {
     
-    var `type`: timestamp = js.native
+    var `type`: timestamp
     
-    var value: Date = js.native
+    var value: Date
   }
   object TimestampHeaderValue {
     
     @scala.inline
-    def apply(`type`: timestamp, value: Date): TimestampHeaderValue = {
+    def apply(value: Date): TimestampHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("timestamp")
       __obj.asInstanceOf[TimestampHeaderValue]
     }
     
@@ -342,19 +348,20 @@ object messageMod {
     }
   }
   
-  @js.native
-  trait UuidHeaderValue extends MessageHeaderValue {
+  trait UuidHeaderValue
+    extends StObject
+       with MessageHeaderValue {
     
-    var `type`: uuid = js.native
+    var `type`: uuid
     
-    var value: String = js.native
+    var value: String
   }
   object UuidHeaderValue {
     
     @scala.inline
-    def apply(`type`: uuid, value: String): UuidHeaderValue = {
+    def apply(value: String): UuidHeaderValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("uuid")
       __obj.asInstanceOf[UuidHeaderValue]
     }
     

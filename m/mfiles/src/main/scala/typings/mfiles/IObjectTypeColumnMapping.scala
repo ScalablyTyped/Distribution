@@ -3,27 +3,25 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInObjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectTypeColumnMapping extends StObject {
   
-  def Clone(): IObjectTypeColumnMapping = js.native
+  def Clone(): IObjectTypeColumnMapping
   
-  var ObjectType: MFBuiltInObjectType | Double = js.native
+  var ObjectType: MFBuiltInObjectType | Double
   
-  var Ordinal: Double = js.native
+  var Ordinal: Double
   
-  var PartOfInsert: Boolean = js.native
+  var PartOfInsert: Boolean
   
-  var PartOfUpdate: Boolean = js.native
+  var PartOfUpdate: Boolean
   
-  var SourceField: String = js.native
+  var SourceField: String
   
-  var TargetPropertyDef: Double = js.native
+  var TargetPropertyDef: Double
   
-  var Type: Double = js.native
+  var Type: Double
 }
 object IObjectTypeColumnMapping {
   

@@ -4,11 +4,12 @@ import typings.vexflow.anon.ExtraLeftPx_
 import typings.vexflow.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Note extends Tickable {
+trait Note
+  extends StObject
+     with Tickable {
   
   def addModifier(modifier: Modifier, index: Double): Note = js.native
   

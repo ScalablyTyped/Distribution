@@ -2,21 +2,19 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBGPPeerRequest extends StObject {
   
   /**
     * Information about the BGP peer.
     */
-  var newBGPPeer: js.UndefOr[NewBGPPeer] = js.native
+  var newBGPPeer: js.UndefOr[NewBGPPeer] = js.undefined
   
   /**
     * The ID of the virtual interface.
     */
-  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.native
+  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.undefined
 }
 object CreateBGPPeerRequest {
   

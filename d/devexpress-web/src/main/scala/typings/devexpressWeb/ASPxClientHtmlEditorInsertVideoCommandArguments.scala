@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.INSERTVIDEO_COMMAND command parameter.
   */
-@js.native
-trait ASPxClientHtmlEditorInsertVideoCommandArguments extends ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
+trait ASPxClientHtmlEditorInsertVideoCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
   
   /**
     * Defines the URL of an image that is shown while the video file is downloading, or until an end-user clicks the play button.
     */
-  var posterUrl: String = js.native
+  var posterUrl: String
 }
 object ASPxClientHtmlEditorInsertVideoCommandArguments {
   

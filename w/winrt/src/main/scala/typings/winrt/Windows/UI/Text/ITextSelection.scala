@@ -5,29 +5,29 @@ import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrt.anon.Hit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITextSelection extends ITextRange {
+trait ITextSelection
+  extends StObject
+     with ITextRange {
   
-  def endKey(unit: TextRangeUnit, extend: Boolean): Double = js.native
+  def endKey(unit: TextRangeUnit, extend: Boolean): Double
   
-  def homeKey(unit: TextRangeUnit, extend: Boolean): Double = js.native
+  def homeKey(unit: TextRangeUnit, extend: Boolean): Double
   
-  def moveDown(unit: TextRangeUnit, count: Double, extend: Boolean): Double = js.native
+  def moveDown(unit: TextRangeUnit, count: Double, extend: Boolean): Double
   
-  def moveLeft(unit: TextRangeUnit, count: Double, extend: Boolean): Double = js.native
+  def moveLeft(unit: TextRangeUnit, count: Double, extend: Boolean): Double
   
-  def moveRight(unit: TextRangeUnit, count: Double, extend: Boolean): Double = js.native
+  def moveRight(unit: TextRangeUnit, count: Double, extend: Boolean): Double
   
-  def moveUp(unit: TextRangeUnit, count: Double, extend: Boolean): Double = js.native
+  def moveUp(unit: TextRangeUnit, count: Double, extend: Boolean): Double
   
-  var options: SelectionOptions = js.native
+  var options: SelectionOptions
   
-  var `type`: SelectionType = js.native
+  var `type`: SelectionType
   
-  def typeText(value: String): Unit = js.native
+  def typeText(value: String): Unit
 }
 object ITextSelection {
   

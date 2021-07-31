@@ -2,27 +2,25 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconColor extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hoverColor: js.UndefOr[String] = js.native
+  var hoverColor: js.UndefOr[String] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var menuHoverColor: js.UndefOr[String] = js.native
+  var menuHoverColor: js.UndefOr[String] = js.undefined
   
-  var separatorColor: js.UndefOr[String] = js.native
+  var separatorColor: js.UndefOr[String] = js.undefined
   
-  var titleFontSize: js.UndefOr[Double] = js.native
+  var titleFontSize: js.UndefOr[Double] = js.undefined
 }
 object IconColor {
   

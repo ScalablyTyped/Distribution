@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The shape background fill.
   */
-@js.native
 trait SchemaShapeBackgroundFill extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaShapeBackgroundFill extends StObject {
     * to `NOT_RENDERED`. In this case, any other fill fields set in the same
     * request will be ignored.
     */
-  var propertyState: js.UndefOr[String] = js.native
+  var propertyState: js.UndefOr[String] = js.undefined
   
   /**
     * Solid color fill.
     */
-  var solidFill: js.UndefOr[SchemaSolidFill] = js.native
+  var solidFill: js.UndefOr[SchemaSolidFill] = js.undefined
 }
 object SchemaShapeBackgroundFill {
   

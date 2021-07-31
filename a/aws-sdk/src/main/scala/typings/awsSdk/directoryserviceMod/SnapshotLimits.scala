@@ -2,26 +2,24 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotLimits extends StObject {
   
   /**
     * The current number of manual snapshots of the directory.
     */
-  var ManualSnapshotsCurrentCount: js.UndefOr[Limit] = js.native
+  var ManualSnapshotsCurrentCount: js.UndefOr[Limit] = js.undefined
   
   /**
     * The maximum number of manual snapshots allowed.
     */
-  var ManualSnapshotsLimit: js.UndefOr[Limit] = js.native
+  var ManualSnapshotsLimit: js.UndefOr[Limit] = js.undefined
   
   /**
     * Indicates if the manual snapshot limit has been reached.
     */
-  var ManualSnapshotsLimitReached: js.UndefOr[typings.awsSdk.directoryserviceMod.ManualSnapshotsLimitReached] = js.native
+  var ManualSnapshotsLimitReached: js.UndefOr[typings.awsSdk.directoryserviceMod.ManualSnapshotsLimitReached] = js.undefined
 }
 object SnapshotLimits {
   

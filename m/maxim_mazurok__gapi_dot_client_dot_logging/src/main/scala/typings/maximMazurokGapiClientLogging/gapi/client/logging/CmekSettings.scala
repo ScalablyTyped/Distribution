@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CmekSettings extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait CmekSettings extends StObject {
     * completed using the key that was used at the time of encryption unless access to that key has been revoked.To disable CMEK for the Logs Router, set this field to an empty string.See
     * Enabling CMEK for Logs Router (https://cloud.google.com/logging/docs/routing/managed-encryption) for more information.
     */
-  var kmsKeyName: js.UndefOr[String] = js.native
+  var kmsKeyName: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name of the CMEK settings. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The service account that will be used by the Logs Router to access your Cloud KMS key.Before enabling CMEK for Logs Router, you must first assign the role
     * roles/cloudkms.cryptoKeyEncrypterDecrypter to the service account that the Logs Router will use to access your Cloud KMS key. Use GetCmekSettings to obtain the service account
     * ID.See Enabling CMEK for Logs Router (https://cloud.google.com/logging/docs/routing/managed-encryption) for more information.
     */
-  var serviceAccountId: js.UndefOr[String] = js.native
+  var serviceAccountId: js.UndefOr[String] = js.undefined
 }
 object CmekSettings {
   

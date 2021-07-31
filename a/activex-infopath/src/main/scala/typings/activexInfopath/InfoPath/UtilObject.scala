@@ -3,20 +3,18 @@ package typings.activexInfopath.InfoPath
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UtilObject extends StObject {
   
-  val Date: VarDate = js.native
+  val Date: VarDate
   
   @JSName("InfoPath.UtilObject_typekey")
-  var InfoPathDotUtilObject_typekey: UtilObject = js.native
+  var InfoPathDotUtilObject_typekey: UtilObject
   
-  def Match(bstrValue: String, bstrPattern: String): Boolean = js.native
+  def Match(bstrValue: String, bstrPattern: String): Boolean
   
-  val Math: MathObject = js.native
+  val Math: MathObject
 }
 object UtilObject {
   

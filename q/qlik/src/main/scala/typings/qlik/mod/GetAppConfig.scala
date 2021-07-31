@@ -2,23 +2,21 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAppConfig extends StObject {
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var identity: js.UndefOr[String] = js.native
+  var identity: js.UndefOr[String] = js.undefined
   
-  var isSecure: js.UndefOr[Boolean] = js.native
+  var isSecure: js.UndefOr[Boolean] = js.undefined
   
-  var openWithoutData: js.UndefOr[Boolean] = js.native
+  var openWithoutData: js.UndefOr[Boolean] = js.undefined
   
-  var port: String | Double = js.native
+  var port: String | Double
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
 }
 object GetAppConfig {
   

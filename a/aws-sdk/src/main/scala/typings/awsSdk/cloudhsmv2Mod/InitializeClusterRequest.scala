@@ -2,26 +2,24 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitializeClusterRequest extends StObject {
   
   /**
     * The identifier (ID) of the cluster that you are claiming. To find the cluster ID, use DescribeClusters.
     */
-  var ClusterId: typings.awsSdk.cloudhsmv2Mod.ClusterId = js.native
+  var ClusterId: typings.awsSdk.cloudhsmv2Mod.ClusterId
   
   /**
     * The cluster certificate issued (signed) by your issuing certificate authority (CA). The certificate must be in PEM format and can contain a maximum of 5000 characters.
     */
-  var SignedCert: Cert = js.native
+  var SignedCert: Cert
   
   /**
     * The issuing certificate of the issuing certificate authority (CA) that issued (signed) the cluster certificate. You must use a self-signed certificate. The certificate used to sign the HSM CSR must be directly available, and thus must be the root certificate. The certificate must be in PEM format and can contain a maximum of 5000 characters.
     */
-  var TrustAnchor: Cert = js.native
+  var TrustAnchor: Cert
 }
 object InitializeClusterRequest {
   

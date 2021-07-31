@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.TooltipBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeedInput extends Control {
+trait FeedInput
+  extends StObject
+     with Control {
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>post</code> event of this

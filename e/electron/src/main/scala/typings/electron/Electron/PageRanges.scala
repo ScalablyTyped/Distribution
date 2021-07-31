@@ -2,21 +2,19 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageRanges extends StObject {
   
   /**
     * Index of the first page to print (0-based).
     */
-  var from: Double = js.native
+  var from: Double
   
   /**
     * Index of the last page to print (inclusive) (0-based).
     */
-  var to: Double = js.native
+  var to: Double
 }
 object PageRanges {
   

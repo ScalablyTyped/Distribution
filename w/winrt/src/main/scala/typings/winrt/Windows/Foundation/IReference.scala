@@ -10,13 +10,13 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IReference[T] extends IPropertyValue {
+trait IReference[T]
+  extends StObject
+     with IPropertyValue {
   
-  var value: T = js.native
+  var value: T
 }
 object IReference {
   
@@ -32,7 +32,7 @@ object IReference {
     getDoubleArray: () => Float64Array,
     getGuid: () => String,
     getGuidArray: () => js.Array[String],
-    getInspectableArray: () => js.Array[_],
+    getInspectableArray: () => js.Array[js.Any],
     getInt16: () => Double,
     getInt16Array: () => Int16Array,
     getInt32: () => Double,
@@ -69,7 +69,7 @@ object IReference {
   }
   
   @scala.inline
-  implicit class IReferenceMutableBuilder[Self <: IReference[_], T] (val x: Self with IReference[T]) extends AnyVal {
+  implicit class IReferenceMutableBuilder[Self <: IReference[?], T] (val x: Self & IReference[T]) extends AnyVal {
     
     @scala.inline
     def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])

@@ -2,15 +2,15 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextBaselineEnumValues extends EmbindEnum {
+trait TextBaselineEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Alphabetic: TextBaseline = js.native
+  var Alphabetic: TextBaseline
   
-  var Ideographic: TextBaseline = js.native
+  var Ideographic: TextBaseline
 }
 object TextBaselineEnumValues {
   

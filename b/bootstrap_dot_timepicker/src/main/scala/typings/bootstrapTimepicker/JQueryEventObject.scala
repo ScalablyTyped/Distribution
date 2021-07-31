@@ -2,13 +2,11 @@ package typings.bootstrapTimepicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryEventObject extends StObject {
   
-  var time: js.UndefOr[TimepickerTime] = js.native
+  var time: js.UndefOr[TimepickerTime] = js.undefined
 }
 object JQueryEventObject {
   

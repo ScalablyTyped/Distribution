@@ -19,7 +19,6 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.routes
 import typings.tuyaPanelKit.tuyaPanelKitStrings.stale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routersTypesMod {
@@ -28,14 +27,13 @@ object routersTypesMod {
   
   type CommonNavigationAction = Action
   
-  @js.native
   trait DefaultRouterOptions[RouteName /* <: String */] extends StObject {
     
     /**
       * Name of the route to focus by on initial render.
       * If not specified, usually the first route is used.
       */
-    var initialRouteName: js.UndefOr[RouteName] = js.native
+    var initialRouteName: js.UndefOr[RouteName] = js.undefined
   }
   object DefaultRouterOptions {
     
@@ -46,7 +44,7 @@ object routersTypesMod {
     }
     
     @scala.inline
-    implicit class DefaultRouterOptionsMutableBuilder[Self <: DefaultRouterOptions[_], RouteName /* <: String */] (val x: Self with DefaultRouterOptions[RouteName]) extends AnyVal {
+    implicit class DefaultRouterOptionsMutableBuilder[Self <: DefaultRouterOptions[?], RouteName /* <: String */] (val x: Self & DefaultRouterOptions[RouteName]) extends AnyVal {
       
       @scala.inline
       def setInitialRouteName(value: RouteName): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
@@ -57,14 +55,13 @@ object routersTypesMod {
   }
   
   /* Inlined std.Readonly<std.Partial<std.Omit<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.NavigationState<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase>, 'stale' | 'routes'>> & {  routes :std.Array<std.Omit<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.Route<string, object | undefined>, 'key'> & {  state :tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.InitialState | undefined}>}> */
-  @js.native
   trait InitialState extends StObject {
     
-    val history: js.UndefOr[js.Array[_]] = js.native
+    val history: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    val index: js.UndefOr[Double] = js.native
+    val index: js.UndefOr[Double] = js.undefined
     
-    val key: js.UndefOr[String] = js.native
+    val key: js.UndefOr[String] = js.undefined
     
     val routeNames: js.UndefOr[
         js.Array[
@@ -73,18 +70,18 @@ object routersTypesMod {
             String
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     val routes: js.Array[
-        (Omit[Route[String, js.UndefOr[js.Object]], typings.tuyaPanelKit.tuyaPanelKitStrings.key]) with `16`
-      ] = js.native
+        (Omit[Route[String, js.UndefOr[js.Object]], typings.tuyaPanelKit.tuyaPanelKitStrings.key]) & `16`
+      ]
     
-    val `type`: js.UndefOr[String] = js.native
+    val `type`: js.UndefOr[String] = js.undefined
   }
   object InitialState {
     
     @scala.inline
-    def apply(routes: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) with `16`]): InitialState = {
+    def apply(routes: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `16`]): InitialState = {
       val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialState]
     }
@@ -93,7 +90,7 @@ object routersTypesMod {
     implicit class InitialStateMutableBuilder[Self <: InitialState] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
@@ -135,10 +132,10 @@ object routersTypesMod {
       ): Self = StObject.set(x, "routeNames", js.Array(value :_*))
       
       @scala.inline
-      def setRoutes(value: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) with `16`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      def setRoutes(value: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `16`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRoutesVarargs(value: ((Omit[Route[String, js.UndefOr[js.Object]], key]) with `16`)*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      def setRoutesVarargs(value: ((Omit[Route[String, js.UndefOr[js.Object]], key]) & `16`)*): Self = StObject.set(x, "routes", js.Array(value :_*))
       
       @scala.inline
       def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -149,16 +146,15 @@ object routersTypesMod {
   }
   
   /* Inlined std.Readonly<{  type :string,   payload :object | undefined,   source :string | undefined,   target :string | undefined}> */
-  @js.native
   trait NavigationAction extends StObject {
     
-    val payload: js.UndefOr[js.Object] = js.native
+    val payload: js.UndefOr[js.Object] = js.undefined
     
-    val source: js.UndefOr[String] = js.native
+    val source: js.UndefOr[String] = js.undefined
     
-    val target: js.UndefOr[String] = js.native
+    val target: js.UndefOr[String] = js.undefined
     
-    val `type`: String = js.native
+    val `type`: String
   }
   object NavigationAction {
     
@@ -199,25 +195,24 @@ object routersTypesMod {
   type NavigationRoute[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] = (Route[
     Extract[RouteName, String], 
     /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-  ]) with `15`
+  ]) & `15`
   
   /* Inlined std.Readonly<{  key :string,   index :number,   routeNames :std.Array<std.Extract<keyof ParamList, string>>,   history :std.Array<unknown> | undefined,   routes :std.Array<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.NavigationRoute<ParamList, keyof ParamList>>,   type :string,   stale :false}> */
-  @js.native
   trait NavigationState[ParamList /* <: ParamListBase */] extends StObject {
     
-    val history: js.UndefOr[js.Array[_]] = js.native
+    val history: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    val index: Double = js.native
+    val index: Double
     
-    val key: String = js.native
+    val key: String
     
-    val routeNames: js.Array[Extract[/* keyof ParamList */ String, String]] = js.native
+    val routeNames: js.Array[Extract[/* keyof ParamList */ String, String]]
     
-    val routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]] = js.native
+    val routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]
     
-    val stale: `false` = js.native
+    val stale: `false`
     
-    val `type`: String = js.native
+    val `type`: String
   }
   object NavigationState {
     
@@ -227,19 +222,18 @@ object routersTypesMod {
       key: String,
       routeNames: js.Array[Extract[/* keyof ParamList */ String, String]],
       routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]],
-      stale: `false`,
       `type`: String
     ): NavigationState[ParamList] = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = stale.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationState[ParamList]]
     }
     
     @scala.inline
-    implicit class NavigationStateMutableBuilder[Self <: NavigationState[_], ParamList /* <: ParamListBase */] (val x: Self with NavigationState[ParamList]) extends AnyVal {
+    implicit class NavigationStateMutableBuilder[Self <: NavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & NavigationState[ParamList]) extends AnyVal {
       
       @scala.inline
-      def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
@@ -275,11 +269,11 @@ object routersTypesMod {
   
   type ParamListBase = Record[String, js.UndefOr[js.Object]]
   
-  type PartialRoute[R /* <: Route[String, js.UndefOr[js.Object]] */] = (Omit[R, key]) with KeyState
+  type PartialRoute[R /* <: Route[String, js.UndefOr[js.Object]] */] = (Omit[R, key]) & KeyState
   
-  type PartialState[State /* <: NavigationState[ParamListBase] */] = (Partial[Omit[State, stale | routes]]) with Routes[State]
+  type PartialState[State /* <: NavigationState[ParamListBase] */] = (Partial[Omit[State, stale | routes]]) & Routes[State]
   
-  type Route[RouteName /* <: String */, Params /* <: js.UndefOr[js.Object] */] = KeyStringNameRouteName[RouteName] with (ParamsReadonly[Params] | `17`[Params])
+  type Route[RouteName /* <: String */, Params /* <: js.UndefOr[js.Object] */] = KeyStringNameRouteName[RouteName] & (ParamsReadonly[Params] | `17`[Params])
   
   @js.native
   trait Router[State /* <: NavigationState[ParamListBase] */, Action /* <: NavigationAction */] extends StObject {
@@ -349,12 +343,11 @@ object routersTypesMod {
     var `type`: /* import warning: importer.ImportType#apply Failed type conversion: State['type'] */ js.Any = js.native
   }
   
-  @js.native
   trait RouterConfigOptions extends StObject {
     
-    var routeNames: js.Array[String] = js.native
+    var routeNames: js.Array[String]
     
-    var routeParamList: ParamListBase = js.native
+    var routeParamList: ParamListBase
   }
   object RouterConfigOptions {
     

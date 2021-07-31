@@ -3,15 +3,13 @@ package typings.monacoEditor.mod.languages
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FoldingMarkers extends StObject {
   
-  var end: RegExp = js.native
+  var end: RegExp
   
-  var start: RegExp = js.native
+  var start: RegExp
 }
 object FoldingMarkers {
   

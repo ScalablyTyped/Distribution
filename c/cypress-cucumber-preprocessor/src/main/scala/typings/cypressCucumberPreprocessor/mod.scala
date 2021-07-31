@@ -3,36 +3,35 @@ package typings.cypressCucumberPreprocessor
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cypress-cucumber-preprocessor", JSImport.Default)
+  @JSImport("cypress-cucumber-preprocessor", JSImport.Namespace)
   @js.native
-  def default(): js.Function1[/* file */ js.Any, js.Promise[String]] = js.native
-  @JSImport("cypress-cucumber-preprocessor", JSImport.Default)
-  @js.native
-  def default(options: js.Any): js.Function1[/* file */ js.Any, js.Promise[String]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cypress-cucumber-preprocessor", "transform")
-  @js.native
-  def transform(file: js.Any): js.Any = js.native
+  @scala.inline
+  def default(): js.Function1[/* file */ js.Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* file */ js.Any, js.Promise[String]]]
+  @scala.inline
+  def default(options: js.Any): js.Function1[/* file */ js.Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* file */ js.Any, js.Promise[String]]]
   
-  @js.native
+  @scala.inline
+  def transform(file: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   trait TableDefinition extends StObject {
     
     /** Returns an array of objects where each row is converted to an object (column header is the key). */
-    def hashes(): js.Array[StringDictionary[String]] = js.native
+    def hashes(): js.Array[StringDictionary[String]]
     
     /** Returns the table as a 2-D array. */
-    def raw(): js.Array[js.Array[String]] = js.native
+    def raw(): js.Array[js.Array[String]]
     
     /** Returns the table as a 2-D array, without the first row. */
-    def rows(): js.Array[js.Array[String]] = js.native
+    def rows(): js.Array[js.Array[String]]
     
     /** Returns an object where each row corresponds to an entry (first column is the key, second column is the value). */
-    def rowsHash(): StringDictionary[String] = js.native
+    def rowsHash(): StringDictionary[String]
   }
   object TableDefinition {
     

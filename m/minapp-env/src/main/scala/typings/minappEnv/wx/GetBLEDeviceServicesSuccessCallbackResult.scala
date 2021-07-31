@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBLEDeviceServicesSuccessCallbackResult extends StObject {
   
   /** 设备服务列表 */
-  var services: BLEService = js.native
+  var services: BLEService
 }
 object GetBLEDeviceServicesSuccessCallbackResult {
   

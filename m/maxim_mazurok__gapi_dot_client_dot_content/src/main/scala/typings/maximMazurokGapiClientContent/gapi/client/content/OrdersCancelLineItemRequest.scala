@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrdersCancelLineItemRequest extends StObject {
   
   /** The ID of the line item to cancel. Either lineItemId or productId is required. */
-  var lineItemId: js.UndefOr[String] = js.native
+  var lineItemId: js.UndefOr[String] = js.undefined
   
   /** The ID of the operation. Unique across all operations for a given order. */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /** The ID of the product to cancel. This is the REST ID used in the products service. Either lineItemId or productId is required. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /** The quantity to cancel. */
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
   
   /**
     * The reason for the cancellation. Acceptable values are: - "`customerInitiatedCancel`" - "`invalidCoupon`" - "`malformedShippingAddress`" - "`noInventory`" - "`other`" -
     * "`priceError`" - "`shippingPriceError`" - "`taxError`" - "`undeliverableShippingAddress`" - "`unsupportedPoBoxAddress`"
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /** The explanation of the reason. */
-  var reasonText: js.UndefOr[String] = js.native
+  var reasonText: js.UndefOr[String] = js.undefined
 }
 object OrdersCancelLineItemRequest {
   

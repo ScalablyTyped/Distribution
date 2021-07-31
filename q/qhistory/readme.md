@@ -10,9 +10,9 @@ Wrap history with query support
 | ------------------ | :-------------: |
 | Full name          | qhistory |
 | Keywords           | history, query, search |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 1444585 |
+| # downloads        | 1327565 |
 | # stars            | 2 |
 
 ## Links

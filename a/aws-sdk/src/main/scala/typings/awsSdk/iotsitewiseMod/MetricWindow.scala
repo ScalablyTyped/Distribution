@@ -2,16 +2,14 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricWindow extends StObject {
   
   /**
     * The tumbling time interval window.
     */
-  var tumbling: js.UndefOr[TumblingWindow] = js.native
+  var tumbling: js.UndefOr[TumblingWindow] = js.undefined
 }
 object MetricWindow {
   

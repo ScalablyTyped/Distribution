@@ -2,19 +2,19 @@ package typings.reactNativeCalendars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultiDotMarking extends Marking {
+trait MultiDotMarking
+  extends StObject
+     with Marking {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var dots: js.Array[CalendarDot] = js.native
+  var dots: js.Array[CalendarDot]
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var selectedColor: js.UndefOr[String] = js.native
+  var selectedColor: js.UndefOr[String] = js.undefined
 }
 object MultiDotMarking {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2ConversationEvent extends StObject {
   
   /** The unique identifier of the conversation this notification refers to. Format: `projects//conversations/`. */
-  var conversation: js.UndefOr[String] = js.native
+  var conversation: js.UndefOr[String] = js.undefined
   
   /** More detailed information about an error. Only set for type UNRECOVERABLE_ERROR_IN_PHONE_CALL. */
-  var errorStatus: js.UndefOr[GoogleRpcStatus] = js.native
+  var errorStatus: js.UndefOr[GoogleRpcStatus] = js.undefined
   
   /** Payload of NEW_MESSAGE event. */
-  var newMessagePayload: js.UndefOr[GoogleCloudDialogflowV2Message] = js.native
+  var newMessagePayload: js.UndefOr[GoogleCloudDialogflowV2Message] = js.undefined
   
   /** The type of the event that this notification refers to. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2ConversationEvent {
   

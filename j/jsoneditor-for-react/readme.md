@@ -12,7 +12,7 @@ React wrapper for josdejong/jsoneditor
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 5091 |
+| # downloads        | 5021 |
 | # stars            | 0 |
 
 ## Links

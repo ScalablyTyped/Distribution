@@ -5,7 +5,6 @@ import typings.page.PageJS.RouteOptions
 import typings.page.PageJS.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,7 +23,8 @@ object mod {
     @JSImport("page", "default.Context")
     @js.native
     class Context protected ()
-      extends typings.page.PageJS.Context {
+      extends StObject
+         with typings.page.PageJS.Context {
       /**
         * Initialize a new "request" `Context` with the given `path` and optional initial `state`.
         * @param {string} path  path
@@ -42,7 +42,8 @@ object mod {
     @JSImport("page", "default.Route")
     @js.native
     class Route protected ()
-      extends typings.page.PageJS.Route {
+      extends StObject
+         with typings.page.PageJS.Route {
       /**
         * Initialize `Route` with the given HTTP `path` & `options`
         * @param {string}  path    path

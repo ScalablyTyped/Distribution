@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaAuditUserLinksRequest extends StObject {
   
   /**
     * The maximum number of user links to return. The service may return fewer than this value. If unspecified, at most 1000 user links will be returned. The maximum value is 5000; values
     * above 5000 will be coerced to 5000.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A page token, received from a previous `AuditUserLinks` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to `AuditUserLinks` must
     * match the call that provided the page token.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaAuditUserLinksRequest {
   

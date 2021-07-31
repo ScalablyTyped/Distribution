@@ -2,15 +2,13 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RippleBackgroundColor extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var rippleBackgroundColor: js.UndefOr[String] = js.native
+  var rippleBackgroundColor: js.UndefOr[String] = js.undefined
 }
 object RippleBackgroundColor {
   

@@ -4,33 +4,31 @@ import typings.vsoNodeApi.coreInterfacesMod.TeamProjectCollectionReference
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitRepositoryRef extends StObject {
   
   /**
     * Team Project Collection where this Fork resides
     */
-  var collection: TeamProjectCollectionReference = js.native
+  var collection: TeamProjectCollectionReference
   
-  var id: String = js.native
+  var id: String
   
   /**
     * True if the repository was created as a fork
     */
-  var isFork: Boolean = js.native
+  var isFork: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var project: TeamProjectReference = js.native
+  var project: TeamProjectReference
   
-  var remoteUrl: String = js.native
+  var remoteUrl: String
   
-  var sshUrl: String = js.native
+  var sshUrl: String
   
-  var url: String = js.native
+  var url: String
 }
 object GitRepositoryRef {
   

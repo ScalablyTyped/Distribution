@@ -15,251 +15,249 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMAttributes[T] extends StObject {
   
-  var exportparts: js.UndefOr[String] = js.native
+  var exportparts: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[String | Double] = js.native
+  var key: js.UndefOr[String | Double] = js.undefined
   
-  var onAnimationEnd: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAnimationEnd: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
   
-  var onAnimationEndCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAnimationEndCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
   
-  var onAnimationIteration: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAnimationIteration: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
   
-  var onAnimationIterationCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAnimationIterationCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
   
-  var onAnimationStart: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAnimationStart: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
   
-  var onAnimationStartCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAnimationStartCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
   
-  var onAuxClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onAuxClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onBlurCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onBlurCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onChangeCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onChangeCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onCompositionEnd: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onCompositionEnd: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
   
-  var onCompositionEndCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onCompositionEndCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
   
-  var onCompositionStart: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onCompositionStart: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
   
-  var onCompositionStartCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onCompositionStartCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
   
-  var onCompositionUpdate: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onCompositionUpdate: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
   
-  var onCompositionUpdateCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onCompositionUpdateCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
   
-  var onContextMenu: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onContextMenu: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onContextMenuCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onContextMenuCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onCopy: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onCopy: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
   
-  var onCopyCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onCopyCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
   
-  var onCut: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onCut: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
   
-  var onCutCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onCutCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
   
-  var onDblClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onDblClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onDblClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onDblClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onDrag: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDrag: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragEnd: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragEnd: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragEndCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragEndCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragEnter: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragEnter: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragEnterCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragEnterCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragExit: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragExit: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragExitCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragExitCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragLeave: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragLeave: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragLeaveCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragLeaveCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragOverCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragOverCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragStart: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragStart: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragStartCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragStartCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDrop: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDrop: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDropCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDropCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onErrorCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onErrorCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onFocusCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onFocusCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onFocusIn: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onFocusIn: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onFocusInCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onFocusInCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onFocusOut: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onFocusOut: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onFocusOutCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onFocusOutCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onGotPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onGotPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onGotPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onGotPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onInput: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onInput: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onInputCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onInputCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onInvalid: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onInvalid: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onInvalidCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onInvalidCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
   
-  var onKeyDownCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onKeyDownCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
   
-  var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
   
-  var onKeyPressCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onKeyPressCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
   
-  var onKeyUp: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onKeyUp: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
   
-  var onKeyUpCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onKeyUpCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
   
-  var onLoad: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onLoadCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onLoadCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onLostPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onLostPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onLostPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onLostPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onMouseDown: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseDown: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onMouseDownCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseDownCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseEnter: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onMouseMove: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseMove: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onMouseMoveCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseMoveCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onMouseOut: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseOut: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onMouseOutCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseOutCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onMouseOver: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseOver: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onMouseOverCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseOverCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onMouseUp: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseUp: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onMouseUpCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseUpCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var onPaste: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onPaste: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
   
-  var onPasteCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onPasteCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
   
-  var onPointerCancel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerCancel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerCancelCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerCancelCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerDownCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerDownCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerEnterCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerEnterCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerLeaveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerLeaveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerMoveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerMoveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerOut: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerOut: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerOutCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerOutCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerOver: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerOver: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerOverCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerOverCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onReset: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onReset: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onResetCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onResetCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onScroll: js.UndefOr[js.Function1[/* event */ UIEvent, Unit]] = js.native
+  var onScroll: js.UndefOr[js.Function1[/* event */ UIEvent, Unit]] = js.undefined
   
-  var onScrollCapture: js.UndefOr[js.Function1[/* event */ UIEvent, Unit]] = js.native
+  var onScrollCapture: js.UndefOr[js.Function1[/* event */ UIEvent, Unit]] = js.undefined
   
-  var onSubmit: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onSubmit: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onSubmitCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onSubmitCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var onTouchCancel: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchCancel: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
   
-  var onTouchCancelCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchCancelCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
   
-  var onTouchEnd: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchEnd: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
   
-  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
   
-  var onTouchMove: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchMove: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
   
-  var onTouchMoveCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchMoveCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
   
-  var onTouchStart: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchStart: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
   
-  var onTouchStartCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchStartCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
   
-  var onTransitionEnd: js.UndefOr[js.Function1[/* event */ TransitionEvent, Unit]] = js.native
+  var onTransitionEnd: js.UndefOr[js.Function1[/* event */ TransitionEvent, Unit]] = js.undefined
   
-  var onTransitionEndCapture: js.UndefOr[js.Function1[/* event */ TransitionEvent, Unit]] = js.native
+  var onTransitionEndCapture: js.UndefOr[js.Function1[/* event */ TransitionEvent, Unit]] = js.undefined
   
-  var onWheel: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.native
+  var onWheel: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.undefined
   
-  var onWheelCapture: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.native
+  var onWheelCapture: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.undefined
   
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
-  var ref: js.UndefOr[js.Function1[/* elm */ js.UndefOr[T], Unit]] = js.native
+  var ref: js.UndefOr[js.Function1[/* elm */ js.UndefOr[T], Unit]] = js.undefined
   
-  var slot: js.UndefOr[String] = js.native
+  var slot: js.UndefOr[String] = js.undefined
 }
 object DOMAttributes {
   
@@ -270,7 +268,7 @@ object DOMAttributes {
   }
   
   @scala.inline
-  implicit class DOMAttributesMutableBuilder[Self <: DOMAttributes[_], T] (val x: Self with DOMAttributes[T]) extends AnyVal {
+  implicit class DOMAttributesMutableBuilder[Self <: DOMAttributes[?], T] (val x: Self & DOMAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setExportparts(value: String): Self = StObject.set(x, "exportparts", value.asInstanceOf[js.Any])

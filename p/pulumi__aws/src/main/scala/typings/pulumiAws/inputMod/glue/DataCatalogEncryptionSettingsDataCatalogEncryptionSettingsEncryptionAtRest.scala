@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest extends StObject {
   
   /**
     * The encryption-at-rest mode for encrypting Data Catalog data. Valid values are `DISABLED` and `SSE-KMS`.
     */
-  var catalogEncryptionMode: Input[String] = js.native
+  var catalogEncryptionMode: Input[String]
   
   /**
     * The ARN of the AWS KMS key to use for encryption at rest.
     */
-  var sseAwsKmsKeyId: js.UndefOr[Input[String]] = js.native
+  var sseAwsKmsKeyId: js.UndefOr[Input[String]] = js.undefined
 }
 object DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRateBasedRuleManagedKeysResponse extends StObject {
   
   /**
     * An array of IP addresses that currently are blocked by the specified RateBasedRule. 
     */
-  var ManagedKeys: js.UndefOr[typings.awsSdk.wafMod.ManagedKeys] = js.native
+  var ManagedKeys: js.UndefOr[typings.awsSdk.wafMod.ManagedKeys] = js.undefined
   
   /**
     * A null value and not currently used.
     */
-  var NextMarker: js.UndefOr[typings.awsSdk.wafMod.NextMarker] = js.native
+  var NextMarker: js.UndefOr[typings.awsSdk.wafMod.NextMarker] = js.undefined
 }
 object GetRateBasedRuleManagedKeysResponse {
   

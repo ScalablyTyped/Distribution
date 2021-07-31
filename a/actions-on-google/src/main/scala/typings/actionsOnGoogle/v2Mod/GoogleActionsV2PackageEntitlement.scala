@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2PackageEntitlement extends StObject {
   
   /**
     * List of entitlements for a given app
     */
-  var entitlements: js.UndefOr[js.Array[GoogleActionsV2Entitlement]] = js.native
+  var entitlements: js.UndefOr[js.Array[GoogleActionsV2Entitlement]] = js.undefined
   
   /**
     * Should match the package name in action package
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2PackageEntitlement {
   

@@ -6,16 +6,16 @@ import typings.std.IterableIterator
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DictConstructor
-  extends Instantiable0[Dict[js.Any | js.Object]]
+  extends StObject
+     with Instantiable0[Dict[js.Any | js.Object]]
      with Instantiable1[(/* value */ js.Any) | (/* value */ Dict[js.Object]), Dict[js.Any | js.Object]] {
   
-  def apply(): Dict[_] = js.native
-  def apply(value: js.Any): Dict[_] = js.native
+  def apply(): Dict[js.Any] = js.native
+  def apply(value: js.Any): Dict[js.Any] = js.native
   def apply[T](value: Dict[T]): Dict[T] = js.native
   
   def entries[T](`object`: Dict[T]): IterableIterator[js.Tuple2[PropertyKey, T]] = js.native

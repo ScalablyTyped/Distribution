@@ -2,17 +2,15 @@ package typings.ot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Anchor extends StObject {
     
-    var anchor: Double = js.native
+    var anchor: Double
     
-    var head: Double = js.native
+    var head: Double
   }
   object Anchor {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     

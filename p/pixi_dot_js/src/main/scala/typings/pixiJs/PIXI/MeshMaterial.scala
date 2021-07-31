@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   * @extends PIXI.Shader
   */
-@js.native
-trait MeshMaterial extends Shader {
+trait MeshMaterial
+  extends StObject
+     with Shader {
   
   /**
     * This gets automatically set by the object using this.
@@ -20,14 +20,14 @@ trait MeshMaterial extends Shader {
     * @default 1
     * @member {number}
     */
-  var alpha: Double = js.native
+  var alpha: Double
   
   /**
     * `true` if shader can be batch with the renderer's batch system.
     * @member {boolean} PIXI.MeshMaterial#batchable
     * @default true
     */
-  var batchable: Boolean = js.native
+  var batchable: Boolean
   
   /**
     * Renderer plugin for batching
@@ -35,26 +35,26 @@ trait MeshMaterial extends Shader {
     * @member {string} PIXI.MeshMaterial#pluginName
     * @default 'batch'
     */
-  var pluginName: String = js.native
+  var pluginName: String
   
   /**
     * Reference to the texture being rendered.
     * @member {PIXI.Texture}
     */
-  var texture: Texture = js.native
+  var texture: Texture
   
   /**
     * Multiply tint for the material.
     * @member {number}
     * @default 0xFFFFFF
     */
-  var tint: Double = js.native
+  var tint: Double
   
   /**
     * Gets called automatically by the Mesh. Intended to be overridden for custom
     * MeshMaterial objects.
     */
-  def update(): Unit = js.native
+  def update(): Unit
   
   /**
     * TextureMatrix instance for this Mesh, used to track Texture changes
@@ -62,7 +62,7 @@ trait MeshMaterial extends Shader {
     * @member {PIXI.TextureMatrix} PIXI.MeshMaterial#uvMatrix
     * @readonly
     */
-  val uvMatrix: TextureMatrix = js.native
+  val uvMatrix: TextureMatrix
 }
 object MeshMaterial {
   

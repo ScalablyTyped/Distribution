@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instance of this interface is used by the {@link XGridColumnModel} to get notifications about column model changes.
   * @since OOo 3.3
   */
-@js.native
-trait XGridColumnListener extends XEventListener {
+trait XGridColumnListener
+  extends StObject
+     with XEventListener {
   
   /** Invoked after a column was modified. */
-  def columnChanged(event: GridColumnEvent): Unit = js.native
+  def columnChanged(event: GridColumnEvent): Unit
 }
 object XGridColumnListener {
   

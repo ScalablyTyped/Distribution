@@ -2,21 +2,19 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchForFacetValuesQueryParams extends StObject {
   
   /**
     * The facet name.
     */
-  val facetName: String = js.native
+  val facetName: String
   
   /**
     * The facet query.
     */
-  val facetQuery: String = js.native
+  val facetQuery: String
 }
 object SearchForFacetValuesQueryParams {
   

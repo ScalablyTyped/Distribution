@@ -2,24 +2,22 @@ package typings.googleapis.manufacturersV1Mod.manufacturersV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A price.
   */
-@js.native
 trait SchemaPrice extends StObject {
   
   /**
     * The numeric value of the price.
     */
-  var amount: js.UndefOr[String] = js.native
+  var amount: js.UndefOr[String] = js.undefined
   
   /**
     * The currency in which the price is denoted.
     */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
 }
 object SchemaPrice {
   

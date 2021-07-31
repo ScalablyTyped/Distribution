@@ -4,12 +4,10 @@ import typings.vegaLite.transformMod.ImputeSequence
 import typings.vegaTypings.transformMod.ImputeMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcImputeMod {
   
-  @js.native
   trait ImputeParams extends StObject {
     
     /**
@@ -17,7 +15,7 @@ object srcImputeMod {
       *
       * __Default value:__:  `[null, null]` indicating that the window includes all objects.
       */
-    var frame: js.UndefOr[js.Tuple2[Null | Double, Null | Double]] = js.native
+    var frame: js.UndefOr[js.Tuple2[Null | Double, Null | Double]] = js.undefined
     
     /**
       * Defines the key values that should be considered for imputation.
@@ -27,7 +25,7 @@ object srcImputeMod {
       *
       * If there is no impute grouping, this property _must_ be specified.
       */
-    var keyvals: js.UndefOr[js.Array[_] | ImputeSequence] = js.native
+    var keyvals: js.UndefOr[js.Array[js.Any] | ImputeSequence] = js.undefined
     
     /**
       * The imputation method to use for the field value of imputed data objects.
@@ -35,12 +33,12 @@ object srcImputeMod {
       *
       * __Default value:__  `"value"`
       */
-    var method: js.UndefOr[ImputeMethod] = js.native
+    var method: js.UndefOr[ImputeMethod] = js.undefined
     
     /**
       * The field value to use when the imputation `method` is `"value"`.
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object ImputeParams {
     
@@ -60,7 +58,7 @@ object srcImputeMod {
       def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
       @scala.inline
-      def setKeyvals(value: js.Array[_] | ImputeSequence): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
+      def setKeyvals(value: js.Array[js.Any] | ImputeSequence): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setKeyvalsUndefined: Self = StObject.set(x, "keyvals", js.undefined)

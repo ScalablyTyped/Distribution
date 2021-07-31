@@ -7,36 +7,27 @@ import typings.glaze.glazeStrings.`-0Dot025em`
 import typings.glaze.glazeStrings.`-0Dot05em`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Normal extends StObject {
   
-  val normal: typings.glaze.glazeNumbers.`0` = js.native
+  val normal: typings.glaze.glazeNumbers.`0`
   
-  val tight: `-0Dot025em` = js.native
+  val tight: `-0Dot025em`
   
-  val tighter: `-0Dot05em` = js.native
+  val tighter: `-0Dot05em`
   
-  val wide: Dot025em = js.native
+  val wide: Dot025em
   
-  val wider: Dot05em = js.native
+  val wider: Dot05em
   
-  val widest: Dot1em = js.native
+  val widest: Dot1em
 }
 object Normal {
   
   @scala.inline
-  def apply(
-    normal: typings.glaze.glazeNumbers.`0`,
-    tight: `-0Dot025em`,
-    tighter: `-0Dot05em`,
-    wide: Dot025em,
-    wider: Dot05em,
-    widest: Dot1em
-  ): Normal = {
-    val __obj = js.Dynamic.literal(normal = normal.asInstanceOf[js.Any], tight = tight.asInstanceOf[js.Any], tighter = tighter.asInstanceOf[js.Any], wide = wide.asInstanceOf[js.Any], wider = wider.asInstanceOf[js.Any], widest = widest.asInstanceOf[js.Any])
+  def apply(): Normal = {
+    val __obj = js.Dynamic.literal(normal = 0, tight = "-0.025em", tighter = "-0.05em", wide = ".025em", wider = ".05em", widest = ".1em")
     __obj.asInstanceOf[Normal]
   }
   

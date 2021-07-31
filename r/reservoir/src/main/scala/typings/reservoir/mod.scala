@@ -3,7 +3,6 @@ package typings.reservoir
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,21 +15,23 @@ object mod {
     * @param randomNumberGenerator is an optional random number generating function to use in
     *   place of the default Math.random.
     */
+  @scala.inline
+  def apply[T](): ReservoirArray[T] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReservoirArray[T]]
+  @scala.inline
+  def apply[T](reservoirSize: Double): ReservoirArray[T] = ^.asInstanceOf[js.Dynamic].apply(reservoirSize.asInstanceOf[js.Any]).asInstanceOf[ReservoirArray[T]]
+  @scala.inline
+  def apply[T](reservoirSize: Double, randomNumberGenerator: js.Function0[Double]): ReservoirArray[T] = (^.asInstanceOf[js.Dynamic].apply(reservoirSize.asInstanceOf[js.Any], randomNumberGenerator.asInstanceOf[js.Any])).asInstanceOf[ReservoirArray[T]]
+  @scala.inline
+  def apply[T](reservoirSize: Unit, randomNumberGenerator: js.Function0[Double]): ReservoirArray[T] = (^.asInstanceOf[js.Dynamic].apply(reservoirSize.asInstanceOf[js.Any], randomNumberGenerator.asInstanceOf[js.Any])).asInstanceOf[ReservoirArray[T]]
+  
   @JSImport("reservoir", JSImport.Namespace)
   @js.native
-  def apply[T](): ReservoirArray[T] = js.native
-  @JSImport("reservoir", JSImport.Namespace)
-  @js.native
-  def apply[T](reservoirSize: js.UndefOr[scala.Nothing], randomNumberGenerator: js.Function0[Double]): ReservoirArray[T] = js.native
-  @JSImport("reservoir", JSImport.Namespace)
-  @js.native
-  def apply[T](reservoirSize: Double): ReservoirArray[T] = js.native
-  @JSImport("reservoir", JSImport.Namespace)
-  @js.native
-  def apply[T](reservoirSize: Double, randomNumberGenerator: js.Function0[Double]): ReservoirArray[T] = js.native
+  val ^ : js.Any = js.native
   
   @js.native
-  trait ReservoirArray[T] extends Array[T] {
+  trait ReservoirArray[T]
+    extends StObject
+       with Array[T] {
     
     /**
       * datum: one or more elements to consider for inclusion into the reservoir.

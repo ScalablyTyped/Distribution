@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface allows callers to add requests to the back of the queue and to determine whether the queue is empty. Using this interface should
   * normally not be necessary for anyone else than the {@link XConfigurationController} . It may be removed in the future.
   */
-@js.native
 trait XConfigurationControllerRequestQueue extends StObject {
   
   /**
     * Return whether there are pending requests for configuration changes.
     * @returns Returns `TRUE` when there is at least one request object in the queue that has not yet been processed. It returns `FALSE` when the queue is empty.
     */
-  def hasPendingRequests(): Boolean = js.native
+  def hasPendingRequests(): Boolean
   
   /**
     * Add a request for a configuration change to the request queue.
@@ -27,7 +25,7 @@ trait XConfigurationControllerRequestQueue extends StObject {
     * change requests that can not be made with the requestResourceActivation() and requestResourceDeactivation() methods.
     * @param xRequest The configuration change represented by this request object must only be committed to the configuration when the {@link com.sun.star.dra
     */
-  def postChangeRequest(xRequest: XConfigurationChangeRequest): Unit = js.native
+  def postChangeRequest(xRequest: XConfigurationChangeRequest): Unit
 }
 object XConfigurationControllerRequestQueue {
   

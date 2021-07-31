@@ -3,7 +3,6 @@ package typings.blueprintjsDatetime
 import typings.blueprintjsDatetime.timePickerMod.TimePrecision
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blueprintjsDatetimeStrings {
@@ -559,12 +558,16 @@ object blueprintjsDatetimeStrings {
   def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
-  sealed trait millisecond extends TimePrecision
+  sealed trait millisecond
+    extends StObject
+       with TimePrecision
   @scala.inline
   def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
   
   @js.native
-  sealed trait minute extends TimePrecision
+  sealed trait minute
+    extends StObject
+       with TimePrecision
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   
@@ -704,7 +707,9 @@ object blueprintjsDatetimeStrings {
   def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait second extends TimePrecision
+  sealed trait second
+    extends StObject
+       with TimePrecision
   @scala.inline
   def second: second = "second".asInstanceOf[second]
   

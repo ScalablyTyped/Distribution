@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TermsAndConditions extends StObject {
   
   /** A well-formatted HTML string. It will be parsed on the client with android.text.Html#fromHtml. */
-  var content: js.UndefOr[UserFacingMessage] = js.native
+  var content: js.UndefOr[UserFacingMessage] = js.undefined
   
   /** A short header which appears above the HTML content. */
-  var header: js.UndefOr[UserFacingMessage] = js.native
+  var header: js.UndefOr[UserFacingMessage] = js.undefined
 }
 object TermsAndConditions {
   

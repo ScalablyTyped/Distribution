@@ -2,7 +2,6 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supported actions */
@@ -29,104 +28,104 @@ trait OnRequestActions extends StObject
 object OnRequestActions {
   
   @scala.inline
-  def AddRequestCookie(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.AddRequestCookie): typings.chromeApps.chrome.webViewRequest.AddRequestCookie = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def AddRequestCookie(instanceType: String): typings.chromeApps.chrome.webViewRequest.AddRequestCookie = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "AddRequestCookie")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.AddRequestCookie]
   }
   
   @scala.inline
-  def AddResponseCookie(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseCookie): typings.chromeApps.chrome.webViewRequest.AddResponseCookie = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def AddResponseCookie(instanceType: String): typings.chromeApps.chrome.webViewRequest.AddResponseCookie = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "AddResponseCookie")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.AddResponseCookie]
   }
   
   @scala.inline
-  def AddResponseHeader(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseHeader): typings.chromeApps.chrome.webViewRequest.AddResponseHeader = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def AddResponseHeader(instanceType: String): typings.chromeApps.chrome.webViewRequest.AddResponseHeader = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "AddResponseHeader")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.AddResponseHeader]
   }
   
   @scala.inline
-  def CancelRequest(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.CancelRequest): typings.chromeApps.chrome.webViewRequest.CancelRequest = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def CancelRequest(instanceType: String): typings.chromeApps.chrome.webViewRequest.CancelRequest = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "CancelRequest")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.CancelRequest]
   }
   
   @scala.inline
-  def EditRequestCookie(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.EditRequestCookie): typings.chromeApps.chrome.webViewRequest.EditRequestCookie = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def EditRequestCookie(instanceType: String): typings.chromeApps.chrome.webViewRequest.EditRequestCookie = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "EditRequestCookie")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.EditRequestCookie]
   }
   
   @scala.inline
-  def EditResponseCookie(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.EditResponseCookie): typings.chromeApps.chrome.webViewRequest.EditResponseCookie = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def EditResponseCookie(instanceType: String): typings.chromeApps.chrome.webViewRequest.EditResponseCookie = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "EditResponseCookie")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.EditResponseCookie]
   }
   
   @scala.inline
-  def IgnoreRules(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.IgnoreRules): typings.chromeApps.chrome.webViewRequest.IgnoreRules = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def IgnoreRules(instanceType: String): typings.chromeApps.chrome.webViewRequest.IgnoreRules = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "IgnoreRules")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.IgnoreRules]
   }
   
   @scala.inline
-  def RedirectByRegEx(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RedirectByRegEx): typings.chromeApps.chrome.webViewRequest.RedirectByRegEx = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def RedirectByRegEx(instanceType: String): typings.chromeApps.chrome.webViewRequest.RedirectByRegEx = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RedirectByRegEx")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.RedirectByRegEx]
   }
   
   @scala.inline
-  def RedirectRequest(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RedirectRequest): typings.chromeApps.chrome.webViewRequest.RedirectRequest = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def RedirectRequest(instanceType: String): typings.chromeApps.chrome.webViewRequest.RedirectRequest = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RedirectRequest")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.RedirectRequest]
   }
   
   @scala.inline
-  def RedirectToEmptyDocument(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToEmptyDocument): typings.chromeApps.chrome.webViewRequest.RedirectToEmptyDocument = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def RedirectToEmptyDocument(instanceType: String): typings.chromeApps.chrome.webViewRequest.RedirectToEmptyDocument = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RedirectToEmptyDocument")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.RedirectToEmptyDocument]
   }
   
   @scala.inline
-  def RedirectToTransparentImage(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToTransparentImage): typings.chromeApps.chrome.webViewRequest.RedirectToTransparentImage = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def RedirectToTransparentImage(instanceType: String): typings.chromeApps.chrome.webViewRequest.RedirectToTransparentImage = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RedirectToTransparentImage")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.RedirectToTransparentImage]
   }
   
   @scala.inline
-  def RemoveRequestCookie(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RemoveRequestCookie): typings.chromeApps.chrome.webViewRequest.RemoveRequestCookie = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def RemoveRequestCookie(instanceType: String): typings.chromeApps.chrome.webViewRequest.RemoveRequestCookie = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RemoveRequestCookie")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.RemoveRequestCookie]
   }
   
   @scala.inline
-  def RemoveRequestHeader(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RemoveRequestHeader): typings.chromeApps.chrome.webViewRequest.RemoveRequestHeader = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def RemoveRequestHeader(instanceType: String): typings.chromeApps.chrome.webViewRequest.RemoveRequestHeader = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RemoveRequestHeader")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.RemoveRequestHeader]
   }
   
   @scala.inline
-  def RemoveResponseCookie(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseCookie): typings.chromeApps.chrome.webViewRequest.RemoveResponseCookie = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def RemoveResponseCookie(instanceType: String): typings.chromeApps.chrome.webViewRequest.RemoveResponseCookie = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RemoveResponseCookie")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.RemoveResponseCookie]
   }
   
   @scala.inline
-  def RemoveResponseHeader(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseHeader): typings.chromeApps.chrome.webViewRequest.RemoveResponseHeader = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def RemoveResponseHeader(instanceType: String): typings.chromeApps.chrome.webViewRequest.RemoveResponseHeader = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RemoveResponseHeader")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.RemoveResponseHeader]
   }
   
   @scala.inline
-  def SendMessageToExtension(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.SendMessageToExtension): typings.chromeApps.chrome.webViewRequest.SendMessageToExtension = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def SendMessageToExtension(instanceType: String): typings.chromeApps.chrome.webViewRequest.SendMessageToExtension = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "SendMessageToExtension")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.SendMessageToExtension]
   }
   
   @scala.inline
-  def SetRequestHeader(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.SetRequestHeader): typings.chromeApps.chrome.webViewRequest.SetRequestHeader = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def SetRequestHeader(instanceType: String): typings.chromeApps.chrome.webViewRequest.SetRequestHeader = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "SetRequestHeader")
     __obj.asInstanceOf[typings.chromeApps.chrome.webViewRequest.SetRequestHeader]
   }
 }

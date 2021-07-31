@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCrawlerMetricsRequest extends StObject {
   
   /**
     * A list of the names of crawlers about which to retrieve metrics.
     */
-  var CrawlerNameList: js.UndefOr[typings.awsSdk.glueMod.CrawlerNameList] = js.native
+  var CrawlerNameList: js.UndefOr[typings.awsSdk.glueMod.CrawlerNameList] = js.undefined
   
   /**
     * The maximum size of a list to return.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * A continuation token, if this is a continuation call.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object GetCrawlerMetricsRequest {
   

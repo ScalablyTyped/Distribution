@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeServicesResponse extends StObject {
   
   /**
     * Any failures associated with the call.
     */
-  var failures: js.UndefOr[Failures] = js.native
+  var failures: js.UndefOr[Failures] = js.undefined
   
   /**
     * The list of services described.
     */
-  var services: js.UndefOr[Services] = js.native
+  var services: js.UndefOr[Services] = js.undefined
 }
 object DescribeServicesResponse {
   

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait FilterOperator extends StObject
 object FilterOperator extends StObject {
   
   @js.native
-  sealed trait and extends FilterOperator
+  sealed trait and
+    extends StObject
+       with FilterOperator
   
   @js.native
-  sealed trait or extends FilterOperator
+  sealed trait or
+    extends StObject
+       with FilterOperator
 }

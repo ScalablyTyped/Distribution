@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowsInformationProtectionDataRecoveryCertificate extends StObject {
   
   // Data recovery Certificate
-  var certificate: js.UndefOr[NullableOption[Double]] = js.native
+  var certificate: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Data recovery Certificate description
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Data recovery Certificate expiration datetime
-  var expirationDateTime: js.UndefOr[String] = js.native
+  var expirationDateTime: js.UndefOr[String] = js.undefined
   
   // Data recovery Certificate subject name
-  var subjectName: js.UndefOr[NullableOption[String]] = js.native
+  var subjectName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WindowsInformationProtectionDataRecoveryCertificate {
   

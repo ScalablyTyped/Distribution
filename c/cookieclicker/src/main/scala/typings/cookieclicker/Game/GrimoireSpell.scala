@@ -3,50 +3,48 @@ package typings.cookieclicker.Game
 import typings.cookieclicker.cookieclickerNumbers.`-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrimoireSpell extends StObject {
   
   /**
     * The minimum cost of the spell, in mana
     */
-  var costMin: Double = js.native
+  var costMin: Double
   
   /**
     * The cost of the spell, in raw multiplier of max mana
     */
-  var costPercent: js.UndefOr[Double] = js.native
+  var costPercent: js.UndefOr[Double] = js.undefined
   
   /**
     * The description of the positive effect of the spell, in HTML text
     */
-  var desc: String = js.native
+  var desc: String
   
   /**
     * Called when the spell fails
     */
-  var fail: js.UndefOr[js.Function0[`-1` | Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[`-1` | Unit]] = js.undefined
   
   /**
     * The description of the negative effect of the spell, in HTML text
     */
-  var failDesc: js.UndefOr[String] = js.native
+  var failDesc: js.UndefOr[String] = js.undefined
   
-  var icon: Icon = js.native
+  var icon: Icon
   
-  var id: Double = js.native
+  var id: Double
   
   /**
     * The displayed name for the spell
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Called when the spell succeeds, always called if no fail function
     */
-  def win(): `-1` | Unit = js.native
+  def win(): `-1` | Unit
 }
 object GrimoireSpell {
   

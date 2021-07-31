@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Location extends StObject {
   
   /**
     * The Amazon S3 bucket where the data is located.
     */
-  var S3Bucket: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.S3Bucket] = js.native
+  var S3Bucket: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.S3Bucket] = js.undefined
   
   /**
     * The Amazon S3 key where the data is located.
     */
-  var S3Key: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.S3Key] = js.native
+  var S3Key: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.S3Key] = js.undefined
 }
 object S3Location {
   

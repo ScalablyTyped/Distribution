@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationPreference extends StObject {
   
   /** The App Engine application to follow, it must be in the same region as the Cloud SQL instance. */
-  var followGaeApplication: js.UndefOr[String] = js.native
+  var followGaeApplication: js.UndefOr[String] = js.undefined
   
   /** This is always *sql#locationPreference*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The preferred Compute Engine zone for the secondary/failover (for example: us-central1-a, us-central1-b, etc.). Reserved for future use. */
-  var secondaryZone: js.UndefOr[String] = js.native
+  var secondaryZone: js.UndefOr[String] = js.undefined
   
   /** The preferred Compute Engine zone (for example: us-central1-a, us-central1-b, etc.). */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object LocationPreference {
   

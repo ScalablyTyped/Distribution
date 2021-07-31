@@ -7,7 +7,6 @@ import typings.smartFoxServer.SFS2X.Entities.Variables.SFSRoomVariable
 import typings.smartFoxServer.SFS2X.Entities.Variables.SFSUserVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -18,7 +17,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.AdminMessageRequest")
   @js.native
   class AdminMessageRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.AdminMessageRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.AdminMessageRequest {
     /**
       * Creates a new AdminMessageRequest instance.
       * @param {string}               message       The message of the administrator to be sent to the target user/s defined by the recipientMode parameter.
@@ -36,7 +36,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.BanUserRequest")
   @js.native
   class BanUserRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.BanUserRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.BanUserRequest {
     /**
       * Creates a new BanUserRequest instance.
       * @param {number}  userId        The id of the user to be banned.
@@ -47,55 +48,27 @@ object System {
       */
     def this(userId: Double) = this()
     def this(userId: Double, message: String) = this()
-    def this(
-      userId: Double,
-      message: js.UndefOr[scala.Nothing],
-      banMode: typings.smartFoxServer.SFS2X.Requests.BanMode
-    ) = this()
     def this(userId: Double, message: String, banMode: typings.smartFoxServer.SFS2X.Requests.BanMode) = this()
-    def this(
-      userId: Double,
-      message: js.UndefOr[scala.Nothing],
-      banMode: js.UndefOr[scala.Nothing],
-      delaySeconds: Double
-    ) = this()
-    def this(
-      userId: Double,
-      message: js.UndefOr[scala.Nothing],
-      banMode: typings.smartFoxServer.SFS2X.Requests.BanMode,
-      delaySeconds: Double
-    ) = this()
-    def this(userId: Double, message: String, banMode: js.UndefOr[scala.Nothing], delaySeconds: Double) = this()
+    def this(userId: Double, message: Unit, banMode: typings.smartFoxServer.SFS2X.Requests.BanMode) = this()
+    def this(userId: Double, message: String, banMode: Unit, delaySeconds: Double) = this()
     def this(
       userId: Double,
       message: String,
       banMode: typings.smartFoxServer.SFS2X.Requests.BanMode,
       delaySeconds: Double
     ) = this()
+    def this(userId: Double, message: Unit, banMode: Unit, delaySeconds: Double) = this()
     def this(
       userId: Double,
-      message: js.UndefOr[scala.Nothing],
-      banMode: js.UndefOr[scala.Nothing],
-      delaySeconds: js.UndefOr[scala.Nothing],
-      durationHours: Double
-    ) = this()
-    def this(
-      userId: Double,
-      message: js.UndefOr[scala.Nothing],
-      banMode: js.UndefOr[scala.Nothing],
-      delaySeconds: Double,
-      durationHours: Double
-    ) = this()
-    def this(
-      userId: Double,
-      message: js.UndefOr[scala.Nothing],
+      message: Unit,
       banMode: typings.smartFoxServer.SFS2X.Requests.BanMode,
-      delaySeconds: js.UndefOr[scala.Nothing],
-      durationHours: Double
+      delaySeconds: Double
     ) = this()
+    def this(userId: Double, message: String, banMode: Unit, delaySeconds: Double, durationHours: Double) = this()
+    def this(userId: Double, message: String, banMode: Unit, delaySeconds: Unit, durationHours: Double) = this()
     def this(
       userId: Double,
-      message: js.UndefOr[scala.Nothing],
+      message: String,
       banMode: typings.smartFoxServer.SFS2X.Requests.BanMode,
       delaySeconds: Double,
       durationHours: Double
@@ -103,29 +76,24 @@ object System {
     def this(
       userId: Double,
       message: String,
-      banMode: js.UndefOr[scala.Nothing],
-      delaySeconds: js.UndefOr[scala.Nothing],
-      durationHours: Double
-    ) = this()
-    def this(
-      userId: Double,
-      message: String,
-      banMode: js.UndefOr[scala.Nothing],
-      delaySeconds: Double,
-      durationHours: Double
-    ) = this()
-    def this(
-      userId: Double,
-      message: String,
       banMode: typings.smartFoxServer.SFS2X.Requests.BanMode,
-      delaySeconds: js.UndefOr[scala.Nothing],
+      delaySeconds: Unit,
       durationHours: Double
     ) = this()
+    def this(userId: Double, message: Unit, banMode: Unit, delaySeconds: Double, durationHours: Double) = this()
+    def this(userId: Double, message: Unit, banMode: Unit, delaySeconds: Unit, durationHours: Double) = this()
     def this(
       userId: Double,
-      message: String,
+      message: Unit,
       banMode: typings.smartFoxServer.SFS2X.Requests.BanMode,
       delaySeconds: Double,
+      durationHours: Double
+    ) = this()
+    def this(
+      userId: Double,
+      message: Unit,
+      banMode: typings.smartFoxServer.SFS2X.Requests.BanMode,
+      delaySeconds: Unit,
       durationHours: Double
     ) = this()
   }
@@ -133,7 +101,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.ChangeRoomCapacityRequest")
   @js.native
   class ChangeRoomCapacityRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.ChangeRoomCapacityRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.ChangeRoomCapacityRequest {
     /**
       * Creates a new ChangeRoomCapacityRequest instance.
       * @param {Entities.SFSRoom} room        The Room object corresponding to the Room whose capacity should be changed.
@@ -146,7 +115,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.ChangeRoomNameRequest")
   @js.native
   class ChangeRoomNameRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.ChangeRoomNameRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.ChangeRoomNameRequest {
     /**
       * Creates a new ChangeRoomNameRequest instance.
       * @param {Entities.SFSRoom} room    The SFSRoom object corresponding to the Room whose name should be changed.
@@ -158,7 +128,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.ChangeRoomPasswordStateRequest")
   @js.native
   class ChangeRoomPasswordStateRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.ChangeRoomPasswordStateRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.ChangeRoomPasswordStateRequest {
     /**
       * Creates a new ChangeRoomPasswordStateRequest instance.
       * @param {Entities.SFSRoom} room    The SFSRoom object corresponding to the Room whose password should be changed.
@@ -170,7 +141,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.CreateRoomRequest")
   @js.native
   class CreateRoomRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.CreateRoomRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.CreateRoomRequest {
     /**
       * Creates a new CreateRoomRequest instance.
       * @param {RoomSettings}     settings    An object containing the Room configuration settings.
@@ -181,20 +153,17 @@ object System {
     def this(settings: typings.smartFoxServer.SFS2X.Requests.RoomSettings, autoJoin: Boolean) = this()
     def this(
       settings: typings.smartFoxServer.SFS2X.Requests.RoomSettings,
-      autoJoin: js.UndefOr[scala.Nothing],
-      roomToLeave: SFSRoom
-    ) = this()
-    def this(
-      settings: typings.smartFoxServer.SFS2X.Requests.RoomSettings,
       autoJoin: Boolean,
       roomToLeave: SFSRoom
     ) = this()
+    def this(settings: typings.smartFoxServer.SFS2X.Requests.RoomSettings, autoJoin: Unit, roomToLeave: SFSRoom) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.ExtensionRequest")
   @js.native
   class ExtensionRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.ExtensionRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.ExtensionRequest {
     /**
       * Creates a new ExtensionRequest instance.
       * @param {string}           extCmd The name of the command which identifies an action that should be executed by the server-side Extension.
@@ -203,14 +172,15 @@ object System {
       */
     def this(extCmd: String) = this()
     def this(extCmd: String, params: js.Object) = this()
-    def this(extCmd: String, params: js.UndefOr[scala.Nothing], room: SFSRoom) = this()
     def this(extCmd: String, params: js.Object, room: SFSRoom) = this()
+    def this(extCmd: String, params: Unit, room: SFSRoom) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.FindRoomsRequest")
   @js.native
   class FindRoomsRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.FindRoomsRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.FindRoomsRequest {
     /**
       * Creates a new FindRoomsRequest instance.
       * @param {Entities.Match.MatchExpression} expr    A matching expression that the system will use to retrieve the Rooms.
@@ -219,14 +189,15 @@ object System {
       */
     def this(expr: MatchExpression) = this()
     def this(expr: MatchExpression, groupId: String) = this()
-    def this(expr: MatchExpression, groupId: js.UndefOr[scala.Nothing], limit: Double) = this()
     def this(expr: MatchExpression, groupId: String, limit: Double) = this()
+    def this(expr: MatchExpression, groupId: Unit, limit: Double) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.FindUsersRequest")
   @js.native
   class FindUsersRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.FindUsersRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.FindUsersRequest {
     /**
       * Creates a new FindUsersRequest instance.
       * @param {Entities.Match.MatchExpression} expr   A matching expression that the system will use to retrieve the users.
@@ -235,14 +206,15 @@ object System {
       */
     def this(expr: MatchExpression) = this()
     def this(expr: MatchExpression, target: js.Any) = this()
-    def this(expr: MatchExpression, target: js.UndefOr[scala.Nothing], limit: Double) = this()
     def this(expr: MatchExpression, target: js.Any, limit: Double) = this()
+    def this(expr: MatchExpression, target: Unit, limit: Double) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.JoinRoomRequest")
   @js.native
   class JoinRoomRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.JoinRoomRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.JoinRoomRequest {
     /**
       * Creates a new JoinRoomRequest instance.
       * @param {any}     room          The id or the name of the Room to be joined.
@@ -252,23 +224,19 @@ object System {
       */
     def this(room: js.Any) = this()
     def this(room: js.Any, password: String) = this()
-    def this(room: js.Any, password: js.UndefOr[scala.Nothing], roomIdToLeave: Double) = this()
     def this(room: js.Any, password: String, roomIdToLeave: Double) = this()
-    def this(
-      room: js.Any,
-      password: js.UndefOr[scala.Nothing],
-      roomIdToLeave: js.UndefOr[scala.Nothing],
-      asSpect: Boolean
-    ) = this()
-    def this(room: js.Any, password: js.UndefOr[scala.Nothing], roomIdToLeave: Double, asSpect: Boolean) = this()
-    def this(room: js.Any, password: String, roomIdToLeave: js.UndefOr[scala.Nothing], asSpect: Boolean) = this()
+    def this(room: js.Any, password: Unit, roomIdToLeave: Double) = this()
     def this(room: js.Any, password: String, roomIdToLeave: Double, asSpect: Boolean) = this()
+    def this(room: js.Any, password: String, roomIdToLeave: Unit, asSpect: Boolean) = this()
+    def this(room: js.Any, password: Unit, roomIdToLeave: Double, asSpect: Boolean) = this()
+    def this(room: js.Any, password: Unit, roomIdToLeave: Unit, asSpect: Boolean) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.KickUserRequest")
   @js.native
   class KickUserRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.KickUserRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.KickUserRequest {
     /**
       * Creates a new KickUserRequest instance.
       * @param {number} userId       The id of the user to be kicked.
@@ -277,8 +245,8 @@ object System {
       */
     def this(userId: Double) = this()
     def this(userId: Double, message: String) = this()
-    def this(userId: Double, message: js.UndefOr[scala.Nothing], delaySeconds: Double) = this()
     def this(userId: Double, message: String, delaySeconds: Double) = this()
+    def this(userId: Double, message: Unit, delaySeconds: Double) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.LeaveRoomRequest")
@@ -288,14 +256,16 @@ object System {
     * @param {Entities.SFSRoom} [room=null] The SFSRoom object corresponding to the Room that the current user must leave. If null, the last Room joined by the user is left.
     */
   class LeaveRoomRequest ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.LeaveRoomRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.LeaveRoomRequest {
     def this(room: SFSRoom) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.LoginRequest")
   @js.native
   class LoginRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.LoginRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.LoginRequest {
     /**
       * Creates a new LoginRequest instance.
       * @param {string} userName The name to be assigned to the user. If not passed and if the Zone allows guest users, the name is generated automatically by the server.
@@ -305,17 +275,12 @@ object System {
       */
     def this(userName: String) = this()
     def this(userName: String, password: String) = this()
-    def this(userName: String, password: js.UndefOr[scala.Nothing], params: js.Object) = this()
     def this(userName: String, password: String, params: js.Object) = this()
-    def this(
-      userName: String,
-      password: js.UndefOr[scala.Nothing],
-      params: js.UndefOr[scala.Nothing],
-      zoneName: String
-    ) = this()
-    def this(userName: String, password: js.UndefOr[scala.Nothing], params: js.Object, zoneName: String) = this()
-    def this(userName: String, password: String, params: js.UndefOr[scala.Nothing], zoneName: String) = this()
+    def this(userName: String, password: Unit, params: js.Object) = this()
     def this(userName: String, password: String, params: js.Object, zoneName: String) = this()
+    def this(userName: String, password: String, params: Unit, zoneName: String) = this()
+    def this(userName: String, password: Unit, params: js.Object, zoneName: String) = this()
+    def this(userName: String, password: Unit, params: Unit, zoneName: String) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.LogoutRequest")
@@ -324,12 +289,14 @@ object System {
     * Creates a new LogoutRequest instance.
     */
   class LogoutRequest ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.LogoutRequest
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.LogoutRequest
   
   @JSGlobal("SFS2X.Requests.System.ModeratorMessageRequest")
   @js.native
   class ModeratorMessageRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.ModeratorMessageRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.ModeratorMessageRequest {
     /**
       * Creates a new ModeratorMessageRequest instance.
       * @param {string}               message       The message of the moderator to be sent to the target user/s defined by the recipientMode parameter.
@@ -347,7 +314,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.ObjectMessageRequest")
   @js.native
   class ObjectMessageRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.ObjectMessageRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.ObjectMessageRequest {
     /**
       * Creates a new ObjectMessageRequest instance.
       * @param {Object}             obj        An object containing custom parameters to be sent to the message recipients.
@@ -356,7 +324,7 @@ object System {
       */
     def this(obj: js.Object) = this()
     def this(obj: js.Object, targetRoom: SFSRoom) = this()
-    def this(obj: js.Object, targetRoom: js.UndefOr[scala.Nothing], recipients: js.Array[SFSUser]) = this()
+    def this(obj: js.Object, targetRoom: Unit, recipients: js.Array[SFSUser]) = this()
     def this(obj: js.Object, targetRoom: SFSRoom, recipients: js.Array[SFSUser]) = this()
   }
   
@@ -367,14 +335,16 @@ object System {
     * @param {Entities.SFSRoom} [targetRoom=null] The SFSRoom object corresponding to the Room in which the spectator should be turned to player. If null, the last Room joined by the user is used.
     */
   class PlayerToSpectatorRequest ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.PlayerToSpectatorRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.PlayerToSpectatorRequest {
     def this(targetRoom: SFSRoom) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.PrivateMessageRequest")
   @js.native
   class PrivateMessageRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.PrivateMessageRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.PrivateMessageRequest {
     /**
       * Creates a new PrivateMessageRequest instance.
       * @param {string} message     The message to be sent to to the recipient user.
@@ -388,7 +358,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.PublicMessageRequest")
   @js.native
   class PublicMessageRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.PublicMessageRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.PublicMessageRequest {
     /**
       * Creates a new PublicMessageRequest instance.
       * @param {string}           message    The message to be sent to all the users in the target Room.
@@ -397,14 +368,15 @@ object System {
       */
     def this(message: String) = this()
     def this(message: String, params: js.Object) = this()
-    def this(message: String, params: js.UndefOr[scala.Nothing], targetRoom: SFSRoom) = this()
     def this(message: String, params: js.Object, targetRoom: SFSRoom) = this()
+    def this(message: String, params: Unit, targetRoom: SFSRoom) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.SetRoomVariablesRequest")
   @js.native
   class SetRoomVariablesRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.SetRoomVariablesRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.SetRoomVariablesRequest {
     /**
       * Creates a new SetRoomVariablesRequest instance.
       * @param {Entities.Variables.SFSRoomVariable[]} roomVariables A list of SFSRoomVariable objects representing the Room Variables to be set.
@@ -416,7 +388,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.SetUserVariablesRequest")
   @js.native
   class SetUserVariablesRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.SetUserVariablesRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.SetUserVariablesRequest {
     /**
       * Creates a new SetUserVariablesRequest instance.
       * @param {Entities.Variables.SFSUserVariable} userVariables A list of SFSUserVariable objects representing the User Variables to be set.
@@ -427,7 +400,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.SpectatorToPlayerRequest")
   @js.native
   class SpectatorToPlayerRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.SpectatorToPlayerRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.SpectatorToPlayerRequest {
     /**
       * Creates a new SpectatorToPlayerRequest instance.
       * @param {Entities.SFSRoom} targetRoom The SFSRoom object corresponding to the Room in which the spectator should be turned to player. If null, the last Room joined by the user is used.
@@ -438,7 +412,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.SubscribeRoomGroupRequest")
   @js.native
   class SubscribeRoomGroupRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.SubscribeRoomGroupRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.SubscribeRoomGroupRequest {
     /**
       * Creates a new SubscribeRoomGroupRequest instance.
       * @param {string} groupId The name of the Room Group to subscribe.
@@ -449,7 +424,8 @@ object System {
   @JSGlobal("SFS2X.Requests.System.UnsubscribeRoomGroupRequest")
   @js.native
   class UnsubscribeRoomGroupRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.System.UnsubscribeRoomGroupRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.System.UnsubscribeRoomGroupRequest {
     /**
       * Creates a new UnsubscribeRoomGroupRequest instance.
       * @param {string} groupId The name of the Room Group to unsubscribe.

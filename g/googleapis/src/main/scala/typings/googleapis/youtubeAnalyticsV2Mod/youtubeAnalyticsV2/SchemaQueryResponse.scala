@@ -2,13 +2,11 @@ package typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for TargetedQueriesService.Query.
   */
-@js.native
 trait SchemaQueryResponse extends StObject {
   
   /**
@@ -23,19 +21,19 @@ trait SchemaQueryResponse extends StObject {
     * API response will return columns in this order: `ageGroup`, `gender`,
     * `viewerPercentage`.
     */
-  var columnHeaders: js.UndefOr[js.Array[SchemaResultTableColumnHeader]] = js.native
+  var columnHeaders: js.UndefOr[js.Array[SchemaResultTableColumnHeader]] = js.undefined
   
   /**
     * When set, indicates that the operation failed.
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
     * This value specifies the type of data included in the API response. For
     * the query method, the kind property value will be
     * `youtubeAnalytics#resultTable`.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The list contains all rows of the result table. Each item in the list is
@@ -46,7 +44,7 @@ trait SchemaQueryResponse extends StObject {
     * the response.  The response for a query with the `day` dimension will not
     * contain rows for the most recent days.
     */
-  var rows: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var rows: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object SchemaQueryResponse {
   
@@ -81,7 +79,7 @@ object SchemaQueryResponse {
     def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def setRows(value: js.Array[js.Array[_]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFilesResponse extends StObject {
   
   /** The files returned. */
-  var files: js.UndefOr[js.Array[File]] = js.native
+  var files: js.UndefOr[js.Array[File]] = js.undefined
   
   /** The token to retrieve the next page of files, or empty if there are no more files to return. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListFilesResponse {
   

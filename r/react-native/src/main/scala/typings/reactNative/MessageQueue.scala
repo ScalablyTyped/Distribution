@@ -2,17 +2,15 @@ package typings.reactNative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageQueue extends StObject {
   
-  def getCallableModule(name: String): js.Object = js.native
+  def getCallableModule(name: String): js.Object
   
-  def registerCallableModule(name: String, module: js.Object): Unit = js.native
+  def registerCallableModule(name: String, module: js.Object): Unit
   
-  def registerLazyCallableModule(name: String, factory: js.Function0[js.Object]): Unit = js.native
+  def registerLazyCallableModule(name: String, factory: js.Function0[js.Object]): Unit
 }
 object MessageQueue {
   

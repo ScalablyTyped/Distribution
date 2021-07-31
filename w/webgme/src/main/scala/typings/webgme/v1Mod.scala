@@ -5,7 +5,6 @@ import typings.webgme.GmeCommon.RelId
 import typings.webgme.anon.Guid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ object v1Mod {
   
   type GUID = String
   
-  @js.native
-  trait JsonContainment extends /* index */ StringDictionary[JsonContainment]
+  trait JsonContainment
+    extends StObject
+       with /* index */ StringDictionary[JsonContainment]
   object JsonContainment {
     
     @scala.inline
@@ -27,24 +27,23 @@ object v1Mod {
     }
   }
   
-  @js.native
   trait JsonNode extends StObject {
     
-    var attributes: js.Any = js.native
+    var attributes: js.Any
     
-    var base: String = js.native
+    var base: String
     
-    var constratints: js.Any = js.native
+    var constratints: js.Any
     
-    var meta: js.Any = js.native
+    var meta: js.Any
     
-    var parent: String = js.native
+    var parent: String
     
-    var pointers: js.Any = js.native
+    var pointers: js.Any
     
-    var registry: js.Any = js.native
+    var registry: js.Any
     
-    var sets: js.Any = js.native
+    var sets: js.Any
   }
   object JsonNode {
     
@@ -92,22 +91,21 @@ object v1Mod {
     }
   }
   
-  @js.native
   trait JsonObj extends StObject {
     
     // guid tree of hashes
-    var bases: js.Any = js.native
+    var bases: js.Any
     
-    var containment: JsonContainment = js.native
+    var containment: JsonContainment
     
-    var metaSheets: js.Any = js.native
+    var metaSheets: js.Any
     
     //
-    var nodes: js.Any = js.native
+    var nodes: js.Any
     
-    var relids: js.Array[RelId] = js.native
+    var relids: js.Array[RelId]
     
-    var root: Guid = js.native
+    var root: Guid
   }
   object JsonObj {
     

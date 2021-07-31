@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartialUpdateInstanceRequest extends StObject {
   
   /** Required. The Instance which will (partially) replace the current value. */
-  var instance: js.UndefOr[Instance] = js.native
+  var instance: js.UndefOr[Instance] = js.undefined
   
   /** Required. The subset of Instance fields which should be replaced. Must be explicitly set. */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object PartialUpdateInstanceRequest {
   

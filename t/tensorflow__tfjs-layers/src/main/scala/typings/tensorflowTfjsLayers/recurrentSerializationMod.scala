@@ -16,7 +16,6 @@ import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import typings.tensorflowTfjsLayers.typesMod.BaseSerialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recurrentSerializationMod {
@@ -25,24 +24,25 @@ object recurrentSerializationMod {
   @js.native
   val recurrentLayerClassNames: js.Array[RecurrentLayerClassName] = js.native
   
-  @js.native
-  trait BaseRNNLayerConfig extends LayerConfig {
+  trait BaseRNNLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var cell: js.UndefOr[RNNCellSerialization | js.Array[RNNCellSerialization]] = js.native
+    var cell: js.UndefOr[RNNCellSerialization | js.Array[RNNCellSerialization]] = js.undefined
     
-    var go_backwards: js.UndefOr[Boolean] = js.native
+    var go_backwards: js.UndefOr[Boolean] = js.undefined
     
-    var input_dim: js.UndefOr[Double] = js.native
+    var input_dim: js.UndefOr[Double] = js.undefined
     
-    var input_length: js.UndefOr[Double] = js.native
+    var input_length: js.UndefOr[Double] = js.undefined
     
-    var return_sequences: js.UndefOr[Boolean] = js.native
+    var return_sequences: js.UndefOr[Boolean] = js.undefined
     
-    var return_state: js.UndefOr[Boolean] = js.native
+    var return_state: js.UndefOr[Boolean] = js.undefined
     
-    var stateful: js.UndefOr[Boolean] = js.native
+    var stateful: js.UndefOr[Boolean] = js.undefined
     
-    var unroll: js.UndefOr[Boolean] = js.native
+    var unroll: js.UndefOr[Boolean] = js.undefined
   }
   object BaseRNNLayerConfig {
     
@@ -108,12 +108,13 @@ object recurrentSerializationMod {
     }
   }
   
-  @js.native
-  trait GRUCellConfig extends SimpleRNNCellConfig {
+  trait GRUCellConfig
+    extends StObject
+       with SimpleRNNCellConfig {
     
-    var implementation: js.UndefOr[Double] = js.native
+    var implementation: js.UndefOr[Double] = js.undefined
     
-    var recurrent_activation: js.UndefOr[String] = js.native
+    var recurrent_activation: js.UndefOr[String] = js.undefined
   }
   object GRUCellConfig {
     
@@ -142,12 +143,13 @@ object recurrentSerializationMod {
   
   type GRUCellSerialization = BaseSerialization[GRUCell, GRUCellConfig]
   
-  @js.native
-  trait GRULayerConfig extends SimpleRNNLayerConfig {
+  trait GRULayerConfig
+    extends StObject
+       with SimpleRNNLayerConfig {
     
-    var implementation: js.UndefOr[Double] = js.native
+    var implementation: js.UndefOr[Double] = js.undefined
     
-    var recurrent_activation: js.UndefOr[ActivationSerialization] = js.native
+    var recurrent_activation: js.UndefOr[ActivationSerialization] = js.undefined
   }
   object GRULayerConfig {
     
@@ -176,14 +178,15 @@ object recurrentSerializationMod {
   
   type GRULayerSerialization = BaseLayerSerialization[GRU, GRULayerConfig]
   
-  @js.native
-  trait LSTMCellConfig extends SimpleRNNCellConfig {
+  trait LSTMCellConfig
+    extends StObject
+       with SimpleRNNCellConfig {
     
-    var implementation: js.UndefOr[Double] = js.native
+    var implementation: js.UndefOr[Double] = js.undefined
     
-    var recurrent_activation: js.UndefOr[ActivationSerialization] = js.native
+    var recurrent_activation: js.UndefOr[ActivationSerialization] = js.undefined
     
-    var unit_forget_bias: js.UndefOr[Boolean] = js.native
+    var unit_forget_bias: js.UndefOr[Boolean] = js.undefined
   }
   object LSTMCellConfig {
     
@@ -218,14 +221,15 @@ object recurrentSerializationMod {
   
   type LSTMCellSerialization = BaseSerialization[LSTMCell, LSTMCellConfig]
   
-  @js.native
-  trait LSTMLayerConfig extends SimpleRNNLayerConfig {
+  trait LSTMLayerConfig
+    extends StObject
+       with SimpleRNNLayerConfig {
     
-    var implementation: js.UndefOr[Double] = js.native
+    var implementation: js.UndefOr[Double] = js.undefined
     
-    var recurrent_activation: js.UndefOr[ActivationSerialization] = js.native
+    var recurrent_activation: js.UndefOr[ActivationSerialization] = js.undefined
     
-    var unit_forget_bias: js.UndefOr[Boolean] = js.native
+    var unit_forget_bias: js.UndefOr[Boolean] = js.undefined
   }
   object LSTMLayerConfig {
     
@@ -283,36 +287,37 @@ object recurrentSerializationMod {
   
   type RecurrentLayerSerialization = SimpleRNNLayerSerialization | LSTMLayerSerialization | GRULayerSerialization
   
-  @js.native
-  trait SimpleRNNCellConfig extends LayerConfig {
+  trait SimpleRNNCellConfig
+    extends StObject
+       with LayerConfig {
     
-    var activation: js.UndefOr[ActivationSerialization] = js.native
+    var activation: js.UndefOr[ActivationSerialization] = js.undefined
     
-    var bias_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var bias_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var bias_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var bias_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var bias_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var bias_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var dropout: js.UndefOr[Double] = js.native
+    var dropout: js.UndefOr[Double] = js.undefined
     
-    var kernel_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var kernel_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var kernel_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var kernel_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var kernel_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var kernel_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var recurrent_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var recurrent_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var recurrent_dropout: js.UndefOr[Double] = js.native
+    var recurrent_dropout: js.UndefOr[Double] = js.undefined
     
-    var recurrent_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var recurrent_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var recurrent_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var recurrent_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var units: Double = js.native
+    var units: Double
     
-    var use_bias: js.UndefOr[Boolean] = js.native
+    var use_bias: js.UndefOr[Boolean] = js.undefined
   }
   object SimpleRNNCellConfig {
     
@@ -410,36 +415,37 @@ object recurrentSerializationMod {
   
   type SimpleRNNCellSerialization = BaseSerialization[SimpleRNNCell, SimpleRNNCellConfig]
   
-  @js.native
-  trait SimpleRNNLayerConfig extends BaseRNNLayerConfig {
+  trait SimpleRNNLayerConfig
+    extends StObject
+       with BaseRNNLayerConfig {
     
-    var activation: js.UndefOr[ActivationSerialization] = js.native
+    var activation: js.UndefOr[ActivationSerialization] = js.undefined
     
-    var bias_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var bias_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var bias_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var bias_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var bias_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var bias_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var dropout: js.UndefOr[Double] = js.native
+    var dropout: js.UndefOr[Double] = js.undefined
     
-    var kernel_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var kernel_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var kernel_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var kernel_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var kernel_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var kernel_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var recurrent_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var recurrent_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var recurrent_dropout: js.UndefOr[Double] = js.native
+    var recurrent_dropout: js.UndefOr[Double] = js.undefined
     
-    var recurrent_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var recurrent_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var recurrent_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var recurrent_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var units: Double = js.native
+    var units: Double
     
-    var use_bias: js.UndefOr[Boolean] = js.native
+    var use_bias: js.UndefOr[Boolean] = js.undefined
   }
   object SimpleRNNLayerConfig {
     
@@ -537,10 +543,11 @@ object recurrentSerializationMod {
   
   type SimpleRNNLayerSerialization = BaseLayerSerialization[SimpleRNN, SimpleRNNLayerConfig]
   
-  @js.native
-  trait StackedRNNCellsConfig extends LayerConfig {
+  trait StackedRNNCellsConfig
+    extends StObject
+       with LayerConfig {
     
-    var cells: js.Array[RNNCellSerialization] = js.native
+    var cells: js.Array[RNNCellSerialization]
   }
   object StackedRNNCellsConfig {
     

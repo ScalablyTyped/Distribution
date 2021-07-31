@@ -3,23 +3,23 @@ package typings.azdata.mod.nb
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDisplayResult extends ICellOutput {
+trait IDisplayResult
+  extends StObject
+     with ICellOutput {
   
   /**
     * Mime bundle expected to contain mime type -> contents mappings.
     * This is dynamic and is controlled by kernels, so cannot be more specific
     */
-  var data: StringDictionary[js.Any] = js.native
+  var data: StringDictionary[js.Any]
   
   /**
     * Optional metadata, also a mime bundle
     */
   @JSName("metadata")
-  var metadata_IDisplayResult: js.UndefOr[js.Object] = js.native
+  var metadata_IDisplayResult: js.UndefOr[js.Object] = js.undefined
 }
 object IDisplayResult {
   

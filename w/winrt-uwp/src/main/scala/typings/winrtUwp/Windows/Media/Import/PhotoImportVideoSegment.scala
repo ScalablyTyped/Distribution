@@ -4,27 +4,25 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an imported video segment. */
-@js.native
 trait PhotoImportVideoSegment extends StObject {
   
   /** Gets the date of the imported video segment. */
-  var date: Date = js.native
+  var date: Date
   
   /** Gets the name of the imported video segment. */
-  var name: String = js.native
+  var name: String
   
   /** Gets the sibling file associated with the imported video segment. */
-  var sibling: PhotoImportSidecar = js.native
+  var sibling: PhotoImportSidecar
   
   /** Gets the sidecar file associated with the imported video segment. */
-  var sidecars: IVectorView[PhotoImportSidecar] = js.native
+  var sidecars: IVectorView[PhotoImportSidecar]
   
   /** Gets the size of the imported video segment, in bytes. */
-  var sizeInBytes: Double = js.native
+  var sizeInBytes: Double
 }
 object PhotoImportVideoSegment {
   

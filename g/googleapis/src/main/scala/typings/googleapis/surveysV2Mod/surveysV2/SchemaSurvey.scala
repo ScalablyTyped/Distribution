@@ -2,73 +2,71 @@ package typings.googleapis.surveysV2Mod.surveysV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Representation of an individual survey object.
   */
-@js.native
 trait SchemaSurvey extends StObject {
   
   /**
     * Targeting-criteria message containing demographic information
     */
-  var audience: js.UndefOr[SchemaSurveyAudience] = js.native
+  var audience: js.UndefOr[SchemaSurveyAudience] = js.undefined
   
   /**
     * Cost to run the survey and collect the necessary number of responses.
     */
-  var cost: js.UndefOr[SchemaSurveyCost] = js.native
+  var cost: js.UndefOr[SchemaSurveyCost] = js.undefined
   
   /**
     * Additional information to store on behalf of the API consumer and
     * associate with this question. This binary blob is treated as opaque. This
     * field is limited to 64K bytes.
     */
-  var customerData: js.UndefOr[String] = js.native
+  var customerData: js.UndefOr[String] = js.undefined
   
   /**
     * Text description of the survey.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * List of email addresses for survey owners. Must contain at least the
     * address of the user making the API call.
     */
-  var owners: js.UndefOr[js.Array[String]] = js.native
+  var owners: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of questions defining the survey.
     */
-  var questions: js.UndefOr[js.Array[SchemaSurveyQuestion]] = js.native
+  var questions: js.UndefOr[js.Array[SchemaSurveyQuestion]] = js.undefined
   
   /**
     * Reason for the survey being rejected. Only present if the survey state is
     * rejected.
     */
-  var rejectionReason: js.UndefOr[SchemaSurveyRejection] = js.native
+  var rejectionReason: js.UndefOr[SchemaSurveyRejection] = js.undefined
   
   /**
     * State that the survey is in.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Unique survey ID, that is viewable in the URL of the Survey Creator UI
     */
-  var surveyUrlId: js.UndefOr[String] = js.native
+  var surveyUrlId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional name that will be given to the survey.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Number of responses desired for the survey.
     */
-  var wantedResponseCount: js.UndefOr[Double] = js.native
+  var wantedResponseCount: js.UndefOr[Double] = js.undefined
 }
 object SchemaSurvey {
   

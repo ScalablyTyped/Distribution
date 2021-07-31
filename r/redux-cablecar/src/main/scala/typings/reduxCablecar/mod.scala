@@ -6,7 +6,6 @@ import typings.redux.mod.Middleware
 import typings.reduxCablecar.anon.Connect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,9 +16,9 @@ object mod {
   
   @JSImport("redux-cablecar", JSImport.Default)
   @js.native
-  def default: (Middleware[js.Object, _, Dispatch[AnyAction]]) with Connect = js.native
+  def default: (Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Connect = js.native
   @scala.inline
-  def default_=(x: (Middleware[js.Object, _, Dispatch[AnyAction]]) with Connect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  def default_=(x: (Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Connect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   @js.native
   trait CableCar extends StObject {
@@ -37,18 +36,17 @@ object mod {
     def send(action: String): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var connected: js.UndefOr[js.Function0[Unit]] = js.native
+    var connected: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var disconnected: js.UndefOr[js.Function0[Unit]] = js.native
+    var disconnected: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var optimisticOnFail: js.UndefOr[Boolean] = js.native
+    var optimisticOnFail: js.UndefOr[Boolean] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object Options {
     

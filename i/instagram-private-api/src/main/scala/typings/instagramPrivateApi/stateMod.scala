@@ -13,7 +13,6 @@ import typings.toughCookie.mod.CookieJar.Serialized
 import typings.toughCookie.mod.MemoryCookieStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateMod {
@@ -124,7 +123,7 @@ object stateMod {
     
     var radioType: String = js.native
     
-    def serialize(): js.Promise[Constants with js.Any] = js.native
+    def serialize(): js.Promise[Constants & js.Any] = js.native
     
     def serializeCookieJar(): js.Promise[Serialized] = js.native
     

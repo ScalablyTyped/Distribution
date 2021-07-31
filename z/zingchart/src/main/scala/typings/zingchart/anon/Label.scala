@@ -2,81 +2,79 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
   /**
     * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely transparent and 1.0 being co
     * mpletely opaque. Note that the leading zero is required before the decimal. 0.3 | 0.4 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g., 'purple', 'blue'), hexadecimal notation (e.g., '#666
     * 699', '#33ccff'), or RGB notation (e.g., 'rgb(255,0,0)', 'rgb(0,0,255)'). 'none' | 'transparent' | 'purple' | '#33ccff' | 'rgb(100
     * , 15, 15)' | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border color of the object. Colors can be entered by name (e.g., 'purple', 'blue'), hexadecimal notation (e.g., '#666699'
     * , '#33ccff'), or RGB notation (e.g., 'rgb(255,0,0)', 'rgb(0,0,255)'). 'none' | 'transparent' | 'purple' | '#33ccff' | 'rgb(100, 15
     * , 15)' | ...
     */
-  var `border-color`: js.UndefOr[String] = js.native
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border radius of the object. 2 | 3 | '5px' | ...
     */
-  var `border-radius`: js.UndefOr[Double] = js.native
+  var `border-radius`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the border width of the object. 1 | 3 | '6px' | ...
     */
-  var `border-width`: js.UndefOr[Double] = js.native
+  var `border-width`: js.UndefOr[Double] = js.undefined
   
-  var label: js.UndefOr[Textalign] = js.native
+  var label: js.UndefOr[Textalign] = js.undefined
   
   /**
     * Sets the line color of the object. Colors can be entered by name (e.g., 'purple', 'blue'), hexadecimal notation (e.g., '#666699',
     * '#33ccff'), or RGB notation (e.g., 'rgb(255,0,0)', 'rgb(0,0,255)'). 'none' | 'transparent' | 'purple' | '#33ccff' | 'rgb(100, 15,
     * 15)' | ...
     */
-  var `line-color`: js.UndefOr[String] = js.native
+  var `line-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the line style of the object. 'solid' | 'dotted' | 'dashed' | 'dashdot'
     */
-  var `line-style`: js.UndefOr[String] = js.native
+  var `line-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the line width of the object. 1 | 3 | '6px' | ...
     */
-  var `line-width`: js.UndefOr[Double] = js.native
+  var `line-width`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets an ending offset for the scale marker. 0.1 | ...
     */
-  var `offset-end`: js.UndefOr[Double] = js.native
+  var `offset-end`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets a starting offset for the scale marker. 0.5 | ...
     */
-  var `offset-start`: js.UndefOr[Double] = js.native
+  var `offset-start`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the range of the scale marker. Provide one value for line scale markers and two values (starting and ending) for area scale m
     * arkers. [60] | [20,40] | ...
     */
-  var range: js.UndefOr[js.Any] = js.native
+  var range: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the scale marker type: area or line. 'area' | 'line'
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Label {
   

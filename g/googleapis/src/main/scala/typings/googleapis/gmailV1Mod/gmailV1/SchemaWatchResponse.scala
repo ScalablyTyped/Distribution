@@ -2,25 +2,23 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Push notification watch response.
   */
-@js.native
 trait SchemaWatchResponse extends StObject {
   
   /**
     * When Gmail will stop sending notifications for mailbox updates (epoch
     * millis). Call watch again before this time to renew the watch.
     */
-  var expiration: js.UndefOr[String] = js.native
+  var expiration: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the mailbox&#39;s current history record.
     */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
 }
 object SchemaWatchResponse {
   

@@ -2,30 +2,28 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.bellmanFord
   */
-@js.native
 trait SearchBellmanFordOptions extends StObject {
   
   /**
     * Indicating whether the algorithm should only go along
     * edges from source to target (default false).
     */
-  var directed: Boolean = js.native
+  var directed: Boolean
   
   /**
     * The root node (selector or collection) where the search starts.
     */
-  var root: js.Any = js.native
+  var root: js.Any
   
   /**
     * A function that returns the positive numeric weight for this edge.
     */
-  var weight: js.UndefOr[WeightFn] = js.native
+  var weight: js.UndefOr[WeightFn] = js.undefined
 }
 object SearchBellmanFordOptions {
   

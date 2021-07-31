@@ -3,17 +3,15 @@ package typings.ckeditorCkeditor5Engine.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Key extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var name: String = js.native
+  var name: String
   
-  var value: String | RegExp | js.Function = js.native
+  var value: String | RegExp | js.Function
 }
 object Key {
   

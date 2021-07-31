@@ -2,13 +2,11 @@ package typings.cordovaPluginQrscanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 * An object representing the current status of QRScanner.
 */
-@js.native
 trait QRScannerStatus extends StObject {
   
   /**
@@ -18,25 +16,25 @@ trait QRScannerStatus extends StObject {
     * (`AVAuthorizationStatus.Authorized`). On platforms with permissions granted
     * at install (Android pre-6.0, Windows Phone) this property is always true.
     */
-  var authorized: Boolean = js.native
+  var authorized: Boolean
   
   /**
     * A boolean value which is true only if the users' device can enable a light
     * in the direction of the currentCamera.
     */
-  var canEnableLight: Boolean = js.native
+  var canEnableLight: Boolean
   
   /**
     * A boolean value which is true only if the users' operating system is able
     * to `QRScanner.openSettings()`.
     */
-  var canOpenSettings: Boolean = js.native
+  var canOpenSettings: Boolean
   
   /**
     * A number representing the index of the currentCamera. `0` is the back
     * camera, `1` is the front.
     */
-  var currentCamera: Double = js.native
+  var currentCamera: Double
   
   /**
     * A boolean value which is true if the user permenantly denied camera access
@@ -44,41 +42,41 @@ trait QRScannerStatus extends StObject {
     * only be gained by requesting the user change their decision (consider
     * offering a link to the setting via `openSettings()`).
     */
-  var denied: Boolean = js.native
+  var denied: Boolean
   
   /**
     * A boolean value which is true if the light is enabled.
     */
-  var lightEnabled: Boolean = js.native
+  var lightEnabled: Boolean
   
   /**
     * A boolean value which is true if QRScanner is prepared to capture video and
     * render it to the view.
     */
-  var prepared: Boolean = js.native
+  var prepared: Boolean
   
   /**
     * A boolean value which is true if QRScanner is displaying a live preview
     * from the device's camera. Set to false when the preview is paused.
     */
-  var previewing: Boolean = js.native
+  var previewing: Boolean
   
   /**
     * A boolean value which is true if the user is unable to grant permissions due
     * to parental controls, organization security configuration profiles, or
     * similar reasons.
     */
-  var restricted: Boolean = js.native
+  var restricted: Boolean
   
   /**
     * A boolean value which is true if QRScanner is actively scanning for a QR code.
     */
-  var scanning: Boolean = js.native
+  var scanning: Boolean
   
   /**
     * A boolean value which is true when the native webview background is transparent.
     */
-  var webviewBackgroundIsTransparent: Boolean = js.native
+  var webviewBackgroundIsTransparent: Boolean
 }
 object QRScannerStatus {
   

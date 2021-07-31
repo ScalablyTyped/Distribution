@@ -2,37 +2,35 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapLayerEventType extends StObject {
   
-  var click: MapLayerMouseEvent = js.native
+  var click: MapLayerMouseEvent
   
-  var contextmenu: MapLayerMouseEvent = js.native
+  var contextmenu: MapLayerMouseEvent
   
-  var dblclick: MapLayerMouseEvent = js.native
+  var dblclick: MapLayerMouseEvent
   
-  var mousedown: MapLayerMouseEvent = js.native
+  var mousedown: MapLayerMouseEvent
   
-  var mouseenter: MapLayerMouseEvent = js.native
+  var mouseenter: MapLayerMouseEvent
   
-  var mouseleave: MapLayerMouseEvent = js.native
+  var mouseleave: MapLayerMouseEvent
   
-  var mousemove: MapLayerMouseEvent = js.native
+  var mousemove: MapLayerMouseEvent
   
-  var mouseout: MapLayerMouseEvent = js.native
+  var mouseout: MapLayerMouseEvent
   
-  var mouseover: MapLayerMouseEvent = js.native
+  var mouseover: MapLayerMouseEvent
   
-  var mouseup: MapLayerMouseEvent = js.native
+  var mouseup: MapLayerMouseEvent
   
-  var touchcancel: MapLayerTouchEvent = js.native
+  var touchcancel: MapLayerTouchEvent
   
-  var touchend: MapLayerTouchEvent = js.native
+  var touchend: MapLayerTouchEvent
   
-  var touchstart: MapLayerTouchEvent = js.native
+  var touchstart: MapLayerTouchEvent
 }
 object MapLayerEventType {
   

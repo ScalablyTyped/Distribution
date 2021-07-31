@@ -4,17 +4,15 @@ import typings.formatjsEcma402Abstract.typesDisplaynamesMod.CurrencyCode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NarrowRecordShortRecord extends StObject {
   
-  var long: Record[CurrencyCode, String] = js.native
+  var long: Record[CurrencyCode, String]
   
-  var narrow: Record[CurrencyCode, String] = js.native
+  var narrow: Record[CurrencyCode, String]
   
-  var short: Record[CurrencyCode, String] = js.native
+  var short: Record[CurrencyCode, String]
 }
 object NarrowRecordShortRecord {
   

@@ -2,14 +2,12 @@ package typings.semanticUiTransition.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-transition.SemanticUI.TransitionSettings._Impl, 'useFailSafe'> */
-@js.native
 trait PickImpluseFailSafe extends StObject {
   
-  var useFailSafe: Boolean = js.native
+  var useFailSafe: Boolean
 }
 object PickImpluseFailSafe {
   

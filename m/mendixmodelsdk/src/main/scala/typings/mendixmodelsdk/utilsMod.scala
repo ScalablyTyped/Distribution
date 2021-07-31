@@ -3,58 +3,52 @@ package typings.mendixmodelsdk
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
   object utils {
     
-    @JSImport("mendixmodelsdk/dist/sdk/utils", "utils.assertNotNull")
+    @JSImport("mendixmodelsdk/dist/sdk/utils", "utils")
     @js.native
-    def assertNotNull[T](value: T, propertyName: String): Unit = js.native
-    @JSImport("mendixmodelsdk/dist/sdk/utils", "utils.assertNotNull")
-    @js.native
-    def assertNotNull[T](value: T, propertyName: String, listy: Boolean): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def assertNotNull[T](value: T, propertyName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertNotNull")(value.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def assertNotNull[T](value: T, propertyName: String, listy: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertNotNull")(value.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], listy.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Combines the given `parts` and returns them as an URL, avoiding duplicate slashes.
       */
-    @JSImport("mendixmodelsdk/dist/sdk/utils", "utils.combineUrl")
-    @js.native
-    def combineUrl(parts: String*): String = js.native
+    @scala.inline
+    def combineUrl(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("combineUrl")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Flattens an array of arrays of items of type `T`, returning a single array
       * that consists of the concatenation of the original arrays.
       */
-    @JSImport("mendixmodelsdk/dist/sdk/utils", "utils.flatten")
-    @js.native
-    def flatten[T](array: js.Array[js.Array[T]]): js.Array[T] = js.native
+    @scala.inline
+    def flatten[T](array: js.Array[js.Array[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     
-    @JSImport("mendixmodelsdk/dist/sdk/utils", "utils.isBrowser")
-    @js.native
-    def isBrowser(): Boolean = js.native
+    @scala.inline
+    def isBrowser(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowser")().asInstanceOf[Boolean]
     
-    @JSImport("mendixmodelsdk/dist/sdk/utils", "utils.isObject")
-    @js.native
-    def isObject(data: js.Any): Boolean = js.native
+    @scala.inline
+    def isObject(data: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Generates a random UUID to set the ID of an element or unit to.
       * There is no intrinsic ID collision detection/avoidance mechanism but it's good enough in practice.
       */
-    @JSImport("mendixmodelsdk/dist/sdk/utils", "utils.randomUuid")
-    @js.native
-    def randomUuid(): String = js.native
+    @scala.inline
+    def randomUuid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUuid")().asInstanceOf[String]
     
-    @JSImport("mendixmodelsdk/dist/sdk/utils", "utils.removeFromArray")
-    @js.native
-    def removeFromArray[T](list: js.Array[T], item: T): Unit = js.native
+    @scala.inline
+    def removeFromArray[T](list: js.Array[T], item: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFromArray")(list.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("mendixmodelsdk/dist/sdk/utils", "utils.shallowEquals")
-    @js.native
-    def shallowEquals(first: js.Array[_], second: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def shallowEquals(first: js.Array[js.Any], second: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEquals")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     type IMap[T] = StringDictionary[T]
   }

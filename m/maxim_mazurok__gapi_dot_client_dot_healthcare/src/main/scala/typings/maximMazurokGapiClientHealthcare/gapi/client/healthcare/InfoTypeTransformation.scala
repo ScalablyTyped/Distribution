@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfoTypeTransformation extends StObject {
   
   /** Config for character mask. */
-  var characterMaskConfig: js.UndefOr[CharacterMaskConfig] = js.native
+  var characterMaskConfig: js.UndefOr[CharacterMaskConfig] = js.undefined
   
   /** Config for crypto hash. */
-  var cryptoHashConfig: js.UndefOr[CryptoHashConfig] = js.native
+  var cryptoHashConfig: js.UndefOr[CryptoHashConfig] = js.undefined
   
   /** Config for date shift. */
-  var dateShiftConfig: js.UndefOr[DateShiftConfig] = js.native
+  var dateShiftConfig: js.UndefOr[DateShiftConfig] = js.undefined
   
   /** InfoTypes to apply this transformation to. If this is not specified, the transformation applies to any info_type. */
-  var infoTypes: js.UndefOr[js.Array[String]] = js.native
+  var infoTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Config for text redaction. */
-  var redactConfig: js.UndefOr[js.Any] = js.native
+  var redactConfig: js.UndefOr[js.Any] = js.undefined
   
   /** Config for replace with InfoType. */
-  var replaceWithInfoTypeConfig: js.UndefOr[js.Any] = js.native
+  var replaceWithInfoTypeConfig: js.UndefOr[js.Any] = js.undefined
 }
 object InfoTypeTransformation {
   

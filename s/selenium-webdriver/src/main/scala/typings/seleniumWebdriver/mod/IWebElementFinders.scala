@@ -2,10 +2,8 @@ package typings.seleniumWebdriver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWebElementFinders extends StObject {
   
   /**
@@ -48,7 +46,7 @@ trait IWebElementFinders extends StObject {
     *     commands against the located element. If the element is not found, the
     *     element will be invalidated and all scheduled commands aborted.
     */
-  def findElement(locator: Locator): WebElementPromise = js.native
+  def findElement(locator: Locator): WebElementPromise
   
   /**
     * Schedules a command to find all of the descendants of this element that
@@ -59,7 +57,7 @@ trait IWebElementFinders extends StObject {
     * @return {!Promise.<!Array.<!WebElement>>} A
     *     promise that will resolve to an array of WebElements.
     */
-  def findElements(locator: Locator): js.Promise[js.Array[WebElement]] = js.native
+  def findElements(locator: Locator): js.Promise[js.Array[WebElement]]
 }
 object IWebElementFinders {
   

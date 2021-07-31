@@ -2,26 +2,24 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/clearing.html#optional-javascript-configuration
-@js.native
 trait ClearingOptions extends StObject {
   
-  var close_selectors: js.UndefOr[String] = js.native
+  var close_selectors: js.UndefOr[String] = js.undefined
   
-  var init: js.UndefOr[Boolean] = js.native
+  var init: js.UndefOr[Boolean] = js.undefined
   
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
   
-  var open_selectors: js.UndefOr[String] = js.native
+  var open_selectors: js.UndefOr[String] = js.undefined
   
-  var skip_selector: js.UndefOr[String] = js.native
+  var skip_selector: js.UndefOr[String] = js.undefined
   
-  var templates: js.UndefOr[js.Object] = js.native
+  var templates: js.UndefOr[js.Object] = js.undefined
   
-  var touch_label: js.UndefOr[String] = js.native
+  var touch_label: js.UndefOr[String] = js.undefined
 }
 object ClearingOptions {
   

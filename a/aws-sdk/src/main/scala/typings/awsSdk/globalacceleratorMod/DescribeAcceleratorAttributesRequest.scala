@@ -2,16 +2,14 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAcceleratorAttributesRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the accelerator with the attributes that you want to describe.
     */
-  var AcceleratorArn: GenericString = js.native
+  var AcceleratorArn: GenericString
 }
 object DescribeAcceleratorAttributesRequest {
   

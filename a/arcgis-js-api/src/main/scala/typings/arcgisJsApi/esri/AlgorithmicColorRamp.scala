@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.algorithmic
 import typings.arcgisJsApi.arcgisJsApiStrings.hsv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlgorithmicColorRamp extends ColorRamp {
+trait AlgorithmicColorRamp
+  extends StObject
+     with ColorRamp {
   
   /**
     * The algorithm used to generate the colors between the `fromColor` and `toColor`.

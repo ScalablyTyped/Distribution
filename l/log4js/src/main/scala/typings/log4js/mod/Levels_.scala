@@ -2,35 +2,33 @@ package typings.log4js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Levels_ extends StObject {
   
-  var ALL: Level = js.native
+  var ALL: Level
   
-  var DEBUG: Level = js.native
+  var DEBUG: Level
   
-  var ERROR: Level = js.native
+  var ERROR: Level
   
-  var FATAL: Level = js.native
+  var FATAL: Level
   
-  var INFO: Level = js.native
+  var INFO: Level
   
-  var MARK: Level = js.native
+  var MARK: Level
   
-  var OFF: Level = js.native
+  var OFF: Level
   
-  var TRACE: Level = js.native
+  var TRACE: Level
   
-  var WARN: Level = js.native
+  var WARN: Level
   
-  def addLevels(customLevels: js.Object): Unit = js.native
+  def addLevels(customLevels: js.Object): Unit
   
-  def getLevel(level: String): Level = js.native
+  def getLevel(level: String): Level
   
-  var levels: js.Array[Level] = js.native
+  var levels: js.Array[Level]
 }
 object Levels_ {
   

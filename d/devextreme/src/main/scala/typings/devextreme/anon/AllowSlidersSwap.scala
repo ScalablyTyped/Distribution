@@ -4,23 +4,21 @@ import typings.devextreme.devextremeStrings.onMoving
 import typings.devextreme.devextremeStrings.onMovingComplete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowSlidersSwap extends StObject {
   
-  var allowSlidersSwap: js.UndefOr[Boolean] = js.native
+  var allowSlidersSwap: js.UndefOr[Boolean] = js.undefined
   
-  var animationEnabled: js.UndefOr[Boolean] = js.native
+  var animationEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var callValueChanged: js.UndefOr[onMoving | onMovingComplete] = js.native
+  var callValueChanged: js.UndefOr[onMoving | onMovingComplete] = js.undefined
   
-  var manualRangeSelectionEnabled: js.UndefOr[Boolean] = js.native
+  var manualRangeSelectionEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var moveSelectedRangeByClick: js.UndefOr[Boolean] = js.native
+  var moveSelectedRangeByClick: js.UndefOr[Boolean] = js.undefined
   
-  var snapToTicks: js.UndefOr[Boolean] = js.native
+  var snapToTicks: js.UndefOr[Boolean] = js.undefined
 }
 object AllowSlidersSwap {
   

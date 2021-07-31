@@ -2,31 +2,29 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTemplateVersionsRequest extends StObject {
   
   /**
     * The  string that specifies which page of results to return in a paginated response. This parameter is not supported for application, campaign, and journey metrics.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The maximum number of items to include in each page of a paginated response. This parameter is not supported for application, campaign, and journey metrics.
     */
-  var PageSize: js.UndefOr[string] = js.native
+  var PageSize: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the message template. A template name must start with an alphanumeric character and can contain a maximum of 128 characters. The characters can be alphanumeric characters, underscores (_), or hyphens (-). Template names are case sensitive.
     */
-  var TemplateName: string = js.native
+  var TemplateName: string
   
   /**
     * The type of channel that the message template is designed for. Valid values are: EMAIL, PUSH, SMS, and VOICE.
     */
-  var TemplateType: string = js.native
+  var TemplateType: string
 }
 object ListTemplateVersionsRequest {
   

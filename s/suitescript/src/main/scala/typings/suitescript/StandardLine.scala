@@ -2,29 +2,27 @@ package typings.suitescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardLine extends StObject {
   
-  def getEntityId(): Double = js.native
+  def getEntityId(): Double
   
-  def getId(): Double = js.native
+  def getId(): Double
   
-  def getSubsidiaryId(): Double = js.native
+  def getSubsidiaryId(): Double
   
-  def getTaxAmount(): String = js.native
+  def getTaxAmount(): String
   
-  def getTaxItemId(): Double = js.native
+  def getTaxItemId(): Double
   
-  def getTaxType(): String = js.native
+  def getTaxType(): String
   
-  def getTaxableAmount(): String = js.native
+  def getTaxableAmount(): String
   
-  def isPosting(): Boolean = js.native
+  def isPosting(): Boolean
   
-  def isTaxable(): Boolean = js.native
+  def isTaxable(): Boolean
 }
 object StandardLine {
   

@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditableItem extends Object {
+trait EditableItem
+  extends StObject
+     with Object {
   
   /**
     * *Read-only* The feature layer associated with the editable item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#EditableItem)
     */
-  var layer: FeatureLayer = js.native
+  var layer: FeatureLayer
   
   /**
     * *Read-only* The workflow type that this item supports.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#EditableItem)
     */
-  var supports: String = js.native
+  var supports: String
 }
 object EditableItem {
   

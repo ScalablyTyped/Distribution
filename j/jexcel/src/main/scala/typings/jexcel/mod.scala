@@ -35,7 +35,6 @@ import typings.std.HTMLTextAreaElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -44,22 +43,21 @@ object mod extends Shortcut {
   @js.native
   val ^ : JExcel = js.native
   
-  @js.native
   trait ActionHistory extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var insertBefore: Boolean = js.native
+    var insertBefore: Boolean
     
-    var numOfRows: Double = js.native
+    var numOfRows: Double
     
-    var rowData: js.Array[CellValue] = js.native
+    var rowData: js.Array[CellValue]
     
-    var rowNode: js.Array[HTMLTableRowElement] = js.native
+    var rowNode: js.Array[HTMLTableRowElement]
     
-    var rowNumber: Double = js.native
+    var rowNumber: Double
     
-    var rowRecords: js.Array[HTMLTableDataCellElement] = js.native
+    var rowRecords: js.Array[HTMLTableDataCellElement]
   }
   object ActionHistory {
     
@@ -115,14 +113,13 @@ object mod extends Shortcut {
   //
   // Column options
   // ----------------------------------------------------------------------
-  @js.native
   trait CalendarOptions extends StObject {
     
     /** Date format */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** Fullscreen (this is automatic set for screensize < 800) */
-    var fullscreen: js.UndefOr[Boolean] = js.native
+    var fullscreen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Translations can be done here
@@ -130,42 +127,42 @@ object mod extends Shortcut {
       */
     var months: js.UndefOr[
         js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
-      ] = js.native
+      ] = js.undefined
     
     // tslint:disable-next-line ban-types
-    var onchange: js.UndefOr[js.Function] = js.native
+    var onchange: js.UndefOr[js.Function] = js.undefined
     
     /** Events */
     // tslint:disable-next-line ban-types
-    var onclose: js.UndefOr[js.Function] = js.native
+    var onclose: js.UndefOr[js.Function] = js.undefined
     
     /** Placeholder */
-    var placeholder: js.UndefOr[CellValue] = js.native
+    var placeholder: js.UndefOr[CellValue] = js.undefined
     
     /** Allow keyboard date entry */
-    var readonly: js.UndefOr[Boolean] = js.native
+    var readonly: js.UndefOr[Boolean] = js.undefined
     
     /** Show the reset button */
-    var resetButton: js.UndefOr[Boolean] = js.native
+    var resetButton: js.UndefOr[Boolean] = js.undefined
     
     /** Show timepicker */
-    var time: js.UndefOr[Boolean] = js.native
+    var time: js.UndefOr[Boolean] = js.undefined
     
     /** Today is default */
-    var today: js.UndefOr[Boolean] = js.native
+    var today: js.UndefOr[Boolean] = js.undefined
     
     /** Value */
-    var value: js.UndefOr[CellValue] = js.native
+    var value: js.UndefOr[CellValue] = js.undefined
     
     /**
       * Default: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
       */
-    var weekdays: js.UndefOr[js.Tuple7[String, String, String, String, String, String, String]] = js.native
+    var weekdays: js.UndefOr[js.Tuple7[String, String, String, String, String, String, String]] = js.undefined
     
     /**
       * Default: ["S", "M", "T", "W", "T", "F", "S"]
       */
-    var weekdays_short: js.UndefOr[js.Tuple7[String, String, String, String, String, String, String]] = js.native
+    var weekdays_short: js.UndefOr[js.Tuple7[String, String, String, String, String, String, String]] = js.undefined
   }
   object CalendarOptions {
     
@@ -265,50 +262,49 @@ object mod extends Shortcut {
   // ----------------------------------------------------------------------
   type CellValue = String | Double | Boolean
   
-  @js.native
   trait Column extends StObject {
     
     /**
       * Default: "center"
       */
-    var align: js.UndefOr[center | left | right] = js.native
+    var align: js.UndefOr[center | left | right] = js.undefined
     
-    var autocomplete: js.UndefOr[Boolean] = js.native
+    var autocomplete: js.UndefOr[Boolean] = js.undefined
     
-    var decimal: js.UndefOr[String] = js.native
+    var decimal: js.UndefOr[String] = js.undefined
     
-    var editor: js.UndefOr[ColumnEditor] = js.native
+    var editor: js.UndefOr[ColumnEditor] = js.undefined
     
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[CellValue] = js.native
+    var name: js.UndefOr[CellValue] = js.undefined
     
-    var options: js.UndefOr[CalendarOptions] = js.native
+    var options: js.UndefOr[CalendarOptions] = js.undefined
     
-    var primaryKey: js.UndefOr[Boolean] = js.native
+    var primaryKey: js.UndefOr[Boolean] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var render: js.UndefOr[String] = js.native
+    var render: js.UndefOr[String] = js.undefined
     
-    var source: js.UndefOr[js.Array[SourceValue]] = js.native
+    var source: js.UndefOr[js.Array[SourceValue]] = js.undefined
     
-    var title: js.UndefOr[CellValue] = js.native
+    var title: js.UndefOr[CellValue] = js.undefined
     
     /**
       * @see https://bossanova.uk/jexcel/v4/examples/column-types
       */
     var `type`: js.UndefOr[
         autocomplete | calendar | checkbox | color | dropdown | hidden | html | image | numeric | radio | text
-      ] = js.native
+      ] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var wordWrap: js.UndefOr[Boolean] = js.native
+    var wordWrap: js.UndefOr[Boolean] = js.undefined
   }
   object Column {
     
@@ -430,20 +426,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ColumnEditor extends StObject {
     
     // tslint:disable-next-line ban-types
-    var closeEditor: js.UndefOr[js.Function] = js.native
+    var closeEditor: js.UndefOr[js.Function] = js.undefined
     
     // tslint:disable-next-line ban-types
-    var getValue: js.UndefOr[js.Function] = js.native
+    var getValue: js.UndefOr[js.Function] = js.undefined
     
     // tslint:disable-next-line ban-types
-    var openEditor: js.UndefOr[js.Function] = js.native
+    var openEditor: js.UndefOr[js.Function] = js.undefined
     
     // tslint:disable-next-line ban-types
-    var setValue: js.UndefOr[js.Function] = js.native
+    var setValue: js.UndefOr[js.Function] = js.undefined
   }
   object ColumnEditor {
     
@@ -482,40 +477,39 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait EventsOptions extends StObject {
     
     /** After all changes are applied in the table. */
     // tslint:disable-next-line ban-types
-    var onafterchanges: js.UndefOr[js.Function] = js.native
+    var onafterchanges: js.UndefOr[js.Function] = js.undefined
     
     /** Before a column value is changed. NOTE: It is possible to overwrite the original value, by return a new value on this method. v3.4.0+ */
     // tslint:disable-next-line ban-types
-    var onbeforechange: js.UndefOr[js.Function] = js.native
+    var onbeforechange: js.UndefOr[js.Function] = js.undefined
     
     /** Before a column is excluded. You can cancel the insert event by returning false. */
     // tslint:disable-next-line ban-types
-    var onbeforedeletecolumn: js.UndefOr[js.Function] = js.native
+    var onbeforedeletecolumn: js.UndefOr[js.Function] = js.undefined
     
     /** Before a row is deleted. You can cancel the delete event by returning false. */
     // tslint:disable-next-line ban-types
-    var onbeforedeleterow: js.UndefOr[js.Function] = js.native
+    var onbeforedeleterow: js.UndefOr[js.Function] = js.undefined
     
     /** Before a new column is inserted. You can cancel the insert event by returning false. */
     // tslint:disable-next-line ban-types
-    var onbeforeinsertcolumn: js.UndefOr[js.Function] = js.native
+    var onbeforeinsertcolumn: js.UndefOr[js.Function] = js.undefined
     
     /** Before a new row is inserted. You can cancel the insert event by returning false. */
     // tslint:disable-next-line ban-types
-    var onbeforeinsertrow: js.UndefOr[js.Function] = js.native
+    var onbeforeinsertrow: js.UndefOr[js.Function] = js.undefined
     
     /** Before the paste action is performed. Used to parse any input data, should return the data. */
     // tslint:disable-next-line ban-types
-    var onbeforepaste: js.UndefOr[js.Function] = js.native
+    var onbeforepaste: js.UndefOr[js.Function] = js.undefined
     
     /** On table blur */
     // tslint:disable-next-line ban-types
-    var onblur: js.UndefOr[js.Function] = js.native
+    var onblur: js.UndefOr[js.Function] = js.undefined
     
     /** After a column value is changed. */
     var onchange: js.UndefOr[
@@ -527,95 +521,95 @@ object mod extends Shortcut {
           /* value */ CellValue, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** On header change */
     // tslint:disable-next-line ban-types
-    var onchangeheader: js.UndefOr[js.Function] = js.native
+    var onchangeheader: js.UndefOr[js.Function] = js.undefined
     
     /** When a setMeta is called. */
     // tslint:disable-next-line ban-types
-    var onchangemeta: js.UndefOr[js.Function] = js.native
+    var onchangemeta: js.UndefOr[js.Function] = js.undefined
     
     /** When the page is changed. */
     // tslint:disable-next-line ban-types
-    var onchangepage: js.UndefOr[js.Function] = js.native
+    var onchangepage: js.UndefOr[js.Function] = js.undefined
     
     /** When a setStyle is called. */
     // tslint:disable-next-line ban-types
-    var onchangestyle: js.UndefOr[js.Function] = js.native
+    var onchangestyle: js.UndefOr[js.Function] = js.undefined
     
     /** After a column is excluded. */
     // tslint:disable-next-line ban-types
-    var ondeletecolumn: js.UndefOr[js.Function] = js.native
+    var ondeletecolumn: js.UndefOr[js.Function] = js.undefined
     
     /** After a row is excluded. */
     // tslint:disable-next-line ban-types
-    var ondeleterow: js.UndefOr[js.Function] = js.native
+    var ondeleterow: js.UndefOr[js.Function] = js.undefined
     
     /** When a closeEditor is called. */
     // tslint:disable-next-line ban-types
-    var oneditionend: js.UndefOr[js.Function] = js.native
+    var oneditionend: js.UndefOr[js.Function] = js.undefined
     
     /** When a openEditor is called. */
     // tslint:disable-next-line ban-types
-    var oneditionstart: js.UndefOr[js.Function] = js.native
+    var oneditionstart: js.UndefOr[js.Function] = js.undefined
     
     /** On table focus */
     // tslint:disable-next-line ban-types
-    var onfocus: js.UndefOr[js.Function] = js.native
+    var onfocus: js.UndefOr[js.Function] = js.undefined
     
     /** After a new column is inserted. */
     // tslint:disable-next-line ban-types
-    var oninsertcolumn: js.UndefOr[js.Function] = js.native
+    var oninsertcolumn: js.UndefOr[js.Function] = js.undefined
     
     /** After a new row is inserted. */
     // tslint:disable-next-line ban-types
-    var oninsertrow: js.UndefOr[js.Function] = js.native
+    var oninsertrow: js.UndefOr[js.Function] = js.undefined
     
     /** This method is called when the method setData */
     // tslint:disable-next-line ban-types
-    var onload: js.UndefOr[js.Function] = js.native
+    var onload: js.UndefOr[js.Function] = js.undefined
     
     /** On column merge */
     // tslint:disable-next-line ban-types
-    var onmerge: js.UndefOr[js.Function] = js.native
+    var onmerge: js.UndefOr[js.Function] = js.undefined
     
     /** After a column is moved to a new position. */
     // tslint:disable-next-line ban-types
-    var onmovecolumn: js.UndefOr[js.Function] = js.native
+    var onmovecolumn: js.UndefOr[js.Function] = js.undefined
     
     /** After a row is moved to a new position. */
     // tslint:disable-next-line ban-types
-    var onmoverow: js.UndefOr[js.Function] = js.native
+    var onmoverow: js.UndefOr[js.Function] = js.undefined
     
     /** After a paste action is performed in the javascript table. */
     // tslint:disable-next-line ban-types
-    var onpaste: js.UndefOr[js.Function] = js.native
+    var onpaste: js.UndefOr[js.Function] = js.undefined
     
     /** On redo is applied */
     // tslint:disable-next-line ban-types
-    var onredo: js.UndefOr[js.Function] = js.native
+    var onredo: js.UndefOr[js.Function] = js.undefined
     
     /** After a change in column width. */
     // tslint:disable-next-line ban-types
-    var onresizecolumn: js.UndefOr[js.Function] = js.native
+    var onresizecolumn: js.UndefOr[js.Function] = js.undefined
     
     /** After a change in row height. */
     // tslint:disable-next-line ban-types
-    var onresizerow: js.UndefOr[js.Function] = js.native
+    var onresizerow: js.UndefOr[js.Function] = js.undefined
     
     /** On the selection is changed. */
     // tslint:disable-next-line ban-types
-    var onselection: js.UndefOr[js.Function] = js.native
+    var onselection: js.UndefOr[js.Function] = js.undefined
     
     /** After a colum is sorted. */
     // tslint:disable-next-line ban-types
-    var onsort: js.UndefOr[js.Function] = js.native
+    var onsort: js.UndefOr[js.Function] = js.undefined
     
     /** On undo is applied */
     // tslint:disable-next-line ban-types
-    var onundo: js.UndefOr[js.Function] = js.native
+    var onundo: js.UndefOr[js.Function] = js.undefined
   }
   object EventsOptions {
     
@@ -818,157 +812,156 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait InitializationOptions extends StObject {
     
     /** Allow comments over the cells: bool */
-    var allowComments: js.UndefOr[Boolean] = js.native
+    var allowComments: js.UndefOr[Boolean] = js.undefined
     
     /** Allow delete a column: bool */
-    var allowDeleteColumn: js.UndefOr[Boolean] = js.native
+    var allowDeleteColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Allow delete a row: bool */
-    var allowDeleteRow: js.UndefOr[Boolean] = js.native
+    var allowDeleteRow: js.UndefOr[Boolean] = js.undefined
     
     /** Allow table export: bool */
-    var allowExport: js.UndefOr[Boolean] = js.native
+    var allowExport: js.UndefOr[Boolean] = js.undefined
     
     /** Allow insert a new column: bool */
-    var allowInsertColumn: js.UndefOr[Boolean] = js.native
+    var allowInsertColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Allow insert a new row: bool */
-    var allowInsertRow: js.UndefOr[Boolean] = js.native
+    var allowInsertRow: js.UndefOr[Boolean] = js.undefined
     
     /** Allow user to create a new column: bool */
-    var allowManualInsertColumn: js.UndefOr[Boolean] = js.native
+    var allowManualInsertColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Allow user to insert a new row: bool */
-    var allowManualInsertRow: js.UndefOr[Boolean] = js.native
+    var allowManualInsertRow: js.UndefOr[Boolean] = js.undefined
     
     /** Allow rename a column: bool */
-    var allowRenameColumn: js.UndefOr[Boolean] = js.native
+    var allowRenameColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Auto increment actions when using the dragging corner */
-    var autoIncrement: js.UndefOr[js.Any] = js.native
+    var autoIncrement: js.UndefOr[js.Any] = js.undefined
     
     /** Allow column dragging: bool */
-    var columnDrag: js.UndefOr[Boolean] = js.native
+    var columnDrag: js.UndefOr[Boolean] = js.undefined
     
     /** Allow column resizing: bool */
-    var columnResize: js.UndefOr[Boolean] = js.native
+    var columnResize: js.UndefOr[Boolean] = js.undefined
     
     /** Allow column sorting: bool */
-    var columnSorting: js.UndefOr[Boolean] = js.native
+    var columnSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Column type, title, width, align, dropdown options, text wrapping, mask, etc.: object */
-    var columns: js.UndefOr[js.Array[Column]] = js.native
+    var columns: js.UndefOr[js.Array[Column]] = js.undefined
     
     /** Context menu content: function() { return customMenu } */
     // tslint:disable-next-line ban-types
-    var contextMenu: js.UndefOr[js.Function] = js.native
+    var contextMenu: js.UndefOr[js.Function] = js.undefined
     
     /** When is true copy and export will bring formula results, if false will bring formulas: boolean */
-    var copyCompatibility: js.UndefOr[Boolean] = js.native
+    var copyCompatibility: js.UndefOr[Boolean] = js.undefined
     
     /** Load a external CSV file from this URL: string */
-    var csv: js.UndefOr[String] = js.native
+    var csv: js.UndefOr[String] = js.undefined
     
     /** Default delimiter for the CSV file: string */
-    var csvDelimiter: js.UndefOr[String] = js.native
+    var csvDelimiter: js.UndefOr[String] = js.undefined
     
     /** Default filename for a download method: string */
-    var csvFileName: js.UndefOr[String] = js.native
+    var csvFileName: js.UndefOr[String] = js.undefined
     
     /** Load header titles from the CSV file: bool */
-    var csvHeaders: js.UndefOr[Boolean] = js.native
+    var csvHeaders: js.UndefOr[Boolean] = js.undefined
     
     /** Load this data into the javascript table: array */
     var data: js.UndefOr[
         js.Array[
           (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ title in string | number ]: jexcel.jexcel.CellValue}
-      */ typings.jexcel.jexcelStrings.InitializationOptions with TopLevel[js.Any]) | js.Array[CellValue]
+      */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[js.Any]) | js.Array[CellValue]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Default align for a new column: [center, left, right] */
-    var defaultColAlign: js.UndefOr[center | left | right] = js.native
+    var defaultColAlign: js.UndefOr[center | left | right] = js.undefined
     
     /** Default width for a new column: integer */
-    var defaultColWidth: js.UndefOr[Double] = js.native
+    var defaultColWidth: js.UndefOr[Double] = js.undefined
     
     /** Allow table edition: bool */
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
     /** Include header titles on download: bool */
-    var includeHeadersOnDownload: js.UndefOr[Boolean] = js.native
+    var includeHeadersOnDownload: js.UndefOr[Boolean] = js.undefined
     
     /** Activate the table lazyloading */
-    var lazyLoading: js.UndefOr[Boolean] = js.native
+    var lazyLoading: js.UndefOr[Boolean] = js.undefined
     
     /** Activate the loading spin */
-    var loadingSpin: js.UndefOr[Boolean] = js.native
+    var loadingSpin: js.UndefOr[Boolean] = js.undefined
     
     /** Cells to be merged in the table initialization: object */
-    var mergeCells: js.UndefOr[Record[String, _]] = js.native
+    var mergeCells: js.UndefOr[Record[String, js.Any]] = js.undefined
     
     /** Meta information: object */
-    var meta: js.UndefOr[Record[String, _]] = js.native
+    var meta: js.UndefOr[Record[String, js.Any]] = js.undefined
     
     /** Minimum table dimensions: [cols, rows] */
-    var minDimensions: js.UndefOr[js.Array[Double] | (js.Tuple2[js.UndefOr[Double], Double])] = js.native
+    var minDimensions: js.UndefOr[js.Array[Double] | (js.Tuple2[Double | Unit, Double])] = js.undefined
     
     /** Minimum number of spare cols: [integer] */
-    var minSpareCols: js.UndefOr[js.Array[Double]] = js.native
+    var minSpareCols: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Minimum number of spare rows: [integer] */
-    var minSpareRows: js.UndefOr[js.Array[Double]] = js.native
+    var minSpareRows: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Define the nested headers, including title, colspan, etc: object */
-    var nestedHeaders: js.UndefOr[js.Array[js.Array[Colspan]]] = js.native
+    var nestedHeaders: js.UndefOr[js.Array[js.Array[Colspan]]] = js.undefined
     
     /** Break the table by pages */
-    var pagination: js.UndefOr[Double] = js.native
+    var pagination: js.UndefOr[Double] = js.undefined
     
     /** Number of records per page: 25,50,75,100 for example. */
-    var paginationOptions: js.UndefOr[js.Array[Double]] = js.native
+    var paginationOptions: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Enable execution of formulas inside the table */
-    var parseFormulas: js.UndefOr[js.Any] = js.native
+    var parseFormulas: js.UndefOr[js.Any] = js.undefined
     
     /** Allow row dragging: bool */
-    var rowDrag: js.UndefOr[Boolean] = js.native
+    var rowDrag: js.UndefOr[Boolean] = js.undefined
     
     /** Allow row resizing: bool */
-    var rowResize: js.UndefOr[Boolean] = js.native
+    var rowResize: js.UndefOr[Boolean] = js.undefined
     
     /** Row properties: height.: object */
-    var rows: js.UndefOr[Record[String, _]] = js.native
+    var rows: js.UndefOr[Record[String, js.Any]] = js.undefined
     
     /** Allow selection copy: bool */
-    var selectionCopy: js.UndefOr[Boolean] = js.native
+    var selectionCopy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Cells style in the table initialization: object
       * key: cellIndex. (e.g.) "A1", "C20"
       * value: css value. (e.g.) "background-color: orange;"
       */
-    var style: js.UndefOr[StringDictionary[String]] = js.native
+    var style: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Force the max height of the table: CSS String */
-    var tableHeight: js.UndefOr[String] = js.native
+    var tableHeight: js.UndefOr[String] = js.undefined
     
     /** Allow table overflow: bool */
-    var tableOverflow: js.UndefOr[Boolean] = js.native
+    var tableOverflow: js.UndefOr[Boolean] = js.undefined
     
     /** Force the max width of the table: CSS String */
-    var tableWidth: js.UndefOr[String] = js.native
+    var tableWidth: js.UndefOr[String] = js.undefined
     
     /** All messages to be customized */
-    var text: js.UndefOr[Record[String, _]] = js.native
+    var text: js.UndefOr[Record[String, js.Any]] = js.undefined
     
     /** Add custom toolbars: object */
-    var toolbar: js.UndefOr[js.Array[Record[String, _]]] = js.native
+    var toolbar: js.UndefOr[js.Array[Record[String, js.Any]]] = js.undefined
     
     /** Method to config custom script execution. NOTE: This does not work with lazyLoading, Pagination or Search options. */
     var updateTable: js.UndefOr[
@@ -982,13 +975,13 @@ object mod extends Shortcut {
           /* cellName */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Load a external json file from this URL: string */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /** Global text wrapping: bool */
-    var wordWrap: js.UndefOr[Boolean] = js.native
+    var wordWrap: js.UndefOr[Boolean] = js.undefined
   }
   object InitializationOptions {
     
@@ -1129,7 +1122,7 @@ object mod extends Shortcut {
         value: js.Array[
               (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.InitializationOptions with TopLevel[js.Any]) | js.Array[CellValue]
+        */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[js.Any]) | js.Array[CellValue]
             ]
       ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -1140,7 +1133,7 @@ object mod extends Shortcut {
       def setDataVarargs(
         value: ((/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.InitializationOptions with TopLevel[js.Any]) | js.Array[CellValue])*
+        */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[js.Any]) | js.Array[CellValue])*
       ): Self = StObject.set(x, "data", js.Array(value :_*))
       
       @scala.inline
@@ -1180,19 +1173,19 @@ object mod extends Shortcut {
       def setLoadingSpinUndefined: Self = StObject.set(x, "loadingSpin", js.undefined)
       
       @scala.inline
-      def setMergeCells(value: Record[String, _]): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
+      def setMergeCells(value: Record[String, js.Any]): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMergeCellsUndefined: Self = StObject.set(x, "mergeCells", js.undefined)
       
       @scala.inline
-      def setMeta(value: Record[String, _]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      def setMeta(value: Record[String, js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
       @scala.inline
-      def setMinDimensions(value: js.Array[Double] | (js.Tuple2[js.UndefOr[Double], Double])): Self = StObject.set(x, "minDimensions", value.asInstanceOf[js.Any])
+      def setMinDimensions(value: js.Array[Double] | (js.Tuple2[Double | Unit, Double])): Self = StObject.set(x, "minDimensions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMinDimensionsUndefined: Self = StObject.set(x, "minDimensions", js.undefined)
@@ -1261,7 +1254,7 @@ object mod extends Shortcut {
       def setRowResizeUndefined: Self = StObject.set(x, "rowResize", js.undefined)
       
       @scala.inline
-      def setRows(value: Record[String, _]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      def setRows(value: Record[String, js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
@@ -1297,13 +1290,13 @@ object mod extends Shortcut {
       def setTableWidthUndefined: Self = StObject.set(x, "tableWidth", js.undefined)
       
       @scala.inline
-      def setText(value: Record[String, _]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      def setText(value: Record[String, js.Any]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
       @scala.inline
-      def setToolbar(value: js.Array[Record[String, _]]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+      def setToolbar(value: js.Array[Record[String, js.Any]]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
@@ -1350,7 +1343,7 @@ object mod extends Shortcut {
     // tslint:disable-next-line ban-types
     var copyControls: js.Function = js.native
     
-    def createTabs(element: HTMLDivElement, result: js.Array[_]): Unit = js.native
+    def createTabs(element: HTMLDivElement, result: js.Array[js.Any]): Unit = js.native
     
     var current: js.Any = js.native
     
@@ -1366,7 +1359,7 @@ object mod extends Shortcut {
     // tslint:disable-next-line ban-types
     var doubleDigitFormat: js.Function = js.native
     
-    def fromSpreadsheet(result: js.Array[_]): Unit = js.native
+    def fromSpreadsheet(result: js.Array[js.Any]): Unit = js.native
     
     // tslint:disable-next-line ban-types
     var getColumnName: js.Function = js.native
@@ -1452,13 +1445,13 @@ object mod extends Shortcut {
       * @return string value
       */
     def copy(): String = js.native
-    def copy(highlighted: js.UndefOr[scala.Nothing], delimiter: js.UndefOr[scala.Nothing], returnData: Boolean): String = js.native
-    def copy(highlighted: js.UndefOr[scala.Nothing], delimiter: String): String = js.native
-    def copy(highlighted: js.UndefOr[scala.Nothing], delimiter: String, returnData: Boolean): String = js.native
     def copy(highlighted: Boolean): String = js.native
-    def copy(highlighted: Boolean, delimiter: js.UndefOr[scala.Nothing], returnData: Boolean): String = js.native
     def copy(highlighted: Boolean, delimiter: String): String = js.native
     def copy(highlighted: Boolean, delimiter: String, returnData: Boolean): String = js.native
+    def copy(highlighted: Boolean, delimiter: Unit, returnData: Boolean): String = js.native
+    def copy(highlighted: Unit, delimiter: String): String = js.native
+    def copy(highlighted: Unit, delimiter: String, returnData: Boolean): String = js.native
+    def copy(highlighted: Unit, delimiter: Unit, returnData: Boolean): String = js.native
     
     /**
       * Helper function to copy data using the corner icon
@@ -1508,7 +1501,7 @@ object mod extends Shortcut {
     
     def first(shiftKey: js.Any, ctrlKey: js.Any): js.Any = js.native
     
-    var formula: js.Array[_] = js.native
+    var formula: js.Array[js.Any] = js.native
     
     def fullscreen(activate: js.Any): js.Any = js.native
     
@@ -1523,9 +1516,9 @@ object mod extends Shortcut {
     def getConfig(): js.Any = js.native
     
     def getData(): js.Array[js.Array[CellValue]] = js.native
-    def getData(highlighted: js.UndefOr[scala.Nothing], dataOnly: Boolean): js.Array[js.Array[CellValue]] = js.native
     def getData(highlighted: Boolean): js.Array[js.Array[CellValue]] = js.native
     def getData(highlighted: Boolean, dataOnly: Boolean): js.Array[js.Array[CellValue]] = js.native
+    def getData(highlighted: Unit, dataOnly: Boolean): js.Array[js.Array[CellValue]] = js.native
     
     def getDropDownValue(column: js.Any, key: js.Any): js.Any = js.native
     
@@ -1575,7 +1568,7 @@ object mod extends Shortcut {
     
     def hideIndex(): js.Any = js.native
     
-    var highlighted: js.Array[_] = js.native
+    var highlighted: js.Array[js.Any] = js.native
     
     var history: ActionHistory = js.native
     
@@ -1601,37 +1594,22 @@ object mod extends Shortcut {
       * @return void
       */
     def insertColumn(mixed: js.Any): js.Any = js.native
-    def insertColumn(
-      mixed: js.Any,
-      columnNumber: js.UndefOr[scala.Nothing],
-      insertBefore: js.UndefOr[scala.Nothing],
-      properties: js.Object
-    ): js.Any = js.native
-    def insertColumn(mixed: js.Any, columnNumber: js.UndefOr[scala.Nothing], insertBefore: Boolean): js.Any = js.native
-    def insertColumn(
-      mixed: js.Any,
-      columnNumber: js.UndefOr[scala.Nothing],
-      insertBefore: Boolean,
-      properties: js.Object
-    ): js.Any = js.native
     def insertColumn(mixed: js.Any, columnNumber: Double): js.Any = js.native
-    def insertColumn(
-      mixed: js.Any,
-      columnNumber: Double,
-      insertBefore: js.UndefOr[scala.Nothing],
-      properties: js.Object
-    ): js.Any = js.native
     def insertColumn(mixed: js.Any, columnNumber: Double, insertBefore: Boolean): js.Any = js.native
     def insertColumn(mixed: js.Any, columnNumber: Double, insertBefore: Boolean, properties: js.Object): js.Any = js.native
+    def insertColumn(mixed: js.Any, columnNumber: Double, insertBefore: Unit, properties: js.Object): js.Any = js.native
+    def insertColumn(mixed: js.Any, columnNumber: Unit, insertBefore: Boolean): js.Any = js.native
+    def insertColumn(mixed: js.Any, columnNumber: Unit, insertBefore: Boolean, properties: js.Object): js.Any = js.native
+    def insertColumn(mixed: js.Any, columnNumber: Unit, insertBefore: Unit, properties: js.Object): js.Any = js.native
     
     def insertRow(): js.Any = js.native
-    def insertRow(mixed: js.UndefOr[scala.Nothing], rowNumber: js.UndefOr[scala.Nothing], insertBefore: Boolean): js.Any = js.native
-    def insertRow(mixed: js.UndefOr[scala.Nothing], rowNumber: Double): js.Any = js.native
-    def insertRow(mixed: js.UndefOr[scala.Nothing], rowNumber: Double, insertBefore: Boolean): js.Any = js.native
     def insertRow(mixed: js.Any): js.Any = js.native
-    def insertRow(mixed: js.Any, rowNumber: js.UndefOr[scala.Nothing], insertBefore: Boolean): js.Any = js.native
     def insertRow(mixed: js.Any, rowNumber: Double): js.Any = js.native
     def insertRow(mixed: js.Any, rowNumber: Double, insertBefore: Boolean): js.Any = js.native
+    def insertRow(mixed: js.Any, rowNumber: Unit, insertBefore: Boolean): js.Any = js.native
+    def insertRow(mixed: Unit, rowNumber: Double): js.Any = js.native
+    def insertRow(mixed: Unit, rowNumber: Double, insertBefore: Boolean): js.Any = js.native
+    def insertRow(mixed: Unit, rowNumber: Unit, insertBefore: Boolean): js.Any = js.native
     
     def isColMerged(x: Double): js.Any = js.native
     def isColMerged(x: Double, insertBefore: Boolean): js.Any = js.native
@@ -1680,13 +1658,13 @@ object mod extends Shortcut {
     def parseNumber(value: Double, columnNumber: Double): Double | Null = js.native
     
     def paste(): js.Any = js.native
-    def paste(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], data: CellValue): js.Any = js.native
-    def paste(x: js.UndefOr[scala.Nothing], y: Double): js.Any = js.native
-    def paste(x: js.UndefOr[scala.Nothing], y: Double, data: CellValue): js.Any = js.native
     def paste(x: Double): js.Any = js.native
-    def paste(x: Double, y: js.UndefOr[scala.Nothing], data: CellValue): js.Any = js.native
     def paste(x: Double, y: Double): js.Any = js.native
     def paste(x: Double, y: Double, data: CellValue): js.Any = js.native
+    def paste(x: Double, y: Unit, data: CellValue): js.Any = js.native
+    def paste(x: Unit, y: Double): js.Any = js.native
+    def paste(x: Unit, y: Double, data: CellValue): js.Any = js.native
+    def paste(x: Unit, y: Unit, data: CellValue): js.Any = js.native
     
     def prepareTable(): js.Any = js.native
     
@@ -1730,7 +1708,7 @@ object mod extends Shortcut {
     
     var selectedContainer: js.Any = js.native
     
-    var selection: js.Array[_] = js.native
+    var selection: js.Array[js.Any] = js.native
     
     def setCheckRadioValue(): js.Any = js.native
     
@@ -1755,9 +1733,9 @@ object mod extends Shortcut {
     def setRowData(rowNumber: Double, data: js.Any): js.Any = js.native
     
     def setStyle(o: js.Any, k: js.Any, v: js.Any): js.Any = js.native
-    def setStyle(o: js.Any, k: js.Any, v: js.Any, force: js.UndefOr[scala.Nothing], ignoreHistoryAndEvents: js.Any): js.Any = js.native
     def setStyle(o: js.Any, k: js.Any, v: js.Any, force: js.Any): js.Any = js.native
     def setStyle(o: js.Any, k: js.Any, v: js.Any, force: js.Any, ignoreHistoryAndEvents: js.Any): js.Any = js.native
+    def setStyle(o: js.Any, k: js.Any, v: js.Any, force: Unit, ignoreHistoryAndEvents: js.Any): js.Any = js.native
     
     def setValue(cell: js.Any, value: js.Any, force: js.Any): js.Any = js.native
     
@@ -1769,7 +1747,7 @@ object mod extends Shortcut {
     
     def showIndex(): js.Any = js.native
     
-    var style: js.Array[_] = js.native
+    var style: js.Array[js.Any] = js.native
     
     var table: HTMLTableElement = js.native
     
@@ -1786,8 +1764,9 @@ object mod extends Shortcut {
     def up(shiftKey: js.Any, ctrlKey: js.Any): js.Any = js.native
     
     def updateCell(x: Double, y: Double): js.Any = js.native
-    def updateCell(x: Double, y: Double, value: js.UndefOr[CellValue], force: js.Any): js.Any = js.native
+    def updateCell(x: Double, y: Double, value: Unit, force: js.Any): js.Any = js.native
     def updateCell(x: Double, y: Double, value: CellValue): js.Any = js.native
+    def updateCell(x: Double, y: Double, value: CellValue, force: js.Any): js.Any = js.native
     
     def updateCopySelection(x3: js.Any, y3: js.Any): js.Any = js.native
     
@@ -1820,7 +1799,6 @@ object mod extends Shortcut {
     def whichPage(cell: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait MethodsOptions extends StObject {
     
     /**
@@ -1829,7 +1807,7 @@ object mod extends Shortcut {
       * @param integer numOfColumns - number of columns to be excluded from the reference column    myTable.deleteColumn([integer], [integer]);
       */
     // tslint:disable-next-line ban-types
-    var deleteColumn: js.UndefOr[js.Function] = js.native
+    var deleteColumn: js.UndefOr[js.Function] = js.undefined
     
     /**
       * remove row by number
@@ -1838,11 +1816,11 @@ object mod extends Shortcut {
       * myTable.deleteRow([integer], [integer]);
       */
     // tslint:disable-next-line ban-types
-    var deleteRow: js.UndefOr[js.Function] = js.native
+    var deleteRow: js.UndefOr[js.Function] = js.undefined
     
     /** Destroy all merged cells    myTable.destroyMerge(); */
     // tslint:disable-next-line ban-types
-    var destroyMerged: js.UndefOr[js.Function] = js.native
+    var destroyMerged: js.UndefOr[js.Function] = js.undefined
     
     /**
       * get the current data as a CSV file
@@ -1850,91 +1828,91 @@ object mod extends Shortcut {
       * myTable.download([bool]);
       */
     // tslint:disable-next-line ban-types
-    var download: js.UndefOr[js.Function] = js.native
+    var download: js.UndefOr[js.Function] = js.undefined
     
     /** get current cell DOM @param string columnName - str compatible with excel, or as object.    myTable.getCell([string]); */
     // tslint:disable-next-line ban-types
-    var getCell: js.UndefOr[js.Function] = js.native
+    var getCell: js.UndefOr[js.Function] = js.undefined
     
     /** Get the data from one column by number @param integer columnNumber - Column number    myTable.getColumnData([int]); */
     // tslint:disable-next-line ban-types
-    var getColumnData: js.UndefOr[js.Function] = js.native
+    var getColumnData: js.UndefOr[js.Function] = js.undefined
     
     /** get cell comments @param mixed - cell identification or null for the whole table.    myTable.getComments([string]); */
     // tslint:disable-next-line ban-types
-    var getComments: js.UndefOr[js.Function] = js.native
+    var getComments: js.UndefOr[js.Function] = js.undefined
     
     /** get table definitions    myTable.getConfig(); */
     // tslint:disable-next-line ban-types
-    var getConfig: js.UndefOr[js.Function] = js.native
+    var getConfig: js.UndefOr[js.Function] = js.undefined
     
     /** Get the full or partial table data @param boolean onlyHighlighedCells - Get only highlighted cells    myTable.getData([bool]); */
     // tslint:disable-next-line ban-types
-    var getData: js.UndefOr[js.Function] = js.native
+    var getData: js.UndefOr[js.Function] = js.undefined
     
     /** get the current header by column number @param integer columnNumber - Column number starting on zero    myTable.getHeader([integer]); */
     // tslint:disable-next-line ban-types
-    var getHeader: js.UndefOr[js.Function] = js.native
+    var getHeader: js.UndefOr[js.Function] = js.undefined
     
     /** get all header titles    myTable.getHeaders(); */
     // tslint:disable-next-line ban-types
-    var getHeaders: js.UndefOr[js.Function] = js.native
+    var getHeaders: js.UndefOr[js.Function] = js.undefined
     
     /** get the current row height @param integer rowNumber - row number starting on zero    myTable.getHeight([integer]); */
     // tslint:disable-next-line ban-types
-    var getHeight: js.UndefOr[js.Function] = js.native
+    var getHeight: js.UndefOr[js.Function] = js.undefined
     
     /** Get the full or partial table data in JSON format @param boolean onlyHighlighedCells - Get only highlighted cells    myTable.getData([bool]); */
     // tslint:disable-next-line ban-types
-    var getJson: js.UndefOr[js.Function] = js.native
+    var getJson: js.UndefOr[js.Function] = js.undefined
     
     /** get current cell DOM innerHTML @param string columnName - str compatible with excel, or as object.    myTable.getLabel([string]); */
     // tslint:disable-next-line ban-types
-    var getLabel: js.UndefOr[js.Function] = js.native
+    var getLabel: js.UndefOr[js.Function] = js.undefined
     
     /** Get merged cells properties @param string columnName - Column name, such as A1.    myTable.getMerge([string]); */
     // tslint:disable-next-line ban-types
-    var getMerge: js.UndefOr[js.Function] = js.native
+    var getMerge: js.UndefOr[js.Function] = js.undefined
     
     /** get the table or cell meta information @param mixed - cell identification or null for the whole table.    myTable.getMeta([string]); */
     // tslint:disable-next-line ban-types
-    var getMeta: js.UndefOr[js.Function] = js.native
+    var getMeta: js.UndefOr[js.Function] = js.undefined
     
     /** Get the data from one row by number @param integer rowNumber - Row number    myTable.getRowData([int]); */
     // tslint:disable-next-line ban-types
-    var getRowData: js.UndefOr[js.Function] = js.native
+    var getRowData: js.UndefOr[js.Function] = js.undefined
     
     /** Get the selected columns @param boolean asIds - Get the colNumbers or row DOM elements    myTable.getSelectedColumns([bool]); */
     // tslint:disable-next-line ban-types
-    var getSelectedColumns: js.UndefOr[js.Function] = js.native
+    var getSelectedColumns: js.UndefOr[js.Function] = js.undefined
     
     /** Get the selected rows @param boolean asIds - Get the rowNumbers or row DOM elements    myTable.getSelectedRows([bool]); */
     // tslint:disable-next-line ban-types
-    var getSelectedRows: js.UndefOr[js.Function] = js.native
+    var getSelectedRows: js.UndefOr[js.Function] = js.undefined
     
     /** get table or cell style @param mixed - cell identification or null for the whole table.    myTable.getStyle([string])); */
     // tslint:disable-next-line ban-types
-    var getStyle: js.UndefOr[js.Function] = js.native
+    var getStyle: js.UndefOr[js.Function] = js.undefined
     
     /** get current cell value @param mixed cellIdent - str compatible with excel, or as object.    myTable.getValue([string]); */
     // tslint:disable-next-line ban-types
-    var getValue: js.UndefOr[js.Function] = js.native
+    var getValue: js.UndefOr[js.Function] = js.undefined
     
     /** get value from coords @param integer x @param integer y myTable.getValueFromCoords([integer], [integer]); */
     // tslint:disable-next-line ban-types
-    var getValueFromCoords: js.UndefOr[js.Function] = js.native
+    var getValueFromCoords: js.UndefOr[js.Function] = js.undefined
     
     /** get the current column width @param integer columnNumber - column number starting on zero    myTable.getWidth([integer]); */
     // tslint:disable-next-line ban-types
-    var getWidth: js.UndefOr[js.Function] = js.native
+    var getWidth: js.UndefOr[js.Function] = js.undefined
     
     /** hide column by number    myTable.hideColumn([int]); */
     // tslint:disable-next-line ban-types
-    var hideColumn: js.UndefOr[js.Function] = js.native
+    var hideColumn: js.UndefOr[js.Function] = js.undefined
     
     /** hide column of index numbers    myTable.hideIndex(); */
     // tslint:disable-next-line ban-types
-    var hideIndex: js.UndefOr[js.Function] = js.native
+    var hideIndex: js.UndefOr[js.Function] = js.undefined
     
     /**
       * add a new column
@@ -1945,7 +1923,7 @@ object mod extends Shortcut {
       * myTable.insertColumn([mixed], [integer], [boolean], [object]);
       */
     // tslint:disable-next-line ban-types
-    var insertColumn: js.UndefOr[js.Function] = js.native
+    var insertColumn: js.UndefOr[js.Function] = js.undefined
     
     /**
       * add a new row
@@ -1955,7 +1933,7 @@ object mod extends Shortcut {
       * myTable.insertRow([mixed], [integer], [boolean]);
       */
     // tslint:disable-next-line ban-types
-    var insertRow: js.UndefOr[js.Function] = js.native
+    var insertRow: js.UndefOr[js.Function] = js.undefined
     
     /**
       * change the column position
@@ -1964,7 +1942,7 @@ object mod extends Shortcut {
       * myTable.moveColumn([integer], [integer]);
       */
     // tslint:disable-next-line ban-types
-    var moveColumn: js.UndefOr[js.Function] = js.native
+    var moveColumn: js.UndefOr[js.Function] = js.undefined
     
     /**
       * change the row position
@@ -1973,7 +1951,7 @@ object mod extends Shortcut {
       * myTable.moveRow([integer], [integer]);
       */
     // tslint:disable-next-line ban-types
-    var moveRow: js.UndefOr[js.Function] = js.native
+    var moveRow: js.UndefOr[js.Function] = js.undefined
     
     /**
       * reorder a column asc or desc
@@ -1982,51 +1960,51 @@ object mod extends Shortcut {
       * myTable.orderBy([integer], [boolean]);
       */
     // tslint:disable-next-line ban-types
-    var orderBy: js.UndefOr[js.Function] = js.native
+    var orderBy: js.UndefOr[js.Function] = js.undefined
     
     /** Go to page number- Valid only when pagination is true. @param integer - Go to page number    myTable.page([integer]); */
     // tslint:disable-next-line ban-types
-    var page: js.UndefOr[js.Function] = js.native
+    var page: js.UndefOr[js.Function] = js.undefined
     
     /** Redo changes    myTable.redo(); */
     // tslint:disable-next-line ban-types
-    var redo: js.UndefOr[js.Function] = js.native
+    var redo: js.UndefOr[js.Function] = js.undefined
     
     /** Destroy merged by column name @param string columnName - Column name, such as A1.    myTable.removeMerge([string]); */
     // tslint:disable-next-line ban-types
-    var removeMerge: js.UndefOr[js.Function] = js.native
+    var removeMerge: js.UndefOr[js.Function] = js.undefined
     
     /** reset search table    myTable.resetSearch(); */
     // tslint:disable-next-line ban-types
-    var resetSearch: js.UndefOr[js.Function] = js.native
+    var resetSearch: js.UndefOr[js.Function] = js.undefined
     
     /** Reset the table selection @param boolean executeBlur - execute the blur from the table myTable.resetSelection([bool]); */
     // tslint:disable-next-line ban-types
-    var resetSelection: js.UndefOr[js.Function] = js.native
+    var resetSelection: js.UndefOr[js.Function] = js.undefined
     
     /** remove all style from a cell @param string columnName - Column name, example: A1, B3, etc    myTable.resetStyle([string]); */
     // tslint:disable-next-line ban-types
-    var resetStyle: js.UndefOr[js.Function] = js.native
+    var resetStyle: js.UndefOr[js.Function] = js.undefined
     
     /** Set the data from one column by number @param integer columnNumber - Column number @param array colData - Column data    myTable.setColumnData([int], [array]); */
     // tslint:disable-next-line ban-types
-    var setColumnData: js.UndefOr[js.Function] = js.native
+    var setColumnData: js.UndefOr[js.Function] = js.undefined
     
     /** set cell comments @param cell - cell identification @param text - comments    myTable.setComments([string], [string]); */
     // tslint:disable-next-line ban-types
-    var setComments: js.UndefOr[js.Function] = js.native
+    var setComments: js.UndefOr[js.Function] = js.undefined
     
     /** Set the table data @param json newData - New json data, null will reload what is in memory.    myTable.setData([json]); */
     // tslint:disable-next-line ban-types
-    var setData: js.UndefOr[js.Function] = js.native
+    var setData: js.UndefOr[js.Function] = js.undefined
     
     /** change header by column @param integer columnNumber - column number starting on zero @param string columnTitle - New header title    myTable.setHeader([integer], [string]); */
     // tslint:disable-next-line ban-types
-    var setHeader: js.UndefOr[js.Function] = js.native
+    var setHeader: js.UndefOr[js.Function] = js.undefined
     
     /** change row height @param integer rowNumber - row number starting on zero @param string newRowHeight- New row height    myTable.setHeight([integer], [integer]); */
     // tslint:disable-next-line ban-types
-    var setHeight: js.UndefOr[js.Function] = js.native
+    var setHeight: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Merge cells
@@ -2036,11 +2014,11 @@ object mod extends Shortcut {
       * myTable.setMerge([string], [int], [int]);
       */
     // tslint:disable-next-line ban-types
-    var setMerge: js.UndefOr[js.Function] = js.native
+    var setMerge: js.UndefOr[js.Function] = js.undefined
     
     /** set the table or cell meta information @param mixed - json with whole table meta information.    myTable.setMeta[mixed]); */
     // tslint:disable-next-line ban-types
-    var setMeta: js.UndefOr[js.Function] = js.native
+    var setMeta: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Set the data from one row by number
@@ -2049,7 +2027,7 @@ object mod extends Shortcut {
       * myTable.setRowData([int], [array]);
       */
     // tslint:disable-next-line ban-types
-    var setRowData: js.UndefOr[js.Function] = js.native
+    var setRowData: js.UndefOr[js.Function] = js.undefined
     
     /**
       * set cell(s) CSS style
@@ -2059,7 +2037,7 @@ object mod extends Shortcut {
       * myTable.setSyle([object], [string], [string]);
       */
     // tslint:disable-next-line ban-types
-    var setStyle: js.UndefOr[js.Function] = js.native
+    var setStyle: js.UndefOr[js.Function] = js.undefined
     
     /**
       * change the cell value
@@ -2069,7 +2047,7 @@ object mod extends Shortcut {
       * myTable.setValue([string], [string], [bool]);
       */
     // tslint:disable-next-line ban-types
-    var setValue: js.UndefOr[js.Function] = js.native
+    var setValue: js.UndefOr[js.Function] = js.undefined
     
     /**
       * get value from coords
@@ -2080,7 +2058,7 @@ object mod extends Shortcut {
       * myTable.getValueFromCoords([integer], [integer], [string], [bool]);
       */
     // tslint:disable-next-line ban-types
-    var setValueFromCoords: js.UndefOr[js.Function] = js.native
+    var setValueFromCoords: js.UndefOr[js.Function] = js.undefined
     
     /**
       * change column width
@@ -2089,19 +2067,19 @@ object mod extends Shortcut {
       * myTable.setWidth([integer], [integer]);
       */
     // tslint:disable-next-line ban-types
-    var setWidth: js.UndefOr[js.Function] = js.native
+    var setWidth: js.UndefOr[js.Function] = js.undefined
     
     /** show column by number    myTable.showIndex([int]); */
     // tslint:disable-next-line ban-types
-    var showColumn: js.UndefOr[js.Function] = js.native
+    var showColumn: js.UndefOr[js.Function] = js.undefined
     
     /** show column of index numbers    myTable.showIndex(); */
     // tslint:disable-next-line ban-types
-    var showIndex: js.UndefOr[js.Function] = js.native
+    var showIndex: js.UndefOr[js.Function] = js.undefined
     
     /** Undo last changes    myTable.undo(); */
     // tslint:disable-next-line ban-types
-    var undo: js.UndefOr[js.Function] = js.native
+    var undo: js.UndefOr[js.Function] = js.undefined
     
     /**
       * select cells
@@ -2111,15 +2089,15 @@ object mod extends Shortcut {
       * myTable.updateSelection([cell], [cell], true);
       */
     // tslint:disable-next-line ban-types
-    var updateSelection: js.UndefOr[js.Function] = js.native
+    var updateSelection: js.UndefOr[js.Function] = js.undefined
     
     /** select cells @param integer x1 @param integer y1 @param integer x2 @param integer y2    myTable.updateSelectionFromCoords([integer], [integer], [integer], [integer]); */
     // tslint:disable-next-line ban-types
-    var updateSelectionFromCoords: js.UndefOr[js.Function] = js.native
+    var updateSelectionFromCoords: js.UndefOr[js.Function] = js.undefined
     
     /** Which page showing on jExcel - Valid only when pagination is true.    myTable.whichPage(); */
     // tslint:disable-next-line ban-types
-    var whichPage: js.UndefOr[js.Function] = js.native
+    var whichPage: js.UndefOr[js.Function] = js.undefined
   }
   object MethodsOptions {
     
@@ -2461,12 +2439,26 @@ object mod extends Shortcut {
   /**
     * @see https://bossanova.uk/jexcel/v4/docs/quick-reference
     */
-  type Options = SharedMethodsInitializationOptions with MethodsOptions with EventsOptions with InitializationOptions with TranslationsOptions with UnDocumentOptions
+  trait Options
+    extends StObject
+       with SharedMethodsInitializationOptions
+       with MethodsOptions
+       with EventsOptions
+       with InitializationOptions
+       with TranslationsOptions
+       with UnDocumentOptions
+  object Options {
+    
+    @scala.inline
+    def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+  }
   
   //
   // Main options
   // ----------------------------------------------------------------------
-  @js.native
   trait SharedMethodsInitializationOptions extends StObject {
     
     /**
@@ -2475,7 +2467,7 @@ object mod extends Shortcut {
       * myTable.fullscreen([bool]);
       */
     // tslint:disable-next-line ban-types
-    var fullscreen: js.UndefOr[js.Function | Boolean] = js.native
+    var fullscreen: js.UndefOr[js.Function | Boolean] = js.undefined
     
     /**
       * Search in the table, only if directive is enabled during inialization - sets search in initialization.
@@ -2483,7 +2475,7 @@ object mod extends Shortcut {
       * myTable.search([string]);
       */
     // tslint:disable-next-line ban-types
-    var search: js.UndefOr[js.Function | Boolean] = js.native
+    var search: js.UndefOr[js.Function | Boolean] = js.undefined
   }
   object SharedMethodsInitializationOptions {
     
@@ -2512,12 +2504,11 @@ object mod extends Shortcut {
   
   type SourceValue = CellValue | Id
   
-  @js.native
   trait SourceValueElement[T /* <: CellValue */] extends StObject {
     
-    var id: T = js.native
+    var id: T
     
-    var name: CellValue = js.native
+    var name: CellValue
   }
   object SourceValueElement {
     
@@ -2528,7 +2519,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class SourceValueElementMutableBuilder[Self <: SourceValueElement[_], T /* <: CellValue */] (val x: Self with SourceValueElement[T]) extends AnyVal {
+    implicit class SourceValueElementMutableBuilder[Self <: SourceValueElement[?], T /* <: CellValue */] (val x: Self & SourceValueElement[T]) extends AnyVal {
       
       @scala.inline
       def setId(value: T): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -2538,95 +2529,94 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait TranslationsOptions extends StObject {
     
     /** About */
-    var about: js.UndefOr[js.Any] = js.native
+    var about: js.UndefOr[js.Any] = js.undefined
     
     /** Add comments */
-    var addComments: js.UndefOr[js.Any] = js.native
+    var addComments: js.UndefOr[js.Any] = js.undefined
     
     /** Are you sure to delete the selected columns? */
-    var areYouSureToDeleteTheSelectedColumns: js.UndefOr[js.Any] = js.native
+    var areYouSureToDeleteTheSelectedColumns: js.UndefOr[js.Any] = js.undefined
     
     /** Are you sure to delete the selected rows? */
-    var areYouSureToDeleteTheSelectedRows: js.UndefOr[js.Any] = js.native
+    var areYouSureToDeleteTheSelectedRows: js.UndefOr[js.Any] = js.undefined
     
     /** Cell already merged */
-    var cellAlreadyMerged: js.UndefOr[js.Any] = js.native
+    var cellAlreadyMerged: js.UndefOr[js.Any] = js.undefined
     
     /** Clear comments */
-    var clearComments: js.UndefOr[js.Any] = js.native
+    var clearComments: js.UndefOr[js.Any] = js.undefined
     
     /** Comments */
-    var comments: js.UndefOr[js.Any] = js.native
+    var comments: js.UndefOr[js.Any] = js.undefined
     
     /** Copy... */
-    var copy: js.UndefOr[js.Any] = js.native
+    var copy: js.UndefOr[js.Any] = js.undefined
     
     /** Delete selected columns */
-    var deleteSelectedColumns: js.UndefOr[js.Any] = js.native
+    var deleteSelectedColumns: js.UndefOr[js.Any] = js.undefined
     
     /** Delete selected rows */
-    var deleteSelectedRows: js.UndefOr[js.Any] = js.native
+    var deleteSelectedRows: js.UndefOr[js.Any] = js.undefined
     
     /** Edit comments */
-    var editComments: js.UndefOr[js.Any] = js.native
+    var editComments: js.UndefOr[js.Any] = js.undefined
     
     /** entries */
-    var entries: js.UndefOr[js.Any] = js.native
+    var entries: js.UndefOr[js.Any] = js.undefined
     
     /** Insert a new column after */
-    var insertANewColumnAfter: js.UndefOr[js.Any] = js.native
+    var insertANewColumnAfter: js.UndefOr[js.Any] = js.undefined
     
     /** Insert a new column before */
-    var insertANewColumnBefore: js.UndefOr[js.Any] = js.native
+    var insertANewColumnBefore: js.UndefOr[js.Any] = js.undefined
     
     /** Insert a new row after */
-    var insertANewRowAfter: js.UndefOr[js.Any] = js.native
+    var insertANewRowAfter: js.UndefOr[js.Any] = js.undefined
     
     /** Insert a new row before */
-    var insertANewRowBefore: js.UndefOr[js.Any] = js.native
+    var insertANewRowBefore: js.UndefOr[js.Any] = js.undefined
     
     /** Invalid merged properties */
-    var invalidMergeProperties: js.UndefOr[js.Any] = js.native
+    var invalidMergeProperties: js.UndefOr[js.Any] = js.undefined
     
     /** No cells selected */
-    var noCellsSelected: js.UndefOr[js.Any] = js.native
+    var noCellsSelected: js.UndefOr[js.Any] = js.undefined
     
     /** No records found */
-    var noRecordsFound: js.UndefOr[js.Any] = js.native
+    var noRecordsFound: js.UndefOr[js.Any] = js.undefined
     
     /** Order ascending */
-    var orderAscending: js.UndefOr[js.Any] = js.native
+    var orderAscending: js.UndefOr[js.Any] = js.undefined
     
     /** Order descending */
-    var orderDescending: js.UndefOr[js.Any] = js.native
+    var orderDescending: js.UndefOr[js.Any] = js.undefined
     
     /** Paste... */
-    var paste: js.UndefOr[js.Any] = js.native
+    var paste: js.UndefOr[js.Any] = js.undefined
     
     /** Rename this column */
-    var renameThisColumn: js.UndefOr[js.Any] = js.native
+    var renameThisColumn: js.UndefOr[js.Any] = js.undefined
     
     /** Save as... */
-    var saveAs: js.UndefOr[js.Any] = js.native
+    var saveAs: js.UndefOr[js.Any] = js.undefined
     
     /** Show */
-    var show: js.UndefOr[js.Any] = js.native
+    var show: js.UndefOr[js.Any] = js.undefined
     
     /** Showing page {0} of {1} entries */
-    var showingPage: js.UndefOr[js.Any] = js.native
+    var showingPage: js.UndefOr[js.Any] = js.undefined
     
     /** There is a conflict with another merged cell */
-    var thereIsAConflictWithAnotherMergedCell: js.UndefOr[js.Any] = js.native
+    var thereIsAConflictWithAnotherMergedCell: js.UndefOr[js.Any] = js.undefined
     
     /** This action will clear your search results. Are you sure? */
-    var thisActionWillClearYourSearchResultsAreYouSure: js.UndefOr[js.Any] = js.native
+    var thisActionWillClearYourSearchResultsAreYouSure: js.UndefOr[js.Any] = js.undefined
     
     /** This action will destroy any existing merged cells. Are you sure? */
-    var thisActionWillDestroyAnyExistingMergedCellsAreYouSure: js.UndefOr[js.Any] = js.native
+    var thisActionWillDestroyAnyExistingMergedCellsAreYouSure: js.UndefOr[js.Any] = js.undefined
   }
   object TranslationsOptions {
     
@@ -2815,16 +2805,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait UnDocumentOptions extends StObject {
     
     var footers: js.UndefOr[
         js.Array[
           (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ title in string | number ]: jexcel.jexcel.CellValue}
-      */ typings.jexcel.jexcelStrings.UnDocumentOptions with TopLevel[js.Any]) | js.Array[CellValue]
+      */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[js.Any]) | js.Array[CellValue]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object UnDocumentOptions {
     
@@ -2842,7 +2831,7 @@ object mod extends Shortcut {
         value: js.Array[
               (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.UnDocumentOptions with TopLevel[js.Any]) | js.Array[CellValue]
+        */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[js.Any]) | js.Array[CellValue]
             ]
       ): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
       
@@ -2853,7 +2842,7 @@ object mod extends Shortcut {
       def setFootersVarargs(
         value: ((/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.UnDocumentOptions with TopLevel[js.Any]) | js.Array[CellValue])*
+        */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[js.Any]) | js.Array[CellValue])*
       ): Self = StObject.set(x, "footers", js.Array(value :_*))
     }
   }

@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 创建方法：,```JavaScript,var n = new Int64(123);,```
   */
 @js.native
-trait ClassInt64 extends ClassObject {
+trait ClassInt64
+  extends StObject
+     with ClassObject {
   
   /**
     * 

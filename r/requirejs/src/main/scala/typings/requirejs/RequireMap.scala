@@ -2,44 +2,42 @@ package typings.requirejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 *
 **/
-@js.native
 trait RequireMap extends StObject {
   
   /**
     *
     **/
-  var fullName: String = js.native
+  var fullName: String
   
   /**
     *
     **/
-  var name: String = js.native
+  var name: String
   
   /**
     *
     **/
-  var originalName: String = js.native
+  var originalName: String
   
   /**
     *
     **/
-  var parentMap: RequireMap = js.native
+  var parentMap: RequireMap
   
   /**
     *
     **/
-  var prefix: String = js.native
+  var prefix: String
   
   /**
     *
     **/
-  var url: String = js.native
+  var url: String
 }
 object RequireMap {
   

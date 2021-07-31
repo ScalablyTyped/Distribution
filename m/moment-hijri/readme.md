@@ -12,7 +12,7 @@ A Hijri calendar (Based on Umm al-Qura calculations) plugin for moment.js.
 | Keywords           | hijri, hijriah, arabic, lunar, Umm al-Qura, date, calendar, conversion, convert |
 | # releases         | 2 |
 | # dependents       | 23 |
-| # downloads        | 58472 |
+| # downloads        | 64704 |
 | # stars            | 2 |
 
 ## Links

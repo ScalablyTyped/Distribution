@@ -1,0 +1,17 @@
+package typings.awsSdkClientS3Browser.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait PutBucketPolicyInput
+  extends StObject
+     with typings.awsSdkClientS3Browser.typesPutBucketPolicyInputMod.PutBucketPolicyInput
+object PutBucketPolicyInput {
+  
+  @scala.inline
+  def apply(Bucket: String, Policy: String): PutBucketPolicyInput = {
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PutBucketPolicyInput]
+  }
+}

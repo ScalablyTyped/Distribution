@@ -2,10 +2,8 @@ package typings.googleapis.siteVerificationV1Mod.siteVerificationV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSiteVerificationWebResourceGettokenResponse extends StObject {
   
   /**
@@ -15,13 +13,13 @@ trait SchemaSiteVerificationWebResourceGettokenResponse extends StObject {
     * the HEAD tag of the default page that is loaded for the site. For DNS,
     * the token should be placed in a TXT record of the domain.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The verification token. The token must be placed appropriately in order
     * for verification to succeed.
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object SchemaSiteVerificationWebResourceGettokenResponse {
   

@@ -7,7 +7,6 @@ import typings.leaflet.mod.Layer
 import typings.leaflet.mod.LayerGroup_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -21,7 +20,7 @@ object mod {
       extends typings.leaflet.mod.Control_ {
       def this(
         baseLayers: StringDictionary[Layer],
-        groupedOverlays: StringDictionary[StringDictionary[LayerGroup_[_]]],
+        groupedOverlays: StringDictionary[StringDictionary[LayerGroup_[js.Any]]],
         options: GroupedLayersOptions
       ) = this()
     }
@@ -29,28 +28,32 @@ object mod {
   
   object control {
     
-    @JSImport("leaflet", "control.groupedLayers")
+    @JSImport("leaflet", "control")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def groupedLayers(
       baseLayers: StringDictionary[Layer],
-      groupedOverlays: StringDictionary[StringDictionary[LayerGroup_[_]]],
+      groupedOverlays: StringDictionary[StringDictionary[LayerGroup_[js.Any]]],
       options: GroupedLayersOptions
-    ): Control_ = js.native
+    ): Control_ = (^.asInstanceOf[js.Dynamic].applyDynamic("groupedLayers")(baseLayers.asInstanceOf[js.Any], groupedOverlays.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Control_]
   }
   
-  @js.native
-  trait GroupedLayersOptions extends ControlOptions {
+  trait GroupedLayersOptions
+    extends StObject
+       with ControlOptions {
     
     /** Default: true */
-    var autoZIndex: js.UndefOr[Boolean] = js.native
+    var autoZIndex: js.UndefOr[Boolean] = js.undefined
     
     /** Default: true */
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
-    var exclusiveGroups: js.UndefOr[js.Array[String]] = js.native
+    var exclusiveGroups: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Default: false */
-    var groupCheckboxes: js.UndefOr[Boolean] = js.native
+    var groupCheckboxes: js.UndefOr[Boolean] = js.undefined
   }
   object GroupedLayersOptions {
     

@@ -4,20 +4,18 @@ import typings.sawtoothSdk.protobufMod.TpProcessResponse.Status
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITpProcessResponse extends StObject {
   
   /** TpProcessResponse extendedData */
-  var extendedData: js.UndefOr[Uint8Array | Null] = js.native
+  var extendedData: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** TpProcessResponse message */
-  var message: js.UndefOr[String | Null] = js.native
+  var message: js.UndefOr[String | Null] = js.undefined
   
   /** TpProcessResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object ITpProcessResponse {
   

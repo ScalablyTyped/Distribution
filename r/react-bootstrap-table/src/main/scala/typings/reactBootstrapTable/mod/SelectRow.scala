@@ -3,10 +3,8 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectRow[TRow /* <: js.Object */] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SelectRow[TRow /* <: js.Object */] extends StObject {
     * If your requirement is much complex, you can assign a function to bgColor that
     * returns a css color string.
     */
-  var bgColor: js.UndefOr[String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])] = js.native
+  var bgColor: js.UndefOr[String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])] = js.undefined
   
   /**
     * You can assign the class name of selected rows. This can either be a string, or a function that takes two
@@ -22,43 +20,43 @@ trait SelectRow[TRow /* <: js.Object */] extends StObject {
     *   `row`: The current row data.
     *   `isSelect`: Flag indicating whether this particular row is selected.
     */
-  var className: js.UndefOr[String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])] = js.native
+  var className: js.UndefOr[String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])] = js.undefined
   
   /**
     * If true, clicking the row will trigger expanding the row. Default is false.
     */
-  var clickToExpand: js.UndefOr[Boolean] = js.native
+  var clickToExpand: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, clicking the row will trigger selection on that row, default is false.
     */
-  var clickToSelect: js.UndefOr[Boolean] = js.native
+  var clickToSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, clicking the row will trigger selection on that row and also trigger cell editing if you enabled cell edit. Default is false.
     */
-  var clickToSelectAndEditCell: js.UndefOr[Boolean] = js.native
+  var clickToSelectAndEditCell: js.UndefOr[Boolean] = js.undefined
   
   /**
     * You can change the width of the selection column by columnWidth (include units).
     */
-  var columnWidth: js.UndefOr[String] = js.native
+  var columnWidth: js.UndefOr[String] = js.undefined
   
   /**
     * Function that returns a component to customize the display of the selection checkbox or radio button with.
     */
-  var customComponent: js.UndefOr[js.Function1[/* props */ CustomSelectProps, String | ReactElement]] = js.native
+  var customComponent: js.UndefOr[js.Function1[/* props */ CustomSelectProps, String | ReactElement]] = js.undefined
   
   /**
     * If true, the radio/checkbox column will be hidden.
     * You can enable this attribute if you enable clickToSelect and you don't want to show the selection column.
     */
-  var hideSelectColumn: js.UndefOr[Boolean] = js.native
+  var hideSelectColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify whether the selection column uses single(radio) or multiple(checkbox) selection modes. Required.
     */
-  var mode: SelectRowMode = js.native
+  var mode: SelectRowMode
   
   /**
     * Accept a custom callback function, if a row be selected or unselected, this function will be called.
@@ -77,7 +75,7 @@ trait SelectRow[TRow /* <: js.Object */] extends StObject {
       /* rowIndex */ Double, 
       Boolean | Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Accept a custom callback function, if click select all checkbox, this function will be called. This callback
@@ -96,28 +94,28 @@ trait SelectRow[TRow /* <: js.Object */] extends StObject {
       /* rows */ js.Array[TRow], 
       Boolean | (js.Array[Double | String])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Only unselect visible rows.
     */
-  var onlyUnselectVisible: js.UndefOr[Boolean] = js.native
+  var onlyUnselectVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Give an array data to perform which rows you want to be selected when table loading.
     * The content of array should be the rowkeys for the rows that you want to be selected.
     */
-  var selected: js.UndefOr[js.Array[Double | String]] = js.native
+  var selected: js.UndefOr[js.Array[Double | String]] = js.undefined
   
   /**
     * Default is false, if enabled, there will be a button on top of table for toggling selected rows only.
     */
-  var showOnlySelected: js.UndefOr[Boolean] = js.native
+  var showOnlySelected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Provide a list of unselectable row keys.
     */
-  var unselectable: js.UndefOr[js.Array[Double | String]] = js.native
+  var unselectable: js.UndefOr[js.Array[Double | String]] = js.undefined
 }
 object SelectRow {
   
@@ -128,7 +126,7 @@ object SelectRow {
   }
   
   @scala.inline
-  implicit class SelectRowMutableBuilder[Self <: SelectRow[_], TRow /* <: js.Object */] (val x: Self with SelectRow[TRow]) extends AnyVal {
+  implicit class SelectRowMutableBuilder[Self <: SelectRow[?], TRow /* <: js.Object */] (val x: Self & SelectRow[TRow]) extends AnyVal {
     
     @scala.inline
     def setBgColor(value: String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])

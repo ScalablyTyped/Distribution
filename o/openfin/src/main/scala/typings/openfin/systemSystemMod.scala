@@ -38,7 +38,6 @@ import typings.openfin.systemMod.SystemEvents
 import typings.openfin.systemWindowMod.WindowInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object systemSystemMod {
@@ -49,10 +48,9 @@ object systemSystemMod {
     def this(wire: typings.openfin.transportMod.default) = this()
   }
   
-  @js.native
   trait ServiceIdentifier extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object ServiceIdentifier {
     
@@ -130,7 +128,7 @@ object systemSystemMod {
       * @return {Promise.<any>}
       * @ignore
       */
-    def executeOnRemote(requestingIdentity: Identity, data: js.Any): js.Promise[_] = js.native
+    def executeOnRemote(requestingIdentity: Identity, data: js.Any): js.Promise[js.Any] = js.native
     
     /**
       * Exits the Runtime.

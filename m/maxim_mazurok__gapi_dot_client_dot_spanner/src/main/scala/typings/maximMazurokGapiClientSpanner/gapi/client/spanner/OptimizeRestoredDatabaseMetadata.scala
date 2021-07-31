@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptimizeRestoredDatabaseMetadata extends StObject {
   
   /** Name of the restored database being optimized. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The progress of the post-restore optimizations. */
-  var progress: js.UndefOr[OperationProgress] = js.native
+  var progress: js.UndefOr[OperationProgress] = js.undefined
 }
 object OptimizeRestoredDatabaseMetadata {
   

@@ -3,26 +3,25 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.EnumDefaultedMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait EnumDefaultedMember_
-  extends EnumMember
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait EnumDefaultedMember_
+  extends StObject
+     with BaseNode
+     with EnumMember {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
   @JSName("type")
-  var type_EnumDefaultedMember_ : EnumDefaultedMember = js.native
+  var type_EnumDefaultedMember_ : EnumDefaultedMember
 }
 object EnumDefaultedMember_ {
   
   @scala.inline
-  def apply(id: Identifier_, `type`: EnumDefaultedMember): EnumDefaultedMember_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_): EnumDefaultedMember_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumDefaultedMember")
     __obj.asInstanceOf[EnumDefaultedMember_]
   }
   

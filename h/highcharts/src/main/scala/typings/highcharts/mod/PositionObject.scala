@@ -2,21 +2,19 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionObject extends StObject {
   
   /**
     * X position of the element.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Y position of the element.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object PositionObject {
   

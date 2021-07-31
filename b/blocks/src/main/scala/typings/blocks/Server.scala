@@ -2,34 +2,32 @@ package typings.blocks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Server extends StObject {
   
   /**
     * Caches pages result instead of executing them each time.
     * Disabling cache could impact performance.
     */
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The port at which your application will be run
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * The folder where your application files like .html; .js and .css are going to be.
     * The value is passed to express.static() middleware.
     */
-  var static: js.UndefOr[String] = js.native
+  var static: js.UndefOr[String] = js.undefined
   
   /**
     * Provide an express middleware function or an array of middleware functions.
     * Use: [compression(); bodyParser()]
     */
-  var use: js.UndefOr[js.Any] = js.native
+  var use: js.UndefOr[js.Any] = js.undefined
 }
 object Server {
   

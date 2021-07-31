@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxSpreadsheet object.
   */
 @js.native
-trait ASPxClientSpreadsheet extends ASPxClientControl {
+trait ASPxClientSpreadsheet
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Applies a value stored within the editor to the active cell

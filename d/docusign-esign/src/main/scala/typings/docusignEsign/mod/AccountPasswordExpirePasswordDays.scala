@@ -2,15 +2,13 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountPasswordExpirePasswordDays extends StObject {
   
-  var maximumDays: js.UndefOr[String] = js.native
+  var maximumDays: js.UndefOr[String] = js.undefined
   
-  var minimumDays: js.UndefOr[String] = js.native
+  var minimumDays: js.UndefOr[String] = js.undefined
 }
 object AccountPasswordExpirePasswordDays {
   

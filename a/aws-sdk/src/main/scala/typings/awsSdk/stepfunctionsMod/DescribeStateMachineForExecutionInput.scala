@@ -2,16 +2,14 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStateMachineForExecutionInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the execution you want state machine information for.
     */
-  var executionArn: Arn = js.native
+  var executionArn: Arn
 }
 object DescribeStateMachineForExecutionInput {
   

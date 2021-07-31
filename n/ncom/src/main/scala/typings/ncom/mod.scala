@@ -11,10 +11,13 @@ import typings.node.tlsMod.TlsOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("ncom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ncom", "ComServer")
   @js.native
@@ -45,81 +48,42 @@ object mod {
     // tslint:disable:unified-signatures Copied from net.d.ts, where the rule is disabled
     def listen(): this.type = js.native
     def listen(handle: js.Any): this.type = js.native
-    def listen(handle: js.Any, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(handle: js.Any, backlog: Double): this.type = js.native
     def listen(handle: js.Any, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(handle: js.Any, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(handle: js.Any, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(options: ListenOptions): this.type = js.native
     def listen(options: ListenOptions, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(path: String): this.type = js.native
-    def listen(path: String, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(path: String, backlog: Double): this.type = js.native
     def listen(path: String, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(path: String, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(path: String, listeningListener: js.Function0[Unit]): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], backlog: Double): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: js.UndefOr[scala.Nothing], backlog: Double): this.type = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: String): this.type = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: String,
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: String, backlog: Double): this.type = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: String,
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: String, listeningListener: js.Function0[Unit]): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(port: Double): this.type = js.native
     def listen(port: Double, backlog: Double): this.type = js.native
     def listen(port: Double, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
-    def listen(
-      port: Double,
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): this.type = js.native
-    def listen(
-      port: Double,
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(port: Double, hostname: String): this.type = js.native
-    def listen(
-      port: Double,
-      hostname: String,
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
     def listen(port: Double, hostname: String, backlog: Double): this.type = js.native
     def listen(port: Double, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Double, hostname: String, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(port: Double, hostname: String, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double): this.type = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Double, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Double, hostname: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(port: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, backlog: Double): this.type = js.native
+    def listen(port: Unit, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: String): this.type = js.native
+    def listen(port: Unit, hostname: String, backlog: Double): this.type = js.native
+    def listen(port: Unit, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: String, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: String, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Double): this.type = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
     
     @JSName("on")
     def on_connection(event: connection, listener: ConnectionListener): this.type = js.native
@@ -190,34 +154,26 @@ object mod {
     def write(data: js.Any, writeOptions: WriteOptions): Unit = js.native
   }
   
-  @JSImport("ncom", "createServer")
-  @js.native
-  def createServer(): ComServer = js.native
-  @JSImport("ncom", "createServer")
-  @js.native
-  def createServer(listener: ConnectionListener): ComServer = js.native
-  @JSImport("ncom", "createServer")
-  @js.native
-  def createServer(options: js.UndefOr[scala.Nothing], listener: ConnectionListener): ComServer = js.native
-  @JSImport("ncom", "createServer")
-  @js.native
-  def createServer(options: ComServerOptions): ComServer = js.native
-  @JSImport("ncom", "createServer")
-  @js.native
-  def createServer(options: ComServerOptions, listener: ConnectionListener): ComServer = js.native
-  @JSImport("ncom", "createServer")
-  @js.native
-  def createServer(options: SecureComServerOptions): ComServer = js.native
-  @JSImport("ncom", "createServer")
-  @js.native
-  def createServer(options: SecureComServerOptions, listener: ConnectionListener): ComServer = js.native
+  @scala.inline
+  def createServer(): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[ComServer]
+  @scala.inline
+  def createServer(listener: ConnectionListener): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(listener.asInstanceOf[js.Any]).asInstanceOf[ComServer]
+  @scala.inline
+  def createServer(options: Unit, listener: ConnectionListener): ComServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ComServer]
+  @scala.inline
+  def createServer(options: ComServerOptions): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[ComServer]
+  @scala.inline
+  def createServer(options: ComServerOptions, listener: ConnectionListener): ComServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ComServer]
+  @scala.inline
+  def createServer(options: SecureComServerOptions): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[ComServer]
+  @scala.inline
+  def createServer(options: SecureComServerOptions, listener: ConnectionListener): ComServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ComServer]
   
-  @js.native
   trait ComServerOptions extends StObject {
     
-    var allowHalfOpen: js.UndefOr[Boolean] = js.native
+    var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
     
-    var pauseOnConnect: js.UndefOr[Boolean] = js.native
+    var pauseOnConnect: js.UndefOr[Boolean] = js.undefined
   }
   object ComServerOptions {
     
@@ -248,16 +204,17 @@ object mod {
   
   type FilterFunction = js.Function1[/* data */ js.Any, String]
   
-  @js.native
-  trait SecureComServerOptions extends TlsOptions {
+  trait SecureComServerOptions
+    extends StObject
+       with TlsOptions {
     
-    var secure: `true` = js.native
+    var secure: `true`
   }
   object SecureComServerOptions {
     
     @scala.inline
-    def apply(secure: `true`): SecureComServerOptions = {
-      val __obj = js.Dynamic.literal(secure = secure.asInstanceOf[js.Any])
+    def apply(): SecureComServerOptions = {
+      val __obj = js.Dynamic.literal(secure = true)
       __obj.asInstanceOf[SecureComServerOptions]
     }
     
@@ -269,12 +226,11 @@ object mod {
     }
   }
   
-  @js.native
   trait WriteOptions extends StObject {
     
-    var batch: js.UndefOr[Boolean] = js.native
+    var batch: js.UndefOr[Boolean] = js.undefined
     
-    var filters: js.UndefOr[js.Array[FilterFunction]] = js.native
+    var filters: js.UndefOr[js.Array[FilterFunction]] = js.undefined
   }
   object WriteOptions {
     

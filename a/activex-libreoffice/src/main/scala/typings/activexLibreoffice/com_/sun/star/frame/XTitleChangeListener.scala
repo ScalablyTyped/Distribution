@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Allows to receive notifications when the frame title changes */
-@js.native
-trait XTitleChangeListener extends XEventListener {
+trait XTitleChangeListener
+  extends StObject
+     with XEventListener {
   
   /** The frame title has changed */
-  def titleChanged(aEvent: TitleChangedEvent): Unit = js.native
+  def titleChanged(aEvent: TitleChangedEvent): Unit
 }
 object XTitleChangeListener {
   

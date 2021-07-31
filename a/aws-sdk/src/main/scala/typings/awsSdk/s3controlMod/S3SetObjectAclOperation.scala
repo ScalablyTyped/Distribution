@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3SetObjectAclOperation extends StObject {
   
   /**
     * 
     */
-  var AccessControlPolicy: js.UndefOr[S3AccessControlPolicy] = js.native
+  var AccessControlPolicy: js.UndefOr[S3AccessControlPolicy] = js.undefined
 }
 object S3SetObjectAclOperation {
   

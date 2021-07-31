@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryItemSchema extends StObject {
   
   /**
     * The schema attributes for inventory. This contains data type and attribute name.
     */
-  var Attributes: InventoryItemAttributeList = js.native
+  var Attributes: InventoryItemAttributeList
   
   /**
     * The alias name of the inventory type. The alias name is used for display purposes.
     */
-  var DisplayName: js.UndefOr[InventoryTypeDisplayName] = js.native
+  var DisplayName: js.UndefOr[InventoryTypeDisplayName] = js.undefined
   
   /**
     * The name of the inventory type. Default inventory item type names start with AWS. Custom inventory type names will start with Custom. Default inventory item types include the following: AWS:AWSComponent, AWS:Application, AWS:InstanceInformation, AWS:Network, and AWS:WindowsUpdate.
     */
-  var TypeName: InventoryItemTypeName = js.native
+  var TypeName: InventoryItemTypeName
   
   /**
     * The schema version for the inventory item.
     */
-  var Version: js.UndefOr[InventoryItemSchemaVersion] = js.native
+  var Version: js.UndefOr[InventoryItemSchemaVersion] = js.undefined
 }
 object InventoryItemSchema {
   

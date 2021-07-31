@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.graphic
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,17 +15,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see GraphicProvider
   * @see MediaProperties
   */
-@js.native
-trait GraphicObject extends XGraphicObject {
+trait GraphicObject
+  extends StObject
+     with XGraphicObject {
   
   /** Creates an {@link GraphicObject} */
-  def create(): Unit = js.native
+  def create(): Unit
   
   /**
     * Creates an {@link GraphicObject} with `uniqueId`
     * @param uniqueId If another {@link XGraphicObject} with `uniqueId` exists, this {@link GraphicObject} is populated with the other {@link GraphicObject} '
     */
-  def createWithId(uniqueId: String): Unit = js.native
+  def createWithId(uniqueId: String): Unit
 }
 object GraphicObject {
   

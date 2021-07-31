@@ -10,9 +10,9 @@ A module to manipulate search part of URLs (querystring)
 | ------------------ | :-------------: |
 | Full name          | search-params |
 | Keywords           | querystring, query, query params, search params, search, location, url |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 7 |
-| # downloads        | 1635635 |
+| # downloads        | 2951939 |
 | # stars            | 0 |
 
 ## Links

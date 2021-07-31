@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Length extends js.Object {
+trait Length extends StObject {
   
   /**
     * The style of visual guide line in emphasis status.
@@ -13,7 +12,7 @@ trait Length extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis.labelLine.emphasis
     */
-  var emphasis: js.UndefOr[Show] = js.native
+  var emphasis: js.UndefOr[Show] = js.undefined
   
   /**
     * The length of the first part from visual guide line.
@@ -21,12 +20,12 @@ trait Length extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis.labelLine.length
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis.labelLine.lineStyle
     */
-  var lineStyle: js.UndefOr[ShadowBlur] = js.native
+  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
   
   /**
     * Whether to show visual guide line.
@@ -34,7 +33,7 @@ trait Length extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis.labelLine.show
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object Length {
   
@@ -45,42 +44,30 @@ object Length {
   }
   
   @scala.inline
-  implicit class LengthOps[Self <: Length] (val x: Self) extends AnyVal {
+  implicit class LengthMutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmphasis(value: Show): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmphasis(value: Show): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStyle(value: ShadowBlur): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
-    
-    @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

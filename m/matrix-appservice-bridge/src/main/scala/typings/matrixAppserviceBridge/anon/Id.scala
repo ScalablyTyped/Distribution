@@ -3,19 +3,17 @@ package typings.matrixAppserviceBridge.anon
 import typings.matrixAppserviceBridge.stateLookupMod.StateLookupEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var realJoinedUsers: js.Array[String] = js.native
+  var realJoinedUsers: js.Array[String]
   
-  var remoteJoinedUsers: js.Array[String] = js.native
+  var remoteJoinedUsers: js.Array[String]
   
-  var state: js.Array[StateLookupEvent] = js.native
+  var state: js.Array[StateLookupEvent]
 }
 object Id {
   

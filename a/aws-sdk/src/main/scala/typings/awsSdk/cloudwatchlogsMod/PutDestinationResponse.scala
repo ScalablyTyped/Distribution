@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutDestinationResponse extends StObject {
   
   /**
     * The destination.
     */
-  var destination: js.UndefOr[Destination] = js.native
+  var destination: js.UndefOr[Destination] = js.undefined
 }
 object PutDestinationResponse {
   

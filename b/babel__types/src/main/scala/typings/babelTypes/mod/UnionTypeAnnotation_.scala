@@ -3,27 +3,26 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.UnionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait UnionTypeAnnotation_
-  extends Flow
+- typings.babelTypes.mod._Node because Already inherited */ trait UnionTypeAnnotation_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowType {
   
   @JSName("type")
-  var type_UnionTypeAnnotation_ : UnionTypeAnnotation = js.native
+  var type_UnionTypeAnnotation_ : UnionTypeAnnotation
   
-  var types: js.Array[FlowType] = js.native
+  var types: js.Array[FlowType]
 }
 object UnionTypeAnnotation_ {
   
   @scala.inline
-  def apply(`type`: UnionTypeAnnotation, types: js.Array[FlowType]): UnionTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(types: js.Array[FlowType]): UnionTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("UnionTypeAnnotation")
     __obj.asInstanceOf[UnionTypeAnnotation_]
   }
   

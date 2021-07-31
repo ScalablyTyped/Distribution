@@ -10,9 +10,9 @@ OpenTelemetry semantic conventions
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/semantic-conventions |
 | Keywords           | opentelemetry, nodejs, tracing, attributes, semantic conventions |
-| # releases         | 7 |
-| # dependents       | 10 |
-| # downloads        | 81971 |
+| # releases         | 16 |
+| # dependents       | 39 |
+| # downloads        | 3720199 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,6 @@ import typings.std.Headers
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,138 +23,137 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait FileItem extends StObject {
     
     /**
       * Name of the field which will contain the file, default is file
       */
-    var alias: String = js.native
+    var alias: String
     
     // **Methods**
     /**
       * Cancels uploading of this file
       */
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
     // **Properties**
-    var file: FileLikeObject = js.native
+    var file: FileLikeObject
     
     /**
       * Data to be sent along with this file
       */
-    var formData: js.Array[FormData] = js.native
+    var formData: js.Array[FormData]
     
     /**
       * Headers to be sent along with this file. HTML5 browsers only.
       */
-    var headers: Headers = js.native
+    var headers: Headers
     
     /**
       * A sequence number upload. Read only.
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * true if uploading was canceled. Read only.
       */
-    var isCancel: Boolean = js.native
+    var isCancel: Boolean
     
     /**
       * true if occurred error while file uploading. Read only.
       */
-    var isError: Boolean = js.native
+    var isError: Boolean
     
     /**
       * File is ready to upload. Read only.
       */
-    var isReady: Boolean = js.native
+    var isReady: Boolean
     
     /**
       * true if the file was uploaded successfully. Read only.
       */
-    var isSuccess: Boolean = js.native
+    var isSuccess: Boolean
     
     /**
       * true if the file was uploaded. Read only.
       */
-    var isUploaded: Boolean = js.native
+    var isUploaded: Boolean
     
     /**
       * true if the file is being uploaded. Read only.
       */
-    var isUploading: Boolean = js.native
+    var isUploading: Boolean
     
     /**
       * It's a request method. By default POST. HTML5 browsers only.
       */
-    var method: String = js.native
+    var method: String
     
     // **Callbacks**
     /**
       *  Fires before uploading an item.
       */
-    def onBeforeUpload(): Unit = js.native
+    def onBeforeUpload(): Unit
     
     /**
       * On cancel uploading
       */
-    def onCancel(response: Response, status: Double, headers: Headers): Unit = js.native
+    def onCancel(response: Response, status: Double, headers: Headers): Unit
     
     /**
       * On file upload complete (independently of the sucess of the operation)
       */
-    def onComplete(response: Response, status: Double, headers: Headers): Unit = js.native
+    def onComplete(response: Response, status: Double, headers: Headers): Unit
     
     /**
       * On upload error
       */
-    def onError(response: Response, status: Double, headers: Headers): Unit = js.native
+    def onError(response: Response, status: Double, headers: Headers): Unit
     
     /**
       * On file upload progress.
       */
-    def onProgress(progress: Double): Unit = js.native
+    def onProgress(progress: Double): Unit
     
     /**
       * On file successfully uploaded
       */
-    def onSuccess(response: Response, status: Double, headers: Headers): Unit = js.native
+    def onSuccess(response: Response, status: Double, headers: Headers): Unit
     
     /**
       * File upload progress percentage. Read only.
       */
-    var progress: Double = js.native
+    var progress: Double
     
     /**
       * Remove this file from the queue
       */
-    def remove(): Unit = js.native
+    def remove(): Unit
     
     /**
       * Remove this file from the queue after uploading
       */
-    var removeAfterUpload: Boolean = js.native
+    var removeAfterUpload: Boolean
     
     /**
       * Upload this file
       */
-    def upload(): Unit = js.native
+    def upload(): Unit
     
     /**
       * Reference to the parent Uploader object for this file. Read only.
       */
-    var uploader: FileUploader = js.native
+    var uploader: FileUploader
     
     /**
       * Path on the server in which this file will be uploaded
       */
-    var url: String = js.native
+    var url: String
     
     /**
       * enable CORS. HTML5 browsers only.
       */
-    var withCredentials: Boolean = js.native
+    var withCredentials: Boolean
   }
   object FileItem {
     
@@ -278,28 +276,27 @@ object mod {
     }
   }
   
-  @js.native
   trait FileLikeObject extends StObject {
     
     /**
       * Equals File.lastModifiedDate
       */
-    var lastModifiedDate: js.Any = js.native
+    var lastModifiedDate: js.Any
     
     /**
       * Equals File.name
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Equals Blob.size, in octet
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * Equals Blob.type, in octet
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object FileLikeObject {
     
@@ -328,7 +325,9 @@ object mod {
   }
   
   @js.native
-  trait FileUploader extends FileUploaderOptions {
+  trait FileUploader
+    extends StObject
+       with FileUploaderOptions {
     
     def addToQueue(files: js.Array[js.Object], options: js.Object, filters: String): Unit = js.native
     def addToQueue(files: js.Array[js.Object], options: js.Object, filters: js.Array[Filter]): Unit = js.native
@@ -482,83 +481,83 @@ object mod {
   
   @js.native
   trait FileUploaderFactory
-    extends Instantiable0[FileUploader]
+    extends StObject
+       with Instantiable0[FileUploader]
        with Instantiable1[/* options */ PartialFileUploaderOption, FileUploader]
   
-  @js.native
   trait FileUploaderOptions extends StObject {
     
     /**
       * Name of the field which will contain the file, default is file
       * @default file
       */
-    var alias: String = js.native
+    var alias: String
     
     /**
       * Automatically upload files after adding them to the queue
       * @default false
       */
-    var autoUpload: Boolean = js.native
+    var autoUpload: Boolean
     
     /**
       * Disable multipart.
       * @default false
       */
-    var disableMultipart: Boolean = js.native
+    var disableMultipart: Boolean
     
     /**
       * Filters to be applied to the files before adding them to the queue. If the filter returns true the file will be added to the queue
       * @default [folderFilter, queueLimitFilter]
       */
-    var filters: js.Array[Filter] = js.native
+    var filters: js.Array[Filter]
     
     /**
       * Data to be sent along with the files
       * @default []
       */
-    var formData: js.Array[FormData] = js.native
+    var formData: js.Array[FormData]
     
     /**
       * Headers to be sent along with the files. HTML5 browsers only.
       * @default {}
       */
-    var headers: Headers = js.native
+    var headers: Headers
     
     /**
       * It's a request method. HTML5 browsers only.
       * @default POST
       */
-    var method: String = js.native
+    var method: String
     
     /**
       * Items to be uploaded
       * @default []
       */
-    var queue: js.Array[FileItem] = js.native
+    var queue: js.Array[FileItem]
     
     /**
       * Maximum count of files.
       * @default Number.MAX_VALUE
       */
-    var queueLimit: Double = js.native
+    var queueLimit: Double
     
     /**
       * Remove files from the queue after uploading
       * @default false
       */
-    var removeAfterUpload: Boolean = js.native
+    var removeAfterUpload: Boolean
     
     /**
       * Path on the server to upload files
       * @default /
       */
-    var url: String = js.native
+    var url: String
     
     /**
       * enable CORS. HTML5 browsers only.
       * @default false
       */
-    var withCredentials: Boolean = js.native
+    var withCredentials: Boolean
   }
   object FileUploaderOptions {
     
@@ -631,12 +630,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Filter extends StObject {
     
-    var fn: SyncFilter | AsyncFilter = js.native
+    var fn: SyncFilter | AsyncFilter
     
-    var name: String = js.native
+    var name: String
   }
   object Filter {
     

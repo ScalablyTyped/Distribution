@@ -6,14 +6,13 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaOverlayMod {
   
   @JSImport("@react-md/media/types/MediaOverlay", "MediaOverlay")
   @js.native
-  val MediaOverlay: ForwardRefExoticComponent[MediaOverlayProps with RefAttributes[HTMLDivElement]] = js.native
+  val MediaOverlay: ForwardRefExoticComponent[MediaOverlayProps & RefAttributes[HTMLDivElement]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdMedia.reactMdMediaStrings.top
@@ -49,13 +48,14 @@ object mediaOverlayMod {
     def top: typings.reactMdMedia.reactMdMediaStrings.top = "top".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.top]
   }
   
-  @js.native
-  trait MediaOverlayProps extends HTMLAttributes[HTMLDivElement] {
+  trait MediaOverlayProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * The position of the overlay within the `MediaContainer`.
       */
-    var position: js.UndefOr[MediaOverlayPosition] = js.native
+    var position: js.UndefOr[MediaOverlayPosition] = js.undefined
   }
   object MediaOverlayProps {
     

@@ -7,91 +7,89 @@ import typings.materialTooltip.constantsMod.CssClasses
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCTooltipAdapter extends StObject {
     
     /**
       * Adds a class onto the root element.
       */
-    def addClass(className: CssClasses): Unit = js.native
+    def addClass(className: CssClasses): Unit
     
     /**
       * Deregisters an event listener to the document body.
       */
-    def deregisterDocumentEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def deregisterDocumentEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * @return the attribute string if present on the anchor element, null
       * otherwise.
       */
-    def getAnchorAttribute(attr: String): String | Null = js.native
+    def getAnchorAttribute(attr: String): String | Null
     
     /**
       * @return the ClientRect for the anchor element.
       */
-    def getAnchorBoundingRect(): ClientRect | Null = js.native
+    def getAnchorBoundingRect(): ClientRect | Null
     
     /**
       * @return the attribute string if present on the root element, null
       * otherwise.
       */
-    def getAttribute(attr: String): String | Null = js.native
+    def getAttribute(attr: String): String | Null
     
     /**
       * @return the width and height of the tooltip element.
       */
-    def getTooltipSize(): Height = js.native
+    def getTooltipSize(): Height
     
     /**
       * @return the height of the viewport.
       */
-    def getViewportHeight(): Double = js.native
+    def getViewportHeight(): Double
     
     /**
       * @return the width of the viewport.
       */
-    def getViewportWidth(): Double = js.native
+    def getViewportWidth(): Double
     
     /**
       * @return whether or not the root element has the provided className.
       */
-    def hasClass(className: CssClasses): Boolean = js.native
+    def hasClass(className: CssClasses): Boolean
     
     /**
       * @return true if the text direction is right-to-left.
       */
-    def isRTL(): Boolean = js.native
+    def isRTL(): Boolean
     
     /**
       * Notification that the tooltip element has been fully hidden. Typically used
       * to wait for the hide animation to complete.
       */
-    def notifyHidden(): Unit = js.native
+    def notifyHidden(): Unit
     
     /**
       * Registers an event listener to the document body.
       */
-    def registerDocumentEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def registerDocumentEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Removes a class from the root element.
       */
-    def removeClass(className: CssClasses): Unit = js.native
+    def removeClass(className: CssClasses): Unit
     
     /**
       * Sets an attribute on the root element.
       */
-    def setAttribute(attr: String, value: String): Unit = js.native
+    def setAttribute(attr: String, value: String): Unit
     
     /**
       * Sets the property value of the given style property on the root element.
       */
-    def setStyleProperty(propertyName: String, value: String): Unit = js.native
+    def setStyleProperty(propertyName: String, value: String): Unit
   }
   object MDCTooltipAdapter {
     

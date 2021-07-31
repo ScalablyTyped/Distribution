@@ -5,7 +5,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.structuresMod.aliases.IContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "AbstractElement")

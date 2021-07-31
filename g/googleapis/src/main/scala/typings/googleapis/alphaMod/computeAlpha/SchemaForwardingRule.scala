@@ -3,7 +3,6 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ==) (== resource_for beta.regionForwardingRules ==) (== resource_for
   * v1.regionForwardingRules ==)
   */
-@js.native
 trait SchemaForwardingRule extends StObject {
   
   /**
@@ -43,7 +41,7 @@ trait SchemaForwardingRule extends StObject {
     * - projects/project/regions/region/addresses/address  -
     * regions/region/addresses/address  - global/addresses/address  - address
     */
-  var IPAddress: js.UndefOr[String] = js.native
+  var IPAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The IP protocol to which this rule applies. Valid options are TCP, UDP,
@@ -51,7 +49,7 @@ trait SchemaForwardingRule extends StObject {
     * TCP and UDP are valid. When the load balancing scheme is
     * INTERNAL_SELF_MANAGED, only TCPis valid.
     */
-  var IPProtocol: js.UndefOr[String] = js.native
+  var IPProtocol: js.UndefOr[String] = js.undefined
   
   /**
     * This field is used along with the backend_service field for internal load
@@ -61,7 +59,7 @@ trait SchemaForwardingRule extends StObject {
     * to allow packets addressed to any ports will be forwarded to the backends
     * configured with this forwarding rule.
     */
-  var allPorts: js.UndefOr[Boolean] = js.native
+  var allPorts: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This field is used along with the backend_service field for internal load
@@ -70,25 +68,25 @@ trait SchemaForwardingRule extends StObject {
     * only allows access from clients in the same region as the internal load
     * balancer.
     */
-  var allowGlobalAccess: js.UndefOr[Boolean] = js.native
+  var allowGlobalAccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This field is only used for INTERNAL load balancing.  For internal load
     * balancing, this field identifies the BackendService resource to receive
     * the matched traffic.
     */
-  var backendService: js.UndefOr[String] = js.native
+  var backendService: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Fingerprint of this resource. A hash of the contents stored in this
@@ -98,26 +96,26 @@ trait SchemaForwardingRule extends StObject {
     * from another concurrent request.  To see the latest fingerprint, make a
     * get() request to retrieve a ForwardingRule.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The IP Version that will be used by this forwarding rule. Valid options
     * are IPV4 or IPV6. This can only be specified for an external global
     * forwarding rule.
     */
-  var ipVersion: js.UndefOr[String] = js.native
+  var ipVersion: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#forwardingRule for
     * Forwarding Rule resources.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A fingerprint for the labels being applied to this resource, which is
@@ -129,14 +127,14 @@ trait SchemaForwardingRule extends StObject {
     * the latest fingerprint, make a get() request to retrieve a
     * ForwardingRule.
     */
-  var labelFingerprint: js.UndefOr[String] = js.native
+  var labelFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to apply to this resource. These can be later modified by the
     * setLabels method. Each label key/value pair must comply with RFC1035.
     * Label values may be empty.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * This signifies what the ForwardingRule will be used for and can only take
@@ -147,7 +145,7 @@ trait SchemaForwardingRule extends StObject {
     * that this will be used for External Load Balancing (HTTP(S) LB, External
     * TCP/UDP LB, SSL Proxy)
     */
-  var loadBalancingScheme: js.UndefOr[String] = js.native
+  var loadBalancingScheme: js.UndefOr[String] = js.undefined
   
   /**
     * Opaque filter criteria used by Loadbalancer to restrict routing
@@ -164,7 +162,7 @@ trait SchemaForwardingRule extends StObject {
     * applies to Loadbalancers that have their loadBalancingScheme set to
     * INTERNAL_SELF_MANAGED.
     */
-  var metadataFilters: js.UndefOr[js.Array[SchemaMetadataFilter]] = js.native
+  var metadataFilters: js.UndefOr[js.Array[SchemaMetadataFilter]] = js.undefined
   
   /**
     * Name of the resource; provided by the client when the resource is
@@ -175,7 +173,7 @@ trait SchemaForwardingRule extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * This field is not used for external load balancing.  For INTERNAL and
@@ -183,7 +181,7 @@ trait SchemaForwardingRule extends StObject {
     * that the load balanced IP should belong to for this Forwarding Rule. If
     * this field is not specified, the default network will be used.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * This signifies the networking tier used for configuring this load
@@ -193,7 +191,7 @@ trait SchemaForwardingRule extends StObject {
     * specified, it is assumed to be PREMIUM. If IPAddress is specified, this
     * value must be equal to the networkTier of the Address.
     */
-  var networkTier: js.UndefOr[String] = js.native
+  var networkTier: js.UndefOr[String] = js.undefined
   
   /**
     * This field is used along with the target field for TargetHttpProxy,
@@ -208,7 +206,7 @@ trait SchemaForwardingRule extends StObject {
     * TargetSslProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
     * 1688, 1883, 5222  - TargetVpnGateway: 500, 4500
     */
-  var portRange: js.UndefOr[String] = js.native
+  var portRange: js.UndefOr[String] = js.undefined
   
   /**
     * This field is used along with the backend_service field for internal load
@@ -218,7 +216,7 @@ trait SchemaForwardingRule extends StObject {
     * ports will be forwarded to the backends configured with this forwarding
     * rule.  You may specify a maximum of up to 5 ports.
     */
-  var ports: js.UndefOr[js.Array[String]] = js.native
+  var ports: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Output Only] URL of the region where the regional forwarding rule
@@ -226,17 +224,17 @@ trait SchemaForwardingRule extends StObject {
     * must specify this field as part of the HTTP request URL. It is not
     * settable as a field in the request body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource with the resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
   
   /**
     * An optional prefix to the service name for this Forwarding Rule. If
@@ -248,13 +246,13 @@ trait SchemaForwardingRule extends StObject {
     * be a dash, lowercase letter, or digit, except the last character, which
     * cannot be a dash.  This field is only used for internal load balancing.
     */
-  var serviceLabel: js.UndefOr[String] = js.native
+  var serviceLabel: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The internal fully qualified service name for this
     * Forwarding Rule.  This field is only used for internal load balancing.
     */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
   
   /**
     * This field is only used for INTERNAL load balancing.  For internal load
@@ -263,7 +261,7 @@ trait SchemaForwardingRule extends StObject {
     * in auto subnet mode, this field is optional. However, if the network is
     * in custom subnet mode, a subnetwork must be specified.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the target resource to receive the matched traffic. For
@@ -273,7 +271,7 @@ trait SchemaForwardingRule extends StObject {
     * appropriate to the target object. For INTERNAL_SELF_MANAGED load
     * balancing, only HTTP and HTTPS targets are valid.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object SchemaForwardingRule {
   

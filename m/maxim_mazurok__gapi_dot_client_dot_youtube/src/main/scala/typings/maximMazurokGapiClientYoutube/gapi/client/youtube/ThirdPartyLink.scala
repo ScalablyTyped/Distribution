@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThirdPartyLink extends StObject {
   
   /** Etag of this resource */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#thirdPartyLink". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The linking_token identifies a YouTube account and channel with which the third party account is linked. */
-  var linkingToken: js.UndefOr[String] = js.native
+  var linkingToken: js.UndefOr[String] = js.undefined
   
   /** The snippet object contains basic details about the third- party account link. */
-  var snippet: js.UndefOr[ThirdPartyLinkSnippet] = js.native
+  var snippet: js.UndefOr[ThirdPartyLinkSnippet] = js.undefined
   
   /** The status object contains information about the status of the link. */
-  var status: js.UndefOr[ThirdPartyLinkStatus] = js.native
+  var status: js.UndefOr[ThirdPartyLinkStatus] = js.undefined
 }
 object ThirdPartyLink {
   

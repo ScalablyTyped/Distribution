@@ -2,14 +2,12 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NodeManagement defines the set of node management services turned on for
   * the node pool.
   */
-@js.native
 trait SchemaNodeManagement extends StObject {
   
   /**
@@ -18,19 +16,19 @@ trait SchemaNodeManagement extends StObject {
     * if they fail health checks too many times, an automatic repair action
     * will be triggered.
     */
-  var autoRepair: js.UndefOr[Boolean] = js.native
+  var autoRepair: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag that specifies whether node auto-upgrade is enabled for the node
     * pool. If enabled, node auto-upgrade helps keep the nodes in your node
     * pool up to date with the latest release version of Kubernetes.
     */
-  var autoUpgrade: js.UndefOr[Boolean] = js.native
+  var autoUpgrade: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the Auto Upgrade knobs for the node pool.
     */
-  var upgradeOptions: js.UndefOr[SchemaAutoUpgradeOptions] = js.native
+  var upgradeOptions: js.UndefOr[SchemaAutoUpgradeOptions] = js.undefined
 }
 object SchemaNodeManagement {
   

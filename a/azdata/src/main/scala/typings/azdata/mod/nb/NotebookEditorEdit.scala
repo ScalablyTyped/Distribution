@@ -2,7 +2,6 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,9 +23,9 @@ trait NotebookEditorEdit extends StObject {
     * @param collapsed The collapsed state of the new cell. Default value is `false` if not provided.
     */
   def insertCell(value: ICellContents): Unit = js.native
-  def insertCell(value: ICellContents, index: js.UndefOr[scala.Nothing], collapsed: Boolean): Unit = js.native
   def insertCell(value: ICellContents, index: Double): Unit = js.native
   def insertCell(value: ICellContents, index: Double, collapsed: Boolean): Unit = js.native
+  def insertCell(value: ICellContents, index: Unit, collapsed: Boolean): Unit = js.native
   
   /**
     * Replace a cell range with a new cell.

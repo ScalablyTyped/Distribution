@@ -2,15 +2,13 @@ package typings.limeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICommandChannel extends StObject {
   
-  def onCommand(command: Command): js.Any = js.native
+  def onCommand(command: Command): js.Any
   
-  def sendCommand(command: Command): Unit = js.native
+  def sendCommand(command: Command): Unit
 }
 object ICommandChannel {
   

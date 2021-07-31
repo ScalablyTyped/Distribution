@@ -2,21 +2,19 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the Step Functions state machine or activity.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
   
   /**
     * The list of tags to remove from the resource.
     */
-  var tagKeys: TagKeyList = js.native
+  var tagKeys: TagKeyList
 }
 object UntagResourceInput {
   

@@ -12,14 +12,14 @@ import typings.std.WebAssembly.ImportExportKind
 import typings.std.WebAssembly.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stdStrings {
   
   @js.native
   sealed trait default
-    extends ColorSpaceConversion
+    extends StObject
+       with ColorSpaceConversion
        with NotificationPermission
        with PremultiplyAlpha
        with RequestCache
@@ -29,17 +29,23 @@ object stdStrings {
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `2d` extends OffscreenRenderingContextId
+  sealed trait `2d`
+    extends StObject
+       with OffscreenRenderingContextId
   @scala.inline
   def `2d`: `2d` = "2d".asInstanceOf[`2d`]
   
   @js.native
-  sealed trait `2x` extends OverSampleType
+  sealed trait `2x`
+    extends StObject
+       with OverSampleType
   @scala.inline
   def `2x`: `2x` = "2x".asInstanceOf[`2x`]
   
   @js.native
-  sealed trait `4x` extends OverSampleType
+  sealed trait `4x`
+    extends StObject
+       with OverSampleType
   @scala.inline
   def `4x`: `4x` = "4x".asInstanceOf[`4x`]
   
@@ -69,7 +75,9 @@ object stdStrings {
   def AudioProcessingEvent: AudioProcessingEvent = "AudioProcessingEvent".asInstanceOf[AudioProcessingEvent]
   
   @js.native
-  sealed trait BT extends MSTransportType
+  sealed trait BT
+    extends StObject
+       with MSTransportType
   @scala.inline
   def BT: BT = "BT".asInstanceOf[BT]
   
@@ -159,7 +167,9 @@ object stdStrings {
   def EXT_texture_filter_anisotropic: EXT_texture_filter_anisotropic = "EXT_texture_filter_anisotropic".asInstanceOf[EXT_texture_filter_anisotropic]
   
   @js.native
-  sealed trait Embedded extends MSTransportType
+  sealed trait Embedded
+    extends StObject
+       with MSTransportType
   @scala.inline
   def Embedded: Embedded = "Embedded".asInstanceOf[Embedded]
   
@@ -214,7 +224,9 @@ object stdStrings {
   def GamepadEvent: GamepadEvent = "GamepadEvent".asInstanceOf[GamepadEvent]
   
   @js.native
-  sealed trait HRTF extends PanningModelType
+  sealed trait HRTF
+    extends StObject
+       with PanningModelType
   @scala.inline
   def HRTF: HRTF = "HRTF".asInstanceOf[HRTF]
   
@@ -424,7 +436,9 @@ object stdStrings {
   def MutationEvents: MutationEvents = "MutationEvents".asInstanceOf[MutationEvents]
   
   @js.native
-  sealed trait NFC extends MSTransportType
+  sealed trait NFC
+    extends StObject
+       with MSTransportType
   @scala.inline
   def NFC: NFC = "NFC".asInstanceOf[NFC]
   
@@ -704,7 +718,9 @@ object stdStrings {
   def UIEvents: UIEvents = "UIEvents".asInstanceOf[UIEvents]
   
   @js.native
-  sealed trait USB extends MSTransportType
+  sealed trait USB
+    extends StObject
+       with MSTransportType
   @scala.inline
   def USB: USB = "USB".asInstanceOf[USB]
   
@@ -800,7 +816,8 @@ object stdStrings {
   
   @js.native
   sealed trait _empty
-    extends CanPlayTypeResult
+    extends StObject
+       with CanPlayTypeResult
        with DirectionSetting
        with GamepadHand
        with GamepadMappingType
@@ -817,7 +834,9 @@ object stdStrings {
   def a: a = "a".asInstanceOf[a]
   
   @js.native
-  sealed trait `a-rate` extends AutomationRate
+  sealed trait `a-rate`
+    extends StObject
+       with AutomationRate
   @scala.inline
   def `a-rate`: `a-rate` = "a-rate".asInstanceOf[`a-rate`]
   
@@ -832,38 +851,47 @@ object stdStrings {
   def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait accelerometer extends PermissionName
+  sealed trait accelerometer
+    extends StObject
+       with PermissionName
   @scala.inline
   def accelerometer: accelerometer = "accelerometer".asInstanceOf[accelerometer]
   
   @js.native
   sealed trait accumulate
-    extends CompositeOperation
+    extends StObject
+       with CompositeOperation
        with CompositeOperationOrAuto
        with IterationCompositeOperation
   @scala.inline
   def accumulate: accumulate = "accumulate".asInstanceOf[accumulate]
   
   @js.native
-  sealed trait activated extends ServiceWorkerState
+  sealed trait activated
+    extends StObject
+       with ServiceWorkerState
   @scala.inline
   def activated: activated = "activated".asInstanceOf[activated]
   
   @js.native
-  sealed trait activating extends ServiceWorkerState
+  sealed trait activating
+    extends StObject
+       with ServiceWorkerState
   @scala.inline
   def activating: activating = "activating".asInstanceOf[activating]
   
   @js.native
   sealed trait active
-    extends ListeningState
+    extends StObject
+       with ListeningState
        with RTCIceTcpCandidateType
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   
   @js.native
   sealed trait add
-    extends CompositeOperation
+    extends StObject
+       with CompositeOperation
        with CompositeOperationOrAuto
   @scala.inline
   def add: add = "add".asInstanceOf[add]
@@ -884,12 +912,16 @@ object stdStrings {
   def addtrack: addtrack = "addtrack".asInstanceOf[addtrack]
   
   @js.native
-  sealed trait afterbegin extends InsertPosition
+  sealed trait afterbegin
+    extends StObject
+       with InsertPosition
   @scala.inline
   def afterbegin: afterbegin = "afterbegin".asInstanceOf[afterbegin]
   
   @js.native
-  sealed trait afterend extends InsertPosition
+  sealed trait afterend
+    extends StObject
+       with InsertPosition
   @scala.inline
   def afterend: afterend = "afterend".asInstanceOf[afterend]
   
@@ -900,7 +932,8 @@ object stdStrings {
   
   @js.native
   sealed trait all
-    extends ClientTypes
+    extends StObject
+       with ClientTypes
        with RTCIceGatherPolicy
        with RTCIceTransportPolicy
        with ServiceWorkerUpdateViaCache
@@ -908,37 +941,51 @@ object stdStrings {
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait allow extends MSWebViewPermissionState
+  sealed trait allow
+    extends StObject
+       with MSWebViewPermissionState
   @scala.inline
   def allow: allow = "allow".asInstanceOf[allow]
   
   @js.native
-  sealed trait allpass extends BiquadFilterType
+  sealed trait allpass
+    extends StObject
+       with BiquadFilterType
   @scala.inline
   def allpass: allpass = "allpass".asInstanceOf[allpass]
   
   @js.native
-  sealed trait alphabetic extends CanvasTextBaseline
+  sealed trait alphabetic
+    extends StObject
+       with CanvasTextBaseline
   @scala.inline
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
   
   @js.native
-  sealed trait alternate extends PlaybackDirection
+  sealed trait alternate
+    extends StObject
+       with PlaybackDirection
   @scala.inline
   def alternate: alternate = "alternate".asInstanceOf[alternate]
   
   @js.native
-  sealed trait `alternate-reverse` extends PlaybackDirection
+  sealed trait `alternate-reverse`
+    extends StObject
+       with PlaybackDirection
   @scala.inline
   def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
   
   @js.native
-  sealed trait always extends RelativeTimeFormatNumeric
+  sealed trait always
+    extends StObject
+       with RelativeTimeFormatNumeric
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait `ambient-light-sensor` extends PermissionName
+  sealed trait `ambient-light-sensor`
+    extends StObject
+       with PermissionName
   @scala.inline
   def `ambient-light-sensor`: `ambient-light-sensor` = "ambient-light-sensor".asInstanceOf[`ambient-light-sensor`]
   
@@ -963,12 +1010,16 @@ object stdStrings {
   def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
   
   @js.native
-  sealed trait answer extends RTCSdpType
+  sealed trait answer
+    extends StObject
+       with RTCSdpType
   @scala.inline
   def answer: answer = "answer".asInstanceOf[answer]
   
   @js.native
-  sealed trait any extends OrientationLockType
+  sealed trait any
+    extends StObject
+       with OrientationLockType
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   
@@ -983,17 +1034,23 @@ object stdStrings {
   def applet: applet = "applet".asInstanceOf[applet]
   
   @js.native
-  sealed trait application extends DisplayCaptureSurfaceType
+  sealed trait application
+    extends StObject
+       with DisplayCaptureSurfaceType
   @scala.inline
   def application: application = "application".asInstanceOf[application]
   
   @js.native
-  sealed trait applicationSlashxhtmlPlussignxml extends DOMParserSupportedType
+  sealed trait applicationSlashxhtmlPlussignxml
+    extends StObject
+       with DOMParserSupportedType
   @scala.inline
   def applicationSlashxhtmlPlussignxml: applicationSlashxhtmlPlussignxml = "application/xhtml+xml".asInstanceOf[applicationSlashxhtmlPlussignxml]
   
   @js.native
-  sealed trait applicationSlashxml extends DOMParserSupportedType
+  sealed trait applicationSlashxml
+    extends StObject
+       with DOMParserSupportedType
   @scala.inline
   def applicationSlashxml: applicationSlashxml = "application/xml".asInstanceOf[applicationSlashxml]
   
@@ -1004,7 +1061,8 @@ object stdStrings {
   
   @js.native
   sealed trait arraybuffer
-    extends BinaryType
+    extends StObject
+       with BinaryType
        with XMLHttpRequestResponseType
   @scala.inline
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
@@ -1025,22 +1083,30 @@ object stdStrings {
   def async: async = "async".asInstanceOf[async]
   
   @js.native
-  sealed trait attributes extends MutationRecordType
+  sealed trait attributes
+    extends StObject
+       with MutationRecordType
   @scala.inline
   def attributes: attributes = "attributes".asInstanceOf[attributes]
   
   @js.native
-  sealed trait audio extends RequestDestination
+  sealed trait audio
+    extends StObject
+       with RequestDestination
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait `audio-busy` extends SpeechSynthesisErrorCode
+  sealed trait `audio-busy`
+    extends StObject
+       with SpeechSynthesisErrorCode
   @scala.inline
   def `audio-busy`: `audio-busy` = "audio-busy".asInstanceOf[`audio-busy`]
   
   @js.native
-  sealed trait `audio-hardware` extends SpeechSynthesisErrorCode
+  sealed trait `audio-hardware`
+    extends StObject
+       with SpeechSynthesisErrorCode
   @scala.inline
   def `audio-hardware`: `audio-hardware` = "audio-hardware".asInstanceOf[`audio-hardware`]
   
@@ -1050,12 +1116,16 @@ object stdStrings {
   def audioend: audioend = "audioend".asInstanceOf[audioend]
   
   @js.native
-  sealed trait audioinput extends MediaDeviceKind
+  sealed trait audioinput
+    extends StObject
+       with MediaDeviceKind
   @scala.inline
   def audioinput: audioinput = "audioinput".asInstanceOf[audioinput]
   
   @js.native
-  sealed trait audiooutput extends MediaDeviceKind
+  sealed trait audiooutput
+    extends StObject
+       with MediaDeviceKind
   @scala.inline
   def audiooutput: audiooutput = "audiooutput".asInstanceOf[audiooutput]
   
@@ -1070,18 +1140,23 @@ object stdStrings {
   def audiostart: audiostart = "audiostart".asInstanceOf[audiostart]
   
   @js.native
-  sealed trait audioworklet extends RequestDestination
+  sealed trait audioworklet
+    extends StObject
+       with RequestDestination
   @scala.inline
   def audioworklet: audioworklet = "audioworklet".asInstanceOf[audioworklet]
   
   @js.native
-  sealed trait auth extends PushEncryptionKeyName
+  sealed trait auth
+    extends StObject
+       with PushEncryptionKeyName
   @scala.inline
   def auth: auth = "auth".asInstanceOf[auth]
   
   @js.native
   sealed trait auto
-    extends CompositeOperationOrAuto
+    extends StObject
+       with CompositeOperationOrAuto
        with FillMode
        with FullscreenNavigationUI
        with NotificationDirection
@@ -1104,12 +1179,16 @@ object stdStrings {
   def b: b = "b".asInstanceOf[b]
   
   @js.native
-  sealed trait back_forward extends NavigationType
+  sealed trait back_forward
+    extends StObject
+       with NavigationType
   @scala.inline
   def back_forward: back_forward = "back_forward".asInstanceOf[back_forward]
   
   @js.native
-  sealed trait `background-sync` extends PermissionName
+  sealed trait `background-sync`
+    extends StObject
+       with PermissionName
   @scala.inline
   def `background-sync`: `background-sync` = "background-sync".asInstanceOf[`background-sync`]
   
@@ -1119,20 +1198,25 @@ object stdStrings {
   def backward: backward = "backward".asInstanceOf[backward]
   
   @js.native
-  sealed trait backwards extends FillMode
+  sealed trait backwards
+    extends StObject
+       with FillMode
   @scala.inline
   def backwards: backwards = "backwards".asInstanceOf[backwards]
   
   @js.native
   sealed trait balanced
-    extends AudioContextLatencyCategory
+    extends StObject
+       with AudioContextLatencyCategory
        with RTCBundlePolicy
        with RTCDegradationPreference
   @scala.inline
   def balanced: balanced = "balanced".asInstanceOf[balanced]
   
   @js.native
-  sealed trait bandpass extends BiquadFilterType
+  sealed trait bandpass
+    extends StObject
+       with BiquadFilterType
   @scala.inline
   def bandpass: bandpass = "bandpass".asInstanceOf[bandpass]
   
@@ -1147,7 +1231,9 @@ object stdStrings {
   def basefont: basefont = "basefont".asInstanceOf[basefont]
   
   @js.native
-  sealed trait basic extends ResponseType
+  sealed trait basic
+    extends StObject
+       with ResponseType
   @scala.inline
   def basic: basic = "basic".asInstanceOf[basic]
   
@@ -1162,12 +1248,16 @@ object stdStrings {
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   
   @js.native
-  sealed trait beforebegin extends InsertPosition
+  sealed trait beforebegin
+    extends StObject
+       with InsertPosition
   @scala.inline
   def beforebegin: beforebegin = "beforebegin".asInstanceOf[beforebegin]
   
   @js.native
-  sealed trait beforeend extends InsertPosition
+  sealed trait beforeend
+    extends StObject
+       with InsertPosition
   @scala.inline
   def beforeend: beforeend = "beforeend".asInstanceOf[beforeend]
   
@@ -1182,30 +1272,38 @@ object stdStrings {
   def beforeunload: beforeunload = "beforeunload".asInstanceOf[beforeunload]
   
   @js.native
-  sealed trait `best fit` extends RelativeTimeFormatLocaleMatcher
+  sealed trait `best fit`
+    extends StObject
+       with RelativeTimeFormatLocaleMatcher
   @scala.inline
   def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   
   @js.native
-  sealed trait bevel extends CanvasLineJoin
+  sealed trait bevel
+    extends StObject
+       with CanvasLineJoin
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
-  sealed trait bitmaprenderer extends OffscreenRenderingContextId
+  sealed trait bitmaprenderer
+    extends StObject
+       with OffscreenRenderingContextId
   @scala.inline
   def bitmaprenderer: bitmaprenderer = "bitmaprenderer".asInstanceOf[bitmaprenderer]
   
   @js.native
   sealed trait ble
-    extends AuthenticatorTransport
+    extends StObject
+       with AuthenticatorTransport
        with Transport
   @scala.inline
   def ble: ble = "ble".asInstanceOf[ble]
   
   @js.native
   sealed trait blob
-    extends BinaryType
+    extends StObject
+       with BinaryType
        with XMLHttpRequestResponseType
   @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
@@ -1221,7 +1319,9 @@ object stdStrings {
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
   @js.native
-  sealed trait bluetooth extends PermissionName
+  sealed trait bluetooth
+    extends StObject
+       with PermissionName
   @scala.inline
   def bluetooth: bluetooth = "bluetooth".asInstanceOf[bluetooth]
   
@@ -1236,12 +1336,16 @@ object stdStrings {
   def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait both extends FillMode
+  sealed trait both
+    extends StObject
+       with FillMode
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends CanvasTextBaseline
+  sealed trait bottom
+    extends StObject
+       with CanvasTextBaseline
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -1261,7 +1365,9 @@ object stdStrings {
   def br: br = "br".asInstanceOf[br]
   
   @js.native
-  sealed trait browser extends DisplayCaptureSurfaceType
+  sealed trait browser
+    extends StObject
+       with DisplayCaptureSurfaceType
   @scala.inline
   def browser: browser = "browser".asInstanceOf[browser]
   
@@ -1271,7 +1377,9 @@ object stdStrings {
   def bufferedamountlow: bufferedamountlow = "bufferedamountlow".asInstanceOf[bufferedamountlow]
   
   @js.native
-  sealed trait butt extends CanvasLineCap
+  sealed trait butt
+    extends StObject
+       with CanvasLineCap
   @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   
@@ -1296,7 +1404,9 @@ object stdStrings {
   def cached: cached = "cached".asInstanceOf[cached]
   
   @js.native
-  sealed trait camera extends PermissionName
+  sealed trait camera
+    extends StObject
+       with PermissionName
   @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
   
@@ -1306,17 +1416,23 @@ object stdStrings {
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait canceled extends SpeechSynthesisErrorCode
+  sealed trait canceled
+    extends StObject
+       with SpeechSynthesisErrorCode
   @scala.inline
   def canceled: canceled = "canceled".asInstanceOf[canceled]
   
   @js.native
-  sealed trait cancelled extends RTCStatsIceCandidatePairState
+  sealed trait cancelled
+    extends StObject
+       with RTCStatsIceCandidatePairState
   @scala.inline
   def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   
   @js.native
-  sealed trait candidatepair extends RTCStatsType
+  sealed trait candidatepair
+    extends StObject
+       with RTCStatsType
   @scala.inline
   def candidatepair: candidatepair = "candidatepair".asInstanceOf[candidatepair]
   
@@ -1341,18 +1457,23 @@ object stdStrings {
   def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
-  sealed trait captions extends TextTrackKind
+  sealed trait captions
+    extends StObject
+       with TextTrackKind
   @scala.inline
   def captions: captions = "captions".asInstanceOf[captions]
   
   @js.native
-  sealed trait cardinal extends PluralRuleType
+  sealed trait cardinal
+    extends StObject
+       with PluralRuleType
   @scala.inline
   def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
   
   @js.native
   sealed trait center
-    extends AlignSetting
+    extends StObject
+       with AlignSetting
        with CanvasTextAlign
        with LineAlignSetting
        with PositionAlignSetting
@@ -1366,24 +1487,31 @@ object stdStrings {
   def change: change = "change".asInstanceOf[change]
   
   @js.native
-  sealed trait chapters extends TextTrackKind
+  sealed trait chapters
+    extends StObject
+       with TextTrackKind
   @scala.inline
   def chapters: chapters = "chapters".asInstanceOf[chapters]
   
   @js.native
-  sealed trait characterData extends MutationRecordType
+  sealed trait characterData
+    extends StObject
+       with MutationRecordType
   @scala.inline
   def characterData: characterData = "characterData".asInstanceOf[characterData]
   
   @js.native
   sealed trait checking
-    extends RTCIceConnectionState
+    extends StObject
+       with RTCIceConnectionState
        with RTCIceTransportState
   @scala.inline
   def checking: checking = "checking".asInstanceOf[checking]
   
   @js.native
-  sealed trait childList extends MutationRecordType
+  sealed trait childList
+    extends StObject
+       with MutationRecordType
   @scala.inline
   def childList: childList = "childList".asInstanceOf[childList]
   
@@ -1398,12 +1526,16 @@ object stdStrings {
   def cite: cite = "cite".asInstanceOf[cite]
   
   @js.native
-  sealed trait `clamped-max` extends ChannelCountMode
+  sealed trait `clamped-max`
+    extends StObject
+       with ChannelCountMode
   @scala.inline
   def `clamped-max`: `clamped-max` = "clamped-max".asInstanceOf[`clamped-max`]
   
   @js.native
-  sealed trait classic extends WorkerType
+  sealed trait classic
+    extends StObject
+       with WorkerType
   @scala.inline
   def classic: classic = "classic".asInstanceOf[classic]
   
@@ -1413,7 +1545,9 @@ object stdStrings {
   def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait client extends RTCDtlsRole
+  sealed trait client
+    extends StObject
+       with RTCDtlsRole
   @scala.inline
   def client: client = "client".asInstanceOf[client]
   
@@ -1423,7 +1557,9 @@ object stdStrings {
   def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   
   @js.native
-  sealed trait clipboard extends PermissionName
+  sealed trait clipboard
+    extends StObject
+       with PermissionName
   @scala.inline
   def clipboard: clipboard = "clipboard".asInstanceOf[clipboard]
   
@@ -1434,7 +1570,8 @@ object stdStrings {
   
   @js.native
   sealed trait closed
-    extends AudioContextState
+    extends StObject
+       with AudioContextState
        with RTCDataChannelState
        with RTCDtlsTransportState
        with RTCIceConnectionState
@@ -1448,7 +1585,9 @@ object stdStrings {
   def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait closing extends RTCDataChannelState
+  sealed trait closing
+    extends StObject
+       with RTCDataChannelState
   @scala.inline
   def closing: closing = "closing".asInstanceOf[closing]
   
@@ -1474,7 +1613,8 @@ object stdStrings {
   
   @js.native
   sealed trait complete
-    extends DocumentReadyState
+    extends StObject
+       with DocumentReadyState
        with RTCIceGathererState
        with RTCIceGatheringState
   @scala.inline
@@ -1482,14 +1622,16 @@ object stdStrings {
   
   @js.native
   sealed trait completed
-    extends RTCIceConnectionState
+    extends StObject
+       with RTCIceConnectionState
        with RTCIceTransportState
   @scala.inline
   def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
   sealed trait connected
-    extends RTCDtlsTransportState
+    extends StObject
+       with RTCDtlsTransportState
        with RTCIceConnectionState
        with RTCIceTransportState
        with RTCPeerConnectionState
@@ -1499,7 +1641,8 @@ object stdStrings {
   
   @js.native
   sealed trait connecting
-    extends RTCDataChannelState
+    extends StObject
+       with RTCDataChannelState
        with RTCDtlsTransportState
        with RTCPeerConnectionState
        with RTCSctpTransportState
@@ -1517,7 +1660,9 @@ object stdStrings {
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
-  sealed trait controlled extends RTCIceRole
+  sealed trait controlled
+    extends StObject
+       with RTCIceRole
   @scala.inline
   def controlled: controlled = "controlled".asInstanceOf[controlled]
   
@@ -1527,7 +1672,9 @@ object stdStrings {
   def controllerchange: controllerchange = "controllerchange".asInstanceOf[controllerchange]
   
   @js.native
-  sealed trait controlling extends RTCIceRole
+  sealed trait controlling
+    extends StObject
+       with RTCIceRole
   @scala.inline
   def controlling: controlling = "controlling".asInstanceOf[controlling]
   
@@ -1548,13 +1695,16 @@ object stdStrings {
   
   @js.native
   sealed trait cors
-    extends RequestMode
+    extends StObject
+       with RequestMode
        with ResponseType
   @scala.inline
   def cors: cors = "cors".asInstanceOf[cors]
   
   @js.native
-  sealed trait `cross-platform` extends AuthenticatorAttachment
+  sealed trait `cross-platform`
+    extends StObject
+       with AuthenticatorAttachment
   @scala.inline
   def `cross-platform`: `cross-platform` = "cross-platform".asInstanceOf[`cross-platform`]
   
@@ -1564,12 +1714,16 @@ object stdStrings {
   def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
   
   @js.native
-  sealed trait currency extends NumberFormatPartTypes
+  sealed trait currency
+    extends StObject
+       with NumberFormatPartTypes
   @scala.inline
   def currency: currency = "currency".asInstanceOf[currency]
   
   @js.native
-  sealed trait custom extends OscillatorType
+  sealed trait custom
+    extends StObject
+       with OscillatorType
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   
@@ -1584,12 +1738,16 @@ object stdStrings {
   def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait `data-channel-failure` extends RTCErrorDetailType
+  sealed trait `data-channel-failure`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `data-channel-failure`: `data-channel-failure` = "data-channel-failure".asInstanceOf[`data-channel-failure`]
   
   @js.native
-  sealed trait datachannel extends RTCStatsType
+  sealed trait datachannel
+    extends StObject
+       with RTCStatsType
   @scala.inline
   def datachannel: datachannel = "datachannel".asInstanceOf[datachannel]
   
@@ -1600,18 +1758,23 @@ object stdStrings {
   
   @js.native
   sealed trait day
-    extends DateTimeFormatPartTypes
+    extends StObject
+       with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait dayPeriod extends DateTimeFormatPartTypes
+  sealed trait dayPeriod
+    extends StObject
+       with DateTimeFormatPartTypes
   @scala.inline
   def dayPeriod: dayPeriod = "dayPeriod".asInstanceOf[dayPeriod]
   
   @js.native
-  sealed trait days extends RelativeTimeFormatUnit
+  sealed trait days
+    extends StObject
+       with RelativeTimeFormatUnit
   @scala.inline
   def days: days = "days".asInstanceOf[days]
   
@@ -1626,22 +1789,30 @@ object stdStrings {
   def dd: dd = "dd".asInstanceOf[dd]
   
   @js.native
-  sealed trait decimal extends NumberFormatPartTypes
+  sealed trait decimal
+    extends StObject
+       with NumberFormatPartTypes
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait decode extends EndOfStreamError
+  sealed trait decode
+    extends StObject
+       with EndOfStreamError
   @scala.inline
   def decode: decode = "decode".asInstanceOf[decode]
   
   @js.native
-  sealed trait decrypt extends KeyUsage
+  sealed trait decrypt
+    extends StObject
+       with KeyUsage
   @scala.inline
   def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
   
   @js.native
-  sealed trait defer extends MSWebViewPermissionState
+  sealed trait defer
+    extends StObject
+       with MSWebViewPermissionState
   @scala.inline
   def defer: defer = "defer".asInstanceOf[defer]
   
@@ -1656,30 +1827,39 @@ object stdStrings {
   def del: del = "del".asInstanceOf[del]
   
   @js.native
-  sealed trait delivery extends PaymentShippingType
+  sealed trait delivery
+    extends StObject
+       with PaymentShippingType
   @scala.inline
   def delivery: delivery = "delivery".asInstanceOf[delivery]
   
   @js.native
   sealed trait denied
-    extends NotificationPermission
+    extends StObject
+       with NotificationPermission
        with PermissionState
        with PushPermissionState
   @scala.inline
   def denied: denied = "denied".asInstanceOf[denied]
   
   @js.native
-  sealed trait deny extends MSWebViewPermissionState
+  sealed trait deny
+    extends StObject
+       with MSWebViewPermissionState
   @scala.inline
   def deny: deny = "deny".asInstanceOf[deny]
   
   @js.native
-  sealed trait deriveBits extends KeyUsage
+  sealed trait deriveBits
+    extends StObject
+       with KeyUsage
   @scala.inline
   def deriveBits: deriveBits = "deriveBits".asInstanceOf[deriveBits]
   
   @js.native
-  sealed trait deriveKey extends KeyUsage
+  sealed trait deriveKey
+    extends StObject
+       with KeyUsage
   @scala.inline
   def deriveKey: deriveKey = "deriveKey".asInstanceOf[deriveKey]
   
@@ -1689,7 +1869,9 @@ object stdStrings {
   def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait descriptions extends TextTrackKind
+  sealed trait descriptions
+    extends StObject
+       with TextTrackKind
   @scala.inline
   def descriptions: descriptions = "descriptions".asInstanceOf[descriptions]
   
@@ -1699,7 +1881,9 @@ object stdStrings {
   def details: details = "details".asInstanceOf[details]
   
   @js.native
-  sealed trait `device-info` extends PermissionName
+  sealed trait `device-info`
+    extends StObject
+       with PermissionName
   @scala.inline
   def `device-info`: `device-info` = "device-info".asInstanceOf[`device-info`]
   
@@ -1745,26 +1929,31 @@ object stdStrings {
   
   @js.native
   sealed trait direct
-    extends AttestationConveyancePreference
+    extends StObject
+       with AttestationConveyancePreference
        with TouchType
   @scala.inline
   def direct: direct = "direct".asInstanceOf[direct]
   
   @js.native
   sealed trait disabled
-    extends RTCDtxStatus
+    extends StObject
+       with RTCDtxStatus
        with TextTrackMode
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait disambiguation extends ListeningState
+  sealed trait disambiguation
+    extends StObject
+       with ListeningState
   @scala.inline
   def disambiguation: disambiguation = "disambiguation".asInstanceOf[disambiguation]
   
   @js.native
   sealed trait disconnected
-    extends RTCIceConnectionState
+    extends StObject
+       with RTCIceConnectionState
        with RTCIceTransportState
        with RTCPeerConnectionState
   @scala.inline
@@ -1772,13 +1961,16 @@ object stdStrings {
   
   @js.native
   sealed trait discouraged
-    extends ResidentKeyRequirement
+    extends StObject
+       with ResidentKeyRequirement
        with UserVerificationRequirement
   @scala.inline
   def discouraged: discouraged = "discouraged".asInstanceOf[discouraged]
   
   @js.native
-  sealed trait discrete extends ChannelInterpretation
+  sealed trait discrete
+    extends StObject
+       with ChannelInterpretation
   @scala.inline
   def discrete: discrete = "discrete".asInstanceOf[discrete]
   
@@ -1794,18 +1986,23 @@ object stdStrings {
   
   @js.native
   sealed trait document
-    extends RequestDestination
+    extends StObject
+       with RequestDestination
        with XMLHttpRequestResponseType
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   
   @js.native
-  sealed trait done extends IDBRequestReadyState
+  sealed trait done
+    extends StObject
+       with IDBRequestReadyState
   @scala.inline
   def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait down extends NavigationReason
+  sealed trait down
+    extends StObject
+       with NavigationReason
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   
@@ -1860,7 +2057,9 @@ object stdStrings {
   def dt: dt = "dt".asInstanceOf[dt]
   
   @js.native
-  sealed trait `dtls-failure` extends RTCErrorDetailType
+  sealed trait `dtls-failure`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `dtls-failure`: `dtls-failure` = "dtls-failure".asInstanceOf[`dtls-failure`]
   
@@ -1880,7 +2079,9 @@ object stdStrings {
   def em: em = "em".asInstanceOf[em]
   
   @js.native
-  sealed trait embed extends RequestDestination
+  sealed trait embed
+    extends StObject
+       with RequestDestination
   @scala.inline
   def embed: embed = "embed".asInstanceOf[embed]
   
@@ -1890,12 +2091,16 @@ object stdStrings {
   def emptied: emptied = "emptied".asInstanceOf[emptied]
   
   @js.native
-  sealed trait enabled extends RTCDtxStatus
+  sealed trait enabled
+    extends StObject
+       with RTCDtxStatus
   @scala.inline
   def enabled: enabled = "enabled".asInstanceOf[enabled]
   
   @js.native
-  sealed trait encrypt extends KeyUsage
+  sealed trait encrypt
+    extends StObject
+       with KeyUsage
   @scala.inline
   def encrypt: encrypt = "encrypt".asInstanceOf[encrypt]
   
@@ -1906,7 +2111,8 @@ object stdStrings {
   
   @js.native
   sealed trait end
-    extends AlignSetting
+    extends StObject
+       with AlignSetting
        with CanvasTextAlign
        with LineAlignSetting
        with ScrollLogicalPosition
@@ -1916,7 +2122,8 @@ object stdStrings {
   
   @js.native
   sealed trait ended
-    extends MediaStreamTrackState
+    extends StObject
+       with MediaStreamTrackState
        with ReadyState
   @scala.inline
   def ended: ended = "ended".asInstanceOf[ended]
@@ -1927,34 +2134,45 @@ object stdStrings {
   def enter: enter = "enter".asInstanceOf[enter]
   
   @js.native
-  sealed trait enterprise extends AttestationConveyancePreference
+  sealed trait enterprise
+    extends StObject
+       with AttestationConveyancePreference
   @scala.inline
   def enterprise: enterprise = "enterprise".asInstanceOf[enterprise]
   
   @js.native
-  sealed trait environment extends VideoFacingModeEnum
+  sealed trait environment
+    extends StObject
+       with VideoFacingModeEnum
   @scala.inline
   def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
-  sealed trait equalpower extends PanningModelType
+  sealed trait equalpower
+    extends StObject
+       with PanningModelType
   @scala.inline
   def equalpower: equalpower = "equalpower".asInstanceOf[equalpower]
   
   @js.native
-  sealed trait era extends DateTimeFormatPartTypes
+  sealed trait era
+    extends StObject
+       with DateTimeFormatPartTypes
   @scala.inline
   def era: era = "era".asInstanceOf[era]
   
   @js.native
   sealed trait error
-    extends RequestRedirect
+    extends StObject
+       with RequestRedirect
        with ResponseType
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait evenodd extends CanvasFillRule
+  sealed trait evenodd
+    extends StObject
+       with CanvasFillRule
   @scala.inline
   def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   
@@ -1964,38 +2182,51 @@ object stdStrings {
   def exit: exit = "exit".asInstanceOf[exit]
   
   @js.native
-  sealed trait expired extends MediaKeyStatus
+  sealed trait expired
+    extends StObject
+       with MediaKeyStatus
   @scala.inline
   def expired: expired = "expired".asInstanceOf[expired]
   
   @js.native
-  sealed trait explicit extends ChannelCountMode
+  sealed trait explicit
+    extends StObject
+       with ChannelCountMode
   @scala.inline
   def explicit: explicit = "explicit".asInstanceOf[explicit]
   
   @js.native
-  sealed trait exponential extends DistanceModelType
+  sealed trait exponential
+    extends StObject
+       with DistanceModelType
   @scala.inline
   def exponential: exponential = "exponential".asInstanceOf[exponential]
   
   @js.native
-  sealed trait f32 extends ValueType
+  sealed trait f32
+    extends StObject
+       with ValueType
   @scala.inline
   def f32: f32 = "f32".asInstanceOf[f32]
   
   @js.native
-  sealed trait f64 extends ValueType
+  sealed trait f64
+    extends StObject
+       with ValueType
   @scala.inline
   def f64: f64 = "f64".asInstanceOf[f64]
   
   @js.native
-  sealed trait fail extends PaymentComplete
+  sealed trait fail
+    extends StObject
+       with PaymentComplete
   @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
   
   @js.native
   sealed trait failed
-    extends RTCDtlsTransportState
+    extends StObject
+       with RTCDtlsTransportState
        with RTCIceConnectionState
        with RTCIceTransportState
        with RTCPeerConnectionState
@@ -2124,7 +2355,9 @@ object stdStrings {
   def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
   
   @js.native
-  sealed trait few extends LDMLPluralRule
+  sealed trait few
+    extends StObject
+       with LDMLPluralRule
   @scala.inline
   def few: few = "few".asInstanceOf[few]
   
@@ -2149,7 +2382,9 @@ object stdStrings {
   def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait `fingerprint-failure` extends RTCErrorDetailType
+  sealed trait `fingerprint-failure`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `fingerprint-failure`: `fingerprint-failure` = "fingerprint-failure".asInstanceOf[`fingerprint-failure`]
   
@@ -2159,12 +2394,16 @@ object stdStrings {
   def finish: finish = "finish".asInstanceOf[finish]
   
   @js.native
-  sealed trait finished extends AnimationPlayState
+  sealed trait finished
+    extends StObject
+       with AnimationPlayState
   @scala.inline
   def finished: finished = "finished".asInstanceOf[finished]
   
   @js.native
-  sealed trait flipY extends ImageOrientation
+  sealed trait flipY
+    extends StObject
+       with ImageOrientation
   @scala.inline
   def flipY: flipY = "flipY".asInstanceOf[flipY]
   
@@ -2184,12 +2423,16 @@ object stdStrings {
   def focusout: focusout = "focusout".asInstanceOf[focusout]
   
   @js.native
-  sealed trait follow extends RequestRedirect
+  sealed trait follow
+    extends StObject
+       with RequestRedirect
   @scala.inline
   def follow: follow = "follow".asInstanceOf[follow]
   
   @js.native
-  sealed trait font extends RequestDestination
+  sealed trait font
+    extends StObject
+       with RequestDestination
   @scala.inline
   def font: font = "font".asInstanceOf[font]
   
@@ -2199,7 +2442,9 @@ object stdStrings {
   def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
-  sealed trait `force-cache` extends RequestCache
+  sealed trait `force-cache`
+    extends StObject
+       with RequestCache
   @scala.inline
   def `force-cache`: `force-cache` = "force-cache".asInstanceOf[`force-cache`]
   
@@ -2219,12 +2464,16 @@ object stdStrings {
   def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
-  sealed trait forwards extends FillMode
+  sealed trait forwards
+    extends StObject
+       with FillMode
   @scala.inline
   def forwards: forwards = "forwards".asInstanceOf[forwards]
   
   @js.native
-  sealed trait fraction extends NumberFormatPartTypes
+  sealed trait fraction
+    extends StObject
+       with NumberFormatPartTypes
   @scala.inline
   def fraction: fraction = "fraction".asInstanceOf[fraction]
   
@@ -2239,7 +2488,9 @@ object stdStrings {
   def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
-  sealed trait frozen extends RTCStatsIceCandidatePairState
+  sealed trait frozen
+    extends StObject
+       with RTCStatsIceCandidatePairState
   @scala.inline
   def frozen: frozen = "frozen".asInstanceOf[frozen]
   
@@ -2259,7 +2510,9 @@ object stdStrings {
   def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
   
   @js.native
-  sealed trait function extends ImportExportKind
+  sealed trait function
+    extends StObject
+       with ImportExportKind
   @scala.inline
   def function: function = "function".asInstanceOf[function]
   
@@ -2270,7 +2523,8 @@ object stdStrings {
   
   @js.native
   sealed trait gathering
-    extends RTCIceGathererState
+    extends StObject
+       with RTCIceGathererState
        with RTCIceGatheringState
   @scala.inline
   def gathering: gathering = "gathering".asInstanceOf[gathering]
@@ -2282,13 +2536,16 @@ object stdStrings {
   
   @js.native
   sealed trait geolocation
-    extends MSWebViewPermissionType
+    extends StObject
+       with MSWebViewPermissionType
        with PermissionName
   @scala.inline
   def geolocation: geolocation = "geolocation".asInstanceOf[geolocation]
   
   @js.native
-  sealed trait global extends ImportExportKind
+  sealed trait global
+    extends StObject
+       with ImportExportKind
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   
@@ -2299,19 +2556,24 @@ object stdStrings {
   
   @js.native
   sealed trait granted
-    extends NotificationPermission
+    extends StObject
+       with NotificationPermission
        with PermissionState
        with PushPermissionState
   @scala.inline
   def granted: granted = "granted".asInstanceOf[granted]
   
   @js.native
-  sealed trait group extends NumberFormatPartTypes
+  sealed trait group
+    extends StObject
+       with NumberFormatPartTypes
   @scala.inline
   def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait gyroscope extends PermissionName
+  sealed trait gyroscope
+    extends StObject
+       with PermissionName
   @scala.inline
   def gyroscope: gyroscope = "gyroscope".asInstanceOf[gyroscope]
   
@@ -2346,17 +2608,23 @@ object stdStrings {
   def h6: h6 = "h6".asInstanceOf[h6]
   
   @js.native
-  sealed trait hanging extends CanvasTextBaseline
+  sealed trait hanging
+    extends StObject
+       with CanvasTextBaseline
   @scala.inline
   def hanging: hanging = "hanging".asInstanceOf[hanging]
   
   @js.native
-  sealed trait `hardware-encoder-error` extends RTCErrorDetailType
+  sealed trait `hardware-encoder-error`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `hardware-encoder-error`: `hardware-encoder-error` = "hardware-encoder-error".asInstanceOf[`hardware-encoder-error`]
   
   @js.native
-  sealed trait `hardware-encoder-not-available` extends RTCErrorDetailType
+  sealed trait `hardware-encoder-not-available`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `hardware-encoder-not-available`: `hardware-encoder-not-available` = "hardware-encoder-not-available".asInstanceOf[`hardware-encoder-not-available`]
   
@@ -2366,22 +2634,30 @@ object stdStrings {
   def hashchange: hashchange = "hashchange".asInstanceOf[hashchange]
   
   @js.native
-  sealed trait `have-local-offer` extends RTCSignalingState
+  sealed trait `have-local-offer`
+    extends StObject
+       with RTCSignalingState
   @scala.inline
   def `have-local-offer`: `have-local-offer` = "have-local-offer".asInstanceOf[`have-local-offer`]
   
   @js.native
-  sealed trait `have-local-pranswer` extends RTCSignalingState
+  sealed trait `have-local-pranswer`
+    extends StObject
+       with RTCSignalingState
   @scala.inline
   def `have-local-pranswer`: `have-local-pranswer` = "have-local-pranswer".asInstanceOf[`have-local-pranswer`]
   
   @js.native
-  sealed trait `have-remote-offer` extends RTCSignalingState
+  sealed trait `have-remote-offer`
+    extends StObject
+       with RTCSignalingState
   @scala.inline
   def `have-remote-offer`: `have-remote-offer` = "have-remote-offer".asInstanceOf[`have-remote-offer`]
   
   @js.native
-  sealed trait `have-remote-pranswer` extends RTCSignalingState
+  sealed trait `have-remote-pranswer`
+    extends StObject
+       with RTCSignalingState
   @scala.inline
   def `have-remote-pranswer`: `have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[`have-remote-pranswer`]
   
@@ -2402,55 +2678,69 @@ object stdStrings {
   
   @js.native
   sealed trait hidden
-    extends TextTrackMode
+    extends StObject
+       with TextTrackMode
        with VisibilityState
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait hide extends FullscreenNavigationUI
+  sealed trait hide
+    extends StObject
+       with FullscreenNavigationUI
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
   sealed trait high
-    extends ImageSmoothingQuality
+    extends StObject
+       with ImageSmoothingQuality
        with RTCPriorityType
        with ResizeQuality
   @scala.inline
   def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait `high-performance` extends WebGLPowerPreference
+  sealed trait `high-performance`
+    extends StObject
+       with WebGLPowerPreference
   @scala.inline
   def `high-performance`: `high-performance` = "high-performance".asInstanceOf[`high-performance`]
   
   @js.native
-  sealed trait highpass extends BiquadFilterType
+  sealed trait highpass
+    extends StObject
+       with BiquadFilterType
   @scala.inline
   def highpass: highpass = "highpass".asInstanceOf[highpass]
   
   @js.native
-  sealed trait highshelf extends BiquadFilterType
+  sealed trait highshelf
+    extends StObject
+       with BiquadFilterType
   @scala.inline
   def highshelf: highshelf = "highshelf".asInstanceOf[highshelf]
   
   @js.native
   sealed trait host
-    extends RTCIceCandidateType
+    extends StObject
+       with RTCIceCandidateType
        with RTCStatsIceCandidateType
   @scala.inline
   def host: host = "host".asInstanceOf[host]
   
   @js.native
   sealed trait hour
-    extends DateTimeFormatPartTypes
+    extends StObject
+       with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
-  sealed trait hours extends RelativeTimeFormatUnit
+  sealed trait hours
+    extends StObject
+       with RelativeTimeFormatUnit
   @scala.inline
   def hours: hours = "hours".asInstanceOf[hours]
   
@@ -2480,12 +2770,16 @@ object stdStrings {
   def i: i = "i".asInstanceOf[i]
   
   @js.native
-  sealed trait i32 extends ValueType
+  sealed trait i32
+    extends StObject
+       with ValueType
   @scala.inline
   def i32: i32 = "i32".asInstanceOf[i32]
   
   @js.native
-  sealed trait i64 extends ValueType
+  sealed trait i64
+    extends StObject
+       with ValueType
   @scala.inline
   def i64: i64 = "i64".asInstanceOf[i64]
   
@@ -2510,52 +2804,72 @@ object stdStrings {
   def icegatheringstatechange: icegatheringstatechange = "icegatheringstatechange".asInstanceOf[icegatheringstatechange]
   
   @js.native
-  sealed trait ideographic extends CanvasTextBaseline
+  sealed trait ideographic
+    extends StObject
+       with CanvasTextBaseline
   @scala.inline
   def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
   
   @js.native
-  sealed trait idle extends AnimationPlayState
+  sealed trait idle
+    extends StObject
+       with AnimationPlayState
   @scala.inline
   def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
-  sealed trait `idp-bad-script-failure` extends RTCErrorDetailType
+  sealed trait `idp-bad-script-failure`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `idp-bad-script-failure`: `idp-bad-script-failure` = "idp-bad-script-failure".asInstanceOf[`idp-bad-script-failure`]
   
   @js.native
-  sealed trait `idp-execution-failure` extends RTCErrorDetailType
+  sealed trait `idp-execution-failure`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `idp-execution-failure`: `idp-execution-failure` = "idp-execution-failure".asInstanceOf[`idp-execution-failure`]
   
   @js.native
-  sealed trait `idp-load-failure` extends RTCErrorDetailType
+  sealed trait `idp-load-failure`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `idp-load-failure`: `idp-load-failure` = "idp-load-failure".asInstanceOf[`idp-load-failure`]
   
   @js.native
-  sealed trait `idp-need-login` extends RTCErrorDetailType
+  sealed trait `idp-need-login`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `idp-need-login`: `idp-need-login` = "idp-need-login".asInstanceOf[`idp-need-login`]
   
   @js.native
-  sealed trait `idp-timeout` extends RTCErrorDetailType
+  sealed trait `idp-timeout`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `idp-timeout`: `idp-timeout` = "idp-timeout".asInstanceOf[`idp-timeout`]
   
   @js.native
-  sealed trait `idp-tls-failure` extends RTCErrorDetailType
+  sealed trait `idp-tls-failure`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `idp-tls-failure`: `idp-tls-failure` = "idp-tls-failure".asInstanceOf[`idp-tls-failure`]
   
   @js.native
-  sealed trait `idp-token-expired` extends RTCErrorDetailType
+  sealed trait `idp-token-expired`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `idp-token-expired`: `idp-token-expired` = "idp-token-expired".asInstanceOf[`idp-token-expired`]
   
   @js.native
-  sealed trait `idp-token-invalid` extends RTCErrorDetailType
+  sealed trait `idp-token-invalid`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `idp-token-invalid`: `idp-token-invalid` = "idp-token-invalid".asInstanceOf[`idp-token-invalid`]
   
@@ -2565,12 +2879,16 @@ object stdStrings {
   def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
-  sealed trait image extends RequestDestination
+  sealed trait image
+    extends StObject
+       with RequestDestination
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait imageSlashsvgPlussignxml extends DOMParserSupportedType
+  sealed trait imageSlashsvgPlussignxml
+    extends StObject
+       with DOMParserSupportedType
   @scala.inline
   def imageSlashsvgPlussignxml: imageSlashsvgPlussignxml = "image/svg+xml".asInstanceOf[imageSlashsvgPlussignxml]
   
@@ -2580,49 +2898,66 @@ object stdStrings {
   def img: img = "img".asInstanceOf[img]
   
   @js.native
-  sealed trait imports extends ServiceWorkerUpdateViaCache
+  sealed trait imports
+    extends StObject
+       with ServiceWorkerUpdateViaCache
   @scala.inline
   def imports: imports = "imports".asInstanceOf[imports]
   
   @js.native
   sealed trait inactive
-    extends ListeningState
+    extends StObject
+       with ListeningState
        with RTCRtpTransceiverDirection
   @scala.inline
   def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
-  sealed trait inboundrtp extends RTCStatsType
+  sealed trait inboundrtp
+    extends StObject
+       with RTCStatsType
   @scala.inline
   def inboundrtp: inboundrtp = "inboundrtp".asInstanceOf[inboundrtp]
   
   @js.native
-  sealed trait include extends RequestCredentials
+  sealed trait include
+    extends StObject
+       with RequestCredentials
   @scala.inline
   def include: include = "include".asInstanceOf[include]
   
   @js.native
-  sealed trait indirect extends AttestationConveyancePreference
+  sealed trait indirect
+    extends StObject
+       with AttestationConveyancePreference
   @scala.inline
   def indirect: indirect = "indirect".asInstanceOf[indirect]
   
   @js.native
-  sealed trait `individualization-request` extends MediaKeyMessageType
+  sealed trait `individualization-request`
+    extends StObject
+       with MediaKeyMessageType
   @scala.inline
   def `individualization-request`: `individualization-request` = "individualization-request".asInstanceOf[`individualization-request`]
   
   @js.native
-  sealed trait infinity extends NumberFormatPartTypes
+  sealed trait infinity
+    extends StObject
+       with NumberFormatPartTypes
   @scala.inline
   def infinity: infinity = "infinity".asInstanceOf[infinity]
   
   @js.native
-  sealed trait inherit extends CanvasDirection
+  sealed trait inherit
+    extends StObject
+       with CanvasDirection
   @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait inprogress extends RTCStatsIceCandidatePairState
+  sealed trait inprogress
+    extends StObject
+       with RTCStatsIceCandidatePairState
   @scala.inline
   def inprogress: inprogress = "inprogress".asInstanceOf[inprogress]
   
@@ -2637,39 +2972,52 @@ object stdStrings {
   def ins: ins = "ins".asInstanceOf[ins]
   
   @js.native
-  sealed trait installed extends ServiceWorkerState
+  sealed trait installed
+    extends StObject
+       with ServiceWorkerState
   @scala.inline
   def installed: installed = "installed".asInstanceOf[installed]
   
   @js.native
-  sealed trait installing extends ServiceWorkerState
+  sealed trait installing
+    extends StObject
+       with ServiceWorkerState
   @scala.inline
   def installing: installing = "installing".asInstanceOf[installing]
   
   @js.native
-  sealed trait integer extends NumberFormatPartTypes
+  sealed trait integer
+    extends StObject
+       with NumberFormatPartTypes
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait interactive
-    extends AudioContextLatencyCategory
+    extends StObject
+       with AudioContextLatencyCategory
        with DocumentReadyState
   @scala.inline
   def interactive: interactive = "interactive".asInstanceOf[interactive]
   
   @js.native
-  sealed trait internal extends AuthenticatorTransport
+  sealed trait internal
+    extends StObject
+       with AuthenticatorTransport
   @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
   
   @js.native
-  sealed trait `internal-error` extends MediaKeyStatus
+  sealed trait `internal-error`
+    extends StObject
+       with MediaKeyStatus
   @scala.inline
   def `internal-error`: `internal-error` = "internal-error".asInstanceOf[`internal-error`]
   
   @js.native
-  sealed trait interrupted extends SpeechSynthesisErrorCode
+  sealed trait interrupted
+    extends StObject
+       with SpeechSynthesisErrorCode
   @scala.inline
   def interrupted: interrupted = "interrupted".asInstanceOf[interrupted]
   
@@ -2679,12 +3027,16 @@ object stdStrings {
   def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
-  sealed trait `invalid-argument` extends SpeechSynthesisErrorCode
+  sealed trait `invalid-argument`
+    extends StObject
+       with SpeechSynthesisErrorCode
   @scala.inline
   def `invalid-argument`: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
   
   @js.native
-  sealed trait inverse extends DistanceModelType
+  sealed trait inverse
+    extends StObject
+       with DistanceModelType
   @scala.inline
   def inverse: inverse = "inverse".asInstanceOf[inverse]
   
@@ -2694,17 +3046,23 @@ object stdStrings {
   def isolationchange: isolationchange = "isolationchange".asInstanceOf[isolationchange]
   
   @js.native
-  sealed trait json extends XMLHttpRequestResponseType
+  sealed trait json
+    extends StObject
+       with XMLHttpRequestResponseType
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait jwk extends KeyFormat
+  sealed trait jwk
+    extends StObject
+       with KeyFormat
   @scala.inline
   def jwk: jwk = "jwk".asInstanceOf[jwk]
   
   @js.native
-  sealed trait `k-rate` extends AutomationRate
+  sealed trait `k-rate`
+    extends StObject
+       with AutomationRate
   @scala.inline
   def `k-rate`: `k-rate` = "k-rate".asInstanceOf[`k-rate`]
   
@@ -2739,26 +3097,32 @@ object stdStrings {
   def label: label = "label".asInstanceOf[label]
   
   @js.native
-  sealed trait landscape extends OrientationLockType
+  sealed trait landscape
+    extends StObject
+       with OrientationLockType
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
   sealed trait `landscape-primary`
-    extends OrientationLockType
+    extends StObject
+       with OrientationLockType
        with OrientationType
   @scala.inline
   def `landscape-primary`: `landscape-primary` = "landscape-primary".asInstanceOf[`landscape-primary`]
   
   @js.native
   sealed trait `landscape-secondary`
-    extends OrientationLockType
+    extends StObject
+       with OrientationLockType
        with OrientationType
   @scala.inline
   def `landscape-secondary`: `landscape-secondary` = "landscape-secondary".asInstanceOf[`landscape-secondary`]
   
   @js.native
-  sealed trait `language-unavailable` extends SpeechSynthesisErrorCode
+  sealed trait `language-unavailable`
+    extends StObject
+       with SpeechSynthesisErrorCode
   @scala.inline
   def `language-unavailable`: `language-unavailable` = "language-unavailable".asInstanceOf[`language-unavailable`]
   
@@ -2769,7 +3133,8 @@ object stdStrings {
   
   @js.native
   sealed trait left
-    extends AlignSetting
+    extends StObject
+       with AlignSetting
        with CanvasTextAlign
        with GamepadHand
        with NavigationReason
@@ -2788,17 +3153,23 @@ object stdStrings {
   def li: li = "li".asInstanceOf[li]
   
   @js.native
-  sealed trait `license-release` extends MediaKeyMessageType
+  sealed trait `license-release`
+    extends StObject
+       with MediaKeyMessageType
   @scala.inline
   def `license-release`: `license-release` = "license-release".asInstanceOf[`license-release`]
   
   @js.native
-  sealed trait `license-renewal` extends MediaKeyMessageType
+  sealed trait `license-renewal`
+    extends StObject
+       with MediaKeyMessageType
   @scala.inline
   def `license-renewal`: `license-renewal` = "license-renewal".asInstanceOf[`license-renewal`]
   
   @js.native
-  sealed trait `license-request` extends MediaKeyMessageType
+  sealed trait `license-request`
+    extends StObject
+       with MediaKeyMessageType
   @scala.inline
   def `license-request`: `license-request` = "license-request".asInstanceOf[`license-request`]
   
@@ -2808,17 +3179,23 @@ object stdStrings {
   def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait `line-left` extends PositionAlignSetting
+  sealed trait `line-left`
+    extends StObject
+       with PositionAlignSetting
   @scala.inline
   def `line-left`: `line-left` = "line-left".asInstanceOf[`line-left`]
   
   @js.native
-  sealed trait `line-right` extends PositionAlignSetting
+  sealed trait `line-right`
+    extends StObject
+       with PositionAlignSetting
   @scala.inline
   def `line-right`: `line-right` = "line-right".asInstanceOf[`line-right`]
   
   @js.native
-  sealed trait linear extends DistanceModelType
+  sealed trait linear
+    extends StObject
+       with DistanceModelType
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   
@@ -2844,13 +3221,16 @@ object stdStrings {
   
   @js.native
   sealed trait literal
-    extends DateTimeFormatPartTypes
+    extends StObject
+       with DateTimeFormatPartTypes
        with NumberFormatPartTypes
   @scala.inline
   def literal: literal = "literal".asInstanceOf[literal]
   
   @js.native
-  sealed trait live extends MediaStreamTrackState
+  sealed trait live
+    extends StObject
+       with MediaStreamTrackState
   @scala.inline
   def live: live = "live".asInstanceOf[live]
   
@@ -2875,7 +3255,9 @@ object stdStrings {
   def loadend: loadend = "loadend".asInstanceOf[loadend]
   
   @js.native
-  sealed trait loading extends DocumentReadyState
+  sealed trait loading
+    extends StObject
+       with DocumentReadyState
   @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
   
@@ -2885,17 +3267,23 @@ object stdStrings {
   def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   
   @js.native
-  sealed trait localcandidate extends RTCStatsType
+  sealed trait localcandidate
+    extends StObject
+       with RTCStatsType
   @scala.inline
   def localcandidate: localcandidate = "localcandidate".asInstanceOf[localcandidate]
   
   @js.native
-  sealed trait long extends RelativeTimeFormatStyle
+  sealed trait long
+    extends StObject
+       with RelativeTimeFormatStyle
   @scala.inline
   def long: long = "long".asInstanceOf[long]
   
   @js.native
-  sealed trait lookup extends RelativeTimeFormatLocaleMatcher
+  sealed trait lookup
+    extends StObject
+       with RelativeTimeFormatLocaleMatcher
   @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
   
@@ -2906,41 +3294,53 @@ object stdStrings {
   
   @js.native
   sealed trait low
-    extends ImageSmoothingQuality
+    extends StObject
+       with ImageSmoothingQuality
        with RTCPriorityType
        with ResizeQuality
   @scala.inline
   def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait `low-power` extends WebGLPowerPreference
+  sealed trait `low-power`
+    extends StObject
+       with WebGLPowerPreference
   @scala.inline
   def `low-power`: `low-power` = "low-power".asInstanceOf[`low-power`]
   
   @js.native
-  sealed trait lowpass extends BiquadFilterType
+  sealed trait lowpass
+    extends StObject
+       with BiquadFilterType
   @scala.inline
   def lowpass: lowpass = "lowpass".asInstanceOf[lowpass]
   
   @js.native
-  sealed trait lowshelf extends BiquadFilterType
+  sealed trait lowshelf
+    extends StObject
+       with BiquadFilterType
   @scala.inline
   def lowshelf: lowshelf = "lowshelf".asInstanceOf[lowshelf]
   
   @js.native
-  sealed trait lr extends DirectionSetting
+  sealed trait lr
+    extends StObject
+       with DirectionSetting
   @scala.inline
   def lr: lr = "lr".asInstanceOf[lr]
   
   @js.native
   sealed trait ltr
-    extends CanvasDirection
+    extends StObject
+       with CanvasDirection
        with NotificationDirection
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait magnetometer extends PermissionName
+  sealed trait magnetometer
+    extends StObject
+       with PermissionName
   @scala.inline
   def magnetometer: magnetometer = "magnetometer".asInstanceOf[magnetometer]
   
@@ -2950,29 +3350,38 @@ object stdStrings {
   def main: main = "main".asInstanceOf[main]
   
   @js.native
-  sealed trait `maintain-framerate` extends RTCDegradationPreference
+  sealed trait `maintain-framerate`
+    extends StObject
+       with RTCDegradationPreference
   @scala.inline
   def `maintain-framerate`: `maintain-framerate` = "maintain-framerate".asInstanceOf[`maintain-framerate`]
   
   @js.native
-  sealed trait `maintain-resolution` extends RTCDegradationPreference
+  sealed trait `maintain-resolution`
+    extends StObject
+       with RTCDegradationPreference
   @scala.inline
   def `maintain-resolution`: `maintain-resolution` = "maintain-resolution".asInstanceOf[`maintain-resolution`]
   
   @js.native
-  sealed trait manifest extends RequestDestination
+  sealed trait manifest
+    extends StObject
+       with RequestDestination
   @scala.inline
   def manifest: manifest = "manifest".asInstanceOf[manifest]
   
   @js.native
   sealed trait manual
-    extends RequestRedirect
+    extends StObject
+       with RequestRedirect
        with ScrollRestoration
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
-  sealed trait many extends LDMLPluralRule
+  sealed trait many
+    extends StObject
+       with LDMLPluralRule
   @scala.inline
   def many: many = "many".asInstanceOf[many]
   
@@ -3002,40 +3411,53 @@ object stdStrings {
   def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
-  sealed trait max extends ChannelCountMode
+  sealed trait max
+    extends StObject
+       with ChannelCountMode
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   
   @js.native
-  sealed trait `max-bundle` extends RTCBundlePolicy
+  sealed trait `max-bundle`
+    extends StObject
+       with RTCBundlePolicy
   @scala.inline
   def `max-bundle`: `max-bundle` = "max-bundle".asInstanceOf[`max-bundle`]
   
   @js.native
-  sealed trait `max-compat` extends RTCBundlePolicy
+  sealed trait `max-compat`
+    extends StObject
+       with RTCBundlePolicy
   @scala.inline
   def `max-compat`: `max-compat` = "max-compat".asInstanceOf[`max-compat`]
   
   @js.native
-  sealed trait maybe extends CanPlayTypeResult
+  sealed trait maybe
+    extends StObject
+       with CanPlayTypeResult
   @scala.inline
   def maybe: maybe = "maybe".asInstanceOf[maybe]
   
   @js.native
-  sealed trait media extends MSWebViewPermissionType
+  sealed trait media
+    extends StObject
+       with MSWebViewPermissionType
   @scala.inline
   def media: media = "media".asInstanceOf[media]
   
   @js.native
   sealed trait medium
-    extends ImageSmoothingQuality
+    extends StObject
+       with ImageSmoothingQuality
        with RTCPriorityType
        with ResizeQuality
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait memory extends ImportExportKind
+  sealed trait memory
+    extends StObject
+       with ImportExportKind
   @scala.inline
   def memory: memory = "memory".asInstanceOf[memory]
   
@@ -3060,7 +3482,9 @@ object stdStrings {
   def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
-  sealed trait metadata extends TextTrackKind
+  sealed trait metadata
+    extends StObject
+       with TextTrackKind
   @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   
@@ -3070,66 +3494,88 @@ object stdStrings {
   def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
-  sealed trait microphone extends PermissionName
+  sealed trait microphone
+    extends StObject
+       with PermissionName
   @scala.inline
   def microphone: microphone = "microphone".asInstanceOf[microphone]
   
   @js.native
-  sealed trait middle extends CanvasTextBaseline
+  sealed trait middle
+    extends StObject
+       with CanvasTextBaseline
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait midi extends PermissionName
+  sealed trait midi
+    extends StObject
+       with PermissionName
   @scala.inline
   def midi: midi = "midi".asInstanceOf[midi]
   
   @js.native
-  sealed trait minusSign extends NumberFormatPartTypes
+  sealed trait minusSign
+    extends StObject
+       with NumberFormatPartTypes
   @scala.inline
   def minusSign: minusSign = "minusSign".asInstanceOf[minusSign]
   
   @js.native
   sealed trait minute
-    extends DateTimeFormatPartTypes
+    extends StObject
+       with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
-  sealed trait minutes extends RelativeTimeFormatUnit
+  sealed trait minutes
+    extends StObject
+       with RelativeTimeFormatUnit
   @scala.inline
   def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
-  sealed trait miter extends CanvasLineJoin
+  sealed trait miter
+    extends StObject
+       with CanvasLineJoin
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
-  sealed trait module extends WorkerType
+  sealed trait module
+    extends StObject
+       with WorkerType
   @scala.inline
   def module: module = "module".asInstanceOf[module]
   
   @js.native
-  sealed trait monitor extends DisplayCaptureSurfaceType
+  sealed trait monitor
+    extends StObject
+       with DisplayCaptureSurfaceType
   @scala.inline
   def monitor: monitor = "monitor".asInstanceOf[monitor]
   
   @js.native
   sealed trait month
-    extends DateTimeFormatPartTypes
+    extends StObject
+       with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait months extends RelativeTimeFormatUnit
+  sealed trait months
+    extends StObject
+       with RelativeTimeFormatUnit
   @scala.inline
   def months: months = "months".asInstanceOf[months]
   
   @js.native
-  sealed trait mounted extends VRDisplayEventReason
+  sealed trait mounted
+    extends StObject
+       with VRDisplayEventReason
   @scala.inline
   def mounted: mounted = "mounted".asInstanceOf[mounted]
   
@@ -3184,22 +3630,30 @@ object stdStrings {
   def mute: mute = "mute".asInstanceOf[mute]
   
   @js.native
-  sealed trait nan extends NumberFormatPartTypes
+  sealed trait nan
+    extends StObject
+       with NumberFormatPartTypes
   @scala.inline
   def nan: nan = "nan".asInstanceOf[nan]
   
   @js.native
-  sealed trait narrow extends RelativeTimeFormatStyle
+  sealed trait narrow
+    extends StObject
+       with RelativeTimeFormatStyle
   @scala.inline
   def narrow: narrow = "narrow".asInstanceOf[narrow]
   
   @js.native
-  sealed trait native extends EndingType
+  sealed trait native
+    extends StObject
+       with EndingType
   @scala.inline
   def native: native = "native".asInstanceOf[native]
   
   @js.native
-  sealed trait natural extends OrientationLockType
+  sealed trait natural
+    extends StObject
+       with OrientationLockType
   @scala.inline
   def natural: natural = "natural".asInstanceOf[natural]
   
@@ -3210,23 +3664,30 @@ object stdStrings {
   
   @js.native
   sealed trait navigate
-    extends NavigationType
+    extends StObject
+       with NavigationType
        with RequestMode
   @scala.inline
   def navigate: navigate = "navigate".asInstanceOf[navigate]
   
   @js.native
-  sealed trait navigation extends VRDisplayEventReason
+  sealed trait navigation
+    extends StObject
+       with VRDisplayEventReason
   @scala.inline
   def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
-  sealed trait nearest extends ScrollLogicalPosition
+  sealed trait nearest
+    extends StObject
+       with ScrollLogicalPosition
   @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native
-  sealed trait negotiate extends RTCRtcpMuxPolicy
+  sealed trait negotiate
+    extends StObject
+       with RTCRtcpMuxPolicy
   @scala.inline
   def negotiate: negotiate = "negotiate".asInstanceOf[negotiate]
   
@@ -3237,14 +3698,16 @@ object stdStrings {
   
   @js.native
   sealed trait network
-    extends EndOfStreamError
+    extends StObject
+       with EndOfStreamError
        with SpeechSynthesisErrorCode
   @scala.inline
   def network: network = "network".asInstanceOf[network]
   
   @js.native
   sealed trait `new`
-    extends RTCDtlsTransportState
+    extends StObject
+       with RTCDtlsTransportState
        with RTCIceConnectionState
        with RTCIceGathererState
        with RTCIceGatheringState
@@ -3254,49 +3717,66 @@ object stdStrings {
   def `new`: `new` = "new".asInstanceOf[`new`]
   
   @js.native
-  sealed trait next extends IDBCursorDirection
+  sealed trait next
+    extends StObject
+       with IDBCursorDirection
   @scala.inline
   def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait nextunique extends IDBCursorDirection
+  sealed trait nextunique
+    extends StObject
+       with IDBCursorDirection
   @scala.inline
   def nextunique: nextunique = "nextunique".asInstanceOf[nextunique]
   
   @js.native
   sealed trait nfc_
-    extends AuthenticatorTransport
+    extends StObject
+       with AuthenticatorTransport
        with Transport
   @scala.inline
   def nfc_ : nfc_ = "nfc".asInstanceOf[nfc_]
   
   @js.native
-  sealed trait `no-cache` extends RequestCache
+  sealed trait `no-cache`
+    extends StObject
+       with RequestCache
   @scala.inline
   def `no-cache`: `no-cache` = "no-cache".asInstanceOf[`no-cache`]
   
   @js.native
-  sealed trait `no-cors` extends RequestMode
+  sealed trait `no-cors`
+    extends StObject
+       with RequestMode
   @scala.inline
   def `no-cors`: `no-cors` = "no-cors".asInstanceOf[`no-cors`]
   
   @js.native
-  sealed trait `no-referrer` extends ReferrerPolicy
+  sealed trait `no-referrer`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
   
   @js.native
-  sealed trait `no-referrer-when-downgrade` extends ReferrerPolicy
+  sealed trait `no-referrer-when-downgrade`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
   
   @js.native
-  sealed trait `no-store` extends RequestCache
+  sealed trait `no-store`
+    extends StObject
+       with RequestCache
   @scala.inline
   def `no-store`: `no-store` = "no-store".asInstanceOf[`no-store`]
   
   @js.native
-  sealed trait nohost extends RTCIceGatherPolicy
+  sealed trait nohost
+    extends StObject
+       with RTCIceGatherPolicy
   @scala.inline
   def nohost: nohost = "nohost".asInstanceOf[nohost]
   
@@ -3307,7 +3787,8 @@ object stdStrings {
   
   @js.native
   sealed trait none
-    extends AttestationConveyancePreference
+    extends StObject
+       with AttestationConveyancePreference
        with ColorSpaceConversion
        with FillMode
        with ImageOrientation
@@ -3318,12 +3799,16 @@ object stdStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait nonzero extends CanvasFillRule
+  sealed trait nonzero
+    extends StObject
+       with CanvasFillRule
   @scala.inline
   def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   
   @js.native
-  sealed trait normal extends PlaybackDirection
+  sealed trait normal
+    extends StObject
+       with PlaybackDirection
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
@@ -3334,7 +3819,8 @@ object stdStrings {
   
   @js.native
   sealed trait `not-allowed`
-    extends MediaKeysRequirement
+    extends StObject
+       with MediaKeysRequirement
        with SpeechSynthesisErrorCode
   @scala.inline
   def `not-allowed`: `not-allowed` = "not-allowed".asInstanceOf[`not-allowed`]
@@ -3345,12 +3831,16 @@ object stdStrings {
   def `not-equal`: `not-equal` = "not-equal".asInstanceOf[`not-equal`]
   
   @js.native
-  sealed trait notch extends BiquadFilterType
+  sealed trait notch
+    extends StObject
+       with BiquadFilterType
   @scala.inline
   def notch: notch = "notch".asInstanceOf[notch]
   
   @js.native
-  sealed trait notifications extends PermissionName
+  sealed trait notifications
+    extends StObject
+       with PermissionName
   @scala.inline
   def notifications: notifications = "notifications".asInstanceOf[notifications]
   
@@ -3365,12 +3855,16 @@ object stdStrings {
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait oauth extends RTCIceCredentialType
+  sealed trait oauth
+    extends StObject
+       with RTCIceCredentialType
   @scala.inline
   def oauth: oauth = "oauth".asInstanceOf[oauth]
   
   @js.native
-  sealed trait `object` extends RequestDestination
+  sealed trait `object`
+    extends StObject
+       with RequestDestination
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
@@ -3380,7 +3874,9 @@ object stdStrings {
   def obsolete: obsolete = "obsolete".asInstanceOf[obsolete]
   
   @js.native
-  sealed trait offer extends RTCSdpType
+  sealed trait offer
+    extends StObject
+       with RTCSdpType
   @scala.inline
   def offer: offer = "offer".asInstanceOf[offer]
   
@@ -3400,12 +3896,16 @@ object stdStrings {
   def ol: ol = "ol".asInstanceOf[ol]
   
   @js.native
-  sealed trait omit extends RequestCredentials
+  sealed trait omit
+    extends StObject
+       with RequestCredentials
   @scala.inline
   def omit: omit = "omit".asInstanceOf[omit]
   
   @js.native
-  sealed trait one extends LDMLPluralRule
+  sealed trait one
+    extends StObject
+       with LDMLPluralRule
   @scala.inline
   def one: one = "one".asInstanceOf[one]
   
@@ -3415,23 +3915,30 @@ object stdStrings {
   def online: online = "online".asInstanceOf[online]
   
   @js.native
-  sealed trait `only-if-cached` extends RequestCache
+  sealed trait `only-if-cached`
+    extends StObject
+       with RequestCache
   @scala.inline
   def `only-if-cached`: `only-if-cached` = "only-if-cached".asInstanceOf[`only-if-cached`]
   
   @js.native
-  sealed trait opaque extends ResponseType
+  sealed trait opaque
+    extends StObject
+       with ResponseType
   @scala.inline
   def opaque: opaque = "opaque".asInstanceOf[opaque]
   
   @js.native
-  sealed trait opaqueredirect extends ResponseType
+  sealed trait opaqueredirect
+    extends StObject
+       with ResponseType
   @scala.inline
   def opaqueredirect: opaqueredirect = "opaqueredirect".asInstanceOf[opaqueredirect]
   
   @js.native
   sealed trait open
-    extends RTCDataChannelState
+    extends StObject
+       with RTCDataChannelState
        with ReadyState
        with ShadowRootMode
   @scala.inline
@@ -3449,13 +3956,16 @@ object stdStrings {
   
   @js.native
   sealed trait optional
-    extends CredentialMediationRequirement
+    extends StObject
+       with CredentialMediationRequirement
        with MediaKeysRequirement
   @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
-  sealed trait ordinal extends PluralRuleType
+  sealed trait ordinal
+    extends StObject
+       with PluralRuleType
   @scala.inline
   def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   
@@ -3465,22 +3975,30 @@ object stdStrings {
   def orientationchange: orientationchange = "orientationchange".asInstanceOf[orientationchange]
   
   @js.native
-  sealed trait origin extends ReferrerPolicy
+  sealed trait origin
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def origin: origin = "origin".asInstanceOf[origin]
   
   @js.native
-  sealed trait `origin-when-cross-origin` extends ReferrerPolicy
+  sealed trait `origin-when-cross-origin`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `origin-when-cross-origin`: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
   
   @js.native
-  sealed trait other extends LDMLPluralRule
+  sealed trait other
+    extends StObject
+       with LDMLPluralRule
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait outboundrtp extends RTCStatsType
+  sealed trait outboundrtp
+    extends StObject
+       with RTCStatsType
   @scala.inline
   def outboundrtp: outboundrtp = "outboundrtp".asInstanceOf[outboundrtp]
   
@@ -3490,12 +4008,16 @@ object stdStrings {
   def output: output = "output".asInstanceOf[output]
   
   @js.native
-  sealed trait `output-downscaled` extends MediaKeyStatus
+  sealed trait `output-downscaled`
+    extends StObject
+       with MediaKeyStatus
   @scala.inline
   def `output-downscaled`: `output-downscaled` = "output-downscaled".asInstanceOf[`output-downscaled`]
   
   @js.native
-  sealed trait `output-restricted` extends MediaKeyStatus
+  sealed trait `output-restricted`
+    extends StObject
+       with MediaKeyStatus
   @scala.inline
   def `output-restricted`: `output-restricted` = "output-restricted".asInstanceOf[`output-restricted`]
   
@@ -3505,7 +4027,9 @@ object stdStrings {
   def p: p = "p".asInstanceOf[p]
   
   @js.native
-  sealed trait p256dh extends PushEncryptionKeyName
+  sealed trait p256dh
+    extends StObject
+       with PushEncryptionKeyName
   @scala.inline
   def p256dh: p256dh = "p256dh".asInstanceOf[p256dh]
   
@@ -3520,7 +4044,9 @@ object stdStrings {
   def pageshow: pageshow = "pageshow".asInstanceOf[pageshow]
   
   @js.native
-  sealed trait paintworklet extends RequestDestination
+  sealed trait paintworklet
+    extends StObject
+       with RequestDestination
   @scala.inline
   def paintworklet: paintworklet = "paintworklet".asInstanceOf[paintworklet]
   
@@ -3530,17 +4056,23 @@ object stdStrings {
   def param: param = "param".asInstanceOf[param]
   
   @js.native
-  sealed trait parsed extends ServiceWorkerState
+  sealed trait parsed
+    extends StObject
+       with ServiceWorkerState
   @scala.inline
   def parsed: parsed = "parsed".asInstanceOf[parsed]
   
   @js.native
-  sealed trait passive extends RTCIceTcpCandidateType
+  sealed trait passive
+    extends StObject
+       with RTCIceTcpCandidateType
   @scala.inline
   def passive: passive = "passive".asInstanceOf[passive]
   
   @js.native
-  sealed trait password extends RTCIceCredentialType
+  sealed trait password
+    extends StObject
+       with RTCIceCredentialType
   @scala.inline
   def password: password = "password".asInstanceOf[password]
   
@@ -3565,42 +4097,58 @@ object stdStrings {
   def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait paused extends AnimationPlayState
+  sealed trait paused
+    extends StObject
+       with AnimationPlayState
   @scala.inline
   def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
-  sealed trait peaking extends BiquadFilterType
+  sealed trait peaking
+    extends StObject
+       with BiquadFilterType
   @scala.inline
   def peaking: peaking = "peaking".asInstanceOf[peaking]
   
   @js.native
-  sealed trait peerreflexive extends RTCStatsIceCandidateType
+  sealed trait peerreflexive
+    extends StObject
+       with RTCStatsIceCandidateType
   @scala.inline
   def peerreflexive: peerreflexive = "peerreflexive".asInstanceOf[peerreflexive]
   
   @js.native
-  sealed trait pending extends IDBRequestReadyState
+  sealed trait pending
+    extends StObject
+       with IDBRequestReadyState
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait percentSign extends NumberFormatPartTypes
+  sealed trait percentSign
+    extends StObject
+       with NumberFormatPartTypes
   @scala.inline
   def percentSign: percentSign = "percentSign".asInstanceOf[percentSign]
   
   @js.native
-  sealed trait `persistent-license` extends MediaKeySessionType
+  sealed trait `persistent-license`
+    extends StObject
+       with MediaKeySessionType
   @scala.inline
   def `persistent-license`: `persistent-license` = "persistent-license".asInstanceOf[`persistent-license`]
   
   @js.native
-  sealed trait `persistent-storage` extends PermissionName
+  sealed trait `persistent-storage`
+    extends StObject
+       with PermissionName
   @scala.inline
   def `persistent-storage`: `persistent-storage` = "persistent-storage".asInstanceOf[`persistent-storage`]
   
   @js.native
-  sealed trait pickup extends PaymentShippingType
+  sealed trait pickup
+    extends StObject
+       with PaymentShippingType
   @scala.inline
   def pickup: pickup = "pickup".asInstanceOf[pickup]
   
@@ -3610,17 +4158,23 @@ object stdStrings {
   def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
-  sealed trait pixelated extends ResizeQuality
+  sealed trait pixelated
+    extends StObject
+       with ResizeQuality
   @scala.inline
   def pixelated: pixelated = "pixelated".asInstanceOf[pixelated]
   
   @js.native
-  sealed trait pkcs8 extends KeyFormat
+  sealed trait pkcs8
+    extends StObject
+       with KeyFormat
   @scala.inline
   def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
   
   @js.native
-  sealed trait platform extends AuthenticatorAttachment
+  sealed trait platform
+    extends StObject
+       with AuthenticatorAttachment
   @scala.inline
   def platform: platform = "platform".asInstanceOf[platform]
   
@@ -3630,7 +4184,9 @@ object stdStrings {
   def play: play = "play".asInstanceOf[play]
   
   @js.native
-  sealed trait playback extends AudioContextLatencyCategory
+  sealed trait playback
+    extends StObject
+       with AudioContextLatencyCategory
   @scala.inline
   def playback: playback = "playback".asInstanceOf[playback]
   
@@ -3640,7 +4196,9 @@ object stdStrings {
   def playing: playing = "playing".asInstanceOf[playing]
   
   @js.native
-  sealed trait plusSign extends NumberFormatPartTypes
+  sealed trait plusSign
+    extends StObject
+       with NumberFormatPartTypes
   @scala.inline
   def plusSign: plusSign = "plusSign".asInstanceOf[plusSign]
   
@@ -3665,7 +4223,9 @@ object stdStrings {
   def pointerleave: pointerleave = "pointerleave".asInstanceOf[pointerleave]
   
   @js.native
-  sealed trait pointerlock extends MSWebViewPermissionType
+  sealed trait pointerlock
+    extends StObject
+       with MSWebViewPermissionType
   @scala.inline
   def pointerlock: pointerlock = "pointerlock".asInstanceOf[pointerlock]
   
@@ -3715,26 +4275,32 @@ object stdStrings {
   def popstate: popstate = "popstate".asInstanceOf[popstate]
   
   @js.native
-  sealed trait portrait extends OrientationLockType
+  sealed trait portrait
+    extends StObject
+       with OrientationLockType
   @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
   sealed trait `portrait-primary`
-    extends OrientationLockType
+    extends StObject
+       with OrientationLockType
        with OrientationType
   @scala.inline
   def `portrait-primary`: `portrait-primary` = "portrait-primary".asInstanceOf[`portrait-primary`]
   
   @js.native
   sealed trait `portrait-secondary`
-    extends OrientationLockType
+    extends StObject
+       with OrientationLockType
        with OrientationType
   @scala.inline
   def `portrait-secondary`: `portrait-secondary` = "portrait-secondary".asInstanceOf[`portrait-secondary`]
   
   @js.native
-  sealed trait pranswer extends RTCSdpType
+  sealed trait pranswer
+    extends StObject
+       with RTCSdpType
   @scala.inline
   def pranswer: pranswer = "pranswer".asInstanceOf[pranswer]
   
@@ -3745,48 +4311,65 @@ object stdStrings {
   
   @js.native
   sealed trait preferred
-    extends ResidentKeyRequirement
+    extends StObject
+       with ResidentKeyRequirement
        with UserVerificationRequirement
   @scala.inline
   def preferred: preferred = "preferred".asInstanceOf[preferred]
   
   @js.native
-  sealed trait premultiply extends PremultiplyAlpha
+  sealed trait premultiply
+    extends StObject
+       with PremultiplyAlpha
   @scala.inline
   def premultiply: premultiply = "premultiply".asInstanceOf[premultiply]
   
   @js.native
-  sealed trait prerender extends NavigationType
+  sealed trait prerender
+    extends StObject
+       with NavigationType
   @scala.inline
   def prerender: prerender = "prerender".asInstanceOf[prerender]
   
   @js.native
-  sealed trait preserve extends SelectionMode
+  sealed trait preserve
+    extends StObject
+       with SelectionMode
   @scala.inline
   def preserve: preserve = "preserve".asInstanceOf[preserve]
   
   @js.native
-  sealed trait prev extends IDBCursorDirection
+  sealed trait prev
+    extends StObject
+       with IDBCursorDirection
   @scala.inline
   def prev: prev = "prev".asInstanceOf[prev]
   
   @js.native
-  sealed trait prevunique extends IDBCursorDirection
+  sealed trait prevunique
+    extends StObject
+       with IDBCursorDirection
   @scala.inline
   def prevunique: prevunique = "prevunique".asInstanceOf[prevunique]
   
   @js.native
-  sealed trait prflx extends RTCIceCandidateType
+  sealed trait prflx
+    extends StObject
+       with RTCIceCandidateType
   @scala.inline
   def prflx: prflx = "prflx".asInstanceOf[prflx]
   
   @js.native
-  sealed trait `private` extends KeyType
+  sealed trait `private`
+    extends StObject
+       with KeyType
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
-  sealed trait probably extends CanPlayTypeResult
+  sealed trait probably
+    extends StObject
+       with CanPlayTypeResult
   @scala.inline
   def probably: probably = "probably".asInstanceOf[probably]
   
@@ -3802,13 +4385,16 @@ object stdStrings {
   
   @js.native
   sealed trait prompt
-    extends PermissionState
+    extends StObject
+       with PermissionState
        with PushPermissionState
   @scala.inline
   def prompt: prompt = "prompt".asInstanceOf[prompt]
   
   @js.native
-  sealed trait public extends KeyType
+  sealed trait public
+    extends StObject
+       with KeyType
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   
@@ -3818,7 +4404,9 @@ object stdStrings {
   def `public-key`: `public-key` = "public-key".asInstanceOf[`public-key`]
   
   @js.native
-  sealed trait push extends PermissionName
+  sealed trait push
+    extends StObject
+       with PermissionName
   @scala.inline
   def push: push = "push".asInstanceOf[push]
   
@@ -3828,12 +4416,16 @@ object stdStrings {
   def q: q = "q".asInstanceOf[q]
   
   @js.native
-  sealed trait quarter extends RelativeTimeFormatUnit
+  sealed trait quarter
+    extends StObject
+       with RelativeTimeFormatUnit
   @scala.inline
   def quarter: quarter = "quarter".asInstanceOf[quarter]
   
   @js.native
-  sealed trait quarters extends RelativeTimeFormatUnit
+  sealed trait quarters
+    extends StObject
+       with RelativeTimeFormatUnit
   @scala.inline
   def quarters: quarters = "quarters".asInstanceOf[quarters]
   
@@ -3848,17 +4440,23 @@ object stdStrings {
   def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
   
   @js.native
-  sealed trait raw extends KeyFormat
+  sealed trait raw
+    extends StObject
+       with KeyFormat
   @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
-  sealed trait readonly_ extends IDBTransactionMode
+  sealed trait readonly_
+    extends StObject
+       with IDBTransactionMode
   @scala.inline
   def readonly_ : readonly_ = "readonly".asInstanceOf[readonly_]
   
   @js.native
-  sealed trait readwrite extends IDBTransactionMode
+  sealed trait readwrite
+    extends StObject
+       with IDBTransactionMode
   @scala.inline
   def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
   
@@ -3873,12 +4471,16 @@ object stdStrings {
   def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
-  sealed trait recvonly extends RTCRtpTransceiverDirection
+  sealed trait recvonly
+    extends StObject
+       with RTCRtpTransceiverDirection
   @scala.inline
   def recvonly: recvonly = "recvonly".asInstanceOf[recvonly]
   
   @js.native
-  sealed trait redundant extends ServiceWorkerState
+  sealed trait redundant
+    extends StObject
+       with ServiceWorkerState
   @scala.inline
   def redundant: redundant = "redundant".asInstanceOf[redundant]
   
@@ -3894,31 +4496,39 @@ object stdStrings {
   
   @js.native
   sealed trait relay
-    extends RTCIceCandidateType
+    extends StObject
+       with RTCIceCandidateType
        with RTCIceGatherPolicy
        with RTCIceTransportPolicy
   @scala.inline
   def relay: relay = "relay".asInstanceOf[relay]
   
   @js.native
-  sealed trait relayed extends RTCStatsIceCandidateType
+  sealed trait relayed
+    extends StObject
+       with RTCStatsIceCandidateType
   @scala.inline
   def relayed: relayed = "relayed".asInstanceOf[relayed]
   
   @js.native
-  sealed trait released extends MediaKeyStatus
+  sealed trait released
+    extends StObject
+       with MediaKeyStatus
   @scala.inline
   def released: released = "released".asInstanceOf[released]
   
   @js.native
   sealed trait reload
-    extends NavigationType
+    extends StObject
+       with NavigationType
        with RequestCache
   @scala.inline
   def reload: reload = "reload".asInstanceOf[reload]
   
   @js.native
-  sealed trait remotecandidate extends RTCStatsType
+  sealed trait remotecandidate
+    extends StObject
+       with RTCStatsType
   @scala.inline
   def remotecandidate: remotecandidate = "remotecandidate".asInstanceOf[remotecandidate]
   
@@ -3934,30 +4544,38 @@ object stdStrings {
   
   @js.native
   sealed trait replace
-    extends CompositeOperation
+    extends StObject
+       with CompositeOperation
        with CompositeOperationOrAuto
        with IterationCompositeOperation
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
-  sealed trait report extends RequestDestination
+  sealed trait report
+    extends StObject
+       with RequestDestination
   @scala.inline
   def report: report = "report".asInstanceOf[report]
   
   @js.native
-  sealed trait requested extends VRDisplayEventReason
+  sealed trait requested
+    extends StObject
+       with VRDisplayEventReason
   @scala.inline
   def requested: requested = "requested".asInstanceOf[requested]
   
   @js.native
-  sealed trait require extends RTCRtcpMuxPolicy
+  sealed trait require
+    extends StObject
+       with RTCRtcpMuxPolicy
   @scala.inline
   def require: require = "require".asInstanceOf[require]
   
   @js.native
   sealed trait required_
-    extends CredentialMediationRequirement
+    extends StObject
+       with CredentialMediationRequirement
        with MediaKeysRequirement
        with ResidentKeyRequirement
        with UserVerificationRequirement
@@ -3990,13 +4608,16 @@ object stdStrings {
   def resume: resume = "resume".asInstanceOf[resume]
   
   @js.native
-  sealed trait reverse extends PlaybackDirection
+  sealed trait reverse
+    extends StObject
+       with PlaybackDirection
   @scala.inline
   def reverse: reverse = "reverse".asInstanceOf[reverse]
   
   @js.native
   sealed trait right
-    extends AlignSetting
+    extends StObject
+       with AlignSetting
        with CanvasTextAlign
        with GamepadHand
        with NavigationReason
@@ -4005,18 +4626,23 @@ object stdStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait rl extends DirectionSetting
+  sealed trait rl
+    extends StObject
+       with DirectionSetting
   @scala.inline
   def rl: rl = "rl".asInstanceOf[rl]
   
   @js.native
-  sealed trait rollback extends RTCSdpType
+  sealed trait rollback
+    extends StObject
+       with RTCSdpType
   @scala.inline
   def rollback: rollback = "rollback".asInstanceOf[rollback]
   
   @js.native
   sealed trait round
-    extends CanvasLineCap
+    extends StObject
+       with CanvasLineCap
        with CanvasLineJoin
   @scala.inline
   def round: round = "round".asInstanceOf[round]
@@ -4032,19 +4658,24 @@ object stdStrings {
   def rt: rt = "rt".asInstanceOf[rt]
   
   @js.native
-  sealed trait rtcp extends RTCIceComponent
+  sealed trait rtcp
+    extends StObject
+       with RTCIceComponent
   @scala.inline
   def rtcp: rtcp = "rtcp".asInstanceOf[rtcp]
   
   @js.native
   sealed trait rtl
-    extends CanvasDirection
+    extends StObject
+       with CanvasDirection
        with NotificationDirection
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait rtp extends RTCIceComponent
+  sealed trait rtp
+    extends StObject
+       with RTCIceComponent
   @scala.inline
   def rtp: rtp = "rtp".asInstanceOf[rtp]
   
@@ -4055,7 +4686,8 @@ object stdStrings {
   
   @js.native
   sealed trait running
-    extends AnimationPlayState
+    extends StObject
+       with AnimationPlayState
        with AudioContextState
   @scala.inline
   def running: running = "running".asInstanceOf[running]
@@ -4067,7 +4699,8 @@ object stdStrings {
   
   @js.native
   sealed trait `same-origin`
-    extends ReferrerPolicy
+    extends StObject
+       with ReferrerPolicy
        with RequestCredentials
        with RequestMode
   @scala.inline
@@ -4079,12 +4712,16 @@ object stdStrings {
   def samp: samp = "samp".asInstanceOf[samp]
   
   @js.native
-  sealed trait sawtooth extends OscillatorType
+  sealed trait sawtooth
+    extends StObject
+       with OscillatorType
   @scala.inline
   def sawtooth: sawtooth = "sawtooth".asInstanceOf[sawtooth]
   
   @js.native
-  sealed trait script extends RequestDestination
+  sealed trait script
+    extends StObject
+       with RequestDestination
   @scala.inline
   def script: script = "script".asInstanceOf[script]
   
@@ -4094,29 +4731,38 @@ object stdStrings {
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait `sctp-failure` extends RTCErrorDetailType
+  sealed trait `sctp-failure`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `sctp-failure`: `sctp-failure` = "sctp-failure".asInstanceOf[`sctp-failure`]
   
   @js.native
-  sealed trait `sdp-syntax-error` extends RTCErrorDetailType
+  sealed trait `sdp-syntax-error`
+    extends StObject
+       with RTCErrorDetailType
   @scala.inline
   def `sdp-syntax-error`: `sdp-syntax-error` = "sdp-syntax-error".asInstanceOf[`sdp-syntax-error`]
   
   @js.native
   sealed trait second
-    extends DateTimeFormatPartTypes
+    extends StObject
+       with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
   @scala.inline
   def second: second = "second".asInstanceOf[second]
   
   @js.native
-  sealed trait seconds extends RelativeTimeFormatUnit
+  sealed trait seconds
+    extends StObject
+       with RelativeTimeFormatUnit
   @scala.inline
   def seconds: seconds = "seconds".asInstanceOf[seconds]
   
   @js.native
-  sealed trait secret extends KeyType
+  sealed trait secret
+    extends StObject
+       with KeyType
   @scala.inline
   def secret: secret = "secret".asInstanceOf[secret]
   
@@ -4141,12 +4787,16 @@ object stdStrings {
   def seeking: seeking = "seeking".asInstanceOf[seeking]
   
   @js.native
-  sealed trait segments extends AppendMode
+  sealed trait segments
+    extends StObject
+       with AppendMode
   @scala.inline
   def segments: segments = "segments".asInstanceOf[segments]
   
   @js.native
-  sealed trait select extends SelectionMode
+  sealed trait select
+    extends StObject
+       with SelectionMode
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   
@@ -4166,44 +4816,59 @@ object stdStrings {
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
-  sealed trait sendonly extends RTCRtpTransceiverDirection
+  sealed trait sendonly
+    extends StObject
+       with RTCRtpTransceiverDirection
   @scala.inline
   def sendonly: sendonly = "sendonly".asInstanceOf[sendonly]
   
   @js.native
-  sealed trait sendrecv extends RTCRtpTransceiverDirection
+  sealed trait sendrecv
+    extends StObject
+       with RTCRtpTransceiverDirection
   @scala.inline
   def sendrecv: sendrecv = "sendrecv".asInstanceOf[sendrecv]
   
   @js.native
-  sealed trait sequence extends AppendMode
+  sealed trait sequence
+    extends StObject
+       with AppendMode
   @scala.inline
   def sequence: sequence = "sequence".asInstanceOf[sequence]
   
   @js.native
-  sealed trait server extends RTCDtlsRole
+  sealed trait server
+    extends StObject
+       with RTCDtlsRole
   @scala.inline
   def server: server = "server".asInstanceOf[server]
   
   @js.native
-  sealed trait serverreflexive extends RTCStatsIceCandidateType
+  sealed trait serverreflexive
+    extends StObject
+       with RTCStatsIceCandidateType
   @scala.inline
   def serverreflexive: serverreflexive = "serverreflexive".asInstanceOf[serverreflexive]
   
   @js.native
-  sealed trait session extends RTCStatsType
+  sealed trait session
+    extends StObject
+       with RTCStatsType
   @scala.inline
   def session: session = "session".asInstanceOf[session]
   
   @js.native
   sealed trait sharedworker
-    extends ClientTypes
+    extends StObject
+       with ClientTypes
        with RequestDestination
   @scala.inline
   def sharedworker: sharedworker = "sharedworker".asInstanceOf[sharedworker]
   
   @js.native
-  sealed trait shipping extends PaymentShippingType
+  sealed trait shipping
+    extends StObject
+       with PaymentShippingType
   @scala.inline
   def shipping: shipping = "shipping".asInstanceOf[shipping]
   
@@ -4218,22 +4883,30 @@ object stdStrings {
   def shippingoptionchange: shippingoptionchange = "shippingoptionchange".asInstanceOf[shippingoptionchange]
   
   @js.native
-  sealed trait short extends RelativeTimeFormatStyle
+  sealed trait short
+    extends StObject
+       with RelativeTimeFormatStyle
   @scala.inline
   def short: short = "short".asInstanceOf[short]
   
   @js.native
-  sealed trait show extends FullscreenNavigationUI
+  sealed trait show
+    extends StObject
+       with FullscreenNavigationUI
   @scala.inline
   def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait showing extends TextTrackMode
+  sealed trait showing
+    extends StObject
+       with TextTrackMode
   @scala.inline
   def showing: showing = "showing".asInstanceOf[showing]
   
   @js.native
-  sealed trait sign extends KeyUsage
+  sealed trait sign
+    extends StObject
+       with KeyUsage
   @scala.inline
   def sign: sign = "sign".asInstanceOf[sign]
   
@@ -4243,12 +4916,16 @@ object stdStrings {
   def signalingstatechange: signalingstatechange = "signalingstatechange".asInstanceOf[signalingstatechange]
   
   @js.native
-  sealed trait silent extends CredentialMediationRequirement
+  sealed trait silent
+    extends StObject
+       with CredentialMediationRequirement
   @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
-  sealed trait sine extends OscillatorType
+  sealed trait sine
+    extends StObject
+       with OscillatorType
   @scala.inline
   def sine: sine = "sine".asInstanceOf[sine]
   
@@ -4263,12 +4940,16 @@ object stdStrings {
   def small: small = "small".asInstanceOf[small]
   
   @js.native
-  sealed trait smooth extends ScrollBehavior
+  sealed trait smooth
+    extends StObject
+       with ScrollBehavior
   @scala.inline
   def smooth: smooth = "smooth".asInstanceOf[smooth]
   
   @js.native
-  sealed trait so extends RTCIceTcpCandidateType
+  sealed trait so
+    extends StObject
+       with RTCIceTcpCandidateType
   @scala.inline
   def so: so = "so".asInstanceOf[so]
   
@@ -4308,12 +4989,16 @@ object stdStrings {
   def span: span = "span".asInstanceOf[span]
   
   @js.native
-  sealed trait speaker extends PermissionName
+  sealed trait speaker
+    extends StObject
+       with PermissionName
   @scala.inline
   def speaker: speaker = "speaker".asInstanceOf[speaker]
   
   @js.native
-  sealed trait speakers extends ChannelInterpretation
+  sealed trait speakers
+    extends StObject
+       with ChannelInterpretation
   @scala.inline
   def speakers: speakers = "speakers".asInstanceOf[speakers]
   
@@ -4328,24 +5013,31 @@ object stdStrings {
   def speechstart: speechstart = "speechstart".asInstanceOf[speechstart]
   
   @js.native
-  sealed trait spki extends KeyFormat
+  sealed trait spki
+    extends StObject
+       with KeyFormat
   @scala.inline
   def spki: spki = "spki".asInstanceOf[spki]
   
   @js.native
   sealed trait square
-    extends CanvasLineCap
+    extends StObject
+       with CanvasLineCap
        with OscillatorType
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait srflx extends RTCIceCandidateType
+  sealed trait srflx
+    extends StObject
+       with RTCIceCandidateType
   @scala.inline
   def srflx: srflx = "srflx".asInstanceOf[srflx]
   
   @js.native
-  sealed trait stable extends RTCSignalingState
+  sealed trait stable
+    extends StObject
+       with RTCSignalingState
   @scala.inline
   def stable: stable = "stable".asInstanceOf[stable]
   
@@ -4355,13 +5047,16 @@ object stdStrings {
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   
   @js.native
-  sealed trait standard extends GamepadMappingType
+  sealed trait standard
+    extends StObject
+       with GamepadMappingType
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
   sealed trait start
-    extends AlignSetting
+    extends StObject
+       with AlignSetting
        with CanvasTextAlign
        with LineAlignSetting
        with ScrollLogicalPosition
@@ -4380,7 +5075,9 @@ object stdStrings {
   def statsended: statsended = "statsended".asInstanceOf[statsended]
   
   @js.native
-  sealed trait `status-pending` extends MediaKeyStatus
+  sealed trait `status-pending`
+    extends StObject
+       with MediaKeyStatus
   @scala.inline
   def `status-pending`: `status-pending` = "status-pending".asInstanceOf[`status-pending`]
   
@@ -4390,7 +5087,9 @@ object stdStrings {
   def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait stopped extends RTCRtpTransceiverDirection
+  sealed trait stopped
+    extends StObject
+       with RTCRtpTransceiverDirection
   @scala.inline
   def stopped: stopped = "stopped".asInstanceOf[stopped]
   
@@ -4400,12 +5099,16 @@ object stdStrings {
   def storage: storage = "storage".asInstanceOf[storage]
   
   @js.native
-  sealed trait `strict-origin` extends ReferrerPolicy
+  sealed trait `strict-origin`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `strict-origin`: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
   
   @js.native
-  sealed trait `strict-origin-when-cross-origin` extends ReferrerPolicy
+  sealed trait `strict-origin-when-cross-origin`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `strict-origin-when-cross-origin`: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
   
@@ -4420,12 +5123,16 @@ object stdStrings {
   def strong: strong = "strong".asInstanceOf[strong]
   
   @js.native
-  sealed trait style extends RequestDestination
+  sealed trait style
+    extends StObject
+       with RequestDestination
   @scala.inline
   def style: style = "style".asInstanceOf[style]
   
   @js.native
-  sealed trait stylus extends TouchType
+  sealed trait stylus
+    extends StObject
+       with TouchType
   @scala.inline
   def stylus: stylus = "stylus".asInstanceOf[stylus]
   
@@ -4440,17 +5147,23 @@ object stdStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait subtitles extends TextTrackKind
+  sealed trait subtitles
+    extends StObject
+       with TextTrackKind
   @scala.inline
   def subtitles: subtitles = "subtitles".asInstanceOf[subtitles]
   
   @js.native
-  sealed trait succeeded extends RTCStatsIceCandidatePairState
+  sealed trait succeeded
+    extends StObject
+       with RTCStatsIceCandidatePairState
   @scala.inline
   def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
   
   @js.native
-  sealed trait success extends PaymentComplete
+  sealed trait success
+    extends StObject
+       with PaymentComplete
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
@@ -4470,7 +5183,9 @@ object stdStrings {
   def suspend: suspend = "suspend".asInstanceOf[suspend]
   
   @js.native
-  sealed trait suspended extends AudioContextState
+  sealed trait suspended
+    extends StObject
+       with AudioContextState
   @scala.inline
   def suspended: suspended = "suspended".asInstanceOf[suspended]
   
@@ -4495,17 +5210,23 @@ object stdStrings {
   def sync: sync = "sync".asInstanceOf[sync]
   
   @js.native
-  sealed trait `synthesis-failed` extends SpeechSynthesisErrorCode
+  sealed trait `synthesis-failed`
+    extends StObject
+       with SpeechSynthesisErrorCode
   @scala.inline
   def `synthesis-failed`: `synthesis-failed` = "synthesis-failed".asInstanceOf[`synthesis-failed`]
   
   @js.native
-  sealed trait `synthesis-unavailable` extends SpeechSynthesisErrorCode
+  sealed trait `synthesis-unavailable`
+    extends StObject
+       with SpeechSynthesisErrorCode
   @scala.inline
   def `synthesis-unavailable`: `synthesis-unavailable` = "synthesis-unavailable".asInstanceOf[`synthesis-unavailable`]
   
   @js.native
-  sealed trait table extends ImportExportKind
+  sealed trait table
+    extends StObject
+       with ImportExportKind
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   
@@ -4515,7 +5236,9 @@ object stdStrings {
   def tbody: tbody = "tbody".asInstanceOf[tbody]
   
   @js.native
-  sealed trait tcp extends RTCIceProtocol
+  sealed trait tcp
+    extends StObject
+       with RTCIceProtocol
   @scala.inline
   def tcp: tcp = "tcp".asInstanceOf[tcp]
   
@@ -4530,17 +5253,23 @@ object stdStrings {
   def template: template = "template".asInstanceOf[template]
   
   @js.native
-  sealed trait temporary extends MediaKeySessionType
+  sealed trait temporary
+    extends StObject
+       with MediaKeySessionType
   @scala.inline
   def temporary: temporary = "temporary".asInstanceOf[temporary]
   
   @js.native
-  sealed trait text extends XMLHttpRequestResponseType
+  sealed trait text
+    extends StObject
+       with XMLHttpRequestResponseType
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait `text-too-long` extends SpeechSynthesisErrorCode
+  sealed trait `text-too-long`
+    extends StObject
+       with SpeechSynthesisErrorCode
   @scala.inline
   def `text-too-long`: `text-too-long` = "text-too-long".asInstanceOf[`text-too-long`]
   
@@ -4550,12 +5279,16 @@ object stdStrings {
   def textPath: textPath = "textPath".asInstanceOf[textPath]
   
   @js.native
-  sealed trait textSlashhtml extends DOMParserSupportedType
+  sealed trait textSlashhtml
+    extends StObject
+       with DOMParserSupportedType
   @scala.inline
   def textSlashhtml: textSlashhtml = "text/html".asInstanceOf[textSlashhtml]
   
   @js.native
-  sealed trait textSlashxml extends DOMParserSupportedType
+  sealed trait textSlashxml
+    extends StObject
+       with DOMParserSupportedType
   @scala.inline
   def textSlashxml: textSlashxml = "text/xml".asInstanceOf[textSlashxml]
   
@@ -4585,7 +5318,9 @@ object stdStrings {
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait timeZoneName extends DateTimeFormatPartTypes
+  sealed trait timeZoneName
+    extends StObject
+       with DateTimeFormatPartTypes
   @scala.inline
   def timeZoneName: timeZoneName = "timeZoneName".asInstanceOf[timeZoneName]
   
@@ -4620,7 +5355,9 @@ object stdStrings {
   def tonechange: tonechange = "tonechange".asInstanceOf[tonechange]
   
   @js.native
-  sealed trait top extends CanvasTextBaseline
+  sealed trait top
+    extends StObject
+       with CanvasTextBaseline
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
@@ -4651,7 +5388,8 @@ object stdStrings {
   
   @js.native
   sealed trait track
-    extends RTCStatsType
+    extends StObject
+       with RTCStatsType
        with RequestDestination
   @scala.inline
   def track: track = "track".asInstanceOf[track]
@@ -4677,17 +5415,23 @@ object stdStrings {
   def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
   
   @js.native
-  sealed trait transparent extends EndingType
+  sealed trait transparent
+    extends StObject
+       with EndingType
   @scala.inline
   def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native
-  sealed trait transport extends RTCStatsType
+  sealed trait transport
+    extends StObject
+       with RTCStatsType
   @scala.inline
   def transport: transport = "transport".asInstanceOf[transport]
   
   @js.native
-  sealed trait triangle extends OscillatorType
+  sealed trait triangle
+    extends StObject
+       with OscillatorType
   @scala.inline
   def triangle: triangle = "triangle".asInstanceOf[triangle]
   
@@ -4697,7 +5441,9 @@ object stdStrings {
   def tspan: tspan = "tspan".asInstanceOf[tspan]
   
   @js.native
-  sealed trait two extends LDMLPluralRule
+  sealed trait two
+    extends StObject
+       with LDMLPluralRule
   @scala.inline
   def two: two = "two".asInstanceOf[two]
   
@@ -4707,7 +5453,9 @@ object stdStrings {
   def u: u = "u".asInstanceOf[u]
   
   @js.native
-  sealed trait udp extends RTCIceProtocol
+  sealed trait udp
+    extends StObject
+       with RTCIceProtocol
   @scala.inline
   def udp: udp = "udp".asInstanceOf[udp]
   
@@ -4728,14 +5476,17 @@ object stdStrings {
   
   @js.native
   sealed trait unknown
-    extends MSWebViewPermissionState
+    extends StObject
+       with MSWebViewPermissionState
        with PaymentComplete
        with RTCIceRole
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
-  sealed trait unlimitedIndexedDBQuota extends MSWebViewPermissionType
+  sealed trait unlimitedIndexedDBQuota
+    extends StObject
+       with MSWebViewPermissionType
   @scala.inline
   def unlimitedIndexedDBQuota: unlimitedIndexedDBQuota = "unlimitedIndexedDBQuota".asInstanceOf[unlimitedIndexedDBQuota]
   
@@ -4745,7 +5496,9 @@ object stdStrings {
   def unload: unload = "unload".asInstanceOf[unload]
   
   @js.native
-  sealed trait unmounted extends VRDisplayEventReason
+  sealed trait unmounted
+    extends StObject
+       with VRDisplayEventReason
   @scala.inline
   def unmounted: unmounted = "unmounted".asInstanceOf[unmounted]
   
@@ -4755,18 +5508,23 @@ object stdStrings {
   def unmute: unmute = "unmute".asInstanceOf[unmute]
   
   @js.native
-  sealed trait `unsafe-url` extends ReferrerPolicy
+  sealed trait `unsafe-url`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
   
   @js.native
-  sealed trait unwrapKey extends KeyUsage
+  sealed trait unwrapKey
+    extends StObject
+       with KeyUsage
   @scala.inline
   def unwrapKey: unwrapKey = "unwrapKey".asInstanceOf[unwrapKey]
   
   @js.native
   sealed trait up
-    extends NavigationReason
+    extends StObject
+       with NavigationReason
        with ScrollSetting
   @scala.inline
   def up: up = "up".asInstanceOf[up]
@@ -4802,13 +5560,16 @@ object stdStrings {
   def upgradeneeded: upgradeneeded = "upgradeneeded".asInstanceOf[upgradeneeded]
   
   @js.native
-  sealed trait usable extends MediaKeyStatus
+  sealed trait usable
+    extends StObject
+       with MediaKeyStatus
   @scala.inline
   def usable: usable = "usable".asInstanceOf[usable]
   
   @js.native
   sealed trait usb_
-    extends AuthenticatorTransport
+    extends StObject
+       with AuthenticatorTransport
        with Transport
   @scala.inline
   def usb_ : usb_ = "usb".asInstanceOf[usb_]
@@ -4819,7 +5580,9 @@ object stdStrings {
   def use: use = "use".asInstanceOf[use]
   
   @js.native
-  sealed trait user extends VideoFacingModeEnum
+  sealed trait user
+    extends StObject
+       with VideoFacingModeEnum
   @scala.inline
   def user: user = "user".asInstanceOf[user]
   
@@ -4829,17 +5592,23 @@ object stdStrings {
   def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
-  sealed trait verify extends KeyUsage
+  sealed trait verify
+    extends StObject
+       with KeyUsage
   @scala.inline
   def verify: verify = "verify".asInstanceOf[verify]
   
   @js.native
-  sealed trait versionchange extends IDBTransactionMode
+  sealed trait versionchange
+    extends StObject
+       with IDBTransactionMode
   @scala.inline
   def versionchange: versionchange = "versionchange".asInstanceOf[versionchange]
   
   @js.native
-  sealed trait `very-low` extends RTCPriorityType
+  sealed trait `very-low`
+    extends StObject
+       with RTCPriorityType
   @scala.inline
   def `very-low`: `very-low` = "very-low".asInstanceOf[`very-low`]
   
@@ -4849,12 +5618,16 @@ object stdStrings {
   def vibration: vibration = "vibration".asInstanceOf[vibration]
   
   @js.native
-  sealed trait video extends RequestDestination
+  sealed trait video
+    extends StObject
+       with RequestDestination
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   
   @js.native
-  sealed trait videoinput extends MediaDeviceKind
+  sealed trait videoinput
+    extends StObject
+       with MediaDeviceKind
   @scala.inline
   def videoinput: videoinput = "videoinput".asInstanceOf[videoinput]
   
@@ -4869,12 +5642,16 @@ object stdStrings {
   def visibilitychange: visibilitychange = "visibilitychange".asInstanceOf[visibilitychange]
   
   @js.native
-  sealed trait visible extends VisibilityState
+  sealed trait visible
+    extends StObject
+       with VisibilityState
   @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
-  sealed trait `voice-unavailable` extends SpeechSynthesisErrorCode
+  sealed trait `voice-unavailable`
+    extends StObject
+       with SpeechSynthesisErrorCode
   @scala.inline
   def `voice-unavailable`: `voice-unavailable` = "voice-unavailable".asInstanceOf[`voice-unavailable`]
   
@@ -4934,7 +5711,9 @@ object stdStrings {
   def vrdisplaypresentchange: vrdisplaypresentchange = "vrdisplaypresentchange".asInstanceOf[vrdisplaypresentchange]
   
   @js.native
-  sealed trait waiting extends RTCStatsIceCandidatePairState
+  sealed trait waiting
+    extends StObject
+       with RTCStatsIceCandidatePairState
   @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
   
@@ -4949,32 +5728,44 @@ object stdStrings {
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   
   @js.native
-  sealed trait webgl extends OffscreenRenderingContextId
+  sealed trait webgl
+    extends StObject
+       with OffscreenRenderingContextId
   @scala.inline
   def webgl: webgl = "webgl".asInstanceOf[webgl]
   
   @js.native
-  sealed trait webgl2 extends OffscreenRenderingContextId
+  sealed trait webgl2
+    extends StObject
+       with OffscreenRenderingContextId
   @scala.inline
   def webgl2: webgl2 = "webgl2".asInstanceOf[webgl2]
   
   @js.native
-  sealed trait webnotifications extends MSWebViewPermissionType
+  sealed trait webnotifications
+    extends StObject
+       with MSWebViewPermissionType
   @scala.inline
   def webnotifications: webnotifications = "webnotifications".asInstanceOf[webnotifications]
   
   @js.native
-  sealed trait week extends RelativeTimeFormatUnit
+  sealed trait week
+    extends StObject
+       with RelativeTimeFormatUnit
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   
   @js.native
-  sealed trait weekday extends DateTimeFormatPartTypes
+  sealed trait weekday
+    extends StObject
+       with DateTimeFormatPartTypes
   @scala.inline
   def weekday: weekday = "weekday".asInstanceOf[weekday]
   
   @js.native
-  sealed trait weeks extends RelativeTimeFormatUnit
+  sealed trait weeks
+    extends StObject
+       with RelativeTimeFormatUnit
   @scala.inline
   def weeks: weeks = "weeks".asInstanceOf[weeks]
   
@@ -4985,20 +5776,24 @@ object stdStrings {
   
   @js.native
   sealed trait window
-    extends ClientTypes
+    extends StObject
+       with ClientTypes
        with DisplayCaptureSurfaceType
   @scala.inline
   def window: window = "window".asInstanceOf[window]
   
   @js.native
   sealed trait worker
-    extends ClientTypes
+    extends StObject
+       with ClientTypes
        with RequestDestination
   @scala.inline
   def worker: worker = "worker".asInstanceOf[worker]
   
   @js.native
-  sealed trait wrapKey extends KeyUsage
+  sealed trait wrapKey
+    extends StObject
+       with KeyUsage
   @scala.inline
   def wrapKey: wrapKey = "wrapKey".asInstanceOf[wrapKey]
   
@@ -5008,24 +5803,31 @@ object stdStrings {
   def xmp: xmp = "xmp".asInstanceOf[xmp]
   
   @js.native
-  sealed trait xslt extends RequestDestination
+  sealed trait xslt
+    extends StObject
+       with RequestDestination
   @scala.inline
   def xslt: xslt = "xslt".asInstanceOf[xslt]
   
   @js.native
   sealed trait year
-    extends DateTimeFormatPartTypes
+    extends StObject
+       with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
   @scala.inline
   def year: year = "year".asInstanceOf[year]
   
   @js.native
-  sealed trait years extends RelativeTimeFormatUnit
+  sealed trait years
+    extends StObject
+       with RelativeTimeFormatUnit
   @scala.inline
   def years: years = "years".asInstanceOf[years]
   
   @js.native
-  sealed trait zero extends LDMLPluralRule
+  sealed trait zero
+    extends StObject
+       with LDMLPluralRule
   @scala.inline
   def zero: zero = "zero".asInstanceOf[zero]
 }

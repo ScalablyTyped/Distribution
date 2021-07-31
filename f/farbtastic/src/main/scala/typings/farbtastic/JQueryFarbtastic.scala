@@ -3,7 +3,6 @@ package typings.farbtastic
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryFarbtastic {
@@ -29,14 +28,13 @@ object JQueryFarbtastic {
     def setHSL(hsl: js.Array[Double]): Farbtastic = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var callback: js.UndefOr[Callback] = js.native
+    var callback: js.UndefOr[Callback] = js.undefined
     
-    var wheelWidth: js.UndefOr[Double] = js.native
+    var wheelWidth: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

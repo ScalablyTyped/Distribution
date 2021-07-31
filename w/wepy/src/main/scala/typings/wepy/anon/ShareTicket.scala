@@ -2,15 +2,13 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareTicket extends StObject {
   
-  var shareTicket: String = js.native
+  var shareTicket: String
   
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object ShareTicket {
   

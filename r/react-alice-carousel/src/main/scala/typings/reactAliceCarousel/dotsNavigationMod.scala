@@ -7,25 +7,26 @@ import typings.react.mod.global.JSX.Element
 import typings.reactAliceCarousel.typesMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dotsNavigationMod {
   
-  @JSImport("react-alice-carousel/lib/views/DotsNavigation", "DotsNavigation")
+  @JSImport("react-alice-carousel/lib/views/DotsNavigation", JSImport.Namespace)
   @js.native
-  def DotsNavigation(hasStateOnClickOnMouseEnterOnMouseLeave: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def DotsNavigation(hasStateOnClickOnMouseEnterOnMouseLeave: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DotsNavigation")(hasStateOnClickOnMouseEnterOnMouseLeave.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props extends StObject {
     
-    def onClick(index: Double): Unit = js.native
+    def onClick(index: Double): Unit
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[typings.std.Element]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[typings.std.Element]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[typings.std.Element]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[typings.std.Element]] = js.undefined
     
-    var state: State = js.native
+    var state: State
   }
   object Props {
     

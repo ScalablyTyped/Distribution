@@ -12,56 +12,54 @@ import typings.openpgp.openpgpStrings.web
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecryptOptions extends StObject {
   
   /**
     * (optional) use the given date for verification instead of the current time
     */
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
   /**
     * (optional) whether to return data as a string(Stream) or Uint8Array(Stream). If 'utf8' (the default), also normalize newlines.
     */
-  var format: js.UndefOr[utf8 | binary] = js.native
+  var format: js.UndefOr[utf8 | binary] = js.undefined
   
   /**
     * the message object with the encrypted data
     */
-  var message: Message = js.native
+  var message: Message
   
   /**
     * (optional) passwords to decrypt the message
     */
-  var passwords: js.UndefOr[String | js.Array[String]] = js.native
+  var passwords: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * (optional) private keys with decrypted secret key data or session key
     */
-  var privateKeys: js.UndefOr[Key | js.Array[Key]] = js.native
+  var privateKeys: js.UndefOr[Key | js.Array[Key]] = js.undefined
   
   /**
     * (optional) array of public keys or single key, to verify signatures
     */
-  var publicKeys: js.UndefOr[Key | js.Array[Key]] = js.native
+  var publicKeys: js.UndefOr[Key | js.Array[Key]] = js.undefined
   
   /**
     * (optional) session keys in the form: { data:Uint8Array, algorithm:String }
     */
-  var sessionKeys: js.UndefOr[Algorithm | js.Array[Algorithm]] = js.native
+  var sessionKeys: js.UndefOr[Algorithm | js.Array[Algorithm]] = js.undefined
   
   /**
     * (optional) detached signature for verification
     */
-  var signature: js.UndefOr[Signature] = js.native
+  var signature: js.UndefOr[Signature] = js.undefined
   
   /**
     * (optional) whether to return data as a stream. Defaults to the type of stream `message` was created from, if any.
     */
-  var streaming: js.UndefOr[web | node | `false`] = js.native
+  var streaming: js.UndefOr[web | node | `false`] = js.undefined
 }
 object DecryptOptions {
   

@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVaultMod {
   
-  @JSImport("@pulumi/aws/backup/getVault", "getVault")
+  @JSImport("@pulumi/aws/backup/getVault", JSImport.Namespace)
   @js.native
-  def getVault(args: GetVaultArgs): js.Promise[GetVaultResult] = js.native
-  @JSImport("@pulumi/aws/backup/getVault", "getVault")
-  @js.native
-  def getVault(args: GetVaultArgs, opts: InvokeOptions): js.Promise[GetVaultResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVault(args: GetVaultArgs): js.Promise[GetVaultResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVaultResult]]
+  @scala.inline
+  def getVault(args: GetVaultArgs, opts: InvokeOptions): js.Promise[GetVaultResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVaultResult]]
+  
   trait GetVaultArgs extends StObject {
     
     /**
       * The name of the backup vault.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Metadata that you can assign to help organize the resources that you create.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetVaultArgs {
     
@@ -51,35 +51,34 @@ object getVaultMod {
     }
   }
   
-  @js.native
   trait GetVaultResult extends StObject {
     
     /**
       * The ARN of the vault.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The server-side encryption key that is used to protect your backups.
       */
-    val kmsKeyArn: String = js.native
+    val kmsKeyArn: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The number of recovery points that are stored in a backup vault.
       */
-    val recoveryPoints: Double = js.native
+    val recoveryPoints: Double
     
     /**
       * Metadata that you can assign to help organize the resources that you create.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetVaultResult {
     

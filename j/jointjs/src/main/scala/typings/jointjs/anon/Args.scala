@@ -3,15 +3,13 @@ package typings.jointjs.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Args extends StObject {
   
-  var args: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var args: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Args {
   

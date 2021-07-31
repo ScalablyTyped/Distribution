@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait ChartPlotBy extends StObject
 object ChartPlotBy extends StObject {
   
   @js.native
-  sealed trait columns extends ChartPlotBy
+  sealed trait columns
+    extends StObject
+       with ChartPlotBy
   
   @js.native
-  sealed trait rows extends ChartPlotBy
+  sealed trait rows
+    extends StObject
+       with ChartPlotBy
 }

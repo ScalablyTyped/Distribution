@@ -5,33 +5,31 @@ import typings.motionScroll.motionScrollStrings.y
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Axis extends StObject {
     
-    var axis: js.UndefOr[x | y] = js.native
+    var axis: js.UndefOr[x | y] = js.undefined
     
-    var callBack: js.UndefOr[js.Function0[Unit]] = js.native
+    var callBack: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function0[Unit]] = js.native
+    var easing: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var maxScrollTime: js.UndefOr[Double] = js.native
+    var maxScrollTime: js.UndefOr[Double] = js.undefined
     
-    var minScrollTime: js.UndefOr[Double] = js.native
+    var minScrollTime: js.UndefOr[Double] = js.undefined
     
-    var scrollTo: js.UndefOr[Double] = js.native
+    var scrollTo: js.UndefOr[Double] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
   }
   object Axis {
     

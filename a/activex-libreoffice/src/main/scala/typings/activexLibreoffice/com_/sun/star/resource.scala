@@ -13,7 +13,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resource {
@@ -53,8 +52,9 @@ object resource {
   type StringResource = XStringResourcePersistence
   
   /** specifies a service providing access to a resource string table implementing the {@link com.sun.star.resource.XStringResourceWithLocation} interface. */
-  @js.native
-  trait StringResourceWithLocation extends XStringResourceWithLocation {
+  trait StringResourceWithLocation
+    extends StObject
+       with XStringResourceWithLocation {
     
     /**
       * is used to initialize the object on its creation.
@@ -73,7 +73,7 @@ object resource {
       BaseName: String,
       Comment: String,
       Handler: XInteractionHandler
-    ): Unit = js.native
+    ): Unit
   }
   object StringResourceWithLocation {
     
@@ -132,8 +132,9 @@ object resource {
   }
   
   /** specifies a service providing access to a resource string table implementing the {@link com.sun.star.resource.XStringResourceWithStorage} interface. */
-  @js.native
-  trait StringResourceWithStorage extends XStringResourceWithStorage {
+  trait StringResourceWithStorage
+    extends StObject
+       with XStringResourceWithStorage {
     
     /**
       * is used to initialize the object on its creation.
@@ -144,7 +145,7 @@ object resource {
       * @param Comment Comment stored first in each properties file followed by a line feed character. The line feed character is added automatically and hasn't
       * @throws com::sun::star::lang::IllegalArgumentException if a null interface is passed as Storage
       */
-    def create(Storage: XStorage, ReadOnly: Boolean, locale: Locale, BaseName: String, Comment: String): Unit = js.native
+    def create(Storage: XStorage, ReadOnly: Boolean, locale: Locale, BaseName: String, Comment: String): Unit
   }
   object StringResourceWithStorage {
     
@@ -207,11 +208,12 @@ object resource {
     * @see XResourceBundle
     * @see Locale
     */
-  @js.native
-  trait XLocale extends XInterface {
+  trait XLocale
+    extends StObject
+       with XInterface {
     
     /** @returns a sequence of all locales which are available in the system. */
-    val AvailableLocales: SafeArray[Locale] = js.native
+    val AvailableLocales: SafeArray[Locale]
     
     /**
       * the common method of getting the current default locale.
@@ -223,13 +225,13 @@ object resource {
       *
       * ;  Note that the initial setting will match the host system.
       */
-    var Default: Locale = js.native
+    var Default: Locale
     
     /** @returns a sequence of all ISO country codes known to the component. */
-    val ISOCountries: SafeArray[String] = js.native
+    val ISOCountries: SafeArray[String]
     
     /** @returns a sequence of all ISO language codes known to the component. */
-    val ISOLanguages: SafeArray[String] = js.native
+    val ISOLanguages: SafeArray[String]
     
     /**
       * creates a locale from language, country, and variant.
@@ -239,13 +241,13 @@ object resource {
       *
       * Note: The Java class `Locale` returns the **old** codes.
       */
-    def create(aLanguage: String, aCountry: String, aVariant: String): Locale = js.native
+    def create(aLanguage: String, aCountry: String, aVariant: String): Locale
     
     /** @returns `TRUE` if the {@link com.sun.star.lang.Locale}**l1** is equal to the other one.  A locale is deemed equal to another locale with identical langua */
-    def equals(l1: Locale, l2: Locale): Boolean = js.native
+    def equals(l1: Locale, l2: Locale): Boolean
     
     /** @returns a sequence of all locales which are available in the system. */
-    def getAvailableLocales(): SafeArray[Locale] = js.native
+    def getAvailableLocales(): SafeArray[Locale]
     
     /**
       * the common method of getting the current default locale.
@@ -257,72 +259,72 @@ object resource {
       *
       * ;  Note that the initial setting will match the host system.
       */
-    def getDefault(): Locale = js.native
+    def getDefault(): Locale
     
     /**
       * @param locale the locale.
       * @param inLocale specifies the desired user country.
       * @returns country code for display of field to user. If the localized name is not found, returns the ISO codes.
       */
-    def getDisplayCountry(locale: Locale, inLocale: Locale): String = js.native
+    def getDisplayCountry(locale: Locale, inLocale: Locale): String
     
     /** @returns country code for display of field to user. If the localized name is not found, returns the ISO code. The desired user country is from the default */
-    def getDisplayCountry_Default(locale: Locale): String = js.native
+    def getDisplayCountry_Default(locale: Locale): String
     
     /**
       * @param locale the locale.
       * @param inLocale specifies the desired user language.
       * @returns language code for display of field to user. If the localized name is not found, returns the ISO codes.
       */
-    def getDisplayLanguage(locale: Locale, inLocale: Locale): String = js.native
+    def getDisplayLanguage(locale: Locale, inLocale: Locale): String
     
     /** @returns language code for display of field to user. If the localized name is not found, returns the ISO code. The desired user language is from the defau */
-    def getDisplayLanguage_Default(locale: Locale): String = js.native
+    def getDisplayLanguage_Default(locale: Locale): String
     
     /**
       * @param locale the locale.
       * @param inLocale specifies the desired user locale.
       * @returns a string to display the entire locale to user. If the localized name is not found, uses the ISO codes.
       */
-    def getDisplayName(locale: Locale, inLocale: Locale): String = js.native
+    def getDisplayName(locale: Locale, inLocale: Locale): String
     
     /**
       * @param locale the locale.
       * @returns a string to display the entire locale to user. If the localized name is not found, uses the ISO codes. The default locale is used for the present
       */
-    def getDisplayName_Default(locale: Locale): String = js.native
+    def getDisplayName_Default(locale: Locale): String
     
     /**
       * @param locale the locale.
       * @param inLocale specifies the desired user variant.
       * @returns variant code for display of field to user. If the localized name is not found, returns the ISO codes.
       */
-    def getDisplayVariant(locale: Locale, inLocale: Locale): String = js.native
+    def getDisplayVariant(locale: Locale, inLocale: Locale): String
     
     /** @returns variant code for display of field to user. The desired user variant is from the default locale. */
-    def getDisplayVariant_Default(locale: Locale): String = js.native
+    def getDisplayVariant_Default(locale: Locale): String
     
     /** @returns the ISO country code for the specified locale. */
-    def getISO3Country(locale: Locale): String = js.native
+    def getISO3Country(locale: Locale): String
     
     /** @returns the ISO language code for the specified locale. */
-    def getISO3Language(locale: Locale): String = js.native
+    def getISO3Language(locale: Locale): String
     
     /** @returns a sequence of all ISO country codes known to the component. */
-    def getISOCountries(): SafeArray[String] = js.native
+    def getISOCountries(): SafeArray[String]
     
     /** @returns a sequence of all ISO language codes known to the component. */
-    def getISOLanguages(): SafeArray[String] = js.native
+    def getISOLanguages(): SafeArray[String]
     
     /** @returns a sequence for language codes which are valid within the given country. */
-    def getLanguagesForCountry(country: String): SafeArray[String] = js.native
+    def getLanguagesForCountry(country: String): SafeArray[String]
     
     /**
       * sets the default locale for the whole environment.
       *
       * It is normally set once at the beginning of an application, then never reset. `setDefault` does not reset the host locale.
       */
-    def setDefault(newLocale: Locale): Unit = js.native
+    def setDefault(newLocale: Locale): Unit
   }
   object XLocale {
     
@@ -524,11 +526,12 @@ object resource {
     * @see Locale
     * @version 0.1 26 May 1999
     */
-  @js.native
-  trait XResourceBundle extends XNameAccess {
+  trait XResourceBundle
+    extends StObject
+       with XNameAccess {
     
     /** @returns the locale for this resource bundle.  This function can be used to determine whether the resource bundle that is returned really corresponds to t */
-    val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+    val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
     
     /**
       * contains the parent bundle of this bundle.
@@ -536,16 +539,16 @@ object resource {
       * The parent bundle is searched by the method {@link com.sun.star.container.XNameAccess.getByName()} when this bundle does not contain a particular
       * resource.
       */
-    var Parent: XResourceBundle = js.native
+    var Parent: XResourceBundle
     
     /**
       * @param key specifies the element.
       * @returns an object from a resource bundle or NULL if no resource exists.  It does not look in the parents.
       */
-    def getDirectElement(key: String): js.Any = js.native
+    def getDirectElement(key: String): js.Any
     
     /** @returns the locale for this resource bundle.  This function can be used to determine whether the resource bundle that is returned really corresponds to t */
-    def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+    def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale
   }
   object XResourceBundle {
     
@@ -596,14 +599,15 @@ object resource {
     * @see XResourceBundle
     * @see Locale
     */
-  @js.native
-  trait XResourceBundleLoader extends XInterface {
+  trait XResourceBundleLoader
+    extends StObject
+       with XInterface {
     
     /** loads the appropriate resource bundle subclass. */
-    def loadBundle(abaseName: String, aLocale: Locale): XResourceBundle = js.native
+    def loadBundle(abaseName: String, aLocale: Locale): XResourceBundle
     
     /** loads the appropriate resource bundle. */
-    def loadBundle_Default(aBaseName: String): XResourceBundle = js.native
+    def loadBundle_Default(aBaseName: String): XResourceBundle
   }
   object XResourceBundleLoader {
     
@@ -639,8 +643,9 @@ object resource {
     * It's designed to be used in the context of creating a string table, e.g. from a string table editor or from a Dialog Editor designing localized
     * dialogs.
     */
-  @js.native
-  trait XStringResourceManager extends XStringResourceResolver {
+  trait XStringResourceManager
+    extends StObject
+       with XStringResourceResolver {
     
     /**
       * Provides a numeric id that is unique within all Resource IDs used in the string table.
@@ -659,7 +664,7 @@ object resource {
       * implementation to load all locale data that may not have been loaded so far.
       * @throws com::sun::star::lang::NoSupportException if the next available id exceeds the range of type long. So it's not recommended to use own Resource IDs
       */
-    val UniqueNumericId: Double = js.native
+    val UniqueNumericId: Double
     
     /**
       * Provides a numeric id that is unique within all Resource IDs used in the string table.
@@ -678,13 +683,13 @@ object resource {
       * implementation to load all locale data that may not have been loaded so far.
       * @throws com::sun::star::lang::NoSupportException if the next available id exceeds the range of type long. So it's not recommended to use own Resource IDs
       */
-    def getUniqueNumericId(): Double = js.native
+    def getUniqueNumericId(): Double
     
     /**
       * Returns the resource's read only state
       * @returns `TRUE` if the resource is read only, otherwise `FALSE`
       */
-    def isReadOnly(): Boolean = js.native
+    def isReadOnly(): Boolean
     
     /**
       * Creates a new locale.
@@ -695,7 +700,7 @@ object resource {
       * @throws com::sun::star::lang::IllegalArgumentException if the Locale is not valid.
       * @throws com::sun::star::lang::NoSupportException if the resource is read only, see {@link isReadOnly()}
       */
-    def newLocale(locale: Locale): Unit = js.native
+    def newLocale(locale: Locale): Unit
     
     /**
       * Removes a Resource ID including the corresponding string for the current locale.
@@ -703,7 +708,7 @@ object resource {
       * @throws com::sun::star::resource::MissingResourceException if the Resource ID is not valid.
       * @throws com::sun::star::lang::NoSupportException if the resource is read only, see {@link isReadOnly()}
       */
-    def removeId(ResourceID: String): Unit = js.native
+    def removeId(ResourceID: String): Unit
     
     /**
       * Removes a Resource ID including the corresponding string for s specific locale.
@@ -712,28 +717,28 @@ object resource {
       * @throws com::sun::star::resource::MissingResourceException if the Resource ID is not valid.
       * @throws com::sun::star::lang::NoSupportException if the resource is read only, see {@link isReadOnly()}
       */
-    def removeIdForLocale(ResourceID: String, locale: Locale): Unit = js.native
+    def removeIdForLocale(ResourceID: String, locale: Locale): Unit
     
     /**
       * Removes a locale completely including the corresponding strings for each locale.
       * @throws com::sun::star::lang::IllegalArgumentException if the Locale to be removed is not supported.
       * @throws com::sun::star::lang::NoSupportException if the resource is read only, see {@link isReadOnly()}
       */
-    def removeLocale(locale: Locale): Unit = js.native
+    def removeLocale(locale: Locale): Unit
     
     /**
       * Sets the locale to be used
       * @param Locale Specifies the current locale to be used.
       * @param FindClosestMatch  If true: If the exact locale that should be set is not available the method tries to find the closest match. E.g. if en_US is r
       */
-    def setCurrentLocale(Locale: Locale, FindClosestMatch: Boolean): Unit = js.native
+    def setCurrentLocale(Locale: Locale, FindClosestMatch: Boolean): Unit
     
     /**
       * Sets the default locale to be used
       * @param Locale Specifies the default locale to be used. If this locale is not available a {@link com.sun.star.lang.IllegalArgumentException} is thrown.
       * @throws com::sun::star::lang::NoSupportException if the resource is read only, see {@link isReadOnly()}
       */
-    def setDefaultLocale(Locale: Locale): Unit = js.native
+    def setDefaultLocale(Locale: Locale): Unit
     
     /**
       * Associates a String to a Resource ID for the current locale. If an entry for the Resource ID already exists, the string associated with it will be
@@ -742,7 +747,7 @@ object resource {
       * @param Str String to be associated with the Resource ID.
       * @throws com::sun::star::lang::NoSupportException if the resource is read only, see {@link isReadOnly()}
       */
-    def setString(ResourceID: String, Str: String): Unit = js.native
+    def setString(ResourceID: String, Str: String): Unit
     
     /**
       * Associates a String to a Resource ID for a specific locale. If an entry for the Resource ID already exists, the string associated with it will be
@@ -754,7 +759,7 @@ object resource {
       * @param locale The locale the string should be set for. The locale has to match exactly with one of the locales provided by {@link getLocales()} . A clos
       * @throws com::sun::star::lang::NoSupportException if the resource is read only, see {@link isReadOnly()}
       */
-    def setStringForLocale(ResourceID: String, Str: String, locale: Locale): Unit = js.native
+    def setStringForLocale(ResourceID: String, Str: String, locale: Locale): Unit
   }
   object XStringResourceManager {
     
@@ -837,8 +842,9 @@ object resource {
     * associated location or storage.
     * @see XStringResourceManager.
     */
-  @js.native
-  trait XStringResourcePersistence extends XStringResourceManager {
+  trait XStringResourcePersistence
+    extends StObject
+       with XStringResourceManager {
     
     /**
       * Returns a sequence of byte representing the complete string resource in a binary format.
@@ -849,7 +855,7 @@ object resource {
       * See {@link importBinary()} ).
       * @returns a sequence of byte representing the string resource.
       */
-    def exportBinary(): SafeArray[Double] = js.native
+    def exportBinary(): SafeArray[Double]
     
     /**
       * Initializes the string resource with binary data. This method expects the data format returned by {@link exportBinary()} .
@@ -863,13 +869,13 @@ object resource {
       * See {@link importBinary()} ).
       * @throws com::sun::star::lang::IllegalArgumentException if Data is empty or does not meet the binary format returned by the current or earlier version of
       */
-    def importBinary(Data: SeqEquiv[Double]): Unit = js.native
+    def importBinary(Data: SeqEquiv[Double]): Unit
     
     /**
       * provides the current modify state of the StringResourceManager instance.
       * @returns `TRUE` if the string table has changed since the last call to {@link store()} or, if supported `XStringResourceWithStorage::storeAsStorage` . `FA
       */
-    def isModified(): Boolean = js.native
+    def isModified(): Boolean
     
     /**
       * Sets the comment stored first in each locale data file.
@@ -878,7 +884,7 @@ object resource {
       * StringResourceWithStorage}
       * @param Comment Comment stored first in each properties file followed by a line feed character. The line feed character is added automatically and hasn't
       */
-    def setComment(Comment: String): Unit = js.native
+    def setComment(Comment: String): Unit
     
     /**
       * Stores all string table data respectively all data modified since the last call to {@link store()} to the location or storage associated with the
@@ -900,7 +906,7 @@ object resource {
       * {@link StringResourceWithLocation} .
       * @throws com::sun::star::lang::NoSupportException if no URL or no valid storage are provided.
       */
-    def store(): Unit = js.native
+    def store(): Unit
     
     /**
       * Stores all string table data to the provided storage.
@@ -914,7 +920,7 @@ object resource {
       * @param BaseName Base string for the file names used to store the locale data. The locale data is stored in Java properties files also following the corr
       * @param Comment Comment stored first in each properties file, for a detailed description see {@link setComment()} . This method can throw all exceptions
       */
-    def storeToStorage(Storage: XStorage, BaseName: String, Comment: String): Unit = js.native
+    def storeToStorage(Storage: XStorage, BaseName: String, Comment: String): Unit
     
     /**
       * Stores all string table data to the location specified by the passed URL string.
@@ -929,7 +935,7 @@ object resource {
       * @param Handler a {@link com.sun.star.task.XInteractionHandler} . It will be passed to ucb handle exceptions. Exceptions not processed by this handler wi
       * @see com.sun.star.task.InteractionHandler
       */
-    def storeToURL(URL: String, BaseName: String, Comment: String, Handler: XInteractionHandler): Unit = js.native
+    def storeToURL(URL: String, BaseName: String, Comment: String, Handler: XInteractionHandler): Unit
   }
   object XStringResourcePersistence {
     
@@ -1012,8 +1018,9 @@ object resource {
     * com.sun.star.resource.XStringResourceManager} and is used in the design mode of a Dialog or String table editor. But also changing the locale at
     * runtime can be supported in this way.
     */
-  @js.native
-  trait XStringResourceResolver extends XModifyBroadcaster {
+  trait XStringResourceResolver
+    extends StObject
+       with XModifyBroadcaster {
     
     /**
       * Returns the current locale specified in the accessed resource.
@@ -1021,25 +1028,25 @@ object resource {
       * If no locale is available, the returned Locale structure only contains empty strings.
       * @returns the used locale
       */
-    val CurrentLocale: Locale = js.native
+    val CurrentLocale: Locale
     
     /**
       * Returns the default locale of the accessed resource. In many cases this will be the locale of the Office initially used to create the resource.
       * @returns the used locale
       */
-    val DefaultLocale: Locale = js.native
+    val DefaultLocale: Locale
     
     /**
       * Returns a sequence of all supported locales
       * @returns a sequence of all supported locales
       */
-    val Locales: SafeArray[Locale] = js.native
+    val Locales: SafeArray[Locale]
     
     /**
       * Returns a sequence of all valid Resource IDs for the current locale
       * @returns a sequence of all valid Resource IDs
       */
-    val ResourceIDs: SafeArray[String] = js.native
+    val ResourceIDs: SafeArray[String]
     
     /**
       * Returns the current locale specified in the accessed resource.
@@ -1047,25 +1054,25 @@ object resource {
       * If no locale is available, the returned Locale structure only contains empty strings.
       * @returns the used locale
       */
-    def getCurrentLocale(): Locale = js.native
+    def getCurrentLocale(): Locale
     
     /**
       * Returns the default locale of the accessed resource. In many cases this will be the locale of the Office initially used to create the resource.
       * @returns the used locale
       */
-    def getDefaultLocale(): Locale = js.native
+    def getDefaultLocale(): Locale
     
     /**
       * Returns a sequence of all supported locales
       * @returns a sequence of all supported locales
       */
-    def getLocales(): SafeArray[Locale] = js.native
+    def getLocales(): SafeArray[Locale]
     
     /**
       * Returns a sequence of all valid Resource IDs for the current locale
       * @returns a sequence of all valid Resource IDs
       */
-    def getResourceIDs(): SafeArray[String] = js.native
+    def getResourceIDs(): SafeArray[String]
     
     /**
       * Returns a sequence of all valid Resource IDs for a specific locale
@@ -1074,14 +1081,14 @@ object resource {
       * @param locale The locale the ResourceIDs should be returned for. The locale has to match exactly with one of the locales provided by {@link getLocales()
       * @returns a sequence of all valid Resource IDs
       */
-    def getResourceIDsForLocale(locale: Locale): SafeArray[String] = js.native
+    def getResourceIDsForLocale(locale: Locale): SafeArray[String]
     
     /**
       * Checks if the resource contains an entry for the given ResourceID and current locale.
       * @param ResourceID ID to specify the string inside the resource.
       * @returns `TRUE` if an entry exists, otherwise `FALSE`
       */
-    def hasEntryForId(ResourceID: String): Boolean = js.native
+    def hasEntryForId(ResourceID: String): Boolean
     
     /**
       * Checks if the resource contains an entry for the given ResourceID and locale.
@@ -1091,7 +1098,7 @@ object resource {
       * @param locale The locale the entry should be checked for. The locale has to match exactly with one of the locales provided by {@link getLocales()} . A c
       * @returns `TRUE` if an entry exists, otherwise `FALSE`
       */
-    def hasEntryForIdAndLocale(ResourceID: String, locale: Locale): Boolean = js.native
+    def hasEntryForIdAndLocale(ResourceID: String, locale: Locale): Boolean
     
     /**
       * Resolves the passed ResoureID for the current locale. This locale is set during initialization of the object implementing this interface or - in case
@@ -1100,7 +1107,7 @@ object resource {
       * @returns the localized string for the specified ID
       * @throws com::sun::star::resource::MissingResourceException if no entry exists for the given ResourceID
       */
-    def resolveString(ResourceID: String): String = js.native
+    def resolveString(ResourceID: String): String
     
     /**
       * Resolves the passed ResoureID for a specific locale.
@@ -1111,7 +1118,7 @@ object resource {
       * @returns the localized string for the specified ID and Locale
       * @throws com::sun::star::resource::MissingResourceException if no entry exists for the given ResourceID or locale
       */
-    def resolveStringForLocale(ResourceID: String, locale: Locale): String = js.native
+    def resolveStringForLocale(ResourceID: String, locale: Locale): String
   }
   object XStringResourceResolver {
     
@@ -1185,8 +1192,9 @@ object resource {
   }
   
   /** Provides access to a string resource represented by a {@link com.sun.star.resource.XStringResourceResolver} . */
-  @js.native
-  trait XStringResourceSupplier extends XInterface {
+  trait XStringResourceSupplier
+    extends StObject
+       with XInterface {
     
     /**
       * Provides access to a string resource. Depending on the context the returned object may also support {@link
@@ -1194,7 +1202,7 @@ object resource {
       * com.sun.star.resource.XStringResourceWithStorage}
       * @returns an interface {@link com.sun.star.resource.XStringResourceResolver}
       */
-    val StringResource: XStringResourceResolver = js.native
+    val StringResource: XStringResourceResolver
     
     /**
       * Provides access to a string resource. Depending on the context the returned object may also support {@link
@@ -1202,7 +1210,7 @@ object resource {
       * com.sun.star.resource.XStringResourceWithStorage}
       * @returns an interface {@link com.sun.star.resource.XStringResourceResolver}
       */
-    def getStringResource(): XStringResourceResolver = js.native
+    def getStringResource(): XStringResourceResolver
   }
   object XStringResourceSupplier {
     
@@ -1233,8 +1241,9 @@ object resource {
     * Extends {@link XStringResourcePersistence} by methods to handle an associated location.
     * @see XStringResourcePersistence.
     */
-  @js.native
-  trait XStringResourceWithLocation extends XStringResourcePersistence {
+  trait XStringResourceWithLocation
+    extends StObject
+       with XStringResourcePersistence {
     
     /**
       * Associates a location to the {@link StringResourceWithStorage} instance which is used on subsequent calls of {@link store()} .
@@ -1242,14 +1251,14 @@ object resource {
       * @throws com::sun::star::lang::IllegalArgumentException if an empty string is passed as URL
       * @throws com::sun::star::lang::NoSupportException if the location is readonly
       */
-    def setURL(URL: String): Unit = js.native
+    def setURL(URL: String): Unit
     
     /**
       * Stores all string table data to a location and associates this location to this instance as if setLocation() was called with this location. The
       * modified state will be unmodified after the call.
       * @param URL the location the string table data should be stored to.
       */
-    def storeAsURL(URL: String): Unit = js.native
+    def storeAsURL(URL: String): Unit
   }
   object XStringResourceWithLocation {
     
@@ -1313,15 +1322,16 @@ object resource {
     * Extends {@link XStringResourcePersistence} by methods to handle an associated {@link com.sun.star.embed.XStorage} instance.
     * @see XStringResourcePersistence.
     */
-  @js.native
-  trait XStringResourceWithStorage extends XStringResourcePersistence {
+  trait XStringResourceWithStorage
+    extends StObject
+       with XStringResourcePersistence {
     
     /**
       * Associates a storage to the {@link StringResourceWithStorage} instance which is used on subsequent calls of {@link store()} .
       * @param Storage the storage to be associated to the StringResourceManager  This call has to be used carefully as it removes the storage previously connec
       * @throws com::sun::star::lang::IllegalArgumentException if a null interface is passed as Storage
       */
-    def setStorage(Storage: XStorage): Unit = js.native
+    def setStorage(Storage: XStorage): Unit
     
     /**
       * Stores all string table data to a storage and associates this storage to this instance as if {@link setStorage()} was called with this storage. The
@@ -1329,7 +1339,7 @@ object resource {
       *
       * This method can throw all exceptions thrown by the methods of {@link com.sun.star.embed.XStorage}
       */
-    def storeAsStorage(Storage: XStorage): Unit = js.native
+    def storeAsStorage(Storage: XStorage): Unit
   }
   object XStringResourceWithStorage {
     

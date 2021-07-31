@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fitness/v1", "fitness_v1.Resource$Users$Dataset")
@@ -32,7 +31,7 @@ class ResourceUsersDataset protected () extends StObject {
     */
   def aggregate(): GaxiosPromise[SchemaAggregateResponse] = js.native
   def aggregate(callback: BodyResponseCallback[SchemaAggregateResponse]): Unit = js.native
-  def aggregate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAggregateResponse] = js.native
+  def aggregate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAggregateResponse] = js.native
   def aggregate(params: ParamsResourceUsersDatasetAggregate): GaxiosPromise[SchemaAggregateResponse] = js.native
   def aggregate(
     params: ParamsResourceUsersDatasetAggregate,

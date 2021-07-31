@@ -4,13 +4,11 @@ import typings.qlikEngineapi.qlikEngineapiStrings.Utf16
 import typings.qlikEngineapi.qlikEngineapiStrings.Utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchCombinationOptions...
   */
-@js.native
 trait ISearchCombinationOptions extends StObject {
   
   /**
@@ -20,13 +18,13 @@ trait ISearchCombinationOptions extends StObject {
     * It allows the user to request details in the outputted SearchGroupItemMatch.
     * For more information, see SearchGroupItemMatch
     */
-  var qAttributes: js.UndefOr[js.Array[String]] = js.native
+  var qAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Encoding used to compute qRanges of type SearchCharRange.
     * Possible values: Utf8 (default), Utf16
     */
-  var qCharEncoding: Utf8 | Utf16 = js.native
+  var qCharEncoding: Utf8 | Utf16
   
   /**
     * Search context.
@@ -46,13 +44,13 @@ trait ISearchCombinationOptions extends StObject {
     *   in the values of the app. New selections are made on top of the current selections. If no selections were
     *   made before the search, this mode is identical to the Cleared context.
     */
-  var qContext: ContextType = js.native
+  var qContext: ContextType
   
   /**
     * List of the search fields.
     * If empty, the search is performed in all fields of the app.
     */
-  var qSearchFields: js.Array[String] = js.native
+  var qSearchFields: js.Array[String]
 }
 object ISearchCombinationOptions {
   

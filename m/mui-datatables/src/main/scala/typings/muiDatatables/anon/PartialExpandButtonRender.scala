@@ -12,30 +12,28 @@ import typings.muiDatatables.mod.RenderCustomComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  ExpandButton :mui-datatables.mui-datatables.RenderCustomComponent<mui-datatables.mui-datatables.MUIDataTableExpandButton> | react.react.ReactNode,   TableBody :mui-datatables.mui-datatables.RenderCustomComponent<mui-datatables.mui-datatables.MUIDataTableBody> | react.react.ReactNode,   TableFooter :mui-datatables.mui-datatables.RenderCustomComponent<mui-datatables.mui-datatables.MUIDataTableFooter> | react.react.ReactNode,   TableHead :mui-datatables.mui-datatables.RenderCustomComponent<mui-datatables.mui-datatables.MUIDataTableHead> | react.react.ReactNode,   TableResize :mui-datatables.mui-datatables.RenderCustomComponent<mui-datatables.mui-datatables.MUIDataTableResize> | react.react.ReactNode,   TableToolbar :mui-datatables.mui-datatables.RenderCustomComponent<mui-datatables.mui-datatables.MUIDataTableToolbar> | react.react.ReactNode,   TableToolbarSelect :mui-datatables.mui-datatables.RenderCustomComponent<mui-datatables.mui-datatables.MUIDataTableToolbarSelect> | react.react.ReactNode,   TableFilterList :mui-datatables.mui-datatables.RenderCustomComponent<mui-datatables.mui-datatables.MUIDataTableFilterList> | react.react.ReactNode,   Tooltip :react.react.ReactNode}> */
-@js.native
 trait PartialExpandButtonRender extends StObject {
   
-  var ExpandButton: js.UndefOr[RenderCustomComponent[MUIDataTableExpandButton] | ReactNode] = js.native
+  var ExpandButton: js.UndefOr[RenderCustomComponent[MUIDataTableExpandButton] | ReactNode] = js.undefined
   
-  var TableBody: js.UndefOr[RenderCustomComponent[MUIDataTableBody] | ReactNode] = js.native
+  var TableBody: js.UndefOr[RenderCustomComponent[MUIDataTableBody] | ReactNode] = js.undefined
   
-  var TableFilterList: js.UndefOr[RenderCustomComponent[MUIDataTableFilterList] | ReactNode] = js.native
+  var TableFilterList: js.UndefOr[RenderCustomComponent[MUIDataTableFilterList] | ReactNode] = js.undefined
   
-  var TableFooter: js.UndefOr[RenderCustomComponent[MUIDataTableFooter] | ReactNode] = js.native
+  var TableFooter: js.UndefOr[RenderCustomComponent[MUIDataTableFooter] | ReactNode] = js.undefined
   
-  var TableHead: js.UndefOr[RenderCustomComponent[MUIDataTableHead] | ReactNode] = js.native
+  var TableHead: js.UndefOr[RenderCustomComponent[MUIDataTableHead] | ReactNode] = js.undefined
   
-  var TableResize: js.UndefOr[RenderCustomComponent[MUIDataTableResize] | ReactNode] = js.native
+  var TableResize: js.UndefOr[RenderCustomComponent[MUIDataTableResize] | ReactNode] = js.undefined
   
-  var TableToolbar: js.UndefOr[RenderCustomComponent[MUIDataTableToolbar] | ReactNode] = js.native
+  var TableToolbar: js.UndefOr[RenderCustomComponent[MUIDataTableToolbar] | ReactNode] = js.undefined
   
-  var TableToolbarSelect: js.UndefOr[RenderCustomComponent[MUIDataTableToolbarSelect] | ReactNode] = js.native
+  var TableToolbarSelect: js.UndefOr[RenderCustomComponent[MUIDataTableToolbarSelect] | ReactNode] = js.undefined
   
-  var Tooltip: js.UndefOr[ReactNode] = js.native
+  var Tooltip: js.UndefOr[ReactNode] = js.undefined
 }
 object PartialExpandButtonRender {
   

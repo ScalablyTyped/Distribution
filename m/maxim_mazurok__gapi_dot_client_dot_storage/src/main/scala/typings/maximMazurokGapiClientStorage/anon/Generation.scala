@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Generation extends StObject {
   
   /** The generation of this object to use as the source. */
-  var generation: js.UndefOr[String] = js.native
+  var generation: js.UndefOr[String] = js.undefined
   
   /** The source object's name. All source objects must reside in the same bucket. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Conditions that must be met for this operation to execute. */
-  var objectPreconditions: js.UndefOr[IfGenerationMatch] = js.native
+  var objectPreconditions: js.UndefOr[IfGenerationMatch] = js.undefined
 }
 object Generation {
   

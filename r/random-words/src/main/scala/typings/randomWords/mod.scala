@@ -3,23 +3,18 @@ package typings.randomWords
 import typings.randomWords.anon.Optionsjoinstring
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("random-words", JSImport.Namespace)
-  @js.native
-  def apply(): String = js.native
-  @JSImport("random-words", JSImport.Namespace)
-  @js.native
-  def apply(options: Double): String | js.Array[String] = js.native
-  @JSImport("random-words", JSImport.Namespace)
-  @js.native
-  def apply(options: Optionsjoinstring): String = js.native
-  @JSImport("random-words", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): String | js.Array[String] = js.native
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(options: Double): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
+  @scala.inline
+  def apply(options: Optionsjoinstring): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(options: Options): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
   
   @JSImport("random-words", JSImport.Namespace)
   @js.native
@@ -31,24 +26,23 @@ object mod {
   @scala.inline
   def wordList_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wordList")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
-    var exactly: js.UndefOr[Double] = js.native
+    var exactly: js.UndefOr[Double] = js.undefined
     
-    var formatter: js.UndefOr[WordFormatter] = js.native
+    var formatter: js.UndefOr[WordFormatter] = js.undefined
     
-    var join: js.UndefOr[String] = js.native
+    var join: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var wordsPerString: js.UndefOr[Double] = js.native
+    var wordsPerString: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

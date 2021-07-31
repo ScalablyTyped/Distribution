@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientInfoDetail extends StObject {
   
   /** Required. The key of detailed client information. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Required. The value of detailed client information. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ClientInfoDetail {
   

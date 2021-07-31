@@ -2,23 +2,21 @@ package typings.jqueryDrawer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryDrawerClassOptions extends StObject {
   
-  var close: js.UndefOr[String] = js.native
+  var close: js.UndefOr[String] = js.undefined
   
-  var dropdown: js.UndefOr[String] = js.native
+  var dropdown: js.UndefOr[String] = js.undefined
   
-  var nav: js.UndefOr[String] = js.native
+  var nav: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[String] = js.native
+  var open: js.UndefOr[String] = js.undefined
   
-  var overlay: js.UndefOr[String] = js.native
+  var overlay: js.UndefOr[String] = js.undefined
   
-  var toggle: js.UndefOr[String] = js.native
+  var toggle: js.UndefOr[String] = js.undefined
 }
 object JQueryDrawerClassOptions {
   

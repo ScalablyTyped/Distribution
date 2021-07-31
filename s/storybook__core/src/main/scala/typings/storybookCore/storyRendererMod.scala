@@ -21,7 +21,6 @@ import typings.storybookCore.storybookCoreStrings.padded
 import typings.storybookCore.typesMod.RenderStoryFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storyRendererMod {
@@ -54,7 +53,7 @@ object storyRendererMod {
     
     def renderException(err: Error): Unit = js.native
     
-    def renderStory(hasContextContext: ContextRenderContextWithoutStoryContext): js.Promise[Unit] = js.native
+    def renderStory(hasContextHasIdGetDecorated: ContextRenderContextWithoutStoryContext): js.Promise[Unit] = js.native
     
     def renderStoryIfChanged(hasMetadataContext: Context): js.Promise[Unit] = js.native
     
@@ -81,21 +80,20 @@ object storyRendererMod {
   */
   trait Layout extends StObject
   
-  @js.native
   trait RenderMetadata extends StObject {
     
-    def getDecorated(): StoryFn[_] = js.native
+    def getDecorated(): StoryFn[js.Any]
     
-    var id: StoryId = js.native
+    var id: StoryId
     
-    var kind: StoryKind = js.native
+    var kind: StoryKind
     
-    var viewMode: ViewMode = js.native
+    var viewMode: ViewMode
   }
   object RenderMetadata {
     
     @scala.inline
-    def apply(getDecorated: () => StoryFn[_], id: StoryId, kind: StoryKind, viewMode: ViewMode): RenderMetadata = {
+    def apply(getDecorated: () => StoryFn[js.Any], id: StoryId, kind: StoryKind, viewMode: ViewMode): RenderMetadata = {
       val __obj = js.Dynamic.literal(getDecorated = js.Any.fromFunction0(getDecorated), id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderMetadata]
     }
@@ -104,7 +102,7 @@ object storyRendererMod {
     implicit class RenderMetadataMutableBuilder[Self <: RenderMetadata] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetDecorated(value: () => StoryFn[_]): Self = StObject.set(x, "getDecorated", js.Any.fromFunction0(value))
+      def setGetDecorated(value: () => StoryFn[js.Any]): Self = StObject.set(x, "getDecorated", js.Any.fromFunction0(value))
       
       @scala.inline
       def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

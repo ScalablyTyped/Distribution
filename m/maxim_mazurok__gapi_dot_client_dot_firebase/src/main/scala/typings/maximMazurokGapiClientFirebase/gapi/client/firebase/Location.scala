@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /** Products and services that are available in the GCP resource location. */
-  var features: js.UndefOr[js.Array[String]] = js.native
+  var features: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The ID of the GCP resource location. It will be one of the available [GCP resource locations](https://firebase.google.com/docs/projects/locations#types). */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /** Indicates whether the GCP resource location is a [regional or multi-regional location](https://firebase.google.com/docs/projects/locations#types) for data replication. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Location {
   

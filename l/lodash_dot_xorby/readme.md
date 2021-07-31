@@ -11,8 +11,8 @@ The lodash method `_.xorBy` exported as a module.
 | Full name          | lodash.xorby |
 | Keywords           | lodash-modularized, xorby |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 17269384 |
+| # dependents       | 8 |
+| # downloads        | 26011507 |
 | # stars            | 0 |
 
 ## Links

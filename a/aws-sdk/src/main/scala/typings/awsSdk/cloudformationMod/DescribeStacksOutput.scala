@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStacksOutput extends StObject {
   
   /**
     * If the output exceeds 1 MB in size, a string that identifies the next page of stacks. If no additional page exists, this value is null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
     * A list of stack structures.
     */
-  var Stacks: js.UndefOr[typings.awsSdk.cloudformationMod.Stacks] = js.native
+  var Stacks: js.UndefOr[typings.awsSdk.cloudformationMod.Stacks] = js.undefined
 }
 object DescribeStacksOutput {
   

@@ -2,19 +2,17 @@ package typings.isMyJsonValid.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationError extends StObject {
   
-  var field: String = js.native
+  var field: String
   
-  var message: String = js.native
+  var message: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ValidationError {
   

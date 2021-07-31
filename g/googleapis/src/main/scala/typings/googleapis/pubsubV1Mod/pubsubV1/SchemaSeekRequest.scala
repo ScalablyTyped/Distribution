@@ -2,13 +2,11 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the `Seek` method.
   */
-@js.native
 trait SchemaSeekRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaSeekRequest extends StObject {
     * that of the provided subscription. Format is
     * `projects/{project}/snapshots/{snap}`.
     */
-  var snapshot: js.UndefOr[String] = js.native
+  var snapshot: js.UndefOr[String] = js.undefined
   
   /**
     * The time to seek to. Messages retained in the subscription that were
@@ -30,7 +28,7 @@ trait SchemaSeekRequest extends StObject {
     * time), only retained messages will be marked as unacknowledged, and
     * already-expunged messages will not be restored.
     */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
 }
 object SchemaSeekRequest {
   

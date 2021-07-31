@@ -2,14 +2,12 @@ package typings.naverWhale.whale.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabWindowInfo extends StObject {
   
   /** The ID of the window of where the tab is located. */
-  var windowId: Double = js.native
+  var windowId: Double
 }
 object TabWindowInfo {
   

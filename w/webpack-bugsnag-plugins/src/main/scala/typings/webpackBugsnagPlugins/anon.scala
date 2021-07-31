@@ -8,21 +8,19 @@ import typings.webpackBugsnagPlugins.webpackBugsnagPluginsStrings.github
 import typings.webpackBugsnagPlugins.webpackBugsnagPluginsStrings.gitlab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Debug extends StObject {
     
-    var debug: js.UndefOr[js.Any] = js.native
+    var debug: js.UndefOr[js.Any] = js.undefined
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var info: js.UndefOr[js.Any] = js.native
+    var info: js.UndefOr[js.Any] = js.undefined
     
-    var warn: js.UndefOr[js.Any] = js.native
+    var warn: js.UndefOr[js.Any] = js.undefined
   }
   object Debug {
     
@@ -61,24 +59,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Provider extends StObject {
     
     /**
       *  The source control provider.
       */
-    var provider: github | `github-enterprise` | gitlab | `gitlab-onpremise` | bitbucket | `bitbucket-server` = js.native
+    var provider: github | `github-enterprise` | gitlab | `gitlab-onpremise` | bitbucket | `bitbucket-server`
     
     /**
       * A URL (git/ssh/https) pointing to the repository, or webpage representing
       * the repository
       */
-    var repository: String = js.native
+    var repository: String
     
     /**
       * The unique identifier for the commit (e.g. git SHA)
       */
-    var revision: String = js.native
+    var revision: String
   }
   object Provider {
     

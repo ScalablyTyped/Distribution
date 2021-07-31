@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p4beta1LocationInfo extends StObject {
   
   /** lat/long location coordinates. */
-  var latLng: js.UndefOr[LatLng] = js.native
+  var latLng: js.UndefOr[LatLng] = js.undefined
 }
 object GoogleCloudVisionV1p4beta1LocationInfo {
   

@@ -2,17 +2,15 @@ package typings.jointjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connection extends StObject {
   
-  var connection: js.UndefOr[String] = js.native
+  var connection: js.UndefOr[String] = js.undefined
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
 }
 object Connection {
   

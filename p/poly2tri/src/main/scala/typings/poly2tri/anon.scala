@@ -3,17 +3,15 @@ package typings.poly2tri
 import typings.poly2tri.mod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Max extends StObject {
     
-    var max: Point = js.native
+    var max: Point
     
-    var min: Point = js.native
+    var min: Point
   }
   object Max {
     

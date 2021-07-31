@@ -2,99 +2,97 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrdersCustomBatchRequestEntry extends StObject {
   
   /**
     * An entry ID, unique within the batch request.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * Required for cancel method.
     */
-  var cancel: js.UndefOr[SchemaOrdersCustomBatchRequestEntryCancel] = js.native
+  var cancel: js.UndefOr[SchemaOrdersCustomBatchRequestEntryCancel] = js.undefined
   
   /**
     * Required for cancelLineItem method.
     */
-  var cancelLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryCancelLineItem] = js.native
+  var cancelLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryCancelLineItem] = js.undefined
   
   /**
     * Required for inStoreReturnLineItem method.
     */
-  var inStoreRefundLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryInStoreRefundLineItem] = js.native
+  var inStoreRefundLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryInStoreRefundLineItem] = js.undefined
   
   /**
     * The ID of the managing account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /**
     * The merchant order ID. Required for updateMerchantOrderId and
     * getByMerchantOrderId methods.
     */
-  var merchantOrderId: js.UndefOr[String] = js.native
+  var merchantOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * The method to apply.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the operation. Unique across all operations for a given order.
     * Required for all methods beside get and getByMerchantOrderId.
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the order. Required for all methods beside
     * getByMerchantOrderId.
     */
-  var orderId: js.UndefOr[String] = js.native
+  var orderId: js.UndefOr[String] = js.undefined
   
   /**
     * Required for refund method.
     */
-  var refund: js.UndefOr[SchemaOrdersCustomBatchRequestEntryRefund] = js.native
+  var refund: js.UndefOr[SchemaOrdersCustomBatchRequestEntryRefund] = js.undefined
   
   /**
     * Required for rejectReturnLineItem method.
     */
-  var rejectReturnLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryRejectReturnLineItem] = js.native
+  var rejectReturnLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryRejectReturnLineItem] = js.undefined
   
   /**
     * Required for returnLineItem method.
     */
-  var returnLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryReturnLineItem] = js.native
+  var returnLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryReturnLineItem] = js.undefined
   
   /**
     * Required for returnRefundLineItem method.
     */
-  var returnRefundLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryReturnRefundLineItem] = js.native
+  var returnRefundLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryReturnRefundLineItem] = js.undefined
   
   /**
     * Required for setLineItemMetadata method.
     */
-  var setLineItemMetadata: js.UndefOr[SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata] = js.native
+  var setLineItemMetadata: js.UndefOr[SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata] = js.undefined
   
   /**
     * Required for shipLineItems method.
     */
-  var shipLineItems: js.UndefOr[SchemaOrdersCustomBatchRequestEntryShipLineItems] = js.native
+  var shipLineItems: js.UndefOr[SchemaOrdersCustomBatchRequestEntryShipLineItems] = js.undefined
   
   /**
     * Required for updateLineItemShippingDate method.
     */
-  var updateLineItemShippingDetails: js.UndefOr[SchemaOrdersCustomBatchRequestEntryUpdateLineItemShippingDetails] = js.native
+  var updateLineItemShippingDetails: js.UndefOr[SchemaOrdersCustomBatchRequestEntryUpdateLineItemShippingDetails] = js.undefined
   
   /**
     * Required for updateShipment method.
     */
-  var updateShipment: js.UndefOr[SchemaOrdersCustomBatchRequestEntryUpdateShipment] = js.native
+  var updateShipment: js.UndefOr[SchemaOrdersCustomBatchRequestEntryUpdateShipment] = js.undefined
 }
 object SchemaOrdersCustomBatchRequestEntry {
   

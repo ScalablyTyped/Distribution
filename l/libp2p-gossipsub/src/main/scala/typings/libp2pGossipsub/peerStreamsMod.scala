@@ -6,43 +6,41 @@ import typings.peerId.mod.^
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peerStreamsMod {
   
-  @js.native
   trait PeerStreams extends StObject {
     
-    def attachInboundConnection(stream: DuplexIterableStream[_, _, _]): Unit = js.native
+    def attachInboundConnection(stream: DuplexIterableStream[js.Any, js.Any, js.Any]): Unit
     
-    def attachOutboundConnection(stream: DuplexIterableStream[_, _, _]): js.Promise[Unit] = js.native
+    def attachOutboundConnection(stream: DuplexIterableStream[js.Any, js.Any, js.Any]): js.Promise[Unit]
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    var id: ^ = js.native
+    var id: ^
     
-    var inboundStream: DuplexIterableStream[_, _, _] = js.native
+    var inboundStream: DuplexIterableStream[js.Any, js.Any, js.Any]
     
-    val isReadable: Boolean = js.native
+    val isReadable: Boolean
     
-    val isWritable: Boolean = js.native
+    val isWritable: Boolean
     
-    var outboundStream: Pushable[Uint8Array] = js.native
+    var outboundStream: Pushable[Uint8Array]
     
-    var protocol: String = js.native
+    var protocol: String
     
-    def write(buf: Uint8Array): Unit = js.native
+    def write(buf: Uint8Array): Unit
   }
   object PeerStreams {
     
     @scala.inline
     def apply(
-      attachInboundConnection: DuplexIterableStream[_, _, _] => Unit,
-      attachOutboundConnection: DuplexIterableStream[_, _, _] => js.Promise[Unit],
+      attachInboundConnection: DuplexIterableStream[js.Any, js.Any, js.Any] => Unit,
+      attachOutboundConnection: DuplexIterableStream[js.Any, js.Any, js.Any] => js.Promise[Unit],
       close: () => Unit,
       id: ^,
-      inboundStream: DuplexIterableStream[_, _, _],
+      inboundStream: DuplexIterableStream[js.Any, js.Any, js.Any],
       isReadable: Boolean,
       isWritable: Boolean,
       outboundStream: Pushable[Uint8Array],
@@ -57,10 +55,10 @@ object peerStreamsMod {
     implicit class PeerStreamsMutableBuilder[Self <: PeerStreams] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAttachInboundConnection(value: DuplexIterableStream[_, _, _] => Unit): Self = StObject.set(x, "attachInboundConnection", js.Any.fromFunction1(value))
+      def setAttachInboundConnection(value: DuplexIterableStream[js.Any, js.Any, js.Any] => Unit): Self = StObject.set(x, "attachInboundConnection", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setAttachOutboundConnection(value: DuplexIterableStream[_, _, _] => js.Promise[Unit]): Self = StObject.set(x, "attachOutboundConnection", js.Any.fromFunction1(value))
+      def setAttachOutboundConnection(value: DuplexIterableStream[js.Any, js.Any, js.Any] => js.Promise[Unit]): Self = StObject.set(x, "attachOutboundConnection", js.Any.fromFunction1(value))
       
       @scala.inline
       def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
@@ -69,7 +67,7 @@ object peerStreamsMod {
       def setId(value: ^): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInboundStream(value: DuplexIterableStream[_, _, _]): Self = StObject.set(x, "inboundStream", value.asInstanceOf[js.Any])
+      def setInboundStream(value: DuplexIterableStream[js.Any, js.Any, js.Any]): Self = StObject.set(x, "inboundStream", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIsReadable(value: Boolean): Self = StObject.set(x, "isReadable", value.asInstanceOf[js.Any])

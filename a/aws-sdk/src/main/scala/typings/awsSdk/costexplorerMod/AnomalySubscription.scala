@@ -2,46 +2,44 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnomalySubscription extends StObject {
   
   /**
     *  Your unique account identifier. 
     */
-  var AccountId: js.UndefOr[GenericString] = js.native
+  var AccountId: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The frequency at which anomaly reports are sent over email. 
     */
-  var Frequency: AnomalySubscriptionFrequency = js.native
+  var Frequency: AnomalySubscriptionFrequency
   
   /**
     *  A list of cost anomaly monitors. 
     */
-  var MonitorArnList: Values = js.native
+  var MonitorArnList: Values
   
   /**
     *  A list of subscribers to notify. 
     */
-  var Subscribers: typings.awsSdk.costexplorerMod.Subscribers = js.native
+  var Subscribers: typings.awsSdk.costexplorerMod.Subscribers
   
   /**
     *  The AnomalySubscription Amazon Resource Name (ARN). 
     */
-  var SubscriptionArn: js.UndefOr[GenericString] = js.native
+  var SubscriptionArn: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The name for the subscription. 
     */
-  var SubscriptionName: GenericString = js.native
+  var SubscriptionName: GenericString
   
   /**
     *  The dollar value that triggers a notification if the threshold is exceeded. 
     */
-  var Threshold: NullableNonNegativeDouble = js.native
+  var Threshold: NullableNonNegativeDouble
 }
 object AnomalySubscription {
   

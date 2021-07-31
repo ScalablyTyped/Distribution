@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceSpec extends StObject {
   
   /** Template holds the latest specification for the Revision to be stamped out. */
-  var template: js.UndefOr[RevisionTemplate] = js.native
+  var template: js.UndefOr[RevisionTemplate] = js.undefined
   
   /** Traffic specifies how to distribute traffic over a collection of Knative Revisions and Configurations. */
-  var traffic: js.UndefOr[js.Array[TrafficTarget]] = js.native
+  var traffic: js.UndefOr[js.Array[TrafficTarget]] = js.undefined
 }
 object ServiceSpec {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateNotebookInstanceLifecycleConfigInput extends StObject {
   
   /**
     * The name of the lifecycle configuration.
     */
-  var NotebookInstanceLifecycleConfigName: typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigName = js.native
+  var NotebookInstanceLifecycleConfigName: typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigName
   
   /**
     * The shell script that runs only once, when you create a notebook instance. The shell script must be a base64-encoded string.
     */
-  var OnCreate: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.native
+  var OnCreate: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.undefined
   
   /**
     * The shell script that runs every time you start a notebook instance, including when you create the notebook instance. The shell script must be a base64-encoded string.
     */
-  var OnStart: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.native
+  var OnStart: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.undefined
 }
 object UpdateNotebookInstanceLifecycleConfigInput {
   

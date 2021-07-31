@@ -3,19 +3,19 @@ package typings.jsonLogicJs.anon
 import typings.jsonLogicJs.mod._RulesLogic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Missing extends _RulesLogic {
+trait Missing
+  extends StObject
+     with _RulesLogic {
   
-  var missing: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[_] = js.native
+  var missing: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[js.Any]
 }
 object Missing {
   
   @scala.inline
   def apply(
-    missing: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[_]
+    missing: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[js.Any]
   ): Missing = {
     val __obj = js.Dynamic.literal(missing = missing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Missing]
@@ -26,7 +26,7 @@ object Missing {
     
     @scala.inline
     def setMissing(
-      value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[_]
+      value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[js.Any]
     ): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
     @scala.inline

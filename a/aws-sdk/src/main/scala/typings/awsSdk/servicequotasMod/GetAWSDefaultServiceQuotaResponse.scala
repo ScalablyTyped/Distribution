@@ -2,16 +2,14 @@ package typings.awsSdk.servicequotasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAWSDefaultServiceQuotaResponse extends StObject {
   
   /**
     * Returns the ServiceQuota object which contains all values for a quota.
     */
-  var Quota: js.UndefOr[ServiceQuota] = js.native
+  var Quota: js.UndefOr[ServiceQuota] = js.undefined
 }
 object GetAWSDefaultServiceQuotaResponse {
   

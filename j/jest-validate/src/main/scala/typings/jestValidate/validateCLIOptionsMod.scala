@@ -4,17 +4,18 @@ import typings.jestTypes.configMod.Argv
 import typings.jestValidate.anon.Dicts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validateCLIOptionsMod {
   
-  @JSImport("jest-validate/build/validateCLIOptions", JSImport.Default)
+  @JSImport("jest-validate/build/validateCLIOptions", JSImport.Namespace)
   @js.native
-  def default(argv: Argv, options: Dicts): Boolean = js.native
-  @JSImport("jest-validate/build/validateCLIOptions", JSImport.Default)
-  @js.native
-  def default(argv: Argv, options: Dicts, rawArgv: js.Array[String]): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(argv: Argv, options: Dicts): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def default(argv: Argv, options: Dicts, rawArgv: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any], rawArgv.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("jest-validate/build/validateCLIOptions", "DOCUMENTATION_NOTE")
   @js.native

@@ -3,7 +3,6 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -67,14 +66,14 @@ trait Webview extends StObject {
     * post `Blob`, `File`, `ImageData` and other DOM specific objects since the extension that receives the
     * message does not run in a browser environment.
     */
-  def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
+  def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
   def onDidReceiveMessage(
-    listener: js.Function1[/* e */ js.Any, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ js.Any, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
-  def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
-  def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Content settings for the webview.

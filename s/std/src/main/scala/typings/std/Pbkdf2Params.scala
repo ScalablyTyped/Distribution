@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Pbkdf2Params extends Algorithm {
+trait Pbkdf2Params
+  extends StObject
+     with Algorithm {
   
-  var hash: HashAlgorithmIdentifier = js.native
+  var hash: HashAlgorithmIdentifier
   
-  var iterations: Double = js.native
+  var iterations: Double
   
-  var salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer = js.native
+  var salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
 }
 object Pbkdf2Params {
   

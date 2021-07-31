@@ -9,7 +9,6 @@ import typings.std.HTMLElement
 import typings.wordpressComponents.tabbableMod.TabbableContainer.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabbableMod {
@@ -28,24 +27,25 @@ object tabbableMod {
   
   object TabbableContainer {
     
-    @js.native
-    trait Props extends HTMLProps[HTMLDivElement] {
+    trait Props
+      extends StObject
+         with HTMLProps[HTMLDivElement] {
       
       @JSName("children")
-      var children_Props: ReactNode = js.native
+      var children_Props: ReactNode
       
       /**
         * A boolean which tells the component whether or not to cycle from the
         * end back to the beginning and vice versa.
         * @defaultValue true
         */
-      var cycle: js.UndefOr[Boolean] = js.native
+      var cycle: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A callback invoked when the menu navigates to one of its children
         * passing the index and child as an argument.
         */
-      var onNavigate: js.UndefOr[js.Function2[/* nextIndex */ Double, /* focusedElement */ HTMLElement, Unit]] = js.native
+      var onNavigate: js.UndefOr[js.Function2[/* nextIndex */ Double, /* focusedElement */ HTMLElement, Unit]] = js.undefined
     }
     object Props {
       

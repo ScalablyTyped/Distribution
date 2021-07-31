@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserManaged extends StObject {
   
   /** Required. The list of Replicas for this Secret. Cannot be empty. */
-  var replicas: js.UndefOr[js.Array[Replica]] = js.native
+  var replicas: js.UndefOr[js.Array[Replica]] = js.undefined
 }
 object UserManaged {
   

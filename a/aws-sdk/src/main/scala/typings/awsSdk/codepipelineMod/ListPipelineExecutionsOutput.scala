@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPipelineExecutionsOutput extends StObject {
   
   /**
     * A token that can be used in the next ListPipelineExecutions call. To view all items in the list, continue to call this operation with each subsequent token until no more nextToken values are returned.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A list of executions in the history of a pipeline.
     */
-  var pipelineExecutionSummaries: js.UndefOr[PipelineExecutionSummaryList] = js.native
+  var pipelineExecutionSummaries: js.UndefOr[PipelineExecutionSummaryList] = js.undefined
 }
 object ListPipelineExecutionsOutput {
   

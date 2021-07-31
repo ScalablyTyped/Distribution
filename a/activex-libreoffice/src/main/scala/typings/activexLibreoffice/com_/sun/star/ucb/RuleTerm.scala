@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,27 +9,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A term is used to select objects to which a rule should apply.
   */
-@js.native
 trait RuleTerm extends StObject {
   
   /** this flag indicates whether a string "operand" shall be compared case sensitive. */
-  var CaseSensitive: Boolean = js.native
+  var CaseSensitive: Boolean
   
   /** the value of the property used to compare with the document property. */
-  var Operand: js.Any = js.native
+  var Operand: js.Any
   
   /**
     * the operator used to compare the property of the document with the given value (e.g. "contains" or "greater equal").
     *
     * The value can be one of the {@link RuleOperator} constants.
     */
-  var Operator: Double = js.native
+  var Operator: Double
   
   /** the name of the property used to match the term. */
-  var Property: String = js.native
+  var Property: String
   
   /** this flag indicates whether a string "operand" shall be treated as a regular expression. */
-  var RegularExpression: Boolean = js.native
+  var RegularExpression: Boolean
 }
 object RuleTerm {
   

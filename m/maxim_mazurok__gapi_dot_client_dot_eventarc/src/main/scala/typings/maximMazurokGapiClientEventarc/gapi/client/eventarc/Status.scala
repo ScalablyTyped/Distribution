@@ -3,29 +3,27 @@ package typings.maximMazurokGapiClientEventarc.gapi.client.eventarc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Status extends StObject {
   
   /** The status code, which should be an enum value of google.rpc.Code. */
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
   /** A list of messages that carry the error details. There is a common set of message types for APIs to use. */
   var details: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientEventarc.maximMazurokGapiClientEventarcStrings.Status with TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientEventarc.maximMazurokGapiClientEventarcStrings.Status & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the google.rpc.Status.details field, or localized by the
     * client.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object Status {
   
@@ -49,7 +47,7 @@ object Status {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientEventarc.maximMazurokGapiClientEventarcStrings.Status with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientEventarc.maximMazurokGapiClientEventarcStrings.Status & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
@@ -60,7 +58,7 @@ object Status {
     def setDetailsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientEventarc.maximMazurokGapiClientEventarcStrings.Status with TopLevel[js.Any])*
+      */ typings.maximMazurokGapiClientEventarc.maximMazurokGapiClientEventarcStrings.Status & TopLevel[js.Any])*
     ): Self = StObject.set(x, "details", js.Array(value :_*))
     
     @scala.inline

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRichEdit.DocumentFormatted event.
   */
-@js.native
-trait ASPxClientRichEditDocumentFormattedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientRichEditDocumentFormattedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the number of pages in the document.
     */
-  var pageCount: Double = js.native
+  var pageCount: Double
 }
 object ASPxClientRichEditDocumentFormattedEventArgs {
   

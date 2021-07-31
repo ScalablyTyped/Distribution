@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpUrlDestinationSummary extends StObject {
   
   /**
     * The URL used to confirm ownership of or access to the HTTP topic rule destination URL.
     */
-  var confirmationUrl: js.UndefOr[Url] = js.native
+  var confirmationUrl: js.UndefOr[Url] = js.undefined
 }
 object HttpUrlDestinationSummary {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeInNanos extends StObject {
   
   /**
     * The nanosecond offset from timeInSeconds.
     */
-  var offsetInNanos: js.UndefOr[OffsetInNanos] = js.native
+  var offsetInNanos: js.UndefOr[OffsetInNanos] = js.undefined
   
   /**
     * The timestamp date, in seconds, in the Unix epoch format. Fractional nanosecond data is provided by offsetInNanos.
     */
-  var timeInSeconds: TimeInSeconds = js.native
+  var timeInSeconds: TimeInSeconds
 }
 object TimeInNanos {
   

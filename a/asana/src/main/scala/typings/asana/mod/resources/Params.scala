@@ -2,15 +2,13 @@ package typings.asana.mod.resources
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Params extends StObject {
   
-  var opt_expand: js.UndefOr[String] = js.native
+  var opt_expand: js.UndefOr[String] = js.undefined
   
-  var opt_fields: js.UndefOr[String] = js.native
+  var opt_fields: js.UndefOr[String] = js.undefined
 }
 object Params {
   

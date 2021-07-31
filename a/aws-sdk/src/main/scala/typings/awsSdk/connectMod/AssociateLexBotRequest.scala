@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateLexBotRequest extends StObject {
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The Amazon Lex box to associate with the instance.
     */
-  var LexBot: typings.awsSdk.connectMod.LexBot = js.native
+  var LexBot: typings.awsSdk.connectMod.LexBot
 }
 object AssociateLexBotRequest {
   

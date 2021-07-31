@@ -4,7 +4,6 @@ import typings.cesium.anon.AllowPicking
 import typings.cesium.anon.Asynchronous
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Model")
@@ -98,13 +97,15 @@ class Model () extends StObject {
 }
 object Model {
   
-  /* static member */
-  @JSImport("cesium", "Model.fromGltf")
+  @JSImport("cesium", "Model")
   @js.native
-  def fromGltf(options: Asynchronous): Model = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "Model.siluhouetteSupported")
-  @js.native
-  def siluhouetteSupported(scene: Scene): Boolean = js.native
+  @scala.inline
+  def fromGltf(options: Asynchronous): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGltf")(options.asInstanceOf[js.Any]).asInstanceOf[Model]
+  
+  /* static member */
+  @scala.inline
+  def siluhouetteSupported(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("siluhouetteSupported")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

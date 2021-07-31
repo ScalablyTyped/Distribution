@@ -2,43 +2,39 @@ package typings.pathval
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pathval", "getPathInfo")
+  @JSImport("pathval", JSImport.Namespace)
   @js.native
-  def getPathInfo(obj: js.Object, path: String): PathInfo = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pathval", "getPathValue")
-  @js.native
-  def getPathValue(obj: js.Object, path: String): js.UndefOr[js.Object] = js.native
+  @scala.inline
+  def getPathInfo(obj: js.Object, path: String): PathInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathInfo")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[PathInfo]
   
-  @JSImport("pathval", "hasProperty")
-  @js.native
-  def hasProperty(obj: js.UndefOr[scala.Nothing], name: Property): Boolean = js.native
-  @JSImport("pathval", "hasProperty")
-  @js.native
-  def hasProperty(obj: js.Object, name: Property): Boolean = js.native
-  @JSImport("pathval", "hasProperty")
-  @js.native
-  def hasProperty(obj: Null, name: Property): Boolean = js.native
+  @scala.inline
+  def getPathValue(obj: js.Object, path: String): js.UndefOr[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathValue")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Object]]
   
-  @JSImport("pathval", "setPathValue")
-  @js.native
-  def setPathValue(obj: js.Object, path: String, `val`: js.Any): js.Object = js.native
+  @scala.inline
+  def hasProperty(obj: js.Object, name: Property): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasProperty")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasProperty(obj: Null, name: Property): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasProperty")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasProperty(obj: Unit, name: Property): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasProperty")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def setPathValue(obj: js.Object, path: String, `val`: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setPathValue")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  
   trait PathInfo extends StObject {
     
-    var exists: Boolean = js.native
+    var exists: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var parent: js.Object = js.native
+    var parent: js.Object
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object PathInfo {
     

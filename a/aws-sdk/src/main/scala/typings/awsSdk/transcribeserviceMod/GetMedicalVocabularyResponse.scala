@@ -2,41 +2,39 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMedicalVocabularyResponse extends StObject {
   
   /**
     * The location in Amazon S3 where the vocabulary is stored. Use this URI to get the contents of the vocabulary. You can download your vocabulary from the URI for a limited time.
     */
-  var DownloadUri: js.UndefOr[Uri] = js.native
+  var DownloadUri: js.UndefOr[Uri] = js.undefined
   
   /**
     * If the VocabularyState is FAILED, this field contains information about why the job failed.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.undefined
   
   /**
     * The valid language code for your vocabulary entries.
     */
-  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.native
+  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
   
   /**
     * The date and time that the vocabulary was last modified with a text file different from the one that was previously used.
     */
-  var LastModifiedTime: js.UndefOr[DateTime] = js.native
+  var LastModifiedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the vocabulary returned by Amazon Transcribe Medical.
     */
-  var VocabularyName: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyName] = js.native
+  var VocabularyName: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyName] = js.undefined
   
   /**
     * The processing state of the vocabulary. If the VocabularyState is READY then you can use it in the StartMedicalTranscriptionJob operation. 
     */
-  var VocabularyState: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyState] = js.native
+  var VocabularyState: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyState] = js.undefined
 }
 object GetMedicalVocabularyResponse {
   

@@ -2,7 +2,6 @@ package typings.zoneJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You can define the following configurations on the `window/global` object before
   * importing `zone.js` to change `zone.js` default behaviors.
   */
-@js.native
 trait ZoneGlobalConfigurations extends StObject {
   
   /**
@@ -49,7 +47,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * `zone.js` does not monkey patch the `EventEmitter` APIs and the above code
     * outputs 'an event occurred <root>'.
     */
-  var __Zone_disable_EventEmitter: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_EventEmitter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser `EventTarget` APIs.
@@ -74,7 +72,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * outputs 'clicked <root>'.
     *
     */
-  var __Zone_disable_EventTarget: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_EventTarget: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser legacy `EventTarget` API.
@@ -104,22 +102,22 @@ trait ZoneGlobalConfigurations extends StObject {
     * `__Zone_disable_EventTargetLegacy = true` before importing `zone.js`, `zone.js` does not monkey
     * patch all HTML element APIs and the above code outputs 'clicked <root>'.
     */
-  var __Zone_disable_EventTargetLegacy: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_EventTargetLegacy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser `FileReader` APIs.
     */
-  var __Zone_disable_FileReader: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_FileReader: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser `IntersectionObserver` APIs.
     */
-  var __Zone_disable_IntersectionObserver: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_IntersectionObserver: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser `MutationObserver` APIs.
     */
-  var __Zone_disable_MutationObserver: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_MutationObserver: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser `XMLHttpRequest` APIs.
@@ -153,7 +151,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * will not be called.
     *
     */
-  var __Zone_disable_XHR: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_XHR: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the `Promise` monkey patch.
@@ -180,13 +178,13 @@ trait ZoneGlobalConfigurations extends StObject {
     * `zone.js` does not monkey patch `Promise` APIs and the above code
     * outputs 'promise then callback <root>'.
     */
-  var __Zone_disable_ZoneAwarePromise: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_ZoneAwarePromise: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
     * Disable the monkey patch of the browser blocking APIs(`alert()`/`prompt()`/`confirm()`).
     */
-  var __Zone_disable_blocking: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_blocking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser `canvas` APIs.
@@ -213,7 +211,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * `zone.js` does not monkey patch `canvas` APIs and the above code
     * outputs 'canvas.toBlob <root>'.
     */
-  var __Zone_disable_canvas: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_canvas: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the `Node.js` `crypto` API.
@@ -241,7 +239,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * `zone.js` does not monkey patch the `crypto` API and the above code
     * outputs 'crypto <root>'.
     */
-  var __Zone_disable_crypto: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_crypto: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser `customElements` APIs.
@@ -273,7 +271,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * `zone.js` does not monkey patch `customElements` APIs and the above code
     * runs inside <root> zone.
     */
-  var __Zone_disable_customElements: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_customElements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the `Object.defineProperty()` API.
@@ -290,7 +288,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * modify desc.configurable to true.
     *
     */
-  var __Zone_disable_defineProperty: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_defineProperty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the `Node.js` `fs` API.
@@ -317,7 +315,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * `zone.js` does not monkey patch the `fs` API and the above code
     * outputs 'get stats occurred <root>'.
     */
-  var __Zone_disable_fs: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_fs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser geolocation APIs.
@@ -346,7 +344,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * outputs 'getCurrentPosition <root>'.
     *
     */
-  var __Zone_disable_geolocation: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_geolocation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the `Node.js` `process.nextTick()` API.
@@ -372,7 +370,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * `zone.js` does not monkey patch the `process.nextTick()` API and the above code
     * outputs 'nextTick <root>'.
     */
-  var __Zone_disable_nextTick: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_nextTick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the `Node.js` `timer` API.
@@ -398,7 +396,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * `zone.js` does not monkey patch the `timer` APIs and the above code
     * outputs 'timeout <root>'.
     */
-  var __Zone_disable_node_timers: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_node_timers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser onProperty APIs(such as onclick).
@@ -423,7 +421,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * outputs 'clicked <root>'.
     *
     */
-  var __Zone_disable_on_property: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_on_property: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser `registerElement()` API.
@@ -465,7 +463,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * `zone.js` does not monkey patch `registerElement()` API and the above code
     * outputs '<root>'.
     */
-  var __Zone_disable_registerElement: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_registerElement: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser `requestAnimationFrame()` API.
@@ -492,7 +490,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * `zone.js` does not monkey patch the `requestAnimationFrame()` API and the above code
     * outputs 'raf <root>'.
     */
-  var __Zone_disable_requestAnimationFrame: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_requestAnimationFrame: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the monkey patch of the browser `timer` APIs.
@@ -520,7 +518,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * outputs 'timeout <root>'.
     *
     */
-  var __Zone_disable_timers: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_timers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable wrapping uncaught promise rejection.
@@ -531,7 +529,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * If you set `__zone_symbol__DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION = true;` before
     * importing `zone.js`, `zone.js` will not wrap the uncaught promise rejection.
     */
-  var __zone_symbol__DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION: js.UndefOr[Boolean] = js.native
+  var __zone_symbol__DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Define the event names of the passive listeners.
@@ -547,7 +545,7 @@ trait ZoneGlobalConfigurations extends StObject {
     *
     * The preceding code makes all scroll event listeners passive.
     */
-  var __zone_symbol__PASSIVE_EVENTS: js.UndefOr[js.Array[String]] = js.native
+  var __zone_symbol__PASSIVE_EVENTS: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Define event names that users don't want monkey patched by the `zone.js`.
@@ -562,7 +560,7 @@ trait ZoneGlobalConfigurations extends StObject {
     * Users can achieve this goal by defining `__zone_symbol__UNPATCHED_EVENTS = ['scroll',
     * 'mousemove'];` before importing `zone.js`.
     */
-  var __zone_symbol__UNPATCHED_EVENTS: js.UndefOr[js.Array[String]] = js.native
+  var __zone_symbol__UNPATCHED_EVENTS: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ZoneGlobalConfigurations {
   

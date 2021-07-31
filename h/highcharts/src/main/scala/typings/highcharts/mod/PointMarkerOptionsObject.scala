@@ -3,10 +3,8 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointMarkerOptionsObject extends StObject {
   
   /**
@@ -14,19 +12,19 @@ trait PointMarkerOptionsObject extends StObject {
     * between values. Set to `false` to disable animation. Defaults to `{
     * duration: 50 }`.
     */
-  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The color of the marker.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) Enable or disable the point marker. If
     * `undefined`, the markers are hidden when the data is dense, and shown for
     * more widespread data points.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) The threshold for how dense the point markers
@@ -36,45 +34,45 @@ trait PointMarkerOptionsObject extends StObject {
     * words, the default value of 2 means points are hidden if overlapping
     * horizontally.
     */
-  var enabledThreshold: js.UndefOr[Double] = js.native
+  var enabledThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The fill color of the point marker. When
     * `undefined`, the series' or point's color is used.
     */
-  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) The fill opacity of the bubble markers.
     */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) Image markers only. Set the image width
     * explicitly. When using this option, a `width` must also be set.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The color of the point marker's outline. When
     * `undefined`, the series' or point's color is used.
     */
-  var lineColor: js.UndefOr[String | ColorString | GradientColorObject | PatternObject] = js.native
+  var lineColor: js.UndefOr[String | ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) The width of the point marker's outline.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The radius of the point marker.
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) States for a single point marker.
     */
-  var states: js.UndefOr[PointStatesOptionsObject] = js.native
+  var states: js.UndefOr[PointStatesOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) A predefined shape or symbol for the marker. When
@@ -90,13 +88,13 @@ trait PointMarkerOptionsObject extends StObject {
     * `Highcharts.SVGRenderer.prototype.symbols`. The callback is then used by
     * its method name, as shown in the demo.
     */
-  var symbol: js.UndefOr[String | SymbolKeyValue] = js.native
+  var symbol: js.UndefOr[String | SymbolKeyValue] = js.undefined
   
   /**
     * (Highcharts, Highstock) Image markers only. Set the image width
     * explicitly. When using this option, a `height` must also be set.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PointMarkerOptionsObject {
   

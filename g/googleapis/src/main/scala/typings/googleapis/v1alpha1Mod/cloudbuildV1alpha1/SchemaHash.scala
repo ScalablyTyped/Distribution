@@ -2,24 +2,22 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Container message for hash values.
   */
-@js.native
 trait SchemaHash extends StObject {
   
   /**
     * The type of hash that was performed.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The hash value.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaHash {
   

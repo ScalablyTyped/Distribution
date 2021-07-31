@@ -2,21 +2,22 @@ package typings.uifabricReactHooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useSetTimeoutMod {
   
-  @JSImport("@uifabric/react-hooks/lib/useSetTimeout", "useSetTimeout")
+  @JSImport("@uifabric/react-hooks/lib/useSetTimeout", JSImport.Namespace)
   @js.native
-  def useSetTimeout(): UseSetTimeoutReturnType = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useSetTimeout(): UseSetTimeoutReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("useSetTimeout")().asInstanceOf[UseSetTimeoutReturnType]
+  
   trait UseSetTimeoutReturnType extends StObject {
     
-    def clearTimeout(id: Double): Unit = js.native
+    def clearTimeout(id: Double): Unit
     
-    def setTimeout(callback: js.Function0[Unit], duration: Double): Double = js.native
+    def setTimeout(callback: js.Function0[Unit], duration: Double): Double
   }
   object UseSetTimeoutReturnType {
     

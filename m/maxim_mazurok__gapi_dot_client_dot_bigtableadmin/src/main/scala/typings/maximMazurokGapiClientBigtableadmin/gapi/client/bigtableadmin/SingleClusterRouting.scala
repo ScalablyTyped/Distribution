@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SingleClusterRouting extends StObject {
   
   /**
     * Whether or not `CheckAndMutateRow` and `ReadModifyWriteRow` requests are allowed by this app profile. It is unsafe to send these requests to the same table/row/column in multiple
     * clusters.
     */
-  var allowTransactionalWrites: js.UndefOr[Boolean] = js.native
+  var allowTransactionalWrites: js.UndefOr[Boolean] = js.undefined
   
   /** The cluster to which read/write requests should be routed. */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
 }
 object SingleClusterRouting {
   

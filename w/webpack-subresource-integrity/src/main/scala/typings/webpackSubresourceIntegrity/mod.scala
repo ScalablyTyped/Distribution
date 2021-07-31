@@ -3,30 +3,30 @@ package typings.webpackSubresourceIntegrity
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webpack-subresource-integrity", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Default value: true
       * When this value is falsy, the plugin doesn't run and no integrity values are calculated. It is recommended to disable the plugin in development mode.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An array of strings, each specifying the name of a hash function to be used for calculating integrity hash values. For example, ['sha256', 'sha512'].
       */
-    var hashFuncNames: js.Array[String] = js.native
+    var hashFuncNames: js.Array[String]
   }
   object Options {
     

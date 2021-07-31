@@ -3,42 +3,42 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deprecated. Use {@link com.sun.star.reflection.XIdlField2} instead.
   * @deprecated Deprecated
   */
-@js.native
-trait XIdlField extends XIdlMember {
+trait XIdlField
+  extends StObject
+     with XIdlMember {
   
-  val AccessMode: FieldAccessMode = js.native
+  val AccessMode: FieldAccessMode
   
-  val Type: XIdlClass[_] = js.native
+  val Type: XIdlClass[js.Any]
   
-  def get(obj: js.Any): js.Any = js.native
+  def get(obj: js.Any): js.Any
   
-  def getAccessMode(): FieldAccessMode = js.native
+  def getAccessMode(): FieldAccessMode
   
-  def getType(): XIdlClass[_] = js.native
+  def getType(): XIdlClass[js.Any]
   
-  def set(obj: js.Any, value: js.Any): Unit = js.native
+  def set(obj: js.Any, value: js.Any): Unit
 }
 object XIdlField {
   
   @scala.inline
   def apply(
     AccessMode: FieldAccessMode,
-    DeclaringClass: XIdlClass[_],
+    DeclaringClass: XIdlClass[js.Any],
     Name: String,
-    Type: XIdlClass[_],
+    Type: XIdlClass[js.Any],
     acquire: () => Unit,
     get: js.Any => js.Any,
     getAccessMode: () => FieldAccessMode,
-    getDeclaringClass: () => XIdlClass[_],
+    getDeclaringClass: () => XIdlClass[js.Any],
     getName: () => String,
-    getType: () => XIdlClass[_],
+    getType: () => XIdlClass[js.Any],
     queryInterface: `type` => js.Any,
     release: () => Unit,
     set: (js.Any, js.Any) => Unit
@@ -60,12 +60,12 @@ object XIdlField {
     def setGetAccessMode(value: () => FieldAccessMode): Self = StObject.set(x, "getAccessMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetType(value: () => XIdlClass[_]): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    def setGetType(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
     def setSet(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setType(value: XIdlClass[_]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    def setType(value: XIdlClass[js.Any]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

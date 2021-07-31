@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,13 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The component cannot be instantiated at a global service factory, instead it's usually provided by a document instance.
   * @see com.sun.star.document.OfficeDocument
   */
-@js.native
 trait CellRangeListSource
-  extends ListEntrySource
+  extends StObject
+     with ListEntrySource
      with XInitialization {
   
   /** specifies the cell range within a document to which the component is bound. */
-  var CellRange: CellRangeAddress = js.native
+  var CellRange: CellRangeAddress
 }
 object CellRangeListSource {
   
@@ -40,7 +39,7 @@ object CellRangeListSource {
     getAllListEntries: () => SafeArray[String],
     getListEntry: Double => String,
     getListEntryCount: () => Double,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,

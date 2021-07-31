@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuiltInVariable extends StObject {
   
   /** GTM Account ID. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** GTM Container ID. */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /** Name of the built-in variable to be used to refer to the built-in variable. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** GTM BuiltInVariable's API relative path. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** Type of built-in variable. @required.tagmanager.accounts.containers.workspaces.built_in_variable.update @mutable tagmanager.accounts.containers.workspaces.built_in_variable.update */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** GTM Workspace ID. */
-  var workspaceId: js.UndefOr[String] = js.native
+  var workspaceId: js.UndefOr[String] = js.undefined
 }
 object BuiltInVariable {
   

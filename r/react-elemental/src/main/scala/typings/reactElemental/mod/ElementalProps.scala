@@ -5,17 +5,15 @@ import typings.reactElemental.anon.Primary
 import typings.reactElemental.anon.PrimaryDark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementalProps extends StObject {
   
-  val children: ReactNode = js.native
+  val children: ReactNode
   
-  val colorOpts: js.UndefOr[PrimaryDark] = js.native
+  val colorOpts: js.UndefOr[PrimaryDark] = js.undefined
   
-  val fontOpts: js.UndefOr[Primary] = js.native
+  val fontOpts: js.UndefOr[Primary] = js.undefined
 }
 object ElementalProps {
   

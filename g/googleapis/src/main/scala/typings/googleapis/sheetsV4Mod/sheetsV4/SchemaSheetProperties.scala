@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Properties of a sheet.
   */
-@js.native
 trait SchemaSheetProperties extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaSheetProperties extends StObject {
     * absent.) When writing it is an error to set any grid properties on
     * non-grid sheets.
     */
-  var gridProperties: js.UndefOr[SchemaGridProperties] = js.native
+  var gridProperties: js.UndefOr[SchemaGridProperties] = js.undefined
   
   /**
     * True if the sheet is hidden in the UI, false if it&#39;s visible.
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The index of the sheet within the spreadsheet. When adding or updating
@@ -35,34 +33,34 @@ trait SchemaSheetProperties extends StObject {
     * sheets current index or if the requested new index is equal to the
     * current sheet index + 1.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * True if the sheet is an RTL sheet instead of an LTR sheet.
     */
-  var rightToLeft: js.UndefOr[Boolean] = js.native
+  var rightToLeft: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the sheet. Must be non-negative. This field cannot be changed
     * once set.
     */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of sheet. Defaults to GRID. This field cannot be changed once
     * set.
     */
-  var sheetType: js.UndefOr[String] = js.native
+  var sheetType: js.UndefOr[String] = js.undefined
   
   /**
     * The color of the tab in the UI.
     */
-  var tabColor: js.UndefOr[SchemaColor] = js.native
+  var tabColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The name of the sheet.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaSheetProperties {
   

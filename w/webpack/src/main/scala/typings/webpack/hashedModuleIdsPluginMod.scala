@@ -5,33 +5,31 @@ import typings.webpack.webpackStrings.hex
 import typings.webpack.webpackStrings.latin1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hashedModuleIdsPluginMod {
   
-  @js.native
   trait HashedModuleIdsPluginOptions extends StObject {
     
     /**
     	 * The context directory for creating names.
     	 */
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
     /**
     	 * The encoding to use when generating the hash, defaults to 'base64'. All encodings from Node.JS' hash.digest are supported.
     	 */
-    var hashDigest: js.UndefOr[hex | latin1 | base64] = js.native
+    var hashDigest: js.UndefOr[hex | latin1 | base64] = js.undefined
     
     /**
     	 * The prefix length of the hash digest to use, defaults to 4.
     	 */
-    var hashDigestLength: js.UndefOr[Double] = js.native
+    var hashDigestLength: js.UndefOr[Double] = js.undefined
     
     /**
     	 * The hashing algorithm to use, defaults to 'md5'. All functions from Node.JS' crypto.createHash are supported.
     	 */
-    var hashFunction: js.UndefOr[String] = js.native
+    var hashFunction: js.UndefOr[String] = js.undefined
   }
   object HashedModuleIdsPluginOptions {
     

@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CloseBehavior extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.CloseBehavior with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.CloseBehavior & String] = js.native
   
-  /* "Save" */ val save: typings.officeJsPreview.Excel.CloseBehavior.save with String = js.native
+  /* "Save" */ val save: typings.officeJsPreview.Excel.CloseBehavior.save & String = js.native
   
-  /* "SkipSave" */ val skipSave: typings.officeJsPreview.Excel.CloseBehavior.skipSave with String = js.native
+  /* "SkipSave" */ val skipSave: typings.officeJsPreview.Excel.CloseBehavior.skipSave & String = js.native
 }

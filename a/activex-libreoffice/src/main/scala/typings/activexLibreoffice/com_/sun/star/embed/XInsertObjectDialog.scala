@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to create and initialize a new embedded object using GUI dialog. */
-@js.native
-trait XInsertObjectDialog extends XInterface {
+trait XInsertObjectDialog
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new object using GUI dialog.
@@ -26,7 +26,7 @@ trait XInsertObjectDialog extends XInterface {
     * @throws com::sun::star::io::IOException in case of io problems during opening or creation
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def createInstanceByDialog(xStorage: XStorage, sEntName: String, lObjArgs: SeqEquiv[PropertyValue]): InsertedObjectInfo = js.native
+  def createInstanceByDialog(xStorage: XStorage, sEntName: String, lObjArgs: SeqEquiv[PropertyValue]): InsertedObjectInfo
 }
 object XInsertObjectDialog {
   

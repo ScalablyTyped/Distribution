@@ -2,47 +2,46 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IElement
-  extends IConditionRunner
+  extends StObject
+     with IConditionRunner
      with ISurveyElement {
   
-  def clearErrors(): js.Any = js.native
+  def clearErrors(): js.Any
   
-  def clearIncorrectValues(): js.Any = js.native
+  def clearIncorrectValues(): js.Any
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
-  def getLayoutType(): String = js.native
+  def getLayoutType(): String
   
-  def getPanel(): IPanel = js.native
+  def getPanel(): IPanel
   
-  def isLayoutTypeSupported(layoutType: String): Boolean = js.native
+  def isLayoutTypeSupported(layoutType: String): Boolean
   
-  var maxWidth: js.UndefOr[String] = js.native
+  var maxWidth: js.UndefOr[String] = js.undefined
   
-  var minWidth: js.UndefOr[String] = js.native
+  var minWidth: js.UndefOr[String] = js.undefined
   
-  def onAnyValueChanged(name: String): js.Any = js.native
+  def onAnyValueChanged(name: String): js.Any
   
-  var parent: IPanel = js.native
+  var parent: IPanel
   
-  def removeElement(el: IElement): Boolean = js.native
+  def removeElement(el: IElement): Boolean
   
-  var renderWidth: String = js.native
+  var renderWidth: String
   
-  var rightIndent: Double = js.native
+  var rightIndent: Double
   
-  var startWithNewLine: Boolean = js.native
+  var startWithNewLine: Boolean
   
-  def updateCustomWidgets(): js.Any = js.native
+  def updateCustomWidgets(): js.Any
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var width: String = js.native
+  var width: String
 }
 object IElement {
   
@@ -70,7 +69,7 @@ object IElement {
     removeElement: IElement => Boolean,
     renderWidth: String,
     rightIndent: Double,
-    runCondition: (HashTable[_], HashTable[_]) => js.Any,
+    runCondition: (HashTable[js.Any], HashTable[js.Any]) => js.Any,
     setSurveyImpl: ISurveyImpl => js.Any,
     setVisibleIndex: Double => Double,
     startWithNewLine: Boolean,

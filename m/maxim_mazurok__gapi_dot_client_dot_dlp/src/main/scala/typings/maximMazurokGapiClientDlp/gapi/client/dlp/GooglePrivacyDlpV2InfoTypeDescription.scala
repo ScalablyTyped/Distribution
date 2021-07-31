@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2InfoTypeDescription extends StObject {
   
   /** Description of the infotype. Translated when language is provided in the request. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Human readable form of the infoType name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Internal name of the infoType. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Which parts of the API supports this InfoType. */
-  var supportedBy: js.UndefOr[js.Array[String]] = js.native
+  var supportedBy: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GooglePrivacyDlpV2InfoTypeDescription {
   

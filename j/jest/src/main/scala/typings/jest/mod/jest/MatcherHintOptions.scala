@@ -2,27 +2,25 @@ package typings.jest.mod.jest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatcherHintOptions extends StObject {
   
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
-  var expectedColor: js.UndefOr[MatcherHintColor] = js.native
+  var expectedColor: js.UndefOr[MatcherHintColor] = js.undefined
   
-  var isDirectExpectCall: js.UndefOr[Boolean] = js.native
+  var isDirectExpectCall: js.UndefOr[Boolean] = js.undefined
   
-  var isNot: js.UndefOr[Boolean] = js.native
+  var isNot: js.UndefOr[Boolean] = js.undefined
   
-  var promise: js.UndefOr[String] = js.native
+  var promise: js.UndefOr[String] = js.undefined
   
-  var receivedColor: js.UndefOr[MatcherHintColor] = js.native
+  var receivedColor: js.UndefOr[MatcherHintColor] = js.undefined
   
-  var secondArgument: js.UndefOr[String] = js.native
+  var secondArgument: js.UndefOr[String] = js.undefined
   
-  var secondArgumentColor: js.UndefOr[MatcherHintColor] = js.native
+  var secondArgumentColor: js.UndefOr[MatcherHintColor] = js.undefined
 }
 object MatcherHintOptions {
   

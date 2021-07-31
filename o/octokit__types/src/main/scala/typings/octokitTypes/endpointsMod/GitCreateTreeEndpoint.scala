@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitCreateTreeEndpoint extends StObject {
   
   /**
     * The SHA1 of the tree you want to update with new data. If you don't set this, the commit will be created on top of everything; however, it will only contain your change, the rest of your files will show up as deleted.
     */
-  var base_tree: js.UndefOr[String] = js.native
+  var base_tree: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * Objects (of `path`, `mode`, `type`, and `sha`) specifying a tree structure.
     */
-  var tree: js.Array[GitCreateTreeParamsTree] = js.native
+  var tree: js.Array[GitCreateTreeParamsTree]
 }
 object GitCreateTreeEndpoint {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBClusterBacktrackMessage extends StObject {
   
   /**
     * Contains a list of backtracks for the user.
     */
-  var DBClusterBacktracks: js.UndefOr[DBClusterBacktrackList] = js.native
+  var DBClusterBacktracks: js.UndefOr[DBClusterBacktrackList] = js.undefined
   
   /**
     * A pagination token that can be used in a later DescribeDBClusterBacktracks request.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object DBClusterBacktrackMessage {
   

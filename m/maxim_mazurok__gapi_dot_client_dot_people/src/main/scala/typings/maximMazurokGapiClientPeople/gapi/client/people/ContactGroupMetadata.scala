@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactGroupMetadata extends StObject {
   
   /**
     * Output only. True if the contact group resource has been deleted. Populated only for [`ListContactGroups`](/people/api/rest/v1/contactgroups/list) requests that include a sync
     * token.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. The time the group was last updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object ContactGroupMetadata {
   

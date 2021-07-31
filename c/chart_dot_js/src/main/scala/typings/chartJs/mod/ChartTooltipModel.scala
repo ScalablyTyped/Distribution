@@ -2,105 +2,103 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartTooltipModel extends StObject {
   
-  var _bodyAlign: String = js.native
+  var _bodyAlign: String
   
-  var _bodyFontFamily: String = js.native
+  var _bodyFontFamily: String
   
-  var _bodyFontStyle: String = js.native
+  var _bodyFontStyle: String
   
-  var _footerAlign: String = js.native
+  var _footerAlign: String
   
-  var _footerFontFamily: String = js.native
+  var _footerFontFamily: String
   
-  var _footerFontStyle: String = js.native
+  var _footerFontStyle: String
   
-  var _titleAlign: String = js.native
+  var _titleAlign: String
   
-  var _titleFontFamily: String = js.native
+  var _titleFontFamily: String
   
-  var _titleFontStyle: String = js.native
+  var _titleFontStyle: String
   
-  var afterBody: js.Array[String] = js.native
+  var afterBody: js.Array[String]
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var beforeBody: js.Array[String] = js.native
+  var beforeBody: js.Array[String]
   
-  var body: js.Array[ChartTooltipModelBody] = js.native
+  var body: js.Array[ChartTooltipModelBody]
   
-  var bodyFontColor: String = js.native
+  var bodyFontColor: String
   
-  var bodyFontSize: Double = js.native
+  var bodyFontSize: Double
   
-  var bodySpacing: Double = js.native
+  var bodySpacing: Double
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var borderWidth: Double = js.native
+  var borderWidth: Double
   
-  var caretPadding: Double = js.native
+  var caretPadding: Double
   
-  var caretSize: Double = js.native
+  var caretSize: Double
   
-  var caretX: Double = js.native
+  var caretX: Double
   
-  var caretY: Double = js.native
+  var caretY: Double
   
-  var cornerRadius: Double = js.native
+  var cornerRadius: Double
   
-  var dataPoints: js.Array[ChartTooltipItem] = js.native
+  var dataPoints: js.Array[ChartTooltipItem]
   
-  var displayColors: Boolean = js.native
+  var displayColors: Boolean
   
-  var footer: js.Array[String] = js.native
+  var footer: js.Array[String]
   
-  var footerFontColor: String = js.native
+  var footerFontColor: String
   
-  var footerFontSize: Double = js.native
+  var footerFontSize: Double
   
-  var footerMarginTop: Double = js.native
+  var footerMarginTop: Double
   
-  var footerSpacing: Double = js.native
+  var footerSpacing: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var labelColors: js.Array[String] = js.native
+  var labelColors: js.Array[String]
   
-  var labelTextColors: js.Array[String] = js.native
+  var labelTextColors: js.Array[String]
   
-  var legendColorBackground: String = js.native
+  var legendColorBackground: String
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var title: js.Array[String] = js.native
+  var title: js.Array[String]
   
-  var titleFontColor: String = js.native
+  var titleFontColor: String
   
-  var titleFontSize: Double = js.native
+  var titleFontSize: Double
   
-  var titleMarginBottom: Double = js.native
+  var titleMarginBottom: Double
   
-  var titleSpacing: Double = js.native
+  var titleSpacing: Double
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var xAlign: String = js.native
+  var xAlign: String
   
-  var xPadding: Double = js.native
+  var xPadding: Double
   
-  var y: Double = js.native
+  var y: Double
   
-  var yAlign: String = js.native
+  var yAlign: String
   
-  var yPadding: Double = js.native
+  var yPadding: Double
 }
 object ChartTooltipModel {
   

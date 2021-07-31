@@ -6,10 +6,8 @@ import typings.reactNative.mod.ViewStyle
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationContainerProps[State, Options, ScreenProps] extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait NavigationContainerProps[State, Options, ScreenProps] extends StObject {
     * @see https://facebook.github.io/react-native/docs/linking
     * @see https://reactnavigation.org/docs/en/deep-linking.html
     */
-  var enableURLHandling: js.UndefOr[Boolean] = js.native
+  var enableURLHandling: js.UndefOr[Boolean] = js.undefined
   
-  var loadNavigationState: js.UndefOr[js.Function0[js.Promise[_]]] = js.native
+  var loadNavigationState: js.UndefOr[js.Function0[js.Promise[js.Any]]] = js.undefined
   
-  var navigation: js.UndefOr[NavigationScreenProp[State, NavigationParams]] = js.native
+  var navigation: js.UndefOr[NavigationScreenProp[State, NavigationParams]] = js.undefined
   
-  var navigationOptions: js.UndefOr[Options] = js.native
+  var navigationOptions: js.UndefOr[Options] = js.undefined
   
   // defaults to true
   var onNavigationStateChange: js.UndefOr[
@@ -33,23 +31,23 @@ trait NavigationContainerProps[State, Options, ScreenProps] extends StObject {
       /* action */ NavigationAction, 
       js.UndefOr[Unit | Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var persistNavigationState: js.UndefOr[js.Function1[/* state */ NavigationState, js.Promise[_]]] = js.native
+  var persistNavigationState: js.UndefOr[js.Function1[/* state */ NavigationState, js.Promise[js.Any]]] = js.undefined
   
   /*
     * This prop is no longer supported. Use `loadNavigationState` and
     * `persistNavigationState` instead.
     */
-  var persistenceKey: js.UndefOr[String | Null] = js.native
+  var persistenceKey: js.UndefOr[String | Null] = js.undefined
   
-  var renderLoadingExperimental: js.UndefOr[ComponentType[js.Object]] = js.native
+  var renderLoadingExperimental: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var screenProps: js.UndefOr[ScreenProps] = js.native
+  var screenProps: js.UndefOr[ScreenProps] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var uriPrefix: js.UndefOr[String | RegExp] = js.native
+  var uriPrefix: js.UndefOr[String | RegExp] = js.undefined
 }
 object NavigationContainerProps {
   
@@ -60,7 +58,7 @@ object NavigationContainerProps {
   }
   
   @scala.inline
-  implicit class NavigationContainerPropsMutableBuilder[Self <: NavigationContainerProps[_, _, _], State, Options, ScreenProps] (val x: Self with (NavigationContainerProps[State, Options, ScreenProps])) extends AnyVal {
+  implicit class NavigationContainerPropsMutableBuilder[Self <: NavigationContainerProps[?, ?, ?], State, Options, ScreenProps] (val x: Self & (NavigationContainerProps[State, Options, ScreenProps])) extends AnyVal {
     
     @scala.inline
     def setEnableURLHandling(value: Boolean): Self = StObject.set(x, "enableURLHandling", value.asInstanceOf[js.Any])
@@ -69,7 +67,7 @@ object NavigationContainerProps {
     def setEnableURLHandlingUndefined: Self = StObject.set(x, "enableURLHandling", js.undefined)
     
     @scala.inline
-    def setLoadNavigationState(value: () => js.Promise[_]): Self = StObject.set(x, "loadNavigationState", js.Any.fromFunction0(value))
+    def setLoadNavigationState(value: () => js.Promise[js.Any]): Self = StObject.set(x, "loadNavigationState", js.Any.fromFunction0(value))
     
     @scala.inline
     def setLoadNavigationStateUndefined: Self = StObject.set(x, "loadNavigationState", js.undefined)
@@ -95,7 +93,7 @@ object NavigationContainerProps {
     def setOnNavigationStateChangeUndefined: Self = StObject.set(x, "onNavigationStateChange", js.undefined)
     
     @scala.inline
-    def setPersistNavigationState(value: /* state */ NavigationState => js.Promise[_]): Self = StObject.set(x, "persistNavigationState", js.Any.fromFunction1(value))
+    def setPersistNavigationState(value: /* state */ NavigationState => js.Promise[js.Any]): Self = StObject.set(x, "persistNavigationState", js.Any.fromFunction1(value))
     
     @scala.inline
     def setPersistNavigationStateUndefined: Self = StObject.set(x, "persistNavigationState", js.undefined)

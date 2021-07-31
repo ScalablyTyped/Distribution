@@ -2,21 +2,19 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The ARN of the topic to which to add tags.
     */
-  var ResourceArn: AmazonResourceName = js.native
+  var ResourceArn: AmazonResourceName
   
   /**
     * The tags to be added to the specified topic. A tag consists of a required key and an optional value.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object TagResourceRequest {
   

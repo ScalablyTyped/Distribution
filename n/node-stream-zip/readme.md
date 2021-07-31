@@ -11,8 +11,8 @@ node.js library for reading and extraction of ZIP archives
 | Full name          | node-stream-zip |
 | Keywords           | zip, archive, unzip, stream |
 | # releases         | 18 |
-| # dependents       | 91 |
-| # downloads        | 8987811 |
+| # dependents       | 107 |
+| # downloads        | 15150824 |
 | # stars            | 3 |
 
 ## Links

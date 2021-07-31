@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * may be implemented to hide the complexity of dropping a database catalog. Could normally be used only in offline mode, no connection on the database.
   * This should be checked by the driver.
   */
-@js.native
-trait XDropCatalog extends XInterface {
+trait XDropCatalog
+  extends StObject
+     with XInterface {
   
   /**
     * drops a catalog identified by its name.
@@ -22,7 +22,7 @@ trait XDropCatalog extends XInterface {
     * @param info driver specific information
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def dropCatalog(catalogName: String, info: SeqEquiv[PropertyValue]): Unit = js.native
+  def dropCatalog(catalogName: String, info: SeqEquiv[PropertyValue]): Unit
 }
 object XDropCatalog {
   

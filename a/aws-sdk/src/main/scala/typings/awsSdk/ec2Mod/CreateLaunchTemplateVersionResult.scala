@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLaunchTemplateVersionResult extends StObject {
   
   /**
     * Information about the launch template version.
     */
-  var LaunchTemplateVersion: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateVersion] = js.native
+  var LaunchTemplateVersion: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateVersion] = js.undefined
   
   /**
     * If the new version of the launch template contains parameters or parameter combinations that are not valid, an error code and an error message are returned for each issue that's found.
     */
-  var Warning: js.UndefOr[ValidationWarning] = js.native
+  var Warning: js.UndefOr[ValidationWarning] = js.undefined
 }
 object CreateLaunchTemplateVersionResult {
   

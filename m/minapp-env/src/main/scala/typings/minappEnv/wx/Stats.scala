@@ -2,34 +2,32 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 描述文件状态的对象 */
-@js.native
 trait Stats extends StObject {
   
   /** [boolean Stats.isDirectory()](Stats.isDirectory.md)
     *
     * 判断当前文件是否一个目录 */
-  def isDirectory(): Boolean = js.native
+  def isDirectory(): Boolean
   
   /** [boolean Stats.isFile()](Stats.isFile.md)
     *
     * 判断当前文件是否一个普通文件 */
-  def isFile(): Boolean = js.native
+  def isFile(): Boolean
   
   /** 文件最近一次被存取或被执行的时间，UNIX 时间戳，对应 POSIX stat.st_atime */
-  var lastAccessedTime: Double = js.native
+  var lastAccessedTime: Double
   
   /** 文件最后一次被修改的时间，UNIX 时间戳，对应 POSIX stat.st_mtime */
-  var lastModifiedTime: Double = js.native
+  var lastModifiedTime: Double
   
   /** 文件的类型和存取的权限，对应 POSIX stat.st_mode */
-  var mode: String = js.native
+  var mode: String
   
   /** 文件大小，单位：B，对应 POSIX stat.st_size */
-  var size: Double = js.native
+  var size: Double
 }
 object Stats {
   

@@ -2,29 +2,27 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadioMixinOptions extends StObject {
   
   /**
     * Defines the Radio channel that will be used for the requests and/or
     * events.
     */
-  var channelName: js.UndefOr[String] = js.native
+  var channelName: js.UndefOr[String] = js.undefined
   
   /**
     * Defines an events hash with the events to be listened and its respective
     * handlers.
     */
-  var radioEvents: js.UndefOr[js.Any] = js.native
+  var radioEvents: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Defines an events hash with the requests to be replied and its respective
     * handlers
     */
-  var radioRequests: js.UndefOr[js.Any] = js.native
+  var radioRequests: js.UndefOr[js.Any] = js.undefined
 }
 object RadioMixinOptions {
   

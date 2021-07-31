@@ -2,60 +2,58 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexOptionsMod {
   
-  @js.native
   trait IndexOptions extends StObject {
     
     /**
       * Builds the index in the background so that building an index an does not block other database activities.
       * This option is only supported for mongodb database.
       */
-    var background: js.UndefOr[Boolean] = js.native
+    var background: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies a time to live, in seconds.
       * This option is only supported for mongodb database.
       */
-    var expireAfterSeconds: js.UndefOr[Double] = js.native
+    var expireAfterSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * The FULLTEXT modifier indexes the entire column and does not allow prefixing.
       * Works only in MySQL.
       */
-    var fulltext: js.UndefOr[Boolean] = js.native
+    var fulltext: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Fulltext parser.
       * Works only in MySQL.
       */
-    var parser: js.UndefOr[String] = js.native
+    var parser: js.UndefOr[String] = js.undefined
     
     /**
       * If true, the index only references documents with the specified field.
       * These indexes use less space but behave differently in some situations (particularly sorts).
       * This option is only supported for mongodb database.
       */
-    var sparse: js.UndefOr[Boolean] = js.native
+    var sparse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The SPATIAL modifier indexes the entire column and does not allow indexed columns to contain NULL values.
       * Works only in MySQL and PostgreSQL.
       */
-    var spatial: js.UndefOr[Boolean] = js.native
+    var spatial: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if this composite index must be unique or not.
       */
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Index filter condition.
       */
-    var where: js.UndefOr[String] = js.native
+    var where: js.UndefOr[String] = js.undefined
   }
   object IndexOptions {
     

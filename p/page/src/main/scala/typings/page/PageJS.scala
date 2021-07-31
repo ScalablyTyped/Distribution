@@ -7,7 +7,6 @@ import typings.page.anon.PartialOptions
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PageJS {
@@ -19,7 +18,8 @@ object PageJS {
     */
   @js.native
   trait Context
-    extends /* idx */ StringDictionary[js.Any]
+    extends StObject
+       with /* idx */ StringDictionary[js.Any]
        with /**
     * Initialize a new "request" `Context` with the given `path` and optional initial `state`.
     * @param {string} path  path
@@ -79,33 +79,32 @@ object PageJS {
     var title: String = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * bind to click events (default = true)
       */
-    var click: Boolean = js.native
+    var click: Boolean
     
     /**
       * remove URL encoding frfrom path components
       */
-    var decodeURLComponents: Boolean = js.native
+    var decodeURLComponents: Boolean
     
     /**
       * perform initial dispatch (default = true)
       */
-    var dispatch: Boolean = js.native
+    var dispatch: Boolean
     
     /**
       * add #!before urls (default = false)
       */
-    var hashbang: Boolean = js.native
+    var hashbang: Boolean
     
     /**
       * bind to popstate (default = true)
       */
-    var popstate: Boolean = js.native
+    var popstate: Boolean
   }
   object Options {
     
@@ -143,7 +142,8 @@ object PageJS {
   
   @js.native
   trait Route
-    extends /**
+    extends StObject
+       with /**
     * Initialize `Route` with the given HTTP `path` & `options`
     * @param {string}  path    path
     * @param {Options} options Options
@@ -167,20 +167,19 @@ object PageJS {
     def middleware(fn: Callback): Callback = js.native
   }
   
-  @js.native
   trait RouteOptions extends StObject {
     
     /**
       * enable case-sensitive routes
       * @type {[type]}
       */
-    var sensitive: js.UndefOr[Boolean] = js.native
+    var sensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * enable strict matching for trailing slashes
       * @type {[type]}
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object RouteOptions {
     
@@ -338,13 +337,13 @@ object PageJS {
       *
       */
     def replace(path: String): Context = js.native
-    def replace(path: String, state: js.UndefOr[scala.Nothing], init: js.UndefOr[scala.Nothing], dispatch: Boolean): Context = js.native
-    def replace(path: String, state: js.UndefOr[scala.Nothing], init: Boolean): Context = js.native
-    def replace(path: String, state: js.UndefOr[scala.Nothing], init: Boolean, dispatch: Boolean): Context = js.native
     def replace(path: String, state: js.Any): Context = js.native
-    def replace(path: String, state: js.Any, init: js.UndefOr[scala.Nothing], dispatch: Boolean): Context = js.native
     def replace(path: String, state: js.Any, init: Boolean): Context = js.native
     def replace(path: String, state: js.Any, init: Boolean, dispatch: Boolean): Context = js.native
+    def replace(path: String, state: js.Any, init: Unit, dispatch: Boolean): Context = js.native
+    def replace(path: String, state: Unit, init: Boolean): Context = js.native
+    def replace(path: String, state: Unit, init: Boolean, dispatch: Boolean): Context = js.native
+    def replace(path: String, state: Unit, init: Unit, dispatch: Boolean): Context = js.native
     
     /**
       *  Navigate to the given path.

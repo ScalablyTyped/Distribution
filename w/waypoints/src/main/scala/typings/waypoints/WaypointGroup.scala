@@ -2,21 +2,19 @@ package typings.waypoints
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaypointGroup extends StObject {
   
-  var axis: String = js.native
+  var axis: String
   
-  def first(): Waypoint = js.native
+  def first(): Waypoint
   
-  def last(): Waypoint = js.native
+  def last(): Waypoint
   
-  var name: String = js.native
+  var name: String
   
-  var waypoints: js.Array[Waypoint] = js.native
+  var waypoints: js.Array[Waypoint]
 }
 object WaypointGroup {
   

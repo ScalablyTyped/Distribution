@@ -1,183 +1,146 @@
 package typings.nodemailer
 
 import typings.nodemailer.anon.Host
-import typings.nodemailer.mailerMod.^
 import typings.nodemailer.nodemailerBooleans.`false`
 import typings.nodemailer.nodemailerBooleans.`true`
 import typings.nodemailer.smtpTransportMod.Options
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("nodemailer", "createTestAccount")
+  @JSImport("nodemailer", JSImport.Namespace)
   @js.native
-  def createTestAccount(): js.Promise[TestAccount] = js.native
-  @JSImport("nodemailer", "createTestAccount")
-  @js.native
-  def createTestAccount(apiUrl: String): js.Promise[TestAccount] = js.native
-  @JSImport("nodemailer", "createTestAccount")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createTestAccount(): js.Promise[TestAccount] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTestAccount")().asInstanceOf[js.Promise[TestAccount]]
+  @scala.inline
+  def createTestAccount(apiUrl: String): js.Promise[TestAccount] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTestAccount")(apiUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TestAccount]]
+  @scala.inline
   def createTestAccount(
     apiUrl: String,
     callback: js.Function2[/* err */ Error | Null, /* testAccount */ TestAccount, Unit]
-  ): Unit = js.native
-  @JSImport("nodemailer", "createTestAccount")
-  @js.native
-  def createTestAccount(callback: js.Function2[/* err */ Error | Null, /* testAccount */ TestAccount, Unit]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTestAccount")(apiUrl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createTestAccount(callback: js.Function2[/* err */ Error | Null, /* testAccount */ TestAccount, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createTestAccount")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: js.UndefOr[scala.Nothing], defaults: Options): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: String): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: String, defaults: Options): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.jsonTransportMod.Options): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
+  @scala.inline
+  def createTransport(): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")().asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: String): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: String, defaults: Options): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: Unit, defaults: Options): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.jsonTransportMod.Options): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
   def createTransport(
     transport: typings.nodemailer.jsonTransportMod.Options,
     defaults: typings.nodemailer.jsonTransportMod.Options
-  ): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.jsonTransportMod.^): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
+  ): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.jsonTransportMod.^): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
   def createTransport(
     transport: typings.nodemailer.jsonTransportMod.^,
     defaults: typings.nodemailer.jsonTransportMod.Options
-  ): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: Transport): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: TransportOptions): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: TransportOptions, defaults: TransportOptions): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: Transport, defaults: TransportOptions): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.sendmailTransportMod.Options): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
+  ): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: Transport): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: TransportOptions): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: TransportOptions, defaults: TransportOptions): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: Transport, defaults: TransportOptions): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.sendmailTransportMod.Options): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
   def createTransport(
     transport: typings.nodemailer.sendmailTransportMod.Options,
     defaults: typings.nodemailer.sendmailTransportMod.Options
-  ): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.sendmailTransportMod.^): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
+  ): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.sendmailTransportMod.^): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
   def createTransport(
     transport: typings.nodemailer.sendmailTransportMod.^,
     defaults: typings.nodemailer.sendmailTransportMod.Options
-  ): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.sesTransportMod.Options): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
+  ): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.sesTransportMod.Options): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
   def createTransport(
     transport: typings.nodemailer.sesTransportMod.Options,
     defaults: typings.nodemailer.sesTransportMod.Options
-  ): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.sesTransportMod.^): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
+  ): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.sesTransportMod.^): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
   def createTransport(
     transport: typings.nodemailer.sesTransportMod.^,
     defaults: typings.nodemailer.sesTransportMod.Options
-  ): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.smtpPoolMod.Options): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
+  ): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.smtpPoolMod.Options): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
   def createTransport(
     transport: typings.nodemailer.smtpPoolMod.Options,
     defaults: typings.nodemailer.smtpPoolMod.Options
-  ): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.smtpPoolMod.^): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.smtpPoolMod.^, defaults: typings.nodemailer.smtpPoolMod.Options): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: Options): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: Options, defaults: Options): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.smtpTransportMod.^): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.smtpTransportMod.^, defaults: Options): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.streamTransportMod.Options): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
+  ): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.smtpPoolMod.^): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.smtpPoolMod.^, defaults: typings.nodemailer.smtpPoolMod.Options): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: Options): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: Options, defaults: Options): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.smtpTransportMod.^): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.smtpTransportMod.^, defaults: Options): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.streamTransportMod.Options): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
   def createTransport(
     transport: typings.nodemailer.streamTransportMod.Options,
     defaults: typings.nodemailer.streamTransportMod.Options
-  ): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
-  def createTransport(transport: typings.nodemailer.streamTransportMod.^): ^ = js.native
-  @JSImport("nodemailer", "createTransport")
-  @js.native
+  ): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
+  def createTransport(transport: typings.nodemailer.streamTransportMod.^): typings.nodemailer.mailerMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[typings.nodemailer.mailerMod.^]
+  @scala.inline
   def createTransport(
     transport: typings.nodemailer.streamTransportMod.^,
     defaults: typings.nodemailer.streamTransportMod.Options
-  ): ^ = js.native
+  ): typings.nodemailer.mailerMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.nodemailer.mailerMod.^]
   
-  @JSImport("nodemailer", "getTestMessageUrl")
-  @js.native
-  def getTestMessageUrl(info: typings.nodemailer.sesTransportMod.SentMessageInfo): String | `false` = js.native
-  @JSImport("nodemailer", "getTestMessageUrl")
-  @js.native
-  def getTestMessageUrl(info: typings.nodemailer.smtpTransportMod.SentMessageInfo): String | `false` = js.native
+  @scala.inline
+  def getTestMessageUrl(info: typings.nodemailer.sesTransportMod.SentMessageInfo): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("getTestMessageUrl")(info.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  @scala.inline
+  def getTestMessageUrl(info: typings.nodemailer.smtpTransportMod.SentMessageInfo): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("getTestMessageUrl")(info.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
   
   type SendMailOptions = typings.nodemailer.mailerMod.Options
   
   type SentMessageInfo = js.Any
   
-  @js.native
   trait TestAccount extends StObject {
     
-    var imap: Host = js.native
+    var imap: Host
     
-    var pass: String = js.native
+    var pass: String
     
-    var pop3: Host = js.native
+    var pop3: Host
     
-    var smtp: Host = js.native
+    var smtp: Host
     
-    var user: String = js.native
+    var user: String
     
-    var web: String = js.native
+    var web: String
   }
   object TestAccount {
     
@@ -210,25 +173,24 @@ object mod {
     }
   }
   
-  @js.native
   trait Transport extends StObject {
     
-    var close: js.UndefOr[js.Function0[Unit]] = js.native
+    var close: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var mailer: js.UndefOr[^] = js.native
+    var mailer: js.UndefOr[typings.nodemailer.mailerMod.^] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
     def send(
       mail: typings.nodemailer.mailMessageMod.^,
       callback: js.Function2[/* err */ Error | Null, /* info */ SentMessageInfo, Unit]
-    ): Unit = js.native
+    ): Unit
     
     var verify: (js.UndefOr[
         js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
-      ]) with js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
+      ]) & js.UndefOr[js.Function0[js.Promise[`true`]]]
     
-    var version: String = js.native
+    var version: String
   }
   object Transport {
     
@@ -238,7 +200,7 @@ object mod {
       send: (typings.nodemailer.mailMessageMod.^, js.Function2[/* err */ Error | Null, /* info */ SentMessageInfo, Unit]) => Unit,
       verify: (js.UndefOr[
           js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
-        ]) with js.UndefOr[js.Function0[js.Promise[`true`]]],
+        ]) & js.UndefOr[js.Function0[js.Promise[`true`]]],
       version: String
     ): Transport = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], send = js.Any.fromFunction2(send), verify = verify.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
@@ -255,7 +217,7 @@ object mod {
       def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
       @scala.inline
-      def setMailer(value: ^): Self = StObject.set(x, "mailer", value.asInstanceOf[js.Any])
+      def setMailer(value: typings.nodemailer.mailerMod.^): Self = StObject.set(x, "mailer", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMailerUndefined: Self = StObject.set(x, "mailer", js.undefined)
@@ -272,7 +234,7 @@ object mod {
       def setVerify(
         value: (js.UndefOr[
               js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
-            ]) with js.UndefOr[js.Function0[js.Promise[`true`]]]
+            ]) & js.UndefOr[js.Function0[js.Promise[`true`]]]
       ): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -280,10 +242,9 @@ object mod {
     }
   }
   
-  @js.native
   trait TransportOptions extends StObject {
     
-    var component: js.UndefOr[String] = js.native
+    var component: js.UndefOr[String] = js.undefined
   }
   object TransportOptions {
     
@@ -304,5 +265,5 @@ object mod {
     }
   }
   
-  type Transporter = ^
+  type Transporter = typings.nodemailer.mailerMod.^
 }

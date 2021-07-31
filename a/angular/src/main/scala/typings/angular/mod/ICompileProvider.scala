@@ -5,11 +5,12 @@ import typings.angular.JQLite
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICompileProvider extends IServiceProvider {
+trait ICompileProvider
+  extends StObject
+     with IServiceProvider {
   
   def aHrefSanitizationTrustedUrlList(): RegExp = js.native
   def aHrefSanitizationTrustedUrlList(regexp: RegExp): ICompileProvider = js.native

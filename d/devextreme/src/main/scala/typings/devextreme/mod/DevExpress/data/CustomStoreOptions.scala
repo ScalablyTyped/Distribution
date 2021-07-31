@@ -7,50 +7,55 @@ import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomStoreOptions extends StoreOptions[CustomStore] {
+trait CustomStoreOptions
+  extends StObject
+     with StoreOptions[CustomStore] {
   
   /**
     * [descr:CustomStore.Options.byKey]
     */
-  var byKey: js.UndefOr[js.Function1[/* key */ js.Any | String | Double, Promise[_] | JQueryPromise[_]]] = js.native
+  var byKey: js.UndefOr[
+    js.Function1[/* key */ js.Any | String | Double, Promise[js.Any] | JQueryPromise[js.Any]]
+  ] = js.undefined
   
   /**
     * [descr:CustomStore.Options.cacheRawData]
     */
-  var cacheRawData: js.UndefOr[Boolean] = js.native
+  var cacheRawData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:CustomStore.Options.insert]
     */
-  var insert: js.UndefOr[js.Function1[/* values */ js.Any, Promise[_] | JQueryPromise[_]]] = js.native
+  var insert: js.UndefOr[js.Function1[/* values */ js.Any, Promise[js.Any] | JQueryPromise[js.Any]]] = js.undefined
   
   /**
     * [descr:CustomStore.Options.load]
     */
   var load: js.UndefOr[
-    js.Function1[/* options */ LoadOptions, Promise[_] | JQueryPromise[_] | js.Array[_]]
-  ] = js.native
+    js.Function1[
+      /* options */ LoadOptions, 
+      Promise[js.Any] | JQueryPromise[js.Any] | js.Array[js.Any]
+    ]
+  ] = js.undefined
   
   /**
     * [descr:CustomStore.Options.loadMode]
     */
-  var loadMode: js.UndefOr[processed | raw] = js.native
+  var loadMode: js.UndefOr[processed | raw] = js.undefined
   
   /**
     * [descr:CustomStore.Options.remove]
     */
   var remove: js.UndefOr[
     js.Function1[/* key */ js.Any | String | Double, Promise[Unit] | JQueryPromise[Unit]]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * [descr:CustomStore.Options.totalCount]
     */
-  var totalCount: js.UndefOr[js.Function1[/* loadOptions */ Filter, Promise[Double] | JQueryPromise[Double]]] = js.native
+  var totalCount: js.UndefOr[js.Function1[/* loadOptions */ Filter, Promise[Double] | JQueryPromise[Double]]] = js.undefined
   
   /**
     * [descr:CustomStore.Options.update]
@@ -59,14 +64,14 @@ trait CustomStoreOptions extends StoreOptions[CustomStore] {
     js.Function2[
       /* key */ js.Any | String | Double, 
       /* values */ js.Any, 
-      Promise[_] | JQueryPromise[_]
+      Promise[js.Any] | JQueryPromise[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * [descr:CustomStore.Options.useDefaultSearch]
     */
-  var useDefaultSearch: js.UndefOr[Boolean] = js.native
+  var useDefaultSearch: js.UndefOr[Boolean] = js.undefined
 }
 object CustomStoreOptions {
   
@@ -80,7 +85,7 @@ object CustomStoreOptions {
   implicit class CustomStoreOptionsMutableBuilder[Self <: CustomStoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setByKey(value: /* key */ js.Any | String | Double => Promise[_] | JQueryPromise[_]): Self = StObject.set(x, "byKey", js.Any.fromFunction1(value))
+    def setByKey(value: /* key */ js.Any | String | Double => Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "byKey", js.Any.fromFunction1(value))
     
     @scala.inline
     def setByKeyUndefined: Self = StObject.set(x, "byKey", js.undefined)
@@ -92,13 +97,13 @@ object CustomStoreOptions {
     def setCacheRawDataUndefined: Self = StObject.set(x, "cacheRawData", js.undefined)
     
     @scala.inline
-    def setInsert(value: /* values */ js.Any => Promise[_] | JQueryPromise[_]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    def setInsert(value: /* values */ js.Any => Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
     @scala.inline
-    def setLoad(value: /* options */ LoadOptions => Promise[_] | JQueryPromise[_] | js.Array[_]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    def setLoad(value: /* options */ LoadOptions => Promise[js.Any] | JQueryPromise[js.Any] | js.Array[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     @scala.inline
     def setLoadMode(value: processed | raw): Self = StObject.set(x, "loadMode", value.asInstanceOf[js.Any])
@@ -122,7 +127,9 @@ object CustomStoreOptions {
     def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
     
     @scala.inline
-    def setUpdate(value: (/* key */ js.Any | String | Double, /* values */ js.Any) => Promise[_] | JQueryPromise[_]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    def setUpdate(
+      value: (/* key */ js.Any | String | Double, /* values */ js.Any) => Promise[js.Any] | JQueryPromise[js.Any]
+    ): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     
     @scala.inline
     def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)

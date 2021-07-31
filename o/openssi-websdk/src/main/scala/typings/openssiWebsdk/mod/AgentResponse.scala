@@ -2,17 +2,15 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentResponse extends StObject {
   
-  var did: DID = js.native
+  var did: DID
   
-  var name: AgentName = js.native
+  var name: AgentName
   
-  var results: js.Array[CredentialDefinition | CredentialSchema] = js.native
+  var results: js.Array[CredentialDefinition | CredentialSchema]
 }
 object AgentResponse {
   

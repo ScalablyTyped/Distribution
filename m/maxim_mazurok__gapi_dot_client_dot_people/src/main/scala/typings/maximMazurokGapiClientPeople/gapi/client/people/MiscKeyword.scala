@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MiscKeyword extends StObject {
   
   /** Output only. The type of the miscellaneous keyword translated and formatted in the viewer's account locale or the `Accept-Language` HTTP header locale. */
-  var formattedType: js.UndefOr[String] = js.native
+  var formattedType: js.UndefOr[String] = js.undefined
   
   /** Metadata about the miscellaneous keyword. */
-  var metadata: js.UndefOr[FieldMetadata] = js.native
+  var metadata: js.UndefOr[FieldMetadata] = js.undefined
   
   /** The miscellaneous keyword type. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** The value of the miscellaneous keyword. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object MiscKeyword {
   

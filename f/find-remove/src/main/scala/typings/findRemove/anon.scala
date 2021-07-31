@@ -2,40 +2,38 @@ package typings.findRemove
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Age extends StObject {
     
     /** can be any float number. findRemoveSync then compares it with the file stats and deletes those with modification times older than age.seconds */
-    var age: js.UndefOr[Seconds] = js.native
+    var age: js.UndefOr[Seconds] = js.undefined
     
     /** can be a string or an array of directories you want to delete within dir. */
-    var dir: js.UndefOr[String | js.Array[String]] = js.native
+    var dir: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** this too, can be a string or an array of file extentions you want to delete within dir */
-    var extensions: js.UndefOr[String | js.Array[String]] = js.native
+    var extensions: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** can be a string or an array of files you want to delete within dir */
-    var files: js.UndefOr[String | js.Array[String]] = js.native
+    var files: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** useful to exclude some files. again, can be a string or an array of file names you do NOT want to delete within dir */
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** can be any integer number. Will limit the number of files to be deleted at single operation to be limit */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /** advanced: limits filtering to a certain level. useful for performance. recommended for crawling huge directory trees */
-    var maxLevel: js.UndefOr[Double] = js.native
+    var maxLevel: js.UndefOr[Double] = js.undefined
     
     /** can be any string. Will delete any files that start with prefix */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /** advanced: set to true for a test run, meaning it does not delete anything but returns a JSON of files/directories it would have deleted. useful for testing. */
-    var test: js.UndefOr[Boolean] = js.native
+    var test: js.UndefOr[Boolean] = js.undefined
   }
   object Age {
     
@@ -116,10 +114,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Seconds extends StObject {
     
-    var seconds: Double = js.native
+    var seconds: Double
   }
   object Seconds {
     

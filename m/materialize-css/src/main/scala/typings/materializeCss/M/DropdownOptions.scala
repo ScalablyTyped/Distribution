@@ -5,89 +5,87 @@ import typings.materializeCss.materializeCssStrings.right
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropdownOptions extends StObject {
   
   /**
     * Defines the edge the menu is aligned to
     * @default 'left'
     */
-  var alignment: left | right = js.native
+  var alignment: left | right
   
   /**
     * If true, automatically focus dropdown el for keyboard
     * @default true
     */
-  var autoTrigger: Boolean = js.native
+  var autoTrigger: Boolean
   
   /**
     * If true, close dropdown on item click
     * @default true
     */
-  var closeOnClick: Boolean = js.native
+  var closeOnClick: Boolean
   
   /**
     * If true, constrainWidth to the size of the dropdown activator
     * @default true
     */
-  var constrainWidth: Boolean = js.native
+  var constrainWidth: Boolean
   
   /**
     * Provide an element that will be the bounding container of the dropdown
     * @default null
     */
-  var container: Element = js.native
+  var container: Element
   
   /**
     * If false, the dropdown will show below the trigger
     * @default true
     */
-  var coverTrigger: Boolean = js.native
+  var coverTrigger: Boolean
   
   /**
     * If true, the dropdown will open on hover
     * @default false
     */
-  var hover: Boolean = js.native
+  var hover: Boolean
   
   /**
     * The duration of the transition enter in milliseconds
     * @default 150
     */
-  var inDuration: Double = js.native
+  var inDuration: Double
   
   /**
     * Function called when dropdown finishes exiting
     * @default null
     */
-  def onCloseEnd(el: Element): Unit = js.native
+  def onCloseEnd(el: Element): Unit
   
   /**
     * Function called when dropdown starts exiting
     * @default null
     */
-  def onCloseStart(el: Element): Unit = js.native
+  def onCloseStart(el: Element): Unit
   
   /**
     * Function called when dropdown finishes entering
     * @default null
     */
-  def onOpenEnd(el: Element): Unit = js.native
+  def onOpenEnd(el: Element): Unit
   
   /**
     * Function called when dropdown starts entering
     * @default null
     */
-  def onOpenStart(el: Element): Unit = js.native
+  def onOpenStart(el: Element): Unit
   
   /**
     * The duration of the transition out in milliseconds
     * @default 250
     */
-  var outDuration: Double = js.native
+  var outDuration: Double
 }
 object DropdownOptions {
   

@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Calendar extends StObject {
   
   /** Conferencing properties for this calendar, for example what types of conferences are allowed. */
-  var conferenceProperties: js.UndefOr[ConferenceProperties] = js.native
+  var conferenceProperties: js.UndefOr[ConferenceProperties] = js.undefined
   
   /** Description of the calendar. Optional. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** ETag of the resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Identifier of the calendar. To retrieve IDs call the calendarList.list() method. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Type of the resource ("calendar#calendar"). */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Geographic location of the calendar as free-form text. Optional. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** Title of the calendar. */
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
   /** The time zone of the calendar. (Formatted as an IANA Time Zone Database name, e.g. "Europe/Zurich".) Optional. */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object Calendar {
   

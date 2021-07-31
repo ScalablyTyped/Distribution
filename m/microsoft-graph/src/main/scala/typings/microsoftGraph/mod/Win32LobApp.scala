@@ -2,50 +2,50 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Win32LobApp extends MobileLobApp {
+trait Win32LobApp
+  extends StObject
+     with MobileLobApp {
   
   // The Windows architecture(s) for which this app can run on. Possible values are: none, x86, x64, arm, neutral.
-  var applicableArchitectures: js.UndefOr[WindowsArchitecture] = js.native
+  var applicableArchitectures: js.UndefOr[WindowsArchitecture] = js.undefined
   
   // The command line to install this app
-  var installCommandLine: js.UndefOr[NullableOption[String]] = js.native
+  var installCommandLine: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The install experience for this app.
-  var installExperience: js.UndefOr[NullableOption[Win32LobAppInstallExperience]] = js.native
+  var installExperience: js.UndefOr[NullableOption[Win32LobAppInstallExperience]] = js.undefined
   
   // The value for the minimum CPU speed which is required to install this app.
-  var minimumCpuSpeedInMHz: js.UndefOr[NullableOption[Double]] = js.native
+  var minimumCpuSpeedInMHz: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The value for the minimum free disk space which is required to install this app.
-  var minimumFreeDiskSpaceInMB: js.UndefOr[NullableOption[Double]] = js.native
+  var minimumFreeDiskSpaceInMB: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The value for the minimum physical memory which is required to install this app.
-  var minimumMemoryInMB: js.UndefOr[NullableOption[Double]] = js.native
+  var minimumMemoryInMB: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The value for the minimum number of processors which is required to install this app.
-  var minimumNumberOfProcessors: js.UndefOr[NullableOption[Double]] = js.native
+  var minimumNumberOfProcessors: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The value for the minimum supported windows release.
-  var minimumSupportedWindowsRelease: js.UndefOr[NullableOption[String]] = js.native
+  var minimumSupportedWindowsRelease: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The MSI details if this Win32 app is an MSI app.
-  var msiInformation: js.UndefOr[NullableOption[Win32LobAppMsiInformation]] = js.native
+  var msiInformation: js.UndefOr[NullableOption[Win32LobAppMsiInformation]] = js.undefined
   
   // The return codes for post installation behavior.
-  var returnCodes: js.UndefOr[NullableOption[js.Array[Win32LobAppReturnCode]]] = js.native
+  var returnCodes: js.UndefOr[NullableOption[js.Array[Win32LobAppReturnCode]]] = js.undefined
   
   // The detection and requirement rules for this app.
-  var rules: js.UndefOr[NullableOption[js.Array[Win32LobAppRule]]] = js.native
+  var rules: js.UndefOr[NullableOption[js.Array[Win32LobAppRule]]] = js.undefined
   
   // The relative path of the setup file in the encrypted Win32LobApp package.
-  var setupFilePath: js.UndefOr[NullableOption[String]] = js.native
+  var setupFilePath: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The command line to uninstall this app
-  var uninstallCommandLine: js.UndefOr[NullableOption[String]] = js.native
+  var uninstallCommandLine: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Win32LobApp {
   

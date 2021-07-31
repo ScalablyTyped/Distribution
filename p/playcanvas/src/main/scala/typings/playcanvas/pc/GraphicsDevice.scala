@@ -4,7 +4,6 @@ import typings.playcanvas.anon.Base
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options] - Options passed when creating the WebGL context. More info {@link https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext here}.
   */
 @js.native
-trait GraphicsDevice extends EventHandler {
+trait GraphicsDevice
+  extends StObject
+     with EventHandler {
   
   /**
     * The canvas DOM element that provides the underlying WebGL context used by the graphics device.
@@ -72,18 +73,13 @@ trait GraphicsDevice extends EventHandler {
     * @returns True if the copy was successful, false otherwise.
     */
   def copyRenderTarget(source: RenderTarget): Boolean = js.native
-  def copyRenderTarget(
-    source: RenderTarget,
-    dest: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[scala.Nothing],
-    depth: Boolean
-  ): Boolean = js.native
-  def copyRenderTarget(source: RenderTarget, dest: js.UndefOr[scala.Nothing], color: Boolean): Boolean = js.native
-  def copyRenderTarget(source: RenderTarget, dest: js.UndefOr[scala.Nothing], color: Boolean, depth: Boolean): Boolean = js.native
+  def copyRenderTarget(source: RenderTarget, dest: Unit, color: Boolean): Boolean = js.native
+  def copyRenderTarget(source: RenderTarget, dest: Unit, color: Boolean, depth: Boolean): Boolean = js.native
+  def copyRenderTarget(source: RenderTarget, dest: Unit, color: Unit, depth: Boolean): Boolean = js.native
   def copyRenderTarget(source: RenderTarget, dest: RenderTarget): Boolean = js.native
-  def copyRenderTarget(source: RenderTarget, dest: RenderTarget, color: js.UndefOr[scala.Nothing], depth: Boolean): Boolean = js.native
   def copyRenderTarget(source: RenderTarget, dest: RenderTarget, color: Boolean): Boolean = js.native
   def copyRenderTarget(source: RenderTarget, dest: RenderTarget, color: Boolean, depth: Boolean): Boolean = js.native
+  def copyRenderTarget(source: RenderTarget, dest: RenderTarget, color: Unit, depth: Boolean): Boolean = js.native
   
   /**
     * Submits a graphical primitive to the hardware for immediate rendering.
@@ -112,9 +108,9 @@ trait GraphicsDevice extends EventHandler {
     * multiple views, for example under WebXR.
     */
   def draw(primitive: Base): Unit = js.native
-  def draw(primitive: Base, numInstances: js.UndefOr[scala.Nothing], keepBuffers: Boolean): Unit = js.native
   def draw(primitive: Base, numInstances: Double): Unit = js.native
   def draw(primitive: Base, numInstances: Double, keepBuffers: Boolean): Unit = js.native
+  def draw(primitive: Base, numInstances: Unit, keepBuffers: Boolean): Unit = js.native
   
   /**
     * Fullscreen mode.

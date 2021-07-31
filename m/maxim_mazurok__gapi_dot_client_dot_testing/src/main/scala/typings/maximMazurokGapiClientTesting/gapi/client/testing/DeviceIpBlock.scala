@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceIpBlock extends StObject {
   
   /** The date this block was added to Firebase Test Lab */
-  var addedDate: js.UndefOr[Date] = js.native
+  var addedDate: js.UndefOr[Date] = js.undefined
   
   /** An IP address block in CIDR notation eg: 34.68.194.64/29 */
-  var block: js.UndefOr[String] = js.native
+  var block: js.UndefOr[String] = js.undefined
   
   /** Whether this block is used by physical or virtual devices */
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
 }
 object DeviceIpBlock {
   

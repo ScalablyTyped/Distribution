@@ -2,17 +2,15 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiSortMeta extends StObject {
   
-  var multiSortMeta: js.Any = js.native
+  var multiSortMeta: js.Any
   
-  var sortField: String = js.native
+  var sortField: String
   
-  var sortOrder: Double = js.native
+  var sortOrder: Double
 }
 object MultiSortMeta {
   

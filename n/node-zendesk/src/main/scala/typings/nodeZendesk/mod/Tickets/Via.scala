@@ -2,15 +2,13 @@ package typings.nodeZendesk.mod.Tickets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Via extends StObject {
   
-  var channel: ViaChannel = js.native
+  var channel: ViaChannel
   
-  var source: ViaSource = js.native
+  var source: ViaSource
 }
 object Via {
   

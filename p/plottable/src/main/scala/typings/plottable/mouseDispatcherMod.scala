@@ -6,7 +6,6 @@ import typings.plottable.interfacesMod.Point
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mouseDispatcherMod {
@@ -181,9 +180,8 @@ object mouseDispatcherMod {
       * @param {SVGElement} elem
       * @return {Dispatchers.Mouse}
       */
-    @JSImport("plottable/build/src/dispatchers/mouseDispatcher", "Mouse.getDispatcher")
-    @js.native
-    def getDispatcher(component: Component): typings.plottable.dispatchersMod.Mouse = js.native
+    @scala.inline
+    def getDispatcher(component: Component): typings.plottable.dispatchersMod.Mouse = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.dispatchersMod.Mouse]
   }
   
   type MouseCallback = js.Function2[/* p */ Point, /* event */ MouseEvent, Unit]

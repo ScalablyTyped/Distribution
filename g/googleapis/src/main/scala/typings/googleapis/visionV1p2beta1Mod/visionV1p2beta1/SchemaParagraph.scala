@@ -2,13 +2,11 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Structural unit of text representing a number of words in certain order.
   */
-@js.native
 trait SchemaParagraph extends StObject {
   
   /**
@@ -21,22 +19,22 @@ trait SchemaParagraph extends StObject {
     * degrees around the top-left corner it becomes:      2----3      |    |
     * 1----0   and the vertex order will still be (0, 1, 2, 3).
     */
-  var boundingBox: js.UndefOr[SchemaBoundingPoly] = js.native
+  var boundingBox: js.UndefOr[SchemaBoundingPoly] = js.undefined
   
   /**
     * Confidence of the OCR results for the paragraph. Range [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Additional information detected for the paragraph.
     */
-  var property: js.UndefOr[SchemaTextProperty] = js.native
+  var property: js.UndefOr[SchemaTextProperty] = js.undefined
   
   /**
     * List of words in this paragraph.
     */
-  var words: js.UndefOr[js.Array[SchemaWord]] = js.native
+  var words: js.UndefOr[js.Array[SchemaWord]] = js.undefined
 }
 object SchemaParagraph {
   

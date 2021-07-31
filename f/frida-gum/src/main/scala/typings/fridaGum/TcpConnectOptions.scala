@@ -4,31 +4,31 @@ import typings.fridaGum.fridaGumStrings.ipv4
 import typings.fridaGum.fridaGumStrings.ipv6
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TcpConnectOptions extends SocketConnectOptions {
+trait TcpConnectOptions
+  extends StObject
+     with SocketConnectOptions {
   
   /**
     * Address family. Omit to determine based on the host specified.
     */
-  var family: js.UndefOr[ipv4 | ipv6] = js.native
+  var family: js.UndefOr[ipv4 | ipv6] = js.undefined
   
   /**
     * Host or IP address to connect to. Defaults to `localhost`.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * IP port to connect to.
     */
-  var port: Double = js.native
+  var port: Double
   
   /**
     * Whether to create a TLS connection. Defaults to `false`.
     */
-  var tls: js.UndefOr[Boolean] = js.native
+  var tls: js.UndefOr[Boolean] = js.undefined
 }
 object TcpConnectOptions {
   

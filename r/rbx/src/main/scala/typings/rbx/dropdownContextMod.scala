@@ -3,7 +3,6 @@ package typings.rbx
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownContextMod {
@@ -16,12 +15,11 @@ object dropdownContextMod {
   @js.native
   val initialValue: DropdownContextValue = js.native
   
-  @js.native
   trait DropdownContextValue extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    def setActive(value: Boolean): Unit = js.native
+    def setActive(value: Boolean): Unit
   }
   object DropdownContextValue {
     

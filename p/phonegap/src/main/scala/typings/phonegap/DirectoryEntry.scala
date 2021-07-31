@@ -2,11 +2,12 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectoryEntry extends FileSystemEntry {
+trait DirectoryEntry
+  extends StObject
+     with FileSystemEntry {
   
   def createReader(): DirectoryReader = js.native
   

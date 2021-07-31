@@ -2,21 +2,19 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MailComposerOptions extends StObject {
   
-  var charset: String = js.native
+  var charset: String
   
-  var encoding: String = js.native
+  var encoding: String
   
-  var escapeSMTP: Boolean = js.native
+  var escapeSMTP: Boolean
   
-  var forceEmbeddedImages: Boolean = js.native
+  var forceEmbeddedImages: Boolean
   
-  var keepBcc: Boolean = js.native
+  var keepBcc: Boolean
 }
 object MailComposerOptions {
   

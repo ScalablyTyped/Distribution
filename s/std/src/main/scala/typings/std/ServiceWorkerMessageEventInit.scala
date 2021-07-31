@@ -2,21 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServiceWorkerMessageEventInit extends EventInit {
+trait ServiceWorkerMessageEventInit
+  extends StObject
+     with EventInit {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var lastEventId: js.UndefOr[java.lang.String] = js.native
+  var lastEventId: js.UndefOr[java.lang.String] = js.undefined
   
-  var origin: js.UndefOr[java.lang.String] = js.native
+  var origin: js.UndefOr[java.lang.String] = js.undefined
   
-  var ports: js.UndefOr[js.Array[MessagePort] | Null] = js.native
+  var ports: js.UndefOr[js.Array[MessagePort] | Null] = js.undefined
   
-  var source: js.UndefOr[ServiceWorker | MessagePort | Null] = js.native
+  var source: js.UndefOr[ServiceWorker | MessagePort | Null] = js.undefined
 }
 object ServiceWorkerMessageEventInit {
   

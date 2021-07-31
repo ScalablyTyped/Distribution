@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamoDbSettings extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) used by the service access IAM role. 
     */
-  var ServiceAccessRoleArn: String = js.native
+  var ServiceAccessRoleArn: String
 }
 object DynamoDbSettings {
   

@@ -3,105 +3,105 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rdsGetOrderableDbInstanceMod {
   
-  @JSImport("@pulumi/aws/rds/getOrderableDbInstance", "getOrderableDbInstance")
+  @JSImport("@pulumi/aws/rds/getOrderableDbInstance", JSImport.Namespace)
   @js.native
-  def getOrderableDbInstance(args: GetOrderableDbInstanceArgs): js.Promise[GetOrderableDbInstanceResult] = js.native
-  @JSImport("@pulumi/aws/rds/getOrderableDbInstance", "getOrderableDbInstance")
-  @js.native
-  def getOrderableDbInstance(args: GetOrderableDbInstanceArgs, opts: InvokeOptions): js.Promise[GetOrderableDbInstanceResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getOrderableDbInstance(args: GetOrderableDbInstanceArgs): js.Promise[GetOrderableDbInstanceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableDbInstance")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrderableDbInstanceResult]]
+  @scala.inline
+  def getOrderableDbInstance(args: GetOrderableDbInstanceArgs, opts: InvokeOptions): js.Promise[GetOrderableDbInstanceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableDbInstance")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOrderableDbInstanceResult]]
+  
   trait GetOrderableDbInstanceArgs extends StObject {
     
     /**
       * Availability zone group.
       */
-    val availabilityZoneGroup: js.UndefOr[String] = js.native
+    val availabilityZoneGroup: js.UndefOr[String] = js.undefined
     
     /**
       * DB engine. Engine values include `aurora`, `aurora-mysql`, `aurora-postgresql`, `docdb`, `mariadb`, `mysql`, `neptune`, `oracle-ee`, `oracle-se`, `oracle-se1`, `oracle-se2`, `postgres`, `sqlserver-ee`, `sqlserver-ex`, `sqlserver-se`, and `sqlserver-web`.
       */
-    val engine: String = js.native
+    val engine: String
     
     /**
       * Version of the DB engine. If none is provided, the AWS-defined default version will be used.
       */
-    val engineVersion: js.UndefOr[String] = js.native
+    val engineVersion: js.UndefOr[String] = js.undefined
     
     /**
       * DB instance class. Examples of classes are `db.m3.2xlarge`, `db.t2.small`, and `db.m3.medium`.
       */
-    val instanceClass: js.UndefOr[String] = js.native
+    val instanceClass: js.UndefOr[String] = js.undefined
     
     /**
       * License model. Examples of license models are `general-public-license`, `bring-your-own-license`, and `amazon-license`.
       */
-    val licenseModel: js.UndefOr[String] = js.native
+    val licenseModel: js.UndefOr[String] = js.undefined
     
     /**
       * Ordered list of preferred RDS DB instance engine versions. The first match in this list will be returned. If no preferred matches are found and the original search returned more than one result, an error is returned.
       */
-    val preferredEngineVersions: js.UndefOr[js.Array[String]] = js.native
+    val preferredEngineVersions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Ordered list of preferred RDS DB instance classes. The first match in this list will be returned. If no preferred matches are found and the original search returned more than one result, an error is returned.
       */
-    val preferredInstanceClasses: js.UndefOr[js.Array[String]] = js.native
+    val preferredInstanceClasses: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Storage types. Examples of storage types are `standard`, `io1`, `gp2`, and `aurora`.
       */
-    val storageType: js.UndefOr[String] = js.native
+    val storageType: js.UndefOr[String] = js.undefined
     
     /**
       * Enable this to ensure a DB instance supports Enhanced Monitoring at intervals from 1 to 60 seconds.
       */
-    val supportsEnhancedMonitoring: js.UndefOr[Boolean] = js.native
+    val supportsEnhancedMonitoring: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable this to ensure a DB instance supports Aurora global databases with a specific combination of other DB engine attributes.
       */
-    val supportsGlobalDatabases: js.UndefOr[Boolean] = js.native
+    val supportsGlobalDatabases: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable this to ensure a DB instance supports IAM database authentication.
       */
-    val supportsIamDatabaseAuthentication: js.UndefOr[Boolean] = js.native
+    val supportsIamDatabaseAuthentication: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable this to ensure a DB instance supports provisioned IOPS.
       */
-    val supportsIops: js.UndefOr[Boolean] = js.native
+    val supportsIops: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable this to ensure a DB instance supports Kerberos Authentication.
       */
-    val supportsKerberosAuthentication: js.UndefOr[Boolean] = js.native
+    val supportsKerberosAuthentication: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable this to ensure a DB instance supports Performance Insights.
       */
-    val supportsPerformanceInsights: js.UndefOr[Boolean] = js.native
+    val supportsPerformanceInsights: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable this to ensure Amazon RDS can automatically scale storage for DB instances that use the specified DB instance class.
       */
-    val supportsStorageAutoscaling: js.UndefOr[Boolean] = js.native
+    val supportsStorageAutoscaling: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable this to ensure a DB instance supports encrypted storage.
       */
-    val supportsStorageEncryption: js.UndefOr[Boolean] = js.native
+    val supportsStorageEncryption: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean that indicates whether to show only VPC or non-VPC offerings.
       */
-    val vpc: js.UndefOr[Boolean] = js.native
+    val vpc: js.UndefOr[Boolean] = js.undefined
   }
   object GetOrderableDbInstanceArgs {
     
@@ -221,102 +221,101 @@ object rdsGetOrderableDbInstanceMod {
     }
   }
   
-  @js.native
   trait GetOrderableDbInstanceResult extends StObject {
     
-    val availabilityZoneGroup: String = js.native
+    val availabilityZoneGroup: String
     
     /**
       * Availability zones where the instance is available.
       */
-    val availabilityZones: js.Array[String] = js.native
+    val availabilityZones: js.Array[String]
     
-    val engine: String = js.native
+    val engine: String
     
-    val engineVersion: String = js.native
+    val engineVersion: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val instanceClass: String = js.native
+    val instanceClass: String
     
-    val licenseModel: String = js.native
+    val licenseModel: String
     
     /**
       * Maximum total provisioned IOPS for a DB instance.
       */
-    val maxIopsPerDbInstance: Double = js.native
+    val maxIopsPerDbInstance: Double
     
     /**
       * Maximum provisioned IOPS per GiB for a DB instance.
       */
-    val maxIopsPerGib: Double = js.native
+    val maxIopsPerGib: Double
     
     /**
       * Maximum storage size for a DB instance.
       */
-    val maxStorageSize: Double = js.native
+    val maxStorageSize: Double
     
     /**
       * Minimum total provisioned IOPS for a DB instance.
       */
-    val minIopsPerDbInstance: Double = js.native
+    val minIopsPerDbInstance: Double
     
     /**
       * Minimum provisioned IOPS per GiB for a DB instance.
       */
-    val minIopsPerGib: Double = js.native
+    val minIopsPerGib: Double
     
     /**
       * Minimum storage size for a DB instance.
       */
-    val minStorageSize: Double = js.native
+    val minStorageSize: Double
     
     /**
       * Whether a DB instance is Multi-AZ capable.
       */
-    val multiAzCapable: Boolean = js.native
+    val multiAzCapable: Boolean
     
     /**
       * Whether a DB instance supports RDS on Outposts.
       */
-    val outpostCapable: Boolean = js.native
+    val outpostCapable: Boolean
     
-    val preferredEngineVersions: js.UndefOr[js.Array[String]] = js.native
+    val preferredEngineVersions: js.UndefOr[js.Array[String]] = js.undefined
     
-    val preferredInstanceClasses: js.UndefOr[js.Array[String]] = js.native
+    val preferredInstanceClasses: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Whether a DB instance can have a read replica.
       */
-    val readReplicaCapable: Boolean = js.native
+    val readReplicaCapable: Boolean
     
-    val storageType: String = js.native
+    val storageType: String
     
     /**
       * A list of the supported DB engine modes.
       */
-    val supportedEngineModes: js.Array[String] = js.native
+    val supportedEngineModes: js.Array[String]
     
-    val supportsEnhancedMonitoring: Boolean = js.native
+    val supportsEnhancedMonitoring: Boolean
     
-    val supportsGlobalDatabases: Boolean = js.native
+    val supportsGlobalDatabases: Boolean
     
-    val supportsIamDatabaseAuthentication: Boolean = js.native
+    val supportsIamDatabaseAuthentication: Boolean
     
-    val supportsIops: Boolean = js.native
+    val supportsIops: Boolean
     
-    val supportsKerberosAuthentication: Boolean = js.native
+    val supportsKerberosAuthentication: Boolean
     
-    val supportsPerformanceInsights: Boolean = js.native
+    val supportsPerformanceInsights: Boolean
     
-    val supportsStorageAutoscaling: Boolean = js.native
+    val supportsStorageAutoscaling: Boolean
     
-    val supportsStorageEncryption: Boolean = js.native
+    val supportsStorageEncryption: Boolean
     
-    val vpc: Boolean = js.native
+    val vpc: Boolean
   }
   object GetOrderableDbInstanceResult {
     

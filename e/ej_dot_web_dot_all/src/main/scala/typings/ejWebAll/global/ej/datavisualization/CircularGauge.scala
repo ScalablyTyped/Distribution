@@ -5,13 +5,13 @@ import typings.ejWebAll.ej.Model
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.datavisualization.CircularGauge")
 @js.native
 class CircularGauge protected ()
-  extends typings.ejWebAll.ej.datavisualization.CircularGauge {
+  extends StObject
+     with typings.ejWebAll.ej.datavisualization.CircularGauge {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: Model) = this()
@@ -29,12 +29,12 @@ object CircularGauge {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.ejWebAll.ej.datavisualization.CircularGauge.CustomLabelPositionType with Double
+        typings.ejWebAll.ej.datavisualization.CircularGauge.CustomLabelPositionType & Double
       ] = js.native
     
-    /* 0 */ val Inner: typings.ejWebAll.ej.datavisualization.CircularGauge.CustomLabelPositionType.Inner with Double = js.native
+    /* 0 */ val Inner: typings.ejWebAll.ej.datavisualization.CircularGauge.CustomLabelPositionType.Inner & Double = js.native
     
-    /* 1 */ val Outer: typings.ejWebAll.ej.datavisualization.CircularGauge.CustomLabelPositionType.Outer with Double = js.native
+    /* 1 */ val Outer: typings.ejWebAll.ej.datavisualization.CircularGauge.CustomLabelPositionType.Outer & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.Direction")
@@ -42,11 +42,11 @@ object CircularGauge {
   object Direction extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.Direction with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.Direction & Double] = js.native
     
-    /* 0 */ val Clockwise: typings.ejWebAll.ej.datavisualization.CircularGauge.Direction.Clockwise with Double = js.native
+    /* 0 */ val Clockwise: typings.ejWebAll.ej.datavisualization.CircularGauge.Direction.Clockwise & Double = js.native
     
-    /* 1 */ val CounterClockwise: typings.ejWebAll.ej.datavisualization.CircularGauge.Direction.CounterClockwise with Double = js.native
+    /* 1 */ val CounterClockwise: typings.ejWebAll.ej.datavisualization.CircularGauge.Direction.CounterClockwise & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.ExportingMode")
@@ -54,11 +54,11 @@ object CircularGauge {
   object ExportingMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingMode & Double] = js.native
     
-    /* 1 */ val ClientSide: typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingMode.ClientSide with Double = js.native
+    /* 1 */ val ClientSide: typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingMode.ClientSide & Double = js.native
     
-    /* 0 */ val ServerSide: typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingMode.ServerSide with Double = js.native
+    /* 0 */ val ServerSide: typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingMode.ServerSide & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.ExportingType")
@@ -66,11 +66,11 @@ object CircularGauge {
   object ExportingType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingType & Double] = js.native
     
-    /* 1 */ val JPG: typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingType.JPG with Double = js.native
+    /* 1 */ val JPG: typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingType.JPG & Double = js.native
     
-    /* 0 */ val PNG: typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingType.PNG with Double = js.native
+    /* 0 */ val PNG: typings.ejWebAll.ej.datavisualization.CircularGauge.ExportingType.PNG & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.FrameType")
@@ -78,11 +78,11 @@ object CircularGauge {
   object FrameType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.FrameType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.FrameType & Double] = js.native
     
-    /* 0 */ val FullCircle: typings.ejWebAll.ej.datavisualization.CircularGauge.FrameType.FullCircle with Double = js.native
+    /* 0 */ val FullCircle: typings.ejWebAll.ej.datavisualization.CircularGauge.FrameType.FullCircle & Double = js.native
     
-    /* 1 */ val HalfCircle: typings.ejWebAll.ej.datavisualization.CircularGauge.FrameType.HalfCircle with Double = js.native
+    /* 1 */ val HalfCircle: typings.ejWebAll.ej.datavisualization.CircularGauge.FrameType.HalfCircle & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.IndicatorTypes")
@@ -90,45 +90,45 @@ object CircularGauge {
   object IndicatorTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes & Double] = js.native
     
-    /* 1 */ val Circle: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Circle with Double = js.native
+    /* 1 */ val Circle: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Circle & Double = js.native
     
-    /* 13 */ val Cross: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Cross with Double = js.native
+    /* 13 */ val Cross: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Cross & Double = js.native
     
-    /* 6 */ val Diamond: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Diamond with Double = js.native
+    /* 6 */ val Diamond: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Diamond & Double = js.native
     
-    /* 15 */ val Downarrow: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Downarrow with Double = js.native
+    /* 15 */ val Downarrow: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Downarrow & Double = js.native
     
-    /* 11 */ val HorizontalLine: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.HorizontalLine with Double = js.native
+    /* 11 */ val HorizontalLine: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.HorizontalLine & Double = js.native
     
-    /* 4 */ val Image: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Image with Double = js.native
+    /* 4 */ val Image: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Image & Double = js.native
     
-    /* 18 */ val InvertedTriangle: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.InvertedTriangle with Double = js.native
+    /* 18 */ val InvertedTriangle: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.InvertedTriangle & Double = js.native
     
-    /* 16 */ val Leftarrow: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Leftarrow with Double = js.native
+    /* 16 */ val Leftarrow: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Leftarrow & Double = js.native
     
-    /* 8 */ val Pentagon: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Pentagon with Double = js.native
+    /* 8 */ val Pentagon: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Pentagon & Double = js.native
     
-    /* 0 */ val Rectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Rectangle with Double = js.native
+    /* 0 */ val Rectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Rectangle & Double = js.native
     
-    /* 17 */ val Rightarrow: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Rightarrow with Double = js.native
+    /* 17 */ val Rightarrow: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Rightarrow & Double = js.native
     
-    /* 3 */ val RoundedRectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.RoundedRectangle with Double = js.native
+    /* 3 */ val RoundedRectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.RoundedRectangle & Double = js.native
     
-    /* 10 */ val Star: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Star with Double = js.native
+    /* 10 */ val Star: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Star & Double = js.native
     
-    /* 2 */ val Text: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Text with Double = js.native
+    /* 2 */ val Text: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Text & Double = js.native
     
-    /* 7 */ val Trapezoid: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Trapezoid with Double = js.native
+    /* 7 */ val Trapezoid: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Trapezoid & Double = js.native
     
-    /* 5 */ val Triangle: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Triangle with Double = js.native
+    /* 5 */ val Triangle: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Triangle & Double = js.native
     
-    /* 14 */ val Uparrow: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Uparrow with Double = js.native
+    /* 14 */ val Uparrow: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Uparrow & Double = js.native
     
-    /* 12 */ val Verticalline: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Verticalline with Double = js.native
+    /* 12 */ val Verticalline: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Verticalline & Double = js.native
     
-    /* 9 */ val Wedge: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Wedge with Double = js.native
+    /* 9 */ val Wedge: typings.ejWebAll.ej.datavisualization.CircularGauge.IndicatorTypes.Wedge & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.LabelType")
@@ -136,11 +136,11 @@ object CircularGauge {
   object LabelType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.LabelType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.LabelType & Double] = js.native
     
-    /* 0 */ val Major: typings.ejWebAll.ej.datavisualization.CircularGauge.LabelType.Major with Double = js.native
+    /* 0 */ val Major: typings.ejWebAll.ej.datavisualization.CircularGauge.LabelType.Major & Double = js.native
     
-    /* 1 */ val Minor: typings.ejWebAll.ej.datavisualization.CircularGauge.LabelType.Minor with Double = js.native
+    /* 1 */ val Minor: typings.ejWebAll.ej.datavisualization.CircularGauge.LabelType.Minor & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.LegendAlignment")
@@ -148,13 +148,13 @@ object CircularGauge {
   object LegendAlignment extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.LegendAlignment with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.LegendAlignment & Double] = js.native
     
-    /* 0 */ val Center: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendAlignment.Center with Double = js.native
+    /* 0 */ val Center: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendAlignment.Center & Double = js.native
     
-    /* 2 */ val Far: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendAlignment.Far with Double = js.native
+    /* 2 */ val Far: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendAlignment.Far & Double = js.native
     
-    /* 1 */ val Near: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendAlignment.Near with Double = js.native
+    /* 1 */ val Near: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendAlignment.Near & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.LegendPosition")
@@ -162,15 +162,15 @@ object CircularGauge {
   object LegendPosition extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.LegendPosition with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.LegendPosition & Double] = js.native
     
-    /* 3 */ val Bottom: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendPosition.Bottom with Double = js.native
+    /* 3 */ val Bottom: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendPosition.Bottom & Double = js.native
     
-    /* 0 */ val Left: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendPosition.Left with Double = js.native
+    /* 0 */ val Left: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendPosition.Left & Double = js.native
     
-    /* 1 */ val Right: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendPosition.Right with Double = js.native
+    /* 1 */ val Right: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendPosition.Right & Double = js.native
     
-    /* 2 */ val Top: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendPosition.Top with Double = js.native
+    /* 2 */ val Top: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendPosition.Top & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.LegendShape")
@@ -178,25 +178,25 @@ object CircularGauge {
   object LegendShape extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape & Double] = js.native
     
-    /* 1 */ val Circle: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Circle with Double = js.native
+    /* 1 */ val Circle: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Circle & Double = js.native
     
-    /* 4 */ val Diamond: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Diamond with Double = js.native
+    /* 4 */ val Diamond: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Diamond & Double = js.native
     
-    /* 3 */ val Ellipse: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Ellipse with Double = js.native
+    /* 3 */ val Ellipse: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Ellipse & Double = js.native
     
-    /* 8 */ val Line: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Line with Double = js.native
+    /* 8 */ val Line: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Line & Double = js.native
     
-    /* 5 */ val Pentagon: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Pentagon with Double = js.native
+    /* 5 */ val Pentagon: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Pentagon & Double = js.native
     
-    /* 0 */ val Rectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Rectangle with Double = js.native
+    /* 0 */ val Rectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Rectangle & Double = js.native
     
-    /* 6 */ val Slider: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Slider with Double = js.native
+    /* 6 */ val Slider: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Slider & Double = js.native
     
-    /* 7 */ val Trapezoid: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Trapezoid with Double = js.native
+    /* 7 */ val Trapezoid: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Trapezoid & Double = js.native
     
-    /* 2 */ val Triangle: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Triangle with Double = js.native
+    /* 2 */ val Triangle: typings.ejWebAll.ej.datavisualization.CircularGauge.LegendShape.Triangle & Double = js.native
   }
   
   /* static member */
@@ -211,31 +211,31 @@ object CircularGauge {
   object MarkerType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType & Double] = js.native
     
-    /* 1 */ val Circle: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Circle with Double = js.native
+    /* 1 */ val Circle: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Circle & Double = js.native
     
-    /* 4 */ val Diamond: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Diamond with Double = js.native
+    /* 4 */ val Diamond: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Diamond & Double = js.native
     
-    /* 3 */ val Ellipse: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Ellipse with Double = js.native
+    /* 3 */ val Ellipse: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Ellipse & Double = js.native
     
-    /* 11 */ val Image: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Image with Double = js.native
+    /* 11 */ val Image: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Image & Double = js.native
     
-    /* 5 */ val Pentagon: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Pentagon with Double = js.native
+    /* 5 */ val Pentagon: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Pentagon & Double = js.native
     
-    /* 7 */ val Pointer: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Pointer with Double = js.native
+    /* 7 */ val Pointer: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Pointer & Double = js.native
     
-    /* 0 */ val Rectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Rectangle with Double = js.native
+    /* 0 */ val Rectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Rectangle & Double = js.native
     
-    /* 10 */ val RoundedRectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.RoundedRectangle with Double = js.native
+    /* 10 */ val RoundedRectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.RoundedRectangle & Double = js.native
     
-    /* 6 */ val Slider: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Slider with Double = js.native
+    /* 6 */ val Slider: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Slider & Double = js.native
     
-    /* 9 */ val Trapezoid: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Trapezoid with Double = js.native
+    /* 9 */ val Trapezoid: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Trapezoid & Double = js.native
     
-    /* 2 */ val Triangle: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Triangle with Double = js.native
+    /* 2 */ val Triangle: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Triangle & Double = js.native
     
-    /* 8 */ val Wedge: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Wedge with Double = js.native
+    /* 8 */ val Wedge: typings.ejWebAll.ej.datavisualization.CircularGauge.MarkerType.Wedge & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.NeedleType")
@@ -243,17 +243,17 @@ object CircularGauge {
   object NeedleType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType & Double] = js.native
     
-    /* 2 */ val Arrow: typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType.Arrow with Double = js.native
+    /* 2 */ val Arrow: typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType.Arrow & Double = js.native
     
-    /* 3 */ val Image: typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType.Image with Double = js.native
+    /* 3 */ val Image: typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType.Image & Double = js.native
     
-    /* 1 */ val Rectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType.Rectangle with Double = js.native
+    /* 1 */ val Rectangle: typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType.Rectangle & Double = js.native
     
-    /* 4 */ val Trapezoid: typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType.Trapezoid with Double = js.native
+    /* 4 */ val Trapezoid: typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType.Trapezoid & Double = js.native
     
-    /* 0 */ val Triangle: typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType.Triangle with Double = js.native
+    /* 0 */ val Triangle: typings.ejWebAll.ej.datavisualization.CircularGauge.NeedleType.Triangle & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.OuterCustomLabelPosition")
@@ -262,16 +262,16 @@ object CircularGauge {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.ejWebAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition with Double
+        typings.ejWebAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition & Double
       ] = js.native
     
-    /* 1 */ val Bottom: typings.ejWebAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Bottom with Double = js.native
+    /* 1 */ val Bottom: typings.ejWebAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Bottom & Double = js.native
     
-    /* 3 */ val Left: typings.ejWebAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Left with Double = js.native
+    /* 3 */ val Left: typings.ejWebAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Left & Double = js.native
     
-    /* 2 */ val Right: typings.ejWebAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Right with Double = js.native
+    /* 2 */ val Right: typings.ejWebAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Right & Double = js.native
     
-    /* 0 */ val Top: typings.ejWebAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Top with Double = js.native
+    /* 0 */ val Top: typings.ejWebAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Top & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.Placement")
@@ -279,11 +279,11 @@ object CircularGauge {
   object Placement extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.Placement with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.Placement & Double] = js.native
     
-    /* 1 */ val Far: typings.ejWebAll.ej.datavisualization.CircularGauge.Placement.Far with Double = js.native
+    /* 1 */ val Far: typings.ejWebAll.ej.datavisualization.CircularGauge.Placement.Far & Double = js.native
     
-    /* 0 */ val Near: typings.ejWebAll.ej.datavisualization.CircularGauge.Placement.Near with Double = js.native
+    /* 0 */ val Near: typings.ejWebAll.ej.datavisualization.CircularGauge.Placement.Near & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.PointerType")
@@ -291,11 +291,11 @@ object CircularGauge {
   object PointerType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.PointerType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.PointerType & Double] = js.native
     
-    /* 1 */ val Marker: typings.ejWebAll.ej.datavisualization.CircularGauge.PointerType.Marker with Double = js.native
+    /* 1 */ val Marker: typings.ejWebAll.ej.datavisualization.CircularGauge.PointerType.Marker & Double = js.native
     
-    /* 0 */ val Needle: typings.ejWebAll.ej.datavisualization.CircularGauge.PointerType.Needle with Double = js.native
+    /* 0 */ val Needle: typings.ejWebAll.ej.datavisualization.CircularGauge.PointerType.Needle & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.RangeZOrderPlacement")
@@ -304,12 +304,12 @@ object CircularGauge {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.ejWebAll.ej.datavisualization.CircularGauge.RangeZOrderPlacement with Double
+        typings.ejWebAll.ej.datavisualization.CircularGauge.RangeZOrderPlacement & Double
       ] = js.native
     
-    /* 1 */ val Front: typings.ejWebAll.ej.datavisualization.CircularGauge.RangeZOrderPlacement.Front with Double = js.native
+    /* 1 */ val Front: typings.ejWebAll.ej.datavisualization.CircularGauge.RangeZOrderPlacement.Front & Double = js.native
     
-    /* 0 */ val Rear: typings.ejWebAll.ej.datavisualization.CircularGauge.RangeZOrderPlacement.Rear with Double = js.native
+    /* 0 */ val Rear: typings.ejWebAll.ej.datavisualization.CircularGauge.RangeZOrderPlacement.Rear & Double = js.native
   }
   
   @JSGlobal("ej.datavisualization.CircularGauge.UnitTextPlacement")
@@ -317,13 +317,11 @@ object CircularGauge {
   object UnitTextPlacement extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.ejWebAll.ej.datavisualization.CircularGauge.UnitTextPlacement with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.UnitTextPlacement & Double] = js.native
     
-    /* 0 */ val Back: typings.ejWebAll.ej.datavisualization.CircularGauge.UnitTextPlacement.Back with Double = js.native
+    /* 0 */ val Back: typings.ejWebAll.ej.datavisualization.CircularGauge.UnitTextPlacement.Back & Double = js.native
     
-    /* 1 */ val Front: typings.ejWebAll.ej.datavisualization.CircularGauge.UnitTextPlacement.Front with Double = js.native
+    /* 1 */ val Front: typings.ejWebAll.ej.datavisualization.CircularGauge.UnitTextPlacement.Front & Double = js.native
   }
   
   /* static member */
@@ -338,24 +336,24 @@ object CircularGauge {
   object gaugePosition extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition & Double] = js.native
     
-    /* 8 */ val BottomCenter: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.BottomCenter with Double = js.native
+    /* 8 */ val BottomCenter: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.BottomCenter & Double = js.native
     
-    /* 6 */ val BottomLeft: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.BottomLeft with Double = js.native
+    /* 6 */ val BottomLeft: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.BottomLeft & Double = js.native
     
-    /* 7 */ val BottomRight: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.BottomRight with Double = js.native
+    /* 7 */ val BottomRight: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.BottomRight & Double = js.native
     
-    /* 5 */ val Center: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.Center with Double = js.native
+    /* 5 */ val Center: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.Center & Double = js.native
     
-    /* 3 */ val MiddleLeft: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.MiddleLeft with Double = js.native
+    /* 3 */ val MiddleLeft: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.MiddleLeft & Double = js.native
     
-    /* 4 */ val MiddleRight: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.MiddleRight with Double = js.native
+    /* 4 */ val MiddleRight: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.MiddleRight & Double = js.native
     
-    /* 2 */ val TopCenter: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.TopCenter with Double = js.native
+    /* 2 */ val TopCenter: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.TopCenter & Double = js.native
     
-    /* 0 */ val TopLeft: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.TopLeft with Double = js.native
+    /* 0 */ val TopLeft: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.TopLeft & Double = js.native
     
-    /* 1 */ val TopRight: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.TopRight with Double = js.native
+    /* 1 */ val TopRight: typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition.TopRight & Double = js.native
   }
 }

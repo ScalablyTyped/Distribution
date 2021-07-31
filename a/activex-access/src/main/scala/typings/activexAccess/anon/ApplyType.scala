@@ -2,15 +2,13 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyType extends StObject {
   
-  var ApplyType: Double = js.native
+  var ApplyType: Double
   
-  var Cancel: Double = js.native
+  var Cancel: Double
 }
 object ApplyType {
   

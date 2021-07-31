@@ -3,7 +3,6 @@ package typings.coreJs
 import typings.coreJs.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataMod {
@@ -52,7 +51,10 @@ object metadataMod {
     * ```
     */
   /* was `typeof core.Reflect.metadata` */
+  @scala.inline
+  def apply(metadataKey: js.Any, metadataValue: js.Any): FnCall = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+  
   @JSImport("core-js/library/fn/reflect/es7/metadata'", JSImport.Namespace)
   @js.native
-  def apply(metadataKey: js.Any, metadataValue: js.Any): FnCall = js.native
+  val ^ : js.Any = js.native
 }

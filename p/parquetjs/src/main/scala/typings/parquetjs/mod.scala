@@ -11,7 +11,6 @@ import typings.parquetjs.writerMod.ParquetWriterOpts
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -34,9 +33,12 @@ object mod {
   /* static members */
   object ParquetEnvelopeReader {
     
-    @JSImport("parquetjs", "ParquetEnvelopeReader.openFile")
+    @JSImport("parquetjs", "ParquetEnvelopeReader")
     @js.native
-    def openFile(filePath: String): typings.parquetjs.readerMod.ParquetReader = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openFile(filePath: String): typings.parquetjs.readerMod.ParquetReader = ^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[typings.parquetjs.readerMod.ParquetReader]
   }
   
   @JSImport("parquetjs", "ParquetEnvelopeWriter")
@@ -67,19 +69,20 @@ object mod {
   /* static members */
   object ParquetEnvelopeWriter {
     
-    @JSImport("parquetjs", "ParquetEnvelopeWriter.openStream")
+    @JSImport("parquetjs", "ParquetEnvelopeWriter")
     @js.native
-    def openStream(schema: typings.parquetjs.schemaMod.ParquetSchema, outputStream: WriteStream): js.Promise[typings.parquetjs.writerMod.ParquetEnvelopeWriter] = js.native
-    @JSImport("parquetjs", "ParquetEnvelopeWriter.openStream")
-    @js.native
-    def openStream(schema: typings.parquetjs.schemaMod.ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[typings.parquetjs.writerMod.ParquetEnvelopeWriter] = js.native
-    @JSImport("parquetjs", "ParquetEnvelopeWriter.openStream")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openStream(schema: typings.parquetjs.schemaMod.ParquetSchema, outputStream: WriteStream): js.Promise[typings.parquetjs.writerMod.ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parquetjs.writerMod.ParquetEnvelopeWriter]]
+    @scala.inline
+    def openStream(schema: typings.parquetjs.schemaMod.ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[typings.parquetjs.writerMod.ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parquetjs.writerMod.ParquetEnvelopeWriter]]
+    @scala.inline
     def openStream(
       schema: typings.parquetjs.schemaMod.ParquetSchema,
       outputStream: WriteStream,
       opts: ParquetWriterOpts
-    ): js.Promise[typings.parquetjs.writerMod.ParquetEnvelopeWriter] = js.native
+    ): js.Promise[typings.parquetjs.writerMod.ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parquetjs.writerMod.ParquetEnvelopeWriter]]
   }
   
   @JSImport("parquetjs", "ParquetReader")
@@ -91,9 +94,12 @@ object mod {
   /* static members */
   object ParquetReader {
     
-    @JSImport("parquetjs", "ParquetReader.openFile")
+    @JSImport("parquetjs", "ParquetReader")
     @js.native
-    def openFile(filePath: String): js.Promise[typings.parquetjs.readerMod.ParquetReader] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openFile(filePath: String): js.Promise[typings.parquetjs.readerMod.ParquetReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parquetjs.readerMod.ParquetReader]]
   }
   
   @JSImport("parquetjs", "ParquetSchema")
@@ -105,17 +111,19 @@ object mod {
   
   object ParquetShredder {
     
-    @JSImport("parquetjs", "ParquetShredder.materializeRecords")
+    @JSImport("parquetjs", "ParquetShredder")
     @js.native
-    def materializeRecords(schema: typings.parquetjs.schemaMod.ParquetSchema, buffer: RowBufferInterface): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("parquetjs", "ParquetShredder.shredRecord")
-    @js.native
+    @scala.inline
+    def materializeRecords(schema: typings.parquetjs.schemaMod.ParquetSchema, buffer: RowBufferInterface): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("materializeRecords")(schema.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
     def shredRecord(
       schema: typings.parquetjs.schemaMod.ParquetSchema,
       record: RowInterface,
       buffer: RowBufferInterface
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shredRecord")(schema.asInstanceOf[js.Any], record.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("parquetjs", "ParquetTransformer")
@@ -149,28 +157,26 @@ object mod {
   /* static members */
   object ParquetWriter {
     
-    @JSImport("parquetjs", "ParquetWriter.openFile")
+    @JSImport("parquetjs", "ParquetWriter")
     @js.native
-    def openFile(schema: typings.parquetjs.schemaMod.ParquetSchema, path: PathLike): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = js.native
-    @JSImport("parquetjs", "ParquetWriter.openFile")
-    @js.native
-    def openFile(schema: typings.parquetjs.schemaMod.ParquetSchema, path: PathLike, opts: String): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = js.native
-    @JSImport("parquetjs", "ParquetWriter.openFile")
-    @js.native
-    def openFile(schema: typings.parquetjs.schemaMod.ParquetSchema, path: PathLike, opts: ParquetWriterOpts): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("parquetjs", "ParquetWriter.openStream")
-    @js.native
-    def openStream(schema: typings.parquetjs.schemaMod.ParquetSchema, outputStream: WriteStream): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = js.native
-    @JSImport("parquetjs", "ParquetWriter.openStream")
-    @js.native
-    def openStream(schema: typings.parquetjs.schemaMod.ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = js.native
-    @JSImport("parquetjs", "ParquetWriter.openStream")
-    @js.native
+    @scala.inline
+    def openFile(schema: typings.parquetjs.schemaMod.ParquetSchema, path: PathLike): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parquetjs.writerMod.ParquetWriter]]
+    @scala.inline
+    def openFile(schema: typings.parquetjs.schemaMod.ParquetSchema, path: PathLike, opts: String): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parquetjs.writerMod.ParquetWriter]]
+    @scala.inline
+    def openFile(schema: typings.parquetjs.schemaMod.ParquetSchema, path: PathLike, opts: ParquetWriterOpts): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parquetjs.writerMod.ParquetWriter]]
+    
+    @scala.inline
+    def openStream(schema: typings.parquetjs.schemaMod.ParquetSchema, outputStream: WriteStream): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parquetjs.writerMod.ParquetWriter]]
+    @scala.inline
+    def openStream(schema: typings.parquetjs.schemaMod.ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parquetjs.writerMod.ParquetWriter]]
+    @scala.inline
     def openStream(
       schema: typings.parquetjs.schemaMod.ParquetSchema,
       outputStream: WriteStream,
       opts: ParquetWriterOpts
-    ): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = js.native
+    ): js.Promise[typings.parquetjs.writerMod.ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parquetjs.writerMod.ParquetWriter]]
   }
 }

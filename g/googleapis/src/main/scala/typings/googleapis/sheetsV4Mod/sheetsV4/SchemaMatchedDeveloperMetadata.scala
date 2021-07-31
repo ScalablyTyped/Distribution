@@ -2,25 +2,23 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A developer metadata entry and the data filters specified in the original
   * request that matched it.
   */
-@js.native
 trait SchemaMatchedDeveloperMetadata extends StObject {
   
   /**
     * All filters matching the returned developer metadata.
     */
-  var dataFilters: js.UndefOr[js.Array[SchemaDataFilter]] = js.native
+  var dataFilters: js.UndefOr[js.Array[SchemaDataFilter]] = js.undefined
   
   /**
     * The developer metadata matching the specified filters.
     */
-  var developerMetadata: js.UndefOr[SchemaDeveloperMetadata] = js.native
+  var developerMetadata: js.UndefOr[SchemaDeveloperMetadata] = js.undefined
 }
 object SchemaMatchedDeveloperMetadata {
   

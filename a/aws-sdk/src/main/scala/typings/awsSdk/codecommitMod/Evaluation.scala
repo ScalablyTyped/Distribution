@@ -2,31 +2,29 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Evaluation extends StObject {
   
   /**
     * The names of the approval rules that have not had their conditions met.
     */
-  var approvalRulesNotSatisfied: js.UndefOr[ApprovalRulesNotSatisfiedList] = js.native
+  var approvalRulesNotSatisfied: js.UndefOr[ApprovalRulesNotSatisfiedList] = js.undefined
   
   /**
     * The names of the approval rules that have had their conditions met.
     */
-  var approvalRulesSatisfied: js.UndefOr[ApprovalRulesSatisfiedList] = js.native
+  var approvalRulesSatisfied: js.UndefOr[ApprovalRulesSatisfiedList] = js.undefined
   
   /**
     * Whether the state of the pull request is approved.
     */
-  var approved: js.UndefOr[Approved] = js.native
+  var approved: js.UndefOr[Approved] = js.undefined
   
   /**
     * Whether the approval rule requirements for the pull request have been overridden and no longer need to be met.
     */
-  var overridden: js.UndefOr[Overridden] = js.native
+  var overridden: js.UndefOr[Overridden] = js.undefined
 }
 object Evaluation {
   

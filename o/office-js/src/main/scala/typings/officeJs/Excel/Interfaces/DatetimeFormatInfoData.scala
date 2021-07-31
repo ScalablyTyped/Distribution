@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `datetimeFormatInfo.toJSON()`. */
-@js.native
 trait DatetimeFormatInfoData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DatetimeFormatInfoData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var dateSeparator: js.UndefOr[String] = js.native
+  var dateSeparator: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait DatetimeFormatInfoData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var longDatePattern: js.UndefOr[String] = js.native
+  var longDatePattern: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait DatetimeFormatInfoData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var longTimePattern: js.UndefOr[String] = js.native
+  var longTimePattern: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait DatetimeFormatInfoData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var shortDatePattern: js.UndefOr[String] = js.native
+  var shortDatePattern: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait DatetimeFormatInfoData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var timeSeparator: js.UndefOr[String] = js.native
+  var timeSeparator: js.UndefOr[String] = js.undefined
 }
 object DatetimeFormatInfoData {
   

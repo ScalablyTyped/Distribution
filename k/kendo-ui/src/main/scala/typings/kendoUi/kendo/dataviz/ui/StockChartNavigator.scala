@@ -2,29 +2,27 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartNavigator extends StObject {
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var categoryAxis: js.UndefOr[StockChartNavigatorCategoryAxis] = js.native
+  var categoryAxis: js.UndefOr[StockChartNavigatorCategoryAxis] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
-  var dateField: js.UndefOr[String] = js.native
+  var dateField: js.UndefOr[String] = js.undefined
   
-  var hint: js.UndefOr[StockChartNavigatorHint] = js.native
+  var hint: js.UndefOr[StockChartNavigatorHint] = js.undefined
   
-  var pane: js.UndefOr[StockChartNavigatorPane] = js.native
+  var pane: js.UndefOr[StockChartNavigatorPane] = js.undefined
   
-  var select: js.UndefOr[StockChartNavigatorSelect] = js.native
+  var select: js.UndefOr[StockChartNavigatorSelect] = js.undefined
   
-  var series: js.UndefOr[js.Array[StockChartNavigatorSeriesItem]] = js.native
+  var series: js.UndefOr[js.Array[StockChartNavigatorSeriesItem]] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object StockChartNavigator {
   

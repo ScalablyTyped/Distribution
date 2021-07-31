@@ -2,19 +2,17 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AddScope Options for Model.addScope
   */
-@js.native
 trait AddScopeOptions extends StObject {
   
   /**
     * If a scope of the same name already exists, should it be overwritten?
     */
-  var `override`: Boolean = js.native
+  var `override`: Boolean
 }
 object AddScopeOptions {
   

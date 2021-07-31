@@ -2,24 +2,22 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppendObjectOptions extends StObject {
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   // custom mime, will send with Content-Type entity header
-  var meta: js.UndefOr[UserMeta] = js.native
+  var meta: js.UndefOr[UserMeta] = js.undefined
   
   // the operation timeout
-  var mime: js.UndefOr[String] = js.native
+  var mime: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   // specify the position which is the content length of the latest object
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object AppendObjectOptions {
   

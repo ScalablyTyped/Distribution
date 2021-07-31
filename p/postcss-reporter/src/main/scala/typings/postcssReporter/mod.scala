@@ -9,7 +9,6 @@ import typings.postcssReporter.postcssReporterStrings.first
 import typings.postcssReporter.postcssReporterStrings.last
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,26 +20,25 @@ object mod extends Shortcut {
   /**
     * Default plugin options
     */
-  @js.native
   trait DefaultOptions extends StObject {
     
     /**
       * If true, no exclamatory triangle icons will be printed next to warnings.
       * @default false
       */
-    var noIcon: js.UndefOr[Boolean] = js.native
+    var noIcon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, plugin names will not be printed in brackets after messages.
       * @default false
       */
-    var noPlugin: js.UndefOr[Boolean] = js.native
+    var noPlugin: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If false, messages will not be sorted by line/column position.
       * @default true
       */
-    var sortByPosition: js.UndefOr[Boolean] = js.native
+    var sortByPosition: js.UndefOr[Boolean] = js.undefined
   }
   object DefaultOptions {
     
@@ -76,27 +74,28 @@ object mod extends Shortcut {
   /**
     * Additional options
     */
-  @js.native
-  trait Options extends DefaultOptions {
+  trait Options
+    extends StObject
+       with DefaultOptions {
     
     /**
       * If true, not pass any messages into other plugins, or the whatever runner you use, for logging.
       * @default false
       */
-    var clearAllMessages: js.UndefOr[Boolean] = js.native
+    var clearAllMessages: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the plugin will clear the result's messages after it logs them.
       * This prevents other plugins, or the whatever runner you use, from logging the same information again and causing confusion.
       * @default false
       */
-    var clearReportedMessages: js.UndefOr[Boolean] = js.native
+    var clearReportedMessages: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Provide a filter function. It receives the message object and returns a truthy or falsy value,
       * indicating whether that particular message should be reported or not.
       */
-    var filter: js.UndefOr[js.Function1[/* message */ ResultMessage, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* message */ ResultMessage, Boolean]] = js.undefined
     
     /**
       * By default, this reporter will format the messages for human legibility in the console.
@@ -104,27 +103,27 @@ object mod extends Shortcut {
       * - accepts an object containing a messages array and a source string
       * - returns the string to report
       */
-    var formatter: js.UndefOr[js.Function1[/* input */ Messages, String]] = js.native
+    var formatter: js.UndefOr[js.Function1[/* input */ Messages, String]] = js.undefined
     
     /**
       * If plugins is empty (as it is by default),
       * the reporter will log messages from every PostCSS plugin.
       * @default []
       */
-    var plugins: js.UndefOr[js.Array[String]] = js.native
+    var plugins: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * By default, messages without line/column positions will be grouped at the beginning of the output.
       * To put them at the end, instead, use "last". To not bother sorting these, use "any".
       * @default 'first'
       */
-    var positionless: js.UndefOr[first | last | any] = js.native
+    var positionless: js.UndefOr[first | last | any] = js.undefined
     
     /**
       * If true, after the plugin logs your messages it will throw an error if it found any warnings.
       * @default false
       */
-    var throwError: js.UndefOr[Boolean] = js.native
+    var throwError: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

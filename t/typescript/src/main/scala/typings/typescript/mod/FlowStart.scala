@@ -2,15 +2,14 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowStart
-  extends FlowNodeBase
+  extends StObject
+     with FlowNodeBase
      with FlowNode {
   
-  var node: js.UndefOr[FunctionExpression | ArrowFunction | MethodDeclaration] = js.native
+  var node: js.UndefOr[FunctionExpression | ArrowFunction | MethodDeclaration] = js.undefined
 }
 object FlowStart {
   

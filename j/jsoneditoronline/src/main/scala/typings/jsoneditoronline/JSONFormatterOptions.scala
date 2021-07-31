@@ -2,15 +2,13 @@ package typings.jsoneditoronline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONFormatterOptions extends StObject {
   
-  var change: js.UndefOr[js.Function0[Unit]] = js.native
+  var change: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var indentation: js.UndefOr[Double] = js.native
+  var indentation: js.UndefOr[Double] = js.undefined
 }
 object JSONFormatterOptions {
   

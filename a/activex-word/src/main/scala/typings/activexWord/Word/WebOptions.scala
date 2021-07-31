@@ -5,46 +5,44 @@ import typings.activexOffice.Office.MsoScreenSize
 import typings.activexOffice.Office.MsoTargetBrowser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebOptions extends StObject {
   
-  var AllowPNG: Boolean = js.native
+  var AllowPNG: Boolean
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var BrowserLevel: WdBrowserLevel = js.native
+  var BrowserLevel: WdBrowserLevel
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Encoding: MsoEncoding = js.native
+  var Encoding: MsoEncoding
   
-  val FolderSuffix: String = js.native
+  val FolderSuffix: String
   
-  var OptimizeForBrowser: Boolean = js.native
+  var OptimizeForBrowser: Boolean
   
-  var OrganizeInFolder: Boolean = js.native
+  var OrganizeInFolder: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PixelsPerInch: Double = js.native
+  var PixelsPerInch: Double
   
-  var RelyOnCSS: Boolean = js.native
+  var RelyOnCSS: Boolean
   
-  var RelyOnVML: Boolean = js.native
+  var RelyOnVML: Boolean
   
-  var ScreenSize: MsoScreenSize = js.native
+  var ScreenSize: MsoScreenSize
   
-  var TargetBrowser: MsoTargetBrowser = js.native
+  var TargetBrowser: MsoTargetBrowser
   
-  def UseDefaultFolderSuffix(): Unit = js.native
+  def UseDefaultFolderSuffix(): Unit
   
-  var UseLongFileNames: Boolean = js.native
+  var UseLongFileNames: Boolean
   
   @JSName("Word.WebOptions_typekey")
-  var WordDotWebOptions_typekey: WebOptions = js.native
+  var WordDotWebOptions_typekey: WebOptions
 }
 object WebOptions {
   

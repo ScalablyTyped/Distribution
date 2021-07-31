@@ -6,38 +6,36 @@ import typings.awsSdkClientS3Node.typesInventoryEncryptionMod.InventoryEncryptio
 import typings.awsSdkClientS3Node.typesInventoryEncryptionMod.UnmarshalledInventoryEncryption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInventoryS3BucketDestinationMod {
   
-  @js.native
   trait InventoryS3BucketDestination extends StObject {
     
     /**
       * <p>The ID of the account that owns the destination bucket.</p>
       */
-    var AccountId: js.UndefOr[String] = js.native
+    var AccountId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The Amazon resource name (ARN) of the bucket where inventory results will be published.</p>
       */
-    var Bucket: String = js.native
+    var Bucket: String
     
     /**
       * <p>Contains the type of server-side encryption used to encrypt the inventory results.</p>
       */
-    var Encryption: js.UndefOr[InventoryEncryption] = js.native
+    var Encryption: js.UndefOr[InventoryEncryption] = js.undefined
     
     /**
       * <p>Specifies the output format of the inventory results.</p>
       */
-    var Format: CSV | ORC | String = js.native
+    var Format: CSV | ORC | String
     
     /**
       * <p>The prefix that is prepended to all inventory results.</p>
       */
-    var Prefix: js.UndefOr[String] = js.native
+    var Prefix: js.UndefOr[String] = js.undefined
   }
   object InventoryS3BucketDestination {
     
@@ -76,14 +74,15 @@ object typesInventoryS3BucketDestinationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledInventoryS3BucketDestination extends InventoryS3BucketDestination {
+  trait UnmarshalledInventoryS3BucketDestination
+    extends StObject
+       with InventoryS3BucketDestination {
     
     /**
       * <p>Contains the type of server-side encryption used to encrypt the inventory results.</p>
       */
     @JSName("Encryption")
-    var Encryption_UnmarshalledInventoryS3BucketDestination: js.UndefOr[UnmarshalledInventoryEncryption] = js.native
+    var Encryption_UnmarshalledInventoryS3BucketDestination: js.UndefOr[UnmarshalledInventoryEncryption] = js.undefined
   }
   object UnmarshalledInventoryS3BucketDestination {
     

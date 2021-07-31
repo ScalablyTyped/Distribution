@@ -6,25 +6,23 @@ import typings.materialUiCore.materialUiCoreStrings.normal
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disabled extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.undefined
   
-  var filled: js.UndefOr[Boolean] = js.native
+  var filled: js.UndefOr[Boolean] = js.undefined
   
-  var focused: js.UndefOr[Boolean] = js.native
+  var focused: js.UndefOr[Boolean] = js.undefined
   
-  var margin: js.UndefOr[dense | none | normal] = js.native
+  var margin: js.UndefOr[dense | none | normal] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var startAdornment: js.UndefOr[ReactNode] = js.native
+  var startAdornment: js.UndefOr[ReactNode] = js.undefined
 }
 object Disabled {
   

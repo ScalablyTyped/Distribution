@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPerInstanceConfig extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaPerInstanceConfig extends StObject {
     * config. An up-to-date fingerprint must be provided in order to update an
     * existing per-instance config or the field needs to be unset.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the instance. Serves as a merge key during
@@ -22,7 +20,7 @@ trait SchemaPerInstanceConfig extends StObject {
     * same instance URL exists then it will be updated, otherwise a new one
     * will be created.
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the per-instance config and the corresponding instance.
@@ -33,15 +31,15 @@ trait SchemaPerInstanceConfig extends StObject {
     * either doesn&#39;t exist or is not part of the group will result in a
     * failure.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `override`: js.UndefOr[SchemaManagedInstanceOverride] = js.native
+  var `override`: js.UndefOr[SchemaManagedInstanceOverride] = js.undefined
   
   /**
     * Intended preserved state for the given instance. Does not contain state
     * generated based on Stateful Policy.
     */
-  var preservedState: js.UndefOr[SchemaPreservedState] = js.native
+  var preservedState: js.UndefOr[SchemaPreservedState] = js.undefined
 }
 object SchemaPerInstanceConfig {
   

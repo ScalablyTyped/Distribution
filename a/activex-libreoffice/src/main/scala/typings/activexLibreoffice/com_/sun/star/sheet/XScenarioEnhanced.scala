@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,14 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.XScenario
   * @since OOo 2.0
   */
-@js.native
-trait XScenarioEnhanced extends XInterface {
+trait XScenarioEnhanced
+  extends StObject
+     with XInterface {
   
   /** gets the ranges to the scenario. */
-  val Ranges: SafeArray[CellRangeAddress] = js.native
+  val Ranges: SafeArray[CellRangeAddress]
   
   /** gets the ranges to the scenario. */
-  def getRanges(): SafeArray[CellRangeAddress] = js.native
+  def getRanges(): SafeArray[CellRangeAddress]
 }
 object XScenarioEnhanced {
   

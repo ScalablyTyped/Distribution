@@ -19,39 +19,39 @@ import typings.arcgisJsApi.arcgisJsApiStrings.solid
 import typings.arcgisJsApi.arcgisJsApiStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleLineSymbolProperties extends LineSymbolProperties {
+trait SimpleLineSymbolProperties
+  extends StObject
+     with LineSymbolProperties {
   
   /**
     * Specifies the cap style.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#cap)
     */
-  var cap: js.UndefOr[butt | round | square] = js.native
+  var cap: js.UndefOr[butt | round | square] = js.undefined
   
   /**
     * Specifies the join style.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#join)
     */
-  var join: js.UndefOr[miter | round | bevel] = js.native
+  var join: js.UndefOr[miter | round | bevel] = js.undefined
   
   /**
     * Specifies the color, style, and placement of a symbol marker on the line.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#marker)
     */
-  var marker: js.UndefOr[LineSymbolMarkerProperties] = js.native
+  var marker: js.UndefOr[LineSymbolMarkerProperties] = js.undefined
   
   /**
     * Maximum allowed ratio of the width of a miter join to the line width.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#miterLimit)
     */
-  var miterLimit: js.UndefOr[Double] = js.native
+  var miterLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the line style.
@@ -60,7 +60,7 @@ trait SimpleLineSymbolProperties extends LineSymbolProperties {
     */
   var style: js.UndefOr[
     dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid
-  ] = js.native
+  ] = js.undefined
 }
 object SimpleLineSymbolProperties {
   

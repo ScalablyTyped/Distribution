@@ -2,13 +2,11 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes information necessary for ingesting an RTMP or an HTTP stream.
   */
-@js.native
 trait SchemaIngestionInfo extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaIngestionInfo extends StObject {
     * You have the option of simultaneously streaming the content that you are
     * sending to the ingestionAddress to this URL.
     */
-  var backupIngestionAddress: js.UndefOr[String] = js.native
+  var backupIngestionAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The primary ingestion URL that you should use to stream video to YouTube.
@@ -25,12 +23,12 @@ trait SchemaIngestionInfo extends StObject {
     * stream URL and stream name separately or you may need to concatenate them
     * in the following format:  STREAM_URL/STREAM_NAME
     */
-  var ingestionAddress: js.UndefOr[String] = js.native
+  var ingestionAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP or RTMP stream name that YouTube assigns to the video stream.
     */
-  var streamName: js.UndefOr[String] = js.native
+  var streamName: js.UndefOr[String] = js.undefined
 }
 object SchemaIngestionInfo {
   

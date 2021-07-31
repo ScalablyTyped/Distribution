@@ -2,16 +2,14 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeploymentStrategyRequest extends StObject {
   
   /**
     * The ID of the deployment strategy to get.
     */
-  var DeploymentStrategyId: typings.awsSdk.appconfigMod.DeploymentStrategyId = js.native
+  var DeploymentStrategyId: typings.awsSdk.appconfigMod.DeploymentStrategyId
 }
 object GetDeploymentStrategyRequest {
   

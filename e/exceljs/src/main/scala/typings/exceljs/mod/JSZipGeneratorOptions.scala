@@ -5,24 +5,22 @@ import typings.exceljs.exceljsStrings.DEFLATE
 import typings.exceljs.exceljsStrings.STORE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSZipGeneratorOptions extends StObject {
   
   /**
   	 * @default DEFLATE
   	 */
-  var compression: STORE | DEFLATE = js.native
+  var compression: STORE | DEFLATE
   
-  var compressionOptions: Null | Level = js.native
+  var compressionOptions: Null | Level
 }
 object JSZipGeneratorOptions {
   
   @scala.inline
   def apply(compression: STORE | DEFLATE): JSZipGeneratorOptions = {
-    val __obj = js.Dynamic.literal(compression = compression.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(compression = compression.asInstanceOf[js.Any], compressionOptions = null)
     __obj.asInstanceOf[JSZipGeneratorOptions]
   }
   

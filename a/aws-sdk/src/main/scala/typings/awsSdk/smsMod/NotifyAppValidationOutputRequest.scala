@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotifyAppValidationOutputRequest extends StObject {
   
   /**
     * The ID of the application.
     */
-  var appId: AppIdWithValidation = js.native
+  var appId: AppIdWithValidation
   
   /**
     * The notification information.
     */
-  var notificationContext: js.UndefOr[NotificationContext] = js.native
+  var notificationContext: js.UndefOr[NotificationContext] = js.undefined
 }
 object NotifyAppValidationOutputRequest {
   

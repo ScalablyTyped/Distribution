@@ -2,21 +2,19 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreDomainAccessRequest extends StObject {
   
   /**
     * The name of the domain.
     */
-  var DomainName: typings.awsSdk.worklinkMod.DomainName = js.native
+  var DomainName: typings.awsSdk.worklinkMod.DomainName
   
   /**
     * The ARN of the fleet.
     */
-  var FleetArn: typings.awsSdk.worklinkMod.FleetArn = js.native
+  var FleetArn: typings.awsSdk.worklinkMod.FleetArn
 }
 object RestoreDomainAccessRequest {
   

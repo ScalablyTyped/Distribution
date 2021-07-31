@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DispatcherStatic
-  extends /**
+  extends StObject
+     with /**
   * Creates a dispatcher which will act as a basic wrapper for making HTTP
   * requests to the API, and handle authentication.
   * @class
@@ -26,8 +26,8 @@ trait DispatcherStatic
   * @option {Number} [requestTimeout] Timeout (in milliseconds) to wait for the
   *     request to finish.
   */
-Instantiable0[typings.asana.mod.Dispatcher]
-     with Instantiable1[/* options */ DispatcherOptions, typings.asana.mod.Dispatcher] {
+Instantiable0[Dispatcher]
+     with Instantiable1[/* options */ DispatcherOptions, Dispatcher] {
   
   /**
     * The relative API path for the current version of the Asana API.

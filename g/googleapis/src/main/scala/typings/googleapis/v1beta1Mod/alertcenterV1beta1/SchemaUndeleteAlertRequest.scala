@@ -2,13 +2,11 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request to undelete a specific alert that was marked for deletion.
   */
-@js.native
 trait SchemaUndeleteAlertRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaUndeleteAlertRequest extends StObject {
     * the customer the alert is associated with. Inferred from the caller
     * identity if not provided.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
 }
 object SchemaUndeleteAlertRequest {
   

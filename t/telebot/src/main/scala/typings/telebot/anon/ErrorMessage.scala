@@ -2,15 +2,13 @@ package typings.telebot.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorMessage extends StObject {
   
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
-  var shippingOptions: js.UndefOr[js.Array[_]] = js.native
+  var shippingOptions: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object ErrorMessage {
   
@@ -30,7 +28,7 @@ object ErrorMessage {
     def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def setShippingOptions(value: js.Array[_]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
+    def setShippingOptions(value: js.Array[js.Any]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setShippingOptionsUndefined: Self = StObject.set(x, "shippingOptions", js.undefined)

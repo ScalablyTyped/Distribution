@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConferenceRequestStatus extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ConferenceRequestStatus extends StObject {
     * - "success": the conference create request succeeded, the entry points are populated.
     * - "failure": the conference create request failed, there are no entry points.
     */
-  var statusCode: js.UndefOr[String] = js.native
+  var statusCode: js.UndefOr[String] = js.undefined
 }
 object ConferenceRequestStatus {
   

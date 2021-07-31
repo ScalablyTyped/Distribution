@@ -4,15 +4,13 @@ import typings.emscripten.anon.Kind
 import typings.emscripten.anon.Module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Emscripten {
   
-  @js.native
   trait CCallOpts extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
   }
   object CCallOpts {
     
@@ -183,7 +181,6 @@ object Emscripten {
     def WORKER: typings.emscripten.emscriptenStrings.WORKER = "WORKER".asInstanceOf[typings.emscripten.emscriptenStrings.WORKER]
   }
   
-  @js.native
   trait FileSystemType extends StObject
   
   /* Rewritten from type alias, can be one of: 

@@ -2,21 +2,19 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The key name of a tag defined by a user. For more information, see Controlling User Access to Pipelines in the AWS Data Pipeline Developer Guide.
     */
-  var key: tagKey = js.native
+  var key: tagKey
   
   /**
     * The optional value portion of a tag defined by a user. For more information, see Controlling User Access to Pipelines in the AWS Data Pipeline Developer Guide.
     */
-  var value: tagValue = js.native
+  var value: tagValue
 }
 object Tag {
   

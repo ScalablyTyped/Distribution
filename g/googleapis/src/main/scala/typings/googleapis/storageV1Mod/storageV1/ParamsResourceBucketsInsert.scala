@@ -6,48 +6,48 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBucketsInsert extends StandardParameters {
+trait ParamsResourceBucketsInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Apply a predefined set of access controls to this bucket.
     */
-  var predefinedAcl: js.UndefOr[String] = js.native
+  var predefinedAcl: js.UndefOr[String] = js.undefined
   
   /**
     * Apply a predefined set of default object access controls to this bucket.
     */
-  var predefinedDefaultObjectAcl: js.UndefOr[String] = js.native
+  var predefinedDefaultObjectAcl: js.UndefOr[String] = js.undefined
   
   /**
     * A valid API project identifier.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Set of properties to return. Defaults to noAcl, unless the bucket
     * resource specifies acl or defaultObjectAcl properties, when it defaults
     * to full.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaBucket] = js.native
+  var requestBody: js.UndefOr[SchemaBucket] = js.undefined
   
   /**
     * The project to be billed for this request.
     */
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceBucketsInsert {
   

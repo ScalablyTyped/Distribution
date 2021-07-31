@@ -4,18 +4,21 @@
 Typings are for version 0.1.5
 
 ## Library description:
-<p align="left">   <a id="cover" href="#cover"><img src="img/cover.svg" alt="This library allows you to create cached assets, which can be promises, async functions or even dynamic imports. These assets then have the ability to suspend the component in wh
+A data fetching strategy for React Suspense
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | use-asset |
 | Keywords           | react, suspense, resource, asset |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 106 |
+| # releases         | 12 |
+| # dependents       | 6 |
+| # downloads        | 127439 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/pmndrs/use-asset#readme)
+- [Bugs](https://github.com/pmndrs/use-asset/issues)
+- [Repository](https://github.com/pmndrs/use-asset)
 - [Npm](https://www.npmjs.com/package/use-asset)
     
 

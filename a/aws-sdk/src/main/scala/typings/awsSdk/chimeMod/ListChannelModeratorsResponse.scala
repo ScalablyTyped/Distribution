@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelModeratorsResponse extends StObject {
   
   /**
     * The ARN of the channel.
     */
-  var ChannelArn: js.UndefOr[ChimeArn] = js.native
+  var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The information about and names of each moderator.
     */
-  var ChannelModerators: js.UndefOr[ChannelModeratorSummaryList] = js.native
+  var ChannelModerators: js.UndefOr[ChannelModeratorSummaryList] = js.undefined
   
   /**
     * The token passed by previous API calls until all requested moderators are returned.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
 }
 object ListChannelModeratorsResponse {
   

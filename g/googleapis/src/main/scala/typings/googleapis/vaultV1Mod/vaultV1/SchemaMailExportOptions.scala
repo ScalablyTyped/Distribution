@@ -2,24 +2,22 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for mail export.
   */
-@js.native
 trait SchemaMailExportOptions extends StObject {
   
   /**
     * The export file format.
     */
-  var exportFormat: js.UndefOr[String] = js.native
+  var exportFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Set to true to export confidential mode content.
     */
-  var showConfidentialModeContent: js.UndefOr[Boolean] = js.native
+  var showConfidentialModeContent: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaMailExportOptions {
   

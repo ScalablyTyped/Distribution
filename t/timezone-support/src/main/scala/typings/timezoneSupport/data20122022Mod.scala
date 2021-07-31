@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object data20122022Mod extends Shortcut {
@@ -15,12 +14,11 @@ object data20122022Mod extends Shortcut {
   
   type PackedTimeZones = StringDictionary[String]
   
-  @js.native
   trait TimeZoneData extends StObject {
     
-    var links: js.Array[String] = js.native
+    var links: js.Array[String]
     
-    var zones: PackedTimeZones = js.native
+    var zones: PackedTimeZones
   }
   object TimeZoneData {
     

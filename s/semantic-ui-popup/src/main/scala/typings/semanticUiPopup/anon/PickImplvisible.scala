@@ -2,14 +2,12 @@ package typings.semanticUiPopup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-popup.SemanticUI.Popup.ClassNameSettings._Impl, 'visible'> */
-@js.native
 trait PickImplvisible extends StObject {
   
-  var visible: String = js.native
+  var visible: String
 }
 object PickImplvisible {
   

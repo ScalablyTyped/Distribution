@@ -2,34 +2,32 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to reset the password.
   */
-@js.native
 trait SchemaIdentitytoolkitRelyingpartyResetPasswordRequest extends StObject {
   
   /**
     * The email address of the user.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The new password inputted by the user.
     */
-  var newPassword: js.UndefOr[String] = js.native
+  var newPassword: js.UndefOr[String] = js.undefined
   
   /**
     * The old password inputted by the user.
     */
-  var oldPassword: js.UndefOr[String] = js.native
+  var oldPassword: js.UndefOr[String] = js.undefined
   
   /**
     * The confirmation code.
     */
-  var oobCode: js.UndefOr[String] = js.native
+  var oobCode: js.UndefOr[String] = js.undefined
 }
 object SchemaIdentitytoolkitRelyingpartyResetPasswordRequest {
   

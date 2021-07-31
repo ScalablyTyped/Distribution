@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnprocessedAccount extends StObject {
   
   /**
     * The AWS account ID for the account that the request applies to.
     */
-  var accountId: js.UndefOr[string] = js.native
+  var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * The source of the issue or delay in processing the request.
     */
-  var errorCode: js.UndefOr[ErrorCode] = js.native
+  var errorCode: js.UndefOr[ErrorCode] = js.undefined
   
   /**
     * The reason why the request hasn't been processed.
     */
-  var errorMessage: js.UndefOr[string] = js.native
+  var errorMessage: js.UndefOr[string] = js.undefined
 }
 object UnprocessedAccount {
   

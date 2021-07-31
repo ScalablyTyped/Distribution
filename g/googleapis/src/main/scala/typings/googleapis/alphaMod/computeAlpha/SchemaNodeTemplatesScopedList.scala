@@ -3,22 +3,20 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNodeTemplatesScopedList extends StObject {
   
   /**
     * [Output Only] A list of node templates contained in this scope.
     */
-  var nodeTemplates: js.UndefOr[js.Array[SchemaNodeTemplate]] = js.native
+  var nodeTemplates: js.UndefOr[js.Array[SchemaNodeTemplate]] = js.undefined
   
   /**
     * [Output Only] An informational warning that appears when the node
     * templates list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaNodeTemplatesScopedList {
   

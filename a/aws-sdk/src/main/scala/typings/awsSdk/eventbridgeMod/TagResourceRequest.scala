@@ -2,21 +2,19 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The ARN of the EventBridge resource that you're adding tags to.
     */
-  var ResourceARN: Arn = js.native
+  var ResourceARN: Arn
   
   /**
     * The list of key-value pairs to associate with the resource.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object TagResourceRequest {
   

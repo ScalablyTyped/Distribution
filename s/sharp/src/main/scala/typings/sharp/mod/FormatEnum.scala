@@ -2,41 +2,39 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormatEnum extends StObject {
   
-  var dz: AvailableFormatInfo = js.native
+  var dz: AvailableFormatInfo
   
-  var fits: AvailableFormatInfo = js.native
+  var fits: AvailableFormatInfo
   
-  var gif: AvailableFormatInfo = js.native
+  var gif: AvailableFormatInfo
   
-  var input: AvailableFormatInfo = js.native
+  var input: AvailableFormatInfo
   
-  var jpeg: AvailableFormatInfo = js.native
+  var jpeg: AvailableFormatInfo
   
-  var magick: AvailableFormatInfo = js.native
+  var magick: AvailableFormatInfo
   
-  var openslide: AvailableFormatInfo = js.native
+  var openslide: AvailableFormatInfo
   
-  var pdf: AvailableFormatInfo = js.native
+  var pdf: AvailableFormatInfo
   
-  var png: AvailableFormatInfo = js.native
+  var png: AvailableFormatInfo
   
-  var ppm: AvailableFormatInfo = js.native
+  var ppm: AvailableFormatInfo
   
-  var raw: AvailableFormatInfo = js.native
+  var raw: AvailableFormatInfo
   
-  var svg: AvailableFormatInfo = js.native
+  var svg: AvailableFormatInfo
   
-  var tiff: AvailableFormatInfo = js.native
+  var tiff: AvailableFormatInfo
   
-  var v: AvailableFormatInfo = js.native
+  var v: AvailableFormatInfo
   
-  var webp: AvailableFormatInfo = js.native
+  var webp: AvailableFormatInfo
 }
 object FormatEnum {
   

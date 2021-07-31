@@ -3,49 +3,47 @@ package typings.aliApp.my
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 蓝牙设备信息
   */
-@js.native
 trait BluetoothDevice extends StObject {
   
   /**
     * 设备信号强度
     */
-  var RSSI: Double = js.native
+  var RSSI: Double
   
   /**
     * 设备的广播内容
     */
-  var advertisData: ArrayBuffer = js.native
+  var advertisData: ArrayBuffer
   
   /**
     * 设备的 id
     */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /**
     * (兼容旧版本) 值与 name 一致
     */
-  var deviceName: String = js.native
+  var deviceName: String
   
   /**
     * 广播设备名称
     */
-  var localName: String = js.native
+  var localName: String
   
   /**
     * 设备的manufacturerData
     */
-  var manufacturerData: ArrayBuffer = js.native
+  var manufacturerData: ArrayBuffer
   
   /**
     * 蓝牙设备名称，某些设备可能没有
     */
-  var name: String = js.native
+  var name: String
 }
 object BluetoothDevice {
   

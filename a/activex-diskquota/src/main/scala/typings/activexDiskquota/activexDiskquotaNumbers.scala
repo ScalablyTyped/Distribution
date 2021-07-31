@@ -5,14 +5,14 @@ import typings.activexDiskquota.DiskQuotaTypeLibrary.QuotaStateConstants
 import typings.activexDiskquota.DiskQuotaTypeLibrary.UserNameResolutionConstants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexDiskquotaNumbers {
   
   @js.native
   sealed trait `0`
-    extends AccountStatusConstants
+    extends StObject
+       with AccountStatusConstants
        with QuotaStateConstants
        with UserNameResolutionConstants
   @scala.inline
@@ -20,7 +20,8 @@ object activexDiskquotaNumbers {
   
   @js.native
   sealed trait `1`
-    extends AccountStatusConstants
+    extends StObject
+       with AccountStatusConstants
        with QuotaStateConstants
        with UserNameResolutionConstants
   @scala.inline
@@ -28,24 +29,31 @@ object activexDiskquotaNumbers {
   
   @js.native
   sealed trait `2`
-    extends AccountStatusConstants
+    extends StObject
+       with AccountStatusConstants
        with QuotaStateConstants
        with UserNameResolutionConstants
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
-  sealed trait `3` extends AccountStatusConstants
+  sealed trait `3`
+    extends StObject
+       with AccountStatusConstants
   @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
-  sealed trait `4` extends AccountStatusConstants
+  sealed trait `4`
+    extends StObject
+       with AccountStatusConstants
   @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
-  sealed trait `5` extends AccountStatusConstants
+  sealed trait `5`
+    extends StObject
+       with AccountStatusConstants
   @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]
 }

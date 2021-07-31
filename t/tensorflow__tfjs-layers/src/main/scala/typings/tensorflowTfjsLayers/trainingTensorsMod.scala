@@ -13,136 +13,103 @@ import typings.tensorflowTfjsLayers.trainingUtilsMod.ClassWeight
 import typings.tensorflowTfjsLayers.trainingUtilsMod.ClassWeightMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trainingTensorsMod {
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "checkBatchSize")
+  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", JSImport.Namespace)
   @js.native
-  def checkBatchSize(batchSize: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "disposeNewTensors")
-  @js.native
-  def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: js.Array[Tensor[Rank]]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "disposeNewTensors")
-  @js.native
-  def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: StringDictionary[Tensor[Rank]]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "disposeNewTensors")
-  @js.native
-  def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: Tensor[Rank]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "disposeNewTensors")
-  @js.native
-  def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: js.Array[Tensor[Rank]]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "disposeNewTensors")
-  @js.native
-  def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: StringDictionary[Tensor[Rank]]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "disposeNewTensors")
-  @js.native
-  def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: Tensor[Rank]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "disposeNewTensors")
-  @js.native
-  def disposeNewTensors(tensors: Tensor[Rank], refTensors: js.Array[Tensor[Rank]]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "disposeNewTensors")
-  @js.native
-  def disposeNewTensors(tensors: Tensor[Rank], refTensors: StringDictionary[Tensor[Rank]]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "disposeNewTensors")
-  @js.native
-  def disposeNewTensors(tensors: Tensor[Rank], refTensors: Tensor[Rank]): Unit = js.native
+  @scala.inline
+  def checkBatchSize(batchSize: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBatchSize")(batchSize.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "ensureTensorsRank2OrHigher")
-  @js.native
-  def ensureTensorsRank2OrHigher(tensors: js.Array[Tensor[Rank]]): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "ensureTensorsRank2OrHigher")
-  @js.native
-  def ensureTensorsRank2OrHigher(tensors: Tensor[Rank]): js.Array[Tensor[Rank]] = js.native
+  @scala.inline
+  def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: js.Array[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: StringDictionary[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: js.Array[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: StringDictionary[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def disposeNewTensors(tensors: Tensor[Rank], refTensors: js.Array[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def disposeNewTensors(tensors: Tensor[Rank], refTensors: StringDictionary[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def disposeNewTensors(tensors: Tensor[Rank], refTensors: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
+  @scala.inline
+  def ensureTensorsRank2OrHigher(tensors: js.Array[Tensor[Rank]]): js.Array[Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureTensorsRank2OrHigher")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def ensureTensorsRank2OrHigher(tensors: Tensor[Rank]): js.Array[Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureTensorsRank2OrHigher")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Array[Tensor[Rank]]]
+  
+  @scala.inline
+  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
   def fitTensors(
     model: js.Any,
     x: StringDictionary[Tensor[Rank]],
     y: StringDictionary[Tensor[Rank]],
     args: ModelFitArgs
-  ): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]]): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: Tensor[Rank]): js.Promise[History] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "fitTensors")
-  @js.native
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = js.native
+  ): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: Tensor[Rank], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  @scala.inline
+  def fitTensors(model: js.Any, x: Tensor[Rank], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "makeBatches")
-  @js.native
-  def makeBatches(size: Double, batchSize: Double): js.Array[js.Tuple2[Double, Double]] = js.native
+  @scala.inline
+  def makeBatches(size: Double, batchSize: Double): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeBatches")(size.asInstanceOf[js.Any], batchSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "sliceArrays")
-  @js.native
-  def sliceArrays(arrays: js.Array[Tensor[Rank]], start: Double, stop: Double): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "sliceArrays")
-  @js.native
-  def sliceArrays(arrays: Tensor[Rank], start: Double, stop: Double): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  @scala.inline
+  def sliceArrays(arrays: js.Array[Tensor[Rank]], start: Double, stop: Double): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArrays")(arrays.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
+  @scala.inline
+  def sliceArrays(arrays: Tensor[Rank], start: Double, stop: Double): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArrays")(arrays.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "sliceArraysByIndices")
-  @js.native
-  def sliceArraysByIndices(arrays: js.Array[Tensor[Rank]], indices: Tensor1D): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_tensors", "sliceArraysByIndices")
-  @js.native
-  def sliceArraysByIndices(arrays: Tensor[Rank], indices: Tensor1D): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  @scala.inline
+  def sliceArraysByIndices(arrays: js.Array[Tensor[Rank]], indices: Tensor1D): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArraysByIndices")(arrays.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
+  @scala.inline
+  def sliceArraysByIndices(arrays: Tensor[Rank], indices: Tensor1D): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArraysByIndices")(arrays.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
   
-  @js.native
   trait ModelFitArgs extends StObject {
     
     /**
       * Number of samples per gradient update. If unspecified, it
       * will default to 32.
       */
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
     /**
       * List of callbacks to be called during training.
@@ -158,7 +125,7 @@ object trainingTensorsMod {
       *      as in `onBatchEnd()`. Note that `onYield` can skip batches or
       *      epochs. See also docs for `yieldEvery` below.
       */
-    var callbacks: js.UndefOr[(js.Array[BaseCallback | CustomCallbackArgs]) | CustomCallbackArgs] = js.native
+    var callbacks: js.UndefOr[(js.Array[BaseCallback | CustomCallbackArgs]) | CustomCallbackArgs] = js.undefined
     
     /**
       * Optional object mapping class indices (integers) to
@@ -171,12 +138,12 @@ object trainingTensorsMod {
       * or a object that maps model output names (e.g., `model.outputNames[0]`)
       * to weight objects.
       */
-    var classWeight: js.UndefOr[ClassWeight | js.Array[ClassWeight] | ClassWeightMap] = js.native
+    var classWeight: js.UndefOr[ClassWeight | js.Array[ClassWeight] | ClassWeightMap] = js.undefined
     
     /**
       * Integer number of times to iterate over the training data arrays.
       */
-    var epochs: js.UndefOr[Double] = js.native
+    var epochs: js.UndefOr[Double] = js.undefined
     
     /**
       * Epoch at which to start training (useful for resuming a previous training
@@ -184,7 +151,7 @@ object trainingTensorsMod {
       * The model is not trained for a number of iterations given by `epochs`,
       * but merely until the epoch of index `epochs` is reached.
       */
-    var initialEpoch: js.UndefOr[Double] = js.native
+    var initialEpoch: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional array of the same length as x, containing
@@ -194,13 +161,13 @@ object trainingTensorsMod {
       * sample. In this case you should make sure to specify
       * sampleWeightMode="temporal" in compile().
       */
-    var sampleWeight: js.UndefOr[Tensor[Rank]] = js.native
+    var sampleWeight: js.UndefOr[Tensor[Rank]] = js.undefined
     
     /**
       * Whether to shuffle the training data before each epoch. Has
       * no effect when `stepsPerEpoch` is not `null`.
       */
-    var shuffle: js.UndefOr[Boolean] = js.native
+    var shuffle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Total number of steps (batches of samples) before
@@ -209,7 +176,7 @@ object trainingTensorsMod {
       * equal to the number of unique samples in your dataset divided by the
       * batch size, or 1 if that cannot be determined.
       */
-    var stepsPerEpoch: js.UndefOr[Double] = js.native
+    var stepsPerEpoch: js.UndefOr[Double] = js.undefined
     
     /**
       * Data on which to evaluate the loss and any model
@@ -224,7 +191,7 @@ object trainingTensorsMod {
           Tensor[Rank] | js.Array[Tensor[Rank]], 
           Tensor[Rank] | js.Array[Tensor[Rank]]
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Float between 0 and 1: fraction of the training data
@@ -234,13 +201,13 @@ object trainingTensorsMod {
       * The validation data is selected from the last samples in the `x` and `y`
       * data provided, before shuffling.
       */
-    var validationSplit: js.UndefOr[Double] = js.native
+    var validationSplit: js.UndefOr[Double] = js.undefined
     
     /**
       * Only relevant if `stepsPerEpoch` is specified. Total number of steps
       * (batches of samples) to validate before stopping.
       */
-    var validationSteps: js.UndefOr[Double] = js.native
+    var validationSteps: js.UndefOr[Double] = js.undefined
     
     /**
       * Verbosity level.
@@ -253,7 +220,7 @@ object trainingTensorsMod {
       *     In the browser: no action. This is the default.
       * 2 - Not implemented yet.
       */
-    var verbose: js.UndefOr[ModelLoggingVerbosity] = js.native
+    var verbose: js.UndefOr[ModelLoggingVerbosity] = js.undefined
     
     /**
       * Configures the frequency of yielding the main thread to other tasks.
@@ -272,7 +239,7 @@ object trainingTensorsMod {
       *   - `'never'`: never yield. (yielding can still happen through `await
       *      nextFrame()` calls in custom callbacks.)
       */
-    var yieldEvery: js.UndefOr[YieldEveryOptions] = js.native
+    var yieldEvery: js.UndefOr[YieldEveryOptions] = js.undefined
   }
   object ModelFitArgs {
     

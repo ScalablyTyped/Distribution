@@ -2,26 +2,24 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelfManagedActiveDirectoryConfigurationUpdates extends StObject {
   
   /**
     * A list of up to two IP addresses of DNS servers or domain controllers in the self-managed AD directory.
     */
-  var DnsIps: js.UndefOr[typings.awsSdk.fsxMod.DnsIps] = js.native
+  var DnsIps: js.UndefOr[typings.awsSdk.fsxMod.DnsIps] = js.undefined
   
   /**
     * The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.
     */
-  var Password: js.UndefOr[DirectoryPassword] = js.native
+  var Password: js.UndefOr[DirectoryPassword] = js.undefined
   
   /**
     * The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This account must have the permission to join computers to the domain in the organizational unit provided in OrganizationalUnitDistinguishedName.
     */
-  var UserName: js.UndefOr[DirectoryUserName] = js.native
+  var UserName: js.UndefOr[DirectoryUserName] = js.undefined
 }
 object SelfManagedActiveDirectoryConfigurationUpdates {
   

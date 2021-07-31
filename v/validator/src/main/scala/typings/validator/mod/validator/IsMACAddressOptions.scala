@@ -2,10 +2,8 @@ package typings.validator.mod.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsMACAddressOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait IsMACAddressOptions extends StObject {
     *
     * @default false
     */
-  var no_colons: js.UndefOr[Boolean] = js.native
+  var no_colons: js.UndefOr[Boolean] = js.undefined
 }
 object IsMACAddressOptions {
   

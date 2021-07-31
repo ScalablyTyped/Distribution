@@ -5,7 +5,6 @@ import typings.protractor.driverProviderMod.DriverProvider
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mockMod {
@@ -18,7 +17,7 @@ object mockMod {
     /**
       * An execute function that returns a promise with a test value.
       */
-    def execute(): Promise[_] = js.native
+    def execute(): Promise[js.Any] = js.native
   }
   
   @JSImport("protractor/built/driverProviders/mock", "MockExecutor")

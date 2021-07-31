@@ -2,7 +2,6 @@ package typings.wyt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,9 +15,12 @@ object mod {
     * before before requesting a rate-limited resource (i.e. wait for its turn) in
     * order to not exceed the limit.
     */
+  @scala.inline
+  def apply(turnsPerInterval: Double, interval: Double): WaitTurn = (^.asInstanceOf[js.Dynamic].apply(turnsPerInterval.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[WaitTurn]
+  
   @JSImport("wyt", JSImport.Namespace)
   @js.native
-  def apply(turnsPerInterval: Double, interval: Double): WaitTurn = js.native
+  val ^ : js.Any = js.native
   
   /**
     * @param turns (default=1) The number of turns that will be taken at the

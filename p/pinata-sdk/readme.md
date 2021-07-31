@@ -10,9 +10,9 @@ Unofficial SDK for [Pinata](https://pinata.cloud), implemented in ReasonML and c
 | ------------------ | :-------------: |
 | Full name          | pinata-sdk |
 | Keywords           | BuckleScript, ReasonML, Pinata, IPFS |
-| # releases         | 10 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 235 |
+| # downloads        | 209 |
 | # stars            | 0 |
 
 ## Links

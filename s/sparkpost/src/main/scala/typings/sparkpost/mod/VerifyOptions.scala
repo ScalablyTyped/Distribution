@@ -2,53 +2,51 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyOptions extends StObject {
   
   /**
     * A token retrieved from the verification link contained in the abuse@ verification email.
     *
     */
-  var abuse_at_token: js.UndefOr[String] = js.native
+  var abuse_at_token: js.UndefOr[String] = js.undefined
   
   /**
     * Request an email with a verification link to be sent to the sending domain’s abuse@ mailbox.
     *
     */
-  var abuse_at_verify: js.UndefOr[Boolean] = js.native
+  var abuse_at_verify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request verification of CNAME record
     */
-  var cname_verify: js.UndefOr[Boolean] = js.native
+  var cname_verify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request verification of DKIM record
     *
     */
-  var dkim_verify: js.UndefOr[Boolean] = js.native
+  var dkim_verify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A token retrieved from the verification link contained in the postmaster@ verification email.
     *
     */
-  var postmaster_at_token: js.UndefOr[String] = js.native
+  var postmaster_at_token: js.UndefOr[String] = js.undefined
   
   /**
     * Request an email with a verification link to be sent to the sending domain’s postmaster@ mailbox.
     *
     */
-  var postmaster_at_verify: js.UndefOr[Boolean] = js.native
+  var postmaster_at_verify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request verification of SPF record
     *
     * @deprecated
     */
-  var spf_verify: js.UndefOr[Boolean] = js.native
+  var spf_verify: js.UndefOr[Boolean] = js.undefined
 }
 object VerifyOptions {
   

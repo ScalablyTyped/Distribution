@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceAccount extends StObject {
   
   /** Optional. A user-specified, human-readable description of the service account. The maximum length is 256 UTF-8 bytes. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Output only. Whether the service account is disabled. */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. A user-specified, human-readable name for the service account. The maximum length is 100 UTF-8 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. The email address of the service account. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** Deprecated. Do not use. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the service account. Use one of the following formats: * `projects/{PROJECT_ID}/serviceAccounts/{EMAIL_ADDRESS}` *
@@ -30,19 +28,19 @@ trait ServiceAccount extends StObject {
     * to contain misleading error codes. For example, if you try to get the service account `projects/-/serviceAccounts/fake@example.com`, which does not exist, the response contains an
     * HTTP `403 Forbidden` error instead of a `404 Not Found` error.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The OAuth 2.0 client ID for the service account. */
-  var oauth2ClientId: js.UndefOr[String] = js.native
+  var oauth2ClientId: js.UndefOr[String] = js.undefined
   
   /** Output only. The ID of the project that owns the service account. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The unique, stable numeric ID for the service account. Each service account retains its unique ID even if you delete the service account. For example, if you delete a
     * service account, then create a new service account with the same name, the new service account has a different unique ID than the deleted service account.
     */
-  var uniqueId: js.UndefOr[String] = js.native
+  var uniqueId: js.UndefOr[String] = js.undefined
 }
 object ServiceAccount {
   

@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuesDeleteMilestoneRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: DELETE = js.native
+  var method: DELETE
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number = js.native
+  var url: SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number
 }
 object IssuesDeleteMilestoneRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: DELETE,
-    request: RequestRequestOptions,
-    url: SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number
-  ): IssuesDeleteMilestoneRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): IssuesDeleteMilestoneRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/milestones/:milestone_number")
     __obj.asInstanceOf[IssuesDeleteMilestoneRequestOptions]
   }
   

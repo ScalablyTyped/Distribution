@@ -4,22 +4,22 @@ import typings.awsSdkTypes.awsSdkTypesStrings.binary
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BinaryHeaderValue extends MessageHeaderValue {
+trait BinaryHeaderValue
+  extends StObject
+     with MessageHeaderValue {
   
-  var `type`: binary = js.native
+  var `type`: binary
   
-  var value: Uint8Array = js.native
+  var value: Uint8Array
 }
 object BinaryHeaderValue {
   
   @scala.inline
-  def apply(`type`: binary, value: Uint8Array): BinaryHeaderValue = {
+  def apply(value: Uint8Array): BinaryHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("binary")
     __obj.asInstanceOf[BinaryHeaderValue]
   }
   

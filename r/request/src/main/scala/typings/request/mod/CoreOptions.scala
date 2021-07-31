@@ -9,111 +9,109 @@ import typings.request.requestNumbers.`4`
 import typings.request.requestNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoreOptions extends StObject {
   
-  var agent: js.UndefOr[Agent | typings.node.httpsMod.Agent] = js.native
+  var agent: js.UndefOr[Agent | typings.node.httpsMod.Agent] = js.undefined
   
-  var agentClass: js.UndefOr[js.Any] = js.native
+  var agentClass: js.UndefOr[js.Any] = js.undefined
   
-  var agentOptions: js.UndefOr[AgentOptions | typings.node.httpsMod.AgentOptions] = js.native
+  var agentOptions: js.UndefOr[AgentOptions | typings.node.httpsMod.AgentOptions] = js.undefined
   
-  var auth: js.UndefOr[AuthOptions] = js.native
+  var auth: js.UndefOr[AuthOptions] = js.undefined
   
-  var aws: js.UndefOr[AWSOptions] = js.native
+  var aws: js.UndefOr[AWSOptions] = js.undefined
   
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
-  var ca: js.UndefOr[String | Buffer | (js.Array[Buffer | String])] = js.native
+  var ca: js.UndefOr[String | Buffer | (js.Array[Buffer | String])] = js.undefined
   
-  var callback: js.UndefOr[RequestCallback] = js.native
+  var callback: js.UndefOr[RequestCallback] = js.undefined
   
-  var cert: js.UndefOr[Buffer] = js.native
+  var cert: js.UndefOr[Buffer] = js.undefined
   
-  var encoding: js.UndefOr[String | Null] = js.native
+  var encoding: js.UndefOr[String | Null] = js.undefined
   
-  var family: js.UndefOr[`4` | `6`] = js.native
+  var family: js.UndefOr[`4` | `6`] = js.undefined
   
-  var followAllRedirects: js.UndefOr[Boolean] = js.native
+  var followAllRedirects: js.UndefOr[Boolean] = js.undefined
   
-  var followOriginalHttpMethod: js.UndefOr[Boolean] = js.native
+  var followOriginalHttpMethod: js.UndefOr[Boolean] = js.undefined
   
-  var followRedirect: js.UndefOr[Boolean | (js.Function1[/* response */ IncomingMessage, Boolean])] = js.native
+  var followRedirect: js.UndefOr[Boolean | (js.Function1[/* response */ IncomingMessage, Boolean])] = js.undefined
   
-  var forever: js.UndefOr[js.Any] = js.native
+  var forever: js.UndefOr[js.Any] = js.undefined
   
-  var form: js.UndefOr[StringDictionary[js.Any] | String] = js.native
+  var form: js.UndefOr[StringDictionary[js.Any] | String] = js.undefined
   
-  var formData: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var formData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var gzip: js.UndefOr[Boolean] = js.native
+  var gzip: js.UndefOr[Boolean] = js.undefined
   
-  var har: js.UndefOr[HttpArchiveRequest] = js.native
+  var har: js.UndefOr[HttpArchiveRequest] = js.undefined
   
-  var hawk: js.UndefOr[HawkOptions] = js.native
+  var hawk: js.UndefOr[HawkOptions] = js.undefined
   
-  var headers: js.UndefOr[Headers] = js.native
+  var headers: js.UndefOr[Headers] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var jar: js.UndefOr[CookieJar | Boolean] = js.native
+  var jar: js.UndefOr[CookieJar | Boolean] = js.undefined
   
-  var json: js.UndefOr[js.Any] = js.native
+  var json: js.UndefOr[js.Any] = js.undefined
   
-  var jsonReplacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.native
+  var jsonReplacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
   
-  var jsonReviver: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.native
+  var jsonReviver: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
   
-  var key: js.UndefOr[Buffer] = js.native
+  var key: js.UndefOr[Buffer] = js.undefined
   
-  var localAddress: js.UndefOr[String] = js.native
+  var localAddress: js.UndefOr[String] = js.undefined
   
-  var maxRedirects: js.UndefOr[Double] = js.native
+  var maxRedirects: js.UndefOr[Double] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var multipart: js.UndefOr[js.Array[RequestPart] | Multipart] = js.native
+  var multipart: js.UndefOr[js.Array[RequestPart] | Multipart] = js.undefined
   
-  var oauth: js.UndefOr[OAuthOptions] = js.native
+  var oauth: js.UndefOr[OAuthOptions] = js.undefined
   
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
   
-  var pool: js.UndefOr[PoolOptions] = js.native
+  var pool: js.UndefOr[PoolOptions] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var postambleCRLF: js.UndefOr[Boolean] = js.native
+  var postambleCRLF: js.UndefOr[Boolean] = js.undefined
   
-  var preambleCRLF: js.UndefOr[Boolean] = js.native
+  var preambleCRLF: js.UndefOr[Boolean] = js.undefined
   
-  var proxy: js.UndefOr[js.Any] = js.native
+  var proxy: js.UndefOr[js.Any] = js.undefined
   
-  var qs: js.UndefOr[js.Any] = js.native
+  var qs: js.UndefOr[js.Any] = js.undefined
   
-  var qsParseOptions: js.UndefOr[js.Any] = js.native
+  var qsParseOptions: js.UndefOr[js.Any] = js.undefined
   
-  var qsStringifyOptions: js.UndefOr[js.Any] = js.native
+  var qsStringifyOptions: js.UndefOr[js.Any] = js.undefined
   
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   
-  var removeRefererHeader: js.UndefOr[Boolean] = js.native
+  var removeRefererHeader: js.UndefOr[Boolean] = js.undefined
   
-  var strictSSL: js.UndefOr[Boolean] = js.native
+  var strictSSL: js.UndefOr[Boolean] = js.undefined
   
-  var time: js.UndefOr[Boolean] = js.native
+  var time: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var tunnel: js.UndefOr[Boolean] = js.native
+  var tunnel: js.UndefOr[Boolean] = js.undefined
   
-  var useQuerystring: js.UndefOr[Boolean] = js.native
+  var useQuerystring: js.UndefOr[Boolean] = js.undefined
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object CoreOptions {
   
@@ -283,13 +281,13 @@ object CoreOptions {
     def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonReplacer(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "jsonReplacer", js.Any.fromFunction2(value))
+    def setJsonReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "jsonReplacer", js.Any.fromFunction2(value))
     
     @scala.inline
     def setJsonReplacerUndefined: Self = StObject.set(x, "jsonReplacer", js.undefined)
     
     @scala.inline
-    def setJsonReviver(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "jsonReviver", js.Any.fromFunction2(value))
+    def setJsonReviver(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "jsonReviver", js.Any.fromFunction2(value))
     
     @scala.inline
     def setJsonReviverUndefined: Self = StObject.set(x, "jsonReviver", js.undefined)

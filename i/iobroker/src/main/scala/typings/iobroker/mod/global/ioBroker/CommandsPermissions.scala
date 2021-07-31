@@ -2,70 +2,68 @@ package typings.iobroker.mod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandsPermissions extends StObject {
   
-  var authEnabled: Permission = js.native
+  var authEnabled: Permission
   
-  var chmodFile: ObjectOrStatePermission = js.native
+  var chmodFile: ObjectOrStatePermission
   
-  var disconnect: Permission = js.native
+  var disconnect: Permission
   
   // TODO: Are all properties required or is a partial object ok?
-  var getObject: ObjectOrStatePermission = js.native
+  var getObject: ObjectOrStatePermission
   
-  var getObjectView: ObjectOrStatePermission = js.native
+  var getObjectView: ObjectOrStatePermission
   
-  var getObjects: ObjectOrStatePermission = js.native
+  var getObjects: ObjectOrStatePermission
   
-  var getState: ObjectOrStatePermission = js.native
+  var getState: ObjectOrStatePermission
   
-  var getStateHistory: ObjectOrStatePermission = js.native
+  var getStateHistory: ObjectOrStatePermission
   
-  var getStates: ObjectOrStatePermission = js.native
+  var getStates: ObjectOrStatePermission
   
-  var getUserPermissions: ObjectOrStatePermission = js.native
+  var getUserPermissions: ObjectOrStatePermission
   
-  var getVersion: Permission = js.native
+  var getVersion: Permission
   
-  var httpGet: OtherPermission = js.native
+  var httpGet: OtherPermission
   
-  var listPermissions: Permission = js.native
+  var listPermissions: Permission
   
-  var mkdir: ObjectOrStatePermission = js.native
+  var mkdir: ObjectOrStatePermission
   
-  var readDir: ObjectOrStatePermission = js.native
+  var readDir: ObjectOrStatePermission
   
-  var readFile: ObjectOrStatePermission = js.native
+  var readFile: ObjectOrStatePermission
   
-  var readFile64: ObjectOrStatePermission = js.native
+  var readFile64: ObjectOrStatePermission
   
-  var rename: ObjectOrStatePermission = js.native
+  var rename: ObjectOrStatePermission
   
-  var sendTo: OtherPermission = js.native
+  var sendTo: OtherPermission
   
-  var sendToHost: OtherPermission = js.native
+  var sendToHost: OtherPermission
   
-  var setObject: ObjectOrStatePermission = js.native
+  var setObject: ObjectOrStatePermission
   
-  var setState: ObjectOrStatePermission = js.native
+  var setState: ObjectOrStatePermission
   
-  var subscribe: ObjectOrStatePermission = js.native
+  var subscribe: ObjectOrStatePermission
   
-  var subscribeObjects: ObjectOrStatePermission = js.native
+  var subscribeObjects: ObjectOrStatePermission
   
-  var unlink: ObjectOrStatePermission = js.native
+  var unlink: ObjectOrStatePermission
   
-  var unsubscribe: ObjectOrStatePermission = js.native
+  var unsubscribe: ObjectOrStatePermission
   
-  var unsubscribeObjects: ObjectOrStatePermission = js.native
+  var unsubscribeObjects: ObjectOrStatePermission
   
-  var writeFile: ObjectOrStatePermission = js.native
+  var writeFile: ObjectOrStatePermission
   
-  var writeFile64: ObjectOrStatePermission = js.native
+  var writeFile64: ObjectOrStatePermission
 }
 object CommandsPermissions {
   

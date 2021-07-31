@@ -12,7 +12,7 @@ Create an array with values that are present in the first input array but not ad
 | Keywords           | array, difference, diff, differ, filter, exclude |
 | # releases         | 3 |
 | # dependents       | 47 |
-| # downloads        | 158911278 |
+| # downloads        | 184203991 |
 | # stars            | 4 |
 
 ## Links

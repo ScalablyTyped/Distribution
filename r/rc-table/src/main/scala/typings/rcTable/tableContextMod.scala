@@ -9,7 +9,6 @@ import typings.rcTable.rcTableStrings.rtl
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableContextMod extends Shortcut {
@@ -18,20 +17,19 @@ object tableContextMod extends Shortcut {
   @js.native
   val default: Context[TableContextProps] = js.native
   
-  @js.native
   trait TableContextProps extends StObject {
     
-    var direction: ltr | rtl = js.native
+    var direction: ltr | rtl
     
-    var fixedInfoList: js.Array[FixedInfo] = js.native
+    var fixedInfoList: js.Array[FixedInfo]
     
-    var getComponent: GetComponent = js.native
+    var getComponent: GetComponent
     
-    var isSticky: Boolean = js.native
+    var isSticky: Boolean
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var scrollbarSize: Double = js.native
+    var scrollbarSize: Double
   }
   object TableContextProps {
     

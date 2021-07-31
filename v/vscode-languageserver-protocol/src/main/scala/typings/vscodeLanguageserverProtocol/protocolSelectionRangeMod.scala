@@ -14,7 +14,6 @@ import typings.vscodeLanguageserverTypes.mod.SelectionRange
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object protocolSelectionRangeMod {
@@ -30,8 +29,6 @@ object protocolSelectionRangeMod {
     @js.native
     val resultType: ProgressType[js.Array[SelectionRange]] = js.native
     
-    type HandlerSignature = RequestHandler[SelectionRangeParams, js.Array[SelectionRange] | Null, Unit]
-    
     @JSImport("vscode-languageserver-protocol/lib/protocol.selectionRange", "SelectionRangeRequest.type")
     @js.native
     val `type`: ProtocolRequestType[
@@ -41,9 +38,10 @@ object protocolSelectionRangeMod {
         js.Any, 
         SelectionRangeRegistrationOptions
       ] = js.native
+    
+    type HandlerSignature = RequestHandler[SelectionRangeParams, js.Array[SelectionRange] | Null, Unit]
   }
   
-  @js.native
   trait SelectionRangeClientCapabilities extends StObject {
     
     /**
@@ -51,7 +49,7 @@ object protocolSelectionRangeMod {
       * the client supports the new `SelectionRangeRegistrationOptions` return value for the corresponding server
       * capability as well.
       */
-    var dynamicRegistration: js.UndefOr[Boolean] = js.native
+    var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   }
   object SelectionRangeClientCapabilities {
     
@@ -74,20 +72,20 @@ object protocolSelectionRangeMod {
   
   type SelectionRangeOptions = WorkDoneProgressOptions
   
-  @js.native
   trait SelectionRangeParams
-    extends WorkDoneProgressParams
+    extends StObject
+       with WorkDoneProgressParams
        with PartialResultParams {
     
     /**
       * The positions inside the text document.
       */
-    var positions: js.Array[Position] = js.native
+    var positions: js.Array[Position]
     
     /**
       * The text document.
       */
-    var textDocument: TextDocumentIdentifier = js.native
+    var textDocument: TextDocumentIdentifier
   }
   object SelectionRangeParams {
     
@@ -111,16 +109,16 @@ object protocolSelectionRangeMod {
     }
   }
   
-  @js.native
   trait SelectionRangeRegistrationOptions
-    extends WorkDoneProgressOptions
+    extends StObject
+       with WorkDoneProgressOptions
        with TextDocumentRegistrationOptions
        with StaticRegistrationOptions
   object SelectionRangeRegistrationOptions {
     
     @scala.inline
     def apply(): SelectionRangeRegistrationOptions = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(documentSelector = null)
       __obj.asInstanceOf[SelectionRangeRegistrationOptions]
     }
   }

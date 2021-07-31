@@ -2,21 +2,19 @@ package typings.hummusRecipe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentOptions extends StObject {
   
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
-  var flag: js.UndefOr[CommentOptionsFlag] = js.native
+  var flag: js.UndefOr[CommentOptionsFlag] = js.undefined
   
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
-  var richText: js.UndefOr[Boolean] = js.native
+  var richText: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object CommentOptions {
   

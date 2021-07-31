@@ -25,7 +25,6 @@ import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -85,9 +84,8 @@ object IntegerType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.create")
-  @js.native
-  def create(model: IModel): IntegerType = js.native
+  @scala.inline
+  def create(model: IModel): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -98,9 +96,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInAppServiceActionParameterUnderParameterType")
-  @js.native
-  def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): IntegerType = js.native
+  @scala.inline
+  def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -111,9 +108,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInAppServiceActionUnderActionReturnType")
-  @js.native
-  def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): IntegerType = js.native
+  @scala.inline
+  def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -124,9 +120,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInConstantUnderType")
-  @js.native
-  def createInConstantUnderType(container: Constant): IntegerType = js.native
+  @scala.inline
+  def createInConstantUnderType(container: Constant): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -137,9 +132,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInCreateVariableActionUnderVariableType")
-  @js.native
-  def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): IntegerType = js.native
+  @scala.inline
+  def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -150,9 +144,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInDataSetColumnUnderColumnType")
-  @js.native
-  def createInDataSetColumnUnderColumnType(container: DataSetColumn): IntegerType = js.native
+  @scala.inline
+  def createInDataSetColumnUnderColumnType(container: DataSetColumn): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -163,9 +156,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInDataSetParameterUnderParameterType")
-  @js.native
-  def createInDataSetParameterUnderParameterType(container: DataSetParameter): IntegerType = js.native
+  @scala.inline
+  def createInDataSetParameterUnderParameterType(container: DataSetParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -176,9 +168,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInDocumentTemplateParameterUnderParameterType")
-  @js.native
-  def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): IntegerType = js.native
+  @scala.inline
+  def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -189,9 +180,8 @@ object IntegerType {
     *  7.16.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInImportMappingUnderParameterType")
-  @js.native
-  def createInImportMappingUnderParameterType(container: ImportMapping): IntegerType = js.native
+  @scala.inline
+  def createInImportMappingUnderParameterType(container: ImportMapping): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -202,9 +192,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInMicroflowBaseUnderMicroflowReturnType")
-  @js.native
-  def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): IntegerType = js.native
+  @scala.inline
+  def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -215,9 +204,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInMicroflowParameterBaseUnderParameterType")
-  @js.native
-  def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): IntegerType = js.native
+  @scala.inline
+  def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -228,9 +216,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInMicroflowParameterObjectUnderVariableType")
-  @js.native
-  def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): IntegerType = js.native
+  @scala.inline
+  def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -241,9 +228,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInPublishedOperationUnderOperationReturnType")
-  @js.native
-  def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): IntegerType = js.native
+  @scala.inline
+  def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -254,9 +240,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInPublishedParameterUnderParameterType")
-  @js.native
-  def createInPublishedParameterUnderParameterType(container: PublishedParameter): IntegerType = js.native
+  @scala.inline
+  def createInPublishedParameterUnderParameterType(container: PublishedParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -267,9 +252,8 @@ object IntegerType {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInRestOperationParameterUnderType")
-  @js.native
-  def createInRestOperationParameterUnderType(container: RestOperationParameter): IntegerType = js.native
+  @scala.inline
+  def createInRestOperationParameterUnderType(container: RestOperationParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -280,9 +264,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInResultHandlingUnderVariableType")
-  @js.native
-  def createInResultHandlingUnderVariableType(container: ResultHandling): IntegerType = js.native
+  @scala.inline
+  def createInResultHandlingUnderVariableType(container: ResultHandling): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -293,9 +276,8 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.createInValueMappingElementUnderType")
-  @js.native
-  def createInValueMappingElementUnderType(container: ValueMappingElement): IntegerType = js.native
+  @scala.inline
+  def createInValueMappingElementUnderType(container: ValueMappingElement): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.structureTypeName")

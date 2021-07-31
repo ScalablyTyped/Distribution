@@ -5,10 +5,13 @@ import typings.typescript.mod.Identifier
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usageMod {
+  
+  @JSImport("tsutils/util/usage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait DeclarationDomain extends StObject
@@ -17,27 +20,37 @@ object usageMod {
   object DeclarationDomain extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DeclarationDomain with Double] = js.native
+    def apply(value: Double): js.UndefOr[DeclarationDomain & Double] = js.native
     
     @js.native
-    sealed trait Any extends DeclarationDomain
-    /* 7 */ val Any: typings.tsutils.usageMod.DeclarationDomain.Any with Double = js.native
+    sealed trait Any
+      extends StObject
+         with DeclarationDomain
+    /* 7 */ val Any: typings.tsutils.usageMod.DeclarationDomain.Any & Double = js.native
     
     @js.native
-    sealed trait Import extends DeclarationDomain
-    /* 8 */ val Import: typings.tsutils.usageMod.DeclarationDomain.Import with Double = js.native
+    sealed trait Import
+      extends StObject
+         with DeclarationDomain
+    /* 8 */ val Import: typings.tsutils.usageMod.DeclarationDomain.Import & Double = js.native
     
     @js.native
-    sealed trait Namespace extends DeclarationDomain
-    /* 1 */ val Namespace: typings.tsutils.usageMod.DeclarationDomain.Namespace with Double = js.native
+    sealed trait Namespace
+      extends StObject
+         with DeclarationDomain
+    /* 1 */ val Namespace: typings.tsutils.usageMod.DeclarationDomain.Namespace & Double = js.native
     
     @js.native
-    sealed trait Type extends DeclarationDomain
-    /* 2 */ val Type: typings.tsutils.usageMod.DeclarationDomain.Type with Double = js.native
+    sealed trait Type
+      extends StObject
+         with DeclarationDomain
+    /* 2 */ val Type: typings.tsutils.usageMod.DeclarationDomain.Type & Double = js.native
     
     @js.native
-    sealed trait Value extends DeclarationDomain
-    /* 4 */ val Value: typings.tsutils.usageMod.DeclarationDomain.Value with Double = js.native
+    sealed trait Value
+      extends StObject
+         with DeclarationDomain
+    /* 4 */ val Value: typings.tsutils.usageMod.DeclarationDomain.Value & Double = js.native
   }
   
   @js.native
@@ -47,57 +60,65 @@ object usageMod {
   object UsageDomain extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[UsageDomain with Double] = js.native
+    def apply(value: Double): js.UndefOr[UsageDomain & Double] = js.native
     
     @js.native
-    sealed trait Any extends UsageDomain
-    /* 7 */ val Any: typings.tsutils.usageMod.UsageDomain.Any with Double = js.native
+    sealed trait Any
+      extends StObject
+         with UsageDomain
+    /* 7 */ val Any: typings.tsutils.usageMod.UsageDomain.Any & Double = js.native
     
     @js.native
-    sealed trait Namespace extends UsageDomain
-    /* 1 */ val Namespace: typings.tsutils.usageMod.UsageDomain.Namespace with Double = js.native
+    sealed trait Namespace
+      extends StObject
+         with UsageDomain
+    /* 1 */ val Namespace: typings.tsutils.usageMod.UsageDomain.Namespace & Double = js.native
     
     @js.native
-    sealed trait Type extends UsageDomain
-    /* 2 */ val Type: typings.tsutils.usageMod.UsageDomain.Type with Double = js.native
+    sealed trait Type
+      extends StObject
+         with UsageDomain
+    /* 2 */ val Type: typings.tsutils.usageMod.UsageDomain.Type & Double = js.native
     
     @js.native
-    sealed trait TypeQuery extends UsageDomain
-    /* 8 */ val TypeQuery: typings.tsutils.usageMod.UsageDomain.TypeQuery with Double = js.native
+    sealed trait TypeQuery
+      extends StObject
+         with UsageDomain
+    /* 8 */ val TypeQuery: typings.tsutils.usageMod.UsageDomain.TypeQuery & Double = js.native
     
     @js.native
-    sealed trait Value extends UsageDomain
-    /* 4 */ val Value: typings.tsutils.usageMod.UsageDomain.Value with Double = js.native
+    sealed trait Value
+      extends StObject
+         with UsageDomain
+    /* 4 */ val Value: typings.tsutils.usageMod.UsageDomain.Value & Double = js.native
     
     @js.native
-    sealed trait ValueOrNamespace extends UsageDomain
-    /* 5 */ val ValueOrNamespace: typings.tsutils.usageMod.UsageDomain.ValueOrNamespace with Double = js.native
+    sealed trait ValueOrNamespace
+      extends StObject
+         with UsageDomain
+    /* 5 */ val ValueOrNamespace: typings.tsutils.usageMod.UsageDomain.ValueOrNamespace & Double = js.native
   }
   
-  @JSImport("tsutils/util/usage", "collectVariableUsage")
-  @js.native
-  def collectVariableUsage(sourceFile: SourceFile): Map[Identifier, VariableInfo] = js.native
+  @scala.inline
+  def collectVariableUsage(sourceFile: SourceFile): Map[Identifier, VariableInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("collectVariableUsage")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[Map[Identifier, VariableInfo]]
   
-  @JSImport("tsutils/util/usage", "getDeclarationDomain")
-  @js.native
-  def getDeclarationDomain(node: Identifier): js.UndefOr[DeclarationDomain] = js.native
+  @scala.inline
+  def getDeclarationDomain(node: Identifier): js.UndefOr[DeclarationDomain] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeclarationDomain")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DeclarationDomain]]
   
-  @JSImport("tsutils/util/usage", "getUsageDomain")
-  @js.native
-  def getUsageDomain(node: Identifier): js.UndefOr[UsageDomain] = js.native
+  @scala.inline
+  def getUsageDomain(node: Identifier): js.UndefOr[UsageDomain] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsageDomain")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[UsageDomain]]
   
-  @js.native
   trait VariableInfo extends StObject {
     
-    var declarations: js.Array[Identifier] = js.native
+    var declarations: js.Array[Identifier]
     
-    var domain: DeclarationDomain = js.native
+    var domain: DeclarationDomain
     
-    var exported: Boolean = js.native
+    var exported: Boolean
     
-    var inGlobalScope: Boolean = js.native
+    var inGlobalScope: Boolean
     
-    var uses: js.Array[VariableUse] = js.native
+    var uses: js.Array[VariableUse]
   }
   object VariableInfo {
     
@@ -139,12 +160,11 @@ object usageMod {
     }
   }
   
-  @js.native
   trait VariableUse extends StObject {
     
-    var domain: UsageDomain = js.native
+    var domain: UsageDomain
     
-    var location: Identifier = js.native
+    var location: Identifier
   }
   object VariableUse {
     

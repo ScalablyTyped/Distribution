@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notification extends StObject {
   
   /** A Google Cloud Pub/sub topic destination. */
-  var cloudPubsubTopic: js.UndefOr[CloudPubsubTopic] = js.native
+  var cloudPubsubTopic: js.UndefOr[CloudPubsubTopic] = js.undefined
 }
 object Notification {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,11 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * index entry.
   * @since OOo 1.1.2
   */
-@js.native
-trait XExtendedIndexEntrySupplier extends XIndexEntrySupplier {
+trait XExtendedIndexEntrySupplier
+  extends StObject
+     with XIndexEntrySupplier {
   
   /** Returns locale list for which the {@link IndexEntrySupplier} provides service. */
-  val LocaleList: SafeArray[Locale] = js.native
+  val LocaleList: SafeArray[Locale]
   
   /**
     * Compares index entries
@@ -41,10 +41,10 @@ trait XExtendedIndexEntrySupplier extends XIndexEntrySupplier {
     aIndexEntry2: String,
     aPhoneticEntry2: String,
     aLocale2: Locale
-  ): Double = js.native
+  ): Double
   
   /** Returns index algorithm list for specific locale */
-  def getAlgorithmList(aLocale: Locale): SafeArray[String] = js.native
+  def getAlgorithmList(aLocale: Locale): SafeArray[String]
   
   /**
     * Returns index key.
@@ -54,13 +54,13 @@ trait XExtendedIndexEntrySupplier extends XIndexEntrySupplier {
     * @param aPhoneticEntry Phonetic entry
     * @param aLocale Language attribute for index and phonetic entry. ;  aLocale and the locale in loadAlgorithm may be different. In the case they are differ
     */
-  def getIndexKey(aIndexEntry: String, aPhoneticEntry: String, aLocale: Locale): String = js.native
+  def getIndexKey(aIndexEntry: String, aPhoneticEntry: String, aLocale: Locale): String
   
   /** Returns locale list for which the {@link IndexEntrySupplier} provides service. */
-  def getLocaleList(): SafeArray[Locale] = js.native
+  def getLocaleList(): SafeArray[Locale]
   
   /** Returns phonetic candidate for index entry for the locale. */
-  def getPhoneticCandidate(aIndexEntry: String, aLocale: Locale): String = js.native
+  def getPhoneticCandidate(aIndexEntry: String, aLocale: Locale): String
   
   /**
     * Loads index algorithm for the locale.
@@ -69,10 +69,10 @@ trait XExtendedIndexEntrySupplier extends XIndexEntrySupplier {
     * @param nCollatorOptions Sorting option of {@link com.sun.star.i18n.CollatorOptions} for comparing index entries
     * @returns `TRUE` if algorithm successfully loaded, `FALSE` else.
     */
-  def loadAlgorithm(aLocale: Locale, aIndexAlgorithm: String, nCollatorOptions: Double): Boolean = js.native
+  def loadAlgorithm(aLocale: Locale, aIndexAlgorithm: String, nCollatorOptions: Double): Boolean
   
   /** Checks if Phonetic Entry should be used for the locale. */
-  def usePhoneticEntry(aLocale: Locale): Boolean = js.native
+  def usePhoneticEntry(aLocale: Locale): Boolean
 }
 object XExtendedIndexEntrySupplier {
   

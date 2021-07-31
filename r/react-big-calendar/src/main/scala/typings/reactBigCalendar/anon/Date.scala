@@ -4,17 +4,15 @@ import typings.react.mod.ComponentType
 import typings.reactBigCalendar.mod.EventProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Date[TEvent /* <: js.Object */] extends StObject {
   
-  var date: js.UndefOr[ComponentType[js.Object]] = js.native
+  var date: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var event: js.UndefOr[ComponentType[EventProps[TEvent]]] = js.native
+  var event: js.UndefOr[ComponentType[EventProps[TEvent]]] = js.undefined
   
-  var time: js.UndefOr[ComponentType[js.Object]] = js.native
+  var time: js.UndefOr[ComponentType[js.Object]] = js.undefined
 }
 object Date {
   
@@ -25,7 +23,7 @@ object Date {
   }
   
   @scala.inline
-  implicit class DateMutableBuilder[Self <: Date[_], TEvent /* <: js.Object */] (val x: Self with Date[TEvent]) extends AnyVal {
+  implicit class DateMutableBuilder[Self <: Date[?], TEvent /* <: js.Object */] (val x: Self & Date[TEvent]) extends AnyVal {
     
     @scala.inline
     def setDate(value: ComponentType[js.Object]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])

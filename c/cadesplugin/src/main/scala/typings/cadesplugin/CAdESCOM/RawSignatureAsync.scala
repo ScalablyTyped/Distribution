@@ -6,11 +6,9 @@ import typings.cadesplugin.CADESCommon.Unpacked
 import typings.cadesplugin.CAPICOM.Certificate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAdESCOM.RawSignature> */
-@js.native
 trait RawSignatureAsync extends StObject {
   
   val SignHash: (// tslint:disable-line ban-types
@@ -20,7 +18,7 @@ trait RawSignatureAsync extends StObject {
     ]
   ]) | (PromisifiedFunction[
     js.Function2[/* hash */ CPHashedData, /* certificate */ js.UndefOr[String], String]
-  ]) = js.native
+  ])
   
   val VerifyHash: (// tslint:disable-line ban-types
   js.Promise[
@@ -29,7 +27,7 @@ trait RawSignatureAsync extends StObject {
     ]
   ]) | (PromisifiedFunction[
     js.Function3[/* hash */ CPHashedData, /* certificate */ Certificate, /* signature */ String, Unit]
-  ]) = js.native
+  ])
 }
 object RawSignatureAsync {
   
@@ -75,7 +73,7 @@ object RawSignatureAsync {
     def setSignHashFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "SignHash", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -97,7 +95,7 @@ object RawSignatureAsync {
     def setVerifyHashFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "VerifyHash", js.Any.fromFunction1(value))
     
     @scala.inline

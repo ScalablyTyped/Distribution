@@ -8,7 +8,6 @@ import typings.awsSdk.serviceMod.Service
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object honeycodeMod {
@@ -22,16 +21,14 @@ object honeycodeMod {
     def this(options: ClientConfiguration) = this()
   }
   
-  @js.native
   trait Blob extends StObject
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.honeycodeMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.honeycodeMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -52,22 +49,24 @@ object honeycodeMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
   
   type ClientRequestToken = String
   
-  @js.native
   trait ColumnMetadata extends StObject {
     
     /**
       * The format of the column.
       */
-    var format: Format = js.native
+    var format: Format
     
     /**
       * The name of the column.
       */
-    var name: Name = js.native
+    var name: Name
   }
   object ColumnMetadata {
     
@@ -88,23 +87,22 @@ object honeycodeMod {
     }
   }
   
-  @js.native
   trait DataItem extends StObject {
     
     /**
       * The formatted value of the data. e.g. John Smith.
       */
-    var formattedValue: js.UndefOr[FormattedValue] = js.native
+    var formattedValue: js.UndefOr[FormattedValue] = js.undefined
     
     /**
       *  The overrideFormat is optional and is specified only if a particular row of data has a different format for the data than the default format defined on the screen or the table. 
       */
-    var overrideFormat: js.UndefOr[Format] = js.native
+    var overrideFormat: js.UndefOr[Format] = js.undefined
     
     /**
       * The raw value of the data. e.g. jsmith@example.com
       */
-    var rawValue: js.UndefOr[RawValue] = js.native
+    var rawValue: js.UndefOr[RawValue] = js.undefined
   }
   object DataItem {
     
@@ -157,38 +155,37 @@ object honeycodeMod {
   
   type FormattedValue = String
   
-  @js.native
   trait GetScreenDataRequest extends StObject {
     
     /**
       * The ID of the app that contains the screem.
       */
-    var appId: ResourceId = js.native
+    var appId: ResourceId
     
     /**
       *  The number of results to be returned on a single page. Specify a number between 1 and 100. The maximum value is 100.   This parameter is optional. If you don't specify this parameter, the default page size is 100. 
       */
-    var maxResults: js.UndefOr[MaxResults] = js.native
+    var maxResults: js.UndefOr[MaxResults] = js.undefined
     
     /**
       *  This parameter is optional. If a nextToken is not specified, the API returns the first page of data.   Pagination tokens expire after 1 hour. If you use a token that was returned more than an hour back, the API will throw ValidationException. 
       */
-    var nextToken: js.UndefOr[PaginationToken] = js.native
+    var nextToken: js.UndefOr[PaginationToken] = js.undefined
     
     /**
       * The ID of the screen.
       */
-    var screenId: ResourceId = js.native
+    var screenId: ResourceId
     
     /**
       *  Variables are optional and are needed only if the screen requires them to render correctly. Variables are specified as a map where the key is the name of the variable as defined on the screen. The value is an object which currently has only one property, rawValue, which holds the value of the variable to be passed to the screen. 
       */
-    var variables: js.UndefOr[VariableValueMap] = js.native
+    var variables: js.UndefOr[VariableValueMap] = js.undefined
     
     /**
       * The ID of the workbook that contains the screen.
       */
-    var workbookId: ResourceId = js.native
+    var workbookId: ResourceId
   }
   object GetScreenDataRequest {
     
@@ -230,23 +227,22 @@ object honeycodeMod {
     }
   }
   
-  @js.native
   trait GetScreenDataResult extends StObject {
     
     /**
       *  Provides the pagination token to load the next page if there are more results matching the request. If a pagination token is not present in the response, it means that all data matching the query has been loaded. 
       */
-    var nextToken: js.UndefOr[PaginationToken] = js.native
+    var nextToken: js.UndefOr[PaginationToken] = js.undefined
     
     /**
       * A map of all the rows on the screen keyed by block name.
       */
-    var results: ResultSetMap = js.native
+    var results: ResultSetMap
     
     /**
       *  Indicates the cursor of the workbook at which the data returned by this workbook is read. Workbook cursor keeps increasing with every update and the increments are not sequential. 
       */
-    var workbookCursor: WorkbookCursor = js.native
+    var workbookCursor: WorkbookCursor
   }
   object GetScreenDataResult {
     
@@ -277,7 +273,7 @@ object honeycodeMod {
   trait Honeycode extends Service {
     
     @JSName("config")
-    var config_Honeycode: ConfigBase with ClientConfiguration = js.native
+    var config_Honeycode: ConfigBase & ClientConfiguration = js.native
     
     /**
       *  The GetScreenData API allows retrieval of data from a screen in a Honeycode app. The API allows setting local variables in the screen to filter, sort or otherwise affect what will be displayed on the screen. 
@@ -308,43 +304,42 @@ object honeycodeMod {
     ): Request[InvokeScreenAutomationResult, AWSError] = js.native
   }
   
-  @js.native
   trait InvokeScreenAutomationRequest extends StObject {
     
     /**
       * The ID of the app that contains the screen automation.
       */
-    var appId: ResourceId = js.native
+    var appId: ResourceId
     
     /**
       *  The request token for performing the automation action. Request tokens help to identify duplicate requests. If a call times out or fails due to a transient error like a failed network connection, you can retry the call with the same request token. The service ensures that if the first call using that request token is successfully performed, the second call will return the response of the previous call rather than performing the action again.   Note that request tokens are valid only for a few minutes. You cannot use request tokens to dedupe requests spanning hours or days. 
       */
-    var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+    var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
     
     /**
       *  The row ID for the automation if the automation is defined inside a block with source or list. 
       */
-    var rowId: js.UndefOr[RowId] = js.native
+    var rowId: js.UndefOr[RowId] = js.undefined
     
     /**
       * The ID of the automation action to be performed.
       */
-    var screenAutomationId: ResourceId = js.native
+    var screenAutomationId: ResourceId
     
     /**
       * The ID of the screen that contains the screen automation.
       */
-    var screenId: ResourceId = js.native
+    var screenId: ResourceId
     
     /**
       *  Variables are optional and are needed only if the screen requires them to render correctly. Variables are specified as a map where the key is the name of the variable as defined on the screen. The value is an object which currently has only one property, rawValue, which holds the value of the variable to be passed to the screen. 
       */
-    var variables: js.UndefOr[VariableValueMap] = js.native
+    var variables: js.UndefOr[VariableValueMap] = js.undefined
     
     /**
       * The ID of the workbook that contains the screen automation.
       */
-    var workbookId: ResourceId = js.native
+    var workbookId: ResourceId
   }
   object InvokeScreenAutomationRequest {
     
@@ -389,13 +384,12 @@ object honeycodeMod {
     }
   }
   
-  @js.native
   trait InvokeScreenAutomationResult extends StObject {
     
     /**
       * The updated workbook cursor after performing the automation action.
       */
-    var workbookCursor: WorkbookCursor = js.native
+    var workbookCursor: WorkbookCursor
   }
   object InvokeScreenAutomationResult {
     
@@ -425,18 +419,17 @@ object honeycodeMod {
   
   type ResultHeader = js.Array[ColumnMetadata]
   
-  @js.native
   trait ResultRow extends StObject {
     
     /**
       * List of all the data cells in a row.
       */
-    var dataItems: DataItems = js.native
+    var dataItems: DataItems
     
     /**
       * The ID for a particular row.
       */
-    var rowId: js.UndefOr[RowId] = js.native
+    var rowId: js.UndefOr[RowId] = js.undefined
   }
   object ResultRow {
     
@@ -465,18 +458,17 @@ object honeycodeMod {
   
   type ResultRows = js.Array[ResultRow]
   
-  @js.native
   trait ResultSet extends StObject {
     
     /**
       *  List of headers for all the data cells in the block. The header identifies the name and default format of the data cell. Data cells appear in the same order in all rows as defined in the header. The names and formats are not repeated in the rows. If a particular row does not have a value for a data cell, a blank value is used.   For example, a task list that displays the task name, due date and assigned person might have headers [ { "name": "Task Name"}, {"name": "Due Date", "format": "DATE"}, {"name": "Assigned", "format": "CONTACT"} ]. Every row in the result will have the task name as the first item, due date as the second item and assigned person as the third item. If a particular task does not have a due date, that row will still have a blank value in the second element and the assigned person will still be in the third element. 
       */
-    var headers: ResultHeader = js.native
+    var headers: ResultHeader
     
     /**
       *  List of rows returned by the request. Each row has a row Id and a list of data cells in that row. The data cells will be present in the same order as they are defined in the header. 
       */
-    var rows: ResultRows = js.native
+    var rows: ResultRows
   }
   object ResultSet {
     
@@ -509,13 +501,12 @@ object honeycodeMod {
   
   type VariableName = String
   
-  @js.native
   trait VariableValue extends StObject {
     
     /**
       * Raw value of the variable.
       */
-    var rawValue: RawValue = js.native
+    var rawValue: RawValue
   }
   object VariableValue {
     

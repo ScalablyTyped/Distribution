@@ -2,35 +2,35 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MessageRule extends Entity {
+trait MessageRule
+  extends StObject
+     with Entity {
   
   // Actions to be taken on a message when the corresponding conditions are fulfilled.
-  var actions: js.UndefOr[NullableOption[MessageRuleActions]] = js.native
+  var actions: js.UndefOr[NullableOption[MessageRuleActions]] = js.undefined
   
   // Conditions that when fulfilled, will trigger the corresponding actions for that rule.
-  var conditions: js.UndefOr[NullableOption[MessageRulePredicates]] = js.native
+  var conditions: js.UndefOr[NullableOption[MessageRulePredicates]] = js.undefined
   
   // The display name of the rule.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Exception conditions for the rule.
-  var exceptions: js.UndefOr[NullableOption[MessageRulePredicates]] = js.native
+  var exceptions: js.UndefOr[NullableOption[MessageRulePredicates]] = js.undefined
   
   // Indicates whether the rule is in an error condition. Read-only.
-  var hasError: js.UndefOr[NullableOption[Boolean]] = js.native
+  var hasError: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether the rule is enabled to be applied to messages.
-  var isEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
-  var isReadOnly: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isReadOnly: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates the order in which the rule is executed, among other rules.
-  var sequence: js.UndefOr[NullableOption[Double]] = js.native
+  var sequence: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object MessageRule {
   

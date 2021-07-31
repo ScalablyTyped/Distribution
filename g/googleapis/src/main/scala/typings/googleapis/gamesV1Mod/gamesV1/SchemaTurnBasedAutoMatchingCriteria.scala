@@ -2,13 +2,11 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an turn-based auto-match criteria object.
   */
-@js.native
 trait SchemaTurnBasedAutoMatchingCriteria extends StObject {
   
   /**
@@ -16,25 +14,25 @@ trait SchemaTurnBasedAutoMatchingCriteria extends StObject {
     * exclusive bitmasks, the result must be zero. Can be used to support
     * exclusive roles within a game.
     */
-  var exclusiveBitmask: js.UndefOr[String] = js.native
+  var exclusiveBitmask: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#turnBasedAutoMatchingCriteria.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of players that should be added to the match by
     * auto-matching.
     */
-  var maxAutoMatchingPlayers: js.UndefOr[Double] = js.native
+  var maxAutoMatchingPlayers: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum number of players that should be added to the match by
     * auto-matching.
     */
-  var minAutoMatchingPlayers: js.UndefOr[Double] = js.native
+  var minAutoMatchingPlayers: js.UndefOr[Double] = js.undefined
 }
 object SchemaTurnBasedAutoMatchingCriteria {
   

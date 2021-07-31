@@ -2,15 +2,13 @@ package typings.actionsOnGoogle.v1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageBasicCardButton extends StObject {
   
-  var openUrlAction: js.UndefOr[DialogflowV1MessageBasicCardButtonAction] = js.native
+  var openUrlAction: js.UndefOr[DialogflowV1MessageBasicCardButtonAction] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1MessageBasicCardButton {
   

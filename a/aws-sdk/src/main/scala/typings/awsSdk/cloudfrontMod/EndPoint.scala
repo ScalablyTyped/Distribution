@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndPoint extends StObject {
   
   /**
     * Contains information about the Amazon Kinesis data stream where you are sending real-time log data.
     */
-  var KinesisStreamConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.KinesisStreamConfig] = js.native
+  var KinesisStreamConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.KinesisStreamConfig] = js.undefined
   
   /**
     * The type of data stream where you are sending real-time log data. The only valid value is Kinesis.
     */
-  var StreamType: String = js.native
+  var StreamType: String
 }
 object EndPoint {
   

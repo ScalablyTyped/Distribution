@@ -18,7 +18,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerMod {
@@ -28,20 +27,20 @@ object layerMod {
   @js.native
   class Layer protected ()
     extends Component[
-          LayerProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: LayerProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: LayerProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet/components/Layer", "Layer")
   @js.native
   val Layer: ComponentClass[
-    LayerProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
@@ -91,30 +90,29 @@ object layerMod {
     def `top-right`: typings.grommet.grommetStrings.`top-right` = "top-right".asInstanceOf[typings.grommet.grommetStrings.`top-right`]
   }
   
-  @js.native
   trait LayerProps extends StObject {
     
-    var animate: js.UndefOr[AnimateType] = js.native
+    var animate: js.UndefOr[AnimateType] = js.undefined
     
-    var animation: js.UndefOr[none | slide | fadeIn | Boolean] = js.native
+    var animation: js.UndefOr[none | slide | fadeIn | Boolean] = js.undefined
     
-    var full: js.UndefOr[Boolean | vertical | horizontal] = js.native
+    var full: js.UndefOr[Boolean | vertical | horizontal] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var modal: js.UndefOr[Boolean] = js.native
+    var modal: js.UndefOr[Boolean] = js.undefined
     
-    var onClickOutside: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onClickOutside: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onEsc: js.UndefOr[KeyboardType] = js.native
+    var onEsc: js.UndefOr[KeyboardType] = js.undefined
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[LayerPositionType] = js.native
+    var position: js.UndefOr[LayerPositionType] = js.undefined
     
-    var responsive: js.UndefOr[Boolean] = js.native
+    var responsive: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[js.Object] = js.native
+    var target: js.UndefOr[js.Object] = js.undefined
   }
   object LayerProps {
     
@@ -158,7 +156,7 @@ object layerMod {
       def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
       @scala.inline
-      def setOnClickOutside(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
+      def setOnClickOutside(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)

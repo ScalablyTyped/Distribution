@@ -2,29 +2,27 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseAuthOptions extends StObject {
   
-  var __instate: js.UndefOr[String] = js.native
+  var __instate: js.UndefOr[String] = js.undefined
   
-  var _csrf: js.UndefOr[String] = js.native
+  var _csrf: js.UndefOr[String] = js.undefined
   
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
-  var clientID: js.UndefOr[String] = js.native
+  var clientID: js.UndefOr[String] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var redirectUri: js.UndefOr[String] = js.native
+  var redirectUri: js.UndefOr[String] = js.undefined
   
-  var responseType: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object BaseAuthOptions {
   

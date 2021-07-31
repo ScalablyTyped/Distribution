@@ -6,23 +6,21 @@ import typings.octokitTypes.octokitTypesStrings.pull_request
 import typings.octokitTypes.octokitTypesStrings.repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersGetContextForUserEndpoint extends StObject {
   
   /**
     * Uses the ID for the `subject_type` you specified. **Required** when using `subject_type`.
     */
-  var subject_id: js.UndefOr[String] = js.native
+  var subject_id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies which additional information you'd like to receive about the person's hovercard. Can be `organization`, `repository`, `issue`, `pull_request`. **Required** when using `subject_id`.
     */
-  var subject_type: js.UndefOr[organization | repository | issue | pull_request] = js.native
+  var subject_type: js.UndefOr[organization | repository | issue | pull_request] = js.undefined
   
-  var username: String = js.native
+  var username: String
 }
 object UsersGetContextForUserEndpoint {
   

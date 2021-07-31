@@ -2,39 +2,37 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a copy paste
   */
-@js.native
 trait CellCopyPasteEvent extends StObject {
   
   /**
     * The key of the column where the copy paste occurred.
     */
-  var cellKey: String = js.native
+  var cellKey: String
   
   /**
     * The row that was copied from.
     */
-  var fromRow: Double = js.native
+  var fromRow: Double
   
   /**
     * The row that was pasted to.
     */
-  var rowIdx: Double = js.native
+  var rowIdx: Double
   
   /**
     * The row that was pasted to.
     */
-  var toRow: Double = js.native
+  var toRow: Double
   
   /**
     * The value that was pasted.
     */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object CellCopyPasteEvent {
   

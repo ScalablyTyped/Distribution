@@ -26,232 +26,186 @@ import typings.arangodb.arangodbBooleans.`true`
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@arangodb", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object aql {
+    
+    @scala.inline
+    def apply(strings: TemplateStringsArray, args: js.Any*): Query = (^.asInstanceOf[js.Dynamic].apply(strings.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Query]
     
     @JSImport("@arangodb", "aql")
     @js.native
-    def apply(strings: TemplateStringsArray, args: js.Any*): Query = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@arangodb", "aql.join")
-    @js.native
-    def join(values: js.Array[_]): Query = js.native
-    @JSImport("@arangodb", "aql.join")
-    @js.native
-    def join(values: js.Array[_], sep: String): Query = js.native
+    @scala.inline
+    def join(values: js.Array[js.Any]): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[Query]
+    @scala.inline
+    def join(values: js.Array[js.Any], sep: String): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[Query]
     
-    @JSImport("@arangodb", "aql.literal")
-    @js.native
-    def literal(value: js.Any): AqlLiteral = js.native
+    @scala.inline
+    def literal(value: js.Any): AqlLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[AqlLiteral]
   }
   
   /* Inlined arangodb.ArangoDB.Database & {[key: string] : arangodb.ArangoDB.Collection<any> | undefined} */
   object db {
     
+    @JSImport("@arangodb", "db")
+    @js.native
+    val ^ : js.Any = js.native
+    
     // Collection
-    @JSImport("@arangodb", "db._collection")
-    @js.native
-    def collection(name: String): Collection[_] = js.native
+    @scala.inline
+    def collection(name: String): Collection[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_collection")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[js.Any]]
     
-    @JSImport("@arangodb", "db._collections")
-    @js.native
-    def collections(): js.Array[Collection[_]] = js.native
+    @scala.inline
+    def collections(): js.Array[Collection[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("_collections")().asInstanceOf[js.Array[Collection[js.Any]]]
     
-    @JSImport("@arangodb", "db._create")
-    @js.native
-    def create(name: String): Collection[_] = js.native
-    @JSImport("@arangodb", "db._create")
-    @js.native
-    def create(name: String, properties: CreateCollectionOptions): Collection[_] = js.native
+    @scala.inline
+    def create(name: String): Collection[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[js.Any]]
+    @scala.inline
+    def create(name: String, properties: CreateCollectionOptions): Collection[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Collection[js.Any]]
     
     // Database
-    @JSImport("@arangodb", "db._createDatabase")
-    @js.native
-    def createDatabase(name: String): `true` = js.native
-    @JSImport("@arangodb", "db._createDatabase")
-    @js.native
-    def createDatabase(name: String, options: js.UndefOr[scala.Nothing], users: js.Array[DatabaseUser]): `true` = js.native
-    @JSImport("@arangodb", "db._createDatabase")
-    @js.native
-    def createDatabase(name: String, options: scala.Nothing): `true` = js.native
-    @JSImport("@arangodb", "db._createDatabase")
-    @js.native
-    def createDatabase(name: String, options: scala.Nothing, users: js.Array[DatabaseUser]): `true` = js.native
+    @scala.inline
+    def createDatabase(name: String): `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("_createDatabase")(name.asInstanceOf[js.Any]).asInstanceOf[`true`]
+    @scala.inline
+    def createDatabase(name: String, options: scala.Nothing): `true` = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDatabase")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[`true`]
+    @scala.inline
+    def createDatabase(name: String, options: scala.Nothing, users: js.Array[DatabaseUser]): `true` = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDatabase")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], users.asInstanceOf[js.Any])).asInstanceOf[`true`]
+    @scala.inline
+    def createDatabase(name: String, options: Unit, users: js.Array[DatabaseUser]): `true` = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDatabase")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], users.asInstanceOf[js.Any])).asInstanceOf[`true`]
     
-    @JSImport("@arangodb", "db._createDocumentCollection")
-    @js.native
-    def createDocumentCollection(name: String): Collection[_] = js.native
-    @JSImport("@arangodb", "db._createDocumentCollection")
-    @js.native
-    def createDocumentCollection(name: String, properties: CreateCollectionOptions): Collection[_] = js.native
+    @scala.inline
+    def createDocumentCollection(name: String): Collection[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createDocumentCollection")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[js.Any]]
+    @scala.inline
+    def createDocumentCollection(name: String, properties: CreateCollectionOptions): Collection[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDocumentCollection")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Collection[js.Any]]
     
-    @JSImport("@arangodb", "db._createEdgeCollection")
-    @js.native
-    def createEdgeCollection(name: String): Collection[_] = js.native
-    @JSImport("@arangodb", "db._createEdgeCollection")
-    @js.native
-    def createEdgeCollection(name: String, properties: CreateCollectionOptions): Collection[_] = js.native
+    @scala.inline
+    def createEdgeCollection(name: String): Collection[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createEdgeCollection")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[js.Any]]
+    @scala.inline
+    def createEdgeCollection(name: String, properties: CreateCollectionOptions): Collection[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_createEdgeCollection")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Collection[js.Any]]
     
-    @JSImport("@arangodb", "db._createStatement")
-    @js.native
-    def createStatement(query: String): Statement[_] = js.native
+    @scala.inline
+    def createStatement(query: String): Statement[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createStatement")(query.asInstanceOf[js.Any]).asInstanceOf[Statement[js.Any]]
     // AQL
-    @JSImport("@arangodb", "db._createStatement")
-    @js.native
-    def createStatement(query: Query): Statement[_] = js.native
+    @scala.inline
+    def createStatement(query: Query): Statement[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createStatement")(query.asInstanceOf[js.Any]).asInstanceOf[Statement[js.Any]]
     
-    @JSImport("@arangodb", "db._createView")
-    @js.native
-    def createView(name: String, `type`: ViewType, properties: ArangoSearchViewPropertiesOptions): ArangoSearchView = js.native
+    @scala.inline
+    def createView(name: String, `type`: ViewType, properties: ArangoSearchViewPropertiesOptions): ArangoSearchView = (^.asInstanceOf[js.Dynamic].applyDynamic("_createView")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[ArangoSearchView]
     
-    @JSImport("@arangodb", "db._databases")
-    @js.native
-    def databases(): js.Array[String] = js.native
+    @scala.inline
+    def databases(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_databases")().asInstanceOf[js.Array[String]]
     
     // Document
-    @JSImport("@arangodb", "db._document")
-    @js.native
-    def document(name: String): Document[_] = js.native
+    @scala.inline
+    def document(name: String): Document[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_document")(name.asInstanceOf[js.Any]).asInstanceOf[Document[js.Any]]
     
-    @JSImport("@arangodb", "db._drop")
-    @js.native
-    def drop(name: String): Unit = js.native
+    @scala.inline
+    def drop(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_drop")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@arangodb", "db._dropDatabase")
-    @js.native
-    def dropDatabase(name: String): `true` = js.native
+    @scala.inline
+    def dropDatabase(name: String): `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("_dropDatabase")(name.asInstanceOf[js.Any]).asInstanceOf[`true`]
     
-    @JSImport("@arangodb", "db._dropIndex")
-    @js.native
-    def dropIndex(index: String): Boolean = js.native
-    @JSImport("@arangodb", "db._dropIndex")
-    @js.native
-    def dropIndex(index: IndexLike): Boolean = js.native
+    @scala.inline
+    def dropIndex(index: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_dropIndex")(index.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def dropIndex(index: IndexLike): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_dropIndex")(index.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@arangodb", "db._dropView")
-    @js.native
-    def dropView(name: String): Unit = js.native
+    @scala.inline
+    def dropView(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_dropView")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // Global
-    @JSImport("@arangodb", "db._engine")
-    @js.native
-    def engine(): EngineType = js.native
+    @scala.inline
+    def engine(): EngineType = ^.asInstanceOf[js.Dynamic].applyDynamic("_engine")().asInstanceOf[EngineType]
     
-    @JSImport("@arangodb", "db._engineStats")
-    @js.native
-    def engineStats(): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def engineStats(): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_engineStats")().asInstanceOf[StringDictionary[js.Any]]
     
-    @JSImport("@arangodb", "db._executeTransaction")
-    @js.native
-    def executeTransaction(transaction: Transaction): Unit = js.native
+    @scala.inline
+    def executeTransaction(transaction: Transaction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_executeTransaction")(transaction.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@arangodb", "db._exists")
-    @js.native
-    def exists(selector: String): DocumentMetadata = js.native
-    @JSImport("@arangodb", "db._exists")
-    @js.native
-    def exists(selector: ObjectWithId): DocumentMetadata = js.native
+    @scala.inline
+    def exists(selector: String): DocumentMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("_exists")(selector.asInstanceOf[js.Any]).asInstanceOf[DocumentMetadata]
+    @scala.inline
+    def exists(selector: ObjectWithId): DocumentMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("_exists")(selector.asInstanceOf[js.Any]).asInstanceOf[DocumentMetadata]
     
-    @JSImport("@arangodb", "db._explain")
-    @js.native
-    def explain(query: String): Unit = js.native
-    @JSImport("@arangodb", "db._explain")
-    @js.native
-    def explain(query: Query): Unit = js.native
+    @scala.inline
+    def explain(query: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_explain")(query.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def explain(query: Query): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_explain")(query.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // Properties
-    @JSImport("@arangodb", "db._id")
-    @js.native
-    def id(): String = js.native
+    @scala.inline
+    def id(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_id")().asInstanceOf[String]
     
     // Indexes
-    @JSImport("@arangodb", "db._index")
-    @js.native
-    def index(index: String): Index[_] | Null = js.native
-    @JSImport("@arangodb", "db._index")
-    @js.native
-    def index(index: IndexLike): Index[_] | Null = js.native
+    @scala.inline
+    def index(index: String): Index[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("_index")(index.asInstanceOf[js.Any]).asInstanceOf[Index[js.Any] | Null]
+    @scala.inline
+    def index(index: IndexLike): Index[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("_index")(index.asInstanceOf[js.Any]).asInstanceOf[Index[js.Any] | Null]
     
-    @JSImport("@arangodb", "db._isSystem")
-    @js.native
-    def isSystem(): Boolean = js.native
+    @scala.inline
+    def isSystem(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isSystem")().asInstanceOf[Boolean]
     
-    @JSImport("@arangodb", "db._name")
-    @js.native
-    def name(): String = js.native
+    @scala.inline
+    def name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_name")().asInstanceOf[String]
     
-    @JSImport("@arangodb", "db._parse")
-    @js.native
-    def parse(query: String): ParsedQuery = js.native
+    @scala.inline
+    def parse(query: String): ParsedQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("_parse")(query.asInstanceOf[js.Any]).asInstanceOf[ParsedQuery]
     
-    @JSImport("@arangodb", "db._path")
-    @js.native
-    def path(): String = js.native
+    @scala.inline
+    def path(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_path")().asInstanceOf[String]
     
-    @JSImport("@arangodb", "db._query")
-    @js.native
-    def query(query: String): Cursor[_] = js.native
-    @JSImport("@arangodb", "db._query")
-    @js.native
-    def query(query: String, bindVars: js.UndefOr[scala.Nothing], options: QueryOptions): Cursor[_] = js.native
-    @JSImport("@arangodb", "db._query")
-    @js.native
-    def query(query: String, bindVars: js.Object): Cursor[_] = js.native
-    @JSImport("@arangodb", "db._query")
-    @js.native
-    def query(query: String, bindVars: js.Object, options: QueryOptions): Cursor[_] = js.native
-    @JSImport("@arangodb", "db._query")
-    @js.native
-    def query(query: Query): Cursor[_] = js.native
-    @JSImport("@arangodb", "db._query")
-    @js.native
-    def query(query: Query, options: QueryOptions): Cursor[_] = js.native
+    @scala.inline
+    def query(query: String): Cursor[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any]).asInstanceOf[Cursor[js.Any]]
+    @scala.inline
+    def query(query: String, bindVars: js.Object): Cursor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], bindVars.asInstanceOf[js.Any])).asInstanceOf[Cursor[js.Any]]
+    @scala.inline
+    def query(query: String, bindVars: js.Object, options: QueryOptions): Cursor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], bindVars.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[js.Any]]
+    @scala.inline
+    def query(query: String, bindVars: Unit, options: QueryOptions): Cursor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], bindVars.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[js.Any]]
+    @scala.inline
+    def query(query: Query): Cursor[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any]).asInstanceOf[Cursor[js.Any]]
+    @scala.inline
+    def query(query: Query, options: QueryOptions): Cursor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[js.Any]]
     
-    @JSImport("@arangodb", "db._remove")
-    @js.native
-    def remove(selector: String): DocumentMetadata = js.native
-    @JSImport("@arangodb", "db._remove")
-    @js.native
-    def remove(selector: ObjectWithId): DocumentMetadata = js.native
+    @scala.inline
+    def remove(selector: String): DocumentMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("_remove")(selector.asInstanceOf[js.Any]).asInstanceOf[DocumentMetadata]
+    @scala.inline
+    def remove(selector: ObjectWithId): DocumentMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("_remove")(selector.asInstanceOf[js.Any]).asInstanceOf[DocumentMetadata]
     
-    @JSImport("@arangodb", "db._replace")
-    @js.native
-    def replace(selector: String, data: js.Object): DocumentMetadata = js.native
-    @JSImport("@arangodb", "db._replace")
-    @js.native
-    def replace(selector: ObjectWithId, data: js.Object): DocumentMetadata = js.native
+    @scala.inline
+    def replace(selector: String, data: js.Object): DocumentMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("_replace")(selector.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DocumentMetadata]
+    @scala.inline
+    def replace(selector: ObjectWithId, data: js.Object): DocumentMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("_replace")(selector.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DocumentMetadata]
     
-    @JSImport("@arangodb", "db._truncate")
-    @js.native
-    def truncate(name: String): Unit = js.native
+    @scala.inline
+    def truncate(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_truncate")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@arangodb", "db._update")
-    @js.native
-    def update(selector: String, data: js.Object): DocumentMetadata = js.native
-    @JSImport("@arangodb", "db._update")
-    @js.native
-    def update(selector: ObjectWithId, data: js.Object): DocumentMetadata = js.native
+    @scala.inline
+    def update(selector: String, data: js.Object): DocumentMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("_update")(selector.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DocumentMetadata]
+    @scala.inline
+    def update(selector: ObjectWithId, data: js.Object): DocumentMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("_update")(selector.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DocumentMetadata]
     
-    @JSImport("@arangodb", "db._useDatabase")
-    @js.native
-    def useDatabase(name: String): Database = js.native
+    @scala.inline
+    def useDatabase(name: String): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("_useDatabase")(name.asInstanceOf[js.Any]).asInstanceOf[Database]
     
-    @JSImport("@arangodb", "db._version")
-    @js.native
-    def version(): String = js.native
+    @scala.inline
+    def version(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_version")().asInstanceOf[String]
     
     // Views
-    @JSImport("@arangodb", "db._view")
-    @js.native
-    def view(name: String): ArangoSearchView | Null = js.native
+    @scala.inline
+    def view(name: String): ArangoSearchView | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("_view")(name.asInstanceOf[js.Any]).asInstanceOf[ArangoSearchView | Null]
     
-    @JSImport("@arangodb", "db._views")
-    @js.native
-    def views(): js.Array[ArangoSearchView] = js.native
+    @scala.inline
+    def views(): js.Array[ArangoSearchView] = ^.asInstanceOf[js.Dynamic].applyDynamic("_views")().asInstanceOf[js.Array[ArangoSearchView]]
   }
   
   /* Inlined {[ Name in arangodb.ArangoDB.ErrorName ]: {  code :number,   message :string}} */
@@ -2062,11 +2016,9 @@ object mod {
     def SIMPLE_CLIENT_UNKNOWN_ERROR_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIMPLE_CLIENT_UNKNOWN_ERROR")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@arangodb", "query")
-  @js.native
-  def query(strings: TemplateStringsArray, args: js.Any*): Cursor[_] = js.native
+  @scala.inline
+  def query(strings: TemplateStringsArray, args: js.Any*): Cursor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(strings.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Cursor[js.Any]]
   
-  @JSImport("@arangodb", "time")
-  @js.native
-  def time(): Double = js.native
+  @scala.inline
+  def time(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[Double]
 }

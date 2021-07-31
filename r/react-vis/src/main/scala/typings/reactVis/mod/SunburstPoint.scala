@@ -3,25 +3,25 @@ package typings.reactVis.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SunburstPoint extends AbstractSeriesPoint {
+trait SunburstPoint
+  extends StObject
+     with AbstractSeriesPoint {
   
-  var children: js.UndefOr[js.Array[SunburstPoint]] = js.native
+  var children: js.UndefOr[js.Array[SunburstPoint]] = js.undefined
   
-  var color: js.UndefOr[Double | String] = js.native
+  var color: js.UndefOr[Double | String] = js.undefined
   
-  var dontRotateLabel: js.UndefOr[Boolean] = js.native
+  var dontRotateLabel: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var labelStyle: js.UndefOr[CSSProperties] = js.native
+  var labelStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object SunburstPoint {
   

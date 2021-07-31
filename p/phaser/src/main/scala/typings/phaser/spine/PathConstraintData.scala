@@ -2,31 +2,31 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathConstraintData extends ConstraintData {
+trait PathConstraintData
+  extends StObject
+     with ConstraintData {
   
-  var bones: js.Array[BoneData] = js.native
+  var bones: js.Array[BoneData]
   
-  var offsetRotation: Double = js.native
+  var offsetRotation: Double
   
-  var position: Double = js.native
+  var position: Double
   
-  var positionMode: PositionMode = js.native
+  var positionMode: PositionMode
   
-  var rotateMix: Double = js.native
+  var rotateMix: Double
   
-  var rotateMode: RotateMode = js.native
+  var rotateMode: RotateMode
   
-  var spacing: Double = js.native
+  var spacing: Double
   
-  var spacingMode: SpacingMode = js.native
+  var spacingMode: SpacingMode
   
-  var target: SlotData = js.native
+  var target: SlotData
   
-  var translateMix: Double = js.native
+  var translateMix: Double
 }
 object PathConstraintData {
   

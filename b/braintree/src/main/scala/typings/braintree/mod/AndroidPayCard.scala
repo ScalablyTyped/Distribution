@@ -3,12 +3,13 @@ package typings.braintree.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "AndroidPayCard")
 @js.native
-class AndroidPayCard () extends PaymentMethod {
+class AndroidPayCard ()
+  extends StObject
+     with PaymentMethod {
   
   var default: Boolean = js.native
   

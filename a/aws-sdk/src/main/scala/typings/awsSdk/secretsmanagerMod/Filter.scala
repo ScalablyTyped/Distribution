@@ -2,21 +2,19 @@ package typings.awsSdk.secretsmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     * Filters your list of secrets by a specific key.
     */
-  var Key: js.UndefOr[FilterNameStringType] = js.native
+  var Key: js.UndefOr[FilterNameStringType] = js.undefined
   
   /**
     * Filters your list of secrets by a specific value.
     */
-  var Values: js.UndefOr[FilterValuesStringList] = js.native
+  var Values: js.UndefOr[FilterValuesStringList] = js.undefined
 }
 object Filter {
   

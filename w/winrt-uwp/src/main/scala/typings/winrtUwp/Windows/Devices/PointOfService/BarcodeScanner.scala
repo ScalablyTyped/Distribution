@@ -10,14 +10,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.statusupdated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the barcode scanner device. */
 @js.native
 trait BarcodeScanner extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statusupdated(
     `type`: statusupdated,
@@ -53,7 +52,7 @@ trait BarcodeScanner extends StObject {
     * Gets the symbologies supported by the claimed barcode scanner.
     * @return When the method completes successfully, it returns a list of values that represent the symbologies supported by the device.
     */
-  def getSupportedSymbologiesAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getSupportedSymbologiesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Determines whether the profile is supported.
@@ -70,12 +69,12 @@ trait BarcodeScanner extends StObject {
   def isSymbologySupportedAsync(barcodeSymbology: Double): IPromiseWithIAsyncOperation[Boolean] = js.native
   
   /** Occurs when the barcode scanner detects an operation status change. */
-  def onstatusupdated(ev: BarcodeScannerStatusUpdatedEventArgs with WinRTEvent[BarcodeScanner]): Unit = js.native
+  def onstatusupdated(ev: BarcodeScannerStatusUpdatedEventArgs & WinRTEvent[BarcodeScanner]): Unit = js.native
   /** Occurs when the barcode scanner detects an operation status change. */
   @JSName("onstatusupdated")
   var onstatusupdated_Original: TypedEventHandler[BarcodeScanner, BarcodeScannerStatusUpdatedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statusupdated(
     `type`: statusupdated,

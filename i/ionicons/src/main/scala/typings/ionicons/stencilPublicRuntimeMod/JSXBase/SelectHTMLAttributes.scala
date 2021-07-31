@@ -2,25 +2,25 @@ package typings.ionicons.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SelectHTMLAttributes[T] extends HTMLAttributes[T] {
+trait SelectHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object SelectHTMLAttributes {
   
@@ -31,7 +31,7 @@ object SelectHTMLAttributes {
   }
   
   @scala.inline
-  implicit class SelectHTMLAttributesMutableBuilder[Self <: SelectHTMLAttributes[_], T] (val x: Self with SelectHTMLAttributes[T]) extends AnyVal {
+  implicit class SelectHTMLAttributesMutableBuilder[Self <: SelectHTMLAttributes[?], T] (val x: Self & SelectHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])

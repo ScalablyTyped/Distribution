@@ -2,25 +2,23 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotData extends StObject {
   
-  var attachmentName: String = js.native
+  var attachmentName: String
   
-  var blendMode: BlendMode = js.native
+  var blendMode: BlendMode
   
-  var boneData: BoneData = js.native
+  var boneData: BoneData
   
-  var color: Color = js.native
+  var color: Color
   
-  var darkColor: Color = js.native
+  var darkColor: Color
   
-  var index: Double = js.native
+  var index: Double
   
-  var name: String = js.native
+  var name: String
 }
 object SlotData {
   

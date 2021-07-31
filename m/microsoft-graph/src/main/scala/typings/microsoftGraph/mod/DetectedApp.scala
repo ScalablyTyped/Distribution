@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DetectedApp extends Entity {
+trait DetectedApp
+  extends StObject
+     with Entity {
   
   // The number of devices that have installed this application
-  var deviceCount: js.UndefOr[Double] = js.native
+  var deviceCount: js.UndefOr[Double] = js.undefined
   
   // Name of the discovered application. Read-only
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The devices that have the discovered application installed
-  var managedDevices: js.UndefOr[NullableOption[js.Array[ManagedDevice]]] = js.native
+  var managedDevices: js.UndefOr[NullableOption[js.Array[ManagedDevice]]] = js.undefined
   
   // Discovered application size in bytes. Read-only
-  var sizeInByte: js.UndefOr[Double] = js.native
+  var sizeInByte: js.UndefOr[Double] = js.undefined
   
   // Version of the discovered application. Read-only
-  var version: js.UndefOr[NullableOption[String]] = js.native
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DetectedApp {
   

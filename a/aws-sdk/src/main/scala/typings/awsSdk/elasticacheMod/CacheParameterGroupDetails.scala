@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheParameterGroupDetails extends StObject {
   
   /**
     * A list of parameters specific to a particular cache node type. Each element in the list contains detailed information about one parameter.
     */
-  var CacheNodeTypeSpecificParameters: js.UndefOr[CacheNodeTypeSpecificParametersList] = js.native
+  var CacheNodeTypeSpecificParameters: js.UndefOr[CacheNodeTypeSpecificParametersList] = js.undefined
   
   /**
     * Provides an identifier to allow retrieval of paginated results.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Parameter instances.
     */
-  var Parameters: js.UndefOr[ParametersList] = js.native
+  var Parameters: js.UndefOr[ParametersList] = js.undefined
 }
 object CacheParameterGroupDetails {
   

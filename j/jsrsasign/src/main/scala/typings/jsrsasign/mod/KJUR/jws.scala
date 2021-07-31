@@ -12,7 +12,6 @@ import typings.jsrsasign.jsrsasignNumbers.`0`
 import typings.jsrsasign.jsrsasignNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,6 +33,10 @@ object jws {
     */
   object IntDate {
     
+    @JSImport("jsrsasign", "KJUR.jws.IntDate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * get UNIX origin time from by string
       * @param s string of time representation
@@ -51,9 +54,8 @@ object jws {
       * - number - UNIX origin time (seconds from 1970-01-01 00:00:00) (ex. 1377714748)
       *
       */
-    @JSImport("jsrsasign", "KJUR.jws.IntDate.get")
-    @js.native
-    def get(s: String): Double = js.native
+    @scala.inline
+    def get(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * get UNIX origin time of current time
@@ -63,9 +65,8 @@ object jws {
       * @example
       * KJUR.jws.IntDate.getNow() => 1478...
       */
-    @JSImport("jsrsasign", "KJUR.jws.IntDate.getNow")
-    @js.native
-    def getNow(): Double = js.native
+    @scala.inline
+    def getNow(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNow")().asInstanceOf[Double]
     
     /**
       * get UNIX origin time from Zulu time representation string
@@ -84,9 +85,8 @@ object jws {
       * KJUR.jws.IntDate.getZulu("20151012125959Z") => 1478...
       * KJUR.jws.IntDate.getZulu("151012125959Z") => 1478...
       */
-    @JSImport("jsrsasign", "KJUR.jws.IntDate.getZulu")
-    @js.native
-    def getZulu(s: String): Double = js.native
+    @scala.inline
+    def getZulu(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getZulu")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * get UTC time string from UNIX origin time value
@@ -97,9 +97,8 @@ object jws {
       * @example
       * KJUR.jws.IntDate.intDate2UTCString(1478...) => "2015 Oct ..."
       */
-    @JSImport("jsrsasign", "KJUR.jws.IntDate.intDate2UTCString")
-    @js.native
-    def intDate2UTCString(intDate: Double): String = js.native
+    @scala.inline
+    def intDate2UTCString(intDate: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intDate2UTCString")(intDate.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * get UTC time string from UNIX origin time value
@@ -110,9 +109,8 @@ object jws {
       * @example
       * KJUR.jws.IntDate.intDate2UTCString(1478...) => "20151012...Z"
       */
-    @JSImport("jsrsasign", "KJUR.jws.IntDate.intDate2Zulu")
-    @js.native
-    def intDate2Zulu(intDate: Double): String = js.native
+    @scala.inline
+    def intDate2Zulu(intDate: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intDate2Zulu")(intDate.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /**
@@ -191,15 +189,18 @@ object jws {
     */
   object JWS {
     
+    @JSImport("jsrsasign", "KJUR.jws.JWS")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * get Encoed Signature Value from JWS string.
       * @param sJWS JWS signature string to be verified
       * @return string of Encoded Signature Value
       * @throws if sJWS is not comma separated string such like "Header.Payload.Signature".
       */
-    @JSImport("jsrsasign", "KJUR.jws.JWS.getEncodedSignatureValueFromJWS")
-    @js.native
-    def getEncodedSignatureValueFromJWS(sJWS: String): String = js.native
+    @scala.inline
+    def getEncodedSignatureValueFromJWS(sJWS: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncodedSignatureValueFromJWS")(sJWS.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * get RFC 7638 JWK thumbprint from JWK object
@@ -215,9 +216,8 @@ object jws {
       * jwk = {"kty":"RSA", "n":"0vx...", "e":"AQAB", ...};
       * thumbprint = KJUR.jws.JWS.getJWKthumbprint(jwk);
       */
-    @JSImport("jsrsasign", "KJUR.jws.JWS.getJWKthumbprint")
-    @js.native
-    def getJWKthumbprint(o: JsonWebKey): String = js.native
+    @scala.inline
+    def getJWKthumbprint(o: JsonWebKey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getJWKthumbprint")(o.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * check whether item is included by array
@@ -231,9 +231,8 @@ object jws {
       * KJUR.jws.JWS.inArray('a', ['b', 'c', 'a']) => true
       * KJUR.jws.JWS.inArray('a', ['b', 'c']) => false
       */
-    @JSImport("jsrsasign", "KJUR.jws.JWS.inArray")
-    @js.native
-    def inArray(item: String, a: js.Array[String]): Boolean = js.native
+    @scala.inline
+    def inArray(item: String, a: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * check whether array is included by another array
@@ -247,9 +246,8 @@ object jws {
       * KJUR.jws.JWS.includedArray(['a', 'b'], ['b', 'c', 'a']) => true
       * KJUR.jws.JWS.includedArray(['a', 'b'], ['b', 'c']) => false
       */
-    @JSImport("jsrsasign", "KJUR.jws.JWS.includedArray")
-    @js.native
-    def includedArray(a1: js.Array[String], a2: js.Array[String]): Boolean = js.native
+    @scala.inline
+    def includedArray(a1: js.Array[String], a2: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includedArray")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * check whether a String "s" is a safe JSON string or not.
@@ -258,18 +256,14 @@ object jws {
       * @param s JSON string
       * @return 1 or 0
       */
-    @JSImport("jsrsasign", "KJUR.jws.JWS.isSafeJSONString")
-    @js.native
-    def isSafeJSONString(s: String): `0` | `1` = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.isSafeJSONString")
-    @js.native
-    def isSafeJSONString(s: String, h: js.UndefOr[scala.Nothing], p: String): `0` | `1` = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.isSafeJSONString")
-    @js.native
-    def isSafeJSONString(s: String, h: js.Object): `0` | `1` = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.isSafeJSONString")
-    @js.native
-    def isSafeJSONString(s: String, h: js.Object, p: String): `0` | `1` = js.native
+    @scala.inline
+    def isSafeJSONString(s: String): `0` | `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any]).asInstanceOf[`0` | `1`]
+    @scala.inline
+    def isSafeJSONString(s: String, h: js.Object): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
+    @scala.inline
+    def isSafeJSONString(s: String, h: js.Object, p: String): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any], h.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
+    @scala.inline
+    def isSafeJSONString(s: String, h: Unit, p: String): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any], h.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
     
     /** static associative array of general signature algorithm name from JWS algorithm name */
     object jwsalg2sigalg {
@@ -384,9 +378,8 @@ object jws {
       *   sigHex: "91f3cd..."
       * }
       */
-    @JSImport("jsrsasign", "KJUR.jws.JWS.parse")
-    @js.native
-    def parse(sJWS: String): JWSResult = js.native
+    @scala.inline
+    def parse(sJWS: String): JWSResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sJWS.asInstanceOf[js.Any]).asInstanceOf[JWSResult]
     
     /**
       * parse JWS string and set public property 'parsedJWS' dictionary.
@@ -394,12 +387,10 @@ object jws {
       * @throws if sJWS is not comma separated string such like "Header.Payload.Signature".
       * @throws if JWS Header is a malformed JSON string.
       */
-    @JSImport("jsrsasign", "KJUR.jws.JWS.parseJWS")
-    @js.native
-    def parseJWS(sJWS: String): Unit = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.parseJWS")
-    @js.native
-    def parseJWS(sJWS: String, sigValNotNeeded: Boolean): Unit = js.native
+    @scala.inline
+    def parseJWS(sJWS: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJWS")(sJWS.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def parseJWS(sJWS: String, sigValNotNeeded: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJWS")(sJWS.asInstanceOf[js.Any], sigValNotNeeded.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * read a String "s" as JSON object if it is safe.
@@ -408,9 +399,8 @@ object jws {
       * @param s JSON string
       * @return JSON object or null
       */
-    @JSImport("jsrsasign", "KJUR.jws.JWS.readSafeJSONString")
-    @js.native
-    def readSafeJSONString(s: String): js.Object | Null = js.native
+    @scala.inline
+    def readSafeJSONString(s: String): js.Object | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("readSafeJSONString")(s.asInstanceOf[js.Any]).asInstanceOf[js.Object | Null]
     
     /**
       * generate JWS signature by specified key
@@ -473,78 +463,54 @@ object jws {
       * // header and payload can be passed by both string and object
       * sJWS = KJUR.jws.JWS.sign(null, '{alg:"HS256",cty:"JWT"}', '{age:21}', "aaa");
       */
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: String, spPayload: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: String, spPayload: String, pass: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: String, spPayload: String, pass: StringDictionary[String]): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: String, spPayload: js.Object): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: String, spPayload: js.Object, pass: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: AlgString, spPayload: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: AlgString, spPayload: String, pass: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: AlgString, spPayload: js.Object): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: String, spPayload: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: String, spPayload: String, pass: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: String, spPayload: String, pass: StringDictionary[String]): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: String, spPayload: js.Object): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: String, spPayload: js.Object, pass: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: AlgString, spPayload: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: AlgString, spPayload: String, pass: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: AlgString, spPayload: js.Object): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: String): String = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.sign")
-    @js.native
-    def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
+    @scala.inline
+    def sign(alg: String, spHead: String, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: String, spHead: String, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: String, spHead: String, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: String, spHead: String, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: String, spHead: String, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: String, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: String, spHead: AlgString, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: String, spHead: AlgString, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: String, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: String, spHead: AlgString, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: String, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: String, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: String, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: String, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: String, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: AlgString, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: AlgString, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: AlgString, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * verify JWS signature by specified key or certificate
@@ -606,21 +572,16 @@ object jws {
       * var pubkey = KEYUTIL.getKey('-----BEGIN CERT...');
       * var isValid = KJUR.jws.JWS.verify('eyJh...', pubkey);
       */
-    @JSImport("jsrsasign", "KJUR.jws.JWS.verify")
-    @js.native
-    def verify(sJWS: String, key: String): Boolean = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.verify")
-    @js.native
-    def verify(sJWS: String, key: String, acceptAlgs: js.Array[String]): Boolean = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.verify")
-    @js.native
-    def verify(sJWS: String, key: String, acceptAlgs: B64): Boolean = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.verify")
-    @js.native
-    def verify(sJWS: String, key: String, acceptAlgs: Hex): Boolean = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.verify")
-    @js.native
-    def verify(sJWS: String, key: String, acceptAlgs: Utf8): Boolean = js.native
+    @scala.inline
+    def verify(sJWS: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def verify(sJWS: String, key: String, acceptAlgs: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def verify(sJWS: String, key: String, acceptAlgs: B64): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def verify(sJWS: String, key: String, acceptAlgs: Hex): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def verify(sJWS: String, key: String, acceptAlgs: Utf8): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * @param sJWT string of JSON Web Token(JWT) to verify
@@ -702,11 +663,9 @@ object jws {
       *   gracePeriod: 1 * 60 * 60 // accept 1 hour slow or fast
       * });
       */
-    @JSImport("jsrsasign", "KJUR.jws.JWS.verifyJWT")
-    @js.native
-    def verifyJWT(sJWT: String, key: String): Boolean = js.native
-    @JSImport("jsrsasign", "KJUR.jws.JWS.verifyJWT")
-    @js.native
-    def verifyJWT(sJWT: String, key: String, acceptField: Aud): Boolean = js.native
+    @scala.inline
+    def verifyJWT(sJWT: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyJWT")(sJWT.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def verifyJWT(sJWT: String, key: String, acceptField: Aud): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyJWT")(sJWT.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptField.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartLegendItem extends StObject {
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var visual: js.UndefOr[js.Function] = js.native
+  var visual: js.UndefOr[js.Function] = js.undefined
 }
 object ChartLegendItem {
   

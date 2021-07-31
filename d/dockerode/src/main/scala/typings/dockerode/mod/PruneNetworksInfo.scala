@@ -2,13 +2,11 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PruneNetworksInfo extends StObject {
   
-  var NetworksDeleted: js.Array[String] = js.native
+  var NetworksDeleted: js.Array[String]
 }
 object PruneNetworksInfo {
   

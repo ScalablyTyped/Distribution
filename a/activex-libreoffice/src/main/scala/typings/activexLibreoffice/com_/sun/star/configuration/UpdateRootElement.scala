@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesBatch
 import typings.activexLibreoffice.com_.sun.star.util.XChangesListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,9 +30,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.GroupUpdate
   * @see com.sun.star.configuration.SetUpdate
   */
-@js.native
 trait UpdateRootElement
-  extends AccessRootElement
+  extends StObject
+     with AccessRootElement
      with XChangesBatch
 object UpdateRootElement {
   

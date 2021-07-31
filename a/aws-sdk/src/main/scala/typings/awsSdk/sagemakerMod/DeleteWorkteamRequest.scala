@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteWorkteamRequest extends StObject {
   
   /**
     * The name of the work team to delete.
     */
-  var WorkteamName: typings.awsSdk.sagemakerMod.WorkteamName = js.native
+  var WorkteamName: typings.awsSdk.sagemakerMod.WorkteamName
 }
 object DeleteWorkteamRequest {
   

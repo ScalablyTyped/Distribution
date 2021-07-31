@@ -2,19 +2,17 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableClasses extends StObject {
   
-  var `ui-draggable`: js.UndefOr[String] = js.native
+  var `ui-draggable`: js.UndefOr[String] = js.undefined
   
-  var `ui-draggable-disabled`: js.UndefOr[String] = js.native
+  var `ui-draggable-disabled`: js.UndefOr[String] = js.undefined
   
-  var `ui-draggable-dragging`: js.UndefOr[String] = js.native
+  var `ui-draggable-dragging`: js.UndefOr[String] = js.undefined
   
-  var `ui-draggable-handle`: js.UndefOr[String] = js.native
+  var `ui-draggable-handle`: js.UndefOr[String] = js.undefined
 }
 object DraggableClasses {
   

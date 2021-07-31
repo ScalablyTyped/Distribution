@@ -2,25 +2,23 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database Instance truncate log context.
   */
-@js.native
 trait SchemaTruncateLogContext extends StObject {
   
   /**
     * This is always sql#truncateLogContext.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The type of log to truncate. Valid values are MYSQL_GENERAL_TABLE and
     * MYSQL_SLOW_TABLE.
     */
-  var logType: js.UndefOr[String] = js.native
+  var logType: js.UndefOr[String] = js.undefined
 }
 object SchemaTruncateLogContext {
   

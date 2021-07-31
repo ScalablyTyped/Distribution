@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Record key for a finding in Cloud Datastore.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2DatastoreKey extends StObject {
   
   /**
     * Datastore entity key.
     */
-  var entityKey: js.UndefOr[SchemaGooglePrivacyDlpV2Key] = js.native
+  var entityKey: js.UndefOr[SchemaGooglePrivacyDlpV2Key] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2DatastoreKey {
   

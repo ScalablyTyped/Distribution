@@ -6,31 +6,34 @@ import typings.monacoEditor.monacoEditorNumbers.`2`
 import typings.monacoEditor.monacoEditorNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagnosticRelatedInformation extends StObject {
   
   /** Diagnostic category: warning = 0, error = 1, suggestion = 2, message = 3 */
-  var category: `0` | `1` | `2` | `3` = js.native
+  var category: `0` | `1` | `2` | `3`
   
-  var code: Double = js.native
+  var code: Double
   
   /** TypeScriptWorker removes this to avoid serializing circular JSON structures. */
-  var file: js.UndefOr[scala.Nothing] = js.native
+  var file: Unit
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var messageText: String | DiagnosticMessageChain = js.native
+  var messageText: String | DiagnosticMessageChain
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object DiagnosticRelatedInformation {
   
   @scala.inline
-  def apply(category: `0` | `1` | `2` | `3`, code: Double, messageText: String | DiagnosticMessageChain): DiagnosticRelatedInformation = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
+  def apply(
+    category: `0` | `1` | `2` | `3`,
+    code: Double,
+    file: Unit,
+    messageText: String | DiagnosticMessageChain
+  ): DiagnosticRelatedInformation = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticRelatedInformation]
   }
   
@@ -42,6 +45,9 @@ object DiagnosticRelatedInformation {
     
     @scala.inline
     def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFile(value: Unit): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])

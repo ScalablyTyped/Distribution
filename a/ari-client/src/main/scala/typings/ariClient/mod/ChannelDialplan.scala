@@ -3,26 +3,26 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChannelDialplan extends Event {
+trait ChannelDialplan
+  extends StObject
+     with Event {
   
   /**
     * The channel that changed dialplan location.
     */
-  var channel: Channel = js.native
+  var channel: Channel
   
   /**
     * The application about to be executed.
     */
-  var dialplan_app: String = js.native
+  var dialplan_app: String
   
   /**
     * The data to be passed to the application.
     */
-  var dialplan_app_data: String = js.native
+  var dialplan_app_data: String
 }
 object ChannelDialplan {
   

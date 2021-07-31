@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDomainRequest extends StObject {
   
   /**
     * The domain ID.
     */
-  var DomainId: typings.awsSdk.sagemakerMod.DomainId = js.native
+  var DomainId: typings.awsSdk.sagemakerMod.DomainId
 }
 object DescribeDomainRequest {
   

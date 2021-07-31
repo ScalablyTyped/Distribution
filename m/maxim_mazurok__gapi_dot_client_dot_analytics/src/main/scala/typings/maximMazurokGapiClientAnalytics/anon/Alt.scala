@@ -2,77 +2,75 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alt extends StObject {
   
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** A comma-separated list of Analytics dimensions. E.g., 'ga:browser,ga:city'. */
-  var dimensions: js.UndefOr[String] = js.native
+  var dimensions: js.UndefOr[String] = js.undefined
   
   /**
     * End date for fetching Analytics data. Request can should specify an end date formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday, or 7daysAgo). The default
     * value is yesterday.
     */
-  var `end-date`: String = js.native
+  var `end-date`: String
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** A comma-separated list of dimension or metric filters to be applied to Analytics data. */
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
   /** Unique table ID for retrieving Analytics data. Table ID is of the form ga:XXXX, where XXXX is the Analytics view (profile) ID. */
-  var ids: String = js.native
+  var ids: String
   
   /** The response will include empty rows if this parameter is set to true, the default is true */
-  var `include-empty-rows`: js.UndefOr[Boolean] = js.native
+  var `include-empty-rows`: js.UndefOr[Boolean] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** The maximum number of entries to include in this feed. */
-  var `max-results`: js.UndefOr[Double] = js.native
+  var `max-results`: js.UndefOr[Double] = js.undefined
   
   /** A comma-separated list of Analytics metrics. E.g., 'ga:sessions,ga:pageviews'. At least one metric must be specified. */
-  var metrics: String = js.native
+  var metrics: String
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** The selected format for the response. Default format is JSON. */
-  var output: js.UndefOr[String] = js.native
+  var output: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** The desired sampling level. */
-  var samplingLevel: js.UndefOr[String] = js.native
+  var samplingLevel: js.UndefOr[String] = js.undefined
   
   /** An Analytics segment to be applied to data. */
-  var segment: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.undefined
   
   /** A comma-separated list of dimensions or metrics that determine the sort order for Analytics data. */
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
   
   /**
     * Start date for fetching Analytics data. Requests can specify a start date formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday, or 7daysAgo). The default value
     * is 7daysAgo.
     */
-  var `start-date`: String = js.native
+  var `start-date`: String
   
   /** An index of the first entity to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter. */
-  var `start-index`: js.UndefOr[Double] = js.native
+  var `start-index`: js.UndefOr[Double] = js.undefined
   
   /** Deprecated. Please use quotaUser instead. */
-  var userIp: js.UndefOr[String] = js.native
+  var userIp: js.UndefOr[String] = js.undefined
 }
 object Alt {
   

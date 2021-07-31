@@ -4,7 +4,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaOnlyMod {
@@ -25,24 +24,23 @@ object mediaOnlyMod {
   @js.native
   val TabletOnly: FC[MediaOnlyProps] = js.native
   
-  @js.native
   trait MediaOnlyProps extends StObject {
     
     /**
       * The children to display.
       */
-    var children: ReactElement | Null = js.native
+    var children: ReactElement | Null
     
     /**
       * An optional fallback element to show when the media queries do not match.
       */
-    var fallback: js.UndefOr[ReactElement | Null] = js.native
+    var fallback: js.UndefOr[ReactElement | Null] = js.undefined
   }
   object MediaOnlyProps {
     
     @scala.inline
     def apply(): MediaOnlyProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(children = null)
       __obj.asInstanceOf[MediaOnlyProps]
     }
     

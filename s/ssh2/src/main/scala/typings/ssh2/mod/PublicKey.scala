@@ -3,17 +3,15 @@ package typings.ssh2.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKey extends StObject {
   
   /** The name of the key algorithm. */
-  var algo: String = js.native
+  var algo: String
   
   /** The actual key data. */
-  var data: Buffer = js.native
+  var data: Buffer
 }
 object PublicKey {
   

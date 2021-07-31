@@ -3,42 +3,40 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Information returned from inspecting a network
-@js.native
 trait NetworkInspectInfo extends StObject {
   
-  var Attachable: Boolean = js.native
+  var Attachable: Boolean
   
-  var ConfigFrom: js.UndefOr[typings.dockerode.anon.Network] = js.native
+  var ConfigFrom: js.UndefOr[typings.dockerode.anon.Network] = js.undefined
   
-  var ConfigOnly: Boolean = js.native
+  var ConfigOnly: Boolean
   
-  var Containers: js.UndefOr[StringDictionary[NetworkContainer]] = js.native
+  var Containers: js.UndefOr[StringDictionary[NetworkContainer]] = js.undefined
   
-  var Created: String = js.native
+  var Created: String
   
-  var Driver: String = js.native
+  var Driver: String
   
-  var EnableIPv6: Boolean = js.native
+  var EnableIPv6: Boolean
   
-  var IPAM: js.UndefOr[typings.dockerode.mod.IPAM] = js.native
+  var IPAM: js.UndefOr[typings.dockerode.mod.IPAM] = js.undefined
   
-  var Id: String = js.native
+  var Id: String
   
-  var Ingress: Boolean = js.native
+  var Ingress: Boolean
   
-  var Internal: Boolean = js.native
+  var Internal: Boolean
   
-  var Labels: js.UndefOr[StringDictionary[String]] = js.native
+  var Labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var Name: String = js.native
+  var Name: String
   
-  var Options: js.UndefOr[StringDictionary[String]] = js.native
+  var Options: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var Scope: String = js.native
+  var Scope: String
 }
 object NetworkInspectInfo {
   

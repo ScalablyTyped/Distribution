@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,14 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * global service factory, instead, you need to create them on the grid, where you want to insert them later on.
   * @see com.sun.star.form.component.GridControl
   */
-@js.native
-trait XGridColumnFactory extends XInterface {
+trait XGridColumnFactory
+  extends StObject
+     with XInterface {
   
   /**
     * returns a list of available column types.
     * @returns a list of column types.
     */
-  val ColumnTypes: SafeArray[String] = js.native
+  val ColumnTypes: SafeArray[String]
   
   /**
     * creates a new column object
@@ -31,13 +31,13 @@ trait XGridColumnFactory extends XInterface {
     * @returns the new column object
     * @throws com::sun::star::lang::IllegalArgumentException if aColumnType is not available.
     */
-  def createColumn(aColumnType: String): XPropertySet = js.native
+  def createColumn(aColumnType: String): XPropertySet
   
   /**
     * returns a list of available column types.
     * @returns a list of column types.
     */
-  def getColumnTypes(): SafeArray[String] = js.native
+  def getColumnTypes(): SafeArray[String]
 }
 object XGridColumnFactory {
   

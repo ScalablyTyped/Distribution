@@ -2,16 +2,16 @@ package typings.nodeZendesk.mod.Users
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developer.zendesk.com/rest_api/docs/support/users#update-user|Zendesk Users Update}
   */
-@js.native
-trait UpdateModel extends BaseModel {
+trait UpdateModel
+  extends StObject
+     with BaseModel {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object UpdateModel {
   

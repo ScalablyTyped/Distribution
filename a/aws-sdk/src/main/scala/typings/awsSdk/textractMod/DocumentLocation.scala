@@ -2,16 +2,14 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentLocation extends StObject {
   
   /**
     * The Amazon S3 bucket that contains the input document.
     */
-  var S3Object: js.UndefOr[typings.awsSdk.textractMod.S3Object] = js.native
+  var S3Object: js.UndefOr[typings.awsSdk.textractMod.S3Object] = js.undefined
 }
 object DocumentLocation {
   

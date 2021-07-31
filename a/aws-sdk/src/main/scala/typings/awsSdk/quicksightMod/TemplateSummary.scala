@@ -2,41 +2,39 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateSummary extends StObject {
   
   /**
     * A summary of a template.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The last time that this template was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The last time that this template was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.native
+  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * A structure containing a list of version numbers for the template summary.
     */
-  var LatestVersionNumber: js.UndefOr[VersionNumber] = js.native
+  var LatestVersionNumber: js.UndefOr[VersionNumber] = js.undefined
   
   /**
     * A display name for the template.
     */
-  var Name: js.UndefOr[TemplateName] = js.native
+  var Name: js.UndefOr[TemplateName] = js.undefined
   
   /**
     * The ID of the template. This ID is unique per AWS Region for each AWS account.
     */
-  var TemplateId: js.UndefOr[RestrictiveResourceId] = js.native
+  var TemplateId: js.UndefOr[RestrictiveResourceId] = js.undefined
 }
 object TemplateSummary {
   

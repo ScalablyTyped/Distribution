@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swfDomainMod {
@@ -59,6 +58,10 @@ object swfDomainMod {
   /* static members */
   object Domain {
     
+    @JSImport("@pulumi/aws/swf/domain", "Domain")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Domain resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,55 +71,49 @@ object swfDomainMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/swf/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Domain = js.native
-    @JSImport("@pulumi/aws/swf/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Domain = js.native
-    @JSImport("@pulumi/aws/swf/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainState): Domain = js.native
-    @JSImport("@pulumi/aws/swf/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): Domain = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainState): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Domain]
     
     /**
       * Returns true if the given object is an instance of Domain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/swf/domain", "Domain.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/swf/domain.Domain */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/swf/domain.Domain */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/swf/domain.Domain */ Boolean]
   }
   
-  @js.native
   trait DomainArgs extends StObject {
     
     /**
       * The domain description.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the domain. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Length of time that SWF will continue to retain information about the workflow execution after the workflow execution is complete, must be between 0 and 90 days.
       */
-    val workflowExecutionRetentionPeriodInDays: Input[String] = js.native
+    val workflowExecutionRetentionPeriodInDays: Input[String]
   }
   object DomainArgs {
     
@@ -158,38 +155,37 @@ object swfDomainMod {
     }
   }
   
-  @js.native
   trait DomainState extends StObject {
     
     /**
       * Amazon Resource Name (ARN)
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The domain description.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the domain. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Length of time that SWF will continue to retain information about the workflow execution after the workflow execution is complete, must be between 0 and 90 days.
       */
-    val workflowExecutionRetentionPeriodInDays: js.UndefOr[Input[String]] = js.native
+    val workflowExecutionRetentionPeriodInDays: js.UndefOr[Input[String]] = js.undefined
   }
   object DomainState {
     

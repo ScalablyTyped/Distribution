@@ -3,7 +3,6 @@ package typings.googleAuthLibrary
 import typings.googleAuthLibrary.oauth2clientMod.OAuth2Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idtokenclientMod {
@@ -26,18 +25,17 @@ object idtokenclientMod {
     var targetAudience: String = js.native
   }
   
-  @js.native
   trait IdTokenOptions extends StObject {
     
     /**
       * The client to make the request to fetch an ID token.
       */
-    var idTokenProvider: IdTokenProvider = js.native
+    var idTokenProvider: IdTokenProvider
     
     /**
       * The audience to use when requesting an ID token.
       */
-    var targetAudience: String = js.native
+    var targetAudience: String
   }
   object IdTokenOptions {
     
@@ -58,10 +56,9 @@ object idtokenclientMod {
     }
   }
   
-  @js.native
   trait IdTokenProvider extends StObject {
     
-    def fetchIdToken(targetAudience: String): js.Promise[String] = js.native
+    def fetchIdToken(targetAudience: String): js.Promise[String]
   }
   object IdTokenProvider {
     

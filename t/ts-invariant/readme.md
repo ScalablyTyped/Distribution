@@ -10,9 +10,9 @@ TypeScript implementation of invariant(condition, message)
 | ------------------ | :-------------: |
 | Full name          | ts-invariant |
 | Keywords           | invariant, assertion, precondition, TypeScript |
-| # releases         | 17 |
-| # dependents       | 62 |
-| # downloads        | 115723057 |
+| # releases         | 12 |
+| # dependents       | 66 |
+| # downloads        | 130864948 |
 | # stars            | 0 |
 
 ## Links

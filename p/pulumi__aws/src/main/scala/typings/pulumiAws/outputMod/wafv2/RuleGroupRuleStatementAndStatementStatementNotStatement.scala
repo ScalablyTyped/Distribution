@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleStatementAndStatementStatementNotStatement extends StObject {
   
   /**
     * The statement to negate. You can use any statement that can be nested. See Statement above for details.
     */
-  var statements: js.Array[RuleGroupRuleStatementAndStatementStatementNotStatementStatement] = js.native
+  var statements: js.Array[RuleGroupRuleStatementAndStatementStatementNotStatementStatement]
 }
 object RuleGroupRuleStatementAndStatementStatementNotStatement {
   

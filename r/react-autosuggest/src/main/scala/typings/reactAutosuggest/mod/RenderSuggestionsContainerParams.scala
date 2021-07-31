@@ -4,17 +4,15 @@ import typings.react.mod.ReactNode
 import typings.reactAutosuggest.anon.ClassName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderSuggestionsContainerParams extends StObject {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var containerProps: ClassName = js.native
+  var containerProps: ClassName
   
-  var query: String = js.native
+  var query: String
 }
 object RenderSuggestionsContainerParams {
   

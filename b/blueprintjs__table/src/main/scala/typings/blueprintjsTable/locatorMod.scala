@@ -6,14 +6,15 @@ import typings.blueprintjsTable.rectMod.Rect
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locatorMod {
   
   @JSImport("@blueprintjs/table/lib/esm/locator", "Locator")
   @js.native
-  class Locator protected () extends ILocator {
+  class Locator protected ()
+    extends StObject
+       with ILocator {
     def this(tableElement: HTMLElement, scrollContainerElement: HTMLElement, cellContainerElement: HTMLElement) = this()
     
     var cellContainerElement: js.Any = js.native

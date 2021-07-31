@@ -2,13 +2,13 @@ package typings.openfin.mod.fin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NetworkErrorInfo extends ErrorInfo {
+trait NetworkErrorInfo
+  extends StObject
+     with ErrorInfo {
   
-  var networkErrorCode: Double = js.native
+  var networkErrorCode: Double
 }
 object NetworkErrorInfo {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationsResource extends StObject {
   
-  var entryGroups: EntryGroupsResource = js.native
+  var entryGroups: EntryGroupsResource
   
-  var tagTemplates: TagTemplatesResource = js.native
+  var tagTemplates: TagTemplatesResource
   
-  var taxonomies: TaxonomiesResource = js.native
+  var taxonomies: TaxonomiesResource
 }
 object LocationsResource {
   

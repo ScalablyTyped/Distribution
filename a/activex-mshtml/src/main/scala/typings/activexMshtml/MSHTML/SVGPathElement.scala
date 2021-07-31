@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGPathElement extends StObject {
   
   @JSName("MSHTML.SVGPathElement_typekey")
-  var MSHTMLDotSVGPathElement_typekey: SVGPathElement = js.native
+  var MSHTMLDotSVGPathElement_typekey: SVGPathElement
   
-  var animatedNormalizedPathSegList: SVGPathSegList = js.native
+  var animatedNormalizedPathSegList: SVGPathSegList
   
-  var animatedPathSegList: SVGPathSegList = js.native
+  var animatedPathSegList: SVGPathSegList
   
   def createSVGPathSegArcAbs(
     x: Double,
@@ -23,7 +21,7 @@ trait SVGPathElement extends StObject {
     angle: Double,
     largeArcFlag: Boolean,
     sweepFlag: Boolean
-  ): ISVGPathSegArcAbs = js.native
+  ): ISVGPathSegArcAbs
   
   def createSVGPathSegArcRel(
     x: Double,
@@ -33,83 +31,83 @@ trait SVGPathElement extends StObject {
     angle: Double,
     largeArcFlag: Boolean,
     sweepFlag: Boolean
-  ): ISVGPathSegArcRel = js.native
+  ): ISVGPathSegArcRel
   
-  def createSVGPathSegClosePath(): ISVGPathSegClosePath = js.native
+  def createSVGPathSegClosePath(): ISVGPathSegClosePath
   
-  def createSVGPathSegCurvetoCubicAbs(x: Double, y: Double, x1: Double, y1: Double, x2: Double, y2: Double): ISVGPathSegCurvetoCubicAbs = js.native
+  def createSVGPathSegCurvetoCubicAbs(x: Double, y: Double, x1: Double, y1: Double, x2: Double, y2: Double): ISVGPathSegCurvetoCubicAbs
   
-  def createSVGPathSegCurvetoCubicRel(x: Double, y: Double, x1: Double, y1: Double, x2: Double, y2: Double): ISVGPathSegCurvetoCubicRel = js.native
+  def createSVGPathSegCurvetoCubicRel(x: Double, y: Double, x1: Double, y1: Double, x2: Double, y2: Double): ISVGPathSegCurvetoCubicRel
   
-  def createSVGPathSegCurvetoCubicSmoothAbs(x: Double, y: Double, x2: Double, y2: Double): ISVGPathSegCurvetoCubicSmoothAbs = js.native
+  def createSVGPathSegCurvetoCubicSmoothAbs(x: Double, y: Double, x2: Double, y2: Double): ISVGPathSegCurvetoCubicSmoothAbs
   
-  def createSVGPathSegCurvetoCubicSmoothRel(x: Double, y: Double, x2: Double, y2: Double): ISVGPathSegCurvetoCubicSmoothRel = js.native
+  def createSVGPathSegCurvetoCubicSmoothRel(x: Double, y: Double, x2: Double, y2: Double): ISVGPathSegCurvetoCubicSmoothRel
   
-  def createSVGPathSegCurvetoQuadraticAbs(x: Double, y: Double, x1: Double, y1: Double): ISVGPathSegCurvetoQuadraticAbs = js.native
+  def createSVGPathSegCurvetoQuadraticAbs(x: Double, y: Double, x1: Double, y1: Double): ISVGPathSegCurvetoQuadraticAbs
   
-  def createSVGPathSegCurvetoQuadraticRel(x: Double, y: Double, x1: Double, y1: Double): ISVGPathSegCurvetoQuadraticRel = js.native
+  def createSVGPathSegCurvetoQuadraticRel(x: Double, y: Double, x1: Double, y1: Double): ISVGPathSegCurvetoQuadraticRel
   
-  def createSVGPathSegCurvetoQuadraticSmoothAbs(x: Double, y: Double): ISVGPathSegCurvetoQuadraticSmoothAbs = js.native
+  def createSVGPathSegCurvetoQuadraticSmoothAbs(x: Double, y: Double): ISVGPathSegCurvetoQuadraticSmoothAbs
   
-  def createSVGPathSegCurvetoQuadraticSmoothRel(x: Double, y: Double): ISVGPathSegCurvetoQuadraticSmoothRel = js.native
+  def createSVGPathSegCurvetoQuadraticSmoothRel(x: Double, y: Double): ISVGPathSegCurvetoQuadraticSmoothRel
   
-  def createSVGPathSegLinetoAbs(x: Double, y: Double): ISVGPathSegLinetoAbs = js.native
+  def createSVGPathSegLinetoAbs(x: Double, y: Double): ISVGPathSegLinetoAbs
   
-  def createSVGPathSegLinetoHorizontalAbs(x: Double): ISVGPathSegLinetoHorizontalAbs = js.native
+  def createSVGPathSegLinetoHorizontalAbs(x: Double): ISVGPathSegLinetoHorizontalAbs
   
-  def createSVGPathSegLinetoHorizontalRel(x: Double): ISVGPathSegLinetoHorizontalRel = js.native
+  def createSVGPathSegLinetoHorizontalRel(x: Double): ISVGPathSegLinetoHorizontalRel
   
-  def createSVGPathSegLinetoRel(x: Double, y: Double): ISVGPathSegLinetoRel = js.native
+  def createSVGPathSegLinetoRel(x: Double, y: Double): ISVGPathSegLinetoRel
   
-  def createSVGPathSegLinetoVerticalAbs(y: Double): ISVGPathSegLinetoVerticalAbs = js.native
+  def createSVGPathSegLinetoVerticalAbs(y: Double): ISVGPathSegLinetoVerticalAbs
   
-  def createSVGPathSegLinetoVerticalRel(y: Double): ISVGPathSegLinetoVerticalRel = js.native
+  def createSVGPathSegLinetoVerticalRel(y: Double): ISVGPathSegLinetoVerticalRel
   
-  def createSVGPathSegMovetoAbs(x: Double, y: Double): ISVGPathSegMovetoAbs = js.native
+  def createSVGPathSegMovetoAbs(x: Double, y: Double): ISVGPathSegMovetoAbs
   
-  def createSVGPathSegMovetoRel(x: Double, y: Double): ISVGPathSegMovetoRel = js.native
+  def createSVGPathSegMovetoRel(x: Double, y: Double): ISVGPathSegMovetoRel
   
-  val farthestViewportElement: ISVGElement = js.native
+  val farthestViewportElement: ISVGElement
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  def getBBox(): SVGRect = js.native
+  def getBBox(): SVGRect
   
-  def getCTM(): SVGMatrix = js.native
+  def getCTM(): SVGMatrix
   
-  def getPathSegAtLength(fltdistance: Double): Double = js.native
+  def getPathSegAtLength(fltdistance: Double): Double
   
-  def getPointAtLength(fltdistance: Double): SVGPoint = js.native
+  def getPointAtLength(fltdistance: Double): SVGPoint
   
-  def getScreenCTM(): SVGMatrix = js.native
+  def getScreenCTM(): SVGMatrix
   
-  def getTotalLength(): Double = js.native
+  def getTotalLength(): Double
   
-  def getTransformToElement(pElement: ISVGElement): SVGMatrix = js.native
+  def getTransformToElement(pElement: ISVGElement): SVGMatrix
   
-  def hasExtension(extension: String): Boolean = js.native
+  def hasExtension(`extension`: String): Boolean
   
-  val nearestViewportElement: ISVGElement = js.native
+  val nearestViewportElement: ISVGElement
   
-  var normalizedPathSegList: SVGPathSegList = js.native
+  var normalizedPathSegList: SVGPathSegList
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  var pathLength: SVGAnimatedNumber = js.native
+  var pathLength: SVGAnimatedNumber
   
-  var pathSegList: SVGPathSegList = js.native
+  var pathSegList: SVGPathSegList
   
-  val requiredExtensions: SVGStringList = js.native
+  val requiredExtensions: SVGStringList
   
-  val requiredFeatures: SVGStringList = js.native
+  val requiredFeatures: SVGStringList
   
-  val systemLanguage: SVGStringList = js.native
+  val systemLanguage: SVGStringList
   
-  val transform: SVGAnimatedTransformList = js.native
+  val transform: SVGAnimatedTransformList
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var xmlbase: String = js.native
+  var xmlbase: String
 }
 object SVGPathElement {
   

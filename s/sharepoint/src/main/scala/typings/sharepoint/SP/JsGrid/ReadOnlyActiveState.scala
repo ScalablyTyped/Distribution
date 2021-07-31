@@ -2,7 +2,6 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,9 +11,13 @@ sealed trait ReadOnlyActiveState extends StObject
 object ReadOnlyActiveState extends StObject {
   
   @js.native
-  sealed trait ReadOnlyActive extends ReadOnlyActiveState
+  sealed trait ReadOnlyActive
+    extends StObject
+       with ReadOnlyActiveState
   
   // 0,
   @js.native
-  sealed trait ReadOnlyDisabled extends ReadOnlyActiveState
+  sealed trait ReadOnlyDisabled
+    extends StObject
+       with ReadOnlyActiveState
 }

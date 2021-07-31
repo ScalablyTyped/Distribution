@@ -3,7 +3,6 @@ package typings.libp2pGossipsub
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod {
@@ -12,10 +11,9 @@ object messageMod {
   @js.native
   val RPCCodec: ProtoCodec[RPC] = js.native
   
-  @js.native
   trait ControlGraft extends StObject {
     
-    var topicID: js.UndefOr[String] = js.native
+    var topicID: js.UndefOr[String] = js.undefined
   }
   object ControlGraft {
     
@@ -36,12 +34,11 @@ object messageMod {
     }
   }
   
-  @js.native
   trait ControlIHave extends StObject {
     
-    var messageIDs: js.Array[Uint8Array] = js.native
+    var messageIDs: js.Array[Uint8Array]
     
-    var topicID: js.UndefOr[String] = js.native
+    var topicID: js.UndefOr[String] = js.undefined
   }
   object ControlIHave {
     
@@ -68,10 +65,9 @@ object messageMod {
     }
   }
   
-  @js.native
   trait ControlIWant extends StObject {
     
-    var messageIDs: js.Array[Uint8Array] = js.native
+    var messageIDs: js.Array[Uint8Array]
   }
   object ControlIWant {
     
@@ -92,16 +88,15 @@ object messageMod {
     }
   }
   
-  @js.native
   trait ControlMessage extends StObject {
     
-    var graft: js.Array[ControlGraft] = js.native
+    var graft: js.Array[ControlGraft]
     
-    var ihave: js.Array[ControlIHave] = js.native
+    var ihave: js.Array[ControlIHave]
     
-    var iwant: js.Array[ControlIWant] = js.native
+    var iwant: js.Array[ControlIWant]
     
-    var prune: js.Array[ControlPrune] = js.native
+    var prune: js.Array[ControlPrune]
   }
   object ControlMessage {
     
@@ -145,14 +140,13 @@ object messageMod {
     }
   }
   
-  @js.native
   trait ControlPrune extends StObject {
     
-    var backoff: js.UndefOr[Double] = js.native
+    var backoff: js.UndefOr[Double] = js.undefined
     
-    var peers: js.Array[PeerInfo] = js.native
+    var peers: js.Array[PeerInfo]
     
-    var topicID: js.UndefOr[String] = js.native
+    var topicID: js.UndefOr[String] = js.undefined
   }
   object ControlPrune {
     
@@ -185,32 +179,31 @@ object messageMod {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
     /**
       * Opaque blob of data
       */
-    var data: js.UndefOr[Uint8Array] = js.native
+    var data: js.UndefOr[Uint8Array] = js.undefined
     
     /**
       * Peer id of the author of the message
       *
       * Note: This is not necessarily the peer who sent the RPC this message is contained in
       */
-    var from: js.UndefOr[Uint8Array] = js.native
+    var from: js.UndefOr[Uint8Array] = js.undefined
     
     /**
       * Signing key
       */
-    var key: js.UndefOr[Uint8Array] = js.native
+    var key: js.UndefOr[Uint8Array] = js.undefined
     
     /**
       * 64-bit big-endian uint
       *
       * No two messages on a topic from the same peer should have the same seqno value
       */
-    var seqno: js.UndefOr[Uint8Array] = js.native
+    var seqno: js.UndefOr[Uint8Array] = js.undefined
     
     /**
       * Signature of the message
@@ -218,12 +211,12 @@ object messageMod {
       * The signature is computed over the marshalled message protobuf excluding the key field
       * The protobuf bloc is prefixed by the string `libp2p-pubsub:` before signing
       */
-    var signature: js.UndefOr[Uint8Array] = js.native
+    var signature: js.UndefOr[Uint8Array] = js.undefined
     
     /**
       * Set of topics being published to
       */
-    var topicIDs: js.Array[String] = js.native
+    var topicIDs: js.Array[String]
   }
   object Message {
     
@@ -274,12 +267,11 @@ object messageMod {
     }
   }
   
-  @js.native
   trait PeerInfo extends StObject {
     
-    var peerID: js.UndefOr[Uint8Array] = js.native
+    var peerID: js.UndefOr[Uint8Array] = js.undefined
     
-    var signedPeerRecord: js.UndefOr[Uint8Array] = js.native
+    var signedPeerRecord: js.UndefOr[Uint8Array] = js.undefined
   }
   object PeerInfo {
     
@@ -306,12 +298,11 @@ object messageMod {
     }
   }
   
-  @js.native
   trait ProtoCodec[T] extends StObject {
     
-    def decode(buf: Uint8Array): T = js.native
+    def decode(buf: Uint8Array): T
     
-    def encode(obj: T): Uint8Array = js.native
+    def encode(obj: T): Uint8Array
   }
   object ProtoCodec {
     
@@ -322,7 +313,7 @@ object messageMod {
     }
     
     @scala.inline
-    implicit class ProtoCodecMutableBuilder[Self <: ProtoCodec[_], T] (val x: Self with ProtoCodec[T]) extends AnyVal {
+    implicit class ProtoCodecMutableBuilder[Self <: ProtoCodec[?], T] (val x: Self & ProtoCodec[T]) extends AnyVal {
       
       @scala.inline
       def setDecode(value: Uint8Array => T): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
@@ -332,14 +323,13 @@ object messageMod {
     }
   }
   
-  @js.native
   trait RPC extends StObject {
     
-    var control: js.UndefOr[ControlMessage] = js.native
+    var control: js.UndefOr[ControlMessage] = js.undefined
     
-    var msgs: js.Array[Message] = js.native
+    var msgs: js.Array[Message]
     
-    var subscriptions: js.Array[SubOpts] = js.native
+    var subscriptions: js.Array[SubOpts]
   }
   object RPC {
     
@@ -372,19 +362,18 @@ object messageMod {
     }
   }
   
-  @js.native
   trait SubOpts extends StObject {
     
     /**
       * Whether to subscribe of unsubscribe
       * true for subscribe, false for unsubscribe
       */
-    var subscribe: js.UndefOr[Boolean] = js.native
+    var subscribe: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Topic ID
       */
-    var topicID: js.UndefOr[String] = js.native
+    var topicID: js.UndefOr[String] = js.undefined
   }
   object SubOpts {
     

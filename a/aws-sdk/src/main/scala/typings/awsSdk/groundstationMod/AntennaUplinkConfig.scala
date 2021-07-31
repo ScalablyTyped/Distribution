@@ -2,26 +2,24 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AntennaUplinkConfig extends StObject {
   
   /**
     * Information about the uplink spectral Config.
     */
-  var spectrumConfig: UplinkSpectrumConfig = js.native
+  var spectrumConfig: UplinkSpectrumConfig
   
   /**
     * EIRP of the target.
     */
-  var targetEirp: Eirp = js.native
+  var targetEirp: Eirp
   
   /**
     * Whether or not uplink transmit is disabled.
     */
-  var transmitDisabled: js.UndefOr[Boolean] = js.native
+  var transmitDisabled: js.UndefOr[Boolean] = js.undefined
 }
 object AntennaUplinkConfig {
   

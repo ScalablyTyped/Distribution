@@ -3,21 +3,19 @@ package typings.sendcloud.mod
 import typings.sendcloud.sendcloudStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorResp extends StObject {
   
-  var errors: js.Array[String] = js.native
+  var errors: js.Array[String]
   
-  var message: error = js.native
+  var message: error
 }
 object ErrorResp {
   
   @scala.inline
-  def apply(errors: js.Array[String], message: error): ErrorResp = {
-    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+  def apply(errors: js.Array[String]): ErrorResp = {
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = "error")
     __obj.asInstanceOf[ErrorResp]
   }
   

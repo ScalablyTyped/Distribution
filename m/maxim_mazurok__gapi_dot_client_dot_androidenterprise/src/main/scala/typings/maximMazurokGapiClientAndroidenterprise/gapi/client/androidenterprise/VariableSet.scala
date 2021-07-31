@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableSet extends StObject {
   
   /** The placeholder string; defined by EMM. */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   /** The value of the placeholder, specific to the user. */
-  var userValue: js.UndefOr[String] = js.native
+  var userValue: js.UndefOr[String] = js.undefined
 }
 object VariableSet {
   

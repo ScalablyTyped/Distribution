@@ -2,11 +2,11 @@ package typings.senchaTouch.Ext.draw.sprite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IInstancing extends ISprite {
+trait IInstancing
+  extends StObject
+     with ISprite {
   
   /** [Method] Creates a new sprite instance
     * @param config Object The configuration of the instance.
@@ -21,9 +21,9 @@ trait IInstancing extends ISprite {
       /* data */ js.UndefOr[js.Any], 
       /* bypassNormalization */ js.UndefOr[Boolean], 
       /* avoidCopy */ js.UndefOr[Boolean], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns the bounding box for the instance at the given index
     * @param index Number The index of the instance.
@@ -31,19 +31,19 @@ trait IInstancing extends ISprite {
     * @returns Object The bounding box for the instance.
     */
   var getBBoxFor: js.UndefOr[
-    js.Function2[/* index */ js.UndefOr[Double], /* isWithoutTransform */ js.UndefOr[Boolean], _]
-  ] = js.native
+    js.Function2[/* index */ js.UndefOr[Double], /* isWithoutTransform */ js.UndefOr[Boolean], js.Any]
+  ] = js.undefined
   
   /** [Method] Not supported
     * @returns null
     */
   @JSName("getBBox")
-  var getBBox_IInstancing: js.UndefOr[js.Function0[_]] = js.native
+  var getBBox_IInstancing: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of template
     * @returns Object
     */
-  var getTemplate: js.UndefOr[js.Function0[_]] = js.native
+  var getTemplate: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Render method
     * @param surface Object
@@ -59,9 +59,9 @@ trait IInstancing extends ISprite {
       /* ctx */ js.UndefOr[js.Any], 
       /* clipRegion */ js.UndefOr[js.Any], 
       /* region */ js.UndefOr[js.Any], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the attributes for the instance at the given index
     * @param index Number the index of the instance
@@ -75,15 +75,15 @@ trait IInstancing extends ISprite {
       /* bypassNormalization */ js.UndefOr[Boolean], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the value of template
     * @param template Object The new value.
     */
-  var setTemplate: js.UndefOr[js.Function1[/* template */ js.UndefOr[js.Any], Unit]] = js.native
+  var setTemplate: js.UndefOr[js.Function1[/* template */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var template: js.UndefOr[js.Any] = js.native
+  var template: js.UndefOr[js.Any] = js.undefined
 }
 object IInstancing {
   
@@ -98,17 +98,17 @@ object IInstancing {
     
     @scala.inline
     def setCreateInstance(
-      value: (/* config */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], /* bypassNormalization */ js.UndefOr[Boolean], /* avoidCopy */ js.UndefOr[Boolean]) => _
+      value: (/* config */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], /* bypassNormalization */ js.UndefOr[Boolean], /* avoidCopy */ js.UndefOr[Boolean]) => js.Any
     ): Self = StObject.set(x, "createInstance", js.Any.fromFunction4(value))
     
     @scala.inline
     def setCreateInstanceUndefined: Self = StObject.set(x, "createInstance", js.undefined)
     
     @scala.inline
-    def setGetBBox(value: () => _): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
+    def setGetBBox(value: () => js.Any): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBBoxFor(value: (/* index */ js.UndefOr[Double], /* isWithoutTransform */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "getBBoxFor", js.Any.fromFunction2(value))
+    def setGetBBoxFor(value: (/* index */ js.UndefOr[Double], /* isWithoutTransform */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getBBoxFor", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetBBoxForUndefined: Self = StObject.set(x, "getBBoxFor", js.undefined)
@@ -117,14 +117,14 @@ object IInstancing {
     def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
     
     @scala.inline
-    def setGetTemplate(value: () => _): Self = StObject.set(x, "getTemplate", js.Any.fromFunction0(value))
+    def setGetTemplate(value: () => js.Any): Self = StObject.set(x, "getTemplate", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetTemplateUndefined: Self = StObject.set(x, "getTemplate", js.undefined)
     
     @scala.inline
     def setRender(
-      value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => _
+      value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => js.Any
     ): Self = StObject.set(x, "render", js.Any.fromFunction4(value))
     
     @scala.inline

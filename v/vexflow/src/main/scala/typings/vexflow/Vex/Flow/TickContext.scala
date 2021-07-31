@@ -5,59 +5,57 @@ import typings.vexflow.anon.ExtraLeft
 import typings.vexflow.anon.ExtraRightPx
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TickContext extends StObject {
   
-  def addTickable(tickable: Tickable): TickContext = js.native
+  def addTickable(tickable: Tickable): TickContext
   
-  def getCenterAlignedTickables(): js.Array[Tickable] = js.native
+  def getCenterAlignedTickables(): js.Array[Tickable]
   
-  def getContext(): IRenderContext = js.native
+  def getContext(): IRenderContext
   
-  def getCurrentTick(): Fraction = js.native
+  def getCurrentTick(): Fraction
   
-  def getExtraPx(): ExtraLeft = js.native
+  def getExtraPx(): ExtraLeft
   
-  def getMaxTicks(): Double = js.native
+  def getMaxTicks(): Double
   
-  def getMetrics(): ExtraRightPx = js.native
+  def getMetrics(): ExtraRightPx
   
-  def getMinTicks(): Double = js.native
+  def getMinTicks(): Double
   
-  def getPixelsUsed(): Double = js.native
+  def getPixelsUsed(): Double
   
-  def getTickables(): js.Array[Tickable] = js.native
+  def getTickables(): js.Array[Tickable]
   
-  def getWidth(): Double = js.native
+  def getWidth(): Double
   
-  def getX(): Double = js.native
+  def getX(): Double
   
-  def getXBase(): Double = js.native
+  def getXBase(): Double
   
-  def getXOffset(): Double = js.native
+  def getXOffset(): Double
   
-  def postFormat(): TickContext = js.native
+  def postFormat(): TickContext
   
-  def preFormat(): TickContext = js.native
+  def preFormat(): TickContext
   
-  def setContext(context: IRenderContext): Unit = js.native
+  def setContext(context: IRenderContext): Unit
   
-  def setCurrentTick(tick: Fraction): Unit = js.native
+  def setCurrentTick(tick: Fraction): Unit
   
-  def setPadding(padding: Double): TickContext = js.native
+  def setPadding(padding: Double): TickContext
   
-  def setPixelsUsed(pixelsUsed: Double): TickContext = js.native
+  def setPixelsUsed(pixelsUsed: Double): TickContext
   
-  def setX(x: Double): TickContext = js.native
+  def setX(x: Double): TickContext
   
-  def setXBase(xBase: Double): Unit = js.native
+  def setXBase(xBase: Double): Unit
   
-  def setXOffset(xOffset: Double): Unit = js.native
+  def setXOffset(xOffset: Double): Unit
   
-  def shouldIgnoreTicks(): Boolean = js.native
+  def shouldIgnoreTicks(): Boolean
 }
 object TickContext {
   

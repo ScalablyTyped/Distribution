@@ -4,31 +4,29 @@ import typings.node.streamMod.Duplex
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionOptions extends StObject {
   
-  var createConnection: js.UndefOr[js.Function2[/* authority */ URL_, /* option */ this.type, Duplex]] = js.native
+  var createConnection: js.UndefOr[js.Function2[/* authority */ URL_, /* option */ this.type, Duplex]] = js.undefined
   
-  var maxDeflateDynamicTableSize: js.UndefOr[Double] = js.native
+  var maxDeflateDynamicTableSize: js.UndefOr[Double] = js.undefined
   
-  var maxHeaderListPairs: js.UndefOr[Double] = js.native
+  var maxHeaderListPairs: js.UndefOr[Double] = js.undefined
   
-  var maxOutstandingPings: js.UndefOr[Double] = js.native
+  var maxOutstandingPings: js.UndefOr[Double] = js.undefined
   
-  var maxSendHeaderBlockLength: js.UndefOr[Double] = js.native
+  var maxSendHeaderBlockLength: js.UndefOr[Double] = js.undefined
   
-  var maxSessionMemory: js.UndefOr[Double] = js.native
+  var maxSessionMemory: js.UndefOr[Double] = js.undefined
   
-  var paddingStrategy: js.UndefOr[Double] = js.native
+  var paddingStrategy: js.UndefOr[Double] = js.undefined
   
-  var peerMaxConcurrentStreams: js.UndefOr[Double] = js.native
+  var peerMaxConcurrentStreams: js.UndefOr[Double] = js.undefined
   
-  var selectPadding: js.UndefOr[js.Function2[/* frameLen */ Double, /* maxFrameLen */ Double, Double]] = js.native
+  var selectPadding: js.UndefOr[js.Function2[/* frameLen */ Double, /* maxFrameLen */ Double, Double]] = js.undefined
   
-  var settings: js.UndefOr[Settings] = js.native
+  var settings: js.UndefOr[Settings] = js.undefined
 }
 object SessionOptions {
   

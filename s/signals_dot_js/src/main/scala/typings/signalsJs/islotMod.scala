@@ -2,18 +2,16 @@ package typings.signalsJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object islotMod {
   
-  @js.native
   trait ISlot extends StObject {
     
     /**
       * Whether the listener is called on execution. Defaults to true.
       */
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
     /**
       * Executes a listener of arity <code>n</code> where <code>n</code> is
@@ -21,30 +19,30 @@ object islotMod {
       * Existing <code>params</code> are appended before the listener is called.
       * @param valueObjects The array of arguments to be applied to the listener.
       */
-    def execute(valueObjects: js.Array[_]): Unit = js.native
+    def execute(valueObjects: js.Array[js.Any]): Unit
     
     /**
       * Executes a listener without arguments.
       * Existing <code>params</code> are appended before the listener is called.
       */
-    def execute0(): Unit = js.native
+    def execute0(): Unit
     
     /**
       * Dispatches one argument to a listener.
       * Existing <code>params</code> are appended before the listener is called.
       * @param value The argument for the listener.
       */
-    def execute1(value: js.Object): Unit = js.native
+    def execute1(value: js.Object): Unit
     
     /**
       * The listener associated with this slot.
       */
-    var listener: js.Function = js.native
+    var listener: js.Function
     
     /**
       * Whether this slot is automatically removed after it has been used once.
       */
-    var once: Boolean = js.native
+    var once: Boolean
     
     /**
       * Allows the ISlot to inject parameters when dispatching. The params will be at
@@ -55,19 +53,19 @@ object islotMod {
       * signal.dispatch('The Answer');
       * function handler(name:String, num:int):void{}
       */
-    var params: js.Array[_] = js.native
+    var params: js.Array[js.Any]
     
     /**
       * The priority of this slot should be given in the execution order.
       * An IPrioritySignal will call higher numbers before lower ones.
       * Defaults to 0.
       */
-    var priority: Double = js.native
+    var priority: Double
     
     /**
       * Removes the slot from its signal.
       */
-    def remove(): Unit = js.native
+    def remove(): Unit
   }
   object ISlot {
     
@@ -82,7 +80,7 @@ object islotMod {
       def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setExecute(value: js.Array[_] => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      def setExecute(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
       @scala.inline
       def setExecute0(value: () => Unit): Self = StObject.set(x, "execute0", js.Any.fromFunction0(value))
@@ -97,7 +95,7 @@ object islotMod {
       def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setParams(value: js.Array[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))

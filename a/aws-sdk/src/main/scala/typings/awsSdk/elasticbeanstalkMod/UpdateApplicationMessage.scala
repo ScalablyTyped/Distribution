@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApplicationMessage extends StObject {
   
   /**
     * The name of the application to update. If no such application is found, UpdateApplication returns an InvalidParameterValue error. 
     */
-  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName
   
   /**
     * A new description for the application. Default: If not specified, AWS Elastic Beanstalk does not update the description.
     */
-  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.undefined
 }
 object UpdateApplicationMessage {
   

@@ -9,19 +9,20 @@ import typings.markdownIt.helpersMod.Helpers
 import typings.markdownIt.utilsMod.Utils
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libMod extends Shortcut {
   
   @JSImport("markdown-it/lib", JSImport.Namespace)
   @js.native
-  val ^ : MarkdownItConstructor = js.native
+  val ^ : js.Object & MarkdownItConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("markdown-it/lib", JSImport.Namespace)
   @js.native
-  class Class () extends MarkdownIt {
+  class Class ()
+    extends StObject
+       with MarkdownIt {
     def this(options: Options) = this()
     def this(presetName: PresetName) = this()
     def this(presetName: PresetName, options: Options) = this()
@@ -257,7 +258,8 @@ object libMod extends Shortcut {
   
   @js.native
   trait MarkdownItConstructor
-    extends Instantiable0[MarkdownIt]
+    extends StObject
+       with Instantiable0[MarkdownIt]
        with Instantiable1[(/* options */ Options) | (/* presetName */ PresetName), MarkdownIt]
        with Instantiable2[/* presetName */ PresetName, /* options */ Options, MarkdownIt] {
     
@@ -267,14 +269,13 @@ object libMod extends Shortcut {
     def apply(presetName: PresetName, options: Options): MarkdownIt = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Set `true` to convert `\n` in paragraphs into `<br>`.
       * @default false
       */
-    var breaks: js.UndefOr[Boolean] = js.native
+    var breaks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Highlighter function for fenced code blocks.
@@ -283,7 +284,7 @@ object libMod extends Shortcut {
       * externaly. If result starts with <pre... internal wrapper is skipped.
       * @default null
       */
-    var highlight: js.UndefOr[(js.Function2[/* str */ String, /* lang */ String, String]) | Null] = js.native
+    var highlight: js.UndefOr[(js.Function2[/* str */ String, /* lang */ String, String]) | Null] = js.undefined
     
     /**
       * Set `true` to enable HTML tags in source. Be careful!
@@ -291,20 +292,20 @@ object libMod extends Shortcut {
       * It's better to extend features via plugins, instead of enabling HTML.
       * @default false
       */
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
     /**
       * CSS language class prefix for fenced blocks.
       * Can be useful for external highlighters.
       * @default 'language-'
       */
-    var langPrefix: js.UndefOr[String] = js.native
+    var langPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * Set `true` to autoconvert URL-like text to links.
       * @default false
       */
-    var linkify: js.UndefOr[Boolean] = js.native
+    var linkify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Double + single quotes replacement
@@ -313,14 +314,14 @@ object libMod extends Shortcut {
       * `['«\xA0', '\xA0»', '‹\xA0', '\xA0›']` for French (including nbsp).
       * @default '“”‘’'
       */
-    var quotes: js.UndefOr[String | js.Array[String]] = js.native
+    var quotes: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Set `true` to enable [some language-neutral replacement](https://github.com/markdown-it/markdown-it/blob/master/lib/rules_core/replacements.js) +
       * quotes beautification (smartquotes).
       * @default false
       */
-    var typographer: js.UndefOr[Boolean] = js.native
+    var typographer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set `true` to add '/' when closing single tags
@@ -328,7 +329,7 @@ object libMod extends Shortcut {
       * world you will need HTML output.
       * @default false
       */
-    var xhtmlOut: js.UndefOr[Boolean] = js.native
+    var xhtmlOut: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -401,7 +402,11 @@ object libMod extends Shortcut {
   
   type PluginWithOptions[T] = js.Function2[/* md */ MarkdownIt, /* options */ js.UndefOr[T], Unit]
   
-  type PluginWithParams = js.Function2[/* md */ MarkdownIt, /* repeated */ js.Any, Unit]
+  @js.native
+  trait PluginWithParams extends StObject {
+    
+    def apply(md: MarkdownIt, params: js.Any*): Unit = js.native
+  }
   
   /**
     * MarkdownIt provides named presets as a convenience to quickly
@@ -434,8 +439,8 @@ object libMod extends Shortcut {
     def zero: typings.markdownIt.markdownItStrings.zero = "zero".asInstanceOf[typings.markdownIt.markdownItStrings.zero]
   }
   
-  type _To = MarkdownItConstructor
+  type _To = js.Object & MarkdownItConstructor
   
   /* This means you don't have to write `^`, but can instead just say `libMod.foo` */
-  override def _to: MarkdownItConstructor = ^
+  override def _to: js.Object & MarkdownItConstructor = ^
 }

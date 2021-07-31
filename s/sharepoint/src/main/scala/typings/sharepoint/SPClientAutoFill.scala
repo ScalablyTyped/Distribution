@@ -4,54 +4,52 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SPClientAutoFill extends StObject {
   
-  var AllOptionData: StringDictionary[ISPClientAutoFillData] = js.native
+  var AllOptionData: StringDictionary[ISPClientAutoFillData]
   
-  var AutoFillCallbackTimeoutID: String = js.native
+  var AutoFillCallbackTimeoutID: String
   
-  var AutoFillContainerId: String = js.native
+  var AutoFillContainerId: String
   
-  var AutoFillMenuId: String = js.native
+  var AutoFillMenuId: String
   
-  var AutoFillMinTextLength: Double = js.native
+  var AutoFillMinTextLength: Double
   
-  var AutoFillTimeout: Double = js.native
+  var AutoFillTimeout: Double
   
-  def BlurAutoFill(): Unit = js.native
+  def BlurAutoFill(): Unit
   
-  def CloseAutoFill(ojData: ISPClientAutoFillData): Unit = js.native
+  def CloseAutoFill(ojData: ISPClientAutoFillData): Unit
   
-  var CurrentFocusOption: Double = js.native
+  var CurrentFocusOption: Double
   
-  def FocusAutoFill(): Unit = js.native
+  def FocusAutoFill(): Unit
   
-  def FuncOnAutoFillClose(elmTextId: String, ojData: ISPClientAutoFillData): Unit = js.native
+  def FuncOnAutoFillClose(elmTextId: String, ojData: ISPClientAutoFillData): Unit
   
-  def FuncPopulateAutoFill(targetElement: HTMLElement): Unit = js.native
+  def FuncPopulateAutoFill(targetElement: HTMLElement): Unit
   
-  def IsAutoFillOpen(): Boolean = js.native
+  def IsAutoFillOpen(): Boolean
   
   def PopulateAutoFill(
     jsonObjSuggestions: js.Array[ISPClientAutoFillData],
     fnOnAutoFillCloseFuncName: js.Function2[/* elmTextId */ String, /* objData */ ISPClientAutoFillData, Unit]
-  ): Unit = js.native
+  ): Unit
   
-  def SelectAutoFillOption(elemOption: HTMLElement): Unit = js.native
+  def SelectAutoFillOption(elemOption: HTMLElement): Unit
   
-  def SetAutoFillHeight(): Unit = js.native
+  def SetAutoFillHeight(): Unit
   
-  var TextElementId: String = js.native
+  var TextElementId: String
   
-  def UpdateAutoFillMenuFocus(bMoveNextLink: Boolean): Unit = js.native
+  def UpdateAutoFillMenuFocus(bMoveNextLink: Boolean): Unit
   
-  def UpdateAutoFillPosition(): Unit = js.native
+  def UpdateAutoFillPosition(): Unit
   
-  var VisibleItemCount: Double = js.native
+  var VisibleItemCount: Double
 }
 object SPClientAutoFill {
   

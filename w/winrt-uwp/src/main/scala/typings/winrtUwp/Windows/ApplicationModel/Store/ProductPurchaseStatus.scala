@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Store
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object ProductPurchaseStatus extends StObject {
   
   /** The transaction did not complete because this in-app product has already been purchased by the user, and it cannot be purchased again. */
   @js.native
-  sealed trait alreadyPurchased extends ProductPurchaseStatus
+  sealed trait alreadyPurchased
+    extends StObject
+       with ProductPurchaseStatus
   
   /** The transaction did not complete because the last purchase of this consumable in-app product has not been reported as fulfilled to the Windows Store. */
   @js.native
-  sealed trait notFulfilled extends ProductPurchaseStatus
+  sealed trait notFulfilled
+    extends StObject
+       with ProductPurchaseStatus
   
   /** The purchase did not occur because the user decided not to complete the transaction (or the transaction failed for other reasons). */
   @js.native
-  sealed trait notPurchased extends ProductPurchaseStatus
+  sealed trait notPurchased
+    extends StObject
+       with ProductPurchaseStatus
   
   /** The transaction succeeded and the user has been notified. */
   @js.native
-  sealed trait succeeded extends ProductPurchaseStatus
+  sealed trait succeeded
+    extends StObject
+       with ProductPurchaseStatus
 }

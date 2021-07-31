@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNetworkInterfacePermissionsRequest extends StObject {
   
   /**
     * One or more filters.    network-interface-permission.network-interface-permission-id - The ID of the permission.    network-interface-permission.network-interface-id - The ID of the network interface.    network-interface-permission.aws-account-id - The AWS account ID.    network-interface-permission.aws-service - The AWS service.    network-interface-permission.permission - The type of permission (INSTANCE-ATTACH | EIP-ASSOCIATE).  
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. If this parameter is not specified, up to 50 results are returned by default.
     */
-  var MaxResults: js.UndefOr[DescribeNetworkInterfacePermissionsMaxResults] = js.native
+  var MaxResults: js.UndefOr[DescribeNetworkInterfacePermissionsMaxResults] = js.undefined
   
   /**
     * One or more network interface permission IDs.
     */
-  var NetworkInterfacePermissionIds: js.UndefOr[NetworkInterfacePermissionIdList] = js.native
+  var NetworkInterfacePermissionIds: js.UndefOr[NetworkInterfacePermissionIdList] = js.undefined
   
   /**
     * The token to request the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeNetworkInterfacePermissionsRequest {
   

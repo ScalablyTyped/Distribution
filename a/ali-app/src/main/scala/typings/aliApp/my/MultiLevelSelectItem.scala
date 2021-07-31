@@ -2,17 +2,15 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 级联选择 https://docs.alipay.com/mini/api/ewdxl3
-@js.native
 trait MultiLevelSelectItem extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var subList: js.UndefOr[js.Array[MultiLevelSelectItem]] = js.native
+  var subList: js.UndefOr[js.Array[MultiLevelSelectItem]] = js.undefined
 }
 object MultiLevelSelectItem {
   

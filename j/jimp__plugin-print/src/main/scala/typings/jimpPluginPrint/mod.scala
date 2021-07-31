@@ -6,27 +6,28 @@ import typings.jimpPluginPrint.anon.AlignmentX
 import typings.jimpPluginPrint.anon.FONTSANS10BLACK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/plugin-print", JSImport.Default)
+  @JSImport("@jimp/plugin-print", JSImport.Namespace)
   @js.native
-  def default(): Print = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Print = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Print]
+  
   trait Font extends StObject {
     
-    var chars: StringDictionary[FontChar] = js.native
+    var chars: StringDictionary[FontChar]
     
-    var common: FontCommon = js.native
+    var common: FontCommon
     
-    var info: FontInfo = js.native
+    var info: FontInfo
     
-    var kernings: StringDictionary[StringDictionary[Double]] = js.native
+    var kernings: StringDictionary[StringDictionary[Double]]
     
-    var pages: js.Array[String] = js.native
+    var pages: js.Array[String]
   }
   object Font {
     
@@ -65,28 +66,27 @@ object mod {
     }
   }
   
-  @js.native
   trait FontChar extends StObject {
     
-    var chnl: Double = js.native
+    var chnl: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var page: Double = js.native
+    var page: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var xadvance: Double = js.native
+    var xadvance: Double
     
-    var xoffset: Double = js.native
+    var xoffset: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var yoffset: Double = js.native
+    var yoffset: Double
   }
   object FontChar {
     
@@ -142,28 +142,27 @@ object mod {
     }
   }
   
-  @js.native
   trait FontCommon extends StObject {
     
-    var alphaChnl: Double = js.native
+    var alphaChnl: Double
     
-    var base: Double = js.native
+    var base: Double
     
-    var blueChnl: Double = js.native
+    var blueChnl: Double
     
-    var greenChnl: Double = js.native
+    var greenChnl: Double
     
-    var lineHeight: Double = js.native
+    var lineHeight: Double
     
-    var packed: Double = js.native
+    var packed: Double
     
-    var pages: Double = js.native
+    var pages: Double
     
-    var redChnl: Double = js.native
+    var redChnl: Double
     
-    var scaleH: Double = js.native
+    var scaleH: Double
     
-    var scaleW: Double = js.native
+    var scaleW: Double
   }
   object FontCommon {
     
@@ -219,30 +218,29 @@ object mod {
     }
   }
   
-  @js.native
   trait FontInfo extends StObject {
     
-    var aa: Double = js.native
+    var aa: Double
     
-    var bold: Double = js.native
+    var bold: Double
     
-    var charset: String = js.native
+    var charset: String
     
-    var face: String = js.native
+    var face: String
     
-    var italic: Double = js.native
+    var italic: Double
     
-    var padding: js.Tuple4[Double, Double, Double, Double] = js.native
+    var padding: js.Tuple4[Double, Double, Double, Double]
     
-    var size: Double = js.native
+    var size: Double
     
-    var smooth: Double = js.native
+    var smooth: Double
     
-    var spacing: js.Tuple2[Double, Double] = js.native
+    var spacing: js.Tuple2[Double, Double]
     
-    var stretchH: Double = js.native
+    var stretchH: Double
     
-    var unicode: Double = js.native
+    var unicode: Double
   }
   object FontInfo {
     
@@ -302,12 +300,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Print extends StObject {
     
-    var `class`: PrintClass = js.native
+    var `class`: PrintClass
     
-    var constants: FONTSANS10BLACK = js.native
+    var constants: FONTSANS10BLACK
   }
   object Print {
     
@@ -335,40 +332,6 @@ object mod {
     // Text methods
     def print(font: Font, x: Double, y: Double, text: PrintableText): this.type = js.native
     def print(font: Font, x: Double, y: Double, text: PrintableText, cb: ImageCallback[this.type]): this.type = js.native
-    def print(
-      font: Font,
-      x: Double,
-      y: Double,
-      text: PrintableText,
-      maxWidth: js.UndefOr[scala.Nothing],
-      cb: ImageCallback[this.type]
-    ): this.type = js.native
-    def print(
-      font: Font,
-      x: Double,
-      y: Double,
-      text: PrintableText,
-      maxWidth: js.UndefOr[scala.Nothing],
-      maxHeight: js.UndefOr[scala.Nothing],
-      cb: ImageCallback[this.type]
-    ): this.type = js.native
-    def print(
-      font: Font,
-      x: Double,
-      y: Double,
-      text: PrintableText,
-      maxWidth: js.UndefOr[scala.Nothing],
-      maxHeight: Double
-    ): this.type = js.native
-    def print(
-      font: Font,
-      x: Double,
-      y: Double,
-      text: PrintableText,
-      maxWidth: js.UndefOr[scala.Nothing],
-      maxHeight: Double,
-      cb: ImageCallback[this.type]
-    ): this.type = js.native
     def print(font: Font, x: Double, y: Double, text: PrintableText, maxWidth: Double): this.type = js.native
     def print(
       font: Font,
@@ -376,15 +339,6 @@ object mod {
       y: Double,
       text: PrintableText,
       maxWidth: Double,
-      cb: ImageCallback[this.type]
-    ): this.type = js.native
-    def print(
-      font: Font,
-      x: Double,
-      y: Double,
-      text: PrintableText,
-      maxWidth: Double,
-      maxHeight: js.UndefOr[scala.Nothing],
       cb: ImageCallback[this.type]
     ): this.type = js.native
     def print(font: Font, x: Double, y: Double, text: PrintableText, maxWidth: Double, maxHeight: Double): this.type = js.native
@@ -395,6 +349,42 @@ object mod {
       text: PrintableText,
       maxWidth: Double,
       maxHeight: Double,
+      cb: ImageCallback[this.type]
+    ): this.type = js.native
+    def print(
+      font: Font,
+      x: Double,
+      y: Double,
+      text: PrintableText,
+      maxWidth: Double,
+      maxHeight: Unit,
+      cb: ImageCallback[this.type]
+    ): this.type = js.native
+    def print(
+      font: Font,
+      x: Double,
+      y: Double,
+      text: PrintableText,
+      maxWidth: Unit,
+      cb: ImageCallback[this.type]
+    ): this.type = js.native
+    def print(font: Font, x: Double, y: Double, text: PrintableText, maxWidth: Unit, maxHeight: Double): this.type = js.native
+    def print(
+      font: Font,
+      x: Double,
+      y: Double,
+      text: PrintableText,
+      maxWidth: Unit,
+      maxHeight: Double,
+      cb: ImageCallback[this.type]
+    ): this.type = js.native
+    def print(
+      font: Font,
+      x: Double,
+      y: Double,
+      text: PrintableText,
+      maxWidth: Unit,
+      maxHeight: Unit,
       cb: ImageCallback[this.type]
     ): this.type = js.native
   }

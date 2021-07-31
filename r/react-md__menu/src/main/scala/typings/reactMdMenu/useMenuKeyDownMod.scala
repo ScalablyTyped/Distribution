@@ -5,35 +5,36 @@ import typings.react.mod.KeyboardEventHandler
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useMenuKeyDownMod {
   
-  @JSImport("@react-md/menu/types/useMenuKeyDown", "useMenuKeyDown")
+  @JSImport("@react-md/menu/types/useMenuKeyDown", JSImport.Namespace)
   @js.native
-  def useMenuKeyDown(hasMenuOnKeyDownOnRequestClosePortalledHorizontalDefaultFocus: MenuKeyDownOptions): KeyboardEventHandler[HTMLDivElement] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useMenuKeyDown(hasMenuOnKeyDownOnRequestClosePortalledHorizontalDefaultFocus: MenuKeyDownOptions): KeyboardEventHandler[HTMLDivElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuKeyDown")(hasMenuOnKeyDownOnRequestClosePortalledHorizontalDefaultFocus.asInstanceOf[js.Any]).asInstanceOf[KeyboardEventHandler[HTMLDivElement]]
+  
   trait MenuKeyDownOptions extends StObject {
     
-    var defaultFocus: String = js.native
+    var defaultFocus: String
     
-    var horizontal: Boolean = js.native
+    var horizontal: Boolean
     
-    var menu: HTMLDivElement | Null = js.native
+    var menu: HTMLDivElement | Null
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    def onRequestClose(): Unit = js.native
+    def onRequestClose(): Unit
     
-    var portalled: Boolean = js.native
+    var portalled: Boolean
   }
   object MenuKeyDownOptions {
     
     @scala.inline
     def apply(defaultFocus: String, horizontal: Boolean, onRequestClose: () => Unit, portalled: Boolean): MenuKeyDownOptions = {
-      val __obj = js.Dynamic.literal(defaultFocus = defaultFocus.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction0(onRequestClose), portalled = portalled.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(defaultFocus = defaultFocus.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction0(onRequestClose), portalled = portalled.asInstanceOf[js.Any], menu = null)
       __obj.asInstanceOf[MenuKeyDownOptions]
     }
     

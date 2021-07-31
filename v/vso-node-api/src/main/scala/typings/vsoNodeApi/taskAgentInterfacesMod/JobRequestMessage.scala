@@ -2,23 +2,21 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobRequestMessage extends StObject {
   
-  var environment: JobEnvironment = js.native
+  var environment: JobEnvironment
   
-  var jobId: String = js.native
+  var jobId: String
   
-  var jobName: String = js.native
+  var jobName: String
   
-  var messageType: String = js.native
+  var messageType: String
   
-  var plan: TaskOrchestrationPlanReference = js.native
+  var plan: TaskOrchestrationPlanReference
   
-  var timeline: TimelineReference = js.native
+  var timeline: TimelineReference
 }
 object JobRequestMessage {
   

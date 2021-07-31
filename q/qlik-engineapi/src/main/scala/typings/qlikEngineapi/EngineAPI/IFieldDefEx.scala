@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FieldDefEx...
   */
-@js.native
 trait IFieldDefEx extends StObject {
   
   /**
     * Name of the field
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Type of data entity
@@ -24,7 +22,7 @@ trait IFieldDefEx extends StObject {
     * - 1 for PRESENT: plain field
     * - 2 for IS_EXPR: calculated dimension
     */
-  var qType: FieldDefExType = js.native
+  var qType: FieldDefExType
 }
 object IFieldDefEx {
   

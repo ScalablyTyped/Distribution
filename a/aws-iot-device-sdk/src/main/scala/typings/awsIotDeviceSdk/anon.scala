@@ -4,15 +4,13 @@ import typings.awsIotDeviceSdk.awsIotDeviceSdkNumbers.`0`
 import typings.awsIotDeviceSdk.awsIotDeviceSdkNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Qos extends StObject {
     
-    var qos: `0` | `1` = js.native
+    var qos: `0` | `1`
   }
   object Qos {
     

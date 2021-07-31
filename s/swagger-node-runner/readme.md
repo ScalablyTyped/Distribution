@@ -12,7 +12,7 @@ Swagger loader and middleware utilities
 | Keywords           | swagger, api, apis, swagger-connect, swagger-express, swagger-restify, swagger-hapi, swagger-sails |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 644269 |
+| # downloads        | 627433 |
 | # stars            | 1 |
 
 ## Links

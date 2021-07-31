@@ -2,36 +2,34 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FleetUtilization extends StObject {
   
   /**
     * Number of active game sessions currently being hosted on all instances in the fleet.
     */
-  var ActiveGameSessionCount: js.UndefOr[WholeNumber] = js.native
+  var ActiveGameSessionCount: js.UndefOr[WholeNumber] = js.undefined
   
   /**
     * Number of server processes in an ACTIVE status currently running across all instances in the fleet
     */
-  var ActiveServerProcessCount: js.UndefOr[WholeNumber] = js.native
+  var ActiveServerProcessCount: js.UndefOr[WholeNumber] = js.undefined
   
   /**
     * Number of active player sessions currently being hosted on all instances in the fleet.
     */
-  var CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.native
+  var CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined
   
   /**
     * A unique identifier for a fleet.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
   /**
     * The maximum number of players allowed across all game sessions currently being hosted on all instances in the fleet.
     */
-  var MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.native
+  var MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined
 }
 object FleetUtilization {
   

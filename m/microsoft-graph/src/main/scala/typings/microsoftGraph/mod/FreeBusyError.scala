@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FreeBusyError extends StObject {
   
   // Describes the error.
-  var message: js.UndefOr[NullableOption[String]] = js.native
+  var message: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The response code from querying for the availability of the user, distribution list, or resource.
-  var responseCode: js.UndefOr[NullableOption[String]] = js.native
+  var responseCode: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object FreeBusyError {
   

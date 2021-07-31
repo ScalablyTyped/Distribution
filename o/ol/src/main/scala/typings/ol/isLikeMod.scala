@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isLikeMod {
@@ -13,34 +12,8 @@ object isLikeMod {
     extends typings.ol.comparisonMod.default {
     def this(propertyName: String, pattern: String) = this()
     def this(propertyName: String, pattern: String, opt_wildCard: String) = this()
-    def this(
-      propertyName: String,
-      pattern: String,
-      opt_wildCard: js.UndefOr[scala.Nothing],
-      opt_singleChar: String
-    ) = this()
     def this(propertyName: String, pattern: String, opt_wildCard: String, opt_singleChar: String) = this()
-    def this(
-      propertyName: String,
-      pattern: String,
-      opt_wildCard: js.UndefOr[scala.Nothing],
-      opt_singleChar: js.UndefOr[scala.Nothing],
-      opt_escapeChar: String
-    ) = this()
-    def this(
-      propertyName: String,
-      pattern: String,
-      opt_wildCard: js.UndefOr[scala.Nothing],
-      opt_singleChar: String,
-      opt_escapeChar: String
-    ) = this()
-    def this(
-      propertyName: String,
-      pattern: String,
-      opt_wildCard: String,
-      opt_singleChar: js.UndefOr[scala.Nothing],
-      opt_escapeChar: String
-    ) = this()
+    def this(propertyName: String, pattern: String, opt_wildCard: Unit, opt_singleChar: String) = this()
     def this(
       propertyName: String,
       pattern: String,
@@ -51,31 +24,28 @@ object isLikeMod {
     def this(
       propertyName: String,
       pattern: String,
-      opt_wildCard: js.UndefOr[scala.Nothing],
-      opt_singleChar: js.UndefOr[scala.Nothing],
-      opt_escapeChar: js.UndefOr[scala.Nothing],
-      opt_matchCase: Boolean
+      opt_wildCard: String,
+      opt_singleChar: Unit,
+      opt_escapeChar: String
     ) = this()
     def this(
       propertyName: String,
       pattern: String,
-      opt_wildCard: js.UndefOr[scala.Nothing],
-      opt_singleChar: js.UndefOr[scala.Nothing],
-      opt_escapeChar: String,
-      opt_matchCase: Boolean
-    ) = this()
-    def this(
-      propertyName: String,
-      pattern: String,
-      opt_wildCard: js.UndefOr[scala.Nothing],
+      opt_wildCard: Unit,
       opt_singleChar: String,
-      opt_escapeChar: js.UndefOr[scala.Nothing],
-      opt_matchCase: Boolean
+      opt_escapeChar: String
     ) = this()
     def this(
       propertyName: String,
       pattern: String,
-      opt_wildCard: js.UndefOr[scala.Nothing],
+      opt_wildCard: Unit,
+      opt_singleChar: Unit,
+      opt_escapeChar: String
+    ) = this()
+    def this(
+      propertyName: String,
+      pattern: String,
+      opt_wildCard: String,
       opt_singleChar: String,
       opt_escapeChar: String,
       opt_matchCase: Boolean
@@ -84,15 +54,15 @@ object isLikeMod {
       propertyName: String,
       pattern: String,
       opt_wildCard: String,
-      opt_singleChar: js.UndefOr[scala.Nothing],
-      opt_escapeChar: js.UndefOr[scala.Nothing],
+      opt_singleChar: String,
+      opt_escapeChar: Unit,
       opt_matchCase: Boolean
     ) = this()
     def this(
       propertyName: String,
       pattern: String,
       opt_wildCard: String,
-      opt_singleChar: js.UndefOr[scala.Nothing],
+      opt_singleChar: Unit,
       opt_escapeChar: String,
       opt_matchCase: Boolean
     ) = this()
@@ -100,16 +70,40 @@ object isLikeMod {
       propertyName: String,
       pattern: String,
       opt_wildCard: String,
-      opt_singleChar: String,
-      opt_escapeChar: js.UndefOr[scala.Nothing],
+      opt_singleChar: Unit,
+      opt_escapeChar: Unit,
       opt_matchCase: Boolean
     ) = this()
     def this(
       propertyName: String,
       pattern: String,
-      opt_wildCard: String,
+      opt_wildCard: Unit,
       opt_singleChar: String,
       opt_escapeChar: String,
+      opt_matchCase: Boolean
+    ) = this()
+    def this(
+      propertyName: String,
+      pattern: String,
+      opt_wildCard: Unit,
+      opt_singleChar: String,
+      opt_escapeChar: Unit,
+      opt_matchCase: Boolean
+    ) = this()
+    def this(
+      propertyName: String,
+      pattern: String,
+      opt_wildCard: Unit,
+      opt_singleChar: Unit,
+      opt_escapeChar: String,
+      opt_matchCase: Boolean
+    ) = this()
+    def this(
+      propertyName: String,
+      pattern: String,
+      opt_wildCard: Unit,
+      opt_singleChar: Unit,
+      opt_escapeChar: Unit,
       opt_matchCase: Boolean
     ) = this()
   }

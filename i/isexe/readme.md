@@ -11,8 +11,8 @@ Minimal module to check if a file is executable.
 | Full name          | isexe |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 131 |
-| # downloads        | 643380562 |
+| # dependents       | 176 |
+| # downloads        | 777008278 |
 | # stars            | 0 |
 
 ## Links

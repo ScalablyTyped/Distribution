@@ -2,7 +2,6 @@ package typings.naverWhale.whale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -15,11 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object pageCapture {
   
-  @js.native
   trait SaveDetails extends StObject {
     
     /** The id of the tab to save as MHTML. */
-    var tabId: Double = js.native
+    var tabId: Double
   }
   object SaveDetails {
     

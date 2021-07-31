@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerMessagesRecurrenceEditorFrequencies extends StObject {
   
-  var daily: js.UndefOr[String] = js.native
+  var daily: js.UndefOr[String] = js.undefined
   
-  var monthly: js.UndefOr[String] = js.native
+  var monthly: js.UndefOr[String] = js.undefined
   
-  var never: js.UndefOr[String] = js.native
+  var never: js.UndefOr[String] = js.undefined
   
-  var weekly: js.UndefOr[String] = js.native
+  var weekly: js.UndefOr[String] = js.undefined
   
-  var yearly: js.UndefOr[String] = js.native
+  var yearly: js.UndefOr[String] = js.undefined
 }
 object SchedulerMessagesRecurrenceEditorFrequencies {
   

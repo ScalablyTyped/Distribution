@@ -3,14 +3,12 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Instance resource. (== resource_for beta.instances ==) (== resource_for
   * v1.instances ==)
   */
-@js.native
 trait SchemaInstance extends StObject {
   
   /**
@@ -19,53 +17,53 @@ trait SchemaInstance extends StObject {
     * instance to forward routes. For more information, see Enabling IP
     * Forwarding.
     */
-  var canIpForward: js.UndefOr[Boolean] = js.native
+  var canIpForward: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Output Only] The CPU platform used by this instance.
     */
-  var cpuPlatform: js.UndefOr[String] = js.native
+  var cpuPlatform: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the resource should be protected against deletion.
     */
-  var deletionProtection: js.UndefOr[Boolean] = js.native
+  var deletionProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Array of disks associated with this instance. Persistent disks must be
     * created before you can assign them.
     */
-  var disks: js.UndefOr[js.Array[SchemaAttachedDisk]] = js.native
+  var disks: js.UndefOr[js.Array[SchemaAttachedDisk]] = js.undefined
   
   /**
     * Enables display device for the instance.
     */
-  var displayDevice: js.UndefOr[SchemaDisplayDevice] = js.native
+  var displayDevice: js.UndefOr[SchemaDisplayDevice] = js.undefined
   
   /**
     * A list of the type and count of accelerator cards attached to the
     * instance.
     */
-  var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.native
+  var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.undefined
   
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Encrypts or decrypts data for an instance with a customer-supplied
@@ -81,13 +79,13 @@ trait SchemaInstance extends StObject {
     * cannot use your own keys to encrypt local SSDs and in-memory content in a
     * managed instance group.
     */
-  var instanceEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var instanceEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#instance for
     * instances.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A fingerprint for this request, which is essentially a hash of the
@@ -97,13 +95,13 @@ trait SchemaInstance extends StObject {
     * fingerprint hash in order to update or change labels.  To see the latest
     * fingerprint, make get() request to the instance.
     */
-  var labelFingerprint: js.UndefOr[String] = js.native
+  var labelFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to apply to this instance. These can be later modified by the
     * setLabels method.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Full or partial URL of the machine type resource to use for this
@@ -119,13 +117,13 @@ trait SchemaInstance extends StObject {
     * zones/us-central1-f/machineTypes/custom-4-5120   For a full list of
     * restrictions, read the Specifications for custom machine types.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata key/value pairs assigned to this instance. This includes
     * custom metadata and predefined keys.
     */
-  var metadata: js.UndefOr[SchemaMetadata] = js.native
+  var metadata: js.UndefOr[SchemaMetadata] = js.undefined
   
   /**
     * Specifies a minimum CPU platform for the VM instance. Applicable values
@@ -133,7 +131,7 @@ trait SchemaInstance extends StObject {
     * &quot;Intel Haswell&quot; or minCpuPlatform: &quot;Intel Sandy
     * Bridge&quot;.
     */
-  var minCpuPlatform: js.UndefOr[String] = js.native
+  var minCpuPlatform: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the resource, provided by the client when initially creating
@@ -144,7 +142,7 @@ trait SchemaInstance extends StObject {
     * must be a dash, lowercase letter, or digit, except the last character,
     * which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * An array of network configurations for this instance. These specify how
@@ -152,39 +150,39 @@ trait SchemaInstance extends StObject {
     * as connecting to the internet. Multiple interfaces are supported per
     * instance.
     */
-  var networkInterfaces: js.UndefOr[js.Array[SchemaNetworkInterface]] = js.native
+  var networkInterfaces: js.UndefOr[js.Array[SchemaNetworkInterface]] = js.undefined
   
   /**
     * Total amount of preserved state for SUSPENDED instances. Read-only in the
     * api.
     */
-  var preservedStateSizeGb: js.UndefOr[String] = js.native
+  var preservedStateSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * The configuration of desired allocations which this Instance could
     * consume capacity from.
     */
-  var reservationAffinity: js.UndefOr[SchemaReservationAffinity] = js.native
+  var reservationAffinity: js.UndefOr[SchemaReservationAffinity] = js.undefined
   
   /**
     * Resource policies applied to this instance.
     */
-  var resourcePolicies: js.UndefOr[js.Array[String]] = js.native
+  var resourcePolicies: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Sets the scheduling options for this instance.
     */
-  var scheduling: js.UndefOr[SchemaScheduling] = js.native
+  var scheduling: js.UndefOr[SchemaScheduling] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource with the resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of service accounts, with their specified scopes, authorized for
@@ -193,43 +191,43 @@ trait SchemaInstance extends StObject {
     * metadata server and used to authenticate applications on the instance.
     * See Service Accounts for more information.
     */
-  var serviceAccounts: js.UndefOr[js.Array[SchemaServiceAccount]] = js.native
+  var serviceAccounts: js.UndefOr[js.Array[SchemaServiceAccount]] = js.undefined
   
-  var shieldedInstanceConfig: js.UndefOr[SchemaShieldedInstanceConfig] = js.native
+  var shieldedInstanceConfig: js.UndefOr[SchemaShieldedInstanceConfig] = js.undefined
   
-  var shieldedInstanceIntegrityPolicy: js.UndefOr[SchemaShieldedInstanceIntegrityPolicy] = js.native
+  var shieldedInstanceIntegrityPolicy: js.UndefOr[SchemaShieldedInstanceIntegrityPolicy] = js.undefined
   
-  var shieldedVmConfig: js.UndefOr[SchemaShieldedVmConfig] = js.native
+  var shieldedVmConfig: js.UndefOr[SchemaShieldedVmConfig] = js.undefined
   
-  var shieldedVmIntegrityPolicy: js.UndefOr[SchemaShieldedVmIntegrityPolicy] = js.native
+  var shieldedVmIntegrityPolicy: js.UndefOr[SchemaShieldedVmIntegrityPolicy] = js.undefined
   
   /**
     * Source machine image
     */
-  var sourceMachineImage: js.UndefOr[String] = js.native
+  var sourceMachineImage: js.UndefOr[String] = js.undefined
   
   /**
     * Source GMI encryption key when creating an instance from GMI.
     */
-  var sourceMachineImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var sourceMachineImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * [Output Only] Whether a VM has been restricted for start because Compute
     * Engine has detected suspicious activity.
     */
-  var startRestricted: js.UndefOr[Boolean] = js.native
+  var startRestricted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Output Only] The status of the instance. One of the following values:
     * PROVISIONING, STAGING, RUNNING, STOPPING, STOPPED, SUSPENDING, SUSPENDED,
     * and TERMINATED.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] An optional, human-readable explanation of the status.
     */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Tags to apply to this instance. Tags are used to identify valid sources
@@ -238,14 +236,14 @@ trait SchemaInstance extends StObject {
     * Each tag within the list must comply with RFC1035. Multiple tags can be
     * specified via the &#39;tags.items&#39; field.
     */
-  var tags: js.UndefOr[SchemaTags] = js.native
+  var tags: js.UndefOr[SchemaTags] = js.undefined
   
   /**
     * [Output Only] URL of the zone where the instance resides. You must
     * specify this field as part of the HTTP request URL. It is not settable as
     * a field in the request body.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaInstance {
   

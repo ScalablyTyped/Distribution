@@ -2,29 +2,27 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configurations for a source while processing a Search or Suggest request.
   */
-@js.native
 trait SchemaSourceConfig extends StObject {
   
   /**
     * The crowding configuration for the source.
     */
-  var crowdingConfig: js.UndefOr[SchemaSourceCrowdingConfig] = js.native
+  var crowdingConfig: js.UndefOr[SchemaSourceCrowdingConfig] = js.undefined
   
   /**
     * The scoring configuration for the source.
     */
-  var scoringConfig: js.UndefOr[SchemaSourceScoringConfig] = js.native
+  var scoringConfig: js.UndefOr[SchemaSourceScoringConfig] = js.undefined
   
   /**
     * The source for which this configuration is to be used.
     */
-  var source: js.UndefOr[SchemaSource] = js.native
+  var source: js.UndefOr[SchemaSource] = js.undefined
 }
 object SchemaSourceConfig {
   

@@ -3,7 +3,6 @@ package typings.isGeneratorFn
 import typings.isGeneratorFn.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,9 +18,8 @@ object mod {
   	//=> false
   	```
   	*/
-  @JSImport("is-generator-fn", JSImport.Namespace)
-  @js.native
-  def apply(value: js.Any): /* is std.GeneratorFunction */ Boolean = js.native
+  @scala.inline
+  def apply(value: js.Any): /* is std.GeneratorFunction */ Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.GeneratorFunction */ Boolean]
   
   @JSImport("is-generator-fn", JSImport.Namespace)
   @js.native
@@ -47,9 +45,8 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function isGeneratorFn(value: unknown): value is GeneratorFunction;
   // export = isGeneratorFn;
-  @JSImport("is-generator-fn", "default")
-  @js.native
-  def default(value: js.Any): /* is std.GeneratorFunction */ Boolean = js.native
+  @scala.inline
+  def default(value: js.Any): /* is std.GeneratorFunction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.GeneratorFunction */ Boolean]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

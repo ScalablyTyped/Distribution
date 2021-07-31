@@ -4,103 +4,101 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSONSchemaProps is a JSON-Schema following Specification Draft 4 (http://json-schema.org/).
   */
-@js.native
 trait JSONSchemaProps extends StObject {
   
   /**
     * default is a default value for undefined object fields. Defaulting is a beta feature under the CustomResourceDefaulting feature gate. Defaulting requires spec.preserveUnknownFields to be false.
     */
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$ref")
-  var $ref: js.UndefOr[Input[String]] = js.native
+  var $ref: js.UndefOr[Input[String]] = js.undefined
   
   @JSName("$schema")
-  var $schema: js.UndefOr[Input[String]] = js.native
+  var $schema: js.UndefOr[Input[String]] = js.undefined
   
-  var additionalItems: js.UndefOr[Input[JSONSchemaProps | Boolean]] = js.native
+  var additionalItems: js.UndefOr[Input[JSONSchemaProps | Boolean]] = js.undefined
   
-  var additionalProperties: js.UndefOr[Input[JSONSchemaProps | Boolean]] = js.native
+  var additionalProperties: js.UndefOr[Input[JSONSchemaProps | Boolean]] = js.undefined
   
-  var allOf: js.UndefOr[Input[js.Array[Input[JSONSchemaProps]]]] = js.native
+  var allOf: js.UndefOr[Input[js.Array[Input[JSONSchemaProps]]]] = js.undefined
   
-  var anyOf: js.UndefOr[Input[js.Array[Input[JSONSchemaProps]]]] = js.native
+  var anyOf: js.UndefOr[Input[js.Array[Input[JSONSchemaProps]]]] = js.undefined
   
-  var definitions: js.UndefOr[Input[StringDictionary[Input[JSONSchemaProps]]]] = js.native
+  var definitions: js.UndefOr[Input[StringDictionary[Input[JSONSchemaProps]]]] = js.undefined
   
-  var dependencies: js.UndefOr[Input[StringDictionary[Input[JSONSchemaProps | js.Array[Input[String]]]]]] = js.native
+  var dependencies: js.UndefOr[Input[StringDictionary[Input[JSONSchemaProps | js.Array[Input[String]]]]]] = js.undefined
   
-  var description: js.UndefOr[Input[String]] = js.native
+  var description: js.UndefOr[Input[String]] = js.undefined
   
-  var enum: js.UndefOr[Input[js.Array[_]]] = js.native
+  var `enum`: js.UndefOr[Input[js.Array[js.Any]]] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.native
+  var example: js.UndefOr[js.Any] = js.undefined
   
-  var exclusiveMaximum: js.UndefOr[Input[Boolean]] = js.native
+  var exclusiveMaximum: js.UndefOr[Input[Boolean]] = js.undefined
   
-  var exclusiveMinimum: js.UndefOr[Input[Boolean]] = js.native
+  var exclusiveMinimum: js.UndefOr[Input[Boolean]] = js.undefined
   
-  var externalDocs: js.UndefOr[Input[ExternalDocumentation]] = js.native
+  var externalDocs: js.UndefOr[Input[ExternalDocumentation]] = js.undefined
   
   /**
     * format is an OpenAPI v3 format string. Unknown formats are ignored. The following formats are validated:
     *
     * - bsonobjectid: a bson object ID, i.e. a 24 characters hex string - uri: an URI as parsed by Golang net/url.ParseRequestURI - email: an email address as parsed by Golang net/mail.ParseAddress - hostname: a valid representation for an Internet host name, as defined by RFC 1034, section 3.1 [RFC1034]. - ipv4: an IPv4 IP as parsed by Golang net.ParseIP - ipv6: an IPv6 IP as parsed by Golang net.ParseIP - cidr: a CIDR as parsed by Golang net.ParseCIDR - mac: a MAC address as parsed by Golang net.ParseMAC - uuid: an UUID that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$ - uuid3: an UUID3 that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?3[0-9a-f]{3}-?[0-9a-f]{4}-?[0-9a-f]{12}$ - uuid4: an UUID4 that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?4[0-9a-f]{3}-?[89ab][0-9a-f]{3}-?[0-9a-f]{12}$ - uuid5: an UUID5 that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?5[0-9a-f]{3}-?[89ab][0-9a-f]{3}-?[0-9a-f]{12}$ - isbn: an ISBN10 or ISBN13 number string like "0321751043" or "978-0321751041" - isbn10: an ISBN10 number string like "0321751043" - isbn13: an ISBN13 number string like "978-0321751041" - creditcard: a credit card number defined by the regex ^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$ with any non digit characters mixed in - ssn: a U.S. social security number following the regex ^\d{3}[- ]?\d{2}[- ]?\d{4}$ - hexcolor: an hexadecimal color code like "#FFFFFF: following the regex ^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$ - rgbcolor: an RGB color code like rgb like "rgb(255,255,2559" - byte: base64 encoded binary data - password: any kind of string - date: a date string like "2006-01-02" as defined by full-date in RFC3339 - duration: a duration string like "22 ns" as parsed by Golang time.ParseDuration or compatible with Scala duration format - datetime: a date time string like "2014-12-15T19:30:20.000Z" as defined by date-time in RFC3339.
     */
-  var format: js.UndefOr[Input[String]] = js.native
+  var format: js.UndefOr[Input[String]] = js.undefined
   
-  var id: js.UndefOr[Input[String]] = js.native
+  var id: js.UndefOr[Input[String]] = js.undefined
   
-  var items: js.UndefOr[Input[JSONSchemaProps | js.Array[_]]] = js.native
+  var items: js.UndefOr[Input[JSONSchemaProps | js.Array[js.Any]]] = js.undefined
   
-  var maxItems: js.UndefOr[Input[Double]] = js.native
+  var maxItems: js.UndefOr[Input[Double]] = js.undefined
   
-  var maxLength: js.UndefOr[Input[Double]] = js.native
+  var maxLength: js.UndefOr[Input[Double]] = js.undefined
   
-  var maxProperties: js.UndefOr[Input[Double]] = js.native
+  var maxProperties: js.UndefOr[Input[Double]] = js.undefined
   
-  var maximum: js.UndefOr[Input[Double]] = js.native
+  var maximum: js.UndefOr[Input[Double]] = js.undefined
   
-  var minItems: js.UndefOr[Input[Double]] = js.native
+  var minItems: js.UndefOr[Input[Double]] = js.undefined
   
-  var minLength: js.UndefOr[Input[Double]] = js.native
+  var minLength: js.UndefOr[Input[Double]] = js.undefined
   
-  var minProperties: js.UndefOr[Input[Double]] = js.native
+  var minProperties: js.UndefOr[Input[Double]] = js.undefined
   
-  var minimum: js.UndefOr[Input[Double]] = js.native
+  var minimum: js.UndefOr[Input[Double]] = js.undefined
   
-  var multipleOf: js.UndefOr[Input[Double]] = js.native
+  var multipleOf: js.UndefOr[Input[Double]] = js.undefined
   
-  var not: js.UndefOr[Input[JSONSchemaProps]] = js.native
+  var not: js.UndefOr[Input[JSONSchemaProps]] = js.undefined
   
-  var nullable: js.UndefOr[Input[Boolean]] = js.native
+  var nullable: js.UndefOr[Input[Boolean]] = js.undefined
   
-  var oneOf: js.UndefOr[Input[js.Array[Input[JSONSchemaProps]]]] = js.native
+  var oneOf: js.UndefOr[Input[js.Array[Input[JSONSchemaProps]]]] = js.undefined
   
-  var pattern: js.UndefOr[Input[String]] = js.native
+  var pattern: js.UndefOr[Input[String]] = js.undefined
   
-  var patternProperties: js.UndefOr[Input[StringDictionary[Input[JSONSchemaProps]]]] = js.native
+  var patternProperties: js.UndefOr[Input[StringDictionary[Input[JSONSchemaProps]]]] = js.undefined
   
-  var properties: js.UndefOr[Input[StringDictionary[Input[JSONSchemaProps]]]] = js.native
+  var properties: js.UndefOr[Input[StringDictionary[Input[JSONSchemaProps]]]] = js.undefined
   
-  var required: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var required: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
-  var title: js.UndefOr[Input[String]] = js.native
+  var title: js.UndefOr[Input[String]] = js.undefined
   
-  var `type`: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.undefined
   
-  var uniqueItems: js.UndefOr[Input[Boolean]] = js.native
+  var uniqueItems: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * x-kubernetes-embedded-resource defines that the value is an embedded Kubernetes runtime.Object, with TypeMeta and ObjectMeta. The type must be object. It is allowed to further restrict the embedded object. kind, apiVersion and metadata are validated automatically. x-kubernetes-preserve-unknown-fields is allowed to be true, but does not have to be if the object is fully specified (up to kind, apiVersion, metadata).
     */
-  var x_kubernetes_embedded_resource: js.UndefOr[Input[Boolean]] = js.native
+  var x_kubernetes_embedded_resource: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * x-kubernetes-int-or-string specifies that this value is either an integer or a string. If this is true, an empty type is allowed and type as child of anyOf is permitted if following one of the following patterns:
@@ -114,7 +112,7 @@ trait JSONSchemaProps extends StObject {
     *      - type: string
     *    - ... zero or more
     */
-  var x_kubernetes_int_or_string: js.UndefOr[Input[Boolean]] = js.native
+  var x_kubernetes_int_or_string: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * x-kubernetes-list-map-keys annotates an array with the x-kubernetes-list-type `map` by specifying the keys used as the index of the map.
@@ -123,7 +121,7 @@ trait JSONSchemaProps extends StObject {
     *
     * The properties specified must either be required or have a default value, to ensure those properties are present for all list items.
     */
-  var x_kubernetes_list_map_keys: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var x_kubernetes_list_map_keys: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * x-kubernetes-list-type annotates an array to further describe its topology. This extension must only be used on lists and may have 3 possible values:
@@ -141,7 +139,7 @@ trait JSONSchemaProps extends StObject {
     *      must only be used on a list with elements of type object.
     * Defaults to atomic for arrays.
     */
-  var x_kubernetes_list_type: js.UndefOr[Input[String]] = js.native
+  var x_kubernetes_list_type: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * x-kubernetes-map-type annotates an object to further describe its topology. This extension must only be used when type is object and may have 2 possible values:
@@ -153,12 +151,12 @@ trait JSONSchemaProps extends StObject {
     * 2) `atomic`: the list is treated as a single entity, like a scalar.
     *      Atomic maps will be entirely replaced when updated.
     */
-  var x_kubernetes_map_type: js.UndefOr[Input[String]] = js.native
+  var x_kubernetes_map_type: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * x-kubernetes-preserve-unknown-fields stops the API server decoding step from pruning fields which are not specified in the validation schema. This affects fields recursively, but switches back to normal pruning behaviour if nested properties or additionalProperties are specified in the schema. This can either be true or undefined. False is forbidden.
     */
-  var x_kubernetes_preserve_unknown_fields: js.UndefOr[Input[Boolean]] = js.native
+  var x_kubernetes_preserve_unknown_fields: js.UndefOr[Input[Boolean]] = js.undefined
 }
 object JSONSchemaProps {
   
@@ -238,7 +236,7 @@ object JSONSchemaProps {
     def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setEnum(value: Input[js.Array[_]]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    def setEnum(value: Input[js.Array[js.Any]]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
@@ -283,7 +281,7 @@ object JSONSchemaProps {
     def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setItems(value: Input[JSONSchemaProps | js.Array[_]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: Input[JSONSchemaProps | js.Array[js.Any]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

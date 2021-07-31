@@ -2,15 +2,13 @@ package typings.angularCompiler.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostListener extends StObject {
   
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
-  var eventName: js.UndefOr[String] = js.native
+  var eventName: js.UndefOr[String] = js.undefined
 }
 object HostListener {
   

@@ -6,7 +6,6 @@ import typings.reactVirtualized.esMultiGridMod.MultiGridProps
 import typings.reactVirtualized.esMultiGridMod.MultiGridState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiGridMod {
@@ -35,9 +34,8 @@ object multiGridMod {
     @scala.inline
     def defaultProps_=(x: ClassNameBottomRightGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-virtualized/dist/commonjs/MultiGrid", "MultiGrid.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: MultiGridProps, prevState: MultiGridState): MultiGridState | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: MultiGridProps, prevState: MultiGridState): MultiGridState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[MultiGridState | Null]
     
     @JSImport("react-virtualized/dist/commonjs/MultiGrid", "MultiGrid.propTypes")
     @js.native

@@ -6,21 +6,16 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uniqueMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/unique", "unique")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/unique", JSImport.Namespace)
   @js.native
-  def unique[T /* <: Tensor[Rank] */](x: T): Values[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/unique", "unique")
-  @js.native
-  def unique[T /* <: Tensor[Rank] */](x: T, axis: Double): Values[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/unique", "unique")
-  @js.native
-  def unique[T /* <: Tensor[Rank] */](x: TensorLike): Values[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/unique", "unique")
-  @js.native
-  def unique[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): Values[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def unique[T /* <: Tensor[Rank] */](x: T | TensorLike): Values[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(x.asInstanceOf[js.Any]).asInstanceOf[Values[T]]
+  @scala.inline
+  def unique[T /* <: Tensor[Rank] */](x: T | TensorLike, axis: Double): Values[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Values[T]]
 }

@@ -2,34 +2,32 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message for the expected URL mappings.
   */
-@js.native
 trait SchemaUrlMapTest extends StObject {
   
   /**
     * Description of this test case.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Host portion of the URL.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Path portion of the URL.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Expected BackendService resource the given URL should be mapped to.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object SchemaUrlMapTest {
   

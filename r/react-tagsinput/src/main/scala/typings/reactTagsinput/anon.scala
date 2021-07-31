@@ -2,15 +2,13 @@ package typings.reactTagsinput
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Value extends StObject {
     
-    val value: String = js.native
+    val value: String
   }
   object Value {
     

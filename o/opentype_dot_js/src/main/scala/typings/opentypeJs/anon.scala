@@ -8,22 +8,22 @@ import typings.opentypeJs.opentypeJsStrings.Q
 import typings.opentypeJs.opentypeJsStrings.Z
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait `0` extends PathCommand {
+  trait `0`
+    extends StObject
+       with PathCommand {
     
-    var `type`: Z = js.native
+    var `type`: Z
   }
   object `0` {
     
     @scala.inline
-    def apply(`type`: Z): `0` = {
+    def apply(): `0` = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Z")
       __obj.asInstanceOf[`0`]
     }
     
@@ -35,10 +35,9 @@ object anon {
     }
   }
   
-  @js.native
   trait LowMemory extends StObject {
     
-    var lowMemory: Boolean = js.native
+    var lowMemory: Boolean
   }
   object LowMemory {
     
@@ -56,21 +55,22 @@ object anon {
     }
   }
   
-  @js.native
-  trait Type extends PathCommand {
+  trait Type
+    extends StObject
+       with PathCommand {
     
-    var `type`: M = js.native
+    var `type`: M
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Type {
     
     @scala.inline
-    def apply(`type`: M, x: Double, y: Double): Type = {
+    def apply(x: Double, y: Double): Type = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("M")
       __obj.asInstanceOf[Type]
     }
     
@@ -88,21 +88,22 @@ object anon {
     }
   }
   
-  @js.native
-  trait X extends PathCommand {
+  trait X
+    extends StObject
+       with PathCommand {
     
-    var `type`: L = js.native
+    var `type`: L
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     
     @scala.inline
-    def apply(`type`: L, x: Double, y: Double): X = {
+    def apply(x: Double, y: Double): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("L")
       __obj.asInstanceOf[X]
     }
     
@@ -120,29 +121,30 @@ object anon {
     }
   }
   
-  @js.native
-  trait X1 extends PathCommand {
+  trait X1
+    extends StObject
+       with PathCommand {
     
-    var `type`: C = js.native
+    var `type`: C
     
-    var x: Double = js.native
+    var x: Double
     
-    var x1: Double = js.native
+    var x1: Double
     
-    var x2: Double = js.native
+    var x2: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var y1: Double = js.native
+    var y1: Double
     
-    var y2: Double = js.native
+    var y2: Double
   }
   object X1 {
     
     @scala.inline
-    def apply(`type`: C, x: Double, x1: Double, x2: Double, y: Double, y1: Double, y2: Double): X1 = {
+    def apply(x: Double, x1: Double, x2: Double, y: Double, y1: Double, y2: Double): X1 = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("C")
       __obj.asInstanceOf[X1]
     }
     
@@ -172,25 +174,26 @@ object anon {
     }
   }
   
-  @js.native
-  trait Y extends PathCommand {
+  trait Y
+    extends StObject
+       with PathCommand {
     
-    var `type`: Q = js.native
+    var `type`: Q
     
-    var x: Double = js.native
+    var x: Double
     
-    var x1: Double = js.native
+    var x1: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var y1: Double = js.native
+    var y1: Double
   }
   object Y {
     
     @scala.inline
-    def apply(`type`: Q, x: Double, x1: Double, y: Double, y1: Double): Y = {
+    def apply(x: Double, x1: Double, y: Double, y1: Double): Y = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Q")
       __obj.asInstanceOf[Y]
     }
     

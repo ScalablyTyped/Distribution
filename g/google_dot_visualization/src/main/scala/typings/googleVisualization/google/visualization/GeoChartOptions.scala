@@ -3,43 +3,41 @@ package typings.googleVisualization.google.visualization
 import typings.googleVisualization.googleVisualizationStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoChartOptions extends StObject {
   
-  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.native
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   
-  var colorAxis: js.UndefOr[ChartColorAxis] = js.native
+  var colorAxis: js.UndefOr[ChartColorAxis] = js.undefined
   
-  var datalessRegionColor: js.UndefOr[String] = js.native
+  var datalessRegionColor: js.UndefOr[String] = js.undefined
   
-  var defaultColor: js.UndefOr[String] = js.native
+  var defaultColor: js.UndefOr[String] = js.undefined
   
-  var displayMode: js.UndefOr[String] = js.native
+  var displayMode: js.UndefOr[String] = js.undefined
   
-  var enableRegionInteractivity: js.UndefOr[Boolean] = js.native
+  var enableRegionInteractivity: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var keepAspectRatio: js.UndefOr[Boolean] = js.native
+  var keepAspectRatio: js.UndefOr[Boolean] = js.undefined
   
-  var legend: js.UndefOr[ChartLegend | none] = js.native
+  var legend: js.UndefOr[ChartLegend | none] = js.undefined
   
-  var magnifyingGlass: js.UndefOr[GeoChartMagnifyingGlass] = js.native
+  var magnifyingGlass: js.UndefOr[GeoChartMagnifyingGlass] = js.undefined
   
-  var markerOpacity: js.UndefOr[Double] = js.native
+  var markerOpacity: js.UndefOr[Double] = js.undefined
   
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
-  var resolution: js.UndefOr[String] = js.native
+  var resolution: js.UndefOr[String] = js.undefined
   
-  var sizeAxis: js.UndefOr[ChartSizeAxis] = js.native
+  var sizeAxis: js.UndefOr[ChartSizeAxis] = js.undefined
   
-  var tooltip: js.UndefOr[ChartTooltip] = js.native
+  var tooltip: js.UndefOr[ChartTooltip] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object GeoChartOptions {
   

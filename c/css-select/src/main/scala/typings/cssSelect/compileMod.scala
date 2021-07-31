@@ -5,43 +5,38 @@ import typings.cssSelect.typesMod.InternalOptions
 import typings.cssSelect.typesMod.InternalSelector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compileMod {
   
-  @JSImport("css-select/lib/compile", "compile")
+  @JSImport("css-select/lib/compile", JSImport.Namespace)
   @js.native
-  def compile[Node, ElementNode /* <: Node */](selector: String, options: InternalOptions[Node, ElementNode]): CompiledQuery[ElementNode] = js.native
-  @JSImport("css-select/lib/compile", "compile")
-  @js.native
-  def compile[Node, ElementNode /* <: Node */](selector: String, options: InternalOptions[Node, ElementNode], context: js.Array[ElementNode]): CompiledQuery[ElementNode] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("css-select/lib/compile", "compileToken")
-  @js.native
-  def compileToken[Node, ElementNode /* <: Node */](token: js.Array[js.Array[InternalSelector]], options: InternalOptions[Node, ElementNode]): CompiledQuery[ElementNode] = js.native
-  @JSImport("css-select/lib/compile", "compileToken")
-  @js.native
+  @scala.inline
+  def compile[Node, ElementNode /* <: Node */](selector: String, options: InternalOptions[Node, ElementNode]): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
+  @scala.inline
+  def compile[Node, ElementNode /* <: Node */](selector: String, options: InternalOptions[Node, ElementNode], context: js.Array[ElementNode]): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
+  
+  @scala.inline
+  def compileToken[Node, ElementNode /* <: Node */](token: js.Array[js.Array[InternalSelector]], options: InternalOptions[Node, ElementNode]): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileToken")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
+  @scala.inline
   def compileToken[Node, ElementNode /* <: Node */](
     token: js.Array[js.Array[InternalSelector]],
     options: InternalOptions[Node, ElementNode],
     context: ElementNode
-  ): CompiledQuery[ElementNode] = js.native
-  @JSImport("css-select/lib/compile", "compileToken")
-  @js.native
+  ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileToken")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
+  @scala.inline
   def compileToken[Node, ElementNode /* <: Node */](
     token: js.Array[js.Array[InternalSelector]],
     options: InternalOptions[Node, ElementNode],
     context: js.Array[ElementNode]
-  ): CompiledQuery[ElementNode] = js.native
+  ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileToken")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
   
-  @JSImport("css-select/lib/compile", "compileUnsafe")
-  @js.native
-  def compileUnsafe[Node, ElementNode /* <: Node */](selector: String, options: InternalOptions[Node, ElementNode]): CompiledQuery[ElementNode] = js.native
-  @JSImport("css-select/lib/compile", "compileUnsafe")
-  @js.native
-  def compileUnsafe[Node, ElementNode /* <: Node */](selector: String, options: InternalOptions[Node, ElementNode], context: ElementNode): CompiledQuery[ElementNode] = js.native
-  @JSImport("css-select/lib/compile", "compileUnsafe")
-  @js.native
-  def compileUnsafe[Node, ElementNode /* <: Node */](selector: String, options: InternalOptions[Node, ElementNode], context: js.Array[ElementNode]): CompiledQuery[ElementNode] = js.native
+  @scala.inline
+  def compileUnsafe[Node, ElementNode /* <: Node */](selector: String, options: InternalOptions[Node, ElementNode]): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileUnsafe")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
+  @scala.inline
+  def compileUnsafe[Node, ElementNode /* <: Node */](selector: String, options: InternalOptions[Node, ElementNode], context: ElementNode): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileUnsafe")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
+  @scala.inline
+  def compileUnsafe[Node, ElementNode /* <: Node */](selector: String, options: InternalOptions[Node, ElementNode], context: js.Array[ElementNode]): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileUnsafe")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
 }

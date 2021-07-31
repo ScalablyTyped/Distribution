@@ -4,14 +4,14 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
-trait GraphicObjectResolver extends XGraphicObjectResolver {
+trait GraphicObjectResolver
+  extends StObject
+     with XGraphicObjectResolver {
   
-  def createWithStorage(Storage: XStorage): Unit = js.native
+  def createWithStorage(Storage: XStorage): Unit
 }
 object GraphicObjectResolver {
   

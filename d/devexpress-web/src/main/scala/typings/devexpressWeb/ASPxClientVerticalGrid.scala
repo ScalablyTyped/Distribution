@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxVerticalGrid object.
   */
 @js.native
-trait ASPxClientVerticalGrid extends ASPxClientGridBase {
+trait ASPxClientVerticalGrid
+  extends StObject
+     with ASPxClientGridBase {
   
   /**
     * Adds a new record.
@@ -240,7 +241,7 @@ trait ASPxClientVerticalGrid extends ASPxClientGridBase {
   /**
     * Returns key values of selected records displayed within the current page.
     */
-  def GetSelectedKeysOnPage(): js.Array[_] = js.native
+  def GetSelectedKeysOnPage(): js.Array[js.Any] = js.native
   
   /**
     * Returns the number of selected records.
@@ -350,11 +351,11 @@ trait ASPxClientVerticalGrid extends ASPxClientGridBase {
     * @param selected true to select the specified records; false to deselect the records.
     */
   def SelectRecords(): Unit = js.native
-  def SelectRecords(visibleIndices: js.UndefOr[scala.Nothing], selected: Boolean): Unit = js.native
   def SelectRecords(visibleIndices: js.Array[Double]): Unit = js.native
   def SelectRecords(visibleIndices: js.Array[Double], selected: Boolean): Unit = js.native
   def SelectRecords(visibleIndices: Double): Unit = js.native
   def SelectRecords(visibleIndices: Double, selected: Boolean): Unit = js.native
+  def SelectRecords(visibleIndices: Unit, selected: Boolean): Unit = js.native
   
   def SelectRecordsByKey(keys: js.Any): Unit = js.native
   def SelectRecordsByKey(keys: js.Any, selected: Boolean): Unit = js.native
@@ -363,8 +364,8 @@ trait ASPxClientVerticalGrid extends ASPxClientGridBase {
     * @param keys An array of objects that uniquely identify the records.
     * @param selected true to select the specified records; false to deselect the records.
     */
-  def SelectRecordsByKey(keys: js.Array[_]): Unit = js.native
-  def SelectRecordsByKey(keys: js.Array[_], selected: Boolean): Unit = js.native
+  def SelectRecordsByKey(keys: js.Array[js.Any]): Unit = js.native
+  def SelectRecordsByKey(keys: js.Array[js.Any], selected: Boolean): Unit = js.native
   
   /**
     * Fires after the selection has been changed.
@@ -415,31 +416,21 @@ trait ASPxClientVerticalGrid extends ASPxClientGridBase {
   def ShowFilterControl(): Unit = js.native
   
   def SortBy(row: String): Unit = js.native
-  def SortBy(
-    row: String,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
-  def SortBy(row: String, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
-  def SortBy(row: String, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean, sortIndex: Double): Unit = js.native
   def SortBy(row: String, sortOrder: String): Unit = js.native
-  def SortBy(row: String, sortOrder: String, reset: js.UndefOr[scala.Nothing], sortIndex: Double): Unit = js.native
   def SortBy(row: String, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(row: String, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(row: String, sortOrder: String, reset: Unit, sortIndex: Double): Unit = js.native
+  def SortBy(row: String, sortOrder: Unit, reset: Boolean): Unit = js.native
+  def SortBy(row: String, sortOrder: Unit, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(row: String, sortOrder: Unit, reset: Unit, sortIndex: Double): Unit = js.native
   def SortBy(row: Double): Unit = js.native
-  def SortBy(
-    row: Double,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
-  def SortBy(row: Double, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
-  def SortBy(row: Double, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean, sortIndex: Double): Unit = js.native
   def SortBy(row: Double, sortOrder: String): Unit = js.native
-  def SortBy(row: Double, sortOrder: String, reset: js.UndefOr[scala.Nothing], sortIndex: Double): Unit = js.native
   def SortBy(row: Double, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(row: Double, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(row: Double, sortOrder: String, reset: Unit, sortIndex: Double): Unit = js.native
+  def SortBy(row: Double, sortOrder: Unit, reset: Boolean): Unit = js.native
+  def SortBy(row: Double, sortOrder: Unit, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(row: Double, sortOrder: Unit, reset: Unit, sortIndex: Double): Unit = js.native
   /**
     * Sorts data by the specified data row's values, and places the row to the specified position among the sorted rows.
     * @param sortOrder A string value that specifies the row's sort order ('ASC', 'DSC' or 'NONE').
@@ -447,28 +438,13 @@ trait ASPxClientVerticalGrid extends ASPxClientGridBase {
     * @param sortIndex An integer value that specifies the zero-based row's index among the sorted rows. &#0045;1 if data is not sorted by this row.
     */
   def SortBy(row: ASPxClientVerticalGridRow): Unit = js.native
-  def SortBy(
-    row: ASPxClientVerticalGridRow,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
-  def SortBy(row: ASPxClientVerticalGridRow, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
-  def SortBy(
-    row: ASPxClientVerticalGridRow,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: Boolean,
-    sortIndex: Double
-  ): Unit = js.native
   def SortBy(row: ASPxClientVerticalGridRow, sortOrder: String): Unit = js.native
-  def SortBy(
-    row: ASPxClientVerticalGridRow,
-    sortOrder: String,
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
   def SortBy(row: ASPxClientVerticalGridRow, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(row: ASPxClientVerticalGridRow, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(row: ASPxClientVerticalGridRow, sortOrder: String, reset: Unit, sortIndex: Double): Unit = js.native
+  def SortBy(row: ASPxClientVerticalGridRow, sortOrder: Unit, reset: Boolean): Unit = js.native
+  def SortBy(row: ASPxClientVerticalGridRow, sortOrder: Unit, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(row: ASPxClientVerticalGridRow, sortOrder: Unit, reset: Unit, sortIndex: Double): Unit = js.native
   
   /**
     * Deselects all selected records displayed on the current page.
@@ -499,7 +475,7 @@ trait ASPxClientVerticalGrid extends ASPxClientGridBase {
     * Deselects the specified records displayed within the grid.
     * @param keys An array of objects that uniquely identify the records.
     */
-  def UnselectRecordsByKey(keys: js.Array[_]): Unit = js.native
+  def UnselectRecordsByKey(keys: js.Array[js.Any]): Unit = js.native
   
   /**
     * Saves all the changes made and switches the grid to browse mode.

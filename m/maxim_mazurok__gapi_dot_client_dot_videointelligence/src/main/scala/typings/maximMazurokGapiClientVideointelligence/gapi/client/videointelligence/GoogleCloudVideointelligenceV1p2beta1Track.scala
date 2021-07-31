@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p2beta1Track extends StObject {
   
   /** Optional. Attributes in the track level. */
-  var attributes: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p2beta1DetectedAttribute]] = js.native
+  var attributes: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p2beta1DetectedAttribute]] = js.undefined
   
   /** Optional. The confidence score of the tracked object. */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /** Video segment of a track. */
-  var segment: js.UndefOr[GoogleCloudVideointelligenceV1p2beta1VideoSegment] = js.native
+  var segment: js.UndefOr[GoogleCloudVideointelligenceV1p2beta1VideoSegment] = js.undefined
   
   /** The object with timestamp and attributes per frame in the track. */
-  var timestampedObjects: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p2beta1TimestampedObject]] = js.native
+  var timestampedObjects: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p2beta1TimestampedObject]] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p2beta1Track {
   

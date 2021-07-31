@@ -2,33 +2,31 @@ package typings.cordovaPluginGlobalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Date returned by stringToDate */
-@js.native
 trait GlobalizationDate extends StObject {
   
   /* The day from (1-31). */
-  var day: Double = js.native
+  var day: Double
   
   /* The hour from (0-23). */
-  var hour: Double = js.native
+  var hour: Double
   
   /* The milliseconds (from 0-999), not available on all platforms. */
-  var millisecond: Double = js.native
+  var millisecond: Double
   
   /* The minute from (0-59). */
-  var minute: Double = js.native
+  var minute: Double
   
   /* The month from (0-11). */
-  var month: Double = js.native
+  var month: Double
   
   /* The second from (0-59). */
-  var second: Double = js.native
+  var second: Double
   
   /* The four digit year. */
-  var year: Double = js.native
+  var year: Double
 }
 object GlobalizationDate {
   

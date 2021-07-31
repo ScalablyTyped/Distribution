@@ -2,7 +2,6 @@ package typings.asciichart
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,9 +26,8 @@ object mod {
   @scala.inline
   def blue_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blue")(x.asInstanceOf[js.Any])
   
-  @JSImport("asciichart", "colored")
-  @js.native
-  def colored(char: String, color: Color): String = js.native
+  @scala.inline
+  def colored(char: String, color: Color): String = (^.asInstanceOf[js.Dynamic].applyDynamic("colored")(char.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("asciichart", "cyan")
   @js.native
@@ -100,12 +98,10 @@ object mod {
   @scala.inline
   def magenta_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("magenta")(x.asInstanceOf[js.Any])
   
-  @JSImport("asciichart", "plot")
-  @js.native
-  def plot(series: js.Array[Double]): String = js.native
-  @JSImport("asciichart", "plot")
-  @js.native
-  def plot(series: js.Array[Double], cfg: PlotConfig): String = js.native
+  @scala.inline
+  def plot(series: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("plot")(series.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def plot(series: js.Array[Double], cfg: PlotConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("plot")(series.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("asciichart", "red")
   @js.native
@@ -133,26 +129,25 @@ object mod {
   
   type Color = js.UndefOr[String]
   
-  @js.native
   trait PlotConfig extends StObject {
     
-    var colors: js.UndefOr[js.Array[Color]] = js.native
+    var colors: js.UndefOr[js.Array[Color]] = js.undefined
     
-    var format: js.UndefOr[js.Function2[/* x */ Double, /* i */ Double, String]] = js.native
+    var format: js.UndefOr[js.Function2[/* x */ Double, /* i */ Double, String]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[String] = js.native
+    var padding: js.UndefOr[String] = js.undefined
     
     var symbols: js.UndefOr[
         js.Tuple10[String, String, String, String, String, String, String, String, String, String]
-      ] = js.native
+      ] = js.undefined
   }
   object PlotConfig {
     

@@ -3,71 +3,149 @@ package typings.logstub
 import typings.logstub.anon.Pickthisdebuginfowarnerro
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("logstub", JSImport.Namespace)
   @js.native
-  class ^ protected () extends LogStub {
+  class ^ protected ()
+    extends StObject
+       with LogStub {
     def this(args: js.Any*) = this()
+    
+    /* CompleteClass */
+    override def all(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def assert(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def child(args: js.Any*): Pickthisdebuginfowarnerro = js.native
+    
+    /* CompleteClass */
+    override def clear(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def count(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def countReset(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def critical(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def debug(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def dir(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def dirxml(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def error(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def fatal(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def group(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def groupCollapsed(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def groupEnd(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def info(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def level(args: js.Any*): Double = js.native
+    
+    /* CompleteClass */
+    override def log(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def silly(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def table(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def time(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def timeEnd(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def timeLog(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def trace(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def verbose(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def warn(args: js.Any*): Unit = js.native
   }
   
-  @js.native
   trait LogStub extends StObject {
     
-    def all(args: js.Any*): Unit = js.native
+    def all(args: js.Any*): Unit
     
-    def assert(args: js.Any*): Unit = js.native
+    def assert(args: js.Any*): Unit
     
-    def child(args: js.Any*): Pickthisdebuginfowarnerro = js.native
+    def child(args: js.Any*): Pickthisdebuginfowarnerro
     
-    def clear(args: js.Any*): Unit = js.native
+    def clear(args: js.Any*): Unit
     
-    def count(args: js.Any*): Unit = js.native
+    def count(args: js.Any*): Unit
     
-    def countReset(args: js.Any*): Unit = js.native
+    def countReset(args: js.Any*): Unit
     
-    def critical(args: js.Any*): Unit = js.native
+    def critical(args: js.Any*): Unit
     
-    def debug(args: js.Any*): Unit = js.native
+    def debug(args: js.Any*): Unit
     
-    def dir(args: js.Any*): Unit = js.native
+    def dir(args: js.Any*): Unit
     
-    def dirxml(args: js.Any*): Unit = js.native
+    def dirxml(args: js.Any*): Unit
     
-    def error(args: js.Any*): Unit = js.native
+    def error(args: js.Any*): Unit
     
-    def fatal(args: js.Any*): Unit = js.native
+    def fatal(args: js.Any*): Unit
     
-    def group(args: js.Any*): Unit = js.native
+    def group(args: js.Any*): Unit
     
-    def groupCollapsed(args: js.Any*): Unit = js.native
+    def groupCollapsed(args: js.Any*): Unit
     
-    def groupEnd(args: js.Any*): Unit = js.native
+    def groupEnd(args: js.Any*): Unit
     
-    def info(args: js.Any*): Unit = js.native
+    def info(args: js.Any*): Unit
     
-    def level(args: js.Any*): Double = js.native
+    def level(args: js.Any*): Double
     
-    def log(args: js.Any*): Unit = js.native
+    def log(args: js.Any*): Unit
     
-    def silly(args: js.Any*): Unit = js.native
+    def silly(args: js.Any*): Unit
     
-    def table(args: js.Any*): Unit = js.native
+    def table(args: js.Any*): Unit
     
-    def time(args: js.Any*): Unit = js.native
+    def time(args: js.Any*): Unit
     
-    def timeEnd(args: js.Any*): Unit = js.native
+    def timeEnd(args: js.Any*): Unit
     
-    def timeLog(args: js.Any*): Unit = js.native
+    def timeLog(args: js.Any*): Unit
     
-    def trace(args: js.Any*): Unit = js.native
+    def trace(args: js.Any*): Unit
     
-    def verbose(args: js.Any*): Unit = js.native
+    def verbose(args: js.Any*): Unit
     
-    def warn(args: js.Any*): Unit = js.native
+    def warn(args: js.Any*): Unit
   }
   object LogStub {
     

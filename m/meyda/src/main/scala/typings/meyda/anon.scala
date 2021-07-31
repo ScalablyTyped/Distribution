@@ -3,17 +3,15 @@ package typings.meyda
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Imag extends StObject {
     
-    var imag: js.Array[Double] = js.native
+    var imag: js.Array[Double]
     
-    var real: js.Array[Double] = js.native
+    var real: js.Array[Double]
   }
   object Imag {
     
@@ -41,46 +39,45 @@ object anon {
   }
   
   /* Inlined std.Partial<meyda.meyda.MeydaFeaturesObject> */
-  @js.native
   trait PartialMeydaFeaturesObjec extends StObject {
     
-    var amplitudeSpectrum: js.UndefOr[Float32Array] = js.native
+    var amplitudeSpectrum: js.UndefOr[Float32Array] = js.undefined
     
-    var buffer: js.UndefOr[js.Array[Double]] = js.native
+    var buffer: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var chroma: js.UndefOr[js.Array[Double]] = js.native
+    var chroma: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var complexSpectrum: js.UndefOr[Imag] = js.native
+    var complexSpectrum: js.UndefOr[Imag] = js.undefined
     
-    var energy: js.UndefOr[Double] = js.native
+    var energy: js.UndefOr[Double] = js.undefined
     
-    var loudness: js.UndefOr[Specific] = js.native
+    var loudness: js.UndefOr[Specific] = js.undefined
     
-    var mfcc: js.UndefOr[js.Array[Double]] = js.native
+    var mfcc: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var perceptualSharpness: js.UndefOr[Double] = js.native
+    var perceptualSharpness: js.UndefOr[Double] = js.undefined
     
-    var perceptualSpread: js.UndefOr[Double] = js.native
+    var perceptualSpread: js.UndefOr[Double] = js.undefined
     
-    var powerSpectrum: js.UndefOr[Float32Array] = js.native
+    var powerSpectrum: js.UndefOr[Float32Array] = js.undefined
     
-    var rms: js.UndefOr[Double] = js.native
+    var rms: js.UndefOr[Double] = js.undefined
     
-    var spectralCentroid: js.UndefOr[Double] = js.native
+    var spectralCentroid: js.UndefOr[Double] = js.undefined
     
-    var spectralFlatness: js.UndefOr[Double] = js.native
+    var spectralFlatness: js.UndefOr[Double] = js.undefined
     
-    var spectralKurtosis: js.UndefOr[Double] = js.native
+    var spectralKurtosis: js.UndefOr[Double] = js.undefined
     
-    var spectralRolloff: js.UndefOr[Double] = js.native
+    var spectralRolloff: js.UndefOr[Double] = js.undefined
     
-    var spectralSkewness: js.UndefOr[Double] = js.native
+    var spectralSkewness: js.UndefOr[Double] = js.undefined
     
-    var spectralSlope: js.UndefOr[Double] = js.native
+    var spectralSlope: js.UndefOr[Double] = js.undefined
     
-    var spectralSpread: js.UndefOr[Double] = js.native
+    var spectralSpread: js.UndefOr[Double] = js.undefined
     
-    var zcr: js.UndefOr[Double] = js.native
+    var zcr: js.UndefOr[Double] = js.undefined
   }
   object PartialMeydaFeaturesObjec {
     
@@ -218,12 +215,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Specific extends StObject {
     
-    var specific: Float32Array = js.native
+    var specific: Float32Array
     
-    var total: Double = js.native
+    var total: Double
   }
   object Specific {
     

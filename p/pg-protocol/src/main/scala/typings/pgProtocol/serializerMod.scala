@@ -6,104 +6,86 @@ import typings.pgProtocol.pgProtocolStrings.S
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serializerMod {
   
   object serialize {
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.bind")
+    @JSImport("pg-protocol/dist/serializer", "serialize")
     @js.native
-    def bind(): Buffer = js.native
-    @JSImport("pg-protocol/dist/serializer", "serialize.bind")
-    @js.native
-    def bind(config: BindOpts): Buffer = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.cancel")
-    @js.native
-    def cancel(processID: Double, secretKey: Double): Buffer = js.native
+    @scala.inline
+    def bind(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")().asInstanceOf[Buffer]
+    @scala.inline
+    def bind(config: BindOpts): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(config.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.close")
-    @js.native
-    def close(msg: PortalOpts): Buffer = js.native
+    @scala.inline
+    def cancel(processID: Double, secretKey: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(processID.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.copyData")
-    @js.native
-    def copyData(chunk: Buffer): Buffer = js.native
+    @scala.inline
+    def close(msg: PortalOpts): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.copyDone")
-    @js.native
-    def copyDone(): Buffer = js.native
+    @scala.inline
+    def copyData(chunk: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("copyData")(chunk.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.copyFail")
-    @js.native
-    def copyFail(message: String): Buffer = js.native
+    @scala.inline
+    def copyDone(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("copyDone")().asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.describe")
-    @js.native
-    def describe(msg: PortalOpts): Buffer = js.native
+    @scala.inline
+    def copyFail(message: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("copyFail")(message.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.end")
-    @js.native
-    def end(): Buffer = js.native
+    @scala.inline
+    def describe(msg: PortalOpts): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("describe")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.execute")
-    @js.native
-    def execute(): Buffer = js.native
-    @JSImport("pg-protocol/dist/serializer", "serialize.execute")
-    @js.native
-    def execute(config: ExecOpts): Buffer = js.native
+    @scala.inline
+    def end(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("end")().asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.flush")
-    @js.native
-    def flush(): Buffer = js.native
+    @scala.inline
+    def execute(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")().asInstanceOf[Buffer]
+    @scala.inline
+    def execute(config: ExecOpts): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(config.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.parse")
-    @js.native
-    def parse(query: ParseOpts): Buffer = js.native
+    @scala.inline
+    def flush(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.password")
-    @js.native
-    def password(password: String): Buffer = js.native
+    @scala.inline
+    def parse(query: ParseOpts): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.query")
-    @js.native
-    def query(text: String): Buffer = js.native
+    @scala.inline
+    def password(password: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(password.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.requestSsl")
-    @js.native
-    def requestSsl(): Buffer = js.native
+    @scala.inline
+    def query(text: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(text.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.sendSASLInitialResponseMessage")
-    @js.native
-    def sendSASLInitialResponseMessage(mechanism: String, initialResponse: String): Buffer = js.native
+    @scala.inline
+    def requestSsl(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("requestSsl")().asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.sendSCRAMClientFinalMessage")
-    @js.native
-    def sendSCRAMClientFinalMessage(additionalData: String): Buffer = js.native
+    @scala.inline
+    def sendSASLInitialResponseMessage(mechanism: String, initialResponse: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSASLInitialResponseMessage")(mechanism.asInstanceOf[js.Any], initialResponse.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.startup")
-    @js.native
-    def startup(opts: Record[String, String]): Buffer = js.native
+    @scala.inline
+    def sendSCRAMClientFinalMessage(additionalData: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sendSCRAMClientFinalMessage")(additionalData.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("pg-protocol/dist/serializer", "serialize.sync")
-    @js.native
-    def sync(): Buffer = js.native
+    @scala.inline
+    def startup(opts: Record[String, String]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("startup")(opts.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    
+    @scala.inline
+    def sync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[Buffer]
   }
   
-  @js.native
   trait BindOpts extends StObject {
     
-    var binary: js.UndefOr[Boolean] = js.native
+    var binary: js.UndefOr[Boolean] = js.undefined
     
-    var portal: js.UndefOr[String] = js.native
+    var portal: js.UndefOr[String] = js.undefined
     
-    var statement: js.UndefOr[String] = js.native
+    var statement: js.UndefOr[String] = js.undefined
     
-    var valueMapper: js.UndefOr[ValueMapper] = js.native
+    var valueMapper: js.UndefOr[ValueMapper] = js.undefined
     
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object BindOpts {
     
@@ -141,7 +123,7 @@ object serializerMod {
       def setValueMapperUndefined: Self = StObject.set(x, "valueMapper", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -151,12 +133,11 @@ object serializerMod {
     }
   }
   
-  @js.native
   trait ExecOpts extends StObject {
     
-    var portal: js.UndefOr[String] = js.native
+    var portal: js.UndefOr[String] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
   }
   object ExecOpts {
     
@@ -183,14 +164,13 @@ object serializerMod {
     }
   }
   
-  @js.native
   trait ParseOpts extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var types: js.UndefOr[js.Array[Double]] = js.native
+    var types: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object ParseOpts {
     
@@ -223,12 +203,11 @@ object serializerMod {
     }
   }
   
-  @js.native
   trait PortalOpts extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var `type`: S | P = js.native
+    var `type`: S | P
   }
   object PortalOpts {
     

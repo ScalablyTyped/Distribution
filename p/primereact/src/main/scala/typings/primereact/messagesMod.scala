@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagesMod {
@@ -33,22 +32,21 @@ object messagesMod {
     def show(message: Message): Unit = js.native
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var detail: js.UndefOr[ReactNode] = js.native
+    var detail: js.UndefOr[ReactNode] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var life: js.UndefOr[Double] = js.native
+    var life: js.UndefOr[Double] = js.undefined
     
-    var severity: js.UndefOr[success | info | warn | error] = js.native
+    var severity: js.UndefOr[success | info | warn | error] = js.undefined
     
-    var sticky: js.UndefOr[Boolean] = js.native
+    var sticky: js.UndefOr[Boolean] = js.undefined
     
-    var summary: js.UndefOr[ReactNode] = js.native
+    var summary: js.UndefOr[ReactNode] = js.undefined
   }
   object Message {
     
@@ -105,18 +103,17 @@ object messagesMod {
     }
   }
   
-  @js.native
   trait MessagesProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* message */ Message, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* message */ Message, Unit]] = js.undefined
     
-    var onRemove: js.UndefOr[js.Function1[/* message */ Message, Unit]] = js.native
+    var onRemove: js.UndefOr[js.Function1[/* message */ Message, Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object MessagesProps {
     

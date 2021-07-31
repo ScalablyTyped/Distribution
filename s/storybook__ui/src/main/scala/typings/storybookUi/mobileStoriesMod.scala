@@ -8,10 +8,13 @@ import typings.storybookUi.mobileMod.Mobile
 import typings.storybookUi.mobileMod.MobileProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mobileStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/layout/mobile.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -50,19 +53,15 @@ object mobileStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "InitialAddons")
-  @js.native
-  def InitialAddons(hasProps: PropsMobileProps): Element = js.native
+  @scala.inline
+  def InitialAddons(hasProps: PropsMobileProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InitialAddons")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "InitialCanvas")
-  @js.native
-  def InitialCanvas(hasProps: PropsMobileProps): Element = js.native
+  @scala.inline
+  def InitialCanvas(hasProps: PropsMobileProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InitialCanvas")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "InitialSidebar")
-  @js.native
-  def InitialSidebar(hasProps: PropsMobileProps): Element = js.native
+  @scala.inline
+  def InitialSidebar(hasProps: PropsMobileProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InitialSidebar")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "Page")
-  @js.native
-  def Page(hasProps: PropsMobileProps): Element = js.native
+  @scala.inline
+  def Page(hasProps: PropsMobileProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Page")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

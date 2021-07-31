@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hsmMod {
@@ -63,6 +62,10 @@ object hsmMod {
   /* static members */
   object Hsm {
     
+    @JSImport("@pulumi/aws/cloudhsmv2/hsm", "Hsm")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Hsm resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -72,50 +75,44 @@ object hsmMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudhsmv2/hsm", "Hsm.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Hsm = js.native
-    @JSImport("@pulumi/aws/cloudhsmv2/hsm", "Hsm.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Hsm = js.native
-    @JSImport("@pulumi/aws/cloudhsmv2/hsm", "Hsm.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HsmState): Hsm = js.native
-    @JSImport("@pulumi/aws/cloudhsmv2/hsm", "Hsm.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HsmState, opts: CustomResourceOptions): Hsm = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Hsm]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hsm]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HsmState): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Hsm]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HsmState, opts: CustomResourceOptions): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hsm]
     
     /**
       * Returns true if the given object is an instance of Hsm.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudhsmv2/hsm", "Hsm.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/hsm.Hsm */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/hsm.Hsm */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudhsmv2/hsm.Hsm */ Boolean]
   }
   
-  @js.native
   trait HsmArgs extends StObject {
     
     /**
       * The IDs of AZ in which HSM module will be located. Do not use together with subnet_id.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of Cloud HSM v2 cluster to which HSM will be added.
       */
-    val clusterId: Input[String] = js.native
+    val clusterId: Input[String]
     
     /**
       * The IP address of HSM module. Must be within the CIDR of selected subnet.
       */
-    val ipAddress: js.UndefOr[Input[String]] = js.native
+    val ipAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of subnet in which HSM module will be located.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
   }
   object HsmArgs {
     
@@ -151,43 +148,42 @@ object hsmMod {
     }
   }
   
-  @js.native
   trait HsmState extends StObject {
     
     /**
       * The IDs of AZ in which HSM module will be located. Do not use together with subnet_id.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of Cloud HSM v2 cluster to which HSM will be added.
       */
-    val clusterId: js.UndefOr[Input[String]] = js.native
+    val clusterId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the ENI interface allocated for HSM module.
       */
-    val hsmEniId: js.UndefOr[Input[String]] = js.native
+    val hsmEniId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the HSM module.
       */
-    val hsmId: js.UndefOr[Input[String]] = js.native
+    val hsmId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The state of the HSM module.
       */
-    val hsmState: js.UndefOr[Input[String]] = js.native
+    val hsmState: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IP address of HSM module. Must be within the CIDR of selected subnet.
       */
-    val ipAddress: js.UndefOr[Input[String]] = js.native
+    val ipAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of subnet in which HSM module will be located.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
   }
   object HsmState {
     

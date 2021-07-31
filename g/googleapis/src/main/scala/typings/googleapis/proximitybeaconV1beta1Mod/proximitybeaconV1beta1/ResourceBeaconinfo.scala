@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/proximitybeacon/v1beta1", "proximitybeacon_v1beta1.Resource$Beaconinfo")
@@ -34,7 +33,7 @@ class ResourceBeaconinfo protected () extends StObject {
     */
   def getforobserved(): GaxiosPromise[SchemaGetInfoForObservedBeaconsResponse] = js.native
   def getforobserved(callback: BodyResponseCallback[SchemaGetInfoForObservedBeaconsResponse]): Unit = js.native
-  def getforobserved(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetInfoForObservedBeaconsResponse] = js.native
+  def getforobserved(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetInfoForObservedBeaconsResponse] = js.native
   def getforobserved(params: ParamsResourceBeaconinfoGetforobserved): GaxiosPromise[SchemaGetInfoForObservedBeaconsResponse] = js.native
   def getforobserved(
     params: ParamsResourceBeaconinfoGetforobserved,

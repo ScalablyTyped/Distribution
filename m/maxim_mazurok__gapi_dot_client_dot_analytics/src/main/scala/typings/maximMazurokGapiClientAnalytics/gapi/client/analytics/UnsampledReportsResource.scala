@@ -7,7 +7,6 @@ import typings.maximMazurokGapiClientAnalytics.anon.KeyMaxresults
 import typings.maximMazurokGapiClientAnalytics.anon.UnsampledReportId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

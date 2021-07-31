@@ -2,29 +2,27 @@ package typings.reactCalendarTimeline.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineKeys extends StObject {
   
-  var groupIdKey: String = js.native
+  var groupIdKey: String
   
-  var groupRightTitleKey: String = js.native
+  var groupRightTitleKey: String
   
-  var groupTitleKey: String = js.native
+  var groupTitleKey: String
   
-  var itemDivTitleKey: String = js.native
+  var itemDivTitleKey: String
   
-  var itemGroupKey: String = js.native
+  var itemGroupKey: String
   
-  var itemIdKey: String = js.native
+  var itemIdKey: String
   
-  var itemTimeEndKey: String = js.native
+  var itemTimeEndKey: String
   
-  var itemTimeStartKey: String = js.native
+  var itemTimeStartKey: String
   
-  var itemTitleKey: String = js.native
+  var itemTitleKey: String
 }
 object TimelineKeys {
   

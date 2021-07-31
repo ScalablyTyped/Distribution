@@ -2,41 +2,39 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsS3ObjectDetails extends StObject {
   
   /**
     * A standard MIME type describing the format of the object data.
     */
-  var ContentType: js.UndefOr[NonEmptyString] = js.native
+  var ContentType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The opaque identifier assigned by a web server to a specific version of a resource found at a URL.
     */
-  var ETag: js.UndefOr[NonEmptyString] = js.native
+  var ETag: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the object was last modified. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var LastModified: js.UndefOr[NonEmptyString] = js.native
+  var LastModified: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the AWS Key Management Service (AWS KMS) symmetric customer managed customer master key (CMK) that was used for the object.
     */
-  var SSEKMSKeyId: js.UndefOr[NonEmptyString] = js.native
+  var SSEKMSKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * If the object is stored using server-side encryption, the value of the server-side encryption algorithm used when storing this object in Amazon S3.
     */
-  var ServerSideEncryption: js.UndefOr[NonEmptyString] = js.native
+  var ServerSideEncryption: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The version of the object.
     */
-  var VersionId: js.UndefOr[NonEmptyString] = js.native
+  var VersionId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsS3ObjectDetails {
   

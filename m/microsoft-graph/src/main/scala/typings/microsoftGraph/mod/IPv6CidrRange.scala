@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPv6CidrRange extends IpRange {
+trait IPv6CidrRange
+  extends StObject
+     with IpRange {
   
   // IPv6 address in CIDR notation
-  var cidrAddress: js.UndefOr[String] = js.native
+  var cidrAddress: js.UndefOr[String] = js.undefined
 }
 object IPv6CidrRange {
   

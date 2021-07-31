@@ -3,22 +3,20 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaResourcePoliciesScopedList extends StObject {
   
   /**
     * A list of resourcePolicies contained in this scope.
     */
-  var resourcePolicies: js.UndefOr[js.Array[SchemaResourcePolicy]] = js.native
+  var resourcePolicies: js.UndefOr[js.Array[SchemaResourcePolicy]] = js.undefined
   
   /**
     * Informational warning which replaces the list of resourcePolicies when
     * the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaResourcePoliciesScopedList {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportBundleRequest extends StObject {
   
   /**
     *  Unique bundle identifier. 
     */
-  var bundleId: BundleId = js.native
+  var bundleId: BundleId
   
   /**
     *  Developer desktop or target application platform. 
     */
-  var platform: js.UndefOr[Platform] = js.native
+  var platform: js.UndefOr[Platform] = js.undefined
   
   /**
     *  Unique project identifier. 
     */
-  var projectId: js.UndefOr[ProjectId] = js.native
+  var projectId: js.UndefOr[ProjectId] = js.undefined
 }
 object ExportBundleRequest {
   

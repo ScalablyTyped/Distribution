@@ -2,26 +2,24 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComputeResourceUpdate extends StObject {
   
   /**
     * The desired number of Amazon EC2 vCPUS in the compute environment.
     */
-  var desiredvCpus: js.UndefOr[Integer] = js.native
+  var desiredvCpus: js.UndefOr[Integer] = js.undefined
   
   /**
     * The maximum number of Amazon EC2 vCPUs that an environment can reach.
     */
-  var maxvCpus: js.UndefOr[Integer] = js.native
+  var maxvCpus: js.UndefOr[Integer] = js.undefined
   
   /**
     * The minimum number of Amazon EC2 vCPUs that an environment should maintain.
     */
-  var minvCpus: js.UndefOr[Integer] = js.native
+  var minvCpus: js.UndefOr[Integer] = js.undefined
 }
 object ComputeResourceUpdate {
   

@@ -10,9 +10,9 @@ A development-only overlay for developing React applications.
 | ------------------ | :-------------: |
 | Full name          | @next/react-dev-overlay |
 | Keywords           | - |
-| # releases         | 224 |
-| # dependents       | 7 |
-| # downloads        | 13923504 |
+| # releases         | 287 |
+| # dependents       | 11 |
+| # downloads        | 26602022 |
 | # stars            | 0 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordTag extends StObject {
   
   /**
     * The key for this tag.
     */
-  var Key: js.UndefOr[RecordTagKey] = js.native
+  var Key: js.UndefOr[RecordTagKey] = js.undefined
   
   /**
     * The value for this tag.
     */
-  var Value: js.UndefOr[RecordTagValue] = js.native
+  var Value: js.UndefOr[RecordTagValue] = js.undefined
 }
 object RecordTag {
   

@@ -5,7 +5,6 @@ import typings.registryAuthToken.registryAuthTokenStrings.Basic
 import typings.registryAuthToken.registryAuthTokenStrings.Bearer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,36 +18,35 @@ object mod {
     * first parameter, this parameter is ignored.
     * @returns The `NpmCredentials` object or undefined if no match found.
     */
+  @scala.inline
+  def apply(registryUrl: String): NpmCredentials = ^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any]).asInstanceOf[NpmCredentials]
+  @scala.inline
+  def apply(registryUrl: String, options: AuthOptions): NpmCredentials = (^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NpmCredentials]
+  @scala.inline
+  def apply(registryUrl: AuthOptions): NpmCredentials = ^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any]).asInstanceOf[NpmCredentials]
+  @scala.inline
+  def apply(registryUrl: AuthOptions, options: AuthOptions): NpmCredentials = (^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NpmCredentials]
+  
   @JSImport("registry-auth-token", JSImport.Namespace)
   @js.native
-  def apply(registryUrl: String): NpmCredentials = js.native
-  @JSImport("registry-auth-token", JSImport.Namespace)
-  @js.native
-  def apply(registryUrl: String, options: AuthOptions): NpmCredentials = js.native
-  @JSImport("registry-auth-token", JSImport.Namespace)
-  @js.native
-  def apply(registryUrl: AuthOptions): NpmCredentials = js.native
-  @JSImport("registry-auth-token", JSImport.Namespace)
-  @js.native
-  def apply(registryUrl: AuthOptions, options: AuthOptions): NpmCredentials = js.native
+  val ^ : js.Any = js.native
   
   /**
     * The options for passing into `registry-auth-token`
     */
-  @js.native
   trait AuthOptions extends StObject {
     
     /**
       * An npmrc configuration object used when searching for tokens. If no object is provided,
       * the `.npmrc` file at the base of the project is used.
       */
-    var npmrc: js.UndefOr[DictregistryUrls] = js.native
+    var npmrc: js.UndefOr[DictregistryUrls] = js.undefined
     
     /**
       * Wether or not url's path parts are recursively trimmed from the registry
       * url when searching for tokens
       */
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
   }
   object AuthOptions {
     
@@ -78,28 +76,27 @@ object mod {
   /**
     * The generated authentication information
     */
-  @js.native
   trait NpmCredentials extends StObject {
     
     /**
       * The password used in `Basic`
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * The token representing the users credentials
       */
-    var token: String = js.native
+    var token: String
     
     /**
       * The type of token
       */
-    var `type`: Basic | Bearer = js.native
+    var `type`: Basic | Bearer
     
     /**
       * The username used in `Basic`
       */
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object NpmCredentials {
     

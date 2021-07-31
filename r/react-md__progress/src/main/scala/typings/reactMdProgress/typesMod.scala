@@ -2,12 +2,10 @@ package typings.reactMdProgress
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ProgressProps extends StObject {
     
     /**
@@ -15,7 +13,7 @@ object typesMod {
       * changes. This should really only be enabled if you aren't getting quick
       * progress updates or the updates happen in chunks.
       */
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The id for the progress component. This is required for accessibility since
@@ -24,19 +22,19 @@ object typesMod {
       * should also be updated to have `aria-busy="true"` and
       * `aria-describedby="THIS_ID"`.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The max value for the progress component. This is used to determine the
       * current progress percentage for screen readers and styles.
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * The min value for the progress component. This is used to determine the
       * current progress percentage for screen readers and styles.
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * The current value for the progress component. If this prop is omitted, the
@@ -46,7 +44,7 @@ object typesMod {
       * This value will be passed down as a percentage based on the `min` and `max`
       * props so that screen readers can be notified of changes.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ProgressProps {
     

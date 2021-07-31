@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsFromResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AWS CloudHSM resource.
     */
-  var ResourceArn: String = js.native
+  var ResourceArn: String
   
   /**
     * The tag key or keys to remove. Specify only the tag key to remove (not the value). To overwrite the value for an existing tag, use AddTagsToResource.
     */
-  var TagKeyList: typings.awsSdk.cloudhsmMod.TagKeyList = js.native
+  var TagKeyList: typings.awsSdk.cloudhsmMod.TagKeyList
 }
 object RemoveTagsFromResourceRequest {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SAMLOptionsInput extends StObject {
   
   /**
     * True if SAML is enabled.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the SAML Identity Provider's information.
     */
-  var Idp: js.UndefOr[SAMLIdp] = js.native
+  var Idp: js.UndefOr[SAMLIdp] = js.undefined
   
   /**
     * The backend role to which the SAML master user is mapped to.
     */
-  var MasterBackendRole: js.UndefOr[BackendRole] = js.native
+  var MasterBackendRole: js.UndefOr[BackendRole] = js.undefined
   
   /**
     * The SAML master username, which is stored in the Amazon Elasticsearch Service domain's internal database.
     */
-  var MasterUserName: js.UndefOr[Username] = js.native
+  var MasterUserName: js.UndefOr[Username] = js.undefined
   
   /**
     * The key to use for matching the SAML Roles attribute.
     */
-  var RolesKey: js.UndefOr[String] = js.native
+  var RolesKey: js.UndefOr[String] = js.undefined
   
   /**
     * The duration, in minutes, after which a user session becomes inactive. Acceptable values are between 1 and 1440, and the default value is 60.
     */
-  var SessionTimeoutMinutes: js.UndefOr[IntegerClass] = js.native
+  var SessionTimeoutMinutes: js.UndefOr[IntegerClass] = js.undefined
   
   /**
     * The key to use for matching the SAML Subject attribute.
     */
-  var SubjectKey: js.UndefOr[String] = js.native
+  var SubjectKey: js.UndefOr[String] = js.undefined
 }
 object SAMLOptionsInput {
   

@@ -2,80 +2,78 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Finding extends StObject {
   
   /**
     * The ID of the account in which the finding was generated.
     */
-  var AccountId: String = js.native
+  var AccountId: String
   
   /**
     * The ARN of the finding.
     */
-  var Arn: String = js.native
+  var Arn: String
   
   /**
     * The confidence score for the finding.
     */
-  var Confidence: js.UndefOr[Double] = js.native
+  var Confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * The time and date when the finding was created.
     */
-  var CreatedAt: String = js.native
+  var CreatedAt: String
   
   /**
     * The description of the finding.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the finding.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The partition associated with the finding.
     */
-  var Partition: js.UndefOr[String] = js.native
+  var Partition: js.UndefOr[String] = js.undefined
   
   /**
     * The Region where the finding was generated.
     */
-  var Region: String = js.native
+  var Region: String
   
-  var Resource: typings.awsSdk.guarddutyMod.Resource = js.native
+  var Resource: typings.awsSdk.guarddutyMod.Resource
   
   /**
     * The version of the schema used for the finding.
     */
-  var SchemaVersion: String = js.native
+  var SchemaVersion: String
   
-  var Service: js.UndefOr[typings.awsSdk.guarddutyMod.Service] = js.native
+  var Service: js.UndefOr[typings.awsSdk.guarddutyMod.Service] = js.undefined
   
   /**
     * The severity of the finding.
     */
-  var Severity: Double = js.native
+  var Severity: Double
   
   /**
     * The title of the finding.
     */
-  var Title: js.UndefOr[String] = js.native
+  var Title: js.UndefOr[String] = js.undefined
   
   /**
     * The type of finding.
     */
-  var Type: FindingType = js.native
+  var Type: FindingType
   
   /**
     * The time and date when the finding was last updated.
     */
-  var UpdatedAt: String = js.native
+  var UpdatedAt: String
 }
 object Finding {
   

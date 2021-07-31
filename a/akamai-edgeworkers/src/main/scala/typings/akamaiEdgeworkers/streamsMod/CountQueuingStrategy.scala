@@ -3,15 +3,13 @@ package typings.akamaiEdgeworkers.streamsMod
 import typings.akamaiEdgeworkers.akamaiEdgeworkersNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CountQueuingStrategy extends StObject {
   
-  var highWaterMark: Double = js.native
+  var highWaterMark: Double
   
-  def size(chunk: js.Any): `1` = js.native
+  def size(chunk: js.Any): `1`
 }
 object CountQueuingStrategy {
   

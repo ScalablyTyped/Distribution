@@ -4,40 +4,38 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/Table/Table.TableProps> */
-@js.native
 trait PartialTableProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var disableStyles: js.UndefOr[Boolean] = js.native
+  var disableStyles: js.UndefOr[Boolean] = js.undefined
   
-  var headers: js.UndefOr[js.Array[String | ReactNode]] = js.native
+  var headers: js.UndefOr[js.Array[String | ReactNode]] = js.undefined
   
-  var tableBodyClassName: js.UndefOr[String] = js.native
+  var tableBodyClassName: js.UndefOr[String] = js.undefined
   
-  var tableBodyProps: js.UndefOr[js.Any] = js.native
+  var tableBodyProps: js.UndefOr[js.Any] = js.undefined
   
   var tableBodyRowProps: js.UndefOr[
     StringDictionary[js.Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit])
-  ] = js.native
+  ] = js.undefined
   
-  var tableCellClassName: js.UndefOr[String] = js.native
+  var tableCellClassName: js.UndefOr[String] = js.undefined
   
-  var tableData: js.UndefOr[js.Array[RowData]] = js.native
+  var tableData: js.UndefOr[js.Array[RowData]] = js.undefined
   
-  var tableHeaderClassName: js.UndefOr[String] = js.native
+  var tableHeaderClassName: js.UndefOr[String] = js.undefined
   
-  var tableHeaderProps: js.UndefOr[js.Any] = js.native
+  var tableHeaderProps: js.UndefOr[js.Any] = js.undefined
   
-  var tableHeaderRowClassName: js.UndefOr[String] = js.native
+  var tableHeaderRowClassName: js.UndefOr[String] = js.undefined
   
-  var tableHeaderRowProps: js.UndefOr[js.Any] = js.native
+  var tableHeaderRowProps: js.UndefOr[js.Any] = js.undefined
   
-  var tableRowClassName: js.UndefOr[String] = js.native
+  var tableRowClassName: js.UndefOr[String] = js.undefined
 }
 object PartialTableProps {
   

@@ -8,7 +8,6 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterBodyConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterSetBodyConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Components {
@@ -16,14 +15,13 @@ object Components {
   /**
     * A component to set restitution on objects.
     */
-  @js.native
   trait Bounce extends StObject {
     
     /**
       * Sets the restitution on the physics object.
       * @param value A Number that defines the restitution (elasticity) of the body. The value is always positive and is in the range (0, 1). A value of 0 means collisions may be perfectly inelastic and no bouncing may occur. A value of 0.8 means the body may bounce back with approximately 80% of its kinetic energy. Note that collision response is based on pairs of bodies, and that restitution values are combined with the following formula: `Math.max(bodyA.restitution, bodyB.restitution)`
       */
-    def setBounce(value: Double): GameObject = js.native
+    def setBounce(value: Double): GameObject
   }
   object Bounce {
     
@@ -115,21 +113,20 @@ object Components {
   /**
     * A component to apply force to Matter.js bodies.
     */
-  @js.native
   trait Force extends StObject {
     
     /**
       * Applies a force to a body.
       * @param force A Vector that specifies the force to apply.
       */
-    def applyForce(force: Vector2): GameObject = js.native
+    def applyForce(force: Vector2): GameObject
     
     /**
       * Applies a force to a body from a given position.
       * @param position The position in which the force comes from.
       * @param force A Vector that specifies the force to apply.
       */
-    def applyForceFrom(position: Vector2, force: Vector2): GameObject = js.native
+    def applyForceFrom(position: Vector2, force: Vector2): GameObject
     
     /**
       * Apply thrust to the forward position of the body.
@@ -137,7 +134,7 @@ object Components {
       * Use very small values, such as 0.1, depending on the mass and required speed.
       * @param speed A speed value to be applied to a directional force.
       */
-    def thrust(speed: Double): GameObject = js.native
+    def thrust(speed: Double): GameObject
     
     /**
       * Apply thrust to the back position of the body.
@@ -145,7 +142,7 @@ object Components {
       * Use very small values, such as 0.1, depending on the mass and required speed.
       * @param speed A speed value to be applied to a directional force.
       */
-    def thrustBack(speed: Double): GameObject = js.native
+    def thrustBack(speed: Double): GameObject
     
     /**
       * Apply thrust to the left position of the body.
@@ -153,7 +150,7 @@ object Components {
       * Use very small values, such as 0.1, depending on the mass and required speed.
       * @param speed A speed value to be applied to a directional force.
       */
-    def thrustLeft(speed: Double): GameObject = js.native
+    def thrustLeft(speed: Double): GameObject
     
     /**
       * Apply thrust to the right position of the body.
@@ -161,7 +158,7 @@ object Components {
       * Use very small values, such as 0.1, depending on the mass and required speed.
       * @param speed A speed value to be applied to a directional force.
       */
-    def thrustRight(speed: Double): GameObject = js.native
+    def thrustRight(speed: Double): GameObject
   }
   object Force {
     
@@ -214,9 +211,9 @@ object Components {
       * @param fstatic If provided, the new static friction of the Body. The higher the value (e.g. 10), the more force it will take to initially get the Body moving when it is nearly stationary. 0 means the body will never "stick" when it is nearly stationary.
       */
     def setFriction(value: Double): GameObject = js.native
-    def setFriction(value: Double, air: js.UndefOr[scala.Nothing], fstatic: Double): GameObject = js.native
     def setFriction(value: Double, air: Double): GameObject = js.native
     def setFriction(value: Double, air: Double, fstatic: Double): GameObject = js.native
+    def setFriction(value: Double, air: Unit, fstatic: Double): GameObject = js.native
     
     /**
       * Sets a new air resistance for this Game Object's Matter Body.
@@ -238,14 +235,13 @@ object Components {
   /**
     * A component to manipulate world gravity for Matter.js bodies.
     */
-  @js.native
   trait Gravity extends StObject {
     
     /**
       * A togglable function for ignoring world gravity in real-time on the current body.
       * @param value Set to true to ignore the effect of world gravity, or false to not ignore it.
       */
-    def setIgnoreGravity(value: Boolean): GameObject = js.native
+    def setIgnoreGravity(value: Boolean): GameObject
   }
   object Gravity {
     
@@ -266,7 +262,6 @@ object Components {
   /**
     * Allows accessing the mass, density, and center of mass of a Matter-enabled Game Object. Should be used as a mixin and not directly.
     */
-  @js.native
   trait Mass extends StObject {
     
     /**
@@ -276,19 +271,19 @@ object Components {
       * 
       * If you only need to read the value and won't change it, you can get it from `GameObject.body.centerOfMass`.
       */
-    val centerOfMass: Vector2 = js.native
+    val centerOfMass: Vector2
     
     /**
       * Sets density of the body.
       * @param value The new density of the body.
       */
-    def setDensity(value: Double): GameObject = js.native
+    def setDensity(value: Double): GameObject
     
     /**
       * Sets the mass of the Game Object's Matter Body.
       * @param value The new mass of the body.
       */
-    def setMass(value: Double): GameObject = js.native
+    def setMass(value: Double): GameObject
   }
   object Mass {
     
@@ -315,20 +310,19 @@ object Components {
   /**
     * Enables a Matter-enabled Game Object to be a sensor. Should be used as a mixin and not directly.
     */
-  @js.native
   trait Sensor extends StObject {
     
     /**
       * Is the body belonging to this Game Object a sensor or not?
       */
-    def isSensor(): Boolean = js.native
+    def isSensor(): Boolean
     
     /**
       * Set the body belonging to this Game Object to be a sensor.
       * Sensors trigger collision events, but don't react with colliding body physically.
       * @param value `true` to set the body as a sensor, or `false` to disable it.
       */
-    def setSensor(value: Boolean): GameObject = js.native
+    def setSensor(value: Boolean): GameObject
   }
   object Sensor {
     
@@ -478,19 +472,18 @@ object Components {
   /**
     * Provides methods used for getting and setting the static state of a physics body.
     */
-  @js.native
   trait Static extends StObject {
     
     /**
       * Returns `true` if the body is static, otherwise `false` for a dynamic body.
       */
-    def isStatic(): Boolean = js.native
+    def isStatic(): Boolean
     
     /**
       * Changes the physics body to be either static `true` or dynamic `false`.
       * @param value `true` to set the body as being static, or `false` to make it dynamic.
       */
-    def setStatic(value: Boolean): GameObject = js.native
+    def setStatic(value: Boolean): GameObject
   }
   object Static {
     
@@ -561,9 +554,9 @@ object Components {
       * @param y The vertical position of the body. Default x.
       */
     def setPosition(): this.type = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
     def setPosition(x: Double): this.type = js.native
     def setPosition(x: Double, y: Double): this.type = js.native
+    def setPosition(x: Unit, y: Double): this.type = js.native
     
     /**
       * Immediately sets the angle of the Body.
@@ -580,13 +573,13 @@ object Components {
       * @param point The point (Vector2) from which scaling will occur.
       */
     def setScale(): this.type = js.native
-    def setScale(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], point: Vector2): this.type = js.native
-    def setScale(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-    def setScale(x: js.UndefOr[scala.Nothing], y: Double, point: Vector2): this.type = js.native
     def setScale(x: Double): this.type = js.native
-    def setScale(x: Double, y: js.UndefOr[scala.Nothing], point: Vector2): this.type = js.native
     def setScale(x: Double, y: Double): this.type = js.native
     def setScale(x: Double, y: Double, point: Vector2): this.type = js.native
+    def setScale(x: Double, y: Unit, point: Vector2): this.type = js.native
+    def setScale(x: Unit, y: Double): this.type = js.native
+    def setScale(x: Unit, y: Double, point: Vector2): this.type = js.native
+    def setScale(x: Unit, y: Unit, point: Vector2): this.type = js.native
     
     /**
       * The x position of this Game Object.

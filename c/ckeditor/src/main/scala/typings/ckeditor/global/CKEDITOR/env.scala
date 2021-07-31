@@ -2,7 +2,6 @@ package typings.ckeditor.global.CKEDITOR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object env {
@@ -101,9 +100,8 @@ object env {
   @scala.inline
   def safari_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("safari")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("CKEDITOR.env.secure")
-  @js.native
-  def secure(): Boolean = js.native
+  @scala.inline
+  def secure(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("secure")().asInstanceOf[Boolean]
   
   @JSGlobal("CKEDITOR.env.version")
   @js.native

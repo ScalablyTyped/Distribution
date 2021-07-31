@@ -5,12 +5,13 @@ import typings.joi.joiStrings.any
 import typings.joi.joiStrings.one
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.joi.mod._Schema because Already inherited */ @js.native
-trait AlternativesSchema extends AnySchema {
+trait AlternativesSchema
+  extends StObject
+     with AnySchema {
   
   /**
     * Adds a conditional alternative schema type, either based on another key value, or a schema peeking into the current value.

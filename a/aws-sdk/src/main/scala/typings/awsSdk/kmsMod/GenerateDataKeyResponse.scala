@@ -2,26 +2,24 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateDataKeyResponse extends StObject {
   
   /**
     * The encrypted copy of the data key. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
     */
-  var CiphertextBlob: js.UndefOr[CiphertextType] = js.native
+  var CiphertextBlob: js.UndefOr[CiphertextType] = js.undefined
   
   /**
     * The Amazon Resource Name (key ARN) of the CMK that encrypted the data key.
     */
-  var KeyId: js.UndefOr[KeyIdType] = js.native
+  var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
   /**
     * The plaintext data key. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded. Use this data key to encrypt your data outside of KMS. Then, remove it from memory as soon as possible.
     */
-  var Plaintext: js.UndefOr[PlaintextType] = js.native
+  var Plaintext: js.UndefOr[PlaintextType] = js.undefined
 }
 object GenerateDataKeyResponse {
   

@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelatedVideoClickEventUIParam extends StObject {
   
   /**
     * Get the relatedVideo object from the relatedVideos array.
     */
-  var relatedVideo: js.UndefOr[js.Any] = js.native
+  var relatedVideo: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Get the relatedVideo html element in the DOM.
     */
-  var relatedVideoElement: js.UndefOr[js.Any] = js.native
+  var relatedVideoElement: js.UndefOr[js.Any] = js.undefined
 }
 object RelatedVideoClickEventUIParam {
   

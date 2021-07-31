@@ -2,21 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullAdditionalCallResolutionData extends StObject {
   
-  var actualParametersContextTypeSymbols: js.Array[PullTypeSymbol] = js.native
+  var actualParametersContextTypeSymbols: js.Array[PullTypeSymbol]
   
-  var candidateSignature: PullSignatureSymbol = js.native
+  var candidateSignature: PullSignatureSymbol
   
-  var diagnosticsFromOverloadResolution: js.Array[Diagnostic] = js.native
+  var diagnosticsFromOverloadResolution: js.Array[Diagnostic]
   
-  var resolvedSignatures: js.Array[PullSignatureSymbol] = js.native
+  var resolvedSignatures: js.Array[PullSignatureSymbol]
   
-  var targetSymbol: PullSymbol = js.native
+  var targetSymbol: PullSymbol
 }
 object PullAdditionalCallResolutionData {
   

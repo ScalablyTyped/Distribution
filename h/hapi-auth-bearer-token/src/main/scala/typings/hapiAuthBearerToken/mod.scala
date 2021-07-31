@@ -3,12 +3,12 @@ package typings.hapiAuthBearerToken
 import org.scalablytyped.runtime.Shortcut
 import typings.hapiAuthBearerToken.hapiAuthBearerTokenStrings.`bearer-access-token`
 import typings.hapiHapi.mod.AuthCredentials
+import typings.hapiHapi.mod.AuthenticationData
 import typings.hapiHapi.mod.Plugin
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseToolkit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,26 +17,86 @@ object mod extends Shortcut {
   @js.native
   val ^ : Plugin[js.Object] = js.native
   
-  @js.native
   trait SchemaOptions extends StObject {
     
-    var accessTokenName: js.UndefOr[String] = js.native
+    var accessTokenName: js.UndefOr[String] = js.undefined
     
-    var allowChaining: js.UndefOr[Boolean] = js.native
+    var allowChaining: js.UndefOr[Boolean] = js.undefined
     
-    var allowCookieToken: js.UndefOr[Boolean] = js.native
+    var allowCookieToken: js.UndefOr[Boolean] = js.undefined
     
-    var allowMultipleHeaders: js.UndefOr[Boolean] = js.native
+    var allowMultipleHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var allowQueryToken: js.UndefOr[Boolean] = js.native
+    var allowQueryToken: js.UndefOr[Boolean] = js.undefined
     
-    var tokenType: js.UndefOr[String] = js.native
+    var tokenType: js.UndefOr[String] = js.undefined
     
-    var unauthorized: js.UndefOr[js.Function2[/* message */ String | Null, /* scheme */ String, _]] = js.native
+    var unauthorized: js.UndefOr[js.Function2[/* message */ String | Null, /* scheme */ String, js.Any]] = js.undefined
     
-    def validate(request: Request, token: String, h: ResponseToolkit): js.Promise[ValidateReturn] | ValidateReturn = js.native
+    def validate(request: Request, token: String, h: ResponseToolkit): js.Promise[ValidateReturn] | ValidateReturn
     @JSName("validate")
-    var validate_Original: Validate = js.native
+    var validate_Original: Validate
+  }
+  object SchemaOptions {
+    
+    @scala.inline
+    def apply(
+      validate: (/* request */ Request, /* token */ String, /* h */ ResponseToolkit) => js.Promise[ValidateReturn] | ValidateReturn
+    ): SchemaOptions = {
+      val __obj = js.Dynamic.literal(validate = js.Any.fromFunction3(validate))
+      __obj.asInstanceOf[SchemaOptions]
+    }
+    
+    @scala.inline
+    implicit class SchemaOptionsMutableBuilder[Self <: SchemaOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAccessTokenName(value: String): Self = StObject.set(x, "accessTokenName", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAccessTokenNameUndefined: Self = StObject.set(x, "accessTokenName", js.undefined)
+      
+      @scala.inline
+      def setAllowChaining(value: Boolean): Self = StObject.set(x, "allowChaining", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAllowChainingUndefined: Self = StObject.set(x, "allowChaining", js.undefined)
+      
+      @scala.inline
+      def setAllowCookieToken(value: Boolean): Self = StObject.set(x, "allowCookieToken", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAllowCookieTokenUndefined: Self = StObject.set(x, "allowCookieToken", js.undefined)
+      
+      @scala.inline
+      def setAllowMultipleHeaders(value: Boolean): Self = StObject.set(x, "allowMultipleHeaders", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAllowMultipleHeadersUndefined: Self = StObject.set(x, "allowMultipleHeaders", js.undefined)
+      
+      @scala.inline
+      def setAllowQueryToken(value: Boolean): Self = StObject.set(x, "allowQueryToken", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAllowQueryTokenUndefined: Self = StObject.set(x, "allowQueryToken", js.undefined)
+      
+      @scala.inline
+      def setTokenType(value: String): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTokenTypeUndefined: Self = StObject.set(x, "tokenType", js.undefined)
+      
+      @scala.inline
+      def setUnauthorized(value: (/* message */ String | Null, /* scheme */ String) => js.Any): Self = StObject.set(x, "unauthorized", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setUnauthorizedUndefined: Self = StObject.set(x, "unauthorized", js.undefined)
+      
+      @scala.inline
+      def setValidate(
+        value: (/* request */ Request, /* token */ String, /* h */ ResponseToolkit) => js.Promise[ValidateReturn] | ValidateReturn
+      ): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
+    }
   }
   
   type Validate = js.Function3[
@@ -46,15 +106,11 @@ object mod extends Shortcut {
     js.Promise[ValidateReturn] | ValidateReturn
   ]
   
-  /* Inlined @hapi/hapi.@hapi/hapi.AuthenticationData & {  isValid :boolean} */
-  @js.native
-  trait ValidateReturn extends StObject {
+  trait ValidateReturn
+    extends StObject
+       with AuthenticationData {
     
-    var artifacts: js.UndefOr[js.Object] = js.native
-    
-    var credentials: AuthCredentials = js.native
-    
-    var isValid: Boolean = js.native
+    var isValid: Boolean
   }
   object ValidateReturn {
     
@@ -66,15 +122,6 @@ object mod extends Shortcut {
     
     @scala.inline
     implicit class ValidateReturnMutableBuilder[Self <: ValidateReturn] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setArtifacts(value: js.Object): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
-      
-      @scala.inline
-      def setCredentials(value: AuthCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
@@ -89,11 +136,10 @@ object mod extends Shortcut {
   /* augmented module */
   object hapiHapiAugmentingMod {
     
-    @js.native
     trait ServerAuth extends StObject {
       
       @JSName("strategy")
-      def strategy_beareraccesstoken(name: String, scheme: `bearer-access-token`, options: SchemaOptions): Unit = js.native
+      def strategy_beareraccesstoken(name: String, scheme: `bearer-access-token`, options: SchemaOptions): Unit
     }
     object ServerAuth {
       

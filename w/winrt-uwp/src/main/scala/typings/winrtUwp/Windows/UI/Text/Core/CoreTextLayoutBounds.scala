@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.UI.Text.Core
 import typings.winrtUwp.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the bounding boxes—in screen coordinates—of a range of text, and of a text input control. */
-@js.native
 trait CoreTextLayoutBounds extends StObject {
   
   /** Gets or sets the bounding box in screen coordinates of a text input control. */
-  var controlBounds: Rect = js.native
+  var controlBounds: Rect
   
   /** Gets or sets the bounding box in screen coordinates of a range of text. */
-  var textBounds: Rect = js.native
+  var textBounds: Rect
 }
 object CoreTextLayoutBounds {
   

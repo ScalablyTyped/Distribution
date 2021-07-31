@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBootstrapActionsOutput extends StObject {
   
   /**
     * The bootstrap actions associated with the cluster.
     */
-  var BootstrapActions: js.UndefOr[CommandList] = js.native
+  var BootstrapActions: js.UndefOr[CommandList] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.undefined
 }
 object ListBootstrapActionsOutput {
   

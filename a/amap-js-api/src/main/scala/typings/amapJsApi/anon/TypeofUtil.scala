@@ -2,7 +2,6 @@ package typings.amapJsApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -84,11 +83,11 @@ trait TypeofUtil extends StObject {
     */
   def isEmpty(obj: js.Object): Boolean = js.native
   
-  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, _]): Double = js.native
-  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, _], context: C): Double = js.native
+  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, js.Any]): Double = js.native
+  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, js.Any], context: C): Double = js.native
   
-  def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, _]): Double = js.native
-  def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, _], options: Timeout): Double = js.native
+  def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.native
+  def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, js.Any], options: Timeout): Double = js.native
   
   /**
     * 将16进制RGB转为rgba(R,G,B,A)

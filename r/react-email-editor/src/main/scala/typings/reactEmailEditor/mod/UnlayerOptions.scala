@@ -2,45 +2,43 @@ package typings.reactEmailEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnlayerOptions extends StObject {
   
-  val appearance: js.UndefOr[AppearanceConfig] = js.native
+  val appearance: js.UndefOr[AppearanceConfig] = js.undefined
   
-  val blocks: js.UndefOr[js.Array[js.Object]] = js.native
+  val blocks: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  val customCSS: js.UndefOr[js.Array[String]] = js.native
+  val customCSS: js.UndefOr[js.Array[String]] = js.undefined
   
-  val customJS: js.UndefOr[js.Array[String]] = js.native
+  val customJS: js.UndefOr[js.Array[String]] = js.undefined
   
-  val designTags: js.UndefOr[StringList] = js.native
+  val designTags: js.UndefOr[StringList] = js.undefined
   
-  val designTagsConfig: js.UndefOr[DesignTagConfig] = js.native
+  val designTagsConfig: js.UndefOr[DesignTagConfig] = js.undefined
   
-  val displayMode: js.UndefOr[DisplayMode] = js.native
+  val displayMode: js.UndefOr[DisplayMode] = js.undefined
   
-  val editor: js.UndefOr[EditorConfig] = js.native
+  val editor: js.UndefOr[EditorConfig] = js.undefined
   
-  val features: js.UndefOr[Features] = js.native
+  val features: js.UndefOr[Features] = js.undefined
   
-  val id: js.UndefOr[String] = js.native
+  val id: js.UndefOr[String] = js.undefined
   
-  val locale: js.UndefOr[String] = js.native
+  val locale: js.UndefOr[String] = js.undefined
   
-  val mergeTags: js.UndefOr[js.Array[MergeTag]] = js.native
+  val mergeTags: js.UndefOr[js.Array[MergeTag]] = js.undefined
   
-  val projectId: js.UndefOr[Double] = js.native
+  val projectId: js.UndefOr[Double] = js.undefined
   
-  val safeHtml: js.UndefOr[Boolean] = js.native
+  val safeHtml: js.UndefOr[Boolean] = js.undefined
   
-  val tools: js.UndefOr[ToolsConfig] = js.native
+  val tools: js.UndefOr[ToolsConfig] = js.undefined
   
-  val translations: js.UndefOr[Translations] = js.native
+  val translations: js.UndefOr[Translations] = js.undefined
   
-  val user: js.UndefOr[User] = js.native
+  val user: js.UndefOr[User] = js.undefined
 }
 object UnlayerOptions {
   

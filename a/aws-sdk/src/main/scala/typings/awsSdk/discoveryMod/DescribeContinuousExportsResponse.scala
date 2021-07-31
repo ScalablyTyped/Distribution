@@ -2,21 +2,19 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeContinuousExportsResponse extends StObject {
   
   /**
     * A list of continuous export descriptions.
     */
-  var descriptions: js.UndefOr[ContinuousExportDescriptions] = js.native
+  var descriptions: js.UndefOr[ContinuousExportDescriptions] = js.undefined
   
   /**
     * The token from the previous call to DescribeExportTasks.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeContinuousExportsResponse {
   

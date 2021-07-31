@@ -2,31 +2,29 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnsubscribeFromDatasetRequest extends StObject {
   
   /**
     * The name of the dataset from which to unsubcribe.
     */
-  var DatasetName: typings.awsSdk.cognitosyncMod.DatasetName = js.native
+  var DatasetName: typings.awsSdk.cognitosyncMod.DatasetName
   
   /**
     * The unique ID generated for this device by Cognito.
     */
-  var DeviceId: typings.awsSdk.cognitosyncMod.DeviceId = js.native
+  var DeviceId: typings.awsSdk.cognitosyncMod.DeviceId
   
   /**
     * Unique ID for this identity.
     */
-  var IdentityId: typings.awsSdk.cognitosyncMod.IdentityId = js.native
+  var IdentityId: typings.awsSdk.cognitosyncMod.IdentityId
   
   /**
     * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. The ID of the pool to which this identity belongs.
     */
-  var IdentityPoolId: typings.awsSdk.cognitosyncMod.IdentityPoolId = js.native
+  var IdentityPoolId: typings.awsSdk.cognitosyncMod.IdentityPoolId
 }
 object UnsubscribeFromDatasetRequest {
   

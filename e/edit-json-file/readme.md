@@ -10,9 +10,9 @@ Edit a json file with ease.
 | ------------------ | :-------------: |
 | Full name          | edit-json-file |
 | Keywords           | edit, json, file, a, with, ease |
-| # releases         | 7 |
-| # dependents       | 122 |
-| # downloads        | 766944 |
+| # releases         | 6 |
+| # dependents       | 148 |
+| # downloads        | 946939 |
 | # stars            | 3 |
 
 ## Links

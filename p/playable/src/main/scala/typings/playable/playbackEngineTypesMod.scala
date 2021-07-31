@@ -12,7 +12,6 @@ import typings.std.HTMLVideoElement
 import typings.std.TimeRanges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object playbackEngineTypesMod {
@@ -24,15 +23,19 @@ object playbackEngineTypesMod {
   object CrossOriginValue extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[CrossOriginValue with String] = js.native
+    def apply(value: String): js.UndefOr[CrossOriginValue & String] = js.native
     
     @js.native
-    sealed trait ANONYMUS extends CrossOriginValue
-    /* "anonymous" */ val ANONYMUS: typings.playable.playbackEngineTypesMod.CrossOriginValue.ANONYMUS with String = js.native
+    sealed trait ANONYMUS
+      extends StObject
+         with CrossOriginValue
+    /* "anonymous" */ val ANONYMUS: typings.playable.playbackEngineTypesMod.CrossOriginValue.ANONYMUS & String = js.native
     
     @js.native
-    sealed trait CREDENTIALS extends CrossOriginValue
-    /* "use-credentials" */ val CREDENTIALS: typings.playable.playbackEngineTypesMod.CrossOriginValue.CREDENTIALS with String = js.native
+    sealed trait CREDENTIALS
+      extends StObject
+         with CrossOriginValue
+    /* "use-credentials" */ val CREDENTIALS: typings.playable.playbackEngineTypesMod.CrossOriginValue.CREDENTIALS & String = js.native
   }
   
   @js.native
@@ -42,29 +45,34 @@ object playbackEngineTypesMod {
   object PreloadType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[PreloadType with String] = js.native
+    def apply(value: String): js.UndefOr[PreloadType & String] = js.native
     
     @js.native
-    sealed trait AUTO extends PreloadType
-    /* "auto" */ val AUTO: typings.playable.playbackEngineTypesMod.PreloadType.AUTO with String = js.native
+    sealed trait AUTO
+      extends StObject
+         with PreloadType
+    /* "auto" */ val AUTO: typings.playable.playbackEngineTypesMod.PreloadType.AUTO & String = js.native
     
     @js.native
-    sealed trait METADATA extends PreloadType
-    /* "metadata" */ val METADATA: typings.playable.playbackEngineTypesMod.PreloadType.METADATA with String = js.native
+    sealed trait METADATA
+      extends StObject
+         with PreloadType
+    /* "metadata" */ val METADATA: typings.playable.playbackEngineTypesMod.PreloadType.METADATA & String = js.native
     
     @js.native
-    sealed trait NONE extends PreloadType
-    /* "none" */ val NONE: typings.playable.playbackEngineTypesMod.PreloadType.NONE with String = js.native
+    sealed trait NONE
+      extends StObject
+         with PreloadType
+    /* "none" */ val NONE: typings.playable.playbackEngineTypesMod.PreloadType.NONE & String = js.native
   }
   
-  @js.native
   trait IEngineDebugInfo extends StObject {
     
-    var currentTime: Double = js.native
+    var currentTime: Double
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var output: String = js.native
+    var output: String
   }
   object IEngineDebugInfo {
     
@@ -88,12 +96,11 @@ object playbackEngineTypesMod {
     }
   }
   
-  @js.native
   trait ILiveStateEngineDependencies extends StObject {
     
-    var engine: IPlaybackEngine = js.native
+    var engine: IPlaybackEngine
     
-    var eventEmitter: IEventEmitter = js.native
+    var eventEmitter: IEventEmitter
   }
   object ILiveStateEngineDependencies {
     
@@ -121,18 +128,19 @@ object playbackEngineTypesMod {
     * @property loadingStateTimestamps - Object with time spend for different initial phases
     * @property output - Type of the output (html5video, chromecast etc.);
     */
-  @js.native
-  trait INativeDebugInfo extends IAdapterDebugInfo {
+  trait INativeDebugInfo
+    extends StObject
+       with IAdapterDebugInfo {
     
-    var currentTime: Double = js.native
+    var currentTime: Double
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var loadingStateTimestamps: js.Object = js.native
+    var loadingStateTimestamps: js.Object
     
-    var output: html5video = js.native
+    var output: html5video
     
-    var viewDimensions: js.Object = js.native
+    var viewDimensions: js.Object
   }
   object INativeDebugInfo {
     
@@ -146,13 +154,12 @@ object playbackEngineTypesMod {
       duration: Double,
       loadingStateTimestamps: js.Object,
       nearestBufferSegInfo: js.Object,
-      output: html5video,
       overallBufferLength: Double,
       `type`: MediaStreamType,
       url: String,
       viewDimensions: js.Object
     ): INativeDebugInfo = {
-      val __obj = js.Dynamic.literal(bitrates = bitrates.asInstanceOf[js.Any], bwEstimate = bwEstimate.asInstanceOf[js.Any], currentBitrate = currentBitrate.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], deliveryPriority = deliveryPriority.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], loadingStateTimestamps = loadingStateTimestamps.asInstanceOf[js.Any], nearestBufferSegInfo = nearestBufferSegInfo.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], overallBufferLength = overallBufferLength.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], viewDimensions = viewDimensions.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bitrates = bitrates.asInstanceOf[js.Any], bwEstimate = bwEstimate.asInstanceOf[js.Any], currentBitrate = currentBitrate.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], deliveryPriority = deliveryPriority.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], loadingStateTimestamps = loadingStateTimestamps.asInstanceOf[js.Any], nearestBufferSegInfo = nearestBufferSegInfo.asInstanceOf[js.Any], output = "html5video", overallBufferLength = overallBufferLength.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], viewDimensions = viewDimensions.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[INativeDebugInfo]
     }
@@ -177,12 +184,11 @@ object playbackEngineTypesMod {
     }
   }
   
-  @js.native
   trait IParsedPlayableSource extends StObject {
     
-    var `type`: MediaStreamType = js.native
+    var `type`: MediaStreamType
     
-    var url: String = js.native
+    var url: String
   }
   object IParsedPlayableSource {
     
@@ -204,14 +210,13 @@ object playbackEngineTypesMod {
     }
   }
   
-  @js.native
   trait IPlayableSource extends StObject {
     
-    var mimeType: js.UndefOr[String] = js.native
+    var mimeType: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[MediaStreamType] = js.native
+    var `type`: js.UndefOr[MediaStreamType] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object IPlayableSource {
     
@@ -344,84 +349,83 @@ object playbackEngineTypesMod {
     def togglePlayback(): Unit = js.native
   }
   
-  @js.native
   trait IPlaybackEngineAPI extends StObject {
     
-    var decreaseVolume: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var decreaseVolume: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var getAutoplay: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAutoplay: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var getCrossOrigin: js.UndefOr[js.Function0[CrossOriginValue]] = js.native
+    var getCrossOrigin: js.UndefOr[js.Function0[CrossOriginValue]] = js.undefined
     
-    var getCurrentTime: js.UndefOr[js.Function0[Double]] = js.native
+    var getCurrentTime: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getDebugInfo: js.UndefOr[js.Function0[IEngineDebugInfo]] = js.native
+    var getDebugInfo: js.UndefOr[js.Function0[IEngineDebugInfo]] = js.undefined
     
-    var getDuration: js.UndefOr[js.Function0[Double]] = js.native
+    var getDuration: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getLoop: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getLoop: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var getPlaybackRate: js.UndefOr[js.Function0[Double]] = js.native
+    var getPlaybackRate: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getPlaybackState: js.UndefOr[js.Function0[EngineState]] = js.native
+    var getPlaybackState: js.UndefOr[js.Function0[EngineState]] = js.undefined
     
-    var getPlaysinline: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getPlaysinline: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var getPreload: js.UndefOr[js.Function0[String]] = js.native
+    var getPreload: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var getSrc: js.UndefOr[js.Function0[PlayableMediaSource]] = js.native
+    var getSrc: js.UndefOr[js.Function0[PlayableMediaSource]] = js.undefined
     
-    var getVideoHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var getVideoHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getVideoWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getVideoWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getVolume: js.UndefOr[js.Function0[Double]] = js.native
+    var getVolume: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var increaseVolume: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var increaseVolume: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var isEnded: js.UndefOr[Boolean] = js.native
+    var isEnded: js.UndefOr[Boolean] = js.undefined
     
-    var isMuted: js.UndefOr[Boolean] = js.native
+    var isMuted: js.UndefOr[Boolean] = js.undefined
     
-    var isPaused: js.UndefOr[Boolean] = js.native
+    var isPaused: js.UndefOr[Boolean] = js.undefined
     
-    var mute: js.UndefOr[js.Function0[Unit]] = js.native
+    var mute: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var pause: js.UndefOr[js.Function0[Unit]] = js.native
+    var pause: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var play: js.UndefOr[js.Function0[Unit]] = js.native
+    var play: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var resetPlayback: js.UndefOr[js.Function0[Unit]] = js.native
+    var resetPlayback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var seekBackward: js.UndefOr[js.Function1[/* sec */ Double, Unit]] = js.native
+    var seekBackward: js.UndefOr[js.Function1[/* sec */ Double, Unit]] = js.undefined
     
-    var seekForward: js.UndefOr[js.Function1[/* sec */ Double, Unit]] = js.native
+    var seekForward: js.UndefOr[js.Function1[/* sec */ Double, Unit]] = js.undefined
     
-    var seekTo: js.UndefOr[js.Function1[/* time */ Double, Unit]] = js.native
+    var seekTo: js.UndefOr[js.Function1[/* time */ Double, Unit]] = js.undefined
     
-    var setAutoplay: js.UndefOr[js.Function1[/* isAutoplay */ Boolean, Unit]] = js.native
+    var setAutoplay: js.UndefOr[js.Function1[/* isAutoplay */ Boolean, Unit]] = js.undefined
     
-    var setCrossOrigin: js.UndefOr[js.Function1[/* crossOrigin */ js.UndefOr[CrossOriginValue], Unit]] = js.native
+    var setCrossOrigin: js.UndefOr[js.Function1[/* crossOrigin */ js.UndefOr[CrossOriginValue], Unit]] = js.undefined
     
-    var setLoop: js.UndefOr[js.Function1[/* isLoop */ Boolean, Unit]] = js.native
+    var setLoop: js.UndefOr[js.Function1[/* isLoop */ Boolean, Unit]] = js.undefined
     
-    var setPlaybackRate: js.UndefOr[js.Function1[/* rate */ Double, Unit]] = js.native
+    var setPlaybackRate: js.UndefOr[js.Function1[/* rate */ Double, Unit]] = js.undefined
     
-    var setPlaysinline: js.UndefOr[js.Function1[/* isPlaysinline */ Boolean, Unit]] = js.native
+    var setPlaysinline: js.UndefOr[js.Function1[/* isPlaysinline */ Boolean, Unit]] = js.undefined
     
-    var setPreload: js.UndefOr[js.Function1[/* preload */ PreloadType, Unit]] = js.native
+    var setPreload: js.UndefOr[js.Function1[/* preload */ PreloadType, Unit]] = js.undefined
     
     var setSrc: js.UndefOr[
         js.Function2[/* src */ PlayableMediaSource, /* callback */ js.UndefOr[js.Function], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var setVolume: js.UndefOr[js.Function1[/* volume */ Double, Unit]] = js.native
+    var setVolume: js.UndefOr[js.Function1[/* volume */ Double, Unit]] = js.undefined
     
-    var syncWithLive: js.UndefOr[js.Function0[Unit]] = js.native
+    var syncWithLive: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var togglePlayback: js.UndefOr[js.Function0[Unit]] = js.native
+    var togglePlayback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var unmute: js.UndefOr[js.Function0[Unit]] = js.native
+    var unmute: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IPlaybackEngineAPI {
     
@@ -658,16 +662,15 @@ object playbackEngineTypesMod {
     }
   }
   
-  @js.native
   trait IPlaybackEngineDependencies extends StObject {
     
-    var availablePlaybackAdapters: js.Array[IPlaybackAdapterClass] = js.native
+    var availablePlaybackAdapters: js.Array[IPlaybackAdapterClass]
     
-    var config: IPlayerConfig = js.native
+    var config: IPlayerConfig
     
-    var eventEmitter: IEventEmitter = js.native
+    var eventEmitter: IEventEmitter
     
-    var nativeOutput: IVideoOutput = js.native
+    var nativeOutput: IVideoOutput
   }
   object IPlaybackEngineDependencies {
     
@@ -773,8 +776,9 @@ object playbackEngineTypesMod {
     def setPreload(preload: PreloadType): Unit = js.native
     
     def setSrc(): Unit = js.native
-    def setSrc(src: js.UndefOr[PlayableMediaSource], callback: js.Function): Unit = js.native
+    def setSrc(src: Unit, callback: js.Function): Unit = js.native
     def setSrc(src: PlayableMediaSource): Unit = js.native
+    def setSrc(src: PlayableMediaSource, callback: js.Function): Unit = js.native
     
     def setVolume(volume: Double): Unit = js.native
     

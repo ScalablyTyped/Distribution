@@ -3,13 +3,11 @@ package typings.reactRelay.anon
 import typings.reactRelay.mod.RelayPaginationProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelayRelayPaginationProp extends StObject {
   
-  var relay: RelayPaginationProp = js.native
+  var relay: RelayPaginationProp
 }
 object RelayRelayPaginationProp {
   

@@ -11,8 +11,8 @@ The data-first JavaScript router
 | Full name          | navigation |
 | Keywords           | router, navigation |
 | # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 43292 |
+| # dependents       | 2 |
+| # downloads        | 49807 |
 | # stars            | 0 |
 
 ## Links

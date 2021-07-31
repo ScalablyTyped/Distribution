@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPublicKeysResult extends StObject {
   
   /**
     * Returns a list of all public keys that have been added to CloudFront for this account.
     */
-  var PublicKeyList: js.UndefOr[typings.awsSdk.cloudfrontMod.PublicKeyList] = js.native
+  var PublicKeyList: js.UndefOr[typings.awsSdk.cloudfrontMod.PublicKeyList] = js.undefined
 }
 object ListPublicKeysResult {
   

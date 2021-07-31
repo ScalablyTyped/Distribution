@@ -3,35 +3,37 @@ package typings.ionicCliFramework
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promiseMod {
   
+  @JSImport("@ionic/cli-framework/utils/promise", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object PromiseUtil {
     
-    @JSImport("@ionic/cli-framework/utils/promise", "PromiseUtil.any")
+    @JSImport("@ionic/cli-framework/utils/promise", "PromiseUtil")
     @js.native
-    def any(promises: js.Array[js.Promise[_]]): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/cli-framework/utils/promise", "PromiseUtil.some")
-    @js.native
-    def some(promises: js.Array[js.Promise[_]]): js.Promise[js.Array[_]] = js.native
-    @JSImport("@ionic/cli-framework/utils/promise", "PromiseUtil.some")
-    @js.native
-    def some(promises: js.Array[js.Promise[_]], expected: Double): js.Promise[js.Array[_]] = js.native
+    @scala.inline
+    def any(promises: js.Array[js.Promise[js.Any]]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(promises.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    
+    @scala.inline
+    def some(promises: js.Array[js.Promise[js.Any]]): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(promises.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+    @scala.inline
+    def some(promises: js.Array[js.Promise[js.Any]], expected: Double): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(promises.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
   }
   
   @JSImport("@ionic/cli-framework/utils/promise", "promisify")
   @js.native
   val promisify: Promisify_ = js.native
   
-  @JSImport("@ionic/cli-framework/utils/promise", "promisifyEvent")
-  @js.native
-  def promisifyEvent(emitter: EventEmitter, event: String): js.Promise[_] = js.native
-  @JSImport("@ionic/cli-framework/utils/promise", "promisifyEvent")
-  @js.native
-  def promisifyEvent(emitter: EventEmitter, event: js.Symbol): js.Promise[_] = js.native
+  @scala.inline
+  def promisifyEvent(emitter: EventEmitter, event: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyEvent")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def promisifyEvent(emitter: EventEmitter, event: js.Symbol): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyEvent")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   @js.native
   trait Promisify_ extends StObject {

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v2", "remotebuildexecution_v2.Resource$Blobs")
@@ -38,7 +37,7 @@ class ResourceBlobs protected () extends StObject {
     */
   def batchRead(): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponse] = js.native
   def batchRead(callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponse]): Unit = js.native
-  def batchRead(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponse] = js.native
+  def batchRead(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponse] = js.native
   def batchRead(params: ParamsResourceBlobsBatchread): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponse] = js.native
   def batchRead(
     params: ParamsResourceBlobsBatchread,
@@ -82,7 +81,7 @@ class ResourceBlobs protected () extends StObject {
     */
   def batchUpdate(): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsResponse] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsResponse]): Unit = js.native
-  def batchUpdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsResponse] = js.native
+  def batchUpdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsResponse] = js.native
   def batchUpdate(params: ParamsResourceBlobsBatchupdate): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsResponse] = js.native
   def batchUpdate(
     params: ParamsResourceBlobsBatchupdate,
@@ -120,7 +119,7 @@ class ResourceBlobs protected () extends StObject {
     */
   def findMissing(): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse] = js.native
   def findMissing(callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse]): Unit = js.native
-  def findMissing(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse] = js.native
+  def findMissing(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse] = js.native
   def findMissing(params: ParamsResourceBlobsFindmissing): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse] = js.native
   def findMissing(
     params: ParamsResourceBlobsFindmissing,
@@ -168,7 +167,7 @@ class ResourceBlobs protected () extends StObject {
     */
   def getTree(): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2GetTreeResponse] = js.native
   def getTree(callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2GetTreeResponse]): Unit = js.native
-  def getTree(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2GetTreeResponse] = js.native
+  def getTree(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2GetTreeResponse] = js.native
   def getTree(params: ParamsResourceBlobsGettree): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2GetTreeResponse] = js.native
   def getTree(
     params: ParamsResourceBlobsGettree,

@@ -3,21 +3,19 @@ package typings.rollup.anon
 import typings.rollup.mod.InternalModuleFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetFileName extends StObject {
   
-  var assetFileName: String = js.native
+  var assetFileName: String
   
-  var chunkId: String = js.native
+  var chunkId: String
   
-  var format: InternalModuleFormat = js.native
+  var format: InternalModuleFormat
   
-  var moduleId: String = js.native
+  var moduleId: String
   
-  var relativeAssetPath: String = js.native
+  var relativeAssetPath: String
 }
 object AssetFileName {
   

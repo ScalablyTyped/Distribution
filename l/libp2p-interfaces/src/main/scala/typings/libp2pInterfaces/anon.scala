@@ -3,25 +3,23 @@ package typings.libp2pInterfaces
 import typings.multiaddr.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CanRelayMessage extends StObject {
     
-    var canRelayMessage: js.UndefOr[Boolean] = js.native
+    var canRelayMessage: js.UndefOr[Boolean] = js.undefined
     
-    var debugName: String = js.native
+    var debugName: String
     
-    var emitSelf: js.UndefOr[Boolean] = js.native
+    var emitSelf: js.UndefOr[Boolean] = js.undefined
     
-    var globalSignaturePolicy: js.UndefOr[js.Any] = js.native
+    var globalSignaturePolicy: js.UndefOr[js.Any] = js.undefined
     
-    var libp2p: js.Any = js.native
+    var libp2p: js.Any
     
-    var multicodecs: String | js.Array[String] = js.native
+    var multicodecs: String | js.Array[String]
   }
   object CanRelayMessage {
     
@@ -66,31 +64,30 @@ object anon {
     }
   }
   
-  @js.native
   trait Close extends StObject {
     
-    var close: js.Function = js.native
+    var close: js.Function
     
-    def getStreams(): js.Array[_] = js.native
+    def getStreams(): js.Array[js.Any]
     
-    var localAddr: js.UndefOr[^] = js.native
+    var localAddr: js.UndefOr[^] = js.undefined
     
-    var localPeer: typings.peerId.mod.^ = js.native
+    var localPeer: typings.peerId.mod.^
     
-    var newStream: js.Function = js.native
+    var newStream: js.Function
     
-    var remoteAddr: js.UndefOr[^] = js.native
+    var remoteAddr: js.UndefOr[^] = js.undefined
     
-    var remotePeer: typings.peerId.mod.^ = js.native
+    var remotePeer: typings.peerId.mod.^
     
-    var stat: Direction = js.native
+    var stat: Direction
   }
   object Close {
     
     @scala.inline
     def apply(
       close: js.Function,
-      getStreams: () => js.Array[_],
+      getStreams: () => js.Array[js.Any],
       localPeer: typings.peerId.mod.^,
       newStream: js.Function,
       remotePeer: typings.peerId.mod.^,
@@ -107,7 +104,7 @@ object anon {
       def setClose(value: js.Function): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGetStreams(value: () => js.Array[_]): Self = StObject.set(x, "getStreams", js.Any.fromFunction0(value))
+      def setGetStreams(value: () => js.Array[js.Any]): Self = StObject.set(x, "getStreams", js.Any.fromFunction0(value))
       
       @scala.inline
       def setLocalAddr(value: ^): Self = StObject.set(x, "localAddr", value.asInstanceOf[js.Any])
@@ -135,14 +132,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Connection extends StObject {
     
-    var connection: js.Any = js.native
+    var connection: js.Any
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var stream: js.Any = js.native
+    var stream: js.Any
   }
   object Connection {
     
@@ -166,16 +162,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Direction extends StObject {
     
-    var direction: String = js.native
+    var direction: String
     
-    var encryption: js.UndefOr[String] = js.native
+    var encryption: js.UndefOr[String] = js.undefined
     
-    var multiplexer: js.UndefOr[String] = js.native
+    var multiplexer: js.UndefOr[String] = js.undefined
     
-    var timeline: Open = js.native
+    var timeline: Open
   }
   object Direction {
     
@@ -208,18 +203,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Encryption extends StObject {
     
-    var direction: String = js.native
+    var direction: String
     
-    var encryption: js.UndefOr[String] = js.native
+    var encryption: js.UndefOr[String] = js.undefined
     
-    var multiplexer: js.UndefOr[String] = js.native
+    var multiplexer: js.UndefOr[String] = js.undefined
     
-    var status: String = js.native
+    var status: String
     
-    var timeline: Open = js.native
+    var timeline: Open
   }
   object Encryption {
     
@@ -255,12 +249,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: typings.peerId.mod.^ = js.native
+    var id: typings.peerId.mod.^
     
-    var protocol: String = js.native
+    var protocol: String
   }
   object Id {
     
@@ -281,12 +274,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Metadata extends StObject {
     
-    var metadata: js.Any = js.native
+    var metadata: js.Any
     
-    var protocol: String = js.native
+    var protocol: String
   }
   object Metadata {
     
@@ -307,19 +299,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Multiaddrs extends StObject {
     
-    var id: js.Any = js.native
+    var id: js.Any
     
-    var multiaddrs: js.Array[_] = js.native
+    var multiaddrs: js.Array[js.Any]
     
-    var protocols: js.Array[String] = js.native
+    var protocols: js.Array[String]
   }
   object Multiaddrs {
     
     @scala.inline
-    def apply(id: js.Any, multiaddrs: js.Array[_], protocols: js.Array[String]): Multiaddrs = {
+    def apply(id: js.Any, multiaddrs: js.Array[js.Any], protocols: js.Array[String]): Multiaddrs = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], multiaddrs = multiaddrs.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any])
       __obj.asInstanceOf[Multiaddrs]
     }
@@ -331,7 +322,7 @@ object anon {
       def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMultiaddrs(value: js.Array[_]): Self = StObject.set(x, "multiaddrs", value.asInstanceOf[js.Any])
+      def setMultiaddrs(value: js.Array[js.Any]): Self = StObject.set(x, "multiaddrs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMultiaddrsVarargs(value: js.Any*): Self = StObject.set(x, "multiaddrs", js.Array(value :_*))
@@ -344,12 +335,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Open extends StObject {
     
-    var open: String = js.native
+    var open: String
     
-    var upgraded: String = js.native
+    var upgraded: String
   }
   object Open {
     
@@ -370,12 +360,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PeerId extends StObject {
     
-    var peerId: js.Any = js.native
+    var peerId: js.Any
     
-    var protocols: js.Array[String] = js.native
+    var protocols: js.Array[String]
   }
   object PeerId {
     
@@ -399,12 +388,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Protocol extends StObject {
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var stream: js.Any = js.native
+    var stream: js.Any
   }
   object Protocol {
     

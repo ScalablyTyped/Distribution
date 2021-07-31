@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuperChatEventSnippet extends StObject {
   
   /** The purchase amount, in micros of the purchase currency. e.g., 1 is represented as 1000000. */
-  var amountMicros: js.UndefOr[String] = js.native
+  var amountMicros: js.UndefOr[String] = js.undefined
   
   /** Channel id where the event occurred. */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /** The text contents of the comment left by the user. */
-  var commentText: js.UndefOr[String] = js.native
+  var commentText: js.UndefOr[String] = js.undefined
   
   /** The date and time when the event occurred. The value is specified in ISO 8601 format. */
-  var createdAt: js.UndefOr[String] = js.native
+  var createdAt: js.UndefOr[String] = js.undefined
   
   /** The currency in which the purchase was made. ISO 4217. */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
   /** A rendered string that displays the purchase amount and currency (e.g., "$1.00"). The string is rendered for the given language. */
-  var displayString: js.UndefOr[String] = js.native
+  var displayString: js.UndefOr[String] = js.undefined
   
   /** True if this event is a Super Sticker event. */
-  var isSuperStickerEvent: js.UndefOr[Boolean] = js.native
+  var isSuperStickerEvent: js.UndefOr[Boolean] = js.undefined
   
   /** The tier for the paid message, which is based on the amount of money spent to purchase the message. */
-  var messageType: js.UndefOr[Double] = js.native
+  var messageType: js.UndefOr[Double] = js.undefined
   
   /** If this event is a Super Sticker event, this field will contain metadata about the Super Sticker. */
-  var superStickerMetadata: js.UndefOr[SuperStickerMetadata] = js.native
+  var superStickerMetadata: js.UndefOr[SuperStickerMetadata] = js.undefined
   
   /** Details about the supporter. */
-  var supporterDetails: js.UndefOr[ChannelProfileDetails] = js.native
+  var supporterDetails: js.UndefOr[ChannelProfileDetails] = js.undefined
 }
 object SuperChatEventSnippet {
   

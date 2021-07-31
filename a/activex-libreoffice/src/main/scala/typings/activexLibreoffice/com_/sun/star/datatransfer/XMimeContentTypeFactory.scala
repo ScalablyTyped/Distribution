@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Implementations of this interface do create a {@link com.sun.star.datatransfer.XMimeContentType} from a given string that represents a MIME
   * content-type (see [Rfc2045]{@link url="ftp://ftp.isi.edu/in-notes/rfc2045.txt"} and [Rfc2046]{@link url="ftp://ftp.isi.edu/in-notes/rfc2046.txt"} ).
   */
-@js.native
-trait XMimeContentTypeFactory extends XInterface {
+trait XMimeContentTypeFactory
+  extends StObject
+     with XInterface {
   
   /**
     * Creates an object that implements {@link XMimeContentType} .
@@ -21,7 +21,7 @@ trait XMimeContentTypeFactory extends XInterface {
     * @see com.sun.star.datatransfer.XMimeContentType
     * @throws com::sun::star::lang::IllegalArgumentException if the string does not conform to [Rfc2045]{@link url="ftp://ftp.isi.edu/in-notes/rfc2045.txt"} an
     */
-  def createMimeContentType(aContentType: String): XMimeContentType = js.native
+  def createMimeContentType(aContentType: String): XMimeContentType
 }
 object XMimeContentTypeFactory {
   

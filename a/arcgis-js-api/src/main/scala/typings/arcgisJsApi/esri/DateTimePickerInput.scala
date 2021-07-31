@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`datetime-picker`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateTimePickerInput extends Input {
+trait DateTimePickerInput
+  extends StObject
+     with Input {
   
   /**
     * Indicates if the input should provide an option to select the time.

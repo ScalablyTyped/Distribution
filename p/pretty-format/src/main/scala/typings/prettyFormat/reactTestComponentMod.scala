@@ -9,7 +9,6 @@ import typings.prettyFormat.typesMod.Test
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactTestComponentMod extends Shortcut {
@@ -36,17 +35,16 @@ object reactTestComponentMod extends Shortcut {
   
   type ReactTestChild = ReactTestObject | String | Double
   
-  @js.native
   trait ReactTestObject extends StObject {
     
     @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
+    var DollarDollartypeof: js.Symbol
     
-    var children: js.UndefOr[Null | js.Array[ReactTestChild]] = js.native
+    var children: js.UndefOr[Null | js.Array[ReactTestChild]] = js.undefined
     
-    var props: js.UndefOr[Record[String, _]] = js.native
+    var props: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ReactTestObject {
     
@@ -77,7 +75,7 @@ object reactTestComponentMod extends Shortcut {
       def setDollarDollartypeof(value: js.Symbol): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProps(value: Record[String, _]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)

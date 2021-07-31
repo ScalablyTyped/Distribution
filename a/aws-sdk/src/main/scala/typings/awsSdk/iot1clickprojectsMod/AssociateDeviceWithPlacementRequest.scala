@@ -2,31 +2,29 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateDeviceWithPlacementRequest extends StObject {
   
   /**
     * The ID of the physical device to be associated with the given placement in the project. Note that a mandatory 4 character prefix is required for all deviceId values.
     */
-  var deviceId: DeviceId = js.native
+  var deviceId: DeviceId
   
   /**
     * The device template name to associate with the device ID.
     */
-  var deviceTemplateName: DeviceTemplateName = js.native
+  var deviceTemplateName: DeviceTemplateName
   
   /**
     * The name of the placement in which to associate the device.
     */
-  var placementName: PlacementName = js.native
+  var placementName: PlacementName
   
   /**
     * The name of the project containing the placement in which to associate the device.
     */
-  var projectName: ProjectName = js.native
+  var projectName: ProjectName
 }
 object AssociateDeviceWithPlacementRequest {
   

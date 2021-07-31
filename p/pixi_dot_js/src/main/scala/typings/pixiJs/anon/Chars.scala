@@ -2,21 +2,19 @@ package typings.pixiJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chars extends StObject {
   
-  var chars: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.native
+  var chars: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var resolution: js.UndefOr[Double] = js.native
+  var resolution: js.UndefOr[Double] = js.undefined
   
-  var textureHeight: js.UndefOr[Double] = js.native
+  var textureHeight: js.UndefOr[Double] = js.undefined
   
-  var textureWidth: js.UndefOr[Double] = js.native
+  var textureWidth: js.UndefOr[Double] = js.undefined
 }
 object Chars {
   

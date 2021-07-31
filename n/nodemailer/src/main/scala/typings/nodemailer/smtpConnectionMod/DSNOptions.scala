@@ -4,24 +4,22 @@ import typings.nodemailer.nodemailerStrings.Full
 import typings.nodemailer.nodemailerStrings.HDRS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DSNOptions extends StObject {
   
   /** sender’s ‘envelope identifier’ for tracking */
-  var envid: js.UndefOr[String] = js.native
+  var envid: js.UndefOr[String] = js.undefined
   
   /** when to send a DSN. Multiple options are OK - array or comma delimited. NEVER must appear by itself. */
   @JSName("notify")
-  var notify_FDSNOptions: js.UndefOr[DSNOption | js.Array[DSNOption]] = js.native
+  var notify_FDSNOptions: js.UndefOr[DSNOption | js.Array[DSNOption]] = js.undefined
   
   /** original recipient */
-  var orcpt: js.UndefOr[String] = js.native
+  var orcpt: js.UndefOr[String] = js.undefined
   
   /** return either the full message ‘FULL’ or only headers ‘HDRS’ */
-  var ret: js.UndefOr[Full | HDRS] = js.native
+  var ret: js.UndefOr[Full | HDRS] = js.undefined
 }
 object DSNOptions {
   

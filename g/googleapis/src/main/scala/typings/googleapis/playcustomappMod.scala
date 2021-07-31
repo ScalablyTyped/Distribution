@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object playcustomappMod {
+  
+  @JSImport("googleapis/build/src/apis/playcustomapp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object playcustomappMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/playcustomapp", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/playcustomapp", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object playcustomappMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/playcustomapp", "playcustomapp")
-  @js.native
-  def playcustomapp(options: Options): Playcustomapp = js.native
-  @JSImport("googleapis/build/src/apis/playcustomapp", "playcustomapp")
-  @js.native
-  def playcustomapp_v1(version: v1): Playcustomapp = js.native
+  @scala.inline
+  def playcustomapp(options: Options): Playcustomapp = ^.asInstanceOf[js.Dynamic].applyDynamic("playcustomapp")(options.asInstanceOf[js.Any]).asInstanceOf[Playcustomapp]
+  
+  @scala.inline
+  def playcustomapp_v1(version: v1): Playcustomapp = ^.asInstanceOf[js.Dynamic].applyDynamic("playcustomapp")(version.asInstanceOf[js.Any]).asInstanceOf[Playcustomapp]
 }

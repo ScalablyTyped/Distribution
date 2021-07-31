@@ -2,46 +2,44 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRuleRequest extends StObject {
   
   /**
     * The rule description.
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
+  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.undefined
   
   /**
     * The detector ID for the rule's parent detector.
     */
-  var detectorId: identifier = js.native
+  var detectorId: identifier
   
   /**
     * The rule expression.
     */
-  var expression: ruleExpression = js.native
+  var expression: ruleExpression
   
   /**
     * The language of the rule.
     */
-  var language: Language = js.native
+  var language: Language
   
   /**
     * The outcome or outcomes returned when the rule expression matches.
     */
-  var outcomes: NonEmptyListOfStrings = js.native
+  var outcomes: NonEmptyListOfStrings
   
   /**
     * The rule ID.
     */
-  var ruleId: identifier = js.native
+  var ruleId: identifier
   
   /**
     * A collection of key and value pairs.
     */
-  var tags: js.UndefOr[tagList] = js.native
+  var tags: js.UndefOr[tagList] = js.undefined
 }
 object CreateRuleRequest {
   

@@ -2,7 +2,6 @@ package typings.activexShdocvw.SHDocVw
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** WebBrowser Control */
@@ -29,9 +28,9 @@ trait WebBrowser extends StObject {
   
   /** IOleCommandTarget::Exec */
   def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT): Unit = js.native
-  def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: js.UndefOr[scala.Nothing], pvaOut: js.Any): Unit = js.native
   def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: js.Any): Unit = js.native
   def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: js.Any, pvaOut: js.Any): Unit = js.native
+  def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: Unit, pvaOut: js.Any): Unit = js.native
   
   /** Returns file specification of the application, including path. */
   val FullName: String = js.native
@@ -77,92 +76,19 @@ trait WebBrowser extends StObject {
   
   /** Navigates to a URL or file. */
   def Navigate(URL: String): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.Any
-  ): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.Any,
-    Headers: String
-  ): Unit = js.native
-  def Navigate(URL: String, Flags: js.UndefOr[scala.Nothing], TargetFrameName: String): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: String,
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
-  def Navigate(URL: String, Flags: js.UndefOr[scala.Nothing], TargetFrameName: String, PostData: js.Any): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: String,
-    PostData: js.Any,
-    Headers: String
-  ): Unit = js.native
-  def Navigate(URL: String, Flags: js.UndefOr[scala.Nothing], TargetFrameName: TargetFrameValues): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: TargetFrameValues,
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: TargetFrameValues,
-    PostData: js.Any
-  ): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: TargetFrameValues,
-    PostData: js.Any,
-    Headers: String
-  ): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: String): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: String, PostData: js.Any): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: String, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: String, PostData: Unit, Headers: String): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: Unit, PostData: js.Any): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: Unit, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: Unit, PostData: Unit, Headers: String): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: TargetFrameValues): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: js.Any): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: Unit, Headers: String): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: BrowserNavConstants,
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: BrowserNavConstants,
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.Any
-  ): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: BrowserNavConstants,
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.Any,
-    Headers: String
-  ): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: String): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: BrowserNavConstants,
-    TargetFrameName: String,
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: String, PostData: js.Any): Unit = js.native
   def Navigate(
     URL: String,
@@ -171,14 +97,11 @@ trait WebBrowser extends StObject {
     PostData: js.Any,
     Headers: String
   ): Unit = js.native
+  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: String, PostData: Unit, Headers: String): Unit = js.native
+  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: js.Any): Unit = js.native
+  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: Unit, Headers: String): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: BrowserNavConstants,
-    TargetFrameName: TargetFrameValues,
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues, PostData: js.Any): Unit = js.native
   def Navigate(
     URL: String,
@@ -187,95 +110,29 @@ trait WebBrowser extends StObject {
     PostData: js.Any,
     Headers: String
   ): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: BrowserNavConstants,
+    TargetFrameName: TargetFrameValues,
+    PostData: Unit,
+    Headers: String
+  ): Unit = js.native
   
   /** Navigates to a URL or file or pidl. */
   def Navigate2(URL: js.Any): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.Any
-  ): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.Any,
-    Headers: String
-  ): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: js.UndefOr[scala.Nothing], TargetFrameName: String): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: String,
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: js.UndefOr[scala.Nothing], TargetFrameName: String, PostData: js.Any): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: String,
-    PostData: js.Any,
-    Headers: String
-  ): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: js.UndefOr[scala.Nothing], TargetFrameName: TargetFrameValues): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: TargetFrameValues,
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: TargetFrameValues,
-    PostData: js.Any
-  ): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: js.UndefOr[scala.Nothing],
-    TargetFrameName: TargetFrameValues,
-    PostData: js.Any,
-    Headers: String
-  ): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: String): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: String, PostData: js.Any): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: String, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: String, PostData: Unit, Headers: String): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: Unit, PostData: js.Any): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: Unit, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: Unit, PostData: Unit, Headers: String): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: TargetFrameValues): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: js.Any): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: Unit, Headers: String): Unit = js.native
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: BrowserNavConstants,
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: BrowserNavConstants,
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.Any
-  ): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: BrowserNavConstants,
-    TargetFrameName: js.UndefOr[scala.Nothing],
-    PostData: js.Any,
-    Headers: String
-  ): Unit = js.native
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: String): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: BrowserNavConstants,
-    TargetFrameName: String,
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: String, PostData: js.Any): Unit = js.native
   def Navigate2(
     URL: js.Any,
@@ -284,20 +141,24 @@ trait WebBrowser extends StObject {
     PostData: js.Any,
     Headers: String
   ): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: String, PostData: Unit, Headers: String): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: js.Any): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: Unit, Headers: String): Unit = js.native
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
-    Flags: BrowserNavConstants,
-    TargetFrameName: TargetFrameValues,
-    PostData: js.UndefOr[scala.Nothing],
-    Headers: String
-  ): Unit = js.native
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues, PostData: js.Any): Unit = js.native
   def Navigate2(
     URL: js.Any,
     Flags: BrowserNavConstants,
     TargetFrameName: TargetFrameValues,
     PostData: js.Any,
+    Headers: String
+  ): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: BrowserNavConstants,
+    TargetFrameName: TargetFrameValues,
+    PostData: Unit,
     Headers: String
   ): Unit = js.native
   

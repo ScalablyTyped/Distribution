@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowTaskInvocationParameters extends StObject {
   
   /**
     * The parameters for an AUTOMATION task type.
     */
-  var Automation: js.UndefOr[MaintenanceWindowAutomationParameters] = js.native
+  var Automation: js.UndefOr[MaintenanceWindowAutomationParameters] = js.undefined
   
   /**
     * The parameters for a LAMBDA task type.
     */
-  var Lambda: js.UndefOr[MaintenanceWindowLambdaParameters] = js.native
+  var Lambda: js.UndefOr[MaintenanceWindowLambdaParameters] = js.undefined
   
   /**
     * The parameters for a RUN_COMMAND task type.
     */
-  var RunCommand: js.UndefOr[MaintenanceWindowRunCommandParameters] = js.native
+  var RunCommand: js.UndefOr[MaintenanceWindowRunCommandParameters] = js.undefined
   
   /**
     * The parameters for a STEP_FUNCTIONS task type.
     */
-  var StepFunctions: js.UndefOr[MaintenanceWindowStepFunctionsParameters] = js.native
+  var StepFunctions: js.UndefOr[MaintenanceWindowStepFunctionsParameters] = js.undefined
 }
 object MaintenanceWindowTaskInvocationParameters {
   

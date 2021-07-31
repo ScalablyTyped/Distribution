@@ -10,7 +10,6 @@ import typings.maximMazurokGapiClientDomainsrdap.anon.Key
 import typings.maximMazurokGapiClientDomainsrdap.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -43,23 +42,22 @@ object gapi {
         def get(request: Callback): Request[RdapResponse] = js.native
       }
       
-      @js.native
       trait HttpBody extends StObject {
         
         /** The HTTP Content-Type header value specifying the content type of the body. */
-        var contentType: js.UndefOr[String] = js.native
+        var contentType: js.UndefOr[String] = js.undefined
         
         /** The HTTP request/response body as raw binary. */
-        var data: js.UndefOr[String] = js.native
+        var data: js.UndefOr[String] = js.undefined
         
         /** Application specific response metadata. Must be set in the first response for streaming APIs. */
         var extensions: js.UndefOr[
                 js.Array[
                   /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody with TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[js.Any]
                 ]
-              ] = js.native
+              ] = js.undefined
       }
       object HttpBody {
         
@@ -89,7 +87,7 @@ object gapi {
             value: js.Array[
                       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[js.Any]
                     ]
           ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
           
@@ -100,7 +98,7 @@ object gapi {
           def setExtensionsVarargs(
             value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody with TopLevel[js.Any])*
+            */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[js.Any])*
           ): Self = StObject.set(x, "extensions", js.Array(value :_*))
         }
       }
@@ -113,29 +111,28 @@ object gapi {
         def get(request: Fields): Request[RdapResponse] = js.native
       }
       
-      @js.native
       trait Link extends StObject {
         
         /** Target URL of a link. Example: "http://example.com/previous". */
-        var href: js.UndefOr[String] = js.native
+        var href: js.UndefOr[String] = js.undefined
         
         /** Language code of a link. Example: "en". */
-        var hreflang: js.UndefOr[String] = js.native
+        var hreflang: js.UndefOr[String] = js.undefined
         
         /** Media type of the link destination. Example: "screen". */
-        var media: js.UndefOr[String] = js.native
+        var media: js.UndefOr[String] = js.undefined
         
         /** Relation type of a link. Example: "previous". */
-        var rel: js.UndefOr[String] = js.native
+        var rel: js.UndefOr[String] = js.undefined
         
         /** Title of this link. Example: "title". */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
         
         /** Content type of the link. Example: "application/json". */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
         
         /** URL giving context for the link. Example: "http://example.com/current". */
-        var value: js.UndefOr[String] = js.native
+        var value: js.UndefOr[String] = js.undefined
       }
       object Link {
         
@@ -200,23 +197,22 @@ object gapi {
         def get(request: Key): Request[RdapResponse] = js.native
       }
       
-      @js.native
       trait Notice extends StObject {
         
         /** Description of the notice. */
-        var description: js.UndefOr[js.Array[String]] = js.native
+        var description: js.UndefOr[js.Array[String]] = js.undefined
         
         /** Link to a document containing more information. */
-        var links: js.UndefOr[js.Array[Link]] = js.native
+        var links: js.UndefOr[js.Array[Link]] = js.undefined
         
         /** Title of a notice. Example: "Terms of Service". */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
         
         /**
           * Type values defined in [section 10.2.1 of RFC 7483](https://tools.ietf.org/html/rfc7483#section-10.2.1) specific to a whole response: "result set truncated due to authorization",
           * "result set truncated due to excessive load", "result set truncated due to unexplainable reasons".
           */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
       }
       object Notice {
         
@@ -261,29 +257,28 @@ object gapi {
         }
       }
       
-      @js.native
       trait RdapResponse extends StObject {
         
         /** Error description. */
-        var description: js.UndefOr[js.Array[String]] = js.native
+        var description: js.UndefOr[js.Array[String]] = js.undefined
         
         /** Error HTTP code. Example: "501". */
-        var errorCode: js.UndefOr[Double] = js.native
+        var errorCode: js.UndefOr[Double] = js.undefined
         
         /** HTTP response with content type set to "application/json+rdap". */
-        var jsonResponse: js.UndefOr[HttpBody] = js.native
+        var jsonResponse: js.UndefOr[HttpBody] = js.undefined
         
         /** Error language code. Error response info fields are defined in [section 6 of RFC 7483](https://tools.ietf.org/html/rfc7483#section-6). */
-        var lang: js.UndefOr[String] = js.native
+        var lang: js.UndefOr[String] = js.undefined
         
         /** Notices applying to this response. */
-        var notices: js.UndefOr[js.Array[Notice]] = js.native
+        var notices: js.UndefOr[js.Array[Notice]] = js.undefined
         
         /** RDAP conformance level. */
-        var rdapConformance: js.UndefOr[js.Array[String]] = js.native
+        var rdapConformance: js.UndefOr[js.Array[String]] = js.undefined
         
         /** Error title. */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
       }
       object RdapResponse {
         

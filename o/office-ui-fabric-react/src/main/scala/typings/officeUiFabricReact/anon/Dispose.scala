@@ -2,15 +2,13 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dispose extends StObject {
   
-  def dispose(): scala.Unit = js.native
+  def dispose(): scala.Unit
   
-  var key: String = js.native
+  var key: String
 }
 object Dispose {
   

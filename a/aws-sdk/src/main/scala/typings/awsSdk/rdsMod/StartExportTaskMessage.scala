@@ -2,46 +2,44 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartExportTaskMessage extends StObject {
   
   /**
     * The data to be exported from the snapshot. If this parameter is not provided, all the snapshot data is exported. Valid values are the following:    database - Export all the data from a specified database.    database.table table-name - Export a table of the snapshot. This format is valid only for RDS for MySQL, RDS for MariaDB, and Aurora MySQL.    database.schema schema-name - Export a database schema of the snapshot. This format is valid only for RDS for PostgreSQL and Aurora PostgreSQL.    database.schema.table table-name - Export a table of the database schema. This format is valid only for RDS for PostgreSQL and Aurora PostgreSQL.  
     */
-  var ExportOnly: js.UndefOr[StringList] = js.native
+  var ExportOnly: js.UndefOr[StringList] = js.undefined
   
   /**
     * A unique identifier for the snapshot export task. This ID isn't an identifier for the Amazon S3 bucket where the snapshot is to be exported to. 
     */
-  var ExportTaskIdentifier: String = js.native
+  var ExportTaskIdentifier: String
   
   /**
     * The name of the IAM role to use for writing to the Amazon S3 bucket when exporting a snapshot. 
     */
-  var IamRoleArn: String = js.native
+  var IamRoleArn: String
   
   /**
     * The ID of the AWS KMS key to use to encrypt the snapshot exported to Amazon S3. The KMS key ID is the Amazon Resource Name (ARN), the KMS key identifier, or the KMS key alias for the KMS encryption key. The caller of this operation must be authorized to execute the following operations. These can be set in the KMS key policy:    GrantOperation.Encrypt   GrantOperation.Decrypt   GrantOperation.GenerateDataKey   GrantOperation.GenerateDataKeyWithoutPlaintext   GrantOperation.ReEncryptFrom   GrantOperation.ReEncryptTo   GrantOperation.CreateGrant   GrantOperation.DescribeKey   GrantOperation.RetireGrant  
     */
-  var KmsKeyId: String = js.native
+  var KmsKeyId: String
   
   /**
     * The name of the Amazon S3 bucket to export the snapshot to.
     */
-  var S3BucketName: String = js.native
+  var S3BucketName: String
   
   /**
     * The Amazon S3 bucket prefix to use as the file name and path of the exported snapshot.
     */
-  var S3Prefix: js.UndefOr[String] = js.native
+  var S3Prefix: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the snapshot to export to Amazon S3.
     */
-  var SourceArn: String = js.native
+  var SourceArn: String
 }
 object StartExportTaskMessage {
   

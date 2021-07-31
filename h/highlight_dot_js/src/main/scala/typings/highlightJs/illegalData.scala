@@ -2,17 +2,15 @@ package typings.highlightJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait illegalData extends StObject {
   
-  var context: String = js.native
+  var context: String
   
-  var mode: CompiledMode = js.native
+  var mode: CompiledMode
   
-  var msg: String = js.native
+  var msg: String
 }
 object illegalData {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBuildOutput extends StObject {
   
   /**
     * Set of properties describing the requested build.
     */
-  var Build: js.UndefOr[typings.awsSdk.gameliftMod.Build] = js.native
+  var Build: js.UndefOr[typings.awsSdk.gameliftMod.Build] = js.undefined
 }
 object DescribeBuildOutput {
   

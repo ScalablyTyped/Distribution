@@ -10,9 +10,9 @@ react native app upgrade
 | ------------------ | :-------------: |
 | Full name          | rn-app-upgrade |
 | Keywords           | react-native, app, upgrade, android, ios |
-| # releases         | 16 |
+| # releases         | 20 |
 | # dependents       | 0 |
-| # downloads        | 1872 |
+| # downloads        | 2314 |
 | # stars            | 0 |
 
 ## Links

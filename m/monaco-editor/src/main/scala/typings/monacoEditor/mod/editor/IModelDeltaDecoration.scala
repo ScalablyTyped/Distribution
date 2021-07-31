@@ -3,21 +3,19 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.IRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IModelDeltaDecoration extends StObject {
   
   /**
     * Options associated with this decoration.
     */
-  var options: IModelDecorationOptions = js.native
+  var options: IModelDecorationOptions
   
   /**
     * Range that this decoration covers.
     */
-  var range: IRange = js.native
+  var range: IRange
 }
 object IModelDeltaDecoration {
   

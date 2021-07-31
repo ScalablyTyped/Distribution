@@ -2,27 +2,25 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDomAccessProvider extends StObject {
   
   def changeUserSelect(
     elm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
     value: String
-  ): Unit = js.native
+  ): Unit
   
-  def focusCellElement($scope: IGridScope, index: Double): Unit = js.native
+  def focusCellElement($scope: IGridScope, index: Double): Unit
   
-  var grid: IGridInstance = js.native
+  var grid: IGridInstance
   
-  var previousColumn: IColumn = js.native
+  var previousColumn: IColumn
   
   def selectionHandlers(
     $scope: IGridScope,
     elm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
-  ): Unit = js.native
+  ): Unit
 }
 object IDomAccessProvider {
   

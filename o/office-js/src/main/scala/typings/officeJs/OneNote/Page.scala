@@ -11,7 +11,6 @@ import typings.officeJs.officeJsStrings.After
 import typings.officeJs.officeJsStrings.Before
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait Page extends ClientObject {
+trait Page
+  extends StObject
+     with ClientObject {
   
   /**
     *

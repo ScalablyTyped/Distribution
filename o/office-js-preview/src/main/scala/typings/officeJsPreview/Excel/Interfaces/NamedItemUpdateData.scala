@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the NamedItem object, for use in `namedItem.set({ ... })`. */
-@js.native
 trait NamedItemUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait NamedItemUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.4]
     */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait NamedItemUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var formula: js.UndefOr[js.Any] = js.native
+  var formula: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait NamedItemUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object NamedItemUpdateData {
   

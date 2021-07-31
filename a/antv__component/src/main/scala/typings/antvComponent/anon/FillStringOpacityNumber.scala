@@ -2,15 +2,13 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillStringOpacityNumber extends StObject {
   
-  var fill: String = js.native
+  var fill: String
   
-  var opacity: Double = js.native
+  var opacity: Double
 }
 object FillStringOpacityNumber {
   

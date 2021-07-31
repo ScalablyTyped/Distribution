@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,21 +23,17 @@ trait PlusNativeObjView extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def addEventListener(): Unit = js.native
-  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
-  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def addEventListener(
-    event: js.UndefOr[scala.Nothing],
-    listener: js.Function1[/* result */ js.Any, Unit],
-    capture: Boolean
-  ): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit], capture: Boolean): Unit = js.native
+  def addEventListener(event: Unit, listener: Unit, capture: Boolean): Unit = js.native
   def addEventListener(event: PlusNativeObjViewEvents): Unit = js.native
-  def addEventListener(event: PlusNativeObjViewEvents, listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
   def addEventListener(event: PlusNativeObjViewEvents, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def addEventListener(
     event: PlusNativeObjViewEvents,
     listener: js.Function1[/* result */ js.Any, Unit],
     capture: Boolean
   ): Unit = js.native
+  def addEventListener(event: PlusNativeObjViewEvents, listener: Unit, capture: Boolean): Unit = js.native
   
   /**
     * View控件内容动画
@@ -47,7 +42,7 @@ trait PlusNativeObjView extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def animate(): Unit = js.native
-  def animate(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+  def animate(options: Unit, callback: js.Function0[Unit]): Unit = js.native
   def animate(options: PlusNativeObjViewAnimationOptions): Unit = js.native
   def animate(options: PlusNativeObjViewAnimationOptions, callback: js.Function0[Unit]): Unit = js.native
   
@@ -68,7 +63,7 @@ trait PlusNativeObjView extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def clearRect(): Unit = js.native
-  def clearRect(position: js.UndefOr[scala.Nothing], id: String): Unit = js.native
+  def clearRect(position: Unit, id: String): Unit = js.native
   def clearRect(position: PlusNativeObjPosition): Unit = js.native
   def clearRect(position: PlusNativeObjPosition, id: String): Unit = js.native
   
@@ -98,41 +93,21 @@ trait PlusNativeObjView extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def drawBitmap(): Unit = js.native
-  def drawBitmap(
-    src: js.UndefOr[scala.Nothing],
-    sprite: js.UndefOr[scala.Nothing],
-    position: js.UndefOr[scala.Nothing],
-    id: String
-  ): Unit = js.native
-  def drawBitmap(src: js.UndefOr[scala.Nothing], sprite: js.UndefOr[scala.Nothing], position: PlusNativeObjPosition): Unit = js.native
-  def drawBitmap(
-    src: js.UndefOr[scala.Nothing],
-    sprite: js.UndefOr[scala.Nothing],
-    position: PlusNativeObjPosition,
-    id: String
-  ): Unit = js.native
-  def drawBitmap(src: js.UndefOr[scala.Nothing], sprite: PlusNativeObjPosition): Unit = js.native
-  def drawBitmap(
-    src: js.UndefOr[scala.Nothing],
-    sprite: PlusNativeObjPosition,
-    position: js.UndefOr[scala.Nothing],
-    id: String
-  ): Unit = js.native
-  def drawBitmap(src: js.UndefOr[scala.Nothing], sprite: PlusNativeObjPosition, position: PlusNativeObjPosition): Unit = js.native
-  def drawBitmap(
-    src: js.UndefOr[scala.Nothing],
-    sprite: PlusNativeObjPosition,
-    position: PlusNativeObjPosition,
-    id: String
-  ): Unit = js.native
   def drawBitmap(src: String): Unit = js.native
-  def drawBitmap(src: String, sprite: js.UndefOr[scala.Nothing], position: js.UndefOr[scala.Nothing], id: String): Unit = js.native
-  def drawBitmap(src: String, sprite: js.UndefOr[scala.Nothing], position: PlusNativeObjPosition): Unit = js.native
-  def drawBitmap(src: String, sprite: js.UndefOr[scala.Nothing], position: PlusNativeObjPosition, id: String): Unit = js.native
+  def drawBitmap(src: String, sprite: Unit, position: Unit, id: String): Unit = js.native
+  def drawBitmap(src: String, sprite: Unit, position: PlusNativeObjPosition): Unit = js.native
+  def drawBitmap(src: String, sprite: Unit, position: PlusNativeObjPosition, id: String): Unit = js.native
   def drawBitmap(src: String, sprite: PlusNativeObjPosition): Unit = js.native
-  def drawBitmap(src: String, sprite: PlusNativeObjPosition, position: js.UndefOr[scala.Nothing], id: String): Unit = js.native
+  def drawBitmap(src: String, sprite: PlusNativeObjPosition, position: Unit, id: String): Unit = js.native
   def drawBitmap(src: String, sprite: PlusNativeObjPosition, position: PlusNativeObjPosition): Unit = js.native
   def drawBitmap(src: String, sprite: PlusNativeObjPosition, position: PlusNativeObjPosition, id: String): Unit = js.native
+  def drawBitmap(src: Unit, sprite: Unit, position: Unit, id: String): Unit = js.native
+  def drawBitmap(src: Unit, sprite: Unit, position: PlusNativeObjPosition): Unit = js.native
+  def drawBitmap(src: Unit, sprite: Unit, position: PlusNativeObjPosition, id: String): Unit = js.native
+  def drawBitmap(src: Unit, sprite: PlusNativeObjPosition): Unit = js.native
+  def drawBitmap(src: Unit, sprite: PlusNativeObjPosition, position: Unit, id: String): Unit = js.native
+  def drawBitmap(src: Unit, sprite: PlusNativeObjPosition, position: PlusNativeObjPosition): Unit = js.native
+  def drawBitmap(src: Unit, sprite: PlusNativeObjPosition, position: PlusNativeObjPosition, id: String): Unit = js.native
   
   /**
     * 绘制输入框
@@ -141,11 +116,11 @@ trait PlusNativeObjView extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def drawInput(): Unit = js.native
-  def drawInput(position: js.UndefOr[scala.Nothing], styles: js.UndefOr[scala.Nothing], id: String): Unit = js.native
-  def drawInput(position: js.UndefOr[scala.Nothing], styles: PlusNativeObjInputStyles): Unit = js.native
-  def drawInput(position: js.UndefOr[scala.Nothing], styles: PlusNativeObjInputStyles, id: String): Unit = js.native
+  def drawInput(position: Unit, styles: Unit, id: String): Unit = js.native
+  def drawInput(position: Unit, styles: PlusNativeObjInputStyles): Unit = js.native
+  def drawInput(position: Unit, styles: PlusNativeObjInputStyles, id: String): Unit = js.native
   def drawInput(position: PlusNativeObjPosition): Unit = js.native
-  def drawInput(position: PlusNativeObjPosition, styles: js.UndefOr[scala.Nothing], id: String): Unit = js.native
+  def drawInput(position: PlusNativeObjPosition, styles: Unit, id: String): Unit = js.native
   def drawInput(position: PlusNativeObjPosition, styles: PlusNativeObjInputStyles): Unit = js.native
   def drawInput(position: PlusNativeObjPosition, styles: PlusNativeObjInputStyles, id: String): Unit = js.native
   
@@ -156,11 +131,11 @@ trait PlusNativeObjView extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def drawRect(): Unit = js.native
-  def drawRect(styles: js.UndefOr[scala.Nothing], position: js.UndefOr[scala.Nothing], id: String): Unit = js.native
-  def drawRect(styles: js.UndefOr[scala.Nothing], position: PlusNativeObjPosition): Unit = js.native
-  def drawRect(styles: js.UndefOr[scala.Nothing], position: PlusNativeObjPosition, id: String): Unit = js.native
+  def drawRect(styles: Unit, position: Unit, id: String): Unit = js.native
+  def drawRect(styles: Unit, position: PlusNativeObjPosition): Unit = js.native
+  def drawRect(styles: Unit, position: PlusNativeObjPosition, id: String): Unit = js.native
   def drawRect(styles: PlusNativeObjRectStyles): Unit = js.native
-  def drawRect(styles: PlusNativeObjRectStyles, position: js.UndefOr[scala.Nothing], id: String): Unit = js.native
+  def drawRect(styles: PlusNativeObjRectStyles, position: Unit, id: String): Unit = js.native
   def drawRect(styles: PlusNativeObjRectStyles, position: PlusNativeObjPosition): Unit = js.native
   def drawRect(styles: PlusNativeObjRectStyles, position: PlusNativeObjPosition, id: String): Unit = js.native
   
@@ -171,49 +146,21 @@ trait PlusNativeObjView extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def drawRichText(): Unit = js.native
-  def drawRichText(
-    text: js.UndefOr[scala.Nothing],
-    position: js.UndefOr[scala.Nothing],
-    styles: js.UndefOr[scala.Nothing],
-    id: String
-  ): Unit = js.native
-  def drawRichText(
-    text: js.UndefOr[scala.Nothing],
-    position: js.UndefOr[scala.Nothing],
-    styles: PlusNativeObjRichTextStyles
-  ): Unit = js.native
-  def drawRichText(
-    text: js.UndefOr[scala.Nothing],
-    position: js.UndefOr[scala.Nothing],
-    styles: PlusNativeObjRichTextStyles,
-    id: String
-  ): Unit = js.native
-  def drawRichText(text: js.UndefOr[scala.Nothing], position: PlusNativeObjPosition): Unit = js.native
-  def drawRichText(
-    text: js.UndefOr[scala.Nothing],
-    position: PlusNativeObjPosition,
-    styles: js.UndefOr[scala.Nothing],
-    id: String
-  ): Unit = js.native
-  def drawRichText(
-    text: js.UndefOr[scala.Nothing],
-    position: PlusNativeObjPosition,
-    styles: PlusNativeObjRichTextStyles
-  ): Unit = js.native
-  def drawRichText(
-    text: js.UndefOr[scala.Nothing],
-    position: PlusNativeObjPosition,
-    styles: PlusNativeObjRichTextStyles,
-    id: String
-  ): Unit = js.native
   def drawRichText(text: String): Unit = js.native
-  def drawRichText(text: String, position: js.UndefOr[scala.Nothing], styles: js.UndefOr[scala.Nothing], id: String): Unit = js.native
-  def drawRichText(text: String, position: js.UndefOr[scala.Nothing], styles: PlusNativeObjRichTextStyles): Unit = js.native
-  def drawRichText(text: String, position: js.UndefOr[scala.Nothing], styles: PlusNativeObjRichTextStyles, id: String): Unit = js.native
+  def drawRichText(text: String, position: Unit, styles: Unit, id: String): Unit = js.native
+  def drawRichText(text: String, position: Unit, styles: PlusNativeObjRichTextStyles): Unit = js.native
+  def drawRichText(text: String, position: Unit, styles: PlusNativeObjRichTextStyles, id: String): Unit = js.native
   def drawRichText(text: String, position: PlusNativeObjPosition): Unit = js.native
-  def drawRichText(text: String, position: PlusNativeObjPosition, styles: js.UndefOr[scala.Nothing], id: String): Unit = js.native
+  def drawRichText(text: String, position: PlusNativeObjPosition, styles: Unit, id: String): Unit = js.native
   def drawRichText(text: String, position: PlusNativeObjPosition, styles: PlusNativeObjRichTextStyles): Unit = js.native
   def drawRichText(text: String, position: PlusNativeObjPosition, styles: PlusNativeObjRichTextStyles, id: String): Unit = js.native
+  def drawRichText(text: Unit, position: Unit, styles: Unit, id: String): Unit = js.native
+  def drawRichText(text: Unit, position: Unit, styles: PlusNativeObjRichTextStyles): Unit = js.native
+  def drawRichText(text: Unit, position: Unit, styles: PlusNativeObjRichTextStyles, id: String): Unit = js.native
+  def drawRichText(text: Unit, position: PlusNativeObjPosition): Unit = js.native
+  def drawRichText(text: Unit, position: PlusNativeObjPosition, styles: Unit, id: String): Unit = js.native
+  def drawRichText(text: Unit, position: PlusNativeObjPosition, styles: PlusNativeObjRichTextStyles): Unit = js.native
+  def drawRichText(text: Unit, position: PlusNativeObjPosition, styles: PlusNativeObjRichTextStyles, id: String): Unit = js.native
   
   /**
     * 绘制文本
@@ -222,45 +169,21 @@ trait PlusNativeObjView extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def drawText(): Unit = js.native
-  def drawText(
-    text: js.UndefOr[scala.Nothing],
-    position: js.UndefOr[scala.Nothing],
-    styles: js.UndefOr[scala.Nothing],
-    id: String
-  ): Unit = js.native
-  def drawText(
-    text: js.UndefOr[scala.Nothing],
-    position: js.UndefOr[scala.Nothing],
-    styles: PlusNativeObjTextStyles
-  ): Unit = js.native
-  def drawText(
-    text: js.UndefOr[scala.Nothing],
-    position: js.UndefOr[scala.Nothing],
-    styles: PlusNativeObjTextStyles,
-    id: String
-  ): Unit = js.native
-  def drawText(text: js.UndefOr[scala.Nothing], position: PlusNativeObjPosition): Unit = js.native
-  def drawText(
-    text: js.UndefOr[scala.Nothing],
-    position: PlusNativeObjPosition,
-    styles: js.UndefOr[scala.Nothing],
-    id: String
-  ): Unit = js.native
-  def drawText(text: js.UndefOr[scala.Nothing], position: PlusNativeObjPosition, styles: PlusNativeObjTextStyles): Unit = js.native
-  def drawText(
-    text: js.UndefOr[scala.Nothing],
-    position: PlusNativeObjPosition,
-    styles: PlusNativeObjTextStyles,
-    id: String
-  ): Unit = js.native
   def drawText(text: String): Unit = js.native
-  def drawText(text: String, position: js.UndefOr[scala.Nothing], styles: js.UndefOr[scala.Nothing], id: String): Unit = js.native
-  def drawText(text: String, position: js.UndefOr[scala.Nothing], styles: PlusNativeObjTextStyles): Unit = js.native
-  def drawText(text: String, position: js.UndefOr[scala.Nothing], styles: PlusNativeObjTextStyles, id: String): Unit = js.native
+  def drawText(text: String, position: Unit, styles: Unit, id: String): Unit = js.native
+  def drawText(text: String, position: Unit, styles: PlusNativeObjTextStyles): Unit = js.native
+  def drawText(text: String, position: Unit, styles: PlusNativeObjTextStyles, id: String): Unit = js.native
   def drawText(text: String, position: PlusNativeObjPosition): Unit = js.native
-  def drawText(text: String, position: PlusNativeObjPosition, styles: js.UndefOr[scala.Nothing], id: String): Unit = js.native
+  def drawText(text: String, position: PlusNativeObjPosition, styles: Unit, id: String): Unit = js.native
   def drawText(text: String, position: PlusNativeObjPosition, styles: PlusNativeObjTextStyles): Unit = js.native
   def drawText(text: String, position: PlusNativeObjPosition, styles: PlusNativeObjTextStyles, id: String): Unit = js.native
+  def drawText(text: Unit, position: Unit, styles: Unit, id: String): Unit = js.native
+  def drawText(text: Unit, position: Unit, styles: PlusNativeObjTextStyles): Unit = js.native
+  def drawText(text: Unit, position: Unit, styles: PlusNativeObjTextStyles, id: String): Unit = js.native
+  def drawText(text: Unit, position: PlusNativeObjPosition): Unit = js.native
+  def drawText(text: Unit, position: PlusNativeObjPosition, styles: Unit, id: String): Unit = js.native
+  def drawText(text: Unit, position: PlusNativeObjPosition, styles: PlusNativeObjTextStyles): Unit = js.native
+  def drawText(text: Unit, position: PlusNativeObjPosition, styles: PlusNativeObjTextStyles, id: String): Unit = js.native
   
   /**
     * 获取编辑框的焦点状态
@@ -349,9 +272,9 @@ trait PlusNativeObjView extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def setInputFocusById(): String = js.native
-  def setInputFocusById(id: js.UndefOr[scala.Nothing], focusable: Boolean): String = js.native
   def setInputFocusById(id: String): String = js.native
   def setInputFocusById(id: String, focusable: Boolean): String = js.native
+  def setInputFocusById(id: Unit, focusable: Boolean): String = js.native
   
   /**
     * 设置View控件的样式
@@ -388,56 +311,34 @@ trait PlusNativeObjView extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def startAnimation(): Unit = js.native
+  def startAnimation(options: Unit, view: Unit, otherview: Unit, callback: js.Function0[Unit]): Unit = js.native
+  def startAnimation(options: Unit, view: Unit, otherview: PlusNativeObjAnimationViewStyles): Unit = js.native
   def startAnimation(
-    options: js.UndefOr[scala.Nothing],
-    view: js.UndefOr[scala.Nothing],
-    otherview: js.UndefOr[scala.Nothing],
-    callback: js.Function0[Unit]
-  ): Unit = js.native
-  def startAnimation(
-    options: js.UndefOr[scala.Nothing],
-    view: js.UndefOr[scala.Nothing],
-    otherview: PlusNativeObjAnimationViewStyles
-  ): Unit = js.native
-  def startAnimation(
-    options: js.UndefOr[scala.Nothing],
-    view: js.UndefOr[scala.Nothing],
+    options: Unit,
+    view: Unit,
     otherview: PlusNativeObjAnimationViewStyles,
     callback: js.Function0[Unit]
   ): Unit = js.native
-  def startAnimation(options: js.UndefOr[scala.Nothing], view: PlusNativeObjAnimationViewStyles): Unit = js.native
+  def startAnimation(options: Unit, view: PlusNativeObjAnimationViewStyles): Unit = js.native
   def startAnimation(
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     view: PlusNativeObjAnimationViewStyles,
-    otherview: js.UndefOr[scala.Nothing],
+    otherview: Unit,
     callback: js.Function0[Unit]
   ): Unit = js.native
+  def startAnimation(options: Unit, view: PlusNativeObjAnimationViewStyles, otherview: PlusNativeObjAnimationViewStyles): Unit = js.native
   def startAnimation(
-    options: js.UndefOr[scala.Nothing],
-    view: PlusNativeObjAnimationViewStyles,
-    otherview: PlusNativeObjAnimationViewStyles
-  ): Unit = js.native
-  def startAnimation(
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     view: PlusNativeObjAnimationViewStyles,
     otherview: PlusNativeObjAnimationViewStyles,
     callback: js.Function0[Unit]
   ): Unit = js.native
   def startAnimation(options: PlusNativeObjAnimationOptions): Unit = js.native
+  def startAnimation(options: PlusNativeObjAnimationOptions, view: Unit, otherview: Unit, callback: js.Function0[Unit]): Unit = js.native
+  def startAnimation(options: PlusNativeObjAnimationOptions, view: Unit, otherview: PlusNativeObjAnimationViewStyles): Unit = js.native
   def startAnimation(
     options: PlusNativeObjAnimationOptions,
-    view: js.UndefOr[scala.Nothing],
-    otherview: js.UndefOr[scala.Nothing],
-    callback: js.Function0[Unit]
-  ): Unit = js.native
-  def startAnimation(
-    options: PlusNativeObjAnimationOptions,
-    view: js.UndefOr[scala.Nothing],
-    otherview: PlusNativeObjAnimationViewStyles
-  ): Unit = js.native
-  def startAnimation(
-    options: PlusNativeObjAnimationOptions,
-    view: js.UndefOr[scala.Nothing],
+    view: Unit,
     otherview: PlusNativeObjAnimationViewStyles,
     callback: js.Function0[Unit]
   ): Unit = js.native
@@ -445,7 +346,7 @@ trait PlusNativeObjView extends StObject {
   def startAnimation(
     options: PlusNativeObjAnimationOptions,
     view: PlusNativeObjAnimationViewStyles,
-    otherview: js.UndefOr[scala.Nothing],
+    otherview: Unit,
     callback: js.Function0[Unit]
   ): Unit = js.native
   def startAnimation(

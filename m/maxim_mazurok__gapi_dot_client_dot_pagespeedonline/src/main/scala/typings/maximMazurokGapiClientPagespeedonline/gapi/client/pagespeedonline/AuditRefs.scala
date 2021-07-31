@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditRefs extends StObject {
   
   /** The category group that the audit belongs to (optional). */
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
   /** The audit ref id. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The weight this audit's score has on the overall category score. */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object AuditRefs {
   

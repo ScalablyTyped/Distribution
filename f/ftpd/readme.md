@@ -11,8 +11,8 @@ Node FTP Server
 | Full name          | ftpd |
 | Keywords           | ftp, ftp-server, ftpd |
 | # releases         | 2 |
-| # dependents       | 19 |
-| # downloads        | 11267 |
+| # dependents       | 18 |
+| # downloads        | 12445 |
 | # stars            | 11 |
 
 ## Links

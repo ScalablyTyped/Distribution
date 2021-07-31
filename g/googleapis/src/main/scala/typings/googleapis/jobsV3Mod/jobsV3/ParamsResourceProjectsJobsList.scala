@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsJobsList extends StandardParameters {
+trait ParamsResourceProjectsJobsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required.  The filter string specifies the jobs to be enumerated.
@@ -24,13 +24,13 @@ trait ParamsResourceProjectsJobsList extends StandardParameters {
     * companyName = "projects/api-test-project/companies/123" * companyName =
     * "projects/api-test-project/companies/123" AND requisitionId = "req-1"
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The desired job attributes returned for jobs in the search
     * response. Defaults to JobView.JOB_VIEW_FULL if no value is specified.
     */
-  var jobView: js.UndefOr[String] = js.native
+  var jobView: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The maximum number of jobs to be returned per page of results.
@@ -38,19 +38,19 @@ trait ParamsResourceProjectsJobsList extends StandardParameters {
     * size is 1000. Otherwise, the maximum allowed page size is 100.  Default
     * is 100 if empty or a number < 1 is specified.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.  The starting point of a query result.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The resource name of the project under which the job is
     * created.  The format is "projects/{project_id}", for example,
     * "projects/api-test-project".
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsJobsList {
   

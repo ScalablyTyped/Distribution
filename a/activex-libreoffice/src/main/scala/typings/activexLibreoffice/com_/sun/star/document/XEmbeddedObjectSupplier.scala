@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents something that provides an embedded object. */
-@js.native
-trait XEmbeddedObjectSupplier extends XInterface {
+trait XEmbeddedObjectSupplier
+  extends StObject
+     with XInterface {
   
   /** returns the object which is embedded into this object. */
-  val EmbeddedObject: XComponent = js.native
+  val EmbeddedObject: XComponent
   
   /** returns the object which is embedded into this object. */
-  def getEmbeddedObject(): XComponent = js.native
+  def getEmbeddedObject(): XComponent
 }
 object XEmbeddedObjectSupplier {
   

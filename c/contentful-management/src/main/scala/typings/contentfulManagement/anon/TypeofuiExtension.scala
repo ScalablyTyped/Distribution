@@ -7,15 +7,13 @@ import typings.contentfulManagement.uiExtensionMod.UIExtension
 import typings.contentfulManagement.uiExtensionMod.UIExtensionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofuiExtension extends StObject {
   
-  def wrapUiExtension(http: AxiosInstance, data: UIExtensionProps): UIExtension = js.native
+  def wrapUiExtension(http: AxiosInstance, data: UIExtensionProps): UIExtension
   
-  def wrapUiExtensionCollection(http: AxiosInstance, data: CollectionProp[UIExtensionProps]): Collection[UIExtension, UIExtensionProps] = js.native
+  def wrapUiExtensionCollection(http: AxiosInstance, data: CollectionProp[UIExtensionProps]): Collection[UIExtension, UIExtensionProps]
 }
 object TypeofuiExtension {
   

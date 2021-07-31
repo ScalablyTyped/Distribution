@@ -2,21 +2,19 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceInput extends StObject {
   
   /**
     * An ARN that uniquely identifies a resource. The format of the ARN depends on the type of the tagged resource.
     */
-  var ResourceArn: ARN = js.native
+  var ResourceArn: ARN
   
   /**
     * Key-value pairs that are used to help organize your resources. You can assign your own metadata to the resources you create. 
     */
-  var Tags: typings.awsSdk.backupMod.Tags = js.native
+  var Tags: typings.awsSdk.backupMod.Tags
 }
 object TagResourceInput {
   

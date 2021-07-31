@@ -2,36 +2,34 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResampleMediaTask extends StObject {
   
-  val AudioCompressionType: String = js.native
+  val AudioCompressionType: String
   
-  val AudioSamplingRate: Double = js.native
+  val AudioSamplingRate: Double
   
-  val ContainerType: String = js.native
+  val ContainerType: String
   
-  val IsEmbedded: Boolean = js.native
+  val IsEmbedded: Boolean
   
-  val IsLinked: Boolean = js.native
+  val IsLinked: Boolean
   
   @JSName("PowerPoint.ResampleMediaTask_typekey")
-  var PowerPointDotResampleMediaTask_typekey: ResampleMediaTask = js.native
+  var PowerPointDotResampleMediaTask_typekey: ResampleMediaTask
   
-  val SampleHeight: Double = js.native
+  val SampleHeight: Double
   
-  val SampleWidth: Double = js.native
+  val SampleWidth: Double
   
-  val Shape: typings.activexPowerpoint.PowerPoint.Shape = js.native
+  val Shape: typings.activexPowerpoint.PowerPoint.Shape
   
-  val VideoCompressionType: String = js.native
+  val VideoCompressionType: String
   
-  val VideoFrameRate: Double = js.native
+  val VideoFrameRate: Double
   
-  val profile: PpResampleMediaProfile = js.native
+  val profile: PpResampleMediaProfile
 }
 object ResampleMediaTask {
   

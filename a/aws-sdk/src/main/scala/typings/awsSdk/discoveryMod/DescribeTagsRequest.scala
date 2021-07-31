@@ -2,26 +2,24 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTagsRequest extends StObject {
   
   /**
     * You can filter the list using a key-value format. You can separate these items by using logical operators. Allowed filters include tagKey, tagValue, and configurationId. 
     */
-  var filters: js.UndefOr[TagFilters] = js.native
+  var filters: js.UndefOr[TagFilters] = js.undefined
   
   /**
     * The total number of items to return in a single page of output. The maximum value is 100.
     */
-  var maxResults: js.UndefOr[Integer] = js.native
+  var maxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * A token to start the list. Use this token to get the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeTagsRequest {
   

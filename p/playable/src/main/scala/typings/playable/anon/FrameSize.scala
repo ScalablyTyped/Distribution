@@ -2,17 +2,15 @@ package typings.playable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameSize extends StObject {
   
-  var frameSize: Height = js.native
+  var frameSize: Height
   
-  var framesInSprite: Horz = js.native
+  var framesInSprite: Horz
   
-  var spriteUrlMask: String = js.native
+  var spriteUrlMask: String
 }
 object FrameSize {
   

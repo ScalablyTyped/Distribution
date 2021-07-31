@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSchemaVersionsDiffInput extends StObject {
   
   /**
     * The first of the two schema versions to be compared.
     */
-  var FirstSchemaVersionNumber: SchemaVersionNumber = js.native
+  var FirstSchemaVersionNumber: SchemaVersionNumber
   
   /**
     * Refers to SYNTAX_DIFF, which is the currently supported diff type.
     */
-  var SchemaDiffType: typings.awsSdk.glueMod.SchemaDiffType = js.native
+  var SchemaDiffType: typings.awsSdk.glueMod.SchemaDiffType
   
   /**
     * This is a wrapper structure to contain schema identity fields. The structure contains:   SchemaId$SchemaArn: The Amazon Resource Name (ARN) of the schema. One of SchemaArn or SchemaName has to be provided.   SchemaId$SchemaName: The name of the schema. One of SchemaArn or SchemaName has to be provided.  
     */
-  var SchemaId: typings.awsSdk.glueMod.SchemaId = js.native
+  var SchemaId: typings.awsSdk.glueMod.SchemaId
   
   /**
     * The second of the two schema versions to be compared.
     */
-  var SecondSchemaVersionNumber: SchemaVersionNumber = js.native
+  var SecondSchemaVersionNumber: SchemaVersionNumber
 }
 object GetSchemaVersionsDiffInput {
   

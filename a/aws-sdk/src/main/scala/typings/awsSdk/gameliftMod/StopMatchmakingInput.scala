@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopMatchmakingInput extends StObject {
   
   /**
     * A unique identifier for a matchmaking ticket.
     */
-  var TicketId: MatchmakingIdStringModel = js.native
+  var TicketId: MatchmakingIdStringModel
 }
 object StopMatchmakingInput {
   

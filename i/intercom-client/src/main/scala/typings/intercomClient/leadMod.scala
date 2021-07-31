@@ -12,53 +12,51 @@ import typings.intercomClient.userMod.Avatar
 import typings.intercomClient.userMod.LocationData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object leadMod {
   
-  @js.native
   trait Lead extends StObject {
     
-    var avatar: Avatar = js.native
+    var avatar: Avatar
     
-    var companies: Companies = js.native
+    var companies: Companies
     
-    val created_at: Double = js.native
+    val created_at: Double
     
-    var custom_attributes: StringDictionary[js.Any] = js.native
+    var custom_attributes: StringDictionary[js.Any]
     
-    var email: String | Null = js.native
+    var email: String | Null
     
-    val id: String = js.native
+    val id: String
     
-    var last_request_at: Double | Null = js.native
+    var last_request_at: Double | Null
     
-    var last_seen_ip: String | Null = js.native
+    var last_seen_ip: String | Null
     
-    var location_data: LocationData | js.Object = js.native
+    var location_data: LocationData | js.Object
     
-    var name: String | Null = js.native
+    var name: String | Null
     
-    var phone: String | Null = js.native
+    var phone: String | Null
     
-    var referrer: String | Null = js.native
+    var referrer: String | Null
     
-    var segments: Segments = js.native
+    var segments: Segments
     
-    var social_profiles: Socialprofiles = js.native
+    var social_profiles: Socialprofiles
     
-    var tags: Tags = js.native
+    var tags: Tags
     
-    var `type`: contact = js.native
+    var `type`: contact
     
-    var unsubscribed_from_emails: Boolean = js.native
+    var unsubscribed_from_emails: Boolean
     
-    val updated_at: Double = js.native
+    val updated_at: Double
     
-    var user_agent_data: String | Null = js.native
+    var user_agent_data: String | Null
     
-    var user_id: String | Null = js.native
+    var user_id: String | Null
   }
   object Lead {
     
@@ -73,12 +71,11 @@ object leadMod {
       segments: Segments,
       social_profiles: Socialprofiles,
       tags: Tags,
-      `type`: contact,
       unsubscribed_from_emails: Boolean,
       updated_at: Double
     ): Lead = {
-      val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], companies = companies.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location_data = location_data.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], social_profiles = social_profiles.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], companies = companies.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location_data = location_data.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], social_profiles = social_profiles.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], email = null, last_request_at = null, last_seen_ip = null, name = null, phone = null, referrer = null, user_agent_data = null, user_id = null)
+      __obj.updateDynamic("type")("contact")
       __obj.asInstanceOf[Lead]
     }
     
@@ -191,23 +188,22 @@ object leadMod {
     }
   }
   
-  @js.native
   trait List extends StObject {
     
-    var contacts: js.Array[Lead] = js.native
+    var contacts: js.Array[Lead]
     
-    var pages: Next = js.native
+    var pages: Next
     
-    var total_count: Double = js.native
+    var total_count: Double
     
-    var `type`: userDotlist = js.native
+    var `type`: userDotlist
   }
   object List {
     
     @scala.inline
-    def apply(contacts: js.Array[Lead], pages: Next, total_count: Double, `type`: userDotlist): List = {
+    def apply(contacts: js.Array[Lead], pages: Next, total_count: Double): List = {
       val __obj = js.Dynamic.literal(contacts = contacts.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("user.list")
       __obj.asInstanceOf[List]
     }
     

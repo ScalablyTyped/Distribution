@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Symbol3DStyleOrigin extends Object {
+trait Symbol3DStyleOrigin
+  extends StObject
+     with Object {
   
   /**
     * name of the symbol in the style referenced by styleName or styleUrl.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * a well-known esri-provided style, such as `EsriThematicShapesStyle`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */
-  var styleName: js.UndefOr[String] = js.native
+  var styleName: js.UndefOr[String] = js.undefined
   
   /**
     * url to a style definition.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */
-  var styleUrl: js.UndefOr[String] = js.native
+  var styleUrl: js.UndefOr[String] = js.undefined
 }
 object Symbol3DStyleOrigin {
   

@@ -4,45 +4,38 @@ import typings.std.Set
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("libp2p-interfaces/src/pubsub/utils", "anyMatch")
+  @JSImport("libp2p-interfaces/src/pubsub/utils", JSImport.Namespace)
   @js.native
-  def anyMatch(a: js.Array[_], b: js.Array[_]): Boolean = js.native
-  @JSImport("libp2p-interfaces/src/pubsub/utils", "anyMatch")
-  @js.native
-  def anyMatch(a: js.Array[_], b: Set[_]): Boolean = js.native
-  @JSImport("libp2p-interfaces/src/pubsub/utils", "anyMatch")
-  @js.native
-  def anyMatch(a: Set[_], b: js.Array[_]): Boolean = js.native
-  @JSImport("libp2p-interfaces/src/pubsub/utils", "anyMatch")
-  @js.native
-  def anyMatch(a: Set[_], b: Set[_]): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("libp2p-interfaces/src/pubsub/utils", "ensureArray")
-  @js.native
-  def ensureArray(maybeArray: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def anyMatch(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def anyMatch(a: js.Array[js.Any], b: Set[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def anyMatch(a: Set[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def anyMatch(a: Set[js.Any], b: Set[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("libp2p-interfaces/src/pubsub/utils", "msgId")
-  @js.native
-  def msgId(from: String, seqno: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def ensureArray(maybeArray: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureArray")(maybeArray.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("libp2p-interfaces/src/pubsub/utils", "noSignMsgId")
-  @js.native
-  def noSignMsgId(data: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def msgId(from: String, seqno: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("msgId")(from.asInstanceOf[js.Any], seqno.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("libp2p-interfaces/src/pubsub/utils", "normalizeInRpcMessage")
-  @js.native
-  def normalizeInRpcMessage(message: js.Any, peerId: String): js.Any = js.native
+  @scala.inline
+  def noSignMsgId(data: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("noSignMsgId")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("libp2p-interfaces/src/pubsub/utils", "normalizeOutRpcMessage")
-  @js.native
-  def normalizeOutRpcMessage(message: js.Any): js.Any = js.native
+  @scala.inline
+  def normalizeInRpcMessage(message: js.Any, peerId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeInRpcMessage")(message.asInstanceOf[js.Any], peerId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("libp2p-interfaces/src/pubsub/utils", "randomSeqno")
-  @js.native
-  def randomSeqno(): Uint8Array = js.native
+  @scala.inline
+  def normalizeOutRpcMessage(message: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeOutRpcMessage")(message.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def randomSeqno(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomSeqno")().asInstanceOf[Uint8Array]
 }

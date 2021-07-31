@@ -2,20 +2,18 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cursor extends StObject {
   
   /** 光标位置 */
-  var cursor: Double = js.native
+  var cursor: Double
   
   /** keyCode 为键值 (目前工具还不支持返回keyCode参数) `2.1.0` 起支持 */
-  var keyCode: js.UndefOr[Double] = js.native
+  var keyCode: js.UndefOr[Double] = js.undefined
   
   /** 输入框内容 */
-  var value: String = js.native
+  var value: String
 }
 object Cursor {
   

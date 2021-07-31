@@ -2,47 +2,45 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexSpecification extends StObject {
   
-  var `2dsphereIndexVersion`: js.UndefOr[scala.Double] = js.native
+  var `2dsphereIndexVersion`: js.UndefOr[scala.Double] = js.undefined
   
-  var background: js.UndefOr[Boolean] = js.native
+  var background: js.UndefOr[Boolean] = js.undefined
   
-  var bits: js.UndefOr[scala.Double] = js.native
+  var bits: js.UndefOr[scala.Double] = js.undefined
   
-  var bucketSize: js.UndefOr[scala.Double] = js.native
+  var bucketSize: js.UndefOr[scala.Double] = js.undefined
   
-  var collation: js.UndefOr[CollationDocument] = js.native
+  var collation: js.UndefOr[CollationDocument] = js.undefined
   
-  var default_language: js.UndefOr[String] = js.native
+  var default_language: js.UndefOr[String] = js.undefined
   
-  var expireAfterSeconds: js.UndefOr[scala.Double] = js.native
+  var expireAfterSeconds: js.UndefOr[scala.Double] = js.undefined
   
-  var key: js.Object = js.native
+  var key: js.Object
   
-  var language_override: js.UndefOr[String] = js.native
+  var language_override: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[scala.Double] = js.native
+  var max: js.UndefOr[scala.Double] = js.undefined
   
-  var min: js.UndefOr[scala.Double] = js.native
+  var min: js.UndefOr[scala.Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var partialFilterExpression: js.UndefOr[js.Object] = js.native
+  var partialFilterExpression: js.UndefOr[js.Object] = js.undefined
   
-  var sparse: js.UndefOr[Boolean] = js.native
+  var sparse: js.UndefOr[Boolean] = js.undefined
   
-  var storageEngine: js.UndefOr[js.Object] = js.native
+  var storageEngine: js.UndefOr[js.Object] = js.undefined
   
-  var textIndexVersion: js.UndefOr[scala.Double] = js.native
+  var textIndexVersion: js.UndefOr[scala.Double] = js.undefined
   
-  var unique: js.UndefOr[Boolean] = js.native
+  var unique: js.UndefOr[Boolean] = js.undefined
   
-  var weights: js.UndefOr[js.Object] = js.native
+  var weights: js.UndefOr[js.Object] = js.undefined
 }
 object IndexSpecification {
   

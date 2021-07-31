@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AppMesh extends Service {
   
   @JSName("config")
-  var config_AppMesh: ConfigBase with ClientConfiguration = js.native
+  var config_AppMesh: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a gateway route. A gateway route is attached to a virtual gateway and routes traffic to an existing virtual service. If a route matches a request, it can distribute traffic to a target virtual service. For more information about gateway routes, see Gateway routes.

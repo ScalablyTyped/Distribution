@@ -2,15 +2,13 @@ package typings.babelPluginSyntaxJsx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ManipulateOptions extends StObject {
     
-    def manipulateOptions(opts: js.Any, parserOpts: Plugins): Unit = js.native
+    def manipulateOptions(opts: js.Any, parserOpts: Plugins): Unit
   }
   object ManipulateOptions {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Plugins extends StObject {
     
-    var plugins: js.Array[String] = js.native
+    var plugins: js.Array[String]
   }
   object Plugins {
     

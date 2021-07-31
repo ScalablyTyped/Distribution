@@ -10,9 +10,9 @@ Steam (OpenID 2) authentication strategy for PassportJS.
 | ------------------ | :-------------: |
 | Full name          | passport-steam |
 | Keywords           | passport, steam, auth, authn, authentication, identity |
-| # releases         | 4 |
-| # dependents       | 20 |
-| # downloads        | 246877 |
+| # releases         | 5 |
+| # dependents       | 21 |
+| # downloads        | 263533 |
 | # stars            | 8 |
 
 ## Links

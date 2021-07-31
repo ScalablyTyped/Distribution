@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listenerCertificateMod {
@@ -38,6 +37,10 @@ object listenerCertificateMod {
   /* static members */
   object ListenerCertificate {
     
+    @JSImport("@pulumi/aws/alb/listenerCertificate", "ListenerCertificate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ListenerCertificate resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object listenerCertificateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/alb/listenerCertificate", "ListenerCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ListenerCertificate = js.native
-    @JSImport("@pulumi/aws/alb/listenerCertificate", "ListenerCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ListenerCertificate = js.native
-    @JSImport("@pulumi/aws/alb/listenerCertificate", "ListenerCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerCertificateState): ListenerCertificate = js.native
-    @JSImport("@pulumi/aws/alb/listenerCertificate", "ListenerCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerCertificateState, opts: CustomResourceOptions): ListenerCertificate = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerCertificateState): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerCertificateState, opts: CustomResourceOptions): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
     
     /**
       * Returns true if the given object is an instance of ListenerCertificate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/alb/listenerCertificate", "ListenerCertificate.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/listenerCertificate.ListenerCertificate */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/listenerCertificate.ListenerCertificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/alb/listenerCertificate.ListenerCertificate */ Boolean]
   }
   
-  @js.native
   trait ListenerCertificateArgs extends StObject {
     
     /**
       * The ARN of the certificate to attach to the listener.
       */
-    val certificateArn: Input[String] = js.native
+    val certificateArn: Input[String]
     
     /**
       * The ARN of the listener to which to attach the certificate.
       */
-    val listenerArn: Input[String] = js.native
+    val listenerArn: Input[String]
   }
   object ListenerCertificateArgs {
     
@@ -101,18 +98,17 @@ object listenerCertificateMod {
     }
   }
   
-  @js.native
   trait ListenerCertificateState extends StObject {
     
     /**
       * The ARN of the certificate to attach to the listener.
       */
-    val certificateArn: js.UndefOr[Input[String]] = js.native
+    val certificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the listener to which to attach the certificate.
       */
-    val listenerArn: js.UndefOr[Input[String]] = js.native
+    val listenerArn: js.UndefOr[Input[String]] = js.undefined
   }
   object ListenerCertificateState {
     

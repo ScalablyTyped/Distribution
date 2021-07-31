@@ -2,13 +2,12 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AreaTextProps
-  extends AreaBaseProps
+  extends StObject
      with StyledTextProps
+     with AreaBaseProps
 object AreaTextProps {
   
   @scala.inline

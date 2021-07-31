@@ -3,39 +3,37 @@ package typings.winrtUwp.Windows.Devices.Sms
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encapsulates an SMS voicemail message. */
-@js.native
 trait SmsVoicemailMessage extends StObject {
   
   /** Gets the body of the voicemail message. */
-  var body: String = js.native
+  var body: String
   
   /** Gets the cellular class of the message. */
-  var cellularClass: CellularClass = js.native
+  var cellularClass: CellularClass
   
   /** Gets the unique device identifier associated with the message. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** Gets the message class of the message. */
-  var messageClass: SmsMessageClass = js.native
+  var messageClass: SmsMessageClass
   
   /** Gets the number of available messages. */
-  var messageCount: Double = js.native
+  var messageCount: Double
   
   /** Gets the type of the message. */
-  var messageType: SmsMessageType = js.native
+  var messageType: SmsMessageType
   
   /** Gets the ICCID (Integrated Circuit Card Identifier) of the SIM that received the message. */
-  var simIccId: String = js.native
+  var simIccId: String
   
   /** The timestamp of the message. */
-  var timestamp: Date = js.native
+  var timestamp: Date
   
   /** The phone number the message was sent to. */
-  var to: String = js.native
+  var to: String
 }
 object SmsVoicemailMessage {
   

@@ -11,7 +11,6 @@ import typings.semanticUiReact.transitionTransitionMod.TransitionEventData
 import typings.semanticUiReact.transitionTransitionMod.TransitionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionablePortalTransitionablePortalMod extends Shortcut {
@@ -28,11 +27,10 @@ object transitionablePortalTransitionablePortalMod extends Shortcut {
   @js.native
   val default: ComponentClass[TransitionablePortalProps, ComponentState] = js.native
   
-  @js.native
   trait StrictTransitionablePortalProps extends StObject {
     
     /** Primary content. */
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /**
       * Called when a close event happens.
@@ -41,8 +39,8 @@ object transitionablePortalTransitionablePortalMod extends Shortcut {
       * @param {object} data - All props and internal state.
       */
     var onClose: js.UndefOr[
-        js.Function2[/* nothing */ Null, /* data */ PortalProps with TransitionablePortalState, Unit]
-      ] = js.native
+        js.Function2[/* nothing */ Null, /* data */ PortalProps & TransitionablePortalState, Unit]
+      ] = js.undefined
     
     /**
       * Callback on each transition that changes visibility to hidden.
@@ -51,12 +49,8 @@ object transitionablePortalTransitionablePortalMod extends Shortcut {
       * @param {object} data - All props with status.
       */
     var onHide: js.UndefOr[
-        js.Function2[
-          /* nothing */ Null, 
-          /* data */ TransitionEventData with TransitionablePortalState, 
-          Unit
-        ]
-      ] = js.native
+        js.Function2[/* nothing */ Null, /* data */ TransitionEventData & TransitionablePortalState, Unit]
+      ] = js.undefined
     
     /**
       * Called when an open event happens.
@@ -65,8 +59,8 @@ object transitionablePortalTransitionablePortalMod extends Shortcut {
       * @param {object} data - All props and internal state.
       */
     var onOpen: js.UndefOr[
-        js.Function2[/* nothing */ Null, /* data */ PortalProps with TransitionablePortalState, Unit]
-      ] = js.native
+        js.Function2[/* nothing */ Null, /* data */ PortalProps & TransitionablePortalState, Unit]
+      ] = js.undefined
     
     /**
       * Callback on animation start.
@@ -75,18 +69,14 @@ object transitionablePortalTransitionablePortalMod extends Shortcut {
       * @param {object} data - All props with status.
       */
     var onStart: js.UndefOr[
-        js.Function2[
-          /* nothing */ Null, 
-          /* data */ TransitionEventData with TransitionablePortalState, 
-          Unit
-        ]
-      ] = js.native
+        js.Function2[/* nothing */ Null, /* data */ TransitionEventData & TransitionablePortalState, Unit]
+      ] = js.undefined
     
     /** Controls whether or not the portal is displayed. */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /** Transition props. */
-    var transition: js.UndefOr[TransitionProps] = js.native
+    var transition: js.UndefOr[TransitionProps] = js.undefined
   }
   object StrictTransitionablePortalProps {
     
@@ -106,25 +96,25 @@ object transitionablePortalTransitionablePortalMod extends Shortcut {
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       @scala.inline
-      def setOnClose(value: (/* nothing */ Null, /* data */ PortalProps with TransitionablePortalState) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+      def setOnClose(value: (/* nothing */ Null, /* data */ PortalProps & TransitionablePortalState) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
       @scala.inline
-      def setOnHide(value: (/* nothing */ Null, /* data */ TransitionEventData with TransitionablePortalState) => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction2(value))
+      def setOnHide(value: (/* nothing */ Null, /* data */ TransitionEventData & TransitionablePortalState) => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
       @scala.inline
-      def setOnOpen(value: (/* nothing */ Null, /* data */ PortalProps with TransitionablePortalState) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
+      def setOnOpen(value: (/* nothing */ Null, /* data */ PortalProps & TransitionablePortalState) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
       @scala.inline
-      def setOnStart(value: (/* nothing */ Null, /* data */ TransitionEventData with TransitionablePortalState) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
+      def setOnStart(value: (/* nothing */ Null, /* data */ TransitionEventData & TransitionablePortalState) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
@@ -143,9 +133,9 @@ object transitionablePortalTransitionablePortalMod extends Shortcut {
     }
   }
   
-  @js.native
   trait TransitionablePortalProps
-    extends StrictTransitionablePortalProps
+    extends StObject
+       with StrictTransitionablePortalProps
        with /* key */ StringDictionary[js.Any]
   object TransitionablePortalProps {
     
@@ -156,12 +146,11 @@ object transitionablePortalTransitionablePortalMod extends Shortcut {
     }
   }
   
-  @js.native
   trait TransitionablePortalState extends StObject {
     
-    var portalOpen: Boolean = js.native
+    var portalOpen: Boolean
     
-    var transitionVisible: Boolean = js.native
+    var transitionVisible: Boolean
   }
   object TransitionablePortalState {
     

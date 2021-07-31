@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMFResourceManager extends StObject {
   
-  def GetLocaleSpecificDateFormat(): String = js.native
+  def GetLocaleSpecificDateFormat(): String
   
-  def GetUICultures(): IStrings = js.native
+  def GetUICultures(): IStrings
   
-  def LoadResourceString(LanguageID: Double, ResourceID: Double): String = js.native
+  def LoadResourceString(LanguageID: Double, ResourceID: Double): String
 }
 object IMFResourceManager {
   

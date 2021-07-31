@@ -6,22 +6,25 @@ import typings.awsSdkTypes.credentialsMod.CredentialProvider
 import typings.awsSdkTypes.credentialsMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromCognitoIdentityMod {
   
-  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist/cjs/fromCognitoIdentity", "fromCognitoIdentity")
+  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist/cjs/fromCognitoIdentity", JSImport.Namespace)
   @js.native
-  def fromCognitoIdentity(parameters: FromCognitoIdentityParameters): CredentialProvider = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait CognitoIdentityCredentials extends Credentials {
+  @scala.inline
+  def fromCognitoIdentity(parameters: FromCognitoIdentityParameters): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCognitoIdentity")(parameters.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  
+  trait CognitoIdentityCredentials
+    extends StObject
+       with Credentials {
     
     /**
       * The Cognito ID returned by the last call to AWS.CognitoIdentity.getOpenIdToken().
       */
-    var identityId: String = js.native
+    var identityId: String
   }
   object CognitoIdentityCredentials {
     
@@ -39,14 +42,15 @@ object fromCognitoIdentityMod {
     }
   }
   
-  @js.native
-  trait FromCognitoIdentityParameters extends CognitoProviderParameters {
+  trait FromCognitoIdentityParameters
+    extends StObject
+       with CognitoProviderParameters {
     
     /**
       * The unique identifier for the identity against which credentials will be
       * issued.
       */
-    var identityId: String = js.native
+    var identityId: String
   }
   object FromCognitoIdentityParameters {
     

@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreencastFrameAckRequest extends StObject {
   
   /**
     * Frame number.
     */
-  var sessionId: integer = js.native
+  var sessionId: integer
 }
 object ScreencastFrameAckRequest {
   

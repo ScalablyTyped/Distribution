@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceAlgorithmSpecification extends StObject {
   
   /**
     * A list of the algorithms that were used to create a model package.
     */
-  var SourceAlgorithms: SourceAlgorithmList = js.native
+  var SourceAlgorithms: SourceAlgorithmList
 }
 object SourceAlgorithmSpecification {
   

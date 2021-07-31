@@ -2,26 +2,24 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRecipeVersionsRequest extends StObject {
   
   /**
     * The maximum number of results to return in this request. 
     */
-  var MaxResults: js.UndefOr[MaxResults100] = js.native
+  var MaxResults: js.UndefOr[MaxResults100] = js.undefined
   
   /**
     * The name of the recipe for which to return version information.
     */
-  var Name: RecipeName = js.native
+  var Name: RecipeName
   
   /**
     * A pagination token that can be used in a subsequent request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.databrewMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.databrewMod.NextToken] = js.undefined
 }
 object ListRecipeVersionsRequest {
   

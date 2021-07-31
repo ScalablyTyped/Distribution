@@ -2,24 +2,22 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageSettings extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def LanguageID(Id: MsoAppLanguageID): Double = js.native
+  def LanguageID(Id: MsoAppLanguageID): Double
   
-  def LanguagePreferredForEditing(lid: MsoLanguageID): Boolean = js.native
+  def LanguagePreferredForEditing(lid: MsoLanguageID): Boolean
   
   @JSName("Office.LanguageSettings_typekey")
-  var OfficeDotLanguageSettings_typekey: LanguageSettings = js.native
+  var OfficeDotLanguageSettings_typekey: LanguageSettings
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object LanguageSettings {
   

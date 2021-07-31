@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait PageLayoutLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var blackAndWhite: js.UndefOr[Boolean] = js.native
+  var blackAndWhite: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bottomMargin: js.UndefOr[Boolean] = js.native
+  var bottomMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var centerHorizontally: js.UndefOr[Boolean] = js.native
+  var centerHorizontally: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var centerVertically: js.UndefOr[Boolean] = js.native
+  var centerVertically: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var draftMode: js.UndefOr[Boolean] = js.native
+  var draftMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var firstPageNumber: js.UndefOr[Boolean] = js.native
+  var firstPageNumber: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var footerMargin: js.UndefOr[Boolean] = js.native
+  var footerMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var headerMargin: js.UndefOr[Boolean] = js.native
+  var headerMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var headersFooters: js.UndefOr[HeaderFooterGroupLoadOptions] = js.native
+  var headersFooters: js.UndefOr[HeaderFooterGroupLoadOptions] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var leftMargin: js.UndefOr[Boolean] = js.native
+  var leftMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var orientation: js.UndefOr[Boolean] = js.native
+  var orientation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var paperSize: js.UndefOr[Boolean] = js.native
+  var paperSize: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -122,7 +120,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var printComments: js.UndefOr[Boolean] = js.native
+  var printComments: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -130,7 +128,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var printErrors: js.UndefOr[Boolean] = js.native
+  var printErrors: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -138,7 +136,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var printGridlines: js.UndefOr[Boolean] = js.native
+  var printGridlines: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -146,7 +144,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var printHeadings: js.UndefOr[Boolean] = js.native
+  var printHeadings: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -154,7 +152,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var printOrder: js.UndefOr[Boolean] = js.native
+  var printOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -162,7 +160,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rightMargin: js.UndefOr[Boolean] = js.native
+  var rightMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -170,7 +168,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var topMargin: js.UndefOr[Boolean] = js.native
+  var topMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -179,7 +177,7 @@ trait PageLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var zoom: js.UndefOr[Boolean] = js.native
+  var zoom: js.UndefOr[Boolean] = js.undefined
 }
 object PageLayoutLoadOptions {
   

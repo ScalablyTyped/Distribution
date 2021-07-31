@@ -58,7 +58,6 @@ import typings.parse.mod.ErrorCode.VALIDATION_ERROR
 import typings.parse.mod.ErrorCode.X_DOMAIN_REQUEST
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Parse.Error")

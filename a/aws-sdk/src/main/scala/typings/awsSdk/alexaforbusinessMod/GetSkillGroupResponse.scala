@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSkillGroupResponse extends StObject {
   
   /**
     * The details of the skill group requested. Required.
     */
-  var SkillGroup: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillGroup] = js.native
+  var SkillGroup: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillGroup] = js.undefined
 }
 object GetSkillGroupResponse {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,34 +15,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.SheetLinks
   * @see com.sun.star.sheet.SheetLink
   */
-@js.native
-trait XSheetLinkable extends XInterface {
+trait XSheetLinkable
+  extends StObject
+     with XInterface {
   
   /**
     * returns the link mode of the spreadsheet.
     *
     * If the returned value is SheetLinkMode::NORMAL, formulas are copied. With SheetLinkMode::VALUE, only results of formulas are used.
     */
-  var LinkMode: SheetLinkMode = js.native
+  var LinkMode: SheetLinkMode
   
   /** returns the sheet name of the sheet in the source document. */
-  var LinkSheetName: String = js.native
+  var LinkSheetName: String
   
   /** returns the target URL of the link. */
-  var LinkUrl: String = js.native
+  var LinkUrl: String
   
   /**
     * returns the link mode of the spreadsheet.
     *
     * If the returned value is SheetLinkMode::NORMAL, formulas are copied. With SheetLinkMode::VALUE, only results of formulas are used.
     */
-  def getLinkMode(): SheetLinkMode = js.native
+  def getLinkMode(): SheetLinkMode
   
   /** returns the sheet name of the sheet in the source document. */
-  def getLinkSheetName(): String = js.native
+  def getLinkSheetName(): String
   
   /** returns the target URL of the link. */
-  def getLinkUrl(): String = js.native
+  def getLinkUrl(): String
   
   /**
     * links the sheet to another sheet in another document.
@@ -56,27 +56,27 @@ trait XSheetLinkable extends XInterface {
     aFilterName: String,
     aFilterOptions: String,
     nMode: SheetLinkMode
-  ): Unit = js.native
+  ): Unit
   
   /**
     * enables the linking of the sheet and controls whether formulas are copied.
     * @param nLinkMode the value specifying the link mode for this spreadsheet.  If the value is SheetLinkMode::NORMAL, formulas are copied. With SheetLinkMod
     */
-  def setLinkMode(nLinkMode: SheetLinkMode): Unit = js.native
+  def setLinkMode(nLinkMode: SheetLinkMode): Unit
   
   /**
     * sets the name of the linked sheet in the source document.
     *
     * This method sets the sheet name in the {@link SheetLink} object, it does not modify the sheet name in the source document.
     */
-  def setLinkSheetName(aLinkSheetName: String): Unit = js.native
+  def setLinkSheetName(aLinkSheetName: String): Unit
   
   /**
     * sets the target URL of the link.
     *
     * A {@link SheetLink} object with the same file name must exist already or the link will not work.
     */
-  def setLinkUrl(aLinkUrl: String): Unit = js.native
+  def setLinkUrl(aLinkUrl: String): Unit
 }
 object XSheetLinkable {
   

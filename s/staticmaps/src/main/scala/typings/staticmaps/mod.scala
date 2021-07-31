@@ -8,25 +8,25 @@ import typings.sharp.mod.WebpOptions
 import typings.staticmaps.anon.Max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("staticmaps", JSImport.Default)
   @js.native
-  class default protected () extends StaticMaps {
+  class default protected ()
+    extends StObject
+       with StaticMaps {
     def this(options: StaticMapsOptions) = this()
   }
   
-  @js.native
   trait AddLineOptions extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var coords: js.Array[js.Tuple2[Double, Double]] = js.native
+    var coords: js.Array[js.Tuple2[Double, Double]]
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AddLineOptions {
     
@@ -59,20 +59,19 @@ object mod {
     }
   }
   
-  @js.native
   trait AddMarkerOptions extends StObject {
     
-    var coord: js.Tuple2[Double, Double] = js.native
+    var coord: js.Tuple2[Double, Double]
     
-    var height: Double = js.native
+    var height: Double
     
-    var img: String = js.native
+    var img: String
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
   }
   object AddMarkerOptions {
     
@@ -111,16 +110,15 @@ object mod {
     }
   }
   
-  @js.native
   trait AddMultiPolygonOptions extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var coords: js.Array[js.Array[js.Tuple2[Double, Double]]] = js.native
+    var coords: js.Array[js.Array[js.Tuple2[Double, Double]]]
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AddMultiPolygonOptions {
     
@@ -159,10 +157,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait AddPolygonOptions extends AddLineOptions {
+  trait AddPolygonOptions
+    extends StObject
+       with AddLineOptions {
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
   }
   object AddPolygonOptions {
     
@@ -183,28 +182,27 @@ object mod {
     }
   }
   
-  @js.native
   trait AddTextOptions extends StObject {
     
     /**
       * Anchor of the text
       * @default 'start'
       */
-    var anchor: js.UndefOr[TextAnchor] = js.native
+    var anchor: js.UndefOr[TextAnchor] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var coord: js.Tuple2[Double, Double] = js.native
+    var coord: js.Tuple2[Double, Double]
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AddTextOptions {
     
@@ -277,79 +275,78 @@ object mod {
     var image: StaticMapsImage = js.native
     
     def render(): js.Promise[Unit] = js.native
-    def render(center: js.UndefOr[scala.Nothing], zoom: Double): js.Promise[Unit] = js.native
     def render(center: js.Array[Double]): js.Promise[Unit] = js.native
     def render(center: js.Array[Double], zoom: Double): js.Promise[Unit] = js.native
+    def render(center: Unit, zoom: Double): js.Promise[Unit] = js.native
   }
   
   @js.native
   trait StaticMapsImage extends StObject {
     
     def buffer(): js.Promise[Buffer] = js.native
-    def buffer(mime: js.UndefOr[scala.Nothing], outputOptions: JpegOptions): js.Promise[Buffer] = js.native
-    def buffer(mime: js.UndefOr[scala.Nothing], outputOptions: OutputOptions): js.Promise[Buffer] = js.native
-    def buffer(mime: js.UndefOr[scala.Nothing], outputOptions: PngOptions): js.Promise[Buffer] = js.native
-    def buffer(mime: js.UndefOr[scala.Nothing], outputOptions: WebpOptions): js.Promise[Buffer] = js.native
     def buffer(mime: String): js.Promise[Buffer] = js.native
     def buffer(mime: String, outputOptions: JpegOptions): js.Promise[Buffer] = js.native
     def buffer(mime: String, outputOptions: OutputOptions): js.Promise[Buffer] = js.native
     def buffer(mime: String, outputOptions: PngOptions): js.Promise[Buffer] = js.native
     def buffer(mime: String, outputOptions: WebpOptions): js.Promise[Buffer] = js.native
+    def buffer(mime: Unit, outputOptions: JpegOptions): js.Promise[Buffer] = js.native
+    def buffer(mime: Unit, outputOptions: OutputOptions): js.Promise[Buffer] = js.native
+    def buffer(mime: Unit, outputOptions: PngOptions): js.Promise[Buffer] = js.native
+    def buffer(mime: Unit, outputOptions: WebpOptions): js.Promise[Buffer] = js.native
     
     var image: Buffer = js.native
     
     def save(): js.Promise[Unit] = js.native
-    def save(fileName: js.UndefOr[scala.Nothing], outputOptions: JpegOptions): js.Promise[Unit] = js.native
-    def save(fileName: js.UndefOr[scala.Nothing], outputOptions: OutputOptions): js.Promise[Unit] = js.native
-    def save(fileName: js.UndefOr[scala.Nothing], outputOptions: PngOptions): js.Promise[Unit] = js.native
-    def save(fileName: js.UndefOr[scala.Nothing], outputOptions: WebpOptions): js.Promise[Unit] = js.native
     def save(fileName: String): js.Promise[Unit] = js.native
     def save(fileName: String, outputOptions: JpegOptions): js.Promise[Unit] = js.native
     def save(fileName: String, outputOptions: OutputOptions): js.Promise[Unit] = js.native
     def save(fileName: String, outputOptions: PngOptions): js.Promise[Unit] = js.native
     def save(fileName: String, outputOptions: WebpOptions): js.Promise[Unit] = js.native
+    def save(fileName: Unit, outputOptions: JpegOptions): js.Promise[Unit] = js.native
+    def save(fileName: Unit, outputOptions: OutputOptions): js.Promise[Unit] = js.native
+    def save(fileName: Unit, outputOptions: PngOptions): js.Promise[Unit] = js.native
+    def save(fileName: Unit, outputOptions: WebpOptions): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait StaticMapsOptions extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
     /** @deprecated Use zoomRange.max instead: */
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var paddingX: js.UndefOr[Double] = js.native
+    var paddingX: js.UndefOr[Double] = js.undefined
     
-    var paddingY: js.UndefOr[Double] = js.native
+    var paddingY: js.UndefOr[Double] = js.undefined
     
-    var reverseY: js.UndefOr[Boolean] = js.native
+    var reverseY: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Subdomains of tile server
       * @default []
       */
-    var subdomains: js.UndefOr[js.Array[String]] = js.native
+    var subdomains: js.UndefOr[js.Array[String]] = js.undefined
     
-    var tileRequestHeader: js.UndefOr[js.Object] = js.native
+    var tileRequestHeader: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Limit concurrent connections to the tiles server
       * @default 2
       */
-    var tileRequestLimit: js.UndefOr[Double] = js.native
+    var tileRequestLimit: js.UndefOr[Double] = js.undefined
     
-    var tileRequestTimeout: js.UndefOr[Double] = js.native
+    var tileRequestTimeout: js.UndefOr[Double] = js.undefined
     
-    var tileSize: js.UndefOr[Double] = js.native
+    var tileSize: js.UndefOr[Double] = js.undefined
     
-    var tileUrl: js.UndefOr[String] = js.native
+    var tileUrl: js.UndefOr[String] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
     
     /**
       * Defines the range of zoom levels to try
       */
-    var zoomRange: js.UndefOr[Max] = js.native
+    var zoomRange: js.UndefOr[Max] = js.undefined
   }
   object StaticMapsOptions {
     

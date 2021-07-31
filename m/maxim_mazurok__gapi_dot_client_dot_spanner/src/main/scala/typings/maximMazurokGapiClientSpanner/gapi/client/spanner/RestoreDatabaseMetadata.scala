@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreDatabaseMetadata extends StObject {
   
   /** Information about the backup used to restore the database. */
-  var backupInfo: js.UndefOr[BackupInfo] = js.native
+  var backupInfo: js.UndefOr[BackupInfo] = js.undefined
   
   /**
     * The time at which cancellation of this operation was received. Operations.CancelOperation starts asynchronous cancellation on a long-running operation. The server makes a best
@@ -17,10 +15,10 @@ trait RestoreDatabaseMetadata extends StObject {
     * operation completed despite cancellation. On successful cancellation, the operation is not deleted; instead, it becomes an operation with an Operation.error value with a
     * google.rpc.Status.code of 1, corresponding to `Code.CANCELLED`.
     */
-  var cancelTime: js.UndefOr[String] = js.native
+  var cancelTime: js.UndefOr[String] = js.undefined
   
   /** Name of the database being created and restored to. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If exists, the name of the long-running operation that will be used to track the post-restore optimization process to optimize the performance of the restored database, and remove
@@ -28,13 +26,13 @@ trait RestoreDatabaseMetadata extends StObject {
     * metadata type of the long-running operation is OptimizeRestoredDatabaseMetadata. This long-running operation will be automatically created by the system after the RestoreDatabase
     * long-running operation completes successfully. This operation will not be created if the restore was not successful.
     */
-  var optimizeDatabaseOperationName: js.UndefOr[String] = js.native
+  var optimizeDatabaseOperationName: js.UndefOr[String] = js.undefined
   
   /** The progress of the RestoreDatabase operation. */
-  var progress: js.UndefOr[OperationProgress] = js.native
+  var progress: js.UndefOr[OperationProgress] = js.undefined
   
   /** The type of the restore source. */
-  var sourceType: js.UndefOr[String] = js.native
+  var sourceType: js.UndefOr[String] = js.undefined
 }
 object RestoreDatabaseMetadata {
   

@@ -4,21 +4,19 @@ import typings.std.MediaQueryList
 import typings.std.MediaQueryListEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Listener extends StObject {
   
-  var listener: (js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, _]) | Null = js.native
+  var listener: (js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, js.Any]) | Null
   
-  var mql: MediaQueryList = js.native
+  var mql: MediaQueryList
 }
 object Listener {
   
   @scala.inline
   def apply(mql: MediaQueryList): Listener = {
-    val __obj = js.Dynamic.literal(mql = mql.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mql = mql.asInstanceOf[js.Any], listener = null)
     __obj.asInstanceOf[Listener]
   }
   
@@ -26,7 +24,7 @@ object Listener {
   implicit class ListenerMutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setListener(value: js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, _]): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+    def setListener(value: js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, js.Any]): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setListenerNull: Self = StObject.set(x, "listener", null)

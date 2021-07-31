@@ -10,9 +10,9 @@ import typings.rdfJs.mod.DataFactory
 import typings.rdfJs.mod.Sink
 import typings.rdfJs.mod.Stream
 import typings.std.Error
+import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,7 +20,8 @@ object mod {
   @JSImport("n3", "BaseQuad")
   @js.native
   class BaseQuad protected ()
-    extends typings.rdfJs.mod.BaseQuad {
+    extends StObject
+       with typings.rdfJs.mod.BaseQuad {
     def this(subject: Term, predicate: Term, `object`: Term) = this()
     def this(subject: Term, predicate: Term, `object`: Term, graph: Term) = this()
     
@@ -32,7 +33,8 @@ object mod {
   @JSImport("n3", "BlankNode")
   @js.native
   class BlankNode protected ()
-    extends typings.rdfJs.mod.BlankNode
+    extends StObject
+       with typings.rdfJs.mod.BlankNode
        with _QuadGraph
        with _QuadObject
        with _QuadSubject
@@ -56,102 +58,89 @@ object mod {
     @scala.inline
     def nextId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextId")(x.asInstanceOf[js.Any])
     
-    @JSImport("n3", "BlankNode.subclass")
-    @js.native
-    def subclass(`type`: js.Any): Unit = js.native
+    @scala.inline
+    def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object DataFactory {
     
-    @JSImport("n3", "DataFactory.blankNode")
+    @JSImport("n3", "DataFactory")
     @js.native
-    def blankNode(): BlankNode = js.native
-    @JSImport("n3", "DataFactory.blankNode")
-    @js.native
-    def blankNode(value: String): BlankNode = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("n3", "DataFactory.defaultGraph")
-    @js.native
-    def defaultGraph(): DefaultGraph = js.native
+    @scala.inline
+    def blankNode(): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")().asInstanceOf[BlankNode]
+    @scala.inline
+    def blankNode(value: String): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")(value.asInstanceOf[js.Any]).asInstanceOf[BlankNode]
     
-    @JSImport("n3", "DataFactory.literal")
-    @js.native
-    def literal(value: String): Literal = js.native
-    @JSImport("n3", "DataFactory.literal")
-    @js.native
-    def literal(value: String, languageOrDatatype: String): Literal = js.native
-    @JSImport("n3", "DataFactory.literal")
-    @js.native
-    def literal(value: String, languageOrDatatype: typings.rdfJs.mod.NamedNode[String]): Literal = js.native
-    @JSImport("n3", "DataFactory.literal")
-    @js.native
-    def literal(value: Double): Literal = js.native
-    @JSImport("n3", "DataFactory.literal")
-    @js.native
-    def literal(value: Double, languageOrDatatype: String): Literal = js.native
-    @JSImport("n3", "DataFactory.literal")
-    @js.native
-    def literal(value: Double, languageOrDatatype: typings.rdfJs.mod.NamedNode[String]): Literal = js.native
+    @scala.inline
+    def defaultGraph(): DefaultGraph = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGraph")().asInstanceOf[DefaultGraph]
     
-    @JSImport("n3", "DataFactory.namedNode")
-    @js.native
-    def namedNode[Iri /* <: String */](value: Iri): NamedNode[Iri] = js.native
+    @scala.inline
+    def literal(value: String): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
+    @scala.inline
+    def literal(value: String, languageOrDatatype: String): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+    @scala.inline
+    def literal(value: String, languageOrDatatype: typings.rdfJs.mod.NamedNode[String]): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+    @scala.inline
+    def literal(value: Double): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
+    @scala.inline
+    def literal(value: Double, languageOrDatatype: String): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+    @scala.inline
+    def literal(value: Double, languageOrDatatype: typings.rdfJs.mod.NamedNode[String]): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
     
-    @JSImport("n3", "DataFactory.quad")
-    @js.native
+    @scala.inline
+    def namedNode[Iri /* <: String */](value: Iri): NamedNode[Iri] = ^.asInstanceOf[js.Dynamic].applyDynamic("namedNode")(value.asInstanceOf[js.Any]).asInstanceOf[NamedNode[Iri]]
+    
+    @scala.inline
     def quad(
       subject: typings.rdfJs.mod.QuadSubject,
       predicate: typings.rdfJs.mod.QuadPredicate,
       `object`: typings.rdfJs.mod.QuadObject
-    ): Quad = js.native
-    @JSImport("n3", "DataFactory.quad")
-    @js.native
+    ): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Quad]
+    @scala.inline
     def quad(
       subject: typings.rdfJs.mod.QuadSubject,
       predicate: typings.rdfJs.mod.QuadPredicate,
       `object`: typings.rdfJs.mod.QuadObject,
       graph: typings.rdfJs.mod.QuadGraph
-    ): Quad = js.native
-    @JSImport("n3", "DataFactory.quad")
-    @js.native
+    ): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[Quad]
+    @scala.inline
     def quad[Q_In /* <: typings.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
       subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['subject'] */ js.Any,
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['object'] */ js.Any
-    ): Q_Out = js.native
-    @JSImport("n3", "DataFactory.quad")
-    @js.native
+    ): Q_Out = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Q_Out]
+    @scala.inline
     def quad[Q_In /* <: typings.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
       subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['subject'] */ js.Any,
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['object'] */ js.Any,
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['graph'] */ js.Any
-    ): Q_Out = js.native
+    ): Q_Out = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[Q_Out]
     
-    @JSImport("n3", "DataFactory.triple")
-    @js.native
+    @scala.inline
     def triple(
       subject: typings.rdfJs.mod.QuadSubject,
       predicate: typings.rdfJs.mod.QuadPredicate,
       `object`: typings.rdfJs.mod.QuadObject
-    ): Quad = js.native
-    @JSImport("n3", "DataFactory.triple")
-    @js.native
+    ): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("triple")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Quad]
+    @scala.inline
     def triple[Q_In /* <: typings.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
       subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['subject'] */ js.Any,
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['object'] */ js.Any
-    ): Q_Out = js.native
+    ): Q_Out = (^.asInstanceOf[js.Dynamic].applyDynamic("triple")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Q_Out]
     
-    @JSImport("n3", "DataFactory.variable")
-    @js.native
-    def variable(value: String): Variable = js.native
+    @scala.inline
+    def variable(value: String): Variable = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(value.asInstanceOf[js.Any]).asInstanceOf[Variable]
   }
   
   @JSImport("n3", "DefaultGraph")
   @js.native
   class DefaultGraph ()
-    extends typings.rdfJs.mod.DefaultGraph
+    extends StObject
+       with typings.rdfJs.mod.DefaultGraph
        with _QuadGraph
        with _Term {
     
@@ -162,15 +151,19 @@ object mod {
   /* static members */
   object DefaultGraph {
     
-    @JSImport("n3", "DefaultGraph.subclass")
+    @JSImport("n3", "DefaultGraph")
     @js.native
-    def subclass(`type`: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("n3", "Literal")
   @js.native
   class Literal protected ()
-    extends typings.rdfJs.mod.Literal
+    extends StObject
+       with typings.rdfJs.mod.Literal
        with _QuadObject
        with _Term {
     def this(id: String) = this()
@@ -184,19 +177,23 @@ object mod {
   /* static members */
   object Literal {
     
+    @JSImport("n3", "Literal")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("n3", "Literal.langStringDatatype")
     @js.native
     val langStringDatatype: NamedNode[String] = js.native
     
-    @JSImport("n3", "Literal.subclass")
-    @js.native
-    def subclass(`type`: js.Any): Unit = js.native
+    @scala.inline
+    def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("n3", "NamedNode")
   @js.native
   class NamedNode[Iri /* <: String */] protected ()
-    extends typings.rdfJs.mod.NamedNode[Iri] {
+    extends StObject
+       with typings.rdfJs.mod.NamedNode[Iri] {
     def this(iri: Iri) = this()
     
     val id: String = js.native
@@ -206,9 +203,12 @@ object mod {
   /* static members */
   object NamedNode {
     
-    @JSImport("n3", "NamedNode.subclass")
+    @JSImport("n3", "NamedNode")
     @js.native
-    def subclass(`type`: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("n3", "Parser")
@@ -264,23 +264,17 @@ object mod {
   @JSImport("n3", "Store")
   @js.native
   class Store[Q_RDF /* <: typings.rdfJs.mod.BaseQuad */, Q_N3 /* <: BaseQuad */] ()
-    extends typings.rdfJs.mod.Store[Q_RDF] {
+    extends StObject
+       with typings.rdfJs.mod.Store[Q_RDF] {
     def this(triples: js.Array[Q_RDF]) = this()
-    def this(triples: js.UndefOr[scala.Nothing], options: StoreOptions) = this()
     def this(triples: js.Array[Q_RDF], options: StoreOptions) = this()
+    def this(triples: Unit, options: StoreOptions) = this()
     
     def addQuad(quad: Q_RDF): Unit = js.native
     def addQuad(
       subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
-    ): Unit = js.native
-    def addQuad(
-      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
-      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
-      `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any,
-      graph: js.UndefOr[scala.Nothing],
-      done: js.Function0[Unit]
     ): Unit = js.native
     def addQuad(
       subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
@@ -293,6 +287,13 @@ object mod {
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any,
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['graph'] */ js.Any,
+      done: js.Function0[Unit]
+    ): Unit = js.native
+    def addQuad(
+      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+      `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any,
+      graph: Unit,
       done: js.Function0[Unit]
     ): Unit = js.native
     def addQuad(
@@ -308,15 +309,6 @@ object mod {
       `object`: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
         ],
-      graph: js.UndefOr[scala.Nothing],
-      done: js.Function0[Unit]
-    ): Unit = js.native
-    def addQuad(
-      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
-      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
-      `object`: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
-        ],
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['graph'] */ js.Any
     ): Unit = js.native
     def addQuad(
@@ -326,6 +318,15 @@ object mod {
           /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
         ],
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['graph'] */ js.Any,
+      done: js.Function0[Unit]
+    ): Unit = js.native
+    def addQuad(
+      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+      `object`: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
+        ],
+      graph: Unit,
       done: js.Function0[Unit]
     ): Unit = js.native
     
@@ -403,18 +404,41 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: Q_N3['subject'] */ js.Any
       ] = js.native
     
+    /**
+      * Consumes the given stream.
+      *
+      * The `end` and `error` events are used like described in the Stream interface.
+      * Depending on the use case, subtypes of EventEmitter or Stream are used.
+      * @see Stream
+      *
+      * @param stream The stream that will be consumed.
+      * @return The resulting event emitter.
+      */
+    /* CompleteClass */
+    override def `import`(stream: Stream[Q_RDF]): EventEmitter = js.native
+    
+    /**
+      * Returns a stream that processes all quads matching the pattern.
+      *
+      * @param subject   The optional exact subject or subject regex to match.
+      * @param predicate The optional exact predicate or predicate regex to match.
+      * @param object    The optional exact object or object regex to match.
+      * @param graph     The optional exact graph or graph regex to match.
+      * @return The resulting quad stream.
+      */
+    /* CompleteClass */
+    override def `match`(
+      subject: js.UndefOr[typings.rdfJs.mod.Term | RegExp],
+      predicate: js.UndefOr[typings.rdfJs.mod.Term | RegExp],
+      `object`: js.UndefOr[typings.rdfJs.mod.Term | RegExp],
+      graph: js.UndefOr[typings.rdfJs.mod.Term | RegExp]
+    ): Stream[Q_RDF] = js.native
+    
     def removeQuad(quad: Q_RDF): Unit = js.native
     def removeQuad(
       subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
-    ): Unit = js.native
-    def removeQuad(
-      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
-      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
-      `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any,
-      graph: js.UndefOr[scala.Nothing],
-      done: js.Function0[Unit]
     ): Unit = js.native
     def removeQuad(
       subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
@@ -427,6 +451,13 @@ object mod {
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any,
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['graph'] */ js.Any,
+      done: js.Function0[Unit]
+    ): Unit = js.native
+    def removeQuad(
+      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+      `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any,
+      graph: Unit,
       done: js.Function0[Unit]
     ): Unit = js.native
     def removeQuad(
@@ -442,15 +473,6 @@ object mod {
       `object`: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
         ],
-      graph: js.UndefOr[scala.Nothing],
-      done: js.Function0[Unit]
-    ): Unit = js.native
-    def removeQuad(
-      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
-      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
-      `object`: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
-        ],
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['graph'] */ js.Any
     ): Unit = js.native
     def removeQuad(
@@ -460,6 +482,15 @@ object mod {
           /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
         ],
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['graph'] */ js.Any,
+      done: js.Function0[Unit]
+    ): Unit = js.native
+    def removeQuad(
+      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+      `object`: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
+        ],
+      graph: Unit,
       done: js.Function0[Unit]
     ): Unit = js.native
     
@@ -478,6 +509,19 @@ object mod {
        with Sink[EventEmitter, Stream[Q]] {
     def this(options: ParserOptions) = this()
     
+    /**
+      * Consumes the given stream.
+      *
+      * The `end` and `error` events are used like described in the Stream interface.
+      * Depending on the use case, subtypes of EventEmitter or Stream are used.
+      * @see Stream
+      *
+      * @param stream The stream that will be consumed.
+      * @return The resulting event emitter.
+      */
+    /* CompleteClass */
+    override def `import`(stream: EventEmitter): Stream[Q] = js.native
+    
     /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T): T = js.native
     /* InferMemberOverrides */
@@ -490,7 +534,7 @@ object mod {
       * @return A quad from the internal buffer, or null if none is available.
       */
     /* InferMemberOverrides */
-    override def read(): (Q | Null) with (String | Buffer) = js.native
+    override def read(): (Q | Null) & (String | Buffer) = js.native
   }
   
   @JSImport("n3", "StreamWriter")
@@ -501,6 +545,19 @@ object mod {
     def this(fd: js.Any) = this()
     def this(options: WriterOptions) = this()
     def this(fd: js.Any, options: WriterOptions) = this()
+    
+    /**
+      * Consumes the given stream.
+      *
+      * The `end` and `error` events are used like described in the Stream interface.
+      * Depending on the use case, subtypes of EventEmitter or Stream are used.
+      * @see Stream
+      *
+      * @param stream The stream that will be consumed.
+      * @return The resulting event emitter.
+      */
+    /* CompleteClass */
+    override def `import`(stream: Stream[Q]): EventEmitter = js.native
     
     /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T): T = js.native
@@ -517,76 +574,64 @@ object mod {
   
   object Util {
     
-    @JSImport("n3", "Util.inDefaultGraph")
+    @JSImport("n3", "Util")
     @js.native
-    def inDefaultGraph(value: typings.rdfJs.mod.Quad): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("n3", "Util.isBlankNode")
-    @js.native
-    def isBlankNode(): Boolean = js.native
-    @JSImport("n3", "Util.isBlankNode")
-    @js.native
-    def isBlankNode(value: typings.rdfJs.mod.Term): Boolean = js.native
+    @scala.inline
+    def inDefaultGraph(value: typings.rdfJs.mod.Quad): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inDefaultGraph")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("n3", "Util.isDefaultGraph")
-    @js.native
-    def isDefaultGraph(): Boolean = js.native
-    @JSImport("n3", "Util.isDefaultGraph")
-    @js.native
-    def isDefaultGraph(value: typings.rdfJs.mod.Term): Boolean = js.native
+    @scala.inline
+    def isBlankNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlankNode")().asInstanceOf[Boolean]
+    @scala.inline
+    def isBlankNode(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlankNode")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("n3", "Util.isLiteral")
-    @js.native
-    def isLiteral(): Boolean = js.native
-    @JSImport("n3", "Util.isLiteral")
-    @js.native
-    def isLiteral(value: typings.rdfJs.mod.Term): Boolean = js.native
+    @scala.inline
+    def isDefaultGraph(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultGraph")().asInstanceOf[Boolean]
+    @scala.inline
+    def isDefaultGraph(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultGraph")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("n3", "Util.isNamedNode")
-    @js.native
-    def isNamedNode(): Boolean = js.native
-    @JSImport("n3", "Util.isNamedNode")
-    @js.native
-    def isNamedNode(value: typings.rdfJs.mod.Term): Boolean = js.native
+    @scala.inline
+    def isLiteral(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteral")().asInstanceOf[Boolean]
+    @scala.inline
+    def isLiteral(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("n3", "Util.isVariable")
-    @js.native
-    def isVariable(): Boolean = js.native
-    @JSImport("n3", "Util.isVariable")
-    @js.native
-    def isVariable(value: typings.rdfJs.mod.Term): Boolean = js.native
+    @scala.inline
+    def isNamedNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedNode")().asInstanceOf[Boolean]
+    @scala.inline
+    def isNamedNode(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedNode")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("n3", "Util.prefix")
-    @js.native
-    def prefix(iri: String): PrefixedToIri = js.native
-    @JSImport("n3", "Util.prefix")
-    @js.native
-    def prefix(iri: String, factory: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]): PrefixedToIri = js.native
-    @JSImport("n3", "Util.prefix")
-    @js.native
-    def prefix(iri: typings.rdfJs.mod.NamedNode[String]): PrefixedToIri = js.native
-    @JSImport("n3", "Util.prefix")
-    @js.native
+    @scala.inline
+    def isVariable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariable")().asInstanceOf[Boolean]
+    @scala.inline
+    def isVariable(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def prefix(iri: String): PrefixedToIri = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any]).asInstanceOf[PrefixedToIri]
+    @scala.inline
+    def prefix(iri: String, factory: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]): PrefixedToIri = (^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[PrefixedToIri]
+    @scala.inline
+    def prefix(iri: typings.rdfJs.mod.NamedNode[String]): PrefixedToIri = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any]).asInstanceOf[PrefixedToIri]
+    @scala.inline
     def prefix(
       iri: typings.rdfJs.mod.NamedNode[String],
       factory: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]
-    ): PrefixedToIri = js.native
+    ): PrefixedToIri = (^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[PrefixedToIri]
     
-    @JSImport("n3", "Util.prefixes")
-    @js.native
-    def prefixes(defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode[String] | String]): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
-    @JSImport("n3", "Util.prefixes")
-    @js.native
+    @scala.inline
+    def prefixes(defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode[String] | String]): js.Function1[/* prefix */ String, PrefixedToIri] = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixes")(defaultPrefixes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* prefix */ String, PrefixedToIri]]
+    @scala.inline
     def prefixes(
       defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode[String] | String],
       factory: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]
-    ): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
+    ): js.Function1[/* prefix */ String, PrefixedToIri] = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixes")(defaultPrefixes.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* prefix */ String, PrefixedToIri]]
   }
   
   @JSImport("n3", "Variable")
   @js.native
   class Variable protected ()
-    extends typings.rdfJs.mod.Variable
+    extends StObject
+       with typings.rdfJs.mod.Variable
        with _QuadGraph
        with _QuadObject
        with _QuadSubject
@@ -600,9 +645,12 @@ object mod {
   /* static members */
   object Variable {
     
-    @JSImport("n3", "Variable.subclass")
+    @JSImport("n3", "Variable")
     @js.native
-    def subclass(`type`: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("n3", "Writer")
@@ -630,13 +678,6 @@ object mod {
       subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
-      graph: js.UndefOr[scala.Nothing],
-      done: js.Function0[Unit]
-    ): Unit = js.native
-    def addQuad(
-      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
-      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
-      `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any
     ): Unit = js.native
     def addQuad(
@@ -644,6 +685,13 @@ object mod {
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any,
+      done: js.Function0[Unit]
+    ): Unit = js.native
+    def addQuad(
+      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+      `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
+      graph: Unit,
       done: js.Function0[Unit]
     ): Unit = js.native
     def addQuad(
@@ -659,15 +707,6 @@ object mod {
       `object`: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
         ],
-      graph: js.UndefOr[scala.Nothing],
-      done: js.Function0[Unit]
-    ): Unit = js.native
-    def addQuad(
-      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
-      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
-      `object`: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
-        ],
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any
     ): Unit = js.native
     def addQuad(
@@ -677,6 +716,15 @@ object mod {
           /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
         ],
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any,
+      done: js.Function0[Unit]
+    ): Unit = js.native
+    def addQuad(
+      subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+      predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+      `object`: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
+        ],
+      graph: Unit,
       done: js.Function0[Unit]
     ): Unit = js.native
     
@@ -691,7 +739,7 @@ object mod {
     def blank(triple: typings.rdfJs.mod.Quad): BlankNode = js.native
     
     def end(): Unit = js.native
-    def end(err: js.UndefOr[scala.Nothing], result: String): Unit = js.native
+    def end(err: Unit, result: String): Unit = js.native
     def end(err: ErrorCallback): Unit = js.native
     def end(err: ErrorCallback, result: String): Unit = js.native
     
@@ -717,12 +765,11 @@ object mod {
     def quadsToString(quads: js.Array[typings.rdfJs.mod.Quad]): String = js.native
   }
   
-  @js.native
   trait BlankTriple[Q /* <: typings.rdfJs.mod.BaseQuad */] extends StObject {
     
-    var `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any = js.native
+    var `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
     
-    var predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any = js.native
+    var predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any
   }
   object BlankTriple {
     
@@ -737,7 +784,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BlankTripleMutableBuilder[Self <: BlankTriple[_], Q /* <: typings.rdfJs.mod.BaseQuad */] (val x: Self with BlankTriple[Q]) extends AnyVal {
+    implicit class BlankTripleMutableBuilder[Self <: BlankTriple[?], Q /* <: typings.rdfJs.mod.BaseQuad */] (val x: Self & BlankTriple[Q]) extends AnyVal {
       
       @scala.inline
       def setObject(value: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
@@ -751,7 +798,12 @@ object mod {
   
   type ErrorCallback = js.Function2[/* err */ Error, /* result */ js.Any, Unit]
   
-  type Logger = js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+  @js.native
+  trait Logger extends StObject {
+    
+    def apply(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def apply(message: Unit, optionalParams: js.Any*): Unit = js.native
+  }
   
   type OTerm = typings.rdfJs.mod.Term | String | Null
   
@@ -762,16 +814,15 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait ParserOptions extends StObject {
     
-    var baseIRI: js.UndefOr[String] = js.native
+    var baseIRI: js.UndefOr[String] = js.undefined
     
-    var blankNodePrefix: js.UndefOr[String] = js.native
+    var blankNodePrefix: js.UndefOr[String] = js.undefined
     
-    var factory: js.UndefOr[DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]] = js.native
+    var factory: js.UndefOr[DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
   }
   object ParserOptions {
     
@@ -843,10 +894,9 @@ object mod {
   
   type Quad_Predicate = NamedNode[String] | Variable
   
-  @js.native
   trait StoreOptions extends StObject {
     
-    var factory: js.UndefOr[DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]] = js.native
+    var factory: js.UndefOr[DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]] = js.undefined
   }
   object StoreOptions {
     
@@ -876,14 +926,13 @@ object mod {
   */
   type Term = _Term | NamedNode[String]
   
-  @js.native
   trait WriterOptions extends StObject {
     
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var prefixes: js.UndefOr[Prefixes[typings.rdfJs.mod.NamedNode[String] | String]] = js.native
+    var prefixes: js.UndefOr[Prefixes[typings.rdfJs.mod.NamedNode[String] | String]] = js.undefined
   }
   object WriterOptions {
     

@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 
   */
 @js.native
-trait ClassZipFile extends ClassObject {
+trait ClassZipFile
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -79,7 +80,7 @@ trait ClassZipFile extends ClassObject {
     * 
     * @async
     */
-  def infolist(): js.Array[_] = js.native
+  def infolist(): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -89,7 +90,7 @@ trait ClassZipFile extends ClassObject {
     * 
     * @async
     */
-  def namelist(): js.Array[_] = js.native
+  def namelist(): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -113,8 +114,8 @@ trait ClassZipFile extends ClassObject {
     * 
     * @async
     */
-  def readAll(): js.Array[_] = js.native
-  def readAll(password: String): js.Array[_] = js.native
+  def readAll(): js.Array[js.Any] = js.native
+  def readAll(password: String): js.Array[js.Any] = js.native
   
   /**
     * 

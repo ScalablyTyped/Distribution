@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,50 +16,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     item.setTitle('Pick a number between 1 and 10')
   *         .setBounds(1, 10);
   */
-@js.native
 trait ScaleItem extends StObject {
   
-  def createResponse(response: Integer): ItemResponse = js.native
+  def createResponse(response: Integer): ItemResponse
   
-  def duplicate(): ScaleItem = js.native
+  def duplicate(): ScaleItem
   
-  def getGeneralFeedback(): QuizFeedback = js.native
+  def getGeneralFeedback(): QuizFeedback
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getLeftLabel(): String = js.native
+  def getLeftLabel(): String
   
-  def getLowerBound(): Integer = js.native
+  def getLowerBound(): Integer
   
-  def getPoints(): Integer = js.native
+  def getPoints(): Integer
   
-  def getRightLabel(): String = js.native
+  def getRightLabel(): String
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def getUpperBound(): Integer = js.native
+  def getUpperBound(): Integer
   
-  def isRequired(): Boolean = js.native
+  def isRequired(): Boolean
   
-  def setBounds(lower: Integer, upper: Integer): ScaleItem = js.native
+  def setBounds(lower: Integer, upper: Integer): ScaleItem
   
-  def setGeneralFeedback(feedback: QuizFeedback): ScaleItem = js.native
+  def setGeneralFeedback(feedback: QuizFeedback): ScaleItem
   
-  def setHelpText(text: String): ScaleItem = js.native
+  def setHelpText(text: String): ScaleItem
   
-  def setLabels(lower: String, upper: String): ScaleItem = js.native
+  def setLabels(lower: String, upper: String): ScaleItem
   
-  def setPoints(points: Integer): ScaleItem = js.native
+  def setPoints(points: Integer): ScaleItem
   
-  def setRequired(enabled: Boolean): ScaleItem = js.native
+  def setRequired(enabled: Boolean): ScaleItem
   
-  def setTitle(title: String): ScaleItem = js.native
+  def setTitle(title: String): ScaleItem
 }
 object ScaleItem {
   

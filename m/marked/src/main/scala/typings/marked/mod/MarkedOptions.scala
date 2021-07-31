@@ -2,36 +2,34 @@ package typings.marked.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkedOptions extends StObject {
   
   /**
     * A prefix URL for any relative link.
     */
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Enable GFM line breaks. This option requires the gfm option to be true.
     */
-  var breaks: js.UndefOr[Boolean] = js.native
+  var breaks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable GitHub flavored markdown.
     */
-  var gfm: js.UndefOr[Boolean] = js.native
+  var gfm: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Include an id attribute when emitting headings.
     */
-  var headerIds: js.UndefOr[Boolean] = js.native
+  var headerIds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the prefix for header tag ids.
     */
-  var headerPrefix: js.UndefOr[String] = js.native
+  var headerPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * A function to highlight code blocks. The function can either be
@@ -48,59 +46,59 @@ trait MarkedOptions extends StObject {
       ], 
       String | Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set the prefix for code block classes.
     */
-  var langPrefix: js.UndefOr[String] = js.native
+  var langPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * Mangle autolinks (<email@domain.com>).
     */
-  var mangle: js.UndefOr[Boolean] = js.native
+  var mangle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Conform to obscure parts of markdown.pl as much as possible. Don't fix any of the original markdown bugs or poor behavior.
     */
-  var pedantic: js.UndefOr[Boolean] = js.native
+  var pedantic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Type: object Default: new Renderer()
     *
     * An object containing functions to render tokens to HTML.
     */
-  var renderer: js.UndefOr[Renderer] = js.native
+  var renderer: js.UndefOr[Renderer] = js.undefined
   
   /**
     * Sanitize the output. Ignore any HTML that has been input.
     */
-  var sanitize: js.UndefOr[Boolean] = js.native
+  var sanitize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optionally sanitize found HTML with a sanitizer function.
     */
-  var sanitizer: js.UndefOr[js.Function1[/* html */ String, String]] = js.native
+  var sanitizer: js.UndefOr[js.Function1[/* html */ String, String]] = js.undefined
   
   /**
     * Shows an HTML error message when rendering fails.
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use smarter list behavior than the original markdown. May eventually be default with the old behavior moved into pedantic.
     */
-  var smartLists: js.UndefOr[Boolean] = js.native
+  var smartLists: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use "smart" typograhic punctuation for things like quotes and dashes.
     */
-  var smartypants: js.UndefOr[Boolean] = js.native
+  var smartypants: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The tokenizer defines how to turn markdown text into tokens.
     */
-  var tokenizer: js.UndefOr[Tokenizer] = js.native
+  var tokenizer: js.UndefOr[Tokenizer] = js.undefined
   
   /**
     * The walkTokens function gets called with every token.
@@ -109,13 +107,17 @@ trait MarkedOptions extends StObject {
     * The return value of the function is ignored.
     */
   var walkTokens: js.UndefOr[
-    js.Function2[/* tokens */ TokensList, /* callback */ js.Function1[/* token */ Token, Unit], _]
-  ] = js.native
+    js.Function2[
+      /* tokens */ TokensList, 
+      /* callback */ js.Function1[/* token */ Token, Unit], 
+      js.Any
+    ]
+  ] = js.undefined
   
   /**
     * Generate closing slash for self-closing tags (<br/> instead of <br>)
     */
-  var xhtml: js.UndefOr[Boolean] = js.native
+  var xhtml: js.UndefOr[Boolean] = js.undefined
 }
 object MarkedOptions {
   
@@ -229,7 +231,7 @@ object MarkedOptions {
     def setTokenizerUndefined: Self = StObject.set(x, "tokenizer", js.undefined)
     
     @scala.inline
-    def setWalkTokens(value: (/* tokens */ TokensList, /* callback */ js.Function1[/* token */ Token, Unit]) => _): Self = StObject.set(x, "walkTokens", js.Any.fromFunction2(value))
+    def setWalkTokens(value: (/* tokens */ TokensList, /* callback */ js.Function1[/* token */ Token, Unit]) => js.Any): Self = StObject.set(x, "walkTokens", js.Any.fromFunction2(value))
     
     @scala.inline
     def setWalkTokensUndefined: Self = StObject.set(x, "walkTokens", js.undefined)

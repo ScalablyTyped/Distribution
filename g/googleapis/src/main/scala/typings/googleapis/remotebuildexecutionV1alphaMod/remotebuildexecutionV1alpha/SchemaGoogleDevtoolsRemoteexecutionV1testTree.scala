@@ -2,14 +2,12 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `Tree` contains all the Directory protos in a single directory Merkle
   * tree, compressed into one message.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteexecutionV1testTree extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testTree extends StObject {
     * tree, the client must take the digests of each of the child directories
     * and then build up a tree starting from the `root`.
     */
-  var children: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testDirectory]] = js.native
+  var children: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testDirectory]] = js.undefined
   
   /**
     * The root directory in the tree.
     */
-  var root: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testDirectory] = js.native
+  var root: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testDirectory] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testTree {
   

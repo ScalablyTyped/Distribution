@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** CreateIntent. */
-@js.native
 trait CreateIntent extends StObject {
   
   /** The timestamp for creation of the object. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** The description of the intent. This string cannot contain carriage return, newline, or tab characters, and it must be no longer than 128 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** An array of user input examples for the intent. */
-  var examples: js.UndefOr[js.Array[Example]] = js.native
+  var examples: js.UndefOr[js.Array[Example]] = js.undefined
   
   /** The name of the intent. This string must conform to the following restrictions: - It can contain only Unicode alphanumeric, underscore, hyphen, and dot characters. - It cannot begin with the reserved prefix `sys-`. - It must be no longer than 128 characters. */
-  var intent: String = js.native
+  var intent: String
   
   /** The timestamp for the most recent update to the object. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object CreateIntent {
   

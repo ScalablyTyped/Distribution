@@ -2,201 +2,199 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSystemInfoResult extends StObject {
   
   /**
     * App平台
     */
-  var AppPlatform: js.UndefOr[String] = js.native
+  var AppPlatform: js.UndefOr[String] = js.undefined
   
   /**
     * 客户端基础库版本
     */
-  var SDKVersion: js.UndefOr[String] = js.native
+  var SDKVersion: js.UndefOr[String] = js.undefined
   
   /**
     * 允许微信使用相册的开关（仅 iOS 有效）
     */
-  var albumAuthorized: js.UndefOr[Boolean] = js.native
+  var albumAuthorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 当前运行的客户端
     */
-  var app: js.UndefOr[String] = js.native
+  var app: js.UndefOr[String] = js.undefined
   
   /**
     * 宿主APP名称
     */
-  var appName: js.UndefOr[String] = js.native
+  var appName: js.UndefOr[String] = js.undefined
   
   /**
     * 蓝牙的系统开关
     */
-  var bluetoothEnabled: js.UndefOr[Boolean] = js.native
+  var bluetoothEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 手机品牌
     */
-  var brand: js.UndefOr[String] = js.native
+  var brand: js.UndefOr[String] = js.undefined
   
   /**
     * 上一次缓存的位置信息
     */
-  var cacheLocation: js.UndefOr[js.Any] = js.native
+  var cacheLocation: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 允许微信使用摄像头的开关
     */
-  var cameraAuthorized: js.UndefOr[Boolean] = js.native
+  var cameraAuthorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 当前电量百分比
     */
-  var currentBattery: js.UndefOr[String] = js.native
+  var currentBattery: js.UndefOr[String] = js.undefined
   
   /**
     * 用户字体大小设置
     */
-  var fontSizeSetting: js.UndefOr[Double] = js.native
+  var fontSizeSetting: js.UndefOr[Double] = js.undefined
   
   /**
     * 宿主平台
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * 程序设置的语言
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * 允许微信使用定位的开关
     */
-  var locationAuthorized: js.UndefOr[Boolean] = js.native
+  var locationAuthorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 地理位置的系统开关
     */
-  var locationEnabled: js.UndefOr[Boolean] = js.native
+  var locationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 允许微信使用麦克风的开关
     */
-  var microphoneAuthorized: js.UndefOr[Boolean] = js.native
+  var microphoneAuthorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 手机型号
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * 导航栏的高度
     */
-  var navigationBarHeight: js.UndefOr[Double] = js.native
+  var navigationBarHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * 允许微信通知带有提醒的开关（仅 iOS 有效）
     */
-  var notificationAlertAuthorized: js.UndefOr[Boolean] = js.native
+  var notificationAlertAuthorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 允许微信通知的开关
     */
-  var notificationAuthorized: js.UndefOr[Boolean] = js.native
+  var notificationAuthorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 允许微信通知带有标记的开关（仅 iOS 有效）
     */
-  var notificationBadgeAuthorized: js.UndefOr[Boolean] = js.native
+  var notificationBadgeAuthorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 允许微信通知带有声音的开关（仅 iOS 有效）
     */
-  var notificationSoundAuthorized: js.UndefOr[Boolean] = js.native
+  var notificationSoundAuthorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 设备像素比
     */
-  var pixelRatio: js.UndefOr[Double] = js.native
+  var pixelRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * 客户端平台
     */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /**
     * 在竖屏正方向下的安全区域
     */
-  var safeArea: js.UndefOr[SafeAreaResult] = js.native
+  var safeArea: js.UndefOr[SafeAreaResult] = js.undefined
   
   /**
     * 屏幕高度
     */
-  var screenHeight: js.UndefOr[Double] = js.native
+  var screenHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * 屏幕宽度
     */
-  var screenWidth: js.UndefOr[Double] = js.native
+  var screenWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * 状态栏的高度
     */
-  var statusBarHeight: js.UndefOr[Double] = js.native
+  var statusBarHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * 设备磁盘容量
     */
-  var storage: js.UndefOr[String] = js.native
+  var storage: js.UndefOr[String] = js.undefined
   
   /**
     * 宿主平台版本号
     */
-  var swanNativeVersion: js.UndefOr[String] = js.native
+  var swanNativeVersion: js.UndefOr[String] = js.undefined
   
   /**
     * 操作系统版本
     */
-  var system: js.UndefOr[String] = js.native
+  var system: js.UndefOr[String] = js.undefined
   
   /**
     * 标题栏高度
     */
-  var titleBarHeight: js.UndefOr[Double] = js.native
+  var titleBarHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * 引擎版本号
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
   /**
     * Wi-Fi 的系统开关
     */
-  var wifiEnabled: js.UndefOr[Boolean] = js.native
+  var wifiEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 可使用窗口的底部位置
     */
-  var windowBottom: js.UndefOr[Double] = js.native
+  var windowBottom: js.UndefOr[Double] = js.undefined
   
   /**
     * 可使用窗口高度
     */
-  var windowHeight: js.UndefOr[Double] = js.native
+  var windowHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * 可使用窗口的顶部位置
     */
-  var windowTop: js.UndefOr[Double] = js.native
+  var windowTop: js.UndefOr[Double] = js.undefined
   
   /**
     * 可使用窗口宽度
     */
-  var windowWidth: js.UndefOr[Double] = js.native
+  var windowWidth: js.UndefOr[Double] = js.undefined
 }
 object GetSystemInfoResult {
   

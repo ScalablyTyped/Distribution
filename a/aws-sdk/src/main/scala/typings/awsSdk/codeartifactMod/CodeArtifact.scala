@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait CodeArtifact extends Service {
   ): Request[AssociateExternalConnectionResult, AWSError] = js.native
   
   @JSName("config")
-  var config_CodeArtifact: ConfigBase with ClientConfiguration = js.native
+  var config_CodeArtifact: ConfigBase & ClientConfiguration = js.native
   
   /**
     *  Copies package versions from one repository to another repository in the same domain.    You must specify versions or versionRevisions. You cannot specify both.  

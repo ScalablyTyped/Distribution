@@ -2,13 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdGroupExtensions extends AccountExtensions {
+trait AdGroupExtensions
+  extends StObject
+     with AccountExtensions {
   
-  def phoneNumbers(): AdWordsSelector[PhoneNumber] = js.native
+  def phoneNumbers(): AdWordsSelector[PhoneNumber]
 }
 object AdGroupExtensions {
   

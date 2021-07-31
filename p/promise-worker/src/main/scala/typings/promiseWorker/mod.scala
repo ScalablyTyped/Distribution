@@ -3,23 +3,35 @@ package typings.promiseWorker
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("promise-worker", JSImport.Default)
   @js.native
-  class default protected () extends PromiseWorker {
+  class default protected ()
+    extends StObject
+       with PromiseWorker {
     /**
       * Pass in the worker instance to promisify
       *
       * @param worker The worker instance to wrap
       */
     def this(worker: Worker) = this()
+    
+    /**
+      * Send a message to the worker
+      *
+      * The message you send can be any object, array, string, number, etc.
+      * Note that the message will be `JSON.stringify`d, so you can't send functions, `Date`s, custom classes, etc.
+      *
+      * @param userMessage Data or message to send to the worker
+      * @returns Promise resolved with the processed result or rejected with an error
+      */
+    /* CompleteClass */
+    override def postMessage[TResult, TInput](userMessage: TInput): js.Promise[TResult] = js.native
   }
   
-  @js.native
   trait PromiseWorker extends StObject {
     
     /**
@@ -31,7 +43,7 @@ object mod {
       * @param userMessage Data or message to send to the worker
       * @returns Promise resolved with the processed result or rejected with an error
       */
-    def postMessage[TResult, TInput](userMessage: TInput): js.Promise[TResult] = js.native
+    def postMessage[TResult, TInput](userMessage: TInput): js.Promise[TResult]
   }
   object PromiseWorker {
     

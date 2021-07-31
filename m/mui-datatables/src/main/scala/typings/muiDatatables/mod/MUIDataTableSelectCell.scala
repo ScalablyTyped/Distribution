@@ -2,33 +2,31 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableSelectCell extends StObject {
   
-  var checked: Boolean = js.native
+  var checked: Boolean
   
-  var classes: js.UndefOr[js.Object] = js.native
+  var classes: js.UndefOr[js.Object] = js.undefined
   
-  var expandableOn: js.UndefOr[Boolean] = js.native
+  var expandableOn: js.UndefOr[Boolean] = js.undefined
   
-  var fixedHeader: Boolean = js.native
+  var fixedHeader: Boolean
   
-  var isHeaderCell: js.UndefOr[Boolean] = js.native
+  var isHeaderCell: js.UndefOr[Boolean] = js.undefined
   
-  var isRowExpanded: js.UndefOr[Boolean] = js.native
+  var isRowExpanded: js.UndefOr[Boolean] = js.undefined
   
-  var isRowSelectable: js.UndefOr[Boolean] = js.native
+  var isRowSelectable: js.UndefOr[Boolean] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var onExpand: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var onExpand: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var otherProps: js.UndefOr[js.Any] = js.native
+  var otherProps: js.UndefOr[js.Any] = js.undefined
   
-  var selectableOn: js.UndefOr[Boolean] = js.native
+  var selectableOn: js.UndefOr[Boolean] = js.undefined
 }
 object MUIDataTableSelectCell {
   
@@ -78,13 +76,13 @@ object MUIDataTableSelectCell {
     def setIsRowSelectableUndefined: Self = StObject.set(x, "isRowSelectable", js.undefined)
     
     @scala.inline
-    def setOnChange(value: /* args */ js.Any => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnExpand(value: /* args */ js.Any => _): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
+    def setOnExpand(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)

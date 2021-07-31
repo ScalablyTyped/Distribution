@@ -3,10 +3,13 @@ package typings.dnssd
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("dnssd", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("dnssd", "Advertisement")
   @js.native
@@ -18,9 +21,9 @@ object mod {
     def start(): Advertisement = js.native
     
     def stop(): Unit = js.native
-    def stop(forceImmediate: js.UndefOr[scala.Nothing], callback: js.Function0[_]): Unit = js.native
     def stop(forceImmediate: Boolean): Unit = js.native
-    def stop(forceImmediate: Boolean, callback: js.Function0[_]): Unit = js.native
+    def stop(forceImmediate: Boolean, callback: js.Function0[js.Any]): Unit = js.native
+    def stop(forceImmediate: Unit, callback: js.Function0[js.Any]): Unit = js.native
     
     def updateTXT(txtObj: js.Any): Unit = js.native
   }
@@ -32,7 +35,7 @@ object mod {
     def this(`type`: js.Array[String], args: js.Any*) = this()
     def this(`type`: ServiceType, args: js.Any*) = this()
     
-    def list(): js.Array[_] = js.native
+    def list(): js.Array[js.Any] = js.native
     
     def start(): Browser = js.native
     
@@ -100,52 +103,44 @@ object mod {
   /* static members */
   object ServiceType {
     
-    @JSImport("dnssd", "ServiceType.all")
+    @JSImport("dnssd", "ServiceType")
     @js.native
-    def all(): ServiceType = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("dnssd", "ServiceType.tcp")
-    @js.native
-    def tcp(args: String*): ServiceType = js.native
+    @scala.inline
+    def all(): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[ServiceType]
     
-    @JSImport("dnssd", "ServiceType.udp")
-    @js.native
-    def udp(args: String*): ServiceType = js.native
+    @scala.inline
+    def tcp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+    
+    @scala.inline
+    def udp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
   }
   
-  @JSImport("dnssd", "all")
-  @js.native
-  def all(): ServiceType = js.native
+  @scala.inline
+  def all(): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[ServiceType]
   
-  @JSImport("dnssd", "resolve")
-  @js.native
-  def resolve(name: String, `type`: String, args: js.Object): js.Promise[_] = js.native
+  @scala.inline
+  def resolve(name: String, `type`: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("dnssd", "resolve4")
-  @js.native
-  def resolve4(name: String, `type`: String, args: js.Object): js.Promise[String] = js.native
+  @scala.inline
+  def resolve4(name: String, `type`: String, args: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("dnssd", "resolve6")
-  @js.native
-  def resolve6(name: String, `type`: String, args: js.Object): js.Promise[String] = js.native
+  @scala.inline
+  def resolve6(name: String, `type`: String, args: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("dnssd", "resolveSRV")
-  @js.native
-  def resolveSRV(name: String, args: js.Object): js.Promise[_] = js.native
+  @scala.inline
+  def resolveSRV(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSRV")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("dnssd", "resolveService")
-  @js.native
-  def resolveService(name: String, args: js.Object): js.Promise[_] = js.native
+  @scala.inline
+  def resolveService(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveService")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("dnssd", "resolveTXT")
-  @js.native
-  def resolveTXT(name: String, args: js.Object): js.Promise[_] = js.native
+  @scala.inline
+  def resolveTXT(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTXT")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("dnssd", "tcp")
-  @js.native
-  def tcp(args: String*): ServiceType = js.native
+  @scala.inline
+  def tcp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
   
-  @JSImport("dnssd", "udp")
-  @js.native
-  def udp(args: String*): ServiceType = js.native
+  @scala.inline
+  def udp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
 }

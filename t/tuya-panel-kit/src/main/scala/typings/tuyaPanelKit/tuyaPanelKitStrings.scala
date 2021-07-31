@@ -9,7 +9,6 @@ import typings.tuyaPanelKit.stackTypesMod.StackHeaderMode
 import typings.tuyaPanelKit.tabRouterMod.BackBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tuyaPanelKitStrings {
@@ -20,17 +19,23 @@ object tuyaPanelKitStrings {
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait AY extends MobileService
+  sealed trait AY
+    extends StObject
+       with MobileService
   @scala.inline
   def AY: AY = "AY".asInstanceOf[AY]
   
   @js.native
-  sealed trait AZ extends MobileService
+  sealed trait AZ
+    extends StObject
+       with MobileService
   @scala.inline
   def AZ: AZ = "AZ".asInstanceOf[AZ]
   
   @js.native
-  sealed trait BLE extends NetworkType
+  sealed trait BLE
+    extends StObject
+       with NetworkType
   @scala.inline
   def BLE: BLE = "BLE".asInstanceOf[BLE]
   
@@ -45,7 +50,9 @@ object tuyaPanelKitStrings {
   def DevInfo: DevInfo = "DevInfo".asInstanceOf[DevInfo]
   
   @js.native
-  sealed trait EU extends MobileService
+  sealed trait EU
+    extends StObject
+       with MobileService
   @scala.inline
   def EU: EU = "EU".asInstanceOf[EU]
   
@@ -60,12 +67,16 @@ object tuyaPanelKitStrings {
   def GO_BACK: GO_BACK = "GO_BACK".asInstanceOf[GO_BACK]
   
   @js.native
-  sealed trait GPRS extends NetworkType
+  sealed trait GPRS
+    extends StObject
+       with NetworkType
   @scala.inline
   def GPRS: GPRS = "GPRS".asInstanceOf[GPRS]
   
   @js.native
-  sealed trait IN extends MobileService
+  sealed trait IN
+    extends StObject
+       with MobileService
   @scala.inline
   def IN: IN = "IN".asInstanceOf[IN]
   
@@ -80,7 +91,9 @@ object tuyaPanelKitStrings {
   def NAVIGATE: NAVIGATE = "NAVIGATE".asInstanceOf[NAVIGATE]
   
   @js.native
-  sealed trait NONE extends NetworkType
+  sealed trait NONE
+    extends StObject
+       with NetworkType
   @scala.inline
   def NONE: NONE = "NONE".asInstanceOf[NONE]
   
@@ -150,7 +163,9 @@ object tuyaPanelKitStrings {
   def TOGGLE_DRAWER: TOGGLE_DRAWER = "TOGGLE_DRAWER".asInstanceOf[TOGGLE_DRAWER]
   
   @js.native
-  sealed trait UE extends MobileService
+  sealed trait UE
+    extends StObject
+       with MobileService
   @scala.inline
   def UE: UE = "UE".asInstanceOf[UE]
   
@@ -160,12 +175,16 @@ object tuyaPanelKitStrings {
   def URL: URL = "URL".asInstanceOf[URL]
   
   @js.native
-  sealed trait WE extends MobileService
+  sealed trait WE
+    extends StObject
+       with MobileService
   @scala.inline
   def WE: WE = "WE".asInstanceOf[WE]
   
   @js.native
-  sealed trait WIFI extends NetworkType
+  sealed trait WIFI
+    extends StObject
+       with NetworkType
   @scala.inline
   def WIFI: WIFI = "WIFI".asInstanceOf[WIFI]
   
@@ -255,7 +274,9 @@ object tuyaPanelKitStrings {
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
-  sealed trait bitmap extends DpType
+  sealed trait bitmap
+    extends StObject
+       with DpType
   @scala.inline
   def bitmap: bitmap = "bitmap".asInstanceOf[bitmap]
   
@@ -275,7 +296,9 @@ object tuyaPanelKitStrings {
   def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
-  sealed trait bool extends DpType
+  sealed trait bool
+    extends StObject
+       with DpType
   @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
   
@@ -330,7 +353,9 @@ object tuyaPanelKitStrings {
   def canGoBack: canGoBack = "canGoBack".asInstanceOf[canGoBack]
   
   @js.native
-  sealed trait card extends StackCardMode
+  sealed trait card
+    extends StObject
+       with StackCardMode
   @scala.inline
   def card: card = "card".asInstanceOf[card]
   
@@ -490,9 +515,11 @@ object tuyaPanelKitStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait enum extends DpType
+  sealed trait `enum`
+    extends StObject
+       with DpType
   @scala.inline
-  def enum: enum = "enum".asInstanceOf[enum]
+  def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
   sealed trait error extends StObject
@@ -525,7 +552,9 @@ object tuyaPanelKitStrings {
   def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
   
   @js.native
-  sealed trait float extends StackHeaderMode
+  sealed trait float
+    extends StObject
+       with StackHeaderMode
   @scala.inline
   def float: float = "float".asInstanceOf[float]
   
@@ -595,17 +624,23 @@ object tuyaPanelKitStrings {
   def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
   
   @js.native
-  sealed trait history extends BackBehavior
+  sealed trait history
+    extends StObject
+       with BackBehavior
   @scala.inline
   def history: history = "history".asInstanceOf[history]
   
   @js.native
-  sealed trait horizontal extends GestureDirection
+  sealed trait horizontal
+    extends StObject
+       with GestureDirection
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait `horizontal-inverted` extends GestureDirection
+  sealed trait `horizontal-inverted`
+    extends StObject
+       with GestureDirection
   @scala.inline
   def `horizontal-inverted`: `horizontal-inverted` = "horizontal-inverted".asInstanceOf[`horizontal-inverted`]
   
@@ -625,7 +660,9 @@ object tuyaPanelKitStrings {
   def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait initialRoute extends BackBehavior
+  sealed trait initialRoute
+    extends StObject
+       with BackBehavior
   @scala.inline
   def initialRoute: initialRoute = "initialRoute".asInstanceOf[initialRoute]
   
@@ -715,7 +752,9 @@ object tuyaPanelKitStrings {
   def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
-  sealed trait modal extends StackCardMode
+  sealed trait modal
+    extends StObject
+       with StackCardMode
   @scala.inline
   def modal: modal = "modal".asInstanceOf[modal]
   
@@ -786,7 +825,8 @@ object tuyaPanelKitStrings {
   
   @js.native
   sealed trait none_
-    extends BackBehavior
+    extends StObject
+       with BackBehavior
        with StackHeaderMode
   @scala.inline
   def none_ : none_ = "none".asInstanceOf[none_]
@@ -817,7 +857,9 @@ object tuyaPanelKitStrings {
   def options: options = "options".asInstanceOf[options]
   
   @js.native
-  sealed trait order extends BackBehavior
+  sealed trait order
+    extends StObject
+       with BackBehavior
   @scala.inline
   def order: order = "order".asInstanceOf[order]
   
@@ -922,7 +964,9 @@ object tuyaPanelKitStrings {
   def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   
   @js.native
-  sealed trait raw extends DpType
+  sealed trait raw
+    extends StObject
+       with DpType
   @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
   
@@ -972,7 +1016,9 @@ object tuyaPanelKitStrings {
   def rw: rw = "rw".asInstanceOf[rw]
   
   @js.native
-  sealed trait screen extends StackHeaderMode
+  sealed trait screen
+    extends StObject
+       with StackHeaderMode
   @scala.inline
   def screen: screen = "screen".asInstanceOf[screen]
   
@@ -1077,7 +1123,9 @@ object tuyaPanelKitStrings {
   def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
-  sealed trait string extends DpType
+  sealed trait string
+    extends StObject
+       with DpType
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
@@ -1187,17 +1235,23 @@ object tuyaPanelKitStrings {
   def username: username = "username".asInstanceOf[username]
   
   @js.native
-  sealed trait value extends DpType
+  sealed trait value
+    extends StObject
+       with DpType
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   
   @js.native
-  sealed trait vertical extends GestureDirection
+  sealed trait vertical
+    extends StObject
+       with GestureDirection
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait `vertical-inverted` extends GestureDirection
+  sealed trait `vertical-inverted`
+    extends StObject
+       with GestureDirection
   @scala.inline
   def `vertical-inverted`: `vertical-inverted` = "vertical-inverted".asInstanceOf[`vertical-inverted`]
   

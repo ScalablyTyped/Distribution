@@ -23,7 +23,6 @@ import typings.semanticUiReact.semanticUiReactStrings.small
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputInputMod {
@@ -41,11 +40,12 @@ object inputInputMod {
     def select(): Unit = js.native
   }
   
-  @js.native
-  trait InputOnChangeData extends StrictInputProps {
+  trait InputOnChangeData
+    extends StObject
+       with StrictInputProps {
     
     @JSName("value")
-    var value_InputOnChangeData: String = js.native
+    var value_InputOnChangeData: String
   }
   object InputOnChangeData {
     
@@ -65,47 +65,48 @@ object inputInputMod {
   
   type InputProps = StrictInputProps
   
-  @js.native
-  trait StrictInputProps extends InputHTMLAttributes[HTMLInputElement] {
+  trait StrictInputProps
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement] {
     
     /** An Input can be formatted to alert the user to an action they may perform. */
-    var action: js.UndefOr[js.Any | Boolean] = js.native
+    var action: js.UndefOr[js.Any | Boolean] = js.undefined
     
     /** An action can appear along side an Input on the left or right. */
-    var actionPosition: js.UndefOr[left] = js.native
+    var actionPosition: js.UndefOr[left] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** An Input field can show the data contains errors. */
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
     /** Take on the size of its container. */
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
     /** An Input field can show a user is currently interacting with it. */
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
     /** Optional Icon to display inside the Input. */
-    var icon: js.UndefOr[js.Any | SemanticShorthandItem[InputProps]] = js.native
+    var icon: js.UndefOr[js.Any | SemanticShorthandItem[InputProps]] = js.undefined
     
     /** An Icon can appear inside an Input on the left. */
-    var iconPosition: js.UndefOr[left] = js.native
+    var iconPosition: js.UndefOr[left] = js.undefined
     
     /** Shorthand for creating the HTML Input. */
-    var input: js.UndefOr[SemanticShorthandItem[HtmlInputrops]] = js.native
+    var input: js.UndefOr[SemanticShorthandItem[HtmlInputrops]] = js.undefined
     
     /** Format to appear on dark backgrounds. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Optional Label to display along side the Input. */
-    var label: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.native
+    var label: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.undefined
     
     /** A Label can appear outside an Input on the left or right. */
-    var labelPosition: js.UndefOr[left | right | (`left corner`) | (`right corner`)] = js.native
+    var labelPosition: js.UndefOr[left | right | (`left corner`) | (`right corner`)] = js.undefined
     
     /** An Icon Input field can show that it is currently loading data. */
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Called on change.
@@ -116,18 +117,18 @@ object inputInputMod {
     @JSName("onChange")
     var onChange_StrictInputProps: js.UndefOr[
         js.Function2[/* event */ ChangeEvent[HTMLInputElement], /* data */ InputOnChangeData, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** An Input can vary in size. */
     @JSName("size")
-    var size_StrictInputProps: js.UndefOr[mini | small | large | big | huge | massive] = js.native
+    var size_StrictInputProps: js.UndefOr[mini | small | large | big | huge | massive] = js.undefined
     
     /** An Input can receive focus. */
     @JSName("tabIndex")
-    var tabIndex_StrictInputProps: js.UndefOr[Double | String] = js.native
+    var tabIndex_StrictInputProps: js.UndefOr[Double | String] = js.undefined
     
     /** Transparent Input has no background. */
-    var transparent: js.UndefOr[Boolean] = js.native
+    var transparent: js.UndefOr[Boolean] = js.undefined
   }
   object StrictInputProps {
     

@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InspectNodeRequestedEvent extends StObject {
   
   /**
     * Id of the node to inspect.
     */
-  var backendNodeId: BackendNodeId = js.native
+  var backendNodeId: BackendNodeId
 }
 object InspectNodeRequestedEvent {
   

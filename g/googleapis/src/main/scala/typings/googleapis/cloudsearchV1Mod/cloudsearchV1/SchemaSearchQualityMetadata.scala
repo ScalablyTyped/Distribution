@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional search quality metadata of the item.
   */
-@js.native
 trait SchemaSearchQualityMetadata extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaSearchQualityMetadata extends StObject {
     * quality. Value should be between 0.0 (lowest quality) and 1.0 (highest
     * quality). The default value is 0.0.
     */
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
 }
 object SchemaSearchQualityMetadata {
   

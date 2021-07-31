@@ -2,24 +2,22 @@ package typings.cordovaPluginDeviceOrientation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A CompassHeading object is returned to the compassSuccess callback function. */
-@js.native
 trait CompassHeading extends StObject {
   
   /** The deviation in degrees between the reported heading and the true heading. */
-  var headingAccuracy: Double = js.native
+  var headingAccuracy: Double
   
   /** The heading in degrees from 0-359.99 at a single moment in time. */
-  var magneticHeading: Double = js.native
+  var magneticHeading: Double
   
   /** The time at which this heading was determined. */
-  var timestamp: Double = js.native
+  var timestamp: Double
   
   /** The heading relative to the geographic North Pole in degrees 0-359.99 at a single moment in time. A negative value indicates that the true heading can't be determined. */
-  var trueHeading: Double = js.native
+  var trueHeading: Double
 }
 object CompassHeading {
   

@@ -3,36 +3,34 @@ package typings.mdv
 import typings.mdv.mdvBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined mdv.mdv.Options & {  warnings :true} */
-  @js.native
   trait Optionswarningstrue extends StObject {
     
     /**
       * save intermediary html
       * @default false
       */
-    var save: js.UndefOr[Boolean] = js.native
+    var save: js.UndefOr[Boolean] = js.undefined
     
     /**
       * markdown document path
       */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
     /**
       * enable warnings
       * @default false
       */
-    var warnings: js.UndefOr[Boolean] with `true` = js.native
+    var warnings: js.UndefOr[Boolean] & `true`
   }
   object Optionswarningstrue {
     
     @scala.inline
-    def apply(warnings: js.UndefOr[Boolean] with `true`): Optionswarningstrue = {
+    def apply(warnings: js.UndefOr[Boolean] & `true`): Optionswarningstrue = {
       val __obj = js.Dynamic.literal(warnings = warnings.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionswarningstrue]
     }
@@ -53,7 +51,7 @@ object anon {
       def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
       @scala.inline
-      def setWarnings(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      def setWarnings(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -4,32 +4,25 @@ import typings.babelTypes.anon.Raw
 import typings.babelTypes.babelTypesStrings.TemplateElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TemplateElement_ extends Node {
+trait TemplateElement_
+  extends StObject
+     with Node {
   
-  var tail: Boolean = js.native
+  var tail: Boolean
   
   @JSName("type")
-  var type_TemplateElement_ : TemplateElement = js.native
+  var type_TemplateElement_ : TemplateElement
   
-  var value: Raw = js.native
+  var value: Raw
 }
 object TemplateElement_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    tail: Boolean,
-    `type`: TemplateElement,
-    value: Raw
-  ): TemplateElement_ = {
+  def apply(end: Double, loc: SourceLocation, start: Double, tail: Boolean, value: Raw): TemplateElement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tail = tail.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TemplateElement")
     __obj.asInstanceOf[TemplateElement_]
   }
   

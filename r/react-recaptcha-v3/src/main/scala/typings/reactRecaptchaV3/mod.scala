@@ -4,10 +4,13 @@ import typings.react.mod.Component
 import typings.reactRecaptchaV3.mod.ReCaptcha.ReCaptchaProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-recaptcha-v3", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-recaptcha-v3", "ReCaptcha")
   @js.native
@@ -41,18 +44,17 @@ object mod {
     @scala.inline
     def propTypes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @js.native
     trait ReCaptchaProps extends StObject {
       
-      var action: String = js.native
+      var action: String
       
-      var elementID: js.UndefOr[String] = js.native
+      var elementID: js.UndefOr[String] = js.undefined
       
-      var sitekey: String = js.native
+      var sitekey: String
       
-      var verifyCallback: js.UndefOr[js.Function1[/* response */ String, Unit]] = js.native
+      var verifyCallback: js.UndefOr[js.Function1[/* response */ String, Unit]] = js.undefined
       
-      var verifyCallbackName: js.UndefOr[String] = js.native
+      var verifyCallbackName: js.UndefOr[String] = js.undefined
     }
     object ReCaptchaProps {
       
@@ -92,7 +94,6 @@ object mod {
     }
   }
   
-  @JSImport("react-recaptcha-v3", "loadReCaptcha")
-  @js.native
-  def loadReCaptcha(siteKey: String): Unit = js.native
+  @scala.inline
+  def loadReCaptcha(siteKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadReCaptcha")(siteKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

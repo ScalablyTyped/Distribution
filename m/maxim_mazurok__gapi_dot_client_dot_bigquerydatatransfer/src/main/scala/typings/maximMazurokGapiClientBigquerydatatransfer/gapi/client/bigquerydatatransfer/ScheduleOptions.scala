@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigqueryd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleOptions extends StObject {
   
   /**
     * If true, automatic scheduling of data transfer runs for this configuration will be disabled. The runs can be started on ad-hoc basis using StartManualTransferRuns API. When
     * automatic scheduling is disabled, the TransferConfig.schedule field will be ignored.
     */
-  var disableAutoScheduling: js.UndefOr[Boolean] = js.native
+  var disableAutoScheduling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines time to stop scheduling transfer runs. A transfer run cannot be scheduled at or after the end time. The end time can be changed at any moment. The time when a data transfer
     * can be trigerred manually is not limited by this option.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies time to start scheduling transfer runs. The first run will be scheduled at or after the start time according to a recurrence pattern defined in the schedule string. The
     * start time can be changed at any moment. The time when a data transfer can be trigerred manually is not limited by this option.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object ScheduleOptions {
   

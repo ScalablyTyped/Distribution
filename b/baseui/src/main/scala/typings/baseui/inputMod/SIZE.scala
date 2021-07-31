@@ -6,19 +6,17 @@ import typings.baseui.baseuiStrings.large_
 import typings.baseui.baseuiStrings.mini
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SIZE extends StObject {
   
-  var default: default_ = js.native
+  var default: default_
   
-  var compact: typings.baseui.baseuiStrings.compact = js.native
+  var compact: typings.baseui.baseuiStrings.compact
   
-  var large: large_ = js.native
+  var large: large_
   
-  var mini: typings.baseui.baseuiStrings.mini = js.native
+  var mini: typings.baseui.baseuiStrings.mini
 }
 object SIZE {
   

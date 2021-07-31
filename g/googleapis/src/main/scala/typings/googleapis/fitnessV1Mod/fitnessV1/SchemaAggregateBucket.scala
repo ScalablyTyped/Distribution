@@ -2,44 +2,42 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAggregateBucket extends StObject {
   
   /**
     * Available for Bucket.Type.ACTIVITY_TYPE, Bucket.Type.ACTIVITY_SEGMENT
     */
-  var activity: js.UndefOr[Double] = js.native
+  var activity: js.UndefOr[Double] = js.undefined
   
   /**
     * There will be one dataset per AggregateBy in the request.
     */
-  var dataset: js.UndefOr[js.Array[SchemaDataset]] = js.native
+  var dataset: js.UndefOr[js.Array[SchemaDataset]] = js.undefined
   
   /**
     * The end time for the aggregated data, in milliseconds since epoch,
     * inclusive.
     */
-  var endTimeMillis: js.UndefOr[String] = js.native
+  var endTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * Available for Bucket.Type.SESSION
     */
-  var session: js.UndefOr[SchemaSession] = js.native
+  var session: js.UndefOr[SchemaSession] = js.undefined
   
   /**
     * The start time for the aggregated data, in milliseconds since epoch,
     * inclusive.
     */
-  var startTimeMillis: js.UndefOr[String] = js.native
+  var startTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The type of a bucket signifies how the data aggregation is performed in
     * the bucket.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaAggregateBucket {
   

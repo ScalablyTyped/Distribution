@@ -2,23 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMQuad extends StObject {
   
-  def getBounds(): DOMRect = js.native
+  def getBounds(): DOMRect
   
-  val p1: DOMPoint = js.native
+  val p1: DOMPoint
   
-  val p2: DOMPoint = js.native
+  val p2: DOMPoint
   
-  val p3: DOMPoint = js.native
+  val p3: DOMPoint
   
-  val p4: DOMPoint = js.native
+  val p4: DOMPoint
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): js.Any
 }
 object DOMQuad {
   

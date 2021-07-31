@@ -2,19 +2,17 @@ package typings.bezierJs.BezierJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinMax extends StObject {
   
-  var max: Double = js.native
+  var max: Double
   
-  var mid: js.UndefOr[Double] = js.native
+  var mid: js.UndefOr[Double] = js.undefined
   
-  var min: Double = js.native
+  var min: Double
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object MinMax {
   

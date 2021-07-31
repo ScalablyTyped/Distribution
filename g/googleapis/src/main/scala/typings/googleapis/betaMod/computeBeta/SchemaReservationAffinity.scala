@@ -2,27 +2,25 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AllocationAffinity is the configuration of desired allocation which this
   * instance could take capacity from.
   */
-@js.native
 trait SchemaReservationAffinity extends StObject {
   
-  var consumeReservationType: js.UndefOr[String] = js.native
+  var consumeReservationType: js.UndefOr[String] = js.undefined
   
   /**
     * Corresponds to the label key of reservation resource.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Corresponds to the label values of reservation resource.
     */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaReservationAffinity {
   

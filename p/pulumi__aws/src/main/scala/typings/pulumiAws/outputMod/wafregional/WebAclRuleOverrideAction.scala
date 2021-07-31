@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.wafregional
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleOverrideAction extends StObject {
   
   /**
     * Specifies how you want AWS WAF Regional to respond to requests that match the settings in a rule. e.g. `ALLOW`, `BLOCK` or `COUNT`
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object WebAclRuleOverrideAction {
   

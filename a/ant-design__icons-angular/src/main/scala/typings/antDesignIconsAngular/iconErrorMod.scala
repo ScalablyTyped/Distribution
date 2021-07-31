@@ -3,32 +3,29 @@ package typings.antDesignIconsAngular
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconErrorMod {
   
-  @JSImport("@ant-design/icons-angular/component/icon.error", "DynamicLoadingTimeoutError")
+  @JSImport("@ant-design/icons-angular/component/icon.error", JSImport.Namespace)
   @js.native
-  def DynamicLoadingTimeoutError(): Error = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ant-design/icons-angular/component/icon.error", "HttpModuleNotImport")
-  @js.native
-  def HttpModuleNotImport(): Null = js.native
+  @scala.inline
+  def DynamicLoadingTimeoutError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("DynamicLoadingTimeoutError")().asInstanceOf[Error]
   
-  @JSImport("@ant-design/icons-angular/component/icon.error", "IconNotFoundError")
-  @js.native
-  def IconNotFoundError(icon: String): Error = js.native
+  @scala.inline
+  def HttpModuleNotImport(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("HttpModuleNotImport")().asInstanceOf[Null]
   
-  @JSImport("@ant-design/icons-angular/component/icon.error", "NameSpaceIsNotSpecifyError")
-  @js.native
-  def NameSpaceIsNotSpecifyError(): Error = js.native
+  @scala.inline
+  def IconNotFoundError(icon: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("IconNotFoundError")(icon.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @JSImport("@ant-design/icons-angular/component/icon.error", "SVGTagNotFoundError")
-  @js.native
-  def SVGTagNotFoundError(): Error = js.native
+  @scala.inline
+  def NameSpaceIsNotSpecifyError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("NameSpaceIsNotSpecifyError")().asInstanceOf[Error]
   
-  @JSImport("@ant-design/icons-angular/component/icon.error", "UrlNotSafeError")
-  @js.native
-  def UrlNotSafeError(url: String): Error = js.native
+  @scala.inline
+  def SVGTagNotFoundError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("SVGTagNotFoundError")().asInstanceOf[Error]
+  
+  @scala.inline
+  def UrlNotSafeError(url: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("UrlNotSafeError")(url.asInstanceOf[js.Any]).asInstanceOf[Error]
 }

@@ -2,25 +2,23 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartTextStyle extends StObject {
   
-  var auraColor: js.UndefOr[String] = js.native
+  var auraColor: js.UndefOr[String] = js.undefined
   
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var fontName: js.UndefOr[String] = js.native
+  var fontName: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
 }
 object ChartTextStyle {
   

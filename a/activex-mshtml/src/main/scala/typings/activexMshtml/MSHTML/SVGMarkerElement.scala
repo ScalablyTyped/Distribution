@@ -2,52 +2,50 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGMarkerElement extends StObject {
   
   @JSName("MSHTML.SVGMarkerElement_typekey")
-  var MSHTMLDotSVGMarkerElement_typekey: SVGMarkerElement = js.native
+  var MSHTMLDotSVGMarkerElement_typekey: SVGMarkerElement
   
-  val className: SVGAnimatedString = js.native
+  val className: SVGAnimatedString
   
-  val externalResourcesRequired: SVGAnimatedBoolean = js.native
+  val externalResourcesRequired: SVGAnimatedBoolean
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  var markerHeight: SVGAnimatedLength = js.native
+  var markerHeight: SVGAnimatedLength
   
-  var markerUnits: SVGAnimatedEnumeration = js.native
+  var markerUnits: SVGAnimatedEnumeration
   
-  var markerWidth: SVGAnimatedLength = js.native
+  var markerWidth: SVGAnimatedLength
   
-  var orientAngle: SVGAnimatedAngle = js.native
+  var orientAngle: SVGAnimatedAngle
   
-  var orientType: SVGAnimatedEnumeration = js.native
+  var orientType: SVGAnimatedEnumeration
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  var preserveAspectRatio: SVGAnimatedPreserveAspectRatio = js.native
+  var preserveAspectRatio: SVGAnimatedPreserveAspectRatio
   
-  var refX: SVGAnimatedLength = js.native
+  var refX: SVGAnimatedLength
   
-  var refY: SVGAnimatedLength = js.native
+  var refY: SVGAnimatedLength
   
-  def setOrientToAngle(pSVGAngle: SVGAngle): Unit = js.native
+  def setOrientToAngle(pSVGAngle: SVGAngle): Unit
   
-  def setOrientToAuto(): Unit = js.native
+  def setOrientToAuto(): Unit
   
-  val viewBox: SVGAnimatedRect = js.native
+  val viewBox: SVGAnimatedRect
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var xmlbase: String = js.native
+  var xmlbase: String
   
-  var xmllang: String = js.native
+  var xmllang: String
   
-  var xmlspace: String = js.native
+  var xmlspace: String
 }
 object SVGMarkerElement {
   

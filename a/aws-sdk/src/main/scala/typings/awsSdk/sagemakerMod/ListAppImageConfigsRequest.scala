@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAppImageConfigsRequest extends StObject {
   
   /**
     * A filter that returns only AppImageConfigs created on or after the specified time.
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.native
+  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only AppImageConfigs created on or before the specified time.
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.native
+  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The maximum number of AppImageConfigs to return in the response. The default value is 10. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * A filter that returns only AppImageConfigs modified on or after the specified time.
     */
-  var ModifiedTimeAfter: js.UndefOr[Timestamp] = js.native
+  var ModifiedTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only AppImageConfigs modified on or before the specified time.
     */
-  var ModifiedTimeBefore: js.UndefOr[Timestamp] = js.native
+  var ModifiedTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only AppImageConfigs whose name contains the specified string.
     */
-  var NameContains: js.UndefOr[AppImageConfigName] = js.native
+  var NameContains: js.UndefOr[AppImageConfigName] = js.undefined
   
   /**
     * If the previous call to ListImages didn't return the full set of AppImageConfigs, the call returns a token for getting the next set of AppImageConfigs.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The property used to sort results. The default value is CreationTime.
     */
-  var SortBy: js.UndefOr[AppImageConfigSortKey] = js.native
+  var SortBy: js.UndefOr[AppImageConfigSortKey] = js.undefined
   
   /**
     * The sort order. The default value is Descending.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.undefined
 }
 object ListAppImageConfigsRequest {
   

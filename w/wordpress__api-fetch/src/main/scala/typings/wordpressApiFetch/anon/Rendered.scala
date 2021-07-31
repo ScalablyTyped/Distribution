@@ -2,13 +2,11 @@ package typings.wordpressApiFetch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rendered extends StObject {
   
-  var rendered: String = js.native
+  var rendered: String
 }
 object Rendered {
   

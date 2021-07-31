@@ -2,25 +2,23 @@ package typings.googleapis.storageV1beta2Mod.storageV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An access-control list.
   */
-@js.native
 trait SchemaObjectAccessControls extends StObject {
   
   /**
     * The list of items.
     */
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The kind of item this is. For lists of object access control entries,
     * this is always storage#objectAccessControls.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaObjectAccessControls {
   
@@ -34,7 +32,7 @@ object SchemaObjectAccessControls {
   implicit class SchemaObjectAccessControlsMutableBuilder[Self <: SchemaObjectAccessControls] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

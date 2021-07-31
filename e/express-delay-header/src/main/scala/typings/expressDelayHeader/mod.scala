@@ -3,7 +3,6 @@ package typings.expressDelayHeader
 import typings.expressServeStaticCore.mod.NextFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,35 +10,36 @@ object mod {
   /**
     * Simulates latency on express requests when header is provided
     */
-  @JSImport("express-delay-header", JSImport.Namespace)
-  @js.native
-  def apply(): NextFunction = js.native
-  @JSImport("express-delay-header", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): NextFunction = js.native
+  @scala.inline
+  def apply(): NextFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NextFunction]
+  @scala.inline
+  def apply(options: Options): NextFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NextFunction]
   
+  @JSImport("express-delay-header", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * @default process.env.NODE_ENV
       */
-    var currentEnv: js.UndefOr[String] = js.native
+    var currentEnv: js.UndefOr[String] = js.undefined
     
     /**
       * @default 'delay'
       */
-    var headerName: js.UndefOr[String] = js.native
+    var headerName: js.UndefOr[String] = js.undefined
     
     /**
       * @default 'development'
       */
-    var nodeEnv: js.UndefOr[String | js.Array[String]] = js.native
+    var nodeEnv: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * @default setTimeout
       */
-    var timeoutFunction: js.UndefOr[js.Function2[/* next */ js.Function0[Unit], /* ms */ Double, Unit]] = js.native
+    var timeoutFunction: js.UndefOr[js.Function2[/* next */ js.Function0[Unit], /* ms */ Double, Unit]] = js.undefined
   }
   object Options {
     

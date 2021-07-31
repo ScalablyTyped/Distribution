@@ -2,7 +2,6 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "ContainerResult")
@@ -36,7 +35,10 @@ class ContainerResult () extends StObject {
 /* static members */
 object ContainerResult {
   
-  @JSImport("azure", "ContainerResult.parse")
+  @JSImport("azure", "ContainerResult")
   @js.native
-  def parse(containerXml: js.Any): ContainerResult = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parse(containerXml: js.Any): ContainerResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(containerXml.asInstanceOf[js.Any]).asInstanceOf[ContainerResult]
 }

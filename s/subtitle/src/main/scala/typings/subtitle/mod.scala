@@ -2,49 +2,44 @@ package typings.subtitle
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("subtitle", "parse")
+  @JSImport("subtitle", JSImport.Namespace)
   @js.native
-  def parse(srtOrVtt: String): js.Array[subTitleType] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("subtitle", "resync")
-  @js.native
-  def resync(captions: js.Array[subTitleType], time: Double): js.Array[subTitleType] = js.native
+  @scala.inline
+  def parse(srtOrVtt: String): js.Array[subTitleType] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(srtOrVtt.asInstanceOf[js.Any]).asInstanceOf[js.Array[subTitleType]]
   
-  @JSImport("subtitle", "stringify")
-  @js.native
-  def stringify(captions: js.Array[subTitleType]): String = js.native
+  @scala.inline
+  def resync(captions: js.Array[subTitleType], time: Double): js.Array[subTitleType] = (^.asInstanceOf[js.Dynamic].applyDynamic("resync")(captions.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[js.Array[subTitleType]]
   
-  @JSImport("subtitle", "stringifyVtt")
-  @js.native
-  def stringifyVtt(captions: js.Array[subTitleType]): String = js.native
+  @scala.inline
+  def stringify(captions: js.Array[subTitleType]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(captions.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("subtitle", "toMS")
-  @js.native
-  def toMS(timestamp: String): Double = js.native
+  @scala.inline
+  def stringifyVtt(captions: js.Array[subTitleType]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyVtt")(captions.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("subtitle", "toSrtTime")
-  @js.native
-  def toSrtTime(timestamp: Double): String = js.native
+  @scala.inline
+  def toMS(timestamp: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toMS")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("subtitle", "toVttTime")
-  @js.native
-  def toVttTime(timestamp: Double): String = js.native
+  @scala.inline
+  def toSrtTime(timestamp: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSrtTime")(timestamp.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def toVttTime(timestamp: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toVttTime")(timestamp.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait subTitleType extends StObject {
     
-    var end: Double | String = js.native
+    var end: Double | String
     
-    var setting: js.UndefOr[String] = js.native
+    var setting: js.UndefOr[String] = js.undefined
     
-    var start: Double | String = js.native
+    var start: Double | String
     
-    var text: String = js.native
+    var text: String
   }
   object subTitleType {
     

@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Progress[T] extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Progress[T] extends StObject {
     * @param value A progress item, like a message and/or an
     * report on how much work finished
     */
-  def report(value: T): Unit = js.native
+  def report(value: T): Unit
 }
 object Progress {
   
@@ -24,7 +22,7 @@ object Progress {
   }
   
   @scala.inline
-  implicit class ProgressMutableBuilder[Self <: Progress[_], T] (val x: Self with Progress[T]) extends AnyVal {
+  implicit class ProgressMutableBuilder[Self <: Progress[?], T] (val x: Self & Progress[T]) extends AnyVal {
     
     @scala.inline
     def setReport(value: T => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))

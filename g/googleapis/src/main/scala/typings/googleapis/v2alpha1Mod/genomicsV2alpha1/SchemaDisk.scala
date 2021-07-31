@@ -2,7 +2,6 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://cloud.google.com/compute/docs/disks/performance for more
   * information about disk type, size, and performance considerations.
   */
-@js.native
 trait SchemaDisk extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaDisk extends StObject {
     * actions. The name must contain only upper and lowercase alphanumeric
     * characters and hypens and cannot start with a hypen.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The size, in GB, of the disk to attach. If the size is not specified, a
@@ -28,17 +26,17 @@ trait SchemaDisk extends StObject {
     * SSD is 375GB in size, and no more than 8 drives can be attached to a
     * single instance.
     */
-  var sizeGb: js.UndefOr[Double] = js.native
+  var sizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * An optional image to put on the disk before attaching it to the VM.
     */
-  var sourceImage: js.UndefOr[String] = js.native
+  var sourceImage: js.UndefOr[String] = js.undefined
   
   /**
     * The Compute Engine disk type. If unspecified, `pd-standard` is used.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaDisk {
   

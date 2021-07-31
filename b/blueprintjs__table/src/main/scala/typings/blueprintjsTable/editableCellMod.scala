@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editableCellMod {
@@ -72,18 +71,19 @@ object editableCellMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IEditableCellProps extends ICellProps {
+  trait IEditableCellProps
+    extends StObject
+       with ICellProps {
     
     /**
       * Props that should be passed to the EditableText when it is used to edit
       */
-    var editableTextProps: js.UndefOr[IEditableTextProps] = js.native
+    var editableTextProps: js.UndefOr[IEditableTextProps] = js.undefined
     
     /**
       * Whether the given cell is the current active/focused cell.
       */
-    var isFocused: js.UndefOr[Boolean] = js.native
+    var isFocused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A listener that is triggered if the user cancels the edit. This is
@@ -99,7 +99,7 @@ object editableCellMod {
           /* columnIndex */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A listener that is triggered as soon as the editable name is modified.
@@ -114,7 +114,7 @@ object editableCellMod {
           /* columnIndex */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A listener that is triggered once the editing is confirmed. This is
@@ -129,13 +129,13 @@ object editableCellMod {
           /* columnIndex */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The value displayed in the text box. Be sure to update this value when
       * rendering this component after a confirmed change.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object IEditableCellProps {
     
@@ -192,14 +192,13 @@ object editableCellMod {
     }
   }
   
-  @js.native
   trait IEditableCellState extends StObject {
     
-    var dirtyValue: js.UndefOr[String] = js.native
+    var dirtyValue: js.UndefOr[String] = js.undefined
     
-    var isEditing: js.UndefOr[Boolean] = js.native
+    var isEditing: js.UndefOr[Boolean] = js.undefined
     
-    var savedValue: js.UndefOr[String] = js.native
+    var savedValue: js.UndefOr[String] = js.undefined
   }
   object IEditableCellState {
     

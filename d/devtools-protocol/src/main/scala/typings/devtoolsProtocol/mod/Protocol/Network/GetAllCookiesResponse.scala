@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAllCookiesResponse extends StObject {
   
   /**
     * Array of cookie objects.
     */
-  var cookies: js.Array[Cookie] = js.native
+  var cookies: js.Array[Cookie]
 }
 object GetAllCookiesResponse {
   

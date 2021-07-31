@@ -2,16 +2,14 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadPresetRequest extends StObject {
   
   /**
     * The identifier of the preset for which you want to get detailed information.
     */
-  var Id: typings.awsSdk.elastictranscoderMod.Id = js.native
+  var Id: typings.awsSdk.elastictranscoderMod.Id
 }
 object ReadPresetRequest {
   

@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnCharacteristicSubscribedCallbackResult extends StObject {
   
   /** characteristic对应的uuid */
-  var characteristicId: String = js.native
+  var characteristicId: String
   
   /** service对应的uuid */
-  var serviceId: String = js.native
+  var serviceId: String
 }
 object OnCharacteristicSubscribedCallbackResult {
   

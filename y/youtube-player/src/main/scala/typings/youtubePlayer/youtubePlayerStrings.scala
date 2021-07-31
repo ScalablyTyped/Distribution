@@ -3,28 +3,35 @@ package typings.youtubePlayer
 import typings.youtubePlayer.eventNamesMod.EventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object youtubePlayerStrings {
   
   @js.native
-  sealed trait apiChange extends EventType
+  sealed trait apiChange
+    extends StObject
+       with EventType
   @scala.inline
   def apiChange: apiChange = "apiChange".asInstanceOf[apiChange]
   
   @js.native
-  sealed trait error extends EventType
+  sealed trait error
+    extends StObject
+       with EventType
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait playbackQualityChange extends EventType
+  sealed trait playbackQualityChange
+    extends StObject
+       with EventType
   @scala.inline
   def playbackQualityChange: playbackQualityChange = "playbackQualityChange".asInstanceOf[playbackQualityChange]
   
   @js.native
-  sealed trait playbackRateChange extends EventType
+  sealed trait playbackRateChange
+    extends StObject
+       with EventType
   @scala.inline
   def playbackRateChange: playbackRateChange = "playbackRateChange".asInstanceOf[playbackRateChange]
   
@@ -34,7 +41,9 @@ object youtubePlayerStrings {
   def playlist: playlist = "playlist".asInstanceOf[playlist]
   
   @js.native
-  sealed trait ready extends EventType
+  sealed trait ready
+    extends StObject
+       with EventType
   @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
   
@@ -49,7 +58,9 @@ object youtubePlayerStrings {
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait stateChange extends EventType
+  sealed trait stateChange
+    extends StObject
+       with EventType
   @scala.inline
   def stateChange: stateChange = "stateChange".asInstanceOf[stateChange]
   
@@ -59,7 +70,9 @@ object youtubePlayerStrings {
   def user_uploads: user_uploads = "user_uploads".asInstanceOf[user_uploads]
   
   @js.native
-  sealed trait volumeChange extends EventType
+  sealed trait volumeChange
+    extends StObject
+       with EventType
   @scala.inline
   def volumeChange: volumeChange = "volumeChange".asInstanceOf[volumeChange]
   

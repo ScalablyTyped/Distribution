@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListShaCertificatesResponse extends StObject {
   
   /** The list of each `ShaCertificate` associated with the `AndroidApp`. */
-  var certificates: js.UndefOr[js.Array[ShaCertificate]] = js.native
+  var certificates: js.UndefOr[js.Array[ShaCertificate]] = js.undefined
 }
 object ListShaCertificatesResponse {
   

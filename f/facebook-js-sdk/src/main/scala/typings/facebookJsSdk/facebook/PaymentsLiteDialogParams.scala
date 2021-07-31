@@ -4,27 +4,27 @@ import typings.facebookJsSdk.facebookJsSdkStrings.pay
 import typings.facebookJsSdk.facebookJsSdkStrings.purchaseiap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PaymentsLiteDialogParams extends DialogParams {
+trait PaymentsLiteDialogParams
+  extends StObject
+     with DialogParams {
   
-  var action: purchaseiap = js.native
+  var action: purchaseiap
   
-  var developer_payload: js.UndefOr[String] = js.native
+  var developer_payload: js.UndefOr[String] = js.undefined
   
-  var method: pay = js.native
+  var method: pay
   
-  var product_id: String = js.native
+  var product_id: String
   
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
 }
 object PaymentsLiteDialogParams {
   
   @scala.inline
-  def apply(action: purchaseiap, method: pay, product_id: String): PaymentsLiteDialogParams = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], product_id = product_id.asInstanceOf[js.Any])
+  def apply(product_id: String): PaymentsLiteDialogParams = {
+    val __obj = js.Dynamic.literal(action = "purchaseiap", method = "pay", product_id = product_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentsLiteDialogParams]
   }
   

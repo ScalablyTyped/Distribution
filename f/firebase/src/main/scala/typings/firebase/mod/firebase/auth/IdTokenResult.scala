@@ -3,7 +3,6 @@ package typings.firebase.mod.firebase.auth
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,47 +15,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Only server side verification can guarantee the integrity of the token
   * claims.
   */
-@js.native
 trait IdTokenResult extends StObject {
   
   /**
     * The authentication time formatted as a UTC string. This is the time the
     * user authenticated (signed in) and not the time the token was refreshed.
     */
-  var authTime: String = js.native
+  var authTime: String
   
   /**
     * The entire payload claims of the ID token including the standard reserved
     * claims as well as the custom claims.
     */
-  var claims: StringDictionary[js.Any] = js.native
+  var claims: StringDictionary[js.Any]
   
   /**
     * The ID token expiration time formatted as a UTC string.
     */
-  var expirationTime: String = js.native
+  var expirationTime: String
   
   /**
     * The ID token issued at time formatted as a UTC string.
     */
-  var issuedAtTime: String = js.native
+  var issuedAtTime: String
   
   /**
     * The sign-in provider through which the ID token was obtained (anonymous,
     * custom, phone, password, etc). Note, this does not map to provider IDs.
     */
-  var signInProvider: String | Null = js.native
+  var signInProvider: String | Null
   
   /**
     * The type of second factor associated with this session, provided the user
     * was multi-factor authenticated (eg. phone, etc).
     */
-  var signInSecondFactor: String | Null = js.native
+  var signInSecondFactor: String | Null
   
   /**
     * The Firebase Auth ID token JWT string.
     */
-  var token: String = js.native
+  var token: String
 }
 object IdTokenResult {
   
@@ -68,7 +66,7 @@ object IdTokenResult {
     issuedAtTime: String,
     token: String
   ): IdTokenResult = {
-    val __obj = js.Dynamic.literal(authTime = authTime.asInstanceOf[js.Any], claims = claims.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], issuedAtTime = issuedAtTime.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authTime = authTime.asInstanceOf[js.Any], claims = claims.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], issuedAtTime = issuedAtTime.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], signInProvider = null, signInSecondFactor = null)
     __obj.asInstanceOf[IdTokenResult]
   }
   

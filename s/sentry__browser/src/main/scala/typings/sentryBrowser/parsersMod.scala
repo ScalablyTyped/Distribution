@@ -8,33 +8,29 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parsersMod {
   
-  @JSImport("@sentry/browser/dist/parsers", "eventFromPlainObject")
+  @JSImport("@sentry/browser/dist/parsers", JSImport.Namespace)
   @js.native
-  def eventFromPlainObject(exception: Record[String, _]): Event = js.native
-  @JSImport("@sentry/browser/dist/parsers", "eventFromPlainObject")
-  @js.native
-  def eventFromPlainObject(exception: Record[String, _], syntheticException: js.UndefOr[scala.Nothing], rejection: Boolean): Event = js.native
-  @JSImport("@sentry/browser/dist/parsers", "eventFromPlainObject")
-  @js.native
-  def eventFromPlainObject(exception: Record[String, _], syntheticException: Error): Event = js.native
-  @JSImport("@sentry/browser/dist/parsers", "eventFromPlainObject")
-  @js.native
-  def eventFromPlainObject(exception: Record[String, _], syntheticException: Error, rejection: Boolean): Event = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@sentry/browser/dist/parsers", "eventFromStacktrace")
-  @js.native
-  def eventFromStacktrace(stacktrace: StackTrace): Event = js.native
+  @scala.inline
+  def eventFromPlainObject(exception: Record[String, js.Any]): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any]).asInstanceOf[Event]
+  @scala.inline
+  def eventFromPlainObject(exception: Record[String, js.Any], syntheticException: Unit, rejection: Boolean): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any], rejection.asInstanceOf[js.Any])).asInstanceOf[Event]
+  @scala.inline
+  def eventFromPlainObject(exception: Record[String, js.Any], syntheticException: Error): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any])).asInstanceOf[Event]
+  @scala.inline
+  def eventFromPlainObject(exception: Record[String, js.Any], syntheticException: Error, rejection: Boolean): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any], rejection.asInstanceOf[js.Any])).asInstanceOf[Event]
   
-  @JSImport("@sentry/browser/dist/parsers", "exceptionFromStacktrace")
-  @js.native
-  def exceptionFromStacktrace(stacktrace: StackTrace): Exception = js.native
+  @scala.inline
+  def eventFromStacktrace(stacktrace: StackTrace): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("eventFromStacktrace")(stacktrace.asInstanceOf[js.Any]).asInstanceOf[Event]
   
-  @JSImport("@sentry/browser/dist/parsers", "prepareFramesForEvent")
-  @js.native
-  def prepareFramesForEvent(stack: js.Array[StackFrame]): js.Array[typings.sentryTypes.stackframeMod.StackFrame] = js.native
+  @scala.inline
+  def exceptionFromStacktrace(stacktrace: StackTrace): Exception = ^.asInstanceOf[js.Dynamic].applyDynamic("exceptionFromStacktrace")(stacktrace.asInstanceOf[js.Any]).asInstanceOf[Exception]
+  
+  @scala.inline
+  def prepareFramesForEvent(stack: js.Array[StackFrame]): js.Array[typings.sentryTypes.stackframeMod.StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareFramesForEvent")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.sentryTypes.stackframeMod.StackFrame]]
 }

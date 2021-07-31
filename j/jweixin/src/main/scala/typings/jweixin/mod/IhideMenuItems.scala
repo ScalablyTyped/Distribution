@@ -2,13 +2,13 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IhideMenuItems extends BaseParams {
+trait IhideMenuItems
+  extends StObject
+     with BaseParams {
   
-  var menuList: js.Array[menuProtected | menuShare] = js.native
+  var menuList: js.Array[menuProtected | menuShare]
 }
 object IhideMenuItems {
   

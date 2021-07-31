@@ -2,10 +2,8 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluateRequest extends StObject {
   
   /**
@@ -14,78 +12,78 @@ trait EvaluateRequest extends StObject {
     * when called with non-callable arguments. This flag bypasses CSP for this
     * evaluation and allows unsafe-eval. Defaults to true.
     */
-  var allowUnsafeEvalBlockedByCSP: js.UndefOr[Boolean] = js.native
+  var allowUnsafeEvalBlockedByCSP: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether execution should `await` for resulting value and return once awaited promise is
     * resolved.
     */
-  var awaitPromise: js.UndefOr[Boolean] = js.native
+  var awaitPromise: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies in which execution context to perform evaluation. If the parameter is omitted the
     * evaluation will be performed in the context of the inspected page.
     */
-  var contextId: js.UndefOr[ExecutionContextId] = js.native
+  var contextId: js.UndefOr[ExecutionContextId] = js.undefined
   
   /**
     * Disable breakpoints during execution.
     */
-  var disableBreaks: js.UndefOr[Boolean] = js.native
+  var disableBreaks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Expression to evaluate.
     */
-  var expression: String = js.native
+  var expression: String
   
   /**
     * Whether preview should be generated for the result.
     */
-  var generatePreview: js.UndefOr[Boolean] = js.native
+  var generatePreview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines whether Command Line API should be available during the evaluation.
     */
-  var includeCommandLineAPI: js.UndefOr[Boolean] = js.native
+  var includeCommandLineAPI: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Symbolic group name that can be used to release multiple objects.
     */
-  var objectGroup: js.UndefOr[String] = js.native
+  var objectGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Setting this flag to true enables `let` re-declaration and top-level `await`.
     * Note that `let` variables can only be re-declared if they originate from
     * `replMode` themselves.
     */
-  var replMode: js.UndefOr[Boolean] = js.native
+  var replMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the result is expected to be a JSON object that should be sent by value.
     */
-  var returnByValue: js.UndefOr[Boolean] = js.native
+  var returnByValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * In silent mode exceptions thrown during evaluation are not reported and do not pause
     * execution. Overrides `setPauseOnException` state.
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to throw an exception if side effect cannot be ruled out during evaluation.
     * This implies `disableBreaks` below.
     */
-  var throwOnSideEffect: js.UndefOr[Boolean] = js.native
+  var throwOnSideEffect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Terminate execution after timing out (number of milliseconds).
     */
-  var timeout: js.UndefOr[TimeDelta] = js.native
+  var timeout: js.UndefOr[TimeDelta] = js.undefined
   
   /**
     * Whether execution should be treated as initiated by user in the UI.
     */
-  var userGesture: js.UndefOr[Boolean] = js.native
+  var userGesture: js.UndefOr[Boolean] = js.undefined
 }
 object EvaluateRequest {
   

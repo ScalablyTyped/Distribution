@@ -2,15 +2,13 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BinNonce extends StObject {
   
-  var bin: String = js.native
+  var bin: String
   
-  var nonce: String = js.native
+  var nonce: String
 }
 object BinNonce {
   

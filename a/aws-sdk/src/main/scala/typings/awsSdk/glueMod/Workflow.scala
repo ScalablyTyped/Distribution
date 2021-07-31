@@ -2,51 +2,49 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Workflow extends StObject {
   
   /**
     * The date and time when the workflow was created.
     */
-  var CreatedOn: js.UndefOr[TimestampValue] = js.native
+  var CreatedOn: js.UndefOr[TimestampValue] = js.undefined
   
   /**
     * A collection of properties to be used as part of each execution of the workflow.
     */
-  var DefaultRunProperties: js.UndefOr[WorkflowRunProperties] = js.native
+  var DefaultRunProperties: js.UndefOr[WorkflowRunProperties] = js.undefined
   
   /**
     * A description of the workflow.
     */
-  var Description: js.UndefOr[GenericString] = js.native
+  var Description: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The graph representing all the AWS Glue components that belong to the workflow as nodes and directed connections between them as edges.
     */
-  var Graph: js.UndefOr[WorkflowGraph] = js.native
+  var Graph: js.UndefOr[WorkflowGraph] = js.undefined
   
   /**
     * The date and time when the workflow was last modified.
     */
-  var LastModifiedOn: js.UndefOr[TimestampValue] = js.native
+  var LastModifiedOn: js.UndefOr[TimestampValue] = js.undefined
   
   /**
     * The information about the last execution of the workflow.
     */
-  var LastRun: js.UndefOr[WorkflowRun] = js.native
+  var LastRun: js.UndefOr[WorkflowRun] = js.undefined
   
   /**
     * You can use this parameter to prevent unwanted multiple updates to data, to control costs, or in some cases, to prevent exceeding the maximum number of concurrent runs of any of the component jobs. If you leave this parameter blank, there is no limit to the number of concurrent workflow runs.
     */
-  var MaxConcurrentRuns: js.UndefOr[NullableInteger] = js.native
+  var MaxConcurrentRuns: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * The name of the workflow representing the flow.
     */
-  var Name: js.UndefOr[NameString] = js.native
+  var Name: js.UndefOr[NameString] = js.undefined
 }
 object Workflow {
   

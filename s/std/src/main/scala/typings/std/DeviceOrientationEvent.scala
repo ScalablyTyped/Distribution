@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The DeviceOrientationEvent provides web developers with information from the physical orientation of the device running the web page. */
 @js.native
-trait DeviceOrientationEvent extends Event {
+trait DeviceOrientationEvent
+  extends StObject
+     with Event {
   
   val absolute: scala.Boolean = js.native
   

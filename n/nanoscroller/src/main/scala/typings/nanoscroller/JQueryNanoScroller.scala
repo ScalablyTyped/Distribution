@@ -4,12 +4,10 @@ import typings.nanoscroller.nanoscrollerStrings.bottom
 import typings.nanoscroller.nanoscrollerStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryNanoScroller {
   
-  @js.native
   trait NanoScrollerOptions extends StObject {
     
     /**
@@ -17,25 +15,25 @@ object JQueryNanoScroller {
       * If you change this setting, you also have to change it in the plugin's CSS file.
       * @default 'active'
       */
-    var activeClass: js.UndefOr[String] = js.native
+    var activeClass: js.UndefOr[String] = js.undefined
     
     /**
       * Set to true to stop the scrollbar from auto-hiding itself.
       * @default false
       */
-    var alwaysVisible: js.UndefOr[Boolean] = js.native
+    var alwaysVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A classname for your content div.
       * If you change this setting, you also have to change it in the plugin's CSS file.
       * @default 'nano-content'
       */
-    var contentClass: js.UndefOr[String] = js.native
+    var contentClass: js.UndefOr[String] = js.undefined
     
     /**
       * Destroys nanoScroller and restores browser's native scrollbar.
       */
-    var destroy: js.UndefOr[Boolean] = js.native
+    var destroy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true to disable the resize from nanoscroller.
@@ -43,33 +41,33 @@ object JQueryNanoScroller {
       * If you set this option to true remember to call the reset method so that the scroll don't have strange behavior.
       * @default false
       */
-    var disableResize: js.UndefOr[Boolean] = js.native
+    var disableResize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A classname for scrollbar enabled mode.
       * If you change this setting, you also have to change it in the plugin's CSS file.
       * @default 'has-scrollbar'
       */
-    var enabledClass: js.UndefOr[String] = js.native
+    var enabledClass: js.UndefOr[String] = js.undefined
     
     /**
       * To flash the scrollbar gadget for an amount of time defined in plugin settings (defaults to 1,5s).
       * Useful if you want to show the user that there is more content waiting for them.
       */
-    var flash: js.UndefOr[Boolean] = js.native
+    var flash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use this setting to specify the scrollbar hide delay in milliseconds if you have enabled the flash option.
       * @default 1500
       */
-    var flashDelay: js.UndefOr[Double] = js.native
+    var flashDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * A classname for scrollbar flashed mode.
       * If you change this setting, you also have to change it in the plugin's CSS file.
       * @default 'flashed'
       */
-    var flashedClass: js.UndefOr[String] = js.native
+    var flashedClass: js.UndefOr[String] = js.undefined
     
     /**
       * Set to true if you want to use native scrolling in iOS 5+.
@@ -77,72 +75,72 @@ object JQueryNanoScroller {
       * While the native iOS scrollbar usually works much better, there could possibly be bugs in certain situations.
       * @default false
       */
-    var iOSNativeScrolling: js.UndefOr[Boolean] = js.native
+    var iOSNativeScrolling: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A classname for scrollbar track element.
       * If you change this setting, you also have to change it in the plugin's CSS file.
       * @default 'nano-pane'
       */
-    var paneClass: js.UndefOr[String] = js.native
+    var paneClass: js.UndefOr[String] = js.undefined
     
     /**
       * Set to true to prevent page scrolling when top or bottom inside the content div is reached.
       * @default false
       */
-    var preventPageScrolling: js.UndefOr[Boolean] = js.native
+    var preventPageScrolling: js.UndefOr[Boolean] = js.undefined
     
     /**
       * To scroll at the top or bottom.
       */
-    var scroll: js.UndefOr[top | bottom] = js.native
+    var scroll: js.UndefOr[top | bottom] = js.undefined
     
     /**
       * To scroll at the bottom with an offset value.
       */
-    var scrollBottom: js.UndefOr[Double] = js.native
+    var scrollBottom: js.UndefOr[Double] = js.undefined
     
     /**
       * To scroll to an element.
       */
-    var scrollTo: js.UndefOr[JQuery] = js.native
+    var scrollTo: js.UndefOr[JQuery] = js.undefined
     
     /**
       * To scroll at the top with an offset value.
       */
-    var scrollTop: js.UndefOr[Double] = js.native
+    var scrollTop: js.UndefOr[Double] = js.undefined
     
     /**
       * A classname for scrollbar thumb element.
       * If you change this setting, you also have to change it in the plugin's CSS file.
       * @default 'nano-slider'
       */
-    var sliderClass: js.UndefOr[String] = js.native
+    var sliderClass: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the maximum height of the slider element.
       * @default null
       */
-    var sliderMaxHeight: js.UndefOr[Double | Null] = js.native
+    var sliderMaxHeight: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Sets the minimum height of the slider element.
       * @default 20
       */
-    var sliderMinHeight: js.UndefOr[Double] = js.native
+    var sliderMinHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * To stop the operation.
       * This option will tell the plugin to disable all event bindings and hide the gadget scrollbar from the UI.
       */
-    var stop: js.UndefOr[Boolean] = js.native
+    var stop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the tab order of the scrollable content.
       * Set to -1 to skip over the scrollable content when tabbing.
       * @default 0
       */
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
   }
   object NanoScrollerOptions {
     

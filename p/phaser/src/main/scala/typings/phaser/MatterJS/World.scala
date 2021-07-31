@@ -2,7 +2,6 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,12 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class World
   * @extends Composite
   */
-@js.native
 trait World extends StObject {
   
-  var bounds: Bounds = js.native
+  var bounds: Bounds
   
-  var gravity: Gravity = js.native
+  var gravity: Gravity
 }
 object World {
   

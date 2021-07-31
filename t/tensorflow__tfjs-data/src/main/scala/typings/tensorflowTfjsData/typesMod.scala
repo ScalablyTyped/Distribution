@@ -14,12 +14,10 @@ import typings.tensorflowTfjsData.tensorflowTfjsDataStrings.environment
 import typings.tensorflowTfjsData.tensorflowTfjsDataStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait CSVConfig extends StObject {
     
     /**
@@ -47,7 +45,7 @@ object typesMod {
       * key/value pairs, ys is a dict of labels key/value pairs. If no column is
       * marked as label, returns a dict of features only.
       */
-    var columnConfigs: js.UndefOr[StringDictionary[ColumnConfig]] = js.native
+    var columnConfigs: js.UndefOr[StringDictionary[ColumnConfig]] = js.undefined
     
     /**
       * A list of strings that corresponds to the CSV column names, in order. If
@@ -56,30 +54,30 @@ object typesMod {
       * `hasHeader` is false and `columnNames` is not provided, this method will
       * throw an error.
       */
-    var columnNames: js.UndefOr[js.Array[String]] = js.native
+    var columnNames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * If true, only columns provided in `columnConfigs` will be parsed and
       * provided during iteration.
       */
-    var configuredColumnsOnly: js.UndefOr[Boolean] = js.native
+    var configuredColumnsOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, delimiter field should be null. Parsing delimiter is whitespace
       * and treat continuous multiple whitespace as one delimiter.
       */
-    var delimWhitespace: js.UndefOr[Boolean] = js.native
+    var delimWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The string used to parse each line of the input file.
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * A boolean value that indicates whether the first row of provided CSV file
       * is a header line with column names, and should not be included in the data.
       */
-    var hasHeader: js.UndefOr[Boolean] = js.native
+    var hasHeader: js.UndefOr[Boolean] = js.undefined
   }
   object CSVConfig {
     
@@ -133,16 +131,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ColumnConfig extends StObject {
     
-    var default: js.UndefOr[TensorContainer] = js.native
+    var default: js.UndefOr[TensorContainer] = js.undefined
     
-    var dtype: js.UndefOr[DataType] = js.native
+    var dtype: js.UndefOr[DataType] = js.undefined
     
-    var isLabel: js.UndefOr[Boolean] = js.native
+    var isLabel: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
   }
   object ColumnConfig {
     
@@ -189,12 +186,13 @@ object typesMod {
   
   @js.native
   trait ContainerArray[T]
-    extends Array[ContainerOrT[T]]
+    extends StObject
+       with Array[ContainerOrT[T]]
        with Container[T]
   
-  @js.native
   trait ContainerObject[T]
-    extends /* x */ StringDictionary[ContainerOrT[T]]
+    extends StObject
+       with /* x */ StringDictionary[ContainerOrT[T]]
        with Container[T]
   object ContainerObject {
     
@@ -209,24 +207,23 @@ object typesMod {
   
   type FileElement = File | Blob | Uint8Array
   
-  @js.native
   trait MicrophoneConfig extends StObject {
     
-    var audioTrackConstraints: js.UndefOr[MediaTrackConstraints] = js.native
+    var audioTrackConstraints: js.UndefOr[MediaTrackConstraints] = js.undefined
     
-    var columnTruncateLength: js.UndefOr[Double] = js.native
+    var columnTruncateLength: js.UndefOr[Double] = js.undefined
     
-    var fftSize: js.UndefOr[Double] = js.native
+    var fftSize: js.UndefOr[Double] = js.undefined
     
-    var includeSpectrogram: js.UndefOr[Boolean] = js.native
+    var includeSpectrogram: js.UndefOr[Boolean] = js.undefined
     
-    var includeWaveform: js.UndefOr[Boolean] = js.native
+    var includeWaveform: js.UndefOr[Boolean] = js.undefined
     
-    var numFramesPerSpectrogram: js.UndefOr[Double] = js.native
+    var numFramesPerSpectrogram: js.UndefOr[Double] = js.undefined
     
-    var sampleRateHz: js.UndefOr[`44100` | `48000`] = js.native
+    var sampleRateHz: js.UndefOr[`44100` | `48000`] = js.undefined
     
-    var smoothingTimeConstant: js.UndefOr[Double] = js.native
+    var smoothingTimeConstant: js.UndefOr[Double] = js.undefined
   }
   object MicrophoneConfig {
     
@@ -289,7 +286,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WebcamConfig extends StObject {
     
     /**
@@ -299,34 +295,34 @@ object typesMod {
       * without scaling. If false, the entire image is returned (perhaps scaled to
       * fit in `[resizeWidth, resizeHeight]`, if those are provided).
       */
-    var centerCrop: js.UndefOr[Boolean] = js.native
+    var centerCrop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A string used to request a specific camera. The deviceId can be obtained by
       * calling `mediaDevices.enumerateDevices()`.
       */
-    var deviceId: js.UndefOr[String] = js.native
+    var deviceId: js.UndefOr[String] = js.undefined
     
     /**
       * A string specifying which camera to use on device. If the value is
       * 'user', it will use front camera. If the value is 'environment', it will
       * use rear camera.
       */
-    var facingMode: js.UndefOr[user | environment] = js.native
+    var facingMode: js.UndefOr[user | environment] = js.undefined
     
     /**
       * Specifies the height of the output tensor. The actual height of the
       * HTMLVideoElement (if provided) can be different and the final image will be
       * resized to match resizeHeight.
       */
-    var resizeHeight: js.UndefOr[Double] = js.native
+    var resizeHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies the width of the output tensor. The actual width of the
       * HTMLVideoElement (if provided) can be different and the final image will be
       * resized to match resizeWidth.
       */
-    var resizeWidth: js.UndefOr[Double] = js.native
+    var resizeWidth: js.UndefOr[Double] = js.undefined
   }
   object WebcamConfig {
     

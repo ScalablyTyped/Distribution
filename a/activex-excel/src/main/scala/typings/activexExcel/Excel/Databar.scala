@@ -2,68 +2,188 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Databar extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  def AppliesTo(Address: String): Range = js.native
-  def AppliesTo(RowIndex: Double): Range = js.native
-  def AppliesTo(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  def AppliesTo(Address: String): Range
+  def AppliesTo(RowIndex: Double): Range
+  def AppliesTo(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("AppliesTo")
-  val AppliesTo_Original: Range = js.native
+  val AppliesTo_Original: Range
   
-  val AxisColor: FormatColor = js.native
+  val AxisColor: FormatColor
   
-  var AxisPosition: XlDataBarAxisPosition = js.native
+  var AxisPosition: XlDataBarAxisPosition
   
-  val BarBorder: DataBarBorder = js.native
+  val BarBorder: DataBarBorder
   
-  val BarColor: FormatColor = js.native
+  val BarColor: FormatColor
   
-  var BarFillType: XlDataBarFillType = js.native
+  var BarFillType: XlDataBarFillType
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Direction: Double = js.native
+  var Direction: Double
   
   @JSName("Excel.Databar_typekey")
-  var ExcelDotDatabar_typekey: Databar = js.native
+  var ExcelDotDatabar_typekey: Databar
   
-  var Formula: String = js.native
+  var Formula: String
   
-  val MaxPoint: ConditionValue = js.native
+  val MaxPoint: ConditionValue
   
-  val MinPoint: ConditionValue = js.native
+  val MinPoint: ConditionValue
   
-  def ModifyAppliesToRange(Range: Range): Unit = js.native
+  def ModifyAppliesToRange(Range: Range): Unit
   
-  val NegativeBarFormat: typings.activexExcel.Excel.NegativeBarFormat = js.native
+  val NegativeBarFormat: typings.activexExcel.Excel.NegativeBarFormat
   
-  val PTCondition: Boolean = js.native
+  val PTCondition: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PercentMax: Double = js.native
+  var PercentMax: Double
   
-  var PercentMin: Double = js.native
+  var PercentMin: Double
   
-  var Priority: Double = js.native
+  var Priority: Double
   
-  var ScopeType: XlPivotConditionScope = js.native
+  var ScopeType: XlPivotConditionScope
   
-  def SetFirstPriority(): Unit = js.native
+  def SetFirstPriority(): Unit
   
-  def SetLastPriority(): Unit = js.native
+  def SetLastPriority(): Unit
   
-  var ShowValue: Boolean = js.native
+  var ShowValue: Boolean
   
-  val StopIfTrue: Boolean = js.native
+  val StopIfTrue: Boolean
   
-  val Type: Double = js.native
+  val Type: Double
+}
+object Databar {
+  
+  @scala.inline
+  def apply(
+    Application: Application,
+    AppliesTo: Range,
+    AxisColor: FormatColor,
+    AxisPosition: XlDataBarAxisPosition,
+    BarBorder: DataBarBorder,
+    BarColor: FormatColor,
+    BarFillType: XlDataBarFillType,
+    Creator: XlCreator,
+    Delete: () => Unit,
+    Direction: Double,
+    ExcelDotDatabar_typekey: Databar,
+    Formula: String,
+    MaxPoint: ConditionValue,
+    MinPoint: ConditionValue,
+    ModifyAppliesToRange: Range => Unit,
+    NegativeBarFormat: NegativeBarFormat,
+    PTCondition: Boolean,
+    Parent: js.Any,
+    PercentMax: Double,
+    PercentMin: Double,
+    Priority: Double,
+    ScopeType: XlPivotConditionScope,
+    SetFirstPriority: () => Unit,
+    SetLastPriority: () => Unit,
+    ShowValue: Boolean,
+    StopIfTrue: Boolean,
+    Type: Double
+  ): Databar = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AppliesTo = AppliesTo.asInstanceOf[js.Any], AxisColor = AxisColor.asInstanceOf[js.Any], AxisPosition = AxisPosition.asInstanceOf[js.Any], BarBorder = BarBorder.asInstanceOf[js.Any], BarColor = BarColor.asInstanceOf[js.Any], BarFillType = BarFillType.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Direction = Direction.asInstanceOf[js.Any], Formula = Formula.asInstanceOf[js.Any], MaxPoint = MaxPoint.asInstanceOf[js.Any], MinPoint = MinPoint.asInstanceOf[js.Any], ModifyAppliesToRange = js.Any.fromFunction1(ModifyAppliesToRange), NegativeBarFormat = NegativeBarFormat.asInstanceOf[js.Any], PTCondition = PTCondition.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PercentMax = PercentMax.asInstanceOf[js.Any], PercentMin = PercentMin.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], ScopeType = ScopeType.asInstanceOf[js.Any], SetFirstPriority = js.Any.fromFunction0(SetFirstPriority), SetLastPriority = js.Any.fromFunction0(SetLastPriority), ShowValue = ShowValue.asInstanceOf[js.Any], StopIfTrue = StopIfTrue.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.Databar_typekey")(ExcelDotDatabar_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Databar]
+  }
+  
+  @scala.inline
+  implicit class DatabarMutableBuilder[Self <: Databar] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAppliesTo(value: Range): Self = StObject.set(x, "AppliesTo", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAxisColor(value: FormatColor): Self = StObject.set(x, "AxisColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAxisPosition(value: XlDataBarAxisPosition): Self = StObject.set(x, "AxisPosition", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBarBorder(value: DataBarBorder): Self = StObject.set(x, "BarBorder", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBarColor(value: FormatColor): Self = StObject.set(x, "BarColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBarFillType(value: XlDataBarFillType): Self = StObject.set(x, "BarFillType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setDirection(value: Double): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setExcelDotDatabar_typekey(value: Databar): Self = StObject.set(x, "Excel.Databar_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMaxPoint(value: ConditionValue): Self = StObject.set(x, "MaxPoint", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMinPoint(value: ConditionValue): Self = StObject.set(x, "MinPoint", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setModifyAppliesToRange(value: Range => Unit): Self = StObject.set(x, "ModifyAppliesToRange", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setNegativeBarFormat(value: NegativeBarFormat): Self = StObject.set(x, "NegativeBarFormat", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPTCondition(value: Boolean): Self = StObject.set(x, "PTCondition", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPercentMax(value: Double): Self = StObject.set(x, "PercentMax", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPercentMin(value: Double): Self = StObject.set(x, "PercentMin", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScopeType(value: XlPivotConditionScope): Self = StObject.set(x, "ScopeType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSetFirstPriority(value: () => Unit): Self = StObject.set(x, "SetFirstPriority", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setSetLastPriority(value: () => Unit): Self = StObject.set(x, "SetLastPriority", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setShowValue(value: Boolean): Self = StObject.set(x, "ShowValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStopIfTrue(value: Boolean): Self = StObject.set(x, "StopIfTrue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+  }
 }

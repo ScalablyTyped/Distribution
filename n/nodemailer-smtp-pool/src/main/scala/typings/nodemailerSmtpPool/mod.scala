@@ -4,23 +4,24 @@ import typings.node.tlsMod.ConnectionOptions
 import typings.nodemailer.mod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: SmtpPoolOptions): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  
   @JSImport("nodemailer-smtp-pool", JSImport.Namespace)
   @js.native
-  def apply(options: SmtpPoolOptions): Transport = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait AuthOptions extends StObject {
     
-    var pass: js.UndefOr[String] = js.native
+    var pass: js.UndefOr[String] = js.undefined
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
     
-    var xoauth2: js.UndefOr[js.Any] = js.native
+    var xoauth2: js.UndefOr[js.Any] = js.undefined
   }
   object AuthOptions {
     
@@ -53,83 +54,82 @@ object mod {
     }
   }
   
-  @js.native
   trait SmtpPoolOptions extends StObject {
     
     /**
       *  defines authentication data (see authentication section below)
       */
-    var auth: js.UndefOr[AuthOptions] = js.native
+    var auth: js.UndefOr[AuthOptions] = js.undefined
     
     /**
       * defines preferred authentication method, eg. 'PLAIN'
       */
-    var authMethod: js.UndefOr[String] = js.native
+    var authMethod: js.UndefOr[String] = js.undefined
     
     /**
       * how many milliseconds to wait for the connection to establish
       */
-    var connectionTimeout: js.UndefOr[Double] = js.native
+    var connectionTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * if true, the connection emits all traffic between client and server as 'log' events
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * how many milliseconds to wait for the greeting after connection is established
       */
-    var greetingTimeout: js.UndefOr[Double] = js.native
+    var greetingTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * is the hostname or IP address to connect to (defaults to 'localhost')
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       *  turns off STARTTLS support if true
       */
-    var ignoreTLS: js.UndefOr[Boolean] = js.native
+    var ignoreTLS: js.UndefOr[Boolean] = js.undefined
     
     /**
       * is the local interface to bind to for network connections
       */
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
     /**
       * (defaults to 5) is the count of maximum simultaneous connections to make against the SMTP server
       */
-    var maxConnections: js.UndefOr[Double] = js.native
+    var maxConnections: js.UndefOr[Double] = js.undefined
     
     /**
       * (defaults to 100) limits the message count to be sent using a single connection. After maxMessages messages the connection is dropped and a new one is created for the following messages
       */
-    var maxMessages: js.UndefOr[Double] = js.native
+    var maxMessages: js.UndefOr[Double] = js.undefined
     
     /**
       * optional hostname of the client, used for identifying to the server
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * is the port to connect to (defaults to 25 or 465)
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * defines if the connection should use SSL (if true) or not (if false)
       */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * how many milliseconds of inactivity to allow
       */
-    var socketTimeout: js.UndefOr[Double] = js.native
+    var socketTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       *  defines additional options to be passed to the socket constructor, eg. {rejectUnauthorized: true}
       */
-    var tls: js.UndefOr[ConnectionOptions] = js.native
+    var tls: js.UndefOr[ConnectionOptions] = js.undefined
   }
   object SmtpPoolOptions {
     

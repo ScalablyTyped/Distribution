@@ -2,18 +2,16 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuyListResponse extends StObject {
   
-  var country: String = js.native
+  var country: String
   
   // optional field, fiat currency based on user's IP
-  var providers: js.Array[BuyProviderInfo] = js.native
+  var providers: js.Array[BuyProviderInfo]
   
-  var suggestedFiatCurrency: js.UndefOr[String] = js.native
+  var suggestedFiatCurrency: js.UndefOr[String] = js.undefined
 }
 object BuyListResponse {
   

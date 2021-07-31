@@ -2,21 +2,19 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 选择城市 https://docs.alipay.com/mini/api/ui-city
-@js.native
 trait City extends StObject {
   
   // 城市名
-  var adCode: String = js.native
+  var adCode: String
   
-  var city: String = js.native
+  var city: String
   
   // 行政区划代码
-  var spell: js.UndefOr[String] = js.native
+  var spell: js.UndefOr[String] = js.undefined
 }
 object City {
   

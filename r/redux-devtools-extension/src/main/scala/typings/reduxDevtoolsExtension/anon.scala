@@ -7,29 +7,27 @@ import typings.redux.mod.Func3
 import typings.reduxDevtoolsExtension.reduxDevtoolsExtensionStrings.custom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Date extends StObject {
     
-    var date: js.UndefOr[Boolean] = js.native
+    var date: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var function: js.UndefOr[Boolean | js.Function] = js.native
+    var function: js.UndefOr[Boolean | js.Function] = js.undefined
     
-    var map: js.UndefOr[Boolean] = js.native
+    var map: js.UndefOr[Boolean] = js.undefined
     
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
     
-    var set: js.UndefOr[Boolean] = js.native
+    var set: js.UndefOr[Boolean] = js.undefined
     
-    var symbol: js.UndefOr[Boolean] = js.native
+    var symbol: js.UndefOr[Boolean] = js.undefined
     
-    var undefined: js.UndefOr[Boolean] = js.native
+    var undefined: js.UndefOr[Boolean] = js.undefined
   }
   object Date {
     
@@ -92,58 +90,57 @@ object anon {
     }
   }
   
-  @js.native
   trait Dispatch extends StObject {
     
     /**
       * dispatch custom actions or action creators
       */
-    var dispatch: js.UndefOr[Boolean] = js.native
+    var dispatch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * export history of actions in a file
       */
-    var export: js.UndefOr[Boolean | custom] = js.native
+    var `export`: js.UndefOr[Boolean | custom] = js.undefined
     
     /**
       * import history of actions from a file
       */
-    var `import`: js.UndefOr[Boolean | custom] = js.native
+    var `import`: js.UndefOr[Boolean | custom] = js.undefined
     
     /**
       * jump back and forth (time travelling)
       */
-    var jump: js.UndefOr[Boolean] = js.native
+    var jump: js.UndefOr[Boolean] = js.undefined
     
     /**
       * lock/unlock dispatching actions and side effects
       */
-    var lock: js.UndefOr[Boolean] = js.native
+    var lock: js.UndefOr[Boolean] = js.undefined
     
     /**
       * start/pause recording of dispatched actions
       */
-    var pause: js.UndefOr[Boolean] = js.native
+    var pause: js.UndefOr[Boolean] = js.undefined
     
     /**
       * persist states on page reloading
       */
-    var persist: js.UndefOr[Boolean] = js.native
+    var persist: js.UndefOr[Boolean] = js.undefined
     
     /**
       * drag and drop actions in the history list
       */
-    var reorder: js.UndefOr[Boolean] = js.native
+    var reorder: js.UndefOr[Boolean] = js.undefined
     
     /**
       * skip (cancel) actions
       */
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * generate tests for the selected actions
       */
-    var test: js.UndefOr[Boolean] = js.native
+    var test: js.UndefOr[Boolean] = js.undefined
   }
   object Dispatch {
     
@@ -221,7 +218,7 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(): js.Function1[/* a */ js.Any, _] = js.native
+    def apply(): js.Function1[/* a */ js.Any, js.Any] = js.native
     def apply[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = js.native
     def apply[F /* <: js.Function */](f: F): F = js.native
     def apply[R](funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = js.native

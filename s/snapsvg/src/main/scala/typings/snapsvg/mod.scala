@@ -12,29 +12,22 @@ import typings.std.SVGMatrix
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("snapsvg", JSImport.Namespace)
-  @js.native
-  def apply(DOM: SVGElement): Paper = js.native
-  @JSImport("snapsvg", JSImport.Namespace)
-  @js.native
-  def apply(query: String): Paper = js.native
-  @JSImport("snapsvg", JSImport.Namespace)
-  @js.native
-  def apply(width: String, height: String): Paper = js.native
-  @JSImport("snapsvg", JSImport.Namespace)
-  @js.native
-  def apply(width: String, height: Double): Paper = js.native
-  @JSImport("snapsvg", JSImport.Namespace)
-  @js.native
-  def apply(width: Double, height: String): Paper = js.native
-  @JSImport("snapsvg", JSImport.Namespace)
-  @js.native
-  def apply(width: Double, height: Double): Paper = js.native
+  @scala.inline
+  def apply(DOM: SVGElement): Paper = ^.asInstanceOf[js.Dynamic].apply(DOM.asInstanceOf[js.Any]).asInstanceOf[Paper]
+  @scala.inline
+  def apply(query: String): Paper = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[Paper]
+  @scala.inline
+  def apply(width: String, height: String): Paper = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Paper]
+  @scala.inline
+  def apply(width: String, height: Double): Paper = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Paper]
+  @scala.inline
+  def apply(width: Double, height: String): Paper = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Paper]
+  @scala.inline
+  def apply(width: Double, height: Double): Paper = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Paper]
   
   @JSImport("snapsvg", JSImport.Namespace)
   @js.native
@@ -51,18 +44,18 @@ object mod {
     def invert(): Matrix_ = js.native
     
     def rotate(a: Double): Matrix_ = js.native
-    def rotate(a: Double, x: js.UndefOr[scala.Nothing], y: Double): Matrix_ = js.native
     def rotate(a: Double, x: Double): Matrix_ = js.native
     def rotate(a: Double, x: Double, y: Double): Matrix_ = js.native
+    def rotate(a: Double, x: Unit, y: Double): Matrix_ = js.native
     
     def scale(x: Double): Matrix_ = js.native
-    def scale(x: Double, y: js.UndefOr[scala.Nothing], cx: js.UndefOr[scala.Nothing], cy: Double): Matrix_ = js.native
-    def scale(x: Double, y: js.UndefOr[scala.Nothing], cx: Double): Matrix_ = js.native
-    def scale(x: Double, y: js.UndefOr[scala.Nothing], cx: Double, cy: Double): Matrix_ = js.native
     def scale(x: Double, y: Double): Matrix_ = js.native
-    def scale(x: Double, y: Double, cx: js.UndefOr[scala.Nothing], cy: Double): Matrix_ = js.native
     def scale(x: Double, y: Double, cx: Double): Matrix_ = js.native
     def scale(x: Double, y: Double, cx: Double, cy: Double): Matrix_ = js.native
+    def scale(x: Double, y: Double, cx: Unit, cy: Double): Matrix_ = js.native
+    def scale(x: Double, y: Unit, cx: Double): Matrix_ = js.native
+    def scale(x: Double, y: Unit, cx: Double, cy: Double): Matrix_ = js.native
+    def scale(x: Double, y: Unit, cx: Unit, cy: Double): Matrix_ = js.native
     
     def split(): ExplicitTransform = js.native
     
@@ -74,76 +67,54 @@ object mod {
     
     def y(x: Double, y: Double): Double = js.native
   }
+  object Matrix_ {
+    
+    @JSImport("snapsvg", "Matrix")
+    @js.native
+    def apply(): Unit = js.native
+  }
   
-  @JSImport("snapsvg", "Matrix")
-  @js.native
-  def Matrix_(): Unit = js.native
+  @scala.inline
+  def acos(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("acos")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("snapsvg", "acos")
-  @js.native
-  def acos(angle: Double): Double = js.native
+  @scala.inline
+  def ajax(url: String, callback: js.Function): XMLHttpRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[XMLHttpRequest]
+  @scala.inline
+  def ajax(url: String, callback: js.Function, scope: js.Object): XMLHttpRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[XMLHttpRequest]
+  @scala.inline
+  def ajax(url: String, postData: String, callback: js.Function): XMLHttpRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(url.asInstanceOf[js.Any], postData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[XMLHttpRequest]
+  @scala.inline
+  def ajax(url: String, postData: String, callback: js.Function, scope: js.Object): XMLHttpRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(url.asInstanceOf[js.Any], postData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[XMLHttpRequest]
+  @scala.inline
+  def ajax(url: String, postData: js.Object, callback: js.Function): XMLHttpRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(url.asInstanceOf[js.Any], postData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[XMLHttpRequest]
+  @scala.inline
+  def ajax(url: String, postData: js.Object, callback: js.Function, scope: js.Object): XMLHttpRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(url.asInstanceOf[js.Any], postData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[XMLHttpRequest]
   
-  @JSImport("snapsvg", "ajax")
-  @js.native
-  def ajax(url: String, callback: js.Function): XMLHttpRequest = js.native
-  @JSImport("snapsvg", "ajax")
-  @js.native
-  def ajax(url: String, callback: js.Function, scope: js.Object): XMLHttpRequest = js.native
-  @JSImport("snapsvg", "ajax")
-  @js.native
-  def ajax(url: String, postData: String, callback: js.Function): XMLHttpRequest = js.native
-  @JSImport("snapsvg", "ajax")
-  @js.native
-  def ajax(url: String, postData: String, callback: js.Function, scope: js.Object): XMLHttpRequest = js.native
-  @JSImport("snapsvg", "ajax")
-  @js.native
-  def ajax(url: String, postData: js.Object, callback: js.Function): XMLHttpRequest = js.native
-  @JSImport("snapsvg", "ajax")
-  @js.native
-  def ajax(url: String, postData: js.Object, callback: js.Function, scope: js.Object): XMLHttpRequest = js.native
+  @scala.inline
+  def angle(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angle")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angle")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angle")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Unit, y3: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angle")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("snapsvg", "angle")
-  @js.native
-  def angle(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
-  @JSImport("snapsvg", "angle")
-  @js.native
-  def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: js.UndefOr[scala.Nothing], y3: Double): Double = js.native
-  @JSImport("snapsvg", "angle")
-  @js.native
-  def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double): Double = js.native
-  @JSImport("snapsvg", "angle")
-  @js.native
-  def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): Double = js.native
-  
-  @JSImport("snapsvg", "animate")
-  @js.native
+  @scala.inline
   def animate(
     from: js.Array[Double],
     to: js.Array[Double],
     updater: js.Function1[/* n */ Double, Unit],
     duration: Double
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
-  def animate(
-    from: js.Array[Double],
-    to: js.Array[Double],
-    updater: js.Function1[/* n */ Double, Unit],
-    duration: Double,
-    easing: js.UndefOr[scala.Nothing],
-    callback: js.Function0[Unit]
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
   def animate(
     from: js.Array[Double],
     to: js.Array[Double],
     updater: js.Function1[/* n */ Double, Unit],
     duration: Double,
     easing: js.Function1[/* num */ Double, Double]
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
   def animate(
     from: js.Array[Double],
     to: js.Array[Double],
@@ -151,31 +122,27 @@ object mod {
     duration: Double,
     easing: js.Function1[/* num */ Double, Double],
     callback: js.Function0[Unit]
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
-  def animate(from: js.Array[Double], to: Double, updater: js.Function1[/* n */ Double, Unit], duration: Double): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
   def animate(
     from: js.Array[Double],
-    to: Double,
+    to: js.Array[Double],
     updater: js.Function1[/* n */ Double, Unit],
     duration: Double,
-    easing: js.UndefOr[scala.Nothing],
+    easing: Unit,
     callback: js.Function0[Unit]
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
+  def animate(from: js.Array[Double], to: Double, updater: js.Function1[/* n */ Double, Unit], duration: Double): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
   def animate(
     from: js.Array[Double],
     to: Double,
     updater: js.Function1[/* n */ Double, Unit],
     duration: Double,
     easing: js.Function1[/* num */ Double, Double]
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
   def animate(
     from: js.Array[Double],
     to: Double,
@@ -183,31 +150,27 @@ object mod {
     duration: Double,
     easing: js.Function1[/* num */ Double, Double],
     callback: js.Function0[Unit]
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
-  def animate(from: Double, to: js.Array[Double], updater: js.Function1[/* n */ Double, Unit], duration: Double): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
   def animate(
-    from: Double,
-    to: js.Array[Double],
+    from: js.Array[Double],
+    to: Double,
     updater: js.Function1[/* n */ Double, Unit],
     duration: Double,
-    easing: js.UndefOr[scala.Nothing],
+    easing: Unit,
     callback: js.Function0[Unit]
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
+  def animate(from: Double, to: js.Array[Double], updater: js.Function1[/* n */ Double, Unit], duration: Double): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
   def animate(
     from: Double,
     to: js.Array[Double],
     updater: js.Function1[/* n */ Double, Unit],
     duration: Double,
     easing: js.Function1[/* num */ Double, Double]
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
   def animate(
     from: Double,
     to: js.Array[Double],
@@ -215,31 +178,27 @@ object mod {
     duration: Double,
     easing: js.Function1[/* num */ Double, Double],
     callback: js.Function0[Unit]
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
-  def animate(from: Double, to: Double, updater: js.Function1[/* n */ Double, Unit], duration: Double): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
   def animate(
     from: Double,
-    to: Double,
+    to: js.Array[Double],
     updater: js.Function1[/* n */ Double, Unit],
     duration: Double,
-    easing: js.UndefOr[scala.Nothing],
+    easing: Unit,
     callback: js.Function0[Unit]
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
+  def animate(from: Double, to: Double, updater: js.Function1[/* n */ Double, Unit], duration: Double): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
   def animate(
     from: Double,
     to: Double,
     updater: js.Function1[/* n */ Double, Unit],
     duration: Double,
     easing: js.Function1[/* num */ Double, Double]
-  ): MinaAnimation = js.native
-  @JSImport("snapsvg", "animate")
-  @js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
   def animate(
     from: Double,
     to: Double,
@@ -247,53 +206,51 @@ object mod {
     duration: Double,
     easing: js.Function1[/* num */ Double, Double],
     callback: js.Function0[Unit]
-  ): MinaAnimation = js.native
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
+  @scala.inline
+  def animate(
+    from: Double,
+    to: Double,
+    updater: js.Function1[/* n */ Double, Unit],
+    duration: Double,
+    easing: Unit,
+    callback: js.Function0[Unit]
+  ): MinaAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MinaAnimation]
   
-  @JSImport("snapsvg", "animation")
-  @js.native
-  def animation(attr: js.Object, duration: Double): Animation_ = js.native
-  @JSImport("snapsvg", "animation")
-  @js.native
-  def animation(attr: js.Object, duration: Double, easing: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Animation_ = js.native
-  @JSImport("snapsvg", "animation")
-  @js.native
-  def animation(attr: js.Object, duration: Double, easing: js.Function1[/* num */ Double, Double]): Animation_ = js.native
-  @JSImport("snapsvg", "animation")
-  @js.native
+  @scala.inline
+  def animation(attr: js.Object, duration: Double): Animation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("animation")(attr.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Animation_]
+  @scala.inline
+  def animation(attr: js.Object, duration: Double, easing: js.Function1[/* num */ Double, Double]): Animation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("animation")(attr.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any])).asInstanceOf[Animation_]
+  @scala.inline
   def animation(
     attr: js.Object,
     duration: Double,
     easing: js.Function1[/* num */ Double, Double],
     callback: js.Function0[Unit]
-  ): Animation_ = js.native
+  ): Animation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("animation")(attr.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Animation_]
+  @scala.inline
+  def animation(attr: js.Object, duration: Double, easing: Unit, callback: js.Function0[Unit]): Animation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("animation")(attr.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Animation_]
   
-  @JSImport("snapsvg", "asin")
-  @js.native
-  def asin(angle: Double): Double = js.native
+  @scala.inline
+  def asin(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("asin")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("snapsvg", "atan")
-  @js.native
-  def atan(angle: Double): Double = js.native
+  @scala.inline
+  def atan(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("atan")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("snapsvg", "atan2")
-  @js.native
-  def atan2(angle: Double): Double = js.native
+  @scala.inline
+  def atan2(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("snapsvg", "closest")
-  @js.native
-  def closest(x: Double, y: Double, X: Double, Y: Double): Boolean = js.native
+  @scala.inline
+  def closest(x: Double, y: Double, X: Double, Y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], X.asInstanceOf[js.Any], Y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("snapsvg", "color")
-  @js.native
-  def color(clr: String): RGBHSB = js.native
+  @scala.inline
+  def color(clr: String): RGBHSB = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(clr.asInstanceOf[js.Any]).asInstanceOf[RGBHSB]
   
-  @JSImport("snapsvg", "cos")
-  @js.native
-  def cos(angle: Double): Double = js.native
+  @scala.inline
+  def cos(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("snapsvg", "deg")
-  @js.native
-  def deg(rad: Double): Double = js.native
+  @scala.inline
+  def deg(rad: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("deg")(rad.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("snapsvg", "filter")
   @js.native
@@ -301,84 +258,63 @@ object mod {
   @scala.inline
   def filter_=(x: Filter_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filter")(x.asInstanceOf[js.Any])
   
-  @JSImport("snapsvg", "format")
-  @js.native
-  def format(token: String, json: js.Object): String = js.native
+  @scala.inline
+  def format(token: String, json: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(token.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("snapsvg", "fragment")
-  @js.native
-  def fragment(varargs: js.Any): Fragment_ = js.native
+  @scala.inline
+  def fragment(varargs: js.Any): Fragment_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(varargs.asInstanceOf[js.Any]).asInstanceOf[Fragment_]
   
-  @JSImport("snapsvg", "getElementByPoint")
-  @js.native
-  def getElementByPoint(x: Double, y: Double): Element = js.native
+  @scala.inline
+  def getElementByPoint(x: Double, y: Double): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementByPoint")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @JSImport("snapsvg", "getRGB")
-  @js.native
-  def getRGB(color: String): RGB_ = js.native
+  @scala.inline
+  def getRGB(color: String): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getRGB")(color.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   
-  @JSImport("snapsvg", "hsb")
-  @js.native
-  def hsb(h: Double, s: Double, b: Double): HSB_ = js.native
+  @scala.inline
+  def hsb(h: Double, s: Double, b: Double): HSB_ = (^.asInstanceOf[js.Dynamic].applyDynamic("hsb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[HSB_]
   
-  @JSImport("snapsvg", "hsb2rgb")
-  @js.native
-  def hsb2rgb(h: Double, s: Double, v: Double): RGB_ = js.native
+  @scala.inline
+  def hsb2rgb(h: Double, s: Double, v: Double): RGB_ = (^.asInstanceOf[js.Dynamic].applyDynamic("hsb2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[RGB_]
   
-  @JSImport("snapsvg", "hsl")
-  @js.native
-  def hsl(h: Double, s: Double, l: Double): HSL_ = js.native
+  @scala.inline
+  def hsl(h: Double, s: Double, l: Double): HSL_ = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[HSL_]
   
-  @JSImport("snapsvg", "hsl2rgb")
-  @js.native
-  def hsl2rgb(h: Double, s: Double, l: Double): RGB_ = js.native
+  @scala.inline
+  def hsl2rgb(h: Double, s: Double, l: Double): RGB_ = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[RGB_]
   
-  @JSImport("snapsvg", "is")
-  @js.native
-  def is(o: js.Any, `type`: String): Boolean = js.native
+  @scala.inline
+  def is(o: js.Any, `type`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(o.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("snapsvg", "len")
-  @js.native
-  def len(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  @scala.inline
+  def len(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("len")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("snapsvg", "len2")
-  @js.native
-  def len2(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  @scala.inline
+  def len2(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("len2")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("snapsvg", "load")
-  @js.native
-  def load(url: String, callback: js.Function1[/* f */ Fragment_, Unit]): Unit = js.native
-  @JSImport("snapsvg", "load")
-  @js.native
-  def load(url: String, callback: js.Function1[/* f */ Fragment_, Unit], scope: js.Object): Unit = js.native
+  @scala.inline
+  def load(url: String, callback: js.Function1[/* f */ Fragment_, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def load(url: String, callback: js.Function1[/* f */ Fragment_, Unit], scope: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("snapsvg", "matrix")
-  @js.native
-  def matrix(): Matrix_ = js.native
-  @JSImport("snapsvg", "matrix")
-  @js.native
-  def matrix(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): Matrix_ = js.native
-  @JSImport("snapsvg", "matrix")
-  @js.native
-  def matrix(svgMatrix: SVGMatrix): Matrix_ = js.native
+  @scala.inline
+  def matrix(): Matrix_ = ^.asInstanceOf[js.Dynamic].applyDynamic("matrix")().asInstanceOf[Matrix_]
+  @scala.inline
+  def matrix(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): Matrix_ = (^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Matrix_]
+  @scala.inline
+  def matrix(svgMatrix: SVGMatrix): Matrix_ = ^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(svgMatrix.asInstanceOf[js.Any]).asInstanceOf[Matrix_]
   
-  @JSImport("snapsvg", "parse")
-  @js.native
-  def parse(svg: String): Fragment_ = js.native
+  @scala.inline
+  def parse(svg: String): Fragment_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svg.asInstanceOf[js.Any]).asInstanceOf[Fragment_]
   
-  @JSImport("snapsvg", "parsePathString")
-  @js.native
-  def parsePathString(pathString: String): js.Array[_] = js.native
-  @JSImport("snapsvg", "parsePathString")
-  @js.native
-  def parsePathString(pathString: js.Array[String]): js.Array[_] = js.native
+  @scala.inline
+  def parsePathString(pathString: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def parsePathString(pathString: js.Array[String]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("snapsvg", "parseTransformString")
-  @js.native
-  def parseTransformString(TString: String): js.Array[_] = js.native
-  @JSImport("snapsvg", "parseTransformString")
-  @js.native
-  def parseTransformString(TString: js.Array[String]): js.Array[_] = js.native
+  @scala.inline
+  def parseTransformString(TString: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(TString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def parseTransformString(TString: js.Array[String]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(TString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
   @JSImport("snapsvg", "path")
   @js.native
@@ -386,69 +322,54 @@ object mod {
   @scala.inline
   def path_=(x: Path_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
   
-  @JSImport("snapsvg", "plugin")
-  @js.native
-  def plugin(f: js.Function): Unit = js.native
+  @scala.inline
+  def plugin(f: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(f.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("snapsvg", "rad")
-  @js.native
-  def rad(deg: Double): Double = js.native
+  @scala.inline
+  def rad(deg: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rad")(deg.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("snapsvg", "rgb")
-  @js.native
-  def rgb(r: Double, g: Double, b: Double): RGB_ = js.native
+  @scala.inline
+  def rgb(r: Double, g: Double, b: Double): RGB_ = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[RGB_]
   
-  @JSImport("snapsvg", "rgb2hsb")
-  @js.native
-  def rgb2hsb(r: Double, g: Double, b: Double): HSB_ = js.native
+  @scala.inline
+  def rgb2hsb(r: Double, g: Double, b: Double): HSB_ = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[HSB_]
   
-  @JSImport("snapsvg", "rgb2hsl")
-  @js.native
-  def rgb2hsl(r: Double, g: Double, b: Double): HSL_ = js.native
+  @scala.inline
+  def rgb2hsl(r: Double, g: Double, b: Double): HSL_ = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsl")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[HSL_]
   
-  @JSImport("snapsvg", "select")
-  @js.native
-  def select(query: String): Element = js.native
+  @scala.inline
+  def select(query: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(query.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("snapsvg", "selectAll")
-  @js.native
-  def selectAll(query: String): js.Any = js.native
+  @scala.inline
+  def selectAll(query: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(query.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("snapsvg", "set")
-  @js.native
-  def set(els: Element*): Set_ = js.native
+  @scala.inline
+  def set(els: Element*): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(els.asInstanceOf[js.Any]).asInstanceOf[Set_]
   
-  @JSImport("snapsvg", "sin")
-  @js.native
-  def sin(angle: Double): Double = js.native
+  @scala.inline
+  def sin(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("snapsvg", "snapTo")
-  @js.native
-  def snapTo(values: js.Array[Double], value: Double): Double = js.native
-  @JSImport("snapsvg", "snapTo")
-  @js.native
-  def snapTo(values: js.Array[Double], value: Double, tolerance: Double): Double = js.native
-  @JSImport("snapsvg", "snapTo")
-  @js.native
-  def snapTo(values: Double, value: Double): Double = js.native
-  @JSImport("snapsvg", "snapTo")
-  @js.native
-  def snapTo(values: Double, value: Double, tolerance: Double): Double = js.native
+  @scala.inline
+  def snapTo(values: js.Array[Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snapTo")(values.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def snapTo(values: js.Array[Double], value: Double, tolerance: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snapTo")(values.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def snapTo(values: Double, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snapTo")(values.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def snapTo(values: Double, value: Double, tolerance: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snapTo")(values.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("snapsvg", "tan")
-  @js.native
-  def tan(angle: Double): Double = js.native
+  @scala.inline
+  def tan(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @js.native
   trait Animation_ extends StObject {
     
-    var attr: StringDictionary[String | Double | Boolean | js.Any] = js.native
+    var attr: StringDictionary[String | Double | Boolean | js.Any]
     
-    var callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var easing: js.UndefOr[js.Function1[/* num */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* num */ Double, Double]] = js.undefined
   }
   object Animation_ {
     
@@ -481,38 +402,37 @@ object mod {
     }
   }
   
-  @js.native
   trait BBox extends StObject {
     
-    var cx: Double = js.native
+    var cx: Double
     
-    var cy: Double = js.native
+    var cy: Double
     
-    var h: Double = js.native
+    var h: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var path: Double = js.native
+    var path: Double
     
-    var r0: Double = js.native
+    var r0: Double
     
-    var r1: Double = js.native
+    var r1: Double
     
-    var r2: Double = js.native
+    var r2: Double
     
-    var vb: String = js.native
+    var vb: String
     
-    var w: Double = js.native
+    var w: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var x2: Double = js.native
+    var x2: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var y2: Double = js.native
+    var y2: Double
   }
   object BBox {
     
@@ -605,18 +525,18 @@ object mod {
     def animate(
       attrs: StringDictionary[String | Double | Boolean | js.Any],
       duration: Double,
-      easing: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Element = js.native
-    def animate(
-      attrs: StringDictionary[String | Double | Boolean | js.Any],
-      duration: Double,
       easing: js.Function1[/* num */ Double, Double]
     ): Element = js.native
     def animate(
       attrs: StringDictionary[String | Double | Boolean | js.Any],
       duration: Double,
       easing: js.Function1[/* num */ Double, Double],
+      callback: js.Function0[Unit]
+    ): Element = js.native
+    def animate(
+      attrs: StringDictionary[String | Double | Boolean | js.Any],
+      duration: Double,
+      easing: Unit,
       callback: js.Function0[Unit]
     ): Element = js.native
     
@@ -671,50 +591,6 @@ object mod {
         ],
       onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
       onEnd: js.Function1[/* event */ MouseEvent, Unit],
-      moveThisArg: js.UndefOr[scala.Nothing],
-      startThisArg: js.UndefOr[scala.Nothing],
-      endThisArg: js.Any
-    ): Element = js.native
-    def drag(
-      onMove: js.Function5[
-          /* dx */ Double, 
-          /* dy */ Double, 
-          /* x */ Double, 
-          /* y */ Double, 
-          /* event */ MouseEvent, 
-          Unit
-        ],
-      onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
-      onEnd: js.Function1[/* event */ MouseEvent, Unit],
-      moveThisArg: js.UndefOr[scala.Nothing],
-      startThisArg: js.Any
-    ): Element = js.native
-    def drag(
-      onMove: js.Function5[
-          /* dx */ Double, 
-          /* dy */ Double, 
-          /* x */ Double, 
-          /* y */ Double, 
-          /* event */ MouseEvent, 
-          Unit
-        ],
-      onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
-      onEnd: js.Function1[/* event */ MouseEvent, Unit],
-      moveThisArg: js.UndefOr[scala.Nothing],
-      startThisArg: js.Any,
-      endThisArg: js.Any
-    ): Element = js.native
-    def drag(
-      onMove: js.Function5[
-          /* dx */ Double, 
-          /* dy */ Double, 
-          /* x */ Double, 
-          /* y */ Double, 
-          /* event */ MouseEvent, 
-          Unit
-        ],
-      onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
-      onEnd: js.Function1[/* event */ MouseEvent, Unit],
       moveThisArg: js.Any
     ): Element = js.native
     def drag(
@@ -729,21 +605,6 @@ object mod {
       onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
       onEnd: js.Function1[/* event */ MouseEvent, Unit],
       moveThisArg: js.Any,
-      startThisArg: js.UndefOr[scala.Nothing],
-      endThisArg: js.Any
-    ): Element = js.native
-    def drag(
-      onMove: js.Function5[
-          /* dx */ Double, 
-          /* dy */ Double, 
-          /* x */ Double, 
-          /* y */ Double, 
-          /* event */ MouseEvent, 
-          Unit
-        ],
-      onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
-      onEnd: js.Function1[/* event */ MouseEvent, Unit],
-      moveThisArg: js.Any,
       startThisArg: js.Any
     ): Element = js.native
     def drag(
@@ -759,6 +620,65 @@ object mod {
       onEnd: js.Function1[/* event */ MouseEvent, Unit],
       moveThisArg: js.Any,
       startThisArg: js.Any,
+      endThisArg: js.Any
+    ): Element = js.native
+    def drag(
+      onMove: js.Function5[
+          /* dx */ Double, 
+          /* dy */ Double, 
+          /* x */ Double, 
+          /* y */ Double, 
+          /* event */ MouseEvent, 
+          Unit
+        ],
+      onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
+      onEnd: js.Function1[/* event */ MouseEvent, Unit],
+      moveThisArg: js.Any,
+      startThisArg: Unit,
+      endThisArg: js.Any
+    ): Element = js.native
+    def drag(
+      onMove: js.Function5[
+          /* dx */ Double, 
+          /* dy */ Double, 
+          /* x */ Double, 
+          /* y */ Double, 
+          /* event */ MouseEvent, 
+          Unit
+        ],
+      onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
+      onEnd: js.Function1[/* event */ MouseEvent, Unit],
+      moveThisArg: Unit,
+      startThisArg: js.Any
+    ): Element = js.native
+    def drag(
+      onMove: js.Function5[
+          /* dx */ Double, 
+          /* dy */ Double, 
+          /* x */ Double, 
+          /* y */ Double, 
+          /* event */ MouseEvent, 
+          Unit
+        ],
+      onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
+      onEnd: js.Function1[/* event */ MouseEvent, Unit],
+      moveThisArg: Unit,
+      startThisArg: js.Any,
+      endThisArg: js.Any
+    ): Element = js.native
+    def drag(
+      onMove: js.Function5[
+          /* dx */ Double, 
+          /* dy */ Double, 
+          /* x */ Double, 
+          /* y */ Double, 
+          /* event */ MouseEvent, 
+          Unit
+        ],
+      onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
+      onEnd: js.Function1[/* event */ MouseEvent, Unit],
+      moveThisArg: Unit,
+      startThisArg: Unit,
       endThisArg: js.Any
     ): Element = js.native
     
@@ -781,13 +701,13 @@ object mod {
     def hover(
       hoverInHandler: js.Function1[/* event */ MouseEvent, Unit],
       hoverOutHandler: js.Function1[/* event */ MouseEvent, Unit],
-      inThisArg: js.UndefOr[scala.Nothing],
+      inThisArg: js.Any,
       outThisArg: js.Any
     ): Element = js.native
     def hover(
       hoverInHandler: js.Function1[/* event */ MouseEvent, Unit],
       hoverOutHandler: js.Function1[/* event */ MouseEvent, Unit],
-      inThisArg: js.Any,
+      inThisArg: Unit,
       outThisArg: js.Any
     ): Element = js.native
     def hover(
@@ -924,22 +844,21 @@ object mod {
     def use(): js.Object = js.native
   }
   
-  @js.native
   trait ExplicitTransform extends StObject {
     
-    var dx: Double = js.native
+    var dx: Double
     
-    var dy: Double = js.native
+    var dy: Double
     
-    var isSimple: Boolean = js.native
+    var isSimple: Boolean
     
-    var rotate: Double = js.native
+    var rotate: Double
     
-    var scalex: Double = js.native
+    var scalex: Double
     
-    var scaley: Double = js.native
+    var scaley: Double
     
-    var shear: Double = js.native
+    var shear: Double
   }
   object ExplicitTransform {
     
@@ -1020,7 +939,9 @@ object mod {
   }
   
   @js.native
-  trait Gradient extends Element {
+  trait Gradient
+    extends StObject
+       with Element {
     
     def addStop(color: String, offset: Double): Gradient = js.native
     
@@ -1029,14 +950,13 @@ object mod {
     def stops(): js.Array[Element] = js.native
   }
   
-  @js.native
   trait HSB_ extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var h: Double = js.native
+    var h: Double
     
-    var s: Double = js.native
+    var s: Double
   }
   object HSB_ {
     
@@ -1060,14 +980,13 @@ object mod {
     }
   }
   
-  @js.native
   trait HSL_ extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var l: Double = js.native
+    var l: Double
     
-    var s: Double = js.native
+    var s: Double
   }
   object HSL_ {
     
@@ -1091,24 +1010,23 @@ object mod {
     }
   }
   
-  @js.native
   trait IntersectionDot extends StObject {
     
-    var bez1: js.Array[Double] = js.native
+    var bez1: js.Array[Double]
     
-    var bez2: js.Array[Double] = js.native
+    var bez2: js.Array[Double]
     
-    var segment1: Double = js.native
+    var segment1: Double
     
-    var segment2: Double = js.native
+    var segment2: Double
     
-    var t1: Double = js.native
+    var t1: Double
     
-    var t2: Double = js.native
+    var t2: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object IntersectionDot {
     
@@ -1163,7 +1081,9 @@ object mod {
   }
   
   @js.native
-  trait Paper extends Element {
+  trait Paper
+    extends StObject
+       with Element {
     
     def circle(x: Double, y: Double, r: Double): Element = js.native
     
@@ -1191,9 +1111,9 @@ object mod {
     def path(pathSpec: String): Element = js.native
     def path(pathSpec: js.Array[js.Array[String | Double]]): Element = js.native
     
-    def polygon(varargs: js.Array[_]): Element = js.native
+    def polygon(varargs: js.Array[js.Any]): Element = js.native
     
-    def polyline(varargs: js.Array[_]): Element = js.native
+    def polyline(varargs: js.Array[js.Any]): Element = js.native
     
     def ptrn(
       x: Double,
@@ -1207,9 +1127,9 @@ object mod {
     ): js.Object = js.native
     
     def rect(x: Double, y: Double, width: Double, height: Double): Element = js.native
-    def rect(x: Double, y: Double, width: Double, height: Double, rx: js.UndefOr[scala.Nothing], ry: Double): Element = js.native
     def rect(x: Double, y: Double, width: Double, height: Double, rx: Double): Element = js.native
     def rect(x: Double, y: Double, width: Double, height: Double, rx: Double, ry: Double): Element = js.native
+    def rect(x: Double, y: Double, width: Double, height: Double, rx: Unit, ry: Double): Element = js.native
     
     def svg(
       x: Double,
@@ -1271,34 +1191,33 @@ object mod {
     def map(path: String, matrix: js.Object): String = js.native
     def map(path: String, matrix: Matrix_): String = js.native
     
-    def toAbsolute(path: String): js.Array[_] = js.native
+    def toAbsolute(path: String): js.Array[js.Any] = js.native
     
-    def toCubic(pathString: String): js.Array[_] = js.native
-    def toCubic(pathString: js.Array[String]): js.Array[_] = js.native
+    def toCubic(pathString: String): js.Array[js.Any] = js.native
+    def toCubic(pathString: js.Array[String]): js.Array[js.Any] = js.native
     
-    def toRelative(path: String): js.Array[_] = js.native
+    def toRelative(path: String): js.Array[js.Any] = js.native
   }
   
-  @js.native
   trait RGBHSB extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var error: Boolean = js.native
+    var error: Boolean
     
-    var g: Double = js.native
+    var g: Double
     
-    var h: Double = js.native
+    var h: Double
     
-    var hex: String = js.native
+    var hex: String
     
-    var l: Double = js.native
+    var l: Double
     
-    var r: Double = js.native
+    var r: Double
     
-    var s: Double = js.native
+    var s: Double
     
-    var v: Double = js.native
+    var v: Double
   }
   object RGBHSB {
     
@@ -1350,16 +1269,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RGB_ extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var hex: String = js.native
+    var hex: String
     
-    var r: Double = js.native
+    var r: Double
   }
   object RGB_ {
     
@@ -1391,7 +1309,7 @@ object mod {
     
     def animate(
       attrs: (js.Tuple4[
-          StringDictionary[String | Double | Boolean | _], 
+          StringDictionary[String | Double | Boolean | js.Any], 
           js.UndefOr[Double], 
           js.UndefOr[js.Function1[/* num */ Double, Double]], 
           js.UndefOr[js.Function0[Unit]]
@@ -1401,18 +1319,18 @@ object mod {
     def animate(
       attrs: StringDictionary[String | Double | Boolean | js.Any],
       duration: Double,
-      easing: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Set_ = js.native
-    def animate(
-      attrs: StringDictionary[String | Double | Boolean | js.Any],
-      duration: Double,
       easing: js.Function1[/* num */ Double, Double]
     ): Set_ = js.native
     def animate(
       attrs: StringDictionary[String | Double | Boolean | js.Any],
       duration: Double,
       easing: js.Function1[/* num */ Double, Double],
+      callback: js.Function0[Unit]
+    ): Set_ = js.native
+    def animate(
+      attrs: StringDictionary[String | Double | Boolean | js.Any],
+      duration: Double,
+      easing: Unit,
       callback: js.Function0[Unit]
     ): Set_ = js.native
     
@@ -1449,20 +1367,19 @@ object mod {
     def splice(index: Double, count: Double, insertion: Element*): Set_ = js.native
   }
   
-  @js.native
   trait TransformationDescriptor extends StObject {
     
-    var diffMatrix: Matrix_ = js.native
+    var diffMatrix: Matrix_
     
-    var global: String = js.native
+    var global: String
     
-    var globalMatrix: Matrix_ = js.native
+    var globalMatrix: Matrix_
     
-    var local: String = js.native
+    var local: String
     
-    var localMatrix: Matrix_ = js.native
+    var localMatrix: Matrix_
     
-    var string: String = js.native
+    var string: String
   }
   object TransformationDescriptor {
     

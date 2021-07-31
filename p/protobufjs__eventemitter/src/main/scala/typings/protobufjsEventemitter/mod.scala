@@ -2,7 +2,6 @@ package typings.protobufjsEventemitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,7 +20,9 @@ object mod {
     * @memberof util
     * @constructor
     */
-  class ^ () extends EventEmitter
+  class ^ ()
+    extends StObject
+       with EventEmitter
   
   /**
     * Constructs a new event emitter instance.
@@ -47,9 +48,9 @@ object mod {
       * @returns {util.EventEmitter} `this`
       */
     def off(): EventEmitter = js.native
-    def off(evt: js.UndefOr[scala.Nothing], fn: js.Function0[_]): EventEmitter = js.native
     def off(evt: String): EventEmitter = js.native
-    def off(evt: String, fn: js.Function0[_]): EventEmitter = js.native
+    def off(evt: String, fn: js.Function0[js.Any]): EventEmitter = js.native
+    def off(evt: Unit, fn: js.Function0[js.Any]): EventEmitter = js.native
     
     /**
       * Registers an event listener.
@@ -58,7 +59,7 @@ object mod {
       * @param {*} [ctx] Listener context
       * @returns {util.EventEmitter} `this`
       */
-    def on(evt: String, fn: js.Function0[_]): EventEmitter = js.native
-    def on(evt: String, fn: js.Function0[_], ctx: js.Any): EventEmitter = js.native
+    def on(evt: String, fn: js.Function0[js.Any]): EventEmitter = js.native
+    def on(evt: String, fn: js.Function0[js.Any], ctx: js.Any): EventEmitter = js.native
   }
 }

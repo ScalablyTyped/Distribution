@@ -6,17 +6,15 @@ import typings.trtcJsSdk.trtcJsSdkStrings.PLAYING
 import typings.trtcJsSdk.trtcJsSdkStrings.STOPPED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Audio extends StObject {
     
-    var audio: js.UndefOr[Boolean] = js.native
+    var audio: js.UndefOr[Boolean] = js.undefined
     
-    var video: js.UndefOr[Boolean] = js.native
+    var video: js.UndefOr[Boolean] = js.undefined
   }
   object Audio {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CurState extends StObject {
     
-    var curState: ConnectionState = js.native
+    var curState: ConnectionState
     
-    var prevState: ConnectionState = js.native
+    var prevState: ConnectionState
   }
   object CurState {
     
@@ -69,12 +66,11 @@ object anon {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var state: PLAYING | PAUSED | STOPPED = js.native
+    var state: PLAYING | PAUSED | STOPPED
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object State {
     

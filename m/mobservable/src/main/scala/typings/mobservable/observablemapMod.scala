@@ -6,7 +6,6 @@ import typings.mobservable.interfacesMod.Lambda
 import typings.mobservable.observablevalueMod.ObservableValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observablemapMod {
@@ -16,7 +15,7 @@ object observablemapMod {
   class ObservableMap[V] () extends StObject {
     def this(initialData: Entries[V]) = this()
     def this(initialData: KeyValueMap[V]) = this()
-    def this(initialData: js.UndefOr[scala.Nothing], valueModeFunc: js.Function) = this()
+    def this(initialData: Unit, valueModeFunc: js.Function) = this()
     def this(initialData: Entries[V], valueModeFunc: js.Function) = this()
     def this(initialData: KeyValueMap[V], valueModeFunc: js.Function) = this()
     

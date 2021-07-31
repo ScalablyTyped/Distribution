@@ -2,7 +2,6 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait BlendMode extends StObject
 object BlendMode extends StObject {
   
   @js.native
-  sealed trait Additive extends BlendMode
+  sealed trait Additive
+    extends StObject
+       with BlendMode
   
   @js.native
-  sealed trait Multiply extends BlendMode
+  sealed trait Multiply
+    extends StObject
+       with BlendMode
   
   @js.native
-  sealed trait Normal extends BlendMode
+  sealed trait Normal
+    extends StObject
+       with BlendMode
   
   @js.native
-  sealed trait Screen extends BlendMode
+  sealed trait Screen
+    extends StObject
+       with BlendMode
 }

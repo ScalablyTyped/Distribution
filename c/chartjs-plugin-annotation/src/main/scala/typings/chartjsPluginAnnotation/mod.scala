@@ -16,7 +16,6 @@ import typings.std.Date
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,13 +27,19 @@ object mod {
   object DrawTimeOptions extends StObject {
     
     @js.native
-    sealed trait afterDatasetsDraw extends DrawTimeOptions
+    sealed trait afterDatasetsDraw
+      extends StObject
+         with DrawTimeOptions
     
     @js.native
-    sealed trait afterDraw extends DrawTimeOptions
+    sealed trait afterDraw
+      extends StObject
+         with DrawTimeOptions
     
     @js.native
-    sealed trait beforeDatasetsDraw extends DrawTimeOptions
+    sealed trait beforeDatasetsDraw
+      extends StObject
+         with DrawTimeOptions
   }
   
   // Extend the types from chart.js
@@ -49,11 +54,10 @@ object mod {
     @js.native
     val Annotation: AnnotationStatic = js.native
     
-    @js.native
     trait ChartOptions extends StObject {
       
       // This is deprecated on master (not released yet)
-      var annotation: js.UndefOr[AnnotationConfig] = js.native
+      var annotation: js.UndefOr[AnnotationConfig] = js.undefined
     }
     object ChartOptions {
       
@@ -75,18 +79,17 @@ object mod {
     }
   }
   
-  @js.native
   trait AnnotationConfig extends StObject {
     
-    var annotations: js.Array[AnnotationOptions] = js.native
+    var annotations: js.Array[AnnotationOptions]
     
-    var dblClickSpeed: js.UndefOr[Double] = js.native
+    var dblClickSpeed: js.UndefOr[Double] = js.undefined
     
     var drawTime: js.UndefOr[
         /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawTimeOptions * / any */ String
-      ] = js.native
+      ] = js.undefined
     
-    var events: js.UndefOr[js.Array[String]] = js.native
+    var events: js.UndefOr[js.Array[String]] = js.undefined
   }
   object AnnotationConfig {
     
@@ -132,35 +135,34 @@ object mod {
   
   // Note: classes and enums need to be outside the namespace,
   // otherwise the merge with the constant ChartJsAnnotation fails
-  @js.native
   trait AnnotationElement extends StObject {
     
-    var _model: js.Any = js.native
+    var _model: js.Any
     
-    def configure(): Unit = js.native
+    def configure(): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def draw(): Unit = js.native
+    def draw(): Unit
     
-    def getArea(): Unit = js.native
+    def getArea(): Unit
     
-    def getCenterPoint(): Unit = js.native
+    def getCenterPoint(): Unit
     
-    def getHeight(): Unit = js.native
+    def getHeight(): Unit
     
-    def getWidth(): Unit = js.native
+    def getWidth(): Unit
     
     // TODO: this should extend Chart.Element, but that typing is not defined in chart.js
-    var hidden: Boolean = js.native
+    var hidden: Boolean
     
-    var hovering: Boolean = js.native
+    var hovering: Boolean
     
-    def inRange(): Unit = js.native
+    def inRange(): Unit
     
-    def initialize(): Unit = js.native
+    def initialize(): Unit
     
-    def setDataLimits(): Unit = js.native
+    def setDataLimits(): Unit
   }
   object AnnotationElement {
     
@@ -228,14 +230,13 @@ object mod {
     }
   }
   
-  @js.native
   trait AnnotationElementOptions[T /* <: AnnotationOptions */] extends StObject {
     
-    var chartInstance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart */ js.Any = js.native
+    var chartInstance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart */ js.Any
     
-    var id: String = js.native
+    var id: String
     
-    var options: T = js.native
+    var options: T
   }
   object AnnotationElementOptions {
     
@@ -250,7 +251,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AnnotationElementOptionsMutableBuilder[Self <: AnnotationElementOptions[_], T /* <: AnnotationOptions */] (val x: Self with AnnotationElementOptions[T]) extends AnyVal {
+    implicit class AnnotationElementOptionsMutableBuilder[Self <: AnnotationElementOptions[?], T /* <: AnnotationOptions */] (val x: Self & AnnotationElementOptions[T]) extends AnyVal {
       
       @scala.inline
       def setChartInstance(
@@ -273,38 +274,31 @@ object mod {
   object AnnotationOptions {
     
     @scala.inline
-    def BoxAnnotationOptions(
-      `type`: box,
-      xMax: ChartPointValue,
-      xMin: ChartPointValue,
-      yMax: ChartPointValue,
-      yMin: ChartPointValue
-    ): typings.chartjsPluginAnnotation.mod.BoxAnnotationOptions = {
+    def BoxAnnotationOptions(xMax: ChartPointValue, xMin: ChartPointValue, yMax: ChartPointValue, yMin: ChartPointValue): typings.chartjsPluginAnnotation.mod.BoxAnnotationOptions = {
       val __obj = js.Dynamic.literal(xMax = xMax.asInstanceOf[js.Any], xMin = xMin.asInstanceOf[js.Any], yMax = yMax.asInstanceOf[js.Any], yMin = yMin.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("box")
       __obj.asInstanceOf[typings.chartjsPluginAnnotation.mod.BoxAnnotationOptions]
     }
     
     @scala.inline
-    def LineAnnotationOptions(mode: horizontal | vertical, scaleID: String, `type`: line, value: ChartPointValue): typings.chartjsPluginAnnotation.mod.LineAnnotationOptions = {
+    def LineAnnotationOptions(mode: horizontal | vertical, scaleID: String, value: ChartPointValue): typings.chartjsPluginAnnotation.mod.LineAnnotationOptions = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], scaleID = scaleID.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("line")
       __obj.asInstanceOf[typings.chartjsPluginAnnotation.mod.LineAnnotationOptions]
     }
   }
   
-  @js.native
   trait AnnotationStatic extends StObject {
     
-    var Element: Instantiable0[AnnotationElement] = js.native
+    var Element: Instantiable0[AnnotationElement]
     
-    var defaults: AnnotationConfig = js.native
+    var defaults: AnnotationConfig
     
-    var drawTimeOptions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawTimeOptions */ js.Any = js.native
+    var drawTimeOptions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawTimeOptions */ js.Any
     
-    var labelDefaults: LineAnnotationLabel = js.native
+    var labelDefaults: LineAnnotationLabel
     
-    var types: Box = js.native
+    var types: Box
   }
   object AnnotationStatic {
     
@@ -344,48 +338,42 @@ object mod {
   
   type BoxAnnotation = AnnotationElement
   
-  @js.native
   trait BoxAnnotationOptions
-    extends CommonAnnotationOptions
+    extends StObject
+       with CommonAnnotationOptions
        with AnnotationOptions {
     
     var backgroundColor: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var borderColor: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     @JSName("type")
-    var type_BoxAnnotationOptions: box = js.native
+    var type_BoxAnnotationOptions: box
     
-    var xMax: ChartPointValue = js.native
+    var xMax: ChartPointValue
     
-    var xMin: ChartPointValue = js.native
+    var xMin: ChartPointValue
     
-    var xScaleID: js.UndefOr[String] = js.native
+    var xScaleID: js.UndefOr[String] = js.undefined
     
-    var yMax: ChartPointValue = js.native
+    var yMax: ChartPointValue
     
-    var yMin: ChartPointValue = js.native
+    var yMin: ChartPointValue
     
-    var yScaleID: js.UndefOr[String] = js.native
+    var yScaleID: js.UndefOr[String] = js.undefined
   }
   object BoxAnnotationOptions {
     
     @scala.inline
-    def apply(
-      `type`: box,
-      xMax: ChartPointValue,
-      xMin: ChartPointValue,
-      yMax: ChartPointValue,
-      yMin: ChartPointValue
-    ): BoxAnnotationOptions = {
+    def apply(xMax: ChartPointValue, xMin: ChartPointValue, yMax: ChartPointValue, yMin: ChartPointValue): BoxAnnotationOptions = {
       val __obj = js.Dynamic.literal(xMax = xMax.asInstanceOf[js.Any], xMin = xMin.asInstanceOf[js.Any], yMax = yMax.asInstanceOf[js.Any], yMin = yMin.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("box")
       __obj.asInstanceOf[BoxAnnotationOptions]
     }
     
@@ -445,38 +433,37 @@ object mod {
   
   type ChartPointValue = Double | String | Date | Moment
   
-  @js.native
   trait CommonAnnotationOptions extends StObject {
     
     var drawTime: js.UndefOr[
         /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawTimeOptions * / any */ String
-      ] = js.native
+      ] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onContextmenu: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onContextmenu: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onDblclick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onDblclick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onMousedown: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onMousedown: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onMouseenter: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onMouseenter: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onMouseleave: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onMouseleave: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onMousemove: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onMousemove: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onMouseout: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onMouseout: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onMouseover: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onMouseover: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onMouseup: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onMouseup: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onWheel: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onWheel: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var `type`: line | box = js.native
+    var `type`: line | box
   }
   object CommonAnnotationOptions {
     
@@ -577,38 +564,37 @@ object mod {
   
   type LineAnnotation = AnnotationElement
   
-  @js.native
   trait LineAnnotationLabel extends StObject {
     
     var backgroundColor: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var cornerRadius: js.UndefOr[Double] = js.native
+    var cornerRadius: js.UndefOr[Double] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     var fontColor: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[top | bottom | left | right | center] = js.native
+    var position: js.UndefOr[top | bottom | left | right | center] = js.undefined
     
-    var xAdjust: js.UndefOr[Double] = js.native
+    var xAdjust: js.UndefOr[Double] = js.undefined
     
-    var xPadding: js.UndefOr[Double] = js.native
+    var xPadding: js.UndefOr[Double] = js.undefined
     
-    var yAdjust: js.UndefOr[Double] = js.native
+    var yAdjust: js.UndefOr[Double] = js.undefined
     
-    var yPadding: js.UndefOr[Double] = js.native
+    var yPadding: js.UndefOr[Double] = js.undefined
   }
   object LineAnnotationLabel {
     
@@ -705,40 +691,40 @@ object mod {
     }
   }
   
-  @js.native
   trait LineAnnotationOptions
-    extends CommonAnnotationOptions
+    extends StObject
+       with CommonAnnotationOptions
        with AnnotationOptions {
     
     var borderColor: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var borderDash: js.UndefOr[js.Array[Double]] = js.native
+    var borderDash: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var borderDashOffset: js.UndefOr[Double] = js.native
+    var borderDashOffset: js.UndefOr[Double] = js.undefined
     
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
-    var endValue: js.UndefOr[ChartPointValue] = js.native
+    var endValue: js.UndefOr[ChartPointValue] = js.undefined
     
-    var label: js.UndefOr[LineAnnotationLabel] = js.native
+    var label: js.UndefOr[LineAnnotationLabel] = js.undefined
     
-    var mode: horizontal | vertical = js.native
+    var mode: horizontal | vertical
     
-    var scaleID: String = js.native
+    var scaleID: String
     
     @JSName("type")
-    var type_LineAnnotationOptions: line = js.native
+    var type_LineAnnotationOptions: line
     
-    var value: ChartPointValue = js.native
+    var value: ChartPointValue
   }
   object LineAnnotationOptions {
     
     @scala.inline
-    def apply(mode: horizontal | vertical, scaleID: String, `type`: line, value: ChartPointValue): LineAnnotationOptions = {
+    def apply(mode: horizontal | vertical, scaleID: String, value: ChartPointValue): LineAnnotationOptions = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], scaleID = scaleID.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("line")
       __obj.asInstanceOf[LineAnnotationOptions]
     }
     

@@ -3,19 +3,18 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTimePickerItemsDelta
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var hours: js.UndefOr[Double] = js.native
+  var hours: js.UndefOr[Double] = js.undefined
   
-  var minutes: js.UndefOr[Double] = js.native
+  var minutes: js.UndefOr[Double] = js.undefined
 }
 object IgTimePickerItemsDelta {
   

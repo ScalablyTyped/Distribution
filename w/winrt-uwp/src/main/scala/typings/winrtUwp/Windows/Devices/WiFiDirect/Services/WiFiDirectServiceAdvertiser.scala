@@ -12,16 +12,18 @@ import typings.winrtUwp.winrtUwpStrings.autoacceptsessionconnected
 import typings.winrtUwp.winrtUwpStrings.sessionrequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Service Advertiser. This class is used by code on a device that advertises Wi-Fi Direct Services, to advertise the service. */
 @js.native
 trait WiFiDirectServiceAdvertiser extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_advertisementstatuschanged(`type`: advertisementstatuschanged, listener: TypedEventHandler[WiFiDirectServiceAdvertiser, _]): Unit = js.native
+  def addEventListener_advertisementstatuschanged(
+    `type`: advertisementstatuschanged,
+    listener: TypedEventHandler[WiFiDirectServiceAdvertiser, js.Any]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_autoacceptsessionconnected(
     `type`: autoacceptsessionconnected,
@@ -60,21 +62,19 @@ trait WiFiDirectServiceAdvertiser extends StObject {
   var deferredSessionInfo: IBuffer = js.native
   
   /** Event raised when the AdvertisementStatus property value changes. */
-  def onadvertisementstatuschanged(ev: js.Any with WinRTEvent[WiFiDirectServiceAdvertiser]): Unit = js.native
+  def onadvertisementstatuschanged(ev: js.Any & WinRTEvent[WiFiDirectServiceAdvertiser]): Unit = js.native
   /** Event raised when the AdvertisementStatus property value changes. */
   @JSName("onadvertisementstatuschanged")
-  var onadvertisementstatuschanged_Original: TypedEventHandler[WiFiDirectServiceAdvertiser, _] = js.native
+  var onadvertisementstatuschanged_Original: TypedEventHandler[WiFiDirectServiceAdvertiser, js.Any] = js.native
   
   /** Event raised when the service has automatically accepted a session request. Your event handler should establish socket connections for the endpoint pairs listed in the event arguments object. */
-  def onautoacceptsessionconnected(
-    ev: WiFiDirectServiceAutoAcceptSessionConnectedEventArgs with WinRTEvent[WiFiDirectServiceAdvertiser]
-  ): Unit = js.native
+  def onautoacceptsessionconnected(ev: WiFiDirectServiceAutoAcceptSessionConnectedEventArgs & WinRTEvent[WiFiDirectServiceAdvertiser]): Unit = js.native
   /** Event raised when the service has automatically accepted a session request. Your event handler should establish socket connections for the endpoint pairs listed in the event arguments object. */
   @JSName("onautoacceptsessionconnected")
   var onautoacceptsessionconnected_Original: TypedEventHandler[WiFiDirectServiceAdvertiser, WiFiDirectServiceAutoAcceptSessionConnectedEventArgs] = js.native
   
   /** Event raised when a Seeker has requested that a session be established with the service associated with this WiFiDirectServiceAdvertiser instance. To accept the request, call WiFiDirectServiceAdvertiser.ConnectAsync in your event handler. */
-  def onsessionrequested(ev: WiFiDirectServiceSessionRequestedEventArgs with WinRTEvent[WiFiDirectServiceAdvertiser]): Unit = js.native
+  def onsessionrequested(ev: WiFiDirectServiceSessionRequestedEventArgs & WinRTEvent[WiFiDirectServiceAdvertiser]): Unit = js.native
   /** Event raised when a Seeker has requested that a session be established with the service associated with this WiFiDirectServiceAdvertiser instance. To accept the request, call WiFiDirectServiceAdvertiser.ConnectAsync in your event handler. */
   @JSName("onsessionrequested")
   var onsessionrequested_Original: TypedEventHandler[WiFiDirectServiceAdvertiser, WiFiDirectServiceSessionRequestedEventArgs] = js.native
@@ -85,9 +85,12 @@ trait WiFiDirectServiceAdvertiser extends StObject {
   /** Gets a list (that implements the IVector interface) of preferred session configuration methods. Your code uses IVector operations on the list to add or remove elements from the list. */
   var preferredConfigurationMethods: IVector[WiFiDirectServiceConfigurationMethod] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_advertisementstatuschanged(`type`: advertisementstatuschanged, listener: TypedEventHandler[WiFiDirectServiceAdvertiser, _]): Unit = js.native
+  def removeEventListener_advertisementstatuschanged(
+    `type`: advertisementstatuschanged,
+    listener: TypedEventHandler[WiFiDirectServiceAdvertiser, js.Any]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_autoacceptsessionconnected(
     `type`: autoacceptsessionconnected,

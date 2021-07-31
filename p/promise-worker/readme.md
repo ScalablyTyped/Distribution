@@ -10,9 +10,9 @@ Communicate with a Web Worker using Promises
 | ------------------ | :-------------: |
 | Full name          | promise-worker |
 | Keywords           | web worker, promise, webworker, worker |
-| # releases         | 3 |
-| # dependents       | 19 |
-| # downloads        | 319037 |
+| # releases         | 2 |
+| # dependents       | 22 |
+| # downloads        | 498776 |
 | # stars            | 5 |
 
 ## Links

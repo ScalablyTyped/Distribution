@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.webdriverManager.configSourceMod.ConfigSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binaryMod {
@@ -98,29 +97,34 @@ object binaryMod {
   object OS extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OS with Double] = js.native
+    def apply(value: Double): js.UndefOr[OS & Double] = js.native
     
     @js.native
-    sealed trait Darwin extends OS
-    /* 2 */ val Darwin: typings.webdriverManager.binaryMod.OS.Darwin with Double = js.native
+    sealed trait Darwin
+      extends StObject
+         with OS
+    /* 2 */ val Darwin: typings.webdriverManager.binaryMod.OS.Darwin & Double = js.native
     
     @js.native
-    sealed trait Linux extends OS
-    /* 1 */ val Linux: typings.webdriverManager.binaryMod.OS.Linux with Double = js.native
+    sealed trait Linux
+      extends StObject
+         with OS
+    /* 1 */ val Linux: typings.webdriverManager.binaryMod.OS.Linux & Double = js.native
     
     @js.native
-    sealed trait Windows_NT extends OS
-    /* 0 */ val Windows_NT: typings.webdriverManager.binaryMod.OS.Windows_NT with Double = js.native
+    sealed trait Windows_NT
+      extends StObject
+         with OS
+    /* 0 */ val Windows_NT: typings.webdriverManager.binaryMod.OS.Windows_NT & Double = js.native
   }
   
   type BinaryMap[T /* <: Binary */] = StringDictionary[T]
   
-  @js.native
   trait BinaryUrl extends StObject {
     
-    var url: String = js.native
+    var url: String
     
-    var version: String = js.native
+    var version: String
   }
   object BinaryUrl {
     

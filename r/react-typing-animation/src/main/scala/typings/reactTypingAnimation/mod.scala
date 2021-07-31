@@ -8,7 +8,6 @@ import typings.reactTypingAnimation.mod.Typing.ResetProperties
 import typings.reactTypingAnimation.mod.Typing.SpeedProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -44,14 +43,13 @@ object mod {
     
     type Backspace = Component[BackspaceProperties, js.Object, js.Any]
     
-    @js.native
     trait BackspaceProperties extends StObject {
       
-      var count: js.UndefOr[Double] = js.native
+      var count: js.UndefOr[Double] = js.undefined
       
-      var delay: js.UndefOr[Double] = js.native
+      var delay: js.UndefOr[Double] = js.undefined
       
-      var speed: js.UndefOr[Double] = js.native
+      var speed: js.UndefOr[Double] = js.undefined
     }
     object BackspaceProperties {
       
@@ -86,10 +84,9 @@ object mod {
     
     type Delay = Component[DelayProperties, js.Object, js.Any]
     
-    @js.native
     trait DelayProperties extends StObject {
       
-      var ms: Double = js.native
+      var ms: Double
     }
     object DelayProperties {
       
@@ -109,14 +106,13 @@ object mod {
     
     type Reset = Component[ResetProperties, js.Object, js.Any]
     
-    @js.native
     trait ResetProperties extends StObject {
       
-      var count: js.UndefOr[Double] = js.native
+      var count: js.UndefOr[Double] = js.undefined
       
-      var delay: js.UndefOr[Double] = js.native
+      var delay: js.UndefOr[Double] = js.undefined
       
-      var speed: js.UndefOr[Double] = js.native
+      var speed: js.UndefOr[Double] = js.undefined
     }
     object ResetProperties {
       
@@ -151,10 +147,9 @@ object mod {
     
     type Speed = Component[SpeedProperties, js.Object, js.Any]
     
-    @js.native
     trait SpeedProperties extends StObject {
       
-      var ms: Double = js.native
+      var ms: Double
     }
     object SpeedProperties {
       
@@ -174,32 +169,31 @@ object mod {
   }
   type Typing = Component[TypingProps, js.Object, js.Any]
   
-  @js.native
   trait TypingProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var cursor: js.UndefOr[ReactNode] = js.native
+    var cursor: js.UndefOr[ReactNode] = js.undefined
     
-    var cursorClassName: js.UndefOr[String] = js.native
+    var cursorClassName: js.UndefOr[String] = js.undefined
     
-    var hideCursor: js.UndefOr[Boolean] = js.native
+    var hideCursor: js.UndefOr[Boolean] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var onAfterType: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAfterType: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onBeforeType: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBeforeType: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFinishedTyping: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFinishedTyping: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onStartedTyping: js.UndefOr[js.Function0[Unit]] = js.native
+    var onStartedTyping: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var startDelay: js.UndefOr[Double] = js.native
+    var startDelay: js.UndefOr[Double] = js.undefined
   }
   object TypingProps {
     

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObjAnimationViewStyles extends StObject {
   
   /**
@@ -20,14 +18,14 @@ trait PlusNativeObjAnimationViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var bitmap: js.UndefOr[PlusNativeObjBitmap] = js.native
+  var bitmap: js.UndefOr[PlusNativeObjBitmap] = js.undefined
   
   /**
     * 动画窗口上绘制的文本内容
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * 动画窗口上绘制的文本区域
@@ -35,14 +33,14 @@ trait PlusNativeObjAnimationViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var textRect: js.UndefOr[PlusNativeObjRect] = js.native
+  var textRect: js.UndefOr[PlusNativeObjRect] = js.undefined
   
   /**
     * 动画窗口上绘制的文本样式
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var textStyles: js.UndefOr[PlusNativeObjTextStyles] = js.native
+  var textStyles: js.UndefOr[PlusNativeObjTextStyles] = js.undefined
 }
 object PlusNativeObjAnimationViewStyles {
   

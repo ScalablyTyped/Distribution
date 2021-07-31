@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeedbackDesktop extends StObject {
   
-  var feedbackDesktop: scala.Double = js.native
+  var feedbackDesktop: scala.Double
   
-  var feedbackWeb: scala.Double = js.native
+  var feedbackWeb: scala.Double
   
-  var sessionInsightsForAll: scala.Double = js.native
+  var sessionInsightsForAll: scala.Double
   
-  var unknown: scala.Double = js.native
+  var unknown: scala.Double
   
-  var xTDesktop: scala.Double = js.native
+  var xTDesktop: scala.Double
   
-  var xTDesktop2: scala.Double = js.native
+  var xTDesktop2: scala.Double
   
-  var xTWeb: scala.Double = js.native
+  var xTWeb: scala.Double
 }
 object FeedbackDesktop {
   

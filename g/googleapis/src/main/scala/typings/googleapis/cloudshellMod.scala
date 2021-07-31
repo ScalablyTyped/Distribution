@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudshellMod {
+  
+  @JSImport("googleapis/build/src/apis/cloudshell", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -93,9 +96,12 @@ object cloudshellMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/cloudshell", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/cloudshell", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -139,16 +145,14 @@ object cloudshellMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/cloudshell", "cloudshell")
-  @js.native
-  def cloudshell(options: Options): Cloudshell = js.native
-  @JSImport("googleapis/build/src/apis/cloudshell", "cloudshell")
-  @js.native
-  def cloudshell(options: typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Options): typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell = js.native
-  @JSImport("googleapis/build/src/apis/cloudshell", "cloudshell")
-  @js.native
-  def cloudshell_v1(version: v1): Cloudshell = js.native
-  @JSImport("googleapis/build/src/apis/cloudshell", "cloudshell")
-  @js.native
-  def cloudshell_v1alpha1(version: v1alpha1): typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell = js.native
+  @scala.inline
+  def cloudshell(options: Options): Cloudshell = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudshell")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudshell]
+  @scala.inline
+  def cloudshell(options: typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Options): typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudshell")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell]
+  
+  @scala.inline
+  def cloudshell_v1(version: v1): Cloudshell = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudshell")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudshell]
+  
+  @scala.inline
+  def cloudshell_v1alpha1(version: v1alpha1): typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudshell")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell]
 }

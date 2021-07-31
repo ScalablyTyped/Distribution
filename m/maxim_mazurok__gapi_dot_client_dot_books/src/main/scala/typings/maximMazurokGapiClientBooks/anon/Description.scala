@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Description extends StObject {
   
   /** Name of the source. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Extra text about the source of the review. */
-  var extraDescription: js.UndefOr[String] = js.native
+  var extraDescription: js.UndefOr[String] = js.undefined
   
   /** URL of the source of the review. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Description {
   

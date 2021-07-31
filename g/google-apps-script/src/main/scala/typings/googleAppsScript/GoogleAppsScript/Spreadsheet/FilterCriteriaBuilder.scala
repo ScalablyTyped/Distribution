@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,7 @@ trait FilterCriteriaBuilder extends StObject {
   
   def getCriteriaType(): BooleanCriteria = js.native
   
-  def getCriteriaValues(): js.Array[_] = js.native
+  def getCriteriaValues(): js.Array[js.Any] = js.native
   
   def getHiddenValues(): js.Array[String] = js.native
   
@@ -69,5 +68,5 @@ trait FilterCriteriaBuilder extends StObject {
   
   def whenTextStartsWith(text: String): FilterCriteriaBuilder = js.native
   
-  def withCriteria(criteria: BooleanCriteria, args: js.Array[_]): FilterCriteriaBuilder = js.native
+  def withCriteria(criteria: BooleanCriteria, args: js.Array[js.Any]): FilterCriteriaBuilder = js.native
 }

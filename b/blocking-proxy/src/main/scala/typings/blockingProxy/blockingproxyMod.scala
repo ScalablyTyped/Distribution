@@ -8,7 +8,6 @@ import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockingproxyMod {
@@ -61,11 +60,14 @@ object blockingproxyMod {
   /* static members */
   object BlockingProxy {
     
+    @JSImport("blocking-proxy/built/lib/blockingproxy", "BlockingProxy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * This command is for the proxy server, not to be forwarded to Selenium.
       */
-    @JSImport("blocking-proxy/built/lib/blockingproxy", "BlockingProxy.isProxyCommand")
-    @js.native
-    def isProxyCommand(commandPath: String): Boolean = js.native
+    @scala.inline
+    def isProxyCommand(commandPath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProxyCommand")(commandPath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

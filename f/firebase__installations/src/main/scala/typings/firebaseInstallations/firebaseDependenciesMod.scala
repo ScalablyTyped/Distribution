@@ -5,17 +5,15 @@ import typings.firebaseInstallations.appConfigMod.AppConfig
 import typings.firebaseInstallations.firebaseInstallationsStrings.`platform-logger`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseDependenciesMod {
   
-  @js.native
   trait FirebaseDependencies extends StObject {
     
-    val appConfig: AppConfig = js.native
+    val appConfig: AppConfig
     
-    val platformLoggerProvider: Provider[`platform-logger`] = js.native
+    val platformLoggerProvider: Provider[`platform-logger`]
   }
   object FirebaseDependencies {
     

@@ -2,16 +2,14 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // if FlashElement.elementType == 'instance'
-@js.native
 trait FlashInstance extends StObject {
   
-  var instanceType: js.UndefOr[String] = js.native
+  var instanceType: js.UndefOr[String] = js.undefined
   
-  var libraryItem: js.UndefOr[FlashItem] = js.native
+  var libraryItem: js.UndefOr[FlashItem] = js.undefined
 }
 object FlashInstance {
   

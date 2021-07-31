@@ -2,24 +2,22 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A position within a buffer.
   */
-@js.native
 trait IBufferCellPosition extends StObject {
   
   /**
     * The x position within the buffer.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The y position within the buffer.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object IBufferCellPosition {
   

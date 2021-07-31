@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WxSaveFileOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[SaveFileCompleteCallback] = js.native
+  var complete: js.UndefOr[SaveFileCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[WxSaveFileFailCallback] = js.native
+  var fail: js.UndefOr[WxSaveFileFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[SaveFileSuccessCallback] = js.native
+  var success: js.UndefOr[SaveFileSuccessCallback] = js.undefined
   
   /** 需要保存的文件的临时路径 (本地路径) */
-  var tempFilePath: String = js.native
+  var tempFilePath: String
 }
 object WxSaveFileOption {
   

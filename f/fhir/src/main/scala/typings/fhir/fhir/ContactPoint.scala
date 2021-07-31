@@ -2,59 +2,59 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of a Technology mediated contact point (phone, fax, email, etc.)
   */
-@js.native
-trait ContactPoint extends Element {
+trait ContactPoint
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'rank'.
     */
-  var _rank: js.UndefOr[Element] = js.native
+  var _rank: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'system'.
     */
-  var _system: js.UndefOr[Element] = js.native
+  var _system: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'use'.
     */
-  var _use: js.UndefOr[Element] = js.native
+  var _use: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'value'.
     */
-  var _value: js.UndefOr[Element] = js.native
+  var _value: js.UndefOr[Element] = js.undefined
   
   /**
     * Time period when the contact point was/is in use
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * Specify preferred order of use (1 = highest)
     */
-  var rank: js.UndefOr[positiveInt] = js.native
+  var rank: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * phone | fax | email | pager | url | sms | other
     */
-  var system: js.UndefOr[code] = js.native
+  var system: js.UndefOr[code] = js.undefined
   
   /**
     * home | work | temp | old | mobile - purpose of this contact point
     */
-  var use: js.UndefOr[code] = js.native
+  var use: js.UndefOr[code] = js.undefined
   
   /**
     * The actual contact point details
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ContactPoint {
   

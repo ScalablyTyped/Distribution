@@ -4,23 +4,21 @@ import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerMo
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object invitationAcceptOptionsMod {
   
-  @js.native
   trait InvitationAcceptOptions extends StObject {
     
     /**
       * Modifiers to pass to SessionDescriptionHandler during the initial INVITE transaction.
       */
-    var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.native
+    var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.undefined
     
     /**
       * Options to pass to SessionDescriptionHandler during the initial INVITE transaction.
       */
-    var sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.native
+    var sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.undefined
   }
   object InvitationAcceptOptions {
     

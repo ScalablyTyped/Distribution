@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of adding a new protected range.
   */
-@js.native
 trait SchemaAddProtectedRangeResponse extends StObject {
   
   /**
     * The newly added protected range.
     */
-  var protectedRange: js.UndefOr[SchemaProtectedRange] = js.native
+  var protectedRange: js.UndefOr[SchemaProtectedRange] = js.undefined
 }
 object SchemaAddProtectedRangeResponse {
   

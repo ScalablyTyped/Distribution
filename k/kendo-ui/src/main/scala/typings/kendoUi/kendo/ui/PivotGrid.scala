@@ -7,11 +7,12 @@ import typings.kendoUi.kendo.data.PivotDataSource
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotGrid extends Widget {
+trait PivotGrid
+  extends StObject
+     with Widget {
   
   def cellInfo(columnIndex: Double, rowIndex: Double): js.Any = js.native
   
@@ -28,7 +29,7 @@ trait PivotGrid extends Widget {
   
   def saveAsExcel(): Unit = js.native
   
-  def saveAsPDF(): JQueryPromise[_] = js.native
+  def saveAsPDF(): JQueryPromise[js.Any] = js.native
   
   def setDataSource(dataSource: PivotDataSource): Unit = js.native
   

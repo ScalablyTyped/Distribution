@@ -7,82 +7,81 @@ import typings.std.Node
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("phoenix_live_view", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object Browser {
     
-    @JSImport("phoenix_live_view", "Browser.canPushState")
+    @JSImport("phoenix_live_view", "Browser")
     @js.native
-    def canPushState(): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("phoenix_live_view", "Browser.dropLocal")
-    @js.native
-    def dropLocal(namespace: String, subkey: String): js.Any = js.native
+    @scala.inline
+    def canPushState(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canPushState")().asInstanceOf[Boolean]
     
-    @JSImport("phoenix_live_view", "Browser.fetchPage")
-    @js.native
-    def fetchPage(href: String, callback: js.Function2[/* status */ Double, /* resp */ js.UndefOr[String], _]): js.Any = js.native
+    @scala.inline
+    def dropLocal(namespace: String, subkey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dropLocal")(namespace.asInstanceOf[js.Any], subkey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("phoenix_live_view", "Browser.getCookie")
-    @js.native
-    def getCookie(name: String): String = js.native
+    @scala.inline
+    def fetchPage(href: String, callback: js.Function2[/* status */ Double, /* resp */ js.UndefOr[String], js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchPage")(href.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("phoenix_live_view", "Browser.getHashTargetEl")
-    @js.native
-    def getHashTargetEl(hash: js.Any): HTMLElement | Null = js.native
+    @scala.inline
+    def getCookie(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCookie")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("phoenix_live_view", "Browser.getLocal")
-    @js.native
-    def getLocal(namespace: String, subkey: String): js.Any = js.native
+    @scala.inline
+    def getHashTargetEl(hash: js.Any): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashTargetEl")(hash.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
     
-    @JSImport("phoenix_live_view", "Browser.localKey")
-    @js.native
-    def localKey(namespace: String, subkey: String): String = js.native
+    @scala.inline
+    def getLocal(namespace: String, subkey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocal")(namespace.asInstanceOf[js.Any], subkey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("phoenix_live_view", "Browser.pushState")
-    @js.native
-    def pushState(kind: js.Any, meta: js.Any, to: String): Unit = js.native
+    @scala.inline
+    def localKey(namespace: String, subkey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localKey")(namespace.asInstanceOf[js.Any], subkey.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("phoenix_live_view", "Browser.redirect")
-    @js.native
-    def redirect(toURL: String, flash: js.Any): Unit = js.native
+    @scala.inline
+    def pushState(kind: js.Any, meta: js.Any, to: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pushState")(kind.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "Browser.setCookie")
-    @js.native
-    def setCookie(name: String, value: String): Unit = js.native
+    @scala.inline
+    def redirect(toURL: String, flash: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(toURL.asInstanceOf[js.Any], flash.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "Browser.updateLocal")
-    @js.native
-    def updateLocal(namespace: String, subkey: String, initial: js.Any, func: js.Function1[/* current */ js.Any, _]): js.Any = js.native
+    @scala.inline
+    def setCookie(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def updateLocal(
+      namespace: String,
+      subkey: String,
+      initial: js.Any,
+      func: js.Function1[/* current */ js.Any, js.Any]
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocal")(namespace.asInstanceOf[js.Any], subkey.asInstanceOf[js.Any], initial.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   object DOM {
     
-    @JSImport("phoenix_live_view", "DOM.all")
+    @JSImport("phoenix_live_view", "DOM")
     @js.native
-    def all(node: Node, query: String, callback: js.Function1[/* el */ HTMLElement, HTMLElement]): js.Array[HTMLElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("phoenix_live_view", "DOM.byId")
-    @js.native
-    def byId(id: String): HTMLElement | Unit = js.native
+    @scala.inline
+    def all(node: Node, query: String, callback: js.Function1[/* el */ HTMLElement, HTMLElement]): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(node.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
     
-    @JSImport("phoenix_live_view", "DOM.cleanChildNodes")
-    @js.native
-    def cleanChildNodes(container: js.Any, phxUpdate: js.Any): Unit = js.native
+    @scala.inline
+    def byId(id: String): HTMLElement | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("byId")(id.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Unit]
     
-    @JSImport("phoenix_live_view", "DOM.cloneNode")
-    @js.native
-    def cloneNode(node: Node, html: js.Any): Node = js.native
+    @scala.inline
+    def cleanChildNodes(container: js.Any, phxUpdate: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanChildNodes")(container.asInstanceOf[js.Any], phxUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "DOM.copyPrivates")
-    @js.native
-    def copyPrivates(target: HTMLElement, source: HTMLElement): Unit = js.native
+    @scala.inline
+    def cloneNode(node: Node, html: js.Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneNode")(node.asInstanceOf[js.Any], html.asInstanceOf[js.Any])).asInstanceOf[Node]
     
-    @JSImport("phoenix_live_view", "DOM.debounce")
-    @js.native
+    @scala.inline
+    def copyPrivates(target: HTMLElement, source: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyPrivates")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
     def debounce(
       el: HTMLElement,
       event: Event,
@@ -90,10 +89,9 @@ object mod {
       defaultDebounce: String,
       phxThrottle: String,
       defaultThrottle: String,
-      callback: js.Function0[_]
-    ): js.Any = js.native
-    @JSImport("phoenix_live_view", "DOM.debounce")
-    @js.native
+      callback: js.Function0[js.Any]
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def debounce(
       el: HTMLElement,
       event: Event,
@@ -101,10 +99,9 @@ object mod {
       defaultDebounce: String,
       phxThrottle: String,
       defaultThrottle: Null,
-      callback: js.Function0[_]
-    ): js.Any = js.native
-    @JSImport("phoenix_live_view", "DOM.debounce")
-    @js.native
+      callback: js.Function0[js.Any]
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def debounce(
       el: HTMLElement,
       event: Event,
@@ -112,10 +109,9 @@ object mod {
       defaultDebounce: Null,
       phxThrottle: String,
       defaultThrottle: String,
-      callback: js.Function0[_]
-    ): js.Any = js.native
-    @JSImport("phoenix_live_view", "DOM.debounce")
-    @js.native
+      callback: js.Function0[js.Any]
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def debounce(
       el: HTMLElement,
       event: Event,
@@ -123,115 +119,87 @@ object mod {
       defaultDebounce: Null,
       phxThrottle: String,
       defaultThrottle: Null,
-      callback: js.Function0[_]
-    ): js.Any = js.native
+      callback: js.Function0[js.Any]
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("phoenix_live_view", "DOM.deletePrivate")
-    @js.native
-    def deletePrivate(el: HTMLElement, key: String): Unit = js.native
+    @scala.inline
+    def deletePrivate(el: HTMLElement, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deletePrivate")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "DOM.discardError")
-    @js.native
-    def discardError(container: HTMLElement, el: HTMLElement, phxFeedbackFor: String): Unit = js.native
+    @scala.inline
+    def discardError(container: HTMLElement, el: HTMLElement, phxFeedbackFor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("discardError")(container.asInstanceOf[js.Any], el.asInstanceOf[js.Any], phxFeedbackFor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "DOM.dispatchEvent")
-    @js.native
-    def dispatchEvent(target: Node, eventString: String): Unit = js.native
-    @JSImport("phoenix_live_view", "DOM.dispatchEvent")
-    @js.native
-    def dispatchEvent(target: Node, eventString: String, detail: js.Object): Unit = js.native
+    @scala.inline
+    def dispatchEvent(target: Node, eventString: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(target.asInstanceOf[js.Any], eventString.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def dispatchEvent(target: Node, eventString: String, detail: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(target.asInstanceOf[js.Any], eventString.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "DOM.findComponentNode")
-    @js.native
-    def findComponentNode(node: Node, cid: Double): js.Array[HTMLElement] = js.native
+    @scala.inline
+    def findComponentNode(node: Node, cid: Double): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("findComponentNode")(node.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
     
-    @JSImport("phoenix_live_view", "DOM.findParentCIDs")
-    @js.native
-    def findParentCIDs(node: Node, cids: js.Array[Double]): Set[Double] = js.native
+    @scala.inline
+    def findParentCIDs(node: Node, cids: js.Array[Double]): Set[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("findParentCIDs")(node.asInstanceOf[js.Any], cids.asInstanceOf[js.Any])).asInstanceOf[Set[Double]]
     
-    @JSImport("phoenix_live_view", "DOM.findPhxChildren")
-    @js.native
-    def findPhxChildren(el: HTMLElement, parentId: String): js.Array[HTMLElement] = js.native
+    @scala.inline
+    def findPhxChildren(el: HTMLElement, parentId: String): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhxChildren")(el.asInstanceOf[js.Any], parentId.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
     
-    @JSImport("phoenix_live_view", "DOM.findPhxChildrenInFragment")
-    @js.native
-    def findPhxChildrenInFragment(html: String, parentId: String): js.Array[HTMLElement] = js.native
+    @scala.inline
+    def findPhxChildrenInFragment(html: String, parentId: String): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhxChildrenInFragment")(html.asInstanceOf[js.Any], parentId.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
     
-    @JSImport("phoenix_live_view", "DOM.incCycle")
-    @js.native
-    def incCycle(el: HTMLElement, key: String): Double = js.native
-    @JSImport("phoenix_live_view", "DOM.incCycle")
-    @js.native
-    def incCycle(el: HTMLElement, key: String, trigger: js.Any): Double = js.native
+    @scala.inline
+    def incCycle(el: HTMLElement, key: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("incCycle")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def incCycle(el: HTMLElement, key: String, trigger: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("incCycle")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any], trigger.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("phoenix_live_view", "DOM.isFormInput")
-    @js.native
-    def isFormInput(el: HTMLElement): Boolean = js.native
+    @scala.inline
+    def isFormInput(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormInput")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("phoenix_live_view", "DOM.isNowTriggerFormExternal")
-    @js.native
-    def isNowTriggerFormExternal(el: HTMLElement, phxTriggerExternal: String): Boolean = js.native
+    @scala.inline
+    def isNowTriggerFormExternal(el: HTMLElement, phxTriggerExternal: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNowTriggerFormExternal")(el.asInstanceOf[js.Any], phxTriggerExternal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("phoenix_live_view", "DOM.isPhxChild")
-    @js.native
-    def isPhxChild(el: HTMLElement): Boolean = js.native
+    @scala.inline
+    def isPhxChild(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhxChild")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("phoenix_live_view", "DOM.isPhxUpdate")
-    @js.native
-    def isPhxUpdate(el: HTMLElement, phxUpdate: js.Any, updateTypes: js.Array[String]): Boolean = js.native
+    @scala.inline
+    def isPhxUpdate(el: HTMLElement, phxUpdate: js.Any, updateTypes: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPhxUpdate")(el.asInstanceOf[js.Any], phxUpdate.asInstanceOf[js.Any], updateTypes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("phoenix_live_view", "DOM.isTextualInput")
-    @js.native
-    def isTextualInput(el: HTMLElement): Boolean = js.native
+    @scala.inline
+    def isTextualInput(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTextualInput")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("phoenix_live_view", "DOM.mergeAttrs")
-    @js.native
-    def mergeAttrs(target: HTMLElement, source: HTMLElement): Unit = js.native
-    @JSImport("phoenix_live_view", "DOM.mergeAttrs")
-    @js.native
-    def mergeAttrs(target: HTMLElement, source: HTMLElement, exclude: js.Array[String]): Unit = js.native
+    @scala.inline
+    def mergeAttrs(target: HTMLElement, source: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeAttrs")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def mergeAttrs(target: HTMLElement, source: HTMLElement, exclude: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeAttrs")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], exclude.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "DOM.mergeFocusedInput")
-    @js.native
-    def mergeFocusedInput(target: HTMLElement, source: HTMLElement): Unit = js.native
+    @scala.inline
+    def mergeFocusedInput(target: HTMLElement, source: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeFocusedInput")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "DOM.once")
-    @js.native
-    def once(el: HTMLElement, key: String): Boolean = js.native
+    @scala.inline
+    def once(el: HTMLElement, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("phoenix_live_view", "DOM.putPrivate")
-    @js.native
-    def putPrivate(el: HTMLElement, key: String, value: js.Any): Unit = js.native
+    @scala.inline
+    def putPrivate(el: HTMLElement, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("putPrivate")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "DOM.putTitle")
-    @js.native
-    def putTitle(str: String): Unit = js.native
+    @scala.inline
+    def putTitle(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("putTitle")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "DOM.removeClass")
-    @js.native
-    def removeClass(el: HTMLElement, className: String): Unit = js.native
+    @scala.inline
+    def removeClass(el: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(el.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "DOM.restoreFocus")
-    @js.native
-    def restoreFocus(focused: HTMLElement, selectionStart: Double, selectionEnd: Double): Unit = js.native
+    @scala.inline
+    def restoreFocus(focused: HTMLElement, selectionStart: Double, selectionEnd: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("restoreFocus")(focused.asInstanceOf[js.Any], selectionStart.asInstanceOf[js.Any], selectionEnd.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "DOM.syncAttrsToProps")
-    @js.native
-    def syncAttrsToProps(el: HTMLElement): Unit = js.native
+    @scala.inline
+    def syncAttrsToProps(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncAttrsToProps")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("phoenix_live_view", "DOM.syncPendingRef")
-    @js.native
-    def syncPendingRef(ref: Double, fromEl: HTMLElement, toEl: HTMLElement): Boolean = js.native
-    @JSImport("phoenix_live_view", "DOM.syncPendingRef")
-    @js.native
-    def syncPendingRef(ref: Null, fromEl: HTMLElement, toEl: HTMLElement): Boolean = js.native
+    @scala.inline
+    def syncPendingRef(ref: Double, fromEl: HTMLElement, toEl: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("syncPendingRef")(ref.asInstanceOf[js.Any], fromEl.asInstanceOf[js.Any], toEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def syncPendingRef(ref: Null, fromEl: HTMLElement, toEl: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("syncPendingRef")(ref.asInstanceOf[js.Any], fromEl.asInstanceOf[js.Any], toEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("phoenix_live_view", "DOM.triggerCycle")
-    @js.native
-    def triggerCycle(el: HTMLElement, key: String): Unit = js.native
-    @JSImport("phoenix_live_view", "DOM.triggerCycle")
-    @js.native
-    def triggerCycle(el: HTMLElement, key: String, currentCycle: Double): Unit = js.native
+    @scala.inline
+    def triggerCycle(el: HTMLElement, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerCycle")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def triggerCycle(el: HTMLElement, key: String, currentCycle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerCycle")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentCycle.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("phoenix_live_view", "LiveSocket")
@@ -453,9 +421,8 @@ object mod {
     def update(diff: js.Any, events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
   }
   
-  @JSImport("phoenix_live_view", "debug")
-  @js.native
-  def debug(view: View, kind: String, msg: js.Object, obj: js.Object): Unit = js.native
+  @scala.inline
+  def debug(view: View, kind: String, msg: js.Object, obj: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(view.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type BindCallback = js.Function7[
     /* e */ Event, 
@@ -468,12 +435,11 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait Defaults extends StObject {
     
-    var debounce: js.UndefOr[Double] = js.native
+    var debounce: js.UndefOr[Double] = js.undefined
     
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
   }
   object Defaults {
     
@@ -500,26 +466,25 @@ object mod {
     }
   }
   
-  @js.native
   trait DomOptions extends StObject {
     
-    var childrenOnly: js.UndefOr[Boolean] = js.native
+    var childrenOnly: js.UndefOr[Boolean] = js.undefined
     
-    var getNodeKey: js.UndefOr[js.Function1[/* node */ Node, _]] = js.native
+    var getNodeKey: js.UndefOr[js.Function1[/* node */ Node, js.Any]] = js.undefined
     
-    var onBeforeElChildrenUpdated: js.UndefOr[js.Function2[/* fromEl */ HTMLElement, /* toEl */ HTMLElement, Boolean]] = js.native
+    var onBeforeElChildrenUpdated: js.UndefOr[js.Function2[/* fromEl */ HTMLElement, /* toEl */ HTMLElement, Boolean]] = js.undefined
     
-    var onBeforeElUpdated: js.UndefOr[js.Function2[/* fromEl */ HTMLElement, /* toEl */ HTMLElement, Boolean]] = js.native
+    var onBeforeElUpdated: js.UndefOr[js.Function2[/* fromEl */ HTMLElement, /* toEl */ HTMLElement, Boolean]] = js.undefined
     
-    var onBeforeNodeAdded: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.native
+    var onBeforeNodeAdded: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.undefined
     
-    var onBeforeNodeDiscarded: js.UndefOr[js.Function1[/* node */ Node, Boolean]] = js.native
+    var onBeforeNodeDiscarded: js.UndefOr[js.Function1[/* node */ Node, Boolean]] = js.undefined
     
-    var onElUpdated: js.UndefOr[js.Function1[/* el */ HTMLElement, Unit]] = js.native
+    var onElUpdated: js.UndefOr[js.Function1[/* el */ HTMLElement, Unit]] = js.undefined
     
-    var onNodeAdded: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.native
+    var onNodeAdded: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.undefined
     
-    var onNodeDiscarded: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.native
+    var onNodeDiscarded: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
   }
   object DomOptions {
     
@@ -539,7 +504,7 @@ object mod {
       def setChildrenOnlyUndefined: Self = StObject.set(x, "childrenOnly", js.undefined)
       
       @scala.inline
-      def setGetNodeKey(value: /* node */ Node => _): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+      def setGetNodeKey(value: /* node */ Node => js.Any): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetNodeKeyUndefined: Self = StObject.set(x, "getNodeKey", js.undefined)
@@ -588,22 +553,21 @@ object mod {
     }
   }
   
-  @js.native
   trait SocketOptions extends StObject {
     
-    var bindingPrefix: js.UndefOr[String] = js.native
+    var bindingPrefix: js.UndefOr[String] = js.undefined
     
-    var defaults: js.UndefOr[Defaults] = js.native
+    var defaults: js.UndefOr[Defaults] = js.undefined
     
-    var dom: js.UndefOr[DomOptions] = js.native
+    var dom: js.UndefOr[DomOptions] = js.undefined
     
-    var hooks: js.UndefOr[js.Object] = js.native
+    var hooks: js.UndefOr[js.Object] = js.undefined
     
-    var loaderTimeout: js.UndefOr[Double] = js.native
+    var loaderTimeout: js.UndefOr[Double] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var viewLogger: js.UndefOr[ViewLogger] = js.native
+    var viewLogger: js.UndefOr[ViewLogger] = js.undefined
   }
   object SocketOptions {
     
@@ -679,14 +643,18 @@ object mod {
     var mounted: js.UndefOr[js.Function0[Unit]] = js.native
     
     def pushEvent(event: String, payload: js.Object): Unit = js.native
-    def pushEvent(event: String, payload: js.Object, onReply: js.Function2[/* reply */ js.Any, /* ref */ Double, _]): Unit = js.native
+    def pushEvent(
+      event: String,
+      payload: js.Object,
+      onReply: js.Function2[/* reply */ js.Any, /* ref */ Double, js.Any]
+    ): Unit = js.native
     
     def pushEventTo(selectorOrTarget: js.Any, event: String, payload: js.Object): Unit = js.native
     def pushEventTo(
       selectorOrTarget: js.Any,
       event: String,
       payload: js.Object,
-      onReply: js.Function2[/* reply */ js.Any, /* ref */ Double, _]
+      onReply: js.Function2[/* reply */ js.Any, /* ref */ Double, js.Any]
     ): Unit = js.native
     
     var reconnected: js.UndefOr[js.Function0[Unit]] = js.native

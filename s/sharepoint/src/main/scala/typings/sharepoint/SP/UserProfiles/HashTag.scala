@@ -5,15 +5,15 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HashTag extends ClientValueObject {
+trait HashTag
+  extends StObject
+     with ClientValueObject {
   
-  def get_name(): String = js.native
+  def get_name(): String
   
-  def get_useCount(): Double = js.native
+  def get_useCount(): Double
 }
 object HashTag {
   

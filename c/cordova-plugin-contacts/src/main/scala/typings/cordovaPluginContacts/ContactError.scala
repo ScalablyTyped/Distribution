@@ -2,18 +2,16 @@ package typings.cordovaPluginContacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The ContactError object is returned to the user through the contactError callback function when an error occurs. */
-@js.native
 trait ContactError extends StObject {
   
   /** Error code */
-  var code: Double = js.native
+  var code: Double
   
   /** Error message */
-  var message: String = js.native
+  var message: String
 }
 object ContactError {
   

@@ -5,53 +5,51 @@ import typings.pulumiAws.inputMod.ec2.GetSecurityGroupFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSecurityGroupMod {
   
-  @JSImport("@pulumi/aws/ec2/getSecurityGroup", "getSecurityGroup")
+  @JSImport("@pulumi/aws/ec2/getSecurityGroup", JSImport.Namespace)
   @js.native
-  def getSecurityGroup(): js.Promise[GetSecurityGroupResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSecurityGroup", "getSecurityGroup")
-  @js.native
-  def getSecurityGroup(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSecurityGroupResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSecurityGroup", "getSecurityGroup")
-  @js.native
-  def getSecurityGroup(args: GetSecurityGroupArgs): js.Promise[GetSecurityGroupResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSecurityGroup", "getSecurityGroup")
-  @js.native
-  def getSecurityGroup(args: GetSecurityGroupArgs, opts: InvokeOptions): js.Promise[GetSecurityGroupResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSecurityGroup(): js.Promise[GetSecurityGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")().asInstanceOf[js.Promise[GetSecurityGroupResult]]
+  @scala.inline
+  def getSecurityGroup(args: Unit, opts: InvokeOptions): js.Promise[GetSecurityGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupResult]]
+  @scala.inline
+  def getSecurityGroup(args: GetSecurityGroupArgs): js.Promise[GetSecurityGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecurityGroupResult]]
+  @scala.inline
+  def getSecurityGroup(args: GetSecurityGroupArgs, opts: InvokeOptions): js.Promise[GetSecurityGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupResult]]
+  
   trait GetSecurityGroupArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetSecurityGroupFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetSecurityGroupFilter]] = js.undefined
     
     /**
       * The id of the specific security group to retrieve.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the field to filter by, as defined by
       * [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroups.html).
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired security group.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The id of the VPC that the desired security group belongs to.
       */
-    val vpcId: js.UndefOr[String] = js.native
+    val vpcId: js.UndefOr[String] = js.undefined
   }
   object GetSecurityGroupArgs {
     
@@ -99,28 +97,27 @@ object getSecurityGroupMod {
     }
   }
   
-  @js.native
   trait GetSecurityGroupResult extends StObject {
     
     /**
       * The computed ARN of the security group.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The description of the security group.
       */
-    val description: String = js.native
+    val description: String
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetSecurityGroupFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetSecurityGroupFilter]] = js.undefined
     
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetSecurityGroupResult {
     

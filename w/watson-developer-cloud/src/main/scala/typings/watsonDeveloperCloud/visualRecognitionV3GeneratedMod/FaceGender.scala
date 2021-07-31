@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about the gender of the face. */
-@js.native
 trait FaceGender extends StObject {
   
   /** Gender identified by the face. For example, `MALE` or `FEMALE`. */
-  var gender: String = js.native
+  var gender: String
   
   /** The word for "male" or "female" in the language defined by the **Accept-Language** request header. */
-  var gender_label: String = js.native
+  var gender_label: String
   
   /** Confidence score in the range of 0 to 1. A higher score indicates greater confidence in the estimated value for the property. */
-  var score: Double = js.native
+  var score: Double
 }
 object FaceGender {
   

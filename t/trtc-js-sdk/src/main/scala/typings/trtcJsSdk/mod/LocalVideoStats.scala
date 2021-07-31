@@ -2,19 +2,18 @@ package typings.trtcJsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalVideoStats
-  extends SentMediaStats
+  extends StObject
+     with SentMediaStats
      with VideoStats {
   
   /** 已编码帧数 */
-  var framesEncoded: Double = js.native
+  var framesEncoded: Double
   
   /** 已发送帧数 */
-  var framesSent: Double = js.native
+  var framesSent: Double
 }
 object LocalVideoStats {
   

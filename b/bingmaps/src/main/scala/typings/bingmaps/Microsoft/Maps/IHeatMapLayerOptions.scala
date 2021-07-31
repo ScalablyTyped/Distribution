@@ -4,10 +4,8 @@ import typings.bingmaps.bingmapsStrings.meters
 import typings.bingmaps.bingmapsStrings.pixel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHeatMapLayerOptions extends StObject {
   
   /**
@@ -20,22 +18,22 @@ trait IHeatMapLayerOptions extends StObject {
     *        '1.00': 'rgb(255,0,0)' // Red
     *    }
     */
-  var colorGradient: js.UndefOr[IDictionary[String]] = js.native
+  var colorGradient: js.UndefOr[IDictionary[String]] = js.undefined
   
   /**
     * The intensity of each heat point. This is a decimal value between 0 and 1. This is used to specify how "hot" a single data point should be. Default: 0.5
     */
-  var intensity: js.UndefOr[Double] = js.native
+  var intensity: js.UndefOr[Double] = js.undefined
   
   /**
     * The opacity of the HeatMapLayer canvas. Value should be a decimal between 0 and 1. Default: 1
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The radius to draw each data point on the map. Default: 10
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance units of the radius. Possible values are:
@@ -46,10 +44,10 @@ trait IHeatMapLayerOptions extends StObject {
     * When set to pixels the size of each data point will always be the same radius, regardless of zoom level. When set to meters, the size of the data points
     * will scale based on zoom level so as to ensure that the radius is spatially accurate.
     */
-  var unit: js.UndefOr[meters | pixel] = js.native
+  var unit: js.UndefOr[meters | pixel] = js.undefined
   
   /** A boolean indicating if the heat map layer is visible or not. **/
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object IHeatMapLayerOptions {
   

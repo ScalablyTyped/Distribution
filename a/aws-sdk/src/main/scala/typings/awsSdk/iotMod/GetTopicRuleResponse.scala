@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTopicRuleResponse extends StObject {
   
   /**
     * The rule.
     */
-  var rule: js.UndefOr[TopicRule] = js.native
+  var rule: js.UndefOr[TopicRule] = js.undefined
   
   /**
     * The rule ARN.
     */
-  var ruleArn: js.UndefOr[RuleArn] = js.native
+  var ruleArn: js.UndefOr[RuleArn] = js.undefined
 }
 object GetTopicRuleResponse {
   

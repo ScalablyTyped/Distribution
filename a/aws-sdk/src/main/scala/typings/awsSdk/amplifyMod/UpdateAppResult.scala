@@ -2,16 +2,14 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAppResult extends StObject {
   
   /**
     *  Represents the updated Amplify app. 
     */
-  var app: App = js.native
+  var app: App
 }
 object UpdateAppResult {
   

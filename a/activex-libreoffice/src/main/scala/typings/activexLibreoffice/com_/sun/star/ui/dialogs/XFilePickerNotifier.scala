@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Interface to be implemented in order to support listener management. */
-@js.native
-trait XFilePickerNotifier extends XInterface {
+trait XFilePickerNotifier
+  extends StObject
+     with XInterface {
   
   /**
     * Interface for clients to register as {@link XFilePickerListener}
     * @param xListener The {@link XFilePickerListener} interface of the listener that wants to receive events of type {@link FilePickerEvent} . Invalid interf
     */
-  def addFilePickerListener(xListener: XFilePickerListener): Unit = js.native
+  def addFilePickerListener(xListener: XFilePickerListener): Unit
   
   /**
     * Interface for clients to unregister as {@link XFilePickerListener} .
     * @param xListener The {@link XFilePickerListener} interface of the listener that wants to receive events of type {@link FilePickerEvent} . Invalid interf
     */
-  def removeFilePickerListener(xListener: XFilePickerListener): Unit = js.native
+  def removeFilePickerListener(xListener: XFilePickerListener): Unit
 }
 object XFilePickerNotifier {
   

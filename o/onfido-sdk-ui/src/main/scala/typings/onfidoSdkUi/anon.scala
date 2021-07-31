@@ -5,31 +5,29 @@ import typings.onfidoSdkUi.onfidoSdkUiStrings.standard
 import typings.onfidoSdkUi.onfidoSdkUiStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bankbuildingsocietystatement extends StObject {
     
-    var bank_building_society_statement: js.UndefOr[Boolean] = js.native
+    var bank_building_society_statement: js.UndefOr[Boolean] = js.undefined
     
     // GBR only
-    var benefit_letters: js.UndefOr[Boolean] = js.native
+    var benefit_letters: js.UndefOr[Boolean] = js.undefined
     
-    var council_tax: js.UndefOr[Boolean] = js.native
+    var council_tax: js.UndefOr[Boolean] = js.undefined
     
-    var driving_licence: js.UndefOr[Boolean] = js.native
+    var driving_licence: js.UndefOr[Boolean] = js.undefined
     
     // GBR only
-    var government_letter: js.UndefOr[Boolean] = js.native
+    var government_letter: js.UndefOr[Boolean] = js.undefined
     
-    var national_identity_card: js.UndefOr[Boolean] = js.native
+    var national_identity_card: js.UndefOr[Boolean] = js.undefined
     
-    var passport: js.UndefOr[Boolean] = js.native
+    var passport: js.UndefOr[Boolean] = js.undefined
     
-    var utility_bill: js.UndefOr[Boolean] = js.native
+    var utility_bill: js.UndefOr[Boolean] = js.undefined
   }
   object Bankbuildingsocietystatement {
     
@@ -92,28 +90,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Country extends StObject {
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var descriptions: js.UndefOr[js.Array[String]] = js.native
+    var descriptions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var documentTypes: js.UndefOr[Bankbuildingsocietystatement] = js.native
+    var documentTypes: js.UndefOr[Bankbuildingsocietystatement] = js.undefined
     
-    var forceCrossDevice: js.UndefOr[Boolean] = js.native
+    var forceCrossDevice: js.UndefOr[Boolean] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var nextButton: js.UndefOr[String] = js.native
+    var nextButton: js.UndefOr[String] = js.undefined
     
-    var requestedVariant: js.UndefOr[standard | video] = js.native
+    var requestedVariant: js.UndefOr[standard | video] = js.undefined
     
-    var submessage: js.UndefOr[String] = js.native
+    var submessage: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var uploadFallback: js.UndefOr[`false`] = js.native
+    var uploadFallback: js.UndefOr[`false`] = js.undefined
   }
   object Country {
     
@@ -191,14 +188,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var side: String = js.native
+    var side: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Id {
     
@@ -223,12 +219,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: Country = js.native
+    var options: Country
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Options {
     
@@ -250,12 +245,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Variant extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var variant: String = js.native
+    var variant: String
   }
   object Variant {
     

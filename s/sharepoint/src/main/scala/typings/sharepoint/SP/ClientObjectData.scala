@@ -2,17 +2,15 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientObjectData extends StObject {
   
-  def get_clientObjectProperties(): js.Any = js.native
+  def get_clientObjectProperties(): js.Any
   
-  def get_methodReturnObjects(): js.Any = js.native
+  def get_methodReturnObjects(): js.Any
   
-  def get_properties(): js.Any = js.native
+  def get_properties(): js.Any
 }
 object ClientObjectData {
   

@@ -17,7 +17,6 @@ import typings.semanticUiReact.modalModalMod.StrictModalProps
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object confirmConfirmMod extends Shortcut {
@@ -34,9 +33,9 @@ object confirmConfirmMod extends Shortcut {
   @js.native
   val default: ComponentClass[ConfirmProps, ComponentState] = js.native
   
-  @js.native
   trait ConfirmProps
-    extends StrictConfirmProps
+    extends StObject
+       with StrictConfirmProps
        with /* key */ StringDictionary[js.Any]
   object ConfirmProps {
     
@@ -47,14 +46,15 @@ object confirmConfirmMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait StrictConfirmProps extends StrictModalProps {
+  trait StrictConfirmProps
+    extends StObject
+       with StrictModalProps {
     
     /** The cancel button text. */
-    var cancelButton: js.UndefOr[SemanticShorthandItem[ButtonProps]] = js.native
+    var cancelButton: js.UndefOr[SemanticShorthandItem[ButtonProps]] = js.undefined
     
     /** The OK button text. */
-    var confirmButton: js.UndefOr[SemanticShorthandItem[ButtonProps]] = js.native
+    var confirmButton: js.UndefOr[SemanticShorthandItem[ButtonProps]] = js.undefined
     
     /**
       * Called when the Modal is closed without clicking confirm.
@@ -68,7 +68,7 @@ object confirmConfirmMod extends Shortcut {
           /* data */ ConfirmProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the OK button is clicked.
@@ -82,7 +82,7 @@ object confirmConfirmMod extends Shortcut {
           /* data */ ConfirmProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object StrictConfirmProps {
     

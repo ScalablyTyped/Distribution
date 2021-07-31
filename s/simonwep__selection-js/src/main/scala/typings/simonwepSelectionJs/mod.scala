@@ -31,14 +31,15 @@ import typings.std.TouchEvent
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@simonwep/selection-js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Selection {
+  class ^ protected ()
+    extends StObject
+       with Selection {
     def this(options: SelectionOptions) = this()
   }
   @JSImport("@simonwep/selection-js", JSImport.Namespace)
@@ -46,9 +47,8 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("@simonwep/selection-js", "create")
-  @js.native
-  def create(options: SelectionOptions): Selection = js.native
+  @scala.inline
+  def create(options: SelectionOptions): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Selection]
   
   /* static member */
   @JSImport("@simonwep/selection-js", "utils")
@@ -181,18 +181,17 @@ object mod {
     def trigger(evt: UIEvent, silent: Boolean): Unit = js.native
   }
   
-  @js.native
   trait SelectionEvent extends StObject {
     
-    var area: Element = js.native
+    var area: Element
     
-    var changed: Added = js.native
+    var changed: Added
     
-    var inst: Selection = js.native
+    var inst: Selection
     
-    var oe: MouseEvent | TouchEvent = js.native
+    var oe: MouseEvent | TouchEvent
     
-    var selected: js.Array[Element] = js.native
+    var selected: js.Array[Element]
   }
   object SelectionEvent {
     
@@ -231,16 +230,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SelectionEvents extends StObject {
     
-    def beforestart(e: SelectionEvent): Boolean = js.native
+    def beforestart(e: SelectionEvent): Boolean
     
-    def move(e: SelectionEvent): Unit = js.native
+    def move(e: SelectionEvent): Unit
     
-    def start(e: SelectionEvent): Unit = js.native
+    def start(e: SelectionEvent): Unit
     
-    def stop(e: SelectionEvent): Unit = js.native
+    def stop(e: SelectionEvent): Unit
   }
   object SelectionEvents {
     
@@ -272,34 +270,33 @@ object mod {
     }
   }
   
-  @js.native
   trait SelectionOptions extends StObject {
     
-    var boundaries: js.UndefOr[js.Array[String]] = js.native
+    var boundaries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var disableTouch: js.UndefOr[Boolean] = js.native
+    var disableTouch: js.UndefOr[Boolean] = js.undefined
     
-    var frame: js.UndefOr[Node] = js.native
+    var frame: js.UndefOr[Node] = js.undefined
     
-    var manualScrollSpeed: js.UndefOr[Double] = js.native
+    var manualScrollSpeed: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
-    var scrollSpeedDivider: js.UndefOr[Double] = js.native
+    var scrollSpeedDivider: js.UndefOr[Double] = js.undefined
     
-    var selectables: js.UndefOr[js.Array[String]] = js.native
+    var selectables: js.UndefOr[js.Array[String]] = js.undefined
     
-    var selectionAreaContainer: js.UndefOr[String | HTMLElement | (js.Array[String | HTMLElement])] = js.native
+    var selectionAreaContainer: js.UndefOr[String | HTMLElement | (js.Array[String | HTMLElement])] = js.undefined
     
-    var singleClick: js.UndefOr[Boolean] = js.native
+    var singleClick: js.UndefOr[Boolean] = js.undefined
     
-    var startThreshold: js.UndefOr[Double] = js.native
+    var startThreshold: js.UndefOr[Double] = js.undefined
     
-    var startareas: js.UndefOr[js.Array[String]] = js.native
+    var startareas: js.UndefOr[js.Array[String]] = js.undefined
     
-    var tapMode: js.UndefOr[TapMode] = js.native
+    var tapMode: js.UndefOr[TapMode] = js.undefined
   }
   object SelectionOptions {
     

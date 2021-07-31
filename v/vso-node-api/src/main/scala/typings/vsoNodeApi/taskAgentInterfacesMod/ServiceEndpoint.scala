@@ -4,64 +4,62 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceEndpoint extends StObject {
   
-  var administratorsGroup: IdentityRef = js.native
+  var administratorsGroup: IdentityRef
   
   /**
     * Gets or sets the authorization data for talking to the endpoint.
     */
-  var authorization: EndpointAuthorization = js.native
+  var authorization: EndpointAuthorization
   
   /**
     * The Gets or sets Identity reference for the user who created the Service endpoint
     */
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
-  var data: StringDictionary[String] = js.native
+  var data: StringDictionary[String]
   
   /**
     * Gets or Sets description of endpoint
     */
-  var description: String = js.native
+  var description: String
   
-  var groupScopeId: String = js.native
+  var groupScopeId: String
   
   /**
     * Gets or sets the identifier of this endpoint.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * EndPoint state indictor
     */
-  var isReady: Boolean = js.native
+  var isReady: Boolean
   
   /**
     * Gets or sets the friendly name of the endpoint.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Error message during creation/deletion of endpoint
     */
-  var operationStatus: js.Any = js.native
+  var operationStatus: js.Any
   
-  var readersGroup: IdentityRef = js.native
+  var readersGroup: IdentityRef
   
   /**
     * Gets or sets the type of the endpoint.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * Gets or sets the url of the endpoint.
     */
-  var url: String = js.native
+  var url: String
 }
 object ServiceEndpoint {
   

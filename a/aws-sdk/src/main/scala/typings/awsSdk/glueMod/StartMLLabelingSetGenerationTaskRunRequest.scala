@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartMLLabelingSetGenerationTaskRunRequest extends StObject {
   
   /**
     * The Amazon Simple Storage Service (Amazon S3) path where you generate the labeling set.
     */
-  var OutputS3Path: UriString = js.native
+  var OutputS3Path: UriString
   
   /**
     * The unique identifier of the machine learning transform.
     */
-  var TransformId: HashString = js.native
+  var TransformId: HashString
 }
 object StartMLLabelingSetGenerationTaskRunRequest {
   

@@ -10,9 +10,9 @@ An HTML5 video player that supports HLS and DASH with a common API and skin.
 | ------------------ | :-------------: |
 | Full name          | video.js |
 | Keywords           | dash, hls, html5, player, video, videojs |
-| # releases         | 44 |
-| # dependents       | 469 |
-| # downloads        | 8437151 |
+| # releases         | 41 |
+| # dependents       | 498 |
+| # downloads        | 9743373 |
 | # stars            | 46 |
 
 ## Links

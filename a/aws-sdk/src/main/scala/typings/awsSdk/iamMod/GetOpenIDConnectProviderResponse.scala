@@ -2,31 +2,29 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOpenIDConnectProviderResponse extends StObject {
   
   /**
     * A list of client IDs (also known as audiences) that are associated with the specified IAM OIDC provider resource object. For more information, see CreateOpenIDConnectProvider.
     */
-  var ClientIDList: js.UndefOr[clientIDListType] = js.native
+  var ClientIDList: js.UndefOr[clientIDListType] = js.undefined
   
   /**
     * The date and time when the IAM OIDC provider resource object was created in the AWS account.
     */
-  var CreateDate: js.UndefOr[dateType] = js.native
+  var CreateDate: js.UndefOr[dateType] = js.undefined
   
   /**
     * A list of certificate thumbprints that are associated with the specified IAM OIDC provider resource object. For more information, see CreateOpenIDConnectProvider. 
     */
-  var ThumbprintList: js.UndefOr[thumbprintListType] = js.native
+  var ThumbprintList: js.UndefOr[thumbprintListType] = js.undefined
   
   /**
     * The URL that the IAM OIDC provider resource object is associated with. For more information, see CreateOpenIDConnectProvider.
     */
-  var Url: js.UndefOr[OpenIDConnectProviderUrlType] = js.native
+  var Url: js.UndefOr[OpenIDConnectProviderUrlType] = js.undefined
 }
 object GetOpenIDConnectProviderResponse {
   

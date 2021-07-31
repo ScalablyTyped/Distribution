@@ -4,16 +4,14 @@ import typings.minappEnv.Array
 import typings.minappEnv.ICloudConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined minapp-env.RQ<minapp-env.ICloud.GetTempFileURLParam> */
-@js.native
 trait RQGetTempFileURLParam extends StObject {
   
-  var config: js.UndefOr[ICloudConfig] = js.native
+  var config: js.UndefOr[ICloudConfig] = js.undefined
   
-  var fileList: Array[String] = js.native
+  var fileList: Array[String]
 }
 object RQGetTempFileURLParam {
   

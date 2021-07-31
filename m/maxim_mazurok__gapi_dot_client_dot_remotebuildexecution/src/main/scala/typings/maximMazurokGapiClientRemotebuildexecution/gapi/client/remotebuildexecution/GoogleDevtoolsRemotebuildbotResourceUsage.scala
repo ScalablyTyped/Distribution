@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemotebuildbotResourceUsage extends StObject {
   
-  var cpuUsedPercent: js.UndefOr[Double] = js.native
+  var cpuUsedPercent: js.UndefOr[Double] = js.undefined
   
-  var diskUsage: js.UndefOr[GoogleDevtoolsRemotebuildbotResourceUsageStat] = js.native
+  var diskUsage: js.UndefOr[GoogleDevtoolsRemotebuildbotResourceUsageStat] = js.undefined
   
-  var memoryUsage: js.UndefOr[GoogleDevtoolsRemotebuildbotResourceUsageStat] = js.native
+  var memoryUsage: js.UndefOr[GoogleDevtoolsRemotebuildbotResourceUsageStat] = js.undefined
 }
 object GoogleDevtoolsRemotebuildbotResourceUsage {
   

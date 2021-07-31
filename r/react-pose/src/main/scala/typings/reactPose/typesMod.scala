@@ -8,19 +8,17 @@ import typings.reactPose.reactPoseStrings.absolute
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ChildRegistration extends StObject {
     
-    var element: Element = js.native
+    var element: Element
     
-    def onRegistered(poser: DomPopmotionPoser): Unit = js.native
+    def onRegistered(poser: DomPopmotionPoser): Unit
     
-    var poseConfig: DomPopmotionConfig = js.native
+    var poseConfig: DomPopmotionConfig
   }
   object ChildRegistration {
     
@@ -48,24 +46,23 @@ object typesMod {
   
   type CurrentPose = String | js.Array[String]
   
-  @js.native
   trait PopStyle extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var position: absolute = js.native
+    var position: absolute
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object PopStyle {
     
     @scala.inline
-    def apply(height: Double, left: Double, position: absolute, top: Double, width: Double): PopStyle = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    def apply(height: Double, left: Double, top: Double, width: Double): PopStyle = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], position = "absolute", top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopStyle]
     }
     
@@ -89,16 +86,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait PoseContextProps extends StObject {
     
-    var getInitialPoseFromParent: js.UndefOr[js.Function0[CurrentPose | Unit]] = js.native
+    var getInitialPoseFromParent: js.UndefOr[js.Function0[CurrentPose | Unit]] = js.undefined
     
-    var getParentPoseConfig: js.UndefOr[js.Function0[DomPopmotionConfig]] = js.native
+    var getParentPoseConfig: js.UndefOr[js.Function0[DomPopmotionConfig]] = js.undefined
     
-    var onUnmount: js.UndefOr[js.Function1[/* child */ DomPopmotionPoser, _]] = js.native
+    var onUnmount: js.UndefOr[js.Function1[/* child */ DomPopmotionPoser, js.Any]] = js.undefined
     
-    var registerChild: js.UndefOr[js.Function1[/* props */ ChildRegistration, Unit]] = js.native
+    var registerChild: js.UndefOr[js.Function1[/* props */ ChildRegistration, Unit]] = js.undefined
   }
   object PoseContextProps {
     
@@ -124,7 +120,7 @@ object typesMod {
       def setGetParentPoseConfigUndefined: Self = StObject.set(x, "getParentPoseConfig", js.undefined)
       
       @scala.inline
-      def setOnUnmount(value: /* child */ DomPopmotionPoser => _): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
+      def setOnUnmount(value: /* child */ DomPopmotionPoser => js.Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
@@ -138,37 +134,37 @@ object typesMod {
   }
   
   /* Inlined react-pose.react-pose/lib/components/PoseElement/types.PoseElementProps & {  elementType :any,   poseConfig :popmotion-pose.popmotion-pose.DomPopmotionConfig | react-pose.react-pose/lib/components/PoseElement/types.ConfigFactory} */
-  @js.native
   trait PoseElementInternalProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var _pose: js.UndefOr[CurrentPose] = js.native
+    var _pose: js.UndefOr[CurrentPose] = js.undefined
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
-    var elementType: js.Any = js.native
+    var elementType: js.Any
     
-    var getInitialPoseFromParent: js.UndefOr[js.Function0[CurrentPose | Unit]] = js.native
+    var getInitialPoseFromParent: js.UndefOr[js.Function0[CurrentPose | Unit]] = js.undefined
     
-    var getParentPoseConfig: js.UndefOr[js.Function0[DomPopmotionConfig]] = js.native
+    var getParentPoseConfig: js.UndefOr[js.Function0[DomPopmotionConfig]] = js.undefined
     
-    var initialPose: js.UndefOr[CurrentPose] = js.native
+    var initialPose: js.UndefOr[CurrentPose] = js.undefined
     
-    var innerRef: js.UndefOr[Current | RefFunc] = js.native
+    var innerRef: js.UndefOr[Current | RefFunc] = js.undefined
     
-    var onPoseComplete: js.UndefOr[js.Function1[/* pose */ CurrentPose, _]] = js.native
+    var onPoseComplete: js.UndefOr[js.Function1[/* pose */ CurrentPose, js.Any]] = js.undefined
     
-    var onUnmount: js.UndefOr[js.Function1[/* child */ DomPopmotionPoser, _]] = js.native
+    var onUnmount: js.UndefOr[js.Function1[/* child */ DomPopmotionPoser, js.Any]] = js.undefined
     
-    var onValueChange: js.UndefOr[StringDictionary[js.Function1[/* v */ js.Any, _]]] = js.native
+    var onValueChange: js.UndefOr[StringDictionary[js.Function1[/* v */ js.Any, js.Any]]] = js.undefined
     
-    var pose: js.UndefOr[CurrentPose] = js.native
+    var pose: js.UndefOr[CurrentPose] = js.undefined
     
-    var poseConfig: DomPopmotionConfig | ConfigFactory = js.native
+    var poseConfig: DomPopmotionConfig | ConfigFactory
     
-    var registerChild: js.UndefOr[js.Function1[/* props */ ChildRegistration, Unit]] = js.native
+    var registerChild: js.UndefOr[js.Function1[/* props */ ChildRegistration, Unit]] = js.undefined
     
-    var withParent: js.UndefOr[Boolean] = js.native
+    var withParent: js.UndefOr[Boolean] = js.undefined
   }
   object PoseElementInternalProps {
     
@@ -221,19 +217,19 @@ object typesMod {
       def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
       @scala.inline
-      def setOnPoseComplete(value: /* pose */ CurrentPose => _): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
+      def setOnPoseComplete(value: /* pose */ CurrentPose => js.Any): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPoseCompleteUndefined: Self = StObject.set(x, "onPoseComplete", js.undefined)
       
       @scala.inline
-      def setOnUnmount(value: /* child */ DomPopmotionPoser => _): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
+      def setOnUnmount(value: /* child */ DomPopmotionPoser => js.Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
       
       @scala.inline
-      def setOnValueChange(value: StringDictionary[js.Function1[/* v */ js.Any, _]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
+      def setOnValueChange(value: StringDictionary[js.Function1[/* v */ js.Any, js.Any]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
@@ -276,34 +272,26 @@ object typesMod {
     }
   }
   
-  /* Inlined {  children :any | undefined,   pose :react-pose.react-pose/lib/components/PoseElement/types.CurrentPose | undefined,   _pose :react-pose.react-pose/lib/components/PoseElement/types.CurrentPose | undefined,   initialPose :react-pose.react-pose/lib/components/PoseElement/types.CurrentPose | undefined,   withParent :boolean | undefined,   onPoseComplete :(pose : react-pose.react-pose/lib/components/PoseElement/types.CurrentPose): any | undefined,   onValueChange :{[key: string] : (v : any): any} | undefined,   innerRef :{  current :any} | react-pose.react-pose/lib/components/PoseElement/types.RefFunc | undefined, [key: string] : any} & react-pose.react-pose/lib/components/PoseElement/types.PoseContextProps */
-  @js.native
   trait PoseElementProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with PoseContextProps
+       with /* key */ StringDictionary[js.Any] {
     
-    var _pose: js.UndefOr[CurrentPose] = js.native
+    var _pose: js.UndefOr[CurrentPose] = js.undefined
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
-    var getInitialPoseFromParent: js.UndefOr[js.Function0[CurrentPose | Unit]] = js.native
+    var initialPose: js.UndefOr[CurrentPose] = js.undefined
     
-    var getParentPoseConfig: js.UndefOr[js.Function0[DomPopmotionConfig]] = js.native
+    var innerRef: js.UndefOr[Current | RefFunc] = js.undefined
     
-    var initialPose: js.UndefOr[CurrentPose] = js.native
+    var onPoseComplete: js.UndefOr[js.Function1[/* pose */ CurrentPose, js.Any]] = js.undefined
     
-    var innerRef: js.UndefOr[Current | RefFunc] = js.native
+    var onValueChange: js.UndefOr[StringDictionary[js.Function1[/* v */ js.Any, js.Any]]] = js.undefined
     
-    var onPoseComplete: js.UndefOr[js.Function1[/* pose */ CurrentPose, _]] = js.native
+    var pose: js.UndefOr[CurrentPose] = js.undefined
     
-    var onUnmount: js.UndefOr[js.Function1[/* child */ DomPopmotionPoser, _]] = js.native
-    
-    var onValueChange: js.UndefOr[StringDictionary[js.Function1[/* v */ js.Any, _]]] = js.native
-    
-    var pose: js.UndefOr[CurrentPose] = js.native
-    
-    var registerChild: js.UndefOr[js.Function1[/* props */ ChildRegistration, Unit]] = js.native
-    
-    var withParent: js.UndefOr[Boolean] = js.native
+    var withParent: js.UndefOr[Boolean] = js.undefined
   }
   object PoseElementProps {
     
@@ -321,18 +309,6 @@ object typesMod {
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      @scala.inline
-      def setGetInitialPoseFromParent(value: () => CurrentPose | Unit): Self = StObject.set(x, "getInitialPoseFromParent", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setGetInitialPoseFromParentUndefined: Self = StObject.set(x, "getInitialPoseFromParent", js.undefined)
-      
-      @scala.inline
-      def setGetParentPoseConfig(value: () => DomPopmotionConfig): Self = StObject.set(x, "getParentPoseConfig", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setGetParentPoseConfigUndefined: Self = StObject.set(x, "getParentPoseConfig", js.undefined)
       
       @scala.inline
       def setInitialPose(value: CurrentPose): Self = StObject.set(x, "initialPose", value.asInstanceOf[js.Any])
@@ -353,19 +329,13 @@ object typesMod {
       def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
       @scala.inline
-      def setOnPoseComplete(value: /* pose */ CurrentPose => _): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
+      def setOnPoseComplete(value: /* pose */ CurrentPose => js.Any): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPoseCompleteUndefined: Self = StObject.set(x, "onPoseComplete", js.undefined)
       
       @scala.inline
-      def setOnUnmount(value: /* child */ DomPopmotionPoser => _): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
-      
-      @scala.inline
-      def setOnValueChange(value: StringDictionary[js.Function1[/* v */ js.Any, _]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
+      def setOnValueChange(value: StringDictionary[js.Function1[/* v */ js.Any, js.Any]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
@@ -378,12 +348,6 @@ object typesMod {
       
       @scala.inline
       def setPoseVarargs(value: String*): Self = StObject.set(x, "pose", js.Array(value :_*))
-      
-      @scala.inline
-      def setRegisterChild(value: /* props */ ChildRegistration => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setRegisterChildUndefined: Self = StObject.set(x, "registerChild", js.undefined)
       
       @scala.inline
       def setWithParent(value: Boolean): Self = StObject.set(x, "withParent", value.asInstanceOf[js.Any])

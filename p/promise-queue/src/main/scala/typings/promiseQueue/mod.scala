@@ -3,7 +3,6 @@ package typings.promiseQueue
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,19 +16,45 @@ object mod {
     *                                     `add()` will return a rejected promise if this limit would be exceeded.
     * @param options [{}] See QueueOptions
     */
-  class ^ () extends PromiseQueue {
+  class ^ ()
+    extends StObject
+       with PromiseQueue {
     def this(maxPendingPromises: Double) = this()
-    def this(maxPendingPromises: js.UndefOr[scala.Nothing], maxQueuedPromises: Double) = this()
     def this(maxPendingPromises: Double, maxQueuedPromises: Double) = this()
-    def this(
-      maxPendingPromises: js.UndefOr[scala.Nothing],
-      maxQueuedPromises: js.UndefOr[scala.Nothing],
-      options: QueueOptions
-    ) = this()
-    def this(maxPendingPromises: js.UndefOr[scala.Nothing], maxQueuedPromises: Double, options: QueueOptions) = this()
-    def this(maxPendingPromises: Double, maxQueuedPromises: js.UndefOr[scala.Nothing], options: QueueOptions) = this()
+    def this(maxPendingPromises: Unit, maxQueuedPromises: Double) = this()
     def this(maxPendingPromises: Double, maxQueuedPromises: Double, options: QueueOptions) = this()
+    def this(maxPendingPromises: Double, maxQueuedPromises: Unit, options: QueueOptions) = this()
+    def this(maxPendingPromises: Unit, maxQueuedPromises: Double, options: QueueOptions) = this()
+    def this(maxPendingPromises: Unit, maxQueuedPromises: Unit, options: QueueOptions) = this()
+    
+    /**
+      * Enqueue a promise generator. When the number of running promises is less than `maxPendingPromises`,
+      * this function will be called and the returned promise will be held as a running promise until it
+      * rejects or resolves.
+      *
+      * @throws If the global `Promise` is undefined and `Queue.configure` hasn't been called.
+      * @param promiseGenerator A function that returns a promise when called.
+      * @returns A promise that forwards the resolution/rejection of the promise returned by `promiseGenerator`,
+      *          or immediately rejects if `maxQueuedPromise` is exceeded.
+      */
+    /* CompleteClass */
+    override def add[T](promiseGenerator: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
+    
+    /**
+      * Returns the number of promiseGenerators waiting in queue.
+      */
+    /* CompleteClass */
+    override def getPendingLength(): Double = js.native
+    
+    /**
+      * Returns the number of in-flight promises
+      */
+    /* CompleteClass */
+    override def getQueueLength(): Double = js.native
   }
+  @JSImport("promise-queue", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Set which promise constructor to use for the value returned by PromiseQueue#add.
@@ -37,11 +62,9 @@ object mod {
     * @param GlobalPromise A constructor for Promises
     */
   /* static member */
-  @JSImport("promise-queue", "configure")
-  @js.native
-  def configure(GlobalPromise: PromiseConstructor): Unit = js.native
+  @scala.inline
+  def configure(GlobalPromise: PromiseConstructor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(GlobalPromise.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait PromiseQueue extends StObject {
     
     /**
@@ -54,17 +77,17 @@ object mod {
       * @returns A promise that forwards the resolution/rejection of the promise returned by `promiseGenerator`,
       *          or immediately rejects if `maxQueuedPromise` is exceeded.
       */
-    def add[T](promiseGenerator: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
+    def add[T](promiseGenerator: js.Function0[js.Promise[T]]): js.Promise[T]
     
     /**
       * Returns the number of promiseGenerators waiting in queue.
       */
-    def getPendingLength(): Double = js.native
+    def getPendingLength(): Double
     
     /**
       * Returns the number of in-flight promises
       */
-    def getQueueLength(): Double = js.native
+    def getQueueLength(): Double
   }
   object PromiseQueue {
     
@@ -92,13 +115,12 @@ object mod {
     }
   }
   
-  @js.native
   trait QueueOptions extends StObject {
     
     /**
       * Callback that is called when the queue is empty and all pending promises have resolved
       */
-    def onEmpty(): Unit = js.native
+    def onEmpty(): Unit
   }
   object QueueOptions {
     

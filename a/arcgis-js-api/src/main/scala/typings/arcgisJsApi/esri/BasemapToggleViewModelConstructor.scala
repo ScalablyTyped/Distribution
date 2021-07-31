@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BasemapToggleViewModelConstructor
-  extends Instantiable0[BasemapToggleViewModel]
+  extends StObject
+     with Instantiable0[BasemapToggleViewModel]
      with Instantiable1[/* properties */ BasemapToggleViewModelProperties, BasemapToggleViewModel] {
   
   /**

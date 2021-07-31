@@ -2,17 +2,15 @@ package typings.harmonyProxy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Proxy[T] extends StObject {
     
-    var proxy: T = js.native
+    var proxy: T
     
-    def revoke(): Unit = js.native
+    def revoke(): Unit
   }
   object Proxy {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ProxyMutableBuilder[Self <: Proxy[_], T] (val x: Self with Proxy[T]) extends AnyVal {
+    implicit class ProxyMutableBuilder[Self <: Proxy[?], T] (val x: Self & Proxy[T]) extends AnyVal {
       
       @scala.inline
       def setProxy(value: T): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])

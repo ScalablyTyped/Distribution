@@ -2,152 +2,152 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPicker extends ISheet {
+trait IPicker
+  extends StObject
+     with ISheet {
   
   /** [Config Option] (String) */
-  var activeCls: js.UndefOr[java.lang.String] = js.native
+  var activeCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Updates the cancelButton configuration
     * @param config Object
     * @returns Object
     */
-  var applyCancelButton: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], _]] = js.native
+  var applyCancelButton: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Updates the doneButton configuration
     * @param config Object
     * @returns Object
     */
-  var applyDoneButton: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], _]] = js.native
+  var applyDoneButton: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Config Option] (String/Mixed) */
-  var cancelButton: js.UndefOr[js.Any] = js.native
+  var cancelButton: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Mixed) */
-  var doneButton: js.UndefOr[js.Any] = js.native
+  var doneButton: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Returns the value of bottom
     * @returns Number
     */
   @JSName("getBottom")
-  var getBottom_IPicker: js.UndefOr[js.Function0[Double]] = js.native
+  var getBottom_IPicker: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of cancelButton
     * @returns String/Mixed
     */
-  var getCancelButton: js.UndefOr[js.Function0[_]] = js.native
+  var getCancelButton: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of activeItem
     * @returns Object/String/Number
     */
-  var getCard: js.UndefOr[js.Function0[_]] = js.native
+  var getCard: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of doneButton
     * @returns String/Mixed
     */
-  var getDoneButton: js.UndefOr[js.Function0[_]] = js.native
+  var getDoneButton: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of layout
     * @returns Object
     */
-  var getLayout: js.UndefOr[js.Function0[_]] = js.native
+  var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of slots
     * @returns Array
     */
-  var getSlots: js.UndefOr[js.Function0[Array]] = js.native
+  var getSlots: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of toolbar
     * @returns Ext.TitleBar/Ext.Toolbar/Object
     */
-  var getToolbar: js.UndefOr[js.Function0[_]] = js.native
+  var getToolbar: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of toolbarPosition
     * @returns String
     */
-  var getToolbarPosition: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getToolbarPosition: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of useTitles
     * @returns Boolean
     */
-  var getUseTitles: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getUseTitles: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the values of each of the pickers slots
     * @param useDom Object
     * @returns Object The values of the pickers slots
     */
-  var getValue: js.UndefOr[js.Function1[/* useDom */ js.UndefOr[js.Any], _]] = js.native
+  var getValue: js.UndefOr[js.Function1[/* useDom */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Returns the values of each of the pickers slots
     * @returns Object The values of the pickers slots.
     */
-  var getValues: js.UndefOr[js.Function0[_]] = js.native
+  var getValues: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Number) */
   @JSName("height")
-  var height_IPicker: js.UndefOr[Double] = js.native
+  var height_IPicker: js.UndefOr[Double] = js.undefined
   
   /** [Method] Sets the value of bottom
     * @param bottom Number The new value.
     */
   @JSName("setBottom")
-  var setBottom_IPicker: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[Double], Unit]] = js.native
+  var setBottom_IPicker: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of cancelButton
     * @param cancelButton String/Mixed The new value.
     */
-  var setCancelButton: js.UndefOr[js.Function1[/* cancelButton */ js.UndefOr[js.Any], Unit]] = js.native
+  var setCancelButton: js.UndefOr[js.Function1[/* cancelButton */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of activeItem
     * @param activeItem Object/String/Number The new value.
     */
-  var setCard: js.UndefOr[js.Function1[/* activeItem */ js.UndefOr[js.Any], Unit]] = js.native
+  var setCard: js.UndefOr[js.Function1[/* activeItem */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of doneButton
     * @param doneButton String/Mixed The new value.
     */
-  var setDoneButton: js.UndefOr[js.Function1[/* doneButton */ js.UndefOr[js.Any], Unit]] = js.native
+  var setDoneButton: js.UndefOr[js.Function1[/* doneButton */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of height
     * @param height Number The new value.
     */
   @JSName("setHeight")
-  var setHeight_IPicker: js.UndefOr[js.Function1[/* height */ js.UndefOr[Double], Unit]] = js.native
+  var setHeight_IPicker: js.UndefOr[js.Function1[/* height */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of left
     * @param left Number The new value.
     */
   @JSName("setLeft")
-  var setLeft_IPicker: js.UndefOr[js.Function1[/* left */ js.UndefOr[Double], Unit]] = js.native
+  var setLeft_IPicker: js.UndefOr[js.Function1[/* left */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of right
     * @param right Number The new value.
     */
   @JSName("setRight")
-  var setRight_IPicker: js.UndefOr[js.Function1[/* right */ js.UndefOr[Double], Unit]] = js.native
+  var setRight_IPicker: js.UndefOr[js.Function1[/* right */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of slots
     * @param slots Array The new value.
     */
-  var setSlots: js.UndefOr[js.Function1[/* slots */ js.UndefOr[Array], Unit]] = js.native
+  var setSlots: js.UndefOr[js.Function1[/* slots */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of toolbar
     * @param toolbar Ext.TitleBar/Ext.Toolbar/Object The new value.
     */
-  var setToolbar: js.UndefOr[js.Function1[/* toolbar */ js.UndefOr[js.Any], Unit]] = js.native
+  var setToolbar: js.UndefOr[js.Function1[/* toolbar */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of toolbarPosition
     * @param toolbarPosition String The new value.
     */
-  var setToolbarPosition: js.UndefOr[js.Function1[/* toolbarPosition */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setToolbarPosition: js.UndefOr[js.Function1[/* toolbarPosition */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of useTitles
     * @param useTitles Boolean The new value.
     */
-  var setUseTitles: js.UndefOr[js.Function1[/* useTitles */ js.UndefOr[Boolean], Unit]] = js.native
+  var setUseTitles: js.UndefOr[js.Function1[/* useTitles */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the values of the pickers slots
     * @param values Object The values in a {name:'value'} format.
@@ -156,19 +156,19 @@ trait IPicker extends ISheet {
     */
   var setValue: js.UndefOr[
     js.Function2[/* values */ js.UndefOr[js.Any], /* animated */ js.UndefOr[Boolean], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Array) */
-  var slots: js.UndefOr[Array] = js.native
+  var slots: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (Ext.TitleBar/Ext.Toolbar/Object) */
-  var toolbar: js.UndefOr[js.Any] = js.native
+  var toolbar: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useTitles: js.UndefOr[Boolean] = js.native
+  var useTitles: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String/Number) */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object IPicker {
   
@@ -188,13 +188,13 @@ object IPicker {
     def setActiveClsUndefined: Self = StObject.set(x, "activeCls", js.undefined)
     
     @scala.inline
-    def setApplyCancelButton(value: /* config */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "applyCancelButton", js.Any.fromFunction1(value))
+    def setApplyCancelButton(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "applyCancelButton", js.Any.fromFunction1(value))
     
     @scala.inline
     def setApplyCancelButtonUndefined: Self = StObject.set(x, "applyCancelButton", js.undefined)
     
     @scala.inline
-    def setApplyDoneButton(value: /* config */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "applyDoneButton", js.Any.fromFunction1(value))
+    def setApplyDoneButton(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "applyDoneButton", js.Any.fromFunction1(value))
     
     @scala.inline
     def setApplyDoneButtonUndefined: Self = StObject.set(x, "applyDoneButton", js.undefined)
@@ -218,25 +218,25 @@ object IPicker {
     def setGetBottomUndefined: Self = StObject.set(x, "getBottom", js.undefined)
     
     @scala.inline
-    def setGetCancelButton(value: () => _): Self = StObject.set(x, "getCancelButton", js.Any.fromFunction0(value))
+    def setGetCancelButton(value: () => js.Any): Self = StObject.set(x, "getCancelButton", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetCancelButtonUndefined: Self = StObject.set(x, "getCancelButton", js.undefined)
     
     @scala.inline
-    def setGetCard(value: () => _): Self = StObject.set(x, "getCard", js.Any.fromFunction0(value))
+    def setGetCard(value: () => js.Any): Self = StObject.set(x, "getCard", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetCardUndefined: Self = StObject.set(x, "getCard", js.undefined)
     
     @scala.inline
-    def setGetDoneButton(value: () => _): Self = StObject.set(x, "getDoneButton", js.Any.fromFunction0(value))
+    def setGetDoneButton(value: () => js.Any): Self = StObject.set(x, "getDoneButton", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDoneButtonUndefined: Self = StObject.set(x, "getDoneButton", js.undefined)
     
     @scala.inline
-    def setGetLayout(value: () => _): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
@@ -248,7 +248,7 @@ object IPicker {
     def setGetSlotsUndefined: Self = StObject.set(x, "getSlots", js.undefined)
     
     @scala.inline
-    def setGetToolbar(value: () => _): Self = StObject.set(x, "getToolbar", js.Any.fromFunction0(value))
+    def setGetToolbar(value: () => js.Any): Self = StObject.set(x, "getToolbar", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetToolbarPosition(value: () => java.lang.String): Self = StObject.set(x, "getToolbarPosition", js.Any.fromFunction0(value))
@@ -266,13 +266,13 @@ object IPicker {
     def setGetUseTitlesUndefined: Self = StObject.set(x, "getUseTitles", js.undefined)
     
     @scala.inline
-    def setGetValue(value: /* useDom */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    def setGetValue(value: /* useDom */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
     @scala.inline
-    def setGetValues(value: () => _): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+    def setGetValues(value: () => js.Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)

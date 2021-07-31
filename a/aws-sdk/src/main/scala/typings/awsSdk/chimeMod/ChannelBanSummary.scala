@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelBanSummary extends StObject {
   
   /**
     * The member being banned from a channel.
     */
-  var Member: js.UndefOr[Identity] = js.native
+  var Member: js.UndefOr[Identity] = js.undefined
 }
 object ChannelBanSummary {
   

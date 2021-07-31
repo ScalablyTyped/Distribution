@@ -2,35 +2,33 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for an Earcon.
   */
-@js.native
 trait EarconOptionsObject extends StObject {
   
   /**
     * The unique ID of the Earcon. Generated if not supplied.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The instruments and their options defining this earcon.
     */
-  var instruments: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconInstrument] = js.native
+  var instruments: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconInstrument]
   
   /**
     * Callback function to call when earcon has finished playing.
     */
-  var onEnd: js.UndefOr[js.Function] = js.native
+  var onEnd: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Global panning of all instruments. Overrides all panning on
     * individual instruments. Can be a number between -1 and 1.
     */
-  var pan: js.UndefOr[Double] = js.native
+  var pan: js.UndefOr[Double] = js.undefined
   
   /**
     * Master volume for all instruments. Volume settings on individual
@@ -39,7 +37,7 @@ trait EarconOptionsObject extends StObject {
     * individual instruments. Can be a number between 0 and 1. Defaults to
     * 1.
     */
-  var volume: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.undefined
 }
 object EarconOptionsObject {
   

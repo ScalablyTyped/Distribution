@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the network response after sending a USSD message. */
-@js.native
 trait UssdReply extends StObject {
   
   /** Gets the message for the USSD response. */
-  var message: UssdMessage = js.native
+  var message: UssdMessage
   
   /** Gets the result code for the USSD response. */
-  var resultCode: UssdResultCode = js.native
+  var resultCode: UssdResultCode
 }
 object UssdReply {
   

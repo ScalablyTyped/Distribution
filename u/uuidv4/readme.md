@@ -10,9 +10,9 @@ uuidv4 creates v4 UUIDs.
 | ------------------ | :-------------: |
 | Full name          | uuidv4 |
 | Keywords           | guid, uuid |
-| # releases         | 22 |
-| # dependents       | 183 |
-| # downloads        | 4235860 |
+| # releases         | 25 |
+| # dependents       | 202 |
+| # downloads        | 5598788 |
 | # stars            | 0 |
 
 ## Links

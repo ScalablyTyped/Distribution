@@ -17,17 +17,15 @@ import typings.zapierPlatformCore.zapierPlatformCoreStrings.follow
 import typings.zapierPlatformCore.zapierPlatformCoreStrings.manual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: js.UndefOr[Boolean] = js.native
+    var body: js.UndefOr[Boolean] = js.undefined
     
-    var params: js.UndefOr[Boolean] = js.native
+    var params: js.UndefOr[Boolean] = js.undefined
   }
   object Body {
     
@@ -54,10 +52,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CustomStoreKey extends StObject {
     
-    var customStoreKey: js.UndefOr[String] = js.native
+    var customStoreKey: js.UndefOr[String] = js.undefined
   }
   object CustomStoreKey {
     
@@ -78,7 +75,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
     var Error: Instantiable3[
@@ -86,13 +82,13 @@ object anon {
         /* code */ js.UndefOr[String], 
         /* status */ js.UndefOr[Double], 
         AppError
-      ] = js.native
+      ]
     
-    var ExpiredAuthError: Instantiable0[typings.zapierPlatformCore.mod.ExpiredAuthError] = js.native
+    var ExpiredAuthError: Instantiable0[typings.zapierPlatformCore.mod.ExpiredAuthError]
     
-    var HaltedError: Instantiable0[typings.zapierPlatformCore.mod.HaltedError] = js.native
+    var HaltedError: Instantiable0[typings.zapierPlatformCore.mod.HaltedError]
     
-    var RefreshAuthError: Instantiable0[typings.zapierPlatformCore.mod.RefreshAuthError] = js.native
+    var RefreshAuthError: Instantiable0[typings.zapierPlatformCore.mod.RefreshAuthError]
   }
   object Error {
     
@@ -140,35 +136,34 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(value: js.Any): String = js.native
-    def apply(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
-    def apply(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
     def apply(value: js.Any, replacer: js.Array[Double | String]): String = js.native
     def apply(value: js.Any, replacer: js.Array[Double | String], space: String): String = js.native
     def apply(value: js.Any, replacer: js.Array[Double | String], space: Double): String = js.native
     def apply(
       value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _]
+      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
     ): String = js.native
     def apply(
       value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _],
+      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
       space: String
     ): String = js.native
     def apply(
       value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _],
+      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
       space: Double
     ): String = js.native
     def apply(value: js.Any, replacer: Null, space: String): String = js.native
     def apply(value: js.Any, replacer: Null, space: Double): String = js.native
+    def apply(value: js.Any, replacer: Unit, space: String): String = js.native
+    def apply(value: js.Any, replacer: Unit, space: Double): String = js.native
   }
   
-  @js.native
   trait Get extends StObject {
     
-    def get(): js.Promise[String] = js.native
+    def get(): js.Promise[String]
     
-    def set(cursor: String): js.Promise[Null] = js.native
+    def set(cursor: String): js.Promise[Null]
   }
   object Get {
     
@@ -190,45 +185,44 @@ object anon {
   }
   
   /* Inlined zapier-platform-core.zapier-platform-core.HttpRequestOptions & {  raw :true} */
-  @js.native
   trait HttpRequestOptionsrawtrue extends StObject {
     
-    var agent: js.UndefOr[Agent] = js.native
+    var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.native
+    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var follow: js.UndefOr[Double] = js.native
+    var follow: js.UndefOr[Double] = js.undefined
     
-    var form: js.UndefOr[js.Object] = js.native
+    var form: js.UndefOr[js.Object] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var json: js.UndefOr[js.Object | js.Array[_]] = js.native
+    var json: js.UndefOr[js.Object | js.Array[js.Any]] = js.undefined
     
-    var method: js.UndefOr[HttpMethod] = js.native
+    var method: js.UndefOr[HttpMethod] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var raw: js.UndefOr[Boolean] with `true` = js.native
+    var raw: js.UndefOr[Boolean] & `true`
     
-    var redirect: js.UndefOr[manual | error | follow] = js.native
+    var redirect: js.UndefOr[manual | error | follow] = js.undefined
     
-    var removeMissingValuesFrom: js.UndefOr[Body] = js.native
+    var removeMissingValuesFrom: js.UndefOr[Body] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var skipThrowForStatus: js.UndefOr[Boolean] = js.native
+    var skipThrowForStatus: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object HttpRequestOptionsrawtrue {
     
     @scala.inline
-    def apply(raw: js.UndefOr[Boolean] with `true`): HttpRequestOptionsrawtrue = {
+    def apply(raw: js.UndefOr[Boolean] & `true`): HttpRequestOptionsrawtrue = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpRequestOptionsrawtrue]
     }
@@ -273,7 +267,7 @@ object anon {
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       @scala.inline
-      def setJson(value: js.Object | js.Array[_]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      def setJson(value: js.Object | js.Array[js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
@@ -294,7 +288,7 @@ object anon {
       def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
       @scala.inline
-      def setRaw(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      def setRaw(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRedirect(value: manual | error | follow): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
@@ -335,45 +329,44 @@ object anon {
   }
   
   /* Inlined zapier-platform-core.zapier-platform-core.HttpRequestOptions & {  raw :true,   url :string} */
-  @js.native
   trait HttpRequestOptionsrawtrueAgent extends StObject {
     
-    var agent: js.UndefOr[Agent] = js.native
+    var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.native
+    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var follow: js.UndefOr[Double] = js.native
+    var follow: js.UndefOr[Double] = js.undefined
     
-    var form: js.UndefOr[js.Object] = js.native
+    var form: js.UndefOr[js.Object] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var json: js.UndefOr[js.Object | js.Array[_]] = js.native
+    var json: js.UndefOr[js.Object | js.Array[js.Any]] = js.undefined
     
-    var method: js.UndefOr[HttpMethod] = js.native
+    var method: js.UndefOr[HttpMethod] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var raw: js.UndefOr[Boolean] with `true` = js.native
+    var raw: js.UndefOr[Boolean] & `true`
     
-    var redirect: js.UndefOr[manual | error | follow] = js.native
+    var redirect: js.UndefOr[manual | error | follow] = js.undefined
     
-    var removeMissingValuesFrom: js.UndefOr[Body] = js.native
+    var removeMissingValuesFrom: js.UndefOr[Body] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var skipThrowForStatus: js.UndefOr[Boolean] = js.native
+    var skipThrowForStatus: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] with String = js.native
+    var url: js.UndefOr[String] & String
   }
   object HttpRequestOptionsrawtrueAgent {
     
     @scala.inline
-    def apply(raw: js.UndefOr[Boolean] with `true`, url: js.UndefOr[String] with String): HttpRequestOptionsrawtrueAgent = {
+    def apply(raw: js.UndefOr[Boolean] & `true`, url: js.UndefOr[String] & String): HttpRequestOptionsrawtrueAgent = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpRequestOptionsrawtrueAgent]
     }
@@ -418,7 +411,7 @@ object anon {
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       @scala.inline
-      def setJson(value: js.Object | js.Array[_]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      def setJson(value: js.Object | js.Array[js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
@@ -439,7 +432,7 @@ object anon {
       def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
       @scala.inline
-      def setRaw(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      def setRaw(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRedirect(value: manual | error | follow): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
@@ -472,50 +465,49 @@ object anon {
       def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
       @scala.inline
-      def setUrl(value: js.UndefOr[String] with String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      def setUrl(value: js.UndefOr[String] & String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined zapier-platform-core.zapier-platform-core.HttpRequestOptions & {  url :string} */
-  @js.native
   trait HttpRequestOptionsurlstri extends StObject {
     
-    var agent: js.UndefOr[Agent] = js.native
+    var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.native
+    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var follow: js.UndefOr[Double] = js.native
+    var follow: js.UndefOr[Double] = js.undefined
     
-    var form: js.UndefOr[js.Object] = js.native
+    var form: js.UndefOr[js.Object] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var json: js.UndefOr[js.Object | js.Array[_]] = js.native
+    var json: js.UndefOr[js.Object | js.Array[js.Any]] = js.undefined
     
-    var method: js.UndefOr[HttpMethod] = js.native
+    var method: js.UndefOr[HttpMethod] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var redirect: js.UndefOr[manual | error | follow] = js.native
+    var redirect: js.UndefOr[manual | error | follow] = js.undefined
     
-    var removeMissingValuesFrom: js.UndefOr[Body] = js.native
+    var removeMissingValuesFrom: js.UndefOr[Body] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var skipThrowForStatus: js.UndefOr[Boolean] = js.native
+    var skipThrowForStatus: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] with String = js.native
+    var url: js.UndefOr[String] & String
   }
   object HttpRequestOptionsurlstri {
     
     @scala.inline
-    def apply(url: js.UndefOr[String] with String): HttpRequestOptionsurlstri = {
+    def apply(url: js.UndefOr[String] & String): HttpRequestOptionsurlstri = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpRequestOptionsurlstri]
     }
@@ -560,7 +552,7 @@ object anon {
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       @scala.inline
-      def setJson(value: js.Object | js.Array[_]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      def setJson(value: js.Object | js.Array[js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
@@ -617,14 +609,13 @@ object anon {
       def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
       @scala.inline
-      def setUrl(value: js.UndefOr[String] with String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      def setUrl(value: js.UndefOr[String] & String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -649,22 +640,21 @@ object anon {
     def inject(filename: String): Unit = js.native
   }
   
-  @js.native
   trait IsFillingDynamicDropdown extends StObject {
     
-    var isFillingDynamicDropdown: Boolean = js.native
+    var isFillingDynamicDropdown: Boolean
     
-    var isLoadingSample: Boolean = js.native
+    var isLoadingSample: Boolean
     
-    var isPopulatingDedupe: Boolean = js.native
+    var isPopulatingDedupe: Boolean
     
-    var isTestingAuth: Boolean = js.native
+    var isTestingAuth: Boolean
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var page: Double = js.native
+    var page: Double
     
-    var zap: js.UndefOr[Id] = js.native
+    var zap: js.UndefOr[Id] = js.undefined
   }
   object IsFillingDynamicDropdown {
     
@@ -710,51 +700,67 @@ object anon {
     }
   }
   
-  @js.native
   trait Parse extends StObject {
     
     /**
       * Acts a lot like regular `JSON.parse`, but throws a nice error for improper json input
       */
-    def parse(text: String): js.Any = js.native
+    def parse(text: String): js.Any
     
-    def stringify(value: js.Any): String = js.native
-    def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
-    def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
-    def stringify(value: js.Any, replacer: js.Array[Double | String]): String = js.native
-    def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String = js.native
-    def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String = js.native
+    def stringify(value: js.Any): String
+    def stringify(value: js.Any, replacer: js.Array[Double | String]): String
+    def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String
+    def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String
     def stringify(
       value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _]
-    ): String = js.native
+      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
+    ): String
     def stringify(
       value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _],
+      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
       space: String
-    ): String = js.native
+    ): String
     def stringify(
       value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _],
+      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
       space: Double
-    ): String = js.native
-    def stringify(value: js.Any, replacer: Null, space: String): String = js.native
-    def stringify(value: js.Any, replacer: Null, space: Double): String = js.native
+    ): String
+    def stringify(value: js.Any, replacer: Null, space: String): String
+    def stringify(value: js.Any, replacer: Null, space: Double): String
+    def stringify(value: js.Any, replacer: Unit, space: String): String
+    def stringify(value: js.Any, replacer: Unit, space: Double): String
     @JSName("stringify")
-    var stringify_Original: FnCall = js.native
+    var stringify_Original: FnCall
+  }
+  object Parse {
+    
+    @scala.inline
+    def apply(parse: String => js.Any, stringify: FnCall): Parse = {
+      val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = stringify.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Parse]
+    }
+    
+    @scala.inline
+    implicit class ParseMutableBuilder[Self <: Parse] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setParse(value: String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setStringify(value: FnCall): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Inlined std.Partial<{  method :zapier-platform-core.zapier-platform-core.HttpMethod,   querystring :string,   headers :{[x: string] : string},   content :string}> */
-  @js.native
   trait PartialmethodHttpMethodqu extends StObject {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var method: js.UndefOr[HttpMethod] = js.native
+    var method: js.UndefOr[HttpMethod] = js.undefined
     
-    var querystring: js.UndefOr[String] = js.native
+    var querystring: js.UndefOr[String] = js.undefined
   }
   object PartialmethodHttpMethodqu {
     
@@ -794,16 +800,15 @@ object anon {
   }
   
   /* Inlined std.Partial<{  method :zapier-platform-core.zapier-platform-core.HttpMethod,   querystring :{[x: string] : string},   headers :{[x: string] : string},   content :{[x: string] : string}}> */
-  @js.native
   trait PartialmethodHttpMethodquContent extends StObject {
     
-    var content: js.UndefOr[StringDictionary[String]] = js.native
+    var content: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var method: js.UndefOr[HttpMethod] = js.native
+    var method: js.UndefOr[HttpMethod] = js.undefined
     
-    var querystring: js.UndefOr[StringDictionary[String]] = js.native
+    var querystring: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object PartialmethodHttpMethodquContent {
     

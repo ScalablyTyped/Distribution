@@ -12,7 +12,7 @@ Single component release of sidebar
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 17157 |
+| # downloads        | 9602 |
 | # stars            | 0 |
 
 ## Links

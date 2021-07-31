@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFpgaImageResult extends StObject {
   
   /**
     * The global FPGA image identifier (AGFI ID).
     */
-  var FpgaImageGlobalId: js.UndefOr[String] = js.native
+  var FpgaImageGlobalId: js.UndefOr[String] = js.undefined
   
   /**
     * The FPGA image identifier (AFI ID).
     */
-  var FpgaImageId: js.UndefOr[String] = js.native
+  var FpgaImageId: js.UndefOr[String] = js.undefined
 }
 object CreateFpgaImageResult {
   

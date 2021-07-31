@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccelerateConfiguration extends StObject {
   
   /**
     * Specifies the transfer acceleration status of the bucket.
     */
-  var Status: js.UndefOr[BucketAccelerateStatus] = js.native
+  var Status: js.UndefOr[BucketAccelerateStatus] = js.undefined
 }
 object AccelerateConfiguration {
   

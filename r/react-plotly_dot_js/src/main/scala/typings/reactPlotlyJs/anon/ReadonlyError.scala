@@ -2,18 +2,16 @@ package typings.reactPlotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Error> */
-@js.native
 trait ReadonlyError extends StObject {
   
-  val message: String = js.native
+  val message: String
   
-  val name: String = js.native
+  val name: String
   
-  val stack: js.UndefOr[String] = js.native
+  val stack: js.UndefOr[String] = js.undefined
 }
 object ReadonlyError {
   

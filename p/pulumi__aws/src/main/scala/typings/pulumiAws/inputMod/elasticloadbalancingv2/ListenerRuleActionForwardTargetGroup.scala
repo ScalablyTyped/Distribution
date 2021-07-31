@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.elasticloadbalancingv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerRuleActionForwardTargetGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the target group.
     */
-  var arn: Input[String] = js.native
+  var arn: Input[String]
   
   /**
     * The weight. The range is 0 to 999.
     */
-  var weight: js.UndefOr[Input[Double]] = js.native
+  var weight: js.UndefOr[Input[Double]] = js.undefined
 }
 object ListenerRuleActionForwardTargetGroup {
   

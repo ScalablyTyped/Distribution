@@ -2,14 +2,12 @@ package typings.semanticUiProgress.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-progress.SemanticUI.Progress.ClassNameSettings._Impl, 'active'> */
-@js.native
 trait PickImplactiveActive extends StObject {
   
-  var active: String = js.native
+  var active: String
 }
 object PickImplactiveActive {
   

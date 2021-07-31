@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,28 +16,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XPrintJobListener
   * @since OOo 1.1.2
   */
-@js.native
-trait XPrintJob extends XInterface {
+trait XPrintJob
+  extends StObject
+     with XInterface {
   
   /** returns the {@link PrintOptions} used for the print job */
-  val PrintOptions: SafeArray[PropertyValue] = js.native
+  val PrintOptions: SafeArray[PropertyValue]
   
   /** returns the printed object used for the print job */
-  val Printable: XPrintable = js.native
+  val Printable: XPrintable
   
   /** returns the Printer used for the print job */
-  val Printer: SafeArray[PropertyValue] = js.native
+  val Printer: SafeArray[PropertyValue]
   
-  def cancelJob(): Unit = js.native
+  def cancelJob(): Unit
   
   /** returns the {@link PrintOptions} used for the print job */
-  def getPrintOptions(): SafeArray[PropertyValue] = js.native
+  def getPrintOptions(): SafeArray[PropertyValue]
   
   /** returns the printed object used for the print job */
-  def getPrintable(): XPrintable = js.native
+  def getPrintable(): XPrintable
   
   /** returns the Printer used for the print job */
-  def getPrinter(): SafeArray[PropertyValue] = js.native
+  def getPrinter(): SafeArray[PropertyValue]
 }
 object XPrintJob {
   

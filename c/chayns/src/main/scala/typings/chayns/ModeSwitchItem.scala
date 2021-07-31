@@ -2,17 +2,15 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModeSwitchItem extends StObject {
   
-  var default: js.UndefOr[Boolean] = js.native
+  var default: js.UndefOr[Boolean] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var value: Double = js.native
+  var value: Double
 }
 object ModeSwitchItem {
   

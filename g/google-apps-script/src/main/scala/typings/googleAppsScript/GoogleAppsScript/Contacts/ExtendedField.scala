@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,38 +14,62 @@ sealed trait ExtendedField extends StObject
 object ExtendedField extends StObject {
   
   @js.native
-  sealed trait BILLING_INFORMATION extends ExtendedField
+  sealed trait BILLING_INFORMATION
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait DIRECTORY_SERVER extends ExtendedField
+  sealed trait DIRECTORY_SERVER
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait GENDER extends ExtendedField
+  sealed trait GENDER
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait HOBBY extends ExtendedField
+  sealed trait HOBBY
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait HOME extends ExtendedField
+  sealed trait HOME
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait LANGUAGE extends ExtendedField
+  sealed trait LANGUAGE
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait MILEAGE extends ExtendedField
+  sealed trait MILEAGE
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait OTHER extends ExtendedField
+  sealed trait OTHER
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait PRIORITY extends ExtendedField
+  sealed trait PRIORITY
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait SENSITIVITY extends ExtendedField
+  sealed trait SENSITIVITY
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait USER extends ExtendedField
+  sealed trait USER
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait WORK extends ExtendedField
+  sealed trait WORK
+    extends StObject
+       with ExtendedField
 }

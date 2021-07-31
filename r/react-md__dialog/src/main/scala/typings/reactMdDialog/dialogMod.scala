@@ -23,7 +23,6 @@ import typings.reactMdUtils.typesTypesMod.LabelRequiredForA11y
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogMod {
@@ -32,33 +31,33 @@ object dialogMod {
   @js.native
   val Dialog: ForwardRefExoticComponent[PickBaseDialogPropshidden | PickBaseDialogPropshiddenAbout] = js.native
   
-  @js.native
   trait BaseDialogProps
-    extends HTMLAttributes[HTMLDivElement]
+    extends StObject
        with OverridableCSSTransitionProps
        with RenderConditionalPortalProps
-       with FocusContainerOptionsProps {
+       with FocusContainerOptionsProps
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * The component to render the dialog as. This really shouldn't be used
       * outside of the `@react-md/layout` and `@react-md/sheet` packages to
       * conditionally render a navigation panel.
       */
-    var component: js.UndefOr[div | nav] = js.native
+    var component: js.UndefOr[div | nav] = js.undefined
     
     /**
       * An optional className to apply to the dialog container when the `type` is
       * set to `"centered"` or when the `forceContainer` prop is enabled. You
       * probably don't want to use this prop in most cases.
       */
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional style to apply to the dialog container when the `type` is set
       * to `"centered"` or when the `forceContainer` prop is enabled. You probably
       * don't want to use this prop in most cases.
       */
-    var containerStyle: js.UndefOr[CSSProperties] = js.native
+    var containerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Either the "first" or "last" string to focus the first or last focusable
@@ -66,7 +65,7 @@ object dialogMod {
       * element within the container.
       */
     @JSName("defaultFocus")
-    var defaultFocus_BaseDialogProps: js.UndefOr[first | last | String] = js.native
+    var defaultFocus_BaseDialogProps: js.UndefOr[first | last | String] = js.undefined
     
     /**
       * Boolean if the ability to close the dialog via the escape key should be
@@ -76,14 +75,14 @@ object dialogMod {
       * Note: When the `modal` prop is enabled, this flag will be considered `true`
       * as well so that the escape keypress no longer closes the dialog.
       */
-    var disableEscapeClose: js.UndefOr[Boolean] = js.native
+    var disableEscapeClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the dialog's focus container logic should be disabled. This
       * should normally be kept at the default of `false` unless implementing a
       * custom dialog that does not require consistent user focus.
       */
-    var disableFocusContainer: js.UndefOr[Boolean] = js.native
+    var disableFocusContainer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Dialog component will attempt to automatically fix nested dialogs
@@ -91,7 +90,7 @@ object dialogMod {
       * prop will disable that feature if it does not seem to be working as
       * expected.
       */
-    var disableNestedDialogFixes: js.UndefOr[Boolean] = js.native
+    var disableNestedDialogFixes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the dialog should no longer add scroll locking to the page when
@@ -99,14 +98,14 @@ object dialogMod {
       * using custom dialogs that are more for popovers and don't require full user
       * attention.
       */
-    var disableScrollLock: js.UndefOr[Boolean] = js.native
+    var disableScrollLock: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the `appear`, `enter`, and `exit` transitions should be disabled
       * for the dialog.  This is just a shortcut so all three of those props don't
       * need to be disabled.
       */
-    var disableTransition: js.UndefOr[Boolean] = js.native
+    var disableTransition: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the dialog should be "forcefully" wrapped in the
@@ -114,13 +113,13 @@ object dialogMod {
       * cases, but the container element will be used when the `type` prop is set
       * to `"centered"`.
       */
-    var forceContainer: js.UndefOr[Boolean] = js.native
+    var forceContainer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An id required for a11y for the dialog.
       */
     @JSName("id")
-    var id_BaseDialogProps: String = js.native
+    var id_BaseDialogProps: String
     
     /**
       * Boolean if the dialog should act as a modal. This means that the user will
@@ -128,36 +127,36 @@ object dialogMod {
       * clicking on the overlay. You will be required to update the dialog to have
       * an action that closes the dialog instead.
       */
-    var modal: js.UndefOr[Boolean] = js.native
+    var modal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function used to close the dialog when the overlay is clicked or the
       * escape key is pressed when the `modal` prop is not enabled.
       */
-    def onRequestClose(): Unit = js.native
+    def onRequestClose(): Unit
     
     /**
       * Boolean if there should be an overlay displayed with the sheet. This is
       * recommended/required on mobile devices.
       */
-    var overlay: js.UndefOr[Boolean] = js.native
+    var overlay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional className to apply to the overlay.
       */
-    var overlayClassName: js.UndefOr[String] = js.native
+    var overlayClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the overlay should be "hidden" from the user once it's visible
       * be keeping the opacity set to `0`. This is really only used for custom
       * dialogs like the `FixedDialog`.
       */
-    var overlayHidden: js.UndefOr[Boolean] = js.native
+    var overlayHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional style to apply to the overlay.
       */
-    var overlayStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * The role for the dialog component. This should normally stay as the default
@@ -170,19 +169,19 @@ object dialogMod {
       * keyboard functionality automatically.
       */
     @JSName("role")
-    var role_BaseDialogProps: js.UndefOr[dialog | alertdialog | menu | none] = js.native
+    var role_BaseDialogProps: js.UndefOr[dialog | alertdialog | menu | none] = js.undefined
     
     /**
       * The display type for the modal. If you would like to position the modal in
       * different locations within the page, you should set this prop to `"custom"`
       * and add custom styles to position it instead.
       */
-    var `type`: js.UndefOr[`full-page` | centered | custom] = js.native
+    var `type`: js.UndefOr[`full-page` | centered | custom] = js.undefined
     
     /**
       * Boolean if the dialog is currently visible.
       */
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object BaseDialogProps {
     

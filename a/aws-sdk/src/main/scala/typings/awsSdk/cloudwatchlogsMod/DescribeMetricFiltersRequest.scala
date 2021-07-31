@@ -2,41 +2,39 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMetricFiltersRequest extends StObject {
   
   /**
     * The prefix to match. CloudWatch Logs uses the value you set here only if you also include the logGroupName parameter in your request.
     */
-  var filterNamePrefix: js.UndefOr[FilterName] = js.native
+  var filterNamePrefix: js.UndefOr[FilterName] = js.undefined
   
   /**
     * The maximum number of items returned. If you don't specify a value, the default is up to 50 items.
     */
-  var limit: js.UndefOr[DescribeLimit] = js.native
+  var limit: js.UndefOr[DescribeLimit] = js.undefined
   
   /**
     * The name of the log group.
     */
-  var logGroupName: js.UndefOr[LogGroupName] = js.native
+  var logGroupName: js.UndefOr[LogGroupName] = js.undefined
   
   /**
     * Filters results to include only those with the specified metric name. If you include this parameter in your request, you must also include the metricNamespace parameter.
     */
-  var metricName: js.UndefOr[MetricName] = js.native
+  var metricName: js.UndefOr[MetricName] = js.undefined
   
   /**
     * Filters results to include only those in the specified namespace. If you include this parameter in your request, you must also include the metricName parameter.
     */
-  var metricNamespace: js.UndefOr[MetricNamespace] = js.native
+  var metricNamespace: js.UndefOr[MetricNamespace] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeMetricFiltersRequest {
   

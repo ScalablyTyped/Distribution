@@ -10,9 +10,9 @@ Web-based Generic Modeling Environment
 | ------------------ | :-------------: |
 | Full name          | webgme |
 | Keywords           | webgme, gme, cooperative, modeling, editor, domain |
-| # releases         | 15 |
+| # releases         | 12 |
 | # dependents       | 7 |
-| # downloads        | 8432 |
+| # downloads        | 8236 |
 | # stars            | 2 |
 
 ## Links

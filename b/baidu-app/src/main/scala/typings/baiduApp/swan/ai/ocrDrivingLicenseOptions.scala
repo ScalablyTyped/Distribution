@@ -3,27 +3,26 @@ package typings.baiduApp.swan.ai
 import typings.baiduApp.swan.BaseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 对机动车驾驶证所有关键字段进行识别。
   */
-@js.native
 trait ocrDrivingLicenseOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   // 图片资源地址
-  var detect_direction: js.UndefOr[Boolean] = js.native
+  var detect_direction: js.UndefOr[Boolean] = js.undefined
   
-  var image: String = js.native
+  var image: String
   
   // true: 归一化格式输出;false 或无此参数按非归一化格式输出。
   @JSName("success")
-  var success_ocrDrivingLicenseOptions: js.UndefOr[js.Function1[/* res */ ocrDrivingLicenseResponse, Unit]] = js.native
+  var success_ocrDrivingLicenseOptions: js.UndefOr[js.Function1[/* res */ ocrDrivingLicenseResponse, Unit]] = js.undefined
   
   // 是否检测图像旋转，可检验图像的选装方向和旋转角度。true：检测旋转角度并矫正识别。针对摆放情况不可控制的情况建议本参数置为true;false:不检测旋转角度，默认不检测。
-  var unified_valid_period: js.UndefOr[Boolean] = js.native
+  var unified_valid_period: js.UndefOr[Boolean] = js.undefined
 }
 object ocrDrivingLicenseOptions {
   

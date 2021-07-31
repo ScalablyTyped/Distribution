@@ -4,15 +4,13 @@ import typings.node.NodeJS.TypedArray
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PSKCallbackNegotation extends StObject {
   
-  var identitty: String = js.native
+  var identitty: String
   
-  var psk: DataView | TypedArray = js.native
+  var psk: DataView | TypedArray
 }
 object PSKCallbackNegotation {
   

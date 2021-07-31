@@ -4,20 +4,18 @@ import typings.sawtoothSdk.protobufMod.ClientStateGetResponse.Status
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientStateGetResponse extends StObject {
   
   /** ClientStateGetResponse stateRoot */
-  var stateRoot: js.UndefOr[String | Null] = js.native
+  var stateRoot: js.UndefOr[String | Null] = js.undefined
   
   /** ClientStateGetResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
   
   /** ClientStateGetResponse value */
-  var value: js.UndefOr[Uint8Array | Null] = js.native
+  var value: js.UndefOr[Uint8Array | Null] = js.undefined
 }
 object IClientStateGetResponse {
   

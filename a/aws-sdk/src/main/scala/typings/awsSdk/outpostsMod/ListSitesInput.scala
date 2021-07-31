@@ -2,15 +2,13 @@ package typings.awsSdk.outpostsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSitesInput extends StObject {
   
-  var MaxResults: js.UndefOr[MaxResults1000] = js.native
+  var MaxResults: js.UndefOr[MaxResults1000] = js.undefined
   
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object ListSitesInput {
   

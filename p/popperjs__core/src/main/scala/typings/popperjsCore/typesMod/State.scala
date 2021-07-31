@@ -8,33 +8,31 @@ import typings.popperjsCore.anon.Popper
 import typings.popperjsCore.enumsMod.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait State extends StObject {
   
-  var attributes: StringDictionary[StringDictionary[String | Boolean]] = js.native
+  var attributes: StringDictionary[StringDictionary[String | Boolean]]
   
-  var elements: Arrow = js.native
+  var elements: Arrow
   
-  var modifiersData: Dictkey = js.native
+  var modifiersData: Dictkey
   
-  var options: OptionsGeneric[_] = js.native
+  var options: OptionsGeneric[js.Any]
   
-  var orderedModifiers: js.Array[Modifier[_, _]] = js.native
+  var orderedModifiers: js.Array[Modifier[js.Any, js.Any]]
   
-  var placement: Placement = js.native
+  var placement: Placement
   
-  var rects: StateRects = js.native
+  var rects: StateRects
   
-  var reset: Boolean = js.native
+  var reset: Boolean
   
-  var scrollParents: Popper = js.native
+  var scrollParents: Popper
   
-  var strategy: PositioningStrategy = js.native
+  var strategy: PositioningStrategy
   
-  var styles: StringDictionary[PartialCSSStyleDeclaratio] = js.native
+  var styles: StringDictionary[PartialCSSStyleDeclaratio]
 }
 object State {
   
@@ -43,8 +41,8 @@ object State {
     attributes: StringDictionary[StringDictionary[String | Boolean]],
     elements: Arrow,
     modifiersData: Dictkey,
-    options: OptionsGeneric[_],
-    orderedModifiers: js.Array[Modifier[_, _]],
+    options: OptionsGeneric[js.Any],
+    orderedModifiers: js.Array[Modifier[js.Any, js.Any]],
     placement: Placement,
     rects: StateRects,
     reset: Boolean,
@@ -69,10 +67,10 @@ object State {
     def setModifiersData(value: Dictkey): Self = StObject.set(x, "modifiersData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: OptionsGeneric[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    def setOptions(value: OptionsGeneric[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderedModifiers(value: js.Array[Modifier[_, _]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
+    def setOrderedModifiers(value: js.Array[Modifier[js.Any, js.Any]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOrderedModifiersVarargs(value: (Modifier[js.Any, js.Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value :_*))

@@ -5,24 +5,23 @@ import typings.dotenv.mod.DotenvConfigOutput
 import typings.dotenv.mod.DotenvParseOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dotenv-defaults", "config")
+  @JSImport("dotenv-defaults", JSImport.Namespace)
   @js.native
-  def config(): DotenvConfigOutput = js.native
-  @JSImport("dotenv-defaults", "config")
-  @js.native
-  def config(options: DotenvConfigOptions): DotenvConfigOutput = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("dotenv-defaults", "parse")
-  @js.native
-  def parse(src: String): DotenvParseOutput = js.native
-  @JSImport("dotenv-defaults", "parse")
-  @js.native
-  def parse(src: String, defaultSrc: String): DotenvParseOutput = js.native
+  @scala.inline
+  def config(): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvConfigOutput]
+  @scala.inline
+  def config(options: DotenvConfigOptions): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvConfigOutput]
+  
+  @scala.inline
+  def parse(src: String): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
+  @scala.inline
+  def parse(src: String, defaultSrc: String): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], defaultSrc.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
   
   /**
     * A dotenv system that supports defaults
@@ -30,13 +29,12 @@ object mod {
   /* augmented module */
   object dotenvAugmentingMod {
     
-    @js.native
     trait DotenvConfigOptions extends StObject {
       
       /**
         * @default '.env.defaults'
         */
-      var defaults: js.UndefOr[String] = js.native
+      var defaults: js.UndefOr[String] = js.undefined
     }
     object DotenvConfigOptions {
       

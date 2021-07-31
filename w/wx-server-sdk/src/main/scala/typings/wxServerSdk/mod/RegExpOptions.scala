@@ -5,16 +5,14 @@ import typings.wxServerSdk.wxServerSdkStrings.m
 import typings.wxServerSdk.wxServerSdkStrings.s
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegExpOptions extends StObject {
   
   // 正则表达式，字符串形式
-  var options: i | m | s = js.native
+  var options: i | m | s
   
-  var regexp: String = js.native
+  var regexp: String
 }
 object RegExpOptions {
   

@@ -12,82 +12,80 @@ import typings.semanticUiSearch.SemanticUI.Search.TemplatesSettings
 import typings.semanticUiSearch.semanticUiSearchBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-search.SemanticUI.SearchSettings._Impl, keyof semantic-ui-search.SemanticUI.SearchSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var apiSettings: js.UndefOr[ApiSettings] = js.native
+  var apiSettings: js.UndefOr[ApiSettings] = js.undefined
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var fields: js.UndefOr[FieldsSettings] = js.native
+  var fields: js.UndefOr[FieldsSettings] = js.undefined
   
-  var hideDelay: js.UndefOr[Double] = js.native
+  var hideDelay: js.UndefOr[Double] = js.undefined
   
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
-  var metadata: js.UndefOr[MetadataSettings] = js.native
+  var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
-  var minCharacters: js.UndefOr[Double] = js.native
+  var minCharacters: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var onResults: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit]] = js.native
+  var onResults: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit]] = js.undefined
   
-  var onResultsAdd: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]] = js.native
+  var onResultsAdd: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]] = js.undefined
   
-  var onResultsClose: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onResultsClose: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onResultsOpen: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onResultsOpen: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onSearchQuery: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]] = js.native
+  var onSearchQuery: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]] = js.undefined
   
   var onSelect: js.UndefOr[
     js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var regExp: js.UndefOr[RegExpSettings] = js.native
+  var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
-  var searchDelay: js.UndefOr[Double] = js.native
+  var searchDelay: js.UndefOr[Double] = js.undefined
   
-  var searchFields: js.UndefOr[js.Array[String]] = js.native
+  var searchFields: js.UndefOr[js.Array[String]] = js.undefined
   
-  var searchFullText: js.UndefOr[Boolean] = js.native
+  var searchFullText: js.UndefOr[Boolean] = js.undefined
   
-  var selectFirstResult: js.UndefOr[Boolean] = js.native
+  var selectFirstResult: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var showNoResults: js.UndefOr[Boolean] = js.native
+  var showNoResults: js.UndefOr[Boolean] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var source: js.UndefOr[`false` | js.Any] = js.native
+  var source: js.UndefOr[`false` | js.Any] = js.undefined
   
-  var templates: js.UndefOr[TemplatesSettings] = js.native
+  var templates: js.UndefOr[TemplatesSettings] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   

@@ -2,13 +2,11 @@ package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options customizing the data transfer schedule.
   */
-@js.native
 trait SchemaScheduleOptions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaScheduleOptions extends StObject {
     * using StartManualTransferRuns API. When automatic scheduling is disabled,
     * the TransferConfig.schedule field will be ignored.
     */
-  var disableAutoScheduling: js.UndefOr[Boolean] = js.native
+  var disableAutoScheduling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines time to stop scheduling transfer runs. A transfer run cannot be
@@ -25,7 +23,7 @@ trait SchemaScheduleOptions extends StObject {
     * moment. The time when a data transfer can be trigerred manually is not
     * limited by this option.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies time to start scheduling transfer runs. The first run will be
@@ -34,7 +32,7 @@ trait SchemaScheduleOptions extends StObject {
     * moment. The time when a data transfer can be trigerred manually is not
     * limited by this option.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaScheduleOptions {
   

@@ -3,24 +3,23 @@ package typings.fridaGum
 import typings.fridaGum.fridaGumStrings.barrier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arm64BarrierOperand
-  extends Arm64BaseOperand
+  extends StObject
+     with Arm64BaseOperand
      with Arm64Operand {
   
-  var `type`: barrier = js.native
+  var `type`: barrier
   
-  var value: Double = js.native
+  var value: Double
 }
 object Arm64BarrierOperand {
   
   @scala.inline
-  def apply(`type`: barrier, value: Double): Arm64BarrierOperand = {
+  def apply(value: Double): Arm64BarrierOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("barrier")
     __obj.asInstanceOf[Arm64BarrierOperand]
   }
   

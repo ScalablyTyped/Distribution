@@ -5,13 +5,13 @@ import typings.agGrid.gridApiMod.GridApi
 import typings.agGrid.originalColumnGroupMod.OriginalColumnGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColumnGroupOpenedEvent extends AgGridEvent {
+trait ColumnGroupOpenedEvent
+  extends StObject
+     with AgGridEvent {
   
-  var columnGroup: OriginalColumnGroup = js.native
+  var columnGroup: OriginalColumnGroup
 }
 object ColumnGroupOpenedEvent {
   

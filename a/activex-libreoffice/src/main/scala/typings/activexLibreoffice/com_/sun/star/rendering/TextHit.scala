@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This structure is used from the {@link XTextLayout} interface to transport information regarding hit tests.
   * @since OOo 2.0
   */
-@js.native
 trait TextHit extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait TextHit extends StObject {
     * in the string, and can thus have values ranging from 0 up to the number of characters in the string. Hereby, an index of 0 denotes an insertion
     * position **before** the first character, and an index containing the number of characters denotes an insertion **behind** the last character.
     */
-  var EntryIndex: Double = js.native
+  var EntryIndex: Double
   
   /**
     * This member denotes whether the hit was on the leading edge.
@@ -30,7 +28,7 @@ trait TextHit extends StObject {
     * text of the corresponding language (i.e. the leading edge of an Arabic glyph is the right half of it, whereas it is the left half of a Latin
     * character). If the hit was on the leading edge, this member is set to `TRUE` .
     */
-  var IsLeadingEdge: Boolean = js.native
+  var IsLeadingEdge: Boolean
 }
 object TextHit {
   

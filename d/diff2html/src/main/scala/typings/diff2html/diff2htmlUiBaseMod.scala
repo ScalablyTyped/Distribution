@@ -10,7 +10,6 @@ import typings.highlightJs.HLJSApi
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diff2htmlUiBaseMod {
@@ -21,30 +20,15 @@ object diff2htmlUiBaseMod {
     def this(target: HTMLElement) = this()
     def this(target: HTMLElement, diffInput: String) = this()
     def this(target: HTMLElement, diffInput: js.Array[DiffFile]) = this()
-    def this(target: HTMLElement, diffInput: js.UndefOr[scala.Nothing], config: Diff2HtmlUIConfig) = this()
     def this(target: HTMLElement, diffInput: String, config: Diff2HtmlUIConfig) = this()
     def this(target: HTMLElement, diffInput: js.Array[DiffFile], config: Diff2HtmlUIConfig) = this()
-    def this(
-      target: HTMLElement,
-      diffInput: js.UndefOr[scala.Nothing],
-      config: js.UndefOr[scala.Nothing],
-      hljs: HLJSApi
-    ) = this()
-    def this(
-      target: HTMLElement,
-      diffInput: js.UndefOr[scala.Nothing],
-      config: Diff2HtmlUIConfig,
-      hljs: HLJSApi
-    ) = this()
-    def this(target: HTMLElement, diffInput: String, config: js.UndefOr[scala.Nothing], hljs: HLJSApi) = this()
+    def this(target: HTMLElement, diffInput: Unit, config: Diff2HtmlUIConfig) = this()
+    def this(target: HTMLElement, diffInput: String, config: Unit, hljs: HLJSApi) = this()
     def this(target: HTMLElement, diffInput: String, config: Diff2HtmlUIConfig, hljs: HLJSApi) = this()
-    def this(
-      target: HTMLElement,
-      diffInput: js.Array[DiffFile],
-      config: js.UndefOr[scala.Nothing],
-      hljs: HLJSApi
-    ) = this()
+    def this(target: HTMLElement, diffInput: js.Array[DiffFile], config: Unit, hljs: HLJSApi) = this()
     def this(target: HTMLElement, diffInput: js.Array[DiffFile], config: Diff2HtmlUIConfig, hljs: HLJSApi) = this()
+    def this(target: HTMLElement, diffInput: Unit, config: Unit, hljs: HLJSApi) = this()
+    def this(target: HTMLElement, diffInput: Unit, config: Diff2HtmlUIConfig, hljs: HLJSApi) = this()
     
     val config: DiffStyle = js.native
     
@@ -165,18 +149,19 @@ object diff2htmlUiBaseMod {
     def synchronisedScroll_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("synchronisedScroll")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait Diff2HtmlUIConfig extends Diff2HtmlConfig {
+  trait Diff2HtmlUIConfig
+    extends StObject
+       with Diff2HtmlConfig {
     
-    var fileListStartVisible: js.UndefOr[Boolean] = js.native
+    var fileListStartVisible: js.UndefOr[Boolean] = js.undefined
     
-    var fileListToggle: js.UndefOr[Boolean] = js.native
+    var fileListToggle: js.UndefOr[Boolean] = js.undefined
     
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
-    var smartSelection: js.UndefOr[Boolean] = js.native
+    var smartSelection: js.UndefOr[Boolean] = js.undefined
     
-    var synchronisedScroll: js.UndefOr[Boolean] = js.native
+    var synchronisedScroll: js.UndefOr[Boolean] = js.undefined
   }
   object Diff2HtmlUIConfig {
     

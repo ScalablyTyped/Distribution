@@ -2,19 +2,17 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata type for the operation returned by CreateDatabase.
   */
-@js.native
 trait SchemaCreateDatabaseMetadata extends StObject {
   
   /**
     * The database being created.
     */
-  var database: js.UndefOr[String] = js.native
+  var database: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateDatabaseMetadata {
   

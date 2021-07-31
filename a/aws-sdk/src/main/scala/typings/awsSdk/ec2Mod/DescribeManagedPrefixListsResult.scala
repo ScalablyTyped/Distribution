@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeManagedPrefixListsResult extends StObject {
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ec2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ec2Mod.NextToken] = js.undefined
   
   /**
     * Information about the prefix lists.
     */
-  var PrefixLists: js.UndefOr[ManagedPrefixListSet] = js.native
+  var PrefixLists: js.UndefOr[ManagedPrefixListSet] = js.undefined
 }
 object DescribeManagedPrefixListsResult {
   

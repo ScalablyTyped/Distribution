@@ -20,10 +20,13 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libPickersMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Pickers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "Autofill")
   @js.native
@@ -68,9 +71,12 @@ object libPickersMod {
   /* static members */
   object BasePicker {
     
-    @JSImport("office-ui-fabric-react/lib/Pickers", "BasePicker.getDerivedStateFromProps")
+    @JSImport("office-ui-fabric-react/lib/Pickers", "BasePicker")
     @js.native
-    def getDerivedStateFromProps(newProps: IBasePickerProps[_]): Items | Null = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromProps(newProps: IBasePickerProps[js.Any]): Items | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(newProps.asInstanceOf[js.Any]).asInstanceOf[Items | Null]
   }
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "BasePickerListBelow")
@@ -166,30 +172,28 @@ object libPickersMod {
   @js.native
   val PeoplePickerItem: FunctionComponent[IPeoplePickerItemSelectedProps] = js.native
   
-  @JSImport("office-ui-fabric-react/lib/Pickers", "PeoplePickerItemBase")
-  @js.native
-  def PeoplePickerItemBase(props: IPeoplePickerItemSelectedProps): Element = js.native
+  @scala.inline
+  def PeoplePickerItemBase(props: IPeoplePickerItemSelectedProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PeoplePickerItemBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "PeoplePickerItemSuggestion")
   @js.native
   val PeoplePickerItemSuggestion: FunctionComponent[IPeoplePickerItemSuggestionProps] = js.native
   
-  @JSImport("office-ui-fabric-react/lib/Pickers", "PeoplePickerItemSuggestionBase")
-  @js.native
-  def PeoplePickerItemSuggestionBase(props: IPeoplePickerItemSuggestionProps): Element = js.native
+  @scala.inline
+  def PeoplePickerItemSuggestionBase(props: IPeoplePickerItemSuggestionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PeoplePickerItemSuggestionBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "SuggestionActionType")
   @js.native
   object SuggestionActionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType & Double] = js.native
     
-    /* 1 */ val forceResolve: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.forceResolve with Double = js.native
+    /* 1 */ val forceResolve: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.forceResolve & Double = js.native
     
-    /* 0 */ val none: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.none with Double = js.native
+    /* 0 */ val none: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.none & Double = js.native
     
-    /* 2 */ val searchMore: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.searchMore with Double = js.native
+    /* 2 */ val searchMore: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.searchMore & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "Suggestions")
@@ -215,17 +219,15 @@ object libPickersMod {
   @js.native
   val TagItem: FunctionComponent[ITagItemProps] = js.native
   
-  @JSImport("office-ui-fabric-react/lib/Pickers", "TagItemBase")
-  @js.native
-  def TagItemBase(props: ITagItemProps): Element = js.native
+  @scala.inline
+  def TagItemBase(props: ITagItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TagItemBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "TagItemSuggestion")
   @js.native
   val TagItemSuggestion: FunctionComponent[ITagItemSuggestionProps] = js.native
   
-  @JSImport("office-ui-fabric-react/lib/Pickers", "TagItemSuggestionBase")
-  @js.native
-  def TagItemSuggestionBase(props: ITagItemSuggestionProps): Element = js.native
+  @scala.inline
+  def TagItemSuggestionBase(props: ITagItemSuggestionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TagItemSuggestionBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "TagPicker")
   @js.native
@@ -256,16 +258,15 @@ object libPickersMod {
   object ValidationState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.basePickerTypesMod.ValidationState with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.basePickerTypesMod.ValidationState & Double] = js.native
     
-    /* 2 */ val invalid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.invalid with Double = js.native
+    /* 2 */ val invalid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.invalid & Double = js.native
     
-    /* 0 */ val valid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.valid with Double = js.native
+    /* 0 */ val valid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.valid & Double = js.native
     
-    /* 1 */ val warning: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.warning with Double = js.native
+    /* 1 */ val warning: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.warning & Double = js.native
   }
   
-  @JSImport("office-ui-fabric-react/lib/Pickers", "createGenericItem")
-  @js.native
-  def createGenericItem(name: String, currentValidationState: ValidationState): IGenericItemkeyKey = js.native
+  @scala.inline
+  def createGenericItem(name: String, currentValidationState: ValidationState): IGenericItemkeyKey = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericItem")(name.asInstanceOf[js.Any], currentValidationState.asInstanceOf[js.Any])).asInstanceOf[IGenericItemkeyKey]
 }

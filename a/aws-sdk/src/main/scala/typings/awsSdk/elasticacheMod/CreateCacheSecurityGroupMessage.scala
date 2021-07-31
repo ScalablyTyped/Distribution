@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCacheSecurityGroupMessage extends StObject {
   
   /**
     * A name for the cache security group. This value is stored as a lowercase string. Constraints: Must contain no more than 255 alphanumeric characters. Cannot be the word "Default". Example: mysecuritygroup 
     */
-  var CacheSecurityGroupName: String = js.native
+  var CacheSecurityGroupName: String
   
   /**
     * A description for the cache security group.
     */
-  var Description: String = js.native
+  var Description: String
 }
 object CreateCacheSecurityGroupMessage {
   

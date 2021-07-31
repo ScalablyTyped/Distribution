@@ -2,13 +2,13 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPrintCustomOptionDetails extends IPrintOptionDetails {
+trait IPrintCustomOptionDetails
+  extends StObject
+     with IPrintOptionDetails {
   
-  var displayName: String = js.native
+  var displayName: String
 }
 object IPrintCustomOptionDetails {
   

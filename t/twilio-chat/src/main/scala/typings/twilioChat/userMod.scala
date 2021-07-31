@@ -5,7 +5,6 @@ import typings.twilioChat.sessionMod.Session
 import typings.twilioSync.mod.SyncClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userMod {
@@ -136,12 +135,11 @@ object userMod {
       def online: typings.twilioChat.twilioChatStrings.online = "online".asInstanceOf[typings.twilioChat.twilioChatStrings.online]
     }
     
-    @js.native
     trait UpdatedEventArgs extends StObject {
       
-      var updateReasons: js.Array[UpdateReason] = js.native
+      var updateReasons: js.Array[UpdateReason]
       
-      var user: User = js.native
+      var user: User
     }
     object UpdatedEventArgs {
       
@@ -166,12 +164,11 @@ object userMod {
     }
   }
   
-  @js.native
   trait UserServices extends StObject {
     
-    var session: Session = js.native
+    var session: Session
     
-    var syncClient: SyncClient = js.native
+    var syncClient: SyncClient
   }
   object UserServices {
     

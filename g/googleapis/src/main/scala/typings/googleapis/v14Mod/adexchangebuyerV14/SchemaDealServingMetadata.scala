@@ -2,10 +2,8 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDealServingMetadata extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait SchemaDealServingMetadata extends StObject {
     * only populated when querying for finalized orders using the method
     * GetFinalizedOrderDeals
     */
-  var alcoholAdsAllowed: js.UndefOr[Boolean] = js.native
+  var alcoholAdsAllowed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Tracks which parties (if any) have paused a deal. (readonly, except via
     * PauseResumeOrderDeals action)
     */
-  var dealPauseStatus: js.UndefOr[SchemaDealServingMetadataDealPauseStatus] = js.native
+  var dealPauseStatus: js.UndefOr[SchemaDealServingMetadataDealPauseStatus] = js.undefined
 }
 object SchemaDealServingMetadata {
   

@@ -2,19 +2,17 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaledSize extends StObject {
   
-  var fontScale: Double = js.native
+  var fontScale: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var scale: Double = js.native
+  var scale: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object ScaledSize {
   

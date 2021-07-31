@@ -3,15 +3,13 @@ package typings.forgeDi
 import typings.forgeDi.inspectorMod.Inspector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
   
-  @js.native
   trait Config extends StObject {
     
-    var inspector: js.UndefOr[Inspector] = js.native
+    var inspector: js.UndefOr[Inspector] = js.undefined
   }
   object Config {
     

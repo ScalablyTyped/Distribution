@@ -2,17 +2,15 @@ package typings.symbolTree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Filter[THIS, T /* <: js.Object */] extends StObject {
     
-    def filter(`object`: T): js.Any = js.native
+    def filter(`object`: T): js.Any
     
-    var thisArg: THIS = js.native
+    var thisArg: THIS
   }
   object Filter {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter[_, _], THIS, T /* <: js.Object */] (val x: Self with (Filter[THIS, T])) extends AnyVal {
+    implicit class FilterMutableBuilder[Self <: Filter[?, ?], THIS, T /* <: js.Object */] (val x: Self & (Filter[THIS, T])) extends AnyVal {
       
       @scala.inline
       def setFilter(value: T => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))

@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvalidateProjectCacheInput extends StObject {
   
   /**
     * The name of the AWS CodeBuild build project that the cache is reset for.
     */
-  var projectName: NonEmptyString = js.native
+  var projectName: NonEmptyString
 }
 object InvalidateProjectCacheInput {
   

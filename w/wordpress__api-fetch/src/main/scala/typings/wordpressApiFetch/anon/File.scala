@@ -2,21 +2,19 @@ package typings.wordpressApiFetch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
-  var file: String = js.native
+  var file: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var mime_type: String = js.native
+  var mime_type: String
   
-  var source_url: String = js.native
+  var source_url: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object File {
   

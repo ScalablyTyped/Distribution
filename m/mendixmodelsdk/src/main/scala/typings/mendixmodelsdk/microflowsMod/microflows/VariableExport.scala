@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.VariableExport")
@@ -39,9 +38,8 @@ object VariableExport {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.VariableExport.create")
-  @js.native
-  def create(model: IModel): VariableExport = js.native
+  @scala.inline
+  def create(model: IModel): VariableExport = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[VariableExport]
   
   /**
     * Creates and returns a new VariableExport instance in the SDK and on the server.
@@ -49,9 +47,8 @@ object VariableExport {
     * of the parent ExportXmlAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.VariableExport.createIn")
-  @js.native
-  def createIn(container: ExportXmlAction): VariableExport = js.native
+  @scala.inline
+  def createIn(container: ExportXmlAction): VariableExport = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[VariableExport]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.VariableExport.structureTypeName")

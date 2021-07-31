@@ -3,28 +3,26 @@ package typings.awsSdkClientPinpointBrowser
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAttributesResourceMod {
   
-  @js.native
   trait AttributesResource extends StObject {
     
     /**
       * The unique ID for the application.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * The attribute type for the application.
       */
-    var AttributeType: js.UndefOr[String] = js.native
+    var AttributeType: js.UndefOr[String] = js.undefined
     
     /**
       * The attributes for the application.
       */
-    var Attributes: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var Attributes: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
   }
   object AttributesResource {
     
@@ -60,14 +58,15 @@ object typesAttributesResourceMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAttributesResource extends AttributesResource {
+  trait UnmarshalledAttributesResource
+    extends StObject
+       with AttributesResource {
     
     /**
       * The attributes for the application.
       */
     @JSName("Attributes")
-    var Attributes_UnmarshalledAttributesResource: js.UndefOr[js.Array[String]] = js.native
+    var Attributes_UnmarshalledAttributesResource: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnmarshalledAttributesResource {
     

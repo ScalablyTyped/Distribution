@@ -2,121 +2,119 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait YAxisScrollbarOptions extends StObject {
   
   /**
     * (Highstock) The background color of the scrollbar itself.
     */
-  var barBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var barBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) The color of the scrollbar's border.
     */
-  var barBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var barBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) The border rounding radius of the bar.
     */
-  var barBorderRadius: js.UndefOr[Double] = js.native
+  var barBorderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The width of the bar's border.
     */
-  var barBorderWidth: js.UndefOr[Double] = js.native
+  var barBorderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The color of the small arrow inside the scrollbar buttons.
     */
-  var buttonArrowColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var buttonArrowColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) The color of scrollbar buttons.
     */
-  var buttonBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var buttonBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) The color of the border of the scrollbar buttons.
     */
-  var buttonBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var buttonBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) The corner radius of the scrollbar buttons.
     */
-  var buttonBorderRadius: js.UndefOr[Double] = js.native
+  var buttonBorderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The border width of the scrollbar buttons.
     */
-  var buttonBorderWidth: js.UndefOr[Double] = js.native
+  var buttonBorderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Enable the scrollbar on the Y axis.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Whether to redraw the main chart as the scrollbar or the
     * navigator zoomed window is moved. Defaults to `true` for modern browsers
     * and `false` for legacy IE browsers as well as mobile devices.
     */
-  var liveRedraw: js.UndefOr[Boolean] = js.native
+  var liveRedraw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Pixel margin between the scrollbar and the axis elements.
     */
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The minimum width of the scrollbar.
     */
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The color of the small rifles in the middle of the scrollbar.
     */
-  var rifleColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var rifleColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) Whether to show the scrollbar when it is fully zoomed out at
     * max range. Setting it to `false` on the Y axis makes the scrollbar stay
     * hidden until the user zooms in, like common in browsers.
     */
-  var showFull: js.UndefOr[Boolean] = js.native
+  var showFull: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) The width of a vertical scrollbar or height of a horizontal
     * scrollbar. Defaults to 20 on touch devices.
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The color of the track background.
     */
-  var trackBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var trackBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) The color of the border of the scrollbar track.
     */
-  var trackBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var trackBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) The corner radius of the border of the scrollbar track.
     */
-  var trackBorderRadius: js.UndefOr[Double] = js.native
+  var trackBorderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The width of the border of the scrollbar track.
     */
-  var trackBorderWidth: js.UndefOr[Double] = js.native
+  var trackBorderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Z index of the scrollbar elements.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object YAxisScrollbarOptions {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMeetingDialOutRequest extends StObject {
   
   /**
     * Phone number used as the caller ID when the remote party receives a call.
     */
-  var FromPhoneNumber: E164PhoneNumber = js.native
+  var FromPhoneNumber: E164PhoneNumber
   
   /**
     * Token used by the Amazon Chime SDK attendee. Call the  CreateAttendee API to get a join token. 
     */
-  var JoinToken: JoinTokenString = js.native
+  var JoinToken: JoinTokenString
   
   /**
     * The Amazon Chime SDK meeting ID. Type: String Pattern: [a-fA-F0-9]{8}(?:-[a-fA-F0-9]{4}){3}-[a-fA-F0-9]{12} Required: No
     */
-  var MeetingId: GuidString = js.native
+  var MeetingId: GuidString
   
   /**
     * Phone number called when inviting someone to a meeting.
     */
-  var ToPhoneNumber: E164PhoneNumber = js.native
+  var ToPhoneNumber: E164PhoneNumber
 }
 object CreateMeetingDialOutRequest {
   

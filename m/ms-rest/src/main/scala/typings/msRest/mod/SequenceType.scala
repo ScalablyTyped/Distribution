@@ -3,14 +3,14 @@ package typings.msRest.mod
 import typings.msRest.anon.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SequenceType extends Mapper {
+trait SequenceType
+  extends StObject
+     with Mapper {
   
   @JSName("type")
-  var type_SequenceType: Element = js.native
+  var type_SequenceType: Element
 }
 object SequenceType {
   

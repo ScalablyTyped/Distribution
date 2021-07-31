@@ -1,23 +1,30 @@
 package typings.surveyKnockout.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.surveyKnockout.anon.IncludeEmpty
 import typings.surveyKnockout.anon.IsNeedRender
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- scala.Any because Inheritance from two classes. Inlined 
+- scala.AnyRef because Inheritance from two classes. Inlined 
+- scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+- js.Any because Inheritance from two classes. Inlined 
+- scala.AnyRef because Inheritance from two classes. Inlined 
+- js.Object because Inheritance from two classes. Inlined 
+- js.Any because Inheritance from two classes. Inlined 
 - typings.surveyKnockout.mod.ISurveyElement because Already inherited
+- org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+- js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
 - typings.surveyKnockout.mod.IElement because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name. Inlined visible, parent, renderWidth, width, minWidth, maxWidth, rightIndent, startWithNewLine, getPanel, getLayoutType, isLayoutTypeSupported, removeElement, onAnyValueChanged, clearIncorrectValues, clearErrors, dispose
+- org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined 
 - typings.surveyKnockout.mod.ITitleOwner because var conflicts: name. Inlined no, requiredText, isRequireTextOnStart, isRequireTextBeforeTitle, isRequireTextAfterTitle, locTitle
 - typings.surveyKnockout.mod.IQuestion because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, survey. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, value */ @JSImport("survey-knockout", "Question")
 @js.native
 class Question protected ()
   extends SurveyElement
      with IValidatorOwner
-     with /* index */ StringDictionary[js.Any]
      with ISurveyErrorOwner
      with IConditionRunner {
   def this(name: String) = this()
@@ -204,9 +211,9 @@ class Question protected ()
   def getComponentName(): String = js.native
   
   def getConditionJson(): js.Any = js.native
-  def getConditionJson(operator: js.UndefOr[scala.Nothing], path: String): js.Any = js.native
   def getConditionJson(operator: String): js.Any = js.native
   def getConditionJson(operator: String, path: String): js.Any = js.native
+  def getConditionJson(operator: Unit, path: String): js.Any = js.native
   
   /* protected */ def getCorrectAnswerCount(): Double = js.native
   
@@ -222,6 +229,12 @@ class Question protected ()
   
   /* protected */ def getCssType(): String = js.native
   
+  /* CompleteClass */
+  override def getDataFilteredProperties(): js.Any = js.native
+  
+  /* CompleteClass */
+  override def getDataFilteredValues(): js.Any = js.native
+  
   def getDefaultValue(): js.Any = js.native
   
   /**
@@ -236,6 +249,9 @@ class Question protected ()
   
   def getErrorByType(errorType: String): SurveyError = js.native
   
+  /* CompleteClass */
+  override def getErrorCustomText(text: String, error: SurveyError): String = js.native
+  
   /* protected */ def getFirstErrorInputElementId(): String = js.native
   
   /* protected */ def getFirstInputElementId(): String = js.native
@@ -245,6 +261,12 @@ class Question protected ()
   /* protected */ def getIsRunningValidators(): Boolean = js.native
   
   def getLayoutType(): String = js.native
+  
+  /* CompleteClass */
+  override def getLocale(): String = js.native
+  
+  /* CompleteClass */
+  override def getMarkdownHtml(text: String): String = js.native
   
   def getOthersMaxLength(): js.Any = js.native
   
@@ -257,6 +279,9 @@ class Question protected ()
     */
   def getPlainData(): js.Any = js.native
   def getPlainData(options: IncludeEmpty): js.Any = js.native
+  
+  /* CompleteClass */
+  override def getProcessedText(text: String): String = js.native
   
   /* protected */ def getProcessedTextValue(textValue: TextPreProcessorValue): Unit = js.native
   
@@ -288,6 +313,12 @@ class Question protected ()
   
   /* protected */ def getUnbindValue(value: js.Any): js.Any = js.native
   
+  /* CompleteClass */
+  override def getValidatorTitle(): String = js.native
+  
+  /* CompleteClass */
+  override def getValidators(): js.Array[SurveyValidator] = js.native
+  
   /* protected */ def getValueAndRunExpression(`val`: js.Any, expression: String): js.Any = js.native
   
   /* protected */ def getValueCore(): js.Any = js.native
@@ -308,9 +339,9 @@ class Question protected ()
     * @param fireCallback set it to true to show an error in UI.
     */
   def hasErrors(): Boolean = js.native
-  def hasErrors(fireCallback: js.UndefOr[scala.Nothing], rec: js.Any): Boolean = js.native
   def hasErrors(fireCallback: Boolean): Boolean = js.native
   def hasErrors(fireCallback: Boolean, rec: js.Any): Boolean = js.native
+  def hasErrors(fireCallback: Unit, rec: js.Any): Boolean = js.native
   
   /**
     * Returns false if the question doesn't have an input element, for example: QuestionHtmlModel
@@ -428,7 +459,7 @@ class Question protected ()
   val locRequiredErrorText: LocalizableString = js.native
   
   /* InferMemberOverrides */
-  override def locStrsChanged(): Unit with js.Any = js.native
+  override def locStrsChanged(): Unit & js.Any = js.native
   
   val locTitle: LocalizableString = js.native
   
@@ -476,7 +507,7 @@ class Question protected ()
     * <br/> options.isReady - current value of isReady
     * <br/> options.oldIsReady - old value of isReady
     */
-  var onReadyChanged: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  var onReadyChanged: Event[js.Function2[/* sender */ this.type, /* options */ js.Any, js.Any], js.Any] = js.native
   
   def onSurveyValueChanged(newValue: js.Any): js.Any = js.native
   @JSName("onSurveyValueChanged")
@@ -559,6 +590,9 @@ class Question protected ()
     * Set it different from 0 to increase the right padding.
     */
   var rightIndent: Double = js.native
+  
+  /* CompleteClass */
+  override def runCondition(values: HashTable[js.Any], properties: HashTable[js.Any]): js.Any = js.native
   
   /* protected */ def runExpression(expression: String): js.Any = js.native
   
@@ -648,6 +682,9 @@ class Question protected ()
   var useDisplayValuesInTitle: Boolean = js.native
   
   def validateValueCallback(): SurveyError = js.native
+  
+  /* CompleteClass */
+  var validatedValue: js.Any = js.native
   
   /**
     * The list of question validators.

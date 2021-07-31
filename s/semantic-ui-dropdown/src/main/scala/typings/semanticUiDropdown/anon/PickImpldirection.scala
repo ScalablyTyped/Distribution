@@ -5,14 +5,12 @@ import typings.semanticUiDropdown.semanticUiDropdownStrings.downward
 import typings.semanticUiDropdown.semanticUiDropdownStrings.upward
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'direction'> */
-@js.native
 trait PickImpldirection extends StObject {
   
-  var direction: auto | upward | downward = js.native
+  var direction: auto | upward | downward
 }
 object PickImpldirection {
   

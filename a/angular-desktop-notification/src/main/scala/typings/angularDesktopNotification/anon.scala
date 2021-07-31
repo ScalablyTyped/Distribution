@@ -5,25 +5,23 @@ import typings.angularDesktopNotification.angularDesktopNotificationStrings.deni
 import typings.angularDesktopNotification.angularDesktopNotificationStrings.granted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default extends StObject {
     
-    var default: typings.angularDesktopNotification.angularDesktopNotificationStrings.default = js.native
+    var default: typings.angularDesktopNotification.angularDesktopNotificationStrings.default
     
-    var denied: typings.angularDesktopNotification.angularDesktopNotificationStrings.denied = js.native
+    var denied: typings.angularDesktopNotification.angularDesktopNotificationStrings.denied
     
-    var granted: typings.angularDesktopNotification.angularDesktopNotificationStrings.granted = js.native
+    var granted: typings.angularDesktopNotification.angularDesktopNotificationStrings.granted
   }
   object Default {
     
     @scala.inline
-    def apply(default: default, denied: denied, granted: granted): Default = {
-      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], denied = denied.asInstanceOf[js.Any], granted = granted.asInstanceOf[js.Any])
+    def apply(): Default = {
+      val __obj = js.Dynamic.literal(default = "default", denied = "denied", granted = "granted")
       __obj.asInstanceOf[Default]
     }
     

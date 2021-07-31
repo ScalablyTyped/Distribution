@@ -6,7 +6,6 @@ import typings.std.WebSocket
 import typings.ws.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
@@ -26,14 +25,14 @@ object clientMod {
       collectionName: String,
       query: js.Any,
       options: `0`,
-      callback: js.Function2[/* err */ Error, /* results */ js.Array[_], Unit]
+      callback: js.Function2[/* err */ Error, /* results */ js.Array[js.Any], Unit]
     ): Query = js.native
     
     def createSubscribeQuery(
       collectionName: String,
       query: js.Any,
       options: `0`,
-      callback: js.Function2[/* err */ Error, /* results */ js.Array[_], Unit]
+      callback: js.Function2[/* err */ Error, /* results */ js.Array[js.Any], Unit]
     ): Query = js.native
     
     def get(collectionName: String, documentID: String): Doc = js.native

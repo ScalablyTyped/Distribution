@@ -4,26 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskDefinitionProxyConfiguration extends StObject {
   
   /**
     * The name of the container that will serve as the App Mesh proxy.
     */
-  var containerName: Input[String] = js.native
+  var containerName: Input[String]
   
   /**
     * The set of network configuration parameters to provide the Container Network Interface (CNI) plugin, specified a key-value mapping.
     */
-  var properties: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var properties: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
     */
-  var `type`: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.undefined
 }
 object TaskDefinitionProxyConfiguration {
   

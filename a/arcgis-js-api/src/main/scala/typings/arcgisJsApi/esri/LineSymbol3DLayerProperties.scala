@@ -7,39 +7,39 @@ import typings.arcgisJsApi.arcgisJsApiStrings.round
 import typings.arcgisJsApi.arcgisJsApiStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineSymbol3DLayerProperties extends Symbol3DLayerProperties {
+trait LineSymbol3DLayerProperties
+  extends StObject
+     with Symbol3DLayerProperties {
   
   /**
     * The style used to draw the endpoint of a line.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#cap)
     */
-  var cap: js.UndefOr[butt | round | square] = js.native
+  var cap: js.UndefOr[butt | round | square] = js.undefined
   
   /**
     * The style used to draw the intersection of two line segments within a line geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#join)
     */
-  var join: js.UndefOr[miter | round | bevel] = js.native
+  var join: js.UndefOr[miter | round | bevel] = js.undefined
   
   /**
     * The material used to shade the line.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#material)
     */
-  var material: js.UndefOr[LineSymbol3DLayerMaterialProperties] = js.native
+  var material: js.UndefOr[LineSymbol3DLayerMaterialProperties] = js.undefined
   
   /**
     * The width of the line in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#size)
     */
-  var size: js.UndefOr[Double | String] = js.native
+  var size: js.UndefOr[Double | String] = js.undefined
 }
 object LineSymbol3DLayerProperties {
   

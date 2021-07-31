@@ -8,17 +8,15 @@ import typings.awsCryptoIe11Detection.keyOperationMod.KeyOperation
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object msSubtleCryptoMod {
   
   type EncryptionOrVerificationAlgorithm = `RSAES-PKCS1-v1_5`
   
-  @js.native
   trait HashAlgorithm extends StObject {
     
-    var name: Ie11DigestAlgorithm = js.native
+    var name: Ie11DigestAlgorithm
   }
   object HashAlgorithm {
     
@@ -36,18 +34,17 @@ object msSubtleCryptoMod {
     }
   }
   
-  @js.native
   trait HmacAlgorithm extends StObject {
     
-    var hash: HashAlgorithm = js.native
+    var hash: HashAlgorithm
     
-    var name: HMAC = js.native
+    var name: HMAC
   }
   object HmacAlgorithm {
     
     @scala.inline
-    def apply(hash: HashAlgorithm, name: HMAC): HmacAlgorithm = {
-      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(hash: HashAlgorithm): HmacAlgorithm = {
+      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = "HMAC")
       __obj.asInstanceOf[HmacAlgorithm]
     }
     
@@ -141,32 +138,28 @@ object msSubtleCryptoMod {
     def exportKey(format: String, key: Key): KeyOperation = js.native
     
     def generateKey(algorithm: Ie11EncryptionAlgorithm): KeyOperation = js.native
-    def generateKey(
-      algorithm: Ie11EncryptionAlgorithm,
-      extractable: js.UndefOr[scala.Nothing],
-      keyUsages: js.Array[KeyUsage]
-    ): KeyOperation = js.native
     def generateKey(algorithm: Ie11EncryptionAlgorithm, extractable: Boolean): KeyOperation = js.native
     def generateKey(algorithm: Ie11EncryptionAlgorithm, extractable: Boolean, keyUsages: js.Array[KeyUsage]): KeyOperation = js.native
+    def generateKey(algorithm: Ie11EncryptionAlgorithm, extractable: Unit, keyUsages: js.Array[KeyUsage]): KeyOperation = js.native
     def generateKey(algorithm: SigningAlgorithm): KeyOperation = js.native
-    def generateKey(algorithm: SigningAlgorithm, extractable: js.UndefOr[scala.Nothing], keyUsages: js.Array[KeyUsage]): KeyOperation = js.native
     def generateKey(algorithm: SigningAlgorithm, extractable: Boolean): KeyOperation = js.native
     def generateKey(algorithm: SigningAlgorithm, extractable: Boolean, keyUsages: js.Array[KeyUsage]): KeyOperation = js.native
+    def generateKey(algorithm: SigningAlgorithm, extractable: Unit, keyUsages: js.Array[KeyUsage]): KeyOperation = js.native
     
     def importKey(format: String, keyData: ArrayBufferView, algorithm: js.Any): KeyOperation = js.native
-    def importKey(
-      format: String,
-      keyData: ArrayBufferView,
-      algorithm: js.Any,
-      extractable: js.UndefOr[scala.Nothing],
-      keyUsages: js.Array[KeyUsage]
-    ): KeyOperation = js.native
     def importKey(format: String, keyData: ArrayBufferView, algorithm: js.Any, extractable: Boolean): KeyOperation = js.native
     def importKey(
       format: String,
       keyData: ArrayBufferView,
       algorithm: js.Any,
       extractable: Boolean,
+      keyUsages: js.Array[KeyUsage]
+    ): KeyOperation = js.native
+    def importKey(
+      format: String,
+      keyData: ArrayBufferView,
+      algorithm: js.Any,
+      extractable: Unit,
       keyUsages: js.Array[KeyUsage]
     ): KeyOperation = js.native
     

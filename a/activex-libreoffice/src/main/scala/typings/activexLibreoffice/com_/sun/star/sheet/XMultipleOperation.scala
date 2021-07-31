@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides a method to apply a Multiple Operations Table to the cell range. */
-@js.native
-trait XMultipleOperation extends XInterface {
+trait XMultipleOperation
+  extends StObject
+     with XInterface {
   
   /**
     * creates a table of formulas (a "Multiple Operations Table").
@@ -28,7 +28,7 @@ trait XMultipleOperation extends XInterface {
     nMode: TableOperationMode,
     aColumnCell: CellAddress,
     aRowCell: CellAddress
-  ): Unit = js.native
+  ): Unit
 }
 object XMultipleOperation {
   

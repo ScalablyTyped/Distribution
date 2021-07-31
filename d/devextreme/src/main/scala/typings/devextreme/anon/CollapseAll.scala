@@ -2,33 +2,31 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollapseAll extends StObject {
   
-  var collapseAll: js.UndefOr[String] = js.native
+  var collapseAll: js.UndefOr[String] = js.undefined
   
-  var dataNotAvailable: js.UndefOr[String] = js.native
+  var dataNotAvailable: js.UndefOr[String] = js.undefined
   
-  var expandAll: js.UndefOr[String] = js.native
+  var expandAll: js.UndefOr[String] = js.undefined
   
-  var exportToExcel: js.UndefOr[String] = js.native
+  var exportToExcel: js.UndefOr[String] = js.undefined
   
-  var grandTotal: js.UndefOr[String] = js.native
+  var grandTotal: js.UndefOr[String] = js.undefined
   
-  var noData: js.UndefOr[String] = js.native
+  var noData: js.UndefOr[String] = js.undefined
   
-  var removeAllSorting: js.UndefOr[String] = js.native
+  var removeAllSorting: js.UndefOr[String] = js.undefined
   
-  var showFieldChooser: js.UndefOr[String] = js.native
+  var showFieldChooser: js.UndefOr[String] = js.undefined
   
-  var sortColumnBySummary: js.UndefOr[String] = js.native
+  var sortColumnBySummary: js.UndefOr[String] = js.undefined
   
-  var sortRowBySummary: js.UndefOr[String] = js.native
+  var sortRowBySummary: js.UndefOr[String] = js.undefined
   
-  var total: js.UndefOr[String] = js.native
+  var total: js.UndefOr[String] = js.undefined
 }
 object CollapseAll {
   

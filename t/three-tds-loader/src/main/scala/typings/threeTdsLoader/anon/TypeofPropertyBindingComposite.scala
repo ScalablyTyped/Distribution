@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.three.mod.PropertyBinding.Composite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofPropertyBindingComposite extends StObject {
   
   var Composite: Instantiable2[
     /* targetGroup */ js.Any, 
     /* path */ js.Any, 
     typings.three.mod.PropertyBinding.Composite
-  ] = js.native
+  ]
 }
 object TypeofPropertyBindingComposite {
   

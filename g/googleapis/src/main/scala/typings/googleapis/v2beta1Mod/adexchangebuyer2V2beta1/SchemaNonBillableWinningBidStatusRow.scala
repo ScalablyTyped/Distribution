@@ -2,30 +2,28 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The number of winning bids with the specified dimension values for which
   * the buyer was not billed, as described by the specified status.
   */
-@js.native
 trait SchemaNonBillableWinningBidStatusRow extends StObject {
   
   /**
     * The number of bids with the specified status.
     */
-  var bidCount: js.UndefOr[SchemaMetricValue] = js.native
+  var bidCount: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
     * The values of all dimensions associated with metric values in this row.
     */
-  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.native
+  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.undefined
   
   /**
     * The status specifying why the winning bids were not billed.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaNonBillableWinningBidStatusRow {
   

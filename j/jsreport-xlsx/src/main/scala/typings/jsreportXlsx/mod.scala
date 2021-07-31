@@ -5,26 +5,26 @@ import typings.jsreportXlsx.anon.PartialOptions
 import typings.jsreportXlsx.jsreportXlsxStrings.xlsx
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jsreport-xlsx", JSImport.Namespace)
-  @js.native
-  def apply(): ExtensionDefinition = js.native
-  @JSImport("jsreport-xlsx", JSImport.Namespace)
-  @js.native
-  def apply(options: PartialOptions): ExtensionDefinition = js.native
+  @scala.inline
+  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  @scala.inline
+  def apply(options: PartialOptions): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
+  @JSImport("jsreport-xlsx", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var addBufferSize: Double = js.native
+    var addBufferSize: Double
     
-    var escapeAmp: Boolean = js.native
+    var escapeAmp: Boolean
     
-    var numberOfParsedAddIterations: Double = js.native
+    var numberOfParsedAddIterations: Double
   }
   object Options {
     
@@ -48,10 +48,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Xlsx extends StObject {
     
-    var shortid: String = js.native
+    var shortid: String
   }
   object Xlsx {
     
@@ -72,10 +71,9 @@ object mod {
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    @js.native
     trait Template extends StObject {
       
-      var recipe: xlsx | String = js.native
+      var recipe: xlsx | String
     }
     object Template {
       

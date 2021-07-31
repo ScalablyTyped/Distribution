@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionSetLabelsRequest extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait RegionSetLabelsRequest extends StObject {
     * to modify or update labels. You must always provide an up-to-date fingerprint hash in order to update or change labels. Make a get() request to the resource to get the latest
     * fingerprint.
     */
-  var labelFingerprint: js.UndefOr[String] = js.native
+  var labelFingerprint: js.UndefOr[String] = js.undefined
   
   /** The labels to set for this resource. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.RegionSetLabelsRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.RegionSetLabelsRequest & TopLevel[js.Any]
+  ] = js.undefined
 }
 object RegionSetLabelsRequest {
   
@@ -44,7 +42,7 @@ object RegionSetLabelsRequest {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.RegionSetLabelsRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.RegionSetLabelsRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -4,23 +4,21 @@ import typings.octokitTypes.anon.Avatarurl
 import typings.octokitTypes.anon.Description
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsSetMembershipForUserResponseData extends StObject {
   
-  var organization: Description = js.native
+  var organization: Description
   
-  var organization_url: String = js.native
+  var organization_url: String
   
-  var role: String = js.native
+  var role: String
   
-  var state: String = js.native
+  var state: String
   
-  var url: String = js.native
+  var url: String
   
-  var user: Avatarurl = js.native
+  var user: Avatarurl
 }
 object OrgsSetMembershipForUserResponseData {
   

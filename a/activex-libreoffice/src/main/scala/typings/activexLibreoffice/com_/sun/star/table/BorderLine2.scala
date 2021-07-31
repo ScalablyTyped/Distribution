@@ -3,21 +3,21 @@ package typings.activexLibreoffice.com_.sun.star.table
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A border line, extended with line style.
   * @since LibreOffice 3.4
   */
-@js.native
-trait BorderLine2 extends BorderLine {
+trait BorderLine2
+  extends StObject
+     with BorderLine {
   
   /**
     * Style of the border.
     * @see BorderLineStyle
     */
-  var LineStyle: Double = js.native
+  var LineStyle: Double
   
   /**
     * Width of the border, this is the base to compute all the lines and gaps widths. These widths computations are based on the LineStyle property
@@ -25,7 +25,7 @@ trait BorderLine2 extends BorderLine {
     * This property is prevailing on the old Out, In and Dist width from {@link BorderLine} . If this property is set to 0, then the other widths will be
     * used to guess the border width.
     */
-  var LineWidth: Double = js.native
+  var LineWidth: Double
 }
 object BorderLine2 {
   

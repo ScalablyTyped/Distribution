@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UiTemplateInfo extends StObject {
   
   /**
     * The SHA-256 digest of the contents of the template.
     */
-  var ContentSha256: js.UndefOr[TemplateContentSha256] = js.native
+  var ContentSha256: js.UndefOr[TemplateContentSha256] = js.undefined
   
   /**
     * The URL for the user interface template.
     */
-  var Url: js.UndefOr[TemplateUrl] = js.native
+  var Url: js.UndefOr[TemplateUrl] = js.undefined
 }
 object UiTemplateInfo {
   

@@ -5,7 +5,6 @@ import typings.needle.mod.core.NeedleReadWriteHttpVerbs
 import typings.needle.mod.core.NeedleReadonlyHttpVerbs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object needleStrings {
@@ -22,7 +21,8 @@ object needleStrings {
   
   @js.native
   sealed trait delete
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadWriteHttpVerbs
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
@@ -34,14 +34,16 @@ object needleStrings {
   
   @js.native
   sealed trait get
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadonlyHttpVerbs
   @scala.inline
   def get: get = "get".asInstanceOf[get]
   
   @js.native
   sealed trait head
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadonlyHttpVerbs
   @scala.inline
   def head: head = "head".asInstanceOf[head]
@@ -53,21 +55,24 @@ object needleStrings {
   
   @js.native
   sealed trait patch
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadWriteHttpVerbs
   @scala.inline
   def patch: patch = "patch".asInstanceOf[patch]
   
   @js.native
   sealed trait post
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadWriteHttpVerbs
   @scala.inline
   def post: post = "post".asInstanceOf[post]
   
   @js.native
   sealed trait put
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadWriteHttpVerbs
   @scala.inline
   def put: put = "put".asInstanceOf[put]

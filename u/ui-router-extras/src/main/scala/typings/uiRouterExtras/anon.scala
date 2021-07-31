@@ -3,17 +3,15 @@ package typings.uiRouterExtras
 import typings.uiRouterExtras.mod.ui.IRedirectParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Redirect extends StObject {
     
-    var redirect: IRedirectParams = js.native
+    var redirect: IRedirectParams
     
-    var to: IRedirectParams = js.native
+    var to: IRedirectParams
   }
   object Redirect {
     

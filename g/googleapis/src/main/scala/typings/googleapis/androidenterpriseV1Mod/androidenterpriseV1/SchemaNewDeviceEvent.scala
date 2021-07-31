@@ -2,24 +2,22 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event generated when a new device is ready to be managed.
   */
-@js.native
 trait SchemaNewDeviceEvent extends StObject {
   
   /**
     * The Android ID of the device. This field will always be present.
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * Policy app on the device.
     */
-  var dpcPackageName: js.UndefOr[String] = js.native
+  var dpcPackageName: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the extent to which the device is controlled by an Android EMM
@@ -28,12 +26,12 @@ trait SchemaNewDeviceEvent extends StObject {
     * - &quot;managedProfile&quot;, a device where the DPC is set as profile
     * owner.
     */
-  var managementType: js.UndefOr[String] = js.native
+  var managementType: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the user. This field will always be present.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object SchemaNewDeviceEvent {
   

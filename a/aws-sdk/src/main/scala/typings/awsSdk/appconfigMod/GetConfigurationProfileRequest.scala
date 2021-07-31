@@ -2,21 +2,19 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConfigurationProfileRequest extends StObject {
   
   /**
     * The ID of the application that includes the configuration profile you want to get.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
   
   /**
     * The ID of the configuration profile you want to get.
     */
-  var ConfigurationProfileId: Id = js.native
+  var ConfigurationProfileId: Id
 }
 object GetConfigurationProfileRequest {
   

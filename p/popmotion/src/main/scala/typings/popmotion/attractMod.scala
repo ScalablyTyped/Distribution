@@ -2,23 +2,22 @@ package typings.popmotion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attractMod {
   
-  @JSImport("popmotion/lib/utils/attract", "attract")
+  @JSImport("popmotion/lib/utils/attract", JSImport.Namespace)
   @js.native
-  def attract(constant: Double, origin: Double, v: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("popmotion/lib/utils/attract", "attractExpo")
-  @js.native
-  def attractExpo(constant: Double, origin: Double, v: Double): Double = js.native
+  @scala.inline
+  def attract(constant: Double, origin: Double, v: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("attract")(constant.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("popmotion/lib/utils/attract", "createAttractor")
-  @js.native
-  def createAttractor(): js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double] = js.native
-  @JSImport("popmotion/lib/utils/attract", "createAttractor")
-  @js.native
-  def createAttractor(alterDisplacement: js.Function): js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double] = js.native
+  @scala.inline
+  def attractExpo(constant: Double, origin: Double, v: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("attractExpo")(constant.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def createAttractor(): js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAttractor")().asInstanceOf[js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double]]
+  @scala.inline
+  def createAttractor(alterDisplacement: js.Function): js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAttractor")(alterDisplacement.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* constant */ Double, /* origin */ Double, /* v */ Double, Double]]
 }

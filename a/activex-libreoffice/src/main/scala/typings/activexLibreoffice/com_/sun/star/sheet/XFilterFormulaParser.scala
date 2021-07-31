@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Extends the interface {@link XFormulaParser} by an attribute that specifies the namespace URL of the supported formula language. */
-@js.native
-trait XFilterFormulaParser extends XFormulaParser {
+trait XFilterFormulaParser
+  extends StObject
+     with XFormulaParser {
   
   /** Specifies the namespace URL of the formula language supported by this implementation. */
-  var SupportedNamespace: String = js.native
+  var SupportedNamespace: String
 }
 object XFilterFormulaParser {
   

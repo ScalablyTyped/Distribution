@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** interface to get information about the types (usually interface types) supported by an object. */
-@js.native
-trait XTypeProvider extends XInterface {
+trait XTypeProvider
+  extends StObject
+     with XInterface {
   
   /**
     * Obsolete unique identifier.
@@ -20,10 +20,10 @@ trait XTypeProvider extends XInterface {
     * in {@link getTypes()} . (If a unique ID could not be provided, this method was always allowed to return an empty sequence, though).
     * @deprecated DeprecatedThis feature should no longer be used, and implementations are encouraged to always return an empty sequence.
     */
-  val ImplementationId: SafeArray[Double] = js.native
+  val ImplementationId: SafeArray[Double]
   
   /** returns a sequence of all types (usually interface types) provided by the object. */
-  val Types: SafeArray[`type`] = js.native
+  val Types: SafeArray[`type`]
   
   /**
     * Obsolete unique identifier.
@@ -33,10 +33,10 @@ trait XTypeProvider extends XInterface {
     * in {@link getTypes()} . (If a unique ID could not be provided, this method was always allowed to return an empty sequence, though).
     * @deprecated DeprecatedThis feature should no longer be used, and implementations are encouraged to always return an empty sequence.
     */
-  def getImplementationId(): SafeArray[Double] = js.native
+  def getImplementationId(): SafeArray[Double]
   
   /** returns a sequence of all types (usually interface types) provided by the object. */
-  def getTypes(): SafeArray[`type`] = js.native
+  def getTypes(): SafeArray[`type`]
 }
 object XTypeProvider {
   

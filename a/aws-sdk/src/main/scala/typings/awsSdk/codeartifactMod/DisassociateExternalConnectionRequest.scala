@@ -2,31 +2,29 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateExternalConnectionRequest extends StObject {
   
   /**
     * The name of the domain that contains the repository from which to remove the external repository. 
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The name of the external connection to be removed from the repository. 
     */
-  var externalConnection: ExternalConnectionName = js.native
+  var externalConnection: ExternalConnectionName
   
   /**
     * The name of the repository from which the external connection will be removed. 
     */
-  var repository: RepositoryName = js.native
+  var repository: RepositoryName
 }
 object DisassociateExternalConnectionRequest {
   

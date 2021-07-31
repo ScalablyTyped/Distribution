@@ -5,7 +5,6 @@ import typings.angular.mod.IPromise
 import typings.angularPermission.anon.Except
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -13,10 +12,9 @@ object mod {
   
   object permission {
     
-    @js.native
     trait DataWithPermissions extends StObject {
       
-      var permissions: js.UndefOr[Except] = js.native
+      var permissions: js.UndefOr[Except] = js.undefined
     }
     object DataWithPermissions {
       
@@ -38,10 +36,9 @@ object mod {
     }
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState * / any */ @js.native
-    trait IPermissionState extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState * / any */ trait IPermissionState extends StObject {
       
-      var data: js.UndefOr[js.Any | DataWithPermissions] = js.native
+      var data: js.UndefOr[js.Any | DataWithPermissions] = js.undefined
     }
     object IPermissionState {
       
@@ -62,19 +59,18 @@ object mod {
       }
     }
     
-    @js.native
     trait Permission extends StObject {
       
-      var permissionName: String = js.native
+      var permissionName: String
       
-      def validatePermission(): IPromise[_] = js.native
+      def validatePermission(): IPromise[js.Any]
       
-      var validationFunction: js.UndefOr[PermissionValidationFunction] = js.native
+      var validationFunction: js.UndefOr[PermissionValidationFunction] = js.undefined
     }
     object Permission {
       
       @scala.inline
-      def apply(permissionName: String, validatePermission: () => IPromise[_]): Permission = {
+      def apply(permissionName: String, validatePermission: () => IPromise[js.Any]): Permission = {
         val __obj = js.Dynamic.literal(permissionName = permissionName.asInstanceOf[js.Any], validatePermission = js.Any.fromFunction0(validatePermission))
         __obj.asInstanceOf[Permission]
       }
@@ -86,7 +82,7 @@ object mod {
         def setPermissionName(value: String): Self = StObject.set(x, "permissionName", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setValidatePermission(value: () => IPromise[_]): Self = StObject.set(x, "validatePermission", js.Any.fromFunction0(value))
+        def setValidatePermission(value: () => IPromise[js.Any]): Self = StObject.set(x, "validatePermission", js.Any.fromFunction0(value))
         
         @scala.inline
         def setValidationFunction(
@@ -98,16 +94,15 @@ object mod {
       }
     }
     
-    @js.native
     trait PermissionRedirectConfigation extends StObject {
       
       var options: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ js.Any
-          ] = js.native
+          ] = js.undefined
       
-      var params: js.UndefOr[js.Object] = js.native
+      var params: js.UndefOr[js.Object] = js.undefined
       
-      var state: String = js.native
+      var state: String
     }
     object PermissionRedirectConfigation {
       
@@ -139,14 +134,13 @@ object mod {
       }
     }
     
-    @js.native
     trait PermissionStore extends StObject {
       
       /**
         * Removes all permissions
         * @method
         */
-      def clearStore(): Unit = js.native
+      def clearStore(): Unit
       
       /**
         * Allows to define set of permissionNames with shared validation function on application configuration
@@ -156,7 +150,7 @@ object mod {
         * @param permissionNames {Array} Set of permission names
         * @param validationFunction {Function} Function used to validate if permission is valid
         */
-      def defineManyPermissions(permissionNames: js.Array[String], validationFunction: PermissionValidationFunction): Unit = js.native
+      def defineManyPermissions(permissionNames: js.Array[String], validationFunction: PermissionValidationFunction): Unit
       
       /**
         * Allows to define permission on application configuration
@@ -165,7 +159,7 @@ object mod {
         * @param permissionName {String} Name of defined permission
         * @param validationFunction {Function} Function used to validate if permission is valid
         */
-      def definePermission(permissionName: String, validationFunction: PermissionValidationFunction): Unit = js.native
+      def definePermission(permissionName: String, validationFunction: PermissionValidationFunction): Unit
       
       /**
         * Returns permission by it's name
@@ -173,7 +167,7 @@ object mod {
         *
         * @returns {permission.Permission} Permissions definition object
         */
-      def getPermissionDefinition(permissionName: String): Permission = js.native
+      def getPermissionDefinition(permissionName: String): Permission
       
       /**
         * Returns all permissions
@@ -181,7 +175,7 @@ object mod {
         *
         * @returns {Object} Permissions collection
         */
-      def getStore(): StringDictionary[Permission] = js.native
+      def getStore(): StringDictionary[Permission]
       
       /**
         * Checks if permission exists
@@ -190,7 +184,7 @@ object mod {
         * @param permissionName {String} Name of defined permission
         * @returns {Boolean}
         */
-      def hasPermissionDefinition(permissionName: String): Boolean = js.native
+      def hasPermissionDefinition(permissionName: String): Boolean
       
       /**
         * Deletes permission
@@ -198,7 +192,7 @@ object mod {
         *
         * @param permissionName {String} Name of defined permission
         */
-      def removePermissionDefinition(permissionName: String): Unit = js.native
+      def removePermissionDefinition(permissionName: String): Unit
     }
     object PermissionStore {
       
@@ -248,21 +242,20 @@ object mod {
         Boolean | IPromise[js.Any]
       ]
     
-    @js.native
     trait Role extends StObject {
       
-      var permissionNames: js.Array[String] = js.native
+      var permissionNames: js.Array[String]
       
-      var roleName: String = js.native
+      var roleName: String
       
-      def validateRole(): IPromise[_] = js.native
+      def validateRole(): IPromise[js.Any]
       
-      var validationFunction: js.UndefOr[RoleValidationFunction] = js.native
+      var validationFunction: js.UndefOr[RoleValidationFunction] = js.undefined
     }
     object Role {
       
       @scala.inline
-      def apply(permissionNames: js.Array[String], roleName: String, validateRole: () => IPromise[_]): Role = {
+      def apply(permissionNames: js.Array[String], roleName: String, validateRole: () => IPromise[js.Any]): Role = {
         val __obj = js.Dynamic.literal(permissionNames = permissionNames.asInstanceOf[js.Any], roleName = roleName.asInstanceOf[js.Any], validateRole = js.Any.fromFunction0(validateRole))
         __obj.asInstanceOf[Role]
       }
@@ -280,7 +273,7 @@ object mod {
         def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setValidateRole(value: () => IPromise[_]): Self = StObject.set(x, "validateRole", js.Any.fromFunction0(value))
+        def setValidateRole(value: () => IPromise[js.Any]): Self = StObject.set(x, "validateRole", js.Any.fromFunction0(value))
         
         @scala.inline
         def setValidationFunction(
@@ -359,28 +352,27 @@ object mod {
         Boolean | IPromise[js.Any]
       ]
     
-    @js.native
     trait TransitionProperties extends StObject {
       
       var fromParams: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ js.Any
-          ] = js.native
+          ] = js.undefined
       
       var fromState: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ js.Any
-          ] = js.native
+          ] = js.undefined
       
       var options: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ js.Any
-          ] = js.native
+          ] = js.undefined
       
       var toParams: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ js.Any
-          ] = js.native
+          ] = js.undefined
       
       var toState: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ js.Any
-          ] = js.native
+          ] = js.undefined
     }
     object TransitionProperties {
       

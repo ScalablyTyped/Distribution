@@ -3,33 +3,31 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeqMapTask extends StObject {
   
   /** Information about each of the inputs. */
-  var inputs: js.UndefOr[js.Array[SideInputInfo]] = js.native
+  var inputs: js.UndefOr[js.Array[SideInputInfo]] = js.undefined
   
   /** The user-provided name of the SeqDo operation. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Information about each of the outputs. */
-  var outputInfos: js.UndefOr[js.Array[SeqMapTaskOutputInfo]] = js.native
+  var outputInfos: js.UndefOr[js.Array[SeqMapTaskOutputInfo]] = js.undefined
   
   /** System-defined name of the stage containing the SeqDo operation. Unique across the workflow. */
-  var stageName: js.UndefOr[String] = js.native
+  var stageName: js.UndefOr[String] = js.undefined
   
   /** System-defined name of the SeqDo operation. Unique across the workflow. */
-  var systemName: js.UndefOr[String] = js.native
+  var systemName: js.UndefOr[String] = js.undefined
   
   /** The user function to invoke. */
   var userFn: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SeqMapTask with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SeqMapTask & TopLevel[js.Any]
+  ] = js.undefined
 }
 object SeqMapTask {
   
@@ -82,7 +80,7 @@ object SeqMapTask {
     def setUserFn(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SeqMapTask with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SeqMapTask & TopLevel[js.Any]
     ): Self = StObject.set(x, "userFn", value.asInstanceOf[js.Any])
     
     @scala.inline

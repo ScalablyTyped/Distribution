@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpGeoLocation extends StObject {
   
   /**
     * The latitude coordinate of the location, rounded to four decimal places.
     */
-  var lat: js.UndefOr[double] = js.native
+  var lat: js.UndefOr[double] = js.undefined
   
   /**
     * The longitude coordinate of the location, rounded to four decimal places.
     */
-  var lon: js.UndefOr[double] = js.native
+  var lon: js.UndefOr[double] = js.undefined
 }
 object IpGeoLocation {
   

@@ -5,60 +5,52 @@ import typings.twig.anon.Twigoptions
 import typings.twig.twigBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("twig", "cache")
+  @JSImport("twig", JSImport.Namespace)
   @js.native
-  def cache(value: Boolean): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("twig", "compile")
-  @js.native
-  def compile(markup: String, options: CompileOptions): js.Function1[/* context */ js.Any, _] = js.native
+  @scala.inline
+  def cache(value: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("twig", "__express")
-  @js.native
+  @scala.inline
+  def compile(markup: String, options: CompileOptions): js.Function1[/* context */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(markup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* context */ js.Any, js.Any]]
+  
+  @scala.inline
   def express(
     path: String,
     options: CompileOptions,
     fn: js.Function2[/* err */ Error, /* result */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__express")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("twig", "extendFilter")
-  @js.native
-  def extendFilter(name: String, definition: js.Function2[/* left */ js.Any, /* repeated */ js.Any, String]): Unit = js.native
+  @scala.inline
+  def extendFilter(name: String, definition: js.Function2[/* left */ js.Any, /* repeated */ js.Any, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendFilter")(name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("twig", "extendFunction")
-  @js.native
-  def extendFunction(name: String, definition: js.Function1[/* repeated */ js.Any, String]): Unit = js.native
+  @scala.inline
+  def extendFunction(name: String, definition: js.Function1[/* repeated */ js.Any, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendFunction")(name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("twig", "extendTag")
-  @js.native
-  def extendTag(definition: js.Any): Unit = js.native
+  @scala.inline
+  def extendTag(definition: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendTag")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("twig", "extendTest")
-  @js.native
-  def extendTest(name: String, definition: js.Function1[/* value */ js.Any, Boolean]): Unit = js.native
+  @scala.inline
+  def extendTest(name: String, definition: js.Function1[/* value */ js.Any, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendTest")(name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("twig", "renderFile")
-  @js.native
-  def renderFile(path: String, fn: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): Unit = js.native
-  @JSImport("twig", "renderFile")
-  @js.native
-  def renderFile(path: String, options: RenderOptions, fn: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def renderFile(path: String, fn: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def renderFile(path: String, options: RenderOptions, fn: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("twig", "twig")
-  @js.native
-  def twig(params: Parameters): Template = js.native
+  @scala.inline
+  def twig(params: Parameters): Template = ^.asInstanceOf[js.Dynamic].applyDynamic("twig")(params.asInstanceOf[js.Any]).asInstanceOf[Template]
   
-  @js.native
   trait CompileOptions extends StObject {
     
-    var filename: String = js.native
+    var filename: String
     
-    var settings: Twigoptions = js.native
+    var settings: Twigoptions
   }
   object CompileOptions {
     
@@ -79,32 +71,31 @@ object mod {
     }
   }
   
-  @js.native
   trait Parameters extends StObject {
     
-    var async: js.UndefOr[js.Any] = js.native
+    var async: js.UndefOr[js.Any] = js.undefined
     
-    var base: js.UndefOr[js.Any] = js.native
+    var base: js.UndefOr[js.Any] = js.undefined
     
-    var blocks: js.UndefOr[js.Any] = js.native
+    var blocks: js.UndefOr[js.Any] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var href: js.UndefOr[js.Any] = js.native
+    var href: js.UndefOr[js.Any] = js.undefined
     
-    var id: js.UndefOr[js.Any] = js.native
+    var id: js.UndefOr[js.Any] = js.undefined
     
-    var load: js.UndefOr[js.Function1[/* template */ Template, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* template */ Template, Unit]] = js.undefined
     
-    var macros: js.UndefOr[js.Any] = js.native
+    var macros: js.UndefOr[js.Any] = js.undefined
     
-    var method: js.UndefOr[js.Any] = js.native
+    var method: js.UndefOr[js.Any] = js.undefined
     
-    var name: js.UndefOr[js.Any] = js.native
+    var name: js.UndefOr[js.Any] = js.undefined
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
-    var path: js.UndefOr[js.Any] = js.native
+    var path: js.UndefOr[js.Any] = js.undefined
   }
   object Parameters {
     
@@ -191,12 +182,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RenderOptions extends StObject {
     
-    var allowAsync: js.UndefOr[Boolean] = js.native
+    var allowAsync: js.UndefOr[Boolean] = js.undefined
     
-    var settings: js.UndefOr[Twigoptions] = js.native
+    var settings: js.UndefOr[Twigoptions] = js.undefined
   }
   object RenderOptions {
     
@@ -238,35 +228,35 @@ object mod {
     def importMacros(file: String): Template = js.native
     
     def render(): String = js.native
-    def render(context: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], allow_async: Boolean): String | js.Promise[String] = js.native
-    def render(context: js.UndefOr[scala.Nothing], params: js.Any): String = js.native
-    def render(context: js.UndefOr[scala.Nothing], params: js.Any, allow_async: Boolean): String | js.Promise[String] = js.native
     def render(context: js.Any): String = js.native
-    def render(context: js.Any, params: js.UndefOr[scala.Nothing], allow_async: Boolean): String | js.Promise[String] = js.native
     def render(context: js.Any, params: js.Any): String = js.native
     def render(context: js.Any, params: js.Any, allow_async: Boolean): String | js.Promise[String] = js.native
+    def render(context: js.Any, params: Unit, allow_async: Boolean): String | js.Promise[String] = js.native
+    def render(context: Unit, params: js.Any): String = js.native
+    def render(context: Unit, params: js.Any, allow_async: Boolean): String | js.Promise[String] = js.native
+    def render(context: Unit, params: Unit, allow_async: Boolean): String | js.Promise[String] = js.native
     
     def renderAsync(): js.Promise[String] = js.native
-    def renderAsync(context: js.UndefOr[scala.Nothing], params: js.Any): js.Promise[String] = js.native
     def renderAsync(context: js.Any): js.Promise[String] = js.native
     def renderAsync(context: js.Any, params: js.Any): js.Promise[String] = js.native
+    def renderAsync(context: Unit, params: js.Any): js.Promise[String] = js.native
     
     @JSName("render")
     def render_Union(): String | js.Promise[String] = js.native
-    @JSName("render")
-    def render_Union(context: js.UndefOr[scala.Nothing], params: js.Any): String | js.Promise[String] = js.native
     @JSName("render")
     def render_Union(context: js.Any): String | js.Promise[String] = js.native
     @JSName("render")
     def render_Union(context: js.Any, params: js.Any): String | js.Promise[String] = js.native
     @JSName("render")
-    def render_false(context: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], allow_async: `false`): String = js.native
-    @JSName("render")
-    def render_false(context: js.UndefOr[scala.Nothing], params: js.Any, allow_async: `false`): String = js.native
-    @JSName("render")
-    def render_false(context: js.Any, params: js.UndefOr[scala.Nothing], allow_async: `false`): String = js.native
+    def render_Union(context: Unit, params: js.Any): String | js.Promise[String] = js.native
     @JSName("render")
     def render_false(context: js.Any, params: js.Any, allow_async: `false`): String = js.native
+    @JSName("render")
+    def render_false(context: js.Any, params: Unit, allow_async: `false`): String = js.native
+    @JSName("render")
+    def render_false(context: Unit, params: js.Any, allow_async: `false`): String = js.native
+    @JSName("render")
+    def render_false(context: Unit, params: Unit, allow_async: `false`): String = js.native
     
     def reset(blocks: js.Any): Unit = js.native
   }

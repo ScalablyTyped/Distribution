@@ -2,19 +2,17 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuiteCreateModel extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var queryString: String = js.native
+  var queryString: String
   
-  var requirementIds: js.Array[Double] = js.native
+  var requirementIds: js.Array[Double]
   
-  var suiteType: String = js.native
+  var suiteType: String
 }
 object SuiteCreateModel {
   

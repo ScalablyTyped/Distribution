@@ -3,13 +3,11 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Firestore document.  Must not exceed 1 MiB - 4 bytes.
   */
-@js.native
 trait SchemaDocument extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaDocument extends StObject {
     * also be compared to values from other documents and the `read_time` of a
     * query.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The document&#39;s fields.  The map keys represent field names.  A simple
@@ -38,13 +36,13 @@ trait SchemaDocument extends StObject {
     * a `\`. For example, `` `x&amp;y` `` represents `x&amp;y` and ``
     * `bak\`tik` `` represents `` bak`tik ``.
     */
-  var fields: js.UndefOr[StringDictionary[SchemaValue]] = js.native
+  var fields: js.UndefOr[StringDictionary[SchemaValue]] = js.undefined
   
   /**
     * The resource name of the document, for example
     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time at which the document was last changed.  This value
@@ -52,7 +50,7 @@ trait SchemaDocument extends StObject {
     * each change to the document. It can also be compared to values from other
     * documents and the `read_time` of a query.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaDocument {
   

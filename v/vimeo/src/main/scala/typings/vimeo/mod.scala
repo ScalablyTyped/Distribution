@@ -2,7 +2,6 @@ package typings.vimeo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -67,7 +66,7 @@ object mod {
       videoUri: String,
       params: js.Object,
       completeCallback: UriCallback,
-      progressCallback: js.UndefOr[scala.Nothing],
+      progressCallback: Unit,
       errorCallback: ErrorCallback
     ): Unit = js.native
     /**
@@ -134,7 +133,7 @@ object mod {
     def upload(
       filePath: String,
       completeCallback: UriCallback,
-      progressCallback: js.UndefOr[scala.Nothing],
+      progressCallback: Unit,
       errorCallback: ErrorCallback
     ): Unit = js.native
     def upload(
@@ -147,7 +146,7 @@ object mod {
       filePath: String,
       params: js.Object,
       completeCallback: UriCallback,
-      progressCallback: js.UndefOr[scala.Nothing],
+      progressCallback: Unit,
       errorCallback: ErrorCallback
     ): Unit = js.native
     /**
@@ -187,16 +186,15 @@ object mod {
   
   type ProgressCallback = js.Function2[/* bytesUploaded */ Double, /* bytesTotal */ Double, Unit]
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var method: String = js.native
+    var method: String
     
-    var path: String = js.native
+    var path: String
     
-    var query: js.UndefOr[js.Object] = js.native
+    var query: js.UndefOr[js.Object] = js.undefined
   }
   object RequestOptions {
     

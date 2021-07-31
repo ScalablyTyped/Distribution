@@ -2,19 +2,19 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericSelectionListProperties width extend GenericObjectProperties
   */
-@js.native
-trait IGenericSelectionListProperties extends IGenericObjectProperties {
+trait IGenericSelectionListProperties
+  extends StObject
+     with IGenericObjectProperties {
   
   @JSName("qInfo")
-  var qInfo_IGenericSelectionListProperties: IGenericSelectionNxInfo = js.native
+  var qInfo_IGenericSelectionListProperties: IGenericSelectionNxInfo
   
-  var qSelectionObjectDef: js.Any = js.native
+  var qSelectionObjectDef: js.Any
 }
 object IGenericSelectionListProperties {
   

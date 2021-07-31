@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetAttributesRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetAttributesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetAttributesResponse extends StObject {
   
-  var paramsType: js.Array[GetAttributesRequest] = js.native
+  var paramsType: js.Array[GetAttributesRequest]
   
-  var returnType: GetAttributesResponse = js.native
+  var returnType: GetAttributesResponse
 }
 object ReturnTypeGetAttributesResponse {
   

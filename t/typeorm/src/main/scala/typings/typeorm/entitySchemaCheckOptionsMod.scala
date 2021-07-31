@@ -2,23 +2,21 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entitySchemaCheckOptionsMod {
   
-  @js.native
   trait EntitySchemaCheckOptions extends StObject {
     
     /**
       * Check expression.
       */
-    var expression: String = js.native
+    var expression: String
     
     /**
       * Check constraint name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object EntitySchemaCheckOptions {
     

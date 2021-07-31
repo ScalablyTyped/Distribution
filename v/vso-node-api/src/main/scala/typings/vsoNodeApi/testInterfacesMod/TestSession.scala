@@ -4,86 +4,84 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestSession extends StObject {
   
   /**
     * Area path of the test session
     */
-  var area: ShallowReference = js.native
+  var area: ShallowReference
   
   /**
     * Comments in the test session
     */
-  var comment: String = js.native
+  var comment: String
   
   /**
     * Duration of the session
     */
-  var endDate: Date = js.native
+  var endDate: Date
   
   /**
     * Id of the test session
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Last Updated By  Reference
     */
-  var lastUpdatedBy: IdentityRef = js.native
+  var lastUpdatedBy: IdentityRef
   
   /**
     * Last updated date
     */
-  var lastUpdatedDate: Date = js.native
+  var lastUpdatedDate: Date
   
   /**
     * Owner of the test session
     */
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
   /**
     * Project to which the test session belongs
     */
-  var project: ShallowReference = js.native
+  var project: ShallowReference
   
   /**
     * Generic store for test session data
     */
-  var propertyBag: PropertyBag = js.native
+  var propertyBag: PropertyBag
   
   /**
     * Revision of the test session
     */
-  var revision: Double = js.native
+  var revision: Double
   
   /**
     * Source of the test session
     */
-  var source: TestSessionSource = js.native
+  var source: TestSessionSource
   
   /**
     * Start date
     */
-  var startDate: Date = js.native
+  var startDate: Date
   
   /**
     * State of the test session
     */
-  var state: TestSessionState = js.native
+  var state: TestSessionState
   
   /**
     * Title of the test session
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Url of Test Session Resource
     */
-  var url: String = js.native
+  var url: String
 }
 object TestSession {
   

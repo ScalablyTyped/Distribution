@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRetentionSettingsResponse extends StObject {
   
   /**
     * The timestamp representing the time at which the specified items are permanently deleted, in ISO 8601 format.
     */
-  var InitiateDeletionTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var InitiateDeletionTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The retention settings.
     */
-  var RetentionSettings: js.UndefOr[typings.awsSdk.chimeMod.RetentionSettings] = js.native
+  var RetentionSettings: js.UndefOr[typings.awsSdk.chimeMod.RetentionSettings] = js.undefined
 }
 object PutRetentionSettingsResponse {
   

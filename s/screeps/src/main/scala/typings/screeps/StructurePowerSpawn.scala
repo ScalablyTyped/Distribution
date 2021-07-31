@@ -3,16 +3,15 @@ package typings.screeps
 import typings.screeps.anon.StoreRESOURCEENERGYRESOUR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Non-player structure. Contains power resource which can be obtained by
   * destroying the structure. Hits the attacker creep back on each attack.
   */
-@js.native
 trait StructurePowerSpawn
-  extends OwnedStructure[STRUCTURE_POWER_SPAWN]
+  extends StObject
+     with OwnedStructure[STRUCTURE_POWER_SPAWN]
      with AnyOwnedStructure
      with AnyStoreStructure
      with ConcreteStructure[js.Any] {
@@ -21,35 +20,35 @@ trait StructurePowerSpawn
     * The amount of energy containing in this structure.
     * @deprecated An alias for .store[RESOURCE_ENERGY].
     */
-  var energy: Double = js.native
+  var energy: Double
   
   /**
     * The total amount of energy this structure can contain.
     * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
     */
-  var energyCapacity: Double = js.native
+  var energyCapacity: Double
   
   /**
     * The amount of power containing in this structure.
     * @deprecated An alias for .store[RESOURCE_POWER].
     */
-  var power: Double = js.native
+  var power: Double
   
   /**
     * The total amount of power this structure can contain.
     * @deprecated An alias for .store.getCapacity(RESOURCE_POWER).
     */
-  var powerCapacity: Double = js.native
+  var powerCapacity: Double
   
   /**
     * Register power resource units into your account. Registered power allows to develop power creeps skills. Consumes 1 power resource unit and 50 energy resource units.
     */
-  def processPower(): ScreepsReturnCode = js.native
+  def processPower(): ScreepsReturnCode
   
   /**
     *
     */
-  var store: StoreRESOURCEENERGYRESOUR = js.native
+  var store: StoreRESOURCEENERGYRESOUR
 }
 object StructurePowerSpawn {
   

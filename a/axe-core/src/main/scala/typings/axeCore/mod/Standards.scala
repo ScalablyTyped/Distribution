@@ -3,19 +3,17 @@ package typings.axeCore.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Standards extends StObject {
   
-  var ariaAttrs: js.UndefOr[StringDictionary[AriaAttrs]] = js.native
+  var ariaAttrs: js.UndefOr[StringDictionary[AriaAttrs]] = js.undefined
   
-  var ariaRoles: js.UndefOr[StringDictionary[AriaRoles]] = js.native
+  var ariaRoles: js.UndefOr[StringDictionary[AriaRoles]] = js.undefined
   
-  var cssColors: js.UndefOr[StringDictionary[js.Array[Double]]] = js.native
+  var cssColors: js.UndefOr[StringDictionary[js.Array[Double]]] = js.undefined
   
-  var htmlElms: js.UndefOr[StringDictionary[HtmlElms]] = js.native
+  var htmlElms: js.UndefOr[StringDictionary[HtmlElms]] = js.undefined
 }
 object Standards {
   

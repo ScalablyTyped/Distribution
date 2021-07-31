@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.TpStateGetResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITpStateGetResponse extends StObject {
   
   /** TpStateGetResponse entries */
-  var entries: js.UndefOr[js.Array[ITpStateEntry] | Null] = js.native
+  var entries: js.UndefOr[js.Array[ITpStateEntry] | Null] = js.undefined
   
   /** TpStateGetResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object ITpStateGetResponse {
   

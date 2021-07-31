@@ -2,7 +2,6 @@ package typings.winrt.Windows.Storage.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait IndexedState extends StObject
 object IndexedState extends StObject {
   
   @js.native
-  sealed trait fullyIndexed extends IndexedState
+  sealed trait fullyIndexed
+    extends StObject
+       with IndexedState
   
   @js.native
-  sealed trait notIndexed extends IndexedState
+  sealed trait notIndexed
+    extends StObject
+       with IndexedState
   
   @js.native
-  sealed trait partiallyIndexed extends IndexedState
+  sealed trait partiallyIndexed
+    extends StObject
+       with IndexedState
   
   @js.native
-  sealed trait unknown extends IndexedState
+  sealed trait unknown
+    extends StObject
+       with IndexedState
 }

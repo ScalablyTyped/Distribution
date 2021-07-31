@@ -2,17 +2,15 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lexicon extends StObject {
   
-  var defaultCategory: String = js.native
+  var defaultCategory: String
   
-  def parseLexicon(data: String): Unit = js.native
+  def parseLexicon(data: String): Unit
   
-  def tagWord(word: String): js.Array[String] = js.native
+  def tagWord(word: String): js.Array[String]
 }
 object Lexicon {
   

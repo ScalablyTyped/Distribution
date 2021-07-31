@@ -2,32 +2,30 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpOwner extends StObject {
   
   /**
     * The autonomous system number (ASN) for the autonomous system that included the IP address.
     */
-  var asn: js.UndefOr[string] = js.native
+  var asn: js.UndefOr[string] = js.undefined
   
   /**
     * The organization identifier that's associated with the autonomous system number (ASN) for the autonomous system that included the IP address.
     */
-  var asnOrg: js.UndefOr[string] = js.native
+  var asnOrg: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the internet service provider (ISP) that owned the IP address.
     */
-  var isp: js.UndefOr[string] = js.native
+  var isp: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the organization that owned the IP address.
     */
   @JSName("org")
-  var org_ : js.UndefOr[string] = js.native
+  var org_ : js.UndefOr[string] = js.undefined
 }
 object IpOwner {
   

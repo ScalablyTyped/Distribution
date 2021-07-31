@@ -2,21 +2,19 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSubnetGroupsResponse extends StObject {
   
   /**
     * Provides an identifier to allow retrieval of paginated results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * An array of subnet groups. Each element in the array represents a single subnet group.
     */
-  var SubnetGroups: js.UndefOr[SubnetGroupList] = js.native
+  var SubnetGroups: js.UndefOr[SubnetGroupList] = js.undefined
 }
 object DescribeSubnetGroupsResponse {
   

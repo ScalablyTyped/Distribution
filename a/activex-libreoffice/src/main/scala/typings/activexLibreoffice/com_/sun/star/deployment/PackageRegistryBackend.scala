@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XCommandEnvironment
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * All {@link PackageRegistryBackend} objects are related to a {@link XPackageManager} instance.
   * @since OOo 2.0
   */
-@js.native
-trait PackageRegistryBackend extends XPackageRegistry {
+trait PackageRegistryBackend
+  extends StObject
+     with XPackageRegistry {
   
   /**
     * Creates a persistent registry.
@@ -22,13 +22,13 @@ trait PackageRegistryBackend extends XPackageRegistry {
     * @param cacheDirectory cache directory that the registry has to use
     * @param readOnly reflects whether writing to cache directory is allowed
     */
-  def createPersistent(context: String, cacheDirectory: String, readOnly: Boolean): Unit = js.native
+  def createPersistent(context: String, cacheDirectory: String, readOnly: Boolean): Unit
   
   /**
     * Creates a transient registry.
     * @param context context of registry, e.g. user, shared
     */
-  def createTransient(context: String): Unit = js.native
+  def createTransient(context: String): Unit
 }
 object PackageRegistryBackend {
   

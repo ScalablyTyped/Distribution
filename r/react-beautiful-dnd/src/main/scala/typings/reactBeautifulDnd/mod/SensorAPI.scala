@@ -3,23 +3,21 @@ package typings.reactBeautifulDnd.mod
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SensorAPI extends StObject {
   
-  def canGetLock(id: DraggableId): Boolean = js.native
+  def canGetLock(id: DraggableId): Boolean
   
-  def findClosestDraggableId(event: Event): DraggableId | Null = js.native
+  def findClosestDraggableId(event: Event): DraggableId | Null
   
-  def findOptionsForDraggable(id: DraggableId): DraggableOptions | Null = js.native
+  def findOptionsForDraggable(id: DraggableId): DraggableOptions | Null
   
-  def isLockClaimed(): Boolean = js.native
+  def isLockClaimed(): Boolean
   
-  var tryGetLock: TryGetLock = js.native
+  var tryGetLock: TryGetLock
   
-  def tryReleaseLock(): Unit = js.native
+  def tryReleaseLock(): Unit
 }
 object SensorAPI {
   

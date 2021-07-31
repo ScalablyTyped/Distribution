@@ -3,25 +3,23 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.editor.IMarkerData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeAction extends StObject {
   
-  var command: js.UndefOr[Command] = js.native
+  var command: js.UndefOr[Command] = js.undefined
   
-  var diagnostics: js.UndefOr[js.Array[IMarkerData]] = js.native
+  var diagnostics: js.UndefOr[js.Array[IMarkerData]] = js.undefined
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var edit: js.UndefOr[WorkspaceEdit] = js.native
+  var edit: js.UndefOr[WorkspaceEdit] = js.undefined
   
-  var isPreferred: js.UndefOr[Boolean] = js.native
+  var isPreferred: js.UndefOr[Boolean] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object CodeAction {
   

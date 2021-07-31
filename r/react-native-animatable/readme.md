@@ -10,9 +10,9 @@ Easy to use declarative transitions and animations for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-animatable |
 | Keywords           | react-native, react-component, react-native-component, react, mobile, ios, android, ui, fade, bounce, slide, animatable, transition, animation |
-| # releases         | 4 |
-| # dependents       | 160 |
-| # downloads        | 7827433 |
+| # releases         | 3 |
+| # dependents       | 178 |
+| # downloads        | 8984424 |
 | # stars            | 26 |
 
 ## Links

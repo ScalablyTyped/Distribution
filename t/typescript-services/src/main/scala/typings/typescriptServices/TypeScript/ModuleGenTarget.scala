@@ -2,7 +2,6 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait ModuleGenTarget extends StObject
 object ModuleGenTarget extends StObject {
   
   @js.native
-  sealed trait Asynchronous extends ModuleGenTarget
+  sealed trait Asynchronous
+    extends StObject
+       with ModuleGenTarget
   
   @js.native
-  sealed trait Synchronous extends ModuleGenTarget
+  sealed trait Synchronous
+    extends StObject
+       with ModuleGenTarget
   
   @js.native
-  sealed trait Unspecified extends ModuleGenTarget
+  sealed trait Unspecified
+    extends StObject
+       with ModuleGenTarget
 }

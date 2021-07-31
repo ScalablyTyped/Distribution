@@ -2,46 +2,44 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobBookmarkEntry extends StObject {
   
   /**
     * The attempt ID number.
     */
-  var Attempt: js.UndefOr[IntegerValue] = js.native
+  var Attempt: js.UndefOr[IntegerValue] = js.undefined
   
   /**
     * The bookmark itself.
     */
-  var JobBookmark: js.UndefOr[JsonValue] = js.native
+  var JobBookmark: js.UndefOr[JsonValue] = js.undefined
   
   /**
     * The name of the job in question.
     */
-  var JobName: js.UndefOr[typings.awsSdk.glueMod.JobName] = js.native
+  var JobName: js.UndefOr[typings.awsSdk.glueMod.JobName] = js.undefined
   
   /**
     * The unique run identifier associated with the previous job run.
     */
-  var PreviousRunId: js.UndefOr[RunId] = js.native
+  var PreviousRunId: js.UndefOr[RunId] = js.undefined
   
   /**
     * The run ID number.
     */
-  var Run: js.UndefOr[IntegerValue] = js.native
+  var Run: js.UndefOr[IntegerValue] = js.undefined
   
   /**
     * The run ID number.
     */
-  var RunId: js.UndefOr[typings.awsSdk.glueMod.RunId] = js.native
+  var RunId: js.UndefOr[typings.awsSdk.glueMod.RunId] = js.undefined
   
   /**
     * The version of the job.
     */
-  var Version: js.UndefOr[IntegerValue] = js.native
+  var Version: js.UndefOr[IntegerValue] = js.undefined
 }
 object JobBookmarkEntry {
   

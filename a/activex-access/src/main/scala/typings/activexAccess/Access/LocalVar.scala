@@ -2,22 +2,20 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalVar extends StObject {
   
   @JSName("Access.LocalVar_typekey")
-  var AccessDotLocalVar_typekey: LocalVar = js.native
+  var AccessDotLocalVar_typekey: LocalVar
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  var Value: js.Any = js.native
+  var Value: js.Any
   
-  var _Value: js.Any = js.native
+  var _Value: js.Any
 }
 object LocalVar {
   

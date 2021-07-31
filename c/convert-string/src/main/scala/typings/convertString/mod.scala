@@ -2,30 +2,33 @@ package typings.convertString
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object convertString {
     
+    @JSImport("convert-string", "convertString")
+    @js.native
+    val ^ : js.Any = js.native
+    
     object UTF8 {
       
-      @JSImport("convert-string", "convertString.UTF8.bytesToString")
+      @JSImport("convert-string", "convertString.UTF8")
       @js.native
-      def bytesToString(bytes: js.Array[Double]): String = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("convert-string", "convertString.UTF8.stringToBytes")
-      @js.native
-      def stringToBytes(str: String): js.Array[Double] = js.native
+      @scala.inline
+      def bytesToString(bytes: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToString")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      @scala.inline
+      def stringToBytes(str: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     }
     
-    @JSImport("convert-string", "convertString.bytesToString")
-    @js.native
-    def bytesToString(bytes: js.Array[Double]): String = js.native
+    @scala.inline
+    def bytesToString(bytes: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToString")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("convert-string", "convertString.stringToBytes")
-    @js.native
-    def stringToBytes(str: String): js.Array[Double] = js.native
+    @scala.inline
+    def stringToBytes(str: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   }
 }

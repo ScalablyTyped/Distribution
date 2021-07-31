@@ -5,56 +5,51 @@ import typings.node.streamMod.TransformCallback
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("parallel-transform", JSImport.Namespace)
-  @js.native
-  def apply(maxParallel: Double, opts: js.UndefOr[scala.Nothing], ontransform: OnTransform): Transform = js.native
-  @JSImport("parallel-transform", JSImport.Namespace)
-  @js.native
-  def apply(maxParallel: Double, opts: Null, ontransform: OnTransform): Transform = js.native
-  @JSImport("parallel-transform", JSImport.Namespace)
-  @js.native
-  def apply(maxParallel: Double, opts: Options, ontransform: OnTransform): Transform = js.native
-  @JSImport("parallel-transform", JSImport.Namespace)
-  @js.native
-  def apply(ontransform: OnTransform): Transform = js.native
-  @JSImport("parallel-transform", JSImport.Namespace)
-  @js.native
-  def apply(opts: js.UndefOr[scala.Nothing], ontransform: OnTransform): Transform = js.native
-  @JSImport("parallel-transform", JSImport.Namespace)
-  @js.native
-  def apply(opts: Double, ontransform: OnTransform): Transform = js.native
-  @JSImport("parallel-transform", JSImport.Namespace)
-  @js.native
-  def apply(opts: Null, ontransform: OnTransform): Transform = js.native
-  @JSImport("parallel-transform", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options, ontransform: OnTransform): Transform = js.native
+  @scala.inline
+  def apply(maxParallel: Double, opts: Null, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(maxParallel.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(maxParallel: Double, opts: Unit, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(maxParallel.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(maxParallel: Double, opts: Options, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(maxParallel.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(ontransform: OnTransform): Transform = ^.asInstanceOf[js.Dynamic].apply(ontransform.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Double, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Null, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Unit, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Options, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("parallel-transform", JSImport.Namespace)
   @js.native
   class ^ protected () extends Transform {
     def this(ontransform: OnTransform) = this()
-    def this(opts: js.UndefOr[scala.Nothing], ontransform: OnTransform) = this()
     def this(opts: Double, ontransform: OnTransform) = this()
     def this(opts: Null, ontransform: OnTransform) = this()
+    def this(opts: Unit, ontransform: OnTransform) = this()
     def this(opts: Options, ontransform: OnTransform) = this()
-    def this(maxParallel: Double, opts: js.UndefOr[scala.Nothing], ontransform: OnTransform) = this()
     def this(maxParallel: Double, opts: Null, ontransform: OnTransform) = this()
+    def this(maxParallel: Double, opts: Unit, ontransform: OnTransform) = this()
     def this(maxParallel: Double, opts: Options, ontransform: OnTransform) = this()
   }
+  @JSImport("parallel-transform", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   type OnTransform = js.Function2[/* chunk */ js.Any, /* callback */ TransformCallback, Unit]
   
-  @js.native
-  trait Options extends TransformOptions {
+  trait Options
+    extends StObject
+       with TransformOptions {
     
-    var ordered: js.UndefOr[Boolean] = js.native
+    var ordered: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

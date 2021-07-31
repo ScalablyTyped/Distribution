@@ -2,19 +2,17 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Architecture extends StObject {
   
-  var architecture: String = js.native
+  var architecture: String
   
-  var download_url: String = js.native
+  var download_url: String
   
-  var filename: String = js.native
+  var filename: String
   
-  var os: String = js.native
+  var os: String
 }
 object Architecture {
   

@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlScheduledMaintenance extends StObject {
   
-  var canDefer: js.UndefOr[Boolean] = js.native
+  var canDefer: js.UndefOr[Boolean] = js.undefined
   
   /** If the scheduled maintenance can be rescheduled. */
-  var canReschedule: js.UndefOr[Boolean] = js.native
+  var canReschedule: js.UndefOr[Boolean] = js.undefined
   
   /** The start time of any upcoming scheduled maintenance for this instance. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SqlScheduledMaintenance {
   

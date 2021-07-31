@@ -2,19 +2,17 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoSetModify extends StObject {
   
-  var noSetFullAccess: js.UndefOr[Boolean] = js.native
+  var noSetFullAccess: js.UndefOr[Boolean] = js.undefined
   
-  var noSetModify: js.UndefOr[Boolean] = js.native
+  var noSetModify: js.UndefOr[Boolean] = js.undefined
   
-  var noSetReadOnly: js.UndefOr[Boolean] = js.native
+  var noSetReadOnly: js.UndefOr[Boolean] = js.undefined
   
-  var noSetReadPlusActivity: js.UndefOr[Boolean] = js.native
+  var noSetReadPlusActivity: js.UndefOr[Boolean] = js.undefined
 }
 object NoSetModify {
   

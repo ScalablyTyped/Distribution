@@ -6,7 +6,6 @@ import typings.ts3NodejsLibrary.contextMod.SelectType.SID
 import typings.ts3NodejsLibrary.ts3NodejsLibraryNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
@@ -18,27 +17,32 @@ object contextMod {
   object SelectType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SelectType with Double] = js.native
+    def apply(value: Double): js.UndefOr[SelectType & Double] = js.native
     
     @js.native
-    sealed trait NONE extends SelectType
-    /* 0 */ val NONE: typings.ts3NodejsLibrary.contextMod.SelectType.NONE with Double = js.native
+    sealed trait NONE
+      extends StObject
+         with SelectType
+    /* 0 */ val NONE: typings.ts3NodejsLibrary.contextMod.SelectType.NONE & Double = js.native
     
     @js.native
-    sealed trait PORT extends SelectType
-    /* 2 */ val PORT: typings.ts3NodejsLibrary.contextMod.SelectType.PORT with Double = js.native
+    sealed trait PORT
+      extends StObject
+         with SelectType
+    /* 2 */ val PORT: typings.ts3NodejsLibrary.contextMod.SelectType.PORT & Double = js.native
     
     @js.native
-    sealed trait SID extends SelectType
-    /* 1 */ val SID: typings.ts3NodejsLibrary.contextMod.SelectType.SID with Double = js.native
+    sealed trait SID
+      extends StObject
+         with SelectType
+    /* 1 */ val SID: typings.ts3NodejsLibrary.contextMod.SelectType.SID & Double = js.native
   }
   
-  @js.native
   trait ActiveEvent extends StObject {
     
-    var event: String = js.native
+    var event: String
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object ActiveEvent {
     
@@ -62,16 +66,15 @@ object contextMod {
     }
   }
   
-  @js.native
   trait BaseContext extends StObject {
     
-    var clientNickname: js.UndefOr[String] = js.native
+    var clientNickname: js.UndefOr[String] = js.undefined
     
-    var events: js.Array[ActiveEvent] = js.native
+    var events: js.Array[ActiveEvent]
     
-    var login: js.UndefOr[LoginInfo] = js.native
+    var login: js.UndefOr[LoginInfo] = js.undefined
     
-    var selectType: SelectType = js.native
+    var selectType: SelectType
   }
   object BaseContext {
     
@@ -116,8 +119,8 @@ object contextMod {
   object Context {
     
     @scala.inline
-    def SelectNoneContext(events: js.Array[ActiveEvent], selectType: NONE, selected: `0`): typings.ts3NodejsLibrary.contextMod.SelectNoneContext = {
-      val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    def SelectNoneContext(events: js.Array[ActiveEvent], selectType: NONE): typings.ts3NodejsLibrary.contextMod.SelectNoneContext = {
+      val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = 0)
       __obj.asInstanceOf[typings.ts3NodejsLibrary.contextMod.SelectNoneContext]
     }
     
@@ -134,12 +137,11 @@ object contextMod {
     }
   }
   
-  @js.native
   trait LoginInfo extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object LoginInfo {
     
@@ -160,21 +162,21 @@ object contextMod {
     }
   }
   
-  @js.native
   trait SelectNoneContext
-    extends BaseContext
+    extends StObject
+       with BaseContext
        with Context {
     
     @JSName("selectType")
-    var selectType_SelectNoneContext: NONE = js.native
+    var selectType_SelectNoneContext: NONE
     
-    var selected: `0` = js.native
+    var selected: `0`
   }
   object SelectNoneContext {
     
     @scala.inline
-    def apply(events: js.Array[ActiveEvent], selectType: NONE, selected: `0`): SelectNoneContext = {
-      val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    def apply(events: js.Array[ActiveEvent], selectType: NONE): SelectNoneContext = {
+      val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = 0)
       __obj.asInstanceOf[SelectNoneContext]
     }
     
@@ -189,15 +191,15 @@ object contextMod {
     }
   }
   
-  @js.native
   trait SelectPortContext
-    extends BaseContext
+    extends StObject
+       with BaseContext
        with Context {
     
     @JSName("selectType")
-    var selectType_SelectPortContext: PORT = js.native
+    var selectType_SelectPortContext: PORT
     
-    var selected: Double = js.native
+    var selected: Double
   }
   object SelectPortContext {
     
@@ -218,15 +220,15 @@ object contextMod {
     }
   }
   
-  @js.native
   trait SelectSidContext
-    extends BaseContext
+    extends StObject
+       with BaseContext
        with Context {
     
     @JSName("selectType")
-    var selectType_SelectSidContext: SID = js.native
+    var selectType_SelectSidContext: SID
     
-    var selected: String = js.native
+    var selected: String
   }
   object SelectSidContext {
     

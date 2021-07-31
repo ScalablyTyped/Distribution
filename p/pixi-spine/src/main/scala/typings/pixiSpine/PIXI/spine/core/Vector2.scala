@@ -2,21 +2,19 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Vector2 extends StObject {
   
-  def length(): Double = js.native
+  def length(): Double
   
-  def normalize(): this.type = js.native
+  def normalize(): this.type
   
-  def set(x: Double, y: Double): Vector2 = js.native
+  def set(x: Double, y: Double): Vector2
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Vector2 {
   

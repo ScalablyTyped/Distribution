@@ -2,15 +2,16 @@ package typings.soundexCode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(value: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("soundex-code", JSImport.Namespace)
   @js.native
-  def apply(value: String): String = js.native
-  @JSImport("soundex-code", JSImport.Namespace)
-  @js.native
-  def apply(value: String, maxLength: Double): String = js.native
+  val ^ : js.Any = js.native
 }

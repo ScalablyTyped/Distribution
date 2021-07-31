@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TouchEventInit extends EventModifierInit {
+trait TouchEventInit
+  extends StObject
+     with EventModifierInit {
   
-  var changedTouches: js.UndefOr[js.Array[Touch]] = js.native
+  var changedTouches: js.UndefOr[js.Array[Touch]] = js.undefined
   
-  var targetTouches: js.UndefOr[js.Array[Touch]] = js.native
+  var targetTouches: js.UndefOr[js.Array[Touch]] = js.undefined
   
-  var touches: js.UndefOr[js.Array[Touch]] = js.native
+  var touches: js.UndefOr[js.Array[Touch]] = js.undefined
 }
 object TouchEventInit {
   

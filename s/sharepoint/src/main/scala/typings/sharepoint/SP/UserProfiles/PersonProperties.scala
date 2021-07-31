@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sharepoint.SP.ClientObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents user properties. */
 @js.native
-trait PersonProperties extends ClientObject {
+trait PersonProperties
+  extends StObject
+     with ClientObject {
   
   /** Specifies the person's account name */
   def get_accountName(): String = js.native

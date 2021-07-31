@@ -2,10 +2,8 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Managedschema extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Managedschema extends StObject {
     * @see ManagedSchema for schema content typings
     * @see[Docs and Schema Format]{@link https://developer.chrome.com/apps/manifest/storage}
     */
-  var managed_schema: String = js.native
+  var managed_schema: String
 }
 object Managedschema {
   

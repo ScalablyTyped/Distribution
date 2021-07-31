@@ -6,14 +6,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.readingchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides an interface for a pedometer to measure the number of steps taken. */
 @js.native
 trait Pedometer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readingchanged(`type`: readingchanged, listener: TypedEventHandler[Pedometer, PedometerReadingChangedEventArgs]): Unit = js.native
   
@@ -27,7 +26,7 @@ trait Pedometer extends StObject {
   var minimumReportInterval: Double = js.native
   
   /** Occurs each time the pedometer reports a new value. */
-  def onreadingchanged(ev: PedometerReadingChangedEventArgs with WinRTEvent[Pedometer]): Unit = js.native
+  def onreadingchanged(ev: PedometerReadingChangedEventArgs & WinRTEvent[Pedometer]): Unit = js.native
   /** Occurs each time the pedometer reports a new value. */
   @JSName("onreadingchanged")
   var onreadingchanged_Original: TypedEventHandler[Pedometer, PedometerReadingChangedEventArgs] = js.native
@@ -35,7 +34,7 @@ trait Pedometer extends StObject {
   /** Gets the power that the sensor consumes. */
   var powerInMilliwatts: Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(`type`: readingchanged, listener: TypedEventHandler[Pedometer, PedometerReadingChangedEventArgs]): Unit = js.native
   

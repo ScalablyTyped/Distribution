@@ -2,7 +2,6 @@ package typings.iitc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panesMod {
@@ -15,12 +14,10 @@ object panesMod {
     @scala.inline
     def currentPane_=(x: String): Unit = js.Dynamic.global.updateDynamic("currentPane")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("hideall")
-    @js.native
-    def hideall(): Unit = js.native
+    @scala.inline
+    def hideall(): Unit = js.Dynamic.global.applyDynamic("hideall")().asInstanceOf[Unit]
     
-    @JSGlobal("show")
-    @js.native
-    def show(id: String): Unit = js.native
+    @scala.inline
+    def show(id: String): Unit = js.Dynamic.global.applyDynamic("show")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

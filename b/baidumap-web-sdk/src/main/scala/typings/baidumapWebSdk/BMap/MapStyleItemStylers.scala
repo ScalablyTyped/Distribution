@@ -3,26 +3,25 @@ package typings.baidumapWebSdk.BMap
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapStyleItemStylers
-  extends /* k */ StringDictionary[js.UndefOr[String]] {
+  extends StObject
+     with /* k */ StringDictionary[js.UndefOr[String]] {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var curZoomRegion: js.UndefOr[String] = js.native
+  var curZoomRegion: js.UndefOr[String] = js.undefined
   
-  var curZoomRegionId: js.UndefOr[String] = js.native
+  var curZoomRegionId: js.UndefOr[String] = js.undefined
   
-  var fontsize: js.UndefOr[String] = js.native
+  var fontsize: js.UndefOr[String] = js.undefined
   
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
   
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
   
-  var weight: js.UndefOr[String] = js.native
+  var weight: js.UndefOr[String] = js.undefined
 }
 object MapStyleItemStylers {
   

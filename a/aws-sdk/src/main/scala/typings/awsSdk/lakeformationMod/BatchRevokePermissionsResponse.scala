@@ -2,16 +2,14 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchRevokePermissionsResponse extends StObject {
   
   /**
     * A list of failures to revoke permissions to the resources.
     */
-  var Failures: js.UndefOr[BatchPermissionsFailureList] = js.native
+  var Failures: js.UndefOr[BatchPermissionsFailureList] = js.undefined
 }
 object BatchRevokePermissionsResponse {
   

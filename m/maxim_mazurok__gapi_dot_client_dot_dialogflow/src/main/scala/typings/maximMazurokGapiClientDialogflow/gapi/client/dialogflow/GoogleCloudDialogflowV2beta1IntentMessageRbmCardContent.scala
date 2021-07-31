@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent extends StObject {
   
   /** Optional. Description of the card (at most 2000 bytes). At least one of the title, description or media must be set. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Optional. However at least one of the title, description or media must be set. Media (image, GIF or a video) to include in the card. */
-  var media: js.UndefOr[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia] = js.native
+  var media: js.UndefOr[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia] = js.undefined
   
   /** Optional. List of suggestions to include in the card. */
-  var suggestions: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion]] = js.native
+  var suggestions: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion]] = js.undefined
   
   /** Optional. Title of the card (at most 200 bytes). At least one of the title, description or media must be set. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent {
   

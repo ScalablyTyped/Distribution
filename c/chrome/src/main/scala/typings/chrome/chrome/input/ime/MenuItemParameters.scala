@@ -2,15 +2,13 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuItemParameters extends StObject {
   
-  var engineId: String = js.native
+  var engineId: String
   
-  var items: js.Array[js.Object] = js.native
+  var items: js.Array[js.Object]
 }
 object MenuItemParameters {
   

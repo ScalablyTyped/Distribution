@@ -2,13 +2,13 @@ package typings.typescriptServices.global.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.Debug")
 @js.native
 class Debug ()
-  extends typings.typescriptServices.TypeScript.Debug
+  extends StObject
+     with typings.typescriptServices.TypeScript.Debug
 object Debug {
   
   @JSGlobal("TypeScript.Debug")
@@ -16,18 +16,14 @@ object Debug {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("TypeScript.Debug.assert")
-  @js.native
-  def assert(expression: js.Any): Unit = js.native
-  @JSGlobal("TypeScript.Debug.assert")
-  @js.native
-  def assert(expression: js.Any, message: js.UndefOr[scala.Nothing], verboseDebugInfo: js.Function0[String]): Unit = js.native
-  @JSGlobal("TypeScript.Debug.assert")
-  @js.native
-  def assert(expression: js.Any, message: String): Unit = js.native
-  @JSGlobal("TypeScript.Debug.assert")
-  @js.native
-  def assert(expression: js.Any, message: String, verboseDebugInfo: js.Function0[String]): Unit = js.native
+  @scala.inline
+  def assert(expression: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def assert(expression: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def assert(expression: js.Any, message: String, verboseDebugInfo: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any], verboseDebugInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def assert(expression: js.Any, message: Unit, verboseDebugInfo: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any], verboseDebugInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   @JSGlobal("TypeScript.Debug.currentAssertionLevel")
@@ -37,15 +33,12 @@ object Debug {
   def currentAssertionLevel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentAssertionLevel")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("TypeScript.Debug.fail")
-  @js.native
-  def fail(): Unit = js.native
-  @JSGlobal("TypeScript.Debug.fail")
-  @js.native
-  def fail(message: String): Unit = js.native
+  @scala.inline
+  def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]
+  @scala.inline
+  def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("TypeScript.Debug.shouldAssert")
-  @js.native
-  def shouldAssert(level: typings.typescriptServices.TypeScript.AssertionLevel): Boolean = js.native
+  @scala.inline
+  def shouldAssert(level: typings.typescriptServices.TypeScript.AssertionLevel): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldAssert")(level.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

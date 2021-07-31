@@ -3,24 +3,23 @@ package typings.baiduApp.swan.ai
 import typings.baiduApp.swan.BaseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 自定义图像审核。
   */
-@js.native
 trait imageAuditOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var image: String = js.native
+  var image: String
   
   // 图像资源地址
-  var imgUrl: js.UndefOr[String] = js.native
+  var imgUrl: js.UndefOr[String] = js.undefined
   
   // 网图URL地址，以网图形式请求，图片Url需要做UrlEncode，不能与image并存。
   @JSName("success")
-  var success_imageAuditOptions: js.UndefOr[js.Function1[/* res */ imageAuditResponse, Unit]] = js.native
+  var success_imageAuditOptions: js.UndefOr[js.Function1[/* res */ imageAuditResponse, Unit]] = js.undefined
 }
 object imageAuditOptions {
   

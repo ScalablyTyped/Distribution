@@ -3,18 +3,16 @@ package typings.uiGrid.mod
 import typings.uiGrid.anon.ColumnPositionChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moveColumns {
   
-  @js.native
   trait IColumnDef extends StObject {
     
     /**
       * Enable column moving for the column
       */
-    var enableColumnMoving: js.UndefOr[Boolean] = js.native
+    var enableColumnMoving: js.UndefOr[Boolean] = js.undefined
   }
   object IColumnDef {
     
@@ -35,7 +33,6 @@ object moveColumns {
     }
   }
   
-  @js.native
   trait IGridMoveColumnsApi extends StObject {
     
     // Methods
@@ -44,10 +41,10 @@ object moveColumns {
       * @param {number} originalPosition Original column position as a 0 indexed integer
       * @param {number} newPosition New column position as a 0 indexed integer
       */
-    def moveColumn(originalPosition: Double, newPosition: Double): Unit = js.native
+    def moveColumn(originalPosition: Double, newPosition: Double): Unit
     
     // Events
-    var on: ColumnPositionChanged = js.native
+    var on: ColumnPositionChanged
   }
   object IGridMoveColumnsApi {
     
@@ -68,7 +65,6 @@ object moveColumns {
     }
   }
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
@@ -77,7 +73,7 @@ object moveColumns {
       * Defaults to true.
       * @default true
       */
-    var enableColumnMoving: js.UndefOr[Boolean] = js.native
+    var enableColumnMoving: js.UndefOr[Boolean] = js.undefined
   }
   object IGridOptions {
     

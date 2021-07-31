@@ -3,85 +3,83 @@ package typings.zui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatetimepickerOptions extends StObject {
   
-  var autoclose: js.UndefOr[Double | Boolean] = js.native
+  var autoclose: js.UndefOr[Double | Boolean] = js.undefined
   
-  var calendarWeeks: js.UndefOr[Boolean] = js.native
+  var calendarWeeks: js.UndefOr[Boolean] = js.undefined
   
-  var collapse: js.UndefOr[Boolean] = js.native
+  var collapse: js.UndefOr[Boolean] = js.undefined
   
-  var daysOfWeekDisabled: js.UndefOr[js.Array[Double]] = js.native
+  var daysOfWeekDisabled: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var defaultDate: js.UndefOr[Date | String | js.Any] = js.native
+  var defaultDate: js.UndefOr[Date | String | js.Any] = js.undefined
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var disabledDates: js.UndefOr[js.Array[Date | String | js.Object]] = js.native
+  var disabledDates: js.UndefOr[js.Array[Date | String | js.Object]] = js.undefined
   
-  var enabledDates: js.UndefOr[js.Array[Date | String | js.Object]] = js.native
+  var enabledDates: js.UndefOr[js.Array[Date | String | js.Object]] = js.undefined
   
-  var forceParse: js.UndefOr[Double | Boolean] = js.native
+  var forceParse: js.UndefOr[Double | Boolean] = js.undefined
   
-  var format: js.UndefOr[String | Boolean] = js.native
+  var format: js.UndefOr[String | Boolean] = js.undefined
   
-  var icons: js.UndefOr[DatetimepickerIcons] = js.native
+  var icons: js.UndefOr[DatetimepickerIcons] = js.undefined
   
-  var ignoreReadonly: js.UndefOr[Boolean] = js.native
+  var ignoreReadonly: js.UndefOr[Boolean] = js.undefined
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var maxDate: js.UndefOr[Date | String | js.Any] = js.native
+  var maxDate: js.UndefOr[Date | String | js.Any] = js.undefined
   
-  var maxView: js.UndefOr[Double] = js.native
+  var maxView: js.UndefOr[Double] = js.undefined
   
-  var minDate: js.UndefOr[Date | String | js.Any] = js.native
+  var minDate: js.UndefOr[Date | String | js.Any] = js.undefined
   
-  var minView: js.UndefOr[Double] = js.native
+  var minView: js.UndefOr[Double] = js.undefined
   
-  var minuteStepping: js.UndefOr[Double] = js.native
+  var minuteStepping: js.UndefOr[Double] = js.undefined
   
-  var pickDate: js.UndefOr[Boolean] = js.native
+  var pickDate: js.UndefOr[Boolean] = js.undefined
   
-  var pickTime: js.UndefOr[Boolean] = js.native
+  var pickTime: js.UndefOr[Boolean] = js.undefined
   
-  var showClear: js.UndefOr[Boolean] = js.native
+  var showClear: js.UndefOr[Boolean] = js.undefined
   
-  var showMeridian: js.UndefOr[Boolean | Double] = js.native
+  var showMeridian: js.UndefOr[Boolean | Double] = js.undefined
   
-  var showToday: js.UndefOr[Boolean] = js.native
+  var showToday: js.UndefOr[Boolean] = js.undefined
   
-  var showTodayButton: js.UndefOr[Boolean] = js.native
+  var showTodayButton: js.UndefOr[Boolean] = js.undefined
   
-  var sideBySide: js.UndefOr[Boolean] = js.native
+  var sideBySide: js.UndefOr[Boolean] = js.undefined
   
-  var startView: js.UndefOr[Double] = js.native
+  var startView: js.UndefOr[Double] = js.undefined
   
-  var todayBtn: js.UndefOr[Double | Boolean] = js.native
+  var todayBtn: js.UndefOr[Double | Boolean] = js.undefined
   
-  var todayHighlight: js.UndefOr[Double | Boolean] = js.native
+  var todayHighlight: js.UndefOr[Double | Boolean] = js.undefined
   
-  var toolbarPlacement: js.UndefOr[String] = js.native
+  var toolbarPlacement: js.UndefOr[String] = js.undefined
   
-  var useCurrent: js.UndefOr[Boolean] = js.native
+  var useCurrent: js.UndefOr[Boolean] = js.undefined
   
-  var useMinutes: js.UndefOr[Boolean] = js.native
+  var useMinutes: js.UndefOr[Boolean] = js.undefined
   
-  var useSeconds: js.UndefOr[Boolean] = js.native
+  var useSeconds: js.UndefOr[Boolean] = js.undefined
   
-  var useStrict: js.UndefOr[Boolean] = js.native
+  var useStrict: js.UndefOr[Boolean] = js.undefined
   
-  var viewMode: js.UndefOr[String] = js.native
+  var viewMode: js.UndefOr[String] = js.undefined
   
-  var weekStart: js.UndefOr[Double] = js.native
+  var weekStart: js.UndefOr[Double] = js.undefined
 }
 object DatetimepickerOptions {
   

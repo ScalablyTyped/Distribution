@@ -5,18 +5,18 @@ import typings.ckeditor.CKEDITOR.fileTools.fileLoader
 import typings.ckeditor.CKEDITOR.plugins.widget.definition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagebase {
   
-  @js.native
-  trait imageWidgetDefinition extends definition {
+  trait imageWidgetDefinition
+    extends StObject
+       with definition {
     
-    var features: js.Array[String] = js.native
+    var features: js.Array[String]
     
     @JSName("upcast")
-    var upcast_imageWidgetDefinition: String = js.native
+    var upcast_imageWidgetDefinition: String
   }
   object imageWidgetDefinition {
     
@@ -40,10 +40,11 @@ object imagebase {
     }
   }
   
-  @js.native
-  trait progressBar extends progressReporter {
+  trait progressBar
+    extends StObject
+       with progressReporter {
     
-    var bar: element = js.native
+    var bar: element
   }
   object progressBar {
     
@@ -70,22 +71,21 @@ object imagebase {
     }
   }
   
-  @js.native
   trait progressReporter extends StObject {
     
-    def aborted(): Unit = js.native
+    def aborted(): Unit
     
-    def bindLoader(loader: fileLoader): Unit = js.native
+    def bindLoader(loader: fileLoader): Unit
     
-    def done(): Unit = js.native
+    def done(): Unit
     
-    def failed(): Unit = js.native
+    def failed(): Unit
     
-    def remove(): Unit = js.native
+    def remove(): Unit
     
-    def updated(progress: Double): Unit = js.native
+    def updated(progress: Double): Unit
     
-    var wrapper: element = js.native
+    var wrapper: element
   }
   object progressReporter {
     

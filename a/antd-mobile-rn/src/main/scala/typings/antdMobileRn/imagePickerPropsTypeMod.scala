@@ -2,17 +2,15 @@ package typings.antdMobileRn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagePickerPropsTypeMod {
   
-  @js.native
   trait ImagePickerPropTypes extends StObject {
     
-    var files: js.UndefOr[js.Array[js.Object]] = js.native
+    var files: js.UndefOr[js.Array[js.Object]] = js.undefined
     
-    var onAddImageClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAddImageClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function3[
@@ -21,17 +19,17 @@ object imagePickerPropsTypeMod {
           /* index */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onFail: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var onFail: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
     
     var onImageClick: js.UndefOr[
         js.Function2[/* index */ js.UndefOr[Double], /* files */ js.UndefOr[js.Array[js.Object]], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var styles: js.UndefOr[js.Object] = js.native
+    var styles: js.UndefOr[js.Object] = js.undefined
   }
   object ImagePickerPropTypes {
     

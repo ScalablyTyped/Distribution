@@ -22,14 +22,13 @@ import typings.std.HTMLParagraphElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod {
   
   @JSImport("@react-md/typography/types/Text", "Text")
   @js.native
-  val Text: ForwardRefExoticComponent[TextProps with RefAttributes[TextElement]] = js.native
+  val Text: ForwardRefExoticComponent[TextProps & RefAttributes[TextElement]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdTypography.reactMdTypographyStrings.italic
@@ -117,13 +116,14 @@ object textMod {
   
   type TextElement = HTMLHeadingElement | HTMLParagraphElement | HTMLSpanElement | HTMLDivElement | HTMLButtonElement | HTMLAnchorElement | HTMLBodyElement | HTMLHtmlElement
   
-  @js.native
-  trait TextProps extends HTMLAttributes[TextElement] {
+  trait TextProps
+    extends StObject
+       with HTMLAttributes[TextElement] {
     
     /**
       * An optional text alignment to apply.
       */
-    var align: js.UndefOr[TextAlign] = js.native
+    var align: js.UndefOr[TextAlign] = js.undefined
     
     /**
       * Either a child render function or a react node. If this is not the child
@@ -131,7 +131,7 @@ object textMod {
       * `component` prop.
       */
     @JSName("children")
-    var children_TextProps: js.UndefOr[ReactNode | ClassNameCloneableChild[js.Object] | TextRenderFunction] = js.native
+    var children_TextProps: js.UndefOr[ReactNode | ClassNameCloneableChild[js.Object] | TextRenderFunction] = js.undefined
     
     /**
       * An optional text color to apply. Unline normal theme colors, these will
@@ -139,7 +139,7 @@ object textMod {
       * instead of the primary or secondary theme colors.
       */
     @JSName("color")
-    var color_TextProps: js.UndefOr[TextColor] = js.native
+    var color_TextProps: js.UndefOr[TextColor] = js.undefined
     
     /**
       * The component to render as when the children are not a render function. If
@@ -161,17 +161,17 @@ object textMod {
       * - `"button"     -> <button>`
       *
       */
-    var component: js.UndefOr[ElementType[_] | Null] = js.native
+    var component: js.UndefOr[ElementType[js.Any] | Null] = js.undefined
     
     /**
       * An optional text decoration to apply.
       */
-    var decoration: js.UndefOr[TextDecoration] = js.native
+    var decoration: js.UndefOr[TextDecoration] = js.undefined
     
     /**
       * An optional font-style to apply.
       */
-    var fontStyle: js.UndefOr[FontStyle] = js.native
+    var fontStyle: js.UndefOr[FontStyle] = js.undefined
     
     /**
       * Since the typography within react-md tries to not modify base elements, the
@@ -184,24 +184,24 @@ object textMod {
       * - top and bottom margin by setting this prop to `"none"`
       * - or keep the initial behavior: `"initial"`
       */
-    var margin: js.UndefOr[initial | none | top | bottom] = js.native
+    var margin: js.UndefOr[initial | none | top | bottom] = js.undefined
     
     /**
       * An optional text transformation to apply.
       */
-    var transform: js.UndefOr[TextTransform] = js.native
+    var transform: js.UndefOr[TextTransform] = js.undefined
     
     /**
       * One of the material design typography text styles. This is used to generate
       * a className that can be applied to any element and have the correct
       * typography.
       */
-    var `type`: js.UndefOr[TextTypes] = js.native
+    var `type`: js.UndefOr[TextTypes] = js.undefined
     
     /**
       * An optional font-weight to apply.
       */
-    var weight: js.UndefOr[TextWeight] = js.native
+    var weight: js.UndefOr[TextWeight] = js.undefined
   }
   object TextProps {
     
@@ -236,7 +236,7 @@ object textMod {
       def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
       @scala.inline
-      def setComponent(value: ElementType[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentNull: Self = StObject.set(x, "component", null)

@@ -2,18 +2,16 @@ package typings.semanticUiNag.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-nag.SemanticUI.Nag.ErrorSettings._Impl, keyof semantic-ui-nag.SemanticUI.Nag.ErrorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplMethod extends StObject {
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var noCookieStorage: js.UndefOr[String] = js.native
+  var noCookieStorage: js.UndefOr[String] = js.undefined
   
-  var noStorage: js.UndefOr[String] = js.native
+  var noStorage: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplMethod {
   

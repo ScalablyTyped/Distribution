@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Copy extends StObject {
   
-  var add: scala.Double = js.native
+  var add: scala.Double
   
-  var copy: scala.Double = js.native
+  var copy: scala.Double
   
-  var move: scala.Double = js.native
+  var move: scala.Double
   
-  var remove: scala.Double = js.native
+  var remove: scala.Double
   
-  var replace: scala.Double = js.native
+  var replace: scala.Double
   
-  var test: scala.Double = js.native
+  var test: scala.Double
 }
 object Copy {
   

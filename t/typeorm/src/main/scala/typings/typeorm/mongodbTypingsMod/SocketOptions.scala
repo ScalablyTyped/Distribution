@@ -2,36 +2,34 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketOptions extends StObject {
   
   /**
     * Reconnect on error.
     */
-  var autoReconnect: js.UndefOr[Boolean] = js.native
+  var autoReconnect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * TCP Connection timeout setting.
     */
-  var connectTimeoutMS: js.UndefOr[scala.Double] = js.native
+  var connectTimeoutMS: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * TCP KeepAlive on the socket with a X ms delay before start.
     */
-  var keepAlive: js.UndefOr[scala.Double] = js.native
+  var keepAlive: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * TCP Socket NoDelay option.
     */
-  var noDelay: js.UndefOr[Boolean] = js.native
+  var noDelay: js.UndefOr[Boolean] = js.undefined
   
   /**
     * TCP Socket timeout setting.
     */
-  var socketTimeoutMS: js.UndefOr[scala.Double] = js.native
+  var socketTimeoutMS: js.UndefOr[scala.Double] = js.undefined
 }
 object SocketOptions {
   

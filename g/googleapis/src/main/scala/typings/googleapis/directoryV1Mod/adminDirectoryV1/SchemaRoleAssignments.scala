@@ -2,32 +2,30 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON response template for List roleAssignments operation in Directory API.
   */
-@js.native
 trait SchemaRoleAssignments extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * A list of RoleAssignment resources.
     */
-  var items: js.UndefOr[js.Array[SchemaRoleAssignment]] = js.native
+  var items: js.UndefOr[js.Array[SchemaRoleAssignment]] = js.undefined
   
   /**
     * The type of the API resource. This is always
     * admin#directory#roleAssignments.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaRoleAssignments {
   

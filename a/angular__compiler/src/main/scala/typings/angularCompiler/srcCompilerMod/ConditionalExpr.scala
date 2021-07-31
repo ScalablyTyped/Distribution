@@ -2,7 +2,6 @@ package typings.angularCompiler.srcCompilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "ConditionalExpr")
@@ -21,13 +20,13 @@ class ConditionalExpr protected ()
   def this(
     condition: typings.angularCompiler.outputAstMod.Expression,
     trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: js.UndefOr[scala.Nothing],
+    falseCase: Null,
     `type`: typings.angularCompiler.outputAstMod.Type
   ) = this()
   def this(
     condition: typings.angularCompiler.outputAstMod.Expression,
     trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: Null,
+    falseCase: Unit,
     `type`: typings.angularCompiler.outputAstMod.Type
   ) = this()
   def this(
@@ -39,36 +38,15 @@ class ConditionalExpr protected ()
   def this(
     condition: typings.angularCompiler.outputAstMod.Expression,
     trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: js.UndefOr[scala.Nothing],
+    falseCase: Null,
     `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: js.UndefOr[scala.Nothing],
-    `type`: typings.angularCompiler.outputAstMod.Type,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
     condition: typings.angularCompiler.outputAstMod.Expression,
     trueCase: typings.angularCompiler.outputAstMod.Expression,
     falseCase: Null,
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: Null,
-    `type`: Null,
+    `type`: Unit,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
@@ -81,8 +59,22 @@ class ConditionalExpr protected ()
   def this(
     condition: typings.angularCompiler.outputAstMod.Expression,
     trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: typings.angularCompiler.outputAstMod.Expression,
-    `type`: js.UndefOr[scala.Nothing],
+    falseCase: Unit,
+    `type`: Null,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    condition: typings.angularCompiler.outputAstMod.Expression,
+    trueCase: typings.angularCompiler.outputAstMod.Expression,
+    falseCase: Unit,
+    `type`: Unit,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    condition: typings.angularCompiler.outputAstMod.Expression,
+    trueCase: typings.angularCompiler.outputAstMod.Expression,
+    falseCase: Unit,
+    `type`: typings.angularCompiler.outputAstMod.Type,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
@@ -90,6 +82,13 @@ class ConditionalExpr protected ()
     trueCase: typings.angularCompiler.outputAstMod.Expression,
     falseCase: typings.angularCompiler.outputAstMod.Expression,
     `type`: Null,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    condition: typings.angularCompiler.outputAstMod.Expression,
+    trueCase: typings.angularCompiler.outputAstMod.Expression,
+    falseCase: typings.angularCompiler.outputAstMod.Expression,
+    `type`: Unit,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(

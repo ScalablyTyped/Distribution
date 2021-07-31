@@ -2,51 +2,49 @@ package typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for google.longrunning.Operation results from
   * FirestoreAdmin.ImportDocuments.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta2ImportDocumentsMetadata extends StObject {
   
   /**
     * Which collection ids are being imported.
     */
-  var collectionIds: js.UndefOr[js.Array[String]] = js.native
+  var collectionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The time this operation completed. Will be unset if operation still in
     * progress.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * The location of the documents being imported.
     */
-  var inputUriPrefix: js.UndefOr[String] = js.native
+  var inputUriPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the import operation.
     */
-  var operationState: js.UndefOr[String] = js.native
+  var operationState: js.UndefOr[String] = js.undefined
   
   /**
     * The progress, in bytes, of this operation.
     */
-  var progressBytes: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2Progress] = js.native
+  var progressBytes: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2Progress] = js.undefined
   
   /**
     * The progress, in documents, of this operation.
     */
-  var progressDocuments: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2Progress] = js.native
+  var progressDocuments: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2Progress] = js.undefined
   
   /**
     * The time this operation started.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta2ImportDocumentsMetadata {
   

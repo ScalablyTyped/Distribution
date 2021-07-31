@@ -12,7 +12,7 @@ Tags input directive for AngularJS
 | Keywords           | angular, tags, tags-input |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 1196812 |
+| # downloads        | 1207303 |
 | # stars            | 4 |
 
 ## Links

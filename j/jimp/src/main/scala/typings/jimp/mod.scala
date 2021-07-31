@@ -46,19 +46,20 @@ import typings.std.Error
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("jimp", JSImport.Namespace)
   @js.native
-  val ^ : DepreciatedJimp = js.native
+  val ^ : js.Object & DepreciatedJimp = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("jimp", JSImport.Namespace)
   @js.native
-  class Class protected () extends DepreciatedJimp {
+  class Class protected ()
+    extends StObject
+       with DepreciatedJimp {
     // For custom constructors when using Jimp.appendConstructorOption
     def this(args: js.Any*) = this()
     def this(data: Bitmap) = this()
@@ -67,31 +68,30 @@ object mod extends Shortcut {
     // Constructors
     def this(path: String) = this()
     def this(urlOptions: URLOptions) = this()
-    def this(data: Bitmap, cb: ImageCallback[_]) = this()
-    def this(data: Buffer, cb: ImageCallback[_]) = this()
-    def this(image: DepreciatedJimp, cb: ImageCallback[_]) = this()
-    def this(path: String, cb: ImageCallback[_]) = this()
-    def this(urlOptions: URLOptions, cb: ImageCallback[_]) = this()
+    def this(data: Bitmap, cb: ImageCallback[js.Any]) = this()
+    def this(data: Buffer, cb: ImageCallback[js.Any]) = this()
+    def this(image: DepreciatedJimp, cb: ImageCallback[js.Any]) = this()
+    def this(path: String, cb: ImageCallback[js.Any]) = this()
+    def this(urlOptions: URLOptions, cb: ImageCallback[js.Any]) = this()
     def this(w: Double, h: Double) = this()
     def this(w: Double, h: Double, background: String) = this()
     def this(w: Double, h: Double, background: Double) = this()
-    def this(w: Double, h: Double, cb: ImageCallback[_]) = this()
-    def this(w: Double, h: Double, background: js.UndefOr[scala.Nothing], cb: ImageCallback[_]) = this()
-    def this(w: Double, h: Double, background: String, cb: ImageCallback[_]) = this()
-    def this(w: Double, h: Double, background: Double, cb: ImageCallback[_]) = this()
+    def this(w: Double, h: Double, cb: ImageCallback[js.Any]) = this()
+    def this(w: Double, h: Double, background: String, cb: ImageCallback[js.Any]) = this()
+    def this(w: Double, h: Double, background: Double, cb: ImageCallback[js.Any]) = this()
+    def this(w: Double, h: Double, background: Unit, cb: ImageCallback[js.Any]) = this()
   }
   
   /**
     * @deprecated Jimp typings for TS <3.1 are being depreciated. Please upgrade your TypeScript version
     */
-  @js.native
   trait Bitmap extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Bitmap {
     
@@ -115,14 +115,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait BlendMode extends StObject {
     
-    var mode: String = js.native
+    var mode: String
     
-    var opacityDest: Double = js.native
+    var opacityDest: Double
     
-    var opacitySource: Double = js.native
+    var opacitySource: Double
   }
   object BlendMode {
     
@@ -164,13 +163,12 @@ object mod extends Shortcut {
     def scan: typings.jimp.jimpStrings.scan = "scan".asInstanceOf[typings.jimp.jimpStrings.scan]
   }
   
-  @js.native
   trait ColorAction extends StObject {
     
     @JSName("apply")
-    var apply: ColorActionName = js.native
+    var apply: ColorActionName
     
-    var params: js.Any = js.native
+    var params: js.Any
   }
   object ColorAction {
     
@@ -234,7 +232,8 @@ object mod extends Shortcut {
     */
   @js.native
   trait DepreciatedJimp
-    extends // Constructors
+    extends StObject
+       with // Constructors
   // For custom constructors when using Jimp.appendConstructorOption
   Instantiable1[
           (/* args (repeated) */ js.Any) | (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ DepreciatedJimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
@@ -254,7 +253,7 @@ object mod extends Shortcut {
        with Instantiable4[
           /* w */ Double, 
           /* h */ Double, 
-          js.UndefOr[(/* background */ Double) | (/* background */ String)], 
+          (/* background */ Double) | (/* background */ String) | (/* background */ Unit), 
           /* cb */ ImageCallback[js.Any], 
           DepreciatedJimp
         ] {
@@ -389,48 +388,44 @@ object mod extends Shortcut {
       * it's not possible RN:
       * https://github.com/microsoft/TypeScript/issues/26113
       */
-    def appendConstructorOption[Args /* <: js.Array[_] */](
+    def appendConstructorOption[Args /* <: js.Array[js.Any] */](
       name: String,
       test: js.Function1[/* repeated */ js.Any, Boolean],
       run: js.ThisFunction3[
           /* this */ this.type, 
-          /* resolve */ js.Function1[/* jimp */ js.UndefOr[this.type], _], 
-          /* reject */ js.Function1[/* reason */ Error, _], 
+          /* resolve */ js.Function1[/* jimp */ js.UndefOr[this.type], js.Any], 
+          /* reject */ js.Function1[/* reason */ Error, js.Any], 
           /* repeated */ js.Any, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     
     def autocrop(): this.type = js.native
     def autocrop(cropOnlyFrames: Boolean): this.type = js.native
-    def autocrop(cropOnlyFrames: Boolean, cb: ImageCallback[_]): this.type = js.native
+    def autocrop(cropOnlyFrames: Boolean, cb: ImageCallback[js.Any]): this.type = js.native
     def autocrop(options: CropOnlyFrames): this.type = js.native
-    def autocrop(options: CropOnlyFrames, cb: ImageCallback[_]): this.type = js.native
-    def autocrop(tolerance: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
-    def autocrop(
-      tolerance: js.UndefOr[scala.Nothing],
-      cropOnlyFrames: js.UndefOr[scala.Nothing],
-      cb: ImageCallback[_]
-    ): this.type = js.native
-    def autocrop(tolerance: js.UndefOr[scala.Nothing], cropOnlyFrames: Boolean): this.type = js.native
-    def autocrop(tolerance: js.UndefOr[scala.Nothing], cropOnlyFrames: Boolean, cb: ImageCallback[_]): this.type = js.native
+    def autocrop(options: CropOnlyFrames, cb: ImageCallback[js.Any]): this.type = js.native
     def autocrop(tolerance: Double): this.type = js.native
-    def autocrop(tolerance: Double, cb: ImageCallback[_]): this.type = js.native
-    def autocrop(tolerance: Double, cropOnlyFrames: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
+    def autocrop(tolerance: Double, cb: ImageCallback[js.Any]): this.type = js.native
     def autocrop(tolerance: Double, cropOnlyFrames: Boolean): this.type = js.native
-    def autocrop(tolerance: Double, cropOnlyFrames: Boolean, cb: ImageCallback[_]): this.type = js.native
+    def autocrop(tolerance: Double, cropOnlyFrames: Boolean, cb: ImageCallback[js.Any]): this.type = js.native
+    def autocrop(tolerance: Double, cropOnlyFrames: Unit, cb: ImageCallback[js.Any]): this.type = js.native
+    def autocrop(tolerance: Unit, cb: ImageCallback[js.Any]): this.type = js.native
+    def autocrop(tolerance: Unit, cropOnlyFrames: Boolean): this.type = js.native
+    def autocrop(tolerance: Unit, cropOnlyFrames: Boolean, cb: ImageCallback[js.Any]): this.type = js.native
+    def autocrop(tolerance: Unit, cropOnlyFrames: Unit, cb: ImageCallback[js.Any]): this.type = js.native
     
     def background(hex: Double): this.type = js.native
-    def background(hex: Double, cb: ImageCallback[_]): this.type = js.native
+    def background(hex: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def backgroundQuiet(hex: Double): this.type = js.native
-    def backgroundQuiet(hex: Double, cb: ImageCallback[_]): this.type = js.native
+    def backgroundQuiet(hex: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     // Properties
     var bitmap: Bitmap = js.native
     
     def blit(src: DepreciatedJimp, x: Double, y: Double): this.type = js.native
-    def blit(src: DepreciatedJimp, x: Double, y: Double, cb: ImageCallback[_]): this.type = js.native
+    def blit(src: DepreciatedJimp, x: Double, y: Double, cb: ImageCallback[js.Any]): this.type = js.native
     def blit(src: DepreciatedJimp, x: Double, y: Double, srcx: Double, srcy: Double, srcw: Double, srch: Double): this.type = js.native
     def blit(
       src: DepreciatedJimp,
@@ -440,78 +435,66 @@ object mod extends Shortcut {
       srcy: Double,
       srcw: Double,
       srch: Double,
-      cb: ImageCallback[_]
+      cb: ImageCallback[js.Any]
     ): this.type = js.native
     
     // Effect methods
     def blur(r: Double): this.type = js.native
-    def blur(r: Double, cb: ImageCallback[_]): this.type = js.native
+    def blur(r: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     // Color methods
     def brightness(`val`: Double): this.type = js.native
-    def brightness(`val`: Double, cb: ImageCallback[_]): this.type = js.native
+    def brightness(`val`: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def circle(): this.type = js.native
-    def circle(cb: ImageCallback[_]): this.type = js.native
-    def circle(options: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
+    def circle(cb: ImageCallback[js.Any]): this.type = js.native
+    def circle(options: Unit, cb: ImageCallback[js.Any]): this.type = js.native
     def circle(options: Radius): this.type = js.native
-    def circle(options: Radius, cb: ImageCallback[_]): this.type = js.native
+    def circle(options: Radius, cb: ImageCallback[js.Any]): this.type = js.native
     
-    def clone(cb: ImageCallback[_]): this.type = js.native
+    def clone(cb: ImageCallback[js.Any]): this.type = js.native
     
     def cloneQuiet(): this.type = js.native
-    def cloneQuiet(cb: ImageCallback[_]): this.type = js.native
+    def cloneQuiet(cb: ImageCallback[js.Any]): this.type = js.native
     
     def color(actions: js.Array[ColorAction]): this.type = js.native
-    def color(actions: js.Array[ColorAction], cb: ImageCallback[_]): this.type = js.native
+    def color(actions: js.Array[ColorAction], cb: ImageCallback[js.Any]): this.type = js.native
     
     def colorDiff(rgba1: RGBA, rgba2: RGBA): Double = js.native
     def colorDiff(rgba1: RGB, rgba2: RGB): Double = js.native
     
     def colorType(s: Double): this.type = js.native
-    def colorType(s: Double, cb: ImageCallback[_]): this.type = js.native
+    def colorType(s: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def colour(actions: js.Array[ColorAction]): this.type = js.native
-    def colour(actions: js.Array[ColorAction], cb: ImageCallback[_]): this.type = js.native
+    def colour(actions: js.Array[ColorAction], cb: ImageCallback[js.Any]): this.type = js.native
     
     def compareHashes(hash1: String, hash2: String): Double = js.native
     
     def composite(src: DepreciatedJimp, x: Double, y: Double): this.type = js.native
-    def composite(
-      src: DepreciatedJimp,
-      x: Double,
-      y: Double,
-      options: js.UndefOr[scala.Nothing],
-      cb: ImageCallback[_]
-    ): this.type = js.native
+    def composite(src: DepreciatedJimp, x: Double, y: Double, options: Unit, cb: ImageCallback[js.Any]): this.type = js.native
     def composite(src: DepreciatedJimp, x: Double, y: Double, options: BlendMode): this.type = js.native
-    def composite(src: DepreciatedJimp, x: Double, y: Double, options: BlendMode, cb: ImageCallback[_]): this.type = js.native
+    def composite(src: DepreciatedJimp, x: Double, y: Double, options: BlendMode, cb: ImageCallback[js.Any]): this.type = js.native
     
     def contain(w: Double, h: Double): this.type = js.native
-    def contain(
-      w: Double,
-      h: Double,
-      alignBits: js.UndefOr[scala.Nothing],
-      mode: js.UndefOr[scala.Nothing],
-      cb: ImageCallback[_]
-    ): this.type = js.native
-    def contain(w: Double, h: Double, alignBits: js.UndefOr[scala.Nothing], mode: String): this.type = js.native
-    def contain(w: Double, h: Double, alignBits: js.UndefOr[scala.Nothing], mode: String, cb: ImageCallback[_]): this.type = js.native
     def contain(w: Double, h: Double, alignBits: Double): this.type = js.native
-    def contain(w: Double, h: Double, alignBits: Double, cb: ImageCallback[_]): this.type = js.native
-    def contain(w: Double, h: Double, alignBits: Double, mode: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
+    def contain(w: Double, h: Double, alignBits: Double, cb: ImageCallback[js.Any]): this.type = js.native
     def contain(w: Double, h: Double, alignBits: Double, mode: String): this.type = js.native
-    def contain(w: Double, h: Double, alignBits: Double, mode: String, cb: ImageCallback[_]): this.type = js.native
-    def contain(w: Double, h: Double, cb: ImageCallback[_]): this.type = js.native
-    def contain(w: Double, h: Double, mode: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
+    def contain(w: Double, h: Double, alignBits: Double, mode: String, cb: ImageCallback[js.Any]): this.type = js.native
+    def contain(w: Double, h: Double, alignBits: Double, mode: Unit, cb: ImageCallback[js.Any]): this.type = js.native
+    def contain(w: Double, h: Double, alignBits: Unit, mode: String): this.type = js.native
+    def contain(w: Double, h: Double, alignBits: Unit, mode: String, cb: ImageCallback[js.Any]): this.type = js.native
+    def contain(w: Double, h: Double, alignBits: Unit, mode: Unit, cb: ImageCallback[js.Any]): this.type = js.native
+    def contain(w: Double, h: Double, cb: ImageCallback[js.Any]): this.type = js.native
     def contain(w: Double, h: Double, mode: String): this.type = js.native
-    def contain(w: Double, h: Double, mode: String, cb: ImageCallback[_]): this.type = js.native
+    def contain(w: Double, h: Double, mode: String, cb: ImageCallback[js.Any]): this.type = js.native
+    def contain(w: Double, h: Double, mode: Unit, cb: ImageCallback[js.Any]): this.type = js.native
     
     def contrast(`val`: Double): this.type = js.native
-    def contrast(`val`: Double, cb: ImageCallback[_]): this.type = js.native
+    def contrast(`val`: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def convolute(kernel: js.Array[js.Array[Double]]): this.type = js.native
-    def convolute(kernel: js.Array[js.Array[Double]], cb: ImageCallback[_]): this.type = js.native
+    def convolute(kernel: js.Array[js.Array[Double]], cb: ImageCallback[js.Any]): this.type = js.native
     def convolute(kernel: js.Array[js.Array[Double]], x: Double, y: Double, w: Double, h: Double): this.type = js.native
     def convolute(
       kernel: js.Array[js.Array[Double]],
@@ -519,31 +502,25 @@ object mod extends Shortcut {
       y: Double,
       w: Double,
       h: Double,
-      cb: ImageCallback[_]
+      cb: ImageCallback[js.Any]
     ): this.type = js.native
     
     def convolution(kernel: js.Array[js.Array[Double]]): this.type = js.native
-    def convolution(kernel: js.Array[js.Array[Double]], cb: ImageCallback[_]): this.type = js.native
+    def convolution(kernel: js.Array[js.Array[Double]], cb: ImageCallback[js.Any]): this.type = js.native
     def convolution[T](kernel: js.Array[js.Array[Double]], edgeHandling: String): this.type = js.native
-    def convolution[T](kernel: js.Array[js.Array[Double]], edgeHandling: String, cb: ImageCallback[_]): this.type = js.native
+    def convolution[T](kernel: js.Array[js.Array[Double]], edgeHandling: String, cb: ImageCallback[js.Any]): this.type = js.native
     
     def cover(w: Double, h: Double): this.type = js.native
-    def cover(w: Double, h: Double, alignBits: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
-    def cover(
-      w: Double,
-      h: Double,
-      alignBits: js.UndefOr[scala.Nothing],
-      mode: js.UndefOr[scala.Nothing],
-      cb: ImageCallback[_]
-    ): this.type = js.native
-    def cover(w: Double, h: Double, alignBits: js.UndefOr[scala.Nothing], mode: String): this.type = js.native
-    def cover(w: Double, h: Double, alignBits: js.UndefOr[scala.Nothing], mode: String, cb: ImageCallback[_]): this.type = js.native
     def cover(w: Double, h: Double, alignBits: Double): this.type = js.native
-    def cover(w: Double, h: Double, alignBits: Double, cb: ImageCallback[_]): this.type = js.native
-    def cover(w: Double, h: Double, alignBits: Double, mode: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Double, cb: ImageCallback[js.Any]): this.type = js.native
     def cover(w: Double, h: Double, alignBits: Double, mode: String): this.type = js.native
-    def cover(w: Double, h: Double, alignBits: Double, mode: String, cb: ImageCallback[_]): this.type = js.native
-    def cover(w: Double, h: Double, cb: ImageCallback[_]): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Double, mode: String, cb: ImageCallback[js.Any]): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Double, mode: Unit, cb: ImageCallback[js.Any]): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Unit, cb: ImageCallback[js.Any]): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Unit, mode: String): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Unit, mode: String, cb: ImageCallback[js.Any]): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Unit, mode: Unit, cb: ImageCallback[js.Any]): this.type = js.native
+    def cover(w: Double, h: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def create(data: Buffer): js.Promise[this.type] = js.native
     def create(image: this.type): js.Promise[this.type] = js.native
@@ -553,58 +530,58 @@ object mod extends Shortcut {
     def create(w: Double, h: Double, background: Double): js.Promise[this.type] = js.native
     
     def crop(x: Double, y: Double, w: Double, h: Double): this.type = js.native
-    def crop(x: Double, y: Double, w: Double, h: Double, cb: ImageCallback[_]): this.type = js.native
+    def crop(x: Double, y: Double, w: Double, h: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def cropQuiet(x: Double, y: Double, w: Double, h: Double): this.type = js.native
-    def cropQuiet(x: Double, y: Double, w: Double, h: Double, cb: ImageCallback[_]): this.type = js.native
+    def cropQuiet(x: Double, y: Double, w: Double, h: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def cssColorToHex(cssColor: String): Double = js.native
     
     def deflateLevel(l: Double): this.type = js.native
-    def deflateLevel(l: Double, cb: ImageCallback[_]): this.type = js.native
+    def deflateLevel(l: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def deflateStrategy(s: Double): this.type = js.native
-    def deflateStrategy(s: Double, cb: ImageCallback[_]): this.type = js.native
+    def deflateStrategy(s: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def diff(img1: this.type, img2: this.type): Image = js.native
     def diff(img1: this.type, img2: this.type, threshold: Double): Image = js.native
     
     def displace(map: DepreciatedJimp, offset: Double): this.type = js.native
-    def displace(map: DepreciatedJimp, offset: Double, cb: ImageCallback[_]): this.type = js.native
+    def displace(map: DepreciatedJimp, offset: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def distance(img1: this.type, img2: this.type): Double = js.native
     
     def distanceFromHash(hash: String): Double = js.native
     
     def dither16(): this.type = js.native
-    def dither16(cb: ImageCallback[_]): this.type = js.native
+    def dither16(cb: ImageCallback[js.Any]): this.type = js.native
     
     def dither565(): this.type = js.native
-    def dither565(cb: ImageCallback[_]): this.type = js.native
+    def dither565(cb: ImageCallback[js.Any]): this.type = js.native
     
     def fade(f: Double): this.type = js.native
-    def fade(f: Double, cb: ImageCallback[_]): this.type = js.native
+    def fade(f: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def filterType(f: Double): this.type = js.native
-    def filterType(f: Double, cb: ImageCallback[_]): this.type = js.native
+    def filterType(f: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def fishEye(): this.type = js.native
-    def fishEye(cb: ImageCallback[_]): this.type = js.native
-    def fishEye(opts: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
+    def fishEye(cb: ImageCallback[js.Any]): this.type = js.native
+    def fishEye(opts: Unit, cb: ImageCallback[js.Any]): this.type = js.native
     def fishEye(opts: R): this.type = js.native
-    def fishEye(opts: R, cb: ImageCallback[_]): this.type = js.native
+    def fishEye(opts: R, cb: ImageCallback[js.Any]): this.type = js.native
     
     def flip(horizontal: Boolean, vertical: Boolean): this.type = js.native
-    def flip(horizontal: Boolean, vertical: Boolean, cb: ImageCallback[_]): this.type = js.native
+    def flip(horizontal: Boolean, vertical: Boolean, cb: ImageCallback[js.Any]): this.type = js.native
     
     def gaussian(r: Double): this.type = js.native
-    def gaussian(r: Double, cb: ImageCallback[_]): this.type = js.native
+    def gaussian(r: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
-    def getBase64(mime: String, cb: GenericCallback[String, _, this.type]): this.type = js.native
+    def getBase64(mime: String, cb: GenericCallback[String, js.Any, this.type]): this.type = js.native
     
     def getBase64Async(mime: String): js.Promise[String] = js.native
     
-    def getBuffer(mime: String, cb: GenericCallback[Buffer, _, _]): this.type = js.native
+    def getBuffer(mime: String, cb: GenericCallback[Buffer, js.Any, js.Any]): this.type = js.native
     
     def getBufferAsync(mime: String): js.Promise[Buffer] = js.native
     
@@ -615,132 +592,89 @@ object mod extends Shortcut {
     def getMIME(): String = js.native
     
     def getPixelColor(x: Double, y: Double): Double = js.native
-    def getPixelColor(x: Double, y: Double, cb: GenericCallback[Double, _, this.type]): Double = js.native
+    def getPixelColor(x: Double, y: Double, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
     
     def getPixelColour(x: Double, y: Double): Double = js.native
-    def getPixelColour(x: Double, y: Double, cb: GenericCallback[Double, _, this.type]): Double = js.native
+    def getPixelColour(x: Double, y: Double, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
     
     def getPixelIndex(x: Double, y: Double): Double = js.native
-    def getPixelIndex(x: Double, y: Double, cb: GenericCallback[Double, _, this.type]): Double = js.native
+    def getPixelIndex(x: Double, y: Double, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
     def getPixelIndex(x: Double, y: Double, edgeHandling: String): Double = js.native
-    def getPixelIndex(x: Double, y: Double, edgeHandling: String, cb: GenericCallback[Double, _, this.type]): Double = js.native
+    def getPixelIndex(x: Double, y: Double, edgeHandling: String, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
     
     def getWidth(): Double = js.native
     
     def grayscale(): this.type = js.native
-    def grayscale(cb: ImageCallback[_]): this.type = js.native
+    def grayscale(cb: ImageCallback[js.Any]): this.type = js.native
     
     def greyscale(): this.type = js.native
-    def greyscale(cb: ImageCallback[_]): this.type = js.native
+    def greyscale(cb: ImageCallback[js.Any]): this.type = js.native
     
     def hasAlpha(): Boolean = js.native
     
     def hash(): String = js.native
-    def hash(base: js.UndefOr[scala.Nothing], cb: GenericCallback[String, _, this.type]): String = js.native
     def hash(base: Double): String = js.native
-    def hash(base: Double, cb: GenericCallback[String, _, this.type]): String = js.native
-    def hash(base: Null, cb: GenericCallback[String, _, this.type]): String = js.native
-    def hash(cb: GenericCallback[String, _, this.type]): String = js.native
+    def hash(base: Double, cb: GenericCallback[String, js.Any, this.type]): String = js.native
+    def hash(base: Null, cb: GenericCallback[String, js.Any, this.type]): String = js.native
+    def hash(base: Unit, cb: GenericCallback[String, js.Any, this.type]): String = js.native
+    def hash(cb: GenericCallback[String, js.Any, this.type]): String = js.native
     
     def histogram(): B = js.native
     
     def inspect(): String = js.native
     
     def intToRGBA(i: Double): RGBA = js.native
-    def intToRGBA(i: Double, cb: GenericCallback[RGBA, _, _]): RGBA = js.native
+    def intToRGBA(i: Double, cb: GenericCallback[RGBA, js.Any, js.Any]): RGBA = js.native
     
     def invert(): this.type = js.native
-    def invert(cb: ImageCallback[_]): this.type = js.native
+    def invert(cb: ImageCallback[js.Any]): this.type = js.native
     
     def limit255(n: Double): Double = js.native
     
     def loadFont(file: String): js.Promise[Font] = js.native
-    def loadFont(file: String, cb: GenericCallback[Font, _, _]): js.Promise[scala.Nothing] = js.native
+    def loadFont(file: String, cb: GenericCallback[Font, js.Any, js.Any]): js.Promise[scala.Nothing] = js.native
     
     def mask(src: this.type, x: Double, y: Double): this.type = js.native
-    def mask(src: this.type, x: Double, y: Double, cb: ImageCallback[_]): this.type = js.native
+    def mask(src: this.type, x: Double, y: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def measureText(font: Font, text: PrintableText): Double = js.native
     
     def measureTextHeight(font: Font, text: PrintableText, maxWidth: Double): Double = js.native
     
     def mirror(horizontal: Boolean, vertical: Boolean): this.type = js.native
-    def mirror(horizontal: Boolean, vertical: Boolean, cb: ImageCallback[_]): this.type = js.native
+    def mirror(horizontal: Boolean, vertical: Boolean, cb: ImageCallback[js.Any]): this.type = js.native
     
     def normalize(): this.type = js.native
-    def normalize(cb: ImageCallback[_]): this.type = js.native
+    def normalize(cb: ImageCallback[js.Any]): this.type = js.native
     
     // Methods
-    def on[T /* <: ListenableName */](event: T, cb: js.Function1[/* data */ ListenerData[T], _]): js.Any = js.native
+    def on[T /* <: ListenableName */](event: T, cb: js.Function1[/* data */ ListenerData[T], js.Any]): js.Any = js.native
     
     def opacity(f: Double): this.type = js.native
-    def opacity(f: Double, cb: ImageCallback[_]): this.type = js.native
+    def opacity(f: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def opaque(): this.type = js.native
-    def opaque(cb: ImageCallback[_]): this.type = js.native
+    def opaque(cb: ImageCallback[js.Any]): this.type = js.native
     
     def parseBitmap(data: Buffer): Unit = js.native
-    def parseBitmap(data: Buffer, path: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): Unit = js.native
     def parseBitmap(data: Buffer, path: String): Unit = js.native
-    def parseBitmap(data: Buffer, path: String, cb: ImageCallback[_]): Unit = js.native
-    def parseBitmap(data: Buffer, path: Null, cb: ImageCallback[_]): Unit = js.native
+    def parseBitmap(data: Buffer, path: String, cb: ImageCallback[js.Any]): Unit = js.native
+    def parseBitmap(data: Buffer, path: Null, cb: ImageCallback[js.Any]): Unit = js.native
+    def parseBitmap(data: Buffer, path: Unit, cb: ImageCallback[js.Any]): Unit = js.native
     
     def pixelate(size: Double): this.type = js.native
-    def pixelate(size: Double, cb: ImageCallback[_]): this.type = js.native
+    def pixelate(size: Double, cb: ImageCallback[js.Any]): this.type = js.native
     def pixelate(size: Double, x: Double, y: Double, w: Double, h: Double): this.type = js.native
-    def pixelate(size: Double, x: Double, y: Double, w: Double, h: Double, cb: ImageCallback[_]): this.type = js.native
+    def pixelate(size: Double, x: Double, y: Double, w: Double, h: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def posterize(n: Double): this.type = js.native
-    def posterize(n: Double, cb: ImageCallback[_]): this.type = js.native
+    def posterize(n: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     // Text methods
     def print(font: Font, x: Double, y: Double, text: PrintableText): this.type = js.native
-    def print(font: Font, x: Double, y: Double, text: PrintableText, cb: ImageCallback[_]): this.type = js.native
-    def print(
-      font: Font,
-      x: Double,
-      y: Double,
-      text: PrintableText,
-      maxWidth: js.UndefOr[scala.Nothing],
-      cb: ImageCallback[_]
-    ): this.type = js.native
-    def print(
-      font: Font,
-      x: Double,
-      y: Double,
-      text: PrintableText,
-      maxWidth: js.UndefOr[scala.Nothing],
-      maxHeight: js.UndefOr[scala.Nothing],
-      cb: ImageCallback[_]
-    ): this.type = js.native
-    def print(
-      font: Font,
-      x: Double,
-      y: Double,
-      text: PrintableText,
-      maxWidth: js.UndefOr[scala.Nothing],
-      maxHeight: Double
-    ): this.type = js.native
-    def print(
-      font: Font,
-      x: Double,
-      y: Double,
-      text: PrintableText,
-      maxWidth: js.UndefOr[scala.Nothing],
-      maxHeight: Double,
-      cb: ImageCallback[_]
-    ): this.type = js.native
+    def print(font: Font, x: Double, y: Double, text: PrintableText, cb: ImageCallback[js.Any]): this.type = js.native
     def print(font: Font, x: Double, y: Double, text: PrintableText, maxWidth: Double): this.type = js.native
-    def print(font: Font, x: Double, y: Double, text: PrintableText, maxWidth: Double, cb: ImageCallback[_]): this.type = js.native
-    def print(
-      font: Font,
-      x: Double,
-      y: Double,
-      text: PrintableText,
-      maxWidth: Double,
-      maxHeight: js.UndefOr[scala.Nothing],
-      cb: ImageCallback[_]
-    ): this.type = js.native
+    def print(font: Font, x: Double, y: Double, text: PrintableText, maxWidth: Double, cb: ImageCallback[js.Any]): this.type = js.native
     def print(font: Font, x: Double, y: Double, text: PrintableText, maxWidth: Double, maxHeight: Double): this.type = js.native
     def print(
       font: Font,
@@ -749,70 +683,99 @@ object mod extends Shortcut {
       text: PrintableText,
       maxWidth: Double,
       maxHeight: Double,
-      cb: ImageCallback[_]
+      cb: ImageCallback[js.Any]
+    ): this.type = js.native
+    def print(
+      font: Font,
+      x: Double,
+      y: Double,
+      text: PrintableText,
+      maxWidth: Double,
+      maxHeight: Unit,
+      cb: ImageCallback[js.Any]
+    ): this.type = js.native
+    def print(font: Font, x: Double, y: Double, text: PrintableText, maxWidth: Unit, cb: ImageCallback[js.Any]): this.type = js.native
+    def print(font: Font, x: Double, y: Double, text: PrintableText, maxWidth: Unit, maxHeight: Double): this.type = js.native
+    def print(
+      font: Font,
+      x: Double,
+      y: Double,
+      text: PrintableText,
+      maxWidth: Unit,
+      maxHeight: Double,
+      cb: ImageCallback[js.Any]
+    ): this.type = js.native
+    def print(
+      font: Font,
+      x: Double,
+      y: Double,
+      text: PrintableText,
+      maxWidth: Unit,
+      maxHeight: Unit,
+      cb: ImageCallback[js.Any]
     ): this.type = js.native
     
     def quality(n: Double): this.type = js.native
-    def quality(n: Double, cb: ImageCallback[_]): this.type = js.native
+    def quality(n: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def read(data: Buffer): js.Promise[this.type] = js.native
-    def read(data: Buffer, cb: ImageCallback[_]): js.Promise[this.type] = js.native
+    def read(data: Buffer, cb: ImageCallback[js.Any]): js.Promise[this.type] = js.native
     def read(image: this.type): js.Promise[this.type] = js.native
-    def read(image: this.type, cb: ImageCallback[_]): js.Promise[this.type] = js.native
+    def read(image: this.type, cb: ImageCallback[js.Any]): js.Promise[this.type] = js.native
     def read(path: String): js.Promise[this.type] = js.native
-    def read(path: String, cb: ImageCallback[_]): js.Promise[this.type] = js.native
+    def read(path: String, cb: ImageCallback[js.Any]): js.Promise[this.type] = js.native
     def read(w: Double, h: Double): js.Promise[this.type] = js.native
-    def read(w: Double, h: Double, background: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): js.Promise[this.type] = js.native
     def read(w: Double, h: Double, background: String): js.Promise[this.type] = js.native
-    def read(w: Double, h: Double, background: String, cb: ImageCallback[_]): js.Promise[this.type] = js.native
+    def read(w: Double, h: Double, background: String, cb: ImageCallback[js.Any]): js.Promise[this.type] = js.native
     def read(w: Double, h: Double, background: Double): js.Promise[this.type] = js.native
-    def read(w: Double, h: Double, background: Double, cb: ImageCallback[_]): js.Promise[this.type] = js.native
+    def read(w: Double, h: Double, background: Double, cb: ImageCallback[js.Any]): js.Promise[this.type] = js.native
+    def read(w: Double, h: Double, background: Unit, cb: ImageCallback[js.Any]): js.Promise[this.type] = js.native
     
     def resize(w: Double, h: Double): this.type = js.native
-    def resize(w: Double, h: Double, cb: ImageCallback[_]): this.type = js.native
-    def resize(w: Double, h: Double, mode: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
+    def resize(w: Double, h: Double, cb: ImageCallback[js.Any]): this.type = js.native
     def resize(w: Double, h: Double, mode: String): this.type = js.native
-    def resize(w: Double, h: Double, mode: String, cb: ImageCallback[_]): this.type = js.native
+    def resize(w: Double, h: Double, mode: String, cb: ImageCallback[js.Any]): this.type = js.native
+    def resize(w: Double, h: Double, mode: Unit, cb: ImageCallback[js.Any]): this.type = js.native
     
     def rgba(bool: Boolean): this.type = js.native
-    def rgba(bool: Boolean, cb: ImageCallback[_]): this.type = js.native
+    def rgba(bool: Boolean, cb: ImageCallback[js.Any]): this.type = js.native
     
-    def rgbaToInt(r: Double, g: Double, b: Double, a: Double, cb: GenericCallback[Double, _, this.type]): Double = js.native
+    def rgbaToInt(r: Double, g: Double, b: Double, a: Double, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
     
     // Shape methods
     def rotate(deg: Double): this.type = js.native
-    def rotate(deg: Double, cb: ImageCallback[_]): this.type = js.native
+    def rotate(deg: Double, cb: ImageCallback[js.Any]): this.type = js.native
     def rotate(deg: Double, mode: String): this.type = js.native
-    def rotate(deg: Double, mode: String, cb: ImageCallback[_]): this.type = js.native
+    def rotate(deg: Double, mode: String, cb: ImageCallback[js.Any]): this.type = js.native
     def rotate(deg: Double, mode: Boolean): this.type = js.native
-    def rotate(deg: Double, mode: Boolean, cb: ImageCallback[_]): this.type = js.native
+    def rotate(deg: Double, mode: Boolean, cb: ImageCallback[js.Any]): this.type = js.native
     
     def scale(f: Double): this.type = js.native
-    def scale(f: Double, cb: ImageCallback[_]): this.type = js.native
-    def scale(f: Double, mode: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
+    def scale(f: Double, cb: ImageCallback[js.Any]): this.type = js.native
     def scale(f: Double, mode: String): this.type = js.native
-    def scale(f: Double, mode: String, cb: ImageCallback[_]): this.type = js.native
+    def scale(f: Double, mode: String, cb: ImageCallback[js.Any]): this.type = js.native
+    def scale(f: Double, mode: Unit, cb: ImageCallback[js.Any]): this.type = js.native
     
     def scaleToFit(w: Double, h: Double): this.type = js.native
-    def scaleToFit(w: Double, h: Double, cb: ImageCallback[_]): this.type = js.native
-    def scaleToFit(w: Double, h: Double, mode: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
+    def scaleToFit(w: Double, h: Double, cb: ImageCallback[js.Any]): this.type = js.native
     def scaleToFit(w: Double, h: Double, mode: String): this.type = js.native
-    def scaleToFit(w: Double, h: Double, mode: String, cb: ImageCallback[_]): this.type = js.native
+    def scaleToFit(w: Double, h: Double, mode: String, cb: ImageCallback[js.Any]): this.type = js.native
+    def scaleToFit(w: Double, h: Double, mode: Unit, cb: ImageCallback[js.Any]): this.type = js.native
     
     def scan(
       x: Double,
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, _]
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any]
     ): this.type = js.native
     def scan(
       x: Double,
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, _],
-      cb: ImageCallback[_]
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any],
+      cb: ImageCallback[js.Any]
     ): this.type = js.native
     
     def scanIterator(x: Double, y: Double, w: Double, h: Double): IterableIterator[Idx] = js.native
@@ -822,37 +785,37 @@ object mod extends Shortcut {
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, _]
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any]
     ): this.type = js.native
     def scanQuiet(
       x: Double,
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, _],
-      cb: ImageCallback[_]
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any],
+      cb: ImageCallback[js.Any]
     ): this.type = js.native
     
     def sepia(): this.type = js.native
-    def sepia(cb: ImageCallback[_]): this.type = js.native
+    def sepia(cb: ImageCallback[js.Any]): this.type = js.native
     
     def setPixelColor(hex: Double, x: Double, y: Double): this.type = js.native
-    def setPixelColor(hex: Double, x: Double, y: Double, cb: ImageCallback[_]): this.type = js.native
+    def setPixelColor(hex: Double, x: Double, y: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def setPixelColour(hex: Double, x: Double, y: Double): this.type = js.native
-    def setPixelColour(hex: Double, x: Double, y: Double, cb: ImageCallback[_]): this.type = js.native
+    def setPixelColour(hex: Double, x: Double, y: Double, cb: ImageCallback[js.Any]): this.type = js.native
     
     def shadow(): this.type = js.native
-    def shadow(cb: ImageCallback[_]): this.type = js.native
-    def shadow(options: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): this.type = js.native
+    def shadow(cb: ImageCallback[js.Any]): this.type = js.native
+    def shadow(options: Unit, cb: ImageCallback[js.Any]): this.type = js.native
     def shadow(options: Opacity): this.type = js.native
-    def shadow(options: Opacity, cb: ImageCallback[_]): this.type = js.native
+    def shadow(options: Opacity, cb: ImageCallback[js.Any]): this.type = js.native
     
     def threshold(opts: AutoGreyscale): this.type = js.native
-    def threshold(opts: AutoGreyscale, cb: ImageCallback[_]): this.type = js.native
+    def threshold(opts: AutoGreyscale, cb: ImageCallback[js.Any]): this.type = js.native
     
     def write(path: String): this.type = js.native
-    def write(path: String, cb: ImageCallback[_]): this.type = js.native
+    def write(path: String, cb: ImageCallback[js.Any]): this.type = js.native
     
     def writeAsync(path: String): js.Promise[this.type] = js.native
   }
@@ -860,18 +823,17 @@ object mod extends Shortcut {
   /**
     * @deprecated Jimp typings for TS <3.1 are being depreciated. Please upgrade your TypeScript version
     */
-  @js.native
   trait Font extends StObject {
     
-    var chars: StringDictionary[FontChar] = js.native
+    var chars: StringDictionary[FontChar]
     
-    var common: FontCommon = js.native
+    var common: FontCommon
     
-    var info: FontInfo = js.native
+    var info: FontInfo
     
-    var kernings: StringDictionary[StringDictionary[Double]] = js.native
+    var kernings: StringDictionary[StringDictionary[Double]]
     
-    var pages: js.Array[String] = js.native
+    var pages: js.Array[String]
   }
   object Font {
     
@@ -913,28 +875,27 @@ object mod extends Shortcut {
   /**
     * @deprecated Jimp typings for TS <3.1 are being depreciated. Please upgrade your TypeScript version
     */
-  @js.native
   trait FontChar extends StObject {
     
-    var chnl: Double = js.native
+    var chnl: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var page: Double = js.native
+    var page: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var xadvance: Double = js.native
+    var xadvance: Double
     
-    var xoffset: Double = js.native
+    var xoffset: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var yoffset: Double = js.native
+    var yoffset: Double
   }
   object FontChar {
     
@@ -993,28 +954,27 @@ object mod extends Shortcut {
   /**
     * @deprecated Jimp typings for TS <3.1 are being depreciated. Please upgrade your TypeScript version
     */
-  @js.native
   trait FontCommon extends StObject {
     
-    var alphaChnl: Double = js.native
+    var alphaChnl: Double
     
-    var base: Double = js.native
+    var base: Double
     
-    var blueChnl: Double = js.native
+    var blueChnl: Double
     
-    var greenChnl: Double = js.native
+    var greenChnl: Double
     
-    var lineHeight: Double = js.native
+    var lineHeight: Double
     
-    var packed: Double = js.native
+    var packed: Double
     
-    var pages: Double = js.native
+    var pages: Double
     
-    var redChnl: Double = js.native
+    var redChnl: Double
     
-    var scaleH: Double = js.native
+    var scaleH: Double
     
-    var scaleW: Double = js.native
+    var scaleW: Double
   }
   object FontCommon {
     
@@ -1073,30 +1033,29 @@ object mod extends Shortcut {
   /**
     * @deprecated Jimp typings for TS <3.1 are being depreciated. Please upgrade your TypeScript version
     */
-  @js.native
   trait FontInfo extends StObject {
     
-    var aa: Double = js.native
+    var aa: Double
     
-    var bold: Double = js.native
+    var bold: Double
     
-    var charset: String = js.native
+    var charset: String
     
-    var face: String = js.native
+    var face: String
     
-    var italic: Double = js.native
+    var italic: Double
     
-    var padding: js.Tuple4[Double, Double, Double, Double] = js.native
+    var padding: js.Tuple4[Double, Double, Double, Double]
     
-    var size: Double = js.native
+    var size: Double
     
-    var smooth: Double = js.native
+    var smooth: Double
     
-    var spacing: js.Tuple2[Double, Double] = js.native
+    var spacing: js.Tuple2[Double, Double]
     
-    var stretchH: Double = js.native
+    var stretchH: Double
     
-    var unicode: Double = js.native
+    var unicode: Double
   }
   object FontInfo {
     
@@ -1233,14 +1192,13 @@ object mod extends Shortcut {
   /**
     * @deprecated Jimp typings for TS <3.1 are being depreciated. Please upgrade your TypeScript version
     */
-  @js.native
   trait RGB extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object RGB {
     
@@ -1267,16 +1225,15 @@ object mod extends Shortcut {
   /**
     * @deprecated Jimp typings for TS <3.1 are being depreciated. Please upgrade your TypeScript version
     */
-  @js.native
   trait RGBA extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object RGBA {
     
@@ -1303,14 +1260,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait URLOptions extends StObject {
     
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
-    var headers: StringDictionary[js.Any] = js.native
+    var headers: StringDictionary[js.Any]
     
-    var url: String = js.native
+    var url: String
   }
   object URLOptions {
     
@@ -1337,8 +1293,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = DepreciatedJimp
+  type _To = js.Object & DepreciatedJimp
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: DepreciatedJimp = ^
+  override def _to: js.Object & DepreciatedJimp = ^
 }

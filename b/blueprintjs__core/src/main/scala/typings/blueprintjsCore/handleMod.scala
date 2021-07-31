@@ -10,7 +10,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handleMod {
@@ -94,11 +93,10 @@ object handleMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IHandleState extends StObject {
     
     /** whether slider handle is currently being dragged */
-    var isMoving: js.UndefOr[Boolean] = js.native
+    var isMoving: js.UndefOr[Boolean] = js.undefined
   }
   object IHandleState {
     
@@ -119,24 +117,25 @@ object handleMod {
     }
   }
   
-  @js.native
-  trait IInternalHandleProps extends IHandleProps {
+  trait IInternalHandleProps
+    extends StObject
+       with IHandleProps {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[Element | String] = js.native
+    var label: js.UndefOr[Element | String] = js.undefined
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var stepSize: Double = js.native
+    var stepSize: Double
     
-    var tickSize: Double = js.native
+    var tickSize: Double
     
-    var tickSizeRatio: Double = js.native
+    var tickSizeRatio: Double
     
-    var vertical: Boolean = js.native
+    var vertical: Boolean
   }
   object IInternalHandleProps {
     

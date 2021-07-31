@@ -2,15 +2,13 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintOptions extends StObject {
   
-  var footer: js.UndefOr[String] = js.native
+  var footer: js.UndefOr[String] = js.undefined
   
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
 }
 object PrintOptions {
   

@@ -2,16 +2,14 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IXMLDOMImplementation extends StObject {
   
   @JSName("MSXML2.IXMLDOMImplementation_typekey")
-  var MSXML2DotIXMLDOMImplementation_typekey: IXMLDOMImplementation = js.native
+  var MSXML2DotIXMLDOMImplementation_typekey: IXMLDOMImplementation
   
-  def hasFeature(feature: String, version: String): Boolean = js.native
+  def hasFeature(feature: String, version: String): Boolean
 }
 object IXMLDOMImplementation {
   

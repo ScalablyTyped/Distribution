@@ -2,13 +2,13 @@ package typings.gsap.gsap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SteppedEase extends Ease {
+trait SteppedEase
+  extends StObject
+     with Ease {
   
-  def config(steps: Double): SteppedEase = js.native
+  def config(steps: Double): SteppedEase
 }
 object SteppedEase {
   

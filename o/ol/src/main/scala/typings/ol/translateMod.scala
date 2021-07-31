@@ -9,7 +9,6 @@ import typings.ol.olStrings.translating
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object translateMod {
@@ -60,13 +59,19 @@ object translateMod {
   object TranslateEventType extends StObject {
     
     @js.native
-    sealed trait TRANSLATEEND extends TranslateEventType
+    sealed trait TRANSLATEEND
+      extends StObject
+         with TranslateEventType
     
     @js.native
-    sealed trait TRANSLATESTART extends TranslateEventType
+    sealed trait TRANSLATESTART
+      extends StObject
+         with TranslateEventType
     
     @js.native
-    sealed trait TRANSLATING extends TranslateEventType
+    sealed trait TRANSLATING
+      extends StObject
+         with TranslateEventType
   }
   
   type FilterFunction = js.Function2[
@@ -75,23 +80,22 @@ object translateMod {
     Boolean
   ]
   
-  @js.native
   trait Options extends StObject {
     
     var features: js.UndefOr[
         typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
-      ] = js.native
+      ] = js.undefined
     
-    var filter: js.UndefOr[FilterFunction] = js.native
+    var filter: js.UndefOr[FilterFunction] = js.undefined
     
-    var hitTolerance: js.UndefOr[Double] = js.native
+    var hitTolerance: js.UndefOr[Double] = js.undefined
     
     var layers: js.UndefOr[
         js.Array[typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]] | (js.Function1[
           /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
           Boolean
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

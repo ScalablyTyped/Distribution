@@ -6,38 +6,38 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsButton
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsImage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basicMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/card/basic", "BasicCard")
   @js.native
-  class BasicCard protected () extends GoogleActionsV2UiElementsBasicCard {
+  class BasicCard protected ()
+    extends StObject
+       with GoogleActionsV2UiElementsBasicCard {
     /** @public */
     def this(options: BasicCardOptions) = this()
   }
   
-  @js.native
   trait BasicCardOptions extends StObject {
     
     /** @public */
-    var buttons: js.UndefOr[GoogleActionsV2UiElementsButton | js.Array[GoogleActionsV2UiElementsButton]] = js.native
+    var buttons: js.UndefOr[GoogleActionsV2UiElementsButton | js.Array[GoogleActionsV2UiElementsButton]] = js.undefined
     
     /** @public */
-    var display: js.UndefOr[GoogleActionsV2UiElementsBasicCardImageDisplayOptions] = js.native
+    var display: js.UndefOr[GoogleActionsV2UiElementsBasicCardImageDisplayOptions] = js.undefined
     
     /** @public */
-    var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+    var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
     
     /** @public */
-    var subtitle: js.UndefOr[String] = js.native
+    var subtitle: js.UndefOr[String] = js.undefined
     
     /** @public */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** @public */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object BasicCardOptions {
     

@@ -13,10 +13,13 @@ import typings.angularCore.mod.ModuleWithProviders
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object upgradeUpgradeMod {
+  
+  @JSImport("@angular/common/upgrade/upgrade", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/common/upgrade/upgrade", "AngularJSUrlCodec")
   @js.native
@@ -35,12 +38,14 @@ object upgradeUpgradeMod {
   /* static members */
   object LocationUpgradeModule {
     
-    @JSImport("@angular/common/upgrade/upgrade", "LocationUpgradeModule.config")
+    @JSImport("@angular/common/upgrade/upgrade", "LocationUpgradeModule")
     @js.native
-    def config(): ModuleWithProviders[LocationUpgradeModule] = js.native
-    @JSImport("@angular/common/upgrade/upgrade", "LocationUpgradeModule.config")
-    @js.native
-    def config(config: LocationUpgradeConfig): ModuleWithProviders[LocationUpgradeModule] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def config(): ModuleWithProviders[LocationUpgradeModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[ModuleWithProviders[LocationUpgradeModule]]
+    @scala.inline
+    def config(config: LocationUpgradeConfig): ModuleWithProviders[LocationUpgradeModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[LocationUpgradeModule]]
   }
   
   @JSImport("@angular/common/upgrade/upgrade", "UrlCodec")
@@ -477,62 +482,55 @@ object upgradeUpgradeMod {
     var urlCodec: js.Any = js.native
   }
   
-  @JSImport("@angular/common/upgrade/upgrade", "\u0275angular_packages_common_upgrade_upgrade_a")
-  @js.native
-  def ɵangularPackagesCommonUpgradeUpgradeA(config: LocationUpgradeConfig): String = js.native
-  @JSImport("@angular/common/upgrade/upgrade", "\u0275angular_packages_common_upgrade_upgrade_a")
-  @js.native
-  def ɵangularPackagesCommonUpgradeUpgradeA(config: LocationUpgradeConfig, appBaseHref: String): String = js.native
+  @scala.inline
+  def ɵangularPackagesCommonUpgradeUpgradeA(config: LocationUpgradeConfig): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_a")(config.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def ɵangularPackagesCommonUpgradeUpgradeA(config: LocationUpgradeConfig, appBaseHref: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_a")(config.asInstanceOf[js.Any], appBaseHref.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@angular/common/upgrade/upgrade", "\u0275angular_packages_common_upgrade_upgrade_b")
-  @js.native
-  def ɵangularPackagesCommonUpgradeUpgradeB(config: LocationUpgradeConfig): js.Any = js.native
+  @scala.inline
+  def ɵangularPackagesCommonUpgradeUpgradeB(config: LocationUpgradeConfig): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_b")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@angular/common/upgrade/upgrade", "\u0275angular_packages_common_upgrade_upgrade_c")
-  @js.native
-  def ɵangularPackagesCommonUpgradeUpgradeC(platformLocation: PlatformLocation, baseHref: String): HashLocationStrategy | PathLocationStrategy = js.native
-  @JSImport("@angular/common/upgrade/upgrade", "\u0275angular_packages_common_upgrade_upgrade_c")
-  @js.native
-  def ɵangularPackagesCommonUpgradeUpgradeC(platformLocation: PlatformLocation, baseHref: String, options: LocationUpgradeConfig): HashLocationStrategy | PathLocationStrategy = js.native
+  @scala.inline
+  def ɵangularPackagesCommonUpgradeUpgradeC(platformLocation: PlatformLocation, baseHref: String): HashLocationStrategy | PathLocationStrategy = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_c")(platformLocation.asInstanceOf[js.Any], baseHref.asInstanceOf[js.Any])).asInstanceOf[HashLocationStrategy | PathLocationStrategy]
+  @scala.inline
+  def ɵangularPackagesCommonUpgradeUpgradeC(platformLocation: PlatformLocation, baseHref: String, options: LocationUpgradeConfig): HashLocationStrategy | PathLocationStrategy = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_c")(platformLocation.asInstanceOf[js.Any], baseHref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HashLocationStrategy | PathLocationStrategy]
   
-  @JSImport("@angular/common/upgrade/upgrade", "\u0275angular_packages_common_upgrade_upgrade_d")
-  @js.native
+  @scala.inline
   def ɵangularPackagesCommonUpgradeUpgradeD(
     ngUpgrade: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpgradeModule */ js.Any,
     location: Location,
     platformLocation: PlatformLocation,
     urlCodec: UrlCodec,
     locationStrategy: LocationStrategy
-  ): locationShim = js.native
+  ): locationShim = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_d")(ngUpgrade.asInstanceOf[js.Any], location.asInstanceOf[js.Any], platformLocation.asInstanceOf[js.Any], urlCodec.asInstanceOf[js.Any], locationStrategy.asInstanceOf[js.Any])).asInstanceOf[locationShim]
   
-  @js.native
   trait LocationUpgradeConfig extends StObject {
     
     /**
       * Configures the base href when used in client-side rendered applications
       */
-    var appBaseHref: js.UndefOr[String] = js.native
+    var appBaseHref: js.UndefOr[String] = js.undefined
     
     /**
       * Configures the hash prefix used in the URL when using the `HashLocationStrategy`
       */
-    var hashPrefix: js.UndefOr[String] = js.native
+    var hashPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * Configures the base href when used in server-side rendered applications
       */
-    var serverBaseHref: js.UndefOr[String] = js.native
+    var serverBaseHref: js.UndefOr[String] = js.undefined
     
     /**
       * Configures the URL codec for encoding and decoding URLs. Default is the `AngularJSCodec`
       */
-    var urlCodec: js.UndefOr[Instantiable0[UrlCodec]] = js.native
+    var urlCodec: js.UndefOr[Instantiable0[UrlCodec]] = js.undefined
     
     /**
       * Configures whether the location upgrade module should use the `HashLocationStrategy`
       * or the `PathLocationStrategy`
       */
-    var useHash: js.UndefOr[Boolean] = js.native
+    var useHash: js.UndefOr[Boolean] = js.undefined
   }
   object LocationUpgradeConfig {
     

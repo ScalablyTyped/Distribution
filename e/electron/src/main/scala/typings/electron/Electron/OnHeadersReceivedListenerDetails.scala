@@ -3,33 +3,31 @@ package typings.electron.Electron
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnHeadersReceivedListenerDetails extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var method: String = js.native
+  var method: String
   
-  var referrer: String = js.native
+  var referrer: String
   
-  var requestHeaders: Record[String, String] = js.native
+  var requestHeaders: Record[String, String]
   
-  var resourceType: String = js.native
+  var resourceType: String
   
-  var responseHeaders: js.UndefOr[Record[String, js.Array[String]]] = js.native
+  var responseHeaders: js.UndefOr[Record[String, js.Array[String]]] = js.undefined
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var statusLine: String = js.native
+  var statusLine: String
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var url: String = js.native
+  var url: String
   
-  var webContentsId: js.UndefOr[Double] = js.native
+  var webContentsId: js.UndefOr[Double] = js.undefined
 }
 object OnHeadersReceivedListenerDetails {
   

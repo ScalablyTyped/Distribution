@@ -2,17 +2,15 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MasteryTreeDto extends StObject {
   
-  var Defense: js.Array[MasteryTreeListDto] = js.native
+  var Defense: js.Array[MasteryTreeListDto]
   
-  var Offense: js.Array[MasteryTreeListDto] = js.native
+  var Offense: js.Array[MasteryTreeListDto]
   
-  var Utility: js.Array[MasteryTreeListDto] = js.native
+  var Utility: js.Array[MasteryTreeListDto]
 }
 object MasteryTreeDto {
   

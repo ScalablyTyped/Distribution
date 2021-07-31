@@ -5,7 +5,6 @@ import typings.ol.projMod.ProjectionLike
 import typings.ol.sourceSourceMod.AttributionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cartoDBMod {
@@ -36,12 +35,11 @@ object cartoDBMod {
     def updateConfig(config: js.Any): Unit = js.native
   }
   
-  @js.native
   trait CartoDBLayerInfo extends StObject {
     
-    var cdn_url: js.Any = js.native
+    var cdn_url: js.Any
     
-    var layergroupid: String = js.native
+    var layergroupid: String
   }
   object CartoDBLayerInfo {
     
@@ -62,28 +60,27 @@ object cartoDBMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var account: String = js.native
+    var account: String
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var cacheSize: js.UndefOr[Double] = js.native
+    var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var config: js.UndefOr[js.Any] = js.native
+    var config: js.UndefOr[js.Any] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var map: js.UndefOr[String] = js.native
+    var map: js.UndefOr[String] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

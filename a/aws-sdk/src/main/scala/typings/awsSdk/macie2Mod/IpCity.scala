@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpCity extends StObject {
   
   /**
     * The name of the city.
     */
-  var name: js.UndefOr[string] = js.native
+  var name: js.UndefOr[string] = js.undefined
 }
 object IpCity {
   

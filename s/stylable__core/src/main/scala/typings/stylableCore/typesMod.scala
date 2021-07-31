@@ -9,12 +9,13 @@ import typings.stylableCore.stylableMetaMod.StylableMeta
 import typings.stylableCore.stylableTransformerMod.StylableResults
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type CSSObject = js.Any with js.Object
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped any
+  - Dropped object */ trait CSSObject extends StObject
   
   @js.native
   trait IStylableClassNameOptimizer extends StObject {
@@ -40,16 +41,15 @@ object typesMod {
     def rewriteSelector(selector: String, usageMapping: Record[String, Boolean], globals: Record[String, Boolean]): String = js.native
   }
   
-  @js.native
   trait IStylableNamespaceOptimizer extends StObject {
     
-    def getNamespace(meta: StylableMeta, _env: js.Any*): String = js.native
+    def getNamespace(meta: StylableMeta, _env: js.Any*): String
     
-    var index: Double = js.native
+    var index: Double
     
-    var namespaceMapping: Record[String, String] = js.native
+    var namespaceMapping: Record[String, String]
     
-    var namespacePrefix: String = js.native
+    var namespacePrefix: String
   }
   object IStylableNamespaceOptimizer {
     
@@ -103,18 +103,17 @@ object typesMod {
   
   type ModuleResolver = js.Function2[/* directoryPath */ String, /* request */ String, String]
   
-  @js.native
   trait ParsedValue extends StObject {
     
-    var nodes: js.UndefOr[js.Any] = js.native
+    var nodes: js.UndefOr[js.Any] = js.undefined
     
-    var resolvedValue: js.UndefOr[String | (Box_[String, _])] = js.native
+    var resolvedValue: js.UndefOr[String | (Box_[String, js.Any])] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object ParsedValue {
     
@@ -135,7 +134,7 @@ object typesMod {
       def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
       
       @scala.inline
-      def setResolvedValue(value: String | (Box_[String, _])): Self = StObject.set(x, "resolvedValue", value.asInstanceOf[js.Any])
+      def setResolvedValue(value: String | (Box_[String, js.Any])): Self = StObject.set(x, "resolvedValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResolvedValueUndefined: Self = StObject.set(x, "resolvedValue", js.undefined)
@@ -154,18 +153,17 @@ object typesMod {
     }
   }
   
-  type PartialObject[T] = Partial[T] with js.Object
+  type PartialObject[T] = Partial[T] & js.Object
   
   type StateArguments = js.Array[StateTypeValidator | String]
   
-  @js.native
   trait StateParsedValue extends StObject {
     
-    var arguments: StateArguments = js.native
+    var arguments: StateArguments
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object StateParsedValue {
     
@@ -196,12 +194,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait StateTypeValidator extends StObject {
     
-    var args: js.Array[String] = js.native
+    var args: js.Array[String]
     
-    var name: String = js.native
+    var name: String
   }
   object StateTypeValidator {
     

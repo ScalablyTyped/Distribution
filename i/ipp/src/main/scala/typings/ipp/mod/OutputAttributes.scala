@@ -2,15 +2,13 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputAttributes extends StObject {
   
-  var `noise-removal`: js.UndefOr[Double] = js.native
+  var `noise-removal`: js.UndefOr[Double] = js.undefined
   
-  var `output-compression-quality-factor`: js.UndefOr[Double] = js.native
+  var `output-compression-quality-factor`: js.UndefOr[Double] = js.undefined
 }
 object OutputAttributes {
   

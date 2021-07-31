@@ -6,24 +6,33 @@ import typings.arcgisJsApi.esri.BuildingFilterConstructor
 import typings.arcgisJsApi.esri.BuildingFilterProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buildingFilterMod extends Shortcut {
   
   @JSImport("esri/layers/support/BuildingFilter", JSImport.Namespace)
   @js.native
-  val ^ : BuildingFilterConstructor = js.native
+  val ^ : js.Object & BuildingFilterConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/BuildingFilter", JSImport.Namespace)
   @js.native
-  class Class () extends BuildingFilter {
+  class Class ()
+    extends StObject
+       with BuildingFilter {
     def this(properties: BuildingFilterProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = BuildingFilterConstructor
+  type _To = js.Object & BuildingFilterConstructor
   
   /* This means you don't have to write `^`, but can instead just say `buildingFilterMod.foo` */
-  override def _to: BuildingFilterConstructor = ^
+  override def _to: js.Object & BuildingFilterConstructor = ^
 }

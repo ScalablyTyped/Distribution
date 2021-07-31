@@ -7,23 +7,21 @@ import typings.grommet.utilsMod.OpacityType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Upper extends StObject {
   
-  var color: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[js.Any] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
-  var lower: js.UndefOr[`7`] = js.native
+  var lower: js.UndefOr[`7`] = js.undefined
   
-  var opacity: js.UndefOr[OpacityType] = js.native
+  var opacity: js.UndefOr[OpacityType] = js.undefined
   
-  var upper: js.UndefOr[`7`] = js.native
+  var upper: js.UndefOr[`7`] = js.undefined
 }
 object Upper {
   
@@ -43,10 +41,10 @@ object Upper {
     def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)

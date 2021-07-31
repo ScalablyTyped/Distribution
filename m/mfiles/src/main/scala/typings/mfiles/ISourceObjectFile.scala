@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISourceObjectFile extends StObject {
   
-  def Clone(): ISourceObjectFile = js.native
+  def Clone(): ISourceObjectFile
   
-  var Extension: String = js.native
+  var Extension: String
   
-  var SourceFilePath: String = js.native
+  var SourceFilePath: String
   
-  var Title: String = js.native
+  var Title: String
 }
 object ISourceObjectFile {
   

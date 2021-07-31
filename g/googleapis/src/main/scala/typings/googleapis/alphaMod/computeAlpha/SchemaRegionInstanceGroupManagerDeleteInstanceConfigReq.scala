@@ -2,26 +2,24 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RegionInstanceGroupManagers.deletePerInstanceConfigs
   */
-@js.native
 trait SchemaRegionInstanceGroupManagerDeleteInstanceConfigReq extends StObject {
   
   /**
     * The list of instances for which we want to delete per-instance configs on
     * this managed instance group.
     */
-  var instances: js.UndefOr[js.Array[String]] = js.native
+  var instances: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The list of instance names for which we want to delete per-instance
     * configs on this managed instance group.
     */
-  var names: js.UndefOr[js.Array[String]] = js.native
+  var names: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaRegionInstanceGroupManagerDeleteInstanceConfigReq {
   

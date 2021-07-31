@@ -3,7 +3,6 @@ package typings.vscodeLanguageserverTypes
 import typings.vscodeLanguageserverTypes.mod.MarkupKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vscodeLanguageserverTypesStrings {
@@ -19,12 +18,16 @@ object vscodeLanguageserverTypesStrings {
   def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait markdown extends MarkupKind
+  sealed trait markdown
+    extends StObject
+       with MarkupKind
   @scala.inline
   def markdown: markdown = "markdown".asInstanceOf[markdown]
   
   @js.native
-  sealed trait plaintext extends MarkupKind
+  sealed trait plaintext
+    extends StObject
+       with MarkupKind
   @scala.inline
   def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   

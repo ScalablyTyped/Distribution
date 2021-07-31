@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2ValidationError extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait GoogleCloudDialogflowV2ValidationError extends StObject {
     * is associated with certain intents. - "projects//agent/intents//trainingPhrases/", if the error is associated with certain intent training phrases. -
     * "projects//agent/intents//parameters/", if the error is associated with certain intent parameters. - "projects//agent/entities/", if the error is associated with certain entities.
     */
-  var entries: js.UndefOr[js.Array[String]] = js.native
+  var entries: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The detailed error messsage. */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /** The severity of the error. */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2ValidationError {
   

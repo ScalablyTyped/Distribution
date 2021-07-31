@@ -2,17 +2,15 @@ package typings.phonon.Phonon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhononI18nOptions extends StObject {
   
-  var directory: js.UndefOr[String] = js.native
+  var directory: js.UndefOr[String] = js.undefined
   
-  var localeFallback: js.UndefOr[String] = js.native
+  var localeFallback: js.UndefOr[String] = js.undefined
   
-  var localePreferred: js.UndefOr[String] = js.native
+  var localePreferred: js.UndefOr[String] = js.undefined
 }
 object PhononI18nOptions {
   

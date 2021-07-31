@@ -2,7 +2,6 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -44,9 +43,9 @@ trait VectorFactory extends StObject {
     * @return {vector} A new vector
     */
   def create(): Vector = js.native
-  def create(x: js.UndefOr[scala.Nothing], y: Double): Vector = js.native
   def create(x: Double): Vector = js.native
   def create(x: Double, y: Double): Vector = js.native
+  def create(x: Unit, y: Double): Vector = js.native
   
   /**
     * Returns the cross-product of two vectors.

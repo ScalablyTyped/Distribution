@@ -11,8 +11,8 @@ Join urls and normalize as in path.join.
 | Full name          | url-join |
 | Keywords           | url, join |
 | # releases         | 2 |
-| # dependents       | 1130 |
-| # downloads        | 103062774 |
+| # dependents       | 1256 |
+| # downloads        | 155052236 |
 | # stars            | 17 |
 
 ## Links

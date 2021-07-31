@@ -10,9 +10,9 @@ Transfer data to Ackee
 | ------------------ | :-------------: |
 | Full name          | ackee-tracker |
 | Keywords           | ackee, tracking, tracker, analytics, statistics |
-| # releases         | 22 |
-| # dependents       | 6 |
-| # downloads        | 41970 |
+| # releases         | 27 |
+| # dependents       | 7 |
+| # downloads        | 49526 |
 | # stars            | 0 |
 
 ## Links

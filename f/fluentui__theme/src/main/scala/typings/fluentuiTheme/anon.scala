@@ -9,22 +9,22 @@ import typings.fluentuiTheme.themeMod.TokenSetType
 import typings.uifabricMergeStyles.irawstyleMod.IRawStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Dictkey extends /* key */ StringDictionary[TokenSetType] {
+  trait Dictkey
+    extends StObject
+       with /* key */ StringDictionary[TokenSetType] {
     
-    var body: ColorTokenSet with TokenSetType = js.native
+    var body: ColorTokenSet & TokenSetType
     
-    var brand: ColorTokenSet with TokenSetType = js.native
+    var brand: ColorTokenSet & TokenSetType
   }
   object Dictkey {
     
     @scala.inline
-    def apply(body: ColorTokenSet with TokenSetType, brand: ColorTokenSet with TokenSetType): Dictkey = {
+    def apply(body: ColorTokenSet & TokenSetType, brand: ColorTokenSet & TokenSetType): Dictkey = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], brand = brand.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
@@ -33,30 +33,29 @@ object anon {
     implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBody(value: ColorTokenSet with TokenSetType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      def setBody(value: ColorTokenSet & TokenSetType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setBrand(value: ColorTokenSet with TokenSetType): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+      def setBrand(value: ColorTokenSet & TokenSetType): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined std.Partial<@fluentui/theme.@fluentui/theme/lib/types.IEffects> */
-  @js.native
   trait PartialIEffects extends StObject {
     
-    var elevation16: js.UndefOr[String] = js.native
+    var elevation16: js.UndefOr[String] = js.undefined
     
-    var elevation4: js.UndefOr[String] = js.native
+    var elevation4: js.UndefOr[String] = js.undefined
     
-    var elevation64: js.UndefOr[String] = js.native
+    var elevation64: js.UndefOr[String] = js.undefined
     
-    var elevation8: js.UndefOr[String] = js.native
+    var elevation8: js.UndefOr[String] = js.undefined
     
-    var roundedCorner2: js.UndefOr[String] = js.native
+    var roundedCorner2: js.UndefOr[String] = js.undefined
     
-    var roundedCorner4: js.UndefOr[String] = js.native
+    var roundedCorner4: js.UndefOr[String] = js.undefined
     
-    var roundedCorner6: js.UndefOr[String] = js.native
+    var roundedCorner6: js.UndefOr[String] = js.undefined
   }
   object PartialIEffects {
     
@@ -114,34 +113,33 @@ object anon {
   }
   
   /* Inlined std.Partial<@fluentui/theme.@fluentui/theme/lib/types/IFontStyles.IFontStyles> */
-  @js.native
   trait PartialIFontStyles extends StObject {
     
-    var large: js.UndefOr[IRawStyle] = js.native
+    var large: js.UndefOr[IRawStyle] = js.undefined
     
-    var medium: js.UndefOr[IRawStyle] = js.native
+    var medium: js.UndefOr[IRawStyle] = js.undefined
     
-    var mediumPlus: js.UndefOr[IRawStyle] = js.native
+    var mediumPlus: js.UndefOr[IRawStyle] = js.undefined
     
-    var mega: js.UndefOr[IRawStyle] = js.native
+    var mega: js.UndefOr[IRawStyle] = js.undefined
     
-    var small: js.UndefOr[IRawStyle] = js.native
+    var small: js.UndefOr[IRawStyle] = js.undefined
     
-    var smallPlus: js.UndefOr[IRawStyle] = js.native
+    var smallPlus: js.UndefOr[IRawStyle] = js.undefined
     
-    var superLarge: js.UndefOr[IRawStyle] = js.native
+    var superLarge: js.UndefOr[IRawStyle] = js.undefined
     
-    var tiny: js.UndefOr[IRawStyle] = js.native
+    var tiny: js.UndefOr[IRawStyle] = js.undefined
     
-    var xLarge: js.UndefOr[IRawStyle] = js.native
+    var xLarge: js.UndefOr[IRawStyle] = js.undefined
     
-    var xLargePlus: js.UndefOr[IRawStyle] = js.native
+    var xLargePlus: js.UndefOr[IRawStyle] = js.undefined
     
-    var xSmall: js.UndefOr[IRawStyle] = js.native
+    var xSmall: js.UndefOr[IRawStyle] = js.undefined
     
-    var xxLarge: js.UndefOr[IRawStyle] = js.native
+    var xxLarge: js.UndefOr[IRawStyle] = js.undefined
     
-    var xxLargePlus: js.UndefOr[IRawStyle] = js.native
+    var xxLargePlus: js.UndefOr[IRawStyle] = js.undefined
   }
   object PartialIFontStyles {
     
@@ -235,108 +233,107 @@ object anon {
   }
   
   /* Inlined std.Partial<@fluentui/theme.@fluentui/theme/lib/types.IPalette> */
-  @js.native
   trait PartialIPalette extends StObject {
     
-    var accent: js.UndefOr[String] = js.native
+    var accent: js.UndefOr[String] = js.undefined
     
-    var black: js.UndefOr[String] = js.native
+    var black: js.UndefOr[String] = js.undefined
     
-    var blackTranslucent40: js.UndefOr[String] = js.native
+    var blackTranslucent40: js.UndefOr[String] = js.undefined
     
-    var blue: js.UndefOr[String] = js.native
+    var blue: js.UndefOr[String] = js.undefined
     
-    var blueDark: js.UndefOr[String] = js.native
+    var blueDark: js.UndefOr[String] = js.undefined
     
-    var blueLight: js.UndefOr[String] = js.native
+    var blueLight: js.UndefOr[String] = js.undefined
     
-    var blueMid: js.UndefOr[String] = js.native
+    var blueMid: js.UndefOr[String] = js.undefined
     
-    var green: js.UndefOr[String] = js.native
+    var green: js.UndefOr[String] = js.undefined
     
-    var greenDark: js.UndefOr[String] = js.native
+    var greenDark: js.UndefOr[String] = js.undefined
     
-    var greenLight: js.UndefOr[String] = js.native
+    var greenLight: js.UndefOr[String] = js.undefined
     
-    var magenta: js.UndefOr[String] = js.native
+    var magenta: js.UndefOr[String] = js.undefined
     
-    var magentaDark: js.UndefOr[String] = js.native
+    var magentaDark: js.UndefOr[String] = js.undefined
     
-    var magentaLight: js.UndefOr[String] = js.native
+    var magentaLight: js.UndefOr[String] = js.undefined
     
-    var neutralDark: js.UndefOr[String] = js.native
+    var neutralDark: js.UndefOr[String] = js.undefined
     
-    var neutralLight: js.UndefOr[String] = js.native
+    var neutralLight: js.UndefOr[String] = js.undefined
     
-    var neutralLighter: js.UndefOr[String] = js.native
+    var neutralLighter: js.UndefOr[String] = js.undefined
     
-    var neutralLighterAlt: js.UndefOr[String] = js.native
+    var neutralLighterAlt: js.UndefOr[String] = js.undefined
     
-    var neutralPrimary: js.UndefOr[String] = js.native
+    var neutralPrimary: js.UndefOr[String] = js.undefined
     
-    var neutralPrimaryAlt: js.UndefOr[String] = js.native
+    var neutralPrimaryAlt: js.UndefOr[String] = js.undefined
     
-    var neutralQuaternary: js.UndefOr[String] = js.native
+    var neutralQuaternary: js.UndefOr[String] = js.undefined
     
-    var neutralQuaternaryAlt: js.UndefOr[String] = js.native
+    var neutralQuaternaryAlt: js.UndefOr[String] = js.undefined
     
-    var neutralSecondary: js.UndefOr[String] = js.native
+    var neutralSecondary: js.UndefOr[String] = js.undefined
     
-    var neutralSecondaryAlt: js.UndefOr[String] = js.native
+    var neutralSecondaryAlt: js.UndefOr[String] = js.undefined
     
-    var neutralTertiary: js.UndefOr[String] = js.native
+    var neutralTertiary: js.UndefOr[String] = js.undefined
     
-    var neutralTertiaryAlt: js.UndefOr[String] = js.native
+    var neutralTertiaryAlt: js.UndefOr[String] = js.undefined
     
-    var orange: js.UndefOr[String] = js.native
+    var orange: js.UndefOr[String] = js.undefined
     
-    var orangeLight: js.UndefOr[String] = js.native
+    var orangeLight: js.UndefOr[String] = js.undefined
     
-    var orangeLighter: js.UndefOr[String] = js.native
+    var orangeLighter: js.UndefOr[String] = js.undefined
     
-    var purple: js.UndefOr[String] = js.native
+    var purple: js.UndefOr[String] = js.undefined
     
-    var purpleDark: js.UndefOr[String] = js.native
+    var purpleDark: js.UndefOr[String] = js.undefined
     
-    var purpleLight: js.UndefOr[String] = js.native
+    var purpleLight: js.UndefOr[String] = js.undefined
     
-    var red: js.UndefOr[String] = js.native
+    var red: js.UndefOr[String] = js.undefined
     
-    var redDark: js.UndefOr[String] = js.native
+    var redDark: js.UndefOr[String] = js.undefined
     
-    var teal: js.UndefOr[String] = js.native
+    var teal: js.UndefOr[String] = js.undefined
     
-    var tealDark: js.UndefOr[String] = js.native
+    var tealDark: js.UndefOr[String] = js.undefined
     
-    var tealLight: js.UndefOr[String] = js.native
+    var tealLight: js.UndefOr[String] = js.undefined
     
-    var themeDark: js.UndefOr[String] = js.native
+    var themeDark: js.UndefOr[String] = js.undefined
     
-    var themeDarkAlt: js.UndefOr[String] = js.native
+    var themeDarkAlt: js.UndefOr[String] = js.undefined
     
-    var themeDarker: js.UndefOr[String] = js.native
+    var themeDarker: js.UndefOr[String] = js.undefined
     
-    var themeLight: js.UndefOr[String] = js.native
+    var themeLight: js.UndefOr[String] = js.undefined
     
-    var themeLighter: js.UndefOr[String] = js.native
+    var themeLighter: js.UndefOr[String] = js.undefined
     
-    var themeLighterAlt: js.UndefOr[String] = js.native
+    var themeLighterAlt: js.UndefOr[String] = js.undefined
     
-    var themePrimary: js.UndefOr[String] = js.native
+    var themePrimary: js.UndefOr[String] = js.undefined
     
-    var themeSecondary: js.UndefOr[String] = js.native
+    var themeSecondary: js.UndefOr[String] = js.undefined
     
-    var themeTertiary: js.UndefOr[String] = js.native
+    var themeTertiary: js.UndefOr[String] = js.undefined
     
-    var white: js.UndefOr[String] = js.native
+    var white: js.UndefOr[String] = js.undefined
     
-    var whiteTranslucent40: js.UndefOr[String] = js.native
+    var whiteTranslucent40: js.UndefOr[String] = js.undefined
     
-    var yellow: js.UndefOr[String] = js.native
+    var yellow: js.UndefOr[String] = js.undefined
     
-    var yellowDark: js.UndefOr[String] = js.native
+    var yellowDark: js.UndefOr[String] = js.undefined
     
-    var yellowLight: js.UndefOr[String] = js.native
+    var yellowLight: js.UndefOr[String] = js.undefined
   }
   object PartialIPalette {
     
@@ -652,214 +649,213 @@ object anon {
   }
   
   /* Inlined std.Partial<@fluentui/theme.@fluentui/theme/lib/types.ISemanticColors> */
-  @js.native
   trait PartialISemanticColors extends StObject {
     
-    var accentButtonBackground: js.UndefOr[String] = js.native
+    var accentButtonBackground: js.UndefOr[String] = js.undefined
     
-    var accentButtonText: js.UndefOr[String] = js.native
+    var accentButtonText: js.UndefOr[String] = js.undefined
     
-    var actionLink: js.UndefOr[String] = js.native
+    var actionLink: js.UndefOr[String] = js.undefined
     
-    var actionLinkHovered: js.UndefOr[String] = js.native
+    var actionLinkHovered: js.UndefOr[String] = js.undefined
     
-    var blockingBackground: js.UndefOr[String] = js.native
+    var blockingBackground: js.UndefOr[String] = js.undefined
     
-    var blockingIcon: js.UndefOr[String] = js.native
+    var blockingIcon: js.UndefOr[String] = js.undefined
     
-    var bodyBackground: js.UndefOr[String] = js.native
+    var bodyBackground: js.UndefOr[String] = js.undefined
     
-    var bodyBackgroundChecked: js.UndefOr[String] = js.native
+    var bodyBackgroundChecked: js.UndefOr[String] = js.undefined
     
-    var bodyBackgroundHovered: js.UndefOr[String] = js.native
+    var bodyBackgroundHovered: js.UndefOr[String] = js.undefined
     
-    var bodyDivider: js.UndefOr[String] = js.native
+    var bodyDivider: js.UndefOr[String] = js.undefined
     
-    var bodyFrameBackground: js.UndefOr[String] = js.native
+    var bodyFrameBackground: js.UndefOr[String] = js.undefined
     
-    var bodyFrameDivider: js.UndefOr[String] = js.native
+    var bodyFrameDivider: js.UndefOr[String] = js.undefined
     
-    var bodyStandoutBackground: js.UndefOr[String] = js.native
+    var bodyStandoutBackground: js.UndefOr[String] = js.undefined
     
-    var bodySubtext: js.UndefOr[String] = js.native
+    var bodySubtext: js.UndefOr[String] = js.undefined
     
-    var bodyText: js.UndefOr[String] = js.native
+    var bodyText: js.UndefOr[String] = js.undefined
     
-    var bodyTextChecked: js.UndefOr[String] = js.native
+    var bodyTextChecked: js.UndefOr[String] = js.undefined
     
-    var buttonBackground: js.UndefOr[String] = js.native
+    var buttonBackground: js.UndefOr[String] = js.undefined
     
-    var buttonBackgroundChecked: js.UndefOr[String] = js.native
+    var buttonBackgroundChecked: js.UndefOr[String] = js.undefined
     
-    var buttonBackgroundCheckedHovered: js.UndefOr[String] = js.native
+    var buttonBackgroundCheckedHovered: js.UndefOr[String] = js.undefined
     
-    var buttonBackgroundDisabled: js.UndefOr[String] = js.native
+    var buttonBackgroundDisabled: js.UndefOr[String] = js.undefined
     
-    var buttonBackgroundHovered: js.UndefOr[String] = js.native
+    var buttonBackgroundHovered: js.UndefOr[String] = js.undefined
     
-    var buttonBackgroundPressed: js.UndefOr[String] = js.native
+    var buttonBackgroundPressed: js.UndefOr[String] = js.undefined
     
-    var buttonBorder: js.UndefOr[String] = js.native
+    var buttonBorder: js.UndefOr[String] = js.undefined
     
-    var buttonBorderDisabled: js.UndefOr[String] = js.native
+    var buttonBorderDisabled: js.UndefOr[String] = js.undefined
     
-    var buttonText: js.UndefOr[String] = js.native
+    var buttonText: js.UndefOr[String] = js.undefined
     
-    var buttonTextChecked: js.UndefOr[String] = js.native
+    var buttonTextChecked: js.UndefOr[String] = js.undefined
     
-    var buttonTextCheckedHovered: js.UndefOr[String] = js.native
+    var buttonTextCheckedHovered: js.UndefOr[String] = js.undefined
     
-    var buttonTextDisabled: js.UndefOr[String] = js.native
+    var buttonTextDisabled: js.UndefOr[String] = js.undefined
     
-    var buttonTextHovered: js.UndefOr[String] = js.native
+    var buttonTextHovered: js.UndefOr[String] = js.undefined
     
-    var buttonTextPressed: js.UndefOr[String] = js.native
+    var buttonTextPressed: js.UndefOr[String] = js.undefined
     
-    var cardShadow: js.UndefOr[String] = js.native
+    var cardShadow: js.UndefOr[String] = js.undefined
     
-    var cardShadowHovered: js.UndefOr[String] = js.native
+    var cardShadowHovered: js.UndefOr[String] = js.undefined
     
-    var cardStandoutBackground: js.UndefOr[String] = js.native
+    var cardStandoutBackground: js.UndefOr[String] = js.undefined
     
-    var defaultStateBackground: js.UndefOr[String] = js.native
+    var defaultStateBackground: js.UndefOr[String] = js.undefined
     
-    var disabledBackground: js.UndefOr[String] = js.native
+    var disabledBackground: js.UndefOr[String] = js.undefined
     
-    var disabledBodySubtext: js.UndefOr[String] = js.native
+    var disabledBodySubtext: js.UndefOr[String] = js.undefined
     
-    var disabledBodyText: js.UndefOr[String] = js.native
+    var disabledBodyText: js.UndefOr[String] = js.undefined
     
-    var disabledBorder: js.UndefOr[String] = js.native
+    var disabledBorder: js.UndefOr[String] = js.undefined
     
-    var disabledSubtext: js.UndefOr[String] = js.native
+    var disabledSubtext: js.UndefOr[String] = js.undefined
     
-    var disabledText: js.UndefOr[String] = js.native
+    var disabledText: js.UndefOr[String] = js.undefined
     
-    var errorBackground: js.UndefOr[String] = js.native
+    var errorBackground: js.UndefOr[String] = js.undefined
     
-    var errorIcon: js.UndefOr[String] = js.native
+    var errorIcon: js.UndefOr[String] = js.undefined
     
-    var errorText: js.UndefOr[String] = js.native
+    var errorText: js.UndefOr[String] = js.undefined
     
-    var focusBorder: js.UndefOr[String] = js.native
+    var focusBorder: js.UndefOr[String] = js.undefined
     
-    var infoBackground: js.UndefOr[String] = js.native
+    var infoBackground: js.UndefOr[String] = js.undefined
     
-    var infoIcon: js.UndefOr[String] = js.native
+    var infoIcon: js.UndefOr[String] = js.undefined
     
-    var inputBackground: js.UndefOr[String] = js.native
+    var inputBackground: js.UndefOr[String] = js.undefined
     
-    var inputBackgroundChecked: js.UndefOr[String] = js.native
+    var inputBackgroundChecked: js.UndefOr[String] = js.undefined
     
-    var inputBackgroundCheckedHovered: js.UndefOr[String] = js.native
+    var inputBackgroundCheckedHovered: js.UndefOr[String] = js.undefined
     
-    var inputBorder: js.UndefOr[String] = js.native
+    var inputBorder: js.UndefOr[String] = js.undefined
     
-    var inputBorderHovered: js.UndefOr[String] = js.native
+    var inputBorderHovered: js.UndefOr[String] = js.undefined
     
-    var inputFocusBorderAlt: js.UndefOr[String] = js.native
+    var inputFocusBorderAlt: js.UndefOr[String] = js.undefined
     
-    var inputForegroundChecked: js.UndefOr[String] = js.native
+    var inputForegroundChecked: js.UndefOr[String] = js.undefined
     
-    var inputIcon: js.UndefOr[String] = js.native
+    var inputIcon: js.UndefOr[String] = js.undefined
     
-    var inputIconDisabled: js.UndefOr[String] = js.native
+    var inputIconDisabled: js.UndefOr[String] = js.undefined
     
-    var inputIconHovered: js.UndefOr[String] = js.native
+    var inputIconHovered: js.UndefOr[String] = js.undefined
     
-    var inputPlaceholderBackgroundChecked: js.UndefOr[String] = js.native
+    var inputPlaceholderBackgroundChecked: js.UndefOr[String] = js.undefined
     
-    var inputPlaceholderText: js.UndefOr[String] = js.native
+    var inputPlaceholderText: js.UndefOr[String] = js.undefined
     
-    var inputText: js.UndefOr[String] = js.native
+    var inputText: js.UndefOr[String] = js.undefined
     
-    var inputTextHovered: js.UndefOr[String] = js.native
+    var inputTextHovered: js.UndefOr[String] = js.undefined
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
-    var linkHovered: js.UndefOr[String] = js.native
+    var linkHovered: js.UndefOr[String] = js.undefined
     
-    var listBackground: js.UndefOr[String] = js.native
+    var listBackground: js.UndefOr[String] = js.undefined
     
-    var listHeaderBackgroundHovered: js.UndefOr[String] = js.native
+    var listHeaderBackgroundHovered: js.UndefOr[String] = js.undefined
     
-    var listHeaderBackgroundPressed: js.UndefOr[String] = js.native
+    var listHeaderBackgroundPressed: js.UndefOr[String] = js.undefined
     
-    var listItemBackgroundChecked: js.UndefOr[String] = js.native
+    var listItemBackgroundChecked: js.UndefOr[String] = js.undefined
     
-    var listItemBackgroundCheckedHovered: js.UndefOr[String] = js.native
+    var listItemBackgroundCheckedHovered: js.UndefOr[String] = js.undefined
     
-    var listItemBackgroundHovered: js.UndefOr[String] = js.native
+    var listItemBackgroundHovered: js.UndefOr[String] = js.undefined
     
-    var listText: js.UndefOr[String] = js.native
+    var listText: js.UndefOr[String] = js.undefined
     
-    var listTextColor: js.UndefOr[String] = js.native
+    var listTextColor: js.UndefOr[String] = js.undefined
     
-    var menuBackground: js.UndefOr[String] = js.native
+    var menuBackground: js.UndefOr[String] = js.undefined
     
-    var menuDivider: js.UndefOr[String] = js.native
+    var menuDivider: js.UndefOr[String] = js.undefined
     
-    var menuHeader: js.UndefOr[String] = js.native
+    var menuHeader: js.UndefOr[String] = js.undefined
     
-    var menuIcon: js.UndefOr[String] = js.native
+    var menuIcon: js.UndefOr[String] = js.undefined
     
-    var menuItemBackgroundChecked: js.UndefOr[String] = js.native
+    var menuItemBackgroundChecked: js.UndefOr[String] = js.undefined
     
-    var menuItemBackgroundHovered: js.UndefOr[String] = js.native
+    var menuItemBackgroundHovered: js.UndefOr[String] = js.undefined
     
-    var menuItemBackgroundPressed: js.UndefOr[String] = js.native
+    var menuItemBackgroundPressed: js.UndefOr[String] = js.undefined
     
-    var menuItemText: js.UndefOr[String] = js.native
+    var menuItemText: js.UndefOr[String] = js.undefined
     
-    var menuItemTextHovered: js.UndefOr[String] = js.native
+    var menuItemTextHovered: js.UndefOr[String] = js.undefined
     
-    var messageLink: js.UndefOr[String] = js.native
+    var messageLink: js.UndefOr[String] = js.undefined
     
-    var messageLinkHovered: js.UndefOr[String] = js.native
+    var messageLinkHovered: js.UndefOr[String] = js.undefined
     
-    var messageText: js.UndefOr[String] = js.native
+    var messageText: js.UndefOr[String] = js.undefined
     
-    var primaryButtonBackground: js.UndefOr[String] = js.native
+    var primaryButtonBackground: js.UndefOr[String] = js.undefined
     
-    var primaryButtonBackgroundDisabled: js.UndefOr[String] = js.native
+    var primaryButtonBackgroundDisabled: js.UndefOr[String] = js.undefined
     
-    var primaryButtonBackgroundHovered: js.UndefOr[String] = js.native
+    var primaryButtonBackgroundHovered: js.UndefOr[String] = js.undefined
     
-    var primaryButtonBackgroundPressed: js.UndefOr[String] = js.native
+    var primaryButtonBackgroundPressed: js.UndefOr[String] = js.undefined
     
-    var primaryButtonBorder: js.UndefOr[String] = js.native
+    var primaryButtonBorder: js.UndefOr[String] = js.undefined
     
-    var primaryButtonText: js.UndefOr[String] = js.native
+    var primaryButtonText: js.UndefOr[String] = js.undefined
     
-    var primaryButtonTextDisabled: js.UndefOr[String] = js.native
+    var primaryButtonTextDisabled: js.UndefOr[String] = js.undefined
     
-    var primaryButtonTextHovered: js.UndefOr[String] = js.native
+    var primaryButtonTextHovered: js.UndefOr[String] = js.undefined
     
-    var primaryButtonTextPressed: js.UndefOr[String] = js.native
+    var primaryButtonTextPressed: js.UndefOr[String] = js.undefined
     
-    var severeWarningBackground: js.UndefOr[String] = js.native
+    var severeWarningBackground: js.UndefOr[String] = js.undefined
     
-    var severeWarningIcon: js.UndefOr[String] = js.native
+    var severeWarningIcon: js.UndefOr[String] = js.undefined
     
-    var smallInputBorder: js.UndefOr[String] = js.native
+    var smallInputBorder: js.UndefOr[String] = js.undefined
     
-    var successBackground: js.UndefOr[String] = js.native
+    var successBackground: js.UndefOr[String] = js.undefined
     
-    var successIcon: js.UndefOr[String] = js.native
+    var successIcon: js.UndefOr[String] = js.undefined
     
-    var successText: js.UndefOr[String] = js.native
+    var successText: js.UndefOr[String] = js.undefined
     
-    var variantBorder: js.UndefOr[String] = js.native
+    var variantBorder: js.UndefOr[String] = js.undefined
     
-    var variantBorderHovered: js.UndefOr[String] = js.native
+    var variantBorderHovered: js.UndefOr[String] = js.undefined
     
-    var warningBackground: js.UndefOr[String] = js.native
+    var warningBackground: js.UndefOr[String] = js.undefined
     
-    var warningHighlight: js.UndefOr[String] = js.native
+    var warningHighlight: js.UndefOr[String] = js.undefined
     
-    var warningIcon: js.UndefOr[String] = js.native
+    var warningIcon: js.UndefOr[String] = js.undefined
     
-    var warningText: js.UndefOr[String] = js.native
+    var warningText: js.UndefOr[String] = js.undefined
   }
   object PartialISemanticColors {
     
@@ -1493,18 +1489,17 @@ object anon {
   }
   
   /* Inlined std.Partial<@fluentui/theme.@fluentui/theme/lib/types/ISpacing.ISpacing> */
-  @js.native
   trait PartialISpacing extends StObject {
     
-    var l1: js.UndefOr[String] = js.native
+    var l1: js.UndefOr[String] = js.undefined
     
-    var l2: js.UndefOr[String] = js.native
+    var l2: js.UndefOr[String] = js.undefined
     
-    var m: js.UndefOr[String] = js.native
+    var m: js.UndefOr[String] = js.undefined
     
-    var s1: js.UndefOr[String] = js.native
+    var s1: js.UndefOr[String] = js.undefined
     
-    var s2: js.UndefOr[String] = js.native
+    var s2: js.UndefOr[String] = js.undefined
   }
   object PartialISpacing {
     
@@ -1550,16 +1545,15 @@ object anon {
   }
   
   /* Inlined {[ P in @fluentui/theme.@fluentui/theme/lib/types/IScheme.ISchemeNames ]:? @fluentui/theme.@fluentui/theme/lib/types/IScheme.IScheme} */
-  @js.native
   trait PinISchemeNamesIScheme extends StObject {
     
-    var default: js.UndefOr[IScheme] = js.native
+    var default: js.UndefOr[IScheme] = js.undefined
     
-    var neutral: js.UndefOr[IScheme] = js.native
+    var neutral: js.UndefOr[IScheme] = js.undefined
     
-    var soft: js.UndefOr[IScheme] = js.native
+    var soft: js.UndefOr[IScheme] = js.undefined
     
-    var strong: js.UndefOr[IScheme] = js.native
+    var strong: js.UndefOr[IScheme] = js.undefined
   }
   object PinISchemeNamesIScheme {
     
@@ -1599,32 +1593,31 @@ object anon {
   }
   
   /* Inlined @fluentui/theme.@fluentui/theme/lib/types/Theme.RecursivePartial<@fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokenSet & @fluentui/theme.@fluentui/theme/lib/types/Theme.TokenSetType> */
-  @js.native
   trait RecursivePartialColorToke extends StObject {
     
-    var background: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+    var background: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var borderColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+    var borderColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var contentColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+    var contentColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var dividerColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+    var dividerColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var focusColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+    var focusColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var focusInnerColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+    var focusInnerColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var highContrast: js.UndefOr[RecursivePartial[js.UndefOr[ColorTokens]] | js.Array[RecursivePartial[_]]] = js.native
+    var highContrast: js.UndefOr[RecursivePartial[js.UndefOr[ColorTokens]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var iconColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+    var iconColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var linkColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+    var linkColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var menuIconColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+    var menuIconColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var opacity: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+    var opacity: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var secondaryContentColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+    var secondaryContentColor: js.UndefOr[RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]] = js.undefined
   }
   object RecursivePartialColorToke {
     
@@ -1638,7 +1631,7 @@ object anon {
     implicit class RecursivePartialColorTokeMutableBuilder[Self <: RecursivePartialColorToke] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBackground(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      def setBackground(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
@@ -1647,7 +1640,7 @@ object anon {
       def setBackgroundVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "background", js.Array(value :_*))
       
       @scala.inline
-      def setBorderColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      def setBorderColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
@@ -1656,7 +1649,7 @@ object anon {
       def setBorderColorVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
       
       @scala.inline
-      def setContentColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "contentColor", value.asInstanceOf[js.Any])
+      def setContentColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "contentColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setContentColorUndefined: Self = StObject.set(x, "contentColor", js.undefined)
@@ -1665,7 +1658,7 @@ object anon {
       def setContentColorVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "contentColor", js.Array(value :_*))
       
       @scala.inline
-      def setDividerColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
+      def setDividerColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDividerColorUndefined: Self = StObject.set(x, "dividerColor", js.undefined)
@@ -1674,7 +1667,7 @@ object anon {
       def setDividerColorVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "dividerColor", js.Array(value :_*))
       
       @scala.inline
-      def setFocusColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "focusColor", value.asInstanceOf[js.Any])
+      def setFocusColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "focusColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFocusColorUndefined: Self = StObject.set(x, "focusColor", js.undefined)
@@ -1683,7 +1676,7 @@ object anon {
       def setFocusColorVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "focusColor", js.Array(value :_*))
       
       @scala.inline
-      def setFocusInnerColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "focusInnerColor", value.asInstanceOf[js.Any])
+      def setFocusInnerColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "focusInnerColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFocusInnerColorUndefined: Self = StObject.set(x, "focusInnerColor", js.undefined)
@@ -1692,7 +1685,7 @@ object anon {
       def setFocusInnerColorVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "focusInnerColor", js.Array(value :_*))
       
       @scala.inline
-      def setHighContrast(value: RecursivePartial[js.UndefOr[ColorTokens]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "highContrast", value.asInstanceOf[js.Any])
+      def setHighContrast(value: RecursivePartial[js.UndefOr[ColorTokens]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "highContrast", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHighContrastUndefined: Self = StObject.set(x, "highContrast", js.undefined)
@@ -1701,7 +1694,7 @@ object anon {
       def setHighContrastVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "highContrast", js.Array(value :_*))
       
       @scala.inline
-      def setIconColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
+      def setIconColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
@@ -1710,7 +1703,7 @@ object anon {
       def setIconColorVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "iconColor", js.Array(value :_*))
       
       @scala.inline
-      def setLinkColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "linkColor", value.asInstanceOf[js.Any])
+      def setLinkColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "linkColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLinkColorUndefined: Self = StObject.set(x, "linkColor", js.undefined)
@@ -1719,7 +1712,7 @@ object anon {
       def setLinkColorVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "linkColor", js.Array(value :_*))
       
       @scala.inline
-      def setMenuIconColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "menuIconColor", value.asInstanceOf[js.Any])
+      def setMenuIconColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "menuIconColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMenuIconColorUndefined: Self = StObject.set(x, "menuIconColor", js.undefined)
@@ -1728,7 +1721,7 @@ object anon {
       def setMenuIconColorVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "menuIconColor", js.Array(value :_*))
       
       @scala.inline
-      def setOpacity(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      def setOpacity(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
@@ -1737,7 +1730,7 @@ object anon {
       def setOpacityVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "opacity", js.Array(value :_*))
       
       @scala.inline
-      def setSecondaryContentColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "secondaryContentColor", value.asInstanceOf[js.Any])
+      def setSecondaryContentColor(value: RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "secondaryContentColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSecondaryContentColorUndefined: Self = StObject.set(x, "secondaryContentColor", js.undefined)
@@ -1748,10 +1741,9 @@ object anon {
   }
   
   /* Inlined @fluentui/theme.@fluentui/theme/lib/types/Theme.RecursivePartial<@fluentui/theme.@fluentui/theme/lib/types/Theme.Tokens> */
-  @js.native
   trait RecursivePartialTokens extends StObject {
     
-    var color: js.UndefOr[RecursivePartialbodyColor | js.Array[RecursivePartial[_]]] = js.native
+    var color: js.UndefOr[RecursivePartialbodyColor | js.Array[RecursivePartial[js.Any]]] = js.undefined
   }
   object RecursivePartialTokens {
     
@@ -1765,7 +1757,7 @@ object anon {
     implicit class RecursivePartialTokensMutableBuilder[Self <: RecursivePartialTokens] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setColor(value: RecursivePartialbodyColor | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      def setColor(value: RecursivePartialbodyColor | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
@@ -1776,12 +1768,11 @@ object anon {
   }
   
   /* Inlined @fluentui/theme.@fluentui/theme/lib/types/Theme.RecursivePartial<{  body :@fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokenSet & @fluentui/theme.@fluentui/theme/lib/types/Theme.TokenSetType,   brand :@fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokenSet & @fluentui/theme.@fluentui/theme/lib/types/Theme.TokenSetType, [key: string] : @fluentui/theme.@fluentui/theme/lib/types/Theme.TokenSetType}> */
-  @js.native
   trait RecursivePartialbodyColor extends StObject {
     
-    var body: js.UndefOr[RecursivePartialColorToke | js.Array[RecursivePartial[_]]] = js.native
+    var body: js.UndefOr[RecursivePartialColorToke | js.Array[RecursivePartial[js.Any]]] = js.undefined
     
-    var brand: js.UndefOr[RecursivePartialColorToke | js.Array[RecursivePartial[_]]] = js.native
+    var brand: js.UndefOr[RecursivePartialColorToke | js.Array[RecursivePartial[js.Any]]] = js.undefined
   }
   object RecursivePartialbodyColor {
     
@@ -1795,7 +1786,7 @@ object anon {
     implicit class RecursivePartialbodyColorMutableBuilder[Self <: RecursivePartialbodyColor] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBody(value: RecursivePartialColorToke | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      def setBody(value: RecursivePartialColorToke | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
@@ -1804,7 +1795,7 @@ object anon {
       def setBodyVarargs(value: RecursivePartial[js.Any]*): Self = StObject.set(x, "body", js.Array(value :_*))
       
       @scala.inline
-      def setBrand(value: RecursivePartialColorToke | js.Array[RecursivePartial[_]]): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+      def setBrand(value: RecursivePartialColorToke | js.Array[RecursivePartial[js.Any]]): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)

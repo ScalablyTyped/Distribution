@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Network.SetCacheDisabledRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `118` extends StObject {
   
-  var paramsType: js.Array[SetCacheDisabledRequest] = js.native
+  var paramsType: js.Array[SetCacheDisabledRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `118` {
   

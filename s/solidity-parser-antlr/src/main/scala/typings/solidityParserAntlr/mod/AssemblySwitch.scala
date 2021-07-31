@@ -2,24 +2,23 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
 trait AssemblySwitch
-  extends AssemblyItem
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with AssemblyItem {
   
   @JSName("type")
-  var type_AssemblySwitch: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch = js.native
+  var type_AssemblySwitch: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch
 }
 object AssemblySwitch {
   
   @scala.inline
-  def apply(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch): AssemblySwitch = {
+  def apply(): AssemblySwitch = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssemblySwitch")
     __obj.asInstanceOf[AssemblySwitch]
   }
   

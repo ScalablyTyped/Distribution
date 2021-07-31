@@ -12,7 +12,7 @@ truncates (with ellipsis) overflowing text elements and adds a tooltip https://a
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 6 |
-| # downloads        | 283552 |
+| # downloads        | 320782 |
 | # stars            | 0 |
 
 ## Links

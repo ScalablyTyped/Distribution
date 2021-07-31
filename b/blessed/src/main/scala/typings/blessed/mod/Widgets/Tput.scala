@@ -4,12 +4,13 @@ import typings.blessed.anon.Bools
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blessed", "Widgets.Tput")
 @js.native
-class Tput protected () extends IHasOptions[TputsOptions] {
+class Tput protected ()
+  extends StObject
+     with IHasOptions[TputsOptions] {
   def this(opts: TputsOptions) = this()
   
   var debug: Boolean = js.native
@@ -17,6 +18,9 @@ class Tput protected () extends IHasOptions[TputsOptions] {
   var error: Error = js.native
   
   var extended: Boolean = js.native
+  
+  /* CompleteClass */
+  var options: TputsOptions = js.native
   
   var padding: Boolean = js.native
   

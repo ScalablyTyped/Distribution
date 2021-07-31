@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.Proximity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object PeerDiscoveryTypes extends StObject {
   
   /** You can use Wifi-Direct to find peers by using the FindAllPeersAsync and ConnectAsync methods of the PeerFinder class. */
   @js.native
-  sealed trait browse extends PeerDiscoveryTypes
+  sealed trait browse
+    extends StObject
+       with PeerDiscoveryTypes
   
   /** No supported discovery types are available. You can't use the PeerFinder class. */
   @js.native
-  sealed trait none extends PeerDiscoveryTypes
+  sealed trait none
+    extends StObject
+       with PeerDiscoveryTypes
   
   /** You can tap to connect to peers by using the PeerFinder class. */
   @js.native
-  sealed trait triggered extends PeerDiscoveryTypes
+  sealed trait triggered
+    extends StObject
+       with PeerDiscoveryTypes
 }

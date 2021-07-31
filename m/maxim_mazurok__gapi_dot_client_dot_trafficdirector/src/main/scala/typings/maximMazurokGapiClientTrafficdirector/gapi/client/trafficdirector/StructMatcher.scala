@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StructMatcher extends StObject {
   
   /** The path to retrieve the Value from the Struct. */
-  var path: js.UndefOr[js.Array[PathSegment]] = js.native
+  var path: js.UndefOr[js.Array[PathSegment]] = js.undefined
   
   /** The StructMatcher is matched if the value retrieved by path is matched to this value. */
-  var value: js.UndefOr[ValueMatcher] = js.native
+  var value: js.UndefOr[ValueMatcher] = js.undefined
 }
 object StructMatcher {
   

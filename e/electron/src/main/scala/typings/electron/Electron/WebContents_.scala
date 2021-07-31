@@ -84,7 +84,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -558,8 +557,8 @@ trait WebContents_ extends EventEmitter {
     * this limitation.
   Code execution will be suspended until web page stop loading.
     */
-  def executeJavaScript(code: String): js.Promise[_] = js.native
-  def executeJavaScript(code: String, userGesture: Boolean): js.Promise[_] = js.native
+  def executeJavaScript(code: String): js.Promise[js.Any] = js.native
+  def executeJavaScript(code: String, userGesture: Boolean): js.Promise[js.Any] = js.native
   
   /**
     * A promise that resolves with the result of the executed code or is rejected if
@@ -567,8 +566,8 @@ trait WebContents_ extends EventEmitter {
     * 
   Works like `executeJavaScript` but evaluates `scripts` in an isolated context.
     */
-  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[_] = js.native
-  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[_] = js.native
+  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[js.Any] = js.native
+  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[js.Any] = js.native
   
   /**
     * The request id used for the request.
@@ -700,7 +699,7 @@ trait WebContents_ extends EventEmitter {
   This also affects the Page Visibility API.
     */
   def incrementCapturerCount(): Unit = js.native
-  def incrementCapturerCount(size: js.UndefOr[scala.Nothing], stayHidden: Boolean): Unit = js.native
+  def incrementCapturerCount(size: Unit, stayHidden: Boolean): Unit = js.native
   def incrementCapturerCount(size: Size): Unit = js.native
   def incrementCapturerCount(size: Size, stayHidden: Boolean): Unit = js.native
   
@@ -1824,10 +1823,7 @@ trait WebContents_ extends EventEmitter {
   Example usage:
     */
   def print(): Unit = js.native
-  def print(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* success */ Boolean, /* failureReason */ String, Unit]
-  ): Unit = js.native
+  def print(options: Unit, callback: js.Function2[/* success */ Boolean, /* failureReason */ String, Unit]): Unit = js.native
   def print(options: WebContentsPrintOptions): Unit = js.native
   def print(
     options: WebContentsPrintOptions,

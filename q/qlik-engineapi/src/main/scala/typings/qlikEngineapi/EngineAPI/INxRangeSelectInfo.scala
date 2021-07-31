@@ -2,20 +2,20 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxRangeSelectInfo with extends of RangeSelectInfo
   */
-@js.native
-trait INxRangeSelectInfo extends IRangeSelectInfo {
+trait INxRangeSelectInfo
+  extends StObject
+     with IRangeSelectInfo {
   
   /**
     * Number of the measure to select.
     * Numbering starts from 0.
     */
-  var qMeasureIx: Double = js.native
+  var qMeasureIx: Double
 }
 object INxRangeSelectInfo {
   

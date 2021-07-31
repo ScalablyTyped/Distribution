@@ -13,7 +13,6 @@ import typings.vegaTypings.runtimeMod.TooltipHandler
 import typings.vegaTypings.specMod.Spec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -50,9 +49,12 @@ object mod {
   /* static members */
   object VegaWithSpec {
     
-    @JSImport("react-vega", "VegaWithSpec.getSpec")
+    @JSImport("react-vega", "VegaWithSpec")
     @js.native
-    def getSpec(): Spec = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getSpec(): Spec = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpec")().asInstanceOf[Spec]
   }
   
   @js.native
@@ -64,10 +66,11 @@ object mod {
   
   type Vega = Component[VegaPropsWithSpec, js.Object, js.Any]
   
-  @js.native
-  trait VegaPropsWithSpec extends VegaPropsWithoutSpec {
+  trait VegaPropsWithSpec
+    extends StObject
+       with VegaPropsWithoutSpec {
     
-    var spec: Spec = js.native
+    var spec: Spec
   }
   object VegaPropsWithSpec {
     
@@ -85,34 +88,33 @@ object mod {
     }
   }
   
-  @js.native
   trait VegaPropsWithoutSpec extends StObject {
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[Record[String, js.Array[_]]] = js.native
+    var data: js.UndefOr[Record[String, js.Array[js.Any]]] = js.undefined
     
-    var enableHover: js.UndefOr[Boolean] = js.native
+    var enableHover: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var logLevel: js.UndefOr[Double] = js.native
+    var logLevel: js.UndefOr[Double] = js.undefined
     
-    var onNewView: js.UndefOr[js.Function1[/* view */ View, Unit]] = js.native
+    var onNewView: js.UndefOr[js.Function1[/* view */ View, Unit]] = js.undefined
     
-    var onParseError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onParseError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
-    var padding: js.UndefOr[Double | Bottom] = js.native
+    var padding: js.UndefOr[Double | Bottom] = js.undefined
     
-    var renderer: js.UndefOr[String] = js.native
+    var renderer: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tooltip: js.UndefOr[TooltipHandler] = js.native
+    var tooltip: js.UndefOr[TooltipHandler] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object VegaPropsWithoutSpec {
     
@@ -138,7 +140,7 @@ object mod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setData(value: Record[String, js.Array[_]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

@@ -2,13 +2,13 @@ package typings.bootstrapDatepicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DatepickerBeforeShowDayResponse extends DatepickerBeforeShowResponse {
+trait DatepickerBeforeShowDayResponse
+  extends StObject
+     with DatepickerBeforeShowResponse {
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
 }
 object DatepickerBeforeShowDayResponse {
   

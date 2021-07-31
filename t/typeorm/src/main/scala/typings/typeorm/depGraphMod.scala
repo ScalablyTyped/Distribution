@@ -2,7 +2,6 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object depGraphMod {
@@ -30,7 +29,7 @@ object depGraphMod {
       *
       * If `leavesOnly` is true, only nodes that do not have any dependants will be returned in the array.
       */
-    def dependantsOf(node: js.Any, leavesOnly: js.Any): js.Array[_] = js.native
+    def dependantsOf(node: js.Any, leavesOnly: js.Any): js.Array[js.Any] = js.native
     
     /**
       * Get an array containing the nodes that the specified node depends on (transitively).
@@ -40,7 +39,7 @@ object depGraphMod {
       * If `leavesOnly` is true, only nodes that do not depend on any other nodes will be returned
       * in the array.
       */
-    def dependenciesOf(node: js.Any, leavesOnly: js.Any): js.Array[_] = js.native
+    def dependenciesOf(node: js.Any, leavesOnly: js.Any): js.Array[js.Any] = js.native
     
     /**
       * Get the data associated with a node name
@@ -65,8 +64,8 @@ object depGraphMod {
       *
       * If `leavesOnly` is true, only nodes that do not depend on any other nodes will be returned.
       */
-    def overallOrder(): js.Array[_] = js.native
-    def overallOrder(leavesOnly: js.Any): js.Array[_] = js.native
+    def overallOrder(): js.Array[js.Any] = js.native
+    def overallOrder(leavesOnly: js.Any): js.Array[js.Any] = js.native
     
     /**
       * Remove a dependency between two nodes.

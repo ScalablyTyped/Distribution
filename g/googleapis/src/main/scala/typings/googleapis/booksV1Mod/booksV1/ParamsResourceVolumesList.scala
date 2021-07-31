@@ -6,87 +6,87 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceVolumesList extends StandardParameters {
+trait ParamsResourceVolumesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Restrict to volumes by download availability.
     */
-  var download: js.UndefOr[String] = js.native
+  var download: js.UndefOr[String] = js.undefined
   
   /**
     * Filter search results.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Restrict results to books with this language code.
     */
-  var langRestrict: js.UndefOr[String] = js.native
+  var langRestrict: js.UndefOr[String] = js.undefined
   
   /**
     * Restrict search to this user's library.
     */
-  var libraryRestrict: js.UndefOr[String] = js.native
+  var libraryRestrict: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum allowed maturity rating of returned recommendations. Books
     * with a higher maturity rating are filtered out.
     */
-  var maxAllowedMaturityRating: js.UndefOr[String] = js.native
+  var maxAllowedMaturityRating: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Sort search results.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Restrict and brand results for partner ID.
     */
-  var partner: js.UndefOr[String] = js.native
+  var partner: js.UndefOr[String] = js.undefined
   
   /**
     * Restrict to books or magazines.
     */
-  var printType: js.UndefOr[String] = js.native
+  var printType: js.UndefOr[String] = js.undefined
   
   /**
     * Restrict information returned to a set of selected fields.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /**
     * Full-text search query string.
     */
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
   /**
     * Set to true to show books available for preorder. Defaults to false.
     */
-  var showPreorders: js.UndefOr[Boolean] = js.native
+  var showPreorders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * String to identify the originator of this request.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * Index of the first result to return (starts at 0)
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourceVolumesList {
   

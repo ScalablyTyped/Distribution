@@ -2,14 +2,12 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFileData extends StObject {
   
   /** 文件的保存路径 */
-  var savedFilePath: String = js.native
+  var savedFilePath: String
 }
 object SavedFileData {
   

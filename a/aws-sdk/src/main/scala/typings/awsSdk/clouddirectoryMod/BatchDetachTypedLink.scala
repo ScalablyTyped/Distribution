@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDetachTypedLink extends StObject {
   
   /**
     * Used to accept a typed link specifier as input.
     */
-  var TypedLinkSpecifier: typings.awsSdk.clouddirectoryMod.TypedLinkSpecifier = js.native
+  var TypedLinkSpecifier: typings.awsSdk.clouddirectoryMod.TypedLinkSpecifier
 }
 object BatchDetachTypedLink {
   

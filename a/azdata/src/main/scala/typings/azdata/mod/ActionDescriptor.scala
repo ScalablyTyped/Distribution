@@ -2,26 +2,24 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionDescriptor extends StObject {
   
   /**
     * Name of the clickable action. If not defined then no action will be shown
     */
-  var actionTitle: js.UndefOr[String] = js.native
+  var actionTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Data sent on callback being run.
     */
-  var callbackData: js.UndefOr[js.Any] = js.native
+  var callbackData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * User-visible label to display
     */
-  var label: String = js.native
+  var label: String
 }
 object ActionDescriptor {
   

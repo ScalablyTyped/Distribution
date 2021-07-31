@@ -5,50 +5,43 @@ import typings.contentfulManagement.anon.EntityPath
 import typings.contentfulManagement.anon.EntityPathHttp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instanceActionsMod {
   
-  @JSImport("contentful-management/dist/typings/instance-actions", "createArchiveEntity")
+  @JSImport("contentful-management/dist/typings/instance-actions", JSImport.Namespace)
   @js.native
-  def createArchiveEntity[T](hasHttpEntityPathWrapperMethod: typings.contentfulManagement.anon.WrapperMethod[T]): js.Function0[js.Promise[T]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/instance-actions", "createArchivedChecker")
-  @js.native
-  def createArchivedChecker(): js.Function0[Boolean] = js.native
+  @scala.inline
+  def createArchiveEntity[T](hasHttpEntityPathWrapperMethod: typings.contentfulManagement.anon.WrapperMethod[T]): js.Function0[js.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createArchiveEntity")(hasHttpEntityPathWrapperMethod.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[T]]]
   
-  @JSImport("contentful-management/dist/typings/instance-actions", "createDeleteEntity")
-  @js.native
-  def createDeleteEntity(hasHttpEntityPath: EntityPathHttp): js.Function0[js.Promise[Unit]] = js.native
+  @scala.inline
+  def createArchivedChecker(): js.Function0[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createArchivedChecker")().asInstanceOf[js.Function0[Boolean]]
   
-  @JSImport("contentful-management/dist/typings/instance-actions", "createDraftChecker")
-  @js.native
-  def createDraftChecker(): js.Function0[Boolean] = js.native
+  @scala.inline
+  def createDeleteEntity(hasHttpEntityPath: EntityPathHttp): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeleteEntity")(hasHttpEntityPath.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
   
-  @JSImport("contentful-management/dist/typings/instance-actions", "createPublishEntity")
-  @js.native
-  def createPublishEntity[T](hasHttpEntityPathWrapperMethod: typings.contentfulManagement.anon.WrapperMethod[T]): js.Function0[js.Promise[T]] = js.native
+  @scala.inline
+  def createDraftChecker(): js.Function0[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDraftChecker")().asInstanceOf[js.Function0[Boolean]]
   
-  @JSImport("contentful-management/dist/typings/instance-actions", "createPublishedChecker")
-  @js.native
-  def createPublishedChecker(): js.Function0[Boolean] = js.native
+  @scala.inline
+  def createPublishEntity[T](hasHttpEntityPathWrapperMethod: typings.contentfulManagement.anon.WrapperMethod[T]): js.Function0[js.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPublishEntity")(hasHttpEntityPathWrapperMethod.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[T]]]
   
-  @JSImport("contentful-management/dist/typings/instance-actions", "createUnarchiveEntity")
-  @js.native
-  def createUnarchiveEntity[T](hasHttpEntityPathWrapperMethod: typings.contentfulManagement.anon.WrapperMethod[T]): js.Function0[js.Promise[T]] = js.native
+  @scala.inline
+  def createPublishedChecker(): js.Function0[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPublishedChecker")().asInstanceOf[js.Function0[Boolean]]
   
-  @JSImport("contentful-management/dist/typings/instance-actions", "createUnpublishEntity")
-  @js.native
-  def createUnpublishEntity[T](hasHttpEntityPathWrapperMethod: typings.contentfulManagement.anon.WrapperMethod[T]): js.Function0[js.Promise[T]] = js.native
+  @scala.inline
+  def createUnarchiveEntity[T](hasHttpEntityPathWrapperMethod: typings.contentfulManagement.anon.WrapperMethod[T]): js.Function0[js.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnarchiveEntity")(hasHttpEntityPathWrapperMethod.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[T]]]
   
-  @JSImport("contentful-management/dist/typings/instance-actions", "createUpdateEntity")
-  @js.native
-  def createUpdateEntity[T](hasHttpEntityPathWrapperMethodHeaders: EntityPath[T]): js.Function0[js.Promise[T]] = js.native
+  @scala.inline
+  def createUnpublishEntity[T](hasHttpEntityPathWrapperMethod: typings.contentfulManagement.anon.WrapperMethod[T]): js.Function0[js.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnpublishEntity")(hasHttpEntityPathWrapperMethod.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[T]]]
   
-  @JSImport("contentful-management/dist/typings/instance-actions", "createUpdatedChecker")
-  @js.native
-  def createUpdatedChecker(): js.Function0[Boolean] = js.native
+  @scala.inline
+  def createUpdateEntity[T](hasHttpEntityPathWrapperMethodHeaders: EntityPath[T]): js.Function0[js.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUpdateEntity")(hasHttpEntityPathWrapperMethodHeaders.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[T]]]
+  
+  @scala.inline
+  def createUpdatedChecker(): js.Function0[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUpdatedChecker")().asInstanceOf[js.Function0[Boolean]]
   
   type WrapperMethod[E, A /* <: AxiosInstance */] = js.Function2[/* http */ A, /* data */ js.Any, E]
 }

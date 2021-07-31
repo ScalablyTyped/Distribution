@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.securityMod.security.IModuleRole
 import typings.mendixmodelsdk.textsMod.texts.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -123,9 +122,8 @@ object Page {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Page.createIn")
-  @js.native
-  def createIn(container: IFolderBase): Page = js.native
+  @scala.inline
+  def createIn(container: IFolderBase): Page = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Page]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Page.structureTypeName")

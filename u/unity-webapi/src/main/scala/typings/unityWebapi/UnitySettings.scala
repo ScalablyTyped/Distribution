@@ -2,17 +2,15 @@ package typings.unityWebapi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnitySettings extends StObject {
   
-  var iconUrl: String = js.native
+  var iconUrl: String
   
-  var name: String = js.native
+  var name: String
   
-  var onInit: js.Function = js.native
+  var onInit: js.Function
 }
 object UnitySettings {
   

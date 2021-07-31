@@ -2,7 +2,6 @@ package typings.phaser.Phaser.Types.GameObjects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PathFollower {
@@ -10,43 +9,42 @@ object PathFollower {
   /**
     * Settings for a PathFollower.
     */
-  @js.native
   trait PathConfig extends StObject {
     
     /**
       * The duration of the path follow in ms. Must be `> 0`.
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * The start position of the path follow, between 0 and 1. Must be less than `to`.
       */
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to position the PathFollower on the Path using its path offset.
       */
-    var positionOnPath: js.UndefOr[Boolean] = js.native
+    var positionOnPath: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Should the PathFollower automatically rotate to point in the direction of the Path?
       */
-    var rotateToPath: js.UndefOr[Boolean] = js.native
+    var rotateToPath: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If the PathFollower is rotating to match the Path, this value is added to the rotation value. This allows you to rotate objects to a path but control the angle of the rotation as well.
       */
-    var rotationOffset: js.UndefOr[Double] = js.native
+    var rotationOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Current start position of the path follow, must be between `from` and `to`.
       */
-    var startAt: js.UndefOr[Double] = js.native
+    var startAt: js.UndefOr[Double] = js.undefined
     
     /**
       * The end position of the path follow, between 0 and 1. Must be more than `from`.
       */
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object PathConfig {
     

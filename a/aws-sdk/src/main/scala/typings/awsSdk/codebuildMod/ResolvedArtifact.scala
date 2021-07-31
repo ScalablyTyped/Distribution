@@ -2,26 +2,24 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedArtifact extends StObject {
   
   /**
     * The identifier of the artifact.
     */
-  var identifier: js.UndefOr[String] = js.native
+  var identifier: js.UndefOr[String] = js.undefined
   
   /**
     * The location of the artifact.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of artifact.
     */
-  var `type`: js.UndefOr[ArtifactsType] = js.native
+  var `type`: js.UndefOr[ArtifactsType] = js.undefined
 }
 object ResolvedArtifact {
   

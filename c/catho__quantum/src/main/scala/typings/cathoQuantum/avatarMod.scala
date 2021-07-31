@@ -3,7 +3,6 @@ package typings.cathoQuantum
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object avatarMod {
@@ -15,22 +14,21 @@ object avatarMod {
   
   type Avatar = Component[AvatarProps, js.Object, js.Any]
   
-  @js.native
   trait AvatarProps extends StObject {
     
-    var hasNotification: js.UndefOr[Boolean] = js.native
+    var hasNotification: js.UndefOr[Boolean] = js.undefined
     
-    var hasToggle: js.UndefOr[Boolean] = js.native
+    var hasToggle: js.UndefOr[Boolean] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[js.Object]] = js.native
+    var onClick: js.UndefOr[js.Function0[js.Object]] = js.undefined
     
-    var picture: js.UndefOr[String] = js.native
+    var picture: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object AvatarProps {
     

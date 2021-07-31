@@ -3,13 +3,13 @@ package typings.preloadjs.global.createjs
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.RequestUtils")
 @js.native
 class RequestUtils ()
-  extends typings.preloadjs.createjs.RequestUtils
+  extends StObject
+     with typings.preloadjs.createjs.RequestUtils
 /* static members */
 object RequestUtils {
   
@@ -37,53 +37,40 @@ object RequestUtils {
   def RELATIVE_PATH_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RELATIVE_PATH")(x.asInstanceOf[js.Any])
   
   // methods
-  @JSGlobal("createjs.RequestUtils.buildPath")
-  @js.native
-  def buildPath(src: String): String = js.native
-  @JSGlobal("createjs.RequestUtils.buildPath")
-  @js.native
-  def buildPath(src: String, data: js.Object): String = js.native
+  @scala.inline
+  def buildPath(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildPath")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def buildPath(src: String, data: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPath")(src.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("createjs.RequestUtils.formatQueryString")
-  @js.native
-  def formatQueryString(data: js.Object): String = js.native
-  @JSGlobal("createjs.RequestUtils.formatQueryString")
-  @js.native
-  def formatQueryString(data: js.Object, query: js.Array[js.Object]): String = js.native
+  @scala.inline
+  def formatQueryString(data: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatQueryString")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatQueryString(data: js.Object, query: js.Array[js.Object]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatQueryString")(data.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("createjs.RequestUtils.getTypeByExtension")
-  @js.native
-  def getTypeByExtension(extension: String): String = js.native
+  @scala.inline
+  def getTypeByExtension(`extension`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeByExtension")(`extension`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("createjs.RequestUtils.isAudioTag")
-  @js.native
-  def isAudioTag(item: js.Object): Boolean = js.native
+  @scala.inline
+  def isAudioTag(item: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAudioTag")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("createjs.RequestUtils.isBinary")
-  @js.native
-  def isBinary(`type`: String): Boolean = js.native
+  @scala.inline
+  def isBinary(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("createjs.RequestUtils.isCrossDomain")
-  @js.native
-  def isCrossDomain(item: js.Object): Boolean = js.native
+  @scala.inline
+  def isCrossDomain(item: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCrossDomain")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("createjs.RequestUtils.isImageTag")
-  @js.native
-  def isImageTag(item: js.Object): Boolean = js.native
+  @scala.inline
+  def isImageTag(item: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImageTag")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("createjs.RequestUtils.isLocal")
-  @js.native
-  def isLocal(item: js.Object): Boolean = js.native
+  @scala.inline
+  def isLocal(item: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocal")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("createjs.RequestUtils.isText")
-  @js.native
-  def isText(`type`: String): Boolean = js.native
+  @scala.inline
+  def isText(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isText")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("createjs.RequestUtils.isVideoTag")
-  @js.native
-  def isVideoTag(item: js.Object): Boolean = js.native
+  @scala.inline
+  def isVideoTag(item: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVideoTag")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("createjs.RequestUtils.parseURI")
-  @js.native
-  def parseURI(path: String): js.Object = js.native
+  @scala.inline
+  def parseURI(path: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parseURI")(path.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

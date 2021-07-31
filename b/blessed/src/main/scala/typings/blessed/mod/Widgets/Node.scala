@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blessed", "Widgets.Node")
@@ -46,6 +45,9 @@ abstract class Node protected ()
     */
   var data: StringDictionary[js.Any] = js.native
   
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
   /**
     * Remove node from its parent.
     */
@@ -53,11 +55,11 @@ abstract class Node protected ()
   
   def emitAncestors(): Unit = js.native
   
-  def emitDescendants(`type`: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
   /**
     * Emit event for element, and recursively emit same event for all descendants.
     */
   def emitDescendants(`type`: String, args: js.Any*): Unit = js.native
+  def emitDescendants(`type`: Unit, args: js.Any*): Unit = js.native
   
   var focusable: Boolean = js.native
   
@@ -97,6 +99,9 @@ abstract class Node protected ()
   def insertBefore(node: Node, refNode: Node): Unit = js.native
   
   def on(event: NodeEventType, callback: js.Function1[/* arg */ this.type, Unit]): this.type = js.native
+  
+  /* CompleteClass */
+  var options: INodeOptions = js.native
   
   /**
     * Parent node.

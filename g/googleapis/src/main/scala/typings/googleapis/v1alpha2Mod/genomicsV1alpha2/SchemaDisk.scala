@@ -2,20 +2,18 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Google Compute Engine disk resource specification.
   */
-@js.native
 trait SchemaDisk extends StObject {
   
   /**
     * Deprecated. Disks created by the Pipelines API will be deleted at the end
     * of the pipeline run, regardless of what this field is set to.
     */
-  var autoDelete: js.UndefOr[Boolean] = js.native
+  var autoDelete: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required at create time and cannot be overridden at run time. Specifies
@@ -24,27 +22,27 @@ trait SchemaDisk extends StObject {
     * has `localPath` `inputs/file.txt`, the docker container can access the
     * data at `/mnt/disk/inputs/file.txt`.
     */
-  var mountPoint: js.UndefOr[String] = js.native
+  var mountPoint: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The name of the disk that can be used in the pipeline
     * parameters. Must be 1 - 63 characters. The name &quot;boot&quot; is
     * reserved for system use.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how a sourced-base persistent disk will be mounted. See
     * https://cloud.google.com/compute/docs/disks/persistent-disks#use_multi_instances
     * for more details. Can only be set at create time.
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The size of the disk. Defaults to 500 (GB). This field is not applicable
     * for local SSD.
     */
-  var sizeGb: js.UndefOr[Double] = js.native
+  var sizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * The full or partial URL of the persistent disk to attach. See
@@ -53,12 +51,12 @@ trait SchemaDisk extends StObject {
     * https://cloud.google.com/compute/docs/disks/persistent-disks#snapshots
     * for more details.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The type of the disk to create.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaDisk {
   

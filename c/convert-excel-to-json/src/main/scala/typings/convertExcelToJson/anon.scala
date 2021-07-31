@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Rows extends StObject {
     
-    var rows: Double = js.native
+    var rows: Double
   }
   object Rows {
     
@@ -31,20 +29,19 @@ object anon {
   }
   
   /* Inlined convert-excel-to-json.convert-excel-to-json.SheetConfig & {  name :string} */
-  @js.native
   trait SheetConfignamestring extends StObject {
     
-    var columnToKey: js.UndefOr[StringDictionary[String]] = js.native
+    var columnToKey: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var header: js.UndefOr[Rows] = js.native
+    var header: js.UndefOr[Rows] = js.undefined
     
-    var includeEmptyLines: js.UndefOr[Boolean] = js.native
+    var includeEmptyLines: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var range: js.UndefOr[String] = js.native
+    var range: js.UndefOr[String] = js.undefined
     
-    var sheetStubs: js.UndefOr[Boolean] = js.native
+    var sheetStubs: js.UndefOr[Boolean] = js.undefined
   }
   object SheetConfignamestring {
     
@@ -92,10 +89,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Sheets extends StObject {
     
-    var sheets: js.UndefOr[js.Array[String | SheetConfignamestring]] = js.native
+    var sheets: js.UndefOr[js.Array[String | SheetConfignamestring]] = js.undefined
   }
   object Sheets {
     
@@ -119,10 +115,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Source extends StObject {
     
-    var source: String | Buffer = js.native
+    var source: String | Buffer
   }
   object Source {
     
@@ -140,10 +135,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SourceFile extends StObject {
     
-    var sourceFile: String = js.native
+    var sourceFile: String
   }
   object SourceFile {
     

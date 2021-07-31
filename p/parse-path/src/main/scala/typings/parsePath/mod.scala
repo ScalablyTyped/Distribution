@@ -2,47 +2,48 @@ package typings.parsePath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(url: String): ParsedPath = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
+  
   @JSImport("parse-path", JSImport.Namespace)
   @js.native
-  def apply(url: String): ParsedPath = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait ParsedPath extends StObject {
     
     /** The url hash. */
-    var hash: String = js.native
+    var hash: String
     
     /** The input url. */
-    var href: String = js.native
+    var href: String
     
     /** The url pathname. */
-    var pathname: String = js.native
+    var pathname: String
     
     /** The domain port. */
-    var port: Null | Double = js.native
+    var port: Null | Double
     
     /** The first protocol, `"ssh"` (if the url is a ssh url) or `"file"`. */
-    var protocol: Protocol = js.native
+    var protocol: Protocol
     
     /** An array with the url protocols (usually it has one element). */
-    var protocols: js.Array[Protocol] = js.native
+    var protocols: js.Array[Protocol]
     
     /** The url querystring, parsed as object. */
-    var query: js.Any = js.native
+    var query: js.Any
     
     /** The url domain (including subdomains). */
-    var resource: String = js.native
+    var resource: String
     
     /** The url querystring value. */
-    var search: String = js.native
+    var search: String
     
     /** The authentication user (usually for ssh urls). */
-    var user: String = js.native
+    var user: String
   }
   object ParsedPath {
     
@@ -58,7 +59,7 @@ object mod {
       search: String,
       user: String
     ): ParsedPath = {
-      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], port = null)
       __obj.asInstanceOf[ParsedPath]
     }
     

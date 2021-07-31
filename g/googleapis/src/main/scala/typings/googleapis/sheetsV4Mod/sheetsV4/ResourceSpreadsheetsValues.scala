@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sheets/v4", "sheets_v4.Resource$Spreadsheets$Values")
@@ -108,7 +107,7 @@ class ResourceSpreadsheetsValues protected () extends StObject {
     */
   def append(): GaxiosPromise[SchemaAppendValuesResponse] = js.native
   def append(callback: BodyResponseCallback[SchemaAppendValuesResponse]): Unit = js.native
-  def append(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppendValuesResponse] = js.native
+  def append(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppendValuesResponse] = js.native
   def append(params: ParamsResourceSpreadsheetsValuesAppend): GaxiosPromise[SchemaAppendValuesResponse] = js.native
   def append(
     params: ParamsResourceSpreadsheetsValuesAppend,
@@ -199,7 +198,7 @@ class ResourceSpreadsheetsValues protected () extends StObject {
     */
   def batchClear(): GaxiosPromise[SchemaBatchClearValuesResponse] = js.native
   def batchClear(callback: BodyResponseCallback[SchemaBatchClearValuesResponse]): Unit = js.native
-  def batchClear(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchClearValuesResponse] = js.native
+  def batchClear(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchClearValuesResponse] = js.native
   def batchClear(params: ParamsResourceSpreadsheetsValuesBatchclear): GaxiosPromise[SchemaBatchClearValuesResponse] = js.native
   def batchClear(
     params: ParamsResourceSpreadsheetsValuesBatchclear,
@@ -291,7 +290,7 @@ class ResourceSpreadsheetsValues protected () extends StObject {
     */
   def batchClearByDataFilter(): GaxiosPromise[SchemaBatchClearValuesByDataFilterResponse] = js.native
   def batchClearByDataFilter(callback: BodyResponseCallback[SchemaBatchClearValuesByDataFilterResponse]): Unit = js.native
-  def batchClearByDataFilter(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchClearValuesByDataFilterResponse] = js.native
+  def batchClearByDataFilter(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchClearValuesByDataFilterResponse] = js.native
   def batchClearByDataFilter(params: ParamsResourceSpreadsheetsValuesBatchclearbydatafilter): GaxiosPromise[SchemaBatchClearValuesByDataFilterResponse] = js.native
   def batchClearByDataFilter(
     params: ParamsResourceSpreadsheetsValuesBatchclearbydatafilter,
@@ -395,7 +394,7 @@ class ResourceSpreadsheetsValues protected () extends StObject {
     */
   def batchGet(): GaxiosPromise[SchemaBatchGetValuesResponse] = js.native
   def batchGet(callback: BodyResponseCallback[SchemaBatchGetValuesResponse]): Unit = js.native
-  def batchGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchGetValuesResponse] = js.native
+  def batchGet(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchGetValuesResponse] = js.native
   def batchGet(params: ParamsResourceSpreadsheetsValuesBatchget): GaxiosPromise[SchemaBatchGetValuesResponse] = js.native
   def batchGet(
     params: ParamsResourceSpreadsheetsValuesBatchget,
@@ -502,7 +501,7 @@ class ResourceSpreadsheetsValues protected () extends StObject {
     */
   def batchGetByDataFilter(): GaxiosPromise[SchemaBatchGetValuesByDataFilterResponse] = js.native
   def batchGetByDataFilter(callback: BodyResponseCallback[SchemaBatchGetValuesByDataFilterResponse]): Unit = js.native
-  def batchGetByDataFilter(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchGetValuesByDataFilterResponse] = js.native
+  def batchGetByDataFilter(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchGetValuesByDataFilterResponse] = js.native
   def batchGetByDataFilter(params: ParamsResourceSpreadsheetsValuesBatchgetbydatafilter): GaxiosPromise[SchemaBatchGetValuesByDataFilterResponse] = js.native
   def batchGetByDataFilter(
     params: ParamsResourceSpreadsheetsValuesBatchgetbydatafilter,
@@ -595,7 +594,7 @@ class ResourceSpreadsheetsValues protected () extends StObject {
     */
   def batchUpdate(): GaxiosPromise[SchemaBatchUpdateValuesResponse] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaBatchUpdateValuesResponse]): Unit = js.native
-  def batchUpdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchUpdateValuesResponse] = js.native
+  def batchUpdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchUpdateValuesResponse] = js.native
   def batchUpdate(params: ParamsResourceSpreadsheetsValuesBatchupdate): GaxiosPromise[SchemaBatchUpdateValuesResponse] = js.native
   def batchUpdate(
     params: ParamsResourceSpreadsheetsValuesBatchupdate,
@@ -691,7 +690,7 @@ class ResourceSpreadsheetsValues protected () extends StObject {
     */
   def batchUpdateByDataFilter(): GaxiosPromise[SchemaBatchUpdateValuesByDataFilterResponse] = js.native
   def batchUpdateByDataFilter(callback: BodyResponseCallback[SchemaBatchUpdateValuesByDataFilterResponse]): Unit = js.native
-  def batchUpdateByDataFilter(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchUpdateValuesByDataFilterResponse] = js.native
+  def batchUpdateByDataFilter(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchUpdateValuesByDataFilterResponse] = js.native
   def batchUpdateByDataFilter(params: ParamsResourceSpreadsheetsValuesBatchupdatebydatafilter): GaxiosPromise[SchemaBatchUpdateValuesByDataFilterResponse] = js.native
   def batchUpdateByDataFilter(
     params: ParamsResourceSpreadsheetsValuesBatchupdatebydatafilter,
@@ -784,7 +783,7 @@ class ResourceSpreadsheetsValues protected () extends StObject {
     */
   def clear(): GaxiosPromise[SchemaClearValuesResponse] = js.native
   def clear(callback: BodyResponseCallback[SchemaClearValuesResponse]): Unit = js.native
-  def clear(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClearValuesResponse] = js.native
+  def clear(params: Unit, options: MethodOptions): GaxiosPromise[SchemaClearValuesResponse] = js.native
   def clear(params: ParamsResourceSpreadsheetsValuesClear): GaxiosPromise[SchemaClearValuesResponse] = js.native
   def clear(
     params: ParamsResourceSpreadsheetsValuesClear,
@@ -890,7 +889,7 @@ class ResourceSpreadsheetsValues protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaValueRange] = js.native
   def get(callback: BodyResponseCallback[SchemaValueRange]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaValueRange] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaValueRange] = js.native
   def get(params: ParamsResourceSpreadsheetsValuesGet): GaxiosPromise[SchemaValueRange] = js.native
   def get(params: ParamsResourceSpreadsheetsValuesGet, callback: BodyResponseCallback[SchemaValueRange]): Unit = js.native
   def get(
@@ -988,7 +987,7 @@ class ResourceSpreadsheetsValues protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaUpdateValuesResponse] = js.native
   def update(callback: BodyResponseCallback[SchemaUpdateValuesResponse]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUpdateValuesResponse] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUpdateValuesResponse] = js.native
   def update(params: ParamsResourceSpreadsheetsValuesUpdate): GaxiosPromise[SchemaUpdateValuesResponse] = js.native
   def update(
     params: ParamsResourceSpreadsheetsValuesUpdate,

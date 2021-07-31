@@ -6,31 +6,29 @@ import typings.workboxWindow.workboxEventMod.WorkboxEvent
 import typings.workboxWindow.workboxMod.Workbox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workboxEventMapMod {
   
-  @js.native
   trait WorkboxEventMap extends StObject {
     
-    var activated: WorkboxUpdatableEvent = js.native
+    var activated: WorkboxUpdatableEvent
     
-    var controlling: WorkboxEvent = js.native
+    var controlling: WorkboxEvent
     
-    var externalactivated: WorkboxExtendableEvent = js.native
+    var externalactivated: WorkboxExtendableEvent
     
-    var externalinstalled: WorkboxExtendableEvent = js.native
+    var externalinstalled: WorkboxExtendableEvent
     
-    var externalwaiting: WorkboxExtendableEvent = js.native
+    var externalwaiting: WorkboxExtendableEvent
     
-    var installed: WorkboxUpdatableEvent = js.native
+    var installed: WorkboxUpdatableEvent
     
-    var message: WorkboxMessageEvent = js.native
+    var message: WorkboxMessageEvent
     
-    var redundant: WorkboxEvent = js.native
+    var redundant: WorkboxEvent
     
-    var waiting: WorkboxWaitingEvent = js.native
+    var waiting: WorkboxWaitingEvent
   }
   object WorkboxEventMap {
     
@@ -82,10 +80,11 @@ object workboxEventMapMod {
     }
   }
   
-  @js.native
-  trait WorkboxExtendableEvent extends WorkboxEvent {
+  trait WorkboxExtendableEvent
+    extends StObject
+       with WorkboxEvent {
     
-    val sw: ServiceWorker = js.native
+    val sw: ServiceWorker
   }
   object WorkboxExtendableEvent {
     
@@ -104,10 +103,11 @@ object workboxEventMapMod {
     }
   }
   
-  @js.native
-  trait WorkboxMessageEvent extends WorkboxEvent {
+  trait WorkboxMessageEvent
+    extends StObject
+       with WorkboxEvent {
     
-    val data: js.Any = js.native
+    val data: js.Any
   }
   object WorkboxMessageEvent {
     
@@ -126,10 +126,11 @@ object workboxEventMapMod {
     }
   }
   
-  @js.native
-  trait WorkboxUpdatableEvent extends WorkboxExtendableEvent {
+  trait WorkboxUpdatableEvent
+    extends StObject
+       with WorkboxExtendableEvent {
     
-    val isUpdate: js.UndefOr[Boolean] = js.native
+    val isUpdate: js.UndefOr[Boolean] = js.undefined
   }
   object WorkboxUpdatableEvent {
     
@@ -151,10 +152,11 @@ object workboxEventMapMod {
     }
   }
   
-  @js.native
-  trait WorkboxWaitingEvent extends WorkboxUpdatableEvent {
+  trait WorkboxWaitingEvent
+    extends StObject
+       with WorkboxUpdatableEvent {
     
-    val wasWaitingBeforeRegister: js.UndefOr[Boolean] = js.native
+    val wasWaitingBeforeRegister: js.UndefOr[Boolean] = js.undefined
   }
   object WorkboxWaitingEvent {
     

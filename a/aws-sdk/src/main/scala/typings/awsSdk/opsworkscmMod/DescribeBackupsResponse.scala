@@ -2,21 +2,19 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBackupsResponse extends StObject {
   
   /**
     * Contains the response to a DescribeBackups request. 
     */
-  var Backups: js.UndefOr[typings.awsSdk.opsworkscmMod.Backups] = js.native
+  var Backups: js.UndefOr[typings.awsSdk.opsworkscmMod.Backups] = js.undefined
   
   /**
     * This is not currently implemented for DescribeBackups requests.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeBackupsResponse {
   

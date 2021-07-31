@@ -2,26 +2,24 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDecoderCommon extends StObject {
   
   /**
     * Returns encoding's name, lowercased.
     */
-  val encoding: java.lang.String = js.native
+  val encoding: java.lang.String
   
   /**
     * Returns true if error mode is "fatal", and false otherwise.
     */
-  val fatal: scala.Boolean = js.native
+  val fatal: scala.Boolean
   
   /**
     * Returns true if ignore BOM flag is set, and false otherwise.
     */
-  val ignoreBOM: scala.Boolean = js.native
+  val ignoreBOM: scala.Boolean
 }
 object TextDecoderCommon {
   

@@ -2,15 +2,15 @@ package typings.pathfinding.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FinderOptions extends Heuristic {
+trait FinderOptions
+  extends StObject
+     with Heuristic {
   
-  var diagonalMovement: js.UndefOr[DiagonalMovement] = js.native
+  var diagonalMovement: js.UndefOr[DiagonalMovement] = js.undefined
   
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object FinderOptions {
   

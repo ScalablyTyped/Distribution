@@ -2,21 +2,19 @@ package typings.expoLocation.locationTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationLastKnownOptions extends StObject {
   
   /**
     * Maximum age of the location in miliseconds.
     */
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum radius of horizontal accuracy in meters.
     */
-  var requiredAccuracy: js.UndefOr[Double] = js.native
+  var requiredAccuracy: js.UndefOr[Double] = js.undefined
 }
 object LocationLastKnownOptions {
   

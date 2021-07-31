@@ -2,33 +2,33 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultiInstanceLoopCharacteristics extends BaseElement {
+trait MultiInstanceLoopCharacteristics
+  extends StObject
+     with BaseElement {
   
-  var behavior: MultiInstanceBehaviour = js.native
+  var behavior: MultiInstanceBehaviour
   
-  var completionCondition: Expression = js.native
+  var completionCondition: Expression
   
-  var complexBehaviorDefinition: ComplexBehaviorDefinition = js.native
+  var complexBehaviorDefinition: ComplexBehaviorDefinition
   
-  var inputDataItem: DataInput = js.native
+  var inputDataItem: DataInput
   
-  var isSequential: Boolean = js.native
+  var isSequential: Boolean
   
-  var loopCardinality: Expression = js.native
+  var loopCardinality: Expression
   
-  var loopDataInputRef: ItemAwareElement = js.native
+  var loopDataInputRef: ItemAwareElement
   
-  var loopDataOutputRef: ItemAwareElement = js.native
+  var loopDataOutputRef: ItemAwareElement
   
-  var noneBehaviorEventRef: EventDefinition = js.native
+  var noneBehaviorEventRef: EventDefinition
   
-  var oneBehaviorEventRef: EventDefinition = js.native
+  var oneBehaviorEventRef: EventDefinition
   
-  var outputDataItem: DataOutput = js.native
+  var outputDataItem: DataOutput
 }
 object MultiInstanceLoopCharacteristics {
   

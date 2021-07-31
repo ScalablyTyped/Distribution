@@ -2,36 +2,34 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishLayerVersionRequest extends StObject {
   
   /**
     * A list of compatible function runtimes. Used for filtering with ListLayers and ListLayerVersions.
     */
-  var CompatibleRuntimes: js.UndefOr[typings.awsSdk.lambdaMod.CompatibleRuntimes] = js.native
+  var CompatibleRuntimes: js.UndefOr[typings.awsSdk.lambdaMod.CompatibleRuntimes] = js.undefined
   
   /**
     * The function layer archive.
     */
-  var Content: LayerVersionContentInput = js.native
+  var Content: LayerVersionContentInput
   
   /**
     * The description of the version.
     */
-  var Description: js.UndefOr[typings.awsSdk.lambdaMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.lambdaMod.Description] = js.undefined
   
   /**
     * The name or Amazon Resource Name (ARN) of the layer.
     */
-  var LayerName: typings.awsSdk.lambdaMod.LayerName = js.native
+  var LayerName: typings.awsSdk.lambdaMod.LayerName
   
   /**
     * The layer's software license. It can be any of the following:   An SPDX license identifier. For example, MIT.   The URL of a license hosted on the internet. For example, https://opensource.org/licenses/MIT.   The full text of the license.  
     */
-  var LicenseInfo: js.UndefOr[typings.awsSdk.lambdaMod.LicenseInfo] = js.native
+  var LicenseInfo: js.UndefOr[typings.awsSdk.lambdaMod.LicenseInfo] = js.undefined
 }
 object PublishLayerVersionRequest {
   

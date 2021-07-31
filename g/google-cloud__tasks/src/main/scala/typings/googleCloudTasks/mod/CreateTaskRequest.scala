@@ -3,17 +3,15 @@ package typings.googleCloudTasks.mod
 import typings.googleCloudTasks.anon.PartialTask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTaskRequest extends StObject {
   
-  var parent: String = js.native
+  var parent: String
   
-  var responseView: js.UndefOr[View] = js.native
+  var responseView: js.UndefOr[View] = js.undefined
   
-  var task: PartialTask = js.native
+  var task: PartialTask
 }
 object CreateTaskRequest {
   

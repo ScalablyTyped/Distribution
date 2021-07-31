@@ -2,13 +2,11 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters for crop hints annotation request.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p1beta1CropHintsParams extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaGoogleCloudVisionV1p1beta1CropHintsParams extends StObject {
     * limited to a maximum of 16; any aspect ratios provided after the 16th are
     * ignored.
     */
-  var aspectRatios: js.UndefOr[js.Array[Double]] = js.native
+  var aspectRatios: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p1beta1CropHintsParams {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFileSystemPolicyRequest extends StObject {
   
   /**
     * Specifies the EFS file system for which to delete the FileSystemPolicy.
     */
-  var FileSystemId: typings.awsSdk.efsMod.FileSystemId = js.native
+  var FileSystemId: typings.awsSdk.efsMod.FileSystemId
 }
 object DeleteFileSystemPolicyRequest {
   

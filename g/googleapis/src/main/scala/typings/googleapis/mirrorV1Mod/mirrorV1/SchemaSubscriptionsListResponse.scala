@@ -2,25 +2,23 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of Subscriptions. This is the response from the server to GET
   * requests on the subscription collection.
   */
-@js.native
 trait SchemaSubscriptionsListResponse extends StObject {
   
   /**
     * The list of subscriptions.
     */
-  var items: js.UndefOr[js.Array[SchemaSubscription]] = js.native
+  var items: js.UndefOr[js.Array[SchemaSubscription]] = js.undefined
   
   /**
     * The type of resource. This is always mirror#subscriptionsList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaSubscriptionsListResponse {
   

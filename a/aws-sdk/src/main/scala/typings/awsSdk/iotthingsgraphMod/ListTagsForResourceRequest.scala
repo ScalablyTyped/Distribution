@@ -2,26 +2,24 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The maximum number of tags to return.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token that specifies the next page of results to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource whose tags are to be returned.
     */
-  var resourceArn: ResourceArn = js.native
+  var resourceArn: ResourceArn
 }
 object ListTagsForResourceRequest {
   

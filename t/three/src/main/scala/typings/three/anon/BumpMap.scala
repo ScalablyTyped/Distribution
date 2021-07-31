@@ -3,15 +3,13 @@ package typings.three.anon
 import typings.three.uniformsLibMod.IUniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BumpMap extends StObject {
   
-  var bumpMap: IUniform = js.native
+  var bumpMap: IUniform
   
-  var bumpScale: IUniform = js.native
+  var bumpScale: IUniform
 }
 object BumpMap {
   

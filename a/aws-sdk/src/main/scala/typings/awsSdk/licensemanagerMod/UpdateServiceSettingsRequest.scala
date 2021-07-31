@@ -2,31 +2,29 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateServiceSettingsRequest extends StObject {
   
   /**
     * Activates cross-account discovery.
     */
-  var EnableCrossAccountsDiscovery: js.UndefOr[BoxBoolean] = js.native
+  var EnableCrossAccountsDiscovery: js.UndefOr[BoxBoolean] = js.undefined
   
   /**
     * Enables integration with AWS Organizations for cross-account discovery.
     */
-  var OrganizationConfiguration: js.UndefOr[typings.awsSdk.licensemanagerMod.OrganizationConfiguration] = js.native
+  var OrganizationConfiguration: js.UndefOr[typings.awsSdk.licensemanagerMod.OrganizationConfiguration] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the Amazon S3 bucket where the License Manager information is stored.
     */
-  var S3BucketArn: js.UndefOr[String] = js.native
+  var S3BucketArn: js.UndefOr[String] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the Amazon SNS topic used for License Manager alerts.
     */
-  var SnsTopicArn: js.UndefOr[String] = js.native
+  var SnsTopicArn: js.UndefOr[String] = js.undefined
 }
 object UpdateServiceSettingsRequest {
   

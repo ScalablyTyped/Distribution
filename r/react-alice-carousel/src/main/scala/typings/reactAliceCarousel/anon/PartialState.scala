@@ -3,60 +3,58 @@ package typings.reactAliceCarousel.anon
 import typings.reactAliceCarousel.typesMod.TransformationSetItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-alice-carousel.react-alice-carousel/lib/types.State> */
-@js.native
 trait PartialState extends StObject {
   
-  var activeIndex: js.UndefOr[Double] = js.native
+  var activeIndex: js.UndefOr[Double] = js.undefined
   
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
-  var autoWidth: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.undefined
   
-  var clones: js.UndefOr[js.Array[_]] = js.native
+  var clones: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var fadeoutAnimationIndex: js.UndefOr[Double | Null] = js.native
+  var fadeoutAnimationIndex: js.UndefOr[Double | Null] = js.undefined
   
-  var fadeoutAnimationPosition: js.UndefOr[Double | Null] = js.native
+  var fadeoutAnimationPosition: js.UndefOr[Double | Null] = js.undefined
   
-  var fadeoutAnimationProcessing: js.UndefOr[Boolean] = js.native
+  var fadeoutAnimationProcessing: js.UndefOr[Boolean] = js.undefined
   
-  var infinite: js.UndefOr[Boolean] = js.native
+  var infinite: js.UndefOr[Boolean] = js.undefined
   
-  var initialStageHeight: js.UndefOr[Double] = js.native
+  var initialStageHeight: js.UndefOr[Double] = js.undefined
   
-  var isAutoPlayCanceledOnAction: js.UndefOr[Boolean] = js.native
+  var isAutoPlayCanceledOnAction: js.UndefOr[Boolean] = js.undefined
   
-  var isAutoPlaying: js.UndefOr[Boolean] = js.native
+  var isAutoPlaying: js.UndefOr[Boolean] = js.undefined
   
-  var isStageContentPartial: js.UndefOr[Boolean] = js.native
+  var isStageContentPartial: js.UndefOr[Boolean] = js.undefined
   
-  var itemsCount: js.UndefOr[Double] = js.native
+  var itemsCount: js.UndefOr[Double] = js.undefined
   
-  var itemsInSlide: js.UndefOr[Double] = js.native
+  var itemsInSlide: js.UndefOr[Double] = js.undefined
   
-  var itemsOffset: js.UndefOr[Double] = js.native
+  var itemsOffset: js.UndefOr[Double] = js.undefined
   
-  var stageContentWidth: js.UndefOr[Double] = js.native
+  var stageContentWidth: js.UndefOr[Double] = js.undefined
   
-  var stageWidth: js.UndefOr[Double] = js.native
+  var stageWidth: js.UndefOr[Double] = js.undefined
   
-  var swipeAllowedPositionMax: js.UndefOr[Double] = js.native
+  var swipeAllowedPositionMax: js.UndefOr[Double] = js.undefined
   
-  var swipeLimitMax: js.UndefOr[Double] = js.native
+  var swipeLimitMax: js.UndefOr[Double] = js.undefined
   
-  var swipeLimitMin: js.UndefOr[Double] = js.native
+  var swipeLimitMin: js.UndefOr[Double] = js.undefined
   
-  var swipeShiftValue: js.UndefOr[Double] = js.native
+  var swipeShiftValue: js.UndefOr[Double] = js.undefined
   
-  var transformationSet: js.UndefOr[js.Array[TransformationSetItem]] = js.native
+  var transformationSet: js.UndefOr[js.Array[TransformationSetItem]] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var translate3d: js.UndefOr[Double] = js.native
+  var translate3d: js.UndefOr[Double] = js.undefined
 }
 object PartialState {
   
@@ -88,7 +86,7 @@ object PartialState {
     def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
     
     @scala.inline
-    def setClones(value: js.Array[_]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
+    def setClones(value: js.Array[js.Any]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setClonesUndefined: Self = StObject.set(x, "clones", js.undefined)

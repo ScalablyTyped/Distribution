@@ -2,7 +2,6 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,20 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * http://js.cytoscape.org/#eles.closenessCentralityNormalized
   */
-@js.native
 trait SearchClosenessCentralityNormalizedOptions extends StObject {
   
-  var directed: js.UndefOr[Boolean] = js.native
+  var directed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean indicating whether the algorithm calculates the
     * harmonic mean (true, default) or the arithmetic mean (false) of distances.
     * The harmonic mean is very useful for graphs that are not strongly connected.
     */
-  var harmonic: js.UndefOr[Boolean] = js.native
+  var harmonic: js.UndefOr[Boolean] = js.undefined
   
   /**  A function that returns the weight for the edge. */
-  var weight: js.UndefOr[js.Function1[/* edge */ EdgeSingular, Double]] = js.native
+  var weight: js.UndefOr[js.Function1[/* edge */ EdgeSingular, Double]] = js.undefined
 }
 object SearchClosenessCentralityNormalizedOptions {
   

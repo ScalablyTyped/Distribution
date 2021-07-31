@@ -2,25 +2,23 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait culture extends StObject {
   
-  var calendars: js.UndefOr[calendarsSettings] = js.native
+  var calendars: js.UndefOr[calendarsSettings] = js.undefined
   
-  var englishName: js.UndefOr[String] = js.native
+  var englishName: js.UndefOr[String] = js.undefined
   
-  var isRTL: Boolean = js.native
+  var isRTL: Boolean
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namtiveName: js.UndefOr[String] = js.native
+  var namtiveName: js.UndefOr[String] = js.undefined
   
-  var numberFormat: js.UndefOr[formatSettings] = js.native
+  var numberFormat: js.UndefOr[formatSettings] = js.undefined
 }
 object culture {
   

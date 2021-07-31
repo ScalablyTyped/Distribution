@@ -2,28 +2,26 @@ package typings.twilioSync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sanitizeMod {
   
-  @JSImport("twilio-sync/lib/utils/sanitize", "deepClone")
+  @JSImport("twilio-sync/lib/utils/sanitize", JSImport.Namespace)
   @js.native
-  def deepClone[T](obj: T): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("twilio-sync/lib/utils/sanitize", "validateId")
-  @js.native
-  def validateId(id: js.Any): Unit = js.native
+  @scala.inline
+  def deepClone[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepClone")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("twilio-sync/lib/utils/sanitize", "validateMandatoryTtl")
-  @js.native
-  def validateMandatoryTtl(ttl: Double): Unit = js.native
+  @scala.inline
+  def validateId(id: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateId")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("twilio-sync/lib/utils/sanitize", "validateOptionalTtl")
-  @js.native
-  def validateOptionalTtl(ttl: Double): Unit = js.native
+  @scala.inline
+  def validateMandatoryTtl(ttl: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateMandatoryTtl")(ttl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("twilio-sync/lib/utils/sanitize", "validatePageSize")
-  @js.native
-  def validatePageSize(pageSize: Double): Unit = js.native
+  @scala.inline
+  def validateOptionalTtl(ttl: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOptionalTtl")(ttl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def validatePageSize(pageSize: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePageSize")(pageSize.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

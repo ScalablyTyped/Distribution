@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2ToolDetails extends StObject {
   
   /** Name of the tool, e.g. bazel. */
-  var toolName: js.UndefOr[String] = js.native
+  var toolName: js.UndefOr[String] = js.undefined
   
   /** Version of the tool used for the request, e.g. 5.0.3. */
-  var toolVersion: js.UndefOr[String] = js.native
+  var toolVersion: js.UndefOr[String] = js.undefined
 }
 object BuildBazelRemoteExecutionV2ToolDetails {
   

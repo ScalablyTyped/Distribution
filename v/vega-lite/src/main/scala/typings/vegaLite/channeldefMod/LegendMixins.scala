@@ -5,10 +5,8 @@ import typings.vegaLite.legendMod.Legend
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendMixins extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait LegendMixins extends StObject {
     *
     * __See also:__ [`legend`](https://vega.github.io/vega-lite/docs/legend.html) documentation.
     */
-  var legend: js.UndefOr[(Legend[ExprRef | SignalRef]) | Null] = js.native
+  var legend: js.UndefOr[(Legend[ExprRef | SignalRef]) | Null] = js.undefined
 }
 object LegendMixins {
   

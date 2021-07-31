@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,5 +13,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * shrink relativeto the rest of the items in the container when negative free space is distributed.
   * @resource sap/ui/core/library.js
   */
-@js.native
 trait IShrinkable extends StObject

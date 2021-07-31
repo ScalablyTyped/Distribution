@@ -2,16 +2,18 @@ package typings.ipfsHttpServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyMod {
   
   object gen {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/key", "gen.handler_3")
+    @JSImport("ipfs-http-server/dist/src/api/resources/key", "gen")
     @js.native
-    def handler3(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler3(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler_3")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options6 {
       
@@ -35,11 +37,45 @@ object keyMod {
     }
   }
   
+  object `import` {
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources/key", "import")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler4(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler_4")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    
+    object options8 {
+      
+      object validate4 {
+        
+        object options9 {
+          
+          @JSImport("ipfs-http-server/dist/src/api/resources/key", "import.options_8.validate_4.options_9.allowUnknown_4")
+          @js.native
+          val allowUnknown4: Boolean = js.native
+          
+          @JSImport("ipfs-http-server/dist/src/api/resources/key", "import.options_8.validate_4.options_9.stripUnknown_4")
+          @js.native
+          val stripUnknown4: Boolean = js.native
+        }
+        
+        @JSImport("ipfs-http-server/dist/src/api/resources/key", "import.options_8.validate_4.query_4")
+        @js.native
+        val query4: js.Any = js.native
+      }
+    }
+  }
+  
   object list {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/key", "list.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources/key", "list")
     @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options {
       
@@ -65,9 +101,12 @@ object keyMod {
   
   object rename {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/key", "rename.handler_2")
+    @JSImport("ipfs-http-server/dist/src/api/resources/key", "rename")
     @js.native
-    def handler2(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler2(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler_2")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options4 {
       
@@ -93,9 +132,12 @@ object keyMod {
   
   object rm {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/key", "rm.handler_1")
+    @JSImport("ipfs-http-server/dist/src/api/resources/key", "rm")
     @js.native
-    def handler1(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler1(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler_1")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options2 {
       
@@ -115,34 +157,6 @@ object keyMod {
         @JSImport("ipfs-http-server/dist/src/api/resources/key", "rm.options_2.validate_1.query_1")
         @js.native
         val query1: js.Any = js.native
-      }
-    }
-  }
-  
-  object `import` {
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources/key", "import.handler_4")
-    @js.native
-    def handler4(request: js.Any, h: js.Any): js.Promise[_] = js.native
-    
-    object options8 {
-      
-      object validate4 {
-        
-        object options9 {
-          
-          @JSImport("ipfs-http-server/dist/src/api/resources/key", "import.options_8.validate_4.options_9.allowUnknown_4")
-          @js.native
-          val allowUnknown4: Boolean = js.native
-          
-          @JSImport("ipfs-http-server/dist/src/api/resources/key", "import.options_8.validate_4.options_9.stripUnknown_4")
-          @js.native
-          val stripUnknown4: Boolean = js.native
-        }
-        
-        @JSImport("ipfs-http-server/dist/src/api/resources/key", "import.options_8.validate_4.query_4")
-        @js.native
-        val query4: js.Any = js.native
       }
     }
   }

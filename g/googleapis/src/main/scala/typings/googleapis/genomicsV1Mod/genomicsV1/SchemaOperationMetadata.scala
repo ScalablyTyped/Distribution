@@ -3,48 +3,46 @@ package typings.googleapis.genomicsV1Mod.genomicsV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata describing an Operation.
   */
-@js.native
 trait SchemaOperationMetadata extends StObject {
   
   /**
     * This field is deprecated. Use `labels` instead. Optionally provided by
     * the caller when submitting the request that creates the operation.
     */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the job was submitted to the Genomics service.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the job stopped running.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional event messages that were generated during the job&#39;s
     * execution. This also contains any warnings that were generated during
     * import or export.
     */
-  var events: js.UndefOr[js.Array[SchemaOperationEvent]] = js.native
+  var events: js.UndefOr[js.Array[SchemaOperationEvent]] = js.undefined
   
   /**
     * Optionally provided by the caller when submitting the request that
     * creates the operation.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The Google Cloud Project in which the job is scoped.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * The original request that started the operation. Note that this will be
@@ -52,17 +50,17 @@ trait SchemaOperationMetadata extends StObject {
     * API and a GetOperation is performed on v1 API, a v1 request will be
     * returned.
     */
-  var request: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var request: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Runtime metadata on this Operation.
     */
-  var runtimeMetadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var runtimeMetadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The time at which the job began to run.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaOperationMetadata {
   

@@ -3,13 +3,11 @@ package typings.fabric.anon
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var e: js.UndefOr[Event] = js.native
+  var e: js.UndefOr[Event] = js.undefined
 }
 object `0` {
   

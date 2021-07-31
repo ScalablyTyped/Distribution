@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InferenceDeviceInfo extends StObject {
   
   /**
     * The number of Inference accelerators for the instance type.
     */
-  var Count: js.UndefOr[InferenceDeviceCount] = js.native
+  var Count: js.UndefOr[InferenceDeviceCount] = js.undefined
   
   /**
     * The manufacturer of the Inference accelerator.
     */
-  var Manufacturer: js.UndefOr[InferenceDeviceManufacturerName] = js.native
+  var Manufacturer: js.UndefOr[InferenceDeviceManufacturerName] = js.undefined
   
   /**
     * The name of the Inference accelerator.
     */
-  var Name: js.UndefOr[InferenceDeviceName] = js.native
+  var Name: js.UndefOr[InferenceDeviceName] = js.undefined
 }
 object InferenceDeviceInfo {
   

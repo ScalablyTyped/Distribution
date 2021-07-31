@@ -2,25 +2,23 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object config {
   
-  @js.native
   trait AdapterInstancesConfig extends StObject {
     
     /** the name of a previously registered "ajax" adapter */
-    var ajax: js.UndefOr[String] = js.native
+    var ajax: js.UndefOr[String] = js.undefined
     
     /** the name of a previously registered "dataService" adapter */
-    var dataService: js.UndefOr[String] = js.native
+    var dataService: js.UndefOr[String] = js.undefined
     
     /** the name of a previously registered "modelLibrary" adapter */
-    var modelLibary: js.UndefOr[String] = js.native
+    var modelLibary: js.UndefOr[String] = js.undefined
     
     /** the name of a previously registered "uriBuilder" adapter */
-    var uriBuilder: js.UndefOr[String] = js.native
+    var uriBuilder: js.UndefOr[String] = js.undefined
   }
   object AdapterInstancesConfig {
     

@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,23 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * inner type.  This allows you to have, for example, a JSON field that can
   * accept a name or number.
   */
-@js.native
 trait SchemaIntOrString extends StObject {
   
   /**
     * The int value.
     */
-  var intVal: js.UndefOr[Double] = js.native
+  var intVal: js.UndefOr[Double] = js.undefined
   
   /**
     * The string value.
     */
-  var strVal: js.UndefOr[String] = js.native
+  var strVal: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the value.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaIntOrString {
   

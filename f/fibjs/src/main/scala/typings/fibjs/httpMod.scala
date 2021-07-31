@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,29 +11,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object httpMod {
   
+  @JSImport("http", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("http", "Client")
   @js.native
-  class Client () extends ClassHttpClient
+  class Client ()
+    extends StObject
+       with ClassHttpClient
   
   @JSImport("http", "Cookie")
   @js.native
-  class Cookie () extends ClassHttpCookie
+  class Cookie ()
+    extends StObject
+       with ClassHttpCookie
   
   @JSImport("http", "Handler")
   @js.native
-  class Handler () extends ClassHttpHandler
+  class Handler ()
+    extends StObject
+       with ClassHttpHandler
   
   @JSImport("http", "HttpsServer")
   @js.native
-  class HttpsServer () extends ClassHttpsServer
+  class HttpsServer ()
+    extends StObject
+       with ClassHttpsServer
   
   @JSImport("http", "Request")
   @js.native
-  class Request_ () extends ClassHttpRequest
+  class Request_ ()
+    extends StObject
+       with ClassHttpRequest
   
   @JSImport("http", "Response")
   @js.native
-  class Response () extends ClassHttpResponse
+  class Response ()
+    extends StObject
+       with ClassHttpResponse
   
   @JSImport("http", "STATUS_CODES")
   @js.native
@@ -42,7 +57,9 @@ object httpMod {
   
   @JSImport("http", "Server")
   @js.native
-  class Server () extends ClassHttpServer
+  class Server ()
+    extends StObject
+       with ClassHttpServer
   
   @JSImport("http", "autoRedirect")
   @js.native
@@ -52,47 +69,37 @@ object httpMod {
   @js.native
   val cookies: js.Array[js.Any] = js.native
   
-  @JSImport("http", "del")
-  @js.native
-  def del(url: String): ClassHttpResponse = js.native
-  @JSImport("http", "del")
-  @js.native
-  def del(url: String, opts: js.Object): ClassHttpResponse = js.native
+  @scala.inline
+  def del(url: String): ClassHttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[ClassHttpResponse]
+  @scala.inline
+  def del(url: String, opts: js.Object): ClassHttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassHttpResponse]
   
   @JSImport("http", "enableCookie")
   @js.native
   val enableCookie: Boolean = js.native
   
-  @JSImport("http", "fileHandler")
-  @js.native
-  def fileHandler(root: String): ClassHandler = js.native
-  @JSImport("http", "fileHandler")
-  @js.native
-  def fileHandler(root: String, mimes: js.UndefOr[scala.Nothing], autoIndex: Boolean): ClassHandler = js.native
-  @JSImport("http", "fileHandler")
-  @js.native
-  def fileHandler(root: String, mimes: js.Object): ClassHandler = js.native
-  @JSImport("http", "fileHandler")
-  @js.native
-  def fileHandler(root: String, mimes: js.Object, autoIndex: Boolean): ClassHandler = js.native
+  @scala.inline
+  def fileHandler(root: String): ClassHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("fileHandler")(root.asInstanceOf[js.Any]).asInstanceOf[ClassHandler]
+  @scala.inline
+  def fileHandler(root: String, mimes: js.Object): ClassHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fileHandler")(root.asInstanceOf[js.Any], mimes.asInstanceOf[js.Any])).asInstanceOf[ClassHandler]
+  @scala.inline
+  def fileHandler(root: String, mimes: js.Object, autoIndex: Boolean): ClassHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fileHandler")(root.asInstanceOf[js.Any], mimes.asInstanceOf[js.Any], autoIndex.asInstanceOf[js.Any])).asInstanceOf[ClassHandler]
+  @scala.inline
+  def fileHandler(root: String, mimes: Unit, autoIndex: Boolean): ClassHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fileHandler")(root.asInstanceOf[js.Any], mimes.asInstanceOf[js.Any], autoIndex.asInstanceOf[js.Any])).asInstanceOf[ClassHandler]
   
-  @JSImport("http", "get")
-  @js.native
-  def get(url: String): ClassHttpResponse = js.native
-  @JSImport("http", "get")
-  @js.native
-  def get(url: String, opts: js.Object): ClassHttpResponse = js.native
+  @scala.inline
+  def get(url: String): ClassHttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[ClassHttpResponse]
+  @scala.inline
+  def get(url: String, opts: js.Object): ClassHttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassHttpResponse]
   
   @JSImport("http", "maxBodySize")
   @js.native
   val maxBodySize: Double = js.native
   
-  @JSImport("http", "patch")
-  @js.native
-  def patch(url: String): ClassHttpResponse = js.native
-  @JSImport("http", "patch")
-  @js.native
-  def patch(url: String, opts: js.Object): ClassHttpResponse = js.native
+  @scala.inline
+  def patch(url: String): ClassHttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[ClassHttpResponse]
+  @scala.inline
+  def patch(url: String, opts: js.Object): ClassHttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassHttpResponse]
   
   @JSImport("http", "poolSize")
   @js.native
@@ -102,29 +109,22 @@ object httpMod {
   @js.native
   val poolTimeout: Double = js.native
   
-  @JSImport("http", "post")
-  @js.native
-  def post(url: String): ClassHttpResponse = js.native
-  @JSImport("http", "post")
-  @js.native
-  def post(url: String, opts: js.Object): ClassHttpResponse = js.native
+  @scala.inline
+  def post(url: String): ClassHttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[ClassHttpResponse]
+  @scala.inline
+  def post(url: String, opts: js.Object): ClassHttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassHttpResponse]
   
-  @JSImport("http", "put")
-  @js.native
-  def put(url: String): ClassHttpResponse = js.native
-  @JSImport("http", "put")
-  @js.native
-  def put(url: String, opts: js.Object): ClassHttpResponse = js.native
+  @scala.inline
+  def put(url: String): ClassHttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[ClassHttpResponse]
+  @scala.inline
+  def put(url: String, opts: js.Object): ClassHttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassHttpResponse]
   
-  @JSImport("http", "request")
-  @js.native
-  def request(conn: ClassStream, req: ClassHttpRequest): ClassHttpResponse = js.native
-  @JSImport("http", "request")
-  @js.native
-  def request(method: String, url: String): ClassHttpResponse = js.native
-  @JSImport("http", "request")
-  @js.native
-  def request(method: String, url: String, opts: js.Object): ClassHttpResponse = js.native
+  @scala.inline
+  def request(conn: ClassStream, req: ClassHttpRequest): ClassHttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(conn.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[ClassHttpResponse]
+  @scala.inline
+  def request(method: String, url: String): ClassHttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[ClassHttpResponse]
+  @scala.inline
+  def request(method: String, url: String, opts: js.Object): ClassHttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassHttpResponse]
   
   @JSImport("http", "timeout")
   @js.native

@@ -15,7 +15,6 @@ import typings.reactDaterangePicker.reactDaterangePickerStrings.single
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,68 +24,68 @@ object mod {
   class default ()
     extends Component[Props[DateRangePicker], js.Object, js.Any]
   
-  @js.native
   trait BaseProps[T]
-    extends typings.react.mod.Props[T] {
+    extends StObject
+       with typings.react.mod.Props[T] {
     
-    var bemBlock: js.UndefOr[String] = js.native
+    var bemBlock: js.UndefOr[String] = js.undefined
     
-    var bemNamespace: js.UndefOr[String] = js.native
+    var bemNamespace: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dateStates: js.UndefOr[js.Array[DateState]] = js.native
+    var dateStates: js.UndefOr[js.Array[DateState]] = js.undefined
     
-    var defaultState: js.UndefOr[String] = js.native
+    var defaultState: js.UndefOr[String] = js.undefined
     
-    var disableNavigation: js.UndefOr[Boolean] = js.native
+    var disableNavigation: js.UndefOr[Boolean] = js.undefined
     
     // Use Number Literal Types after TypeScript 2.0 GA released.
-    var firstOfWeek: js.UndefOr[Double] = js.native
+    var firstOfWeek: js.UndefOr[Double] = js.undefined
     
     // React.PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6])
-    var helpMessage: js.UndefOr[String] = js.native
+    var helpMessage: js.UndefOr[String] = js.undefined
     
-    var initialDate: js.UndefOr[Date] = js.native
+    var initialDate: js.UndefOr[Date] = js.undefined
     
-    var initialFromValue: js.UndefOr[Boolean] = js.native
+    var initialFromValue: js.UndefOr[Boolean] = js.undefined
     
-    var initialMonth: js.UndefOr[Double] = js.native
+    var initialMonth: js.UndefOr[Double] = js.undefined
     
-    var initialRange: js.UndefOr[js.Object] = js.native
+    var initialRange: js.UndefOr[js.Object] = js.undefined
     
-    var initialYear: js.UndefOr[Double] = js.native
+    var initialYear: js.UndefOr[Double] = js.undefined
     
     /**
       * @default moment().locale()
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var maximumDate: js.UndefOr[Date] = js.native
+    var maximumDate: js.UndefOr[Date] = js.undefined
     
-    var minimumDate: js.UndefOr[Date] = js.native
+    var minimumDate: js.UndefOr[Date] = js.undefined
     
-    var numberOfCalendars: js.UndefOr[Double] = js.native
+    var numberOfCalendars: js.UndefOr[Double] = js.undefined
     
-    var onHighlightDate: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
+    var onHighlightDate: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
     
-    var onHighlightRange: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
+    var onHighlightRange: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
     
-    var onSelectStart: js.UndefOr[js.Function1[/* value */ MomentRangeNoneinpundefin, Unit]] = js.native
+    var onSelectStart: js.UndefOr[js.Function1[/* value */ MomentRangeNoneinpundefin, Unit]] = js.undefined
     
     var paginationArrowComponent: js.UndefOr[
         (ComponentClass[PaginationArrowProps[js.Object], ComponentState]) | SFC[PaginationArrowProps[js.Object]]
-      ] = js.native
+      ] = js.undefined
     
-    var selectedLabel: js.UndefOr[String] = js.native
+    var selectedLabel: js.UndefOr[String] = js.undefined
     
-    var showLegend: js.UndefOr[Boolean] = js.native
+    var showLegend: js.UndefOr[Boolean] = js.undefined
     
-    var singleDateRange: js.UndefOr[Boolean] = js.native
+    var singleDateRange: js.UndefOr[Boolean] = js.undefined
     
-    var stateDefinitions: js.UndefOr[StateDefinitions] = js.native
+    var stateDefinitions: js.UndefOr[StateDefinitions] = js.undefined
     
-    var value: js.UndefOr[MomentRangeNoneinpundefin | DateRange | Moment] = js.native
+    var value: js.UndefOr[MomentRangeNoneinpundefin | DateRange | Moment] = js.undefined
   }
   object BaseProps {
     
@@ -97,7 +96,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BasePropsMutableBuilder[Self <: BaseProps[_], T] (val x: Self with BaseProps[T]) extends AnyVal {
+    implicit class BasePropsMutableBuilder[Self <: BaseProps[?], T] (val x: Self & BaseProps[T]) extends AnyVal {
       
       @scala.inline
       def setBemBlock(value: String): Self = StObject.set(x, "bemBlock", value.asInstanceOf[js.Any])
@@ -266,12 +265,11 @@ object mod {
   trait DateRangePicker
     extends Component[Props[DateRangePicker], js.Object, js.Any]
   
-  @js.native
   trait DateState extends StObject {
     
-    var range: DateRange = js.native
+    var range: DateRange
     
-    var state: String = js.native
+    var state: String
   }
   object DateState {
     
@@ -292,12 +290,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OnSelectCallbackParam extends StObject {
     
-    var end: Moment = js.native
+    var end: Moment
     
-    var start: Moment = js.native
+    var start: Moment
   }
   object OnSelectCallbackParam {
     
@@ -318,15 +315,15 @@ object mod {
     }
   }
   
-  @js.native
   trait PaginationArrowProps[T]
-    extends typings.react.mod.Props[T] {
+    extends StObject
+       with typings.react.mod.Props[T] {
     
-    var direction: js.UndefOr[next | previous] = js.native
+    var direction: js.UndefOr[next | previous] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onTrigger: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTrigger: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object PaginationArrowProps {
     
@@ -337,7 +334,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PaginationArrowPropsMutableBuilder[Self <: PaginationArrowProps[_], T] (val x: Self with PaginationArrowProps[T]) extends AnyVal {
+    implicit class PaginationArrowPropsMutableBuilder[Self <: PaginationArrowProps[?], T] (val x: Self & PaginationArrowProps[T]) extends AnyVal {
       
       @scala.inline
       def setDirection(value: next | previous): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
@@ -379,14 +376,14 @@ object mod {
     }
   }
   
-  @js.native
   trait RangeProps[T]
-    extends BaseProps[T]
+    extends StObject
+       with BaseProps[T]
        with Props[T] {
     
-    var onSelect: js.UndefOr[js.Function1[/* value */ OnSelectCallbackParam, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* value */ OnSelectCallbackParam, Unit]] = js.undefined
     
-    var selectionType: js.UndefOr[range] = js.native
+    var selectionType: js.UndefOr[range] = js.undefined
   }
   object RangeProps {
     
@@ -397,7 +394,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RangePropsMutableBuilder[Self <: RangeProps[_], T] (val x: Self with RangeProps[T]) extends AnyVal {
+    implicit class RangePropsMutableBuilder[Self <: RangeProps[?], T] (val x: Self & RangeProps[T]) extends AnyVal {
       
       @scala.inline
       def setOnSelect(value: /* value */ OnSelectCallbackParam => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
@@ -413,14 +410,14 @@ object mod {
     }
   }
   
-  @js.native
   trait SingleProps[T]
-    extends BaseProps[T]
+    extends StObject
+       with BaseProps[T]
        with Props[T] {
     
-    var onSelect: js.UndefOr[js.Function1[/* value */ Moment, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* value */ Moment, Unit]] = js.undefined
     
-    var selectionType: js.UndefOr[single] = js.native
+    var selectionType: js.UndefOr[single] = js.undefined
   }
   object SingleProps {
     
@@ -431,7 +428,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SinglePropsMutableBuilder[Self <: SingleProps[_], T] (val x: Self with SingleProps[T]) extends AnyVal {
+    implicit class SinglePropsMutableBuilder[Self <: SingleProps[?], T] (val x: Self & SingleProps[T]) extends AnyVal {
       
       @scala.inline
       def setOnSelect(value: /* value */ Moment => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
@@ -447,14 +444,13 @@ object mod {
     }
   }
   
-  @js.native
   trait StateDefinition extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var label: String = js.native
+    var label: String
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
   }
   object StateDefinition {
     

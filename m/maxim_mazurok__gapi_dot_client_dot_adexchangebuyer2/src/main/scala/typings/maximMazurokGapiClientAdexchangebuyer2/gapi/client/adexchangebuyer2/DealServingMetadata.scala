@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DealServingMetadata extends StObject {
   
   /** Output only. Tracks which parties (if any) have paused a deal. */
-  var dealPauseStatus: js.UndefOr[DealPauseStatus] = js.native
+  var dealPauseStatus: js.UndefOr[DealPauseStatus] = js.undefined
 }
 object DealServingMetadata {
   

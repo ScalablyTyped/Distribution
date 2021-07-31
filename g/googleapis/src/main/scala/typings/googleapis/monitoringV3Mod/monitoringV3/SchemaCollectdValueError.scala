@@ -2,25 +2,23 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the error status for values that were not written.
   */
-@js.native
 trait SchemaCollectdValueError extends StObject {
   
   /**
     * Records the error status for the value.
     */
-  var error: js.UndefOr[SchemaStatus] = js.native
+  var error: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * The zero-based index in CollectdPayload.values within the parent
     * CreateCollectdTimeSeriesRequest.collectd_payloads.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
 }
 object SchemaCollectdValueError {
   

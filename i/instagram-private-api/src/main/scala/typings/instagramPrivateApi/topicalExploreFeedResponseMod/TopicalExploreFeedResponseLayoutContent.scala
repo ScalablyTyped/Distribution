@@ -2,17 +2,15 @@ package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicalExploreFeedResponseLayoutContent extends StObject {
   
-  var fill_items: js.UndefOr[js.Array[TopicalExploreFeedResponseFillItemsItem]] = js.native
+  var fill_items: js.UndefOr[js.Array[TopicalExploreFeedResponseFillItemsItem]] = js.undefined
   
-  var medias: js.UndefOr[js.Array[TopicalExploreFeedResponseMediasItem]] = js.native
+  var medias: js.UndefOr[js.Array[TopicalExploreFeedResponseMediasItem]] = js.undefined
   
-  var two_by_two_item: js.UndefOr[TopicalExploreFeedResponseTwoByTwoItem] = js.native
+  var two_by_two_item: js.UndefOr[TopicalExploreFeedResponseTwoByTwoItem] = js.undefined
 }
 object TopicalExploreFeedResponseLayoutContent {
   

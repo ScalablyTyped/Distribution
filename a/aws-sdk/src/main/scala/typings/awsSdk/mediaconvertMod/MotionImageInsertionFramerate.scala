@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MotionImageInsertionFramerate extends StObject {
   
   /**
     * The bottom of the fraction that expresses your overlay frame rate. For example, if your frame rate is 24 fps, set this value to 1.
     */
-  var FramerateDenominator: js.UndefOr[integerMin1Max17895697] = js.native
+  var FramerateDenominator: js.UndefOr[integerMin1Max17895697] = js.undefined
   
   /**
     * The top of the fraction that expresses your overlay frame rate. For example, if your frame rate is 24 fps, set this value to 24.
     */
-  var FramerateNumerator: js.UndefOr[integerMin1Max2147483640] = js.native
+  var FramerateNumerator: js.UndefOr[integerMin1Max2147483640] = js.undefined
 }
 object MotionImageInsertionFramerate {
   

@@ -2,17 +2,15 @@ package typings.googleCloudStorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Callback[T, U] extends StObject {
     
-    var callback: U = js.native
+    var callback: U
     
-    var options: T = js.native
+    var options: T
   }
   object Callback {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CallbackMutableBuilder[Self <: Callback[_, _], T, U] (val x: Self with (Callback[T, U])) extends AnyVal {
+    implicit class CallbackMutableBuilder[Self <: Callback[?, ?], T, U] (val x: Self & (Callback[T, U])) extends AnyVal {
       
       @scala.inline
       def setCallback(value: U): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object Max {
     
@@ -65,14 +62,13 @@ object anon {
     }
   }
   
-  @js.native
   trait OWNERROLE extends StObject {
     
-    var OWNER_ROLE: String = js.native
+    var OWNER_ROLE: String
     
-    var READER_ROLE: String = js.native
+    var READER_ROLE: String
     
-    var WRITER_ROLE: String = js.native
+    var WRITER_ROLE: String
   }
   object OWNERROLE {
     
@@ -96,12 +92,11 @@ object anon {
     }
   }
   
-  @js.native
   trait StorageClass extends StObject {
     
-    var storageClass: js.UndefOr[String] = js.native
+    var storageClass: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object StorageClass {
     

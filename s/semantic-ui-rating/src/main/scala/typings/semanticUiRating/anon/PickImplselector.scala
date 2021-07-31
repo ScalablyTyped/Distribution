@@ -3,14 +3,12 @@ package typings.semanticUiRating.anon
 import typings.semanticUiRating.SemanticUI.Rating.SelectorSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-rating.SemanticUI.RatingSettings._Impl, 'selector'> */
-@js.native
 trait PickImplselector extends StObject {
   
-  var selector: SelectorSettings = js.native
+  var selector: SelectorSettings
 }
 object PickImplselector {
   

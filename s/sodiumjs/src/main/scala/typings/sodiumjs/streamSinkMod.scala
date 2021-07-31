@@ -4,7 +4,6 @@ import typings.sodiumjs.lambdaMod.Lambda2_
 import typings.sodiumjs.streamMod.StreamWithSend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object streamSinkMod {

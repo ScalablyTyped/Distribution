@@ -2,17 +2,15 @@ package typings.chromeApps.chrome.runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManifestAction extends StObject {
   
-  var default_icon: js.UndefOr[ManifestIcons] = js.native
+  var default_icon: js.UndefOr[ManifestIcons] = js.undefined
   
-  var default_popup: js.UndefOr[String] = js.native
+  var default_popup: js.UndefOr[String] = js.undefined
   
-  var default_title: js.UndefOr[String] = js.native
+  var default_title: js.UndefOr[String] = js.undefined
 }
 object ManifestAction {
   

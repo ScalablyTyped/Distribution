@@ -2,13 +2,11 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PauseStateScheduleActionSettings extends StObject {
   
-  var Pipelines: js.UndefOr[listOfPipelinePauseStateSettings] = js.native
+  var Pipelines: js.UndefOr[listOfPipelinePauseStateSettings] = js.undefined
 }
 object PauseStateScheduleActionSettings {
   

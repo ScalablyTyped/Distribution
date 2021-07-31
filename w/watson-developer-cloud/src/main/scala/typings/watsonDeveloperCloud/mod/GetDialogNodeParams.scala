@@ -2,25 +2,23 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `getDialogNode` operation. */
-@js.native
 trait GetDialogNodeParams extends StObject {
   
   /** The dialog node ID (for example, `get_order`). */
-  var dialog_node: String = js.native
+  var dialog_node: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** Whether to include the audit properties (`created` and `updated` timestamps) in the response. */
-  var include_audit: js.UndefOr[Boolean] = js.native
+  var include_audit: js.UndefOr[Boolean] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** Unique identifier of the workspace. */
-  var workspace_id: String = js.native
+  var workspace_id: String
 }
 object GetDialogNodeParams {
   

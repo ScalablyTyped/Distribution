@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArcStatus extends StObject {
   
   /** ARC approval status. */
-  var arcStatus: js.UndefOr[String] = js.native
+  var arcStatus: js.UndefOr[String] = js.undefined
   
   /** External deal ID. */
-  var dealId: js.UndefOr[String] = js.native
+  var dealId: js.UndefOr[String] = js.undefined
   
   /** Publisher ID. */
-  var webPropertyId: js.UndefOr[Double] = js.native
+  var webPropertyId: js.UndefOr[Double] = js.undefined
 }
 object ArcStatus {
   

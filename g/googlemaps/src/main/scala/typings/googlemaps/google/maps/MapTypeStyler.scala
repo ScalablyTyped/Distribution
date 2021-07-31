@@ -2,27 +2,25 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapTypeStyler extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var gamma: js.UndefOr[Double] = js.native
+  var gamma: js.UndefOr[Double] = js.undefined
   
-  var hue: js.UndefOr[String] = js.native
+  var hue: js.UndefOr[String] = js.undefined
   
-  var invert_lightness: js.UndefOr[Boolean] = js.native
+  var invert_lightness: js.UndefOr[Boolean] = js.undefined
   
-  var lightness: js.UndefOr[Double] = js.native
+  var lightness: js.UndefOr[Double] = js.undefined
   
-  var saturation: js.UndefOr[Double] = js.native
+  var saturation: js.UndefOr[Double] = js.undefined
   
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
   
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object MapTypeStyler {
   

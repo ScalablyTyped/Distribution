@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdmin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationName extends StObject {
   
   /** Application name to which the event belongs. For possible values see the list of applications above in applicationName. */
-  var applicationName: js.UndefOr[String] = js.native
+  var applicationName: js.UndefOr[String] = js.undefined
   
   /** The unique identifier for a G suite account. */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /** Time of occurrence of the activity. This is in UNIX epoch time in seconds. */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
   
   /** Unique qualifier if multiple events have the same time. */
-  var uniqueQualifier: js.UndefOr[String] = js.native
+  var uniqueQualifier: js.UndefOr[String] = js.undefined
 }
 object ApplicationName {
   

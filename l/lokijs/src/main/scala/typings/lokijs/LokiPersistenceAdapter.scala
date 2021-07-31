@@ -3,7 +3,6 @@ package typings.lokijs
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*------------------+
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * localStorage   for use in browser environment
   * defined as helper classes here so its easy and clean to use
   */
-@js.native
 trait LokiPersistenceAdapter extends StObject {
   
   var deleteDatabase: js.UndefOr[
@@ -23,7 +21,7 @@ trait LokiPersistenceAdapter extends StObject {
       /* callback */ js.Function2[/* err */ js.UndefOr[Error | Null], /* data */ js.UndefOr[js.Any], Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var exportDatabase: js.UndefOr[
     js.Function3[
@@ -32,11 +30,11 @@ trait LokiPersistenceAdapter extends StObject {
       /* callback */ js.Function1[/* err */ Error | Null, Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+  def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   var saveDatabase: js.UndefOr[
     js.Function3[
@@ -45,7 +43,7 @@ trait LokiPersistenceAdapter extends StObject {
       /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object LokiPersistenceAdapter {
   

@@ -1,15 +1,14 @@
 package typings.react
 
-import typings.react.anon.OpaqueIdentifierBranding
 import typings.react.mod.ExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.reactStrings.backwards
 import typings.react.reactStrings.forwards
 import typings.std.Exclude
 import typings.std.Iterable
+import typings.std.String
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object experimentalMod {
@@ -17,40 +16,39 @@ object experimentalMod {
   /* augmented module */
   object reactAugmentingMod {
     
-    @JSImport("react", "unstable_startTransition")
+    @JSImport("react", JSImport.Namespace)
     @js.native
-    def unstableStartTransition(scope: TransitionFunction): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def unstableStartTransition(scope: TransitionFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_startTransition")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("react", "unstable_SuspenseList")
     @js.native
     val unstableSuspenseList: ExoticComponent[SuspenseListProps] = js.native
     
-    @JSImport("react", "unstable_useDeferredValue")
-    @js.native
-    def unstableUseDeferredValue[T](value: T): T = js.native
+    @scala.inline
+    def unstableUseDeferredValue[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useDeferredValue")(value.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("react", "unstable_useOpaqueIdentifier")
-    @js.native
-    def unstableUseOpaqueIdentifier(): OpaqueIdentifier = js.native
+    @scala.inline
+    def unstableUseOpaqueIdentifier(): OpaqueIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useOpaqueIdentifier")().asInstanceOf[OpaqueIdentifier]
     
-    @JSImport("react", "unstable_useTransition")
-    @js.native
-    def unstableUseTransition(config: js.UndefOr[SuspenseConfig | Null]): js.Tuple2[TransitionStartFunction, Boolean] = js.native
+    @scala.inline
+    def unstableUseTransition(config: js.UndefOr[SuspenseConfig | Null]): js.Tuple2[TransitionStartFunction, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useTransition")(config.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[TransitionStartFunction, Boolean]]
     
-    @JSImport("react", "unstable_withSuspenseConfig")
-    @js.native
-    def unstableWithSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: js.UndefOr[SuspenseConfig | Null]): Unit = js.native
+    @scala.inline
+    def unstableWithSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: js.UndefOr[SuspenseConfig | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_withSuspenseConfig")(scope.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @js.native
     trait DirectionalSuspenseListProps
-      extends SuspenseListCommonProps
+      extends StObject
+         with SuspenseListCommonProps
          with typings.react.mod.SuspenseListProps
          with SuspenseListProps {
       
       /**
         * Defines the order in which the `SuspenseList` children should be revealed.
         */
-      var revealOrder: forwards | backwards = js.native
+      var revealOrder: forwards | backwards
       
       /**
         * Dictates how unloaded items in a SuspenseList is shown.
@@ -59,7 +57,7 @@ object experimentalMod {
         * - `collapsed` shows only the next fallback in the list.
         * - `hidden` doesn’t show any unloaded items.
         */
-      var tail: js.UndefOr[SuspenseListTailMode] = js.native
+      var tail: js.UndefOr[SuspenseListTailMode] = js.undefined
     }
     object DirectionalSuspenseListProps {
       
@@ -83,21 +81,21 @@ object experimentalMod {
       }
     }
     
-    @js.native
     trait NonDirectionalSuspenseListProps
-      extends SuspenseListCommonProps
+      extends StObject
+         with SuspenseListCommonProps
          with typings.react.mod.SuspenseListProps
          with SuspenseListProps {
       
       /**
         * Defines the order in which the `SuspenseList` children should be revealed.
         */
-      var revealOrder: js.UndefOr[Exclude[SuspenseListRevealOrder, forwards | backwards]] = js.native
+      var revealOrder: js.UndefOr[Exclude[SuspenseListRevealOrder, forwards | backwards]] = js.undefined
       
       /**
         * The tail property is invalid when not using the `forwards` or `backwards` reveal orders.
         */
-      var tail: js.UndefOr[scala.Nothing] = js.native
+      var tail: js.UndefOr[scala.Nothing] = js.undefined
     }
     object NonDirectionalSuspenseListProps {
       
@@ -126,14 +124,16 @@ object experimentalMod {
       */
     // We can't create a type that would be rejected for string concatenation or `.toString()` calls.
     // So in order to not have to add `string | OpaqueIdentifier` to every react-dom host prop we intersect it with `string`.
-    type OpaqueIdentifier = String with OpaqueIdentifierBranding
-    
     @js.native
+    trait OpaqueIdentifier
+      extends StObject
+         with String
+    
     trait SuspenseConfig extends StObject {
       
-      var busyDelayMs: js.UndefOr[Double] = js.native
+      var busyDelayMs: js.UndefOr[Double] = js.undefined
       
-      var busyMinDurationMs: js.UndefOr[Double] = js.native
+      var busyMinDurationMs: js.UndefOr[Double] = js.undefined
     }
     object SuspenseConfig {
       
@@ -160,7 +160,6 @@ object experimentalMod {
       }
     }
     
-    @js.native
     trait SuspenseListCommonProps extends StObject {
       
       /**
@@ -170,7 +169,7 @@ object experimentalMod {
         * It does, however, allow those children to be wrapped inside a single
         * level of `<React.Fragment>`.
         */
-      var children: ReactElement | Iterable[ReactElement] = js.native
+      var children: ReactElement | Iterable[ReactElement]
     }
     object SuspenseListCommonProps {
       
@@ -240,7 +239,6 @@ object experimentalMod {
       def hidden: typings.react.reactStrings.hidden = "hidden".asInstanceOf[typings.react.reactStrings.hidden]
     }
     
-    @js.native
     trait SuspenseProps extends StObject {
       
       /**
@@ -248,7 +246,7 @@ object experimentalMod {
         * In other words, the tree is CPU bound and not I/O bound (e.g. due to fetching data).
         * @see {@link https://github.com/facebook/react/pull/19936}
         */
-      var unstable_expectedLoadTime: js.UndefOr[Double] = js.native
+      var unstable_expectedLoadTime: js.UndefOr[Double] = js.undefined
     }
     object SuspenseProps {
       

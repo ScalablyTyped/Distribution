@@ -2,13 +2,11 @@ package typings.bip174.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PsbtGlobalUpdate extends StObject {
   
-  var globalXpub: js.UndefOr[js.Array[GlobalXpub]] = js.native
+  var globalXpub: js.UndefOr[js.Array[GlobalXpub]] = js.undefined
 }
 object PsbtGlobalUpdate {
   

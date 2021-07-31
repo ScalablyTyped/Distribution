@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3SessionInfo extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait GoogleCloudDialogflowCxV3SessionInfo extends StObject {
   var parameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3SessionInfo with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3SessionInfo & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Always present for WebhookRequest. Ignored for WebhookResponse. The unique identifier of the session. This field can be used by the webhook to identify a user. Format:
     * `projects//locations//agents//sessions/`.
     */
-  var session: js.UndefOr[String] = js.native
+  var session: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowCxV3SessionInfo {
   
@@ -40,7 +38,7 @@ object GoogleCloudDialogflowCxV3SessionInfo {
     def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3SessionInfo with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3SessionInfo & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

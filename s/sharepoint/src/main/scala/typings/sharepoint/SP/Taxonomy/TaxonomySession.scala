@@ -4,11 +4,12 @@ import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.Guid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaxonomySession extends ClientObject {
+trait TaxonomySession
+  extends StObject
+     with ClientObject {
   
   def getDefaultKeywordsTermStore(): TermStore = js.native
   

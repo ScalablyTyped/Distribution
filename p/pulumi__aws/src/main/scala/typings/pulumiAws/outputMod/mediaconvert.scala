@@ -2,28 +2,26 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaconvert {
   
-  @js.native
   trait QueueReservationPlanSettings extends StObject {
     
     /**
       * The length of the term of your reserved queue pricing plan commitment. Valid value is `ONE_YEAR`.
       */
-    var commitment: String = js.native
+    var commitment: String
     
     /**
       * Specifies whether the term of your reserved queue pricing plan. Valid values are `AUTO_RENEW` or `EXPIRE`.
       */
-    var renewalType: String = js.native
+    var renewalType: String
     
     /**
       * Specifies the number of reserved transcode slots (RTS) for queue.
       */
-    var reservedSlots: Double = js.native
+    var reservedSlots: Double
   }
   object QueueReservationPlanSettings {
     

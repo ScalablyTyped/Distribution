@@ -3,15 +3,18 @@ package typings.phaser.global.spine
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.AssetManager")
 @js.native
 class AssetManager protected ()
-  extends typings.phaser.spine.AssetManager {
-  def this(textureLoader: js.Function1[/* image */ HTMLImageElement, _]) = this()
-  def this(textureLoader: js.Function1[/* image */ HTMLImageElement, _], pathPrefix: String) = this()
+  extends StObject
+     with typings.phaser.spine.AssetManager {
+  def this(textureLoader: js.Function1[/* image */ HTMLImageElement, js.Any]) = this()
+  def this(textureLoader: js.Function1[/* image */ HTMLImageElement, js.Any], pathPrefix: String) = this()
+  
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 object AssetManager {
   

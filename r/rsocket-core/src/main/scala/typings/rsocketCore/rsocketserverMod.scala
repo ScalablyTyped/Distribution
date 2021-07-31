@@ -11,23 +11,29 @@ import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsocketserverMod {
   
   @JSImport("rsocket-core/RSocketServer", JSImport.Default)
   @js.native
-  class default[D, M] protected () extends RSocketServer[D, M] {
+  class default[D, M] protected ()
+    extends StObject
+       with RSocketServer[D, M] {
     def this(config: ServerConfig[D, M]) = this()
+    
+    /* CompleteClass */
+    override def start(): Unit = js.native
+    
+    /* CompleteClass */
+    override def stop(): Unit = js.native
   }
   
-  @js.native
   trait RSocketServer[D, M] extends StObject {
     
-    def start(): Unit = js.native
+    def start(): Unit
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object RSocketServer {
     
@@ -38,7 +44,7 @@ object rsocketserverMod {
     }
     
     @scala.inline
-    implicit class RSocketServerMutableBuilder[Self <: RSocketServer[_, _], D, M] (val x: Self with (RSocketServer[D, M])) extends AnyVal {
+    implicit class RSocketServerMutableBuilder[Self <: RSocketServer[?, ?], D, M] (val x: Self & (RSocketServer[D, M])) extends AnyVal {
       
       @scala.inline
       def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
@@ -48,18 +54,17 @@ object rsocketserverMod {
     }
   }
   
-  @js.native
   trait ServerConfig[D, M] extends StObject {
     
-    var errorHandler: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.native
+    var errorHandler: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
     
-    def getRequestHandler(socket: ReactiveSocket[D, M], payload: Payload[D, M]): Partial[Responder[D, M]] = js.native
+    def getRequestHandler(socket: ReactiveSocket[D, M], payload: Payload[D, M]): Partial[Responder[D, M]]
     
-    var leases: js.UndefOr[js.Function0[Leases[_]]] = js.native
+    var leases: js.UndefOr[js.Function0[Leases[js.Any]]] = js.undefined
     
-    var serializers: js.UndefOr[PayloadSerializers[D, M]] = js.native
+    var serializers: js.UndefOr[PayloadSerializers[D, M]] = js.undefined
     
-    var transport: TransportServer = js.native
+    var transport: TransportServer
   }
   object ServerConfig {
     
@@ -73,7 +78,7 @@ object rsocketserverMod {
     }
     
     @scala.inline
-    implicit class ServerConfigMutableBuilder[Self <: ServerConfig[_, _], D, M] (val x: Self with (ServerConfig[D, M])) extends AnyVal {
+    implicit class ServerConfigMutableBuilder[Self <: ServerConfig[?, ?], D, M] (val x: Self & (ServerConfig[D, M])) extends AnyVal {
       
       @scala.inline
       def setErrorHandler(value: /* e */ Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
@@ -85,7 +90,7 @@ object rsocketserverMod {
       def setGetRequestHandler(value: (ReactiveSocket[D, M], Payload[D, M]) => Partial[Responder[D, M]]): Self = StObject.set(x, "getRequestHandler", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setLeases(value: () => Leases[_]): Self = StObject.set(x, "leases", js.Any.fromFunction0(value))
+      def setLeases(value: () => Leases[js.Any]): Self = StObject.set(x, "leases", js.Any.fromFunction0(value))
       
       @scala.inline
       def setLeasesUndefined: Self = StObject.set(x, "leases", js.undefined)
@@ -101,12 +106,11 @@ object rsocketserverMod {
     }
   }
   
-  @js.native
   trait TransportServer extends StObject {
     
-    def start(): Flowable[DuplexConnection] = js.native
+    def start(): Flowable[DuplexConnection]
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object TransportServer {
     

@@ -3,26 +3,24 @@ package typings.flowdoc.Flow
 import typings.flowdoc.flowdocStrings.DOCUMENT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
-  var children: js.Array[Page] = js.native
+  var children: js.Array[Page]
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: DOCUMENT = js.native
+  var `type`: DOCUMENT
 }
 object Document {
   
   @scala.inline
-  def apply(children: js.Array[Page], id: String, name: String, `type`: DOCUMENT): Document = {
+  def apply(children: js.Array[Page], id: String, name: String): Document = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DOCUMENT")
     __obj.asInstanceOf[Document]
   }
   

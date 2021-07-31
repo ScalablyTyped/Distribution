@@ -3,26 +3,24 @@ package typings.vsoNodeApi.buildInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceProviderAttributes extends StObject {
   
   /**
     * The name of the source provider.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The capabilities supported by this source provider.
     */
-  var supportedCapabilities: StringDictionary[Boolean] = js.native
+  var supportedCapabilities: StringDictionary[Boolean]
   
   /**
     * The types of triggers supported by this source provider.
     */
-  var supportedTriggers: js.Array[SupportedTrigger] = js.native
+  var supportedTriggers: js.Array[SupportedTrigger]
 }
 object SourceProviderAttributes {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePackageRequest extends StObject {
   
   /**
     * Description of the package.
     */
-  var PackageDescription: js.UndefOr[typings.awsSdk.esMod.PackageDescription] = js.native
+  var PackageDescription: js.UndefOr[typings.awsSdk.esMod.PackageDescription] = js.undefined
   
   /**
     * Unique identifier for the package.
     */
-  var PackageName: typings.awsSdk.esMod.PackageName = js.native
+  var PackageName: typings.awsSdk.esMod.PackageName
   
   /**
     * The customer S3 location PackageSource for importing the package.
     */
-  var PackageSource: typings.awsSdk.esMod.PackageSource = js.native
+  var PackageSource: typings.awsSdk.esMod.PackageSource
   
   /**
     * Type of package. Currently supports only TXT-DICTIONARY.
     */
-  var PackageType: typings.awsSdk.esMod.PackageType = js.native
+  var PackageType: typings.awsSdk.esMod.PackageType
 }
 object CreatePackageRequest {
   

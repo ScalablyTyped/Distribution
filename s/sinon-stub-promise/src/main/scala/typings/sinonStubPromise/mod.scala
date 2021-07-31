@@ -3,14 +3,16 @@ package typings.sinonStubPromise
 import typings.sinon.mod.SinonStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(sinon: SinonStatic): Unit = ^.asInstanceOf[js.Dynamic].apply(sinon.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("sinon-stub-promise", JSImport.Namespace)
   @js.native
-  def apply(sinon: SinonStatic): Unit = js.native
+  val ^ : js.Any = js.native
   
   object sinonAugmentingMod {
     

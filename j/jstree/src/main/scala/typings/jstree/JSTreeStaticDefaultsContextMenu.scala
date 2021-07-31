@@ -2,10 +2,8 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeStaticDefaultsContextMenu extends StObject {
   
   /**
@@ -35,14 +33,14 @@ trait JSTreeStaticDefaultsContextMenu extends StObject {
     * @name $.jstree.defaults.contextmenu.items
     * @plugin contextmenu
     */
-  var items: js.Any = js.native
+  var items: js.Any
   
   /**
     * a boolean indicating if the node should be selected when the context menu is invoked on it. Defaults to `true`.
     * @name $.jstree.defaults.contextmenu.select_node
     * @plugin contextmenu
     */
-  var select_node: Boolean = js.native
+  var select_node: Boolean
   
   /**
     * a boolean indicating if the menu should be shown aligned with the node. Defaults to `true`,
@@ -50,7 +48,7 @@ trait JSTreeStaticDefaultsContextMenu extends StObject {
     * @name $.jstree.defaults.contextmenu.show_at_node
     * @plugin contextmenu
     */
-  var show_at_node: Boolean = js.native
+  var show_at_node: Boolean
 }
 object JSTreeStaticDefaultsContextMenu {
   

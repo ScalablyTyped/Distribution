@@ -6,10 +6,13 @@ import typings.awsSdkCredentialProviderImds.remoteProviderInitMod.RemoteProvider
 import typings.awsSdkTypes.credentialsMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteProviderMod {
+  
+  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider", "DEFAULT_MAX_RETRIES")
   @js.native
@@ -19,15 +22,12 @@ object remoteProviderMod {
   @js.native
   val DEFAULT_TIMEOUT: /* 1000 */ Double = js.native
   
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider", "fromImdsCredentials")
-  @js.native
-  def fromImdsCredentials(creds: ImdsCredentials): Credentials = js.native
+  @scala.inline
+  def fromImdsCredentials(creds: ImdsCredentials): Credentials = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImdsCredentials")(creds.asInstanceOf[js.Any]).asInstanceOf[Credentials]
   
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider", "isImdsCredentials")
-  @js.native
-  def isImdsCredentials(arg: js.Any): /* is @aws-sdk/credential-provider-imds.@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/ImdsCredentials.ImdsCredentials */ Boolean = js.native
+  @scala.inline
+  def isImdsCredentials(arg: js.Any): /* is @aws-sdk/credential-provider-imds.@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/ImdsCredentials.ImdsCredentials */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImdsCredentials")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/credential-provider-imds.@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/ImdsCredentials.ImdsCredentials */ Boolean]
   
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider", "providerConfigFromInit")
-  @js.native
-  def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = js.native
+  @scala.inline
+  def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(hasMaxRetriesTimeout.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
 }

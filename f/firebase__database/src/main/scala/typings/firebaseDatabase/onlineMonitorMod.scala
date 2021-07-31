@@ -3,7 +3,6 @@ package typings.firebaseDatabase
 import typings.firebaseDatabase.eventEmitterMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onlineMonitorMod {
@@ -22,8 +21,11 @@ object onlineMonitorMod {
   /* static members */
   object OnlineMonitor {
     
-    @JSImport("@firebase/database/dist/src/core/util/OnlineMonitor", "OnlineMonitor.getInstance")
+    @JSImport("@firebase/database/dist/src/core/util/OnlineMonitor", "OnlineMonitor")
     @js.native
-    def getInstance(): OnlineMonitor = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getInstance(): OnlineMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[OnlineMonitor]
   }
 }

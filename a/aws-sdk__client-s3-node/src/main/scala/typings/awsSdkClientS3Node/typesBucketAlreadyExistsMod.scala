@@ -3,22 +3,22 @@ package typings.awsSdkClientS3Node
 import typings.awsSdkClientS3Node.createBucketExceptionsUnionMod.CreateBucketExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBucketAlreadyExistsMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BucketAlreadyExistsDetails> * / any */ @js.native
-  trait BucketAlreadyExists extends CreateBucketExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BucketAlreadyExistsDetails> * / any */ trait BucketAlreadyExists
+    extends StObject
+       with CreateBucketExceptionsUnion {
     
-    var name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.BucketAlreadyExists = js.native
+    var name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.BucketAlreadyExists
   }
   object BucketAlreadyExists {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.BucketAlreadyExists): BucketAlreadyExists = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): BucketAlreadyExists = {
+      val __obj = js.Dynamic.literal(name = "BucketAlreadyExists")
       __obj.asInstanceOf[BucketAlreadyExists]
     }
     
@@ -30,6 +30,5 @@ object typesBucketAlreadyExistsMod {
     }
   }
   
-  @js.native
   trait BucketAlreadyExistsDetails extends StObject
 }

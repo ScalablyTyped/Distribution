@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,7 +27,9 @@ object AppointmentSensitivityType extends StObject {
     * [Api set: Mailbox Preview]
     */
   @js.native
-  sealed trait Confidential extends AppointmentSensitivityType
+  sealed trait Confidential
+    extends StObject
+       with AppointmentSensitivityType
   
   /**
     * The item needs no special treatment.
@@ -36,7 +37,9 @@ object AppointmentSensitivityType extends StObject {
     * [Api set: Mailbox Preview]
     */
   @js.native
-  sealed trait Normal extends AppointmentSensitivityType
+  sealed trait Normal
+    extends StObject
+       with AppointmentSensitivityType
   
   /**
     * Treat the item as personal.
@@ -44,7 +47,9 @@ object AppointmentSensitivityType extends StObject {
     * [Api set: Mailbox Preview]
     */
   @js.native
-  sealed trait Personal extends AppointmentSensitivityType
+  sealed trait Personal
+    extends StObject
+       with AppointmentSensitivityType
   
   /**
     * Treat the item as private.
@@ -52,5 +57,7 @@ object AppointmentSensitivityType extends StObject {
     * [Api set: Mailbox Preview]
     */
   @js.native
-  sealed trait Private extends AppointmentSensitivityType
+  sealed trait Private
+    extends StObject
+       with AppointmentSensitivityType
 }

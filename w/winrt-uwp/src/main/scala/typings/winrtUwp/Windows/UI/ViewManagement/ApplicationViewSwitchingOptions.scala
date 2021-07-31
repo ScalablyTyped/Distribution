@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object ApplicationViewSwitchingOptions extends StObject {
   
   /** Perform the standard animated transition between windows upon switching. */
   @js.native
-  sealed trait default extends ApplicationViewSwitchingOptions
+  sealed trait default
+    extends StObject
+       with ApplicationViewSwitchingOptions
   
   /** Close the initial window and remove it from the list of recently used apps, and display the window to which the app is switching. */
   @js.native
-  sealed trait consolidateViews extends ApplicationViewSwitchingOptions
+  sealed trait consolidateViews
+    extends StObject
+       with ApplicationViewSwitchingOptions
   
   /** Immediately transition between windows without animation. */
   @js.native
-  sealed trait skipAnimation extends ApplicationViewSwitchingOptions
+  sealed trait skipAnimation
+    extends StObject
+       with ApplicationViewSwitchingOptions
 }

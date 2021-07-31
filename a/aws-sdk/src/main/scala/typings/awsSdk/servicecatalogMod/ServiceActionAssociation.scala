@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceActionAssociation extends StObject {
   
   /**
     * The product identifier. For example, prod-abcdzk7xy33qa.
     */
-  var ProductId: Id = js.native
+  var ProductId: Id
   
   /**
     * The identifier of the provisioning artifact. For example, pa-4abcdjnxjj6ne.
     */
-  var ProvisioningArtifactId: Id = js.native
+  var ProvisioningArtifactId: Id
   
   /**
     * The self-service action identifier. For example, act-fs7abcd89wxyz.
     */
-  var ServiceActionId: Id = js.native
+  var ServiceActionId: Id
 }
 object ServiceActionAssociation {
   

@@ -2,20 +2,18 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access and manipulate script publishing.
   */
-@js.native
 trait Service extends StObject {
   
-  /** @deprecated DO NOT USE */ def disable(): Unit = js.native
+  /** @deprecated DO NOT USE */ def disable(): Unit
   
-  def getUrl(): String = js.native
+  def getUrl(): String
   
-  def isEnabled(): Boolean = js.native
+  def isEnabled(): Boolean
 }
 object Service {
   

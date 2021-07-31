@@ -2,23 +2,21 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryPositionOptions extends StObject {
   
-  var at: js.UndefOr[String] = js.native
+  var at: js.UndefOr[String] = js.undefined
   
-  var collision: js.UndefOr[String] = js.native
+  var collision: js.UndefOr[String] = js.undefined
   
-  var my: js.UndefOr[String] = js.native
+  var my: js.UndefOr[String] = js.undefined
   
-  var of: js.UndefOr[js.Any] = js.native
+  var of: js.UndefOr[js.Any] = js.undefined
   
-  var using: js.UndefOr[js.Function] = js.native
+  var `using`: js.UndefOr[js.Function] = js.undefined
   
-  var within: js.UndefOr[js.Any] = js.native
+  var within: js.UndefOr[js.Any] = js.undefined
 }
 object JQueryPositionOptions {
   

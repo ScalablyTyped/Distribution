@@ -2,15 +2,13 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Padding extends StObject {
   
-  var padding: Double = js.native
+  var padding: Double
   
-  var style: StrokeString = js.native
+  var style: StrokeString
 }
 object Padding {
   

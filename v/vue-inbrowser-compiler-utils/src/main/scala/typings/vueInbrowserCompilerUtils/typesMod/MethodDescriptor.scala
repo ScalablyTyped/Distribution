@@ -3,27 +3,26 @@ package typings.vueInbrowserCompilerUtils.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MethodDescriptor
-  extends Descriptor
+  extends StObject
+     with Descriptor
      with /* key */ StringDictionary[js.Any] {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var modifiers: js.UndefOr[js.Array[String]] = js.native
+  var modifiers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var params: js.UndefOr[js.Array[Param]] = js.native
+  var params: js.UndefOr[js.Array[Param]] = js.undefined
   
-  var returns: js.UndefOr[UnnamedParam] = js.native
+  var returns: js.UndefOr[UnnamedParam] = js.undefined
   
-  var tags: js.UndefOr[StringDictionary[js.Array[BlockTag]]] = js.native
+  var tags: js.UndefOr[StringDictionary[js.Array[BlockTag]]] = js.undefined
   
-  var throws: js.UndefOr[UnnamedParam] = js.native
+  var throws: js.UndefOr[UnnamedParam] = js.undefined
 }
 object MethodDescriptor {
   

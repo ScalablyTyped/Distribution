@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTimeSeriesResponse extends StObject {
   
   /** Query execution errors that may have caused the time series data returned to be incomplete. */
-  var executionErrors: js.UndefOr[js.Array[Status]] = js.native
+  var executionErrors: js.UndefOr[js.Array[Status]] = js.undefined
   
   /**
     * If there are more results than have been returned, then this field is set to a non-empty value. To see the additional results, use that value as page_token in the next call to this
     * method.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** One or more time series that match the filter included in the request. */
-  var timeSeries: js.UndefOr[js.Array[TimeSeries]] = js.native
+  var timeSeries: js.UndefOr[js.Array[TimeSeries]] = js.undefined
   
   /**
     * The unit in which all time_series point values are reported. unit follows the UCUM format for units as seen in https://unitsofmeasure.org/ucum.html. If different time_series have
     * different units (for example, because they come from different metric types, or a unit is absent), then unit will be "{not_a_unit}".
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
 }
 object ListTimeSeriesResponse {
   

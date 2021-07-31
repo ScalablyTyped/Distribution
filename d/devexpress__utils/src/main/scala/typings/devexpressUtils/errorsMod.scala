@@ -2,7 +2,6 @@ package typings.devexpressUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
@@ -35,8 +34,7 @@ object errorsMod {
     @scala.inline
     def ValueCannotBeNull_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueCannotBeNull")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/errors", "Errors.internalExceptionTemplate")
-    @js.native
-    def internalExceptionTemplate(str: String): String = js.native
+    @scala.inline
+    def internalExceptionTemplate(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("internalExceptionTemplate")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

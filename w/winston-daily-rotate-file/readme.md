@@ -10,9 +10,9 @@ A transport for winston which logs to a rotating file each day.
 | ------------------ | :-------------: |
 | Full name          | winston-daily-rotate-file |
 | Keywords           | winston, daily-rotate-file, log-rotate, logrotate |
-| # releases         | 25 |
-| # dependents       | 573 |
-| # downloads        | 9465465 |
+| # releases         | 16 |
+| # dependents       | 636 |
+| # downloads        | 10990034 |
 | # stars            | 27 |
 
 ## Links

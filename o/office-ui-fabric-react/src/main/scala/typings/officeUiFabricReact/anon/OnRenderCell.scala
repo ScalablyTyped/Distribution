@@ -3,19 +3,17 @@ package typings.officeUiFabricReact.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnRenderCell extends StObject {
   
-  def onRenderCell(item: js.Any, index: Double, containsFocus: Boolean): Element = js.native
+  def onRenderCell(item: js.Any, index: Double, containsFocus: Boolean): Element
   
-  var renderedWindowsAhead: Double = js.native
+  var renderedWindowsAhead: Double
   
-  var renderedWindowsBehind: Double = js.native
+  var renderedWindowsBehind: Double
   
-  var startIndex: Double = js.native
+  var startIndex: Double
 }
 object OnRenderCell {
   

@@ -2,17 +2,17 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LoadingOptions extends CommonCallbackOptions {
+trait LoadingOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   //  默认false。是否显示透明蒙层，防止触摸穿透
-  var mask: Boolean = js.native
+  var mask: Boolean
   
   // must，提示的内容
-  var title: String = js.native
+  var title: String
 }
 object LoadingOptions {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateServiceAccessPoliciesResponse extends StObject {
   
   /**
     * The access rules configured for the domain.
     */
-  var AccessPolicies: AccessPoliciesStatus = js.native
+  var AccessPolicies: AccessPoliciesStatus
 }
 object UpdateServiceAccessPoliciesResponse {
   

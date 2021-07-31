@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedident
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetAdminPasswordResponse extends StObject {
   
   /** A random password. See admin for more information. */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
 }
 object ResetAdminPasswordResponse {
   

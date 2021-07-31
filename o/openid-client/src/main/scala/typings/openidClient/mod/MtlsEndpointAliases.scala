@@ -2,21 +2,19 @@ package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MtlsEndpointAliases extends StObject {
   
-  var device_authorization_endpoint: js.UndefOr[String] = js.native
+  var device_authorization_endpoint: js.UndefOr[String] = js.undefined
   
-  var introspection_endpoint: js.UndefOr[String] = js.native
+  var introspection_endpoint: js.UndefOr[String] = js.undefined
   
-  var revocation_endpoint: js.UndefOr[String] = js.native
+  var revocation_endpoint: js.UndefOr[String] = js.undefined
   
-  var token_endpoint: js.UndefOr[String] = js.native
+  var token_endpoint: js.UndefOr[String] = js.undefined
   
-  var userinfo_endpoint: js.UndefOr[String] = js.native
+  var userinfo_endpoint: js.UndefOr[String] = js.undefined
 }
 object MtlsEndpointAliases {
   

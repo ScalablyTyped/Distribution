@@ -2,15 +2,13 @@ package typings.sdp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDPFingerprint extends StObject {
   
-  var algorithm: String = js.native
+  var algorithm: String
   
-  var value: String = js.native
+  var value: String
 }
 object SDPFingerprint {
   

@@ -11,40 +11,38 @@ import typings.storybookAddons.typesMod.StoryName
 import typings.storybookClientApi.hooksMod.HooksContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @storybook/client-api.@storybook/client-api/dist/types.StoreItem & {  globals :@storybook/addons.@storybook/addons.Args} */
-@js.native
 trait PublishedStoreItem extends StObject {
   
-  def applyLoaders(): js.Promise[StoryContext] = js.native
+  def applyLoaders(): js.Promise[StoryContext]
   
-  var argTypes: ArgTypes = js.native
+  var argTypes: ArgTypes
   
-  var args: Args = js.native
+  var args: Args
   
-  def getDecorated(): StoryFn[_] = js.native
+  def getDecorated(): StoryFn[js.Any]
   
-  def getOriginal(): StoryFn[_] = js.native
+  def getOriginal(): StoryFn[js.Any]
   
-  var globals: Args = js.native
+  var globals: Args
   
-  var hooks: HooksContext = js.native
+  var hooks: HooksContext
   
-  var id: StoryId = js.native
+  var id: StoryId
   
-  var initialArgs: Args = js.native
+  var initialArgs: Args
   
-  var kind: StoryKind = js.native
+  var kind: StoryKind
   
-  var name: StoryName = js.native
+  var name: StoryName
   
-  var parameters: Parameters = js.native
+  var parameters: Parameters
   
-  var storyFn: StoryFn[_] = js.native
+  var storyFn: StoryFn[js.Any]
   
-  var unboundStoryFn: StoryFn[_] = js.native
+  var unboundStoryFn: StoryFn[js.Any]
 }
 object PublishedStoreItem {
   
@@ -53,8 +51,8 @@ object PublishedStoreItem {
     applyLoaders: () => js.Promise[StoryContext],
     argTypes: ArgTypes,
     args: Args,
-    getDecorated: () => StoryFn[_],
-    getOriginal: () => StoryFn[_],
+    getDecorated: () => StoryFn[js.Any],
+    getOriginal: () => StoryFn[js.Any],
     globals: Args,
     hooks: HooksContext,
     id: StoryId,
@@ -62,8 +60,8 @@ object PublishedStoreItem {
     kind: StoryKind,
     name: StoryName,
     parameters: Parameters,
-    storyFn: StoryFn[_],
-    unboundStoryFn: StoryFn[_]
+    storyFn: StoryFn[js.Any],
+    unboundStoryFn: StoryFn[js.Any]
   ): PublishedStoreItem = {
     val __obj = js.Dynamic.literal(applyLoaders = js.Any.fromFunction0(applyLoaders), argTypes = argTypes.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], getDecorated = js.Any.fromFunction0(getDecorated), getOriginal = js.Any.fromFunction0(getOriginal), globals = globals.asInstanceOf[js.Any], hooks = hooks.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], initialArgs = initialArgs.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], storyFn = storyFn.asInstanceOf[js.Any], unboundStoryFn = unboundStoryFn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishedStoreItem]
@@ -82,10 +80,10 @@ object PublishedStoreItem {
     def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDecorated(value: () => StoryFn[_]): Self = StObject.set(x, "getDecorated", js.Any.fromFunction0(value))
+    def setGetDecorated(value: () => StoryFn[js.Any]): Self = StObject.set(x, "getDecorated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOriginal(value: () => StoryFn[_]): Self = StObject.set(x, "getOriginal", js.Any.fromFunction0(value))
+    def setGetOriginal(value: () => StoryFn[js.Any]): Self = StObject.set(x, "getOriginal", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGlobals(value: Args): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
@@ -109,21 +107,21 @@ object PublishedStoreItem {
     def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoryFn(value: StoryFn[_]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
+    def setStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => _): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
+    def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => _): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
+    def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUnboundStoryFn(value: StoryFn[_]): Self = StObject.set(x, "unboundStoryFn", value.asInstanceOf[js.Any])
+    def setUnboundStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "unboundStoryFn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnboundStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => _): Self = StObject.set(x, "unboundStoryFn", js.Any.fromFunction1(value))
+    def setUnboundStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "unboundStoryFn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUnboundStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => _): Self = StObject.set(x, "unboundStoryFn", js.Any.fromFunction2(value))
+    def setUnboundStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "unboundStoryFn", js.Any.fromFunction2(value))
   }
 }

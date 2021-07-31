@@ -3,35 +3,33 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A JDBC Time. For documentation of this class, see java.sql.Time
   * .
   */
-@js.native
 trait JdbcTime extends StObject {
   
-  def after(when: JdbcTime): Boolean = js.native
+  def after(when: JdbcTime): Boolean
   
-  def before(when: JdbcTime): Boolean = js.native
+  def before(when: JdbcTime): Boolean
   
-  def getHours(): Integer = js.native
+  def getHours(): Integer
   
-  def getMinutes(): Integer = js.native
+  def getMinutes(): Integer
   
-  def getSeconds(): Integer = js.native
+  def getSeconds(): Integer
   
-  def getTime(): Integer = js.native
+  def getTime(): Integer
   
-  def setHours(hours: Integer): Unit = js.native
+  def setHours(hours: Integer): Unit
   
-  def setMinutes(minutes: Integer): Unit = js.native
+  def setMinutes(minutes: Integer): Unit
   
-  def setSeconds(seconds: Integer): Unit = js.native
+  def setSeconds(seconds: Integer): Unit
   
-  def setTime(milliseconds: Integer): Unit = js.native
+  def setTime(milliseconds: Integer): Unit
 }
 object JdbcTime {
   

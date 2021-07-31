@@ -2,23 +2,22 @@ package typings.workboxNavigationPreload
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("workbox-navigation-preload", "disable")
+  @JSImport("workbox-navigation-preload", JSImport.Namespace)
   @js.native
-  def disable(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("workbox-navigation-preload", "enable")
-  @js.native
-  def enable(): Unit = js.native
-  @JSImport("workbox-navigation-preload", "enable")
-  @js.native
-  def enable(headerValue: String): Unit = js.native
+  @scala.inline
+  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
   
-  @JSImport("workbox-navigation-preload", "isSupported")
-  @js.native
-  def isSupported(): Boolean = js.native
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  @scala.inline
+  def enable(headerValue: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(headerValue.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
 }

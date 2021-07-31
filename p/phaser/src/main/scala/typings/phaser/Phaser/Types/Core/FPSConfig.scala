@@ -3,41 +3,39 @@ package typings.phaser.Phaser.Types.Core
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FPSConfig extends StObject {
   
   /**
     * Calculate the average frame delta from this many consecutive frame intervals.
     */
-  var deltaHistory: js.UndefOr[integer] = js.native
+  var deltaHistory: js.UndefOr[integer] = js.undefined
   
   /**
     * Use setTimeout instead of requestAnimationFrame to run the game loop.
     */
-  var forceSetTimeOut: js.UndefOr[Boolean] = js.native
+  var forceSetTimeOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The minimum acceptable rendering rate, in frames per second.
     */
-  var min: js.UndefOr[integer] = js.native
+  var min: js.UndefOr[integer] = js.undefined
   
   /**
     * The amount of frames the time step counts before we trust the delta values again.
     */
-  var panicMax: js.UndefOr[integer] = js.native
+  var panicMax: js.UndefOr[integer] = js.undefined
   
   /**
     * Apply delta smoothing during the game update to help avoid spikes?
     */
-  var smoothStep: js.UndefOr[Boolean] = js.native
+  var smoothStep: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The optimum rendering rate, in frames per second.
     */
-  var target: js.UndefOr[integer] = js.native
+  var target: js.UndefOr[integer] = js.undefined
 }
 object FPSConfig {
   

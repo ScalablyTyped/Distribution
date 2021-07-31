@@ -2,17 +2,15 @@ package typings.minecraftScriptingTypesShared
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorXYZ extends StObject {
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
   
-  var z: Double = js.native
+  var z: Double
 }
 object VectorXYZ {
   

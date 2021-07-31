@@ -19,7 +19,6 @@ import typings.qs.mod.IParseOptions
 import typings.serveStatic.mod.RequestHandlerConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressMod {
@@ -27,20 +26,17 @@ object expressMod {
   /**
     * Creates an Express application. The express() function is a top-level function exported by the express module.
     */
-  @JSImport("marko/express", JSImport.Namespace)
-  @js.native
-  def apply(): Express = js.native
+  @scala.inline
+  def apply(): Express = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Express]
   
   @JSImport("marko/express", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("marko/express", "Router")
-  @js.native
-  def Router(): typings.expressServeStaticCore.mod.Router = js.native
-  @JSImport("marko/express", "Router")
-  @js.native
-  def Router(options: RouterOptions): typings.expressServeStaticCore.mod.Router = js.native
+  @scala.inline
+  def Router(): typings.expressServeStaticCore.mod.Router = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")().asInstanceOf[typings.expressServeStaticCore.mod.Router]
+  @scala.inline
+  def Router(options: RouterOptions): typings.expressServeStaticCore.mod.Router = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(options.asInstanceOf[js.Any]).asInstanceOf[typings.expressServeStaticCore.mod.Router]
   
   /**
     * These are the exposed prototypes.
@@ -55,38 +51,32 @@ object expressMod {
     * This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
     * @since 4.16.0
     */
-  @JSImport("marko/express", "json")
-  @js.native
-  def json(): NextHandleFunction = js.native
+  @scala.inline
+  def json(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[NextHandleFunction]
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
     * @since 4.16.0
     */
-  @JSImport("marko/express", "json")
-  @js.native
-  def json(options: OptionsJson): NextHandleFunction = js.native
+  @scala.inline
+  def json(options: OptionsJson): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
-  @JSImport("marko/express", "query")
-  @js.native
-  def query(options: FnCall): Handler = js.native
-  @JSImport("marko/express", "query")
-  @js.native
-  def query(options: IParseOptions): Handler = js.native
+  @scala.inline
+  def query(options: FnCall): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  @scala.inline
+  def query(options: IParseOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with Buffer payloads and is based on body-parser.
     * @since 4.17.0
     */
-  @JSImport("marko/express", "raw")
-  @js.native
-  def raw(): NextHandleFunction = js.native
+  @scala.inline
+  def raw(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")().asInstanceOf[NextHandleFunction]
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with Buffer payloads and is based on body-parser.
     * @since 4.17.0
     */
-  @JSImport("marko/express", "raw")
-  @js.native
-  def raw(options: Options): NextHandleFunction = js.native
+  @scala.inline
+  def raw(options: Options): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   @JSImport("marko/express", "request")
   @js.native
@@ -113,31 +103,27 @@ object expressMod {
     * This is a built-in middleware function in Express. It parses incoming requests with text payloads and is based on body-parser.
     * @since 4.17.0
     */
-  @JSImport("marko/express", "text")
-  @js.native
-  def text(): NextHandleFunction = js.native
+  @scala.inline
+  def text(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[NextHandleFunction]
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with text payloads and is based on body-parser.
     * @since 4.17.0
     */
-  @JSImport("marko/express", "text")
-  @js.native
-  def text(options: OptionsText): NextHandleFunction = js.native
+  @scala.inline
+  def text(options: OptionsText): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with urlencoded payloads and is based on body-parser.
     * @since 4.16.0
     */
-  @JSImport("marko/express", "urlencoded")
-  @js.native
-  def urlencoded(): NextHandleFunction = js.native
+  @scala.inline
+  def urlencoded(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencoded")().asInstanceOf[NextHandleFunction]
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with urlencoded payloads and is based on body-parser.
     * @since 4.16.0
     */
-  @JSImport("marko/express", "urlencoded")
-  @js.native
-  def urlencoded(options: OptionsUrlencoded): NextHandleFunction = js.native
+  @scala.inline
+  def urlencoded(options: OptionsUrlencoded): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencoded")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   object expressServeStaticCoreAugmentingMod {
     

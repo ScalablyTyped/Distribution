@@ -2,146 +2,144 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestLaunchTemplateData extends StObject {
   
   /**
     * The block device mapping.
     */
-  var BlockDeviceMappings: js.UndefOr[LaunchTemplateBlockDeviceMappingRequestList] = js.native
+  var BlockDeviceMappings: js.UndefOr[LaunchTemplateBlockDeviceMappingRequestList] = js.undefined
   
   /**
     * The Capacity Reservation targeting option. If you do not specify this parameter, the instance's Capacity Reservation preference defaults to open, which enables it to run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).
     */
-  var CapacityReservationSpecification: js.UndefOr[LaunchTemplateCapacityReservationSpecificationRequest] = js.native
+  var CapacityReservationSpecification: js.UndefOr[LaunchTemplateCapacityReservationSpecificationRequest] = js.undefined
   
   /**
     * The CPU options for the instance. For more information, see Optimizing CPU Options in the Amazon Elastic Compute Cloud User Guide.
     */
-  var CpuOptions: js.UndefOr[LaunchTemplateCpuOptionsRequest] = js.native
+  var CpuOptions: js.UndefOr[LaunchTemplateCpuOptionsRequest] = js.undefined
   
   /**
     * The credit option for CPU usage of the instance. Valid for T2, T3, or T3a instances only.
     */
-  var CreditSpecification: js.UndefOr[CreditSpecificationRequest] = js.native
+  var CreditSpecification: js.UndefOr[CreditSpecificationRequest] = js.undefined
   
   /**
     * If you set this parameter to true, you can't terminate the instance using the Amazon EC2 console, CLI, or API; otherwise, you can. To change this attribute after launch, use ModifyInstanceAttribute. Alternatively, if you set InstanceInitiatedShutdownBehavior to terminate, you can terminate the instance by running the shutdown command from the instance.
     */
-  var DisableApiTermination: js.UndefOr[Boolean] = js.native
+  var DisableApiTermination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the instance is optimized for Amazon EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal Amazon EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS-optimized instance.
     */
-  var EbsOptimized: js.UndefOr[Boolean] = js.native
+  var EbsOptimized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An elastic GPU to associate with the instance.
     */
-  var ElasticGpuSpecifications: js.UndefOr[ElasticGpuSpecificationList] = js.native
+  var ElasticGpuSpecifications: js.UndefOr[ElasticGpuSpecificationList] = js.undefined
   
   /**
     *  The elastic inference accelerator for the instance. 
     */
-  var ElasticInferenceAccelerators: js.UndefOr[LaunchTemplateElasticInferenceAcceleratorList] = js.native
+  var ElasticInferenceAccelerators: js.UndefOr[LaunchTemplateElasticInferenceAcceleratorList] = js.undefined
   
   /**
     * Indicates whether the instance is enabled for AWS Nitro Enclaves. For more information, see  What is AWS Nitro Enclaves? in the AWS Nitro Enclaves User Guide. You can't enable AWS Nitro Enclaves and hibernation on the same instance.
     */
-  var EnclaveOptions: js.UndefOr[LaunchTemplateEnclaveOptionsRequest] = js.native
+  var EnclaveOptions: js.UndefOr[LaunchTemplateEnclaveOptionsRequest] = js.undefined
   
   /**
     * Indicates whether an instance is enabled for hibernation. This parameter is valid only if the instance meets the hibernation prerequisites. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide.
     */
-  var HibernationOptions: js.UndefOr[LaunchTemplateHibernationOptionsRequest] = js.native
+  var HibernationOptions: js.UndefOr[LaunchTemplateHibernationOptionsRequest] = js.undefined
   
   /**
     * The IAM instance profile.
     */
-  var IamInstanceProfile: js.UndefOr[LaunchTemplateIamInstanceProfileSpecificationRequest] = js.native
+  var IamInstanceProfile: js.UndefOr[LaunchTemplateIamInstanceProfileSpecificationRequest] = js.undefined
   
   /**
     * The ID of the AMI.
     */
-  var ImageId: js.UndefOr[typings.awsSdk.ec2Mod.ImageId] = js.native
+  var ImageId: js.UndefOr[typings.awsSdk.ec2Mod.ImageId] = js.undefined
   
   /**
     * Indicates whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown). Default: stop 
     */
-  var InstanceInitiatedShutdownBehavior: js.UndefOr[ShutdownBehavior] = js.native
+  var InstanceInitiatedShutdownBehavior: js.UndefOr[ShutdownBehavior] = js.undefined
   
   /**
     * The market (purchasing) option for the instances.
     */
-  var InstanceMarketOptions: js.UndefOr[LaunchTemplateInstanceMarketOptionsRequest] = js.native
+  var InstanceMarketOptions: js.UndefOr[LaunchTemplateInstanceMarketOptionsRequest] = js.undefined
   
   /**
     * The instance type. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * The ID of the kernel.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see User Provided Kernels in the Amazon Elastic Compute Cloud User Guide. 
     */
-  var KernelId: js.UndefOr[typings.awsSdk.ec2Mod.KernelId] = js.native
+  var KernelId: js.UndefOr[typings.awsSdk.ec2Mod.KernelId] = js.undefined
   
   /**
     * The name of the key pair. You can create a key pair using CreateKeyPair or ImportKeyPair.  If you do not specify a key pair, you can't connect to the instance unless you choose an AMI that is configured to allow users another way to log in. 
     */
-  var KeyName: js.UndefOr[KeyPairName] = js.native
+  var KeyName: js.UndefOr[KeyPairName] = js.undefined
   
   /**
     * The license configurations.
     */
-  var LicenseSpecifications: js.UndefOr[LaunchTemplateLicenseSpecificationListRequest] = js.native
+  var LicenseSpecifications: js.UndefOr[LaunchTemplateLicenseSpecificationListRequest] = js.undefined
   
   /**
     * The metadata options for the instance. For more information, see Instance Metadata and User Data in the Amazon Elastic Compute Cloud User Guide.
     */
-  var MetadataOptions: js.UndefOr[LaunchTemplateInstanceMetadataOptionsRequest] = js.native
+  var MetadataOptions: js.UndefOr[LaunchTemplateInstanceMetadataOptionsRequest] = js.undefined
   
   /**
     * The monitoring for the instance.
     */
-  var Monitoring: js.UndefOr[LaunchTemplatesMonitoringRequest] = js.native
+  var Monitoring: js.UndefOr[LaunchTemplatesMonitoringRequest] = js.undefined
   
   /**
     * One or more network interfaces. If you specify a network interface, you must specify any security groups and subnets as part of the network interface.
     */
-  var NetworkInterfaces: js.UndefOr[LaunchTemplateInstanceNetworkInterfaceSpecificationRequestList] = js.native
+  var NetworkInterfaces: js.UndefOr[LaunchTemplateInstanceNetworkInterfaceSpecificationRequestList] = js.undefined
   
   /**
     * The placement for the instance.
     */
-  var Placement: js.UndefOr[LaunchTemplatePlacementRequest] = js.native
+  var Placement: js.UndefOr[LaunchTemplatePlacementRequest] = js.undefined
   
   /**
     * The ID of the RAM disk.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see User Provided Kernels in the Amazon Elastic Compute Cloud User Guide. 
     */
-  var RamDiskId: js.UndefOr[RamdiskId] = js.native
+  var RamDiskId: js.UndefOr[RamdiskId] = js.undefined
   
   /**
     * One or more security group IDs. You can create a security group using CreateSecurityGroup. You cannot specify both a security group ID and security name in the same request.
     */
-  var SecurityGroupIds: js.UndefOr[SecurityGroupIdStringList] = js.native
+  var SecurityGroupIds: js.UndefOr[SecurityGroupIdStringList] = js.undefined
   
   /**
     * [EC2-Classic, default VPC] One or more security group names. For a nondefault VPC, you must use security group IDs instead. You cannot specify both a security group ID and security name in the same request.
     */
-  var SecurityGroups: js.UndefOr[SecurityGroupStringList] = js.native
+  var SecurityGroups: js.UndefOr[SecurityGroupStringList] = js.undefined
   
   /**
     * The tags to apply to the resources during launch. You can only tag instances and volumes on launch. The specified tags are applied to all instances or volumes that are created during launch. To tag a resource after it has been created, see CreateTags.
     */
-  var TagSpecifications: js.UndefOr[LaunchTemplateTagSpecificationRequestList] = js.native
+  var TagSpecifications: js.UndefOr[LaunchTemplateTagSpecificationRequestList] = js.undefined
   
   /**
     * The Base64-encoded user data to make available to the instance. For more information, see Running Commands on Your Linux Instance at Launch (Linux) and Adding User Data (Windows).
     */
-  var UserData: js.UndefOr[String] = js.native
+  var UserData: js.UndefOr[String] = js.undefined
 }
 object RequestLaunchTemplateData {
   

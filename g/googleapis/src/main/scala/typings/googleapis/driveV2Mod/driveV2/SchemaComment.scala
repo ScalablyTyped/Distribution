@@ -3,13 +3,11 @@ package typings.googleapis.driveV2Mod.driveV2
 import typings.googleapis.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A comment on a file in Google Drive.
   */
-@js.native
 trait SchemaComment extends StObject {
   
   /**
@@ -17,76 +15,76 @@ trait SchemaComment extends StObject {
     * documentation for details on how to define and interpret anchor
     * properties.
     */
-  var anchor: js.UndefOr[String] = js.native
+  var anchor: js.UndefOr[String] = js.undefined
   
   /**
     * The user who wrote this comment.
     */
-  var author: js.UndefOr[SchemaUser] = js.native
+  var author: js.UndefOr[SchemaUser] = js.undefined
   
   /**
     * The ID of the comment.
     */
-  var commentId: js.UndefOr[String] = js.native
+  var commentId: js.UndefOr[String] = js.undefined
   
   /**
     * The plain text content used to create this comment. This is not HTML safe
     * and should only be used as a starting point to make edits to a
     * comment&#39;s content.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * The context of the file which is being commented on.
     */
-  var context: js.UndefOr[Value] = js.native
+  var context: js.UndefOr[Value] = js.undefined
   
   /**
     * The date when this comment was first created.
     */
-  var createdDate: js.UndefOr[String] = js.native
+  var createdDate: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this comment has been deleted. If a comment has been deleted the
     * content will be cleared and this will only represent a comment that once
     * existed.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The file which this comment is addressing.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the file which this comment is addressing.
     */
-  var fileTitle: js.UndefOr[String] = js.native
+  var fileTitle: js.UndefOr[String] = js.undefined
   
   /**
     * HTML formatted content for this comment.
     */
-  var htmlContent: js.UndefOr[String] = js.native
+  var htmlContent: js.UndefOr[String] = js.undefined
   
   /**
     * This is always drive#comment.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The date when this comment or any of its replies were last modified.
     */
-  var modifiedDate: js.UndefOr[String] = js.native
+  var modifiedDate: js.UndefOr[String] = js.undefined
   
   /**
     * Replies to this post.
     */
-  var replies: js.UndefOr[js.Array[SchemaCommentReply]] = js.native
+  var replies: js.UndefOr[js.Array[SchemaCommentReply]] = js.undefined
   
   /**
     * A link back to this comment.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The status of this comment. Status can be changed by posting a reply to a
@@ -94,7 +92,7 @@ trait SchemaComment extends StObject {
     * still open.  - &quot;resolved&quot; - The comment has been resolved by
     * one of its replies.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaComment {
   

@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -58,9 +57,8 @@ object ClosePageClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.create")
-  @js.native
-  def create(model: IModel): ClosePageClientAction = js.native
+  @scala.inline
+  def create(model: IModel): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -71,9 +69,8 @@ object ClosePageClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInActionButtonUnderAction")
-  @js.native
-  def createInActionButtonUnderAction(container: ActionButton): ClosePageClientAction = js.native
+  @scala.inline
+  def createInActionButtonUnderAction(container: ActionButton): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -84,9 +81,8 @@ object ClosePageClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInActionItemUnderAction")
-  @js.native
-  def createInActionItemUnderAction(container: ActionItem): ClosePageClientAction = js.native
+  @scala.inline
+  def createInActionItemUnderAction(container: ActionItem): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -97,9 +93,8 @@ object ClosePageClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInAssociationWidgetUnderOnChangeAction")
-  @js.native
-  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): ClosePageClientAction = js.native
+  @scala.inline
+  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -110,9 +105,8 @@ object ClosePageClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInAttributeWidgetUnderOnChangeAction")
-  @js.native
-  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): ClosePageClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -123,9 +117,8 @@ object ClosePageClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInAttributeWidgetUnderOnEnterAction")
-  @js.native
-  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): ClosePageClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -136,9 +129,8 @@ object ClosePageClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInAttributeWidgetUnderOnLeaveAction")
-  @js.native
-  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): ClosePageClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -149,9 +141,8 @@ object ClosePageClientAction {
     *  8.0.0 to 8.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInBottomBarItemUnderAction")
-  @js.native
-  def createInBottomBarItemUnderAction(container: BottomBarItem): ClosePageClientAction = js.native
+  @scala.inline
+  def createInBottomBarItemUnderAction(container: BottomBarItem): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -162,9 +153,8 @@ object ClosePageClientAction {
     *  8.3.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInDivContainerUnderOnClickAction")
-  @js.native
-  def createInDivContainerUnderOnClickAction(container: DivContainer): ClosePageClientAction = js.native
+  @scala.inline
+  def createInDivContainerUnderOnClickAction(container: DivContainer): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -175,9 +165,8 @@ object ClosePageClientAction {
     *  7.18.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInDynamicImageViewerUnderClickAction")
-  @js.native
-  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): ClosePageClientAction = js.native
+  @scala.inline
+  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -188,9 +177,8 @@ object ClosePageClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInGridActionButtonUnderAction")
-  @js.native
-  def createInGridActionButtonUnderAction(container: GridActionButton): ClosePageClientAction = js.native
+  @scala.inline
+  def createInGridActionButtonUnderAction(container: GridActionButton): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -201,9 +189,8 @@ object ClosePageClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInListViewUnderClickAction")
-  @js.native
-  def createInListViewUnderClickAction(container: ListView): ClosePageClientAction = js.native
+  @scala.inline
+  def createInListViewUnderClickAction(container: ListView): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -214,9 +201,8 @@ object ClosePageClientAction {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInListViewUnderPullDownAction")
-  @js.native
-  def createInListViewUnderPullDownAction(container: ListView): ClosePageClientAction = js.native
+  @scala.inline
+  def createInListViewUnderPullDownAction(container: ListView): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -227,9 +213,8 @@ object ClosePageClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInMenuItemUnderAction")
-  @js.native
-  def createInMenuItemUnderAction(container: MenuItem): ClosePageClientAction = js.native
+  @scala.inline
+  def createInMenuItemUnderAction(container: MenuItem): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -240,9 +225,8 @@ object ClosePageClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInReferenceSetSelectorUnderOnChangeAction")
-  @js.native
-  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): ClosePageClientAction = js.native
+  @scala.inline
+  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -253,9 +237,8 @@ object ClosePageClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInStaticImageViewerUnderClickAction")
-  @js.native
-  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): ClosePageClientAction = js.native
+  @scala.inline
+  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -266,9 +249,8 @@ object ClosePageClientAction {
     *  8.7.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInTextBoxUnderOnEnterKeyPressAction")
-  @js.native
-  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): ClosePageClientAction = js.native
+  @scala.inline
+  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
@@ -279,9 +261,8 @@ object ClosePageClientAction {
     *  7.19.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInWidgetValueUnderAction")
-  @js.native
-  def createInWidgetValueUnderAction(container: WidgetValue): ClosePageClientAction = js.native
+  @scala.inline
+  def createInWidgetValueUnderAction(container: WidgetValue): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.structureTypeName")

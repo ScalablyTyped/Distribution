@@ -2,26 +2,24 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<styled-system.styled-system.SpaceProps<ThemeType, styled-system.styled-system.ThemeValue<'space', ThemeType, any>>, 'pr' | 'paddingRight'> */
-@js.native
 trait PaddingRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   var paddingRight: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
   
   var pr: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object PaddingRightProps {
   
@@ -32,12 +30,12 @@ object PaddingRightProps {
   }
   
   @scala.inline
-  implicit class PaddingRightPropsMutableBuilder[Self <: PaddingRightProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with PaddingRightProps[ThemeType]) extends AnyVal {
+  implicit class PaddingRightPropsMutableBuilder[Self <: PaddingRightProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & PaddingRightProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setPaddingRight(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
@@ -54,7 +52,7 @@ object PaddingRightProps {
     @scala.inline
     def setPr(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])

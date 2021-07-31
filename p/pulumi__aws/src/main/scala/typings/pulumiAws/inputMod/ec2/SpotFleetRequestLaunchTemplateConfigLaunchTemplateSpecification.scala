@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification extends StObject {
   
   /**
     * The ID of the launch template. Conflicts with `name`.
     */
-  var id: js.UndefOr[Input[String]] = js.native
+  var id: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The name of the launch template. Conflicts with `id`.
     */
-  var name: js.UndefOr[Input[String]] = js.native
+  var name: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Template version. Unlike the autoscaling equivalent, does not support `$Latest` or `$Default`, so use the launchTemplate resource's attribute, e.g. `"${aws_launch_template.foo.latest_version}"`. It will use the default version if omitted.
     */
-  var version: js.UndefOr[Input[String]] = js.native
+  var version: js.UndefOr[Input[String]] = js.undefined
 }
 object SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification {
   

@@ -2,13 +2,13 @@ package typings.chunkedDc.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultiReporter extends Reporter {
+trait MultiReporter
+  extends StObject
+     with Reporter {
   
-  def addReporter(reporter: Reporter): Unit = js.native
+  def addReporter(reporter: Reporter): Unit
 }
 object MultiReporter {
   

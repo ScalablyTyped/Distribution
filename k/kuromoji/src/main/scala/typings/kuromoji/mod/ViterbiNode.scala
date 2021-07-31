@@ -2,31 +2,29 @@ package typings.kuromoji.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViterbiNode extends StObject {
   
-  var cost: Double = js.native
+  var cost: Double
   
-  var left_id: Double = js.native
+  var left_id: Double
   
-  var length: Double = js.native
+  var length: Double
   
-  var name: String = js.native
+  var name: String
   
-  var prev: ViterbiNode = js.native
+  var prev: ViterbiNode
   
-  var right_id: Double = js.native
+  var right_id: Double
   
-  var shortest_cost: Double = js.native
+  var shortest_cost: Double
   
-  var start_pos: Double = js.native
+  var start_pos: Double
   
-  var surface_form: String = js.native
+  var surface_form: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object ViterbiNode {
   

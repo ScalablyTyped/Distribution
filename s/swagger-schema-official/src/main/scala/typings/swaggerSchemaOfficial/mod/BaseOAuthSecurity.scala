@@ -7,25 +7,25 @@ import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.oauth2
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.password
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseOAuthSecurity extends BaseSecurity {
+trait BaseOAuthSecurity
+  extends StObject
+     with BaseSecurity {
   
-  var flow: accessCode | application | `implicit` | password = js.native
+  var flow: accessCode | application | `implicit` | password
   
-  var scopes: js.UndefOr[OAuthScope] = js.native
+  var scopes: js.UndefOr[OAuthScope] = js.undefined
   
   @JSName("type")
-  var type_BaseOAuthSecurity: oauth2 = js.native
+  var type_BaseOAuthSecurity: oauth2
 }
 object BaseOAuthSecurity {
   
   @scala.inline
-  def apply(flow: accessCode | application | `implicit` | password, `type`: oauth2): BaseOAuthSecurity = {
+  def apply(flow: accessCode | application | `implicit` | password): BaseOAuthSecurity = {
     val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[BaseOAuthSecurity]
   }
   

@@ -2,57 +2,55 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoAdjust extends StObject {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var animateOption: Appear = js.native
+  var animateOption: Appear
   
-  var autoAdjust: Boolean = js.native
+  var autoAdjust: Boolean
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var container: js.Any = js.native
+  var container: js.Any
   
-  var coordinateBBox: js.Any = js.native
+  var coordinateBBox: js.Any
   
-  var defaultCfg: Line = js.native
+  var defaultCfg: Line
   
-  var direction: String = js.native
+  var direction: String
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var group: js.Any = js.native
+  var group: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var isInit: Boolean = js.native
+  var isInit: Boolean
   
-  var isRegister: Boolean = js.native
+  var isRegister: Boolean
   
-  var isUpdating: Boolean = js.native
+  var isUpdating: Boolean
   
-  var locationType: String = js.native
+  var locationType: String
   
-  var name: String = js.native
+  var name: String
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAutoRender: Boolean = js.native
+  var updateAutoRender: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object AutoAdjust {
   

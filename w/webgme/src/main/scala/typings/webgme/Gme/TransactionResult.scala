@@ -2,18 +2,16 @@ package typings.webgme.Gme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionResult extends StObject {
   
-  var hash: String = js.native
+  var hash: String
   
   /**
     * may be: 'SYNCED' or 'FORKED'
     */
-  var status: String = js.native
+  var status: String
 }
 object TransactionResult {
   

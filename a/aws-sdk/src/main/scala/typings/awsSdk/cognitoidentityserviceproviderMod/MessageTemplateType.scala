@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageTemplateType extends StObject {
   
   /**
     * The message template for email messages.
     */
-  var EmailMessage: js.UndefOr[EmailVerificationMessageType] = js.native
+  var EmailMessage: js.UndefOr[EmailVerificationMessageType] = js.undefined
   
   /**
     * The subject line for email messages.
     */
-  var EmailSubject: js.UndefOr[EmailVerificationSubjectType] = js.native
+  var EmailSubject: js.UndefOr[EmailVerificationSubjectType] = js.undefined
   
   /**
     * The message template for SMS messages.
     */
-  var SMSMessage: js.UndefOr[SmsVerificationMessageType] = js.native
+  var SMSMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
 }
 object MessageTemplateType {
   

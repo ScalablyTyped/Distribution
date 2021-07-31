@@ -2,46 +2,44 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryDeletionStatusItem extends StObject {
   
   /**
     * The deletion ID returned by the DeleteInventory action.
     */
-  var DeletionId: js.UndefOr[UUID] = js.native
+  var DeletionId: js.UndefOr[UUID] = js.undefined
   
   /**
     * The UTC timestamp when the delete operation started.
     */
-  var DeletionStartTime: js.UndefOr[InventoryDeletionStartTime] = js.native
+  var DeletionStartTime: js.UndefOr[InventoryDeletionStartTime] = js.undefined
   
   /**
     * Information about the delete operation. For more information about this summary, see Understanding the delete inventory summary in the AWS Systems Manager User Guide.
     */
-  var DeletionSummary: js.UndefOr[InventoryDeletionSummary] = js.native
+  var DeletionSummary: js.UndefOr[InventoryDeletionSummary] = js.undefined
   
   /**
     * The status of the operation. Possible values are InProgress and Complete.
     */
-  var LastStatus: js.UndefOr[InventoryDeletionStatus] = js.native
+  var LastStatus: js.UndefOr[InventoryDeletionStatus] = js.undefined
   
   /**
     * Information about the status.
     */
-  var LastStatusMessage: js.UndefOr[InventoryDeletionLastStatusMessage] = js.native
+  var LastStatusMessage: js.UndefOr[InventoryDeletionLastStatusMessage] = js.undefined
   
   /**
     * The UTC timestamp of when the last status report.
     */
-  var LastStatusUpdateTime: js.UndefOr[InventoryDeletionLastStatusUpdateTime] = js.native
+  var LastStatusUpdateTime: js.UndefOr[InventoryDeletionLastStatusUpdateTime] = js.undefined
   
   /**
     * The name of the inventory data type.
     */
-  var TypeName: js.UndefOr[InventoryItemTypeName] = js.native
+  var TypeName: js.UndefOr[InventoryItemTypeName] = js.undefined
 }
 object InventoryDeletionStatusItem {
   

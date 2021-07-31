@@ -2,39 +2,37 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instance of pc.Morph. Contains weights to assign to every pc.MorphTarget, manages selection of active morph targets.
   * @param morph - The pc.Morph to instance.
   */
-@js.native
 trait MorphInstance extends StObject {
   
   /**
     * Frees video memory allocated by this object.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Gets current weight of the specified morph target.
     * @param index - An index of morph target.
     * @returns Weight.
     */
-  def getWeight(index: Double): Double = js.native
+  def getWeight(index: Double): Double
   
   /**
     * Sets weight of the specified morph target.
     * @param index - An index of morph target.
     * @param weight - Weight.
     */
-  def setWeight(index: Double, weight: Double): Unit = js.native
+  def setWeight(index: Double, weight: Double): Unit
   
   /**
     * Selects active morph targets and prepares morph for rendering. Called automatically by renderer.
     */
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object MorphInstance {
   

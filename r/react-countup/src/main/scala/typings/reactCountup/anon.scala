@@ -2,21 +2,19 @@ package typings.reactCountup
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait PauseResume extends StObject {
     
-    def pauseResume(): Unit = js.native
+    def pauseResume(): Unit
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def start(): Unit = js.native
+    def start(): Unit
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object PauseResume {
     
@@ -43,14 +41,13 @@ object anon {
     }
   }
   
-  @js.native
   trait PauseResumeReset extends StObject {
     
-    def pauseResume(): Unit = js.native
+    def pauseResume(): Unit
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def start(): Unit = js.native
+    def start(): Unit
   }
   object PauseResumeReset {
     
@@ -74,14 +71,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Reset extends StObject {
     
-    def pauseResume(): Unit = js.native
+    def pauseResume(): Unit
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object Reset {
     
@@ -105,14 +101,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Start extends StObject {
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def start(): Unit = js.native
+    def start(): Unit
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object Start {
     
@@ -136,14 +131,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Update extends StObject {
     
-    def pauseResume(): Unit = js.native
+    def pauseResume(): Unit
     
-    def start(): Unit = js.native
+    def start(): Unit
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object Update {
     

@@ -2,7 +2,6 @@ package typings.plupload
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object plupload {
@@ -53,7 +52,7 @@ object plupload {
       * @type Array
       * @see plupload.File
       */
-    var files: js.Array[_] = js.native
+    var files: js.Array[js.Any] = js.native
     
     // TODO: Make plupload.File typing
     /**
@@ -148,9 +147,9 @@ object plupload {
       * @return {Array} Array of files that was removed.
       */
     def splice(): js.Any = js.native
-    def splice(start: js.UndefOr[scala.Nothing], length: Double): js.Any = js.native
     def splice(start: Double): js.Any = js.native
     def splice(start: Double, length: Double): js.Any = js.native
+    def splice(start: Unit, length: Double): js.Any = js.native
     
     /**
       * Starts uploading the queued files.

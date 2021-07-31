@@ -2,22 +2,20 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposAddStatusCheckContextsEndpoint extends StObject {
   
-  var branch: String = js.native
+  var branch: String
   
   /**
     * contexts parameter
     */
-  var contexts: js.Array[String] = js.native
+  var contexts: js.Array[String]
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
 }
 object ReposAddStatusCheckContextsEndpoint {
   

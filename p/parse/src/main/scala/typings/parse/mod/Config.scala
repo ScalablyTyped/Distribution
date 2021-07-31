@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.parse.mod.global.Parse.UseMasterKeyOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parse", "Config")
@@ -13,24 +12,23 @@ class Config ()
   extends typings.parse.mod.global.Parse.Config
 object Config {
   
-  /* static member */
-  @JSImport("parse", "Config.current")
+  @JSImport("parse", "Config")
   @js.native
-  def current(): typings.parse.mod.global.Parse.Config = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("parse", "Config.get")
-  @js.native
-  def get(): js.Promise[typings.parse.mod.global.Parse.Config] = js.native
-  @JSImport("parse", "Config.get")
-  @js.native
-  def get(options: UseMasterKeyOption): js.Promise[typings.parse.mod.global.Parse.Config] = js.native
+  @scala.inline
+  def current(): typings.parse.mod.global.Parse.Config = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[typings.parse.mod.global.Parse.Config]
   
   /* static member */
-  @JSImport("parse", "Config.save")
-  @js.native
-  def save(attr: js.Any): js.Promise[typings.parse.mod.global.Parse.Config] = js.native
-  @JSImport("parse", "Config.save")
-  @js.native
-  def save(attr: js.Any, options: StringDictionary[Boolean]): js.Promise[typings.parse.mod.global.Parse.Config] = js.native
+  @scala.inline
+  def get(): js.Promise[typings.parse.mod.global.Parse.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
+  @scala.inline
+  def get(options: UseMasterKeyOption): js.Promise[typings.parse.mod.global.Parse.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
+  
+  /* static member */
+  @scala.inline
+  def save(attr: js.Any): js.Promise[typings.parse.mod.global.Parse.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
+  @scala.inline
+  def save(attr: js.Any, options: StringDictionary[Boolean]): js.Promise[typings.parse.mod.global.Parse.Config] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
 }

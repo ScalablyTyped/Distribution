@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricHeaderEntry extends StObject {
   
   /** The name of the header. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The type of the metric, for example `INTEGER`. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object MetricHeaderEntry {
   

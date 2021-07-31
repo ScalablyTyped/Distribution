@@ -9,59 +9,49 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("browserfs/dist/node/core/util", "arrayBuffer2Buffer")
+  @JSImport("browserfs/dist/node/core/util", JSImport.Namespace)
   @js.native
-  def arrayBuffer2Buffer(ab: ArrayBuffer): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("browserfs/dist/node/core/util", "arrayish2Buffer")
-  @js.native
-  def arrayish2Buffer(arr: Arrayish[Double]): Buffer = js.native
+  @scala.inline
+  def arrayBuffer2Buffer(ab: ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBuffer2Buffer")(ab.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("browserfs/dist/node/core/util", "buffer2ArrayBuffer")
-  @js.native
-  def buffer2ArrayBuffer(buff: Buffer): ArrayBuffer = js.native
+  @scala.inline
+  def arrayish2Buffer(arr: Arrayish[Double]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayish2Buffer")(arr.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("browserfs/dist/node/core/util", "buffer2Uint8array")
-  @js.native
-  def buffer2Uint8array(buff: Buffer): Uint8Array = js.native
+  @scala.inline
+  def buffer2ArrayBuffer(buff: Buffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer2ArrayBuffer")(buff.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @JSImport("browserfs/dist/node/core/util", "bufferValidator")
-  @js.native
-  def bufferValidator(v: js.Object, cb: BFSOneArgCallback): Unit = js.native
+  @scala.inline
+  def buffer2Uint8array(buff: Buffer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer2Uint8array")(buff.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("browserfs/dist/node/core/util", "checkOptions")
-  @js.native
-  def checkOptions(fsType: FileSystemConstructor, opts: js.Any, cb: BFSOneArgCallback): Unit = js.native
+  @scala.inline
+  def bufferValidator(v: js.Object, cb: BFSOneArgCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferValidator")(v.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("browserfs/dist/node/core/util", "copyingSlice")
-  @js.native
-  def copyingSlice(buff: Buffer): Buffer = js.native
-  @JSImport("browserfs/dist/node/core/util", "copyingSlice")
-  @js.native
-  def copyingSlice(buff: Buffer, start: js.UndefOr[scala.Nothing], end: Double): Buffer = js.native
-  @JSImport("browserfs/dist/node/core/util", "copyingSlice")
-  @js.native
-  def copyingSlice(buff: Buffer, start: Double): Buffer = js.native
-  @JSImport("browserfs/dist/node/core/util", "copyingSlice")
-  @js.native
-  def copyingSlice(buff: Buffer, start: Double, end: Double): Buffer = js.native
+  @scala.inline
+  def checkOptions(fsType: FileSystemConstructor, opts: js.Any, cb: BFSOneArgCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkOptions")(fsType.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("browserfs/dist/node/core/util", "deprecationMessage")
-  @js.native
-  def deprecationMessage(print: Boolean, fsName: String, opts: js.Any): Unit = js.native
+  @scala.inline
+  def copyingSlice(buff: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("copyingSlice")(buff.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def copyingSlice(buff: Buffer, start: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("copyingSlice")(buff.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def copyingSlice(buff: Buffer, start: Double, end: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("copyingSlice")(buff.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def copyingSlice(buff: Buffer, start: Unit, end: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("copyingSlice")(buff.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("browserfs/dist/node/core/util", "emptyBuffer")
-  @js.native
-  def emptyBuffer(): Buffer = js.native
+  @scala.inline
+  def deprecationMessage(print: Boolean, fsName: String, opts: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecationMessage")(print.asInstanceOf[js.Any], fsName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("browserfs/dist/node/core/util", "fail")
-  @js.native
-  def fail(): Unit = js.native
+  @scala.inline
+  def emptyBuffer(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyBuffer")().asInstanceOf[Buffer]
+  
+  @scala.inline
+  def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]
   
   @JSImport("browserfs/dist/node/core/util", "isIE")
   @js.native
@@ -71,18 +61,17 @@ object utilMod {
   @js.native
   val isWebWorker: Boolean = js.native
   
-  @JSImport("browserfs/dist/node/core/util", "mkdirpSync")
-  @js.native
-  def mkdirpSync(p: String, mode: Double, fs: FileSystem): Unit = js.native
+  @scala.inline
+  def mkdirpSync(p: String, mode: Double, fs: FileSystem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirpSync")(p.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("browserfs/dist/node/core/util", "uint8Array2Buffer")
-  @js.native
-  def uint8Array2Buffer(u8: Uint8Array): Buffer = js.native
+  @scala.inline
+  def uint8Array2Buffer(u8: Uint8Array): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("uint8Array2Buffer")(u8.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @js.native
-  trait Arrayish[T] extends /* idx */ NumberDictionary[T] {
+  trait Arrayish[T]
+    extends StObject
+       with /* idx */ NumberDictionary[T] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object Arrayish {
     
@@ -93,7 +82,7 @@ object utilMod {
     }
     
     @scala.inline
-    implicit class ArrayishMutableBuilder[Self <: Arrayish[_], T] (val x: Self with Arrayish[T]) extends AnyVal {
+    implicit class ArrayishMutableBuilder[Self <: Arrayish[?], T] (val x: Self & Arrayish[T]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])

@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceSchema extends StObject {
   
   /**
     * A list of RecordColumn objects. 
     */
-  var RecordColumns: typings.awsSdk.kinesisanalyticsv2Mod.RecordColumns = js.native
+  var RecordColumns: typings.awsSdk.kinesisanalyticsv2Mod.RecordColumns
   
   /**
     * Specifies the encoding of the records in the streaming source. For example, UTF-8.
     */
-  var RecordEncoding: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.RecordEncoding] = js.native
+  var RecordEncoding: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.RecordEncoding] = js.undefined
   
   /**
     * Specifies the format of the records on the streaming source.
     */
-  var RecordFormat: typings.awsSdk.kinesisanalyticsv2Mod.RecordFormat = js.native
+  var RecordFormat: typings.awsSdk.kinesisanalyticsv2Mod.RecordFormat
 }
 object SourceSchema {
   

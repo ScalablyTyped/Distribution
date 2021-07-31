@@ -2,16 +2,14 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPutMessageRequest extends StObject {
   
   /**
     * The list of messages to send. Each message has the following format: '{ "messageId": "string", "inputName": "string", "payload": "string"}' 
     */
-  var messages: Messages = js.native
+  var messages: Messages
 }
 object BatchPutMessageRequest {
   

@@ -9,33 +9,35 @@ import typings.passportAzureAd.commonMod.ITokenPayload
 import typings.passportAzureAd.commonMod.VerifyCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bearerStrategyMod {
   
   @JSImport("passport-azure-ad/bearer-strategy", "BearerStrategy")
   @js.native
-  class BearerStrategy protected () extends Strategy {
+  class BearerStrategy protected ()
+    extends StObject
+       with Strategy {
     def this(options: IBearerStrategyOptionWithRequest, verify: VerifyBearerFunctionWithReq) = this()
     def this(options: IBearerStrategyOption, verify: VerifyBearerFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
     
     @JSName("name")
     var name_BearerStrategy: String = js.native
   }
   
-  @js.native
-  trait IBearerStrategyOption extends IBaseStrategyOption {
+  trait IBearerStrategyOption
+    extends StObject
+       with IBaseStrategyOption {
     
-    var allowMultiAudiencesInToken: js.UndefOr[Boolean] = js.native
+    var allowMultiAudiencesInToken: js.UndefOr[Boolean] = js.undefined
     
-    var audience: js.UndefOr[String | js.Array[String]] = js.native
+    var audience: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var policyName: js.UndefOr[String] = js.native
+    var policyName: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[js.Array[String]] = js.native
+    var scope: js.UndefOr[js.Array[String]] = js.undefined
   }
   object IBearerStrategyOption {
     
@@ -80,10 +82,11 @@ object bearerStrategyMod {
     }
   }
   
-  @js.native
-  trait IBearerStrategyOptionWithRequest extends IBearerStrategyOption {
+  trait IBearerStrategyOptionWithRequest
+    extends StObject
+       with IBearerStrategyOption {
     
-    var passReqToCallback: Boolean = js.native
+    var passReqToCallback: Boolean
   }
   object IBearerStrategyOptionWithRequest {
     

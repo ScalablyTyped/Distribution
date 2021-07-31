@@ -2,26 +2,26 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing the properties to set on a new user record to be
   * created.
   */
-@js.native
-trait CreateRequest extends UpdateRequest {
+trait CreateRequest
+  extends StObject
+     with UpdateRequest {
   
   /**
     * The user's multi-factor related properties.
     */
   @JSName("multiFactor")
-  var multiFactor_CreateRequest: js.UndefOr[MultiFactorCreateSettings] = js.native
+  var multiFactor_CreateRequest: js.UndefOr[MultiFactorCreateSettings] = js.undefined
   
   /**
     * The user's `uid`.
     */
-  var uid: js.UndefOr[String] = js.native
+  var uid: js.UndefOr[String] = js.undefined
 }
 object CreateRequest {
   

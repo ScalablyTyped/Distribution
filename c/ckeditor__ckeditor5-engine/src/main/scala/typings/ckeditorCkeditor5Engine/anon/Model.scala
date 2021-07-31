@@ -4,17 +4,15 @@ import typings.ckeditorCkeditor5Engine.mod.view.Element
 import typings.ckeditorCkeditor5Engine.mod.view.MatcherPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Model extends StObject {
   
-  var model: String | js.Object = js.native
+  var model: String | js.Object
   
-  var upcastAlso: js.UndefOr[MatcherPattern | js.Array[MatcherPattern]] = js.native
+  var upcastAlso: js.UndefOr[MatcherPattern | js.Array[MatcherPattern]] = js.undefined
   
-  var view: js.UndefOr[String | js.Object] = js.native
+  var view: js.UndefOr[String | js.Object] = js.undefined
 }
 object Model {
   

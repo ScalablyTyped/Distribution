@@ -2,20 +2,18 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Media
-@js.native
 trait AdMedia extends StObject {
   
-  def media(): AdWordsSelector[Media] = js.native
+  def media(): AdWordsSelector[Media]
   
-  def newImageBuilder(): ImageBuilder[Media] = js.native
+  def newImageBuilder(): ImageBuilder[Media]
   
-  def newMediaBundleBuilder(): MediaBundleBuilder[Media] = js.native
+  def newMediaBundleBuilder(): MediaBundleBuilder[Media]
   
-  def newVideoBuilder(): VideoBuilder[Media] = js.native
+  def newVideoBuilder(): VideoBuilder[Media]
 }
 object AdMedia {
   

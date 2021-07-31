@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMLSchemaReference extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Location: String = js.native
+  val Location: String
   
-  val NamespaceURI: String = js.native
+  val NamespaceURI: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Reload(): Unit = js.native
+  def Reload(): Unit
   
   @JSName("Word.XMLSchemaReference_typekey")
-  var WordDotXMLSchemaReference_typekey: XMLSchemaReference = js.native
+  var WordDotXMLSchemaReference_typekey: XMLSchemaReference
 }
 object XMLSchemaReference {
   

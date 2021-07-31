@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonGuaranteedAuctionTerms extends StObject {
   
   /** True if open auction buyers are allowed to compete with invited buyers in this private auction. */
-  var autoOptimizePrivateAuction: js.UndefOr[Boolean] = js.native
+  var autoOptimizePrivateAuction: js.UndefOr[Boolean] = js.undefined
   
   /** Reserve price for the specified buyer. */
-  var reservePricesPerBuyer: js.UndefOr[js.Array[PricePerBuyer]] = js.native
+  var reservePricesPerBuyer: js.UndefOr[js.Array[PricePerBuyer]] = js.undefined
 }
 object NonGuaranteedAuctionTerms {
   

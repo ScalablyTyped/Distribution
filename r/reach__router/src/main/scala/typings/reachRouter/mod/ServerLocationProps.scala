@@ -2,13 +2,11 @@ package typings.reachRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerLocationProps extends StObject {
   
-  var url: String = js.native
+  var url: String
 }
 object ServerLocationProps {
   

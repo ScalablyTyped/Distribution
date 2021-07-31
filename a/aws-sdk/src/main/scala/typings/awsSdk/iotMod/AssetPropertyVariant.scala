@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetPropertyVariant extends StObject {
   
   /**
     * Optional. A string that contains the boolean value (true or false) of the value entry. Accepts substitution templates.
     */
-  var booleanValue: js.UndefOr[AssetPropertyBooleanValue] = js.native
+  var booleanValue: js.UndefOr[AssetPropertyBooleanValue] = js.undefined
   
   /**
     * Optional. A string that contains the double value of the value entry. Accepts substitution templates.
     */
-  var doubleValue: js.UndefOr[AssetPropertyDoubleValue] = js.native
+  var doubleValue: js.UndefOr[AssetPropertyDoubleValue] = js.undefined
   
   /**
     * Optional. A string that contains the integer value of the value entry. Accepts substitution templates.
     */
-  var integerValue: js.UndefOr[AssetPropertyIntegerValue] = js.native
+  var integerValue: js.UndefOr[AssetPropertyIntegerValue] = js.undefined
   
   /**
     * Optional. The string value of the value entry. Accepts substitution templates.
     */
-  var stringValue: js.UndefOr[AssetPropertyStringValue] = js.native
+  var stringValue: js.UndefOr[AssetPropertyStringValue] = js.undefined
 }
 object AssetPropertyVariant {
   

@@ -2,33 +2,31 @@ package typings.synaptic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Activationsentences extends StObject {
     
-    var activation_sentences: js.Any = js.native
+    var activation_sentences: js.Any
     
-    var inputs: js.Any = js.native
+    var inputs: js.Any
     
-    var layers: js.Any = js.native
+    var layers: js.Any
     
-    var memory: js.Any = js.native
+    var memory: js.Any
     
-    var neurons: js.Any = js.native
+    var neurons: js.Any
     
-    var outputs: js.Any = js.native
+    var outputs: js.Any
     
-    var propagation_sentences: js.Any = js.native
+    var propagation_sentences: js.Any
     
-    var targets: js.Any = js.native
+    var targets: js.Any
     
-    var trace_sentences: js.Any = js.native
+    var trace_sentences: js.Any
     
-    var variables: js.Any = js.native
+    var variables: js.Any
   }
   object Activationsentences {
     
@@ -84,12 +82,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var link: String = js.native
+    var link: String
   }
   object Code {
     
@@ -110,12 +107,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Connection extends StObject {
     
-    var connection: js.Any = js.native
+    var connection: js.Any
     
-    var result: js.Any = js.native
+    var result: js.Any
   }
   object Connection {
     
@@ -136,12 +132,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Connections extends StObject {
     
-    var connections: Double = js.native
+    var connections: Double
     
-    var neurons: Double = js.native
+    var neurons: Double
   }
   object Connections {
     
@@ -162,12 +157,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Test extends StObject {
     
-    var test: js.Any = js.native
+    var test: js.Any
     
-    var train: js.Any = js.native
+    var train: js.Any
   }
   object Test {
     

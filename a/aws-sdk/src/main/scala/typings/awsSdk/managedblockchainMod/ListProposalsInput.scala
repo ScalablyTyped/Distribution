@@ -2,26 +2,24 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProposalsInput extends StObject {
   
   /**
     *  The maximum number of proposals to return. 
     */
-  var MaxResults: js.UndefOr[ProposalListMaxResults] = js.native
+  var MaxResults: js.UndefOr[ProposalListMaxResults] = js.undefined
   
   /**
     *  The unique identifier of the network. 
     */
-  var NetworkId: ResourceIdString = js.native
+  var NetworkId: ResourceIdString
   
   /**
     *  The pagination token that indicates the next set of results to retrieve. 
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListProposalsInput {
   

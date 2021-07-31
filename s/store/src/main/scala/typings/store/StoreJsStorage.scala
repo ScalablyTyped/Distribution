@@ -2,30 +2,28 @@ package typings.store
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoreJsStorage extends StObject {
   
-  def clearAll(): Unit = js.native
+  def clearAll(): Unit
   
-  def each(callback: js.Function2[/* val */ String, /* key */ String, _]): Unit = js.native
+  def each(callback: js.Function2[/* val */ String, /* key */ String, js.Any]): Unit
   
-  var name: String = js.native
+  var name: String
   
-  def read(key: String): String | Null = js.native
+  def read(key: String): String | Null
   
-  def remove(key: String): Unit = js.native
+  def remove(key: String): Unit
   
-  def write(key: String, data: String): Unit = js.native
+  def write(key: String, data: String): Unit
 }
 object StoreJsStorage {
   
   @scala.inline
   def apply(
     clearAll: () => Unit,
-    each: js.Function2[/* val */ String, /* key */ String, _] => Unit,
+    each: js.Function2[/* val */ String, /* key */ String, js.Any] => Unit,
     name: String,
     read: String => String | Null,
     remove: String => Unit,
@@ -42,7 +40,7 @@ object StoreJsStorage {
     def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEach(value: js.Function2[/* val */ String, /* key */ String, _] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+    def setEach(value: js.Function2[/* val */ String, /* key */ String, js.Any] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

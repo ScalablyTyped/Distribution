@@ -6,39 +6,37 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.Easing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabContentProps extends StObject {
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var activeIndex: Double = js.native
+  var activeIndex: Double
   
-  var animationConfig: js.UndefOr[Easing] = js.native
+  var animationConfig: js.UndefOr[Easing] = js.undefined
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   var onMove: js.UndefOr[
     js.Function3[/* gestureState */ js.Object, /* index */ Double, /* percent */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onRelease: js.UndefOr[
     js.Function3[/* gestureState */ js.Object, /* index */ Double, /* percent */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var preload: js.UndefOr[Boolean] = js.native
+  var preload: js.UndefOr[Boolean] = js.undefined
   
-  var preloadTimeout: js.UndefOr[Double] = js.native
+  var preloadTimeout: js.UndefOr[Double] = js.undefined
   
-  var renderPlaceholder: js.UndefOr[js.Function2[/* activeIndex */ Double, /* child */ ReactNode, ReactNode]] = js.native
+  var renderPlaceholder: js.UndefOr[js.Function2[/* activeIndex */ Double, /* child */ ReactNode, ReactNode]] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var velocityThreshold: js.UndefOr[Double] = js.native
+  var velocityThreshold: js.UndefOr[Double] = js.undefined
 }
 object TabContentProps {
   

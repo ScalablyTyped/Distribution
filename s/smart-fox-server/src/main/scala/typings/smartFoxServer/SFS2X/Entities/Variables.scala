@@ -2,7 +2,6 @@ package typings.smartFoxServer.SFS2X.Entities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -10,8 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Entities.Variables.html
 object Variables {
   
-  @js.native
-  trait MMOItemVariable extends SFSUserVariable
+  trait MMOItemVariable
+    extends StObject
+       with SFSUserVariable
   object MMOItemVariable {
     
     @scala.inline
@@ -21,20 +21,19 @@ object Variables {
     }
   }
   
-  @js.native
   trait ReservedBuddyVariables extends StObject
   
-  @js.native
   trait ReservedRoomVariables extends StObject
   
-  @js.native
-  trait SFSBuddyVariable extends SFSUserVariable {
+  trait SFSBuddyVariable
+    extends StObject
+       with SFSUserVariable {
     
     /**
       * Indicates whether the Buddy Variable is persistent or not.
       * @return {boolean} Returns: true if the Buddy Variable is persistent.
       */
-    def isOffline(): Boolean = js.native
+    def isOffline(): Boolean
   }
   object SFSBuddyVariable {
     
@@ -58,14 +57,15 @@ object Variables {
     }
   }
   
-  @js.native
-  trait SFSRoomVariable extends SFSUserVariable {
+  trait SFSRoomVariable
+    extends StObject
+       with SFSUserVariable {
     
     /** @type {boolean} Indicates whether this Room Variable is persistent or not. */
-    var isPersistent: Boolean = js.native
+    var isPersistent: Boolean
     
     /** @type {boolean} Indicates whether this Room Variable is private or not. */
-    var isPrivate: Boolean = js.native
+    var isPrivate: Boolean
   }
   object SFSRoomVariable {
     
@@ -93,7 +93,6 @@ object Variables {
     }
   }
   
-  @js.native
   trait SFSUserVariable extends StObject {
     
     /**
@@ -101,19 +100,19 @@ object Variables {
       * @param  {number} typeId The type id of the User Variable among those available in the VariableType class.
       * @return {string}        Returns: The variable type name.
       */
-    def getTypeName(typeId: Double): String = js.native
+    def getTypeName(typeId: Double): String
     
     /**
       * Indicates if the variable is null.
       * @return {boolean} Returns: true if the variable has a null value.
       */
-    def isNull(): Boolean = js.native
+    def isNull(): Boolean
     
     /** @type {string} Indicates the name of this variable. */
-    var name: String = js.native
+    var name: String
     
     /** @type {number} Returns the value of this variable. */
-    var value: Double = js.native
+    var value: Double
   }
   object SFSUserVariable {
     
@@ -140,6 +139,5 @@ object Variables {
     }
   }
   
-  @js.native
   trait VariableType extends StObject
 }

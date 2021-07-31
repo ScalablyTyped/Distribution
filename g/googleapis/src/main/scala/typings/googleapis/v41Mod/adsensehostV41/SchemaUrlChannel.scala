@@ -2,10 +2,8 @@ package typings.googleapis.v41Mod.adsensehostV41
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUrlChannel extends StObject {
   
   /**
@@ -13,18 +11,18 @@ trait SchemaUrlChannel extends StObject {
     * opaque identifier; it is not safe to rely on it being in any particular
     * format.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is, in this case adsensehost#urlChannel.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * URL Pattern of this URL channel. Does not include &quot;http://&quot; or
     * &quot;https://&quot;. Example: www.example.com/home
     */
-  var urlPattern: js.UndefOr[String] = js.native
+  var urlPattern: js.UndefOr[String] = js.undefined
 }
 object SchemaUrlChannel {
   

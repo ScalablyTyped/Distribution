@@ -4,7 +4,6 @@ import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.signedInDevices.DeviceInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -5,25 +5,23 @@ import typings.googleVisualization.anon.Colors
 import typings.googleVisualization.anon.IsHtml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarOptions extends StObject {
   
-  var calendar: CellColor = js.native
+  var calendar: CellColor
   
-  var colorAxis: js.UndefOr[Colors] = js.native
+  var colorAxis: js.UndefOr[Colors] = js.undefined
   
-  var forceIFrame: js.UndefOr[Boolean] = js.native
+  var forceIFrame: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var noDataPattern: js.UndefOr[js.Object] = js.native
+  var noDataPattern: js.UndefOr[js.Object] = js.undefined
   
-  var tooltip: IsHtml = js.native
+  var tooltip: IsHtml
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CalendarOptions {
   

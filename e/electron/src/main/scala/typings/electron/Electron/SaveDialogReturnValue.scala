@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveDialogReturnValue extends StObject {
   
   /**
@@ -15,17 +13,17 @@ trait SaveDialogReturnValue extends StObject {
     *
     * @platform darwin,mas
     */
-  var bookmark: js.UndefOr[String] = js.native
+  var bookmark: js.UndefOr[String] = js.undefined
   
   /**
     * whether or not the dialog was canceled.
     */
-  var canceled: Boolean = js.native
+  var canceled: Boolean
   
   /**
     * If the dialog is canceled, this will be `undefined`.
     */
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
 }
 object SaveDialogReturnValue {
   

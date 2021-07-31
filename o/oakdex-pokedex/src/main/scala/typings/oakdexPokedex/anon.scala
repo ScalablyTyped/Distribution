@@ -3,49 +3,47 @@ package typings.oakdexPokedex
 import typings.oakdexPokedex.mod.MoveStatusCondition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bug extends StObject {
     
-    var Bug: Double = js.native
+    var Bug: Double
     
-    var Dark: Double = js.native
+    var Dark: Double
     
-    var Dragon: Double = js.native
+    var Dragon: Double
     
-    var Electric: Double = js.native
+    var Electric: Double
     
-    var Fairy: Double = js.native
+    var Fairy: Double
     
-    var Fighting: Double = js.native
+    var Fighting: Double
     
-    var Fire: Double = js.native
+    var Fire: Double
     
-    var Flying: Double = js.native
+    var Flying: Double
     
-    var Ghost: Double = js.native
+    var Ghost: Double
     
-    var Grass: Double = js.native
+    var Grass: Double
     
-    var Ground: Double = js.native
+    var Ground: Double
     
-    var Ice: Double = js.native
+    var Ice: Double
     
-    var Normal: Double = js.native
+    var Normal: Double
     
-    var Poison: Double = js.native
+    var Poison: Double
     
-    var Psychic: Double = js.native
+    var Psychic: Double
     
-    var Rock: Double = js.native
+    var Rock: Double
     
-    var Steel: Double = js.native
+    var Steel: Double
     
-    var Water: Double = js.native
+    var Water: Double
   }
   object Bug {
     
@@ -133,12 +131,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Female extends StObject {
     
-    var female: Double = js.native
+    var female: Double
     
-    var male: Double = js.native
+    var male: Double
   }
   object Female {
     
@@ -159,12 +156,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Increasedcriticalhitratio extends StObject {
     
-    var increased_critical_hit_ratio: js.UndefOr[Boolean] = js.native
+    var increased_critical_hit_ratio: js.UndefOr[Boolean] = js.undefined
     
-    var status_conditions: js.UndefOr[js.Array[MoveStatusCondition]] = js.native
+    var status_conditions: js.UndefOr[js.Array[MoveStatusCondition]] = js.undefined
   }
   object Increasedcriticalhitratio {
     
@@ -194,18 +190,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Jump extends StObject {
     
-    var jump: js.UndefOr[js.Array[Double]] = js.native
+    var jump: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var power: js.UndefOr[js.Array[Double]] = js.native
+    var power: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var skill: js.UndefOr[js.Array[Double]] = js.native
+    var skill: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var speed: js.UndefOr[js.Array[Double]] = js.native
+    var speed: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var stamina: js.UndefOr[js.Array[Double]] = js.native
+    var stamina: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Jump {
     

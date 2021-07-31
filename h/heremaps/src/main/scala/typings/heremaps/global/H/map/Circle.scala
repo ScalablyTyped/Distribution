@@ -4,7 +4,6 @@ import typings.heremaps.H.geo.IPoint
 import typings.heremaps.H.map.Circle.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.Circle")
 @js.native
 class Circle protected ()
-  extends typings.heremaps.H.map.Circle {
+  extends StObject
+     with typings.heremaps.H.map.Circle {
   /**
     * Constructor
     * @param center {H.geo.IPoint} - The geographical coordinates of the circle's center

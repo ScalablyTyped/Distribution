@@ -4,7 +4,6 @@ import typings.q.mod.IPromise
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,13 +27,13 @@ object mod {
     def this(
       processor: js.Function2[/* data */ T, /* index */ Double, IPromise[Unit]],
       concurrency: Double,
-      endless: js.UndefOr[scala.Nothing],
+      endless: Boolean,
       tasksData: js.Array[T]
     ) = this()
     def this(
       processor: js.Function2[/* data */ T, /* index */ Double, IPromise[Unit]],
       concurrency: Double,
-      endless: Boolean,
+      endless: Unit,
       tasksData: js.Array[T]
     ) = this()
     
@@ -147,24 +146,23 @@ object mod {
     var total: Double = js.native
   }
   
-  @js.native
   trait IProgress extends StObject {
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var fulfilled: Double = js.native
+    var fulfilled: Double
     
-    var index: Double = js.native
+    var index: Double
     
-    var pending: Double = js.native
+    var pending: Double
     
-    var rejected: Double = js.native
+    var rejected: Double
     
-    var retries: Double = js.native
+    var retries: Double
     
-    var success: Boolean = js.native
+    var success: Boolean
     
-    var total: Double = js.native
+    var total: Double
   }
   object IProgress {
     
@@ -212,14 +210,13 @@ object mod {
     }
   }
   
-  @js.native
   trait IResult extends StObject {
     
-    var fulfilled: Double = js.native
+    var fulfilled: Double
     
-    var rejected: Double = js.native
+    var rejected: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object IResult {
     

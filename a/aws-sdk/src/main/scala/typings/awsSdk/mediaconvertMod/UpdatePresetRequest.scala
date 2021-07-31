@@ -2,31 +2,29 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePresetRequest extends StObject {
   
   /**
     * The new category for the preset, if you are changing it.
     */
-  var Category: js.UndefOr[string] = js.native
+  var Category: js.UndefOr[string] = js.undefined
   
   /**
     * The new description for the preset, if you are changing it.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the preset you are modifying.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * Settings for preset
     */
-  var Settings: js.UndefOr[PresetSettings] = js.native
+  var Settings: js.UndefOr[PresetSettings] = js.undefined
 }
 object UpdatePresetRequest {
   

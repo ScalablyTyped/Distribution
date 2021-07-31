@@ -2,19 +2,17 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlicePartitions extends StObject {
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var slicePartitions: js.UndefOr[Double] = js.native
+  var slicePartitions: js.UndefOr[Double] = js.undefined
   
-  var stackPartitions: js.UndefOr[Double] = js.native
+  var stackPartitions: js.UndefOr[Double] = js.undefined
   
-  var subdivisions: js.UndefOr[Double] = js.native
+  var subdivisions: js.UndefOr[Double] = js.undefined
 }
 object SlicePartitions {
   

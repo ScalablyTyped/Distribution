@@ -3,17 +3,15 @@ package typings.request.mod
 import typings.node.urlMod.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestAsJSON extends StObject {
   
-  var headers: Headers = js.native
+  var headers: Headers
   
-  var method: String = js.native
+  var method: String
   
-  var uri: Url = js.native
+  var uri: Url
 }
 object RequestAsJSON {
   

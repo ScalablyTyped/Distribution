@@ -2,31 +2,29 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The tax settings of a merchant account. All methods require the admin role.
   */
-@js.native
 trait SchemaAccountTax extends StObject {
   
   /**
     * The ID of the account to which these account tax settings belong.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#accountTax&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Tax rules. Updating the tax rules will enable US taxes (not reversible).
     * Defining no rules is equivalent to not charging tax at all.
     */
-  var rules: js.UndefOr[js.Array[SchemaAccountTaxTaxRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaAccountTaxTaxRule]] = js.undefined
 }
 object SchemaAccountTax {
   

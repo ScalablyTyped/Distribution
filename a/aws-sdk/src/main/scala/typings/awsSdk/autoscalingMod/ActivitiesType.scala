@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivitiesType extends StObject {
   
   /**
     * The scaling activities. Activities are sorted by start time. Activities still in progress are described first.
     */
-  var Activities: typings.awsSdk.autoscalingMod.Activities = js.native
+  var Activities: typings.awsSdk.autoscalingMod.Activities
   
   /**
     * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
     */
-  var NextToken: js.UndefOr[XmlString] = js.native
+  var NextToken: js.UndefOr[XmlString] = js.undefined
 }
 object ActivitiesType {
   

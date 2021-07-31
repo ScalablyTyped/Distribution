@@ -2,7 +2,6 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * longest-matched rule will serve the URL. If no rule was matched, the
   * default service will be used.
   */
-@js.native
 trait SchemaPathMatcher extends StObject {
   
   /**
@@ -32,18 +30,18 @@ trait SchemaPathMatcher extends StObject {
     * specified resource default_service:   - compute.backendBuckets.use  -
     * compute.backendServices.use
     */
-  var defaultService: js.UndefOr[String] = js.native
+  var defaultService: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The name to which this PathMatcher is referred by the HostRule.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The list of path rules. Use this list instead of routeRules when routing
@@ -54,7 +52,7 @@ trait SchemaPathMatcher extends StObject {
     * those paths appear in this list. Only one of pathRules or routeRules must
     * be set.
     */
-  var pathRules: js.UndefOr[js.Array[SchemaPathRule]] = js.native
+  var pathRules: js.UndefOr[js.Array[SchemaPathRule]] = js.undefined
 }
 object SchemaPathMatcher {
   

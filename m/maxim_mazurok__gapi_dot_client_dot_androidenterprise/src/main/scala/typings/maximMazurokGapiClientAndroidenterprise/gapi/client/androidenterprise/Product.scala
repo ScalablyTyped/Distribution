@@ -2,90 +2,88 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Product extends StObject {
   
   /** The tracks visible to the enterprise. */
-  var appTracks: js.UndefOr[js.Array[TrackInfo]] = js.native
+  var appTracks: js.UndefOr[js.Array[TrackInfo]] = js.undefined
   
   /** App versions currently available for this product. */
-  var appVersion: js.UndefOr[js.Array[AppVersion]] = js.native
+  var appVersion: js.UndefOr[js.Array[AppVersion]] = js.undefined
   
   /** The name of the author of the product (for example, the app developer). */
-  var authorName: js.UndefOr[String] = js.native
+  var authorName: js.UndefOr[String] = js.undefined
   
   /** The countries which this app is available in. */
-  var availableCountries: js.UndefOr[js.Array[String]] = js.native
+  var availableCountries: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Deprecated, use appTracks instead. */
-  var availableTracks: js.UndefOr[js.Array[String]] = js.native
+  var availableTracks: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The app category (e.g. RACING, SOCIAL, etc.) */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /** The content rating for this app. */
-  var contentRating: js.UndefOr[String] = js.native
+  var contentRating: js.UndefOr[String] = js.undefined
   
   /** The localized promotional description, if available. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** A link to the (consumer) Google Play details page for the product. */
-  var detailsUrl: js.UndefOr[String] = js.native
+  var detailsUrl: js.UndefOr[String] = js.undefined
   
   /**
     * How and to whom the package is made available. The value publicGoogleHosted means that the package is available through the Play store and not restricted to a specific enterprise.
     * The value privateGoogleHosted means that the package is a private app (restricted to an enterprise) but hosted by Google. The value privateSelfHosted means that the package is a
     * private app (restricted to an enterprise) and is privately hosted.
     */
-  var distributionChannel: js.UndefOr[String] = js.native
+  var distributionChannel: js.UndefOr[String] = js.undefined
   
   /** Noteworthy features (if any) of this product. */
-  var features: js.UndefOr[js.Array[String]] = js.native
+  var features: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A link to an image that can be used as an icon for the product. This image is suitable for use at up to 512px x 512px. */
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
   /** The approximate time (within 7 days) the app was last published, expressed in milliseconds since epoch. */
-  var lastUpdatedTimestampMillis: js.UndefOr[String] = js.native
+  var lastUpdatedTimestampMillis: js.UndefOr[String] = js.undefined
   
   /** The minimum Android SDK necessary to run the app. */
-  var minAndroidSdkVersion: js.UndefOr[Double] = js.native
+  var minAndroidSdkVersion: js.UndefOr[Double] = js.undefined
   
   /** A list of permissions required by the app. */
-  var permissions: js.UndefOr[js.Array[ProductPermission]] = js.native
+  var permissions: js.UndefOr[js.Array[ProductPermission]] = js.undefined
   
   /** A string of the form *app:<package name>*. For example, app:com.google.android.gm represents the Gmail app. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this product is free, free with in-app purchases, or paid. If the pricing is unknown, this means the product is not generally available anymore (even though it might still
     * be available to people who own it).
     */
-  var productPricing: js.UndefOr[String] = js.native
+  var productPricing: js.UndefOr[String] = js.undefined
   
   /** A description of the recent changes made to the app. */
-  var recentChanges: js.UndefOr[String] = js.native
+  var recentChanges: js.UndefOr[String] = js.undefined
   
   /** Deprecated. */
-  var requiresContainerApp: js.UndefOr[Boolean] = js.native
+  var requiresContainerApp: js.UndefOr[Boolean] = js.undefined
   
   /** A list of screenshot links representing the app. */
-  var screenshotUrls: js.UndefOr[js.Array[String]] = js.native
+  var screenshotUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The certificate used to sign this product. */
-  var signingCertificate: js.UndefOr[ProductSigningCertificate] = js.native
+  var signingCertificate: js.UndefOr[ProductSigningCertificate] = js.undefined
   
   /** A link to a smaller image that can be used as an icon for the product. This image is suitable for use at up to 128px x 128px. */
-  var smallIconUrl: js.UndefOr[String] = js.native
+  var smallIconUrl: js.UndefOr[String] = js.undefined
   
   /** The name of the product. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** A link to the managed Google Play details page for the product, for use by an Enterprise admin. */
-  var workDetailsUrl: js.UndefOr[String] = js.native
+  var workDetailsUrl: js.UndefOr[String] = js.undefined
 }
 object Product {
   

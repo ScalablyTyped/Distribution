@@ -3,7 +3,6 @@ package typings.azureSb
 import typings.azureSb.mod.Azure.ServiceBus.CreateNotificationHubOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationhubresultMod {
@@ -14,12 +13,11 @@ object notificationhubresultMod {
       
       object Results {
         
-        @js.native
         trait NotificationHubResult extends StObject {
           
-          def parse(xml: js.Object): js.Object | js.Array[js.Object] = js.native
+          def parse(xml: js.Object): js.Object | js.Array[js.Object]
           
-          def serialize(resource: CreateNotificationHubOptions): String = js.native
+          def serialize(resource: CreateNotificationHubOptions): String
         }
         object NotificationHubResult {
           

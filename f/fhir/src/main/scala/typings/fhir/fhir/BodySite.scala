@@ -2,60 +2,60 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specific and identified anatomical location
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait BodySite extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait BodySite
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'active'.
     */
-  var _active: js.UndefOr[Element] = js.native
+  var _active: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Whether this body site record is in active use
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Named anatomical location
     */
-  var code: js.UndefOr[CodeableConcept] = js.native
+  var code: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Anatomical location description
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Bodysite identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Attached images
     */
-  var image: js.UndefOr[js.Array[Attachment]] = js.native
+  var image: js.UndefOr[js.Array[Attachment]] = js.undefined
   
   /**
     * Who this is about
     */
-  var patient: Reference = js.native
+  var patient: Reference
   
   /**
     * Modification to location code
     */
-  var qualifier: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var qualifier: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }
 object BodySite {
   

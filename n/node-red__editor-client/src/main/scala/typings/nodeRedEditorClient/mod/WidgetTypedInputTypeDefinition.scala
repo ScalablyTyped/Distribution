@@ -3,29 +3,27 @@ package typings.nodeRedEditorClient.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WidgetTypedInputTypeDefinition extends StObject {
   
   /** Set to false if there is no value associated with the type. */
-  var hasValue: js.UndefOr[Boolean] = js.native
+  var hasValue: js.UndefOr[Boolean] = js.undefined
   
   /** An icon to display in the type menu */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /** A label to display in the type menu */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /** If the type has a fixed set of values, this is an array of string options for the value. For example, ["true","false"] for the boolean type. */
-  var options: js.UndefOr[js.Array[String]] = js.native
+  var options: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A function to validate the value for the type. */
-  var validate: js.UndefOr[(js.Function1[/* v */ String, Boolean]) | RegExp] = js.native
+  var validate: js.UndefOr[(js.Function1[/* v */ String, Boolean]) | RegExp] = js.undefined
   
   /** The identifier for the type */
-  var value: String = js.native
+  var value: String
 }
 object WidgetTypedInputTypeDefinition {
   

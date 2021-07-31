@@ -2,13 +2,11 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PasswordlessWithSMSParams extends StObject {
   
-  var phoneNumber: String = js.native
+  var phoneNumber: String
 }
 object PasswordlessWithSMSParams {
   

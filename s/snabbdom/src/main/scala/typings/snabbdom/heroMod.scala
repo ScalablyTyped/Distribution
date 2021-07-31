@@ -3,7 +3,6 @@ package typings.snabbdom
 import typings.snabbdom.moduleMod.Module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object heroMod {
@@ -12,10 +11,9 @@ object heroMod {
   @js.native
   val heroModule: Module = js.native
   
-  @js.native
   trait Hero extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Hero {
     

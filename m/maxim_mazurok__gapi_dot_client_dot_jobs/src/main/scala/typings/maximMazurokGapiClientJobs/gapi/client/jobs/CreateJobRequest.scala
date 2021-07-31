@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateJobRequest extends StObject {
   
   /** Required. The Job to be created. */
-  var job: js.UndefOr[Job] = js.native
+  var job: js.UndefOr[Job] = js.undefined
 }
 object CreateJobRequest {
   

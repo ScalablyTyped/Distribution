@@ -5,64 +5,125 @@ import typings.nodeGettext.nodeGettextStrings.error
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("node-gettext", JSImport.Namespace)
   @js.native
-  class ^ () extends GetText {
+  class ^ ()
+    extends StObject
+       with GetText {
     def this(options: Debug) = this()
+    
+    /* CompleteClass */
+    override def addTranslations(locale: String, domain: String, translations: js.Object): Unit = js.native
+    
+    /* CompleteClass */
+    override def dgettext(domain: String, msgid: String): String = js.native
+    
+    /* CompleteClass */
+    override def dngettext(domain: String, msgid: String, msgidPlural: String, count: Double): String = js.native
+    
+    /* CompleteClass */
+    override def dnpgettext(domain: String, msgctxt: String, msgid: String, msgidPlural: String, count: Double): String = js.native
+    
+    /* CompleteClass */
+    override val domain: String = js.native
+    
+    /* CompleteClass */
+    override def dpgettext(domain: String, msgctxt: String, msgid: String): String = js.native
+    
+    /* CompleteClass */
+    override def emit(eventName: String, eventData: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def getComment(domain: String, msgctxt: String, msgid: String): js.Object | Boolean = js.native
+    
+    /* CompleteClass */
+    override def gettext(msgid: String): String = js.native
+    
+    /* CompleteClass */
+    override val locale: String = js.native
+    
+    /* CompleteClass */
+    override def ngettext(msgid: String, msgidPlural: String, count: Double): String = js.native
+    
+    /* CompleteClass */
+    override def npgettext(msgctxt: String, msgid: String, msgidPlural: String, count: Double): String = js.native
+    
+    /* CompleteClass */
+    @JSName("off")
+    override def off_error(eventName: error, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    @JSName("on")
+    override def on_error(eventName: error, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def pgettext(msgctxt: String, msgid: String): String = js.native
+    
+    /* CompleteClass */
+    override def setLocale(locale: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def setTextDomain(domain: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def textdomain(domain: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def warn(message: String): Unit = js.native
   }
+  @JSImport("node-gettext", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("node-gettext", "getLanguageCode")
-  @js.native
-  def getLanguageCode(locale: String): String = js.native
+  @scala.inline
+  def getLanguageCode(locale: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageCode")(locale.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait GetText extends StObject {
     
-    def addTranslations(locale: String, domain: String, translations: js.Object): Unit = js.native
+    def addTranslations(locale: String, domain: String, translations: js.Object): Unit
     
-    def dgettext(domain: String, msgid: String): String = js.native
+    def dgettext(domain: String, msgid: String): String
     
-    def dngettext(domain: String, msgid: String, msgidPlural: String, count: Double): String = js.native
+    def dngettext(domain: String, msgid: String, msgidPlural: String, count: Double): String
     
-    def dnpgettext(domain: String, msgctxt: String, msgid: String, msgidPlural: String, count: Double): String = js.native
+    def dnpgettext(domain: String, msgctxt: String, msgid: String, msgidPlural: String, count: Double): String
     
-    val domain: String = js.native
+    val domain: String
     
-    def dpgettext(domain: String, msgctxt: String, msgid: String): String = js.native
+    def dpgettext(domain: String, msgctxt: String, msgid: String): String
     
-    def emit(eventName: String, eventData: js.Any): Unit = js.native
+    def emit(eventName: String, eventData: js.Any): Unit
     
-    def getComment(domain: String, msgctxt: String, msgid: String): js.Object | Boolean = js.native
+    def getComment(domain: String, msgctxt: String, msgid: String): js.Object | Boolean
     
-    def gettext(msgid: String): String = js.native
+    def gettext(msgid: String): String
     
-    val locale: String = js.native
+    val locale: String
     
-    def ngettext(msgid: String, msgidPlural: String, count: Double): String = js.native
+    def ngettext(msgid: String, msgidPlural: String, count: Double): String
     
-    def npgettext(msgctxt: String, msgid: String, msgidPlural: String, count: Double): String = js.native
+    def npgettext(msgctxt: String, msgid: String, msgidPlural: String, count: Double): String
     
     @JSName("off")
-    def off_error(eventName: error, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def off_error(eventName: error, callback: js.Function1[/* error */ Error, Unit]): Unit
     
     @JSName("on")
-    def on_error(eventName: error, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def on_error(eventName: error, callback: js.Function1[/* error */ Error, Unit]): Unit
     
-    def pgettext(msgctxt: String, msgid: String): String = js.native
+    def pgettext(msgctxt: String, msgid: String): String
     
-    def setLocale(locale: String): Unit = js.native
+    def setLocale(locale: String): Unit
     
-    def setTextDomain(domain: String): Unit = js.native
+    def setTextDomain(domain: String): Unit
     
-    def textdomain(domain: String): Unit = js.native
+    def textdomain(domain: String): Unit
     
-    def warn(message: String): Unit = js.native
+    def warn(message: String): Unit
   }
   object GetText {
     

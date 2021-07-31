@@ -5,35 +5,34 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextfieldProps
-  extends MDLHTMLAttributes
+  extends StObject
+     with MDLHTMLAttributes
      with DOMAttributes[HTMLInputElement] {
   
-  var error: js.UndefOr[ReactNode] = js.native
+  var error: js.UndefOr[ReactNode] = js.undefined
   
-  var expandable: js.UndefOr[Boolean] = js.native
+  var expandable: js.UndefOr[Boolean] = js.undefined
   
-  var expandableIcon: js.UndefOr[String] = js.native
+  var expandableIcon: js.UndefOr[String] = js.undefined
   
-  var floatingLabel: js.UndefOr[Boolean] = js.native
+  var floatingLabel: js.UndefOr[Boolean] = js.undefined
   
-  var inputClassName: js.UndefOr[String] = js.native
+  var inputClassName: js.UndefOr[String] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  var maxRows: js.UndefOr[Double] = js.native
+  var maxRows: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 object TextfieldProps {
   

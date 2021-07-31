@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * search quality and source diversity in search results, you can set a
   * condition to reduce repetitive results by source.
   */
-@js.native
 trait SchemaSourceCrowdingConfig extends StObject {
   
   /**
@@ -22,25 +20,25 @@ trait SchemaSourceCrowdingConfig extends StObject {
     * query results contain the same field value in `GenericMetadata`, crowding
     * limits are set on those records.
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results allowed from a source. No limits will be set on
     * results if this value is less than or equal to 0.
     */
-  var numResults: js.UndefOr[Double] = js.native
+  var numResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum number of suggestions allowed from a source. No limits will be
     * set on results if this value is less than or equal to 0.
     */
-  var numSuggestions: js.UndefOr[Double] = js.native
+  var numSuggestions: js.UndefOr[Double] = js.undefined
   
   /**
     * Control results by content source. This option limits the total number of
     * results from a given source and ignores field-based crowding control.
     */
-  var source: js.UndefOr[Boolean] = js.native
+  var source: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaSourceCrowdingConfig {
   

@@ -4,13 +4,13 @@ import typings.vegaTypings.markMod._Clip
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Sphere extends _Clip {
+trait Sphere
+  extends StObject
+     with _Clip {
   
-  var sphere: String | SignalRef = js.native
+  var sphere: String | SignalRef
 }
 object Sphere {
   

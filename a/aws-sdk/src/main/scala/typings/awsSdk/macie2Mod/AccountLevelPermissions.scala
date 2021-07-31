@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountLevelPermissions extends StObject {
   
   /**
     * The block public access settings for the bucket.
     */
-  var blockPublicAccess: js.UndefOr[BlockPublicAccess] = js.native
+  var blockPublicAccess: js.UndefOr[BlockPublicAccess] = js.undefined
 }
 object AccountLevelPermissions {
   

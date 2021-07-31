@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browse {
@@ -20,9 +19,9 @@ object browse {
     * that is used to execute macros, or to create/delete/rename macros or macro containers.
     * @since OOo 2.0
     */
-  @js.native
   trait BrowseNode
-    extends XBrowseNode
+    extends StObject
+       with XBrowseNode
        with XInvocation
   object BrowseNode {
     
@@ -41,7 +40,7 @@ object browse {
       hasChildNodes: () => Boolean,
       hasMethod: String => Boolean,
       hasProperty: String => Boolean,
-      invoke: (String, SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any,
+      invoke: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
       queryInterface: `type` => js.Any,
       release: () => Unit,
       setValue: (String, js.Any) => Unit
@@ -100,50 +99,51 @@ object browse {
     * This interface represents a node in the hierarchy used to browse available scripts. Objects implementing this interface are expected to also implement
     * {@link com.sun.star.beans.XPropertySet} and, optionally, {@link com.sun.star.script.XInvocation} (see the Developer's Guide for more details).
     */
-  @js.native
-  trait XBrowseNode extends XInterface {
+  trait XBrowseNode
+    extends StObject
+       with XInterface {
     
     /**
       * Get the children of this node
       * @returns {@link com.sun.star.script.browse.XBrowseNode} sequence of child nodes
       */
-    val ChildNodes: SafeArray[XBrowseNode] = js.native
+    val ChildNodes: SafeArray[XBrowseNode]
     
     /**
       * Get the name of the node
       * @returns The `string` name of this node
       */
-    val Name: String = js.native
+    val Name: String
     
     /**
       * the type of the node.
       * @returns A `short` representing the type of this node.
       */
-    val Type: Double = js.native
+    val Type: Double
     
     /**
       * Get the children of this node
       * @returns {@link com.sun.star.script.browse.XBrowseNode} sequence of child nodes
       */
-    def getChildNodes(): SafeArray[XBrowseNode] = js.native
+    def getChildNodes(): SafeArray[XBrowseNode]
     
     /**
       * Get the name of the node
       * @returns The `string` name of this node
       */
-    def getName(): String = js.native
+    def getName(): String
     
     /**
       * the type of the node.
       * @returns A `short` representing the type of this node.
       */
-    def getType(): Double = js.native
+    def getType(): Double
     
     /**
       * Indicates if this node contains any children
       * @returns `boolean` true if there are child nodes.
       */
-    def hasChildNodes(): Boolean = js.native
+    def hasChildNodes(): Boolean
   }
   object XBrowseNode {
     
@@ -191,15 +191,16 @@ object browse {
   }
   
   /** This interface provides a factory for obtaining objects implementing the {@link XBrowseNode} interface. */
-  @js.native
-  trait XBrowseNodeFactory extends XInterface {
+  trait XBrowseNodeFactory
+    extends StObject
+       with XInterface {
     
     /**
       * a factory method for the creation of XBrowseNodes ( view ) {@link com.sun.star.script.browse.BrowseNodeFactoryViewTypes} specifies the type of view to
       * be returned
       * @returns an object implementing {@link com.sun.star.script.browse.XBrowseNode}
       */
-    def createView(viewType: Double): XBrowseNode = js.native
+    def createView(viewType: Double): XBrowseNode
   }
   object XBrowseNodeFactory {
     

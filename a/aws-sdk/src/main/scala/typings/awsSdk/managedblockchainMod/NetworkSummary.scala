@@ -2,46 +2,44 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkSummary extends StObject {
   
   /**
     * The date and time that the network was created.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.native
+  var CreationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * An optional description of the network.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The blockchain framework that the network uses.
     */
-  var Framework: js.UndefOr[typings.awsSdk.managedblockchainMod.Framework] = js.native
+  var Framework: js.UndefOr[typings.awsSdk.managedblockchainMod.Framework] = js.undefined
   
   /**
     * The version of the blockchain framework that the network uses.
     */
-  var FrameworkVersion: js.UndefOr[FrameworkVersionString] = js.native
+  var FrameworkVersion: js.UndefOr[FrameworkVersionString] = js.undefined
   
   /**
     * The unique identifier of the network.
     */
-  var Id: js.UndefOr[ResourceIdString] = js.native
+  var Id: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
     * The name of the network.
     */
-  var Name: js.UndefOr[NameString] = js.native
+  var Name: js.UndefOr[NameString] = js.undefined
   
   /**
     * The current status of the network.
     */
-  var Status: js.UndefOr[NetworkStatus] = js.native
+  var Status: js.UndefOr[NetworkStatus] = js.undefined
 }
 object NetworkSummary {
   

@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqsMod {
   
-  @js.native
   trait SQSEvent extends StObject {
     
-    var Records: js.Array[SQSRecord] = js.native
+    var Records: js.Array[SQSRecord]
   }
   object SQSEvent {
     
@@ -35,20 +33,19 @@ object sqsMod {
   
   type SQSHandler = Handler[SQSEvent, Unit]
   
-  @js.native
   trait SQSMessageAttribute extends StObject {
     
     // Not implemented. Reserved for future use.
-    var binaryListValues: js.Array[scala.Nothing] = js.native
+    var binaryListValues: js.Array[scala.Nothing]
     
-    var binaryValue: js.UndefOr[String] = js.native
+    var binaryValue: js.UndefOr[String] = js.undefined
     
     // Not implemented. Reserved for future use.
-    var dataType: SQSMessageAttributeDataType = js.native
+    var dataType: SQSMessageAttributeDataType
     
-    var stringListValues: js.Array[scala.Nothing] = js.native
+    var stringListValues: js.Array[scala.Nothing]
     
-    var stringValue: js.UndefOr[String] = js.native
+    var stringValue: js.UndefOr[String] = js.undefined
   }
   object SQSMessageAttribute {
     
@@ -104,26 +101,25 @@ object sqsMod {
   
   type SQSMessageAttributes = StringDictionary[SQSMessageAttribute]
   
-  @js.native
   trait SQSRecord extends StObject {
     
-    var attributes: SQSRecordAttributes = js.native
+    var attributes: SQSRecordAttributes
     
-    var awsRegion: String = js.native
+    var awsRegion: String
     
-    var body: String = js.native
+    var body: String
     
-    var eventSource: String = js.native
+    var eventSource: String
     
-    var eventSourceARN: String = js.native
+    var eventSourceARN: String
     
-    var md5OfBody: String = js.native
+    var md5OfBody: String
     
-    var messageAttributes: SQSMessageAttributes = js.native
+    var messageAttributes: SQSMessageAttributes
     
-    var messageId: String = js.native
+    var messageId: String
     
-    var receiptHandle: String = js.native
+    var receiptHandle: String
   }
   object SQSRecord {
     
@@ -175,24 +171,23 @@ object sqsMod {
     }
   }
   
-  @js.native
   trait SQSRecordAttributes extends StObject {
     
-    var AWSTraceHeader: js.UndefOr[String] = js.native
+    var AWSTraceHeader: js.UndefOr[String] = js.undefined
     
-    var ApproximateFirstReceiveTimestamp: String = js.native
+    var ApproximateFirstReceiveTimestamp: String
     
-    var ApproximateReceiveCount: String = js.native
+    var ApproximateReceiveCount: String
     
-    var MessageDeduplicationId: js.UndefOr[String] = js.native
+    var MessageDeduplicationId: js.UndefOr[String] = js.undefined
     
-    var MessageGroupId: js.UndefOr[String] = js.native
+    var MessageGroupId: js.UndefOr[String] = js.undefined
     
-    var SenderId: String = js.native
+    var SenderId: String
     
-    var SentTimestamp: String = js.native
+    var SentTimestamp: String
     
-    var SequenceNumber: js.UndefOr[String] = js.native
+    var SequenceNumber: js.UndefOr[String] = js.undefined
   }
   object SQSRecordAttributes {
     

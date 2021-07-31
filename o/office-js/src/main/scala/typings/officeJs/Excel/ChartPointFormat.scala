@@ -8,7 +8,6 @@ import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait ChartPointFormat extends ClientObject {
+trait ChartPointFormat
+  extends StObject
+     with ClientObject {
   
   /**
     *

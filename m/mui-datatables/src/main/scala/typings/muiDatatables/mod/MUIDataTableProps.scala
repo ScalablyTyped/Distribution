@@ -4,21 +4,19 @@ import typings.muiDatatables.anon.PartialExpandButtonRender
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableProps extends StObject {
   
-  var columns: js.Array[MUIDataTableColumnDef] = js.native
+  var columns: js.Array[MUIDataTableColumnDef]
   
-  var components: js.UndefOr[PartialExpandButtonRender] = js.native
+  var components: js.UndefOr[PartialExpandButtonRender] = js.undefined
   
-  var data: js.Array[js.Object | (js.Array[Double | String])] = js.native
+  var data: js.Array[js.Object | (js.Array[Double | String])]
   
-  var options: js.UndefOr[MUIDataTableOptions] = js.native
+  var options: js.UndefOr[MUIDataTableOptions] = js.undefined
   
-  var title: String | ReactNode = js.native
+  var title: String | ReactNode
 }
 object MUIDataTableProps {
   

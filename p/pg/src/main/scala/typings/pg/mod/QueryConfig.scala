@@ -2,28 +2,26 @@ package typings.pg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QueryConfig[I /* <: js.Array[_] */] extends StObject {
+trait QueryConfig[I /* <: js.Array[js.Any] */] extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var values: js.UndefOr[I] = js.native
+  var values: js.UndefOr[I] = js.undefined
 }
 object QueryConfig {
   
   @scala.inline
-  def apply[I /* <: js.Array[_] */](text: String): QueryConfig[I] = {
+  def apply[I /* <: js.Array[js.Any] */](text: String): QueryConfig[I] = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryConfig[I]]
   }
   
   @scala.inline
-  implicit class QueryConfigMutableBuilder[Self <: QueryConfig[_], I /* <: js.Array[_] */] (val x: Self with QueryConfig[I]) extends AnyVal {
+  implicit class QueryConfigMutableBuilder[Self <: QueryConfig[?], I /* <: js.Array[js.Any] */] (val x: Self & QueryConfig[I]) extends AnyVal {
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

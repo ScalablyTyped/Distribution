@@ -3,24 +3,22 @@ package typings.typedGraphql.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // execution/*.js
-@js.native
 trait ExecutionContext extends StObject {
   
-  var errors: js.Array[GraphQLError] = js.native
+  var errors: js.Array[GraphQLError]
   
-  var fragments: StringDictionary[FragmentDefinition] = js.native
+  var fragments: StringDictionary[FragmentDefinition]
   
-  var operation: OperationDefinition = js.native
+  var operation: OperationDefinition
   
-  var rootValue: js.Any = js.native
+  var rootValue: js.Any
   
-  var schema: GraphQLSchema = js.native
+  var schema: GraphQLSchema
   
-  var variableValues: StringDictionary[js.Any] = js.native
+  var variableValues: StringDictionary[js.Any]
 }
 object ExecutionContext {
   

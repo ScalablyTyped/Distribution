@@ -2,14 +2,12 @@ package typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes SourceRepository, used to represent parameters related to source
   * repository where a function is hosted.
   */
-@js.native
 trait SchemaSourceRepository extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaSourceRepository extends StObject {
     * were defined at the time of deployment. It always points to a specific
     * commit in the format described above.
     */
-  var deployedUrl: js.UndefOr[String] = js.native
+  var deployedUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The URL pointing to the hosted repository where the function is defined.
@@ -31,7 +29,7 @@ trait SchemaSourceRepository extends StObject {
     * `https://source.developers.google.com/projects/x/repos/x/fixed-aliases/x/paths/x
     * You may omit `paths/x if you want to use the main directory.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaSourceRepository {
   

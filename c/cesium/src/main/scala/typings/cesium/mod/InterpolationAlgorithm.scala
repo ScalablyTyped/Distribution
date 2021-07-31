@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-unnecessary-class
@@ -11,14 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class InterpolationAlgorithm () extends StObject
 object InterpolationAlgorithm {
   
-  /* static member */
-  @JSImport("cesium", "InterpolationAlgorithm.getRequiredDataPoints")
+  @JSImport("cesium", "InterpolationAlgorithm")
   @js.native
-  def getRequiredDataPoints(degree: Double): Double = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "InterpolationAlgorithm.interpolate")
-  @js.native
+  @scala.inline
+  def getRequiredDataPoints(degree: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequiredDataPoints")(degree.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  /* static member */
+  @scala.inline
   def interpolate(
     x: Double,
     xTable: js.Array[Double],
@@ -26,9 +27,8 @@ object InterpolationAlgorithm {
     yStride: Double,
     inputOrder: Double,
     outputOrder: Double
-  ): js.Array[Double] = js.native
-  @JSImport("cesium", "InterpolationAlgorithm.interpolate")
-  @js.native
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(x.asInstanceOf[js.Any], xTable.asInstanceOf[js.Any], yTable.asInstanceOf[js.Any], yStride.asInstanceOf[js.Any], inputOrder.asInstanceOf[js.Any], outputOrder.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
   def interpolate(
     x: Double,
     xTable: js.Array[Double],
@@ -37,21 +37,19 @@ object InterpolationAlgorithm {
     inputOrder: Double,
     outputOrder: Double,
     result: js.Array[Double]
-  ): js.Array[Double] = js.native
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(x.asInstanceOf[js.Any], xTable.asInstanceOf[js.Any], yTable.asInstanceOf[js.Any], yStride.asInstanceOf[js.Any], inputOrder.asInstanceOf[js.Any], outputOrder.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /* static member */
-  @JSImport("cesium", "InterpolationAlgorithm.interpolateOrderZero")
-  @js.native
-  def interpolateOrderZero(x: Double, xTable: js.Array[Double], yTable: js.Array[Double], yStride: Double): js.Array[Double] = js.native
-  @JSImport("cesium", "InterpolationAlgorithm.interpolateOrderZero")
-  @js.native
+  @scala.inline
+  def interpolateOrderZero(x: Double, xTable: js.Array[Double], yTable: js.Array[Double], yStride: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateOrderZero")(x.asInstanceOf[js.Any], xTable.asInstanceOf[js.Any], yTable.asInstanceOf[js.Any], yStride.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
   def interpolateOrderZero(
     x: Double,
     xTable: js.Array[Double],
     yTable: js.Array[Double],
     yStride: Double,
     result: js.Array[Double]
-  ): js.Array[Double] = js.native
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateOrderZero")(x.asInstanceOf[js.Any], xTable.asInstanceOf[js.Any], yTable.asInstanceOf[js.Any], yStride.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /* static member */
   @JSImport("cesium", "InterpolationAlgorithm.type")

@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Page.GetCookiesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParamsTypeReturnTypeGetCookiesResponse extends StObject {
   
-  var paramsType: js.Array[js.Any] = js.native
+  var paramsType: js.Array[js.Any]
   
-  var returnType: GetCookiesResponse = js.native
+  var returnType: GetCookiesResponse
 }
 object ParamsTypeReturnTypeGetCookiesResponse {
   

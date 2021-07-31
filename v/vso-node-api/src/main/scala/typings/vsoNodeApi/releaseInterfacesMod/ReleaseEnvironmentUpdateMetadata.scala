@@ -3,26 +3,24 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseEnvironmentUpdateMetadata extends StObject {
   
   /**
     * Gets or sets comment.
     */
-  var comment: String = js.native
+  var comment: String
   
   /**
     * Gets or sets scheduled deployment time.
     */
-  var scheduledDeploymentTime: Date = js.native
+  var scheduledDeploymentTime: Date
   
   /**
     * Gets or sets status of environment.
     */
-  var status: EnvironmentStatus = js.native
+  var status: EnvironmentStatus
 }
 object ReleaseEnvironmentUpdateMetadata {
   

@@ -2,22 +2,31 @@ package typings.typescriptServices.global.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.CompileResult")
 @js.native
 class CompileResult ()
-  extends typings.typescriptServices.TypeScript.CompileResult
+  extends StObject
+     with typings.typescriptServices.TypeScript.CompileResult {
+  
+  /* CompleteClass */
+  var diagnostics: js.Array[typings.typescriptServices.TypeScript.Diagnostic] = js.native
+  
+  /* CompleteClass */
+  var outputFiles: js.Array[typings.typescriptServices.TypeScript.OutputFile] = js.native
+}
 object CompileResult {
   
-  /* static member */
-  @JSGlobal("TypeScript.CompileResult.fromDiagnostics")
+  @JSGlobal("TypeScript.CompileResult")
   @js.native
-  def fromDiagnostics(diagnostics: js.Array[typings.typescriptServices.TypeScript.Diagnostic]): typings.typescriptServices.TypeScript.CompileResult = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("TypeScript.CompileResult.fromOutputFiles")
-  @js.native
-  def fromOutputFiles(outputFiles: js.Array[typings.typescriptServices.TypeScript.OutputFile]): typings.typescriptServices.TypeScript.CompileResult = js.native
+  @scala.inline
+  def fromDiagnostics(diagnostics: js.Array[typings.typescriptServices.TypeScript.Diagnostic]): typings.typescriptServices.TypeScript.CompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDiagnostics")(diagnostics.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CompileResult]
+  
+  /* static member */
+  @scala.inline
+  def fromOutputFiles(outputFiles: js.Array[typings.typescriptServices.TypeScript.OutputFile]): typings.typescriptServices.TypeScript.CompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOutputFiles")(outputFiles.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CompileResult]
 }

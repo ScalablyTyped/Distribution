@@ -2,23 +2,21 @@ package typings.gapiPagespeedonline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
     /**
       * List of arguments for the format string.
       */
-    var args: js.Array[Type] = js.native
+    var args: js.Array[Type]
     
     /**
       * A localized format string with $N placeholders, where N is the 1-indexed argument number.
       */
-    var format: String = js.native
+    var format: String
   }
   object Args {
     
@@ -42,64 +40,63 @@ object anon {
     }
   }
   
-  @js.native
   trait AvoidBadRequests extends StObject {
     
-    var AvoidBadRequests: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var AvoidBadRequests: GoogleApiPageSpeedOnlineRuleResource
     
-    var AvoidCharsetInMetaTag: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var AvoidCharsetInMetaTag: GoogleApiPageSpeedOnlineRuleResource
     
-    var AvoidCssImport: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var AvoidCssImport: GoogleApiPageSpeedOnlineRuleResource
     
-    var AvoidLandingPageRedirects: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var AvoidLandingPageRedirects: GoogleApiPageSpeedOnlineRuleResource
     
-    var AvoidLongRunningScripts: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var AvoidLongRunningScripts: GoogleApiPageSpeedOnlineRuleResource
     
-    var DeferParsingJavaScript: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var DeferParsingJavaScript: GoogleApiPageSpeedOnlineRuleResource
     
-    var EnableGzipCompression: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var EnableGzipCompression: GoogleApiPageSpeedOnlineRuleResource
     
-    var InlineSmallCss: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var InlineSmallCss: GoogleApiPageSpeedOnlineRuleResource
     
-    var InlineSmallJavaScript: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var InlineSmallJavaScript: GoogleApiPageSpeedOnlineRuleResource
     
-    var LeverageBrowserCaching: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var LeverageBrowserCaching: GoogleApiPageSpeedOnlineRuleResource
     
-    var MinifyCss: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var MinifyCss: GoogleApiPageSpeedOnlineRuleResource
     
-    var MinifyHTML: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var MinifyHTML: GoogleApiPageSpeedOnlineRuleResource
     
-    var MinifyJavaScript: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var MinifyJavaScript: GoogleApiPageSpeedOnlineRuleResource
     
-    var MinimizeRedirects: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var MinimizeRedirects: GoogleApiPageSpeedOnlineRuleResource
     
-    var MinimizeRequestSize: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var MinimizeRequestSize: GoogleApiPageSpeedOnlineRuleResource
     
-    var OptimizeImages: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var OptimizeImages: GoogleApiPageSpeedOnlineRuleResource
     
-    var OptimizeTheOrderOfStylesAndScripts: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var OptimizeTheOrderOfStylesAndScripts: GoogleApiPageSpeedOnlineRuleResource
     
-    var PreferAsyncResources: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var PreferAsyncResources: GoogleApiPageSpeedOnlineRuleResource
     
-    var PutCssInTheDocumentHead: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var PutCssInTheDocumentHead: GoogleApiPageSpeedOnlineRuleResource
     
-    var RemoveQueryStringsFromStaticResources: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var RemoveQueryStringsFromStaticResources: GoogleApiPageSpeedOnlineRuleResource
     
-    var ServeResponseTime: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var ServeResponseTime: GoogleApiPageSpeedOnlineRuleResource
     
-    var ServerResourcesFromAConsistentUrl: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var ServerResourcesFromAConsistentUrl: GoogleApiPageSpeedOnlineRuleResource
     
-    var ServerScaledImages: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var ServerScaledImages: GoogleApiPageSpeedOnlineRuleResource
     
-    var SpecifyACacheValidator: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var SpecifyACacheValidator: GoogleApiPageSpeedOnlineRuleResource
     
-    var SpecifyAVaryAcceptEncodingHeader: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var SpecifyAVaryAcceptEncodingHeader: GoogleApiPageSpeedOnlineRuleResource
     
-    var SpecifyCharsetEarly: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var SpecifyCharsetEarly: GoogleApiPageSpeedOnlineRuleResource
     
-    var SpecifyImageDimensions: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var SpecifyImageDimensions: GoogleApiPageSpeedOnlineRuleResource
     
-    var SpriteImages: GoogleApiPageSpeedOnlineRuleResource = js.native
+    var SpriteImages: GoogleApiPageSpeedOnlineRuleResource
   }
   object AvoidBadRequests {
     
@@ -227,73 +224,72 @@ object anon {
     }
   }
   
-  @js.native
   trait CssResponsebytes extends StObject {
     
     /**
       * Number of uncompressed response bytes for CSS resources on the page.
       */
-    var cssResponsebytes: String = js.native
+    var cssResponsebytes: String
     
     /**
       * Number of response bytes for Flash resources on the page.
       */
-    var flashResponseBytes: String = js.native
+    var flashResponseBytes: String
     
     /**
       * Number of uncompressed response bytes for the main HTML document and all iframes on the page.
       */
-    var htmlResponseBytes: String = js.native
+    var htmlResponseBytes: String
     
     /**
       * Number of response bytes for image resources on the page.
       */
-    var imageResponseBytes: String = js.native
+    var imageResponseBytes: String
     
     /**
       * Number of uncompressed response bytes for JS resources on the page.
       */
-    var javascriptResponsebytes: String = js.native
+    var javascriptResponsebytes: String
     
     /**
       * Number of CSS resources referenced by the page.
       */
-    var numberCssResources: Double = js.native
+    var numberCssResources: Double
     
     /**
       * Number of unique hosts referenced by the page.
       */
-    var numberHosts: Double = js.native
+    var numberHosts: Double
     
     /**
       * Number of JavaScript resources referenced by the page.
       */
-    var numberJsResources: Double = js.native
+    var numberJsResources: Double
     
     /**
       * Number of HTTP resources loaded by the page.
       */
-    var numberResources: Double = js.native
+    var numberResources: Double
     
     /**
       * Number of static (that is, cacheable) resources on the page.
       */
-    var numberStaticResources: Double = js.native
+    var numberStaticResources: Double
     
     /**
       * Number of response bytes for other resources on the page.
       */
-    var otherResponsebytes: String = js.native
+    var otherResponsebytes: String
     
     /**
       * Number of uncompressed response bytes for text resources on the page that aren't covered by other statistics; that is, non-HTML, non-script, non-CSS resources.
       */
-    var textResponseBytes: String = js.native
+    var textResponseBytes: String
     
     /**
       * Total size of all request bytes sent by the page.
       */
-    var totalRequestBytes: String = js.native
+    var totalRequestBytes: String
   }
   object CssResponsebytes {
     
@@ -361,18 +357,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Details extends StObject {
     
     /**
       * List of entries that provide additional details about a single URL. Optional.
       */
-    var details: js.Array[Args] = js.native
+    var details: js.Array[Args]
     
     /**
       * A format string that gives information about the URL, and a list of arguments for that format string.
       */
-    var result: Args = js.native
+    var result: Args
   }
   object Details {
     
@@ -396,38 +391,37 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /**
       * Selector specifying which fields to include in a partial response.
       */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * The locale that results should be generated in.
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /**
       * The PageSpeed rules to run. Can be specified multiple times
       */
-    var rule: js.UndefOr[js.Array[String]] = js.native
+    var rule: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Indicates if binary data containing a screenshot should be included
       */
-    var screenshot: js.UndefOr[Boolean] = js.native
+    var screenshot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The strategy to use when analyzing the page. Valid values are desktop and mobile.
       */
-    var stategy: js.UndefOr[String] = js.native
+    var stategy: js.UndefOr[String] = js.undefined
     
     /**
       * The URL of the page for which the PageSpeed Insights API should generate results.
       */
-    var url: String = js.native
+    var url: String
   }
   object Fields {
     
@@ -478,18 +472,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Header extends StObject {
     
     /**
       * Heading to be displayed with the list of URLs.
       */
-    var header: Args = js.native
+    var header: Args
     
     /**
       * List of entries that provide information about URLs in the URL block. Optional.
       */
-    var urls: js.Array[Details] = js.native
+    var urls: js.Array[Details]
   }
   object Header {
     
@@ -513,18 +506,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Locale extends StObject {
     
     /**
       * The locale of the formattedResults, such as en_US.
       */
-    var locale: String = js.native
+    var locale: String
     
     /**
       * Dictionary of formatted rule results, with one entry for each PageSpeed rule instantiated and run by the server.
       */
-    var ruleResults: AvoidBadRequests = js.native
+    var ruleResults: AvoidBadRequests
   }
   object Locale {
     
@@ -545,18 +537,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Major extends StObject {
     
     /**
       * The major version number of the PageSpeed SDK used to generate these results.
       */
-    var major: Double = js.native
+    var major: Double
     
     /**
       * The minor version number of the PageSpeed SDK used to generate these results.
       */
-    var minor: Double = js.native
+    var minor: Double
   }
   object Major {
     
@@ -577,18 +568,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
     /**
       * Type of argument. One of URL, STRING_LITERAL, INT_LITERAL, BYTES, or DURATION.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * Argument value, as a localized string.
       */
-    var value: String = js.native
+    var value: String
   }
   object Type {
     

@@ -2,37 +2,35 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Debit extends StObject {
   
-  var Commercial: String = js.native
+  var Commercial: String
   
-  var CountryOfIssuance: String = js.native
+  var CountryOfIssuance: String
   
-  var Debit: String = js.native
+  var Debit: String
   
-  var DurbinRegulated: String = js.native
+  var DurbinRegulated: String
   
-  var Fraud: String = js.native
+  var Fraud: String
   
-  var Healthcare: String = js.native
+  var Healthcare: String
   
-  var Hiper: String = js.native
+  var Hiper: String
   
-  var HiperCard: String = js.native
+  var HiperCard: String
   
-  var IssuingBank: String = js.native
+  var IssuingBank: String
   
-  var No: String = js.native
+  var No: String
   
-  var Payroll: String = js.native
+  var Payroll: String
   
-  var Prepaid: String = js.native
+  var Prepaid: String
   
-  var Unknown: String = js.native
+  var Unknown: String
 }
 object Debit {
   

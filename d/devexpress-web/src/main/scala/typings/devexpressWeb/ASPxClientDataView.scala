@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxDataView object.
   */
 @js.native
-trait ASPxClientDataView extends ASPxClientControl {
+trait ASPxClientDataView
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs when a callback for server-side processing is initiated.

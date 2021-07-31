@@ -8,7 +8,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationMod {
@@ -48,14 +47,15 @@ object paginationMod {
     def onChange(p: Double): Unit = js.native
   }
   
-  @js.native
-  trait PaginationProps extends PaginationPropsType {
+  trait PaginationProps
+    extends StObject
+       with PaginationPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PaginationProps {
     

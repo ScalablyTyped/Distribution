@@ -2,35 +2,33 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyBoxSlideShow extends StObject {
   
   @JSName("$button")
-  var $button: js.UndefOr[JQuery] = js.native
+  var $button: js.UndefOr[JQuery] = js.undefined
   
   @JSName("$progress")
-  var $progress: JQuery = js.native
+  var $progress: JQuery
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def init(): Unit = js.native
+  def init(): Unit
   
-  var instance: FancyBoxInstance = js.native
+  var instance: FancyBoxInstance
   
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
-  def set(force: Boolean): Unit = js.native
+  def set(force: Boolean): Unit
   
-  def start(): Unit = js.native
+  def start(): Unit
   
-  def stop(): Unit = js.native
+  def stop(): Unit
   
-  var timer: js.UndefOr[Double] = js.native
+  var timer: js.UndefOr[Double] = js.undefined
   
-  def toggle(): Unit = js.native
+  def toggle(): Unit
 }
 object FancyBoxSlideShow {
   

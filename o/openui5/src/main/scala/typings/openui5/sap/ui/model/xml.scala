@@ -2,13 +2,14 @@ package typings.openui5.sap.ui.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xml {
   
   @js.native
-  trait XMLModel extends ClientModel {
+  trait XMLModel
+    extends StObject
+       with ClientModel {
     
     /**
       * Serializes the current XML data of the model into a string.
@@ -69,9 +70,9 @@ object xml {
       * found.
       */
     def setProperty(sPath: String, oValue: js.Any): Boolean = js.native
-    def setProperty(sPath: String, oValue: js.Any, oContext: js.UndefOr[scala.Nothing], bAsyncUpdate: Boolean): Boolean = js.native
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any): Boolean = js.native
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any, bAsyncUpdate: Boolean): Boolean = js.native
+    def setProperty(sPath: String, oValue: js.Any, oContext: Unit, bAsyncUpdate: Boolean): Boolean = js.native
     
     /**
       * Sets the specified XML formatted string text to the model

@@ -3,7 +3,6 @@ package typings.popmotionPose
 import typings.popmotionPose.typesMod._Draggable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popmotionPoseStrings {
@@ -99,12 +98,16 @@ object popmotionPoseStrings {
   def tween: tween = "tween".asInstanceOf[tween]
   
   @js.native
-  sealed trait x extends _Draggable
+  sealed trait x
+    extends StObject
+       with _Draggable
   @scala.inline
   def x: x = "x".asInstanceOf[x]
   
   @js.native
-  sealed trait y extends _Draggable
+  sealed trait y
+    extends StObject
+       with _Draggable
   @scala.inline
   def y: y = "y".asInstanceOf[y]
 }

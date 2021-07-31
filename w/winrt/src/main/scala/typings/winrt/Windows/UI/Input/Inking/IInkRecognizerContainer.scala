@@ -4,17 +4,15 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInkRecognizerContainer extends StObject {
   
-  def getRecognizers(): IVectorView[InkRecognizer] = js.native
+  def getRecognizers(): IVectorView[InkRecognizer]
   
-  def recognizeAsync(strokeCollection: InkStrokeContainer, recognitionTarget: InkRecognitionTarget): IAsyncOperation[IVectorView[InkRecognitionResult]] = js.native
+  def recognizeAsync(strokeCollection: InkStrokeContainer, recognitionTarget: InkRecognitionTarget): IAsyncOperation[IVectorView[InkRecognitionResult]]
   
-  def setDefaultRecognizer(recognizer: InkRecognizer): Unit = js.native
+  def setDefaultRecognizer(recognizer: InkRecognizer): Unit
 }
 object IInkRecognizerContainer {
   

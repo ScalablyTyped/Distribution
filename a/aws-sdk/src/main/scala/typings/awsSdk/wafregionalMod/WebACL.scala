@@ -2,41 +2,39 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebACL extends StObject {
   
   /**
     * The action to perform if none of the Rules contained in the WebACL match. The action is specified by the WafAction object.
     */
-  var DefaultAction: WafAction = js.native
+  var DefaultAction: WafAction
   
   /**
     * A friendly name or description for the metrics for this WebACL. The name can contain only alphanumeric characters (A-Z, a-z, 0-9), with maximum length 128 and minimum length one. It can't contain whitespace or metric names reserved for AWS WAF, including "All" and "Default_Action." You can't change MetricName after you create the WebACL.
     */
-  var MetricName: js.UndefOr[typings.awsSdk.wafregionalMod.MetricName] = js.native
+  var MetricName: js.UndefOr[typings.awsSdk.wafregionalMod.MetricName] = js.undefined
   
   /**
     * A friendly name or description of the WebACL. You can't change the name of a WebACL after you create it.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * An array that contains the action for each Rule in a WebACL, the priority of the Rule, and the ID of the Rule.
     */
-  var Rules: ActivatedRules = js.native
+  var Rules: ActivatedRules
   
   /**
     * Tha Amazon Resource Name (ARN) of the web ACL.
     */
-  var WebACLArn: js.UndefOr[ResourceArn] = js.native
+  var WebACLArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * A unique identifier for a WebACL. You use WebACLId to get information about a WebACL (see GetWebACL), update a WebACL (see UpdateWebACL), and delete a WebACL from AWS WAF (see DeleteWebACL).  WebACLId is returned by CreateWebACL and by ListWebACLs.
     */
-  var WebACLId: ResourceId = js.native
+  var WebACLId: ResourceId
 }
 object WebACL {
   

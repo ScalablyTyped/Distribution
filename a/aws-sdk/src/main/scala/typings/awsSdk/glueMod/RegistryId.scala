@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegistryId extends StObject {
   
   /**
     * Arn of the registry to be updated. One of RegistryArn or RegistryName has to be provided.
     */
-  var RegistryArn: js.UndefOr[GlueResourceArn] = js.native
+  var RegistryArn: js.UndefOr[GlueResourceArn] = js.undefined
   
   /**
     * Name of the registry. Used only for lookup. One of RegistryArn or RegistryName has to be provided. 
     */
-  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.undefined
 }
 object RegistryId {
   

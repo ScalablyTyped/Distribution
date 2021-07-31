@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GPSPointDimension extends StObject {
   
   /**
     * The GPS coordinates to measure distance from.
     */
-  var Coordinates: GPSCoordinates = js.native
+  var Coordinates: GPSCoordinates
   
   /**
     * The range, in kilometers, from the GPS coordinates.
     */
-  var RangeInKilometers: js.UndefOr[double] = js.native
+  var RangeInKilometers: js.UndefOr[double] = js.undefined
 }
 object GPSPointDimension {
   

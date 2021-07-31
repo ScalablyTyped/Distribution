@@ -2,21 +2,19 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceIdentifier extends StObject {
   
   /**
     * The ARN of a resource.
     */
-  var ResourceArn: js.UndefOr[typings.awsSdk.resourcegroupsMod.ResourceArn] = js.native
+  var ResourceArn: js.UndefOr[typings.awsSdk.resourcegroupsMod.ResourceArn] = js.undefined
   
   /**
     * The resource type of a resource, such as AWS::EC2::Instance.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.resourcegroupsMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.resourcegroupsMod.ResourceType] = js.undefined
 }
 object ResourceIdentifier {
   

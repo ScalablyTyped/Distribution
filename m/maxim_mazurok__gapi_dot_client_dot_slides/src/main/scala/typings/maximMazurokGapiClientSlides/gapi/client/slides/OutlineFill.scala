@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutlineFill extends StObject {
   
   /** Solid color fill. */
-  var solidFill: js.UndefOr[SolidFill] = js.native
+  var solidFill: js.UndefOr[SolidFill] = js.undefined
 }
 object OutlineFill {
   

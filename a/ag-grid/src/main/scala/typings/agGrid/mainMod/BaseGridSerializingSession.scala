@@ -4,7 +4,6 @@ import typings.agGrid.exportParamsMod.ProcessCellForExportParams
 import typings.agGrid.exportParamsMod.ProcessHeaderForExportParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid/dist/lib/main", "BaseGridSerializingSession")
@@ -26,13 +25,6 @@ abstract class BaseGridSerializingSession[T] protected ()
     columnController: typings.agGrid.columnControllerMod.ColumnController,
     valueService: typings.agGrid.valueServiceMod.ValueService,
     gridOptionsWrapper: typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper,
-    processCellCallback: js.UndefOr[scala.Nothing],
-    processHeaderCallback: js.Function1[/* params */ ProcessHeaderForExportParams, String]
-  ) = this()
-  def this(
-    columnController: typings.agGrid.columnControllerMod.ColumnController,
-    valueService: typings.agGrid.valueServiceMod.ValueService,
-    gridOptionsWrapper: typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper,
     processCellCallback: js.Function1[/* params */ ProcessCellForExportParams, String],
     processHeaderCallback: js.Function1[/* params */ ProcessHeaderForExportParams, String]
   ) = this()
@@ -40,15 +32,14 @@ abstract class BaseGridSerializingSession[T] protected ()
     columnController: typings.agGrid.columnControllerMod.ColumnController,
     valueService: typings.agGrid.valueServiceMod.ValueService,
     gridOptionsWrapper: typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper,
-    processCellCallback: js.UndefOr[scala.Nothing],
-    processHeaderCallback: js.UndefOr[scala.Nothing],
-    cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
+    processCellCallback: Unit,
+    processHeaderCallback: js.Function1[/* params */ ProcessHeaderForExportParams, String]
   ) = this()
   def this(
     columnController: typings.agGrid.columnControllerMod.ColumnController,
     valueService: typings.agGrid.valueServiceMod.ValueService,
     gridOptionsWrapper: typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper,
-    processCellCallback: js.UndefOr[scala.Nothing],
+    processCellCallback: js.Function1[/* params */ ProcessCellForExportParams, String],
     processHeaderCallback: js.Function1[/* params */ ProcessHeaderForExportParams, String],
     cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
   ) = this()
@@ -57,15 +48,23 @@ abstract class BaseGridSerializingSession[T] protected ()
     valueService: typings.agGrid.valueServiceMod.ValueService,
     gridOptionsWrapper: typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper,
     processCellCallback: js.Function1[/* params */ ProcessCellForExportParams, String],
-    processHeaderCallback: js.UndefOr[scala.Nothing],
+    processHeaderCallback: Unit,
     cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
   ) = this()
   def this(
     columnController: typings.agGrid.columnControllerMod.ColumnController,
     valueService: typings.agGrid.valueServiceMod.ValueService,
     gridOptionsWrapper: typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper,
-    processCellCallback: js.Function1[/* params */ ProcessCellForExportParams, String],
+    processCellCallback: Unit,
     processHeaderCallback: js.Function1[/* params */ ProcessHeaderForExportParams, String],
+    cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
+  ) = this()
+  def this(
+    columnController: typings.agGrid.columnControllerMod.ColumnController,
+    valueService: typings.agGrid.valueServiceMod.ValueService,
+    gridOptionsWrapper: typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper,
+    processCellCallback: Unit,
+    processHeaderCallback: Unit,
     cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
   ) = this()
 }

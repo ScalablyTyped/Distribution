@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Namespace logging. */
@@ -20,7 +19,9 @@ object logging {
     * Constructs a new AuditData.
     * @param [properties] Properties to set
     */
-  class AuditData () extends IAuditData {
+  class AuditData ()
+    extends StObject
+       with IAuditData {
     def this(properties: IAuditData) = this()
     
     /**
@@ -31,18 +32,20 @@ object logging {
   }
   object AuditData {
     
+    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new AuditData instance using the specified properties.
       * @param [properties] Properties to set
       * @returns AuditData instance
       */
     /* static member */
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.create")
-    @js.native
-    def create(): AuditData = js.native
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.create")
-    @js.native
-    def create(properties: IAuditData): AuditData = js.native
+    @scala.inline
+    def create(): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AuditData]
+    @scala.inline
+    def create(properties: IAuditData): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[AuditData]
     
     /**
       * Decodes an AuditData message from the specified reader or buffer.
@@ -53,18 +56,14 @@ object logging {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.decode")
-    @js.native
-    def decode(reader: Reader): AuditData = js.native
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): AuditData = js.native
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.decode")
-    @js.native
-    def decode(reader: Uint8Array): AuditData = js.native
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): AuditData = js.native
+    @scala.inline
+    def decode(reader: Reader): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditData]
+    @scala.inline
+    def decode(reader: Reader, length: Double): AuditData = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AuditData]
+    @scala.inline
+    def decode(reader: Uint8Array): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditData]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): AuditData = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AuditData]
     
     /**
       * Decodes an AuditData message from the specified reader or buffer, length delimited.
@@ -74,12 +73,10 @@ object logging {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): AuditData = js.native
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): AuditData = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditData]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditData]
     
     /**
       * Encodes the specified AuditData message. Does not implicitly {@link google.iam.v1.logging.AuditData.verify|verify} messages.
@@ -88,12 +85,10 @@ object logging {
       * @returns Writer
       */
     /* static member */
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.encode")
-    @js.native
-    def encode(message: IAuditData): Writer = js.native
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.encode")
-    @js.native
-    def encode(message: IAuditData, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IAuditData): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IAuditData, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified AuditData message, length delimited. Does not implicitly {@link google.iam.v1.logging.AuditData.verify|verify} messages.
@@ -102,12 +97,10 @@ object logging {
       * @returns Writer
       */
     /* static member */
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IAuditData): Writer = js.native
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IAuditData, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IAuditData): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IAuditData, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an AuditData message from a plain object. Also converts values to their respective internal types.
@@ -115,9 +108,8 @@ object logging {
       * @returns AuditData
       */
     /* static member */
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): AuditData = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[AuditData]
     
     /**
       * Creates a plain object from an AuditData message. Also converts values to other types if specified.
@@ -126,12 +118,10 @@ object logging {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.toObject")
-    @js.native
-    def toObject(message: AuditData): StringDictionary[js.Any] = js.native
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.toObject")
-    @js.native
-    def toObject(message: AuditData, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: AuditData): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: AuditData, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an AuditData message.
@@ -139,17 +129,15 @@ object logging {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.logging.AuditData.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Properties of an AuditData. */
-  @js.native
   trait IAuditData extends StObject {
     
     /** AuditData policyDelta */
-    var policyDelta: js.UndefOr[IPolicyDelta | Null] = js.native
+    var policyDelta: js.UndefOr[IPolicyDelta | Null] = js.undefined
   }
   object IAuditData {
     

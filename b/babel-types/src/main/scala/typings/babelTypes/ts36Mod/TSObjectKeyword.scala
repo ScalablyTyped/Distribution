@@ -2,16 +2,15 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSObjectKeyword
-  extends Node
+  extends StObject
+     with Node
      with TSType {
   
   @JSName("type")
-  var type_TSObjectKeyword: typings.babelTypes.babelTypesStrings.TSObjectKeyword = js.native
+  var type_TSObjectKeyword: typings.babelTypes.babelTypesStrings.TSObjectKeyword
 }
 object TSObjectKeyword {
   

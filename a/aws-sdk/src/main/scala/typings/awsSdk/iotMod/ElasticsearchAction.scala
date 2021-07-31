@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticsearchAction extends StObject {
   
   /**
     * The endpoint of your Elasticsearch domain.
     */
-  var endpoint: ElasticsearchEndpoint = js.native
+  var endpoint: ElasticsearchEndpoint
   
   /**
     * The unique identifier for the document you are storing.
     */
-  var id: ElasticsearchId = js.native
+  var id: ElasticsearchId
   
   /**
     * The Elasticsearch index where you want to store your data.
     */
-  var index: ElasticsearchIndex = js.native
+  var index: ElasticsearchIndex
   
   /**
     * The IAM role ARN that has access to Elasticsearch.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
   
   /**
     * The type of document you are storing.
     */
-  var `type`: ElasticsearchType = js.native
+  var `type`: ElasticsearchType
 }
 object ElasticsearchAction {
   

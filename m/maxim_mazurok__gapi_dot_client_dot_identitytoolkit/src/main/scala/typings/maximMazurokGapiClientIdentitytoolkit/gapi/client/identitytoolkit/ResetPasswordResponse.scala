@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetPasswordResponse extends StObject {
   
   /** The user's email. If the out-of-band code is for email recovery, the user's original email. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** The fixed string "identitytoolkit#ResetPasswordResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** If the out-of-band code is for email recovery, the user's new email. */
-  var newEmail: js.UndefOr[String] = js.native
+  var newEmail: js.UndefOr[String] = js.undefined
   
   /** The request type. */
-  var requestType: js.UndefOr[String] = js.native
+  var requestType: js.UndefOr[String] = js.undefined
 }
 object ResetPasswordResponse {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v3", "drive_v3.Resource$About")
@@ -30,7 +29,7 @@ class ResourceAbout protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAbout] = js.native
   def get(callback: BodyResponseCallback[SchemaAbout]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAbout] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAbout] = js.native
   def get(params: ParamsResourceAboutGet): GaxiosPromise[SchemaAbout] = js.native
   def get(params: ParamsResourceAboutGet, callback: BodyResponseCallback[SchemaAbout]): Unit = js.native
   def get(

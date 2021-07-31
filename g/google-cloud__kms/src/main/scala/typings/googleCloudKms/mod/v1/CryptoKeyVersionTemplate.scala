@@ -2,15 +2,13 @@ package typings.googleCloudKms.mod.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CryptoKeyVersionTemplate extends StObject {
   
-  var algorithm: CryptoKeyVersionAlgorithm = js.native
+  var algorithm: CryptoKeyVersionAlgorithm
   
-  var protectionLevel: ProtectionLevel = js.native
+  var protectionLevel: ProtectionLevel
 }
 object CryptoKeyVersionTemplate {
   

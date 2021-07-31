@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2FinalResponse extends StObject {
   
   /**
     * Rich response when user is not required to provide an input.
     */
-  var richResponse: js.UndefOr[GoogleActionsV2RichResponse] = js.native
+  var richResponse: js.UndefOr[GoogleActionsV2RichResponse] = js.undefined
   
   /**
     * Spoken response when user is not required to provide an input.
     */
-  var speechResponse: js.UndefOr[GoogleActionsV2SpeechResponse] = js.native
+  var speechResponse: js.UndefOr[GoogleActionsV2SpeechResponse] = js.undefined
 }
 object GoogleActionsV2FinalResponse {
   

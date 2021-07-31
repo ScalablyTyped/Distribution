@@ -9,7 +9,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noticeBarIndexNativeMod {
@@ -40,14 +39,15 @@ object noticeBarIndexNativeMod {
     def onClick(): Unit = js.native
   }
   
-  @js.native
-  trait NoticeNativeProps extends NoticeBarPropsType {
+  trait NoticeNativeProps
+    extends StObject
+       with NoticeBarPropsType {
     
-    var marqueeProps: js.UndefOr[MarqueeProps] = js.native
+    var marqueeProps: js.UndefOr[MarqueeProps] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[INoticeBarStyle] = js.native
+    var styles: js.UndefOr[INoticeBarStyle] = js.undefined
   }
   object NoticeNativeProps {
     

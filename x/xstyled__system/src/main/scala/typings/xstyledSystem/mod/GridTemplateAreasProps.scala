@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridTemplateAreasProps extends StObject {
   
   val gridTemplateAreas: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object GridTemplateAreasProps {
   
@@ -28,7 +26,7 @@ object GridTemplateAreasProps {
     @scala.inline
     def setGridTemplateAreas(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any
         ]
     ): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object GridTemplateAreasProps {
     def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
     
     @scala.inline
-    def setGridTemplateAreasVarargs(value: js.Any*): Self = StObject.set(x, "gridTemplateAreas", js.Array(value :_*))
+    def setGridTemplateAreasVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any)*
+    ): Self = StObject.set(x, "gridTemplateAreas", js.Array(value :_*))
   }
 }

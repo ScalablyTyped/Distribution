@@ -3,19 +3,17 @@ package typings.reactNativeMaps.anon
 import typings.reactNativeMaps.reactNativeMapsStrings.`callout-inside-press`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var action: `callout-inside-press` = js.native
+  var action: `callout-inside-press`
 }
 object `1` {
   
   @scala.inline
-  def apply(action: `callout-inside-press`): `1` = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+  def apply(): `1` = {
+    val __obj = js.Dynamic.literal(action = "callout-inside-press")
     __obj.asInstanceOf[`1`]
   }
   

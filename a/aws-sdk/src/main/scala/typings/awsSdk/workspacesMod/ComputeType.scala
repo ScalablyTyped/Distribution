@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComputeType extends StObject {
   
   /**
     * The compute type.
     */
-  var Name: js.UndefOr[Compute] = js.native
+  var Name: js.UndefOr[Compute] = js.undefined
 }
 object ComputeType {
   

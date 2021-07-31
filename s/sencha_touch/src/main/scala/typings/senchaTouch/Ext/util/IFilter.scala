@@ -3,128 +3,128 @@ package typings.senchaTouch.Ext.util
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFilter extends IBase {
+trait IFilter
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Boolean) */
-  var anyMatch: js.UndefOr[Boolean] = js.native
+  var anyMatch: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var exactMatch: js.UndefOr[Boolean] = js.native
+  var exactMatch: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var filterFn: js.UndefOr[js.Any] = js.native
+  var filterFn: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Returns the value of anyMatch
     * @returns Boolean
     */
-  var getAnyMatch: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAnyMatch: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of caseSensitive
     * @returns Boolean
     */
-  var getCaseSensitive: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getCaseSensitive: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of exactMatch
     * @returns Boolean
     */
-  var getExactMatch: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getExactMatch: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of filterFn
     * @returns Function
     */
-  var getFilterFn: js.UndefOr[js.Function0[_]] = js.native
+  var getFilterFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of id
     * @returns String
     */
-  var getId: js.UndefOr[js.Function0[String]] = js.native
+  var getId: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of property
     * @returns String
     */
-  var getProperty: js.UndefOr[js.Function0[String]] = js.native
+  var getProperty: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of root
     * @returns String
     */
-  var getRoot: js.UndefOr[js.Function0[String]] = js.native
+  var getRoot: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of scope
     * @returns Object
     */
-  var getScope: js.UndefOr[js.Function0[_]] = js.native
+  var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of value
     * @returns RegExp/Mixed
     */
-  var getValue: js.UndefOr[js.Function0[_]] = js.native
+  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (String) */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.native
+  var scope: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Sets the value of anyMatch
     * @param anyMatch Boolean The new value.
     */
-  var setAnyMatch: js.UndefOr[js.Function1[/* anyMatch */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAnyMatch: js.UndefOr[js.Function1[/* anyMatch */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of caseSensitive
     * @param caseSensitive Boolean The new value.
     */
-  var setCaseSensitive: js.UndefOr[js.Function1[/* caseSensitive */ js.UndefOr[Boolean], Unit]] = js.native
+  var setCaseSensitive: js.UndefOr[js.Function1[/* caseSensitive */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of exactMatch
     * @param exactMatch Boolean The new value.
     */
-  var setExactMatch: js.UndefOr[js.Function1[/* exactMatch */ js.UndefOr[Boolean], Unit]] = js.native
+  var setExactMatch: js.UndefOr[js.Function1[/* exactMatch */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of filterFn
     * @param filterFn Function The new value.
     */
-  var setFilterFn: js.UndefOr[js.Function1[/* filterFn */ js.UndefOr[js.Any], Unit]] = js.native
+  var setFilterFn: js.UndefOr[js.Function1[/* filterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of id
     * @param id String The new value.
     */
-  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.native
+  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of property
     * @param property String The new value.
     */
-  var setProperty: js.UndefOr[js.Function1[/* property */ js.UndefOr[String], Unit]] = js.native
+  var setProperty: js.UndefOr[js.Function1[/* property */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of root
     * @param root String The new value.
     */
-  var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[String], Unit]] = js.native
+  var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of scope
     * @param scope Object The new value.
     */
-  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.native
+  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of value
     * @param value RegExp/Mixed The new value.
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (RegExp/Mixed) */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object IFilter {
   
@@ -180,7 +180,7 @@ object IFilter {
     def setGetExactMatchUndefined: Self = StObject.set(x, "getExactMatch", js.undefined)
     
     @scala.inline
-    def setGetFilterFn(value: () => _): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
+    def setGetFilterFn(value: () => js.Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetFilterFnUndefined: Self = StObject.set(x, "getFilterFn", js.undefined)
@@ -204,13 +204,13 @@ object IFilter {
     def setGetRootUndefined: Self = StObject.set(x, "getRoot", js.undefined)
     
     @scala.inline
-    def setGetScope(value: () => _): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
     
     @scala.inline
-    def setGetValue(value: () => _): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)

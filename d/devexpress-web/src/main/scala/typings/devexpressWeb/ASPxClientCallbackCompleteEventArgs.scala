@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events concerning the final processing of a callback.
   */
-@js.native
-trait ASPxClientCallbackCompleteEventArgs extends ASPxClientEventArgs {
+trait ASPxClientCallbackCompleteEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets a string that contains specific information (if any) passed from the client side for server-side processing.
     */
-  var parameter: String = js.native
+  var parameter: String
   
   /**
     * Gets a string that contains specific information (if any) that has been passed from the server to the client side for further processing.
     */
-  var result: String = js.native
+  var result: String
 }
 object ASPxClientCallbackCompleteEventArgs {
   

@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -65,9 +64,8 @@ object CreateObjectClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.create")
-  @js.native
-  def create(model: IModel): CreateObjectClientAction = js.native
+  @scala.inline
+  def create(model: IModel): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -78,9 +76,8 @@ object CreateObjectClientAction {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInActionButtonUnderAction")
-  @js.native
-  def createInActionButtonUnderAction(container: ActionButton): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInActionButtonUnderAction(container: ActionButton): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -91,9 +88,8 @@ object CreateObjectClientAction {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInActionItemUnderAction")
-  @js.native
-  def createInActionItemUnderAction(container: ActionItem): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInActionItemUnderAction(container: ActionItem): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -104,9 +100,8 @@ object CreateObjectClientAction {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInAssociationWidgetUnderOnChangeAction")
-  @js.native
-  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -117,9 +112,8 @@ object CreateObjectClientAction {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInAttributeWidgetUnderOnChangeAction")
-  @js.native
-  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -130,9 +124,8 @@ object CreateObjectClientAction {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInAttributeWidgetUnderOnEnterAction")
-  @js.native
-  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -143,9 +136,8 @@ object CreateObjectClientAction {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInAttributeWidgetUnderOnLeaveAction")
-  @js.native
-  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -156,9 +148,8 @@ object CreateObjectClientAction {
     *  8.0.0 to 8.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInBottomBarItemUnderAction")
-  @js.native
-  def createInBottomBarItemUnderAction(container: BottomBarItem): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInBottomBarItemUnderAction(container: BottomBarItem): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -169,9 +160,8 @@ object CreateObjectClientAction {
     *  8.3.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInDivContainerUnderOnClickAction")
-  @js.native
-  def createInDivContainerUnderOnClickAction(container: DivContainer): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInDivContainerUnderOnClickAction(container: DivContainer): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -182,9 +172,8 @@ object CreateObjectClientAction {
     *  7.18.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInDynamicImageViewerUnderClickAction")
-  @js.native
-  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -195,9 +184,8 @@ object CreateObjectClientAction {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInGridActionButtonUnderAction")
-  @js.native
-  def createInGridActionButtonUnderAction(container: GridActionButton): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInGridActionButtonUnderAction(container: GridActionButton): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -208,9 +196,8 @@ object CreateObjectClientAction {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInListViewUnderClickAction")
-  @js.native
-  def createInListViewUnderClickAction(container: ListView): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInListViewUnderClickAction(container: ListView): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -221,9 +208,8 @@ object CreateObjectClientAction {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInListViewUnderPullDownAction")
-  @js.native
-  def createInListViewUnderPullDownAction(container: ListView): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInListViewUnderPullDownAction(container: ListView): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -234,9 +220,8 @@ object CreateObjectClientAction {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInMenuItemUnderAction")
-  @js.native
-  def createInMenuItemUnderAction(container: MenuItem): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInMenuItemUnderAction(container: MenuItem): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -247,9 +232,8 @@ object CreateObjectClientAction {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInReferenceSetSelectorUnderOnChangeAction")
-  @js.native
-  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -260,9 +244,8 @@ object CreateObjectClientAction {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInStaticImageViewerUnderClickAction")
-  @js.native
-  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -273,9 +256,8 @@ object CreateObjectClientAction {
     *  8.7.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInTextBoxUnderOnEnterKeyPressAction")
-  @js.native
-  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
@@ -286,9 +268,8 @@ object CreateObjectClientAction {
     *  7.19.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.createInWidgetValueUnderAction")
-  @js.native
-  def createInWidgetValueUnderAction(container: WidgetValue): CreateObjectClientAction = js.native
+  @scala.inline
+  def createInWidgetValueUnderAction(container: WidgetValue): CreateObjectClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CreateObjectClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CreateObjectClientAction.structureTypeName")

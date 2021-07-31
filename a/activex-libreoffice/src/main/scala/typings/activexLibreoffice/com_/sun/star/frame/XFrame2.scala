@@ -12,16 +12,15 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
 trait XFrame2
-  extends XFramesSupplier
+  extends StObject
      with XDispatchProvider
      with XDispatchInformationProvider
      with XDispatchProviderInterception
+     with XFramesSupplier
      with XStatusIndicatorFactory {
   
   /**
@@ -37,13 +36,13 @@ trait XFrame2
     * Note: ;  It's not recommended to cache an already gotten supplier. Because there exist no possibility to check for enabled/disabled recording then.
     * @since OOo 1.1.2
     */
-  var DispatchRecorderSupplier: XDispatchRecorderSupplier = js.native
+  var DispatchRecorderSupplier: XDispatchRecorderSupplier
   
   /**
     * Provides access to the {@link LayoutManager} of the frame. This is actually of type {@link XLayoutManager} , but this API is still experimental
     * (unpublished).
     */
-  var LayoutManager: XInterface = js.native
+  var LayoutManager: XInterface
   
   /**
     * if possible it sets/gets the UI title on/from the frame container window
@@ -51,10 +50,10 @@ trait XFrame2
     * It depends from the type of the frame container window. If it is a system task window all will be OK. Otherwise the title can't be set.
     * Setting/getting of the pure value of this property must be possible in every case. Only showing on the UI can be fail.
     */
-  var Title: String = js.native
+  var Title: String
   
   /** contains user defined attributes. */
-  var UserDefinedAttributes: XNameContainer = js.native
+  var UserDefinedAttributes: XNameContainer
 }
 object XFrame2 {
   

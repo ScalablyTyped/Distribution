@@ -2,23 +2,21 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarginProps[TLength] extends StObject {
   
   val m: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   val margin: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object MarginProps {
   
@@ -29,12 +27,12 @@ object MarginProps {
   }
   
   @scala.inline
-  implicit class MarginPropsMutableBuilder[Self <: MarginProps[_], TLength] (val x: Self with MarginProps[TLength]) extends AnyVal {
+  implicit class MarginPropsMutableBuilder[Self <: MarginProps[?], TLength] (val x: Self & MarginProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setM(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
@@ -42,12 +40,14 @@ object MarginProps {
     def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
     @scala.inline
-    def setMVarargs(value: js.Any*): Self = StObject.set(x, "m", js.Array(value :_*))
+    def setMVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "m", js.Array(value :_*))
     
     @scala.inline
     def setMargin(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
@@ -55,6 +55,8 @@ object MarginProps {
     def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def setMarginVarargs(value: js.Any*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    def setMarginVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "margin", js.Array(value :_*))
   }
 }

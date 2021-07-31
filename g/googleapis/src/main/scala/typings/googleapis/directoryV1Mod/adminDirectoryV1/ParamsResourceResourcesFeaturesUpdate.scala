@@ -6,33 +6,33 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceResourcesFeaturesUpdate extends StandardParameters {
+trait ParamsResourceResourcesFeaturesUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The unique ID for the customer's G Suite account. As an account
     * administrator, you can also use the my_customer alias to represent your
     * account's customer ID.
     */
-  var customer: js.UndefOr[String] = js.native
+  var customer: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID of the feature to update.
     */
-  var featureKey: js.UndefOr[String] = js.native
+  var featureKey: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaFeature] = js.native
+  var requestBody: js.UndefOr[SchemaFeature] = js.undefined
 }
 object ParamsResourceResourcesFeaturesUpdate {
   

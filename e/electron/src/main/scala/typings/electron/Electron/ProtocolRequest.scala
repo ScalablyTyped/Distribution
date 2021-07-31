@@ -3,22 +3,20 @@ package typings.electron.Electron
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtocolRequest extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/protocol-request
-  var headers: Record[String, String] = js.native
+  var headers: Record[String, String]
   
-  var method: String = js.native
+  var method: String
   
-  var referrer: String = js.native
+  var referrer: String
   
-  var uploadData: js.UndefOr[js.Array[UploadData]] = js.native
+  var uploadData: js.UndefOr[js.Array[UploadData]] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object ProtocolRequest {
   

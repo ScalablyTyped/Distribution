@@ -5,17 +5,15 @@ import typings.cesium.mod.DataSourceDisplay.VisualizersCallback
 import typings.cesium.mod.Visualizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceCollection extends StObject {
   
-  var dataSourceCollection: typings.cesium.mod.DataSourceCollection = js.native
+  var dataSourceCollection: typings.cesium.mod.DataSourceCollection
   
-  var scene: typings.cesium.mod.Scene = js.native
+  var scene: typings.cesium.mod.Scene
   
-  var visualizersCallback: js.UndefOr[VisualizersCallback] = js.native
+  var visualizersCallback: js.UndefOr[VisualizersCallback] = js.undefined
 }
 object DataSourceCollection {
   

@@ -2,13 +2,13 @@ package typings.typescriptServices.global.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.Services.KeywordCompletions")
 @js.native
 class KeywordCompletions ()
-  extends typings.typescriptServices.TypeScript.Services.KeywordCompletions
+  extends StObject
+     with typings.typescriptServices.TypeScript.Services.KeywordCompletions
 object KeywordCompletions {
   
   @JSGlobal("TypeScript.Services.KeywordCompletions")
@@ -16,9 +16,8 @@ object KeywordCompletions {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("TypeScript.Services.KeywordCompletions.getKeywordCompltions")
-  @js.native
-  def getKeywordCompltions(): js.Array[typings.typescriptServices.TypeScript.Services.ResolvedCompletionEntry] = js.native
+  @scala.inline
+  def getKeywordCompltions(): js.Array[typings.typescriptServices.TypeScript.Services.ResolvedCompletionEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeywordCompltions")().asInstanceOf[js.Array[typings.typescriptServices.TypeScript.Services.ResolvedCompletionEntry]]
   
   /* static member */
   @JSGlobal("TypeScript.Services.KeywordCompletions.keywordCompletions")

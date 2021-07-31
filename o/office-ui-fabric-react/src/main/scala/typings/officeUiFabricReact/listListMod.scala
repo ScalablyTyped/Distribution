@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listListMod {
@@ -162,7 +161,7 @@ object listListMod {
     def componentDidMount_MList(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MList(previousProps: IListProps[_], previousState: IListState[T]): Unit = js.native
+    def componentDidUpdate_MList(previousProps: IListProps[js.Any], previousState: IListState[T]): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MList(): Unit = js.native
@@ -178,7 +177,7 @@ object listListMod {
     @JSName("getTotalListHeight")
     def getTotalListHeight_MList(): Double = js.native
     
-    val pageRefs: Record[String, _] = js.native
+    val pageRefs: Record[String, js.Any] = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MList(newProps: IListProps[T], newState: IListState[T]): Boolean = js.native
@@ -196,24 +195,22 @@ object listListMod {
     @scala.inline
     def defaultProps_=(x: OnRenderCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("office-ui-fabric-react/lib/components/List/List", "List.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps[T](nextProps: IListProps[T], previousState: IListState[T]): IListState[T] = js.native
+    @scala.inline
+    def getDerivedStateFromProps[T](nextProps: IListProps[T], previousState: IListState[T]): IListState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IListState[T]]
   }
   
-  @js.native
   trait IListState[T] extends StObject {
     
-    def getDerivedStateFromProps(nextProps: IListProps[T], previousState: IListState[T]): IListState[T] = js.native
+    def getDerivedStateFromProps(nextProps: IListProps[T], previousState: IListState[T]): IListState[T]
     
-    var isScrolling: js.UndefOr[Boolean] = js.native
+    var isScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** The last versionstamp for  */
-    var measureVersion: js.UndefOr[Double] = js.native
+    var measureVersion: js.UndefOr[Double] = js.undefined
     
-    var pages: js.UndefOr[js.Array[IPage[T]]] = js.native
+    var pages: js.UndefOr[js.Array[IPage[T]]] = js.undefined
     
-    var pagesVersion: js.UndefOr[js.Object] = js.native
+    var pagesVersion: js.UndefOr[js.Object] = js.undefined
   }
   object IListState {
     
@@ -224,7 +221,7 @@ object listListMod {
     }
     
     @scala.inline
-    implicit class IListStateMutableBuilder[Self <: IListState[_], T] (val x: Self with IListState[T]) extends AnyVal {
+    implicit class IListStateMutableBuilder[Self <: IListState[?], T] (val x: Self & IListState[T]) extends AnyVal {
       
       @scala.inline
       def setGetDerivedStateFromProps(value: (IListProps[T], IListState[T]) => IListState[T]): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))

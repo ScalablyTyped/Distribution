@@ -7,21 +7,19 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeGridProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends StObject {
   
-  var accessors: js.UndefOr[js.Object] = js.native
+  var accessors: js.UndefOr[js.Object] = js.undefined
   
-  var components: js.UndefOr[js.Object] = js.native
+  var components: js.UndefOr[js.Object] = js.undefined
   
-  var dayLayoutAlgorithm: js.UndefOr[js.Any] = js.native
+  var dayLayoutAlgorithm: js.UndefOr[js.Any] = js.undefined
   
-  var eventOffset: Double = js.native
+  var eventOffset: Double
   
-  var events: js.UndefOr[js.Array[TEvent]] = js.native
+  var events: js.UndefOr[js.Array[TEvent]] = js.undefined
   
   var getDrilldownView: js.UndefOr[
     (js.Function3[
@@ -30,59 +28,59 @@ trait TimeGridProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
       /* configuredViewNames */ js.Array[View], 
       Unit
     ]) | Null
-  ] = js.native
+  ] = js.undefined
   
-  var getNow: js.UndefOr[js.Function0[Date]] = js.native
+  var getNow: js.UndefOr[js.Function0[Date]] = js.undefined
   
-  var getters: js.UndefOr[js.Object] = js.native
+  var getters: js.UndefOr[js.Object] = js.undefined
   
-  var localizer: js.UndefOr[js.Object] = js.native
+  var localizer: js.UndefOr[js.Object] = js.undefined
   
-  var longPressThreshold: js.UndefOr[Double] = js.native
+  var longPressThreshold: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[stringOrDate] = js.native
+  var max: js.UndefOr[stringOrDate] = js.undefined
   
-  var min: js.UndefOr[stringOrDate] = js.native
+  var min: js.UndefOr[stringOrDate] = js.undefined
   
   var onDoubleClickEvent: js.UndefOr[
     js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onDrillDown: js.UndefOr[js.Function2[/* date */ Date, /* view */ View, Unit]] = js.native
+  var onDrillDown: js.UndefOr[js.Function2[/* date */ Date, /* view */ View, Unit]] = js.undefined
   
-  var onKeyPressEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onKeyPressEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var onNavigate: js.UndefOr[js.Function1[/* action */ NavigateAction, Unit]] = js.native
+  var onNavigate: js.UndefOr[js.Function1[/* action */ NavigateAction, Unit]] = js.undefined
   
-  var onSelectEnd: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onSelectEnd: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
   var onSelectEvent: js.UndefOr[
     js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onSelectSlot: js.UndefOr[js.Function1[/* slotInfo */ Action, Unit]] = js.native
+  var onSelectSlot: js.UndefOr[js.Function1[/* slotInfo */ Action, Unit]] = js.undefined
   
-  var onSelectStart: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onSelectStart: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var range: js.UndefOr[js.Array[_]] = js.native
+  var range: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var resources: js.UndefOr[js.Array[TResource]] = js.native
+  var resources: js.UndefOr[js.Array[TResource]] = js.undefined
   
-  var rtl: js.UndefOr[Boolean] = js.native
+  var rtl: js.UndefOr[Boolean] = js.undefined
   
-  var scrollToTime: js.UndefOr[Date] = js.native
+  var scrollToTime: js.UndefOr[Date] = js.undefined
   
-  var selectable: js.UndefOr[Boolean | ignoreEvents] = js.native
+  var selectable: js.UndefOr[Boolean | ignoreEvents] = js.undefined
   
-  var selected: js.UndefOr[js.Object] = js.native
+  var selected: js.UndefOr[js.Object] = js.undefined
   
-  var showMultiDayTimes: js.UndefOr[Boolean] = js.native
+  var showMultiDayTimes: js.UndefOr[Boolean] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var timeslots: js.UndefOr[Double] = js.native
+  var timeslots: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TimeGridProps {
   
@@ -93,7 +91,7 @@ object TimeGridProps {
   }
   
   @scala.inline
-  implicit class TimeGridPropsMutableBuilder[Self <: TimeGridProps[_, _], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self with (TimeGridProps[TEvent, TResource])) extends AnyVal {
+  implicit class TimeGridPropsMutableBuilder[Self <: TimeGridProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (TimeGridProps[TEvent, TResource])) extends AnyVal {
     
     @scala.inline
     def setAccessors(value: js.Object): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])
@@ -185,7 +183,7 @@ object TimeGridProps {
     def setOnDrillDownUndefined: Self = StObject.set(x, "onDrillDown", js.undefined)
     
     @scala.inline
-    def setOnKeyPressEvent(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onKeyPressEvent", js.Any.fromFunction1(value))
+    def setOnKeyPressEvent(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onKeyPressEvent", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnKeyPressEventUndefined: Self = StObject.set(x, "onKeyPressEvent", js.undefined)
@@ -197,7 +195,7 @@ object TimeGridProps {
     def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
     
     @scala.inline
-    def setOnSelectEnd(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onSelectEnd", js.Any.fromFunction1(value))
+    def setOnSelectEnd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onSelectEnd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSelectEndUndefined: Self = StObject.set(x, "onSelectEnd", js.undefined)
@@ -215,13 +213,13 @@ object TimeGridProps {
     def setOnSelectSlotUndefined: Self = StObject.set(x, "onSelectSlot", js.undefined)
     
     @scala.inline
-    def setOnSelectStart(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onSelectStart", js.Any.fromFunction1(value))
+    def setOnSelectStart(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onSelectStart", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSelectStartUndefined: Self = StObject.set(x, "onSelectStart", js.undefined)
     
     @scala.inline
-    def setRange(value: js.Array[_]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    def setRange(value: js.Array[js.Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)

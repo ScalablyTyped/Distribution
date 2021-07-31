@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrialComponentArtifact extends StObject {
   
   /**
     * The media type of the artifact, which indicates the type of data in the artifact file. The media type consists of a type and a subtype concatenated with a slash (/) character, for example, text/csv, image/jpeg, and s3/uri. The type specifies the category of the media. The subtype specifies the kind of data.
     */
-  var MediaType: js.UndefOr[typings.awsSdk.sagemakerMod.MediaType] = js.native
+  var MediaType: js.UndefOr[typings.awsSdk.sagemakerMod.MediaType] = js.undefined
   
   /**
     * The location of the artifact.
     */
-  var Value: TrialComponentArtifactValue = js.native
+  var Value: TrialComponentArtifactValue
 }
 object TrialComponentArtifact {
   

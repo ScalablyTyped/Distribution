@@ -2,20 +2,20 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.bpmnModdle.mod.TypeDerived because Already inherited
 - typings.bpmnModdle.mod.BaseElement because Already inherited
-- typings.bpmnModdle.mod.ItemAwareElement because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined itemSubjectRef, dataState */ @js.native
-trait DataStoreReference extends FlowElement {
+- typings.bpmnModdle.mod.ItemAwareElement because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined itemSubjectRef, dataState */ trait DataStoreReference
+  extends StObject
+     with FlowElement {
   
-  var dataState: DataState = js.native
+  var dataState: DataState
   
-  var dataStoreRef: DataStore = js.native
+  var dataStoreRef: DataStore
   
-  var itemSubjectRef: ItemDefinition = js.native
+  var itemSubjectRef: ItemDefinition
 }
 object DataStoreReference {
   

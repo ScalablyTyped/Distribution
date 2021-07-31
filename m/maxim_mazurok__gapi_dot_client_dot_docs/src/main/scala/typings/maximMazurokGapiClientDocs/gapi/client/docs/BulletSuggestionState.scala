@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulletSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to the list_id. */
-  var listIdSuggested: js.UndefOr[Boolean] = js.native
+  var listIdSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to the nesting_level. */
-  var nestingLevelSuggested: js.UndefOr[Boolean] = js.native
+  var nestingLevelSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** A mask that indicates which of the fields in text style have been changed in this suggestion. */
-  var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.native
+  var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.undefined
 }
 object BulletSuggestionState {
   

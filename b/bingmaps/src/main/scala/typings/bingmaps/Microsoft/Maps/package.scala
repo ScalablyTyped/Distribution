@@ -1,11 +1,8 @@
-package typings.bingmaps.Microsoft
+package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Maps {
-  
-  type IDictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
-}
+
+type IDictionary[T] = org.scalablytyped.runtime.StringDictionary[T]

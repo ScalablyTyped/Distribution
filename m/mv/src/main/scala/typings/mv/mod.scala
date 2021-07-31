@@ -3,7 +3,6 @@ package typings.mv
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,12 +18,11 @@ object mod extends Shortcut {
     def apply(src: String, dest: String, options: Options, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var clobber: js.UndefOr[Boolean] = js.native
+    var clobber: js.UndefOr[Boolean] = js.undefined
     
-    var mkdirp: js.UndefOr[Boolean] = js.native
+    var mkdirp: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

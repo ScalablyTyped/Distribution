@@ -2,16 +2,14 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleTypeMoney extends StObject {
   
   /**
     * The 3-letter currency code defined in ISO 4217.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * Number of nano (10^-9) units of the amount.
@@ -21,13 +19,13 @@ trait GoogleTypeMoney extends StObject {
     * If `units` is negative, `nanos` must be negative or zero.
     * For example $-1.75 is represented as `units`=-1 and `nanos`=-750,000,000.
     */
-  var nanos: js.UndefOr[Double] = js.native
+  var nanos: js.UndefOr[Double] = js.undefined
   
   /**
     * The whole units of the amount.
     * For example if `currencyCode` is `\"USD\"`, then 1 unit is one US dollar.
     */
-  var units: js.UndefOr[String] = js.native
+  var units: js.UndefOr[String] = js.undefined
 }
 object GoogleTypeMoney {
   

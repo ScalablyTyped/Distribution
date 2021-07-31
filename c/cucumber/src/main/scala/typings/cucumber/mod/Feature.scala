@@ -2,25 +2,23 @@ package typings.cucumber.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Feature extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var keyword: String = js.native
+  var keyword: String
   
-  var line: Double = js.native
+  var line: Double
   
-  var name: String = js.native
+  var name: String
   
-  var scenarios: js.Array[Scenario] = js.native
+  var scenarios: js.Array[Scenario]
   
-  var tags: js.Array[Tag] = js.native
+  var tags: js.Array[Tag]
   
-  var uri: String = js.native
+  var uri: String
 }
 object Feature {
   

@@ -5,25 +5,25 @@ import typings.ethjsSigner.ethjsSignerBooleans.`true`
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ethjs-signer", "recover")
+  @JSImport("ethjs-signer", JSImport.Namespace)
   @js.native
-  def recover(rawTx: String, v: Double, r: Buffer, s: Buffer): Buffer = js.native
-  @JSImport("ethjs-signer", "recover")
-  @js.native
-  def recover(rawTx: Buffer, v: Double, r: Buffer, s: Buffer): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethjs-signer", "sign")
-  @js.native
-  def sign(transaction: js.Object, privateKey: String): String = js.native
-  @JSImport("ethjs-signer", "sign")
-  @js.native
-  def sign_false(transaction: js.Object, privateKey: String, toObject: `false`): String = js.native
-  @JSImport("ethjs-signer", "sign")
-  @js.native
-  def sign_true(transaction: js.Object, privateKey: String, toObject: `true`): js.Array[_] = js.native
+  @scala.inline
+  def recover(rawTx: String, v: Double, r: Buffer, s: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("recover")(rawTx.asInstanceOf[js.Any], v.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def recover(rawTx: Buffer, v: Double, r: Buffer, s: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("recover")(rawTx.asInstanceOf[js.Any], v.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def sign(transaction: js.Object, privateKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(transaction.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def sign_false(transaction: js.Object, privateKey: String, toObject: `false`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(transaction.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], toObject.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def sign_true(transaction: js.Object, privateKey: String, toObject: `true`): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(transaction.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], toObject.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

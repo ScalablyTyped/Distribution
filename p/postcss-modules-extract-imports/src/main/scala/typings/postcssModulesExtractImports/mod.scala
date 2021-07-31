@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.postcss.mod.Plugin_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,12 +14,11 @@ object mod extends Shortcut {
   
   type ExtractImports = Plugin_[Options]
   
-  @js.native
   trait Options extends StObject {
     
-    var createImportedName: js.UndefOr[js.Function2[/* importName */ String, /* importPath */ String, String]] = js.native
+    var createImportedName: js.UndefOr[js.Function2[/* importName */ String, /* importPath */ String, String]] = js.undefined
     
-    var failOnWrongOrder: js.UndefOr[Boolean] = js.native
+    var failOnWrongOrder: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -10,9 +10,9 @@ Compiles a function to compute the plural forms index for a given value
 | ------------------ | :-------------: |
 | Full name          | @tannin/plural-forms |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 663281 |
+| # downloads        | 983862 |
 | # stars            | 0 |
 
 ## Links

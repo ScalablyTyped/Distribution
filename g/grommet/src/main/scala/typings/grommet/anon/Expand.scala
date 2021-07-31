@@ -2,17 +2,15 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expand extends StObject {
   
-  var expand: js.Array[String] = js.native
+  var expand: js.Array[String]
   
-  def onExpand(expandedKeys: js.Array[String]): Unit = js.native
+  def onExpand(expandedKeys: js.Array[String]): Unit
   
-  var property: String = js.native
+  var property: String
 }
 object Expand {
   

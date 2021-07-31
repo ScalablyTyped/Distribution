@@ -3,7 +3,6 @@ package typings.raspiPwm
 import typings.raspiPeripheral.mod.Peripheral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,12 +29,11 @@ object mod {
     def write(dutyCycle: Double): Unit = js.native
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var frequency: js.UndefOr[Double] = js.native
+    var frequency: js.UndefOr[Double] = js.undefined
     
-    var pin: js.UndefOr[Double | String] = js.native
+    var pin: js.UndefOr[Double | String] = js.undefined
   }
   object Config {
     

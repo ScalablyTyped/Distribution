@@ -3,34 +3,34 @@ package typings.makerJs.MakerJs
 import typings.makerJs.MakerJs.measure.Atlas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options to pass to model.combine.
   */
-@js.native
-trait ICombineOptions extends IPointMatchOptions {
+trait ICombineOptions
+  extends StObject
+     with IPointMatchOptions {
   
   /**
     * Point which is known to be outside of the model.
     */
-  var farPoint: js.UndefOr[IPoint] = js.native
+  var farPoint: js.UndefOr[IPoint] = js.undefined
   
   /**
     * Cached measurements for model A.
     */
-  var measureA: js.UndefOr[Atlas] = js.native
+  var measureA: js.UndefOr[Atlas] = js.undefined
   
   /**
     * Cached measurements for model B.
     */
-  var measureB: js.UndefOr[Atlas] = js.native
+  var measureB: js.UndefOr[Atlas] = js.undefined
   
   /**
     * Flag to remove paths which are not part of a loop.
     */
-  var trimDeadEnds: js.UndefOr[Boolean] = js.native
+  var trimDeadEnds: js.UndefOr[Boolean] = js.undefined
 }
 object ICombineOptions {
   

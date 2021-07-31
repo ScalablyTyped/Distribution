@@ -2,41 +2,41 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a base for client editor objects that display a list of items.
   */
-@js.native
-trait ASPxClientListEdit extends ASPxClientEdit {
+trait ASPxClientListEdit
+  extends StObject
+     with ASPxClientEdit {
   
   /**
     * Returns the index of the selected item within the list editor.
     */
-  def GetSelectedIndex(): Double = js.native
+  def GetSelectedIndex(): Double
   
   /**
     * Returns the list editor's selected item.
     */
-  def GetSelectedItem(): ASPxClientListEditItem = js.native
+  def GetSelectedItem(): ASPxClientListEditItem
   
   /**
     * Occurs on the client side after a different item in the list has been selected (focus has been moved from one item to another).
     */
-  var SelectedIndexChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientListEdit]] = js.native
+  var SelectedIndexChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientListEdit]]
   
   /**
     * Sets the list editor's selected item specified by its index.
     * @param index An integer value specifying the zero-based index of the item to select.
     */
-  def SetSelectedIndex(index: Double): Unit = js.native
+  def SetSelectedIndex(index: Double): Unit
   
   /**
     * Sets the list editor's selected item.
     * @param item An ASPxClientListEditItem object that specifies the item to select.
     */
-  def SetSelectedItem(item: ASPxClientListEditItem): Unit = js.native
+  def SetSelectedItem(item: ASPxClientListEditItem): Unit
 }
 object ASPxClientListEdit {
   

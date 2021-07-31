@@ -2,7 +2,6 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This should only be set for [[PaymentMethodType|`CARD`]].
   */
-@js.native
 trait CardNetworkParameters extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait CardNetworkParameters extends StObject {
     * This is an optional field. We recommend setting this field to allow
     * SCA challenges to be done for the given card network.
     */
-  var acquirerBin: js.UndefOr[String] = js.native
+  var acquirerBin: js.UndefOr[String] = js.undefined
   
   /**
     * Acquirer-assigned Merchant identifier for VISA.
@@ -28,7 +26,7 @@ trait CardNetworkParameters extends StObject {
     * This is an optional field. We recommend setting this field to allow
     * SCA challenges to be done for the given card network.
     */
-  var acquirerMerchantId: js.UndefOr[String] = js.native
+  var acquirerMerchantId: js.UndefOr[String] = js.undefined
   
   /**
     * Type of card network parameters. Currently only
@@ -37,7 +35,7 @@ trait CardNetworkParameters extends StObject {
     *
     * This field is required.
     */
-  var cardNetwork: CardNetwork = js.native
+  var cardNetwork: CardNetwork
 }
 object CardNetworkParameters {
   

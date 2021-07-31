@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceleratorConfig extends StObject {
   
   /** The number of the accelerator cards exposed to an instance. */
-  var acceleratorCount: js.UndefOr[String] = js.native
+  var acceleratorCount: js.UndefOr[String] = js.undefined
   
   /** The accelerator type resource name. List of supported accelerators [here](https://cloud.google.com/compute/docs/gpus) */
-  var acceleratorType: js.UndefOr[String] = js.native
+  var acceleratorType: js.UndefOr[String] = js.undefined
 }
 object AcceleratorConfig {
   

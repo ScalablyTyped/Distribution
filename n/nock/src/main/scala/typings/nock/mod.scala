@@ -8,61 +8,48 @@ import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.fsMod.ReadStream
-import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
+import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.OutgoingHttpHeaders
-import typings.node.netMod.Socket
 import typings.node.querystringMod.ParsedUrlQuery
 import typings.node.urlMod.URLSearchParams
 import typings.node.urlMod.Url
 import typings.std.Array
 import typings.std.Date
-import typings.std.Error
 import typings.std.Map
 import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("nock", JSImport.Namespace)
-  @js.native
-  def apply(basePath: String): Scope = js.native
-  @JSImport("nock", JSImport.Namespace)
-  @js.native
-  def apply(basePath: String, options: Options): Scope = js.native
-  @JSImport("nock", JSImport.Namespace)
-  @js.native
-  def apply(basePath: Url): Scope = js.native
-  @JSImport("nock", JSImport.Namespace)
-  @js.native
-  def apply(basePath: Url, options: Options): Scope = js.native
-  @JSImport("nock", JSImport.Namespace)
-  @js.native
-  def apply(basePath: RegExp): Scope = js.native
-  @JSImport("nock", JSImport.Namespace)
-  @js.native
-  def apply(basePath: RegExp, options: Options): Scope = js.native
+  @scala.inline
+  def apply(basePath: String): Scope = ^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any]).asInstanceOf[Scope]
+  @scala.inline
+  def apply(basePath: String, options: Options): Scope = (^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  @scala.inline
+  def apply(basePath: Url): Scope = ^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any]).asInstanceOf[Scope]
+  @scala.inline
+  def apply(basePath: Url, options: Options): Scope = (^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  @scala.inline
+  def apply(basePath: RegExp): Scope = ^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any]).asInstanceOf[Scope]
+  @scala.inline
+  def apply(basePath: RegExp, options: Options): Scope = (^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
   @JSImport("nock", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("nock", "abortPendingRequests")
-  @js.native
-  def abortPendingRequests(): Unit = js.native
+  @scala.inline
+  def abortPendingRequests(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("abortPendingRequests")().asInstanceOf[Unit]
   
-  @JSImport("nock", "activate")
-  @js.native
-  def activate(): Unit = js.native
+  @scala.inline
+  def activate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("activate")().asInstanceOf[Unit]
   
-  @JSImport("nock", "activeMocks")
-  @js.native
-  def activeMocks(): js.Array[String] = js.native
+  @scala.inline
+  def activeMocks(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("activeMocks")().asInstanceOf[js.Array[String]]
   
   @JSImport("nock", "back")
   @js.native
@@ -70,17 +57,14 @@ object mod {
   @scala.inline
   def back_=(x: Back_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("back")(x.asInstanceOf[js.Any])
   
-  @JSImport("nock", "cleanAll")
-  @js.native
-  def cleanAll(): Unit = js.native
+  @scala.inline
+  def cleanAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanAll")().asInstanceOf[Unit]
   
-  @JSImport("nock", "define")
-  @js.native
-  def define(defs: js.Array[Definition]): js.Array[Scope] = js.native
+  @scala.inline
+  def define(defs: js.Array[Definition]): js.Array[Scope] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(defs.asInstanceOf[js.Any]).asInstanceOf[js.Array[Scope]]
   
-  @JSImport("nock", "disableNetConnect")
-  @js.native
-  def disableNetConnect(): Unit = js.native
+  @scala.inline
+  def disableNetConnect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableNetConnect")().asInstanceOf[Unit]
   
   @JSImport("nock", "emitter")
   @js.native
@@ -88,38 +72,29 @@ object mod {
   @scala.inline
   def emitter_=(x: EventEmitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emitter")(x.asInstanceOf[js.Any])
   
-  @JSImport("nock", "enableNetConnect")
-  @js.native
-  def enableNetConnect(): Unit = js.native
-  @JSImport("nock", "enableNetConnect")
-  @js.native
-  def enableNetConnect(matcher: String): Unit = js.native
-  @JSImport("nock", "enableNetConnect")
-  @js.native
-  def enableNetConnect(matcher: js.Function1[/* host */ String, Boolean]): Unit = js.native
-  @JSImport("nock", "enableNetConnect")
-  @js.native
-  def enableNetConnect(matcher: RegExp): Unit = js.native
+  @scala.inline
+  def enableNetConnect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetConnect")().asInstanceOf[Unit]
+  @scala.inline
+  def enableNetConnect(matcher: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetConnect")(matcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def enableNetConnect(matcher: js.Function1[/* host */ String, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetConnect")(matcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def enableNetConnect(matcher: RegExp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetConnect")(matcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("nock", "isActive")
-  @js.native
-  def isActive(): Boolean = js.native
+  @scala.inline
+  def isActive(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")().asInstanceOf[Boolean]
   
-  @JSImport("nock", "isDone")
-  @js.native
-  def isDone(): Boolean = js.native
+  @scala.inline
+  def isDone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDone")().asInstanceOf[Boolean]
   
-  @JSImport("nock", "load")
-  @js.native
-  def load(path: String): js.Array[Scope] = js.native
+  @scala.inline
+  def load(path: String): js.Array[Scope] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Scope]]
   
-  @JSImport("nock", "loadDefs")
-  @js.native
-  def loadDefs(path: String): js.Array[Definition] = js.native
+  @scala.inline
+  def loadDefs(path: String): js.Array[Definition] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadDefs")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Definition]]
   
-  @JSImport("nock", "pendingMocks")
-  @js.native
-  def pendingMocks(): js.Array[String] = js.native
+  @scala.inline
+  def pendingMocks(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("pendingMocks")().asInstanceOf[js.Array[String]]
   
   @JSImport("nock", "recorder")
   @js.native
@@ -127,25 +102,21 @@ object mod {
   @scala.inline
   def recorder_=(x: Recorder_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recorder")(x.asInstanceOf[js.Any])
   
-  @JSImport("nock", "removeInterceptor")
-  @js.native
-  def removeInterceptor(interceptor: Interceptor): Boolean = js.native
-  @JSImport("nock", "removeInterceptor")
-  @js.native
-  def removeInterceptor(interceptor: ReqOptions): Boolean = js.native
+  @scala.inline
+  def removeInterceptor(interceptor: Interceptor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("removeInterceptor")(interceptor.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def removeInterceptor(interceptor: ReqOptions): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("removeInterceptor")(interceptor.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("nock", "restore")
-  @js.native
-  def restore(): Unit = js.native
+  @scala.inline
+  def restore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restore")().asInstanceOf[Unit]
   
-  @js.native
   trait BackContext extends StObject {
     
-    def assertScopesFinished(): Unit = js.native
+    def assertScopesFinished(): Unit
     
-    var isLoaded: Boolean = js.native
+    var isLoaded: Boolean
     
-    var scopes: js.Array[Scope] = js.native
+    var scopes: js.Array[Scope]
   }
   object BackContext {
     
@@ -194,16 +165,15 @@ object mod {
     def wild: typings.nock.nockStrings.wild = "wild".asInstanceOf[typings.nock.nockStrings.wild]
   }
   
-  @js.native
   trait BackOptions extends StObject {
     
-    var after: js.UndefOr[js.Function1[/* scope */ Scope, Unit]] = js.native
+    var after: js.UndefOr[js.Function1[/* scope */ Scope, Unit]] = js.undefined
     
-    var afterRecord: js.UndefOr[js.Function1[/* defs */ js.Array[Definition], js.Array[Definition]]] = js.native
+    var afterRecord: js.UndefOr[js.Function1[/* defs */ js.Array[Definition], js.Array[Definition]]] = js.undefined
     
-    var before: js.UndefOr[js.Function1[/* def */ Definition, Unit]] = js.native
+    var before: js.UndefOr[js.Function1[/* def */ Definition, Unit]] = js.undefined
     
-    var recorder: js.UndefOr[RecorderOptions] = js.native
+    var recorder: js.UndefOr[RecorderOptions] = js.undefined
   }
   object BackOptions {
     
@@ -271,7 +241,7 @@ object mod {
     - scala.Double
     - java.lang.String
     - scala.Null
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - typings.std.RegExp
     - typings.nock.mod.DataMatcherArray
     - typings.nock.mod.DataMatcherMap
@@ -280,13 +250,14 @@ object mod {
   
   @js.native
   trait DataMatcherArray
-    extends Array[DataMatcher]
+    extends StObject
+       with Array[DataMatcher]
        with _DataMatcher
        with _RequestBodyMatcher
   
-  @js.native
   trait DataMatcherMap
-    extends /* key */ StringDictionary[DataMatcher]
+    extends StObject
+       with /* key */ StringDictionary[DataMatcher]
        with _DataMatcher
        with _RequestBodyMatcher
   object DataMatcherMap {
@@ -298,28 +269,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Definition extends StObject {
     
-    var body: js.UndefOr[RequestBodyMatcher] = js.native
+    var body: js.UndefOr[RequestBodyMatcher] = js.undefined
     
-    var headers: js.UndefOr[ReplyHeaders] = js.native
+    var headers: js.UndefOr[ReplyHeaders] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var port: js.UndefOr[Double | String] = js.native
+    var port: js.UndefOr[Double | String] = js.undefined
     
-    var reqheaders: js.UndefOr[Record[String, RequestHeaderMatcher]] = js.native
+    var reqheaders: js.UndefOr[Record[String, RequestHeaderMatcher]] = js.undefined
     
-    var response: js.UndefOr[ReplyBody] = js.native
+    var response: js.UndefOr[ReplyBody] = js.undefined
     
-    var scope: String = js.native
+    var scope: String
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object Definition {
     
@@ -447,11 +417,13 @@ object mod {
           ReplyFnResult | js.Promise[ReplyFnResult]
         ]
     ): Scope = js.native
-    def reply(responseCode: js.UndefOr[scala.Nothing], body: js.UndefOr[Body], headers: ReplyHeaders): Scope = js.native
-    def reply(responseCode: js.UndefOr[scala.Nothing], body: Body): Scope = js.native
+    def reply(responseCode: Unit, body: Unit, headers: ReplyHeaders): Scope = js.native
+    def reply(responseCode: Unit, body: Body): Scope = js.native
+    def reply(responseCode: Unit, body: Body, headers: ReplyHeaders): Scope = js.native
     def reply(responseCode: StatusCode): Scope = js.native
-    def reply(responseCode: StatusCode, body: js.UndefOr[Body], headers: ReplyHeaders): Scope = js.native
+    def reply(responseCode: StatusCode, body: Unit, headers: ReplyHeaders): Scope = js.native
     def reply(responseCode: StatusCode, body: Body): Scope = js.native
+    def reply(responseCode: StatusCode, body: Body, headers: ReplyHeaders): Scope = js.native
     def reply(
       statusCode: StatusCode,
       replyBodyFnWithCallback: js.ThisFunction3[
@@ -507,18 +479,17 @@ object mod {
     def twice(): this.type = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var allowUnmocked: js.UndefOr[Boolean] = js.native
+    var allowUnmocked: js.UndefOr[Boolean] = js.undefined
     
-    var badheaders: js.UndefOr[js.Array[String]] = js.native
+    var badheaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var encodedQueryParams: js.UndefOr[Boolean] = js.native
+    var encodedQueryParams: js.UndefOr[Boolean] = js.undefined
     
-    var filteringScope: js.UndefOr[js.Function1[/* scope */ String, Boolean]] = js.native
+    var filteringScope: js.UndefOr[js.Function1[/* scope */ String, Boolean]] = js.undefined
     
-    var reqheaders: js.UndefOr[Record[String, RequestHeaderMatcher]] = js.native
+    var reqheaders: js.UndefOr[Record[String, RequestHeaderMatcher]] = js.undefined
   }
   object Options {
     
@@ -566,18 +537,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RecorderOptions extends StObject {
     
-    var dont_print: js.UndefOr[Boolean] = js.native
+    var dont_print: js.UndefOr[Boolean] = js.undefined
     
-    var enable_reqheaders_recording: js.UndefOr[Boolean] = js.native
+    var enable_reqheaders_recording: js.UndefOr[Boolean] = js.undefined
     
-    var logging: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.native
+    var logging: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.undefined
     
-    var output_objects: js.UndefOr[Boolean] = js.native
+    var output_objects: js.UndefOr[Boolean] = js.undefined
     
-    var use_separator: js.UndefOr[Boolean] = js.native
+    var use_separator: js.UndefOr[Boolean] = js.undefined
   }
   object RecorderOptions {
     
@@ -638,7 +608,9 @@ object mod {
   type ReplyBody = Body | Buffer | ReadStream
   
   @js.native
-  trait ReplyFnContext extends Interceptor {
+  trait ReplyFnContext
+    extends StObject
+       with Interceptor {
     
     var req: ClientRequestheadersRecor = js.native
   }
@@ -656,57 +628,11 @@ object mod {
   
   type ReplyHeaders = (Record[String, ReplyHeaderValue]) | (Map[String, ReplyHeaderValue]) | js.Array[ReplyHeaderValue]
   
-  /* Inlined node.http.RequestOptions & {  proto :string | undefined} */
-  @js.native
-  trait ReqOptions extends StObject {
+  trait ReqOptions
+    extends StObject
+       with ClientRequestArgs {
     
-    var _defaultAgent: js.UndefOr[Agent] = js.native
-    
-    var agent: js.UndefOr[Agent | Boolean] = js.native
-    
-    var auth: js.UndefOr[String | Null] = js.native
-    
-    // https://github.com/nodejs/node/blob/master/lib/_http_client.js#L278
-    var createConnection: js.UndefOr[
-        js.Function2[
-          /* options */ this.type, 
-          /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
-          Socket
-        ]
-      ] = js.native
-    
-    var defaultPort: js.UndefOr[Double | String] = js.native
-    
-    var family: js.UndefOr[Double] = js.native
-    
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
-    
-    var host: js.UndefOr[String | Null] = js.native
-    
-    var hostname: js.UndefOr[String | Null] = js.native
-    
-    var localAddress: js.UndefOr[String] = js.native
-    
-    /**
-      * @default 8192
-      */
-    var maxHeaderSize: js.UndefOr[Double] = js.native
-    
-    var method: js.UndefOr[String] = js.native
-    
-    var path: js.UndefOr[String | Null] = js.native
-    
-    var port: js.UndefOr[Double | String | Null] = js.native
-    
-    var proto: js.UndefOr[String] = js.native
-    
-    var protocol: js.UndefOr[String | Null] = js.native
-    
-    var setHost: js.UndefOr[Boolean] = js.native
-    
-    var socketPath: js.UndefOr[String] = js.native
-    
-    var timeout: js.UndefOr[Double] = js.native
+    var proto: js.UndefOr[String] = js.undefined
   }
   object ReqOptions {
     
@@ -720,138 +646,10 @@ object mod {
     implicit class ReqOptionsMutableBuilder[Self <: ReqOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAgent(value: Agent | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
-      
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAuthNull: Self = StObject.set(x, "auth", null)
-      
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-      
-      @scala.inline
-      def setCreateConnection(
-        value: (ReqOptions, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
-      ): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
-      
-      @scala.inline
-      def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
-      
-      @scala.inline
-      def setDefaultPort(value: Double | String): Self = StObject.set(x, "defaultPort", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDefaultPortUndefined: Self = StObject.set(x, "defaultPort", js.undefined)
-      
-      @scala.inline
-      def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
-      
-      @scala.inline
-      def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-      
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHostNull: Self = StObject.set(x, "host", null)
-      
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
-      
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHostnameNull: Self = StObject.set(x, "hostname", null)
-      
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
-      
-      @scala.inline
-      def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
-      
-      @scala.inline
-      def setMaxHeaderSize(value: Double): Self = StObject.set(x, "maxHeaderSize", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMaxHeaderSizeUndefined: Self = StObject.set(x, "maxHeaderSize", js.undefined)
-      
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
-      
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPathNull: Self = StObject.set(x, "path", null)
-      
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      @scala.inline
-      def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPortNull: Self = StObject.set(x, "port", null)
-      
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
-      
-      @scala.inline
       def setProto(value: String): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProtoUndefined: Self = StObject.set(x, "proto", js.undefined)
-      
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setProtocolNull: Self = StObject.set(x, "protocol", null)
-      
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
-      
-      @scala.inline
-      def setSetHost(value: Boolean): Self = StObject.set(x, "setHost", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSetHostUndefined: Self = StObject.set(x, "setHost", js.undefined)
-      
-      @scala.inline
-      def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
-      
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
-      
-      @scala.inline
-      def set_defaultAgent(value: Agent): Self = StObject.set(x, "_defaultAgent", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def set_defaultAgentUndefined: Self = StObject.set(x, "_defaultAgent", js.undefined)
     }
   }
   
@@ -868,25 +666,30 @@ object mod {
   type RequestHeaderMatcher = String | RegExp | (js.Function1[/* fieldValue */ String, Boolean])
   
   @js.native
-  trait Scope extends EventEmitter {
+  trait Scope
+    extends StObject
+       with EventEmitter {
     
     def activeMocks(): js.Array[String] = js.native
     
     def defaultReplyHeaders(headers: ReplyHeaders): this.type = js.native
     
     def delete(uri: String): Interceptor = js.native
-    def delete(uri: String, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def delete(uri: String, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def delete(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def delete(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     def delete(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+    def delete(uri: js.Function1[/* uri */ String, Boolean], requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def delete(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def delete(
       uri: js.Function1[/* uri */ String, Boolean],
-      requestBody: js.UndefOr[RequestBodyMatcher],
+      requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def delete(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def delete(uri: RegExp): Interceptor = js.native
-    def delete(uri: RegExp, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def delete(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def delete(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def delete(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("delete")
     var delete_Original: InterceptFunction = js.native
     
@@ -899,101 +702,119 @@ object mod {
     def filteringRequestBody(regex: RegExp, replace: String): this.type = js.native
     
     def get(uri: String): Interceptor = js.native
-    def get(uri: String, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def get(uri: String, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def get(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def get(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     def get(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+    def get(uri: js.Function1[/* uri */ String, Boolean], requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def get(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def get(
       uri: js.Function1[/* uri */ String, Boolean],
-      requestBody: js.UndefOr[RequestBodyMatcher],
+      requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def get(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def get(uri: RegExp): Interceptor = js.native
-    def get(uri: RegExp, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def get(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def get(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def get(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("get")
     var get_Original: InterceptFunction = js.native
     
     def head(uri: String): Interceptor = js.native
-    def head(uri: String, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def head(uri: String, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def head(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def head(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     def head(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+    def head(uri: js.Function1[/* uri */ String, Boolean], requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def head(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def head(
       uri: js.Function1[/* uri */ String, Boolean],
-      requestBody: js.UndefOr[RequestBodyMatcher],
+      requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def head(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def head(uri: RegExp): Interceptor = js.native
-    def head(uri: RegExp, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def head(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def head(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def head(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("head")
     var head_Original: InterceptFunction = js.native
     
     def intercept(uri: String, method: String): Interceptor = js.native
-    def intercept(uri: String, method: String, requestBody: js.UndefOr[RequestBodyMatcher], options: Options): Interceptor = js.native
+    def intercept(uri: String, method: String, requestBody: Unit, options: Options): Interceptor = js.native
     def intercept(uri: String, method: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def intercept(uri: String, method: String, requestBody: RequestBodyMatcher, options: Options): Interceptor = js.native
     def intercept(uri: js.Function1[/* uri */ String, Boolean], method: String): Interceptor = js.native
+    def intercept(uri: js.Function1[/* uri */ String, Boolean], method: String, requestBody: Unit, options: Options): Interceptor = js.native
+    def intercept(uri: js.Function1[/* uri */ String, Boolean], method: String, requestBody: RequestBodyMatcher): Interceptor = js.native
     def intercept(
       uri: js.Function1[/* uri */ String, Boolean],
       method: String,
-      requestBody: js.UndefOr[RequestBodyMatcher],
+      requestBody: RequestBodyMatcher,
       options: Options
     ): Interceptor = js.native
-    def intercept(uri: js.Function1[/* uri */ String, Boolean], method: String, requestBody: RequestBodyMatcher): Interceptor = js.native
     def intercept(uri: RegExp, method: String): Interceptor = js.native
-    def intercept(uri: RegExp, method: String, requestBody: js.UndefOr[RequestBodyMatcher], options: Options): Interceptor = js.native
+    def intercept(uri: RegExp, method: String, requestBody: Unit, options: Options): Interceptor = js.native
     def intercept(uri: RegExp, method: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def intercept(uri: RegExp, method: String, requestBody: RequestBodyMatcher, options: Options): Interceptor = js.native
     
     def isDone(): Boolean = js.native
     
     def matchHeader(name: String, value: RequestHeaderMatcher): this.type = js.native
     
     def merge(uri: String): Interceptor = js.native
-    def merge(uri: String, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def merge(uri: String, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def merge(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def merge(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     def merge(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+    def merge(uri: js.Function1[/* uri */ String, Boolean], requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def merge(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def merge(
       uri: js.Function1[/* uri */ String, Boolean],
-      requestBody: js.UndefOr[RequestBodyMatcher],
+      requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def merge(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def merge(uri: RegExp): Interceptor = js.native
-    def merge(uri: RegExp, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def merge(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def merge(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def merge(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("merge")
     var merge_Original: InterceptFunction = js.native
     
     def options(uri: String): Interceptor = js.native
-    def options(uri: String, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def options(uri: String, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def options(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def options(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     def options(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+    def options(uri: js.Function1[/* uri */ String, Boolean], requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def options(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def options(
       uri: js.Function1[/* uri */ String, Boolean],
-      requestBody: js.UndefOr[RequestBodyMatcher],
+      requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def options(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def options(uri: RegExp): Interceptor = js.native
-    def options(uri: RegExp, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def options(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def options(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def options(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("options")
     var options_Original: InterceptFunction = js.native
     
     def patch(uri: String): Interceptor = js.native
-    def patch(uri: String, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def patch(uri: String, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def patch(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def patch(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     def patch(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+    def patch(uri: js.Function1[/* uri */ String, Boolean], requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def patch(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def patch(
       uri: js.Function1[/* uri */ String, Boolean],
-      requestBody: js.UndefOr[RequestBodyMatcher],
+      requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def patch(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def patch(uri: RegExp): Interceptor = js.native
-    def patch(uri: RegExp, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def patch(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def patch(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def patch(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("patch")
     var patch_Original: InterceptFunction = js.native
     
@@ -1003,34 +824,40 @@ object mod {
     def persist(flag: Boolean): this.type = js.native
     
     def post(uri: String): Interceptor = js.native
-    def post(uri: String, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def post(uri: String, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def post(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def post(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     def post(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+    def post(uri: js.Function1[/* uri */ String, Boolean], requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def post(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def post(
       uri: js.Function1[/* uri */ String, Boolean],
-      requestBody: js.UndefOr[RequestBodyMatcher],
+      requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def post(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def post(uri: RegExp): Interceptor = js.native
-    def post(uri: RegExp, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def post(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def post(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def post(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("post")
     var post_Original: InterceptFunction = js.native
     
     def put(uri: String): Interceptor = js.native
-    def put(uri: String, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def put(uri: String, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def put(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def put(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     def put(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+    def put(uri: js.Function1[/* uri */ String, Boolean], requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def put(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def put(
       uri: js.Function1[/* uri */ String, Boolean],
-      requestBody: js.UndefOr[RequestBodyMatcher],
+      requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def put(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
     def put(uri: RegExp): Interceptor = js.native
-    def put(uri: RegExp, requestBody: js.UndefOr[RequestBodyMatcher], interceptorOptions: Options): Interceptor = js.native
+    def put(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
     def put(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def put(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("put")
     var put_Original: InterceptFunction = js.native
     

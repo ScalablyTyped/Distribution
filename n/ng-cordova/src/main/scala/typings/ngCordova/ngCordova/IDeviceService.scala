@@ -2,10 +2,8 @@ package typings.ngCordova.ngCordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDeviceService extends StObject {
   
   /**
@@ -13,54 +11,54 @@ trait IDeviceService extends StObject {
     * @see https://github.com/apache/cordova-plugin-device#devicecordova
     * @returns {String} The Cordova version.
     */
-  def getCordova(): String = js.native
+  def getCordova(): String
   
   /**
     * Returns the whole device object.
     * @see https://github.com/apache/cordova-plugin-device
     * @returns {Object} The device object.
     */
-  def getDevice(): IDeviceInfo = js.native
+  def getDevice(): IDeviceInfo
   
   /**
     * Returns the device manufacturer.
     * @returns {String}
     */
-  def getManufacturer(): String = js.native
+  def getManufacturer(): String
   
   /**
     * Returns the name of the device's model or product.
     * @see https://github.com/apache/cordova-plugin-device#devicemodel
     * @returns {String} The name of the device's model or product.
     */
-  def getModel(): String = js.native
+  def getModel(): String
   
   /**
     * @deprecated device.name is deprecated as of version 2.3.0. Use device.model instead.
     * @returns {String}
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * Returns the device's operating system name.
     * @see https://github.com/apache/cordova-plugin-device#deviceplatform
     * @returns {String} The device's operating system name.
     */
-  def getPlatform(): String = js.native
+  def getPlatform(): String
   
   /**
     * Returns the device's Universally Unique Identifier.
     * @see https://github.com/apache/cordova-plugin-device#deviceuuid
     * @returns {String} The device's Universally Unique Identifier
     */
-  def getUUID(): String = js.native
+  def getUUID(): String
   
   /**
     * Returns the operating system version.
     * @see https://github.com/apache/cordova-plugin-device#deviceversion
     * @returns {String}
     */
-  def getVersion(): String = js.native
+  def getVersion(): String
 }
 object IDeviceService {
   

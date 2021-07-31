@@ -2,21 +2,19 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemovePermissionRequest extends StObject {
   
   /**
     * The identification of the permission to remove. This is the label added using the  AddPermission  action.
     */
-  var Label: String = js.native
+  var Label: String
   
   /**
     * The URL of the Amazon SQS queue from which permissions are removed. Queue URLs and names are case-sensitive.
     */
-  var QueueUrl: String = js.native
+  var QueueUrl: String
 }
 object RemovePermissionRequest {
   

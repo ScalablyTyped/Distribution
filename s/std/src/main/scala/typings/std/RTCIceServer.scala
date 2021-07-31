@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCIceServer extends StObject {
   
-  var credential: js.UndefOr[java.lang.String | RTCOAuthCredential] = js.native
+  var credential: js.UndefOr[java.lang.String | RTCOAuthCredential] = js.undefined
   
-  var credentialType: js.UndefOr[RTCIceCredentialType] = js.native
+  var credentialType: js.UndefOr[RTCIceCredentialType] = js.undefined
   
-  var urls: java.lang.String | js.Array[java.lang.String] = js.native
+  var urls: java.lang.String | js.Array[java.lang.String]
   
-  var username: js.UndefOr[java.lang.String] = js.native
+  var username: js.UndefOr[java.lang.String] = js.undefined
 }
 object RTCIceServer {
   

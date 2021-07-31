@@ -2,13 +2,11 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bundle[T] extends StObject {
   
-  var bundle: js.Array[T] = js.native
+  var bundle: js.Array[T]
 }
 object Bundle {
   
@@ -19,7 +17,7 @@ object Bundle {
   }
   
   @scala.inline
-  implicit class BundleMutableBuilder[Self <: Bundle[_], T] (val x: Self with Bundle[T]) extends AnyVal {
+  implicit class BundleMutableBuilder[Self <: Bundle[?], T] (val x: Self & Bundle[T]) extends AnyVal {
     
     @scala.inline
     def setBundle(value: js.Array[T]): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])

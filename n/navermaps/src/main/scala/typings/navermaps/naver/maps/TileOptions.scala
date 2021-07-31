@@ -3,23 +3,21 @@ package typings.navermaps.naver.maps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileOptions extends StObject {
   
-  var offset: js.UndefOr[Point] = js.native
+  var offset: js.UndefOr[Point] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var pane: js.UndefOr[HTMLElement] = js.native
+  var pane: js.UndefOr[HTMLElement] = js.undefined
   
-  var size: js.UndefOr[Size] = js.native
+  var size: js.UndefOr[Size] = js.undefined
   
-  var transition: js.UndefOr[Boolean] = js.native
+  var transition: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object TileOptions {
   

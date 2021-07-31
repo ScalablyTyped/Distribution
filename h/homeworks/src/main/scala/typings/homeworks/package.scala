@@ -1,11 +1,8 @@
-package typings
+package typings.homeworks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object homeworks {
-  
-  type NativeEvent = typings.std.Event
-}
+
+type NativeEvent = typings.std.Event

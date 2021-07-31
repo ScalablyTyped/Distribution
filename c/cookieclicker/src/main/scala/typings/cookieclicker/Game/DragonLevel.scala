@@ -2,38 +2,36 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragonLevel extends StObject {
   
   /**
     * Description of the effects of leveling up the dragon, in HTML text
     */
-  var action: String = js.native
+  var action: String
   
   /**
     * Does all the spending, spending cookies, sacrificing buildings, etc.
     */
-  def buy(): Unit = js.native
+  def buy(): Unit
   
   /**
     * Determines if the level can be bought
     */
-  def cost(): Boolean = js.native
+  def cost(): Boolean
   
   /**
     * Generates the cost description in HTML text
     */
-  def costStr(): String = js.native
+  def costStr(): String
   
-  var name: String = js.native
+  var name: String
   
   /**
     * The picture number in the dragon pictures
     */
-  var pic: Double = js.native
+  var pic: Double
 }
 object DragonLevel {
   

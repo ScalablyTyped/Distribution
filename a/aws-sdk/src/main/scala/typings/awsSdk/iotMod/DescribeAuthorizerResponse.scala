@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAuthorizerResponse extends StObject {
   
   /**
     * The authorizer description.
     */
-  var authorizerDescription: js.UndefOr[AuthorizerDescription] = js.native
+  var authorizerDescription: js.UndefOr[AuthorizerDescription] = js.undefined
 }
 object DescribeAuthorizerResponse {
   

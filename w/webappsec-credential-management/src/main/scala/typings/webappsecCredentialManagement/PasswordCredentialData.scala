@@ -2,19 +2,19 @@ package typings.webappsecCredentialManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://www.w3.org/TR/credential-management-1/#dictdef-passwordcredentialdata}
   */
-@js.native
-trait PasswordCredentialData extends SiteBoundCredentialData {
+trait PasswordCredentialData
+  extends StObject
+     with SiteBoundCredentialData {
   
   /**
     * The plain-text password.
     */
-  var password: String = js.native
+  var password: String
 }
 object PasswordCredentialData {
   

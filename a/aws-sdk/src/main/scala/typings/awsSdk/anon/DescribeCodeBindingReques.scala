@@ -4,35 +4,33 @@ import typings.awsSdk.schemasMod.string
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/schemas.DescribeCodeBindingRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait DescribeCodeBindingReques extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     * The language of the code binding.
     */
-  var Language: string = js.native
+  var Language: string
   
   /**
     * The name of the registry.
     */
-  var RegistryName: string = js.native
+  var RegistryName: string
   
   /**
     * The name of the schema.
     */
-  var SchemaName: string = js.native
+  var SchemaName: string
   
   /**
     * Specifying this limits the results to only this schema version.
     */
-  var SchemaVersion: js.UndefOr[string] = js.native
+  var SchemaVersion: js.UndefOr[string] = js.undefined
 }
 object DescribeCodeBindingReques {
   

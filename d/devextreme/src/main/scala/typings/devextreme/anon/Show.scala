@@ -2,15 +2,13 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Show extends StObject {
   
-  var hide: js.UndefOr[Double] = js.native
+  var hide: js.UndefOr[Double] = js.undefined
   
-  var show: js.UndefOr[Double] = js.native
+  var show: js.UndefOr[Double] = js.undefined
 }
 object Show {
   

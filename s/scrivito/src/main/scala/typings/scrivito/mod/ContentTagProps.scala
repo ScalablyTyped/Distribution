@@ -3,20 +3,19 @@ package typings.scrivito.mod
 import typings.react.mod.HTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentTagProps
-  extends HTMLAttributes[js.Any] {
+  extends StObject
+     with HTMLAttributes[js.Any] {
   
-  var attribute: String = js.native
+  var attribute: String
   
-  var content: Obj | Widget = js.native
+  var content: Obj | Widget
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
-  var widgetProps: js.UndefOr[js.Object] = js.native
+  var widgetProps: js.UndefOr[js.Object] = js.undefined
 }
 object ContentTagProps {
   

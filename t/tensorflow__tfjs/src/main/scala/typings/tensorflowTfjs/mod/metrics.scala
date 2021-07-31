@@ -3,113 +3,101 @@ package typings.tensorflowTfjs.mod
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metrics {
   
-  @JSImport("@tensorflow/tfjs", "metrics.MAPE")
+  @JSImport("@tensorflow/tfjs", "metrics")
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def MAPE_(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAPE")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.MSE")
-  @js.native
+  @scala.inline
   def MSE_(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("MSE")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.binaryAccuracy")
-  @js.native
+  @scala.inline
   def binaryAccuracy(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.binaryCrossentropy")
-  @js.native
+  @scala.inline
   def binaryCrossentropy(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryCrossentropy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.categoricalAccuracy")
-  @js.native
+  @scala.inline
   def categoricalAccuracy(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("categoricalAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.categoricalCrossentropy")
-  @js.native
+  @scala.inline
   def categoricalCrossentropy(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("categoricalCrossentropy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.cosineProximity")
-  @js.native
+  @scala.inline
   def cosineProximity(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineProximity")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.mape")
-  @js.native
+  @scala.inline
   def mape(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("mape")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.meanAbsoluteError")
-  @js.native
+  @scala.inline
   def meanAbsoluteError(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanAbsoluteError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.meanAbsolutePercentageError")
-  @js.native
+  @scala.inline
   def meanAbsolutePercentageError(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanAbsolutePercentageError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.meanSquaredError")
-  @js.native
+  @scala.inline
   def meanSquaredError(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanSquaredError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.mse")
-  @js.native
+  @scala.inline
   def mse(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("mse")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.precision")
-  @js.native
+  @scala.inline
   def precision(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("precision")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.recall")
-  @js.native
+  @scala.inline
   def recall(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("recall")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
   
-  @JSImport("@tensorflow/tfjs", "metrics.sparseCategoricalAccuracy")
-  @js.native
+  @scala.inline
   def sparseCategoricalAccuracy(
     yTrue: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     yPred: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseCategoricalAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
 }

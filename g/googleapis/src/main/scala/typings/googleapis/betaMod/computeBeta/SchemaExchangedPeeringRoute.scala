@@ -2,36 +2,34 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaExchangedPeeringRoute extends StObject {
   
   /**
     * The destination range of the route.
     */
-  var destRange: js.UndefOr[String] = js.native
+  var destRange: js.UndefOr[String] = js.undefined
   
   /**
     * If the peering route is imported if there is no confliction.
     */
-  var imported: js.UndefOr[Boolean] = js.native
+  var imported: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The region of peering route next hop, only applies to dynamic routes.
     */
-  var nextHopRegion: js.UndefOr[String] = js.native
+  var nextHopRegion: js.UndefOr[String] = js.undefined
   
   /**
     * The priority of the peering route.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of the peering route.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaExchangedPeeringRoute {
   

@@ -4,29 +4,27 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`0`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOLBYDIGITALCOMPMODELINE extends StObject {
   
   /**
     * line mode
     * @since 2.3
     */
-  var DOLBY_DIGITAL_COMP_MODE_LINE: `0` = js.native
+  var DOLBY_DIGITAL_COMP_MODE_LINE: `0`
   
   /**
     * rf mode
     * @since 2.3
     */
-  var DOLBY_DIGITAL_COMP_MODE_RF: `1` = js.native
+  var DOLBY_DIGITAL_COMP_MODE_RF: `1`
 }
 object DOLBYDIGITALCOMPMODELINE {
   
   @scala.inline
-  def apply(DOLBY_DIGITAL_COMP_MODE_LINE: `0`, DOLBY_DIGITAL_COMP_MODE_RF: `1`): DOLBYDIGITALCOMPMODELINE = {
-    val __obj = js.Dynamic.literal(DOLBY_DIGITAL_COMP_MODE_LINE = DOLBY_DIGITAL_COMP_MODE_LINE.asInstanceOf[js.Any], DOLBY_DIGITAL_COMP_MODE_RF = DOLBY_DIGITAL_COMP_MODE_RF.asInstanceOf[js.Any])
+  def apply(): DOLBYDIGITALCOMPMODELINE = {
+    val __obj = js.Dynamic.literal(DOLBY_DIGITAL_COMP_MODE_LINE = 0, DOLBY_DIGITAL_COMP_MODE_RF = 1)
     __obj.asInstanceOf[DOLBYDIGITALCOMPMODELINE]
   }
   

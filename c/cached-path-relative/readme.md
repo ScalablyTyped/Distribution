@@ -10,9 +10,9 @@ Memoize the results of the path.relative function
 | ------------------ | :-------------: |
 | Full name          | cached-path-relative |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 79 |
-| # downloads        | 30155806 |
+| # releases         | 0 |
+| # dependents       | 78 |
+| # downloads        | 34978495 |
 | # stars            | 0 |
 
 ## Links

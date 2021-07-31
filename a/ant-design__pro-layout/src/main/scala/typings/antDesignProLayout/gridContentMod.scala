@@ -7,7 +7,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridContentMod extends Shortcut {
@@ -21,18 +20,17 @@ object gridContentMod extends Shortcut {
   @js.native
   val default: FC[GridContentProps] = js.native
   
-  @js.native
   trait GridContentProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var contentWidth: js.UndefOr[ContentWidth] = js.native
+    var contentWidth: js.UndefOr[ContentWidth] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object GridContentProps {
     

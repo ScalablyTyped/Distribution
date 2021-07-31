@@ -3,27 +3,25 @@ package typings.vsoNodeApi.gitInterfacesMod
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitCommitDiffs extends StObject {
   
-  var aheadCount: Double = js.native
+  var aheadCount: Double
   
-  var allChangesIncluded: Boolean = js.native
+  var allChangesIncluded: Boolean
   
-  var baseCommit: String = js.native
+  var baseCommit: String
   
-  var behindCount: Double = js.native
+  var behindCount: Double
   
-  var changeCounts: NumberDictionary[Double] = js.native
+  var changeCounts: NumberDictionary[Double]
   
-  var changes: js.Array[GitChange] = js.native
+  var changes: js.Array[GitChange]
   
-  var commonCommit: String = js.native
+  var commonCommit: String
   
-  var targetCommit: String = js.native
+  var targetCommit: String
 }
 object GitCommitDiffs {
   

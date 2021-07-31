@@ -2,23 +2,21 @@ package typings.reactVirtualized.esGridMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverscanIndicesGetterParams extends StObject {
   
-  var cellCount: Double = js.native
+  var cellCount: Double
   
-  var direction: js.UndefOr[SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL] = js.native
+  var direction: js.UndefOr[SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL] = js.undefined
   
-  var overscanCellsCount: Double = js.native
+  var overscanCellsCount: Double
   
-  var scrollDirection: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL = js.native
+  var scrollDirection: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL
   
-  var startIndex: Double = js.native
+  var startIndex: Double
   
-  var stopIndex: Double = js.native
+  var stopIndex: Double
 }
 object OverscanIndicesGetterParams {
   

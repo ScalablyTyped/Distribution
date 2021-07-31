@@ -2,16 +2,14 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterInstanceResponse extends StObject {
   
   /**
     * A value that you can use to determine whether the request completed successfully. For more information, see GetOperation.
     */
-  var OperationId: js.UndefOr[typings.awsSdk.servicediscoveryMod.OperationId] = js.native
+  var OperationId: js.UndefOr[typings.awsSdk.servicediscoveryMod.OperationId] = js.undefined
 }
 object DeregisterInstanceResponse {
   

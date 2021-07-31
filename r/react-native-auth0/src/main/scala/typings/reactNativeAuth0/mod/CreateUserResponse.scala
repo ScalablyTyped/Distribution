@@ -2,17 +2,15 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserResponse extends StObject {
   
-  var Id: String = js.native
+  var Id: String
   
-  var email: String = js.native
+  var email: String
   
-  var emailVerified: Boolean = js.native
+  var emailVerified: Boolean
 }
 object CreateUserResponse {
   

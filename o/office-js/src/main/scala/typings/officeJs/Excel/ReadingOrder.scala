@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,19 +20,25 @@ object ReadingOrder extends StObject {
     *
     */
   @js.native
-  sealed trait context extends ReadingOrder
+  sealed trait context
+    extends StObject
+       with ReadingOrder
   
   /**
     * Left to right reading order
     *
     */
   @js.native
-  sealed trait leftToRight extends ReadingOrder
+  sealed trait leftToRight
+    extends StObject
+       with ReadingOrder
   
   /**
     * Right to left reading order
     *
     */
   @js.native
-  sealed trait rightToLeft extends ReadingOrder
+  sealed trait rightToLeft
+    extends StObject
+       with ReadingOrder
 }

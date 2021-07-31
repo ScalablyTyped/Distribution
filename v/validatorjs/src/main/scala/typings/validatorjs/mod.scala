@@ -7,7 +7,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.validatorjs.validatorjsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,20 +14,23 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("validatorjs", JSImport.Namespace)
   @js.native
-  class ^[A] protected () extends Validator[A] {
+  class ^[A] protected ()
+    extends StObject
+       with Validator[A] {
     def this(data: A, rules: Rules) = this()
     def this(data: A, rules: Rules, customMessages: ErrorMessages) = this()
   }
   @JSImport("validatorjs", JSImport.Namespace)
   @js.native
-  val ^ : ValidatorStatic = js.native
+  val ^ : js.Object & ValidatorStatic = js.native
   
   type AttributeFormatter = js.Function1[/* attribute */ js.Any, js.Any]
   
   type AttributeNames = StringDictionary[String]
   
-  @js.native
-  trait ErrorMessages extends /* key */ StringDictionary[String | ErrorMessages]
+  trait ErrorMessages
+    extends StObject
+       with /* key */ StringDictionary[String | ErrorMessages]
   object ErrorMessages {
     
     @scala.inline
@@ -38,20 +40,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Errors extends StObject {
     
-    def add(attribute: String, message: String): Unit = js.native
+    def add(attribute: String, message: String): Unit
     
-    def all(): ValidationErrors = js.native
+    def all(): ValidationErrors
     
-    var errors: ValidationErrors = js.native
+    var errors: ValidationErrors
     
-    def first(attribute: String): String | `false` = js.native
+    def first(attribute: String): String | `false`
     
-    def get(attribute: String): js.Array[String] = js.native
+    def get(attribute: String): js.Array[String]
     
-    def has(attribute: String): Boolean = js.native
+    def has(attribute: String): Boolean
   }
   object Errors {
     
@@ -106,9 +107,9 @@ object mod extends Shortcut {
     Boolean
   ]
   
-  @js.native
   trait Rules
-    extends /* attribute */ StringDictionary[String | (js.Array[String | TypeCheckingRule]) | Rules]
+    extends StObject
+       with /* attribute */ StringDictionary[String | (js.Array[String | TypeCheckingRule]) | Rules]
   object Rules {
     
     @scala.inline
@@ -132,9 +133,9 @@ object mod extends Shortcut {
     def check(): Boolean = js.native
     
     def checkAsync(): Unit = js.native
-    def checkAsync(passes: js.UndefOr[scala.Nothing], fails: js.Function): Unit = js.native
     def checkAsync(passes: js.Function): Unit = js.native
     def checkAsync(passes: js.Function, fails: js.Function): Unit = js.native
+    def checkAsync(passes: Unit, fails: js.Function): Unit = js.native
     
     var errorCount: Double = js.native
     
@@ -170,7 +171,8 @@ object mod extends Shortcut {
   
   @js.native
   trait ValidatorStatic
-    extends Instantiable2[/* data */ js.Object, /* rules */ Rules, Validator[js.Object]]
+    extends StObject
+       with Instantiable2[/* data */ js.Object, /* rules */ Rules, Validator[js.Object]]
        with Instantiable3[
           /* data */ js.Object, 
           /* rules */ Rules, 
@@ -197,8 +199,8 @@ object mod extends Shortcut {
     def useLang(lang: String): Unit = js.native
   }
   
-  type _To = ValidatorStatic
+  type _To = js.Object & ValidatorStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: ValidatorStatic = ^
+  override def _to: js.Object & ValidatorStatic = ^
 }

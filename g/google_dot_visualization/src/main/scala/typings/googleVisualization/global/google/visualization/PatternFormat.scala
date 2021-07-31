@@ -2,13 +2,13 @@ package typings.googleVisualization.global.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.visualization.PatternFormat")
 @js.native
 class PatternFormat protected ()
-  extends typings.googleVisualization.google.visualization.PatternFormat {
+  extends StObject
+     with typings.googleVisualization.google.visualization.PatternFormat {
   /**
     * Constructor.
     * Does not take an options object. Instead, it takes a string pattern parameter.

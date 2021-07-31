@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HmacKeyAlgorithm extends KeyAlgorithm {
+trait HmacKeyAlgorithm
+  extends StObject
+     with KeyAlgorithm {
   
-  var hash: KeyAlgorithm = js.native
+  var hash: KeyAlgorithm
   
-  var length: Double = js.native
+  var length: Double
 }
 object HmacKeyAlgorithm {
   

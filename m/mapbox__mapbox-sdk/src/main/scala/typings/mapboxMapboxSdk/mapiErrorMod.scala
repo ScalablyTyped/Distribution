@@ -3,39 +3,37 @@ package typings.mapboxMapboxSdk
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapiErrorMod {
   
-  @js.native
   trait MapiError extends StObject {
     
     /**
       * If the server sent a response body, this property exposes that response, parsed as JSON if possible.
       */
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Whatever message could be derived from the call site and HTTP response.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * The errored request.
       */
-    var request: MapiRequest = js.native
+    var request: MapiRequest
     
     /**
       * The numeric status code of the HTTP response
       */
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
     
     /**
       * The type of error. Usually this is 'HttpError'.
       * If the request was aborted, so the error was not sent from the server, the type will be 'RequestAbortedError'.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object MapiError {
     

@@ -5,13 +5,14 @@ import typings.videoJs.mod.videojs.DescriptionsButton
 import typings.videoJs.mod.videojs.TrackButtonOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("video.js/dist/alt/video.core", "default.DescriptionsButton")
 @js.native
-class DescriptionsButtonCls protected () extends DescriptionsButton {
+class DescriptionsButtonCls protected ()
+  extends StObject
+     with DescriptionsButton {
   /**
     * Creates an instance of this class.
     *
@@ -26,10 +27,6 @@ class DescriptionsButtonCls protected () extends DescriptionsButton {
     */
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: TrackButtonOptions) = this()
-  def this(
-    player: typings.videoJs.mod.videojs.Player,
-    options: js.UndefOr[scala.Nothing],
-    ready: ReadyCallback
-  ) = this()
+  def this(player: typings.videoJs.mod.videojs.Player, options: Unit, ready: ReadyCallback) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: TrackButtonOptions, ready: ReadyCallback) = this()
 }

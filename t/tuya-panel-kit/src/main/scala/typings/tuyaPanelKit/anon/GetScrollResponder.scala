@@ -4,13 +4,13 @@ import typings.react.mod.ReactNode
 import typings.tuyaPanelKit.useScrollToTopMod.ScrollableWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetScrollResponder extends ScrollableWrapper {
+trait GetScrollResponder
+  extends StObject
+     with ScrollableWrapper {
   
-  def getScrollResponder(): ReactNode = js.native
+  def getScrollResponder(): ReactNode
 }
 object GetScrollResponder {
   

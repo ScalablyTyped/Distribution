@@ -2,21 +2,19 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateResourceRequest extends StObject {
   
   /**
     * The resource ARN.
     */
-  var ResourceArn: ResourceArnString = js.native
+  var ResourceArn: ResourceArnString
   
   /**
     * The new role to use for the given resource registered in AWS Lake Formation.
     */
-  var RoleArn: IAMRoleArn = js.native
+  var RoleArn: IAMRoleArn
 }
 object UpdateResourceRequest {
   

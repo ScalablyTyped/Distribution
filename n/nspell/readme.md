@@ -10,9 +10,9 @@ Hunspell compatible spell checker
 | ------------------ | :-------------: |
 | Full name          | nspell |
 | Keywords           | spell, spellcheck, spellchecker, spell check, spell checker, check, spelling, myspell, hunspell |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 12 |
-| # downloads        | 405937 |
+| # downloads        | 478553 |
 | # stars            | 0 |
 
 ## Links

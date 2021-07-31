@@ -2,30 +2,28 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewFont extends StObject {
   
-  val Bold: Boolean = js.native
+  val Bold: Boolean
   
-  val Charset: Double = js.native
+  val Charset: Double
   
-  val Italic: Boolean = js.native
+  val Italic: Boolean
   
   @JSName("MSForms.NewFont_typekey")
-  var MSFormsDotNewFont_typekey: NewFont = js.native
+  var MSFormsDotNewFont_typekey: NewFont
   
-  val Name: String = js.native
+  val Name: String
   
-  val Size: Double = js.native
+  val Size: Double
   
-  val Strikethrough: Boolean = js.native
+  val Strikethrough: Boolean
   
-  val Underline: Boolean = js.native
+  val Underline: Boolean
   
-  val Weight: Double = js.native
+  val Weight: Double
 }
 object NewFont {
   

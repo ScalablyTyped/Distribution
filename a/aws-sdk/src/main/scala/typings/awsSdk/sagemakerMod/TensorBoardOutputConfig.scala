@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TensorBoardOutputConfig extends StObject {
   
   /**
     * Path to local storage location for tensorBoard output. Defaults to /opt/ml/output/tensorboard.
     */
-  var LocalPath: js.UndefOr[DirectoryPath] = js.native
+  var LocalPath: js.UndefOr[DirectoryPath] = js.undefined
   
   /**
     * Path to Amazon S3 storage location for TensorBoard output.
     */
-  var S3OutputPath: S3Uri = js.native
+  var S3OutputPath: S3Uri
 }
 object TensorBoardOutputConfig {
   

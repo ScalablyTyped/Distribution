@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait FillStyle extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait FillStyle extends StObject {
     * @member {number} PIXI.FillStyle#alpha
     * @default 1
     */
-  var alpha: Double = js.native
+  var alpha: Double
   
   /**
     * The hex color value used when coloring the Graphics object.
@@ -28,12 +26,12 @@ trait FillStyle extends StObject {
     * @member {number} PIXI.FillStyle#color
     * @default 0xFFFFFF
     */
-  var color: Double = js.native
+  var color: Double
   
   /**
     * Destroy and don't use after this
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * The transform aplpied to the texture.
@@ -41,12 +39,12 @@ trait FillStyle extends StObject {
     * @member {PIXI.Matrix} PIXI.FillStyle#matrix
     * @default null
     */
-  var matrix: Matrix = js.native
+  var matrix: Matrix
   
   /**
     * Reset
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /**
     * The texture to be used for the fill.
@@ -54,7 +52,7 @@ trait FillStyle extends StObject {
     * @member {PIXI.Texture} PIXI.FillStyle#texture
     * @default 0
     */
-  var texture: Texture = js.native
+  var texture: Texture
   
   /**
     * If the current fill is visible.
@@ -62,7 +60,7 @@ trait FillStyle extends StObject {
     * @member {boolean} PIXI.FillStyle#visible
     * @default false
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object FillStyle {
   

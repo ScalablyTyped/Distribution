@@ -5,21 +5,21 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines a link that includes a URI and text representation.
   This class is used to represent the location of a web site.  */
-@js.native
-trait SocialLink extends ClientValueObject {
+trait SocialLink
+  extends StObject
+     with ClientValueObject {
   
-  def get_text(): String = js.native
+  def get_text(): String
   
-  def get_uri(): String = js.native
+  def get_uri(): String
   
-  def set_text(value: String): String = js.native
+  def set_text(value: String): String
   
-  def set_uri(value: String): String = js.native
+  def set_uri(value: String): String
 }
 object SocialLink {
   

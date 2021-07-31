@@ -1,18 +1,20 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "WebGLRenderer")
 @js.native
 class WebGLRenderer ()
   extends typings.wonderJs.webGLRendererMod.WebGLRenderer
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "WebGLRenderer")
-@js.native
-object WebGLRenderer extends js.Object {
-  def create(): typings.wonderJs.webGLRendererMod.WebGLRenderer = js.native
+object WebGLRenderer {
+  
+  @JSImport("wonder.js/dist/es2015", "WebGLRenderer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(): typings.wonderJs.webGLRendererMod.WebGLRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.webGLRendererMod.WebGLRenderer]
 }
-

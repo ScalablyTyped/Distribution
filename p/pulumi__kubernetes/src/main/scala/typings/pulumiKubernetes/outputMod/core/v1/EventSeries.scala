@@ -2,29 +2,27 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time.
   */
-@js.native
 trait EventSeries extends StObject {
   
   /**
     * Number of occurrences in this series up to the last heartbeat time
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * Time of the last occurrence observed
     */
-  var lastObservedTime: String = js.native
+  var lastObservedTime: String
   
   /**
     * State of this Series: Ongoing or Finished Deprecated. Planned removal for 1.18
     */
-  var state: String = js.native
+  var state: String
 }
 object EventSeries {
   

@@ -17,7 +17,6 @@ import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
 import typings.uirouterCore.transitionTransitionMod.Transition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateServiceMod {
@@ -149,7 +148,7 @@ object stateServiceMod {
       * @returns {promise} A promise representing the state of the new transition.
       */
     def go(to: StateOrName): TransitionPromise = js.native
-    def go(to: StateOrName, params: js.UndefOr[scala.Nothing], options: TransitionOptions): TransitionPromise = js.native
+    def go(to: StateOrName, params: Unit, options: TransitionOptions): TransitionPromise = js.native
     def go(to: StateOrName, params: RawParams): TransitionPromise = js.native
     def go(to: StateOrName, params: RawParams, options: TransitionOptions): TransitionPromise = js.native
     
@@ -170,7 +169,7 @@ object stateServiceMod {
       * @returns {string} compiled state url
       */
     def href(stateOrName: StateOrName): String = js.native
-    def href(stateOrName: StateOrName, params: js.UndefOr[scala.Nothing], options: HrefOptions): String = js.native
+    def href(stateOrName: StateOrName, params: Unit, options: HrefOptions): String = js.native
     def href(stateOrName: StateOrName, params: RawParams): String = js.native
     def href(stateOrName: StateOrName, params: RawParams, options: HrefOptions): String = js.native
     
@@ -213,7 +212,7 @@ object stateServiceMod {
       * @returns {boolean} Returns true if it does include the state
       */
     def includes(stateOrName: StateOrName): Boolean = js.native
-    def includes(stateOrName: StateOrName, params: js.UndefOr[scala.Nothing], options: TransitionOptions): Boolean = js.native
+    def includes(stateOrName: StateOrName, params: Unit, options: TransitionOptions): Boolean = js.native
     def includes(stateOrName: StateOrName, params: RawParams): Boolean = js.native
     def includes(stateOrName: StateOrName, params: RawParams, options: TransitionOptions): Boolean = js.native
     
@@ -252,7 +251,7 @@ object stateServiceMod {
       * @returns Returns true if it is the state.
       */
     def is(stateOrName: StateOrName): Boolean = js.native
-    def is(stateOrName: StateOrName, params: js.UndefOr[scala.Nothing], options: Relative): Boolean = js.native
+    def is(stateOrName: StateOrName, params: Unit, options: Relative): Boolean = js.native
     def is(stateOrName: StateOrName, params: RawParams): Boolean = js.native
     def is(stateOrName: StateOrName, params: RawParams, options: Relative): Boolean = js.native
     
@@ -361,7 +360,7 @@ object stateServiceMod {
       * This may be returned from a Transition Hook to redirect a transition, for example.
       */
     def target(identifier: StateOrName): TargetState = js.native
-    def target(identifier: StateOrName, params: js.UndefOr[scala.Nothing], options: TransitionOptions): TargetState = js.native
+    def target(identifier: StateOrName, params: Unit, options: TransitionOptions): TargetState = js.native
     def target(identifier: StateOrName, params: RawParams): TargetState = js.native
     def target(identifier: StateOrName, params: RawParams, options: TransitionOptions): TargetState = js.native
     
@@ -396,7 +395,7 @@ object stateServiceMod {
       * @returns A promise representing the state of the new transition. See [[go]]
       */
     def transitionTo(to: StateOrName): TransitionPromise = js.native
-    def transitionTo(to: StateOrName, toParams: js.UndefOr[scala.Nothing], options: TransitionOptions): TransitionPromise = js.native
+    def transitionTo(to: StateOrName, toParams: Unit, options: TransitionOptions): TransitionPromise = js.native
     def transitionTo(to: StateOrName, toParams: RawParams): TransitionPromise = js.native
     def transitionTo(to: StateOrName, toParams: RawParams, options: TransitionOptions): TransitionPromise = js.native
   }

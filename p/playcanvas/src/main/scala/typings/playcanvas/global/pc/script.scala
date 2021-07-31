@@ -3,7 +3,6 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.pc.callbacks.CreateScreen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is used to override the default PlayCanvas loading screen.
   */
 object script {
+  
+  @JSGlobal("pc.script")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Handles the creation of the loading screen of the application. A script can subscribe to
@@ -27,7 +30,6 @@ object script {
     * });
     * @param callback - A function which can set up and tear down a customised loading screen.
     */
-  @JSGlobal("pc.script.createLoadingScreen")
-  @js.native
-  def createLoadingScreen(callback: CreateScreen): Unit = js.native
+  @scala.inline
+  def createLoadingScreen(callback: CreateScreen): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoadingScreen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

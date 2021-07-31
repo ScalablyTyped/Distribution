@@ -4,15 +4,13 @@ import typings.tern.ternMod.DocumentationQuery
 import typings.tern.ternMod.DocumentationQueryResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryDocumentationQuery extends StObject {
   
-  var query: DocumentationQuery = js.native
+  var query: DocumentationQuery
   
-  var result: DocumentationQueryResult = js.native
+  var result: DocumentationQueryResult
 }
 object QueryDocumentationQuery {
   

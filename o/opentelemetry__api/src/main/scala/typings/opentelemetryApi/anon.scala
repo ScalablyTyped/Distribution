@@ -3,17 +3,15 @@ package typings.opentelemetryApi
 import typings.opentelemetryApi.metricMod.BaseObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Observer extends StObject {
     
-    var observer: BaseObserver = js.native
+    var observer: BaseObserver
     
-    var value: Double = js.native
+    var value: Double
   }
   object Observer {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var observer: BaseObserver = js.native
+    var observer: BaseObserver
     
-    var value: Double = js.native
+    var value: Double
   }
   object Value {
     

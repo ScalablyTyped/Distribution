@@ -5,15 +5,13 @@ import typings.octokitTypes.endpointsMod.ActionsListRunnerApplicationsForRepoRes
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsListRunnerApplicationsForRepoEndpoint extends StObject {
   
-  var parameters: ActionsListRunnerApplicationsForRepoEndpoint = js.native
+  var parameters: ActionsListRunnerApplicationsForRepoEndpoint
   
-  var response: OctokitResponse[ActionsListRunnerApplicationsForRepoResponseData] = js.native
+  var response: OctokitResponse[ActionsListRunnerApplicationsForRepoResponseData]
 }
 object ParametersActionsListRunnerApplicationsForRepoEndpoint {
   

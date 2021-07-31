@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to set and remove seekable marks to a stream. */
-@js.native
-trait XMarkableStream extends XInterface {
+trait XMarkableStream
+  extends StObject
+     with XInterface {
   
   /** creates a mark of the current position and returns an identifier to it. */
-  def createMark(): Double = js.native
+  def createMark(): Double
   
   /**
     * deletes the mark that you previously created with {@link XMarkableStream.createMark()} .
@@ -20,7 +20,7 @@ trait XMarkableStream extends XInterface {
     * It is an error to delete a mark if other marks after this exist. In this case, for reasons of robustness, the implementation must delete this mark and
     * all others after this mark.
     */
-  def deleteMark(Mark: Double): Unit = js.native
+  def deleteMark(Mark: Double): Unit
   
   /**
     * jumps to the furthest position of the stream.
@@ -28,10 +28,10 @@ trait XMarkableStream extends XInterface {
     * In the inputstream case, a subsequent read call returns data, that was never read or skipped over before. In the outputstream case, a subsequent write
     * call will add new data at the end of the stream without overwriting existing data.
     */
-  def jumpToFurthest(): Unit = js.native
+  def jumpToFurthest(): Unit
   
   /** jumps to a previously created mark. */
-  def jumpToMark(nMark: Double): Unit = js.native
+  def jumpToMark(nMark: Double): Unit
   
   /**
     * @param nMark identifies the mark which is used as a base to calculate the offset of the current position.
@@ -39,7 +39,7 @@ trait XMarkableStream extends XInterface {
     * @throws IllegalArgumentException if the mark does not exist or is deleted.
     * @throws IOException if an I/O error has occurred.
     */
-  def offsetToMark(nMark: Double): Double = js.native
+  def offsetToMark(nMark: Double): Double
 }
 object XMarkableStream {
   

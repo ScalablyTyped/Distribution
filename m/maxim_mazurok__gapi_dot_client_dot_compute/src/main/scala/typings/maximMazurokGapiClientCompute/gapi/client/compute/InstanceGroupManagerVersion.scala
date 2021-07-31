@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupManagerVersion extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait InstanceGroupManagerVersion extends StObject {
     * `targetSize` for this version is reached. The templates for existing instances in the group do not change unless you run recreateInstances, run applyUpdatesToInstances, or set the
     * group's updatePolicy.type to PROACTIVE; in those cases, existing instances are updated until the `targetSize` for this version is reached.
     */
-  var instanceTemplate: js.UndefOr[String] = js.native
+  var instanceTemplate: js.UndefOr[String] = js.undefined
   
   /** Name of the version. Unique among all versions in the scope of this managed instance group. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the intended number of instances to be created from the instanceTemplate. The final number of instances created from the template will be equal to:
@@ -24,7 +22,7 @@ trait InstanceGroupManagerVersion extends StObject {
     * - if expressed as a percent, the targetSize would be (targetSize.percent/100 * InstanceGroupManager.targetSize) If there is a remainder, the number is rounded up.  If unset, this
     * version will update any remaining instances not updated by another version. Read Starting a canary update for more information.
     */
-  var targetSize: js.UndefOr[FixedOrPercent] = js.native
+  var targetSize: js.UndefOr[FixedOrPercent] = js.undefined
 }
 object InstanceGroupManagerVersion {
   

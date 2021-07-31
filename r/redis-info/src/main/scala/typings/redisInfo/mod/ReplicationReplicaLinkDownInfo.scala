@@ -3,15 +3,13 @@ package typings.redisInfo.mod
 import typings.redisInfo.mod.LinkStatus.DOWN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationReplicaLinkDownInfo extends StObject {
   
-  var master_link_down_since_seconds: String = js.native
+  var master_link_down_since_seconds: String
   
-  var master_link_status: DOWN = js.native
+  var master_link_status: DOWN
 }
 object ReplicationReplicaLinkDownInfo {
   

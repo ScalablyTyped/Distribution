@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Artifact extends StObject {
   
   /** Hash or checksum value of a binary, or Docker Registry 2.0 digest of a container. */
-  var checksum: js.UndefOr[String] = js.native
+  var checksum: js.UndefOr[String] = js.undefined
   
   /** Artifact ID, if any; for container images, this will be a URL by digest like `gcr.io/projectID/imagename@sha256:123456`. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Related artifact names. This may be the path to a binary or jar file, or in the case of a container build, the name used to push the container image to Google Container Registry, as
     * presented to `docker push`. Note that a single Artifact ID can have multiple names, for example if two tags are applied to one image.
     */
-  var names: js.UndefOr[js.Array[String]] = js.native
+  var names: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Artifact {
   

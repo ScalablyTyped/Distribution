@@ -2,26 +2,24 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAppRequest extends StObject {
   
   /**
     * The ID of the application.
     */
-  var appId: js.UndefOr[AppId] = js.native
+  var appId: js.UndefOr[AppId] = js.undefined
   
   /**
     * Indicates whether to stop all replication jobs corresponding to the servers in the application while deleting the application.
     */
-  var forceStopAppReplication: js.UndefOr[ForceStopAppReplication] = js.native
+  var forceStopAppReplication: js.UndefOr[ForceStopAppReplication] = js.undefined
   
   /**
     * Indicates whether to terminate the stack corresponding to the application while deleting the application.
     */
-  var forceTerminateApp: js.UndefOr[ForceTerminateApp] = js.native
+  var forceTerminateApp: js.UndefOr[ForceTerminateApp] = js.undefined
 }
 object DeleteAppRequest {
   

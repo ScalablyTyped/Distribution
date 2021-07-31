@@ -2,21 +2,19 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Conditions that determine which objects will be transferred. Applies only
   * to S3 and GCS objects.
   */
-@js.native
 trait SchemaObjectConditions extends StObject {
   
   /**
     * `excludePrefixes` must follow the requirements described for
     * `includePrefixes`.  The max size of `excludePrefixes` is 1000.
     */
-  var excludePrefixes: js.UndefOr[js.Array[String]] = js.native
+  var excludePrefixes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If `includePrefixes` is specified, objects that satisfy the object
@@ -42,7 +40,7 @@ trait SchemaObjectConditions extends StObject {
     * path explicitly included by `includePrefixes`.  The max size of
     * `includePrefixes` is 1000.
     */
-  var includePrefixes: js.UndefOr[js.Array[String]] = js.native
+  var includePrefixes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If specified, only objects with a `lastModificationTime` on or after
@@ -53,7 +51,7 @@ trait SchemaObjectConditions extends StObject {
     * Specifically, this would be the `updated` property of GCS objects and the
     * `LastModified` field of S3 objects.
     */
-  var maxTimeElapsedSinceLastModification: js.UndefOr[String] = js.native
+  var maxTimeElapsedSinceLastModification: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, only objects with a `lastModificationTime` before `NOW` -
@@ -64,7 +62,7 @@ trait SchemaObjectConditions extends StObject {
     * Specifically, this would be the `updated` property of GCS objects and the
     * `LastModified` field of S3 objects.
     */
-  var minTimeElapsedSinceLastModification: js.UndefOr[String] = js.native
+  var minTimeElapsedSinceLastModification: js.UndefOr[String] = js.undefined
 }
 object SchemaObjectConditions {
   

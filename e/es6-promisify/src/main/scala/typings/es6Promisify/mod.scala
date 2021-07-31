@@ -3,25 +3,25 @@ package typings.es6Promisify
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object promisify {
     
-    @JSImport("es6-promisify", "promisify")
-    @js.native
-    def apply(original: CallbackFunction): PromiseFunction = js.native
-    @JSImport("es6-promisify", "promisify")
-    @js.native
-    def apply[T, U](original: js.Function2[/* param1 */ U, /* cb */ Callback[T], _]): js.Function1[/* param1 */ U, js.Promise[T]] = js.native
-    @JSImport("es6-promisify", "promisify")
-    @js.native
-    def apply[T, U, V](original: js.Function3[/* param1 */ U, /* param2 */ V, /* cb */ Callback[T], _]): js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]] = js.native
-    @JSImport("es6-promisify", "promisify")
-    @js.native
-    def apply[T, U, V, W](original: js.Function4[/* param1 */ U, /* param2 */ V, /* param3 */ W, /* cb */ Callback[T], _]): js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]] = js.native
+    @scala.inline
+    def apply(original: CallbackFunction): PromiseFunction = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[PromiseFunction]
+    @scala.inline
+    def apply[T](original: js.Function1[/* cb */ Callback[T], js.Any]): js.Function0[js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[T]]]
+    @scala.inline
+    def apply[T, U](original: js.Function2[/* param1 */ U, /* cb */ Callback[T], js.Any]): js.Function1[/* param1 */ U, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param1 */ U, js.Promise[T]]]
+    @scala.inline
+    def apply[T, U, V](original: js.Function3[/* param1 */ U, /* param2 */ V, /* cb */ Callback[T], js.Any]): js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]]]
+    @scala.inline
+    def apply[T, U, V, W](
+      original: js.Function4[/* param1 */ U, /* param2 */ V, /* param3 */ W, /* cb */ Callback[T], js.Any]
+    ): js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]]]
+    
     @JSImport("es6-promisify", "promisify")
     @js.native
     val ^ : js.Any = js.native
@@ -30,7 +30,8 @@ object mod {
     @JSImport("es6-promisify", "promisify.Promise")
     @js.native
     class Promise[T] protected ()
-      extends typings.std.Promise[T] {
+      extends StObject
+         with typings.std.Promise[T] {
       /**
         * Creates a new Promise.
         * @param executor A callback used to initialize the promise. This callback is passed two arguments:
@@ -65,7 +66,15 @@ object mod {
   
   type Callback[T] = js.Function2[/* err */ js.Any, /* arg */ js.UndefOr[T], js.Any]
   
-  type CallbackFunction = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait CallbackFunction extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
   
-  type PromiseFunction = js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]
+  @js.native
+  trait PromiseFunction extends StObject {
+    
+    def apply(args: js.Any*): js.Promise[js.Any] = js.native
+  }
 }

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to invoke the Tabs paragraph dialog.
   */
-@js.native
-trait OpenTabsDialogCommand extends CommandWithSimpleStateBase {
+trait OpenTabsDialogCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the OpenTabsDialogCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object OpenTabsDialogCommand {
   

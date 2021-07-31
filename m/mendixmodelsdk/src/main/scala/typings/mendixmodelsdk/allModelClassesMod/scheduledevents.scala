@@ -5,7 +5,6 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scheduledevents {
@@ -98,9 +97,8 @@ object scheduledevents {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "scheduledevents.ScheduledEvent.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "scheduledevents.ScheduledEvent.structureTypeName")

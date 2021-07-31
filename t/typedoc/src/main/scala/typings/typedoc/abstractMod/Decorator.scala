@@ -3,17 +3,15 @@ package typings.typedoc.abstractMod
 import typings.typedoc.modelsTypesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Decorator extends StObject {
   
-  var arguments: js.UndefOr[js.Any] = js.native
+  var arguments: js.UndefOr[js.Any] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: js.UndefOr[Type] = js.native
+  var `type`: js.UndefOr[Type] = js.undefined
 }
 object Decorator {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,7 +27,7 @@ object mod {
       * @param {array} args - The original `arguments` pseduo-array that the original
       *     method received.
       */
-    def parseArguments_(args: js.Array[_]): ParsedArguments = js.native
+    def parseArguments_(args: js.Array[js.Any]): ParsedArguments = js.native
     
     /**
       * This method simply calls the nextQuery recursively, emitting results to a
@@ -98,38 +97,39 @@ object mod {
   @js.native
   val paginator: Paginator_ = js.native
   
-  @js.native
-  trait ParsedArguments extends TransformOptions {
+  trait ParsedArguments
+    extends StObject
+       with TransformOptions {
     
     /**
       * Auto-pagination enabled.
       */
-    var autoPaginate: js.UndefOr[Boolean] = js.native
+    var autoPaginate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback function.
       */
-    var callback: js.UndefOr[js.Function] = js.native
+    var callback: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Maximum API calls to make.
       */
-    var maxApiCalls: js.UndefOr[Double] = js.native
+    var maxApiCalls: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum results to return.
       */
-    var maxResults: js.UndefOr[Double] = js.native
+    var maxResults: js.UndefOr[Double] = js.undefined
     
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Query object. This is most commonly an object, but to make the API more
       * simple, it can also be a string in some places.
       */
-    var query: js.UndefOr[ParsedArguments] = js.native
+    var query: js.UndefOr[ParsedArguments] = js.undefined
     
-    var streamOptions: js.UndefOr[ParsedArguments] = js.native
+    var streamOptions: js.UndefOr[ParsedArguments] = js.undefined
   }
   object ParsedArguments {
     

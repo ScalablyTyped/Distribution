@@ -8,7 +8,6 @@ import typings.playable.anon.GetInstance
 import typings.playable.anon.GetMediaSession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chomecastApiMockMod {
@@ -46,10 +45,14 @@ object chomecastApiMockMod {
   object RemotePlayerEventType extends StObject {
     
     @js.native
-    sealed trait ANY_CHANGE extends RemotePlayerEventType
+    sealed trait ANY_CHANGE
+      extends StObject
+         with RemotePlayerEventType
     
     @js.native
-    sealed trait IS_PAUSED_CHANGED extends RemotePlayerEventType
+    sealed trait IS_PAUSED_CHANGED
+      extends StObject
+         with RemotePlayerEventType
   }
   
   @js.native
@@ -59,35 +62,49 @@ object chomecastApiMockMod {
   object SessionState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SessionState with String] = js.native
+    def apply(value: String): js.UndefOr[SessionState & String] = js.native
     
     @js.native
-    sealed trait NO_SESSION extends SessionState
-    /* "NO_SESSION" */ val NO_SESSION: typings.playable.chomecastApiMockMod.SessionState.NO_SESSION with String = js.native
+    sealed trait NO_SESSION
+      extends StObject
+         with SessionState
+    /* "NO_SESSION" */ val NO_SESSION: typings.playable.chomecastApiMockMod.SessionState.NO_SESSION & String = js.native
     
     @js.native
-    sealed trait SESSION_ENDED extends SessionState
-    /* "SESSION_ENDED" */ val SESSION_ENDED: typings.playable.chomecastApiMockMod.SessionState.SESSION_ENDED with String = js.native
+    sealed trait SESSION_ENDED
+      extends StObject
+         with SessionState
+    /* "SESSION_ENDED" */ val SESSION_ENDED: typings.playable.chomecastApiMockMod.SessionState.SESSION_ENDED & String = js.native
     
     @js.native
-    sealed trait SESSION_ENDING extends SessionState
-    /* "SESSION_ENDING" */ val SESSION_ENDING: typings.playable.chomecastApiMockMod.SessionState.SESSION_ENDING with String = js.native
+    sealed trait SESSION_ENDING
+      extends StObject
+         with SessionState
+    /* "SESSION_ENDING" */ val SESSION_ENDING: typings.playable.chomecastApiMockMod.SessionState.SESSION_ENDING & String = js.native
     
     @js.native
-    sealed trait SESSION_RESUMED extends SessionState
-    /* "SESSION_RESUMED" */ val SESSION_RESUMED: typings.playable.chomecastApiMockMod.SessionState.SESSION_RESUMED with String = js.native
+    sealed trait SESSION_RESUMED
+      extends StObject
+         with SessionState
+    /* "SESSION_RESUMED" */ val SESSION_RESUMED: typings.playable.chomecastApiMockMod.SessionState.SESSION_RESUMED & String = js.native
     
     @js.native
-    sealed trait SESSION_STARTED extends SessionState
-    /* "SESSION_STARTED" */ val SESSION_STARTED: typings.playable.chomecastApiMockMod.SessionState.SESSION_STARTED with String = js.native
+    sealed trait SESSION_STARTED
+      extends StObject
+         with SessionState
+    /* "SESSION_STARTED" */ val SESSION_STARTED: typings.playable.chomecastApiMockMod.SessionState.SESSION_STARTED & String = js.native
     
     @js.native
-    sealed trait SESSION_STARTING extends SessionState
-    /* "SESSION_STARTING" */ val SESSION_STARTING: typings.playable.chomecastApiMockMod.SessionState.SESSION_STARTING with String = js.native
+    sealed trait SESSION_STARTING
+      extends StObject
+         with SessionState
+    /* "SESSION_STARTING" */ val SESSION_STARTING: typings.playable.chomecastApiMockMod.SessionState.SESSION_STARTING & String = js.native
     
     @js.native
-    sealed trait SESSION_START_FAILED extends SessionState
-    /* "SESSION_START_FAILED" */ val SESSION_START_FAILED: typings.playable.chomecastApiMockMod.SessionState.SESSION_START_FAILED with String = js.native
+    sealed trait SESSION_START_FAILED
+      extends StObject
+         with SessionState
+    /* "SESSION_START_FAILED" */ val SESSION_START_FAILED: typings.playable.chomecastApiMockMod.SessionState.SESSION_START_FAILED & String = js.native
   }
   
   @JSImport("playable/dist/src/testkit/chomecast-api-mock", "WindowCastAPIMock")
@@ -98,15 +115,17 @@ object chomecastApiMockMod {
   }
   object WindowCastAPIMock {
     
-    /* static member */
-    @JSImport("playable/dist/src/testkit/chomecast-api-mock", "WindowCastAPIMock.init")
+    @JSImport("playable/dist/src/testkit/chomecast-api-mock", "WindowCastAPIMock")
     @js.native
-    def init(): Unit = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("playable/dist/src/testkit/chomecast-api-mock", "WindowCastAPIMock.reset")
-    @js.native
-    def reset(): Unit = js.native
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    
+    /* static member */
+    @scala.inline
+    def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   }
   
   @JSImport("playable/dist/src/testkit/chomecast-api-mock", "WindowChromeAPIMock")
@@ -123,19 +142,25 @@ object chomecastApiMockMod {
   object eventType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[eventType with String] = js.native
+    def apply(value: String): js.UndefOr[eventType & String] = js.native
     
     @js.native
-    sealed trait CAST_STATE_CHANGED extends eventType
-    /* "caststatechanged" */ val CAST_STATE_CHANGED: typings.playable.chomecastApiMockMod.eventType.CAST_STATE_CHANGED with String = js.native
+    sealed trait CAST_STATE_CHANGED
+      extends StObject
+         with eventType
+    /* "caststatechanged" */ val CAST_STATE_CHANGED: typings.playable.chomecastApiMockMod.eventType.CAST_STATE_CHANGED & String = js.native
     
     @js.native
-    sealed trait SESSION_STATE_CHANGED extends eventType
-    /* "sessionstatechanged" */ val SESSION_STATE_CHANGED: typings.playable.chomecastApiMockMod.eventType.SESSION_STATE_CHANGED with String = js.native
+    sealed trait SESSION_STATE_CHANGED
+      extends StObject
+         with eventType
+    /* "sessionstatechanged" */ val SESSION_STATE_CHANGED: typings.playable.chomecastApiMockMod.eventType.SESSION_STATE_CHANGED & String = js.native
   }
   
   @js.native
-  trait CastContext extends Publisher {
+  trait CastContext
+    extends StObject
+       with Publisher {
     
     var _estimatedTime: Double = js.native
     
@@ -146,14 +171,13 @@ object chomecastApiMockMod {
     def setOptions(): Unit = js.native
   }
   
-  @js.native
   trait Publisher extends StObject {
     
-    var _listeners: StringDictionary[js.Array[js.Function]] = js.native
+    var _listeners: StringDictionary[js.Array[js.Function]]
     
-    def addEventListener(`type`: eventType, func: js.Function): Unit = js.native
+    def addEventListener(`type`: eventType, func: js.Function): Unit
     
-    def trigger(`type`: eventType, event: js.Any): Unit = js.native
+    def trigger(`type`: eventType, event: js.Any): Unit
   }
   object Publisher {
     
@@ -181,10 +205,9 @@ object chomecastApiMockMod {
     }
   }
   
-  @js.native
   trait RemotePlayer extends StObject {
     
-    var currentTime: Double = js.native
+    var currentTime: Double
   }
   object RemotePlayer {
     
@@ -202,14 +225,15 @@ object chomecastApiMockMod {
     }
   }
   
-  @js.native
-  trait RemotePlayerController extends Publisher {
+  trait RemotePlayerController
+    extends StObject
+       with Publisher {
     
-    var player: RemotePlayer = js.native
+    var player: RemotePlayer
     
-    def seek(): Unit = js.native
+    def seek(): Unit
     
-    def setVolumeLevel(): Unit = js.native
+    def setVolumeLevel(): Unit
   }
   object RemotePlayerController {
     

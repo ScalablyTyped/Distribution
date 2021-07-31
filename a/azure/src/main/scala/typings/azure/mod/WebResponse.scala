@@ -3,21 +3,19 @@ package typings.azure.mod
 import typings.azure.anon.Entry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebResponse extends StObject {
   
-  var body: Entry = js.native
+  var body: Entry
   
-  var headers: js.Any = js.native
+  var headers: js.Any
   
-  var isSuccessful: Boolean = js.native
+  var isSuccessful: Boolean
   
-  var md5: js.Any = js.native
+  var md5: js.Any
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object WebResponse {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sponsor extends StObject {
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string `"youtube#sponsor"`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The `snippet` object contains basic details about the sponsor. */
-  var snippet: js.UndefOr[SponsorSnippet] = js.native
+  var snippet: js.UndefOr[SponsorSnippet] = js.undefined
 }
 object Sponsor {
   

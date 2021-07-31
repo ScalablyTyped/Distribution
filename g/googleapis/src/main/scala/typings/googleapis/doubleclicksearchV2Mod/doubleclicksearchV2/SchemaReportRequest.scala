@@ -6,13 +6,11 @@ import typings.googleapis.anon.Column
 import typings.googleapis.anon.SortOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request object used to create a DoubleClick Search report.
   */
-@js.native
 trait SchemaReportRequest extends StObject {
   
   /**
@@ -23,52 +21,52 @@ trait SchemaReportRequest extends StObject {
     * savedColumnName cannot be set in the same stanza. The maximum number of
     * columns per request is 300.
     */
-  var columns: js.UndefOr[js.Array[SchemaReportApiColumnSpec]] = js.native
+  var columns: js.UndefOr[js.Array[SchemaReportApiColumnSpec]] = js.undefined
   
   /**
     * Format that the report should be returned in. Currently csv or tsv is
     * supported.
     */
-  var downloadFormat: js.UndefOr[String] = js.native
+  var downloadFormat: js.UndefOr[String] = js.undefined
   
   /**
     * A list of filters to be applied to the report. The maximum number of
     * filters per request is 300.
     */
-  var filters: js.UndefOr[js.Array[Column]] = js.native
+  var filters: js.UndefOr[js.Array[Column]] = js.undefined
   
   /**
     * Determines if removed entities should be included in the report. Defaults
     * to false. Deprecated, please use includeRemovedEntities instead.
     */
-  var includeDeletedEntities: js.UndefOr[Boolean] = js.native
+  var includeDeletedEntities: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines if removed entities should be included in the report. Defaults
     * to false.
     */
-  var includeRemovedEntities: js.UndefOr[Boolean] = js.native
+  var includeRemovedEntities: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Asynchronous report only. The maximum number of rows per report file. A
     * large report is split into many files based on this field. Acceptable
     * values are 1000000 to 100000000, inclusive.
     */
-  var maxRowsPerFile: js.UndefOr[Double] = js.native
+  var maxRowsPerFile: js.UndefOr[Double] = js.undefined
   
   /**
     * Synchronous report only. A list of columns and directions defining
     * sorting to be performed on the report rows. The maximum number of
     * orderings per request is 300.
     */
-  var orderBy: js.UndefOr[js.Array[SortOrder]] = js.native
+  var orderBy: js.UndefOr[js.Array[SortOrder]] = js.undefined
   
   /**
     * The reportScope is a set of IDs that are used to determine which subset
     * of entities will be returned in the report. The full lineage of IDs from
     * the lowest scoped level desired up through agency is required.
     */
-  var reportScope: js.UndefOr[AdGroupId] = js.native
+  var reportScope: js.UndefOr[AdGroupId] = js.undefined
   
   /**
     * Determines the type of rows that are returned in the report. For example,
@@ -76,20 +74,20 @@ trait SchemaReportRequest extends StObject {
     * data about a keyword. See the Types of Reports reference for the columns
     * that are available for each type.
     */
-  var reportType: js.UndefOr[String] = js.native
+  var reportType: js.UndefOr[String] = js.undefined
   
   /**
     * Synchronous report only. The maximum number of rows to return; additional
     * rows are dropped. Acceptable values are 0 to 10000, inclusive. Defaults
     * to 10000.
     */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Synchronous report only. Zero-based index of the first row to return.
     * Acceptable values are 0 to 50000, inclusive. Defaults to 0.
     */
-  var startRow: js.UndefOr[Double] = js.native
+  var startRow: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the currency in which monetary will be returned. Possible
@@ -98,19 +96,19 @@ trait SchemaReportRequest extends StObject {
     * lower), or account (valid if the report is scoped to engine account or
     * lower).
     */
-  var statisticsCurrency: js.UndefOr[String] = js.native
+  var statisticsCurrency: js.UndefOr[String] = js.undefined
   
   /**
     * If metrics are requested in a report, this argument will be used to
     * restrict the metrics to a specific time range.
     */
-  var timeRange: js.UndefOr[ChangedAttributesSinceTimestamp] = js.native
+  var timeRange: js.UndefOr[ChangedAttributesSinceTimestamp] = js.undefined
   
   /**
     * If true, the report would only be created if all the requested stat data
     * are sourced from a single timezone. Defaults to false.
     */
-  var verifySingleTimeZone: js.UndefOr[Boolean] = js.native
+  var verifySingleTimeZone: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaReportRequest {
   

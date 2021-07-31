@@ -2,24 +2,22 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A measurement of extents, the high and low points.
   */
-@js.native
 trait IMeasure extends StObject {
   
   /**
     * The point containing both the highest x and y values of the rectangle containing the item being measured.
     */
-  var high: IPoint = js.native
+  var high: IPoint
   
   /**
     * The point containing both the lowest x and y values of the rectangle containing the item being measured.
     */
-  var low: IPoint = js.native
+  var low: IPoint
 }
 object IMeasure {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDatasetImportJobResponse extends StObject {
   
   /**
     * Information about the dataset import job, including the status. The status is one of the following values:   CREATE PENDING   CREATE IN_PROGRESS   ACTIVE   CREATE FAILED  
     */
-  var datasetImportJob: js.UndefOr[DatasetImportJob] = js.native
+  var datasetImportJob: js.UndefOr[DatasetImportJob] = js.undefined
 }
 object DescribeDatasetImportJobResponse {
   

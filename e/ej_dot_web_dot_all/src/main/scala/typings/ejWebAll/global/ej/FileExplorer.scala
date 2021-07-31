@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.FileExplorer")
 @js.native
 class FileExplorer protected ()
-  extends typings.ejWebAll.ej.FileExplorer {
+  extends StObject
+     with typings.ejWebAll.ej.FileExplorer {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -41,12 +41,12 @@ object FileExplorer {
   object layoutType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.FileExplorer.layoutType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.FileExplorer.layoutType & Double] = js.native
     
-    /* 1 */ val Grid: typings.ejWebAll.ej.FileExplorer.layoutType.Grid with Double = js.native
+    /* 1 */ val Grid: typings.ejWebAll.ej.FileExplorer.layoutType.Grid & Double = js.native
     
-    /* 2 */ val LargeIcons: typings.ejWebAll.ej.FileExplorer.layoutType.LargeIcons with Double = js.native
+    /* 2 */ val LargeIcons: typings.ejWebAll.ej.FileExplorer.layoutType.LargeIcons & Double = js.native
     
-    /* 0 */ val Tile: typings.ejWebAll.ej.FileExplorer.layoutType.Tile with Double = js.native
+    /* 0 */ val Tile: typings.ejWebAll.ej.FileExplorer.layoutType.Tile & Double = js.native
   }
 }

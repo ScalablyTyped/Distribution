@@ -2,19 +2,17 @@ package typings.globalyzer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Base extends StObject {
     
-    var base: String = js.native
+    var base: String
     
-    var glob: String = js.native
+    var glob: String
     
-    var isGlob: Boolean = js.native
+    var isGlob: Boolean
   }
   object Base {
     
@@ -38,14 +36,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Strict extends StObject {
     
     /**
       * Use strict parsing (be strict about what's a glob and what's not)
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Strict {
     

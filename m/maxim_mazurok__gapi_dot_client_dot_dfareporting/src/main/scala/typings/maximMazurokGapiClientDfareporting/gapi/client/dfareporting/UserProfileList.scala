@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserProfileList extends StObject {
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The user profiles returned in this response. */
-  var items: js.UndefOr[js.Array[UserProfile]] = js.native
+  var items: js.UndefOr[js.Array[UserProfile]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#userProfileList". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object UserProfileList {
   

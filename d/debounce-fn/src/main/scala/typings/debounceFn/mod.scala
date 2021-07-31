@@ -4,14 +4,12 @@ import typings.debounceFn.debounceFnBooleans.`false`
 import typings.debounceFn.debounceFnBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("debounce-fn", JSImport.Namespace)
-  @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType]): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = js.native
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType]): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]]]
   /**
   [Debounce](https://davidwalsh.name/javascript-debounce-function) a function.
   @param input - Function to debounce.
@@ -25,27 +23,29 @@ object mod {
   }, {wait: 100});
   ```
   */
-  @JSImport("debounce-fn", JSImport.Namespace)
-  @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: BeforeOptions): DebouncedFunction[ArgumentsType, ReturnType] = js.native
-  @JSImport("debounce-fn", JSImport.Namespace)
-  @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: NoBeforeNoAfterOptions): DebouncedFunction[ArgumentsType, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("debounce-fn", JSImport.Namespace)
-  @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = js.native
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: BeforeOptions): DebouncedFunction[ArgumentsType, ReturnType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, ReturnType]]
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: NoBeforeNoAfterOptions): DebouncedFunction[ArgumentsType, Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, Unit]]
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]]]
   
+  @JSImport("debounce-fn", JSImport.Namespace)
   @js.native
-  trait BeforeOptions extends Options {
+  val ^ : js.Any = js.native
+  
+  trait BeforeOptions
+    extends StObject
+       with Options {
     
     @JSName("before")
-    val before_BeforeOptions: `true` = js.native
+    val before_BeforeOptions: `true`
   }
   object BeforeOptions {
     
     @scala.inline
-    def apply(before: `true`): BeforeOptions = {
-      val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any])
+    def apply(): BeforeOptions = {
+      val __obj = js.Dynamic.literal(before = true)
       __obj.asInstanceOf[BeforeOptions]
     }
     
@@ -58,7 +58,7 @@ object mod {
   }
   
   @js.native
-  trait DebouncedFunction[ArgumentsType /* <: js.Array[_] */, ReturnType] extends StObject {
+  trait DebouncedFunction[ArgumentsType /* <: js.Array[js.Any] */, ReturnType] extends StObject {
     
     def apply(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
@@ -67,20 +67,21 @@ object mod {
     def cancel(): Unit = js.native
   }
   
-  @js.native
-  trait NoBeforeNoAfterOptions extends Options {
+  trait NoBeforeNoAfterOptions
+    extends StObject
+       with Options {
     
     @JSName("after")
-    val after_NoBeforeNoAfterOptions: `false` = js.native
+    val after_NoBeforeNoAfterOptions: `false`
     
     @JSName("before")
-    val before_NoBeforeNoAfterOptions: js.UndefOr[`false`] = js.native
+    val before_NoBeforeNoAfterOptions: js.UndefOr[`false`] = js.undefined
   }
   object NoBeforeNoAfterOptions {
     
     @scala.inline
-    def apply(after: `false`): NoBeforeNoAfterOptions = {
-      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
+    def apply(): NoBeforeNoAfterOptions = {
+      val __obj = js.Dynamic.literal(after = false)
       __obj.asInstanceOf[NoBeforeNoAfterOptions]
     }
     
@@ -98,28 +99,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Trigger the function on the trailing edge of the `wait` interval.
     		@default true
     		*/
-    val after: js.UndefOr[Boolean] = js.native
+    val after: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Trigger the function on the leading edge of the `wait` interval.
     		For example, this can be useful for preventing accidental double-clicks on a "submit" button from firing a second time.
     		@default false
     		*/
-    val before: js.UndefOr[Boolean] = js.native
+    val before: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Time to wait until the `input` function is called.
     		@default 0
     		*/
     @JSName("wait")
-    val wait_FOptions: js.UndefOr[Double] = js.native
+    val wait_FOptions: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

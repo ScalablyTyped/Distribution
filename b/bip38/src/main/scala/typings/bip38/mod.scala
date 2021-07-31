@@ -4,164 +4,130 @@ import typings.bip38.anon.Compressed
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("bip38", "decrypt")
+  @JSImport("bip38", JSImport.Namespace)
   @js.native
-  def decrypt(string: String, passphrase: String): Compressed = js.native
-  @JSImport("bip38", "decrypt")
-  @js.native
-  def decrypt(
-    string: String,
-    passphrase: String,
-    progressCallback: js.UndefOr[scala.Nothing],
-    scryptParams: ScryptParams
-  ): Compressed = js.native
-  @JSImport("bip38", "decrypt")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def decrypt(string: String, passphrase: String): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(string.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Compressed]
+  @scala.inline
   def decrypt(
     string: String,
     passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit]
-  ): Compressed = js.native
-  @JSImport("bip38", "decrypt")
-  @js.native
+  ): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(string.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[Compressed]
+  @scala.inline
   def decrypt(
     string: String,
     passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit],
     scryptParams: ScryptParams
-  ): Compressed = js.native
+  ): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(string.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any], scryptParams.asInstanceOf[js.Any])).asInstanceOf[Compressed]
+  @scala.inline
+  def decrypt(string: String, passphrase: String, progressCallback: Unit, scryptParams: ScryptParams): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(string.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any], scryptParams.asInstanceOf[js.Any])).asInstanceOf[Compressed]
   
-  @JSImport("bip38", "decryptECMult")
-  @js.native
-  def decryptECMult(buffer: Buffer, passphrase: String): Compressed = js.native
-  @JSImport("bip38", "decryptECMult")
-  @js.native
-  def decryptECMult(
-    buffer: Buffer,
-    passphrase: String,
-    progressCallback: js.UndefOr[scala.Nothing],
-    scryptParams: ScryptParams
-  ): Compressed = js.native
-  @JSImport("bip38", "decryptECMult")
-  @js.native
+  @scala.inline
+  def decryptECMult(buffer: Buffer, passphrase: String): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptECMult")(buffer.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Compressed]
+  @scala.inline
   def decryptECMult(
     buffer: Buffer,
     passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit]
-  ): Compressed = js.native
-  @JSImport("bip38", "decryptECMult")
-  @js.native
+  ): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptECMult")(buffer.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[Compressed]
+  @scala.inline
   def decryptECMult(
     buffer: Buffer,
     passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit],
     scryptParams: ScryptParams
-  ): Compressed = js.native
+  ): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptECMult")(buffer.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any], scryptParams.asInstanceOf[js.Any])).asInstanceOf[Compressed]
+  @scala.inline
+  def decryptECMult(buffer: Buffer, passphrase: String, progressCallback: Unit, scryptParams: ScryptParams): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptECMult")(buffer.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any], scryptParams.asInstanceOf[js.Any])).asInstanceOf[Compressed]
   
-  @JSImport("bip38", "decryptRaw")
-  @js.native
-  def decryptRaw(buffer: Buffer, passphrase: String): Compressed = js.native
-  @JSImport("bip38", "decryptRaw")
-  @js.native
-  def decryptRaw(
-    buffer: Buffer,
-    passphrase: String,
-    progressCallback: js.UndefOr[scala.Nothing],
-    scryptParams: ScryptParams
-  ): Compressed = js.native
-  @JSImport("bip38", "decryptRaw")
-  @js.native
+  @scala.inline
+  def decryptRaw(buffer: Buffer, passphrase: String): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptRaw")(buffer.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Compressed]
+  @scala.inline
   def decryptRaw(
     buffer: Buffer,
     passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit]
-  ): Compressed = js.native
-  @JSImport("bip38", "decryptRaw")
-  @js.native
+  ): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptRaw")(buffer.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[Compressed]
+  @scala.inline
   def decryptRaw(
     buffer: Buffer,
     passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit],
     scryptParams: ScryptParams
-  ): Compressed = js.native
+  ): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptRaw")(buffer.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any], scryptParams.asInstanceOf[js.Any])).asInstanceOf[Compressed]
+  @scala.inline
+  def decryptRaw(buffer: Buffer, passphrase: String, progressCallback: Unit, scryptParams: ScryptParams): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptRaw")(buffer.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any], scryptParams.asInstanceOf[js.Any])).asInstanceOf[Compressed]
   
-  @JSImport("bip38", "encrypt")
-  @js.native
-  def encrypt(buffer: Buffer, compressed: Boolean, passphrase: String): String = js.native
-  @JSImport("bip38", "encrypt")
-  @js.native
-  def encrypt(
-    buffer: Buffer,
-    compressed: Boolean,
-    passphrase: String,
-    progressCallback: js.UndefOr[scala.Nothing],
-    scryptParams: ScryptParams
-  ): String = js.native
-  @JSImport("bip38", "encrypt")
-  @js.native
+  @scala.inline
+  def encrypt(buffer: Buffer, compressed: Boolean, passphrase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(buffer.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def encrypt(
     buffer: Buffer,
     compressed: Boolean,
     passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit]
-  ): String = js.native
-  @JSImport("bip38", "encrypt")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(buffer.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def encrypt(
     buffer: Buffer,
     compressed: Boolean,
     passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit],
     scryptParams: ScryptParams
-  ): String = js.native
-  
-  @JSImport("bip38", "encryptRaw")
-  @js.native
-  def encryptRaw(buffer: Buffer, compressed: Boolean, passphrase: String): Buffer = js.native
-  @JSImport("bip38", "encryptRaw")
-  @js.native
-  def encryptRaw(
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(buffer.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any], scryptParams.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encrypt(
     buffer: Buffer,
     compressed: Boolean,
     passphrase: String,
-    progressCallback: js.UndefOr[scala.Nothing],
+    progressCallback: Unit,
     scryptParams: ScryptParams
-  ): Buffer = js.native
-  @JSImport("bip38", "encryptRaw")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(buffer.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any], scryptParams.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def encryptRaw(buffer: Buffer, compressed: Boolean, passphrase: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptRaw")(buffer.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
   def encryptRaw(
     buffer: Buffer,
     compressed: Boolean,
     passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit]
-  ): Buffer = js.native
-  @JSImport("bip38", "encryptRaw")
-  @js.native
+  ): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptRaw")(buffer.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
   def encryptRaw(
     buffer: Buffer,
     compressed: Boolean,
     passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit],
     scryptParams: ScryptParams
-  ): Buffer = js.native
+  ): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptRaw")(buffer.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any], scryptParams.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def encryptRaw(
+    buffer: Buffer,
+    compressed: Boolean,
+    passphrase: String,
+    progressCallback: Unit,
+    scryptParams: ScryptParams
+  ): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptRaw")(buffer.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any], scryptParams.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("bip38", "verify")
-  @js.native
-  def verify(string: String): Boolean = js.native
+  @scala.inline
+  def verify(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait ProgressStatus extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var percent: Double = js.native
+    var percent: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object ProgressStatus {
     
@@ -185,14 +151,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ScryptParams extends StObject {
     
-    var N: Double = js.native
+    var N: Double
     
-    var p: Double = js.native
+    var p: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object ScryptParams {
     

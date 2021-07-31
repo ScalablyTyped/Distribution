@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApproximateProgress extends StObject {
   
   /** Obsolete. */
-  var percentComplete: js.UndefOr[Double] = js.native
+  var percentComplete: js.UndefOr[Double] = js.undefined
   
   /** Obsolete. */
-  var position: js.UndefOr[Position] = js.native
+  var position: js.UndefOr[Position] = js.undefined
   
   /** Obsolete. */
-  var remainingTime: js.UndefOr[String] = js.native
+  var remainingTime: js.UndefOr[String] = js.undefined
 }
 object ApproximateProgress {
   

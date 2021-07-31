@@ -3,55 +3,53 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartValueAxisItem extends StObject {
   
-  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.native
+  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.undefined
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var crosshair: js.UndefOr[StockChartValueAxisItemCrosshair] = js.native
+  var crosshair: js.UndefOr[StockChartValueAxisItemCrosshair] = js.undefined
   
-  var labels: js.UndefOr[StockChartValueAxisItemLabels] = js.native
+  var labels: js.UndefOr[StockChartValueAxisItemLabels] = js.undefined
   
-  var line: js.UndefOr[StockChartValueAxisItemLine] = js.native
+  var line: js.UndefOr[StockChartValueAxisItemLine] = js.undefined
   
-  var majorGridLines: js.UndefOr[StockChartValueAxisItemMajorGridLines] = js.native
+  var majorGridLines: js.UndefOr[StockChartValueAxisItemMajorGridLines] = js.undefined
   
-  var majorTicks: js.UndefOr[StockChartValueAxisItemMajorTicks] = js.native
+  var majorTicks: js.UndefOr[StockChartValueAxisItemMajorTicks] = js.undefined
   
-  var majorUnit: js.UndefOr[Double] = js.native
+  var majorUnit: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var minorGridLines: js.UndefOr[StockChartValueAxisItemMinorGridLines] = js.native
+  var minorGridLines: js.UndefOr[StockChartValueAxisItemMinorGridLines] = js.undefined
   
-  var minorTicks: js.UndefOr[StockChartValueAxisItemMinorTicks] = js.native
+  var minorTicks: js.UndefOr[StockChartValueAxisItemMinorTicks] = js.undefined
   
-  var minorUnit: js.UndefOr[Double] = js.native
+  var minorUnit: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[js.Any] = js.native
+  var name: js.UndefOr[js.Any] = js.undefined
   
-  var narrowRange: js.UndefOr[Boolean] = js.native
+  var narrowRange: js.UndefOr[Boolean] = js.undefined
   
-  var notes: js.UndefOr[StockChartValueAxisItemNotes] = js.native
+  var notes: js.UndefOr[StockChartValueAxisItemNotes] = js.undefined
   
-  var pane: js.UndefOr[String] = js.native
+  var pane: js.UndefOr[String] = js.undefined
   
-  var plotBands: js.UndefOr[js.Array[StockChartValueAxisItemPlotBand]] = js.native
+  var plotBands: js.UndefOr[js.Array[StockChartValueAxisItemPlotBand]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[StockChartValueAxisItemTitle] = js.native
+  var title: js.UndefOr[StockChartValueAxisItemTitle] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object StockChartValueAxisItem {
   

@@ -3,27 +3,25 @@ package typings.azdata.mod.nb
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionManager extends StObject {
   
   /**
     * Indicates whether the manager is ready.
     */
-  val isReady: Boolean = js.native
+  val isReady: Boolean
   
   /**
     * A Thenable that is fulfilled when the manager is ready.
     */
-  val ready: Thenable[Unit] = js.native
+  val ready: Thenable[Unit]
   
-  def shutdown(id: String): Thenable[Unit] = js.native
+  def shutdown(id: String): Thenable[Unit]
   
-  val specs: js.UndefOr[IAllKernels] = js.native
+  val specs: js.UndefOr[IAllKernels] = js.undefined
   
-  def startNew(options: ISessionOptions): Thenable[ISession] = js.native
+  def startNew(options: ISessionOptions): Thenable[ISession]
 }
 object SessionManager {
   

@@ -3,40 +3,38 @@ package typings.lodash.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * By default, the template delimiters used by Lo-Dash are similar to those in embedded Ruby
   * (ERB). Change the following template settings to use alternative delimiters.
   **/
-@js.native
 trait TemplateSettings extends StObject {
   
   /**
     * The "escape" delimiter.
     **/
-  var escape: js.UndefOr[RegExp] = js.native
+  var escape: js.UndefOr[RegExp] = js.undefined
   
   /**
     * The "evaluate" delimiter.
     **/
-  var evaluate: js.UndefOr[RegExp] = js.native
+  var evaluate: js.UndefOr[RegExp] = js.undefined
   
   /**
     * An object to import into the template as local variables.
     */
-  var imports: js.UndefOr[Dictionary[_]] = js.native
+  var imports: js.UndefOr[Dictionary[js.Any]] = js.undefined
   
   /**
     * The "interpolate" delimiter.
     */
-  var interpolate: js.UndefOr[RegExp] = js.native
+  var interpolate: js.UndefOr[RegExp] = js.undefined
   
   /**
     * Used to reference the data object in the template text.
     */
-  var variable: js.UndefOr[java.lang.String] = js.native
+  var variable: js.UndefOr[java.lang.String] = js.undefined
 }
 object TemplateSettings {
   
@@ -62,7 +60,7 @@ object TemplateSettings {
     def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)
     
     @scala.inline
-    def setImports(value: Dictionary[_]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    def setImports(value: Dictionary[js.Any]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)

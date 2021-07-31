@@ -2,34 +2,32 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BankAccount extends StObject {
   
   // 银行名称
-  var bankAccount: String = js.native
+  var bankAccount: String
   
   // 手机号码
-  var bankName: String = js.native
+  var bankName: String
   
   // 抬头税号
-  var companyAddress: String = js.native
+  var companyAddress: String
   
   // 银行账号
-  var errMsg: String = js.native
+  var errMsg: String
   
   // 抬头名称
-  var taxNumber: String = js.native
+  var taxNumber: String
   
   // 单位地址
-  var telephone: String = js.native
+  var telephone: String
   
   // 抬头类型（0：单位，1：个人）
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object BankAccount {
   

@@ -7,14 +7,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
   
   @JSImport("@ionic/core/dist/types/components/list/list", "List")
   @js.native
-  class List () extends ComponentInterface {
+  class List ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * If `ion-item-sliding` are used inside the list, this method closes

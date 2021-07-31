@@ -7,12 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import typings.arcgisJsApi.arcgisJsApiStrings.stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StreamLayer
-  extends Layer
+  extends StObject
+     with Layer
      with ScaleRangeLayer
      with TemporalLayer
      with BlendLayer {

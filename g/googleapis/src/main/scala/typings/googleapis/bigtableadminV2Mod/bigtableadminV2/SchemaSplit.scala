@@ -2,19 +2,17 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An initial split point for a newly created table.
   */
-@js.native
 trait SchemaSplit extends StObject {
   
   /**
     * Row key to use as an initial tablet boundary.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
 }
 object SchemaSplit {
   

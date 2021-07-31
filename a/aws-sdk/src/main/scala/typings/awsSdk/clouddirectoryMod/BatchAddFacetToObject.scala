@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchAddFacetToObject extends StObject {
   
   /**
     * The attributes to set on the object.
     */
-  var ObjectAttributeList: AttributeKeyAndValueList = js.native
+  var ObjectAttributeList: AttributeKeyAndValueList
   
   /**
     * A reference to the object being mutated.
     */
-  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference = js.native
+  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference
   
   /**
     * Represents the facet being added to the object.
     */
-  var SchemaFacet: typings.awsSdk.clouddirectoryMod.SchemaFacet = js.native
+  var SchemaFacet: typings.awsSdk.clouddirectoryMod.SchemaFacet
 }
 object BatchAddFacetToObject {
   

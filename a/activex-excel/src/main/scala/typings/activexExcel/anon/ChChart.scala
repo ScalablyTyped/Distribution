@@ -3,13 +3,11 @@ package typings.activexExcel.anon
 import typings.activexExcel.Excel.Chart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChChart extends StObject {
   
-  val Ch: Chart = js.native
+  val Ch: Chart
 }
 object ChChart {
   

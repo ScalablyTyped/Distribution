@@ -2,15 +2,13 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaStatefulPolicy extends StObject {
   
-  var preservedResources: js.UndefOr[SchemaStatefulPolicyPreservedResources] = js.native
+  var preservedResources: js.UndefOr[SchemaStatefulPolicyPreservedResources] = js.undefined
   
-  var preservedState: js.UndefOr[SchemaStatefulPolicyPreservedState] = js.native
+  var preservedState: js.UndefOr[SchemaStatefulPolicyPreservedState] = js.undefined
 }
 object SchemaStatefulPolicy {
   

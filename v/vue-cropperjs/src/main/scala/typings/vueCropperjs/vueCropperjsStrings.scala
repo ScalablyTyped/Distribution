@@ -3,7 +3,6 @@ package typings.vueCropperjs
 import typings.vueCropperjs.mod.DragMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vueCropperjsStrings {
@@ -14,7 +13,9 @@ object vueCropperjsStrings {
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait crop extends DragMode
+  sealed trait crop
+    extends StObject
+       with DragMode
   @scala.inline
   def crop: crop = "crop".asInstanceOf[crop]
   
@@ -34,12 +35,16 @@ object vueCropperjsStrings {
   def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait move extends DragMode
+  sealed trait move
+    extends StObject
+       with DragMode
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait none extends DragMode
+  sealed trait none
+    extends StObject
+       with DragMode
   @scala.inline
   def none: none = "none".asInstanceOf[none]
 }

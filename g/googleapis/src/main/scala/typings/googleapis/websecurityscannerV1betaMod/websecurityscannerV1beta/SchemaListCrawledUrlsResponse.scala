@@ -2,25 +2,23 @@ package typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the `ListCrawledUrls` method.
   */
-@js.native
 trait SchemaListCrawledUrlsResponse extends StObject {
   
   /**
     * The list of CrawledUrls returned.
     */
-  var crawledUrls: js.UndefOr[js.Array[SchemaCrawledUrl]] = js.native
+  var crawledUrls: js.UndefOr[js.Array[SchemaCrawledUrl]] = js.undefined
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListCrawledUrlsResponse {
   

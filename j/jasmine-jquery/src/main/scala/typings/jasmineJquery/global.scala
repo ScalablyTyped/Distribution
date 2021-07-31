@@ -9,30 +9,24 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
-  @JSGlobal("appendLoadFixtures")
-  @js.native
-  def appendLoadFixtures(uls: String*): Unit = js.native
+  @scala.inline
+  def appendLoadFixtures(uls: String*): Unit = js.Dynamic.global.applyDynamic("appendLoadFixtures")(uls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("appendLoadStyleFixtures")
-  @js.native
-  def appendLoadStyleFixtures(uls: String*): Unit = js.native
+  @scala.inline
+  def appendLoadStyleFixtures(uls: String*): Unit = js.Dynamic.global.applyDynamic("appendLoadStyleFixtures")(uls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("appendSetFixtures")
-  @js.native
-  def appendSetFixtures(html: String): Unit = js.native
+  @scala.inline
+  def appendSetFixtures(html: String): Unit = js.Dynamic.global.applyDynamic("appendSetFixtures")(html.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("appendSetStyleFixtures")
-  @js.native
-  def appendSetStyleFixtures(html: String): Unit = js.native
+  @scala.inline
+  def appendSetStyleFixtures(html: String): Unit = js.Dynamic.global.applyDynamic("appendSetStyleFixtures")(html.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("getJSONFixture")
-  @js.native
-  def getJSONFixture(url: String): js.Any = js.native
+  @scala.inline
+  def getJSONFixture(url: String): js.Any = js.Dynamic.global.applyDynamic("getJSONFixture")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object jasmine {
     
@@ -46,63 +40,48 @@ object global {
     @scala.inline
     def JQuery_=(x: JasmineJQuery): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JQuery")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("jasmine.getFixtures")
-    @js.native
-    def getFixtures(): Fixtures = js.native
+    @scala.inline
+    def getFixtures(): Fixtures = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixtures")().asInstanceOf[Fixtures]
     
-    @JSGlobal("jasmine.getJSONFixtures")
-    @js.native
-    def getJSONFixtures(): JSONFixtures = js.native
+    @scala.inline
+    def getJSONFixtures(): JSONFixtures = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSONFixtures")().asInstanceOf[JSONFixtures]
     
-    @JSGlobal("jasmine.getStyleFixtures")
-    @js.native
-    def getStyleFixtures(): StyleFixtures = js.native
+    @scala.inline
+    def getStyleFixtures(): StyleFixtures = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyleFixtures")().asInstanceOf[StyleFixtures]
     
-    @JSGlobal("jasmine.spiedEventsKey")
-    @js.native
-    def spiedEventsKey(selector: JQuery[HTMLElement], eventName: String): String = js.native
+    @scala.inline
+    def spiedEventsKey(selector: JQuery[HTMLElement], eventName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("spiedEventsKey")(selector.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @JSGlobal("loadFixtures")
-  @js.native
-  def loadFixtures(uls: String*): Unit = js.native
+  @scala.inline
+  def loadFixtures(uls: String*): Unit = js.Dynamic.global.applyDynamic("loadFixtures")(uls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("loadJSONFixtures")
-  @js.native
-  def loadJSONFixtures(uls: String*): JSONFixtures = js.native
+  @scala.inline
+  def loadJSONFixtures(uls: String*): JSONFixtures = js.Dynamic.global.applyDynamic("loadJSONFixtures")(uls.asInstanceOf[js.Any]).asInstanceOf[JSONFixtures]
   
-  @JSGlobal("loadStyleFixtures")
-  @js.native
-  def loadStyleFixtures(uls: String*): Unit = js.native
+  @scala.inline
+  def loadStyleFixtures(uls: String*): Unit = js.Dynamic.global.applyDynamic("loadStyleFixtures")(uls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("preloadFixtures")
-  @js.native
-  def preloadFixtures(uls: String*): Unit = js.native
+  @scala.inline
+  def preloadFixtures(uls: String*): Unit = js.Dynamic.global.applyDynamic("preloadFixtures")(uls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("preloadStyleFixtures")
-  @js.native
-  def preloadStyleFixtures(uls: String*): Unit = js.native
+  @scala.inline
+  def preloadStyleFixtures(uls: String*): Unit = js.Dynamic.global.applyDynamic("preloadStyleFixtures")(uls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("readFixtures")
-  @js.native
-  def readFixtures(uls: String*): String = js.native
+  @scala.inline
+  def readFixtures(uls: String*): String = js.Dynamic.global.applyDynamic("readFixtures")(uls.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("sandbox")
-  @js.native
-  def sandbox(): String = js.native
-  @JSGlobal("sandbox")
-  @js.native
-  def sandbox(attributes: js.Any): String = js.native
+  @scala.inline
+  def sandbox(): String = js.Dynamic.global.applyDynamic("sandbox")().asInstanceOf[String]
+  @scala.inline
+  def sandbox(attributes: js.Any): String = js.Dynamic.global.applyDynamic("sandbox")(attributes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("setFixtures")
-  @js.native
-  def setFixtures(html: String): String = js.native
+  @scala.inline
+  def setFixtures(html: String): String = js.Dynamic.global.applyDynamic("setFixtures")(html.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("setStyleFixtures")
-  @js.native
-  def setStyleFixtures(html: String): Unit = js.native
+  @scala.inline
+  def setStyleFixtures(html: String): Unit = js.Dynamic.global.applyDynamic("setStyleFixtures")(html.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("spyOnEvent")
-  @js.native
-  def spyOnEvent(selector: String, eventName: String): JQueryEventSpy = js.native
+  @scala.inline
+  def spyOnEvent(selector: String, eventName: String): JQueryEventSpy = (js.Dynamic.global.applyDynamic("spyOnEvent")(selector.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[JQueryEventSpy]
 }

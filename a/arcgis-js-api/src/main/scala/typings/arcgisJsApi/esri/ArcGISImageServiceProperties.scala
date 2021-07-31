@@ -27,10 +27,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.u8
 import typings.arcgisJsApi.arcgisJsApiStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArcGISImageServiceProperties extends StObject {
   
   /**
@@ -38,133 +36,133 @@ trait ArcGISImageServiceProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var capabilities: js.UndefOr[ArcGISImageServiceCapabilities] = js.native
+  var capabilities: js.UndefOr[ArcGISImageServiceCapabilities] = js.undefined
   
   /**
     * The compression quality value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#compressionQuality)
     */
-  var compressionQuality: js.UndefOr[Double] = js.native
+  var compressionQuality: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls the tolerance of the lerc compression algorithm.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#compressionTolerance)
     */
-  var compressionTolerance: js.UndefOr[Double] = js.native
+  var compressionTolerance: js.UndefOr[Double] = js.undefined
   
   /**
     * The copyright text as defined by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#copyright)
     */
-  var copyright: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[String] = js.undefined
   
   /**
     * The SQL where clause used to filter rasters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#definitionExpression)
     */
-  var definitionExpression: js.UndefOr[String] = js.native
+  var definitionExpression: js.UndefOr[String] = js.undefined
   
   /**
     * An array of fields in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fields)
     */
-  var fields: js.UndefOr[js.Array[FieldProperties]] = js.native
+  var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   
   /**
     * The format of the exported image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#format)
     */
-  var format: js.UndefOr[png | png8 | png24 | png32 | jpg | bmp | gif | jpgpng | lerc | tiff] = js.native
+  var format: js.UndefOr[png | png8 | png24 | png32 | jpg | bmp | gif | jpgpng | lerc | tiff] = js.undefined
   
   /**
     * Indicates if the layer has [multidimensionalInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalInfo).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasMultidimensions)
     */
-  var hasMultidimensions: js.UndefOr[Boolean] = js.native
+  var hasMultidimensions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates the maximum height of the image exported by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#imageMaxHeight)
     */
-  var imageMaxHeight: js.UndefOr[Double] = js.native
+  var imageMaxHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the maximum width of the image exported by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#imageMaxWidth)
     */
-  var imageMaxWidth: js.UndefOr[Double] = js.native
+  var imageMaxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines how to interpolate pixel values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#interpolation)
     */
-  var interpolation: js.UndefOr[nearest | bilinear | cubic | majority] = js.native
+  var interpolation: js.UndefOr[nearest | bilinear | cubic | majority] = js.undefined
   
   /**
     * Defines how overlapping images should be mosaicked.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#mosaicRule)
     */
-  var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.native
+  var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.undefined
   
   /**
     * The multidimensional information associated with the layer if the layer's [hasMultidimensions](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasMultidimensions) property is `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalInfo)
     */
-  var multidimensionalInfo: js.UndefOr[js.Any] = js.native
+  var multidimensionalInfo: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The pixel value representing no available information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#noData)
     */
-  var noData: js.UndefOr[Double | js.Array[Double]] = js.native
+  var noData: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   /**
     * Interpretation of the [noData](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#noData) setting.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#noDataInterpretation)
     */
-  var noDataInterpretation: js.UndefOr[any | all] = js.native
+  var noDataInterpretation: js.UndefOr[any | all] = js.undefined
   
   /**
     * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fields) containing a unique value or identifier for each raster in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#objectIdField)
     */
-  var objectIdField: js.UndefOr[String] = js.native
+  var objectIdField: js.UndefOr[String] = js.undefined
   
   /**
     * A function that processes [pixelData](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-ImageryLayerView.html#pixelData).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#pixelFilter)
     */
-  var pixelFilter: js.UndefOr[PixelFilterFunction] = js.native
+  var pixelFilter: js.UndefOr[PixelFilterFunction] = js.undefined
   
   /**
     * Raster source pixel type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#pixelType)
     */
-  var pixelType: js.UndefOr[unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64] = js.native
+  var pixelType: js.UndefOr[unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64] = js.undefined
   
   /**
     * Prefix used to define the fields from the raster attribute table.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTableFieldPrefix)
     */
-  var rasterAttributeTableFieldPrefix: js.UndefOr[String] = js.native
+  var rasterAttributeTableFieldPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * The renderer assigned to the layer.
@@ -173,28 +171,28 @@ trait ArcGISImageServiceProperties extends StObject {
     */
   var renderer: js.UndefOr[
     ClassBreaksRendererProperties | UniqueValueRendererProperties | RasterStretchRendererProperties | RasterShadedReliefRendererProperties | RasterColormapRendererProperties
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies the rule for how the requested image should be rendered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderingRule)
     */
-  var renderingRule: js.UndefOr[RasterFunctionProperties] = js.native
+  var renderingRule: js.UndefOr[RasterFunctionProperties] = js.undefined
   
   /**
     * The [image service's metadata JSON](https://developers.arcgis.com/rest/services-reference/image-service.htm) exposed by the ArcGIS REST API.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.native
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The URL to the REST endpoint of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ArcGISImageServiceProperties {
   

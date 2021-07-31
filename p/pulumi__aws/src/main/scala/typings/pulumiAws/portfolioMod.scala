@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portfolioMod {
@@ -25,7 +24,7 @@ object portfolioMod {
       */
     def this(name: String) = this()
     def this(name: String, args: PortfolioArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: PortfolioArgs, opts: CustomResourceOptions) = this()
     
     val arn: Output_[String] = js.native
@@ -55,6 +54,10 @@ object portfolioMod {
   /* static members */
   object Portfolio {
     
+    @JSImport("@pulumi/aws/servicecatalog/portfolio", "Portfolio")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Portfolio resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -64,50 +67,44 @@ object portfolioMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/servicecatalog/portfolio", "Portfolio.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Portfolio = js.native
-    @JSImport("@pulumi/aws/servicecatalog/portfolio", "Portfolio.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Portfolio = js.native
-    @JSImport("@pulumi/aws/servicecatalog/portfolio", "Portfolio.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PortfolioState): Portfolio = js.native
-    @JSImport("@pulumi/aws/servicecatalog/portfolio", "Portfolio.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PortfolioState, opts: CustomResourceOptions): Portfolio = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PortfolioState): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PortfolioState, opts: CustomResourceOptions): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
     
     /**
       * Returns true if the given object is an instance of Portfolio.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/servicecatalog/portfolio", "Portfolio.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicecatalog/portfolio.Portfolio */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicecatalog/portfolio.Portfolio */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicecatalog/portfolio.Portfolio */ Boolean]
   }
   
-  @js.native
   trait PortfolioArgs extends StObject {
     
     /**
       * Description of the portfolio
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the portfolio.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the person or organization who owns the portfolio.
       */
-    val providerName: js.UndefOr[Input[String]] = js.native
+    val providerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Tags to apply to the connection.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object PortfolioArgs {
     
@@ -146,32 +143,31 @@ object portfolioMod {
     }
   }
   
-  @js.native
   trait PortfolioState extends StObject {
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
-    val createdTime: js.UndefOr[Input[String]] = js.native
+    val createdTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the portfolio
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the portfolio.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the person or organization who owns the portfolio.
       */
-    val providerName: js.UndefOr[Input[String]] = js.native
+    val providerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Tags to apply to the connection.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object PortfolioState {
     

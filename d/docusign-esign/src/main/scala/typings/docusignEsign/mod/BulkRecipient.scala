@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkRecipient extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait BulkRecipient extends StObject {
     *
     * If blank and the signer `accessCode` property is not set, then the access code is not required.
     */
-  var accessCode: js.UndefOr[String] = js.native
+  var accessCode: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the recipient's email address.
     *
     * Maximum length: 100 characters.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Array or errors.
@@ -33,7 +31,7 @@ trait BulkRecipient extends StObject {
     js.Array[
       /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies the authentication check used for the signer. If blank then no authentication check is required for the signer. Only one value can be used in this field.
@@ -44,14 +42,14 @@ trait BulkRecipient extends StObject {
     * * Phone: Enables phone authentication.
     * * SMS: Enables SMS authentication.
     */
-  var identification: js.UndefOr[String] = js.native
+  var identification: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the recipient's name.
     *
     * Maximum length: 50 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A note sent to the recipient in the signing email.
@@ -64,7 +62,7 @@ trait BulkRecipient extends StObject {
     * Maximum Length: 1000 characters.
     *
     */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
   /**
     * This is only used if the Identification field value is Phone or SMS. The value for this field can be a valid telephone number or, if Phone,
@@ -72,11 +70,11 @@ trait BulkRecipient extends StObject {
     *
     * If `usersupplied` is used, the signer supplies his or her own telephone number.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
-  var recipientSignatureProviderInfo: js.UndefOr[js.Array[BulkRecipientSignatureProvider]] = js.native
+  var recipientSignatureProviderInfo: js.UndefOr[js.Array[BulkRecipientSignatureProvider]] = js.undefined
   
-  var rowNumber: js.UndefOr[String] = js.native
+  var rowNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies values used to populate recipient tabs with information. This allows each bulk recipient signer to have different values
@@ -89,7 +87,7 @@ trait BulkRecipient extends StObject {
     * Note that this option cannot be used for tabs that do not have data or that are automatically populated data such as Signature,
     * Full Name, Email Address, Company, Title, and Date Signed tabs.
     */
-  var tabLabels: js.UndefOr[js.Array[BulkRecipientTabLabel]] = js.native
+  var tabLabels: js.UndefOr[js.Array[BulkRecipientTabLabel]] = js.undefined
 }
 object BulkRecipient {
   

@@ -2,26 +2,24 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XIconSetEntry extends StObject {
   
-  var Formula: String = js.native
+  var Formula: String
   
   /** See com.sun.star.sheet.IconSetEntryType for possible values. */
-  var Type: Double = js.native
+  var Type: Double
   
-  def getFormula(): String = js.native
-  
-  /** See com.sun.star.sheet.IconSetEntryType for possible values. */
-  def getType(): Double = js.native
-  
-  def setFormula(Formula: String): Unit = js.native
+  def getFormula(): String
   
   /** See com.sun.star.sheet.IconSetEntryType for possible values. */
-  def setType(Type: Double): Unit = js.native
+  def getType(): Double
+  
+  def setFormula(Formula: String): Unit
+  
+  /** See com.sun.star.sheet.IconSetEntryType for possible values. */
+  def setType(Type: Double): Unit
 }
 object XIconSetEntry {
   

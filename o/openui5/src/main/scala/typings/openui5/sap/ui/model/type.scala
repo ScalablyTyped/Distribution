@@ -2,22 +2,27 @@ package typings.openui5.sap.ui.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object `type` {
   
   @js.native
-  trait Boolean extends SimpleType
+  trait Boolean
+    extends StObject
+       with SimpleType
   
   @js.native
-  trait Currency extends CompositeType {
+  trait Currency
+    extends StObject
+       with CompositeType {
     
     def formatValue(vValue: java.lang.String, sInternalType: java.lang.String): js.Any = js.native
   }
   
   @js.native
-  trait Date extends SimpleType {
+  trait Date
+    extends StObject
+       with SimpleType {
     
     /**
       */
@@ -25,20 +30,32 @@ object `type` {
   }
   
   @js.native
-  trait DateTime extends Date
+  trait DateTime
+    extends StObject
+       with Date
   
   @js.native
-  trait FileSize extends SimpleType
+  trait FileSize
+    extends StObject
+       with SimpleType
   
   @js.native
-  trait Float extends SimpleType
+  trait Float
+    extends StObject
+       with SimpleType
   
   @js.native
-  trait Integer extends SimpleType
+  trait Integer
+    extends StObject
+       with SimpleType
   
   @js.native
-  trait String extends SimpleType
+  trait String
+    extends StObject
+       with SimpleType
   
   @js.native
-  trait Time extends Date
+  trait Time
+    extends StObject
+       with Date
 }

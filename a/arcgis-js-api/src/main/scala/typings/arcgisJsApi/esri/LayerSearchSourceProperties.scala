@@ -2,67 +2,67 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayerSearchSourceProperties extends SearchSourceProperties {
+trait LayerSearchSourceProperties
+  extends StObject
+     with SearchSourceProperties {
   
   /**
     * The results are displayed using this field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#displayField)
     */
-  var displayField: js.UndefOr[String] = js.native
+  var displayField: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates to only return results that match the search value exactly.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#exactMatch)
     */
-  var exactMatch: js.UndefOr[Boolean] = js.native
+  var exactMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layer queried in the search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#layer)
     */
-  var layer: js.UndefOr[LayerProperties] = js.native
+  var layer: js.UndefOr[LayerProperties] = js.undefined
   
   /**
     * The name of the source for display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#name)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * One or more field names used to order the query results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#orderByFields)
     */
-  var orderByFields: js.UndefOr[js.Array[String]] = js.native
+  var orderByFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An array of string values representing the names of fields in the feature layer to search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#searchFields)
     */
-  var searchFields: js.UndefOr[js.Array[String]] = js.native
+  var searchFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A template string used to display multiple fields in a defined order when results are displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#searchTemplate)
     */
-  var searchTemplate: js.UndefOr[String] = js.native
+  var searchTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * A template string used to display multiple fields in a defined order when suggestions are displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#suggestionTemplate)
     */
-  var suggestionTemplate: js.UndefOr[String] = js.native
+  var suggestionTemplate: js.UndefOr[String] = js.undefined
 }
 object LayerSearchSourceProperties {
   

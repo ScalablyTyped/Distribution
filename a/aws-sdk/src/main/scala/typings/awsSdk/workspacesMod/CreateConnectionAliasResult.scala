@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateConnectionAliasResult extends StObject {
   
   /**
     * The identifier of the connection alias.
     */
-  var AliasId: js.UndefOr[ConnectionAliasId] = js.native
+  var AliasId: js.UndefOr[ConnectionAliasId] = js.undefined
 }
 object CreateConnectionAliasResult {
   

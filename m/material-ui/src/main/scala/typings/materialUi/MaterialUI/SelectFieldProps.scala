@@ -9,57 +9,55 @@ import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectFieldProps extends StObject {
   
   // <DropDownMenu/> is the element that get the 'other' properties
-  var autoWidth: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.undefined
   
   // useful attributes passed to <DropDownMenu/>
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var dropDownMenuProps: js.UndefOr[DropDownMenuProps] = js.native
+  var dropDownMenuProps: js.UndefOr[DropDownMenuProps] = js.undefined
   
-  var errorStyle: js.UndefOr[CSSProperties] = js.native
+  var errorStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var errorText: js.UndefOr[ReactNode] = js.native
+  var errorText: js.UndefOr[ReactNode] = js.undefined
   
-  var floatingLabelFixed: js.UndefOr[Boolean] = js.native
+  var floatingLabelFixed: js.UndefOr[Boolean] = js.undefined
   
-  var floatingLabelStyle: js.UndefOr[CSSProperties] = js.native
+  var floatingLabelStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var floatingLabelText: js.UndefOr[ReactNode] = js.native
+  var floatingLabelText: js.UndefOr[ReactNode] = js.undefined
   
-  var fullWidth: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
   
-  var hintStyle: js.UndefOr[CSSProperties] = js.native
+  var hintStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var hintText: js.UndefOr[ReactNode] = js.native
+  var hintText: js.UndefOr[ReactNode] = js.undefined
   
-  var iconStyle: js.UndefOr[CSSProperties] = js.native
+  var iconStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var labelStyle: js.UndefOr[CSSProperties] = js.native
+  var labelStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var listStyle: js.UndefOr[CSSProperties] = js.native
+  var listStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var menuItemStyle: js.UndefOr[CSSProperties] = js.native
+  var menuItemStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var menuStyle: js.UndefOr[js.Any] = js.native
+  var menuStyle: js.UndefOr[js.Any] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   
   var onChange: js.UndefOr[
     js.Function3[
@@ -68,27 +66,27 @@ trait SelectFieldProps extends StObject {
       /* menuItemValue */ js.Any, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   
-  var openImmediately: js.UndefOr[Boolean] = js.native
+  var openImmediately: js.UndefOr[Boolean] = js.undefined
   
-  var selectFieldRoot: js.UndefOr[CSSProperties] = js.native
+  var selectFieldRoot: js.UndefOr[CSSProperties] = js.undefined
   
-  var selectedMenuItemStyle: js.UndefOr[CSSProperties] = js.native
+  var selectedMenuItemStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var selectionRenderer: js.UndefOr[js.Function1[/* value */ js.Any, ReactNode]] = js.native
+  var selectionRenderer: js.UndefOr[js.Function1[/* value */ js.Any, ReactNode]] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var underlineDisabledStyle: js.UndefOr[CSSProperties] = js.native
+  var underlineDisabledStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var underlineFocusStyle: js.UndefOr[CSSProperties] = js.native
+  var underlineFocusStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var underlineStyle: js.UndefOr[CSSProperties] = js.native
+  var underlineStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object SelectFieldProps {
   

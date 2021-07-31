@@ -2,13 +2,11 @@ package typings.winrt.Windows.ApplicationModel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISuspendingEventArgs extends StObject {
   
-  var suspendingOperation: SuspendingOperation = js.native
+  var suspendingOperation: SuspendingOperation
 }
 object ISuspendingEventArgs {
   

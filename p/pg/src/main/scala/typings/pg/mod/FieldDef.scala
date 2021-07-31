@@ -2,25 +2,23 @@ package typings.pg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldDef extends StObject {
   
-  var columnID: Double = js.native
+  var columnID: Double
   
-  var dataTypeID: Double = js.native
+  var dataTypeID: Double
   
-  var dataTypeModifier: Double = js.native
+  var dataTypeModifier: Double
   
-  var dataTypeSize: Double = js.native
+  var dataTypeSize: Double
   
-  var format: String = js.native
+  var format: String
   
-  var name: String = js.native
+  var name: String
   
-  var tableID: Double = js.native
+  var tableID: Double
 }
 object FieldDef {
   

@@ -2,7 +2,6 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "BoolFilter")
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   A Filter that matches documents matching boolean combinations of other
   filters.
   */
-class BoolFilter () extends Filter {
+class BoolFilter ()
+  extends StObject
+     with Filter {
   
   /*
     The type of ejs object.  For internal use only.

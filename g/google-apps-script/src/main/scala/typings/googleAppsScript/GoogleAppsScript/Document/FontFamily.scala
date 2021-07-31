@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,98 +38,162 @@ sealed trait FontFamily extends StObject
 object FontFamily extends StObject {
   
   @js.native
-  sealed trait AMARANTH extends FontFamily
+  sealed trait AMARANTH
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait ARIAL extends FontFamily
+  sealed trait ARIAL
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait ARIAL_BLACK extends FontFamily
+  sealed trait ARIAL_BLACK
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait ARIAL_NARROW extends FontFamily
+  sealed trait ARIAL_NARROW
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait ARVO extends FontFamily
+  sealed trait ARVO
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait CALIBRI extends FontFamily
+  sealed trait CALIBRI
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait CAMBRIA extends FontFamily
+  sealed trait CAMBRIA
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait COMIC_SANS_MS extends FontFamily
+  sealed trait COMIC_SANS_MS
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait CONSOLAS extends FontFamily
+  sealed trait CONSOLAS
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait CORSIVA extends FontFamily
+  sealed trait CORSIVA
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait COURIER_NEW extends FontFamily
+  sealed trait COURIER_NEW
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait DANCING_SCRIPT extends FontFamily
+  sealed trait DANCING_SCRIPT
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait DROID_SANS extends FontFamily
+  sealed trait DROID_SANS
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait DROID_SERIF extends FontFamily
+  sealed trait DROID_SERIF
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait GARAMOND extends FontFamily
+  sealed trait GARAMOND
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait GEORGIA extends FontFamily
+  sealed trait GEORGIA
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait GLORIA_HALLELUJAH extends FontFamily
+  sealed trait GLORIA_HALLELUJAH
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait GREAT_VIBES extends FontFamily
+  sealed trait GREAT_VIBES
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait LOBSTER extends FontFamily
+  sealed trait LOBSTER
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait MERRIWEATHER extends FontFamily
+  sealed trait MERRIWEATHER
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait PACIFICO extends FontFamily
+  sealed trait PACIFICO
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait PHILOSOPHER extends FontFamily
+  sealed trait PHILOSOPHER
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait POIRET_ONE extends FontFamily
+  sealed trait POIRET_ONE
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait QUATTROCENTO extends FontFamily
+  sealed trait QUATTROCENTO
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait ROBOTO extends FontFamily
+  sealed trait ROBOTO
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait SHADOWS_INTO_LIGHT extends FontFamily
+  sealed trait SHADOWS_INTO_LIGHT
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait SYNCOPATE extends FontFamily
+  sealed trait SYNCOPATE
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait TAHOMA extends FontFamily
+  sealed trait TAHOMA
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait TIMES_NEW_ROMAN extends FontFamily
+  sealed trait TIMES_NEW_ROMAN
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait TREBUCHET_MS extends FontFamily
+  sealed trait TREBUCHET_MS
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait UBUNTU extends FontFamily
+  sealed trait UBUNTU
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait VERDANA extends FontFamily
+  sealed trait VERDANA
+    extends StObject
+       with FontFamily
 }

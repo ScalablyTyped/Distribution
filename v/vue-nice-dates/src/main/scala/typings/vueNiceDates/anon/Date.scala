@@ -5,27 +5,25 @@ import typings.vueNiceDates.sharedMod.Modifiers
 import typings.vueNiceDates.sharedMod.ModifiersClassNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Date extends StObject {
   
-  var date: typings.std.Date | String = js.native
+  var date: typings.std.Date | String
   
-  var enableGridSwitch: Boolean = js.native
+  var enableGridSwitch: Boolean
   
-  var initialDate: js.UndefOr[typings.std.Date] = js.native
+  var initialDate: js.UndefOr[typings.std.Date] = js.undefined
   
-  var locale: DateLocale = js.native
+  var locale: DateLocale
   
-  var maximumDate: typings.std.Date | Null = js.native
+  var maximumDate: typings.std.Date | Null
   
-  var minimumDate: typings.std.Date | Null = js.native
+  var minimumDate: typings.std.Date | Null
   
-  var modifiers: Modifiers = js.native
+  var modifiers: Modifiers
   
-  var modifiersClassNames: ModifiersClassNames = js.native
+  var modifiersClassNames: ModifiersClassNames
 }
 object Date {
   
@@ -37,7 +35,7 @@ object Date {
     modifiers: Modifiers,
     modifiersClassNames: ModifiersClassNames
   ): Date = {
-    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], enableGridSwitch = enableGridSwitch.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], modifiersClassNames = modifiersClassNames.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], enableGridSwitch = enableGridSwitch.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], modifiersClassNames = modifiersClassNames.asInstanceOf[js.Any], maximumDate = null, minimumDate = null)
     __obj.asInstanceOf[Date]
   }
   

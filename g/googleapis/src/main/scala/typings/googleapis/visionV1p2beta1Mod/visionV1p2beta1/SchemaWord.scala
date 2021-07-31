@@ -2,13 +2,11 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A word representation.
   */
-@js.native
 trait SchemaWord extends StObject {
   
   /**
@@ -21,23 +19,23 @@ trait SchemaWord extends StObject {
     * top-left corner it becomes:      2----3      |    |      1----0   and the
     * vertex order will still be (0, 1, 2, 3).
     */
-  var boundingBox: js.UndefOr[SchemaBoundingPoly] = js.native
+  var boundingBox: js.UndefOr[SchemaBoundingPoly] = js.undefined
   
   /**
     * Confidence of the OCR results for the word. Range [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Additional information detected for the word.
     */
-  var property: js.UndefOr[SchemaTextProperty] = js.native
+  var property: js.UndefOr[SchemaTextProperty] = js.undefined
   
   /**
     * List of symbols in the word. The order of the symbols follows the natural
     * reading order.
     */
-  var symbols: js.UndefOr[js.Array[SchemaSymbol]] = js.native
+  var symbols: js.UndefOr[js.Array[SchemaSymbol]] = js.undefined
 }
 object SchemaWord {
   

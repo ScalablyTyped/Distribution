@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidTest extends StObject {
   
   /** Information about the application under test. */
-  var androidAppInfo: js.UndefOr[AndroidAppInfo] = js.native
+  var androidAppInfo: js.UndefOr[AndroidAppInfo] = js.undefined
   
   /** An Android instrumentation test. */
-  var androidInstrumentationTest: js.UndefOr[AndroidInstrumentationTest] = js.native
+  var androidInstrumentationTest: js.UndefOr[AndroidInstrumentationTest] = js.undefined
   
   /** An Android robo test. */
-  var androidRoboTest: js.UndefOr[AndroidRoboTest] = js.native
+  var androidRoboTest: js.UndefOr[AndroidRoboTest] = js.undefined
   
   /** An Android test loop. */
-  var androidTestLoop: js.UndefOr[js.Any] = js.native
+  var androidTestLoop: js.UndefOr[js.Any] = js.undefined
   
   /** Max time a test is allowed to run before it is automatically cancelled. */
-  var testTimeout: js.UndefOr[Duration] = js.native
+  var testTimeout: js.UndefOr[Duration] = js.undefined
 }
 object AndroidTest {
   

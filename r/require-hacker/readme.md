@@ -11,8 +11,8 @@ Provides a hooking mechanism for Node.js require() calls
 | Full name          | require-hacker |
 | Keywords           | require |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 824486 |
+| # dependents       | 20 |
+| # downloads        | 857761 |
 | # stars            | 7 |
 
 ## Links

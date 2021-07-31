@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait V extends StObject {
   
-  var v: js.UndefOr[String] = js.native
+  var v: js.UndefOr[String] = js.undefined
 }
 object V {
   

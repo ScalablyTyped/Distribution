@@ -3,15 +3,15 @@ package typings.leaflet.mod
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TileEvent extends LeafletEvent {
+trait TileEvent
+  extends StObject
+     with LeafletEvent {
   
-  var coords: Coords = js.native
+  var coords: Coords
   
-  var tile: HTMLImageElement = js.native
+  var tile: HTMLImageElement
 }
 object TileEvent {
   

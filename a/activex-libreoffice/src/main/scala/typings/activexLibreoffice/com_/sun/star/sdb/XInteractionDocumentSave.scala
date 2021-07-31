@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
 import typings.activexLibreoffice.com_.sun.star.ucb.XContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,15 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This continuation is typically used in conjunction with a {@link com.sun.star.sdb.DocumentSaveRequest} .
   * @since OOo 2.0
   */
-@js.native
-trait XInteractionDocumentSave extends XInteractionContinuation {
+trait XInteractionDocumentSave
+  extends StObject
+     with XInteractionContinuation {
   
   /**
     * set the document name chosen by the interaction handler
     * @param Name the name of the document
     * @param Content the content where the document should store itself
     */
-  def setName(Name: String, Content: XContent): Unit = js.native
+  def setName(Name: String, Content: XContent): Unit
 }
 object XInteractionDocumentSave {
   

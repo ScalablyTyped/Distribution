@@ -2,17 +2,15 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputObjectFieldConfig extends StObject {
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var `type`: GraphQLInputType = js.native
+  var `type`: GraphQLInputType
 }
 object InputObjectFieldConfig {
   

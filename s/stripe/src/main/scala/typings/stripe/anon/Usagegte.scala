@@ -2,16 +2,14 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Usagegte extends StObject {
   
   /**
     * Usage threshold that triggers the subscription to create an invoice
     */
-  var usage_gte: Double = js.native
+  var usage_gte: Double
 }
 object Usagegte {
   

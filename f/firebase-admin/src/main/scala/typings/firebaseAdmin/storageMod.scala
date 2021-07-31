@@ -4,19 +4,20 @@ import typings.firebaseAdmin.firebaseNamespaceApiMod.app.App
 import typings.googleCloudStorage.mod.Bucket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storageMod {
   
   object storage {
     
+    @scala.inline
+    def apply(): Storage = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Storage]
+    @scala.inline
+    def apply(app: App): Storage = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Storage]
+    
     @JSImport("firebase-admin/lib/storage", "storage")
     @js.native
-    def apply(): Storage = js.native
-    @JSImport("firebase-admin/lib/storage", "storage")
-    @js.native
-    def apply(app: App): Storage = js.native
+    val ^ : js.Any = js.native
     
     /**
       * The default `Storage` service if no

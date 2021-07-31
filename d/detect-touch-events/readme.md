@@ -10,9 +10,9 @@ Detect if the browser supports the touch events api
 | ------------------ | :-------------: |
 | Full name          | detect-touch-events |
 | Keywords           | detect, touch, touch events, touch device |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1297779 |
+| # releases         | 2 |
+| # dependents       | 2 |
+| # downloads        | 1572470 |
 | # stars            | 0 |
 
 ## Links

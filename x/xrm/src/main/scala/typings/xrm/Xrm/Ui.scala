@@ -9,7 +9,6 @@ import typings.xrm.Xrm.Controls.Tab
 import typings.xrm.XrmEnum.FormType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

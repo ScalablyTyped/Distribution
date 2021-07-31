@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -54,8 +53,25 @@ object filters {
   @JSImport("pixi.js", "filters.AlphaFilter")
   @js.native
   class AlphaFilter ()
-    extends typings.pixiJs.PIXI.filters.AlphaFilter {
+    extends StObject
+       with typings.pixiJs.PIXI.filters.AlphaFilter {
     def this(alpha: Double) = this()
+    
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    var program: typings.pixiJs.PIXI.Program = js.native
+    
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
   }
   
   /**
@@ -70,42 +86,39 @@ object filters {
   @JSImport("pixi.js", "filters.BlurFilter")
   @js.native
   class BlurFilter ()
-    extends typings.pixiJs.PIXI.filters.BlurFilter {
+    extends StObject
+       with typings.pixiJs.PIXI.filters.BlurFilter {
     def this(strength: Double) = this()
-    def this(strength: js.UndefOr[scala.Nothing], quality: Double) = this()
     def this(strength: Double, quality: Double) = this()
-    def this(strength: js.UndefOr[scala.Nothing], quality: js.UndefOr[scala.Nothing], resolution: Double) = this()
-    def this(strength: js.UndefOr[scala.Nothing], quality: Double, resolution: Double) = this()
-    def this(strength: Double, quality: js.UndefOr[scala.Nothing], resolution: Double) = this()
+    def this(strength: Unit, quality: Double) = this()
     def this(strength: Double, quality: Double, resolution: Double) = this()
-    def this(
-      strength: js.UndefOr[scala.Nothing],
-      quality: js.UndefOr[scala.Nothing],
-      resolution: js.UndefOr[scala.Nothing],
-      kernelSize: Double
-    ) = this()
-    def this(
-      strength: js.UndefOr[scala.Nothing],
-      quality: js.UndefOr[scala.Nothing],
-      resolution: Double,
-      kernelSize: Double
-    ) = this()
-    def this(
-      strength: js.UndefOr[scala.Nothing],
-      quality: Double,
-      resolution: js.UndefOr[scala.Nothing],
-      kernelSize: Double
-    ) = this()
-    def this(strength: js.UndefOr[scala.Nothing], quality: Double, resolution: Double, kernelSize: Double) = this()
-    def this(
-      strength: Double,
-      quality: js.UndefOr[scala.Nothing],
-      resolution: js.UndefOr[scala.Nothing],
-      kernelSize: Double
-    ) = this()
-    def this(strength: Double, quality: js.UndefOr[scala.Nothing], resolution: Double, kernelSize: Double) = this()
-    def this(strength: Double, quality: Double, resolution: js.UndefOr[scala.Nothing], kernelSize: Double) = this()
+    def this(strength: Double, quality: Unit, resolution: Double) = this()
+    def this(strength: Unit, quality: Double, resolution: Double) = this()
+    def this(strength: Unit, quality: Unit, resolution: Double) = this()
     def this(strength: Double, quality: Double, resolution: Double, kernelSize: Double) = this()
+    def this(strength: Double, quality: Double, resolution: Unit, kernelSize: Double) = this()
+    def this(strength: Double, quality: Unit, resolution: Double, kernelSize: Double) = this()
+    def this(strength: Double, quality: Unit, resolution: Unit, kernelSize: Double) = this()
+    def this(strength: Unit, quality: Double, resolution: Double, kernelSize: Double) = this()
+    def this(strength: Unit, quality: Double, resolution: Unit, kernelSize: Double) = this()
+    def this(strength: Unit, quality: Unit, resolution: Double, kernelSize: Double) = this()
+    def this(strength: Unit, quality: Unit, resolution: Unit, kernelSize: Double) = this()
+    
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    var program: typings.pixiJs.PIXI.Program = js.native
+    
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
   }
   
   /**
@@ -118,70 +131,40 @@ object filters {
   @JSImport("pixi.js", "filters.BlurFilterPass")
   @js.native
   class BlurFilterPass protected ()
-    extends typings.pixiJs.PIXI.filters.BlurFilterPass {
+    extends StObject
+       with typings.pixiJs.PIXI.filters.BlurFilterPass {
     def this(horizontal: Boolean) = this()
     def this(horizontal: Boolean, strength: Double) = this()
-    def this(horizontal: Boolean, strength: js.UndefOr[scala.Nothing], quality: Double) = this()
     def this(horizontal: Boolean, strength: Double, quality: Double) = this()
-    def this(
-      horizontal: Boolean,
-      strength: js.UndefOr[scala.Nothing],
-      quality: js.UndefOr[scala.Nothing],
-      resolution: Double
-    ) = this()
-    def this(horizontal: Boolean, strength: js.UndefOr[scala.Nothing], quality: Double, resolution: Double) = this()
-    def this(horizontal: Boolean, strength: Double, quality: js.UndefOr[scala.Nothing], resolution: Double) = this()
+    def this(horizontal: Boolean, strength: Unit, quality: Double) = this()
     def this(horizontal: Boolean, strength: Double, quality: Double, resolution: Double) = this()
-    def this(
-      horizontal: Boolean,
-      strength: js.UndefOr[scala.Nothing],
-      quality: js.UndefOr[scala.Nothing],
-      resolution: js.UndefOr[scala.Nothing],
-      kernelSize: Double
-    ) = this()
-    def this(
-      horizontal: Boolean,
-      strength: js.UndefOr[scala.Nothing],
-      quality: js.UndefOr[scala.Nothing],
-      resolution: Double,
-      kernelSize: Double
-    ) = this()
-    def this(
-      horizontal: Boolean,
-      strength: js.UndefOr[scala.Nothing],
-      quality: Double,
-      resolution: js.UndefOr[scala.Nothing],
-      kernelSize: Double
-    ) = this()
-    def this(
-      horizontal: Boolean,
-      strength: js.UndefOr[scala.Nothing],
-      quality: Double,
-      resolution: Double,
-      kernelSize: Double
-    ) = this()
-    def this(
-      horizontal: Boolean,
-      strength: Double,
-      quality: js.UndefOr[scala.Nothing],
-      resolution: js.UndefOr[scala.Nothing],
-      kernelSize: Double
-    ) = this()
-    def this(
-      horizontal: Boolean,
-      strength: Double,
-      quality: js.UndefOr[scala.Nothing],
-      resolution: Double,
-      kernelSize: Double
-    ) = this()
-    def this(
-      horizontal: Boolean,
-      strength: Double,
-      quality: Double,
-      resolution: js.UndefOr[scala.Nothing],
-      kernelSize: Double
-    ) = this()
+    def this(horizontal: Boolean, strength: Double, quality: Unit, resolution: Double) = this()
+    def this(horizontal: Boolean, strength: Unit, quality: Double, resolution: Double) = this()
+    def this(horizontal: Boolean, strength: Unit, quality: Unit, resolution: Double) = this()
     def this(horizontal: Boolean, strength: Double, quality: Double, resolution: Double, kernelSize: Double) = this()
+    def this(horizontal: Boolean, strength: Double, quality: Double, resolution: Unit, kernelSize: Double) = this()
+    def this(horizontal: Boolean, strength: Double, quality: Unit, resolution: Double, kernelSize: Double) = this()
+    def this(horizontal: Boolean, strength: Double, quality: Unit, resolution: Unit, kernelSize: Double) = this()
+    def this(horizontal: Boolean, strength: Unit, quality: Double, resolution: Double, kernelSize: Double) = this()
+    def this(horizontal: Boolean, strength: Unit, quality: Double, resolution: Unit, kernelSize: Double) = this()
+    def this(horizontal: Boolean, strength: Unit, quality: Unit, resolution: Double, kernelSize: Double) = this()
+    def this(horizontal: Boolean, strength: Unit, quality: Unit, resolution: Unit, kernelSize: Double) = this()
+    
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    var program: typings.pixiJs.PIXI.Program = js.native
+    
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
   }
   
   /**
@@ -202,7 +185,25 @@ object filters {
   @JSImport("pixi.js", "filters.ColorMatrixFilter")
   @js.native
   class ColorMatrixFilter ()
-    extends typings.pixiJs.PIXI.filters.ColorMatrixFilter
+    extends StObject
+       with typings.pixiJs.PIXI.filters.ColorMatrixFilter {
+    
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    var program: typings.pixiJs.PIXI.Program = js.native
+    
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
+  }
   
   /**
     * The DisplacementFilter class uses the pixel values from the specified texture
@@ -225,9 +226,26 @@ object filters {
   @JSImport("pixi.js", "filters.DisplacementFilter")
   @js.native
   class DisplacementFilter protected ()
-    extends typings.pixiJs.PIXI.filters.DisplacementFilter {
+    extends StObject
+       with typings.pixiJs.PIXI.filters.DisplacementFilter {
     def this(sprite: typings.pixiJs.PIXI.Sprite) = this()
     def this(sprite: typings.pixiJs.PIXI.Sprite, scale: Double) = this()
+    
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    var program: typings.pixiJs.PIXI.Program = js.native
+    
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
   }
   
   /**
@@ -244,7 +262,25 @@ object filters {
   @JSImport("pixi.js", "filters.FXAAFilter")
   @js.native
   class FXAAFilter ()
-    extends typings.pixiJs.PIXI.filters.FXAAFilter
+    extends StObject
+       with typings.pixiJs.PIXI.filters.FXAAFilter {
+    
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    var program: typings.pixiJs.PIXI.Program = js.native
+    
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
+  }
   
   /**
     * A Noise effect filter.
@@ -256,9 +292,26 @@ object filters {
   @JSImport("pixi.js", "filters.NoiseFilter")
   @js.native
   class NoiseFilter ()
-    extends typings.pixiJs.PIXI.filters.NoiseFilter {
+    extends StObject
+       with typings.pixiJs.PIXI.filters.NoiseFilter {
     def this(noise: Double) = this()
-    def this(noise: js.UndefOr[scala.Nothing], seed: Double) = this()
     def this(noise: Double, seed: Double) = this()
+    def this(noise: Unit, seed: Double) = this()
+    
+    /**
+      * Program that the shader uses
+      *
+      * @member {PIXI.Program} PIXI.Shader#program
+      */
+    /* CompleteClass */
+    var program: typings.pixiJs.PIXI.Program = js.native
+    
+    /**
+      * Shader uniform values, shortcut for `uniformGroup.uniforms`
+      * @readonly
+      * @member {object}
+      */
+    /* CompleteClass */
+    override val uniforms: js.Any = js.native
   }
 }

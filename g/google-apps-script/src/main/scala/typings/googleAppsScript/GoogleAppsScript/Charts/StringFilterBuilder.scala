@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For more details, see the Gviz
   * documentation.
   */
-@js.native
 trait StringFilterBuilder extends StObject {
   
-  def setCaseSensitive(caseSensitive: Boolean): StringFilterBuilder = js.native
+  def setCaseSensitive(caseSensitive: Boolean): StringFilterBuilder
   
-  def setMatchType(matchType: MatchType): StringFilterBuilder = js.native
+  def setMatchType(matchType: MatchType): StringFilterBuilder
   
-  def setRealtimeTrigger(realtimeTrigger: Boolean): StringFilterBuilder = js.native
+  def setRealtimeTrigger(realtimeTrigger: Boolean): StringFilterBuilder
 }
 object StringFilterBuilder {
   

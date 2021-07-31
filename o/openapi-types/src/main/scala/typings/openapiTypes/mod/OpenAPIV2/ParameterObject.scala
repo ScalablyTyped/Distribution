@@ -3,20 +3,19 @@ package typings.openapiTypes.mod.OpenAPIV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterObject
-  extends /* index */ StringDictionary[js.Any] {
+  extends StObject
+     with /* index */ StringDictionary[js.Any] {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var in: String = js.native
+  var in: String
   
-  var name: String = js.native
+  var name: String
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
 }
 object ParameterObject {
   

@@ -3,20 +3,19 @@ package typings.mendixmodelsdk.deltasDeltasMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStructureJSON
-  extends /* propertyName */ StringDictionary[
+  extends StObject
+     with /* propertyName */ StringDictionary[
       PrimitiveValue | (js.Array[IStructureJSON | PrimitiveValue]) | IStructureJSON | Null
     ] {
   
   @JSName("$ID")
-  var $ID: String = js.native
+  var $ID: String
   
   @JSName("$Type")
-  var $Type: String = js.native
+  var $Type: String
 }
 object IStructureJSON {
   

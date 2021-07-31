@@ -2,20 +2,18 @@ package typings.googleapis.driveV3Mod.driveV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of replies to a comment on a file.
   */
-@js.native
 trait SchemaReplyList extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;drive#replyList&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The page token for the next page of replies. This will be absent if the
@@ -23,13 +21,13 @@ trait SchemaReplyList extends StObject {
     * any reason, it should be discarded, and pagination should be restarted
     * from the first page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of replies. If nextPageToken is populated, then this list may be
     * incomplete and an additional page of results should be fetched.
     */
-  var replies: js.UndefOr[js.Array[SchemaReply]] = js.native
+  var replies: js.UndefOr[js.Array[SchemaReply]] = js.undefined
 }
 object SchemaReplyList {
   

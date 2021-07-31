@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkRoutingConfig extends StObject {
   
   /**
     * The network-wide routing mode to use. If set to REGIONAL, this network's Cloud Routers will only advertise routes with subnets of this network in the same region as the router. If
     * set to GLOBAL, this network's Cloud Routers will advertise routes with all subnets of this network, across regions.
     */
-  var routingMode: js.UndefOr[String] = js.native
+  var routingMode: js.UndefOr[String] = js.undefined
 }
 object NetworkRoutingConfig {
   

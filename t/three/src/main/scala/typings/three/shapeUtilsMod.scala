@@ -2,32 +2,31 @@ package typings.three
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shapeUtilsMod {
   
   object ShapeUtils {
     
-    @JSImport("three/src/extras/ShapeUtils", "ShapeUtils.area")
+    @JSImport("three/src/extras/ShapeUtils", "ShapeUtils")
     @js.native
-    def area(contour: js.Array[Vec2]): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("three/src/extras/ShapeUtils", "ShapeUtils.isClockWise")
-    @js.native
-    def isClockWise(pts: js.Array[Vec2]): Boolean = js.native
+    @scala.inline
+    def area(contour: js.Array[Vec2]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(contour.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("three/src/extras/ShapeUtils", "ShapeUtils.triangulateShape")
-    @js.native
-    def triangulateShape(contour: js.Array[Vec2], holes: js.Array[js.Array[Vec2]]): js.Array[js.Array[Double]] = js.native
+    @scala.inline
+    def isClockWise(pts: js.Array[Vec2]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClockWise")(pts.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def triangulateShape(contour: js.Array[Vec2], holes: js.Array[js.Array[Vec2]]): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("triangulateShape")(contour.asInstanceOf[js.Any], holes.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
   }
   
-  @js.native
   trait Vec2 extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Vec2 {
     

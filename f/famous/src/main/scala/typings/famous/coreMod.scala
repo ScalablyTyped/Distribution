@@ -2,7 +2,6 @@ package typings.famous
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod {
@@ -21,9 +20,12 @@ object coreMod {
   /* static members */
   object Dispatch {
     
-    @JSImport("famous/core", "Dispatch.dispatchUIEvent")
+    @JSImport("famous/core", "Dispatch")
     @js.native
-    def dispatchUIEvent(path: String, event: String, payload: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def dispatchUIEvent(path: String, event: String, payload: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(path.asInstanceOf[js.Any], event.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("famous/core", "FamousEngine")
@@ -35,29 +37,27 @@ object coreMod {
   /* static members */
   object FamousEngine {
     
-    @JSImport("famous/core", "FamousEngine.createScene")
+    @JSImport("famous/core", "FamousEngine")
     @js.native
-    def createScene(): Scene = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("famous/core", "FamousEngine.getClock")
-    @js.native
-    def getClock(): Clock = js.native
+    @scala.inline
+    def createScene(): Scene = ^.asInstanceOf[js.Dynamic].applyDynamic("createScene")().asInstanceOf[Scene]
     
-    @JSImport("famous/core", "FamousEngine.getContext")
-    @js.native
-    def getContext(selector: String): Scene = js.native
+    @scala.inline
+    def getClock(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("getClock")().asInstanceOf[Clock]
     
-    @JSImport("famous/core", "FamousEngine.init")
-    @js.native
-    def init(): FamousEngine = js.native
+    @scala.inline
+    def getContext(selector: String): Scene = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(selector.asInstanceOf[js.Any]).asInstanceOf[Scene]
     
-    @JSImport("famous/core", "FamousEngine.requestUpdate")
-    @js.native
-    def requestUpdate(requester: Double): Unit = js.native
+    @scala.inline
+    def init(): FamousEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[FamousEngine]
     
-    @JSImport("famous/core", "FamousEngine.requestUpdateOnNextTick")
-    @js.native
-    def requestUpdateOnNextTick(requester: Double): Unit = js.native
+    @scala.inline
+    def requestUpdate(requester: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestUpdate")(requester.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def requestUpdateOnNextTick(requester: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestUpdateOnNextTick")(requester.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("famous/core", "Node")
@@ -84,7 +84,7 @@ object coreMod {
     
     def getComponent(index: Double): js.Any = js.native
     
-    def getComponents(): js.Array[_] = js.native
+    def getComponents(): js.Array[js.Any] = js.native
     
     def getDifferentialSize(): js.Array[Double] = js.native
     
@@ -123,126 +123,121 @@ object coreMod {
     def requestUpdateOnNextTick(requester: Double): Unit = js.native
     
     def setAbsoluteSize(): Node = js.native
-    def setAbsoluteSize(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
-    def setAbsoluteSize(x: js.UndefOr[scala.Nothing], y: Double): Node = js.native
-    def setAbsoluteSize(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Node = js.native
     def setAbsoluteSize(x: Double): Node = js.native
-    def setAbsoluteSize(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
     def setAbsoluteSize(x: Double, y: Double): Node = js.native
     def setAbsoluteSize(x: Double, y: Double, z: Double): Node = js.native
+    def setAbsoluteSize(x: Double, y: Unit, z: Double): Node = js.native
+    def setAbsoluteSize(x: Unit, y: Double): Node = js.native
+    def setAbsoluteSize(x: Unit, y: Double, z: Double): Node = js.native
+    def setAbsoluteSize(x: Unit, y: Unit, z: Double): Node = js.native
     
     def setAlign(): Node = js.native
-    def setAlign(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
-    def setAlign(x: js.UndefOr[scala.Nothing], y: Double): Node = js.native
-    def setAlign(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Node = js.native
     def setAlign(x: Double): Node = js.native
-    def setAlign(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
     def setAlign(x: Double, y: Double): Node = js.native
     def setAlign(x: Double, y: Double, z: Double): Node = js.native
+    def setAlign(x: Double, y: Unit, z: Double): Node = js.native
+    def setAlign(x: Unit, y: Double): Node = js.native
+    def setAlign(x: Unit, y: Double, z: Double): Node = js.native
+    def setAlign(x: Unit, y: Unit, z: Double): Node = js.native
     
     def setDifferentialSize(): Node = js.native
-    def setDifferentialSize(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
-    def setDifferentialSize(x: js.UndefOr[scala.Nothing], y: Double): Node = js.native
-    def setDifferentialSize(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Node = js.native
     def setDifferentialSize(x: Double): Node = js.native
-    def setDifferentialSize(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
     def setDifferentialSize(x: Double, y: Double): Node = js.native
     def setDifferentialSize(x: Double, y: Double, z: Double): Node = js.native
+    def setDifferentialSize(x: Double, y: Unit, z: Double): Node = js.native
+    def setDifferentialSize(x: Unit, y: Double): Node = js.native
+    def setDifferentialSize(x: Unit, y: Double, z: Double): Node = js.native
+    def setDifferentialSize(x: Unit, y: Unit, z: Double): Node = js.native
     
     def setMountPoint(): Node = js.native
-    def setMountPoint(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
-    def setMountPoint(x: js.UndefOr[scala.Nothing], y: Double): Node = js.native
-    def setMountPoint(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Node = js.native
     def setMountPoint(x: Double): Node = js.native
-    def setMountPoint(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
     def setMountPoint(x: Double, y: Double): Node = js.native
     def setMountPoint(x: Double, y: Double, z: Double): Node = js.native
+    def setMountPoint(x: Double, y: Unit, z: Double): Node = js.native
+    def setMountPoint(x: Unit, y: Double): Node = js.native
+    def setMountPoint(x: Unit, y: Double, z: Double): Node = js.native
+    def setMountPoint(x: Unit, y: Unit, z: Double): Node = js.native
     
     def setOrigin(): Node = js.native
-    def setOrigin(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
-    def setOrigin(x: js.UndefOr[scala.Nothing], y: Double): Node = js.native
-    def setOrigin(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Node = js.native
     def setOrigin(x: Double): Node = js.native
-    def setOrigin(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
     def setOrigin(x: Double, y: Double): Node = js.native
     def setOrigin(x: Double, y: Double, z: Double): Node = js.native
+    def setOrigin(x: Double, y: Unit, z: Double): Node = js.native
+    def setOrigin(x: Unit, y: Double): Node = js.native
+    def setOrigin(x: Unit, y: Double, z: Double): Node = js.native
+    def setOrigin(x: Unit, y: Unit, z: Double): Node = js.native
     
     def setPosition(): Node = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: Double): Node = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Node = js.native
     def setPosition(x: Double): Node = js.native
-    def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
     def setPosition(x: Double, y: Double): Node = js.native
     def setPosition(x: Double, y: Double, z: Double): Node = js.native
+    def setPosition(x: Double, y: Unit, z: Double): Node = js.native
+    def setPosition(x: Unit, y: Double): Node = js.native
+    def setPosition(x: Unit, y: Double, z: Double): Node = js.native
+    def setPosition(x: Unit, y: Unit, z: Double): Node = js.native
     
     def setProportionalSize(): Node = js.native
-    def setProportionalSize(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
-    def setProportionalSize(x: js.UndefOr[scala.Nothing], y: Double): Node = js.native
-    def setProportionalSize(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Node = js.native
     def setProportionalSize(x: Double): Node = js.native
-    def setProportionalSize(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
     def setProportionalSize(x: Double, y: Double): Node = js.native
     def setProportionalSize(x: Double, y: Double, z: Double): Node = js.native
+    def setProportionalSize(x: Double, y: Unit, z: Double): Node = js.native
+    def setProportionalSize(x: Unit, y: Double): Node = js.native
+    def setProportionalSize(x: Unit, y: Double, z: Double): Node = js.native
+    def setProportionalSize(x: Unit, y: Unit, z: Double): Node = js.native
     
     def setRotation(): Node = js.native
-    def setRotation(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      z: js.UndefOr[scala.Nothing],
-      w: Double
-    ): Node = js.native
-    def setRotation(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
-    def setRotation(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double): Node = js.native
-    def setRotation(x: js.UndefOr[scala.Nothing], y: Double): Node = js.native
-    def setRotation(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double): Node = js.native
-    def setRotation(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Node = js.native
-    def setRotation(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double): Node = js.native
     def setRotation(x: Double): Node = js.native
-    def setRotation(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): Node = js.native
-    def setRotation(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
-    def setRotation(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double): Node = js.native
     def setRotation(x: Double, y: Double): Node = js.native
-    def setRotation(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double): Node = js.native
     def setRotation(x: Double, y: Double, z: Double): Node = js.native
     def setRotation(x: Double, y: Double, z: Double, w: Double): Node = js.native
+    def setRotation(x: Double, y: Double, z: Unit, w: Double): Node = js.native
+    def setRotation(x: Double, y: Unit, z: Double): Node = js.native
+    def setRotation(x: Double, y: Unit, z: Double, w: Double): Node = js.native
+    def setRotation(x: Double, y: Unit, z: Unit, w: Double): Node = js.native
+    def setRotation(x: Unit, y: Double): Node = js.native
+    def setRotation(x: Unit, y: Double, z: Double): Node = js.native
+    def setRotation(x: Unit, y: Double, z: Double, w: Double): Node = js.native
+    def setRotation(x: Unit, y: Double, z: Unit, w: Double): Node = js.native
+    def setRotation(x: Unit, y: Unit, z: Double): Node = js.native
+    def setRotation(x: Unit, y: Unit, z: Double, w: Double): Node = js.native
+    def setRotation(x: Unit, y: Unit, z: Unit, w: Double): Node = js.native
     
     def setScale(): Node = js.native
-    def setScale(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
-    def setScale(x: js.UndefOr[scala.Nothing], y: Double): Node = js.native
-    def setScale(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Node = js.native
     def setScale(x: Double): Node = js.native
-    def setScale(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
     def setScale(x: Double, y: Double): Node = js.native
     def setScale(x: Double, y: Double, z: Double): Node = js.native
+    def setScale(x: Double, y: Unit, z: Double): Node = js.native
+    def setScale(x: Unit, y: Double): Node = js.native
+    def setScale(x: Unit, y: Double, z: Double): Node = js.native
+    def setScale(x: Unit, y: Unit, z: Double): Node = js.native
     
     def setSizeMode(): Node = js.native
-    def setSizeMode(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: String): Node = js.native
-    def setSizeMode(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
-    def setSizeMode(x: js.UndefOr[scala.Nothing], y: String): Node = js.native
-    def setSizeMode(x: js.UndefOr[scala.Nothing], y: String, z: String): Node = js.native
-    def setSizeMode(x: js.UndefOr[scala.Nothing], y: String, z: Double): Node = js.native
-    def setSizeMode(x: js.UndefOr[scala.Nothing], y: Double): Node = js.native
-    def setSizeMode(x: js.UndefOr[scala.Nothing], y: Double, z: String): Node = js.native
-    def setSizeMode(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Node = js.native
     def setSizeMode(x: String): Node = js.native
-    def setSizeMode(x: String, y: js.UndefOr[scala.Nothing], z: String): Node = js.native
-    def setSizeMode(x: String, y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
     def setSizeMode(x: String, y: String): Node = js.native
     def setSizeMode(x: String, y: String, z: String): Node = js.native
     def setSizeMode(x: String, y: String, z: Double): Node = js.native
     def setSizeMode(x: String, y: Double): Node = js.native
     def setSizeMode(x: String, y: Double, z: String): Node = js.native
     def setSizeMode(x: String, y: Double, z: Double): Node = js.native
+    def setSizeMode(x: String, y: Unit, z: String): Node = js.native
+    def setSizeMode(x: String, y: Unit, z: Double): Node = js.native
     def setSizeMode(x: Double): Node = js.native
-    def setSizeMode(x: Double, y: js.UndefOr[scala.Nothing], z: String): Node = js.native
-    def setSizeMode(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Node = js.native
     def setSizeMode(x: Double, y: String): Node = js.native
     def setSizeMode(x: Double, y: String, z: String): Node = js.native
     def setSizeMode(x: Double, y: String, z: Double): Node = js.native
     def setSizeMode(x: Double, y: Double): Node = js.native
     def setSizeMode(x: Double, y: Double, z: String): Node = js.native
     def setSizeMode(x: Double, y: Double, z: Double): Node = js.native
+    def setSizeMode(x: Double, y: Unit, z: String): Node = js.native
+    def setSizeMode(x: Double, y: Unit, z: Double): Node = js.native
+    def setSizeMode(x: Unit, y: String): Node = js.native
+    def setSizeMode(x: Unit, y: String, z: String): Node = js.native
+    def setSizeMode(x: Unit, y: String, z: Double): Node = js.native
+    def setSizeMode(x: Unit, y: Double): Node = js.native
+    def setSizeMode(x: Unit, y: Double, z: String): Node = js.native
+    def setSizeMode(x: Unit, y: Double, z: Double): Node = js.native
+    def setSizeMode(x: Unit, y: Unit, z: String): Node = js.native
+    def setSizeMode(x: Unit, y: Unit, z: Double): Node = js.native
     
     def show(): Node = js.native
   }
@@ -323,9 +318,12 @@ object coreMod {
   /* static members */
   object SizeSystem {
     
-    @JSImport("famous/core", "SizeSystem.deregisterSizeAtPath")
+    @JSImport("famous/core", "SizeSystem")
     @js.native
-    def deregisterSizeAtPath(path: String): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def deregisterSizeAtPath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterSizeAtPath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("famous/core", "TransformSystem")
@@ -334,8 +332,11 @@ object coreMod {
   /* static members */
   object TransformSystem {
     
-    @JSImport("famous/core", "TransformSystem.deregisterTransformAtPath")
+    @JSImport("famous/core", "TransformSystem")
     @js.native
-    def deregisterTransformAtPath(path: String): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def deregisterTransformAtPath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterTransformAtPath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

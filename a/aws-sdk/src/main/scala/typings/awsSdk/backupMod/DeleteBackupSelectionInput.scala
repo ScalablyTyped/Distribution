@@ -2,21 +2,19 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBackupSelectionInput extends StObject {
   
   /**
     * Uniquely identifies a backup plan.
     */
-  var BackupPlanId: String = js.native
+  var BackupPlanId: String
   
   /**
     * Uniquely identifies the body of a request to assign a set of resources to a backup plan.
     */
-  var SelectionId: String = js.native
+  var SelectionId: String
 }
 object DeleteBackupSelectionInput {
   

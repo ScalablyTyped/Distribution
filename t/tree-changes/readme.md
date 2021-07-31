@@ -4,15 +4,15 @@
 Typings are for version 0.5.1
 
 ## Library description:
-Helpers function to get tree changes between two datasets
+Get changes between two versions of data with similar shape
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tree-changes |
 | Keywords           | comparison, tree |
-| # releases         | 9 |
-| # dependents       | 17 |
-| # downloads        | 2292379 |
+| # releases         | 10 |
+| # dependents       | 18 |
+| # downloads        | 2890047 |
 | # stars            | 1 |
 
 ## Links

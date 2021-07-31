@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to disable automatic adjusting of the selected table.
   */
-@js.native
-trait ToggleTableFixedColumnWidthCommand extends CommandWithSimpleStateBase {
+trait ToggleTableFixedColumnWidthCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the ToggleTableFixedColumnWidthCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ToggleTableFixedColumnWidthCommand {
   

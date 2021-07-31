@@ -7,19 +7,20 @@ import typings.firebaseAdmin.projectManagementMod.projectManagement.AppPlatform.
 import typings.firebaseAdmin.projectManagementMod.projectManagement.AppPlatform.IOS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectManagementMod {
   
   object projectManagement {
     
+    @scala.inline
+    def apply(): ProjectManagement = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ProjectManagement]
+    @scala.inline
+    def apply(app: App): ProjectManagement = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[ProjectManagement]
+    
     @JSImport("firebase-admin/lib/project-management", "projectManagement")
     @js.native
-    def apply(): ProjectManagement = js.native
-    @JSImport("firebase-admin/lib/project-management", "projectManagement")
-    @js.native
-    def apply(app: App): ProjectManagement = js.native
+    val ^ : js.Any = js.native
     
     @js.native
     sealed trait AppPlatform extends StObject
@@ -31,28 +32,34 @@ object projectManagementMod {
     object AppPlatform extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[AppPlatform with String] = js.native
+      def apply(value: String): js.UndefOr[AppPlatform & String] = js.native
       
       /**
         * The Firebase App is associated with Android.
         */
       @js.native
-      sealed trait ANDROID extends AppPlatform
-      /* "ANDROID" */ val ANDROID: typings.firebaseAdmin.projectManagementMod.projectManagement.AppPlatform.ANDROID with String = js.native
+      sealed trait ANDROID
+        extends StObject
+           with AppPlatform
+      /* "ANDROID" */ val ANDROID: typings.firebaseAdmin.projectManagementMod.projectManagement.AppPlatform.ANDROID & String = js.native
       
       /**
         * The Firebase App is associated with iOS.
         */
       @js.native
-      sealed trait IOS extends AppPlatform
-      /* "IOS" */ val IOS: typings.firebaseAdmin.projectManagementMod.projectManagement.AppPlatform.IOS with String = js.native
+      sealed trait IOS
+        extends StObject
+           with AppPlatform
+      /* "IOS" */ val IOS: typings.firebaseAdmin.projectManagementMod.projectManagement.AppPlatform.IOS & String = js.native
       
       /**
         * Unknown state. This is only used for distinguishing unset values.
         */
       @js.native
-      sealed trait PLATFORM_UNKNOWN extends AppPlatform
-      /* "PLATFORM_UNKNOWN" */ val PLATFORM_UNKNOWN: typings.firebaseAdmin.projectManagementMod.projectManagement.AppPlatform.PLATFORM_UNKNOWN with String = js.native
+      sealed trait PLATFORM_UNKNOWN
+        extends StObject
+           with AppPlatform
+      /* "PLATFORM_UNKNOWN" */ val PLATFORM_UNKNOWN: typings.firebaseAdmin.projectManagementMod.projectManagement.AppPlatform.PLATFORM_UNKNOWN & String = js.native
     }
     
     /**
@@ -61,7 +68,6 @@ object projectManagementMod {
       * Do not call this constructor directly. Instead, use
       * [`projectManagement.androidApp()`](projectManagement.ProjectManagement#androidApp).
       */
-    @js.native
     trait AndroidApp extends StObject {
       
       /**
@@ -72,9 +78,9 @@ object projectManagementMod {
         * @return A promise that resolves when the given certificate
         *     has been added to the Android app.
         */
-      def addShaCertificate(certificateToAdd: ShaCertificate): js.Promise[Unit] = js.native
+      def addShaCertificate(certificateToAdd: ShaCertificate): js.Promise[Unit]
       
-      var appId: String = js.native
+      var appId: String
       
       /**
         * Deletes the specified SHA certificate from this Android app.
@@ -84,7 +90,7 @@ object projectManagementMod {
         * @return A promise that resolves when the specified
         *     certificate has been removed from the Android app.
         */
-      def deleteShaCertificate(certificateToRemove: ShaCertificate): js.Promise[Unit] = js.native
+      def deleteShaCertificate(certificateToRemove: ShaCertificate): js.Promise[Unit]
       
       /**
         * Gets the configuration artifact associated with this app.
@@ -94,14 +100,14 @@ object projectManagementMod {
         *     intended to be written to a JSON file that gets shipped with your Android
         *     app.
         */
-      def getConfig(): js.Promise[String] = js.native
+      def getConfig(): js.Promise[String]
       
       /**
         * Retrieves metadata about this Android app.
         *
         * @return A promise that resolves to the retrieved metadata about this Android app.
         */
-      def getMetadata(): js.Promise[AndroidAppMetadata] = js.native
+      def getMetadata(): js.Promise[AndroidAppMetadata]
       
       /**
         * Gets the list of SHA certificates associated with this Android app in Firebase.
@@ -109,7 +115,7 @@ object projectManagementMod {
         * @return The list of SHA-1 and SHA-256 certificates associated with this Android app in
         *     Firebase.
         */
-      def getShaCertificates(): js.Promise[js.Array[ShaCertificate]] = js.native
+      def getShaCertificates(): js.Promise[js.Array[ShaCertificate]]
       
       /**
         * Sets the optional user-assigned display name of the app.
@@ -118,7 +124,7 @@ object projectManagementMod {
         *
         * @return A promise that resolves when the display name has been set.
         */
-      def setDisplayName(newDisplayName: String): js.Promise[Unit] = js.native
+      def setDisplayName(newDisplayName: String): js.Promise[Unit]
     }
     object AndroidApp {
       
@@ -165,8 +171,9 @@ object projectManagementMod {
     /**
       * Metadata about a Firebase Android App.
       */
-    @js.native
-    trait AndroidAppMetadata extends AppMetadata {
+    trait AndroidAppMetadata
+      extends StObject
+         with AppMetadata {
       
       /**
         * The canonical package name of the Android App, as would appear in the Google Play Developer
@@ -177,10 +184,10 @@ object projectManagementMod {
         * var packageName = androidAppMetadata.packageName;
         * ```
         */
-      var packageName: String = js.native
+      var packageName: String
       
       @JSName("platform")
-      var platform_AndroidAppMetadata: ANDROID = js.native
+      var platform_AndroidAppMetadata: ANDROID
     }
     object AndroidAppMetadata {
       
@@ -204,7 +211,6 @@ object projectManagementMod {
     /**
       * Metadata about a Firebase app.
       */
-    @js.native
     trait AppMetadata extends StObject {
       
       /**
@@ -215,7 +221,7 @@ object projectManagementMod {
         * var appId = appMetadata.appId;
         * ```
         */
-      var appId: String = js.native
+      var appId: String
       
       /**
         * The optional user-assigned display name of the app.
@@ -225,7 +231,7 @@ object projectManagementMod {
         * var displayName = appMetadata.displayName;
         * ```
         */
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
       /**
         * The development platform of the app. Supporting Android and iOS app platforms.
@@ -235,7 +241,7 @@ object projectManagementMod {
         * var platform = AppPlatform.ANDROID;
         * ```
         */
-      var platform: AppPlatform = js.native
+      var platform: AppPlatform
       
       /**
         * The globally unique, user-assigned ID of the parent project for the app.
@@ -245,7 +251,7 @@ object projectManagementMod {
         * var projectId = appMetadata.projectId;
         * ```
         */
-      var projectId: String = js.native
+      var projectId: String
       
       /**
         * The fully-qualified resource name that identifies this app.
@@ -257,7 +263,7 @@ object projectManagementMod {
         * var resourceName = androidAppMetadata.resourceName;
         * ```
         */
-      var resourceName: String = js.native
+      var resourceName: String
     }
     object AppMetadata {
       
@@ -296,10 +302,9 @@ object projectManagementMod {
       * Do not call this constructor directly. Instead, use
       * [`projectManagement.iosApp()`](projectManagement.ProjectManagement#iosApp).
       */
-    @js.native
     trait IosApp extends StObject {
       
-      var appId: String = js.native
+      var appId: String
       
       /**
         * Gets the configuration artifact associated with this app.
@@ -308,7 +313,7 @@ object projectManagementMod {
         *     config file, in UTF-8 string format. This string is typically intended to
         *     be written to a plist file that gets shipped with your iOS app.
         */
-      def getConfig(): js.Promise[String] = js.native
+      def getConfig(): js.Promise[String]
       
       /**
         * Retrieves metadata about this iOS app.
@@ -316,7 +321,7 @@ object projectManagementMod {
         * @return {!Promise<admin.projectManagement.IosAppMetadata>} A promise that
         *     resolves to the retrieved metadata about this iOS app.
         */
-      def getMetadata(): js.Promise[IosAppMetadata] = js.native
+      def getMetadata(): js.Promise[IosAppMetadata]
       
       /**
         * Sets the optional user-assigned display name of the app.
@@ -326,7 +331,7 @@ object projectManagementMod {
         * @return A promise that resolves when the display name has
         *     been set.
         */
-      def setDisplayName(newDisplayName: String): js.Promise[Unit] = js.native
+      def setDisplayName(newDisplayName: String): js.Promise[Unit]
     }
     object IosApp {
       
@@ -361,8 +366,9 @@ object projectManagementMod {
     /**
       * Metadata about a Firebase iOS App.
       */
-    @js.native
-    trait IosAppMetadata extends AppMetadata {
+    trait IosAppMetadata
+      extends StObject
+         with AppMetadata {
       
       /**
         * The canonical bundle ID of the iOS App as it would appear in the iOS App Store.
@@ -372,10 +378,10 @@ object projectManagementMod {
         * var bundleId = iosAppMetadata.bundleId;
         *```
         */
-      var bundleId: String = js.native
+      var bundleId: String
       
       @JSName("platform")
-      var platform_IosAppMetadata: IOS = js.native
+      var platform_IosAppMetadata: IOS
     }
     object IosAppMetadata {
       
@@ -504,7 +510,6 @@ object projectManagementMod {
       * Do not call this constructor directly. Instead, use
       * [`projectManagement.shaCertificate()`](projectManagement.ProjectManagement#shaCertificate).
       */
-    @js.native
     trait ShaCertificate extends StObject {
       
       /**
@@ -515,7 +520,7 @@ object projectManagementMod {
         * var certType = shaCertificate.certType;
         * ```
         */
-      var certType: sha1_ | sha256_ = js.native
+      var certType: sha1_ | sha256_
       
       /**
         * The fully-qualified resource name that identifies this sha-key.
@@ -527,7 +532,7 @@ object projectManagementMod {
         * var resourceName = shaCertificate.resourceName;
         * ```
         */
-      var resourceName: js.UndefOr[String] = js.native
+      var resourceName: js.UndefOr[String] = js.undefined
       
       /**
         * The SHA-1 or SHA-256 hash for this certificate.
@@ -537,7 +542,7 @@ object projectManagementMod {
         * var shaHash = shaCertificate.shaHash;
         * ```
         */
-      var shaHash: String = js.native
+      var shaHash: String
     }
     object ShaCertificate {
       

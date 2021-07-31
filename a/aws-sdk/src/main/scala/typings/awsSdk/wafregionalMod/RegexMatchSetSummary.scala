@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegexMatchSetSummary extends StObject {
   
   /**
     * A friendly name or description of the RegexMatchSet. You can't change Name after you create a RegexMatchSet.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
   
   /**
     * The RegexMatchSetId for a RegexMatchSet. You use RegexMatchSetId to get information about a RegexMatchSet, update a RegexMatchSet, remove a RegexMatchSet from a Rule, and delete a RegexMatchSet from AWS WAF.  RegexMatchSetId is returned by CreateRegexMatchSet and by ListRegexMatchSets.
     */
-  var RegexMatchSetId: ResourceId = js.native
+  var RegexMatchSetId: ResourceId
 }
 object RegexMatchSetSummary {
   

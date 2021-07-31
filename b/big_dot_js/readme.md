@@ -10,9 +10,9 @@ A small, fast, easy-to-use library for arbitrary-precision decimal arithmetic
 | ------------------ | :-------------: |
 | Full name          | big.js |
 | Keywords           | arbitrary, precision, arithmetic, big, number, decimal, float, biginteger, bigdecimal, bignumber, bigint, bignum |
-| # releases         | 2 |
-| # dependents       | 547 |
-| # downloads        | 569894555 |
+| # releases         | 5 |
+| # dependents       | 672 |
+| # downloads        | 624930751 |
 | # stars            | 15 |
 
 ## Links

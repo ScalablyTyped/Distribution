@@ -2,51 +2,49 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchAlarmConfiguration extends StObject {
   
   /**
     * For the metric that the CloudWatch alarm is associated with, the arithmetic operation that is used for the comparison.
     */
-  var ComparisonOperator: typings.awsSdk.route53Mod.ComparisonOperator = js.native
+  var ComparisonOperator: typings.awsSdk.route53Mod.ComparisonOperator
   
   /**
     * For the metric that the CloudWatch alarm is associated with, a complex type that contains information about the dimensions for the metric. For information, see Amazon CloudWatch Namespaces, Dimensions, and Metrics Reference in the Amazon CloudWatch User Guide.
     */
-  var Dimensions: js.UndefOr[DimensionList] = js.native
+  var Dimensions: js.UndefOr[DimensionList] = js.undefined
   
   /**
     * For the metric that the CloudWatch alarm is associated with, the number of periods that the metric is compared to the threshold.
     */
-  var EvaluationPeriods: typings.awsSdk.route53Mod.EvaluationPeriods = js.native
+  var EvaluationPeriods: typings.awsSdk.route53Mod.EvaluationPeriods
   
   /**
     * The name of the CloudWatch metric that the alarm is associated with.
     */
-  var MetricName: typings.awsSdk.route53Mod.MetricName = js.native
+  var MetricName: typings.awsSdk.route53Mod.MetricName
   
   /**
     * The namespace of the metric that the alarm is associated with. For more information, see Amazon CloudWatch Namespaces, Dimensions, and Metrics Reference in the Amazon CloudWatch User Guide.
     */
-  var Namespace: typings.awsSdk.route53Mod.Namespace = js.native
+  var Namespace: typings.awsSdk.route53Mod.Namespace
   
   /**
     * For the metric that the CloudWatch alarm is associated with, the duration of one evaluation period in seconds.
     */
-  var Period: typings.awsSdk.route53Mod.Period = js.native
+  var Period: typings.awsSdk.route53Mod.Period
   
   /**
     * For the metric that the CloudWatch alarm is associated with, the statistic that is applied to the metric.
     */
-  var Statistic: typings.awsSdk.route53Mod.Statistic = js.native
+  var Statistic: typings.awsSdk.route53Mod.Statistic
   
   /**
     * For the metric that the CloudWatch alarm is associated with, the value the metric is compared with.
     */
-  var Threshold: typings.awsSdk.route53Mod.Threshold = js.native
+  var Threshold: typings.awsSdk.route53Mod.Threshold
 }
 object CloudWatchAlarmConfiguration {
   

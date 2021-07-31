@@ -2,17 +2,15 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Point extends StObject {
   
-  def equals(other: Point): Boolean = js.native
+  def equals(other: Point): Boolean
   
-  var lat: Double = js.native
+  var lat: Double
   
-  var lng: Double = js.native
+  var lng: Double
 }
 object Point {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSnapshotMessage extends StObject {
   
   /**
     * The name of the snapshot to be deleted.
     */
-  var SnapshotName: String = js.native
+  var SnapshotName: String
 }
 object DeleteSnapshotMessage {
   

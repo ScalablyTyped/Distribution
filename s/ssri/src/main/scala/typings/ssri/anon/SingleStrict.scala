@@ -3,15 +3,13 @@ package typings.ssri.anon
 import typings.ssri.ssriBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SingleStrict extends StObject {
   
-  var single: js.UndefOr[`false`] = js.native
+  var single: js.UndefOr[`false`] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object SingleStrict {
   

@@ -2,23 +2,21 @@ package typings.polished
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radialGradientConfigurationMod {
   
-  @js.native
   trait RadialGradientConfiguration extends StObject {
     
-    var colorStops: js.Array[String] = js.native
+    var colorStops: js.Array[String]
     
-    var extent: js.UndefOr[String] = js.native
+    var extent: js.UndefOr[String] = js.undefined
     
-    var fallback: js.UndefOr[String] = js.native
+    var fallback: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var shape: js.UndefOr[String] = js.native
+    var shape: js.UndefOr[String] = js.undefined
   }
   object RadialGradientConfiguration {
     

@@ -7,7 +7,6 @@ import typings.opentelemetryApi.statusMod.Status
 import typings.opentelemetryApi.timeMod.TimeInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spanMod {
@@ -25,10 +24,11 @@ object spanMod {
       * @param [startTime] start time of the event.
       */
     def addEvent(name: String): this.type = js.native
-    def addEvent(name: String, attributesOrStartTime: js.UndefOr[TimeInput], startTime: TimeInput): this.type = js.native
+    def addEvent(name: String, attributesOrStartTime: Unit, startTime: TimeInput): this.type = js.native
     def addEvent(name: String, attributesOrStartTime: Attributes): this.type = js.native
     def addEvent(name: String, attributesOrStartTime: Attributes, startTime: TimeInput): this.type = js.native
     def addEvent(name: String, attributesOrStartTime: TimeInput): this.type = js.native
+    def addEvent(name: String, attributesOrStartTime: TimeInput, startTime: TimeInput): this.type = js.native
     
     /**
       * Returns the {@link SpanContext} object associated with this Span.

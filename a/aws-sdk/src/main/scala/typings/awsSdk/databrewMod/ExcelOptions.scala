@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExcelOptions extends StObject {
   
   /**
     * Specifies one or more sheet numbers in the Excel file, which will be included in the dataset.
     */
-  var SheetIndexes: js.UndefOr[SheetIndexList] = js.native
+  var SheetIndexes: js.UndefOr[SheetIndexList] = js.undefined
   
   /**
     * Specifies one or more named sheets in the Excel file, which will be included in the dataset.
     */
-  var SheetNames: js.UndefOr[SheetNameList] = js.native
+  var SheetNames: js.UndefOr[SheetNameList] = js.undefined
 }
 object ExcelOptions {
   

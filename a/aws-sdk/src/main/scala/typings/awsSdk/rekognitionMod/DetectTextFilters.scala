@@ -2,18 +2,16 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectTextFilters extends StObject {
   
   /**
     *  A Filter focusing on a certain area of the image. Uses a BoundingBox object to set the region of the image.
     */
-  var RegionsOfInterest: js.UndefOr[typings.awsSdk.rekognitionMod.RegionsOfInterest] = js.native
+  var RegionsOfInterest: js.UndefOr[typings.awsSdk.rekognitionMod.RegionsOfInterest] = js.undefined
   
-  var WordFilter: js.UndefOr[DetectionFilter] = js.native
+  var WordFilter: js.UndefOr[DetectionFilter] = js.undefined
 }
 object DetectTextFilters {
   

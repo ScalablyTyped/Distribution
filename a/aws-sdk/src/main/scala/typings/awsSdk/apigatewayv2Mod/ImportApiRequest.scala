@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportApiRequest extends StObject {
   
   /**
     * Specifies how to interpret the base path of the API during import. Valid values are ignore, prepend, and split. The default value is ignore. To learn more, see Set the OpenAPI basePath Property. Supported only for HTTP APIs.
     */
-  var Basepath: js.UndefOr[string] = js.native
+  var Basepath: js.UndefOr[string] = js.undefined
   
   /**
     * The OpenAPI definition. Supported only for HTTP APIs.
     */
-  var Body: string = js.native
+  var Body: string
   
   /**
     * Specifies whether to rollback the API creation when a warning is encountered. By default, API creation continues if a warning is encountered.
     */
-  var FailOnWarnings: js.UndefOr[boolean] = js.native
+  var FailOnWarnings: js.UndefOr[boolean] = js.undefined
 }
 object ImportApiRequest {
   

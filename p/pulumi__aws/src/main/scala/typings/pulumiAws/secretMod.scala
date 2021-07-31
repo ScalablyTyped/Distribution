@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object secretMod {
@@ -26,7 +25,7 @@ object secretMod {
       */
     def this(name: String) = this()
     def this(name: String, args: SecretArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: SecretArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -93,6 +92,10 @@ object secretMod {
   /* static members */
   object Secret {
     
+    @JSImport("@pulumi/aws/secretsmanager/secret", "Secret")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Secret resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -102,79 +105,73 @@ object secretMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/secretsmanager/secret", "Secret.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Secret = js.native
-    @JSImport("@pulumi/aws/secretsmanager/secret", "Secret.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Secret = js.native
-    @JSImport("@pulumi/aws/secretsmanager/secret", "Secret.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretState): Secret = js.native
-    @JSImport("@pulumi/aws/secretsmanager/secret", "Secret.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretState, opts: CustomResourceOptions): Secret = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Secret]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Secret]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretState): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Secret]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretState, opts: CustomResourceOptions): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Secret]
     
     /**
       * Returns true if the given object is an instance of Secret.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/secretsmanager/secret", "Secret.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secret.Secret */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secret.Secret */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secret.Secret */ Boolean]
   }
   
-  @js.native
   trait SecretArgs extends StObject {
     
     /**
       * A description of the secret.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the ARN or Id of the AWS KMS customer master key (CMK) to be used to encrypt the secret values in the versions stored in this secret. If you don't specify this value, then Secrets Manager defaults to using the AWS account's default CMK (the one named `aws/secretsmanager`). If the default KMS CMK with that name doesn't yet exist, then AWS Secrets Manager creates it for you automatically the first time.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the friendly name of the new secret. The secret name can consist of uppercase letters, lowercase letters, digits, and any of the following characters: `/_+=.@-` Conflicts with `namePrefix`.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A valid JSON document representing a [resource policy](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_resource-based-policies.html).
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the number of days that AWS Secrets Manager waits before it can delete the secret. This value can be `0` to force deletion without recovery or range from `7` to `30` days. The default value is `30`.
       */
-    val recoveryWindowInDays: js.UndefOr[Input[Double]] = js.native
+    val recoveryWindowInDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Specifies the ARN of the Lambda function that can rotate the secret. Use the `aws.secretsmanager.SecretRotation` resource to manage this configuration instead. As of version 2.67.0, removal of this configuration will no longer remove rotation due to supporting the new resource. Either import the new resource and remove the configuration or manually remove rotation.
       *
       * @deprecated Use the aws_secretsmanager_secret_rotation resource instead
       */
-    val rotationLambdaArn: js.UndefOr[Input[String]] = js.native
+    val rotationLambdaArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A structure that defines the rotation configuration for this secret. Defined below. Use the `aws.secretsmanager.SecretRotation` resource to manage this configuration instead. As of version 2.67.0, removal of this configuration will no longer remove rotation due to supporting the new resource. Either import the new resource and remove the configuration or manually remove rotation.
       *
       * @deprecated Use the aws_secretsmanager_secret_rotation resource instead
       */
-    val rotationRules: js.UndefOr[Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRules]] = js.native
+    val rotationRules: js.UndefOr[Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRules]] = js.undefined
     
     /**
       * Specifies a key-value map of user-defined tags that are attached to the secret.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object SecretArgs {
     
@@ -243,69 +240,68 @@ object secretMod {
     }
   }
   
-  @js.native
   trait SecretState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the secret.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the secret.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the ARN or Id of the AWS KMS customer master key (CMK) to be used to encrypt the secret values in the versions stored in this secret. If you don't specify this value, then Secrets Manager defaults to using the AWS account's default CMK (the one named `aws/secretsmanager`). If the default KMS CMK with that name doesn't yet exist, then AWS Secrets Manager creates it for you automatically the first time.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the friendly name of the new secret. The secret name can consist of uppercase letters, lowercase letters, digits, and any of the following characters: `/_+=.@-` Conflicts with `namePrefix`.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A valid JSON document representing a [resource policy](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_resource-based-policies.html).
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the number of days that AWS Secrets Manager waits before it can delete the secret. This value can be `0` to force deletion without recovery or range from `7` to `30` days. The default value is `30`.
       */
-    val recoveryWindowInDays: js.UndefOr[Input[Double]] = js.native
+    val recoveryWindowInDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Specifies whether automatic rotation is enabled for this secret.
       *
       * @deprecated Use the aws_secretsmanager_secret_rotation resource instead
       */
-    val rotationEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val rotationEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies the ARN of the Lambda function that can rotate the secret. Use the `aws.secretsmanager.SecretRotation` resource to manage this configuration instead. As of version 2.67.0, removal of this configuration will no longer remove rotation due to supporting the new resource. Either import the new resource and remove the configuration or manually remove rotation.
       *
       * @deprecated Use the aws_secretsmanager_secret_rotation resource instead
       */
-    val rotationLambdaArn: js.UndefOr[Input[String]] = js.native
+    val rotationLambdaArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A structure that defines the rotation configuration for this secret. Defined below. Use the `aws.secretsmanager.SecretRotation` resource to manage this configuration instead. As of version 2.67.0, removal of this configuration will no longer remove rotation due to supporting the new resource. Either import the new resource and remove the configuration or manually remove rotation.
       *
       * @deprecated Use the aws_secretsmanager_secret_rotation resource instead
       */
-    val rotationRules: js.UndefOr[Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRules]] = js.native
+    val rotationRules: js.UndefOr[Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRules]] = js.undefined
     
     /**
       * Specifies a key-value map of user-defined tags that are attached to the secret.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object SecretState {
     

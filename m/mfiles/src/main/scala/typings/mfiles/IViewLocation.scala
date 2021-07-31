@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IViewLocation extends StObject {
   
-  def Clone(): IViewLocation = js.native
+  def Clone(): IViewLocation
   
-  var OverlappedFolder: ITypedValue = js.native
+  var OverlappedFolder: ITypedValue
   
-  var Overlapping: Boolean = js.native
+  var Overlapping: Boolean
   
-  var ParentFolder: IFolderDefs = js.native
+  var ParentFolder: IFolderDefs
 }
 object IViewLocation {
   

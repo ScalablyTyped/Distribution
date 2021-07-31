@@ -4,10 +4,13 @@ import typings.tensorflowTfjsCore.serializationMod.ConfigDict
 import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serialization {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/base", "serialization")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-core/dist/base", "serialization.Serializable")
   @js.native
@@ -15,6 +18,10 @@ object serialization {
     extends typings.tensorflowTfjsCore.serializationMod.Serializable
   /* static members */
   object Serializable {
+    
+    @JSImport("@tensorflow/tfjs-core/dist/base", "serialization.Serializable")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates an instance of T from a ConfigDict.
@@ -25,9 +32,8 @@ object serialization {
       * @param config The Configuration for the object.
       */
     /** @nocollapse */
-    @JSImport("@tensorflow/tfjs-core/dist/base", "serialization.Serializable.fromConfig")
-    @js.native
-    def fromConfig[T /* <: typings.tensorflowTfjsCore.serializationMod.Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
+    @scala.inline
+    def fromConfig[T /* <: typings.tensorflowTfjsCore.serializationMod.Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
   @JSImport("@tensorflow/tfjs-core/dist/base", "serialization.SerializationMap")
@@ -44,9 +50,8 @@ object serialization {
     /**
       * Returns the singleton instance of the map.
       */
-    @JSImport("@tensorflow/tfjs-core/dist/base", "serialization.SerializationMap.getMap")
-    @js.native
-    def getMap(): typings.tensorflowTfjsCore.serializationMod.SerializationMap = js.native
+    @scala.inline
+    def getMap(): typings.tensorflowTfjsCore.serializationMod.SerializationMap = ^.asInstanceOf[js.Dynamic].applyDynamic("getMap")().asInstanceOf[typings.tensorflowTfjsCore.serializationMod.SerializationMap]
     
     @JSImport("@tensorflow/tfjs-core/dist/base", "serialization.SerializationMap.instance")
     @js.native
@@ -57,12 +62,10 @@ object serialization {
     /**
       * Registers the class as serializable.
       */
-    @JSImport("@tensorflow/tfjs-core/dist/base", "serialization.SerializationMap.register")
-    @js.native
-    def register[T /* <: typings.tensorflowTfjsCore.serializationMod.Serializable */](cls: SerializableConstructor[T]): Unit = js.native
+    @scala.inline
+    def register[T /* <: typings.tensorflowTfjsCore.serializationMod.Serializable */](cls: SerializableConstructor[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/base", "serialization.registerClass")
-  @js.native
-  def registerClass[T /* <: typings.tensorflowTfjsCore.serializationMod.Serializable */](cls: SerializableConstructor[T]): Unit = js.native
+  @scala.inline
+  def registerClass[T /* <: typings.tensorflowTfjsCore.serializationMod.Serializable */](cls: SerializableConstructor[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerClass")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

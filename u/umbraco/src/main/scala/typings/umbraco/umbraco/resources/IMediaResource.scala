@@ -4,7 +4,6 @@ import typings.angular.mod.IPromise
 import typings.umbraco.anon.Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -246,7 +245,7 @@ trait IMediaResource extends StObject {
     * @returns {Promise} resourcePromise object containing the saved media item.
     *
     */
-  def save(media: js.Object, isNew: Boolean, files: js.Array[_]): IPromise[IResourcePromise] = js.native
+  def save(media: js.Object, isNew: Boolean, files: js.Array[js.Any]): IPromise[IResourcePromise] = js.native
   
   /**
     * @ngdoc method

@@ -2,14 +2,16 @@ package typings.reduxSubscriber
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("redux-subscriber", JSImport.Default)
+  @JSImport("redux-subscriber", JSImport.Namespace)
   @js.native
-  def default(store: js.Any): Subscribe_ = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(store: js.Any): Subscribe_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any]).asInstanceOf[Subscribe_]
   
   @JSImport("redux-subscriber", "subscribe")
   @js.native

@@ -6,7 +6,6 @@ import typings.sipJs.outgoingRequestMod.RequestOptions
 import typings.sipJs.userAgentClientMod.UserAgentClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reSubscribeUserAgentClientMod {
@@ -18,7 +17,7 @@ object reSubscribeUserAgentClientMod {
   class ReSubscribeUserAgentClient protected () extends UserAgentClient {
     def this(dialog: SubscriptionDialog) = this()
     def this(dialog: SubscriptionDialog, delegate: OutgoingRequestDelegate) = this()
-    def this(dialog: SubscriptionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
+    def this(dialog: SubscriptionDialog, delegate: Unit, options: RequestOptions) = this()
     def this(dialog: SubscriptionDialog, delegate: OutgoingRequestDelegate, options: RequestOptions) = this()
     
     var dialog: js.Any = js.native

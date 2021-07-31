@@ -3,27 +3,25 @@ package typings.googleapis.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Display extends StObject {
   
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var iconLink: js.UndefOr[String] = js.native
+  var iconLink: js.UndefOr[String] = js.undefined
   
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
-  var preferences: js.UndefOr[StringDictionary[String]] = js.native
+  var preferences: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Display {
   

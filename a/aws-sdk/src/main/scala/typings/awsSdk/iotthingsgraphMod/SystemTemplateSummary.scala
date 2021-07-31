@@ -2,31 +2,29 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemTemplateSummary extends StObject {
   
   /**
     * The ARN of the system.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The date when the system was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.native
+  var createdAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ID of the system.
     */
-  var id: js.UndefOr[Urn] = js.native
+  var id: js.UndefOr[Urn] = js.undefined
   
   /**
     * The revision number of the system.
     */
-  var revisionNumber: js.UndefOr[Version] = js.native
+  var revisionNumber: js.UndefOr[Version] = js.undefined
 }
 object SystemTemplateSummary {
   

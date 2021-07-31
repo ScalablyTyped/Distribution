@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThirdPartyJobDetails extends StObject {
   
   /**
     * The data to be returned by the third party job worker.
     */
-  var data: js.UndefOr[ThirdPartyJobData] = js.native
+  var data: js.UndefOr[ThirdPartyJobData] = js.undefined
   
   /**
     * The identifier used to identify the job details in AWS CodePipeline.
     */
-  var id: js.UndefOr[ThirdPartyJobId] = js.native
+  var id: js.UndefOr[ThirdPartyJobId] = js.undefined
   
   /**
     * A system-generated random number that AWS CodePipeline uses to ensure that the job is being worked on by only one job worker. Use this number in an AcknowledgeThirdPartyJob request.
     */
-  var nonce: js.UndefOr[Nonce] = js.native
+  var nonce: js.UndefOr[Nonce] = js.undefined
 }
 object ThirdPartyJobDetails {
   

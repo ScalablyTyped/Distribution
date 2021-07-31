@@ -3,19 +3,19 @@ package typings.kendoUi.kendo.dataviz.drawing
 import typings.kendoUi.kendo.Class
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OptionsStore extends Class {
+trait OptionsStore
+  extends StObject
+     with Class {
   
-  def get(field: String): js.Any = js.native
+  def get(field: String): js.Any
   
-  var observer: js.Any = js.native
+  var observer: js.Any
   
-  var options: OptionsStoreOptions = js.native
+  var options: OptionsStoreOptions
   
-  def set(field: String, value: js.Any): Unit = js.native
+  def set(field: String, value: js.Any): Unit
 }
 object OptionsStore {
   

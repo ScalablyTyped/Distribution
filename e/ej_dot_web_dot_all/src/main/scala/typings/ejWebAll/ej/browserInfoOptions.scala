@@ -2,19 +2,17 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait browserInfoOptions extends StObject {
   
-  var culture: js.Any = js.native
+  var culture: js.Any
   
-  var isMSPointerEnabled: Boolean = js.native
+  var isMSPointerEnabled: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var version: String = js.native
+  var version: String
 }
 object browserInfoOptions {
   

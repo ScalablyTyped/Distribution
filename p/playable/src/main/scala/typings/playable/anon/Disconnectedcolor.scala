@@ -3,13 +3,11 @@ package typings.playable.anon
 import typings.playable.themeTypesMod.IThemeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disconnectedcolor extends StObject {
   
-  def `--disconnected-color`(data: IThemeConfig): String = js.native
+  def `--disconnected-color`(data: IThemeConfig): String
 }
 object Disconnectedcolor {
   

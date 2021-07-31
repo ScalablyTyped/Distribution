@@ -2,26 +2,24 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateApplicationRequest extends StObject {
   
   /**
     * A description of the application.
     */
-  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
     * A name for the application.
     */
-  var Name: typings.awsSdk.appconfigMod.Name = js.native
+  var Name: typings.awsSdk.appconfigMod.Name
   
   /**
     * Metadata to assign to the application. Tags help organize and categorize your AppConfig resources. Each tag consists of a key and an optional value, both of which you define.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateApplicationRequest {
   

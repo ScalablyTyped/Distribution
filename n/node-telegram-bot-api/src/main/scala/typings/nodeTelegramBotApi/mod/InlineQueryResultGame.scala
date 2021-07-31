@@ -3,24 +3,23 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.game
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultGame
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var game_short_name: String = js.native
+  var game_short_name: String
   
-  var `type`: game = js.native
+  var `type`: game
 }
 object InlineQueryResultGame {
   
   @scala.inline
-  def apply(game_short_name: String, id: String, `type`: game): InlineQueryResultGame = {
+  def apply(game_short_name: String, id: String): InlineQueryResultGame = {
     val __obj = js.Dynamic.literal(game_short_name = game_short_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("game")
     __obj.asInstanceOf[InlineQueryResultGame]
   }
   

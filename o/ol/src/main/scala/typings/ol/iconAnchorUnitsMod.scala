@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconAnchorUnitsMod {
@@ -12,11 +11,11 @@ object iconAnchorUnitsMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[IconAnchorUnits with String] = js.native
+    def apply(value: String): js.UndefOr[IconAnchorUnits & String] = js.native
     
-    /* "fraction" */ val FRACTION: typings.ol.iconAnchorUnitsMod.IconAnchorUnits.FRACTION with String = js.native
+    /* "fraction" */ val FRACTION: typings.ol.iconAnchorUnitsMod.IconAnchorUnits.FRACTION & String = js.native
     
-    /* "pixels" */ val PIXELS: typings.ol.iconAnchorUnitsMod.IconAnchorUnits.PIXELS with String = js.native
+    /* "pixels" */ val PIXELS: typings.ol.iconAnchorUnitsMod.IconAnchorUnits.PIXELS & String = js.native
   }
   
   @js.native
@@ -26,9 +25,13 @@ object iconAnchorUnitsMod {
   object IconAnchorUnits extends StObject {
     
     @js.native
-    sealed trait FRACTION extends IconAnchorUnits
+    sealed trait FRACTION
+      extends StObject
+         with IconAnchorUnits
     
     @js.native
-    sealed trait PIXELS extends IconAnchorUnits
+    sealed trait PIXELS
+      extends StObject
+         with IconAnchorUnits
   }
 }

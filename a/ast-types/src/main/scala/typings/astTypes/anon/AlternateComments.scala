@@ -5,21 +5,19 @@ import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlternateComments extends StObject {
   
-  var alternate: ExpressionKind = js.native
+  var alternate: ExpressionKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var consequent: ExpressionKind = js.native
+  var consequent: ExpressionKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var test: ExpressionKind = js.native
+  var test: ExpressionKind
 }
 object AlternateComments {
   

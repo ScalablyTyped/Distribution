@@ -4,48 +4,62 @@ import typings.expoPermissions.permissionsTypesMod.PermissionResponse
 import typings.expoPermissions.permissionsTypesMod.PermissionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object permissionsHooksMod {
   
-  @JSImport("expo-permissions/build/PermissionsHooks", "usePermissions")
+  @JSImport("expo-permissions/build/PermissionsHooks", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def usePermissions(`type`: js.Array[PermissionType]): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
-  ] = js.native
-  @JSImport("expo-permissions/build/PermissionsHooks", "usePermissions")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePermissions")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
+    js.UndefOr[PermissionResponse], 
+    js.Function0[js.Promise[Unit]], 
+    js.Function0[js.Promise[Unit]]
+  ]]
+  @scala.inline
   def usePermissions(`type`: js.Array[PermissionType], options: PermissionsOptions): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
-  ] = js.native
-  @JSImport("expo-permissions/build/PermissionsHooks", "usePermissions")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("usePermissions")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[
+    js.UndefOr[PermissionResponse], 
+    js.Function0[js.Promise[Unit]], 
+    js.Function0[js.Promise[Unit]]
+  ]]
+  @scala.inline
   def usePermissions(`type`: PermissionType): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
-  ] = js.native
-  @JSImport("expo-permissions/build/PermissionsHooks", "usePermissions")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePermissions")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
+    js.UndefOr[PermissionResponse], 
+    js.Function0[js.Promise[Unit]], 
+    js.Function0[js.Promise[Unit]]
+  ]]
+  @scala.inline
   def usePermissions(`type`: PermissionType, options: PermissionsOptions): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("usePermissions")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[
+    js.UndefOr[PermissionResponse], 
+    js.Function0[js.Promise[Unit]], 
+    js.Function0[js.Promise[Unit]]
+  ]]
   
-  @js.native
   trait PermissionsOptions extends StObject {
     
     /** If it should ask the permissions when mounted, defaults to `false` */
-    var ask: js.UndefOr[Boolean] = js.native
+    var ask: js.UndefOr[Boolean] = js.undefined
     
     /** If it should fetch information about the permissions when mounted, defaults to `true` */
-    var get: js.UndefOr[Boolean] = js.native
+    var get: js.UndefOr[Boolean] = js.undefined
   }
   object PermissionsOptions {
     

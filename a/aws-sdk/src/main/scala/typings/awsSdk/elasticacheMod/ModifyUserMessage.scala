@@ -2,36 +2,34 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyUserMessage extends StObject {
   
   /**
     * Access permissions string used for this user account.
     */
-  var AccessString: js.UndefOr[typings.awsSdk.elasticacheMod.AccessString] = js.native
+  var AccessString: js.UndefOr[typings.awsSdk.elasticacheMod.AccessString] = js.undefined
   
   /**
     * Adds additional user permissions to the access string.
     */
-  var AppendAccessString: js.UndefOr[AccessString] = js.native
+  var AppendAccessString: js.UndefOr[AccessString] = js.undefined
   
   /**
     * Indicates no password is required for the user account.
     */
-  var NoPasswordRequired: js.UndefOr[BooleanOptional] = js.native
+  var NoPasswordRequired: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The passwords belonging to the user account. You are allowed up to two.
     */
-  var Passwords: js.UndefOr[PasswordListInput] = js.native
+  var Passwords: js.UndefOr[PasswordListInput] = js.undefined
   
   /**
     * The ID of the user.
     */
-  var UserId: typings.awsSdk.elasticacheMod.UserId = js.native
+  var UserId: typings.awsSdk.elasticacheMod.UserId
 }
 object ModifyUserMessage {
   

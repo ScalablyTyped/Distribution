@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCustomerSessionStatsResponse extends StObject {
   
-  var stats: js.UndefOr[js.Array[CustomerSessionStats]] = js.native
+  var stats: js.UndefOr[js.Array[CustomerSessionStats]] = js.undefined
 }
 object GetCustomerSessionStatsResponse {
   

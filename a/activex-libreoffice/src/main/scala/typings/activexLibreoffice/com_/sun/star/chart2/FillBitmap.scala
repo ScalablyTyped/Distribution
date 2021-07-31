@@ -6,14 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.drawing.BitmapMode
 import typings.activexLibreoffice.com_.sun.star.drawing.RectanglePoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This structure contains all properties of a bitmap when used as FillStyle.
   * @see com.sun.star.drawing.FillProperties
   */
-@js.native
 trait FillBitmap extends StObject {
   
   /**
@@ -21,30 +19,30 @@ trait FillBitmap extends StObject {
     *
     * It may be repeated, stretched or displayed with blank space around it.
     */
-  var aBitmapMode: BitmapMode = js.native
+  var aBitmapMode: BitmapMode
   
   /**
     * This is the horizontal and vertical offset where the tile starts.
     *
     * It is given in percent in relation to the width of the bitmap.
     */
-  var aOffset: Point = js.native
+  var aOffset: Point
   
   /** Every second line (X) / row (Y) of tiles is moved the given percent of the width of the bitmap. */
-  var aPositionOffset: Point = js.native
+  var aPositionOffset: Point
   
   /** The RectanglePoint specifies the position inside of the bitmap to use as the top left position for rendering. */
-  var aRectanglePoint: RectanglePoint = js.native
+  var aRectanglePoint: RectanglePoint
   
   /**
     * This is the size of the tile for filling.
     *
     * Depending on the property LogicalSize, this is either relative or absolute.
     */
-  var aSize: Size = js.native
+  var aSize: Size
   
   /** a URL to the bitmap used. This may be an internal URL of the graphics manager. */
-  var aURL: String = js.native
+  var aURL: String
   
   /**
     * specifies if the size is given in percentage or as an absolute value.
@@ -52,7 +50,7 @@ trait FillBitmap extends StObject {
     * If this is `TRUE` , the properties SizeX and SizeY contain the size of the tile in percent of the size of the original bitmap. If this is `FALSE` ,
     * the size of the tile is specified with 1/100th mm.
     */
-  var bLogicalSize: Boolean = js.native
+  var bLogicalSize: Boolean
 }
 object FillBitmap {
   

@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.outputMod.policy.v1beta1
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PodDisruptionBudgetSpec is a description of a PodDisruptionBudget.
   */
-@js.native
 trait PodDisruptionBudgetSpec extends StObject {
   
   /**
     * An eviction is allowed if at most "maxUnavailable" pods selected by "selector" are unavailable after the eviction, i.e. even in absence of the evicted pod. For example, one can prevent all voluntary evictions by specifying 0. This is a mutually exclusive setting with "minAvailable".
     */
-  var maxUnavailable: Double | String = js.native
+  var maxUnavailable: Double | String
   
   /**
     * An eviction is allowed if at least "minAvailable" pods selected by "selector" will still be available after the eviction, i.e. even in the absence of the evicted pod.  So for example you can prevent all voluntary evictions by specifying "100%".
     */
-  var minAvailable: Double | String = js.native
+  var minAvailable: Double | String
   
   /**
     * Label query over pods whose evictions are managed by the disruption budget.
     */
-  var selector: LabelSelector = js.native
+  var selector: LabelSelector
 }
 object PodDisruptionBudgetSpec {
   

@@ -9,10 +9,10 @@ Generator based line reader
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gen-readlines |
-| Keywords           | generator, file, line, reader, read, by, es6, ecma2015 |
-| # releases         | 0 |
+| Keywords           | generator, file, line, reader, read, es6, readlines, readline |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 7246 |
+| # downloads        | 6036 |
 | # stars            | 0 |
 
 ## Links

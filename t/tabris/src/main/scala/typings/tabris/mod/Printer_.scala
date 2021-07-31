@@ -1,13 +1,14 @@
 package typings.tabris.mod
 
-import typings.tabris.AnonContentType
+import typings.tabris.anon.ContentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tabris", "Printer")
 @js.native
 class Printer_ protected () extends NativeObject {
+  
   /**
     * Prints a PDF document using the native printing capabilities of the device. The data has to be
     * provided as an `ArrayBuffer` or typed array. The method returns a promise which resolves to an event
@@ -18,6 +19,5 @@ class Printer_ protected () extends NativeObject {
     * @param options An optional set of configuration parameters.
     */
   def print(data: js.Any): js.Promise[Unit] = js.native
-  def print(data: js.Any, options: AnonContentType): js.Promise[Unit] = js.native
+  def print(data: js.Any, options: ContentType): js.Promise[Unit] = js.native
 }
-

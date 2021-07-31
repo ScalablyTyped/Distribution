@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OfferShiftRequest extends ScheduleChangeRequest {
+trait OfferShiftRequest
+  extends StObject
+     with ScheduleChangeRequest {
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var recipientActionDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var recipientActionDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Custom message sent by recipient of the offer shift request.
-  var recipientActionMessage: js.UndefOr[NullableOption[String]] = js.native
+  var recipientActionMessage: js.UndefOr[NullableOption[String]] = js.undefined
   
   // User ID of the recipient of the offer shift request.
-  var recipientUserId: js.UndefOr[NullableOption[String]] = js.native
+  var recipientUserId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // User ID of the sender of the offer shift request.
-  var senderShiftId: js.UndefOr[NullableOption[String]] = js.native
+  var senderShiftId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OfferShiftRequest {
   

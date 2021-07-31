@@ -2,13 +2,11 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single symbol representation.
   */
-@js.native
 trait SchemaSymbol extends StObject {
   
   /**
@@ -21,22 +19,22 @@ trait SchemaSymbol extends StObject {
     * degrees around the top-left corner it becomes:      2----3      |    |
     * 1----0   and the vertice order will still be (0, 1, 2, 3).
     */
-  var boundingBox: js.UndefOr[SchemaBoundingPoly] = js.native
+  var boundingBox: js.UndefOr[SchemaBoundingPoly] = js.undefined
   
   /**
     * Confidence of the OCR results for the symbol. Range [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Additional information detected for the symbol.
     */
-  var property: js.UndefOr[SchemaTextProperty] = js.native
+  var property: js.UndefOr[SchemaTextProperty] = js.undefined
   
   /**
     * The actual UTF-8 representation of the symbol.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaSymbol {
   

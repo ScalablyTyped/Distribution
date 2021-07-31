@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBotChannelAssociationsResponse extends StObject {
   
   /**
     * An array of objects, one for each association, that provides information about the Amazon Lex bot and its association with the channel. 
     */
-  var botChannelAssociations: js.UndefOr[BotChannelAssociationList] = js.native
+  var botChannelAssociations: js.UndefOr[BotChannelAssociationList] = js.undefined
   
   /**
     * A pagination token that fetches the next page of associations. If the response to this call is truncated, Amazon Lex returns a pagination token in the response. To fetch the next page of associations, specify the pagination token in the next request. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetBotChannelAssociationsResponse {
   

@@ -3,18 +3,18 @@ package typings.xmlcreate
 import typings.xmlcreate.optionsMod.IStringOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlDeclMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlDecl", JSImport.Default)
   @js.native
-  class default[Parent] protected () extends XmlDecl[Parent] {
+  class default[Parent] protected ()
+    extends StObject
+       with XmlDecl[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDeclOptions) = this()
   }
   
-  @js.native
   trait IXmlDeclOptions extends StObject {
     
     /**
@@ -22,20 +22,20 @@ object xmlDeclMod {
       * this value must be a valid encoding. By default, no encoding attribute
       * is included.
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * The value of the standalone attribute to be included in the declaration.
       * If defined, this value must be "yes" or "no". By default, no standalone
       * attribute is included.
       */
-    var standalone: js.UndefOr[String] = js.native
+    var standalone: js.UndefOr[String] = js.undefined
     
     /**
       * The XML version to be included in the declaration. If defined, this
       * value must be a valid XML version number. Defaults to "1.0".
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object IXmlDeclOptions {
     

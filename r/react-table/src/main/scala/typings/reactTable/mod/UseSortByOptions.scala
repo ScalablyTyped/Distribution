@@ -6,30 +6,28 @@ import typings.std.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  manualSortBy :boolean,   disableSortBy :boolean,   defaultCanSort :boolean,   disableMultiSort :boolean, isMultiSortEvent (e : react.react.MouseEvent<std.Element, react.react.NativeMouseEvent>): boolean,   maxMultiSortColCount :number,   disableSortRemove :boolean,   disabledMultiRemove :boolean, orderByFn (rows : std.Array<react-table.react-table.Row<D>>, sortFns : std.Array<react-table.react-table.SortByFn<D>>, directions : std.Array<boolean>): std.Array<react-table.react-table.Row<D>>,   sortTypes :std.Record<string, react-table.react-table.SortByFn<D>>,   autoResetSortBy :boolean | undefined}> */
-@js.native
 trait UseSortByOptions[D /* <: js.Object */] extends StObject {
   
-  var autoResetSortBy: js.UndefOr[Boolean] = js.native
+  var autoResetSortBy: js.UndefOr[Boolean] = js.undefined
   
-  var defaultCanSort: js.UndefOr[Boolean] = js.native
+  var defaultCanSort: js.UndefOr[Boolean] = js.undefined
   
-  var disableMultiSort: js.UndefOr[Boolean] = js.native
+  var disableMultiSort: js.UndefOr[Boolean] = js.undefined
   
-  var disableSortBy: js.UndefOr[Boolean] = js.native
+  var disableSortBy: js.UndefOr[Boolean] = js.undefined
   
-  var disableSortRemove: js.UndefOr[Boolean] = js.native
+  var disableSortRemove: js.UndefOr[Boolean] = js.undefined
   
-  var disabledMultiRemove: js.UndefOr[Boolean] = js.native
+  var disabledMultiRemove: js.UndefOr[Boolean] = js.undefined
   
-  var isMultiSortEvent: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Boolean]] = js.native
+  var isMultiSortEvent: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Boolean]] = js.undefined
   
-  var manualSortBy: js.UndefOr[Boolean] = js.native
+  var manualSortBy: js.UndefOr[Boolean] = js.undefined
   
-  var maxMultiSortColCount: js.UndefOr[Double] = js.native
+  var maxMultiSortColCount: js.UndefOr[Double] = js.undefined
   
   var orderByFn: js.UndefOr[
     js.Function3[
@@ -38,9 +36,9 @@ trait UseSortByOptions[D /* <: js.Object */] extends StObject {
       /* directions */ js.Array[Boolean], 
       js.Array[Row[D]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var sortTypes: js.UndefOr[Record[String, SortByFn[D]]] = js.native
+  var sortTypes: js.UndefOr[Record[String, SortByFn[D]]] = js.undefined
 }
 object UseSortByOptions {
   
@@ -51,7 +49,7 @@ object UseSortByOptions {
   }
   
   @scala.inline
-  implicit class UseSortByOptionsMutableBuilder[Self <: UseSortByOptions[_], D /* <: js.Object */] (val x: Self with UseSortByOptions[D]) extends AnyVal {
+  implicit class UseSortByOptionsMutableBuilder[Self <: UseSortByOptions[?], D /* <: js.Object */] (val x: Self & UseSortByOptions[D]) extends AnyVal {
     
     @scala.inline
     def setAutoResetSortBy(value: Boolean): Self = StObject.set(x, "autoResetSortBy", value.asInstanceOf[js.Any])

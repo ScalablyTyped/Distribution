@@ -43,7 +43,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.YearToDate
 import typings.officeJsPreview.officeJsPreviewStrings.Yesterday
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -53,7 +52,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.2]
   */
 @js.native
-trait Filter extends ClientObject {
+trait Filter
+  extends StObject
+     with ClientObject {
   
   /**
     * Apply the given filter criteria on the given column.
@@ -102,17 +103,17 @@ trait Filter extends ClientObject {
     * @param oper Optional. The operator that describes how the two criteria are joined.
     */
   def applyCustomFilter(criteria1: String): Unit = js.native
-  def applyCustomFilter(criteria1: String, criteria2: js.UndefOr[scala.Nothing], oper: FilterOperator): Unit = js.native
   def applyCustomFilter(criteria1: String, criteria2: String): Unit = js.native
   def applyCustomFilter(criteria1: String, criteria2: String, oper: FilterOperator): Unit = js.native
-  @JSName("applyCustomFilter")
-  def applyCustomFilter_And(criteria1: String, criteria2: js.UndefOr[scala.Nothing], oper: And): Unit = js.native
+  def applyCustomFilter(criteria1: String, criteria2: Unit, oper: FilterOperator): Unit = js.native
   @JSName("applyCustomFilter")
   def applyCustomFilter_And(criteria1: String, criteria2: String, oper: And): Unit = js.native
   @JSName("applyCustomFilter")
-  def applyCustomFilter_Or(criteria1: String, criteria2: js.UndefOr[scala.Nothing], oper: Or): Unit = js.native
+  def applyCustomFilter_And(criteria1: String, criteria2: Unit, oper: And): Unit = js.native
   @JSName("applyCustomFilter")
   def applyCustomFilter_Or(criteria1: String, criteria2: String, oper: Or): Unit = js.native
+  @JSName("applyCustomFilter")
+  def applyCustomFilter_Or(criteria1: String, criteria2: Unit, oper: Or): Unit = js.native
   
   /**
     * Apply a "Dynamic" filter to the column.

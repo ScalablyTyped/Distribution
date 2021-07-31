@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReceiptRuleSetsRequest extends StObject {
   
   /**
     * A token returned from a previous call to ListReceiptRuleSets to indicate the position in the receipt rule set list.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesMod.NextToken] = js.undefined
 }
 object ListReceiptRuleSetsRequest {
   

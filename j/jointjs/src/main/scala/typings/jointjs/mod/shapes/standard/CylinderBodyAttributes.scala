@@ -3,13 +3,13 @@ package typings.jointjs.mod.shapes.standard
 import typings.jointjs.mod.attributes.SVGPathAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CylinderBodyAttributes extends SVGPathAttributes {
+trait CylinderBodyAttributes
+  extends StObject
+     with SVGPathAttributes {
   
-  var lateralArea: js.UndefOr[String | Double] = js.native
+  var lateralArea: js.UndefOr[String | Double] = js.undefined
 }
 object CylinderBodyAttributes {
   

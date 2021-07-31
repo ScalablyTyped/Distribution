@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Storage.Streams
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides random access of data in input and output streams for a file. */
-@js.native
 trait RandomAccessStreamReference extends StObject {
   
   /**
     * Opens a stream for random access.
     * @return The asynchronous operation.
     */
-  def openReadAsync(): IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType] = js.native
+  def openReadAsync(): IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]
 }
 object RandomAccessStreamReference {
   

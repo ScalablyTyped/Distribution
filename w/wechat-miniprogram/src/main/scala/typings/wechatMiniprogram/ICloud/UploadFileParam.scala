@@ -3,17 +3,17 @@ package typings.wechatMiniprogram.ICloud
 import typings.wechatMiniprogram.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadFileParam extends ICloudAPIParam[UploadFileResult] {
+trait UploadFileParam
+  extends StObject
+     with ICloudAPIParam[UploadFileResult] {
   
-  var cloudPath: String = js.native
+  var cloudPath: String
   
-  var filePath: String = js.native
+  var filePath: String
   
-  var header: js.UndefOr[AnyObject] = js.native
+  var header: js.UndefOr[AnyObject] = js.undefined
 }
 object UploadFileParam {
   

@@ -3,39 +3,37 @@ package typings.hafasClient.mod
 import typings.hafasClient.hafasClientStrings.location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A location object is used by other items to indicate their locations.
   */
-@js.native
 trait Location extends StObject {
   
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var poi: js.UndefOr[Boolean] = js.native
+  var poi: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: location = js.native
+  var `type`: location
 }
 object Location {
   
   @scala.inline
-  def apply(`type`: location): Location = {
+  def apply(): Location = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("location")
     __obj.asInstanceOf[Location]
   }
   

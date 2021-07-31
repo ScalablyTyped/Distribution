@@ -2,16 +2,16 @@ package typings.coinbaseCommerceNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Pricing object.
   */
-@js.native
-trait Pricing extends CryptoPricing {
+trait Pricing
+  extends StObject
+     with CryptoPricing {
   
-  var local: Price[FiatCurrency] = js.native
+  var local: Price[FiatCurrency]
 }
 object Pricing {
   

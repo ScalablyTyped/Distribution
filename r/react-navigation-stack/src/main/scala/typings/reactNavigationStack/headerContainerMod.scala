@@ -16,39 +16,40 @@ import typings.reactNavigationStack.vendorTypesMod.StackHeaderInterpolationProps
 import typings.reactNavigationStack.vendorTypesMod.StackHeaderStyleInterpolator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerContainerMod {
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Header/HeaderContainer", JSImport.Default)
+  @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Header/HeaderContainer", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     hasModeScenesLayoutInsetsGetPreviousSceneGetFocusedRouteOnContentHeightChangeGestureDirectionStyleInterpolatorStyle: Props
-  ): Element = js.native
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasModeScenesLayoutInsetsGetPreviousSceneGetFocusedRouteOnContentHeightChangeGestureDirectionStyleInterpolatorStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
   trait Props extends StObject {
     
-    var gestureDirection: GestureDirection = js.native
+    var gestureDirection: GestureDirection
     
-    def getFocusedRoute(): Route[String] = js.native
+    def getFocusedRoute(): Route[String]
     
-    def getPreviousScene(props: typings.reactNavigationStack.anon.Route): js.UndefOr[Scene[Route[String]]] = js.native
+    def getPreviousScene(props: typings.reactNavigationStack.anon.Route): js.UndefOr[Scene[Route[String]]]
     
-    var insets: EdgeInsets = js.native
+    var insets: EdgeInsets
     
-    var layout: Layout = js.native
+    var layout: Layout
     
-    var mode: float | screen = js.native
+    var mode: float | screen
     
-    var onContentHeightChange: js.UndefOr[js.Function1[/* props */ Height, Unit]] = js.native
+    var onContentHeightChange: js.UndefOr[js.Function1[/* props */ Height, Unit]] = js.undefined
     
-    var scenes: js.Array[js.UndefOr[Scene[Route[String]]]] = js.native
+    var scenes: js.Array[js.UndefOr[Scene[Route[String]]]]
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styleInterpolator: StackHeaderStyleInterpolator = js.native
+    var styleInterpolator: StackHeaderStyleInterpolator
   }
   object Props {
     

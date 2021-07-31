@@ -3,7 +3,6 @@ package typings.libp2pNoise
 import typings.libp2pNoise.basicMod.bytes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libp2pNoiseMod {
@@ -22,7 +21,7 @@ object libp2pNoiseMod {
   class Noise ()
     extends typings.libp2pNoise.noiseMod.Noise {
     def this(staticNoiseKey: bytes) = this()
-    def this(staticNoiseKey: js.UndefOr[scala.Nothing], earlyData: bytes) = this()
+    def this(staticNoiseKey: Unit, earlyData: bytes) = this()
     def this(staticNoiseKey: bytes, earlyData: bytes) = this()
   }
 }

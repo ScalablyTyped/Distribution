@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
-trait CellProperties extends SettableCellProperties {
+trait CellProperties
+  extends StObject
+     with SettableCellProperties {
   
   /**
     *
@@ -20,7 +20,7 @@ trait CellProperties extends SettableCellProperties {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -28,7 +28,7 @@ trait CellProperties extends SettableCellProperties {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var addressLocal: js.UndefOr[String] = js.native
+  var addressLocal: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -36,7 +36,7 @@ trait CellProperties extends SettableCellProperties {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
 }
 object CellProperties {
   

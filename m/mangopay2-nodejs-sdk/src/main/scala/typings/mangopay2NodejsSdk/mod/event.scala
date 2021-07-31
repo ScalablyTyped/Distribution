@@ -2,28 +2,26 @@ package typings.mangopay2NodejsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object event {
   
-  @js.native
   trait EventData extends StObject {
     
     /**
       * When the event happened
       */
-    var Date: Timestamp = js.native
+    var Date: Timestamp
     
     /**
       * The event type
       */
-    var EventType: typings.mangopay2NodejsSdk.mod.event.EventType = js.native
+    var EventType: typings.mangopay2NodejsSdk.mod.event.EventType
     
     /**
       * The ID of whatever the event is
       */
-    var ResourceId: String = js.native
+    var ResourceId: String
   }
   object EventData {
     

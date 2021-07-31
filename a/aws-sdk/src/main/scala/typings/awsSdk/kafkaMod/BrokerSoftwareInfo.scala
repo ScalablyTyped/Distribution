@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokerSoftwareInfo extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait BrokerSoftwareInfo extends StObject {
     The Amazon Resource Name (ARN) of the configuration used for the cluster. This field isn't visible in this preview release.
     
     */
-  var ConfigurationArn: js.UndefOr[string] = js.native
+  var ConfigurationArn: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The revision of the configuration to use. This field isn't visible in this preview release.
     
     */
-  var ConfigurationRevision: js.UndefOr[long] = js.native
+  var ConfigurationRevision: js.UndefOr[long] = js.undefined
   
   /**
     * 
     The version of Apache Kafka.
     
     */
-  var KafkaVersion: js.UndefOr[string] = js.native
+  var KafkaVersion: js.UndefOr[string] = js.undefined
 }
 object BrokerSoftwareInfo {
   

@@ -9,10 +9,10 @@ A tiny javascript type testing tool
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-lite |
-| Keywords           | type, test |
-| # releases         | 8 |
-| # dependents       | 18 |
-| # downloads        | 2528421 |
+| Keywords           | type, check, assertion, validation, test, typeguard, typeof, instanceof |
+| # releases         | 10 |
+| # dependents       | 20 |
+| # downloads        | 3089431 |
 | # stars            | 0 |
 
 ## Links

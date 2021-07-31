@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Example:      custom_error:       types:       - google.foo.v1.CustomError
   * - google.foo.v1.AnotherError
   */
-@js.native
 trait SchemaCustomError extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait SchemaCustomError extends StObject {
     * **NOTE:** All service configuration rules follow &quot;last one
     * wins&quot; order.
     */
-  var rules: js.UndefOr[js.Array[SchemaCustomErrorRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaCustomErrorRule]] = js.undefined
   
   /**
     * The list of custom error detail types, e.g.
     * &#39;google.foo.v1.CustomError&#39;.
     */
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCustomError {
   

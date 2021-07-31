@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "NotFilter")
 @js.native
-class NotFilter protected () extends Filter {
+class NotFilter protected ()
+  extends StObject
+     with Filter {
   /*
     Container filter that excludes the matched documents of the contained filter.
     */

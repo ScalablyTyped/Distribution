@@ -8,38 +8,36 @@ import typings.mapboxS3urls.mapboxS3urlsStrings.s3
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@mapbox/s3urls", "convert")
+  @JSImport("@mapbox/s3urls", JSImport.Namespace)
   @js.native
-  def convert_bucketinhost(url: String, to: `bucket-in-host`): String = js.native
-  @JSImport("@mapbox/s3urls", "convert")
-  @js.native
-  def convert_bucketinpath(url: String, to: `bucket-in-path`): String = js.native
-  @JSImport("@mapbox/s3urls", "convert")
-  @js.native
-  def convert_s3(url: String, to: s3): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@mapbox/s3urls", "fromUrl")
-  @js.native
-  def fromUrl(url: String): Bucket = js.native
+  @scala.inline
+  def convert_bucketinhost(url: String, to: `bucket-in-host`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(url.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@mapbox/s3urls", "signed")
-  @js.native
+  @scala.inline
+  def convert_bucketinpath(url: String, to: `bucket-in-path`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(url.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def convert_s3(url: String, to: s3): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(url.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def fromUrl(url: String): Bucket = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Bucket]
+  
+  @scala.inline
   def signed(
     url: String,
     expires: Double,
     cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("signed")(url.asInstanceOf[js.Any], expires.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@mapbox/s3urls", "toUrl")
-  @js.native
-  def toUrl(bucket: String, key: String): Bucketinhost = js.native
+  @scala.inline
+  def toUrl(bucket: String, key: String): Bucketinhost = (^.asInstanceOf[js.Dynamic].applyDynamic("toUrl")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Bucketinhost]
   
-  @JSImport("@mapbox/s3urls", "valid")
-  @js.native
-  def valid(url: String): Boolean = js.native
+  @scala.inline
+  def valid(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

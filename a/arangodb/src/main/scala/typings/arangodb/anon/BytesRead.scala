@@ -2,23 +2,21 @@ package typings.arangodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BytesRead extends StObject {
   
-  var bytesRead: Double = js.native
+  var bytesRead: Double
   
-  var bytesWritten: Double = js.native
+  var bytesWritten: Double
   
-  var count: Double = js.native
+  var count: Double
   
-  var filesCombined: Double = js.native
+  var filesCombined: Double
   
-  var message: String = js.native
+  var message: String
   
-  var time: String = js.native
+  var time: String
 }
 object BytesRead {
   

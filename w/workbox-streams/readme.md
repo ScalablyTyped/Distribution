@@ -10,9 +10,9 @@ A library that makes it easier to work with Streams in the browser.
 | ------------------ | :-------------: |
 | Full name          | workbox-streams |
 | Keywords           | workbox, workboxjs, service worker, sw, streams, readablestream |
-| # releases         | 31 |
-| # dependents       | 3 |
-| # downloads        | 102110430 |
+| # releases         | 29 |
+| # dependents       | 6 |
+| # downloads        | 117913665 |
 | # stars            | 0 |
 
 ## Links

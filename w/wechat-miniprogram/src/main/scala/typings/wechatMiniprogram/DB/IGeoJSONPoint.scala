@@ -3,22 +3,22 @@ package typings.wechatMiniprogram.DB
 import typings.wechatMiniprogram.wechatMiniprogramStrings.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGeoJSONPoint extends IGeoJSONObject {
+trait IGeoJSONPoint
+  extends StObject
+     with IGeoJSONObject {
   
-  var coordinates: js.Tuple2[Double, Double] = js.native
+  var coordinates: js.Tuple2[Double, Double]
   
-  var `type`: Point = js.native
+  var `type`: Point
 }
 object IGeoJSONPoint {
   
   @scala.inline
-  def apply(coordinates: js.Tuple2[Double, Double], `type`: Point): IGeoJSONPoint = {
+  def apply(coordinates: js.Tuple2[Double, Double]): IGeoJSONPoint = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Point")
     __obj.asInstanceOf[IGeoJSONPoint]
   }
   

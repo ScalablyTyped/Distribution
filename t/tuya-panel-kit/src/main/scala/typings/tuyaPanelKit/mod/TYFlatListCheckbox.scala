@@ -3,34 +3,34 @@ package typings.tuyaPanelKit.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.tuyaPanelKit.mod.CheckboxProps because var conflicts: accessibilityLabel, style. Inlined size, disabled, disabledColor, checked, checkedIcon, unCheckedIcon, reverse, hideOnUnselect, color, onChange, children */ @js.native
-trait TYFlatListCheckbox[ItemT /* <: TYFlatListData */] extends TYFlatListProps[ItemT] {
+- typings.tuyaPanelKit.mod.CheckboxProps because var conflicts: accessibilityLabel, style. Inlined size, disabled, disabledColor, checked, checkedIcon, unCheckedIcon, reverse, hideOnUnselect, color, onChange, children */ trait TYFlatListCheckbox[ItemT /* <: TYFlatListData */]
+  extends StObject
+     with TYFlatListProps[ItemT] {
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var checkedIcon: js.UndefOr[String] = js.native
+  var checkedIcon: js.UndefOr[String] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var disabledColor: js.UndefOr[String] = js.native
+  var disabledColor: js.UndefOr[String] = js.undefined
   
-  var hideOnUnselect: js.UndefOr[Boolean] = js.native
+  var hideOnUnselect: js.UndefOr[Boolean] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var unCheckedIcon: js.UndefOr[String] = js.native
+  var unCheckedIcon: js.UndefOr[String] = js.undefined
 }
 object TYFlatListCheckbox {
   
@@ -41,7 +41,7 @@ object TYFlatListCheckbox {
   }
   
   @scala.inline
-  implicit class TYFlatListCheckboxMutableBuilder[Self <: TYFlatListCheckbox[_], ItemT /* <: TYFlatListData */] (val x: Self with TYFlatListCheckbox[ItemT]) extends AnyVal {
+  implicit class TYFlatListCheckboxMutableBuilder[Self <: TYFlatListCheckbox[?], ItemT /* <: TYFlatListData */] (val x: Self & TYFlatListCheckbox[ItemT]) extends AnyVal {
     
     @scala.inline
     def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])

@@ -3,7 +3,6 @@ package typings.cpFile
 import typings.cpFile.cpFileStrings.progress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,12 +21,14 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(source: String, destination: String): js.Promise[Unit] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] & ProgressEmitter]
+  @scala.inline
+  def apply(source: String, destination: String, options: Options): js.Promise[Unit] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] & ProgressEmitter]
+  
   @JSImport("cp-file", JSImport.Namespace)
   @js.native
-  def apply(source: String, destination: String): js.Promise[Unit] with ProgressEmitter = js.native
-  @JSImport("cp-file", JSImport.Namespace)
-  @js.native
-  def apply(source: String, destination: String, options: Options): js.Promise[Unit] with ProgressEmitter = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Copy a file synchronously.
@@ -39,21 +40,18 @@ object mod {
   	cpFile.sync('source/unicorn.png', 'destination/unicorn.png');
   	```
   	*/
-  @JSImport("cp-file", "sync")
-  @js.native
-  def sync(source: String, destination: String): Unit = js.native
-  @JSImport("cp-file", "sync")
-  @js.native
-  def sync(source: String, destination: String, options: Options): Unit = js.native
+  @scala.inline
+  def sync(source: String, destination: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sync(source: String, destination: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Overwrite existing destination file.
     		@default true
     		*/
-    val overwrite: js.UndefOr[Boolean] = js.native
+    val overwrite: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -74,33 +72,32 @@ object mod {
     }
   }
   
-  @js.native
   trait ProgressData extends StObject {
     
     /**
     		Absolute path to destination.
     		*/
-    var destinationPath: String = js.native
+    var destinationPath: String
     
     /**
     		Copied percentage, a value between `0` and `1`.
     		*/
-    var percent: Double = js.native
+    var percent: Double
     
     /**
     		File size in bytes.
     		*/
-    var size: Double = js.native
+    var size: Double
     
     /**
     		Absolute path to source.
     		*/
-    var sourcePath: String = js.native
+    var sourcePath: String
     
     /**
     		Copied size in bytes.
     		*/
-    var writtenBytes: Double = js.native
+    var writtenBytes: Double
   }
   object ProgressData {
     
@@ -130,14 +127,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ProgressEmitter extends StObject {
     
     /**
     		Note: For empty files, the `progress` event is emitted only once.
     		*/
     @JSName("on")
-    def on_progress(event: progress, handler: js.Function1[/* data */ ProgressData, Unit]): js.Promise[Unit] = js.native
+    def on_progress(event: progress, handler: js.Function1[/* data */ ProgressData, Unit]): js.Promise[Unit]
   }
   object ProgressEmitter {
     

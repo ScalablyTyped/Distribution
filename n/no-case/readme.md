@@ -10,9 +10,9 @@ Transform into a lower cased string with spaces between words
 | ------------------ | :-------------: |
 | Full name          | no-case |
 | Keywords           | no, case, space, lower, convert, transform |
-| # releases         | 5 |
-| # dependents       | 42 |
-| # downloads        | 323116430 |
+| # releases         | 6 |
+| # dependents       | 53 |
+| # downloads        | 398183029 |
 | # stars            | 0 |
 
 ## Links

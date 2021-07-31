@@ -2,43 +2,41 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedType[T] extends StObject {
   
   /** The active value currently used by the network configuration manager (e.g. Shill). */
-  var Active: js.UndefOr[T] = js.native
+  var Active: js.UndefOr[T] = js.undefined
   
   /**
     * Whether a DevicePolicy for the property exists and allows the property
     * to be edited (i.e. the policy set recommended property value).
     * @default false
     */
-  var DeviceEditable: js.UndefOr[Boolean] = js.native
+  var DeviceEditable: js.UndefOr[Boolean] = js.undefined
   
   /** The property value provided by the device policy. */
-  var DevicePolicy: js.UndefOr[T] = js.native
+  var DevicePolicy: js.UndefOr[T] = js.undefined
   
   /** The source from which the effective property value was determined. */
-  var Effective: js.UndefOr[String] = js.native
+  var Effective: js.UndefOr[String] = js.undefined
   
   /** The value set for all users of the device. Only provided if *DeviceEditiable* is true. */
-  var SharedSetting: js.UndefOr[T] = js.native
+  var SharedSetting: js.UndefOr[T] = js.undefined
   
   /**
     * Whether a UserPolicy for the property exists and allows the property
     * to be edited (i.e. the policy set recommended property value).
     * @default false
     */
-  var UserEditable: js.UndefOr[Boolean] = js.native
+  var UserEditable: js.UndefOr[Boolean] = js.undefined
   
   /** The property value provided by the user policy. */
-  var UserPolicy: js.UndefOr[T] = js.native
+  var UserPolicy: js.UndefOr[T] = js.undefined
   
   /** The property value set by the logged in user. Only provided if *UserEditable* is true. */
-  var UserSetting: js.UndefOr[T] = js.native
+  var UserSetting: js.UndefOr[T] = js.undefined
 }
 object ManagedType {
   
@@ -49,7 +47,7 @@ object ManagedType {
   }
   
   @scala.inline
-  implicit class ManagedTypeMutableBuilder[Self <: ManagedType[_], T] (val x: Self with ManagedType[T]) extends AnyVal {
+  implicit class ManagedTypeMutableBuilder[Self <: ManagedType[?], T] (val x: Self & ManagedType[T]) extends AnyVal {
     
     @scala.inline
     def setActive(value: T): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])

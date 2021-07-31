@@ -3,7 +3,6 @@ package typings.postmark
 import typings.postmark.filteringParametersMod.FilteringParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageFilteringParametersMod {
@@ -15,31 +14,43 @@ object messageFilteringParametersMod {
   object InboundMessageStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[InboundMessageStatus with String] = js.native
+    def apply(value: String): js.UndefOr[InboundMessageStatus & String] = js.native
     
     @js.native
-    sealed trait Blocked extends InboundMessageStatus
-    /* "blocked" */ val Blocked: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Blocked with String = js.native
+    sealed trait Blocked
+      extends StObject
+         with InboundMessageStatus
+    /* "blocked" */ val Blocked: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Blocked & String = js.native
     
     @js.native
-    sealed trait Failed extends InboundMessageStatus
-    /* "failed" */ val Failed: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Failed with String = js.native
+    sealed trait Failed
+      extends StObject
+         with InboundMessageStatus
+    /* "failed" */ val Failed: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Failed & String = js.native
     
     @js.native
-    sealed trait Processed extends InboundMessageStatus
-    /* "processed" */ val Processed: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Processed with String = js.native
+    sealed trait Processed
+      extends StObject
+         with InboundMessageStatus
+    /* "processed" */ val Processed: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Processed & String = js.native
     
     @js.native
-    sealed trait Queued extends InboundMessageStatus
-    /* "queued" */ val Queued: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Queued with String = js.native
+    sealed trait Queued
+      extends StObject
+         with InboundMessageStatus
+    /* "queued" */ val Queued: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Queued & String = js.native
     
     @js.native
-    sealed trait Scheduled extends InboundMessageStatus
-    /* "scheduled" */ val Scheduled: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Scheduled with String = js.native
+    sealed trait Scheduled
+      extends StObject
+         with InboundMessageStatus
+    /* "scheduled" */ val Scheduled: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Scheduled & String = js.native
     
     @js.native
-    sealed trait Sent extends InboundMessageStatus
-    /* "sent" */ val Sent: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Sent with String = js.native
+    sealed trait Sent
+      extends StObject
+         with InboundMessageStatus
+    /* "sent" */ val Sent: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Sent & String = js.native
   }
   
   @JSImport("postmark/dist/client/models/messages/MessageFilteringParameters", "InboundMessagesFilteringParameters")
@@ -126,19 +137,25 @@ object messageFilteringParametersMod {
   object OutboundMessageStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[OutboundMessageStatus with String] = js.native
+    def apply(value: String): js.UndefOr[OutboundMessageStatus & String] = js.native
     
     @js.native
-    sealed trait Processed extends OutboundMessageStatus
-    /* "processed" */ val Processed: typings.postmark.messageFilteringParametersMod.OutboundMessageStatus.Processed with String = js.native
+    sealed trait Processed
+      extends StObject
+         with OutboundMessageStatus
+    /* "processed" */ val Processed: typings.postmark.messageFilteringParametersMod.OutboundMessageStatus.Processed & String = js.native
     
     @js.native
-    sealed trait Queued extends OutboundMessageStatus
-    /* "queued" */ val Queued: typings.postmark.messageFilteringParametersMod.OutboundMessageStatus.Queued with String = js.native
+    sealed trait Queued
+      extends StObject
+         with OutboundMessageStatus
+    /* "queued" */ val Queued: typings.postmark.messageFilteringParametersMod.OutboundMessageStatus.Queued & String = js.native
     
     @js.native
-    sealed trait Sent extends OutboundMessageStatus
-    /* "sent" */ val Sent: typings.postmark.messageFilteringParametersMod.OutboundMessageStatus.Sent with String = js.native
+    sealed trait Sent
+      extends StObject
+         with OutboundMessageStatus
+    /* "sent" */ val Sent: typings.postmark.messageFilteringParametersMod.OutboundMessageStatus.Sent & String = js.native
   }
   
   @JSImport("postmark/dist/client/models/messages/MessageFilteringParameters", "OutboundMessageTrackingFilteringParameters")

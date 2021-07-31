@@ -4,23 +4,21 @@ import typings.storybookAddonKnobs.radioMod.RadiosTypeKnobValue
 import typings.storybookAddonKnobs.radioMod.RadiosTypeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofRadiosType extends StObject {
   
   /* static member */
-  var defaultProps: RadiosTypeProps = js.native
+  var defaultProps: RadiosTypeProps
   
   /* static member */
-  var deserialize: js.Function1[/* value */ RadiosTypeKnobValue, js.UndefOr[String | Double | Null]] = js.native
+  var deserialize: js.Function1[/* value */ RadiosTypeKnobValue, js.UndefOr[String | Double | Null]]
   
   /* static member */
-  var propTypes: IsInlineKnob = js.native
+  var propTypes: IsInlineKnob
   
   /* static member */
-  var serialize: js.Function1[/* value */ RadiosTypeKnobValue, js.UndefOr[String | Double | Null]] = js.native
+  var serialize: js.Function1[/* value */ RadiosTypeKnobValue, js.UndefOr[String | Double | Null]]
 }
 object TypeofRadiosType {
   

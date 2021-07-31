@@ -2,19 +2,17 @@ package typings.sugar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegExp extends StObject {
   
-  def addFlags(flags: java.lang.String): RegExp = js.native
+  def addFlags(flags: java.lang.String): RegExp
   
-  def getFlags(): java.lang.String = js.native
+  def getFlags(): java.lang.String
   
-  def removeFlags(flags: java.lang.String): RegExp = js.native
+  def removeFlags(flags: java.lang.String): RegExp
   
-  def setFlags(flags: java.lang.String): RegExp = js.native
+  def setFlags(flags: java.lang.String): RegExp
 }
 object RegExp {
   

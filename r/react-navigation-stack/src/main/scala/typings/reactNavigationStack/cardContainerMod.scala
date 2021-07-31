@@ -18,14 +18,12 @@ import typings.reactNavigationStack.vendorTypesMod.Scene
 import typings.reactNavigationStack.vendorTypesMod.StackCardInterpolatedStyle
 import typings.reactNavigationStack.vendorTypesMod.StackCardInterpolationProps
 import typings.reactNavigationStack.vendorTypesMod.StackCardMode
-import typings.reactNavigationStack.vendorTypesMod.StackCardStyleInterpolator
 import typings.reactNavigationStack.vendorTypesMod.StackHeaderInterpolatedStyle
 import typings.reactNavigationStack.vendorTypesMod.StackHeaderInterpolationProps
 import typings.reactNavigationStack.vendorTypesMod.StackHeaderMode
-import typings.reactNavigationStack.vendorTypesMod.StackHeaderStyleInterpolator
+import typings.reactNavigationStack.vendorTypesMod.TransitionPreset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardContainerMod extends Shortcut {
@@ -39,111 +37,91 @@ object cardContainerMod extends Shortcut {
     ]
   ] = js.native
   
-  /* Inlined react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionPreset & {  index :number,   active :boolean,   focused :boolean,   closing :boolean,   layout :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Layout,   gesture :react-native.react-native.Animated.Value,   scene :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Scene<react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>>,   safeAreaInsetTop :number,   safeAreaInsetRight :number,   safeAreaInsetBottom :number,   safeAreaInsetLeft :number,   cardOverlay :(props : {  style :react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.ViewStyle>>}): react.react.ReactNode | undefined,   cardOverlayEnabled :boolean | undefined,   cardShadowEnabled :boolean | undefined,   cardStyle :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined, getPreviousScene (props : {  route :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>}): react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Scene<react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>> | undefined, getFocusedRoute (): react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>, renderHeader (props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/views/Header/HeaderContainer.Props): react.react.ReactNode, renderScene (props : {  route :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>}): react.react.ReactNode, onOpenRoute (props : {  route :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>}): void, onCloseRoute (props : {  route :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>}): void,   onTransitionStart :(props : {  route :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>}, closing : boolean): void | undefined,   onTransitionEnd :(props : {  route :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>}, closing : boolean): void | undefined,   onPageChangeStart :(): void | undefined,   onPageChangeConfirm :(force : boolean): void | undefined,   onPageChangeCancel :(): void | undefined,   onGestureStart :(props : {  route :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>}): void | undefined,   onGestureEnd :(props : {  route :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>}): void | undefined,   onGestureCancel :(props : {  route :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>}): void | undefined,   gestureEnabled :boolean | undefined,   gestureResponseDistance :{  vertical :number | undefined,   horizontal :number | undefined} | undefined,   gestureVelocityImpact :number | undefined,   mode :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackCardMode,   headerMode :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderMode,   headerShown :boolean,   hasAbsoluteHeader :boolean,   headerHeight :number, onHeaderHeightChange (props : {  route :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Route<string>,   height :number}): void,   isParentHeaderShown :boolean} */
-  @js.native
-  trait Props extends StObject {
+  trait Props
+    extends StObject
+       with TransitionPreset {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var cardOverlay: js.UndefOr[js.Function1[/* props */ StyleWithAnimatedValue, ReactNode]] = js.native
+    var cardOverlay: js.UndefOr[js.Function1[/* props */ StyleWithAnimatedValue, ReactNode]] = js.undefined
     
-    var cardOverlayEnabled: js.UndefOr[Boolean] = js.native
+    var cardOverlayEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var cardShadowEnabled: js.UndefOr[Boolean] = js.native
+    var cardShadowEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var cardStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var cardStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    /**
-      * Function which specifies interpolated styles for various parts of the card, e.g. the overlay, shadow etc.
-      */
-    var cardStyleInterpolator: StackCardStyleInterpolator = js.native
+    var closing: Boolean
     
-    var closing: Boolean = js.native
+    var focused: Boolean
     
-    var focused: Boolean = js.native
+    var gesture: Value
     
-    var gesture: Value = js.native
+    var gestureEnabled: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * The direction of swipe gestures, `horizontal` or `vertical`.
-      */
-    var gestureDirection: GestureDirection = js.native
+    var gestureResponseDistance: js.UndefOr[Horizontal] = js.undefined
     
-    var gestureEnabled: js.UndefOr[Boolean] = js.native
+    var gestureVelocityImpact: js.UndefOr[Double] = js.undefined
     
-    var gestureResponseDistance: js.UndefOr[Horizontal] = js.native
+    def getFocusedRoute(): Route[String]
     
-    var gestureVelocityImpact: js.UndefOr[Double] = js.native
+    def getPreviousScene(props: typings.reactNavigationStack.anon.Route): js.UndefOr[Scene[Route[String]]]
     
-    def getFocusedRoute(): Route[String] = js.native
+    var hasAbsoluteHeader: Boolean
     
-    def getPreviousScene(props: typings.reactNavigationStack.anon.Route): js.UndefOr[Scene[Route[String]]] = js.native
+    var headerHeight: Double
     
-    var hasAbsoluteHeader: Boolean = js.native
+    var headerMode: StackHeaderMode
     
-    var headerHeight: Double = js.native
+    var headerShown: Boolean
     
-    var headerMode: StackHeaderMode = js.native
+    var index: Double
     
-    var headerShown: Boolean = js.native
+    var isParentHeaderShown: Boolean
     
-    /**
-      * Function which specifies interpolated styles for various parts of the header, e.g. the title, left button etc.
-      */
-    var headerStyleInterpolator: StackHeaderStyleInterpolator = js.native
+    var layout: Layout
     
-    var index: Double = js.native
+    var mode: StackCardMode
     
-    var isParentHeaderShown: Boolean = js.native
+    def onCloseRoute(props: typings.reactNavigationStack.anon.Route): Unit
     
-    var layout: Layout = js.native
+    var onGestureCancel: js.UndefOr[js.Function1[/* props */ typings.reactNavigationStack.anon.Route, Unit]] = js.undefined
     
-    var mode: StackCardMode = js.native
+    var onGestureEnd: js.UndefOr[js.Function1[/* props */ typings.reactNavigationStack.anon.Route, Unit]] = js.undefined
     
-    def onCloseRoute(props: typings.reactNavigationStack.anon.Route): Unit = js.native
+    var onGestureStart: js.UndefOr[js.Function1[/* props */ typings.reactNavigationStack.anon.Route, Unit]] = js.undefined
     
-    var onGestureCancel: js.UndefOr[js.Function1[/* props */ typings.reactNavigationStack.anon.Route, Unit]] = js.native
+    def onHeaderHeightChange(props: Height): Unit
     
-    var onGestureEnd: js.UndefOr[js.Function1[/* props */ typings.reactNavigationStack.anon.Route, Unit]] = js.native
+    def onOpenRoute(props: typings.reactNavigationStack.anon.Route): Unit
     
-    var onGestureStart: js.UndefOr[js.Function1[/* props */ typings.reactNavigationStack.anon.Route, Unit]] = js.native
+    var onPageChangeCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def onHeaderHeightChange(props: Height): Unit = js.native
+    var onPageChangeConfirm: js.UndefOr[js.Function1[/* force */ Boolean, Unit]] = js.undefined
     
-    def onOpenRoute(props: typings.reactNavigationStack.anon.Route): Unit = js.native
-    
-    var onPageChangeCancel: js.UndefOr[js.Function0[Unit]] = js.native
-    
-    var onPageChangeConfirm: js.UndefOr[js.Function1[/* force */ Boolean, Unit]] = js.native
-    
-    var onPageChangeStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPageChangeStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onTransitionEnd: js.UndefOr[
         js.Function2[/* props */ typings.reactNavigationStack.anon.Route, /* closing */ Boolean, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onTransitionStart: js.UndefOr[
         js.Function2[/* props */ typings.reactNavigationStack.anon.Route, /* closing */ Boolean, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    def renderHeader(props: typings.reactNavigationStack.headerContainerMod.Props): ReactNode = js.native
+    def renderHeader(props: typings.reactNavigationStack.headerContainerMod.Props): ReactNode
     
-    def renderScene(props: typings.reactNavigationStack.anon.Route): ReactNode = js.native
+    def renderScene(props: typings.reactNavigationStack.anon.Route): ReactNode
     
-    var safeAreaInsetBottom: Double = js.native
+    var safeAreaInsetBottom: Double
     
-    var safeAreaInsetLeft: Double = js.native
+    var safeAreaInsetLeft: Double
     
-    var safeAreaInsetRight: Double = js.native
+    var safeAreaInsetRight: Double
     
-    var safeAreaInsetTop: Double = js.native
+    var safeAreaInsetTop: Double
     
-    var scene: Scene[Route[String]] = js.native
-    
-    /**
-      * Object which specifies the animation type (timing or spring) and their options (such as duration for timing).
-      */
-    var transitionSpec: Close = js.native
+    var scene: Scene[Route[String]]
   }
   object Props {
     
@@ -210,9 +188,6 @@ object cardContainerMod extends Shortcut {
       def setCardStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "cardStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCardStyleInterpolator(value: /* props */ StackCardInterpolationProps => StackCardInterpolatedStyle): Self = StObject.set(x, "cardStyleInterpolator", js.Any.fromFunction1(value))
-      
-      @scala.inline
       def setCardStyleNull: Self = StObject.set(x, "cardStyle", null)
       
       @scala.inline
@@ -226,9 +201,6 @@ object cardContainerMod extends Shortcut {
       
       @scala.inline
       def setGesture(value: Value): Self = StObject.set(x, "gesture", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setGestureDirection(value: GestureDirection): Self = StObject.set(x, "gestureDirection", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
@@ -265,9 +237,6 @@ object cardContainerMod extends Shortcut {
       
       @scala.inline
       def setHeaderShown(value: Boolean): Self = StObject.set(x, "headerShown", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHeaderStyleInterpolator(value: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle): Self = StObject.set(x, "headerStyleInterpolator", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -358,9 +327,6 @@ object cardContainerMod extends Shortcut {
       
       @scala.inline
       def setScene(value: Scene[Route[String]]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTransitionSpec(value: Close): Self = StObject.set(x, "transitionSpec", value.asInstanceOf[js.Any])
     }
   }
   

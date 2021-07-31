@@ -2,45 +2,43 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposListDeploymentsEndpoint extends StObject {
   
   /**
     * The name of the environment that was deployed to (e.g., `staging` or `production`).
     */
-  var environment: js.UndefOr[String] = js.native
+  var environment: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the ref. This can be a branch, tag, or SHA.
     */
-  var ref: js.UndefOr[String] = js.native
+  var ref: js.UndefOr[String] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The SHA recorded at creation time.
     */
-  var sha: js.UndefOr[String] = js.native
+  var sha: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the task for the deployment (e.g., `deploy` or `deploy:migrations`).
     */
-  var task: js.UndefOr[String] = js.native
+  var task: js.UndefOr[String] = js.undefined
 }
 object ReposListDeploymentsEndpoint {
   

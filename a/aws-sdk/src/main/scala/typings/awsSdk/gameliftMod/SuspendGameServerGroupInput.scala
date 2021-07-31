@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuspendGameServerGroupInput extends StObject {
   
   /**
     * A unique identifier for the game server group. Use either the GameServerGroup name or ARN value.
     */
-  var GameServerGroupName: GameServerGroupNameOrArn = js.native
+  var GameServerGroupName: GameServerGroupNameOrArn
   
   /**
     * The activity to suspend for this game server group.
     */
-  var SuspendActions: GameServerGroupActions = js.native
+  var SuspendActions: GameServerGroupActions
 }
 object SuspendGameServerGroupInput {
   

@@ -6,21 +6,19 @@ import typings.firmata.mod.STEPPER_RUN_STATE
 import typings.firmata.mod.STEPPER_TYPE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ACCEL extends StObject {
     
-    var ACCEL: STEPPER_RUN_STATE = js.native
+    var ACCEL: STEPPER_RUN_STATE
     
-    var DECEL: STEPPER_RUN_STATE = js.native
+    var DECEL: STEPPER_RUN_STATE
     
-    var RUN: STEPPER_RUN_STATE = js.native
+    var RUN: STEPPER_RUN_STATE
     
-    var STOP: STEPPER_RUN_STATE = js.native
+    var STOP: STEPPER_RUN_STATE
   }
   object ACCEL {
     
@@ -52,12 +50,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Address extends StObject {
     
-    var address: Double = js.native
+    var address: Double
     
-    var bus: Double = js.native
+    var bus: Double
   }
   object Address {
     
@@ -78,16 +75,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Baud extends StObject {
     
-    var baud: Double = js.native
+    var baud: Double
     
-    var portId: SERIAL_PORT_ID = js.native
+    var portId: SERIAL_PORT_ID
     
-    var rxPin: js.UndefOr[Double] = js.native
+    var rxPin: js.UndefOr[Double] = js.undefined
     
-    var txPin: js.UndefOr[Double] = js.native
+    var txPin: js.UndefOr[Double] = js.undefined
   }
   object Baud {
     
@@ -120,12 +116,11 @@ object anon {
     }
   }
   
-  @js.native
   trait BaudRate extends StObject {
     
-    var baudRate: Double = js.native
+    var baudRate: Double
     
-    var bufferSize: Double = js.native
+    var bufferSize: Double
   }
   object BaudRate {
     
@@ -146,12 +141,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CCW extends StObject {
     
-    var CCW: STEPPER_DIRECTION = js.native
+    var CCW: STEPPER_DIRECTION
     
-    var CW: STEPPER_DIRECTION = js.native
+    var CW: STEPPER_DIRECTION
   }
   object CCW {
     
@@ -172,14 +166,13 @@ object anon {
     }
   }
   
-  @js.native
   trait DRIVER extends StObject {
     
-    var DRIVER: STEPPER_TYPE = js.native
+    var DRIVER: STEPPER_TYPE
     
-    var FOUR_WIRE: STEPPER_TYPE = js.native
+    var FOUR_WIRE: STEPPER_TYPE
     
-    var TWO_WIRE: STEPPER_TYPE = js.native
+    var TWO_WIRE: STEPPER_TYPE
   }
   object DRIVER {
     
@@ -203,10 +196,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Delay extends StObject {
     
-    var delay: Double = js.native
+    var delay: Double
   }
   object Delay {
     

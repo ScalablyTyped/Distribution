@@ -5,67 +5,100 @@ import typings.pkijs.anon.Password
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object encryptedDataMod {
   
   @JSImport("pkijs/src/EncryptedData", JSImport.Default)
   @js.native
-  class default () extends EncryptedData {
+  class default ()
+    extends StObject
+       with EncryptedData {
     def this(params: js.Any) = this()
-  }
-  /* static members */
-  object default {
-    
-    /**
-      * Compare values with default values for all class members
-      * @param {string} memberName String name for a class member
-      * @param {*} memberValue Value to compare with default value
-      */
-    @JSImport("pkijs/src/EncryptedData", "default.compareWithDefault")
-    @js.native
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
-    
-    @JSImport("pkijs/src/EncryptedData", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
-    
-    @JSImport("pkijs/src/EncryptedData", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/EncryptedData", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
-  }
-  
-  @js.native
-  trait EncryptedData extends StObject {
     
     /**
       * Create a new CMS Encrypted Data content
       * @param {*} parameters Parameters neccessary for encryption
       */
-    def decrypt(parameters: Password): js.Thenable[ArrayBuffer] = js.native
+    /* CompleteClass */
+    override def decrypt(parameters: Password): js.Thenable[ArrayBuffer] = js.native
     
     /**
       * Create a new CMS Encrypted Data content
       * @param {*} parameters Parameters neccessary for encryption
       * @returns {Promise}
       */
-    def encrypt(parameters: ContentEncryptionAlgorithm): js.Thenable[ArrayBuffer] = js.native
+    /* CompleteClass */
+    override def encrypt(parameters: ContentEncryptionAlgorithm): js.Thenable[ArrayBuffer] = js.native
     
+    /* CompleteClass */
     var encryptedContentInfo: typings.pkijs.encryptedContentInfoMod.default = js.native
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
     
-    def toJSON(): js.Any = js.native
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
     
-    def toSchema(): js.Any = js.native
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
     
+    /* CompleteClass */
     var unprotectedAttrs: js.Array[typings.pkijs.attributeMod.default] = js.native
     
+    /* CompleteClass */
     var version: Double = js.native
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("pkijs/src/EncryptedData", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Compare values with default values for all class members
+      * @param {string} memberName String name for a class member
+      * @param {*} memberValue Value to compare with default value
+      */
+    @scala.inline
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  }
+  
+  trait EncryptedData extends StObject {
+    
+    /**
+      * Create a new CMS Encrypted Data content
+      * @param {*} parameters Parameters neccessary for encryption
+      */
+    def decrypt(parameters: Password): js.Thenable[ArrayBuffer]
+    
+    /**
+      * Create a new CMS Encrypted Data content
+      * @param {*} parameters Parameters neccessary for encryption
+      * @returns {Promise}
+      */
+    def encrypt(parameters: ContentEncryptionAlgorithm): js.Thenable[ArrayBuffer]
+    
+    var encryptedContentInfo: typings.pkijs.encryptedContentInfoMod.default
+    
+    def fromSchema(schema: js.Any): Unit
+    
+    def toJSON(): js.Any
+    
+    def toSchema(): js.Any
+    
+    var unprotectedAttrs: js.Array[typings.pkijs.attributeMod.default]
+    
+    var version: Double
   }
   object EncryptedData {
     

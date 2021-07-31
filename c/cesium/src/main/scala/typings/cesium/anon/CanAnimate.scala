@@ -5,27 +5,25 @@ import typings.cesium.mod.ClockStep
 import typings.cesium.mod.JulianDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanAnimate extends StObject {
   
-  var canAnimate: js.UndefOr[Boolean] = js.native
+  var canAnimate: js.UndefOr[Boolean] = js.undefined
   
-  var clockRange: js.UndefOr[ClockRange] = js.native
+  var clockRange: js.UndefOr[ClockRange] = js.undefined
   
-  var clockStep: js.UndefOr[ClockStep] = js.native
+  var clockStep: js.UndefOr[ClockStep] = js.undefined
   
-  var currentTime: js.UndefOr[JulianDate] = js.native
+  var currentTime: js.UndefOr[JulianDate] = js.undefined
   
-  var multiplier: js.UndefOr[Double] = js.native
+  var multiplier: js.UndefOr[Double] = js.undefined
   
-  var shouldAnimate: js.UndefOr[Boolean] = js.native
+  var shouldAnimate: js.UndefOr[Boolean] = js.undefined
   
-  var startTime: js.UndefOr[JulianDate] = js.native
+  var startTime: js.UndefOr[JulianDate] = js.undefined
   
-  var stopTime: js.UndefOr[JulianDate] = js.native
+  var stopTime: js.UndefOr[JulianDate] = js.undefined
 }
 object CanAnimate {
   

@@ -2,15 +2,13 @@ package typings.intlMessageformatParser.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var end: LocationDetails = js.native
+  var end: LocationDetails
   
-  var start: LocationDetails = js.native
+  var start: LocationDetails
 }
 object Location {
   

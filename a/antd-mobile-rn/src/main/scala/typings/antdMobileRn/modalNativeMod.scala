@@ -11,7 +11,6 @@ import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalNativeMod {
@@ -83,9 +82,8 @@ object modalNativeMod {
       @scala.inline
       def maskClosable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maskClosable")(x.asInstanceOf[js.Any])
       
-      @JSImport("antd-mobile-rn/lib/modal/Modal.native", "default.defaultProps.onClose")
-      @js.native
-      def onClose(): Unit = js.native
+      @scala.inline
+      def onClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onClose")().asInstanceOf[Unit]
       
       @JSImport("antd-mobile-rn/lib/modal/Modal.native", "default.defaultProps.operation")
       @js.native
@@ -138,14 +136,15 @@ object modalNativeMod {
     def saveRoot(root: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait IModalNativeProps extends ModalPropsType[TextStyle] {
+  trait IModalNativeProps
+    extends StObject
+       with ModalPropsType[TextStyle] {
     
-    var bodyStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var bodyStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[IModalStyle] = js.native
+    var styles: js.UndefOr[IModalStyle] = js.undefined
   }
   object IModalNativeProps {
     

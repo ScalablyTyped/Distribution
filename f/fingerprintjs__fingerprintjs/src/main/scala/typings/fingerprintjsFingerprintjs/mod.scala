@@ -9,7 +9,6 @@ import typings.fingerprintjsFingerprintjs.anon.ExtendedJsFonts
 import typings.fingerprintjsFingerprintjs.anon.GetData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,12 +17,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : Fingerprint2Static = js.native
   
-  @js.native
   trait Component extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Component {
     
@@ -64,28 +62,27 @@ object mod extends Shortcut {
     def x64hash128(value: String, num: Double): String = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var ERROR: js.UndefOr[String] = js.native
+    var ERROR: js.UndefOr[String] = js.undefined
     
-    var EXCLUDED: js.UndefOr[String] = js.native
+    var EXCLUDED: js.UndefOr[String] = js.undefined
     
-    var NOT_AVAILABLE: js.UndefOr[String] = js.native
+    var NOT_AVAILABLE: js.UndefOr[String] = js.undefined
     
-    var audio: js.UndefOr[ExcludeIOS11] = js.native
+    var audio: js.UndefOr[ExcludeIOS11] = js.undefined
     
-    var excludes: js.UndefOr[AdBlock] = js.native
+    var excludes: js.UndefOr[AdBlock] = js.undefined
     
-    var extraComponents: js.UndefOr[js.Array[GetData]] = js.native
+    var extraComponents: js.UndefOr[js.Array[GetData]] = js.undefined
     
-    var fonts: js.UndefOr[ExtendedJsFonts] = js.native
+    var fonts: js.UndefOr[ExtendedJsFonts] = js.undefined
     
-    var plugins: js.UndefOr[ExcludeIE] = js.native
+    var plugins: js.UndefOr[ExcludeIE] = js.undefined
     
-    var preprocessor: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.native
+    var preprocessor: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
     
-    var screen: js.UndefOr[DetectScreenOrientation] = js.native
+    var screen: js.UndefOr[DetectScreenOrientation] = js.undefined
   }
   object Options {
     
@@ -150,7 +147,7 @@ object mod extends Shortcut {
       def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
       @scala.inline
-      def setPreprocessor(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "preprocessor", js.Any.fromFunction2(value))
+      def setPreprocessor(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "preprocessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPreprocessorUndefined: Self = StObject.set(x, "preprocessor", js.undefined)
@@ -163,12 +160,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait V18Component extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: String = js.native
+    var value: String
   }
   object V18Component {
     

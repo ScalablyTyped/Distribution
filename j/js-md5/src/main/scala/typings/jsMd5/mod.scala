@@ -5,7 +5,6 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,22 +13,21 @@ object mod extends Shortcut {
   @js.native
   val ^ : md5 = js.native
   
-  @js.native
   trait Md5_ extends StObject {
     
-    def array(): js.Array[Double] = js.native
+    def array(): js.Array[Double]
     
-    def arrayBuffer(): ArrayBuffer = js.native
+    def arrayBuffer(): ArrayBuffer
     
-    def base64(): String = js.native
+    def base64(): String
     
-    def buffer(): ArrayBuffer = js.native
+    def buffer(): ArrayBuffer
     
-    def digest(): js.Array[Double] = js.native
+    def digest(): js.Array[Double]
     
-    def hex(): String = js.native
+    def hex(): String
     
-    def update(message: message): Md5_ = js.native
+    def update(message: message): Md5_
   }
   object Md5_ {
     

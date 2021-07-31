@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expandTransitionChildMod {
@@ -19,16 +18,17 @@ object expandTransitionChildMod {
   trait ExpandTransitionChild
     extends Component[ExpandTransitionChildProps, js.Object, js.Any]
   
-  @js.native
-  trait ExpandTransitionChildProps extends Props[ExpandTransitionChild] {
+  trait ExpandTransitionChildProps
+    extends StObject
+       with Props[ExpandTransitionChild] {
     
-    var enterDelay: js.UndefOr[Double] = js.native
+    var enterDelay: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var transitionDelay: js.UndefOr[Double] = js.native
+    var transitionDelay: js.UndefOr[Double] = js.undefined
     
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
   }
   object ExpandTransitionChildProps {
     

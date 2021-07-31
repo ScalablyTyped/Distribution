@@ -3,14 +3,26 @@ package typings.dropboxjs.global.Dropbox
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Dropbox.ApiError")
 @js.native
 class ApiError protected ()
-  extends typings.dropboxjs.Dropbox.ApiError {
+  extends StObject
+     with typings.dropboxjs.Dropbox.ApiError {
   def this(xhr: XMLHttpRequest, method: String, url: String) = this()
+  
+  /* CompleteClass */
+  var method: String = js.native
+  
+  /* CompleteClass */
+  var responseText: String = js.native
+  
+  /* CompleteClass */
+  var status: Double = js.native
+  
+  /* CompleteClass */
+  var url: String = js.native
 }
 object ApiError {
   

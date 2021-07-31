@@ -5,319 +5,319 @@ import typings.senchaTouch.Ext.IBase
 import typings.senchaTouch.Ext.util.IGrouper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IOperation extends IBase {
+trait IOperation
+  extends StObject
+     with IBase {
   
   /** [Config Option] (String) */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /** [Method] Checks whether this operation should cause writing to occur
     * @returns Boolean Whether the operation should cause a write to occur.
     */
-  var allowWrite: js.UndefOr[js.Function0[Boolean]] = js.native
+  var allowWrite: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Ext.data.Batch) */
-  var batch: js.UndefOr[IBatch] = js.native
+  var batch: js.UndefOr[IBatch] = js.undefined
   
   /** [Config Option] (Function) */
-  var callback: js.UndefOr[js.Any] = js.native
+  var callback: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Ext.util.Filter[]) */
-  var filters: js.UndefOr[Array] = js.native
+  var filters: js.UndefOr[Array] = js.undefined
   
   /** [Method] Returns the value of action
     * @returns String
     */
-  var getAction: js.UndefOr[js.Function0[String]] = js.native
+  var getAction: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of addRecords
     * @returns Boolean
     */
-  var getAddRecords: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAddRecords: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of batch
     * @returns Ext.data.Batch
     */
-  var getBatch: js.UndefOr[js.Function0[IBatch]] = js.native
+  var getBatch: js.UndefOr[js.Function0[IBatch]] = js.undefined
   
   /** [Method] Returns the value of callback
     * @returns Function
     */
-  var getCallback: js.UndefOr[js.Function0[_]] = js.native
+  var getCallback: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the error string or object that was set using setException
     * @returns String/Object The error object.
     */
-  var getError: js.UndefOr[js.Function0[_]] = js.native
+  var getError: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of filters
     * @returns Ext.util.Filter[]
     */
-  var getFilters: js.UndefOr[js.Function0[Array]] = js.native
+  var getFilters: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of grouper
     * @returns Ext.util.Grouper
     */
-  var getGrouper: js.UndefOr[js.Function0[IGrouper]] = js.native
+  var getGrouper: js.UndefOr[js.Function0[IGrouper]] = js.undefined
   
   /** [Method] Returns the value of limit
     * @returns Number
     */
-  var getLimit: js.UndefOr[js.Function0[Double]] = js.native
+  var getLimit: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of model
     * @returns Ext.data.Model
     */
-  var getModel: js.UndefOr[js.Function0[IModel]] = js.native
+  var getModel: js.UndefOr[js.Function0[IModel]] = js.undefined
   
   /** [Method] Returns the value of node
     * @returns Object
     */
-  var getNode: js.UndefOr[js.Function0[_]] = js.native
+  var getNode: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of page
     * @returns Object
     */
-  var getPage: js.UndefOr[js.Function0[_]] = js.native
+  var getPage: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of params
     * @returns Object
     */
-  var getParams: js.UndefOr[js.Function0[_]] = js.native
+  var getParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of request
     * @returns Ext.data.Request
     */
-  var getRequest: js.UndefOr[js.Function0[IRequest]] = js.native
+  var getRequest: js.UndefOr[js.Function0[IRequest]] = js.undefined
   
   /** [Method] Returns the value of response
     * @returns Object
     */
-  var getResponse: js.UndefOr[js.Function0[_]] = js.native
+  var getResponse: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of resultSet
     * @returns Ext.data.ResultSet
     */
-  var getResultSet: js.UndefOr[js.Function0[IResultSet]] = js.native
+  var getResultSet: js.UndefOr[js.Function0[IResultSet]] = js.undefined
   
   /** [Method] Returns the value of scope
     * @returns Object
     */
-  var getScope: js.UndefOr[js.Function0[_]] = js.native
+  var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of sorters
     * @returns Ext.util.Sorter[]
     */
-  var getSorters: js.UndefOr[js.Function0[Array]] = js.native
+  var getSorters: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of start
     * @returns Number
     */
-  var getStart: js.UndefOr[js.Function0[Double]] = js.native
+  var getStart: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of synchronous
     * @returns Boolean
     */
-  var getSynchronous: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getSynchronous: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of url
     * @returns Object
     */
-  var getUrl: js.UndefOr[js.Function0[_]] = js.native
+  var getUrl: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of withCredentials
     * @returns Boolean
     */
-  var getWithCredentials: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getWithCredentials: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var group: js.UndefOr[Boolean] = js.native
+  var group: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.util.Grouper) */
-  var grouper: js.UndefOr[IGrouper] = js.native
+  var grouper: js.UndefOr[IGrouper] = js.undefined
   
   /** [Method] Returns true if this Operation encountered an exception see also getError
     * @returns Boolean true if there was an exception.
     */
-  var hasException: js.UndefOr[js.Function0[Boolean]] = js.native
+  var hasException: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if the Operation has been completed
     * @returns Boolean true if the Operation is complete
     */
-  var isComplete: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isComplete: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if the Operation has been started but has not yet completed
     * @returns Boolean true if the Operation is currently running
     */
-  var isRunning: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isRunning: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if the Operation has been started
     * @returns Boolean true if the Operation has started
     */
-  var isStarted: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isStarted: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Number) */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Ext.data.Model) */
-  var model: js.UndefOr[IModel] = js.native
+  var model: js.UndefOr[IModel] = js.undefined
   
   /** [Config Option] (Object) */
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Array) */
-  var records: js.UndefOr[Array] = js.native
+  var records: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (Ext.data.Request) */
-  var request: js.UndefOr[IRequest] = js.native
+  var request: js.UndefOr[IRequest] = js.undefined
   
   /** [Config Option] (Object) */
-  var response: js.UndefOr[js.Any] = js.native
+  var response: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Ext.data.ResultSet) */
-  var resultSet: js.UndefOr[IResultSet] = js.native
+  var resultSet: js.UndefOr[IResultSet] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.native
+  var scope: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Sets the value of action
     * @param action String The new value.
     */
-  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[String], Unit]] = js.native
+  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of addRecords
     * @param addRecords Boolean The new value.
     */
-  var setAddRecords: js.UndefOr[js.Function1[/* addRecords */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAddRecords: js.UndefOr[js.Function1[/* addRecords */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of batch
     * @param batch Ext.data.Batch The new value.
     */
-  var setBatch: js.UndefOr[js.Function1[/* batch */ js.UndefOr[IBatch], Unit]] = js.native
+  var setBatch: js.UndefOr[js.Function1[/* batch */ js.UndefOr[IBatch], Unit]] = js.undefined
   
   /** [Method] Sets the value of callback
     * @param callback Function The new value.
     */
-  var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.native
+  var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Marks the Operation as completed  */
-  var setCompleted: js.UndefOr[js.Function0[Unit]] = js.native
+  var setCompleted: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Marks the Operation as having experienced an exception
     * @param error String/Object error string/object
     */
-  var setException: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.native
+  var setException: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of filters
     * @param filters Ext.util.Filter[] The new value.
     */
-  var setFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], Unit]] = js.native
+  var setFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of grouper
     * @param grouper Ext.util.Grouper The new value.
     */
-  var setGrouper: js.UndefOr[js.Function1[/* grouper */ js.UndefOr[IGrouper], Unit]] = js.native
+  var setGrouper: js.UndefOr[js.Function1[/* grouper */ js.UndefOr[IGrouper], Unit]] = js.undefined
   
   /** [Method] Sets the value of limit
     * @param limit Number The new value.
     */
-  var setLimit: js.UndefOr[js.Function1[/* limit */ js.UndefOr[Double], Unit]] = js.native
+  var setLimit: js.UndefOr[js.Function1[/* limit */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of model
     * @param model Ext.data.Model The new value.
     */
-  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[IModel], Unit]] = js.native
+  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[IModel], Unit]] = js.undefined
   
   /** [Method] Sets the value of node
     * @param node Object The new value.
     */
-  var setNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], Unit]] = js.native
+  var setNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of page
     * @param page Object The new value.
     */
-  var setPage: js.UndefOr[js.Function1[/* page */ js.UndefOr[js.Any], Unit]] = js.native
+  var setPage: js.UndefOr[js.Function1[/* page */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of params
     * @param params Object The new value.
     */
-  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of records
     * @param records Array The new value.
     */
-  var setRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[Array], Unit]] = js.native
+  var setRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of request
     * @param request Ext.data.Request The new value.
     */
-  var setRequest: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], Unit]] = js.native
+  var setRequest: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], Unit]] = js.undefined
   
   /** [Method] Sets the value of response
     * @param response Object The new value.
     */
-  var setResponse: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], Unit]] = js.native
+  var setResponse: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of resultSet
     * @param resultSet Ext.data.ResultSet The new value.
     */
-  var setResultSet: js.UndefOr[js.Function1[/* resultSet */ js.UndefOr[IResultSet], Unit]] = js.native
+  var setResultSet: js.UndefOr[js.Function1[/* resultSet */ js.UndefOr[IResultSet], Unit]] = js.undefined
   
   /** [Method] Sets the value of scope
     * @param scope Object The new value.
     */
-  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.native
+  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of sorters
     * @param sorters Ext.util.Sorter[] The new value.
     */
-  var setSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], Unit]] = js.native
+  var setSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of start
     * @param start Number The new value.
     */
-  var setStart: js.UndefOr[js.Function1[/* start */ js.UndefOr[Double], Unit]] = js.native
+  var setStart: js.UndefOr[js.Function1[/* start */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Marks the Operation as started  */
-  var setStarted: js.UndefOr[js.Function0[Unit]] = js.native
+  var setStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Marks the Operation as successful  */
-  var setSuccessful: js.UndefOr[js.Function0[Unit]] = js.native
+  var setSuccessful: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Sets the value of synchronous
     * @param synchronous Boolean The new value.
     */
-  var setSynchronous: js.UndefOr[js.Function1[/* synchronous */ js.UndefOr[Boolean], Unit]] = js.native
+  var setSynchronous: js.UndefOr[js.Function1[/* synchronous */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of url
     * @param url Object The new value.
     */
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.native
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of withCredentials
     * @param withCredentials Boolean The new value.
     */
-  var setWithCredentials: js.UndefOr[js.Function1[/* withCredentials */ js.UndefOr[Boolean], Unit]] = js.native
+  var setWithCredentials: js.UndefOr[js.Function1[/* withCredentials */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Ext.util.Sorter[]) */
-  var sorters: js.UndefOr[Array] = js.native
+  var sorters: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (Number) */
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var synchronous: js.UndefOr[Boolean] = js.native
+  var synchronous: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Returns true if the Operation has completed and was successful
     * @returns Boolean true if successful
     */
-  var wasSuccessful: js.UndefOr[js.Function0[Boolean]] = js.native
+  var wasSuccessful: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object IOperation {
   
@@ -379,13 +379,13 @@ object IOperation {
     def setGetBatchUndefined: Self = StObject.set(x, "getBatch", js.undefined)
     
     @scala.inline
-    def setGetCallback(value: () => _): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
+    def setGetCallback(value: () => js.Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
     
     @scala.inline
-    def setGetError(value: () => _): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
+    def setGetError(value: () => js.Any): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetErrorUndefined: Self = StObject.set(x, "getError", js.undefined)
@@ -415,19 +415,19 @@ object IOperation {
     def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
     
     @scala.inline
-    def setGetNode(value: () => _): Self = StObject.set(x, "getNode", js.Any.fromFunction0(value))
+    def setGetNode(value: () => js.Any): Self = StObject.set(x, "getNode", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetNodeUndefined: Self = StObject.set(x, "getNode", js.undefined)
     
     @scala.inline
-    def setGetPage(value: () => _): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
+    def setGetPage(value: () => js.Any): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetPageUndefined: Self = StObject.set(x, "getPage", js.undefined)
     
     @scala.inline
-    def setGetParams(value: () => _): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
+    def setGetParams(value: () => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
@@ -439,7 +439,7 @@ object IOperation {
     def setGetRequestUndefined: Self = StObject.set(x, "getRequest", js.undefined)
     
     @scala.inline
-    def setGetResponse(value: () => _): Self = StObject.set(x, "getResponse", js.Any.fromFunction0(value))
+    def setGetResponse(value: () => js.Any): Self = StObject.set(x, "getResponse", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetResponseUndefined: Self = StObject.set(x, "getResponse", js.undefined)
@@ -451,7 +451,7 @@ object IOperation {
     def setGetResultSetUndefined: Self = StObject.set(x, "getResultSet", js.undefined)
     
     @scala.inline
-    def setGetScope(value: () => _): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
@@ -475,7 +475,7 @@ object IOperation {
     def setGetSynchronousUndefined: Self = StObject.set(x, "getSynchronous", js.undefined)
     
     @scala.inline
-    def setGetUrl(value: () => _): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+    def setGetUrl(value: () => js.Any): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)

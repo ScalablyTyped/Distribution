@@ -2,44 +2,42 @@ package typings.voximplantWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Participant info
   */
-@js.native
 trait ParticipantInfo extends StObject {
   
   /**
     * The participant's affiliation with the room
     */
-  var affiliation: Double = js.native
+  var affiliation: Double
   
   /**
     * Indicate conditions like: user has been kicked or banned from the room
     */
-  var flags: Double = js.native
+  var flags: Double
   
   /**
     * User id
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Reason
     */
-  var reason: String = js.native
+  var reason: String
   
   /**
     * Resource name
     */
-  var resource: String = js.native
+  var resource: String
   
   /**
     * The participant's role with the room
     */
-  var role: Double = js.native
+  var role: Double
 }
 object ParticipantInfo {
   

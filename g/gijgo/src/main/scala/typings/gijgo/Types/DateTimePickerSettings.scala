@@ -2,33 +2,31 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // DateTimePicker
-@js.native
 trait DateTimePickerSettings extends StObject {
   
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var datepicker: js.UndefOr[DatePickerSettings] = js.native
+  var datepicker: js.UndefOr[DatePickerSettings] = js.undefined
   
-  var footer: js.UndefOr[Boolean] = js.native
+  var footer: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var uiLibrary: js.UndefOr[String] = js.native
+  var uiLibrary: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object DateTimePickerSettings {
   
@@ -42,7 +40,7 @@ object DateTimePickerSettings {
   implicit class DateTimePickerSettingsMutableBuilder[Self <: DateTimePickerSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setChange(value: /* e */ js.Any => _): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    def setChange(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
     def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)

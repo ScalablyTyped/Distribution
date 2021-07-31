@@ -2,36 +2,34 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeRepositorySummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Git repository.
     */
-  var CodeRepositoryArn: typings.awsSdk.sagemakerMod.CodeRepositoryArn = js.native
+  var CodeRepositoryArn: typings.awsSdk.sagemakerMod.CodeRepositoryArn
   
   /**
     * The name of the Git repository.
     */
-  var CodeRepositoryName: EntityName = js.native
+  var CodeRepositoryName: EntityName
   
   /**
     * The date and time that the Git repository was created.
     */
-  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime = js.native
+  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime
   
   /**
     * Configuration details for the Git repository, including the URL where it is located and the ARN of the AWS Secrets Manager secret that contains the credentials used to access the repository.
     */
-  var GitConfig: js.UndefOr[typings.awsSdk.sagemakerMod.GitConfig] = js.native
+  var GitConfig: js.UndefOr[typings.awsSdk.sagemakerMod.GitConfig] = js.undefined
   
   /**
     * The date and time that the Git repository was last modified.
     */
-  var LastModifiedTime: typings.awsSdk.sagemakerMod.LastModifiedTime = js.native
+  var LastModifiedTime: typings.awsSdk.sagemakerMod.LastModifiedTime
 }
 object CodeRepositorySummary {
   

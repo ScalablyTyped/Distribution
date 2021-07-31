@@ -2,13 +2,11 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var channel: String | js.Array[String] = js.native
+  var channel: String | js.Array[String]
 }
 object `2` {
   

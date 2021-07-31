@@ -4,10 +4,13 @@ import typings.officeUiFabricReact.navTypesMod.INavProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libNavMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Nav", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/Nav", "Nav")
   @js.native
@@ -33,7 +36,6 @@ object libNavMod {
     def defaultProps_=(x: INavProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/Nav", "isRelativeUrl")
-  @js.native
-  def isRelativeUrl(url: String): Boolean = js.native
+  @scala.inline
+  def isRelativeUrl(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelativeUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

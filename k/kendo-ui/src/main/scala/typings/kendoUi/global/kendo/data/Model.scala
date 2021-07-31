@@ -7,13 +7,13 @@ import typings.kendoUi.kendo.data.DataSourceSchemaModelWithFieldsArray
 import typings.kendoUi.kendo.data.DataSourceSchemaModelWithFieldsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.data.Model")
 @js.native
 class Model ()
-  extends typings.kendoUi.kendo.data.Model {
+  extends StObject
+     with typings.kendoUi.kendo.data.Model {
   def this(data: js.Any) = this()
 }
 object Model {
@@ -23,13 +23,11 @@ object Model {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.data.Model.define")
-  @js.native
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofModel with (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model]) = js.native
+  @scala.inline
+  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model])]
   /* static member */
-  @JSGlobal("kendo.data.Model.define")
-  @js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofModel with (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model]) = js.native
+  @scala.inline
+  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model])]
   
   /* static member */
   @JSGlobal("kendo.data.Model.fields")

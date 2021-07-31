@@ -18,10 +18,13 @@ import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bindingParserMod {
+  
+  @JSImport("@angular/compiler/src/template_parser/binding_parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/template_parser/binding_parser", "BindingParser")
   @js.native
@@ -91,12 +94,6 @@ object bindingParserMod {
     def calcPossibleSecurityContexts(selector: String, propName: String, isAttribute: Boolean): js.Array[SecurityContext] = js.native
     
     def createBoundElementProperty(elementSelector: String, boundProp: ParsedProperty): BoundElementProperty = js.native
-    def createBoundElementProperty(
-      elementSelector: String,
-      boundProp: ParsedProperty,
-      skipValidation: js.UndefOr[scala.Nothing],
-      mapPropertyName: Boolean
-    ): BoundElementProperty = js.native
     def createBoundElementProperty(elementSelector: String, boundProp: ParsedProperty, skipValidation: Boolean): BoundElementProperty = js.native
     def createBoundElementProperty(
       elementSelector: String,
@@ -104,6 +101,7 @@ object bindingParserMod {
       skipValidation: Boolean,
       mapPropertyName: Boolean
     ): BoundElementProperty = js.native
+    def createBoundElementProperty(elementSelector: String, boundProp: ParsedProperty, skipValidation: Unit, mapPropertyName: Boolean): BoundElementProperty = js.native
     
     def createBoundHostProperties(dirMeta: CompileDirectiveSummary, sourceSpan: ParseSourceSpan): js.Array[ParsedProperty] | Null = js.native
     
@@ -163,7 +161,7 @@ object bindingParserMod {
       value: String,
       sourceSpan: ParseSourceSpan,
       absoluteOffset: Double,
-      valueSpan: js.UndefOr[scala.Nothing],
+      valueSpan: Unit,
       targetMatchableAttrs: js.Array[js.Array[String]],
       targetProps: js.Array[ParsedProperty]
     ): Unit = js.native
@@ -172,7 +170,7 @@ object bindingParserMod {
       value: String,
       sourceSpan: ParseSourceSpan,
       absoluteOffset: Double,
-      valueSpan: js.UndefOr[scala.Nothing],
+      valueSpan: Unit,
       targetMatchableAttrs: js.Array[js.Array[String]],
       targetProps: js.Array[ParsedProperty],
       keySpan: ParseSourceSpan
@@ -201,7 +199,7 @@ object bindingParserMod {
       value: Null,
       sourceSpan: ParseSourceSpan,
       absoluteOffset: Double,
-      valueSpan: js.UndefOr[scala.Nothing],
+      valueSpan: Unit,
       targetMatchableAttrs: js.Array[js.Array[String]],
       targetProps: js.Array[ParsedProperty]
     ): Unit = js.native
@@ -210,7 +208,7 @@ object bindingParserMod {
       value: Null,
       sourceSpan: ParseSourceSpan,
       absoluteOffset: Double,
-      valueSpan: js.UndefOr[scala.Nothing],
+      valueSpan: Unit,
       targetMatchableAttrs: js.Array[js.Array[String]],
       targetProps: js.Array[ParsedProperty],
       keySpan: ParseSourceSpan
@@ -241,7 +239,7 @@ object bindingParserMod {
       isHost: Boolean,
       sourceSpan: ParseSourceSpan,
       absoluteOffset: Double,
-      valueSpan: js.UndefOr[scala.Nothing],
+      valueSpan: Unit,
       targetMatchableAttrs: js.Array[js.Array[String]],
       targetProps: js.Array[ParsedProperty]
     ): Unit = js.native
@@ -251,7 +249,7 @@ object bindingParserMod {
       isHost: Boolean,
       sourceSpan: ParseSourceSpan,
       absoluteOffset: Double,
-      valueSpan: js.UndefOr[scala.Nothing],
+      valueSpan: Unit,
       targetMatchableAttrs: js.Array[js.Array[String]],
       targetProps: js.Array[ParsedProperty],
       keySpan: ParseSourceSpan
@@ -282,7 +280,7 @@ object bindingParserMod {
       name: String,
       value: String,
       sourceSpan: ParseSourceSpan,
-      valueSpan: js.UndefOr[scala.Nothing],
+      valueSpan: Unit,
       targetMatchableAttrs: js.Array[js.Array[String]],
       targetProps: js.Array[ParsedProperty]
     ): Boolean = js.native
@@ -290,7 +288,7 @@ object bindingParserMod {
       name: String,
       value: String,
       sourceSpan: ParseSourceSpan,
-      valueSpan: js.UndefOr[scala.Nothing],
+      valueSpan: Unit,
       targetMatchableAttrs: js.Array[js.Array[String]],
       targetProps: js.Array[ParsedProperty],
       keySpan: ParseSourceSpan
@@ -323,7 +321,6 @@ object bindingParserMod {
     var pipes: Map[String, BindingPipe] = js.native
   }
   
-  @JSImport("@angular/compiler/src/template_parser/binding_parser", "calcPossibleSecurityContexts")
-  @js.native
-  def calcPossibleSecurityContexts(registry: ElementSchemaRegistry, selector: String, propName: String, isAttribute: Boolean): js.Array[SecurityContext] = js.native
+  @scala.inline
+  def calcPossibleSecurityContexts(registry: ElementSchemaRegistry, selector: String, propName: String, isAttribute: Boolean): js.Array[SecurityContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcPossibleSecurityContexts")(registry.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], isAttribute.asInstanceOf[js.Any])).asInstanceOf[js.Array[SecurityContext]]
 }

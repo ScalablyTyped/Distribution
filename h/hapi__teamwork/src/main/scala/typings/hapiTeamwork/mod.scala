@@ -8,7 +8,6 @@ import typings.std.Error
 import typings.std.IteratorResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -41,10 +40,11 @@ object mod {
     @JSImport("@hapi/teamwork", "Events.Iterator")
     @js.native
     class Iterator[T] protected ()
-      extends AsyncIterator[T, js.Any, js.UndefOr[scala.Nothing]] {
+      extends StObject
+         with AsyncIterator[T, js.Any, Unit] {
       def this(events: Events[T]) = this()
       
-      def next(): js.Promise[IteratorResult[T, _]] = js.native
+      def next(): js.Promise[IteratorResult[T, js.Any]] = js.native
     }
   }
   
@@ -55,7 +55,7 @@ object mod {
     *
     * @param options Configuration of the team work.
     */
-  class Team[Results /* <: js.Any | js.Array[_] */] () extends StObject {
+  class Team[Results /* <: js.Any | js.Array[js.Any] */] () extends StObject {
     def this(options: Options) = this()
     
     /**
@@ -86,7 +86,6 @@ object mod {
     
     type ElementOf[T] = T
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -94,14 +93,14 @@ object mod {
         *
         * @default 1
         */
-      val meetings: js.UndefOr[Double] = js.native
+      val meetings: js.UndefOr[Double] = js.undefined
       
       /**
         * Throws when the team attends more than the expected number of `meetings`.
         *
         * @default false
         */
-      val strict: js.UndefOr[Boolean] = js.native
+      val strict: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

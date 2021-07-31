@@ -2,41 +2,39 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamGroupDetails extends StObject {
   
   /**
     * A list of the managed policies that are attached to the IAM group.
     */
-  var AttachedManagedPolicies: js.UndefOr[AwsIamAttachedManagedPolicyList] = js.native
+  var AttachedManagedPolicies: js.UndefOr[AwsIamAttachedManagedPolicyList] = js.undefined
   
   /**
     * Indicates when the IAM group was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreateDate: js.UndefOr[NonEmptyString] = js.native
+  var CreateDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the IAM group.
     */
-  var GroupId: js.UndefOr[NonEmptyString] = js.native
+  var GroupId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the IAM group.
     */
-  var GroupName: js.UndefOr[NonEmptyString] = js.native
+  var GroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The list of inline policies that are embedded in the group.
     */
-  var GroupPolicyList: js.UndefOr[AwsIamGroupPolicyList] = js.native
+  var GroupPolicyList: js.UndefOr[AwsIamGroupPolicyList] = js.undefined
   
   /**
     * The path to the group.
     */
-  var Path: js.UndefOr[NonEmptyString] = js.native
+  var Path: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsIamGroupDetails {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteParametersResult extends StObject {
   
   /**
     * The names of the deleted parameters.
     */
-  var DeletedParameters: js.UndefOr[ParameterNameList] = js.native
+  var DeletedParameters: js.UndefOr[ParameterNameList] = js.undefined
   
   /**
     * The names of parameters that weren't deleted because the parameters are not valid.
     */
-  var InvalidParameters: js.UndefOr[ParameterNameList] = js.native
+  var InvalidParameters: js.UndefOr[ParameterNameList] = js.undefined
 }
 object DeleteParametersResult {
   

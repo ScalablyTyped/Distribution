@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DealTermsRubiconNonGuaranteedTerms extends StObject {
   
   /** Optional price for Rubicon priority access in the auction. */
-  var priorityPrice: js.UndefOr[Price] = js.native
+  var priorityPrice: js.UndefOr[Price] = js.undefined
   
   /** Optional price for Rubicon standard access in the auction. */
-  var standardPrice: js.UndefOr[Price] = js.native
+  var standardPrice: js.UndefOr[Price] = js.undefined
 }
 object DealTermsRubiconNonGuaranteedTerms {
   

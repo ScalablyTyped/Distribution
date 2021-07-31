@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientServicedirectory.gapi.client.servicedirect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPolicyOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GetPolicyOptions extends StObject {
     * bindings must specify version 3. Policies without any conditional bindings may specify any valid value or leave the field unset. To learn which resources support conditions in their
     * IAM policies, see the [IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
     */
-  var requestedPolicyVersion: js.UndefOr[Double] = js.native
+  var requestedPolicyVersion: js.UndefOr[Double] = js.undefined
 }
 object GetPolicyOptions {
   

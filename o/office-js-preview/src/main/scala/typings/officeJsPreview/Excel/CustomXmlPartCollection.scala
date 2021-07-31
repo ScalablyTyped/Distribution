@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.5]
   */
 @js.native
-trait CustomXmlPartCollection extends ClientObject {
+trait CustomXmlPartCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Adds a new custom XML part to the workbook.
@@ -77,7 +78,7 @@ trait CustomXmlPartCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): CustomXmlPartCollection = js.native
-  def load(options: CustomXmlPartCollectionLoadOptions with CollectionLoadOptions): CustomXmlPartCollection = js.native
+  def load(options: CustomXmlPartCollectionLoadOptions & CollectionLoadOptions): CustomXmlPartCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): CustomXmlPartCollection = js.native
   def load(propertyNames: String): CustomXmlPartCollection = js.native
   def load(propertyNames: js.Array[String]): CustomXmlPartCollection = js.native

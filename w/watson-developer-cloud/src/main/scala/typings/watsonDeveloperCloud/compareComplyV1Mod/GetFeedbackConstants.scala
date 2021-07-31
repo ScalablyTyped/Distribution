@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `getFeedback` operation. */
@@ -16,14 +15,18 @@ object GetFeedbackConstants {
   object Model extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Model with String] = js.native
+    def apply(value: String): js.UndefOr[Model & String] = js.native
     
     @js.native
-    sealed trait CONTRACTS extends Model
-    /* "contracts" */ val CONTRACTS: typings.watsonDeveloperCloud.compareComplyV1Mod.GetFeedbackConstants.Model.CONTRACTS with String = js.native
+    sealed trait CONTRACTS
+      extends StObject
+         with Model
+    /* "contracts" */ val CONTRACTS: typings.watsonDeveloperCloud.compareComplyV1Mod.GetFeedbackConstants.Model.CONTRACTS & String = js.native
     
     @js.native
-    sealed trait TABLES extends Model
-    /* "tables" */ val TABLES: typings.watsonDeveloperCloud.compareComplyV1Mod.GetFeedbackConstants.Model.TABLES with String = js.native
+    sealed trait TABLES
+      extends StObject
+         with Model
+    /* "tables" */ val TABLES: typings.watsonDeveloperCloud.compareComplyV1Mod.GetFeedbackConstants.Model.TABLES & String = js.native
   }
 }

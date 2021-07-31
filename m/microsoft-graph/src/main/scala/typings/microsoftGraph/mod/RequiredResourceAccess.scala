@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequiredResourceAccess extends StObject {
   
   // The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource.
-  var resourceAccess: js.UndefOr[js.Array[ResourceAccess]] = js.native
+  var resourceAccess: js.UndefOr[js.Array[ResourceAccess]] = js.undefined
   
   /**
     * The unique identifier for the resource that the application requires access to. This should be equal to the appId
     * declared on the target resource application.
     */
-  var resourceAppId: js.UndefOr[String] = js.native
+  var resourceAppId: js.UndefOr[String] = js.undefined
 }
 object RequiredResourceAccess {
   

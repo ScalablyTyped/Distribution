@@ -54,14 +54,14 @@ import typings.nodegit.treeEntryMod.TreeEntry.FILEMODE
 import typings.nodegit.treeMod.Tree.WALK_MODE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodegitNumbers {
   
   @js.native
   sealed trait `-1`
-    extends CAP
+    extends StObject
+       with CAP
        with CODE
        with IGNORE
        with LEVEL
@@ -70,128 +70,177 @@ object nodegitNumbers {
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
   @js.native
-  sealed trait `-10` extends CODE
+  sealed trait `-10`
+    extends StObject
+       with CODE
   @scala.inline
   def `-10`: `-10` = -10.asInstanceOf[`-10`]
   
   @js.native
-  sealed trait `-11` extends CODE
+  sealed trait `-11`
+    extends StObject
+       with CODE
   @scala.inline
   def `-11`: `-11` = -11.asInstanceOf[`-11`]
   
   @js.native
-  sealed trait `-12` extends CODE
+  sealed trait `-12`
+    extends StObject
+       with CODE
   @scala.inline
   def `-12`: `-12` = -12.asInstanceOf[`-12`]
   
   @js.native
-  sealed trait `-13` extends CODE
+  sealed trait `-13`
+    extends StObject
+       with CODE
   @scala.inline
   def `-13`: `-13` = -13.asInstanceOf[`-13`]
   
   @js.native
-  sealed trait `-14` extends CODE
+  sealed trait `-14`
+    extends StObject
+       with CODE
   @scala.inline
   def `-14`: `-14` = -14.asInstanceOf[`-14`]
   
   @js.native
-  sealed trait `-15` extends CODE
+  sealed trait `-15`
+    extends StObject
+       with CODE
   @scala.inline
   def `-15`: `-15` = -15.asInstanceOf[`-15`]
   
   @js.native
-  sealed trait `-16` extends CODE
+  sealed trait `-16`
+    extends StObject
+       with CODE
   @scala.inline
   def `-16`: `-16` = -16.asInstanceOf[`-16`]
   
   @js.native
-  sealed trait `-17` extends CODE
+  sealed trait `-17`
+    extends StObject
+       with CODE
   @scala.inline
   def `-17`: `-17` = -17.asInstanceOf[`-17`]
   
   @js.native
-  sealed trait `-18` extends CODE
+  sealed trait `-18`
+    extends StObject
+       with CODE
   @scala.inline
   def `-18`: `-18` = -18.asInstanceOf[`-18`]
   
   @js.native
-  sealed trait `-19` extends CODE
+  sealed trait `-19`
+    extends StObject
+       with CODE
   @scala.inline
   def `-19`: `-19` = -19.asInstanceOf[`-19`]
   
   @js.native
-  sealed trait `-2` extends TYPE
+  sealed trait `-2`
+    extends StObject
+       with TYPE
   @scala.inline
   def `-2`: `-2` = -2.asInstanceOf[`-2`]
   
   @js.native
-  sealed trait `-20` extends CODE
+  sealed trait `-20`
+    extends StObject
+       with CODE
   @scala.inline
   def `-20`: `-20` = -20.asInstanceOf[`-20`]
   
   @js.native
-  sealed trait `-21` extends CODE
+  sealed trait `-21`
+    extends StObject
+       with CODE
   @scala.inline
   def `-21`: `-21` = -21.asInstanceOf[`-21`]
   
   @js.native
-  sealed trait `-22` extends CODE
+  sealed trait `-22`
+    extends StObject
+       with CODE
   @scala.inline
   def `-22`: `-22` = -22.asInstanceOf[`-22`]
   
   @js.native
-  sealed trait `-23` extends CODE
+  sealed trait `-23`
+    extends StObject
+       with CODE
   @scala.inline
   def `-23`: `-23` = -23.asInstanceOf[`-23`]
   
   @js.native
-  sealed trait `-3` extends CODE
+  sealed trait `-3`
+    extends StObject
+       with CODE
   @scala.inline
   def `-3`: `-3` = -3.asInstanceOf[`-3`]
   
   @js.native
-  sealed trait `-30` extends CODE
+  sealed trait `-30`
+    extends StObject
+       with CODE
   @scala.inline
   def `-30`: `-30` = -30.asInstanceOf[`-30`]
   
   @js.native
-  sealed trait `-31` extends CODE
+  sealed trait `-31`
+    extends StObject
+       with CODE
   @scala.inline
   def `-31`: `-31` = -31.asInstanceOf[`-31`]
   
   @js.native
-  sealed trait `-4` extends CODE
+  sealed trait `-4`
+    extends StObject
+       with CODE
   @scala.inline
   def `-4`: `-4` = -4.asInstanceOf[`-4`]
   
   @js.native
-  sealed trait `-5` extends CODE
+  sealed trait `-5`
+    extends StObject
+       with CODE
   @scala.inline
   def `-5`: `-5` = -5.asInstanceOf[`-5`]
   
   @js.native
-  sealed trait `-6` extends CODE
+  sealed trait `-6`
+    extends StObject
+       with CODE
   @scala.inline
   def `-6`: `-6` = -6.asInstanceOf[`-6`]
   
   @js.native
-  sealed trait `-7` extends CODE
+  sealed trait `-7`
+    extends StObject
+       with CODE
   @scala.inline
   def `-7`: `-7` = -7.asInstanceOf[`-7`]
   
   @js.native
-  sealed trait `-8` extends CODE
+  sealed trait `-8`
+    extends StObject
+       with CODE
   @scala.inline
   def `-8`: `-8` = -8.asInstanceOf[`-8`]
   
   @js.native
-  sealed trait `-9` extends CODE
+  sealed trait `-9`
+    extends StObject
+       with CODE
   @scala.inline
   def `-9`: `-9` = -9.asInstanceOf[`-9`]
   
   @js.native
   sealed trait `0`
-    extends ADD_OPTION
+    extends StObject
+       with ADD_OPTION
        with ANALYSIS
        with APPLY_FLAGS
        with APPLY_PROGRESS
@@ -242,7 +291,8 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `1`
-    extends ADD_OPTION
+    extends StObject
+       with ADD_OPTION
        with ANALYSIS
        with APPLY_FLAGS
        with APPLY_PROGRESS
@@ -305,7 +355,8 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `10`
-    extends DELTA
+    extends StObject
+       with DELTA
        with ERROR
        with OPT
   @scala.inline
@@ -313,7 +364,8 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `1024`
-    extends typings.nodegit.statusMod.Status.OPT
+    extends StObject
+       with typings.nodegit.statusMod.Status.OPT
        with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
@@ -323,34 +375,39 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `1048576`
-    extends typings.nodegit.diffMod.Diff.OPTION
+    extends StObject
+       with typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   @scala.inline
   def `1048576`: `1048576` = 1048576.asInstanceOf[`1048576`]
   
   @js.native
   sealed trait `1073741824`
-    extends typings.nodegit.diffMod.Diff.OPTION
+    extends StObject
+       with typings.nodegit.diffMod.Diff.OPTION
   @scala.inline
   def `1073741824`: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
   
   @js.native
   sealed trait `11`
-    extends ERROR
+    extends StObject
+       with ERROR
        with OPT
   @scala.inline
   def `11`: `11` = 11.asInstanceOf[`11`]
   
   @js.native
   sealed trait `12`
-    extends ERROR
+    extends StObject
+       with ERROR
        with OPT
   @scala.inline
   def `12`: `12` = 12.asInstanceOf[`12`]
   
   @js.native
   sealed trait `128`
-    extends FILE_FLAGS
+    extends StObject
+       with FILE_FLAGS
        with IDXENTRY_EXTENDED_FLAG
        with typings.nodegit.statusMod.Status.OPT
        with typings.nodegit.diffMod.Diff.OPTION
@@ -361,30 +418,38 @@ object nodegitNumbers {
   def `128`: `128` = 128.asInstanceOf[`128`]
   
   @js.native
-  sealed trait `13` extends ERROR
+  sealed trait `13`
+    extends StObject
+       with ERROR
   @scala.inline
   def `13`: `13` = 13.asInstanceOf[`13`]
   
   @js.native
   sealed trait `131072`
-    extends typings.nodegit.diffMod.Diff.OPTION
+    extends StObject
+       with typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   @scala.inline
   def `131072`: `131072` = 131072.asInstanceOf[`131072`]
   
   @js.native
-  sealed trait `14` extends ERROR
+  sealed trait `14`
+    extends StObject
+       with ERROR
   @scala.inline
   def `14`: `14` = 14.asInstanceOf[`14`]
   
   @js.native
-  sealed trait `15` extends ERROR
+  sealed trait `15`
+    extends StObject
+       with ERROR
   @scala.inline
   def `15`: `15` = 15.asInstanceOf[`15`]
   
   @js.native
   sealed trait `16`
-    extends ERROR
+    extends StObject
+       with ERROR
        with FILE_FLAGS
        with FIND
        with typings.nodegit.pathSpecMod.Pathspec.FLAG
@@ -402,7 +467,8 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `16384`
-    extends FILEMODE
+    extends StObject
+       with FILEMODE
        with FIND
        with IDXENTRY_EXTENDED_FLAG
        with INDXENTRY_FLAG
@@ -414,28 +480,36 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `16777216`
-    extends typings.nodegit.diffMod.Diff.OPTION
+    extends StObject
+       with typings.nodegit.diffMod.Diff.OPTION
   @scala.inline
   def `16777216`: `16777216` = 16777216.asInstanceOf[`16777216`]
   
   @js.native
-  sealed trait `17` extends ERROR
+  sealed trait `17`
+    extends StObject
+       with ERROR
   @scala.inline
   def `17`: `17` = 17.asInstanceOf[`17`]
   
   @js.native
-  sealed trait `18` extends ERROR
+  sealed trait `18`
+    extends StObject
+       with ERROR
   @scala.inline
   def `18`: `18` = 18.asInstanceOf[`18`]
   
   @js.native
-  sealed trait `19` extends ERROR
+  sealed trait `19`
+    extends StObject
+       with ERROR
   @scala.inline
   def `19`: `19` = 19.asInstanceOf[`19`]
   
   @js.native
   sealed trait `2`
-    extends ADD_OPTION
+    extends StObject
+       with ADD_OPTION
        with ANALYSIS
        with APPLY_PROGRESS
        with AUTOTAG_OPTION
@@ -491,13 +565,16 @@ object nodegitNumbers {
   def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
-  sealed trait `20` extends ERROR
+  sealed trait `20`
+    extends StObject
+       with ERROR
   @scala.inline
   def `20`: `20` = 20.asInstanceOf[`20`]
   
   @js.native
   sealed trait `2048`
-    extends typings.nodegit.statusMod.Status.OPT
+    extends StObject
+       with typings.nodegit.statusMod.Status.OPT
        with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
@@ -507,49 +584,65 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `2097152`
-    extends typings.nodegit.diffMod.Diff.OPTION
+    extends StObject
+       with typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   @scala.inline
   def `2097152`: `2097152` = 2097152.asInstanceOf[`2097152`]
   
   @js.native
-  sealed trait `21` extends ERROR
+  sealed trait `21`
+    extends StObject
+       with ERROR
   @scala.inline
   def `21`: `21` = 21.asInstanceOf[`21`]
   
   @js.native
-  sealed trait `22` extends ERROR
+  sealed trait `22`
+    extends StObject
+       with ERROR
   @scala.inline
   def `22`: `22` = 22.asInstanceOf[`22`]
   
   @js.native
-  sealed trait `23` extends ERROR
+  sealed trait `23`
+    extends StObject
+       with ERROR
   @scala.inline
   def `23`: `23` = 23.asInstanceOf[`23`]
   
   @js.native
-  sealed trait `24` extends ERROR
+  sealed trait `24`
+    extends StObject
+       with ERROR
   @scala.inline
   def `24`: `24` = 24.asInstanceOf[`24`]
   
   @js.native
-  sealed trait `24576` extends IDXENTRY_EXTENDED_FLAG
+  sealed trait `24576`
+    extends StObject
+       with IDXENTRY_EXTENDED_FLAG
   @scala.inline
   def `24576`: `24576` = 24576.asInstanceOf[`24576`]
   
   @js.native
-  sealed trait `25` extends ERROR
+  sealed trait `25`
+    extends StObject
+       with ERROR
   @scala.inline
   def `25`: `25` = 25.asInstanceOf[`25`]
   
   @js.native
-  sealed trait `255` extends FIND
+  sealed trait `255`
+    extends StObject
+       with FIND
   @scala.inline
   def `255`: `255` = 255.asInstanceOf[`255`]
   
   @js.native
   sealed trait `256`
-    extends IDXENTRY_EXTENDED_FLAG
+    extends StObject
+       with IDXENTRY_EXTENDED_FLAG
        with typings.nodegit.statusMod.Status.OPT
        with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
@@ -559,39 +652,51 @@ object nodegitNumbers {
   def `256`: `256` = 256.asInstanceOf[`256`]
   
   @js.native
-  sealed trait `26` extends ERROR
+  sealed trait `26`
+    extends StObject
+       with ERROR
   @scala.inline
   def `26`: `26` = 26.asInstanceOf[`26`]
   
   @js.native
-  sealed trait `262144` extends STRATEGY
+  sealed trait `262144`
+    extends StObject
+       with STRATEGY
   @scala.inline
   def `262144`: `262144` = 262144.asInstanceOf[`262144`]
   
   @js.native
   sealed trait `268435456`
-    extends typings.nodegit.diffMod.Diff.OPTION
+    extends StObject
+       with typings.nodegit.diffMod.Diff.OPTION
   @scala.inline
   def `268435456`: `268435456` = 268435456.asInstanceOf[`268435456`]
   
   @js.native
-  sealed trait `27` extends ERROR
+  sealed trait `27`
+    extends StObject
+       with ERROR
   @scala.inline
   def `27`: `27` = 27.asInstanceOf[`27`]
   
   @js.native
-  sealed trait `28` extends ERROR
+  sealed trait `28`
+    extends StObject
+       with ERROR
   @scala.inline
   def `28`: `28` = 28.asInstanceOf[`28`]
   
   @js.native
-  sealed trait `29` extends ERROR
+  sealed trait `29`
+    extends StObject
+       with ERROR
   @scala.inline
   def `29`: `29` = 29.asInstanceOf[`29`]
   
   @js.native
   sealed trait `3`
-    extends APPLY_PROGRESS
+    extends StObject
+       with APPLY_PROGRESS
        with AUTOTAG_OPTION
        with BRANCH
        with CVAR
@@ -615,13 +720,16 @@ object nodegitNumbers {
   def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
-  sealed trait `30` extends ERROR
+  sealed trait `30`
+    extends StObject
+       with ERROR
   @scala.inline
   def `30`: `30` = 30.asInstanceOf[`30`]
   
   @js.native
   sealed trait `32`
-    extends FILE_FLAGS
+    extends StObject
+       with FILE_FLAGS
        with FIND
        with typings.nodegit.pathSpecMod.Pathspec.FLAG
        with IDXENTRY_EXTENDED_FLAG
@@ -636,7 +744,8 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `32768`
-    extends FIND
+    extends StObject
+       with FIND
        with IDXENTRY_EXTENDED_FLAG
        with INDXENTRY_FLAG
        with typings.nodegit.statusMod.Status.OPT
@@ -646,24 +755,30 @@ object nodegitNumbers {
   def `32768`: `32768` = 32768.asInstanceOf[`32768`]
   
   @js.native
-  sealed trait `33188` extends FILEMODE
+  sealed trait `33188`
+    extends StObject
+       with FILEMODE
   @scala.inline
   def `33188`: `33188` = 33188.asInstanceOf[`33188`]
   
   @js.native
-  sealed trait `33261` extends FILEMODE
+  sealed trait `33261`
+    extends StObject
+       with FILEMODE
   @scala.inline
   def `33261`: `33261` = 33261.asInstanceOf[`33261`]
   
   @js.native
   sealed trait `33554432`
-    extends typings.nodegit.diffMod.Diff.OPTION
+    extends StObject
+       with typings.nodegit.diffMod.Diff.OPTION
   @scala.inline
   def `33554432`: `33554432` = 33554432.asInstanceOf[`33554432`]
   
   @js.native
   sealed trait `4`
-    extends ADD_OPTION
+    extends StObject
+       with ADD_OPTION
        with ANALYSIS
        with APPLY_PROGRESS
        with CAP
@@ -702,7 +817,8 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `4096`
-    extends FIND
+    extends StObject
+       with FIND
        with typings.nodegit.statusMod.Status.OPT
        with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
@@ -712,35 +828,45 @@ object nodegitNumbers {
   def `4096`: `4096` = 4096.asInstanceOf[`4096`]
   
   @js.native
-  sealed trait `40960` extends FILEMODE
+  sealed trait `40960`
+    extends StObject
+       with FILEMODE
   @scala.inline
   def `40960`: `40960` = 40960.asInstanceOf[`40960`]
   
   @js.native
   sealed trait `4194304`
-    extends typings.nodegit.diffMod.Diff.OPTION
+    extends StObject
+       with typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   @scala.inline
   def `4194304`: `4194304` = 4194304.asInstanceOf[`4194304`]
   
   @js.native
-  sealed trait `43` extends LINE
+  sealed trait `43`
+    extends StObject
+       with LINE
   @scala.inline
   def `43`: `43` = 43.asInstanceOf[`43`]
   
   @js.native
-  sealed trait `45` extends LINE
+  sealed trait `45`
+    extends StObject
+       with LINE
   @scala.inline
   def `45`: `45` = 45.asInstanceOf[`45`]
   
   @js.native
-  sealed trait `48` extends FIND
+  sealed trait `48`
+    extends StObject
+       with FIND
   @scala.inline
   def `48`: `48` = 48.asInstanceOf[`48`]
   
   @js.native
   sealed trait `5`
-    extends APPLY_PROGRESS
+    extends StObject
+       with APPLY_PROGRESS
        with DELTA
        with ERROR
        with FORMAT
@@ -753,7 +879,8 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `512`
-    extends IDXENTRY_EXTENDED_FLAG
+    extends StObject
+       with IDXENTRY_EXTENDED_FLAG
        with typings.nodegit.statusMod.Status.OPT
        with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
@@ -763,24 +890,30 @@ object nodegitNumbers {
   def `512`: `512` = 512.asInstanceOf[`512`]
   
   @js.native
-  sealed trait `524288` extends STRATEGY
+  sealed trait `524288`
+    extends StObject
+       with STRATEGY
   @scala.inline
   def `524288`: `524288` = 524288.asInstanceOf[`524288`]
   
   @js.native
   sealed trait `536870912`
-    extends typings.nodegit.diffMod.Diff.OPTION
+    extends StObject
+       with typings.nodegit.diffMod.Diff.OPTION
   @scala.inline
   def `536870912`: `536870912` = 536870912.asInstanceOf[`536870912`]
   
   @js.native
-  sealed trait `57344` extends FILEMODE
+  sealed trait `57344`
+    extends StObject
+       with FILEMODE
   @scala.inline
   def `57344`: `57344` = 57344.asInstanceOf[`57344`]
   
   @js.native
   sealed trait `6`
-    extends APPLY_PROGRESS
+    extends StObject
+       with APPLY_PROGRESS
        with DELTA
        with ERROR
        with OPT
@@ -790,23 +923,30 @@ object nodegitNumbers {
   def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
-  sealed trait `60` extends LINE
+  sealed trait `60`
+    extends StObject
+       with LINE
   @scala.inline
   def `60`: `60` = 60.asInstanceOf[`60`]
   
   @js.native
-  sealed trait `61` extends LINE
+  sealed trait `61`
+    extends StObject
+       with LINE
   @scala.inline
   def `61`: `61` = 61.asInstanceOf[`61`]
   
   @js.native
-  sealed trait `62` extends LINE
+  sealed trait `62`
+    extends StObject
+       with LINE
   @scala.inline
   def `62`: `62` = 62.asInstanceOf[`62`]
   
   @js.native
   sealed trait `64`
-    extends FILE_FLAGS
+    extends StObject
+       with FILE_FLAGS
        with FIND
        with IDXENTRY_EXTENDED_FLAG
        with typings.nodegit.statusMod.Status.OPT
@@ -818,32 +958,39 @@ object nodegitNumbers {
   def `64`: `64` = 64.asInstanceOf[`64`]
   
   @js.native
-  sealed trait `65535` extends NOTIFY
+  sealed trait `65535`
+    extends StObject
+       with NOTIFY
   @scala.inline
   def `65535`: `65535` = 65535.asInstanceOf[`65535`]
   
   @js.native
   sealed trait `65536`
-    extends FIND
+    extends StObject
+       with FIND
        with typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   @scala.inline
   def `65536`: `65536` = 65536.asInstanceOf[`65536`]
   
   @js.native
-  sealed trait `66` extends LINE
+  sealed trait `66`
+    extends StObject
+       with LINE
   @scala.inline
   def `66`: `66` = 66.asInstanceOf[`66`]
   
   @js.native
   sealed trait `67108864`
-    extends typings.nodegit.diffMod.Diff.OPTION
+    extends StObject
+       with typings.nodegit.diffMod.Diff.OPTION
   @scala.inline
   def `67108864`: `67108864` = 67108864.asInstanceOf[`67108864`]
   
   @js.native
   sealed trait `7`
-    extends APPLY_PROGRESS
+    extends StObject
+       with APPLY_PROGRESS
        with DELTA
        with ERROR
        with OPT
@@ -852,18 +999,23 @@ object nodegitNumbers {
   def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
-  sealed trait `70` extends LINE
+  sealed trait `70`
+    extends StObject
+       with LINE
   @scala.inline
   def `70`: `70` = 70.asInstanceOf[`70`]
   
   @js.native
-  sealed trait `72` extends LINE
+  sealed trait `72`
+    extends StObject
+       with LINE
   @scala.inline
   def `72`: `72` = 72.asInstanceOf[`72`]
   
   @js.native
   sealed trait `8`
-    extends ANALYSIS
+    extends StObject
+       with ANALYSIS
        with DELTA
        with ERROR
        with FILE_FLAGS
@@ -885,7 +1037,8 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `8192`
-    extends FIND
+    extends StObject
+       with FIND
        with IDXENTRY_EXTENDED_FLAG
        with typings.nodegit.statusMod.Status.OPT
        with typings.nodegit.diffMod.Diff.OPTION
@@ -896,14 +1049,16 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `8388608`
-    extends typings.nodegit.diffMod.Diff.OPTION
+    extends StObject
+       with typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   @scala.inline
   def `8388608`: `8388608` = 8388608.asInstanceOf[`8388608`]
   
   @js.native
   sealed trait `9`
-    extends DELTA
+    extends StObject
+       with DELTA
        with ERROR
        with OPT
   @scala.inline

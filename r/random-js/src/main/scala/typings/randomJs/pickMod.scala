@@ -4,21 +4,20 @@ import typings.randomJs.typesMod.Engine
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickMod {
   
-  @JSImport("random-js/dist/distribution/pick", "pick")
+  @JSImport("random-js/dist/distribution/pick", JSImport.Namespace)
   @js.native
-  def pick[T](engine: Engine, source: ArrayLike[T]): T = js.native
-  @JSImport("random-js/dist/distribution/pick", "pick")
-  @js.native
-  def pick[T](engine: Engine, source: ArrayLike[T], begin: js.UndefOr[scala.Nothing], end: Double): T = js.native
-  @JSImport("random-js/dist/distribution/pick", "pick")
-  @js.native
-  def pick[T](engine: Engine, source: ArrayLike[T], begin: Double): T = js.native
-  @JSImport("random-js/dist/distribution/pick", "pick")
-  @js.native
-  def pick[T](engine: Engine, source: ArrayLike[T], begin: Double, end: Double): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def pick[T](engine: Engine, source: ArrayLike[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(engine.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def pick[T](engine: Engine, source: ArrayLike[T], begin: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(engine.asInstanceOf[js.Any], source.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def pick[T](engine: Engine, source: ArrayLike[T], begin: Double, end: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(engine.asInstanceOf[js.Any], source.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def pick[T](engine: Engine, source: ArrayLike[T], begin: Unit, end: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(engine.asInstanceOf[js.Any], source.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[T]
 }

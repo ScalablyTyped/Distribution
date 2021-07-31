@@ -22,148 +22,146 @@ import typings.recharts.rechartsStrings.optimizeQuality
 import typings.recharts.rechartsStrings.optimizeSpeed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<std.CSSStyleDeclaration, recharts.recharts.PickedCSSStyleDeclarationKeys> */
-@js.native
 trait PresentationAttributes[X, Y] extends StObject {
   
-  var alignmentBaseline: String = js.native
+  var alignmentBaseline: String
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var baselineShift: String = js.native
+  var baselineShift: String
   
-  var clip: String = js.native
+  var clip: String
   
-  var clipPath: String = js.native
+  var clipPath: String
   
-  var clipRule: String = js.native
+  var clipRule: String
   
-  var color: String = js.native
+  var color: String
   
-  var colorInterpolation: String = js.native
+  var colorInterpolation: String
   
-  var colorInterpolationFilters: String = js.native
+  var colorInterpolationFilters: String
   
-  var colorProfile: String = js.native
+  var colorProfile: String
   
-  var colorRendering: String = js.native
+  var colorRendering: String
   
-  var cursor: String = js.native
+  var cursor: String
   
-  var direction: String = js.native
+  var direction: String
   
-  var display: String = js.native
+  var display: String
   
-  var dominantBaseline: String = js.native
+  var dominantBaseline: String
   
-  var dx: Double = js.native
+  var dx: Double
   
-  var dy: Double = js.native
+  var dy: Double
   
-  var fill: String = js.native
+  var fill: String
   
-  var fillOpacity: Double | String = js.native
+  var fillOpacity: Double | String
   
-  var fillRule: String = js.native
+  var fillRule: String
   
-  var filter: String = js.native
+  var filter: String
   
-  var floodColor: String = js.native
+  var floodColor: String
   
-  var floodOpacity: String = js.native
+  var floodOpacity: String
   
-  var font: String = js.native
+  var font: String
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: Double | String = js.native
+  var fontSize: Double | String
   
-  var fontSizeAdjust: Double | String = js.native
+  var fontSizeAdjust: Double | String
   
-  var fontStretch: String = js.native
+  var fontStretch: String
   
-  var fontStyle: String = js.native
+  var fontStyle: String
   
-  var fontVariant: String = js.native
+  var fontVariant: String
   
-  var fontWeight: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit = js.native
+  var fontWeight: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   
-  var glyphOrientationVertical: String = js.native
+  var glyphOrientationVertical: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var imageRendering: auto | optimizeSpeed | optimizeQuality | inherit = js.native
+  var imageRendering: auto | optimizeSpeed | optimizeQuality | inherit
   
-  var kerning: Double | String = js.native
+  var kerning: Double | String
   
-  var letterSpacing: String = js.native
+  var letterSpacing: String
   
-  var lightingColor: String = js.native
+  var lightingColor: String
   
-  var markerEnd: String = js.native
+  var markerEnd: String
   
-  var markerMid: String = js.native
+  var markerMid: String
   
-  var markerStart: String = js.native
+  var markerStart: String
   
-  var mask: String = js.native
+  var mask: String
   
-  var opacity: Double | String = js.native
+  var opacity: Double | String
   
-  var overflow: String = js.native
+  var overflow: String
   
-  var pointerEvents: String = js.native
+  var pointerEvents: String
   
-  var r: Double = js.native
+  var r: Double
   
-  var shapeRendering: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit = js.native
+  var shapeRendering: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit
   
-  var stopColor: String = js.native
+  var stopColor: String
   
-  var stopOpacity: Double | String = js.native
+  var stopOpacity: Double | String
   
-  var stroke: Double | String = js.native
+  var stroke: Double | String
   
-  var strokeDasharray: String = js.native
+  var strokeDasharray: String
   
-  var strokeDashoffset: Double | String = js.native
+  var strokeDashoffset: Double | String
   
-  var strokeLinecap: String = js.native
+  var strokeLinecap: String
   
-  var strokeLinejoin: String = js.native
+  var strokeLinejoin: String
   
-  var strokeMiterlimit: Double | String = js.native
+  var strokeMiterlimit: Double | String
   
-  var strokeOpacity: Double | String = js.native
+  var strokeOpacity: Double | String
   
-  var strokeWidth: Double | String = js.native
+  var strokeWidth: Double | String
   
-  var style: js.Object = js.native
+  var style: js.Object
   
-  var textAnchor: String = js.native
+  var textAnchor: String
   
-  var textDecoration: String = js.native
+  var textDecoration: String
   
-  var textRendering: auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit = js.native
+  var textRendering: auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit
   
-  var transform: String = js.native
+  var transform: String
   
-  var unicodeBidi: String = js.native
+  var unicodeBidi: String
   
-  var visibility: String = js.native
+  var visibility: String
   
-  var width: Double = js.native
+  var width: Double
   
-  var wordSpacing: Double | String = js.native
+  var wordSpacing: Double | String
   
-  var writingMode: String = js.native
+  var writingMode: String
   
-  var x: X = js.native
+  var x: X
   
-  var y: Y = js.native
+  var y: Y
 }
 object PresentationAttributes {
   
@@ -243,7 +241,7 @@ object PresentationAttributes {
   }
   
   @scala.inline
-  implicit class PresentationAttributesMutableBuilder[Self <: PresentationAttributes[_, _], X, Y] (val x: Self with (PresentationAttributes[X, Y])) extends AnyVal {
+  implicit class PresentationAttributesMutableBuilder[Self <: PresentationAttributes[?, ?], X, Y] (val x: Self & (PresentationAttributes[X, Y])) extends AnyVal {
     
     @scala.inline
     def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])

@@ -4,27 +4,24 @@ import typings.contentfulManagement.contentfulManagementStrings.Link
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entryFieldsMod {
   
-  @js.native
-  trait Array extends _EntryFields {
+  trait Array
+    extends StObject
+       with _EntryFields {
     
-    var items: Entry | Asset | js.Symbol = js.native
+    var items: Entry | Asset | js.Symbol
     
-    var `type`: typings.contentfulManagement.contentfulManagementStrings.Array = js.native
+    var `type`: typings.contentfulManagement.contentfulManagementStrings.Array
   }
   object Array {
     
     @scala.inline
-    def apply(
-      items: Entry | Asset | js.Symbol,
-      `type`: typings.contentfulManagement.contentfulManagementStrings.Array
-    ): Array = {
+    def apply(items: Entry | Asset | js.Symbol): Array = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Array")
       __obj.asInstanceOf[Array]
     }
     
@@ -39,19 +36,18 @@ object entryFieldsMod {
     }
   }
   
-  @js.native
   trait Asset extends StObject {
     
-    var linkType: typings.contentfulManagement.contentfulManagementStrings.Asset = js.native
+    var linkType: typings.contentfulManagement.contentfulManagementStrings.Asset
     
-    var `type`: Link = js.native
+    var `type`: Link
   }
   object Asset {
     
     @scala.inline
-    def apply(linkType: typings.contentfulManagement.contentfulManagementStrings.Asset, `type`: Link): Asset = {
-      val __obj = js.Dynamic.literal(linkType = linkType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(): Asset = {
+      val __obj = js.Dynamic.literal(linkType = "Asset")
+      __obj.updateDynamic("type")("Link")
       __obj.asInstanceOf[Asset]
     }
     
@@ -66,17 +62,16 @@ object entryFieldsMod {
     }
   }
   
-  @js.native
   trait Boolean extends StObject {
     
-    var `type`: typings.contentfulManagement.contentfulManagementStrings.Boolean = js.native
+    var `type`: typings.contentfulManagement.contentfulManagementStrings.Boolean
   }
   object Boolean {
     
     @scala.inline
-    def apply(`type`: typings.contentfulManagement.contentfulManagementStrings.Boolean): Boolean = {
+    def apply(): Boolean = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Boolean")
       __obj.asInstanceOf[Boolean]
     }
     
@@ -88,17 +83,18 @@ object entryFieldsMod {
     }
   }
   
-  @js.native
-  trait Date extends _EntryFields {
+  trait Date
+    extends StObject
+       with _EntryFields {
     
-    var `type`: typings.contentfulManagement.contentfulManagementStrings.Date = js.native
+    var `type`: typings.contentfulManagement.contentfulManagementStrings.Date
   }
   object Date {
     
     @scala.inline
-    def apply(`type`: typings.contentfulManagement.contentfulManagementStrings.Date): Date = {
+    def apply(): Date = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Date")
       __obj.asInstanceOf[Date]
     }
     
@@ -110,19 +106,20 @@ object entryFieldsMod {
     }
   }
   
-  @js.native
-  trait Entry extends _EntryFields {
+  trait Entry
+    extends StObject
+       with _EntryFields {
     
-    var linkType: typings.contentfulManagement.contentfulManagementStrings.Entry = js.native
+    var linkType: typings.contentfulManagement.contentfulManagementStrings.Entry
     
-    var `type`: Link = js.native
+    var `type`: Link
   }
   object Entry {
     
     @scala.inline
-    def apply(linkType: typings.contentfulManagement.contentfulManagementStrings.Entry, `type`: Link): Entry = {
-      val __obj = js.Dynamic.literal(linkType = linkType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(): Entry = {
+      val __obj = js.Dynamic.literal(linkType = "Entry")
+      __obj.updateDynamic("type")("Link")
       __obj.asInstanceOf[Entry]
     }
     
@@ -152,17 +149,18 @@ object entryFieldsMod {
   */
   type EntryFields = _EntryFields | (Record[String, js.Any]) | js.Symbol | Double | scala.Boolean
   
-  @js.native
-  trait Integer extends _EntryFields {
+  trait Integer
+    extends StObject
+       with _EntryFields {
     
-    var `type`: typings.contentfulManagement.contentfulManagementStrings.Integer = js.native
+    var `type`: typings.contentfulManagement.contentfulManagementStrings.Integer
   }
   object Integer {
     
     @scala.inline
-    def apply(`type`: typings.contentfulManagement.contentfulManagementStrings.Integer): Integer = {
+    def apply(): Integer = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Integer")
       __obj.asInstanceOf[Integer]
     }
     
@@ -174,17 +172,18 @@ object entryFieldsMod {
     }
   }
   
-  @js.native
-  trait Location extends _EntryFields {
+  trait Location
+    extends StObject
+       with _EntryFields {
     
-    var `type`: typings.contentfulManagement.contentfulManagementStrings.Location = js.native
+    var `type`: typings.contentfulManagement.contentfulManagementStrings.Location
   }
   object Location {
     
     @scala.inline
-    def apply(`type`: typings.contentfulManagement.contentfulManagementStrings.Location): Location = {
+    def apply(): Location = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Location")
       __obj.asInstanceOf[Location]
     }
     
@@ -196,17 +195,16 @@ object entryFieldsMod {
     }
   }
   
-  @js.native
   trait Number extends StObject {
     
-    var `type`: typings.contentfulManagement.contentfulManagementStrings.Number = js.native
+    var `type`: typings.contentfulManagement.contentfulManagementStrings.Number
   }
   object Number {
     
     @scala.inline
-    def apply(`type`: typings.contentfulManagement.contentfulManagementStrings.Number): Number = {
+    def apply(): Number = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Number")
       __obj.asInstanceOf[Number]
     }
     
@@ -218,17 +216,16 @@ object entryFieldsMod {
     }
   }
   
-  @js.native
   trait Object extends StObject {
     
-    var `type`: typings.contentfulManagement.contentfulManagementStrings.Object = js.native
+    var `type`: typings.contentfulManagement.contentfulManagementStrings.Object
   }
   object Object {
     
     @scala.inline
-    def apply(`type`: typings.contentfulManagement.contentfulManagementStrings.Object): Object = {
+    def apply(): Object = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Object")
       __obj.asInstanceOf[Object]
     }
     
@@ -240,17 +237,18 @@ object entryFieldsMod {
     }
   }
   
-  @js.native
-  trait RichText extends _EntryFields {
+  trait RichText
+    extends StObject
+       with _EntryFields {
     
-    var `type`: typings.contentfulManagement.contentfulManagementStrings.RichText = js.native
+    var `type`: typings.contentfulManagement.contentfulManagementStrings.RichText
   }
   object RichText {
     
     @scala.inline
-    def apply(`type`: typings.contentfulManagement.contentfulManagementStrings.RichText): RichText = {
+    def apply(): RichText = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("RichText")
       __obj.asInstanceOf[RichText]
     }
     
@@ -262,17 +260,16 @@ object entryFieldsMod {
     }
   }
   
-  @js.native
   trait Symbol extends StObject {
     
-    var `type`: typings.contentfulManagement.contentfulManagementStrings.Symbol = js.native
+    var `type`: typings.contentfulManagement.contentfulManagementStrings.Symbol
   }
   object Symbol {
     
     @scala.inline
-    def apply(`type`: typings.contentfulManagement.contentfulManagementStrings.Symbol): Symbol = {
+    def apply(): Symbol = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Symbol")
       __obj.asInstanceOf[Symbol]
     }
     
@@ -284,17 +281,18 @@ object entryFieldsMod {
     }
   }
   
-  @js.native
-  trait Text extends _EntryFields {
+  trait Text
+    extends StObject
+       with _EntryFields {
     
-    var `type`: typings.contentfulManagement.contentfulManagementStrings.Text = js.native
+    var `type`: typings.contentfulManagement.contentfulManagementStrings.Text
   }
   object Text {
     
     @scala.inline
-    def apply(`type`: typings.contentfulManagement.contentfulManagementStrings.Text): Text = {
+    def apply(): Text = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Text")
       __obj.asInstanceOf[Text]
     }
     
@@ -310,54 +308,51 @@ object entryFieldsMod {
   object _EntryFields {
     
     @scala.inline
-    def Array(
-      items: Entry | Asset | js.Symbol,
-      `type`: typings.contentfulManagement.contentfulManagementStrings.Array
-    ): typings.contentfulManagement.entryFieldsMod.Array = {
+    def Array(items: Entry | Asset | js.Symbol): typings.contentfulManagement.entryFieldsMod.Array = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Array")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Array]
     }
     
     @scala.inline
-    def Date(`type`: typings.contentfulManagement.contentfulManagementStrings.Date): typings.contentfulManagement.entryFieldsMod.Date = {
+    def Date(): typings.contentfulManagement.entryFieldsMod.Date = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Date")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Date]
     }
     
     @scala.inline
-    def Entry(linkType: typings.contentfulManagement.contentfulManagementStrings.Entry, `type`: Link): typings.contentfulManagement.entryFieldsMod.Entry = {
-      val __obj = js.Dynamic.literal(linkType = linkType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def Entry(): typings.contentfulManagement.entryFieldsMod.Entry = {
+      val __obj = js.Dynamic.literal(linkType = "Entry")
+      __obj.updateDynamic("type")("Link")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Entry]
     }
     
     @scala.inline
-    def Integer(`type`: typings.contentfulManagement.contentfulManagementStrings.Integer): typings.contentfulManagement.entryFieldsMod.Integer = {
+    def Integer(): typings.contentfulManagement.entryFieldsMod.Integer = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Integer")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Integer]
     }
     
     @scala.inline
-    def Location(`type`: typings.contentfulManagement.contentfulManagementStrings.Location): typings.contentfulManagement.entryFieldsMod.Location = {
+    def Location(): typings.contentfulManagement.entryFieldsMod.Location = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Location")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Location]
     }
     
     @scala.inline
-    def RichText(`type`: typings.contentfulManagement.contentfulManagementStrings.RichText): typings.contentfulManagement.entryFieldsMod.RichText = {
+    def RichText(): typings.contentfulManagement.entryFieldsMod.RichText = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("RichText")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.RichText]
     }
     
     @scala.inline
-    def Text(`type`: typings.contentfulManagement.contentfulManagementStrings.Text): typings.contentfulManagement.entryFieldsMod.Text = {
+    def Text(): typings.contentfulManagement.entryFieldsMod.Text = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Text")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Text]
     }
   }

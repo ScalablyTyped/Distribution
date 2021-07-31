@@ -5,13 +5,14 @@ import typings.std.Iterator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/model/documentfragment
 @JSImport("@ckeditor/ckeditor5-engine", "model.DocumentFragment")
 @js.native
-class DocumentFragment protected () extends _NodeSet {
+class DocumentFragment protected ()
+  extends StObject
+     with _NodeSet {
   protected def this(children: Node) = this()
   protected def this(children: Iterable[Node]) = this()
   
@@ -44,7 +45,7 @@ class DocumentFragment protected () extends _NodeSet {
   val isEmpty: Boolean = js.native
   
   @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[Iterator[Node, _, js.UndefOr[scala.Nothing]]] = js.native
+  var iterator: js.Function0[Iterator[Node, js.Any, Unit]] = js.native
   
   val markers: Map[String, Range] = js.native
   
@@ -60,8 +61,11 @@ class DocumentFragment protected () extends _NodeSet {
 }
 object DocumentFragment {
   
-  /* static member */
-  @JSImport("@ckeditor/ckeditor5-engine", "model.DocumentFragment.fromJSON")
+  @JSImport("@ckeditor/ckeditor5-engine", "model.DocumentFragment")
   @js.native
-  def fromJSON(json: js.Object): DocumentFragment = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def fromJSON(json: js.Object): DocumentFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[DocumentFragment]
 }

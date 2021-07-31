@@ -2,7 +2,6 @@ package typings.hammerjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,7 +23,7 @@ trait Recognizer extends StObject {
   
   def emit(input: HammerInput): Unit = js.native
   
-  def getTouchAction(): js.Array[_] = js.native
+  def getTouchAction(): js.Array[js.Any] = js.native
   
   def hasRequireFailures(): Boolean = js.native
   

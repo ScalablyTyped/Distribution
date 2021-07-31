@@ -2,61 +2,59 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDataSyncItem extends StObject {
   
   /**
     * The status reported by the last sync.
     */
-  var LastStatus: js.UndefOr[LastResourceDataSyncStatus] = js.native
+  var LastStatus: js.UndefOr[LastResourceDataSyncStatus] = js.undefined
   
   /**
     * The last time the sync operations returned a status of SUCCESSFUL (UTC).
     */
-  var LastSuccessfulSyncTime: js.UndefOr[LastSuccessfulResourceDataSyncTime] = js.native
+  var LastSuccessfulSyncTime: js.UndefOr[LastSuccessfulResourceDataSyncTime] = js.undefined
   
   /**
     * The status message details reported by the last sync.
     */
-  var LastSyncStatusMessage: js.UndefOr[LastResourceDataSyncMessage] = js.native
+  var LastSyncStatusMessage: js.UndefOr[LastResourceDataSyncMessage] = js.undefined
   
   /**
     * The last time the configuration attempted to sync (UTC).
     */
-  var LastSyncTime: js.UndefOr[LastResourceDataSyncTime] = js.native
+  var LastSyncTime: js.UndefOr[LastResourceDataSyncTime] = js.undefined
   
   /**
     * Configuration information for the target S3 bucket.
     */
-  var S3Destination: js.UndefOr[ResourceDataSyncS3Destination] = js.native
+  var S3Destination: js.UndefOr[ResourceDataSyncS3Destination] = js.undefined
   
   /**
     * The date and time the configuration was created (UTC).
     */
-  var SyncCreatedTime: js.UndefOr[ResourceDataSyncCreatedTime] = js.native
+  var SyncCreatedTime: js.UndefOr[ResourceDataSyncCreatedTime] = js.undefined
   
   /**
     * The date and time the resource data sync was changed. 
     */
-  var SyncLastModifiedTime: js.UndefOr[ResourceDataSyncLastModifiedTime] = js.native
+  var SyncLastModifiedTime: js.UndefOr[ResourceDataSyncLastModifiedTime] = js.undefined
   
   /**
     * The name of the Resource Data Sync.
     */
-  var SyncName: js.UndefOr[ResourceDataSyncName] = js.native
+  var SyncName: js.UndefOr[ResourceDataSyncName] = js.undefined
   
   /**
     * Information about the source where the data was synchronized. 
     */
-  var SyncSource: js.UndefOr[ResourceDataSyncSourceWithState] = js.native
+  var SyncSource: js.UndefOr[ResourceDataSyncSourceWithState] = js.undefined
   
   /**
     * The type of resource data sync. If SyncType is SyncToDestination, then the resource data sync synchronizes data to an S3 bucket. If the SyncType is SyncFromSource then the resource data sync synchronizes data from AWS Organizations or from multiple AWS Regions.
     */
-  var SyncType: js.UndefOr[ResourceDataSyncType] = js.native
+  var SyncType: js.UndefOr[ResourceDataSyncType] = js.undefined
 }
 object ResourceDataSyncItem {
   

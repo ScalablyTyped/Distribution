@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userDefinedFunctionMod {
@@ -68,6 +67,10 @@ object userDefinedFunctionMod {
   /* static members */
   object UserDefinedFunction {
     
+    @JSImport("@pulumi/aws/glue/userDefinedFunction", "UserDefinedFunction")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UserDefinedFunction resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -77,67 +80,61 @@ object userDefinedFunctionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/userDefinedFunction", "UserDefinedFunction.get")
-    @js.native
-    def get(name: String, id: Input[ID]): UserDefinedFunction = js.native
-    @JSImport("@pulumi/aws/glue/userDefinedFunction", "UserDefinedFunction.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UserDefinedFunction = js.native
-    @JSImport("@pulumi/aws/glue/userDefinedFunction", "UserDefinedFunction.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserDefinedFunctionState): UserDefinedFunction = js.native
-    @JSImport("@pulumi/aws/glue/userDefinedFunction", "UserDefinedFunction.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserDefinedFunctionState, opts: CustomResourceOptions): UserDefinedFunction = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserDefinedFunctionState): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserDefinedFunctionState, opts: CustomResourceOptions): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
     
     /**
       * Returns true if the given object is an instance of UserDefinedFunction.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/userDefinedFunction", "UserDefinedFunction.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/userDefinedFunction.UserDefinedFunction */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/userDefinedFunction.UserDefinedFunction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/userDefinedFunction.UserDefinedFunction */ Boolean]
   }
   
-  @js.native
   trait UserDefinedFunctionArgs extends StObject {
     
     /**
       * ID of the Glue Catalog to create the function in. If omitted, this defaults to the AWS Account ID.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Java class that contains the function code.
       */
-    val className: Input[String] = js.native
+    val className: Input[String]
     
     /**
       * The name of the Database to create the Function.
       */
-    val databaseName: Input[String] = js.native
+    val databaseName: Input[String]
     
     /**
       * The name of the function.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The owner of the function.
       */
-    val ownerName: Input[String] = js.native
+    val ownerName: Input[String]
     
     /**
       * The owner type. can be one of `USER`, `ROLE`, and `GROUP`.
       */
-    val ownerType: Input[String] = js.native
+    val ownerType: Input[String]
     
     /**
       * The configuration block for Resource URIs. See resource uris below for more details.
       */
     val resourceUris: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.glue.UserDefinedFunctionResourceUri]]]
-      ] = js.native
+      ] = js.undefined
   }
   object UserDefinedFunctionArgs {
     
@@ -190,49 +187,48 @@ object userDefinedFunctionMod {
     }
   }
   
-  @js.native
   trait UserDefinedFunctionState extends StObject {
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the Glue Catalog to create the function in. If omitted, this defaults to the AWS Account ID.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Java class that contains the function code.
       */
-    val className: js.UndefOr[Input[String]] = js.native
+    val className: js.UndefOr[Input[String]] = js.undefined
     
-    val createTime: js.UndefOr[Input[String]] = js.native
+    val createTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Database to create the Function.
       */
-    val databaseName: js.UndefOr[Input[String]] = js.native
+    val databaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the function.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The owner of the function.
       */
-    val ownerName: js.UndefOr[Input[String]] = js.native
+    val ownerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The owner type. can be one of `USER`, `ROLE`, and `GROUP`.
       */
-    val ownerType: js.UndefOr[Input[String]] = js.native
+    val ownerType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The configuration block for Resource URIs. See resource uris below for more details.
       */
     val resourceUris: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.glue.UserDefinedFunctionResourceUri]]]
-      ] = js.native
+      ] = js.undefined
   }
   object UserDefinedFunctionState {
     

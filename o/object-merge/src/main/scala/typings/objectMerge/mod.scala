@@ -3,7 +3,6 @@ package typings.objectMerge
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -164,12 +163,11 @@ object mod extends Shortcut {
     def createOptions(options: js.Object): ObjectMergeOptions = js.native
   }
   
-  @js.native
   trait ObjectMergeOptions extends StObject {
     
-    var depth: Double | Boolean = js.native
+    var depth: Double | Boolean
     
-    var throwOnCircularRef: Boolean = js.native
+    var throwOnCircularRef: Boolean
   }
   object ObjectMergeOptions {
     

@@ -2,12 +2,11 @@ package typings.clearbladejsNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOptionsWithID
-  extends CollectionOptionsWithID
+  extends StObject
+     with CollectionOptionsWithID
      with QueryOptions
 object QueryOptionsWithID {
   

@@ -2,42 +2,40 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single strongly-typed value.
   */
-@js.native
 trait SchemaTypedValue extends StObject {
   
   /**
     * A Boolean value: true or false.
     */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A distribution value.
     */
-  var distributionValue: js.UndefOr[SchemaDistribution] = js.native
+  var distributionValue: js.UndefOr[SchemaDistribution] = js.undefined
   
   /**
     * A 64-bit double-precision floating-point number. Its magnitude is
     * approximately &amp;plusmn;10&lt;sup&gt;&amp;plusmn;300&lt;/sup&gt; and it
     * has 16 significant digits of precision.
     */
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
   /**
     * A 64-bit integer. Its range is approximately
     * &amp;plusmn;9.2x10&lt;sup&gt;18&lt;/sup&gt;.
     */
-  var int64Value: js.UndefOr[String] = js.native
+  var int64Value: js.UndefOr[String] = js.undefined
   
   /**
     * A variable-length string value.
     */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object SchemaTypedValue {
   

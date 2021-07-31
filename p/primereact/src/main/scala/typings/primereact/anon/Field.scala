@@ -2,15 +2,13 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Field extends StObject {
   
-  var field: String = js.native
+  var field: String
   
-  var order: Double = js.native
+  var order: Double
 }
 object Field {
   

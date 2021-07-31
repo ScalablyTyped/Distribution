@@ -2,16 +2,14 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpireSessionRequest extends StObject {
   
   /**
     * The identifier of the streaming session.
     */
-  var SessionId: String = js.native
+  var SessionId: String
 }
 object ExpireSessionRequest {
   

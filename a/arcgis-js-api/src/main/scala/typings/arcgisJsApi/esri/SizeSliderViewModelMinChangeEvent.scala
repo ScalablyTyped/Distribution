@@ -3,24 +3,22 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.min
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeSliderViewModelMinChangeEvent extends StObject {
   
-  var oldValue: Double = js.native
+  var oldValue: Double
   
-  var `type`: min = js.native
+  var `type`: min
   
-  var value: Double = js.native
+  var value: Double
 }
 object SizeSliderViewModelMinChangeEvent {
   
   @scala.inline
-  def apply(oldValue: Double, `type`: min, value: Double): SizeSliderViewModelMinChangeEvent = {
+  def apply(oldValue: Double, value: Double): SizeSliderViewModelMinChangeEvent = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("min")
     __obj.asInstanceOf[SizeSliderViewModelMinChangeEvent]
   }
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateVolumePermissionModifications extends StObject {
   
   /**
     * Adds the specified AWS account ID or group to the list.
     */
-  var Add: js.UndefOr[CreateVolumePermissionList] = js.native
+  var Add: js.UndefOr[CreateVolumePermissionList] = js.undefined
   
   /**
     * Removes the specified AWS account ID or group from the list.
     */
-  var Remove: js.UndefOr[CreateVolumePermissionList] = js.native
+  var Remove: js.UndefOr[CreateVolumePermissionList] = js.undefined
 }
 object CreateVolumePermissionModifications {
   

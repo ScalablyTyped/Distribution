@@ -10,31 +10,30 @@ import typings.angularCompiler.render3UtilMod.R3Reference
 import typings.angularCompiler.srcUtilMod.OutputContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object r3ModuleCompilerMod {
   
-  @JSImport("@angular/compiler/src/render3/r3_module_compiler", "compileInjector")
+  @JSImport("@angular/compiler/src/render3/r3_module_compiler", JSImport.Namespace)
   @js.native
-  def compileInjector(meta: R3InjectorMetadata): R3InjectorDef = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/compiler/src/render3/r3_module_compiler", "compileNgModule")
-  @js.native
-  def compileNgModule(meta: R3NgModuleMetadata): R3NgModuleDef = js.native
+  @scala.inline
+  def compileInjector(meta: R3InjectorMetadata): R3InjectorDef = ^.asInstanceOf[js.Dynamic].applyDynamic("compileInjector")(meta.asInstanceOf[js.Any]).asInstanceOf[R3InjectorDef]
   
-  @JSImport("@angular/compiler/src/render3/r3_module_compiler", "compileNgModuleFromRender2")
-  @js.native
-  def compileNgModuleFromRender2(ctx: OutputContext, ngModule: CompileShallowModuleMetadata, injectableCompiler: InjectableCompiler): Unit = js.native
+  @scala.inline
+  def compileNgModule(meta: R3NgModuleMetadata): R3NgModuleDef = ^.asInstanceOf[js.Dynamic].applyDynamic("compileNgModule")(meta.asInstanceOf[js.Any]).asInstanceOf[R3NgModuleDef]
   
-  @js.native
+  @scala.inline
+  def compileNgModuleFromRender2(ctx: OutputContext, ngModule: CompileShallowModuleMetadata, injectableCompiler: InjectableCompiler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compileNgModuleFromRender2")(ctx.asInstanceOf[js.Any], ngModule.asInstanceOf[js.Any], injectableCompiler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait R3InjectorDef extends StObject {
     
-    var expression: Expression = js.native
+    var expression: Expression
     
-    var statements: js.Array[Statement] = js.native
+    var statements: js.Array[Statement]
     
-    var `type`: Type = js.native
+    var `type`: Type
   }
   object R3InjectorDef {
     
@@ -62,26 +61,25 @@ object r3ModuleCompilerMod {
     }
   }
   
-  @js.native
   trait R3InjectorMetadata extends StObject {
     
-    var deps: js.Array[R3DependencyMetadata] | Null = js.native
+    var deps: js.Array[R3DependencyMetadata] | Null
     
-    var imports: js.Array[Expression] = js.native
+    var imports: js.Array[Expression]
     
-    var internalType: Expression = js.native
+    var internalType: Expression
     
-    var name: String = js.native
+    var name: String
     
-    var providers: Expression | Null = js.native
+    var providers: Expression | Null
     
-    var `type`: R3Reference = js.native
+    var `type`: R3Reference
   }
   object R3InjectorMetadata {
     
     @scala.inline
     def apply(imports: js.Array[Expression], internalType: Expression, name: String, `type`: R3Reference): R3InjectorMetadata = {
-      val __obj = js.Dynamic.literal(imports = imports.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(imports = imports.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], deps = null, providers = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3InjectorMetadata]
     }
@@ -121,14 +119,13 @@ object r3ModuleCompilerMod {
     }
   }
   
-  @js.native
   trait R3NgModuleDef extends StObject {
     
-    var additionalStatements: js.Array[Statement] = js.native
+    var additionalStatements: js.Array[Statement]
     
-    var expression: Expression = js.native
+    var expression: Expression
     
-    var `type`: Type = js.native
+    var `type`: Type
   }
   object R3NgModuleDef {
     
@@ -156,7 +153,6 @@ object r3ModuleCompilerMod {
     }
   }
   
-  @js.native
   trait R3NgModuleMetadata extends StObject {
     
     /**
@@ -166,42 +162,42 @@ object r3ModuleCompilerMod {
       * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
       * an IIFE structure that uses a different name internally.
       */
-    var adjacentType: Expression = js.native
+    var adjacentType: Expression
     
     /**
       * An array of expressions representing the bootstrap components specified by the module.
       */
-    var bootstrap: js.Array[R3Reference] = js.native
+    var bootstrap: js.Array[R3Reference]
     
     /**
       * Whether to generate closure wrappers for bootstrap, declarations, imports, and exports.
       */
-    var containsForwardDecls: Boolean = js.native
+    var containsForwardDecls: Boolean
     
     /**
       * An array of expressions representing the directives and pipes declared by the module.
       */
-    var declarations: js.Array[R3Reference] = js.native
+    var declarations: js.Array[R3Reference]
     
     /**
       * Whether to emit the selector scope values (declarations, imports, exports) inline into the
       * module definition, or to generate additional statements which patch them on. Inline emission
       * does not allow components to be tree-shaken, but is useful for JIT mode.
       */
-    var emitInline: Boolean = js.native
+    var emitInline: Boolean
     
     /**
       * An array of expressions representing the exports of the module.
       */
-    var exports: js.Array[R3Reference] = js.native
+    var exports: js.Array[R3Reference]
     
     /** Unique ID or expression representing the unique ID of an NgModule. */
-    var id: Expression | Null = js.native
+    var id: Expression | Null
     
     /**
       * An array of expressions representing the imports of the module.
       */
-    var imports: js.Array[R3Reference] = js.native
+    var imports: js.Array[R3Reference]
     
     /**
       * An expression representing the module type being compiled, intended for use within a class
@@ -210,17 +206,17 @@ object r3ModuleCompilerMod {
       * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
       * an IIFE structure that uses a different name internally.
       */
-    var internalType: Expression = js.native
+    var internalType: Expression
     
     /**
       * The set of schemas that declare elements to be allowed in the NgModule.
       */
-    var schemas: js.Array[R3Reference] | Null = js.native
+    var schemas: js.Array[R3Reference] | Null
     
     /**
       * An expression representing the module type being compiled.
       */
-    var `type`: R3Reference = js.native
+    var `type`: R3Reference
   }
   object R3NgModuleMetadata {
     
@@ -236,7 +232,7 @@ object r3ModuleCompilerMod {
       internalType: Expression,
       `type`: R3Reference
     ): R3NgModuleMetadata = {
-      val __obj = js.Dynamic.literal(adjacentType = adjacentType.asInstanceOf[js.Any], bootstrap = bootstrap.asInstanceOf[js.Any], containsForwardDecls = containsForwardDecls.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], emitInline = emitInline.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(adjacentType = adjacentType.asInstanceOf[js.Any], bootstrap = bootstrap.asInstanceOf[js.Any], containsForwardDecls = containsForwardDecls.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], emitInline = emitInline.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], id = null, schemas = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3NgModuleMetadata]
     }

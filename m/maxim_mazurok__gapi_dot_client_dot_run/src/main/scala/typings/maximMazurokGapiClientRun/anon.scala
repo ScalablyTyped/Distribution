@@ -4,56 +4,54 @@ import typings.maximMazurokGapiClientRun.gapi.client.run.DomainMapping
 import typings.maximMazurokGapiClientRun.gapi.client.run.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accesstoken extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Maximum results to return per page. */
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
     /** Continuation token for fetching the next page of results. */
-    var pageToken: js.UndefOr[String] = js.native
+    var pageToken: js.UndefOr[String] = js.undefined
     
     /** Name of the parent Project resource. Example: `projects/myproject`. */
-    var parent: String = js.native
+    var parent: String
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Accesstoken {
     
@@ -149,45 +147,44 @@ object anon {
     }
   }
   
-  @js.native
   trait Alt extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** The name of the service being replaced. For Cloud Run (fully managed), replace {namespace_id} with the project ID or number. */
-    var name: String = js.native
+    var name: String
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Alt {
     
@@ -271,57 +268,56 @@ object anon {
     }
   }
   
-  @js.native
   trait ApiVersion extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** Cloud Run currently ignores this parameter. */
-    var apiVersion: js.UndefOr[String] = js.native
+    var apiVersion: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** Cloud Run currently ignores this parameter. */
-    var kind: js.UndefOr[String] = js.native
+    var kind: js.UndefOr[String] = js.undefined
     
     /** The name of the service to delete. For Cloud Run (fully managed), replace {namespace_id} with the project ID or number. */
-    var name: String = js.native
+    var name: String
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies the propagation policy of delete. Cloud Run currently ignores this setting, and deletes in the background. Please see
       * kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/ for more information.
       */
-    var propagationPolicy: js.UndefOr[String] = js.native
+    var propagationPolicy: js.UndefOr[String] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object ApiVersion {
     
@@ -423,66 +419,65 @@ object anon {
     }
   }
   
-  @js.native
   trait Callback extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Optional encoded string to continue paging. */
-    var continue: js.UndefOr[String] = js.native
+    var continue: js.UndefOr[String] = js.undefined
     
     /** Allows to filter resources based on a specific value for a field name. Send this in a query string format. i.e. 'metadata.name%3Dlorem'. Not currently used by Cloud Run. */
-    var fieldSelector: js.UndefOr[String] = js.native
+    var fieldSelector: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** Not currently used by Cloud Run. */
-    var includeUninitialized: js.UndefOr[Boolean] = js.native
+    var includeUninitialized: js.UndefOr[Boolean] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** Allows to filter resources based on a label. Supported operations are =, !=, exists, in, and notIn. */
-    var labelSelector: js.UndefOr[String] = js.native
+    var labelSelector: js.UndefOr[String] = js.undefined
     
     /** The maximum number of records that should be returned. */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** The namespace from which the services should be listed. For Cloud Run (fully managed), replace {namespace_id} with the project ID or number. */
-    var parent: String = js.native
+    var parent: String
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** The baseline resource version from which the list or watch operation should start. Not currently used by Cloud Run. */
-    var resourceVersion: js.UndefOr[String] = js.native
+    var resourceVersion: js.UndefOr[String] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
     
     /** Flag that indicates that the client expects to watch this resource as well. Not currently used by Cloud Run. */
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
   }
   object Callback {
     
@@ -608,48 +603,47 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** The namespace in which the domain mapping should be created. For Cloud Run (fully managed), replace {namespace_id} with the project ID or number. */
-    var parent: String = js.native
+    var parent: String
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: DomainMapping = js.native
+    var resource: DomainMapping
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -736,54 +730,53 @@ object anon {
     }
   }
   
-  @js.native
   trait Filter extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** The standard list filter. */
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** The resource that owns the locations collection, if applicable. */
-    var name: String = js.native
+    var name: String
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** The standard list page size. */
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
     /** The standard list page token. */
-    var pageToken: js.UndefOr[String] = js.native
+    var pageToken: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Filter {
     
@@ -885,45 +878,44 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** The namespace in which the service should be created. For Cloud Run (fully managed), replace {namespace_id} with the project ID or number. */
-    var parent: String = js.native
+    var parent: String
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Key {
     
@@ -1007,48 +999,47 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** The name of the service being replaced. For Cloud Run (fully managed), replace {namespace_id} with the project ID or number. */
-    var name: String = js.native
+    var name: String
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: Service = js.native
+    var resource: Service
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Name {
     
@@ -1135,48 +1126,47 @@ object anon {
     }
   }
   
-  @js.native
   trait Oauthtoken extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** The namespace in which the service should be created. For Cloud Run (fully managed), replace {namespace_id} with the project ID or number. */
-    var parent: String = js.native
+    var parent: String
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: Service = js.native
+    var resource: Service
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Oauthtoken {
     
@@ -1263,30 +1253,29 @@ object anon {
     }
   }
   
-  @js.native
   trait OptionsrequestedPolicyVersion extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /**
       * Optional. The policy format version to be returned. Valid values are 0, 1, and 3. Requests specifying an invalid value will be rejected. Requests for policies with any
@@ -1294,22 +1283,22 @@ object anon {
       * conditions in their IAM policies, see the [IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
       */
     @JSName("options.requestedPolicyVersion")
-    var optionsDotrequestedPolicyVersion: js.UndefOr[Double] = js.native
+    var optionsDotrequestedPolicyVersion: js.UndefOr[Double] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field. */
-    var resource: String = js.native
+    var resource: String
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object OptionsrequestedPolicyVersion {
     
@@ -1399,45 +1388,44 @@ object anon {
     }
   }
   
-  @js.native
   trait PrettyPrint extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** REQUIRED: The resource for which the policy detail is being requested. See the operation documentation for the appropriate value for this field. */
-    var resource: String = js.native
+    var resource: String
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object PrettyPrint {
     

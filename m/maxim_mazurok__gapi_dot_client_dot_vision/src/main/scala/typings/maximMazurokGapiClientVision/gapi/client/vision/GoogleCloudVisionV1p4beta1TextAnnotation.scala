@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p4beta1TextAnnotation extends StObject {
   
   /** List of pages detected by OCR. */
-  var pages: js.UndefOr[js.Array[GoogleCloudVisionV1p4beta1Page]] = js.native
+  var pages: js.UndefOr[js.Array[GoogleCloudVisionV1p4beta1Page]] = js.undefined
   
   /** UTF-8 text detected on the pages. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVisionV1p4beta1TextAnnotation {
   

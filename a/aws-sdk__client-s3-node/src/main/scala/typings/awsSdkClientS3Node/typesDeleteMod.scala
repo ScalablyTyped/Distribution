@@ -5,23 +5,21 @@ import typings.awsSdkClientS3Node.typesObjectIdentifierMod.UnmarshalledObjectIde
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteMod {
   
-  @js.native
   trait Delete extends StObject {
     
     /**
       * _ObjectIdentifierList shape
       */
-    var Objects: js.Array[ObjectIdentifier] | Iterable[ObjectIdentifier] = js.native
+    var Objects: js.Array[ObjectIdentifier] | Iterable[ObjectIdentifier]
     
     /**
       * <p>Element to enable quiet mode for the request. When you add this element, you must set its value to true.</p>
       */
-    var Quiet: js.UndefOr[Boolean] = js.native
+    var Quiet: js.UndefOr[Boolean] = js.undefined
   }
   object Delete {
     
@@ -48,14 +46,15 @@ object typesDeleteMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledDelete extends Delete {
+  trait UnmarshalledDelete
+    extends StObject
+       with Delete {
     
     /**
       * _ObjectIdentifierList shape
       */
     @JSName("Objects")
-    var Objects_UnmarshalledDelete: js.Array[UnmarshalledObjectIdentifier] = js.native
+    var Objects_UnmarshalledDelete: js.Array[UnmarshalledObjectIdentifier]
   }
   object UnmarshalledDelete {
     

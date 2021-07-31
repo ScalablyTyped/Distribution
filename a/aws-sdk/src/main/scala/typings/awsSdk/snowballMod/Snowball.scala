@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait Snowball extends Service {
   ): Request[CancelJobResult, AWSError] = js.native
   
   @JSName("config")
-  var config_Snowball: ConfigBase with ClientConfiguration = js.native
+  var config_Snowball: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates an address for a Snow device to be shipped to. In most regions, addresses are validated at the time of creation. The address you provide must be located within the serviceable area of your region. If the address is invalid or unsupported, then an exception is thrown.

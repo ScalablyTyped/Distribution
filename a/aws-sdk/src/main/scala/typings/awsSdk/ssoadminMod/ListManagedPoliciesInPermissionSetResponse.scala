@@ -2,21 +2,19 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListManagedPoliciesInPermissionSetResponse extends StObject {
   
   /**
     * The array of the AttachedManagedPolicy data type object.
     */
-  var AttachedManagedPolicies: js.UndefOr[AttachedManagedPolicyList] = js.native
+  var AttachedManagedPolicies: js.UndefOr[AttachedManagedPolicyList] = js.undefined
   
   /**
     * The pagination token for the list API. Initially the value is null. Use the output of previous API calls to make subsequent calls.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object ListManagedPoliciesInPermissionSetResponse {
   

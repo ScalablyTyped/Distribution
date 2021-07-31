@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpecListenerTlsCertificate extends StObject {
   
   /**
     * An AWS Certificate Manager (ACM) certificate.
     */
-  var acm: js.UndefOr[VirtualNodeSpecListenerTlsCertificateAcm] = js.native
+  var acm: js.UndefOr[VirtualNodeSpecListenerTlsCertificateAcm] = js.undefined
   
   /**
     * A local file certificate.
     */
-  var file: js.UndefOr[VirtualNodeSpecListenerTlsCertificateFile] = js.native
+  var file: js.UndefOr[VirtualNodeSpecListenerTlsCertificateFile] = js.undefined
 }
 object VirtualNodeSpecListenerTlsCertificate {
   

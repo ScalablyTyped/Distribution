@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrawledUrl extends StObject {
   
   /** Output only. The body of the request that was used to visit the URL. */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /** Output only. The http method of the request that was used to visit the URL, in uppercase. */
-  var httpMethod: js.UndefOr[String] = js.native
+  var httpMethod: js.UndefOr[String] = js.undefined
   
   /** Output only. The URL that was crawled. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object CrawledUrl {
   

@@ -2,13 +2,11 @@ package typings.googleapis.cloudprivatecatalogproducerV1beta1Mod.cloudprivatecat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for `SetIamPolicy` method.
   */
-@js.native
 trait SchemaGoogleIamV1SetIamPolicyRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaGoogleIamV1SetIamPolicyRequest extends StObject {
     * policy but certain Cloud Platform services (such as Projects) might
     * reject them.
     */
-  var policy: js.UndefOr[SchemaGoogleIamV1Policy] = js.native
+  var policy: js.UndefOr[SchemaGoogleIamV1Policy] = js.undefined
   
   /**
     * OPTIONAL: A FieldMask specifying which fields of the policy to modify.
@@ -25,7 +23,7 @@ trait SchemaGoogleIamV1SetIamPolicyRequest extends StObject {
     * following default mask is used: paths: &quot;bindings, etag&quot; This
     * field is only used by Cloud IAM.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleIamV1SetIamPolicyRequest {
   

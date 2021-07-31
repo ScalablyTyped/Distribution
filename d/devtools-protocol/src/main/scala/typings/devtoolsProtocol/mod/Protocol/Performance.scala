@@ -4,18 +4,16 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.threadTicks
 import typings.devtoolsProtocol.devtoolsProtocolStrings.timeTicks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Performance {
   
-  @js.native
   trait EnableRequest extends StObject {
     
     /**
       * Time domain to use for collecting and reporting duration metrics. (EnableRequestTimeDomain enum)
       */
-    var timeDomain: js.UndefOr[timeTicks | threadTicks] = js.native
+    var timeDomain: js.UndefOr[timeTicks | threadTicks] = js.undefined
   }
   object EnableRequest {
     
@@ -50,13 +48,12 @@ object Performance {
     def TimeTicks: timeTicks = "timeTicks".asInstanceOf[timeTicks]
   }
   
-  @js.native
   trait GetMetricsResponse extends StObject {
     
     /**
       * Current values for run-time metrics.
       */
-    var metrics: js.Array[Metric] = js.native
+    var metrics: js.Array[Metric]
   }
   object GetMetricsResponse {
     
@@ -77,18 +74,17 @@ object Performance {
     }
   }
   
-  @js.native
   trait Metric extends StObject {
     
     /**
       * Metric name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Metric value.
       */
-    var value: Double = js.native
+    var value: Double
   }
   object Metric {
     
@@ -109,18 +105,17 @@ object Performance {
     }
   }
   
-  @js.native
   trait MetricsEvent extends StObject {
     
     /**
       * Current values of the metrics.
       */
-    var metrics: js.Array[Metric] = js.native
+    var metrics: js.Array[Metric]
     
     /**
       * Timestamp title.
       */
-    var title: String = js.native
+    var title: String
   }
   object MetricsEvent {
     
@@ -144,13 +139,12 @@ object Performance {
     }
   }
   
-  @js.native
   trait SetTimeDomainRequest extends StObject {
     
     /**
       * Time domain (SetTimeDomainRequestTimeDomain enum)
       */
-    var timeDomain: timeTicks | threadTicks = js.native
+    var timeDomain: timeTicks | threadTicks
   }
   object SetTimeDomainRequest {
     

@@ -10,7 +10,6 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the image-related properties of an item (like a file or folder). */
@@ -52,7 +51,7 @@ trait ImageProperties extends StObject {
     * @param propertiesToRetrieve A collection that contains the names of the properties to retrieve.
     * @return When this method completes successfully, it returns a collection (type IMap ) that contains the specified properties and values as key-value pairs.
     */
-  def retrievePropertiesAsync(propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMap[_, _]] = js.native
+  def retrievePropertiesAsync(propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMap[js.Any, js.Any]] = js.native
   
   /**
     * Saves all properties associated with the item.
@@ -64,7 +63,7 @@ trait ImageProperties extends StObject {
     * @param propertiesToSave A collection that contains the names and values of the properties to save as key-value pairs (type IKeyValuePair ).
     * @return No object or value is returned when this method completes.
     */
-  def savePropertiesAsync(propertiesToSave: IIterable[IKeyValuePair[_, _]]): IPromiseWithIAsyncAction = js.native
+  def savePropertiesAsync(propertiesToSave: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncAction = js.native
   
   /** Gets or sets the title of the image. */
   var title: String = js.native

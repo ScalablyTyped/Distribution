@@ -2,36 +2,34 @@ package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to return full hashes matched by the provided hash prefixes.
   */
-@js.native
 trait SchemaFindFullHashesRequest extends StObject {
   
   /**
     * Client metadata associated with callers of higher-level APIs built on top
     * of the client&#39;s implementation.
     */
-  var apiClient: js.UndefOr[SchemaClientInfo] = js.native
+  var apiClient: js.UndefOr[SchemaClientInfo] = js.undefined
   
   /**
     * The client metadata.
     */
-  var client: js.UndefOr[SchemaClientInfo] = js.native
+  var client: js.UndefOr[SchemaClientInfo] = js.undefined
   
   /**
     * The current client states for each of the client&#39;s local threat
     * lists.
     */
-  var clientStates: js.UndefOr[js.Array[String]] = js.native
+  var clientStates: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The lists and hashes to be checked.
     */
-  var threatInfo: js.UndefOr[SchemaThreatInfo] = js.native
+  var threatInfo: js.UndefOr[SchemaThreatInfo] = js.undefined
 }
 object SchemaFindFullHashesRequest {
   

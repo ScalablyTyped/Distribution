@@ -2,33 +2,31 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsMeasureTypeCrosshairYOptions extends StObject {
   
   /**
     * (Highstock) The dash or dot style of the crosshair's line. For possible
     * values, see this demonstration.
     */
-  var dashStyle: js.UndefOr[DashStyleValue] = js.native
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highstock) Enable or disable the vertical crosshair.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) The marker-end defines the arrowhead that will be drawn at
     * the final vertex of the given crosshair's path.
     */
-  var markerEnd: js.UndefOr[OptionsMarkerEndValue] = js.native
+  var markerEnd: js.UndefOr[OptionsMarkerEndValue] = js.undefined
   
   /**
     * (Highstock) The Z index of the crosshair in annotation.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsMeasureTypeCrosshairYOptions {
   

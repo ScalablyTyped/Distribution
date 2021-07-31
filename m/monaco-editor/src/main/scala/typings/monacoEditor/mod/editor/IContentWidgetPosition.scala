@@ -4,34 +4,32 @@ import typings.monacoEditor.mod.IPosition
 import typings.monacoEditor.mod.IRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContentWidgetPosition extends StObject {
   
   /**
     * Desired position for the content widget.
     * `preference` will also affect the placement.
     */
-  var position: IPosition | Null = js.native
+  var position: IPosition | Null
   
   /**
     * Placement preference for position, in order of preference.
     */
-  var preference: js.Array[ContentWidgetPositionPreference] = js.native
+  var preference: js.Array[ContentWidgetPositionPreference]
   
   /**
     * Optionally, a range can be provided to further
     * define the position of the content widget.
     */
-  var range: js.UndefOr[IRange | Null] = js.native
+  var range: js.UndefOr[IRange | Null] = js.undefined
 }
 object IContentWidgetPosition {
   
   @scala.inline
   def apply(preference: js.Array[ContentWidgetPositionPreference]): IContentWidgetPosition = {
-    val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any], position = null)
     __obj.asInstanceOf[IContentWidgetPosition]
   }
   

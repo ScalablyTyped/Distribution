@@ -3,7 +3,6 @@ package typings.kineticjs.Kinetic
 import typings.kineticjs.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,9 +22,9 @@ trait INode extends StObject {
   def drawScene(): js.Any = js.native
   
   def fire(typeStr: String): js.Any = js.native
-  def fire(typeStr: String, event: js.UndefOr[scala.Nothing], bubble: Boolean): js.Any = js.native
   def fire(typeStr: String, event: js.Any): js.Any = js.native
   def fire(typeStr: String, event: js.Any, bubble: Boolean): js.Any = js.native
+  def fire(typeStr: String, event: Unit, bubble: Boolean): js.Any = js.native
   
   def getAbsoluteOpacity(): Double = js.native
   
@@ -120,7 +119,7 @@ trait INode extends StObject {
   def off(typesStr: String): Unit = js.native
   
   // Events
-  def on(typesStr: String, handler: js.Function1[/* data */ js.Any, _]): Unit = js.native
+  def on(typesStr: String, handler: js.Function1[/* data */ js.Any, js.Any]): Unit = js.native
   
   def remove(): js.Any = js.native
   

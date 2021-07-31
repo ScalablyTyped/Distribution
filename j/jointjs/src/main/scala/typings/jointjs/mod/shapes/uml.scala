@@ -17,7 +17,6 @@ import typings.jointjs.mod.shapes.basic.CircleSelectors
 import typings.jointjs.mod.shapes.basic.Generic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uml {
@@ -26,7 +25,7 @@ object uml {
   @js.native
   class Abstract () extends Class {
     def this(attributes: ClassAttributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: ClassAttributes, opt: StringDictionary[js.Any]) = this()
   }
   
@@ -34,7 +33,7 @@ object uml {
   @js.native
   class AbstractView () extends ClassView {
     def this(attributes: ClassAttributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: ClassAttributes, opt: StringDictionary[js.Any]) = this()
   }
   
@@ -43,7 +42,7 @@ object uml {
   // default label props
   class Aggregation () extends Link {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
@@ -52,7 +51,7 @@ object uml {
   // default label props
   class Association () extends Link {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
@@ -60,7 +59,7 @@ object uml {
   @js.native
   class Class () extends Generic {
     def this(attributes: ClassAttributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: ClassAttributes, opt: StringDictionary[js.Any]) = this()
     
     def getClassName(): js.Array[String] = js.native
@@ -79,7 +78,7 @@ object uml {
   // default label props
   class Composition () extends Link {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
@@ -87,7 +86,7 @@ object uml {
   @js.native
   class EndState () extends Generic {
     def this(attributes: GenericAttributes[EndStateSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[EndStateSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -96,7 +95,7 @@ object uml {
   // default label props
   class Generalization () extends Link {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
@@ -105,7 +104,7 @@ object uml {
   // default label props
   class Implementation () extends Link {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
@@ -113,7 +112,7 @@ object uml {
   @js.native
   class Interface () extends Class {
     def this(attributes: ClassAttributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: ClassAttributes, opt: StringDictionary[js.Any]) = this()
   }
   
@@ -121,7 +120,7 @@ object uml {
   @js.native
   class InterfaceView () extends ClassView {
     def this(attributes: ClassAttributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: ClassAttributes, opt: StringDictionary[js.Any]) = this()
   }
   
@@ -129,7 +128,7 @@ object uml {
   @js.native
   class StartState () extends Circle {
     def this(attributes: GenericAttributes[CircleSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[CircleSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -137,7 +136,7 @@ object uml {
   @js.native
   class State () extends Generic {
     def this(attributes: GenericAttributes[StateSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[StateSelectors], opt: StringDictionary[js.Any]) = this()
     
     /* protected */ def updateEvents(): Unit = js.native
@@ -152,18 +151,19 @@ object uml {
   // default label props
   class Transition () extends Link {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
-  @js.native
-  trait ClassAttributes extends GenericAttributes[SVGRectSelector] {
+  trait ClassAttributes
+    extends StObject
+       with GenericAttributes[SVGRectSelector] {
     
-    var attributes: js.Array[String] = js.native
+    var attributes: js.Array[String]
     
-    var methods: js.Array[String] = js.native
+    var methods: js.Array[String]
     
-    var name: js.Array[String] = js.native
+    var name: js.Array[String]
   }
   object ClassAttributes {
     
@@ -196,14 +196,15 @@ object uml {
     }
   }
   
-  @js.native
-  trait EndStateSelectors extends Selectors {
+  trait EndStateSelectors
+    extends StObject
+       with Selectors {
     
     @JSName("circle.inner")
-    var circleDotinner: js.UndefOr[SVGCircleAttributes] = js.native
+    var circleDotinner: js.UndefOr[SVGCircleAttributes] = js.undefined
     
     @JSName("circle.outer")
-    var circleDotouter: js.UndefOr[SVGCircleAttributes] = js.native
+    var circleDotouter: js.UndefOr[SVGCircleAttributes] = js.undefined
   }
   object EndStateSelectors {
     
@@ -230,20 +231,21 @@ object uml {
     }
   }
   
-  @js.native
-  trait StateSelectors extends Selectors {
+  trait StateSelectors
+    extends StObject
+       with Selectors {
     
     @JSName(".uml-state-body")
-    var `Dotuml-state-body`: js.UndefOr[SVGRectAttributes] = js.native
+    var `Dotuml-state-body`: js.UndefOr[SVGRectAttributes] = js.undefined
     
     @JSName(".uml-state-events")
-    var `Dotuml-state-events`: js.UndefOr[SVGTextAttributes] = js.native
+    var `Dotuml-state-events`: js.UndefOr[SVGTextAttributes] = js.undefined
     
     @JSName(".uml-state-name")
-    var `Dotuml-state-name`: js.UndefOr[SVGTextAttributes] = js.native
+    var `Dotuml-state-name`: js.UndefOr[SVGTextAttributes] = js.undefined
     
     @JSName(".uml-state-separator")
-    var `Dotuml-state-separator`: js.UndefOr[SVGPathAttributes] = js.native
+    var `Dotuml-state-separator`: js.UndefOr[SVGPathAttributes] = js.undefined
   }
   object StateSelectors {
     

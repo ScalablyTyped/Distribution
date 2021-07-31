@@ -4,7 +4,6 @@ import typings.mcustomscrollbar.MCustomScrollbar.CustomScrollbarOptions
 import typings.mcustomscrollbar.MCustomScrollbar.ScrollToParameterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -2,21 +2,19 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PredictorExecution extends StObject {
   
   /**
     * The ARN of the algorithm used to test the predictor.
     */
-  var AlgorithmArn: js.UndefOr[Arn] = js.native
+  var AlgorithmArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * An array of test windows used to evaluate the algorithm. The NumberOfBacktestWindows from the object determines the number of windows in the array.
     */
-  var TestWindows: js.UndefOr[TestWindowDetails] = js.native
+  var TestWindows: js.UndefOr[TestWindowDetails] = js.undefined
 }
 object PredictorExecution {
   

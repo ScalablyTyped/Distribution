@@ -2,24 +2,24 @@ package typings.xmlcreate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlDtdAttlistMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlDtdAttlist", JSImport.Default)
   @js.native
-  class default[Parent] protected () extends XmlDtdAttlist[Parent] {
+  class default[Parent] protected ()
+    extends StObject
+       with XmlDtdAttlist[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdAttlistOptions) = this()
   }
   
-  @js.native
   trait IXmlDtdAttlistOptions extends StObject {
     
     /**
       * The text of the declaration.
       */
-    var charData: String = js.native
+    var charData: String
   }
   object IXmlDtdAttlistOptions {
     

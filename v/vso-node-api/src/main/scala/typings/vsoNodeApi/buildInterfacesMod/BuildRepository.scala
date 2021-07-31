@@ -3,53 +3,51 @@ package typings.vsoNodeApi.buildInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildRepository extends StObject {
   
   /**
     * Indicates whether to checkout submodules.
     */
-  var checkoutSubmodules: Boolean = js.native
+  var checkoutSubmodules: Boolean
   
   /**
     * Indicates whether to clean the target folder when getting code from the repository.
     */
-  var clean: String = js.native
+  var clean: String
   
   /**
     * The name of the default branch.
     */
-  var defaultBranch: String = js.native
+  var defaultBranch: String
   
   /**
     * The ID of the repository.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The friendly name of the repository.
     */
-  var name: String = js.native
+  var name: String
   
-  var properties: StringDictionary[String] = js.native
+  var properties: StringDictionary[String]
   
   /**
     * The root folder.
     */
-  var rootFolder: String = js.native
+  var rootFolder: String
   
   /**
     * The type of the repository.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The URL of the repository.
     */
-  var url: String = js.native
+  var url: String
 }
 object BuildRepository {
   

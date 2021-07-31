@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileManagerMessages extends StObject {
   
-  var dialogs: js.UndefOr[FileManagerMessagesDialogs] = js.native
+  var dialogs: js.UndefOr[FileManagerMessagesDialogs] = js.undefined
   
-  var previewPane: js.UndefOr[FileManagerMessagesPreviewPane] = js.native
+  var previewPane: js.UndefOr[FileManagerMessagesPreviewPane] = js.undefined
   
-  var toolbar: js.UndefOr[FileManagerMessagesToolbar] = js.native
+  var toolbar: js.UndefOr[FileManagerMessagesToolbar] = js.undefined
   
-  var views: js.UndefOr[FileManagerMessagesViews] = js.native
+  var views: js.UndefOr[FileManagerMessagesViews] = js.undefined
 }
 object FileManagerMessages {
   

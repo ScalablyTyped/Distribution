@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object VpnDataPathType extends StObject {
   
   /** Not supported. */
   @js.native
-  sealed trait receive extends VpnDataPathType
+  sealed trait receive
+    extends StObject
+       with VpnDataPathType
   
   /** Not supported. */
   @js.native
-  sealed trait send extends VpnDataPathType
+  sealed trait send
+    extends StObject
+       with VpnDataPathType
 }

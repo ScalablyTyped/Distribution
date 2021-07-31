@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalRating extends Accessor {
+trait PortalRating
+  extends StObject
+     with Accessor {
   
   /**
     * Date the rating was added to the item.

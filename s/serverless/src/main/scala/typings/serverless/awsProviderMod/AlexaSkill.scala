@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlexaSkill extends StObject {
   
-  var appId: String = js.native
+  var appId: String
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object AlexaSkill {
   

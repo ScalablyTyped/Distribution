@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HierarchyLevel extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the hierarchy level.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the hierarchy level.
     */
-  var Id: js.UndefOr[HierarchyLevelId] = js.native
+  var Id: js.UndefOr[HierarchyLevelId] = js.undefined
   
   /**
     * The name of the hierarchy level.
     */
-  var Name: js.UndefOr[HierarchyLevelName] = js.native
+  var Name: js.UndefOr[HierarchyLevelName] = js.undefined
 }
 object HierarchyLevel {
   

@@ -6,34 +6,32 @@ import typings.c3.c3Strings.`top-left`
 import typings.c3.c3Strings.`top-right`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Anchor extends StObject {
   
   /**
     * Decides the position of the legend.
     * Defaults to `"top-left"`.
     */
-  var anchor: js.UndefOr[`top-left` | `top-right` | `bottom-left` | `bottom-right`] = js.native
+  var anchor: js.UndefOr[`top-left` | `top-right` | `bottom-left` | `bottom-right`] = js.undefined
   
   /**
     * Defines the max step the legend has (e.g. If `step=2` and legend has 3 items, the legend has 2 columns).
     */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the horizontal position of the legend based on the anchor.
     * Defaults to `10`.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the vertical position of the legend based on the anchor.
     * Defaults to `0`.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object Anchor {
   

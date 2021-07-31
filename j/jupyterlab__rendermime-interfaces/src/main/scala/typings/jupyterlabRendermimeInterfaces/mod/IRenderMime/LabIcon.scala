@@ -4,7 +4,6 @@ import typings.jupyterlabRendermimeInterfaces.anon.IIconPartialIRenderer
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LabIcon {
@@ -12,7 +11,6 @@ object LabIcon {
   /**
     * The simplest possible interface for defining a generic icon.
     */
-  @js.native
   trait IIcon extends StObject {
     
     /**
@@ -21,12 +19,12 @@ object LabIcon {
       *
       *     "pkg-name:icon-name"
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * A string containing the raw contents of an svg file.
       */
-    var svgstr: String = js.native
+    var svgstr: String
   }
   object IIcon {
     

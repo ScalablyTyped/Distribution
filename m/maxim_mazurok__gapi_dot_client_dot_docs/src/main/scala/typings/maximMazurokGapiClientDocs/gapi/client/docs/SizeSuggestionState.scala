@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to height. */
-  var heightSuggested: js.UndefOr[Boolean] = js.native
+  var heightSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to width. */
-  var widthSuggested: js.UndefOr[Boolean] = js.native
+  var widthSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object SizeSuggestionState {
   

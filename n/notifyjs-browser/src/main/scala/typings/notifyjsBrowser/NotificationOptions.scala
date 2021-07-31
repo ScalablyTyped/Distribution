@@ -2,55 +2,53 @@ package typings.notifyjsBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationOptions extends StObject {
   
   // show the arrow pointing at the element
-  var arrowShow: Boolean = js.native
+  var arrowShow: Boolean
   
   // arrow size in pixels
-  var arrowSize: Double = js.native
+  var arrowSize: Double
   
   // whether to auto-hide the notification
-  var autoHide: Boolean = js.native
+  var autoHide: Boolean
   
   // if autoHide, hide after milliseconds
-  var autoHideDelay: Double = js.native
+  var autoHideDelay: Double
   
   // default class (string or [string])
-  var className: String = js.native
+  var className: String
   
   // whether to hide the notification on click
-  var clickToHide: Boolean = js.native
+  var clickToHide: Boolean
   
   // default positions
-  var elementPosition: String = js.native
+  var elementPosition: String
   
   // padding between element and notification
-  var gap: Double = js.native
+  var gap: Double
   
-  var globalPosition: String = js.native
+  var globalPosition: String
   
   // hide animation
-  var hideAnimation: String = js.native
+  var hideAnimation: String
   
   // hide animation duration
-  var hideDuration: Double = js.native
+  var hideDuration: Double
   
   // position defines the notification position though uses the defaults below
-  var position: String = js.native
+  var position: String
   
   // show animation
-  var showAnimation: String = js.native
+  var showAnimation: String
   
   // show animation duration
-  var showDuration: Double = js.native
+  var showDuration: Double
   
   // default style
-  var style: String = js.native
+  var style: String
 }
 object NotificationOptions {
   

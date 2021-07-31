@@ -22,7 +22,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customsearchV1Mod {
@@ -107,7 +106,7 @@ object customsearchV1Mod {
         */
       def list(): GaxiosPromise[SchemaSearch] = js.native
       def list(callback: BodyResponseCallback[SchemaSearch]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearch] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSearch] = js.native
       def list(params: ParamsResourceCseList): GaxiosPromise[SchemaSearch] = js.native
       def list(params: ParamsResourceCseList, callback: BodyResponseCallback[SchemaSearch]): Unit = js.native
       def list(
@@ -178,7 +177,7 @@ object customsearchV1Mod {
         */
       def list(): GaxiosPromise[SchemaSearch] = js.native
       def list(callback: BodyResponseCallback[SchemaSearch]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearch] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSearch] = js.native
       def list(params: ParamsResourceCseSiterestrictList): GaxiosPromise[SchemaSearch] = js.native
       def list(params: ParamsResourceCseSiterestrictList, callback: BodyResponseCallback[SchemaSearch]): Unit = js.native
       def list(
@@ -194,16 +193,17 @@ object customsearchV1Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -215,183 +215,184 @@ object customsearchV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceCseList extends StandardParameters {
+    trait ParamsResourceCseList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Turns off the translation between zh-CN and zh-TW.
         */
-      var c2coff: js.UndefOr[String] = js.native
+      var c2coff: js.UndefOr[String] = js.undefined
       
       /**
         * Country restrict(s).
         */
-      var cr: js.UndefOr[String] = js.native
+      var cr: js.UndefOr[String] = js.undefined
       
       /**
         * The custom search engine ID to scope this search query
         */
-      var cx: js.UndefOr[String] = js.native
+      var cx: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies all search results are from a time period
         */
-      var dateRestrict: js.UndefOr[String] = js.native
+      var dateRestrict: js.UndefOr[String] = js.undefined
       
       /**
         * Identifies a phrase that all documents in the search results must contain
         */
-      var exactTerms: js.UndefOr[String] = js.native
+      var exactTerms: js.UndefOr[String] = js.undefined
       
       /**
         * Identifies a word or phrase that should not appear in any documents in
         * the search results
         */
-      var excludeTerms: js.UndefOr[String] = js.native
+      var excludeTerms: js.UndefOr[String] = js.undefined
       
       /**
         * Returns images of a specified type. Some of the allowed values are: bmp,
         * gif, png, jpg, svg, pdf, ...
         */
-      var fileType: js.UndefOr[String] = js.native
+      var fileType: js.UndefOr[String] = js.undefined
       
       /**
         * Controls turning on or off the duplicate content filter.
         */
-      var filter: js.UndefOr[String] = js.native
+      var filter: js.UndefOr[String] = js.undefined
       
       /**
         * Geolocation of end user.
         */
-      var gl: js.UndefOr[String] = js.native
+      var gl: js.UndefOr[String] = js.undefined
       
       /**
         * The local Google domain to use to perform the search.
         */
-      var googlehost: js.UndefOr[String] = js.native
+      var googlehost: js.UndefOr[String] = js.undefined
       
       /**
         * Creates a range in form as_nlo value..as_nhi value and attempts to append
         * it to query
         */
-      var highRange: js.UndefOr[String] = js.native
+      var highRange: js.UndefOr[String] = js.undefined
       
       /**
         * Sets the user interface language.
         */
-      var hl: js.UndefOr[String] = js.native
+      var hl: js.UndefOr[String] = js.undefined
       
       /**
         * Appends the extra query terms to the query.
         */
-      var hq: js.UndefOr[String] = js.native
+      var hq: js.UndefOr[String] = js.undefined
       
       /**
         * Returns black and white, grayscale, or color images: mono, gray, and
         * color.
         */
-      var imgColorType: js.UndefOr[String] = js.native
+      var imgColorType: js.UndefOr[String] = js.undefined
       
       /**
         * Returns images of a specific dominant color: red, orange, yellow, green,
         * teal, blue, purple, pink, white, gray, black and brown.
         */
-      var imgDominantColor: js.UndefOr[String] = js.native
+      var imgDominantColor: js.UndefOr[String] = js.undefined
       
       /**
         * Returns images of a specified size, where size can be one of: icon,
         * small, medium, large, xlarge, xxlarge, and huge.
         */
-      var imgSize: js.UndefOr[String] = js.native
+      var imgSize: js.UndefOr[String] = js.undefined
       
       /**
         * Returns images of a type, which can be one of: clipart, face, lineart,
         * news, and photo.
         */
-      var imgType: js.UndefOr[String] = js.native
+      var imgType: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies that all search results should contain a link to a particular
         * URL
         */
-      var linkSite: js.UndefOr[String] = js.native
+      var linkSite: js.UndefOr[String] = js.undefined
       
       /**
         * Creates a range in form as_nlo value..as_nhi value and attempts to append
         * it to query
         */
-      var lowRange: js.UndefOr[String] = js.native
+      var lowRange: js.UndefOr[String] = js.undefined
       
       /**
         * The language restriction for the search results
         */
-      var lr: js.UndefOr[String] = js.native
+      var lr: js.UndefOr[String] = js.undefined
       
       /**
         * Number of search results to return
         */
-      var num: js.UndefOr[Double] = js.native
+      var num: js.UndefOr[Double] = js.undefined
       
       /**
         * Provides additional search terms to check for in a document, where each
         * document in the search results must contain at least one of the
         * additional search terms
         */
-      var orTerms: js.UndefOr[String] = js.native
+      var orTerms: js.UndefOr[String] = js.undefined
       
       /**
         * Query
         */
-      var q: js.UndefOr[String] = js.native
+      var q: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies that all search results should be pages that are related to the
         * specified URL
         */
-      var relatedSite: js.UndefOr[String] = js.native
+      var relatedSite: js.UndefOr[String] = js.undefined
       
       /**
         * Filters based on licensing. Supported values include: cc_publicdomain,
         * cc_attribute, cc_sharealike, cc_noncommercial, cc_nonderived and
         * combinations of these.
         */
-      var rights: js.UndefOr[String] = js.native
+      var rights: js.UndefOr[String] = js.undefined
       
       /**
         * Search safety level
         */
-      var safe: js.UndefOr[String] = js.native
+      var safe: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies the search type: image.
         */
-      var searchType: js.UndefOr[String] = js.native
+      var searchType: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies all search results should be pages from a given site
         */
-      var siteSearch: js.UndefOr[String] = js.native
+      var siteSearch: js.UndefOr[String] = js.undefined
       
       /**
         * Controls whether to include or exclude results from the site named in the
         * as_sitesearch parameter
         */
-      var siteSearchFilter: js.UndefOr[String] = js.native
+      var siteSearchFilter: js.UndefOr[String] = js.undefined
       
       /**
         * The sort expression to apply to the results
         */
-      var sort: js.UndefOr[String] = js.native
+      var sort: js.UndefOr[String] = js.undefined
       
       /**
         * The index of the first result to return
         */
-      var start: js.UndefOr[Double] = js.native
+      var start: js.UndefOr[Double] = js.undefined
     }
     object ParamsResourceCseList {
       
@@ -598,183 +599,184 @@ object customsearchV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceCseSiterestrictList extends StandardParameters {
+    trait ParamsResourceCseSiterestrictList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Turns off the translation between zh-CN and zh-TW.
         */
-      var c2coff: js.UndefOr[String] = js.native
+      var c2coff: js.UndefOr[String] = js.undefined
       
       /**
         * Country restrict(s).
         */
-      var cr: js.UndefOr[String] = js.native
+      var cr: js.UndefOr[String] = js.undefined
       
       /**
         * The custom search engine ID to scope this search query
         */
-      var cx: js.UndefOr[String] = js.native
+      var cx: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies all search results are from a time period
         */
-      var dateRestrict: js.UndefOr[String] = js.native
+      var dateRestrict: js.UndefOr[String] = js.undefined
       
       /**
         * Identifies a phrase that all documents in the search results must contain
         */
-      var exactTerms: js.UndefOr[String] = js.native
+      var exactTerms: js.UndefOr[String] = js.undefined
       
       /**
         * Identifies a word or phrase that should not appear in any documents in
         * the search results
         */
-      var excludeTerms: js.UndefOr[String] = js.native
+      var excludeTerms: js.UndefOr[String] = js.undefined
       
       /**
         * Returns images of a specified type. Some of the allowed values are: bmp,
         * gif, png, jpg, svg, pdf, ...
         */
-      var fileType: js.UndefOr[String] = js.native
+      var fileType: js.UndefOr[String] = js.undefined
       
       /**
         * Controls turning on or off the duplicate content filter.
         */
-      var filter: js.UndefOr[String] = js.native
+      var filter: js.UndefOr[String] = js.undefined
       
       /**
         * Geolocation of end user.
         */
-      var gl: js.UndefOr[String] = js.native
+      var gl: js.UndefOr[String] = js.undefined
       
       /**
         * The local Google domain to use to perform the search.
         */
-      var googlehost: js.UndefOr[String] = js.native
+      var googlehost: js.UndefOr[String] = js.undefined
       
       /**
         * Creates a range in form as_nlo value..as_nhi value and attempts to append
         * it to query
         */
-      var highRange: js.UndefOr[String] = js.native
+      var highRange: js.UndefOr[String] = js.undefined
       
       /**
         * Sets the user interface language.
         */
-      var hl: js.UndefOr[String] = js.native
+      var hl: js.UndefOr[String] = js.undefined
       
       /**
         * Appends the extra query terms to the query.
         */
-      var hq: js.UndefOr[String] = js.native
+      var hq: js.UndefOr[String] = js.undefined
       
       /**
         * Returns black and white, grayscale, or color images: mono, gray, and
         * color.
         */
-      var imgColorType: js.UndefOr[String] = js.native
+      var imgColorType: js.UndefOr[String] = js.undefined
       
       /**
         * Returns images of a specific dominant color: red, orange, yellow, green,
         * teal, blue, purple, pink, white, gray, black and brown.
         */
-      var imgDominantColor: js.UndefOr[String] = js.native
+      var imgDominantColor: js.UndefOr[String] = js.undefined
       
       /**
         * Returns images of a specified size, where size can be one of: icon,
         * small, medium, large, xlarge, xxlarge, and huge.
         */
-      var imgSize: js.UndefOr[String] = js.native
+      var imgSize: js.UndefOr[String] = js.undefined
       
       /**
         * Returns images of a type, which can be one of: clipart, face, lineart,
         * news, and photo.
         */
-      var imgType: js.UndefOr[String] = js.native
+      var imgType: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies that all search results should contain a link to a particular
         * URL
         */
-      var linkSite: js.UndefOr[String] = js.native
+      var linkSite: js.UndefOr[String] = js.undefined
       
       /**
         * Creates a range in form as_nlo value..as_nhi value and attempts to append
         * it to query
         */
-      var lowRange: js.UndefOr[String] = js.native
+      var lowRange: js.UndefOr[String] = js.undefined
       
       /**
         * The language restriction for the search results
         */
-      var lr: js.UndefOr[String] = js.native
+      var lr: js.UndefOr[String] = js.undefined
       
       /**
         * Number of search results to return
         */
-      var num: js.UndefOr[Double] = js.native
+      var num: js.UndefOr[Double] = js.undefined
       
       /**
         * Provides additional search terms to check for in a document, where each
         * document in the search results must contain at least one of the
         * additional search terms
         */
-      var orTerms: js.UndefOr[String] = js.native
+      var orTerms: js.UndefOr[String] = js.undefined
       
       /**
         * Query
         */
-      var q: js.UndefOr[String] = js.native
+      var q: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies that all search results should be pages that are related to the
         * specified URL
         */
-      var relatedSite: js.UndefOr[String] = js.native
+      var relatedSite: js.UndefOr[String] = js.undefined
       
       /**
         * Filters based on licensing. Supported values include: cc_publicdomain,
         * cc_attribute, cc_sharealike, cc_noncommercial, cc_nonderived and
         * combinations of these.
         */
-      var rights: js.UndefOr[String] = js.native
+      var rights: js.UndefOr[String] = js.undefined
       
       /**
         * Search safety level
         */
-      var safe: js.UndefOr[String] = js.native
+      var safe: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies the search type: image.
         */
-      var searchType: js.UndefOr[String] = js.native
+      var searchType: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies all search results should be pages from a given site
         */
-      var siteSearch: js.UndefOr[String] = js.native
+      var siteSearch: js.UndefOr[String] = js.undefined
       
       /**
         * Controls whether to include or exclude results from the site named in the
         * as_sitesearch parameter
         */
-      var siteSearchFilter: js.UndefOr[String] = js.native
+      var siteSearchFilter: js.UndefOr[String] = js.undefined
       
       /**
         * The sort expression to apply to the results
         */
-      var sort: js.UndefOr[String] = js.native
+      var sort: js.UndefOr[String] = js.undefined
       
       /**
         * The index of the first result to return
         */
-      var start: js.UndefOr[Double] = js.native
+      var start: js.UndefOr[Double] = js.undefined
     }
     object ParamsResourceCseSiterestrictList {
       
@@ -981,12 +983,11 @@ object customsearchV1Mod {
       }
     }
     
-    @js.native
     trait SchemaContext extends StObject {
       
-      var facets: js.UndefOr[js.Array[js.Array[Anchor]]] = js.native
+      var facets: js.UndefOr[js.Array[js.Array[Anchor]]] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object SchemaContext {
       
@@ -1016,20 +1017,19 @@ object customsearchV1Mod {
       }
     }
     
-    @js.native
     trait SchemaPromotion extends StObject {
       
-      var bodyLines: js.UndefOr[js.Array[HtmlTitle]] = js.native
+      var bodyLines: js.UndefOr[js.Array[HtmlTitle]] = js.undefined
       
-      var displayLink: js.UndefOr[String] = js.native
+      var displayLink: js.UndefOr[String] = js.undefined
       
-      var htmlTitle: js.UndefOr[String] = js.native
+      var htmlTitle: js.UndefOr[String] = js.undefined
       
-      var image: js.UndefOr[HeightSource] = js.native
+      var image: js.UndefOr[HeightSource] = js.undefined
       
-      var link: js.UndefOr[String] = js.native
+      var link: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object SchemaPromotion {
       
@@ -1083,80 +1083,79 @@ object customsearchV1Mod {
       }
     }
     
-    @js.native
     trait SchemaQuery extends StObject {
       
-      var count: js.UndefOr[Double] = js.native
+      var count: js.UndefOr[Double] = js.undefined
       
-      var cr: js.UndefOr[String] = js.native
+      var cr: js.UndefOr[String] = js.undefined
       
-      var cx: js.UndefOr[String] = js.native
+      var cx: js.UndefOr[String] = js.undefined
       
-      var dateRestrict: js.UndefOr[String] = js.native
+      var dateRestrict: js.UndefOr[String] = js.undefined
       
-      var disableCnTwTranslation: js.UndefOr[String] = js.native
+      var disableCnTwTranslation: js.UndefOr[String] = js.undefined
       
-      var exactTerms: js.UndefOr[String] = js.native
+      var exactTerms: js.UndefOr[String] = js.undefined
       
-      var excludeTerms: js.UndefOr[String] = js.native
+      var excludeTerms: js.UndefOr[String] = js.undefined
       
-      var fileType: js.UndefOr[String] = js.native
+      var fileType: js.UndefOr[String] = js.undefined
       
-      var filter: js.UndefOr[String] = js.native
+      var filter: js.UndefOr[String] = js.undefined
       
-      var gl: js.UndefOr[String] = js.native
+      var gl: js.UndefOr[String] = js.undefined
       
-      var googleHost: js.UndefOr[String] = js.native
+      var googleHost: js.UndefOr[String] = js.undefined
       
-      var highRange: js.UndefOr[String] = js.native
+      var highRange: js.UndefOr[String] = js.undefined
       
-      var hl: js.UndefOr[String] = js.native
+      var hl: js.UndefOr[String] = js.undefined
       
-      var hq: js.UndefOr[String] = js.native
+      var hq: js.UndefOr[String] = js.undefined
       
-      var imgColorType: js.UndefOr[String] = js.native
+      var imgColorType: js.UndefOr[String] = js.undefined
       
-      var imgDominantColor: js.UndefOr[String] = js.native
+      var imgDominantColor: js.UndefOr[String] = js.undefined
       
-      var imgSize: js.UndefOr[String] = js.native
+      var imgSize: js.UndefOr[String] = js.undefined
       
-      var imgType: js.UndefOr[String] = js.native
+      var imgType: js.UndefOr[String] = js.undefined
       
-      var inputEncoding: js.UndefOr[String] = js.native
+      var inputEncoding: js.UndefOr[String] = js.undefined
       
-      var language: js.UndefOr[String] = js.native
+      var language: js.UndefOr[String] = js.undefined
       
-      var linkSite: js.UndefOr[String] = js.native
+      var linkSite: js.UndefOr[String] = js.undefined
       
-      var lowRange: js.UndefOr[String] = js.native
+      var lowRange: js.UndefOr[String] = js.undefined
       
-      var orTerms: js.UndefOr[String] = js.native
+      var orTerms: js.UndefOr[String] = js.undefined
       
-      var outputEncoding: js.UndefOr[String] = js.native
+      var outputEncoding: js.UndefOr[String] = js.undefined
       
-      var relatedSite: js.UndefOr[String] = js.native
+      var relatedSite: js.UndefOr[String] = js.undefined
       
-      var rights: js.UndefOr[String] = js.native
+      var rights: js.UndefOr[String] = js.undefined
       
-      var safe: js.UndefOr[String] = js.native
+      var safe: js.UndefOr[String] = js.undefined
       
-      var searchTerms: js.UndefOr[String] = js.native
+      var searchTerms: js.UndefOr[String] = js.undefined
       
-      var searchType: js.UndefOr[String] = js.native
+      var searchType: js.UndefOr[String] = js.undefined
       
-      var siteSearch: js.UndefOr[String] = js.native
+      var siteSearch: js.UndefOr[String] = js.undefined
       
-      var siteSearchFilter: js.UndefOr[String] = js.native
+      var siteSearchFilter: js.UndefOr[String] = js.undefined
       
-      var sort: js.UndefOr[String] = js.native
+      var sort: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var startPage: js.UndefOr[Double] = js.native
+      var startPage: js.UndefOr[Double] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var totalResults: js.UndefOr[String] = js.native
+      var totalResults: js.UndefOr[String] = js.undefined
     }
     object SchemaQuery {
       
@@ -1387,38 +1386,37 @@ object customsearchV1Mod {
       }
     }
     
-    @js.native
     trait SchemaResult extends StObject {
       
-      var cacheId: js.UndefOr[String] = js.native
+      var cacheId: js.UndefOr[String] = js.undefined
       
-      var displayLink: js.UndefOr[String] = js.native
+      var displayLink: js.UndefOr[String] = js.undefined
       
-      var fileFormat: js.UndefOr[String] = js.native
+      var fileFormat: js.UndefOr[String] = js.undefined
       
-      var formattedUrl: js.UndefOr[String] = js.native
+      var formattedUrl: js.UndefOr[String] = js.undefined
       
-      var htmlFormattedUrl: js.UndefOr[String] = js.native
+      var htmlFormattedUrl: js.UndefOr[String] = js.undefined
       
-      var htmlSnippet: js.UndefOr[String] = js.native
+      var htmlSnippet: js.UndefOr[String] = js.undefined
       
-      var htmlTitle: js.UndefOr[String] = js.native
+      var htmlTitle: js.UndefOr[String] = js.undefined
       
-      var image: js.UndefOr[ByteSize] = js.native
+      var image: js.UndefOr[ByteSize] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var labels: js.UndefOr[js.Array[Labelwithop]] = js.native
+      var labels: js.UndefOr[js.Array[Labelwithop]] = js.undefined
       
-      var link: js.UndefOr[String] = js.native
+      var link: js.UndefOr[String] = js.undefined
       
-      var mime: js.UndefOr[String] = js.native
+      var mime: js.UndefOr[String] = js.undefined
       
-      var pagemap: js.UndefOr[StringDictionary[js.Array[StringDictionary[_]]]] = js.native
+      var pagemap: js.UndefOr[StringDictionary[js.Array[StringDictionary[js.Any]]]] = js.undefined
       
-      var snippet: js.UndefOr[String] = js.native
+      var snippet: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object SchemaResult {
       
@@ -1507,7 +1505,7 @@ object customsearchV1Mod {
         def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
         
         @scala.inline
-        def setPagemap(value: StringDictionary[js.Array[StringDictionary[_]]]): Self = StObject.set(x, "pagemap", value.asInstanceOf[js.Any])
+        def setPagemap(value: StringDictionary[js.Array[StringDictionary[js.Any]]]): Self = StObject.set(x, "pagemap", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setPagemapUndefined: Self = StObject.set(x, "pagemap", js.undefined)
@@ -1526,24 +1524,23 @@ object customsearchV1Mod {
       }
     }
     
-    @js.native
     trait SchemaSearch extends StObject {
       
-      var context: js.UndefOr[SchemaContext] = js.native
+      var context: js.UndefOr[SchemaContext] = js.undefined
       
-      var items: js.UndefOr[js.Array[SchemaResult]] = js.native
+      var items: js.UndefOr[js.Array[SchemaResult]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var promotions: js.UndefOr[js.Array[SchemaPromotion]] = js.native
+      var promotions: js.UndefOr[js.Array[SchemaPromotion]] = js.undefined
       
-      var queries: js.UndefOr[StringDictionary[js.Array[SchemaQuery]]] = js.native
+      var queries: js.UndefOr[StringDictionary[js.Array[SchemaQuery]]] = js.undefined
       
-      var searchInformation: js.UndefOr[FormattedSearchTime] = js.native
+      var searchInformation: js.UndefOr[FormattedSearchTime] = js.undefined
       
-      var spelling: js.UndefOr[CorrectedQuery] = js.native
+      var spelling: js.UndefOr[CorrectedQuery] = js.undefined
       
-      var url: js.UndefOr[Template] = js.native
+      var url: js.UndefOr[Template] = js.undefined
     }
     object SchemaSearch {
       
@@ -1612,46 +1609,45 @@ object customsearchV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

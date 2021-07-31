@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaFile extends StObject {
   
   /** Bitrate of the video file, in Kbps. Can be used to filter the response of the creatives.list method. */
-  var bitrate: js.UndefOr[String] = js.native
+  var bitrate: js.UndefOr[String] = js.undefined
   
   /** The MIME type of this media file. Can be used to filter the response of the creatives.list method. */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
 }
 object MediaFile {
   

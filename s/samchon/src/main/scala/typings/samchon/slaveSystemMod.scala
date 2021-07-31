@@ -5,7 +5,6 @@ import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slaveSystemMod {
@@ -15,7 +14,9 @@ object slaveSystemMod {
   /**
     * Default Constructor.
     */
-  abstract class SlaveSystem () extends IProtocol {
+  abstract class SlaveSystem ()
+    extends StObject
+       with IProtocol {
     
     var _Complete_process: js.Any = js.native
     
@@ -28,5 +29,25 @@ object slaveSystemMod {
       * @hidden
       */
     var communicator_ : ICommunicator = js.native
+    
+    /**
+      * Sending message.
+      *
+      * Sends message to related system or shifts the responsibility to chain.
+      *
+      * @param invoke Invoke message to send
+      */
+    /* CompleteClass */
+    override def replyData(invoke: Invoke): Unit = js.native
+    
+    /**
+      * Handling replied message.
+      *
+      * Handles replied message or shifts the responsibility to chain.
+      *
+      * @param invoke An {@link Invoke} message has received.
+      */
+    /* CompleteClass */
+    override def sendData(invoke: Invoke): Unit = js.native
   }
 }

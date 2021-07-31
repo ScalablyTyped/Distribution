@@ -4,75 +4,73 @@ import typings.maximMazurokGapiClientAnalytics.anon.Effective
 import typings.maximMazurokGapiClientAnalytics.anon.Href
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Webproperty extends StObject {
   
   /** Account ID to which this web property belongs. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Child link for this web property. Points to the list of views (profiles) for this web property. */
-  var childLink: js.UndefOr[Href] = js.native
+  var childLink: js.UndefOr[Href] = js.undefined
   
   /** Time this web property was created. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * Set to true to reset the retention period of the user identifier with each new event from that user (thus setting the expiration date to current time plus retention period).
     * Set to false to delete data associated with the user identifier automatically after the rentention period.
     * This property cannot be set on insert.
     */
-  var dataRetentionResetOnNewActivity: js.UndefOr[Boolean] = js.native
+  var dataRetentionResetOnNewActivity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The length of time for which user and event data is retained.
     * This property cannot be set on insert.
     */
-  var dataRetentionTtl: js.UndefOr[String] = js.native
+  var dataRetentionTtl: js.UndefOr[String] = js.undefined
   
   /** Default view (profile) ID. */
-  var defaultProfileId: js.UndefOr[String] = js.native
+  var defaultProfileId: js.UndefOr[String] = js.undefined
   
   /** Web property ID of the form UA-XXXXX-YY. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The industry vertical/category selected for this web property. */
-  var industryVertical: js.UndefOr[String] = js.native
+  var industryVertical: js.UndefOr[String] = js.undefined
   
   /** Internal ID for this web property. */
-  var internalWebPropertyId: js.UndefOr[String] = js.native
+  var internalWebPropertyId: js.UndefOr[String] = js.undefined
   
   /** Resource type for Analytics WebProperty. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Level for this web property. Possible values are STANDARD or PREMIUM. */
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
   
   /** Name of this web property. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Parent link for this web property. Points to the account to which this web property belongs. */
-  var parentLink: js.UndefOr[Href] = js.native
+  var parentLink: js.UndefOr[Href] = js.undefined
   
   /** Permissions the user has for this web property. */
-  var permissions: js.UndefOr[Effective] = js.native
+  var permissions: js.UndefOr[Effective] = js.undefined
   
   /** View (Profile) count for this web property. */
-  var profileCount: js.UndefOr[Double] = js.native
+  var profileCount: js.UndefOr[Double] = js.undefined
   
   /** Link for this web property. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** Indicates whether this web property is starred or not. */
-  var starred: js.UndefOr[Boolean] = js.native
+  var starred: js.UndefOr[Boolean] = js.undefined
   
   /** Time this web property was last modified. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /** Website url for this web property. */
-  var websiteUrl: js.UndefOr[String] = js.native
+  var websiteUrl: js.UndefOr[String] = js.undefined
 }
 object Webproperty {
   

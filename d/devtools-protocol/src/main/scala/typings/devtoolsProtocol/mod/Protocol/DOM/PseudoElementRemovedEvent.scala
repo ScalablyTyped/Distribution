@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PseudoElementRemovedEvent extends StObject {
   
   /**
     * Pseudo element's parent element id.
     */
-  var parentId: NodeId = js.native
+  var parentId: NodeId
   
   /**
     * The removed pseudo element id.
     */
-  var pseudoElementId: NodeId = js.native
+  var pseudoElementId: NodeId
 }
 object PseudoElementRemovedEvent {
   

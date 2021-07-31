@@ -3,19 +3,17 @@ package typings.phantom.anon
 import typings.phantom.mod.winstonLeveledLogMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Debug extends StObject {
   
-  var debug: js.UndefOr[winstonLeveledLogMethod] = js.native
+  var debug: js.UndefOr[winstonLeveledLogMethod] = js.undefined
   
-  var error: js.UndefOr[winstonLeveledLogMethod] = js.native
+  var error: js.UndefOr[winstonLeveledLogMethod] = js.undefined
   
-  var info: js.UndefOr[winstonLeveledLogMethod] = js.native
+  var info: js.UndefOr[winstonLeveledLogMethod] = js.undefined
   
-  var warn: js.UndefOr[winstonLeveledLogMethod] = js.native
+  var warn: js.UndefOr[winstonLeveledLogMethod] = js.undefined
 }
 object Debug {
   

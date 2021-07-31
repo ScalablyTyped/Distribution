@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchLoggingOptionDescription extends StObject {
   
   /**
     * ID of the CloudWatch logging option description.
     */
-  var CloudWatchLoggingOptionId: js.UndefOr[Id] = js.native
+  var CloudWatchLoggingOptionId: js.UndefOr[Id] = js.undefined
   
   /**
     * ARN of the CloudWatch log to receive application messages.
     */
-  var LogStreamARN: typings.awsSdk.kinesisanalyticsMod.LogStreamARN = js.native
+  var LogStreamARN: typings.awsSdk.kinesisanalyticsMod.LogStreamARN
   
   /**
     * IAM ARN of the role to use to send application messages. Note: To write application messages to CloudWatch, the IAM role used must have the PutLogEvents policy action enabled.
     */
-  var RoleARN: typings.awsSdk.kinesisanalyticsMod.RoleARN = js.native
+  var RoleARN: typings.awsSdk.kinesisanalyticsMod.RoleARN
 }
 object CloudWatchLoggingOptionDescription {
   

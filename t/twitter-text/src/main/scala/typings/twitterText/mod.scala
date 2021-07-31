@@ -6,220 +6,177 @@ import typings.twitterText.anon.ExtractUrlsWithoutProtocol
 import typings.twitterText.anon.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("twitter-text", "autoLink")
+  @JSImport("twitter-text", JSImport.Namespace)
   @js.native
-  def autoLink(text: String): String = js.native
-  @JSImport("twitter-text", "autoLink")
-  @js.native
-  def autoLink(text: String, options: AutoLinkOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("twitter-text", "autoLinkCashtags")
-  @js.native
-  def autoLinkCashtags(text: String): String = js.native
-  @JSImport("twitter-text", "autoLinkCashtags")
-  @js.native
-  def autoLinkCashtags(text: String, options: AutoLinkOptions): String = js.native
+  @scala.inline
+  def autoLink(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLink")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def autoLink(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLink")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("twitter-text", "autoLinkEntities")
-  @js.native
-  def autoLinkEntities(text: String, entities: js.Array[EntityWithIndices]): String = js.native
-  @JSImport("twitter-text", "autoLinkEntities")
-  @js.native
-  def autoLinkEntities(text: String, entities: js.Array[EntityWithIndices], options: AutoLinkOptions): String = js.native
+  @scala.inline
+  def autoLinkCashtags(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkCashtags")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def autoLinkCashtags(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkCashtags")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("twitter-text", "autoLinkHashtags")
-  @js.native
-  def autoLinkHashtags(text: String): String = js.native
-  @JSImport("twitter-text", "autoLinkHashtags")
-  @js.native
-  def autoLinkHashtags(text: String, options: AutoLinkOptions): String = js.native
+  @scala.inline
+  def autoLinkEntities(text: String, entities: js.Array[EntityWithIndices]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkEntities")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def autoLinkEntities(text: String, entities: js.Array[EntityWithIndices], options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkEntities")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("twitter-text", "autoLinkUrlsCustom")
-  @js.native
-  def autoLinkUrlsCustom(text: String): String = js.native
-  @JSImport("twitter-text", "autoLinkUrlsCustom")
-  @js.native
-  def autoLinkUrlsCustom(text: String, options: AutoLinkOptions): String = js.native
+  @scala.inline
+  def autoLinkHashtags(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkHashtags")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def autoLinkHashtags(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkHashtags")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("twitter-text", "autoLinkUsernamesOrLists")
-  @js.native
-  def autoLinkUsernamesOrLists(text: String): String = js.native
-  @JSImport("twitter-text", "autoLinkUsernamesOrLists")
-  @js.native
-  def autoLinkUsernamesOrLists(text: String, options: AutoLinkOptions): String = js.native
+  @scala.inline
+  def autoLinkUrlsCustom(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUrlsCustom")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def autoLinkUrlsCustom(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUrlsCustom")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("twitter-text", "convertUnicodeIndices")
-  @js.native
-  def convertUnicodeIndices(text: String, entities: js.Array[EntityWithIndices]): Unit = js.native
-  @JSImport("twitter-text", "convertUnicodeIndices")
-  @js.native
-  def convertUnicodeIndices(text: String, entities: js.Array[EntityWithIndices], indicesInUTF16: Boolean): Unit = js.native
+  @scala.inline
+  def autoLinkUsernamesOrLists(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUsernamesOrLists")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def autoLinkUsernamesOrLists(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUsernamesOrLists")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("twitter-text", "extractCashtags")
-  @js.native
-  def extractCashtags(text: String): js.Array[String] = js.native
+  @scala.inline
+  def convertUnicodeIndices(text: String, entities: js.Array[EntityWithIndices]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnicodeIndices")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def convertUnicodeIndices(text: String, entities: js.Array[EntityWithIndices], indicesInUTF16: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnicodeIndices")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any], indicesInUTF16.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("twitter-text", "extractCashtagsWithIndices")
-  @js.native
-  def extractCashtagsWithIndices(text: String): js.Array[CashtagWithIndices] = js.native
+  @scala.inline
+  def extractCashtags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractCashtags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("twitter-text", "extractEntitiesWithIndices")
-  @js.native
-  def extractEntitiesWithIndices(text: String): js.Array[EntityWithIndices] = js.native
+  @scala.inline
+  def extractCashtagsWithIndices(text: String): js.Array[CashtagWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractCashtagsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[CashtagWithIndices]]
   
-  @JSImport("twitter-text", "extractHashtags")
-  @js.native
-  def extractHashtags(text: String): js.Array[String] = js.native
+  @scala.inline
+  def extractEntitiesWithIndices(text: String): js.Array[EntityWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractEntitiesWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[EntityWithIndices]]
   
-  @JSImport("twitter-text", "extractHashtagsWithIndices")
-  @js.native
-  def extractHashtagsWithIndices(text: String): js.Array[HashtagWithIndices] = js.native
+  @scala.inline
+  def extractHashtags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHashtags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("twitter-text", "extractMentions")
-  @js.native
-  def extractMentions(text: String): js.Array[String] = js.native
+  @scala.inline
+  def extractHashtagsWithIndices(text: String): js.Array[HashtagWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHashtagsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[HashtagWithIndices]]
   
-  @JSImport("twitter-text", "extractMentionsOrListsWithIndices")
-  @js.native
-  def extractMentionsOrListsWithIndices(text: String): js.Array[MentionOrListWithIndices] = js.native
+  @scala.inline
+  def extractMentions(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMentions")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("twitter-text", "extractMentionsWithIndices")
-  @js.native
-  def extractMentionsWithIndices(text: String): js.Array[MentionWithIndices] = js.native
+  @scala.inline
+  def extractMentionsOrListsWithIndices(text: String): js.Array[MentionOrListWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMentionsOrListsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[MentionOrListWithIndices]]
   
-  @JSImport("twitter-text", "extractReplies")
-  @js.native
-  def extractReplies(text: String): js.Array[String] = js.native
+  @scala.inline
+  def extractMentionsWithIndices(text: String): js.Array[MentionWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMentionsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[MentionWithIndices]]
   
-  @JSImport("twitter-text", "extractUrls")
-  @js.native
-  def extractUrls(text: String): js.Array[String] = js.native
+  @scala.inline
+  def extractReplies(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractReplies")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("twitter-text", "extractUrlsWithIndices")
-  @js.native
-  def extractUrlsWithIndices(text: String): js.Array[UrlWithIndices] = js.native
-  @JSImport("twitter-text", "extractUrlsWithIndices")
-  @js.native
-  def extractUrlsWithIndices(text: String, options: ExtractUrlsWithoutProtocol): js.Array[UrlWithIndices] = js.native
+  @scala.inline
+  def extractUrls(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrls")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("twitter-text", "getTweetLength")
-  @js.native
-  def getTweetLength(text: String): Double = js.native
-  @JSImport("twitter-text", "getTweetLength")
-  @js.native
-  def getTweetLength(text: String, options: TweetLengthOptions): Double = js.native
+  @scala.inline
+  def extractUrlsWithIndices(text: String): js.Array[UrlWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[UrlWithIndices]]
+  @scala.inline
+  def extractUrlsWithIndices(text: String, options: ExtractUrlsWithoutProtocol): js.Array[UrlWithIndices] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlsWithIndices")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[UrlWithIndices]]
   
-  @JSImport("twitter-text", "getUnicodeTextLength")
-  @js.native
-  def getUnicodeTextLength(text: String): Double = js.native
+  @scala.inline
+  def getTweetLength(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTweetLength")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getTweetLength(text: String, options: TweetLengthOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTweetLength")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("twitter-text", "hasInvalidCharacters")
-  @js.native
-  def hasInvalidCharacters(text: String): Boolean = js.native
+  @scala.inline
+  def getUnicodeTextLength(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnicodeTextLength")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("twitter-text", "hitHighlight")
-  @js.native
-  def hitHighlight(text: String): String = js.native
-  @JSImport("twitter-text", "hitHighlight")
-  @js.native
-  def hitHighlight(text: String, hits: js.UndefOr[scala.Nothing], options: Tag): String = js.native
-  @JSImport("twitter-text", "hitHighlight")
-  @js.native
-  def hitHighlight(text: String, hits: js.Array[js.Array[Double]]): String = js.native
-  @JSImport("twitter-text", "hitHighlight")
-  @js.native
-  def hitHighlight(text: String, hits: js.Array[js.Array[Double]], options: Tag): String = js.native
+  @scala.inline
+  def hasInvalidCharacters(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInvalidCharacters")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("twitter-text", "htmlEscape")
-  @js.native
-  def htmlEscape(text: String): String = js.native
+  @scala.inline
+  def hitHighlight(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hitHighlight(text: String, hits: js.Array[js.Array[Double]]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any], hits.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hitHighlight(text: String, hits: js.Array[js.Array[Double]], options: Tag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any], hits.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hitHighlight(text: String, hits: Unit, options: Tag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any], hits.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("twitter-text", "isInvalidTweet")
-  @js.native
-  def isInvalidTweet(text: String): String = js.native
+  @scala.inline
+  def htmlEscape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlEscape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("twitter-text", "isValidHashtag")
-  @js.native
-  def isValidHashtag(hashtag: String): Boolean = js.native
+  @scala.inline
+  def isInvalidTweet(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isInvalidTweet")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("twitter-text", "isValidList")
-  @js.native
-  def isValidList(usernameList: String): Boolean = js.native
+  @scala.inline
+  def isValidHashtag(hashtag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidHashtag")(hashtag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("twitter-text", "isValidUrl")
-  @js.native
-  def isValidUrl(url: String, unicodeDomains: Boolean, requireProtocol: Boolean): Boolean = js.native
+  @scala.inline
+  def isValidList(usernameList: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidList")(usernameList.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("twitter-text", "isValidUsername")
-  @js.native
-  def isValidUsername(username: String): Boolean = js.native
+  @scala.inline
+  def isValidUrl(url: String, unicodeDomains: Boolean, requireProtocol: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidUrl")(url.asInstanceOf[js.Any], unicodeDomains.asInstanceOf[js.Any], requireProtocol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("twitter-text", "modifyIndicesFromUTF16ToUnicode")
-  @js.native
-  def modifyIndicesFromUTF16ToUnicode[I](i: I): I = js.native
+  @scala.inline
+  def isValidUsername(username: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidUsername")(username.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("twitter-text", "modifyIndicesFromUnicodeToUTF16")
-  @js.native
-  def modifyIndicesFromUnicodeToUTF16[I](i: I): I = js.native
+  @scala.inline
+  def modifyIndicesFromUTF16ToUnicode[I](i: I): I = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyIndicesFromUTF16ToUnicode")(i.asInstanceOf[js.Any]).asInstanceOf[I]
   
-  @JSImport("twitter-text", "parseTweet")
-  @js.native
-  def parseTweet(text: String): ParsedTweet = js.native
-  @JSImport("twitter-text", "parseTweet")
-  @js.native
-  def parseTweet(text: String, options: ParseTweetOptions): ParsedTweet = js.native
+  @scala.inline
+  def modifyIndicesFromUnicodeToUTF16[I](i: I): I = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyIndicesFromUnicodeToUTF16")(i.asInstanceOf[js.Any]).asInstanceOf[I]
   
-  @JSImport("twitter-text", "splitTags")
-  @js.native
-  def splitTags(text: String): js.Array[String] = js.native
+  @scala.inline
+  def parseTweet(text: String): ParsedTweet = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTweet")(text.asInstanceOf[js.Any]).asInstanceOf[ParsedTweet]
+  @scala.inline
+  def parseTweet(text: String, options: ParseTweetOptions): ParsedTweet = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTweet")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedTweet]
+  
+  @scala.inline
+  def splitTags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitTags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   type Attributes = StringDictionary[String | Null]
   
-  @js.native
   trait AutoLinkOptions extends StObject {
     
-    var cashtagClass: js.UndefOr[String] = js.native
+    var cashtagClass: js.UndefOr[String] = js.undefined
     
-    var cashtagUrlBase: js.UndefOr[String] = js.native
+    var cashtagUrlBase: js.UndefOr[String] = js.undefined
     
-    var hashtagClass: js.UndefOr[String] = js.native
+    var hashtagClass: js.UndefOr[String] = js.undefined
     
-    var hashtagUrlBase: js.UndefOr[String] = js.native
+    var hashtagUrlBase: js.UndefOr[String] = js.undefined
     
-    var htmlAttrs: js.UndefOr[Attributes] = js.native
+    var htmlAttrs: js.UndefOr[Attributes] = js.undefined
     
-    var htmlEscapeNonEntities: js.UndefOr[Boolean] = js.native
+    var htmlEscapeNonEntities: js.UndefOr[Boolean] = js.undefined
     
-    var invisibleTagAttrs: js.UndefOr[String] = js.native
+    var invisibleTagAttrs: js.UndefOr[String] = js.undefined
     
-    var linkAttributeBlock: js.UndefOr[js.Function2[/* entity */ EntityWithIndices, /* attributes */ Attributes, Unit]] = js.native
+    var linkAttributeBlock: js.UndefOr[js.Function2[/* entity */ EntityWithIndices, /* attributes */ Attributes, Unit]] = js.undefined
     
-    var linkTextBlock: js.UndefOr[js.Function2[/* entity */ EntityWithIndices, /* text */ String, Unit]] = js.native
+    var linkTextBlock: js.UndefOr[js.Function2[/* entity */ EntityWithIndices, /* text */ String, Unit]] = js.undefined
     
-    var listClass: js.UndefOr[String] = js.native
+    var listClass: js.UndefOr[String] = js.undefined
     
-    var listUrlBase: js.UndefOr[String] = js.native
+    var listUrlBase: js.UndefOr[String] = js.undefined
     
-    var suppressNoFollow: js.UndefOr[Boolean] = js.native
+    var suppressNoFollow: js.UndefOr[Boolean] = js.undefined
     
-    var symbolTag: js.UndefOr[String] = js.native
+    var symbolTag: js.UndefOr[String] = js.undefined
     
-    var targetBlank: js.UndefOr[Boolean] = js.native
+    var targetBlank: js.UndefOr[Boolean] = js.undefined
     
-    var textWithSymbolTag: js.UndefOr[String] = js.native
+    var textWithSymbolTag: js.UndefOr[String] = js.undefined
     
-    var urlEntities: js.UndefOr[js.Array[UrlEntity]] = js.native
+    var urlEntities: js.UndefOr[js.Array[UrlEntity]] = js.undefined
     
-    var usernameClass: js.UndefOr[String] = js.native
+    var usernameClass: js.UndefOr[String] = js.undefined
     
-    var usernameIncludeSymbol: js.UndefOr[Boolean] = js.native
+    var usernameIncludeSymbol: js.UndefOr[Boolean] = js.undefined
     
-    var usernameUrlBase: js.UndefOr[String] = js.native
+    var usernameUrlBase: js.UndefOr[String] = js.undefined
   }
   object AutoLinkOptions {
     
@@ -351,12 +308,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait CashtagWithIndices extends EntityWithIndices {
+  trait CashtagWithIndices
+    extends StObject
+       with EntityWithIndices {
     
-    var cashtag: String = js.native
+    var cashtag: String
     
-    var indices: js.Tuple2[Double, Double] = js.native
+    var indices: js.Tuple2[Double, Double]
   }
   object CashtagWithIndices {
     
@@ -418,12 +376,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait HashtagWithIndices extends EntityWithIndices {
+  trait HashtagWithIndices
+    extends StObject
+       with EntityWithIndices {
     
-    var hashtag: String = js.native
+    var hashtag: String
     
-    var indices: js.Tuple2[Double, Double] = js.native
+    var indices: js.Tuple2[Double, Double]
   }
   object HashtagWithIndices {
     
@@ -444,10 +403,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Indices extends StObject {
     
-    var indices: js.Tuple2[Double, Double] = js.native
+    var indices: js.Tuple2[Double, Double]
   }
   object Indices {
     
@@ -465,14 +423,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait MentionOrListWithIndices extends EntityWithIndices {
+  trait MentionOrListWithIndices
+    extends StObject
+       with EntityWithIndices {
     
-    var indices: js.Tuple2[Double, Double] = js.native
+    var indices: js.Tuple2[Double, Double]
     
-    var listSlug: String = js.native
+    var listSlug: String
     
-    var screenName: String = js.native
+    var screenName: String
   }
   object MentionOrListWithIndices {
     
@@ -496,12 +455,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait MentionWithIndices extends EntityWithIndices {
+  trait MentionWithIndices
+    extends StObject
+       with EntityWithIndices {
     
-    var indices: js.Tuple2[Double, Double] = js.native
+    var indices: js.Tuple2[Double, Double]
     
-    var screenName: String = js.native
+    var screenName: String
   }
   object MentionWithIndices {
     
@@ -522,20 +482,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseTweetOptions extends StObject {
     
-    var defaultWeight: js.UndefOr[Double] = js.native
+    var defaultWeight: js.UndefOr[Double] = js.undefined
     
-    var maxWeightedTweetLength: js.UndefOr[Double] = js.native
+    var maxWeightedTweetLength: js.UndefOr[Double] = js.undefined
     
-    var ranges: js.UndefOr[js.Array[End]] = js.native
+    var ranges: js.UndefOr[js.Array[End]] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var transformedURLLength: js.UndefOr[Double] = js.native
+    var transformedURLLength: js.UndefOr[Double] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object ParseTweetOptions {
     
@@ -589,22 +548,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedTweet extends StObject {
     
-    var displayRangeEnd: Double = js.native
+    var displayRangeEnd: Double
     
-    var displayRangeStart: Double = js.native
+    var displayRangeStart: Double
     
-    var permillage: Double = js.native
+    var permillage: Double
     
-    var valid: Boolean = js.native
+    var valid: Boolean
     
-    var validRangeEnd: Double = js.native
+    var validRangeEnd: Double
     
-    var validRangeStart: Double = js.native
+    var validRangeStart: Double
     
-    var weightedLength: Double = js.native
+    var weightedLength: Double
   }
   object ParsedTweet {
     
@@ -648,12 +606,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TweetLengthOptions extends StObject {
     
-    var short_url_length: Double = js.native
+    var short_url_length: Double
     
-    var short_url_length_https: Double = js.native
+    var short_url_length_https: Double
   }
   object TweetLengthOptions {
     
@@ -674,16 +631,15 @@ object mod {
     }
   }
   
-  @js.native
   trait UrlEntity extends StObject {
     
-    var display_url: String = js.native
+    var display_url: String
     
-    var expanded_url: String = js.native
+    var expanded_url: String
     
-    var indices: js.Tuple2[Double, Double] = js.native
+    var indices: js.Tuple2[Double, Double]
     
-    var url: String = js.native
+    var url: String
   }
   object UrlEntity {
     
@@ -710,12 +666,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait UrlWithIndices extends EntityWithIndices {
+  trait UrlWithIndices
+    extends StObject
+       with EntityWithIndices {
     
-    var indices: js.Tuple2[Double, Double] = js.native
+    var indices: js.Tuple2[Double, Double]
     
-    var url: String = js.native
+    var url: String
   }
   object UrlWithIndices {
     

@@ -2,24 +2,23 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rls {
   
-  @JSGlobal("KSR.rls.handle_notify")
+  @JSGlobal("KSR.rls")
   @js.native
-  def handleNotify(): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.rls.handle_subscribe")
-  @js.native
-  def handleSubscribe(): Double = js.native
+  @scala.inline
+  def handleNotify(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("handle_notify")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.rls.handle_subscribe_uri")
-  @js.native
-  def handleSubscribeUri(wuri: String): Double = js.native
+  @scala.inline
+  def handleSubscribe(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("handle_subscribe")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.rls.update_subs")
-  @js.native
-  def updateSubs(uri: String, event: String): Double = js.native
+  @scala.inline
+  def handleSubscribeUri(wuri: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("handle_subscribe_uri")(wuri.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def updateSubs(uri: String, event: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("update_subs")(uri.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -5,26 +5,25 @@ import typings.babelTypes.babelTypesStrings.minus
 import typings.babelTypes.babelTypesStrings.plus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait Variance_
-  extends Flow
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait Variance_
+  extends StObject
+     with BaseNode
+     with Flow {
   
-  var kind: minus | plus = js.native
+  var kind: minus | plus
   
   @JSName("type")
-  var type_Variance_ : Variance = js.native
+  var type_Variance_ : Variance
 }
 object Variance_ {
   
   @scala.inline
-  def apply(kind: minus | plus, `type`: Variance): Variance_ = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(kind: minus | plus): Variance_ = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("Variance")
     __obj.asInstanceOf[Variance_]
   }
   

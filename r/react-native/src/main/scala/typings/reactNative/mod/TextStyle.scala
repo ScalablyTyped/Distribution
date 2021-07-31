@@ -29,7 +29,6 @@ import typings.reactNative.reactNativeStrings.underline
 import typings.reactNative.reactNativeStrings.uppercase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -37,16 +36,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.reactNative.mod.ShadowStyleIOS because Already inherited
 - typings.reactNative.mod.FlexStyle because Already inherited
 - typings.reactNative.mod.ViewStyle because Already inherited
-- typings.reactNative.mod.TextStyleAndroid because var conflicts: alignContent, alignItems, alignSelf, aspectRatio, backfaceVisibility, backgroundColor, borderBottomColor, borderBottomEndRadius, borderBottomLeftRadius, borderBottomRightRadius, borderBottomStartRadius, borderBottomWidth, borderColor, borderEndColor, borderEndWidth, borderLeftColor, borderLeftWidth, borderRadius, borderRightColor, borderRightWidth, borderStartColor, borderStartWidth, borderStyle, borderTopColor, borderTopEndRadius, borderTopLeftRadius, borderTopRightRadius, borderTopStartRadius, borderTopWidth, borderWidth, bottom, direction, display, elevation, end, flex, flexBasis, flexDirection, flexGrow, flexShrink, flexWrap, height, justifyContent, left, margin, marginBottom, marginEnd, marginHorizontal, marginLeft, marginRight, marginStart, marginTop, marginVertical, maxHeight, maxWidth, minHeight, minWidth, opacity, overflow, padding, paddingBottom, paddingEnd, paddingHorizontal, paddingLeft, paddingRight, paddingStart, paddingTop, paddingVertical, position, right, rotation, scaleX, scaleY, shadowColor, shadowOffset, shadowOpacity, shadowRadius, start, testID, top, transform, transformMatrix, translateX, translateY, width, zIndex. Inlined textAlignVertical, includeFontPadding */ @js.native
-trait TextStyle extends TextStyleIOS {
+- typings.reactNative.mod.TextStyleAndroid because var conflicts: alignContent, alignItems, alignSelf, aspectRatio, backfaceVisibility, backgroundColor, borderBottomColor, borderBottomEndRadius, borderBottomLeftRadius, borderBottomRightRadius, borderBottomStartRadius, borderBottomWidth, borderColor, borderEndColor, borderEndWidth, borderLeftColor, borderLeftWidth, borderRadius, borderRightColor, borderRightWidth, borderStartColor, borderStartWidth, borderStyle, borderTopColor, borderTopEndRadius, borderTopLeftRadius, borderTopRightRadius, borderTopStartRadius, borderTopWidth, borderWidth, bottom, direction, display, elevation, end, flex, flexBasis, flexDirection, flexGrow, flexShrink, flexWrap, height, justifyContent, left, margin, marginBottom, marginEnd, marginHorizontal, marginLeft, marginRight, marginStart, marginTop, marginVertical, maxHeight, maxWidth, minHeight, minWidth, opacity, overflow, padding, paddingBottom, paddingEnd, paddingHorizontal, paddingLeft, paddingRight, paddingStart, paddingTop, paddingVertical, position, right, rotation, scaleX, scaleY, shadowColor, shadowOffset, shadowOpacity, shadowRadius, start, testID, top, transform, transformMatrix, translateX, translateY, width, zIndex. Inlined textAlignVertical, includeFontPadding */ trait TextStyle
+  extends StObject
+     with TextStyleIOS {
   
-  var color: js.UndefOr[ColorValue] = js.native
+  var color: js.UndefOr[ColorValue] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[normal_ | italic] = js.native
+  var fontStyle: js.UndefOr[normal_ | italic] = js.undefined
   
   /**
     * Specifies font weight. The values 'normal' and 'bold' are supported
@@ -55,25 +55,25 @@ trait TextStyle extends TextStyleIOS {
     */
   var fontWeight: js.UndefOr[
     normal_ | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
-  ] = js.native
+  ] = js.undefined
   
-  var includeFontPadding: js.UndefOr[Boolean] = js.native
+  var includeFontPadding: js.UndefOr[Boolean] = js.undefined
   
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
-  var textAlign: js.UndefOr[auto | left | right | center | justify] = js.native
+  var textAlign: js.UndefOr[auto | left | right | center | justify] = js.undefined
   
-  var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.native
+  var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.undefined
   
-  var textDecorationLine: js.UndefOr[none | underline | `line-through` | (`underline line-through`)] = js.native
+  var textDecorationLine: js.UndefOr[none | underline | `line-through` | (`underline line-through`)] = js.undefined
   
-  var textShadowColor: js.UndefOr[ColorValue] = js.native
+  var textShadowColor: js.UndefOr[ColorValue] = js.undefined
   
-  var textShadowOffset: js.UndefOr[Height] = js.native
+  var textShadowOffset: js.UndefOr[Height] = js.undefined
   
-  var textShadowRadius: js.UndefOr[Double] = js.native
+  var textShadowRadius: js.UndefOr[Double] = js.undefined
   
-  var textTransform: js.UndefOr[none | capitalize | uppercase | lowercase] = js.native
+  var textTransform: js.UndefOr[none | capitalize | uppercase | lowercase] = js.undefined
 }
 object TextStyle {
   

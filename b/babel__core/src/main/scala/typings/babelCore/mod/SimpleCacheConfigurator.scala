@@ -2,10 +2,8 @@ package typings.babelCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleCacheConfigurator extends StObject {
   
   // there is an undocumented call signature that is a shorthand for forever()/never()/using().
@@ -14,7 +12,7 @@ trait SimpleCacheConfigurator extends StObject {
   /**
     * Permacache the computed config and never call the function again.
     */
-  def forever(): Unit = js.native
+  def forever(): Unit
   
   /**
     * Any time the using callback returns a value other than the one that was expected,
@@ -24,12 +22,12 @@ trait SimpleCacheConfigurator extends StObject {
     * @example
     * api.cache.invalidate(() => process.env.NODE_ENV)
     */
-  def invalidate[T /* <: SimpleCacheKey */](callback: SimpleCacheCallback[T]): T = js.native
+  def invalidate[T /* <: SimpleCacheKey */](callback: SimpleCacheCallback[T]): T
   
   /**
     * Do not cache this config, and re-execute the function every time.
     */
-  def never(): Unit = js.native
+  def never(): Unit
   
   /**
     * Any time the using callback returns a value other than the one that was expected,
@@ -38,7 +36,7 @@ trait SimpleCacheConfigurator extends StObject {
     * @example
     * api.cache.using(() => process.env.NODE_ENV)
     */
-  def using[T /* <: SimpleCacheKey */](callback: SimpleCacheCallback[T]): T = js.native
+  def `using`[T /* <: SimpleCacheKey */](callback: SimpleCacheCallback[T]): T
 }
 object SimpleCacheConfigurator {
   
@@ -47,9 +45,10 @@ object SimpleCacheConfigurator {
     forever: () => Unit,
     invalidate: SimpleCacheCallback[js.Any] => js.Any,
     never: () => Unit,
-    using: SimpleCacheCallback[js.Any] => js.Any
+    `using`: SimpleCacheCallback[js.Any] => js.Any
   ): SimpleCacheConfigurator = {
-    val __obj = js.Dynamic.literal(forever = js.Any.fromFunction0(forever), invalidate = js.Any.fromFunction1(invalidate), never = js.Any.fromFunction0(never), using = js.Any.fromFunction1(using))
+    val __obj = js.Dynamic.literal(forever = js.Any.fromFunction0(forever), invalidate = js.Any.fromFunction1(invalidate), never = js.Any.fromFunction0(never))
+    __obj.updateDynamic("using")(js.Any.fromFunction1(`using`))
     __obj.asInstanceOf[SimpleCacheConfigurator]
   }
   

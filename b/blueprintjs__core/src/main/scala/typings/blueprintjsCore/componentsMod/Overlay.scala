@@ -4,7 +4,6 @@ import typings.blueprintjsCore.anon.HasEverOpened
 import typings.blueprintjsCore.overlayMod.IOverlayProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Overlay")
@@ -33,9 +32,8 @@ object Overlay {
   @scala.inline
   def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @JSImport("@blueprintjs/core/lib/esm/components", "Overlay.getDerivedStateFromProps")
-  @js.native
-  def getDerivedStateFromProps(hasIsOpen: IOverlayProps): HasEverOpened | Null = js.native
+  @scala.inline
+  def getDerivedStateFromProps(hasHasEverOpened: IOverlayProps): HasEverOpened | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasHasEverOpened.asInstanceOf[js.Any]).asInstanceOf[HasEverOpened | Null]
   
   @JSImport("@blueprintjs/core/lib/esm/components", "Overlay.getLastOpened")
   @js.native

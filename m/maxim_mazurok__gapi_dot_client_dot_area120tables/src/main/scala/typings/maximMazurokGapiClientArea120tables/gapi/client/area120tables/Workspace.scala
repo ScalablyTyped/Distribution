@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Workspace extends StObject {
   
   /** The human readable title of the workspace. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The resource name of the workspace. Workspace names have the form `workspaces/{workspace}`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The list of tables in the workspace. */
-  var tables: js.UndefOr[js.Array[Table]] = js.native
+  var tables: js.UndefOr[js.Array[Table]] = js.undefined
 }
 object Workspace {
   

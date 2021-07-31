@@ -4,19 +4,19 @@ import typings.ecmarkup.collectNodesMod.CollectNodesReturnType
 import typings.ecmarkup.ecmarkupBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Success extends CollectNodesReturnType {
+trait Success
+  extends StObject
+     with CollectNodesReturnType {
   
-  var success: `false` = js.native
+  var success: `false`
 }
 object Success {
   
   @scala.inline
-  def apply(success: `false`): Success = {
-    val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
+  def apply(): Success = {
+    val __obj = js.Dynamic.literal(success = false)
     __obj.asInstanceOf[Success]
   }
   

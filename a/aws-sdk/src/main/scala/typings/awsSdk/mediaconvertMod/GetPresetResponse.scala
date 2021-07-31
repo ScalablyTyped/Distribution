@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPresetResponse extends StObject {
   
   /**
     * A preset is a collection of preconfigured media conversion settings that you want MediaConvert to apply to the output during the conversion process.
     */
-  var Preset: js.UndefOr[typings.awsSdk.mediaconvertMod.Preset] = js.native
+  var Preset: js.UndefOr[typings.awsSdk.mediaconvertMod.Preset] = js.undefined
 }
 object GetPresetResponse {
   

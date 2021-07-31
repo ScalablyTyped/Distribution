@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFeatureTransformationResponse extends StObject {
   
   /**
     * A listing of the FeatureTransformation properties.
     */
-  var featureTransformation: js.UndefOr[FeatureTransformation] = js.native
+  var featureTransformation: js.UndefOr[FeatureTransformation] = js.undefined
 }
 object DescribeFeatureTransformationResponse {
   

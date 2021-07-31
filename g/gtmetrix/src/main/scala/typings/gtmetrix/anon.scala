@@ -9,18 +9,16 @@ import typings.std.IterableIterator
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<gtmetrix.gtmetrix.AccountStatus> */
-  @js.native
   trait ReadonlyAccountStatus extends StObject {
     
-    val api_credits: Double = js.native
+    val api_credits: Double
     
-    val api_refill: Double = js.native
+    val api_refill: Double
   }
   object ReadonlyAccountStatus {
     
@@ -42,20 +40,19 @@ object anon {
   }
   
   /* Inlined std.Readonly<gtmetrix.gtmetrix.BrowserFeatures> */
-  @js.native
   trait ReadonlyBrowserFeatures extends StObject {
     
-    val browser: String = js.native
+    val browser: String
     
-    val device: js.UndefOr[String] = js.native
+    val device: js.UndefOr[String] = js.undefined
     
-    val features: StringDictionary[Boolean] = js.native
+    val features: StringDictionary[Boolean]
     
-    val id: Double = js.native
+    val id: Double
     
-    val name: String = js.native
+    val name: String
     
-    val platform: String = js.native
+    val platform: String
   }
   object ReadonlyBrowserFeatures {
     
@@ -92,96 +89,95 @@ object anon {
   }
   
   /* Inlined std.Readonly<node.Buffer> */
-  @js.native
   trait ReadonlyBuffer extends StObject {
     
-    val BYTES_PER_ELEMENT: Double = js.native
+    val BYTES_PER_ELEMENT: Double
     
-    val buffer: ArrayBufferLike = js.native
+    val buffer: ArrayBufferLike
     
-    val byteLength: Double = js.native
+    val byteLength: Double
     
-    val byteOffset: Double = js.native
+    val byteOffset: Double
     
-    def compare(otherBuffer: Uint8Array): Double = js.native
+    def compare(otherBuffer: Uint8Array): Double
     
-    def copy(targetBuffer: Uint8Array): Double = js.native
+    def copy(targetBuffer: Uint8Array): Double
     
-    def copyWithin(target: Double, start: Double): this.type = js.native
+    def copyWithin(target: Double, start: Double): this.type
     
-    def entries(): IterableIterator[js.Tuple2[Double, Double]] = js.native
+    def entries(): IterableIterator[js.Tuple2[Double, Double]]
     
-    def equals(otherBuffer: Uint8Array): Boolean = js.native
+    def equals(otherBuffer: Uint8Array): Boolean
     
-    def every(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _]): Boolean = js.native
+    def every(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any]): Boolean
     
-    def fill(value: String): this.type = js.native
+    def fill(value: String): this.type
     
-    def filter(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _]): Uint8Array = js.native
+    def filter(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any]): Uint8Array
     
-    def find(predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, Boolean]): js.UndefOr[Double] = js.native
+    def find(predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, Boolean]): js.UndefOr[Double]
     
-    def findIndex(predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, Boolean]): Double = js.native
+    def findIndex(predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, Boolean]): Double
     
-    def forEach(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Unit]): Unit = js.native
+    def forEach(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Unit]): Unit
     
-    def includes(value: String): Boolean = js.native
+    def includes(value: String): Boolean
     
-    def indexOf(value: String): Double = js.native
+    def indexOf(value: String): Double
     
-    def join(): String = js.native
+    def join(): String
     
-    def keys(): IterableIterator[Double] = js.native
+    def keys(): IterableIterator[Double]
     
-    def lastIndexOf(value: String): Double = js.native
+    def lastIndexOf(value: String): Double
     
-    val length: Double = js.native
+    val length: Double
     
-    def map(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double]): Uint8Array = js.native
+    def map(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double]): Uint8Array
     
-    def readBigInt64BE(): js.BigInt = js.native
+    def readBigInt64BE(): js.BigInt
     
-    def readBigInt64LE(): js.BigInt = js.native
+    def readBigInt64LE(): js.BigInt
     
-    def readBigUInt64BE(): js.BigInt = js.native
+    def readBigUInt64BE(): js.BigInt
     
-    def readBigUInt64LE(): js.BigInt = js.native
+    def readBigUInt64LE(): js.BigInt
     
-    def readDoubleBE(): Double = js.native
+    def readDoubleBE(): Double
     
-    def readDoubleLE(): Double = js.native
+    def readDoubleLE(): Double
     
-    def readFloatBE(): Double = js.native
+    def readFloatBE(): Double
     
-    def readFloatLE(): Double = js.native
+    def readFloatLE(): Double
     
-    def readInt16BE(): Double = js.native
+    def readInt16BE(): Double
     
-    def readInt16LE(): Double = js.native
+    def readInt16LE(): Double
     
-    def readInt32BE(): Double = js.native
+    def readInt32BE(): Double
     
-    def readInt32LE(): Double = js.native
+    def readInt32LE(): Double
     
-    def readInt8(): Double = js.native
+    def readInt8(): Double
     
-    def readIntBE(offset: Double, byteLength: Double): Double = js.native
+    def readIntBE(offset: Double, byteLength: Double): Double
     
-    def readIntLE(offset: Double, byteLength: Double): Double = js.native
+    def readIntLE(offset: Double, byteLength: Double): Double
     
-    def readUInt16BE(): Double = js.native
+    def readUInt16BE(): Double
     
-    def readUInt16LE(): Double = js.native
+    def readUInt16LE(): Double
     
-    def readUInt32BE(): Double = js.native
+    def readUInt32BE(): Double
     
-    def readUInt32LE(): Double = js.native
+    def readUInt32LE(): Double
     
-    def readUInt8(): Double = js.native
+    def readUInt8(): Double
     
-    def readUIntBE(offset: Double, byteLength: Double): Double = js.native
+    def readUIntBE(offset: Double, byteLength: Double): Double
     
-    def readUIntLE(offset: Double, byteLength: Double): Double = js.native
+    def readUIntLE(offset: Double, byteLength: Double): Double
     
     def reduce(
       callbackfn: js.Function4[
@@ -191,7 +187,7 @@ object anon {
           /* array */ this.type, 
           Double
         ]
-    ): Double = js.native
+    ): Double
     
     def reduceRight(
       callbackfn: js.Function4[
@@ -201,75 +197,75 @@ object anon {
           /* array */ this.type, 
           Double
         ]
-    ): Double = js.native
+    ): Double
     
-    def reverse(): this.type = js.native
+    def reverse(): this.type
     
-    def set(array: ArrayLike[Double]): Unit = js.native
+    def set(array: ArrayLike[Double]): Unit
     
-    def slice(): Buffer = js.native
+    def slice(): Buffer
     
-    def some(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _]): Boolean = js.native
+    def some(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any]): Boolean
     
-    def sort(): this.type = js.native
+    def sort(): this.type
     
-    def subarray(): Buffer = js.native
+    def subarray(): Buffer
     
-    def swap16(): Buffer = js.native
+    def swap16(): Buffer
     
-    def swap32(): Buffer = js.native
+    def swap32(): Buffer
     
-    def swap64(): Buffer = js.native
+    def swap64(): Buffer
     
-    def toJSON(): Data = js.native
+    def toJSON(): Data
     
-    def values(): IterableIterator[Double] = js.native
+    def values(): IterableIterator[Double]
     
-    def write(string: String): Double = js.native
+    def write(string: String): Double
     
-    def writeBigInt64BE(value: js.BigInt): Double = js.native
+    def writeBigInt64BE(value: js.BigInt): Double
     
-    def writeBigInt64LE(value: js.BigInt): Double = js.native
+    def writeBigInt64LE(value: js.BigInt): Double
     
-    def writeBigUInt64BE(value: js.BigInt): Double = js.native
+    def writeBigUInt64BE(value: js.BigInt): Double
     
-    def writeBigUInt64LE(value: js.BigInt): Double = js.native
+    def writeBigUInt64LE(value: js.BigInt): Double
     
-    def writeDoubleBE(value: Double): Double = js.native
+    def writeDoubleBE(value: Double): Double
     
-    def writeDoubleLE(value: Double): Double = js.native
+    def writeDoubleLE(value: Double): Double
     
-    def writeFloatBE(value: Double): Double = js.native
+    def writeFloatBE(value: Double): Double
     
-    def writeFloatLE(value: Double): Double = js.native
+    def writeFloatLE(value: Double): Double
     
-    def writeInt16BE(value: Double): Double = js.native
+    def writeInt16BE(value: Double): Double
     
-    def writeInt16LE(value: Double): Double = js.native
+    def writeInt16LE(value: Double): Double
     
-    def writeInt32BE(value: Double): Double = js.native
+    def writeInt32BE(value: Double): Double
     
-    def writeInt32LE(value: Double): Double = js.native
+    def writeInt32LE(value: Double): Double
     
-    def writeInt8(value: Double): Double = js.native
+    def writeInt8(value: Double): Double
     
-    def writeIntBE(value: Double, offset: Double, byteLength: Double): Double = js.native
+    def writeIntBE(value: Double, offset: Double, byteLength: Double): Double
     
-    def writeIntLE(value: Double, offset: Double, byteLength: Double): Double = js.native
+    def writeIntLE(value: Double, offset: Double, byteLength: Double): Double
     
-    def writeUInt16BE(value: Double): Double = js.native
+    def writeUInt16BE(value: Double): Double
     
-    def writeUInt16LE(value: Double): Double = js.native
+    def writeUInt16LE(value: Double): Double
     
-    def writeUInt32BE(value: Double): Double = js.native
+    def writeUInt32BE(value: Double): Double
     
-    def writeUInt32LE(value: Double): Double = js.native
+    def writeUInt32LE(value: Double): Double
     
-    def writeUInt8(value: Double): Double = js.native
+    def writeUInt8(value: Double): Double
     
-    def writeUIntBE(value: Double, offset: Double, byteLength: Double): Double = js.native
+    def writeUIntBE(value: Double, offset: Double, byteLength: Double): Double
     
-    def writeUIntLE(value: Double, offset: Double, byteLength: Double): Double = js.native
+    def writeUIntLE(value: Double, offset: Double, byteLength: Double): Double
   }
   object ReadonlyBuffer {
     
@@ -284,9 +280,9 @@ object anon {
       copyWithin: (Double, Double) => ReadonlyBuffer,
       entries: () => IterableIterator[js.Tuple2[Double, Double]],
       equals_ : Uint8Array => Boolean,
-      every: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, _] => Boolean,
+      every: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean,
       fill: String => ReadonlyBuffer,
-      filter: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, _] => Uint8Array,
+      filter: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Uint8Array,
       find: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Boolean] => js.UndefOr[Double],
       findIndex: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Boolean] => Double,
       forEach: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Unit] => Unit,
@@ -336,7 +332,7 @@ object anon {
       reverse: () => ReadonlyBuffer,
       set: ArrayLike[Double] => Unit,
       slice: () => Buffer,
-      some: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, _] => Boolean,
+      some: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean,
       sort: () => ReadonlyBuffer,
       subarray: () => Buffer,
       swap16: () => Buffer,
@@ -404,13 +400,13 @@ object anon {
       def setEquals_(value: Uint8Array => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setEvery(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, _] => Boolean): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
+      def setEvery(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFill(value: String => ReadonlyBuffer): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setFilter(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, _] => Uint8Array): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      def setFilter(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Uint8Array): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFind(
@@ -542,7 +538,7 @@ object anon {
       def setSlice(value: () => Buffer): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setSome(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, _] => Boolean): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
+      def setSome(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSort(value: () => ReadonlyBuffer): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
@@ -637,14 +633,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<gtmetrix.gtmetrix.TestBasicInfo> */
-  @js.native
   trait ReadonlyTestBasicInfo extends StObject {
     
-    val credits_left: Double = js.native
+    val credits_left: Double
     
-    val poll_state_url: String = js.native
+    val poll_state_url: String
     
-    val test_id: String = js.native
+    val test_id: String
   }
   object ReadonlyTestBasicInfo {
     
@@ -669,16 +664,15 @@ object anon {
   }
   
   /* Inlined std.Readonly<gtmetrix.gtmetrix.TestDetails> */
-  @js.native
   trait ReadonlyTestDetails extends StObject {
     
-    val error: js.UndefOr[String] = js.native
+    val error: js.UndefOr[String] = js.undefined
     
-    val resources: StringDictionary[String] = js.native
+    val resources: StringDictionary[String]
     
-    val results: StringDictionary[js.Any] = js.native
+    val results: StringDictionary[js.Any]
     
-    val state: String = js.native
+    val state: String
   }
   object ReadonlyTestDetails {
     

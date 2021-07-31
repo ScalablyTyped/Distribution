@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getMountTargetMod {
   
-  @JSImport("@pulumi/aws/efs/getMountTarget", "getMountTarget")
+  @JSImport("@pulumi/aws/efs/getMountTarget", JSImport.Namespace)
   @js.native
-  def getMountTarget(args: GetMountTargetArgs): js.Promise[GetMountTargetResult] = js.native
-  @JSImport("@pulumi/aws/efs/getMountTarget", "getMountTarget")
-  @js.native
-  def getMountTarget(args: GetMountTargetArgs, opts: InvokeOptions): js.Promise[GetMountTargetResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getMountTarget(args: GetMountTargetArgs): js.Promise[GetMountTargetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMountTarget")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetMountTargetResult]]
+  @scala.inline
+  def getMountTarget(args: GetMountTargetArgs, opts: InvokeOptions): js.Promise[GetMountTargetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMountTarget")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetMountTargetResult]]
+  
   trait GetMountTargetArgs extends StObject {
     
     /**
       * ID of the mount target that you want to have described
       */
-    val mountTargetId: String = js.native
+    val mountTargetId: String
   }
   object GetMountTargetArgs {
     
@@ -39,70 +39,69 @@ object getMountTargetMod {
     }
   }
   
-  @js.native
   trait GetMountTargetResult extends StObject {
     
     /**
       * The unique and consistent identifier of the Availability Zone (AZ) that the mount target resides in.
       */
-    val availabilityZoneId: String = js.native
+    val availabilityZoneId: String
     
     /**
       * The name of the Availability Zone (AZ) that the mount target resides in.
       */
-    val availabilityZoneName: String = js.native
+    val availabilityZoneName: String
     
     /**
       * The DNS name for the EFS file system.
       */
-    val dnsName: String = js.native
+    val dnsName: String
     
     /**
       * Amazon Resource Name of the file system for which the mount target is intended.
       */
-    val fileSystemArn: String = js.native
+    val fileSystemArn: String
     
     /**
       * ID of the file system for which the mount target is intended.
       */
-    val fileSystemId: String = js.native
+    val fileSystemId: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Address at which the file system may be mounted via the mount target.
       */
-    val ipAddress: String = js.native
+    val ipAddress: String
     
     /**
       * The DNS name for the given subnet/AZ per [documented convention](http://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-cmd-dns-name.html).
       */
-    val mountTargetDnsName: String = js.native
+    val mountTargetDnsName: String
     
-    val mountTargetId: String = js.native
+    val mountTargetId: String
     
     /**
       * The ID of the network interface that Amazon EFS created when it created the mount target.
       */
-    val networkInterfaceId: String = js.native
+    val networkInterfaceId: String
     
     /**
       * AWS account ID that owns the resource.
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
     /**
       * List of VPC security group IDs attached to the mount target.
       */
-    val securityGroups: js.Array[String] = js.native
+    val securityGroups: js.Array[String]
     
     /**
       * ID of the mount target's subnet.
       */
-    val subnetId: String = js.native
+    val subnetId: String
   }
   object GetMountTargetResult {
     

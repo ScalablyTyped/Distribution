@@ -3,22 +3,22 @@ package typings.mobx
 import typings.mobx.utilsMod.Lambda
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listenUtilsMod {
   
-  @JSImport("mobx/lib/types/listen-utils", "hasListeners")
+  @JSImport("mobx/lib/types/listen-utils", JSImport.Namespace)
   @js.native
-  def hasListeners(listenable: IListenable): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/types/listen-utils", "notifyListeners")
-  @js.native
-  def notifyListeners[T](listenable: IListenable, change: T): Unit = js.native
+  @scala.inline
+  def hasListeners(listenable: IListenable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasListeners")(listenable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("mobx/lib/types/listen-utils", "registerListener")
-  @js.native
-  def registerListener(listenable: IListenable, handler: js.Function): Lambda = js.native
+  @scala.inline
+  def notifyListeners[T](listenable: IListenable, change: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notifyListeners")(listenable.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def registerListener(listenable: IListenable, handler: js.Function): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("registerListener")(listenable.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   
   @js.native
   trait IListenable extends StObject {

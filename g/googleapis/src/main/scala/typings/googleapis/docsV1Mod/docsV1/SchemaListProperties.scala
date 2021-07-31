@@ -2,14 +2,12 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties of a list which describe the look and feel of bullets
   * belonging to paragraphs associated with a list.
   */
-@js.native
 trait SchemaListProperties extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaListProperties extends StObject {
     * level. The nesting levels are returned in ascending order with the least
     * nested returned first.
     */
-  var nestingLevels: js.UndefOr[js.Array[SchemaNestingLevel]] = js.native
+  var nestingLevels: js.UndefOr[js.Array[SchemaNestingLevel]] = js.undefined
 }
 object SchemaListProperties {
   

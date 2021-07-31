@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KernelGatewayAppSettings extends StObject {
   
   /**
     * A list of custom SageMaker images that are configured to run as a KernelGateway app.
     */
-  var CustomImages: js.UndefOr[typings.awsSdk.sagemakerMod.CustomImages] = js.native
+  var CustomImages: js.UndefOr[typings.awsSdk.sagemakerMod.CustomImages] = js.undefined
   
   /**
     * The default instance type and the Amazon Resource Name (ARN) of the default SageMaker image used by the KernelGateway app.
     */
-  var DefaultResourceSpec: js.UndefOr[ResourceSpec] = js.native
+  var DefaultResourceSpec: js.UndefOr[ResourceSpec] = js.undefined
 }
 object KernelGatewayAppSettings {
   

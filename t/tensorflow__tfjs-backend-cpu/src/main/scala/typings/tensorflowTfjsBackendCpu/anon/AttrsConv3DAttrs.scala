@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.Conv3DAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.Conv3DInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsConv3DAttrs extends StObject {
   
-  var attrs: Conv3DAttrs = js.native
+  var attrs: Conv3DAttrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: Conv3DInputs = js.native
+  var inputs: Conv3DInputs
 }
 object AttrsConv3DAttrs {
   

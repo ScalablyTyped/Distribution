@@ -5,7 +5,6 @@ import typings.phaser.Phaser.Types.Scenes.SettingsObject
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Scenes {
@@ -358,17 +357,15 @@ object Scenes {
     * Builds an array of which physics plugins should be activated for the given Scene.
     * @param sys The scene system to get the physics systems of.
     */
-  @JSImport("phaser", "Scenes.GetPhysicsPlugins")
-  @js.native
-  def GetPhysicsPlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[_] = js.native
+  @scala.inline
+  def GetPhysicsPlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPhysicsPlugins")(sys.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
   /**
     * Builds an array of which plugins (not including physics plugins) should be activated for the given Scene.
     * @param sys The Scene Systems object to check for plugins.
     */
-  @JSImport("phaser", "Scenes.GetScenePlugins")
-  @js.native
-  def GetScenePlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[_] = js.native
+  @scala.inline
+  def GetScenePlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetScenePlugins")(sys.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
   /**
     * Scene state.
@@ -451,7 +448,8 @@ object Scenes {
   @JSImport("phaser", "Scenes.SceneManager")
   @js.native
   class SceneManager protected ()
-    extends typings.phaser.Phaser.Scenes.SceneManager {
+    extends StObject
+       with typings.phaser.Phaser.Scenes.SceneManager {
     /**
       * 
       * @param game The Phaser.Game instance this Scene Manager belongs to.
@@ -466,7 +464,8 @@ object Scenes {
   @JSImport("phaser", "Scenes.ScenePlugin")
   @js.native
   class ScenePlugin protected ()
-    extends typings.phaser.Phaser.Scenes.ScenePlugin {
+    extends StObject
+       with typings.phaser.Phaser.Scenes.ScenePlugin {
     /**
       * 
       * @param scene The Scene that this ScenePlugin belongs to.
@@ -476,16 +475,18 @@ object Scenes {
   
   object Settings {
     
+    @JSImport("phaser", "Scenes.Settings")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Takes a Scene configuration object and returns a fully formed System Settings object.
       * @param config The Scene configuration object used to create this Scene Settings.
       */
-    @JSImport("phaser", "Scenes.Settings.create")
-    @js.native
-    def create(config: String): SettingsObject = js.native
-    @JSImport("phaser", "Scenes.Settings.create")
-    @js.native
-    def create(config: SettingsConfig): SettingsObject = js.native
+    @scala.inline
+    def create(config: String): SettingsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[SettingsObject]
+    @scala.inline
+    def create(config: SettingsConfig): SettingsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[SettingsObject]
   }
   
   /**
@@ -498,7 +499,8 @@ object Scenes {
   @JSImport("phaser", "Scenes.Systems")
   @js.native
   class Systems protected ()
-    extends typings.phaser.Phaser.Scenes.Systems {
+    extends StObject
+       with typings.phaser.Phaser.Scenes.Systems {
     /**
       * 
       * @param scene The Scene that owns this Systems instance.

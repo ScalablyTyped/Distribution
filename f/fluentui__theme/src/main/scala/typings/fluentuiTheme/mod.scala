@@ -12,10 +12,13 @@ import typings.fluentuiTheme.themeMod.Theme
 import typings.uifabricMergeStyles.irawstylebaseMod.IFontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@fluentui/theme", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@fluentui/theme", "AnimationStyles")
   @js.native
@@ -689,34 +692,25 @@ object mod {
     val yellowGreen10: /* "#8cbd18" */ String = js.native
   }
   
-  @JSImport("@fluentui/theme", "createFontStyles")
-  @js.native
-  def createFontStyles(): IFontStyles = js.native
-  @JSImport("@fluentui/theme", "createFontStyles")
-  @js.native
-  def createFontStyles(localeCode: String): IFontStyles = js.native
+  @scala.inline
+  def createFontStyles(): IFontStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")().asInstanceOf[IFontStyles]
+  @scala.inline
+  def createFontStyles(localeCode: String): IFontStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")(localeCode.asInstanceOf[js.Any]).asInstanceOf[IFontStyles]
   
-  @JSImport("@fluentui/theme", "createTheme")
-  @js.native
-  def createTheme(): Theme = js.native
-  @JSImport("@fluentui/theme", "createTheme")
-  @js.native
-  def createTheme(theme: js.UndefOr[scala.Nothing], depComments: Boolean): Theme = js.native
-  @JSImport("@fluentui/theme", "createTheme")
-  @js.native
-  def createTheme(theme: PartialTheme): Theme = js.native
-  @JSImport("@fluentui/theme", "createTheme")
-  @js.native
-  def createTheme(theme: PartialTheme, depComments: Boolean): Theme = js.native
+  @scala.inline
+  def createTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")().asInstanceOf[Theme]
+  @scala.inline
+  def createTheme(theme: Unit, depComments: Boolean): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[Theme]
+  @scala.inline
+  def createTheme(theme: PartialTheme): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Theme]
+  @scala.inline
+  def createTheme(theme: PartialTheme, depComments: Boolean): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[Theme]
   
-  @JSImport("@fluentui/theme", "mergeThemes")
-  @js.native
-  def mergeThemes(theme: Theme): Theme = js.native
-  @JSImport("@fluentui/theme", "mergeThemes")
-  @js.native
-  def mergeThemes(theme: Theme, partialTheme: PartialTheme): Theme = js.native
+  @scala.inline
+  def mergeThemes(theme: Theme): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeThemes")(theme.asInstanceOf[js.Any]).asInstanceOf[Theme]
+  @scala.inline
+  def mergeThemes(theme: Theme, partialTheme: PartialTheme): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeThemes")(theme.asInstanceOf[js.Any], partialTheme.asInstanceOf[js.Any])).asInstanceOf[Theme]
   
-  @JSImport("@fluentui/theme", "registerDefaultFontFaces")
-  @js.native
-  def registerDefaultFontFaces(baseUrl: String): Unit = js.native
+  @scala.inline
+  def registerDefaultFontFaces(baseUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDefaultFontFaces")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

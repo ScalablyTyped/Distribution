@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration extends StObject {
   
   /**
     * Describes the interval in milliseconds between checkpoint operations.
     */
-  var checkpointInterval: js.UndefOr[Input[Double]] = js.native
+  var checkpointInterval: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Describes whether checkpointing is enabled for a Flink-based Kinesis Data Analytics application.
     */
-  var checkpointingEnabled: js.UndefOr[Input[Boolean]] = js.native
+  var checkpointingEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Describes whether the application uses Kinesis Data Analytics' default checkpointing behavior. Valid values: `CUSTOM`, `DEFAULT`. Set this attribute to `CUSTOM` in order for any specified `checkpointingEnabled`, `checkpointInterval`, or `minPauseBetweenCheckpoints` attribute values to be effective. If this attribute is set to `DEFAULT`, the application will always use the following values:
@@ -25,12 +23,12 @@ trait ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpoint
     * * `checkpointInterval = 60000`
     * * `minPauseBetweenCheckpoints = 5000`
     */
-  var configurationType: Input[String] = js.native
+  var configurationType: Input[String]
   
   /**
     * Describes the minimum time in milliseconds after a checkpoint operation completes that a new checkpoint operation can start.
     */
-  var minPauseBetweenCheckpoints: js.UndefOr[Input[Double]] = js.native
+  var minPauseBetweenCheckpoints: js.UndefOr[Input[Double]] = js.undefined
 }
 object ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration {
   

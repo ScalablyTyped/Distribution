@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ElevationTileData extends Object {
+trait ElevationTileData
+  extends StObject
+     with Object {
   
   /**
     * The height of the tile in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#ElevationTileData)
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The maximum allowed error of the Z-value for each value in meters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#ElevationTileData)
     */
-  var maxZError: Double = js.native
+  var maxZError: Double
   
   /**
     * Indicating the pixel values where no elevation data is present.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#ElevationTileData)
     */
-  var noDataValue: Double = js.native
+  var noDataValue: Double
   
   /**
     * The elevation values of each pixel in the tile.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#ElevationTileData)
     */
-  var values: js.Array[Double] = js.native
+  var values: js.Array[Double]
   
   /**
     * The width of the tile in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#ElevationTileData)
     */
-  var width: Double = js.native
+  var width: Double
 }
 object ElevationTileData {
   

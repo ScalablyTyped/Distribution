@@ -7,29 +7,26 @@ import typings.materialUiCore.withWidthWithWidthMod.WithWidthOptions
 import typings.materialUiCore.withWidthWithWidthMod.WithWidthProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withWidthMod {
   
-  @JSImport("@material-ui/core/withWidth", JSImport.Default)
+  @JSImport("@material-ui/core/withWidth", JSImport.Namespace)
   @js.native
-  def default(): PropInjector[WithWidth, WithWidthProps] = js.native
-  @JSImport("@material-ui/core/withWidth", JSImport.Default)
-  @js.native
-  def default(options: WithWidthOptions): PropInjector[WithWidth, WithWidthProps] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@material-ui/core/withWidth", "isWidthDown")
-  @js.native
-  def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = js.native
-  @JSImport("@material-ui/core/withWidth", "isWidthDown")
-  @js.native
-  def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = js.native
+  @scala.inline
+  def default(): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
+  @scala.inline
+  def default(options: WithWidthOptions): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
   
-  @JSImport("@material-ui/core/withWidth", "isWidthUp")
-  @js.native
-  def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = js.native
-  @JSImport("@material-ui/core/withWidth", "isWidthUp")
-  @js.native
-  def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = js.native
+  @scala.inline
+  def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthDown")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthDown")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any], inclusive.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthUp")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthUp")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any], inclusive.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

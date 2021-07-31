@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxViewPort...
   */
-@js.native
 trait INxViewPort extends StObject {
   
   /**
     * Height of the canvas in pixels.
     */
-  var qHeight: Double = js.native
+  var qHeight: Double
   
   /**
     * Width of the canvas in pixels.
     */
-  var qWidth: Double = js.native
+  var qWidth: Double
   
   /*
     * Zoom level.
     */
-  var qZoomLevel: Double = js.native
+  var qZoomLevel: Double
 }
 object INxViewPort {
   

@@ -2,19 +2,17 @@ package typings.karmaDetectBrowsers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * See https://github.com/karma-runner/karma-coverage/blob/master/docs/configuration.md
       */
-    var detectBrowsers: js.UndefOr[KarmaDetectBrowsers] = js.native
+    var detectBrowsers: js.UndefOr[KarmaDetectBrowsers] = js.undefined
   }
   object ConfigOptions {
     
@@ -35,23 +33,22 @@ object mod {
     }
   }
   
-  @js.native
   trait KarmaDetectBrowsers extends StObject {
     
     /** enable/disable, default is true */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * post processing of browsers list
       * here you can edit the list of browsers used by karma
       */
-    def postDetection(availableBrowsers: js.Array[String]): js.Array[String] = js.native
+    def postDetection(availableBrowsers: js.Array[String]): js.Array[String]
     
     /** use headless mode, for browsers that support it, default is false */
-    var preferHeadless: js.UndefOr[Boolean] = js.native
+    var preferHeadless: js.UndefOr[Boolean] = js.undefined
     
     /** enable/disable phantomjs support, default is true */
-    var usePhantomJS: js.UndefOr[Boolean] = js.native
+    var usePhantomJS: js.UndefOr[Boolean] = js.undefined
   }
   object KarmaDetectBrowsers {
     

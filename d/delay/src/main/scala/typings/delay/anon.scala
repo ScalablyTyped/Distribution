@@ -4,23 +4,39 @@ import typings.delay.mod.AbortSignal
 import typings.std.TimerHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClearTimeout extends StObject {
     
-    def clearTimeout(): Unit = js.native
-    def clearTimeout(handle: Double): Unit = js.native
+    def clearTimeout(): Unit
+    def clearTimeout(handle: Double): Unit
     @JSName("clearTimeout")
-    var clearTimeout_Original: FnCall = js.native
+    var clearTimeout_Original: FnCall
     
-    def setTimeout(handler: TimerHandler, timeout: js.UndefOr[scala.Nothing], arguments: js.Any*): Double = js.native
-    def setTimeout(handler: TimerHandler, timeout: Double, arguments: js.Any*): Double = js.native
+    def setTimeout(handler: TimerHandler, timeout: Double, arguments: js.Any*): Double
+    def setTimeout(handler: TimerHandler, timeout: Unit, arguments: js.Any*): Double
     @JSName("setTimeout")
-    var setTimeout_Original: FnCallHandlerTimeoutArguments = js.native
+    var setTimeout_Original: FnCallHandlerTimeoutArguments
+  }
+  object ClearTimeout {
+    
+    @scala.inline
+    def apply(clearTimeout: FnCall, setTimeout: FnCallHandlerTimeoutArguments): ClearTimeout = {
+      val __obj = js.Dynamic.literal(clearTimeout = clearTimeout.asInstanceOf[js.Any], setTimeout = setTimeout.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ClearTimeout]
+    }
+    
+    @scala.inline
+    implicit class ClearTimeoutMutableBuilder[Self <: ClearTimeout] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setClearTimeout(value: FnCall): Self = StObject.set(x, "clearTimeout", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSetTimeout(value: FnCallHandlerTimeoutArguments): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -33,14 +49,13 @@ object anon {
   @js.native
   trait FnCallHandlerTimeoutArguments extends StObject {
     
-    def apply(handler: TimerHandler, timeout: js.UndefOr[scala.Nothing], arguments: js.Any*): Double = js.native
     def apply(handler: TimerHandler, timeout: Double, arguments: js.Any*): Double = js.native
+    def apply(handler: TimerHandler, timeout: Unit, arguments: js.Any*): Double = js.native
   }
   
-  @js.native
   trait Once extends StObject {
     
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
   }
   object Once {
     
@@ -62,19 +77,18 @@ object anon {
   }
   
   /* Inlined delay.delay.Options & {  value :unknown | undefined} */
-  @js.native
   trait Optionsvalueunknownundefi extends StObject {
     
     /**
     		An optional AbortSignal to abort the delay.
     		If aborted, the Promise will be rejected with an AbortError.
     		*/
-    var signal: js.UndefOr[AbortSignal] = js.native
+    var signal: js.UndefOr[AbortSignal] = js.undefined
     
     /**
     			Value to reject in the returned promise.
     			*/
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object Optionsvalueunknownundefi {
     
@@ -101,13 +115,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Value[T] extends StObject {
     
     /**
     			Value to resolve in the returned promise.
     			*/
-    var value: T = js.native
+    var value: T
   }
   object Value {
     
@@ -118,7 +131,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value[_], T] (val x: Self with Value[T]) extends AnyVal {
+    implicit class ValueMutableBuilder[Self <: Value[?], T] (val x: Self & Value[T]) extends AnyVal {
       
       @scala.inline
       def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])

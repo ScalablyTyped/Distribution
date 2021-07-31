@@ -2,7 +2,6 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GET /v1/recommendations/available-genre-seeds
   * https://developer.spotify.com/web-api/get-recommendations/#available-genre-seeds
   */
-@js.native
 trait AvailableGenreSeedsResponse extends StObject {
   
-  var genres: js.Array[String] = js.native
+  var genres: js.Array[String]
 }
 object AvailableGenreSeedsResponse {
   

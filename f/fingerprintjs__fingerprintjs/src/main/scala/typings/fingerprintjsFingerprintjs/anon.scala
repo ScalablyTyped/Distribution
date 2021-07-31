@@ -4,86 +4,84 @@ import typings.fingerprintjsFingerprintjs.mod.Options
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AdBlock extends StObject {
     
-    var adBlock: js.UndefOr[Boolean] = js.native
+    var adBlock: js.UndefOr[Boolean] = js.undefined
     
-    var addBehavior: js.UndefOr[Boolean] = js.native
+    var addBehavior: js.UndefOr[Boolean] = js.undefined
     
-    var audio: js.UndefOr[Boolean] = js.native
+    var audio: js.UndefOr[Boolean] = js.undefined
     
-    var availableScreenResolution: js.UndefOr[Boolean] = js.native
+    var availableScreenResolution: js.UndefOr[Boolean] = js.undefined
     
-    var canvas: js.UndefOr[Boolean] = js.native
+    var canvas: js.UndefOr[Boolean] = js.undefined
     
-    var colorDepth: js.UndefOr[Boolean] = js.native
+    var colorDepth: js.UndefOr[Boolean] = js.undefined
     
-    var cpuClass: js.UndefOr[Boolean] = js.native
+    var cpuClass: js.UndefOr[Boolean] = js.undefined
     
-    var deviceMemory: js.UndefOr[Boolean] = js.native
+    var deviceMemory: js.UndefOr[Boolean] = js.undefined
     
     /**
       * DNT depends on incognito mode for some browsers (Chrome) and it's impossible to detect incognito mode
       */
-    var doNotTrack: js.UndefOr[Boolean] = js.native
+    var doNotTrack: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Unreliable on Windows, see https://github.com/Valve/fingerprintjs2/issues/375
       */
-    var enumerateDevices: js.UndefOr[Boolean] = js.native
+    var enumerateDevices: js.UndefOr[Boolean] = js.undefined
     
-    var fonts: js.UndefOr[Boolean] = js.native
+    var fonts: js.UndefOr[Boolean] = js.undefined
     
-    var fontsFlash: js.UndefOr[Boolean] = js.native
+    var fontsFlash: js.UndefOr[Boolean] = js.undefined
     
-    var hardwareConcurrency: js.UndefOr[Boolean] = js.native
+    var hardwareConcurrency: js.UndefOr[Boolean] = js.undefined
     
-    var hasLiedBrowser: js.UndefOr[Boolean] = js.native
+    var hasLiedBrowser: js.UndefOr[Boolean] = js.undefined
     
-    var hasLiedLanguages: js.UndefOr[Boolean] = js.native
+    var hasLiedLanguages: js.UndefOr[Boolean] = js.undefined
     
-    var hasLiedOs: js.UndefOr[Boolean] = js.native
+    var hasLiedOs: js.UndefOr[Boolean] = js.undefined
     
-    var hasLiedResolution: js.UndefOr[Boolean] = js.native
+    var hasLiedResolution: js.UndefOr[Boolean] = js.undefined
     
-    var indexedDb: js.UndefOr[Boolean] = js.native
+    var indexedDb: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[Boolean] = js.native
+    var language: js.UndefOr[Boolean] = js.undefined
     
-    var localStorage: js.UndefOr[Boolean] = js.native
+    var localStorage: js.UndefOr[Boolean] = js.undefined
     
-    var openDatabase: js.UndefOr[Boolean] = js.native
+    var openDatabase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * devicePixelRatio depends on browser zoom, and it's impossible to detect browser zoom
       */
-    var pixelRatio: js.UndefOr[Boolean] = js.native
+    var pixelRatio: js.UndefOr[Boolean] = js.undefined
     
-    var platform: js.UndefOr[Boolean] = js.native
+    var platform: js.UndefOr[Boolean] = js.undefined
     
-    var plugins: js.UndefOr[Boolean] = js.native
+    var plugins: js.UndefOr[Boolean] = js.undefined
     
-    var screenResolution: js.UndefOr[Boolean] = js.native
+    var screenResolution: js.UndefOr[Boolean] = js.undefined
     
-    var sessionStorage: js.UndefOr[Boolean] = js.native
+    var sessionStorage: js.UndefOr[Boolean] = js.undefined
     
-    var timezone: js.UndefOr[Boolean] = js.native
+    var timezone: js.UndefOr[Boolean] = js.undefined
     
-    var timezoneOffset: js.UndefOr[Boolean] = js.native
+    var timezoneOffset: js.UndefOr[Boolean] = js.undefined
     
-    var touchSupport: js.UndefOr[Boolean] = js.native
+    var touchSupport: js.UndefOr[Boolean] = js.undefined
     
-    var userAgent: js.UndefOr[Boolean] = js.native
+    var userAgent: js.UndefOr[Boolean] = js.undefined
     
-    var webgl: js.UndefOr[Boolean] = js.native
+    var webgl: js.UndefOr[Boolean] = js.undefined
     
-    var webglVendorAndRenderer: js.UndefOr[Boolean] = js.native
+    var webglVendorAndRenderer: js.UndefOr[Boolean] = js.undefined
   }
   object AdBlock {
     
@@ -290,13 +288,12 @@ object anon {
     }
   }
   
-  @js.native
   trait DetectScreenOrientation extends StObject {
     
     /**
       * To ensure consistent fingerprints when users rotate their mobile devices
       */
-    var detectScreenOrientation: Boolean = js.native
+    var detectScreenOrientation: Boolean
   }
   object DetectScreenOrientation {
     
@@ -314,12 +311,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ExcludeIE extends StObject {
     
-    var excludeIE: Boolean = js.native
+    var excludeIE: Boolean
     
-    var sortPluginsFor: js.Array[RegExp] = js.native
+    var sortPluginsFor: js.Array[RegExp]
   }
   object ExcludeIE {
     
@@ -343,7 +339,6 @@ object anon {
     }
   }
   
-  @js.native
   trait ExcludeIOS11 extends StObject {
     
     /**
@@ -351,9 +346,9 @@ object anon {
       * We require users to explicitly enable audio fingerprinting on iOS 11.
       * See https://stackoverflow.com/questions/46363048/onaudioprocess-not-called-on-ios11#46534088
       */
-    var excludeIOS11: Boolean = js.native
+    var excludeIOS11: Boolean
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object ExcludeIOS11 {
     
@@ -374,16 +369,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ExtendedJsFonts extends StObject {
     
-    var extendedJsFonts: Boolean = js.native
+    var extendedJsFonts: Boolean
     
-    var swfContainerId: String = js.native
+    var swfContainerId: String
     
-    var swfPath: String = js.native
+    var swfPath: String
     
-    var userDefinedFonts: js.Array[String] = js.native
+    var userDefinedFonts: js.Array[String]
   }
   object ExtendedJsFonts {
     
@@ -418,14 +412,13 @@ object anon {
     }
   }
   
-  @js.native
   trait GetData extends StObject {
     
-    def getData(done: js.Function1[/* value */ js.Any, Unit], options: Options): Unit = js.native
+    def getData(done: js.Function1[/* value */ js.Any, Unit], options: Options): Unit
     
-    var key: String = js.native
+    var key: String
     
-    var pauseBefore: js.UndefOr[Boolean] = js.native
+    var pauseBefore: js.UndefOr[Boolean] = js.undefined
   }
   object GetData {
     

@@ -2,12 +2,10 @@ package typings.dwt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dynamsoftFileUploaderMod {
   
-  @js.native
   trait FileUploader extends StObject {
     
     /**
@@ -23,7 +21,7 @@ object dynamsoftFileUploaderMod {
       URL: String,
       successCallback: js.Function1[/* uploadManager */ UploadManager, Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object FileUploader {
     
@@ -45,7 +43,6 @@ object dynamsoftFileUploaderMod {
     }
   }
   
-  @js.native
   trait FormField extends StObject {
     
     /**
@@ -53,7 +50,7 @@ object dynamsoftFileUploaderMod {
       * @param key Specify the key of the field.
       * @param value Sepcify the value of the field.
       */
-    def Add(key: String, value: String): Unit = js.native
+    def Add(key: String, value: String): Unit
   }
   object FormField {
     
@@ -71,34 +68,33 @@ object dynamsoftFileUploaderMod {
     }
   }
   
-  @js.native
   trait Job extends StObject {
     
     /**
       * Specify the block size (in bytes). By default, it's 10240.
       */
-    var BlockSize: Double = js.native
+    var BlockSize: Double
     
     /**
       * Specify the file name.
       */
-    var FileName: String = js.native
+    var FileName: String
     
     /**
       * Specify the fields in the HTTP Post Form.
       */
-    var FormField: typings.dwt.dynamsoftFileUploaderMod.FormField = js.native
+    var FormField: typings.dwt.dynamsoftFileUploaderMod.FormField
     
     /**
       * Specify custom HTTP Post request headers.
       * Example: job.HttpHeader["Content-Type"] = "text/plain";
       */
-    var HttpHeader: js.Object = js.native
+    var HttpHeader: js.Object
     
     /**
       * Return the Http version.
       */
-    val HttpVersion: String = js.native
+    val HttpVersion: String
     
     /**
       * A callback triggered when the job succeeds.
@@ -106,40 +102,40 @@ object dynamsoftFileUploaderMod {
       * @argument errorCode The error code.
       * @argument errorString The error string.
       */
-    def OnRunFailure(job: Job, errorCode: Double, errorString: String): Unit = js.native
+    def OnRunFailure(job: Job, errorCode: Double, errorString: String): Unit
     
     /**
       * A callback triggered when the job succeeds.
       * @argument job Specify the job.
       */
-    def OnRunSuccess(job: Job): Unit = js.native
+    def OnRunSuccess(job: Job): Unit
     
     /**
       * A callback triggered multiple times during the upload.
       * @argument job Specify the job.
       * @argument percentage Return the percentage.
       */
-    def OnUploadTransferPercentage(job: Job, percentage: Double): Unit = js.native
+    def OnUploadTransferPercentage(job: Job, percentage: Double): Unit
     
     /**
       * Specify the URL of the script to receive the upload.
       */
-    var ServerUrl: String = js.native
+    var ServerUrl: String
     
     /**
       * Specify the main content of the job, i.e. the file(s).
       */
-    var SourceValue: typings.dwt.dynamsoftFileUploaderMod.SourceValue = js.native
+    var SourceValue: typings.dwt.dynamsoftFileUploaderMod.SourceValue
     
     /**
       * Specify the number of threads (<=4) for the upload.
       */
-    var ThreadNum: Double = js.native
+    var ThreadNum: Double
     
     /**
       * Return the version of the job.
       */
-    val Version: Double = js.native
+    val Version: Double
   }
   object Job {
     
@@ -217,30 +213,29 @@ object dynamsoftFileUploaderMod {
     def Add(source: String, name: String, key: String): Unit = js.native
   }
   
-  @js.native
   trait UploadManager extends StObject {
     
     /**
       * Cancel a job.
       * @param job Specify the job.
       */
-    def Cancel(job: Job): Boolean = js.native
+    def Cancel(job: Job): Boolean
     
     /**
       * Cancel all jobs.
       */
-    def CancelAllUpload(): Boolean = js.native
+    def CancelAllUpload(): Boolean
     
     /**
       * Create an upload job.
       */
-    def CreateJob(): Job = js.native
+    def CreateJob(): Job
     
     /**
       * Start uploading (processing the specified job).
       * @param job Specify the job.
       */
-    def Run(job: Job): Boolean = js.native
+    def Run(job: Job): Boolean
   }
   object UploadManager {
     

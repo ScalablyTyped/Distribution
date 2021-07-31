@@ -3,11 +3,9 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Media.Encoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Media. */
-@js.native
 trait IMedia extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait IMedia extends StObject {
     * as well as Cucumber-specific media types such as `text/x.cucumber.gherkin+plain`
     * and `text/x.cucumber.stacktrace+plain`
     */
-  var contentType: js.UndefOr[String | Null] = js.native
+  var contentType: js.UndefOr[String | Null] = js.undefined
   
   /** Media encoding */
-  var encoding: js.UndefOr[Encoding | Null] = js.native
+  var encoding: js.UndefOr[Encoding | Null] = js.undefined
 }
 object IMedia {
   

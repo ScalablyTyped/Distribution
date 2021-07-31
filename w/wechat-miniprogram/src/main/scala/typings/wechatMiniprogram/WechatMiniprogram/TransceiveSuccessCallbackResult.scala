@@ -3,15 +3,13 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransceiveSuccessCallbackResult extends StObject {
   
-  var data: ArrayBuffer = js.native
+  var data: ArrayBuffer
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object TransceiveSuccessCallbackResult {
   

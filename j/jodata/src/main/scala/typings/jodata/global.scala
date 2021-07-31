@@ -2,7 +2,6 @@ package typings.jodata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -10,7 +9,8 @@ object global {
   @JSGlobal("jo")
   @js.native
   class jo protected ()
-    extends typings.jodata.jo {
+    extends StObject
+       with typings.jodata.jo {
     def this(baseUri: String) = this()
   }
   object jo {
@@ -22,25 +22,40 @@ object global {
     @JSGlobal("jo.Concat")
     @js.native
     class Concat protected ()
-      extends typings.jodata.jo.Concat {
+      extends StObject
+         with typings.jodata.jo.Concat {
       def this(value1: String, value2: String) = this()
       def this(value1: String, value2: typings.jodata.jo.Concat) = this()
       def this(value1: typings.jodata.jo.Concat, value2: String) = this()
       def this(value1: typings.jodata.jo.Concat, value2: typings.jodata.jo.Concat) = this()
+      
+      /* CompleteClass */
+      var LeftSide: String | typings.jodata.jo.Concat = js.native
+      
+      /* CompleteClass */
+      var RightSide: String | typings.jodata.jo.Concat = js.native
     }
     
     @JSGlobal("jo.FilterClause")
     @js.native
     class FilterClause ()
-      extends typings.jodata.jo.FilterClause {
+      extends StObject
+         with typings.jodata.jo.FilterClause {
       def this(property: String) = this()
     }
     
     @JSGlobal("jo.PrecedenceGroup")
     @js.native
     class PrecedenceGroup protected ()
-      extends typings.jodata.jo.PrecedenceGroup {
+      extends StObject
+         with typings.jodata.jo.PrecedenceGroup {
       def this(filterClause: typings.jodata.jo.FilterClause) = this()
+      
+      /* CompleteClass */
+      override def andFilter(filterClause: typings.jodata.jo.FilterClause): typings.jodata.jo.FilterClause = js.native
+      
+      /* CompleteClass */
+      override def orFilter(filterClause: typings.jodata.jo.FilterClause): typings.jodata.jo.FilterClause = js.native
     }
     
     /* static member */

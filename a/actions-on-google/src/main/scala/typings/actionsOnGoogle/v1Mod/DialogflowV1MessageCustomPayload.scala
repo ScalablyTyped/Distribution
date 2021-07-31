@@ -4,15 +4,14 @@ import typings.actionsOnGoogle.actionsOnGoogleNumbers.`4`
 import typings.actionsOnGoogle.commonMod.JsonObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageCustomPayload
-  extends DialogflowV1BaseMessage[`4`]
+  extends StObject
+     with DialogflowV1BaseMessage[`4`]
      with DialogflowV1Message {
   
-  var payload: js.UndefOr[JsonObject] = js.native
+  var payload: js.UndefOr[JsonObject] = js.undefined
 }
 object DialogflowV1MessageCustomPayload {
   

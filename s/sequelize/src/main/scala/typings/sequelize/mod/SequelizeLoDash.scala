@@ -3,11 +3,12 @@ package typings.sequelize.mod
 import typings.lodash.mod.LoDashStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SequelizeLoDash extends LoDashStatic {
+trait SequelizeLoDash
+  extends StObject
+     with LoDashStatic {
   
   def camelizeIf(str: String, condition: Boolean): String = js.native
   

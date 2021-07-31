@@ -2,15 +2,13 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
-  var metadata: js.Object = js.native
+  var metadata: js.Object
   
-  var text: String = js.native
+  var text: String
 }
 object Metadata {
   

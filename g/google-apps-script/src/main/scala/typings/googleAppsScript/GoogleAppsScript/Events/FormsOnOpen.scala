@@ -5,13 +5,13 @@ import typings.googleAppsScript.GoogleAppsScript.Forms.Form
 import typings.googleAppsScript.GoogleAppsScript.Script.AuthMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormsOnOpen extends AppsScriptEvent {
+trait FormsOnOpen
+  extends StObject
+     with AppsScriptEvent {
   
-  var source: Form = js.native
+  var source: Form
 }
 object FormsOnOpen {
   

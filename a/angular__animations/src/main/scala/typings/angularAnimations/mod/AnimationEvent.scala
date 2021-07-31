@@ -2,47 +2,45 @@ package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationEvent extends StObject {
   
   /**
     * Internal.
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /**
     * The element to which the animation is attached.
     */
-  var element: js.Any = js.native
+  var element: js.Any
   
   /**
     * The name of the state from which the animation is triggered.
     */
-  var fromState: String = js.native
+  var fromState: String
   
   /**
     * The animation phase in which the callback was invoked, one of
     * "start" or "done".
     */
-  var phaseName: String = js.native
+  var phaseName: String
   
   /**
     * The name of the state in which the animation completes.
     */
-  var toState: String = js.native
+  var toState: String
   
   /**
     * The time it takes the animation to complete, in milliseconds.
     */
-  var totalTime: Double = js.native
+  var totalTime: Double
   
   /**
     * Internal.
     */
-  var triggerName: String = js.native
+  var triggerName: String
 }
 object AnimationEvent {
   

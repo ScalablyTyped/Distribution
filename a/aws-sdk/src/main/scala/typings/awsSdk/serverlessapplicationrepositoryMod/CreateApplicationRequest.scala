@@ -2,91 +2,89 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateApplicationRequest extends StObject {
   
   /**
     * The name of the author publishing the app.Minimum length=1. Maximum length=127.Pattern "^[a-z0-9](([a-z0-9]|-(?!-))*[a-z0-9])?$";
     */
-  var Author: string = js.native
+  var Author: string
   
   /**
     * The description of the application.Minimum length=1. Maximum length=256
     */
-  var Description: string = js.native
+  var Description: string
   
   /**
     * A URL with more information about the application, for example the location of your GitHub repository for the application.
     */
-  var HomePageUrl: js.UndefOr[string] = js.native
+  var HomePageUrl: js.UndefOr[string] = js.undefined
   
   /**
     * Labels to improve discovery of apps in search results.Minimum length=1. Maximum length=127. Maximum number of labels: 10Pattern: "^[a-zA-Z0-9+\\-_:\\/@]+$";
     */
-  var Labels: js.UndefOr[listOfString] = js.native
+  var Labels: js.UndefOr[listOfString] = js.undefined
   
   /**
     * A local text file that contains the license of the app that matches the spdxLicenseID value of your application.
     The file has the format file://&lt;path>/&lt;filename>.Maximum size 5 MBYou can specify only one of licenseBody and licenseUrl; otherwise, an error results.
     */
-  var LicenseBody: js.UndefOr[string] = js.native
+  var LicenseBody: js.UndefOr[string] = js.undefined
   
   /**
     * A link to the S3 object that contains the license of the app that matches the spdxLicenseID value of your application.Maximum size 5 MBYou can specify only one of licenseBody and licenseUrl; otherwise, an error results.
     */
-  var LicenseUrl: js.UndefOr[string] = js.native
+  var LicenseUrl: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the application that you want to publish.Minimum length=1. Maximum length=140Pattern: "[a-zA-Z0-9\\-]+";
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * A local text readme file in Markdown language that contains a more detailed description of the application and how it works.
     The file has the format file://&lt;path>/&lt;filename>.Maximum size 5 MBYou can specify only one of readmeBody and readmeUrl; otherwise, an error results.
     */
-  var ReadmeBody: js.UndefOr[string] = js.native
+  var ReadmeBody: js.UndefOr[string] = js.undefined
   
   /**
     * A link to the S3 object in Markdown language that contains a more detailed description of the application and how it works.Maximum size 5 MBYou can specify only one of readmeBody and readmeUrl; otherwise, an error results.
     */
-  var ReadmeUrl: js.UndefOr[string] = js.native
+  var ReadmeUrl: js.UndefOr[string] = js.undefined
   
   /**
     * The semantic version of the application:
     https://semver.org/
     
     */
-  var SemanticVersion: js.UndefOr[string] = js.native
+  var SemanticVersion: js.UndefOr[string] = js.undefined
   
   /**
     * A link to the S3 object that contains the ZIP archive of the source code for this version of your application.Maximum size 50 MB
     */
-  var SourceCodeArchiveUrl: js.UndefOr[string] = js.native
+  var SourceCodeArchiveUrl: js.UndefOr[string] = js.undefined
   
   /**
     * A link to a public repository for the source code of your application, for example the URL of a specific GitHub commit.
     */
-  var SourceCodeUrl: js.UndefOr[string] = js.native
+  var SourceCodeUrl: js.UndefOr[string] = js.undefined
   
   /**
     * A valid identifier from https://spdx.org/licenses/.
     */
-  var SpdxLicenseId: js.UndefOr[string] = js.native
+  var SpdxLicenseId: js.UndefOr[string] = js.undefined
   
   /**
     * The local raw packaged AWS SAM template file of your application.
     The file has the format file://&lt;path>/&lt;filename>.You can specify only one of templateBody and templateUrl; otherwise an error results.
     */
-  var TemplateBody: js.UndefOr[string] = js.native
+  var TemplateBody: js.UndefOr[string] = js.undefined
   
   /**
     * A link to the S3 object containing the packaged AWS SAM template of your application.You can specify only one of templateBody and templateUrl; otherwise an error results.
     */
-  var TemplateUrl: js.UndefOr[string] = js.native
+  var TemplateUrl: js.UndefOr[string] = js.undefined
 }
 object CreateApplicationRequest {
   

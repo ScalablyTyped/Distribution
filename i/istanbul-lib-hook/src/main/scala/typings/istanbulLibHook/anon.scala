@@ -2,20 +2,18 @@ package typings.istanbulLibHook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<istanbul-lib-hook.istanbul-lib-hook.HookRequireOptions> */
-  @js.native
   trait PartialHookRequireOptions extends StObject {
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var postLoadHook: js.UndefOr[js.Function1[/* filename */ String, Unit]] = js.native
+    var postLoadHook: js.UndefOr[js.Function1[/* filename */ String, Unit]] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object PartialHookRequireOptions {
     
@@ -52,12 +50,11 @@ object anon {
   }
   
   /* Inlined std.Partial<istanbul-lib-hook.istanbul-lib-hook.HookRunInContextOptions> */
-  @js.native
   trait PartialHookRunInContextOp extends StObject {
     
-    var coverageVariable: js.UndefOr[String] = js.native
+    var coverageVariable: js.UndefOr[String] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object PartialHookRunInContextOp {
     
@@ -85,10 +82,9 @@ object anon {
   }
   
   /* Inlined std.Partial<istanbul-lib-hook.istanbul-lib-hook.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptions {
     

@@ -2,15 +2,13 @@ package typings.ckeditorCkeditor5Utils.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindChain extends StObject {
   
-  def to(observable: Observable, bindProperties: (Observable | String | js.Function)*): Unit = js.native
+  def to(observable: Observable, bindProperties: (Observable | String | js.Function)*): Unit
   
-  def toMany(observable: js.Array[Observable], bindProperties: (Observable | String | js.Function)*): Unit = js.native
+  def toMany(observable: js.Array[Observable], bindProperties: (Observable | String | js.Function)*): Unit
 }
 object BindChain {
   

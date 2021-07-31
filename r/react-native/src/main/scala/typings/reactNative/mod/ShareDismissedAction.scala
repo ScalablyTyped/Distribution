@@ -3,19 +3,19 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.dismissedAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShareDismissedAction extends ShareAction {
+trait ShareDismissedAction
+  extends StObject
+     with ShareAction {
   
-  var action: dismissedAction = js.native
+  var action: dismissedAction
 }
 object ShareDismissedAction {
   
   @scala.inline
-  def apply(action: dismissedAction): ShareDismissedAction = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+  def apply(): ShareDismissedAction = {
+    val __obj = js.Dynamic.literal(action = "dismissedAction")
     __obj.asInstanceOf[ShareDismissedAction]
   }
   

@@ -6,17 +6,15 @@ import typings.vis.visStrings.weekly
 import typings.vis.visStrings.yearly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineHiddenDateOption extends StObject {
   
-  var end: DateType = js.native
+  var end: DateType
   
-  var repeat: js.UndefOr[daily | weekly | monthly | yearly] = js.native
+  var repeat: js.UndefOr[daily | weekly | monthly | yearly] = js.undefined
   
-  var start: DateType = js.native
+  var start: DateType
 }
 object TimelineHiddenDateOption {
   

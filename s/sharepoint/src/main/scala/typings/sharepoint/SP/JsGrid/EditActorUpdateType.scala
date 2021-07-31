@@ -2,7 +2,6 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,9 +11,13 @@ sealed trait EditActorUpdateType extends StObject
 object EditActorUpdateType extends StObject {
   
   @js.native
-  sealed trait Committed extends EditActorUpdateType
+  sealed trait Committed
+    extends StObject
+       with EditActorUpdateType
   
   // 0,
   @js.native
-  sealed trait Uncommitted extends EditActorUpdateType
+  sealed trait Uncommitted
+    extends StObject
+       with EditActorUpdateType
 }

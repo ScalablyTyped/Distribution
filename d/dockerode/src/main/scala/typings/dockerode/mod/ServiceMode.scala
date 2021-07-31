@@ -4,19 +4,17 @@ import typings.dockerode.anon.MaxConcurrent
 import typings.dockerode.anon.Replicas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceMode extends StObject {
   
-  var Global: js.UndefOr[js.Object] = js.native
+  var Global: js.UndefOr[js.Object] = js.undefined
   
-  var GlobalJob: js.UndefOr[js.Object] = js.native
+  var GlobalJob: js.UndefOr[js.Object] = js.undefined
   
-  var Replicated: js.UndefOr[Replicas] = js.native
+  var Replicated: js.UndefOr[Replicas] = js.undefined
   
-  var ReplicatedJob: js.UndefOr[MaxConcurrent] = js.native
+  var ReplicatedJob: js.UndefOr[MaxConcurrent] = js.undefined
 }
 object ServiceMode {
   

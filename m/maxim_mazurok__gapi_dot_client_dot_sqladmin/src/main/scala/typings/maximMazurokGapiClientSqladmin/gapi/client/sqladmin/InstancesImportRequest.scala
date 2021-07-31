@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesImportRequest extends StObject {
   
   /** Contains details about the import operation. */
-  var importContext: js.UndefOr[ImportContext] = js.native
+  var importContext: js.UndefOr[ImportContext] = js.undefined
 }
 object InstancesImportRequest {
   

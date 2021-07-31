@@ -2,13 +2,11 @@ package typings.stripe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHeaderOptions extends StObject {
   
-  var api_key: js.UndefOr[String] = js.native
+  var api_key: js.UndefOr[String] = js.undefined
   
   /**
     * Many objects contain the ID of a related object in their response properties. For example, a Charge may have an associated Customer ID.
@@ -20,7 +18,7 @@ trait IHeaderOptions extends StObject {
     *
     * You can expand multiple objects at once by identifying multiple items in the expand array.
     */
-  var expand: js.UndefOr[js.Array[String]] = js.native
+  var expand: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * To safely retry an API request without accidentally performing the same operation twice,
@@ -31,9 +29,9 @@ trait IHeaderOptions extends StObject {
     * We'll always send back the same response for requests made with the same key, even if you make the request
     * with different request parameters. The keys expire after 24 hours.
     */
-  var idempotency_key: js.UndefOr[String] = js.native
+  var idempotency_key: js.UndefOr[String] = js.undefined
   
-  var stripe_account: js.UndefOr[String] = js.native
+  var stripe_account: js.UndefOr[String] = js.undefined
 }
 object IHeaderOptions {
   

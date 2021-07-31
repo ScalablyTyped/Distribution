@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyOtherContactToMyContactsGroupRequest extends StObject {
   
   /** Required. A field mask to restrict which fields are copied into the new contact. Valid values are: * emailAddresses * names * phoneNumbers */
-  var copyMask: js.UndefOr[String] = js.native
+  var copyMask: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A field mask to restrict which fields on the person are returned. Multiple fields can be specified by separating them with commas. Defaults to the copy mask with metadata
@@ -17,10 +15,10 @@ trait CopyOtherContactToMyContactsGroupRequest extends StObject {
     * externalIds * genders * imClients * interests * locales * locations * memberships * metadata * miscKeywords * names * nicknames * occupations * organizations * phoneNumbers * photos
     * * relations * sipAddresses * skills * urls * userDefined
     */
-  var readMask: js.UndefOr[String] = js.native
+  var readMask: js.UndefOr[String] = js.undefined
   
   /** Optional. A mask of what source types to return. Defaults to READ_SOURCE_TYPE_CONTACT and READ_SOURCE_TYPE_PROFILE if not set. */
-  var sources: js.UndefOr[js.Array[String]] = js.native
+  var sources: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CopyOtherContactToMyContactsGroupRequest {
   

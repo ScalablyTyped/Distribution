@@ -2,51 +2,49 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Channel extends StObject {
   
   /**
     * Channel ARN.
     */
-  var arn: js.UndefOr[ChannelArn] = js.native
+  var arn: js.UndefOr[ChannelArn] = js.undefined
   
   /**
     * Whether the channel is authorized.
     */
-  var authorized: js.UndefOr[IsAuthorized] = js.native
+  var authorized: js.UndefOr[IsAuthorized] = js.undefined
   
   /**
     * Channel ingest endpoint, part of the definition of an ingest server, used when you set up streaming software.
     */
-  var ingestEndpoint: js.UndefOr[IngestEndpoint] = js.native
+  var ingestEndpoint: js.UndefOr[IngestEndpoint] = js.undefined
   
   /**
     * Channel latency mode. Default: LOW.
     */
-  var latencyMode: js.UndefOr[ChannelLatencyMode] = js.native
+  var latencyMode: js.UndefOr[ChannelLatencyMode] = js.undefined
   
   /**
     * Channel name.
     */
-  var name: js.UndefOr[ChannelName] = js.native
+  var name: js.UndefOr[ChannelName] = js.undefined
   
   /**
     * Channel playback URL.
     */
-  var playbackUrl: js.UndefOr[PlaybackURL] = js.native
+  var playbackUrl: js.UndefOr[PlaybackURL] = js.undefined
   
   /**
     * Array of 1-50 maps, each of the form string:string (key:value).
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
   
   /**
     * Channel type, which determines the allowable resolution and bitrate. If you exceed the allowable resolution or bitrate, the stream probably will disconnect immediately. Valid values:    STANDARD: Multiple qualities are generated from the original input, to automatically give viewers the best experience for their devices and network conditions. Vertical resolution can be up to 1080 and bitrate can be up to 8.5 Mbps.    BASIC: Amazon IVS delivers the original input to viewers. The viewer’s video-quality choice is limited to the original input. Vertical resolution can be up to 480 and bitrate can be up to 1.5 Mbps.   Default: STANDARD.
     */
-  var `type`: js.UndefOr[ChannelType] = js.native
+  var `type`: js.UndefOr[ChannelType] = js.undefined
 }
 object Channel {
   

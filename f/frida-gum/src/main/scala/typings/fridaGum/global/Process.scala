@@ -12,10 +12,13 @@ import typings.fridaGum.ThreadDetails
 import typings.fridaGum.ThreadId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Process {
+  
+  @JSGlobal("Process")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Architecture of the current process.
@@ -37,84 +40,72 @@ object Process {
   /**
     * Just like `enumerateRanges()`, but for individual memory allocations known to the system heap.
     */
-  @JSGlobal("Process.enumerateMallocRanges")
-  @js.native
-  def enumerateMallocRanges(): js.Array[RangeDetails] = js.native
+  @scala.inline
+  def enumerateMallocRanges(): js.Array[RangeDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateMallocRanges")().asInstanceOf[js.Array[RangeDetails]]
   
   /**
     * Enumerates modules loaded right now.
     */
-  @JSGlobal("Process.enumerateModules")
-  @js.native
-  def enumerateModules(): js.Array[typings.fridaGum.Module] = js.native
+  @scala.inline
+  def enumerateModules(): js.Array[typings.fridaGum.Module] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateModules")().asInstanceOf[js.Array[typings.fridaGum.Module]]
   
-  @JSGlobal("Process.enumerateRanges")
-  @js.native
-  def enumerateRanges(specifier: EnumerateRangesSpecifier): js.Array[RangeDetails] = js.native
+  @scala.inline
+  def enumerateRanges(specifier: EnumerateRangesSpecifier): js.Array[RangeDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateRanges")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Array[RangeDetails]]
   /**
     * Enumerates memory ranges satisfying `specifier`.
     *
     * @param specifier The kind of ranges to include.
     */
-  @JSGlobal("Process.enumerateRanges")
-  @js.native
-  def enumerateRanges(specifier: PageProtection): js.Array[RangeDetails] = js.native
+  @scala.inline
+  def enumerateRanges(specifier: PageProtection): js.Array[RangeDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateRanges")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Array[RangeDetails]]
   
   /**
     * Enumerates all threads.
     */
-  @JSGlobal("Process.enumerateThreads")
-  @js.native
-  def enumerateThreads(): js.Array[ThreadDetails] = js.native
+  @scala.inline
+  def enumerateThreads(): js.Array[ThreadDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateThreads")().asInstanceOf[js.Array[ThreadDetails]]
   
   /**
     * Looks up a module by address. Returns null if not found.
     */
-  @JSGlobal("Process.findModuleByAddress")
-  @js.native
-  def findModuleByAddress(address: NativePointerValue): typings.fridaGum.Module | Null = js.native
+  @scala.inline
+  def findModuleByAddress(address: NativePointerValue): typings.fridaGum.Module | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findModuleByAddress")(address.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Module | Null]
   
   /**
     * Looks up a module by name. Returns null if not found.
     */
-  @JSGlobal("Process.findModuleByName")
-  @js.native
-  def findModuleByName(name: String): typings.fridaGum.Module | Null = js.native
+  @scala.inline
+  def findModuleByName(name: String): typings.fridaGum.Module | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findModuleByName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Module | Null]
   
   /**
     * Looks up a memory range by address. Returns null if not found.
     */
-  @JSGlobal("Process.findRangeByAddress")
-  @js.native
-  def findRangeByAddress(address: NativePointerValue): RangeDetails | Null = js.native
+  @scala.inline
+  def findRangeByAddress(address: NativePointerValue): RangeDetails | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findRangeByAddress")(address.asInstanceOf[js.Any]).asInstanceOf[RangeDetails | Null]
   
   /**
     * Gets this thread’s OS-specific id.
     */
-  @JSGlobal("Process.getCurrentThreadId")
-  @js.native
-  def getCurrentThreadId(): ThreadId = js.native
+  @scala.inline
+  def getCurrentThreadId(): ThreadId = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentThreadId")().asInstanceOf[ThreadId]
   
   /**
     * Looks up a module by address. Throws an exception if not found.
     */
-  @JSGlobal("Process.getModuleByAddress")
-  @js.native
-  def getModuleByAddress(address: NativePointerValue): typings.fridaGum.Module = js.native
+  @scala.inline
+  def getModuleByAddress(address: NativePointerValue): typings.fridaGum.Module = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleByAddress")(address.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Module]
   
   /**
     * Looks up a module by name. Throws an exception if not found.
     */
-  @JSGlobal("Process.getModuleByName")
-  @js.native
-  def getModuleByName(name: String): typings.fridaGum.Module = js.native
+  @scala.inline
+  def getModuleByName(name: String): typings.fridaGum.Module = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleByName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Module]
   
   /**
     * Looks up a memory range by address. Throws an exception if not found.
     */
-  @JSGlobal("Process.getRangeByAddress")
-  @js.native
-  def getRangeByAddress(address: NativePointerValue): RangeDetails = js.native
+  @scala.inline
+  def getRangeByAddress(address: NativePointerValue): RangeDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("getRangeByAddress")(address.asInstanceOf[js.Any]).asInstanceOf[RangeDetails]
   
   /**
     * PID of the current process.
@@ -126,9 +117,8 @@ object Process {
   /**
     * Determines whether a debugger is currently attached.
     */
-  @JSGlobal("Process.isDebuggerAttached")
-  @js.native
-  def isDebuggerAttached(): Boolean = js.native
+  @scala.inline
+  def isDebuggerAttached(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDebuggerAttached")().asInstanceOf[Boolean]
   
   /**
     * Size of a virtual memory page in bytes. This is used to make your scripts more portable.
@@ -167,7 +157,6 @@ object Process {
     * Frida will forward the exception to the hosting process' exception
     * handler, if it has one, or let the OS terminate the process.
     */
-  @JSGlobal("Process.setExceptionHandler")
-  @js.native
-  def setExceptionHandler(callback: ExceptionHandlerCallback): Unit = js.native
+  @scala.inline
+  def setExceptionHandler(callback: ExceptionHandlerCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setExceptionHandler")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

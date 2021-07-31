@@ -27,10 +27,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.straight
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteParametersProperties extends StObject {
   
   /**
@@ -38,28 +36,28 @@ trait RouteParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#accumulateAttributes)
     */
-  var accumulateAttributes: js.UndefOr[js.Array[String]] = js.native
+  var accumulateAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Each element in the array is an object that describes the parameter values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#attributeParameterValues)
     */
-  var attributeParameterValues: js.UndefOr[js.Array[AttributeParamValue]] = js.native
+  var attributeParameterValues: js.UndefOr[js.Array[AttributeParamValue]] = js.undefined
   
   /**
     * The set of point barriers loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#barriers)
     */
-  var barriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var barriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * The language used when computing directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsLanguage)
     */
-  var directionsLanguage: js.UndefOr[String] = js.native
+  var directionsLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The length units to use when computing directions.
@@ -68,7 +66,7 @@ trait RouteParametersProperties extends StObject {
     */
   var directionsLengthUnits: js.UndefOr[
     centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Defines the amount of direction information returned.
@@ -77,63 +75,63 @@ trait RouteParametersProperties extends StObject {
     */
   var directionsOutputType: js.UndefOr[
     complete | `complete-no-events` | `instructions-only` | standard | `summary-only`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The style to be used when returning directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsStyleName)
     */
-  var directionsStyleName: js.UndefOr[String] = js.native
+  var directionsStyleName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of network attribute to use for the drive time when computing directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsTimeAttribute)
     */
-  var directionsTimeAttribute: js.UndefOr[String] = js.native
+  var directionsTimeAttribute: js.UndefOr[String] = js.undefined
   
   /**
     * If `true`, avoids network elements restricted by barriers or restrictions specified in [restrictionAttributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#restrictionAttributes).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#doNotLocateOnRestrictedElements)
     */
-  var doNotLocateOnRestrictedElements: js.UndefOr[Boolean] = js.native
+  var doNotLocateOnRestrictedElements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html) can help you find the most efficient path for visiting a given list of stops.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#findBestSequence)
     */
-  var findBestSequence: js.UndefOr[Boolean] = js.native
+  var findBestSequence: js.UndefOr[Boolean] = js.undefined
   
   /**
     * In routes where a stop is not located on a network or a stop could not be reached, the results will differ depending on the value of this property:.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#ignoreInvalidLocations)
     */
-  var ignoreInvalidLocations: js.UndefOr[Boolean] = js.native
+  var ignoreInvalidLocations: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The network attribute name to be used as the impedance attribute in the analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#impedanceAttribute)
     */
-  var impedanceAttribute: js.UndefOr[String] = js.native
+  var impedanceAttribute: js.UndefOr[String] = js.undefined
   
   /**
     * The well-known ID of the spatial reference for the geometries returned with the analysis results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#outSpatialReference)
     */
-  var outSpatialReference: js.UndefOr[SpatialReferenceProperties | String] = js.native
+  var outSpatialReference: js.UndefOr[SpatialReferenceProperties | String] = js.undefined
   
   /**
     * The precision of the output geometry after generalization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#outputGeometryPrecision)
     */
-  var outputGeometryPrecision: js.UndefOr[Double] = js.native
+  var outputGeometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
     * The units of the output geometry precision.
@@ -142,49 +140,49 @@ trait RouteParametersProperties extends StObject {
     */
   var outputGeometryPrecisionUnits: js.UndefOr[
     centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The type of output lines to be generated in the result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#outputLines)
     */
-  var outputLines: js.UndefOr[none | straight | `true-shape` | `true-shape-with-measure`] = js.native
+  var outputLines: js.UndefOr[none | straight | `true-shape` | `true-shape-with-measure`] = js.undefined
   
   /**
     * The set of point barriers loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#pointBarriers)
     */
-  var pointBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var pointBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * The set of polygon barriers loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#polygonBarriers)
     */
-  var polygonBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var polygonBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * The set of polyline barriers loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#polylineBarriers)
     */
-  var polylineBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var polylineBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * If `true`, keeps the first stop fixed in the sequence even when `findBestSequence = true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#preserveFirstStop)
     */
-  var preserveFirstStop: js.UndefOr[Boolean] = js.native
+  var preserveFirstStop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, keeps the last stop fixed in the sequence even when `findBestSequence = true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#preserveLastStop)
     */
-  var preserveLastStop: js.UndefOr[Boolean] = js.native
+  var preserveLastStop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies how U-Turns should be handled.
@@ -193,105 +191,105 @@ trait RouteParametersProperties extends StObject {
     */
   var restrictUTurns: js.UndefOr[
     `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The list of network attribute names to be used as restrictions with the analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#restrictionAttributes)
     */
-  var restrictionAttributes: js.UndefOr[js.Array[String]] = js.native
+  var restrictionAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If `true`, barriers are returned with the [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnBarriers)
     */
-  var returnBarriers: js.UndefOr[Boolean] = js.native
+  var returnBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the service should generate driving directions for each route.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnDirections)
     */
-  var returnDirections: js.UndefOr[Boolean] = js.native
+  var returnDirections: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, polygon barriers are returned in the [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnPolygonBarriers)
     */
-  var returnPolygonBarriers: js.UndefOr[Boolean] = js.native
+  var returnPolygonBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, polyline barriers are returned in the [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnPolylineBarriers)
     */
-  var returnPolylineBarriers: js.UndefOr[Boolean] = js.native
+  var returnPolylineBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, routes are generated and returned in the route property of each [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnRoutes)
     */
-  var returnRoutes: js.UndefOr[Boolean] = js.native
+  var returnRoutes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, stops are returned in the stops property of each [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnStops)
     */
-  var returnStops: js.UndefOr[Boolean] = js.native
+  var returnStops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, `z` values are returned in the [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnZ)
     */
-  var returnZ: js.UndefOr[Boolean] = js.native
+  var returnZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time the route begins.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#startTime)
     */
-  var startTime: js.UndefOr[DateProperties] = js.native
+  var startTime: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * If `true`, the start time will be in UTC format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#startTimeIsUTC)
     */
-  var startTimeIsUTC: js.UndefOr[Boolean] = js.native
+  var startTimeIsUTC: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The set of stops loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#stops)
     */
-  var stops: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var stops: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * A travel mode represents a means of transportation, such as driving or walking.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#travelMode)
     */
-  var travelMode: js.UndefOr[js.Any] = js.native
+  var travelMode: js.UndefOr[js.Any] = js.undefined
   
   /**
     * If `true`, the hierarchy attribute for the network should be used in analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#useHierarchy)
     */
-  var useHierarchy: js.UndefOr[Boolean] = js.native
+  var useHierarchy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A useful feature of the [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html) is the ability to constrain stop visits to certain times of day, or "time windows".
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#useTimeWindows)
     */
-  var useTimeWindows: js.UndefOr[Boolean] = js.native
+  var useTimeWindows: js.UndefOr[Boolean] = js.undefined
 }
 object RouteParametersProperties {
   

@@ -5,22 +5,21 @@ import typings.popperjsCore.typesMod.OffsetData
 import typings.popperjsCore.typesMod.Offsets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictkey
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var arrow: js.UndefOr[CenterOffset] = js.native
+  var arrow: js.UndefOr[CenterOffset] = js.undefined
   
-  var hide: js.UndefOr[HasPopperEscaped] = js.native
+  var hide: js.UndefOr[HasPopperEscaped] = js.undefined
   
-  var offset: js.UndefOr[OffsetData] = js.native
+  var offset: js.UndefOr[OffsetData] = js.undefined
   
-  var popperOffsets: js.UndefOr[Offsets] = js.native
+  var popperOffsets: js.UndefOr[Offsets] = js.undefined
   
-  var preventOverflow: js.UndefOr[Offsets] = js.native
+  var preventOverflow: js.UndefOr[Offsets] = js.undefined
 }
 object Dictkey {
   

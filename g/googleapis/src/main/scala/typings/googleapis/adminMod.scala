@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adminMod {
+  
+  @JSImport("googleapis/build/src/apis/admin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -93,24 +96,21 @@ object adminMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reports_v1")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/admin", "admin")
-  @js.native
-  def admin(options: Options): Admin = js.native
-  @JSImport("googleapis/build/src/apis/admin", "admin")
-  @js.native
-  def admin(options: typings.googleapis.directoryV1Mod.adminDirectoryV1.Options): typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin = js.native
-  @JSImport("googleapis/build/src/apis/admin", "admin")
-  @js.native
-  def admin(options: typings.googleapis.reportsV1Mod.adminReportsV1.Options): typings.googleapis.reportsV1Mod.adminReportsV1.Admin = js.native
-  @JSImport("googleapis/build/src/apis/admin", "admin")
-  @js.native
-  def admin_datatransferv1(version: datatransfer_v1): Admin = js.native
-  @JSImport("googleapis/build/src/apis/admin", "admin")
-  @js.native
-  def admin_directoryv1(version: directory_v1): typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin = js.native
-  @JSImport("googleapis/build/src/apis/admin", "admin")
-  @js.native
-  def admin_reportsv1(version: reports_v1): typings.googleapis.reportsV1Mod.adminReportsV1.Admin = js.native
+  @scala.inline
+  def admin(options: Options): Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(options.asInstanceOf[js.Any]).asInstanceOf[Admin]
+  @scala.inline
+  def admin(options: typings.googleapis.directoryV1Mod.adminDirectoryV1.Options): typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin]
+  @scala.inline
+  def admin(options: typings.googleapis.reportsV1Mod.adminReportsV1.Options): typings.googleapis.reportsV1Mod.adminReportsV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.reportsV1Mod.adminReportsV1.Admin]
+  
+  @scala.inline
+  def admin_datatransferv1(version: datatransfer_v1): Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(version.asInstanceOf[js.Any]).asInstanceOf[Admin]
+  
+  @scala.inline
+  def admin_directoryv1(version: directory_v1): typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin]
+  
+  @scala.inline
+  def admin_reportsv1(version: reports_v1): typings.googleapis.reportsV1Mod.adminReportsV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.reportsV1Mod.adminReportsV1.Admin]
   
   object auth extends Shortcut {
     
@@ -141,9 +141,12 @@ object adminMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/admin", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/admin", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

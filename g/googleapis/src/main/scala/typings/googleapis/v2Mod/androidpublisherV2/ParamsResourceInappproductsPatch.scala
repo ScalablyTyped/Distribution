@@ -6,39 +6,39 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceInappproductsPatch extends StandardParameters {
+trait ParamsResourceInappproductsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * If true the prices for all regions targeted by the parent app that don't
     * have a price specified for this in-app product will be auto converted to
     * the target currency based on the default price. Defaults to false.
     */
-  var autoConvertMissingPrices: js.UndefOr[Boolean] = js.native
+  var autoConvertMissingPrices: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Unique identifier for the Android app with the in-app product; for
     * example, "com.spiffygame".
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaInAppProduct] = js.native
+  var requestBody: js.UndefOr[SchemaInAppProduct] = js.undefined
   
   /**
     * Unique identifier for the in-app product.
     */
-  var sku: js.UndefOr[String] = js.native
+  var sku: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceInappproductsPatch {
   

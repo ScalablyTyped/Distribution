@@ -3,27 +3,25 @@ package typings.ipp.anon
 import typings.ipp.mod.CharacterSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Requestedattributes extends StObject {
   
-  var `attributes-charset`: js.UndefOr[CharacterSet] = js.native
+  var `attributes-charset`: js.UndefOr[CharacterSet] = js.undefined
   
-  var `attributes-natural-language`: js.UndefOr[String] = js.native
+  var `attributes-natural-language`: js.UndefOr[String] = js.undefined
   
-  var `job-id`: js.UndefOr[Double] = js.native
+  var `job-id`: js.UndefOr[Double] = js.undefined
   
-  var `job-uri`: js.UndefOr[String] = js.native
+  var `job-uri`: js.UndefOr[String] = js.undefined
   
-  var `printer-uri`: js.UndefOr[String] = js.native
+  var `printer-uri`: js.UndefOr[String] = js.undefined
   
   var `requested-attributes`: js.UndefOr[
     js.Array[
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 204 */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object Requestedattributes {
   

@@ -2,15 +2,13 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var newVal: js.UndefOr[js.Any] = js.native
+  var newVal: js.UndefOr[js.Any] = js.undefined
   
-  var oldVal: js.UndefOr[js.Any] = js.native
+  var oldVal: js.UndefOr[js.Any] = js.undefined
 }
 object `1` {
   

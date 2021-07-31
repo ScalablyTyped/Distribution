@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorModel.anon.A
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "Fragment")
 @js.native
-class Fragment[S /* <: Schema[_, _] */] () extends StObject {
+class Fragment[S /* <: Schema[js.Any, js.Any] */] () extends StObject {
   
   /**
     * Create a new fragment containing the combined content of this
@@ -157,34 +156,27 @@ object Fragment {
     * fragment, the fragment itself. For a node or array of nodes, a
     * fragment containing those nodes.
     */
-  @JSImport("prosemirror-model", "Fragment.from")
-  @js.native
-  def from[S /* <: Schema[_, _] */](): Fragment[S] = js.native
-  @JSImport("prosemirror-model", "Fragment.from")
-  @js.native
-  def from[S /* <: Schema[_, _] */](nodes: js.Array[ProsemirrorNode[S]]): Fragment[S] = js.native
-  @JSImport("prosemirror-model", "Fragment.from")
-  @js.native
-  def from[S /* <: Schema[_, _] */](nodes: Fragment[S]): Fragment[S] = js.native
-  @JSImport("prosemirror-model", "Fragment.from")
-  @js.native
-  def from[S /* <: Schema[_, _] */](nodes: ProsemirrorNode[S]): Fragment[S] = js.native
+  @scala.inline
+  def from[S /* <: Schema[js.Any, js.Any] */](): Fragment[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[Fragment[S]]
+  @scala.inline
+  def from[S /* <: Schema[js.Any, js.Any] */](nodes: js.Array[ProsemirrorNode[S]]): Fragment[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(nodes.asInstanceOf[js.Any]).asInstanceOf[Fragment[S]]
+  @scala.inline
+  def from[S /* <: Schema[js.Any, js.Any] */](nodes: Fragment[S]): Fragment[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(nodes.asInstanceOf[js.Any]).asInstanceOf[Fragment[S]]
+  @scala.inline
+  def from[S /* <: Schema[js.Any, js.Any] */](nodes: ProsemirrorNode[S]): Fragment[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(nodes.asInstanceOf[js.Any]).asInstanceOf[Fragment[S]]
   
   /**
     * Build a fragment from an array of nodes. Ensures that adjacent
     * text nodes with the same marks are joined together.
     */
-  @JSImport("prosemirror-model", "Fragment.fromArray")
-  @js.native
-  def fromArray[S /* <: Schema[_, _] */](array: js.Array[ProsemirrorNode[S]]): Fragment[S] = js.native
+  @scala.inline
+  def fromArray[S /* <: Schema[js.Any, js.Any] */](array: js.Array[ProsemirrorNode[S]]): Fragment[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Fragment[S]]
   
   /**
     * Deserialize a fragment from its JSON representation.
     */
-  @JSImport("prosemirror-model", "Fragment.fromJSON")
-  @js.native
-  def fromJSON[S /* <: Schema[_, _] */](schema: S): Fragment[S] = js.native
-  @JSImport("prosemirror-model", "Fragment.fromJSON")
-  @js.native
-  def fromJSON[S /* <: Schema[_, _] */](schema: S, value: StringDictionary[js.Any]): Fragment[S] = js.native
+  @scala.inline
+  def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S): Fragment[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any]).asInstanceOf[Fragment[S]]
+  @scala.inline
+  def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S, value: StringDictionary[js.Any]): Fragment[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Fragment[S]]
 }

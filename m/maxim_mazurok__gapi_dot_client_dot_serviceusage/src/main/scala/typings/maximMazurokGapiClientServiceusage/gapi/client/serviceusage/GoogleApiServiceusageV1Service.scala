@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiServiceusageV1Service extends StObject {
   
   /**
     * The service configuration of the available service. Some fields may be filtered out of the configuration in responses to the `ListServices` method. These fields are present only in
     * responses to the `GetService` method.
     */
-  var config: js.UndefOr[GoogleApiServiceusageV1ServiceConfig] = js.native
+  var config: js.UndefOr[GoogleApiServiceusageV1ServiceConfig] = js.undefined
   
   /** The resource name of the consumer and service. A valid name would be: - projects/123/services/serviceusage.googleapis.com */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The resource name of the consumer. A valid name would be: - projects/123 */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /** Whether or not the service has been enabled for use by the consumer. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object GoogleApiServiceusageV1Service {
   

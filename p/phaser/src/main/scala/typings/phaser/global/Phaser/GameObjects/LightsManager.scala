@@ -2,7 +2,6 @@ package typings.phaser.global.Phaser.GameObjects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,4 +12,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Phaser.GameObjects.LightsManager")
 @js.native
 class LightsManager ()
-  extends typings.phaser.Phaser.GameObjects.LightsManager
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.LightsManager

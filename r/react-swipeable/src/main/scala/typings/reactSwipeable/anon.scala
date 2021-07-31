@@ -3,15 +3,13 @@ package typings.reactSwipeable
 import typings.reactSwipeable.typesMod.HandledEvents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Event extends StObject {
     
-    var event: HandledEvents = js.native
+    var event: HandledEvents
   }
   object Event {
     

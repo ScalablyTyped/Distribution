@@ -3,15 +3,13 @@ package typings.browserfs.anon
 import typings.browserfs.fileSystemMod.FileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Readable extends StObject {
   
-  var readable: FileSystem = js.native
+  var readable: FileSystem
   
-  var writable: FileSystem = js.native
+  var writable: FileSystem
 }
 object Readable {
   

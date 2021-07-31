@@ -3,17 +3,17 @@ package typings.yandexMaps.mod.control
 import typings.yandexMaps.anon.Image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGeolocationControlParameters extends IButtonParameters {
+trait IGeolocationControlParameters
+  extends StObject
+     with IButtonParameters {
   
   @JSName("data")
-  var data_IGeolocationControlParameters: js.UndefOr[Image] = js.native
+  var data_IGeolocationControlParameters: js.UndefOr[Image] = js.undefined
   
   @JSName("options")
-  var options_IGeolocationControlParameters: js.UndefOr[IBaseButtonParametersOptions] = js.native
+  var options_IGeolocationControlParameters: js.UndefOr[IBaseButtonParametersOptions] = js.undefined
 }
 object IGeolocationControlParameters {
   

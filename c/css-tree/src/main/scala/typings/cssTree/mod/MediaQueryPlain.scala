@@ -2,25 +2,24 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaQueryPlain
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNodePlain {
   
-  var children: js.Array[CssNodePlain] = js.native
+  var children: js.Array[CssNodePlain]
   
   @JSName("type")
-  var type_MediaQueryPlain: typings.cssTree.cssTreeStrings.MediaQuery = js.native
+  var type_MediaQueryPlain: typings.cssTree.cssTreeStrings.MediaQuery
 }
 object MediaQueryPlain {
   
   @scala.inline
-  def apply(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.MediaQuery): MediaQueryPlain = {
+  def apply(children: js.Array[CssNodePlain]): MediaQueryPlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MediaQuery")
     __obj.asInstanceOf[MediaQueryPlain]
   }
   

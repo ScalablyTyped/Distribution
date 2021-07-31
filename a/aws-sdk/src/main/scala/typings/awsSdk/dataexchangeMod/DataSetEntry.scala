@@ -2,61 +2,59 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSetEntry extends StObject {
   
   /**
     * The ARN for the data set.
     */
-  var Arn: typings.awsSdk.dataexchangeMod.Arn = js.native
+  var Arn: typings.awsSdk.dataexchangeMod.Arn
   
   /**
     * The type of file your data is stored in. Currently, the supported asset type is S3_SNAPSHOT.
     */
-  var AssetType: typings.awsSdk.dataexchangeMod.AssetType = js.native
+  var AssetType: typings.awsSdk.dataexchangeMod.AssetType
   
   /**
     * The date and time that the data set was created, in ISO 8601 format.
     */
-  var CreatedAt: Timestamp = js.native
+  var CreatedAt: Timestamp
   
   /**
     * The description for the data set.
     */
-  var Description: typings.awsSdk.dataexchangeMod.Description = js.native
+  var Description: typings.awsSdk.dataexchangeMod.Description
   
   /**
     * The unique identifier for the data set.
     */
-  var Id: typings.awsSdk.dataexchangeMod.Id = js.native
+  var Id: typings.awsSdk.dataexchangeMod.Id
   
   /**
     * The name of the data set.
     */
-  var Name: typings.awsSdk.dataexchangeMod.Name = js.native
+  var Name: typings.awsSdk.dataexchangeMod.Name
   
   /**
     * A property that defines the data set as OWNED by the account (for providers) or ENTITLED to the account (for subscribers).
     */
-  var Origin: typings.awsSdk.dataexchangeMod.Origin = js.native
+  var Origin: typings.awsSdk.dataexchangeMod.Origin
   
   /**
     * If the origin of this data set is ENTITLED, includes the details for the product on AWS Marketplace.
     */
-  var OriginDetails: js.UndefOr[typings.awsSdk.dataexchangeMod.OriginDetails] = js.native
+  var OriginDetails: js.UndefOr[typings.awsSdk.dataexchangeMod.OriginDetails] = js.undefined
   
   /**
     * The data set ID of the owned data set corresponding to the entitled data set being viewed. This parameter is returned when a data set owner is viewing the entitled copy of its owned data set.
     */
-  var SourceId: js.UndefOr[Id] = js.native
+  var SourceId: js.UndefOr[Id] = js.undefined
   
   /**
     * The date and time that the data set was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: Timestamp = js.native
+  var UpdatedAt: Timestamp
 }
 object DataSetEntry {
   

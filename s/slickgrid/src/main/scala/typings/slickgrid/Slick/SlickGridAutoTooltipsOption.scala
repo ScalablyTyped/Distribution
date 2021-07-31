@@ -2,29 +2,29 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlickGridAutoTooltipsOption extends PluginOptions {
+trait SlickGridAutoTooltipsOption
+  extends StObject
+     with PluginOptions {
   
   /**
     * Enable tooltip for grid cells
     * @default true
     */
-  var enableForCells: js.UndefOr[Boolean] = js.native
+  var enableForCells: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable tooltip for header cells
     * @default false
     */
-  var enableForHeaderCells: js.UndefOr[Boolean] = js.native
+  var enableForHeaderCells: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum length for a tooltip
     * @default null
     */
-  var maxToolTipLength: js.UndefOr[Double] = js.native
+  var maxToolTipLength: js.UndefOr[Double] = js.undefined
 }
 object SlickGridAutoTooltipsOption {
   

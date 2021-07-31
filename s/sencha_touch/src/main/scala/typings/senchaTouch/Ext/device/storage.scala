@@ -4,53 +4,53 @@ import typings.senchaTouch.Ext.IBase
 import typings.senchaTouch.Ext.device.storage.html5.IHTML5
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storage {
   
-  @js.native
-  trait IAbstract extends IBase {
+  trait IAbstract
+    extends StObject
+       with IBase {
     
     /** [Method] Returns the value of databaseDisplayName
       * @returns String
       */
-    var getDatabaseDisplayName: js.UndefOr[js.Function0[String]] = js.native
+    var getDatabaseDisplayName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of databaseName
       * @returns String
       */
-    var getDatabaseName: js.UndefOr[js.Function0[String]] = js.native
+    var getDatabaseName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of databaseSize
       * @returns Object
       */
-    var getDatabaseSize: js.UndefOr[js.Function0[_]] = js.native
+    var getDatabaseSize: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of databaseVersion
       * @returns String
       */
-    var getDatabaseVersion: js.UndefOr[js.Function0[String]] = js.native
+    var getDatabaseVersion: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Sets the value of databaseDisplayName
       * @param databaseDisplayName String The new value.
       */
-    var setDatabaseDisplayName: js.UndefOr[js.Function1[/* databaseDisplayName */ js.UndefOr[String], Unit]] = js.native
+    var setDatabaseDisplayName: js.UndefOr[js.Function1[/* databaseDisplayName */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of databaseName
       * @param databaseName String The new value.
       */
-    var setDatabaseName: js.UndefOr[js.Function1[/* databaseName */ js.UndefOr[String], Unit]] = js.native
+    var setDatabaseName: js.UndefOr[js.Function1[/* databaseName */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of databaseSize
       * @param databaseSize Object The new value.
       */
-    var setDatabaseSize: js.UndefOr[js.Function1[/* databaseSize */ js.UndefOr[js.Any], Unit]] = js.native
+    var setDatabaseSize: js.UndefOr[js.Function1[/* databaseSize */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of databaseVersion
       * @param databaseVersion String The new value.
       */
-    var setDatabaseVersion: js.UndefOr[js.Function1[/* databaseVersion */ js.UndefOr[String], Unit]] = js.native
+    var setDatabaseVersion: js.UndefOr[js.Function1[/* databaseVersion */ js.UndefOr[String], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -76,7 +76,7 @@ object storage {
       def setGetDatabaseNameUndefined: Self = StObject.set(x, "getDatabaseName", js.undefined)
       
       @scala.inline
-      def setGetDatabaseSize(value: () => _): Self = StObject.set(x, "getDatabaseSize", js.Any.fromFunction0(value))
+      def setGetDatabaseSize(value: () => js.Any): Self = StObject.set(x, "getDatabaseSize", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDatabaseSizeUndefined: Self = StObject.set(x, "getDatabaseSize", js.undefined)
@@ -121,8 +121,9 @@ object storage {
   
   object html5 {
     
-    @js.native
-    trait IDatabase extends IBase {
+    trait IDatabase
+      extends StObject
+         with IBase {
       
       /** [Method]
         * @param sql String/String[]/Object/Object[]/SQLStatement/SQLStatement[] SQL Command to run with optional arguments and callbacks
@@ -136,7 +137,7 @@ object storage {
               /* failure */ js.UndefOr[js.Any], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
     }
     object IDatabase {
       

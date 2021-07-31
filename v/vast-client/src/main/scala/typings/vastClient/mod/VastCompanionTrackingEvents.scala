@@ -3,14 +3,13 @@ package typings.vastClient.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VastCompanionTrackingEvents
-  extends /* key */ StringDictionary[js.Array[String]] {
+  extends StObject
+     with /* key */ StringDictionary[js.Array[String]] {
   
-  var creativeView: js.Array[String] = js.native
+  var creativeView: js.Array[String]
 }
 object VastCompanionTrackingEvents {
   

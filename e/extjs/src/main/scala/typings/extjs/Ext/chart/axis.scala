@@ -4,19 +4,19 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object axis {
   
-  @js.native
-  trait IAbstract extends IBase {
+  trait IAbstract
+    extends StObject
+       with IBase {
     
     /** [Config Option] (String[]) */
-    var fields: js.UndefOr[Array] = js.native
+    var fields: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Ext.chart.Label) */
-    var label: js.UndefOr[ILabel] = js.native
+    var label: js.UndefOr[ILabel] = js.undefined
   }
   object IAbstract {
     
@@ -43,54 +43,55 @@ object axis {
     }
   }
   
-  @js.native
-  trait IAxis extends IAbstract {
+  trait IAxis
+    extends StObject
+       with IAbstract {
     
     /** [Config Option] (Boolean) */
-    var adjustEnd: js.UndefOr[Boolean] = js.native
+    var adjustEnd: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var dashSize: js.UndefOr[Double] = js.native
+    var dashSize: js.UndefOr[Double] = js.undefined
     
     /** [Method] Renders the axis into the screen and updates its position
       * @param init Object
       */
-    var drawAxis: js.UndefOr[js.Function1[/* init */ js.UndefOr[js.Any], Unit]] = js.native
+    var drawAxis: js.UndefOr[js.Function1[/* init */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Renders an horizontal and or vertical grid into the Surface  */
-    var drawGrid: js.UndefOr[js.Function0[Unit]] = js.native
+    var drawGrid: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Renders the labels in the axes  */
-    var drawLabel: js.UndefOr[js.Function0[Unit]] = js.native
+    var drawLabel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var grid: js.UndefOr[js.Any] = js.native
+    var grid: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var majorTickSteps: js.UndefOr[Double] = js.native
+    var majorTickSteps: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minorTickSteps: js.UndefOr[Double] = js.native
+    var minorTickSteps: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
     /** [Method] Updates the title of this axis
       * @param title String
       */
-    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.native
+    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Number) */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IAxis {
     
@@ -189,15 +190,15 @@ object axis {
     }
   }
   
-  @js.native
   trait ICategory
-    extends typings.extjs.Ext.chart.axis.IAxis {
+    extends StObject
+       with typings.extjs.Ext.chart.axis.IAxis {
     
     /** [Config Option] (Boolean) */
-    var calculateCategoryCount: js.UndefOr[Boolean] = js.native
+    var calculateCategoryCount: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var categoryNames: js.UndefOr[String] = js.native
+    var categoryNames: js.UndefOr[String] = js.undefined
   }
   object ICategory {
     
@@ -224,28 +225,29 @@ object axis {
     }
   }
   
-  @js.native
-  trait IGauge extends IAbstract {
+  trait IGauge
+    extends StObject
+       with IAbstract {
     
     /** [Config Option] (Number) */
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minimum: js.UndefOr[Double] = js.native
+    var minimum: js.UndefOr[Double] = js.undefined
     
     /** [Method] Updates the title of this axis
       * @param title String
       */
-    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.native
+    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var steps: js.UndefOr[Double] = js.native
+    var steps: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object IGauge {
     
@@ -296,27 +298,27 @@ object axis {
     }
   }
   
-  @js.native
   trait INumeric
-    extends typings.extjs.Ext.chart.axis.IAxis {
+    extends StObject
+       with typings.extjs.Ext.chart.axis.IAxis {
     
     /** [Config Option] (Boolean) */
-    var adjustMaximumByMajorUnit: js.UndefOr[Boolean] = js.native
+    var adjustMaximumByMajorUnit: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var adjustMinimumByMajorUnit: js.UndefOr[Boolean] = js.native
+    var adjustMinimumByMajorUnit: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var constrain: js.UndefOr[Boolean] = js.native
+    var constrain: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var decimals: js.UndefOr[Double] = js.native
+    var decimals: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minimum: js.UndefOr[Double] = js.native
+    var minimum: js.UndefOr[Double] = js.undefined
   }
   object INumeric {
     
@@ -367,11 +369,12 @@ object axis {
     }
   }
   
-  @js.native
-  trait IRadial extends INumeric {
+  trait IRadial
+    extends StObject
+       with INumeric {
     
     /** [Config Option] (Number) */
-    var steps: js.UndefOr[Double] = js.native
+    var steps: js.UndefOr[Double] = js.undefined
   }
   object IRadial {
     
@@ -392,20 +395,21 @@ object axis {
     }
   }
   
-  @js.native
-  trait ITime extends INumeric {
+  trait ITime
+    extends StObject
+       with INumeric {
     
     /** [Config Option] (String/Boolean) */
-    var dateFormat: js.UndefOr[js.Any] = js.native
+    var dateFormat: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Date) */
-    var fromDate: js.UndefOr[js.Any] = js.native
+    var fromDate: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Array) */
-    var step: js.UndefOr[Array] = js.native
+    var step: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Date) */
-    var toDate: js.UndefOr[js.Any] = js.native
+    var toDate: js.UndefOr[js.Any] = js.undefined
   }
   object ITime {
     

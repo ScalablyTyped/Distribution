@@ -5,24 +5,22 @@ import typings.vueTemplateCompiler.vueTemplateCompilerStrings.condense
 import typings.vueTemplateCompiler.vueTemplateCompilerStrings.preserve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * Template compilation options / results
   */
-@js.native
 trait CompilerOptions extends StObject {
   
-  var directives: js.UndefOr[Record[String, DirectiveFunction]] = js.native
+  var directives: js.UndefOr[Record[String, DirectiveFunction]] = js.undefined
   
-  var modules: js.UndefOr[js.Array[ModuleOptions]] = js.native
+  var modules: js.UndefOr[js.Array[ModuleOptions]] = js.undefined
   
-  var outputSourceRange: js.UndefOr[js.Any] = js.native
+  var outputSourceRange: js.UndefOr[js.Any] = js.undefined
   
-  var preserveWhitespace: js.UndefOr[Boolean] = js.native
+  var preserveWhitespace: js.UndefOr[Boolean] = js.undefined
   
-  var whitespace: js.UndefOr[preserve | condense] = js.native
+  var whitespace: js.UndefOr[preserve | condense] = js.undefined
 }
 object CompilerOptions {
   

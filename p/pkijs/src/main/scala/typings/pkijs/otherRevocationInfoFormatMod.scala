@@ -2,43 +2,59 @@ package typings.pkijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object otherRevocationInfoFormatMod {
   
   @JSImport("pkijs/src/OtherRevocationInfoFormat", JSImport.Default)
   @js.native
-  class default () extends OtherRevocationInfoFormat {
+  class default ()
+    extends StObject
+       with OtherRevocationInfoFormat {
     def this(params: js.Any) = this()
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var otherRevInfo: js.Any = js.native
+    
+    /* CompleteClass */
+    var otherRevInfoFormat: String = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("pkijs/src/OtherRevocationInfoFormat", "default.defaultValues")
+    @JSImport("pkijs/src/OtherRevocationInfoFormat", JSImport.Default)
     @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("pkijs/src/OtherRevocationInfoFormat", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/OtherRevocationInfoFormat", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait OtherRevocationInfoFormat extends StObject {
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var otherRevInfo: js.Any = js.native
+    var otherRevInfo: js.Any
     
-    var otherRevInfoFormat: String = js.native
+    var otherRevInfoFormat: String
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
   }
   object OtherRevocationInfoFormat {
     

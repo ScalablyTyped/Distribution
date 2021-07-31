@@ -4,36 +4,34 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filesystemMod {
   
-  @JSImport("tsconfig-paths/lib/filesystem", "fileExistsAsync")
+  @JSImport("tsconfig-paths/lib/filesystem", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def fileExistsAsync(
     path2: String,
     callback2: js.Function2[/* err */ js.UndefOr[Error], /* exists */ js.UndefOr[Boolean], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fileExistsAsync")(path2.asInstanceOf[js.Any], callback2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tsconfig-paths/lib/filesystem", "fileExistsSync")
-  @js.native
-  def fileExistsSync(path: String): Boolean = js.native
+  @scala.inline
+  def fileExistsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fileExistsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tsconfig-paths/lib/filesystem", "readJsonFromDiskAsync")
-  @js.native
+  @scala.inline
   def readJsonFromDiskAsync(
     path: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* content */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonFromDiskAsync")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tsconfig-paths/lib/filesystem", "readJsonFromDiskSync")
-  @js.native
-  def readJsonFromDiskSync(packageJsonPath: String): js.UndefOr[js.Any] = js.native
+  @scala.inline
+  def readJsonFromDiskSync(packageJsonPath: String): js.UndefOr[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJsonFromDiskSync")(packageJsonPath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Any]]
   
-  @JSImport("tsconfig-paths/lib/filesystem", "removeExtension")
-  @js.native
-  def removeExtension(path: String): String = js.native
+  @scala.inline
+  def removeExtension(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeExtension")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type FileExistsAsync_ = js.Function2[
     /* path */ String, 

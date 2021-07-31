@@ -2,19 +2,22 @@ package typings.vueInbrowserCompilerUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseComponentMod {
   
-  @JSImport("vue-inbrowser-compiler-utils/lib/parseComponent", JSImport.Default)
+  @JSImport("vue-inbrowser-compiler-utils/lib/parseComponent", JSImport.Namespace)
   @js.native
-  def default(code: String): VsgSFCDescriptor = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait VsgSFCDescriptor extends VsgSFCDescriptorSimple {
+  @scala.inline
+  def default(code: String): VsgSFCDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any]).asInstanceOf[VsgSFCDescriptor]
+  
+  trait VsgSFCDescriptor
+    extends StObject
+       with VsgSFCDescriptorSimple {
     
-    var styles: js.UndefOr[js.Array[String]] = js.native
+    var styles: js.UndefOr[js.Array[String]] = js.undefined
   }
   object VsgSFCDescriptor {
     
@@ -38,12 +41,11 @@ object parseComponentMod {
     }
   }
   
-  @js.native
   trait VsgSFCDescriptorSimple extends StObject {
     
-    var script: js.UndefOr[String] = js.native
+    var script: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object VsgSFCDescriptorSimple {
     

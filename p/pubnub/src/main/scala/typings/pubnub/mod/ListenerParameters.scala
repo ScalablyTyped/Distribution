@@ -2,41 +2,39 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // addListener
-@js.native
 trait ListenerParameters extends StObject {
   
   /**
     * deprecated: For objects v2, use objects.the objects listener
     */
-  var membership: js.UndefOr[js.Function1[/* membershipEvent */ MembershipEvent, Unit]] = js.native
+  var membership: js.UndefOr[js.Function1[/* membershipEvent */ MembershipEvent, Unit]] = js.undefined
   
-  var message: js.UndefOr[js.Function1[/* messageEvent */ MessageEvent, Unit]] = js.native
+  var message: js.UndefOr[js.Function1[/* messageEvent */ MessageEvent, Unit]] = js.undefined
   
-  var messageAction: js.UndefOr[js.Function1[/* messageActionEvent */ MessageActionEvent, Unit]] = js.native
+  var messageAction: js.UndefOr[js.Function1[/* messageActionEvent */ MessageActionEvent, Unit]] = js.undefined
   
   var objects: js.UndefOr[
     js.Function1[/* objectsEvent */ ObjectsEvent[ObjectCustom, ObjectCustom, ObjectCustom], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var presence: js.UndefOr[js.Function1[/* presenceEvent */ PresenceEvent, Unit]] = js.native
+  var presence: js.UndefOr[js.Function1[/* presenceEvent */ PresenceEvent, Unit]] = js.undefined
   
-  var signal: js.UndefOr[js.Function1[/* signalEvent */ SignalEvent, Unit]] = js.native
-  
-  /**
-    * deprecated: For objects v2, use objects.the objects listener
-    */
-  var space: js.UndefOr[js.Function1[/* spaceEvent */ SpaceEvent, Unit]] = js.native
-  
-  var status: js.UndefOr[js.Function1[/* statusEvent */ StatusEvent, Unit]] = js.native
+  var signal: js.UndefOr[js.Function1[/* signalEvent */ SignalEvent, Unit]] = js.undefined
   
   /**
     * deprecated: For objects v2, use objects.the objects listener
     */
-  var user: js.UndefOr[js.Function1[/* userEvent */ UserEvent, Unit]] = js.native
+  var space: js.UndefOr[js.Function1[/* spaceEvent */ SpaceEvent, Unit]] = js.undefined
+  
+  var status: js.UndefOr[js.Function1[/* statusEvent */ StatusEvent, Unit]] = js.undefined
+  
+  /**
+    * deprecated: For objects v2, use objects.the objects listener
+    */
+  var user: js.UndefOr[js.Function1[/* userEvent */ UserEvent, Unit]] = js.undefined
 }
 object ListenerParameters {
   

@@ -2,25 +2,23 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event generated when the worker VM that was assigned to the pipeline has
   * been released (deleted).
   */
-@js.native
 trait SchemaWorkerReleasedEvent extends StObject {
   
   /**
     * The worker&#39;s instance name.
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * The zone the worker was running in.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaWorkerReleasedEvent {
   

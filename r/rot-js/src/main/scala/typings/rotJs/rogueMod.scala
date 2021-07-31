@@ -3,7 +3,6 @@ package typings.rotJs
 import typings.rotJs.anon.PartialOptionsCellHeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rogueMod {
@@ -14,20 +13,19 @@ object rogueMod {
     def this(width: Double, height: Double, options: PartialOptionsCellHeight) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Number of cells to create on the vertical (number of rooms vertically) */
-    var cellHeight: Double = js.native
+    var cellHeight: Double
     
     /** Number of cells to create on the horizontal (number of rooms horizontally) */
-    var cellWidth: Double = js.native
+    var cellWidth: Double
     
     /** Room min and max height - normally set auto-magically via the constructor. */
-    var roomHeight: js.Tuple2[Double, Double] = js.native
+    var roomHeight: js.Tuple2[Double, Double]
     
     /** Room min and max width - normally set auto-magically via the constructor. */
-    var roomWidth: js.Tuple2[Double, Double] = js.native
+    var roomWidth: js.Tuple2[Double, Double]
   }
   object Options {
     
@@ -92,22 +90,21 @@ object rogueMod {
     var rooms: js.Any = js.native
   }
   
-  @js.native
   trait Room extends StObject {
     
-    var cellx: Double = js.native
+    var cellx: Double
     
-    var celly: Double = js.native
+    var celly: Double
     
-    var connections: js.Array[_] = js.native
+    var connections: js.Array[js.Any]
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Room {
     
@@ -115,7 +112,7 @@ object rogueMod {
     def apply(
       cellx: Double,
       celly: Double,
-      connections: js.Array[_],
+      connections: js.Array[js.Any],
       height: Double,
       width: Double,
       x: Double,
@@ -135,7 +132,7 @@ object rogueMod {
       def setCelly(value: Double): Self = StObject.set(x, "celly", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setConnections(value: js.Array[_]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+      def setConnections(value: js.Array[js.Any]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setConnectionsVarargs(value: js.Any*): Self = StObject.set(x, "connections", js.Array(value :_*))

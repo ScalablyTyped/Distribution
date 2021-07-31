@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.layout
 import typings.openui5.sap.ui.core.LayoutData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponsiveFlowLayoutData extends LayoutData {
+trait ResponsiveFlowLayoutData
+  extends StObject
+     with LayoutData {
   
   /**
     * Gets current value of property <code>linebreak</code>.If this property is set, the control in which

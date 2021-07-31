@@ -6,25 +6,25 @@ import typings.recast.recastStrings.script
 import typings.recast.recastStrings.unambiguous
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object babelOptionsMod {
   
-  @JSImport("recast/parsers/_babel_options", JSImport.Default)
+  @JSImport("recast/parsers/_babel_options", JSImport.Namespace)
   @js.native
-  def default(): ParserOptionspluginsArray = js.native
-  @JSImport("recast/parsers/_babel_options", JSImport.Default)
-  @js.native
-  def default(options: Overrides): ParserOptionspluginsArray = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): ParserOptionspluginsArray = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ParserOptionspluginsArray]
+  @scala.inline
+  def default(options: Overrides): ParserOptionspluginsArray = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[ParserOptionspluginsArray]
   
   /* Inlined std.Partial<{  sourceType :@babel/parser.@babel/parser.ParserOptions['sourceType'],   strictMode :@babel/parser.@babel/parser.ParserOptions['strictMode']}> */
-  @js.native
   trait Overrides extends StObject {
     
-    var sourceType: js.UndefOr[script | module | unambiguous] = js.native
+    var sourceType: js.UndefOr[script | module | unambiguous] = js.undefined
     
-    var strictMode: js.UndefOr[Boolean] = js.native
+    var strictMode: js.UndefOr[Boolean] = js.undefined
   }
   object Overrides {
     

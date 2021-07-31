@@ -2,26 +2,24 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The maximum number of locations to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.datasyncMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.datasyncMod.MaxResults] = js.undefined
   
   /**
     * An opaque string that indicates the position at which to begin the next list of locations.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource whose tags to list.
     */
-  var ResourceArn: TaggableResourceArn = js.native
+  var ResourceArn: TaggableResourceArn
 }
 object ListTagsForResourceRequest {
   

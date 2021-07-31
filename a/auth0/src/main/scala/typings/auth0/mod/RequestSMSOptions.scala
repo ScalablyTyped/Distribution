@@ -2,13 +2,11 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestSMSOptions extends StObject {
   
-  var phone_number: String = js.native
+  var phone_number: String
 }
 object RequestSMSOptions {
   

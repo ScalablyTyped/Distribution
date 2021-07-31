@@ -2,23 +2,23 @@ package typings.snowballStemmers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("snowball-stemmers", "algorithms")
+  @JSImport("snowball-stemmers", JSImport.Namespace)
   @js.native
-  def algorithms(): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("snowball-stemmers", "newStemmer")
-  @js.native
-  def newStemmer(locale: String): Stemmer = js.native
+  @scala.inline
+  def algorithms(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("algorithms")().asInstanceOf[js.Array[String]]
   
-  @js.native
+  @scala.inline
+  def newStemmer(locale: String): Stemmer = ^.asInstanceOf[js.Dynamic].applyDynamic("newStemmer")(locale.asInstanceOf[js.Any]).asInstanceOf[Stemmer]
+  
   trait Stemmer extends StObject {
     
-    def stem(term: String): String = js.native
+    def stem(term: String): String
   }
   object Stemmer {
     

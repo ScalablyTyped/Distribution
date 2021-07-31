@@ -3,7 +3,6 @@ package typings.activexInfopath.InfoPath
 import typings.activexAdodb.ADODB.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,29 +18,6 @@ trait ErrorsCollection extends StObject {
     varNode: js.Any,
     bstrConditionName: String,
     bstrShortErrorMessage: String,
-    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
-    lErrorCode: js.UndefOr[scala.Nothing],
-    bstrType: String
-  ): Error = js.native
-  def Add(
-    varNode: js.Any,
-    bstrConditionName: String,
-    bstrShortErrorMessage: String,
-    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
-    lErrorCode: Double
-  ): Error = js.native
-  def Add(
-    varNode: js.Any,
-    bstrConditionName: String,
-    bstrShortErrorMessage: String,
-    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
-    lErrorCode: Double,
-    bstrType: String
-  ): Error = js.native
-  def Add(
-    varNode: js.Any,
-    bstrConditionName: String,
-    bstrShortErrorMessage: String,
     bstrDetailedErrorMessage: String
   ): Error = js.native
   def Add(
@@ -49,14 +25,6 @@ trait ErrorsCollection extends StObject {
     bstrConditionName: String,
     bstrShortErrorMessage: String,
     bstrDetailedErrorMessage: String,
-    lErrorCode: js.UndefOr[scala.Nothing],
-    bstrType: String
-  ): Error = js.native
-  def Add(
-    varNode: js.Any,
-    bstrConditionName: String,
-    bstrShortErrorMessage: String,
-    bstrDetailedErrorMessage: String,
     lErrorCode: Double
   ): Error = js.native
   def Add(
@@ -65,6 +33,37 @@ trait ErrorsCollection extends StObject {
     bstrShortErrorMessage: String,
     bstrDetailedErrorMessage: String,
     lErrorCode: Double,
+    bstrType: String
+  ): Error = js.native
+  def Add(
+    varNode: js.Any,
+    bstrConditionName: String,
+    bstrShortErrorMessage: String,
+    bstrDetailedErrorMessage: String,
+    lErrorCode: Unit,
+    bstrType: String
+  ): Error = js.native
+  def Add(
+    varNode: js.Any,
+    bstrConditionName: String,
+    bstrShortErrorMessage: String,
+    bstrDetailedErrorMessage: Unit,
+    lErrorCode: Double
+  ): Error = js.native
+  def Add(
+    varNode: js.Any,
+    bstrConditionName: String,
+    bstrShortErrorMessage: String,
+    bstrDetailedErrorMessage: Unit,
+    lErrorCode: Double,
+    bstrType: String
+  ): Error = js.native
+  def Add(
+    varNode: js.Any,
+    bstrConditionName: String,
+    bstrShortErrorMessage: String,
+    bstrDetailedErrorMessage: Unit,
+    lErrorCode: Unit,
     bstrType: String
   ): Error = js.native
   

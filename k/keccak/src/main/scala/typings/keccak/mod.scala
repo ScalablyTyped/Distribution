@@ -6,29 +6,26 @@ import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("keccak", JSImport.Default)
+  @JSImport("keccak", JSImport.Namespace)
   @js.native
-  def default(algorithm: KeccakAlgorithm): Keccak = js.native
-  @JSImport("keccak", JSImport.Default)
-  @js.native
-  def default(algorithm: KeccakAlgorithm, options: TransformOptions): Keccak = js.native
-  @JSImport("keccak", JSImport.Default)
-  @js.native
-  def default(algorithm: Sha3Algorithm): Keccak = js.native
-  @JSImport("keccak", JSImport.Default)
-  @js.native
-  def default(algorithm: Sha3Algorithm, options: TransformOptions): Keccak = js.native
-  @JSImport("keccak", JSImport.Default)
-  @js.native
-  def default(algorithm: ShakeAlgorithm): Shake = js.native
-  @JSImport("keccak", JSImport.Default)
-  @js.native
-  def default(algorithm: ShakeAlgorithm, options: TransformOptions): Shake = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(algorithm: KeccakAlgorithm): Keccak = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Keccak]
+  @scala.inline
+  def default(algorithm: KeccakAlgorithm, options: TransformOptions): Keccak = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Keccak]
+  @scala.inline
+  def default(algorithm: Sha3Algorithm): Keccak = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Keccak]
+  @scala.inline
+  def default(algorithm: Sha3Algorithm, options: TransformOptions): Keccak = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Keccak]
+  @scala.inline
+  def default(algorithm: ShakeAlgorithm): Shake = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Shake]
+  @scala.inline
+  def default(algorithm: ShakeAlgorithm, options: TransformOptions): Shake = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Shake]
   
   @JSImport("keccak", "Keccak")
   @js.native

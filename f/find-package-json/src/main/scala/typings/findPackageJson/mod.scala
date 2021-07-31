@@ -9,35 +9,36 @@ import typings.findPackageJson.findPackageJsonBooleans.`true`
 import typings.node.NodeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("find-package-json", JSImport.Namespace)
-  @js.native
-  def apply(): FinderIterator = js.native
-  @JSImport("find-package-json", JSImport.Namespace)
-  @js.native
-  def apply(root: String): FinderIterator = js.native
-  @JSImport("find-package-json", JSImport.Namespace)
-  @js.native
-  def apply(root: NodeModule): FinderIterator = js.native
+  @scala.inline
+  def apply(): FinderIterator = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FinderIterator]
+  @scala.inline
+  def apply(root: String): FinderIterator = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[FinderIterator]
+  @scala.inline
+  def apply(root: NodeModule): FinderIterator = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[FinderIterator]
   
+  @JSImport("find-package-json", JSImport.Namespace)
   @js.native
-  trait Done extends FindResult {
+  val ^ : js.Any = js.native
+  
+  trait Done
+    extends StObject
+       with FindResult {
     
-    var done: `true` = js.native
+    var done: `true`
     
-    var filename: js.UndefOr[scala.Nothing] = js.native
+    var filename: Unit
     
-    var value: js.UndefOr[scala.Nothing] = js.native
+    var value: Unit
   }
   object Done {
     
     @scala.inline
-    def apply(done: `true`): Done = {
-      val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
+    def apply(filename: Unit, value: Unit): Done = {
+      val __obj = js.Dynamic.literal(done = true, filename = filename.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Done]
     }
     
@@ -46,6 +47,12 @@ object mod {
       
       @scala.inline
       def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFilename(value: Unit): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,22 +64,21 @@ object mod {
   object FindResult {
     
     @scala.inline
-    def Done(done: `true`): typings.findPackageJson.mod.Done = {
-      val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
+    def Done(filename: Unit, value: Unit): typings.findPackageJson.mod.Done = {
+      val __obj = js.Dynamic.literal(done = true, filename = filename.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.findPackageJson.mod.Done]
     }
     
     @scala.inline
-    def FoundPackage(done: `false`, filename: String, value: Package): typings.findPackageJson.mod.FoundPackage = {
-      val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def FoundPackage(filename: String, value: Package): typings.findPackageJson.mod.FoundPackage = {
+      val __obj = js.Dynamic.literal(done = false, filename = filename.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.findPackageJson.mod.FoundPackage]
     }
   }
   
-  @js.native
   trait FinderIterator extends StObject {
     
-    def next(): FindResult = js.native
+    def next(): FindResult
   }
   object FinderIterator {
     
@@ -90,20 +96,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait FoundPackage extends FindResult {
+  trait FoundPackage
+    extends StObject
+       with FindResult {
     
-    var done: `false` = js.native
+    var done: `false`
     
-    var filename: String = js.native
+    var filename: String
     
-    var value: Package = js.native
+    var value: Package
   }
   object FoundPackage {
     
     @scala.inline
-    def apply(done: `false`, filename: String, value: Package): FoundPackage = {
-      val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(filename: String, value: Package): FoundPackage = {
+      val __obj = js.Dynamic.literal(done = false, filename = filename.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FoundPackage]
     }
     
@@ -121,51 +128,51 @@ object mod {
     }
   }
   
-  @js.native
   trait Package
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
-    var author: js.UndefOr[Person] = js.native
+    var author: js.UndefOr[Person] = js.undefined
     
-    var bin: js.UndefOr[StringDictionary[String]] = js.native
+    var bin: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var bugs: js.UndefOr[Email | Url] = js.native
+    var bugs: js.UndefOr[Email | Url] = js.undefined
     
-    var bundleDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    var bundleDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var contributors: js.UndefOr[js.Array[Person]] = js.native
+    var contributors: js.UndefOr[js.Array[Person]] = js.undefined
     
-    var dependencies: js.UndefOr[StringDictionary[String]] = js.native
+    var dependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var devDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    var devDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var engines: js.UndefOr[StringDictionary[String]] = js.native
+    var engines: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var files: js.UndefOr[js.Array[String]] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
     
-    var homepage: js.UndefOr[String] = js.native
+    var homepage: js.UndefOr[String] = js.undefined
     
-    var keywords: js.UndefOr[js.Array[String]] = js.native
+    var keywords: js.UndefOr[js.Array[String]] = js.undefined
     
-    var license: js.UndefOr[String] = js.native
+    var license: js.UndefOr[String] = js.undefined
     
-    var maintainers: js.UndefOr[js.Array[Person]] = js.native
+    var maintainers: js.UndefOr[js.Array[Person]] = js.undefined
     
-    var man: js.UndefOr[js.Array[String]] = js.native
+    var man: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var optionalDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    var optionalDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var readme: js.UndefOr[String] = js.native
+    var readme: js.UndefOr[String] = js.undefined
     
-    var repository: js.UndefOr[Type] = js.native
+    var repository: js.UndefOr[Type] = js.undefined
     
-    var scripts: js.UndefOr[StringDictionary[String]] = js.native
+    var scripts: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object Package {
     
@@ -321,14 +328,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Person extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Person {
     

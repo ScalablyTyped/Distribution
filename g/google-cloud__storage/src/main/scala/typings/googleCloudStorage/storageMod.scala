@@ -18,7 +18,6 @@ import typings.std.PromiseConstructor
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storageMod {
@@ -470,12 +469,11 @@ object storageMod {
     Unit
   ]
   
-  @js.native
   trait BucketOptions extends StObject {
     
-    var kmsKeyName: js.UndefOr[String] = js.native
+    var kmsKeyName: js.UndefOr[String] = js.undefined
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object BucketOptions {
     
@@ -502,16 +500,15 @@ object storageMod {
     }
   }
   
-  @js.native
   trait Cors extends StObject {
     
-    var maxAgeSeconds: js.UndefOr[Double] = js.native
+    var maxAgeSeconds: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[js.Array[String]] = js.native
+    var method: js.UndefOr[js.Array[String]] = js.undefined
     
-    var origin: js.UndefOr[js.Array[String]] = js.native
+    var origin: js.UndefOr[js.Array[String]] = js.undefined
     
-    var responseHeader: js.UndefOr[js.Array[String]] = js.native
+    var responseHeader: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Cors {
     
@@ -559,12 +556,11 @@ object storageMod {
     }
   }
   
-  @js.native
   trait CreateBucketQuery extends StObject {
     
-    var project: String = js.native
+    var project: String
     
-    var userProject: String = js.native
+    var userProject: String
   }
   object CreateBucketQuery {
     
@@ -585,36 +581,35 @@ object storageMod {
     }
   }
   
-  @js.native
   trait CreateBucketRequest extends StObject {
     
-    var archive: js.UndefOr[Boolean] = js.native
+    var archive: js.UndefOr[Boolean] = js.undefined
     
-    var coldline: js.UndefOr[Boolean] = js.native
+    var coldline: js.UndefOr[Boolean] = js.undefined
     
-    var cors: js.UndefOr[js.Array[Cors]] = js.native
+    var cors: js.UndefOr[js.Array[Cors]] = js.undefined
     
-    var dra: js.UndefOr[Boolean] = js.native
+    var dra: js.UndefOr[Boolean] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var multiRegional: js.UndefOr[Boolean] = js.native
+    var multiRegional: js.UndefOr[Boolean] = js.undefined
     
-    var nearline: js.UndefOr[Boolean] = js.native
+    var nearline: js.UndefOr[Boolean] = js.undefined
     
-    var regional: js.UndefOr[Boolean] = js.native
+    var regional: js.UndefOr[Boolean] = js.undefined
     
-    var requesterPays: js.UndefOr[Boolean] = js.native
+    var requesterPays: js.UndefOr[Boolean] = js.undefined
     
-    var retentionPolicy: js.UndefOr[js.Object] = js.native
+    var retentionPolicy: js.UndefOr[js.Object] = js.undefined
     
-    var standard: js.UndefOr[Boolean] = js.native
+    var standard: js.UndefOr[Boolean] = js.undefined
     
-    var storageClass: js.UndefOr[String] = js.native
+    var storageClass: js.UndefOr[String] = js.undefined
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
     
-    var versioning: js.UndefOr[Versioning] = js.native
+    var versioning: js.UndefOr[Versioning] = js.undefined
   }
   object CreateBucketRequest {
     
@@ -726,12 +721,11 @@ object storageMod {
     Unit
   ]
   
-  @js.native
   trait CreateHmacKeyOptions extends StObject {
     
-    var projectId: js.UndefOr[String] = js.native
+    var projectId: js.UndefOr[String] = js.undefined
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object CreateHmacKeyOptions {
     
@@ -768,22 +762,21 @@ object storageMod {
     Unit
   ]
   
-  @js.native
   trait GetBucketsRequest extends StObject {
     
-    var autoPaginate: js.UndefOr[Boolean] = js.native
+    var autoPaginate: js.UndefOr[Boolean] = js.undefined
     
-    var maxApiCalls: js.UndefOr[Double] = js.native
+    var maxApiCalls: js.UndefOr[Double] = js.undefined
     
-    var maxResults: js.UndefOr[Double] = js.native
+    var maxResults: js.UndefOr[Double] = js.undefined
     
-    var pageToken: js.UndefOr[String] = js.native
+    var pageToken: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var project: js.UndefOr[String] = js.native
+    var project: js.UndefOr[String] = js.undefined
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object GetBucketsRequest {
     
@@ -850,24 +843,23 @@ object storageMod {
     Unit
   ]
   
-  @js.native
   trait GetHmacKeysOptions extends StObject {
     
-    var autoPaginate: js.UndefOr[Boolean] = js.native
+    var autoPaginate: js.UndefOr[Boolean] = js.undefined
     
-    var maxApiCalls: js.UndefOr[Double] = js.native
+    var maxApiCalls: js.UndefOr[Double] = js.undefined
     
-    var maxResults: js.UndefOr[Double] = js.native
+    var maxResults: js.UndefOr[Double] = js.undefined
     
-    var pageToken: js.UndefOr[String] = js.native
+    var pageToken: js.UndefOr[String] = js.undefined
     
-    var projectId: js.UndefOr[String] = js.native
+    var projectId: js.UndefOr[String] = js.undefined
     
-    var serviceAccountEmail: js.UndefOr[String] = js.native
+    var serviceAccountEmail: js.UndefOr[String] = js.undefined
     
-    var showDeletedKeys: js.UndefOr[Boolean] = js.native
+    var showDeletedKeys: js.UndefOr[Boolean] = js.undefined
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object GetHmacKeysOptions {
     
@@ -939,10 +931,9 @@ object storageMod {
     Unit
   ]
   
-  @js.native
   trait GetServiceAccountOptions extends StObject {
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object GetServiceAccountOptions {
     
@@ -965,12 +956,11 @@ object storageMod {
   
   type GetServiceAccountResponse = js.Tuple2[ServiceAccount, Metadata]
   
-  @js.native
   trait HmacKeyResourceResponse extends StObject {
     
-    var metadata: HmacKeyMetadata = js.native
+    var metadata: HmacKeyMetadata
     
-    var secret: String = js.native
+    var secret: String
   }
   object HmacKeyResourceResponse {
     
@@ -991,10 +981,9 @@ object storageMod {
     }
   }
   
-  @js.native
   trait ServiceAccount extends StObject {
     
-    var emailAddress: js.UndefOr[String] = js.native
+    var emailAddress: js.UndefOr[String] = js.undefined
   }
   object ServiceAccount {
     
@@ -1015,22 +1004,23 @@ object storageMod {
     }
   }
   
-  @js.native
-  trait StorageOptions extends GoogleAuthOptions {
+  trait StorageOptions
+    extends StObject
+       with GoogleAuthOptions {
     
     /**
       * The API endpoint of the service used to make requests.
       * Defaults to `storage.googleapis.com`.
       */
-    var apiEndpoint: js.UndefOr[String] = js.native
+    var apiEndpoint: js.UndefOr[String] = js.undefined
     
-    var autoRetry: js.UndefOr[Boolean] = js.native
+    var autoRetry: js.UndefOr[Boolean] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var promise: js.UndefOr[PromiseConstructor] = js.native
+    var promise: js.UndefOr[PromiseConstructor] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object StorageOptions {
     
@@ -1075,10 +1065,9 @@ object storageMod {
     }
   }
   
-  @js.native
   trait Versioning extends StObject {
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
   }
   object Versioning {
     

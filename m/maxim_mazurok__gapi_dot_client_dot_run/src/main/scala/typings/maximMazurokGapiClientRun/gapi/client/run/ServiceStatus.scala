@@ -2,51 +2,49 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceStatus extends StObject {
   
   /** From RouteStatus. Similar to url, information on where the service is available on HTTP. */
-  var address: js.UndefOr[Addressable] = js.native
+  var address: js.UndefOr[Addressable] = js.undefined
   
   /**
     * Conditions communicates information about ongoing/complete reconciliation processes that bring the "spec" inline with the observed state of the world. Service-specific conditions
     * include: * "ConfigurationsReady": true when the underlying Configuration is ready. * "RoutesReady": true when the underlying Route is ready. * "Ready": true when both the underlying
     * Route and Configuration are ready.
     */
-  var conditions: js.UndefOr[js.Array[GoogleCloudRunV1Condition]] = js.native
+  var conditions: js.UndefOr[js.Array[GoogleCloudRunV1Condition]] = js.undefined
   
   /**
     * From ConfigurationStatus. LatestCreatedRevisionName is the last revision that was created from this Service's Configuration. It might not be ready yet, for that use
     * LatestReadyRevisionName.
     */
-  var latestCreatedRevisionName: js.UndefOr[String] = js.native
+  var latestCreatedRevisionName: js.UndefOr[String] = js.undefined
   
   /**
     * From ConfigurationStatus. LatestReadyRevisionName holds the name of the latest Revision stamped out from this Service's Configuration that has had its "Ready" condition become
     * "True".
     */
-  var latestReadyRevisionName: js.UndefOr[String] = js.native
+  var latestReadyRevisionName: js.UndefOr[String] = js.undefined
   
   /**
     * ObservedGeneration is the 'Generation' of the Route that was last processed by the controller. Clients polling for completed reconciliation should poll until observedGeneration =
     * metadata.generation and the Ready condition's status is True or False.
     */
-  var observedGeneration: js.UndefOr[Double] = js.native
+  var observedGeneration: js.UndefOr[Double] = js.undefined
   
   /**
     * From RouteStatus. Traffic holds the configured traffic distribution. These entries will always contain RevisionName references. When ConfigurationName appears in the spec, this will
     * hold the LatestReadyRevisionName that we last observed.
     */
-  var traffic: js.UndefOr[js.Array[TrafficTarget]] = js.native
+  var traffic: js.UndefOr[js.Array[TrafficTarget]] = js.undefined
   
   /**
     * From RouteStatus. URL holds the url that will distribute traffic over the provided traffic targets. It generally has the form
     * https://{route-hash}-{project-hash}-{cluster-level-suffix}.a.run.app
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ServiceStatus {
   

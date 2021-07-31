@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,12 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See https://cloud.google.com/dlp/docs/inspecting-text#inspecting_a_table to
   * learn more.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Table extends StObject {
   
-  var headers: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.native
+  var headers: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.undefined
   
-  var rows: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Row]] = js.native
+  var rows: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Row]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Table {
   

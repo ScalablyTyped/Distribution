@@ -8,14 +8,12 @@ import typings.semanticUiApi.semanticUiApiStrings.text
 import typings.semanticUiApi.semanticUiApiStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, 'dataType'> */
-@js.native
 trait PickImpldataType extends StObject {
   
-  var dataType: xml | json | jsonp | script | html | text = js.native
+  var dataType: xml | json | jsonp | script | html | text
 }
 object PickImpldataType {
   

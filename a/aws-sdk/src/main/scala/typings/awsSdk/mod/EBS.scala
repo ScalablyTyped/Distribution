@@ -3,7 +3,6 @@ package typings.awsSdk.mod
 import typings.awsSdk.ebsMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "EBS")

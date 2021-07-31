@@ -2,26 +2,24 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDeploymentResult extends StObject {
   
   /**
     *  When the fileMap argument is provided in the request, fileUploadUrls will contain a map of file names to upload URLs. 
     */
-  var fileUploadUrls: FileUploadUrls = js.native
+  var fileUploadUrls: FileUploadUrls
   
   /**
     *  The job ID for this deployment. will supply to start deployment api. 
     */
-  var jobId: js.UndefOr[JobId] = js.native
+  var jobId: js.UndefOr[JobId] = js.undefined
   
   /**
     *  When the fileMap argument is not provided in the request, this zipUploadUrl is returned. 
     */
-  var zipUploadUrl: UploadUrl = js.native
+  var zipUploadUrl: UploadUrl
 }
 object CreateDeploymentResult {
   

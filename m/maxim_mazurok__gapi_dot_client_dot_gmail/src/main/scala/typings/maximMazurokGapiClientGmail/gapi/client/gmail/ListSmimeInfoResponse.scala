@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSmimeInfoResponse extends StObject {
   
   /** List of SmimeInfo. */
-  var smimeInfo: js.UndefOr[js.Array[SmimeInfo]] = js.native
+  var smimeInfo: js.UndefOr[js.Array[SmimeInfo]] = js.undefined
 }
 object ListSmimeInfoResponse {
   

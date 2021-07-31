@@ -2,23 +2,22 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmptyStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
   
   @JSName("type")
-  var type_EmptyStatement: typings.estree.estreeStrings.EmptyStatement = js.native
+  var type_EmptyStatement: typings.estree.estreeStrings.EmptyStatement
 }
 object EmptyStatement {
   
   @scala.inline
-  def apply(`type`: typings.estree.estreeStrings.EmptyStatement): EmptyStatement = {
+  def apply(): EmptyStatement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EmptyStatement")
     __obj.asInstanceOf[EmptyStatement]
   }
   

@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param entity - The Entity that this Component is attached to.
   */
 @js.native
-trait LayoutChildComponent extends Component {
+trait LayoutChildComponent
+  extends StObject
+     with Component {
   
   /**
     * If set to true, the child will be excluded from all layout calculations.

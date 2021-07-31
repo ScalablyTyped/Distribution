@@ -3,19 +3,17 @@ package typings.angularCompiler.anon
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceSpan extends StObject {
   
-  var sourceSpan: ParseSourceSpan | Null = js.native
+  var sourceSpan: ParseSourceSpan | Null
 }
 object SourceSpan {
   
   @scala.inline
   def apply(): SourceSpan = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(sourceSpan = null)
     __obj.asInstanceOf[SourceSpan]
   }
   

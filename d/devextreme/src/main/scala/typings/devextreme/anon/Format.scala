@@ -5,23 +5,21 @@ import typings.devextreme.mod.DevExpress.ui.dxDataGrid
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
-  var component: js.UndefOr[dxDataGrid] = js.native
+  var component: js.UndefOr[dxDataGrid] = js.undefined
   
-  var data: js.UndefOr[Blob] = js.native
+  var data: js.UndefOr[Blob] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
 }
 object Format {
   

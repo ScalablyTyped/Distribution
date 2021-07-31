@@ -6,28 +6,26 @@ import typings.awsSdkClientS3Browser.typesTagMod.Tag
 import typings.awsSdkClientS3Browser.typesTagMod.UnmarshalledTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMetricsFilterMod {
   
-  @js.native
   trait MetricsFilter extends StObject {
     
     /**
       * <p>A conjunction (logical AND) of predicates, which is used in evaluating a metrics filter. The operator must have at least two predicates, and an object must match all of the predicates in order for the filter to apply.</p>
       */
-    var And: js.UndefOr[MetricsAndOperator] = js.native
+    var And: js.UndefOr[MetricsAndOperator] = js.undefined
     
     /**
       * <p>The prefix used when evaluating a metrics filter.</p>
       */
-    var Prefix: js.UndefOr[String] = js.native
+    var Prefix: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The tag used when evaluating a metrics filter.</p>
       */
-    var Tag: js.UndefOr[typings.awsSdkClientS3Browser.typesTagMod.Tag] = js.native
+    var Tag: js.UndefOr[typings.awsSdkClientS3Browser.typesTagMod.Tag] = js.undefined
   }
   object MetricsFilter {
     
@@ -60,20 +58,21 @@ object typesMetricsFilterMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledMetricsFilter extends MetricsFilter {
+  trait UnmarshalledMetricsFilter
+    extends StObject
+       with MetricsFilter {
     
     /**
       * <p>A conjunction (logical AND) of predicates, which is used in evaluating a metrics filter. The operator must have at least two predicates, and an object must match all of the predicates in order for the filter to apply.</p>
       */
     @JSName("And")
-    var And_UnmarshalledMetricsFilter: js.UndefOr[UnmarshalledMetricsAndOperator] = js.native
+    var And_UnmarshalledMetricsFilter: js.UndefOr[UnmarshalledMetricsAndOperator] = js.undefined
     
     /**
       * <p>The tag used when evaluating a metrics filter.</p>
       */
     @JSName("Tag")
-    var Tag_UnmarshalledMetricsFilter: js.UndefOr[UnmarshalledTag] = js.native
+    var Tag_UnmarshalledMetricsFilter: js.UndefOr[UnmarshalledTag] = js.undefined
   }
   object UnmarshalledMetricsFilter {
     

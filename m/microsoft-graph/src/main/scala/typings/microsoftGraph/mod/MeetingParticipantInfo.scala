@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeetingParticipantInfo extends StObject {
   
   // Identity information of the participant.
-  var identity: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var identity: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // Specifies the participant's role in the meeting. Possible values are listed in the following table.
-  var role: js.UndefOr[NullableOption[OnlineMeetingRole]] = js.native
+  var role: js.UndefOr[NullableOption[OnlineMeetingRole]] = js.undefined
   
   // User principal name of the participant.
-  var upn: js.UndefOr[NullableOption[String]] = js.native
+  var upn: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object MeetingParticipantInfo {
   

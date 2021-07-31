@@ -2,43 +2,43 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Drive extends BaseItem {
+trait Drive
+  extends StObject
+     with BaseItem {
   
   /**
     * Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for
     * Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
     */
-  var driveType: js.UndefOr[NullableOption[String]] = js.native
+  var driveType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The list of items the user is following. Only in OneDrive for Business.
-  var following: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.native
+  var following: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.undefined
   
   // All items contained in the drive. Read-only. Nullable.
-  var items: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.native
+  var items: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.undefined
   
   // For drives in SharePoint, the underlying document library list. Read-only. Nullable.
-  var list: js.UndefOr[NullableOption[List]] = js.native
+  var list: js.UndefOr[NullableOption[List]] = js.undefined
   
   // Optional. The user account that owns the drive. Read-only.
-  var owner: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var owner: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // Optional. Information about the drive's storage space quota. Read-only.
-  var quota: js.UndefOr[NullableOption[Quota]] = js.native
+  var quota: js.UndefOr[NullableOption[Quota]] = js.undefined
   
   // The root folder of the drive. Read-only.
-  var root: js.UndefOr[NullableOption[DriveItem]] = js.native
+  var root: js.UndefOr[NullableOption[DriveItem]] = js.undefined
   
-  var sharePointIds: js.UndefOr[NullableOption[SharepointIds]] = js.native
+  var sharePointIds: js.UndefOr[NullableOption[SharepointIds]] = js.undefined
   
   // Collection of common folders available in OneDrive. Read-only. Nullable.
-  var special: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.native
+  var special: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.undefined
   
   // If present, indicates that this is a system-managed drive. Read-only.
-  var system: js.UndefOr[NullableOption[SystemFacet]] = js.native
+  var system: js.UndefOr[NullableOption[SystemFacet]] = js.undefined
 }
 object Drive {
   

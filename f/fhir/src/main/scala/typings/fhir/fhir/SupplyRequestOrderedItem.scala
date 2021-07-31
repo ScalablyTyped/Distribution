@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The item being requested
   */
-@js.native
-trait SupplyRequestOrderedItem extends BackboneElement {
+trait SupplyRequestOrderedItem
+  extends StObject
+     with BackboneElement {
   
   /**
     * Medication, Substance, or Device requested to be supplied
     */
-  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Medication, Substance, or Device requested to be supplied
     */
-  var itemReference: js.UndefOr[Reference] = js.native
+  var itemReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * The requested amount of the item indicated
     */
-  var quantity: Quantity = js.native
+  var quantity: Quantity
 }
 object SupplyRequestOrderedItem {
   

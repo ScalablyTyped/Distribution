@@ -11,8 +11,8 @@ A very fast geospatial point clustering library.
 | Full name          | supercluster |
 | Keywords           | clustering, geospatial, markers |
 | # releases         | 7 |
-| # dependents       | 133 |
-| # downloads        | 19474468 |
+| # dependents       | 144 |
+| # downloads        | 22440558 |
 | # stars            | 5 |
 
 ## Links

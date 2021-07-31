@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiveChatUserBannedMessageDetails extends StObject {
   
   /** The duration of the ban. This property is only present if the banType is temporary. */
-  var banDurationSeconds: js.UndefOr[String] = js.native
+  var banDurationSeconds: js.UndefOr[String] = js.undefined
   
   /** The type of ban. */
-  var banType: js.UndefOr[String] = js.native
+  var banType: js.UndefOr[String] = js.undefined
   
   /** The details of the user that was banned. */
-  var bannedUserDetails: js.UndefOr[ChannelProfileDetails] = js.native
+  var bannedUserDetails: js.UndefOr[ChannelProfileDetails] = js.undefined
 }
 object LiveChatUserBannedMessageDetails {
   

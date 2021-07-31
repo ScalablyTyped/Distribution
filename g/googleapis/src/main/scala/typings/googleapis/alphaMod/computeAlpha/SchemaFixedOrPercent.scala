@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Encapsulates numeric value that can be either absolute or relative.
   */
-@js.native
 trait SchemaFixedOrPercent extends StObject {
   
   /**
@@ -20,19 +18,19 @@ trait SchemaFixedOrPercent extends StObject {
     * (80/100 * 150) = 120 VM instances. If there is a remainder, the number is
     * rounded up.
     */
-  var calculated: js.UndefOr[Double] = js.native
+  var calculated: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies a fixed number of VM instances. This must be a positive
     * integer.
     */
-  var fixed: js.UndefOr[Double] = js.native
+  var fixed: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies a percentage of instances between 0 to 100%, inclusive. For
     * example, specify 80 for 80%.
     */
-  var percent: js.UndefOr[Double] = js.native
+  var percent: js.UndefOr[Double] = js.undefined
 }
 object SchemaFixedOrPercent {
   

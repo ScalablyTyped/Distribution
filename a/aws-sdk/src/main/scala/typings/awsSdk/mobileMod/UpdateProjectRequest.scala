@@ -2,21 +2,19 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateProjectRequest extends StObject {
   
   /**
     *  ZIP or YAML file which contains project configuration to be updated. This should be the contents of the file downloaded from the URL provided in an export project operation. 
     */
-  var contents: js.UndefOr[Contents] = js.native
+  var contents: js.UndefOr[Contents] = js.undefined
   
   /**
     *  Unique project identifier. 
     */
-  var projectId: ProjectId = js.native
+  var projectId: ProjectId
 }
 object UpdateProjectRequest {
   

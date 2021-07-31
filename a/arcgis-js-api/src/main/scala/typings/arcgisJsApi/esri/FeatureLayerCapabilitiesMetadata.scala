@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureLayerCapabilitiesMetadata extends Object {
+trait FeatureLayerCapabilitiesMetadata
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to provide a user-defined field description.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsAdvancedFieldProperties: Boolean = js.native
+  var supportsAdvancedFieldProperties: Boolean
 }
 object FeatureLayerCapabilitiesMetadata {
   

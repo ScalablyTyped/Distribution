@@ -2,17 +2,15 @@ package typings.chrome.chrome.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveProperties extends StObject {
   
   /** The position to move the window to. -1 will place the tab at the end of the window. */
-  var index: Double = js.native
+  var index: Double
   
   /** Optional. Defaults to the window the tab is currently in. */
-  var windowId: js.UndefOr[Double] = js.native
+  var windowId: js.UndefOr[Double] = js.undefined
 }
 object MoveProperties {
   

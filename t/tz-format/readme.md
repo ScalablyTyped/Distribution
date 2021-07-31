@@ -11,7 +11,7 @@ Format a date with timezone
 | Keywords           | datetime, date-time, format, timezone, tz, iso |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 7036 |
+| # downloads        | 11583 |
 | # stars            | 0 |
 
 ## Links

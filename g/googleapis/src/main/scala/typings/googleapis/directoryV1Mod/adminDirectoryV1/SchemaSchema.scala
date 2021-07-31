@@ -2,44 +2,42 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Schema resource in Directory API.
   */
-@js.native
 trait SchemaSchema extends StObject {
   
   /**
     * Display name for the schema.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Fields of Schema
     */
-  var fields: js.UndefOr[js.Array[SchemaSchemaFieldSpec]] = js.native
+  var fields: js.UndefOr[js.Array[SchemaSchemaFieldSpec]] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier of Schema (Read-only)
     */
-  var schemaId: js.UndefOr[String] = js.native
+  var schemaId: js.UndefOr[String] = js.undefined
   
   /**
     * Schema name
     */
-  var schemaName: js.UndefOr[String] = js.native
+  var schemaName: js.UndefOr[String] = js.undefined
 }
 object SchemaSchema {
   

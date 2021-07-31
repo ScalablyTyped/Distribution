@@ -2,46 +2,44 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchAvailablePhoneNumbersRequest extends StObject {
   
   /**
     * The area code used to filter results.
     */
-  var AreaCode: js.UndefOr[String] = js.native
+  var AreaCode: js.UndefOr[String] = js.undefined
   
   /**
     * The city used to filter results.
     */
-  var City: js.UndefOr[String] = js.native
+  var City: js.UndefOr[String] = js.undefined
   
   /**
     * The country used to filter results.
     */
-  var Country: js.UndefOr[String] = js.native
+  var Country: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of results to return in a single call.
     */
-  var MaxResults: js.UndefOr[PhoneNumberMaxResults] = js.native
+  var MaxResults: js.UndefOr[PhoneNumberMaxResults] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The state used to filter results.
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
   
   /**
     * The toll-free prefix that you use to filter results.
     */
-  var TollFreePrefix: js.UndefOr[typings.awsSdk.chimeMod.TollFreePrefix] = js.native
+  var TollFreePrefix: js.UndefOr[typings.awsSdk.chimeMod.TollFreePrefix] = js.undefined
 }
 object SearchAvailablePhoneNumbersRequest {
   

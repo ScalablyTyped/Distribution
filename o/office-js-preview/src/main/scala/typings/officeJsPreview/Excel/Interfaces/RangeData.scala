@@ -6,11 +6,9 @@ import typings.officeJsPreview.Excel.RangeHyperlink
 import typings.officeJsPreview.Excel.RangeValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `range.toJSON()`. */
-@js.native
 trait RangeData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var addressLocal: js.UndefOr[String] = js.native
+  var addressLocal: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var cellCount: js.UndefOr[Double] = js.native
+  var cellCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var columnCount: js.UndefOr[Double] = js.native
+  var columnCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -51,7 +49,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var columnHidden: js.UndefOr[Boolean] = js.native
+  var columnHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -67,7 +65,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatData]] = js.native
+  var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatData]] = js.undefined
   
   /**
     *
@@ -75,7 +73,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var dataValidation: js.UndefOr[DataValidationData] = js.native
+  var dataValidation: js.UndefOr[DataValidationData] = js.undefined
   
   /**
     *
@@ -83,7 +81,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[RangeFormatData] = js.native
+  var format: js.UndefOr[RangeFormatData] = js.undefined
   
   /**
     *
@@ -91,7 +89,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var formulas: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulas: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -99,7 +97,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var formulasLocal: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulasLocal: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -107,7 +105,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var formulasR1C1: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulasR1C1: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -117,7 +115,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var hasSpill: js.UndefOr[Boolean] = js.native
+  var hasSpill: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -125,7 +123,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -133,7 +131,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -141,7 +139,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var hyperlink: js.UndefOr[RangeHyperlink] = js.native
+  var hyperlink: js.UndefOr[RangeHyperlink] = js.undefined
   
   /**
     *
@@ -149,7 +147,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var isEntireColumn: js.UndefOr[Boolean] = js.native
+  var isEntireColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -157,7 +155,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var isEntireRow: js.UndefOr[Boolean] = js.native
+  var isEntireRow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -165,7 +163,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -173,7 +171,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var linkedDataTypeState: js.UndefOr[js.Array[js.Array[LinkedDataTypeState]]] = js.native
+  var linkedDataTypeState: js.UndefOr[js.Array[js.Array[LinkedDataTypeState]]] = js.undefined
   
   /**
     *
@@ -181,7 +179,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var numberFormat: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var numberFormat: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -189,7 +187,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var numberFormatCategories: js.UndefOr[js.Array[js.Array[NumberFormatCategory]]] = js.native
+  var numberFormatCategories: js.UndefOr[js.Array[js.Array[NumberFormatCategory]]] = js.undefined
   
   /**
     *
@@ -199,7 +197,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var numberFormatLocal: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var numberFormatLocal: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -207,7 +205,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -215,7 +213,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var rowHidden: js.UndefOr[Boolean] = js.native
+  var rowHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -223,7 +221,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -233,7 +231,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var savedAsArray: js.UndefOr[Boolean] = js.native
+  var savedAsArray: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -243,7 +241,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -251,7 +249,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var text: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var text: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
     *
@@ -259,7 +257,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -267,7 +265,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var valueTypes: js.UndefOr[js.Array[js.Array[RangeValueType]]] = js.native
+  var valueTypes: js.UndefOr[js.Array[js.Array[RangeValueType]]] = js.undefined
   
   /**
     *
@@ -275,7 +273,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -283,7 +281,7 @@ trait RangeData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object RangeData {
   
@@ -354,10 +352,10 @@ object RangeData {
     def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormulas(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
+    def setFormulas(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulasLocal(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
+    def setFormulasLocal(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
@@ -366,7 +364,7 @@ object RangeData {
     def setFormulasLocalVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasLocal", js.Array(value :_*))
     
     @scala.inline
-    def setFormulasR1C1(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
+    def setFormulasR1C1(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
@@ -432,7 +430,7 @@ object RangeData {
     def setLinkedDataTypeStateVarargs(value: js.Array[LinkedDataTypeState]*): Self = StObject.set(x, "linkedDataTypeState", js.Array(value :_*))
     
     @scala.inline
-    def setNumberFormat(value: js.Array[js.Array[_]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNumberFormatCategories(value: js.Array[js.Array[NumberFormatCategory]]): Self = StObject.set(x, "numberFormatCategories", value.asInstanceOf[js.Any])
@@ -444,7 +442,7 @@ object RangeData {
     def setNumberFormatCategoriesVarargs(value: js.Array[NumberFormatCategory]*): Self = StObject.set(x, "numberFormatCategories", js.Array(value :_*))
     
     @scala.inline
-    def setNumberFormatLocal(value: js.Array[js.Array[_]]): Self = StObject.set(x, "numberFormatLocal", value.asInstanceOf[js.Any])
+    def setNumberFormatLocal(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "numberFormatLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNumberFormatLocalUndefined: Self = StObject.set(x, "numberFormatLocal", js.undefined)
@@ -513,7 +511,7 @@ object RangeData {
     def setValueTypesVarargs(value: js.Array[RangeValueType]*): Self = StObject.set(x, "valueTypes", js.Array(value :_*))
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

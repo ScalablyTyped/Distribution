@@ -12,7 +12,7 @@ flip an image.
 | Keywords           | - |
 | # releases         | 101 |
 | # dependents       | 1 |
-| # downloads        | 37918037 |
+| # downloads        | 42326426 |
 | # stars            | 0 |
 
 ## Links

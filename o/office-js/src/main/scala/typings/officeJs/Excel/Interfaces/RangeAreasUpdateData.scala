@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`. */
-@js.native
 trait RangeAreasUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait RangeAreasUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var dataValidation: js.UndefOr[DataValidationUpdateData] = js.native
+  var dataValidation: js.UndefOr[DataValidationUpdateData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait RangeAreasUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var format: js.UndefOr[RangeFormatUpdateData] = js.native
+  var format: js.UndefOr[RangeFormatUpdateData] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait RangeAreasUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
 }
 object RangeAreasUpdateData {
   

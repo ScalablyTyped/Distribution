@@ -11,7 +11,6 @@ import typings.ndnJs.transportMod.TransportConnectionInfo
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object faceMod {
@@ -22,89 +21,93 @@ object faceMod {
     def this(settings: FaceCtorOptions) = this()
     def this(transport: Transport, connectionInfo: TransportConnectionInfo) = this()
     
-    def expressInterest(interest: Interest, onData: js.Function2[/* interest */ Interest, /* data */ Data, _]): Double = js.native
+    def expressInterest(interest: Interest, onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any]): Double = js.native
     def expressInterest(
       interest: Interest,
-      onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
-      onTimeout: js.UndefOr[scala.Nothing],
-      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, _]
-    ): Double = js.native
-    def expressInterest(
-      interest: Interest,
-      onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
-      onTimeout: js.Function1[/* interest */ Interest, _]
+      onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any],
+      onTimeout: js.Function1[/* interest */ Interest, js.Any]
     ): Double = js.native
     def expressInterest(
       interest: Interest,
-      onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
-      onTimeout: js.Function1[/* interest */ Interest, _],
-      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, _]
+      onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any],
+      onTimeout: js.Function1[/* interest */ Interest, js.Any],
+      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, js.Any]
     ): Double = js.native
-    def expressInterest(interest: Name, onData: js.Function2[/* interest */ Interest, /* data */ Data, _]): Double = js.native
+    def expressInterest(
+      interest: Interest,
+      onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any],
+      onTimeout: Unit,
+      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, js.Any]
+    ): Double = js.native
+    def expressInterest(interest: Name, onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any]): Double = js.native
     def expressInterest(
       interest: Name,
-      onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
-      onTimeout: js.UndefOr[scala.Nothing],
-      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, _]
+      onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any],
+      onTimeout: js.Function1[/* interest */ Interest, js.Any]
     ): Double = js.native
     def expressInterest(
       interest: Name,
-      onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
-      onTimeout: js.Function1[/* interest */ Interest, _]
+      onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any],
+      onTimeout: js.Function1[/* interest */ Interest, js.Any],
+      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, js.Any]
     ): Double = js.native
     def expressInterest(
       interest: Name,
-      onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
-      onTimeout: js.Function1[/* interest */ Interest, _],
-      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, _]
+      onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any],
+      onTimeout: Unit,
+      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, js.Any]
     ): Double = js.native
     def expressInterest(
       name: Name,
       interestTemplate: Interest,
-      onData: js.Function2[/* interest */ Interest, /* data */ Data, _]
+      onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any]
     ): Double = js.native
     def expressInterest(
       name: Name,
       interestTemplate: Interest,
-      onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
-      onTimeout: js.UndefOr[scala.Nothing],
-      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, _]
+      onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any],
+      onTimeout: js.Function1[/* interest */ Interest, js.Any]
     ): Double = js.native
     def expressInterest(
       name: Name,
       interestTemplate: Interest,
-      onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
-      onTimeout: js.Function1[/* interest */ Interest, _]
+      onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any],
+      onTimeout: js.Function1[/* interest */ Interest, js.Any],
+      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, js.Any]
     ): Double = js.native
     def expressInterest(
       name: Name,
       interestTemplate: Interest,
-      onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
-      onTimeout: js.Function1[/* interest */ Interest, _],
-      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, _]
+      onData: js.Function2[/* interest */ Interest, /* data */ Data, js.Any],
+      onTimeout: Unit,
+      onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, js.Any]
     ): Double = js.native
     
     def putData(data: Data): Unit = js.native
     
-    def registerPrefix(prefix: Name, onInterest: OnInterestCallback, onRegisterFailed: js.Function1[/* prefix */ Name, _]): Double = js.native
     def registerPrefix(
       prefix: Name,
       onInterest: OnInterestCallback,
-      onRegisterFailed: js.Function1[/* prefix */ Name, _],
-      onRegisterSuccess: js.UndefOr[scala.Nothing],
+      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any]
+    ): Double = js.native
+    def registerPrefix(
+      prefix: Name,
+      onInterest: OnInterestCallback,
+      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, js.Any]
+    ): Double = js.native
+    def registerPrefix(
+      prefix: Name,
+      onInterest: OnInterestCallback,
+      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, js.Any],
       flags: ForwardingFlags
     ): Double = js.native
     def registerPrefix(
       prefix: Name,
       onInterest: OnInterestCallback,
-      onRegisterFailed: js.Function1[/* prefix */ Name, _],
-      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, _]
-    ): Double = js.native
-    def registerPrefix(
-      prefix: Name,
-      onInterest: OnInterestCallback,
-      onRegisterFailed: js.Function1[/* prefix */ Name, _],
-      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, _],
+      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterSuccess: Unit,
       flags: ForwardingFlags
     ): Double = js.native
     
@@ -127,9 +130,12 @@ object faceMod {
   /* static members */
   object Face {
     
-    @JSImport("ndn-js/face", "Face.getMaxNdnPacketSize")
+    @JSImport("ndn-js/face", "Face")
     @js.native
-    def getMaxNdnPacketSize(): Double = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getMaxNdnPacketSize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxNdnPacketSize")().asInstanceOf[Double]
   }
   
   @JSImport("ndn-js/face", "ForwardingFlags")
@@ -154,18 +160,17 @@ object faceMod {
     def hasRegexFilter(): Boolean = js.native
   }
   
-  @js.native
   trait FaceCtorOptions extends StObject {
     
-    var connectionInfo: js.UndefOr[TransportConnectionInfo | Null] = js.native
+    var connectionInfo: js.UndefOr[TransportConnectionInfo | Null] = js.undefined
     
-    var getConnectionInfo: js.UndefOr[js.Function0[TransportConnectionInfo]] = js.native
+    var getConnectionInfo: js.UndefOr[js.Function0[TransportConnectionInfo]] = js.undefined
     
-    var getTransport: js.UndefOr[js.Function0[Transport]] = js.native
+    var getTransport: js.UndefOr[js.Function0[Transport]] = js.undefined
     
-    var host: js.UndefOr[String | Null] = js.native
+    var host: js.UndefOr[String | Null] = js.undefined
     
-    var port: js.UndefOr[Double | Null] = js.native
+    var port: js.UndefOr[Double | Null] = js.undefined
   }
   object FaceCtorOptions {
     

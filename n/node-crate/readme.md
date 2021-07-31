@@ -12,7 +12,7 @@ Node.js SQL-driver for CRATE data store (crate.io)
 | Keywords           | CRATE, crate.io, sql, driver, bigdata, elasticsearch alternative, driver for scalable data store, BLOB storage |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 17396 |
+| # downloads        | 21270 |
 | # stars            | 5 |
 
 ## Links

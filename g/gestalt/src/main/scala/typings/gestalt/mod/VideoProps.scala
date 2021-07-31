@@ -24,75 +24,73 @@ import typings.std.HTMLVideoElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoProps extends StObject {
   
-  var accessibilityMaximizeLabel: js.UndefOr[String] = js.native
+  var accessibilityMaximizeLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityMinimizeLabel: js.UndefOr[String] = js.native
+  var accessibilityMinimizeLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityMuteLabel: js.UndefOr[String] = js.native
+  var accessibilityMuteLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityPauseLabel: js.UndefOr[String] = js.native
+  var accessibilityPauseLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityPlayLabel: js.UndefOr[String] = js.native
+  var accessibilityPlayLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityUnmuteLabel: js.UndefOr[String] = js.native
+  var accessibilityUnmuteLabel: js.UndefOr[String] = js.undefined
   
-  var aspectRatio: Double = js.native
+  var aspectRatio: Double
   
-  var captions: String = js.native
+  var captions: String
   
-  var children: js.UndefOr[Node] = js.native
+  var children: js.UndefOr[Node] = js.undefined
   
-  var controls: js.UndefOr[Boolean] = js.native
+  var controls: js.UndefOr[Boolean] = js.undefined
   
-  var crossOrigin: js.UndefOr[anonymous | `use-credentials`] = js.native
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials`] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var objectFit: js.UndefOr[fill | contain | cover | none | `scale-down`] = js.native
+  var objectFit: js.UndefOr[fill | contain | cover | none | `scale-down`] = js.undefined
   
-  var onDurationChange: js.UndefOr[js.Function1[/* args */ Duration, Unit]] = js.native
+  var onDurationChange: js.UndefOr[js.Function1[/* args */ Duration, Unit]] = js.undefined
   
-  var onEnded: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.native
+  var onEnded: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
   
-  var onFullscreenChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Fullscreen]] = js.native
+  var onFullscreenChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Fullscreen]] = js.undefined
   
-  var onLoadedChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Loaded]] = js.native
+  var onLoadedChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Loaded]] = js.undefined
   
-  var onPause: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLDivElement, Event], js.Object]] = js.native
+  var onPause: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLDivElement, Event], js.Object]] = js.undefined
   
-  var onPlay: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLDivElement, Event], js.Object]] = js.native
+  var onPlay: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLDivElement, Event], js.Object]] = js.undefined
   
-  var onPlayheadDown: js.UndefOr[AbstractEventHandler[MouseEvent[HTMLDivElement, NativeMouseEvent], js.Object]] = js.native
+  var onPlayheadDown: js.UndefOr[AbstractEventHandler[MouseEvent[HTMLDivElement, NativeMouseEvent], js.Object]] = js.undefined
   
-  var onPlayheadUp: js.UndefOr[AbstractEventHandler[MouseEvent[HTMLDivElement, NativeMouseEvent], js.Object]] = js.native
+  var onPlayheadUp: js.UndefOr[AbstractEventHandler[MouseEvent[HTMLDivElement, NativeMouseEvent], js.Object]] = js.undefined
   
-  var onReady: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.native
+  var onReady: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
   
-  var onSeek: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.native
+  var onSeek: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
   
-  var onTimeChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Time]] = js.native
+  var onTimeChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Time]] = js.undefined
   
-  var onVolumeChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLDivElement, Event], Volume]] = js.native
+  var onVolumeChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLDivElement, Event], Volume]] = js.undefined
   
-  var playbackRate: js.UndefOr[Double] = js.native
+  var playbackRate: js.UndefOr[Double] = js.undefined
   
-  var playing: js.UndefOr[Boolean] = js.native
+  var playing: js.UndefOr[Boolean] = js.undefined
   
-  var playsInline: js.UndefOr[Boolean] = js.native
+  var playsInline: js.UndefOr[Boolean] = js.undefined
   
-  var poster: js.UndefOr[String] = js.native
+  var poster: js.UndefOr[String] = js.undefined
   
-  var preload: js.UndefOr[auto | metadata | none] = js.native
+  var preload: js.UndefOr[auto | metadata | none] = js.undefined
   
-  var src: String | js.Array[Src] = js.native
+  var src: String | js.Array[Src]
   
-  var volume: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.undefined
 }
 object VideoProps {
   
@@ -185,7 +183,7 @@ object VideoProps {
     
     @scala.inline
     def setOnEnded(
-      value: /* arg */ js.Object with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
     ): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -193,7 +191,7 @@ object VideoProps {
     
     @scala.inline
     def setOnFullscreenChange(
-      value: /* arg */ Fullscreen with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+      value: /* arg */ Fullscreen & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
     ): Self = StObject.set(x, "onFullscreenChange", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -201,7 +199,7 @@ object VideoProps {
     
     @scala.inline
     def setOnLoadedChange(
-      value: /* arg */ Loaded with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+      value: /* arg */ Loaded & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
     ): Self = StObject.set(x, "onLoadedChange", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -209,7 +207,7 @@ object VideoProps {
     
     @scala.inline
     def setOnPause(
-      value: /* arg */ js.Object with (typings.gestalt.anon.Event[SyntheticEvent[HTMLDivElement, Event]]) => Unit
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLDivElement, Event]]) => Unit
     ): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -217,7 +215,7 @@ object VideoProps {
     
     @scala.inline
     def setOnPlay(
-      value: /* arg */ js.Object with (typings.gestalt.anon.Event[SyntheticEvent[HTMLDivElement, Event]]) => Unit
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLDivElement, Event]]) => Unit
     ): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -225,7 +223,7 @@ object VideoProps {
     
     @scala.inline
     def setOnPlayheadDown(
-      value: /* arg */ js.Object with (typings.gestalt.anon.Event[MouseEvent[HTMLDivElement, NativeMouseEvent]]) => Unit
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[MouseEvent[HTMLDivElement, NativeMouseEvent]]) => Unit
     ): Self = StObject.set(x, "onPlayheadDown", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -233,7 +231,7 @@ object VideoProps {
     
     @scala.inline
     def setOnPlayheadUp(
-      value: /* arg */ js.Object with (typings.gestalt.anon.Event[MouseEvent[HTMLDivElement, NativeMouseEvent]]) => Unit
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[MouseEvent[HTMLDivElement, NativeMouseEvent]]) => Unit
     ): Self = StObject.set(x, "onPlayheadUp", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -241,7 +239,7 @@ object VideoProps {
     
     @scala.inline
     def setOnReady(
-      value: /* arg */ js.Object with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
     ): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -249,7 +247,7 @@ object VideoProps {
     
     @scala.inline
     def setOnSeek(
-      value: /* arg */ js.Object with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
     ): Self = StObject.set(x, "onSeek", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -257,7 +255,7 @@ object VideoProps {
     
     @scala.inline
     def setOnTimeChange(
-      value: /* arg */ Time with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+      value: /* arg */ Time & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
     ): Self = StObject.set(x, "onTimeChange", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -265,7 +263,7 @@ object VideoProps {
     
     @scala.inline
     def setOnVolumeChange(
-      value: /* arg */ Volume with (typings.gestalt.anon.Event[SyntheticEvent[HTMLDivElement, Event]]) => Unit
+      value: /* arg */ Volume & (typings.gestalt.anon.Event[SyntheticEvent[HTMLDivElement, Event]]) => Unit
     ): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
     
     @scala.inline

@@ -2,19 +2,17 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proxyMod {
   
-  @js.native
   trait ProxyConfig extends StObject {
     
-    var proxyAddress: String = js.native
+    var proxyAddress: String
     
-    var proxyPort: Double = js.native
+    var proxyPort: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ProxyConfig {
     
@@ -39,12 +37,11 @@ object proxyMod {
     }
   }
   
-  @js.native
   trait ProxyInfo extends StObject {
     
-    var config: ProxyConfig = js.native
+    var config: ProxyConfig
     
-    var system: ProxySystemInfo = js.native
+    var system: ProxySystemInfo
   }
   object ProxyInfo {
     
@@ -65,16 +62,15 @@ object proxyMod {
     }
   }
   
-  @js.native
   trait ProxySystemInfo extends StObject {
     
-    var autoConfigUrl: String = js.native
+    var autoConfigUrl: String
     
-    var bypass: String = js.native
+    var bypass: String
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
-    var proxy: String = js.native
+    var proxy: String
   }
   object ProxySystemInfo {
     

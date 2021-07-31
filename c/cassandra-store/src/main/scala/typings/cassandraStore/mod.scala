@@ -8,7 +8,6 @@ import typings.expressSession.mod.SessionData
 import typings.expressSession.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -60,14 +59,13 @@ object mod {
     def touch_MCassandraStore(sid: String, session: SessionData, callback: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
   trait CassandraStoreOptions extends StObject {
     
-    var client: js.UndefOr[Client | Null] = js.native
+    var client: js.UndefOr[Client | Null] = js.undefined
     
-    var clientOptions: ClientOptions = js.native
+    var clientOptions: ClientOptions
     
-    var table: String = js.native
+    var table: String
   }
   object CassandraStoreOptions {
     

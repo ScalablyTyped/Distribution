@@ -2,12 +2,13 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.navermaps.naver.maps.Coord because Already inherited */ @js.native
-trait LatLng extends Point {
+trait LatLng
+  extends StObject
+     with Point {
   
   def destinationPoint(angle: Double, meter: Double): LatLng = js.native
   

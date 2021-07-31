@@ -4,7 +4,6 @@ import typings.karmaHtmlDetailedReporter.karmaHtmlDetailedReporterStrings.`type`
 import typings.karmaHtmlDetailedReporter.karmaHtmlDetailedReporterStrings.factory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,14 +29,13 @@ object mod {
   /* augmented module */
   object karmaAugmentingMod {
     
-    @js.native
     trait ConfigOptions extends StObject {
       
       /**
         * The reporter provides a dashboard detailing specification runs
         * see {@link https://github.com/a11smiles/karma-html-detailed-reporter#options}
         */
-      var htmlDetailed: js.UndefOr[HtmlDetailedOptions] = js.native
+      var htmlDetailed: js.UndefOr[HtmlDetailedOptions] = js.undefined
     }
     object ConfigOptions {
       
@@ -61,57 +59,56 @@ object mod {
     /**
       * see {@link https://github.com/a11smiles/karma-html-detailed-reporter#options}
       */
-    @js.native
     trait HtmlDetailedOptions extends StObject {
       
       /**
         * Enables/disables the refresh to start automatically
         * @default true
         */
-      var autoReload: js.UndefOr[Boolean] = js.native
+      var autoReload: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Sets the reports output base path
         * @default './_reports'
         */
-      var dir: js.UndefOr[String] = js.native
+      var dir: js.UndefOr[String] = js.undefined
       
       /**
         * Sets the refresh timeout (in milliseconds) for the page
         * @default 1000
         */
-      var refreshTimeout: js.UndefOr[Double] = js.native
+      var refreshTimeout: js.UndefOr[Double] = js.undefined
       
       /**
         * Determines whether the detailed results of the failed tests are default shown or hidden in the browser (you are able to toggle live in the browser)
         * @default true
         */
-      var showFailed: js.UndefOr[Boolean] = js.native
+      var showFailed: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Determines whether the detailed results of the skipped tests are default shown or hidden in the browser (you are able to toggle live in the browser)
         * @default true
         */
-      var showSkipped: js.UndefOr[Boolean] = js.native
+      var showSkipped: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Determines whether the detailed results of the successfull tests are default shown or hidden in the browser (you are able to toggle live in the browser)
         * @default true
         */
-      var showSuccess: js.UndefOr[Boolean] = js.native
+      var showSuccess: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Determines whether the results are split into a separate file for each browser
         * @default true
         */
-      var splitResults: js.UndefOr[Boolean] = js.native
+      var splitResults: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Determines whether to use the hosted versions of Boostrap and jQuery. If testing within a CI build (e.g. TFS, Jenkins, TeamCity),
         * setting this to true would allow you to see the reports while the builders do not maintain node modules.
         * @default false
         */
-      var useHostedBootstrap: js.UndefOr[Boolean] = js.native
+      var useHostedBootstrap: js.UndefOr[Boolean] = js.undefined
     }
     object HtmlDetailedOptions {
       

@@ -10,9 +10,9 @@ Get title property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-title |
 | Keywords           | metascraper, title |
-| # releases         | 82 |
-| # dependents       | 21 |
-| # downloads        | 612576 |
+| # releases         | 102 |
+| # dependents       | 23 |
+| # downloads        | 881598 |
 | # stars            | 0 |
 
 ## Links

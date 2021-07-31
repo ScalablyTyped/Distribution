@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The sentiment of the content. */
-@js.native
 trait SentimentResult extends StObject {
   
   /** The document level sentiment. */
-  var document: js.UndefOr[DocumentSentimentResults] = js.native
+  var document: js.UndefOr[DocumentSentimentResults] = js.undefined
   
   /** The targeted sentiment to analyze. */
-  var targets: js.UndefOr[js.Array[TargetedSentimentResults]] = js.native
+  var targets: js.UndefOr[js.Array[TargetedSentimentResults]] = js.undefined
 }
 object SentimentResult {
   

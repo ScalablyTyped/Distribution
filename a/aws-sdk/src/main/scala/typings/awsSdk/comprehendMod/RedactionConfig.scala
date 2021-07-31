@@ -2,26 +2,24 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedactionConfig extends StObject {
   
   /**
     * A character that replaces each character in the redacted PII entity.
     */
-  var MaskCharacter: js.UndefOr[typings.awsSdk.comprehendMod.MaskCharacter] = js.native
+  var MaskCharacter: js.UndefOr[typings.awsSdk.comprehendMod.MaskCharacter] = js.undefined
   
   /**
     * Specifies whether the PII entity is redacted with the mask character or the entity type.
     */
-  var MaskMode: js.UndefOr[PiiEntitiesDetectionMaskMode] = js.native
+  var MaskMode: js.UndefOr[PiiEntitiesDetectionMaskMode] = js.undefined
   
   /**
     * An array of the types of PII entities that Amazon Comprehend detects in the input text for your request.
     */
-  var PiiEntityTypes: js.UndefOr[ListOfPiiEntityTypes] = js.native
+  var PiiEntityTypes: js.UndefOr[ListOfPiiEntityTypes] = js.undefined
 }
 object RedactionConfig {
   

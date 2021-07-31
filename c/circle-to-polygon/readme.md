@@ -10,9 +10,9 @@ Receives a Coordinate, a Radius and a Number of edges and aproximates a circle b
 | ------------------ | :-------------: |
 | Full name          | circle-to-polygon |
 | Keywords           | GeoJSON, circle, polygon |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 108874 |
+| # releases         | 3 |
+| # dependents       | 5 |
+| # downloads        | 151489 |
 | # stars            | 1 |
 
 ## Links

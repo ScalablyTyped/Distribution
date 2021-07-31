@@ -2,26 +2,24 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFlowTemplateRevisionsRequest extends StObject {
   
   /**
     * The ID of the workflow. The ID should be in the following format.  urn:tdm:REGION/ACCOUNT ID/default:workflow:WORKFLOWNAME 
     */
-  var id: Urn = js.native
+  var id: Urn
   
   /**
     * The maximum number of results to return in the response.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The string that specifies the next page of results. Use this when you're paginating results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetFlowTemplateRevisionsRequest {
   

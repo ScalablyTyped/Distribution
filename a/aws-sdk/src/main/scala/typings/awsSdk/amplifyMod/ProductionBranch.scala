@@ -2,31 +2,29 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductionBranch extends StObject {
   
   /**
     *  The branch name for the production branch. 
     */
-  var branchName: js.UndefOr[BranchName] = js.native
+  var branchName: js.UndefOr[BranchName] = js.undefined
   
   /**
     *  The last deploy time of the production branch. 
     */
-  var lastDeployTime: js.UndefOr[LastDeployTime] = js.native
+  var lastDeployTime: js.UndefOr[LastDeployTime] = js.undefined
   
   /**
     *  The status of the production branch. 
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
   
   /**
     *  The thumbnail URL for the production branch. 
     */
-  var thumbnailUrl: js.UndefOr[ThumbnailUrl] = js.native
+  var thumbnailUrl: js.UndefOr[ThumbnailUrl] = js.undefined
 }
 object ProductionBranch {
   

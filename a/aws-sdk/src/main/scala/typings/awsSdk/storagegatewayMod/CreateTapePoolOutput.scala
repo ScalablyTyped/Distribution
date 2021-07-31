@@ -2,16 +2,14 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTapePoolOutput extends StObject {
   
   /**
     * The unique Amazon Resource Name (ARN) that represents the custom tape pool. Use the ListTapePools operation to return a list of tape pools for your account and AWS Region.
     */
-  var PoolARN: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolARN] = js.native
+  var PoolARN: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolARN] = js.undefined
 }
 object CreateTapePoolOutput {
   

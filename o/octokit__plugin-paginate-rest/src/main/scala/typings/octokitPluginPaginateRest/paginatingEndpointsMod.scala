@@ -175,1051 +175,1049 @@ import typings.octokitPluginPaginateRest.anon.ParametersUsersListPublicSshKeysFo
 import typings.octokitPluginPaginateRest.anon.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginatingEndpointsMod {
   
-  @js.native
   trait PaginatingEndpoints extends StObject {
     
     /**
       * @see https://developer.github.com/v3/apps/#list-installations-for-the-authenticated-app
       */
     @JSName("GET /app/installations")
-    var `GET SlashappSlashinstallations`: Parameters = js.native
+    var `GET SlashappSlashinstallations`: Parameters
     
     /**
       * @see https://developer.github.com/v3/oauth_authorizations/#list-your-grants
       */
     @JSName("GET /applications/grants")
-    var `GET SlashapplicationsSlashgrants`: Response = js.native
+    var `GET SlashapplicationsSlashgrants`: Response
     
     /**
       * @see https://developer.github.com/v3/oauth_authorizations/#list-your-authorizations
       */
     @JSName("GET /authorizations")
-    var `GET Slashauthorizations`: ParametersResponse = js.native
+    var `GET Slashauthorizations`: ParametersResponse
     
     /**
       * @see https://developer.github.com/v3/enterprise-admin/actions/#list-self-hosted-runner-groups-for-an-enterprise
       */
     @JSName("GET /enterprises/:enterprise/actions/runner-groups")
-    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`: ParametersEnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint = js.native
+    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`: ParametersEnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint
     
     /**
       * @see https://developer.github.com/v3/enterprise-admin/actions/#list-organization-access-to-a-self-hosted-runner-group-in-a-enterprise
       */
     @JSName("GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations")
-    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`: ParametersEnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint = js.native
+    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`: ParametersEnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint
     
     /**
       * @see https://developer.github.com/v3/enterprise-admin/actions/#list-self-hosted-runners-in-a-group-for-an-enterprise
       */
     @JSName("GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners")
-    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`: ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint = js.native
+    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`: ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint
     
     /**
       * @see https://developer.github.com/v3/enterprise-admin/actions/#list-self-hosted-runners-for-an-enterprise
       */
     @JSName("GET /enterprises/:enterprise/actions/runners")
-    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`: ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint = js.native
+    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`: ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint
     
     /**
       * @see https://developer.github.com/v3/enterprise-admin/actions/#list-runner-applications-for-an-enterprise
       */
     @JSName("GET /enterprises/:enterprise/actions/runners/downloads")
-    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`: ParametersEnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint = js.native
+    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`: ParametersEnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint
     
     /**
       * @see https://developer.github.com/v3/gists/#list-gists-for-the-authenticated-user
       */
     @JSName("GET /gists")
-    var `GET Slashgists`: ParametersGistsListEndpoint = js.native
+    var `GET Slashgists`: ParametersGistsListEndpoint
     
     /**
       * @see https://developer.github.com/v3/gists/comments/#list-gist-comments
       */
     @JSName("GET /gists/:gist_id/comments")
-    var `GET SlashgistsSlashColongist_idSlashcomments`: ParametersGistsListCommentsEndpoint = js.native
+    var `GET SlashgistsSlashColongist_idSlashcomments`: ParametersGistsListCommentsEndpoint
     
     /**
       * @see https://developer.github.com/v3/gists/#list-gist-commits
       */
     @JSName("GET /gists/:gist_id/commits")
-    var `GET SlashgistsSlashColongist_idSlashcommits`: ParametersGistsListCommitsEndpoint = js.native
+    var `GET SlashgistsSlashColongist_idSlashcommits`: ParametersGistsListCommitsEndpoint
     
     /**
       * @see https://developer.github.com/v3/gists/#list-gist-forks
       */
     @JSName("GET /gists/:gist_id/forks")
-    var `GET SlashgistsSlashColongist_idSlashforks`: ParametersGistsListForksEndpoint = js.native
+    var `GET SlashgistsSlashColongist_idSlashforks`: ParametersGistsListForksEndpoint
     
     /**
       * @see https://developer.github.com/v3/gists/#list-public-gists
       */
     @JSName("GET /gists/public")
-    var `GET SlashgistsSlashpublic`: ParametersGistsListPublicEndpoint = js.native
+    var `GET SlashgistsSlashpublic`: ParametersGistsListPublicEndpoint
     
     /**
       * @see https://developer.github.com/v3/gists/#list-starred-gists
       */
     @JSName("GET /gists/starred")
-    var `GET SlashgistsSlashstarred`: ParametersGistsListStarredEndpoint = js.native
+    var `GET SlashgistsSlashstarred`: ParametersGistsListStarredEndpoint
     
     /**
       * @see https://developer.github.com/v3/apps/installations/#list-repositories-accessible-to-the-app-installation
       */
     @JSName("GET /installation/repositories")
-    var `GET SlashinstallationSlashrepositories`: ParametersAppsListReposAccessibleToInstallationEndpoint = js.native
+    var `GET SlashinstallationSlashrepositories`: ParametersAppsListReposAccessibleToInstallationEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/#list-issues-assigned-to-the-authenticated-user
       */
     @JSName("GET /issues")
-    var `GET Slashissues`: ParametersIssuesListEndpoint = js.native
+    var `GET Slashissues`: ParametersIssuesListEndpoint
     
     /**
       * @see https://developer.github.com/v3/apps/marketplace/#list-plans
       */
     @JSName("GET /marketplace_listing/plans")
-    var `GET Slashmarketplace_listingSlashplans`: ParametersAppsListPlansEndpoint = js.native
+    var `GET Slashmarketplace_listingSlashplans`: ParametersAppsListPlansEndpoint
     
     /**
       * @see https://developer.github.com/v3/apps/marketplace/#list-accounts-for-a-plan
       */
     @JSName("GET /marketplace_listing/plans/:plan_id/accounts")
-    var `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`: ParametersAppsListAccountsForPlanEndpoint = js.native
+    var `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`: ParametersAppsListAccountsForPlanEndpoint
     
     /**
       * @see https://developer.github.com/v3/apps/marketplace/#list-plans-stubbed
       */
     @JSName("GET /marketplace_listing/stubbed/plans")
-    var `GET Slashmarketplace_listingSlashstubbedSlashplans`: ParametersAppsListPlansStubbedEndpoint = js.native
+    var `GET Slashmarketplace_listingSlashstubbedSlashplans`: ParametersAppsListPlansStubbedEndpoint
     
     /**
       * @see https://developer.github.com/v3/apps/marketplace/#list-accounts-for-a-plan-stubbed
       */
     @JSName("GET /marketplace_listing/stubbed/plans/:plan_id/accounts")
-    var `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`: ParametersAppsListAccountsForPlanStubbedEndpoint = js.native
+    var `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`: ParametersAppsListAccountsForPlanStubbedEndpoint
     
     /**
       * @see https://developer.github.com/v3/activity/notifications/#list-notifications-for-the-authenticated-user
       */
     @JSName("GET /notifications")
-    var `GET Slashnotifications`: ParametersActivityListNotificationsForAuthenticatedUserEndpoint = js.native
+    var `GET Slashnotifications`: ParametersActivityListNotificationsForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/#list-organizations
       */
     @JSName("GET /organizations")
-    var `GET Slashorganizations`: ParametersOrgsListEndpoint = js.native
+    var `GET Slashorganizations`: ParametersOrgsListEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/self-hosted-runner-groups/#list-self-hosted-runner-groups-for-an-organization
       */
     @JSName("GET /orgs/:org/actions/runner-groups")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`: ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`: ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/self-hosted-runner-groups/#list-repository-access-to-a-self-hosted-runner-group-in-an-organization
       */
     @JSName("GET /orgs/:org/actions/runner-groups/:runner_group_id/repositories")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`: ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`: ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/self-hosted-runner-groups/#list-self-hosted-runners-in-a-group-for-an-organization
       */
     @JSName("GET /orgs/:org/actions/runner-groups/:runner_group_id/runners")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`: ParametersActionsListSelfHostedRunnersInGroupForOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`: ParametersActionsListSelfHostedRunnersInGroupForOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/self-hosted-runners/#list-self-hosted-runners-for-an-organization
       */
     @JSName("GET /orgs/:org/actions/runners")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashrunners`: ParametersActionsListSelfHostedRunnersForOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashactionsSlashrunners`: ParametersActionsListSelfHostedRunnersForOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/self-hosted-runners/#list-runner-applications-for-an-organization
       */
     @JSName("GET /orgs/:org/actions/runners/downloads")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`: ParametersActionsListRunnerApplicationsForOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`: ParametersActionsListRunnerApplicationsForOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/secrets/#list-organization-secrets
       */
     @JSName("GET /orgs/:org/actions/secrets")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`: ParametersActionsListOrgSecretsEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`: ParametersActionsListOrgSecretsEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/secrets/#list-selected-repositories-for-an-organization-secret
       */
     @JSName("GET /orgs/:org/actions/secrets/:secret_name/repositories")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`: ParametersActionsListSelectedReposForOrgSecretEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`: ParametersActionsListSelectedReposForOrgSecretEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/blocking/#list-users-blocked-by-an-organization
       */
     @JSName("GET /orgs/:org/blocks")
-    var `GET SlashorgsSlashColonorgSlashblocks`: ParametersOrgsListBlockedUsersEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashblocks`: ParametersOrgsListBlockedUsersEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/#list-saml-sso-authorizations-for-an-organization
       */
     @JSName("GET /orgs/:org/credential-authorizations")
-    var `GET SlashorgsSlashColonorgSlashcredential-authorizations`: ParametersOrgsListSamlSsoAuthorizationsEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashcredential-authorizations`: ParametersOrgsListSamlSsoAuthorizationsEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/hooks/#list-organization-webhooks
       */
     @JSName("GET /orgs/:org/hooks")
-    var `GET SlashorgsSlashColonorgSlashhooks`: ParametersOrgsListWebhooksEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashhooks`: ParametersOrgsListWebhooksEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/#list-app-installations-for-an-organization
       */
     @JSName("GET /orgs/:org/installations")
-    var `GET SlashorgsSlashColonorgSlashinstallations`: ParametersOrgsListAppInstallationsEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashinstallations`: ParametersOrgsListAppInstallationsEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/members/#list-pending-organization-invitations
       */
     @JSName("GET /orgs/:org/invitations")
-    var `GET SlashorgsSlashColonorgSlashinvitations`: ParametersOrgsListPendingInvitationsEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashinvitations`: ParametersOrgsListPendingInvitationsEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/members/#list-organization-invitation-teams
       */
     @JSName("GET /orgs/:org/invitations/:invitation_id/teams")
-    var `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`: ParametersOrgsListInvitationTeamsEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`: ParametersOrgsListInvitationTeamsEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/#list-organization-issues-assigned-to-the-authenticated-user
       */
     @JSName("GET /orgs/:org/issues")
-    var `GET SlashorgsSlashColonorgSlashissues`: ParametersIssuesListForOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashissues`: ParametersIssuesListForOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/members/#list-organization-members
       */
     @JSName("GET /orgs/:org/members")
-    var `GET SlashorgsSlashColonorgSlashmembers`: ParametersOrgsListMembersEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashmembers`: ParametersOrgsListMembersEndpoint
     
     /**
       * @see https://developer.github.com/v3/migrations/orgs/#list-organization-migrations
       */
     @JSName("GET /orgs/:org/migrations")
-    var `GET SlashorgsSlashColonorgSlashmigrations`: ParametersMigrationsListForOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashmigrations`: ParametersMigrationsListForOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/migrations/orgs/#list-repositories-in-an-organization-migration
       */
     @JSName("GET /orgs/:org/migrations/:migration_id/repositories")
-    var `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`: ParametersMigrationsListReposForOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`: ParametersMigrationsListReposForOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/outside_collaborators/#list-outside-collaborators-for-an-organization
       */
     @JSName("GET /orgs/:org/outside_collaborators")
-    var `GET SlashorgsSlashColonorgSlashoutside_collaborators`: ParametersOrgsListOutsideCollaboratorsEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashoutside_collaborators`: ParametersOrgsListOutsideCollaboratorsEndpoint
     
     /**
       * @see https://developer.github.com/v3/projects/#list-organization-projects
       */
     @JSName("GET /orgs/:org/projects")
-    var `GET SlashorgsSlashColonorgSlashprojects`: ParametersProjectsListForOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashprojects`: ParametersProjectsListForOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/members/#list-public-organization-members
       */
     @JSName("GET /orgs/:org/public_members")
-    var `GET SlashorgsSlashColonorgSlashpublic_members`: ParametersOrgsListPublicMembersEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashpublic_members`: ParametersOrgsListPublicMembersEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/#list-organization-repositories
       */
     @JSName("GET /orgs/:org/repos")
-    var `GET SlashorgsSlashColonorgSlashrepos`: ParametersReposListForOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashrepos`: ParametersReposListForOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/team_sync/#list-idp-groups-for-an-organization
       */
     @JSName("GET /orgs/:org/team-sync/groups")
-    var `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`: ParametersTeamsListIdPGroupsForOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`: ParametersTeamsListIdPGroupsForOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/#list-teams
       */
     @JSName("GET /orgs/:org/teams")
-    var `GET SlashorgsSlashColonorgSlashteams`: ParametersTeamsListEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteams`: ParametersTeamsListEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/discussions/#list-discussions
       */
     @JSName("GET /orgs/:org/teams/:team_slug/discussions")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`: ParametersTeamsListDiscussionsInOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`: ParametersTeamsListDiscussionsInOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/discussion_comments/#list-discussion-comments
       */
     @JSName("GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`: ParametersTeamsListDiscussionCommentsInOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`: ParametersTeamsListDiscussionCommentsInOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-team-discussion-comment
       */
     @JSName("GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number/reactions")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`: ParametersReactionsListForTeamDiscussionCommentInOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`: ParametersReactionsListForTeamDiscussionCommentInOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-team-discussion
       */
     @JSName("GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/reactions")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`: ParametersReactionsListForTeamDiscussionInOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`: ParametersReactionsListForTeamDiscussionInOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/members/#list-pending-team-invitations
       */
     @JSName("GET /orgs/:org/teams/:team_slug/invitations")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`: ParametersTeamsListPendingInvitationsInOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`: ParametersTeamsListPendingInvitationsInOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/members/#list-team-members
       */
     @JSName("GET /orgs/:org/teams/:team_slug/members")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`: ParametersTeamsListMembersInOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`: ParametersTeamsListMembersInOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/#list-team-projects
       */
     @JSName("GET /orgs/:org/teams/:team_slug/projects")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`: ParametersTeamsListProjectsInOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`: ParametersTeamsListProjectsInOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/#list-team-repositories
       */
     @JSName("GET /orgs/:org/teams/:team_slug/repos")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`: ParametersTeamsListReposInOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`: ParametersTeamsListReposInOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/team_sync/#list-idp-groups-for-a-team
       */
     @JSName("GET /orgs/:org/teams/:team_slug/team-sync/group-mappings")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`: ParametersTeamsListIdPGroupsInOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`: ParametersTeamsListIdPGroupsInOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/#list-child-teams
       */
     @JSName("GET /orgs/:org/teams/:team_slug/teams")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`: ParametersTeamsListChildInOrgEndpoint = js.native
+    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`: ParametersTeamsListChildInOrgEndpoint
     
     /**
       * @see https://developer.github.com/v3/projects/collaborators/#list-project-collaborators
       */
     @JSName("GET /projects/:project_id/collaborators")
-    var `GET SlashprojectsSlashColonproject_idSlashcollaborators`: ParametersProjectsListCollaboratorsEndpoint = js.native
+    var `GET SlashprojectsSlashColonproject_idSlashcollaborators`: ParametersProjectsListCollaboratorsEndpoint
     
     /**
       * @see https://developer.github.com/v3/projects/columns/#list-project-columns
       */
     @JSName("GET /projects/:project_id/columns")
-    var `GET SlashprojectsSlashColonproject_idSlashcolumns`: ParametersProjectsListColumnsEndpoint = js.native
+    var `GET SlashprojectsSlashColonproject_idSlashcolumns`: ParametersProjectsListColumnsEndpoint
     
     /**
       * @see https://developer.github.com/v3/projects/cards/#list-project-cards
       */
     @JSName("GET /projects/columns/:column_id/cards")
-    var `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`: ParametersProjectsListCardsEndpoint = js.native
+    var `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`: ParametersProjectsListCardsEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/artifacts/#list-artifacts-for-a-repository
       */
     @JSName("GET /repos/:owner/:repo/actions/artifacts")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`: ParametersActionsListArtifactsForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`: ParametersActionsListArtifactsForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/self-hosted-runners/#list-self-hosted-runners-for-a-repository
       */
     @JSName("GET /repos/:owner/:repo/actions/runners")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`: ParametersActionsListSelfHostedRunnersForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`: ParametersActionsListSelfHostedRunnersForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/self-hosted-runners/#list-runner-applications-for-a-repository
       */
     @JSName("GET /repos/:owner/:repo/actions/runners/downloads")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`: ParametersActionsListRunnerApplicationsForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`: ParametersActionsListRunnerApplicationsForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/workflow-runs/#list-workflow-runs-for-a-repository
       */
     @JSName("GET /repos/:owner/:repo/actions/runs")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`: ParametersActionsListWorkflowRunsForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`: ParametersActionsListWorkflowRunsForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/artifacts/#list-workflow-run-artifacts
       */
     @JSName("GET /repos/:owner/:repo/actions/runs/:run_id/artifacts")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`: ParametersActionsListWorkflowRunArtifactsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`: ParametersActionsListWorkflowRunArtifactsEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/workflow-jobs/#list-jobs-for-a-workflow-run
       */
     @JSName("GET /repos/:owner/:repo/actions/runs/:run_id/jobs")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`: ParametersActionsListJobsForWorkflowRunEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`: ParametersActionsListJobsForWorkflowRunEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/secrets/#list-repository-secrets
       */
     @JSName("GET /repos/:owner/:repo/actions/secrets")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`: ParametersActionsListRepoSecretsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`: ParametersActionsListRepoSecretsEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/workflows/#list-repository-workflows
       */
     @JSName("GET /repos/:owner/:repo/actions/workflows")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`: ParametersActionsListRepoWorkflowsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`: ParametersActionsListRepoWorkflowsEndpoint
     
     /**
       * @see https://developer.github.com/v3/actions/workflow-runs/#list-workflow-runs
       */
     @JSName("GET /repos/:owner/:repo/actions/workflows/:workflow_id/runs")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`: ParametersActionsListWorkflowRunsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`: ParametersActionsListWorkflowRunsEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/assignees/#list-assignees
       */
     @JSName("GET /repos/:owner/:repo/assignees")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`: ParametersIssuesListAssigneesEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`: ParametersIssuesListAssigneesEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/branches/#list-branches
       */
     @JSName("GET /repos/:owner/:repo/branches")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`: ParametersReposListBranchesEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`: ParametersReposListBranchesEndpoint
     
     /**
       * @see https://developer.github.com/v3/checks/runs/#list-check-run-annotations
       */
     @JSName("GET /repos/:owner/:repo/check-runs/:check_run_id/annotations")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`: ParametersChecksListAnnotationsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`: ParametersChecksListAnnotationsEndpoint
     
     /**
       * @see https://developer.github.com/v3/checks/runs/#list-check-runs-in-a-check-suite
       */
     @JSName("GET /repos/:owner/:repo/check-suites/:check_suite_id/check-runs")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`: ParametersChecksListForSuiteEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`: ParametersChecksListForSuiteEndpoint
     
     /**
       * @see https://developer.github.com/v3/code-scanning/#list-code-scanning-alerts-for-a-repository
       */
     @JSName("GET /repos/:owner/:repo/code-scanning/alerts")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`: ParametersCodeScanningListAlertsForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`: ParametersCodeScanningListAlertsForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/code-scanning/#list-recent-analyses
       */
     @JSName("GET /repos/:owner/:repo/code-scanning/analyses")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`: ParametersCodeScanningListRecentAnalysesEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`: ParametersCodeScanningListRecentAnalysesEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/collaborators/#list-repository-collaborators
       */
     @JSName("GET /repos/:owner/:repo/collaborators")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`: ParametersReposListCollaboratorsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`: ParametersReposListCollaboratorsEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/comments/#list-commit-comments-for-a-repository
       */
     @JSName("GET /repos/:owner/:repo/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`: ParametersReposListCommitCommentsForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`: ParametersReposListCommitCommentsForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-commit-comment
       */
     @JSName("GET /repos/:owner/:repo/comments/:comment_id/reactions")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForCommitCommentEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForCommitCommentEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/commits/#list-commits
       */
     @JSName("GET /repos/:owner/:repo/commits")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`: ParametersReposListCommitsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`: ParametersReposListCommitsEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/commits/#list-branches-for-head-commit
       */
     @JSName("GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`: ParametersReposListBranchesForHeadCommitEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`: ParametersReposListBranchesForHeadCommitEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/comments/#list-commit-comments
       */
     @JSName("GET /repos/:owner/:repo/commits/:commit_sha/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`: ParametersReposListCommentsForCommitEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`: ParametersReposListCommentsForCommitEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/commits/#list-pull-requests-associated-with-a-commit
       */
     @JSName("GET /repos/:owner/:repo/commits/:commit_sha/pulls")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`: ParametersReposListPullRequestsAssociatedWithCommitEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`: ParametersReposListPullRequestsAssociatedWithCommitEndpoint
     
     /**
       * @see https://developer.github.com/v3/checks/runs/#list-check-runs-for-a-git-reference
       */
     @JSName("GET /repos/:owner/:repo/commits/:ref/check-runs")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`: ParametersChecksListForRefEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`: ParametersChecksListForRefEndpoint
     
     /**
       * @see https://developer.github.com/v3/checks/suites/#list-check-suites-for-a-git-reference
       */
     @JSName("GET /repos/:owner/:repo/commits/:ref/check-suites")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`: ParametersChecksListSuitesForRefEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`: ParametersChecksListSuitesForRefEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/statuses/#list-commit-statuses-for-a-reference
       */
     @JSName("GET /repos/:owner/:repo/commits/:ref/statuses")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`: ParametersReposListCommitStatusesForRefEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`: ParametersReposListCommitStatusesForRefEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/#list-repository-contributors
       */
     @JSName("GET /repos/:owner/:repo/contributors")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`: ParametersReposListContributorsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`: ParametersReposListContributorsEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/deployments/#list-deployments
       */
     @JSName("GET /repos/:owner/:repo/deployments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`: ParametersReposListDeploymentsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`: ParametersReposListDeploymentsEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/deployments/#list-deployment-statuses
       */
     @JSName("GET /repos/:owner/:repo/deployments/:deployment_id/statuses")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`: ParametersReposListDeploymentStatusesEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`: ParametersReposListDeploymentStatusesEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/forks/#list-forks
       */
     @JSName("GET /repos/:owner/:repo/forks")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashforks`: ParametersReposListForksEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashforks`: ParametersReposListForksEndpoint
     
     /**
       * @see https://developer.github.com/v3/git/refs/#list-matching-references
       */
     @JSName("GET /repos/:owner/:repo/git/matching-refs/:ref")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`: ParametersGitListMatchingRefsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`: ParametersGitListMatchingRefsEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/hooks/#list-repository-webhooks
       */
     @JSName("GET /repos/:owner/:repo/hooks")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`: ParametersReposListWebhooksEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`: ParametersReposListWebhooksEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/invitations/#list-repository-invitations
       */
     @JSName("GET /repos/:owner/:repo/invitations")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`: ParametersReposListInvitationsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`: ParametersReposListInvitationsEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/#list-repository-issues
       */
     @JSName("GET /repos/:owner/:repo/issues")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissues`: ParametersIssuesListForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashissues`: ParametersIssuesListForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/comments/#list-issue-comments
       */
     @JSName("GET /repos/:owner/:repo/issues/:issue_number/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`: ParametersIssuesListCommentsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`: ParametersIssuesListCommentsEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/events/#list-issue-events
       */
     @JSName("GET /repos/:owner/:repo/issues/:issue_number/events")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`: ParametersIssuesListEventsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`: ParametersIssuesListEventsEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/labels/#list-labels-for-an-issue
       */
     @JSName("GET /repos/:owner/:repo/issues/:issue_number/labels")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`: ParametersIssuesListLabelsOnIssueEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`: ParametersIssuesListLabelsOnIssueEndpoint
     
     /**
       * @see https://developer.github.com/v3/reactions/#list-reactions-for-an-issue
       */
     @JSName("GET /repos/:owner/:repo/issues/:issue_number/reactions")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`: ParametersReactionsListForIssueEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`: ParametersReactionsListForIssueEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/timeline/#list-timeline-events-for-an-issue
       */
     @JSName("GET /repos/:owner/:repo/issues/:issue_number/timeline")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`: ParametersIssuesListEventsForTimelineEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`: ParametersIssuesListEventsForTimelineEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/comments/#list-issue-comments-for-a-repository
       */
     @JSName("GET /repos/:owner/:repo/issues/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`: ParametersIssuesListCommentsForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`: ParametersIssuesListCommentsForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/reactions/#list-reactions-for-an-issue-comment
       */
     @JSName("GET /repos/:owner/:repo/issues/comments/:comment_id/reactions")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForIssueCommentEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForIssueCommentEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/events/#list-issue-events-for-a-repository
       */
     @JSName("GET /repos/:owner/:repo/issues/events")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`: ParametersIssuesListEventsForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`: ParametersIssuesListEventsForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/keys/#list-deploy-keys
       */
     @JSName("GET /repos/:owner/:repo/keys")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`: ParametersReposListDeployKeysEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`: ParametersReposListDeployKeysEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/labels/#list-labels-for-a-repository
       */
     @JSName("GET /repos/:owner/:repo/labels")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`: ParametersIssuesListLabelsForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`: ParametersIssuesListLabelsForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/#list-repository-languages
       */
     @JSName("GET /repos/:owner/:repo/languages")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`: ParametersReposListLanguagesEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`: ParametersReposListLanguagesEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/milestones/#list-milestones
       */
     @JSName("GET /repos/:owner/:repo/milestones")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`: ParametersIssuesListMilestonesEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`: ParametersIssuesListMilestonesEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/labels/#list-labels-for-issues-in-a-milestone
       */
     @JSName("GET /repos/:owner/:repo/milestones/:milestone_number/labels")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`: ParametersIssuesListLabelsForMilestoneEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`: ParametersIssuesListLabelsForMilestoneEndpoint
     
     /**
       * @see https://developer.github.com/v3/activity/notifications/#list-repository-notifications-for-the-authenticated-user
       */
     @JSName("GET /repos/:owner/:repo/notifications")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`: ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`: ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/pages/#list-github-pages-builds
       */
     @JSName("GET /repos/:owner/:repo/pages/builds")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`: ParametersReposListPagesBuildsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`: ParametersReposListPagesBuildsEndpoint
     
     /**
       * @see https://developer.github.com/v3/projects/#list-repository-projects
       */
     @JSName("GET /repos/:owner/:repo/projects")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`: ParametersProjectsListForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`: ParametersProjectsListForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/pulls/#list-pull-requests
       */
     @JSName("GET /repos/:owner/:repo/pulls")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`: ParametersPullsListEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`: ParametersPullsListEndpoint
     
     /**
       * @see https://developer.github.com/v3/pulls/comments/#list-review-comments-on-a-pull-request
       */
     @JSName("GET /repos/:owner/:repo/pulls/:pull_number/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`: ParametersPullsListReviewCommentsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`: ParametersPullsListReviewCommentsEndpoint
     
     /**
       * @see https://developer.github.com/v3/pulls/#list-commits-on-a-pull-request
       */
     @JSName("GET /repos/:owner/:repo/pulls/:pull_number/commits")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`: ParametersPullsListCommitsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`: ParametersPullsListCommitsEndpoint
     
     /**
       * @see https://developer.github.com/v3/pulls/#list-pull-requests-files
       */
     @JSName("GET /repos/:owner/:repo/pulls/:pull_number/files")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`: ParametersPullsListFilesEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`: ParametersPullsListFilesEndpoint
     
     /**
       * @see https://developer.github.com/v3/pulls/review_requests/#list-requested-reviewers-for-a-pull-request
       */
     @JSName("GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`: ParametersPullsListRequestedReviewersEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`: ParametersPullsListRequestedReviewersEndpoint
     
     /**
       * @see https://developer.github.com/v3/pulls/reviews/#list-reviews-for-a-pull-request
       */
     @JSName("GET /repos/:owner/:repo/pulls/:pull_number/reviews")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`: ParametersPullsListReviewsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`: ParametersPullsListReviewsEndpoint
     
     /**
       * @see https://developer.github.com/v3/pulls/reviews/#list-comments-for-a-pull-request-review
       */
     @JSName("GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`: ParametersPullsListCommentsForReviewEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`: ParametersPullsListCommentsForReviewEndpoint
     
     /**
       * @see https://developer.github.com/v3/pulls/comments/#list-review-comments-in-a-repository
       */
     @JSName("GET /repos/:owner/:repo/pulls/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`: ParametersPullsListReviewCommentsForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`: ParametersPullsListReviewCommentsForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-pull-request-review-comment
       */
     @JSName("GET /repos/:owner/:repo/pulls/comments/:comment_id/reactions")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForPullRequestReviewCommentEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForPullRequestReviewCommentEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/releases/#list-releases
       */
     @JSName("GET /repos/:owner/:repo/releases")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`: ParametersReposListReleasesEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`: ParametersReposListReleasesEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/releases/#list-release-assets
       */
     @JSName("GET /repos/:owner/:repo/releases/:release_id/assets")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`: ParametersReposListReleaseAssetsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`: ParametersReposListReleaseAssetsEndpoint
     
     /**
       * @see https://developer.github.com/v3/activity/starring/#list-stargazers
       */
     @JSName("GET /repos/:owner/:repo/stargazers")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`: ParametersActivityListStargazersForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`: ParametersActivityListStargazersForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/activity/watching/#list-watchers
       */
     @JSName("GET /repos/:owner/:repo/subscribers")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`: ParametersActivityListWatchersForRepoEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`: ParametersActivityListWatchersForRepoEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/#list-repository-tags
       */
     @JSName("GET /repos/:owner/:repo/tags")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashtags`: ParametersReposListTagsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashtags`: ParametersReposListTagsEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/#list-repository-teams
       */
     @JSName("GET /repos/:owner/:repo/teams")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashteams`: ParametersReposListTeamsEndpoint = js.native
+    var `GET SlashreposSlashColonownerSlashColonrepoSlashteams`: ParametersReposListTeamsEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/#list-public-repositories
       */
     @JSName("GET /repositories")
-    var `GET Slashrepositories`: ParametersReposListPublicEndpoint = js.native
+    var `GET Slashrepositories`: ParametersReposListPublicEndpoint
     
     /**
       * @see https://developer.github.com/v3/enterprise-admin/scim/#list-provisioned-scim groups-for-an-enterprise
       */
     @JSName("GET /scim/v2/enterprises/:enterprise/Groups")
-    var `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`: ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint = js.native
+    var `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`: ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint
     
     /**
       * @see https://developer.github.com/v3/enterprise-admin/scim/#list-scim-provisioned-identities-for-an-enterprise
       */
     @JSName("GET /scim/v2/enterprises/:enterprise/Users")
-    var `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`: ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint = js.native
+    var `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`: ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint
     
     /**
       * @see https://developer.github.com/v3/scim/#list-scim-provisioned-identities
       */
     @JSName("GET /scim/v2/organizations/:org/Users")
-    var `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`: ParametersScimListProvisionedIdentitiesEndpoint = js.native
+    var `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`: ParametersScimListProvisionedIdentitiesEndpoint
     
     /**
       * @see https://developer.github.com/v3/search/#search-code
       */
     @JSName("GET /search/code")
-    var `GET SlashsearchSlashcode`: ParametersSearchCodeEndpoint = js.native
+    var `GET SlashsearchSlashcode`: ParametersSearchCodeEndpoint
     
     /**
       * @see https://developer.github.com/v3/search/#search-commits
       */
     @JSName("GET /search/commits")
-    var `GET SlashsearchSlashcommits`: ParametersSearchCommitsEndpoint = js.native
+    var `GET SlashsearchSlashcommits`: ParametersSearchCommitsEndpoint
     
     /**
       * @see https://developer.github.com/v3/search/#search-issues-and-pull-requests
       */
     @JSName("GET /search/issues")
-    var `GET SlashsearchSlashissues`: ParametersSearchIssuesAndPullRequestsEndpoint = js.native
+    var `GET SlashsearchSlashissues`: ParametersSearchIssuesAndPullRequestsEndpoint
     
     /**
       * @see https://developer.github.com/v3/search/#search-labels
       */
     @JSName("GET /search/labels")
-    var `GET SlashsearchSlashlabels`: ParametersSearchLabelsEndpoint = js.native
+    var `GET SlashsearchSlashlabels`: ParametersSearchLabelsEndpoint
     
     /**
       * @see https://developer.github.com/v3/search/#search-repositories
       */
     @JSName("GET /search/repositories")
-    var `GET SlashsearchSlashrepositories`: ParametersSearchReposEndpoint = js.native
+    var `GET SlashsearchSlashrepositories`: ParametersSearchReposEndpoint
     
     /**
       * @see https://developer.github.com/v3/search/#search-topics
       */
     @JSName("GET /search/topics")
-    var `GET SlashsearchSlashtopics`: ParametersSearchTopicsEndpoint = js.native
+    var `GET SlashsearchSlashtopics`: ParametersSearchTopicsEndpoint
     
     /**
       * @see https://developer.github.com/v3/search/#search-users
       */
     @JSName("GET /search/users")
-    var `GET SlashsearchSlashusers`: ParametersSearchUsersEndpoint = js.native
+    var `GET SlashsearchSlashusers`: ParametersSearchUsersEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/discussions/#list-discussions-legacy
       */
     @JSName("GET /teams/:team_id/discussions")
-    var `GET SlashteamsSlashColonteam_idSlashdiscussions`: ParametersTeamsListDiscussionsLegacyEndpoint = js.native
+    var `GET SlashteamsSlashColonteam_idSlashdiscussions`: ParametersTeamsListDiscussionsLegacyEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/discussion_comments/#list-discussion-comments-legacy
       */
     @JSName("GET /teams/:team_id/discussions/:discussion_number/comments")
-    var `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`: ParametersTeamsListDiscussionCommentsLegacyEndpoint = js.native
+    var `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`: ParametersTeamsListDiscussionCommentsLegacyEndpoint
     
     /**
       * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-team-discussion-comment-legacy
       */
     @JSName("GET /teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions")
-    var `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`: ParametersReactionsListForTeamDiscussionCommentLegacyEndpoint = js.native
+    var `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`: ParametersReactionsListForTeamDiscussionCommentLegacyEndpoint
     
     /**
       * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-team-discussion-legacy
       */
     @JSName("GET /teams/:team_id/discussions/:discussion_number/reactions")
-    var `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`: ParametersReactionsListForTeamDiscussionLegacyEndpoint = js.native
+    var `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`: ParametersReactionsListForTeamDiscussionLegacyEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/members/#list-pending-team-invitations-legacy
       */
     @JSName("GET /teams/:team_id/invitations")
-    var `GET SlashteamsSlashColonteam_idSlashinvitations`: ParametersTeamsListPendingInvitationsLegacyEndpoint = js.native
+    var `GET SlashteamsSlashColonteam_idSlashinvitations`: ParametersTeamsListPendingInvitationsLegacyEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/members/#list-team-members-legacy
       */
     @JSName("GET /teams/:team_id/members")
-    var `GET SlashteamsSlashColonteam_idSlashmembers`: ParametersTeamsListMembersLegacyEndpoint = js.native
+    var `GET SlashteamsSlashColonteam_idSlashmembers`: ParametersTeamsListMembersLegacyEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/#list-team-projects-legacy
       */
     @JSName("GET /teams/:team_id/projects")
-    var `GET SlashteamsSlashColonteam_idSlashprojects`: ParametersTeamsListProjectsLegacyEndpoint = js.native
+    var `GET SlashteamsSlashColonteam_idSlashprojects`: ParametersTeamsListProjectsLegacyEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/#list-team-repositories-legacy
       */
     @JSName("GET /teams/:team_id/repos")
-    var `GET SlashteamsSlashColonteam_idSlashrepos`: ParametersTeamsListReposLegacyEndpoint = js.native
+    var `GET SlashteamsSlashColonteam_idSlashrepos`: ParametersTeamsListReposLegacyEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/team_sync/#list-idp-groups-for-a-team-legacy
       */
     @JSName("GET /teams/:team_id/team-sync/group-mappings")
-    var `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`: ParametersTeamsListIdPGroupsForLegacyEndpoint = js.native
+    var `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`: ParametersTeamsListIdPGroupsForLegacyEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/#list-child-teams-legacy
       */
     @JSName("GET /teams/:team_id/teams")
-    var `GET SlashteamsSlashColonteam_idSlashteams`: ParametersTeamsListChildLegacyEndpoint = js.native
+    var `GET SlashteamsSlashColonteam_idSlashteams`: ParametersTeamsListChildLegacyEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/blocking/#list-users-blocked-by-the-authenticated-user
       */
     @JSName("GET /user/blocks")
-    var `GET SlashuserSlashblocks`: ParametersUsersListBlockedByAuthenticatedEndpoint = js.native
+    var `GET SlashuserSlashblocks`: ParametersUsersListBlockedByAuthenticatedEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/emails/#list-email-addresses-for-the-authenticated-user
       */
     @JSName("GET /user/emails")
-    var `GET SlashuserSlashemails`: ParametersUsersListEmailsForAuthenticatedEndpoint = js.native
+    var `GET SlashuserSlashemails`: ParametersUsersListEmailsForAuthenticatedEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/followers/#list-followers-of-the-authenticated-user
       */
     @JSName("GET /user/followers")
-    var `GET SlashuserSlashfollowers`: ParametersUsersListFollowersForAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashfollowers`: ParametersUsersListFollowersForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/followers/#list-the-people-the-authenticated-user-follows
       */
     @JSName("GET /user/following")
-    var `GET SlashuserSlashfollowing`: ParametersUsersListFollowedByAuthenticatedEndpoint = js.native
+    var `GET SlashuserSlashfollowing`: ParametersUsersListFollowedByAuthenticatedEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/gpg_keys/#list-gpg-keys-for-the-authenticated-user
       */
     @JSName("GET /user/gpg_keys")
-    var `GET SlashuserSlashgpg_keys`: ParametersUsersListGpgKeysForAuthenticatedEndpoint = js.native
+    var `GET SlashuserSlashgpg_keys`: ParametersUsersListGpgKeysForAuthenticatedEndpoint
     
     /**
       * @see https://developer.github.com/v3/apps/installations/#list-app-installations-accessible-to-the-user-access-token
       */
     @JSName("GET /user/installations")
-    var `GET SlashuserSlashinstallations`: ParametersAppsListInstallationsForAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashinstallations`: ParametersAppsListInstallationsForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/apps/installations/#list-repositories-accessible-to-the-user-access-token
       */
     @JSName("GET /user/installations/:installation_id/repositories")
-    var `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`: ParametersAppsListInstallationReposForAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`: ParametersAppsListInstallationReposForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/issues/#list-user-account-issues-assigned-to-the-authenticated-user
       */
     @JSName("GET /user/issues")
-    var `GET SlashuserSlashissues`: ParametersIssuesListForAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashissues`: ParametersIssuesListForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/keys/#list-public-ssh-keys-for-the-authenticated-user
       */
     @JSName("GET /user/keys")
-    var `GET SlashuserSlashkeys`: ParametersUsersListPublicSshKeysForAuthenticatedEndpoint = js.native
+    var `GET SlashuserSlashkeys`: ParametersUsersListPublicSshKeysForAuthenticatedEndpoint
     
     /**
       * @see https://developer.github.com/v3/apps/marketplace/#list-subscriptions-for-the-authenticated-user
       */
     @JSName("GET /user/marketplace_purchases")
-    var `GET SlashuserSlashmarketplace_purchases`: ParametersAppsListSubscriptionsForAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashmarketplace_purchases`: ParametersAppsListSubscriptionsForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/apps/marketplace/#list-subscriptions-for-the-authenticated-user-stubbed
       */
     @JSName("GET /user/marketplace_purchases/stubbed")
-    var `GET SlashuserSlashmarketplace_purchasesSlashstubbed`: ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint = js.native
+    var `GET SlashuserSlashmarketplace_purchasesSlashstubbed`: ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/members/#list-organization-memberships-for-the-authenticated-user
       */
     @JSName("GET /user/memberships/orgs")
-    var `GET SlashuserSlashmembershipsSlashorgs`: ParametersOrgsListMembershipsForAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashmembershipsSlashorgs`: ParametersOrgsListMembershipsForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/migrations/users/#list-user-migrations
       */
     @JSName("GET /user/migrations")
-    var `GET SlashuserSlashmigrations`: ParametersMigrationsListForAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashmigrations`: ParametersMigrationsListForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/migrations/users/#list-repositories-for-a-user-migration
       */
     @JSName("GET /user/migrations/:migration_id/repositories")
-    var `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`: ParametersMigrationsListReposForUserEndpoint = js.native
+    var `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`: ParametersMigrationsListReposForUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/#list-organizations-for-the-authenticated-user
       */
     @JSName("GET /user/orgs")
-    var `GET SlashuserSlashorgs`: ParametersOrgsListForAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashorgs`: ParametersOrgsListForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/emails/#list-public-email-addresses-for-the-authenticated-user
       */
     @JSName("GET /user/public_emails")
-    var `GET SlashuserSlashpublic_emails`: ParametersUsersListPublicEmailsForAuthenticatedEndpoint = js.native
+    var `GET SlashuserSlashpublic_emails`: ParametersUsersListPublicEmailsForAuthenticatedEndpoint
     
     /**
       * @see https://developer.github.com/v3/repos/invitations/#list-repository-invitations-for-the-authenticated-user
       */
     @JSName("GET /user/repository_invitations")
-    var `GET SlashuserSlashrepository_invitations`: ParametersReposListInvitationsForAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashrepository_invitations`: ParametersReposListInvitationsForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/activity/starring/#list-repositories-starred-by-the-authenticated-user
       */
     @JSName("GET /user/starred")
-    var `GET SlashuserSlashstarred`: ParametersActivityListReposStarredByAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashstarred`: ParametersActivityListReposStarredByAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/activity/watching/#list-repositories-watched-by-the-authenticated-user
       */
     @JSName("GET /user/subscriptions")
-    var `GET SlashuserSlashsubscriptions`: ParametersActivityListWatchedReposForAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashsubscriptions`: ParametersActivityListWatchedReposForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/teams/#list-teams-for-the-authenticated-user
       */
     @JSName("GET /user/teams")
-    var `GET SlashuserSlashteams`: ParametersTeamsListForAuthenticatedUserEndpoint = js.native
+    var `GET SlashuserSlashteams`: ParametersTeamsListForAuthenticatedUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/#list-users
       */
     @JSName("GET /users")
-    var `GET Slashusers`: ParametersUsersListEndpoint = js.native
+    var `GET Slashusers`: ParametersUsersListEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/followers/#list-followers-of-a-user
       */
     @JSName("GET /users/:username/followers")
-    var `GET SlashusersSlashColonusernameSlashfollowers`: ParametersUsersListFollowersForUserEndpoint = js.native
+    var `GET SlashusersSlashColonusernameSlashfollowers`: ParametersUsersListFollowersForUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/followers/#list-the-people-a-user-follows
       */
     @JSName("GET /users/:username/following")
-    var `GET SlashusersSlashColonusernameSlashfollowing`: ParametersUsersListFollowingForUserEndpoint = js.native
+    var `GET SlashusersSlashColonusernameSlashfollowing`: ParametersUsersListFollowingForUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/gists/#list-gists-for-a-user
       */
     @JSName("GET /users/:username/gists")
-    var `GET SlashusersSlashColonusernameSlashgists`: ParametersGistsListForUserEndpoint = js.native
+    var `GET SlashusersSlashColonusernameSlashgists`: ParametersGistsListForUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/gpg_keys/#list-gpg-keys-for-a-user
       */
     @JSName("GET /users/:username/gpg_keys")
-    var `GET SlashusersSlashColonusernameSlashgpg_keys`: ParametersUsersListGpgKeysForUserEndpoint = js.native
+    var `GET SlashusersSlashColonusernameSlashgpg_keys`: ParametersUsersListGpgKeysForUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/users/keys/#list-public-keys-for-a-user
       */
     @JSName("GET /users/:username/keys")
-    var `GET SlashusersSlashColonusernameSlashkeys`: ParametersUsersListPublicKeysForUserEndpoint = js.native
+    var `GET SlashusersSlashColonusernameSlashkeys`: ParametersUsersListPublicKeysForUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/orgs/#list-organizations-for-a-user
       */
     @JSName("GET /users/:username/orgs")
-    var `GET SlashusersSlashColonusernameSlashorgs`: ParametersOrgsListForUserEndpoint = js.native
+    var `GET SlashusersSlashColonusernameSlashorgs`: ParametersOrgsListForUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/projects/#list-user-projects
       */
     @JSName("GET /users/:username/projects")
-    var `GET SlashusersSlashColonusernameSlashprojects`: ParametersProjectsListForUserEndpoint = js.native
+    var `GET SlashusersSlashColonusernameSlashprojects`: ParametersProjectsListForUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/activity/starring/#list-repositories-starred-by-a-user
       */
     @JSName("GET /users/:username/starred")
-    var `GET SlashusersSlashColonusernameSlashstarred`: ParametersActivityListReposStarredByUserEndpoint = js.native
+    var `GET SlashusersSlashColonusernameSlashstarred`: ParametersActivityListReposStarredByUserEndpoint
     
     /**
       * @see https://developer.github.com/v3/activity/watching/#list-repositories-watched-by-a-user
       */
     @JSName("GET /users/:username/subscriptions")
-    var `GET SlashusersSlashColonusernameSlashsubscriptions`: ParametersActivityListReposWatchedByUserEndpoint = js.native
+    var `GET SlashusersSlashColonusernameSlashsubscriptions`: ParametersActivityListReposWatchedByUserEndpoint
   }
   object PaginatingEndpoints {
     

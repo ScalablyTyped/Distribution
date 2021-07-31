@@ -8,10 +8,13 @@ import typings.ol.styleStyleMod.StyleFunction
 import typings.ol.styleStyleMod.StyleLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object olFeatureMod {
+  
+  @JSImport("ol/Feature", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/Feature", JSImport.Default)
   @js.native
@@ -20,15 +23,12 @@ object olFeatureMod {
     def this(opt_geometryOrProperties: StringDictionary[js.Any]) = this()
   }
   
-  @JSImport("ol/Feature", "createStyleFunction")
-  @js.native
-  def createStyleFunction(obj: js.Array[typings.ol.styleStyleMod.default]): StyleFunction = js.native
-  @JSImport("ol/Feature", "createStyleFunction")
-  @js.native
-  def createStyleFunction(obj: StyleFunction): StyleFunction = js.native
-  @JSImport("ol/Feature", "createStyleFunction")
-  @js.native
-  def createStyleFunction(obj: typings.ol.styleStyleMod.default): StyleFunction = js.native
+  @scala.inline
+  def createStyleFunction(obj: js.Array[typings.ol.styleStyleMod.default]): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
+  @scala.inline
+  def createStyleFunction(obj: StyleFunction): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
+  @scala.inline
+  def createStyleFunction(obj: typings.ol.styleStyleMod.default): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
   
   @js.native
   trait Feature[GeomType /* <: typings.ol.geometryMod.default */]

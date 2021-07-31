@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUsageStatisticsResponse extends StObject {
   
   /**
     * The pagination parameter to be used on the next list operation to retrieve more items.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The usage statistics object. If a UsageStatisticType was provided, the objects representing other types will be null.
     */
-  var UsageStatistics: js.UndefOr[typings.awsSdk.guarddutyMod.UsageStatistics] = js.native
+  var UsageStatistics: js.UndefOr[typings.awsSdk.guarddutyMod.UsageStatistics] = js.undefined
 }
 object GetUsageStatisticsResponse {
   

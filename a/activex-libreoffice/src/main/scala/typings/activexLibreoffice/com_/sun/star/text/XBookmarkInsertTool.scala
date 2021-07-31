@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * offers an easy way to insert bookmarks by name.
   * @see Text
   */
-@js.native
-trait XBookmarkInsertTool extends XInterface {
+trait XBookmarkInsertTool
+  extends StObject
+     with XInterface {
   
   /** inserts a bookmark at the specified text position. */
-  def insertNewBookmark(xTextRange: XTextRange, aName: String): XTextContent = js.native
+  def insertNewBookmark(xTextRange: XTextRange, aName: String): XTextContent
 }
 object XBookmarkInsertTool {
   

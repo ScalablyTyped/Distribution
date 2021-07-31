@@ -10,54 +10,54 @@ import typings.node.httpsMod.ServerOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("http-server", "createServer")
+  @JSImport("http-server", JSImport.Namespace)
   @js.native
-  def createServer(): Server | typings.node.httpsMod.Server = js.native
-  @JSImport("http-server", "createServer")
-  @js.native
-  def createServer(options: Options): Server | typings.node.httpsMod.Server = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createServer(): Server | typings.node.httpsMod.Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server | typings.node.httpsMod.Server]
+  @scala.inline
+  def createServer(options: Options): Server | typings.node.httpsMod.Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server | typings.node.httpsMod.Server]
+  
   trait Options extends StObject {
     
-    var autoIndex: js.UndefOr[Boolean] = js.native
+    var autoIndex: js.UndefOr[Boolean] = js.undefined
     
-    var before: js.UndefOr[js.Array[HandleFunction]] = js.native
+    var before: js.UndefOr[js.Array[HandleFunction]] = js.undefined
     
-    var cache: js.UndefOr[Double] = js.native
+    var cache: js.UndefOr[Double] = js.undefined
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var cors: js.UndefOr[Boolean] = js.native
+    var cors: js.UndefOr[Boolean] = js.undefined
     
-    var corsHeaders: js.UndefOr[String] = js.native
+    var corsHeaders: js.UndefOr[String] = js.undefined
     
-    var ext: js.UndefOr[Boolean] = js.native
+    var ext: js.UndefOr[Boolean] = js.undefined
     
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var https: js.UndefOr[ServerOptions] = js.native
+    var https: js.UndefOr[ServerOptions] = js.undefined
     
     var logFn: js.UndefOr[
         js.Function3[/* req */ IncomingMessage, /* res */ ServerResponse, /* err */ Error, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
-    var robots: js.UndefOr[String | `true`] = js.native
+    var robots: js.UndefOr[String | `true`] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var showDir: js.UndefOr[Boolean] = js.native
+    var showDir: js.UndefOr[Boolean] = js.undefined
     
-    var showDotfiles: js.UndefOr[Boolean] = js.native
+    var showDotfiles: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -3,15 +3,13 @@ package typings.wegameApi.anon
 import typings.wegameApi.ImageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TempFilePaths extends StObject {
   
-  var tempFilePaths: js.Array[String] = js.native
+  var tempFilePaths: js.Array[String]
   
-  var tempFiles: js.Array[ImageFile] = js.native
+  var tempFiles: js.Array[ImageFile]
 }
 object TempFilePaths {
   

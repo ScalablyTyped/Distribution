@@ -4,16 +4,15 @@ import typings.activexStdole.stdole.StdPicture
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComboBox extends StObject {
   
   def AddItem(): Unit = js.native
-  def AddItem(pvargItem: js.UndefOr[scala.Nothing], pvargIndex: Double): Unit = js.native
   def AddItem(pvargItem: Double): Unit = js.native
   def AddItem(pvargItem: Double, pvargIndex: Double): Unit = js.native
+  def AddItem(pvargItem: Unit, pvargIndex: Double): Unit = js.native
   
   var AutoSize: Boolean = js.native
   
@@ -37,7 +36,7 @@ trait ComboBox extends StObject {
   
   def Clear(): Unit = js.native
   
-  def Column(): SafeArray[_] = js.native
+  def Column(): SafeArray[js.Any] = js.native
   def Column(pvargColumn: Double): js.Any = js.native
   def Column(pvargColumn: Double, pvargIndex: Double): js.Any = js.native
   
@@ -93,7 +92,7 @@ trait ComboBox extends StObject {
   
   val LineCount: Double = js.native
   
-  def List(): SafeArray[_] = js.native
+  def List(): SafeArray[js.Any] = js.native
   def List(pvargIndex: Double): js.Any = js.native
   def List(pvargIndex: Double, pvargColumn: Double): js.Any = js.native
   

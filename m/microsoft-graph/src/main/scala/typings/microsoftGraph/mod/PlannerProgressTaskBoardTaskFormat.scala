@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlannerProgressTaskBoardTaskFormat extends Entity {
+trait PlannerProgressTaskBoardTaskFormat
+  extends StObject
+     with Entity {
   
   // Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined here.
-  var orderHint: js.UndefOr[NullableOption[String]] = js.native
+  var orderHint: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PlannerProgressTaskBoardTaskFormat {
   

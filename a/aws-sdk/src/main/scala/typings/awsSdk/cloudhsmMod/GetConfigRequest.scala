@@ -2,26 +2,24 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConfigRequest extends StObject {
   
   /**
     * The ARN of the client.
     */
-  var ClientArn: typings.awsSdk.cloudhsmMod.ClientArn = js.native
+  var ClientArn: typings.awsSdk.cloudhsmMod.ClientArn
   
   /**
     * The client version.
     */
-  var ClientVersion: typings.awsSdk.cloudhsmMod.ClientVersion = js.native
+  var ClientVersion: typings.awsSdk.cloudhsmMod.ClientVersion
   
   /**
     * A list of ARNs that identify the high-availability partition groups that are associated with the client.
     */
-  var HapgList: typings.awsSdk.cloudhsmMod.HapgList = js.native
+  var HapgList: typings.awsSdk.cloudhsmMod.HapgList
 }
 object GetConfigRequest {
   

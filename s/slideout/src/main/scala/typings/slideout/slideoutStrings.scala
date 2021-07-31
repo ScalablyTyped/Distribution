@@ -3,23 +3,28 @@ package typings.slideout
 import typings.slideout.mod.Events
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slideoutStrings {
   
   @js.native
-  sealed trait beforeclose extends Events
+  sealed trait beforeclose
+    extends StObject
+       with Events
   @scala.inline
   def beforeclose: beforeclose = "beforeclose".asInstanceOf[beforeclose]
   
   @js.native
-  sealed trait beforeopen extends Events
+  sealed trait beforeopen
+    extends StObject
+       with Events
   @scala.inline
   def beforeopen: beforeopen = "beforeopen".asInstanceOf[beforeopen]
   
   @js.native
-  sealed trait close extends Events
+  sealed trait close
+    extends StObject
+       with Events
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   
@@ -29,7 +34,9 @@ object slideoutStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait open extends Events
+  sealed trait open
+    extends StObject
+       with Events
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   
@@ -39,17 +46,23 @@ object slideoutStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait translate extends Events
+  sealed trait translate
+    extends StObject
+       with Events
   @scala.inline
   def translate: translate = "translate".asInstanceOf[translate]
   
   @js.native
-  sealed trait translateend extends Events
+  sealed trait translateend
+    extends StObject
+       with Events
   @scala.inline
   def translateend: translateend = "translateend".asInstanceOf[translateend]
   
   @js.native
-  sealed trait translatestart extends Events
+  sealed trait translatestart
+    extends StObject
+       with Events
   @scala.inline
   def translatestart: translatestart = "translatestart".asInstanceOf[translatestart]
 }

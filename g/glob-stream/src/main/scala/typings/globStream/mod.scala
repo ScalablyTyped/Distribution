@@ -4,32 +4,30 @@ import typings.glob.mod.IOptions
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("glob-stream", JSImport.Namespace)
-  @js.native
-  def apply(glob: String): ReadableStream = js.native
-  @JSImport("glob-stream", JSImport.Namespace)
-  @js.native
-  def apply(glob: String, options: Options): ReadableStream = js.native
-  @JSImport("glob-stream", JSImport.Namespace)
-  @js.native
-  def apply(glob: js.Array[String]): ReadableStream = js.native
-  @JSImport("glob-stream", JSImport.Namespace)
-  @js.native
-  def apply(glob: js.Array[String], options: Options): ReadableStream = js.native
+  @scala.inline
+  def apply(glob: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  @scala.inline
+  def apply(glob: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def apply(glob: js.Array[String]): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  @scala.inline
+  def apply(glob: js.Array[String], options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
+  @JSImport("glob-stream", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Entry extends StObject {
     
-    var base: String = js.native
+    var base: String
     
-    var cwd: String = js.native
+    var cwd: String
     
-    var path: String = js.native
+    var path: String
   }
   object Entry {
     
@@ -53,31 +51,32 @@ object mod {
     }
   }
   
-  @js.native
-  trait Options extends IOptions {
+  trait Options
+    extends StObject
+       with IOptions {
     
     /**
       * Whether or not to error upon an empty singular glob.
       */
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The absolute segment of the glob path that isn't a glob. This value is attached
       * to each globobject and is useful for relative pathing.
       */
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not the `cwd` and `base` should be the same.
       */
-    var cwdbase: js.UndefOr[Boolean] = js.native
+    var cwdbase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Filters stream to remove duplicates based on the string property name or the result of function.
       * When using a function, the function receives the streamed
       * data (objects containing `cwd`, `base`, `path` properties) to compare against.
       */
-    var uniqueBy: js.UndefOr[UniqueByStringPredicate | UniqueByFunctionPredicate] = js.native
+    var uniqueBy: js.UndefOr[UniqueByStringPredicate | UniqueByFunctionPredicate] = js.undefined
   }
   object Options {
     

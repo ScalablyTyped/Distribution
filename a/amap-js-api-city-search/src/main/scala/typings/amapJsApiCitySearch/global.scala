@@ -2,7 +2,6 @@ package typings.amapJsApiCitySearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -15,6 +14,7 @@ object global {
     @JSGlobal("AMap.CitySearch")
     @js.native
     class CitySearch ()
-      extends typings.amapJsApiCitySearch.AMap.CitySearch
+      extends StObject
+         with typings.amapJsApiCitySearch.AMap.CitySearch
   }
 }

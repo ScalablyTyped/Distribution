@@ -2,17 +2,15 @@ package typings.jestTestResult.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Suite extends StObject {
   
-  var suites: js.Array[Suite] = js.native
+  var suites: js.Array[Suite]
   
-  var tests: js.Array[AssertionResult] = js.native
+  var tests: js.Array[AssertionResult]
   
-  var title: String = js.native
+  var title: String
 }
 object Suite {
   

@@ -4,7 +4,6 @@ import typings.ol.pluggableMapMod.FrameState
 import typings.ol.sourceSourceMod.AttributionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clusterMod {
@@ -52,23 +51,22 @@ object clusterMod {
     def setSource(source: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var distance: js.UndefOr[Double] = js.native
+    var distance: js.UndefOr[Double] = js.undefined
     
     var geometryFunction: js.UndefOr[
         js.Function1[
           /* p0 */ typings.ol.olFeatureMod.default[typings.ol.geometryMod.default], 
           typings.ol.pointMod.default
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.native
+    var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

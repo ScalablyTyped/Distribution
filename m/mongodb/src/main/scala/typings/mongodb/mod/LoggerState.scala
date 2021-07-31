@@ -2,21 +2,19 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggerState extends StObject {
   
-  var className: String = js.native
+  var className: String
   
-  var date: scala.Double = js.native
+  var date: scala.Double
   
-  var message: String = js.native
+  var message: String
   
-  var pid: scala.Double = js.native
+  var pid: scala.Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object LoggerState {
   

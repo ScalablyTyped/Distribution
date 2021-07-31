@@ -4,10 +4,13 @@ import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkStyleProps
 import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coachmarkStylesMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/Coachmark/Coachmark.styles", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/Coachmark/Coachmark.styles", "COACHMARK_HEIGHT")
   @js.native
@@ -17,19 +20,15 @@ object coachmarkStylesMod {
   @js.native
   val COACHMARK_WIDTH: /* 32 */ Double = js.native
   
-  @JSImport("office-ui-fabric-react/lib/components/Coachmark/Coachmark.styles", "getStyles")
-  @js.native
-  def getStyles(props: ICoachmarkStyleProps): ICoachmarkStyles = js.native
+  @scala.inline
+  def getStyles(props: ICoachmarkStyleProps): ICoachmarkStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICoachmarkStyles]
   
-  @JSImport("office-ui-fabric-react/lib/components/Coachmark/Coachmark.styles", "rotateOne")
-  @js.native
-  def rotateOne(): String = js.native
+  @scala.inline
+  def rotateOne(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rotateOne")().asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/components/Coachmark/Coachmark.styles", "scaleOne")
-  @js.native
-  def scaleOne(): String = js.native
+  @scala.inline
+  def scaleOne(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOne")().asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/components/Coachmark/Coachmark.styles", "translateOne")
-  @js.native
-  def translateOne(): String = js.native
+  @scala.inline
+  def translateOne(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("translateOne")().asInstanceOf[String]
 }

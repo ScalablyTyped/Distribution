@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSourcerepo.gapi.client.sourcerepo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyncRepoMetadata extends StObject {
   
   /** The name of the repo being synchronized. Values are of the form `projects//repos/`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The time this operation is started. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** The latest status message on syncing the repository. */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /** The time this operation's status message is updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SyncRepoMetadata {
   

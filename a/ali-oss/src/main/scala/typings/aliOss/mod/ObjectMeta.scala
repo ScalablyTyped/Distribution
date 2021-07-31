@@ -2,30 +2,28 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectMeta extends StObject {
   
   // object last modified GMT date, e.g.: 2015-02-19T08:39:44.000Z
-  var etag: String = js.native
+  var etag: String
   
   // object name on oss
-  var lastModified: String = js.native
+  var lastModified: String
   
-  var name: String = js.native
+  var name: String
   
-  var owner: OwnerType = js.native
+  var owner: OwnerType
   
   // object type, e.g.: Normal
-  var size: Double = js.native
+  var size: Double
   
   // object size, e.g.: 344606
-  var storageClass: StorageType = js.native
+  var storageClass: StorageType
   
   // object etag contains ", e.g.: "5B3C1A2E053D763E1B002CC607C5A0FE"
-  var `type`: String = js.native
+  var `type`: String
 }
 object ObjectMeta {
   

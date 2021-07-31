@@ -2,26 +2,24 @@ package typings.vsoNodeApi.dashboardInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticVersion extends StObject {
   
   /**
     * Major version when you make incompatible API changes
     */
-  var major: Double = js.native
+  var major: Double
   
   /**
     * Minor version when you add functionality in a backwards-compatible manner
     */
-  var minor: Double = js.native
+  var minor: Double
   
   /**
     * Patch version when you make backwards-compatible bug fixes
     */
-  var patch: Double = js.native
+  var patch: Double
 }
 object SemanticVersion {
   

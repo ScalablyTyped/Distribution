@@ -2,17 +2,15 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SQLResultSet extends StObject {
   
-  var insertId: Double = js.native
+  var insertId: Double
   
-  var rows: SQLResultSetRowList = js.native
+  var rows: SQLResultSetRowList
   
-  var rowsAffected: Double = js.native
+  var rowsAffected: Double
 }
 object SQLResultSet {
   

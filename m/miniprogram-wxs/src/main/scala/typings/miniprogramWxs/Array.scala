@@ -3,11 +3,12 @@ package typings.miniprogramWxs
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Array[T] extends /* n */ NumberDictionary[T] {
+trait Array[T]
+  extends StObject
+     with /* n */ NumberDictionary[T] {
   
   /**
     * Combines two or more arrays.
@@ -20,9 +21,9 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param callbackfn A function that accepts up to three arguments. The every method calls the callbackfn function for each element in array1 until the callbackfn returns false, or until the end of the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def every(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], _]): scala.Boolean = js.native
+  def every(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], js.Any]): scala.Boolean = js.native
   def every(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], _],
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], js.Any],
     thisArg: js.Any
   ): scala.Boolean = js.native
   
@@ -31,9 +32,9 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], _]): Array[T] = js.native
+  def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], js.Any]): Array[T] = js.native
   def filter(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], _],
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], js.Any],
     thisArg: js.Any
   ): Array[T] = js.native
   /**
@@ -211,18 +212,18 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param end The end of the specified portion of the array.
     */
   def slice(): Array[T] = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): Array[T] = js.native
   def slice(start: Double): Array[T] = js.native
   def slice(start: Double, end: Double): Array[T] = js.native
+  def slice(start: Unit, end: Double): Array[T] = js.native
   
   /**
     * Determines whether the specified callback function returns true for any element of an array.
     * @param callbackfn A function that accepts up to three arguments. The some method calls the callbackfn function for each element in array1 until the callbackfn returns true, or until the end of the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], _]): scala.Boolean = js.native
+  def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], js.Any]): scala.Boolean = js.native
   def some(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], _],
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], js.Any],
     thisArg: js.Any
   ): scala.Boolean = js.native
   

@@ -36,14 +36,16 @@ import typings.std.Date
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(node: js.Any): FSOutput = ^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any]).asInstanceOf[FSOutput]
+  
   @JSImport("broccoli-output-wrapper", JSImport.Namespace)
   @js.native
-  def apply(node: js.Any): FSOutput = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait FSOutput extends StObject {

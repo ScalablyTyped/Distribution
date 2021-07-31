@@ -2,7 +2,6 @@ package typings.filenamify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filenamifyMod {
@@ -18,14 +17,15 @@ object filenamifyMod {
   //=> 'foo🐴bar'
   ```
   */
-  @JSImport("filenamify/filenamify", JSImport.Namespace)
-  @js.native
-  def apply(string: String): String = js.native
-  @JSImport("filenamify/filenamify", JSImport.Namespace)
-  @js.native
-  def apply(string: String, options: Options): String = js.native
+  @scala.inline
+  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("filenamify/filenamify", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -33,14 +33,14 @@ object filenamifyMod {
     		Systems generally allow up to 255 characters, but we default to 100 for usability reasons.
     		@default 100
     		*/
-    val maxLength: js.UndefOr[Double] = js.native
+    val maxLength: js.UndefOr[Double] = js.undefined
     
     /**
     		String to use as replacement for reserved filename characters.
     		Cannot contain: `<` `>` `:` `"` `/` `\` `|` `?` `*`
     		@default '!'
     		*/
-    val replacement: js.UndefOr[String] = js.native
+    val replacement: js.UndefOr[String] = js.undefined
   }
   object Options {
     

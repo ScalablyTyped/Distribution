@@ -2,36 +2,34 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualMFADevice extends StObject {
   
   /**
     *  The base32 seed defined as specified in RFC3548. The Base32StringSeed is base64-encoded. 
     */
-  var Base32StringSeed: js.UndefOr[BootstrapDatum] = js.native
+  var Base32StringSeed: js.UndefOr[BootstrapDatum] = js.undefined
   
   /**
     * The date and time on which the virtual MFA device was enabled.
     */
-  var EnableDate: js.UndefOr[dateType] = js.native
+  var EnableDate: js.UndefOr[dateType] = js.undefined
   
   /**
     *  A QR code PNG image that encodes otpauth://totp/$virtualMFADeviceName@$AccountName?secret=$Base32String where $virtualMFADeviceName is one of the create call arguments. AccountName is the user name if set (otherwise, the account ID otherwise), and Base32String is the seed in base32 format. The Base32String value is base64-encoded. 
     */
-  var QRCodePNG: js.UndefOr[BootstrapDatum] = js.native
+  var QRCodePNG: js.UndefOr[BootstrapDatum] = js.undefined
   
   /**
     * The serial number associated with VirtualMFADevice.
     */
-  var SerialNumber: serialNumberType = js.native
+  var SerialNumber: serialNumberType
   
   /**
     * The IAM user associated with this virtual MFA device.
     */
-  var User: js.UndefOr[typings.awsSdk.iamMod.User] = js.native
+  var User: js.UndefOr[typings.awsSdk.iamMod.User] = js.undefined
 }
 object VirtualMFADevice {
   

@@ -8,7 +8,6 @@ import typings.officeJs.Visio.Interfaces.PageCollectionData
 import typings.officeJs.Visio.Interfaces.PageCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set:  1.1]
   */
 @js.native
-trait PageCollection extends ClientObject {
+trait PageCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -62,7 +63,7 @@ trait PageCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): PageCollection = js.native
-  def load(option: PageCollectionLoadOptions with CollectionLoadOptions): PageCollection = js.native
+  def load(option: PageCollectionLoadOptions & CollectionLoadOptions): PageCollection = js.native
   def load(option: String): PageCollection = js.native
   def load(option: js.Array[String]): PageCollection = js.native
   def load(option: LoadOption): PageCollection = js.native

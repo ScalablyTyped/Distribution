@@ -2,37 +2,35 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Database extends StObject {
   
   /** The Cloud SQL charset value. */
-  var charset: js.UndefOr[String] = js.native
+  var charset: js.UndefOr[String] = js.undefined
   
   /** The Cloud SQL collation value. */
-  var collation: js.UndefOr[String] = js.native
+  var collation: js.UndefOr[String] = js.undefined
   
   /** This field is deprecated and will be removed from a future version of the API. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The name of the Cloud SQL instance. This does not include the project ID. */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /** This is always *sql#database*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The name of the database in the Cloud SQL instance. This does not include the project ID or instance name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The project ID of the project containing the Cloud SQL database. The Google apps domain is prefixed if applicable. */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /** The URI of this resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
-  var sqlserverDatabaseDetails: js.UndefOr[SqlServerDatabaseDetails] = js.native
+  var sqlserverDatabaseDetails: js.UndefOr[SqlServerDatabaseDetails] = js.undefined
 }
 object Database {
   

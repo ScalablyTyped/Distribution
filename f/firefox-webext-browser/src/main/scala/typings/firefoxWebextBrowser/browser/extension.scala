@@ -2,27 +2,25 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `browser.extension` API has utilities that can be used by any extension page. It includes support for exchanging messages between an extension and its content scripts or between extensions, as described in detail in Message Passing.
   */
-object extension {
+object `extension` {
   
-  @js.native
   trait GetViewsFetchProperties extends StObject {
     
     /** Find a view according to a tab id. If this field is omitted, returns all views. */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /**
       * The type of view to get. If omitted, returns all views (including background pages and tabs). Valid values: 'tab', 'popup', 'sidebar'.
       */
-    var `type`: js.UndefOr[ViewType] = js.native
+    var `type`: js.UndefOr[ViewType] = js.undefined
     
     /** The window to restrict the search to. If omitted, returns all views. */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object GetViewsFetchProperties {
     
@@ -58,11 +56,10 @@ object extension {
   /**
     * Set for the lifetime of a callback if an ansychronous extension api has resulted in an error. If no error has occured lastError will be `undefined`.
     */
-  @js.native
   trait LastError extends StObject {
     
     /** Description of the error that has taken place. */
-    var message: String = js.native
+    var message: String
   }
   object LastError {
     

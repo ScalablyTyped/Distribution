@@ -5,19 +5,24 @@ import typings.wordpressBlockEditor.mediaUploadMod.MediaUpload.Props
 import typings.wordpressMediaUtils.uploadMediaMod.UploadMediaOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@wordpress/media-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object MediaUpload {
+    
+    @scala.inline
+    def apply[T /* <: Boolean */](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/media-utils", "MediaUpload")
     @js.native
-    def apply[T /* <: Boolean */](props: Props[T]): Element = js.native
+    val ^ : js.Any = js.native
   }
   
-  @JSImport("@wordpress/media-utils", "uploadMedia")
-  @js.native
-  def uploadMedia(options: UploadMediaOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def uploadMedia(options: UploadMediaOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadMedia")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

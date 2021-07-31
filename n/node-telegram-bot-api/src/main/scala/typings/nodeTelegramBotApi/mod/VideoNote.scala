@@ -2,17 +2,17 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VideoNote extends FileBase {
+trait VideoNote
+  extends StObject
+     with FileBase {
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var length: Double = js.native
+  var length: Double
   
-  var thumb: js.UndefOr[PhotoSize] = js.native
+  var thumb: js.UndefOr[PhotoSize] = js.undefined
 }
 object VideoNote {
   

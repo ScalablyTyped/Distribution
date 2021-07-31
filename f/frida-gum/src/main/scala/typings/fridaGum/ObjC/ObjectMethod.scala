@@ -6,16 +6,13 @@ import typings.fridaGum.NativePointer
 import typings.fridaGum.ObjectWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectMethod
-  extends AnyFunction
-     with ObjectWrapper {
-  
-  /* InferMemberOverrides */
-  override def apply(T0: /* repeated */ js.Any): js.Any = js.native
+  extends StObject
+     with ObjectWrapper
+     with AnyFunction {
   
   /**
     * Argument type names.

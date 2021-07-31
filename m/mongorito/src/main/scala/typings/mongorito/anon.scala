@@ -3,17 +3,15 @@ package typings.mongorito
 import typings.mongodb.mod.ReadPreference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    var args: js.Any = js.native
+    var args: js.Any
     
-    var method: String = js.native
+    var method: String
   }
   object Args {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait BatchSize extends StObject {
     
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
-    var readPreference: js.UndefOr[ReadPreference | String] = js.native
+    var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
   }
   object BatchSize {
     

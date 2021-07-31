@@ -6,10 +6,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.summer
 import typings.arcgisJsApi.arcgisJsApiStrings.winter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DaylightViewModelProperties extends StObject {
   
   /**
@@ -17,56 +15,56 @@ trait DaylightViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#currentSeason)
     */
-  var currentSeason: js.UndefOr[spring | summer | fall | winter] = js.native
+  var currentSeason: js.UndefOr[spring | summer | fall | winter] = js.undefined
   
   /**
     * Starts or pauses the daytime animation cycling through the minutes of the day.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#dayPlaying)
     */
-  var dayPlaying: js.UndefOr[Boolean] = js.native
+  var dayPlaying: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The calendar date in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#localDate)
     */
-  var localDate: js.UndefOr[DateProperties] = js.native
+  var localDate: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * Controls the daytime and date animation speed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#playSpeedMultiplier)
     */
-  var playSpeedMultiplier: js.UndefOr[Double] = js.native
+  var playSpeedMultiplier: js.UndefOr[Double] = js.undefined
   
   /**
     * Slider position for the time of day in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#timeSliderPosition)
     */
-  var timeSliderPosition: js.UndefOr[Double] = js.native
+  var timeSliderPosition: js.UndefOr[Double] = js.undefined
   
   /**
     * The difference in hours between UTC time and the time displayed in the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset)
     */
-  var utcOffset: js.UndefOr[Double] = js.native
+  var utcOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#view)
     */
-  var view: js.UndefOr[SceneViewProperties] = js.native
+  var view: js.UndefOr[SceneViewProperties] = js.undefined
   
   /**
     * Starts or pauses the date animation cycling through the months of the year.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#yearPlaying)
     */
-  var yearPlaying: js.UndefOr[Boolean] = js.native
+  var yearPlaying: js.UndefOr[Boolean] = js.undefined
 }
 object DaylightViewModelProperties {
   

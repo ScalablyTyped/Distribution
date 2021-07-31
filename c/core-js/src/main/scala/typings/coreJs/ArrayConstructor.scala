@@ -4,7 +4,6 @@ import typings.std.ArrayLike
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #############################################################################################
@@ -62,9 +61,9 @@ trait ArrayConstructor extends StObject {
     * length+end.
     */
   def fill[T](array: ArrayLike[T], value: T): Array[T] = js.native
-  def fill[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], end: Double): Array[T] = js.native
   def fill[T](array: ArrayLike[T], value: T, start: Double): Array[T] = js.native
   def fill[T](array: ArrayLike[T], value: T, start: Double, end: Double): Array[T] = js.native
+  def fill[T](array: ArrayLike[T], value: T, start: Unit, end: Double): Array[T] = js.native
   
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
@@ -297,9 +296,9 @@ trait ArrayConstructor extends StObject {
     * @param end The end of the specified portion of the array.
     */
   def slice[T](array: ArrayLike[T]): Array[T] = js.native
-  def slice[T](array: ArrayLike[T], start: js.UndefOr[scala.Nothing], end: Double): Array[T] = js.native
   def slice[T](array: ArrayLike[T], start: Double): Array[T] = js.native
   def slice[T](array: ArrayLike[T], start: Double, end: Double): Array[T] = js.native
+  def slice[T](array: ArrayLike[T], start: Unit, end: Double): Array[T] = js.native
   
   /**
     * Determines whether the specified callback function returns true for any element of an array.
@@ -324,7 +323,6 @@ trait ArrayConstructor extends StObject {
   def sort[T](array: ArrayLike[T]): Array[T] = js.native
   def sort[T](array: ArrayLike[T], compareFn: js.Function2[/* a */ T, /* b */ T, Double]): Array[T] = js.native
   
-  def splice[T](array: ArrayLike[T], start: Double, deleteCount: js.UndefOr[scala.Nothing], items: T*): Array[T] = js.native
   /**
     * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
     * @param start The zero-based location in the array from which to start removing elements.
@@ -332,6 +330,7 @@ trait ArrayConstructor extends StObject {
     * @param items Elements to insert into the array in place of the deleted elements.
     */
   def splice[T](array: ArrayLike[T], start: Double, deleteCount: Double, items: T*): Array[T] = js.native
+  def splice[T](array: ArrayLike[T], start: Double, deleteCount: Unit, items: T*): Array[T] = js.native
   
   def turn[T](
     array: ArrayLike[T],

@@ -4,10 +4,8 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Protocol extends StObject {
   
   // Docs: https://electronjs.org/docs/api/protocol
@@ -24,7 +22,7 @@ trait Protocol extends StObject {
       /* callback */ js.Function1[/* response */ Buffer | ProtocolResponse, Unit], 
       Unit
     ]
-  ): Boolean = js.native
+  ): Boolean
   
   /**
     * Whether the protocol was successfully intercepted
@@ -39,7 +37,7 @@ trait Protocol extends StObject {
       /* callback */ js.Function1[/* response */ String | ProtocolResponse, Unit], 
       Unit
     ]
-  ): Boolean = js.native
+  ): Boolean
   
   /**
     * Whether the protocol was successfully intercepted
@@ -54,7 +52,7 @@ trait Protocol extends StObject {
       /* callback */ js.Function1[/* response */ ProtocolResponse, Unit], 
       Unit
     ]
-  ): Boolean = js.native
+  ): Boolean
   
   /**
     * Whether the protocol was successfully intercepted
@@ -69,7 +67,7 @@ trait Protocol extends StObject {
       /* callback */ js.Function1[/* response */ ReadableStream | ProtocolResponse, Unit], 
       Unit
     ]
-  ): Boolean = js.native
+  ): Boolean
   
   /**
     * Whether the protocol was successfully intercepted
@@ -84,17 +82,17 @@ trait Protocol extends StObject {
       /* callback */ js.Function1[/* response */ String | ProtocolResponse, Unit], 
       Unit
     ]
-  ): Boolean = js.native
+  ): Boolean
   
   /**
     * Whether `scheme` is already intercepted.
     */
-  def isProtocolIntercepted(scheme: String): Boolean = js.native
+  def isProtocolIntercepted(scheme: String): Boolean
   
   /**
     * Whether `scheme` is already registered.
     */
-  def isProtocolRegistered(scheme: String): Boolean = js.native
+  def isProtocolRegistered(scheme: String): Boolean
   
   /**
     * Whether the protocol was successfully registered
@@ -113,7 +111,7 @@ trait Protocol extends StObject {
       /* callback */ js.Function1[/* response */ Buffer | ProtocolResponse, Unit], 
       Unit
     ]
-  ): Boolean = js.native
+  ): Boolean
   
   /**
     * Whether the protocol was successfully registered
@@ -136,7 +134,7 @@ trait Protocol extends StObject {
       /* callback */ js.Function1[/* response */ String | ProtocolResponse, Unit], 
       Unit
     ]
-  ): Boolean = js.native
+  ): Boolean
   
   /**
     * Whether the protocol was successfully registered
@@ -153,7 +151,7 @@ trait Protocol extends StObject {
       /* callback */ js.Function1[/* response */ ProtocolResponse, Unit], 
       Unit
     ]
-  ): Boolean = js.native
+  ): Boolean
   
   /**
     * **Note:** This method can only be used before the `ready` event of the `app`
@@ -192,7 +190,7 @@ trait Protocol extends StObject {
     * their responses by default. The `stream` flag configures those elements to
     * correctly expect streaming responses.
     */
-  def registerSchemesAsPrivileged(customSchemes: js.Array[CustomScheme]): Unit = js.native
+  def registerSchemesAsPrivileged(customSchemes: js.Array[CustomScheme]): Unit
   
   /**
     * Whether the protocol was successfully registered
@@ -215,7 +213,7 @@ trait Protocol extends StObject {
       /* callback */ js.Function1[/* response */ ReadableStream | ProtocolResponse, Unit], 
       Unit
     ]
-  ): Boolean = js.native
+  ): Boolean
   
   /**
     * Whether the protocol was successfully registered
@@ -233,21 +231,21 @@ trait Protocol extends StObject {
       /* callback */ js.Function1[/* response */ String | ProtocolResponse, Unit], 
       Unit
     ]
-  ): Boolean = js.native
+  ): Boolean
   
   /**
     * Whether the protocol was successfully unintercepted
     * 
   Remove the interceptor installed for `scheme` and restore its original handler.
     */
-  def uninterceptProtocol(scheme: String): Boolean = js.native
+  def uninterceptProtocol(scheme: String): Boolean
   
   /**
     * Whether the protocol was successfully unregistered
     * 
   Unregisters the custom protocol of `scheme`.
     */
-  def unregisterProtocol(scheme: String): Boolean = js.native
+  def unregisterProtocol(scheme: String): Boolean
 }
 object Protocol {
   

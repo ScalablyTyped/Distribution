@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1EvaluationJobConfig extends StObject {
   
   /**
@@ -20,51 +18,51 @@ trait GoogleCloudDatalabelingV1beta1EvaluationJobConfig extends StObject {
   var bigqueryImportKeys: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1EvaluationJobConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1EvaluationJobConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Specify this field if your model version performs image object detection (bounding box detection). `annotationSpecSet` in this configuration must match
     * EvaluationJob.annotationSpecSet.
     */
-  var boundingPolyConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1BoundingPolyConfig] = js.native
+  var boundingPolyConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1BoundingPolyConfig] = js.undefined
   
   /**
     * Required. Details for calculating evaluation metrics and creating Evaulations. If your model version performs image object detection, you must specify the
     * `boundingBoxEvaluationOptions` field within this configuration. Otherwise, provide an empty object for this configuration.
     */
-  var evaluationConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1EvaluationConfig] = js.native
+  var evaluationConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1EvaluationConfig] = js.undefined
   
   /**
     * Optional. Configuration details for evaluation job alerts. Specify this field if you want to receive email alerts if the evaluation job finds that your predictions have low mean
     * average precision during a run.
     */
-  var evaluationJobAlertConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig] = js.native
+  var evaluationJobAlertConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig] = js.undefined
   
   /**
     * Required. The maximum number of predictions to sample and save to BigQuery during each evaluation interval. This limit overrides `example_sample_percentage`: even if the service has
     * not sampled enough predictions to fulfill `example_sample_perecentage` during an interval, it stops sampling predictions when it meets this limit.
     */
-  var exampleCount: js.UndefOr[Double] = js.native
+  var exampleCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Required. Fraction of predictions to sample and save to BigQuery during each evaluation interval. For example, 0.1 means 10% of predictions served by your model version get saved to
     * BigQuery.
     */
-  var exampleSamplePercentage: js.UndefOr[Double] = js.native
+  var exampleSamplePercentage: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Details for human annotation of your data. If you set labelMissingGroundTruth to `true` for this evaluation job, then you must specify this field. If you plan to provide
     * your own ground truth labels, then omit this field. Note that you must create an Instruction resource before you can specify this field. Provide the name of the instruction resource
     * in the `instruction` field within this configuration.
     */
-  var humanAnnotationConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1HumanAnnotationConfig] = js.native
+  var humanAnnotationConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1HumanAnnotationConfig] = js.undefined
   
   /**
     * Specify this field if your model version performs image classification or general classification. `annotationSpecSet` in this configuration must match
     * EvaluationJob.annotationSpecSet. `allowMultiLabel` in this configuration must match `classificationMetadata.isMultiLabel` in input_config.
     */
-  var imageClassificationConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1ImageClassificationConfig] = js.native
+  var imageClassificationConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1ImageClassificationConfig] = js.undefined
   
   /**
     * Rquired. Details for the sampled prediction input. Within this configuration, there are requirements for several fields: * `dataType` must be one of `IMAGE`, `TEXT`, or
@@ -72,13 +70,13 @@ trait GoogleCloudDatalabelingV1beta1EvaluationJobConfig extends StObject {
     * `IMAGE_BOUNDING_BOX_ANNOTATION` (image object detection). * If your machine learning model performs classification, you must specify `classificationMetadata.isMultiLabel`. * You
     * must specify `bigquerySource` (not `gcsSource`).
     */
-  var inputConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1InputConfig] = js.native
+  var inputConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1InputConfig] = js.undefined
   
   /**
     * Specify this field if your model version performs text classification. `annotationSpecSet` in this configuration must match EvaluationJob.annotationSpecSet. `allowMultiLabel` in
     * this configuration must match `classificationMetadata.isMultiLabel` in input_config.
     */
-  var textClassificationConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1TextClassificationConfig] = js.native
+  var textClassificationConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1TextClassificationConfig] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1EvaluationJobConfig {
   
@@ -95,7 +93,7 @@ object GoogleCloudDatalabelingV1beta1EvaluationJobConfig {
     def setBigqueryImportKeys(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1EvaluationJobConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1EvaluationJobConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "bigqueryImportKeys", value.asInstanceOf[js.Any])
     
     @scala.inline

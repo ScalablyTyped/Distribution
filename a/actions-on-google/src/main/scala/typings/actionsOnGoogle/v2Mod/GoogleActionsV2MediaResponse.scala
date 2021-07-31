@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2MediaResponse extends StObject {
   
   /**
     * The list of media objects.
     */
-  var mediaObjects: js.UndefOr[js.Array[GoogleActionsV2MediaObject]] = js.native
+  var mediaObjects: js.UndefOr[js.Array[GoogleActionsV2MediaObject]] = js.undefined
   
   /**
     * Type of the media within this response.
     */
-  var mediaType: js.UndefOr[GoogleActionsV2MediaResponseMediaType] = js.native
+  var mediaType: js.UndefOr[GoogleActionsV2MediaResponseMediaType] = js.undefined
 }
 object GoogleActionsV2MediaResponse {
   

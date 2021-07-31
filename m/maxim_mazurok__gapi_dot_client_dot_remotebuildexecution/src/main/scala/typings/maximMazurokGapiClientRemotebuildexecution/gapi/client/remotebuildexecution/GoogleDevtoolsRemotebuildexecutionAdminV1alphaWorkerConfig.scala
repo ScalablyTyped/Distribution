@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends StObject {
   
   /** The accelerator card attached to each VM. */
-  var accelerator: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig] = js.native
+  var accelerator: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig] = js.undefined
   
   /** Required. Size of the disk attached to the worker, in GB. See https://cloud.google.com/compute/docs/disks/ */
-  var diskSizeGb: js.UndefOr[String] = js.native
+  var diskSizeGb: js.UndefOr[String] = js.undefined
   
   /** Required. Disk Type to use for the worker. See [Storage options](https://cloud.google.com/compute/docs/disks/#introduction). Currently only `pd-standard` and `pd-ssd` are supported. */
-  var diskType: js.UndefOr[String] = js.native
+  var diskType: js.UndefOr[String] = js.undefined
   
   /**
     * Labels associated with the workers. Label keys and values can be no longer than 63 characters, can only contain lowercase letters, numeric characters, underscores and dashes.
@@ -25,38 +23,38 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends StObjec
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Required. Machine type of the worker, such as `n1-standard-2`. See https://cloud.google.com/compute/docs/machine-types for a list of supported machine types. Note that `f1-micro`
     * and `g1-small` are not yet supported.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /** The maximum number of actions a worker can execute concurrently. */
-  var maxConcurrentActions: js.UndefOr[String] = js.native
+  var maxConcurrentActions: js.UndefOr[String] = js.undefined
   
   /** Minimum CPU platform to use when creating the worker. See [CPU Platforms](https://cloud.google.com/compute/docs/cpu-platforms). */
-  var minCpuPlatform: js.UndefOr[String] = js.native
+  var minCpuPlatform: js.UndefOr[String] = js.undefined
   
   /**
     * Determines the type of network access granted to workers. Possible values: - "public": Workers can connect to the public internet. - "private": Workers can only connect to Google
     * APIs and services. - "restricted-private": Workers can only connect to Google APIs that are reachable through `restricted.googleapis.com` (`199.36.153.4/30`).
     */
-  var networkAccess: js.UndefOr[String] = js.native
+  var networkAccess: js.UndefOr[String] = js.undefined
   
   /**
     * Determines whether the worker is reserved (equivalent to a Compute Engine on-demand VM and therefore won't be preempted). See [Preemptible
     * VMs](https://cloud.google.com/preemptible-vms/) for more details.
     */
-  var reserved: js.UndefOr[Boolean] = js.native
+  var reserved: js.UndefOr[Boolean] = js.undefined
   
   /** Sole-tenant node information for pools hosted on STNs. */
-  var soleTenancy: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig] = js.native
+  var soleTenancy: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig] = js.undefined
   
   /** The name of the image used by each VM. */
-  var vmImage: js.UndefOr[String] = js.native
+  var vmImage: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig {
   
@@ -91,7 +89,7 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

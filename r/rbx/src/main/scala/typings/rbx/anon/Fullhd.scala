@@ -3,23 +3,21 @@ package typings.rbx.anon
 import typings.rbx.columnMod.ColumnBreakpointOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fullhd extends StObject {
   
-  var desktop: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var desktop: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   
-  var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   
-  var mobile: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var mobile: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   
-  var tablet: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var tablet: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   
-  var touch: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var touch: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   
-  var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.undefined
 }
 object Fullhd {
   

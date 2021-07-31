@@ -2,51 +2,49 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCommentRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The ID of the document.
     */
-  var DocumentId: ResourceIdType = js.native
+  var DocumentId: ResourceIdType
   
   /**
     * Set this parameter to TRUE to send an email out to the document collaborators after the comment is created.
     */
-  var NotifyCollaborators: js.UndefOr[BooleanType] = js.native
+  var NotifyCollaborators: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * The ID of the parent comment.
     */
-  var ParentId: js.UndefOr[CommentIdType] = js.native
+  var ParentId: js.UndefOr[CommentIdType] = js.undefined
   
   /**
     * The text of the comment.
     */
-  var Text: CommentTextType = js.native
+  var Text: CommentTextType
   
   /**
     * The ID of the root comment in the thread.
     */
-  var ThreadId: js.UndefOr[CommentIdType] = js.native
+  var ThreadId: js.UndefOr[CommentIdType] = js.undefined
   
   /**
     * The ID of the document version.
     */
-  var VersionId: DocumentVersionIdType = js.native
+  var VersionId: DocumentVersionIdType
   
   /**
     * The visibility of the comment. Options are either PRIVATE, where the comment is visible only to the comment author and document owner and co-owners, or PUBLIC, where the comment is visible to document owners, co-owners, and contributors.
     */
-  var Visibility: js.UndefOr[CommentVisibilityType] = js.native
+  var Visibility: js.UndefOr[CommentVisibilityType] = js.undefined
 }
 object CreateCommentRequest {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceComplianceSummaryItem extends StObject {
   
   /**
     * The compliance type.
     */
-  var ComplianceType: js.UndefOr[ComplianceTypeName] = js.native
+  var ComplianceType: js.UndefOr[ComplianceTypeName] = js.undefined
   
   /**
     * A list of items that are compliant for the resource.
     */
-  var CompliantSummary: js.UndefOr[typings.awsSdk.ssmMod.CompliantSummary] = js.native
+  var CompliantSummary: js.UndefOr[typings.awsSdk.ssmMod.CompliantSummary] = js.undefined
   
   /**
     * Information about the execution.
     */
-  var ExecutionSummary: js.UndefOr[ComplianceExecutionSummary] = js.native
+  var ExecutionSummary: js.UndefOr[ComplianceExecutionSummary] = js.undefined
   
   /**
     * A list of items that aren't compliant for the resource.
     */
-  var NonCompliantSummary: js.UndefOr[typings.awsSdk.ssmMod.NonCompliantSummary] = js.native
+  var NonCompliantSummary: js.UndefOr[typings.awsSdk.ssmMod.NonCompliantSummary] = js.undefined
   
   /**
     * The highest severity item found for the resource. The resource is compliant for this item.
     */
-  var OverallSeverity: js.UndefOr[ComplianceSeverity] = js.native
+  var OverallSeverity: js.UndefOr[ComplianceSeverity] = js.undefined
   
   /**
     * The resource ID.
     */
-  var ResourceId: js.UndefOr[ComplianceResourceId] = js.native
+  var ResourceId: js.UndefOr[ComplianceResourceId] = js.undefined
   
   /**
     * The resource type.
     */
-  var ResourceType: js.UndefOr[ComplianceResourceType] = js.native
+  var ResourceType: js.UndefOr[ComplianceResourceType] = js.undefined
   
   /**
     * The compliance status for the resource.
     */
-  var Status: js.UndefOr[ComplianceStatus] = js.native
+  var Status: js.UndefOr[ComplianceStatus] = js.undefined
 }
 object ResourceComplianceSummaryItem {
   

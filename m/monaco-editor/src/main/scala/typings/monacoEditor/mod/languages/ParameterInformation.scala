@@ -3,23 +3,21 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.IMarkdownString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterInformation extends StObject {
   
   /**
     * The human-readable doc-comment of this signature. Will be shown
     * in the UI but can be omitted.
     */
-  var documentation: js.UndefOr[String | IMarkdownString] = js.native
+  var documentation: js.UndefOr[String | IMarkdownString] = js.undefined
   
   /**
     * The label of this signature. Will be shown in
     * the UI.
     */
-  var label: String | (js.Tuple2[Double, Double]) = js.native
+  var label: String | (js.Tuple2[Double, Double])
 }
 object ParameterInformation {
   

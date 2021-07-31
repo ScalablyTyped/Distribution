@@ -2,17 +2,15 @@ package typings.formatjsEcma402Abstract.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Narrow extends StObject {
   
-  var long: js.Array[String] = js.native
+  var long: js.Array[String]
   
-  var narrow: js.Array[String] = js.native
+  var narrow: js.Array[String]
   
-  var short: js.Array[String] = js.native
+  var short: js.Array[String]
 }
 object Narrow {
   

@@ -2,21 +2,19 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputPluginValueHooks extends StObject {
   
-  var banner: AddonHook = js.native
+  var banner: AddonHook
   
-  var cacheKey: String = js.native
+  var cacheKey: String
   
-  var footer: AddonHook = js.native
+  var footer: AddonHook
   
-  var intro: AddonHook = js.native
+  var intro: AddonHook
   
-  var outro: AddonHook = js.native
+  var outro: AddonHook
 }
 object OutputPluginValueHooks {
   

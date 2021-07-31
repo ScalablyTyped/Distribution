@@ -3,17 +3,15 @@ package typings.activexExcel.anon
 import typings.activexExcel.Excel.PivotTable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetPivotTableValueChangeEnd extends StObject {
   
-  val TargetPivotTable: PivotTable = js.native
+  val TargetPivotTable: PivotTable
   
-  val ValueChangeEnd: Double = js.native
+  val ValueChangeEnd: Double
   
-  val ValueChangeStart: Double = js.native
+  val ValueChangeStart: Double
 }
 object TargetPivotTableValueChangeEnd {
   

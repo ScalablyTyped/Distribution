@@ -2,14 +2,12 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStyleUrl extends StObject {
   
   /** List of style css urls o be downloaded */
-  var styleURLs: js.Array[String] = js.native
+  var styleURLs: js.Array[String]
 }
 object IStyleUrl {
   

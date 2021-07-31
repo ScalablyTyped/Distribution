@@ -2,43 +2,41 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadPartCopyOutput extends StObject {
   
   /**
     * Container for all response elements.
     */
-  var CopyPartResult: js.UndefOr[typings.awsSdk.s3Mod.CopyPartResult] = js.native
+  var CopyPartResult: js.UndefOr[typings.awsSdk.s3Mod.CopyPartResult] = js.undefined
   
   /**
     * The version of the source object that was copied, if you have enabled versioning on the source bucket.
     */
-  var CopySourceVersionId: js.UndefOr[typings.awsSdk.s3Mod.CopySourceVersionId] = js.native
+  var CopySourceVersionId: js.UndefOr[typings.awsSdk.s3Mod.CopySourceVersionId] = js.undefined
   
-  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.native
+  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.undefined
   
   /**
     * If server-side encryption with a customer-provided encryption key was requested, the response will include this header confirming the encryption algorithm used.
     */
-  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.native
+  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.undefined
   
   /**
     * If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide round-trip message integrity verification of the customer-provided encryption key.
     */
-  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.native
+  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.undefined
   
   /**
     * If present, specifies the ID of the AWS Key Management Service (AWS KMS) symmetric customer managed customer master key (CMK) that was used for the object.
     */
-  var SSEKMSKeyId: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSKeyId] = js.native
+  var SSEKMSKeyId: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSKeyId] = js.undefined
   
   /**
     * The server-side encryption algorithm used when storing this object in Amazon S3 (for example, AES256, aws:kms).
     */
-  var ServerSideEncryption: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryption] = js.native
+  var ServerSideEncryption: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryption] = js.undefined
 }
 object UploadPartCopyOutput {
   

@@ -8,28 +8,26 @@ import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.TRIM
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesStartingPositionMod {
   
-  @js.native
   trait StartingPosition extends StObject {
     
     /**
       * _SequenceNumber shape
       */
-    var SequenceNumber: js.UndefOr[String] = js.native
+    var SequenceNumber: js.UndefOr[String] = js.undefined
     
     /**
       * _Timestamp shape
       */
-    var Timestamp: js.UndefOr[Date | String | Double] = js.native
+    var Timestamp: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * _ShardIteratorType shape
       */
-    var Type: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String = js.native
+    var Type: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String
   }
   object StartingPosition {
     
@@ -59,14 +57,15 @@ object typesStartingPositionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledStartingPosition extends StartingPosition {
+  trait UnmarshalledStartingPosition
+    extends StObject
+       with StartingPosition {
     
     /**
       * _Timestamp shape
       */
     @JSName("Timestamp")
-    var Timestamp_UnmarshalledStartingPosition: js.UndefOr[Date] = js.native
+    var Timestamp_UnmarshalledStartingPosition: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledStartingPosition {
     

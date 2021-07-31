@@ -2,36 +2,34 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessPoint extends StObject {
   
   /**
     * The ARN for the access point.
     */
-  var AccessPointArn: js.UndefOr[S3AccessPointArn] = js.native
+  var AccessPointArn: js.UndefOr[S3AccessPointArn] = js.undefined
   
   /**
     * The name of the bucket associated with this access point.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The name of this access point.
     */
-  var Name: AccessPointName = js.native
+  var Name: AccessPointName
   
   /**
     * Indicates whether this access point allows access from the public internet. If VpcConfiguration is specified for this access point, then NetworkOrigin is VPC, and the access point doesn't allow access from the public internet. Otherwise, NetworkOrigin is Internet, and the access point allows access from the public internet, subject to the access point and bucket access policies.
     */
-  var NetworkOrigin: typings.awsSdk.s3controlMod.NetworkOrigin = js.native
+  var NetworkOrigin: typings.awsSdk.s3controlMod.NetworkOrigin
   
   /**
     * The virtual private cloud (VPC) configuration for this access point, if one exists.
     */
-  var VpcConfiguration: js.UndefOr[typings.awsSdk.s3controlMod.VpcConfiguration] = js.native
+  var VpcConfiguration: js.UndefOr[typings.awsSdk.s3controlMod.VpcConfiguration] = js.undefined
 }
 object AccessPoint {
   

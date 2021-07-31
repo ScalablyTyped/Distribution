@@ -2,19 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceMotionEventInit extends EventInit {
+trait DeviceMotionEventInit
+  extends StObject
+     with EventInit {
   
-  var acceleration: js.UndefOr[DeviceMotionEventAccelerationInit] = js.native
+  var acceleration: js.UndefOr[DeviceMotionEventAccelerationInit] = js.undefined
   
-  var accelerationIncludingGravity: js.UndefOr[DeviceMotionEventAccelerationInit] = js.native
+  var accelerationIncludingGravity: js.UndefOr[DeviceMotionEventAccelerationInit] = js.undefined
   
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
-  var rotationRate: js.UndefOr[DeviceMotionEventRotationRateInit] = js.native
+  var rotationRate: js.UndefOr[DeviceMotionEventRotationRateInit] = js.undefined
 }
 object DeviceMotionEventInit {
   

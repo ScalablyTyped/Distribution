@@ -2,21 +2,19 @@ package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiConfig extends StObject {
   
-  var autoJoinPolicy: AutoJoinPolicy = js.native
+  var autoJoinPolicy: AutoJoinPolicy
   
-  var defaultActionPolicy: DefaultActionPolicy = js.native
+  var defaultActionPolicy: DefaultActionPolicy
   
-  def receiverListener(receiverAvailability: ReceiverAvailability): Unit = js.native
+  def receiverListener(receiverAvailability: ReceiverAvailability): Unit
   
-  def sessionListener(session: Session): Unit = js.native
+  def sessionListener(session: Session): Unit
   
-  var sessionRequest: SessionRequest = js.native
+  var sessionRequest: SessionRequest
 }
 object ApiConfig {
   

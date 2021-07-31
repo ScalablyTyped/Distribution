@@ -3,13 +3,14 @@ package typings.natsHemera
 import typings.natsHemera.mod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object natsHemeraStrings {
   
   @js.native
-  sealed trait debug extends LogLevel
+  sealed trait debug
+    extends StObject
+       with LogLevel
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   
@@ -19,17 +20,23 @@ object natsHemeraStrings {
   def depth: depth = "depth".asInstanceOf[depth]
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait fatal extends LogLevel
+  sealed trait fatal
+    extends StObject
+       with LogLevel
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait info
+    extends StObject
+       with LogLevel
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -94,17 +101,23 @@ object natsHemeraStrings {
   def request: request = "request".asInstanceOf[request]
   
   @js.native
-  sealed trait silent extends LogLevel
+  sealed trait silent
+    extends StObject
+       with LogLevel
   @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
-  sealed trait trace extends LogLevel
+  sealed trait trace
+    extends StObject
+       with LogLevel
   @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait warn
+    extends StObject
+       with LogLevel
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

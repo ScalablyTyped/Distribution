@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pass extends StObject {
   
-  var pass: js.UndefOr[Boolean] = js.native
+  var pass: js.UndefOr[Boolean] = js.undefined
   
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object Pass {
   

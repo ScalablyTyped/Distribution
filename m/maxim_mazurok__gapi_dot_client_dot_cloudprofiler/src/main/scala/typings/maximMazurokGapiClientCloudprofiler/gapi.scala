@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientCloudprofiler.anon.Fields
 import typings.maximMazurokGapiClientCloudprofiler.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -18,14 +17,13 @@ object gapi {
     
     object cloudprofiler {
       
-      @js.native
       trait CreateProfileRequest extends StObject {
         
         /** Deployment details. */
-        var deployment: js.UndefOr[Deployment] = js.native
+        var deployment: js.UndefOr[Deployment] = js.undefined
         
         /** One or more profile types that the agent is capable of providing. */
-        var profileType: js.UndefOr[js.Array[String]] = js.native
+        var profileType: js.UndefOr[js.Array[String]] = js.undefined
       }
       object CreateProfileRequest {
         
@@ -55,7 +53,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait Deployment extends StObject {
         
         /**
@@ -67,17 +64,17 @@ object gapi {
         var labels: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Deployment with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Deployment & TopLevel[js.Any]
+              ] = js.undefined
         
         /** Project ID is the ID of a cloud project. Validation regex: `^a-z{4,61}[a-z0-9]$`. */
-        var projectId: js.UndefOr[String] = js.native
+        var projectId: js.UndefOr[String] = js.undefined
         
         /**
           * Target is the service name used to group related deployments: * Service name for GAE Flex / Standard. * Cluster and container name for GKE. * User-specified string for direct GCE
           * profiling (e.g. Java). * Job name for Dataflow. Validation regex: `^[a-z]([-a-z0-9_.]{0,253}[a-z0-9])?$`.
           */
-        var target: js.UndefOr[String] = js.native
+        var target: js.UndefOr[String] = js.undefined
       }
       object Deployment {
         
@@ -94,7 +91,7 @@ object gapi {
           def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Deployment with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Deployment & TopLevel[js.Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -114,18 +111,17 @@ object gapi {
         }
       }
       
-      @js.native
       trait Profile extends StObject {
         
         /** Deployment this profile corresponds to. */
-        var deployment: js.UndefOr[Deployment] = js.native
+        var deployment: js.UndefOr[Deployment] = js.undefined
         
         /**
           * Duration of the profiling session. Input (for the offline mode) or output (for the online mode). The field represents requested profiling duration. It may slightly differ from the
           * effective profiling duration, which is recorded in the profile data, in case the profiling can't be stopped immediately (e.g. in case stopping the profiling is handled
           * asynchronously).
           */
-        var duration: js.UndefOr[String] = js.native
+        var duration: js.UndefOr[String] = js.undefined
         
         /**
           * Input only. Labels associated to this specific profile. These labels will get merged with the deployment labels for the final data set. See documentation on deployment labels for
@@ -134,17 +130,17 @@ object gapi {
         var labels: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Profile with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Profile & TopLevel[js.Any]
+              ] = js.undefined
         
         /** Output only. Opaque, server-assigned, unique ID for this profile. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** Input only. Profile bytes, as a gzip compressed serialized proto, the format is https://github.com/google/pprof/blob/master/proto/profile.proto. */
-        var profileBytes: js.UndefOr[String] = js.native
+        var profileBytes: js.UndefOr[String] = js.undefined
         
         /** Type of profile. For offline mode, this must be specified when creating the profile. For online mode it is assigned and returned by the server. */
-        var profileType: js.UndefOr[String] = js.native
+        var profileType: js.UndefOr[String] = js.undefined
       }
       object Profile {
         
@@ -173,7 +169,7 @@ object gapi {
           def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Profile with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Profile & TopLevel[js.Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -223,10 +219,9 @@ object gapi {
         def patch(request: Key, body: Profile): Request[Profile] = js.native
       }
       
-      @js.native
       trait ProjectsResource extends StObject {
         
-        var profiles: ProfilesResource = js.native
+        var profiles: ProfilesResource
       }
       object ProjectsResource {
         

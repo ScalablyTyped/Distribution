@@ -3,22 +3,22 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.footnote_reference_close
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait FootnoteReferenceCloseToken extends FootnoteGenericToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait FootnoteReferenceCloseToken
+  extends StObject
+     with FootnoteGenericToken {
   
   @JSName("type")
-  var type_FootnoteReferenceCloseToken: footnote_reference_close = js.native
+  var type_FootnoteReferenceCloseToken: footnote_reference_close
 }
 object FootnoteReferenceCloseToken {
   
   @scala.inline
-  def apply(id: Double, level: Double, `type`: footnote_reference_close): FootnoteReferenceCloseToken = {
+  def apply(id: Double, level: Double): FootnoteReferenceCloseToken = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("footnote_reference_close")
     __obj.asInstanceOf[FootnoteReferenceCloseToken]
   }
   

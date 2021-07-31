@@ -2,13 +2,13 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadBlockBlobOptions extends UploadBlobOptions {
+trait UploadBlockBlobOptions
+  extends StObject
+     with UploadBlobOptions {
   
-  var blockIdPrefix: js.UndefOr[String] = js.native
+  var blockIdPrefix: js.UndefOr[String] = js.undefined
 }
 object UploadBlockBlobOptions {
   

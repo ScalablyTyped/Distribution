@@ -3,7 +3,6 @@ package typings.matrixAppserviceBridge
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configValidatorMod {
@@ -28,9 +27,9 @@ object configValidatorMod {
       * @throws On validation errors
       */
     def validate(inputConfig: String): js.Any = js.native
-    def validate(inputConfig: String, defaultConfig: Record[String, _]): js.Any = js.native
+    def validate(inputConfig: String, defaultConfig: Record[String, js.Any]): js.Any = js.native
     def validate(inputConfig: Schema): js.Any = js.native
-    def validate(inputConfig: Schema, defaultConfig: Record[String, _]): js.Any = js.native
+    def validate(inputConfig: Schema, defaultConfig: Record[String, js.Any]): js.Any = js.native
   }
   /* static members */
   object ConfigValidator {
@@ -39,9 +38,8 @@ object configValidatorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("matrix-appservice-bridge/lib/components/config-validator", "ConfigValidator.fromSchemaFile")
-    @js.native
-    def fromSchemaFile(filename: String): ConfigValidator = js.native
+    @scala.inline
+    def fromSchemaFile(filename: String): ConfigValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchemaFile")(filename.asInstanceOf[js.Any]).asInstanceOf[ConfigValidator]
     
     @JSImport("matrix-appservice-bridge/lib/components/config-validator", "ConfigValidator.loadFromFile")
     @js.native

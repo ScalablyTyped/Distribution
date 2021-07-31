@@ -4,26 +4,24 @@ import typings.octokitTypes.octokitTypesStrings.active
 import typings.octokitTypes.octokitTypesStrings.pending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsListMembershipsForAuthenticatedUserEndpoint extends StObject {
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the state of the memberships to return. Can be either `active` or `pending`. If not specified, the API returns both active and pending memberships.
     */
-  var state: js.UndefOr[active | pending] = js.native
+  var state: js.UndefOr[active | pending] = js.undefined
 }
 object OrgsListMembershipsForAuthenticatedUserEndpoint {
   

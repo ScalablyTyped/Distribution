@@ -7,23 +7,21 @@ import typings.storybookApi.storiesMod.StoriesRaw
 import typings.storybookApi.storybookApiNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var error: js.UndefOr[typings.std.Error] = js.native
+  var error: js.UndefOr[typings.std.Error] = js.undefined
   
-  var globalParameters: Parameters = js.native
+  var globalParameters: Parameters
   
-  var globals: Args = js.native
+  var globals: Args
   
-  var kindParameters: StringDictionary[Parameters] = js.native
+  var kindParameters: StringDictionary[Parameters]
   
-  var stories: StoriesRaw = js.native
+  var stories: StoriesRaw
   
-  var v: `2` = js.native
+  var v: `2`
 }
 object Error {
   
@@ -32,10 +30,9 @@ object Error {
     globalParameters: Parameters,
     globals: Args,
     kindParameters: StringDictionary[Parameters],
-    stories: StoriesRaw,
-    v: `2`
+    stories: StoriesRaw
   ): Error = {
-    val __obj = js.Dynamic.literal(globalParameters = globalParameters.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], kindParameters = kindParameters.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(globalParameters = globalParameters.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], kindParameters = kindParameters.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any], v = 2)
     __obj.asInstanceOf[Error]
   }
   

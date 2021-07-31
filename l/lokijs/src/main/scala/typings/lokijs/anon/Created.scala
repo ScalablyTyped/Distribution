@@ -2,21 +2,19 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Created extends StObject {
   
-  var created: Double = js.native
+  var created: Double
   
   // Date().getTime()
-  var revision: Double = js.native
+  var revision: Double
   
-  var updated: Double = js.native
+  var updated: Double
   
   // Date().getTime()
-  var version: Double = js.native
+  var version: Double
 }
 object Created {
   

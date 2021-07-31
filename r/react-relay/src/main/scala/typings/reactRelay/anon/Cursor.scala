@@ -2,15 +2,13 @@ package typings.reactRelay.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cursor extends StObject {
   
-  var cursor: js.UndefOr[String | Null] = js.native
+  var cursor: js.UndefOr[String | Null] = js.undefined
   
-  var hasMore: Boolean = js.native
+  var hasMore: Boolean
 }
 object Cursor {
   

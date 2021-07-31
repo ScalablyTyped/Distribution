@@ -7,7 +7,6 @@ import typings.stylableWebpackPlugin.stylableBootstrapModuleMod.StylableBootstra
 import typings.stylableWebpackPlugin.typesMod.StylableWebpackPluginOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableWebpackPluginMod {
@@ -24,7 +23,7 @@ object stylableWebpackPluginMod {
     
     def applyDeprecatedProcess(
       chunks: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any
         ],
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
       compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any
@@ -97,7 +96,7 @@ object stylableWebpackPluginMod {
     
     def optimizeChunks(
       chunks: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any
         ]
     ): Unit = js.native
     

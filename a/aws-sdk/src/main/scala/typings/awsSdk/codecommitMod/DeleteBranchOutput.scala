@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBranchOutput extends StObject {
   
   /**
     * Information about the branch deleted by the operation, including the branch name and the commit ID that was the tip of the branch.
     */
-  var deletedBranch: js.UndefOr[BranchInfo] = js.native
+  var deletedBranch: js.UndefOr[BranchInfo] = js.undefined
 }
 object DeleteBranchOutput {
   

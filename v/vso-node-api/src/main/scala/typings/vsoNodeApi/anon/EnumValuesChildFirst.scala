@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesChildFirst extends StObject {
   
-  var enumValues: ChildFirst = js.native
+  var enumValues: ChildFirst
 }
 object EnumValuesChildFirst {
   

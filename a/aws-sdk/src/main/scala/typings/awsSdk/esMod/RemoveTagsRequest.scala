@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsRequest extends StObject {
   
   /**
     * Specifies the ARN for the Elasticsearch domain from which you want to delete the specified tags.
     */
-  var ARN: typings.awsSdk.esMod.ARN = js.native
+  var ARN: typings.awsSdk.esMod.ARN
   
   /**
     * Specifies the TagKey list which you want to remove from the Elasticsearch domain.
     */
-  var TagKeys: StringList = js.native
+  var TagKeys: StringList
 }
 object RemoveTagsRequest {
   

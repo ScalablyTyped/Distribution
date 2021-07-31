@@ -2,32 +2,30 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnFormat extends StObject {
   
-  var Align: OlAlign = js.native
+  var Align: OlAlign
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var FieldFormat: Double = js.native
+  var FieldFormat: Double
   
-  val FieldType: OlUserPropertyType = js.native
+  val FieldType: OlUserPropertyType
   
-  var Label: String = js.native
+  var Label: String
   
   @JSName("Outlook.ColumnFormat_typekey")
-  var OutlookDotColumnFormat_typekey: ColumnFormat = js.native
+  var OutlookDotColumnFormat_typekey: ColumnFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object ColumnFormat {
   

@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventConditions extends StObject {
   
-  var eventConditions: js.UndefOr[js.Array[ComparisonType]] = js.native
+  var eventConditions: js.UndefOr[js.Array[ComparisonType]] = js.undefined
   
-  var useEventValue: js.UndefOr[Boolean] = js.native
+  var useEventValue: js.UndefOr[Boolean] = js.undefined
 }
 object EventConditions {
   

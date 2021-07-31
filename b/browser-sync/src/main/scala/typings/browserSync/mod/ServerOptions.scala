@@ -4,31 +4,29 @@ import typings.node.httpMod.ServerResponse
 import typings.serveStatic.mod.ServeStaticOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerOptions extends StObject {
   
   /** set base directory */
-  var baseDir: js.UndefOr[String | js.Array[String]] = js.native
+  var baseDir: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** enable directory listing */
-  var directory: js.UndefOr[Boolean] = js.native
+  var directory: js.UndefOr[Boolean] = js.undefined
   
   /** set index filename */
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
   /** configure custom middleware */
-  var middleware: js.UndefOr[js.Array[MiddlewareHandler | PerRouteMiddleware]] = js.native
+  var middleware: js.UndefOr[js.Array[MiddlewareHandler | PerRouteMiddleware]] = js.undefined
   
   /**
     * key-value object hash, where the key is the url to match,
     * and the value is the folder to serve (relative to your working directory)
     */
-  var routes: js.UndefOr[Hash[String]] = js.native
+  var routes: js.UndefOr[Hash[String]] = js.undefined
   
-  var serveStaticOptions: js.UndefOr[ServeStaticOptions[ServerResponse]] = js.native
+  var serveStaticOptions: js.UndefOr[ServeStaticOptions[ServerResponse]] = js.undefined
 }
 object ServerOptions {
   

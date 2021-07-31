@@ -6,40 +6,40 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fontIconMod {
   
   @JSImport("@react-md/icon/types/FontIcon", "FontIcon")
   @js.native
-  val FontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
+  val FontIcon: ForwardRefExoticComponent[FontIconProps & RefAttributes[HTMLElement]] = js.native
   
-  @js.native
-  trait FontIconProps extends HTMLAttributes[HTMLElement] {
+  trait FontIconProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * Boolean if the font icon should use the dense spec.
       */
-    var dense: js.UndefOr[Boolean] = js.native
+    var dense: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the `forceSize` prop should also force the `font-size` instead
       * of only `width` and `height`.
       */
-    var forceFontSize: js.UndefOr[Boolean] = js.native
+    var forceFontSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Either a boolean that will enforce the 24x24 size of the font icon or a
       * number of the size to enforce. This is useful when using other font icon
       * libraries that do not have a consistent size.
       */
-    var forceSize: js.UndefOr[Boolean] = js.native
+    var forceSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The font icon class name to use.
       */
-    var iconClassName: js.UndefOr[String] = js.native
+    var iconClassName: js.UndefOr[String] = js.undefined
   }
   object FontIconProps {
     

@@ -5,22 +5,20 @@ import typings.monacoEditor.monacoEditorStrings.multiline
 import typings.monacoEditor.monacoEditorStrings.never
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.IEditorFindOptions>> */
-@js.native
 trait EditorFindOptions extends StObject {
   
-  val addExtraSpaceOnTop: Boolean = js.native
+  val addExtraSpaceOnTop: Boolean
   
-  val autoFindInSelection: never | always | multiline = js.native
+  val autoFindInSelection: never | always | multiline
   
-  val cursorMoveOnType: Boolean = js.native
+  val cursorMoveOnType: Boolean
   
-  val loop: Boolean = js.native
+  val loop: Boolean
   
-  val seedSearchStringFromSelection: Boolean = js.native
+  val seedSearchStringFromSelection: Boolean
 }
 object EditorFindOptions {
   

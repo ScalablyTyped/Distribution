@@ -2,16 +2,14 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetClientCertificateRequest extends StObject {
   
   /**
     * [Required] The identifier of the ClientCertificate resource to be described.
     */
-  var clientCertificateId: String = js.native
+  var clientCertificateId: String
 }
 object GetClientCertificateRequest {
   

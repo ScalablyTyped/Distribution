@@ -2,21 +2,19 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRuleGroupsResponse extends StObject {
   
   /**
     * When you request a list of objects with a MaxResults setting, if the number of objects that are still available for retrieval exceeds the maximum you requested, Network Firewall returns a NextToken value in the response. To retrieve the next batch of objects, use the token returned from the prior request in your next request.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The rule group metadata objects that you've defined. Depending on your setting for max results and the number of rule groups, this might not be the full list. 
     */
-  var RuleGroups: js.UndefOr[typings.awsSdk.networkfirewallMod.RuleGroups] = js.native
+  var RuleGroups: js.UndefOr[typings.awsSdk.networkfirewallMod.RuleGroups] = js.undefined
 }
 object ListRuleGroupsResponse {
   

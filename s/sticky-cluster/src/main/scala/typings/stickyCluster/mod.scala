@@ -4,38 +4,38 @@ import typings.node.httpMod.Server
 import typings.stickyCluster.anon.Stickyclusterworkerindex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(callback: InitializeFn): Unit = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(callback: InitializeFn, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("sticky-cluster", JSImport.Namespace)
   @js.native
-  def apply(callback: InitializeFn): Unit = js.native
-  @JSImport("sticky-cluster", JSImport.Namespace)
-  @js.native
-  def apply(callback: InitializeFn, options: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function1[/* server */ Server, Unit]
   
   type InitializeFn = js.Function1[/* callback */ Callback, Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[js.Function1[/* index */ Double, Stickyclusterworkerindex]] = js.native
+    var env: js.UndefOr[js.Function1[/* index */ Double, Stickyclusterworkerindex]] = js.undefined
     
-    var errorHandler: js.UndefOr[js.Function1[/* err */ js.Any, Unit]] = js.native
+    var errorHandler: js.UndefOr[js.Function1[/* err */ js.Any, Unit]] = js.undefined
     
-    var hardShutdownDelay: js.UndefOr[Double] = js.native
+    var hardShutdownDelay: js.UndefOr[Double] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listGroupItemMod {
@@ -20,20 +19,21 @@ object listGroupItemMod {
   trait ListGroupItem
     extends Component[ListGroupItemProps, js.Object, js.Any]
   
-  @js.native
-  trait ListGroupItemProps extends HTMLProps[ListGroupItem] {
+  trait ListGroupItemProps
+    extends StObject
+       with HTMLProps[ListGroupItem] {
     
-    var active: js.UndefOr[js.Any] = js.native
+    var active: js.UndefOr[js.Any] = js.undefined
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var bsStyle: js.UndefOr[String] = js.native
+    var bsStyle: js.UndefOr[String] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.native
+    var eventKey: js.UndefOr[js.Any] = js.undefined
     
-    var header: js.UndefOr[ReactNode] = js.native
+    var header: js.UndefOr[ReactNode] = js.undefined
     
-    var listItem: js.UndefOr[Boolean] = js.native
+    var listItem: js.UndefOr[Boolean] = js.undefined
   }
   object ListGroupItemProps {
     

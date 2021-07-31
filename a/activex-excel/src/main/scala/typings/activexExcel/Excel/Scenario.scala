@@ -3,7 +3,6 @@ package typings.activexExcel.Excel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,7 +11,7 @@ trait Scenario extends StObject {
   val Application: typings.activexExcel.Excel.Application = js.native
   
   def ChangeScenario(ChangingCells: Range): js.Any = js.native
-  def ChangeScenario(ChangingCells: Range, Values: SafeArray[_]): js.Any = js.native
+  def ChangeScenario(ChangingCells: Range, Values: SafeArray[js.Any]): js.Any = js.native
   
   def ChangingCells(Address: String): Range = js.native
   def ChangingCells(RowIndex: Double): Range = js.native
@@ -41,6 +40,6 @@ trait Scenario extends StObject {
   
   def Show(): js.Any = js.native
   
-  def Values(): SafeArray[_] = js.native
+  def Values(): SafeArray[js.Any] = js.native
   def Values(Index: Double): js.Any = js.native
 }

@@ -8,154 +8,152 @@ import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMNode extends StObject {
   
   /**
     * Attributes of an `Element` node.
     */
-  var attributes: js.UndefOr[js.Array[NameValue]] = js.native
+  var attributes: js.UndefOr[js.Array[NameValue]] = js.undefined
   
   /**
     * `Node`'s id, corresponds to DOM.Node.backendNodeId.
     */
-  var backendNodeId: BackendNodeId = js.native
+  var backendNodeId: BackendNodeId
   
   /**
     * Base URL that `Document` or `FrameOwner` node uses for URL completion.
     */
-  var baseURL: js.UndefOr[String] = js.native
+  var baseURL: js.UndefOr[String] = js.undefined
   
   /**
     * The indexes of the node's child nodes in the `domNodes` array returned by `getSnapshot`, if
     * any.
     */
-  var childNodeIndexes: js.UndefOr[js.Array[integer]] = js.native
+  var childNodeIndexes: js.UndefOr[js.Array[integer]] = js.undefined
   
   /**
     * The index of a frame owner element's content document in the `domNodes` array returned by
     * `getSnapshot`, if any.
     */
-  var contentDocumentIndex: js.UndefOr[integer] = js.native
+  var contentDocumentIndex: js.UndefOr[integer] = js.undefined
   
   /**
     * Only set for documents, contains the document's content language.
     */
-  var contentLanguage: js.UndefOr[String] = js.native
+  var contentLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The selected url for nodes with a srcset attribute.
     */
-  var currentSourceURL: js.UndefOr[String] = js.native
+  var currentSourceURL: js.UndefOr[String] = js.undefined
   
   /**
     * Only set for documents, contains the document's character set encoding.
     */
-  var documentEncoding: js.UndefOr[String] = js.native
+  var documentEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * Document URL that `Document` or `FrameOwner` node points to.
     */
-  var documentURL: js.UndefOr[String] = js.native
+  var documentURL: js.UndefOr[String] = js.undefined
   
   /**
     * Details of the node's event listeners, if any.
     */
-  var eventListeners: js.UndefOr[js.Array[EventListener]] = js.native
+  var eventListeners: js.UndefOr[js.Array[EventListener]] = js.undefined
   
   /**
     * Frame ID for frame owner elements and also for the document node.
     */
-  var frameId: js.UndefOr[FrameId] = js.native
+  var frameId: js.UndefOr[FrameId] = js.undefined
   
   /**
     * Only set for radio and checkbox input elements, indicates if the element has been checked
     */
-  var inputChecked: js.UndefOr[Boolean] = js.native
+  var inputChecked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Only set for input elements, contains the input's associated text value.
     */
-  var inputValue: js.UndefOr[String] = js.native
+  var inputValue: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this DOM node responds to mouse clicks. This includes nodes that have had click
     * event listeners attached via JavaScript as well as anchor tags that naturally navigate when
     * clicked.
     */
-  var isClickable: js.UndefOr[Boolean] = js.native
+  var isClickable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The index of the node's related layout tree node in the `layoutTreeNodes` array returned by
     * `getSnapshot`, if any.
     */
-  var layoutNodeIndex: js.UndefOr[integer] = js.native
+  var layoutNodeIndex: js.UndefOr[integer] = js.undefined
   
   /**
     * `Node`'s nodeName.
     */
-  var nodeName: String = js.native
+  var nodeName: String
   
   /**
     * `Node`'s nodeType.
     */
-  var nodeType: integer = js.native
+  var nodeType: integer
   
   /**
     * `Node`'s nodeValue.
     */
-  var nodeValue: String = js.native
+  var nodeValue: String
   
   /**
     * Only set for option elements, indicates if the element has been selected
     */
-  var optionSelected: js.UndefOr[Boolean] = js.native
+  var optionSelected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The url of the script (if any) that generates this node.
     */
-  var originURL: js.UndefOr[String] = js.native
+  var originURL: js.UndefOr[String] = js.undefined
   
   /**
     * Indexes of pseudo elements associated with this node in the `domNodes` array returned by
     * `getSnapshot`, if any.
     */
-  var pseudoElementIndexes: js.UndefOr[js.Array[integer]] = js.native
+  var pseudoElementIndexes: js.UndefOr[js.Array[integer]] = js.undefined
   
   /**
     * Type of a pseudo element node.
     */
-  var pseudoType: js.UndefOr[PseudoType] = js.native
+  var pseudoType: js.UndefOr[PseudoType] = js.undefined
   
   /**
     * `DocumentType` node's publicId.
     */
-  var publicId: js.UndefOr[String] = js.native
+  var publicId: js.UndefOr[String] = js.undefined
   
   /**
     * Scroll offsets, set when this node is a Document.
     */
-  var scrollOffsetX: js.UndefOr[Double] = js.native
+  var scrollOffsetX: js.UndefOr[Double] = js.undefined
   
-  var scrollOffsetY: js.UndefOr[Double] = js.native
+  var scrollOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * Shadow root type.
     */
-  var shadowRootType: js.UndefOr[ShadowRootType] = js.native
+  var shadowRootType: js.UndefOr[ShadowRootType] = js.undefined
   
   /**
     * `DocumentType` node's systemId.
     */
-  var systemId: js.UndefOr[String] = js.native
+  var systemId: js.UndefOr[String] = js.undefined
   
   /**
     * Only set for textarea elements, contains the text value.
     */
-  var textValue: js.UndefOr[String] = js.native
+  var textValue: js.UndefOr[String] = js.undefined
 }
 object DOMNode {
   

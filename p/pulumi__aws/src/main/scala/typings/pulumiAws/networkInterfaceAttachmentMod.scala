@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkInterfaceAttachmentMod {
@@ -53,6 +52,10 @@ object networkInterfaceAttachmentMod {
   /* static members */
   object NetworkInterfaceAttachment {
     
+    @JSImport("@pulumi/aws/ec2/networkInterfaceAttachment", "NetworkInterfaceAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NetworkInterfaceAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -62,45 +65,39 @@ object networkInterfaceAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/networkInterfaceAttachment", "NetworkInterfaceAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NetworkInterfaceAttachment = js.native
-    @JSImport("@pulumi/aws/ec2/networkInterfaceAttachment", "NetworkInterfaceAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NetworkInterfaceAttachment = js.native
-    @JSImport("@pulumi/aws/ec2/networkInterfaceAttachment", "NetworkInterfaceAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NetworkInterfaceAttachmentState): NetworkInterfaceAttachment = js.native
-    @JSImport("@pulumi/aws/ec2/networkInterfaceAttachment", "NetworkInterfaceAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NetworkInterfaceAttachmentState, opts: CustomResourceOptions): NetworkInterfaceAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NetworkInterfaceAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NetworkInterfaceAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NetworkInterfaceAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkInterfaceAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NetworkInterfaceAttachmentState): NetworkInterfaceAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NetworkInterfaceAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NetworkInterfaceAttachmentState, opts: CustomResourceOptions): NetworkInterfaceAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkInterfaceAttachment]
     
     /**
       * Returns true if the given object is an instance of NetworkInterfaceAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/networkInterfaceAttachment", "NetworkInterfaceAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceAttachment.NetworkInterfaceAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceAttachment.NetworkInterfaceAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceAttachment.NetworkInterfaceAttachment */ Boolean]
   }
   
-  @js.native
   trait NetworkInterfaceAttachmentArgs extends StObject {
     
     /**
       * Network interface index (int).
       */
-    val deviceIndex: Input[Double] = js.native
+    val deviceIndex: Input[Double]
     
     /**
       * Instance ID to attach.
       */
-    val instanceId: Input[String] = js.native
+    val instanceId: Input[String]
     
     /**
       * ENI ID to attach.
       */
-    val networkInterfaceId: Input[String] = js.native
+    val networkInterfaceId: Input[String]
   }
   object NetworkInterfaceAttachmentArgs {
     
@@ -124,33 +121,32 @@ object networkInterfaceAttachmentMod {
     }
   }
   
-  @js.native
   trait NetworkInterfaceAttachmentState extends StObject {
     
     /**
       * The ENI Attachment ID.
       */
-    val attachmentId: js.UndefOr[Input[String]] = js.native
+    val attachmentId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Network interface index (int).
       */
-    val deviceIndex: js.UndefOr[Input[Double]] = js.native
+    val deviceIndex: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Instance ID to attach.
       */
-    val instanceId: js.UndefOr[Input[String]] = js.native
+    val instanceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ENI ID to attach.
       */
-    val networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The status of the Network Interface Attachment.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
   }
   object NetworkInterfaceAttachmentState {
     

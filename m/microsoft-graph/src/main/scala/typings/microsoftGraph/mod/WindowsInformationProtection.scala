@@ -2,45 +2,45 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsInformationProtection extends ManagedAppPolicy {
+trait WindowsInformationProtection
+  extends StObject
+     with ManagedAppPolicy {
   
   // Navigation property to list of security groups targeted for policy.
-  var assignments: js.UndefOr[NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]] = js.native
+  var assignments: js.UndefOr[NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]] = js.undefined
   
   // Specifies whether to allow Azure RMS encryption for WIP
-  var azureRightsManagementServicesAllowed: js.UndefOr[Boolean] = js.native
+  var azureRightsManagementServicesAllowed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies a recovery certificate that can be used for data recovery of encrypted files. This is the same as the data
     * recovery agent(DRA) certificate for encrypting file system(EFS)
     */
-  var dataRecoveryCertificate: js.UndefOr[NullableOption[WindowsInformationProtectionDataRecoveryCertificate]] = js.native
+  var dataRecoveryCertificate: js.UndefOr[NullableOption[WindowsInformationProtectionDataRecoveryCertificate]] = js.undefined
   
   /**
     * WIP enforcement level.See the Enum definition for supported values. Possible values are: noProtection,
     * encryptAndAuditOnly, encryptAuditAndPrompt, encryptAuditAndBlock.
     */
-  var enforcementLevel: js.UndefOr[WindowsInformationProtectionEnforcementLevel] = js.native
+  var enforcementLevel: js.UndefOr[WindowsInformationProtectionEnforcementLevel] = js.undefined
   
   // Primary enterprise domain
-  var enterpriseDomain: js.UndefOr[NullableOption[String]] = js.native
+  var enterpriseDomain: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Sets the enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers
     * will be considered part of the enterprise and protected. These locations will be considered a safe destination for
     * enterprise data to be shared to
     */
-  var enterpriseIPRanges: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionIPRangeCollection]]] = js.native
+  var enterpriseIPRanges: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionIPRangeCollection]]] = js.undefined
   
   /**
     * Boolean value that tells the client to accept the configured list and not to use heuristics to attempt to find other
     * subnets. Default is false
     */
-  var enterpriseIPRangesAreAuthoritative: js.UndefOr[Boolean] = js.native
+  var enterpriseIPRangesAreAuthoritative: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This is the comma-separated list of internal proxy servers. For example, '157.54.14.28, 157.54.11.118, 10.202.14.167,
@@ -48,17 +48,17 @@ trait WindowsInformationProtection extends ManagedAppPolicy {
     * Internet. They are considered to be enterprise network locations. The proxies are only leveraged in configuring the
     * EnterpriseProxiedDomains policy to force traffic to the matched domains through these proxies
     */
-  var enterpriseInternalProxyServers: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.native
+  var enterpriseInternalProxyServers: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.undefined
   
   /**
     * This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent
     * to a device will be considered enterprise data and protected These locations will be considered a safe destination for
     * enterprise data to be shared to
     */
-  var enterpriseNetworkDomainNames: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.native
+  var enterpriseNetworkDomainNames: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.undefined
   
   // List of enterprise domains to be protected
-  var enterpriseProtectedDomainNames: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.native
+  var enterpriseProtectedDomainNames: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.undefined
   
   /**
     * Contains a list of Enterprise resource domains hosted in the cloud that need to be protected. Connections to these
@@ -66,72 +66,72 @@ trait WindowsInformationProtection extends ManagedAppPolicy {
     * will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this
     * purpose must also be configured using the EnterpriseInternalProxyServers policy
     */
-  var enterpriseProxiedDomains: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionProxiedDomainCollection]]] = js.native
+  var enterpriseProxiedDomains: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionProxiedDomainCollection]]] = js.undefined
   
   // This is a list of proxy servers. Any server not on this list is considered non-enterprise
-  var enterpriseProxyServers: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.native
+  var enterpriseProxyServers: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.undefined
   
   /**
     * Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies.
     * Default is false
     */
-  var enterpriseProxyServersAreAuthoritative: js.UndefOr[Boolean] = js.native
+  var enterpriseProxyServersAreAuthoritative: js.UndefOr[Boolean] = js.undefined
   
   // Another way to input exempt apps through xml files
-  var exemptAppLockerFiles: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionAppLockerFile]]] = js.native
+  var exemptAppLockerFiles: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionAppLockerFile]]] = js.undefined
   
   /**
     * Exempt applications can also access enterprise data, but the data handled by those applications are not protected. This
     * is because some critical enterprise applications may have compatibility problems with encrypted data.
     */
-  var exemptApps: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionApp]]] = js.native
+  var exemptApps: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionApp]]] = js.undefined
   
   /**
     * Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles in the
     * Start menu. Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the
     * title bar of a WIP-protected app
     */
-  var iconsVisible: js.UndefOr[Boolean] = js.native
+  var iconsVisible: js.UndefOr[Boolean] = js.undefined
   
   // This switch is for the Windows Search Indexer, to allow or disallow indexing of items
-  var indexingEncryptedStoresOrItemsBlocked: js.UndefOr[Boolean] = js.native
+  var indexingEncryptedStoresOrItemsBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates if the policy is deployed to any inclusion groups or not.
-  var isAssigned: js.UndefOr[Boolean] = js.native
+  var isAssigned: js.UndefOr[Boolean] = js.undefined
   
   // List of domain names that can used for work or personal resource
-  var neutralDomainResources: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.native
+  var neutralDomainResources: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.undefined
   
   // Another way to input protected apps through xml files
-  var protectedAppLockerFiles: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionAppLockerFile]]] = js.native
+  var protectedAppLockerFiles: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionAppLockerFile]]] = js.undefined
   
   /**
     * Protected applications can access enterprise data and the data handled by those applications are protected with
     * encryption
     */
-  var protectedApps: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionApp]]] = js.native
+  var protectedApps: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionApp]]] = js.undefined
   
   // Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured
-  var protectionUnderLockConfigRequired: js.UndefOr[Boolean] = js.native
+  var protectionUnderLockConfigRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This policy controls whether to revoke the WIP keys when a device unenrolls from the management service. If set to 1
     * (Don't revoke keys), the keys will not be revoked and the user will continue to have access to protected files after
     * unenrollment. If the keys are not revoked, there will be no revoked file cleanup subsequently.
     */
-  var revokeOnUnenrollDisabled: js.UndefOr[Boolean] = js.native
+  var revokeOnUnenrollDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * TemplateID GUID to use for RMS encryption. The RMS template allows the IT admin to configure the details about who has
     * access to RMS-protected file and how long they have access
     */
-  var rightsManagementServicesTemplateId: js.UndefOr[NullableOption[String]] = js.native
+  var rightsManagementServicesTemplateId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share
     * within the corporate boundary
     */
-  var smbAutoEncryptedFileExtensions: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.native
+  var smbAutoEncryptedFileExtensions: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]] = js.undefined
 }
 object WindowsInformationProtection {
   

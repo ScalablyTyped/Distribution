@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The populations in the group
   */
-@js.native
-trait MeasureReportGroupPopulation extends BackboneElement {
+trait MeasureReportGroupPopulation
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'count'.
     */
-  var _count: js.UndefOr[Element] = js.native
+  var _count: js.UndefOr[Element] = js.undefined
   
   /**
     * initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | measure-population | measure-population-exclusion | measure-score
     */
-  var code: js.UndefOr[CodeableConcept] = js.native
+  var code: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Size of the population
     */
-  var count: js.UndefOr[integer] = js.native
+  var count: js.UndefOr[integer] = js.undefined
   
   /**
     * Population identifier as defined in the measure
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * For patient-list reports, the patients in this population
     */
-  var patients: js.UndefOr[Reference] = js.native
+  var patients: js.UndefOr[Reference] = js.undefined
 }
 object MeasureReportGroupPopulation {
   

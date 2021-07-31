@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1ListCatalogsResponse extends StObject {
   
   /** Output only. All the customer's catalogs. */
-  var catalogs: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1Catalog]] = js.native
+  var catalogs: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1Catalog]] = js.undefined
   
   /** Pagination token, if not returned indicates the last page. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1ListCatalogsResponse {
   

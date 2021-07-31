@@ -2,15 +2,13 @@ package typings.popperjsCore.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateOffsets extends StObject {
   
-  var arrow: js.UndefOr[Offsets] = js.native
+  var arrow: js.UndefOr[Offsets] = js.undefined
   
-  var popper: Offsets = js.native
+  var popper: Offsets
 }
 object StateOffsets {
   

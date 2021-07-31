@@ -2,22 +2,20 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
   /**
     * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely transparent and 1.0 being co
     * mpletely opaque. Note that values require the leading zero before the decimal. 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. 'none' | 'transparent' | 'purple' | '#33ccff' | 'rgb(100, 15, 15)' | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
 }
 object `0` {
   

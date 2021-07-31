@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIdentityRequest extends StObject {
   
   /**
     * The identity to be removed from the list of identities for the AWS Account.
     */
-  var Identity: typings.awsSdk.sesMod.Identity = js.native
+  var Identity: typings.awsSdk.sesMod.Identity
 }
 object DeleteIdentityRequest {
   

@@ -3,24 +3,24 @@ package typings.fsRoutes
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fs-routes", JSImport.Default)
+  @JSImport("fs-routes", JSImport.Namespace)
   @js.native
-  def default(dir: String): js.Array[FsRoute] = js.native
-  @JSImport("fs-routes", JSImport.Default)
-  @js.native
-  def default(dir: String, options: FsRoutesOptions): js.Array[FsRoute] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(dir: String): js.Array[FsRoute] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Array[FsRoute]]
+  @scala.inline
+  def default(dir: String, options: FsRoutesOptions): js.Array[FsRoute] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[FsRoute]]
+  
   trait FsRoute extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var route: String = js.native
+    var route: String
   }
   object FsRoute {
     
@@ -41,12 +41,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FsRoutesOptions extends StObject {
     
-    var glob: js.UndefOr[String] = js.native
+    var glob: js.UndefOr[String] = js.undefined
     
-    var indexFileRegExp: js.UndefOr[RegExp] = js.native
+    var indexFileRegExp: js.UndefOr[RegExp] = js.undefined
   }
   object FsRoutesOptions {
     

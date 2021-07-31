@@ -3,43 +3,41 @@ package typings.webpagetest.mod
 import typings.webpagetest.webpagetestBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestStatus extends StObject {
   
-  var completeTime: String = js.native
+  var completeTime: String
   
-  var elapsed: Double = js.native
+  var elapsed: Double
   
-  var fvRunsCompleted: Double = js.native
+  var fvRunsCompleted: Double
   
-  var fvonly: Double = js.native
+  var fvonly: Double
   
-  var id: String = js.native
+  var id: String
   
-  var location: String = js.native
+  var location: String
   
-  var remote: `false` = js.native
+  var remote: `false`
   
-  var runs: Double = js.native
+  var runs: Double
   
-  var rvRunsCompleted: Double = js.native
+  var rvRunsCompleted: Double
   
-  var startTime: String = js.native
+  var startTime: String
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var statusText: String = js.native
+  var statusText: String
   
-  var testId: String = js.native
+  var testId: String
   
-  var testInfo: TestInfo = js.native
+  var testInfo: TestInfo
   
-  var testsCompleted: Double = js.native
+  var testsCompleted: Double
   
-  var testsExpected: Double = js.native
+  var testsExpected: Double
 }
 object TestStatus {
   
@@ -51,7 +49,6 @@ object TestStatus {
     fvonly: Double,
     id: String,
     location: String,
-    remote: `false`,
     runs: Double,
     rvRunsCompleted: Double,
     startTime: String,
@@ -62,7 +59,7 @@ object TestStatus {
     testsCompleted: Double,
     testsExpected: Double
   ): TestStatus = {
-    val __obj = js.Dynamic.literal(completeTime = completeTime.asInstanceOf[js.Any], elapsed = elapsed.asInstanceOf[js.Any], fvRunsCompleted = fvRunsCompleted.asInstanceOf[js.Any], fvonly = fvonly.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], runs = runs.asInstanceOf[js.Any], rvRunsCompleted = rvRunsCompleted.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], testId = testId.asInstanceOf[js.Any], testInfo = testInfo.asInstanceOf[js.Any], testsCompleted = testsCompleted.asInstanceOf[js.Any], testsExpected = testsExpected.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(completeTime = completeTime.asInstanceOf[js.Any], elapsed = elapsed.asInstanceOf[js.Any], fvRunsCompleted = fvRunsCompleted.asInstanceOf[js.Any], fvonly = fvonly.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], remote = false, runs = runs.asInstanceOf[js.Any], rvRunsCompleted = rvRunsCompleted.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], testId = testId.asInstanceOf[js.Any], testInfo = testInfo.asInstanceOf[js.Any], testsCompleted = testsCompleted.asInstanceOf[js.Any], testsExpected = testsExpected.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestStatus]
   }
   

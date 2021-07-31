@@ -3,26 +3,25 @@ package typings.exceljs.mod
 import typings.exceljs.exceljsStrings.cellIs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellIsRuleType
-  extends ConditionalFormattingBaseRule
+  extends StObject
+     with ConditionalFormattingBaseRule
      with ConditionalFormattingRule {
   
-  var formulae: js.UndefOr[js.Array[_]] = js.native
+  var formulae: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var operator: js.UndefOr[CellIsOperators] = js.native
+  var operator: js.UndefOr[CellIsOperators] = js.undefined
   
-  var `type`: cellIs = js.native
+  var `type`: cellIs
 }
 object CellIsRuleType {
   
   @scala.inline
-  def apply(priority: Double, `type`: cellIs): CellIsRuleType = {
+  def apply(priority: Double): CellIsRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("cellIs")
     __obj.asInstanceOf[CellIsRuleType]
   }
   
@@ -30,7 +29,7 @@ object CellIsRuleType {
   implicit class CellIsRuleTypeMutableBuilder[Self <: CellIsRuleType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFormulae(value: js.Array[_]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
+    def setFormulae(value: js.Array[js.Any]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulaeUndefined: Self = StObject.set(x, "formulae", js.undefined)

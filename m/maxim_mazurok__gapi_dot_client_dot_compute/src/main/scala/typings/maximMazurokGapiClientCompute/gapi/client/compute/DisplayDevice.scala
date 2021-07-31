@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayDevice extends StObject {
   
   /** Defines whether the instance has Display enabled. */
-  var enableDisplay: js.UndefOr[Boolean] = js.native
+  var enableDisplay: js.UndefOr[Boolean] = js.undefined
 }
 object DisplayDevice {
   

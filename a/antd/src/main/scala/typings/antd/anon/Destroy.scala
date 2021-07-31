@@ -3,15 +3,13 @@ package typings.antd.anon
 import typings.antd.confirmMod.ConfigUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destroy extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def update(configUpdate: ConfigUpdate): Unit = js.native
+  def update(configUpdate: ConfigUpdate): Unit
 }
 object Destroy {
   

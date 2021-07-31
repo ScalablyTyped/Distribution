@@ -3,15 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductId extends StObject {
   
-  var productId: integer = js.native
+  var productId: integer
   
-  var vendorId: integer = js.native
+  var vendorId: integer
 }
 object ProductId {
   

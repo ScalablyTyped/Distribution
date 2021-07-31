@@ -5,27 +5,25 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipProps extends StObject {
   
-  val bottom: js.UndefOr[Boolean] = js.native
+  val bottom: js.UndefOr[Boolean] = js.undefined
   
-  val children: ReactNode = js.native
+  val children: ReactNode
   
-  val contents: ReactElement = js.native
+  val contents: ReactElement
   
-  val offset: js.UndefOr[Double] = js.native
+  val offset: js.UndefOr[Double] = js.undefined
   
-  val persistent: js.UndefOr[Boolean] = js.native
+  val persistent: js.UndefOr[Boolean] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val top: js.UndefOr[Boolean] = js.native
+  val top: js.UndefOr[Boolean] = js.undefined
   
-  val width: js.UndefOr[Double | String] = js.native
+  val width: js.UndefOr[Double | String] = js.undefined
 }
 object TooltipProps {
   

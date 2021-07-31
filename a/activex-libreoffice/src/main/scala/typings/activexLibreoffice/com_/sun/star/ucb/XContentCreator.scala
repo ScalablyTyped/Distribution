@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,21 +19,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCommandProcessor
   * @version 1.0
   */
-@js.native
-trait XContentCreator extends XInterface {
+trait XContentCreator
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new content of given type.
     * @param Info the content information.
     * @returns the new content, if operation was successful.
     */
-  def createNewContent(Info: ContentInfo): XContent = js.native
+  def createNewContent(Info: ContentInfo): XContent
   
   /**
     * returns a list with information about the creatable contents.
     * @returns the list with information about the creatable contents.
     */
-  def queryCreatableContentsInfo(): SafeArray[ContentInfo] = js.native
+  def queryCreatableContentsInfo(): SafeArray[ContentInfo]
 }
 object XContentCreator {
   

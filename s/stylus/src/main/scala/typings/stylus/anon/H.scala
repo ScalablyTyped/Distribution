@@ -2,27 +2,25 @@ package typings.stylus.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait H extends StObject {
   
-  var __type: String = js.native
+  var __type: String
   
-  var a: Double = js.native
+  var a: Double
   
-  var column: Double = js.native
+  var column: Double
   
-  var filename: String = js.native
+  var filename: String
   
-  var h: Double = js.native
+  var h: Double
   
-  var l: Double = js.native
+  var l: Double
   
-  var lineno: Double = js.native
+  var lineno: Double
   
-  var s: Double = js.native
+  var s: Double
 }
 object H {
   

@@ -2,15 +2,13 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Radius extends StObject {
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var segments: js.UndefOr[Double] = js.native
+  var segments: js.UndefOr[Double] = js.undefined
 }
 object Radius {
   

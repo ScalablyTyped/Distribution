@@ -2,15 +2,13 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Axis extends StObject {
   
-  var axis: typings.storybookUi.draggersMod.Axis = js.native
+  var axis: typings.storybookUi.draggersMod.Axis
   
-  var isDragging: Boolean = js.native
+  var isDragging: Boolean
 }
 object Axis {
   

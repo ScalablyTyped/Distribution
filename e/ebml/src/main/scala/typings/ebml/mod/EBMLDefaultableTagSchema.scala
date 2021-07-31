@@ -2,13 +2,13 @@ package typings.ebml.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EBMLDefaultableTagSchema extends EBMLTagSchemaBase {
+trait EBMLDefaultableTagSchema
+  extends StObject
+     with EBMLTagSchemaBase {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
 }
 object EBMLDefaultableTagSchema {
   

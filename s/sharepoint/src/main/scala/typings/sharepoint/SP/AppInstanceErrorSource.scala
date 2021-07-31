@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,26 +11,42 @@ sealed trait AppInstanceErrorSource extends StObject
 object AppInstanceErrorSource extends StObject {
   
   @js.native
-  sealed trait appWeb extends AppInstanceErrorSource
+  sealed trait appWeb
+    extends StObject
+       with AppInstanceErrorSource
   
   @js.native
-  sealed trait common extends AppInstanceErrorSource
+  sealed trait common
+    extends StObject
+       with AppInstanceErrorSource
   
   @js.native
-  sealed trait database extends AppInstanceErrorSource
+  sealed trait database
+    extends StObject
+       with AppInstanceErrorSource
   
   @js.native
-  sealed trait eventCallouts extends AppInstanceErrorSource
+  sealed trait eventCallouts
+    extends StObject
+       with AppInstanceErrorSource
   
   @js.native
-  sealed trait finalization extends AppInstanceErrorSource
+  sealed trait finalization
+    extends StObject
+       with AppInstanceErrorSource
   
   @js.native
-  sealed trait officeExtension extends AppInstanceErrorSource
+  sealed trait officeExtension
+    extends StObject
+       with AppInstanceErrorSource
   
   @js.native
-  sealed trait parentWeb extends AppInstanceErrorSource
+  sealed trait parentWeb
+    extends StObject
+       with AppInstanceErrorSource
   
   @js.native
-  sealed trait remoteWebSite extends AppInstanceErrorSource
+  sealed trait remoteWebSite
+    extends StObject
+       with AppInstanceErrorSource
 }

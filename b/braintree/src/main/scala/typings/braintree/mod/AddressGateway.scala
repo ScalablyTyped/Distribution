@@ -2,19 +2,17 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressGateway extends StObject {
   
-  def create(request: AddressCreateRequest): js.Promise[ValidatedResponse[Address]] = js.native
+  def create(request: AddressCreateRequest): js.Promise[ValidatedResponse[Address]]
   
-  def delete(customerId: String, addressId: String): js.Promise[Unit] = js.native
+  def delete(customerId: String, addressId: String): js.Promise[Unit]
   
-  def find(customerId: String, addressId: String): js.Promise[Address] = js.native
+  def find(customerId: String, addressId: String): js.Promise[Address]
   
-  def update(customerId: String, addressId: String, updates: AddressUpdateRequest): js.Promise[ValidatedResponse[Address]] = js.native
+  def update(customerId: String, addressId: String, updates: AddressUpdateRequest): js.Promise[ValidatedResponse[Address]]
 }
 object AddressGateway {
   

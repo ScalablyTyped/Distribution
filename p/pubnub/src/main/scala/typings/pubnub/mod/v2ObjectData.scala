@@ -2,19 +2,17 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait v2ObjectData[Custom /* <: ObjectCustom */] extends StObject {
   
-  var custom: js.UndefOr[Custom | Null] = js.native
+  var custom: js.UndefOr[Custom | Null] = js.undefined
   
-  var eTag: String = js.native
+  var eTag: String
   
-  var id: String = js.native
+  var id: String
   
-  var updated: String = js.native
+  var updated: String
 }
 object v2ObjectData {
   
@@ -25,7 +23,7 @@ object v2ObjectData {
   }
   
   @scala.inline
-  implicit class v2ObjectDataMutableBuilder[Self <: v2ObjectData[_], Custom /* <: ObjectCustom */] (val x: Self with v2ObjectData[Custom]) extends AnyVal {
+  implicit class v2ObjectDataMutableBuilder[Self <: v2ObjectData[?], Custom /* <: ObjectCustom */] (val x: Self & v2ObjectData[Custom]) extends AnyVal {
     
     @scala.inline
     def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])

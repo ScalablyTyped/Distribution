@@ -2,47 +2,47 @@ package typings.fmWebsync.fm.websync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait subscribeConfig extends baseRequestConfig {
+trait subscribeConfig
+  extends StObject
+     with baseRequestConfig {
   
   /**
     * The channel to which the client should be subscribed. Must start with a forward slash (/). Overrides channels.
     */
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
   /**
     * The channels to which the client should be subscribed. Each must start with a forward slash (/). Overrides channel.
     */
-  var channels: js.UndefOr[js.Array[String]] = js.native
+  var channels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The callback to invoke after onSuccess or onFailure. See subscribeCompleteArgs for callback argument details.
     */
-  var onComplete: js.UndefOr[js.Function1[/* args */ subscribeCompleteArgs, Unit]] = js.native
+  var onComplete: js.UndefOr[js.Function1[/* args */ subscribeCompleteArgs, Unit]] = js.undefined
   
   /**
     * (OptionalThe callback to invoke if the subscribe fails. See subscribeFailureArgs for callback argument details.
     */
-  var onFailure: js.UndefOr[js.Function1[/* args */ subscribeFailureArgs, Unit]] = js.native
+  var onFailure: js.UndefOr[js.Function1[/* args */ subscribeFailureArgs, Unit]] = js.undefined
   
   /**
     * The callback to invoke when data is received on the channel(s). See receiveArgs for callback argument details.
     */
-  var onReceive: js.UndefOr[js.Function1[/* args */ receiveArgs, Unit]] = js.native
+  var onReceive: js.UndefOr[js.Function1[/* args */ receiveArgs, Unit]] = js.undefined
   
   /**
     * Subscribers extension. The callback to invoke when a subscribers change notification is received (i.e. when a client subscribes to or unsubscribes from the channel(s)).
     * The current subscribe request will trigger this callback. See subscribersChangeArgs for callback argument details.
     */
-  var onSubscribersChange: js.UndefOr[js.Function1[/* args */ subscribersChangeArgs, Unit]] = js.native
+  var onSubscribersChange: js.UndefOr[js.Function1[/* args */ subscribersChangeArgs, Unit]] = js.undefined
   
   /**
     * The callback to invoke if the subscribe succeeds. See subscribeSuccessArgs for callback argument details.
     */
-  var onSuccess: js.UndefOr[js.Function1[/* args */ subscribeSuccessArgs, Unit]] = js.native
+  var onSuccess: js.UndefOr[js.Function1[/* args */ subscribeSuccessArgs, Unit]] = js.undefined
 }
 object subscribeConfig {
   

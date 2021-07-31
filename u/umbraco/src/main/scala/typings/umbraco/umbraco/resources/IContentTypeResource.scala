@@ -3,7 +3,6 @@ package typings.umbraco.umbraco.resources
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @name umbraco.resources.contentTypeResource
   * @description Loads in data for content types
   **/
-@js.native
 trait IContentTypeResource extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait IContentTypeResource extends StObject {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getAllPropertyTypeAliases(): IPromise[IResourcePromise] = js.native
+  def getAllPropertyTypeAliases(): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -46,7 +44,7 @@ trait IContentTypeResource extends StObject {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getAllowedTypes(contentId: Double): IPromise[IResourcePromise] = js.native
+  def getAllowedTypes(contentId: Double): IPromise[IResourcePromise]
 }
 object IContentTypeResource {
   

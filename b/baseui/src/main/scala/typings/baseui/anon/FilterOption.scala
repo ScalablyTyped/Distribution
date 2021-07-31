@@ -6,27 +6,25 @@ import typings.baseui.baseuiStrings.start
 import typings.baseui.baseuiStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterOption extends StObject {
   
   var filterOption: js.UndefOr[
     js.Function2[/* option */ typings.baseui.selectMod.Option, /* filterValue */ String, Boolean]
-  ] = js.native
+  ] = js.undefined
   
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
-  var labelKey: js.UndefOr[String] = js.native
+  var labelKey: js.UndefOr[String] = js.undefined
   
-  var matchPos: js.UndefOr[any | start] = js.native
+  var matchPos: js.UndefOr[any | start] = js.undefined
   
-  var matchProp: js.UndefOr[any | label | value] = js.native
+  var matchProp: js.UndefOr[any | label | value] = js.undefined
   
-  var trimFilter: js.UndefOr[Boolean] = js.native
+  var trimFilter: js.UndefOr[Boolean] = js.undefined
   
-  var valueKey: js.UndefOr[String] = js.native
+  var valueKey: js.UndefOr[String] = js.undefined
 }
 object FilterOption {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergeTableCellsRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait MergeTableCellsRequest extends StObject {
     * upper-left cell of the range when the content direction is left to right, and the upper-right cell of the range otherwise. If the range is non-rectangular (which can occur in some
     * cases where the range covers cells that are already merged or where the table is non-rectangular), a 400 bad request error is returned.
     */
-  var tableRange: js.UndefOr[TableRange] = js.native
+  var tableRange: js.UndefOr[TableRange] = js.undefined
 }
 object MergeTableCellsRequest {
   

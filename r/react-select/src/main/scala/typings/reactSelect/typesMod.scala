@@ -10,21 +10,19 @@ import typings.reactSelect.selectMod.Props
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ActionMeta[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var action: ActionTypes = js.native
+    var action: ActionTypes
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var option: js.UndefOr[OptionType] = js.native
+    var option: js.UndefOr[OptionType] = js.undefined
     
-    var removedValue: js.UndefOr[OptionType] = js.native
+    var removedValue: js.UndefOr[OptionType] = js.undefined
   }
   object ActionMeta {
     
@@ -35,7 +33,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class ActionMetaMutableBuilder[Self <: ActionMeta[_], OptionType /* <: OptionTypeBase */] (val x: Self with ActionMeta[OptionType]) extends AnyVal {
+    implicit class ActionMetaMutableBuilder[Self <: ActionMeta[?], OptionType /* <: OptionTypeBase */] (val x: Self & ActionMeta[OptionType]) extends AnyVal {
       
       @scala.inline
       def setAction(value: ActionTypes): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
@@ -106,8 +104,9 @@ object typesMod {
     def clearValue(): Unit = js.native
     
     def cx(): String = js.native
-    def cx(state: js.UndefOr[ClassNamesState], className: String): String = js.native
+    def cx(state: Unit, className: String): String = js.native
     def cx(state: ClassNamesState): String = js.native
+    def cx(state: ClassNamesState, className: String): String = js.native
     
     /*
       Get the styles of a particular part of the select. Pass in the name of the
@@ -163,11 +162,11 @@ object typesMod {
   
   type FocusEventHandler = js.Function1[/* event */ FocusEvent[HTMLElement], Unit]
   
-  @js.native
   trait GroupType[OptionType /* <: OptionTypeBase */]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var options: OptionsType[OptionType] = js.native
+    var options: OptionsType[OptionType]
   }
   object GroupType {
     
@@ -178,7 +177,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class GroupTypeMutableBuilder[Self <: GroupType[_], OptionType /* <: OptionTypeBase */] (val x: Self with GroupType[OptionType]) extends AnyVal {
+    implicit class GroupTypeMutableBuilder[Self <: GroupType[?], OptionType /* <: OptionTypeBase */] (val x: Self & GroupType[OptionType]) extends AnyVal {
       
       @scala.inline
       def setOptions(value: OptionsType[OptionType]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
@@ -192,10 +191,9 @@ object typesMod {
   
   type InnerRef = Ref[js.Any]
   
-  @js.native
   trait InputActionMeta extends StObject {
     
-    var action: InputActionTypes = js.native
+    var action: InputActionTypes
   }
   object InputActionMeta {
     
@@ -271,32 +269,29 @@ object typesMod {
   
   type MouseEventHandler = js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
   
-  /* Inlined react-select.react-select/src/types.PropsWithInnerRef & {  data :any,   id :number,   index :number,   isDisabled :boolean,   isFocused :boolean,   isSelected :boolean,   label :string,   onClick :react-select.react-select/src/types.MouseEventHandler,   onMouseOver :react-select.react-select/src/types.MouseEventHandler,   value :any} */
-  @js.native
-  trait OptionProps extends StObject {
+  trait OptionProps
+    extends StObject
+       with PropsWithInnerRef {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var id: Double = js.native
+    var id: Double
     
-    var index: Double = js.native
+    var index: Double
     
-    /** The inner reference. */
-    var innerRef: Ref[_] = js.native
+    var isDisabled: Boolean
     
-    var isDisabled: Boolean = js.native
+    var isFocused: Boolean
     
-    var isFocused: Boolean = js.native
+    var isSelected: Boolean
     
-    var isSelected: Boolean = js.native
+    var label: String
     
-    var label: String = js.native
+    var onClick: MouseEventHandler
     
-    var onClick: MouseEventHandler = js.native
+    var onMouseOver: MouseEventHandler
     
-    var onMouseOver: MouseEventHandler = js.native
-    
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object OptionProps {
     
@@ -313,7 +308,7 @@ object typesMod {
       onMouseOver: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
       value: js.Any
     ): OptionProps = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isDisabled = isDisabled.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), onMouseOver = js.Any.fromFunction1(onMouseOver), value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isDisabled = isDisabled.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), onMouseOver = js.Any.fromFunction1(onMouseOver), value = value.asInstanceOf[js.Any], innerRef = null)
       __obj.asInstanceOf[OptionProps]
     }
     
@@ -328,15 +323,6 @@ object typesMod {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInnerRef(value: Ref[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
       @scala.inline
       def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
@@ -365,17 +351,16 @@ object typesMod {
   
   type OptionsType[OptionType /* <: OptionTypeBase */] = js.Array[OptionType]
   
-  @js.native
   trait PropsWithInnerRef extends StObject {
     
     /** The inner reference. */
-    var innerRef: Ref[_] = js.native
+    var innerRef: Ref[js.Any]
   }
   object PropsWithInnerRef {
     
     @scala.inline
     def apply(): PropsWithInnerRef = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(innerRef = null)
       __obj.asInstanceOf[PropsWithInnerRef]
     }
     
@@ -383,17 +368,16 @@ object typesMod {
     implicit class PropsWithInnerRefMutableBuilder[Self <: PropsWithInnerRef] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setInnerRef(value: Ref[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
     }
   }
   
-  @js.native
   trait PropsWithStyles extends StObject {
     
     /*
@@ -401,9 +385,9 @@ object typesMod {
       property as the first argument, and the current props as the second argument.
       See the `styles` object for the properties available.
       */
-    def getStyles(name: String, props: js.Any): js.Object = js.native
+    def getStyles(name: String, props: js.Any): js.Object
     
-    var theme: Theme = js.native
+    var theme: Theme
   }
   object PropsWithStyles {
     
@@ -424,14 +408,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Theme extends StObject {
     
-    var borderRadius: Double = js.native
+    var borderRadius: Double
     
-    var colors: StringDictionary[String] = js.native
+    var colors: StringDictionary[String]
     
-    var spacing: ThemeSpacing = js.native
+    var spacing: ThemeSpacing
   }
   object Theme {
     
@@ -455,14 +438,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ThemeSpacing extends StObject {
     
-    var baseUnit: Double = js.native
+    var baseUnit: Double
     
-    var controlHeight: Double = js.native
+    var controlHeight: Double
     
-    var menuGutter: Double = js.native
+    var menuGutter: Double
   }
   object ThemeSpacing {
     

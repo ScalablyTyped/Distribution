@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IamPolicyAnalysisState extends StObject {
   
   /** The human-readable description of the cause of failure. */
-  var cause: js.UndefOr[String] = js.native
+  var cause: js.UndefOr[String] = js.undefined
   
   /**
     * The Google standard error code that best describes the state. For example: - OK means the analysis on this entity has been successfully finished; - PERMISSION_DENIED means an access
     * denied error is encountered; - DEADLINE_EXCEEDED means the analysis on this entity hasn't been started in time;
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
 }
 object IamPolicyAnalysisState {
   

@@ -2,26 +2,24 @@ package typings.reactNativeMauron85BackgroundGeolocation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationOptions extends StObject {
   
   /**
     * If true and if the device is able to provide a more accurate position, it will do so.
     */
-  var enableHighAccuracy: js.UndefOr[Boolean] = js.native
+  var enableHighAccuracy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum age in milliseconds of a possible cached location that is acceptable to return.
     */
-  var maximumAge: js.UndefOr[Double] = js.native
+  var maximumAge: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum time in milliseconds device will wait for location.
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object LocationOptions {
   

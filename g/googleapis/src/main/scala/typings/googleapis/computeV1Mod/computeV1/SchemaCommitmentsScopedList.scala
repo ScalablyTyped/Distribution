@@ -3,22 +3,20 @@ package typings.googleapis.computeV1Mod.computeV1
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCommitmentsScopedList extends StObject {
   
   /**
     * [Output Only] A list of commitments contained in this scope.
     */
-  var commitments: js.UndefOr[js.Array[SchemaCommitment]] = js.native
+  var commitments: js.UndefOr[js.Array[SchemaCommitment]] = js.undefined
   
   /**
     * [Output Only] Informational warning which replaces the list of
     * commitments when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaCommitmentsScopedList {
   

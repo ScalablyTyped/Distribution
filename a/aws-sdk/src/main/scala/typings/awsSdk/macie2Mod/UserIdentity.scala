@@ -2,46 +2,44 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserIdentity extends StObject {
   
   /**
     * If the action was performed with temporary security credentials that were obtained using the AssumeRole operation of the AWS Security Token Service (AWS STS) API, the identifiers, session context, and other details about the identity.
     */
-  var assumedRole: js.UndefOr[AssumedRole] = js.native
+  var assumedRole: js.UndefOr[AssumedRole] = js.undefined
   
   /**
     * If the action was performed using the credentials for another AWS account, the details of that account.
     */
-  var awsAccount: js.UndefOr[AwsAccount] = js.native
+  var awsAccount: js.UndefOr[AwsAccount] = js.undefined
   
   /**
     * If the action was performed by an AWS account that belongs to an AWS service, the name of the service.
     */
-  var awsService: js.UndefOr[AwsService] = js.native
+  var awsService: js.UndefOr[AwsService] = js.undefined
   
   /**
     * If the action was performed with temporary security credentials that were obtained using the GetFederationToken operation of the AWS Security Token Service (AWS STS) API, the identifiers, session context, and other details about the identity.
     */
-  var federatedUser: js.UndefOr[FederatedUser] = js.native
+  var federatedUser: js.UndefOr[FederatedUser] = js.undefined
   
   /**
     * If the action was performed using the credentials for an AWS Identity and Access Management (IAM) user, the name and other details about the user.
     */
-  var iamUser: js.UndefOr[IamUser] = js.native
+  var iamUser: js.UndefOr[IamUser] = js.undefined
   
   /**
     * If the action was performed using the credentials for your AWS account, the details of your account.
     */
-  var root: js.UndefOr[UserIdentityRoot] = js.native
+  var root: js.UndefOr[UserIdentityRoot] = js.undefined
   
   /**
     * The type of entity that performed the action.
     */
-  var `type`: js.UndefOr[UserIdentityType] = js.native
+  var `type`: js.UndefOr[UserIdentityType] = js.undefined
 }
 object UserIdentity {
   

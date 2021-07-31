@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,15 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * After creation the service adds a listener of requested type ( close, terminate and/or etc. ) to the controlled object and let the listener throw
   * related veto exception until the service is disposed.
   */
-@js.native
-trait InstanceLocker extends XComponent {
+trait InstanceLocker
+  extends StObject
+     with XComponent {
   
   /**
     * is used to initialize the object on it's creation.
     * @param xInstance the controlled object. Must implement the related to the requested actions broadcaster interface.
     * @param nActions specifies the actions that should be done ( prevent closing, prevent termination and/or etc. ). It must not be empty and can currently c
     */
-  def InstanceLockerCtor1(xInstance: XInterface, nActions: Double): Unit = js.native
+  def InstanceLockerCtor1(xInstance: XInterface, nActions: Double): Unit
   
   /**
     * is used to initialize the object on it's creation.
@@ -31,7 +31,7 @@ trait InstanceLocker extends XComponent {
     * @param nActions specifies the actions that should be done ( prevent closing, prevent termination and/or etc. ). It must not be empty and can currently c
     * @param xApprove The object implementing {@link XActionsApproval} interface. If this parameter is an empty reference the object will proceed with the spe
     */
-  def InstanceLockerCtor2(xInstance: XInterface, nActions: Double, xApprove: XActionsApproval): Unit = js.native
+  def InstanceLockerCtor2(xInstance: XInterface, nActions: Double, xApprove: XActionsApproval): Unit
 }
 object InstanceLocker {
   

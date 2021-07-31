@@ -3,20 +3,18 @@ package typings.wechatMiniprogram.WechatMiniprogram.Component
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceProperties extends StObject {
   
   /** 节点dataset */
-  var dataset: Record[String, String] = js.native
+  var dataset: Record[String, String]
   
   /** 节点id */
-  var id: String = js.native
+  var id: String
   
   /** 组件的文件路径 */
-  var is: String = js.native
+  var is: String
 }
 object InstanceProperties {
   

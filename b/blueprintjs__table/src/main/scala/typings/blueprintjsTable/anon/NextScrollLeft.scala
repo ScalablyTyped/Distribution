@@ -2,15 +2,13 @@ package typings.blueprintjsTable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NextScrollLeft extends StObject {
   
-  var nextScrollLeft: Double = js.native
+  var nextScrollLeft: Double
   
-  var nextScrollTop: Double = js.native
+  var nextScrollTop: Double
 }
 object NextScrollLeft {
   

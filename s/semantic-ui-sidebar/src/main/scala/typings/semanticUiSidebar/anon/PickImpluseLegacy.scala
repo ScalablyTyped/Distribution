@@ -3,14 +3,12 @@ package typings.semanticUiSidebar.anon
 import typings.semanticUiSidebar.semanticUiSidebarStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl, 'useLegacy'> */
-@js.native
 trait PickImpluseLegacy extends StObject {
   
-  var useLegacy: auto | Boolean = js.native
+  var useLegacy: auto | Boolean
 }
 object PickImpluseLegacy {
   

@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeUser extends Change {
+trait ChangeUser
+  extends StObject
+     with Change {
   
   def get_activate(): Boolean = js.native
   

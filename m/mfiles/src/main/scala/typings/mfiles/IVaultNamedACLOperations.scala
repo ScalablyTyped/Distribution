@@ -3,50 +3,48 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFNamedACLType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultNamedACLOperations extends StObject {
   
-  def AddNamedACLAdmin(NamedACLAdmin: INamedACLAdmin): INamedACLAdmin = js.native
+  def AddNamedACLAdmin(NamedACLAdmin: INamedACLAdmin): INamedACLAdmin
   
   def GetMatchingNamedACLForAccessControlList(
     AccessControlList: IAccessControlList,
     ExplicitLinkOnly: Boolean,
     ActiveAccessControlComponentsOnly: Boolean,
     RefreshFromServer: Boolean
-  ): INamedACL = js.native
+  ): INamedACL
   
   def GetMatchingNamedACLForAccessControlListComponent(
     AccessControlListComponent: IAccessControlListComponent,
     ExplicitLinkOnly: Boolean,
     RefreshFromServer: Boolean
-  ): INamedACL = js.native
+  ): INamedACL
   
-  def GetNamedACL(NamedACLID: Double): INamedACL = js.native
+  def GetNamedACL(NamedACLID: Double): INamedACL
   
-  def GetNamedACLAdmin(NamedACLID: Double): INamedACLAdmin = js.native
+  def GetNamedACLAdmin(NamedACLID: Double): INamedACLAdmin
   
-  def GetNamedACLIDByAlias(Alias: String): Double = js.native
+  def GetNamedACLIDByAlias(Alias: String): Double
   
-  def GetNamedACLIDByGUID(NamedACLGUID: String): Double = js.native
+  def GetNamedACLIDByGUID(NamedACLGUID: String): Double
   
-  def GetNamedACLWithRefresh(NamedACLID: Double, RefreshFromServer: Boolean): INamedACL = js.native
+  def GetNamedACLWithRefresh(NamedACLID: Double, RefreshFromServer: Boolean): INamedACL
   
-  def GetNamedACLs(): INamedACLs = js.native
+  def GetNamedACLs(): INamedACLs
   
-  def GetNamedACLsByTypeAdmin(Type: MFNamedACLType): INamedACLsAdmin = js.native
+  def GetNamedACLsByTypeAdmin(Type: MFNamedACLType): INamedACLsAdmin
   
-  def GetNamedACLsWithRefresh(RefreshFromServer: Boolean): INamedACLs = js.native
+  def GetNamedACLsWithRefresh(RefreshFromServer: Boolean): INamedACLs
   
-  def IsNamedACLUsedInAutomaticPermissionsAdmin(NamedACLID: Double): Boolean = js.native
+  def IsNamedACLUsedInAutomaticPermissionsAdmin(NamedACLID: Double): Boolean
   
-  def RemoveNamedACLWithPropagationAdmin(NamedACLID: Double, AllowPropagation: Boolean): Unit = js.native
+  def RemoveNamedACLWithPropagationAdmin(NamedACLID: Double, AllowPropagation: Boolean): Unit
   
-  def UpdateNamedACLAdmin(NamedACLAdmin: INamedACLAdmin): Unit = js.native
+  def UpdateNamedACLAdmin(NamedACLAdmin: INamedACLAdmin): Unit
   
-  def UpdateNamedACLWithPropagationAdmin(NamedACLAdmin: INamedACLAdmin, MaintainLinks: Boolean, AllowPropagation: Boolean): Unit = js.native
+  def UpdateNamedACLWithPropagationAdmin(NamedACLAdmin: INamedACLAdmin, MaintainLinks: Boolean, AllowPropagation: Boolean): Unit
 }
 object IVaultNamedACLOperations {
   

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitImportGitSource extends StObject {
   
   /**
     * Tells if this is a sync request or not
     */
-  var overwrite: Boolean = js.native
+  var overwrite: Boolean
   
   /**
     * Url for the source repo
     */
-  var url: String = js.native
+  var url: String
 }
 object GitImportGitSource {
   

@@ -2,15 +2,13 @@ package typings.reactEmailEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileUploadDoneData extends StObject {
   
-  val progress: Double = js.native
+  val progress: Double
   
-  val url: js.UndefOr[String] = js.native
+  val url: js.UndefOr[String] = js.undefined
 }
 object FileUploadDoneData {
   

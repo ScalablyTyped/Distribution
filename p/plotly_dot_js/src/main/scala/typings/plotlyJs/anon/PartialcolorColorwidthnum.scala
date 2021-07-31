@@ -2,20 +2,18 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  color :plotly.js.plotly.js.Color,   width :number,   outliercolor :plotly.js.plotly.js.Color,   outlierwidth :number}> */
-@js.native
 trait PartialcolorColorwidthnum extends StObject {
   
-  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var outliercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var outliercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var outlierwidth: js.UndefOr[Double] = js.native
+  var outlierwidth: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PartialcolorColorwidthnum {
   

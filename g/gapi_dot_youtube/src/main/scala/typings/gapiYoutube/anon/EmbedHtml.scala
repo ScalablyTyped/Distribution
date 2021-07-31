@@ -2,16 +2,14 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmbedHtml extends StObject {
   
   /**
     * An <iframe> tag that embeds a player that will play the video.
     */
-  var embedHtml: String = js.native
+  var embedHtml: String
 }
 object EmbedHtml {
   

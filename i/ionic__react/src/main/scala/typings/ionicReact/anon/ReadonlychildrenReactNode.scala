@@ -3,14 +3,12 @@ package typings.ionicReact.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  children :react.react.ReactNode | undefined}> */
-@js.native
 trait ReadonlychildrenReactNode extends StObject {
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
 }
 object ReadonlychildrenReactNode {
   

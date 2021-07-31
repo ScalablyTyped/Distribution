@@ -11,46 +11,36 @@ import typings.tuyaPanelKit.routersTypesMod.NavigationState
 import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.routersTypesMod.PartialRoute
 import typings.tuyaPanelKit.routersTypesMod.Route
-import typings.tuyaPanelKit.tuyaPanelKitBooleans.`false`
-import typings.tuyaPanelKit.tuyaPanelKitStrings.GO_BACK
-import typings.tuyaPanelKit.tuyaPanelKitStrings.NAVIGATE
-import typings.tuyaPanelKit.tuyaPanelKitStrings.RESET
-import typings.tuyaPanelKit.tuyaPanelKitStrings.SET_PARAMS
 import typings.tuyaPanelKit.tuyaPanelKitStrings.key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonActionsMod {
   
-  @JSImport("tuya-panel-kit/@react-navigation/routers/CommonActions", "goBack")
+  @JSImport("tuya-panel-kit/@react-navigation/routers/CommonActions", JSImport.Namespace)
   @js.native
-  def goBack(): Action = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tuya-panel-kit/@react-navigation/routers/CommonActions", "navigate")
-  @js.native
-  def navigate(name: String): Action = js.native
-  @JSImport("tuya-panel-kit/@react-navigation/routers/CommonActions", "navigate")
-  @js.native
-  def navigate(name: String, params: js.Object): Action = js.native
-  @JSImport("tuya-panel-kit/@react-navigation/routers/CommonActions", "navigate")
-  @js.native
-  def navigate(route: Key): Action = js.native
-  @JSImport("tuya-panel-kit/@react-navigation/routers/CommonActions", "navigate")
-  @js.native
-  def navigate(route: Params): Action = js.native
+  @scala.inline
+  def goBack(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[Action]
   
-  @JSImport("tuya-panel-kit/@react-navigation/routers/CommonActions", "reset")
-  @js.native
-  def reset(): Action = js.native
-  @JSImport("tuya-panel-kit/@react-navigation/routers/CommonActions", "reset")
-  @js.native
-  def reset(state: ResetState): Action = js.native
+  @scala.inline
+  def navigate(name: String): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any]).asInstanceOf[Action]
+  @scala.inline
+  def navigate(name: String, params: js.Object): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Action]
+  @scala.inline
+  def navigate(route: Key): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
+  @scala.inline
+  def navigate(route: Params): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
   
-  @JSImport("tuya-panel-kit/@react-navigation/routers/CommonActions", "setParams")
-  @js.native
-  def setParams(params: js.Object): Action = js.native
+  @scala.inline
+  def reset(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Action]
+  @scala.inline
+  def reset(state: ResetState): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(state.asInstanceOf[js.Any]).asInstanceOf[Action]
+  
+  @scala.inline
+  def setParams(params: js.Object): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("setParams")(params.asInstanceOf[js.Any]).asInstanceOf[Action]
   
   /* Rewritten from type alias, can be one of: 
     - typings.tuyaPanelKit.anon.Source
@@ -62,30 +52,30 @@ object commonActionsMod {
   object Action {
     
     @scala.inline
-    def Payload(payload: Merge | KeyMerge, `type`: NAVIGATE): typings.tuyaPanelKit.anon.Payload = {
+    def Payload(payload: Merge | KeyMerge): typings.tuyaPanelKit.anon.Payload = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("NAVIGATE")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.Payload]
     }
     
     @scala.inline
-    def PayloadSourceTarget(`type`: RESET): typings.tuyaPanelKit.anon.PayloadSourceTarget = {
+    def PayloadSourceTarget(): typings.tuyaPanelKit.anon.PayloadSourceTarget = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("RESET")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.PayloadSourceTarget]
     }
     
     @scala.inline
-    def Source(`type`: GO_BACK): typings.tuyaPanelKit.anon.Source = {
+    def Source(): typings.tuyaPanelKit.anon.Source = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("GO_BACK")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.Source]
     }
     
     @scala.inline
-    def Type(payload: `0`, `type`: SET_PARAMS): typings.tuyaPanelKit.anon.Type = {
+    def Type(payload: `0`): typings.tuyaPanelKit.anon.Type = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("SET_PARAMS")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.Type]
     }
   }
@@ -112,10 +102,9 @@ object commonActionsMod {
           ]
         ],
       routes: js.Array[Omit[Route[String, js.UndefOr[js.Object]], key]],
-      stale: `false`,
       `type`: String
     ): typings.tuyaPanelKit.anon.OmitNavigationStateParamL = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = stale.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.OmitNavigationStateParamL]
     }

@@ -3,21 +3,19 @@ package typings.braintree.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreditCardGateway extends StObject {
   
-  def create(request: CreditCardCreateRequest): js.Promise[ValidatedResponse[CreditCard]] = js.native
+  def create(request: CreditCardCreateRequest): js.Promise[ValidatedResponse[CreditCard]]
   
-  def delete(creditCardToken: String): js.Promise[Unit] = js.native
+  def delete(creditCardToken: String): js.Promise[Unit]
   
-  def expiringBetween(startDate: Date, endDate: Date): js.Promise[CreditCard] = js.native
+  def expiringBetween(startDate: Date, endDate: Date): js.Promise[CreditCard]
   
-  def find(creditCardToken: String): js.Promise[CreditCard] = js.native
+  def find(creditCardToken: String): js.Promise[CreditCard]
   
-  def update(creditCardToken: String, updates: CreditCardUpdateRequest): js.Promise[ValidatedResponse[CreditCard]] = js.native
+  def update(creditCardToken: String, updates: CreditCardUpdateRequest): js.Promise[ValidatedResponse[CreditCard]]
 }
 object CreditCardGateway {
   

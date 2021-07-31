@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.BatchEditChangesCanceling event.
   */
-@js.native
-trait ASPxClientTreeListBatchEditChangesCancelingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientTreeListBatchEditChangesCancelingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets a hashtable that maintains information about deleted cells.
     */
-  var deletedValues: js.Any = js.native
+  var deletedValues: js.Any
   
   /**
     * Gets a hashtable that maintains information about inserted cells.
     */
-  var insertedValues: js.Any = js.native
+  var insertedValues: js.Any
   
   /**
     * Gets a hashtable that maintains information about updated cells.
     */
-  var updatedValues: js.Any = js.native
+  var updatedValues: js.Any
 }
 object ASPxClientTreeListBatchEditChangesCancelingEventArgs {
   

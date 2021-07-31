@@ -3,41 +3,39 @@ package typings.azdata.mod
 import typings.azdata.mod.connection.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundOperationInfo extends StObject {
   
   /**
     * Connection information
     */
-  var connection: js.UndefOr[Connection] = js.native
+  var connection: js.UndefOr[Connection] = js.undefined
   
   /**
     * Operation Description
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Operation Display Name
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * True if the operation is cancelable
     */
-  var isCancelable: Boolean = js.native
+  var isCancelable: Boolean
   
   /**
     * The actual operation to execute
     */
-  def operation(operation: BackgroundOperation): Unit = js.native
+  def operation(operation: BackgroundOperation): Unit
   
   /**
     * The operation id. A unique id will be assigned to it If not specified a
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
 }
 object BackgroundOperationInfo {
   

@@ -4,7 +4,6 @@ import typings.twilioVideo.twilioVideoNumbers.`53305`
 import typings.twilioVideo.twilioVideoStrings.`The server has reached capacity and cannot fulfill this requestDot`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-video", "TrackServerTrackCapacityReachedError")

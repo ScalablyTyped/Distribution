@@ -6,49 +6,47 @@ import typings.materialToolbar.materialToolbarStrings.scroll
 import typings.materialToolbar.typesMod.MDCToolbarEventDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCToolbarAdapter extends StObject {
     
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     @JSName("deregisterResizeHandler")
-    def deregisterResizeHandler_resize(handler: SpecificEventListener[resize]): Unit = js.native
+    def deregisterResizeHandler_resize(handler: SpecificEventListener[resize]): Unit
     
     @JSName("deregisterScrollHandler")
-    def deregisterScrollHandler_scroll(handler: SpecificEventListener[scroll]): Unit = js.native
+    def deregisterScrollHandler_scroll(handler: SpecificEventListener[scroll]): Unit
     
-    def getFirstRowElementOffsetHeight(): Double = js.native
+    def getFirstRowElementOffsetHeight(): Double
     
-    def getOffsetHeight(): Double = js.native
+    def getOffsetHeight(): Double
     
-    def getViewportScrollY(): Double = js.native
+    def getViewportScrollY(): Double
     
-    def getViewportWidth(): Double = js.native
+    def getViewportWidth(): Double
     
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
-    def notifyChange(evtData: MDCToolbarEventDetail): Unit = js.native
+    def notifyChange(evtData: MDCToolbarEventDetail): Unit
     
     @JSName("registerResizeHandler")
-    def registerResizeHandler_resize(handler: SpecificEventListener[resize]): Unit = js.native
+    def registerResizeHandler_resize(handler: SpecificEventListener[resize]): Unit
     
     @JSName("registerScrollHandler")
-    def registerScrollHandler_scroll(handler: SpecificEventListener[scroll]): Unit = js.native
+    def registerScrollHandler_scroll(handler: SpecificEventListener[scroll]): Unit
     
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
-    def setStyle(property: String, value: String): Unit = js.native
+    def setStyle(property: String, value: String): Unit
     
-    def setStyleForFixedAdjustElement(property: String, value: String): Unit = js.native
+    def setStyleForFixedAdjustElement(property: String, value: String): Unit
     
-    def setStyleForFlexibleRowElement(property: String, value: String): Unit = js.native
+    def setStyleForFlexibleRowElement(property: String, value: String): Unit
     
-    def setStyleForTitleElement(property: String, value: String): Unit = js.native
+    def setStyleForTitleElement(property: String, value: String): Unit
   }
   object MDCToolbarAdapter {
     

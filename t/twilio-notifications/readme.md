@@ -12,7 +12,7 @@ Client library for Twilio Notifications service
 | Keywords           | - |
 | # releases         | 17 |
 | # dependents       | 4 |
-| # downloads        | 2379284 |
+| # downloads        | 3154461 |
 | # stars            | 0 |
 
 ## Links

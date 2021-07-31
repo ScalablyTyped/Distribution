@@ -7,21 +7,19 @@ import typings.router5.baseMod.Params
 import typings.searchParams.encodeMod.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ErrorKey extends StObject {
     
-    var errorKey: js.UndefOr[js.Any] = js.native
+    var errorKey: js.UndefOr[js.Any] = js.undefined
     
-    var fromState: js.Any = js.native
+    var fromState: js.Any
     
-    var isCancelled: js.Any = js.native
+    var isCancelled: js.Any
     
-    var toState: js.Any = js.native
+    var toState: js.Any
   }
   object ErrorKey {
     
@@ -52,32 +50,31 @@ object anon {
   }
   
   /* Inlined std.Partial<router5.router5/dist/types/router.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var allowNotFound: js.UndefOr[Boolean] = js.native
+    var allowNotFound: js.UndefOr[Boolean] = js.undefined
     
-    var autoCleanUp: js.UndefOr[Boolean] = js.native
+    var autoCleanUp: js.UndefOr[Boolean] = js.undefined
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var defaultParams: js.UndefOr[Params] = js.native
+    var defaultParams: js.UndefOr[Params] = js.undefined
     
-    var defaultRoute: js.UndefOr[String] = js.native
+    var defaultRoute: js.UndefOr[String] = js.undefined
     
-    var queryParams: js.UndefOr[IOptions] = js.native
+    var queryParams: js.UndefOr[IOptions] = js.undefined
     
-    var queryParamsMode: js.UndefOr[QueryParamsMode] = js.native
+    var queryParamsMode: js.UndefOr[QueryParamsMode] = js.undefined
     
-    var rewritePathOnMatch: js.UndefOr[Boolean] = js.native
+    var rewritePathOnMatch: js.UndefOr[Boolean] = js.undefined
     
-    var strictTrailingSlash: js.UndefOr[Boolean] = js.native
+    var strictTrailingSlash: js.UndefOr[Boolean] = js.undefined
     
-    var strongMatching: js.UndefOr[Boolean] = js.native
+    var strongMatching: js.UndefOr[Boolean] = js.undefined
     
-    var trailingSlashMode: js.UndefOr[TrailingSlashMode] = js.native
+    var trailingSlashMode: js.UndefOr[TrailingSlashMode] = js.undefined
     
-    var urlParamsEncoding: js.UndefOr[URLParamsEncodingType] = js.native
+    var urlParamsEncoding: js.UndefOr[URLParamsEncodingType] = js.undefined
   }
   object PartialOptions {
     

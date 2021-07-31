@@ -13,7 +13,6 @@ import typings.electronPackager.electronPackagerStrings.requireAdministrator
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -41,9 +40,12 @@ object mod {
     *
     * @returns A Promise containing the paths to the newly created application bundles.
     */
+  @scala.inline
+  def apply(opts: Options): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  
   @JSImport("electron-packager", JSImport.Namespace)
   @js.native
-  def apply(opts: Options): js.Promise[js.Array[String]] = js.native
+  val ^ : js.Any = js.native
   
   type ArchOption = TargetArch | all
   
@@ -106,20 +108,19 @@ object mod {
   /**
     * Defines URL protocol schemes to be used on macOS.
     */
-  @js.native
   trait MacOSProtocol extends StObject {
     
     /**
       * The descriptive name. Maps to the `CFBundleURLName` metadata property.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * One or more protocol schemes associated with the app. For example, specifying `myapp`
       * would cause URLs such as `myapp://path` to be opened with the app. Maps to the
       * `CFBundleURLSchemes` metadata property.
       */
-    var schemes: js.Array[String] = js.native
+    var schemes: js.Array[String]
   }
   object MacOSProtocol {
     
@@ -199,7 +200,6 @@ object mod {
   }
   
   /** Options passed to the `packager()` function. */
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -207,10 +207,10 @@ object mod {
       *
       * **Note**: `afterCopy` will not be called if the [[prebuiltAsar]] option is set.
       */
-    var afterCopy: js.UndefOr[js.Array[HookFunction]] = js.native
+    var afterCopy: js.UndefOr[js.Array[HookFunction]] = js.undefined
     
     /** Functions to be called after the prebuilt Electron binary has been extracted to a temporary directory. */
-    var afterExtract: js.UndefOr[js.Array[HookFunction]] = js.native
+    var afterExtract: js.UndefOr[js.Array[HookFunction]] = js.undefined
     
     /**
       * Functions to be called after Node module pruning has been applied to the application.
@@ -218,17 +218,17 @@ object mod {
       * **Note**: None of these functions will be called if the [[prune]] option is `false` or
       * the [[prebuiltAsar]] option is set.
       */
-    var afterPrune: js.UndefOr[js.Array[HookFunction]] = js.native
+    var afterPrune: js.UndefOr[js.Array[HookFunction]] = js.undefined
     
     /** When `true`, sets both [[arch]] and [[platform]] to `all`. */
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
     /*
       * The bundle identifier to use in the application's `Info.plist`.
       *
       * @category macOS
       */
-    var appBundleId: js.UndefOr[String] = js.native
+    var appBundleId: js.UndefOr[String] = js.undefined
     
     /**
       * The application category type, as shown in the Finder via *View → Arrange by Application
@@ -241,13 +241,13 @@ object mod {
       *
       * @category macOS
       */
-    var appCategoryType: js.UndefOr[String] = js.native
+    var appCategoryType: js.UndefOr[String] = js.undefined
     
     /**
       * The human-readable copyright line for the app. Maps to the `LegalCopyright` metadata
       * property on Windows, and `NSHumanReadableCopyright` on macOS.
       */
-    var appCopyright: js.UndefOr[String] = js.native
+    var appCopyright: js.UndefOr[String] = js.undefined
     
     /**
       * The release version of the application.
@@ -257,7 +257,7 @@ object mod {
       * to the `ProductVersion` metadata property on Windows, and `CFBundleShortVersionString`
       * on macOS.
       */
-    var appVersion: js.UndefOr[String] = js.native
+    var appVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The target system architecture(s) to build for.
@@ -278,7 +278,7 @@ object mod {
       * - `arm64` _(Linux: Electron 1.8.0 and above; Windows: 6.0.8 and above; macOS: 11.0.0-beta.1 and above)_
       * - `mips64el` _(Electron 1.8.2-beta.5 to 1.8.8)_
       */
-    var arch: js.UndefOr[ArchOption | js.Array[ArchOption]] = js.native
+    var arch: js.UndefOr[ArchOption | js.Array[ArchOption]] = js.undefined
     
     /**
       * Whether to package the application's source code into an archive, using [Electron's
@@ -306,13 +306,13 @@ object mod {
       *
       * **Note:** `asar` will have no effect if the [[prebuiltAsar]] option is set.
       */
-    var asar: js.UndefOr[Boolean | CreateOptions] = js.native
+    var asar: js.UndefOr[Boolean | CreateOptions] = js.undefined
     
     /**
       * The build version of the application. Defaults to the value of the [[appVersion]] option.
       * Maps to the `FileVersion` metadata property on Windows, and `CFBundleVersion` on macOS.
       */
-    var buildVersion: js.UndefOr[String] = js.native
+    var buildVersion: js.UndefOr[String] = js.undefined
     
     /**
       * Forces support for Mojave (macOS 10.14) dark mode in your packaged app. This sets the
@@ -322,7 +322,7 @@ object mod {
       *
       * @category macOS
       */
-    var darwinDarkModeSupport: js.UndefOr[Boolean] = js.native
+    var darwinDarkModeSupport: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether symlinks should be dereferenced during the copying of the application source.
@@ -330,10 +330,10 @@ object mod {
       *
       * **Note:** `derefSymlinks` will have no effect if the [[prebuiltAsar]] option is set.
       */
-    var derefSymlinks: js.UndefOr[Boolean] = js.native
+    var derefSymlinks: js.UndefOr[Boolean] = js.undefined
     
     /** The source directory. */
-    var dir: String = js.native
+    var dir: String
     
     /**
       * If present, passes custom options to [`@electron/get`](https://npm.im/@electron/get). See
@@ -348,7 +348,7 @@ object mod {
       */
     var download: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The Electron version with which the app is built (without the leading 'v') - for example,
@@ -358,7 +358,7 @@ object mod {
       * `electron-prebuilt-compile`, or `electron-prebuilt`, defined in `package.json` in either
       * `devDependencies` or `dependencies`.
       */
-    var electronVersion: js.UndefOr[String] = js.native
+    var electronVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The local path to a directory containing Electron ZIP files for Electron Packager to unzip, instead
@@ -368,14 +368,14 @@ object mod {
       * **Note:** Setting this option prevents the [[download]] sub-options from being used, as
       * the functionality gets skipped over.
       */
-    var electronZipDir: js.UndefOr[String] = js.native
+    var electronZipDir: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the executable file, sans file extension. Defaults to the value for the [[name]]
       * option. For `darwin` or `mas` target platforms, this does not affect the name of the
       * `.app` folder - this will use the [[name]] option instead.
       */
-    var executableName: js.UndefOr[String] = js.native
+    var executableName: js.UndefOr[String] = js.undefined
     
     /**
       * When the value is a string, specifies the filename of a `plist` file. Its contents are merged
@@ -389,21 +389,21 @@ object mod {
       *
       * @category macOS
       */
-    var extendInfo: js.UndefOr[String | StringDictionary[js.Any]] = js.native
+    var extendInfo: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
     
     // eslint-disable-line @typescript-eslint/no-explicit-any
     /**
       * One or more files to be copied directly into the app's `Contents/Resources` directory for
       * macOS target platforms, and the `resources` directory for other target platforms.
       */
-    var extraResource: js.UndefOr[String | js.Array[String]] = js.native
+    var extraResource: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The bundle identifier to use in the application helper's `Info.plist`.
       *
       * @category macOS
       */
-    var helperBundleId: js.UndefOr[String] = js.native
+    var helperBundleId: js.UndefOr[String] = js.undefined
     
     /**
       * The local path to the icon file, if the target platform supports setting embedding an icon.
@@ -420,7 +420,7 @@ object mod {
       * If the file extension is omitted, it is auto-completed to the correct extension based on the
       * platform, including when [[platform|`platform: 'all'`]] is in effect.
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * One or more additional [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
@@ -445,7 +445,7 @@ object mod {
       *
       * **Note:** `ignore` will have no effect if the [[prebuiltAsar]] option is set.
       */
-    var ignore: js.UndefOr[RegExp | js.Array[RegExp] | IgnoreFunction] = js.native
+    var ignore: js.UndefOr[RegExp | js.Array[RegExp] | IgnoreFunction] = js.undefined
     
     /**
       * Ignores [system junk files](https://github.com/sindresorhus/junk) when copying the Electron app,
@@ -453,7 +453,7 @@ object mod {
       *
       * **Note:** `junk` will have no effect if the [[prebuiltAsar]] option is set.
       */
-    var junk: js.UndefOr[Boolean] = js.native
+    var junk: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The application name. If omitted, it will use the `productName` or `name` value from the
@@ -462,7 +462,7 @@ object mod {
       * **Regardless of source, characters in the Electron app name which are not allowed in all target
       * platforms' filenames (e.g., `/`), will be replaced by hyphens (`-`).**
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * If present, notarizes macOS target apps when the host platform is macOS and XCode is installed.
@@ -473,7 +473,7 @@ object mod {
       *
       * @category macOS
       */
-    var osxNotarize: js.UndefOr[OsxNotarizeOptions] = js.native
+    var osxNotarize: js.UndefOr[OsxNotarizeOptions] = js.undefined
     
     /**
       * If present, signs macOS target apps when the host platform is macOS and XCode is installed.
@@ -486,20 +486,20 @@ object mod {
       *
       * @category macOS
       */
-    var osxSign: js.UndefOr[`true` | OsxSignOptions] = js.native
+    var osxSign: js.UndefOr[`true` | OsxSignOptions] = js.undefined
     
     /**
       * The base directory where the finished package(s) are created.
       *
       * Defaults to the current working directory.
       */
-    var out: js.UndefOr[String] = js.native
+    var out: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to replace an already existing output directory for a given platform (`true`) or
       * skip recreating it (`false`). Defaults to `false`.
       */
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The target platform(s) to build for.
@@ -521,7 +521,7 @@ object mod {
       * - `mas` (macOS, specifically for submitting to the Mac App Store)
       * - `win32`
       */
-    var platform: js.UndefOr[PlatformOption | js.Array[PlatformOption]] = js.native
+    var platform: js.UndefOr[PlatformOption | js.Array[PlatformOption]] = js.undefined
     
     /**
       * The path to a prebuilt ASAR file.
@@ -537,14 +537,14 @@ object mod {
       * - [[junk]]
       * - [[prune]]
       */
-    var prebuiltAsar: js.UndefOr[String] = js.native
+    var prebuiltAsar: js.UndefOr[String] = js.undefined
     
     /**
       * The URL protocol schemes associated with the Electron app.
       *
       * @category macOS
       */
-    var protocols: js.UndefOr[js.Array[MacOSProtocol]] = js.native
+    var protocols: js.UndefOr[js.Array[MacOSProtocol]] = js.undefined
     
     /**
       * Walks the `node_modules` dependency tree to remove all of the packages specified in the
@@ -554,7 +554,7 @@ object mod {
       *
       * **Note:** `prune` will have no effect if the [[prebuiltAsar]] option is set.
       */
-    var prune: js.UndefOr[Boolean] = js.native
+    var prune: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, disables printing informational and warning messages to the console when
@@ -562,13 +562,13 @@ object mod {
       *
       * Defaults to `false`.
       */
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The base directory to use as a temporary directory. Set to `false` to disable use of a
       * temporary directory. Defaults to the system's temporary directory.
       */
-    var tmpdir: js.UndefOr[String | `false`] = js.native
+    var tmpdir: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * Human-readable descriptions of how the Electron app uses certain macOS features. These are displayed
@@ -593,13 +593,13 @@ object mod {
       *
       * @category macOS
       */
-    var usageDescription: js.UndefOr[StringDictionary[String]] = js.native
+    var usageDescription: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Application metadata to embed into the Windows executable.
       * @category Windows
       */
-    var win32metadata: js.UndefOr[Win32MetadataOptions] = js.native
+    var win32metadata: js.UndefOr[Win32MetadataOptions] = js.undefined
   }
   object Options {
     
@@ -866,42 +866,41 @@ object mod {
     * See the documentation for [`electron-notarize`](https://npm.im/electron-notarize#method-notarizeopts-promisevoid)
     * for details.
     */
-  type OsxNotarizeOptions = NotarizeCredentials with TransporterOptions
+  type OsxNotarizeOptions = NotarizeCredentials & TransporterOptions
   
   /** See the documentation for [`electron-osx-sign`](https://npm.im/electron-osx-sign#opts) for details. */
   /* Inlined std.Omit<electron-osx-sign.electron-osx-sign.SignOptions, 'app' | 'binaries' | 'platform' | 'version'> */
-  @js.native
   trait OsxSignOptions extends StObject {
     
-    var entitlements: js.UndefOr[String] = js.native
+    var entitlements: js.UndefOr[String] = js.undefined
     
-    var `entitlements-inherit`: js.UndefOr[String] = js.native
+    var `entitlements-inherit`: js.UndefOr[String] = js.undefined
     
-    var `entitlements-loginhelper`: js.UndefOr[String] = js.native
+    var `entitlements-loginhelper`: js.UndefOr[String] = js.undefined
     
-    var `gatekeeper-assess`: js.UndefOr[Boolean] = js.native
+    var `gatekeeper-assess`: js.UndefOr[Boolean] = js.undefined
     
-    var hardenedRuntime: js.UndefOr[Boolean] = js.native
+    var hardenedRuntime: js.UndefOr[Boolean] = js.undefined
     
-    var identity: js.UndefOr[String] = js.native
+    var identity: js.UndefOr[String] = js.undefined
     
-    var `identity-validation`: js.UndefOr[Boolean] = js.native
+    var `identity-validation`: js.UndefOr[Boolean] = js.undefined
     
-    var ignore: js.UndefOr[String] = js.native
+    var ignore: js.UndefOr[String] = js.undefined
     
-    var keychain: js.UndefOr[String] = js.native
+    var keychain: js.UndefOr[String] = js.undefined
     
-    var `pre-auto-entitlements`: js.UndefOr[Boolean] = js.native
+    var `pre-auto-entitlements`: js.UndefOr[Boolean] = js.undefined
     
-    var `pre-embed-provisioning-profile`: js.UndefOr[Boolean] = js.native
+    var `pre-embed-provisioning-profile`: js.UndefOr[Boolean] = js.undefined
     
-    var `provisioning-profile`: js.UndefOr[String] = js.native
+    var `provisioning-profile`: js.UndefOr[String] = js.undefined
     
-    var requirements: js.UndefOr[String] = js.native
+    var requirements: js.UndefOr[String] = js.undefined
     
-    var `signature-size`: js.UndefOr[Double] = js.native
+    var `signature-size`: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OsxSignOptions {
     
@@ -1017,33 +1016,32 @@ object mod {
     *
     * For more information, read the [`rcedit` Node module documentation](https://github.com/electron/node-rcedit#docs).
     */
-  @js.native
   trait Win32MetadataOptions extends StObject {
     
     /** Defaults to the `author` name from the nearest `package.json`. */
-    var CompanyName: js.UndefOr[String] = js.native
+    var CompanyName: js.UndefOr[String] = js.undefined
     
     /** Defaults to either `productName` or `name` from the nearest `package.json`. */
-    var FileDescription: js.UndefOr[String] = js.native
+    var FileDescription: js.UndefOr[String] = js.undefined
     
     /** Defaults to either `productName` or `name` from the nearest `package.json`. */
-    var InternalName: js.UndefOr[String] = js.native
+    var InternalName: js.UndefOr[String] = js.undefined
     
     /** Defaults to the renamed Electron `.exe` file. */
-    var OriginalFilename: js.UndefOr[String] = js.native
+    var OriginalFilename: js.UndefOr[String] = js.undefined
     
     /** Defaults to either `productName` or `name` from the nearest `package.json`. */
-    var ProductName: js.UndefOr[String] = js.native
+    var ProductName: js.UndefOr[String] = js.undefined
     
     /**
       * Path to a local manifest file.
       *
       * See [MSDN](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374191.aspx) for more details.
       */
-    var `application-manifest`: js.UndefOr[String] = js.native
+    var `application-manifest`: js.UndefOr[String] = js.undefined
     
     /** See [MSDN](https://msdn.microsoft.com/en-us/library/6ad1fshk.aspx#Anchor_9) for details. */
-    var `requested-execution-level`: js.UndefOr[asInvoker | highestAvailable | requireAdministrator] = js.native
+    var `requested-execution-level`: js.UndefOr[asInvoker | highestAvailable | requireAdministrator] = js.undefined
   }
   object Win32MetadataOptions {
     

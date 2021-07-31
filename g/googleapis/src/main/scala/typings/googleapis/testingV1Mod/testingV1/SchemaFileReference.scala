@@ -2,20 +2,18 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to a file, used for user inputs.
   */
-@js.native
 trait SchemaFileReference extends StObject {
   
   /**
     * A path to a file in Google Cloud Storage. Example:
     * gs://build-app-1414623860166/app-debug-unaligned.apk
     */
-  var gcsPath: js.UndefOr[String] = js.native
+  var gcsPath: js.UndefOr[String] = js.undefined
 }
 object SchemaFileReference {
   

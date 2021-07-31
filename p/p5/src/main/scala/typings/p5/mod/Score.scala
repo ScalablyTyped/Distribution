@@ -2,45 +2,43 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Score extends StObject {
   
   /**
     *   Loop playback of the score.
     */
-  def loop(): Unit = js.native
+  def loop(): Unit
   
   /**
     *   Stop looping playback of the score. If it is
     *   currently playing, this will go into effect after
     *   the current round of playback completes.
     */
-  def noLoop(): Unit = js.native
+  def noLoop(): Unit
   
   /**
     *   Pause playback of the score.
     */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /**
     *   Set the tempo for all parts in the score
     *   @param BPM Beats Per Minute
     *   @param rampTime Seconds from now
     */
-  def setBPM(BPM: Double, rampTime: Double): Unit = js.native
+  def setBPM(BPM: Double, rampTime: Double): Unit
   
   /**
     *   Start playback of the score.
     */
-  def start(): Unit = js.native
+  def start(): Unit
   
   /**
     *   Stop playback of the score.
     */
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object Score {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkEndpointGroupsAttachEndpointsRequest extends StObject {
   
   /** The list of network endpoints to be attached. */
-  var networkEndpoints: js.UndefOr[js.Array[NetworkEndpoint]] = js.native
+  var networkEndpoints: js.UndefOr[js.Array[NetworkEndpoint]] = js.undefined
 }
 object NetworkEndpointGroupsAttachEndpointsRequest {
   

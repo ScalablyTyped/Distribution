@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The interface can be used for composing SELECT statements without knowing the structure of the used query.
   */
-@js.native
-trait XSQLQueryComposer extends XInterface {
+trait XSQLQueryComposer
+  extends StObject
+     with XInterface {
   
   /**
     * returns the query composed with filters and sort criteria.
     * @returns the composed query
     */
-  val ComposedQuery: String = js.native
+  val ComposedQuery: String
   
   /**
     * returns the currently used filter.
@@ -30,7 +30,7 @@ trait XSQLQueryComposer extends XInterface {
     * The filter criteria returned is part of the where condition of the select command, but it does not contain the where token.
     * @returns the filter
     */
-  var Filter: String = js.native
+  var Filter: String
   
   /**
     * returns the currently used sort order.
@@ -38,13 +38,13 @@ trait XSQLQueryComposer extends XInterface {
     * The order criteria returned is part of the ORDER BY clause of the select command, but it does not contain the ORDER BY keyword .
     * @returns the order
     */
-  var Order: String = js.native
+  var Order: String
   
   /**
     * returns the query used for composing.
     * @returns the query
     */
-  var Query: String = js.native
+  var Query: String
   
   /**
     * returns the currently used filter.
@@ -53,14 +53,14 @@ trait XSQLQueryComposer extends XInterface {
     * the name of the column and the filter condition. The filter condition is of type string.
     * @returns the structured filter
     */
-  val StructuredFilter: SafeArray[SafeArray[PropertyValue]] = js.native
+  val StructuredFilter: SafeArray[SafeArray[PropertyValue]]
   
   /**
     * appends a new filter condition by a {@link com.sun.star.sdb.DataColumn} providing the name and the value for the filter.
     * @param column the column which is used to create a filter
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def appendFilterByColumn(column: XPropertySet): Unit = js.native
+  def appendFilterByColumn(column: XPropertySet): Unit
   
   /**
     * appends an additional part to the sort order criteria of the select statement.
@@ -68,13 +68,13 @@ trait XSQLQueryComposer extends XInterface {
     * @param ascending `TRUE` when the order should be ascending, otherwise `FALSE`
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def appendOrderByColumn(column: XPropertySet, ascending: Boolean): Unit = js.native
+  def appendOrderByColumn(column: XPropertySet, ascending: Boolean): Unit
   
   /**
     * returns the query composed with filters and sort criteria.
     * @returns the composed query
     */
-  def getComposedQuery(): String = js.native
+  def getComposedQuery(): String
   
   /**
     * returns the currently used filter.
@@ -82,7 +82,7 @@ trait XSQLQueryComposer extends XInterface {
     * The filter criteria returned is part of the where condition of the select command, but it does not contain the where token.
     * @returns the filter
     */
-  def getFilter(): String = js.native
+  def getFilter(): String
   
   /**
     * returns the currently used sort order.
@@ -90,13 +90,13 @@ trait XSQLQueryComposer extends XInterface {
     * The order criteria returned is part of the ORDER BY clause of the select command, but it does not contain the ORDER BY keyword .
     * @returns the order
     */
-  def getOrder(): String = js.native
+  def getOrder(): String
   
   /**
     * returns the query used for composing.
     * @returns the query
     */
-  def getQuery(): String = js.native
+  def getQuery(): String
   
   /**
     * returns the currently used filter.
@@ -105,28 +105,28 @@ trait XSQLQueryComposer extends XInterface {
     * the name of the column and the filter condition. The filter condition is of type string.
     * @returns the structured filter
     */
-  def getStructuredFilter(): SafeArray[SafeArray[PropertyValue]] = js.native
+  def getStructuredFilter(): SafeArray[SafeArray[PropertyValue]]
   
   /**
     * makes it possible to set a filter condition for the query.
     * @param filter the filter to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def setFilter(filter: String): Unit = js.native
+  def setFilter(filter: String): Unit
   
   /**
     * makes it possible to set a sort condition for the query.
     * @param order the order part to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def setOrder(order: String): Unit = js.native
+  def setOrder(order: String): Unit
   
   /**
     * sets a new query for the composer, which may be expanded by filters and sort criteria.
     * @param command the command to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def setQuery(command: String): Unit = js.native
+  def setQuery(command: String): Unit
 }
 object XSQLQueryComposer {
   

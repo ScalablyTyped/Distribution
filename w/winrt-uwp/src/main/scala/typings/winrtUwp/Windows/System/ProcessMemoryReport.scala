@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents process memory usage at a single point in time. */
-@js.native
 trait ProcessMemoryReport extends StObject {
   
   /** Gets the process' private working set usage. */
-  var privateWorkingSetUsage: Double = js.native
+  var privateWorkingSetUsage: Double
   
   /** Gets the process' total working set usage. */
-  var totalWorkingSetUsage: Double = js.native
+  var totalWorkingSetUsage: Double
 }
 object ProcessMemoryReport {
   

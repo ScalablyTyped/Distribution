@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Each object in the **results** array corresponds to an individual document returned by the original query. */
-@js.native
 trait LogQueryResponseResultDocumentsResult extends StObject {
   
   /** The **collection_id** of the document represented by this result. */
-  var collection_id: js.UndefOr[String] = js.native
+  var collection_id: js.UndefOr[String] = js.undefined
   
   /** The confidence score of the result's analysis. A higher score indicating greater confidence. */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /** The **document_id** of the document that this result represents. */
-  var document_id: js.UndefOr[String] = js.native
+  var document_id: js.UndefOr[String] = js.undefined
   
   /** The result rank of this document. A position of `1` indicates that it was the first returned result. */
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
   /** The raw score of this result. A higher score indicates a greater match to the query parameters. */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object LogQueryResponseResultDocumentsResult {
   

@@ -2,11 +2,12 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassWebView extends ClassEventEmitter {
+trait ClassWebView
+  extends StObject
+     with ClassEventEmitter {
   
   /**
     * 

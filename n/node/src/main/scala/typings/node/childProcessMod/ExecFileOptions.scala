@@ -3,19 +3,19 @@ package typings.node.childProcessMod
 import typings.node.processMod.global.NodeJS.Signals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExecFileOptions extends CommonOptions {
+trait ExecFileOptions
+  extends StObject
+     with CommonOptions {
   
-  var killSignal: js.UndefOr[Signals | Double] = js.native
+  var killSignal: js.UndefOr[Signals | Double] = js.undefined
   
-  var maxBuffer: js.UndefOr[Double] = js.native
+  var maxBuffer: js.UndefOr[Double] = js.undefined
   
-  var shell: js.UndefOr[Boolean | String] = js.native
+  var shell: js.UndefOr[Boolean | String] = js.undefined
   
-  var windowsVerbatimArguments: js.UndefOr[Boolean] = js.native
+  var windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
 }
 object ExecFileOptions {
   

@@ -2,26 +2,24 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcLabelRequestData extends StObject {
   
   /**
     * Whether to include the _links field on the shallow references
     */
-  var includeLinks: Boolean = js.native
+  var includeLinks: Boolean
   
-  var itemLabelFilter: String = js.native
+  var itemLabelFilter: String
   
-  var labelScope: String = js.native
+  var labelScope: String
   
-  var maxItemCount: Double = js.native
+  var maxItemCount: Double
   
-  var name: String = js.native
+  var name: String
   
-  var owner: String = js.native
+  var owner: String
 }
 object TfvcLabelRequestData {
   

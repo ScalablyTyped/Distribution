@@ -2,16 +2,14 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // iOS-only Event
-@js.native
 trait AccessibilityAnnouncementFinishedEvent extends StObject {
   
-  var announcement: String = js.native
+  var announcement: String
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object AccessibilityAnnouncementFinishedEvent {
   

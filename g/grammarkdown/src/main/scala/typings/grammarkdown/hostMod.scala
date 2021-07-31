@@ -8,7 +8,6 @@ import typings.prex.mod.CancellationToken
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hostMod {
@@ -111,63 +110,52 @@ object hostMod {
   /* static members */
   object CoreAsyncHost {
     
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
+    @JSImport("grammarkdown/dist/host", "CoreAsyncHost")
     @js.native
-    def forFile(content: String): StringAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
-    @js.native
-    def forFile(content: String, file: js.UndefOr[scala.Nothing], hostFallback: CoreAsyncHost): StringAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
-    @js.native
-    def forFile(content: String, file: js.UndefOr[scala.Nothing], hostFallback: CoreSyncHost): StringAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
-    @js.native
-    def forFile(content: String, file: String): StringAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
-    @js.native
-    def forFile(content: String, file: String, hostFallback: CoreAsyncHost): StringAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
-    @js.native
-    def forFile(content: String, file: String, hostFallback: CoreSyncHost): StringAsyncHost = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def forFile(content: String): StringAsyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[StringAsyncHost]
+    @scala.inline
+    def forFile(content: String, file: String): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    @scala.inline
+    def forFile(content: String, file: String, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    @scala.inline
+    def forFile(content: String, file: String, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    @scala.inline
+    def forFile(content: String, file: Unit, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    @scala.inline
+    def forFile(content: String, file: Unit, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
     /**
       * Creates a {@link StringAsyncHost} for the provided content.
       * @param content The content of the file.
       * @param file The file name for the content.
       * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
       */
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
-    @js.native
-    def forFile(content: js.Thenable[String]): StringAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
-    @js.native
-    def forFile(content: js.Thenable[String], file: js.UndefOr[scala.Nothing], hostFallback: CoreAsyncHost): StringAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
-    @js.native
-    def forFile(content: js.Thenable[String], file: js.UndefOr[scala.Nothing], hostFallback: CoreSyncHost): StringAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
-    @js.native
-    def forFile(content: js.Thenable[String], file: String): StringAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
-    @js.native
-    def forFile(content: js.Thenable[String], file: String, hostFallback: CoreAsyncHost): StringAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.forFile")
-    @js.native
-    def forFile(content: js.Thenable[String], file: String, hostFallback: CoreSyncHost): StringAsyncHost = js.native
+    @scala.inline
+    def forFile(content: js.Thenable[String]): StringAsyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[StringAsyncHost]
+    @scala.inline
+    def forFile(content: js.Thenable[String], file: String): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    @scala.inline
+    def forFile(content: js.Thenable[String], file: String, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    @scala.inline
+    def forFile(content: js.Thenable[String], file: String, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    @scala.inline
+    def forFile(content: js.Thenable[String], file: Unit, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    @scala.inline
+    def forFile(content: js.Thenable[String], file: Unit, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
     
     /**
       * Creates a `CoreAsyncHost`.
       * @param options The options used to configure the host.
       * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
       */
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.from")
-    @js.native
-    def from(custom: CoreAsyncHostOptions): CoreAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.from")
-    @js.native
-    def from(custom: CoreAsyncHostOptions, hostFallback: CoreAsyncHost): CoreAsyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreAsyncHost.from")
-    @js.native
-    def from(custom: CoreAsyncHostOptions, hostFallback: CoreSyncHost): CoreAsyncHost = js.native
+    @scala.inline
+    def from(custom: CoreAsyncHostOptions): CoreAsyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(custom.asInstanceOf[js.Any]).asInstanceOf[CoreAsyncHost]
+    @scala.inline
+    def from(custom: CoreAsyncHostOptions, hostFallback: CoreAsyncHost): CoreAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(custom.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[CoreAsyncHost]
+    @scala.inline
+    def from(custom: CoreAsyncHostOptions, hostFallback: CoreSyncHost): CoreAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(custom.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[CoreAsyncHost]
   }
   
   @JSImport("grammarkdown/dist/host", "CoreSyncHost")
@@ -265,36 +253,34 @@ object hostMod {
   /* static members */
   object CoreSyncHost {
     
+    @JSImport("grammarkdown/dist/host", "CoreSyncHost")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a {@link StringSyncHost} for the provided content.
       * @param content The content of the file.
       * @param file The file name for the content.
       * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
       */
-    @JSImport("grammarkdown/dist/host", "CoreSyncHost.forFile")
-    @js.native
-    def forFile(content: String): StringSyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreSyncHost.forFile")
-    @js.native
-    def forFile(content: String, file: js.UndefOr[scala.Nothing], hostFallback: CoreSyncHost): StringSyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreSyncHost.forFile")
-    @js.native
-    def forFile(content: String, file: String): StringSyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreSyncHost.forFile")
-    @js.native
-    def forFile(content: String, file: String, hostFallback: CoreSyncHost): StringSyncHost = js.native
+    @scala.inline
+    def forFile(content: String): StringSyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[StringSyncHost]
+    @scala.inline
+    def forFile(content: String, file: String): StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[StringSyncHost]
+    @scala.inline
+    def forFile(content: String, file: String, hostFallback: CoreSyncHost): StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringSyncHost]
+    @scala.inline
+    def forFile(content: String, file: Unit, hostFallback: CoreSyncHost): StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringSyncHost]
     
     /**
       * Creates a `CoreSyncHost`.
       * @param options The options used to configure the host.
       * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
       */
-    @JSImport("grammarkdown/dist/host", "CoreSyncHost.from")
-    @js.native
-    def from(options: CoreSyncHostOptions): CoreSyncHost = js.native
-    @JSImport("grammarkdown/dist/host", "CoreSyncHost.from")
-    @js.native
-    def from(options: CoreSyncHostOptions, hostFallback: CoreSyncHost): CoreSyncHost = js.native
+    @scala.inline
+    def from(options: CoreSyncHostOptions): CoreSyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(options.asInstanceOf[js.Any]).asInstanceOf[CoreSyncHost]
+    @scala.inline
+    def from(options: CoreSyncHostOptions, hostFallback: CoreSyncHost): CoreSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[CoreSyncHost]
   }
   
   @JSImport("grammarkdown/dist/host", "HostBase")
@@ -444,8 +430,9 @@ object hostMod {
     val file: String = js.native
   }
   
-  @js.native
-  trait CoreAsyncHostOptions extends HostBaseOptions {
+  trait CoreAsyncHostOptions
+    extends StObject
+       with HostBaseOptions {
     
     /**
       * A callback used to control file normalization when generating keys for maps based on the case sensitivity of the host.
@@ -457,7 +444,7 @@ object hostMod {
           /* fallback */ js.Function1[/* file */ String, String], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback used to control asynchronous file reads.
@@ -474,7 +461,7 @@ object hostMod {
           ], 
           js.UndefOr[js.Thenable[js.UndefOr[String]] | String]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback used to control file resolution.
@@ -487,7 +474,7 @@ object hostMod {
           /* fallback */ js.Function2[/* file */ String, /* referer */ js.UndefOr[String], String], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback used to control known grammar resolution.
@@ -499,7 +486,7 @@ object hostMod {
           /* fallback */ js.Function1[/* name */ String, js.UndefOr[String]], 
           js.UndefOr[String]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback used to control asynchronous file writes.
@@ -518,7 +505,7 @@ object hostMod {
           ], 
           js.Thenable[Unit] | Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object CoreAsyncHostOptions {
     
@@ -611,8 +598,9 @@ object hostMod {
     }
   }
   
-  @js.native
-  trait CoreSyncHostOptions extends HostBaseOptions {
+  trait CoreSyncHostOptions
+    extends StObject
+       with HostBaseOptions {
     
     /**
       * A callback used to control file normalization when generating keys for maps based on the case sensitivity of the host.
@@ -624,7 +612,7 @@ object hostMod {
           /* fallback */ js.Function1[/* file */ String, String], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback used to control synchronous file reads.
@@ -637,7 +625,7 @@ object hostMod {
           /* fallback */ js.Function2[/* file */ String, /* cancelToken */ js.UndefOr[CancelToken], js.UndefOr[String]], 
           js.UndefOr[String]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback used to control file resolution.
@@ -650,7 +638,7 @@ object hostMod {
           /* fallback */ js.Function2[/* file */ String, /* referer */ js.UndefOr[String], String], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback used to control known grammar resolution.
@@ -662,7 +650,7 @@ object hostMod {
           /* fallback */ js.Function1[/* name */ String, js.UndefOr[String]], 
           js.UndefOr[String]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback used to control synchronous file writes.
@@ -681,7 +669,7 @@ object hostMod {
           ], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object CoreSyncHostOptions {
     
@@ -770,23 +758,22 @@ object hostMod {
     }
   }
   
-  @js.native
   trait HostBaseOptions extends StObject {
     
     /**
       * Indicates whether the host is case-insensitive (`true`) or case-sensitive (`false`).
       */
-    var ignoreCase: js.UndefOr[Boolean] = js.native
+    var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A set of known grammars in the form `{ "name": "path" }`
       */
-    var knownGrammars: js.UndefOr[Record[String, String]] = js.native
+    var knownGrammars: js.UndefOr[Record[String, String]] = js.undefined
     
     /**
       * Indicates whether to include builtin grammars in the set of known grammars.
       */
-    var useBuiltinGrammars: js.UndefOr[Boolean] = js.native
+    var useBuiltinGrammars: js.UndefOr[Boolean] = js.undefined
   }
   object HostBaseOptions {
     

@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rootErrorBoundaryMod {
@@ -18,19 +17,21 @@ object rootErrorBoundaryMod {
   /* static members */
   object default {
     
+    @JSImport("expo/build/launch/RootErrorBoundary", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Test this by adding `throw new Error('example')` to your root component
       * when the AppLoading component is rendered.
       */
-    @JSImport("expo/build/launch/RootErrorBoundary", "default.getDerivedStateFromError")
-    @js.native
-    def getDerivedStateFromError(_error: Error): typings.expo.anon.Error | Null = js.native
+    @scala.inline
+    def getDerivedStateFromError(_error: Error): typings.expo.anon.Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(_error.asInstanceOf[js.Any]).asInstanceOf[typings.expo.anon.Error | Null]
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object Props {
     
@@ -63,16 +64,15 @@ object rootErrorBoundaryMod {
     def componentDidCatch_MRootErrorBoundary(error: Error, _errorInfo: js.Any): Unit = js.native
   }
   
-  @js.native
   trait State extends StObject {
     
-    var error: Error | Null = js.native
+    var error: Error | Null
   }
   object State {
     
     @scala.inline
     def apply(): State = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(error = null)
       __obj.asInstanceOf[State]
     }
     

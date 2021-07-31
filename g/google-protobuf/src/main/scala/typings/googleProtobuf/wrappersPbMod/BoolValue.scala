@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/wrappers_pb", "BoolValue")
@@ -27,13 +26,11 @@ object BoolValue {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("google-protobuf/google/protobuf/wrappers_pb", "BoolValue.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): BoolValue = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): BoolValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[BoolValue]
   
-  @JSImport("google-protobuf/google/protobuf/wrappers_pb", "BoolValue.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: BoolValue, reader: BinaryReader): BoolValue = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: BoolValue, reader: BinaryReader): BoolValue = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[BoolValue]
   
   @JSImport("google-protobuf/google/protobuf/wrappers_pb", "BoolValue.extensions")
   @js.native
@@ -48,18 +45,15 @@ object BoolValue {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/wrappers_pb", "BoolValue.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: BoolValue, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: BoolValue, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/wrappers_pb", "BoolValue.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: BoolValue): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: BoolValue): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var value: Boolean = js.native
+    var value: Boolean
   }
   object AsObject {
     

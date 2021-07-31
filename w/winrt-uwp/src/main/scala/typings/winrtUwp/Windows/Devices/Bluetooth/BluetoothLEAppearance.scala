@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.Bluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality to determine the Bluetooth Low Energy (LE) Appearance information for a device. */
-@js.native
 trait BluetoothLEAppearance extends StObject {
   
   /** Gets the appearance category value of the Bluetooth LE device. */
-  var category: Double = js.native
+  var category: Double
   
   /** Gets the appearance raw value of the Bluetooth LE device. */
-  var rawValue: Double = js.native
+  var rawValue: Double
   
   /** Gets the appearance subcategory value of the Bluetooth LE device. */
-  var subCategory: Double = js.native
+  var subCategory: Double
 }
 object BluetoothLEAppearance {
   

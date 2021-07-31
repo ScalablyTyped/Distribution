@@ -3,34 +3,31 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeakWidth extends StObject {
   
-  var beakWidth: Double = js.native
+  var beakWidth: Double
   
-  var directionalHint: `7` = js.native
+  var directionalHint: `7`
   
-  var gapSpace: Double = js.native
+  var gapSpace: Double
   
-  var isBeakVisible: Boolean = js.native
+  var isBeakVisible: Boolean
   
-  var minPagePadding: Double = js.native
+  var minPagePadding: Double
   
-  var preventDismissOnLostFocus: Boolean = js.native
+  var preventDismissOnLostFocus: Boolean
   
-  var preventDismissOnResize: Boolean = js.native
+  var preventDismissOnResize: Boolean
   
-  var preventDismissOnScroll: Boolean = js.native
+  var preventDismissOnScroll: Boolean
 }
 object BeakWidth {
   
   @scala.inline
   def apply(
     beakWidth: Double,
-    directionalHint: `7`,
     gapSpace: Double,
     isBeakVisible: Boolean,
     minPagePadding: Double,
@@ -38,7 +35,7 @@ object BeakWidth {
     preventDismissOnResize: Boolean,
     preventDismissOnScroll: Boolean
   ): BeakWidth = {
-    val __obj = js.Dynamic.literal(beakWidth = beakWidth.asInstanceOf[js.Any], directionalHint = directionalHint.asInstanceOf[js.Any], gapSpace = gapSpace.asInstanceOf[js.Any], isBeakVisible = isBeakVisible.asInstanceOf[js.Any], minPagePadding = minPagePadding.asInstanceOf[js.Any], preventDismissOnLostFocus = preventDismissOnLostFocus.asInstanceOf[js.Any], preventDismissOnResize = preventDismissOnResize.asInstanceOf[js.Any], preventDismissOnScroll = preventDismissOnScroll.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(beakWidth = beakWidth.asInstanceOf[js.Any], directionalHint = 7, gapSpace = gapSpace.asInstanceOf[js.Any], isBeakVisible = isBeakVisible.asInstanceOf[js.Any], minPagePadding = minPagePadding.asInstanceOf[js.Any], preventDismissOnLostFocus = preventDismissOnLostFocus.asInstanceOf[js.Any], preventDismissOnResize = preventDismissOnResize.asInstanceOf[js.Any], preventDismissOnScroll = preventDismissOnScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeakWidth]
   }
   

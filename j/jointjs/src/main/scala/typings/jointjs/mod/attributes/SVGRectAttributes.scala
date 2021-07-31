@@ -2,23 +2,23 @@ package typings.jointjs.mod.attributes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGRectAttributes extends SVGAttributes {
+trait SVGRectAttributes
+  extends StObject
+     with SVGAttributes {
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var rx: js.UndefOr[String | Double] = js.native
+  var rx: js.UndefOr[String | Double] = js.undefined
   
-  var ry: js.UndefOr[String | Double] = js.native
+  var ry: js.UndefOr[String | Double] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
   
-  var x: js.UndefOr[String | Double] = js.native
+  var x: js.UndefOr[String | Double] = js.undefined
   
-  var y: js.UndefOr[String | Double] = js.native
+  var y: js.UndefOr[String | Double] = js.undefined
 }
 object SVGRectAttributes {
   

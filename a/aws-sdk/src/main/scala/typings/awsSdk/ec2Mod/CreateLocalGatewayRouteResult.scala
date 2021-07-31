@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLocalGatewayRouteResult extends StObject {
   
   /**
     * Information about the route.
     */
-  var Route: js.UndefOr[LocalGatewayRoute] = js.native
+  var Route: js.UndefOr[LocalGatewayRoute] = js.undefined
 }
 object CreateLocalGatewayRouteResult {
   

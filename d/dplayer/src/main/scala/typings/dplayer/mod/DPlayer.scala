@@ -3,41 +3,39 @@ package typings.dplayer.mod
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DPlayer extends StObject {
   
-  var danmaku: Danmaku = js.native
+  var danmaku: Danmaku
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var fullScreen: FullScreen = js.native
+  var fullScreen: FullScreen
   
-  def notice(text: String, time: Double, opacity: Double): Unit = js.native
+  def notice(text: String, time: Double, opacity: Double): Unit
   
-  def on(event: DPlayerEvents, handler: js.Function0[Unit]): Unit = js.native
+  def on(event: DPlayerEvents, handler: js.Function0[Unit]): Unit
   
-  def pause(): Unit = js.native
+  def pause(): Unit
   
-  def play(): Unit = js.native
+  def play(): Unit
   
-  def seek(time: Double): Unit = js.native
+  def seek(time: Double): Unit
   
-  def speed(rate: Double): Unit = js.native
+  def speed(rate: Double): Unit
   
-  def switchQuality(index: Double): Unit = js.native
+  def switchQuality(index: Double): Unit
   
-  def switchVideo(video: DPlayerVideo, danmaku: DPlayerDanmaku): Unit = js.native
+  def switchVideo(video: DPlayerVideo, danmaku: DPlayerDanmaku): Unit
   
-  def toggle(): Unit = js.native
+  def toggle(): Unit
   
-  var video: HTMLVideoElement = js.native
+  var video: HTMLVideoElement
   
-  def volume(percentage: Double, nostorage: Boolean, nonotice: Boolean): Unit = js.native
+  def volume(percentage: Double, nostorage: Boolean, nonotice: Boolean): Unit
 }
 object DPlayer {
   

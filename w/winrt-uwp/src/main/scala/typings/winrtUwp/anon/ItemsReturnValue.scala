@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Media.Core.AudioTrack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsReturnValue extends StObject {
   
-  /** The audio tracks that start at startIndex in the list. */ var items: AudioTrack = js.native
+  /** The audio tracks that start at startIndex in the list. */ var items: AudioTrack
   
-  /** The number of audio tracks retrieved. */ var returnValue: Double = js.native
+  /** The number of audio tracks retrieved. */ var returnValue: Double
 }
 object ItemsReturnValue {
   

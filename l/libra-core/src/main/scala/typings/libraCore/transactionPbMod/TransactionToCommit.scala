@@ -10,7 +10,6 @@ import typings.libraCore.eventsPbMod.Event
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionToCommit")
@@ -18,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TransactionToCommit () extends Message {
   
   def addAccountStates(): AccountState = js.native
-  def addAccountStates(value: js.UndefOr[scala.Nothing], index: Double): AccountState = js.native
+  def addAccountStates(value: Unit, index: Double): AccountState = js.native
   def addAccountStates(value: AccountState): AccountState = js.native
   def addAccountStates(value: AccountState, index: Double): AccountState = js.native
   
   def addEvents(): Event = js.native
-  def addEvents(value: js.UndefOr[scala.Nothing], index: Double): Event = js.native
+  def addEvents(value: Unit, index: Double): Event = js.native
   def addEvents(value: Event): Event = js.native
   def addEvents(value: Event, index: Double): Event = js.native
   
@@ -59,13 +58,11 @@ object TransactionToCommit {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionToCommit.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): TransactionToCommit = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): TransactionToCommit = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionToCommit]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionToCommit.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: TransactionToCommit, reader: BinaryReader): TransactionToCommit = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: TransactionToCommit, reader: BinaryReader): TransactionToCommit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[TransactionToCommit]
   
   @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionToCommit.extensions")
   @js.native
@@ -80,24 +77,21 @@ object TransactionToCommit {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionToCommit.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: TransactionToCommit, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: TransactionToCommit, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionToCommit.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: TransactionToCommit): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: TransactionToCommit): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var accountStatesList: js.Array[typings.libraCore.transactionPbMod.AccountState.AsObject] = js.native
+    var accountStatesList: js.Array[typings.libraCore.transactionPbMod.AccountState.AsObject]
     
-    var eventsList: js.Array[typings.libraCore.eventsPbMod.Event.AsObject] = js.native
+    var eventsList: js.Array[typings.libraCore.eventsPbMod.Event.AsObject]
     
-    var gasUsed: String = js.native
+    var gasUsed: String
     
-    var signedTxn: js.UndefOr[typings.libraCore.transactionPbMod.SignedTransaction.AsObject] = js.native
+    var signedTxn: js.UndefOr[typings.libraCore.transactionPbMod.SignedTransaction.AsObject] = js.undefined
   }
   object AsObject {
     

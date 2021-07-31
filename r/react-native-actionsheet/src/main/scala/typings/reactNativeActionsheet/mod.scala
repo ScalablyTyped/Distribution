@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,26 +36,25 @@ object mod {
     def show(): Unit = js.native
   }
   
-  @js.native
   trait ActionSheetCustomProps extends StObject {
     
-    var buttonUnderlayColor: js.UndefOr[String] = js.native
+    var buttonUnderlayColor: js.UndefOr[String] = js.undefined
     
-    var cancelButtonIndex: js.UndefOr[Double] = js.native
+    var cancelButtonIndex: js.UndefOr[Double] = js.undefined
     
-    var destructiveButtonIndex: js.UndefOr[Double] = js.native
+    var destructiveButtonIndex: js.UndefOr[Double] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    def onPress(index: Double): Unit = js.native
+    def onPress(index: Double): Unit
     
-    var options: js.Array[ReactNode] = js.native
+    var options: js.Array[ReactNode]
     
-    var styles: js.UndefOr[js.Object] = js.native
+    var styles: js.UndefOr[js.Object] = js.undefined
     
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object ActionSheetCustomProps {
     
@@ -122,22 +120,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ActionSheetProps extends StObject {
     
-    var cancelButtonIndex: js.UndefOr[Double] = js.native
+    var cancelButtonIndex: js.UndefOr[Double] = js.undefined
     
-    var destructiveButtonIndex: js.UndefOr[Double] = js.native
+    var destructiveButtonIndex: js.UndefOr[Double] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    def onPress(index: Double): Unit = js.native
+    def onPress(index: Double): Unit
     
-    var options: js.Array[String] = js.native
+    var options: js.Array[String]
     
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ActionSheetProps {
     

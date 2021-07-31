@@ -3,21 +3,21 @@ package typings.bitcoinjsLib
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classifyMod {
   
-  @JSImport("bitcoinjs-lib/types/classify", "input")
+  @JSImport("bitcoinjs-lib/types/classify", JSImport.Namespace)
   @js.native
-  def input(script: Buffer): String = js.native
-  @JSImport("bitcoinjs-lib/types/classify", "input")
-  @js.native
-  def input(script: Buffer, allowIncomplete: Boolean): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/classify", "output")
-  @js.native
-  def output(script: Buffer): String = js.native
+  @scala.inline
+  def input(script: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(script.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def input(script: Buffer, allowIncomplete: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("input")(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def output(script: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("output")(script.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object types {
     
@@ -81,10 +81,8 @@ object classifyMod {
     def WITNESS_COMMITMENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITNESS_COMMITMENT")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("bitcoinjs-lib/types/classify", "witness")
-  @js.native
-  def witness(script: js.Array[Buffer]): String = js.native
-  @JSImport("bitcoinjs-lib/types/classify", "witness")
-  @js.native
-  def witness(script: js.Array[Buffer], allowIncomplete: Boolean): String = js.native
+  @scala.inline
+  def witness(script: js.Array[Buffer]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("witness")(script.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def witness(script: js.Array[Buffer], allowIncomplete: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("witness")(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[String]
 }

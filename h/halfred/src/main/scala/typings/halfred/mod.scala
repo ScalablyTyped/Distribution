@@ -3,29 +3,28 @@ package typings.halfred
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("halfred", "disableValidation")
+  @JSImport("halfred", JSImport.Namespace)
   @js.native
-  def disableValidation(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("halfred", "enableValidation")
-  @js.native
-  def enableValidation(flag: Boolean): Unit = js.native
+  @scala.inline
+  def disableValidation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableValidation")().asInstanceOf[Unit]
   
-  @JSImport("halfred", "parse")
-  @js.native
-  def parse(`object`: js.Any): Resource = js.native
+  @scala.inline
+  def enableValidation(flag: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableValidation")(flag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def parse(`object`: js.Any): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(`object`.asInstanceOf[js.Any]).asInstanceOf[Resource]
   
   /**
     * A Link Object represents a hyperlink from the containing resource to a URI.
     *
     * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5
     */
-  @js.native
   trait Link extends StObject {
     
     /**
@@ -43,7 +42,7 @@ object mod {
       *
       * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.4
       */
-    var deprecation: js.UndefOr[String] = js.native
+    var deprecation: js.UndefOr[String] = js.undefined
     
     /**
       * The "href" property is REQUIRED.
@@ -55,7 +54,7 @@ object mod {
       *
       * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.1
       */
-    var href: String = js.native
+    var href: String
     
     /**
       * The "hreflang" property is OPTIONAL.
@@ -65,7 +64,7 @@ object mod {
       *
       * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.8
       */
-    var hreflang: js.UndefOr[String] = js.native
+    var hreflang: js.UndefOr[String] = js.undefined
     
     /**
       * The "name" property is OPTIONAL.
@@ -75,7 +74,7 @@ object mod {
       *
       * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.5
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The "profile" property is OPTIONAL.
@@ -85,7 +84,7 @@ object mod {
       *
       * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.6
       */
-    var profile: js.UndefOr[String] = js.native
+    var profile: js.UndefOr[String] = js.undefined
     
     /**
       * The "templated" property is OPTIONAL.
@@ -98,7 +97,7 @@ object mod {
       *
       * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.2
       */
-    var templated: js.UndefOr[Boolean] = js.native
+    var templated: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The "title" property is OPTIONAL.
@@ -108,7 +107,7 @@ object mod {
       *
       * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.7
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * The "type" property is OPTIONAL.
@@ -118,7 +117,7 @@ object mod {
       *
       * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.3
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Link {
     
@@ -181,11 +180,10 @@ object mod {
   /** @see https://github.com/basti1302/halfred#links-and-embedded-resources */
   type LinkCollection = StringDictionary[js.Array[Link]]
   
-  @js.native
   trait Resource extends StObject {
     
     /** Alias for allEmbeddedResourceArrays() */
-    def allEmbeddedArrays(): ResourceCollection = js.native
+    def allEmbeddedArrays(): ResourceCollection
     
     /**
       * Returns an object which has an array for each embedded resource that was present in the
@@ -193,67 +191,67 @@ object mod {
       * See below why each embedded resource is represented as an array. Each element of any of
       * this arrays is in turn a Resource object.
       */
-    def allEmbeddedResourceArrays(): ResourceCollection = js.native
+    def allEmbeddedResourceArrays(): ResourceCollection
     
     /** Alias for allEmbeddedResourceArrays() */
-    def allEmbeddedResources(): ResourceCollection = js.native
+    def allEmbeddedResources(): ResourceCollection
     
     /**
       * Returns an object which has an array for each link that was present in the source object.
       * See below why each link is represented as an array.
       */
-    def allLinkArrays(): LinkCollection = js.native
+    def allLinkArrays(): LinkCollection
     
     /** Alias for allLinkArrays() */
-    def allLinks(): LinkCollection = js.native
+    def allLinks(): LinkCollection
     
     /**
       * Returns the curie with the given name, if any. The returned object is a link object, which
       * means it can be templated etc. See below for link object API.
       */
-    def curie(name: String): Link = js.native
+    def curie(name: String): Link
     
     /**
       * Returns the array of CURIEs. Each object in the array is a link object, which means it
       * can be templated etc. See below for the link object API.
       */
-    def curieArray(): js.Array[Link] = js.native
+    def curieArray(): js.Array[Link]
     
     /** Alias for embeddedResource(key) */
-    def embedded(key: String): Resource = js.native
+    def embedded(key: String): Resource
     
     /** Alias for embeddedResourceArray() */
-    def embeddedArray(key: String): js.Array[Resource] = js.native
+    def embeddedArray(key: String): js.Array[Resource]
     
     /**
       * Returns the first element of the array of embedded resources for the given key or null if
       * there are no embedded resources for this key. The returend object is a Resource object.
       */
-    def embeddedResource(key: String): Resource = js.native
+    def embeddedResource(key: String): Resource
     
     /**
       * Returns the array of embedded resources for the given key, or null if there are no embedded
       * resources for this key. Each element of this arrays is in turn a Resource object.
       */
-    def embeddedResourceArray(key: String): js.Array[Resource] = js.native
+    def embeddedResourceArray(key: String): js.Array[Resource]
     
     /**
       * Returns true if the resource has any CURIEs (Compact URIs).
       *
       * @see http://www.w3.org/TR/2010/NOTE-curie-20101216/
       */
-    def hasCuries(): Boolean = js.native
+    def hasCuries(): Boolean
     
     /**
       * Returns the first element of the array of links for the given key or null if there are no
       * links for this key.
       */
-    def link(key: String): Link = js.native
+    def link(key: String): Link
     
     /**
       * Returns the array of links for the given key, or null if there are no links for this key.
       */
-    def linkArray(key: String): js.Array[Link] = js.native
+    def linkArray(key: String): js.Array[Link]
     
     /**
       * Returns the unmodified, original object that was parsed to this resource. This is rather
@@ -261,23 +259,23 @@ object mod {
       * still have a reference to the source object) but it is a convenient way to get the part of
       * the source object that corresponds to an embedded resource.
       */
-    def original(): js.Any = js.native
+    def original(): js.Any
     
     /**
       * Returns the compact URI for the given full URL, if any
       */
-    def reverseResolveCurie(fullUrl: String): String = js.native
+    def reverseResolveCurie(fullUrl: String): String
     
     /**
       * Alias for validationIssues()
       */
-    def validation(): js.Any = js.native
+    def validation(): js.Any
     
     /**
       * Returns all validation issues. Validation issues are only gathered if validation has been
       * turned on by calling ``halfred.enableValidation()`` before calling ``halfred.parse``.
       */
-    def validationIssues(): js.Any = js.native
+    def validationIssues(): js.Any
   }
   object Resource {
     

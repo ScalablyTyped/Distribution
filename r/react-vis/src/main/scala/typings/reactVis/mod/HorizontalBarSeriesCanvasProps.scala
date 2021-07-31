@@ -2,13 +2,13 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HorizontalBarSeriesCanvasProps extends AbstractSeriesProps[HorizontalBarSeriesPoint] {
+trait HorizontalBarSeriesCanvasProps
+  extends StObject
+     with AbstractSeriesProps[HorizontalBarSeriesPoint] {
   
-  var barWidth: Double = js.native
+  var barWidth: Double
 }
 object HorizontalBarSeriesCanvasProps {
   

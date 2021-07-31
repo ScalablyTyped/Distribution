@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SymbolProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
     */
-  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object SymbolProperties {
   

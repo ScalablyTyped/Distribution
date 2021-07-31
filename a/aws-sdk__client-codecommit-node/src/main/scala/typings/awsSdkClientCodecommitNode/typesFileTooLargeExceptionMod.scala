@@ -4,24 +4,23 @@ import typings.awsSdkClientCodecommitNode.getBlobExceptionsUnionMod.GetBlobExcep
 import typings.awsSdkClientCodecommitNode.getFileExceptionsUnionMod.GetFileExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesFileTooLargeExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_FileTooLargeExceptionDetails> * / any */ @js.native
-  trait FileTooLargeException
-    extends GetBlobExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_FileTooLargeExceptionDetails> * / any */ trait FileTooLargeException
+    extends StObject
+       with GetBlobExceptionsUnion
        with GetFileExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileTooLargeException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileTooLargeException
   }
   object FileTooLargeException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileTooLargeException): FileTooLargeException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): FileTooLargeException = {
+      val __obj = js.Dynamic.literal(name = "FileTooLargeException")
       __obj.asInstanceOf[FileTooLargeException]
     }
     
@@ -33,6 +32,5 @@ object typesFileTooLargeExceptionMod {
     }
   }
   
-  @js.native
   trait FileTooLargeExceptionDetails extends StObject
 }

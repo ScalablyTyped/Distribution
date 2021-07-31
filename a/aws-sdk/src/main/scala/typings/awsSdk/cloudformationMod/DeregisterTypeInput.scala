@@ -2,31 +2,29 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterTypeInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the type. Conditional: You must specify either TypeName and Type, or Arn.
     */
-  var Arn: js.UndefOr[PrivateTypeArn] = js.native
+  var Arn: js.UndefOr[PrivateTypeArn] = js.undefined
   
   /**
     * The kind of type. Currently the only valid value is RESOURCE. Conditional: You must specify either TypeName and Type, or Arn.
     */
-  var Type: js.UndefOr[RegistryType] = js.native
+  var Type: js.UndefOr[RegistryType] = js.undefined
   
   /**
     * The name of the type. Conditional: You must specify either TypeName and Type, or Arn.
     */
-  var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.native
+  var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.undefined
   
   /**
     * The ID of a specific version of the type. The version ID is the value at the end of the Amazon Resource Name (ARN) assigned to the type version when it is registered.
     */
-  var VersionId: js.UndefOr[TypeVersionId] = js.native
+  var VersionId: js.UndefOr[TypeVersionId] = js.undefined
 }
 object DeregisterTypeInput {
   

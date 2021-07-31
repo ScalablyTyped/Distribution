@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2LogFile extends StObject {
   
   /** The digest of the log contents. */
-  var digest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.native
+  var digest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
     * This is a hint as to the purpose of the log, and is set to true if the log is human-readable text that can be usefully displayed to a user, and false otherwise. For instance, if a
     * command-line client wishes to print the server logs to the terminal for a failed action, this allows it to avoid displaying a binary file.
     */
-  var humanReadable: js.UndefOr[Boolean] = js.native
+  var humanReadable: js.UndefOr[Boolean] = js.undefined
 }
 object BuildBazelRemoteExecutionV2LogFile {
   

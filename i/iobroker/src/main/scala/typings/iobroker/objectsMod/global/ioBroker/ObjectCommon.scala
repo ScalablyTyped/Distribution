@@ -3,28 +3,26 @@ package typings.iobroker.objectsMod.global.ioBroker
 import typings.iobroker.iobrokerBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectCommon extends StObject {
   
   /** When set to true, this object may not be deleted */
-  var dontDelete: js.UndefOr[`true`] = js.native
+  var dontDelete: js.UndefOr[`true`] = js.undefined
   
   /** When set to true, this object is only visible when expert mode is turned on in admin */
-  var expert: js.UndefOr[`true`] = js.native
+  var expert: js.UndefOr[`true`] = js.undefined
   
   // Icon and role aren't defined in SCHEMA.md,
   // but they are being used by some adapters
   /** Icon for this object */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /** The name of this object as a simple string or an object with translations */
-  var name: StringOrTranslated = js.native
+  var name: StringOrTranslated
   
   /** role of the object */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object ObjectCommon {
   

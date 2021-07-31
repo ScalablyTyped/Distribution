@@ -5,14 +5,16 @@ import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spaceToBatchNDMod {
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/SpaceToBatchND", "spaceToBatchND")
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/SpaceToBatchND", JSImport.Namespace)
   @js.native
-  def spaceToBatchND(args: AttrsSpaceToBatchNDAttrs): TensorInfo = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def spaceToBatchND(args: AttrsSpaceToBatchNDAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("spaceToBatchND")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/SpaceToBatchND", "spaceToBatchNDConfig")
   @js.native

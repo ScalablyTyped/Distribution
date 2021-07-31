@@ -2,61 +2,59 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectorModelConfiguration extends StObject {
   
   /**
     * The time the detector model was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the detector model.
     */
-  var detectorModelArn: js.UndefOr[DetectorModelArn] = js.native
+  var detectorModelArn: js.UndefOr[DetectorModelArn] = js.undefined
   
   /**
     * A brief description of the detector model.
     */
-  var detectorModelDescription: js.UndefOr[DetectorModelDescription] = js.native
+  var detectorModelDescription: js.UndefOr[DetectorModelDescription] = js.undefined
   
   /**
     * The name of the detector model.
     */
-  var detectorModelName: js.UndefOr[DetectorModelName] = js.native
+  var detectorModelName: js.UndefOr[DetectorModelName] = js.undefined
   
   /**
     * The version of the detector model.
     */
-  var detectorModelVersion: js.UndefOr[DetectorModelVersion] = js.native
+  var detectorModelVersion: js.UndefOr[DetectorModelVersion] = js.undefined
   
   /**
     * Information about the order in which events are evaluated and how actions are executed. 
     */
-  var evaluationMethod: js.UndefOr[EvaluationMethod] = js.native
+  var evaluationMethod: js.UndefOr[EvaluationMethod] = js.undefined
   
   /**
     * The value used to identify a detector instance. When a device or system sends input, a new detector instance with a unique key value is created. AWS IoT Events can continue to route input to its corresponding detector instance based on this identifying information.  This parameter uses a JSON-path expression to select the attribute-value pair in the message payload that is used for identification. To route the message to the correct detector instance, the device must send a message payload that contains the same attribute-value.
     */
-  var key: js.UndefOr[AttributeJsonPath] = js.native
+  var key: js.UndefOr[AttributeJsonPath] = js.undefined
   
   /**
     * The time the detector model was last updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the role that grants permission to AWS IoT Events to perform its operations.
     */
-  var roleArn: js.UndefOr[AmazonResourceName] = js.native
+  var roleArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The status of the detector model.
     */
-  var status: js.UndefOr[DetectorModelVersionStatus] = js.native
+  var status: js.UndefOr[DetectorModelVersionStatus] = js.undefined
 }
 object DetectorModelConfiguration {
   

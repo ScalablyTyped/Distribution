@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoursOfOperationSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the hours of operation.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the hours of operation.
     */
-  var Id: js.UndefOr[HoursOfOperationId] = js.native
+  var Id: js.UndefOr[HoursOfOperationId] = js.undefined
   
   /**
     * The name of the hours of operation.
     */
-  var Name: js.UndefOr[HoursOfOperationName] = js.native
+  var Name: js.UndefOr[HoursOfOperationName] = js.undefined
 }
 object HoursOfOperationSummary {
   

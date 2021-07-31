@@ -10,9 +10,9 @@ QRCode / 2d Barcode api with both server side and client side support using canv
 | ------------------ | :-------------: |
 | Full name          | qrcode |
 | Keywords           | qr, code, canvas, qrcode |
-| # releases         | 11 |
-| # dependents       | 544 |
-| # downloads        | 10358636 |
+| # releases         | 7 |
+| # dependents       | 648 |
+| # downloads        | 13932489 |
 | # stars            | 50 |
 
 ## Links

@@ -2,66 +2,64 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateProductInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The tags to add to the product.
     */
-  var AddTags: js.UndefOr[typings.awsSdk.servicecatalogMod.AddTags] = js.native
+  var AddTags: js.UndefOr[typings.awsSdk.servicecatalogMod.AddTags] = js.undefined
   
   /**
     * The updated description of the product.
     */
-  var Description: js.UndefOr[ProductViewShortDescription] = js.native
+  var Description: js.UndefOr[ProductViewShortDescription] = js.undefined
   
   /**
     * The updated distributor of the product.
     */
-  var Distributor: js.UndefOr[ProductViewOwner] = js.native
+  var Distributor: js.UndefOr[ProductViewOwner] = js.undefined
   
   /**
     * The product identifier.
     */
-  var Id: typings.awsSdk.servicecatalogMod.Id = js.native
+  var Id: typings.awsSdk.servicecatalogMod.Id
   
   /**
     * The updated product name.
     */
-  var Name: js.UndefOr[ProductViewName] = js.native
+  var Name: js.UndefOr[ProductViewName] = js.undefined
   
   /**
     * The updated owner of the product.
     */
-  var Owner: js.UndefOr[ProductViewOwner] = js.native
+  var Owner: js.UndefOr[ProductViewOwner] = js.undefined
   
   /**
     * The tags to remove from the product.
     */
-  var RemoveTags: js.UndefOr[TagKeys] = js.native
+  var RemoveTags: js.UndefOr[TagKeys] = js.undefined
   
   /**
     * The updated support description for the product.
     */
-  var SupportDescription: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportDescription] = js.native
+  var SupportDescription: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportDescription] = js.undefined
   
   /**
     * The updated support email for the product.
     */
-  var SupportEmail: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportEmail] = js.native
+  var SupportEmail: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportEmail] = js.undefined
   
   /**
     * The updated support URL for the product.
     */
-  var SupportUrl: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportUrl] = js.native
+  var SupportUrl: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportUrl] = js.undefined
 }
 object UpdateProductInput {
   

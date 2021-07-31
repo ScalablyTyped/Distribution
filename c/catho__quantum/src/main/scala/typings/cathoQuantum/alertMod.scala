@@ -14,7 +14,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alertMod {
@@ -26,18 +25,17 @@ object alertMod {
   
   type Alert = Component[AlertProps, js.Object, js.Any]
   
-  @js.native
   trait AlertProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var onClose: MouseEventHandler[HTMLButtonElement] = js.native
+    var onClose: MouseEventHandler[HTMLButtonElement]
     
-    var skin: js.UndefOr[primary | success | error | neutral | warning] = js.native
+    var skin: js.UndefOr[primary | success | error | neutral | warning] = js.undefined
     
-    var theme: js.UndefOr[Colors] = js.native
+    var theme: js.UndefOr[Colors] = js.undefined
   }
   object AlertProps {
     

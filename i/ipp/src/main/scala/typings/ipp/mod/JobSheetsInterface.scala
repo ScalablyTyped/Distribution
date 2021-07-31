@@ -2,17 +2,15 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobSheetsInterface extends StObject {
   
-  var `job-sheets`: js.UndefOr[JobSheets] = js.native
+  var `job-sheets`: js.UndefOr[JobSheets] = js.undefined
   
-  var media: js.UndefOr[Media] = js.native
+  var media: js.UndefOr[Media] = js.undefined
   
-  var `media-col`: js.UndefOr[MediaInterface] = js.native
+  var `media-col`: js.UndefOr[MediaInterface] = js.undefined
 }
 object JobSheetsInterface {
   

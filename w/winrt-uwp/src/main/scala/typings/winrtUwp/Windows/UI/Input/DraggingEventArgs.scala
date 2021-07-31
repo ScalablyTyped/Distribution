@@ -4,21 +4,19 @@ import typings.winrtUwp.Windows.Devices.Input.PointerDeviceType
 import typings.winrtUwp.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the Dragging event. */
-@js.native
 trait DraggingEventArgs extends StObject {
   
   /** Gets the state of the Dragging event. */
-  var draggingState: DraggingState = js.native
+  var draggingState: DraggingState
   
   /** Gets the device type of the input source. */
-  var pointerDeviceType: PointerDeviceType = js.native
+  var pointerDeviceType: PointerDeviceType
   
   /** Gets the location of the mouse or pen/stylus contact. */
-  var position: Point = js.native
+  var position: Point
 }
 object DraggingEventArgs {
   

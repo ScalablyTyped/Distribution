@@ -2,36 +2,36 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TableOptions extends BoxOptions {
+trait TableOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * array of array of strings representing rows (same as `rows`).
     */
-  var data: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var data: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
     * fill cell borders with the adjacent background color.
     */
-  var fillCellBorders: js.UndefOr[Boolean] = js.native
+  var fillCellBorders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * do not draw inner cells.
     */
-  var noCellBorders: js.UndefOr[Boolean] = js.native
+  var noCellBorders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * spaces to attempt to pad on the sides of each cell. `2` by default: one space on each side (only useful if the width is shrunken).
     */
-  var pad: js.UndefOr[Double] = js.native
+  var pad: js.UndefOr[Double] = js.undefined
   
   /**
     * array of array of strings representing rows (same as `data`).
     */
-  var rows: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var rows: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
 }
 object TableOptions {
   

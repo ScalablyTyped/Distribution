@@ -2,17 +2,15 @@ package typings.pg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryParse extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var text: String = js.native
+  var text: String
   
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
 }
 object QueryParse {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * associated string aliases. They can be viewed and edited via the Sheets UI under the Data >
   * Named ranges... menu.
   */
-@js.native
 trait NamedRange extends StObject {
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def getRange(): Range = js.native
+  def getRange(): Range
   
-  def remove(): Unit = js.native
+  def remove(): Unit
   
-  def setName(name: String): NamedRange = js.native
+  def setName(name: String): NamedRange
   
-  def setRange(range: Range): NamedRange = js.native
+  def setRange(range: Range): NamedRange
 }
 object NamedRange {
   

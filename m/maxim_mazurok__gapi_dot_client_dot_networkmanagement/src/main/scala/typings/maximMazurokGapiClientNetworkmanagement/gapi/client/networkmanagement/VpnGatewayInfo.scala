@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnGatewayInfo extends StObject {
   
   /** Name of a VPN gateway. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** IP address of the VPN gateway. */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /** URI of a Compute Engine network where the VPN gateway is configured. */
-  var networkUri: js.UndefOr[String] = js.native
+  var networkUri: js.UndefOr[String] = js.undefined
   
   /** Name of a GCP region where this VPN gateway is configured. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /** URI of a VPN gateway. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
   /** A VPN tunnel that is associated with this VPN gateway. There may be multiple VPN tunnels configured on a VPN gateway, and only the one relevant to the test is displayed. */
-  var vpnTunnelUri: js.UndefOr[String] = js.native
+  var vpnTunnelUri: js.UndefOr[String] = js.undefined
 }
 object VpnGatewayInfo {
   

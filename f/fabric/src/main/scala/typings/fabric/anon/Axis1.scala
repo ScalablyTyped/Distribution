@@ -2,19 +2,17 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Axis1 extends StObject {
   
-  var axis1: js.Any = js.native
+  var axis1: js.Any
   
-  var axis2: js.Any = js.native
+  var axis2: js.Any
   
-  var dimension: js.Any = js.native
+  var dimension: js.Any
   
-  var origin: Double = js.native
+  var origin: Double
 }
 object Axis1 {
   

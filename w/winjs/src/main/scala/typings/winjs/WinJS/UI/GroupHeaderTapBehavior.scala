@@ -2,7 +2,6 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,11 +17,15 @@ object GroupHeaderTapBehavior extends StObject {
     * The group is invoked.
     **/
   @js.native
-  sealed trait invoke extends GroupHeaderTapBehavior
+  sealed trait invoke
+    extends StObject
+       with GroupHeaderTapBehavior
   
   /**
     * Nothing happens.
     **/
   @js.native
-  sealed trait none extends GroupHeaderTapBehavior
+  sealed trait none
+    extends StObject
+       with GroupHeaderTapBehavior
 }

@@ -2,26 +2,24 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scrollable extends StObject {
   
   // Used for comparision with dynamic recollecting
-  var frameClient: BoxModel = js.native
+  var frameClient: BoxModel
   
   // This is the window through which the droppable is observed
   // It does not change during a drag
-  var pageMarginBox: Rect = js.native
+  var pageMarginBox: Rect
   
-  var scroll: ScrollDetails = js.native
+  var scroll: ScrollDetails
   
-  var scrollSize: ScrollSize = js.native
+  var scrollSize: ScrollSize
   
   // Whether or not we should clip the subject by the frame
   // Is controlled by the ignoreContainerClipping prop
-  var shouldClipSubject: Boolean = js.native
+  var shouldClipSubject: Boolean
 }
 object Scrollable {
   

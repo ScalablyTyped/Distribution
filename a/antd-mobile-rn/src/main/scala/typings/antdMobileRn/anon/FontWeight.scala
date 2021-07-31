@@ -2,23 +2,21 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontWeight extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var color: String = js.native
+  var color: String
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var fontWeight: String = js.native
+  var fontWeight: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var marginTop: Double = js.native
+  var marginTop: Double
 }
 object FontWeight {
   

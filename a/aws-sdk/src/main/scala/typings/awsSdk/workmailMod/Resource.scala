@@ -2,46 +2,44 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resource extends StObject {
   
   /**
     * The date indicating when the resource was disabled from Amazon WorkMail use.
     */
-  var DisabledDate: js.UndefOr[Timestamp] = js.native
+  var DisabledDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The email of the resource.
     */
-  var Email: js.UndefOr[EmailAddress] = js.native
+  var Email: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * The date indicating when the resource was enabled for Amazon WorkMail use.
     */
-  var EnabledDate: js.UndefOr[Timestamp] = js.native
+  var EnabledDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The identifier of the resource.
     */
-  var Id: js.UndefOr[WorkMailIdentifier] = js.native
+  var Id: js.UndefOr[WorkMailIdentifier] = js.undefined
   
   /**
     * The name of the resource.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The state of the resource, which can be ENABLED, DISABLED, or DELETED.
     */
-  var State: js.UndefOr[EntityState] = js.native
+  var State: js.UndefOr[EntityState] = js.undefined
   
   /**
     * The type of the resource: equipment or room.
     */
-  var Type: js.UndefOr[ResourceType] = js.native
+  var Type: js.UndefOr[ResourceType] = js.undefined
 }
 object Resource {
   

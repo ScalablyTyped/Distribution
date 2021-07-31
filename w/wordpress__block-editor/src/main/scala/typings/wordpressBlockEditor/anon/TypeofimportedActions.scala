@@ -7,7 +7,6 @@ import typings.wordpressBlockEditor.mod.EditorBlockListSettings
 import typings.wordpressBlocks.mod.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,122 +20,83 @@ trait TypeofimportedActions extends StObject {
   
   def hideInsertionPoint(): Unit = js.native
   
-  def insertBlock(block: BlockInstance[StringDictionary[_]]): Unit = js.native
+  def insertBlock(block: BlockInstance[StringDictionary[js.Any]]): Unit = js.native
+  def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Double): Unit = js.native
+  def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Double, rootClientId: String): Unit = js.native
   def insertBlock(
-    block: BlockInstance[StringDictionary[_]],
-    index: js.UndefOr[scala.Nothing],
-    rootClientId: js.UndefOr[scala.Nothing],
+    block: BlockInstance[StringDictionary[js.Any]],
+    index: Double,
+    rootClientId: String,
     updateSelection: Boolean
   ): Unit = js.native
-  def insertBlock(block: BlockInstance[StringDictionary[_]], index: js.UndefOr[scala.Nothing], rootClientId: String): Unit = js.native
   def insertBlock(
-    block: BlockInstance[StringDictionary[_]],
-    index: js.UndefOr[scala.Nothing],
+    block: BlockInstance[StringDictionary[js.Any]],
+    index: Double,
+    rootClientId: Unit,
+    updateSelection: Boolean
+  ): Unit = js.native
+  def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Unit, rootClientId: String): Unit = js.native
+  def insertBlock(
+    block: BlockInstance[StringDictionary[js.Any]],
+    index: Unit,
     rootClientId: String,
     updateSelection: Boolean
   ): Unit = js.native
-  def insertBlock(block: BlockInstance[StringDictionary[_]], index: Double): Unit = js.native
   def insertBlock(
-    block: BlockInstance[StringDictionary[_]],
-    index: Double,
-    rootClientId: js.UndefOr[scala.Nothing],
-    updateSelection: Boolean
-  ): Unit = js.native
-  def insertBlock(block: BlockInstance[StringDictionary[_]], index: Double, rootClientId: String): Unit = js.native
-  def insertBlock(
-    block: BlockInstance[StringDictionary[_]],
-    index: Double,
-    rootClientId: String,
+    block: BlockInstance[StringDictionary[js.Any]],
+    index: Unit,
+    rootClientId: Unit,
     updateSelection: Boolean
   ): Unit = js.native
   
-  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]]): IterableIterator[Unit] = js.native
+  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = js.native
+  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Double): IterableIterator[Unit] = js.native
+  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Double, rootClientId: String): IterableIterator[Unit] = js.native
   def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
-    index: js.UndefOr[scala.Nothing],
-    rootClientId: js.UndefOr[scala.Nothing],
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    index: Double,
+    rootClientId: String,
     updateSelection: Boolean
   ): IterableIterator[Unit] = js.native
   def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
-    index: js.UndefOr[scala.Nothing],
-    rootClientId: String
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    index: Double,
+    rootClientId: Unit,
+    updateSelection: Boolean
   ): IterableIterator[Unit] = js.native
+  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Unit, rootClientId: String): IterableIterator[Unit] = js.native
   def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
-    index: js.UndefOr[scala.Nothing],
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    index: Unit,
     rootClientId: String,
     updateSelection: Boolean
   ): IterableIterator[Unit] = js.native
-  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]], index: Double): IterableIterator[Unit] = js.native
   def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
-    index: Double,
-    rootClientId: js.UndefOr[scala.Nothing],
-    updateSelection: Boolean
-  ): IterableIterator[Unit] = js.native
-  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]], index: Double, rootClientId: String): IterableIterator[Unit] = js.native
-  def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
-    index: Double,
-    rootClientId: String,
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    index: Unit,
+    rootClientId: Unit,
     updateSelection: Boolean
   ): IterableIterator[Unit] = js.native
   
   def insertDefaultBlock(): Unit = js.native
-  def insertDefaultBlock(attributes: js.UndefOr[scala.Nothing], rootClientId: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-  def insertDefaultBlock(attributes: js.UndefOr[scala.Nothing], rootClientId: String): Unit = js.native
-  def insertDefaultBlock(attributes: js.UndefOr[scala.Nothing], rootClientId: String, index: Double): Unit = js.native
-  def insertDefaultBlock(attributes: Record[String, _]): Unit = js.native
-  def insertDefaultBlock(attributes: Record[String, _], rootClientId: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-  def insertDefaultBlock(attributes: Record[String, _], rootClientId: String): Unit = js.native
-  def insertDefaultBlock(attributes: Record[String, _], rootClientId: String, index: Double): Unit = js.native
+  def insertDefaultBlock(attributes: Unit, rootClientId: String): Unit = js.native
+  def insertDefaultBlock(attributes: Unit, rootClientId: String, index: Double): Unit = js.native
+  def insertDefaultBlock(attributes: Unit, rootClientId: Unit, index: Double): Unit = js.native
+  def insertDefaultBlock(attributes: Record[String, js.Any]): Unit = js.native
+  def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: String): Unit = js.native
+  def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: String, index: Double): Unit = js.native
+  def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: Unit, index: Double): Unit = js.native
   
   def mergeBlocks(firstBlockClientId: String, secondBlockClientId: String): Unit = js.native
   
-  def moveBlockToPosition(
-    clientId: js.UndefOr[scala.Nothing],
-    fromRootClientId: js.UndefOr[scala.Nothing],
-    toRootClientId: js.UndefOr[scala.Nothing],
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  def moveBlockToPosition(
-    clientId: js.UndefOr[scala.Nothing],
-    fromRootClientId: js.UndefOr[scala.Nothing],
-    toRootClientId: String,
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  def moveBlockToPosition(
-    clientId: js.UndefOr[scala.Nothing],
-    fromRootClientId: String,
-    toRootClientId: js.UndefOr[scala.Nothing],
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  def moveBlockToPosition(
-    clientId: js.UndefOr[scala.Nothing],
-    fromRootClientId: String,
-    toRootClientId: String,
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  def moveBlockToPosition(
-    clientId: String,
-    fromRootClientId: js.UndefOr[scala.Nothing],
-    toRootClientId: js.UndefOr[scala.Nothing],
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  def moveBlockToPosition(
-    clientId: String,
-    fromRootClientId: js.UndefOr[scala.Nothing],
-    toRootClientId: String,
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  def moveBlockToPosition(
-    clientId: String,
-    fromRootClientId: String,
-    toRootClientId: js.UndefOr[scala.Nothing],
-    index: Double
-  ): IterableIterator[Unit] = js.native
   def moveBlockToPosition(clientId: String, fromRootClientId: String, toRootClientId: String, index: Double): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(clientId: String, fromRootClientId: String, toRootClientId: Unit, index: Double): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(clientId: String, fromRootClientId: Unit, toRootClientId: String, index: Double): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(clientId: String, fromRootClientId: Unit, toRootClientId: Unit, index: Double): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(clientId: Unit, fromRootClientId: String, toRootClientId: String, index: Double): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(clientId: Unit, fromRootClientId: String, toRootClientId: Unit, index: Double): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(clientId: Unit, fromRootClientId: Unit, toRootClientId: String, index: Double): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(clientId: Unit, fromRootClientId: Unit, toRootClientId: Unit, index: Double): IterableIterator[Unit] = js.native
   
   def moveBlocksDown(clientIds: String, rootClientId: String): Unit = js.native
   def moveBlocksDown(clientIds: js.Array[String], rootClientId: String): Unit = js.native
@@ -146,7 +106,7 @@ trait TypeofimportedActions extends StObject {
   
   def multiSelect(start: String, end: String): Unit = js.native
   
-  def receiveBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]]): Unit = js.native
+  def receiveBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = js.native
   
   def removeBlock(clientId: String): Unit = js.native
   def removeBlock(clientId: String, selectPrevious: Boolean): Unit = js.native
@@ -156,32 +116,40 @@ trait TypeofimportedActions extends StObject {
   def removeBlocks(clientIds: js.Array[String]): IterableIterator[Unit] = js.native
   def removeBlocks(clientIds: js.Array[String], selectPrevious: Boolean): IterableIterator[Unit] = js.native
   
-  def replaceBlock(clientId: String, block: js.Array[BlockInstance[StringDictionary[_]]]): Unit = js.native
-  def replaceBlock(clientId: String, block: BlockInstance[StringDictionary[_]]): Unit = js.native
-  def replaceBlock(clientId: js.Array[String], block: js.Array[BlockInstance[StringDictionary[_]]]): Unit = js.native
-  def replaceBlock(clientId: js.Array[String], block: BlockInstance[StringDictionary[_]]): Unit = js.native
+  def replaceBlock(clientId: String, block: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = js.native
+  def replaceBlock(clientId: String, block: BlockInstance[StringDictionary[js.Any]]): Unit = js.native
+  def replaceBlock(clientId: js.Array[String], block: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = js.native
+  def replaceBlock(clientId: js.Array[String], block: BlockInstance[StringDictionary[js.Any]]): Unit = js.native
   
-  def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[_]]]): IterableIterator[Unit] = js.native
-  def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[_]]], indexToSelect: Double): IterableIterator[Unit] = js.native
-  def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[_]]): IterableIterator[Unit] = js.native
-  def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[_]], indexToSelect: Double): IterableIterator[Unit] = js.native
-  def replaceBlocks(clientIds: js.Array[String], blocks: js.Array[BlockInstance[StringDictionary[_]]]): IterableIterator[Unit] = js.native
+  def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = js.native
   def replaceBlocks(
-    clientIds: js.Array[String],
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
+    clientIds: String,
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
     indexToSelect: Double
   ): IterableIterator[Unit] = js.native
-  def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[_]]): IterableIterator[Unit] = js.native
-  def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[_]], indexToSelect: Double): IterableIterator[Unit] = js.native
+  def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[js.Any]]): IterableIterator[Unit] = js.native
+  def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[js.Any]], indexToSelect: Double): IterableIterator[Unit] = js.native
+  def replaceBlocks(clientIds: js.Array[String], blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = js.native
+  def replaceBlocks(
+    clientIds: js.Array[String],
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    indexToSelect: Double
+  ): IterableIterator[Unit] = js.native
+  def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[js.Any]]): IterableIterator[Unit] = js.native
+  def replaceBlocks(
+    clientIds: js.Array[String],
+    blocks: BlockInstance[StringDictionary[js.Any]],
+    indexToSelect: Double
+  ): IterableIterator[Unit] = js.native
   
-  def replaceInnerBlocks(rootClientId: String, blocks: js.Array[BlockInstance[StringDictionary[_]]]): Unit = js.native
+  def replaceInnerBlocks(rootClientId: String, blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = js.native
   def replaceInnerBlocks(
     rootClientId: String,
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
     updateSelection: Boolean
   ): Unit = js.native
   
-  def resetBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]]): Unit = js.native
+  def resetBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = js.native
   
   def selectBlock(clientId: String): Unit = js.native
   def selectBlock(clientId: String, initialPosition: Double): Unit = js.native
@@ -195,9 +163,9 @@ trait TypeofimportedActions extends StObject {
   def setTemplateValidity(isValid: Boolean): Unit = js.native
   
   def showInsertionPoint(): Unit = js.native
-  def showInsertionPoint(rootClientId: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def showInsertionPoint(rootClientId: String): Unit = js.native
   def showInsertionPoint(rootClientId: String, index: Double): Unit = js.native
+  def showInsertionPoint(rootClientId: Unit, index: Double): Unit = js.native
   
   def startMultiSelect(): Unit = js.native
   
@@ -216,7 +184,7 @@ trait TypeofimportedActions extends StObject {
   
   def updateBlock(clientId: String, updates: PartialBlockInstancekstri): Unit = js.native
   
-  def updateBlockAttributes(clientId: String, attributes: Record[String, _]): Unit = js.native
+  def updateBlockAttributes(clientId: String, attributes: Record[String, js.Any]): Unit = js.native
   
   def updateBlockListSettings(clientId: String, settings: EditorBlockListSettings): Unit = js.native
   

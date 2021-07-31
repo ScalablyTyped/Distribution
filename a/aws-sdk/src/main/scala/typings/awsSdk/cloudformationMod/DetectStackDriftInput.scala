@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectStackDriftInput extends StObject {
   
   /**
     * The logical names of any resources you want to use as filters.
     */
-  var LogicalResourceIds: js.UndefOr[typings.awsSdk.cloudformationMod.LogicalResourceIds] = js.native
+  var LogicalResourceIds: js.UndefOr[typings.awsSdk.cloudformationMod.LogicalResourceIds] = js.undefined
   
   /**
     * The name of the stack for which you want to detect drift. 
     */
-  var StackName: StackNameOrId = js.native
+  var StackName: StackNameOrId
 }
 object DetectStackDriftInput {
   

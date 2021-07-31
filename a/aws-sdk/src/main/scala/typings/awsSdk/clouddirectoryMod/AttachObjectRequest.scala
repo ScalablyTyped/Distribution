@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachObjectRequest extends StObject {
   
   /**
     * The child object reference to be attached to the object.
     */
-  var ChildReference: ObjectReference = js.native
+  var ChildReference: ObjectReference
   
   /**
     * Amazon Resource Name (ARN) that is associated with the Directory where both objects reside. For more information, see arns.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * The link name with which the child object is attached to the parent.
     */
-  var LinkName: typings.awsSdk.clouddirectoryMod.LinkName = js.native
+  var LinkName: typings.awsSdk.clouddirectoryMod.LinkName
   
   /**
     * The parent object reference.
     */
-  var ParentReference: ObjectReference = js.native
+  var ParentReference: ObjectReference
 }
 object AttachObjectRequest {
   

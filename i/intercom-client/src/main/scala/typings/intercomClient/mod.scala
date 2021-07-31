@@ -38,7 +38,6 @@ import typings.node.netMod.Socket
 import typings.request.mod.CoreOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -88,8 +87,8 @@ object mod {
     
     def archive(): js.Promise[Company] = js.native
     
-    def create(company: CompanyIdentifier with PartialCompany): js.Promise[ApiResponse[Company]] = js.native
-    def create(company: CompanyIdentifier with PartialCompany, cb: callback[ApiResponse[Company]]): Unit = js.native
+    def create(company: CompanyIdentifier & PartialCompany): js.Promise[ApiResponse[Company]] = js.native
+    def create(company: CompanyIdentifier & PartialCompany, cb: callback[ApiResponse[Company]]): Unit = js.native
     
     def find(identifier: CompanyIdentifier): js.Promise[ApiResponse[Company]] = js.native
     def find(identifier: CompanyIdentifier, cb: callback[ApiResponse[Company]]): Unit = js.native
@@ -102,8 +101,8 @@ object mod {
     
     var scroll: Scroll[Company] = js.native
     
-    def update(company: CompanyIdentifier with PartialCompany): js.Promise[ApiResponse[Company]] = js.native
-    def update(company: CompanyIdentifier with PartialCompany, cb: callback[ApiResponse[Company]]): Unit = js.native
+    def update(company: CompanyIdentifier & PartialCompany): js.Promise[ApiResponse[Company]] = js.native
+    def update(company: CompanyIdentifier & PartialCompany, cb: callback[ApiResponse[Company]]): Unit = js.native
   }
   
   @JSImport("intercom-client", "Events")
@@ -119,9 +118,12 @@ object mod {
   
   object IdentityVerification {
     
-    @JSImport("intercom-client", "IdentityVerification.userHash")
+    @JSImport("intercom-client", "IdentityVerification")
     @js.native
-    def userHash(opts: IdentityVerificationOptions): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def userHash(opts: IdentityVerificationOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("userHash")(opts.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("intercom-client", "Leads")
@@ -146,8 +148,8 @@ object mod {
     def listBy(params: Email): js.Promise[ApiResponse[typings.intercomClient.leadMod.List]] = js.native
     def listBy(params: Email, cb: callback[ApiResponse[typings.intercomClient.leadMod.List]]): Unit = js.native
     
-    def update(lead: UserIdentifier with PartialLead): js.Promise[ApiResponse[Lead]] = js.native
-    def update(lead: UserIdentifier with PartialLead, cb: callback[ApiResponse[Lead]]): Unit = js.native
+    def update(lead: UserIdentifier & PartialLead): js.Promise[ApiResponse[Lead]] = js.native
+    def update(lead: UserIdentifier & PartialLead, cb: callback[ApiResponse[Lead]]): Unit = js.native
   }
   
   @JSImport("intercom-client", "Messages")
@@ -209,8 +211,8 @@ object mod {
     
     var scroll: Scroll[User] = js.native
     
-    def update(user: UserIdentifier with PartialCreateUpdateUser): js.Promise[ApiResponse[User]] = js.native
-    def update(user: UserIdentifier with PartialCreateUpdateUser, cb: callback[ApiResponse[User]]): Unit = js.native
+    def update(user: UserIdentifier & PartialCreateUpdateUser): js.Promise[ApiResponse[User]] = js.native
+    def update(user: UserIdentifier & PartialCreateUpdateUser, cb: callback[ApiResponse[User]]): Unit = js.native
   }
   
   @JSImport("intercom-client", "Visitors")
@@ -228,16 +230,15 @@ object mod {
     def find(identifier: VisitorIdentifier): js.Promise[ApiResponse[Visitor]] = js.native
     def find(identifier: VisitorIdentifier, cb: callback[ApiResponse[Visitor]]): Unit = js.native
     
-    def update(visitor: VisitorIdentifier with PartialVisitor): js.Promise[ApiResponse[Visitor]] = js.native
-    def update(visitor: VisitorIdentifier with PartialVisitor, cb: callback[ApiResponse[Visitor]]): Unit = js.native
+    def update(visitor: VisitorIdentifier & PartialVisitor): js.Promise[ApiResponse[Visitor]] = js.native
+    def update(visitor: VisitorIdentifier & PartialVisitor, cb: callback[ApiResponse[Visitor]]): Unit = js.native
   }
   
-  @js.native
   trait IdentityVerificationOptions extends StObject {
     
-    var identifier: String = js.native
+    var identifier: String
     
-    var secretKey: String = js.native
+    var secretKey: String
   }
   object IdentityVerificationOptions {
     

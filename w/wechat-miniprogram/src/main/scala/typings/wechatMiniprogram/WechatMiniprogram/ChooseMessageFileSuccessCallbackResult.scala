@@ -2,16 +2,14 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseMessageFileSuccessCallbackResult extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 返回选择的文件的本地临时文件对象数组 */
-  var tempFiles: js.Array[ChooseFile] = js.native
+  var tempFiles: js.Array[ChooseFile]
 }
 object ChooseMessageFileSuccessCallbackResult {
   

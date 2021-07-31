@@ -7,33 +7,33 @@ import typings.uifabricUtilities.selectionTypesMod.ISelection
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detailsFooterTypesMod {
   
   type IDetailsFooterBaseProps = IDetailsItemProps
   
-  @js.native
-  trait IDetailsFooterProps extends IDetailsItemProps {
+  trait IDetailsFooterProps
+    extends StObject
+       with IDetailsItemProps {
     
     /**
       * Column metadata
       */
     @JSName("columns")
-    var columns_IDetailsFooterProps: js.Array[IColumn] = js.native
+    var columns_IDetailsFooterProps: js.Array[IColumn]
     
     /**
       * Selection mode
       */
     @JSName("selectionMode")
-    var selectionMode_IDetailsFooterProps: SelectionMode = js.native
+    var selectionMode_IDetailsFooterProps: SelectionMode
     
     /**
       * Selection from utilities
       */
     @JSName("selection")
-    var selection_IDetailsFooterProps: ISelection[IObjectWithKey] = js.native
+    var selection_IDetailsFooterProps: ISelection[IObjectWithKey]
   }
   object IDetailsFooterProps {
     

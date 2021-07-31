@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Media.Audio
 import typings.winrtUwp.Windows.Media.AudioFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents arguments for an AudioFrameCompleted event. */
-@js.native
 trait AudioFrameCompletedEventArgs extends StObject {
   
   /** Gets the audio frame that was just completed by the AudioFrameInputNode . A frame is completed when all of the audio in the frame has been consumed by the audio graph. */
-  var frame: AudioFrame = js.native
+  var frame: AudioFrame
 }
 object AudioFrameCompletedEventArgs {
   

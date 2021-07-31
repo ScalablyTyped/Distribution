@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDefaultPatchBaselineResult extends StObject {
   
   /**
     * The ID of the default patch baseline.
     */
-  var BaselineId: js.UndefOr[typings.awsSdk.ssmMod.BaselineId] = js.native
+  var BaselineId: js.UndefOr[typings.awsSdk.ssmMod.BaselineId] = js.undefined
   
   /**
     * The operating system for the returned patch baseline. 
     */
-  var OperatingSystem: js.UndefOr[typings.awsSdk.ssmMod.OperatingSystem] = js.native
+  var OperatingSystem: js.UndefOr[typings.awsSdk.ssmMod.OperatingSystem] = js.undefined
 }
 object GetDefaultPatchBaselineResult {
   

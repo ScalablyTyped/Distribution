@@ -26,95 +26,93 @@ import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorBar extends StObject {
   
-  var bgcolor: Color = js.native
+  var bgcolor: Color
   
-  var bordercolor: Color = js.native
+  var bordercolor: Color
   
-  var borderwidth: Color = js.native
+  var borderwidth: Color
   
-  var dtick: DTickValue = js.native
+  var dtick: DTickValue
   
-  var exponentformat: none | e_ | E | power | SI | B = js.native
+  var exponentformat: none | e_ | E | power | SI | B
   
-  var len: Double = js.native
+  var len: Double
   
-  var lenmode: fraction | pixels = js.native
+  var lenmode: fraction | pixels
   
-  var nticks: Double = js.native
+  var nticks: Double
   
-  var outlinecolor: Color = js.native
+  var outlinecolor: Color
   
-  var outlinewidth: Double = js.native
+  var outlinewidth: Double
   
-  var separatethousands: Boolean = js.native
+  var separatethousands: Boolean
   
-  var showexponent: all | first | last | none = js.native
+  var showexponent: all | first | last | none
   
-  var showticklabels: Boolean = js.native
+  var showticklabels: Boolean
   
-  var showtickprefix: all | first | last | none = js.native
+  var showtickprefix: all | first | last | none
   
-  var showticksuffix: all | first | last | none = js.native
+  var showticksuffix: all | first | last | none
   
-  var thickness: Double = js.native
+  var thickness: Double
   
-  var thicknessmode: fraction | pixels = js.native
+  var thicknessmode: fraction | pixels
   
-  var tick0: Double | String = js.native
+  var tick0: Double | String
   
-  var tickangle: Double = js.native
+  var tickangle: Double
   
-  var tickcolor: Color = js.native
+  var tickcolor: Color
   
-  var tickfont: Font = js.native
+  var tickfont: Font
   
-  var tickformat: String = js.native
+  var tickformat: String
   
-  var tickformatstops: js.Array[PartialTickFormatStop] = js.native
+  var tickformatstops: js.Array[PartialTickFormatStop]
   
-  var ticklen: Double = js.native
+  var ticklen: Double
   
-  var tickmode: auto | linear | array = js.native
+  var tickmode: auto | linear | array
   
-  var tickprefix: String = js.native
+  var tickprefix: String
   
-  var ticks: outside | inside | _empty = js.native
+  var ticks: outside | inside | _empty
   
-  var ticksuffix: String = js.native
+  var ticksuffix: String
   
-  var ticktext: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray = js.native
+  var ticktext: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray
   
-  var ticktextsrc: js.Any = js.native
+  var ticktextsrc: js.Any
   
-  var tickvals: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray = js.native
+  var tickvals: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray
   
-  var tickvalssrc: js.Any = js.native
+  var tickvalssrc: js.Any
   
-  var tickwidth: Double = js.native
+  var tickwidth: Double
   
-  var title: String = js.native
+  var title: String
   
-  var titlefont: Font = js.native
+  var titlefont: Font
   
-  var titleside: right | top | bottom = js.native
+  var titleside: right | top | bottom
   
-  var x: Double = js.native
+  var x: Double
   
-  var xanchor: left | center | right = js.native
+  var xanchor: left | center | right
   
-  var xpad: Double = js.native
+  var xpad: Double
   
-  var y: Double = js.native
+  var y: Double
   
-  var yanchor: top | middle | bottom = js.native
+  var yanchor: top | middle | bottom
   
-  var ypad: Double = js.native
+  var ypad: Double
 }
 object ColorBar {
   

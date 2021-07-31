@@ -2,7 +2,6 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,39 +12,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ChartColorScheme extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ChartColorScheme with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ChartColorScheme & String] = js.native
   
-  /* "ColorfulPalette1" */ val colorfulPalette1: typings.officeJs.Excel.ChartColorScheme.colorfulPalette1 with String = js.native
+  /* "ColorfulPalette1" */ val colorfulPalette1: typings.officeJs.Excel.ChartColorScheme.colorfulPalette1 & String = js.native
   
-  /* "ColorfulPalette2" */ val colorfulPalette2: typings.officeJs.Excel.ChartColorScheme.colorfulPalette2 with String = js.native
+  /* "ColorfulPalette2" */ val colorfulPalette2: typings.officeJs.Excel.ChartColorScheme.colorfulPalette2 & String = js.native
   
-  /* "ColorfulPalette3" */ val colorfulPalette3: typings.officeJs.Excel.ChartColorScheme.colorfulPalette3 with String = js.native
+  /* "ColorfulPalette3" */ val colorfulPalette3: typings.officeJs.Excel.ChartColorScheme.colorfulPalette3 & String = js.native
   
-  /* "ColorfulPalette4" */ val colorfulPalette4: typings.officeJs.Excel.ChartColorScheme.colorfulPalette4 with String = js.native
+  /* "ColorfulPalette4" */ val colorfulPalette4: typings.officeJs.Excel.ChartColorScheme.colorfulPalette4 & String = js.native
   
-  /* "MonochromaticPalette1" */ val monochromaticPalette1: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette1 with String = js.native
+  /* "MonochromaticPalette1" */ val monochromaticPalette1: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette1 & String = js.native
   
-  /* "MonochromaticPalette10" */ val monochromaticPalette10: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette10 with String = js.native
+  /* "MonochromaticPalette10" */ val monochromaticPalette10: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette10 & String = js.native
   
-  /* "MonochromaticPalette11" */ val monochromaticPalette11: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette11 with String = js.native
+  /* "MonochromaticPalette11" */ val monochromaticPalette11: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette11 & String = js.native
   
-  /* "MonochromaticPalette12" */ val monochromaticPalette12: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette12 with String = js.native
+  /* "MonochromaticPalette12" */ val monochromaticPalette12: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette12 & String = js.native
   
-  /* "MonochromaticPalette13" */ val monochromaticPalette13: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette13 with String = js.native
+  /* "MonochromaticPalette13" */ val monochromaticPalette13: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette13 & String = js.native
   
-  /* "MonochromaticPalette2" */ val monochromaticPalette2: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette2 with String = js.native
+  /* "MonochromaticPalette2" */ val monochromaticPalette2: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette2 & String = js.native
   
-  /* "MonochromaticPalette3" */ val monochromaticPalette3: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette3 with String = js.native
+  /* "MonochromaticPalette3" */ val monochromaticPalette3: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette3 & String = js.native
   
-  /* "MonochromaticPalette4" */ val monochromaticPalette4: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette4 with String = js.native
+  /* "MonochromaticPalette4" */ val monochromaticPalette4: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette4 & String = js.native
   
-  /* "MonochromaticPalette5" */ val monochromaticPalette5: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette5 with String = js.native
+  /* "MonochromaticPalette5" */ val monochromaticPalette5: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette5 & String = js.native
   
-  /* "MonochromaticPalette6" */ val monochromaticPalette6: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette6 with String = js.native
+  /* "MonochromaticPalette6" */ val monochromaticPalette6: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette6 & String = js.native
   
-  /* "MonochromaticPalette7" */ val monochromaticPalette7: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette7 with String = js.native
+  /* "MonochromaticPalette7" */ val monochromaticPalette7: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette7 & String = js.native
   
-  /* "MonochromaticPalette8" */ val monochromaticPalette8: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette8 with String = js.native
+  /* "MonochromaticPalette8" */ val monochromaticPalette8: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette8 & String = js.native
   
-  /* "MonochromaticPalette9" */ val monochromaticPalette9: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette9 with String = js.native
+  /* "MonochromaticPalette9" */ val monochromaticPalette9: typings.officeJs.Excel.ChartColorScheme.monochromaticPalette9 & String = js.native
 }

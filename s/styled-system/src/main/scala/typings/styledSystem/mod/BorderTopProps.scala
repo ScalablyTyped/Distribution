@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderTopProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait BorderTopProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top)
     */
-  var borderTop: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderTop: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BorderTopProps {
   
@@ -25,7 +23,7 @@ object BorderTopProps {
   }
   
   @scala.inline
-  implicit class BorderTopPropsMutableBuilder[Self <: BorderTopProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderTopProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderTopPropsMutableBuilder[Self <: BorderTopProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderTopProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBorderTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])

@@ -3,7 +3,6 @@ package typings.matterJs.mod
 import typings.std.SVGPathElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Svg")
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Svg () extends StObject
 /* static members */
 object Svg {
+  
+  @JSImport("matter-js", "Svg")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Converts an SVG path into an array of vector points.
@@ -22,7 +25,6 @@ object Svg {
     * @param {Number} [sampleLength=15]
     * @return {Vector[]} points
     */
-  @JSImport("matter-js", "Svg.pathToVertices")
-  @js.native
-  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector] = js.native
+  @scala.inline
+  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToVertices")(path.asInstanceOf[js.Any], sampleLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
 }

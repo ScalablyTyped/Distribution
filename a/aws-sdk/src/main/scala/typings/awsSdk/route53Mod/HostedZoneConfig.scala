@@ -2,21 +2,19 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostedZoneConfig extends StObject {
   
   /**
     * Any comments that you want to include about the hosted zone.
     */
-  var Comment: js.UndefOr[ResourceDescription] = js.native
+  var Comment: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
     * A value that indicates whether this is a private hosted zone.
     */
-  var PrivateZone: js.UndefOr[IsPrivateZone] = js.native
+  var PrivateZone: js.UndefOr[IsPrivateZone] = js.undefined
 }
 object HostedZoneConfig {
   

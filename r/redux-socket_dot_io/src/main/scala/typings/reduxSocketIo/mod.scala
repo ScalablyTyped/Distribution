@@ -7,48 +7,44 @@ import typings.redux.mod.Middleware
 import typings.socketIoClient.SocketIOClient.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("redux-socket.io", JSImport.Default)
+  @JSImport("redux-socket.io", JSImport.Namespace)
   @js.native
-  def default(socket: Socket, criteria: String): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  @JSImport("redux-socket.io", JSImport.Default)
-  @js.native
-  def default(socket: Socket, criteria: String, options: MiddlewareOptions): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  @JSImport("redux-socket.io", JSImport.Default)
-  @js.native
-  def default(socket: Socket, criteria: js.Array[String]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  @JSImport("redux-socket.io", JSImport.Default)
-  @js.native
-  def default(socket: Socket, criteria: js.Array[String], options: MiddlewareOptions): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  @JSImport("redux-socket.io", JSImport.Default)
-  @js.native
-  def default(socket: Socket, criteria: js.Function2[/* type */ String, /* action */ Action[_], Boolean]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  @JSImport("redux-socket.io", JSImport.Default)
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(socket: Socket, criteria: String): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  @scala.inline
+  def default(socket: Socket, criteria: String, options: MiddlewareOptions): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  @scala.inline
+  def default(socket: Socket, criteria: js.Array[String]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  @scala.inline
+  def default(socket: Socket, criteria: js.Array[String], options: MiddlewareOptions): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  @scala.inline
+  def default(socket: Socket, criteria: js.Function2[/* type */ String, /* action */ Action[js.Any], Boolean]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  @scala.inline
   def default(
     socket: Socket,
-    criteria: js.Function2[/* type */ String, /* action */ Action[_], Boolean],
+    criteria: js.Function2[/* type */ String, /* action */ Action[js.Any], Boolean],
     options: MiddlewareOptions
-  ): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  ): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
   
-  @js.native
   trait MiddlewareOptions extends StObject {
     
-    var eventName: js.UndefOr[String] = js.native
+    var eventName: js.UndefOr[String] = js.undefined
     
     var execute: js.UndefOr[
         js.Function4[
-          /* action */ Action[_], 
+          /* action */ Action[js.Any], 
           /* emitBound */ Socket, 
-          /* next */ Dispatch[_], 
-          /* dispatch */ Dispatch[_], 
-          _
+          /* next */ Dispatch[js.Any], 
+          /* dispatch */ Dispatch[js.Any], 
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object MiddlewareOptions {
     
@@ -69,7 +65,7 @@ object mod {
       
       @scala.inline
       def setExecute(
-        value: (/* action */ Action[_], /* emitBound */ Socket, /* next */ Dispatch[_], /* dispatch */ Dispatch[_]) => _
+        value: (/* action */ Action[js.Any], /* emitBound */ Socket, /* next */ Dispatch[js.Any], /* dispatch */ Dispatch[js.Any]) => js.Any
       ): Self = StObject.set(x, "execute", js.Any.fromFunction4(value))
       
       @scala.inline

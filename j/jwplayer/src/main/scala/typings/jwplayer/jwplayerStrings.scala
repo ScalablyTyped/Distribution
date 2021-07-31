@@ -3,13 +3,14 @@ package typings.jwplayer
 import typings.jwplayer.jwplayer.NoParamEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jwplayerStrings {
   
   @js.native
-  sealed trait adBlock extends NoParamEvent
+  sealed trait adBlock
+    extends StObject
+       with NoParamEvent
   @scala.inline
   def adBlock: adBlock = "adBlock".asInstanceOf[adBlock]
   
@@ -94,12 +95,16 @@ object jwplayerStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait beforeComplete extends NoParamEvent
+  sealed trait beforeComplete
+    extends StObject
+       with NoParamEvent
   @scala.inline
   def beforeComplete: beforeComplete = "beforeComplete".asInstanceOf[beforeComplete]
   
   @js.native
-  sealed trait beforePlay extends NoParamEvent
+  sealed trait beforePlay
+    extends StObject
+       with NoParamEvent
   @scala.inline
   def beforePlay: beforePlay = "beforePlay".asInstanceOf[beforePlay]
   
@@ -134,7 +139,9 @@ object jwplayerStrings {
   def cast: cast = "cast".asInstanceOf[cast]
   
   @js.native
-  sealed trait complete extends NoParamEvent
+  sealed trait complete
+    extends StObject
+       with NoParamEvent
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
   
@@ -144,7 +151,9 @@ object jwplayerStrings {
   def controls: controls = "controls".asInstanceOf[controls]
   
   @js.native
-  sealed trait displayClick extends NoParamEvent
+  sealed trait displayClick
+    extends StObject
+       with NoParamEvent
   @scala.inline
   def displayClick: displayClick = "displayClick".asInstanceOf[displayClick]
   
@@ -244,7 +253,9 @@ object jwplayerStrings {
   def playlist: playlist = "playlist".asInstanceOf[playlist]
   
   @js.native
-  sealed trait playlistComplete extends NoParamEvent
+  sealed trait playlistComplete
+    extends StObject
+       with NoParamEvent
   @scala.inline
   def playlistComplete: playlistComplete = "playlistComplete".asInstanceOf[playlistComplete]
   
@@ -269,7 +280,9 @@ object jwplayerStrings {
   def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait remove extends NoParamEvent
+  sealed trait remove
+    extends StObject
+       with NoParamEvent
   @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
   
@@ -284,7 +297,9 @@ object jwplayerStrings {
   def seek: seek = "seek".asInstanceOf[seek]
   
   @js.native
-  sealed trait seeked extends NoParamEvent
+  sealed trait seeked
+    extends StObject
+       with NoParamEvent
   @scala.inline
   def seeked: seeked = "seeked".asInstanceOf[seeked]
   

@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Broken extends StObject {
   
-  var approved: scala.Double = js.native
+  var approved: scala.Double
   
-  var broken: scala.Double = js.native
+  var broken: scala.Double
   
-  var notApplicable: scala.Double = js.native
+  var notApplicable: scala.Double
   
-  var queued: scala.Double = js.native
+  var queued: scala.Double
   
-  var rejected: scala.Double = js.native
+  var rejected: scala.Double
   
-  var running: scala.Double = js.native
+  var running: scala.Double
 }
 object Broken {
   

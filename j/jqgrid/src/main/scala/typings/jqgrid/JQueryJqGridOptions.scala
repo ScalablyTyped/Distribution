@@ -16,10 +16,8 @@ import typings.jqgrid.jqgridStrings.xmlstring
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryJqGridOptions extends StObject {
   
   /**
@@ -27,35 +25,35 @@ trait JQueryJqGridOptions extends StObject {
     * This is done only initially when the grid is created.
     * In order to resize the grid when the parent element changes width you should apply custom code and use the setGridWidth method for this purpose
     */
-  var autoWidth: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to true encodes (html encode) the incoming (from server) and posted data (from editing modules).
     */
-  var autoencode: js.UndefOr[Boolean] = js.native
+  var autoencode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the caption for the grid. This caption appears in the caption layer, which is above the header layer
     */
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
   /**
     * Array which describes the parameters of the columns. This is the most important part of the grid.
     */
-  var colModel: js.UndefOr[js.Array[JQueryJqGridColumn]] = js.native
+  var colModel: js.UndefOr[js.Array[JQueryJqGridColumn]] = js.undefined
   
   /**
     * An array in which we place the names of the columns.
     * This is the text that appears in the head of the grid (header layer). The names are separated with commas.
     * Note that the number of elements in this array should be equal of the number elements in the colModel array.
     */
-  var colNames: js.UndefOr[js.Array[String]] = js.native
+  var colNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An array that stores the local data passed to the grid. You can directly point to this variable in case you want to load an array data.
     * It can replace the addRowData method which is slow on relative big data
     */
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Defines in what format to expect the data that fills the grid.
@@ -66,14 +64,14 @@ trait JQueryJqGridOptions extends StObject {
     */
   var datatype: js.UndefOr[
     xml | xmlstring | json | jsonstring | local | javascript | js.Function | clientSide
-  ] = js.native
+  ] = js.undefined
   
   /**
     * If set to true, and a column's width is changed, the adjacent column (to the right) will resize so that the overall grid width is maintained
     * (e.g., reducing the width of column 2 by 30px will increase the size of column 3 by 30px). In this case there is no horizontal scrollbar.
     * Note: This option is not compatible with shrinkToFit option - i.e if shrinkToFit is set to false, forceFit is ignored.
     */
-  var forceFit: js.UndefOr[Boolean] = js.native
+  var forceFit: js.UndefOr[Boolean] = js.undefined
   
   // events
   /**
@@ -81,7 +79,7 @@ trait JQueryJqGridOptions extends StObject {
     * Also the event fires independent from the datatype parameter and after sorting paging and etc.
     * @returns {} 
     */
-  var gridComplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var gridComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * What will be the result if we insert all the data at once?
@@ -90,30 +88,30 @@ trait JQueryJqGridOptions extends StObject {
     * If set to true we can not use treeGrid, subGrid, or the afterInsertRow event.
     * If you do not use these three options in the grid you can set this option to true and enjoy the speed.
     */
-  var gridview: js.UndefOr[Boolean] = js.native
+  var gridview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The height of the grid.
     * Can be set as number (in this case we mean pixels) or as percentage (only 100% is accepted) or value of auto is acceptable.
     */
-  var height: js.UndefOr[Double | String | auto] = js.native
+  var height: js.UndefOr[Double | String | auto] = js.undefined
   
   /**
     * An array which describes the structure of the expected json data.
     */
-  var jsonReader: js.UndefOr[IJqGridJsonReader] = js.native
+  var jsonReader: js.UndefOr[IJqGridJsonReader] = js.undefined
   
   /**
     * If this flag is set to true, the grid loads the data from the server only once (using the appropriate datatype).
     * After the first request, the datatype parameter is automatically changed to local and all further manipulations are done on the client side.
     * The functions of the pager (if present) are disabled.
     */
-  var loadonce: js.UndefOr[Boolean] = js.native
+  var loadonce: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the type of request to make ("POST" or "GET")
     */
-  var mtype: js.UndefOr[GET | POST] = js.native
+  var mtype: js.UndefOr[GET | POST] = js.undefined
   
   /**
     * This option works only when the multiselect option is set to true.
@@ -121,13 +119,13 @@ trait JQueryJqGridOptions extends StObject {
     * when multiboxonly is also set to true, the multiselection is done only when the checkbox is clicked (Yahoo style).
     * Clicking in any other row (suppose the checkbox is not clicked) deselects all rows and selects the current row.
     */
-  var multiboxonly: js.UndefOr[Boolean] = js.native
+  var multiboxonly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If this flag is set to true a multi selection of rows is enabled. A new column at left side containing checkboxes is added.
     * Can be used with any datatype option
     */
-  var multiselect: js.UndefOr[Boolean] = js.native
+  var multiselect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Raised immediately after row was right clicked
@@ -139,7 +137,7 @@ trait JQueryJqGridOptions extends StObject {
     */
   var onRightClickRow: js.UndefOr[
     js.Function4[/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Raised immediately after row was clicked.
@@ -148,7 +146,7 @@ trait JQueryJqGridOptions extends StObject {
     * @param e  is the event object. Can be used when multiselect is set to true. true if the row is selected, false if the row is deselected.
     * @returns {} 
     */
-  var onSelectRow: js.UndefOr[js.Function3[/* id */ String, /* status */ js.Any, /* e */ Event, Unit]] = js.native
+  var onSelectRow: js.UndefOr[js.Function3[/* id */ String, /* status */ js.Any, /* e */ Event, Unit]] = js.undefined
   
   /**
     * Defines that we want to use a pager bar to navigate through the records.
@@ -158,7 +156,7 @@ trait JQueryJqGridOptions extends StObject {
     * The valid settings can be (in the context of our example) pager, #pager, jQuery('#pager').
     * I recommend to use the second one - #pager
     */
-  var pager: js.UndefOr[String] = js.native
+  var pager: js.UndefOr[String] = js.undefined
   
   /**
     * An array to construct a select box element in the pager in which we can change the number of the visible rows.
@@ -166,13 +164,13 @@ trait JQueryJqGridOptions extends StObject {
     * If the array is empty, this element does not appear in the pager. Typically you can set this like [10,20,30].
     * If the rowNum parameter is set to 30 then the selected value in the select box is 30
     */
-  var rowList: js.UndefOr[js.Array[Double]] = js.native
+  var rowList: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Sets how many records we want to view in the grid. This parameter is passed to the url for use by the server routine retrieving the data.
     * Note that if you set this parameter to 10 (i.e. retrieve 10 records) and your server return 15 then only 10 records will be loaded
     */
-  var rowNum: js.UndefOr[Double] = js.native
+  var rowNum: js.UndefOr[Double] = js.undefined
   
   /**
     * This option, if set, defines how the the width of the columns of the grid should be re-calculated, taking into consideration the width of the grid.
@@ -187,7 +185,7 @@ trait JQueryJqGridOptions extends StObject {
     * column two will have a width of 120 pixels and the grid will retain the width of 300 pixels.
     * If the value of shrinkToFit is an integer, the width is calculated according to it.
     */
-  var shrinkToFit: js.UndefOr[Boolean | Double] = js.native
+  var shrinkToFit: js.UndefOr[Boolean | Double] = js.undefined
   
   /**
     * The column according to which the data is to be sorted when it is initially loaded from the server
@@ -196,31 +194,31 @@ trait JQueryJqGridOptions extends StObject {
     * then an icon indicating that the grid is sorted according to this column is added to the column header.
     * This icon also indicates the sorting order - descending or ascending (see the parameter sortorder). Also see prmNames
     */
-  var sortname: js.UndefOr[String] = js.native
+  var sortname: js.UndefOr[String] = js.undefined
   
   /**
     * The initial sorting order (ascending or descending) when we fetch data from the server using datatypes xml or json.
     * This parameter is appended to the url - see prnNames. The two allowed values are - asc or desc.
     */
-  var sortorder: js.UndefOr[asc | desc] = js.native
+  var sortorder: js.UndefOr[asc | desc] = js.undefined
   
   /**
     * The url of the file that returns the data needed to populate the grid. May be set to clientArray to manualy post data to server
     */
-  var url: js.UndefOr[String | clientArray] = js.native
+  var url: js.UndefOr[String | clientArray] = js.undefined
   
   /**
     * If true, jqGrid displays the beginning and ending record number in the grid, out of the total number of records in the query.
     * This information is shown in the pager bar (bottom right by default)in this format: "View X to Y out of Z".
     * If this value is true, there are other parameters that can be adjusted, including emptyrecords and recordtext.
     */
-  var viewrecords: js.UndefOr[Boolean] = js.native
+  var viewrecords: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If this option is not set, the width of the grid is the sum of the widths of the columns defined in the colModel (in pixels).
     * If this option is set, the initial width of each column is set according to the value of the shrinkToFit option.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object JQueryJqGridOptions {
   
@@ -270,7 +268,7 @@ object JQueryJqGridOptions {
     def setColNamesVarargs(value: String*): Self = StObject.set(x, "colNames", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

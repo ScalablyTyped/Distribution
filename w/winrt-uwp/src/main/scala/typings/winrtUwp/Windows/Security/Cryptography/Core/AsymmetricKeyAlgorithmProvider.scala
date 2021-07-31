@@ -3,7 +3,6 @@ package typings.winrtUwp.Windows.Security.Cryptography.Core
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a provider of asymmetric (public) key algorithms. For more information, see Cryptographic keys. */

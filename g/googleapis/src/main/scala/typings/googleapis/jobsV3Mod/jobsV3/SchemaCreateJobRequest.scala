@@ -2,19 +2,17 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Create job request.
   */
-@js.native
 trait SchemaCreateJobRequest extends StObject {
   
   /**
     * Required.  The Job to be created.
     */
-  var job: js.UndefOr[SchemaJob] = js.native
+  var job: js.UndefOr[SchemaJob] = js.undefined
 }
 object SchemaCreateJobRequest {
   

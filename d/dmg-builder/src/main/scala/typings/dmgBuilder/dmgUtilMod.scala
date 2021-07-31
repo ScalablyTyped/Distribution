@@ -4,10 +4,13 @@ import typings.appBuilderLib.macPackagerMod.default
 import typings.appBuilderLib.mod.PlatformPackager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dmgUtilMod {
+  
+  @JSImport("dmg-builder/out/dmgUtil", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("dmg-builder/out/dmgUtil", "DmgTarget")
   @js.native
@@ -16,23 +19,18 @@ object dmgUtilMod {
     def this(packager: default, outDir: String) = this()
   }
   
-  @JSImport("dmg-builder/out/dmgUtil", "attachAndExecute")
-  @js.native
-  def attachAndExecute(dmgPath: String, readWrite: Boolean, task: js.Function0[js.Promise[_]]): js.Promise[_] = js.native
+  @scala.inline
+  def attachAndExecute(dmgPath: String, readWrite: Boolean, task: js.Function0[js.Promise[js.Any]]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachAndExecute")(dmgPath.asInstanceOf[js.Any], readWrite.asInstanceOf[js.Any], task.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("dmg-builder/out/dmgUtil", "computeBackground")
-  @js.native
-  def computeBackground(packager: PlatformPackager[_]): js.Promise[String] = js.native
+  @scala.inline
+  def computeBackground(packager: PlatformPackager[js.Any]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeBackground")(packager.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("dmg-builder/out/dmgUtil", "detach")
-  @js.native
-  def detach(name: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def detach(name: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("dmg-builder/out/dmgUtil", "getDmgTemplatePath")
-  @js.native
-  def getDmgTemplatePath(): String = js.native
+  @scala.inline
+  def getDmgTemplatePath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDmgTemplatePath")().asInstanceOf[String]
   
-  @JSImport("dmg-builder/out/dmgUtil", "getDmgVendorPath")
-  @js.native
-  def getDmgVendorPath(): String = js.native
+  @scala.inline
+  def getDmgVendorPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDmgVendorPath")().asInstanceOf[String]
 }

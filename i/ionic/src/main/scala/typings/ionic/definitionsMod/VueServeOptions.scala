@@ -2,17 +2,17 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VueServeOptions extends ServeOptions {
+trait VueServeOptions
+  extends StObject
+     with ServeOptions {
   
-  var configuration: js.UndefOr[String] = js.native
+  var configuration: js.UndefOr[String] = js.undefined
   
-  var sourcemaps: js.UndefOr[Boolean] = js.native
+  var sourcemaps: js.UndefOr[Boolean] = js.undefined
   
-  var ssl: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.undefined
 }
 object VueServeOptions {
   

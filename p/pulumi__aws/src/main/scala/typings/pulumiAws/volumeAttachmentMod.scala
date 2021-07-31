@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object volumeAttachmentMod {
@@ -61,6 +60,10 @@ object volumeAttachmentMod {
   /* static members */
   object VolumeAttachment {
     
+    @JSImport("@pulumi/aws/ec2/volumeAttachment", "VolumeAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VolumeAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -70,36 +73,30 @@ object volumeAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/volumeAttachment", "VolumeAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VolumeAttachment = js.native
-    @JSImport("@pulumi/aws/ec2/volumeAttachment", "VolumeAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VolumeAttachment = js.native
-    @JSImport("@pulumi/aws/ec2/volumeAttachment", "VolumeAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VolumeAttachmentState): VolumeAttachment = js.native
-    @JSImport("@pulumi/aws/ec2/volumeAttachment", "VolumeAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VolumeAttachmentState, opts: CustomResourceOptions): VolumeAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VolumeAttachmentState): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VolumeAttachmentState, opts: CustomResourceOptions): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
     
     /**
       * Returns true if the given object is an instance of VolumeAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/volumeAttachment", "VolumeAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/volumeAttachment.VolumeAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/volumeAttachment.VolumeAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/volumeAttachment.VolumeAttachment */ Boolean]
   }
   
-  @js.native
   trait VolumeAttachmentArgs extends StObject {
     
     /**
       * The device name to expose to the instance (for
       * example, `/dev/sdh` or `xvdh`).  See [Device Naming on Linux Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/device_naming.html#available-ec2-device-names) and [Device Naming on Windows Instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/device_naming.html#available-ec2-device-names) for more information.
       */
-    val deviceName: Input[String] = js.native
+    val deviceName: Input[String]
     
     /**
       * Set to `true` if you want to force the
@@ -107,12 +104,12 @@ object volumeAttachmentMod {
       * as a last resort, as this can result in **data loss**. See
       * [Detaching an Amazon EBS Volume from an Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html) for more information.
       */
-    val forceDetach: js.UndefOr[Input[Boolean]] = js.native
+    val forceDetach: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * ID of the Instance to attach to
       */
-    val instanceId: Input[String] = js.native
+    val instanceId: Input[String]
     
     /**
       * Set this to true if you do not wish
@@ -121,12 +118,12 @@ object volumeAttachmentMod {
       * useful when destroying an instance which has volumes created by some other
       * means attached.
       */
-    val skipDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val skipDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * ID of the Volume to be attached
       */
-    val volumeId: Input[String] = js.native
+    val volumeId: Input[String]
   }
   object VolumeAttachmentArgs {
     
@@ -162,14 +159,13 @@ object volumeAttachmentMod {
     }
   }
   
-  @js.native
   trait VolumeAttachmentState extends StObject {
     
     /**
       * The device name to expose to the instance (for
       * example, `/dev/sdh` or `xvdh`).  See [Device Naming on Linux Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/device_naming.html#available-ec2-device-names) and [Device Naming on Windows Instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/device_naming.html#available-ec2-device-names) for more information.
       */
-    val deviceName: js.UndefOr[Input[String]] = js.native
+    val deviceName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set to `true` if you want to force the
@@ -177,12 +173,12 @@ object volumeAttachmentMod {
       * as a last resort, as this can result in **data loss**. See
       * [Detaching an Amazon EBS Volume from an Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html) for more information.
       */
-    val forceDetach: js.UndefOr[Input[Boolean]] = js.native
+    val forceDetach: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * ID of the Instance to attach to
       */
-    val instanceId: js.UndefOr[Input[String]] = js.native
+    val instanceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set this to true if you do not wish
@@ -191,12 +187,12 @@ object volumeAttachmentMod {
       * useful when destroying an instance which has volumes created by some other
       * means attached.
       */
-    val skipDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val skipDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * ID of the Volume to be attached
       */
-    val volumeId: js.UndefOr[Input[String]] = js.native
+    val volumeId: js.UndefOr[Input[String]] = js.undefined
   }
   object VolumeAttachmentState {
     

@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specify the alignment of a numbering level. */
-@js.native
 trait NumberingAlignment extends StObject {
   
   /** set the alignment from the numbering. Use the {@link com.sun.star.style.HorizontalAlignment} enum to change the alignment. */
-  var Alignment: HorizontalAlignment = js.native
+  var Alignment: HorizontalAlignment
   
   /** the distance between the numbering symbol and text. */
-  var Insertion: Double = js.native
+  var Insertion: Double
   
   /** the minimum distance between the numbering symbol and the following text. */
-  var TextMarginDistance: Double = js.native
+  var TextMarginDistance: Double
   
   /** the distance between left margin and the numbering symbol. */
-  var TextNumberingDistance: Double = js.native
+  var TextNumberingDistance: Double
 }
 object NumberingAlignment {
   

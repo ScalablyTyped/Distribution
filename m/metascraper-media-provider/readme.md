@@ -10,9 +10,9 @@ Get video property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-media-provider |
 | Keywords           | media, metascraper, youtube-dl |
-| # releases         | 145 |
+| # releases         | 170 |
 | # dependents       | 3 |
-| # downloads        | 39389 |
+| # downloads        | 42139 |
 | # stars            | 0 |
 
 ## Links

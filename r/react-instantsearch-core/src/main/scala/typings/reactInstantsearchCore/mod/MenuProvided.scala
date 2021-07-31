@@ -3,23 +3,21 @@ package typings.reactInstantsearchCore.mod
 import typings.reactInstantsearchCore.anon.Count
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuProvided extends StObject {
   
-  def createURL(args: js.Any*): js.Any = js.native
+  def createURL(args: js.Any*): js.Any
   
-  var currentRefinement: String = js.native
+  var currentRefinement: String
   
-  var isFromSearch: Boolean = js.native
+  var isFromSearch: Boolean
   
-  var items: js.Array[Count] = js.native
+  var items: js.Array[Count]
   
-  def refine(args: js.Any*): js.Any = js.native
+  def refine(args: js.Any*): js.Any
   
-  def searchForItems(args: js.Any*): js.Any = js.native
+  def searchForItems(args: js.Any*): js.Any
 }
 object MenuProvided {
   

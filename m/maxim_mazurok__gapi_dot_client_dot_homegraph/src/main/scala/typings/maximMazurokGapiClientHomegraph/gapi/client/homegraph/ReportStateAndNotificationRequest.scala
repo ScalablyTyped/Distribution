@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportStateAndNotificationRequest extends StObject {
   
   /** Required. Third-party user ID. */
-  var agentUserId: js.UndefOr[String] = js.native
+  var agentUserId: js.UndefOr[String] = js.undefined
   
   /** Unique identifier per event (for example, a doorbell press). */
-  var eventId: js.UndefOr[String] = js.native
+  var eventId: js.UndefOr[String] = js.undefined
   
   /**
     * Token to maintain state in the follow up notification response. Deprecated. See the [notifications guide](https://developers.google.com/assistant/smarthome/develop/notifications)
     * for details on implementing follow up notifications.
     */
-  var followUpToken: js.UndefOr[String] = js.native
+  var followUpToken: js.UndefOr[String] = js.undefined
   
   /** Required. State of devices to update and notification metadata for devices. */
-  var payload: js.UndefOr[StateAndNotificationPayload] = js.native
+  var payload: js.UndefOr[StateAndNotificationPayload] = js.undefined
   
   /** Request ID used for debugging. */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
 }
 object ReportStateAndNotificationRequest {
   

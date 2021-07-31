@@ -5,39 +5,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait predominantCategoriesPredominantCategoriesParams extends Object {
+trait predominantCategoriesPredominantCategoriesParams
+  extends StObject
+     with Object {
   
   /**
     * An array of numeric fields from which to determine predominant categories.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#predominantCategories)
     */
-  var fields: js.Array[String] = js.native
+  var fields: js.Array[String]
   
   /**
     * The layer from which to generate predominant categories for the given set of `fields`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#predominantCategories)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#predominantCategories)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * The view in which features will be rendered.
     *
     * [Read more...](global.html)
     */
-  var view: js.UndefOr[MapView | SceneView] = js.native
+  var view: js.UndefOr[MapView | SceneView] = js.undefined
 }
 object predominantCategoriesPredominantCategoriesParams {
   

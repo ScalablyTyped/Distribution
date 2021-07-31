@@ -3,17 +3,15 @@ package typings.ionic.definitionsMod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageResourceTransformResult extends StObject {
   
-  var error: js.UndefOr[Error] = js.native
+  var error: js.UndefOr[Error] = js.undefined
   
-  var resource: ImageResource = js.native
+  var resource: ImageResource
   
-  var tmpDest: String = js.native
+  var tmpDest: String
 }
 object ImageResourceTransformResult {
   

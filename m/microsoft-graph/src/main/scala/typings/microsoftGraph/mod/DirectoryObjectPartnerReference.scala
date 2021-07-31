@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectoryObjectPartnerReference extends DirectoryObject {
+trait DirectoryObjectPartnerReference
+  extends StObject
+     with DirectoryObject {
   
   // Description of the object returned. Read-only.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of directory object being returned, like group or application. Read-only.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The tenant identifier for the partner tenant. Read-only.
-  var externalPartnerTenantId: js.UndefOr[NullableOption[String]] = js.native
+  var externalPartnerTenantId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The type of the referenced object in the partner tenant. Read-only.
-  var objectType: js.UndefOr[NullableOption[String]] = js.native
+  var objectType: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DirectoryObjectPartnerReference {
   

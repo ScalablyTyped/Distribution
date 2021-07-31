@@ -4,57 +4,50 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webpack-config-utils", "getIfUtils")
+  @JSImport("webpack-config-utils", JSImport.Namespace)
   @js.native
-  def getIfUtils[E /* <: EnvVars | String */](env: E): IfUtils = js.native
-  @JSImport("webpack-config-utils", "getIfUtils")
-  @js.native
-  def getIfUtils[E /* <: EnvVars | String */](env: E, vars: js.Array[EnvVars | String]): IfUtils = js.native
-  @JSImport("webpack-config-utils", "getIfUtils")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getIfUtils[E /* <: EnvVars | String */](env: E): IfUtils = ^.asInstanceOf[js.Dynamic].applyDynamic("getIfUtils")(env.asInstanceOf[js.Any]).asInstanceOf[IfUtils]
+  @scala.inline
+  def getIfUtils[E /* <: EnvVars | String */](env: E, vars: js.Array[EnvVars | String]): IfUtils = (^.asInstanceOf[js.Dynamic].applyDynamic("getIfUtils")(env.asInstanceOf[js.Any], vars.asInstanceOf[js.Any])).asInstanceOf[IfUtils]
+  @scala.inline
   def getIfUtils[E /* <: EnvVars | String */](
     env: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in E ]: boolean | string}
-    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.getIfUtils with TopLevel[js.Any]
-  ): IfUtils = js.native
-  @JSImport("webpack-config-utils", "getIfUtils")
-  @js.native
+    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.getIfUtils & TopLevel[js.Any]
+  ): IfUtils = ^.asInstanceOf[js.Dynamic].applyDynamic("getIfUtils")(env.asInstanceOf[js.Any]).asInstanceOf[IfUtils]
+  @scala.inline
   def getIfUtils[E /* <: EnvVars | String */](
     env: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in E ]: boolean | string}
-    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.getIfUtils with TopLevel[js.Any],
+    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.getIfUtils & TopLevel[js.Any],
     vars: js.Array[EnvVars | String]
-  ): IfUtils = js.native
+  ): IfUtils = (^.asInstanceOf[js.Dynamic].applyDynamic("getIfUtils")(env.asInstanceOf[js.Any], vars.asInstanceOf[js.Any])).asInstanceOf[IfUtils]
   
-  @JSImport("webpack-config-utils", "propIf")
-  @js.native
-  def propIf[I](a: js.Any, value: I, alternate: js.Any): I = js.native
-  @JSImport("webpack-config-utils", "propIf")
-  @js.native
-  def propIf[E](a: Falsy, value: js.Any, alternate: E): E = js.native
+  @scala.inline
+  def propIf[I](a: js.Any, value: I, alternate: js.Any): I = (^.asInstanceOf[js.Dynamic].applyDynamic("propIf")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[I]
+  @scala.inline
+  def propIf[E](a: Falsy, value: js.Any, alternate: E): E = (^.asInstanceOf[js.Dynamic].applyDynamic("propIf")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[E]
   
-  @JSImport("webpack-config-utils", "propIfNot")
-  @js.native
-  def propIfNot[E](a: js.Any, value: js.Any, alternate: E): E = js.native
-  @JSImport("webpack-config-utils", "propIfNot")
-  @js.native
-  def propIfNot[I](a: Falsy, value: I, alternate: js.Any): I = js.native
+  @scala.inline
+  def propIfNot[E](a: js.Any, value: js.Any, alternate: E): E = (^.asInstanceOf[js.Dynamic].applyDynamic("propIfNot")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[E]
+  @scala.inline
+  def propIfNot[I](a: Falsy, value: I, alternate: js.Any): I = (^.asInstanceOf[js.Dynamic].applyDynamic("propIfNot")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[I]
   
-  @JSImport("webpack-config-utils", "removeEmpty")
-  @js.native
+  @scala.inline
   def removeEmpty[T](
     input: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: T[P]}
-    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.removeEmpty with TopLevel[T]
-  ): NonEmptyObject[T, DefinedObjKeys[T]] = js.native
-  @JSImport("webpack-config-utils", "removeEmpty")
-  @js.native
-  def removeEmpty[T](input: js.Array[js.UndefOr[T]]): js.Array[T] = js.native
+    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.removeEmpty & TopLevel[T]
+  ): NonEmptyObject[T, DefinedObjKeys[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeEmpty")(input.asInstanceOf[js.Any]).asInstanceOf[NonEmptyObject[T, DefinedObjKeys[T]]]
+  @scala.inline
+  def removeEmpty[T](input: js.Array[js.UndefOr[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeEmpty")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   type DefinedObjKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P] extends undefined? never : P}[keyof T] */ js.Any
   
@@ -88,74 +81,128 @@ object mod {
     - typings.webpackConfigUtils.webpackConfigUtilsBooleans.`false`
     - typings.webpackConfigUtils.webpackConfigUtilsStrings._empty
     - typings.webpackConfigUtils.webpackConfigUtilsStrings.`false`
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - scala.Null
     - typings.webpackConfigUtils.webpackConfigUtilsNumbers.`0`
   */
   type Falsy = js.UndefOr[_Falsy | Null]
   
-  @js.native
-  trait IfUtils extends /* key */ StringDictionary[IfUtilsFn] {
+  trait IfUtils
+    extends StObject
+       with /* key */ StringDictionary[IfUtilsFn] {
     
-    def ifDev(): Boolean = js.native
-    def ifDev[Y, N](value: Y): Y | N = js.native
-    def ifDev[Y, N](value: Y, alternate: N): Y | N = js.native
+    def ifDev(): Boolean
+    def ifDev[Y, N](value: Y): Y | N
+    def ifDev[Y, N](value: Y, alternate: N): Y | N
     @JSName("ifDev")
-    var ifDev_Original: IfUtilsFn = js.native
+    var ifDev_Original: IfUtilsFn
     
-    def ifDevelopment(): Boolean = js.native
-    def ifDevelopment[Y, N](value: Y): Y | N = js.native
-    def ifDevelopment[Y, N](value: Y, alternate: N): Y | N = js.native
+    def ifDevelopment(): Boolean
+    def ifDevelopment[Y, N](value: Y): Y | N
+    def ifDevelopment[Y, N](value: Y, alternate: N): Y | N
     @JSName("ifDevelopment")
-    var ifDevelopment_Original: IfUtilsFn = js.native
+    var ifDevelopment_Original: IfUtilsFn
     
-    def ifNotDev(): Boolean = js.native
-    def ifNotDev[Y, N](value: Y): Y | N = js.native
-    def ifNotDev[Y, N](value: Y, alternate: N): Y | N = js.native
+    def ifNotDev(): Boolean
+    def ifNotDev[Y, N](value: Y): Y | N
+    def ifNotDev[Y, N](value: Y, alternate: N): Y | N
     @JSName("ifNotDev")
-    var ifNotDev_Original: IfUtilsFn = js.native
+    var ifNotDev_Original: IfUtilsFn
     
-    def ifNotDevelopment(): Boolean = js.native
-    def ifNotDevelopment[Y, N](value: Y): Y | N = js.native
-    def ifNotDevelopment[Y, N](value: Y, alternate: N): Y | N = js.native
+    def ifNotDevelopment(): Boolean
+    def ifNotDevelopment[Y, N](value: Y): Y | N
+    def ifNotDevelopment[Y, N](value: Y, alternate: N): Y | N
     @JSName("ifNotDevelopment")
-    var ifNotDevelopment_Original: IfUtilsFn = js.native
+    var ifNotDevelopment_Original: IfUtilsFn
     
-    def ifNotProd(): Boolean = js.native
-    def ifNotProd[Y, N](value: Y): Y | N = js.native
-    def ifNotProd[Y, N](value: Y, alternate: N): Y | N = js.native
+    def ifNotProd(): Boolean
+    def ifNotProd[Y, N](value: Y): Y | N
+    def ifNotProd[Y, N](value: Y, alternate: N): Y | N
     @JSName("ifNotProd")
-    var ifNotProd_Original: IfUtilsFn = js.native
+    var ifNotProd_Original: IfUtilsFn
     
-    def ifNotProduction(): Boolean = js.native
-    def ifNotProduction[Y, N](value: Y): Y | N = js.native
-    def ifNotProduction[Y, N](value: Y, alternate: N): Y | N = js.native
+    def ifNotProduction(): Boolean
+    def ifNotProduction[Y, N](value: Y): Y | N
+    def ifNotProduction[Y, N](value: Y, alternate: N): Y | N
     @JSName("ifNotProduction")
-    var ifNotProduction_Original: IfUtilsFn = js.native
+    var ifNotProduction_Original: IfUtilsFn
     
-    def ifNotTest(): Boolean = js.native
-    def ifNotTest[Y, N](value: Y): Y | N = js.native
-    def ifNotTest[Y, N](value: Y, alternate: N): Y | N = js.native
+    def ifNotTest(): Boolean
+    def ifNotTest[Y, N](value: Y): Y | N
+    def ifNotTest[Y, N](value: Y, alternate: N): Y | N
     @JSName("ifNotTest")
-    var ifNotTest_Original: IfUtilsFn = js.native
+    var ifNotTest_Original: IfUtilsFn
     
-    def ifProd(): Boolean = js.native
-    def ifProd[Y, N](value: Y): Y | N = js.native
-    def ifProd[Y, N](value: Y, alternate: N): Y | N = js.native
+    def ifProd(): Boolean
+    def ifProd[Y, N](value: Y): Y | N
+    def ifProd[Y, N](value: Y, alternate: N): Y | N
     @JSName("ifProd")
-    var ifProd_Original: IfUtilsFn = js.native
+    var ifProd_Original: IfUtilsFn
     
-    def ifProduction(): Boolean = js.native
-    def ifProduction[Y, N](value: Y): Y | N = js.native
-    def ifProduction[Y, N](value: Y, alternate: N): Y | N = js.native
+    def ifProduction(): Boolean
+    def ifProduction[Y, N](value: Y): Y | N
+    def ifProduction[Y, N](value: Y, alternate: N): Y | N
     @JSName("ifProduction")
-    var ifProduction_Original: IfUtilsFn = js.native
+    var ifProduction_Original: IfUtilsFn
     
-    def ifTest(): Boolean = js.native
-    def ifTest[Y, N](value: Y): Y | N = js.native
-    def ifTest[Y, N](value: Y, alternate: N): Y | N = js.native
+    def ifTest(): Boolean
+    def ifTest[Y, N](value: Y): Y | N
+    def ifTest[Y, N](value: Y, alternate: N): Y | N
     @JSName("ifTest")
-    var ifTest_Original: IfUtilsFn = js.native
+    var ifTest_Original: IfUtilsFn
+  }
+  object IfUtils {
+    
+    @scala.inline
+    def apply(
+      ifDev: IfUtilsFn,
+      ifDevelopment: IfUtilsFn,
+      ifNotDev: IfUtilsFn,
+      ifNotDevelopment: IfUtilsFn,
+      ifNotProd: IfUtilsFn,
+      ifNotProduction: IfUtilsFn,
+      ifNotTest: IfUtilsFn,
+      ifProd: IfUtilsFn,
+      ifProduction: IfUtilsFn,
+      ifTest: IfUtilsFn
+    ): IfUtils = {
+      val __obj = js.Dynamic.literal(ifDev = ifDev.asInstanceOf[js.Any], ifDevelopment = ifDevelopment.asInstanceOf[js.Any], ifNotDev = ifNotDev.asInstanceOf[js.Any], ifNotDevelopment = ifNotDevelopment.asInstanceOf[js.Any], ifNotProd = ifNotProd.asInstanceOf[js.Any], ifNotProduction = ifNotProduction.asInstanceOf[js.Any], ifNotTest = ifNotTest.asInstanceOf[js.Any], ifProd = ifProd.asInstanceOf[js.Any], ifProduction = ifProduction.asInstanceOf[js.Any], ifTest = ifTest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IfUtils]
+    }
+    
+    @scala.inline
+    implicit class IfUtilsMutableBuilder[Self <: IfUtils] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setIfDev(value: IfUtilsFn): Self = StObject.set(x, "ifDev", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIfDevelopment(value: IfUtilsFn): Self = StObject.set(x, "ifDevelopment", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIfNotDev(value: IfUtilsFn): Self = StObject.set(x, "ifNotDev", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIfNotDevelopment(value: IfUtilsFn): Self = StObject.set(x, "ifNotDevelopment", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIfNotProd(value: IfUtilsFn): Self = StObject.set(x, "ifNotProd", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIfNotProduction(value: IfUtilsFn): Self = StObject.set(x, "ifNotProduction", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIfNotTest(value: IfUtilsFn): Self = StObject.set(x, "ifNotTest", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIfProd(value: IfUtilsFn): Self = StObject.set(x, "ifProd", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIfProduction(value: IfUtilsFn): Self = StObject.set(x, "ifProduction", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIfTest(value: IfUtilsFn): Self = StObject.set(x, "ifTest", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -168,7 +215,7 @@ object mod {
   
   type NonEmptyObject[T, P /* <: DefinedObjKeys[T] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ PP in P ]: T[PP]}
-    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.NonEmptyObject with TopLevel[T]
+    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.NonEmptyObject & TopLevel[T]
   
   trait _Falsy extends StObject
 }

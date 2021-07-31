@@ -3,17 +3,15 @@ package typings.antd.anon
 import typings.antd.sliderMod.HandleGeneratorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrefixCls extends StObject {
   
-  var info: HandleGeneratorInfo = js.native
+  var info: HandleGeneratorInfo
   
-  var prefixCls: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.undefined
   
-  var tooltipPrefixCls: js.UndefOr[String] = js.native
+  var tooltipPrefixCls: js.UndefOr[String] = js.undefined
 }
 object PrefixCls {
   

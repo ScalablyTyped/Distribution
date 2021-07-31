@@ -4,23 +4,21 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.events.event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviousValue[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var previousValue: js.UndefOr[js.Any] = js.native
+  var previousValue: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object PreviousValue {
   
@@ -31,7 +29,7 @@ object PreviousValue {
   }
   
   @scala.inline
-  implicit class PreviousValueMutableBuilder[Self <: PreviousValue[_], T] (val x: Self with PreviousValue[T]) extends AnyVal {
+  implicit class PreviousValueMutableBuilder[Self <: PreviousValue[?], T] (val x: Self & PreviousValue[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

@@ -2,31 +2,29 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotDetails extends StObject {
   
   /**
     * The current application version ID when the snapshot was created.
     */
-  var ApplicationVersionId: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId = js.native
+  var ApplicationVersionId: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId
   
   /**
     * The timestamp of the application snapshot.
     */
-  var SnapshotCreationTimestamp: js.UndefOr[Timestamp] = js.native
+  var SnapshotCreationTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The identifier for the application snapshot.
     */
-  var SnapshotName: typings.awsSdk.kinesisanalyticsv2Mod.SnapshotName = js.native
+  var SnapshotName: typings.awsSdk.kinesisanalyticsv2Mod.SnapshotName
   
   /**
     * The status of the application snapshot.
     */
-  var SnapshotStatus: typings.awsSdk.kinesisanalyticsv2Mod.SnapshotStatus = js.native
+  var SnapshotStatus: typings.awsSdk.kinesisanalyticsv2Mod.SnapshotStatus
 }
 object SnapshotDetails {
   

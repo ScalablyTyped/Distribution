@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,9 +11,9 @@ object mod {
   @JSImport("domhandler", "DomHandler")
   @js.native
   class DomHandler protected () extends StObject {
-    def this(callback: js.Function2[/* error */ js.Any, /* dom */ js.Array[DomElement], _]) = this()
+    def this(callback: js.Function2[/* error */ js.Any, /* dom */ js.Array[DomElement], js.Any]) = this()
     def this(
-      callback: js.Function2[/* error */ js.Any, /* dom */ js.Array[DomElement], _],
+      callback: js.Function2[/* error */ js.Any, /* dom */ js.Array[DomElement], js.Any],
       options: DomHandlerOptions
     ) = this()
     
@@ -47,24 +46,23 @@ object mod {
     def ontext(data: String): Unit = js.native
   }
   
-  @js.native
   trait DomElement extends StObject {
     
-    var attribs: js.UndefOr[StringDictionary[String]] = js.native
+    var attribs: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var children: js.UndefOr[js.Array[DomElement]] = js.native
+    var children: js.UndefOr[js.Array[DomElement]] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var next: js.UndefOr[DomElement] = js.native
+    var next: js.UndefOr[DomElement] = js.undefined
     
-    var parent: js.UndefOr[DomElement] = js.native
+    var parent: js.UndefOr[DomElement] = js.undefined
     
-    var prev: js.UndefOr[DomElement] = js.native
+    var prev: js.UndefOr[DomElement] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DomElement {
     
@@ -130,19 +128,18 @@ object mod {
     }
   }
   
-  @js.native
   trait DomHandlerOptions extends StObject {
     
     /***
       * Indicates whether the whitespace in text nodes should be normalized
       * (= all whitespace should be replaced with single spaces). The default value is "false".
       */
-    var normalizeWhitespace: js.UndefOr[Boolean] = js.native
+    var normalizeWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /***
       * Adds DOM level 1 properties to all elements.
       */
-    var withDomLvl1: js.UndefOr[Boolean] = js.native
+    var withDomLvl1: js.UndefOr[Boolean] = js.undefined
     
     /***
       * Indicates whether a endIndex property will be added to nodes.
@@ -150,7 +147,7 @@ object mod {
       * indicating the position of the end of the node in the document.
       * The default value is "false".
       */
-    var withEndIndices: js.UndefOr[Boolean] = js.native
+    var withEndIndices: js.UndefOr[Boolean] = js.undefined
     
     /***
       * Indicates whether a startIndex property will be added to nodes.
@@ -158,7 +155,7 @@ object mod {
       * indicating the position of the start of the node in the document.
       * The default value is "false".
       */
-    var withStartIndices: js.UndefOr[Boolean] = js.native
+    var withStartIndices: js.UndefOr[Boolean] = js.undefined
   }
   object DomHandlerOptions {
     
@@ -197,11 +194,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait Element extends DomElement {
+  trait Element
+    extends StObject
+       with DomElement {
     
     @JSName("name")
-    var name_Element: String = js.native
+    var name_Element: String
   }
   object Element {
     
@@ -219,14 +217,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait Node extends DomElement {
+  trait Node
+    extends StObject
+       with DomElement {
     
-    val firstChild: DomElement = js.native
+    val firstChild: DomElement
     
-    val lastChild: DomElement = js.native
+    val lastChild: DomElement
     
-    val nodeType: Double = js.native
+    val nodeType: Double
   }
   object Node {
     

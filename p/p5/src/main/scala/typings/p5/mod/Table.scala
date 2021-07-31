@@ -3,7 +3,6 @@ package typings.p5.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -87,7 +86,7 @@ trait Table extends StObject {
     *   Retrieves all table data and returns it as a
     *   multidimensional array.
     */
-  def getArray(): js.Array[_] = js.native
+  def getArray(): js.Array[js.Any] = js.native
   
   /**
     *   Retrieves all values in the specified column, and
@@ -97,8 +96,8 @@ trait Table extends StObject {
     *   return
     *   @return Array of column values
     */
-  def getColumn(column: String): js.Array[_] = js.native
-  def getColumn(column: Double): js.Array[_] = js.native
+  def getColumn(column: String): js.Array[js.Any] = js.native
+  def getColumn(column: Double): js.Array[js.Any] = js.native
   
   /**
     *   Returns the total number of columns in a Table.

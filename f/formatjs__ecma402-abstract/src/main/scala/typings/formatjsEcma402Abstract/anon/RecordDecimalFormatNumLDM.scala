@@ -3,36 +3,34 @@ package typings.formatjsEcma402Abstract.anon
 import typings.formatjsEcma402Abstract.numberMod.LDMLPluralRuleMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.DecimalFormatNum, @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.LDMLPluralRuleMap<string>> */
-@js.native
 trait RecordDecimalFormatNumLDM extends StObject {
   
-  var `1000`: LDMLPluralRuleMap[String] = js.native
+  var `1000`: LDMLPluralRuleMap[String]
   
-  var `10000`: LDMLPluralRuleMap[String] = js.native
+  var `10000`: LDMLPluralRuleMap[String]
   
-  var `100000`: LDMLPluralRuleMap[String] = js.native
+  var `100000`: LDMLPluralRuleMap[String]
   
-  var `1000000`: LDMLPluralRuleMap[String] = js.native
+  var `1000000`: LDMLPluralRuleMap[String]
   
-  var `10000000`: LDMLPluralRuleMap[String] = js.native
+  var `10000000`: LDMLPluralRuleMap[String]
   
-  var `100000000`: LDMLPluralRuleMap[String] = js.native
+  var `100000000`: LDMLPluralRuleMap[String]
   
-  var `1000000000`: LDMLPluralRuleMap[String] = js.native
+  var `1000000000`: LDMLPluralRuleMap[String]
   
-  var `10000000000`: LDMLPluralRuleMap[String] = js.native
+  var `10000000000`: LDMLPluralRuleMap[String]
   
-  var `100000000000`: LDMLPluralRuleMap[String] = js.native
+  var `100000000000`: LDMLPluralRuleMap[String]
   
-  var `1000000000000`: LDMLPluralRuleMap[String] = js.native
+  var `1000000000000`: LDMLPluralRuleMap[String]
   
-  var `10000000000000`: LDMLPluralRuleMap[String] = js.native
+  var `10000000000000`: LDMLPluralRuleMap[String]
   
-  var `100000000000000`: LDMLPluralRuleMap[String] = js.native
+  var `100000000000000`: LDMLPluralRuleMap[String]
 }
 object RecordDecimalFormatNumLDM {
   

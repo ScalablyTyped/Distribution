@@ -2,7 +2,6 @@ package typings.three.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "PolarGridHelper")
@@ -32,30 +31,6 @@ class PolarGridHelper protected ()
     radials: Double,
     circles: Double,
     divisions: Double,
-    color1: js.UndefOr[scala.Nothing],
-    color2: String
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: js.UndefOr[scala.Nothing],
-    color2: Double
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: js.UndefOr[scala.Nothing],
-    color2: typings.three.colorMod.Color
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
     color1: String,
     color2: String
   ) = this()
@@ -97,6 +72,16 @@ class PolarGridHelper protected ()
     circles: Double,
     divisions: Double,
     color1: Double,
+    color2: typings.three.colorMod.Color
+  ) = this()
+  def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Unit, color2: String) = this()
+  def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Unit, color2: Double) = this()
+  def this(
+    radius: Double,
+    radials: Double,
+    circles: Double,
+    divisions: Double,
+    color1: Unit,
     color2: typings.three.colorMod.Color
   ) = this()
   def this(

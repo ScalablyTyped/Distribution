@@ -3,17 +3,15 @@ package typings.iobroker.mod.global.ioBroker
 import typings.iobroker.objectsMod.global.ioBroker.BaseObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectsItem[T /* <: BaseObject */] extends StObject {
   
   /** The ID of this object */
-  var id: String = js.native
+  var id: String
   
   /** A copy of the object from the DB */
-  var value: T = js.native
+  var value: T
 }
 object GetObjectsItem {
   
@@ -24,7 +22,7 @@ object GetObjectsItem {
   }
   
   @scala.inline
-  implicit class GetObjectsItemMutableBuilder[Self <: GetObjectsItem[_], T /* <: BaseObject */] (val x: Self with GetObjectsItem[T]) extends AnyVal {
+  implicit class GetObjectsItemMutableBuilder[Self <: GetObjectsItem[?], T /* <: BaseObject */] (val x: Self & GetObjectsItem[T]) extends AnyVal {
     
     @scala.inline
     def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

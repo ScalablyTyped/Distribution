@@ -4,17 +4,15 @@ import typings.wordpressCustomizeBrowser.outerSectionMod.OuterSection
 import typings.wordpressCustomizeBrowser.themesSectionMod.ThemesSection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sectionConstructorMod {
   
-  @js.native
   trait SectionConstructor extends StObject {
     
-    var outer: OuterSection = js.native
+    var outer: OuterSection
     
-    var themes: ThemesSection = js.native
+    var themes: ThemesSection
   }
   object SectionConstructor {
     

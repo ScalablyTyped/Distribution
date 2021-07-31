@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudkms/v1", "cloudkms_v1.Resource$Projects$Locations$Keyrings$Cryptokeys$Cryptokeyversions")
@@ -32,7 +31,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     */
   def asymmetricDecrypt(): GaxiosPromise[SchemaAsymmetricDecryptResponse] = js.native
   def asymmetricDecrypt(callback: BodyResponseCallback[SchemaAsymmetricDecryptResponse]): Unit = js.native
-  def asymmetricDecrypt(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAsymmetricDecryptResponse] = js.native
+  def asymmetricDecrypt(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAsymmetricDecryptResponse] = js.native
   def asymmetricDecrypt(params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsAsymmetricdecrypt): GaxiosPromise[SchemaAsymmetricDecryptResponse] = js.native
   def asymmetricDecrypt(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsAsymmetricdecrypt,
@@ -71,7 +70,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     */
   def asymmetricSign(): GaxiosPromise[SchemaAsymmetricSignResponse] = js.native
   def asymmetricSign(callback: BodyResponseCallback[SchemaAsymmetricSignResponse]): Unit = js.native
-  def asymmetricSign(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAsymmetricSignResponse] = js.native
+  def asymmetricSign(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAsymmetricSignResponse] = js.native
   def asymmetricSign(params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsAsymmetricsign): GaxiosPromise[SchemaAsymmetricSignResponse] = js.native
   def asymmetricSign(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsAsymmetricsign,
@@ -111,7 +110,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     */
   def create(): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def create(callback: BodyResponseCallback[SchemaCryptoKeyVersion]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def create(params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsCreate): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def create(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsCreate,
@@ -153,7 +152,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     */
   def destroy(): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def destroy(callback: BodyResponseCallback[SchemaCryptoKeyVersion]): Unit = js.native
-  def destroy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
+  def destroy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def destroy(params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsDestroy): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def destroy(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsDestroy,
@@ -189,7 +188,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     */
   def get(): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def get(callback: BodyResponseCallback[SchemaCryptoKeyVersion]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def get(params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsGet): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def get(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsGet,
@@ -226,7 +225,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     */
   def getPublicKey(): GaxiosPromise[SchemaPublicKey] = js.native
   def getPublicKey(callback: BodyResponseCallback[SchemaPublicKey]): Unit = js.native
-  def getPublicKey(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPublicKey] = js.native
+  def getPublicKey(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPublicKey] = js.native
   def getPublicKey(params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsGetpublickey): GaxiosPromise[SchemaPublicKey] = js.native
   def getPublicKey(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsGetpublickey,
@@ -265,7 +264,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     */
   def list(): GaxiosPromise[SchemaListCryptoKeyVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCryptoKeyVersionsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCryptoKeyVersionsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListCryptoKeyVersionsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsList): GaxiosPromise[SchemaListCryptoKeyVersionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsList,
@@ -305,7 +304,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     */
   def patch(): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def patch(callback: BodyResponseCallback[SchemaCryptoKeyVersion]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def patch(params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsPatch): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def patch(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsPatch,
@@ -344,7 +343,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     */
   def restore(): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def restore(callback: BodyResponseCallback[SchemaCryptoKeyVersion]): Unit = js.native
-  def restore(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
+  def restore(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def restore(params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsRestore): GaxiosPromise[SchemaCryptoKeyVersion] = js.native
   def restore(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsRestore,

@@ -2,17 +2,15 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFWorkerParameters extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var port: js.UndefOr[js.Any] = js.native
+  var port: js.UndefOr[js.Any] = js.undefined
   
-  var verbosity: js.UndefOr[VerbosityLevel] = js.native
+  var verbosity: js.UndefOr[VerbosityLevel] = js.undefined
 }
 object PDFWorkerParameters {
   

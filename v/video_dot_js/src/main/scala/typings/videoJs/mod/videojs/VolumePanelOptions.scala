@@ -2,15 +2,15 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VolumePanelOptions extends ComponentOptions {
+trait VolumePanelOptions
+  extends StObject
+     with ComponentOptions {
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var volumeControl: js.UndefOr[VolumeControlOptions] = js.native
+  var volumeControl: js.UndefOr[VolumeControlOptions] = js.undefined
 }
 object VolumePanelOptions {
   

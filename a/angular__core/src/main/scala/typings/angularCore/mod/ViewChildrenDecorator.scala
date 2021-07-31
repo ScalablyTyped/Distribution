@@ -5,17 +5,17 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.angularCore.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewChildrenDecorator
-  extends Instantiable1[
-      (/* selector */ js.Function) | (/* selector */ InjectionToken[js.Any]) | (/* selector */ String) | (/* selector */ typings.angularCore.mod.Type[js.Any]), 
+  extends StObject
+     with Instantiable1[
+      (/* selector */ js.Function) | (/* selector */ InjectionToken[js.Any]) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
       typings.angularCore.mod.ViewChildren
     ]
      with Instantiable2[
-      (/* selector */ js.Function) | (/* selector */ InjectionToken[js.Any]) | (/* selector */ String) | (/* selector */ typings.angularCore.mod.Type[js.Any]), 
+      (/* selector */ js.Function) | (/* selector */ InjectionToken[js.Any]) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
       /* opts */ `0`, 
       typings.angularCore.mod.ViewChildren
     ] {
@@ -24,8 +24,8 @@ trait ViewChildrenDecorator
   def apply(selector: String, opts: `0`): js.Any = js.native
   def apply(selector: js.Function): js.Any = js.native
   def apply(selector: js.Function, opts: `0`): js.Any = js.native
-  def apply(selector: InjectionToken[_]): js.Any = js.native
-  def apply(selector: InjectionToken[_], opts: `0`): js.Any = js.native
+  def apply(selector: InjectionToken[js.Any]): js.Any = js.native
+  def apply(selector: InjectionToken[js.Any], opts: `0`): js.Any = js.native
   /**
     * Parameter decorator that configures a view query.
     *
@@ -50,6 +50,6 @@ trait ViewChildrenDecorator
     *
     * @Annotation
     */
-  def apply(selector: typings.angularCore.mod.Type[_]): js.Any = js.native
-  def apply(selector: typings.angularCore.mod.Type[_], opts: `0`): js.Any = js.native
+  def apply(selector: Type[js.Any]): js.Any = js.native
+  def apply(selector: Type[js.Any], opts: `0`): js.Any = js.native
 }

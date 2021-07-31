@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the flow that you want to tag. 
     */
-  var resourceArn: ARN = js.native
+  var resourceArn: ARN
   
   /**
     *  The tags used to organize, track, or control access for your flow. 
     */
-  var tags: TagMap = js.native
+  var tags: TagMap
 }
 object TagResourceRequest {
   

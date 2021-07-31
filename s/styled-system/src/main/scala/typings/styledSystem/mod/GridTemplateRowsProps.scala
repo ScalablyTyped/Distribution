@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridTemplateRowsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GridTemplateRowsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/row-template-rows)
     */
-  var gridTemplateRows: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var gridTemplateRows: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object GridTemplateRowsProps {
   
@@ -24,7 +22,7 @@ object GridTemplateRowsProps {
   }
   
   @scala.inline
-  implicit class GridTemplateRowsPropsMutableBuilder[Self <: GridTemplateRowsProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (GridTemplateRowsProps[ThemeType, TVal])) extends AnyVal {
+  implicit class GridTemplateRowsPropsMutableBuilder[Self <: GridTemplateRowsProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (GridTemplateRowsProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setGridTemplateRows(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])

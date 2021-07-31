@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentDefaultVersionDescription extends StObject {
   
   /**
     * The default version of the document.
     */
-  var DefaultVersion: js.UndefOr[DocumentVersion] = js.native
+  var DefaultVersion: js.UndefOr[DocumentVersion] = js.undefined
   
   /**
     * The default version of the artifact associated with the document.
     */
-  var DefaultVersionName: js.UndefOr[DocumentVersionName] = js.native
+  var DefaultVersionName: js.UndefOr[DocumentVersionName] = js.undefined
   
   /**
     * The name of the document.
     */
-  var Name: js.UndefOr[DocumentName] = js.native
+  var Name: js.UndefOr[DocumentName] = js.undefined
 }
 object DocumentDefaultVersionDescription {
   

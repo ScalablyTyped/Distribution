@@ -2,25 +2,23 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreDragActions extends StObject {
   
   // cancel the pre drag without starting a drag. Releases the lock
-  def abort(): Unit = js.native
+  def abort(): Unit
   
   // lift the current item
-  def fluidLift(clientSelection: Position): FluidDragActions = js.native
+  def fluidLift(clientSelection: Position): FluidDragActions
   
   // discover if the lock is still active
-  def isActive(): Boolean = js.native
+  def isActive(): Boolean
   
   // whether it has been indicated if force press should be respected
-  def shouldRespectForcePress(): Boolean = js.native
+  def shouldRespectForcePress(): Boolean
   
-  def snapLift(): SnapDragActions = js.native
+  def snapLift(): SnapDragActions
 }
 object PreDragActions {
   

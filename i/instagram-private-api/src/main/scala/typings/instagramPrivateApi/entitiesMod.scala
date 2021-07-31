@@ -6,7 +6,6 @@ import typings.instagramPrivateApi.liveObsSettingsMod.LiveRtmpSettings
 import typings.instagramPrivateApi.mediaEntityOembedResponseMod.MediaEntityOembedResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entitiesMod {
@@ -27,9 +26,12 @@ object entitiesMod {
   /* static members */
   object LiveEntity {
     
-    @JSImport("instagram-private-api/dist/entities", "LiveEntity.getUrlAndKey")
+    @JSImport("instagram-private-api/dist/entities", "LiveEntity")
     @js.native
-    def getUrlAndKey(info: Broadcastid): LiveRtmpSettings = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getUrlAndKey(info: Broadcastid): LiveRtmpSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlAndKey")(info.asInstanceOf[js.Any]).asInstanceOf[LiveRtmpSettings]
   }
   
   @JSImport("instagram-private-api/dist/entities", "MediaEntity")
@@ -41,9 +43,12 @@ object entitiesMod {
   /* static members */
   object MediaEntity {
     
-    @JSImport("instagram-private-api/dist/entities", "MediaEntity.oembed")
+    @JSImport("instagram-private-api/dist/entities", "MediaEntity")
     @js.native
-    def oembed(url: String): js.Promise[MediaEntityOembedResponse] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def oembed(url: String): js.Promise[MediaEntityOembedResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("oembed")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MediaEntityOembedResponse]]
   }
   
   @JSImport("instagram-private-api/dist/entities", "ProfileEntity")

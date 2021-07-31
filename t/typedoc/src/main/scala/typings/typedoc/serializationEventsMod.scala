@@ -5,7 +5,6 @@ import typings.typedoc.modelsMod.ProjectReflection
 import typings.typedoc.utilsEventsMod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serializationEventsMod {
@@ -24,12 +23,11 @@ object serializationEventsMod {
     val project: ProjectReflection = js.native
   }
   
-  @js.native
   trait SerializeEventData extends StObject {
     
-    var outputDirectory: js.UndefOr[String] = js.native
+    var outputDirectory: js.UndefOr[String] = js.undefined
     
-    var outputFile: js.UndefOr[String] = js.native
+    var outputFile: js.UndefOr[String] = js.undefined
   }
   object SerializeEventData {
     

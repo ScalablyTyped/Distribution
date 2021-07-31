@@ -3,19 +3,17 @@ package typings.popperjsCore.anon
 import typings.popperjsCore.typesMod.SideObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasPopperEscaped extends StObject {
   
-  var hasPopperEscaped: Boolean = js.native
+  var hasPopperEscaped: Boolean
   
-  var isReferenceHidden: Boolean = js.native
+  var isReferenceHidden: Boolean
   
-  var popperEscapeOffsets: SideObject = js.native
+  var popperEscapeOffsets: SideObject
   
-  var referenceClippingOffsets: SideObject = js.native
+  var referenceClippingOffsets: SideObject
 }
 object HasPopperEscaped {
   

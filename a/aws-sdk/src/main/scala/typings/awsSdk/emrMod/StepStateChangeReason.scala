@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepStateChangeReason extends StObject {
   
   /**
     * The programmable code for the state change reason. Note: Currently, the service provides no code for the state change.
     */
-  var Code: js.UndefOr[StepStateChangeReasonCode] = js.native
+  var Code: js.UndefOr[StepStateChangeReasonCode] = js.undefined
   
   /**
     * The descriptive message for the state change reason.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object StepStateChangeReason {
   

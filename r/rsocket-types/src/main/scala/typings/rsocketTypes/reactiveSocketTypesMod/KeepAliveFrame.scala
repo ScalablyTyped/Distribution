@@ -4,30 +4,30 @@ import typings.rsocketTypes.rsocketTypesNumbers.`0`
 import typings.rsocketTypes.rsocketTypesNumbers.`0x03`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeepAliveFrame extends Frame {
+trait KeepAliveFrame
+  extends StObject
+     with Frame {
   
-  var data: js.UndefOr[Encodable] = js.native
+  var data: js.UndefOr[Encodable] = js.undefined
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var lastReceivedPosition: Double = js.native
+  var lastReceivedPosition: Double
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var streamId: `0` = js.native
+  var streamId: `0`
   
-  var `type`: `0x03` = js.native
+  var `type`: `0x03`
 }
 object KeepAliveFrame {
   
   @scala.inline
-  def apply(flags: Double, lastReceivedPosition: Double, streamId: `0`, `type`: `0x03`): KeepAliveFrame = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], lastReceivedPosition = lastReceivedPosition.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(flags: Double, lastReceivedPosition: Double): KeepAliveFrame = {
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], lastReceivedPosition = lastReceivedPosition.asInstanceOf[js.Any], streamId = 0)
+    __obj.updateDynamic("type")(0x03)
     __obj.asInstanceOf[KeepAliveFrame]
   }
   

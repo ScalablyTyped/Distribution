@@ -10,7 +10,6 @@ import typings.youtubePlayer.youtubePlayerStrings.stateChange
 import typings.youtubePlayer.youtubePlayerStrings.volumeChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventNamesMod extends Shortcut {

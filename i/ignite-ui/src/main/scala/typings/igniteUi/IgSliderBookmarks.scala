@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSliderBookmarks
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,22 +15,22 @@ trait IgSliderBookmarks
   /**
     * Get or set a custom css class to be applied to the bookmark anchor element.
     */
-  var css: js.UndefOr[String] = js.native
+  var css: js.UndefOr[String] = js.undefined
   
   /**
     * Get or set whether the bookmark is disabled or not.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Get or set the bookmark title. Show in tooltip on hover.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Get or set the bookmark value. Should be between slider min and max values.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object IgSliderBookmarks {
   

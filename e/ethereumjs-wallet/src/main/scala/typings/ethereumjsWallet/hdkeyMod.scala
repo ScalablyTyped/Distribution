@@ -3,25 +3,62 @@ package typings.ethereumjsWallet
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hdkeyMod {
   
   @JSImport("ethereumjs-wallet/dist/hdkey", JSImport.Default)
   @js.native
-  class default () extends EthereumHDKey {
+  class default ()
+    extends StObject
+       with EthereumHDKey {
     def this(_hdkey: js.Any) = this()
+    
+    /* CompleteClass */
+    override val _hdkey: js.Any = js.native
+    
+    /**
+      * Derive a node based on a child index
+      */
+    /* CompleteClass */
+    override def deriveChild(index: Double): EthereumHDKey = js.native
+    
+    /**
+      * Derives a node based on a path (e.g. m/44'/0'/0/1)
+      */
+    /* CompleteClass */
+    override def derivePath(path: String): EthereumHDKey = js.native
+    
+    /**
+      * Return a `Wallet` instance as seen above
+      */
+    /* CompleteClass */
+    override def getWallet(): typings.ethereumjsWallet.mod.default = js.native
+    
+    /**
+      * Returns a BIP32 extended private key (xprv)
+      */
+    /* CompleteClass */
+    override def privateExtendedKey(): Buffer = js.native
+    
+    /**
+      * Return a BIP32 extended public key (xpub)
+      */
+    /* CompleteClass */
+    override def publicExtendedKey(): Buffer = js.native
   }
   /* static members */
   object default {
     
+    @JSImport("ethereumjs-wallet/dist/hdkey", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an instance based on a BIP32 extended private or public key.
       */
-    @JSImport("ethereumjs-wallet/dist/hdkey", "default.fromExtendedKey")
-    @js.native
-    def fromExtendedKey(base58Key: String): EthereumHDKey = js.native
+    @scala.inline
+    def fromExtendedKey(base58Key: String): EthereumHDKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58Key.asInstanceOf[js.Any]).asInstanceOf[EthereumHDKey]
     
     /**
       * Creates an instance based on a seed.
@@ -29,40 +66,38 @@ object hdkeyMod {
       * For the seed we suggest to use [bip39](https://npmjs.org/package/bip39) to
       * create one from a BIP39 mnemonic.
       */
-    @JSImport("ethereumjs-wallet/dist/hdkey", "default.fromMasterSeed")
-    @js.native
-    def fromMasterSeed(seedBuffer: Buffer): EthereumHDKey = js.native
+    @scala.inline
+    def fromMasterSeed(seedBuffer: Buffer): EthereumHDKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seedBuffer.asInstanceOf[js.Any]).asInstanceOf[EthereumHDKey]
   }
   
-  @js.native
   trait EthereumHDKey extends StObject {
     
-    val _hdkey: js.Any = js.native
+    val _hdkey: js.Any
     
     /**
       * Derive a node based on a child index
       */
-    def deriveChild(index: Double): EthereumHDKey = js.native
+    def deriveChild(index: Double): EthereumHDKey
     
     /**
       * Derives a node based on a path (e.g. m/44'/0'/0/1)
       */
-    def derivePath(path: String): EthereumHDKey = js.native
+    def derivePath(path: String): EthereumHDKey
     
     /**
       * Return a `Wallet` instance as seen above
       */
-    def getWallet(): typings.ethereumjsWallet.mod.default = js.native
+    def getWallet(): typings.ethereumjsWallet.mod.default
     
     /**
       * Returns a BIP32 extended private key (xprv)
       */
-    def privateExtendedKey(): Buffer = js.native
+    def privateExtendedKey(): Buffer
     
     /**
       * Return a BIP32 extended public key (xpub)
       */
-    def publicExtendedKey(): Buffer = js.native
+    def publicExtendedKey(): Buffer
   }
   object EthereumHDKey {
     

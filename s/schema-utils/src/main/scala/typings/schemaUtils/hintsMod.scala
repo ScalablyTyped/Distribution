@@ -6,18 +6,19 @@ import typings.jsonSchema.mod.JSONSchema7
 import typings.schemaUtils.validateMod.Extend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hintsMod {
   
-  @JSImport("schema-utils/declarations/util/hints", "numberHints")
+  @JSImport("schema-utils/declarations/util/hints", JSImport.Namespace)
   @js.native
-  def numberHints(schema: Schema, logic: Boolean): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("schema-utils/declarations/util/hints", "stringHints")
-  @js.native
-  def stringHints(schema: Schema, logic: Boolean): js.Array[String] = js.native
+  @scala.inline
+  def numberHints(schema: Schema, logic: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("numberHints")(schema.asInstanceOf[js.Any], logic.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  type Schema = (JSONSchema4 with Extend) | (JSONSchema6 with Extend) | (JSONSchema7 with Extend)
+  @scala.inline
+  def stringHints(schema: Schema, logic: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringHints")(schema.asInstanceOf[js.Any], logic.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  type Schema = (JSONSchema4 & Extend) | (JSONSchema6 & Extend) | (JSONSchema7 & Extend)
 }

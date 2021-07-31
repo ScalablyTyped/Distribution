@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,117 +11,173 @@ sealed trait NodeFlags extends StObject
 object NodeFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NodeFlags with Double] = js.native
+  def apply(value: Double): js.UndefOr[NodeFlags & Double] = js.native
   
   @js.native
-  sealed trait AwaitContext extends NodeFlags
-  /* 32768 */ val AwaitContext: typings.typescript.mod.NodeFlags.AwaitContext with Double = js.native
+  sealed trait AwaitContext
+    extends StObject
+       with NodeFlags
+  /* 32768 */ val AwaitContext: typings.typescript.mod.NodeFlags.AwaitContext & Double = js.native
   
   @js.native
-  sealed trait BlockScoped extends NodeFlags
-  /* 3 */ val BlockScoped: typings.typescript.mod.NodeFlags.BlockScoped with Double = js.native
+  sealed trait BlockScoped
+    extends StObject
+       with NodeFlags
+  /* 3 */ val BlockScoped: typings.typescript.mod.NodeFlags.BlockScoped & Double = js.native
   
   @js.native
-  sealed trait Const extends NodeFlags
-  /* 2 */ val Const: typings.typescript.mod.NodeFlags.Const with Double = js.native
+  sealed trait Const
+    extends StObject
+       with NodeFlags
+  /* 2 */ val Const: typings.typescript.mod.NodeFlags.Const & Double = js.native
   
   @js.native
-  sealed trait ContainsThis extends NodeFlags
-  /* 128 */ val ContainsThis: typings.typescript.mod.NodeFlags.ContainsThis with Double = js.native
+  sealed trait ContainsThis
+    extends StObject
+       with NodeFlags
+  /* 128 */ val ContainsThis: typings.typescript.mod.NodeFlags.ContainsThis & Double = js.native
   
   @js.native
-  sealed trait ContextFlags extends NodeFlags
-  /* 25358336 */ val ContextFlags: typings.typescript.mod.NodeFlags.ContextFlags with Double = js.native
+  sealed trait ContextFlags
+    extends StObject
+       with NodeFlags
+  /* 25358336 */ val ContextFlags: typings.typescript.mod.NodeFlags.ContextFlags & Double = js.native
   
   @js.native
-  sealed trait DecoratorContext extends NodeFlags
-  /* 16384 */ val DecoratorContext: typings.typescript.mod.NodeFlags.DecoratorContext with Double = js.native
+  sealed trait DecoratorContext
+    extends StObject
+       with NodeFlags
+  /* 16384 */ val DecoratorContext: typings.typescript.mod.NodeFlags.DecoratorContext & Double = js.native
   
   @js.native
-  sealed trait DisallowInContext extends NodeFlags
-  /* 4096 */ val DisallowInContext: typings.typescript.mod.NodeFlags.DisallowInContext with Double = js.native
+  sealed trait DisallowInContext
+    extends StObject
+       with NodeFlags
+  /* 4096 */ val DisallowInContext: typings.typescript.mod.NodeFlags.DisallowInContext & Double = js.native
   
   @js.native
-  sealed trait ExportContext extends NodeFlags
-  /* 64 */ val ExportContext: typings.typescript.mod.NodeFlags.ExportContext with Double = js.native
+  sealed trait ExportContext
+    extends StObject
+       with NodeFlags
+  /* 64 */ val ExportContext: typings.typescript.mod.NodeFlags.ExportContext & Double = js.native
   
   @js.native
-  sealed trait GlobalAugmentation extends NodeFlags
-  /* 1024 */ val GlobalAugmentation: typings.typescript.mod.NodeFlags.GlobalAugmentation with Double = js.native
+  sealed trait GlobalAugmentation
+    extends StObject
+       with NodeFlags
+  /* 1024 */ val GlobalAugmentation: typings.typescript.mod.NodeFlags.GlobalAugmentation & Double = js.native
   
   @js.native
-  sealed trait HasAggregatedChildData extends NodeFlags
-  /* 524288 */ val HasAggregatedChildData: typings.typescript.mod.NodeFlags.HasAggregatedChildData with Double = js.native
+  sealed trait HasAggregatedChildData
+    extends StObject
+       with NodeFlags
+  /* 524288 */ val HasAggregatedChildData: typings.typescript.mod.NodeFlags.HasAggregatedChildData & Double = js.native
   
   @js.native
-  sealed trait HasAsyncFunctions extends NodeFlags
-  /* 2048 */ val HasAsyncFunctions: typings.typescript.mod.NodeFlags.HasAsyncFunctions with Double = js.native
+  sealed trait HasAsyncFunctions
+    extends StObject
+       with NodeFlags
+  /* 2048 */ val HasAsyncFunctions: typings.typescript.mod.NodeFlags.HasAsyncFunctions & Double = js.native
   
   @js.native
-  sealed trait HasExplicitReturn extends NodeFlags
-  /* 512 */ val HasExplicitReturn: typings.typescript.mod.NodeFlags.HasExplicitReturn with Double = js.native
+  sealed trait HasExplicitReturn
+    extends StObject
+       with NodeFlags
+  /* 512 */ val HasExplicitReturn: typings.typescript.mod.NodeFlags.HasExplicitReturn & Double = js.native
   
   @js.native
-  sealed trait HasImplicitReturn extends NodeFlags
-  /* 256 */ val HasImplicitReturn: typings.typescript.mod.NodeFlags.HasImplicitReturn with Double = js.native
+  sealed trait HasImplicitReturn
+    extends StObject
+       with NodeFlags
+  /* 256 */ val HasImplicitReturn: typings.typescript.mod.NodeFlags.HasImplicitReturn & Double = js.native
   
   @js.native
-  sealed trait JSDoc extends NodeFlags
-  /* 4194304 */ val JSDoc: typings.typescript.mod.NodeFlags.JSDoc with Double = js.native
+  sealed trait JSDoc
+    extends StObject
+       with NodeFlags
+  /* 4194304 */ val JSDoc: typings.typescript.mod.NodeFlags.JSDoc & Double = js.native
   
   @js.native
-  sealed trait JavaScriptFile extends NodeFlags
-  /* 131072 */ val JavaScriptFile: typings.typescript.mod.NodeFlags.JavaScriptFile with Double = js.native
+  sealed trait JavaScriptFile
+    extends StObject
+       with NodeFlags
+  /* 131072 */ val JavaScriptFile: typings.typescript.mod.NodeFlags.JavaScriptFile & Double = js.native
   
   @js.native
-  sealed trait JsonFile extends NodeFlags
-  /* 33554432 */ val JsonFile: typings.typescript.mod.NodeFlags.JsonFile with Double = js.native
+  sealed trait JsonFile
+    extends StObject
+       with NodeFlags
+  /* 33554432 */ val JsonFile: typings.typescript.mod.NodeFlags.JsonFile & Double = js.native
   
   @js.native
-  sealed trait Let extends NodeFlags
-  /* 1 */ val Let: typings.typescript.mod.NodeFlags.Let with Double = js.native
+  sealed trait Let
+    extends StObject
+       with NodeFlags
+  /* 1 */ val Let: typings.typescript.mod.NodeFlags.Let & Double = js.native
   
   @js.native
-  sealed trait Namespace extends NodeFlags
-  /* 16 */ val Namespace: typings.typescript.mod.NodeFlags.Namespace with Double = js.native
+  sealed trait Namespace
+    extends StObject
+       with NodeFlags
+  /* 16 */ val Namespace: typings.typescript.mod.NodeFlags.Namespace & Double = js.native
   
   @js.native
-  sealed trait NestedNamespace extends NodeFlags
-  /* 4 */ val NestedNamespace: typings.typescript.mod.NodeFlags.NestedNamespace with Double = js.native
+  sealed trait NestedNamespace
+    extends StObject
+       with NodeFlags
+  /* 4 */ val NestedNamespace: typings.typescript.mod.NodeFlags.NestedNamespace & Double = js.native
   
   @js.native
-  sealed trait None extends NodeFlags
-  /* 0 */ val None: typings.typescript.mod.NodeFlags.None with Double = js.native
+  sealed trait None
+    extends StObject
+       with NodeFlags
+  /* 0 */ val None: typings.typescript.mod.NodeFlags.None & Double = js.native
   
   @js.native
-  sealed trait OptionalChain extends NodeFlags
-  /* 32 */ val OptionalChain: typings.typescript.mod.NodeFlags.OptionalChain with Double = js.native
+  sealed trait OptionalChain
+    extends StObject
+       with NodeFlags
+  /* 32 */ val OptionalChain: typings.typescript.mod.NodeFlags.OptionalChain & Double = js.native
   
   @js.native
-  sealed trait ReachabilityAndEmitFlags extends NodeFlags
-  /* 2816 */ val ReachabilityAndEmitFlags: typings.typescript.mod.NodeFlags.ReachabilityAndEmitFlags with Double = js.native
+  sealed trait ReachabilityAndEmitFlags
+    extends StObject
+       with NodeFlags
+  /* 2816 */ val ReachabilityAndEmitFlags: typings.typescript.mod.NodeFlags.ReachabilityAndEmitFlags & Double = js.native
   
   @js.native
-  sealed trait ReachabilityCheckFlags extends NodeFlags
-  /* 768 */ val ReachabilityCheckFlags: typings.typescript.mod.NodeFlags.ReachabilityCheckFlags with Double = js.native
+  sealed trait ReachabilityCheckFlags
+    extends StObject
+       with NodeFlags
+  /* 768 */ val ReachabilityCheckFlags: typings.typescript.mod.NodeFlags.ReachabilityCheckFlags & Double = js.native
   
   @js.native
-  sealed trait Synthesized extends NodeFlags
-  /* 8 */ val Synthesized: typings.typescript.mod.NodeFlags.Synthesized with Double = js.native
+  sealed trait Synthesized
+    extends StObject
+       with NodeFlags
+  /* 8 */ val Synthesized: typings.typescript.mod.NodeFlags.Synthesized & Double = js.native
   
   @js.native
-  sealed trait ThisNodeHasError extends NodeFlags
-  /* 65536 */ val ThisNodeHasError: typings.typescript.mod.NodeFlags.ThisNodeHasError with Double = js.native
+  sealed trait ThisNodeHasError
+    extends StObject
+       with NodeFlags
+  /* 65536 */ val ThisNodeHasError: typings.typescript.mod.NodeFlags.ThisNodeHasError & Double = js.native
   
   @js.native
-  sealed trait ThisNodeOrAnySubNodesHasError extends NodeFlags
-  /* 262144 */ val ThisNodeOrAnySubNodesHasError: typings.typescript.mod.NodeFlags.ThisNodeOrAnySubNodesHasError with Double = js.native
+  sealed trait ThisNodeOrAnySubNodesHasError
+    extends StObject
+       with NodeFlags
+  /* 262144 */ val ThisNodeOrAnySubNodesHasError: typings.typescript.mod.NodeFlags.ThisNodeOrAnySubNodesHasError & Double = js.native
   
   @js.native
-  sealed trait TypeExcludesFlags extends NodeFlags
-  /* 40960 */ val TypeExcludesFlags: typings.typescript.mod.NodeFlags.TypeExcludesFlags with Double = js.native
+  sealed trait TypeExcludesFlags
+    extends StObject
+       with NodeFlags
+  /* 40960 */ val TypeExcludesFlags: typings.typescript.mod.NodeFlags.TypeExcludesFlags & Double = js.native
   
   @js.native
-  sealed trait YieldContext extends NodeFlags
-  /* 8192 */ val YieldContext: typings.typescript.mod.NodeFlags.YieldContext with Double = js.native
+  sealed trait YieldContext
+    extends StObject
+       with NodeFlags
+  /* 8192 */ val YieldContext: typings.typescript.mod.NodeFlags.YieldContext & Double = js.native
 }

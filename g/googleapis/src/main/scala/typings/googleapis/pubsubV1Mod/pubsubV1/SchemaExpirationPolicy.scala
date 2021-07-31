@@ -2,14 +2,12 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A policy that specifies the conditions for resource expiration (i.e.,
   * automatic resource deletion).
   */
-@js.native
 trait SchemaExpirationPolicy extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaExpirationPolicy extends StObject {
     * depend on the type of the associated resource, as well. If `ttl` is not
     * set, the associated resource never expires.
     */
-  var ttl: js.UndefOr[String] = js.native
+  var ttl: js.UndefOr[String] = js.undefined
 }
 object SchemaExpirationPolicy {
   

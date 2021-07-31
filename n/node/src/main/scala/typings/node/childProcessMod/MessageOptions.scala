@@ -2,13 +2,11 @@ package typings.node.childProcessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageOptions extends StObject {
   
-  var keepOpen: js.UndefOr[Boolean] = js.native
+  var keepOpen: js.UndefOr[Boolean] = js.undefined
 }
 object MessageOptions {
   

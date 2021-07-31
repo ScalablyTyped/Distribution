@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditorVisibleRangesChangeEvent extends StObject {
   
   /**
     * The [text editor](#TextEditor) for which the visible ranges have changed.
     */
-  val textEditor: TextEditor = js.native
+  val textEditor: TextEditor
   
   /**
     * The new value for the [text editor's visible ranges](#TextEditor.visibleRanges).
     */
-  val visibleRanges: js.Array[Range] = js.native
+  val visibleRanges: js.Array[Range]
 }
 object TextEditorVisibleRangesChangeEvent {
   

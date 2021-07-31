@@ -6,30 +6,31 @@ import typings.reactMdUtils.useResizeObserverV1Mod.UseResizeObserverV1Options
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useResizeObserverMod {
   
-  @JSImport("@react-md/utils/types/sizing/useResizeObserver", "useResizeObserver")
+  @JSImport("@react-md/utils/types/sizing/useResizeObserver", JSImport.Namespace)
   @js.native
-  def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E]): EnsuredRefs[E] = js.native
-  @JSImport("@react-md/utils/types/sizing/useResizeObserver", "useResizeObserver")
-  @js.native
-  def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E], options: UseResizeObserverOptions[E]): EnsuredRefs[E] = js.native
-  @JSImport("@react-md/utils/types/sizing/useResizeObserver", "useResizeObserver")
-  @js.native
-  def useResizeObserver[E /* <: HTMLElement */](options: UseResizeObserverV1Options[E]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E]): EnsuredRefs[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any]).asInstanceOf[EnsuredRefs[E]]
+  @scala.inline
+  def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E], options: UseResizeObserverOptions[E]): EnsuredRefs[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EnsuredRefs[E]]
+  @scala.inline
+  def useResizeObserver[E /* <: HTMLElement */](options: UseResizeObserverV1Options[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type OnResizeObserverChange[E /* <: HTMLElement */] = js.Function1[/* resizeData */ ResizeObserverElementData[E], Unit]
   
-  @js.native
-  trait ResizeObserverElementData[E /* <: HTMLElement */] extends ResizeObserverElementSize {
+  trait ResizeObserverElementData[E /* <: HTMLElement */]
+    extends StObject
+       with ResizeObserverElementSize {
     
     /**
       * The element that changed due to the resize observer.
       */
-    var element: E = js.native
+    var element: E
   }
   object ResizeObserverElementData {
     
@@ -40,35 +41,34 @@ object useResizeObserverMod {
     }
     
     @scala.inline
-    implicit class ResizeObserverElementDataMutableBuilder[Self <: ResizeObserverElementData[_], E /* <: HTMLElement */] (val x: Self with ResizeObserverElementData[E]) extends AnyVal {
+    implicit class ResizeObserverElementDataMutableBuilder[Self <: ResizeObserverElementData[?], E /* <: HTMLElement */] (val x: Self & ResizeObserverElementData[E]) extends AnyVal {
       
       @scala.inline
       def setElement(value: E): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ResizeObserverElementSize extends StObject {
     
     /**
       * The height for the element that was changed.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * The scroll height for the element that was changed.
       */
-    var scrollHeight: Double = js.native
+    var scrollHeight: Double
     
     /**
       * The scroll height for the element that was changed.
       */
-    var scrollWidth: Double = js.native
+    var scrollWidth: Double
     
     /**
       * The width for the element that was changed.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object ResizeObserverElementSize {
     
@@ -95,25 +95,24 @@ object useResizeObserverMod {
     }
   }
   
-  @js.native
   trait UseResizeObserverOptions[E /* <: HTMLElement */] extends StObject {
     
     /**
       * Boolean if the `onResize` callback should not be triggered if only the
       * height has changed for the watched element.
       */
-    var disableHeight: js.UndefOr[Boolean] = js.native
+    var disableHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the `onResize` callback should not be triggered if only the
       * width has changed for the watched element.
       */
-    var disableWidth: js.UndefOr[Boolean] = js.native
+    var disableWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional ref to merge with the returned ref handler function
       */
-    var ref: js.UndefOr[Ref[E | Null]] = js.native
+    var ref: js.UndefOr[Ref[E | Null]] = js.undefined
   }
   object UseResizeObserverOptions {
     
@@ -124,7 +123,7 @@ object useResizeObserverMod {
     }
     
     @scala.inline
-    implicit class UseResizeObserverOptionsMutableBuilder[Self <: UseResizeObserverOptions[_], E /* <: HTMLElement */] (val x: Self with UseResizeObserverOptions[E]) extends AnyVal {
+    implicit class UseResizeObserverOptionsMutableBuilder[Self <: UseResizeObserverOptions[?], E /* <: HTMLElement */] (val x: Self & UseResizeObserverOptions[E]) extends AnyVal {
       
       @scala.inline
       def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])

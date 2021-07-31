@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data to the background task about a new message. */
-@js.native
 trait RcsEndUserMessageAvailableTriggerDetails extends StObject {
   
   /** Gets the text of the new message. */
-  var text: String = js.native
+  var text: String
   
   /** Gets the title of the new message. */
-  var title: String = js.native
+  var title: String
 }
 object RcsEndUserMessageAvailableTriggerDetails {
   

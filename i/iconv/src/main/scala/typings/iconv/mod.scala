@@ -7,7 +7,6 @@ import typings.node.Buffer
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,7 +14,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("iconv", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Iconv {
+  class ^ protected ()
+    extends StObject
+       with Iconv {
     def this(fromEncoding: String, toEncoding: String) = this()
   }
   @JSImport("iconv", JSImport.Namespace)
@@ -23,7 +24,9 @@ object mod extends Shortcut {
   val ^ : Static = js.native
   
   @js.native
-  trait Iconv extends WritableStream {
+  trait Iconv
+    extends StObject
+       with WritableStream {
     
     def convert(input: String): Buffer = js.native
     def convert(input: String, encoding: String): Buffer = js.native
@@ -31,13 +34,13 @@ object mod extends Shortcut {
     def convert(input: Buffer, encoding: String): Buffer = js.native
     
     def end(buffer: Buffer, cb: js.Function): Unit = js.native
-    def end(input: js.UndefOr[scala.Nothing], encoding: String): Unit = js.native
     def end(input: String, encoding: String): Unit = js.native
+    def end(input: Unit, encoding: String): Unit = js.native
     def end(input: Buffer): Unit = js.native
     def end(input: Buffer, encoding: String): Unit = js.native
     def end(str: String, cb: js.Function): Unit = js.native
-    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
     def end(str: String, encoding: String, cb: js.Function): Unit = js.native
+    def end(str: String, encoding: Unit, cb: js.Function): Unit = js.native
     
     // copy from stream.Stream
     def pipe[T /* <: WritableStream */](destination: T): T = js.native
@@ -49,12 +52,14 @@ object mod extends Shortcut {
     // copy from NodeJS.WritableStream for compatibility
     def write(input: Buffer): Boolean = js.native
     def write(input: Buffer, encoding: String): Boolean = js.native
-    def write(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
     def write(str: String, encoding: String, cb: js.Function): Boolean = js.native
+    def write(str: String, encoding: Unit, cb: js.Function): Boolean = js.native
   }
   
   @js.native
-  trait Static extends Instantiable2[/* fromEncoding */ String, /* toEncoding */ String, Iconv] {
+  trait Static
+    extends StObject
+       with Instantiable2[/* fromEncoding */ String, /* toEncoding */ String, Iconv] {
     
     def apply(fromEncoding: String, toEncoding: String): Iconv = js.native
   }

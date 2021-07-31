@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelSummary extends StObject {
   
   /**
     * A timestamp that indicates when the model was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * The Amazon Resource Name (ARN) of the model.
     */
-  var ModelArn: typings.awsSdk.sagemakerMod.ModelArn = js.native
+  var ModelArn: typings.awsSdk.sagemakerMod.ModelArn
   
   /**
     * The name of the model that you want a summary for.
     */
-  var ModelName: typings.awsSdk.sagemakerMod.ModelName = js.native
+  var ModelName: typings.awsSdk.sagemakerMod.ModelName
 }
 object ModelSummary {
   

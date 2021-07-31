@@ -3,12 +3,14 @@ package typings.uifabricMergeStyles
 import typings.uifabricMergeStyles.irawstylebaseMod.IFontFace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fontFaceMod {
   
-  @JSImport("@uifabric/merge-styles/lib/fontFace", "fontFace")
+  @JSImport("@uifabric/merge-styles/lib/fontFace", JSImport.Namespace)
   @js.native
-  def fontFace(font: IFontFace): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fontFace(font: IFontFace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFace")(font.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

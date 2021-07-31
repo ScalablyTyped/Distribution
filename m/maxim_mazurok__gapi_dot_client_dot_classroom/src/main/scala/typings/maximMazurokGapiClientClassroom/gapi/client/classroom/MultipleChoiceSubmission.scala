@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultipleChoiceSubmission extends StObject {
   
   /** Student's select choice. */
-  var answer: js.UndefOr[String] = js.native
+  var answer: js.UndefOr[String] = js.undefined
 }
 object MultipleChoiceSubmission {
   

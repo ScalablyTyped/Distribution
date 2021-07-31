@@ -2,33 +2,31 @@ package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewsRepositoryInboxResponseRootObject extends StObject {
   
-  var ads_manager: NewsRepositoryInboxResponseAdsManager = js.native
+  var ads_manager: NewsRepositoryInboxResponseAdsManager
   
-  var aymf: NewsRepositoryInboxResponseAymf = js.native
+  var aymf: NewsRepositoryInboxResponseAymf
   
-  var business_profile_reminder: NewsRepositoryInboxResponseBusinessProfileReminder = js.native
+  var business_profile_reminder: NewsRepositoryInboxResponseBusinessProfileReminder
   
-  var continuation_token: Double = js.native
+  var continuation_token: Double
   
-  var counts: NewsRepositoryInboxResponseCounts = js.native
+  var counts: NewsRepositoryInboxResponseCounts
   
-  var friend_request_stories: js.Array[_] = js.native
+  var friend_request_stories: js.Array[js.Any]
   
-  var new_stories: js.Array[NewsRepositoryInboxResponseNewStoriesItem] = js.native
+  var new_stories: js.Array[NewsRepositoryInboxResponseNewStoriesItem]
   
-  var old_stories: js.Array[NewsRepositoryInboxResponseOldStoriesItem] = js.native
+  var old_stories: js.Array[NewsRepositoryInboxResponseOldStoriesItem]
   
-  var partition: NewsRepositoryInboxResponsePartition = js.native
+  var partition: NewsRepositoryInboxResponsePartition
   
-  var status: String = js.native
+  var status: String
   
-  var subscription: js.Any = js.native
+  var subscription: js.Any
 }
 object NewsRepositoryInboxResponseRootObject {
   
@@ -39,7 +37,7 @@ object NewsRepositoryInboxResponseRootObject {
     business_profile_reminder: NewsRepositoryInboxResponseBusinessProfileReminder,
     continuation_token: Double,
     counts: NewsRepositoryInboxResponseCounts,
-    friend_request_stories: js.Array[_],
+    friend_request_stories: js.Array[js.Any],
     new_stories: js.Array[NewsRepositoryInboxResponseNewStoriesItem],
     old_stories: js.Array[NewsRepositoryInboxResponseOldStoriesItem],
     partition: NewsRepositoryInboxResponsePartition,
@@ -69,7 +67,7 @@ object NewsRepositoryInboxResponseRootObject {
     def setCounts(value: NewsRepositoryInboxResponseCounts): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriend_request_stories(value: js.Array[_]): Self = StObject.set(x, "friend_request_stories", value.asInstanceOf[js.Any])
+    def setFriend_request_stories(value: js.Array[js.Any]): Self = StObject.set(x, "friend_request_stories", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFriend_request_storiesVarargs(value: js.Any*): Self = StObject.set(x, "friend_request_stories", js.Array(value :_*))

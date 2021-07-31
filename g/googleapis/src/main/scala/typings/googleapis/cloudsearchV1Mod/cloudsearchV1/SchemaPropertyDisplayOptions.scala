@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The display options for a property.
   */
-@js.native
 trait SchemaPropertyDisplayOptions extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SchemaPropertyDisplayOptions extends StObject {
     * only the property values will be displayed. The maximum length is 32
     * characters.
     */
-  var displayLabel: js.UndefOr[String] = js.native
+  var displayLabel: js.UndefOr[String] = js.undefined
 }
 object SchemaPropertyDisplayOptions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheSecurityGroupMembership extends StObject {
   
   /**
     * The name of the cache security group.
     */
-  var CacheSecurityGroupName: js.UndefOr[String] = js.native
+  var CacheSecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The membership status in the cache security group. The status changes when a cache security group is modified, or when the cache security groups assigned to a cluster are modified.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object CacheSecurityGroupMembership {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRulesOfIpGroupRequest extends StObject {
   
   /**
     * The identifier of the group.
     */
-  var GroupId: IpGroupId = js.native
+  var GroupId: IpGroupId
   
   /**
     * One or more rules.
     */
-  var UserRules: IpRuleList = js.native
+  var UserRules: IpRuleList
 }
 object UpdateRulesOfIpGroupRequest {
   

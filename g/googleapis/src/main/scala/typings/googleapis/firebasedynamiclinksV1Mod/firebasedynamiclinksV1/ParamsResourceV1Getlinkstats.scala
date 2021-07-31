@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceV1Getlinkstats extends StandardParameters {
+trait ParamsResourceV1Getlinkstats
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The span of time requested in days.
     */
-  var durationDays: js.UndefOr[String] = js.native
+  var durationDays: js.UndefOr[String] = js.undefined
   
   /**
     * Dynamic Link URL. e.g. https://abcd.app.goo.gl/wxyz
     */
-  var dynamicLink: js.UndefOr[String] = js.native
+  var dynamicLink: js.UndefOr[String] = js.undefined
   
   /**
     * Google SDK version. Version takes the form "$major.$minor.$patch"
     */
-  var sdkVersion: js.UndefOr[String] = js.native
+  var sdkVersion: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceV1Getlinkstats {
   

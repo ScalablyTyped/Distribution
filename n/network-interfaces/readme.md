@@ -12,7 +12,7 @@ Utility functions for dealing with network interfaces and IP addresses in Node.j
 | Keywords           | interface, interfaces, network, ip |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 13987 |
+| # downloads        | 20410 |
 | # stars            | 0 |
 
 ## Links

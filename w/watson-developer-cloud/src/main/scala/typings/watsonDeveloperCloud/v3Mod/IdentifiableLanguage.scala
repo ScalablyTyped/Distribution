@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IdentifiableLanguage. */
-@js.native
 trait IdentifiableLanguage extends StObject {
   
   /** The language code for an identifiable language. */
-  var language: String = js.native
+  var language: String
   
   /** The name of the identifiable language. */
-  var name: String = js.native
+  var name: String
 }
 object IdentifiableLanguage {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Field extends StObject {
   
   /**
     * The name of the field.
     */
-  var name: js.UndefOr[FieldName] = js.native
+  var name: js.UndefOr[FieldName] = js.undefined
   
   /**
     * The datatype of the field.
     */
-  var `type`: js.UndefOr[FieldType] = js.native
+  var `type`: js.UndefOr[FieldType] = js.undefined
 }
 object Field {
   

@@ -2,23 +2,21 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGcmchannelrequestMod {
   
-  @js.native
   trait GCMChannelRequest extends StObject {
     
     /**
       * Platform credential API key from Google.
       */
-    var ApiKey: js.UndefOr[String] = js.native
+    var ApiKey: js.UndefOr[String] = js.undefined
     
     /**
       * If the channel is enabled for sending messages.
       */
-    var Enabled: js.UndefOr[Boolean] = js.native
+    var Enabled: js.UndefOr[Boolean] = js.undefined
   }
   object GCMChannelRequest {
     

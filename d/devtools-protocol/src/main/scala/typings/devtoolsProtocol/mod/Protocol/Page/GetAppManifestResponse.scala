@@ -2,28 +2,26 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAppManifestResponse extends StObject {
   
   /**
     * Manifest content.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var errors: js.Array[AppManifestError] = js.native
+  var errors: js.Array[AppManifestError]
   
   /**
     * Parsed manifest properties
     */
-  var parsed: js.UndefOr[AppManifestParsedProperties] = js.native
+  var parsed: js.UndefOr[AppManifestParsedProperties] = js.undefined
   
   /**
     * Manifest location.
     */
-  var url: String = js.native
+  var url: String
 }
 object GetAppManifestResponse {
   

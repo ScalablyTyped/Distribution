@@ -4,7 +4,6 @@ import typings.std.Element
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,12 +12,12 @@ object mod {
   @js.native
   class Listener () extends StObject {
     def this(element: Element) = this()
-    def this(element: js.UndefOr[scala.Nothing], defaults: ListenerDefaults) = this()
+    def this(element: Unit, defaults: ListenerDefaults) = this()
     def this(element: Element, defaults: ListenerDefaults) = this()
     
     def counting_combo(
       keys: String,
-      on_count_callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], _]
+      on_count_callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], js.Any]
     ): Unit = js.native
     
     def destroy(): Unit = js.native
@@ -35,12 +34,12 @@ object mod {
     
     def sequence_combo(
       keys: String,
-      callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], _]
+      callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], js.Any]
     ): Unit = js.native
     
     def simple_combo(
       keys: String,
-      on_keydown_callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], _]
+      on_keydown_callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], js.Any]
     ): Unit = js.native
     
     def stop_listening(): Unit = js.native
@@ -51,34 +50,33 @@ object mod {
     def unregister_many(combos: js.Array[Combo | String]): Unit = js.native
   }
   
-  @js.native
   trait Combo extends StObject {
     
-    var is_counting: js.UndefOr[Boolean] = js.native
+    var is_counting: js.UndefOr[Boolean] = js.undefined
     
-    var is_exclusive: js.UndefOr[Boolean] = js.native
+    var is_exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var is_sequence: js.UndefOr[Boolean] = js.native
+    var is_sequence: js.UndefOr[Boolean] = js.undefined
     
-    var is_solitary: js.UndefOr[Boolean] = js.native
+    var is_solitary: js.UndefOr[Boolean] = js.undefined
     
-    var is_unordered: js.UndefOr[Boolean] = js.native
+    var is_unordered: js.UndefOr[Boolean] = js.undefined
     
-    var keys: js.UndefOr[String] = js.native
+    var keys: js.UndefOr[String] = js.undefined
     
     var on_keydown: js.UndefOr[
-        js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], _]
-      ] = js.native
+        js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], js.Any]
+      ] = js.undefined
     
-    var on_keyup: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], _]] = js.native
+    var on_keyup: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], js.Any]] = js.undefined
     
-    var on_release: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], _]] = js.native
+    var on_release: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], js.Any]] = js.undefined
     
-    var prevent_default: js.UndefOr[Boolean] = js.native
+    var prevent_default: js.UndefOr[Boolean] = js.undefined
     
-    var prevent_repeat: js.UndefOr[Boolean] = js.native
+    var prevent_repeat: js.UndefOr[Boolean] = js.undefined
     
-    var `this`: js.UndefOr[Element] = js.native
+    var `this`: js.UndefOr[Element] = js.undefined
   }
   object Combo {
     
@@ -128,19 +126,19 @@ object mod {
       def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
       @scala.inline
-      def setOn_keydown(value: (/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double]) => _): Self = StObject.set(x, "on_keydown", js.Any.fromFunction2(value))
+      def setOn_keydown(value: (/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "on_keydown", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOn_keydownUndefined: Self = StObject.set(x, "on_keydown", js.undefined)
       
       @scala.inline
-      def setOn_keyup(value: /* event */ js.UndefOr[KeyboardEvent] => _): Self = StObject.set(x, "on_keyup", js.Any.fromFunction1(value))
+      def setOn_keyup(value: /* event */ js.UndefOr[KeyboardEvent] => js.Any): Self = StObject.set(x, "on_keyup", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOn_keyupUndefined: Self = StObject.set(x, "on_keyup", js.undefined)
       
       @scala.inline
-      def setOn_release(value: /* event */ js.UndefOr[KeyboardEvent] => _): Self = StObject.set(x, "on_release", js.Any.fromFunction1(value))
+      def setOn_release(value: /* event */ js.UndefOr[KeyboardEvent] => js.Any): Self = StObject.set(x, "on_release", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOn_releaseUndefined: Self = StObject.set(x, "on_release", js.undefined)
@@ -165,24 +163,23 @@ object mod {
     }
   }
   
-  @js.native
   trait ListenerDefaults extends StObject {
     
-    var is_counting: Boolean = js.native
+    var is_counting: Boolean
     
-    var is_exclusive: Boolean = js.native
+    var is_exclusive: Boolean
     
-    var is_sequence: Boolean = js.native
+    var is_sequence: Boolean
     
-    var is_solitary: Boolean = js.native
+    var is_solitary: Boolean
     
-    var is_unordered: Boolean = js.native
+    var is_unordered: Boolean
     
-    var keys: String = js.native
+    var keys: String
     
-    var prevent_default: Boolean = js.native
+    var prevent_default: Boolean
     
-    var prevent_repeat: Boolean = js.native
+    var prevent_repeat: Boolean
   }
   object ListenerDefaults {
     

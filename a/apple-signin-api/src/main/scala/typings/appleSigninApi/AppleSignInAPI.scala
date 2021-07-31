@@ -2,15 +2,13 @@ package typings.appleSigninApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AppleSignInAPI {
   
-  @js.native
   trait AppleID extends StObject {
     
-    var auth: AuthI = js.native
+    var auth: AuthI
   }
   object AppleID {
     
@@ -41,16 +39,15 @@ object AppleSignInAPI {
   }
   
   // https://developer.apple.com/documentation/signinwithapplejs/authorizationi
-  @js.native
   trait AuthorizationI extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var id_token: String = js.native
+    var id_token: String
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var state: String = js.native
+    var state: String
   }
   object AuthorizationI {
     
@@ -81,20 +78,19 @@ object AppleSignInAPI {
   }
   
   // https://developer.apple.com/documentation/signinwithapplejs/clientconfigi
-  @js.native
   trait ClientConfigI extends StObject {
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var redirectURI: js.UndefOr[String] = js.native
+    var redirectURI: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var usePopup: js.UndefOr[Boolean] = js.native
+    var usePopup: js.UndefOr[Boolean] = js.undefined
   }
   object ClientConfigI {
     
@@ -146,12 +142,11 @@ object AppleSignInAPI {
   }
   
   // https://developer.apple.com/documentation/signinwithapplejs/namei
-  @js.native
   trait NameI extends StObject {
     
-    var firstName: String = js.native
+    var firstName: String
     
-    var lastName: String = js.native
+    var lastName: String
   }
   object NameI {
     
@@ -173,10 +168,9 @@ object AppleSignInAPI {
   }
   
   // https://developer.apple.com/documentation/signinwithapplejs/signinerrori
-  @js.native
   trait SignInErrorI extends StObject {
     
-    var error: String = js.native
+    var error: String
   }
   object SignInErrorI {
     
@@ -195,12 +189,11 @@ object AppleSignInAPI {
   }
   
   // https://developer.apple.com/documentation/signinwithapplejs/signinresponsei
-  @js.native
   trait SignInResponseI extends StObject {
     
-    var authorization: AuthorizationI = js.native
+    var authorization: AuthorizationI
     
-    var user: js.UndefOr[UserI] = js.native
+    var user: js.UndefOr[UserI] = js.undefined
   }
   object SignInResponseI {
     
@@ -225,12 +218,11 @@ object AppleSignInAPI {
   }
   
   // https://developer.apple.com/documentation/signinwithapplejs/useri
-  @js.native
   trait UserI extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var name: NameI = js.native
+    var name: NameI
   }
   object UserI {
     

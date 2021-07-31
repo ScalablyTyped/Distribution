@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActionsGetOrgSecretResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsGetOrgSecretEndpoint extends StObject {
   
-  var parameters: ActionsGetOrgSecretEndpoint = js.native
+  var parameters: ActionsGetOrgSecretEndpoint
   
-  var request: ActionsGetOrgSecretRequestOptions = js.native
+  var request: ActionsGetOrgSecretRequestOptions
   
-  var response: OctokitResponse[ActionsGetOrgSecretResponseData] = js.native
+  var response: OctokitResponse[ActionsGetOrgSecretResponseData]
 }
 object ParametersActionsGetOrgSecretEndpoint {
   

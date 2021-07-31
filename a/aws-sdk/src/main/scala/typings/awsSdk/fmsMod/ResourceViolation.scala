@@ -2,46 +2,44 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceViolation extends StObject {
   
   /**
     * Violation details for an EC2 instance.
     */
-  var AwsEc2InstanceViolation: js.UndefOr[typings.awsSdk.fmsMod.AwsEc2InstanceViolation] = js.native
+  var AwsEc2InstanceViolation: js.UndefOr[typings.awsSdk.fmsMod.AwsEc2InstanceViolation] = js.undefined
   
   /**
     * Violation details for network interface.
     */
-  var AwsEc2NetworkInterfaceViolation: js.UndefOr[typings.awsSdk.fmsMod.AwsEc2NetworkInterfaceViolation] = js.native
+  var AwsEc2NetworkInterfaceViolation: js.UndefOr[typings.awsSdk.fmsMod.AwsEc2NetworkInterfaceViolation] = js.undefined
   
   /**
     * Violation details for security groups.
     */
-  var AwsVPCSecurityGroupViolation: js.UndefOr[typings.awsSdk.fmsMod.AwsVPCSecurityGroupViolation] = js.native
+  var AwsVPCSecurityGroupViolation: js.UndefOr[typings.awsSdk.fmsMod.AwsVPCSecurityGroupViolation] = js.undefined
   
   /**
     * Violation detail for an Network Firewall policy that indicates that a subnet is not associated with the expected Firewall Manager managed route table. 
     */
-  var NetworkFirewallMissingExpectedRTViolation: js.UndefOr[typings.awsSdk.fmsMod.NetworkFirewallMissingExpectedRTViolation] = js.native
+  var NetworkFirewallMissingExpectedRTViolation: js.UndefOr[typings.awsSdk.fmsMod.NetworkFirewallMissingExpectedRTViolation] = js.undefined
   
   /**
     * Violation detail for an Network Firewall policy that indicates that a subnet has no Firewall Manager managed firewall in its VPC. 
     */
-  var NetworkFirewallMissingFirewallViolation: js.UndefOr[typings.awsSdk.fmsMod.NetworkFirewallMissingFirewallViolation] = js.native
+  var NetworkFirewallMissingFirewallViolation: js.UndefOr[typings.awsSdk.fmsMod.NetworkFirewallMissingFirewallViolation] = js.undefined
   
   /**
     * Violation detail for an Network Firewall policy that indicates that an Availability Zone is missing the expected Firewall Manager managed subnet.
     */
-  var NetworkFirewallMissingSubnetViolation: js.UndefOr[typings.awsSdk.fmsMod.NetworkFirewallMissingSubnetViolation] = js.native
+  var NetworkFirewallMissingSubnetViolation: js.UndefOr[typings.awsSdk.fmsMod.NetworkFirewallMissingSubnetViolation] = js.undefined
   
   /**
     * Violation detail for an Network Firewall policy that indicates that a firewall policy in an individual account has been modified in a way that makes it noncompliant. For example, the individual account owner might have deleted a rule group, changed the priority of a stateless rule group, or changed a policy default action.
     */
-  var NetworkFirewallPolicyModifiedViolation: js.UndefOr[typings.awsSdk.fmsMod.NetworkFirewallPolicyModifiedViolation] = js.native
+  var NetworkFirewallPolicyModifiedViolation: js.UndefOr[typings.awsSdk.fmsMod.NetworkFirewallPolicyModifiedViolation] = js.undefined
 }
 object ResourceViolation {
   

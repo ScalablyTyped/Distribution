@@ -9,10 +9,13 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("common-errors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "AlreadyInUseError")
@@ -107,7 +110,7 @@ object mod {
       * @param message     any message
       */
     def this(status_code: Double) = this()
-    def this(err: Error, req: Request_[ParamsDictionary, _, _, Query]) = this()
+    def this(err: Error, req: Request_[ParamsDictionary, js.Any, js.Any, Query]) = this()
     def this(status_code: Double, message: String) = this()
     
     /**
@@ -309,8 +312,8 @@ object mod {
       */
     def this(message: String) = this()
     def this(message: String, code: String) = this()
-    def this(message: String, code: js.UndefOr[scala.Nothing], field: String) = this()
     def this(message: String, code: String, field: String) = this()
+    def this(message: String, code: Unit, field: String) = this()
     
     /**
       * add an error object to the errors array
@@ -448,6 +451,10 @@ object mod {
   
   object helpers {
     
+    @JSImport("common-errors", "helpers")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Simple interface for generating a new Error class type.
       * @param name The full name of the new Error class
@@ -463,12 +470,10 @@ object mod {
       * @param options.generateMessage A function for defining a custom error
       *                                message.
       */
-    @JSImport("common-errors", "helpers.generateClass")
-    @js.native
-    def generateClass(name: String): ErrorConstructor = js.native
-    @JSImport("common-errors", "helpers.generateClass")
-    @js.native
-    def generateClass(name: String, options: Args): ErrorConstructor = js.native
+    @scala.inline
+    def generateClass(name: String): ErrorConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("generateClass")(name.asInstanceOf[js.Any]).asInstanceOf[ErrorConstructor]
+    @scala.inline
+    def generateClass(name: String, options: Args): ErrorConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("generateClass")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ErrorConstructor]
   }
   
   object io {
@@ -580,51 +585,55 @@ object mod {
     }
   }
   
-  @JSImport("common-errors", "log")
-  @js.native
-  def log(err: Error): Error = js.native
-  @JSImport("common-errors", "log")
-  @js.native
-  def log(err: Error, message: String): Error = js.native
+  @scala.inline
+  def log(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
+  @scala.inline
+  def log(err: Error, message: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(err.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @JSImport("common-errors", "logError")
-  @js.native
-  def logError(err: Error, cb: js.Function0[_]): Unit = js.native
+  @scala.inline
+  def logError(err: Error, cb: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logError")(err.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object middleware {
+    
+    @JSImport("common-errors", "middleware")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Express middleware for preventing the web server from crashing when
       * an error is thrown from an asynchronous context. Any error that would
       * have caused a crash is logged to stderr.
       */
-    @JSImport("common-errors", "middleware.crashProtector")
-    @js.native
+    @scala.inline
     def crashProtector(
       errorHandler: js.Function3[
           /* err */ Error, 
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
-          /* res */ Response_[_], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crashProtector")(errorHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Express middleware that translates common errors into HTTP status
       * codes and messages.
       */
-    @JSImport("common-errors", "middleware.errorHandler")
-    @js.native
-    def errorHandler(err: Error, req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], next: NextFunction): Unit = js.native
+    @scala.inline
+    def errorHandler(
+      err: Error,
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      res: Response_[js.Any],
+      next: NextFunction
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")(err.asInstanceOf[js.Any], req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("common-errors", "prependCurrentStack")
-  @js.native
-  def prependCurrentStack(err: Error): Error = js.native
+  @scala.inline
+  def prependCurrentStack(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("prependCurrentStack")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   @js.native
   trait ErrorConstructor
-    extends Instantiable1[/* params (repeated) */ js.Any, Error]
+    extends StObject
+       with Instantiable1[/* params (repeated) */ js.Any, Error]
   
   type GenerateMessageMethod = js.Function0[String]
 }

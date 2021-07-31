@@ -3,17 +3,15 @@ package typings.reactElemental.mod
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalState extends StObject {
   
-  val modal: HTMLDivElement = js.native
+  val modal: HTMLDivElement
   
-  val windowHeight: Double = js.native
+  val windowHeight: Double
   
-  val windowWidth: Double = js.native
+  val windowWidth: Double
 }
 object ModalState {
   

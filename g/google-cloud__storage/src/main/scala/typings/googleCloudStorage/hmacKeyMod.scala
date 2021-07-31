@@ -8,7 +8,6 @@ import typings.googleCloudStorage.storageMod.Storage
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hmacKeyMod {
@@ -45,24 +44,23 @@ object hmacKeyMod {
     var metadata_HmacKey: js.UndefOr[HmacKeyMetadata] = js.native
   }
   
-  @js.native
   trait HmacKeyMetadata extends StObject {
     
-    var accessId: String = js.native
+    var accessId: String
     
-    var etag: js.UndefOr[String] = js.native
+    var etag: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var projectId: js.UndefOr[String] = js.native
+    var projectId: js.UndefOr[String] = js.undefined
     
-    var serviceAccountEmail: js.UndefOr[String] = js.native
+    var serviceAccountEmail: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var timeCreated: js.UndefOr[String] = js.native
+    var timeCreated: js.UndefOr[String] = js.undefined
     
-    var updated: js.UndefOr[String] = js.native
+    var updated: js.UndefOr[String] = js.undefined
   }
   object HmacKeyMetadata {
     
@@ -131,10 +129,9 @@ object hmacKeyMod {
   
   type HmacKeyMetadataResponse = js.Tuple2[HmacKeyMetadata, Metadata]
   
-  @js.native
   trait HmacKeyOptions extends StObject {
     
-    var projectId: js.UndefOr[String] = js.native
+    var projectId: js.UndefOr[String] = js.undefined
   }
   object HmacKeyOptions {
     
@@ -155,12 +152,11 @@ object hmacKeyMod {
     }
   }
   
-  @js.native
   trait SetHmacKeyMetadata extends StObject {
     
-    var etag: js.UndefOr[String] = js.native
+    var etag: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[ACTIVE | INACTIVE] = js.native
+    var state: js.UndefOr[ACTIVE | INACTIVE] = js.undefined
   }
   object SetHmacKeyMetadata {
     
@@ -187,13 +183,12 @@ object hmacKeyMod {
     }
   }
   
-  @js.native
   trait SetHmacKeyMetadataOptions extends StObject {
     
     /**
       * This parameter is currently ignored.
       */
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object SetHmacKeyMetadataOptions {
     

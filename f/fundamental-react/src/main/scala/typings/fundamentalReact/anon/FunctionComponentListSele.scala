@@ -7,7 +7,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListSelectionProps> & {  displayName :'List.Selection'} */
@@ -17,11 +16,11 @@ trait FunctionComponentListSele extends StObject {
   def apply(props: PropsWithChildren[ListSelectionProps]): ReactElement | Null = js.native
   def apply(props: PropsWithChildren[ListSelectionProps], context: js.Any): ReactElement | Null = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
   
   var defaultProps: js.UndefOr[PartialListSelectionProps] = js.native
   
-  var displayName: js.UndefOr[String] with ListDotSelection = js.native
+  var displayName: js.UndefOr[String] & ListDotSelection = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapListSele] = js.native
 }

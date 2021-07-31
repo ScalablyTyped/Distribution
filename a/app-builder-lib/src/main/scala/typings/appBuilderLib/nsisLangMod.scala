@@ -5,10 +5,13 @@ import typings.appBuilderLib.nsisScriptGeneratorMod.NsisScriptGenerator
 import typings.appBuilderLib.platformPackagerMod.PlatformPackager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nsisLangMod {
+  
+  @JSImport("app-builder-lib/out/targets/nsis/nsisLang", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("app-builder-lib/out/targets/nsis/nsisLang", "LangConfigurator")
   @js.native
@@ -20,16 +23,14 @@ object nsisLangMod {
     val langs: js.Array[String] = js.native
   }
   
-  @JSImport("app-builder-lib/out/targets/nsis/nsisLang", "addCustomMessageFileInclude")
-  @js.native
+  @scala.inline
   def addCustomMessageFileInclude(
     input: String,
-    packager: PlatformPackager[_],
+    packager: PlatformPackager[js.Any],
     scriptGenerator: NsisScriptGenerator,
     langConfigurator: LangConfigurator
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomMessageFileInclude")(input.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], scriptGenerator.asInstanceOf[js.Any], langConfigurator.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("app-builder-lib/out/targets/nsis/nsisLang", "createAddLangsMacro")
-  @js.native
-  def createAddLangsMacro(scriptGenerator: NsisScriptGenerator, langConfigurator: LangConfigurator): Unit = js.native
+  @scala.inline
+  def createAddLangsMacro(scriptGenerator: NsisScriptGenerator, langConfigurator: LangConfigurator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAddLangsMacro")(scriptGenerator.asInstanceOf[js.Any], langConfigurator.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

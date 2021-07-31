@@ -3,23 +3,21 @@ package typings.cliBox
 import typings.cliBox.cliBoxBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fullscreen extends StObject {
     
-    var fullscreen: Boolean = js.native
+    var fullscreen: Boolean
     
-    var height: Double = js.native
+    var height: Double
     
-    var marks: typings.cliBox.mod.Marks = js.native
+    var marks: typings.cliBox.mod.Marks
     
-    var stringify: Boolean = js.native
+    var stringify: Boolean
     
-    var width: Double = js.native
+    var width: Double
   }
   object Fullscreen {
     
@@ -55,16 +53,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var lines: js.Array[Offset] = js.native
+    var lines: js.Array[Offset]
     
-    var marks: typings.cliBox.mod.Marks = js.native
+    var marks: typings.cliBox.mod.Marks
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -94,10 +91,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Marks extends StObject {
     
-    var marks: typings.cliBox.mod.Marks = js.native
+    var marks: typings.cliBox.mod.Marks
   }
   object Marks {
     
@@ -115,12 +111,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Offset extends StObject {
     
-    var offset: Y = js.native
+    var offset: Y
     
-    var text: String = js.native
+    var text: String
   }
   object Offset {
     
@@ -142,27 +137,26 @@ object anon {
   }
   
   /* Inlined std.Partial<cli-box.cli-box.Marks> */
-  @js.native
   trait PartialMarks extends StObject {
     
-    var b: js.UndefOr[String] = js.native
+    var b: js.UndefOr[String] = js.undefined
     
-    var e: js.UndefOr[String] = js.native
+    var e: js.UndefOr[String] = js.undefined
     
-    var n: js.UndefOr[String] = js.native
+    var n: js.UndefOr[String] = js.undefined
     
     @JSName("ne")
-    var ne_FPartialMarks: js.UndefOr[String] = js.native
+    var ne_FPartialMarks: js.UndefOr[String] = js.undefined
     
-    var nw: js.UndefOr[String] = js.native
+    var nw: js.UndefOr[String] = js.undefined
     
-    var s: js.UndefOr[String] = js.native
+    var s: js.UndefOr[String] = js.undefined
     
-    var se: js.UndefOr[String] = js.native
+    var se: js.UndefOr[String] = js.undefined
     
-    var sw: js.UndefOr[String] = js.native
+    var sw: js.UndefOr[String] = js.undefined
     
-    var w: js.UndefOr[String] = js.native
+    var w: js.UndefOr[String] = js.undefined
   }
   object PartialMarks {
     
@@ -231,16 +225,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Stringify extends StObject {
     
-    var stringify: `true` = js.native
+    var stringify: `true`
   }
   object Stringify {
     
     @scala.inline
-    def apply(stringify: `true`): Stringify = {
-      val __obj = js.Dynamic.literal(stringify = stringify.asInstanceOf[js.Any])
+    def apply(): Stringify = {
+      val __obj = js.Dynamic.literal(stringify = true)
       __obj.asInstanceOf[Stringify]
     }
     
@@ -252,10 +245,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Y extends StObject {
     
-    var y: Double = js.native
+    var y: Double
   }
   object Y {
     

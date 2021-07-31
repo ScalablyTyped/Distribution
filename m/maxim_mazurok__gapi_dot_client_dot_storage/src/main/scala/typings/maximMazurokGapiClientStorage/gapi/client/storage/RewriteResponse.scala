@@ -2,30 +2,28 @@ package typings.maximMazurokGapiClientStorage.gapi.client.storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RewriteResponse extends StObject {
   
   /** true if the copy is finished; otherwise, false if the copy is in progress. This property is always present in the response. */
-  var done: js.UndefOr[Boolean] = js.native
+  var done: js.UndefOr[Boolean] = js.undefined
   
   /** The kind of item this is. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The total size of the object being copied in bytes. This property is always present in the response. */
-  var objectSize: js.UndefOr[String] = js.native
+  var objectSize: js.UndefOr[String] = js.undefined
   
   /** A resource containing the metadata for the copied-to object. This property is present in the response only when copying completes. */
   // tslint:disable-next-line:ban-types
-  var resource: js.UndefOr[Object] = js.native
+  var resource: js.UndefOr[Object] = js.undefined
   
   /** A token to use in subsequent requests to continue copying data. This token is present in the response only when there is more data to copy. */
-  var rewriteToken: js.UndefOr[String] = js.native
+  var rewriteToken: js.UndefOr[String] = js.undefined
   
   /** The total bytes written so far, which can be used to provide a waiting user with a progress indicator. This property is always present in the response. */
-  var totalBytesRewritten: js.UndefOr[String] = js.native
+  var totalBytesRewritten: js.UndefOr[String] = js.undefined
 }
 object RewriteResponse {
   

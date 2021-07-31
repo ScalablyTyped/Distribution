@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdjustmentType extends StObject {
   
   /**
     * The policy adjustment type. The valid values are ChangeInCapacity, ExactCapacity, and PercentChangeInCapacity.
     */
-  var AdjustmentType: js.UndefOr[XmlStringMaxLen255] = js.native
+  var AdjustmentType: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }
 object AdjustmentType {
   

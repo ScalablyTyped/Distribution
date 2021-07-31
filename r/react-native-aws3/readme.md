@@ -12,7 +12,7 @@ Pure JavaScript react native library for uploading to AWS S3
 | Keywords           | react, react-native, react-component, aws, s3, image, upload, ios, android |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 126613 |
+| # downloads        | 126907 |
 | # stars            | 0 |
 
 ## Links

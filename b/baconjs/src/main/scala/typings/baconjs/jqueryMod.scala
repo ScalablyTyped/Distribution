@@ -3,16 +3,16 @@ package typings.baconjs
 import typings.baconjs.observableMod.EventStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryMod {
   
   object _empty {
     
-    @JSImport("baconjs/types/jquery", "$.asEventStream")
+    @JSImport("baconjs/types/jquery", "$")
     @js.native
-    def asEventStream(eventName: String, selector: js.UndefOr[scala.Nothing], eventTransformer: js.Any): EventStream[_] = js.native
+    val ^ : js.Any = js.native
+    
     /**
       Creates an EventStream from events on a
       jQuery or Zepto.js object. You can pass optional arguments to add a
@@ -28,15 +28,15 @@ object jqueryMod {
       Note: you need to install the `asEventStream` method on JQuery by calling
       [init()](#_.aseventstream) as in `Bacon.$.init($)`.
       */
-    @JSImport("baconjs/types/jquery", "$.asEventStream")
-    @js.native
-    def asEventStream(eventName: String, selector: String, eventTransformer: js.Any): EventStream[_] = js.native
+    @scala.inline
+    def asEventStream(eventName: String, selector: String, eventTransformer: js.Any): EventStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asEventStream")(eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Any]]
+    @scala.inline
+    def asEventStream(eventName: String, selector: Unit, eventTransformer: js.Any): EventStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asEventStream")(eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Any]]
     
     /**
       * Installs the [asEventStream](#_.aseventstream) to the given jQuery/Zepto object (the `$` object).
       */
-    @JSImport("baconjs/types/jquery", "$.init")
-    @js.native
-    def init(jQuery: js.Any): Unit = js.native
+    @scala.inline
+    def init(jQuery: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(jQuery.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

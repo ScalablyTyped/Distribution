@@ -7,24 +7,22 @@ import typings.openlayers.mod.source.Source
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @api
   */
-@js.native
 trait RasterOptions extends StObject {
   
-  var lib: js.UndefOr[GlobalObject] = js.native
+  var lib: js.UndefOr[GlobalObject] = js.undefined
   
-  var operation: js.UndefOr[RasterOperation] = js.native
+  var operation: js.UndefOr[RasterOperation] = js.undefined
   
-  var operationType: js.UndefOr[RasterOperationType] = js.native
+  var operationType: js.UndefOr[RasterOperationType] = js.undefined
   
-  var sources: js.Array[Source] = js.native
+  var sources: js.Array[Source]
   
-  var threads: js.UndefOr[Double] = js.native
+  var threads: js.UndefOr[Double] = js.undefined
 }
 object RasterOptions {
   

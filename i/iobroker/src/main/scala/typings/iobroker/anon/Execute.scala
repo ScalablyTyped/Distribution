@@ -2,17 +2,15 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Execute extends StObject {
   
-  var execute: Boolean = js.native
+  var execute: Boolean
   
-  var http: Boolean = js.native
+  var http: Boolean
   
-  var sendto: Boolean = js.native
+  var sendto: Boolean
 }
 object Execute {
   

@@ -7,21 +7,19 @@ import typings.relayRuntime.relayStoreTypesMod.RecordSourceSelectorProxy
 import typings.relayRuntime.relayStoreTypesMod.SelectorStoreUpdater
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptimisticResponse extends StObject {
   
-  var operation: OperationDescriptor = js.native
+  var operation: OperationDescriptor
   
-  var optimisticResponse: js.UndefOr[StringDictionary[js.Any] | Null] = js.native
+  var optimisticResponse: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
   
-  var optimisticUpdater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.native
+  var optimisticUpdater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
   
-  var updater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.native
+  var updater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
   
-  var uploadables: js.UndefOr[UploadableMap | Null] = js.native
+  var uploadables: js.UndefOr[UploadableMap | Null] = js.undefined
 }
 object OptimisticResponse {
   

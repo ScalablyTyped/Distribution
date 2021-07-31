@@ -5,7 +5,6 @@ import typings.keyvMongo.keyvMongoBooleans.`false`
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,14 +26,13 @@ object mod {
     val ttlSupport: `false` = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var collection: js.UndefOr[String] = js.native
+    var collection: js.UndefOr[String] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Options {
     

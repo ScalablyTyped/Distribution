@@ -31,7 +31,6 @@ import typings.officeJs.officeJsStrings.Unknown_
 import typings.officeJs.officeJsStrings.Whole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,7 +40,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.1]
   */
 @js.native
-trait Paragraph extends ClientObject {
+trait Paragraph
+  extends StObject
+     with ClientObject {
   
   /**
     *
@@ -702,9 +703,9 @@ trait Paragraph extends ClientObject {
     * @param trimSpacing Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
     */
   def split(delimiters: js.Array[String]): RangeCollection = js.native
-  def split(delimiters: js.Array[String], trimDelimiters: js.UndefOr[scala.Nothing], trimSpacing: Boolean): RangeCollection = js.native
   def split(delimiters: js.Array[String], trimDelimiters: Boolean): RangeCollection = js.native
   def split(delimiters: js.Array[String], trimDelimiters: Boolean, trimSpacing: Boolean): RangeCollection = js.native
+  def split(delimiters: js.Array[String], trimDelimiters: Unit, trimSpacing: Boolean): RangeCollection = js.native
   
   /**
     * Starts a new list with this paragraph. Fails if the paragraph is already a list item.

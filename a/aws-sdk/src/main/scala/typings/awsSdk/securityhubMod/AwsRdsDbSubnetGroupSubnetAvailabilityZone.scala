@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbSubnetGroupSubnetAvailabilityZone extends StObject {
   
   /**
     * The name of the Availability Zone for a subnet in the subnet group.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRdsDbSubnetGroupSubnetAvailabilityZone {
   

@@ -2,17 +2,15 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoStart_ extends StObject {
     
-    var autoStart: js.UndefOr[Boolean] = js.native
+    var autoStart: js.UndefOr[Boolean] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
   }
   object AutoStart_ {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Autostart extends StObject {
     
-    var autostart: Boolean = js.native
+    var autostart: Boolean
   }
   object Autostart {
     
@@ -60,12 +57,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Left {
     

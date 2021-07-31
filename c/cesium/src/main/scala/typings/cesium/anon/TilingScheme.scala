@@ -2,15 +2,13 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TilingScheme extends StObject {
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.native
+  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.undefined
 }
 object TilingScheme {
   

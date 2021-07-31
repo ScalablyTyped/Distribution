@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Categories extends StObject {
   
   /** The accessibility category, containing all accessibility related audits. */
-  var accessibility: js.UndefOr[LighthouseCategoryV5] = js.native
+  var accessibility: js.UndefOr[LighthouseCategoryV5] = js.undefined
   
   /** The best practices category, containing all best practices related audits. */
-  var `best-practices`: js.UndefOr[LighthouseCategoryV5] = js.native
+  var `best-practices`: js.UndefOr[LighthouseCategoryV5] = js.undefined
   
   /** The performance category, containing all performance related audits. */
-  var performance: js.UndefOr[LighthouseCategoryV5] = js.native
+  var performance: js.UndefOr[LighthouseCategoryV5] = js.undefined
   
   /** The Progressive-Web-App (PWA) category, containing all pwa related audits. */
-  var pwa: js.UndefOr[LighthouseCategoryV5] = js.native
+  var pwa: js.UndefOr[LighthouseCategoryV5] = js.undefined
   
   /** The Search-Engine-Optimization (SEO) category, containing all seo related audits. */
-  var seo: js.UndefOr[LighthouseCategoryV5] = js.native
+  var seo: js.UndefOr[LighthouseCategoryV5] = js.undefined
 }
 object Categories {
   

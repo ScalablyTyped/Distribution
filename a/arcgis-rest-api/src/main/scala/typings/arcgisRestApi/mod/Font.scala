@@ -11,23 +11,21 @@ import typings.arcgisRestApi.arcgisRestApiStrings.oblique
 import typings.arcgisRestApi.arcgisRestApiStrings.underline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Font extends StObject {
   
-  var decoration: js.UndefOr[`line-through` | underline | none] = js.native
+  var decoration: js.UndefOr[`line-through` | underline | none] = js.undefined
   
-  var family: js.UndefOr[String] = js.native
+  var family: js.UndefOr[String] = js.undefined
   
   // "<fontFamily>";
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   // <fontSize>;
-  var style: js.UndefOr[italic | normal | oblique] = js.native
+  var style: js.UndefOr[italic | normal | oblique] = js.undefined
   
-  var weight: js.UndefOr[bold | bolder | lighter | normal] = js.native
+  var weight: js.UndefOr[bold | bolder | lighter | normal] = js.undefined
 }
 object Font {
   

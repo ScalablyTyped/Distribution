@@ -8,14 +8,15 @@ import typings.firebaseDatabase.referenceMod.Reference
 import typings.firebaseDatabase.repoMod.Repo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object databaseMod {
   
   @JSImport("@firebase/database/dist/src/api/Database", "Database")
   @js.native
-  class Database protected () extends FirebaseService {
+  class Database protected ()
+    extends StObject
+       with FirebaseService {
     /**
       * The constructor should not be called by users of our public API.
       * @param {!Repo} repoInternal_
@@ -25,6 +26,8 @@ object databaseMod {
     @JSName("INTERNAL")
     var INTERNAL_Database: Delete = js.native
     
+    /* CompleteClass */
+    var app: FirebaseApp = js.native
     @JSName("app")
     def app_MDatabase: FirebaseApp = js.native
     

@@ -2,14 +2,12 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRoleList extends StObject {
   
   /** RoleList roles */
-  var roles: js.UndefOr[js.Array[IRole] | Null] = js.native
+  var roles: js.UndefOr[js.Array[IRole] | Null] = js.undefined
 }
 object IRoleList {
   

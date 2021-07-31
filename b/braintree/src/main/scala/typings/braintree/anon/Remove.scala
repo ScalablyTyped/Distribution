@@ -4,17 +4,15 @@ import typings.braintree.mod.DiscountAddRequest
 import typings.braintree.mod.DiscountUpdateRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Remove extends StObject {
   
-  var add: js.UndefOr[js.Array[DiscountAddRequest]] = js.native
+  var add: js.UndefOr[js.Array[DiscountAddRequest]] = js.undefined
   
-  var remove: js.UndefOr[js.Array[String]] = js.native
+  var remove: js.UndefOr[js.Array[String]] = js.undefined
   
-  var update: js.UndefOr[js.Array[DiscountUpdateRequest]] = js.native
+  var update: js.UndefOr[js.Array[DiscountUpdateRequest]] = js.undefined
 }
 object Remove {
   

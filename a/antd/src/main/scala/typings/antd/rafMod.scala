@@ -3,19 +3,17 @@ package typings.antd
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rafMod {
   
   object default {
     
-    @JSImport("antd/lib/_util/raf", JSImport.Default)
-    @js.native
-    def apply(callback: js.Function0[Unit]): Double = js.native
-    @JSImport("antd/lib/_util/raf", JSImport.Default)
-    @js.native
-    def apply(callback: js.Function0[Unit], delayFrames: Double): Double = js.native
+    @scala.inline
+    def apply(callback: js.Function0[Unit]): Double = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def apply(callback: js.Function0[Unit], delayFrames: Double): Double = (^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any], delayFrames.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
     @JSImport("antd/lib/_util/raf", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native

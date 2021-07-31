@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.ValueState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StandardTile extends Tile {
+trait StandardTile
+  extends StObject
+     with Tile {
   
   /**
     * Adds some ariaDescribedBy into the association <code>ariaDescribedBy</code>.
@@ -28,7 +29,7 @@ trait StandardTile extends Tile {
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaDescribedBy</code>.
     */
-  def getAriaDescribedBy(): js.Array[_] = js.native
+  def getAriaDescribedBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets the icon of the StandardTile control.
@@ -87,7 +88,7 @@ trait StandardTile extends Tile {
     * Removes all the controls in the association named <code>ariaDescribedBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaDescribedBy(): js.Array[_] = js.native
+  def removeAllAriaDescribedBy(): js.Array[js.Any] = js.native
   
   def removeAriaDescribedBy(vAriaDescribedBy: js.Any): js.Any = js.native
   /**

@@ -2,41 +2,39 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePresetRequest extends StObject {
   
   /**
     * A section of the request body that specifies the audio parameters.
     */
-  var Audio: js.UndefOr[AudioParameters] = js.native
+  var Audio: js.UndefOr[AudioParameters] = js.undefined
   
   /**
     * The container type for the output file. Valid values include flac, flv, fmp4, gif, mp3, mp4, mpg, mxf, oga, ogg, ts, and webm.
     */
-  var Container: PresetContainer = js.native
+  var Container: PresetContainer
   
   /**
     * A description of the preset.
     */
-  var Description: js.UndefOr[typings.awsSdk.elastictranscoderMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.elastictranscoderMod.Description] = js.undefined
   
   /**
     * The name of the preset. We recommend that the name be unique within the AWS account, but uniqueness is not enforced.
     */
-  var Name: typings.awsSdk.elastictranscoderMod.Name = js.native
+  var Name: typings.awsSdk.elastictranscoderMod.Name
   
   /**
     * A section of the request body that specifies the thumbnail parameters, if any.
     */
-  var Thumbnails: js.UndefOr[typings.awsSdk.elastictranscoderMod.Thumbnails] = js.native
+  var Thumbnails: js.UndefOr[typings.awsSdk.elastictranscoderMod.Thumbnails] = js.undefined
   
   /**
     * A section of the request body that specifies the video parameters.
     */
-  var Video: js.UndefOr[VideoParameters] = js.native
+  var Video: js.UndefOr[VideoParameters] = js.undefined
 }
 object CreatePresetRequest {
   

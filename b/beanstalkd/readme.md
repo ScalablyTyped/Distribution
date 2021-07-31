@@ -10,9 +10,9 @@ A beanstalkd client for Node.js with promises
 | ------------------ | :-------------: |
 | Full name          | beanstalkd |
 | Keywords           | beanstalkd |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 15616 |
+| # downloads        | 17899 |
 | # stars            | 0 |
 
 ## Links

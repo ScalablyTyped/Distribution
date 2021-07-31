@@ -3,13 +3,11 @@ package typings.dwt.anon
 import typings.dwt.addonOCRProMod.Settings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofOCRPro extends StObject {
   
-  def NewSettings(): Settings = js.native
+  def NewSettings(): Settings
 }
 object TypeofOCRPro {
   

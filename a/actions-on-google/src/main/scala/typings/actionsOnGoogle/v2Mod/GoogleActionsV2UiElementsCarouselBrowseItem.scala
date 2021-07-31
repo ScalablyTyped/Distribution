@@ -2,30 +2,28 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2UiElementsCarouselBrowseItem extends StObject {
   
   /**
     * Description of the carousel item.
     * Optional.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Footer text for the carousel item, displayed below the description.
     * Single line of text, truncated with an ellipsis.
     * Optional.
     */
-  var footer: js.UndefOr[String] = js.native
+  var footer: js.UndefOr[String] = js.undefined
   
   /**
     * Hero image for the carousel item.
     * Optional.
     */
-  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
   
   /**
     * URL of the document associated with the carousel item.
@@ -33,13 +31,13 @@ trait GoogleActionsV2UiElementsCarouselBrowseItem extends StObject {
     * AMP_CONTENT, AMP content.
     * Required.
     */
-  var openUrlAction: js.UndefOr[GoogleActionsV2UiElementsOpenUrlAction] = js.native
+  var openUrlAction: js.UndefOr[GoogleActionsV2UiElementsOpenUrlAction] = js.undefined
   
   /**
     * Title of the carousel item.
     * Required.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2UiElementsCarouselBrowseItem {
   

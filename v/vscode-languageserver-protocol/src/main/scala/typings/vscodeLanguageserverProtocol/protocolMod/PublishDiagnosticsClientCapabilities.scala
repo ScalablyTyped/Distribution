@@ -3,16 +3,14 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverProtocol.anon.ValueSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishDiagnosticsClientCapabilities extends StObject {
   
   /**
     * Whether the clients accepts diagnostics with related information.
     */
-  var relatedInformation: js.UndefOr[Boolean] = js.native
+  var relatedInformation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Client supports the tag property to provide meta data about a diagnostic.
@@ -20,7 +18,7 @@ trait PublishDiagnosticsClientCapabilities extends StObject {
     *
     * @since 3.15.0
     */
-  var tagSupport: js.UndefOr[ValueSet] = js.native
+  var tagSupport: js.UndefOr[ValueSet] = js.undefined
   
   /**
     * Whether the client interprets the version property of the
@@ -28,7 +26,7 @@ trait PublishDiagnosticsClientCapabilities extends StObject {
     *
     * @since 3.15.0
     */
-  var versionSupport: js.UndefOr[Boolean] = js.native
+  var versionSupport: js.UndefOr[Boolean] = js.undefined
 }
 object PublishDiagnosticsClientCapabilities {
   

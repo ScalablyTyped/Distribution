@@ -3,15 +3,13 @@ package typings.openlayers.mod.olx.format
 import typings.openlayers.mod.geom.GeometryLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolylineOptions extends StObject {
   
-  var factor: js.UndefOr[Double] = js.native
+  var factor: js.UndefOr[Double] = js.undefined
   
-  var geometryLayout: js.UndefOr[GeometryLayout] = js.native
+  var geometryLayout: js.UndefOr[GeometryLayout] = js.undefined
 }
 object PolylineOptions {
   

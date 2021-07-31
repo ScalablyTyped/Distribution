@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessSecretVersionResponse extends StObject {
   
   /** The resource name of the SecretVersion in the format `projects/∗/secrets/∗/versions/ *`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Secret payload */
-  var payload: js.UndefOr[SecretPayload] = js.native
+  var payload: js.UndefOr[SecretPayload] = js.undefined
 }
 object AccessSecretVersionResponse {
   

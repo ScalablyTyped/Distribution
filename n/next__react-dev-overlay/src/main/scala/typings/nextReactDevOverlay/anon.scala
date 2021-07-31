@@ -6,29 +6,27 @@ import typings.nextReactDevOverlay.stackFrameMod.OriginalStackFrame
 import typings.stacktraceParser.mod.StackFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Column extends StObject {
     
-    var column: Double | Null = js.native
+    var column: Double | Null
     
-    var frame: js.Any = js.native
+    var frame: js.Any
     
-    var line: Double = js.native
+    var line: Double
     
-    var rootDirectory: String = js.native
+    var rootDirectory: String
     
-    var source: js.Any = js.native
+    var source: js.Any
   }
   object Column {
     
     @scala.inline
     def apply(frame: js.Any, line: Double, rootDirectory: String, source: js.Any): Column = {
-      val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], rootDirectory = rootDirectory.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], rootDirectory = rootDirectory.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], column = null)
       __obj.asInstanceOf[Column]
     }
     
@@ -55,10 +53,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ComponentStack extends StObject {
     
-    var componentStack: js.UndefOr[String | Null] = js.native
+    var componentStack: js.UndefOr[String | Null] = js.undefined
   }
   object ComponentStack {
     
@@ -82,10 +79,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: Null = js.native
+    var error: Null
   }
   object Error {
     
@@ -103,36 +99,29 @@ object anon {
     }
   }
   
-  @js.native
-  trait Expanded extends OriginalStackFrame {
+  trait Expanded
+    extends StObject
+       with OriginalStackFrame {
     
-    var error: `true` = js.native
+    var error: `true`
     
-    var expanded: `false` = js.native
+    var expanded: `false`
     
-    var external: `false` = js.native
+    var external: `false`
     
-    var originalCodeFrame: Null = js.native
+    var originalCodeFrame: Null
     
-    var originalStackFrame: Null = js.native
+    var originalStackFrame: Null
     
-    var reason: String = js.native
+    var reason: String
     
-    var sourceStackFrame: StackFrame = js.native
+    var sourceStackFrame: StackFrame
   }
   object Expanded {
     
     @scala.inline
-    def apply(
-      error: `true`,
-      expanded: `false`,
-      external: `false`,
-      originalCodeFrame: Null,
-      originalStackFrame: Null,
-      reason: String,
-      sourceStackFrame: StackFrame
-    ): Expanded = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], external = external.asInstanceOf[js.Any], originalCodeFrame = originalCodeFrame.asInstanceOf[js.Any], originalStackFrame = originalStackFrame.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], sourceStackFrame = sourceStackFrame.asInstanceOf[js.Any])
+    def apply(originalCodeFrame: Null, originalStackFrame: Null, reason: String, sourceStackFrame: StackFrame): Expanded = {
+      val __obj = js.Dynamic.literal(error = true, expanded = false, external = false, originalCodeFrame = originalCodeFrame.asInstanceOf[js.Any], originalStackFrame = originalStackFrame.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], sourceStackFrame = sourceStackFrame.asInstanceOf[js.Any])
       __obj.asInstanceOf[Expanded]
     }
     
@@ -162,35 +151,29 @@ object anon {
     }
   }
   
-  @js.native
-  trait External extends OriginalStackFrame {
+  trait External
+    extends StObject
+       with OriginalStackFrame {
     
-    var error: `false` = js.native
+    var error: `false`
     
-    var expanded: Boolean = js.native
+    var expanded: Boolean
     
-    var external: `false` = js.native
+    var external: `false`
     
-    var originalCodeFrame: String | Null = js.native
+    var originalCodeFrame: String | Null
     
-    var originalStackFrame: StackFrame = js.native
+    var originalStackFrame: StackFrame
     
-    var reason: Null = js.native
+    var reason: Null
     
-    var sourceStackFrame: StackFrame = js.native
+    var sourceStackFrame: StackFrame
   }
   object External {
     
     @scala.inline
-    def apply(
-      error: `false`,
-      expanded: Boolean,
-      external: `false`,
-      originalStackFrame: StackFrame,
-      reason: Null,
-      sourceStackFrame: StackFrame
-    ): External = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], external = external.asInstanceOf[js.Any], originalStackFrame = originalStackFrame.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], sourceStackFrame = sourceStackFrame.asInstanceOf[js.Any])
+    def apply(expanded: Boolean, originalStackFrame: StackFrame, reason: Null, sourceStackFrame: StackFrame): External = {
+      val __obj = js.Dynamic.literal(error = false, expanded = expanded.asInstanceOf[js.Any], external = false, originalStackFrame = originalStackFrame.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], sourceStackFrame = sourceStackFrame.asInstanceOf[js.Any], originalCodeFrame = null)
       __obj.asInstanceOf[External]
     }
     
@@ -223,36 +206,29 @@ object anon {
     }
   }
   
-  @js.native
-  trait OriginalCodeFrame extends OriginalStackFrame {
+  trait OriginalCodeFrame
+    extends StObject
+       with OriginalStackFrame {
     
-    var error: `false` = js.native
+    var error: `false`
     
-    var expanded: `false` = js.native
+    var expanded: `false`
     
-    var external: `true` = js.native
+    var external: `true`
     
-    var originalCodeFrame: Null = js.native
+    var originalCodeFrame: Null
     
-    var originalStackFrame: Null = js.native
+    var originalStackFrame: Null
     
-    var reason: Null = js.native
+    var reason: Null
     
-    var sourceStackFrame: StackFrame = js.native
+    var sourceStackFrame: StackFrame
   }
   object OriginalCodeFrame {
     
     @scala.inline
-    def apply(
-      error: `false`,
-      expanded: `false`,
-      external: `true`,
-      originalCodeFrame: Null,
-      originalStackFrame: Null,
-      reason: Null,
-      sourceStackFrame: StackFrame
-    ): OriginalCodeFrame = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], external = external.asInstanceOf[js.Any], originalCodeFrame = originalCodeFrame.asInstanceOf[js.Any], originalStackFrame = originalStackFrame.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], sourceStackFrame = sourceStackFrame.asInstanceOf[js.Any])
+    def apply(originalCodeFrame: Null, originalStackFrame: Null, reason: Null, sourceStackFrame: StackFrame): OriginalCodeFrame = {
+      val __obj = js.Dynamic.literal(error = false, expanded = false, external = true, originalCodeFrame = originalCodeFrame.asInstanceOf[js.Any], originalStackFrame = originalStackFrame.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], sourceStackFrame = sourceStackFrame.asInstanceOf[js.Any])
       __obj.asInstanceOf[OriginalCodeFrame]
     }
     

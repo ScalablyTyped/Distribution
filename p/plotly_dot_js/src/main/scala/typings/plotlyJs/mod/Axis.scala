@@ -53,17 +53,15 @@ import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Axis extends StObject {
   
-  var autorange: `true` | `false` | reversed = js.native
+  var autorange: `true` | `false` | reversed
   
-  var calendar: Calendar = js.native
+  var calendar: Calendar
   
-  var categoryarray: js.Array[_] = js.native
+  var categoryarray: js.Array[js.Any]
   
   /**
     * Specifies the ordering logic for the case of categorical variables.
@@ -77,7 +75,7 @@ trait Axis extends StObject {
     * numerical order of the values.
     * Similarly, the order can be determined by the min, max, sum, mean or median of all the values.
     */
-  var categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`) = js.native
+  var categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`)
   
   /**
     * Sets default for all colors associated with this axis
@@ -85,21 +83,21 @@ trait Axis extends StObject {
     * Grid color is lightened by blending this with the plot background
     * Individual pieces can override this.
     */
-  var color: Color = js.native
+  var color: Color
   
   /**
     * Sets the color of the dividers
     * Only has an effect on *multicategory* axes.
     */
-  var dividercolor: Color = js.native
+  var dividercolor: Color
   
   /**
     * Sets the width (in px) of the dividers
     * Only has an effect on *multicategory* axes.
     */
-  var dividerwidth: Double = js.native
+  var dividerwidth: Double
   
-  var dtick: DTickValue = js.native
+  var dtick: DTickValue
   
   /**
     * Determines a formatting rule for the tick exponents.
@@ -111,23 +109,23 @@ trait Axis extends StObject {
     * If `SI`, *1G*.
     * If `B`, *1B*.
     */
-  var exponentformat: none | e_ | E | power | SI | B = js.native
+  var exponentformat: none | e_ | E | power | SI | B
   
   /**
     * Determines whether or not this axis is zoom-able.
     * If true, then zoom is disabled.
     */
-  var fixedrange: Boolean = js.native
+  var fixedrange: Boolean
   
   /**
     * Sets the color of the grid lines.
     */
-  var gridcolor: Color = js.native
+  var gridcolor: Color
   
   /**
     * Sets the width (in px) of the grid lines.
     */
-  var gridwidth: Double = js.native
+  var gridwidth: Double
   
   /**
     * Sets the hover text formatting rule using d3 formatting mini-languages
@@ -137,23 +135,23 @@ trait Axis extends StObject {
     * We add one item to d3's date formatter: `%{n}f` for fractional seconds with n digits.
     * For example, `"2016-10-13 09:15:23.456"` with tickformat `"%H~%M~%S.%2f"` would display "09~15~23.46"
     */
-  var hoverformat: String = js.native
+  var hoverformat: String
   
   /**
     * Sets the axis line color
     */
-  var linecolor: Color = js.native
+  var linecolor: Color
   
   /**
     * Sets the width (in px) of the axis line.
     */
-  var linewidth: Double = js.native
+  var linewidth: Double
   
-  var mirror: `true` | ticks | `false` | all | allticks = js.native
+  var mirror: `true` | ticks | `false` | all | allticks
   
-  var nticks: Double = js.native
+  var nticks: Double
   
-  var range: js.Array[_] = js.native
+  var range: js.Array[js.Any]
   
   /**
     * 'If *normal*, the range is computed in relation to the extrema
@@ -164,19 +162,19 @@ trait Axis extends StObject {
     * regardless of the input data.
     * Applies only to linear axes.
     */
-  var rangemode: normal | tozero | nonnegative = js.native
+  var rangemode: normal | tozero | nonnegative
   
   /**
     * 'If `true`, even 4-digit integers are separated
     */
-  var separatethousands: Boolean = js.native
+  var separatethousands: Boolean
   
   /**
     * Determines whether or not a dividers are drawn
     * between the category levels of this axis.
     * Only has an effect on *multicategory* axes.
     */
-  var showdividers: Boolean = js.native
+  var showdividers: Boolean
   
   /**
     * If `all`, all exponents are shown besides their significands.
@@ -184,13 +182,13 @@ trait Axis extends StObject {
     * If `last`, only the exponent of the last tick is shown.
     * If `none`, no exponents appear.
     */
-  var showexponent: all | first | last | none = js.native
+  var showexponent: all | first | last | none
   
   /**
     * Determines whether or not grid lines are drawn.
     * If `true`, the grid lines are drawn at every tick mark.
     */
-  var showgrid: Boolean = js.native
+  var showgrid: Boolean
   
   /**
     * Lines and Grids
@@ -198,11 +196,11 @@ trait Axis extends StObject {
   /**
     * Determines whether or not a line bounding this axis is drawn.
     */
-  var showline: Boolean = js.native
+  var showline: Boolean
   
-  var showspikes: Boolean = js.native
+  var showspikes: Boolean
   
-  var showticklabels: Boolean = js.native
+  var showticklabels: Boolean
   
   /**
     * If `all`, all tick labels are displayed with a prefix.
@@ -210,16 +208,16 @@ trait Axis extends StObject {
     * If `last`, only the last tick is displayed with a suffix.
     * If `none`, tick prefixes are hidden.
     */
-  var showtickprefix: all | first | last | none = js.native
+  var showtickprefix: all | first | last | none
   
   /**
     * Same as `showtickprefix` but for tick suffixes.
     */
-  var showticksuffix: all | first | last | none = js.native
+  var showticksuffix: all | first | last | none
   
-  var spikecolor: Color = js.native
+  var spikecolor: Color
   
-  var spikedash: String = js.native
+  var spikedash: String
   
   /**
     * Determines the drawing mode for the spike line.
@@ -230,22 +228,22 @@ trait Axis extends StObject {
     * If `marker`, then a marker dot is drawn on the axis the series is
     * plotted on
     */
-  var spikemode: toaxis | across | marker | toaxisPlussignacross | toaxisPlussignacrossPlussignmarker | acrossPlussignmarker | toaxisPlussignmarker = js.native
+  var spikemode: toaxis | across | marker | toaxisPlussignacross | toaxisPlussignacrossPlussignmarker | acrossPlussignmarker | toaxisPlussignmarker
   
   /**
     * Determines whether spikelines are stuck to the cursor or to the closest datapoints.
     */
-  var spikesnap: data | cursor | (`hovered data`) = js.native
+  var spikesnap: data | cursor | (`hovered data`)
   
-  var spikethickness: Double = js.native
+  var spikethickness: Double
   
-  var tick0: Double | String = js.native
+  var tick0: Double | String
   
-  var tickangle: Double = js.native
+  var tickangle: Double
   
-  var tickcolor: Color = js.native
+  var tickcolor: Color
   
-  var tickfont: PartialFont = js.native
+  var tickfont: PartialFont
   
   /**
     * Sets the tick label formatting rule using d3 formatting mini-languages
@@ -255,68 +253,68 @@ trait Axis extends StObject {
     * We add one item to d3's date formatter: `%{n}f` for fractional seconds with n digits.
     * For example, `"2016-10-13 09:15:23.456"` with tickformat `"%H~%M~%S.%2f"` would display `"09~15~23.46"`
     */
-  var tickformat: String = js.native
+  var tickformat: String
   
   /**
     * Array of `Partial<TickFormatStop>` objects.
     */
-  var tickformatstops: js.Array[PartialTickFormatStop] = js.native
+  var tickformatstops: js.Array[PartialTickFormatStop]
   
-  var ticklen: Double = js.native
+  var ticklen: Double
   
   /**
     * Ticks
     */
-  var tickmode: auto | linear | array = js.native
+  var tickmode: auto | linear | array
   
-  var tickprefix: String = js.native
+  var tickprefix: String
   
-  var ticks: outside | inside | _empty = js.native
+  var ticks: outside | inside | _empty
   
   /**
     * Sets a tick label suffix.
     */
-  var ticksuffix: String = js.native
+  var ticksuffix: String
   
-  var ticktext: js.Array[String] = js.native
+  var ticktext: js.Array[String]
   
-  var tickvals: js.Array[_] = js.native
+  var tickvals: js.Array[js.Any]
   
-  var tickwidth: Double = js.native
+  var tickwidth: Double
   
-  var title: String | PartialDataTitleFont = js.native
+  var title: String | PartialDataTitleFont
   
   /**
     * Former `titlefont` is now the sub-attribute `font` of `title`.
     * To customize title font properties, please use `title.font` now.
     */
-  var titlefont: PartialFont = js.native
+  var titlefont: PartialFont
   
-  var `type`: AxisType = js.native
+  var `type`: AxisType
   
   /**
     * A single toggle to hide the axis while preserving interaction like dragging.
     * Default is true when a cheater plot is present on the axis, otherwise
     * false
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
   
   /**
     * Determines whether or not a line is drawn at along the 0 value
     * of this axis.
     * If `true`, the zero line is drawn on top of the grid lines.
     */
-  var zeroline: Boolean = js.native
+  var zeroline: Boolean
   
   /**
     * Sets the line color of the zero line.
     */
-  var zerolinecolor: Color = js.native
+  var zerolinecolor: Color
   
   /**
     * Sets the width (in px) of the zero line.
     */
-  var zerolinewidth: Double = js.native
+  var zerolinewidth: Double
 }
 object Axis {
   
@@ -324,7 +322,7 @@ object Axis {
   def apply(
     autorange: `true` | `false` | reversed,
     calendar: Calendar,
-    categoryarray: js.Array[_],
+    categoryarray: js.Array[js.Any],
     categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`),
     color: Color,
     dividercolor: Color,
@@ -339,7 +337,7 @@ object Axis {
     linewidth: Double,
     mirror: `true` | ticks | `false` | all | allticks,
     nticks: Double,
-    range: js.Array[_],
+    range: js.Array[js.Any],
     rangemode: normal | tozero | nonnegative,
     separatethousands: Boolean,
     showdividers: Boolean,
@@ -367,7 +365,7 @@ object Axis {
     ticks: outside | inside | _empty,
     ticksuffix: String,
     ticktext: js.Array[String],
-    tickvals: js.Array[_],
+    tickvals: js.Array[js.Any],
     tickwidth: Double,
     title: String | PartialDataTitleFont,
     titlefont: PartialFont,
@@ -392,7 +390,7 @@ object Axis {
     def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryarray(value: js.Array[_]): Self = StObject.set(x, "categoryarray", value.asInstanceOf[js.Any])
+    def setCategoryarray(value: js.Array[js.Any]): Self = StObject.set(x, "categoryarray", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCategoryarrayVarargs(value: js.Any*): Self = StObject.set(x, "categoryarray", js.Array(value :_*))
@@ -454,7 +452,7 @@ object Axis {
     def setNticks(value: Double): Self = StObject.set(x, "nticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: js.Array[_]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    def setRange(value: js.Array[js.Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRangeVarargs(value: js.Any*): Self = StObject.set(x, "range", js.Array(value :_*))
@@ -555,7 +553,7 @@ object Axis {
     def setTicktextVarargs(value: String*): Self = StObject.set(x, "ticktext", js.Array(value :_*))
     
     @scala.inline
-    def setTickvals(value: js.Array[_]): Self = StObject.set(x, "tickvals", value.asInstanceOf[js.Any])
+    def setTickvals(value: js.Array[js.Any]): Self = StObject.set(x, "tickvals", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTickvalsVarargs(value: js.Any*): Self = StObject.set(x, "tickvals", js.Array(value :_*))

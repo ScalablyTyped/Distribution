@@ -2,17 +2,15 @@ package typings.lokijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckIndexOptions extends StObject {
   
-  var randomSampling: Boolean = js.native
+  var randomSampling: Boolean
   
-  var randomSamplingFactor: Double = js.native
+  var randomSamplingFactor: Double
   
-  var repair: Boolean = js.native
+  var repair: Boolean
 }
 object CheckIndexOptions {
   

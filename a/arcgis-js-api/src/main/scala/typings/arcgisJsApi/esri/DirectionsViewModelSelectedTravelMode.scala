@@ -3,11 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectionsViewModelSelectedTravelMode extends TravelMode {
+trait DirectionsViewModelSelectedTravelMode
+  extends StObject
+     with TravelMode {
   
   /**
     * The description explaining the selected travel mode.
@@ -15,7 +15,7 @@ trait DirectionsViewModelSelectedTravelMode extends TravelMode {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#selectedTravelMode)
     */
   @JSName("description")
-  var description_DirectionsViewModelSelectedTravelMode: String = js.native
+  var description_DirectionsViewModelSelectedTravelMode: String
   
   /**
     * The unique identifier specific for this travel mode.
@@ -23,7 +23,7 @@ trait DirectionsViewModelSelectedTravelMode extends TravelMode {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#selectedTravelMode)
     */
   @JSName("id")
-  var id_DirectionsViewModelSelectedTravelMode: String = js.native
+  var id_DirectionsViewModelSelectedTravelMode: String
   
   /**
     * The cost attribute on which to optimize the analysis.
@@ -31,7 +31,7 @@ trait DirectionsViewModelSelectedTravelMode extends TravelMode {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#selectedTravelMode)
     */
   @JSName("impedanceAttributeName")
-  var impedanceAttributeName_DirectionsViewModelSelectedTravelMode: String = js.native
+  var impedanceAttributeName_DirectionsViewModelSelectedTravelMode: String
   
   /**
     * Name of the travel mode.
@@ -39,7 +39,7 @@ trait DirectionsViewModelSelectedTravelMode extends TravelMode {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#selectedTravelMode)
     */
   @JSName("name")
-  var name_DirectionsViewModelSelectedTravelMode: String = js.native
+  var name_DirectionsViewModelSelectedTravelMode: String
   
   /**
     * The time-based cost attribute for reporting directions.
@@ -47,7 +47,7 @@ trait DirectionsViewModelSelectedTravelMode extends TravelMode {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#selectedTravelMode)
     */
   @JSName("timeAttributeName")
-  var timeAttributeName_DirectionsViewModelSelectedTravelMode: String = js.native
+  var timeAttributeName_DirectionsViewModelSelectedTravelMode: String
 }
 object DirectionsViewModelSelectedTravelMode {
   

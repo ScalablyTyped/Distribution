@@ -9,17 +9,21 @@ import typings.splunkLogging.mod.SendContext
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("splunk-bunyan-logger", "createStream")
+  @JSImport("splunk-bunyan-logger", JSImport.Namespace)
   @js.native
-  def createStream(config: Config): SplunkBunyanStream = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createStream(config: Config): SplunkBunyanStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(config.asInstanceOf[js.Any]).asInstanceOf[SplunkBunyanStream]
   
   @js.native
-  trait SplunkBunyanStream extends Stream {
+  trait SplunkBunyanStream
+    extends StObject
+       with Stream {
     
     def flush(): Unit = js.native
     def flush(callback: js.Function3[/* error */ Error, /* req */ js.Any, /* res */ js.Any, Unit]): Unit = js.native
@@ -33,7 +37,9 @@ object mod {
   }
   
   @js.native
-  trait SplunkStream extends WritableStream {
+  trait SplunkStream
+    extends StObject
+       with WritableStream {
     
     var logger: Logger = js.native
   }

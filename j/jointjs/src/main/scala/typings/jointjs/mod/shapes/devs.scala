@@ -10,7 +10,6 @@ import typings.jointjs.mod.dia.Link.Attributes
 import typings.jointjs.mod.shapes.basic.Generic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devs {
@@ -19,7 +18,7 @@ object devs {
   @js.native
   class Atomic () extends Model {
     def this(attributes: ModelAttributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: ModelAttributes, opt: StringDictionary[js.Any]) = this()
   }
   
@@ -27,7 +26,7 @@ object devs {
   @js.native
   class Coupled () extends Model {
     def this(attributes: ModelAttributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: ModelAttributes, opt: StringDictionary[js.Any]) = this()
   }
   
@@ -37,7 +36,7 @@ object devs {
   class Link ()
     extends typings.jointjs.mod.dia.Link {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
@@ -45,7 +44,7 @@ object devs {
   @js.native
   class Model () extends Generic {
     def this(attributes: ModelAttributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: ModelAttributes, opt: StringDictionary[js.Any]) = this()
     
     def addInPort(port: String): this.type = js.native
@@ -62,7 +61,7 @@ object devs {
     
     def createPortItem(group: String, port: String): js.Any = js.native
     
-    def createPortItems(group: String, ports: js.Array[String]): js.Array[_] = js.native
+    def createPortItems(group: String, ports: js.Array[String]): js.Array[js.Any] = js.native
     
     def removeInPort(port: String): this.type = js.native
     def removeInPort(port: String, opt: js.Any): this.type = js.native
@@ -71,12 +70,13 @@ object devs {
     def removeOutPort(port: String, opt: js.Any): this.type = js.native
   }
   
-  @js.native
-  trait ModelAttributes extends GenericAttributes[ModelSelectors] {
+  trait ModelAttributes
+    extends StObject
+       with GenericAttributes[ModelSelectors] {
     
-    var inPorts: js.UndefOr[js.Array[String]] = js.native
+    var inPorts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var outPorts: js.UndefOr[js.Array[String]] = js.native
+    var outPorts: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ModelAttributes {
     
@@ -109,14 +109,15 @@ object devs {
     }
   }
   
-  @js.native
-  trait ModelSelectors extends Selectors {
+  trait ModelSelectors
+    extends StObject
+       with Selectors {
     
     @JSName(".body")
-    var Dotbody: js.UndefOr[SVGRectAttributes] = js.native
+    var Dotbody: js.UndefOr[SVGRectAttributes] = js.undefined
     
     @JSName(".label")
-    var Dotlabel: js.UndefOr[SVGTextAttributes] = js.native
+    var Dotlabel: js.UndefOr[SVGTextAttributes] = js.undefined
   }
   object ModelSelectors {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestImpactStatistics extends StObject {
   
   /**
     * The number of requests that have resulted in a fault,
     */
-  var FaultCount: js.UndefOr[NullableLong] = js.native
+  var FaultCount: js.UndefOr[NullableLong] = js.undefined
   
   /**
     * The number of successful requests.
     */
-  var OkCount: js.UndefOr[NullableLong] = js.native
+  var OkCount: js.UndefOr[NullableLong] = js.undefined
   
   /**
     * The total number of requests to the service.
     */
-  var TotalCount: js.UndefOr[NullableLong] = js.native
+  var TotalCount: js.UndefOr[NullableLong] = js.undefined
 }
 object RequestImpactStatistics {
   

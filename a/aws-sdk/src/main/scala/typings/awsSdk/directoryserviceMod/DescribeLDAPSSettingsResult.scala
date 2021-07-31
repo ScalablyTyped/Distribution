@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLDAPSSettingsResult extends StObject {
   
   /**
     * Information about LDAP security for the specified directory, including status of enablement, state last updated date time, and the reason for the state.
     */
-  var LDAPSSettingsInfo: js.UndefOr[typings.awsSdk.directoryserviceMod.LDAPSSettingsInfo] = js.native
+  var LDAPSSettingsInfo: js.UndefOr[typings.awsSdk.directoryserviceMod.LDAPSSettingsInfo] = js.undefined
   
   /**
     * The next token used to retrieve the LDAPS settings if the number of setting types exceeds page limit and there is another page.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
 }
 object DescribeLDAPSSettingsResult {
   

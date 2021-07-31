@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CachedMethods extends StObject {
   
   /**
     * A complex type that contains the HTTP methods that you want CloudFront to cache responses to.
     */
-  var Items: MethodsList = js.native
+  var Items: MethodsList
   
   /**
     * The number of HTTP methods for which you want CloudFront to cache responses. Valid values are 2 (for caching responses to GET and HEAD requests) and 3 (for caching responses to GET, HEAD, and OPTIONS requests).
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object CachedMethods {
   

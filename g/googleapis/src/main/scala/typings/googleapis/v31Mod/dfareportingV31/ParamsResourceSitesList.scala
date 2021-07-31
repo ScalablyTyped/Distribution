@@ -6,73 +6,73 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSitesList extends StandardParameters {
+trait ParamsResourceSitesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * This search filter is no longer supported and will have no effect on the
     * results returned.
     */
-  var acceptsInStreamVideoPlacements: js.UndefOr[Boolean] = js.native
+  var acceptsInStreamVideoPlacements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This search filter is no longer supported and will have no effect on the
     * results returned.
     */
-  var acceptsInterstitialPlacements: js.UndefOr[Boolean] = js.native
+  var acceptsInterstitialPlacements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only sites that accept publisher paid placements.
     */
-  var acceptsPublisherPaidPlacements: js.UndefOr[Boolean] = js.native
+  var acceptsPublisherPaidPlacements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only AdWords sites.
     */
-  var adWordsSite: js.UndefOr[Boolean] = js.native
+  var adWordsSite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only approved sites.
     */
-  var approved: js.UndefOr[Boolean] = js.native
+  var approved: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only sites with these campaign IDs.
     */
-  var campaignIds: js.UndefOr[js.Array[String]] = js.native
+  var campaignIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only sites with these directory site IDs.
     */
-  var directorySiteIds: js.UndefOr[js.Array[String]] = js.native
+  var directorySiteIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only sites with these IDs.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Value of the nextPageToken from the previous result page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Allows searching for objects by name, ID or keyName. Wildcards (*) are
@@ -82,27 +82,27 @@ trait ParamsResourceSitesList extends StandardParameters {
     * search string. For example, a search string of "site" will match objects
     * with name "my site", "site 2015", or simply "site".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /**
     * Field by which to sort the list.
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * Order of sorted results.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Select only sites with this subaccount ID.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Select only sites that have not been mapped to a directory site.
     */
-  var unmappedSite: js.UndefOr[Boolean] = js.native
+  var unmappedSite: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceSitesList {
   

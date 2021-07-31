@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,29 +9,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `decls` and `vars` are known at compile time. Other such as `i18n` and `expando` are runtime only
   * concepts.
   */
-@js.native
 trait LViewDebugRange extends StObject {
   
   /**
     * The merged content of the range. `t` contains data from `TView.data` and `l` contains `LView`
     * data at an index.
     */
-  var content: js.Array[LViewDebugRangeContent] = js.native
+  var content: js.Array[LViewDebugRangeContent]
   
   /**
     * The ending index in `LView` where the range ends. (Exclusive)
     */
-  var end: Double = js.native
+  var end: Double
   
   /**
     * The length of the range
     */
-  var length: Double = js.native
+  var length: Double
   
   /**
     * The starting index in `LView` where the range begins. (Inclusive)
     */
-  var start: Double = js.native
+  var start: Double
 }
 object LViewDebugRange {
   

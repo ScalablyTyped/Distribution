@@ -2,7 +2,6 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,31 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resource_for beta.targetHttpProxies ==) (== resource_for
   * v1.targetHttpProxies ==)
   */
-@js.native
 trait SchemaTargetHttpProxy extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of resource. Always compute#targetHttpProxy for target
     * HTTP proxies.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -45,18 +43,18 @@ trait SchemaTargetHttpProxy extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * URL to the UrlMap resource that defines the mapping from URL to the
     * BackendService.
     */
-  var urlMap: js.UndefOr[String] = js.native
+  var urlMap: js.UndefOr[String] = js.undefined
 }
 object SchemaTargetHttpProxy {
   

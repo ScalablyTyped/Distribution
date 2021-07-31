@@ -2,36 +2,34 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningCertificate extends StObject {
   
   /**
     * The contents of the signing certificate.
     */
-  var CertificateBody: certificateBodyType = js.native
+  var CertificateBody: certificateBodyType
   
   /**
     * The ID for the signing certificate.
     */
-  var CertificateId: certificateIdType = js.native
+  var CertificateId: certificateIdType
   
   /**
     * The status of the signing certificate. Active means that the key is valid for API calls, while Inactive means it is not.
     */
-  var Status: statusType = js.native
+  var Status: statusType
   
   /**
     * The date when the signing certificate was uploaded.
     */
-  var UploadDate: js.UndefOr[dateType] = js.native
+  var UploadDate: js.UndefOr[dateType] = js.undefined
   
   /**
     * The name of the user the signing certificate is associated with.
     */
-  var UserName: userNameType = js.native
+  var UserName: userNameType
 }
 object SigningCertificate {
   

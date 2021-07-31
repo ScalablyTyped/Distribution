@@ -3,15 +3,13 @@ package typings.pdfjsDist.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFViewerParams extends StObject {
   
-  var container: HTMLElement = js.native
+  var container: HTMLElement
   
-  var viewer: js.UndefOr[HTMLElement] = js.native
+  var viewer: js.UndefOr[HTMLElement] = js.undefined
 }
 object PDFViewerParams {
   

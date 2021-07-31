@@ -3,19 +3,19 @@ package typings.reactNavigation.mod
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationEventsProps extends ViewProps {
+trait NavigationEventsProps
+  extends StObject
+     with ViewProps {
   
-  var onDidBlur: js.UndefOr[NavigationEventCallback] = js.native
+  var onDidBlur: js.UndefOr[NavigationEventCallback] = js.undefined
   
-  var onDidFocus: js.UndefOr[NavigationEventCallback] = js.native
+  var onDidFocus: js.UndefOr[NavigationEventCallback] = js.undefined
   
-  var onWillBlur: js.UndefOr[NavigationEventCallback] = js.native
+  var onWillBlur: js.UndefOr[NavigationEventCallback] = js.undefined
   
-  var onWillFocus: js.UndefOr[NavigationEventCallback] = js.native
+  var onWillFocus: js.UndefOr[NavigationEventCallback] = js.undefined
 }
 object NavigationEventsProps {
   

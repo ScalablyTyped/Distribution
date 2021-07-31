@@ -2,27 +2,25 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectMenuClasses extends StObject {
   
-  var `ui-selectmenu-button`: js.UndefOr[String] = js.native
+  var `ui-selectmenu-button`: js.UndefOr[String] = js.undefined
   
-  var `ui-selectmenu-button-closed`: js.UndefOr[String] = js.native
+  var `ui-selectmenu-button-closed`: js.UndefOr[String] = js.undefined
   
-  var `ui-selectmenu-button-open`: js.UndefOr[String] = js.native
+  var `ui-selectmenu-button-open`: js.UndefOr[String] = js.undefined
   
-  var `ui-selectmenu-icon`: js.UndefOr[String] = js.native
+  var `ui-selectmenu-icon`: js.UndefOr[String] = js.undefined
   
-  var `ui-selectmenu-menu`: js.UndefOr[String] = js.native
+  var `ui-selectmenu-menu`: js.UndefOr[String] = js.undefined
   
-  var `ui-selectmenu-open`: js.UndefOr[String] = js.native
+  var `ui-selectmenu-open`: js.UndefOr[String] = js.undefined
   
-  var `ui-selectmenu-optgroup`: js.UndefOr[String] = js.native
+  var `ui-selectmenu-optgroup`: js.UndefOr[String] = js.undefined
   
-  var `ui-selectmenu-text`: js.UndefOr[String] = js.native
+  var `ui-selectmenu-text`: js.UndefOr[String] = js.undefined
 }
 object SelectMenuClasses {
   

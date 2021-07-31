@@ -2,15 +2,13 @@ package typings.materialTextfield.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICONEVENT extends StObject {
   
-  var ICON_EVENT: String = js.native
+  var ICON_EVENT: String
   
-  var ICON_ROLE: String = js.native
+  var ICON_ROLE: String
 }
 object ICONEVENT {
   

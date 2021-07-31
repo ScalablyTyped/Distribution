@@ -13,7 +13,6 @@ import typings.postcss.mod.Stringifier
 import typings.postcssLess.postcssLessBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined postcss.postcss.Syntax & {  parse :postcss.postcss.Parser,   stringify :postcss.postcss.Stringifier, nodeToString (node : postcss.postcss.Node): string} */
@@ -23,9 +22,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("postcss-less", "nodeToString")
-  @js.native
-  def nodeToString(node: Node): String = js.native
+  @scala.inline
+  def nodeToString(node: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeToString")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Function to generate AST by string.
@@ -33,12 +31,10 @@ object mod {
   @JSImport("postcss-less", "parse")
   @js.native
   def parse: js.UndefOr[Parser] = js.native
-  @JSImport("postcss-less", "parse")
-  @js.native
-  def parse(css: ParserInput): Root_ = js.native
-  @JSImport("postcss-less", "parse")
-  @js.native
-  def parse(css: ParserInput, opts: PickProcessOptionsmapfrom): Root_ = js.native
+  @scala.inline
+  def parse(css: ParserInput): Root_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(css.asInstanceOf[js.Any]).asInstanceOf[Root_]
+  @scala.inline
+  def parse(css: ParserInput, opts: PickProcessOptionsmapfrom): Root_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(css.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Root_]
   @scala.inline
   def parse_=(x: js.UndefOr[Parser]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
   
@@ -48,9 +44,8 @@ object mod {
   @JSImport("postcss-less", "stringify")
   @js.native
   def stringify: js.UndefOr[Stringifier] = js.native
-  @JSImport("postcss-less", "stringify")
-  @js.native
-  def stringify(node: Node, builder: Builder): Unit = js.native
+  @scala.inline
+  def stringify(node: Node, builder: Builder): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], builder.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def stringify_=(x: js.UndefOr[Stringifier]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringify")(x.asInstanceOf[js.Any])
   
@@ -69,14 +64,17 @@ object mod {
   // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/LessParser.js#L187
   @js.native
   trait ExtendDeclaration
-    extends typings.postcss.mod.Declaration {
+    extends StObject
+       with typings.postcss.mod.Declaration {
     
     var extend: `true` = js.native
   }
   
   // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/LessParser.js#L187
   @js.native
-  trait ExtendRule extends Rule_ {
+  trait ExtendRule
+    extends StObject
+       with Rule_ {
     
     var extend: `true` = js.native
   }
@@ -84,7 +82,8 @@ object mod {
   // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/LessParser.js#L57
   @js.native
   trait FunctionAtRule
-    extends AtRule_
+    extends StObject
+       with AtRule_
        with AtRule {
     
     var function: `true` = js.native
@@ -93,7 +92,8 @@ object mod {
   // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/nodes/import.js
   @js.native
   trait ImportAtRule
-    extends AtRule_
+    extends StObject
+       with AtRule_
        with AtRule {
     
     var filename: String = js.native
@@ -105,7 +105,9 @@ object mod {
   
   // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/LessParser.js#L73
   @js.native
-  trait InlineComment extends Comment_ {
+  trait InlineComment
+    extends StObject
+       with Comment_ {
     
     var `inline`: `true` = js.native
   }
@@ -113,7 +115,8 @@ object mod {
   // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/LessParser.js#L147-L151
   @js.native
   trait MixinAtRule
-    extends AtRule_
+    extends StObject
+       with AtRule_
        with AtRule {
     
     var important: js.UndefOr[`true`] = js.native
@@ -126,7 +129,8 @@ object mod {
   // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/nodes/variable.js
   @js.native
   trait VariableAtRule
-    extends AtRule_
+    extends StObject
+       with AtRule_
        with AtRule {
     
     var value: String = js.native

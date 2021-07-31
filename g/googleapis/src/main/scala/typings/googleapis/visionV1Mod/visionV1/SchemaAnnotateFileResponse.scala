@@ -2,25 +2,23 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to a single file annotation request. A file may contain one or
   * more images, which individually have their own responses.
   */
-@js.native
 trait SchemaAnnotateFileResponse extends StObject {
   
   /**
     * Information about the file for which this response is generated.
     */
-  var inputConfig: js.UndefOr[SchemaInputConfig] = js.native
+  var inputConfig: js.UndefOr[SchemaInputConfig] = js.undefined
   
   /**
     * Individual responses to images found within the file.
     */
-  var responses: js.UndefOr[js.Array[SchemaAnnotateImageResponse]] = js.native
+  var responses: js.UndefOr[js.Array[SchemaAnnotateImageResponse]] = js.undefined
 }
 object SchemaAnnotateFileResponse {
   

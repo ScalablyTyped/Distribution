@@ -2,36 +2,34 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoScalingSettingsUpdate extends StObject {
   
   /**
     * Disabled auto scaling for this global table or global secondary index.
     */
-  var AutoScalingDisabled: js.UndefOr[BooleanObject] = js.native
+  var AutoScalingDisabled: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * Role ARN used for configuring auto scaling policy.
     */
-  var AutoScalingRoleArn: js.UndefOr[typings.awsSdk.dynamodbMod.AutoScalingRoleArn] = js.native
+  var AutoScalingRoleArn: js.UndefOr[typings.awsSdk.dynamodbMod.AutoScalingRoleArn] = js.undefined
   
   /**
     * The maximum capacity units that a global table or global secondary index should be scaled up to.
     */
-  var MaximumUnits: js.UndefOr[PositiveLongObject] = js.native
+  var MaximumUnits: js.UndefOr[PositiveLongObject] = js.undefined
   
   /**
     * The minimum capacity units that a global table or global secondary index should be scaled down to.
     */
-  var MinimumUnits: js.UndefOr[PositiveLongObject] = js.native
+  var MinimumUnits: js.UndefOr[PositiveLongObject] = js.undefined
   
   /**
     * The scaling policy to apply for scaling target global table or global secondary index capacity units.
     */
-  var ScalingPolicyUpdate: js.UndefOr[AutoScalingPolicyUpdate] = js.native
+  var ScalingPolicyUpdate: js.UndefOr[AutoScalingPolicyUpdate] = js.undefined
 }
 object AutoScalingSettingsUpdate {
   

@@ -4,42 +4,42 @@ import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
 import typings.googleAuthLibrary.mod.GoogleAuth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MakeAuthenticatedRequestFactoryConfig extends GoogleAuthOptions {
+trait MakeAuthenticatedRequestFactoryConfig
+  extends StObject
+     with GoogleAuthOptions {
   
   /**
     * A pre-instantiated GoogleAuth client that should be used.
     * A new will be created if this is not set.
     */
-  var authClient: js.UndefOr[GoogleAuth] = js.native
+  var authClient: js.UndefOr[GoogleAuth] = js.undefined
   
   /**
     * Automatically retry requests if the response is related to rate limits or
     * certain intermittent server errors. We will exponentially backoff
     * subsequent requests by default. (default: true)
     */
-  var autoRetry: js.UndefOr[Boolean] = js.native
+  var autoRetry: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, just return the provided request options. Default: false.
     */
-  var customEndpoint: js.UndefOr[Boolean] = js.native
+  var customEndpoint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Account email address, required for PEM/P12 usage.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of automatic retries attempted before returning the error.
     * (default: 3)
     */
-  var maxRetries: js.UndefOr[Double] = js.native
+  var maxRetries: js.UndefOr[Double] = js.undefined
   
-  var stream: js.UndefOr[Duplexify] = js.native
+  var stream: js.UndefOr[Duplexify] = js.undefined
 }
 object MakeAuthenticatedRequestFactoryConfig {
   

@@ -26,72 +26,70 @@ import typings.storybookReactNative.storybookReactNativeStrings.tail
 import typings.storybookReactNative.storybookReactNativeStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-native.react-native.TextProps & react.react.RefAttributes<react-native.react-native.Text>, 'style' | 'allowFontScaling' | 'ellipsizeMode' | 'lineBreakMode' | 'numberOfLines' | 'onLayout' | 'onPress' | 'onLongPress' | 'testID' | 'nativeID' | 'maxFontSizeMultiplier' | 'adjustsFontSizeToFit' | 'minimumFontScale' | 'suppressHighlighting' | 'selectable' | 'selectionColor' | 'textBreakStrategy' | 'accessible' | 'accessibilityLabel' | 'accessibilityRole' | 'accessibilityStates' | 'accessibilityHint' | 'accessibilityComponentType' | 'accessibilityLiveRegion' | 'importantForAccessibility' | 'accessibilityElementsHidden' | 'accessibilityTraits' | 'onAccessibilityTap' | 'onMagicTap' | 'accessibilityIgnoresInvertColors'> */
-@js.native
 trait PickTextPropsRefAttribute extends StObject {
   
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
-  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityHint: js.UndefOr[String] = js.native
+  var accessibilityHint: js.UndefOr[String] = js.undefined
   
-  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
   
-  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
-  var accessibilityStates: js.UndefOr[js.Any] = js.native
+  var accessibilityStates: js.UndefOr[js.Any] = js.undefined
   
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
-  var accessible: js.UndefOr[Boolean] = js.native
+  var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var adjustsFontSizeToFit: js.UndefOr[Boolean] = js.native
+  var adjustsFontSizeToFit: js.UndefOr[Boolean] = js.undefined
   
-  var allowFontScaling: js.UndefOr[Boolean] = js.native
+  var allowFontScaling: js.UndefOr[Boolean] = js.undefined
   
-  var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.native
+  var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
   
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
-  var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.native
+  var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.undefined
   
-  var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.native
+  var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.undefined
   
-  var minimumFontScale: js.UndefOr[Double] = js.native
+  var minimumFontScale: js.UndefOr[Double] = js.undefined
   
-  var nativeID: js.UndefOr[String] = js.native
+  var nativeID: js.UndefOr[String] = js.undefined
   
-  var numberOfLines: js.UndefOr[Double] = js.native
+  var numberOfLines: js.UndefOr[Double] = js.undefined
   
-  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
-  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
-  var selectionColor: js.UndefOr[ColorValue] = js.native
+  var selectionColor: js.UndefOr[ColorValue] = js.undefined
   
-  var style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var suppressHighlighting: js.UndefOr[Boolean] = js.native
+  var suppressHighlighting: js.UndefOr[Boolean] = js.undefined
   
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
-  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.native
+  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
 }
 object PickTextPropsRefAttribute {
   

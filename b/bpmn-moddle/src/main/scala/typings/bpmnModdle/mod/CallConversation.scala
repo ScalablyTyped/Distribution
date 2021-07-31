@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CallConversation extends ConversationNode {
+trait CallConversation
+  extends StObject
+     with ConversationNode {
   
-  var calledCollaborationRef: Collaboration = js.native
+  var calledCollaborationRef: Collaboration
   
-  var participantAssociations: js.Array[ParticipantAssociation] = js.native
+  var participantAssociations: js.Array[ParticipantAssociation]
 }
 object CallConversation {
   

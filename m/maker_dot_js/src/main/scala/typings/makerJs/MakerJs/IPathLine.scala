@@ -2,7 +2,6 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,13 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * var line = { type: 'line', origin: [0, 0], end: [1, 1] };   //javascript
   * ```
   */
-@js.native
-trait IPathLine extends IPath {
+trait IPathLine
+  extends StObject
+     with IPath {
   
   /**
     * The end point defining the line. The start point is the origin.
     */
-  var end: IPoint = js.native
+  var end: IPoint
 }
 object IPathLine {
   

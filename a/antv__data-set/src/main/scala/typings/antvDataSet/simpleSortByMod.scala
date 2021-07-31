@@ -2,17 +2,18 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simpleSortByMod {
   
-  @JSImport("@antv/data-set/lib/src/util/simple-sort-by", JSImport.Default)
+  @JSImport("@antv/data-set/lib/src/util/simple-sort-by", JSImport.Namespace)
   @js.native
-  def default(arr: js.Array[_]): js.Array[_] = js.native
-  @JSImport("@antv/data-set/lib/src/util/simple-sort-by", JSImport.Default)
-  @js.native
-  def default(arr: js.Array[_], keys: SortTarget): js.Array[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(arr: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def default(arr: js.Array[js.Any], keys: SortTarget): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   type SortTarget = String | js.Array[String] | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])
 }

@@ -2,7 +2,6 @@ package typings.git.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Actor")
@@ -17,7 +16,10 @@ class Actor protected () extends StObject {
 /* static members */
 object Actor {
   
-  @JSImport("git", "Actor.from_string")
+  @JSImport("git", "Actor")
   @js.native
-  def from_string(str: String): Actor = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def from_string(str: String): Actor = ^.asInstanceOf[js.Dynamic].applyDynamic("from_string")(str.asInstanceOf[js.Any]).asInstanceOf[Actor]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningPlatformOverrides extends StObject {
   
   /**
     * A signing configuration that overrides the default encryption or hash algorithm of a signing job.
     */
-  var signingConfiguration: js.UndefOr[SigningConfigurationOverrides] = js.native
+  var signingConfiguration: js.UndefOr[SigningConfigurationOverrides] = js.undefined
   
   /**
     * A signed image is a JSON object. When overriding the default signing platform configuration, a customer can select either of two signing formats, JSONEmbedded or JSONDetached. (A third format value, JSON, is reserved for future use.) With JSONEmbedded, the signing image has the payload embedded in it. With JSONDetached, the payload is not be embedded in the signing image.
     */
-  var signingImageFormat: js.UndefOr[ImageFormat] = js.native
+  var signingImageFormat: js.UndefOr[ImageFormat] = js.undefined
 }
 object SigningPlatformOverrides {
   

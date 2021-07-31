@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultRowValue extends StObject {
   
   /**
     * The friendly name of the metric whose value is specified by the Value property.
     */
-  var Key: string = js.native
+  var Key: string
   
   /**
     * The data type of the value specified by the Value property.
     */
-  var Type: string = js.native
+  var Type: string
   
   /**
     * In a Values object, the value for the metric that the query retrieved data for. In a GroupedBys object, the value for the field that was used to group data in a result set that contains multiple results (Values objects).
     */
-  var Value: string = js.native
+  var Value: string
 }
 object ResultRowValue {
   

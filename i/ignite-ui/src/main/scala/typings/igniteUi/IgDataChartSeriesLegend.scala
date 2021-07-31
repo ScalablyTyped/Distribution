@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgDataChartSeriesLegend
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,7 +15,7 @@ trait IgDataChartSeriesLegend
   /**
     * The name of the element to turn into a legend.
     */
-  var element: js.UndefOr[String] = js.native
+  var element: js.UndefOr[String] = js.undefined
   
   /**
     * The height of the legend.null will stretch vertically to fit data, no other height are defined
@@ -25,7 +24,7 @@ trait IgDataChartSeriesLegend
     * Valid values:
     * "null"
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Type of the legend.
@@ -34,7 +33,7 @@ trait IgDataChartSeriesLegend
     * "item" Specify the legend as item legend. It displays a legend item for each pie in the igPieChart control.
     * "legend" Specify the legend as legend. It is supported by all types of series in the igDataChart control.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the legend.
@@ -42,7 +41,7 @@ trait IgDataChartSeriesLegend
     * Valid values:
     * "null" will stretch to fit data, if no other widths are defined
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object IgDataChartSeriesLegend {
   

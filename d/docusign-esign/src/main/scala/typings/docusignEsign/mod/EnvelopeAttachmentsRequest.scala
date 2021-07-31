@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeAttachmentsRequest extends StObject {
   
   /**
     * An object that contains information about the attachment.
     */
-  var attachments: js.UndefOr[js.Array[/* Contains information about an attachment. */ Attachment]] = js.native
+  var attachments: js.UndefOr[js.Array[/* Contains information about an attachment. */ Attachment]] = js.undefined
 }
 object EnvelopeAttachmentsRequest {
   

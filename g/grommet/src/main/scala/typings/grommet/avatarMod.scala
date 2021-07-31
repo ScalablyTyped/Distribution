@@ -12,7 +12,6 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object avatarMod {
@@ -20,15 +19,14 @@ object avatarMod {
   @JSImport("grommet/components/Avatar", "Avatar")
   @js.native
   val Avatar: FC[
-    BoxProps with AvatarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
+    BoxProps & AvatarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
   ] = js.native
   
-  @js.native
   trait AvatarProps extends StObject {
     
-    var size: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.native
+    var size: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object AvatarProps {
     

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.TABLECOLUMNPROPERTIES_DIALOG_COMMAND command parameter.
   */
-@js.native
-trait ASPxClientHtmlEditorTableColumnPropertiesCommandArguments extends ASPxClientHtmlEditorCommandArguments {
+trait ASPxClientHtmlEditorTableColumnPropertiesCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorCommandArguments {
   
   /**
     * Contains the style settings defining the appearance of the target column element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
 }
 object ASPxClientHtmlEditorTableColumnPropertiesCommandArguments {
   

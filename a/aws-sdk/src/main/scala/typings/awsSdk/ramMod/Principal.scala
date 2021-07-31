@@ -2,36 +2,34 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Principal extends StObject {
   
   /**
     * The time when the principal was associated with the resource share.
     */
-  var creationTime: js.UndefOr[DateTime] = js.native
+  var creationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Indicates whether the principal belongs to the same AWS organization as the AWS account that owns the resource share.
     */
-  var external: js.UndefOr[Boolean] = js.native
+  var external: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the principal.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the association was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[DateTime] = js.native
+  var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource share.
     */
-  var resourceShareArn: js.UndefOr[String] = js.native
+  var resourceShareArn: js.UndefOr[String] = js.undefined
 }
 object Principal {
   

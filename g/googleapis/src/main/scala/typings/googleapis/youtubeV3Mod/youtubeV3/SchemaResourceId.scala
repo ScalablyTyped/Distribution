@@ -2,14 +2,12 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A resource id is a generic reference that points to another YouTube
   * resource.
   */
-@js.native
 trait SchemaResourceId extends StObject {
   
   /**
@@ -17,26 +15,26 @@ trait SchemaResourceId extends StObject {
     * that resource is a channel. This property is only present if the
     * resourceId.kind value is youtube#channel.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the API resource.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the referred resource, if
     * that resource is a playlist. This property is only present if the
     * resourceId.kind value is youtube#playlist.
     */
-  var playlistId: js.UndefOr[String] = js.native
+  var playlistId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the referred resource, if
     * that resource is a video. This property is only present if the
     * resourceId.kind value is youtube#video.
     */
-  var videoId: js.UndefOr[String] = js.native
+  var videoId: js.UndefOr[String] = js.undefined
 }
 object SchemaResourceId {
   

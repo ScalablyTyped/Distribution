@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The key for the tag. May not be null.
     */
-  var Key: js.UndefOr[String] = js.native
+  var Key: js.UndefOr[String] = js.undefined
   
   /**
     * The tag's value. May be null.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object Tag {
   

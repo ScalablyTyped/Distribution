@@ -3,7 +3,6 @@ package typings.officeJs.global.Excel
 import typings.officeJs.Excel.ValueFilterCondition.equals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,24 +18,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ValueFilterCondition extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ValueFilterCondition with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ValueFilterCondition & String] = js.native
   
-  /* "Between" */ val between: typings.officeJs.Excel.ValueFilterCondition.between with String = js.native
+  /* "Between" */ val between: typings.officeJs.Excel.ValueFilterCondition.between & String = js.native
   
-  /* "BottomN" */ val bottomN: typings.officeJs.Excel.ValueFilterCondition.bottomN with String = js.native
+  /* "BottomN" */ val bottomN: typings.officeJs.Excel.ValueFilterCondition.bottomN & String = js.native
   
   /* "Equals" */ @JSName("equals")
-  val equals_ : equals with String = js.native
+  val equals_ : equals & String = js.native
   
-  /* "GreaterThan" */ val greaterThan: typings.officeJs.Excel.ValueFilterCondition.greaterThan with String = js.native
+  /* "GreaterThan" */ val greaterThan: typings.officeJs.Excel.ValueFilterCondition.greaterThan & String = js.native
   
-  /* "GreaterThanOrEqualTo" */ val greaterThanOrEqualTo: typings.officeJs.Excel.ValueFilterCondition.greaterThanOrEqualTo with String = js.native
+  /* "GreaterThanOrEqualTo" */ val greaterThanOrEqualTo: typings.officeJs.Excel.ValueFilterCondition.greaterThanOrEqualTo & String = js.native
   
-  /* "LessThan" */ val lessThan: typings.officeJs.Excel.ValueFilterCondition.lessThan with String = js.native
+  /* "LessThan" */ val lessThan: typings.officeJs.Excel.ValueFilterCondition.lessThan & String = js.native
   
-  /* "LessThanOrEqualTo" */ val lessThanOrEqualTo: typings.officeJs.Excel.ValueFilterCondition.lessThanOrEqualTo with String = js.native
+  /* "LessThanOrEqualTo" */ val lessThanOrEqualTo: typings.officeJs.Excel.ValueFilterCondition.lessThanOrEqualTo & String = js.native
   
-  /* "TopN" */ val topN: typings.officeJs.Excel.ValueFilterCondition.topN with String = js.native
+  /* "TopN" */ val topN: typings.officeJs.Excel.ValueFilterCondition.topN & String = js.native
   
-  /* "Unknown" */ val unknown: typings.officeJs.Excel.ValueFilterCondition.unknown with String = js.native
+  /* "Unknown" */ val unknown: typings.officeJs.Excel.ValueFilterCondition.unknown & String = js.native
 }

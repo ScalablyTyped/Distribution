@@ -2,26 +2,24 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPlacementsRequest extends StObject {
   
   /**
     * The maximum number of results to return per request. If not set, a default value of 100 is used.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token to retrieve the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The project containing the placements to be listed.
     */
-  var projectName: ProjectName = js.native
+  var projectName: ProjectName
 }
 object ListPlacementsRequest {
   

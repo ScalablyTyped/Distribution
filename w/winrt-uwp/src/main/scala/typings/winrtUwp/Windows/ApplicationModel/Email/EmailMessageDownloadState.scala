@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object EmailMessageDownloadState extends StObject {
   
   /** The download of the email message is complete. */
   @js.native
-  sealed trait downloaded extends EmailMessageDownloadState
+  sealed trait downloaded
+    extends StObject
+       with EmailMessageDownloadState
   
   /** The email message is currently downloading. */
   @js.native
-  sealed trait downloading extends EmailMessageDownloadState
+  sealed trait downloading
+    extends StObject
+       with EmailMessageDownloadState
   
   /** The download of the email message has failed. */
   @js.native
-  sealed trait failed extends EmailMessageDownloadState
+  sealed trait failed
+    extends StObject
+       with EmailMessageDownloadState
   
   /** The email message is partially downloaded. */
   @js.native
-  sealed trait partiallyDownloaded extends EmailMessageDownloadState
+  sealed trait partiallyDownloaded
+    extends StObject
+       with EmailMessageDownloadState
 }

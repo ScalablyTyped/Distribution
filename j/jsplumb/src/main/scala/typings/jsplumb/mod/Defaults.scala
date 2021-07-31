@@ -2,40 +2,38 @@ package typings.jsplumb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Defaults extends StObject {
   
-  var Anchor: js.UndefOr[AnchorSpec] = js.native
+  var Anchor: js.UndefOr[AnchorSpec] = js.undefined
   
-  var Anchors: js.UndefOr[js.Tuple2[AnchorSpec, AnchorSpec]] = js.native
+  var Anchors: js.UndefOr[js.Tuple2[AnchorSpec, AnchorSpec]] = js.undefined
   
-  var ConnectionOverlays: js.UndefOr[js.Array[OverlaySpec]] = js.native
+  var ConnectionOverlays: js.UndefOr[js.Array[OverlaySpec]] = js.undefined
   
-  var ConnectionsDetachable: js.UndefOr[Boolean] = js.native
+  var ConnectionsDetachable: js.UndefOr[Boolean] = js.undefined
   
-  var Connector: js.UndefOr[ConnectorSpec] = js.native
+  var Connector: js.UndefOr[ConnectorSpec] = js.undefined
   
-  var Container: js.UndefOr[js.Any] = js.native
+  var Container: js.UndefOr[js.Any] = js.undefined
   
   // string(selector or id) or element
-  var DragOptions: js.UndefOr[typings.jsplumb.mod.DragOptions] = js.native
+  var DragOptions: js.UndefOr[typings.jsplumb.mod.DragOptions] = js.undefined
   
-  var Endpoint: js.UndefOr[EndpointSpec] = js.native
+  var Endpoint: js.UndefOr[EndpointSpec] = js.undefined
   
-  var EndpointHoverStyle: js.UndefOr[PaintStyle] = js.native
+  var EndpointHoverStyle: js.UndefOr[PaintStyle] = js.undefined
   
-  var EndpointStyle: js.UndefOr[PaintStyle] = js.native
+  var EndpointStyle: js.UndefOr[PaintStyle] = js.undefined
   
-  var Endpoints: js.UndefOr[js.Tuple2[EndpointSpec, EndpointSpec]] = js.native
+  var Endpoints: js.UndefOr[js.Tuple2[EndpointSpec, EndpointSpec]] = js.undefined
   
-  var HoverPaintStyle: js.UndefOr[PaintStyle] = js.native
+  var HoverPaintStyle: js.UndefOr[PaintStyle] = js.undefined
   
-  var PaintStyle: js.UndefOr[typings.jsplumb.mod.PaintStyle] = js.native
+  var PaintStyle: js.UndefOr[typings.jsplumb.mod.PaintStyle] = js.undefined
   
-  var ReattachConnections: js.UndefOr[Boolean] = js.native
+  var ReattachConnections: js.UndefOr[Boolean] = js.undefined
 }
 object Defaults {
   

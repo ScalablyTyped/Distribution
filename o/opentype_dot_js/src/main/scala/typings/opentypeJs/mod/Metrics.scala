@@ -2,23 +2,21 @@ package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metrics extends StObject {
   
-  var leftSideBearing: Double = js.native
+  var leftSideBearing: Double
   
-  var rightSideBearing: js.UndefOr[Double] = js.native
+  var rightSideBearing: js.UndefOr[Double] = js.undefined
   
-  var xMax: Double = js.native
+  var xMax: Double
   
-  var xMin: Double = js.native
+  var xMin: Double
   
-  var yMax: Double = js.native
+  var yMax: Double
   
-  var yMin: Double = js.native
+  var yMin: Double
 }
 object Metrics {
   

@@ -4,79 +4,77 @@ import typings.devtoolsProtocol.mod.Protocol.Page.Viewport
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetDeviceMetricsOverrideRequest extends StObject {
   
   /**
     * Overriding device scale factor value. 0 disables the override.
     */
-  var deviceScaleFactor: Double = js.native
+  var deviceScaleFactor: Double
   
   /**
     * If set, the display feature of a multi-segment screen. If not set, multi-segment support
     * is turned-off.
     */
-  var displayFeature: js.UndefOr[DisplayFeature] = js.native
+  var displayFeature: js.UndefOr[DisplayFeature] = js.undefined
   
   /**
     * Do not set visible view size, rely upon explicit setVisibleSize call.
     */
-  var dontSetVisibleSize: js.UndefOr[Boolean] = js.native
+  var dontSetVisibleSize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Overriding height value in pixels (minimum 0, maximum 10000000). 0 disables the override.
     */
-  var height: integer = js.native
+  var height: integer
   
   /**
     * Whether to emulate mobile device. This includes viewport meta tag, overlay scrollbars, text
     * autosizing and more.
     */
-  var mobile: Boolean = js.native
+  var mobile: Boolean
   
   /**
     * Overriding view X position on screen in pixels (minimum 0, maximum 10000000).
     */
-  var positionX: js.UndefOr[integer] = js.native
+  var positionX: js.UndefOr[integer] = js.undefined
   
   /**
     * Overriding view Y position on screen in pixels (minimum 0, maximum 10000000).
     */
-  var positionY: js.UndefOr[integer] = js.native
+  var positionY: js.UndefOr[integer] = js.undefined
   
   /**
     * Scale to apply to resulting view image.
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * Overriding screen height value in pixels (minimum 0, maximum 10000000).
     */
-  var screenHeight: js.UndefOr[integer] = js.native
+  var screenHeight: js.UndefOr[integer] = js.undefined
   
   /**
     * Screen orientation override.
     */
-  var screenOrientation: js.UndefOr[ScreenOrientation] = js.native
+  var screenOrientation: js.UndefOr[ScreenOrientation] = js.undefined
   
   /**
     * Overriding screen width value in pixels (minimum 0, maximum 10000000).
     */
-  var screenWidth: js.UndefOr[integer] = js.native
+  var screenWidth: js.UndefOr[integer] = js.undefined
   
   /**
     * If set, the visible area of the page will be overridden to this viewport. This viewport
     * change is not observed by the page, e.g. viewport-relative elements do not change positions.
     */
-  var viewport: js.UndefOr[Viewport] = js.native
+  var viewport: js.UndefOr[Viewport] = js.undefined
   
   /**
     * Overriding width value in pixels (minimum 0, maximum 10000000). 0 disables the override.
     */
-  var width: integer = js.native
+  var width: integer
 }
 object SetDeviceMetricsOverrideRequest {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLConfig extends StObject {
   
   /**
     * The metric to optimize.
     */
-  var metricName: js.UndefOr[MetricName] = js.native
+  var metricName: js.UndefOr[MetricName] = js.undefined
   
   /**
     * The list of candidate recipes.
     */
-  var recipeList: js.UndefOr[ArnList] = js.native
+  var recipeList: js.UndefOr[ArnList] = js.undefined
 }
 object AutoMLConfig {
   

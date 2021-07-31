@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceRealtimeGet extends StandardParameters {
+trait ParamsResourceRealtimeGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the file that the Realtime API data model is associated with.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * The revision of the Realtime API data model to export. Revisions start at
     * 1 (the initial empty data model) and are incremented with each change. If
     * this parameter is excluded, the most recent data model will be returned.
     */
-  var revision: js.UndefOr[Double] = js.native
+  var revision: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourceRealtimeGet {
   

@@ -3,18 +3,16 @@ package typings.jqueryFocusable
 import typings.jqueryFocusable.jqueryFocusableBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* Inlined std.Partial<{  findNegativeTabindex :boolean,   findPositiveTabindex :true}> */
-  @js.native
   trait Options extends StObject {
     
-    var findNegativeTabindex: js.UndefOr[Boolean] = js.native
+    var findNegativeTabindex: js.UndefOr[Boolean] = js.undefined
     
-    var findPositiveTabindex: js.UndefOr[`true`] = js.native
+    var findPositiveTabindex: js.UndefOr[`true`] = js.undefined
   }
   object Options {
     

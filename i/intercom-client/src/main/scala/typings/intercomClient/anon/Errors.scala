@@ -3,24 +3,22 @@ package typings.intercomClient.anon
 import typings.intercomClient.intercomClientStrings.errorDotlist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Errors extends StObject {
   
-  var errors: js.Array[Code] = js.native
+  var errors: js.Array[Code]
   
-  var request_id: String = js.native
+  var request_id: String
   
-  var `type`: errorDotlist = js.native
+  var `type`: errorDotlist
 }
 object Errors {
   
   @scala.inline
-  def apply(errors: js.Array[Code], request_id: String, `type`: errorDotlist): Errors = {
+  def apply(errors: js.Array[Code], request_id: String): Errors = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("error.list")
     __obj.asInstanceOf[Errors]
   }
   

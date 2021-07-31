@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagLogGroupRequest extends StObject {
   
   /**
     * The name of the log group.
     */
-  var logGroupName: LogGroupName = js.native
+  var logGroupName: LogGroupName
   
   /**
     * The key-value pairs to use for the tags.
     */
-  var tags: Tags = js.native
+  var tags: Tags
 }
 object TagLogGroupRequest {
   

@@ -5,14 +5,15 @@ import typings.rollupPluginTypescript2.contextMod.IContext
 import typings.rollupPluginTypescript2.contextMod.VerbosityLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rollupcontextMod {
   
   @JSImport("rollup-plugin-typescript2/dist/rollupcontext", "RollupContext")
   @js.native
-  class RollupContext protected () extends IContext {
+  class RollupContext protected ()
+    extends StObject
+       with IContext {
     def this(verbosity: VerbosityLevel, bail: Boolean, context: PluginContext) = this()
     def this(verbosity: VerbosityLevel, bail: Boolean, context: PluginContext, prefix: String) = this()
     

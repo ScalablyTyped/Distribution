@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,32 +14,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Kai Sommerfeld
   * @version 1.0
   */
-@js.native
-trait XPersistentPropertySet extends XPropertySet {
+trait XPersistentPropertySet
+  extends StObject
+     with XPropertySet {
   
   /**
     * returns the key used to address the set in the property set registry.
     * @returns The key.
     */
-  val Key: String = js.native
+  val Key: String
   
   /**
     * returns the registry used to store the property set.
     * @returns The registry.
     */
-  val Registry: XPropertySetRegistry = js.native
+  val Registry: XPropertySetRegistry
   
   /**
     * returns the key used to address the set in the property set registry.
     * @returns The key.
     */
-  def getKey(): String = js.native
+  def getKey(): String
   
   /**
     * returns the registry used to store the property set.
     * @returns The registry.
     */
-  def getRegistry(): XPropertySetRegistry = js.native
+  def getRegistry(): XPropertySetRegistry
 }
 object XPersistentPropertySet {
   

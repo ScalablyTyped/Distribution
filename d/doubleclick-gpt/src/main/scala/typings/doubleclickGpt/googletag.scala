@@ -16,15 +16,13 @@ import typings.doubleclickGpt.googletag.events.SlotVisibilityChangedEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googletag {
   
-  @js.native
   trait CommandArray extends StObject {
     
-    def push(f: js.Function0[Unit]): Double = js.native
+    def push(f: js.Function0[Unit]): Double
   }
   object CommandArray {
     
@@ -43,7 +41,9 @@ object googletag {
   }
   
   @js.native
-  trait CompanionAdsService extends Service {
+  trait CompanionAdsService
+    extends StObject
+       with Service {
     
     def enableSyncLoading(): Unit = js.native
     
@@ -51,7 +51,9 @@ object googletag {
   }
   
   @js.native
-  trait ContentService extends Service {
+  trait ContentService
+    extends StObject
+       with Service {
     
     def setContent(slot: Slot, content: String): Unit = js.native
   }
@@ -101,14 +103,13 @@ object googletag {
     def sizeMapping(): SizeMappingBuilder = js.native
   }
   
-  @js.native
   trait LazyLoadOptionsConfig extends StObject {
     
-    var fetchMarginPercent: js.UndefOr[Double] = js.native
+    var fetchMarginPercent: js.UndefOr[Double] = js.undefined
     
-    var mobileScaling: js.UndefOr[Double] = js.native
+    var mobileScaling: js.UndefOr[Double] = js.undefined
     
-    var renderMarginPercent: js.UndefOr[Double] = js.native
+    var renderMarginPercent: js.UndefOr[Double] = js.undefined
   }
   object LazyLoadOptionsConfig {
     
@@ -169,7 +170,9 @@ object googletag {
   }
   
   @js.native
-  trait PubAdsService extends Service {
+  trait PubAdsService
+    extends StObject
+       with Service {
     
     def clear(): Boolean = js.native
     def clear(opt_slots: js.Array[Slot]): Boolean = js.native
@@ -191,9 +194,9 @@ object googletag {
     def disableInitialLoad(): Unit = js.native
     
     def display(adUnitPath: String, size: GeneralSize): Slot = js.native
-    def display(adUnitPath: String, size: GeneralSize, opt_div: js.UndefOr[scala.Nothing], opt_clickUrl: String): Slot = js.native
     def display(adUnitPath: String, size: GeneralSize, opt_div: String): Slot = js.native
     def display(adUnitPath: String, size: GeneralSize, opt_div: String, opt_clickUrl: String): Slot = js.native
+    def display(adUnitPath: String, size: GeneralSize, opt_div: Unit, opt_clickUrl: String): Slot = js.native
     def display(adUnitPath: String, size: GeneralSize, opt_div: Element): Slot = js.native
     def display(adUnitPath: String, size: GeneralSize, opt_div: Element, opt_clickUrl: String): Slot = js.native
     
@@ -217,9 +220,9 @@ object googletag {
     def getTargetingKeys(): js.Array[String] = js.native
     
     def refresh(): Unit = js.native
-    def refresh(opt_slots: js.UndefOr[scala.Nothing], opt_options: ChangeCorrelator): Unit = js.native
     def refresh(opt_slots: js.Array[Slot]): Unit = js.native
     def refresh(opt_slots: js.Array[Slot], opt_options: ChangeCorrelator): Unit = js.native
+    def refresh(opt_slots: Unit, opt_options: ChangeCorrelator): Unit = js.native
     
     def set(key: String, value: String): PubAdsService = js.native
     
@@ -232,13 +235,13 @@ object googletag {
     def setForceSafeFrame(forceSafeFrame: Boolean): PubAdsService = js.native
     
     def setLocation(latitudeOrAddress: String): PubAdsService = js.native
-    def setLocation(latitudeOrAddress: String, opt_longitude: js.UndefOr[scala.Nothing], opt_radius: Double): PubAdsService = js.native
     def setLocation(latitudeOrAddress: String, opt_longitude: Double): PubAdsService = js.native
     def setLocation(latitudeOrAddress: String, opt_longitude: Double, opt_radius: Double): PubAdsService = js.native
+    def setLocation(latitudeOrAddress: String, opt_longitude: Unit, opt_radius: Double): PubAdsService = js.native
     def setLocation(latitudeOrAddress: Double): PubAdsService = js.native
-    def setLocation(latitudeOrAddress: Double, opt_longitude: js.UndefOr[scala.Nothing], opt_radius: Double): PubAdsService = js.native
     def setLocation(latitudeOrAddress: Double, opt_longitude: Double): PubAdsService = js.native
     def setLocation(latitudeOrAddress: Double, opt_longitude: Double, opt_radius: Double): PubAdsService = js.native
+    def setLocation(latitudeOrAddress: Double, opt_longitude: Unit, opt_radius: Double): PubAdsService = js.native
     
     def setPrivacySettings(settings: RestrictDataProcessing): Slot = js.native
     
@@ -264,18 +267,17 @@ object googletag {
     def updateCorrelator(): PubAdsService = js.native
   }
   
-  @js.native
   trait ResponseInformation extends StObject {
     
-    var advertiserId: String = js.native
+    var advertiserId: String
     
-    var campaignId: String = js.native
+    var campaignId: String
     
-    var creativeId: js.UndefOr[Double] = js.native
+    var creativeId: js.UndefOr[Double] = js.undefined
     
-    var creativeTemplateId: js.UndefOr[Double] = js.native
+    var creativeTemplateId: js.UndefOr[Double] = js.undefined
     
-    var lineItemId: js.UndefOr[Double] = js.native
+    var lineItemId: js.UndefOr[Double] = js.undefined
   }
   object ResponseInformation {
     
@@ -314,16 +316,15 @@ object googletag {
     }
   }
   
-  @js.native
   trait SafeFrameConfig extends StObject {
     
-    var allowOverlayExpansion: js.UndefOr[Boolean] = js.native
+    var allowOverlayExpansion: js.UndefOr[Boolean] = js.undefined
     
-    var allowPushExpansion: js.UndefOr[Boolean] = js.native
+    var allowPushExpansion: js.UndefOr[Boolean] = js.undefined
     
-    var sandbox: js.UndefOr[Boolean] = js.native
+    var sandbox: js.UndefOr[Boolean] = js.undefined
     
-    var useUniqueDomain: js.UndefOr[Boolean | Null] = js.native
+    var useUniqueDomain: js.UndefOr[Boolean | Null] = js.undefined
   }
   object SafeFrameConfig {
     
@@ -392,12 +393,11 @@ object googletag {
   
   type SizeMappingArray = js.Array[SizeMapping]
   
-  @js.native
   trait SizeMappingBuilder extends StObject {
     
-    def addSize(viewportSize: SingleSizeArray, slotSize: GeneralSize): SizeMappingBuilder = js.native
+    def addSize(viewportSize: SingleSizeArray, slotSize: GeneralSize): SizeMappingBuilder
     
-    def build(): SizeMappingArray = js.native
+    def build(): SizeMappingArray
   }
   object SizeMappingBuilder {
     
@@ -465,12 +465,11 @@ object googletag {
   
   object events {
     
-    @js.native
     trait Event extends StObject {
       
-      var serviceName: String = js.native
+      var serviceName: String
       
-      var slot: Slot = js.native
+      var slot: Slot
     }
     object Event {
       
@@ -497,24 +496,25 @@ object googletag {
     // tslint:disable-next-line:no-empty-interface
     type SlotOnloadEvent = Event
     
-    @js.native
-    trait SlotRenderEndedEvent extends Event {
+    trait SlotRenderEndedEvent
+      extends StObject
+         with Event {
       
-      var advertiserId: js.UndefOr[Double] = js.native
+      var advertiserId: js.UndefOr[Double] = js.undefined
       
-      var campaignId: js.UndefOr[Double] = js.native
+      var campaignId: js.UndefOr[Double] = js.undefined
       
-      var creativeId: js.UndefOr[Double] = js.native
+      var creativeId: js.UndefOr[Double] = js.undefined
       
-      var isEmpty: Boolean = js.native
+      var isEmpty: Boolean
       
-      var lineItemId: js.UndefOr[Double] = js.native
+      var lineItemId: js.UndefOr[Double] = js.undefined
       
-      var size: js.Array[Double] | String = js.native
+      var size: js.Array[Double] | String
       
-      var sourceAgnosticCreativeId: js.UndefOr[Double] = js.native
+      var sourceAgnosticCreativeId: js.UndefOr[Double] = js.undefined
       
-      var sourceAgnosticLineItemId: js.UndefOr[Double] = js.native
+      var sourceAgnosticLineItemId: js.UndefOr[Double] = js.undefined
     }
     object SlotRenderEndedEvent {
       
@@ -580,10 +580,11 @@ object googletag {
     // tslint:disable-next-line:no-empty-interface
     type SlotResponseReceived = Event
     
-    @js.native
-    trait SlotVisibilityChangedEvent extends Event {
+    trait SlotVisibilityChangedEvent
+      extends StObject
+         with Event {
       
-      var inViewPercentage: Double = js.native
+      var inViewPercentage: Double
     }
     object SlotVisibilityChangedEvent {
       

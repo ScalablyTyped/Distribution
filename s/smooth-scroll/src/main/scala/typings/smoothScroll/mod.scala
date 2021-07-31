@@ -3,17 +3,18 @@ package typings.smoothScroll
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("smooth-scroll", JSImport.Namespace)
   @js.native
-  class ^ () extends SmoothScroll {
+  class ^ ()
+    extends StObject
+       with SmoothScroll {
     def this(selector: String) = this()
-    def this(selector: js.UndefOr[scala.Nothing], options: Options) = this()
     def this(selector: String, options: Options) = this()
+    def this(selector: Unit, options: Options) = this()
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -74,26 +75,25 @@ object mod {
     def easeOutQuint: typings.smoothScroll.smoothScrollStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeOutQuint]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var clip: js.UndefOr[Boolean] = js.native
+    var clip: js.UndefOr[Boolean] = js.undefined
     
-    var customEasing: js.UndefOr[js.Function1[/* time */ Double, Double]] = js.native
+    var customEasing: js.UndefOr[js.Function1[/* time */ Double, Double]] = js.undefined
     
-    var durationMax: js.UndefOr[Double | Null] = js.native
+    var durationMax: js.UndefOr[Double | Null] = js.undefined
     
-    var durationMin: js.UndefOr[Double | Null] = js.native
+    var durationMin: js.UndefOr[Double | Null] = js.undefined
     
-    var easing: js.UndefOr[Easing] = js.native
+    var easing: js.UndefOr[Easing] = js.undefined
     
     // Custom Events
-    var emitEvents: js.UndefOr[Boolean] = js.native
+    var emitEvents: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
     // Selectors
-    var ignore: js.UndefOr[String] = js.native
+    var ignore: js.UndefOr[String] = js.undefined
     
     var offset: js.UndefOr[
         Double | (js.Function2[
@@ -101,19 +101,19 @@ object mod {
           /* toggle */ js.UndefOr[Element | Null], 
           Double
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var popstate: js.UndefOr[Boolean] = js.native
+    var popstate: js.UndefOr[Boolean] = js.undefined
     
     // Speed & Easing
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var speedAsDuration: js.UndefOr[Boolean] = js.native
+    var speedAsDuration: js.UndefOr[Boolean] = js.undefined
     
-    var topOnEmptyHash: js.UndefOr[Boolean] = js.native
+    var topOnEmptyHash: js.UndefOr[Boolean] = js.undefined
     
     // History
-    var updateURL: js.UndefOr[Boolean] = js.native
+    var updateURL: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -234,17 +234,17 @@ object mod {
     
     def animateScroll(): Unit = js.native
     def animateScroll(anchor: Double): Unit = js.native
-    def animateScroll(anchor: Double, toggle: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
     def animateScroll(anchor: Double, toggle: Null, options: Options): Unit = js.native
+    def animateScroll(anchor: Double, toggle: Unit, options: Options): Unit = js.native
     def animateScroll(anchor: Double, toggle: Element): Unit = js.native
     def animateScroll(anchor: Double, toggle: Element, options: Options): Unit = js.native
-    def animateScroll(anchor: Null, toggle: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
     def animateScroll(anchor: Null, toggle: Null, options: Options): Unit = js.native
+    def animateScroll(anchor: Null, toggle: Unit, options: Options): Unit = js.native
     def animateScroll(anchor: Null, toggle: Element): Unit = js.native
     def animateScroll(anchor: Null, toggle: Element, options: Options): Unit = js.native
     def animateScroll(anchor: Element): Unit = js.native
-    def animateScroll(anchor: Element, toggle: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
     def animateScroll(anchor: Element, toggle: Null, options: Options): Unit = js.native
+    def animateScroll(anchor: Element, toggle: Unit, options: Options): Unit = js.native
     def animateScroll(anchor: Element, toggle: Element): Unit = js.native
     def animateScroll(anchor: Element, toggle: Element, options: Options): Unit = js.native
     

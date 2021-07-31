@@ -2,22 +2,21 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSIndexSignature
-  extends Node
+  extends StObject
+     with Node
      with TSTypeElement {
   
-  var parameters: js.Array[Identifier_] = js.native
+  var parameters: js.Array[Identifier_]
   
-  var readonly: Boolean | Null = js.native
+  var readonly: Boolean | Null
   
-  var typeAnnotation: TSTypeAnnotation | Null = js.native
+  var typeAnnotation: TSTypeAnnotation | Null
   
   @JSName("type")
-  var type_TSIndexSignature: typings.babelTypes.babelTypesStrings.TSIndexSignature = js.native
+  var type_TSIndexSignature: typings.babelTypes.babelTypesStrings.TSIndexSignature
 }
 object TSIndexSignature {
   

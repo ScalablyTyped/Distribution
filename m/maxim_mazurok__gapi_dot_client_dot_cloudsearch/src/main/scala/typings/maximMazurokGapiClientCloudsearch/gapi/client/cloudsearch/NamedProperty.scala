@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamedProperty extends StObject {
   
-  var booleanValue: js.UndefOr[Boolean] = js.native
+  var booleanValue: js.UndefOr[Boolean] = js.undefined
   
-  var dateValues: js.UndefOr[DateValues] = js.native
+  var dateValues: js.UndefOr[DateValues] = js.undefined
   
-  var doubleValues: js.UndefOr[DoubleValues] = js.native
+  var doubleValues: js.UndefOr[DoubleValues] = js.undefined
   
-  var enumValues: js.UndefOr[EnumValues] = js.native
+  var enumValues: js.UndefOr[EnumValues] = js.undefined
   
-  var htmlValues: js.UndefOr[HtmlValues] = js.native
+  var htmlValues: js.UndefOr[HtmlValues] = js.undefined
   
-  var integerValues: js.UndefOr[IntegerValues] = js.native
+  var integerValues: js.UndefOr[IntegerValues] = js.undefined
   
   /**
     * The name of the property. This name should correspond to the name of the property that was registered for object definition in the schema. The maximum allowable length for this
     * property is 256 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var objectValues: js.UndefOr[ObjectValues] = js.native
+  var objectValues: js.UndefOr[ObjectValues] = js.undefined
   
-  var textValues: js.UndefOr[TextValues] = js.native
+  var textValues: js.UndefOr[TextValues] = js.undefined
   
-  var timestampValues: js.UndefOr[TimestampValues] = js.native
+  var timestampValues: js.UndefOr[TimestampValues] = js.undefined
 }
 object NamedProperty {
   

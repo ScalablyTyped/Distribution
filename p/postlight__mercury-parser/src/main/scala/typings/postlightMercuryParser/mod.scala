@@ -8,30 +8,29 @@ import typings.postlightMercuryParser.postlightMercuryParserStrings.rtl
 import typings.postlightMercuryParser.postlightMercuryParserStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@postlight/mercury-parser", "fetchResource")
+  @JSImport("@postlight/mercury-parser", JSImport.Namespace)
   @js.native
-  def fetchResource(url: String): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@postlight/mercury-parser", "parse")
-  @js.native
-  def parse(url: String): js.Promise[ParseResult] = js.native
-  @JSImport("@postlight/mercury-parser", "parse")
-  @js.native
-  def parse(url: String, options: ParseOptions): js.Promise[ParseResult] = js.native
+  @scala.inline
+  def fetchResource(url: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchResource")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @js.native
+  @scala.inline
+  def parse(url: String): js.Promise[ParseResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParseResult]]
+  @scala.inline
+  def parse(url: String, options: ParseOptions): js.Promise[ParseResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParseResult]]
+  
   trait ParseOptions extends StObject {
     
-    var contentType: js.UndefOr[html | markdown | text] = js.native
+    var contentType: js.UndefOr[html | markdown | text] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var html: js.UndefOr[String | Buffer] = js.native
+    var html: js.UndefOr[String | Buffer] = js.undefined
   }
   object ParseOptions {
     
@@ -64,36 +63,35 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseResult extends StObject {
     
-    var author: String | Null = js.native
+    var author: String | Null
     
-    var content: String | Null = js.native
+    var content: String | Null
     
-    var date_published: String | Null = js.native
+    var date_published: String | Null
     
-    var dek: String | Null = js.native
+    var dek: String | Null
     
-    var direction: ltr | rtl = js.native
+    var direction: ltr | rtl
     
-    var domain: String = js.native
+    var domain: String
     
-    var excerpt: String | Null = js.native
+    var excerpt: String | Null
     
-    var lead_image_url: String | Null = js.native
+    var lead_image_url: String | Null
     
-    var next_page_url: String | Null = js.native
+    var next_page_url: String | Null
     
-    var rendered_pages: Double = js.native
+    var rendered_pages: Double
     
-    var title: String | Null = js.native
+    var title: String | Null
     
-    var total_pages: Double = js.native
+    var total_pages: Double
     
-    var url: String = js.native
+    var url: String
     
-    var word_count: Double = js.native
+    var word_count: Double
   }
   object ParseResult {
     
@@ -106,7 +104,7 @@ object mod {
       url: String,
       word_count: Double
     ): ParseResult = {
-      val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], rendered_pages = rendered_pages.asInstanceOf[js.Any], total_pages = total_pages.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], word_count = word_count.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], rendered_pages = rendered_pages.asInstanceOf[js.Any], total_pages = total_pages.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], word_count = word_count.asInstanceOf[js.Any], author = null, content = null, date_published = null, dek = null, excerpt = null, lead_image_url = null, next_page_url = null, title = null)
       __obj.asInstanceOf[ParseResult]
     }
     

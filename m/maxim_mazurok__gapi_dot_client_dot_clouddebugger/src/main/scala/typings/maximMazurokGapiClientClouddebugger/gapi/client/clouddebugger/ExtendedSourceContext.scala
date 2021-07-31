@@ -3,21 +3,19 @@ package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtendedSourceContext extends StObject {
   
   /** Any source context. */
-  var context: js.UndefOr[SourceContext] = js.native
+  var context: js.UndefOr[SourceContext] = js.undefined
   
   /** Labels with user defined metadata. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.ExtendedSourceContext with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.ExtendedSourceContext & TopLevel[js.Any]
+  ] = js.undefined
 }
 object ExtendedSourceContext {
   
@@ -40,7 +38,7 @@ object ExtendedSourceContext {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.ExtendedSourceContext with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.ExtendedSourceContext & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

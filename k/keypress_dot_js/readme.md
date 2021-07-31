@@ -11,8 +11,8 @@ a robust keyboard input capturing Javascript utility focused on input for games.
 | Full name          | keypress.js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 41933 |
+| # dependents       | 16 |
+| # downloads        | 46565 |
 | # stars            | 2 |
 
 ## Links

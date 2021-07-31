@@ -3,15 +3,13 @@ package typings.typedoc.anon
 import typings.typedoc.serializationEventsMod.SerializeEventData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Begin extends StObject {
   
-  var begin: js.UndefOr[SerializeEventData] = js.native
+  var begin: js.UndefOr[SerializeEventData] = js.undefined
   
-  var end: js.UndefOr[SerializeEventData] = js.native
+  var end: js.UndefOr[SerializeEventData] = js.undefined
 }
 object Begin {
   

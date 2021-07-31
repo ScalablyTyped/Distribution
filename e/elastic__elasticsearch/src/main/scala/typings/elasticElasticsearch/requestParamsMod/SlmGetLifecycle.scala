@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlmGetLifecycle extends Generic {
+trait SlmGetLifecycle
+  extends StObject
+     with Generic {
   
-  var policy_id: js.UndefOr[String | js.Array[String]] = js.native
+  var policy_id: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object SlmGetLifecycle {
   

@@ -2,21 +2,19 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrdersCustomBatchRequestEntryCreateTestReturnReturnItem extends StObject {
   
   /**
     * The ID of the line item to return.
     */
-  var lineItemId: js.UndefOr[String] = js.native
+  var lineItemId: js.UndefOr[String] = js.undefined
   
   /**
     * Quantity that is returned.
     */
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
 }
 object SchemaOrdersCustomBatchRequestEntryCreateTestReturnReturnItem {
   

@@ -2,7 +2,6 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,29 +11,47 @@ sealed trait TokenClass extends StObject
 object TokenClass extends StObject {
   
   @js.native
-  sealed trait Comment extends TokenClass
+  sealed trait Comment
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait Identifier extends TokenClass
+  sealed trait Identifier
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait Keyword extends TokenClass
+  sealed trait Keyword
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait NumberLiteral extends TokenClass
+  sealed trait NumberLiteral
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait Operator extends TokenClass
+  sealed trait Operator
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait Punctuation extends TokenClass
+  sealed trait Punctuation
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait RegExpLiteral extends TokenClass
+  sealed trait RegExpLiteral
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait StringLiteral extends TokenClass
+  sealed trait StringLiteral
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait Whitespace extends TokenClass
+  sealed trait Whitespace
+    extends StObject
+       with TokenClass
 }

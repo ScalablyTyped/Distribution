@@ -8,37 +8,37 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.`21`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DialogCustomProps extends DialogProps {
+trait DialogCustomProps
+  extends StObject
+     with DialogProps {
   
-  var cancelAccessibilityLabel: js.UndefOr[String] = js.native
+  var cancelAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var cancelText: String = js.native
+  var cancelText: String
   
-  var cancelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var cancelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var confirmAccessibilityLabel: js.UndefOr[String] = js.native
+  var confirmAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var confirmText: String = js.native
+  var confirmText: String
   
-  var confirmTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var confirmTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var content: js.UndefOr[js.Any] = js.native
+  var content: js.UndefOr[js.Any] = js.undefined
   
-  var footer: js.UndefOr[ElementType[_] | js.Function0[ReactNode]] = js.native
+  var footer: js.UndefOr[ElementType[js.Any] | js.Function0[ReactNode]] = js.undefined
   
-  var footerWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var footerWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var header: js.UndefOr[ElementType[_] | js.Function0[ReactNode]] = js.native
+  var header: js.UndefOr[ElementType[js.Any] | js.Function0[ReactNode]] = js.undefined
   
-  var headerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var headerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+  var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onConfirm: js.UndefOr[js.Function2[/* data */ js.Any, /* args */ `21`, Unit]] = js.native
+  var onConfirm: js.UndefOr[js.Function2[/* data */ js.Any, /* args */ `21`, Unit]] = js.undefined
 }
 object DialogCustomProps {
   
@@ -94,7 +94,7 @@ object DialogCustomProps {
     def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setFooter(value: ElementType[_] | js.Function0[ReactNode]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    def setFooter(value: ElementType[js.Any] | js.Function0[ReactNode]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFooterFunction0(value: () => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction0(value))
@@ -112,7 +112,7 @@ object DialogCustomProps {
     def setFooterWrapperStyleUndefined: Self = StObject.set(x, "footerWrapperStyle", js.undefined)
     
     @scala.inline
-    def setHeader(value: ElementType[_] | js.Function0[ReactNode]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    def setHeader(value: ElementType[js.Any] | js.Function0[ReactNode]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHeaderFunction0(value: () => ReactNode): Self = StObject.set(x, "header", js.Any.fromFunction0(value))

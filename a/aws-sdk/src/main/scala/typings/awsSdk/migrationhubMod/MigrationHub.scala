@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait MigrationHub extends Service {
   ): Request[AssociateDiscoveredResourceResult, AWSError] = js.native
   
   @JSName("config")
-  var config_MigrationHub: ConfigBase with ClientConfiguration = js.native
+  var config_MigrationHub: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a progress update stream which is an AWS resource used for access control as well as a namespace for migration task names that is implicitly linked to your AWS account. It must uniquely identify the migration tool as it is used for all updates made by the tool; however, it does not need to be unique for each AWS account because it is scoped to the AWS account.

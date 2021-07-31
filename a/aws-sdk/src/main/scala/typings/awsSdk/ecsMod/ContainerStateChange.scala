@@ -2,46 +2,44 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerStateChange extends StObject {
   
   /**
     * The name of the container.
     */
-  var containerName: js.UndefOr[String] = js.native
+  var containerName: js.UndefOr[String] = js.undefined
   
   /**
     * The exit code for the container, if the state change is a result of the container exiting.
     */
-  var exitCode: js.UndefOr[BoxedInteger] = js.native
+  var exitCode: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
     * The container image SHA 256 digest.
     */
-  var imageDigest: js.UndefOr[String] = js.native
+  var imageDigest: js.UndefOr[String] = js.undefined
   
   /**
     * Any network bindings associated with the container.
     */
-  var networkBindings: js.UndefOr[NetworkBindings] = js.native
+  var networkBindings: js.UndefOr[NetworkBindings] = js.undefined
   
   /**
     * The reason for the state change.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Docker container.
     */
-  var runtimeId: js.UndefOr[String] = js.native
+  var runtimeId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the container.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object ContainerStateChange {
   

@@ -4,39 +4,39 @@ import typings.arcgisJsApi.HashMap
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewConstraints extends AnonymousAccessor {
+trait SceneViewConstraints
+  extends StObject
+     with AnonymousAccessor {
   
   /**
     * Specifies a constraint on the minimum and maximum allowed camera altitude.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var altitude: js.UndefOr[SceneViewConstraintsAltitude] = js.native
+  var altitude: js.UndefOr[SceneViewConstraintsAltitude] = js.undefined
   
   /**
     * Specifies the near and far webgl clip distances.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var clipDistance: js.UndefOr[SceneViewConstraintsClipDistance] = js.native
+  var clipDistance: js.UndefOr[SceneViewConstraintsClipDistance] = js.undefined
   
   /**
     * When enabled, prevents the user from navigating below the surface in a local SceneView.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var collision: js.UndefOr[SceneViewConstraintsCollision] = js.native
+  var collision: js.UndefOr[SceneViewConstraintsCollision] = js.undefined
   
   /**
     * Specifies a constraint on the amount of allowed tilting of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var tilt: js.UndefOr[SceneViewConstraintsTilt] = js.native
+  var tilt: js.UndefOr[SceneViewConstraintsTilt] = js.undefined
 }
 object SceneViewConstraints {
   
@@ -47,7 +47,7 @@ object SceneViewConstraints {
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
       js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewConstraints]
-    ]) with (js.UndefOr[js.Function1[/* props */ HashMap[_], SceneViewConstraints]])
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], SceneViewConstraints]])
   ): SceneViewConstraints = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewConstraints]

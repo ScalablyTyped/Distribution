@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposTransferEndpoint extends StObject {
   
   /**
     * **Required:** The username or organization name the repository will be transferred to.
     */
-  var new_owner: js.UndefOr[String] = js.native
+  var new_owner: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * ID of the team or teams to add to the repository. Teams can only be added to organization-owned repositories.
     */
-  var team_ids: js.UndefOr[js.Array[Double]] = js.native
+  var team_ids: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object ReposTransferEndpoint {
   

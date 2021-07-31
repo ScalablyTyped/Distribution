@@ -3,17 +3,15 @@ package typings.fortawesomeFontawesomeSvgCore
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Callback extends StObject {
     
-    def callback(): Unit = js.native
+    def callback(): Unit
     
-    var node: Node = js.native
+    var node: Node
   }
   object Callback {
     

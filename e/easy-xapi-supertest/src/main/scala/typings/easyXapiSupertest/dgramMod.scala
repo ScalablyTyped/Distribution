@@ -5,26 +5,26 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dgramMod {
   
-  @JSImport("dgram", "createSocket")
+  @JSImport("dgram", JSImport.Namespace)
   @js.native
-  def createSocket(`type`: String): Socket = js.native
-  @JSImport("dgram", "createSocket")
-  @js.native
-  def createSocket(`type`: String, callback: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): Socket = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createSocket(`type`: String): Socket = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any]).asInstanceOf[Socket]
+  @scala.inline
+  def createSocket(`type`: String, callback: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  
   trait AddressInfo extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var family: String = js.native
+    var family: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object AddressInfo {
     
@@ -48,14 +48,13 @@ object dgramMod {
     }
   }
   
-  @js.native
   trait RemoteInfo extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var size: Double = js.native
+    var size: Double
   }
   object RemoteInfo {
     
@@ -88,9 +87,9 @@ object dgramMod {
     def address(): AddressInfo = js.native
     
     def bind(port: Double): Unit = js.native
-    def bind(port: Double, address: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
     def bind(port: Double, address: String): Unit = js.native
     def bind(port: Double, address: String, callback: js.Function0[Unit]): Unit = js.native
+    def bind(port: Double, address: Unit, callback: js.Function0[Unit]): Unit = js.native
     
     def close(): Unit = js.native
     

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OidcToken extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait OidcToken extends StObject {
     * Having multiple values (array) for the audience field is not supported. More info about the OIDC JWT token audience here: https://tools.ietf.org/html/rfc7519#section-4.1.3 Note: if
     * not specified, the Push endpoint URL will be used.
     */
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
   /**
     * [Service account email](https://cloud.google.com/iam/docs/service-accounts) to be used for generating the OIDC token. The caller (for CreateSubscription, UpdateSubscription, and
     * ModifyPushConfig RPCs) must have the iam.serviceAccounts.actAs permission for the service account.
     */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
 }
 object OidcToken {
   

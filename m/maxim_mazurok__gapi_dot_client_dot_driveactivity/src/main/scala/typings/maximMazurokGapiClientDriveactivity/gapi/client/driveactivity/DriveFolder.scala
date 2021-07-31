@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriveFolder extends StObject {
   
   /** The type of Drive folder. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DriveFolder {
   

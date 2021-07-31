@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkletOptions extends StObject {
   
-  var credentials: js.UndefOr[RequestCredentials] = js.native
+  var credentials: js.UndefOr[RequestCredentials] = js.undefined
 }
 object WorkletOptions {
   

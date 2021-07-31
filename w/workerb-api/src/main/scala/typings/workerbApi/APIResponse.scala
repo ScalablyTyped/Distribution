@@ -2,21 +2,19 @@ package typings.workerbApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait APIResponse extends StObject {
   
   /**
     * A string that has the response returned by the remote server.
     */
-  var response: String = js.native
+  var response: String
   
   /**
     * A number that is the Status Code returned by the remote server.
     */
-  var status: Double = js.native
+  var status: Double
 }
 object APIResponse {
   

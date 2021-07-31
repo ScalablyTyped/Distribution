@@ -2,21 +2,19 @@ package typings.reduxFirstRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
-  var meta: js.UndefOr[Meta] = js.native
+  var meta: js.UndefOr[Meta] = js.undefined
   
-  var navKey: js.UndefOr[Nullable[String]] = js.native
+  var navKey: js.UndefOr[Nullable[String]] = js.undefined
   
-  var payload: js.UndefOr[Payload] = js.native
+  var payload: js.UndefOr[Payload] = js.undefined
   
-  var query: js.UndefOr[Query] = js.native
+  var query: js.UndefOr[Query] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Action {
   

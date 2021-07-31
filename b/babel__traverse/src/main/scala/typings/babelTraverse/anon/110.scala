@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.AwaitExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `110` extends StObject {
   
-  var `type`: AwaitExpression = js.native
+  var `type`: AwaitExpression
 }
 object `110` {
   
   @scala.inline
-  def apply(`type`: AwaitExpression): `110` = {
+  def apply(): `110` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AwaitExpression")
     __obj.asInstanceOf[`110`]
   }
   

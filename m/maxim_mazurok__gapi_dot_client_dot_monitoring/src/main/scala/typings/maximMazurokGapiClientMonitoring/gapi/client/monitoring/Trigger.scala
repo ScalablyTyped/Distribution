@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Trigger extends StObject {
   
   /** The absolute number of time series that must fail the predicate for the condition to be triggered. */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** The percentage of time series that must fail the predicate for the condition to be triggered. */
-  var percent: js.UndefOr[Double] = js.native
+  var percent: js.UndefOr[Double] = js.undefined
 }
 object Trigger {
   

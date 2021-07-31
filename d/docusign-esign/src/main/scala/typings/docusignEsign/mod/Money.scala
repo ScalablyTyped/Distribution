@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Money extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait Money extends StObject {
     * the base currency is one cent.
     *
     */
-  var amountInBaseUnit: js.UndefOr[String] = js.native
+  var amountInBaseUnit: js.UndefOr[String] = js.undefined
   
   /**
     * The three-letter
@@ -34,7 +32,7 @@ trait Money extends StObject {
     * [ISO4217]:          https://en.wikipedia.org/wiki/ISO_4217
     *
     */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
   /**
     * The payment amount as displayed
@@ -48,7 +46,7 @@ trait Money extends StObject {
     * This is a read-only property.
     *
     */
-  var displayAmount: js.UndefOr[String] = js.native
+  var displayAmount: js.UndefOr[String] = js.undefined
 }
 object Money {
   

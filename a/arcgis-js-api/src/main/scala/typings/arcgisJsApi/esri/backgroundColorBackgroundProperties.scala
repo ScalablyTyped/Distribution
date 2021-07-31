@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait backgroundColorBackgroundProperties extends BackgroundProperties {
+trait backgroundColorBackgroundProperties
+  extends StObject
+     with BackgroundProperties {
   
   /**
     * The color of the background.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html#color)
     */
-  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object backgroundColorBackgroundProperties {
   

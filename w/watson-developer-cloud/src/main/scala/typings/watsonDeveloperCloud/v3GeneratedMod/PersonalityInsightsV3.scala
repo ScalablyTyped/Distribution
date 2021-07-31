@@ -6,7 +6,6 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -86,8 +85,8 @@ trait PersonalityInsightsV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def profile(params: ProfileParams): js.Promise[_] | Unit = js.native
-  def profile(params: ProfileParams, callback: Callback[Profile]): js.Promise[_] | Unit = js.native
+  def profile(params: ProfileParams): js.Promise[js.Any] | Unit = js.native
+  def profile(params: ProfileParams, callback: Callback[Profile]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Get profile as csv.
@@ -157,6 +156,6 @@ trait PersonalityInsightsV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def profileAsCsv(params: ProfileAsCsvParams): js.Promise[_] | Unit = js.native
-  def profileAsCsv(params: ProfileAsCsvParams, callback: Callback[ReadableStream | FileObject | Buffer]): js.Promise[_] | Unit = js.native
+  def profileAsCsv(params: ProfileAsCsvParams): js.Promise[js.Any] | Unit = js.native
+  def profileAsCsv(params: ProfileAsCsvParams, callback: Callback[ReadableStream | FileObject | Buffer]): js.Promise[js.Any] | Unit = js.native
 }

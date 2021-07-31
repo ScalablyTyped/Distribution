@@ -7,7 +7,6 @@ import typings.chromeApps.chromeAppsStrings.textPlain
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -26,6 +25,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see[Docs]{@link https://developer.chrome.com/apps/clipboard}
   */
 object clipboard {
+  
+  @JSGlobal("chrome.clipboard")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @enum */
   object DataItemType {
@@ -69,26 +72,17 @@ object clipboard {
     *      *Since Chrome 71. Warning: this is the current Dev channel.*
     * @param [callback]
     */
-  @JSGlobal("chrome.clipboard.setImageData")
-  @js.native
-  def setImageData(imageData: ArrayBuffer, `type`: ImageType): Unit = js.native
-  @JSGlobal("chrome.clipboard.setImageData")
-  @js.native
-  def setImageData(
-    imageData: ArrayBuffer,
-    `type`: ImageType,
-    additionalItems: js.UndefOr[scala.Nothing],
-    callback: js.Function0[Unit]
-  ): Unit = js.native
-  @JSGlobal("chrome.clipboard.setImageData")
-  @js.native
-  def setImageData(imageData: ArrayBuffer, `type`: ImageType, additionalItems: AdditionalItems): Unit = js.native
-  @JSGlobal("chrome.clipboard.setImageData")
-  @js.native
+  @scala.inline
+  def setImageData(imageData: ArrayBuffer, `type`: ImageType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setImageData(imageData: ArrayBuffer, `type`: ImageType, additionalItems: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], additionalItems.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setImageData(imageData: ArrayBuffer, `type`: ImageType, additionalItems: AdditionalItems): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], additionalItems.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setImageData(
     imageData: ArrayBuffer,
     `type`: ImageType,
     additionalItems: AdditionalItems,
     callback: js.Function0[Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], additionalItems.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

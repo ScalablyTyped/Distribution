@@ -6,21 +6,19 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hookModalMod extends Shortcut {
   
   @JSImport("antd/lib/modal/useModal/HookModal", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[HookModalProps with RefAttributes[HookModalRef]] = js.native
+  val default: ForwardRefExoticComponent[HookModalProps & RefAttributes[HookModalRef]] = js.native
   
-  @js.native
   trait HookModalProps extends StObject {
     
-    def afterClose(): Unit = js.native
+    def afterClose(): Unit
     
-    var config: ModalFuncProps = js.native
+    var config: ModalFuncProps
   }
   object HookModalProps {
     
@@ -41,12 +39,11 @@ object hookModalMod extends Shortcut {
     }
   }
   
-  @js.native
   trait HookModalRef extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def update(config: ModalFuncProps): Unit = js.native
+    def update(config: ModalFuncProps): Unit
   }
   object HookModalRef {
     
@@ -67,8 +64,8 @@ object hookModalMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[HookModalProps with RefAttributes[HookModalRef]]
+  type _To = ForwardRefExoticComponent[HookModalProps & RefAttributes[HookModalRef]]
   
   /* This means you don't have to write `default`, but can instead just say `hookModalMod.foo` */
-  override def _to: ForwardRefExoticComponent[HookModalProps with RefAttributes[HookModalRef]] = default
+  override def _to: ForwardRefExoticComponent[HookModalProps & RefAttributes[HookModalRef]] = default
 }

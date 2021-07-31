@@ -2,21 +2,19 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDirectConnectGatewayAttachmentsResult extends StObject {
   
   /**
     * The attachments.
     */
-  var directConnectGatewayAttachments: js.UndefOr[DirectConnectGatewayAttachmentList] = js.native
+  var directConnectGatewayAttachments: js.UndefOr[DirectConnectGatewayAttachmentList] = js.undefined
   
   /**
     * The token to retrieve the next page.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object DescribeDirectConnectGatewayAttachmentsResult {
   

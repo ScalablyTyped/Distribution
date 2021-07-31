@@ -9,7 +9,6 @@ import typings.uirouterCore.urlInterfaceMod.UrlSyncApi
 import typings.uirouterCore.urlRulesMod.UrlRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlServiceMod {
@@ -17,7 +16,8 @@ object urlServiceMod {
   @JSImport("@uirouter/core/lib/url/urlService", "UrlService")
   @js.native
   class UrlService protected ()
-    extends LocationServices
+    extends StObject
+       with LocationServices
        with UrlSyncApi {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
@@ -31,7 +31,23 @@ object urlServiceMod {
       */
     var config: UrlConfig = js.native
     
+    /** See: [[UrlService.deferIntercept]] */ /* CompleteClass */
+    override def deferIntercept(): Unit = js.native
+    /* CompleteClass */
+    override def deferIntercept(defer: Boolean): Unit = js.native
+    /** See: [[UrlService.deferIntercept]] */ /* CompleteClass */
+    @JSName("deferIntercept")
+    var deferIntercept_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['deferIntercept'] */ js.Any) & (js.Function1[/* defer */ js.UndefOr[Boolean], Unit]) = js.native
+    
     /** @internal */ var interceptDeferred: Boolean = js.native
+    
+    /** See: [[UrlService.listen]] */ /* CompleteClass */
+    override def listen(): js.Function = js.native
+    /* CompleteClass */
+    override def listen(enabled: Boolean): js.Function = js.native
+    /** See: [[UrlService.listen]] */ /* CompleteClass */
+    @JSName("listen")
+    var listen_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['listen'] */ js.Any) & (js.Function1[/* enabled */ js.UndefOr[Boolean], js.Function]) = js.native
     
     /**
       * Matches a URL
@@ -56,5 +72,13 @@ object urlServiceMod {
       * See: [[UrlRules]] for details
       */
     var rules: UrlRules = js.native
+    
+    /** See: [[UrlService.sync]] */ /* CompleteClass */
+    override def sync(): Unit = js.native
+    /* CompleteClass */
+    override def sync(evt: js.Any): Unit = js.native
+    /** See: [[UrlService.sync]] */ /* CompleteClass */
+    @JSName("sync")
+    var sync_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) & (js.Function1[/* evt */ js.UndefOr[js.Any], Unit]) = js.native
   }
 }

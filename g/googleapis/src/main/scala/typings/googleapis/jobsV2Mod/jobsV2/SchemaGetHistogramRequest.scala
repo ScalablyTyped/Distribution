@@ -2,7 +2,6 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * call with both search and histogram.  Input only.  A request for the
   * `GetHistogram` method.
   */
-@js.native
 trait SchemaGetHistogramRequest extends StObject {
   
   /**
@@ -19,19 +17,19 @@ trait SchemaGetHistogramRequest extends StObject {
     * Results from a broadened query is a superset of the results from the
     * original query.  Defaults to false.
     */
-  var allowBroadening: js.UndefOr[Boolean] = js.native
+  var allowBroadening: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Deprecated. Use query instead.  Optional.  Restrictions on the scope of
     * the histogram.
     */
-  var filters: js.UndefOr[SchemaJobFilters] = js.native
+  var filters: js.UndefOr[SchemaJobFilters] = js.undefined
   
   /**
     * Optional.  Query used to search against jobs, such as keyword, location
     * filters, etc.
     */
-  var query: js.UndefOr[SchemaJobQuery] = js.native
+  var query: js.UndefOr[SchemaJobQuery] = js.undefined
   
   /**
     * Meta information, such as `user_id`, collected from the job searcher or
@@ -39,7 +37,7 @@ trait SchemaGetHistogramRequest extends StObject {
     * service&#39;s search quality. Users determine identifier values, which
     * must be unique and consist.
     */
-  var requestMetadata: js.UndefOr[SchemaRequestMetadata] = js.native
+  var requestMetadata: js.UndefOr[SchemaRequestMetadata] = js.undefined
   
   /**
     * Required.  A list of facets that specify the histogram data to be
@@ -48,7 +46,7 @@ trait SchemaGetHistogramRequest extends StObject {
     * permanently removed prior to the production release of Cloud Talent
     * Solution.
     */
-  var searchTypes: js.UndefOr[js.Array[String]] = js.native
+  var searchTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGetHistogramRequest {
   

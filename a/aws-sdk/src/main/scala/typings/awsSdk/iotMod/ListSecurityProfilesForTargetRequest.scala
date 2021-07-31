@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSecurityProfilesForTargetRequest extends StObject {
   
   /**
     * The maximum number of results to return at one time.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * If true, return child groups too.
     */
-  var recursive: js.UndefOr[Recursive] = js.native
+  var recursive: js.UndefOr[Recursive] = js.undefined
   
   /**
     * The ARN of the target (thing group) whose attached security profiles you want to get.
     */
-  var securityProfileTargetArn: SecurityProfileTargetArn = js.native
+  var securityProfileTargetArn: SecurityProfileTargetArn
 }
 object ListSecurityProfilesForTargetRequest {
   

@@ -3,57 +3,55 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildProvenance extends StObject {
   
   /** Special options applied to this build. This is a catch-all field where build providers can enter any desired additional details. */
   var buildOptions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BuildProvenance with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BuildProvenance & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Version string of the builder at the time this build was executed. */
-  var builderVersion: js.UndefOr[String] = js.native
+  var builderVersion: js.UndefOr[String] = js.undefined
   
   /** Output of the build. */
-  var builtArtifacts: js.UndefOr[js.Array[Artifact]] = js.native
+  var builtArtifacts: js.UndefOr[js.Array[Artifact]] = js.undefined
   
   /** Commands requested by the build. */
-  var commands: js.UndefOr[js.Array[Command]] = js.native
+  var commands: js.UndefOr[js.Array[Command]] = js.undefined
   
   /** Time at which the build was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * E-mail address of the user who initiated this build. Note that this was the user's e-mail address at the time the build was initiated; this address may not represent the same
     * end-user for all time.
     */
-  var creator: js.UndefOr[String] = js.native
+  var creator: js.UndefOr[String] = js.undefined
   
   /** Time at which execution of the build was finished. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Required. Unique identifier of the build. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** URI where any logs for this provenance were written. */
-  var logsUri: js.UndefOr[String] = js.native
+  var logsUri: js.UndefOr[String] = js.undefined
   
   /** ID of the project. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Details of the Source input to the build. */
-  var sourceProvenance: js.UndefOr[Source] = js.native
+  var sourceProvenance: js.UndefOr[Source] = js.undefined
   
   /** Time at which execution of the build was started. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Trigger identifier if the build was triggered automatically; empty if not. */
-  var triggerId: js.UndefOr[String] = js.native
+  var triggerId: js.UndefOr[String] = js.undefined
 }
 object BuildProvenance {
   
@@ -70,7 +68,7 @@ object BuildProvenance {
     def setBuildOptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BuildProvenance with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BuildProvenance & TopLevel[js.Any]
     ): Self = StObject.set(x, "buildOptions", value.asInstanceOf[js.Any])
     
     @scala.inline

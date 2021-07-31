@@ -2,23 +2,21 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCustomerEncryptionKeyProtectedDisk extends StObject {
   
   /**
     * Decrypts data associated with the disk with a customer-supplied
     * encryption key.
     */
-  var diskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var diskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * Specifies a valid partial or full URL to an existing Persistent Disk
     * resource. This field is only applicable for persistent disks.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object SchemaCustomerEncryptionKeyProtectedDisk {
   

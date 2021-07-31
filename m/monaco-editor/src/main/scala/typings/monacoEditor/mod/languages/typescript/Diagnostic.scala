@@ -6,24 +6,29 @@ import typings.monacoEditor.monacoEditorNumbers.`2`
 import typings.monacoEditor.monacoEditorNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Diagnostic extends DiagnosticRelatedInformation {
+trait Diagnostic
+  extends StObject
+     with DiagnosticRelatedInformation {
   
-  var relatedInformation: js.UndefOr[js.Array[DiagnosticRelatedInformation]] = js.native
+  var relatedInformation: js.UndefOr[js.Array[DiagnosticRelatedInformation]] = js.undefined
   
   /** May store more in future. For now, this will simply be `true` to indicate when a diagnostic is an unused-identifier diagnostic. */
-  var reportsUnnecessary: js.UndefOr[js.Object] = js.native
+  var reportsUnnecessary: js.UndefOr[js.Object] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object Diagnostic {
   
   @scala.inline
-  def apply(category: `0` | `1` | `2` | `3`, code: Double, messageText: String | DiagnosticMessageChain): Diagnostic = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
+  def apply(
+    category: `0` | `1` | `2` | `3`,
+    code: Double,
+    file: Unit,
+    messageText: String | DiagnosticMessageChain
+  ): Diagnostic = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diagnostic]
   }
   

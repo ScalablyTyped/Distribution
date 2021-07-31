@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentBasedDeployment extends StObject {
   
-  var agentBasedDeployment: scala.Double = js.native
+  var agentBasedDeployment: scala.Double
   
-  var machineGroupBasedDeployment: scala.Double = js.native
+  var machineGroupBasedDeployment: scala.Double
   
-  var runOnServer: scala.Double = js.native
+  var runOnServer: scala.Double
   
-  var undefined: scala.Double = js.native
+  var undefined: scala.Double
 }
 object AgentBasedDeployment {
   

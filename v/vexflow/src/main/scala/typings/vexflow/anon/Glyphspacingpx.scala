@@ -2,31 +2,29 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Glyphspacingpx extends StObject {
   
-  var fill_style: js.UndefOr[String] = js.native
+  var fill_style: js.UndefOr[String] = js.undefined
   
-  var glyph_spacing_px: js.UndefOr[Double] = js.native
+  var glyph_spacing_px: js.UndefOr[Double] = js.undefined
   
-  var left_bar: js.UndefOr[Boolean] = js.native
+  var left_bar: js.UndefOr[Boolean] = js.undefined
   
-  var num_lines: js.UndefOr[Double] = js.native
+  var num_lines: js.UndefOr[Double] = js.undefined
   
-  var right_bar: js.UndefOr[Boolean] = js.native
+  var right_bar: js.UndefOr[Boolean] = js.undefined
   
-  var space_above_staff_ln: js.UndefOr[Double] = js.native
+  var space_above_staff_ln: js.UndefOr[Double] = js.undefined
   
-  var space_below_staff_ln: js.UndefOr[Double] = js.native
+  var space_below_staff_ln: js.UndefOr[Double] = js.undefined
   
-  var spacing_between_lines_px: js.UndefOr[Double] = js.native
+  var spacing_between_lines_px: js.UndefOr[Double] = js.undefined
   
-  var top_text_position: js.UndefOr[Double] = js.native
+  var top_text_position: js.UndefOr[Double] = js.undefined
   
-  var vertical_bar_width: js.UndefOr[Double] = js.native
+  var vertical_bar_width: js.UndefOr[Double] = js.undefined
 }
 object Glyphspacingpx {
   

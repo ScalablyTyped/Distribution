@@ -6,7 +6,6 @@ import typings.reactMdButton.buttonThemeClassNamesMod.ButtonType
 import typings.reactMdButton.fabMod._FABPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdButtonStrings {
@@ -47,12 +46,16 @@ object reactMdButtonStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait `bottom-left` extends _FABPosition
+  sealed trait `bottom-left`
+    extends StObject
+       with _FABPosition
   @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
   @js.native
-  sealed trait `bottom-right` extends _FABPosition
+  sealed trait `bottom-right`
+    extends StObject
+       with _FABPosition
   @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
@@ -62,12 +65,16 @@ object reactMdButtonStrings {
   def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait clear extends ButtonTheme
+  sealed trait clear
+    extends StObject
+       with ButtonTheme
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait contained extends ButtonThemeType
+  sealed trait contained
+    extends StObject
+       with ButtonThemeType
   @scala.inline
   def contained: contained = "contained".asInstanceOf[contained]
   
@@ -97,7 +104,9 @@ object reactMdButtonStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait disabled extends ButtonTheme
+  sealed trait disabled
+    extends StObject
+       with ButtonTheme
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
@@ -107,7 +116,9 @@ object reactMdButtonStrings {
   def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait error extends ButtonTheme
+  sealed trait error
+    extends StObject
+       with ButtonTheme
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -117,7 +128,9 @@ object reactMdButtonStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait flat extends ButtonThemeType
+  sealed trait flat
+    extends StObject
+       with ButtonThemeType
   @scala.inline
   def flat: flat = "flat".asInstanceOf[flat]
   
@@ -137,7 +150,9 @@ object reactMdButtonStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait icon extends ButtonType
+  sealed trait icon
+    extends StObject
+       with ButtonType
   @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
   
@@ -217,7 +232,9 @@ object reactMdButtonStrings {
   def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait outline extends ButtonThemeType
+  sealed trait outline
+    extends StObject
+       with ButtonThemeType
   @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
   
@@ -237,7 +254,9 @@ object reactMdButtonStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait primary extends ButtonTheme
+  sealed trait primary
+    extends StObject
+       with ButtonTheme
   @scala.inline
   def primary: primary = "primary".asInstanceOf[primary]
   
@@ -267,7 +286,9 @@ object reactMdButtonStrings {
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait secondary extends ButtonTheme
+  sealed trait secondary
+    extends StObject
+       with ButtonTheme
   @scala.inline
   def secondary: secondary = "secondary".asInstanceOf[secondary]
   
@@ -292,7 +313,9 @@ object reactMdButtonStrings {
   def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait text extends ButtonType
+  sealed trait text
+    extends StObject
+       with ButtonType
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -312,12 +335,16 @@ object reactMdButtonStrings {
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait `top-left` extends _FABPosition
+  sealed trait `top-left`
+    extends StObject
+       with _FABPosition
   @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   
   @js.native
-  sealed trait `top-right` extends _FABPosition
+  sealed trait `top-right`
+    extends StObject
+       with _FABPosition
   @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
@@ -337,7 +364,9 @@ object reactMdButtonStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait warning extends ButtonTheme
+  sealed trait warning
+    extends StObject
+       with ButtonTheme
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   

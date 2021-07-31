@@ -4,19 +4,17 @@ import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.absolute
 import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.relative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardMenuStyle extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[absolute | relative] = js.native
+  var position: js.UndefOr[absolute | relative] = js.undefined
   
-  var right: js.UndefOr[Double] = js.native
+  var right: js.UndefOr[Double] = js.undefined
   
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object CardMenuStyle {
   

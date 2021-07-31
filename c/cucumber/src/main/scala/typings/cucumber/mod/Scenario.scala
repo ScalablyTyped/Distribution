@@ -3,31 +3,29 @@ package typings.cucumber.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scenario extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var exception: Error = js.native
+  var exception: Error
   
-  var feature: Feature = js.native
+  var feature: Feature
   
-  var keyword: String = js.native
+  var keyword: String
   
-  var line: Double = js.native
+  var line: Double
   
-  var lines: js.Array[Double] = js.native
+  var lines: js.Array[Double]
   
-  var name: String = js.native
+  var name: String
   
-  var steps: js.Array[Step] = js.native
+  var steps: js.Array[Step]
   
-  var tags: js.Array[Tag] = js.native
+  var tags: js.Array[Tag]
   
-  var uri: String = js.native
+  var uri: String
 }
 object Scenario {
   

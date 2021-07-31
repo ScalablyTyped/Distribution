@@ -2,31 +2,29 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Handler defines a specific action that should be taken
   */
-@js.native
 trait SchemaHandler extends StObject {
   
   /**
     * One and only one of the following should be specified. Exec specifies the
     * action to take. +optional
     */
-  var exec: js.UndefOr[SchemaExecAction] = js.native
+  var exec: js.UndefOr[SchemaExecAction] = js.undefined
   
   /**
     * HTTPGet specifies the http request to perform. +optional
     */
-  var httpGet: js.UndefOr[SchemaHTTPGetAction] = js.native
+  var httpGet: js.UndefOr[SchemaHTTPGetAction] = js.undefined
   
   /**
     * TCPSocket specifies an action involving a TCP port. TCP hooks not yet
     * supported
     */
-  var tcpSocket: js.UndefOr[SchemaTCPSocketAction] = js.native
+  var tcpSocket: js.UndefOr[SchemaTCPSocketAction] = js.undefined
 }
 object SchemaHandler {
   

@@ -3,10 +3,8 @@ package typings.reactNativeGoby.mod
 import typings.reactNativeGoby.mod.Goby.InstallMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyncOptions extends StObject {
   
   /**
@@ -14,19 +12,19 @@ trait SyncOptions extends StObject {
     * file (iOS) and MainActivity.java file (Android), but this option allows you to override it from the script-side if you need to
     * dynamically use a different deployment for a specific call to sync.
     */
-  var deploymentKey: js.UndefOr[String] = js.native
+  var deploymentKey: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies when you would like to install optional updates (i.e. those that aren't marked as mandatory).
     * Defaults to goby.InstallMode.ON_NEXT_RESTART.
     */
-  var installMode: js.UndefOr[InstallMode] = js.native
+  var installMode: js.UndefOr[InstallMode] = js.undefined
   
   /**
     * Specifies when you would like to install updates which are marked as mandatory.
     * Defaults to goby.InstallMode.IMMEDIATE.
     */
-  var mandatoryInstallMode: js.UndefOr[InstallMode] = js.native
+  var mandatoryInstallMode: js.UndefOr[InstallMode] = js.undefined
   
   /**
     * Specifies the minimum number of seconds that the app needs to have been in the background before restarting the app. This property
@@ -34,7 +32,7 @@ trait SyncOptions extends StObject {
     * of end users sooner, without being too obtrusive. Defaults to `0`, which has the effect of applying the update immediately after a
     * resume, regardless how long it was in the background.
     */
-  var minimumBackgroundDuration: js.UndefOr[Double] = js.native
+  var minimumBackgroundDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * An "options" object used to determine whether a confirmation dialog should be displayed to the end user when an update is available,
@@ -42,7 +40,7 @@ trait SyncOptions extends StObject {
     * value will enable the dialog with the default strings, and passing an object to this parameter allows enabling the dialog as well as
     * overriding one or more of the default strings.
     */
-  var updateDialog: js.UndefOr[UpdateDialog] = js.native
+  var updateDialog: js.UndefOr[UpdateDialog] = js.undefined
 }
 object SyncOptions {
   

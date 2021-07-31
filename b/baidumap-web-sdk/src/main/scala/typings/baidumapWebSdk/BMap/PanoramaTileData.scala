@@ -2,17 +2,15 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanoramaTileData extends StObject {
   
-  var centerHeading: Double = js.native
+  var centerHeading: Double
   
-  var tileSize: Size = js.native
+  var tileSize: Size
   
-  var worldSize: Size = js.native
+  var worldSize: Size
 }
 object PanoramaTileData {
   

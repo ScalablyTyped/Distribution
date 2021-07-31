@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachNetworkInterfaceResult extends StObject {
   
   /**
     * The ID of the network interface attachment.
     */
-  var AttachmentId: js.UndefOr[String] = js.native
+  var AttachmentId: js.UndefOr[String] = js.undefined
   
   /**
     * The index of the network card.
     */
-  var NetworkCardIndex: js.UndefOr[Integer] = js.native
+  var NetworkCardIndex: js.UndefOr[Integer] = js.undefined
 }
 object AttachNetworkInterfaceResult {
   

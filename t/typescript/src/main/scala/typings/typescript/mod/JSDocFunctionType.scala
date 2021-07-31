@@ -2,15 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSDocFunctionType
-  extends SignatureDeclarationBase
+  extends StObject
      with JSDocType
-     with SignatureDeclaration
-     with _HasJSDoc {
+     with SignatureDeclarationBase
+     with HasJSDoc
+     with SignatureDeclaration {
   
   @JSName("kind")
   val kind_JSDocFunctionType: typings.typescript.mod.SyntaxKind.JSDocFunctionType = js.native

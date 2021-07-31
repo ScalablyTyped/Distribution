@@ -2,15 +2,13 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextObject extends StObject {
   
-  var exclude: js.UndefOr[js.Array[js.Array[String] | String]] = js.native
+  var exclude: js.UndefOr[js.Array[js.Array[String] | String]] = js.undefined
   
-  var include: js.UndefOr[js.Array[js.Array[String] | String]] = js.native
+  var include: js.UndefOr[js.Array[js.Array[String] | String]] = js.undefined
 }
 object ContextObject {
   

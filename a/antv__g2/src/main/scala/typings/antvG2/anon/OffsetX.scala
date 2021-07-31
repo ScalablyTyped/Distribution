@@ -3,15 +3,13 @@ package typings.antvG2.anon
 import typings.antvG2.mod.Styles.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OffsetX extends StObject {
   
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[text] = js.native
+  var style: js.UndefOr[text] = js.undefined
 }
 object OffsetX {
   

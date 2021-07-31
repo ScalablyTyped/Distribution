@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the texture resource used in a 2D texture material. */
-@js.native
 trait Printing3DTextureResource extends StObject {
   
   /** Gets or sets the name of the texture resource. */
-  var name: String = js.native
+  var name: String
   
   /** Gets or sets the image stream of the texture resource. */
-  var textureData: IRandomAccessStreamWithContentType = js.native
+  var textureData: IRandomAccessStreamWithContentType
 }
 object Printing3DTextureResource {
   

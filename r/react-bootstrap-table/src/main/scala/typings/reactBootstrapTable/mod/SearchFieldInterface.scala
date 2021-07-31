@@ -2,21 +2,19 @@ package typings.reactBootstrapTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchFieldInterface extends StObject {
   
   /**
     * getValue should return the current search text.
     */
-  def getValue(): String = js.native
+  def getValue(): String
   
   /**
     * setValue should update the current search text to the given value.
     */
-  def setValue(search: String): Unit = js.native
+  def setValue(search: String): Unit
 }
 object SearchFieldInterface {
   

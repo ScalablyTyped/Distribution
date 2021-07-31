@@ -2,17 +2,15 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileUploadArguments extends StObject {
   
-  var fileLocale: js.UndefOr[String] = js.native
+  var fileLocale: js.UndefOr[String] = js.undefined
   
-  var moneyInMicros: js.UndefOr[Boolean] = js.native
+  var moneyInMicros: js.UndefOr[Boolean] = js.undefined
   
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object FileUploadArguments {
   

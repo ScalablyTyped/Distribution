@@ -3,31 +3,29 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to the list request, and contains a list of interconnect
   * locations.
   */
-@js.native
 trait SchemaInterconnectLocationList extends StObject {
   
   /**
     * [Output Only] Unique identifier for the resource; defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A list of InterconnectLocation resources.
     */
-  var items: js.UndefOr[js.Array[SchemaInterconnectLocation]] = js.native
+  var items: js.UndefOr[js.Array[SchemaInterconnectLocation]] = js.undefined
   
   /**
     * [Output Only] Type of resource. Always compute#interconnectLocationList
     * for lists of interconnect locations.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] This token allows you to get the next page of results for
@@ -36,17 +34,17 @@ trait SchemaInterconnectLocationList extends StObject {
     * next list request. Subsequent list requests will have their own
     * nextPageToken to continue paging through the results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Informational warning message.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaInterconnectLocationList {
   

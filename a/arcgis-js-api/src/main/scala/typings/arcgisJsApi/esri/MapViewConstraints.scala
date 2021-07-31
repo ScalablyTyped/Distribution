@@ -4,102 +4,102 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapViewConstraints extends Object {
+trait MapViewConstraints
+  extends StObject
+     with Object {
   
   /**
     * A read-only property that specifies the levels of detail (LODs) read from the [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var effectiveLODs: js.UndefOr[js.Array[LOD]] = js.native
+  var effectiveLODs: js.UndefOr[js.Array[LOD]] = js.undefined
   
   /**
     * A read-only property that specifies the maximum [scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) the user is allowed to zoom to within the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var effectiveMaxScale: js.UndefOr[Double] = js.native
+  var effectiveMaxScale: js.UndefOr[Double] = js.undefined
   
   /**
     * A read-only property that specifies the maximum [zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#zoom) level the user is allowed to zoom to within the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var effectiveMaxZoom: js.UndefOr[Double] = js.native
+  var effectiveMaxZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * A read-only property that specifies the minimum [scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) the user is allowed to zoom to within the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var effectiveMinScale: js.UndefOr[Double] = js.native
+  var effectiveMinScale: js.UndefOr[Double] = js.undefined
   
   /**
     * A read-only property that specifies the minimum [zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#zoom) level the user is allowed to zoom to within the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var effectiveMinZoom: js.UndefOr[Double] = js.native
+  var effectiveMinZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * The area in which the user is allowed to navigate laterally.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var geometry: js.UndefOr[Geometry_] = js.native
+  var geometry: js.UndefOr[Geometry_] = js.undefined
   
   /**
     * An array of [LODs](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var lods: js.UndefOr[js.Array[LOD]] = js.native
+  var lods: js.UndefOr[js.Array[LOD]] = js.undefined
   
   /**
     * The maximum [scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) the user is allowed to zoom to within the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var maxScale: js.UndefOr[Double] = js.native
+  var maxScale: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum [zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#zoom) level the user is allowed to zoom to within the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum [scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) the user is allowed to zoom to within the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var minScale: js.UndefOr[Double] = js.native
+  var minScale: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum [zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#zoom) level the user is allowed to zoom to within the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether the user can rotate the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var rotationEnabled: js.UndefOr[Boolean] = js.native
+  var rotationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When `true`, the view snaps to the next LOD when zooming in or out.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var snapToZoom: js.UndefOr[Boolean] = js.native
+  var snapToZoom: js.UndefOr[Boolean] = js.undefined
 }
 object MapViewConstraints {
   

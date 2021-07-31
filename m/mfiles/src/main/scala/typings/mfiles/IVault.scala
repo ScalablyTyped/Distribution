@@ -3,115 +3,113 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFMetadataStructureItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVault extends StObject {
   
-  val Async: IVaultAsync = js.native
+  val Async: IVaultAsync
   
-  def ChangePassword(OldPassword: String, NewPassword: String): Unit = js.native
+  def ChangePassword(OldPassword: String, NewPassword: String): Unit
   
-  val ClassGroupOperations: IVaultClassGroupOperations = js.native
+  val ClassGroupOperations: IVaultClassGroupOperations
   
-  val ClassOperations: IVaultClassOperations = js.native
+  val ClassOperations: IVaultClassOperations
   
-  val ClientOperations: IVaultClientOperations = js.native
+  val ClientOperations: IVaultClientOperations
   
-  val CurrentLoggedInUserID: Double = js.native
+  val CurrentLoggedInUserID: Double
   
-  val CustomApplicationManagementOperations: IVaultCustomApplicationManagementOperations = js.native
+  val CustomApplicationManagementOperations: IVaultCustomApplicationManagementOperations
   
-  val DataSetOperations: IVaultDataSetOperations = js.native
+  val DataSetOperations: IVaultDataSetOperations
   
-  val ElectronicSignatureOperations: IVaultElectronicSignatureOperations = js.native
+  val ElectronicSignatureOperations: IVaultElectronicSignatureOperations
   
-  val EventLogOperations: IVaultEventLogOperations = js.native
+  val EventLogOperations: IVaultEventLogOperations
   
-  val ExtensionMethodOperations: IVaultExtensionMethodOperations = js.native
+  val ExtensionMethodOperations: IVaultExtensionMethodOperations
   
-  val ExternalObjectOperations: IVaultExternalObjectOperations = js.native
+  val ExternalObjectOperations: IVaultExternalObjectOperations
   
-  def GetAllTranslations(): String = js.native
+  def GetAllTranslations(): String
   
-  def GetGUID(): String = js.native
+  def GetGUID(): String
   
-  def GetMFilesURLForVaultRoot(): String = js.native
+  def GetMFilesURLForVaultRoot(): String
   
-  def GetMetadataStructureItemIDByAlias(MetadataStructureItemType: MFMetadataStructureItem, Alias: String, Unused: Boolean): Double = js.native
+  def GetMetadataStructureItemIDByAlias(MetadataStructureItemType: MFMetadataStructureItem, Alias: String, Unused: Boolean): Double
   
-  def GetMetadataStructureVersionID(): Double = js.native
+  def GetMetadataStructureVersionID(): Double
   
-  def GetServerLicenseStatus(): ILicenseStatus = js.native
+  def GetServerLicenseStatus(): ILicenseStatus
   
-  def GetServerVersionOfVault(): IMFilesVersion = js.native
+  def GetServerVersionOfVault(): IMFilesVersion
   
-  def LogOutSilent(): Unit = js.native
+  def LogOutSilent(): Unit
   
-  def LogOutWithDialogs(ParentWindow: Double): Boolean = js.native
+  def LogOutWithDialogs(ParentWindow: Double): Boolean
   
-  val LoggedIn: Boolean = js.native
+  val LoggedIn: Boolean
   
-  val LoginAccountOperations: IVaultLoginAccountOperations = js.native
+  val LoginAccountOperations: IVaultLoginAccountOperations
   
-  val LoginSessionID: String = js.native
+  val LoginSessionID: String
   
-  val ManagementOperations: IVaultManagementOperations = js.native
+  val ManagementOperations: IVaultManagementOperations
   
-  val Name: String = js.native
+  val Name: String
   
-  val NamedACLOperations: IVaultNamedACLOperations = js.native
+  val NamedACLOperations: IVaultNamedACLOperations
   
-  val NamedValueStorageOperations: IVaultNamedValueStorageOperations = js.native
+  val NamedValueStorageOperations: IVaultNamedValueStorageOperations
   
-  val NotificationOperations: IVaultNotificationOperations = js.native
+  val NotificationOperations: IVaultNotificationOperations
   
-  val ObjectFileOperations: IVaultObjectFileOperations = js.native
+  val ObjectFileOperations: IVaultObjectFileOperations
   
-  val ObjectOperations: IVaultObjectOperations = js.native
+  val ObjectOperations: IVaultObjectOperations
   
-  val ObjectPropertyOperations: IVaultObjectPropertyOperations = js.native
+  val ObjectPropertyOperations: IVaultObjectPropertyOperations
   
-  val ObjectSearchOperations: IVaultObjectSearchOperations = js.native
+  val ObjectSearchOperations: IVaultObjectSearchOperations
   
-  val ObjectTypeOperations: IVaultObjectTypeOperations = js.native
+  val ObjectTypeOperations: IVaultObjectTypeOperations
   
-  val PropertyDefOperations: IVaultPropertyDefOperations = js.native
+  val PropertyDefOperations: IVaultPropertyDefOperations
   
-  val ReadOnlyAccess: Boolean = js.native
+  val ReadOnlyAccess: Boolean
   
-  val ScheduledJobManagementOperations: IVaultScheduledJobManagementOperations = js.native
+  val ScheduledJobManagementOperations: IVaultScheduledJobManagementOperations
   
-  val ServerDataPushOperations: IVaultServerDataPushOperations = js.native
+  val ServerDataPushOperations: IVaultServerDataPushOperations
   
-  val SessionInfo: ISessionInfo = js.native
+  val SessionInfo: ISessionInfo
   
-  val SharedLinkOperations: IVaultSharedLinkOperations = js.native
+  val SharedLinkOperations: IVaultSharedLinkOperations
   
-  def TestConnectionToServer(): Unit = js.native
+  def TestConnectionToServer(): Unit
   
-  def TestConnectionToVault(): Unit = js.native
+  def TestConnectionToVault(): Unit
   
-  def TestConnectionToVaultWithTimeout(TimeoutInMilliseconds: Double): Unit = js.native
+  def TestConnectionToVaultWithTimeout(TimeoutInMilliseconds: Double): Unit
   
-  val TraditionalFolderOperations: IVaultTraditionalFolderOperations = js.native
+  val TraditionalFolderOperations: IVaultTraditionalFolderOperations
   
-  val UserGroupOperations: IVaultUserGroupOperations = js.native
+  val UserGroupOperations: IVaultUserGroupOperations
   
-  val UserOperations: IVaultUserOperations = js.native
+  val UserOperations: IVaultUserOperations
   
-  val UserSettingOperations: IVaultUserSettingOperations = js.native
+  val UserSettingOperations: IVaultUserSettingOperations
   
-  val ValueListItemOperations: IVaultValueListItemOperations = js.native
+  val ValueListItemOperations: IVaultValueListItemOperations
   
-  val ValueListOperations: IVaultValueListOperations = js.native
+  val ValueListOperations: IVaultValueListOperations
   
-  val VaultLanguages: ILanguages = js.native
+  val VaultLanguages: ILanguages
   
-  val ViewOperations: IVaultViewOperations = js.native
+  val ViewOperations: IVaultViewOperations
   
-  val WorkflowOperations: IVaultWorkflowOperations = js.native
+  val WorkflowOperations: IVaultWorkflowOperations
 }
 object IVault {
   

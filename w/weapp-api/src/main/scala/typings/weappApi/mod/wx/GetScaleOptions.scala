@@ -3,14 +3,14 @@ package typings.weappApi.mod.wx
 import typings.weappApi.anon.Scale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetScaleOptions extends CommonCallbackOptions {
+trait GetScaleOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   @JSName("success")
-  var success_GetScaleOptions: js.UndefOr[js.Function1[/* callback */ js.Function1[/* res */ Scale, Unit], Unit]] = js.native
+  var success_GetScaleOptions: js.UndefOr[js.Function1[/* callback */ js.Function1[/* res */ Scale, Unit], Unit]] = js.undefined
 }
 object GetScaleOptions {
   

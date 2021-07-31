@@ -4,15 +4,13 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.`3`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LengthSourcetype extends StObject {
   
-  var length: Double = js.native
+  var length: Double
   
-  var source_type: `3` | `4` = js.native
+  var source_type: `3` | `4`
 }
 object LengthSourcetype {
   

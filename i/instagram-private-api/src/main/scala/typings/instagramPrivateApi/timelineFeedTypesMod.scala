@@ -2,7 +2,6 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timelineFeedTypesMod {
@@ -29,16 +28,15 @@ object timelineFeedTypesMod {
     def warm_start_fetch: typings.instagramPrivateApi.instagramPrivateApiStrings.warm_start_fetch = "warm_start_fetch".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.warm_start_fetch]
   }
   
-  @js.native
   trait TimelineFeedsOptions extends StObject {
     
-    var latestStoryPk: js.UndefOr[String | Double] = js.native
+    var latestStoryPk: js.UndefOr[String | Double] = js.undefined
     
-    var pushDisabled: js.UndefOr[Boolean] = js.native
+    var pushDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var reason: js.UndefOr[TimelineFeedReason] = js.native
+    var reason: js.UndefOr[TimelineFeedReason] = js.undefined
     
-    var recoveredFromCrash: js.UndefOr[String] = js.native
+    var recoveredFromCrash: js.UndefOr[String] = js.undefined
   }
   object TimelineFeedsOptions {
     

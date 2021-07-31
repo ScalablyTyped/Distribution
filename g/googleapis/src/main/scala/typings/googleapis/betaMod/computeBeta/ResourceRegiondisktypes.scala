@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Regiondisktypes")
@@ -33,7 +32,7 @@ class ResourceRegiondisktypes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDiskType] = js.native
   def get(callback: BodyResponseCallback[SchemaDiskType]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDiskType] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDiskType] = js.native
   def get(params: ParamsResourceRegiondisktypesGet): GaxiosPromise[SchemaDiskType] = js.native
   def get(params: ParamsResourceRegiondisktypesGet, callback: BodyResponseCallback[SchemaDiskType]): Unit = js.native
   def get(
@@ -68,7 +67,7 @@ class ResourceRegiondisktypes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaRegionDiskTypeList] = js.native
   def list(callback: BodyResponseCallback[SchemaRegionDiskTypeList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegionDiskTypeList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRegionDiskTypeList] = js.native
   def list(params: ParamsResourceRegiondisktypesList): GaxiosPromise[SchemaRegionDiskTypeList] = js.native
   def list(
     params: ParamsResourceRegiondisktypesList,

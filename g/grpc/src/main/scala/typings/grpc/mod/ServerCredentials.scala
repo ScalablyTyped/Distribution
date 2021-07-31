@@ -3,7 +3,6 @@ package typings.grpc.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grpc", "ServerCredentials")
@@ -12,20 +11,21 @@ class ServerCredentials () extends StObject
 /* static members */
 object ServerCredentials {
   
+  @JSImport("grpc", "ServerCredentials")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create insecure server credentials
     * @return The ServerCredentials
     */
-  @JSImport("grpc", "ServerCredentials.createInsecure")
-  @js.native
-  def createInsecure(): ServerCredentials = js.native
+  @scala.inline
+  def createInsecure(): ServerCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[ServerCredentials]
   
-  @JSImport("grpc", "ServerCredentials.createSsl")
-  @js.native
-  def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair]): ServerCredentials = js.native
-  @JSImport("grpc", "ServerCredentials.createSsl")
-  @js.native
-  def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): ServerCredentials = js.native
+  @scala.inline
+  def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair]): ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any])).asInstanceOf[ServerCredentials]
+  @scala.inline
+  def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any], checkClientCertificate.asInstanceOf[js.Any])).asInstanceOf[ServerCredentials]
   /**
     * Create SSL server credentials
     * @param rootCerts Root CA certificates for validating client certificates
@@ -36,10 +36,8 @@ object ServerCredentials {
     * Defaults to `false`.
     * @return The ServerCredentials
     */
-  @JSImport("grpc", "ServerCredentials.createSsl")
-  @js.native
-  def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair]): ServerCredentials = js.native
-  @JSImport("grpc", "ServerCredentials.createSsl")
-  @js.native
-  def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): ServerCredentials = js.native
+  @scala.inline
+  def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair]): ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any])).asInstanceOf[ServerCredentials]
+  @scala.inline
+  def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any], checkClientCertificate.asInstanceOf[js.Any])).asInstanceOf[ServerCredentials]
 }

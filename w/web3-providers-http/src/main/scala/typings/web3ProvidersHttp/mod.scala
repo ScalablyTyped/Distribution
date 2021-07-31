@@ -6,7 +6,6 @@ import typings.web3CoreHelpers.mod.HttpProviderBase
 import typings.web3CoreHelpers.mod.JsonRpcResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,8 +14,8 @@ object mod {
   @js.native
   class HttpProvider () extends HttpProviderBase {
     def this(host: String) = this()
-    def this(host: js.UndefOr[scala.Nothing], options: HttpProviderOptions) = this()
     def this(host: String, options: HttpProviderOptions) = this()
+    def this(host: Unit, options: HttpProviderOptions) = this()
     
     var agent: js.UndefOr[HttpProviderAgent] = js.native
     
@@ -33,12 +32,11 @@ object mod {
     var withCredentials: Boolean = js.native
   }
   
-  @js.native
   trait HttpHeader extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object HttpHeader {
     
@@ -59,14 +57,13 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpProviderAgent extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var http: js.UndefOr[Agent] = js.native
+    var http: js.UndefOr[Agent] = js.undefined
     
-    var https: js.UndefOr[typings.node.httpsMod.Agent] = js.native
+    var https: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
   }
   object HttpProviderAgent {
     
@@ -99,18 +96,17 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpProviderOptions extends StObject {
     
-    var agent: js.UndefOr[HttpProviderAgent] = js.native
+    var agent: js.UndefOr[HttpProviderAgent] = js.undefined
     
-    var headers: js.UndefOr[js.Array[HttpHeader]] = js.native
+    var headers: js.UndefOr[js.Array[HttpHeader]] = js.undefined
     
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object HttpProviderOptions {
     

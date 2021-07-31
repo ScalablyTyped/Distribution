@@ -2,29 +2,27 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortableOption extends StObject {
   
-  var dragCssClass: js.UndefOr[String] = js.native
+  var dragCssClass: js.UndefOr[String] = js.undefined
   
-  var finish: js.UndefOr[js.Function1[/* e */ js.UndefOr[SortEvent], Unit]] = js.native
+  var finish: js.UndefOr[js.Function1[/* e */ js.UndefOr[SortEvent], Unit]] = js.undefined
   
-  var mouseButton: js.UndefOr[String] = js.native
+  var mouseButton: js.UndefOr[String] = js.undefined
   
-  var order: js.UndefOr[js.Function1[/* e */ js.UndefOr[SortEvent], Unit]] = js.native
+  var order: js.UndefOr[js.Function1[/* e */ js.UndefOr[SortEvent], Unit]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
-  var sortingClass: js.UndefOr[String] = js.native
+  var sortingClass: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[js.Function1[/* e */ js.UndefOr[SortEvent], Unit]] = js.native
+  var start: js.UndefOr[js.Function1[/* e */ js.UndefOr[SortEvent], Unit]] = js.undefined
   
-  var trigger: js.UndefOr[String] = js.native
+  var trigger: js.UndefOr[String] = js.undefined
 }
 object SortableOption {
   

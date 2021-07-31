@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonGroupMod {
@@ -19,20 +18,21 @@ object buttonGroupMod {
   trait ButtonGroup
     extends Component[ButtonGroupProps, js.Object, js.Any]
   
-  @js.native
-  trait ButtonGroupProps extends HTMLProps[ButtonGroup] {
+  trait ButtonGroupProps
+    extends StObject
+       with HTMLProps[ButtonGroup] {
     
-    var block: js.UndefOr[Boolean] = js.native
+    var block: js.UndefOr[Boolean] = js.undefined
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var bsStyle: js.UndefOr[String] = js.native
+    var bsStyle: js.UndefOr[String] = js.undefined
     
-    var justified: js.UndefOr[Boolean] = js.native
+    var justified: js.UndefOr[Boolean] = js.undefined
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object ButtonGroupProps {
     

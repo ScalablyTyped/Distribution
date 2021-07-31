@@ -2,7 +2,6 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "TableQuery")
@@ -30,7 +29,10 @@ class TableQuery () extends StObject {
 /* static members */
 object TableQuery {
   
-  @JSImport("azure", "TableQuery.select")
+  @JSImport("azure", "TableQuery")
   @js.native
-  def select(fields: String*): TableQuery = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def select(fields: String*): TableQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(fields.asInstanceOf[js.Any]).asInstanceOf[TableQuery]
 }

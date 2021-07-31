@@ -2,7 +2,6 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,23 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * referring to the `BREAKPOINT_SOURCE_LOCATION` with the message `Location
   * not found`.
   */
-@js.native
 trait SchemaStatusMessage extends StObject {
   
   /**
     * Status message text.
     */
-  var description: js.UndefOr[SchemaFormatMessage] = js.native
+  var description: js.UndefOr[SchemaFormatMessage] = js.undefined
   
   /**
     * Distinguishes errors from informational messages.
     */
-  var isError: js.UndefOr[Boolean] = js.native
+  var isError: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Reference to which the message applies.
     */
-  var refersTo: js.UndefOr[String] = js.native
+  var refersTo: js.UndefOr[String] = js.undefined
 }
 object SchemaStatusMessage {
   

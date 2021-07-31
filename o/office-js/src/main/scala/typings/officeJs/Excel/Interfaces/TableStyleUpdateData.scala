@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`. */
-@js.native
 trait TableStyleUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TableStyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object TableStyleUpdateData {
   

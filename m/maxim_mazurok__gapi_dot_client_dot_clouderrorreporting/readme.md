@@ -10,9 +10,9 @@ TypeScript typings for Error Reporting API v1beta1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.clouderrorreporting |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 902 |
+| # downloads        | 1001 |
 | # stars            | 0 |
 
 ## Links

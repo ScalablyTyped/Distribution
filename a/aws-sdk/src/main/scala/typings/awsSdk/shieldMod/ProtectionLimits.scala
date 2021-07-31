@@ -2,16 +2,14 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtectionLimits extends StObject {
   
   /**
     * The maximum number of resource types that you can specify in a protection.
     */
-  var ProtectedResourceTypeLimits: Limits = js.native
+  var ProtectedResourceTypeLimits: Limits
 }
 object ProtectionLimits {
   

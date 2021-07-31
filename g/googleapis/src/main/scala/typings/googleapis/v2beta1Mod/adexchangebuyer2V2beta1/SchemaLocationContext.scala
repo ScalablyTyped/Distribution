@@ -2,13 +2,11 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @OutputOnly The Geo criteria the restriction applies to.
   */
-@js.native
 trait SchemaLocationContext extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaLocationContext extends StObject {
     * [geo-table.csv](https://storage.googleapis.com/adx-rtb-dictionaries/geo-table.csv)
     * file for different geo criteria IDs.
     */
-  var geoCriteriaIds: js.UndefOr[js.Array[Double]] = js.native
+  var geoCriteriaIds: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaLocationContext {
   

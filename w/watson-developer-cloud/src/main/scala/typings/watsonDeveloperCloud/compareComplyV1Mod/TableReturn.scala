@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The analysis of the document's tables. */
-@js.native
 trait TableReturn extends StObject {
   
   /** Information about the parsed input document. */
-  var document: js.UndefOr[DocInfo] = js.native
+  var document: js.UndefOr[DocInfo] = js.undefined
   
   /** The ID of the model used to extract the table contents. The value for table extraction is `tables`. */
-  var model_id: js.UndefOr[String] = js.native
+  var model_id: js.UndefOr[String] = js.undefined
   
   /** The version of the `tables` model ID. */
-  var model_version: js.UndefOr[String] = js.native
+  var model_version: js.UndefOr[String] = js.undefined
   
   /** Definitions of the tables identified in the input document. */
-  var tables: js.UndefOr[js.Array[Tables]] = js.native
+  var tables: js.UndefOr[js.Array[Tables]] = js.undefined
 }
 object TableReturn {
   

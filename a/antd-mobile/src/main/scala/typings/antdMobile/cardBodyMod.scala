@@ -6,7 +6,6 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardBodyMod {
@@ -32,10 +31,11 @@ object cardBodyMod {
   trait CardBody
     extends Component[CardBodyProps, js.Any, js.Any]
   
-  @js.native
-  trait CardBodyProps extends HTMLProps[HTMLDivElement] {
+  trait CardBodyProps
+    extends StObject
+       with HTMLProps[HTMLDivElement] {
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object CardBodyProps {
     

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1TrialParameter extends StObject {
   
   /** Must be set if ParameterType is DOUBLE or DISCRETE. */
-  var floatValue: js.UndefOr[Double] = js.native
+  var floatValue: js.UndefOr[Double] = js.undefined
   
   /** Must be set if ParameterType is INTEGER */
-  var intValue: js.UndefOr[String] = js.native
+  var intValue: js.UndefOr[String] = js.undefined
   
   /** The name of the parameter. */
-  var parameter: js.UndefOr[String] = js.native
+  var parameter: js.UndefOr[String] = js.undefined
   
   /** Must be set if ParameterTypeis CATEGORICAL */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1TrialParameter {
   

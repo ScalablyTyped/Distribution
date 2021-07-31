@@ -5,21 +5,19 @@ import typings.acmeClient.acmeClientStrings.revoked
 import typings.acmeClient.acmeClientStrings.valid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
-  var contact: js.UndefOr[js.Array[String]] = js.native
+  var contact: js.UndefOr[js.Array[String]] = js.undefined
   
-  var externalAccountBinding: js.UndefOr[js.Object] = js.native
+  var externalAccountBinding: js.UndefOr[js.Object] = js.undefined
   
-  var orders: String = js.native
+  var orders: String
   
-  var status: valid | deactivated | revoked = js.native
+  var status: valid | deactivated | revoked
   
-  var termsOfServiceAgreed: js.UndefOr[Boolean] = js.native
+  var termsOfServiceAgreed: js.UndefOr[Boolean] = js.undefined
 }
 object Account {
   

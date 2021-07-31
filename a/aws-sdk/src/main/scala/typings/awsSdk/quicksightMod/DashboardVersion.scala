@@ -2,61 +2,59 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashboardVersion extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The time that this dashboard version was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The Amazon Resource Numbers (ARNs) for the datasets that are associated with this version of the dashboard.
     */
-  var DataSetArns: js.UndefOr[DataSetArnsList] = js.native
+  var DataSetArns: js.UndefOr[DataSetArnsList] = js.undefined
   
   /**
     * Description.
     */
-  var Description: js.UndefOr[VersionDescription] = js.native
+  var Description: js.UndefOr[VersionDescription] = js.undefined
   
   /**
     * Errors associated with this dashboard version.
     */
-  var Errors: js.UndefOr[DashboardErrorList] = js.native
+  var Errors: js.UndefOr[DashboardErrorList] = js.undefined
   
   /**
     * A list of the associated sheets with the unique identifier and name of each sheet.
     */
-  var Sheets: js.UndefOr[SheetList] = js.native
+  var Sheets: js.UndefOr[SheetList] = js.undefined
   
   /**
     * Source entity ARN.
     */
-  var SourceEntityArn: js.UndefOr[Arn] = js.native
+  var SourceEntityArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[ResourceStatus] = js.native
+  var Status: js.UndefOr[ResourceStatus] = js.undefined
   
   /**
     * The ARN of the theme associated with a version of the dashboard.
     */
-  var ThemeArn: js.UndefOr[Arn] = js.native
+  var ThemeArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Version number for this version of the dashboard.
     */
-  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.native
+  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.undefined
 }
 object DashboardVersion {
   

@@ -4,7 +4,6 @@ import typings.mandrillApi.anon.Id
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -36,7 +35,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def activity(params: js.Any): Unit = js.native
-    def activity(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def activity(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def activity(params: js.Any, onsuccess: ICallback): Unit = js.native
     def activity(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -52,7 +51,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def info(params: js.Any): Unit = js.native
-    def info(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def info(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -63,7 +62,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def list(params: js.Any): Unit = js.native
-    def list(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def list(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -77,7 +76,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def rejects(params: js.Any): Unit = js.native
-    def rejects(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def rejects(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def rejects(params: js.Any, onsuccess: ICallback): Unit = js.native
     def rejects(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -91,7 +90,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def whitelist(params: js.Any): Unit = js.native
-    def whitelist(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def whitelist(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def whitelist(params: js.Any, onsuccess: ICallback): Unit = js.native
     def whitelist(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -109,7 +108,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def addDomain(params: js.Any): Unit = js.native
-    def addDomain(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def addDomain(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def addDomain(params: js.Any, onsuccess: ICallback): Unit = js.native
     def addDomain(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -123,7 +122,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def addRoute(params: js.Any): Unit = js.native
-    def addRoute(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def addRoute(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def addRoute(params: js.Any, onsuccess: ICallback): Unit = js.native
     def addRoute(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -135,7 +134,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def checkDomain(params: js.Any): Unit = js.native
-    def checkDomain(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def checkDomain(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def checkDomain(params: js.Any, onsuccess: ICallback): Unit = js.native
     def checkDomain(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -147,7 +146,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def deleteDomain(params: js.Any): Unit = js.native
-    def deleteDomain(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def deleteDomain(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def deleteDomain(params: js.Any, onsuccess: ICallback): Unit = js.native
     def deleteDomain(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -159,7 +158,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def deleteRoute(params: js.Any): Unit = js.native
-    def deleteRoute(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def deleteRoute(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def deleteRoute(params: js.Any, onsuccess: ICallback): Unit = js.native
     def deleteRoute(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -170,7 +169,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def domains(params: js.Any): Unit = js.native
-    def domains(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def domains(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def domains(params: js.Any, onsuccess: ICallback): Unit = js.native
     def domains(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -182,7 +181,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def routes(params: js.Any): Unit = js.native
-    def routes(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def routes(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def routes(params: js.Any, onsuccess: ICallback): Unit = js.native
     def routes(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -199,7 +198,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def sendRaw(params: js.Any): Unit = js.native
-    def sendRaw(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def sendRaw(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def sendRaw(params: js.Any, onsuccess: ICallback): Unit = js.native
     def sendRaw(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -213,7 +212,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def updateRoute(params: js.Any): Unit = js.native
-    def updateRoute(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def updateRoute(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def updateRoute(params: js.Any, onsuccess: ICallback): Unit = js.native
     def updateRoute(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -237,7 +236,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def cancelWarmup(params: js.Any): Unit = js.native
-    def cancelWarmup(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def cancelWarmup(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def cancelWarmup(params: js.Any, onsuccess: ICallback): Unit = js.native
     def cancelWarmup(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -251,7 +250,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def checkCustomDns(params: js.Any): Unit = js.native
-    def checkCustomDns(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def checkCustomDns(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def checkCustomDns(params: js.Any, onsuccess: ICallback): Unit = js.native
     def checkCustomDns(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -264,7 +263,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def createPool(params: js.Any): Unit = js.native
-    def createPool(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def createPool(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def createPool(params: js.Any, onsuccess: ICallback): Unit = js.native
     def createPool(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -276,7 +275,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def delete(params: js.Any): Unit = js.native
-    def delete(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def delete(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -288,7 +287,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def deletePool(params: js.Any): Unit = js.native
-    def deletePool(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def deletePool(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def deletePool(params: js.Any, onsuccess: ICallback): Unit = js.native
     def deletePool(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -300,7 +299,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def info(params: js.Any): Unit = js.native
-    def info(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def info(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -311,7 +310,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def list(params: js.Any): Unit = js.native
-    def list(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def list(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -322,7 +321,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def listPools(params: js.Any): Unit = js.native
-    def listPools(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def listPools(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def listPools(params: js.Any, onsuccess: ICallback): Unit = js.native
     def listPools(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -334,7 +333,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def poolInfo(params: js.Any): Unit = js.native
-    def poolInfo(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def poolInfo(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def poolInfo(params: js.Any, onsuccess: ICallback): Unit = js.native
     def poolInfo(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -349,7 +348,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def provision(params: js.Any): Unit = js.native
-    def provision(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def provision(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def provision(params: js.Any, onsuccess: ICallback): Unit = js.native
     def provision(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -362,7 +361,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def setCustomDns(params: js.Any): Unit = js.native
-    def setCustomDns(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def setCustomDns(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def setCustomDns(params: js.Any, onsuccess: ICallback): Unit = js.native
     def setCustomDns(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -376,7 +375,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def setPool(params: js.Any): Unit = js.native
-    def setPool(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def setPool(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def setPool(params: js.Any, onsuccess: ICallback): Unit = js.native
     def setPool(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -391,7 +390,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def startWarmup(params: js.Any): Unit = js.native
-    def startWarmup(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def startWarmup(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def startWarmup(params: js.Any, onsuccess: ICallback): Unit = js.native
     def startWarmup(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -405,7 +404,7 @@ object mod {
     var apikey: String = js.native
     
     def call(uri: String, params: js.Any): Unit = js.native
-    def call(uri: String, params: js.Any, onresult: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def call(uri: String, params: js.Any, onresult: Unit, onerror: ICallback): Unit = js.native
     def call(uri: String, params: js.Any, onresult: ICallback): Unit = js.native
     def call(uri: String, params: js.Any, onresult: ICallback, onerror: ICallback): Unit = js.native
     
@@ -459,7 +458,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def cancelScheduled(params: js.Any): Unit = js.native
-    def cancelScheduled(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def cancelScheduled(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def cancelScheduled(params: js.Any, onsuccess: ICallback): Unit = js.native
     def cancelScheduled(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -471,7 +470,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def content(params: js.Any): Unit = js.native
-    def content(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def content(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def content(params: js.Any, onsuccess: ICallback): Unit = js.native
     def content(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -483,7 +482,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def info(params: js.Any): Unit = js.native
-    def info(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def info(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -495,7 +494,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def listScheduled(params: js.Any): Unit = js.native
-    def listScheduled(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def listScheduled(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def listScheduled(params: js.Any, onsuccess: ICallback): Unit = js.native
     def listScheduled(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -507,7 +506,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def parse(params: js.Any): Unit = js.native
-    def parse(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def parse(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def parse(params: js.Any, onsuccess: ICallback): Unit = js.native
     def parse(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -520,7 +519,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def reschedule(params: js.Any): Unit = js.native
-    def reschedule(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def reschedule(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def reschedule(params: js.Any, onsuccess: ICallback): Unit = js.native
     def reschedule(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -538,7 +537,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def search(params: js.Any): Unit = js.native
-    def search(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def search(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def search(params: js.Any, onsuccess: ICallback): Unit = js.native
     def search(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -554,7 +553,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def searchTimeSeries(params: js.Any): Unit = js.native
-    def searchTimeSeries(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def searchTimeSeries(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def searchTimeSeries(params: js.Any, onsuccess: ICallback): Unit = js.native
     def searchTimeSeries(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -626,7 +625,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def send(params: js.Any): Unit = js.native
-    def send(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def send(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def send(params: js.Any, onsuccess: ICallback): Unit = js.native
     def send(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -646,7 +645,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def sendRaw(params: js.Any): Unit = js.native
-    def sendRaw(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def sendRaw(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def sendRaw(params: js.Any, onsuccess: ICallback): Unit = js.native
     def sendRaw(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -723,7 +722,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def sendTemplate(params: js.Any): Unit = js.native
-    def sendTemplate(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def sendTemplate(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def sendTemplate(params: js.Any, onsuccess: ICallback): Unit = js.native
     def sendTemplate(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -742,7 +741,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def add(params: js.Any): Unit = js.native
-    def add(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def add(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -754,7 +753,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def delete(params: js.Any): Unit = js.native
-    def delete(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def delete(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -765,7 +764,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def list(params: js.Any): Unit = js.native
-    def list(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def list(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -778,7 +777,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def update(params: js.Any): Unit = js.native
-    def update(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def update(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def update(params: js.Any, onsuccess: ICallback): Unit = js.native
     def update(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -801,7 +800,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def add(params: js.Any): Unit = js.native
-    def add(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def add(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -816,7 +815,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def delete(params: js.Any): Unit = js.native
-    def delete(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def delete(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -833,7 +832,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def list(params: js.Any): Unit = js.native
-    def list(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def list(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -852,7 +851,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def addDomain(params: js.Any): Unit = js.native
-    def addDomain(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def addDomain(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def addDomain(params: js.Any, onsuccess: ICallback): Unit = js.native
     def addDomain(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -865,7 +864,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def checkDomain(params: js.Any): Unit = js.native
-    def checkDomain(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def checkDomain(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def checkDomain(params: js.Any, onsuccess: ICallback): Unit = js.native
     def checkDomain(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -876,7 +875,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def domains(params: js.Any): Unit = js.native
-    def domains(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def domains(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def domains(params: js.Any, onsuccess: ICallback): Unit = js.native
     def domains(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -888,7 +887,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def info(params: js.Any): Unit = js.native
-    def info(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def info(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -899,7 +898,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def list(params: js.Any): Unit = js.native
-    def list(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def list(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -911,7 +910,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def timeSeries(params: js.Any): Unit = js.native
-    def timeSeries(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def timeSeries(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def timeSeries(params: js.Any, onsuccess: ICallback): Unit = js.native
     def timeSeries(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -928,7 +927,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def verifyDomain(params: js.Any): Unit = js.native
-    def verifyDomain(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def verifyDomain(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def verifyDomain(params: js.Any, onsuccess: ICallback): Unit = js.native
     def verifyDomain(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -949,7 +948,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def add(params: js.Any): Unit = js.native
-    def add(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def add(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -961,7 +960,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def delete(params: js.Any): Unit = js.native
-    def delete(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def delete(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -973,7 +972,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def info(params: js.Any): Unit = js.native
-    def info(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def info(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -985,7 +984,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def list(params: js.Any): Unit = js.native
-    def list(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def list(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -997,7 +996,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def pause(params: js.Any): Unit = js.native
-    def pause(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def pause(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def pause(params: js.Any, onsuccess: ICallback): Unit = js.native
     def pause(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1009,7 +1008,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def resume(params: js.Any): Unit = js.native
-    def resume(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def resume(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def resume(params: js.Any, onsuccess: ICallback): Unit = js.native
     def resume(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1024,7 +1023,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def update(params: js.Any): Unit = js.native
-    def update(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def update(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def update(params: js.Any, onsuccess: ICallback): Unit = js.native
     def update(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -1041,7 +1040,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def allTimeSeries(params: js.Any): Unit = js.native
-    def allTimeSeries(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def allTimeSeries(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def allTimeSeries(params: js.Any, onsuccess: ICallback): Unit = js.native
     def allTimeSeries(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1055,7 +1054,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def delete(params: js.Any): Unit = js.native
-    def delete(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def delete(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1067,7 +1066,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def info(params: js.Any): Unit = js.native
-    def info(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def info(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1078,7 +1077,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def list(params: js.Any): Unit = js.native
-    def list(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def list(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1090,7 +1089,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def timeSeries(params: js.Any): Unit = js.native
-    def timeSeries(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def timeSeries(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def timeSeries(params: js.Any, onsuccess: ICallback): Unit = js.native
     def timeSeries(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -1116,7 +1115,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def add(params: js.Any): Unit = js.native
-    def add(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def add(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1128,7 +1127,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def delete(params: js.Any): Unit = js.native
-    def delete(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def delete(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1140,7 +1139,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def info(params: js.Any): Unit = js.native
-    def info(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def info(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1152,7 +1151,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def list(params: js.Any): Unit = js.native
-    def list(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def list(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1164,7 +1163,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def publish(params: js.Any): Unit = js.native
-    def publish(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def publish(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def publish(params: js.Any, onsuccess: ICallback): Unit = js.native
     def publish(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1184,7 +1183,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def render(params: js.Any): Unit = js.native
-    def render(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def render(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def render(params: js.Any, onsuccess: ICallback): Unit = js.native
     def render(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1196,7 +1195,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def timeSeries(params: js.Any): Unit = js.native
-    def timeSeries(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def timeSeries(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def timeSeries(params: js.Any, onsuccess: ICallback): Unit = js.native
     def timeSeries(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1216,7 +1215,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def update(params: js.Any): Unit = js.native
-    def update(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def update(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def update(params: js.Any, onsuccess: ICallback): Unit = js.native
     def update(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -1234,7 +1233,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def addTrackingDomain(params: js.Any): Unit = js.native
-    def addTrackingDomain(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def addTrackingDomain(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def addTrackingDomain(params: js.Any, onsuccess: ICallback): Unit = js.native
     def addTrackingDomain(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1246,7 +1245,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def checkTrackingDomain(params: js.Any): Unit = js.native
-    def checkTrackingDomain(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def checkTrackingDomain(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def checkTrackingDomain(params: js.Any, onsuccess: ICallback): Unit = js.native
     def checkTrackingDomain(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1257,7 +1256,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def list(params: js.Any): Unit = js.native
-    def list(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def list(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1269,7 +1268,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def search(params: js.Any): Unit = js.native
-    def search(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def search(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def search(params: js.Any, onsuccess: ICallback): Unit = js.native
     def search(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1281,7 +1280,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def timeSeries(params: js.Any): Unit = js.native
-    def timeSeries(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def timeSeries(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def timeSeries(params: js.Any, onsuccess: ICallback): Unit = js.native
     def timeSeries(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1292,7 +1291,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def trackingDomains(params: js.Any): Unit = js.native
-    def trackingDomains(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def trackingDomains(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def trackingDomains(params: js.Any, onsuccess: ICallback): Unit = js.native
     def trackingDomains(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -1309,7 +1308,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def info(params: js.Any): Unit = js.native
-    def info(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def info(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1320,7 +1319,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def ping(params: js.Any): Unit = js.native
-    def ping(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def ping(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def ping(params: js.Any, onsuccess: ICallback): Unit = js.native
     def ping(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1331,7 +1330,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def ping2(params: js.Any): Unit = js.native
-    def ping2(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def ping2(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def ping2(params: js.Any, onsuccess: ICallback): Unit = js.native
     def ping2(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1342,7 +1341,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def senders(params: js.Any): Unit = js.native
-    def senders(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def senders(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def senders(params: js.Any, onsuccess: ICallback): Unit = js.native
     def senders(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -1363,7 +1362,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def add(params: js.Any): Unit = js.native
-    def add(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def add(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1375,7 +1374,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def delete(params: Id): Unit = js.native
-    def delete(params: Id, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def delete(params: Id, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def delete(params: Id, onsuccess: ICallback): Unit = js.native
     def delete(params: Id, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1387,7 +1386,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def info(params: js.Any): Unit = js.native
-    def info(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def info(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback): Unit = js.native
     def info(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1398,7 +1397,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def list(params: js.Any): Unit = js.native
-    def list(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def list(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1414,7 +1413,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def update(params: js.Any): Unit = js.native
-    def update(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def update(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def update(params: js.Any, onsuccess: ICallback): Unit = js.native
     def update(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
@@ -1435,7 +1434,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def add(params: js.Any): Unit = js.native
-    def add(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def add(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback): Unit = js.native
     def add(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1447,7 +1446,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def delete(params: js.Any): Unit = js.native
-    def delete(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def delete(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback): Unit = js.native
     def delete(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
     
@@ -1460,7 +1459,7 @@ object mod {
       * @param {Function} onerror an optional callback to execute when the API call errors out - defaults to throwing the error as an exception
       */
     def list(params: js.Any): Unit = js.native
-    def list(params: js.Any, onsuccess: js.UndefOr[scala.Nothing], onerror: ICallback): Unit = js.native
+    def list(params: js.Any, onsuccess: Unit, onerror: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback): Unit = js.native
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }

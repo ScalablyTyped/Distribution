@@ -2,21 +2,19 @@ package typings.artyomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtyomVoice extends StObject {
   
-  var default: Boolean = js.native
+  var default: Boolean
   
-  var lang: String = js.native
+  var lang: String
   
-  var localService: Boolean = js.native
+  var localService: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var voiceURI: String = js.native
+  var voiceURI: String
 }
 object ArtyomVoice {
   

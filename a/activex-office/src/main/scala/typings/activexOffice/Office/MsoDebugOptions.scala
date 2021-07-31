@@ -2,32 +2,30 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MsoDebugOptions extends StObject {
   
-  def AddIgnoredAssertTag(bstrTagToIgnore: String): Unit = js.native
+  def AddIgnoredAssertTag(bstrTagToIgnore: String): Unit
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var FeatureReports: Double = js.native
+  var FeatureReports: Double
   
   @JSName("Office.MsoDebugOptions_typekey")
-  var OfficeDotMsoDebugOptions_typekey: MsoDebugOptions = js.native
+  var OfficeDotMsoDebugOptions_typekey: MsoDebugOptions
   
-  var OutputToDebugger: Boolean = js.native
+  var OutputToDebugger: Boolean
   
-  var OutputToFile: Boolean = js.native
+  var OutputToFile: Boolean
   
-  var OutputToMessageBox: Boolean = js.native
+  var OutputToMessageBox: Boolean
   
-  def RemoveIgnoredAssertTag(bstrTagToIgnore: String): Unit = js.native
+  def RemoveIgnoredAssertTag(bstrTagToIgnore: String): Unit
   
-  val UnitTestManager: js.Any = js.native
+  val UnitTestManager: js.Any
 }
 object MsoDebugOptions {
   

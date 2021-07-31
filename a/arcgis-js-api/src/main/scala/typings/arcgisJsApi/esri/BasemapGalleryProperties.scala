@@ -2,53 +2,53 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BasemapGalleryProperties extends WidgetProperties {
+trait BasemapGalleryProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The map's [basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#activeBasemap)
     */
-  var activeBasemap: js.UndefOr[BasemapProperties] = js.native
+  var activeBasemap: js.UndefOr[BasemapProperties] = js.undefined
   
   /**
     * When `true`, sets the widget to a disabled state so the user cannot interact with it.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#disabled)
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * The source for basemaps that the widget will display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#source)
     */
-  var source: js.UndefOr[LocalBasemapsSourceProperties | PortalBasemapsSourceProperties] = js.native
+  var source: js.UndefOr[LocalBasemapsSourceProperties | PortalBasemapsSourceProperties] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#viewModel)
     */
-  var viewModel: js.UndefOr[BasemapGalleryViewModelProperties] = js.native
+  var viewModel: js.UndefOr[BasemapGalleryViewModelProperties] = js.undefined
 }
 object BasemapGalleryProperties {
   

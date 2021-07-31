@@ -2,20 +2,18 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for GetDatabaseDdl.
   */
-@js.native
 trait SchemaGetDatabaseDdlResponse extends StObject {
   
   /**
     * A list of formatted DDL statements defining the schema of the database
     * specified in the request.
     */
-  var statements: js.UndefOr[js.Array[String]] = js.native
+  var statements: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGetDatabaseDdlResponse {
   

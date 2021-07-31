@@ -8,36 +8,34 @@ import typings.reactBigCalendar.anon.Start
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventWrapperProps[TEvent /* <: js.Object */] extends StObject {
   
-  var accessors: Start[TEvent] = js.native
+  var accessors: Start[TEvent]
   
-  var className: String = js.native
+  var className: String
   
-  var continuesEarlier: Boolean = js.native
+  var continuesEarlier: Boolean
   
-  var continuesLater: Boolean = js.native
+  var continuesLater: Boolean
   
-  var event: TEvent = js.native
+  var event: TEvent
   
-  var getters: DayProp[TEvent] = js.native
+  var getters: DayProp[TEvent]
   
-  var isRtl: Boolean = js.native
+  var isRtl: Boolean
   
-  var label: String = js.native
+  var label: String
   
-  def onClick(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
+  def onClick(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
   
-  def onDoubleClick(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
+  def onDoubleClick(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
   
-  var selected: Boolean = js.native
+  var selected: Boolean
   
   // https://github.com/intljusticemission/react-big-calendar/blob/27a2656b40ac8729634d24376dff8ea781a66d50/src/TimeGridEvent.js#L28
-  var style: js.UndefOr[CSSPropertiesxOffsetnumbe] = js.native
+  var style: js.UndefOr[CSSPropertiesxOffsetnumbe] = js.undefined
 }
 object EventWrapperProps {
   
@@ -60,7 +58,7 @@ object EventWrapperProps {
   }
   
   @scala.inline
-  implicit class EventWrapperPropsMutableBuilder[Self <: EventWrapperProps[_], TEvent /* <: js.Object */] (val x: Self with EventWrapperProps[TEvent]) extends AnyVal {
+  implicit class EventWrapperPropsMutableBuilder[Self <: EventWrapperProps[?], TEvent /* <: js.Object */] (val x: Self & EventWrapperProps[TEvent]) extends AnyVal {
     
     @scala.inline
     def setAccessors(value: Start[TEvent]): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])

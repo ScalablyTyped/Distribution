@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagemen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventsResetMultipleForAllRequest extends StObject {
   
   /** The IDs of events to reset. */
-  var event_ids: js.UndefOr[js.Array[String]] = js.native
+  var event_ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesManagement#eventsResetMultipleForAllRequest`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object EventsResetMultipleForAllRequest {
   

@@ -7,7 +7,6 @@ import typings.storybookAddonJest.anon.ReadonlyHocProps
 import typings.storybookAddonJest.provideJestResultMod.HocProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelMod {
@@ -15,7 +14,9 @@ object panelMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@storybook/addon-jest/dist/components/Panel", JSImport.Default)
   @js.native
-  class default protected () extends ComponentDidCatch {
+  class default protected ()
+    extends StObject
+       with ComponentDidCatch {
     def this(props: ReadonlyHocProps) = this()
     def this(props: HocProps) = this()
     def this(props: HocProps, context: js.Any) = this()

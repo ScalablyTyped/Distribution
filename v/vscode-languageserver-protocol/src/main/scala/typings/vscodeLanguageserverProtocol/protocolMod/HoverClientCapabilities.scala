@@ -3,22 +3,20 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverTypes.mod.MarkupKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoverClientCapabilities extends StObject {
   
   /**
     * Client supports the follow content formats for the content
     * property. The order describes the preferred format of the client.
     */
-  var contentFormat: js.UndefOr[js.Array[MarkupKind]] = js.native
+  var contentFormat: js.UndefOr[js.Array[MarkupKind]] = js.undefined
   
   /**
     * Whether hover supports dynamic registration.
     */
-  var dynamicRegistration: js.UndefOr[Boolean] = js.native
+  var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
 }
 object HoverClientCapabilities {
   

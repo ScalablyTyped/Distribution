@@ -2,15 +2,13 @@ package typings.sparqljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseExpression extends StObject {
   
-  var distinct: js.UndefOr[Boolean] = js.native
+  var distinct: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object BaseExpression {
   

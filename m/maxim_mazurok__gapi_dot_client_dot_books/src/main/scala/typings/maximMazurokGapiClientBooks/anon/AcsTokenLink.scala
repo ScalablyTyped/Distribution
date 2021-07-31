@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcsTokenLink extends StObject {
   
   /** URL to retrieve ACS token for pdf download. (In LITE projection.) */
-  var acsTokenLink: js.UndefOr[String] = js.native
+  var acsTokenLink: js.UndefOr[String] = js.undefined
   
   /** URL to download pdf. (In LITE projection.) */
-  var downloadLink: js.UndefOr[String] = js.native
+  var downloadLink: js.UndefOr[String] = js.undefined
   
   /** Is a scanned image pdf available either as public domain or for purchase. (In LITE projection.) */
-  var isAvailable: js.UndefOr[Boolean] = js.native
+  var isAvailable: js.UndefOr[Boolean] = js.undefined
 }
 object AcsTokenLink {
   

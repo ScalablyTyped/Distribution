@@ -12,7 +12,7 @@ Observable data. Reactive functions. Simple code.
 | Keywords           | mobservable, observable, react-component, react, reactjs, reactive, model, frp, functional-reactive-programming |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 11467 |
+| # downloads        | 10514 |
 | # stars            | 2 |
 
 ## Links

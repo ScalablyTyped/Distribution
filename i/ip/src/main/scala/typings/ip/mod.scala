@@ -7,170 +7,140 @@ import typings.ip.ipStrings.public
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ip", "address")
+  @JSImport("ip", JSImport.Namespace)
   @js.native
-  def address(): String = js.native
-  @JSImport("ip", "address")
-  @js.native
-  def address(name: String): String = js.native
-  @JSImport("ip", "address")
-  @js.native
-  def address(name: `private`, family: ipv4): String = js.native
-  @JSImport("ip", "address")
-  @js.native
-  def address(name: `private`, family: ipv6): String = js.native
-  @JSImport("ip", "address")
-  @js.native
-  def address(name: public, family: ipv4): String = js.native
-  @JSImport("ip", "address")
-  @js.native
-  def address(name: public, family: ipv6): String = js.native
-  @JSImport("ip", "address")
-  @js.native
-  def address_ipv4(name: js.UndefOr[scala.Nothing], family: ipv4): String = js.native
-  @JSImport("ip", "address")
-  @js.native
-  def address_ipv4(name: String, family: ipv4): String = js.native
-  @JSImport("ip", "address")
-  @js.native
-  def address_ipv6(name: js.UndefOr[scala.Nothing], family: ipv6): String = js.native
-  @JSImport("ip", "address")
-  @js.native
-  def address_ipv6(name: String, family: ipv6): String = js.native
-  @JSImport("ip", "address")
-  @js.native
-  def address_private(name: `private`): String = js.native
-  @JSImport("ip", "address")
-  @js.native
-  def address_public(name: public): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ip", "cidr")
-  @js.native
-  def cidr(cidr: String): String = js.native
+  @scala.inline
+  def address(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")().asInstanceOf[String]
+  @scala.inline
+  def address(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def address(name: `private`, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def address(name: `private`, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def address(name: public, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def address(name: public, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ip", "cidrSubnet")
-  @js.native
-  def cidrSubnet(cidr: String): SubnetInfo = js.native
+  @scala.inline
+  def address_ipv4(name: String, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def address_ipv4(name: Unit, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ip", "fromLong")
-  @js.native
-  def fromLong(ip: Double): String = js.native
+  @scala.inline
+  def address_ipv6(name: String, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def address_ipv6(name: Unit, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ip", "fromPrefixLen")
-  @js.native
-  def fromPrefixLen(prefixLength: Double): String = js.native
-  @JSImport("ip", "fromPrefixLen")
-  @js.native
-  def fromPrefixLen_ipv4(prefixLength: Double, family: ipv4): String = js.native
-  @JSImport("ip", "fromPrefixLen")
-  @js.native
-  def fromPrefixLen_ipv6(prefixLength: Double, family: ipv6): String = js.native
+  @scala.inline
+  def address_private(name: `private`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ip", "isEqual")
-  @js.native
-  def isEqual(ip1: String, ip2: String): Boolean = js.native
+  @scala.inline
+  def address_public(name: public): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ip", "isLoopback")
-  @js.native
-  def isLoopback(ip: String): Boolean = js.native
+  @scala.inline
+  def cidr(cidr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cidr")(cidr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ip", "isPrivate")
-  @js.native
-  def isPrivate(ip: String): Boolean = js.native
+  @scala.inline
+  def cidrSubnet(cidr: String): SubnetInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("cidrSubnet")(cidr.asInstanceOf[js.Any]).asInstanceOf[SubnetInfo]
   
-  @JSImport("ip", "isPublic")
-  @js.native
-  def isPublic(ip: String): Boolean = js.native
+  @scala.inline
+  def fromLong(ip: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLong")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ip", "isV4Format")
-  @js.native
-  def isV4Format(ip: String): Boolean = js.native
+  @scala.inline
+  def fromPrefixLen(prefixLength: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ip", "isV6Format")
-  @js.native
-  def isV6Format(ip: String): Boolean = js.native
+  @scala.inline
+  def fromPrefixLen_ipv4(prefixLength: Double, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ip", "loopback")
-  @js.native
-  def loopback(): String = js.native
-  @JSImport("ip", "loopback")
-  @js.native
-  def loopback_ipv4(family: ipv4): String = js.native
-  @JSImport("ip", "loopback")
-  @js.native
-  def loopback_ipv6(family: ipv6): String = js.native
+  @scala.inline
+  def fromPrefixLen_ipv6(prefixLength: Double, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ip", "mask")
-  @js.native
-  def mask(ip: String, mask: String): String = js.native
+  @scala.inline
+  def isEqual(ip1: String, ip2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(ip1.asInstanceOf[js.Any], ip2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ip", "not")
-  @js.native
-  def not(ip: String): String = js.native
+  @scala.inline
+  def isLoopback(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoopback")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ip", "or")
-  @js.native
-  def or(ip: String, mask: String): String = js.native
+  @scala.inline
+  def isPrivate(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ip", "subnet")
-  @js.native
-  def subnet(ip: String, subnet: String): SubnetInfo = js.native
+  @scala.inline
+  def isPublic(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPublic")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ip", "toBuffer")
-  @js.native
-  def toBuffer(ip: String): Buffer = js.native
-  @JSImport("ip", "toBuffer")
-  @js.native
-  def toBuffer(ip: String, buffer: js.UndefOr[scala.Nothing], offset: Double): Buffer = js.native
-  @JSImport("ip", "toBuffer")
-  @js.native
-  def toBuffer(ip: String, buffer: Buffer): Buffer = js.native
-  @JSImport("ip", "toBuffer")
-  @js.native
-  def toBuffer(ip: String, buffer: Buffer, offset: Double): Buffer = js.native
+  @scala.inline
+  def isV4Format(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isV4Format")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ip", "toLong")
-  @js.native
-  def toLong(ip: String): Double = js.native
+  @scala.inline
+  def isV6Format(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isV6Format")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ip", "toString")
-  @js.native
-  def toString_(ip: Buffer): String = js.native
-  @JSImport("ip", "toString")
-  @js.native
-  def toString_(ip: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): String = js.native
-  @JSImport("ip", "toString")
-  @js.native
-  def toString_(ip: Buffer, offset: Double): String = js.native
-  @JSImport("ip", "toString")
-  @js.native
-  def toString_(ip: Buffer, offset: Double, length: Double): String = js.native
+  @scala.inline
+  def loopback(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")().asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def loopback_ipv4(family: ipv4): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")(family.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def loopback_ipv6(family: ipv6): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")(family.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def mask(ip: String, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mask")(ip.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def not(ip: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def or(ip: String, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(ip.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def subnet(ip: String, subnet: String): SubnetInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("subnet")(ip.asInstanceOf[js.Any], subnet.asInstanceOf[js.Any])).asInstanceOf[SubnetInfo]
+  
+  @scala.inline
+  def toBuffer(ip: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(ip: String, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(ip: String, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(ip: String, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def toLong(ip: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toLong")(ip.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def toString_(ip: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toString_(ip: Buffer, offset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toString_(ip: Buffer, offset: Double, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toString_(ip: Buffer, offset: Unit, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait SubnetInfo extends StObject {
     
-    var broadcastAddress: String = js.native
+    var broadcastAddress: String
     
-    def contains(ip: String): Boolean = js.native
+    def contains(ip: String): Boolean
     
-    var firstAddress: String = js.native
+    var firstAddress: String
     
-    var lastAddress: String = js.native
+    var lastAddress: String
     
-    var length: Double = js.native
+    var length: Double
     
-    var networkAddress: String = js.native
+    var networkAddress: String
     
-    var numHosts: Double = js.native
+    var numHosts: Double
     
-    var subnetMask: String = js.native
+    var subnetMask: String
     
-    var subnetMaskLength: Double = js.native
+    var subnetMaskLength: Double
   }
   object SubnetInfo {
     

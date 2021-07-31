@@ -2,17 +2,15 @@ package typings.diff.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseOptions extends StObject {
   
   /**
     * `true` to ignore casing difference.
     * @default false
     */
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
 }
 object BaseOptions {
   

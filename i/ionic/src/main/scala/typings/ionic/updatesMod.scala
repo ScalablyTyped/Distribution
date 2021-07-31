@@ -5,39 +5,35 @@ import typings.ionic.definitionsMod.IonicEnvironment
 import typings.ionicCliFramework.definitionsMod.PackageJson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object updatesMod {
   
-  @JSImport("ionic/lib/updates", "getUpdateConfig")
+  @JSImport("ionic/lib/updates", JSImport.Namespace)
   @js.native
-  def getUpdateConfig(hasConfig: GetUpdateConfigDeps): js.Promise[UpdateConfig] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ionic/lib/updates", "readUpdateConfig")
-  @js.native
-  def readUpdateConfig(dir: String): js.Promise[UpdateConfig] = js.native
+  @scala.inline
+  def getUpdateConfig(hasConfig: GetUpdateConfigDeps): js.Promise[UpdateConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdateConfig")(hasConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UpdateConfig]]
   
-  @JSImport("ionic/lib/updates", "runNotify")
-  @js.native
-  def runNotify(env: IonicEnvironment, pkg: PersistedPackage, latestVersion: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def readUpdateConfig(dir: String): js.Promise[UpdateConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("readUpdateConfig")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UpdateConfig]]
   
-  @JSImport("ionic/lib/updates", "runUpdateCheck")
-  @js.native
-  def runUpdateCheck(hasConfig: PersistPackageVersionsDeps): js.Promise[Unit] = js.native
+  @scala.inline
+  def runNotify(env: IonicEnvironment, pkg: PersistedPackage, latestVersion: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runNotify")(env.asInstanceOf[js.Any], pkg.asInstanceOf[js.Any], latestVersion.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("ionic/lib/updates", "runUpdateNotify")
-  @js.native
-  def runUpdateNotify(env: IonicEnvironment, pkg: PackageJson): js.Promise[Unit] = js.native
+  @scala.inline
+  def runUpdateCheck(hasConfig: PersistPackageVersionsDeps): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("runUpdateCheck")(hasConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("ionic/lib/updates", "writeUpdateConfig")
-  @js.native
-  def writeUpdateConfig(dir: String, config: UpdateConfig): js.Promise[Unit] = js.native
+  @scala.inline
+  def runUpdateNotify(env: IonicEnvironment, pkg: PackageJson): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runUpdateNotify")(env.asInstanceOf[js.Any], pkg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
+  @scala.inline
+  def writeUpdateConfig(dir: String, config: UpdateConfig): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUpdateConfig")(dir.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait GetUpdateConfigDeps extends StObject {
     
-    val config: IConfig = js.native
+    val config: IConfig
   }
   object GetUpdateConfigDeps {
     
@@ -55,10 +51,9 @@ object updatesMod {
     }
   }
   
-  @js.native
   trait PersistPackageVersionsDeps extends StObject {
     
-    val config: IConfig = js.native
+    val config: IConfig
   }
   object PersistPackageVersionsDeps {
     
@@ -76,12 +71,11 @@ object updatesMod {
     }
   }
   
-  @js.native
   trait PersistedPackage extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object PersistedPackage {
     
@@ -102,14 +96,13 @@ object updatesMod {
     }
   }
   
-  @js.native
   trait UpdateConfig extends StObject {
     
-    var lastNotify: js.UndefOr[String] = js.native
+    var lastNotify: js.UndefOr[String] = js.undefined
     
-    var lastUpdate: js.UndefOr[String] = js.native
+    var lastUpdate: js.UndefOr[String] = js.undefined
     
-    var packages: js.Array[PersistedPackage] = js.native
+    var packages: js.Array[PersistedPackage]
   }
   object UpdateConfig {
     

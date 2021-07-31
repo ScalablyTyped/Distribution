@@ -2,21 +2,19 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcquirePermission extends StObject {
   
-  var acquirePermission: js.UndefOr[String] = js.native
+  var acquirePermission: js.UndefOr[String] = js.undefined
   
-  var ageGroup: js.UndefOr[String] = js.native
+  var ageGroup: js.UndefOr[String] = js.undefined
   
-  var allowedMaturityRating: js.UndefOr[String] = js.native
+  var allowedMaturityRating: js.UndefOr[String] = js.undefined
   
-  var isInFamily: js.UndefOr[Boolean] = js.native
+  var isInFamily: js.UndefOr[Boolean] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object AcquirePermission {
   

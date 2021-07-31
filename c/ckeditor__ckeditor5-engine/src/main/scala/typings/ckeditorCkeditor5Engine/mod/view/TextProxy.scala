@@ -4,13 +4,14 @@ import typings.ckeditorCkeditor5Engine.anon.ParentFirst
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.textProxy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/view/textproxy
 @JSImport("@ckeditor/ckeditor5-engine", "view.TextProxy")
 @js.native
-class TextProxy protected () extends Item {
+class TextProxy protected ()
+  extends StObject
+     with Item {
   protected def this(textNode: Text, offsetInText: Double, length: Double) = this()
   
   val data: String = js.native

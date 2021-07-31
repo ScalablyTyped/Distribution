@@ -2,32 +2,30 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadingFinishedEvent extends StObject {
   
   /**
     * Total number of bytes received for this request.
     */
-  var encodedDataLength: Double = js.native
+  var encodedDataLength: Double
   
   /**
     * Request identifier.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * Set when 1) response was blocked by Cross-Origin Read Blocking and also
     * 2) this needs to be reported to the DevTools console.
     */
-  var shouldReportCorbBlocking: js.UndefOr[Boolean] = js.native
+  var shouldReportCorbBlocking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Timestamp.
     */
-  var timestamp: MonotonicTime = js.native
+  var timestamp: MonotonicTime
 }
 object LoadingFinishedEvent {
   

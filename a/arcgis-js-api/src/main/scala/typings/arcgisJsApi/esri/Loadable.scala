@@ -7,7 +7,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.loading
 import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -46,8 +45,8 @@ trait Loadable extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#load)
     */
-  def load(): js.Promise[_] = js.native
-  def load(signal: AbortSignal): js.Promise[_] = js.native
+  def load(): js.Promise[js.Any] = js.native
+  def load(signal: AbortSignal): js.Promise[js.Any] = js.native
   
   /**
     * The Error object returned if an error occurred while loading.
@@ -68,15 +67,15 @@ trait Loadable extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#loadWarnings)
     */
-  val loadWarnings: js.Array[_] = js.native
+  val loadWarnings: js.Array[js.Any] = js.native
   
   /**
     * `when()` may be leveraged once an instance of the class is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#when)
     */
-  def when(): js.Promise[_] = js.native
-  def when(callback: js.UndefOr[scala.Nothing], errback: js.Function): js.Promise[_] = js.native
-  def when(callback: js.Function): js.Promise[_] = js.native
-  def when(callback: js.Function, errback: js.Function): js.Promise[_] = js.native
+  def when(): js.Promise[js.Any] = js.native
+  def when(callback: js.Function): js.Promise[js.Any] = js.native
+  def when(callback: js.Function, errback: js.Function): js.Promise[js.Any] = js.native
+  def when(callback: Unit, errback: js.Function): js.Promise[js.Any] = js.native
 }

@@ -2,17 +2,15 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Classes extends StObject {
   
   /** If provided, removes the regions that have all of the specified classes. Otherwise removes all regions. */
-  var classes: js.UndefOr[js.Array[String]] = js.native
+  var classes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Transition duration for fade out. */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
 }
 object Classes {
   

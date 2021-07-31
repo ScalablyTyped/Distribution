@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1ListTaxonomiesResponse extends StObject {
   
   /** Token used to retrieve the next page of results, or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Taxonomies that the project contains. */
-  var taxonomies: js.UndefOr[js.Array[GoogleCloudDatacatalogV1beta1Taxonomy]] = js.native
+  var taxonomies: js.UndefOr[js.Array[GoogleCloudDatacatalogV1beta1Taxonomy]] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1ListTaxonomiesResponse {
   

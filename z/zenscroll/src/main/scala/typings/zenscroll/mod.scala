@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,12 +14,11 @@ object mod extends Shortcut {
   
   object ZenScroll {
     
-    @js.native
     trait setupOption extends StObject {
       
-      var defaultDuration: Double = js.native
+      var defaultDuration: Double
       
-      var edgeOffset: Double = js.native
+      var edgeOffset: Double
     }
     object setupOption {
       
@@ -45,51 +43,46 @@ object mod extends Shortcut {
     trait zenscroll extends StObject {
       
       def center(elem: HTMLElement): Unit = js.native
-      def center(
-        elem: HTMLElement,
-        duration: js.UndefOr[scala.Nothing],
-        offset: js.UndefOr[scala.Nothing],
-        onDone: js.Function0[Unit]
-      ): Unit = js.native
-      def center(elem: HTMLElement, duration: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
-      def center(elem: HTMLElement, duration: js.UndefOr[scala.Nothing], offset: Double, onDone: js.Function0[Unit]): Unit = js.native
       def center(elem: HTMLElement, duration: Double): Unit = js.native
-      def center(elem: HTMLElement, duration: Double, offset: js.UndefOr[scala.Nothing], onDone: js.Function0[Unit]): Unit = js.native
       def center(elem: HTMLElement, duration: Double, offset: Double): Unit = js.native
       def center(elem: HTMLElement, duration: Double, offset: Double, onDone: js.Function0[Unit]): Unit = js.native
+      def center(elem: HTMLElement, duration: Double, offset: Unit, onDone: js.Function0[Unit]): Unit = js.native
+      def center(elem: HTMLElement, duration: Unit, offset: Double): Unit = js.native
+      def center(elem: HTMLElement, duration: Unit, offset: Double, onDone: js.Function0[Unit]): Unit = js.native
+      def center(elem: HTMLElement, duration: Unit, offset: Unit, onDone: js.Function0[Unit]): Unit = js.native
       
       def createScroller(scrollContainer: HTMLElement): typings.zenscroll.mod.ZenScroll.zenscroll = js.native
-      def createScroller(scrollContainer: HTMLElement, defaultDuration: js.UndefOr[scala.Nothing], edgeOffset: Double): typings.zenscroll.mod.ZenScroll.zenscroll = js.native
       def createScroller(scrollContainer: HTMLElement, defaultDuration: Double): typings.zenscroll.mod.ZenScroll.zenscroll = js.native
       def createScroller(scrollContainer: HTMLElement, defaultDuration: Double, edgeOffset: Double): typings.zenscroll.mod.ZenScroll.zenscroll = js.native
+      def createScroller(scrollContainer: HTMLElement, defaultDuration: Unit, edgeOffset: Double): typings.zenscroll.mod.ZenScroll.zenscroll = js.native
       
       def getTopOf(elem: HTMLElement): Double = js.native
       
       def getY(): Double = js.native
       
       def intoView(elem: HTMLElement): Unit = js.native
-      def intoView(elem: HTMLElement, duration: js.UndefOr[scala.Nothing], onDone: js.Function0[Unit]): Unit = js.native
       def intoView(elem: HTMLElement, duration: Double): Unit = js.native
       def intoView(elem: HTMLElement, duration: Double, onDone: js.Function0[Unit]): Unit = js.native
+      def intoView(elem: HTMLElement, duration: Unit, onDone: js.Function0[Unit]): Unit = js.native
       
       def moving(): Boolean = js.native
       
       def setup(): setupOption = js.native
-      def setup(defaultDuration: js.UndefOr[scala.Nothing], edgeOffset: Double): setupOption = js.native
       def setup(defaultDuration: Double): setupOption = js.native
       def setup(defaultDuration: Double, edgeOffset: Double): setupOption = js.native
+      def setup(defaultDuration: Unit, edgeOffset: Double): setupOption = js.native
       
       def stop(): Unit = js.native
       
       def to(elem: HTMLElement): Unit = js.native
-      def to(elem: HTMLElement, duration: js.UndefOr[scala.Nothing], onDone: js.Function0[Unit]): Unit = js.native
       def to(elem: HTMLElement, duration: Double): Unit = js.native
       def to(elem: HTMLElement, duration: Double, onDone: js.Function0[Unit]): Unit = js.native
+      def to(elem: HTMLElement, duration: Unit, onDone: js.Function0[Unit]): Unit = js.native
       
       def toY(targetY: Double): Unit = js.native
-      def toY(targetY: Double, duration: js.UndefOr[scala.Nothing], onDone: js.Function0[Unit]): Unit = js.native
       def toY(targetY: Double, duration: Double): Unit = js.native
       def toY(targetY: Double, duration: Double, onDone: js.Function0[Unit]): Unit = js.native
+      def toY(targetY: Double, duration: Unit, onDone: js.Function0[Unit]): Unit = js.native
     }
   }
   

@@ -8,46 +8,46 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CircleProperties extends PolygonProperties {
+trait CircleProperties
+  extends StObject
+     with PolygonProperties {
   
   /**
     * The center point of the circle.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#center)
     */
-  var center: js.UndefOr[PointProperties] = js.native
+  var center: js.UndefOr[PointProperties] = js.undefined
   
   /**
     * Applicable when the spatial reference of the center point is either set to Web Mercator (wkid: 3857) or geographic/geodesic (wkid: 4326).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#geodesic)
     */
-  var geodesic: js.UndefOr[Boolean] = js.native
+  var geodesic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This value defines the number of points along the curve of the circle.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#numberOfPoints)
     */
-  var numberOfPoints: js.UndefOr[Double] = js.native
+  var numberOfPoints: js.UndefOr[Double] = js.undefined
   
   /**
     * The radius of the circle.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#radius)
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * Unit of the radius.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#radiusUnit)
     */
-  var radiusUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.native
+  var radiusUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
 }
 object CircleProperties {
   

@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deprecated interface. Do not use anymore.
   * @deprecated Deprecated
   */
-@js.native
-trait XIdlClassProvider extends XInterface {
+trait XIdlClassProvider
+  extends StObject
+     with XInterface {
   
-  val IdlClasses: SafeArray[XIdlClass[_]] = js.native
+  val IdlClasses: SafeArray[XIdlClass[js.Any]]
   
-  def getIdlClasses(): SafeArray[XIdlClass[_]] = js.native
+  def getIdlClasses(): SafeArray[XIdlClass[js.Any]]
 }
 object XIdlClassProvider {
   
   @scala.inline
   def apply(
-    IdlClasses: SafeArray[XIdlClass[_]],
+    IdlClasses: SafeArray[XIdlClass[js.Any]],
     acquire: () => Unit,
-    getIdlClasses: () => SafeArray[XIdlClass[_]],
+    getIdlClasses: () => SafeArray[XIdlClass[js.Any]],
     queryInterface: `type` => js.Any,
     release: () => Unit
   ): XIdlClassProvider = {
@@ -37,9 +37,9 @@ object XIdlClassProvider {
   implicit class XIdlClassProviderMutableBuilder[Self <: XIdlClassProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetIdlClasses(value: () => SafeArray[XIdlClass[_]]): Self = StObject.set(x, "getIdlClasses", js.Any.fromFunction0(value))
+    def setGetIdlClasses(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getIdlClasses", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIdlClasses(value: SafeArray[XIdlClass[_]]): Self = StObject.set(x, "IdlClasses", value.asInstanceOf[js.Any])
+    def setIdlClasses(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "IdlClasses", value.asInstanceOf[js.Any])
   }
 }

@@ -2,13 +2,11 @@ package typings.next.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeLimit extends StObject {
   
-  var sizeLimit: js.UndefOr[Double | String] = js.native
+  var sizeLimit: js.UndefOr[Double | String] = js.undefined
 }
 object SizeLimit {
   

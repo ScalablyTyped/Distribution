@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyncWorkspaceResponse extends StObject {
   
   /** The merge conflict after sync. If this field is not empty, the sync is still treated as successful. But a version cannot be created until all conflicts are resolved. */
-  var mergeConflict: js.UndefOr[js.Array[MergeConflict]] = js.native
+  var mergeConflict: js.UndefOr[js.Array[MergeConflict]] = js.undefined
   
   /** Indicates whether synchronization caused a merge conflict or sync error. */
-  var syncStatus: js.UndefOr[SyncStatus] = js.native
+  var syncStatus: js.UndefOr[SyncStatus] = js.undefined
 }
 object SyncWorkspaceResponse {
   

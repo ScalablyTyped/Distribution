@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficPercentStrategy extends StObject {
   
   /**
@@ -16,8 +14,8 @@ trait TrafficPercentStrategy extends StObject {
   var percentages: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.TrafficPercentStrategy with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.TrafficPercentStrategy & TopLevel[js.Any]
+  ] = js.undefined
 }
 object TrafficPercentStrategy {
   
@@ -34,7 +32,7 @@ object TrafficPercentStrategy {
     def setPercentages(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.TrafficPercentStrategy with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.TrafficPercentStrategy & TopLevel[js.Any]
     ): Self = StObject.set(x, "percentages", value.asInstanceOf[js.Any])
     
     @scala.inline

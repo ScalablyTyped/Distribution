@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.msk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterLoggingInfoBrokerLogsFirehose extends StObject {
   
   /**
     * Name of the Kinesis Data Firehose delivery stream to deliver logs to.
     */
-  var deliveryStream: js.UndefOr[String] = js.native
+  var deliveryStream: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
 }
 object ClusterLoggingInfoBrokerLogsFirehose {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the StandardDeviationErrorBars class.
   */
-@js.native
-trait ASPxClientStandardDeviationErrorBars extends ASPxClientIndicator {
+trait ASPxClientStandardDeviationErrorBars
+  extends StObject
+     with ASPxClientIndicator {
   
   /**
     * Returns the multiplier on which the standard deviation value is multiplied before display.
     */
-  var multiplier: Double = js.native
+  var multiplier: Double
 }
 object ASPxClientStandardDeviationErrorBars {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetProfileResponse extends StObject {
   
   /**
     * The details of the room profile requested. Required.
     */
-  var Profile: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Profile] = js.native
+  var Profile: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Profile] = js.undefined
 }
 object GetProfileResponse {
   

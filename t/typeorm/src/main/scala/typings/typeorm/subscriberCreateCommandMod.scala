@@ -2,7 +2,6 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriberCreateCommandMod {
@@ -27,11 +26,14 @@ object subscriberCreateCommandMod {
   /* static members */
   object SubscriberCreateCommand {
     
+    @JSImport("typeorm/commands/SubscriberCreateCommand", "SubscriberCreateCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Gets contents of the entity file.
       */
-    @JSImport("typeorm/commands/SubscriberCreateCommand", "SubscriberCreateCommand.getTemplate")
-    @js.native
-    def getTemplate(name: String): String = js.native
+    @scala.inline
+    def getTemplate(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

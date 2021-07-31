@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationshipSchemeForPoint
-  extends Object
+  extends StObject
+     with Object
      with RelationshipScheme {
   
   /**
@@ -17,56 +16,56 @@ trait RelationshipSchemeForPoint
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
     */
-  var colorsForClassBreaks: js.Array[RelationshipSchemeForPointColorsForClassBreaks] = js.native
+  var colorsForClassBreaks: js.Array[RelationshipSchemeForPointColorsForClassBreaks]
   
   /**
     * The ID uniquely identifying the color scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The unique name of the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The color of the point symbol used to indicate features with no data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
     */
-  var noDataColor: Color_ = js.native
+  var noDataColor: Color_
   
   /**
     * The opacity of the point symbol (0 - 1).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Properties for defining the outline of the marker symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
     */
-  var outline: RelationshipSchemeForPointOutline = js.native
+  var outline: RelationshipSchemeForPointOutline
   
   /**
     * The size of the point symbol in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * Tags associated with the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
 }
 object RelationshipSchemeForPoint {
   

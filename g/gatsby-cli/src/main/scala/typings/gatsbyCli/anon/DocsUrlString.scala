@@ -2,17 +2,15 @@ package typings.gatsbyCli.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocsUrlString extends StObject {
   
-  var docsUrl: String = js.native
+  var docsUrl: String
   
-  var level: typings.gatsbyCli.structuredErrorsTypesMod.Level = js.native
+  var level: typings.gatsbyCli.structuredErrorsTypesMod.Level
   
-  def text(hasPathFilePathLineColumn: Column): String = js.native
+  def text(hasPathFilePathLineColumn: Column): String
 }
 object DocsUrlString {
   

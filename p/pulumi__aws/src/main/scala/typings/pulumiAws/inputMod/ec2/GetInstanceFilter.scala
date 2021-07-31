@@ -2,15 +2,13 @@ package typings.pulumiAws.inputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceFilter extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object GetInstanceFilter {
   

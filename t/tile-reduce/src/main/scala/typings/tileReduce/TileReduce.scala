@@ -2,27 +2,25 @@ package typings.tileReduce
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TileReduce {
   
   type BBox = js.Tuple4[Double, Double, Double, Double]
   
-  @js.native
   trait Source extends StObject {
     
-    var layers: js.UndefOr[js.Array[String]] = js.native
+    var layers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var maxrate: js.UndefOr[Double] = js.native
+    var maxrate: js.UndefOr[Double] = js.undefined
     
-    var mbtiles: js.UndefOr[String] = js.native
+    var mbtiles: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Source {
     

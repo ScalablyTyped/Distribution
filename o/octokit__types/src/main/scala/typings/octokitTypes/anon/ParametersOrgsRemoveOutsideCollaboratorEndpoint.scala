@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.OrgsRemoveOutsideCollaboratorResponseDa
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersOrgsRemoveOutsideCollaboratorEndpoint extends StObject {
   
-  var parameters: OrgsRemoveOutsideCollaboratorEndpoint = js.native
+  var parameters: OrgsRemoveOutsideCollaboratorEndpoint
   
-  var request: OrgsRemoveOutsideCollaboratorRequestOptions = js.native
+  var request: OrgsRemoveOutsideCollaboratorRequestOptions
   
-  var response: OctokitResponse[OrgsRemoveOutsideCollaboratorResponseData] = js.native
+  var response: OctokitResponse[OrgsRemoveOutsideCollaboratorResponseData]
 }
 object ParametersOrgsRemoveOutsideCollaboratorEndpoint {
   

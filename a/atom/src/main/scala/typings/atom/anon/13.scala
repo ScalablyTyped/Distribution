@@ -6,15 +6,13 @@ import typings.atom.atomStrings.Right
 import typings.atom.atomStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `13` extends StObject {
   
-  var newValue: Top | Right | Bottom | Left = js.native
+  var newValue: Top | Right | Bottom | Left
   
-  var oldValue: js.UndefOr[Top | Right | Bottom | Left] = js.native
+  var oldValue: js.UndefOr[Top | Right | Bottom | Left] = js.undefined
 }
 object `13` {
   

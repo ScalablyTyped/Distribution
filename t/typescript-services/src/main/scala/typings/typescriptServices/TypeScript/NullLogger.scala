@@ -2,11 +2,11 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NullLogger extends ILogger
+trait NullLogger
+  extends StObject
+     with ILogger
 object NullLogger {
   
   @scala.inline

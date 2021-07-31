@@ -8,7 +8,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dd {
@@ -16,7 +15,8 @@ object dd {
   @JSGlobal("Ext.dd.DDM")
   @js.native
   class DDM ()
-    extends typings.extjs.Ext.dd.DDM
+    extends StObject
+       with typings.extjs.Ext.dd.DDM
   /* static members */
   object DDM {
     
@@ -42,34 +42,28 @@ object dd {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.dd.DDM.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.dd.DDM.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.dd.DDM.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.dd.DDM.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.dd.DDM.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.dd.DDM.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.DDM.clickPixelThresh")
@@ -96,159 +90,129 @@ object dd {
       * @param dds Ext.dd.DragDrop[] The array of drag and drop objects targeted
       * @returns Ext.dd.DragDrop The best single match
       */
-    @JSGlobal("Ext.dd.DDM.getBestMatch")
-    @js.native
-    def getBestMatch(): IDragDrop = js.native
-    @JSGlobal("Ext.dd.DDM.getBestMatch")
-    @js.native
-    def getBestMatch(dds: typings.extjs.Ext.Array): IDragDrop = js.native
+    @scala.inline
+    def getBestMatch(): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getBestMatch")().asInstanceOf[IDragDrop]
+    @scala.inline
+    def getBestMatch(dds: typings.extjs.Ext.Array): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getBestMatch")(dds.asInstanceOf[js.Any]).asInstanceOf[IDragDrop]
     
     /** [Method] Returns the style property for the DOM element i e  document getElById id style
       * @param id String the id of the elment to get
       * @returns Object The style property of the element
       */
-    @JSGlobal("Ext.dd.DDM.getCss")
-    @js.native
-    def getCss(): js.Any = js.native
-    @JSGlobal("Ext.dd.DDM.getCss")
-    @js.native
-    def getCss(id: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getCss(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")().asInstanceOf[js.Any]
+    @scala.inline
+    def getCss(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns the DragDrop instance for a given id
       * @param id String the id of the DragDrop object
       * @returns Ext.dd.DragDrop the drag drop object, null if it is not found
       */
-    @JSGlobal("Ext.dd.DDM.getDDById")
-    @js.native
-    def getDDById(): IDragDrop = js.native
-    @JSGlobal("Ext.dd.DDM.getDDById")
-    @js.native
-    def getDDById(id: java.lang.String): IDragDrop = js.native
+    @scala.inline
+    def getDDById(): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getDDById")().asInstanceOf[IDragDrop]
+    @scala.inline
+    def getDDById(id: java.lang.String): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getDDById")(id.asInstanceOf[js.Any]).asInstanceOf[IDragDrop]
     
     /** [Method] Returns the actual DOM element
       * @param id String the id of the elment to get
       * @returns Object The element
       */
-    @JSGlobal("Ext.dd.DDM.getElement")
-    @js.native
-    def getElement(): js.Any = js.native
-    @JSGlobal("Ext.dd.DDM.getElement")
-    @js.native
-    def getElement(id: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getElement(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")().asInstanceOf[js.Any]
+    @scala.inline
+    def getElement(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    @JSGlobal("Ext.dd.DDM.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.dd.DDM.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns a Region object containing the drag and drop element s position and size including the padding configured fo
       * @param oDD Ext.dd.DragDrop the drag and drop object to get the location for.
       * @returns Ext.util.Region a Region object representing the total area the element occupies, including any padding the instance is configured for.
       */
-    @JSGlobal("Ext.dd.DDM.getLocation")
-    @js.native
-    def getLocation(): IRegion = js.native
-    @JSGlobal("Ext.dd.DDM.getLocation")
-    @js.native
-    def getLocation(oDD: IDragDrop): IRegion = js.native
+    @scala.inline
+    def getLocation(): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")().asInstanceOf[IRegion]
+    @scala.inline
+    def getLocation(oDD: IDragDrop): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(oDD.asInstanceOf[js.Any]).asInstanceOf[IRegion]
     
     /** [Method] Returns the drag and drop instances that are in all groups the passed in instance belongs to
       * @param p_oDD Ext.dd.DragDrop the obj to get related data for
       * @param bTargetsOnly Boolean if true, only return targetable objs
       * @returns Ext.dd.DragDrop[] the related instances
       */
-    @JSGlobal("Ext.dd.DDM.getRelated")
-    @js.native
-    def getRelated(): typings.extjs.Ext.Array = js.native
-    @JSGlobal("Ext.dd.DDM.getRelated")
-    @js.native
-    def getRelated(p_oDD: js.UndefOr[scala.Nothing], bTargetsOnly: Boolean): typings.extjs.Ext.Array = js.native
-    @JSGlobal("Ext.dd.DDM.getRelated")
-    @js.native
-    def getRelated(p_oDD: IDragDrop): typings.extjs.Ext.Array = js.native
-    @JSGlobal("Ext.dd.DDM.getRelated")
-    @js.native
-    def getRelated(p_oDD: IDragDrop, bTargetsOnly: Boolean): typings.extjs.Ext.Array = js.native
+    @scala.inline
+    def getRelated(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")().asInstanceOf[typings.extjs.Ext.Array]
+    @scala.inline
+    def getRelated(p_oDD: Unit, bTargetsOnly: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")(p_oDD.asInstanceOf[js.Any], bTargetsOnly.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+    @scala.inline
+    def getRelated(p_oDD: IDragDrop): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")(p_oDD.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+    @scala.inline
+    def getRelated(p_oDD: IDragDrop, bTargetsOnly: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")(p_oDD.asInstanceOf[js.Any], bTargetsOnly.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.dd.DDM.initConfig")
-    @js.native
-    def initConfig(): IBase = js.native
-    @JSGlobal("Ext.dd.DDM.initConfig")
-    @js.native
-    def initConfig(config: js.Any): IBase = js.native
+    @scala.inline
+    def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+    @scala.inline
+    def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Utility function to determine if a given element has been registered as a drag drop item
       * @param id String the element id to check
       * @returns Boolean true if this element is a DragDrop item, false otherwise
       */
-    @JSGlobal("Ext.dd.DDM.isDragDrop")
-    @js.native
-    def isDragDrop(): Boolean = js.native
-    @JSGlobal("Ext.dd.DDM.isDragDrop")
-    @js.native
-    def isDragDrop(id: java.lang.String): Boolean = js.native
+    @scala.inline
+    def isDragDrop(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragDrop")().asInstanceOf[Boolean]
+    @scala.inline
+    def isDragDrop(id: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragDrop")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Utility function to determine if a given element has been registered as a drag drop handle for the given Drag Drop ob
       * @param id String the element id to check
       * @returns Boolean true if this element is a DragDrop handle, false otherwise
       */
-    @JSGlobal("Ext.dd.DDM.isHandle")
-    @js.native
-    def isHandle(): Boolean = js.native
-    @JSGlobal("Ext.dd.DDM.isHandle")
-    @js.native
-    def isHandle(id: java.lang.String): Boolean = js.native
+    @scala.inline
+    def isHandle(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHandle")().asInstanceOf[Boolean]
+    @scala.inline
+    def isHandle(id: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHandle")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Returns true if the specified dd target is a legal target for the specifice drag obj
       * @param oDD Ext.dd.DragDrop the drag obj
       * @param oTargetDD Ext.dd.DragDrop the target
       * @returns Boolean true if the target is a legal target for the dd obj
       */
-    @JSGlobal("Ext.dd.DDM.isLegalTarget")
-    @js.native
-    def isLegalTarget(): Boolean = js.native
-    @JSGlobal("Ext.dd.DDM.isLegalTarget")
-    @js.native
-    def isLegalTarget(oDD: js.UndefOr[scala.Nothing], oTargetDD: IDragDrop): Boolean = js.native
-    @JSGlobal("Ext.dd.DDM.isLegalTarget")
-    @js.native
-    def isLegalTarget(oDD: IDragDrop): Boolean = js.native
-    @JSGlobal("Ext.dd.DDM.isLegalTarget")
-    @js.native
-    def isLegalTarget(oDD: IDragDrop, oTargetDD: IDragDrop): Boolean = js.native
+    @scala.inline
+    def isLegalTarget(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")().asInstanceOf[Boolean]
+    @scala.inline
+    def isLegalTarget(oDD: Unit, oTargetDD: IDragDrop): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")(oDD.asInstanceOf[js.Any], oTargetDD.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isLegalTarget(oDD: IDragDrop): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")(oDD.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isLegalTarget(oDD: IDragDrop, oTargetDD: IDragDrop): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")(oDD.asInstanceOf[js.Any], oTargetDD.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** [Method] Is drag and drop locked
       * @returns Boolean True if drag and drop is locked, false otherwise.
       */
-    @JSGlobal("Ext.dd.DDM.isLocked")
-    @js.native
-    def isLocked(): Boolean = js.native
+    @scala.inline
+    def isLocked(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocked")().asInstanceOf[Boolean]
     
     /** [Method] My goal is to be able to transparently determine if an object is typeof DragDrop and the exact subclass of DragDrop
       * @param the Object object to evaluate
       * @returns Boolean true if typeof oDD = DragDrop
       */
-    @JSGlobal("Ext.dd.DDM.isTypeOfDD")
-    @js.native
-    def isTypeOfDD(): Boolean = js.native
-    @JSGlobal("Ext.dd.DDM.isTypeOfDD")
-    @js.native
-    def isTypeOfDD(the: js.Any): Boolean = js.native
+    @scala.inline
+    def isTypeOfDD(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")().asInstanceOf[Boolean]
+    @scala.inline
+    def isTypeOfDD(the: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")(the.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Lock all drag and drop functionality */
-    @JSGlobal("Ext.dd.DDM.lock")
-    @js.native
-    def lock(): Unit = js.native
+    @scala.inline
+    def lock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")().asInstanceOf[Unit]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.DDM.mode")
@@ -274,46 +238,36 @@ object dd {
     /** [Method] Refreshes the cache of the top left and bottom right points of the drag and drop objects in the specified group s
       * @param groups Object an associative array of groups to refresh
       */
-    @JSGlobal("Ext.dd.DDM.refreshCache")
-    @js.native
-    def refreshCache(): Unit = js.native
-    @JSGlobal("Ext.dd.DDM.refreshCache")
-    @js.native
-    def refreshCache(groups: js.Any): Unit = js.native
+    @scala.inline
+    def refreshCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")().asInstanceOf[Unit]
+    @scala.inline
+    def refreshCache(groups: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")(groups.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Each DragDrop instance must be registered with the DragDropManager
       * @param oDD Ext.dd.DragDrop the DragDrop object to register
       * @param sGroup String the name of the group this element belongs to
       */
-    @JSGlobal("Ext.dd.DDM.regDragDrop")
-    @js.native
-    def regDragDrop(): Unit = js.native
-    @JSGlobal("Ext.dd.DDM.regDragDrop")
-    @js.native
-    def regDragDrop(oDD: js.UndefOr[scala.Nothing], sGroup: java.lang.String): Unit = js.native
-    @JSGlobal("Ext.dd.DDM.regDragDrop")
-    @js.native
-    def regDragDrop(oDD: IDragDrop): Unit = js.native
-    @JSGlobal("Ext.dd.DDM.regDragDrop")
-    @js.native
-    def regDragDrop(oDD: IDragDrop, sGroup: java.lang.String): Unit = js.native
+    @scala.inline
+    def regDragDrop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")().asInstanceOf[Unit]
+    @scala.inline
+    def regDragDrop(oDD: Unit, sGroup: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")(oDD.asInstanceOf[js.Any], sGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def regDragDrop(oDD: IDragDrop): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")(oDD.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def regDragDrop(oDD: IDragDrop, sGroup: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")(oDD.asInstanceOf[js.Any], sGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Each DragDrop handle element must be registered
       * @param sDDId String the DragDrop id this element is a handle for
       * @param sHandleId String the id of the element that is the drag handle
       */
-    @JSGlobal("Ext.dd.DDM.regHandle")
-    @js.native
-    def regHandle(): Unit = js.native
-    @JSGlobal("Ext.dd.DDM.regHandle")
-    @js.native
-    def regHandle(sDDId: js.UndefOr[scala.Nothing], sHandleId: java.lang.String): Unit = js.native
-    @JSGlobal("Ext.dd.DDM.regHandle")
-    @js.native
-    def regHandle(sDDId: java.lang.String): Unit = js.native
-    @JSGlobal("Ext.dd.DDM.regHandle")
-    @js.native
-    def regHandle(sDDId: java.lang.String, sHandleId: java.lang.String): Unit = js.native
+    @scala.inline
+    def regHandle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")().asInstanceOf[Unit]
+    @scala.inline
+    def regHandle(sDDId: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")(sDDId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def regHandle(sDDId: java.lang.String, sHandleId: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")(sDDId.asInstanceOf[js.Any], sHandleId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def regHandle(sDDId: Unit, sHandleId: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")(sDDId.asInstanceOf[js.Any], sHandleId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.dd.DDM.self")
@@ -326,35 +280,28 @@ object dd {
       * @param x Number the X position of the original mousedown
       * @param y Number the Y position of the original mousedown
       */
-    @JSGlobal("Ext.dd.DDM.startDrag")
-    @js.native
-    def startDrag(): Unit = js.native
-    @JSGlobal("Ext.dd.DDM.startDrag")
-    @js.native
-    def startDrag(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-    @JSGlobal("Ext.dd.DDM.startDrag")
-    @js.native
-    def startDrag(x: Double): Unit = js.native
-    @JSGlobal("Ext.dd.DDM.startDrag")
-    @js.native
-    def startDrag(x: Double, y: Double): Unit = js.native
+    @scala.inline
+    def startDrag(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")().asInstanceOf[Unit]
+    @scala.inline
+    def startDrag(x: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def startDrag(x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def startDrag(x: Unit, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.dd.DDM.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     
     /** [Method] Utility to stop event propagation and event default if these features are turned on
       * @param e Event the event as returned by this.getEvent()
       */
-    @JSGlobal("Ext.dd.DDM.stopEvent")
-    @js.native
-    def stopEvent(): Unit = js.native
-    @JSGlobal("Ext.dd.DDM.stopEvent")
-    @js.native
-    def stopEvent(e: Event): Unit = js.native
+    @scala.inline
+    def stopEvent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")().asInstanceOf[Unit]
+    @scala.inline
+    def stopEvent(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Property] (Boolean) */
     @JSGlobal("Ext.dd.DDM.stopPropagation")
@@ -364,9 +311,8 @@ object dd {
     def stopPropagation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopPropagation")(x.asInstanceOf[js.Any])
     
     /** [Method] Unlock all drag and drop functionality */
-    @JSGlobal("Ext.dd.DDM.unlock")
-    @js.native
-    def unlock(): Unit = js.native
+    @scala.inline
+    def unlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlock")().asInstanceOf[Unit]
     
     /** [Property] (Boolean) */
     @JSGlobal("Ext.dd.DDM.useCache")
@@ -379,18 +325,17 @@ object dd {
       * @param el HTMLElement the element to check
       * @returns Boolean true if the element looks usable
       */
-    @JSGlobal("Ext.dd.DDM.verifyEl")
-    @js.native
-    def verifyEl(): Boolean = js.native
-    @JSGlobal("Ext.dd.DDM.verifyEl")
-    @js.native
-    def verifyEl(el: HTMLElement): Boolean = js.native
+    @scala.inline
+    def verifyEl(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyEl")().asInstanceOf[Boolean]
+    @scala.inline
+    def verifyEl(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyEl")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSGlobal("Ext.dd.DragDropManager")
   @js.native
   class DragDropManager_ ()
-    extends typings.extjs.Ext.dd.DragDropManager_
+    extends StObject
+       with typings.extjs.Ext.dd.DragDropManager_
   /* static members */
   object DragDropManager_ {
     
@@ -416,34 +361,28 @@ object dd {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.dd.DragDropManager.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropManager.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.dd.DragDropManager.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropManager.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.dd.DragDropManager.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropManager.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.DragDropManager.clickPixelThresh")
@@ -470,159 +409,129 @@ object dd {
       * @param dds Ext.dd.DragDrop[] The array of drag and drop objects targeted
       * @returns Ext.dd.DragDrop The best single match
       */
-    @JSGlobal("Ext.dd.DragDropManager.getBestMatch")
-    @js.native
-    def getBestMatch(): IDragDrop = js.native
-    @JSGlobal("Ext.dd.DragDropManager.getBestMatch")
-    @js.native
-    def getBestMatch(dds: typings.extjs.Ext.Array): IDragDrop = js.native
+    @scala.inline
+    def getBestMatch(): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getBestMatch")().asInstanceOf[IDragDrop]
+    @scala.inline
+    def getBestMatch(dds: typings.extjs.Ext.Array): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getBestMatch")(dds.asInstanceOf[js.Any]).asInstanceOf[IDragDrop]
     
     /** [Method] Returns the style property for the DOM element i e  document getElById id style
       * @param id String the id of the elment to get
       * @returns Object The style property of the element
       */
-    @JSGlobal("Ext.dd.DragDropManager.getCss")
-    @js.native
-    def getCss(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropManager.getCss")
-    @js.native
-    def getCss(id: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getCss(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")().asInstanceOf[js.Any]
+    @scala.inline
+    def getCss(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns the DragDrop instance for a given id
       * @param id String the id of the DragDrop object
       * @returns Ext.dd.DragDrop the drag drop object, null if it is not found
       */
-    @JSGlobal("Ext.dd.DragDropManager.getDDById")
-    @js.native
-    def getDDById(): IDragDrop = js.native
-    @JSGlobal("Ext.dd.DragDropManager.getDDById")
-    @js.native
-    def getDDById(id: java.lang.String): IDragDrop = js.native
+    @scala.inline
+    def getDDById(): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getDDById")().asInstanceOf[IDragDrop]
+    @scala.inline
+    def getDDById(id: java.lang.String): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getDDById")(id.asInstanceOf[js.Any]).asInstanceOf[IDragDrop]
     
     /** [Method] Returns the actual DOM element
       * @param id String the id of the elment to get
       * @returns Object The element
       */
-    @JSGlobal("Ext.dd.DragDropManager.getElement")
-    @js.native
-    def getElement(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropManager.getElement")
-    @js.native
-    def getElement(id: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getElement(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")().asInstanceOf[js.Any]
+    @scala.inline
+    def getElement(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    @JSGlobal("Ext.dd.DragDropManager.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropManager.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns a Region object containing the drag and drop element s position and size including the padding configured fo
       * @param oDD Ext.dd.DragDrop the drag and drop object to get the location for.
       * @returns Ext.util.Region a Region object representing the total area the element occupies, including any padding the instance is configured for.
       */
-    @JSGlobal("Ext.dd.DragDropManager.getLocation")
-    @js.native
-    def getLocation(): IRegion = js.native
-    @JSGlobal("Ext.dd.DragDropManager.getLocation")
-    @js.native
-    def getLocation(oDD: IDragDrop): IRegion = js.native
+    @scala.inline
+    def getLocation(): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")().asInstanceOf[IRegion]
+    @scala.inline
+    def getLocation(oDD: IDragDrop): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(oDD.asInstanceOf[js.Any]).asInstanceOf[IRegion]
     
     /** [Method] Returns the drag and drop instances that are in all groups the passed in instance belongs to
       * @param p_oDD Ext.dd.DragDrop the obj to get related data for
       * @param bTargetsOnly Boolean if true, only return targetable objs
       * @returns Ext.dd.DragDrop[] the related instances
       */
-    @JSGlobal("Ext.dd.DragDropManager.getRelated")
-    @js.native
-    def getRelated(): typings.extjs.Ext.Array = js.native
-    @JSGlobal("Ext.dd.DragDropManager.getRelated")
-    @js.native
-    def getRelated(p_oDD: js.UndefOr[scala.Nothing], bTargetsOnly: Boolean): typings.extjs.Ext.Array = js.native
-    @JSGlobal("Ext.dd.DragDropManager.getRelated")
-    @js.native
-    def getRelated(p_oDD: IDragDrop): typings.extjs.Ext.Array = js.native
-    @JSGlobal("Ext.dd.DragDropManager.getRelated")
-    @js.native
-    def getRelated(p_oDD: IDragDrop, bTargetsOnly: Boolean): typings.extjs.Ext.Array = js.native
+    @scala.inline
+    def getRelated(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")().asInstanceOf[typings.extjs.Ext.Array]
+    @scala.inline
+    def getRelated(p_oDD: Unit, bTargetsOnly: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")(p_oDD.asInstanceOf[js.Any], bTargetsOnly.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+    @scala.inline
+    def getRelated(p_oDD: IDragDrop): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")(p_oDD.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+    @scala.inline
+    def getRelated(p_oDD: IDragDrop, bTargetsOnly: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")(p_oDD.asInstanceOf[js.Any], bTargetsOnly.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.dd.DragDropManager.initConfig")
-    @js.native
-    def initConfig(): IBase = js.native
-    @JSGlobal("Ext.dd.DragDropManager.initConfig")
-    @js.native
-    def initConfig(config: js.Any): IBase = js.native
+    @scala.inline
+    def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+    @scala.inline
+    def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Utility function to determine if a given element has been registered as a drag drop item
       * @param id String the element id to check
       * @returns Boolean true if this element is a DragDrop item, false otherwise
       */
-    @JSGlobal("Ext.dd.DragDropManager.isDragDrop")
-    @js.native
-    def isDragDrop(): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropManager.isDragDrop")
-    @js.native
-    def isDragDrop(id: java.lang.String): Boolean = js.native
+    @scala.inline
+    def isDragDrop(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragDrop")().asInstanceOf[Boolean]
+    @scala.inline
+    def isDragDrop(id: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragDrop")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Utility function to determine if a given element has been registered as a drag drop handle for the given Drag Drop ob
       * @param id String the element id to check
       * @returns Boolean true if this element is a DragDrop handle, false otherwise
       */
-    @JSGlobal("Ext.dd.DragDropManager.isHandle")
-    @js.native
-    def isHandle(): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropManager.isHandle")
-    @js.native
-    def isHandle(id: java.lang.String): Boolean = js.native
+    @scala.inline
+    def isHandle(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHandle")().asInstanceOf[Boolean]
+    @scala.inline
+    def isHandle(id: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHandle")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Returns true if the specified dd target is a legal target for the specifice drag obj
       * @param oDD Ext.dd.DragDrop the drag obj
       * @param oTargetDD Ext.dd.DragDrop the target
       * @returns Boolean true if the target is a legal target for the dd obj
       */
-    @JSGlobal("Ext.dd.DragDropManager.isLegalTarget")
-    @js.native
-    def isLegalTarget(): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropManager.isLegalTarget")
-    @js.native
-    def isLegalTarget(oDD: js.UndefOr[scala.Nothing], oTargetDD: IDragDrop): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropManager.isLegalTarget")
-    @js.native
-    def isLegalTarget(oDD: IDragDrop): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropManager.isLegalTarget")
-    @js.native
-    def isLegalTarget(oDD: IDragDrop, oTargetDD: IDragDrop): Boolean = js.native
+    @scala.inline
+    def isLegalTarget(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")().asInstanceOf[Boolean]
+    @scala.inline
+    def isLegalTarget(oDD: Unit, oTargetDD: IDragDrop): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")(oDD.asInstanceOf[js.Any], oTargetDD.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isLegalTarget(oDD: IDragDrop): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")(oDD.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isLegalTarget(oDD: IDragDrop, oTargetDD: IDragDrop): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")(oDD.asInstanceOf[js.Any], oTargetDD.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** [Method] Is drag and drop locked
       * @returns Boolean True if drag and drop is locked, false otherwise.
       */
-    @JSGlobal("Ext.dd.DragDropManager.isLocked")
-    @js.native
-    def isLocked(): Boolean = js.native
+    @scala.inline
+    def isLocked(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocked")().asInstanceOf[Boolean]
     
     /** [Method] My goal is to be able to transparently determine if an object is typeof DragDrop and the exact subclass of DragDrop
       * @param the Object object to evaluate
       * @returns Boolean true if typeof oDD = DragDrop
       */
-    @JSGlobal("Ext.dd.DragDropManager.isTypeOfDD")
-    @js.native
-    def isTypeOfDD(): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropManager.isTypeOfDD")
-    @js.native
-    def isTypeOfDD(the: js.Any): Boolean = js.native
+    @scala.inline
+    def isTypeOfDD(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")().asInstanceOf[Boolean]
+    @scala.inline
+    def isTypeOfDD(the: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")(the.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Lock all drag and drop functionality */
-    @JSGlobal("Ext.dd.DragDropManager.lock")
-    @js.native
-    def lock(): Unit = js.native
+    @scala.inline
+    def lock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")().asInstanceOf[Unit]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.DragDropManager.mode")
@@ -648,46 +557,36 @@ object dd {
     /** [Method] Refreshes the cache of the top left and bottom right points of the drag and drop objects in the specified group s
       * @param groups Object an associative array of groups to refresh
       */
-    @JSGlobal("Ext.dd.DragDropManager.refreshCache")
-    @js.native
-    def refreshCache(): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropManager.refreshCache")
-    @js.native
-    def refreshCache(groups: js.Any): Unit = js.native
+    @scala.inline
+    def refreshCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")().asInstanceOf[Unit]
+    @scala.inline
+    def refreshCache(groups: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")(groups.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Each DragDrop instance must be registered with the DragDropManager
       * @param oDD Ext.dd.DragDrop the DragDrop object to register
       * @param sGroup String the name of the group this element belongs to
       */
-    @JSGlobal("Ext.dd.DragDropManager.regDragDrop")
-    @js.native
-    def regDragDrop(): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropManager.regDragDrop")
-    @js.native
-    def regDragDrop(oDD: js.UndefOr[scala.Nothing], sGroup: java.lang.String): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropManager.regDragDrop")
-    @js.native
-    def regDragDrop(oDD: IDragDrop): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropManager.regDragDrop")
-    @js.native
-    def regDragDrop(oDD: IDragDrop, sGroup: java.lang.String): Unit = js.native
+    @scala.inline
+    def regDragDrop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")().asInstanceOf[Unit]
+    @scala.inline
+    def regDragDrop(oDD: Unit, sGroup: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")(oDD.asInstanceOf[js.Any], sGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def regDragDrop(oDD: IDragDrop): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")(oDD.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def regDragDrop(oDD: IDragDrop, sGroup: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")(oDD.asInstanceOf[js.Any], sGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Each DragDrop handle element must be registered
       * @param sDDId String the DragDrop id this element is a handle for
       * @param sHandleId String the id of the element that is the drag handle
       */
-    @JSGlobal("Ext.dd.DragDropManager.regHandle")
-    @js.native
-    def regHandle(): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropManager.regHandle")
-    @js.native
-    def regHandle(sDDId: js.UndefOr[scala.Nothing], sHandleId: java.lang.String): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropManager.regHandle")
-    @js.native
-    def regHandle(sDDId: java.lang.String): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropManager.regHandle")
-    @js.native
-    def regHandle(sDDId: java.lang.String, sHandleId: java.lang.String): Unit = js.native
+    @scala.inline
+    def regHandle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")().asInstanceOf[Unit]
+    @scala.inline
+    def regHandle(sDDId: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")(sDDId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def regHandle(sDDId: java.lang.String, sHandleId: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")(sDDId.asInstanceOf[js.Any], sHandleId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def regHandle(sDDId: Unit, sHandleId: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")(sDDId.asInstanceOf[js.Any], sHandleId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.dd.DragDropManager.self")
@@ -700,35 +599,28 @@ object dd {
       * @param x Number the X position of the original mousedown
       * @param y Number the Y position of the original mousedown
       */
-    @JSGlobal("Ext.dd.DragDropManager.startDrag")
-    @js.native
-    def startDrag(): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropManager.startDrag")
-    @js.native
-    def startDrag(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropManager.startDrag")
-    @js.native
-    def startDrag(x: Double): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropManager.startDrag")
-    @js.native
-    def startDrag(x: Double, y: Double): Unit = js.native
+    @scala.inline
+    def startDrag(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")().asInstanceOf[Unit]
+    @scala.inline
+    def startDrag(x: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def startDrag(x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def startDrag(x: Unit, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.dd.DragDropManager.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     
     /** [Method] Utility to stop event propagation and event default if these features are turned on
       * @param e Event the event as returned by this.getEvent()
       */
-    @JSGlobal("Ext.dd.DragDropManager.stopEvent")
-    @js.native
-    def stopEvent(): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropManager.stopEvent")
-    @js.native
-    def stopEvent(e: Event): Unit = js.native
+    @scala.inline
+    def stopEvent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")().asInstanceOf[Unit]
+    @scala.inline
+    def stopEvent(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Property] (Boolean) */
     @JSGlobal("Ext.dd.DragDropManager.stopPropagation")
@@ -738,9 +630,8 @@ object dd {
     def stopPropagation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopPropagation")(x.asInstanceOf[js.Any])
     
     /** [Method] Unlock all drag and drop functionality */
-    @JSGlobal("Ext.dd.DragDropManager.unlock")
-    @js.native
-    def unlock(): Unit = js.native
+    @scala.inline
+    def unlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlock")().asInstanceOf[Unit]
     
     /** [Property] (Boolean) */
     @JSGlobal("Ext.dd.DragDropManager.useCache")
@@ -753,18 +644,17 @@ object dd {
       * @param el HTMLElement the element to check
       * @returns Boolean true if the element looks usable
       */
-    @JSGlobal("Ext.dd.DragDropManager.verifyEl")
-    @js.native
-    def verifyEl(): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropManager.verifyEl")
-    @js.native
-    def verifyEl(el: HTMLElement): Boolean = js.native
+    @scala.inline
+    def verifyEl(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyEl")().asInstanceOf[Boolean]
+    @scala.inline
+    def verifyEl(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyEl")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSGlobal("Ext.dd.DragDropMgr")
   @js.native
   class DragDropMgr ()
-    extends typings.extjs.Ext.dd.DragDropMgr
+    extends StObject
+       with typings.extjs.Ext.dd.DragDropMgr
   /* static members */
   object DragDropMgr {
     
@@ -790,34 +680,28 @@ object dd {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.dd.DragDropMgr.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.dd.DragDropMgr.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.dd.DragDropMgr.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.DragDropMgr.clickPixelThresh")
@@ -844,159 +728,129 @@ object dd {
       * @param dds Ext.dd.DragDrop[] The array of drag and drop objects targeted
       * @returns Ext.dd.DragDrop The best single match
       */
-    @JSGlobal("Ext.dd.DragDropMgr.getBestMatch")
-    @js.native
-    def getBestMatch(): IDragDrop = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.getBestMatch")
-    @js.native
-    def getBestMatch(dds: typings.extjs.Ext.Array): IDragDrop = js.native
+    @scala.inline
+    def getBestMatch(): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getBestMatch")().asInstanceOf[IDragDrop]
+    @scala.inline
+    def getBestMatch(dds: typings.extjs.Ext.Array): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getBestMatch")(dds.asInstanceOf[js.Any]).asInstanceOf[IDragDrop]
     
     /** [Method] Returns the style property for the DOM element i e  document getElById id style
       * @param id String the id of the elment to get
       * @returns Object The style property of the element
       */
-    @JSGlobal("Ext.dd.DragDropMgr.getCss")
-    @js.native
-    def getCss(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.getCss")
-    @js.native
-    def getCss(id: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getCss(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")().asInstanceOf[js.Any]
+    @scala.inline
+    def getCss(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns the DragDrop instance for a given id
       * @param id String the id of the DragDrop object
       * @returns Ext.dd.DragDrop the drag drop object, null if it is not found
       */
-    @JSGlobal("Ext.dd.DragDropMgr.getDDById")
-    @js.native
-    def getDDById(): IDragDrop = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.getDDById")
-    @js.native
-    def getDDById(id: java.lang.String): IDragDrop = js.native
+    @scala.inline
+    def getDDById(): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getDDById")().asInstanceOf[IDragDrop]
+    @scala.inline
+    def getDDById(id: java.lang.String): IDragDrop = ^.asInstanceOf[js.Dynamic].applyDynamic("getDDById")(id.asInstanceOf[js.Any]).asInstanceOf[IDragDrop]
     
     /** [Method] Returns the actual DOM element
       * @param id String the id of the elment to get
       * @returns Object The element
       */
-    @JSGlobal("Ext.dd.DragDropMgr.getElement")
-    @js.native
-    def getElement(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.getElement")
-    @js.native
-    def getElement(id: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getElement(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")().asInstanceOf[js.Any]
+    @scala.inline
+    def getElement(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    @JSGlobal("Ext.dd.DragDropMgr.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns a Region object containing the drag and drop element s position and size including the padding configured fo
       * @param oDD Ext.dd.DragDrop the drag and drop object to get the location for.
       * @returns Ext.util.Region a Region object representing the total area the element occupies, including any padding the instance is configured for.
       */
-    @JSGlobal("Ext.dd.DragDropMgr.getLocation")
-    @js.native
-    def getLocation(): IRegion = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.getLocation")
-    @js.native
-    def getLocation(oDD: IDragDrop): IRegion = js.native
+    @scala.inline
+    def getLocation(): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")().asInstanceOf[IRegion]
+    @scala.inline
+    def getLocation(oDD: IDragDrop): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(oDD.asInstanceOf[js.Any]).asInstanceOf[IRegion]
     
     /** [Method] Returns the drag and drop instances that are in all groups the passed in instance belongs to
       * @param p_oDD Ext.dd.DragDrop the obj to get related data for
       * @param bTargetsOnly Boolean if true, only return targetable objs
       * @returns Ext.dd.DragDrop[] the related instances
       */
-    @JSGlobal("Ext.dd.DragDropMgr.getRelated")
-    @js.native
-    def getRelated(): typings.extjs.Ext.Array = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.getRelated")
-    @js.native
-    def getRelated(p_oDD: js.UndefOr[scala.Nothing], bTargetsOnly: Boolean): typings.extjs.Ext.Array = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.getRelated")
-    @js.native
-    def getRelated(p_oDD: IDragDrop): typings.extjs.Ext.Array = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.getRelated")
-    @js.native
-    def getRelated(p_oDD: IDragDrop, bTargetsOnly: Boolean): typings.extjs.Ext.Array = js.native
+    @scala.inline
+    def getRelated(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")().asInstanceOf[typings.extjs.Ext.Array]
+    @scala.inline
+    def getRelated(p_oDD: Unit, bTargetsOnly: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")(p_oDD.asInstanceOf[js.Any], bTargetsOnly.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+    @scala.inline
+    def getRelated(p_oDD: IDragDrop): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")(p_oDD.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+    @scala.inline
+    def getRelated(p_oDD: IDragDrop, bTargetsOnly: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelated")(p_oDD.asInstanceOf[js.Any], bTargetsOnly.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.dd.DragDropMgr.initConfig")
-    @js.native
-    def initConfig(): IBase = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.initConfig")
-    @js.native
-    def initConfig(config: js.Any): IBase = js.native
+    @scala.inline
+    def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+    @scala.inline
+    def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Utility function to determine if a given element has been registered as a drag drop item
       * @param id String the element id to check
       * @returns Boolean true if this element is a DragDrop item, false otherwise
       */
-    @JSGlobal("Ext.dd.DragDropMgr.isDragDrop")
-    @js.native
-    def isDragDrop(): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.isDragDrop")
-    @js.native
-    def isDragDrop(id: java.lang.String): Boolean = js.native
+    @scala.inline
+    def isDragDrop(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragDrop")().asInstanceOf[Boolean]
+    @scala.inline
+    def isDragDrop(id: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragDrop")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Utility function to determine if a given element has been registered as a drag drop handle for the given Drag Drop ob
       * @param id String the element id to check
       * @returns Boolean true if this element is a DragDrop handle, false otherwise
       */
-    @JSGlobal("Ext.dd.DragDropMgr.isHandle")
-    @js.native
-    def isHandle(): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.isHandle")
-    @js.native
-    def isHandle(id: java.lang.String): Boolean = js.native
+    @scala.inline
+    def isHandle(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHandle")().asInstanceOf[Boolean]
+    @scala.inline
+    def isHandle(id: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHandle")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Returns true if the specified dd target is a legal target for the specifice drag obj
       * @param oDD Ext.dd.DragDrop the drag obj
       * @param oTargetDD Ext.dd.DragDrop the target
       * @returns Boolean true if the target is a legal target for the dd obj
       */
-    @JSGlobal("Ext.dd.DragDropMgr.isLegalTarget")
-    @js.native
-    def isLegalTarget(): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.isLegalTarget")
-    @js.native
-    def isLegalTarget(oDD: js.UndefOr[scala.Nothing], oTargetDD: IDragDrop): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.isLegalTarget")
-    @js.native
-    def isLegalTarget(oDD: IDragDrop): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.isLegalTarget")
-    @js.native
-    def isLegalTarget(oDD: IDragDrop, oTargetDD: IDragDrop): Boolean = js.native
+    @scala.inline
+    def isLegalTarget(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")().asInstanceOf[Boolean]
+    @scala.inline
+    def isLegalTarget(oDD: Unit, oTargetDD: IDragDrop): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")(oDD.asInstanceOf[js.Any], oTargetDD.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isLegalTarget(oDD: IDragDrop): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")(oDD.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isLegalTarget(oDD: IDragDrop, oTargetDD: IDragDrop): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isLegalTarget")(oDD.asInstanceOf[js.Any], oTargetDD.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** [Method] Is drag and drop locked
       * @returns Boolean True if drag and drop is locked, false otherwise.
       */
-    @JSGlobal("Ext.dd.DragDropMgr.isLocked")
-    @js.native
-    def isLocked(): Boolean = js.native
+    @scala.inline
+    def isLocked(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocked")().asInstanceOf[Boolean]
     
     /** [Method] My goal is to be able to transparently determine if an object is typeof DragDrop and the exact subclass of DragDrop
       * @param the Object object to evaluate
       * @returns Boolean true if typeof oDD = DragDrop
       */
-    @JSGlobal("Ext.dd.DragDropMgr.isTypeOfDD")
-    @js.native
-    def isTypeOfDD(): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.isTypeOfDD")
-    @js.native
-    def isTypeOfDD(the: js.Any): Boolean = js.native
+    @scala.inline
+    def isTypeOfDD(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")().asInstanceOf[Boolean]
+    @scala.inline
+    def isTypeOfDD(the: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")(the.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Lock all drag and drop functionality */
-    @JSGlobal("Ext.dd.DragDropMgr.lock")
-    @js.native
-    def lock(): Unit = js.native
+    @scala.inline
+    def lock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")().asInstanceOf[Unit]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.DragDropMgr.mode")
@@ -1022,46 +876,36 @@ object dd {
     /** [Method] Refreshes the cache of the top left and bottom right points of the drag and drop objects in the specified group s
       * @param groups Object an associative array of groups to refresh
       */
-    @JSGlobal("Ext.dd.DragDropMgr.refreshCache")
-    @js.native
-    def refreshCache(): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.refreshCache")
-    @js.native
-    def refreshCache(groups: js.Any): Unit = js.native
+    @scala.inline
+    def refreshCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")().asInstanceOf[Unit]
+    @scala.inline
+    def refreshCache(groups: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")(groups.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Each DragDrop instance must be registered with the DragDropManager
       * @param oDD Ext.dd.DragDrop the DragDrop object to register
       * @param sGroup String the name of the group this element belongs to
       */
-    @JSGlobal("Ext.dd.DragDropMgr.regDragDrop")
-    @js.native
-    def regDragDrop(): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.regDragDrop")
-    @js.native
-    def regDragDrop(oDD: js.UndefOr[scala.Nothing], sGroup: java.lang.String): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.regDragDrop")
-    @js.native
-    def regDragDrop(oDD: IDragDrop): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.regDragDrop")
-    @js.native
-    def regDragDrop(oDD: IDragDrop, sGroup: java.lang.String): Unit = js.native
+    @scala.inline
+    def regDragDrop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")().asInstanceOf[Unit]
+    @scala.inline
+    def regDragDrop(oDD: Unit, sGroup: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")(oDD.asInstanceOf[js.Any], sGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def regDragDrop(oDD: IDragDrop): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")(oDD.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def regDragDrop(oDD: IDragDrop, sGroup: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regDragDrop")(oDD.asInstanceOf[js.Any], sGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Each DragDrop handle element must be registered
       * @param sDDId String the DragDrop id this element is a handle for
       * @param sHandleId String the id of the element that is the drag handle
       */
-    @JSGlobal("Ext.dd.DragDropMgr.regHandle")
-    @js.native
-    def regHandle(): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.regHandle")
-    @js.native
-    def regHandle(sDDId: js.UndefOr[scala.Nothing], sHandleId: java.lang.String): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.regHandle")
-    @js.native
-    def regHandle(sDDId: java.lang.String): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.regHandle")
-    @js.native
-    def regHandle(sDDId: java.lang.String, sHandleId: java.lang.String): Unit = js.native
+    @scala.inline
+    def regHandle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")().asInstanceOf[Unit]
+    @scala.inline
+    def regHandle(sDDId: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")(sDDId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def regHandle(sDDId: java.lang.String, sHandleId: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")(sDDId.asInstanceOf[js.Any], sHandleId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def regHandle(sDDId: Unit, sHandleId: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regHandle")(sDDId.asInstanceOf[js.Any], sHandleId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.dd.DragDropMgr.self")
@@ -1074,35 +918,28 @@ object dd {
       * @param x Number the X position of the original mousedown
       * @param y Number the Y position of the original mousedown
       */
-    @JSGlobal("Ext.dd.DragDropMgr.startDrag")
-    @js.native
-    def startDrag(): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.startDrag")
-    @js.native
-    def startDrag(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.startDrag")
-    @js.native
-    def startDrag(x: Double): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.startDrag")
-    @js.native
-    def startDrag(x: Double, y: Double): Unit = js.native
+    @scala.inline
+    def startDrag(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")().asInstanceOf[Unit]
+    @scala.inline
+    def startDrag(x: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def startDrag(x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def startDrag(x: Unit, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startDrag")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.dd.DragDropMgr.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     
     /** [Method] Utility to stop event propagation and event default if these features are turned on
       * @param e Event the event as returned by this.getEvent()
       */
-    @JSGlobal("Ext.dd.DragDropMgr.stopEvent")
-    @js.native
-    def stopEvent(): Unit = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.stopEvent")
-    @js.native
-    def stopEvent(e: Event): Unit = js.native
+    @scala.inline
+    def stopEvent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")().asInstanceOf[Unit]
+    @scala.inline
+    def stopEvent(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Property] (Boolean) */
     @JSGlobal("Ext.dd.DragDropMgr.stopPropagation")
@@ -1112,9 +949,8 @@ object dd {
     def stopPropagation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopPropagation")(x.asInstanceOf[js.Any])
     
     /** [Method] Unlock all drag and drop functionality */
-    @JSGlobal("Ext.dd.DragDropMgr.unlock")
-    @js.native
-    def unlock(): Unit = js.native
+    @scala.inline
+    def unlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlock")().asInstanceOf[Unit]
     
     /** [Property] (Boolean) */
     @JSGlobal("Ext.dd.DragDropMgr.useCache")
@@ -1127,18 +963,17 @@ object dd {
       * @param el HTMLElement the element to check
       * @returns Boolean true if the element looks usable
       */
-    @JSGlobal("Ext.dd.DragDropMgr.verifyEl")
-    @js.native
-    def verifyEl(): Boolean = js.native
-    @JSGlobal("Ext.dd.DragDropMgr.verifyEl")
-    @js.native
-    def verifyEl(el: HTMLElement): Boolean = js.native
+    @scala.inline
+    def verifyEl(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyEl")().asInstanceOf[Boolean]
+    @scala.inline
+    def verifyEl(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyEl")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSGlobal("Ext.dd.Registry")
   @js.native
   class Registry ()
-    extends typings.extjs.Ext.dd.Registry
+    extends StObject
+       with typings.extjs.Ext.dd.Registry
   /* static members */
   object Registry {
     
@@ -1150,117 +985,95 @@ object dd {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.dd.Registry.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.dd.Registry.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.dd.Registry.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.dd.Registry.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.dd.Registry.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.dd.Registry.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns the handle registered for a DOM Node by id
       * @param id String/HTMLElement The DOM node or id to look up
       * @returns Object handle The custom handle data
       */
-    @JSGlobal("Ext.dd.Registry.getHandle")
-    @js.native
-    def getHandle(): js.Any = js.native
-    @JSGlobal("Ext.dd.Registry.getHandle")
-    @js.native
-    def getHandle(id: js.Any): js.Any = js.native
+    @scala.inline
+    def getHandle(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandle")().asInstanceOf[js.Any]
+    @scala.inline
+    def getHandle(id: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandle")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns the handle that is registered for the DOM node that is the target of the event
       * @param e Event The event
       * @returns Object handle The custom handle data
       */
-    @JSGlobal("Ext.dd.Registry.getHandleFromEvent")
-    @js.native
-    def getHandleFromEvent(): js.Any = js.native
-    @JSGlobal("Ext.dd.Registry.getHandleFromEvent")
-    @js.native
-    def getHandleFromEvent(e: Event): js.Any = js.native
+    @scala.inline
+    def getHandleFromEvent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandleFromEvent")().asInstanceOf[js.Any]
+    @scala.inline
+    def getHandleFromEvent(e: Event): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandleFromEvent")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    @JSGlobal("Ext.dd.Registry.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.dd.Registry.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns a custom data object that is registered for a DOM node by id
       * @param id String/HTMLElement The DOM node or id to look up
       * @returns Object data The custom data
       */
-    @JSGlobal("Ext.dd.Registry.getTarget")
-    @js.native
-    def getTarget(): js.Any = js.native
-    @JSGlobal("Ext.dd.Registry.getTarget")
-    @js.native
-    def getTarget(id: js.Any): js.Any = js.native
+    @scala.inline
+    def getTarget(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")().asInstanceOf[js.Any]
+    @scala.inline
+    def getTarget(id: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns a custom data object that is registered for the DOM node that is the target of the event
       * @param e Event The event
       * @returns Object data The custom data
       */
-    @JSGlobal("Ext.dd.Registry.getTargetFromEvent")
-    @js.native
-    def getTargetFromEvent(): js.Any = js.native
-    @JSGlobal("Ext.dd.Registry.getTargetFromEvent")
-    @js.native
-    def getTargetFromEvent(e: Event): js.Any = js.native
+    @scala.inline
+    def getTargetFromEvent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetFromEvent")().asInstanceOf[js.Any]
+    @scala.inline
+    def getTargetFromEvent(e: Event): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetFromEvent")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.dd.Registry.initConfig")
-    @js.native
-    def initConfig(): IBase = js.native
-    @JSGlobal("Ext.dd.Registry.initConfig")
-    @js.native
-    def initConfig(config: js.Any): IBase = js.native
+    @scala.inline
+    def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+    @scala.inline
+    def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Registers a drag drop element
       * @param element String/HTMLElement The id or DOM node to register
       * @param data Object An custom data object that will be passed between the elements that are involved in drag drop operations. You can populate this object with any arbitrary properties that your own code knows how to interpret, plus there are some specific properties known to the Registry that should be populated in the data object (if applicable):
       */
-    @JSGlobal("Ext.dd.Registry.register")
-    @js.native
-    def register(): Unit = js.native
-    @JSGlobal("Ext.dd.Registry.register")
-    @js.native
-    def register(element: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
-    @JSGlobal("Ext.dd.Registry.register")
-    @js.native
-    def register(element: js.Any): Unit = js.native
-    @JSGlobal("Ext.dd.Registry.register")
-    @js.native
-    def register(element: js.Any, data: js.Any): Unit = js.native
+    @scala.inline
+    def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
+    @scala.inline
+    def register(element: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def register(element: js.Any, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(element.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def register(element: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(element.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.dd.Registry.self")
@@ -1272,25 +1085,23 @@ object dd {
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.dd.Registry.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     
     /** [Method] Unregister a drag drop element
       * @param element String/HTMLElement The id or DOM node to unregister
       */
-    @JSGlobal("Ext.dd.Registry.unregister")
-    @js.native
-    def unregister(): Unit = js.native
-    @JSGlobal("Ext.dd.Registry.unregister")
-    @js.native
-    def unregister(element: js.Any): Unit = js.native
+    @scala.inline
+    def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
+    @scala.inline
+    def unregister(element: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("Ext.dd.ScrollManager")
   @js.native
   class ScrollManager ()
-    extends typings.extjs.Ext.dd.ScrollManager
+    extends StObject
+       with typings.extjs.Ext.dd.ScrollManager
   /* static members */
   object ScrollManager {
     
@@ -1316,34 +1127,28 @@ object dd {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.dd.ScrollManager.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.dd.ScrollManager.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.dd.ScrollManager.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.dd.ScrollManager.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.dd.ScrollManager.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.dd.ScrollManager.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Property] (String) */
     @JSGlobal("Ext.dd.ScrollManager.ddGroup")
@@ -1363,12 +1168,10 @@ object dd {
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    @JSGlobal("Ext.dd.ScrollManager.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.dd.ScrollManager.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.ScrollManager.hthresh")
@@ -1388,27 +1191,22 @@ object dd {
       * @param config Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.dd.ScrollManager.initConfig")
-    @js.native
-    def initConfig(): IBase = js.native
-    @JSGlobal("Ext.dd.ScrollManager.initConfig")
-    @js.native
-    def initConfig(config: js.Any): IBase = js.native
+    @scala.inline
+    def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+    @scala.inline
+    def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Manually trigger a cache refresh  */
-    @JSGlobal("Ext.dd.ScrollManager.refreshCache")
-    @js.native
-    def refreshCache(): Unit = js.native
+    @scala.inline
+    def refreshCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")().asInstanceOf[Unit]
     
     /** [Method] Registers new overflow element s to auto scroll
       * @param el String/HTMLElement/Ext.Element/String[]/HTMLElement[]/Ext.Element[] The id of or the element to be scrolled or an array of either
       */
-    @JSGlobal("Ext.dd.ScrollManager.register")
-    @js.native
-    def register(): Unit = js.native
-    @JSGlobal("Ext.dd.ScrollManager.register")
-    @js.native
-    def register(el: js.Any): Unit = js.native
+    @scala.inline
+    def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
+    @scala.inline
+    def register(el: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.dd.ScrollManager.self")
@@ -1420,19 +1218,16 @@ object dd {
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.dd.ScrollManager.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     
     /** [Method] Unregisters overflow element s so they are no longer scrolled
       * @param el String/HTMLElement/Ext.Element/String[]/HTMLElement[]/Ext.Element[] The id of or the element to be removed or an array of either
       */
-    @JSGlobal("Ext.dd.ScrollManager.unregister")
-    @js.native
-    def unregister(): Unit = js.native
-    @JSGlobal("Ext.dd.ScrollManager.unregister")
-    @js.native
-    def unregister(el: js.Any): Unit = js.native
+    @scala.inline
+    def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
+    @scala.inline
+    def unregister(el: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.ScrollManager.vthresh")

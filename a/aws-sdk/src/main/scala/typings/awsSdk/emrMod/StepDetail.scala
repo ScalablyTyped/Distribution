@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepDetail extends StObject {
   
   /**
     * The description of the step status.
     */
-  var ExecutionStatusDetail: StepExecutionStatusDetail = js.native
+  var ExecutionStatusDetail: StepExecutionStatusDetail
   
   /**
     * The step configuration.
     */
-  var StepConfig: typings.awsSdk.emrMod.StepConfig = js.native
+  var StepConfig: typings.awsSdk.emrMod.StepConfig
 }
 object StepDetail {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigqueryconnection.gapi.client.bigquerycon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudSqlProperties extends StObject {
   
   /** Input only. Cloud SQL credential. */
-  var credential: js.UndefOr[CloudSqlCredential] = js.native
+  var credential: js.UndefOr[CloudSqlCredential] = js.undefined
   
   /** Database name. */
-  var database: js.UndefOr[String] = js.native
+  var database: js.UndefOr[String] = js.undefined
   
   /** Cloud SQL instance ID in the form `project:location:instance`. */
-  var instanceId: js.UndefOr[String] = js.native
+  var instanceId: js.UndefOr[String] = js.undefined
   
   /** Type of the Cloud SQL database. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object CloudSqlProperties {
   

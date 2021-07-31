@@ -6,7 +6,6 @@ import typings.paypalPayoutsSdk.mod.payouts.PayoutsItemGetRequest
 import typings.paypalPayoutsSdk.mod.payouts.PayoutsPostRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object core {

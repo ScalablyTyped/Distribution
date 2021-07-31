@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceFile extends StObject {
   
   /** A reference to an opaque binary blob file. */
-  var obbFile: js.UndefOr[ObbFile] = js.native
+  var obbFile: js.UndefOr[ObbFile] = js.undefined
   
   /** A reference to a regular file. */
-  var regularFile: js.UndefOr[RegularFile] = js.native
+  var regularFile: js.UndefOr[RegularFile] = js.undefined
 }
 object DeviceFile {
   

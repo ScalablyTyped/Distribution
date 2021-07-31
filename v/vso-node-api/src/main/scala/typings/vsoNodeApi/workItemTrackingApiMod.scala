@@ -58,7 +58,6 @@ import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTypeTemplateUpda
 import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workItemTrackingApiMod {
@@ -81,40 +80,35 @@ object workItemTrackingApiMod {
   trait IWorkItemTrackingApi extends ClientApiBase {
     
     def createAttachment(customHeaders: js.Any, contentStream: ReadableStream): js.Promise[AttachmentReference] = js.native
-    def createAttachment(
-      customHeaders: js.Any,
-      contentStream: ReadableStream,
-      fileName: js.UndefOr[scala.Nothing],
-      uploadType: js.UndefOr[scala.Nothing],
-      areaPath: String
-    ): js.Promise[AttachmentReference] = js.native
-    def createAttachment(
-      customHeaders: js.Any,
-      contentStream: ReadableStream,
-      fileName: js.UndefOr[scala.Nothing],
-      uploadType: String
-    ): js.Promise[AttachmentReference] = js.native
-    def createAttachment(
-      customHeaders: js.Any,
-      contentStream: ReadableStream,
-      fileName: js.UndefOr[scala.Nothing],
-      uploadType: String,
-      areaPath: String
-    ): js.Promise[AttachmentReference] = js.native
     def createAttachment(customHeaders: js.Any, contentStream: ReadableStream, fileName: String): js.Promise[AttachmentReference] = js.native
-    def createAttachment(
-      customHeaders: js.Any,
-      contentStream: ReadableStream,
-      fileName: String,
-      uploadType: js.UndefOr[scala.Nothing],
-      areaPath: String
-    ): js.Promise[AttachmentReference] = js.native
     def createAttachment(customHeaders: js.Any, contentStream: ReadableStream, fileName: String, uploadType: String): js.Promise[AttachmentReference] = js.native
     def createAttachment(
       customHeaders: js.Any,
       contentStream: ReadableStream,
       fileName: String,
       uploadType: String,
+      areaPath: String
+    ): js.Promise[AttachmentReference] = js.native
+    def createAttachment(
+      customHeaders: js.Any,
+      contentStream: ReadableStream,
+      fileName: String,
+      uploadType: Unit,
+      areaPath: String
+    ): js.Promise[AttachmentReference] = js.native
+    def createAttachment(customHeaders: js.Any, contentStream: ReadableStream, fileName: Unit, uploadType: String): js.Promise[AttachmentReference] = js.native
+    def createAttachment(
+      customHeaders: js.Any,
+      contentStream: ReadableStream,
+      fileName: Unit,
+      uploadType: String,
+      areaPath: String
+    ): js.Promise[AttachmentReference] = js.native
+    def createAttachment(
+      customHeaders: js.Any,
+      contentStream: ReadableStream,
+      fileName: Unit,
+      uploadType: Unit,
       areaPath: String
     ): js.Promise[AttachmentReference] = js.native
     
@@ -136,32 +130,6 @@ object workItemTrackingApiMod {
       document: JsonPatchDocument,
       project: String,
       `type`: String,
-      validateOnly: js.UndefOr[scala.Nothing],
-      bypassRules: js.UndefOr[scala.Nothing],
-      suppressNotifications: Boolean
-    ): js.Promise[WorkItem] = js.native
-    def createWorkItem(
-      customHeaders: js.Any,
-      document: JsonPatchDocument,
-      project: String,
-      `type`: String,
-      validateOnly: js.UndefOr[scala.Nothing],
-      bypassRules: Boolean
-    ): js.Promise[WorkItem] = js.native
-    def createWorkItem(
-      customHeaders: js.Any,
-      document: JsonPatchDocument,
-      project: String,
-      `type`: String,
-      validateOnly: js.UndefOr[scala.Nothing],
-      bypassRules: Boolean,
-      suppressNotifications: Boolean
-    ): js.Promise[WorkItem] = js.native
-    def createWorkItem(
-      customHeaders: js.Any,
-      document: JsonPatchDocument,
-      project: String,
-      `type`: String,
       validateOnly: Boolean
     ): js.Promise[WorkItem] = js.native
     def createWorkItem(
@@ -170,15 +138,6 @@ object workItemTrackingApiMod {
       project: String,
       `type`: String,
       validateOnly: Boolean,
-      bypassRules: js.UndefOr[scala.Nothing],
-      suppressNotifications: Boolean
-    ): js.Promise[WorkItem] = js.native
-    def createWorkItem(
-      customHeaders: js.Any,
-      document: JsonPatchDocument,
-      project: String,
-      `type`: String,
-      validateOnly: Boolean,
       bypassRules: Boolean
     ): js.Promise[WorkItem] = js.native
     def createWorkItem(
@@ -190,16 +149,46 @@ object workItemTrackingApiMod {
       bypassRules: Boolean,
       suppressNotifications: Boolean
     ): js.Promise[WorkItem] = js.native
+    def createWorkItem(
+      customHeaders: js.Any,
+      document: JsonPatchDocument,
+      project: String,
+      `type`: String,
+      validateOnly: Boolean,
+      bypassRules: Unit,
+      suppressNotifications: Boolean
+    ): js.Promise[WorkItem] = js.native
+    def createWorkItem(
+      customHeaders: js.Any,
+      document: JsonPatchDocument,
+      project: String,
+      `type`: String,
+      validateOnly: Unit,
+      bypassRules: Boolean
+    ): js.Promise[WorkItem] = js.native
+    def createWorkItem(
+      customHeaders: js.Any,
+      document: JsonPatchDocument,
+      project: String,
+      `type`: String,
+      validateOnly: Unit,
+      bypassRules: Boolean,
+      suppressNotifications: Boolean
+    ): js.Promise[WorkItem] = js.native
+    def createWorkItem(
+      customHeaders: js.Any,
+      document: JsonPatchDocument,
+      project: String,
+      `type`: String,
+      validateOnly: Unit,
+      bypassRules: Unit,
+      suppressNotifications: Boolean
+    ): js.Promise[WorkItem] = js.native
     
     def deleteClassificationNode(project: String, structureGroup: TreeStructureGroup): js.Promise[Unit] = js.native
-    def deleteClassificationNode(
-      project: String,
-      structureGroup: TreeStructureGroup,
-      path: js.UndefOr[scala.Nothing],
-      reclassifyId: Double
-    ): js.Promise[Unit] = js.native
     def deleteClassificationNode(project: String, structureGroup: TreeStructureGroup, path: String): js.Promise[Unit] = js.native
     def deleteClassificationNode(project: String, structureGroup: TreeStructureGroup, path: String, reclassifyId: Double): js.Promise[Unit] = js.native
+    def deleteClassificationNode(project: String, structureGroup: TreeStructureGroup, path: Unit, reclassifyId: Double): js.Promise[Unit] = js.native
     
     def deleteField(fieldNameOrRefName: String): js.Promise[Unit] = js.native
     def deleteField(fieldNameOrRefName: String, project: String): js.Promise[Unit] = js.native
@@ -217,13 +206,13 @@ object workItemTrackingApiMod {
     def evaluateRulesOnField(ruleEngineInput: FieldsToEvaluate): js.Promise[Unit] = js.native
     
     def exportWorkItemTypeDefinition(): js.Promise[WorkItemTypeTemplate] = js.native
-    def exportWorkItemTypeDefinition(project: js.UndefOr[scala.Nothing], `type`: js.UndefOr[scala.Nothing], exportGlobalLists: Boolean): js.Promise[WorkItemTypeTemplate] = js.native
-    def exportWorkItemTypeDefinition(project: js.UndefOr[scala.Nothing], `type`: String): js.Promise[WorkItemTypeTemplate] = js.native
-    def exportWorkItemTypeDefinition(project: js.UndefOr[scala.Nothing], `type`: String, exportGlobalLists: Boolean): js.Promise[WorkItemTypeTemplate] = js.native
     def exportWorkItemTypeDefinition(project: String): js.Promise[WorkItemTypeTemplate] = js.native
-    def exportWorkItemTypeDefinition(project: String, `type`: js.UndefOr[scala.Nothing], exportGlobalLists: Boolean): js.Promise[WorkItemTypeTemplate] = js.native
     def exportWorkItemTypeDefinition(project: String, `type`: String): js.Promise[WorkItemTypeTemplate] = js.native
     def exportWorkItemTypeDefinition(project: String, `type`: String, exportGlobalLists: Boolean): js.Promise[WorkItemTypeTemplate] = js.native
+    def exportWorkItemTypeDefinition(project: String, `type`: Unit, exportGlobalLists: Boolean): js.Promise[WorkItemTypeTemplate] = js.native
+    def exportWorkItemTypeDefinition(project: Unit, `type`: String): js.Promise[WorkItemTypeTemplate] = js.native
+    def exportWorkItemTypeDefinition(project: Unit, `type`: String, exportGlobalLists: Boolean): js.Promise[WorkItemTypeTemplate] = js.native
+    def exportWorkItemTypeDefinition(project: Unit, `type`: Unit, exportGlobalLists: Boolean): js.Promise[WorkItemTypeTemplate] = js.native
     
     def getAccountMyWorkData(): js.Promise[AccountMyWorkResult] = js.native
     def getAccountMyWorkData(queryOption: QueryOption): js.Promise[AccountMyWorkResult] = js.native
@@ -235,30 +224,20 @@ object workItemTrackingApiMod {
     def getAttachmentZip(id: String, fileName: String): js.Promise[ReadableStream] = js.native
     
     def getClassificationNode(project: String, structureGroup: TreeStructureGroup): js.Promise[WorkItemClassificationNode] = js.native
-    def getClassificationNode(
-      project: String,
-      structureGroup: TreeStructureGroup,
-      path: js.UndefOr[scala.Nothing],
-      depth: Double
-    ): js.Promise[WorkItemClassificationNode] = js.native
     def getClassificationNode(project: String, structureGroup: TreeStructureGroup, path: String): js.Promise[WorkItemClassificationNode] = js.native
     def getClassificationNode(project: String, structureGroup: TreeStructureGroup, path: String, depth: Double): js.Promise[WorkItemClassificationNode] = js.native
+    def getClassificationNode(project: String, structureGroup: TreeStructureGroup, path: Unit, depth: Double): js.Promise[WorkItemClassificationNode] = js.native
     
     def getComment(id: Double, revision: Double): js.Promise[WorkItemComment] = js.native
     
     def getComments(id: Double): js.Promise[WorkItemComments] = js.native
-    def getComments(
-      id: Double,
-      fromRevision: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      order: CommentSortOrder
-    ): js.Promise[WorkItemComments] = js.native
-    def getComments(id: Double, fromRevision: js.UndefOr[scala.Nothing], top: Double): js.Promise[WorkItemComments] = js.native
-    def getComments(id: Double, fromRevision: js.UndefOr[scala.Nothing], top: Double, order: CommentSortOrder): js.Promise[WorkItemComments] = js.native
     def getComments(id: Double, fromRevision: Double): js.Promise[WorkItemComments] = js.native
-    def getComments(id: Double, fromRevision: Double, top: js.UndefOr[scala.Nothing], order: CommentSortOrder): js.Promise[WorkItemComments] = js.native
     def getComments(id: Double, fromRevision: Double, top: Double): js.Promise[WorkItemComments] = js.native
     def getComments(id: Double, fromRevision: Double, top: Double, order: CommentSortOrder): js.Promise[WorkItemComments] = js.native
+    def getComments(id: Double, fromRevision: Double, top: Unit, order: CommentSortOrder): js.Promise[WorkItemComments] = js.native
+    def getComments(id: Double, fromRevision: Unit, top: Double): js.Promise[WorkItemComments] = js.native
+    def getComments(id: Double, fromRevision: Unit, top: Double, order: CommentSortOrder): js.Promise[WorkItemComments] = js.native
+    def getComments(id: Double, fromRevision: Unit, top: Unit, order: CommentSortOrder): js.Promise[WorkItemComments] = js.native
     
     def getDeletedWorkItem(id: Double): js.Promise[WorkItemDelete] = js.native
     def getDeletedWorkItem(id: Double, project: String): js.Promise[WorkItemDelete] = js.native
@@ -273,50 +252,27 @@ object workItemTrackingApiMod {
     def getField(fieldNameOrRefName: String, project: String): js.Promise[WorkItemField] = js.native
     
     def getFields(): js.Promise[js.Array[WorkItemField]] = js.native
-    def getFields(project: js.UndefOr[scala.Nothing], expand: GetFieldsExpand): js.Promise[js.Array[WorkItemField]] = js.native
     def getFields(project: String): js.Promise[js.Array[WorkItemField]] = js.native
     def getFields(project: String, expand: GetFieldsExpand): js.Promise[js.Array[WorkItemField]] = js.native
+    def getFields(project: Unit, expand: GetFieldsExpand): js.Promise[js.Array[WorkItemField]] = js.native
     
     def getQueries(project: String): js.Promise[js.Array[QueryHierarchyItem]] = js.native
-    def getQueries(
-      project: String,
-      expand: js.UndefOr[scala.Nothing],
-      depth: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean
-    ): js.Promise[js.Array[QueryHierarchyItem]] = js.native
-    def getQueries(project: String, expand: js.UndefOr[scala.Nothing], depth: Double): js.Promise[js.Array[QueryHierarchyItem]] = js.native
-    def getQueries(project: String, expand: js.UndefOr[scala.Nothing], depth: Double, includeDeleted: Boolean): js.Promise[js.Array[QueryHierarchyItem]] = js.native
+    def getQueries(project: String, expand: Unit, depth: Double): js.Promise[js.Array[QueryHierarchyItem]] = js.native
+    def getQueries(project: String, expand: Unit, depth: Double, includeDeleted: Boolean): js.Promise[js.Array[QueryHierarchyItem]] = js.native
+    def getQueries(project: String, expand: Unit, depth: Unit, includeDeleted: Boolean): js.Promise[js.Array[QueryHierarchyItem]] = js.native
     def getQueries(project: String, expand: QueryExpand): js.Promise[js.Array[QueryHierarchyItem]] = js.native
-    def getQueries(project: String, expand: QueryExpand, depth: js.UndefOr[scala.Nothing], includeDeleted: Boolean): js.Promise[js.Array[QueryHierarchyItem]] = js.native
     def getQueries(project: String, expand: QueryExpand, depth: Double): js.Promise[js.Array[QueryHierarchyItem]] = js.native
     def getQueries(project: String, expand: QueryExpand, depth: Double, includeDeleted: Boolean): js.Promise[js.Array[QueryHierarchyItem]] = js.native
+    def getQueries(project: String, expand: QueryExpand, depth: Unit, includeDeleted: Boolean): js.Promise[js.Array[QueryHierarchyItem]] = js.native
     
     def getQuery(project: String, query: String): js.Promise[QueryHierarchyItem] = js.native
-    def getQuery(
-      project: String,
-      query: String,
-      expand: js.UndefOr[scala.Nothing],
-      depth: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean
-    ): js.Promise[QueryHierarchyItem] = js.native
-    def getQuery(project: String, query: String, expand: js.UndefOr[scala.Nothing], depth: Double): js.Promise[QueryHierarchyItem] = js.native
-    def getQuery(
-      project: String,
-      query: String,
-      expand: js.UndefOr[scala.Nothing],
-      depth: Double,
-      includeDeleted: Boolean
-    ): js.Promise[QueryHierarchyItem] = js.native
+    def getQuery(project: String, query: String, expand: Unit, depth: Double): js.Promise[QueryHierarchyItem] = js.native
+    def getQuery(project: String, query: String, expand: Unit, depth: Double, includeDeleted: Boolean): js.Promise[QueryHierarchyItem] = js.native
+    def getQuery(project: String, query: String, expand: Unit, depth: Unit, includeDeleted: Boolean): js.Promise[QueryHierarchyItem] = js.native
     def getQuery(project: String, query: String, expand: QueryExpand): js.Promise[QueryHierarchyItem] = js.native
-    def getQuery(
-      project: String,
-      query: String,
-      expand: QueryExpand,
-      depth: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean
-    ): js.Promise[QueryHierarchyItem] = js.native
     def getQuery(project: String, query: String, expand: QueryExpand, depth: Double): js.Promise[QueryHierarchyItem] = js.native
     def getQuery(project: String, query: String, expand: QueryExpand, depth: Double, includeDeleted: Boolean): js.Promise[QueryHierarchyItem] = js.native
+    def getQuery(project: String, query: String, expand: QueryExpand, depth: Unit, includeDeleted: Boolean): js.Promise[QueryHierarchyItem] = js.native
     
     def getRecentActivityData(): js.Promise[js.Array[AccountRecentActivityWorkItemModel]] = js.native
     
@@ -327,68 +283,33 @@ object workItemTrackingApiMod {
     def getRelationTypes(): js.Promise[js.Array[WorkItemRelationType]] = js.native
     
     def getReportingLinks(): js.Promise[ReportingWorkItemLinksBatch] = js.native
-    def getReportingLinks(
-      project: js.UndefOr[scala.Nothing],
-      types: js.UndefOr[scala.Nothing],
-      continuationToken: js.UndefOr[scala.Nothing],
-      startDateTime: Date
-    ): js.Promise[ReportingWorkItemLinksBatch] = js.native
-    def getReportingLinks(project: js.UndefOr[scala.Nothing], types: js.UndefOr[scala.Nothing], continuationToken: String): js.Promise[ReportingWorkItemLinksBatch] = js.native
-    def getReportingLinks(
-      project: js.UndefOr[scala.Nothing],
-      types: js.UndefOr[scala.Nothing],
-      continuationToken: String,
-      startDateTime: Date
-    ): js.Promise[ReportingWorkItemLinksBatch] = js.native
-    def getReportingLinks(project: js.UndefOr[scala.Nothing], types: js.Array[String]): js.Promise[ReportingWorkItemLinksBatch] = js.native
-    def getReportingLinks(
-      project: js.UndefOr[scala.Nothing],
-      types: js.Array[String],
-      continuationToken: js.UndefOr[scala.Nothing],
-      startDateTime: Date
-    ): js.Promise[ReportingWorkItemLinksBatch] = js.native
-    def getReportingLinks(project: js.UndefOr[scala.Nothing], types: js.Array[String], continuationToken: String): js.Promise[ReportingWorkItemLinksBatch] = js.native
-    def getReportingLinks(
-      project: js.UndefOr[scala.Nothing],
-      types: js.Array[String],
-      continuationToken: String,
-      startDateTime: Date
-    ): js.Promise[ReportingWorkItemLinksBatch] = js.native
     def getReportingLinks(project: String): js.Promise[ReportingWorkItemLinksBatch] = js.native
-    def getReportingLinks(
-      project: String,
-      types: js.UndefOr[scala.Nothing],
-      continuationToken: js.UndefOr[scala.Nothing],
-      startDateTime: Date
-    ): js.Promise[ReportingWorkItemLinksBatch] = js.native
-    def getReportingLinks(project: String, types: js.UndefOr[scala.Nothing], continuationToken: String): js.Promise[ReportingWorkItemLinksBatch] = js.native
-    def getReportingLinks(project: String, types: js.UndefOr[scala.Nothing], continuationToken: String, startDateTime: Date): js.Promise[ReportingWorkItemLinksBatch] = js.native
     def getReportingLinks(project: String, types: js.Array[String]): js.Promise[ReportingWorkItemLinksBatch] = js.native
-    def getReportingLinks(
-      project: String,
-      types: js.Array[String],
-      continuationToken: js.UndefOr[scala.Nothing],
-      startDateTime: Date
-    ): js.Promise[ReportingWorkItemLinksBatch] = js.native
     def getReportingLinks(project: String, types: js.Array[String], continuationToken: String): js.Promise[ReportingWorkItemLinksBatch] = js.native
     def getReportingLinks(project: String, types: js.Array[String], continuationToken: String, startDateTime: Date): js.Promise[ReportingWorkItemLinksBatch] = js.native
+    def getReportingLinks(project: String, types: js.Array[String], continuationToken: Unit, startDateTime: Date): js.Promise[ReportingWorkItemLinksBatch] = js.native
+    def getReportingLinks(project: String, types: Unit, continuationToken: String): js.Promise[ReportingWorkItemLinksBatch] = js.native
+    def getReportingLinks(project: String, types: Unit, continuationToken: String, startDateTime: Date): js.Promise[ReportingWorkItemLinksBatch] = js.native
+    def getReportingLinks(project: String, types: Unit, continuationToken: Unit, startDateTime: Date): js.Promise[ReportingWorkItemLinksBatch] = js.native
+    def getReportingLinks(project: Unit, types: js.Array[String]): js.Promise[ReportingWorkItemLinksBatch] = js.native
+    def getReportingLinks(project: Unit, types: js.Array[String], continuationToken: String): js.Promise[ReportingWorkItemLinksBatch] = js.native
+    def getReportingLinks(project: Unit, types: js.Array[String], continuationToken: String, startDateTime: Date): js.Promise[ReportingWorkItemLinksBatch] = js.native
+    def getReportingLinks(project: Unit, types: js.Array[String], continuationToken: Unit, startDateTime: Date): js.Promise[ReportingWorkItemLinksBatch] = js.native
+    def getReportingLinks(project: Unit, types: Unit, continuationToken: String): js.Promise[ReportingWorkItemLinksBatch] = js.native
+    def getReportingLinks(project: Unit, types: Unit, continuationToken: String, startDateTime: Date): js.Promise[ReportingWorkItemLinksBatch] = js.native
+    def getReportingLinks(project: Unit, types: Unit, continuationToken: Unit, startDateTime: Date): js.Promise[ReportingWorkItemLinksBatch] = js.native
     
     def getRevision(id: Double, revisionNumber: Double): js.Promise[WorkItem] = js.native
     def getRevision(id: Double, revisionNumber: Double, expand: WorkItemExpand): js.Promise[WorkItem] = js.native
     
     def getRevisions(id: Double): js.Promise[js.Array[WorkItem]] = js.native
-    def getRevisions(
-      id: Double,
-      top: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      expand: WorkItemExpand
-    ): js.Promise[js.Array[WorkItem]] = js.native
-    def getRevisions(id: Double, top: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[WorkItem]] = js.native
-    def getRevisions(id: Double, top: js.UndefOr[scala.Nothing], skip: Double, expand: WorkItemExpand): js.Promise[js.Array[WorkItem]] = js.native
     def getRevisions(id: Double, top: Double): js.Promise[js.Array[WorkItem]] = js.native
-    def getRevisions(id: Double, top: Double, skip: js.UndefOr[scala.Nothing], expand: WorkItemExpand): js.Promise[js.Array[WorkItem]] = js.native
     def getRevisions(id: Double, top: Double, skip: Double): js.Promise[js.Array[WorkItem]] = js.native
     def getRevisions(id: Double, top: Double, skip: Double, expand: WorkItemExpand): js.Promise[js.Array[WorkItem]] = js.native
+    def getRevisions(id: Double, top: Double, skip: Unit, expand: WorkItemExpand): js.Promise[js.Array[WorkItem]] = js.native
+    def getRevisions(id: Double, top: Unit, skip: Double): js.Promise[js.Array[WorkItem]] = js.native
+    def getRevisions(id: Double, top: Unit, skip: Double, expand: WorkItemExpand): js.Promise[js.Array[WorkItem]] = js.native
+    def getRevisions(id: Double, top: Unit, skip: Unit, expand: WorkItemExpand): js.Promise[js.Array[WorkItem]] = js.native
     
     def getRootNodes(project: String): js.Promise[js.Array[WorkItemClassificationNode]] = js.native
     def getRootNodes(project: String, depth: Double): js.Promise[js.Array[WorkItemClassificationNode]] = js.native
@@ -401,35 +322,30 @@ object workItemTrackingApiMod {
     def getUpdate(id: Double, updateNumber: Double): js.Promise[WorkItemUpdate] = js.native
     
     def getUpdates(id: Double): js.Promise[js.Array[WorkItemUpdate]] = js.native
-    def getUpdates(id: Double, top: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[WorkItemUpdate]] = js.native
     def getUpdates(id: Double, top: Double): js.Promise[js.Array[WorkItemUpdate]] = js.native
     def getUpdates(id: Double, top: Double, skip: Double): js.Promise[js.Array[WorkItemUpdate]] = js.native
+    def getUpdates(id: Double, top: Unit, skip: Double): js.Promise[js.Array[WorkItemUpdate]] = js.native
     
     def getWorkArtifactLinkTypes(): js.Promise[js.Array[WorkArtifactLink]] = js.native
     
     def getWorkItem(id: Double): js.Promise[WorkItem] = js.native
-    def getWorkItem(
-      id: Double,
-      fields: js.UndefOr[scala.Nothing],
-      asOf: js.UndefOr[scala.Nothing],
-      expand: WorkItemExpand
-    ): js.Promise[WorkItem] = js.native
-    def getWorkItem(id: Double, fields: js.UndefOr[scala.Nothing], asOf: Date): js.Promise[WorkItem] = js.native
-    def getWorkItem(id: Double, fields: js.UndefOr[scala.Nothing], asOf: Date, expand: WorkItemExpand): js.Promise[WorkItem] = js.native
     def getWorkItem(id: Double, fields: js.Array[String]): js.Promise[WorkItem] = js.native
-    def getWorkItem(id: Double, fields: js.Array[String], asOf: js.UndefOr[scala.Nothing], expand: WorkItemExpand): js.Promise[WorkItem] = js.native
+    def getWorkItem(id: Double, fields: js.Array[String], asOf: Unit, expand: WorkItemExpand): js.Promise[WorkItem] = js.native
     def getWorkItem(id: Double, fields: js.Array[String], asOf: Date): js.Promise[WorkItem] = js.native
     def getWorkItem(id: Double, fields: js.Array[String], asOf: Date, expand: WorkItemExpand): js.Promise[WorkItem] = js.native
+    def getWorkItem(id: Double, fields: Unit, asOf: Unit, expand: WorkItemExpand): js.Promise[WorkItem] = js.native
+    def getWorkItem(id: Double, fields: Unit, asOf: Date): js.Promise[WorkItem] = js.native
+    def getWorkItem(id: Double, fields: Unit, asOf: Date, expand: WorkItemExpand): js.Promise[WorkItem] = js.native
     
     def getWorkItemIconJson(icon: String): js.Promise[WorkItemIcon] = js.native
-    def getWorkItemIconJson(icon: String, color: js.UndefOr[scala.Nothing], v: Double): js.Promise[WorkItemIcon] = js.native
     def getWorkItemIconJson(icon: String, color: String): js.Promise[WorkItemIcon] = js.native
     def getWorkItemIconJson(icon: String, color: String, v: Double): js.Promise[WorkItemIcon] = js.native
+    def getWorkItemIconJson(icon: String, color: Unit, v: Double): js.Promise[WorkItemIcon] = js.native
     
     def getWorkItemIconSvg(icon: String): js.Promise[ReadableStream] = js.native
-    def getWorkItemIconSvg(icon: String, color: js.UndefOr[scala.Nothing], v: Double): js.Promise[ReadableStream] = js.native
     def getWorkItemIconSvg(icon: String, color: String): js.Promise[ReadableStream] = js.native
     def getWorkItemIconSvg(icon: String, color: String, v: Double): js.Promise[ReadableStream] = js.native
+    def getWorkItemIconSvg(icon: String, color: Unit, v: Double): js.Promise[ReadableStream] = js.native
     
     def getWorkItemIcons(): js.Promise[js.Array[WorkItemIcon]] = js.native
     
@@ -439,31 +355,13 @@ object workItemTrackingApiMod {
     def getWorkItemStateColors(projectNames: js.Array[String]): js.Promise[js.Array[ProjectWorkItemStateColors]] = js.native
     
     def getWorkItemTemplate(project: String, `type`: String): js.Promise[WorkItem] = js.native
-    def getWorkItemTemplate(
-      project: String,
-      `type`: String,
-      fields: js.UndefOr[scala.Nothing],
-      asOf: js.UndefOr[scala.Nothing],
-      expand: WorkItemExpand
-    ): js.Promise[WorkItem] = js.native
-    def getWorkItemTemplate(project: String, `type`: String, fields: js.UndefOr[scala.Nothing], asOf: Date): js.Promise[WorkItem] = js.native
-    def getWorkItemTemplate(
-      project: String,
-      `type`: String,
-      fields: js.UndefOr[scala.Nothing],
-      asOf: Date,
-      expand: WorkItemExpand
-    ): js.Promise[WorkItem] = js.native
     def getWorkItemTemplate(project: String, `type`: String, fields: String): js.Promise[WorkItem] = js.native
-    def getWorkItemTemplate(
-      project: String,
-      `type`: String,
-      fields: String,
-      asOf: js.UndefOr[scala.Nothing],
-      expand: WorkItemExpand
-    ): js.Promise[WorkItem] = js.native
+    def getWorkItemTemplate(project: String, `type`: String, fields: String, asOf: Unit, expand: WorkItemExpand): js.Promise[WorkItem] = js.native
     def getWorkItemTemplate(project: String, `type`: String, fields: String, asOf: Date): js.Promise[WorkItem] = js.native
     def getWorkItemTemplate(project: String, `type`: String, fields: String, asOf: Date, expand: WorkItemExpand): js.Promise[WorkItem] = js.native
+    def getWorkItemTemplate(project: String, `type`: String, fields: Unit, asOf: Unit, expand: WorkItemExpand): js.Promise[WorkItem] = js.native
+    def getWorkItemTemplate(project: String, `type`: String, fields: Unit, asOf: Date): js.Promise[WorkItem] = js.native
+    def getWorkItemTemplate(project: String, `type`: String, fields: Unit, asOf: Date, expand: WorkItemExpand): js.Promise[WorkItem] = js.native
     
     def getWorkItemType(project: String, `type`: String): js.Promise[WorkItemType] = js.native
     
@@ -486,60 +384,19 @@ object workItemTrackingApiMod {
     def getWorkItemTypes(project: String): js.Promise[js.Array[WorkItemType]] = js.native
     
     def getWorkItems(ids: js.Array[Double]): js.Promise[js.Array[WorkItem]] = js.native
-    def getWorkItems(
-      ids: js.Array[Double],
-      fields: js.UndefOr[scala.Nothing],
-      asOf: js.UndefOr[scala.Nothing],
-      expand: js.UndefOr[scala.Nothing],
-      errorPolicy: WorkItemErrorPolicy
-    ): js.Promise[js.Array[WorkItem]] = js.native
-    def getWorkItems(
-      ids: js.Array[Double],
-      fields: js.UndefOr[scala.Nothing],
-      asOf: js.UndefOr[scala.Nothing],
-      expand: WorkItemExpand
-    ): js.Promise[js.Array[WorkItem]] = js.native
-    def getWorkItems(
-      ids: js.Array[Double],
-      fields: js.UndefOr[scala.Nothing],
-      asOf: js.UndefOr[scala.Nothing],
-      expand: WorkItemExpand,
-      errorPolicy: WorkItemErrorPolicy
-    ): js.Promise[js.Array[WorkItem]] = js.native
-    def getWorkItems(ids: js.Array[Double], fields: js.UndefOr[scala.Nothing], asOf: Date): js.Promise[js.Array[WorkItem]] = js.native
-    def getWorkItems(
-      ids: js.Array[Double],
-      fields: js.UndefOr[scala.Nothing],
-      asOf: Date,
-      expand: js.UndefOr[scala.Nothing],
-      errorPolicy: WorkItemErrorPolicy
-    ): js.Promise[js.Array[WorkItem]] = js.native
-    def getWorkItems(ids: js.Array[Double], fields: js.UndefOr[scala.Nothing], asOf: Date, expand: WorkItemExpand): js.Promise[js.Array[WorkItem]] = js.native
-    def getWorkItems(
-      ids: js.Array[Double],
-      fields: js.UndefOr[scala.Nothing],
-      asOf: Date,
-      expand: WorkItemExpand,
-      errorPolicy: WorkItemErrorPolicy
-    ): js.Promise[js.Array[WorkItem]] = js.native
     def getWorkItems(ids: js.Array[Double], fields: js.Array[String]): js.Promise[js.Array[WorkItem]] = js.native
     def getWorkItems(
       ids: js.Array[Double],
       fields: js.Array[String],
-      asOf: js.UndefOr[scala.Nothing],
-      expand: js.UndefOr[scala.Nothing],
+      asOf: Unit,
+      expand: Unit,
       errorPolicy: WorkItemErrorPolicy
     ): js.Promise[js.Array[WorkItem]] = js.native
+    def getWorkItems(ids: js.Array[Double], fields: js.Array[String], asOf: Unit, expand: WorkItemExpand): js.Promise[js.Array[WorkItem]] = js.native
     def getWorkItems(
       ids: js.Array[Double],
       fields: js.Array[String],
-      asOf: js.UndefOr[scala.Nothing],
-      expand: WorkItemExpand
-    ): js.Promise[js.Array[WorkItem]] = js.native
-    def getWorkItems(
-      ids: js.Array[Double],
-      fields: js.Array[String],
-      asOf: js.UndefOr[scala.Nothing],
+      asOf: Unit,
       expand: WorkItemExpand,
       errorPolicy: WorkItemErrorPolicy
     ): js.Promise[js.Array[WorkItem]] = js.native
@@ -548,7 +405,7 @@ object workItemTrackingApiMod {
       ids: js.Array[Double],
       fields: js.Array[String],
       asOf: Date,
-      expand: js.UndefOr[scala.Nothing],
+      expand: Unit,
       errorPolicy: WorkItemErrorPolicy
     ): js.Promise[js.Array[WorkItem]] = js.native
     def getWorkItems(ids: js.Array[Double], fields: js.Array[String], asOf: Date, expand: WorkItemExpand): js.Promise[js.Array[WorkItem]] = js.native
@@ -559,25 +416,39 @@ object workItemTrackingApiMod {
       expand: WorkItemExpand,
       errorPolicy: WorkItemErrorPolicy
     ): js.Promise[js.Array[WorkItem]] = js.native
+    def getWorkItems(ids: js.Array[Double], fields: Unit, asOf: Unit, expand: Unit, errorPolicy: WorkItemErrorPolicy): js.Promise[js.Array[WorkItem]] = js.native
+    def getWorkItems(ids: js.Array[Double], fields: Unit, asOf: Unit, expand: WorkItemExpand): js.Promise[js.Array[WorkItem]] = js.native
+    def getWorkItems(
+      ids: js.Array[Double],
+      fields: Unit,
+      asOf: Unit,
+      expand: WorkItemExpand,
+      errorPolicy: WorkItemErrorPolicy
+    ): js.Promise[js.Array[WorkItem]] = js.native
+    def getWorkItems(ids: js.Array[Double], fields: Unit, asOf: Date): js.Promise[js.Array[WorkItem]] = js.native
+    def getWorkItems(ids: js.Array[Double], fields: Unit, asOf: Date, expand: Unit, errorPolicy: WorkItemErrorPolicy): js.Promise[js.Array[WorkItem]] = js.native
+    def getWorkItems(ids: js.Array[Double], fields: Unit, asOf: Date, expand: WorkItemExpand): js.Promise[js.Array[WorkItem]] = js.native
+    def getWorkItems(
+      ids: js.Array[Double],
+      fields: Unit,
+      asOf: Date,
+      expand: WorkItemExpand,
+      errorPolicy: WorkItemErrorPolicy
+    ): js.Promise[js.Array[WorkItem]] = js.native
     
     def queryById(id: String): js.Promise[WorkItemQueryResult] = js.native
-    def queryById(id: String, teamContext: js.UndefOr[scala.Nothing], timePrecision: Boolean): js.Promise[WorkItemQueryResult] = js.native
+    def queryById(id: String, teamContext: Unit, timePrecision: Boolean): js.Promise[WorkItemQueryResult] = js.native
     def queryById(id: String, teamContext: TeamContext): js.Promise[WorkItemQueryResult] = js.native
     def queryById(id: String, teamContext: TeamContext, timePrecision: Boolean): js.Promise[WorkItemQueryResult] = js.native
     
     def queryByWiql(wiql: Wiql): js.Promise[WorkItemQueryResult] = js.native
-    def queryByWiql(
-      wiql: Wiql,
-      teamContext: js.UndefOr[scala.Nothing],
-      timePrecision: js.UndefOr[scala.Nothing],
-      top: Double
-    ): js.Promise[WorkItemQueryResult] = js.native
-    def queryByWiql(wiql: Wiql, teamContext: js.UndefOr[scala.Nothing], timePrecision: Boolean): js.Promise[WorkItemQueryResult] = js.native
-    def queryByWiql(wiql: Wiql, teamContext: js.UndefOr[scala.Nothing], timePrecision: Boolean, top: Double): js.Promise[WorkItemQueryResult] = js.native
+    def queryByWiql(wiql: Wiql, teamContext: Unit, timePrecision: Boolean): js.Promise[WorkItemQueryResult] = js.native
+    def queryByWiql(wiql: Wiql, teamContext: Unit, timePrecision: Boolean, top: Double): js.Promise[WorkItemQueryResult] = js.native
+    def queryByWiql(wiql: Wiql, teamContext: Unit, timePrecision: Unit, top: Double): js.Promise[WorkItemQueryResult] = js.native
     def queryByWiql(wiql: Wiql, teamContext: TeamContext): js.Promise[WorkItemQueryResult] = js.native
-    def queryByWiql(wiql: Wiql, teamContext: TeamContext, timePrecision: js.UndefOr[scala.Nothing], top: Double): js.Promise[WorkItemQueryResult] = js.native
     def queryByWiql(wiql: Wiql, teamContext: TeamContext, timePrecision: Boolean): js.Promise[WorkItemQueryResult] = js.native
     def queryByWiql(wiql: Wiql, teamContext: TeamContext, timePrecision: Boolean, top: Double): js.Promise[WorkItemQueryResult] = js.native
+    def queryByWiql(wiql: Wiql, teamContext: TeamContext, timePrecision: Unit, top: Double): js.Promise[WorkItemQueryResult] = js.native
     
     def queryWorkItemsForArtifactUris(artifactUriQuery: ArtifactUriQuery): js.Promise[ArtifactUriQueryResult] = js.native
     
@@ -597,78 +468,13 @@ object workItemTrackingApiMod {
     ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
     
     def readReportingRevisionsPost(filter: ReportingWorkItemRevisionsFilter): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
-    def readReportingRevisionsPost(
-      filter: ReportingWorkItemRevisionsFilter,
-      project: js.UndefOr[scala.Nothing],
-      continuationToken: js.UndefOr[scala.Nothing],
-      startDateTime: js.UndefOr[scala.Nothing],
-      expand: ReportingRevisionsExpand
-    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
-    def readReportingRevisionsPost(
-      filter: ReportingWorkItemRevisionsFilter,
-      project: js.UndefOr[scala.Nothing],
-      continuationToken: js.UndefOr[scala.Nothing],
-      startDateTime: Date
-    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
-    def readReportingRevisionsPost(
-      filter: ReportingWorkItemRevisionsFilter,
-      project: js.UndefOr[scala.Nothing],
-      continuationToken: js.UndefOr[scala.Nothing],
-      startDateTime: Date,
-      expand: ReportingRevisionsExpand
-    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
-    def readReportingRevisionsPost(
-      filter: ReportingWorkItemRevisionsFilter,
-      project: js.UndefOr[scala.Nothing],
-      continuationToken: String
-    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
-    def readReportingRevisionsPost(
-      filter: ReportingWorkItemRevisionsFilter,
-      project: js.UndefOr[scala.Nothing],
-      continuationToken: String,
-      startDateTime: js.UndefOr[scala.Nothing],
-      expand: ReportingRevisionsExpand
-    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
-    def readReportingRevisionsPost(
-      filter: ReportingWorkItemRevisionsFilter,
-      project: js.UndefOr[scala.Nothing],
-      continuationToken: String,
-      startDateTime: Date
-    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
-    def readReportingRevisionsPost(
-      filter: ReportingWorkItemRevisionsFilter,
-      project: js.UndefOr[scala.Nothing],
-      continuationToken: String,
-      startDateTime: Date,
-      expand: ReportingRevisionsExpand
-    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
     def readReportingRevisionsPost(filter: ReportingWorkItemRevisionsFilter, project: String): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
-    def readReportingRevisionsPost(
-      filter: ReportingWorkItemRevisionsFilter,
-      project: String,
-      continuationToken: js.UndefOr[scala.Nothing],
-      startDateTime: js.UndefOr[scala.Nothing],
-      expand: ReportingRevisionsExpand
-    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
-    def readReportingRevisionsPost(
-      filter: ReportingWorkItemRevisionsFilter,
-      project: String,
-      continuationToken: js.UndefOr[scala.Nothing],
-      startDateTime: Date
-    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
-    def readReportingRevisionsPost(
-      filter: ReportingWorkItemRevisionsFilter,
-      project: String,
-      continuationToken: js.UndefOr[scala.Nothing],
-      startDateTime: Date,
-      expand: ReportingRevisionsExpand
-    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
     def readReportingRevisionsPost(filter: ReportingWorkItemRevisionsFilter, project: String, continuationToken: String): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
     def readReportingRevisionsPost(
       filter: ReportingWorkItemRevisionsFilter,
       project: String,
       continuationToken: String,
-      startDateTime: js.UndefOr[scala.Nothing],
+      startDateTime: Unit,
       expand: ReportingRevisionsExpand
     ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
     def readReportingRevisionsPost(
@@ -681,6 +487,67 @@ object workItemTrackingApiMod {
       filter: ReportingWorkItemRevisionsFilter,
       project: String,
       continuationToken: String,
+      startDateTime: Date,
+      expand: ReportingRevisionsExpand
+    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
+    def readReportingRevisionsPost(
+      filter: ReportingWorkItemRevisionsFilter,
+      project: String,
+      continuationToken: Unit,
+      startDateTime: Unit,
+      expand: ReportingRevisionsExpand
+    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
+    def readReportingRevisionsPost(
+      filter: ReportingWorkItemRevisionsFilter,
+      project: String,
+      continuationToken: Unit,
+      startDateTime: Date
+    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
+    def readReportingRevisionsPost(
+      filter: ReportingWorkItemRevisionsFilter,
+      project: String,
+      continuationToken: Unit,
+      startDateTime: Date,
+      expand: ReportingRevisionsExpand
+    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
+    def readReportingRevisionsPost(filter: ReportingWorkItemRevisionsFilter, project: Unit, continuationToken: String): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
+    def readReportingRevisionsPost(
+      filter: ReportingWorkItemRevisionsFilter,
+      project: Unit,
+      continuationToken: String,
+      startDateTime: Unit,
+      expand: ReportingRevisionsExpand
+    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
+    def readReportingRevisionsPost(
+      filter: ReportingWorkItemRevisionsFilter,
+      project: Unit,
+      continuationToken: String,
+      startDateTime: Date
+    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
+    def readReportingRevisionsPost(
+      filter: ReportingWorkItemRevisionsFilter,
+      project: Unit,
+      continuationToken: String,
+      startDateTime: Date,
+      expand: ReportingRevisionsExpand
+    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
+    def readReportingRevisionsPost(
+      filter: ReportingWorkItemRevisionsFilter,
+      project: Unit,
+      continuationToken: Unit,
+      startDateTime: Unit,
+      expand: ReportingRevisionsExpand
+    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
+    def readReportingRevisionsPost(
+      filter: ReportingWorkItemRevisionsFilter,
+      project: Unit,
+      continuationToken: Unit,
+      startDateTime: Date
+    ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
+    def readReportingRevisionsPost(
+      filter: ReportingWorkItemRevisionsFilter,
+      project: Unit,
+      continuationToken: Unit,
       startDateTime: Date,
       expand: ReportingRevisionsExpand
     ): js.Promise[ReportingWorkItemRevisionsBatch] = js.native
@@ -691,31 +558,13 @@ object workItemTrackingApiMod {
     def restoreWorkItem(payload: WorkItemDeleteUpdate, id: Double, project: String): js.Promise[WorkItemDelete] = js.native
     
     def searchQueries(project: String, filter: String): js.Promise[QueryHierarchyItemsResult] = js.native
-    def searchQueries(
-      project: String,
-      filter: String,
-      top: js.UndefOr[scala.Nothing],
-      expand: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean
-    ): js.Promise[QueryHierarchyItemsResult] = js.native
-    def searchQueries(project: String, filter: String, top: js.UndefOr[scala.Nothing], expand: QueryExpand): js.Promise[QueryHierarchyItemsResult] = js.native
-    def searchQueries(
-      project: String,
-      filter: String,
-      top: js.UndefOr[scala.Nothing],
-      expand: QueryExpand,
-      includeDeleted: Boolean
-    ): js.Promise[QueryHierarchyItemsResult] = js.native
     def searchQueries(project: String, filter: String, top: Double): js.Promise[QueryHierarchyItemsResult] = js.native
-    def searchQueries(
-      project: String,
-      filter: String,
-      top: Double,
-      expand: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean
-    ): js.Promise[QueryHierarchyItemsResult] = js.native
+    def searchQueries(project: String, filter: String, top: Double, expand: Unit, includeDeleted: Boolean): js.Promise[QueryHierarchyItemsResult] = js.native
     def searchQueries(project: String, filter: String, top: Double, expand: QueryExpand): js.Promise[QueryHierarchyItemsResult] = js.native
     def searchQueries(project: String, filter: String, top: Double, expand: QueryExpand, includeDeleted: Boolean): js.Promise[QueryHierarchyItemsResult] = js.native
+    def searchQueries(project: String, filter: String, top: Unit, expand: Unit, includeDeleted: Boolean): js.Promise[QueryHierarchyItemsResult] = js.native
+    def searchQueries(project: String, filter: String, top: Unit, expand: QueryExpand): js.Promise[QueryHierarchyItemsResult] = js.native
+    def searchQueries(project: String, filter: String, top: Unit, expand: QueryExpand, includeDeleted: Boolean): js.Promise[QueryHierarchyItemsResult] = js.native
     
     def updateClassificationNode(postedNode: WorkItemClassificationNode, project: String, structureGroup: TreeStructureGroup): js.Promise[WorkItemClassificationNode] = js.native
     def updateClassificationNode(
@@ -732,43 +581,12 @@ object workItemTrackingApiMod {
     def updateQuery(queryUpdate: QueryHierarchyItem, project: String, query: String, undeleteDescendants: Boolean): js.Promise[QueryHierarchyItem] = js.native
     
     def updateWorkItem(customHeaders: js.Any, document: JsonPatchDocument, id: Double): js.Promise[WorkItem] = js.native
-    def updateWorkItem(
-      customHeaders: js.Any,
-      document: JsonPatchDocument,
-      id: Double,
-      validateOnly: js.UndefOr[scala.Nothing],
-      bypassRules: js.UndefOr[scala.Nothing],
-      suppressNotifications: Boolean
-    ): js.Promise[WorkItem] = js.native
-    def updateWorkItem(
-      customHeaders: js.Any,
-      document: JsonPatchDocument,
-      id: Double,
-      validateOnly: js.UndefOr[scala.Nothing],
-      bypassRules: Boolean
-    ): js.Promise[WorkItem] = js.native
-    def updateWorkItem(
-      customHeaders: js.Any,
-      document: JsonPatchDocument,
-      id: Double,
-      validateOnly: js.UndefOr[scala.Nothing],
-      bypassRules: Boolean,
-      suppressNotifications: Boolean
-    ): js.Promise[WorkItem] = js.native
     def updateWorkItem(customHeaders: js.Any, document: JsonPatchDocument, id: Double, validateOnly: Boolean): js.Promise[WorkItem] = js.native
     def updateWorkItem(
       customHeaders: js.Any,
       document: JsonPatchDocument,
       id: Double,
       validateOnly: Boolean,
-      bypassRules: js.UndefOr[scala.Nothing],
-      suppressNotifications: Boolean
-    ): js.Promise[WorkItem] = js.native
-    def updateWorkItem(
-      customHeaders: js.Any,
-      document: JsonPatchDocument,
-      id: Double,
-      validateOnly: Boolean,
       bypassRules: Boolean
     ): js.Promise[WorkItem] = js.native
     def updateWorkItem(
@@ -777,6 +595,37 @@ object workItemTrackingApiMod {
       id: Double,
       validateOnly: Boolean,
       bypassRules: Boolean,
+      suppressNotifications: Boolean
+    ): js.Promise[WorkItem] = js.native
+    def updateWorkItem(
+      customHeaders: js.Any,
+      document: JsonPatchDocument,
+      id: Double,
+      validateOnly: Boolean,
+      bypassRules: Unit,
+      suppressNotifications: Boolean
+    ): js.Promise[WorkItem] = js.native
+    def updateWorkItem(
+      customHeaders: js.Any,
+      document: JsonPatchDocument,
+      id: Double,
+      validateOnly: Unit,
+      bypassRules: Boolean
+    ): js.Promise[WorkItem] = js.native
+    def updateWorkItem(
+      customHeaders: js.Any,
+      document: JsonPatchDocument,
+      id: Double,
+      validateOnly: Unit,
+      bypassRules: Boolean,
+      suppressNotifications: Boolean
+    ): js.Promise[WorkItem] = js.native
+    def updateWorkItem(
+      customHeaders: js.Any,
+      document: JsonPatchDocument,
+      id: Double,
+      validateOnly: Unit,
+      bypassRules: Unit,
       suppressNotifications: Boolean
     ): js.Promise[WorkItem] = js.native
     

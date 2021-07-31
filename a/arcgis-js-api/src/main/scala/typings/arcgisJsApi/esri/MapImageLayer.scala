@@ -14,13 +14,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.svg
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.arcgisJsApi.esri.ArcGISMapService because var conflicts: fullExtent. Inlined capabilities, copyright, legendEnabled, spatialReference, version */ @js.native
 trait MapImageLayer
-  extends Layer
+  extends StObject
+     with Layer
      with SublayersOwner
      with ScaleRangeLayer
      with RefreshableLayer

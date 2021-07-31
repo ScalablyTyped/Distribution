@@ -6,40 +6,40 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceServicesList extends StandardParameters {
+trait ParamsResourceServicesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Include services consumed by the specified consumer.  The Google Service
     * Management implementation accepts the following forms: -
     * project:<project_id>
     */
-  var consumerId: js.UndefOr[String] = js.native
+  var consumerId: js.UndefOr[String] = js.undefined
   
   /**
     * The max number of items to include in the response list. Page size is 50
     * if not specified. Maximum value is 100.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Token identifying which result to start with; returned by a previous list
     * call.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Include services produced by the specified project.
     */
-  var producerProjectId: js.UndefOr[String] = js.native
+  var producerProjectId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceServicesList {
   

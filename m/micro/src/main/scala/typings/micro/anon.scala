@@ -3,17 +3,15 @@ package typings.micro
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var limit: js.UndefOr[String | Double] = js.native
+    var limit: js.UndefOr[String | Double] = js.undefined
   }
   object Encoding {
     
@@ -41,18 +39,17 @@ object anon {
   }
   
   /* Inlined std.Error & {  statusCode :number,   originalError :std.Error | undefined} */
-  @js.native
   trait ErrorstatusCodenumberorig extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
     
-    var originalError: js.UndefOr[Error] = js.native
+    var originalError: js.UndefOr[Error] = js.undefined
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object ErrorstatusCodenumberorig {
     
@@ -88,16 +85,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object Message {
     

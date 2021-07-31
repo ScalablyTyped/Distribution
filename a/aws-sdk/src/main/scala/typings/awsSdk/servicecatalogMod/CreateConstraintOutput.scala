@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateConstraintOutput extends StObject {
   
   /**
     * Information about the constraint.
     */
-  var ConstraintDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ConstraintDetail] = js.native
+  var ConstraintDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ConstraintDetail] = js.undefined
   
   /**
     * The constraint parameters.
     */
-  var ConstraintParameters: js.UndefOr[typings.awsSdk.servicecatalogMod.ConstraintParameters] = js.native
+  var ConstraintParameters: js.UndefOr[typings.awsSdk.servicecatalogMod.ConstraintParameters] = js.undefined
   
   /**
     * The status of the current request.
     */
-  var Status: js.UndefOr[typings.awsSdk.servicecatalogMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.servicecatalogMod.Status] = js.undefined
 }
 object CreateConstraintOutput {
   

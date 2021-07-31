@@ -6,25 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersListGpgKeysForAuthenticatedRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: GET = js.native
+  var method: GET
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashuserSlashgpg_keys = js.native
+  var url: SlashuserSlashgpg_keys
 }
 object UsersListGpgKeysForAuthenticatedRequestOptions {
   
   @scala.inline
-  def apply(headers: RequestHeaders, method: GET, request: RequestRequestOptions, url: SlashuserSlashgpg_keys): UsersListGpgKeysForAuthenticatedRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): UsersListGpgKeysForAuthenticatedRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/user/gpg_keys")
     __obj.asInstanceOf[UsersListGpgKeysForAuthenticatedRequestOptions]
   }
   

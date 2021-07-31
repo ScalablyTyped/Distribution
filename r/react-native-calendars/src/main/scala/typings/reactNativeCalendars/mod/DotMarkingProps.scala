@@ -4,15 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.simple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DotMarkingProps extends _CalendarMarkingProps {
+trait DotMarkingProps
+  extends StObject
+     with _CalendarMarkingProps {
   
-  var markedDates: StringDictionary[DotMarking] = js.native
+  var markedDates: StringDictionary[DotMarking]
   
-  var markingType: js.UndefOr[simple] = js.native
+  var markingType: js.UndefOr[simple] = js.undefined
 }
 object DotMarkingProps {
   

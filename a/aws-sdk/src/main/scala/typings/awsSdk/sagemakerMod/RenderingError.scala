@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderingError extends StObject {
   
   /**
     * A unique identifier for a specific class of errors.
     */
-  var Code: String = js.native
+  var Code: String
   
   /**
     * A human-readable message describing the error.
     */
-  var Message: String = js.native
+  var Message: String
 }
 object RenderingError {
   

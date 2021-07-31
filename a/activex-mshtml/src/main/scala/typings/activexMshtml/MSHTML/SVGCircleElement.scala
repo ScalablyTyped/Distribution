@@ -2,50 +2,48 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGCircleElement extends StObject {
   
   @JSName("MSHTML.SVGCircleElement_typekey")
-  var MSHTMLDotSVGCircleElement_typekey: SVGCircleElement = js.native
+  var MSHTMLDotSVGCircleElement_typekey: SVGCircleElement
   
-  var cx: SVGAnimatedLength = js.native
+  var cx: SVGAnimatedLength
   
-  var cy: SVGAnimatedLength = js.native
+  var cy: SVGAnimatedLength
   
-  val farthestViewportElement: ISVGElement = js.native
+  val farthestViewportElement: ISVGElement
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  def getBBox(): SVGRect = js.native
+  def getBBox(): SVGRect
   
-  def getCTM(): SVGMatrix = js.native
+  def getCTM(): SVGMatrix
   
-  def getScreenCTM(): SVGMatrix = js.native
+  def getScreenCTM(): SVGMatrix
   
-  def getTransformToElement(pElement: ISVGElement): SVGMatrix = js.native
+  def getTransformToElement(pElement: ISVGElement): SVGMatrix
   
-  def hasExtension(extension: String): Boolean = js.native
+  def hasExtension(`extension`: String): Boolean
   
-  val nearestViewportElement: ISVGElement = js.native
+  val nearestViewportElement: ISVGElement
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  var r: SVGAnimatedLength = js.native
+  var r: SVGAnimatedLength
   
-  val requiredExtensions: SVGStringList = js.native
+  val requiredExtensions: SVGStringList
   
-  val requiredFeatures: SVGStringList = js.native
+  val requiredFeatures: SVGStringList
   
-  val systemLanguage: SVGStringList = js.native
+  val systemLanguage: SVGStringList
   
-  val transform: SVGAnimatedTransformList = js.native
+  val transform: SVGAnimatedTransformList
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var xmlbase: String = js.native
+  var xmlbase: String
 }
 object SVGCircleElement {
   

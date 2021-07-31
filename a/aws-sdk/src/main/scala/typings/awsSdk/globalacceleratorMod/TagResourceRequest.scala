@@ -2,21 +2,19 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Global Accelerator resource to add tags to. An ARN uniquely identifies a resource.
     */
-  var ResourceArn: typings.awsSdk.globalacceleratorMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.globalacceleratorMod.ResourceArn
   
   /**
     * The tags to add to a resource. A tag consists of a key and a value that you define.
     */
-  var Tags: typings.awsSdk.globalacceleratorMod.Tags = js.native
+  var Tags: typings.awsSdk.globalacceleratorMod.Tags
 }
 object TagResourceRequest {
   

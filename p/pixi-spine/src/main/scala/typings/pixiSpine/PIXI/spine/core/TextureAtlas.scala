@@ -2,11 +2,11 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextureAtlas extends Disposable {
+trait TextureAtlas
+  extends StObject
+     with Disposable {
   
   def addSpineAtlas(
     atlasText: String,
@@ -14,32 +14,32 @@ trait TextureAtlas extends Disposable {
       /* path */ String, 
       /* loaderFunction */ js.Function1[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
-        _
+        js.Any
       ], 
-      _
+      js.Any
     ],
-    callback: js.Function1[/* obj */ this.type, _]
-  ): Unit = js.native
+    callback: js.Function1[/* obj */ this.type, js.Any]
+  ): Unit
   
   def addTexture(
     name: String,
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
-  ): TextureAtlasRegion = js.native
+  ): TextureAtlasRegion
   
   def addTextureHash(
     textures: Map[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
     ],
     stripExtension: Boolean
-  ): Unit = js.native
+  ): Unit
   
-  def findRegion(name: String): TextureAtlasRegion = js.native
+  def findRegion(name: String): TextureAtlasRegion
   
-  var load: js.Any = js.native
+  var load: js.Any
   
-  var pages: js.Array[TextureAtlasPage] = js.native
+  var pages: js.Array[TextureAtlasPage]
   
-  var regions: js.Array[TextureAtlasRegion] = js.native
+  var regions: js.Array[TextureAtlasRegion]
 }
 object TextureAtlas {
   
@@ -49,13 +49,13 @@ object TextureAtlas {
       /* path */ String, 
       /* loaderFunction */ js.Function1[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
-        _
+        js.Any
       ], 
-      _
-    ], js.Function1[TextureAtlas, _]) => Unit,
+      js.Any
+    ], js.Function1[TextureAtlas, js.Any]) => Unit,
     addTexture: (String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any) => TextureAtlasRegion,
     addTextureHash: (Map[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
     ], Boolean) => Unit,
     dispose: () => Unit,
     findRegion: String => TextureAtlasRegion,
@@ -76,10 +76,10 @@ object TextureAtlas {
           /* path */ String, 
           /* loaderFunction */ js.Function1[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
-            _
+            js.Any
           ], 
-          _
-        ], js.Function1[TextureAtlas, _]) => Unit
+          js.Any
+        ], js.Function1[TextureAtlas, js.Any]) => Unit
     ): Self = StObject.set(x, "addSpineAtlas", js.Any.fromFunction3(value))
     
     @scala.inline
@@ -90,7 +90,7 @@ object TextureAtlas {
     @scala.inline
     def setAddTextureHash(
       value: (Map[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
         ], Boolean) => Unit
     ): Self = StObject.set(x, "addTextureHash", js.Any.fromFunction2(value))
     

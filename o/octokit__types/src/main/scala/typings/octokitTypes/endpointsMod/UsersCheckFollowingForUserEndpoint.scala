@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersCheckFollowingForUserEndpoint extends StObject {
   
-  var target_user: String = js.native
+  var target_user: String
   
-  var username: String = js.native
+  var username: String
 }
 object UsersCheckFollowingForUserEndpoint {
   

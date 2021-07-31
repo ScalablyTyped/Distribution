@@ -4,66 +4,56 @@ import typings.retry.mod.OperationOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("proper-lockfile", "check")
+  @JSImport("proper-lockfile", JSImport.Namespace)
   @js.native
-  def check(file: String): js.Promise[Boolean] = js.native
-  @JSImport("proper-lockfile", "check")
-  @js.native
-  def check(file: String, options: CheckOptions): js.Promise[Boolean] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("proper-lockfile", "checkSync")
-  @js.native
-  def checkSync(file: String): Boolean = js.native
-  @JSImport("proper-lockfile", "checkSync")
-  @js.native
-  def checkSync(file: String, options: CheckOptions): Boolean = js.native
+  @scala.inline
+  def check(file: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def check(file: String, options: CheckOptions): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("proper-lockfile", "lock")
-  @js.native
-  def lock(file: String): js.Promise[js.Function0[js.Promise[Unit]]] = js.native
-  @JSImport("proper-lockfile", "lock")
-  @js.native
-  def lock(file: String, options: LockOptions): js.Promise[js.Function0[js.Promise[Unit]]] = js.native
+  @scala.inline
+  def checkSync(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSync")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def checkSync(file: String, options: CheckOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("proper-lockfile", "lockSync")
-  @js.native
-  def lockSync(file: String): js.Function0[Unit] = js.native
-  @JSImport("proper-lockfile", "lockSync")
-  @js.native
-  def lockSync(file: String, options: LockOptions): js.Function0[Unit] = js.native
+  @scala.inline
+  def lock(file: String): js.Promise[js.Function0[js.Promise[Unit]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Function0[js.Promise[Unit]]]]
+  @scala.inline
+  def lock(file: String, options: LockOptions): js.Promise[js.Function0[js.Promise[Unit]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Function0[js.Promise[Unit]]]]
   
-  @JSImport("proper-lockfile", "unlock")
-  @js.native
-  def unlock(file: String): js.Promise[Unit] = js.native
-  @JSImport("proper-lockfile", "unlock")
-  @js.native
-  def unlock(file: String, options: UnlockOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def lockSync(file: String): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("lockSync")(file.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def lockSync(file: String, options: LockOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lockSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("proper-lockfile", "unlockSync")
-  @js.native
-  def unlockSync(file: String): Unit = js.native
-  @JSImport("proper-lockfile", "unlockSync")
-  @js.native
-  def unlockSync(file: String, options: UnlockOptions): Unit = js.native
+  @scala.inline
+  def unlock(file: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def unlock(file: String, options: UnlockOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
+  @scala.inline
+  def unlockSync(file: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlockSync")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unlockSync(file: String, options: UnlockOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlockSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait CheckOptions extends StObject {
     
     // default: true
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
     // default: graceful-fs
-    var lockfilePath: js.UndefOr[String] = js.native
+    var lockfilePath: js.UndefOr[String] = js.undefined
     
     // default: 10000
-    var realpath: js.UndefOr[Boolean] = js.native
+    var realpath: js.UndefOr[Boolean] = js.undefined
     
-    var stale: js.UndefOr[Double] = js.native
+    var stale: js.UndefOr[Double] = js.undefined
   }
   object CheckOptions {
     
@@ -102,28 +92,27 @@ object mod {
     }
   }
   
-  @js.native
   trait LockOptions extends StObject {
     
     // default: true
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
     // default: (err) => throw err
-    var lockfilePath: js.UndefOr[String] = js.native
+    var lockfilePath: js.UndefOr[String] = js.undefined
     
     // default: graceful-fs
-    var onCompromised: js.UndefOr[js.Function1[/* err */ Error, _]] = js.native
+    var onCompromised: js.UndefOr[js.Function1[/* err */ Error, js.Any]] = js.undefined
     
     // default: 0
-    var realpath: js.UndefOr[Boolean] = js.native
+    var realpath: js.UndefOr[Boolean] = js.undefined
     
     // default: stale/2
-    var retries: js.UndefOr[Double | OperationOptions] = js.native
+    var retries: js.UndefOr[Double | OperationOptions] = js.undefined
     
-    var stale: js.UndefOr[Double] = js.native
+    var stale: js.UndefOr[Double] = js.undefined
     
     // default: 10000
-    var update: js.UndefOr[Double] = js.native
+    var update: js.UndefOr[Double] = js.undefined
   }
   object LockOptions {
     
@@ -149,7 +138,7 @@ object mod {
       def setLockfilePathUndefined: Self = StObject.set(x, "lockfilePath", js.undefined)
       
       @scala.inline
-      def setOnCompromised(value: /* err */ Error => _): Self = StObject.set(x, "onCompromised", js.Any.fromFunction1(value))
+      def setOnCompromised(value: /* err */ Error => js.Any): Self = StObject.set(x, "onCompromised", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCompromisedUndefined: Self = StObject.set(x, "onCompromised", js.undefined)
@@ -180,16 +169,15 @@ object mod {
     }
   }
   
-  @js.native
   trait UnlockOptions extends StObject {
     
     // default: true
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
     // default: graceful-fs
-    var lockfilePath: js.UndefOr[String] = js.native
+    var lockfilePath: js.UndefOr[String] = js.undefined
     
-    var realpath: js.UndefOr[Boolean] = js.native
+    var realpath: js.UndefOr[Boolean] = js.undefined
   }
   object UnlockOptions {
     

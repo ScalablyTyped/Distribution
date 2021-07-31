@@ -94,575 +94,573 @@ import typings.std.CustomEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @ionic/core.@ionic/core.JSX.IonTabButton & {  onIonTabButtonClick :(e : std.CustomEvent<any>): void | undefined} & std.Pick<react.react.HTMLAttributes<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonTabButtonElement>, 'hidden' | 'dir' | 'slot' | 'title' | 'color' | 'translate' | 'prefix' | 'children' | 'className' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'contentEditable' | 'contextMenu' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'spellCheck' | 'tabIndex' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture'> & @ionic/react.@ionic/react/dist/types/components/IonicReactProps.IonicReactProps & react.react.RefAttributes<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonTabButtonElement> */
-@js.native
 trait IonTabButtononIonTabButto extends StObject {
   
-  var about: js.UndefOr[String] = js.native
+  var about: js.UndefOr[String] = js.undefined
   
-  var accessKey: js.UndefOr[String] = js.native
+  var accessKey: js.UndefOr[String] = js.undefined
   
-  var `aria-activedescendant`: js.UndefOr[String] = js.native
+  var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[Boolean] = js.native
+  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
-  var `aria-busy`: js.UndefOr[Boolean] = js.native
+  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   
-  var `aria-colcount`: js.UndefOr[Double] = js.native
+  var `aria-colcount`: js.UndefOr[Double] = js.undefined
   
-  var `aria-colindex`: js.UndefOr[Double] = js.native
+  var `aria-colindex`: js.UndefOr[Double] = js.undefined
   
-  var `aria-colspan`: js.UndefOr[Double] = js.native
+  var `aria-colspan`: js.UndefOr[Double] = js.undefined
   
-  var `aria-controls`: js.UndefOr[String] = js.native
+  var `aria-controls`: js.UndefOr[String] = js.undefined
   
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
   
-  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
   
-  var `aria-details`: js.UndefOr[String] = js.native
+  var `aria-details`: js.UndefOr[String] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[Boolean] = js.native
+  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
   
-  var `aria-errormessage`: js.UndefOr[String] = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[Boolean] = js.native
+  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-flowto`: js.UndefOr[String] = js.native
+  var `aria-flowto`: js.UndefOr[String] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[Boolean] = js.native
+  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
   
-  var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
   
-  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.undefined
   
-  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.undefined
   
-  var `aria-level`: js.UndefOr[Double] = js.native
+  var `aria-level`: js.UndefOr[Double] = js.undefined
   
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
-  var `aria-modal`: js.UndefOr[Boolean] = js.native
+  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[Boolean] = js.native
+  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
   
-  var `aria-owns`: js.UndefOr[String] = js.native
+  var `aria-owns`: js.UndefOr[String] = js.undefined
   
-  var `aria-placeholder`: js.UndefOr[String] = js.native
+  var `aria-placeholder`: js.UndefOr[String] = js.undefined
   
-  var `aria-posinset`: js.UndefOr[Double] = js.native
+  var `aria-posinset`: js.UndefOr[Double] = js.undefined
   
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
     additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-  ] = js.native
+  ] = js.undefined
   
-  var `aria-required`: js.UndefOr[Boolean] = js.native
+  var `aria-required`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-roledescription`: js.UndefOr[String] = js.native
+  var `aria-roledescription`: js.UndefOr[String] = js.undefined
   
-  var `aria-rowcount`: js.UndefOr[Double] = js.native
+  var `aria-rowcount`: js.UndefOr[Double] = js.undefined
   
-  var `aria-rowindex`: js.UndefOr[Double] = js.native
+  var `aria-rowindex`: js.UndefOr[Double] = js.undefined
   
-  var `aria-rowspan`: js.UndefOr[Double] = js.native
+  var `aria-rowspan`: js.UndefOr[Double] = js.undefined
   
-  var `aria-selected`: js.UndefOr[Boolean] = js.native
+  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-setsize`: js.UndefOr[Double] = js.native
+  var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
   
-  var `aria-valuemax`: js.UndefOr[Double] = js.native
+  var `aria-valuemax`: js.UndefOr[Double] = js.undefined
   
-  var `aria-valuemin`: js.UndefOr[Double] = js.native
+  var `aria-valuemin`: js.UndefOr[Double] = js.undefined
   
-  var `aria-valuenow`: js.UndefOr[Double] = js.native
+  var `aria-valuenow`: js.UndefOr[Double] = js.undefined
   
-  var `aria-valuetext`: js.UndefOr[String] = js.native
+  var `aria-valuetext`: js.UndefOr[String] = js.undefined
   
-  var autoCapitalize: js.UndefOr[String] = js.native
+  var autoCapitalize: js.UndefOr[String] = js.undefined
   
-  var autoCorrect: js.UndefOr[String] = js.native
+  var autoCorrect: js.UndefOr[String] = js.undefined
   
-  var autoSave: js.UndefOr[String] = js.native
+  var autoSave: js.UndefOr[String] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
-  var contextMenu: js.UndefOr[String] = js.native
+  var contextMenu: js.UndefOr[String] = js.undefined
   
-  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var defaultChecked: js.UndefOr[Boolean] = js.native
+  var defaultChecked: js.UndefOr[Boolean] = js.undefined
   
-  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
   /**
     * If `true`, the user cannot interact with the tab button.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This attribute instructs browsers to download a URL instead of navigating to it, so the user will be prompted to save it as a local file. If the attribute has a value, it is used as the pre-filled file name in the Save prompt (the user can still change the file name if they want).
     */
-  var download: js.UndefOr[String] = js.native
+  var download: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Booleanish] = js.native
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Contains a URL or a URL fragment that the hyperlink points to. If this property is set, an anchor tag will be rendered.
     */
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.native
+  var inlist: js.UndefOr[js.Any] = js.undefined
   
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
-  var is: js.UndefOr[String] = js.native
+  var is: js.UndefOr[String] = js.undefined
   
-  var itemID: js.UndefOr[String] = js.native
+  var itemID: js.UndefOr[String] = js.undefined
   
-  var itemProp: js.UndefOr[String] = js.native
+  var itemProp: js.UndefOr[String] = js.undefined
   
-  var itemRef: js.UndefOr[String] = js.native
+  var itemRef: js.UndefOr[String] = js.undefined
   
-  var itemScope: js.UndefOr[Boolean] = js.native
+  var itemScope: js.UndefOr[Boolean] = js.undefined
   
-  var itemType: js.UndefOr[String] = js.native
+  var itemType: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[Key | Null] = js.native
+  var key: js.UndefOr[Key | Null] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
   /**
     * Set the layout of the text and icon in the tab bar. It defaults to `'icon-top'`.
     */
-  var layout: js.UndefOr[TabButtonLayout] = js.native
+  var layout: js.UndefOr[TabButtonLayout] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
-  var onAbort: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onAbort: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onAbortCapture: js.UndefOr[js.Any] = js.native
+  var onAbortCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onAnimationEndCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onAnimationIterationCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationIterationCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onAnimationStartCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onAuxClickCapture: js.UndefOr[js.Any] = js.native
+  var onAuxClickCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onBeforeInputCapture: js.UndefOr[js.Any] = js.native
+  var onBeforeInputCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onBlurCapture: js.UndefOr[js.Any] = js.native
+  var onBlurCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onCanPlayCapture: js.UndefOr[js.Any] = js.native
+  var onCanPlayCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onCanPlayThroughCapture: js.UndefOr[js.Any] = js.native
+  var onCanPlayThroughCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onChange: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onChange: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onChangeCapture: js.UndefOr[js.Any] = js.native
+  var onChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onClickCapture: js.UndefOr[js.Any] = js.native
+  var onClickCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onCompositionEndCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onCompositionStartCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onCompositionUpdateCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionUpdateCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onContextMenuCapture: js.UndefOr[js.Any] = js.native
+  var onContextMenuCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onCopyCapture: js.UndefOr[js.Any] = js.native
+  var onCopyCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCut: js.UndefOr[ClipboardEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onCut: js.UndefOr[ClipboardEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onCutCapture: js.UndefOr[js.Any] = js.native
+  var onCutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onDoubleClickCapture: js.UndefOr[js.Any] = js.native
+  var onDoubleClickCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDrag: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onDrag: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onDragCapture: js.UndefOr[js.Any] = js.native
+  var onDragCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragEnd: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onDragEnd: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onDragEndCapture: js.UndefOr[js.Any] = js.native
+  var onDragEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragEnter: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onDragEnter: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onDragEnterCapture: js.UndefOr[js.Any] = js.native
+  var onDragEnterCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragExit: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onDragExit: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onDragExitCapture: js.UndefOr[js.Any] = js.native
+  var onDragExitCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragLeave: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onDragLeave: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onDragLeaveCapture: js.UndefOr[js.Any] = js.native
+  var onDragLeaveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragOver: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onDragOver: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onDragOverCapture: js.UndefOr[js.Any] = js.native
+  var onDragOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragStart: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onDragStart: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onDragStartCapture: js.UndefOr[js.Any] = js.native
+  var onDragStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDrop: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onDrop: js.UndefOr[DragEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onDropCapture: js.UndefOr[js.Any] = js.native
+  var onDropCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onDurationChangeCapture: js.UndefOr[js.Any] = js.native
+  var onDurationChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEmptied: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onEmptied: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onEmptiedCapture: js.UndefOr[js.Any] = js.native
+  var onEmptiedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onEncryptedCapture: js.UndefOr[js.Any] = js.native
+  var onEncryptedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEnded: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onEnded: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onEndedCapture: js.UndefOr[js.Any] = js.native
+  var onEndedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onError: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onError: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onErrorCapture: js.UndefOr[js.Any] = js.native
+  var onErrorCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onFocusCapture: js.UndefOr[js.Any] = js.native
+  var onFocusCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onGotPointerCapture: js.UndefOr[js.Any] = js.native
+  var onGotPointerCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onGotPointerCaptureCapture: js.UndefOr[js.Any] = js.native
+  var onGotPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onInput: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onInput: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onInputCapture: js.UndefOr[js.Any] = js.native
+  var onInputCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onInvalid: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onInvalid: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onInvalidCapture: js.UndefOr[js.Any] = js.native
+  var onInvalidCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onIonTabButtonClick: js.UndefOr[js.Function1[/* e */ CustomEvent[_], Unit]] = js.native
+  var onIonTabButtonClick: js.UndefOr[js.Function1[/* e */ CustomEvent[js.Any], Unit]] = js.undefined
   
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onKeyDownCapture: js.UndefOr[js.Any] = js.native
+  var onKeyDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onKeyPressCapture: js.UndefOr[js.Any] = js.native
+  var onKeyPressCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onKeyUpCapture: js.UndefOr[js.Any] = js.native
+  var onKeyUpCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoad: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onLoad: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onLoadCapture: js.UndefOr[js.Any] = js.native
+  var onLoadCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onLoadStartCapture: js.UndefOr[js.Any] = js.native
+  var onLoadStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onLoadedDataCapture: js.UndefOr[js.Any] = js.native
+  var onLoadedDataCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onLoadedMetadataCapture: js.UndefOr[js.Any] = js.native
+  var onLoadedMetadataCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLostPointerCapture: js.UndefOr[js.Any] = js.native
+  var onLostPointerCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLostPointerCaptureCapture: js.UndefOr[js.Any] = js.native
+  var onLostPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onMouseDownCapture: js.UndefOr[js.Any] = js.native
+  var onMouseDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onMouseMoveCapture: js.UndefOr[js.Any] = js.native
+  var onMouseMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onMouseOutCapture: js.UndefOr[js.Any] = js.native
+  var onMouseOutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onMouseOverCapture: js.UndefOr[js.Any] = js.native
+  var onMouseOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onMouseUpCapture: js.UndefOr[js.Any] = js.native
+  var onMouseUpCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPasteCapture: js.UndefOr[js.Any] = js.native
+  var onPasteCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPause: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPause: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPauseCapture: js.UndefOr[js.Any] = js.native
+  var onPauseCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPlay: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPlay: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPlayCapture: js.UndefOr[js.Any] = js.native
+  var onPlayCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPlaying: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPlaying: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPlayingCapture: js.UndefOr[js.Any] = js.native
+  var onPlayingCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPointerCancelCapture: js.UndefOr[js.Any] = js.native
+  var onPointerCancelCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPointerDownCapture: js.UndefOr[js.Any] = js.native
+  var onPointerDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPointerEnterCapture: js.UndefOr[js.Any] = js.native
+  var onPointerEnterCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPointerLeaveCapture: js.UndefOr[js.Any] = js.native
+  var onPointerLeaveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPointerMoveCapture: js.UndefOr[js.Any] = js.native
+  var onPointerMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPointerOutCapture: js.UndefOr[js.Any] = js.native
+  var onPointerOutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPointerOverCapture: js.UndefOr[js.Any] = js.native
+  var onPointerOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onPointerUpCapture: js.UndefOr[js.Any] = js.native
+  var onPointerUpCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onProgress: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onProgress: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onProgressCapture: js.UndefOr[js.Any] = js.native
+  var onProgressCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onRateChange: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onRateChange: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onRateChangeCapture: js.UndefOr[js.Any] = js.native
+  var onRateChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onReset: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onReset: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onResetCapture: js.UndefOr[js.Any] = js.native
+  var onResetCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onScroll: js.UndefOr[UIEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onScroll: js.UndefOr[UIEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onScrollCapture: js.UndefOr[js.Any] = js.native
+  var onScrollCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSeeked: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onSeeked: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onSeekedCapture: js.UndefOr[js.Any] = js.native
+  var onSeekedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSeeking: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onSeeking: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onSeekingCapture: js.UndefOr[js.Any] = js.native
+  var onSeekingCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSelect: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onSelect: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onSelectCapture: js.UndefOr[js.Any] = js.native
+  var onSelectCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onStalled: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onStalled: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onStalledCapture: js.UndefOr[js.Any] = js.native
+  var onStalledCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSubmit: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onSubmit: js.UndefOr[FormEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onSubmitCapture: js.UndefOr[js.Any] = js.native
+  var onSubmitCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSuspend: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onSuspend: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onSuspendCapture: js.UndefOr[js.Any] = js.native
+  var onSuspendCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onTimeUpdateCapture: js.UndefOr[js.Any] = js.native
+  var onTimeUpdateCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onTouchCancelCapture: js.UndefOr[js.Any] = js.native
+  var onTouchCancelCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onTouchEndCapture: js.UndefOr[js.Any] = js.native
+  var onTouchEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onTouchMoveCapture: js.UndefOr[js.Any] = js.native
+  var onTouchMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onTouchStartCapture: js.UndefOr[js.Any] = js.native
+  var onTouchStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onTransitionEndCapture: js.UndefOr[js.Any] = js.native
+  var onTransitionEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onVolumeChangeCapture: js.UndefOr[js.Any] = js.native
+  var onVolumeChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onWaiting: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onWaiting: js.UndefOr[ReactEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onWaitingCapture: js.UndefOr[js.Any] = js.native
+  var onWaitingCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onWheel: js.UndefOr[WheelEventHandler[HTMLIonTabButtonElement]] = js.native
+  var onWheel: js.UndefOr[WheelEventHandler[HTMLIonTabButtonElement]] = js.undefined
   
-  var onWheelCapture: js.UndefOr[js.Any] = js.native
+  var onWheelCapture: js.UndefOr[js.Any] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
-  var radioGroup: js.UndefOr[String] = js.native
+  var radioGroup: js.UndefOr[String] = js.undefined
   
-  var ref: js.UndefOr[Ref[HTMLIonTabButtonElement]] = js.native
+  var ref: js.UndefOr[Ref[HTMLIonTabButtonElement]] = js.undefined
   
   /**
     * Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
     */
-  var rel: js.UndefOr[String] = js.native
+  var rel: js.UndefOr[String] = js.undefined
   
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
-  var results: js.UndefOr[Double] = js.native
+  var results: js.UndefOr[Double] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var security: js.UndefOr[String] = js.native
+  var security: js.UndefOr[String] = js.undefined
   
   /**
     * The selected tab component
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var slot: js.UndefOr[String] = js.native
+  var slot: js.UndefOr[String] = js.undefined
   
-  var spellCheck: js.UndefOr[Booleanish] = js.native
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
-  var style: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   
-  var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+  var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A tab id must be provided for each `ion-tab`. It's used internally to reference the selected tab or by the router to switch between them.
     */
-  var tab: js.UndefOr[String] = js.native
+  var tab: js.UndefOr[String] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies where to display the linked URL. Only applies when an `href` is provided. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var translate: js.UndefOr[yes | no] = js.native
+  var translate: js.UndefOr[yes | no] = js.undefined
   
-  var typeof: js.UndefOr[String] = js.native
+  var typeof: js.UndefOr[String] = js.undefined
   
-  var unselectable: js.UndefOr[on | off] = js.native
+  var unselectable: js.UndefOr[on | off] = js.undefined
   
-  var vocab: js.UndefOr[String] = js.native
+  var vocab: js.UndefOr[String] = js.undefined
 }
 object IonTabButtononIonTabButto {
   
@@ -1596,7 +1594,7 @@ object IonTabButtononIonTabButto {
     def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
     
     @scala.inline
-    def setOnIonTabButtonClick(value: /* e */ CustomEvent[_] => Unit): Self = StObject.set(x, "onIonTabButtonClick", js.Any.fromFunction1(value))
+    def setOnIonTabButtonClick(value: /* e */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "onIonTabButtonClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonTabButtonClickUndefined: Self = StObject.set(x, "onIonTabButtonClick", js.undefined)

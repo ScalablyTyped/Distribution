@@ -10,9 +10,9 @@ Parses Cache-Control and other headers. Helps building correct HTTP caches and p
 | ------------------ | :-------------: |
 | Full name          | http-cache-semantics |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 40 |
-| # downloads        | 303306753 |
+| # releases         | 3 |
+| # dependents       | 66 |
+| # downloads        | 507590984 |
 | # stars            | 2 |
 
 ## Links

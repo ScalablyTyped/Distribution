@@ -2,21 +2,19 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataItem extends StObject {
   
   /**
     * The count of the metadata item
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * The name of the metadata item
     */
-  var name: String = js.native
+  var name: String
 }
 object MetadataItem {
   

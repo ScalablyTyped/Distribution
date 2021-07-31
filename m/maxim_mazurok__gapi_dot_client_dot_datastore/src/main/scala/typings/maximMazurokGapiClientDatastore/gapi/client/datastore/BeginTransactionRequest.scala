@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeginTransactionRequest extends StObject {
   
   /** Options for a new transaction. */
-  var transactionOptions: js.UndefOr[TransactionOptions] = js.native
+  var transactionOptions: js.UndefOr[TransactionOptions] = js.undefined
 }
 object BeginTransactionRequest {
   

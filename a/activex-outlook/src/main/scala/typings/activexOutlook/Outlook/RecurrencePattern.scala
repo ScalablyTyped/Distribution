@@ -3,54 +3,52 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecurrencePattern extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var DayOfMonth: Double = js.native
+  var DayOfMonth: Double
   
-  var DayOfWeekMask: OlDaysOfWeek = js.native
+  var DayOfWeekMask: OlDaysOfWeek
   
-  var Duration: Double = js.native
+  var Duration: Double
   
-  var EndTime: VarDate = js.native
+  var EndTime: VarDate
   
-  val Exceptions: typings.activexOutlook.Outlook.Exceptions = js.native
+  val Exceptions: typings.activexOutlook.Outlook.Exceptions
   
-  def GetOccurrence(StartDate: VarDate): AppointmentItem = js.native
+  def GetOccurrence(StartDate: VarDate): AppointmentItem
   
-  var Instance: Double = js.native
+  var Instance: Double
   
-  var Interval: Double = js.native
+  var Interval: Double
   
-  var MonthOfYear: Double = js.native
+  var MonthOfYear: Double
   
-  var NoEndDate: Boolean = js.native
+  var NoEndDate: Boolean
   
-  var Occurrences: Double = js.native
+  var Occurrences: Double
   
   @JSName("Outlook.RecurrencePattern_typekey")
-  var OutlookDotRecurrencePattern_typekey: RecurrencePattern = js.native
+  var OutlookDotRecurrencePattern_typekey: RecurrencePattern
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PatternEndDate: VarDate = js.native
+  var PatternEndDate: VarDate
   
-  var PatternStartDate: VarDate = js.native
+  var PatternStartDate: VarDate
   
-  var RecurrenceType: OlRecurrenceType = js.native
+  var RecurrenceType: OlRecurrenceType
   
-  var Regenerate: Boolean = js.native
+  var Regenerate: Boolean
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  var StartTime: VarDate = js.native
+  var StartTime: VarDate
 }
 object RecurrencePattern {
   

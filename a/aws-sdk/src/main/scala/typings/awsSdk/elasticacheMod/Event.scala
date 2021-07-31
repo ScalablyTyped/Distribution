@@ -2,31 +2,29 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
   /**
     * The date and time when the event occurred.
     */
-  var Date: js.UndefOr[TStamp] = js.native
+  var Date: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The text of the event.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the source of the event. For example, if the event occurred at the cluster level, the identifier would be the name of the cluster.
     */
-  var SourceIdentifier: js.UndefOr[String] = js.native
+  var SourceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the origin of this event - a cluster, a parameter group, a security group, etc.
     */
-  var SourceType: js.UndefOr[typings.awsSdk.elasticacheMod.SourceType] = js.native
+  var SourceType: js.UndefOr[typings.awsSdk.elasticacheMod.SourceType] = js.undefined
 }
 object Event {
   

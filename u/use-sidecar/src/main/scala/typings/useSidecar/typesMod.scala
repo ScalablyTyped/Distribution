@@ -5,7 +5,6 @@ import typings.react.mod.FunctionComponent
 import typings.useSidecar.anon.Default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -18,12 +17,11 @@ object typesMod {
   
   type MiddlewareCallback[T] = js.Function2[/* data */ T, /* assigned */ Boolean, T]
   
-  type SideCarComponent[T] = FunctionComponent[T with SideCarHOC]
+  type SideCarComponent[T] = FunctionComponent[T & SideCarHOC]
   
-  @js.native
   trait SideCarHOC extends StObject {
     
-    var sideCar: SideCarMedium = js.native
+    var sideCar: SideCarMedium
   }
   object SideCarHOC {
     
@@ -43,12 +41,11 @@ object typesMod {
   
   type SideCarMedium = SideMedium[ComponentType[js.Object]]
   
-  @js.native
   trait SideCarMediumOptions extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var ssr: js.UndefOr[Boolean] = js.native
+    var ssr: js.UndefOr[Boolean] = js.undefined
   }
   object SideCarMediumOptions {
     
@@ -75,18 +72,17 @@ object typesMod {
     }
   }
   
-  @js.native
   trait SideMedium[T] extends StObject {
     
-    def assignMedium(handler: MediumCallback[T]): Unit = js.native
+    def assignMedium(handler: MediumCallback[T]): Unit
     
-    def assignSyncMedium(handler: MediumCallback[T]): Unit = js.native
+    def assignSyncMedium(handler: MediumCallback[T]): Unit
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
-    def read(): js.UndefOr[T] = js.native
+    def read(): js.UndefOr[T]
     
-    def useMedium(effect: T): removeCb = js.native
+    def useMedium(effect: T): removeCb
   }
   object SideMedium {
     
@@ -102,7 +98,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class SideMediumMutableBuilder[Self <: SideMedium[_], T] (val x: Self with SideMedium[T]) extends AnyVal {
+    implicit class SideMediumMutableBuilder[Self <: SideMedium[?], T] (val x: Self & SideMedium[T]) extends AnyVal {
       
       @scala.inline
       def setAssignMedium(value: MediumCallback[T] => Unit): Self = StObject.set(x, "assignMedium", js.Any.fromFunction1(value))
@@ -124,14 +120,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait SidePush[T] extends StObject {
     
-    def filter(cb: js.Function1[/* x */ T, Boolean]): SidePush[T] = js.native
+    def filter(cb: js.Function1[/* x */ T, Boolean]): SidePush[T]
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    def push(data: T): Unit = js.native
+    def push(data: T): Unit
   }
   object SidePush {
     
@@ -142,7 +137,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class SidePushMutableBuilder[Self <: SidePush[_], T] (val x: Self with SidePush[T]) extends AnyVal {
+    implicit class SidePushMutableBuilder[Self <: SidePush[?], T] (val x: Self & SidePush[T]) extends AnyVal {
       
       @scala.inline
       def setFilter(value: js.Function1[/* x */ T, Boolean] => SidePush[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))

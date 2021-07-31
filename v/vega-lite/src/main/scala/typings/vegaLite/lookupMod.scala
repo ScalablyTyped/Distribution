@@ -5,7 +5,6 @@ import typings.vegaLite.modelMod.Model
 import typings.vegaLite.transformMod.LookupTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lookupMod {
@@ -24,8 +23,11 @@ object lookupMod {
   /* static members */
   object LookupNode {
     
-    @JSImport("vega-lite/build/src/compile/data/lookup", "LookupNode.make")
+    @JSImport("vega-lite/build/src/compile/data/lookup", "LookupNode")
     @js.native
-    def make(parent: DataFlowNode, model: Model, transform: LookupTransform, counter: Double): LookupNode = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def make(parent: DataFlowNode, model: Model, transform: LookupTransform, counter: Double): LookupNode = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], counter.asInstanceOf[js.Any])).asInstanceOf[LookupNode]
   }
 }

@@ -3,7 +3,6 @@ package typings.blueprintjsTable
 import typings.propTypes.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
@@ -22,10 +21,9 @@ object contextMod {
     def enableColumnInteractionBar_=(x: js.UndefOr[Validator[Boolean]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enableColumnInteractionBar")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IColumnInteractionBarContextTypes extends StObject {
     
-    var enableColumnInteractionBar: Boolean = js.native
+    var enableColumnInteractionBar: Boolean
   }
   object IColumnInteractionBarContextTypes {
     

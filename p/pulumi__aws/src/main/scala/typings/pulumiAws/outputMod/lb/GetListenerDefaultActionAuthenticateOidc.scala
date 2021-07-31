@@ -3,33 +3,31 @@ package typings.pulumiAws.outputMod.lb
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetListenerDefaultActionAuthenticateOidc extends StObject {
   
-  var authenticationRequestExtraParams: StringDictionary[String] = js.native
+  var authenticationRequestExtraParams: StringDictionary[String]
   
-  var authorizationEndpoint: String = js.native
+  var authorizationEndpoint: String
   
-  var clientId: String = js.native
+  var clientId: String
   
-  var clientSecret: String = js.native
+  var clientSecret: String
   
-  var issuer: String = js.native
+  var issuer: String
   
-  var onUnauthenticatedRequest: String = js.native
+  var onUnauthenticatedRequest: String
   
-  var scope: String = js.native
+  var scope: String
   
-  var sessionCookieName: String = js.native
+  var sessionCookieName: String
   
-  var sessionTimeout: Double = js.native
+  var sessionTimeout: Double
   
-  var tokenEndpoint: String = js.native
+  var tokenEndpoint: String
   
-  var userInfoEndpoint: String = js.native
+  var userInfoEndpoint: String
 }
 object GetListenerDefaultActionAuthenticateOidc {
   

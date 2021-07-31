@@ -2,17 +2,15 @@ package typings.cssSelectorTokenizer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseNode extends StObject {
   
-  var after: js.UndefOr[String] = js.native
+  var after: js.UndefOr[String] = js.undefined
   
-  var before: js.UndefOr[String] = js.native
+  var before: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object BaseNode {
   

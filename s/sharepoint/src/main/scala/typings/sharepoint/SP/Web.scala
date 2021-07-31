@@ -8,11 +8,12 @@ import typings.sharepoint.SP.Workflow.WorkflowTemplateCollection
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Web extends SecurableObject {
+trait Web
+  extends StObject
+     with SecurableObject {
   
   def applyTheme(
     colorPaletteUrl: String,
@@ -41,7 +42,7 @@ trait Web extends SecurableObject {
   
   def getAvailableWebTemplates(lcid: Double, doIncludeCrossLanguage: Boolean): WebTemplateCollection = js.native
   
-  def getCatalog(typeCatalog: Double): List[_] = js.native
+  def getCatalog(typeCatalog: Double): List[js.Any] = js.native
   
   def getChanges(query: ChangeQuery): ChangeCollection = js.native
   
@@ -52,7 +53,7 @@ trait Web extends SecurableObject {
   def getFolderByServerRelativeUrl(serverRelativeUrl: String): Folder = js.native
   
   /** Available after March 2015 CU for SharePoint 2013*/
-  def getList(url: String): List[_] = js.native
+  def getList(url: String): List[js.Any] = js.native
   
   def getPushNotificationSubscriber(deviceAppInstanceId: Guid): PushNotificationSubscriber = js.native
   
@@ -154,7 +155,7 @@ trait Web extends SecurableObject {
   
   def get_siteLogoUrl(): String = js.native
   
-  def get_siteUserInfoList(): List[_] = js.native
+  def get_siteUserInfoList(): List[js.Any] = js.native
   
   def get_siteUsers(): UserCollection = js.native
   

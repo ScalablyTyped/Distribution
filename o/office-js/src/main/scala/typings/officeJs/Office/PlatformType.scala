@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,35 +17,47 @@ object PlatformType extends StObject {
     * The platform is an Android device.
     */
   @js.native
-  sealed trait Android extends PlatformType
+  sealed trait Android
+    extends StObject
+       with PlatformType
   
   /**
     * The platform is Mac.
     */
   @js.native
-  sealed trait Mac extends PlatformType
+  sealed trait Mac
+    extends StObject
+       with PlatformType
   
   /**
     * The platform is Office on the web (in a browser).
     */
   @js.native
-  sealed trait OfficeOnline extends PlatformType
+  sealed trait OfficeOnline
+    extends StObject
+       with PlatformType
   
   /**
     * The platform is PC (Windows).
     */
   @js.native
-  sealed trait PC extends PlatformType
+  sealed trait PC
+    extends StObject
+       with PlatformType
   
   /**
     * The platform is WinRT.
     */
   @js.native
-  sealed trait Universal extends PlatformType
+  sealed trait Universal
+    extends StObject
+       with PlatformType
   
   /**
     * The platform an iOS device.
     */
   @js.native
-  sealed trait iOS extends PlatformType
+  sealed trait iOS
+    extends StObject
+       with PlatformType
 }

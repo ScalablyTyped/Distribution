@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.frame
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,17 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Controller
   * @since OOo 2.0
   */
-@js.native
 trait DispatchInformation extends StObject {
   
   /** command URL of a supported command. */
-  var Command: String = js.native
+  var Command: String
   
   /**
     * group identifier to which the supported command belong.
     * @see CommandGroup
     */
-  var GroupId: Double = js.native
+  var GroupId: Double
 }
 object DispatchInformation {
   

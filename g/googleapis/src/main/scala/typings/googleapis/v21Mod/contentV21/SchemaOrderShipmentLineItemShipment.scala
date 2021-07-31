@@ -2,28 +2,26 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderShipmentLineItemShipment extends StObject {
   
   /**
     * The ID of the line item that is shipped. Either lineItemId or productId
     * is required.
     */
-  var lineItemId: js.UndefOr[String] = js.native
+  var lineItemId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the product to ship. This is the REST ID used in the products
     * service. Either lineItemId or productId is required.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * The quantity that is shipped.
     */
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
 }
 object SchemaOrderShipmentLineItemShipment {
   

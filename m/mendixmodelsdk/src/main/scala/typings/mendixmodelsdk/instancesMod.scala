@@ -23,10 +23,13 @@ import typings.mendixmodelsdk.versionChecksMod.Version
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instancesMod {
+  
+  @JSImport("mendixmodelsdk/dist/sdk/internal/instances", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "AbstractEnum")
   @js.native
@@ -44,22 +47,23 @@ object instancesMod {
     var versionInfo: LifeCycle = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "createElementFromJSON")
-  @js.native
-  def createElementFromJSON(model: IAbstractModel, json: IAbstractElementJson): Element[IAbstractModel] = js.native
-  @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "createElementFromJSON")
-  @js.native
+  @scala.inline
+  def createElementFromJSON(model: IAbstractModel, json: IAbstractElementJson): Element[IAbstractModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementFromJSON")(model.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Element[IAbstractModel]]
+  @scala.inline
   def createElementFromJSON(
     model: IAbstractModel,
     json: IAbstractElementJson,
     idToStructureMap: IMap[Structure[IAbstractModel, IContainer | Null]]
-  ): Element[IAbstractModel] = js.native
+  ): Element[IAbstractModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementFromJSON")(model.asInstanceOf[js.Any], json.asInstanceOf[js.Any], idToStructureMap.asInstanceOf[js.Any])).asInstanceOf[Element[IAbstractModel]]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "createModelUnitFromJSON")
-  @js.native
-  def createModelUnitFromJSON(containerUnit: IStructuralUnit, containmentName: String, contents: IAbstractElementJson): ModelUnit[IAbstractModel] = js.native
+  @scala.inline
+  def createModelUnitFromJSON(containerUnit: IStructuralUnit, containmentName: String, contents: IAbstractElementJson): ModelUnit[IAbstractModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelUnitFromJSON")(containerUnit.asInstanceOf[js.Any], containmentName.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[ModelUnit[IAbstractModel]]
   
   object instancehelpers {
+    
+    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Given some a (normalized) JSON representation of a unit,
@@ -67,134 +71,118 @@ object instancesMod {
       * and populates that from the JSON.
       * Should only be called if this unit was not already in memory.
       */
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.abstractUnitJsonToInstance")
-    @js.native
-    def abstractUnitJsonToInstance(model: AbstractModel, json: IAbstractUnitJson, isPartial: Boolean): AbstractUnit[IAbstractModel] | Null = js.native
+    @scala.inline
+    def abstractUnitJsonToInstance(model: AbstractModel, json: IAbstractUnitJson, isPartial: Boolean): AbstractUnit[IAbstractModel] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("abstractUnitJsonToInstance")(model.asInstanceOf[js.Any], json.asInstanceOf[js.Any], isPartial.asInstanceOf[js.Any])).asInstanceOf[AbstractUnit[IAbstractModel] | Null]
     
     /**
       * Creates a new element for a SDK user.
       */
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createElement")
-    @js.native
-    def createElement[T /* <: Element[IAbstractModel] */](owner: IAbstractModel, constructor: IStructureConstructor[T]): T = js.native
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createElement")
-    @js.native
-    def createElement[T /* <: Element[IAbstractModel] */](
-      owner: IAbstractModel,
-      constructor: IStructureConstructor[T],
-      parentPropName: js.UndefOr[scala.Nothing],
-      parentPropIsList: Boolean
-    ): T = js.native
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createElement")
-    @js.native
-    def createElement[T /* <: Element[IAbstractModel] */](owner: IAbstractModel, constructor: IStructureConstructor[T], parentPropName: String): T = js.native
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createElement")
-    @js.native
+    @scala.inline
+    def createElement[T /* <: Element[IAbstractModel] */](owner: IAbstractModel, constructor: IStructureConstructor[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(owner.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def createElement[T /* <: Element[IAbstractModel] */](owner: IAbstractModel, constructor: IStructureConstructor[T], parentPropName: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(owner.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any], parentPropName.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def createElement[T /* <: Element[IAbstractModel] */](
       owner: IAbstractModel,
       constructor: IStructureConstructor[T],
       parentPropName: String,
       parentPropIsList: Boolean
-    ): T = js.native
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createElement")
-    @js.native
-    def createElement[T /* <: Element[IAbstractModel] */](owner: AbstractElement[IAbstractModel, Container], constructor: IStructureConstructor[T]): T = js.native
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createElement")
-    @js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(owner.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any], parentPropName.asInstanceOf[js.Any], parentPropIsList.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def createElement[T /* <: Element[IAbstractModel] */](
-      owner: AbstractElement[IAbstractModel, Container],
+      owner: IAbstractModel,
       constructor: IStructureConstructor[T],
-      parentPropName: js.UndefOr[scala.Nothing],
+      parentPropName: Unit,
       parentPropIsList: Boolean
-    ): T = js.native
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createElement")
-    @js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(owner.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any], parentPropName.asInstanceOf[js.Any], parentPropIsList.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def createElement[T /* <: Element[IAbstractModel] */](owner: AbstractElement[IAbstractModel, Container], constructor: IStructureConstructor[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(owner.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def createElement[T /* <: Element[IAbstractModel] */](
       owner: AbstractElement[IAbstractModel, Container],
       constructor: IStructureConstructor[T],
       parentPropName: String
-    ): T = js.native
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createElement")
-    @js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(owner.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any], parentPropName.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def createElement[T /* <: Element[IAbstractModel] */](
       owner: AbstractElement[IAbstractModel, Container],
       constructor: IStructureConstructor[T],
       parentPropName: String,
       parentPropIsList: Boolean
-    ): T = js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(owner.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any], parentPropName.asInstanceOf[js.Any], parentPropIsList.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def createElement[T /* <: Element[IAbstractModel] */](
+      owner: AbstractElement[IAbstractModel, Container],
+      constructor: IStructureConstructor[T],
+      parentPropName: Unit,
+      parentPropIsList: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(owner.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any], parentPropName.asInstanceOf[js.Any], parentPropIsList.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createNewElementInstanceFromJSON")
-    @js.native
-    def createNewElementInstanceFromJSON(model: AbstractModel, json: IAbstractElementJson): Element[IAbstractModel] = js.native
+    @scala.inline
+    def createNewElementInstanceFromJSON(model: AbstractModel, json: IAbstractElementJson): Element[IAbstractModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNewElementInstanceFromJSON")(model.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Element[IAbstractModel]]
     
     /**
       * Creates a new unit for a SDK user.
       */
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createUnit")
-    @js.native
-    def createUnit(container: IStructuralUnit, constructor: IAbstractUnitConstructor): js.Any = js.native
+    @scala.inline
+    def createUnit(container: IStructuralUnit, constructor: IAbstractUnitConstructor): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnit")(container.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createUnitFromJSON")
-    @js.native
-    def createUnitFromJSON(model: AbstractModel, json: IAbstractUnitJson): IAbstractUnit = js.native
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.createUnitFromJSON")
-    @js.native
-    def createUnitFromJSON(model: AbstractModel, json: IAbstractUnitJson, resolveByIdReferences: Boolean): IAbstractUnit = js.native
+    @scala.inline
+    def createUnitFromJSON(model: AbstractModel, json: IAbstractUnitJson): IAbstractUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnitFromJSON")(model.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[IAbstractUnit]
+    @scala.inline
+    def createUnitFromJSON(model: AbstractModel, json: IAbstractUnitJson, resolveByIdReferences: Boolean): IAbstractUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnitFromJSON")(model.asInstanceOf[js.Any], json.asInstanceOf[js.Any], resolveByIdReferences.asInstanceOf[js.Any])).asInstanceOf[IAbstractUnit]
     
     /**
       * Type -> class (the constructor function, technically) lookup, e.g. "DomainModels$Entity" -> DomainModels.Entity
       */
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.lookupClass")
-    @js.native
-    def lookupClass(qualifiedTypeName: String, classes: js.Any): InstanceConstructor = js.native
+    @scala.inline
+    def lookupClass(qualifiedTypeName: String, classes: js.Any): InstanceConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupClass")(qualifiedTypeName.asInstanceOf[js.Any], classes.asInstanceOf[js.Any])).asInstanceOf[InstanceConstructor]
     
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.modelElementJsonToInstance")
-    @js.native
+    @scala.inline
     def modelElementJsonToInstance(
       model: AbstractModel,
       unit: ModelUnit[IAbstractModel],
       container: AbstractElement[IAbstractModel, Container],
       json: Null,
       isPartial: Boolean
-    ): Element[IAbstractModel] | Null = js.native
+    ): Element[IAbstractModel] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("modelElementJsonToInstance")(model.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], container.asInstanceOf[js.Any], json.asInstanceOf[js.Any], isPartial.asInstanceOf[js.Any])).asInstanceOf[Element[IAbstractModel] | Null]
     /**
       * Given some a (normalized) JSON representation of a model element,
       * creates an instance of the corresponding `elements.Element`
       * and populates that from the JSON.
       * Will update existing elements if this element was created before.
       */
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.modelElementJsonToInstance")
-    @js.native
+    @scala.inline
     def modelElementJsonToInstance(
       model: AbstractModel,
       unit: ModelUnit[IAbstractModel],
       container: AbstractElement[IAbstractModel, Container],
       json: IAbstractElementJson,
       isPartial: Boolean
-    ): Element[IAbstractModel] | Null = js.native
+    ): Element[IAbstractModel] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("modelElementJsonToInstance")(model.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], container.asInstanceOf[js.Any], json.asInstanceOf[js.Any], isPartial.asInstanceOf[js.Any])).asInstanceOf[Element[IAbstractModel] | Null]
     
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.structureAffectsQualifiedNames")
-    @js.native
-    def structureAffectsQualifiedNames(structure: IStructure): Boolean = js.native
+    @scala.inline
+    def structureAffectsQualifiedNames(structure: IStructure): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("structureAffectsQualifiedNames")(structure.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers.structureIsByNameReferrable")
-    @js.native
-    def structureIsByNameReferrable(structure: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/structures.aliases.Container> */ Boolean = js.native
+    @scala.inline
+    def structureIsByNameReferrable(structure: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/structures.aliases.Container> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("structureIsByNameReferrable")(structure.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/structures.aliases.Container> */ Boolean]
   }
   
   @js.native
-  trait IList[T] extends Array[T] {
+  trait IList[T]
+    extends StObject
+       with Array[T] {
     
     def clear(): js.Array[T] = js.native
     
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-      thisArg: js.UndefOr[scala.Nothing],
+      thisArg: js.Any,
       fromIndex: Double
     ): js.UndefOr[T] = js.native
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-      thisArg: js.Any,
+      thisArg: Unit,
       fromIndex: Double
     ): js.UndefOr[T] = js.native
     

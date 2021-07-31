@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeClientVpnTargetNetworksResult extends StObject {
   
   /**
     * Information about the associated target networks.
     */
-  var ClientVpnTargetNetworks: js.UndefOr[TargetNetworkSet] = js.native
+  var ClientVpnTargetNetworks: js.UndefOr[TargetNetworkSet] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ec2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ec2Mod.NextToken] = js.undefined
 }
 object DescribeClientVpnTargetNetworksResult {
   

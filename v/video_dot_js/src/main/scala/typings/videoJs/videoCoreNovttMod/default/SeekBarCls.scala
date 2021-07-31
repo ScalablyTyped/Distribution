@@ -4,13 +4,14 @@ import typings.videoJs.mod.videojs.SeekBar
 import typings.videoJs.mod.videojs.SliderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("video.js/dist/alt/video.core.novtt", "default.SeekBar")
 @js.native
-class SeekBarCls protected () extends SeekBar {
+class SeekBarCls protected ()
+  extends StObject
+     with SeekBar {
   /**
     * Creates an instance of this class.
     *

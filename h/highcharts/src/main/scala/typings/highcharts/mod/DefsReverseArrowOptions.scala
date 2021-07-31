@@ -2,25 +2,23 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefsReverseArrowOptions extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var markerHeight: js.UndefOr[Double] = js.native
+  var markerHeight: js.UndefOr[Double] = js.undefined
   
-  var markerWidth: js.UndefOr[Double] = js.native
+  var markerWidth: js.UndefOr[Double] = js.undefined
   
-  var refX: js.UndefOr[Double] = js.native
+  var refX: js.UndefOr[Double] = js.undefined
   
-  var refY: js.UndefOr[Double] = js.native
+  var refY: js.UndefOr[Double] = js.undefined
   
-  var render: js.UndefOr[Boolean] = js.native
+  var render: js.UndefOr[Boolean] = js.undefined
   
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
 }
 object DefsReverseArrowOptions {
   

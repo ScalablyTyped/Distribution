@@ -2,26 +2,24 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SsmActionDefinition extends StObject {
   
   /**
     *  The action subType. 
     */
-  var ActionSubType: typings.awsSdk.budgetsMod.ActionSubType = js.native
+  var ActionSubType: typings.awsSdk.budgetsMod.ActionSubType
   
   /**
     *  The EC2 and RDS instance IDs. 
     */
-  var InstanceIds: typings.awsSdk.budgetsMod.InstanceIds = js.native
+  var InstanceIds: typings.awsSdk.budgetsMod.InstanceIds
   
   /**
     *  The Region to run the SSM document. 
     */
-  var Region: typings.awsSdk.budgetsMod.Region = js.native
+  var Region: typings.awsSdk.budgetsMod.Region
 }
 object SsmActionDefinition {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Location extends StObject {
   
   /**
     * The S3 bucket.
     */
-  var bucket: js.UndefOr[S3Bucket] = js.native
+  var bucket: js.UndefOr[S3Bucket] = js.undefined
   
   /**
     * The S3 key.
     */
-  var key: js.UndefOr[S3Key] = js.native
+  var key: js.UndefOr[S3Key] = js.undefined
   
   /**
     * The S3 bucket version.
     */
-  var version: js.UndefOr[S3Version] = js.native
+  var version: js.UndefOr[S3Version] = js.undefined
 }
 object S3Location {
   

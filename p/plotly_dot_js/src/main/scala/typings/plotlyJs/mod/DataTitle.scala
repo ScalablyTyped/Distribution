@@ -10,19 +10,17 @@ import typings.plotlyJs.plotlyJsStrings.`top left`
 import typings.plotlyJs.plotlyJsStrings.`top right`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataTitle extends StObject {
   
-  var font: PartialFont = js.native
+  var font: PartialFont
   
-  var position: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`) = js.native
+  var position: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
   
-  var standoff: Double = js.native
+  var standoff: Double
   
-  var text: String = js.native
+  var text: String
 }
 object DataTitle {
   

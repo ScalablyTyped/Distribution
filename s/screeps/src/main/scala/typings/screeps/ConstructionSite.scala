@@ -2,50 +2,50 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A site of a structure which is currently under construction.
   */
-@js.native
-trait ConstructionSite[T /* <: BuildableStructureConstant */] extends RoomObject {
+trait ConstructionSite[T /* <: BuildableStructureConstant */]
+  extends StObject
+     with RoomObject {
   
   /**
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
-  var id: Id[this.type] = js.native
+  var id: Id[this.type]
   
   /**
     * Whether this is your own construction site.
     */
-  var my: Boolean = js.native
+  var my: Boolean
   
   /**
     * An object with the structure’s owner info.
     */
-  var owner: Owner = js.native
+  var owner: Owner
   
   /**
     * The current construction progress.
     */
-  var progress: Double = js.native
+  var progress: Double
   
   /**
     * The total construction progress needed for the structure to be built.
     */
-  var progressTotal: Double = js.native
+  var progressTotal: Double
   
   /**
     * Remove the construction site.
     * @returns Result Code: OK, ERR_NOT_OWNER
     */
-  def remove(): Double = js.native
+  def remove(): Double
   
   /**
     * One of the `STRUCTURE_*` constants.
     */
-  var structureType: T = js.native
+  var structureType: T
 }
 object ConstructionSite {
   
@@ -66,7 +66,7 @@ object ConstructionSite {
   }
   
   @scala.inline
-  implicit class ConstructionSiteMutableBuilder[Self <: ConstructionSite[_], T /* <: BuildableStructureConstant */] (val x: Self with ConstructionSite[T]) extends AnyVal {
+  implicit class ConstructionSiteMutableBuilder[Self <: ConstructionSite[?], T /* <: BuildableStructureConstant */] (val x: Self & ConstructionSite[T]) extends AnyVal {
     
     @scala.inline
     def setId(value: Id[ConstructionSite[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

@@ -2,26 +2,24 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDeploymentRequest extends StObject {
   
   /**
     *  The unique ID for an Amplify app. 
     */
-  var appId: AppId = js.native
+  var appId: AppId
   
   /**
     *  The name for the branch, for the job. 
     */
-  var branchName: BranchName = js.native
+  var branchName: BranchName
   
   /**
     *  An optional file map that contains the file name as the key and the file content md5 hash as the value. If this argument is provided, the service will generate a unique upload URL per file. Otherwise, the service will only generate a single upload URL for the zipped files. 
     */
-  var fileMap: js.UndefOr[FileMap] = js.native
+  var fileMap: js.UndefOr[FileMap] = js.undefined
 }
 object CreateDeploymentRequest {
   

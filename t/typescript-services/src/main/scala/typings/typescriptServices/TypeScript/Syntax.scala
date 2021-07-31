@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Syntax {
   
-  @js.native
-  trait EmptySyntaxList extends ISyntaxList {
+  trait EmptySyntaxList
+    extends StObject
+       with ISyntaxList {
     
-    def findTokenInternal(parent: PositionedElement, position: Double, fullStart: Double): PositionedToken = js.native
+    def findTokenInternal(parent: PositionedElement, position: Double, fullStart: Double): PositionedToken
     
-    def toJSON(key: js.Any): js.Any = js.native
+    def toJSON(key: js.Any): js.Any
   }
   object EmptySyntaxList {
     
@@ -57,20 +57,21 @@ object Syntax {
     }
   }
   
-  @js.native
-  trait FixedWidthTokenWithLeadingAndTrailingTrivia extends ISyntaxToken {
+  trait FixedWidthTokenWithLeadingAndTrailingTrivia
+    extends StObject
+       with ISyntaxToken {
     
-    var _fullText: js.Any = js.native
+    var _fullText: js.Any
     
-    var _leadingTriviaInfo: js.Any = js.native
+    var _leadingTriviaInfo: js.Any
     
-    var _trailingTriviaInfo: js.Any = js.native
+    var _trailingTriviaInfo: js.Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
-    /* private */ def realize(): js.Any = js.native
+    /* private */ def realize(): js.Any
     
-    def toJSON(key: js.Any): js.Any = js.native
+    def toJSON(key: js.Any): js.Any
   }
   object FixedWidthTokenWithLeadingAndTrailingTrivia {
     
@@ -150,18 +151,19 @@ object Syntax {
     }
   }
   
-  @js.native
-  trait FixedWidthTokenWithLeadingTrivia extends ISyntaxToken {
+  trait FixedWidthTokenWithLeadingTrivia
+    extends StObject
+       with ISyntaxToken {
     
-    var _fullText: js.Any = js.native
+    var _fullText: js.Any
     
-    var _leadingTriviaInfo: js.Any = js.native
+    var _leadingTriviaInfo: js.Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
-    /* private */ def realize(): js.Any = js.native
+    /* private */ def realize(): js.Any
     
-    def toJSON(key: js.Any): js.Any = js.native
+    def toJSON(key: js.Any): js.Any
   }
   object FixedWidthTokenWithLeadingTrivia {
     
@@ -237,14 +239,15 @@ object Syntax {
     }
   }
   
-  @js.native
-  trait FixedWidthTokenWithNoTrivia extends ISyntaxToken {
+  trait FixedWidthTokenWithNoTrivia
+    extends StObject
+       with ISyntaxToken {
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
-    /* private */ def realize(): js.Any = js.native
+    /* private */ def realize(): js.Any
     
-    def toJSON(key: js.Any): js.Any = js.native
+    def toJSON(key: js.Any): js.Any
   }
   object FixedWidthTokenWithNoTrivia {
     
@@ -312,18 +315,19 @@ object Syntax {
     }
   }
   
-  @js.native
-  trait FixedWidthTokenWithTrailingTrivia extends ISyntaxToken {
+  trait FixedWidthTokenWithTrailingTrivia
+    extends StObject
+       with ISyntaxToken {
     
-    var _fullText: js.Any = js.native
+    var _fullText: js.Any
     
-    var _trailingTriviaInfo: js.Any = js.native
+    var _trailingTriviaInfo: js.Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
-    /* private */ def realize(): js.Any = js.native
+    /* private */ def realize(): js.Any
     
-    def toJSON(key: js.Any): js.Any = js.native
+    def toJSON(key: js.Any): js.Any
   }
   object FixedWidthTokenWithTrailingTrivia {
     
@@ -399,7 +403,6 @@ object Syntax {
     }
   }
   
-  @js.native
   trait IFactory extends StObject {
     
     def argumentList(
@@ -407,37 +410,37 @@ object Syntax {
       openParenToken: ISyntaxToken,
       arguments: ISeparatedSyntaxList,
       closeParenToken: ISyntaxToken
-    ): ArgumentListSyntax = js.native
+    ): ArgumentListSyntax
     
-    def arrayLiteralExpression(openBracketToken: ISyntaxToken, expressions: ISeparatedSyntaxList, closeBracketToken: ISyntaxToken): ArrayLiteralExpressionSyntax = js.native
+    def arrayLiteralExpression(openBracketToken: ISyntaxToken, expressions: ISeparatedSyntaxList, closeBracketToken: ISyntaxToken): ArrayLiteralExpressionSyntax
     
-    def arrayType(`type`: ITypeSyntax, openBracketToken: ISyntaxToken, closeBracketToken: ISyntaxToken): ArrayTypeSyntax = js.native
+    def arrayType(`type`: ITypeSyntax, openBracketToken: ISyntaxToken, closeBracketToken: ISyntaxToken): ArrayTypeSyntax
     
-    def binaryExpression(kind: SyntaxKind, left: IExpressionSyntax, operatorToken: ISyntaxToken, right: IExpressionSyntax): BinaryExpressionSyntax = js.native
+    def binaryExpression(kind: SyntaxKind, left: IExpressionSyntax, operatorToken: ISyntaxToken, right: IExpressionSyntax): BinaryExpressionSyntax
     
-    def block(openBraceToken: ISyntaxToken, statements: ISyntaxList, closeBraceToken: ISyntaxToken): BlockSyntax = js.native
+    def block(openBraceToken: ISyntaxToken, statements: ISyntaxList, closeBraceToken: ISyntaxToken): BlockSyntax
     
-    def breakStatement(breakKeyword: ISyntaxToken, identifier: ISyntaxToken, semicolonToken: ISyntaxToken): BreakStatementSyntax = js.native
+    def breakStatement(breakKeyword: ISyntaxToken, identifier: ISyntaxToken, semicolonToken: ISyntaxToken): BreakStatementSyntax
     
     def callSignature(
       typeParameterList: TypeParameterListSyntax,
       parameterList: ParameterListSyntax,
       typeAnnotation: TypeAnnotationSyntax
-    ): CallSignatureSyntax = js.native
+    ): CallSignatureSyntax
     
     def caseSwitchClause(
       caseKeyword: ISyntaxToken,
       expression: IExpressionSyntax,
       colonToken: ISyntaxToken,
       statements: ISyntaxList
-    ): CaseSwitchClauseSyntax = js.native
+    ): CaseSwitchClauseSyntax
     
     def castExpression(
       lessThanToken: ISyntaxToken,
       `type`: ITypeSyntax,
       greaterThanToken: ISyntaxToken,
       expression: IUnaryExpressionSyntax
-    ): CastExpressionSyntax = js.native
+    ): CastExpressionSyntax
     
     def catchClause(
       catchKeyword: ISyntaxToken,
@@ -446,7 +449,7 @@ object Syntax {
       typeAnnotation: TypeAnnotationSyntax,
       closeParenToken: ISyntaxToken,
       block: BlockSyntax
-    ): CatchClauseSyntax = js.native
+    ): CatchClauseSyntax
     
     def classDeclaration(
       modifiers: ISyntaxList,
@@ -457,7 +460,7 @@ object Syntax {
       openBraceToken: ISyntaxToken,
       classElements: ISyntaxList,
       closeBraceToken: ISyntaxToken
-    ): ClassDeclarationSyntax = js.native
+    ): ClassDeclarationSyntax
     
     def conditionalExpression(
       condition: IExpressionSyntax,
@@ -465,11 +468,11 @@ object Syntax {
       whenTrue: IExpressionSyntax,
       colonToken: ISyntaxToken,
       whenFalse: IExpressionSyntax
-    ): ConditionalExpressionSyntax = js.native
+    ): ConditionalExpressionSyntax
     
-    def constraint(extendsKeyword: ISyntaxToken, `type`: ITypeSyntax): ConstraintSyntax = js.native
+    def constraint(extendsKeyword: ISyntaxToken, `type`: ITypeSyntax): ConstraintSyntax
     
-    def constructSignature(newKeyword: ISyntaxToken, callSignature: CallSignatureSyntax): ConstructSignatureSyntax = js.native
+    def constructSignature(newKeyword: ISyntaxToken, callSignature: CallSignatureSyntax): ConstructSignatureSyntax
     
     def constructorDeclaration(
       modifiers: ISyntaxList,
@@ -477,7 +480,7 @@ object Syntax {
       callSignature: CallSignatureSyntax,
       block: BlockSyntax,
       semicolonToken: ISyntaxToken
-    ): ConstructorDeclarationSyntax = js.native
+    ): ConstructorDeclarationSyntax
     
     def constructorType(
       newKeyword: ISyntaxToken,
@@ -485,15 +488,15 @@ object Syntax {
       parameterList: ParameterListSyntax,
       equalsGreaterThanToken: ISyntaxToken,
       `type`: ITypeSyntax
-    ): ConstructorTypeSyntax = js.native
+    ): ConstructorTypeSyntax
     
-    def continueStatement(continueKeyword: ISyntaxToken, identifier: ISyntaxToken, semicolonToken: ISyntaxToken): ContinueStatementSyntax = js.native
+    def continueStatement(continueKeyword: ISyntaxToken, identifier: ISyntaxToken, semicolonToken: ISyntaxToken): ContinueStatementSyntax
     
-    def debuggerStatement(debuggerKeyword: ISyntaxToken, semicolonToken: ISyntaxToken): DebuggerStatementSyntax = js.native
+    def debuggerStatement(debuggerKeyword: ISyntaxToken, semicolonToken: ISyntaxToken): DebuggerStatementSyntax
     
-    def defaultSwitchClause(defaultKeyword: ISyntaxToken, colonToken: ISyntaxToken, statements: ISyntaxList): DefaultSwitchClauseSyntax = js.native
+    def defaultSwitchClause(defaultKeyword: ISyntaxToken, colonToken: ISyntaxToken, statements: ISyntaxList): DefaultSwitchClauseSyntax
     
-    def deleteExpression(deleteKeyword: ISyntaxToken, expression: IUnaryExpressionSyntax): DeleteExpressionSyntax = js.native
+    def deleteExpression(deleteKeyword: ISyntaxToken, expression: IUnaryExpressionSyntax): DeleteExpressionSyntax
     
     def doStatement(
       doKeyword: ISyntaxToken,
@@ -503,18 +506,18 @@ object Syntax {
       condition: IExpressionSyntax,
       closeParenToken: ISyntaxToken,
       semicolonToken: ISyntaxToken
-    ): DoStatementSyntax = js.native
+    ): DoStatementSyntax
     
     def elementAccessExpression(
       expression: IExpressionSyntax,
       openBracketToken: ISyntaxToken,
       argumentExpression: IExpressionSyntax,
       closeBracketToken: ISyntaxToken
-    ): ElementAccessExpressionSyntax = js.native
+    ): ElementAccessExpressionSyntax
     
-    def elseClause(elseKeyword: ISyntaxToken, statement: IStatementSyntax): ElseClauseSyntax = js.native
+    def elseClause(elseKeyword: ISyntaxToken, statement: IStatementSyntax): ElseClauseSyntax
     
-    def emptyStatement(semicolonToken: ISyntaxToken): EmptyStatementSyntax = js.native
+    def emptyStatement(semicolonToken: ISyntaxToken): EmptyStatementSyntax
     
     def enumDeclaration(
       modifiers: ISyntaxList,
@@ -523,29 +526,29 @@ object Syntax {
       openBraceToken: ISyntaxToken,
       enumElements: ISeparatedSyntaxList,
       closeBraceToken: ISyntaxToken
-    ): EnumDeclarationSyntax = js.native
+    ): EnumDeclarationSyntax
     
-    def enumElement(propertyName: ISyntaxToken, equalsValueClause: EqualsValueClauseSyntax): EnumElementSyntax = js.native
+    def enumElement(propertyName: ISyntaxToken, equalsValueClause: EqualsValueClauseSyntax): EnumElementSyntax
     
-    def equalsValueClause(equalsToken: ISyntaxToken, value: IExpressionSyntax): EqualsValueClauseSyntax = js.native
+    def equalsValueClause(equalsToken: ISyntaxToken, value: IExpressionSyntax): EqualsValueClauseSyntax
     
     def exportAssignment(
       exportKeyword: ISyntaxToken,
       equalsToken: ISyntaxToken,
       identifier: ISyntaxToken,
       semicolonToken: ISyntaxToken
-    ): ExportAssignmentSyntax = js.native
+    ): ExportAssignmentSyntax
     
-    def expressionStatement(expression: IExpressionSyntax, semicolonToken: ISyntaxToken): ExpressionStatementSyntax = js.native
+    def expressionStatement(expression: IExpressionSyntax, semicolonToken: ISyntaxToken): ExpressionStatementSyntax
     
     def externalModuleReference(
       requireKeyword: ISyntaxToken,
       openParenToken: ISyntaxToken,
       stringLiteral: ISyntaxToken,
       closeParenToken: ISyntaxToken
-    ): ExternalModuleReferenceSyntax = js.native
+    ): ExternalModuleReferenceSyntax
     
-    def finallyClause(finallyKeyword: ISyntaxToken, block: BlockSyntax): FinallyClauseSyntax = js.native
+    def finallyClause(finallyKeyword: ISyntaxToken, block: BlockSyntax): FinallyClauseSyntax
     
     def forInStatement(
       forKeyword: ISyntaxToken,
@@ -556,7 +559,7 @@ object Syntax {
       expression: IExpressionSyntax,
       closeParenToken: ISyntaxToken,
       statement: IStatementSyntax
-    ): ForInStatementSyntax = js.native
+    ): ForInStatementSyntax
     
     def forStatement(
       forKeyword: ISyntaxToken,
@@ -569,7 +572,7 @@ object Syntax {
       incrementor: IExpressionSyntax,
       closeParenToken: ISyntaxToken,
       statement: IStatementSyntax
-    ): ForStatementSyntax = js.native
+    ): ForStatementSyntax
     
     def functionDeclaration(
       modifiers: ISyntaxList,
@@ -578,25 +581,25 @@ object Syntax {
       callSignature: CallSignatureSyntax,
       block: BlockSyntax,
       semicolonToken: ISyntaxToken
-    ): FunctionDeclarationSyntax = js.native
+    ): FunctionDeclarationSyntax
     
     def functionExpression(
       functionKeyword: ISyntaxToken,
       identifier: ISyntaxToken,
       callSignature: CallSignatureSyntax,
       block: BlockSyntax
-    ): FunctionExpressionSyntax = js.native
+    ): FunctionExpressionSyntax
     
-    def functionPropertyAssignment(propertyName: ISyntaxToken, callSignature: CallSignatureSyntax, block: BlockSyntax): FunctionPropertyAssignmentSyntax = js.native
+    def functionPropertyAssignment(propertyName: ISyntaxToken, callSignature: CallSignatureSyntax, block: BlockSyntax): FunctionPropertyAssignmentSyntax
     
     def functionType(
       typeParameterList: TypeParameterListSyntax,
       parameterList: ParameterListSyntax,
       equalsGreaterThanToken: ISyntaxToken,
       `type`: ITypeSyntax
-    ): FunctionTypeSyntax = js.native
+    ): FunctionTypeSyntax
     
-    def genericType(name: INameSyntax, typeArgumentList: TypeArgumentListSyntax): GenericTypeSyntax = js.native
+    def genericType(name: INameSyntax, typeArgumentList: TypeArgumentListSyntax): GenericTypeSyntax
     
     def getAccessor(
       modifiers: ISyntaxList,
@@ -605,9 +608,9 @@ object Syntax {
       parameterList: ParameterListSyntax,
       typeAnnotation: TypeAnnotationSyntax,
       block: BlockSyntax
-    ): GetAccessorSyntax = js.native
+    ): GetAccessorSyntax
     
-    def heritageClause(kind: SyntaxKind, extendsOrImplementsKeyword: ISyntaxToken, typeNames: ISeparatedSyntaxList): HeritageClauseSyntax = js.native
+    def heritageClause(kind: SyntaxKind, extendsOrImplementsKeyword: ISyntaxToken, typeNames: ISeparatedSyntaxList): HeritageClauseSyntax
     
     def ifStatement(
       ifKeyword: ISyntaxToken,
@@ -616,7 +619,7 @@ object Syntax {
       closeParenToken: ISyntaxToken,
       statement: IStatementSyntax,
       elseClause: ElseClauseSyntax
-    ): IfStatementSyntax = js.native
+    ): IfStatementSyntax
     
     def importDeclaration(
       modifiers: ISyntaxList,
@@ -625,16 +628,16 @@ object Syntax {
       equalsToken: ISyntaxToken,
       moduleReference: IModuleReferenceSyntax,
       semicolonToken: ISyntaxToken
-    ): ImportDeclarationSyntax = js.native
+    ): ImportDeclarationSyntax
     
-    def indexMemberDeclaration(modifiers: ISyntaxList, indexSignature: IndexSignatureSyntax, semicolonToken: ISyntaxToken): IndexMemberDeclarationSyntax = js.native
+    def indexMemberDeclaration(modifiers: ISyntaxList, indexSignature: IndexSignatureSyntax, semicolonToken: ISyntaxToken): IndexMemberDeclarationSyntax
     
     def indexSignature(
       openBracketToken: ISyntaxToken,
       parameter: ParameterSyntax,
       closeBracketToken: ISyntaxToken,
       typeAnnotation: TypeAnnotationSyntax
-    ): IndexSignatureSyntax = js.native
+    ): IndexSignatureSyntax
     
     def interfaceDeclaration(
       modifiers: ISyntaxList,
@@ -643,13 +646,13 @@ object Syntax {
       typeParameterList: TypeParameterListSyntax,
       heritageClauses: ISyntaxList,
       body: ObjectTypeSyntax
-    ): InterfaceDeclarationSyntax = js.native
+    ): InterfaceDeclarationSyntax
     
-    def invocationExpression(expression: IMemberExpressionSyntax, argumentList: ArgumentListSyntax): InvocationExpressionSyntax = js.native
+    def invocationExpression(expression: IMemberExpressionSyntax, argumentList: ArgumentListSyntax): InvocationExpressionSyntax
     
-    def labeledStatement(identifier: ISyntaxToken, colonToken: ISyntaxToken, statement: IStatementSyntax): LabeledStatementSyntax = js.native
+    def labeledStatement(identifier: ISyntaxToken, colonToken: ISyntaxToken, statement: IStatementSyntax): LabeledStatementSyntax
     
-    def memberAccessExpression(expression: IExpressionSyntax, dotToken: ISyntaxToken, name: ISyntaxToken): MemberAccessExpressionSyntax = js.native
+    def memberAccessExpression(expression: IExpressionSyntax, dotToken: ISyntaxToken, name: ISyntaxToken): MemberAccessExpressionSyntax
     
     def memberFunctionDeclaration(
       modifiers: ISyntaxList,
@@ -657,11 +660,11 @@ object Syntax {
       callSignature: CallSignatureSyntax,
       block: BlockSyntax,
       semicolonToken: ISyntaxToken
-    ): MemberFunctionDeclarationSyntax = js.native
+    ): MemberFunctionDeclarationSyntax
     
-    def memberVariableDeclaration(modifiers: ISyntaxList, variableDeclarator: VariableDeclaratorSyntax, semicolonToken: ISyntaxToken): MemberVariableDeclarationSyntax = js.native
+    def memberVariableDeclaration(modifiers: ISyntaxList, variableDeclarator: VariableDeclaratorSyntax, semicolonToken: ISyntaxToken): MemberVariableDeclarationSyntax
     
-    def methodSignature(propertyName: ISyntaxToken, questionToken: ISyntaxToken, callSignature: CallSignatureSyntax): MethodSignatureSyntax = js.native
+    def methodSignature(propertyName: ISyntaxToken, questionToken: ISyntaxToken, callSignature: CallSignatureSyntax): MethodSignatureSyntax
     
     def moduleDeclaration(
       modifiers: ISyntaxList,
@@ -671,21 +674,21 @@ object Syntax {
       openBraceToken: ISyntaxToken,
       moduleElements: ISyntaxList,
       closeBraceToken: ISyntaxToken
-    ): ModuleDeclarationSyntax = js.native
+    ): ModuleDeclarationSyntax
     
-    def moduleNameModuleReference(moduleName: INameSyntax): ModuleNameModuleReferenceSyntax = js.native
+    def moduleNameModuleReference(moduleName: INameSyntax): ModuleNameModuleReferenceSyntax
     
-    def objectCreationExpression(newKeyword: ISyntaxToken, expression: IMemberExpressionSyntax, argumentList: ArgumentListSyntax): ObjectCreationExpressionSyntax = js.native
+    def objectCreationExpression(newKeyword: ISyntaxToken, expression: IMemberExpressionSyntax, argumentList: ArgumentListSyntax): ObjectCreationExpressionSyntax
     
     def objectLiteralExpression(
       openBraceToken: ISyntaxToken,
       propertyAssignments: ISeparatedSyntaxList,
       closeBraceToken: ISyntaxToken
-    ): ObjectLiteralExpressionSyntax = js.native
+    ): ObjectLiteralExpressionSyntax
     
-    def objectType(openBraceToken: ISyntaxToken, typeMembers: ISeparatedSyntaxList, closeBraceToken: ISyntaxToken): ObjectTypeSyntax = js.native
+    def objectType(openBraceToken: ISyntaxToken, typeMembers: ISeparatedSyntaxList, closeBraceToken: ISyntaxToken): ObjectTypeSyntax
     
-    def omittedExpression(): OmittedExpressionSyntax = js.native
+    def omittedExpression(): OmittedExpressionSyntax
     
     def parameter(
       dotDotDotToken: ISyntaxToken,
@@ -694,28 +697,28 @@ object Syntax {
       questionToken: ISyntaxToken,
       typeAnnotation: TypeAnnotationSyntax,
       equalsValueClause: EqualsValueClauseSyntax
-    ): ParameterSyntax = js.native
+    ): ParameterSyntax
     
-    def parameterList(openParenToken: ISyntaxToken, parameters: ISeparatedSyntaxList, closeParenToken: ISyntaxToken): ParameterListSyntax = js.native
+    def parameterList(openParenToken: ISyntaxToken, parameters: ISeparatedSyntaxList, closeParenToken: ISyntaxToken): ParameterListSyntax
     
     def parenthesizedArrowFunctionExpression(
       callSignature: CallSignatureSyntax,
       equalsGreaterThanToken: ISyntaxToken,
       block: BlockSyntax,
       expression: IExpressionSyntax
-    ): ParenthesizedArrowFunctionExpressionSyntax = js.native
+    ): ParenthesizedArrowFunctionExpressionSyntax
     
-    def parenthesizedExpression(openParenToken: ISyntaxToken, expression: IExpressionSyntax, closeParenToken: ISyntaxToken): ParenthesizedExpressionSyntax = js.native
+    def parenthesizedExpression(openParenToken: ISyntaxToken, expression: IExpressionSyntax, closeParenToken: ISyntaxToken): ParenthesizedExpressionSyntax
     
-    def postfixUnaryExpression(kind: SyntaxKind, operand: IMemberExpressionSyntax, operatorToken: ISyntaxToken): PostfixUnaryExpressionSyntax = js.native
+    def postfixUnaryExpression(kind: SyntaxKind, operand: IMemberExpressionSyntax, operatorToken: ISyntaxToken): PostfixUnaryExpressionSyntax
     
-    def prefixUnaryExpression(kind: SyntaxKind, operatorToken: ISyntaxToken, operand: IUnaryExpressionSyntax): PrefixUnaryExpressionSyntax = js.native
+    def prefixUnaryExpression(kind: SyntaxKind, operatorToken: ISyntaxToken, operand: IUnaryExpressionSyntax): PrefixUnaryExpressionSyntax
     
-    def propertySignature(propertyName: ISyntaxToken, questionToken: ISyntaxToken, typeAnnotation: TypeAnnotationSyntax): PropertySignatureSyntax = js.native
+    def propertySignature(propertyName: ISyntaxToken, questionToken: ISyntaxToken, typeAnnotation: TypeAnnotationSyntax): PropertySignatureSyntax
     
-    def qualifiedName(left: INameSyntax, dotToken: ISyntaxToken, right: ISyntaxToken): QualifiedNameSyntax = js.native
+    def qualifiedName(left: INameSyntax, dotToken: ISyntaxToken, right: ISyntaxToken): QualifiedNameSyntax
     
-    def returnStatement(returnKeyword: ISyntaxToken, expression: IExpressionSyntax, semicolonToken: ISyntaxToken): ReturnStatementSyntax = js.native
+    def returnStatement(returnKeyword: ISyntaxToken, expression: IExpressionSyntax, semicolonToken: ISyntaxToken): ReturnStatementSyntax
     
     def setAccessor(
       modifiers: ISyntaxList,
@@ -723,18 +726,18 @@ object Syntax {
       propertyName: ISyntaxToken,
       parameterList: ParameterListSyntax,
       block: BlockSyntax
-    ): SetAccessorSyntax = js.native
+    ): SetAccessorSyntax
     
     def simpleArrowFunctionExpression(
       identifier: ISyntaxToken,
       equalsGreaterThanToken: ISyntaxToken,
       block: BlockSyntax,
       expression: IExpressionSyntax
-    ): SimpleArrowFunctionExpressionSyntax = js.native
+    ): SimpleArrowFunctionExpressionSyntax
     
-    def simplePropertyAssignment(propertyName: ISyntaxToken, colonToken: ISyntaxToken, expression: IExpressionSyntax): SimplePropertyAssignmentSyntax = js.native
+    def simplePropertyAssignment(propertyName: ISyntaxToken, colonToken: ISyntaxToken, expression: IExpressionSyntax): SimplePropertyAssignmentSyntax
     
-    def sourceUnit(moduleElements: ISyntaxList, endOfFileToken: ISyntaxToken): SourceUnitSyntax = js.native
+    def sourceUnit(moduleElements: ISyntaxList, endOfFileToken: ISyntaxToken): SourceUnitSyntax
     
     def switchStatement(
       switchKeyword: ISyntaxToken,
@@ -744,44 +747,44 @@ object Syntax {
       openBraceToken: ISyntaxToken,
       switchClauses: ISyntaxList,
       closeBraceToken: ISyntaxToken
-    ): SwitchStatementSyntax = js.native
+    ): SwitchStatementSyntax
     
-    def throwStatement(throwKeyword: ISyntaxToken, expression: IExpressionSyntax, semicolonToken: ISyntaxToken): ThrowStatementSyntax = js.native
+    def throwStatement(throwKeyword: ISyntaxToken, expression: IExpressionSyntax, semicolonToken: ISyntaxToken): ThrowStatementSyntax
     
     def tryStatement(
       tryKeyword: ISyntaxToken,
       block: BlockSyntax,
       catchClause: CatchClauseSyntax,
       finallyClause: FinallyClauseSyntax
-    ): TryStatementSyntax = js.native
+    ): TryStatementSyntax
     
-    def typeAnnotation(colonToken: ISyntaxToken, `type`: ITypeSyntax): TypeAnnotationSyntax = js.native
+    def typeAnnotation(colonToken: ISyntaxToken, `type`: ITypeSyntax): TypeAnnotationSyntax
     
-    def typeArgumentList(lessThanToken: ISyntaxToken, typeArguments: ISeparatedSyntaxList, greaterThanToken: ISyntaxToken): TypeArgumentListSyntax = js.native
+    def typeArgumentList(lessThanToken: ISyntaxToken, typeArguments: ISeparatedSyntaxList, greaterThanToken: ISyntaxToken): TypeArgumentListSyntax
     
-    def typeOfExpression(typeOfKeyword: ISyntaxToken, expression: IUnaryExpressionSyntax): TypeOfExpressionSyntax = js.native
+    def typeOfExpression(typeOfKeyword: ISyntaxToken, expression: IUnaryExpressionSyntax): TypeOfExpressionSyntax
     
-    def typeParameter(identifier: ISyntaxToken, constraint: ConstraintSyntax): TypeParameterSyntax = js.native
+    def typeParameter(identifier: ISyntaxToken, constraint: ConstraintSyntax): TypeParameterSyntax
     
-    def typeParameterList(lessThanToken: ISyntaxToken, typeParameters: ISeparatedSyntaxList, greaterThanToken: ISyntaxToken): TypeParameterListSyntax = js.native
+    def typeParameterList(lessThanToken: ISyntaxToken, typeParameters: ISeparatedSyntaxList, greaterThanToken: ISyntaxToken): TypeParameterListSyntax
     
-    def typeQuery(typeOfKeyword: ISyntaxToken, name: INameSyntax): TypeQuerySyntax = js.native
+    def typeQuery(typeOfKeyword: ISyntaxToken, name: INameSyntax): TypeQuerySyntax
     
-    def variableDeclaration(varKeyword: ISyntaxToken, variableDeclarators: ISeparatedSyntaxList): VariableDeclarationSyntax = js.native
+    def variableDeclaration(varKeyword: ISyntaxToken, variableDeclarators: ISeparatedSyntaxList): VariableDeclarationSyntax
     
     def variableDeclarator(
       propertyName: ISyntaxToken,
       typeAnnotation: TypeAnnotationSyntax,
       equalsValueClause: EqualsValueClauseSyntax
-    ): VariableDeclaratorSyntax = js.native
+    ): VariableDeclaratorSyntax
     
     def variableStatement(
       modifiers: ISyntaxList,
       variableDeclaration: VariableDeclarationSyntax,
       semicolonToken: ISyntaxToken
-    ): VariableStatementSyntax = js.native
+    ): VariableStatementSyntax
     
-    def voidExpression(voidKeyword: ISyntaxToken, expression: IUnaryExpressionSyntax): VoidExpressionSyntax = js.native
+    def voidExpression(voidKeyword: ISyntaxToken, expression: IUnaryExpressionSyntax): VoidExpressionSyntax
     
     def whileStatement(
       whileKeyword: ISyntaxToken,
@@ -789,7 +792,7 @@ object Syntax {
       condition: IExpressionSyntax,
       closeParenToken: ISyntaxToken,
       statement: IStatementSyntax
-    ): WhileStatementSyntax = js.native
+    ): WhileStatementSyntax
     
     def withStatement(
       withKeyword: ISyntaxToken,
@@ -797,7 +800,7 @@ object Syntax {
       condition: IExpressionSyntax,
       closeParenToken: ISyntaxToken,
       statement: IStatementSyntax
-    ): WithStatementSyntax = js.native
+    ): WithStatementSyntax
   }
   object IFactory {
     
@@ -1207,8 +1210,9 @@ object Syntax {
     }
   }
   
-  @js.native
-  trait NormalModeFactory extends IFactory
+  trait NormalModeFactory
+    extends StObject
+       with IFactory
   object NormalModeFactory {
     
     @scala.inline
@@ -1304,8 +1308,9 @@ object Syntax {
     }
   }
   
-  @js.native
-  trait StrictModeFactory extends IFactory
+  trait StrictModeFactory
+    extends StObject
+       with IFactory
   object StrictModeFactory {
     
     @scala.inline
@@ -1401,20 +1406,21 @@ object Syntax {
     }
   }
   
-  @js.native
-  trait VariableWidthTokenWithLeadingAndTrailingTrivia extends ISyntaxToken {
+  trait VariableWidthTokenWithLeadingAndTrailingTrivia
+    extends StObject
+       with ISyntaxToken {
     
-    var _fullText: js.Any = js.native
+    var _fullText: js.Any
     
-    var _leadingTriviaInfo: js.Any = js.native
+    var _leadingTriviaInfo: js.Any
     
-    var _trailingTriviaInfo: js.Any = js.native
+    var _trailingTriviaInfo: js.Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
-    /* private */ def realize(): js.Any = js.native
+    /* private */ def realize(): js.Any
     
-    def toJSON(key: js.Any): js.Any = js.native
+    def toJSON(key: js.Any): js.Any
   }
   object VariableWidthTokenWithLeadingAndTrailingTrivia {
     
@@ -1494,18 +1500,19 @@ object Syntax {
     }
   }
   
-  @js.native
-  trait VariableWidthTokenWithLeadingTrivia extends ISyntaxToken {
+  trait VariableWidthTokenWithLeadingTrivia
+    extends StObject
+       with ISyntaxToken {
     
-    var _fullText: js.Any = js.native
+    var _fullText: js.Any
     
-    var _leadingTriviaInfo: js.Any = js.native
+    var _leadingTriviaInfo: js.Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
-    /* private */ def realize(): js.Any = js.native
+    /* private */ def realize(): js.Any
     
-    def toJSON(key: js.Any): js.Any = js.native
+    def toJSON(key: js.Any): js.Any
   }
   object VariableWidthTokenWithLeadingTrivia {
     
@@ -1581,16 +1588,17 @@ object Syntax {
     }
   }
   
-  @js.native
-  trait VariableWidthTokenWithNoTrivia extends ISyntaxToken {
+  trait VariableWidthTokenWithNoTrivia
+    extends StObject
+       with ISyntaxToken {
     
-    var _fullText: js.Any = js.native
+    var _fullText: js.Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
-    /* private */ def realize(): js.Any = js.native
+    /* private */ def realize(): js.Any
     
-    def toJSON(key: js.Any): js.Any = js.native
+    def toJSON(key: js.Any): js.Any
   }
   object VariableWidthTokenWithNoTrivia {
     
@@ -1662,18 +1670,19 @@ object Syntax {
     }
   }
   
-  @js.native
-  trait VariableWidthTokenWithTrailingTrivia extends ISyntaxToken {
+  trait VariableWidthTokenWithTrailingTrivia
+    extends StObject
+       with ISyntaxToken {
     
-    var _fullText: js.Any = js.native
+    var _fullText: js.Any
     
-    var _trailingTriviaInfo: js.Any = js.native
+    var _trailingTriviaInfo: js.Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
-    /* private */ def realize(): js.Any = js.native
+    /* private */ def realize(): js.Any
     
-    def toJSON(key: js.Any): js.Any = js.native
+    def toJSON(key: js.Any): js.Any
   }
   object VariableWidthTokenWithTrailingTrivia {
     

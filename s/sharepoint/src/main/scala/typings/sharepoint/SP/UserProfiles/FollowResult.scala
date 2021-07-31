@@ -5,18 +5,18 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Returns information about a request to follow an item. */
-@js.native
-trait FollowResult extends ClientValueObject {
+trait FollowResult
+  extends StObject
+     with ClientValueObject {
   
   /** Contains the item being followed. */
-  def get_item(): FollowedItem = js.native
+  def get_item(): FollowedItem
   
   /** Provides information about the attempt to follow an item. */
-  def get_resultType(): FollowResultType = js.native
+  def get_resultType(): FollowResultType
 }
 object FollowResult {
   

@@ -2,19 +2,17 @@ package typings.reactImageGallery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CurrentIndex extends StObject {
     
-    var currentIndex: Double = js.native
+    var currentIndex: Double
     
-    var item: this.type = js.native
+    var item: this.type
     
-    var itemIndex: Double = js.native
+    var itemIndex: Double
   }
   object CurrentIndex {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Media extends StObject {
     
-    var media: String = js.native
+    var media: String
     
-    var srcSet: String = js.native
+    var srcSet: String
   }
   object Media {
     

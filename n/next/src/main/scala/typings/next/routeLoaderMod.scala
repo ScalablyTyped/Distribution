@@ -5,36 +5,33 @@ import typings.react.mod.ComponentType
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeLoaderMod {
   
-  @JSImport("next/dist/client/route-loader", JSImport.Default)
+  @JSImport("next/dist/client/route-loader", JSImport.Namespace)
   @js.native
-  def default(assetPrefix: String): RouteLoader = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("next/dist/client/route-loader", "getClientBuildManifest")
-  @js.native
-  def getClientBuildManifest(): js.Promise[ClientBuildManifest] = js.native
+  @scala.inline
+  def default(assetPrefix: String): RouteLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(assetPrefix.asInstanceOf[js.Any]).asInstanceOf[RouteLoader]
   
-  @JSImport("next/dist/client/route-loader", "isAssetError")
-  @js.native
-  def isAssetError(): js.UndefOr[Boolean] = js.native
-  @JSImport("next/dist/client/route-loader", "isAssetError")
-  @js.native
-  def isAssetError(err: Error): js.UndefOr[Boolean] = js.native
+  @scala.inline
+  def getClientBuildManifest(): js.Promise[ClientBuildManifest] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientBuildManifest")().asInstanceOf[js.Promise[ClientBuildManifest]]
   
-  @JSImport("next/dist/client/route-loader", "markAssetError")
-  @js.native
-  def markAssetError(err: Error): Error = js.native
+  @scala.inline
+  def isAssetError(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssetError")().asInstanceOf[js.UndefOr[Boolean]]
+  @scala.inline
+  def isAssetError(err: Error): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssetError")(err.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
   
-  @js.native
+  @scala.inline
+  def markAssetError(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("markAssetError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
+  
   trait Future[V] extends StObject {
     
-    var future: js.Promise[V] = js.native
+    var future: js.Promise[V]
     
-    def resolve(entrypoint: V): Unit = js.native
+    def resolve(entrypoint: V): Unit
   }
   object Future {
     
@@ -45,7 +42,7 @@ object routeLoaderMod {
     }
     
     @scala.inline
-    implicit class FutureMutableBuilder[Self <: Future[_], V] (val x: Self with Future[V]) extends AnyVal {
+    implicit class FutureMutableBuilder[Self <: Future[?], V] (val x: Self & Future[V]) extends AnyVal {
       
       @scala.inline
       def setFuture(value: js.Promise[V]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
@@ -55,10 +52,11 @@ object routeLoaderMod {
     }
   }
   
-  @js.native
-  trait LoadedEntrypointFailure extends RouteEntrypoint {
+  trait LoadedEntrypointFailure
+    extends StObject
+       with RouteEntrypoint {
     
-    var error: js.Any = js.native
+    var error: js.Any
   }
   object LoadedEntrypointFailure {
     
@@ -76,12 +74,13 @@ object routeLoaderMod {
     }
   }
   
-  @js.native
-  trait LoadedEntrypointSuccess extends RouteEntrypoint {
+  trait LoadedEntrypointSuccess
+    extends StObject
+       with RouteEntrypoint {
     
-    var component: ComponentType[js.Object] = js.native
+    var component: ComponentType[js.Object]
     
-    var exports: js.Any = js.native
+    var exports: js.Any
   }
   object LoadedEntrypointSuccess {
     
@@ -102,10 +101,11 @@ object routeLoaderMod {
     }
   }
   
-  @js.native
-  trait LoadedRouteFailure extends RouteLoaderEntry {
+  trait LoadedRouteFailure
+    extends StObject
+       with RouteLoaderEntry {
     
-    var error: js.Any = js.native
+    var error: js.Any
   }
   object LoadedRouteFailure {
     
@@ -123,12 +123,12 @@ object routeLoaderMod {
     }
   }
   
-  @js.native
   trait LoadedRouteSuccess
-    extends LoadedEntrypointSuccess
+    extends StObject
+       with LoadedEntrypointSuccess
        with RouteLoaderEntry {
     
-    var styles: js.Array[RouteStyleSheet] = js.native
+    var styles: js.Array[RouteStyleSheet]
   }
   object LoadedRouteSuccess {
     
@@ -169,23 +169,22 @@ object routeLoaderMod {
     }
   }
   
-  @js.native
   trait RouteLoader extends StObject {
     
-    def loadRoute(route: String): js.Promise[RouteLoaderEntry] = js.native
+    def loadRoute(route: String): js.Promise[RouteLoaderEntry]
     
-    def onEntrypoint(route: String, execute: js.Function0[_]): Unit = js.native
+    def onEntrypoint(route: String, execute: js.Function0[js.Any]): Unit
     
-    def prefetch(route: String): js.Promise[Unit] = js.native
+    def prefetch(route: String): js.Promise[Unit]
     
-    def whenEntrypoint(route: String): js.Promise[RouteEntrypoint] = js.native
+    def whenEntrypoint(route: String): js.Promise[RouteEntrypoint]
   }
   object RouteLoader {
     
     @scala.inline
     def apply(
       loadRoute: String => js.Promise[RouteLoaderEntry],
-      onEntrypoint: (String, js.Function0[_]) => Unit,
+      onEntrypoint: (String, js.Function0[js.Any]) => Unit,
       prefetch: String => js.Promise[Unit],
       whenEntrypoint: String => js.Promise[RouteEntrypoint]
     ): RouteLoader = {
@@ -200,7 +199,7 @@ object routeLoaderMod {
       def setLoadRoute(value: String => js.Promise[RouteLoaderEntry]): Self = StObject.set(x, "loadRoute", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setOnEntrypoint(value: (String, js.Function0[_]) => Unit): Self = StObject.set(x, "onEntrypoint", js.Any.fromFunction2(value))
+      def setOnEntrypoint(value: (String, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "onEntrypoint", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPrefetch(value: String => js.Promise[Unit]): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
@@ -230,12 +229,11 @@ object routeLoaderMod {
     }
   }
   
-  @js.native
   trait RouteStyleSheet extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var href: String = js.native
+    var href: String
   }
   object RouteStyleSheet {
     
@@ -258,12 +256,11 @@ object routeLoaderMod {
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      var __BUILD_MANIFEST: js.UndefOr[ClientBuildManifest] = js.native
+      var __BUILD_MANIFEST: js.UndefOr[ClientBuildManifest] = js.undefined
       
-      var __BUILD_MANIFEST_CB: js.UndefOr[js.Function] = js.native
+      var __BUILD_MANIFEST_CB: js.UndefOr[js.Function] = js.undefined
     }
     object Window {
       

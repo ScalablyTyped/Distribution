@@ -2,7 +2,6 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -273,7 +272,7 @@ trait Image extends StObject {
     *   @param filename give your file a name
     *   @param extension 'png' or 'jpg'
     */
-  def save(filename: String, extension: String): Unit = js.native
+  def save(filename: String, `extension`: String): Unit = js.native
   
   def set(x: Double, y: Double, a: js.Array[Double]): Unit = js.native
   def set(x: Double, y: Double, a: js.Object): Unit = js.native

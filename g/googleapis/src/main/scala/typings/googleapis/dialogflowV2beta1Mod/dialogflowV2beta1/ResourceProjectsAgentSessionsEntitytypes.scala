@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent$Sessions$Entitytypes")
@@ -32,7 +31,7 @@ class ResourceProjectsAgentSessionsEntitytypes protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
   def create(params: ParamsResourceProjectsAgentSessionsEntitytypesCreate): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
   def create(
     params: ParamsResourceProjectsAgentSessionsEntitytypesCreate,
@@ -64,7 +63,7 @@ class ResourceProjectsAgentSessionsEntitytypes protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceProjectsAgentSessionsEntitytypesDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsAgentSessionsEntitytypesDelete,
@@ -96,7 +95,7 @@ class ResourceProjectsAgentSessionsEntitytypes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
   def get(params: ParamsResourceProjectsAgentSessionsEntitytypesGet): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
   def get(
     params: ParamsResourceProjectsAgentSessionsEntitytypesGet,
@@ -131,7 +130,7 @@ class ResourceProjectsAgentSessionsEntitytypes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse] = js.native
   def list(params: ParamsResourceProjectsAgentSessionsEntitytypesList): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse] = js.native
   def list(
     params: ParamsResourceProjectsAgentSessionsEntitytypesList,
@@ -165,7 +164,7 @@ class ResourceProjectsAgentSessionsEntitytypes protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
   def patch(params: ParamsResourceProjectsAgentSessionsEntitytypesPatch): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
   def patch(
     params: ParamsResourceProjectsAgentSessionsEntitytypesPatch,

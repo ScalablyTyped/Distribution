@@ -2,21 +2,19 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ModifyAckDeadlineRequest. */
-@js.native
 trait IModifyAckDeadlineRequest extends StObject {
   
   /** ModifyAckDeadlineRequest ackDeadlineSeconds */
-  var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.native
+  var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
   
   /** ModifyAckDeadlineRequest ackIds */
-  var ackIds: js.UndefOr[js.Array[String] | Null] = js.native
+  var ackIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** ModifyAckDeadlineRequest subscription */
-  var subscription: js.UndefOr[String | Null] = js.native
+  var subscription: js.UndefOr[String | Null] = js.undefined
 }
 object IModifyAckDeadlineRequest {
   

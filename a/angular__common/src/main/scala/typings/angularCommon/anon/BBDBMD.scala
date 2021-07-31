@@ -2,25 +2,23 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BBDBMD extends StObject {
   
-  var BBD: js.Array[String] = js.native
+  var BBD: js.Array[String]
   
-  var BMD: js.Array[String] = js.native
+  var BMD: js.Array[String]
   
-  var BOB: js.Array[String] = js.native
+  var BOB: js.Array[String]
   
-  var BZD: js.Array[String] = js.native
+  var BZD: js.Array[String]
   
-  var CAD: js.Array[String] = js.native
+  var CAD: js.Array[String]
   
-  var JPY: js.Array[String] = js.native
+  var JPY: js.Array[String]
   
-  var USD: js.Array[String] = js.native
+  var USD: js.Array[String]
 }
 object BBDBMD {
   

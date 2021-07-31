@@ -3,17 +3,15 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceCodeLocation extends StObject {
   
-  var columnNumber: integer = js.native
+  var columnNumber: integer
   
-  var lineNumber: integer = js.native
+  var lineNumber: integer
   
-  var url: String = js.native
+  var url: String
 }
 object SourceCodeLocation {
   

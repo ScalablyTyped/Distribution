@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk extends StObject {
   
   /** Specifies the size of the disk in base-2 GB. */
-  var diskSizeGb: js.UndefOr[String] = js.native
+  var diskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the disk interface to use for attaching this disk, which is either SCSI or NVME. The default is SCSI. For performance characteristics of SCSI over NVMe, see Local SSD
     * performance.
     */
-  var interface: js.UndefOr[String] = js.native
+  var interface: js.UndefOr[String] = js.undefined
 }
 object AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk {
   

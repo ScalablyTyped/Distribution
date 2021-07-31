@@ -5,40 +5,39 @@ import typings.mapboxGl.mapboxGlStrings.tms
 import typings.mapboxGl.mapboxGlStrings.xyz
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RasterSource
-  extends Source
+  extends StObject
+     with Source
      with AnySourceData
      with AnySourceImpl {
   
-  var attribution: js.UndefOr[String] = js.native
+  var attribution: js.UndefOr[String] = js.undefined
   
-  var bounds: js.UndefOr[js.Array[Double]] = js.native
+  var bounds: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var maxzoom: js.UndefOr[Double] = js.native
+  var maxzoom: js.UndefOr[Double] = js.undefined
   
-  var minzoom: js.UndefOr[Double] = js.native
+  var minzoom: js.UndefOr[Double] = js.undefined
   
-  var scheme: js.UndefOr[xyz | tms] = js.native
+  var scheme: js.UndefOr[xyz | tms] = js.undefined
   
-  var tileSize: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.undefined
   
-  var tiles: js.UndefOr[js.Array[String]] = js.native
+  var tiles: js.UndefOr[js.Array[String]] = js.undefined
   
   @JSName("type")
-  var type_RasterSource: raster = js.native
+  var type_RasterSource: raster
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object RasterSource {
   
   @scala.inline
-  def apply(`type`: raster): RasterSource = {
+  def apply(): RasterSource = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("raster")
     __obj.asInstanceOf[RasterSource]
   }
   

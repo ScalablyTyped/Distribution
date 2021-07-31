@@ -2,16 +2,14 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetailsMap extends StObject {
   
   /**
     * A share resource ARN for a catalog resource shared through AWS Resource Access Manager (AWS RAM).
     */
-  var ResourceShare: js.UndefOr[ResourceShareList] = js.native
+  var ResourceShare: js.UndefOr[ResourceShareList] = js.undefined
 }
 object DetailsMap {
   

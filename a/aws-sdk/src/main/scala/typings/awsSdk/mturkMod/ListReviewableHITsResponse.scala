@@ -2,23 +2,21 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReviewableHITsResponse extends StObject {
   
   /**
     *  The list of HIT elements returned by the query.
     */
-  var HITs: js.UndefOr[HITList] = js.native
+  var HITs: js.UndefOr[HITList] = js.undefined
   
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  The number of HITs on this page in the filtered results list, equivalent to the number of HITs being returned by this call. 
     */
-  var NumResults: js.UndefOr[Integer] = js.native
+  var NumResults: js.UndefOr[Integer] = js.undefined
 }
 object ListReviewableHITsResponse {
   

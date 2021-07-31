@@ -2,7 +2,6 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * positions.
   */
 @js.native
-trait Group extends Item {
+trait Group
+  extends StObject
+     with Item {
   
   /** 
     * Specifies whether the group item is to be clipped. When setting to

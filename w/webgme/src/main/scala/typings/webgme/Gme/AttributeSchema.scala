@@ -2,23 +2,22 @@ package typings.webgme.Gme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeSchema extends StObject {
   
   /** array of possible/allowed values */
-  var enum: js.Array[String] = js.native
+  var `enum`: js.Array[String]
   
   /** integer, float, asset, string */
-  var `type`: String = js.native
+  var `type`: String
 }
 object AttributeSchema {
   
   @scala.inline
-  def apply(enum: js.Array[String], `type`: String): AttributeSchema = {
-    val __obj = js.Dynamic.literal(enum = enum.asInstanceOf[js.Any])
+  def apply(`enum`: js.Array[String], `type`: String): AttributeSchema = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enum")(`enum`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeSchema]
   }

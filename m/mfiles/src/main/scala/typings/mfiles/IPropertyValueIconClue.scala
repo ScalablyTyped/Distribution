@@ -3,17 +3,15 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInPropertyDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyValueIconClue extends StObject {
   
-  def Clone(): IPropertyValueIconClue = js.native
+  def Clone(): IPropertyValueIconClue
   
-  val PropertyDef: MFBuiltInPropertyDef | Double = js.native
+  val PropertyDef: MFBuiltInPropertyDef | Double
   
-  val ValueListItem: Double = js.native
+  val ValueListItem: Double
 }
 object IPropertyValueIconClue {
   

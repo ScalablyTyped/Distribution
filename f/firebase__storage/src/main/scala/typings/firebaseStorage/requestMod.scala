@@ -6,10 +6,13 @@ import typings.firebaseStorage.xhrioMod.XhrIo
 import typings.firebaseStorage.xhriopoolMod.XhrIoPool
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestMod {
+  
+  @JSImport("@firebase/storage/dist/src/implementation/request", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/storage/dist/src/implementation/request", "RequestEndStatus")
   @js.native
@@ -29,36 +32,27 @@ object requestMod {
     var xhr: XhrIo | Null = js.native
   }
   
-  @JSImport("@firebase/storage/dist/src/implementation/request", "addAuthHeader_")
-  @js.native
-  def addAuthHeader(headers: Headers): Unit = js.native
-  @JSImport("@firebase/storage/dist/src/implementation/request", "addAuthHeader_")
-  @js.native
-  def addAuthHeader(headers: Headers, authToken: String): Unit = js.native
+  @scala.inline
+  def addAuthHeader(headers: Headers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAuthHeader_")(headers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addAuthHeader(headers: Headers, authToken: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAuthHeader_")(headers.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/storage/dist/src/implementation/request", "addGmpidHeader_")
-  @js.native
-  def addGmpidHeader(headers: Headers): Unit = js.native
-  @JSImport("@firebase/storage/dist/src/implementation/request", "addGmpidHeader_")
-  @js.native
-  def addGmpidHeader(headers: Headers, appId: String): Unit = js.native
+  @scala.inline
+  def addGmpidHeader(headers: Headers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGmpidHeader_")(headers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addGmpidHeader(headers: Headers, appId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addGmpidHeader_")(headers.asInstanceOf[js.Any], appId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/storage/dist/src/implementation/request", "addVersionHeader_")
-  @js.native
-  def addVersionHeader(headers: Headers): Unit = js.native
+  @scala.inline
+  def addVersionHeader(headers: Headers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addVersionHeader_")(headers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@firebase/storage/dist/src/implementation/request", "makeRequest")
-  @js.native
-  def makeRequest[T](requestInfo: RequestInfo[T], appId: String, authToken: String, pool: XhrIoPool): Request[T] = js.native
-  @JSImport("@firebase/storage/dist/src/implementation/request", "makeRequest")
-  @js.native
-  def makeRequest[T](requestInfo: RequestInfo[T], appId: String, authToken: Null, pool: XhrIoPool): Request[T] = js.native
-  @JSImport("@firebase/storage/dist/src/implementation/request", "makeRequest")
-  @js.native
-  def makeRequest[T](requestInfo: RequestInfo[T], appId: Null, authToken: String, pool: XhrIoPool): Request[T] = js.native
-  @JSImport("@firebase/storage/dist/src/implementation/request", "makeRequest")
-  @js.native
-  def makeRequest[T](requestInfo: RequestInfo[T], appId: Null, authToken: Null, pool: XhrIoPool): Request[T] = js.native
+  @scala.inline
+  def makeRequest[T](requestInfo: RequestInfo[T], appId: String, authToken: String, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
+  @scala.inline
+  def makeRequest[T](requestInfo: RequestInfo[T], appId: String, authToken: Null, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
+  @scala.inline
+  def makeRequest[T](requestInfo: RequestInfo[T], appId: Null, authToken: String, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
+  @scala.inline
+  def makeRequest[T](requestInfo: RequestInfo[T], appId: Null, authToken: Null, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
   
   @js.native
   trait Request[T] extends StObject {

@@ -2,11 +2,11 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlViewerOptions extends KmlObject {
+trait KmlViewerOptions
+  extends StObject
+     with KmlObject {
   
   /**
     * Set the state of viewer options, including sunlight, Street View, and historical imagery.
@@ -20,7 +20,7 @@ trait KmlViewerOptions extends KmlObject {
     * * GEPlugin.OPTION_STATE_ENABLED
     * * GEPlugin.OPTION_STATE_DISABLED
     */
-  def getOption(`type`: GEViewerOptionsValueEnum): GEViewerOptionsValueEnum = js.native
+  def getOption(`type`: GEViewerOptionsValueEnum): GEViewerOptionsValueEnum
   
   /**
     * Returns the current state of the specified viewer option type.
@@ -34,7 +34,7 @@ trait KmlViewerOptions extends KmlObject {
     * * GEPlugin.OPTION_STATE_ENABLED
     * * GEPlugin.OPTION_STATE_DISABLED
     */
-  def setOption(`type`: GEViewerOptionsTypeEnum, state: GEViewerOptionsValueEnum): Unit = js.native
+  def setOption(`type`: GEViewerOptionsTypeEnum, state: GEViewerOptionsValueEnum): Unit
 }
 object KmlViewerOptions {
   

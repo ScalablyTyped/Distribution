@@ -2,13 +2,11 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Boundary extends StObject {
   
-  def get(name: String, callback: js.Function1[/* result */ js.Array[String], Unit]): Unit = js.native
+  def get(name: String, callback: js.Function1[/* result */ js.Array[String], Unit]): Unit
 }
 object Boundary {
   

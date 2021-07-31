@@ -16,180 +16,178 @@ import typings.jquery.JQueryAjaxSettings
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:enable:unified-signatures
 object BootstrapFileInput {
   
-  @js.native
   trait FileActionSettings extends StObject {
     
     /**
       * CSS class for the download button in each file thumbnail.
       */
-    var downloadClass: js.UndefOr[String] = js.native
+    var downloadClass: js.UndefOr[String] = js.undefined
     
     /**
       * icon for download button to be displayed in each file thumbnail.
       */
-    var downloadIcon: js.UndefOr[String] = js.native
+    var downloadIcon: js.UndefOr[String] = js.undefined
     
     /**
       * title for download button in each file thumbnail.
       */
-    var downloadTitle: js.UndefOr[String] = js.native
+    var downloadTitle: js.UndefOr[String] = js.undefined
     
     /**
       * CSS class for the drag button in each file thumbnail (to sort / rearrange items in initial preview).
       */
-    var dragClass: js.UndefOr[String] = js.native
+    var dragClass: js.UndefOr[String] = js.undefined
     
     /**
       * icon for drag button to be displayed in each file thumbnail (to sort / rearrange items in initial preview).
       */
-    var dragIcon: js.UndefOr[String] = js.native
+    var dragIcon: js.UndefOr[String] = js.undefined
     
     /**
       * the configuration for the Sortable plugin that will allow you to control the drag settings.
       */
-    var dragSettings: js.UndefOr[js.Object] = js.native
+    var dragSettings: js.UndefOr[js.Object] = js.undefined
     
     /**
       * title for drag button in each file thumbnail (to sort / rearrange items in initial preview).
       */
-    var dragTitle: js.UndefOr[String] = js.native
+    var dragTitle: js.UndefOr[String] = js.undefined
     
     /**
       * an indicator (HTML markup) for error in upload displayed in each file thumbnail.
       */
-    var indicatorError: js.UndefOr[String] = js.native
+    var indicatorError: js.UndefOr[String] = js.undefined
     
     /**
       * title to display on hover of indicator for error in upload in each file thumbnail.
       */
-    var indicatorErrorTitle: js.UndefOr[String] = js.native
+    var indicatorErrorTitle: js.UndefOr[String] = js.undefined
     
     /**
       * an indicator (HTML markup) for ongoing upload displayed in each file thumbnail.
       */
-    var indicatorLoading: js.UndefOr[String] = js.native
+    var indicatorLoading: js.UndefOr[String] = js.undefined
     
     /**
       * title to display on hover of indicator for ongoing upload in each file thumbnail.
       */
-    var indicatorLoadingTitle: js.UndefOr[String] = js.native
+    var indicatorLoadingTitle: js.UndefOr[String] = js.undefined
     
     /**
       * an indicator (HTML markup) for new pending upload displayed in each file thumbnail.
       */
-    var indicatorNew: js.UndefOr[String] = js.native
+    var indicatorNew: js.UndefOr[String] = js.undefined
     
     /**
       * title to display on hover of indicator for new pending upload in each file thumbnail.
       */
-    var indicatorNewTitle: js.UndefOr[String] = js.native
+    var indicatorNewTitle: js.UndefOr[String] = js.undefined
     
     /**
       * an indicator (HTML markup) for paused upload displayed in each file thumbnail (applicable for resumable uploads when enableResumableUpload property to true).
       */
-    var indicatorPaused: js.UndefOr[String] = js.native
+    var indicatorPaused: js.UndefOr[String] = js.undefined
     
     /**
       * title to display on hover of indicator for paused upload in each file thumbnail (applicable for resumable uploads when enableResumableUpload property to true).
       */
-    var indicatorPausedTitle: js.UndefOr[String] = js.native
+    var indicatorPausedTitle: js.UndefOr[String] = js.undefined
     
     /**
       * an indicator (HTML markup) for successful upload displayed in each file thumbnail.
       */
-    var indicatorSuccess: js.UndefOr[String] = js.native
+    var indicatorSuccess: js.UndefOr[String] = js.undefined
     
     /**
       * title to display on hover of indicator for successful in each file thumbnail.
       */
-    var indicatorSuccessTitle: js.UndefOr[String] = js.native
+    var indicatorSuccessTitle: js.UndefOr[String] = js.undefined
     
     /**
       * CSS class for the remove button in each file thumbnail.
       */
-    var removeClass: js.UndefOr[String] = js.native
+    var removeClass: js.UndefOr[String] = js.undefined
     
     /**
       * icon for remove button to be displayed in each file thumbnail.
       */
-    var removeIcon: js.UndefOr[String] = js.native
+    var removeIcon: js.UndefOr[String] = js.undefined
     
     /**
       * title for remove button in each file thumbnail.
       */
-    var removeTitle: js.UndefOr[String] = js.native
+    var removeTitle: js.UndefOr[String] = js.undefined
     
     /**
       * whether to show the download button in the thumbnail.
       * @default true
       */
-    var showDownload: js.UndefOr[Boolean | js.Function0[Boolean]] = js.native
+    var showDownload: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
     
     /**
       * whether to show the drag button in the thumbnail (applicable only for initial preview content)
       * @default true
       */
-    var showDrag: js.UndefOr[Boolean | js.Function0[Boolean]] = js.native
+    var showDrag: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
     
     /**
       * whether to show the remove button in the thumbnail.
       * @default true
       */
-    var showRemove: js.UndefOr[Boolean | js.Function0[Boolean]] = js.native
+    var showRemove: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
     
     /**
       * whether to show the upload button in the thumbnail.
       * @default true // will be always false for resumable uploads
       */
-    var showUpload: js.UndefOr[Boolean | js.Function0[Boolean]] = js.native
+    var showUpload: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
     
     /**
       * whether to show the zoom button in the thumbnail.
       * @default true
       */
-    var showZoom: js.UndefOr[Boolean | js.Function0[Boolean]] = js.native
+    var showZoom: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
     
     /**
       * CSS class for the remove button in each file thumbnail.
       */
-    var uploadClass: js.UndefOr[String] = js.native
+    var uploadClass: js.UndefOr[String] = js.undefined
     
     /**
       * icon for upload button to be displayed in each file thumbnail.
       */
-    var uploadIcon: js.UndefOr[String] = js.native
+    var uploadIcon: js.UndefOr[String] = js.undefined
     
     /**
       * title to be displayed for upload button after an upload error is encountered from the server to allow retry of the upload.
       * This will be rendered in such a case for the errored file thumbnail when retryErrorUploads is set to true.
       */
-    var uploadRetryIcon: js.UndefOr[String] = js.native
+    var uploadRetryIcon: js.UndefOr[String] = js.undefined
     
     /**
       * title for remove button in each file thumbnail.
       */
-    var uploadTitle: js.UndefOr[String] = js.native
+    var uploadTitle: js.UndefOr[String] = js.undefined
     
     /**
       * CSS class for the zoom button in each file thumbnail (to zoom thumbnail content to a detailed modal preview).
       */
-    var zoomClass: js.UndefOr[String] = js.native
+    var zoomClass: js.UndefOr[String] = js.undefined
     
     /**
       * icon for zoom button to be displayed in each file thumbnail (to zoom thumbnail content to a detailed modal preview).
       */
-    var zoomIcon: js.UndefOr[String] = js.native
+    var zoomIcon: js.UndefOr[String] = js.undefined
     
     /**
       * title for zoom button in each file thumbnail (to zoom thumbnail content to a detailed modal preview).
       */
-    var zoomTitle: js.UndefOr[String] = js.native
+    var zoomTitle: js.UndefOr[String] = js.undefined
   }
   object FileActionSettings {
     
@@ -411,7 +409,6 @@ object BootstrapFileInput {
     }
   }
   
-  @js.native
   trait FileInputOptions extends StObject {
     
     /**
@@ -420,7 +417,7 @@ object BootstrapFileInput {
       * This can be useful to pass additional tokens to headers or one can use it for setting other ajax options for advanced cases.
       * Refer the jQuery ajax documentation for the various settings you can configure.
       */
-    var ajaxDeleteSettings: js.UndefOr[JQueryAjaxSettings] = js.native
+    var ajaxDeleteSettings: js.UndefOr[JQueryAjaxSettings] = js.undefined
     
     /**
       * additional ajax settings to pass to the plugin before submitting the ajax request for upload.
@@ -428,7 +425,7 @@ object BootstrapFileInput {
       * This can be useful to pass additional tokens to headers or one can use it for setting other ajax options for advanced cases.
       * Refer the jQuery ajax documentation for the various settings you can configure.
       */
-    var ajaxSettings: js.UndefOr[JQueryAjaxSettings] = js.native
+    var ajaxSettings: js.UndefOr[JQueryAjaxSettings] = js.undefined
     
     /**
       * the list of allowed file extensions for upload.
@@ -438,7 +435,7 @@ object BootstrapFileInput {
       * You need to be careful in case you are setting both allowedFileTypes and allowedFileExtensions.
       * In this case, the allowedFileTypes property is validated first and generally precedes the allowedFileExtensions setting (and the latter validation maybe skipped).
       */
-    var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.native
+    var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * the list of allowed file types for upload.
@@ -448,14 +445,14 @@ object BootstrapFileInput {
       * You need to be careful in case you are setting both allowedFileTypes and allowedFileExtensions.
       * In this case, the allowedFileTypes property is validated first and generally precedes the allowedFileExtensions setting (and the latter validation maybe skipped).
       */
-    var allowedFileTypes: js.UndefOr[js.Array[image | html | text | video | audio | flash | `object`]] = js.native
+    var allowedFileTypes: js.UndefOr[js.Array[image | html | text | video | audio | flash | `object`]] = js.undefined
     
     /**
       * the list of allowed mime types for preview.
       * This is set to null by default which means all possible mime types are allowed.
       * This setting works in combination with allowedPreviewTypes to filter only the needed file types allowed for preview.
       */
-    var allowedPreviewMimeTypes: js.UndefOr[js.Array[String]] = js.native
+    var allowedPreviewMimeTypes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * the list of allowed preview types for your widget.
@@ -464,50 +461,50 @@ object BootstrapFileInput {
       * To disable this behavior, you can remove object from the list of allowedPreviewTypes OR fine tune it through allowedPreviewMimeTypes.
       * To disable content preview for all file-types and show the previewIcon instead as a thumbnail, set this to null, empty, or false.
       */
-    var allowedPreviewTypes: js.UndefOr[js.Array[image | html | text | video | audio | flash | `object`]] = js.native
+    var allowedPreviewTypes: js.UndefOr[js.Array[image | html | text | video | audio | flash | `object`]] = js.undefined
     
     /**
       * Whether to automatically replace the files in the preview after the maxFileCount limit is reached and a new set of file(s) is/are selected.
       * This will only work if a valid maxFileCount is set.
       * @default false
       */
-    var autoReplace: js.UndefOr[Boolean] = js.native
+    var autoReplace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the CSS class for the file picker/browse button. Defaults to btn btn-primary.
       */
-    var browseClass: js.UndefOr[String] = js.native
+    var browseClass: js.UndefOr[String] = js.undefined
     
     /**
       * the icon to display before the label for the file picker/browse button. Defaults to <i class="glyphicon glyphicon-folder-open"></i>&nbsp;.
       */
-    var browseIcon: js.UndefOr[String] = js.native
+    var browseIcon: js.UndefOr[String] = js.undefined
     
     /**
       * the label to display for the file picker/browse button. Defaults to Browse ….
       */
-    var browseLabel: js.UndefOr[String] = js.native
+    var browseLabel: js.UndefOr[String] = js.undefined
     
     /**
       * the CSS class for the each of the button labels for browse, remove, upload, and cancel.
       * Defaults to hidden-xs, which automatically hides the button labels for small screen devices and renders as smaller iconic buttons to fit to the screen.
       */
-    var buttonLabelClass: js.UndefOr[String] = js.native
+    var buttonLabelClass: js.UndefOr[String] = js.undefined
     
     /**
       * Any additional CSS class to append to the caption container.
       */
-    var captionClass: js.UndefOr[String] = js.native
+    var captionClass: js.UndefOr[String] = js.undefined
     
     /**
       * the list of additional custom tags that will be replaced in the layout templates.
       */
-    var customLayoutTags: js.UndefOr[js.Object] = js.native
+    var customLayoutTags: js.UndefOr[js.Object] = js.undefined
     
     /**
       * the list of additional custom tags that will be replaced in the preview templates.
       */
-    var customPreviewTags: js.UndefOr[js.Object] = js.native
+    var customPreviewTags: js.UndefOr[js.Object] = js.undefined
     
     /**
       * the default content / markup to show by default in the preview window whenever the files are cleared or the input is cleared.
@@ -517,7 +514,7 @@ object BootstrapFileInput {
       * At other times when files have been selected this will be overwritten temporarily until file(s) selected is/are cleared.
       * This property can be useful to display for example a default user profile picture (or saved picture) in the preview window unless the user selects a picture.
       */
-    var defaultPreviewContent: js.UndefOr[String] = js.native
+    var defaultPreviewContent: js.UndefOr[String] = js.undefined
     
     /**
       * the extra data that will be passed as data to the initial preview delete url/AJAX server call via POST.
@@ -529,7 +526,7 @@ object BootstrapFileInput {
       *     key: the key setting as setup in initialPreviewConfig['key']
       *     any other extra data passed as key: value pairs either via initialPreviewConfig['extra'] OR deleteExtraData if former is not set.
       */
-    var deleteExtraData: js.UndefOr[js.Object | js.Function0[js.Object]] = js.native
+    var deleteExtraData: js.UndefOr[js.Object | js.Function0[js.Object]] = js.undefined
     
     /**
       * the URL for deleting the image/content in the initial preview via AJAX post response. This will be overridden by the initialPreviewConfig['url'] property.
@@ -540,14 +537,14 @@ object BootstrapFileInput {
       * You can also set deleteUrl as a function callback which will return a string. In that case, the function will get executed every time at runtime.
       * This will enable you to set a dynamically changing url based on runtime conditions.
       */
-    var deleteUrl: js.UndefOr[String | js.Function0[String]] = js.native
+    var deleteUrl: js.UndefOr[String | js.Function0[String]] = js.undefined
     
     /**
       * whether to enable a drag and drop zone for dragging and dropping files to.
       * This is available only for ajax based uploads.
       * @default true
       */
-    var dropZoneEnabled: js.UndefOr[Boolean] = js.native
+    var dropZoneEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * title to be displayed in the drag and drop zone.
@@ -555,50 +552,50 @@ object BootstrapFileInput {
       * Defaults to:
       *     Drag & drop files here ….
       */
-    var dropZoneTitle: js.UndefOr[String] = js.native
+    var dropZoneTitle: js.UndefOr[String] = js.undefined
     
     /**
       * CSS class for the drag & drop zone title.
       * Defaults to file-drop-zone-title.
       */
-    var dropZoneTitleClass: js.UndefOr[String] = js.native
+    var dropZoneTitleClass: js.UndefOr[String] = js.undefined
     
     /**
       * the identifier for the container element containing the caption (e.g. '#id').
       * If not set, will default to the container with CSS class file-caption inside the main plugin container.
       */
-    var elCaptionContainer: js.UndefOr[String] = js.native
+    var elCaptionContainer: js.UndefOr[String] = js.undefined
     
     /**
       * the identifier for the container element containing the caption text (e.g. '#id').
       * If not set, will default to the container with CSS class file-caption-name inside the main plugin container.
       */
-    var elCaptionText: js.UndefOr[String] = js.native
+    var elCaptionText: js.UndefOr[String] = js.undefined
     
     /**
       * the identifier for the container element displaying the error (e.g. '#id').
       * If not set, will default to the container with CSS class kv-fileinput-error inside the preview container (identified by elPreviewContainer).
       * The msgErrorClass will be automatically appended to this container before displaying the error.
       */
-    var elErrorContainer: js.UndefOr[String] = js.native
+    var elErrorContainer: js.UndefOr[String] = js.undefined
     
     /**
       * the identifier for the container element containing the preview (e.g. '#id').
       * If not set, will default to the container with CSS class file-preview inside the main plugin container.
       */
-    var elPreviewContainer: js.UndefOr[String] = js.native
+    var elPreviewContainer: js.UndefOr[String] = js.undefined
     
     /**
       * the identifier for the element containing the preview image thumbnails (e.g. '#id').
       * If not set, will default to the container with CSS class file-preview-thumbnails inside the main plugin container.
       */
-    var elPreviewImage: js.UndefOr[String] = js.native
+    var elPreviewImage: js.UndefOr[String] = js.undefined
     
     /**
       * the identifier for the element containing the preview progress status (e.g. '#id').
       * If not set, will default to the container with CSS class file-preview-status inside the main plugin container.
       */
-    var elPreviewStatus: js.UndefOr[String] = js.native
+    var elPreviewStatus: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to encode all the URLs before triggering the ajax calls.
@@ -611,44 +608,44 @@ object BootstrapFileInput {
       *     * testUrl within resumableUploadOptions
       * @default true
       */
-    var encodeUrl: js.UndefOr[Boolean] = js.native
+    var encodeUrl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * configuration for setting up file actions for newly selected file thumbnails in the preview window.
       */
-    var fileActionSettings: js.UndefOr[FileActionSettings] = js.native
+    var fileActionSettings: js.UndefOr[FileActionSettings] = js.undefined
     
     /**
       * the settings to validate and identify each file type when a file is selected for upload.
       * This is a list of callbacks, which accepts the file mime type and file name as a parameter.
       */
-    var fileTypeSettings: js.UndefOr[FileTypeSettings] = js.native
+    var fileTypeSettings: js.UndefOr[FileTypeSettings] = js.undefined
     
     /**
       * Whether to focus the file caption after browsing and selecting a file.
       * @default true
       */
-    var focusCaptionOnBrowse: js.UndefOr[Boolean] = js.native
+    var focusCaptionOnBrowse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to focus the file caption after clearing / removing the files (using the remove button for example).
       * @default true
       */
-    var focusCaptionOnClear: js.UndefOr[Boolean] = js.native
+    var focusCaptionOnClear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to hide the preview content (image, pdf content, text content, etc.) within the thumbnail.
       * When set to true, only the file name and file size as defined in the thumbnail footer layout template will be displayed.
       * @default false
       */
-    var hideThumbnailContent: js.UndefOr[Boolean] = js.native
+    var hideThumbnailContent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the initial preview caption text to be displayed.
       * If you do not set a value here and initialPreview is set to true this will default to "{preview-file-count} files selected",
       * where {preview-file-count} is the count of the files passed in initialPreview.
       */
-    var initialCaption: js.UndefOr[String] = js.native
+    var initialCaption: js.UndefOr[String] = js.undefined
     
     /**
       * The initial preview content to be displayed.
@@ -661,105 +658,105 @@ object BootstrapFileInput {
       * text files: Include CSS class file-preview-text
       * other files: Include CSS class file-preview-other
       */
-    var initialPreview: js.UndefOr[String | js.Array[_]] = js.native
+    var initialPreview: js.UndefOr[String | js.Array[js.Any]] = js.undefined
     
     /**
       * the configuration for setting up important properties for each initialPreview item (that is setup as part of initialPreview).
       */
-    var initialPreviewConfig: js.UndefOr[js.Array[PreviewConfig]] = js.native
+    var initialPreviewConfig: js.UndefOr[js.Array[PreviewConfig]] = js.undefined
     
     /**
       * the count of initial preview items that will be added to the count of files selected in preview.
       * This is applicable when displaying the right caption, when overwriteInitial is set to false.
       */
-    var initialPreviewCount: js.UndefOr[Double] = js.native
+    var initialPreviewCount: js.UndefOr[Double] = js.undefined
     
     /**
       * the delimiter to be used for splitting the initial preview content as individual file thumbnails (applicable only if initialPreview is passed as a string instead of array).
       * Defaults to *$$*.
       */
-    var initialPreviewDelimiter: js.UndefOr[String] = js.native
+    var initialPreviewDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * whether the delete button will be displayed for each thumbnail that has been created with initialPreview.
       */
-    var initialPreviewShowDelete: js.UndefOr[Boolean] = js.native
+    var initialPreviewShowDelete: js.UndefOr[Boolean] = js.undefined
     
     /**
       * this is an extension of previewThumbTags specifically for initial preview content - but will be configured as an array of objects corresponding to each initial preview thumbnail.
       * The initial preview thumbnails set via initialPreview will read this configuration for replacing tags.
       */
-    var initialPreviewThumbTags: js.UndefOr[StringDictionary[String]] = js.native
+    var initialPreviewThumbTags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Language configuration for the plugin to enable the plugin to display messages for your locale (you must set the ISO code for the language).
       * You can have multiple language widgets on the same page.
       * The locale JS file for the language code must be defined as mentioned in the translations section: http://plugins.krajee.com/file-input#translations
       */
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     /**
       * the templates configuration for rendering each part of the layout.
       */
-    var layoutTemplates: js.UndefOr[LayoutTemplates] = js.native
+    var layoutTemplates: js.UndefOr[LayoutTemplates] = js.undefined
     
     /**
       * Any additional CSS class to append to the main plugin container.
       */
-    var mainClass: js.UndefOr[String] = js.native
+    var mainClass: js.UndefOr[String] = js.undefined
     
     /**
       * the maximum number of files allowed for each multiple upload.
       * If set to 0, it means number of files allowed is unlimited.
       * Defaults to 0.
       */
-    var maxFileCount: js.UndefOr[Double] = js.native
+    var maxFileCount: js.UndefOr[Double] = js.undefined
     
     /**
       * the maximum file size for upload in KB.
       * If set to 0, it means size allowed is unlimited.
       * Defaults to 0.
       */
-    var maxFileSize: js.UndefOr[Double] = js.native
+    var maxFileSize: js.UndefOr[Double] = js.undefined
     
     /**
       * the maximum allowed image height in px if you are uploading image files.
       * Defaults to null which means no limit on image height.
       * Note that if you set resizeImage property to true, then the entire image will be resized within this height (depending on resizePreference).
       */
-    var maxImageHeight: js.UndefOr[Double] = js.native
+    var maxImageHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * the maximum allowed image width in px if you are uploading image files.
       * Defaults to null which means no limit on image width.
       * Note that if you set resizeImage property to true, then the entire image will be resized within this width (depending on resizePreference).
       */
-    var maxImageWidth: js.UndefOr[Double] = js.native
+    var maxImageWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * the minimum number of files allowed for each multiple upload.
       * If set to 0, it means number of files are optional.
       * Defaults to 0.
       */
-    var minFileCount: js.UndefOr[Double] = js.native
+    var minFileCount: js.UndefOr[Double] = js.undefined
     
     /**
       * the minimum allowed image height in px if you are uploading image files.
       * Defaults to null which means no limit on image height.
       */
-    var minImageHeight: js.UndefOr[Double] = js.native
+    var minImageHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * the message that will be displayed within the progress bar when file upload is aborted or cancelled.
       * Defaults to Cancelled.
       */
-    var msgCancelled: js.UndefOr[String] = js.native
+    var msgCancelled: js.UndefOr[String] = js.undefined
     
     /**
       * the css class for the error message to be displayed in the preview window when the file size exceeds maxSize.
       * Defaults to file-error-message.
       */
-    var msgErrorClass: js.UndefOr[String] = js.native
+    var msgErrorClass: js.UndefOr[String] = js.undefined
     
     /**
       * the exception message to be displayed when the file selected is not found by the FileReader.
@@ -768,7 +765,7 @@ object BootstrapFileInput {
       * where:
       *     {name}: will be replaced by the file name being uploaded
       */
-    var msgFileNotFound: js.UndefOr[String] = js.native
+    var msgFileNotFound: js.UndefOr[String] = js.undefined
     
     /**
       * the exception message to be displayed when the file selected is not readable by the FileReader API.
@@ -777,7 +774,7 @@ object BootstrapFileInput {
       * where:
       *     {name}: will be replaced by the file name being uploaded
       */
-    var msgFileNotReadable: js.UndefOr[String] = js.native
+    var msgFileNotReadable: js.UndefOr[String] = js.undefined
     
     /**
       * the exception message to be displayed when the file preview upload is aborted.
@@ -786,7 +783,7 @@ object BootstrapFileInput {
       * where:
       *     {name}: will be replaced by the file name being uploaded
       */
-    var msgFilePreviewAborted: js.UndefOr[String] = js.native
+    var msgFilePreviewAborted: js.UndefOr[String] = js.undefined
     
     /**
       * the exception message to be displayed for any other error when previewing the file.
@@ -795,7 +792,7 @@ object BootstrapFileInput {
       * where:
       *     {name}: will be replaced by the file name being uploaded
       */
-    var msgFilePreviewError: js.UndefOr[String] = js.native
+    var msgFilePreviewError: js.UndefOr[String] = js.undefined
     
     /**
       * the exception message to be displayed when the file selected is not allowed to be accessed due to a security exception.
@@ -804,7 +801,7 @@ object BootstrapFileInput {
       * where:
       *     {name}: will be replaced by the file name being uploaded
       */
-    var msgFileSecured: js.UndefOr[String] = js.native
+    var msgFileSecured: js.UndefOr[String] = js.undefined
     
     /**
       * message to be displayed when the file count is less than the minimum count as set in minFileCount.
@@ -814,7 +811,7 @@ object BootstrapFileInput {
       *     {n}: will be replaced by the allowed minimum files as set in minFileCount.
       *     {files}: will be replaced with fileSingle or filePlural properties in locale file depending on the minFileCount.
       */
-    var msgFilesTooLess: js.UndefOr[String] = js.native
+    var msgFilesTooLess: js.UndefOr[String] = js.undefined
     
     /**
       * the message to be displayed when the file count exceeds maximum count as set in maxFileCount.
@@ -824,7 +821,7 @@ object BootstrapFileInput {
       *     {n}: will be replaced by number of files selected for upload
       *     {m}: will be replaced by the allowed maximum files as set in maxFileCount
       */
-    var msgFilesTooMany: js.UndefOr[String] = js.native
+    var msgFilesTooMany: js.UndefOr[String] = js.undefined
     
     /**
       * the message displayed when a folder has been dragged to the drop zone.
@@ -833,7 +830,7 @@ object BootstrapFileInput {
       * The following variables will be replaced:
       *     {n}: the number of folders dropped.
       */
-    var msgFoldersNotAllowed: js.UndefOr[String] = js.native
+    var msgFoldersNotAllowed: js.UndefOr[String] = js.undefined
     
     /**
       * the exception message to be displayed when the file selected for preview is an image and its height exceeds the maxImageHeight setting.
@@ -843,7 +840,7 @@ object BootstrapFileInput {
       *     {name}: will be replaced by the file name being uploaded.
       *     {size}: will be replaced by the maxImageHeight setting.
       */
-    var msgImageHeightLarge: js.UndefOr[String] = js.native
+    var msgImageHeightLarge: js.UndefOr[String] = js.undefined
     
     /**
       * the exception message to be displayed when the file selected for preview is an image and its height is less than the minImageHeight setting.
@@ -853,7 +850,7 @@ object BootstrapFileInput {
       *     {name}: will be replaced by the file name being uploaded.
       *     {size}: will be replaced by the minImageHeight setting.
       */
-    var msgImageHeightSmall: js.UndefOr[String] = js.native
+    var msgImageHeightSmall: js.UndefOr[String] = js.undefined
     
     /**
       * the exception message to be displayed when the file selected for preview is an image and its width exceeds the maxImageWidth setting.
@@ -863,7 +860,7 @@ object BootstrapFileInput {
       *     {name}: will be replaced by the file name being uploaded.
       *     {size}: will be replaced by the maxImageWidth setting.
       */
-    var msgImageWidthLarge: js.UndefOr[String] = js.native
+    var msgImageWidthLarge: js.UndefOr[String] = js.undefined
     
     /**
       * the exception message to be displayed when the file selected for preview is an image and its width is less than the minImageWidth setting.
@@ -873,7 +870,7 @@ object BootstrapFileInput {
       *     {name}: will be replaced by the file name being uploaded.
       *     {size}: will be replaced by the minImageWidth setting.
       */
-    var msgImageWidthSmall: js.UndefOr[String] = js.native
+    var msgImageWidthSmall: js.UndefOr[String] = js.undefined
     
     /**
       * the message to be displayed when the file type is not in one of the file extensions set in allowedFileExtensions.
@@ -883,7 +880,7 @@ object BootstrapFileInput {
       *     {name}: will be replaced by the file name being uploaded
       *     {extensions}: will be replaced by the comma separated list of extensions defined in allowedFileExtensions.
       */
-    var msgInvalidFileExtension: js.UndefOr[String] = js.native
+    var msgInvalidFileExtension: js.UndefOr[String] = js.undefined
     
     /**
       * the message to be displayed when the file type is not in one of the file types set in allowedFileTypes.
@@ -893,7 +890,7 @@ object BootstrapFileInput {
       *     {name}: will be replaced by the file name being uploaded
       *     {types}: will be replaced by the comma separated list of types defined in allowedFileTypes.
       */
-    var msgInvalidFileType: js.UndefOr[String] = js.native
+    var msgInvalidFileType: js.UndefOr[String] = js.undefined
     
     /**
       * the message displayed when the files are getting read and loaded for preview.
@@ -903,13 +900,13 @@ object BootstrapFileInput {
       *     {index}: the sequence number of the current file being loaded.
       *     {files}: the total number of files selected for upload.
       */
-    var msgLoading: js.UndefOr[String] = js.native
+    var msgLoading: js.UndefOr[String] = js.undefined
     
     /**
       * the message that will be displayed when ZERO files are found.
       * Defaults to No.
       */
-    var msgNo: js.UndefOr[String] = js.native
+    var msgNo: js.UndefOr[String] = js.undefined
     
     /**
       * the progress message displayed as each file is loaded for preview.
@@ -921,7 +918,7 @@ object BootstrapFileInput {
       *     {percent}: the percentage of file read and loaded.
       *     {name}: the name of the current file being loaded.
       */
-    var msgProgress: js.UndefOr[String] = js.native
+    var msgProgress: js.UndefOr[String] = js.undefined
     
     /**
       * the progress message displayed in caption window when multiple (more than one) files are selected.
@@ -930,7 +927,7 @@ object BootstrapFileInput {
       * The following variables will be replaced:
       *     {n}: the number of files selected.
       */
-    var msgSelected: js.UndefOr[String] = js.native
+    var msgSelected: js.UndefOr[String] = js.undefined
     
     /**
       * the message to be displayed when the file size exceeds maximum size.
@@ -941,65 +938,65 @@ object BootstrapFileInput {
       *     {size}: will be replaced by the uploaded file size
       *     {maxSize}: will be replaced by the maxFileSize parameter.
       */
-    var msgSizeTooLarge: js.UndefOr[String] = js.native
+    var msgSizeTooLarge: js.UndefOr[String] = js.undefined
     
     /**
       * the message to be displayed when an ongoing ajax file upload is aborted by pressing the Cancel button.
       * Defaults to The file upload was aborted.
       * If this is set to null or empty, the internal ajax error message will be displayed - Defaults to File Upload Error.
       */
-    var msgUploadAborted: js.UndefOr[String] = js.native
+    var msgUploadAborted: js.UndefOr[String] = js.undefined
     
     /**
       * the exception message to be displayed within the caption container (instead of msgFilesSelected), when a validation error is encountered.
       * Defaults to File Upload Error.
       */
-    var msgValidationError: js.UndefOr[String] = js.native
+    var msgValidationError: js.UndefOr[String] = js.undefined
     
     /**
       * the css class for the validation error message displayed in the caption container.
       * Defaults to text-danger.
       */
-    var msgValidationErrorClass: js.UndefOr[String] = js.native
+    var msgValidationErrorClass: js.UndefOr[String] = js.undefined
     
     /**
       * the icon to be displayed before the validation error in the caption container.
       * Defaults to <i class="glyphicon glyphicon-exclamation-sign"></i>
       */
-    var msgValidationErrorIcon: js.UndefOr[String] = js.native
+    var msgValidationErrorIcon: js.UndefOr[String] = js.undefined
     
     /**
       * the heading of the modal dialog that displays the zoomed file content.
       * This is currently applicable only for text file previews.
       * Defaults to Detailed Preview.
       */
-    var msgZoomModalHeading: js.UndefOr[String] = js.native
+    var msgZoomModalHeading: js.UndefOr[String] = js.undefined
     
     /**
       * the title displayed (before the file name) on hover of the zoom button for zooming the file content in a modal window.
       * This is currently applicable only for text file previews.
       * Defaults to View details.
       */
-    var msgZoomTitle: js.UndefOr[String] = js.native
+    var msgZoomTitle: js.UndefOr[String] = js.undefined
     
     /**
       * markup for additional action buttons to display within the initial preview thumbnails (for example displaying an image edit button).
       * The following tag can be used in the markup and will be automatically replaced:
       *     {dataKey}: Will be replaced with the key set within initialPreviewConfig.
       */
-    var otherActionButtons: js.UndefOr[String] = js.native
+    var otherActionButtons: js.UndefOr[String] = js.undefined
     
     /**
       * whether you wish to overwrite the initial preview content and caption setup.
       * This defaults to true, whereby, any initialPreview content set will be overwritten, when new file is uploaded or when files are cleared.
       * Setting it to false will help displaying a saved image or file from database always - useful especially when using the multiple file upload feature.
       */
-    var overwriteInitial: js.UndefOr[Boolean] = js.native
+    var overwriteInitial: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Any additional CSS class to append to the preview container.
       */
-    var previewClass: js.UndefOr[String] = js.native
+    var previewClass: js.UndefOr[String] = js.undefined
     
     /**
       * the extensions to be auto derived for each file extension (type).
@@ -1009,17 +1006,17 @@ object BootstrapFileInput {
       *     ext: string, the file extension (without the . [dot]) of the file currently selected in the preview.
       * You can configure the callback to match the set of file extensions (via regex or similar) for each `key` and return a boolean output if the file extension matches.
       */
-    var previewFileExtSettings: js.UndefOr[PreviewFileExtSettings] = js.native
+    var previewFileExtSettings: js.UndefOr[PreviewFileExtSettings] = js.undefined
     
     /**
       * the icon to be shown in each preview file thumbnail when an unreadable file type for preview is detected. Defaults to <i class="glyphicon glyphicon-file"></i> &nbsp;.
       */
-    var previewFileIcon: js.UndefOr[String] = js.native
+    var previewFileIcon: js.UndefOr[String] = js.undefined
     
     /**
       * the CSS class to be applied to the preview file icon container. Defaults to file-icon-4x.
       */
-    var previewFileIconClass: js.UndefOr[String] = js.native
+    var previewFileIconClass: js.UndefOr[String] = js.undefined
     
     /**
       * the preview icon markup settings for each file extension (type).
@@ -1027,7 +1024,7 @@ object BootstrapFileInput {
       * If this is not set OR a file extension is not set here, the preview will default to previewFileIcon.
       * Note that displaying the icons instead of file content is controlled via allowedPreviewTypes and allowedPreviewMimeTypes
       */
-    var previewFileIconSettings: js.UndefOr[PreviewFileIconSettings] = js.native
+    var previewFileIconSettings: js.UndefOr[PreviewFileIconSettings] = js.undefined
     
     /**
       * the type of files that are to be displayed in the preview window.
@@ -1038,78 +1035,78 @@ object BootstrapFileInput {
       *     any: Both image and text files content will be shown in preview.
       * Files other than image or text will be displayed as a thumbnail with the filename in the preview window.
       */
-    var previewFileType: js.UndefOr[image | text | any] = js.native
+    var previewFileType: js.UndefOr[image | text | any] = js.undefined
     
     /**
       * the format settings (width and height) for rendering each preview file type.
       */
-    var previewSettings: js.UndefOr[PreviewSettings] = js.native
+    var previewSettings: js.UndefOr[PreviewSettings] = js.undefined
     
     /**
       * the templates configuration for rendering each preview file type.
       */
-    var previewTemplates: js.UndefOr[PreviewTemplates] = js.native
+    var previewTemplates: js.UndefOr[PreviewTemplates] = js.undefined
     
     /**
       * this will be a list of tags used in thumbnail templates that will be replaced dynamically within the thumbnail markup, when the thumbnail is rendered.
       */
-    var previewThumbTags: js.UndefOr[StringDictionary[String]] = js.native
+    var previewThumbTags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * the upload progress bar CSS class to be applied when AJAX upload is in process (applicable only for ajax uploads).
       * Defaults to progress-bar progress-bar-success progress-bar-striped active.
       */
-    var progressClass: js.UndefOr[String] = js.native
+    var progressClass: js.UndefOr[String] = js.undefined
     
     /**
       * the upload progress bar CSS class to be applied when AJAX upload is in process (applicable only for ajax uploads).
       * Defaults to progress-bar progress-bar-success progress-bar-striped active.
       */
-    var progressCompleteClass: js.UndefOr[String] = js.native
+    var progressCompleteClass: js.UndefOr[String] = js.undefined
     
     /**
       * the upload progress bar CSS class to be applied when AJAX upload is cancelled or aborted.
       * Defaults to progress-bar progress-bar-danger.
       */
-    var progressErrorClass: js.UndefOr[String] = js.native
+    var progressErrorClass: js.UndefOr[String] = js.undefined
     
     /**
       * the CSS class for the file remove button. Defaults to btn btn-default.
       */
-    var removeClass: js.UndefOr[String] = js.native
+    var removeClass: js.UndefOr[String] = js.undefined
     
     /**
       * whether the file thumbnail should be removed from preview on error. Defaults to false.
       */
-    var removeFromPreviewOnError: js.UndefOr[Boolean] = js.native
+    var removeFromPreviewOnError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the icon to display before the label for the file picker/remove button. Defaults to <i class="glyphicon glyphicon-trash"></i> &nbsp;.
       */
-    var removeIcon: js.UndefOr[String] = js.native
+    var removeIcon: js.UndefOr[String] = js.undefined
     
     /**
       * the label to display for the file remove button. Defaults to Remove.
       */
-    var removeLabel: js.UndefOr[String] = js.native
+    var removeLabel: js.UndefOr[String] = js.undefined
     
     /**
       * the title to display on hover for the file remove button. Defaults to Clear selected files.
       */
-    var removeTitle: js.UndefOr[String] = js.native
+    var removeTitle: js.UndefOr[String] = js.undefined
     
     /**
       * Whether file selection is mandatory before upload (for ajax) or submit of the form (for non-ajax). When set to true, and if files are not
       * selected before upload, this will show the error message as set in msgFilerequired.
       * @default false
       */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the default image mime type of the converted image after resize.
       * Defaults to image/jpeg.
       */
-    var resizeDefaultImageType: js.UndefOr[String] = js.native
+    var resizeDefaultImageType: js.UndefOr[String] = js.undefined
     
     /**
       * whether to add ability to resize uploaded images. Defaults to false.
@@ -1119,13 +1116,13 @@ object BootstrapFileInput {
       * The JavaScript-Canvas-to-Blob source files are available in js/plugins folder of bootstrap-fileinput project page.
       * The canvas-to-blob.js plugin is a polyfill for canvas.toBlob method and is needed for allowing the resized image files via HTML5 canvas to be returned as a blob
       */
-    var resizeImage: js.UndefOr[Boolean] = js.native
+    var resizeImage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the quality of the resized image. This must be a decimal number between 0.00 to 1.00.
       * Defaults to 0.92.
       */
-    var resizeImageQuality: js.UndefOr[Double] = js.native
+    var resizeImageQuality: js.UndefOr[Double] = js.undefined
     
     /**
       * preference to resize the image based on width or height.
@@ -1137,96 +1134,96 @@ object BootstrapFileInput {
       * This will behave conversely, when resizePreference is set to height - the maxImageHeight will be first tested against image height
       * and then the rest of steps will be similarly parsed with preference given to height instead of width as before.
       */
-    var resizePreference: js.UndefOr[width | height] = js.native
+    var resizePreference: js.UndefOr[width | height] = js.undefined
     
     /**
       * Whether to orient the widget in Right-To-Left (RTL) mode. To view RTL orientation you must set this to true and also must load the
       * css/fileinput-rtl.css file after the css/fileinput.css on your page for RTL styling.
       * @default false
       */
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * whether to show details of the error stack from the server log when an error is encountered via ajax response.
       * @default true
       */
-    var showAjaxErrorDetails: js.UndefOr[Boolean] = js.native
+    var showAjaxErrorDetails: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to display the file upload cancel button.
       * @default true
       * This will be only enabled and displayed when an AJAX upload is in process.
       */
-    var showCancel: js.UndefOr[Boolean] = js.native
+    var showCancel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to display the file caption.
       * @default true
       */
-    var showCaption: js.UndefOr[Boolean] = js.native
+    var showCaption: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to display the close icon in the preview.
       * @default true
       * This will be only parsed when showPreview is true or when you are using the {close} tag in your preview templates.
       */
-    var showClose: js.UndefOr[Boolean] = js.native
+    var showClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to display the file preview.
       * @default true
       */
-    var showPreview: js.UndefOr[Boolean] = js.native
+    var showPreview: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to display the file remove/clear button.
       * @default true
       */
-    var showRemove: js.UndefOr[Boolean] = js.native
+    var showRemove: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to display the file upload button.
       * @default true
       * This will default to a form submit button, unless the uploadUrl is specified.
       */
-    var showUpload: js.UndefOr[Boolean] = js.native
+    var showUpload: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to persist display of the uploaded file thumbnails in the preview window (for ajax uploads) until the remove/clear button is pressed.
       * @default true
       * When set to false, a next batch of files selected for upload will clear these thumbnails from preview.
       */
-    var showUploadedThumbs: js.UndefOr[Boolean] = js.native
+    var showUploadedThumbs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * a callback to convert the filename as a slug string eliminating special characters.
       * If not set, it will use the plugin's own internal slugDefault method.
       * This callback function includes the filename as parameter and must return a converted filename string.
       */
-    var slugCallback: js.UndefOr[js.Function1[/* filename */ String, String]] = js.native
+    var slugCallback: js.UndefOr[js.Function1[/* filename */ String, String]] = js.undefined
     
     /**
       * the encoding to be used while reading a text file.
       * Applicable only for previewing text files.
       * Defaults to UTF-8.
       */
-    var textEncoding: js.UndefOr[String] = js.native
+    var textEncoding: js.UndefOr[String] = js.undefined
     
     /**
       * Theming
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
     /**
       * whether the batch upload of multiple files will be asynchronous/in parallel.
       * @default true
       */
-    var uploadAsync: js.UndefOr[Boolean] = js.native
+    var uploadAsync: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the CSS class for the file upload button. Defaults to btn btn-default.
       */
-    var uploadClass: js.UndefOr[String] = js.native
+    var uploadClass: js.UndefOr[String] = js.undefined
     
     /**
       * the extra data that will be passed as data to the url/AJAX server call via POST.
@@ -1240,23 +1237,23 @@ object BootstrapFileInput {
       */
     var uploadExtraData: js.UndefOr[
         js.Object | (js.Function2[/* previewId */ js.UndefOr[String], /* index */ js.UndefOr[Double], js.Object])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * the icon to display before the label for the file upload button. Defaults to <i class="glyphicon glyphicon-upload"></i> &nbsp;.
       */
-    var uploadIcon: js.UndefOr[String] = js.native
+    var uploadIcon: js.UndefOr[String] = js.undefined
     
     /**
       * the label to display for the file upload button. Defaults to Upload.
       */
-    var uploadLabel: js.UndefOr[String] = js.native
+    var uploadLabel: js.UndefOr[String] = js.undefined
     
     /**
       * the title to display on hover for the file remove button.
       * Defaults to Upload selected files.
       */
-    var uploadTitle: js.UndefOr[String] = js.native
+    var uploadTitle: js.UndefOr[String] = js.undefined
     
     /**
       * the URL for the upload processing action (typically for ajax based processing).
@@ -1269,7 +1266,7 @@ object BootstrapFileInput {
       * You can also set uploadUrl as a function callback which will return a string. In that case, the function will get executed at runtime
       * just before every ajax call. This will enable you to set a dynamic upload url based on runtime / dynamic conditions.
       */
-    var uploadUrl: js.UndefOr[String | js.Function0[String]] = js.native
+    var uploadUrl: js.UndefOr[String | js.Function0[String]] = js.undefined
     
     /**
       * the URL for the ajax upload processing action applicable when each individual file thumbnail is separately uploaded. Defaults to null.
@@ -1279,20 +1276,20 @@ object BootstrapFileInput {
       * You can also set uploadThumbUrl as a function callback which will return a string. In that case, the function will get executed at
       * runtime just before every ajax call. This will enable you to set a dynamic upload thumbnail url based on runtime / dynamic conditions.
       */
-    var uploadUrlThumb: js.UndefOr[String | js.Function0[String]] = js.native
+    var uploadUrlThumb: js.UndefOr[String | js.Function0[String]] = js.undefined
     
     /**
       * whether to include initial preview file count (server uploaded files) in validating minFileCount and maxFileCount.
       * @default false
       */
-    var validateInitialCount: js.UndefOr[Boolean] = js.native
+    var validateInitialCount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the icon for zooming the file content in a new modal dialog.
       * This is currently applicable only for text file previews.
       * Defaults to <i class="glyphicon glyphicon-zoom-in"></i>
       */
-    var zoomIndicator: js.UndefOr[String] = js.native
+    var zoomIndicator: js.UndefOr[String] = js.undefined
   }
   object FileInputOptions {
     
@@ -1522,7 +1519,7 @@ object BootstrapFileInput {
       def setInitialCaptionUndefined: Self = StObject.set(x, "initialCaption", js.undefined)
       
       @scala.inline
-      def setInitialPreview(value: String | js.Array[_]): Self = StObject.set(x, "initialPreview", value.asInstanceOf[js.Any])
+      def setInitialPreview(value: String | js.Array[js.Any]): Self = StObject.set(x, "initialPreview", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInitialPreviewConfig(value: js.Array[PreviewConfig]): Self = StObject.set(x, "initialPreviewConfig", value.asInstanceOf[js.Any])
@@ -2070,24 +2067,23 @@ object BootstrapFileInput {
   
   type FileStack = StringDictionary[File]
   
-  @js.native
   trait FileTypeSettings extends StObject {
     
-    def audio(vType: String, vName: String): Boolean = js.native
+    def audio(vType: String, vName: String): Boolean
     
-    def flash(vType: String, vName: String): Boolean = js.native
+    def flash(vType: String, vName: String): Boolean
     
-    def html(vType: String, vName: String): Boolean = js.native
+    def html(vType: String, vName: String): Boolean
     
-    def image(vType: String, vName: String): Boolean = js.native
+    def image(vType: String, vName: String): Boolean
     
-    def `object`(vType: String, vName: String): Boolean = js.native
+    def `object`(vType: String, vName: String): Boolean
     
-    def other(vType: String, vName: String): Boolean = js.native
+    def other(vType: String, vName: String): Boolean
     
-    def text(vType: String, vName: String): Boolean = js.native
+    def text(vType: String, vName: String): Boolean
     
-    def video(vType: String, vName: String): Boolean = js.native
+    def video(vType: String, vName: String): Boolean
   }
   object FileTypeSettings {
     
@@ -2136,7 +2132,6 @@ object BootstrapFileInput {
     }
   }
   
-  @js.native
   trait LayoutTemplates extends StObject {
     
     /**
@@ -2148,7 +2143,7 @@ object BootstrapFileInput {
       *     {dataUrl}: the URL for deleting the file thumbnail for initialPreview content only. Will be replaced with the url set within initialPreviewConfig.
       *     {dataKey}: the key (additional data) that will be passed to the URL above via POST to the AJAX call. Will be replaced with the key set within initialPreviewConfig.
       */
-    var actionDelete: js.UndefOr[String] = js.native
+    var actionDelete: js.UndefOr[String] = js.undefined
     
     /**
       * the template for the file upload action button within the thumbnail footer.
@@ -2157,7 +2152,7 @@ object BootstrapFileInput {
       *     {uploadIcon}: the icon for the upload button. Will be replaced with the uploadIcon set within fileActionSettings.
       *     {uploadTitle}: the title to display on hover for the upload button. Will be replaced with the uploadTitle set within fileActionSettings.
       */
-    var actionUpload: js.UndefOr[String] = js.native
+    var actionUpload: js.UndefOr[String] = js.undefined
     
     /**
       * the template for the file action buttons to be displayed within the thumbnail footer.
@@ -2165,7 +2160,7 @@ object BootstrapFileInput {
       *     {upload}: will be replaced with the output of the actionUpload template.
       *     {delete}: will be replaced with the output of the actionDelete template.
       */
-    var actions: js.UndefOr[String] = js.native
+    var actions: js.UndefOr[String] = js.undefined
     
     /**
       * The template for the browse button.
@@ -2176,7 +2171,7 @@ object BootstrapFileInput {
       *     {icon}: the button icon as identified by browseIcon.
       *     {label}: the button label as identified by browseLabel.
       */
-    var btnBrowse: js.UndefOr[String] = js.native
+    var btnBrowse: js.UndefOr[String] = js.undefined
     
     /**
       * The template for upload, remove, and cancel buttons.
@@ -2188,7 +2183,7 @@ object BootstrapFileInput {
       *     {icon}: the button icon as identified by uploadIcon or removeIcon or cancelIcon.
       *     {label}: the button label as identified by uploadLabel or removeLabel or cancelLabel.
       */
-    var btnDefault: js.UndefOr[String] = js.native
+    var btnDefault: js.UndefOr[String] = js.undefined
     
     /**
       * The template for upload button when used with ajax (i.e. when uploadUrl is set).
@@ -2201,14 +2196,14 @@ object BootstrapFileInput {
       *     {label}: the button label as identified by uploadLabel.
       *     {href}: applicable only for Upload button for ajax uploads and will be replaced with the uploadUrl property.
       */
-    var btnLink: js.UndefOr[String] = js.native
+    var btnLink: js.UndefOr[String] = js.undefined
     
     /**
       * the template for rendering the caption.
       * The following tags will be parsed and replaced automatically:
       *     {class}: the CSS class as set in the captionClass property.
       */
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
     /**
       * the template for the footer section of each file preview thumbnail.
@@ -2216,12 +2211,12 @@ object BootstrapFileInput {
       *     {actions}: will be replaced with the output of the actions template.
       *     {class}: the CSS class as set in the progressClass or progressCompleteClass property (depending on the progress percentage).
       */
-    var footer: js.UndefOr[String] = js.native
+    var footer: js.UndefOr[String] = js.undefined
     
     /**
       * the icon to render before the caption text.
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * the template for rendering the widget with caption.
@@ -2235,7 +2230,7 @@ object BootstrapFileInput {
       *     {cancel}: the file upload cancel button that will be displayed when AJAX upload is in process to abort the AJAX upload.
       *     {browse}: the main file browse button to select your files for input.
       */
-    var main1: js.UndefOr[String] = js.native
+    var main1: js.UndefOr[String] = js.undefined
     
     /**
       * the template for rendering the widget without caption.
@@ -2249,19 +2244,19 @@ object BootstrapFileInput {
       *     {cancel}: the file upload cancel button that will be displayed when AJAX upload is in process to abort the AJAX upload.
       *     {browse}: the main file browse button to select your files for input.
       */
-    var main2: js.UndefOr[String] = js.native
+    var main2: js.UndefOr[String] = js.undefined
     
     /**
       * the template for rendering the modal (for text file preview zooming).
       */
-    var modal: js.UndefOr[String] = js.native
+    var modal: js.UndefOr[String] = js.undefined
     
     /**
       * the template for rendering the preview.
       * The following tags will be parsed and replaced automatically:
       *     {class}: the CSS class as set in the previewClass property.
       */
-    var preview: js.UndefOr[String] = js.native
+    var preview: js.UndefOr[String] = js.undefined
     
     /**
       * the template for the progress bar when upload is in progress (for batch/mass uploads and within each preview thumbnail for async/single uploads).
@@ -2269,7 +2264,7 @@ object BootstrapFileInput {
       * The following tags will be parsed and replaced automatically:
       *     {percent}: will be replaced with the upload progress percentage.
       */
-    var progress: js.UndefOr[String] = js.native
+    var progress: js.UndefOr[String] = js.undefined
   }
   object LayoutTemplates {
     
@@ -2368,39 +2363,38 @@ object BootstrapFileInput {
     }
   }
   
-  @js.native
   trait PreviewConfig extends StObject {
     
     /**
       * the caption or filename to display for each initial preview item content.
       */
-    var caption: String = js.native
+    var caption: String
     
     /**
       * the extra data that will be passed as data to the initial preview delete url / AJAX server call via POST.
       * This will default to deleteExtraData if not set.
       */
-    var extra: js.Object | js.Function0[js.Object] = js.native
+    var extra: js.Object | js.Function0[js.Object]
     
     /**
       * the additional frame css class to set for the file's thumbnail frame.
       */
-    var frameClass: String = js.native
+    var frameClass: String
     
     /**
       * the key that will be passed as data to the url via AJAX POST.
       */
-    var key: String | js.Object = js.native
+    var key: String | js.Object
     
     /**
       * the URL for deleting the image/ content in the initial preview via AJAX post response.This will default to deleteUrl if not set.
       */
-    var url: String = js.native
+    var url: String
     
     /**
       * the CSS width of the image/ content displayed.
       */
-    var width: String = js.native
+    var width: String
   }
   object PreviewConfig {
     
@@ -2447,14 +2441,13 @@ object BootstrapFileInput {
   
   type PreviewFileIconSettings = StringDictionary[String]
   
-  @js.native
   trait PreviewInfo extends StObject {
     
-    val config: js.Array[PreviewConfig] = js.native
+    val config: js.Array[PreviewConfig]
     
-    val content: js.Array[String] = js.native
+    val content: js.Array[String]
     
-    val tags: js.Array[String] = js.native
+    val tags: js.Array[String]
   }
   object PreviewInfo {
     
@@ -2487,24 +2480,23 @@ object BootstrapFileInput {
     }
   }
   
-  @js.native
   trait PreviewSettings extends StObject {
     
-    var audio: js.UndefOr[Height] = js.native
+    var audio: js.UndefOr[Height] = js.undefined
     
-    var flash: js.UndefOr[Height] = js.native
+    var flash: js.UndefOr[Height] = js.undefined
     
-    var html: js.UndefOr[Height] = js.native
+    var html: js.UndefOr[Height] = js.undefined
     
-    var image: js.UndefOr[Height] = js.native
+    var image: js.UndefOr[Height] = js.undefined
     
-    var `object`: js.UndefOr[Height] = js.native
+    var `object`: js.UndefOr[Height] = js.undefined
     
-    var other: js.UndefOr[Height] = js.native
+    var other: js.UndefOr[Height] = js.undefined
     
-    var text: js.UndefOr[Height] = js.native
+    var text: js.UndefOr[Height] = js.undefined
     
-    var video: js.UndefOr[Height] = js.native
+    var video: js.UndefOr[Height] = js.undefined
   }
   object PreviewSettings {
     
@@ -2567,7 +2559,6 @@ object BootstrapFileInput {
     }
   }
   
-  @js.native
   trait PreviewTemplates extends StObject {
     
     /**
@@ -2580,7 +2571,7 @@ object BootstrapFileInput {
       *     {caption}: will be replaced with the file name.
       *     {type}: will be replaced with the file type.
       */
-    var audio: js.UndefOr[String] = js.native
+    var audio: js.UndefOr[String] = js.undefined
     
     /**
       * the preview template for flash files (supported currently on webkit browsers).
@@ -2592,14 +2583,14 @@ object BootstrapFileInput {
       *     {caption}: will be replaced with the file name.
       *     {type}: will be replaced with the file type.
       */
-    var flash: js.UndefOr[String] = js.native
+    var flash: js.UndefOr[String] = js.undefined
     
     /**
       * this template is used ONLY for rendering the initialPreview markup content passed directly as a raw format.
       * The following tags will be parsed and replaced automatically:
       *     {content}: will be replaced with the raw HTML markup as set in initialPreview..
       */
-    var generic: js.UndefOr[String] = js.native
+    var generic: js.UndefOr[String] = js.undefined
     
     /**
       * the preview template for html files.
@@ -2611,7 +2602,7 @@ object BootstrapFileInput {
       *     {caption}: will be replaced with the file name.
       *     {type}: will be replaced with the file type.
       */
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
     /**
       * the preview template for image files.
@@ -2623,7 +2614,7 @@ object BootstrapFileInput {
       *     {caption}: will be replaced with the file name.
       *     {type}: will be replaced with the file type.
       */
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
     /**
       * the preview template for all other files - by default treated as object. To disable this behavior, configure the allowedPreviewTypes property.
@@ -2635,7 +2626,7 @@ object BootstrapFileInput {
       *     {caption}: will be replaced with the file name.
       *     {type}: will be replaced with the file type.
       */
-    var `object`: js.UndefOr[String] = js.native
+    var `object`: js.UndefOr[String] = js.undefined
     
     /**
       * the preview template for text files.
@@ -2651,7 +2642,7 @@ object BootstrapFileInput {
       *     {zoomInd}: This will be replaced with the zoomIndicator property. This is the title that is displayed on hover of the zoom button (which on clicking will display the text file).
       *     {heading}: This represents the modal dialog heading title. This will be replaced with the msgZoomModalHeading property.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * the preview template for video files (supported by HTML 5 video tag).
@@ -2663,7 +2654,7 @@ object BootstrapFileInput {
       *     {caption}: will be replaced with the file name.
       *     {type}: will be replaced with the file type.
       */
-    var video: js.UndefOr[String] = js.native
+    var video: js.UndefOr[String] = js.undefined
   }
   object PreviewTemplates {
     

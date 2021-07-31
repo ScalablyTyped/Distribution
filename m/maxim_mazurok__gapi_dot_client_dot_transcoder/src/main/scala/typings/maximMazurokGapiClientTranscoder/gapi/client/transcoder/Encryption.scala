@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Encryption extends StObject {
   
   /** Configuration for AES-128 encryption. */
-  var aes128: js.UndefOr[Aes128Encryption] = js.native
+  var aes128: js.UndefOr[Aes128Encryption] = js.undefined
   
   /** Required. 128 bit Initialization Vector (IV) represented as lowercase hexadecimal digits. */
-  var iv: js.UndefOr[String] = js.native
+  var iv: js.UndefOr[String] = js.undefined
   
   /** Required. 128 bit encryption key represented as lowercase hexadecimal digits. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Configuration for MPEG Common Encryption (MPEG-CENC). */
-  var mpegCenc: js.UndefOr[MpegCommonEncryption] = js.native
+  var mpegCenc: js.UndefOr[MpegCommonEncryption] = js.undefined
   
   /** Configuration for SAMPLE-AES encryption. */
-  var sampleAes: js.UndefOr[SampleAesEncryption] = js.native
+  var sampleAes: js.UndefOr[SampleAesEncryption] = js.undefined
 }
 object Encryption {
   

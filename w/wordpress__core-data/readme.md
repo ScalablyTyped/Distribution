@@ -10,13 +10,13 @@ Access to and manipulation of core WordPress entities.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/core-data |
 | Keywords           | wordpress, gutenberg, data, entities |
-| # releases         | 53 |
-| # dependents       | 9 |
-| # downloads        | 353658 |
+| # releases         | 51 |
+| # dependents       | 11 |
+| # downloads        | 507456 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/core-data/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/core-data/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fcore-data)

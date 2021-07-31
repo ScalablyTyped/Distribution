@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerDescription extends StObject {
   
   /**
     * The listener.
     */
-  var Listener: js.UndefOr[typings.awsSdk.elbMod.Listener] = js.native
+  var Listener: js.UndefOr[typings.awsSdk.elbMod.Listener] = js.undefined
   
   /**
     * The policies. If there are no policies enabled, the list is empty.
     */
-  var PolicyNames: js.UndefOr[typings.awsSdk.elbMod.PolicyNames] = js.native
+  var PolicyNames: js.UndefOr[typings.awsSdk.elbMod.PolicyNames] = js.undefined
 }
 object ListenerDescription {
   

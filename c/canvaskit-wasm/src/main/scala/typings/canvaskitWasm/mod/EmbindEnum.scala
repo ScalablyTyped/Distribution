@@ -2,13 +2,11 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmbindEnum extends StObject {
   
-  val values: js.Array[Double] = js.native
+  val values: js.Array[Double]
 }
 object EmbindEnum {
   

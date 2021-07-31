@@ -3,13 +3,11 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an HL7v2 store.
   */
-@js.native
 trait SchemaHl7V2Store extends StObject {
   
   /**
@@ -22,26 +20,26 @@ trait SchemaHl7V2Store extends StObject {
     * [\p{Ll}\p{Lo}\p{N}_-]{0,63}  No more than 64 labels can be associated
     * with a given store.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Output only. Resource name of the HL7v2 store, of the form
     * `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7v2_store_id}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The notification destination all messages (both Ingest &amp; Create) are
     * published on. Only the message name is sent as part of the notification.
     * If this is unset, no notifications will be sent. Supplied by the client.
     */
-  var notificationConfig: js.UndefOr[SchemaNotificationConfig] = js.native
+  var notificationConfig: js.UndefOr[SchemaNotificationConfig] = js.undefined
   
   /**
     * The configuration for the parser. It determines how the server parses the
     * messages.
     */
-  var parserConfig: js.UndefOr[SchemaParserConfig] = js.native
+  var parserConfig: js.UndefOr[SchemaParserConfig] = js.undefined
 }
 object SchemaHl7V2Store {
   

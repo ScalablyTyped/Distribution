@@ -2,22 +2,20 @@ package typings.pulumiAws.outputMod.dynamodb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableServerSideEncryption extends StObject {
   
   /**
     * Indicates whether ttl is enabled (true) or disabled (false).
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * The ARN of the CMK that should be used for the AWS KMS encryption.
     * This attribute should only be specified if the key is different from the default DynamoDB CMK, `alias/aws/dynamodb`.
     */
-  var kmsKeyArn: String = js.native
+  var kmsKeyArn: String
 }
 object TableServerSideEncryption {
   

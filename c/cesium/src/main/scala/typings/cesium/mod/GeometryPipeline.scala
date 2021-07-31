@@ -2,77 +2,63 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GeometryPipeline {
   
-  @JSImport("cesium", "GeometryPipeline.compressVertices")
+  @JSImport("cesium", "GeometryPipeline")
   @js.native
-  def compressVertices(geometry: Geometry): Geometry = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cesium", "GeometryPipeline.computeBinormalAndTangent")
-  @js.native
-  def computeBinormalAndTangent(geometry: Geometry): Geometry = js.native
+  @scala.inline
+  def compressVertices(geometry: Geometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("compressVertices")(geometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
-  @JSImport("cesium", "GeometryPipeline.computeNormal")
-  @js.native
-  def computeNormal(geometry: Geometry): Geometry = js.native
+  @scala.inline
+  def computeBinormalAndTangent(geometry: Geometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("computeBinormalAndTangent")(geometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
-  @JSImport("cesium", "GeometryPipeline.createAttributeLocations")
-  @js.native
-  def createAttributeLocations(geometry: Geometry): js.Any = js.native
+  @scala.inline
+  def computeNormal(geometry: Geometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("computeNormal")(geometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
-  @JSImport("cesium", "GeometryPipeline.createLineSegmentsForVectors")
-  @js.native
-  def createLineSegmentsForVectors(geometry: Geometry): Geometry = js.native
-  @JSImport("cesium", "GeometryPipeline.createLineSegmentsForVectors")
-  @js.native
-  def createLineSegmentsForVectors(geometry: Geometry, attributeName: js.UndefOr[scala.Nothing], length: Double): Geometry = js.native
-  @JSImport("cesium", "GeometryPipeline.createLineSegmentsForVectors")
-  @js.native
-  def createLineSegmentsForVectors(geometry: Geometry, attributeName: String): Geometry = js.native
-  @JSImport("cesium", "GeometryPipeline.createLineSegmentsForVectors")
-  @js.native
-  def createLineSegmentsForVectors(geometry: Geometry, attributeName: String, length: Double): Geometry = js.native
+  @scala.inline
+  def createAttributeLocations(geometry: Geometry): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAttributeLocations")(geometry.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("cesium", "GeometryPipeline.encodeAttribute")
-  @js.native
-  def encodeAttribute(geometry: Geometry, attributeName: String, attributeHighName: String, attributeLowName: String): Geometry = js.native
+  @scala.inline
+  def createLineSegmentsForVectors(geometry: Geometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createLineSegmentsForVectors")(geometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  @scala.inline
+  def createLineSegmentsForVectors(geometry: Geometry, attributeName: String): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("createLineSegmentsForVectors")(geometry.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  @scala.inline
+  def createLineSegmentsForVectors(geometry: Geometry, attributeName: String, length: Double): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("createLineSegmentsForVectors")(geometry.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  @scala.inline
+  def createLineSegmentsForVectors(geometry: Geometry, attributeName: Unit, length: Double): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("createLineSegmentsForVectors")(geometry.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   
-  @JSImport("cesium", "GeometryPipeline.fitToUnsignedShortIndices")
-  @js.native
-  def fitToUnsignedShortIndices(geometry: Geometry): js.Array[Geometry] = js.native
+  @scala.inline
+  def encodeAttribute(geometry: Geometry, attributeName: String, attributeHighName: String, attributeLowName: String): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeAttribute")(geometry.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any], attributeHighName.asInstanceOf[js.Any], attributeLowName.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   
-  @JSImport("cesium", "GeometryPipeline.projectTo2D")
-  @js.native
-  def projectTo2D(geometry: Geometry, attributeName: String, attributeName3D: String, attributeName2D: String): Geometry = js.native
-  @JSImport("cesium", "GeometryPipeline.projectTo2D")
-  @js.native
+  @scala.inline
+  def fitToUnsignedShortIndices(geometry: Geometry): js.Array[Geometry] = ^.asInstanceOf[js.Dynamic].applyDynamic("fitToUnsignedShortIndices")(geometry.asInstanceOf[js.Any]).asInstanceOf[js.Array[Geometry]]
+  
+  @scala.inline
+  def projectTo2D(geometry: Geometry, attributeName: String, attributeName3D: String, attributeName2D: String): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("projectTo2D")(geometry.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any], attributeName3D.asInstanceOf[js.Any], attributeName2D.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  @scala.inline
   def projectTo2D(
     geometry: Geometry,
     attributeName: String,
     attributeName3D: String,
     attributeName2D: String,
     projection: js.Any
-  ): Geometry = js.native
+  ): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("projectTo2D")(geometry.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any], attributeName3D.asInstanceOf[js.Any], attributeName2D.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   
-  @JSImport("cesium", "GeometryPipeline.reorderForPostVertexCache")
-  @js.native
-  def reorderForPostVertexCache(geometry: Geometry): Geometry = js.native
-  @JSImport("cesium", "GeometryPipeline.reorderForPostVertexCache")
-  @js.native
-  def reorderForPostVertexCache(geometry: Geometry, cacheCapacity: Double): Geometry = js.native
+  @scala.inline
+  def reorderForPostVertexCache(geometry: Geometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("reorderForPostVertexCache")(geometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  @scala.inline
+  def reorderForPostVertexCache(geometry: Geometry, cacheCapacity: Double): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderForPostVertexCache")(geometry.asInstanceOf[js.Any], cacheCapacity.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   
-  @JSImport("cesium", "GeometryPipeline.reorderForPreVertexCache")
-  @js.native
-  def reorderForPreVertexCache(geometry: Geometry): Geometry = js.native
+  @scala.inline
+  def reorderForPreVertexCache(geometry: Geometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("reorderForPreVertexCache")(geometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
-  @JSImport("cesium", "GeometryPipeline.toWireframe")
-  @js.native
-  def toWireframe(geometry: Geometry): Geometry = js.native
+  @scala.inline
+  def toWireframe(geometry: Geometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("toWireframe")(geometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
-  @JSImport("cesium", "GeometryPipeline.transformToWorldCoordinates")
-  @js.native
-  def transformToWorldCoordinates(instance: GeometryInstance): GeometryInstance = js.native
+  @scala.inline
+  def transformToWorldCoordinates(instance: GeometryInstance): GeometryInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("transformToWorldCoordinates")(instance.asInstanceOf[js.Any]).asInstanceOf[GeometryInstance]
 }

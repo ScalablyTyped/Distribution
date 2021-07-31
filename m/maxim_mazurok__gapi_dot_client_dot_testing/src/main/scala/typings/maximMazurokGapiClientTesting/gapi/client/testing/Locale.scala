@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Locale extends StObject {
   
   /** The id for this locale. Example: "en_US". */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** A human-friendly name for this language/locale. Example: "English". */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** A human-friendly string representing the region for this locale. Example: "United States". Not present for every locale. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /** Tags for this dimension. Example: "default". */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Locale {
   

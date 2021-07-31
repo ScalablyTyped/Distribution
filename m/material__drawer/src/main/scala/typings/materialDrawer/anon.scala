@@ -3,27 +3,25 @@ package typings.materialDrawer
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ANIMATE extends StObject {
     
-    var ANIMATE: String = js.native
+    var ANIMATE: String
     
-    var CLOSING: String = js.native
+    var CLOSING: String
     
-    var DISMISSIBLE: String = js.native
+    var DISMISSIBLE: String
     
-    var MODAL: String = js.native
+    var MODAL: String
     
-    var OPEN: String = js.native
+    var OPEN: String
     
-    var OPENING: String = js.native
+    var OPENING: String
     
-    var ROOT: String = js.native
+    var ROOT: String
   }
   object ANIMATE {
     
@@ -67,16 +65,15 @@ object anon {
     }
   }
   
-  @js.native
   trait APPCONTENTSELECTOR extends StObject {
     
-    var APP_CONTENT_SELECTOR: String = js.native
+    var APP_CONTENT_SELECTOR: String
     
-    var CLOSE_EVENT: String = js.native
+    var CLOSE_EVENT: String
     
-    var OPEN_EVENT: String = js.native
+    var OPEN_EVENT: String
     
-    var SCRIM_SELECTOR: String = js.native
+    var SCRIM_SELECTOR: String
   }
   object APPCONTENTSELECTOR {
     
@@ -104,30 +101,29 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/drawer.@material/drawer/adapter.MDCDrawerAdapter> */
-  @js.native
   trait PartialMDCDrawerAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var elementHasClass: js.UndefOr[js.Function2[/* element */ Element, /* className */ String, Boolean]] = js.native
+    var elementHasClass: js.UndefOr[js.Function2[/* element */ Element, /* className */ String, Boolean]] = js.undefined
     
-    var focusActiveNavigationItem: js.UndefOr[js.Function0[Unit]] = js.native
+    var focusActiveNavigationItem: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var notifyClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var notifyOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var releaseFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var releaseFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var restoreFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var restoreFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var saveFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var saveFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var trapFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var trapFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object PartialMDCDrawerAdapter {
     

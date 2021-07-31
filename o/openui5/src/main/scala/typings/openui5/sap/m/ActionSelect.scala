@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionSelect extends Select {
+trait ActionSelect
+  extends StObject
+     with Select {
   
   /**
     * Adds some button into the association <code>buttons</code>.
@@ -20,7 +21,7 @@ trait ActionSelect extends Select {
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>buttons</code>.
     */
-  def getButtons(): js.Array[_] = js.native
+  def getButtons(): js.Array[js.Any] = js.native
   
   /**
     * Remove all buttons from the ActionSelect.

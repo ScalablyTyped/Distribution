@@ -2,13 +2,13 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBubbleData extends ISeriesData {
+trait IBubbleData
+  extends StObject
+     with ISeriesData {
   
-  var radius: js.Array[Double] = js.native
+  var radius: js.Array[Double]
 }
 object IBubbleData {
   

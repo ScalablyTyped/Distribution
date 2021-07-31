@@ -3,15 +3,13 @@ package typings.stylableCore.anon
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyframesMap extends StObject {
   
-  var keyframesMap: Record[String, String] = js.native
+  var keyframesMap: Record[String, String]
   
-  var namedMap: Record[String, String] = js.native
+  var namedMap: Record[String, String]
 }
 object KeyframesMap {
   

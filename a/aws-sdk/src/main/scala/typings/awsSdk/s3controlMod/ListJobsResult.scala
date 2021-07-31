@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsResult extends StObject {
   
   /**
     * The list of current jobs and jobs that have ended within the last 30 days.
     */
-  var Jobs: js.UndefOr[JobListDescriptorList] = js.native
+  var Jobs: js.UndefOr[JobListDescriptorList] = js.undefined
   
   /**
     * If the List Jobs request produced more than the maximum number of results, you can pass this value into a subsequent List Jobs request in order to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[StringForNextToken] = js.native
+  var NextToken: js.UndefOr[StringForNextToken] = js.undefined
 }
 object ListJobsResult {
   

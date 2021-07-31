@@ -2,36 +2,34 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNamespaceDeletionStatusResponse extends StObject {
   
   /**
     * An error code returned by the namespace deletion task.
     */
-  var errorCode: js.UndefOr[NamespaceDeletionStatusErrorCodes] = js.native
+  var errorCode: js.UndefOr[NamespaceDeletionStatusErrorCodes] = js.undefined
   
   /**
     * An error code returned by the namespace deletion task.
     */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the namespace that is being deleted.
     */
-  var namespaceArn: js.UndefOr[Arn] = js.native
+  var namespaceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the namespace that is being deleted.
     */
-  var namespaceName: js.UndefOr[NamespaceName] = js.native
+  var namespaceName: js.UndefOr[NamespaceName] = js.undefined
   
   /**
     * The status of the deletion request.
     */
-  var status: js.UndefOr[NamespaceDeletionStatus] = js.native
+  var status: js.UndefOr[NamespaceDeletionStatus] = js.undefined
 }
 object GetNamespaceDeletionStatusResponse {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XServiceName
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -54,10 +53,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * implementing the {@link VolatileResult} service, that contains a volatile result. Subsequent calls with the same parameters must return the same
   * object. An `any` return value can contain any of the other types.
   */
-@js.native
 trait AddIn
-  extends XAddIn
+  extends StObject
      with XServiceName
+     with XAddIn
      with XCompatibilityNames
 object AddIn {
   

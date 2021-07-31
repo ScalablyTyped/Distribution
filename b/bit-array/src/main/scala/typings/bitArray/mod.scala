@@ -2,106 +2,205 @@ package typings.bitArray
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("bit-array", JSImport.Namespace)
   @js.native
-  class ^ protected () extends BitArray {
+  class ^ protected ()
+    extends StObject
+       with BitArray {
     /**
       * Creates a new empty BitArray with the given length or initialises the BitArray with the given hex representation.
       */
     def this(size: Double) = this()
     def this(size: Double, hex: String) = this()
-  }
-  
-  @js.native
-  trait BitArray extends StObject {
     
     /**
       * Bitwise AND on the values of this BitArray using BitArray x.
       */
-    def and(x: BitArray): BitArray = js.native
+    /* CompleteClass */
+    override def and(x: BitArray): BitArray = js.native
     
     /**
       * Returns a copy of this BitArray.
       */
-    def copy(): BitArray = js.native
+    /* CompleteClass */
+    override def copy(): BitArray = js.native
     
     /**
       * Returns the total number of bits set to one in this BitArray.
       */
-    def count(): Double = js.native
+    /* CompleteClass */
+    override def count(): Double = js.native
     
     /**
       * Returns true if this BitArray equals another. Two BitArrays are considered
       * equal if both have the same length and bit pattern.
       */
-    def equals(x: BitArray): Boolean = js.native
+    /* CompleteClass */
+    override def equals(x: BitArray): Boolean = js.native
     
     /**
       * Returns the value of the bit at index (boolean.)
       */
-    def get(index: Double): Boolean = js.native
+    /* CompleteClass */
+    override def get(index: Double): Boolean = js.native
     
     /**
       * Inverts this BitArray.
       */
-    def not(): BitArray = js.native
+    /* CompleteClass */
+    override def not(): BitArray = js.native
     
     /**
       * Bitwise OR on the values of this BitArray using BitArray x.
       */
-    def or(x: BitArray): BitArray = js.native
+    /* CompleteClass */
+    override def or(x: BitArray): BitArray = js.native
     
     /**
       * Resets the BitArray so that it is empty and can be re-used.
       */
-    def reset(): BitArray = js.native
+    /* CompleteClass */
+    override def reset(): BitArray = js.native
     
     /**
       * Sets the bit at index to a value (boolean.)
       */
-    def set(index: Double, value: Boolean): BitArray = js.native
+    /* CompleteClass */
+    override def set(index: Double, value: Boolean): BitArray = js.native
     
     /**
       * Returns the total number of bits in this BitArray.
       */
-    def size(): Double = js.native
+    /* CompleteClass */
+    override def size(): Double = js.native
     
     /**
       * Convert the BitArray to an Array of boolean values (slow).
       */
-    def toArray(): js.Array[Boolean] = js.native
+    /* CompleteClass */
+    override def toArray(): js.Array[Boolean] = js.native
     
     /**
       * Returns a string representation of the BitArray with bits
       * in mathemetical order.
       */
-    def toBinaryString(): String = js.native
+    /* CompleteClass */
+    override def toBinaryString(): String = js.native
     
     /**
       * Returns a hexadecimal string representation of the BitArray
       * with bits in logical order.
       */
-    def toHexString(): String = js.native
+    /* CompleteClass */
+    override def toHexString(): String = js.native
     
     /**
       * Returns the JSON representation of this BitArray.
       */
-    def toJSON(): String = js.native
+    /* CompleteClass */
+    override def toJSON(): String = js.native
     
     /**
       * Toggles the bit at index. If the bit is on, it is turned off. Likewise, if the bit is off it is turned on.
       */
-    def toggle(index: Double): BitArray = js.native
+    /* CompleteClass */
+    override def toggle(index: Double): BitArray = js.native
     
     /**
       * Bitwise XOR on the values of this BitArray using BitArray x.
       */
-    def xor(x: BitArray): BitArray = js.native
+    /* CompleteClass */
+    override def xor(x: BitArray): BitArray = js.native
+  }
+  
+  trait BitArray extends StObject {
+    
+    /**
+      * Bitwise AND on the values of this BitArray using BitArray x.
+      */
+    def and(x: BitArray): BitArray
+    
+    /**
+      * Returns a copy of this BitArray.
+      */
+    def copy(): BitArray
+    
+    /**
+      * Returns the total number of bits set to one in this BitArray.
+      */
+    def count(): Double
+    
+    /**
+      * Returns true if this BitArray equals another. Two BitArrays are considered
+      * equal if both have the same length and bit pattern.
+      */
+    def equals(x: BitArray): Boolean
+    
+    /**
+      * Returns the value of the bit at index (boolean.)
+      */
+    def get(index: Double): Boolean
+    
+    /**
+      * Inverts this BitArray.
+      */
+    def not(): BitArray
+    
+    /**
+      * Bitwise OR on the values of this BitArray using BitArray x.
+      */
+    def or(x: BitArray): BitArray
+    
+    /**
+      * Resets the BitArray so that it is empty and can be re-used.
+      */
+    def reset(): BitArray
+    
+    /**
+      * Sets the bit at index to a value (boolean.)
+      */
+    def set(index: Double, value: Boolean): BitArray
+    
+    /**
+      * Returns the total number of bits in this BitArray.
+      */
+    def size(): Double
+    
+    /**
+      * Convert the BitArray to an Array of boolean values (slow).
+      */
+    def toArray(): js.Array[Boolean]
+    
+    /**
+      * Returns a string representation of the BitArray with bits
+      * in mathemetical order.
+      */
+    def toBinaryString(): String
+    
+    /**
+      * Returns a hexadecimal string representation of the BitArray
+      * with bits in logical order.
+      */
+    def toHexString(): String
+    
+    /**
+      * Returns the JSON representation of this BitArray.
+      */
+    def toJSON(): String
+    
+    /**
+      * Toggles the bit at index. If the bit is on, it is turned off. Likewise, if the bit is off it is turned on.
+      */
+    def toggle(index: Double): BitArray
+    
+    /**
+      * Bitwise XOR on the values of this BitArray using BitArray x.
+      */
+    def xor(x: BitArray): BitArray
   }
   object BitArray {
     

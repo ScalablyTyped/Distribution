@@ -2,17 +2,15 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindPlaceFromPhoneNumberRequest extends StObject {
   
-  var fields: js.Array[String] = js.native
+  var fields: js.Array[String]
   
-  var locationBias: js.UndefOr[LocationBias] = js.native
+  var locationBias: js.UndefOr[LocationBias] = js.undefined
   
-  var phoneNumber: String = js.native
+  var phoneNumber: String
 }
 object FindPlaceFromPhoneNumberRequest {
   

@@ -6,53 +6,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewTakeScreenshotOptions extends Object {
+trait SceneViewTakeScreenshotOptions
+  extends StObject
+     with Object {
   
   /**
     * Specifies whether to take a screenshot of a specific area of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#takeScreenshot)
     */
-  var area: js.UndefOr[SceneViewTakeScreenshotOptionsArea] = js.native
+  var area: js.UndefOr[SceneViewTakeScreenshotOptionsArea] = js.undefined
   
   /**
     * The format of the resulting encoded data url.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#takeScreenshot)
     */
-  var format: js.UndefOr[jpg | png] = js.native
+  var format: js.UndefOr[jpg | png] = js.undefined
   
   /**
     * The height of the screenshot (defaults to the area height).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#takeScreenshot)
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether view padding should be ignored.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#takeScreenshot)
     */
-  var ignorePadding: js.UndefOr[Boolean] = js.native
+  var ignorePadding: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The quality (0 to 100) of the encoded image when format is `jpg`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#takeScreenshot)
     */
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
   /**
     * The width of the screenshot (defaults to the area width).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#takeScreenshot)
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SceneViewTakeScreenshotOptions {
   

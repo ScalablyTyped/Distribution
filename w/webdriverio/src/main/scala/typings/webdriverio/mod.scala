@@ -1,33 +1,58 @@
 package typings.webdriverio
 
 import typings.std.Error
-import typings.webdriver.WebDriver.AttachSessionOptions
 import typings.webdriverio.WebdriverIO.BrowserObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webdriverio", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("webdriverio", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Error to be thrown when a severe error was encountered when a Service is being ran.
     */
+  @JSImport("webdriverio", "SevereServiceError")
   @js.native
-  class SevereServiceError () extends Error
+  class SevereServiceError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
-  def attach(options: AttachSessionOptions): BrowserObject = js.native
+  @scala.inline
+  def attach(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.AttachSessionOptions */ js.Any
+  ): BrowserObject = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(options.asInstanceOf[js.Any]).asInstanceOf[BrowserObject]
+  
+  @scala.inline
   def multiremote(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultiRemoteOptions */ js.Any
-  ): js.Promise[BrowserObject] = js.native
-  def remote(): js.Promise[BrowserObject] = js.native
-  def remote(options: js.UndefOr[scala.Nothing], modifier: js.Function1[/* repeated */ js.Any, _]): js.Promise[BrowserObject] = js.native
+  ): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultiRemoteBrowserObject */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultiRemoteBrowserObject */ js.Any
+  ]]
+  
+  @scala.inline
+  def remote(): js.Promise[BrowserObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("remote")().asInstanceOf[js.Promise[BrowserObject]]
+  @scala.inline
   def remote(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RemoteOptions */ js.Any
-  ): js.Promise[BrowserObject] = js.native
+  ): js.Promise[BrowserObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("remote")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BrowserObject]]
+  @scala.inline
   def remote(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RemoteOptions */ js.Any,
-    modifier: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[BrowserObject] = js.native
+    modifier: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[BrowserObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BrowserObject]]
+  @scala.inline
+  def remote(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[BrowserObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BrowserObject]]
 }
-

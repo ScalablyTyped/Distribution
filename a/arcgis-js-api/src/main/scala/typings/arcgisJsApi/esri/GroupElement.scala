@@ -5,11 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.expanded
 import typings.arcgisJsApi.arcgisJsApiStrings.group
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupElement extends Element {
+trait GroupElement
+  extends StObject
+     with Element {
   
   /**
     * An array of [field elements](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html) to display as grouped.

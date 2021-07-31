@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.dockerode.mod.NetworkInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Networks extends StObject {
   
-  var Networks: StringDictionary[NetworkInfo] = js.native
+  var Networks: StringDictionary[NetworkInfo]
 }
 object Networks {
   

@@ -2,27 +2,25 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineKeyboardButton extends StObject {
   
-  var callback_data: js.UndefOr[String] = js.native
+  var callback_data: js.UndefOr[String] = js.undefined
   
-  var callback_game: js.UndefOr[CallbackGame] = js.native
+  var callback_game: js.UndefOr[CallbackGame] = js.undefined
   
-  var login_url: js.UndefOr[LoginUrl] = js.native
+  var login_url: js.UndefOr[LoginUrl] = js.undefined
   
-  var pay: js.UndefOr[Boolean] = js.native
+  var pay: js.UndefOr[Boolean] = js.undefined
   
-  var switch_inline_query: js.UndefOr[String] = js.native
+  var switch_inline_query: js.UndefOr[String] = js.undefined
   
-  var switch_inline_query_current_chat: js.UndefOr[String] = js.native
+  var switch_inline_query_current_chat: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object InlineKeyboardButton {
   

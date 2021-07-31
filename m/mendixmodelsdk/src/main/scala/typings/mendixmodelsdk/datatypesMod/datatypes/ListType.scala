@@ -25,7 +25,6 @@ import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -86,9 +85,8 @@ object ListType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.create")
-  @js.native
-  def create(model: IModel): ListType = js.native
+  @scala.inline
+  def create(model: IModel): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -99,9 +97,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInAppServiceActionParameterUnderParameterType")
-  @js.native
-  def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): ListType = js.native
+  @scala.inline
+  def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -112,9 +109,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInAppServiceActionUnderActionReturnType")
-  @js.native
-  def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): ListType = js.native
+  @scala.inline
+  def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -125,9 +121,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInConstantUnderType")
-  @js.native
-  def createInConstantUnderType(container: Constant): ListType = js.native
+  @scala.inline
+  def createInConstantUnderType(container: Constant): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -138,9 +133,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInCreateVariableActionUnderVariableType")
-  @js.native
-  def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): ListType = js.native
+  @scala.inline
+  def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -151,9 +145,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInDataSetColumnUnderColumnType")
-  @js.native
-  def createInDataSetColumnUnderColumnType(container: DataSetColumn): ListType = js.native
+  @scala.inline
+  def createInDataSetColumnUnderColumnType(container: DataSetColumn): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -164,9 +157,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInDataSetParameterUnderParameterType")
-  @js.native
-  def createInDataSetParameterUnderParameterType(container: DataSetParameter): ListType = js.native
+  @scala.inline
+  def createInDataSetParameterUnderParameterType(container: DataSetParameter): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -177,9 +169,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInDocumentTemplateParameterUnderParameterType")
-  @js.native
-  def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): ListType = js.native
+  @scala.inline
+  def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -190,9 +181,8 @@ object ListType {
     *  7.16.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInImportMappingUnderParameterType")
-  @js.native
-  def createInImportMappingUnderParameterType(container: ImportMapping): ListType = js.native
+  @scala.inline
+  def createInImportMappingUnderParameterType(container: ImportMapping): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -203,9 +193,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInMicroflowBaseUnderMicroflowReturnType")
-  @js.native
-  def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): ListType = js.native
+  @scala.inline
+  def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -216,9 +205,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInMicroflowParameterBaseUnderParameterType")
-  @js.native
-  def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): ListType = js.native
+  @scala.inline
+  def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -229,9 +217,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInMicroflowParameterObjectUnderVariableType")
-  @js.native
-  def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): ListType = js.native
+  @scala.inline
+  def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -242,9 +229,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInPublishedOperationUnderOperationReturnType")
-  @js.native
-  def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): ListType = js.native
+  @scala.inline
+  def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -255,9 +241,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInPublishedParameterUnderParameterType")
-  @js.native
-  def createInPublishedParameterUnderParameterType(container: PublishedParameter): ListType = js.native
+  @scala.inline
+  def createInPublishedParameterUnderParameterType(container: PublishedParameter): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -268,9 +253,8 @@ object ListType {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInRestOperationParameterUnderType")
-  @js.native
-  def createInRestOperationParameterUnderType(container: RestOperationParameter): ListType = js.native
+  @scala.inline
+  def createInRestOperationParameterUnderType(container: RestOperationParameter): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -281,9 +265,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInResultHandlingUnderVariableType")
-  @js.native
-  def createInResultHandlingUnderVariableType(container: ResultHandling): ListType = js.native
+  @scala.inline
+  def createInResultHandlingUnderVariableType(container: ResultHandling): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
@@ -294,9 +277,8 @@ object ListType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInValueMappingElementUnderType")
-  @js.native
-  def createInValueMappingElementUnderType(container: ValueMappingElement): ListType = js.native
+  @scala.inline
+  def createInValueMappingElementUnderType(container: ValueMappingElement): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.structureTypeName")

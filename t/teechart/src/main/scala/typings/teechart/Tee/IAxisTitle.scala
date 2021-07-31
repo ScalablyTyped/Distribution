@@ -2,13 +2,13 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAxisTitle extends IAnnotation {
+trait IAxisTitle
+  extends StObject
+     with IAnnotation {
   
-  var padding: Double = js.native
+  var padding: Double
 }
 object IAxisTitle {
   

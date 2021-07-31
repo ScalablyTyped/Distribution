@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaKeyMessageEventInit extends EventInit {
+trait MediaKeyMessageEventInit
+  extends StObject
+     with EventInit {
   
-  var message: ArrayBuffer = js.native
+  var message: ArrayBuffer
   
-  var messageType: MediaKeyMessageType = js.native
+  var messageType: MediaKeyMessageType
 }
 object MediaKeyMessageEventInit {
   

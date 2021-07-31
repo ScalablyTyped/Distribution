@@ -2,17 +2,15 @@ package typings.node.childProcessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingOptions extends StObject {
   
   /**
     * Specify the kind of serialization used for sending messages between processes.
     * @default 'json'
     */
-  var serialization: js.UndefOr[SerializationType] = js.native
+  var serialization: js.UndefOr[SerializationType] = js.undefined
 }
 object MessagingOptions {
   

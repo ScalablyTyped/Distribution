@@ -5,24 +5,24 @@ import typings.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListTagsOutputMod {
   
-  @js.native
-  trait ListTagsOutput extends OutputTypesUnion {
+  trait ListTagsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The list of tags assigned to the function. For more information, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/tagging.html">Tagging Lambda Functions</a> in the <b>AWS Lambda Developer Guide</b>.</p>
       */
-    var Tags: js.UndefOr[StringDictionary[String]] = js.native
+    var Tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object ListTagsOutput {
     

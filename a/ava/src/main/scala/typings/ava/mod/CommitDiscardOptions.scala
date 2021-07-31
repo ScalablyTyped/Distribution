@@ -2,16 +2,14 @@ package typings.ava.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitDiscardOptions extends StObject {
   
   /**
   	 * Whether the logs should be included in those of the parent test.
   	 */
-  var retainLogs: js.UndefOr[Boolean] = js.native
+  var retainLogs: js.UndefOr[Boolean] = js.undefined
 }
 object CommitDiscardOptions {
   

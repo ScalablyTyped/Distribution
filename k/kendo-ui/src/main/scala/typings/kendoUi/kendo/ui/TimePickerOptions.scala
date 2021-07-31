@@ -3,39 +3,37 @@ package typings.kendoUi.kendo.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimePickerOptions extends StObject {
   
-  var animation: js.UndefOr[Boolean | TimePickerAnimation] = js.native
+  var animation: js.UndefOr[Boolean | TimePickerAnimation] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ TimePickerChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ TimePickerChangeEvent, Unit]] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ TimePickerCloseEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ TimePickerCloseEvent, Unit]] = js.undefined
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
-  var dateInput: js.UndefOr[Boolean] = js.native
+  var dateInput: js.UndefOr[Boolean] = js.undefined
   
-  var dates: js.UndefOr[js.Any] = js.native
+  var dates: js.UndefOr[js.Any] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Date] = js.native
+  var max: js.UndefOr[Date] = js.undefined
   
-  var min: js.UndefOr[Date] = js.native
+  var min: js.UndefOr[Date] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ TimePickerOpenEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ TimePickerOpenEvent, Unit]] = js.undefined
   
-  var parseFormats: js.UndefOr[js.Any] = js.native
+  var parseFormats: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[Date] = js.native
+  var value: js.UndefOr[Date] = js.undefined
 }
 object TimePickerOptions {
   

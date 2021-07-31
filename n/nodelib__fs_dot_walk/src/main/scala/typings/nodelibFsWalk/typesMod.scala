@@ -3,7 +3,6 @@ package typings.nodelibFsWalk
 import typings.node.NodeJS.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -12,12 +11,11 @@ object typesMod {
   
   type Errno = ErrnoException
   
-  @js.native
   trait QueueItem extends StObject {
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var directory: String = js.native
+    var directory: String
   }
   object QueueItem {
     

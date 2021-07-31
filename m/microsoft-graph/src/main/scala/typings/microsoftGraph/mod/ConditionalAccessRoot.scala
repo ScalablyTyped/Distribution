@@ -2,15 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConditionalAccessRoot extends Entity {
+trait ConditionalAccessRoot
+  extends StObject
+     with Entity {
   
-  var namedLocations: js.UndefOr[NullableOption[js.Array[NamedLocation]]] = js.native
+  var namedLocations: js.UndefOr[NullableOption[js.Array[NamedLocation]]] = js.undefined
   
-  var policies: js.UndefOr[NullableOption[js.Array[ConditionalAccessPolicy]]] = js.native
+  var policies: js.UndefOr[NullableOption[js.Array[ConditionalAccessPolicy]]] = js.undefined
 }
 object ConditionalAccessRoot {
   

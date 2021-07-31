@@ -2,17 +2,15 @@ package typings.easyXHeaders.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Flags extends StObject {
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var flags: js.UndefOr[String] = js.native
+  var flags: js.UndefOr[String] = js.undefined
   
-  var string: js.UndefOr[String] = js.native
+  var string: js.UndefOr[String] = js.undefined
 }
 object Flags {
   

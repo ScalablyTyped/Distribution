@@ -2,17 +2,15 @@ package typings.nodeGeocoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Confidence extends StObject {
     
-    var confidence: js.UndefOr[Double] = js.native
+    var confidence: js.UndefOr[Double] = js.undefined
     
-    var googlePlaceId: js.UndefOr[String] = js.native
+    var googlePlaceId: js.UndefOr[String] = js.undefined
   }
   object Confidence {
     
@@ -39,16 +37,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Level1long extends StObject {
     
-    var level1long: js.UndefOr[String] = js.native
+    var level1long: js.UndefOr[String] = js.undefined
     
-    var level1short: js.UndefOr[String] = js.native
+    var level1short: js.UndefOr[String] = js.undefined
     
-    var level2long: js.UndefOr[String] = js.native
+    var level2long: js.UndefOr[String] = js.undefined
     
-    var level2short: js.UndefOr[String] = js.native
+    var level2short: js.UndefOr[String] = js.undefined
   }
   object Level1long {
     

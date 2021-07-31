@@ -2,19 +2,17 @@ package typings.meshblu.Meshblu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataInput extends StObject {
   
-  var finish: String = js.native
+  var finish: String
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var start: String = js.native
+  var start: String
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object GetDataInput {
   

@@ -2,23 +2,21 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessesData extends StObject {
   
-  var all: Double = js.native
+  var all: Double
   
-  var blocked: Double = js.native
+  var blocked: Double
   
-  var list: js.Array[ProcessesProcessData] = js.native
+  var list: js.Array[ProcessesProcessData]
   
-  var running: Double = js.native
+  var running: Double
   
-  var sleeping: Double = js.native
+  var sleeping: Double
   
-  var unknown: Double = js.native
+  var unknown: Double
 }
 object ProcessesData {
   

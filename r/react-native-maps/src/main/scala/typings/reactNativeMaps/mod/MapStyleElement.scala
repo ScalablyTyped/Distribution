@@ -2,17 +2,15 @@ package typings.reactNativeMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapStyleElement extends StObject {
   
-  var elementType: js.UndefOr[String] = js.native
+  var elementType: js.UndefOr[String] = js.undefined
   
-  var featureType: js.UndefOr[String] = js.native
+  var featureType: js.UndefOr[String] = js.undefined
   
-  var stylers: js.Array[js.Object] = js.native
+  var stylers: js.Array[js.Object]
 }
 object MapStyleElement {
   

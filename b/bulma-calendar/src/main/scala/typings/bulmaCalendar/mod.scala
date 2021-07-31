@@ -14,7 +14,6 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,42 +21,39 @@ object mod {
   @JSImport("bulma-calendar", JSImport.Namespace)
   @js.native
   class ^ protected ()
-    extends typings.bulmaCalendar.mod.bulmaCalendar {
+    extends StObject
+       with typings.bulmaCalendar.mod.bulmaCalendar {
     // Constructors
     def this(selector: String) = this()
     def this(selector: HTMLElement) = this()
     def this(selector: String, options: Options) = this()
     def this(selector: HTMLElement, options: Options) = this()
   }
+  @JSImport("bulma-calendar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("bulma-calendar", "attach")
-  @js.native
-  def attach(): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = js.native
-  @JSImport("bulma-calendar", "attach")
-  @js.native
-  def attach(selector: js.UndefOr[scala.Nothing], options: Options): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = js.native
-  @JSImport("bulma-calendar", "attach")
-  @js.native
-  def attach(selector: String): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = js.native
-  @JSImport("bulma-calendar", "attach")
-  @js.native
-  def attach(selector: String, options: Options): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = js.native
-  @JSImport("bulma-calendar", "attach")
-  @js.native
-  def attach(selector: HTMLElement): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = js.native
-  @JSImport("bulma-calendar", "attach")
-  @js.native
-  def attach(selector: HTMLElement, options: Options): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = js.native
+  @scala.inline
+  def attach(): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")().asInstanceOf[js.Array[typings.bulmaCalendar.mod.bulmaCalendar]]
+  @scala.inline
+  def attach(selector: String): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bulmaCalendar.mod.bulmaCalendar]]
+  @scala.inline
+  def attach(selector: String, options: Options): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bulmaCalendar.mod.bulmaCalendar]]
+  @scala.inline
+  def attach(selector: Unit, options: Options): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bulmaCalendar.mod.bulmaCalendar]]
+  @scala.inline
+  def attach(selector: HTMLElement): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bulmaCalendar.mod.bulmaCalendar]]
+  @scala.inline
+  def attach(selector: HTMLElement, options: Options): js.Array[typings.bulmaCalendar.mod.bulmaCalendar] = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bulmaCalendar.mod.bulmaCalendar]]
   
-  @js.native
   trait Event[T /* <: EventType */] extends StObject {
     
-    var data: typings.bulmaCalendar.mod.bulmaCalendar = js.native
+    var data: typings.bulmaCalendar.mod.bulmaCalendar
     
-    var timeStamp: Double = js.native
+    var timeStamp: Double
     
-    var `type`: T = js.native
+    var `type`: T
   }
   object Event {
     
@@ -69,7 +65,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class EventMutableBuilder[Self <: Event[_], T /* <: EventType */] (val x: Self with Event[T]) extends AnyVal {
+    implicit class EventMutableBuilder[Self <: Event[?], T /* <: EventType */] (val x: Self & Event[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: typings.bulmaCalendar.mod.bulmaCalendar): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -104,7 +100,6 @@ object mod {
     def show: typings.bulmaCalendar.bulmaCalendarStrings.show = "show".asInstanceOf[typings.bulmaCalendar.bulmaCalendarStrings.show]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -112,28 +107,28 @@ object mod {
       *
       * @default true
       */
-    var allowSameDayRange: js.UndefOr[Boolean] = js.native
+    var allowSameDayRange: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Cancel button label
       *
       * @default 'Cancel'
       */
-    var cancelLabel: js.UndefOr[String] = js.native
+    var cancelLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Clear button label
       *
       * @default 'Clear'
       */
-    var clearLabel: js.UndefOr[String] = js.native
+    var clearLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Close picker on overlay click (only for dialog display style)
       *
       * @default true
       */
-    var closeOnOverlayClick: js.UndefOr[Boolean] = js.native
+    var closeOnOverlayClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Automatically close the datePicker when date selected (or range date selected) - not available
@@ -142,216 +137,216 @@ object mod {
       *
       * @default true
       */
-    var closeOnSelect: js.UndefOr[Boolean] = js.native
+    var closeOnSelect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Picker dominant color
       *
       * @default 'primary'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Date format pattern
       *
       * @default 'MM/DD/YYYY'
       */
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
     /**
       * List of disabled dates
       */
-    var disabledDates: js.UndefOr[js.Array[_]] = js.native
+    var disabledDates: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * List of disabled week days
       */
-    var disabledWeekDays: js.UndefOr[String | js.Array[_]] = js.native
+    var disabledWeekDays: js.UndefOr[String | js.Array[js.Any]] = js.undefined
     
     /**
       * Display mode
       *
       * @default 'default'
       */
-    var displayMode: js.UndefOr[default | dialog | `inline`] = js.native
+    var displayMode: js.UndefOr[default | dialog | `inline`] = js.undefined
     
     /**
       * Enable/disable month switch
       *
       * @default true
       */
-    var enableMonthSwitch: js.UndefOr[Boolean] = js.native
+    var enableMonthSwitch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable/disable year switch
       *
       * @default true
       */
-    var enableYearSwitch: js.UndefOr[Boolean] = js.native
+    var enableYearSwitch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pre-selected end date
       */
-    var endDate: js.UndefOr[Date] = js.native
+    var endDate: js.UndefOr[Date] = js.undefined
     
     /**
       * Pre-selected end time
       */
-    var endTime: js.UndefOr[Date] = js.native
+    var endTime: js.UndefOr[Date] = js.undefined
     
     /**
       * Header block position
       *
       * @default 'top'
       */
-    var headerPosition: js.UndefOr[top | bottom] = js.native
+    var headerPosition: js.UndefOr[top | bottom] = js.undefined
     
-    var icons: js.UndefOr[typings.bulmaCalendar.anon.Date] = js.native
+    var icons: js.UndefOr[typings.bulmaCalendar.anon.Date] = js.undefined
     
     /**
       * Range capability (start and end date/time selection
       *
       * @default false
       */
-    var isRange: js.UndefOr[Boolean] = js.native
+    var isRange: js.UndefOr[Boolean] = js.undefined
     
     /**
       * From label
       */
-    var labelFrom: js.UndefOr[String] = js.native
+    var labelFrom: js.UndefOr[String] = js.undefined
     
     /**
       * To label
       */
-    var labelTo: js.UndefOr[String] = js.native
+    var labelTo: js.UndefOr[String] = js.undefined
     
     /**
       * Display lang (from language supported by date-fns)
       *
       * @default navigator.language.substring(0, 2) || "en"
       */
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
     /**
       * Maximum date allowed
       */
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
     /**
       * Minimum date allowed
       */
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
     /**
       * Steps for minutes selector
       *
       * @default 5
       */
-    var minuteSteps: js.UndefOr[Double] = js.native
+    var minuteSteps: js.UndefOr[Double] = js.undefined
     
     /**
       * Now button label
       *
       * @default 'Now'
       */
-    var nowLabel: js.UndefOr[String] = js.native
+    var nowLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Callback to trigger once picker initiated
       */
-    var onReady: js.UndefOr[js.Function0[Unit]] = js.native
+    var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * @default 'auto'
       */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
     /**
       * Show/Hide buttons
       *
       * @default true
       */
-    var showButtons: js.UndefOr[Boolean] = js.native
+    var showButtons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show/Hide Clear Button
       *
       * @default true
       */
-    var showClearButton: js.UndefOr[Boolean] = js.native
+    var showClearButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show/Hide footer block
       *
       * @default true
       */
-    var showFooter: js.UndefOr[Boolean] = js.native
+    var showFooter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show/Hide header block (with current selection)
       *
       * @default true
       */
-    var showHeader: js.UndefOr[Boolean] = js.native
+    var showHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show/Hide Today Button
       *
       * @default true
       */
-    var showTodayButton: js.UndefOr[Boolean] = js.native
+    var showTodayButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pre-selected start date
       */
-    var startDate: js.UndefOr[Date] = js.native
+    var startDate: js.UndefOr[Date] = js.undefined
     
     /**
       * Pre-selected start time
       */
-    var startTime: js.UndefOr[Date] = js.native
+    var startTime: js.UndefOr[Date] = js.undefined
     
     /**
       * Time format pattern
       *
       * @default 'HH:mm'
       */
-    var timeFormat: js.UndefOr[String] = js.native
+    var timeFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Today button label
       *
       * @default 'Today'
       */
-    var todayLabel: js.UndefOr[String] = js.native
+    var todayLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Automatically open datepicker when click into input element
       *
       * @default true
       */
-    var toggleOnInputClick: js.UndefOr[Boolean] = js.native
+    var toggleOnInputClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Component type
       *
       * @default 'datetime'
       */
-    var `type`: js.UndefOr[date | time | datetime] = js.native
+    var `type`: js.UndefOr[date | time | datetime] = js.undefined
     
     /**
       * Validate button label
       *
       * @default 'Validate'
       */
-    var validateLabel: js.UndefOr[String] = js.native
+    var validateLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Default weekstart day number
       *
       * @default 0 // sunday
       */
-    var weekStart: js.UndefOr[Double] = js.native
+    var weekStart: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -407,7 +402,7 @@ object mod {
       def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
       @scala.inline
-      def setDisabledDates(value: js.Array[_]): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
+      def setDisabledDates(value: js.Array[js.Any]): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
@@ -416,7 +411,7 @@ object mod {
       def setDisabledDatesVarargs(value: js.Any*): Self = StObject.set(x, "disabledDates", js.Array(value :_*))
       
       @scala.inline
-      def setDisabledWeekDays(value: String | js.Array[_]): Self = StObject.set(x, "disabledWeekDays", value.asInstanceOf[js.Any])
+      def setDisabledWeekDays(value: String | js.Array[js.Any]): Self = StObject.set(x, "disabledWeekDays", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDisabledWeekDaysUndefined: Self = StObject.set(x, "disabledWeekDays", js.undefined)

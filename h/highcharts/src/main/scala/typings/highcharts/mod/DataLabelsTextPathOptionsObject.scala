@@ -2,22 +2,20 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataLabelsTextPathOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) Presentation attributes for the text path.
     */
-  var attributes: js.UndefOr[SVGAttributes] = js.native
+  var attributes: js.UndefOr[SVGAttributes] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Enable or disable `textPath` option for
     * link's or marker's data labels.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object DataLabelsTextPathOptionsObject {
   

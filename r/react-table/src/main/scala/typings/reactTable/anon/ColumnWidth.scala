@@ -3,21 +3,19 @@ package typings.reactTable.anon
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnWidth extends StObject {
   
-  var columnWidth: Double = js.native
+  var columnWidth: Double
   
-  var columnWidths: js.Any = js.native
+  var columnWidths: js.Any
   
-  var headerIdWidths: Record[String, Double] = js.native
+  var headerIdWidths: Record[String, Double]
   
-  var isResizingColumn: js.UndefOr[String] = js.native
+  var isResizingColumn: js.UndefOr[String] = js.undefined
   
-  var startX: js.UndefOr[Double] = js.native
+  var startX: js.UndefOr[Double] = js.undefined
 }
 object ColumnWidth {
   

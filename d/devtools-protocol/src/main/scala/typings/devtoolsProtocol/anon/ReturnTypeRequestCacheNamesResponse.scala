@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CacheStorage.RequestCacheNamesReque
 import typings.devtoolsProtocol.mod.Protocol.CacheStorage.RequestCacheNamesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeRequestCacheNamesResponse extends StObject {
   
-  var paramsType: js.Array[RequestCacheNamesRequest] = js.native
+  var paramsType: js.Array[RequestCacheNamesRequest]
   
-  var returnType: RequestCacheNamesResponse = js.native
+  var returnType: RequestCacheNamesResponse
 }
 object ReturnTypeRequestCacheNamesResponse {
   

@@ -2,14 +2,15 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @hidden
   */
 @js.native
-trait PhoneAuthProviderInstance extends AuthProvider {
+trait PhoneAuthProviderInstance
+  extends StObject
+     with AuthProvider {
   
   def verifyPhoneNumber(phoneInfoOptions: String, applicationVerifier: ApplicationVerifier): js.Promise[String] = js.native
   /**

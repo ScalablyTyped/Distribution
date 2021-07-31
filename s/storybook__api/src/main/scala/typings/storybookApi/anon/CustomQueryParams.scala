@@ -17,57 +17,55 @@ import typings.storybookApi.versionsMod.Versions
 import typings.storybookTheming.typesMod.ThemeVars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomQueryParams extends StObject {
   
-  var customQueryParams: QueryParams = js.native
+  var customQueryParams: QueryParams
   
-  var dismissedVersionNotification: String = js.native
+  var dismissedVersionNotification: String
   
-  var globals: Args = js.native
+  var globals: Args
   
-  var lastVersionCheck: Double = js.native
+  var lastVersionCheck: Double
   
-  var layout: Layout = js.native
+  var layout: Layout
   
-  var location: WindowLocation[js.Object] = js.native
+  var location: WindowLocation[js.Object]
   
-  var navigate: js.UndefOr[NavigateFn] = js.native
+  var navigate: js.UndefOr[NavigateFn] = js.undefined
   
-  var notifications: js.Array[Notification] = js.native
+  var notifications: js.Array[Notification]
   
-  var path: String = js.native
+  var path: String
   
-  var refId: String = js.native
+  var refId: String
   
-  var refs: Record[String, ComposedRef] = js.native
+  var refs: Record[String, ComposedRef]
   
-  var releaseNotesViewed: js.Array[String] = js.native
+  var releaseNotesViewed: js.Array[String]
   
-  var selectedPanel: String = js.native
+  var selectedPanel: String
   
-  var settings: Settings = js.native
+  var settings: Settings
   
-  var shortcuts: Shortcuts = js.native
+  var shortcuts: Shortcuts
   
-  var storiesConfigured: Boolean = js.native
+  var storiesConfigured: Boolean
   
-  var storiesFailed: js.UndefOr[typings.std.Error] = js.native
+  var storiesFailed: js.UndefOr[typings.std.Error] = js.undefined
   
-  var storiesHash: StoriesHash = js.native
+  var storiesHash: StoriesHash
   
-  var storyId: String = js.native
+  var storyId: String
   
-  var theme: ThemeVars = js.native
+  var theme: ThemeVars
   
-  var ui: UI = js.native
+  var ui: UI
   
-  var versions: Versions with UnknownEntries = js.native
+  var versions: Versions & UnknownEntries
   
-  var viewMode: String = js.native
+  var viewMode: String
 }
 object CustomQueryParams {
   
@@ -92,7 +90,7 @@ object CustomQueryParams {
     storyId: String,
     theme: ThemeVars,
     ui: UI,
-    versions: Versions with UnknownEntries,
+    versions: Versions & UnknownEntries,
     viewMode: String
   ): CustomQueryParams = {
     val __obj = js.Dynamic.literal(customQueryParams = customQueryParams.asInstanceOf[js.Any], dismissedVersionNotification = dismissedVersionNotification.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], lastVersionCheck = lastVersionCheck.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], refId = refId.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any], releaseNotesViewed = releaseNotesViewed.asInstanceOf[js.Any], selectedPanel = selectedPanel.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], shortcuts = shortcuts.asInstanceOf[js.Any], storiesConfigured = storiesConfigured.asInstanceOf[js.Any], storiesHash = storiesHash.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
@@ -178,7 +176,7 @@ object CustomQueryParams {
     def setUi(value: UI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersions(value: Versions with UnknownEntries): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    def setVersions(value: Versions & UnknownEntries): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setViewMode(value: String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])

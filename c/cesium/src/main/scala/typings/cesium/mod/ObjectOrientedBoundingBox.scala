@@ -2,18 +2,17 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ObjectOrientedBoundingBox")
 @js.native
 class ObjectOrientedBoundingBox () extends StObject {
   def this(rotation: Matrix3) = this()
-  def this(rotation: js.UndefOr[scala.Nothing], translation: Cartesian3) = this()
+  def this(rotation: Unit, translation: Cartesian3) = this()
   def this(rotation: Matrix3, translation: Cartesian3) = this()
-  def this(rotation: js.UndefOr[scala.Nothing], translation: js.UndefOr[scala.Nothing], scale: Cartesian3) = this()
-  def this(rotation: js.UndefOr[scala.Nothing], translation: Cartesian3, scale: Cartesian3) = this()
-  def this(rotation: Matrix3, translation: js.UndefOr[scala.Nothing], scale: Cartesian3) = this()
+  def this(rotation: Unit, translation: Unit, scale: Cartesian3) = this()
+  def this(rotation: Unit, translation: Cartesian3, scale: Cartesian3) = this()
+  def this(rotation: Matrix3, translation: Unit, scale: Cartesian3) = this()
   def this(rotation: Matrix3, translation: Cartesian3, scale: Cartesian3) = this()
   
   def clone(result: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = js.native
@@ -29,37 +28,33 @@ class ObjectOrientedBoundingBox () extends StObject {
 }
 object ObjectOrientedBoundingBox {
   
-  /* static member */
-  @JSImport("cesium", "ObjectOrientedBoundingBox.clone")
+  @JSImport("cesium", "ObjectOrientedBoundingBox")
   @js.native
-  def clone_(box: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = js.native
-  @JSImport("cesium", "ObjectOrientedBoundingBox.clone")
-  @js.native
-  def clone_(box: ObjectOrientedBoundingBox, result: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "ObjectOrientedBoundingBox.equals")
-  @js.native
-  def equals_(left: ObjectOrientedBoundingBox, right: ObjectOrientedBoundingBox): Boolean = js.native
+  @scala.inline
+  def clone_(box: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(box.asInstanceOf[js.Any]).asInstanceOf[ObjectOrientedBoundingBox]
+  @scala.inline
+  def clone_(box: ObjectOrientedBoundingBox, result: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(box.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[ObjectOrientedBoundingBox]
   
   /* static member */
-  @JSImport("cesium", "ObjectOrientedBoundingBox.fromBoundingRectangle")
-  @js.native
-  def fromBoundingRectangle(boundingRectangle: BoundingRectangle): ObjectOrientedBoundingBox = js.native
-  @JSImport("cesium", "ObjectOrientedBoundingBox.fromBoundingRectangle")
-  @js.native
-  def fromBoundingRectangle(boundingRectangle: BoundingRectangle, rotation: Double): ObjectOrientedBoundingBox = js.native
+  @scala.inline
+  def equals_(left: ObjectOrientedBoundingBox, right: ObjectOrientedBoundingBox): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("cesium", "ObjectOrientedBoundingBox.fromPoints")
-  @js.native
-  def fromPoints(positions: js.Array[Cartesian3]): ObjectOrientedBoundingBox = js.native
-  @JSImport("cesium", "ObjectOrientedBoundingBox.fromPoints")
-  @js.native
-  def fromPoints(positions: js.Array[Cartesian3], result: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = js.native
+  @scala.inline
+  def fromBoundingRectangle(boundingRectangle: BoundingRectangle): ObjectOrientedBoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundingRectangle")(boundingRectangle.asInstanceOf[js.Any]).asInstanceOf[ObjectOrientedBoundingBox]
+  @scala.inline
+  def fromBoundingRectangle(boundingRectangle: BoundingRectangle, rotation: Double): ObjectOrientedBoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundingRectangle")(boundingRectangle.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[ObjectOrientedBoundingBox]
   
   /* static member */
-  @JSImport("cesium", "ObjectOrientedBoundingBox.intersect")
-  @js.native
-  def intersect(left: ObjectOrientedBoundingBox, right: ObjectOrientedBoundingBox): Boolean = js.native
+  @scala.inline
+  def fromPoints(positions: js.Array[Cartesian3]): ObjectOrientedBoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any]).asInstanceOf[ObjectOrientedBoundingBox]
+  @scala.inline
+  def fromPoints(positions: js.Array[Cartesian3], result: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[ObjectOrientedBoundingBox]
+  
+  /* static member */
+  @scala.inline
+  def intersect(left: ObjectOrientedBoundingBox, right: ObjectOrientedBoundingBox): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

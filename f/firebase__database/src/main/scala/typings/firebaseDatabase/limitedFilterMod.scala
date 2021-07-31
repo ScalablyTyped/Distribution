@@ -4,14 +4,15 @@ import typings.firebaseDatabase.nodeFilterMod.NodeFilter
 import typings.firebaseDatabase.queryParamsMod.QueryParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object limitedFilterMod {
   
   @JSImport("@firebase/database/dist/src/core/view/filter/LimitedFilter", "LimitedFilter")
   @js.native
-  class LimitedFilter protected () extends NodeFilter {
+  class LimitedFilter protected ()
+    extends StObject
+       with NodeFilter {
     /**
       * @param {!QueryParams} params
       */

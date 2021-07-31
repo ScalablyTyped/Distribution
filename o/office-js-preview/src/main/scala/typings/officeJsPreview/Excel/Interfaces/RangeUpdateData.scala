@@ -3,11 +3,9 @@ package typings.officeJsPreview.Excel.Interfaces
 import typings.officeJsPreview.Excel.RangeHyperlink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Range object, for use in `range.set({ ... })`. */
-@js.native
 trait RangeUpdateData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var columnHidden: js.UndefOr[Boolean] = js.native
+  var columnHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var dataValidation: js.UndefOr[DataValidationUpdateData] = js.native
+  var dataValidation: js.UndefOr[DataValidationUpdateData] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[RangeFormatUpdateData] = js.native
+  var format: js.UndefOr[RangeFormatUpdateData] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var formulas: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulas: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var formulasLocal: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulasLocal: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -56,7 +54,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var formulasR1C1: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulasR1C1: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -64,7 +62,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var hyperlink: js.UndefOr[RangeHyperlink] = js.native
+  var hyperlink: js.UndefOr[RangeHyperlink] = js.undefined
   
   /**
     *
@@ -72,7 +70,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var numberFormat: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var numberFormat: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var numberFormatLocal: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var numberFormatLocal: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var rowHidden: js.UndefOr[Boolean] = js.native
+  var rowHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -100,7 +98,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -108,7 +106,7 @@ trait RangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object RangeUpdateData {
   
@@ -140,10 +138,10 @@ object RangeUpdateData {
     def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormulas(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
+    def setFormulas(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulasLocal(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
+    def setFormulasLocal(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
@@ -152,7 +150,7 @@ object RangeUpdateData {
     def setFormulasLocalVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasLocal", js.Array(value :_*))
     
     @scala.inline
-    def setFormulasR1C1(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
+    def setFormulasR1C1(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
@@ -173,10 +171,10 @@ object RangeUpdateData {
     def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
     @scala.inline
-    def setNumberFormat(value: js.Array[js.Array[_]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormatLocal(value: js.Array[js.Array[_]]): Self = StObject.set(x, "numberFormatLocal", value.asInstanceOf[js.Any])
+    def setNumberFormatLocal(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "numberFormatLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNumberFormatLocalUndefined: Self = StObject.set(x, "numberFormatLocal", js.undefined)
@@ -203,7 +201,7 @@ object RangeUpdateData {
     def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

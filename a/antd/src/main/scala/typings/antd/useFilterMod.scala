@@ -11,39 +11,43 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFilterMod {
   
-  @JSImport("antd/lib/table/hooks/useFilter", JSImport.Default)
+  @JSImport("antd/lib/table/hooks/useFilter", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default[RecordType](
-    hasPrefixClsDropdownPrefixClsMergedColumnsOnFilterChangeGetPopupContainerLocale: FilterConfig[RecordType]
+    hasPrefixClsDropdownPrefixClsMergedColumnsOnFilterChangeGetPopupContainerTableLocale: FilterConfig[RecordType]
   ): js.Tuple3[
     TransformColumns[RecordType], 
     js.Array[FilterState[RecordType]], 
     js.Function0[Record[String, js.Array[Key] | Null]]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsDropdownPrefixClsMergedColumnsOnFilterChangeGetPopupContainerTableLocale.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
+    TransformColumns[RecordType], 
+    js.Array[FilterState[RecordType]], 
+    js.Function0[Record[String, js.Array[Key] | Null]]
+  ]]
   
-  @JSImport("antd/lib/table/hooks/useFilter", "getFilterData")
-  @js.native
-  def getFilterData[RecordType](data: js.Array[RecordType], filterStates: js.Array[FilterState[RecordType]]): js.Array[RecordType] = js.native
+  @scala.inline
+  def getFilterData[RecordType](data: js.Array[RecordType], filterStates: js.Array[FilterState[RecordType]]): js.Array[RecordType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilterData")(data.asInstanceOf[js.Any], filterStates.asInstanceOf[js.Any])).asInstanceOf[js.Array[RecordType]]
   
-  @js.native
   trait FilterConfig[RecordType] extends StObject {
     
-    var dropdownPrefixCls: String = js.native
+    var dropdownPrefixCls: String
     
-    var getPopupContainer: js.UndefOr[GetPopupContainer] = js.native
+    var getPopupContainer: js.UndefOr[GetPopupContainer] = js.undefined
     
-    var locale: TableLocale = js.native
+    var locale: TableLocale
     
-    var mergedColumns: ColumnsType[RecordType] = js.native
+    var mergedColumns: ColumnsType[RecordType]
     
-    def onFilterChange(filters: Record[String, js.Array[Key] | Null], filterStates: js.Array[FilterState[RecordType]]): Unit = js.native
+    def onFilterChange(filters: Record[String, js.Array[Key] | Null], filterStates: js.Array[FilterState[RecordType]]): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
   }
   object FilterConfig {
     
@@ -60,7 +64,7 @@ object useFilterMod {
     }
     
     @scala.inline
-    implicit class FilterConfigMutableBuilder[Self <: FilterConfig[_], RecordType] (val x: Self with FilterConfig[RecordType]) extends AnyVal {
+    implicit class FilterConfigMutableBuilder[Self <: FilterConfig[?], RecordType] (val x: Self & FilterConfig[RecordType]) extends AnyVal {
       
       @scala.inline
       def setDropdownPrefixCls(value: String): Self = StObject.set(x, "dropdownPrefixCls", value.asInstanceOf[js.Any])
@@ -88,16 +92,15 @@ object useFilterMod {
     }
   }
   
-  @js.native
   trait FilterState[RecordType] extends StObject {
     
-    var column: ColumnType[RecordType] = js.native
+    var column: ColumnType[RecordType]
     
-    var filteredKeys: js.UndefOr[js.Array[Key] | Null] = js.native
+    var filteredKeys: js.UndefOr[js.Array[Key] | Null] = js.undefined
     
-    var forceFiltered: js.UndefOr[Boolean] = js.native
+    var forceFiltered: js.UndefOr[Boolean] = js.undefined
     
-    var key: Key = js.native
+    var key: Key
   }
   object FilterState {
     
@@ -108,7 +111,7 @@ object useFilterMod {
     }
     
     @scala.inline
-    implicit class FilterStateMutableBuilder[Self <: FilterState[_], RecordType] (val x: Self with FilterState[RecordType]) extends AnyVal {
+    implicit class FilterStateMutableBuilder[Self <: FilterState[?], RecordType] (val x: Self & FilterState[RecordType]) extends AnyVal {
       
       @scala.inline
       def setColumn(value: ColumnType[RecordType]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])

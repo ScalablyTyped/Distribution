@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.cryptoMod.Hash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,7 +18,9 @@ object mod extends Shortcut {
   val ^ : RIPEMD160Static = js.native
   
   @js.native
-  trait RIPEMD160Static extends Instantiable0[Hash]
+  trait RIPEMD160Static
+    extends StObject
+       with Instantiable0[Hash]
   
   type _To = RIPEMD160Static
   

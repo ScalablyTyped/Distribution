@@ -2,26 +2,24 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalGitRepositoryKey extends StObject {
   
   /**
     * Team Project Collection ID of the collection for the repository.
     */
-  var collectionId: String = js.native
+  var collectionId: String
   
   /**
     * Team Project ID of the project for the repository.
     */
-  var projectId: String = js.native
+  var projectId: String
   
   /**
     * ID of the repository.
     */
-  var repositoryId: String = js.native
+  var repositoryId: String
 }
 object GlobalGitRepositoryKey {
   

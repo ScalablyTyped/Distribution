@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** API usage information for the request. */
-@js.native
 trait AnalysisResultsUsage extends StObject {
   
   /** Number of features used in the API call. */
-  var features: js.UndefOr[Double] = js.native
+  var features: js.UndefOr[Double] = js.undefined
   
   /** Number of text characters processed. */
-  var text_characters: js.UndefOr[Double] = js.native
+  var text_characters: js.UndefOr[Double] = js.undefined
   
   /** Number of 10,000-character units processed. */
-  var text_units: js.UndefOr[Double] = js.native
+  var text_units: js.UndefOr[Double] = js.undefined
 }
 object AnalysisResultsUsage {
   

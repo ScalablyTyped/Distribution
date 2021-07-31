@@ -10,9 +10,9 @@ Simple and complete React DOM testing utilities that encourage good testing prac
 | ------------------ | :-------------: |
 | Full name          | @testing-library/react |
 | Keywords           | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
-| # releases         | 65 |
-| # dependents       | 2226 |
-| # downloads        | 84797421 |
+| # releases         | 68 |
+| # dependents       | 2766 |
+| # downloads        | 105297734 |
 | # stars            | 0 |
 
 ## Links

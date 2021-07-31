@@ -2,88 +2,88 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxButton control.
   */
-@js.native
-trait ASPxClientButton extends ASPxClientControl {
+trait ASPxClientButton
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs on the client side when the button's checked state is changed.
     */
-  var CheckedChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientButton]] = js.native
+  var CheckedChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientButton]]
   
   /**
     * Occurs on the client side after a button is clicked.
     */
-  var Click: ASPxClientEvent[ASPxClientButtonClickEventHandler[ASPxClientButton]] = js.native
+  var Click: ASPxClientEvent[ASPxClientButtonClickEventHandler[ASPxClientButton]]
   
   /**
     * Simulates a mouse click action on the button control.
     */
-  def DoClick(): Unit = js.native
+  def DoClick(): Unit
   
   /**
     * Sets input focus to the button.
     */
-  def Focus(): Unit = js.native
+  def Focus(): Unit
   
   /**
     * Returns a value indicating whether the button is checked.
     */
-  def GetChecked(): Boolean = js.native
+  def GetChecked(): Boolean
   
   /**
     * Returns a value indicating whether the button is enabled.
     */
-  def GetEnabled(): Boolean = js.native
+  def GetEnabled(): Boolean
   
   /**
     * Returns the URL pointing to the image displayed within the button.
     */
-  def GetImageUrl(): String = js.native
+  def GetImageUrl(): String
   
   /**
     * Returns the text displayed within the button.
     */
-  def GetText(): String = js.native
+  def GetText(): String
   
   /**
     * Fires on the client side when the button receives input focus.
     */
-  var GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]] = js.native
+  var GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]]
   
   /**
     * Fires on the client side when the button loses input focus.
     */
-  var LostFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]] = js.native
+  var LostFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]]
   
   /**
     * Sets a value that specifies the button's checked status.
     * @param value true if the button is checked; otherwise, false.
     */
-  def SetChecked(value: Boolean): Unit = js.native
+  def SetChecked(value: Boolean): Unit
   
   /**
     * Sets a value specifying whether the button is enabled.
     * @param value true to enable the button; false to disable it.
     */
-  def SetEnabled(value: Boolean): Unit = js.native
+  def SetEnabled(value: Boolean): Unit
   
   /**
     * Sets the URL pointing to the image displayed within the button.
     * @param value A string value that is the URL to the image displayed within the button.
     */
-  def SetImageUrl(value: String): Unit = js.native
+  def SetImageUrl(value: String): Unit
   
   /**
     * Sets the text to be displayed within the button.
     * @param value A string value specifying the text to be displayed within the button.
     */
-  def SetText(value: String): Unit = js.native
+  def SetText(value: String): Unit
 }
 object ASPxClientButton {
   

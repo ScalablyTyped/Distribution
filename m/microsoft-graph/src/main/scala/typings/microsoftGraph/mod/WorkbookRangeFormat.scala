@@ -2,47 +2,47 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookRangeFormat extends Entity {
+trait WorkbookRangeFormat
+  extends StObject
+     with Entity {
   
   // Collection of border objects that apply to the overall range selected Read-only.
-  var borders: js.UndefOr[NullableOption[js.Array[WorkbookRangeBorder]]] = js.native
+  var borders: js.UndefOr[NullableOption[js.Array[WorkbookRangeBorder]]] = js.undefined
   
   // Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
-  var columnWidth: js.UndefOr[NullableOption[Double]] = js.native
+  var columnWidth: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Returns the fill object defined on the overall range. Read-only.
-  var fill: js.UndefOr[NullableOption[WorkbookRangeFill]] = js.native
+  var fill: js.UndefOr[NullableOption[WorkbookRangeFill]] = js.undefined
   
   // Returns the font object defined on the overall range selected Read-only.
-  var font: js.UndefOr[NullableOption[WorkbookRangeFont]] = js.native
+  var font: js.UndefOr[NullableOption[WorkbookRangeFont]] = js.undefined
   
   /**
     * Represents the horizontal alignment for the specified object. The possible values are: General, Left, Center, Right,
     * Fill, Justify, CenterAcrossSelection, Distributed.
     */
-  var horizontalAlignment: js.UndefOr[NullableOption[String]] = js.native
+  var horizontalAlignment: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Returns the format protection object for a range. Read-only.
-  var protection: js.UndefOr[NullableOption[WorkbookFormatProtection]] = js.native
+  var protection: js.UndefOr[NullableOption[WorkbookFormatProtection]] = js.undefined
   
   // Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.
-  var rowHeight: js.UndefOr[NullableOption[Double]] = js.native
+  var rowHeight: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Represents the vertical alignment for the specified object. The possible values are: Top, Center, Bottom, Justify,
     * Distributed.
     */
-  var verticalAlignment: js.UndefOr[NullableOption[String]] = js.native
+  var verticalAlignment: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap
     * setting
     */
-  var wrapText: js.UndefOr[NullableOption[Boolean]] = js.native
+  var wrapText: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object WorkbookRangeFormat {
   

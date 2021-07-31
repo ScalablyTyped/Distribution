@@ -4,10 +4,13 @@ import typings.hermesProfileTransformer.eventInterfacesMod.DurationEvent
 import typings.hermesProfileTransformer.sourceMapMod.SourceMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applySourceMapsToEventsMod {
+  
+  @JSImport("hermes-profile-transformer/dist/profiler/applySourceMapsToEvents", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Enhances the function line, column and params information and event categories
@@ -21,10 +24,8 @@ object applySourceMapsToEventsMod {
     * @throws If `args` for events are not populated
     * @returns {DurationEvent[]}
     */
-  @JSImport("hermes-profile-transformer/dist/profiler/applySourceMapsToEvents", JSImport.Default)
-  @js.native
-  def default(sourceMap: SourceMap, chromeEvents: js.Array[DurationEvent]): js.Promise[js.Array[DurationEvent]] = js.native
-  @JSImport("hermes-profile-transformer/dist/profiler/applySourceMapsToEvents", JSImport.Default)
-  @js.native
-  def default(sourceMap: SourceMap, chromeEvents: js.Array[DurationEvent], indexBundleFileName: String): js.Promise[js.Array[DurationEvent]] = js.native
+  @scala.inline
+  def default(sourceMap: SourceMap, chromeEvents: js.Array[DurationEvent]): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sourceMap.asInstanceOf[js.Any], chromeEvents.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
+  @scala.inline
+  def default(sourceMap: SourceMap, chromeEvents: js.Array[DurationEvent], indexBundleFileName: String): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sourceMap.asInstanceOf[js.Any], chromeEvents.asInstanceOf[js.Any], indexBundleFileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
 }

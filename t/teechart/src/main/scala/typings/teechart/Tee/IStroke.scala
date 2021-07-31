@@ -2,25 +2,23 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStroke extends StObject {
   
-  var cap: String = js.native
+  var cap: String
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var dash: js.Array[Double] = js.native
+  var dash: js.Array[Double]
   
-  var fill: String = js.native
+  var fill: String
   
-  var gradient: IGradient = js.native
+  var gradient: IGradient
   
-  var join: String = js.native
+  var join: String
   
-  var size: Double = js.native
+  var size: Double
 }
 object IStroke {
   

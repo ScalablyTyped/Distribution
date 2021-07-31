@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kinesisanalyticsv2Mod {
@@ -29,6 +28,10 @@ object kinesisanalyticsv2Mod {
   /* static members */
   object Application {
     
+    @JSImport("@pulumi/aws/kinesisanalyticsv2", "Application")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Application resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -38,25 +41,20 @@ object kinesisanalyticsv2Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/kinesisanalyticsv2", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = js.native
-    @JSImport("@pulumi/aws/kinesisanalyticsv2", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = js.native
-    @JSImport("@pulumi/aws/kinesisanalyticsv2", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApplicationState): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = js.native
-    @JSImport("@pulumi/aws/kinesisanalyticsv2", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApplicationState): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application]
     
     /**
       * Returns true if the given object is an instance of Application.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/kinesisanalyticsv2", "Application.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesisanalyticsv2/application.Application */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesisanalyticsv2/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesisanalyticsv2/application.Application */ Boolean]
   }
 }

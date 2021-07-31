@@ -2,18 +2,17 @@ package typings.backbone.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelSaveOptions
-  extends Silenceable
+  extends StObject
+     with Silenceable
      with Waitable
      with Validable
      with Parseable
      with PersistenceOptions {
   
-  var patch: js.UndefOr[Boolean] = js.native
+  var patch: js.UndefOr[Boolean] = js.undefined
 }
 object ModelSaveOptions {
   

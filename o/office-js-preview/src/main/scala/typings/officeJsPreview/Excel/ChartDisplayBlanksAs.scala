@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait ChartDisplayBlanksAs extends StObject
 object ChartDisplayBlanksAs extends StObject {
   
   @js.native
-  sealed trait interplotted extends ChartDisplayBlanksAs
+  sealed trait interplotted
+    extends StObject
+       with ChartDisplayBlanksAs
   
   @js.native
-  sealed trait notPlotted extends ChartDisplayBlanksAs
+  sealed trait notPlotted
+    extends StObject
+       with ChartDisplayBlanksAs
   
   @js.native
-  sealed trait zero extends ChartDisplayBlanksAs
+  sealed trait zero
+    extends StObject
+       with ChartDisplayBlanksAs
 }

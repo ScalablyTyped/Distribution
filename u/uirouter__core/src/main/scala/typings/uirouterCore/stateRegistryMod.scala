@@ -12,7 +12,6 @@ import typings.uirouterCore.uirouterCoreStrings.deregistered
 import typings.uirouterCore.uirouterCoreStrings.registered
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateRegistryMod {

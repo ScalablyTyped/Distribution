@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusTrapZoneFocusTrapZoneMod {
@@ -74,6 +73,13 @@ object focusTrapZoneFocusTrapZoneMod {
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MFocusTrapZone(): Unit = js.native
+    
+    /**
+      * Sets focus to a descendant in the Trap Zone.
+      * See firstFocusableSelector and focusPreviouslyFocusedInnerElement for details.
+      */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
   }
   /* static members */
   object FocusTrapZone {

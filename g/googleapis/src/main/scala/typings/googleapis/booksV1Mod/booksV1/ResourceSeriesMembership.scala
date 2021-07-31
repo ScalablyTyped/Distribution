@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Series$Membership")
@@ -32,7 +31,7 @@ class ResourceSeriesMembership protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSeriesmembership] = js.native
   def get(callback: BodyResponseCallback[SchemaSeriesmembership]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSeriesmembership] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSeriesmembership] = js.native
   def get(params: ParamsResourceSeriesMembershipGet): GaxiosPromise[SchemaSeriesmembership] = js.native
   def get(params: ParamsResourceSeriesMembershipGet, callback: BodyResponseCallback[SchemaSeriesmembership]): Unit = js.native
   def get(

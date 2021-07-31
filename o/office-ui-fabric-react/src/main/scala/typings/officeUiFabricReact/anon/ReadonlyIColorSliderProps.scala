@@ -17,24 +17,22 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorSlider/ColorSlider.types.IColorSliderProps> */
-@js.native
 trait ReadonlyIColorSliderProps extends StObject {
   
-  val ariaLabel: js.UndefOr[String] = js.native
+  val ariaLabel: js.UndefOr[String] = js.undefined
   
-  val className: js.UndefOr[String] = js.native
+  val className: js.UndefOr[String] = js.undefined
   
-  val componentRef: js.UndefOr[IRefObject[IColorSlider]] = js.native
+  val componentRef: js.UndefOr[IRefObject[IColorSlider]] = js.undefined
   
-  val isAlpha: js.UndefOr[Boolean] = js.native
+  val isAlpha: js.UndefOr[Boolean] = js.undefined
   
-  val maxValue: js.UndefOr[Double] = js.native
+  val maxValue: js.UndefOr[Double] = js.undefined
   
-  val minValue: js.UndefOr[Double] = js.native
+  val minValue: js.UndefOr[Double] = js.undefined
   
   val onChange: js.UndefOr[
     js.Function2[
@@ -42,21 +40,21 @@ trait ReadonlyIColorSliderProps extends StObject {
       /* newValue */ js.UndefOr[Double], 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  val overlayColor: js.UndefOr[String] = js.native
+  val overlayColor: js.UndefOr[String] = js.undefined
   
-  val overlayStyle: js.UndefOr[CSSProperties] = js.native
+  val overlayStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  val styles: js.UndefOr[IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles]] = js.native
+  val styles: js.UndefOr[IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles]] = js.undefined
   
-  val theme: js.UndefOr[ITheme] = js.native
+  val theme: js.UndefOr[ITheme] = js.undefined
   
-  val thumbColor: js.UndefOr[String] = js.native
+  val thumbColor: js.UndefOr[String] = js.undefined
   
-  val `type`: js.UndefOr[hue | alpha | transparency] = js.native
+  val `type`: js.UndefOr[hue | alpha | transparency] = js.undefined
   
-  val value: js.UndefOr[Double] = js.native
+  val value: js.UndefOr[Double] = js.undefined
 }
 object ReadonlyIColorSliderProps {
   

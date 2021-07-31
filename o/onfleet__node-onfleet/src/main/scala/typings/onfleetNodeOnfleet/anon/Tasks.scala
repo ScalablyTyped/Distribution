@@ -2,13 +2,11 @@ package typings.onfleetNodeOnfleet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tasks extends StObject {
   
-  var tasks: js.Array[String] = js.native
+  var tasks: js.Array[String]
 }
 object Tasks {
   

@@ -7,23 +7,21 @@ import typings.reactNativeCalendars.reactNativeCalendarsStrings.selected
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.today
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DayComponentProps extends StObject {
   
-  var date: DateObject = js.native
+  var date: DateObject
   
-  var marking: `false` | js.Array[Marking] = js.native
+  var marking: `false` | js.Array[Marking]
   
-  def onLongPress(date: DateObject): js.Any = js.native
+  def onLongPress(date: DateObject): js.Any
   
-  def onPress(date: DateObject): js.Any = js.native
+  def onPress(date: DateObject): js.Any
   
-  var state: _empty | selected | disabled | today = js.native
+  var state: _empty | selected | disabled | today
   
-  var theme: CalendarTheme = js.native
+  var theme: CalendarTheme
 }
 object DayComponentProps {
   

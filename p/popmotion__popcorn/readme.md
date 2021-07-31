@@ -10,9 +10,9 @@ Utility functions for animation and interactions.
 | ------------------ | :-------------: |
 | Full name          | @popmotion/popcorn |
 | Keywords           | animation, raf |
-| # releases         | 22 |
-| # dependents       | 17 |
-| # downloads        | 7761334 |
+| # releases         | 14 |
+| # dependents       | 15 |
+| # downloads        | 9315637 |
 | # stars            | 0 |
 
 ## Links

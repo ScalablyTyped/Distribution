@@ -3,7 +3,6 @@ package typings.sipJs
 import typings.sipJs.userAgentOptionsMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sipJsStrings {
@@ -19,7 +18,9 @@ object sipJsStrings {
   def `class`: `class` = "class".asInstanceOf[`class`]
   
   @js.native
-  sealed trait debug extends LogLevel
+  sealed trait debug
+    extends StObject
+       with LogLevel
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   
@@ -29,7 +30,9 @@ object sipJsStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -39,7 +42,9 @@ object sipJsStrings {
   def literal: literal = "literal".asInstanceOf[literal]
   
   @js.native
-  sealed trait log extends LogLevel
+  sealed trait log
+    extends StObject
+       with LogLevel
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   
@@ -49,7 +54,9 @@ object sipJsStrings {
   def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait warn
+    extends StObject
+       with LogLevel
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

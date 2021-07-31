@@ -5,17 +5,17 @@ import typings.activexLibreoffice.com_.sun.star.frame.XModel
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Internal interface to update the used css::frame::XModel
   * @since LibreOffice 5.1
   */
-@js.native
-trait XUpdateModel extends XInterface {
+trait XUpdateModel
+  extends StObject
+     with XInterface {
   
-  def updateModel(xModel: XModel): Unit = js.native
+  def updateModel(xModel: XModel): Unit
 }
 object XUpdateModel {
   

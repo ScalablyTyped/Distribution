@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormattedSearchTime extends StObject {
   
-  var formattedSearchTime: js.UndefOr[String] = js.native
+  var formattedSearchTime: js.UndefOr[String] = js.undefined
   
-  var formattedTotalResults: js.UndefOr[String] = js.native
+  var formattedTotalResults: js.UndefOr[String] = js.undefined
   
-  var searchTime: js.UndefOr[Double] = js.native
+  var searchTime: js.UndefOr[Double] = js.undefined
   
-  var totalResults: js.UndefOr[String] = js.native
+  var totalResults: js.UndefOr[String] = js.undefined
 }
 object FormattedSearchTime {
   

@@ -2,19 +2,17 @@ package typings.sanitizeHtml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Multiple extends StObject {
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object Multiple {
     

@@ -24,7 +24,6 @@ import typings.std.HTMLIFrameElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -106,7 +105,7 @@ trait win extends EventEmitter {
     * @param callback {function(dev_win?)} callback with the native window of the DevTools window.
     * - (optional) printers {any[]} An array of json objects for the printer information.
     */
-  def getPrinters(callback: js.Function1[/* printers */ js.UndefOr[js.Array[_]], Unit]): Unit = js.native
+  def getPrinters(callback: js.Function1[/* printers */ js.UndefOr[js.Array[js.Any]], Unit]): Unit = js.native
   
   /**
     * Get or set window's height.
@@ -187,7 +186,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `blur` event.
     */
   @JSName("on")
-  def on_blur(event: blur, listener: js.Function0[_]): this.type = js.native
+  def on_blur(event: blur, listener: js.Function0[js.Any]): this.type = js.native
   /**
     * The close event is a special event that will affect the result of the Window.close() function.
     *
@@ -196,7 +195,7 @@ trait win extends EventEmitter {
     * - (optional) byCommandQ {string} Whether it’s being closed by ⌘+Q.
     */
   @JSName("on")
-  def on_close(event: close, listener: js.Function1[/* byCommandQ */ js.UndefOr[String | js.Any], _]): this.type = js.native
+  def on_close(event: close, listener: js.Function1[/* byCommandQ */ js.UndefOr[String | js.Any], js.Any]): this.type = js.native
   /**
     * The closed event is emitted after corresponding window is closed.
     *
@@ -204,7 +203,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `closed` event.
     */
   @JSName("on")
-  def on_closed(event: closed, listener: js.Function0[_]): this.type = js.native
+  def on_closed(event: closed, listener: js.Function0[js.Any]): this.type = js.native
   /**
     * Emitted after Devtools is closed.
     *
@@ -212,7 +211,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `devtools-closed` event.
     */
   @JSName("on")
-  def on_devtoolsclosed(event: `devtools-closed`, listener: js.Function0[_]): this.type = js.native
+  def on_devtoolsclosed(event: `devtools-closed`, listener: js.Function0[js.Any]): this.type = js.native
   /**
     * Emitted when the document object in this window or a child iframe is unloaded, but before the onunload event is emitted.
     *
@@ -221,7 +220,7 @@ trait win extends EventEmitter {
     * - (optional) frame {HTMLIFrameElement|any} Is the iframe object, or null if the event is for the window..
     */
   @JSName("on")
-  def on_documentend(event: `document-end`, listener: js.Function1[/* frame */ HTMLIFrameElement | js.Any, _]): this.type = js.native
+  def on_documentend(event: `document-end`, listener: js.Function1[/* frame */ HTMLIFrameElement | js.Any, js.Any]): this.type = js.native
   /**
     * Emitted when the document object in this window or a child iframe is available, after all files are loaded, but before DOM is constructed or any script is run.
     *
@@ -230,7 +229,7 @@ trait win extends EventEmitter {
     * - (optional) frame {HTMLIFrameElement|any} Is the iframe object, or null if the event is for the window..
     */
   @JSName("on")
-  def on_documentstart(event: `document-start`, listener: js.Function1[/* frame */ HTMLIFrameElement | js.Any, _]): this.type = js.native
+  def on_documentstart(event: `document-start`, listener: js.Function1[/* frame */ HTMLIFrameElement | js.Any, js.Any]): this.type = js.native
   /**
     * Emitted when window enters fullscreen state.
     *
@@ -238,7 +237,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `enter-fullscreen` event.
     */
   @JSName("on")
-  def on_enterfullscreen(event: `enter-fullscreen`, listener: js.Function0[_]): this.type = js.native
+  def on_enterfullscreen(event: `enter-fullscreen`, listener: js.Function0[js.Any]): this.type = js.native
   /**
     * Emitted when window gets focus.
     *
@@ -246,7 +245,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `focus` event.
     */
   @JSName("on")
-  def on_focus(event: focus, listener: js.Function0[_]): this.type = js.native
+  def on_focus(event: focus, listener: js.Function0[js.Any]): this.type = js.native
   /**
     * Emitted when the window is fully loaded, this event behaves the same with window.onload, but doesn’t rely on the DOM.
     *
@@ -254,7 +253,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `loaded` event.
     */
   @JSName("on")
-  def on_loaded(event: loaded, listener: js.Function0[_]): this.type = js.native
+  def on_loaded(event: loaded, listener: js.Function0[js.Any]): this.type = js.native
   /**
     * Emitted when the window starts to reload, normally you cannot catch this event because usually it’s emitted before you actually setup the callback.
     *
@@ -262,7 +261,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `loading` event.
     */
   @JSName("on")
-  def on_loading(event: loading, listener: js.Function0[_]): this.type = js.native
+  def on_loading(event: loading, listener: js.Function0[js.Any]): this.type = js.native
   /**
     * Emitted when window is maximized.
     *
@@ -270,7 +269,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `maximize` event.
     */
   @JSName("on")
-  def on_maximize(event: maximize, listener: js.Function0[_]): this.type = js.native
+  def on_maximize(event: maximize, listener: js.Function0[js.Any]): this.type = js.native
   /**
     * Emitted when window is minimized.
     *
@@ -278,7 +277,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `minimize` event.
     */
   @JSName("on")
-  def on_minimize(event: minimize, listener: js.Function0[_]): this.type = js.native
+  def on_minimize(event: minimize, listener: js.Function0[js.Any]): this.type = js.native
   /**
     * Emitted after window is moved.
     *
@@ -288,7 +287,10 @@ trait win extends EventEmitter {
     * - (optional) y {Integer} The new location of the top corner of the window.
     */
   @JSName("on")
-  def on_move(event: move, listener: js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], _]): this.type = js.native
+  def on_move(
+    event: move,
+    listener: js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], js.Any]
+  ): this.type = js.native
   /**
     * Emitted when navigating to another page.
     *
@@ -305,7 +307,7 @@ trait win extends EventEmitter {
       /* frame */ js.UndefOr[HTMLIFrameElement | js.Any], 
       /* url */ js.UndefOr[String], 
       /* policy */ js.UndefOr[WinNavigationPolicy], 
-      _
+      js.Any
     ]
   ): this.type = js.native
   /**
@@ -324,7 +326,7 @@ trait win extends EventEmitter {
       /* frame */ js.UndefOr[HTMLIFrameElement | js.Any], 
       /* url */ js.UndefOr[String], 
       /* policy */ js.UndefOr[WinPolicy], 
-      _
+      js.Any
     ]
   ): this.type = js.native
   /**
@@ -338,7 +340,7 @@ trait win extends EventEmitter {
   @JSName("on")
   def on_resize(
     event: resize,
-    listener: js.Function2[/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], _]
+    listener: js.Function2[/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], js.Any]
   ): this.type = js.native
   /**
     * Emitted when window is restored from minimize, maximize and fullscreen state.
@@ -347,7 +349,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `restore` event.
     */
   @JSName("on")
-  def on_restore(event: restore, listener: js.Function0[_]): this.type = js.native
+  def on_restore(event: restore, listener: js.Function0[js.Any]): this.type = js.native
   /**
     * Emitted when window zooming changed.
     *
@@ -356,7 +358,7 @@ trait win extends EventEmitter {
     * - (optional) zoom {Integer} Indicating the new zoom level
     */
   @JSName("on")
-  def on_zoom(event: zoom, listener: js.Function1[/* zoom */ js.UndefOr[Double], _]): this.type = js.native
+  def on_zoom(event: zoom, listener: js.Function1[/* zoom */ js.UndefOr[Double], js.Any]): this.type = js.native
   
   /**
     * Print the web contents in the window without the need for user’s interaction.
@@ -491,9 +493,9 @@ trait win extends EventEmitter {
     * - (optional) dev_win {window} Window object that you can use any properties and methods of Window except the events
     */
   def showDevTools(): Unit = js.native
-  def showDevTools(iframe: js.UndefOr[scala.Nothing], callback: js.Function1[/* dev_win */ js.UndefOr[Window], Unit]): Unit = js.native
   def showDevTools(iframe: String): Unit = js.native
   def showDevTools(iframe: String, callback: js.Function1[/* dev_win */ js.UndefOr[Window], Unit]): Unit = js.native
+  def showDevTools(iframe: Unit, callback: js.Function1[/* dev_win */ js.UndefOr[Window], Unit]): Unit = js.native
   def showDevTools(iframe: HTMLIFrameElement): Unit = js.native
   def showDevTools(iframe: HTMLIFrameElement, callback: js.Function1[/* dev_win */ js.UndefOr[Window], Unit]): Unit = js.native
   

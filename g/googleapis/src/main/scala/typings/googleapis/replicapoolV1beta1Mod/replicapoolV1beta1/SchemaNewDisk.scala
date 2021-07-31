@@ -2,7 +2,6 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,30 +9,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Replica in the Pool. Each Replica will have a unique persistent disk that
   * is created and attached to that Replica in READ_WRITE mode.
   */
-@js.native
 trait SchemaNewDisk extends StObject {
   
   /**
     * How the disk will be attached to the Replica.
     */
-  var attachment: js.UndefOr[SchemaDiskAttachment] = js.native
+  var attachment: js.UndefOr[SchemaDiskAttachment] = js.undefined
   
   /**
     * If true, then this disk will be deleted when the instance is deleted. The
     * default value is true.
     */
-  var autoDelete: js.UndefOr[Boolean] = js.native
+  var autoDelete: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, indicates that this is the root persistent disk.
     */
-  var boot: js.UndefOr[Boolean] = js.native
+  var boot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Create the new disk using these parameters. The name of the disk will be
     * &lt;instance_name&gt;-&lt;four_random_charactersgt;.
     */
-  var initializeParams: js.UndefOr[SchemaNewDiskInitializeParams] = js.native
+  var initializeParams: js.UndefOr[SchemaNewDiskInitializeParams] = js.undefined
 }
 object SchemaNewDisk {
   

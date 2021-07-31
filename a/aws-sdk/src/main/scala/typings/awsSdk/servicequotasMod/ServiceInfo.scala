@@ -2,21 +2,19 @@ package typings.awsSdk.servicequotasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceInfo extends StObject {
   
   /**
     * Specifies the service that you want to use.
     */
-  var ServiceCode: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceCode] = js.native
+  var ServiceCode: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceCode] = js.undefined
   
   /**
     * The name of the AWS service specified in the increase request. 
     */
-  var ServiceName: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceName] = js.native
+  var ServiceName: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceName] = js.undefined
 }
 object ServiceInfo {
   

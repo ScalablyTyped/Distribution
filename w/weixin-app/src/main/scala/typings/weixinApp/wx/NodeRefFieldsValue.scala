@@ -8,23 +8,21 @@ import typings.weixinApp.anon.PropertiesAny
 import typings.weixinApp.anon.ScrollLeft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeRefFieldsValue extends StObject {
   
-  var dataset: Dataset = js.native
+  var dataset: Dataset
   
-  var id: Id = js.native
+  var id: Id
   
-  var properties: PropertiesAny = js.native
+  var properties: PropertiesAny
   
-  var rect: Bottom = js.native
+  var rect: Bottom
   
-  var scrollOffset: ScrollLeft = js.native
+  var scrollOffset: ScrollLeft
   
-  var size: Height = js.native
+  var size: Height
 }
 object NodeRefFieldsValue {
   

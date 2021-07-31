@@ -6,23 +6,21 @@ import typings.awsSdkClientS3Browser.typesSses3Mod.UnmarshalledSSES3
 import typings.awsSdkClientS3Browser.typesSses3Mod._SSES3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInventoryEncryptionMod {
   
-  @js.native
   trait InventoryEncryption extends StObject {
     
     /**
       * <p>Specifies the use of SSE-KMS to encrypt delievered Inventory reports.</p>
       */
-    var SSEKMS: js.UndefOr[_SSEKMS] = js.native
+    var SSEKMS: js.UndefOr[_SSEKMS] = js.undefined
     
     /**
       * <p>Specifies the use of SSE-S3 to encrypt delievered Inventory reports.</p>
       */
-    var SSES3: js.UndefOr[_SSES3] = js.native
+    var SSES3: js.UndefOr[_SSES3] = js.undefined
   }
   object InventoryEncryption {
     
@@ -49,20 +47,21 @@ object typesInventoryEncryptionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledInventoryEncryption extends InventoryEncryption {
+  trait UnmarshalledInventoryEncryption
+    extends StObject
+       with InventoryEncryption {
     
     /**
       * <p>Specifies the use of SSE-KMS to encrypt delievered Inventory reports.</p>
       */
     @JSName("SSEKMS")
-    var SSEKMS_UnmarshalledInventoryEncryption: js.UndefOr[UnmarshalledSSEKMS] = js.native
+    var SSEKMS_UnmarshalledInventoryEncryption: js.UndefOr[UnmarshalledSSEKMS] = js.undefined
     
     /**
       * <p>Specifies the use of SSE-S3 to encrypt delievered Inventory reports.</p>
       */
     @JSName("SSES3")
-    var SSES3_UnmarshalledInventoryEncryption: js.UndefOr[UnmarshalledSSES3] = js.native
+    var SSES3_UnmarshalledInventoryEncryption: js.UndefOr[UnmarshalledSSES3] = js.undefined
   }
   object UnmarshalledInventoryEncryption {
     

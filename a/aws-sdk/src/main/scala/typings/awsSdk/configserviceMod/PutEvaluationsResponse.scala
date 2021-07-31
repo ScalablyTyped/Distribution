@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutEvaluationsResponse extends StObject {
   
   /**
     * Requests that failed because of a client or server error.
     */
-  var FailedEvaluations: js.UndefOr[Evaluations] = js.native
+  var FailedEvaluations: js.UndefOr[Evaluations] = js.undefined
 }
 object PutEvaluationsResponse {
   

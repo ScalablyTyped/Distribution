@@ -2,13 +2,11 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationFolder extends StObject {
   
-  val NavigationFolder: typings.activexOutlook.Outlook.NavigationFolder = js.native
+  val NavigationFolder: typings.activexOutlook.Outlook.NavigationFolder
 }
 object NavigationFolder {
   

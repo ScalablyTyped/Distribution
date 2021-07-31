@@ -4,23 +4,22 @@ import typings.loglevel.mod.Logger
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("loglevel-plugin-prefix", "apply")
+  @JSImport("loglevel-plugin-prefix", JSImport.Namespace)
   @js.native
-  def apply(logger: Logger): Logger = js.native
-  @JSImport("loglevel-plugin-prefix", "apply")
-  @js.native
-  def apply(logger: Logger, options: LoglevelPluginPrefixOptions): Logger = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("loglevel-plugin-prefix", "reg")
-  @js.native
-  def reg(loglevel: Logger): Unit = js.native
+  @scala.inline
+  def apply(logger: Logger): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("apply")(logger.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  @scala.inline
+  def apply(logger: Logger, options: LoglevelPluginPrefixOptions): Logger = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(logger.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Logger]
   
-  @js.native
+  @scala.inline
+  def reg(loglevel: Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reg")(loglevel.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait LoglevelPluginPrefixOptions extends StObject {
     
     var format: js.UndefOr[
@@ -30,15 +29,15 @@ object mod {
           /* timestamp */ Date, 
           js.UndefOr[String]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var levelFormatter: js.UndefOr[js.Function1[/* level */ String, String]] = js.native
+    var levelFormatter: js.UndefOr[js.Function1[/* level */ String, String]] = js.undefined
     
-    var nameFormatter: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], String]] = js.native
+    var nameFormatter: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], String]] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var timestampFormatter: js.UndefOr[js.Function1[/* date */ Date, String]] = js.native
+    var timestampFormatter: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
   }
   object LoglevelPluginPrefixOptions {
     

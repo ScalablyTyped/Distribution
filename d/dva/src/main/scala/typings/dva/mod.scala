@@ -16,118 +16,71 @@ import typings.std.Error
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dva", JSImport.Default)
+  @JSImport("dva", JSImport.Namespace)
   @js.native
-  def default(): DvaInstance = js.native
-  @JSImport("dva", JSImport.Default)
-  @js.native
-  def default(opts: DvaOption): DvaInstance = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(
-    mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: js.UndefOr[scala.Nothing],
-    mergeProps: js.UndefOr[scala.Nothing],
-    options: js.Object
-  ): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(
-    mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: js.UndefOr[scala.Nothing],
-    mergeProps: js.Function
-  ): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(
-    mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: js.UndefOr[scala.Nothing],
-    mergeProps: js.Function,
-    options: js.Object
-  ): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(mapStateToProps: js.UndefOr[scala.Nothing], mapDispatchToProps: js.Function): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(
-    mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: js.Function,
-    mergeProps: js.UndefOr[scala.Nothing],
-    options: js.Object
-  ): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(
-    mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: js.Function,
-    mergeProps: js.Function
-  ): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(
-    mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: js.Function,
-    mergeProps: js.Function,
-    options: js.Object
-  ): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(mapStateToProps: js.Function): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(
-    mapStateToProps: js.Function,
-    mapDispatchToProps: js.UndefOr[scala.Nothing],
-    mergeProps: js.UndefOr[scala.Nothing],
-    options: js.Object
-  ): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(
-    mapStateToProps: js.Function,
-    mapDispatchToProps: js.UndefOr[scala.Nothing],
-    mergeProps: js.Function
-  ): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(
-    mapStateToProps: js.Function,
-    mapDispatchToProps: js.UndefOr[scala.Nothing],
-    mergeProps: js.Function,
-    options: js.Object
-  ): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(mapStateToProps: js.Function, mapDispatchToProps: js.Function): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(
-    mapStateToProps: js.Function,
-    mapDispatchToProps: js.Function,
-    mergeProps: js.UndefOr[scala.Nothing],
-    options: js.Object
-  ): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
-  def connect(mapStateToProps: js.Function, mapDispatchToProps: js.Function, mergeProps: js.Function): js.Function = js.native
-  @JSImport("dva", "connect")
-  @js.native
+  @scala.inline
+  def default(): DvaInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[DvaInstance]
+  @scala.inline
+  def default(opts: DvaOption): DvaInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[DvaInstance]
+  
+  @scala.inline
+  def connect(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Function]
+  @scala.inline
+  def connect(mapStateToProps: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(mapStateToProps: js.Function, mapDispatchToProps: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(mapStateToProps: js.Function, mapDispatchToProps: js.Function, mergeProps: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def connect(
     mapStateToProps: js.Function,
     mapDispatchToProps: js.Function,
     mergeProps: js.Function,
     options: js.Object
-  ): js.Function = js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(
+    mapStateToProps: js.Function,
+    mapDispatchToProps: js.Function,
+    mergeProps: Unit,
+    options: js.Object
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(mapStateToProps: js.Function, mapDispatchToProps: Unit, mergeProps: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(
+    mapStateToProps: js.Function,
+    mapDispatchToProps: Unit,
+    mergeProps: js.Function,
+    options: js.Object
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(mapStateToProps: js.Function, mapDispatchToProps: Unit, mergeProps: Unit, options: js.Object): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(mapStateToProps: Unit, mapDispatchToProps: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(mapStateToProps: Unit, mapDispatchToProps: js.Function, mergeProps: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(
+    mapStateToProps: Unit,
+    mapDispatchToProps: js.Function,
+    mergeProps: js.Function,
+    options: js.Object
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(mapStateToProps: Unit, mapDispatchToProps: js.Function, mergeProps: Unit, options: js.Object): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(mapStateToProps: Unit, mapDispatchToProps: Unit, mergeProps: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(mapStateToProps: Unit, mapDispatchToProps: Unit, mergeProps: js.Function, options: js.Object): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def connect(mapStateToProps: Unit, mapDispatchToProps: Unit, mergeProps: Unit, options: js.Object): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   @js.native
   trait DvaInstance extends StObject {
@@ -173,29 +126,13 @@ object mod {
     def use(hooks: Hooks): Unit = js.native
   }
   
-  /* Inlined dva.dva.Hooks & {  initialState :std.Object | undefined,   history :std.Object | undefined} */
-  @js.native
-  trait DvaOption extends StObject {
+  trait DvaOption
+    extends StObject
+       with Hooks {
     
-    var extraEnhancers: js.UndefOr[js.Array[StoreEnhancer[_, js.Object]]] = js.native
+    var history: js.UndefOr[js.Object] = js.undefined
     
-    var extraReducers: js.UndefOr[ReducersMapObject[_, Action[_]]] = js.native
-    
-    var history: js.UndefOr[js.Object] = js.native
-    
-    var initialState: js.UndefOr[js.Object] = js.native
-    
-    var onAction: js.UndefOr[onActionFunc | js.Array[onActionFunc]] = js.native
-    
-    var onEffect: js.UndefOr[js.Function0[Unit]] = js.native
-    
-    var onError: js.UndefOr[js.Function2[/* e */ Error, /* dispatch */ Dispatch[_], Unit]] = js.native
-    
-    var onHmr: js.UndefOr[js.Function0[Unit]] = js.native
-    
-    var onReducer: js.UndefOr[ReducerEnhancer] = js.native
-    
-    var onStateChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var initialState: js.UndefOr[js.Object] = js.undefined
   }
   object DvaOption {
     
@@ -209,21 +146,6 @@ object mod {
     implicit class DvaOptionMutableBuilder[Self <: DvaOption] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setExtraEnhancers(value: js.Array[StoreEnhancer[_, js.Object]]): Self = StObject.set(x, "extraEnhancers", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setExtraEnhancersUndefined: Self = StObject.set(x, "extraEnhancers", js.undefined)
-      
-      @scala.inline
-      def setExtraEnhancersVarargs(value: (StoreEnhancer[js.Any, js.Object])*): Self = StObject.set(x, "extraEnhancers", js.Array(value :_*))
-      
-      @scala.inline
-      def setExtraReducers(value: ReducersMapObject[_, Action[_]]): Self = StObject.set(x, "extraReducers", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setExtraReducersUndefined: Self = StObject.set(x, "extraReducers", js.undefined)
-      
-      @scala.inline
       def setHistory(value: js.Object): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -234,48 +156,6 @@ object mod {
       
       @scala.inline
       def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
-      
-      @scala.inline
-      def setOnAction(value: onActionFunc | js.Array[onActionFunc]): Self = StObject.set(x, "onAction", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOnActionFunction1(value: /* api */ MiddlewareAPI[js.Any, js.Any] => Unit): Self = StObject.set(x, "onAction", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setOnActionUndefined: Self = StObject.set(x, "onAction", js.undefined)
-      
-      @scala.inline
-      def setOnActionVarargs(value: onActionFunc*): Self = StObject.set(x, "onAction", js.Array(value :_*))
-      
-      @scala.inline
-      def setOnEffect(value: () => Unit): Self = StObject.set(x, "onEffect", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setOnEffectUndefined: Self = StObject.set(x, "onEffect", js.undefined)
-      
-      @scala.inline
-      def setOnError(value: (/* e */ Error, /* dispatch */ Dispatch[_]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
-      
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
-      
-      @scala.inline
-      def setOnHmr(value: () => Unit): Self = StObject.set(x, "onHmr", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setOnHmrUndefined: Self = StObject.set(x, "onHmr", js.undefined)
-      
-      @scala.inline
-      def setOnReducer(value: /* reducer */ Reducer[js.Any, AnyAction] => Unit): Self = StObject.set(x, "onReducer", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setOnReducerUndefined: Self = StObject.set(x, "onReducer", js.undefined)
-      
-      @scala.inline
-      def setOnStateChange(value: () => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
     }
   }
   
@@ -305,19 +185,19 @@ object mod {
   
   type EffectWithType = js.Tuple2[Effect, Type]
   
-  @js.native
   trait EffectsCommandMap
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var call: js.Function = js.native
+    var call: js.Function
     
-    var cancel: js.Function = js.native
+    var cancel: js.Function
     
-    def put[A /* <: AnyAction */](action: A): js.Any = js.native
+    def put[A /* <: AnyAction */](action: A): js.Any
     
-    var select: js.Function = js.native
+    var select: js.Function
     
-    var take: js.Function = js.native
+    var take: js.Function
   }
   object EffectsCommandMap {
     
@@ -355,24 +235,23 @@ object mod {
   
   type EffectsMapObject = StringDictionary[Effect | EffectWithType]
   
-  @js.native
   trait Hooks extends StObject {
     
-    var extraEnhancers: js.UndefOr[js.Array[StoreEnhancer[_, js.Object]]] = js.native
+    var extraEnhancers: js.UndefOr[js.Array[StoreEnhancer[js.Any, js.Object]]] = js.undefined
     
-    var extraReducers: js.UndefOr[ReducersMapObject[_, Action[_]]] = js.native
+    var extraReducers: js.UndefOr[ReducersMapObject[js.Any, Action[js.Any]]] = js.undefined
     
-    var onAction: js.UndefOr[onActionFunc | js.Array[onActionFunc]] = js.native
+    var onAction: js.UndefOr[onActionFunc | js.Array[onActionFunc]] = js.undefined
     
-    var onEffect: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEffect: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function2[/* e */ Error, /* dispatch */ Dispatch[_], Unit]] = js.native
+    var onError: js.UndefOr[js.Function2[/* e */ Error, /* dispatch */ Dispatch[js.Any], Unit]] = js.undefined
     
-    var onHmr: js.UndefOr[js.Function0[Unit]] = js.native
+    var onHmr: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onReducer: js.UndefOr[ReducerEnhancer] = js.native
+    var onReducer: js.UndefOr[ReducerEnhancer] = js.undefined
     
-    var onStateChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var onStateChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Hooks {
     
@@ -386,7 +265,7 @@ object mod {
     implicit class HooksMutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setExtraEnhancers(value: js.Array[StoreEnhancer[_, js.Object]]): Self = StObject.set(x, "extraEnhancers", value.asInstanceOf[js.Any])
+      def setExtraEnhancers(value: js.Array[StoreEnhancer[js.Any, js.Object]]): Self = StObject.set(x, "extraEnhancers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setExtraEnhancersUndefined: Self = StObject.set(x, "extraEnhancers", js.undefined)
@@ -395,7 +274,7 @@ object mod {
       def setExtraEnhancersVarargs(value: (StoreEnhancer[js.Any, js.Object])*): Self = StObject.set(x, "extraEnhancers", js.Array(value :_*))
       
       @scala.inline
-      def setExtraReducers(value: ReducersMapObject[_, Action[_]]): Self = StObject.set(x, "extraReducers", value.asInstanceOf[js.Any])
+      def setExtraReducers(value: ReducersMapObject[js.Any, Action[js.Any]]): Self = StObject.set(x, "extraReducers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setExtraReducersUndefined: Self = StObject.set(x, "extraReducers", js.undefined)
@@ -419,7 +298,7 @@ object mod {
       def setOnEffectUndefined: Self = StObject.set(x, "onEffect", js.undefined)
       
       @scala.inline
-      def setOnError(value: (/* e */ Error, /* dispatch */ Dispatch[_]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
+      def setOnError(value: (/* e */ Error, /* dispatch */ Dispatch[js.Any]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
@@ -444,18 +323,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
-    var effects: js.UndefOr[EffectsMapObject] = js.native
+    var effects: js.UndefOr[EffectsMapObject] = js.undefined
     
-    var namespace: String = js.native
+    var namespace: String
     
-    var reducers: js.UndefOr[(ReducersMapObject[_, Action[_]]) | ReducersMapObjectWithEnhancer] = js.native
+    var reducers: js.UndefOr[(ReducersMapObject[js.Any, Action[js.Any]]) | ReducersMapObjectWithEnhancer] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
     
-    var subscriptions: js.UndefOr[SubscriptionsMapObject] = js.native
+    var subscriptions: js.UndefOr[SubscriptionsMapObject] = js.undefined
   }
   object Model {
     
@@ -478,7 +356,7 @@ object mod {
       def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setReducers(value: (ReducersMapObject[_, Action[_]]) | ReducersMapObjectWithEnhancer): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
+      def setReducers(value: (ReducersMapObject[js.Any, Action[js.Any]]) | ReducersMapObjectWithEnhancer): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReducersUndefined: Self = StObject.set(x, "reducers", js.undefined)
@@ -503,12 +381,11 @@ object mod {
   
   type Router = js.Function1[/* api */ js.UndefOr[RouterAPI], Element | js.Object]
   
-  @js.native
   trait RouterAPI extends StObject {
     
-    var app: DvaInstance = js.native
+    var app: DvaInstance
     
-    var history: History[LocationState] = js.native
+    var history: History[LocationState]
   }
   object RouterAPI {
     
@@ -531,17 +408,16 @@ object mod {
   
   type Subscription = js.Function2[/* api */ SubscriptionAPI, /* done */ js.Function, Unit]
   
-  @js.native
   trait SubscriptionAPI extends StObject {
     
-    var dispatch: Dispatch[_] = js.native
+    var dispatch: Dispatch[js.Any]
     
-    var history: History[LocationState] = js.native
+    var history: History[LocationState]
   }
   object SubscriptionAPI {
     
     @scala.inline
-    def apply(dispatch: _ => _, history: History[LocationState]): SubscriptionAPI = {
+    def apply(dispatch: js.Any => js.Any, history: History[LocationState]): SubscriptionAPI = {
       val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), history = history.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionAPI]
     }
@@ -550,7 +426,7 @@ object mod {
     implicit class SubscriptionAPIMutableBuilder[Self <: SubscriptionAPI] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDispatch(value: _ => _): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      def setDispatch(value: js.Any => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
       @scala.inline
       def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])

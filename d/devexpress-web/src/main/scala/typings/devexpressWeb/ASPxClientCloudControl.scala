@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxCloudControl control.
   */
-@js.native
-trait ASPxClientCloudControl extends ASPxClientControl {
+trait ASPxClientCloudControl
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Fires after an item has been clicked.
     */
-  var ItemClick: ASPxClientEvent[ASPxClientCloudControlItemEventHandler[ASPxClientCloudControl]] = js.native
+  var ItemClick: ASPxClientEvent[ASPxClientCloudControlItemEventHandler[ASPxClientCloudControl]]
 }
 object ASPxClientCloudControl {
   

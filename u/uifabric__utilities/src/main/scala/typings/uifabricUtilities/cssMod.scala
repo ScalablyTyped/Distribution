@@ -3,24 +3,25 @@ package typings.uifabricUtilities
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssMod {
   
-  @JSImport("@uifabric/utilities/lib/css", "css")
+  @JSImport("@uifabric/utilities/lib/css", JSImport.Namespace)
   @js.native
-  def css(args: ICssInput*): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def css(args: ICssInput*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type ICssInput = js.UndefOr[String | ISerializableObject | IDictionary | Null | Boolean]
   
   type IDictionary = StringDictionary[Boolean]
   
-  @js.native
   trait ISerializableObject extends StObject {
     
     @JSName("toString")
-    var toString_FISerializableObject: js.UndefOr[js.Function0[String]] = js.native
+    var toString_FISerializableObject: js.UndefOr[js.Function0[String]] = js.undefined
   }
   object ISerializableObject {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageAccountResult extends StObject {
   
   /**
     * The Account ID that generated usage.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.guarddutyMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.guarddutyMod.AccountId] = js.undefined
   
   /**
     * Represents the total of usage for the Account ID.
     */
-  var Total: js.UndefOr[typings.awsSdk.guarddutyMod.Total] = js.native
+  var Total: js.UndefOr[typings.awsSdk.guarddutyMod.Total] = js.undefined
 }
 object UsageAccountResult {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCarrierGatewayResult extends StObject {
   
   /**
     * Information about the carrier gateway.
     */
-  var CarrierGateway: js.UndefOr[typings.awsSdk.ec2Mod.CarrierGateway] = js.native
+  var CarrierGateway: js.UndefOr[typings.awsSdk.ec2Mod.CarrierGateway] = js.undefined
 }
 object DeleteCarrierGatewayResult {
   

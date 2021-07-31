@@ -2,13 +2,11 @@ package typings.cordovaPluginEmailComposer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CordovaPlugins extends StObject {
   
-  var email: CordovaPluginEmailComposer = js.native
+  var email: CordovaPluginEmailComposer
 }
 object CordovaPlugins {
   

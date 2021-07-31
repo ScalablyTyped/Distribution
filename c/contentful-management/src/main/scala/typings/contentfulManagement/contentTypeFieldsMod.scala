@@ -3,27 +3,27 @@ package typings.contentfulManagement
 import typings.contentfulManagement.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contentTypeFieldsMod {
   
-  @js.native
-  trait ContentFields extends Item {
+  trait ContentFields
+    extends StObject
+       with Item {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var items: js.UndefOr[Item] = js.native
+    var items: js.UndefOr[Item] = js.undefined
     
-    var localized: Boolean = js.native
+    var localized: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var omitted: js.UndefOr[Boolean] = js.native
+    var omitted: js.UndefOr[Boolean] = js.undefined
     
-    var required: Boolean = js.native
+    var required: Boolean
   }
   object ContentFields {
     
@@ -69,12 +69,11 @@ object contentTypeFieldsMod {
     }
   }
   
-  @js.native
   trait DateRange extends StObject {
     
-    var max: js.UndefOr[String] = js.native
+    var max: js.UndefOr[String] = js.undefined
     
-    var min: js.UndefOr[String] = js.native
+    var min: js.UndefOr[String] = js.undefined
   }
   object DateRange {
     
@@ -101,14 +100,13 @@ object contentTypeFieldsMod {
     }
   }
   
-  @js.native
   trait Item extends StObject {
     
-    var linkType: js.UndefOr[String] = js.native
+    var linkType: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var validations: js.UndefOr[js.Array[Validation]] = js.native
+    var validations: js.UndefOr[js.Array[Validation]] = js.undefined
   }
   object Item {
     
@@ -142,12 +140,11 @@ object contentTypeFieldsMod {
     }
   }
   
-  @js.native
   trait NumRange extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object NumRange {
     
@@ -174,12 +171,11 @@ object contentTypeFieldsMod {
     }
   }
   
-  @js.native
   trait RegExp extends StObject {
     
-    var flags: String = js.native
+    var flags: String
     
-    var pattern: String = js.native
+    var pattern: String
   }
   object RegExp {
     
@@ -200,34 +196,33 @@ object contentTypeFieldsMod {
     }
   }
   
-  @js.native
   trait Validation extends StObject {
     
-    var assetFileSize: js.UndefOr[NumRange] = js.native
+    var assetFileSize: js.UndefOr[NumRange] = js.undefined
     
-    var assetImageDimensions: js.UndefOr[Height] = js.native
+    var assetImageDimensions: js.UndefOr[Height] = js.undefined
     
-    var dateRange: js.UndefOr[DateRange] = js.native
+    var dateRange: js.UndefOr[DateRange] = js.undefined
     
-    var enabledMarks: js.UndefOr[js.Array[String]] = js.native
+    var enabledMarks: js.UndefOr[js.Array[String]] = js.undefined
     
-    var enabledNodeTypes: js.UndefOr[js.Array[String]] = js.native
+    var enabledNodeTypes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var in: js.UndefOr[js.Array[String]] = js.native
+    var in: js.UndefOr[js.Array[String]] = js.undefined
     
-    var linkContentType: js.UndefOr[js.Array[String]] = js.native
+    var linkContentType: js.UndefOr[js.Array[String]] = js.undefined
     
-    var linkMimetypeGroup: js.UndefOr[js.Array[String]] = js.native
+    var linkMimetypeGroup: js.UndefOr[js.Array[String]] = js.undefined
     
-    var prohibitRegexp: js.UndefOr[RegExp] = js.native
+    var prohibitRegexp: js.UndefOr[RegExp] = js.undefined
     
-    var range: js.UndefOr[NumRange] = js.native
+    var range: js.UndefOr[NumRange] = js.undefined
     
-    var regexp: js.UndefOr[RegExp] = js.native
+    var regexp: js.UndefOr[RegExp] = js.undefined
     
-    var size: js.UndefOr[NumRange] = js.native
+    var size: js.UndefOr[NumRange] = js.undefined
     
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
   }
   object Validation {
     

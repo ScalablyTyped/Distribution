@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.DataTransfer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeTypesConfigMod {
   
-  @js.native
   trait NativeItemConfig extends StObject {
     
-    var exposeProperties: NativeItemConfigExposePropreties = js.native
+    var exposeProperties: NativeItemConfigExposePropreties
     
-    var matchesTypes: js.Array[String] = js.native
+    var matchesTypes: js.Array[String]
   }
   object NativeItemConfig {
     

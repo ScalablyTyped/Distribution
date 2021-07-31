@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UndeleteServiceResponse extends StObject {
   
   /** Revived service resource. */
-  var service: js.UndefOr[ManagedService] = js.native
+  var service: js.UndefOr[ManagedService] = js.undefined
 }
 object UndeleteServiceResponse {
   

@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AltJS {
@@ -17,19 +16,29 @@ object AltJS {
   object lifeCycleEvents extends StObject {
     
     @js.native
-    sealed trait bootstrap extends lifeCycleEvents
+    sealed trait bootstrap
+      extends StObject
+         with lifeCycleEvents
     
     @js.native
-    sealed trait error extends lifeCycleEvents
+    sealed trait error
+      extends StObject
+         with lifeCycleEvents
     
     @js.native
-    sealed trait init extends lifeCycleEvents
+    sealed trait init
+      extends StObject
+         with lifeCycleEvents
     
     @js.native
-    sealed trait rollback extends lifeCycleEvents
+    sealed trait rollback
+      extends StObject
+         with lifeCycleEvents
     
     @js.native
-    sealed trait snapshot extends lifeCycleEvents
+    sealed trait snapshot
+      extends StObject
+         with lifeCycleEvents
   }
   
   @js.native
@@ -40,18 +49,21 @@ object AltJS {
     def defer(data: js.Any): Unit = js.native
   }
   
-  type ActionHandler = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait ActionHandler extends StObject {
+    
+    def apply(data: js.Any*): js.Any = js.native
+  }
   
   type Actions = StringDictionary[Action[js.Any]]
   
-  @js.native
   trait ActionsClass extends StObject {
     
-    var actions: js.UndefOr[Actions] = js.native
+    var actions: js.UndefOr[Actions] = js.undefined
     
-    def dispatch(payload: js.Any*): Unit = js.native
+    def dispatch(payload: js.Any*): Unit
     
-    var generateActions: js.UndefOr[js.Function1[/* repeated */ String, Unit]] = js.native
+    var generateActions: js.UndefOr[js.Function1[/* repeated */ String, Unit]] = js.undefined
   }
   object ActionsClass {
     
@@ -92,35 +104,31 @@ object AltJS {
     def addActions(actionsName: String, ActionsClass: ActionsClassConstructor): Unit = js.native
     
     //Stores methods
-    def addStore(name: String, store: StoreModel[_]): Unit = js.native
-    def addStore(name: String, store: StoreModel[_], saveStore: Boolean): Unit = js.native
+    def addStore(name: String, store: StoreModel[js.Any]): Unit = js.native
+    def addStore(name: String, store: StoreModel[js.Any], saveStore: Boolean): Unit = js.native
     
     def bootstrap(jsonData: String): Unit = js.native
     
     def createActions[T](ActionsClass: ActionsClassConstructor): T = js.native
-    def createActions[T](
-      ActionsClass: ActionsClassConstructor,
-      exportObj: js.UndefOr[scala.Nothing],
-      constructorArgs: js.Any*
-    ): T = js.native
     def createActions[T](ActionsClass: ActionsClassConstructor, exportObj: js.Object): T = js.native
     def createActions[T](ActionsClass: ActionsClassConstructor, exportObj: js.Object, constructorArgs: js.Any*): T = js.native
+    def createActions[T](ActionsClass: ActionsClassConstructor, exportObj: Unit, constructorArgs: js.Any*): T = js.native
     
     def createStore[S](store: StoreModel[S]): AltStore[S] = js.native
     def createStore[S](store: StoreModel[S], name: String): AltStore[S] = js.native
     
     def dispatch(): Unit = js.native
-    def dispatch(action: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
-    def dispatch(action: js.UndefOr[scala.Nothing], data: js.Object): Unit = js.native
-    def dispatch(action: js.UndefOr[scala.Nothing], data: js.Object, details: js.Any): Unit = js.native
     def dispatch(action: String): Unit = js.native
-    def dispatch(action: String, data: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
     def dispatch(action: String, data: js.Object): Unit = js.native
     def dispatch(action: String, data: js.Object, details: js.Any): Unit = js.native
-    def dispatch(action: Action[_]): Unit = js.native
-    def dispatch(action: Action[_], data: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
-    def dispatch(action: Action[_], data: js.Object): Unit = js.native
-    def dispatch(action: Action[_], data: js.Object, details: js.Any): Unit = js.native
+    def dispatch(action: String, data: Unit, details: js.Any): Unit = js.native
+    def dispatch(action: Unit, data: js.Object): Unit = js.native
+    def dispatch(action: Unit, data: js.Object, details: js.Any): Unit = js.native
+    def dispatch(action: Unit, data: Unit, details: js.Any): Unit = js.native
+    def dispatch(action: Action[js.Any]): Unit = js.native
+    def dispatch(action: Action[js.Any], data: js.Object): Unit = js.native
+    def dispatch(action: Action[js.Any], data: js.Object, details: js.Any): Unit = js.native
+    def dispatch(action: Action[js.Any], data: Unit, details: js.Any): Unit = js.native
     
     def flush(): js.Object = js.native
     
@@ -128,29 +136,28 @@ object AltJS {
     
     def getActions(actionsName: String): Actions = js.native
     
-    def getStore(name: String): AltStore[_] = js.native
+    def getStore(name: String): AltStore[js.Any] = js.native
     
-    def recycle(stores: AltStore[_]*): Unit = js.native
+    def recycle(stores: AltStore[js.Any]*): Unit = js.native
     
     def rollback(): Unit = js.native
     
     def takeSnapshot(storeNames: String*): String = js.native
   }
   
-  @js.native
   trait AltConfig extends StObject {
     
-    var batchingFunction: js.UndefOr[js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], Unit]] = js.native
+    var batchingFunction: js.UndefOr[js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, js.Any], Unit]] = js.undefined
     
     var deserialize: js.UndefOr[
         js.Function1[/* deserializeFn */ js.Function1[/* serialData */ String, js.Object], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var dispatcher: js.UndefOr[js.Any] = js.native
+    var dispatcher: js.UndefOr[js.Any] = js.undefined
     
-    var serialize: js.UndefOr[js.Function1[/* serializeFn */ js.Function1[/* data */ js.Object, String], Unit]] = js.native
+    var serialize: js.UndefOr[js.Function1[/* serializeFn */ js.Function1[/* data */ js.Object, String], Unit]] = js.undefined
     
-    var storeTransforms: js.UndefOr[js.Array[StateTransform]] = js.native
+    var storeTransforms: js.UndefOr[js.Array[StateTransform]] = js.undefined
   }
   object AltConfig {
     
@@ -164,7 +171,7 @@ object AltJS {
     implicit class AltConfigMutableBuilder[Self <: AltConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBatchingFunction(value: /* callback */ js.Function1[/* repeated */ js.Any, _] => Unit): Self = StObject.set(x, "batchingFunction", js.Any.fromFunction1(value))
+      def setBatchingFunction(value: /* callback */ js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "batchingFunction", js.Any.fromFunction1(value))
       
       @scala.inline
       def setBatchingFunctionUndefined: Self = StObject.set(x, "batchingFunction", js.undefined)
@@ -200,19 +207,19 @@ object AltJS {
   
   @js.native
   trait AltFactory
-    extends Instantiable0[Alt]
+    extends StObject
+       with Instantiable0[Alt]
        with Instantiable1[/* config */ AltConfig, Alt]
   
-  @js.native
   trait AltStore[S] extends StObject {
     
-    def emitChange(): Unit = js.native
+    def emitChange(): Unit
     
-    def getState(): S = js.native
+    def getState(): S
     
-    def listen(handler: js.Function1[/* state */ S, _]): js.Function0[Unit] = js.native
+    def listen(handler: js.Function1[/* state */ S, js.Any]): js.Function0[Unit]
     
-    def unlisten(handler: js.Function1[/* state */ S, _]): Unit = js.native
+    def unlisten(handler: js.Function1[/* state */ S, js.Any]): Unit
   }
   object AltStore {
     
@@ -220,15 +227,15 @@ object AltJS {
     def apply[S](
       emitChange: () => Unit,
       getState: () => S,
-      listen: js.Function1[/* state */ S, _] => js.Function0[Unit],
-      unlisten: js.Function1[/* state */ S, _] => Unit
+      listen: js.Function1[/* state */ S, js.Any] => js.Function0[Unit],
+      unlisten: js.Function1[/* state */ S, js.Any] => Unit
     ): AltStore[S] = {
       val __obj = js.Dynamic.literal(emitChange = js.Any.fromFunction0(emitChange), getState = js.Any.fromFunction0(getState), listen = js.Any.fromFunction1(listen), unlisten = js.Any.fromFunction1(unlisten))
       __obj.asInstanceOf[AltStore[S]]
     }
     
     @scala.inline
-    implicit class AltStoreMutableBuilder[Self <: AltStore[_], S] (val x: Self with AltStore[S]) extends AnyVal {
+    implicit class AltStoreMutableBuilder[Self <: AltStore[?], S] (val x: Self & AltStore[S]) extends AnyVal {
       
       @scala.inline
       def setEmitChange(value: () => Unit): Self = StObject.set(x, "emitChange", js.Any.fromFunction0(value))
@@ -237,10 +244,10 @@ object AltJS {
       def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setListen(value: js.Function1[/* state */ S, _] => js.Function0[Unit]): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+      def setListen(value: js.Function1[/* state */ S, js.Any] => js.Function0[Unit]): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setUnlisten(value: js.Function1[/* state */ S, _] => Unit): Self = StObject.set(x, "unlisten", js.Any.fromFunction1(value))
+      def setUnlisten(value: js.Function1[/* state */ S, js.Any] => Unit): Self = StObject.set(x, "unlisten", js.Any.fromFunction1(value))
     }
   }
   
@@ -248,24 +255,23 @@ object AltJS {
   
   type Source = StringDictionary[js.Function0[SourceModel[js.Any]]]
   
-  @js.native
   trait SourceModel[S] extends StObject {
     
-    def error(args: js.Any): Unit = js.native
+    def error(args: js.Any): Unit
     
     var interceptResponse: js.UndefOr[
-        js.Function3[/* response */ js.Any, /* action */ Action[_], /* repeated */ js.Any, _]
-      ] = js.native
+        js.Function3[/* response */ js.Any, /* action */ Action[js.Any], /* repeated */ js.Any, js.Any]
+      ] = js.undefined
     
-    var loading: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.native
+    var loading: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
     
-    var local: js.UndefOr[js.Function2[/* state */ js.Any, /* repeated */ js.Any, _]] = js.native
+    var local: js.UndefOr[js.Function2[/* state */ js.Any, /* repeated */ js.Any, js.Any]] = js.undefined
     
-    def remote(state: js.Any, args: js.Any*): js.Promise[S] = js.native
+    def remote(state: js.Any, args: js.Any*): js.Promise[S]
     
-    var shouldFetch: js.UndefOr[js.Function1[/* fetchFn */ js.Function1[/* repeated */ js.Any, Boolean], Unit]] = js.native
+    var shouldFetch: js.UndefOr[js.Function1[/* fetchFn */ js.Function1[/* repeated */ js.Any, Boolean], Unit]] = js.undefined
     
-    def success(state: S): Unit = js.native
+    def success(state: S): Unit
   }
   object SourceModel {
     
@@ -280,13 +286,13 @@ object AltJS {
     }
     
     @scala.inline
-    implicit class SourceModelMutableBuilder[Self <: SourceModel[_], S] (val x: Self with SourceModel[S]) extends AnyVal {
+    implicit class SourceModelMutableBuilder[Self <: SourceModel[?], S] (val x: Self & SourceModel[S]) extends AnyVal {
       
       @scala.inline
       def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setInterceptResponse(value: (/* response */ js.Any, /* action */ Action[_], /* repeated */ js.Any) => _): Self = StObject.set(x, "interceptResponse", js.Any.fromFunction3(value))
+      def setInterceptResponse(value: (/* response */ js.Any, /* action */ Action[js.Any], /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "interceptResponse", js.Any.fromFunction3(value))
       
       @scala.inline
       def setInterceptResponseUndefined: Self = StObject.set(x, "interceptResponse", js.undefined)
@@ -298,7 +304,7 @@ object AltJS {
       def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
       @scala.inline
-      def setLocal(value: (/* state */ js.Any, /* repeated */ js.Any) => _): Self = StObject.set(x, "local", js.Any.fromFunction2(value))
+      def setLocal(value: (/* state */ js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "local", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
@@ -319,78 +325,83 @@ object AltJS {
   
   type StateTransform = js.Function1[/* store */ StoreModel[js.Any], AltStore[js.Any]]
   
-  @js.native
   trait StoreModel[S] extends StObject {
     
-    var afterEach: js.UndefOr[js.Function2[/* payload */ js.Object, /* state */ js.Object, Unit]] = js.native
+    var afterEach: js.UndefOr[js.Function2[/* payload */ js.Object, /* state */ js.Object, Unit]] = js.undefined
     
-    var alt: js.UndefOr[Alt] = js.native
+    var alt: js.UndefOr[Alt] = js.undefined
     
-    var beforeEach: js.UndefOr[js.Function2[/* payload */ js.Object, /* state */ js.Object, Unit]] = js.native
+    var beforeEach: js.UndefOr[js.Function2[/* payload */ js.Object, /* state */ js.Object, Unit]] = js.undefined
     
     //Actions
-    var bindAction: js.UndefOr[js.Function2[/* action */ Action[_], /* handler */ ActionHandler, Unit]] = js.native
+    var bindAction: js.UndefOr[js.Function2[/* action */ Action[js.Any], /* handler */ ActionHandler, Unit]] = js.undefined
     
-    var bindActions: js.UndefOr[js.Function1[/* actions */ ActionsClass, Unit]] = js.native
+    var bindActions: js.UndefOr[js.Function1[/* actions */ ActionsClass, Unit]] = js.undefined
     
-    var bindListeners: js.UndefOr[js.Function1[/* config */ StringDictionary[Action[_] | Actions], Unit]] = js.native
+    var bindListeners: js.UndefOr[js.Function1[/* config */ StringDictionary[Action[js.Any] | Actions], Unit]] = js.undefined
     
     // TODO: Embed dispatcher interface in def
-    var dispatcher: js.UndefOr[js.Any] = js.native
+    var dispatcher: js.UndefOr[js.Any] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var emitChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var emitChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var exportAsync: js.UndefOr[js.Function1[/* source */ Source, Unit]] = js.native
+    var exportAsync: js.UndefOr[js.Function1[/* source */ Source, Unit]] = js.undefined
     
     //Methods/Listeners
-    var exportPublicMethods: js.UndefOr[js.Function1[/* exportConfig */ js.Any, Unit]] = js.native
+    var exportPublicMethods: js.UndefOr[js.Function1[/* exportConfig */ js.Any, Unit]] = js.undefined
     
     //instance
-    var getInstance: js.UndefOr[js.Function0[AltStore[S]]] = js.native
+    var getInstance: js.UndefOr[js.Function0[AltStore[S]]] = js.undefined
     
-    var getState: js.UndefOr[js.Function0[S]] = js.native
+    var getState: js.UndefOr[js.Function0[S]] = js.undefined
     
-    var observe: js.UndefOr[js.Function1[/* alt */ Alt, _]] = js.native
+    var observe: js.UndefOr[js.Function1[/* alt */ Alt, js.Any]] = js.undefined
     
-    var on: js.UndefOr[js.Function2[/* event */ lifeCycleEvents, /* callback */ js.Function0[_], Unit]] = js.native
+    var on: js.UndefOr[
+        js.Function2[/* event */ lifeCycleEvents, /* callback */ js.Function0[js.Any], Unit]
+      ] = js.undefined
     
-    var onDeserialize: js.UndefOr[js.Function1[/* fn */ js.Function1[/* data */ js.Any, _], Unit]] = js.native
+    var onDeserialize: js.UndefOr[js.Function1[/* fn */ js.Function1[/* data */ js.Any, js.Any], Unit]] = js.undefined
     
     //events
-    var onSerialize: js.UndefOr[js.Function1[/* fn */ js.Function1[/* data */ js.Any, _], Unit]] = js.native
+    var onSerialize: js.UndefOr[js.Function1[/* fn */ js.Function1[/* data */ js.Any, js.Any], Unit]] = js.undefined
     
-    var otherwise: js.UndefOr[js.Function2[/* data */ js.Any, /* action */ Action[_], Unit]] = js.native
+    var otherwise: js.UndefOr[js.Function2[/* data */ js.Any, /* action */ Action[js.Any], Unit]] = js.undefined
     
-    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.native
+    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var reduce: js.UndefOr[js.Function2[/* state */ js.Any, /* config */ StoreReduce, js.Object]] = js.native
+    var reduce: js.UndefOr[js.Function2[/* state */ js.Any, /* config */ StoreReduce, js.Object]] = js.undefined
     
-    var registerAsync: js.UndefOr[js.Function1[/* datasource */ Source, Unit]] = js.native
+    var registerAsync: js.UndefOr[js.Function1[/* datasource */ Source, Unit]] = js.undefined
     
     //state
-    var setState: (js.UndefOr[js.Function1[/* state */ S, Unit]]) with (js.UndefOr[
+    var setState: (js.UndefOr[js.Function1[/* state */ S, Unit]]) & (js.UndefOr[
         js.Function1[/* stateFn */ js.Function2[/* currentState */ S, /* nextState */ S, S], Unit]
-      ]) = js.native
+      ])
     
-    var waitFor: (js.UndefOr[js.Function1[/* store */ AltStore[_], Unit]]) with (js.UndefOr[js.Function1[/* storeOrStores */ AltStore[_] | js.Array[AltStore[_]], Unit]]) = js.native
+    var waitFor: (js.UndefOr[js.Function1[/* store */ AltStore[js.Any], Unit]]) & (js.UndefOr[
+        js.Function1[/* storeOrStores */ AltStore[js.Any] | js.Array[AltStore[js.Any]], Unit]
+      ])
   }
   object StoreModel {
     
     @scala.inline
     def apply[S](
-      setState: (js.UndefOr[js.Function1[/* state */ S, Unit]]) with (js.UndefOr[
+      setState: (js.UndefOr[js.Function1[/* state */ S, Unit]]) & (js.UndefOr[
           js.Function1[/* stateFn */ js.Function2[/* currentState */ S, /* nextState */ S, S], Unit]
         ]),
-      waitFor: (js.UndefOr[js.Function1[/* store */ AltStore[_], Unit]]) with (js.UndefOr[js.Function1[/* storeOrStores */ AltStore[_] | js.Array[AltStore[_]], Unit]])
+      waitFor: (js.UndefOr[js.Function1[/* store */ AltStore[js.Any], Unit]]) & (js.UndefOr[
+          js.Function1[/* storeOrStores */ AltStore[js.Any] | js.Array[AltStore[js.Any]], Unit]
+        ])
     ): StoreModel[S] = {
       val __obj = js.Dynamic.literal(setState = setState.asInstanceOf[js.Any], waitFor = waitFor.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoreModel[S]]
     }
     
     @scala.inline
-    implicit class StoreModelMutableBuilder[Self <: StoreModel[_], S] (val x: Self with StoreModel[S]) extends AnyVal {
+    implicit class StoreModelMutableBuilder[Self <: StoreModel[?], S] (val x: Self & StoreModel[S]) extends AnyVal {
       
       @scala.inline
       def setAfterEach(value: (/* payload */ js.Object, /* state */ js.Object) => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
@@ -411,7 +422,7 @@ object AltJS {
       def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
       
       @scala.inline
-      def setBindAction(value: (/* action */ Action[_], /* handler */ ActionHandler) => Unit): Self = StObject.set(x, "bindAction", js.Any.fromFunction2(value))
+      def setBindAction(value: (/* action */ Action[js.Any], /* handler */ ActionHandler) => Unit): Self = StObject.set(x, "bindAction", js.Any.fromFunction2(value))
       
       @scala.inline
       def setBindActionUndefined: Self = StObject.set(x, "bindAction", js.undefined)
@@ -423,7 +434,7 @@ object AltJS {
       def setBindActionsUndefined: Self = StObject.set(x, "bindActions", js.undefined)
       
       @scala.inline
-      def setBindListeners(value: /* config */ StringDictionary[Action[_] | Actions] => Unit): Self = StObject.set(x, "bindListeners", js.Any.fromFunction1(value))
+      def setBindListeners(value: /* config */ StringDictionary[Action[js.Any] | Actions] => Unit): Self = StObject.set(x, "bindListeners", js.Any.fromFunction1(value))
       
       @scala.inline
       def setBindListenersUndefined: Self = StObject.set(x, "bindListeners", js.undefined)
@@ -471,22 +482,22 @@ object AltJS {
       def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
       
       @scala.inline
-      def setObserve(value: /* alt */ Alt => _): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
+      def setObserve(value: /* alt */ Alt => js.Any): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
       
       @scala.inline
       def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
       
       @scala.inline
-      def setOn(value: (/* event */ lifeCycleEvents, /* callback */ js.Function0[_]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      def setOn(value: (/* event */ lifeCycleEvents, /* callback */ js.Function0[js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setOnDeserialize(value: /* fn */ js.Function1[/* data */ js.Any, _] => Unit): Self = StObject.set(x, "onDeserialize", js.Any.fromFunction1(value))
+      def setOnDeserialize(value: /* fn */ js.Function1[/* data */ js.Any, js.Any] => Unit): Self = StObject.set(x, "onDeserialize", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDeserializeUndefined: Self = StObject.set(x, "onDeserialize", js.undefined)
       
       @scala.inline
-      def setOnSerialize(value: /* fn */ js.Function1[/* data */ js.Any, _] => Unit): Self = StObject.set(x, "onSerialize", js.Any.fromFunction1(value))
+      def setOnSerialize(value: /* fn */ js.Function1[/* data */ js.Any, js.Any] => Unit): Self = StObject.set(x, "onSerialize", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSerializeUndefined: Self = StObject.set(x, "onSerialize", js.undefined)
@@ -495,7 +506,7 @@ object AltJS {
       def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
       @scala.inline
-      def setOtherwise(value: (/* data */ js.Any, /* action */ Action[_]) => Unit): Self = StObject.set(x, "otherwise", js.Any.fromFunction2(value))
+      def setOtherwise(value: (/* data */ js.Any, /* action */ Action[js.Any]) => Unit): Self = StObject.set(x, "otherwise", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOtherwiseUndefined: Self = StObject.set(x, "otherwise", js.undefined)
@@ -520,24 +531,25 @@ object AltJS {
       
       @scala.inline
       def setSetState(
-        value: (js.UndefOr[js.Function1[/* state */ S, Unit]]) with (js.UndefOr[
+        value: (js.UndefOr[js.Function1[/* state */ S, Unit]]) & (js.UndefOr[
               js.Function1[/* stateFn */ js.Function2[/* currentState */ S, /* nextState */ S, S], Unit]
             ])
       ): Self = StObject.set(x, "setState", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWaitFor(
-        value: (js.UndefOr[js.Function1[/* store */ AltStore[_], Unit]]) with (js.UndefOr[js.Function1[/* storeOrStores */ AltStore[_] | js.Array[AltStore[_]], Unit]])
+        value: (js.UndefOr[js.Function1[/* store */ AltStore[js.Any], Unit]]) & (js.UndefOr[
+              js.Function1[/* storeOrStores */ AltStore[js.Any] | js.Array[AltStore[js.Any]], Unit]
+            ])
       ): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait StoreReduce extends StObject {
     
-    var action: js.Any = js.native
+    var action: js.Any
     
-    var data: js.Any = js.native
+    var data: js.Any
   }
   object StoreReduce {
     

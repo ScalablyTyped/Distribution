@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsCheckPermissionsForRepoLegacyRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: GET = js.native
+  var method: GET
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashteamsSlashColonteam_idSlashreposSlashColonownerSlashColonrepo = js.native
+  var url: SlashteamsSlashColonteam_idSlashreposSlashColonownerSlashColonrepo
 }
 object TeamsCheckPermissionsForRepoLegacyRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: GET,
-    request: RequestRequestOptions,
-    url: SlashteamsSlashColonteam_idSlashreposSlashColonownerSlashColonrepo
-  ): TeamsCheckPermissionsForRepoLegacyRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): TeamsCheckPermissionsForRepoLegacyRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/teams/:team_id/repos/:owner/:repo")
     __obj.asInstanceOf[TeamsCheckPermissionsForRepoLegacyRequestOptions]
   }
   

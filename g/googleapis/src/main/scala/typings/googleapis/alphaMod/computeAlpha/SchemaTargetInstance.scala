@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,25 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * terminates traffic of certain protocols. (== resource_for
   * beta.targetInstances ==) (== resource_for v1.targetInstances ==)
   */
-@js.native
 trait SchemaTargetInstance extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A URL to the virtual machine instance that handles traffic for this
@@ -39,13 +37,13 @@ trait SchemaTargetInstance extends StObject {
     * - projects/project/zones/zone/instances/instance  -
     * zones/zone/instances/instance
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The type of the resource. Always compute#targetInstance for
     * target instances.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -56,30 +54,30 @@ trait SchemaTargetInstance extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * NAT option controlling how IPs are NAT&#39;ed to the instance. Currently
     * only NO_NAT (default value) is supported.
     */
-  var natPolicy: js.UndefOr[String] = js.native
+  var natPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource with the resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] URL of the zone where the target instance resides. You must
     * specify this field as part of the HTTP request URL. It is not settable as
     * a field in the request body.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaTargetInstance {
   

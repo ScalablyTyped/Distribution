@@ -4,7 +4,6 @@ import typings.videoJs.mod.videojs.AudioTrack.Kind
 import typings.videoJs.mod.videojs.TextTrack.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object videoJsStrings {
@@ -100,7 +99,9 @@ object videoJsStrings {
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait alternative extends Kind
+  sealed trait alternative
+    extends StObject
+       with Kind
   @scala.inline
   def alternative: alternative = "alternative".asInstanceOf[alternative]
   
@@ -131,13 +132,15 @@ object videoJsStrings {
   
   @js.native
   sealed trait captions
-    extends typings.videoJs.mod.videojs.TextTrack.Kind
+    extends StObject
+       with typings.videoJs.mod.videojs.TextTrack.Kind
   @scala.inline
   def captions: captions = "captions".asInstanceOf[captions]
   
   @js.native
   sealed trait chapters
-    extends typings.videoJs.mod.videojs.TextTrack.Kind
+    extends StObject
+       with typings.videoJs.mod.videojs.TextTrack.Kind
   @scala.inline
   def chapters: chapters = "chapters".asInstanceOf[chapters]
   
@@ -147,7 +150,9 @@ object videoJsStrings {
   def clickablecomponent_ : clickablecomponent_ = "clickablecomponent".asInstanceOf[clickablecomponent_]
   
   @js.native
-  sealed trait commentary extends Kind
+  sealed trait commentary
+    extends StObject
+       with Kind
   @scala.inline
   def commentary: commentary = "commentary".asInstanceOf[commentary]
   
@@ -158,13 +163,16 @@ object videoJsStrings {
   
   @js.native
   sealed trait descriptions
-    extends Kind
+    extends StObject
+       with Kind
        with typings.videoJs.mod.videojs.TextTrack.Kind
   @scala.inline
   def descriptions: descriptions = "descriptions".asInstanceOf[descriptions]
   
   @js.native
-  sealed trait disabled extends Mode
+  sealed trait disabled
+    extends StObject
+       with Mode
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
@@ -184,7 +192,9 @@ object videoJsStrings {
   def height: height = "height".asInstanceOf[height]
   
   @js.native
-  sealed trait hidden extends Mode
+  sealed trait hidden
+    extends StObject
+       with Mode
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   
@@ -204,12 +214,16 @@ object videoJsStrings {
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait main extends Kind
+  sealed trait main
+    extends StObject
+       with Kind
   @scala.inline
   def main: main = "main".asInstanceOf[main]
   
   @js.native
-  sealed trait `main-desc` extends Kind
+  sealed trait `main-desc`
+    extends StObject
+       with Kind
   @scala.inline
   def `main-desc`: `main-desc` = "main-desc".asInstanceOf[`main-desc`]
   
@@ -235,7 +249,8 @@ object videoJsStrings {
   
   @js.native
   sealed trait metadata
-    extends typings.videoJs.mod.videojs.TextTrack.Kind
+    extends StObject
+       with typings.videoJs.mod.videojs.TextTrack.Kind
   @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   
@@ -280,7 +295,9 @@ object videoJsStrings {
   def setup: setup = "setup".asInstanceOf[setup]
   
   @js.native
-  sealed trait showing extends Mode
+  sealed trait showing
+    extends StObject
+       with Mode
   @scala.inline
   def showing: showing = "showing".asInstanceOf[showing]
   
@@ -291,7 +308,8 @@ object videoJsStrings {
   
   @js.native
   sealed trait subtitles
-    extends typings.videoJs.mod.videojs.TextTrack.Kind
+    extends StObject
+       with typings.videoJs.mod.videojs.TextTrack.Kind
   @scala.inline
   def subtitles: subtitles = "subtitles".asInstanceOf[subtitles]
   
@@ -311,7 +329,9 @@ object videoJsStrings {
   def timeTooltip_ : timeTooltip_ = "timeTooltip".asInstanceOf[timeTooltip_]
   
   @js.native
-  sealed trait translation extends Kind
+  sealed trait translation
+    extends StObject
+       with Kind
   @scala.inline
   def translation: translation = "translation".asInstanceOf[translation]
   

@@ -5,17 +5,15 @@ import typings.qlik.qlikStrings.remove
 import typings.qlik.qlikStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Patch extends StObject {
   
-  var qOp: add | remove | replace = js.native
+  var qOp: add | remove | replace
   
-  var qPath: String = js.native
+  var qPath: String
   
-  var qValue: String = js.native
+  var qValue: String
 }
 object Patch {
   

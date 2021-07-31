@@ -3,17 +3,15 @@ package typings.sharepoint.SP
 import typings.sharepoint.anon.High
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextPermissions extends StObject {
   
-  def fromJson(json: High): Unit = js.native
+  def fromJson(json: High): Unit
   
-  def has(perm: Double): Boolean = js.native
+  def has(perm: Double): Boolean
   
-  def hasPermissions(high: Double, low: Double): Boolean = js.native
+  def hasPermissions(high: Double, low: Double): Boolean
 }
 object ContextPermissions {
   

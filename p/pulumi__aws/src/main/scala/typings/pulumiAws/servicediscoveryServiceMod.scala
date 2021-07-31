@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicediscoveryServiceMod {
@@ -28,7 +27,7 @@ object servicediscoveryServiceMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ServiceArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ServiceArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -74,6 +73,10 @@ object servicediscoveryServiceMod {
   /* static members */
   object Service {
     
+    @JSImport("@pulumi/aws/servicediscovery/service", "Service")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Service resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -83,67 +86,61 @@ object servicediscoveryServiceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/servicediscovery/service", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Service = js.native
-    @JSImport("@pulumi/aws/servicediscovery/service", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Service = js.native
-    @JSImport("@pulumi/aws/servicediscovery/service", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceState): Service = js.native
-    @JSImport("@pulumi/aws/servicediscovery/service", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): Service = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceState): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
     
     /**
       * Returns true if the given object is an instance of Service.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/servicediscovery/service", "Service.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/service.Service */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/service.Service */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicediscovery/service.Service */ Boolean]
   }
   
-  @js.native
   trait ServiceArgs extends StObject {
     
     /**
       * The description of the service.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A complex type that contains information about the resource record sets that you want Amazon Route 53 to create when you register an instance.
       */
-    val dnsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.servicediscovery.ServiceDnsConfig]] = js.native
+    val dnsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.servicediscovery.ServiceDnsConfig]] = js.undefined
     
     /**
       * A complex type that contains settings for an optional health check. Only for Public DNS namespaces.
       */
-    val healthCheckConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckConfig]] = js.native
+    val healthCheckConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckConfig]] = js.undefined
     
     /**
       * A complex type that contains settings for ECS managed health checks.
       */
     val healthCheckCustomConfig: js.UndefOr[
         Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckCustomConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the service.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the namespace to use for DNS configuration.
       */
-    val namespaceId: js.UndefOr[Input[String]] = js.native
+    val namespaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the service.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ServiceArgs {
     
@@ -200,50 +197,49 @@ object servicediscoveryServiceMod {
     }
   }
   
-  @js.native
   trait ServiceState extends StObject {
     
     /**
       * The ARN of the service.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the service.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A complex type that contains information about the resource record sets that you want Amazon Route 53 to create when you register an instance.
       */
-    val dnsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.servicediscovery.ServiceDnsConfig]] = js.native
+    val dnsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.servicediscovery.ServiceDnsConfig]] = js.undefined
     
     /**
       * A complex type that contains settings for an optional health check. Only for Public DNS namespaces.
       */
-    val healthCheckConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckConfig]] = js.native
+    val healthCheckConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckConfig]] = js.undefined
     
     /**
       * A complex type that contains settings for ECS managed health checks.
       */
     val healthCheckCustomConfig: js.UndefOr[
         Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckCustomConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the service.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the namespace to use for DNS configuration.
       */
-    val namespaceId: js.UndefOr[Input[String]] = js.native
+    val namespaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the service.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ServiceState {
     

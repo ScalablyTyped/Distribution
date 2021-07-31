@@ -2,7 +2,6 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * increases or decreases the number of replica pods a replication controller
   * has based on the resource usage of the existing pods.
   */
-@js.native
 trait SchemaHorizontalPodAutoscaling extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaHorizontalPodAutoscaling extends StObject {
     * When enabled, it ensures that a Heapster pod is running in the cluster,
     * which is also used by the Cloud Monitoring service.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaHorizontalPodAutoscaling {
   

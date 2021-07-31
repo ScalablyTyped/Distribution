@@ -3,21 +3,19 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 import typings.dialogflow.mod.google.protobuf.IStruct
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Context. */
-@js.native
 trait IContext extends StObject {
   
   /** Context lifespanCount */
-  var lifespanCount: js.UndefOr[Double | Null] = js.native
+  var lifespanCount: js.UndefOr[Double | Null] = js.undefined
   
   /** Context name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** Context parameters */
-  var parameters: js.UndefOr[IStruct | Null] = js.native
+  var parameters: js.UndefOr[IStruct | Null] = js.undefined
 }
 object IContext {
   

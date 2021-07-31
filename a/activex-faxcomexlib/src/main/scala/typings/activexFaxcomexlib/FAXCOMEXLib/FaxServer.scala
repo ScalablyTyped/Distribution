@@ -3,27 +3,27 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxServer Class */
-@js.native
-trait FaxServer extends IFaxServer {
+trait FaxServer
+  extends StObject
+     with IFaxServer {
   
   /** Fax server configuration */
-  val Configuration: FaxConfiguration = js.native
+  val Configuration: FaxConfiguration
   
   /** FaxAccount for the current connection */
-  val CurrentAccount: FaxAccount = js.native
+  val CurrentAccount: FaxAccount
   
   @JSName("FAXCOMEXLib.FaxServer_typekey")
-  var FAXCOMEXLibDotFaxServer_typekey: FaxServer = js.native
+  var FAXCOMEXLibDotFaxServer_typekey: FaxServer
   
   /** The FaxAccountSet configuration object */
-  val FaxAccountSet: typings.activexFaxcomexlib.FAXCOMEXLib.FaxAccountSet = js.native
+  val FaxAccountSet: typings.activexFaxcomexlib.FAXCOMEXLib.FaxAccountSet
   
   /** The security configuration object */
-  val Security2: FaxSecurity2 = js.native
+  val Security2: FaxSecurity2
 }
 object FaxServer {
   
@@ -57,7 +57,7 @@ object FaxServer {
     Security: FaxSecurity,
     Security2: FaxSecurity2,
     ServerName: String,
-    SetExtensionProperty: (String, SafeArray[_]) => Unit,
+    SetExtensionProperty: (String, SafeArray[js.Any]) => Unit,
     UnregisterDeviceProvider: String => Unit,
     UnregisterInboundRoutingExtension: String => Unit
   ): FaxServer = {

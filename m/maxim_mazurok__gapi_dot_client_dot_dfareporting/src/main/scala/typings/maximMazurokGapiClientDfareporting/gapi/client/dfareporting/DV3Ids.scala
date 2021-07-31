@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DV3Ids extends StObject {
   
   /** Campaign ID for DV360. */
-  var dvCampaignId: js.UndefOr[String] = js.native
+  var dvCampaignId: js.UndefOr[String] = js.undefined
   
   /** Creative ID for DV360. */
-  var dvCreativeId: js.UndefOr[String] = js.native
+  var dvCreativeId: js.UndefOr[String] = js.undefined
   
   /** Insertion Order ID for DV360. */
-  var dvInsertionOrderId: js.UndefOr[String] = js.native
+  var dvInsertionOrderId: js.UndefOr[String] = js.undefined
   
   /** Line Item ID for DV360. */
-  var dvLineItemId: js.UndefOr[String] = js.native
+  var dvLineItemId: js.UndefOr[String] = js.undefined
   
   /** Site ID for DV360. */
-  var dvSiteId: js.UndefOr[String] = js.native
+  var dvSiteId: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#dV3Ids". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object DV3Ids {
   

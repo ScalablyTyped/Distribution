@@ -2,7 +2,6 @@ package typings.bigi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,72 +9,67 @@ object mod {
   @JSImport("bigi", JSImport.Namespace)
   @js.native
   class ^ protected ()
-    extends typings.bigi.mod.bigi {
+    extends StObject
+       with typings.bigi.mod.bigi {
     def this(a: js.Any, b: js.Any, c: js.Any) = this()
   }
+  @JSImport("bigi", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bigi", "ONE")
   @js.native
-  val ONE: typings.bigi.mod.bigi with Constants = js.native
+  val ONE: typings.bigi.mod.bigi & Constants = js.native
   
   @JSImport("bigi", "ZERO")
   @js.native
-  val ZERO: typings.bigi.mod.bigi with Constants = js.native
+  val ZERO: typings.bigi.mod.bigi & Constants = js.native
   
   /* static member */
-  @JSImport("bigi", "fromBuffer")
-  @js.native
-  def fromBuffer(buffer: js.Any): typings.bigi.mod.bigi = js.native
+  @scala.inline
+  def fromBuffer(buffer: js.Any): typings.bigi.mod.bigi = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bigi.mod.bigi]
   
   /* static member */
-  @JSImport("bigi", "fromByteArrayUnsigned")
-  @js.native
-  def fromByteArrayUnsigned(): js.Array[Double] = js.native
-  @JSImport("bigi", "fromByteArrayUnsigned")
-  @js.native
-  def fromByteArrayUnsigned(byteArray: js.Any): js.Array[Double] = js.native
+  @scala.inline
+  def fromByteArrayUnsigned(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArrayUnsigned")().asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def fromByteArrayUnsigned(byteArray: js.Any): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArrayUnsigned")(byteArray.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   /* static member */
-  @JSImport("bigi", "fromDERInteger")
-  @js.native
-  def fromDERInteger(): Double = js.native
-  @JSImport("bigi", "fromDERInteger")
-  @js.native
-  def fromDERInteger(byteArray: js.Any): Double = js.native
+  @scala.inline
+  def fromDERInteger(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDERInteger")().asInstanceOf[Double]
+  @scala.inline
+  def fromDERInteger(byteArray: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDERInteger")(byteArray.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("bigi", "fromHex")
-  @js.native
-  def fromHex(hex: String): typings.bigi.mod.bigi = js.native
+  @scala.inline
+  def fromHex(hex: String): typings.bigi.mod.bigi = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bigi.mod.bigi]
   
   /* static member */
-  @JSImport("bigi", "isBigInteger")
-  @js.native
-  def isBigInteger(obj: js.Any, check_ver: js.Any): /* is bigi.bigi.bigi */ Boolean = js.native
+  @scala.inline
+  def isBigInteger(obj: js.Any, check_ver: js.Any): /* is bigi.bigi.bigi */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBigInteger")(obj.asInstanceOf[js.Any], check_ver.asInstanceOf[js.Any])).asInstanceOf[/* is bigi.bigi.bigi */ Boolean]
   
   /* static member */
-  @JSImport("bigi", "valueOf")
-  @js.native
-  def valueOf_(i: js.Any): typings.bigi.mod.bigi = js.native
+  @scala.inline
+  def valueOf_(i: js.Any): typings.bigi.mod.bigi = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(i.asInstanceOf[js.Any]).asInstanceOf[typings.bigi.mod.bigi]
   
-  @js.native
   trait Constants extends StObject {
     
-    val DB: Double = js.native
+    val DB: Double
     
-    val DM: Double = js.native
+    val DM: Double
     
-    val DV: Double = js.native
+    val DV: Double
     
-    val F1: Double = js.native
+    val F1: Double
     
-    val F2: Double = js.native
+    val F2: Double
     
-    val FV: Double = js.native
+    val FV: Double
     
-    val s: Double = js.native
+    val s: Double
     
-    val t: Double = js.native
+    val t: Double
   }
   object Constants {
     

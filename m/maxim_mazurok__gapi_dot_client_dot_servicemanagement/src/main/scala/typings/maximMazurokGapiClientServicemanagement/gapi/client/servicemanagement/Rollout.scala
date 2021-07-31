@@ -2,36 +2,34 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rollout extends StObject {
   
   /** Creation time of the rollout. Readonly. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** This field is deprecated and will be deleted. Please remove usage of this field. */
-  var createdBy: js.UndefOr[String] = js.native
+  var createdBy: js.UndefOr[String] = js.undefined
   
   /** The strategy associated with a rollout to delete a `ManagedService`. Readonly. */
-  var deleteServiceStrategy: js.UndefOr[js.Any] = js.native
+  var deleteServiceStrategy: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Optional. Unique identifier of this Rollout. Must be no longer than 63 characters and only lower case letters, digits, '.', '_' and '-' are allowed. If not specified by client, the
     * server will generate one. The generated id will have the form of , where "date" is the create date in ISO 8601 format. "revision number" is a monotonically increasing positive
     * number that is reset every day for each service. An example of the generated rollout_id is '2016-02-16r1'
     */
-  var rolloutId: js.UndefOr[String] = js.native
+  var rolloutId: js.UndefOr[String] = js.undefined
   
   /** The name of the service associated with this Rollout. */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
   
   /** The status of this rollout. Readonly. In case of a failed rollout, the system will automatically rollback to the current Rollout version. Readonly. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** Google Service Control selects service configurations based on traffic percentage. */
-  var trafficPercentStrategy: js.UndefOr[TrafficPercentStrategy] = js.native
+  var trafficPercentStrategy: js.UndefOr[TrafficPercentStrategy] = js.undefined
 }
 object Rollout {
   

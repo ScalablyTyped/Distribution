@@ -9,9 +9,9 @@ Typings are for version 4.13.1
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cli-server-api |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 6718975 |
+| # releases         | 9 |
+| # dependents       | 4 |
+| # downloads        | 10978658 |
 | # stars            | 0 |
 
 ## Links

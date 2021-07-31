@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BrushType extends js.Object {
+trait BrushType extends StObject {
   
   /**
     * The brush type for ripples.
@@ -16,7 +15,7 @@ trait BrushType extends js.Object {
     * "fill"
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.rippleEffect.brushType
     */
-  var brushType: js.UndefOr[String] = js.native
+  var brushType: js.UndefOr[String] = js.undefined
   
   /**
     * The period duration of animation, in seconds.
@@ -26,7 +25,7 @@ trait BrushType extends js.Object {
     * 4
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.rippleEffect.period
     */
-  var period: js.UndefOr[Double] = js.native
+  var period: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum zooming scale of ripples in animation.
@@ -36,7 +35,7 @@ trait BrushType extends js.Object {
     * 2.5
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.rippleEffect.scale
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
 }
 object BrushType {
   
@@ -47,36 +46,24 @@ object BrushType {
   }
   
   @scala.inline
-  implicit class BrushTypeOps[Self <: BrushType] (val x: Self) extends AnyVal {
+  implicit class BrushTypeMutableBuilder[Self <: BrushType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrushType(value: String): Self = StObject.set(x, "brushType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrushTypeUndefined: Self = StObject.set(x, "brushType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrushType(value: String): Self = this.set("brushType", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def deleteBrushType: Self = this.set("brushType", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Double): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

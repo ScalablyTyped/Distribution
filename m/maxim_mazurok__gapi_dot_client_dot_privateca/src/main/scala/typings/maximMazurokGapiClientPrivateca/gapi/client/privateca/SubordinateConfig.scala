@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubordinateConfig extends StObject {
   
   /**
     * Required. This can refer to a CertificateAuthority in the same project that was used to create a subordinate CertificateAuthority. This field is used for information and usability
     * purposes only. The resource name is in the format `projects/∗/locations/∗/certificateAuthorities/ *`.
     */
-  var certificateAuthority: js.UndefOr[String] = js.native
+  var certificateAuthority: js.UndefOr[String] = js.undefined
   
   /** Required. Contains the PEM certificate chain for the issuers of this CertificateAuthority, but not pem certificate for this CA itself. */
-  var pemIssuerChain: js.UndefOr[SubordinateConfigChain] = js.native
+  var pemIssuerChain: js.UndefOr[SubordinateConfigChain] = js.undefined
 }
 object SubordinateConfig {
   

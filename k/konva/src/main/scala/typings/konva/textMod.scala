@@ -6,10 +6,13 @@ import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod {
+  
+  @JSImport("konva/types/shapes/Text", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("konva/types/shapes/Text", "Text")
   @js.native
@@ -121,36 +124,36 @@ object textMod {
     var wrap_Original: GetSet[String, this.type] = js.native
   }
   
-  @JSImport("konva/types/shapes/Text", "stringToArray")
-  @js.native
-  def stringToArray(string: String): js.Array[String] = js.native
+  @scala.inline
+  def stringToArray(string: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToArray")(string.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @js.native
-  trait TextConfig extends ShapeConfig {
+  trait TextConfig
+    extends StObject
+       with ShapeConfig {
     
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
-    var ellipsis: js.UndefOr[Boolean] = js.native
+    var ellipsis: js.UndefOr[Boolean] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
-    var fontVariant: js.UndefOr[String] = js.native
+    var fontVariant: js.UndefOr[String] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var textDecoration: js.UndefOr[String] = js.native
+    var textDecoration: js.UndefOr[String] = js.undefined
     
-    var verticalAlign: js.UndefOr[String] = js.native
+    var verticalAlign: js.UndefOr[String] = js.undefined
     
-    var wrap: js.UndefOr[String] = js.native
+    var wrap: js.UndefOr[String] = js.undefined
   }
   object TextConfig {
     

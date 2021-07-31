@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportTaskStatus extends StObject {
   
   /**
     * The status code of the export task.
     */
-  var code: js.UndefOr[ExportTaskStatusCode] = js.native
+  var code: js.UndefOr[ExportTaskStatusCode] = js.undefined
   
   /**
     * The status message related to the status code.
     */
-  var message: js.UndefOr[ExportTaskStatusMessage] = js.native
+  var message: js.UndefOr[ExportTaskStatusMessage] = js.undefined
 }
 object ExportTaskStatus {
   

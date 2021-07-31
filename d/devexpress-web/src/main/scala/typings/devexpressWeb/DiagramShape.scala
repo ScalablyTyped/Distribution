@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides information about a shape.
   */
-@js.native
-trait DiagramShape extends DiagramItem {
+trait DiagramShape
+  extends StObject
+     with DiagramItem {
   
   /**
     * Gets the shape's text.
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * Gets the shape type.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object DiagramShape {
   

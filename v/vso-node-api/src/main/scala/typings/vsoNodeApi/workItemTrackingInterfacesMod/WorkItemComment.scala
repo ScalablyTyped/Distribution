@@ -3,19 +3,19 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkItemComment extends WorkItemTrackingResource {
+trait WorkItemComment
+  extends StObject
+     with WorkItemTrackingResource {
   
-  var revisedBy: IdentityReference = js.native
+  var revisedBy: IdentityReference
   
-  var revisedDate: Date = js.native
+  var revisedDate: Date
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var text: String = js.native
+  var text: String
 }
 object WorkItemComment {
   

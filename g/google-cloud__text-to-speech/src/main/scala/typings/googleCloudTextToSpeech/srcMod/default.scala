@@ -6,7 +6,6 @@ import typings.googleCloudTextToSpeech.anon.Typeofv1beta1
 import typings.googleGax.clientInterfaceMod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object default {

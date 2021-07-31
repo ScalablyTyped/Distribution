@@ -2,36 +2,34 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoFormatRules extends StObject {
   
-  def Add(Name: String): AutoFormatRule = js.native
+  def Add(Name: String): AutoFormatRule
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Insert(Name: String, Index: js.Any): AutoFormatRule = js.native
+  def Insert(Name: String, Index: js.Any): AutoFormatRule
   
-  def Item(Index: js.Any): AutoFormatRule = js.native
+  def Item(Index: js.Any): AutoFormatRule
   
   @JSName("Outlook.AutoFormatRules_typekey")
-  var OutlookDotAutoFormatRules_typekey: AutoFormatRules = js.native
+  var OutlookDotAutoFormatRules_typekey: AutoFormatRules
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Remove(Index: js.Any): Unit = js.native
+  def Remove(Index: js.Any): Unit
   
-  def RemoveAll(): Unit = js.native
+  def RemoveAll(): Unit
   
-  def Save(): Unit = js.native
+  def Save(): Unit
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object AutoFormatRules {
   

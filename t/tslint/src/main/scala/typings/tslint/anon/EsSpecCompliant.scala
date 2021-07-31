@@ -2,17 +2,15 @@ package typings.tslint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EsSpecCompliant extends StObject {
   
-  var esSpecCompliant: Boolean = js.native
+  var esSpecCompliant: Boolean
   
-  var multiline: String = js.native
+  var multiline: String
   
-  var singleline: String = js.native
+  var singleline: String
 }
 object EsSpecCompliant {
   

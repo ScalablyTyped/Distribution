@@ -2,13 +2,15 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- org.scalablytyped.runtime.StObject because Already inherited
 - org.scalablytyped.runtime.StringDictionary because Already inherited */ @JSImport("survey-knockout", "JsonObjectProperty")
 @js.native
-class JsonObjectProperty protected () extends IObject {
+class JsonObjectProperty protected ()
+  extends StObject
+     with IObject {
   def this(classInfo: JsonMetadataClass, name: String) = this()
   def this(classInfo: JsonMetadataClass, name: String, isRequired: Boolean) = this()
   
@@ -25,7 +27,7 @@ class JsonObjectProperty protected () extends IObject {
   /**
     * Depricated, please use getChoices
     */
-  val choices: js.Array[_] = js.native
+  val choices: js.Array[js.Any] = js.native
   
   val classInfo: JsonMetadataClass = js.native
   
@@ -43,8 +45,8 @@ class JsonObjectProperty protected () extends IObject {
   
   def getBaseValue(): String = js.native
   
-  def getChoices(obj: js.Any): js.Array[_] = js.native
-  def getChoices(obj: js.Any, choicesCallback: js.Any): js.Array[_] = js.native
+  def getChoices(obj: js.Any): js.Array[js.Any] = js.native
+  def getChoices(obj: js.Any, choicesCallback: js.Any): js.Array[js.Any] = js.native
   
   def getClassName(className: String): String = js.native
   
@@ -58,9 +60,9 @@ class JsonObjectProperty protected () extends IObject {
   
   val hasChoices: Boolean = js.native
   
-  val hasToUseGetValue: String | (js.Function1[/* obj */ js.Any, _]) = js.native
+  val hasToUseGetValue: String | (js.Function1[/* obj */ js.Any, js.Any]) = js.native
   
-  val hasToUseSetValue: String | (js.Function3[/* obj */ js.Any, /* value */ js.Any, /* jsonConv */ JsonObject, _]) = js.native
+  val hasToUseSetValue: String | (js.Function3[/* obj */ js.Any, /* value */ js.Any, /* jsonConv */ JsonObject, js.Any]) = js.native
   
   val id: Double = js.native
   
@@ -115,8 +117,8 @@ class JsonObjectProperty protected () extends IObject {
   
   def setBaseValue(`val`: js.Any): Unit = js.native
   
-  def setChoices(value: js.Array[_]): Unit = js.native
-  def setChoices(value: js.Array[_], valueFunc: js.Function1[/* obj */ js.Any, js.Array[_]]): Unit = js.native
+  def setChoices(value: js.Array[js.Any]): Unit = js.native
+  def setChoices(value: js.Array[js.Any], valueFunc: js.Function1[/* obj */ js.Any, js.Array[js.Any]]): Unit = js.native
   
   def setValue(obj: js.Any, value: js.Any, jsonConv: JsonObject): Unit = js.native
   
@@ -133,7 +135,10 @@ class JsonObjectProperty protected () extends IObject {
 /* static members */
 object JsonObjectProperty {
   
-  @JSImport("survey-knockout", "JsonObjectProperty.getItemValuesDefaultValue")
+  @JSImport("survey-knockout", "JsonObjectProperty")
   @js.native
-  def getItemValuesDefaultValue(`val`: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getItemValuesDefaultValue(`val`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemValuesDefaultValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

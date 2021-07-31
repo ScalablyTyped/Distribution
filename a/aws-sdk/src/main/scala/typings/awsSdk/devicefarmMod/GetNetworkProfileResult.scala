@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNetworkProfileResult extends StObject {
   
   /**
     * The network profile.
     */
-  var networkProfile: js.UndefOr[NetworkProfile] = js.native
+  var networkProfile: js.UndefOr[NetworkProfile] = js.undefined
 }
 object GetNetworkProfileResult {
   

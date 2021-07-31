@@ -2,80 +2,80 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PaymentNotice request
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait PaymentNotice extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait PaymentNotice
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'created'.
     */
-  var _created: js.UndefOr[Element] = js.native
+  var _created: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'statusDate'.
     */
-  var _statusDate: js.UndefOr[Element] = js.native
+  var _statusDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Creation date
     */
-  var created: js.UndefOr[dateTime] = js.native
+  var created: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Business Identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Responsible organization
     */
-  var organization: js.UndefOr[Reference] = js.native
+  var organization: js.UndefOr[Reference] = js.undefined
   
   /**
     * Whether payment has been sent or cleared
     */
-  var paymentStatus: js.UndefOr[CodeableConcept] = js.native
+  var paymentStatus: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Responsible practitioner
     */
-  var provider: js.UndefOr[Reference] = js.native
+  var provider: js.UndefOr[Reference] = js.undefined
   
   /**
     * Request reference
     */
-  var request: js.UndefOr[Reference] = js.native
+  var request: js.UndefOr[Reference] = js.undefined
   
   /**
     * Response reference
     */
-  var response: js.UndefOr[Reference] = js.native
+  var response: js.UndefOr[Reference] = js.undefined
   
   /**
     * active | cancelled | draft | entered-in-error
     */
-  var status: js.UndefOr[code] = js.native
+  var status: js.UndefOr[code] = js.undefined
   
   /**
     * Payment or clearing date
     */
-  var statusDate: js.UndefOr[date] = js.native
+  var statusDate: js.UndefOr[date] = js.undefined
   
   /**
     * Insurer or Regulatory body
     */
-  var target: js.UndefOr[Reference] = js.native
+  var target: js.UndefOr[Reference] = js.undefined
 }
 object PaymentNotice {
   

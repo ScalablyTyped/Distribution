@@ -2,26 +2,24 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttackVolume extends StObject {
   
   /**
     * A statistics object that uses bits per second as the unit. This is included for network level attacks. 
     */
-  var BitsPerSecond: js.UndefOr[AttackVolumeStatistics] = js.native
+  var BitsPerSecond: js.UndefOr[AttackVolumeStatistics] = js.undefined
   
   /**
     * A statistics object that uses packets per second as the unit. This is included for network level attacks. 
     */
-  var PacketsPerSecond: js.UndefOr[AttackVolumeStatistics] = js.native
+  var PacketsPerSecond: js.UndefOr[AttackVolumeStatistics] = js.undefined
   
   /**
     * A statistics object that uses requests per second as the unit. This is included for application level attacks, and is only available for accounts that are subscribed to Shield Advanced.
     */
-  var RequestsPerSecond: js.UndefOr[AttackVolumeStatistics] = js.native
+  var RequestsPerSecond: js.UndefOr[AttackVolumeStatistics] = js.undefined
 }
 object AttackVolume {
   

@@ -2,13 +2,11 @@ package typings.exceljs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeEmpty extends StObject {
   
-  var includeEmpty: Boolean = js.native
+  var includeEmpty: Boolean
 }
 object IncludeEmpty {
   

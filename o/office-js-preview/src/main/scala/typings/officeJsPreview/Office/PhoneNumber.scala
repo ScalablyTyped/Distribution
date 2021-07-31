@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,24 +16,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
-@js.native
 trait PhoneNumber extends StObject {
   
   /**
     * Gets the text that was identified in an item as a phone number.
     */
-  var originalPhoneString: String = js.native
+  var originalPhoneString: String
   
   /**
     * Gets a string containing a phone number. This string contains only the digits of the telephone number and excludes characters
     * like parentheses and hyphens, if they exist in the original item.
     */
-  var phoneString: String = js.native
+  var phoneString: String
   
   /**
     * Gets a string that identifies the type of phone number: Home, Work, Mobile, Unspecified.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object PhoneNumber {
   

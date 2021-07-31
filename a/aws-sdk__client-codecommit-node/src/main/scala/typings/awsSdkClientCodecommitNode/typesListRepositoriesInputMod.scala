@@ -8,13 +8,13 @@ import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListRepositoriesInputMod {
   
-  @js.native
-  trait ListRepositoriesInput extends InputTypesUnion {
+  trait ListRepositoriesInput
+    extends StObject
+       with InputTypesUnion {
     
     /**
       * An object that may be queried to determine if the underlying operation has been aborted.
@@ -22,7 +22,7 @@ object typesListRepositoriesInputMod {
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
       */
     @JSName("$abortSignal")
-    var $abortSignal: js.UndefOr[AbortSignal] = js.native
+    var $abortSignal: js.UndefOr[AbortSignal] = js.undefined
     
     /**
       * Per-request HTTP configuration options. If set, any options specified will override the corresponding HTTP option set on the client for this command.
@@ -30,28 +30,28 @@ object typesListRepositoriesInputMod {
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The maximum number of times this operation should be retried. If set, this value will override the `maxRetries` configuration set on the client for this command.
       */
     @JSName("$maxRetries")
-    var $maxRetries: js.UndefOr[Double] = js.native
+    var $maxRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>An enumeration token that allows the operation to batch the results of the operation. Batch sizes are 1,000 for list repository operations. When the client sends the token back to AWS CodeCommit, another page of 1,000 records is retrieved.</p>
       */
-    var nextToken: js.UndefOr[String] = js.native
+    var nextToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The order in which to sort the results of a list repositories operation.</p>
       */
-    var order: js.UndefOr[ascending | descending | String] = js.native
+    var order: js.UndefOr[ascending | descending | String] = js.undefined
     
     /**
       * <p>The criteria used to sort the results of a list repositories operation.</p>
       */
-    var sortBy: js.UndefOr[repositoryName | lastModifiedDate | String] = js.native
+    var sortBy: js.UndefOr[repositoryName | lastModifiedDate | String] = js.undefined
   }
   object ListRepositoriesInput {
     

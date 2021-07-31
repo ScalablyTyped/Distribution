@@ -2,56 +2,54 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bot extends StObject {
   
   /**
     * The bot email address.
     */
-  var BotEmail: js.UndefOr[SensitiveString] = js.native
+  var BotEmail: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * The bot ID.
     */
-  var BotId: js.UndefOr[String] = js.native
+  var BotId: js.UndefOr[String] = js.undefined
   
   /**
     * The bot type.
     */
-  var BotType: js.UndefOr[typings.awsSdk.chimeMod.BotType] = js.native
+  var BotType: js.UndefOr[typings.awsSdk.chimeMod.BotType] = js.undefined
   
   /**
     * The bot creation timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * When true, the bot is stopped from running in your account.
     */
-  var Disabled: js.UndefOr[NullableBoolean] = js.native
+  var Disabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The bot display name.
     */
-  var DisplayName: js.UndefOr[SensitiveString] = js.native
+  var DisplayName: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * The security token used to authenticate Amazon Chime with the outgoing event endpoint.
     */
-  var SecurityToken: js.UndefOr[SensitiveString] = js.native
+  var SecurityToken: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * The updated bot timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The unique ID for the bot user.
     */
-  var UserId: js.UndefOr[String] = js.native
+  var UserId: js.UndefOr[String] = js.undefined
 }
 object Bot {
   

@@ -7,47 +7,42 @@ import typings.std.Record
 import typings.xmlJs.mod.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlManipulationMod {
   
-  @JSImport("@expo/configure-splash-screen/build/xml-manipulation", "mergeXmlElements")
+  @JSImport("@expo/configure-splash-screen/build/xml-manipulation", JSImport.Namespace)
   @js.native
-  def mergeXmlElements(current: Element, expected: ExpectedElement): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@expo/configure-splash-screen/build/xml-manipulation", "readXmlFile")
-  @js.native
-  def readXmlFile(filePath: String): js.Promise[Element] = js.native
-  @JSImport("@expo/configure-splash-screen/build/xml-manipulation", "readXmlFile")
-  @js.native
-  def readXmlFile(filePath: String, fallbackContent: String): js.Promise[Element] = js.native
-  @JSImport("@expo/configure-splash-screen/build/xml-manipulation", "readXmlFile")
-  @js.native
-  def readXmlFile(filePath: String, fallbackContent: Element): js.Promise[Element] = js.native
+  @scala.inline
+  def mergeXmlElements(current: Element, expected: ExpectedElement): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeXmlElements")(current.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @JSImport("@expo/configure-splash-screen/build/xml-manipulation", "writeXmlFile")
-  @js.native
-  def writeXmlFile(filePath: String, xml: Element): js.Promise[Unit] = js.native
+  @scala.inline
+  def readXmlFile(filePath: String): js.Promise[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("readXmlFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Element]]
+  @scala.inline
+  def readXmlFile(filePath: String, fallbackContent: String): js.Promise[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("readXmlFile")(filePath.asInstanceOf[js.Any], fallbackContent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Element]]
+  @scala.inline
+  def readXmlFile(filePath: String, fallbackContent: Element): js.Promise[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("readXmlFile")(filePath.asInstanceOf[js.Any], fallbackContent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Element]]
   
-  @JSImport("@expo/configure-splash-screen/build/xml-manipulation", "writeXmlFileOrRemoveFileUponNoResources")
-  @js.native
-  def writeXmlFileOrRemoveFileUponNoResources(filePath: String, element: Element): js.Promise[Unit] = js.native
-  @JSImport("@expo/configure-splash-screen/build/xml-manipulation", "writeXmlFileOrRemoveFileUponNoResources")
-  @js.native
-  def writeXmlFileOrRemoveFileUponNoResources(filePath: String, element: Element, hasDisregardComments: DisregardComments): js.Promise[Unit] = js.native
+  @scala.inline
+  def writeXmlFile(filePath: String, xml: Element): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeXmlFile")(filePath.asInstanceOf[js.Any], xml.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@expo/configure-splash-screen/build/xml-manipulation", "xmlElementsEqual")
-  @js.native
-  def xmlElementsEqual(a: Element, b: Element): Boolean = js.native
-  @JSImport("@expo/configure-splash-screen/build/xml-manipulation", "xmlElementsEqual")
-  @js.native
-  def xmlElementsEqual(a: Element, b: Element, hasDisregardComments: DisregardComments): Boolean = js.native
+  @scala.inline
+  def writeXmlFileOrRemoveFileUponNoResources(filePath: String, element: Element): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeXmlFileOrRemoveFileUponNoResources")(filePath.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def writeXmlFileOrRemoveFileUponNoResources(filePath: String, element: Element, hasDisregardComments: DisregardComments): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeXmlFileOrRemoveFileUponNoResources")(filePath.asInstanceOf[js.Any], element.asInstanceOf[js.Any], hasDisregardComments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
-  trait ExpectedCommentType extends ExpectedElement {
+  @scala.inline
+  def xmlElementsEqual(a: Element, b: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElementsEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def xmlElementsEqual(a: Element, b: Element, hasDisregardComments: DisregardComments): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElementsEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], hasDisregardComments.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  trait ExpectedCommentType
+    extends StObject
+       with ExpectedElement {
     
-    var comment: String = js.native
+    var comment: String
   }
   object ExpectedCommentType {
     
@@ -101,14 +96,15 @@ object xmlManipulationMod {
   
   type ExpectedElementAttributes = Record[String, WithExplicitNewValue[js.UndefOr[String | Double]]]
   
-  @js.native
-  trait ExpectedElementType extends ExpectedElement {
+  trait ExpectedElementType
+    extends StObject
+       with ExpectedElement {
     
-    var attributes: js.UndefOr[ExpectedElementAttributes] = js.native
+    var attributes: js.UndefOr[ExpectedElementAttributes] = js.undefined
     
-    var elements: js.UndefOr[ExpectedElements] = js.native
+    var elements: js.UndefOr[ExpectedElements] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object ExpectedElementType {
     
@@ -143,10 +139,11 @@ object xmlManipulationMod {
   
   type ExpectedElements = WithExplicitNewValue[js.Array[WithExplicitIndex[WithDeletionFlag[ExpectedElement]]]]
   
-  @js.native
-  trait ExpectedElementsType extends ExpectedElement {
+  trait ExpectedElementsType
+    extends StObject
+       with ExpectedElement {
     
-    var elements: ExpectedElements = js.native
+    var elements: ExpectedElements
   }
   object ExpectedElementsType {
     
@@ -167,10 +164,11 @@ object xmlManipulationMod {
     }
   }
   
-  @js.native
-  trait ExpectedTextType extends ExpectedElement {
+  trait ExpectedTextType
+    extends StObject
+       with ExpectedElement {
     
-    var text: String | Double | Boolean = js.native
+    var text: String | Double | Boolean
   }
   object ExpectedTextType {
     
@@ -188,10 +186,9 @@ object xmlManipulationMod {
     }
   }
   
-  @js.native
   trait ExplicitNewValue[T] extends StObject {
     
-    var newValue: T = js.native
+    var newValue: T
   }
   object ExplicitNewValue {
     
@@ -202,16 +199,16 @@ object xmlManipulationMod {
     }
     
     @scala.inline
-    implicit class ExplicitNewValueMutableBuilder[Self <: ExplicitNewValue[_], T] (val x: Self with ExplicitNewValue[T]) extends AnyVal {
+    implicit class ExplicitNewValueMutableBuilder[Self <: ExplicitNewValue[?], T] (val x: Self & ExplicitNewValue[T]) extends AnyVal {
       
       @scala.inline
       def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     }
   }
   
-  type WithDeletionFlag[T] = T with DeletionFlag
+  type WithDeletionFlag[T] = T & DeletionFlag
   
-  type WithExplicitIndex[T] = T with Idx
+  type WithExplicitIndex[T] = T & Idx
   
   type WithExplicitNewValue[T] = T | ExplicitNewValue[T]
 }

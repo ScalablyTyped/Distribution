@@ -2,25 +2,25 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.TypeParameterType, 'type' | 'name' | 'constraint' | 'default'> */
-@js.native
-trait TypeParameterType extends SomeType {
+trait TypeParameterType
+  extends StObject
+     with SomeType {
   
   var default: js.UndefOr[
     ModelToObject[js.UndefOr[typings.typedoc.typesAbstractMod.Type]] | typings.typedoc.typesAbstractMod.Type
-  ] = js.native
+  ] = js.undefined
   
   var constraint: js.UndefOr[
     ModelToObject[js.UndefOr[typings.typedoc.typesAbstractMod.Type]] | typings.typedoc.typesAbstractMod.Type
-  ] = js.native
+  ] = js.undefined
   
-  var name: ModelToObject[String] | String = js.native
+  var name: ModelToObject[String] | String
   
-  var `type`: ModelToObject[String] | String = js.native
+  var `type`: ModelToObject[String] | String
 }
 object TypeParameterType {
   

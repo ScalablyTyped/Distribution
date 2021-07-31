@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadNetworkResourceRequest extends StObject {
   
   /**
     * Frame id to get the resource for.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * Options for the request.
     */
-  var options: LoadNetworkResourceOptions = js.native
+  var options: LoadNetworkResourceOptions
   
   /**
     * URL of the resource to get content for.
     */
-  var url: String = js.native
+  var url: String
 }
 object LoadNetworkResourceRequest {
   

@@ -3,17 +3,15 @@ package typings.webrtc
 import typings.std.MediaDeviceInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaDevices extends StObject {
   
-  def enumerateDevices(): js.Promise[js.Array[MediaDeviceInfo]] = js.native
+  def enumerateDevices(): js.Promise[js.Array[MediaDeviceInfo]]
   
-  def getSupportedConstraints(): MediaTrackSupportedConstraints = js.native
+  def getSupportedConstraints(): MediaTrackSupportedConstraints
   
-  def getUserMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream] = js.native
+  def getUserMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream]
 }
 object MediaDevices {
   

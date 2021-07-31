@@ -4,29 +4,18 @@ import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.typesMod.RouteProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationRoute extends StObject {
   
-  var navigation: js.Any = js.native
+  var navigation: js.Any
   
-  var route: RouteProp[
-    ParamListBase, 
-    /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String
-  ] = js.native
+  var route: RouteProp[ParamListBase, String]
 }
 object NavigationRoute {
   
   @scala.inline
-  def apply(
-    navigation: js.Any,
-    route: RouteProp[
-      ParamListBase, 
-      /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String
-    ]
-  ): NavigationRoute = {
+  def apply(navigation: js.Any, route: RouteProp[ParamListBase, String]): NavigationRoute = {
     val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationRoute]
   }
@@ -38,11 +27,6 @@ object NavigationRoute {
     def setNavigation(value: js.Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoute(
-      value: RouteProp[
-          ParamListBase, 
-          /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String
-        ]
-    ): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    def setRoute(value: RouteProp[ParamListBase, String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

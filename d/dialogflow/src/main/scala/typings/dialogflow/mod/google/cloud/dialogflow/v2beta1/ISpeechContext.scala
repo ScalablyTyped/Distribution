@@ -2,18 +2,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SpeechContext. */
-@js.native
 trait ISpeechContext extends StObject {
   
   /** SpeechContext boost */
-  var boost: js.UndefOr[Double | Null] = js.native
+  var boost: js.UndefOr[Double | Null] = js.undefined
   
   /** SpeechContext phrases */
-  var phrases: js.UndefOr[js.Array[String] | Null] = js.native
+  var phrases: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object ISpeechContext {
   

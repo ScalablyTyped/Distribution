@@ -2,7 +2,6 @@ package typings.ionicCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentSegmentInterfaceMod {
@@ -37,10 +36,9 @@ object segmentSegmentInterfaceMod {
     def `label-hide`: typings.ionicCore.ionicCoreStrings.`label-hide` = "label-hide".asInstanceOf[typings.ionicCore.ionicCoreStrings.`label-hide`]
   }
   
-  @js.native
   trait SegmentChangeEventDetail extends StObject {
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SegmentChangeEventDetail {
     

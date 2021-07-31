@@ -5,23 +5,23 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Window extends BaseWindow {
+trait Window
+  extends StObject
+     with BaseWindow {
   
-  var closeButtonVisible: Boolean = js.native
+  var closeButtonVisible: Boolean
   
-  var modal: Boolean = js.native
+  var modal: Boolean
   
-  var movable: Boolean = js.native
+  var movable: Boolean
   
-  def moveToBack(): Unit = js.native
+  def moveToBack(): Unit
   
-  def moveToFront(): Unit = js.native
+  def moveToFront(): Unit
   
-  var title: String = js.native
+  var title: String
 }
 object Window {
   

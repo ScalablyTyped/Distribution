@@ -2,21 +2,19 @@ package typings.awsSdk.macieMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListS3ResourcesResult extends StObject {
   
   /**
     * When a response is generated, if there is more data to be listed, this parameter is present in the response and contains the value to use for the nextToken parameter in a subsequent pagination request. If there is no more data to be listed, this parameter is set to null. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A list of the associated S3 resources returned by the action.
     */
-  var s3Resources: js.UndefOr[S3ResourcesClassification] = js.native
+  var s3Resources: js.UndefOr[S3ResourcesClassification] = js.undefined
 }
 object ListS3ResourcesResult {
   

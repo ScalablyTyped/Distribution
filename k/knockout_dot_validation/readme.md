@@ -10,8 +10,8 @@ A KnockoutJS Plugin for model and property validation
 | Full name          | knockout.validation |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 14 |
-| # downloads        | 227306 |
+| # dependents       | 15 |
+| # downloads        | 245910 |
 | # stars            | 3 |
 
 ## Links

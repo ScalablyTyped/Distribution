@@ -3,7 +3,6 @@ package typings.pAll
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,12 +27,10 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
-  def apply[Result1](tasks: js.Array[PromiseFactory[Result1]]): js.Promise[js.Array[Result1]] = js.native
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
-  def apply[Result1](tasks: js.Array[PromiseFactory[Result1]], options: Options): js.Promise[js.Array[Result1]] = js.native
+  @scala.inline
+  def apply[Result1](tasks: js.Array[PromiseFactory[Result1]]): js.Promise[js.Array[Result1]] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Result1]]]
+  @scala.inline
+  def apply[Result1](tasks: js.Array[PromiseFactory[Result1]], options: Options): js.Promise[js.Array[Result1]] = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Result1]]]
   // TODO: Refactor the whole definition back to multiple overloaded functions
   /**
   Run promise-returning & async functions concurrently with optional limited concurrency.
@@ -54,12 +51,10 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
-  def apply[TAll](tasks: Iterable[PromiseFactory[TAll]]): js.Promise[js.Array[TAll]] = js.native
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
-  def apply[TAll](tasks: Iterable[PromiseFactory[TAll]], options: Options): js.Promise[js.Array[TAll]] = js.native
+  @scala.inline
+  def apply[TAll](tasks: Iterable[PromiseFactory[TAll]]): js.Promise[js.Array[TAll]] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[TAll]]]
+  @scala.inline
+  def apply[TAll](tasks: Iterable[PromiseFactory[TAll]], options: Options): js.Promise[js.Array[TAll]] = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[TAll]]]
   // TODO: Refactor the whole definition back to multiple overloaded functions
   /**
   Run promise-returning & async functions concurrently with optional limited concurrency.
@@ -80,12 +75,10 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
-  def apply[Result1, Result2](tasks: js.Tuple2[PromiseFactory[Result1], PromiseFactory[Result2]]): js.Promise[js.Tuple2[Result1, Result2]] = js.native
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
-  def apply[Result1, Result2](tasks: js.Tuple2[PromiseFactory[Result1], PromiseFactory[Result2]], options: Options): js.Promise[js.Tuple2[Result1, Result2]] = js.native
+  @scala.inline
+  def apply[Result1, Result2](tasks: js.Tuple2[PromiseFactory[Result1], PromiseFactory[Result2]]): js.Promise[js.Tuple2[Result1, Result2]] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[Result1, Result2]]]
+  @scala.inline
+  def apply[Result1, Result2](tasks: js.Tuple2[PromiseFactory[Result1], PromiseFactory[Result2]], options: Options): js.Promise[js.Tuple2[Result1, Result2]] = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Result1, Result2]]]
   // TODO: Refactor the whole definition back to multiple overloaded functions
   /**
   Run promise-returning & async functions concurrently with optional limited concurrency.
@@ -106,15 +99,13 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
-  def apply[Result1, Result2, Result3](tasks: js.Tuple3[PromiseFactory[Result1], PromiseFactory[Result2], PromiseFactory[Result3]]): js.Promise[js.Tuple3[Result1, Result2, Result3]] = js.native
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply[Result1, Result2, Result3](tasks: js.Tuple3[PromiseFactory[Result1], PromiseFactory[Result2], PromiseFactory[Result3]]): js.Promise[js.Tuple3[Result1, Result2, Result3]] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple3[Result1, Result2, Result3]]]
+  @scala.inline
   def apply[Result1, Result2, Result3](
     tasks: js.Tuple3[PromiseFactory[Result1], PromiseFactory[Result2], PromiseFactory[Result3]],
     options: Options
-  ): js.Promise[js.Tuple3[Result1, Result2, Result3]] = js.native
+  ): js.Promise[js.Tuple3[Result1, Result2, Result3]] = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple3[Result1, Result2, Result3]]]
   // TODO: Refactor the whole definition back to multiple overloaded functions
   /**
   Run promise-returning & async functions concurrently with optional limited concurrency.
@@ -135,8 +126,7 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4](
     tasks: js.Tuple4[
       PromiseFactory[Result1], 
@@ -144,9 +134,8 @@ object mod {
       PromiseFactory[Result3], 
       PromiseFactory[Result4]
     ]
-  ): js.Promise[js.Tuple4[Result1, Result2, Result3, Result4]] = js.native
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  ): js.Promise[js.Tuple4[Result1, Result2, Result3, Result4]] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple4[Result1, Result2, Result3, Result4]]]
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4](
     tasks: js.Tuple4[
       PromiseFactory[Result1], 
@@ -155,7 +144,7 @@ object mod {
       PromiseFactory[Result4]
     ],
     options: Options
-  ): js.Promise[js.Tuple4[Result1, Result2, Result3, Result4]] = js.native
+  ): js.Promise[js.Tuple4[Result1, Result2, Result3, Result4]] = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple4[Result1, Result2, Result3, Result4]]]
   // TODO: Refactor the whole definition back to multiple overloaded functions
   /**
   Run promise-returning & async functions concurrently with optional limited concurrency.
@@ -176,8 +165,7 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5](
     tasks: js.Tuple5[
       PromiseFactory[Result1], 
@@ -186,9 +174,8 @@ object mod {
       PromiseFactory[Result4], 
       PromiseFactory[Result5]
     ]
-  ): js.Promise[js.Tuple5[Result1, Result2, Result3, Result4, Result5]] = js.native
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  ): js.Promise[js.Tuple5[Result1, Result2, Result3, Result4, Result5]] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple5[Result1, Result2, Result3, Result4, Result5]]]
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5](
     tasks: js.Tuple5[
       PromiseFactory[Result1], 
@@ -198,7 +185,7 @@ object mod {
       PromiseFactory[Result5]
     ],
     options: Options
-  ): js.Promise[js.Tuple5[Result1, Result2, Result3, Result4, Result5]] = js.native
+  ): js.Promise[js.Tuple5[Result1, Result2, Result3, Result4, Result5]] = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple5[Result1, Result2, Result3, Result4, Result5]]]
   // TODO: Refactor the whole definition back to multiple overloaded functions
   /**
   Run promise-returning & async functions concurrently with optional limited concurrency.
@@ -219,8 +206,7 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5, Result6](
     tasks: js.Tuple6[
       PromiseFactory[Result1], 
@@ -230,9 +216,8 @@ object mod {
       PromiseFactory[Result5], 
       PromiseFactory[Result6]
     ]
-  ): js.Promise[js.Tuple6[Result1, Result2, Result3, Result4, Result5, Result6]] = js.native
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  ): js.Promise[js.Tuple6[Result1, Result2, Result3, Result4, Result5, Result6]] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple6[Result1, Result2, Result3, Result4, Result5, Result6]]]
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5, Result6](
     tasks: js.Tuple6[
       PromiseFactory[Result1], 
@@ -243,7 +228,7 @@ object mod {
       PromiseFactory[Result6]
     ],
     options: Options
-  ): js.Promise[js.Tuple6[Result1, Result2, Result3, Result4, Result5, Result6]] = js.native
+  ): js.Promise[js.Tuple6[Result1, Result2, Result3, Result4, Result5, Result6]] = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple6[Result1, Result2, Result3, Result4, Result5, Result6]]]
   // TODO: Refactor the whole definition back to multiple overloaded functions
   /**
   Run promise-returning & async functions concurrently with optional limited concurrency.
@@ -264,8 +249,7 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5, Result6, Result7](
     tasks: js.Tuple7[
       PromiseFactory[Result1], 
@@ -276,9 +260,8 @@ object mod {
       PromiseFactory[Result6], 
       PromiseFactory[Result7]
     ]
-  ): js.Promise[js.Tuple7[Result1, Result2, Result3, Result4, Result5, Result6, Result7]] = js.native
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  ): js.Promise[js.Tuple7[Result1, Result2, Result3, Result4, Result5, Result6, Result7]] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple7[Result1, Result2, Result3, Result4, Result5, Result6, Result7]]]
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5, Result6, Result7](
     tasks: js.Tuple7[
       PromiseFactory[Result1], 
@@ -290,7 +273,7 @@ object mod {
       PromiseFactory[Result7]
     ],
     options: Options
-  ): js.Promise[js.Tuple7[Result1, Result2, Result3, Result4, Result5, Result6, Result7]] = js.native
+  ): js.Promise[js.Tuple7[Result1, Result2, Result3, Result4, Result5, Result6, Result7]] = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple7[Result1, Result2, Result3, Result4, Result5, Result6, Result7]]]
   // TODO: Refactor the whole definition back to multiple overloaded functions
   /**
   Run promise-returning & async functions concurrently with optional limited concurrency.
@@ -311,8 +294,7 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8](
     tasks: js.Tuple8[
       PromiseFactory[Result1], 
@@ -326,9 +308,10 @@ object mod {
     ]
   ): js.Promise[
     js.Tuple8[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8]
-  ] = js.native
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    js.Tuple8[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8]
+  ]]
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8](
     tasks: js.Tuple8[
       PromiseFactory[Result1], 
@@ -343,7 +326,9 @@ object mod {
     options: Options
   ): js.Promise[
     js.Tuple8[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    js.Tuple8[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8]
+  ]]
   // TODO: Refactor the whole definition back to multiple overloaded functions
   /**
   Run promise-returning & async functions concurrently with optional limited concurrency.
@@ -364,8 +349,7 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9](
     tasks: js.Tuple9[
       PromiseFactory[Result1], 
@@ -380,9 +364,10 @@ object mod {
     ]
   ): js.Promise[
     js.Tuple9[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9]
-  ] = js.native
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    js.Tuple9[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9]
+  ]]
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9](
     tasks: js.Tuple9[
       PromiseFactory[Result1], 
@@ -398,7 +383,9 @@ object mod {
     options: Options
   ): js.Promise[
     js.Tuple9[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    js.Tuple9[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9]
+  ]]
   // TODO: Refactor the whole definition back to multiple overloaded functions
   /**
   Run promise-returning & async functions concurrently with optional limited concurrency.
@@ -419,8 +406,7 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9, Result10](
     tasks: js.Tuple10[
       PromiseFactory[Result1], 
@@ -436,9 +422,10 @@ object mod {
     ]
   ): js.Promise[
     js.Tuple10[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9, Result10]
-  ] = js.native
-  @JSImport("p-all", JSImport.Namespace)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    js.Tuple10[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9, Result10]
+  ]]
+  @scala.inline
   def apply[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9, Result10](
     tasks: js.Tuple10[
       PromiseFactory[Result1], 
@@ -455,7 +442,13 @@ object mod {
     options: Options
   ): js.Promise[
     js.Tuple10[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9, Result10]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    js.Tuple10[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9, Result10]
+  ]]
+  
+  @JSImport("p-all", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   type Options = typings.pMap.mod.Options
   

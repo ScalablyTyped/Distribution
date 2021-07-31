@@ -11,14 +11,13 @@ import typings.victory.victoryStrings.parent
 import typings.victory.victoryStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryLegendProps
-  extends VictorySingleLabableProps
+  extends StObject
      with VictoryCommonProps
-     with VictoryDatableProps {
+     with VictoryDatableProps
+     with VictorySingleLabableProps {
   
   /**
     * The borderComponent prop takes a component instance which will be responsible
@@ -33,7 +32,7 @@ trait VictoryLegendProps
     * text measurements, and may need to be adjusted.
     * @default <Border/>
     */
-  var borderComponent: js.UndefOr[ReactElement] = js.native
+  var borderComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The borderPadding specifies the amount of padding that should
@@ -42,12 +41,12 @@ trait VictoryLegendProps
     * Please note that the default width and height calculated for the border
     * component is based on approximated text measurements, so padding may need to be adjusted.
     */
-  var borderPadding: js.UndefOr[PaddingProps] = js.native
+  var borderPadding: js.UndefOr[PaddingProps] = js.undefined
   
   /**
     * The centerTitle boolean prop specifies whether a legend title should be centered.
     */
-  var centerTitle: js.UndefOr[Boolean] = js.native
+  var centerTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The colorScale prop defines a color scale to be applied to each data
@@ -59,7 +58,7 @@ trait VictoryLegendProps
     * Colors will repeat when there are more symbols than colors in the
     * provided colorScale.
     */
-  var colorScale: js.UndefOr[ColorScalePropType] = js.native
+  var colorScale: js.UndefOr[ColorScalePropType] = js.undefined
   
   /**
     * Specify data via the data prop. VictoryLegend expects data as an
@@ -67,25 +66,25 @@ trait VictoryLegendProps
     * The data prop must be given as an array.
     */
   @JSName("data")
-  var data_VictoryLegendProps: js.UndefOr[js.Array[Name]] = js.native
+  var data_VictoryLegendProps: js.UndefOr[js.Array[Name]] = js.undefined
   
   /**
     * VictoryLegend uses the standard eventKey prop to specify how event targets
     * are addressed. This prop is not commonly used.
     */
-  var eventKey: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.native
+  var eventKey: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.undefined
   
   /**
     * VictoryLegend uses the standard events prop.
     */
   var events: js.UndefOr[
     js.Array[EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback]]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * VictoryLegend uses the standard externalEventMutations prop.
     */
-  var externalEventMutations: js.UndefOr[js.Array[_]] = js.native
+  var externalEventMutations: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The gutter prop defines the number of pixels between legend rows or
@@ -93,7 +92,7 @@ trait VictoryLegendProps
     * gutters are between columns. When orientation is vertical, gutters
     * are the space between rows.
     */
-  var gutter: js.UndefOr[Double | Left] = js.native
+  var gutter: js.UndefOr[Double | Left] = js.undefined
   
   /**
     * The itemsPerRow prop determines how many items to render in each row
@@ -101,7 +100,7 @@ trait VictoryLegendProps
     * prop should be given as an integer. When this prop is not given,
     * legend items will be rendered in a single row or column.
     */
-  var itemsPerRow: js.UndefOr[Double] = js.native
+  var itemsPerRow: js.UndefOr[Double] = js.undefined
   
   /**
     * The orientation prop takes a string that defines whether legend data
@@ -113,7 +112,7 @@ trait VictoryLegendProps
     * displaying many series of data.
     * @default 'vertical'
     */
-  var orientation: js.UndefOr[horizontal | vertical] = js.native
+  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
   
   /**
     * The rowGutter prop defines the number of pixels between legend rows.
@@ -121,7 +120,7 @@ trait VictoryLegendProps
     * specified for “top” and “bottom” gutters. To set spacing between columns,
     * use the gutter prop.
     */
-  var rowGutter: js.UndefOr[Double | OmitBlockPropsleftright] = js.native
+  var rowGutter: js.UndefOr[Double | OmitBlockPropsleftright] = js.undefined
   
   /**
     * The style prop defines the style of the VictoryLegend component.
@@ -130,19 +129,19 @@ trait VictoryLegendProps
     * padding should be specified via props as they determine relative
     * layout for components in VictoryLegend.
     */
-  var style: js.UndefOr[VictoryStyleInterface] = js.native
+  var style: js.UndefOr[VictoryStyleInterface] = js.undefined
   
   /**
     * The symbolSpacer prop defines the number of pixels between data
     * components and label components.
     */
-  var symbolSpacer: js.UndefOr[Double] = js.native
+  var symbolSpacer: js.UndefOr[Double] = js.undefined
   
   /**
     * The title prop specifies a title to render with the legend.
     * This prop should be given as a string, or an array of strings for multi-line titles.
     */
-  var title: js.UndefOr[String | js.Array[String]] = js.native
+  var title: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * The titleComponent prop takes a component instance which will be used to render
@@ -153,7 +152,7 @@ trait VictoryLegendProps
     * or ignored within the custom component itself. If labelComponent is omitted,
     * a new VictoryLabel will be created with the props described above.
     */
-  var titleComponent: js.UndefOr[ReactElement] = js.native
+  var titleComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The titleOrientation prop specifies where the a title should be rendered
@@ -161,16 +160,16 @@ trait VictoryLegendProps
     * for this prop are “top”, “bottom”, “left”, and “right”.
     * @default (provided by default theme): titleOrientation="top"
     */
-  var titleOrientation: js.UndefOr[OrientationTypes] = js.native
+  var titleOrientation: js.UndefOr[OrientationTypes] = js.undefined
   
   /**
     * The x and y props define the base position of the legend element.
     */
   @JSName("x")
-  var x_VictoryLegendProps: js.UndefOr[Double] = js.native
+  var x_VictoryLegendProps: js.UndefOr[Double] = js.undefined
   
   @JSName("y")
-  var y_VictoryLegendProps: js.UndefOr[Double] = js.native
+  var y_VictoryLegendProps: js.UndefOr[Double] = js.undefined
 }
 object VictoryLegendProps {
   
@@ -241,7 +240,7 @@ object VictoryLegendProps {
     def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback])*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setExternalEventMutations(value: js.Array[_]): Self = StObject.set(x, "externalEventMutations", value.asInstanceOf[js.Any])
+    def setExternalEventMutations(value: js.Array[js.Any]): Self = StObject.set(x, "externalEventMutations", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExternalEventMutationsUndefined: Self = StObject.set(x, "externalEventMutations", js.undefined)

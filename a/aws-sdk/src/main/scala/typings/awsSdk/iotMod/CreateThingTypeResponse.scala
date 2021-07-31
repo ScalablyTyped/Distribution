@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateThingTypeResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the thing type.
     */
-  var thingTypeArn: js.UndefOr[ThingTypeArn] = js.native
+  var thingTypeArn: js.UndefOr[ThingTypeArn] = js.undefined
   
   /**
     * The thing type ID.
     */
-  var thingTypeId: js.UndefOr[ThingTypeId] = js.native
+  var thingTypeId: js.UndefOr[ThingTypeId] = js.undefined
   
   /**
     * The name of the thing type.
     */
-  var thingTypeName: js.UndefOr[ThingTypeName] = js.native
+  var thingTypeName: js.UndefOr[ThingTypeName] = js.undefined
 }
 object CreateThingTypeResponse {
   

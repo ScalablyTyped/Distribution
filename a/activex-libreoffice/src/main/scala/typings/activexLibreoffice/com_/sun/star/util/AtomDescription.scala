@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * contains a string and the corresponding registered atom .
   * @see com.sun.star.util.XAtomServer
   */
-@js.native
 trait AtomDescription extends StObject {
   
   /** the atom itself */
-  var atom: Double = js.native
+  var atom: Double
   
   /** the string it stands for */
-  var description: String = js.native
+  var description: String
 }
 object AtomDescription {
   

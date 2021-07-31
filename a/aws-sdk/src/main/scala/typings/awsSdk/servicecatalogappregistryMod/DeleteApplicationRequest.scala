@@ -2,16 +2,14 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApplicationRequest extends StObject {
   
   /**
     * The name or ID of the application.
     */
-  var application: ApplicationSpecifier = js.native
+  var application: ApplicationSpecifier
 }
 object DeleteApplicationRequest {
   

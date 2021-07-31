@@ -2,20 +2,18 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchBoxProvided extends StObject {
   
   /** the current query used */
-  var currentRefinement: String = js.native
+  var currentRefinement: String
   
   /** a flag that indicates if InstantSearch has detected that searches are stalled */
-  var isSearchStalled: Boolean = js.native
+  var isSearchStalled: Boolean
   
   /** a function to change the current query */
-  def refine(args: js.Any*): js.Any = js.native
+  def refine(args: js.Any*): js.Any
 }
 object SearchBoxProvided {
   

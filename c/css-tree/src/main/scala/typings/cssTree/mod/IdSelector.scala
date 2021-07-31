@@ -2,26 +2,25 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdSelector
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_IdSelector: typings.cssTree.cssTreeStrings.IdSelector = js.native
+  var type_IdSelector: typings.cssTree.cssTreeStrings.IdSelector
 }
 object IdSelector {
   
   @scala.inline
-  def apply(name: String, `type`: typings.cssTree.cssTreeStrings.IdSelector): IdSelector = {
+  def apply(name: String): IdSelector = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IdSelector")
     __obj.asInstanceOf[IdSelector]
   }
   

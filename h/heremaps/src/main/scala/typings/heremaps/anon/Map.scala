@@ -4,17 +4,15 @@ import typings.heremaps.H.map.layer.MarkerTileLayer
 import typings.heremaps.H.map.layer.TileLayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Map extends StObject {
   
-  var map: TileLayer = js.native
+  var map: TileLayer
   
-  var traffic: TileLayer = js.native
+  var traffic: TileLayer
   
-  var trafficincidents: MarkerTileLayer = js.native
+  var trafficincidents: MarkerTileLayer
 }
 object Map {
   

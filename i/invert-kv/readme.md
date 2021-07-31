@@ -11,8 +11,8 @@ Invert the key/value of an object. Example: `{foo: 'bar'}` → `{bar: 'foo'}`
 | Full name          | invert-kv |
 | Keywords           | object, key, value, invert, keys, values |
 | # releases         | 3 |
-| # dependents       | 75 |
-| # downloads        | 718212668 |
+| # dependents       | 83 |
+| # downloads        | 663194519 |
 | # stars            | 1 |
 
 ## Links

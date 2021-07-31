@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.table
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.table.TableSortDescriptor2
   * @since OOo 1.1.2
   */
-@js.native
 trait TableSortField extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait TableSortField extends StObject {
     * This property will not be used when the "FieldType" is com::sun::star::table::TableSortFieldType::NUMERIC
     * @see com.sun.star.i18n.XCollator
     */
-  var CollatorAlgorithm: String = js.native
+  var CollatorAlgorithm: String
   
   /**
     * the locale used by the collator when comparing/sorting text.
@@ -28,10 +26,10 @@ trait TableSortField extends StObject {
     * This property will not be used when the "FieldType" is com::sun::star::table::TableSortFieldType::NUMERIC
     * @see com.sun.star.i18n.XCollator
     */
-  var CollatorLocale: Locale = js.native
+  var CollatorLocale: Locale
   
   /** index of the row or column in the table to be sorted; 0-based. */
-  var Field: Double = js.native
+  var Field: Double
   
   /**
     * type of contents in the field.
@@ -39,13 +37,13 @@ trait TableSortField extends StObject {
     * If the value is com::sun::star::table::TableSortFieldType::AUTOMATIC the algorithm used for sorting is application specific. Especially it may or may
     * not use the values given by "CollatorLocale" and "CollatorAlgorithm".
     */
-  var FieldType: TableSortFieldType = js.native
+  var FieldType: TableSortFieldType
   
   /** `TRUE` if data are sorted in ascending order, `FALSE` if in descending order. */
-  var IsAscending: Boolean = js.native
+  var IsAscending: Boolean
   
   /** specifies if the case of letters is important when comparing entries. */
-  var IsCaseSensitive: Boolean = js.native
+  var IsCaseSensitive: Boolean
 }
 object TableSortField {
   

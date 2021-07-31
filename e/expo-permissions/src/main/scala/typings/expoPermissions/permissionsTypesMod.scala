@@ -12,7 +12,6 @@ import typings.unimodulesPermissionsInterface.mod.PermissionExpiration
 import typings.unimodulesPermissionsInterface.mod.PermissionStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object permissionsTypesMod {
@@ -22,19 +21,18 @@ object permissionsTypesMod {
   object PermissionStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.unimodulesPermissionsInterface.mod.PermissionStatus with String] = js.native
+    def apply(value: String): js.UndefOr[typings.unimodulesPermissionsInterface.mod.PermissionStatus & String] = js.native
     
-    /* "denied" */ val DENIED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.DENIED with String = js.native
+    /* "denied" */ val DENIED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.DENIED & String = js.native
     
-    /* "granted" */ val GRANTED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.GRANTED with String = js.native
+    /* "granted" */ val GRANTED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.GRANTED & String = js.native
     
-    /* "undetermined" */ val UNDETERMINED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.UNDETERMINED with String = js.native
+    /* "undetermined" */ val UNDETERMINED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.UNDETERMINED & String = js.native
   }
   
-  @js.native
   trait PermissionDetailsLocationAndroid extends StObject {
     
-    var accuracy: fine | coarse | none = js.native
+    var accuracy: fine | coarse | none
   }
   object PermissionDetailsLocationAndroid {
     
@@ -52,15 +50,15 @@ object permissionsTypesMod {
     }
   }
   
-  @js.native
   trait PermissionInfo
-    extends typings.unimodulesPermissionsInterface.mod.PermissionResponse {
+    extends StObject
+       with typings.unimodulesPermissionsInterface.mod.PermissionResponse {
     
-    var accessPrivileges: js.UndefOr[all | limited | none] = js.native
+    var accessPrivileges: js.UndefOr[all | limited | none] = js.undefined
     
-    var android: js.UndefOr[PermissionDetailsLocationAndroid] = js.native
+    var android: js.UndefOr[PermissionDetailsLocationAndroid] = js.undefined
     
-    var scope: js.UndefOr[whenInUse | always | none] = js.native
+    var scope: js.UndefOr[whenInUse | always | none] = js.undefined
   }
   object PermissionInfo {
     
@@ -95,11 +93,11 @@ object permissionsTypesMod {
   
   type PermissionMap = StringDictionary[PermissionInfo]
   
-  @js.native
   trait PermissionResponse
-    extends typings.unimodulesPermissionsInterface.mod.PermissionResponse {
+    extends StObject
+       with typings.unimodulesPermissionsInterface.mod.PermissionResponse {
     
-    var permissions: PermissionMap = js.native
+    var permissions: PermissionMap
   }
   object PermissionResponse {
     

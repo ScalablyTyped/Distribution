@@ -2,17 +2,15 @@ package typings.reactAliceCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationDuration extends StObject {
   
-  var animationDuration: String = js.native
+  var animationDuration: String
   
-  var transform: String = js.native
+  var transform: String
   
-  var width: String = js.native
+  var width: String
 }
 object AnimationDuration {
   

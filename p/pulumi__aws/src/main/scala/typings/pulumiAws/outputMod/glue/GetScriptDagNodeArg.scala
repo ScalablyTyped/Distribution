@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.glue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetScriptDagNodeArg extends StObject {
   
   /**
     * The name of the argument or property.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Boolean if the value is used as a parameter. Defaults to `false`.
     */
-  var param: js.UndefOr[Boolean] = js.native
+  var param: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of the argument or property.
     */
-  var value: String = js.native
+  var value: String
 }
 object GetScriptDagNodeArg {
   

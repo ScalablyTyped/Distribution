@@ -2,15 +2,13 @@ package typings.mendixmodelsdk.transportInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IProblemArguments extends StObject {
   
-  var keys: js.Array[String] = js.native
+  var keys: js.Array[String]
   
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object IProblemArguments {
   

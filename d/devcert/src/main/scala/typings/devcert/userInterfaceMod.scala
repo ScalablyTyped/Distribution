@@ -3,7 +3,6 @@ package typings.devcert
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userInterfaceMod extends Shortcut {
@@ -12,20 +11,19 @@ object userInterfaceMod extends Shortcut {
   @js.native
   val default: UserInterface = js.native
   
-  @js.native
   trait UserInterface extends StObject {
     
-    def closeFirefoxBeforeContinuing(): js.Promise[Unit] = js.native
+    def closeFirefoxBeforeContinuing(): js.Promise[Unit]
     
-    def firefoxWizardPromptPage(certificateURL: String): js.Promise[String] = js.native
+    def firefoxWizardPromptPage(certificateURL: String): js.Promise[String]
     
-    def getWindowsEncryptionPassword(): js.Promise[String] = js.native
+    def getWindowsEncryptionPassword(): js.Promise[String]
     
-    def startFirefoxWizard(certificateHost: String): js.Promise[Unit] = js.native
+    def startFirefoxWizard(certificateHost: String): js.Promise[Unit]
     
-    def waitForFirefoxWizard(): js.Promise[Unit] = js.native
+    def waitForFirefoxWizard(): js.Promise[Unit]
     
-    def warnChromeOnLinuxWithoutCertutil(): js.Promise[Unit] = js.native
+    def warnChromeOnLinuxWithoutCertutil(): js.Promise[Unit]
   }
   object UserInterface {
     

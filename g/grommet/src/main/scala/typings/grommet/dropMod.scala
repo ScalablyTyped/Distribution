@@ -19,7 +19,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropMod {
@@ -29,47 +28,46 @@ object dropMod {
   @js.native
   class Drop protected ()
     extends Component[
-          DropProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: DropProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: DropProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet/components/Drop", "Drop")
   @js.native
   val Drop: ComponentClass[
-    DropProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait DropProps extends StObject {
     
-    var align: js.UndefOr[Bottom] = js.native
+    var align: js.UndefOr[Bottom] = js.undefined
     
-    var elevation: js.UndefOr[ElevationType] = js.native
+    var elevation: js.UndefOr[ElevationType] = js.undefined
     
-    var onClickOutside: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onClickOutside: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onEsc: js.UndefOr[KeyboardType] = js.native
+    var onEsc: js.UndefOr[KeyboardType] = js.undefined
     
-    var overflow: js.UndefOr[auto | hidden | scroll | visible | Horizontal | String] = js.native
+    var overflow: js.UndefOr[auto | hidden | scroll | visible | Horizontal | String] = js.undefined
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var responsive: js.UndefOr[Boolean] = js.native
+    var responsive: js.UndefOr[Boolean] = js.undefined
     
-    var restrictFocus: js.UndefOr[Boolean] = js.native
+    var restrictFocus: js.UndefOr[Boolean] = js.undefined
     
-    var stretch: js.UndefOr[Boolean | align] = js.native
+    var stretch: js.UndefOr[Boolean | align] = js.undefined
     
-    var target: js.UndefOr[js.Object] = js.native
+    var target: js.UndefOr[js.Object] = js.undefined
     
-    var trapFocus: js.UndefOr[Boolean] = js.native
+    var trapFocus: js.UndefOr[Boolean] = js.undefined
   }
   object DropProps {
     
@@ -95,7 +93,7 @@ object dropMod {
       def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
       
       @scala.inline
-      def setOnClickOutside(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
+      def setOnClickOutside(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)
@@ -150,5 +148,5 @@ object dropMod {
     }
   }
   
-  type DropType = DropProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
+  type DropType = DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
 }

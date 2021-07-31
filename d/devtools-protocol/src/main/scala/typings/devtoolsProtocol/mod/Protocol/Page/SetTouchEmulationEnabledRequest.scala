@@ -4,21 +4,19 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.desktop
 import typings.devtoolsProtocol.devtoolsProtocolStrings.mobile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetTouchEmulationEnabledRequest extends StObject {
   
   /**
     * Touch/gesture events configuration. Default: current platform. (SetTouchEmulationEnabledRequestConfiguration enum)
     */
-  var configuration: js.UndefOr[mobile | desktop] = js.native
+  var configuration: js.UndefOr[mobile | desktop] = js.undefined
   
   /**
     * Whether the touch event emulation should be enabled.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
 }
 object SetTouchEmulationEnabledRequest {
   

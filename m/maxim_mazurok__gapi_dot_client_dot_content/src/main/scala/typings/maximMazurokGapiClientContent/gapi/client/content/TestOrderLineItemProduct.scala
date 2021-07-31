@@ -2,53 +2,51 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestOrderLineItemProduct extends StObject {
   
   /** Required. Brand of the item. */
-  var brand: js.UndefOr[String] = js.native
+  var brand: js.UndefOr[String] = js.undefined
   
   /** Required. Condition or state of the item. Acceptable values are: - "`new`" */
-  var condition: js.UndefOr[String] = js.native
+  var condition: js.UndefOr[String] = js.undefined
   
   /** Required. The two-letter ISO 639-1 language code for the item. Acceptable values are: - "`en`" - "`fr`" */
-  var contentLanguage: js.UndefOr[String] = js.native
+  var contentLanguage: js.UndefOr[String] = js.undefined
   
   /** Fees for the item. Optional. */
-  var fees: js.UndefOr[js.Array[OrderLineItemProductFee]] = js.native
+  var fees: js.UndefOr[js.Array[OrderLineItemProductFee]] = js.undefined
   
   /** Global Trade Item Number (GTIN) of the item. Optional. */
-  var gtin: js.UndefOr[String] = js.native
+  var gtin: js.UndefOr[String] = js.undefined
   
   /** Required. URL of an image of the item. */
-  var imageLink: js.UndefOr[String] = js.native
+  var imageLink: js.UndefOr[String] = js.undefined
   
   /** Shared identifier for all variants of the same product. Optional. */
-  var itemGroupId: js.UndefOr[String] = js.native
+  var itemGroupId: js.UndefOr[String] = js.undefined
   
   /** Manufacturer Part Number (MPN) of the item. Optional. */
-  var mpn: js.UndefOr[String] = js.native
+  var mpn: js.UndefOr[String] = js.undefined
   
   /** Required. An identifier of the item. */
-  var offerId: js.UndefOr[String] = js.native
+  var offerId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The price for the product. Tax is automatically calculated for orders where marketplace facilitator tax laws are applicable. Otherwise, tax settings from Merchant Center
     * are applied.
     */
-  var price: js.UndefOr[Price] = js.native
+  var price: js.UndefOr[Price] = js.undefined
   
   /** Required. The CLDR territory // code of the target country of the product. */
-  var targetCountry: js.UndefOr[String] = js.native
+  var targetCountry: js.UndefOr[String] = js.undefined
   
   /** Required. The title of the product. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** Variant attributes for the item. Optional. */
-  var variantAttributes: js.UndefOr[js.Array[OrderLineItemProductVariantAttribute]] = js.native
+  var variantAttributes: js.UndefOr[js.Array[OrderLineItemProductVariantAttribute]] = js.undefined
 }
 object TestOrderLineItemProduct {
   

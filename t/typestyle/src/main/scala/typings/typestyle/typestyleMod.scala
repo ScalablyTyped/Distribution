@@ -9,7 +9,6 @@ import typings.typestyle.typesMod.NestedCSSProperties
 import typings.typestyle.typestyleBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typestyleMod {
@@ -103,19 +102,18 @@ object typestyleMod {
       */
     def stylesheet[Classes /* <: Record[String, NestedCSSProperties] */](classes: Classes): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ ClassName in keyof Classes ]: string}
-      */ typings.typestyle.typestyleStrings.TypeStyle with TopLevel[js.Any] = js.native
+      */ typings.typestyle.typestyleStrings.TypeStyle & TopLevel[js.Any] = js.native
   }
   
-  @js.native
   trait StylesTarget extends StObject {
     
-    var textContent: String | Null = js.native
+    var textContent: String | Null
   }
   object StylesTarget {
     
     @scala.inline
     def apply(): StylesTarget = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(textContent = null)
       __obj.asInstanceOf[StylesTarget]
     }
     

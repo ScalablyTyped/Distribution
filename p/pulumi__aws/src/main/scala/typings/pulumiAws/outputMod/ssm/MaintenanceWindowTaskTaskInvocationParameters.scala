@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.ssm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowTaskTaskInvocationParameters extends StObject {
   
   /**
     * The parameters for an AUTOMATION task type. Documented below.
     */
-  var automationParameters: js.UndefOr[MaintenanceWindowTaskTaskInvocationParametersAutomationParameters] = js.native
+  var automationParameters: js.UndefOr[MaintenanceWindowTaskTaskInvocationParametersAutomationParameters] = js.undefined
   
   /**
     * The parameters for a LAMBDA task type. Documented below.
     */
-  var lambdaParameters: js.UndefOr[MaintenanceWindowTaskTaskInvocationParametersLambdaParameters] = js.native
+  var lambdaParameters: js.UndefOr[MaintenanceWindowTaskTaskInvocationParametersLambdaParameters] = js.undefined
   
   /**
     * The parameters for a RUN_COMMAND task type. Documented below.
     */
-  var runCommandParameters: js.UndefOr[MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters] = js.native
+  var runCommandParameters: js.UndefOr[MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters] = js.undefined
   
   /**
     * The parameters for a STEP_FUNCTIONS task type. Documented below.
     */
-  var stepFunctionsParameters: js.UndefOr[MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters] = js.native
+  var stepFunctionsParameters: js.UndefOr[MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters] = js.undefined
 }
 object MaintenanceWindowTaskTaskInvocationParameters {
   

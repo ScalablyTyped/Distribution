@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewPosition extends StObject {
   
   /**
@@ -18,21 +16,21 @@ trait PlusWebviewWebviewPosition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var absolute: js.UndefOr[String] = js.native
+  var absolute: js.UndefOr[String] = js.undefined
   
   /**
     * 控件在页面中停靠，停靠的位置通过dock属性进行定义
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var dock: js.UndefOr[String] = js.native
+  var dock: js.UndefOr[String] = js.undefined
   
   /**
     * 控件在页面中正常定位，如果页面存在滚动条则随窗口内容滚动
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var static: js.UndefOr[String] = js.native
+  var static: js.UndefOr[String] = js.undefined
 }
 object PlusWebviewWebviewPosition {
   

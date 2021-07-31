@@ -2,26 +2,24 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderLineItemReturnInfo extends StObject {
   
   /**
     * How many days later the item can be returned.
     */
-  var daysToReturn: js.UndefOr[Double] = js.native
+  var daysToReturn: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the item is returnable.
     */
-  var isReturnable: js.UndefOr[Boolean] = js.native
+  var isReturnable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * URL of the item return policy.
     */
-  var policyUrl: js.UndefOr[String] = js.native
+  var policyUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderLineItemReturnInfo {
   

@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * match the type of the bound before comparing.  See
   * https://cloud.google.com/dlp/docs/concepts-bucketing to learn more.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig extends StObject {
     * following buckets would be used: -10, 10-20, 20-30, 30-40, 40-50, 50-60,
     * 60-70, 70-80, 80-89, 89+. Precision up to 2 decimals works. [Required].
     */
-  var bucketSize: js.UndefOr[Double] = js.native
+  var bucketSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Lower bound value of buckets. All values less than `lower_bound` are
@@ -35,7 +33,7 @@ trait SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig extends StObject {
     * then all values less than 10 are replaced with the value “-10”.
     * [Required].
     */
-  var lowerBound: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
+  var lowerBound: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
   
   /**
     * Upper bound value of buckets. All values greater than upper_bound are
@@ -43,7 +41,7 @@ trait SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig extends StObject {
     * then all values greater than 89 are replaced with the value “89+”.
     * [Required].
     */
-  var upperBound: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
+  var upperBound: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig {
   

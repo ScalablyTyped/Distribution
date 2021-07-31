@@ -2,7 +2,6 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * queries better tolerate large result sets, large rows, and large values,
   * but are a little trickier to consume.
   */
-@js.native
 trait SchemaPartialResultSet extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaPartialResultSet extends StObject {
     * with more values from subsequent `PartialResultSet`s to obtain a complete
     * field value.
     */
-  var chunkedValue: js.UndefOr[Boolean] = js.native
+  var chunkedValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Metadata about the result set, such as row type information. Only present
     * in the first response.
     */
-  var metadata: js.UndefOr[SchemaResultSetMetadata] = js.native
+  var metadata: js.UndefOr[SchemaResultSetMetadata] = js.undefined
   
   /**
     * Streaming calls might be interrupted for a variety of reasons, such as
@@ -33,7 +31,7 @@ trait SchemaPartialResultSet extends StObject {
     * that executing any other transaction in the same session invalidates the
     * token.
     */
-  var resumeToken: js.UndefOr[String] = js.native
+  var resumeToken: js.UndefOr[String] = js.undefined
   
   /**
     * Query plan and execution statistics for the statement that produced this
@@ -42,7 +40,7 @@ trait SchemaPartialResultSet extends StObject {
     * response in the stream. This field will also be present in the last
     * response for DML statements.
     */
-  var stats: js.UndefOr[SchemaResultSetStats] = js.native
+  var stats: js.UndefOr[SchemaResultSetStats] = js.undefined
   
   /**
     * A streamed result set consists of a stream of values, which might be
@@ -92,7 +90,7 @@ trait SchemaPartialResultSet extends StObject {
     * second containing the field value `&quot;World&quot; = &quot;W&quot; +
     * &quot;orl&quot; + &quot;d&quot;`.
     */
-  var values: js.UndefOr[js.Array[_]] = js.native
+  var values: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object SchemaPartialResultSet {
   
@@ -130,7 +128,7 @@ object SchemaPartialResultSet {
     def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

@@ -2,41 +2,41 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ItemActivityStat extends Entity {
+trait ItemActivityStat
+  extends StObject
+     with Entity {
   
   // Statistics about the access actions in this interval. Read-only.
-  var access: js.UndefOr[NullableOption[ItemActionStat]] = js.native
+  var access: js.UndefOr[NullableOption[ItemActionStat]] = js.undefined
   
   // Exposes the itemActivities represented in this itemActivityStat resource.
-  var activities: js.UndefOr[NullableOption[js.Array[ItemActivity]]] = js.native
+  var activities: js.UndefOr[NullableOption[js.Array[ItemActivity]]] = js.undefined
   
   // Statistics about the create actions in this interval. Read-only.
-  var create: js.UndefOr[NullableOption[ItemActionStat]] = js.native
+  var create: js.UndefOr[NullableOption[ItemActionStat]] = js.undefined
   
   // Statistics about the delete actions in this interval. Read-only.
-  var delete: js.UndefOr[NullableOption[ItemActionStat]] = js.native
+  var delete: js.UndefOr[NullableOption[ItemActionStat]] = js.undefined
   
   // Statistics about the edit actions in this interval. Read-only.
-  var edit: js.UndefOr[NullableOption[ItemActionStat]] = js.native
+  var edit: js.UndefOr[NullableOption[ItemActionStat]] = js.undefined
   
   // When the interval ends. Read-only.
-  var endDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var endDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates that the statistics in this interval are based on incomplete data. Read-only.
-  var incompleteData: js.UndefOr[NullableOption[IncompleteData]] = js.native
+  var incompleteData: js.UndefOr[NullableOption[IncompleteData]] = js.undefined
   
   // Indicates whether the item is 'trending.' Read-only.
-  var isTrending: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isTrending: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Statistics about the move actions in this interval. Read-only.
-  var move: js.UndefOr[NullableOption[ItemActionStat]] = js.native
+  var move: js.UndefOr[NullableOption[ItemActionStat]] = js.undefined
   
   // When the interval starts. Read-only.
-  var startDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ItemActivityStat {
   

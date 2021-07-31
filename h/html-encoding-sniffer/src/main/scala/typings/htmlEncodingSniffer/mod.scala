@@ -3,7 +3,6 @@ package typings.htmlEncodingSniffer
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,14 +13,15 @@ object mod {
     * @return The canonical [encoding name](https://encoding.spec.whatwg.org/#names-and-labels)
     *         for use with the `whatwg-encoding` or similar package.
     */
-  @JSImport("html-encoding-sniffer", JSImport.Namespace)
-  @js.native
-  def apply(buffer: Buffer): String = js.native
-  @JSImport("html-encoding-sniffer", JSImport.Namespace)
-  @js.native
-  def apply(buffer: Buffer, options: Options): String = js.native
+  @scala.inline
+  def apply(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(buffer: Buffer, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("html-encoding-sniffer", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -36,14 +36,14 @@ object mod {
       * Which is recommended by the algorithm's table of suggested
       * defaults for "All other locales" (including the `en` locale).
       */
-    var defaultEncoding: js.UndefOr[String] = js.native
+    var defaultEncoding: js.UndefOr[String] = js.undefined
     
     /**
       * An encoding label that is obtained from the "transport layer"
       * (probably an HTTP `Content-Type` header), which overrides
       * everything but a BOM.
       */
-    var transportLayerEncodingLabel: js.UndefOr[String] = js.native
+    var transportLayerEncodingLabel: js.UndefOr[String] = js.undefined
   }
   object Options {
     

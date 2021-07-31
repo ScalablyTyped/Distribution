@@ -8,7 +8,6 @@ import typings.wordpressComponents.noticeMod.Notice.Action
 import typings.wordpressNotices.mod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
@@ -28,20 +27,19 @@ object listMod {
   object NoticeList {
     
     /* Inlined parent std.Omit<@wordpress/components.@wordpress/components/notice.default.Props, 'children' | 'onRemove'> */
-    @js.native
     trait Notice extends StObject {
       
-      var actions: js.UndefOr[js.Array[Action]] = js.native
+      var actions: js.UndefOr[js.Array[Action]] = js.undefined
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var content: ReactNode = js.native
+      var content: ReactNode
       
-      var id: String = js.native
+      var id: String
       
-      var isDismissible: js.UndefOr[Boolean] = js.native
+      var isDismissible: js.UndefOr[Boolean] = js.undefined
       
-      var status: js.UndefOr[Status] = js.native
+      var status: js.UndefOr[Status] = js.undefined
     }
     object Notice {
       
@@ -92,20 +90,19 @@ object listMod {
       }
     }
     
-    @js.native
     trait Props extends StObject {
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * Array of notices to render.
         */
-      var notices: js.Array[Notice] = js.native
+      var notices: js.Array[Notice]
       
       /**
         * Function called when a notice should be removed / dismissed.
         */
-      var onRemove: js.UndefOr[js.Function1[/* noticeId */ String, Unit]] = js.native
+      var onRemove: js.UndefOr[js.Function1[/* noticeId */ String, Unit]] = js.undefined
     }
     object Props {
       

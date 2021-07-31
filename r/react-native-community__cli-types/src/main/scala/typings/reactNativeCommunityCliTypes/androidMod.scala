@@ -2,25 +2,23 @@ package typings.reactNativeCommunityCliTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object androidMod {
   
-  @js.native
   trait AndroidDependencyConfig extends StObject {
     
-    var folder: String = js.native
+    var folder: String
     
-    var manifestPath: String = js.native
+    var manifestPath: String
     
-    var packageImportPath: String = js.native
+    var packageImportPath: String
     
-    var packageInstance: String = js.native
+    var packageInstance: String
     
-    var packageName: String = js.native
+    var packageName: String
     
-    var sourceDir: String = js.native
+    var sourceDir: String
   }
   object AndroidDependencyConfig {
     
@@ -61,20 +59,19 @@ object androidMod {
   }
   
   /* Inlined std.Partial<@react-native-community/cli-types.@react-native-community/cli-types/build/android.AndroidDependencyConfig> */
-  @js.native
   trait AndroidDependencyParams extends StObject {
     
-    var folder: js.UndefOr[String] = js.native
+    var folder: js.UndefOr[String] = js.undefined
     
-    var manifestPath: js.UndefOr[String] = js.native
+    var manifestPath: js.UndefOr[String] = js.undefined
     
-    var packageImportPath: js.UndefOr[String] = js.native
+    var packageImportPath: js.UndefOr[String] = js.undefined
     
-    var packageInstance: js.UndefOr[String] = js.native
+    var packageInstance: js.UndefOr[String] = js.undefined
     
-    var packageName: js.UndefOr[String] = js.native
+    var packageName: js.UndefOr[String] = js.undefined
     
-    var sourceDir: js.UndefOr[String] = js.native
+    var sourceDir: js.UndefOr[String] = js.undefined
   }
   object AndroidDependencyParams {
     
@@ -125,32 +122,31 @@ object androidMod {
     }
   }
   
-  @js.native
   trait AndroidProjectConfig extends StObject {
     
-    var appName: String = js.native
+    var appName: String
     
-    var assetsPath: String = js.native
+    var assetsPath: String
     
-    var buildGradlePath: String = js.native
+    var buildGradlePath: String
     
-    var folder: String = js.native
+    var folder: String
     
-    var isFlat: Boolean = js.native
+    var isFlat: Boolean
     
-    var mainFilePath: String = js.native
+    var mainFilePath: String
     
-    var manifestPath: String = js.native
+    var manifestPath: String
     
-    var packageFolder: String = js.native
+    var packageFolder: String
     
-    var packageName: String = js.native
+    var packageName: String
     
-    var settingsGradlePath: String = js.native
+    var settingsGradlePath: String
     
-    var sourceDir: String = js.native
+    var sourceDir: String
     
-    var stringsPath: String = js.native
+    var stringsPath: String
   }
   object AndroidProjectConfig {
     
@@ -215,32 +211,31 @@ object androidMod {
   }
   
   /* Inlined std.Partial<@react-native-community/cli-types.@react-native-community/cli-types/build/android.AndroidProjectConfig> */
-  @js.native
   trait AndroidProjectParams extends StObject {
     
-    var appName: js.UndefOr[String] = js.native
+    var appName: js.UndefOr[String] = js.undefined
     
-    var assetsPath: js.UndefOr[String] = js.native
+    var assetsPath: js.UndefOr[String] = js.undefined
     
-    var buildGradlePath: js.UndefOr[String] = js.native
+    var buildGradlePath: js.UndefOr[String] = js.undefined
     
-    var folder: js.UndefOr[String] = js.native
+    var folder: js.UndefOr[String] = js.undefined
     
-    var isFlat: js.UndefOr[Boolean] = js.native
+    var isFlat: js.UndefOr[Boolean] = js.undefined
     
-    var mainFilePath: js.UndefOr[String] = js.native
+    var mainFilePath: js.UndefOr[String] = js.undefined
     
-    var manifestPath: js.UndefOr[String] = js.native
+    var manifestPath: js.UndefOr[String] = js.undefined
     
-    var packageFolder: js.UndefOr[String] = js.native
+    var packageFolder: js.UndefOr[String] = js.undefined
     
-    var packageName: js.UndefOr[String] = js.native
+    var packageName: js.UndefOr[String] = js.undefined
     
-    var settingsGradlePath: js.UndefOr[String] = js.native
+    var settingsGradlePath: js.UndefOr[String] = js.undefined
     
-    var sourceDir: js.UndefOr[String] = js.native
+    var sourceDir: js.UndefOr[String] = js.undefined
     
-    var stringsPath: js.UndefOr[String] = js.native
+    var stringsPath: js.UndefOr[String] = js.undefined
   }
   object AndroidProjectParams {
     

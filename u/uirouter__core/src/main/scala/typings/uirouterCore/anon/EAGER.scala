@@ -2,15 +2,13 @@ package typings.uirouterCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EAGER extends StObject {
   
-  var EAGER: String = js.native
+  var EAGER: String
   
-  var LAZY: String = js.native
+  var LAZY: String
 }
 object EAGER {
   

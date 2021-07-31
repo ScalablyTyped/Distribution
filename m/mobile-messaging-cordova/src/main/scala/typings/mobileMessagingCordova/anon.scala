@@ -2,17 +2,15 @@ package typings.mobileMessagingCordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Actions extends StObject {
     
-    var actions: js.UndefOr[js.Array[AuthenticationRequired]] = js.native
+    var actions: js.UndefOr[js.Array[AuthenticationRequired]] = js.undefined
     
-    var identifier: js.UndefOr[String] = js.native
+    var identifier: js.UndefOr[String] = js.undefined
   }
   object Actions {
     
@@ -42,16 +40,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ApplicationCodePersistingDisabled extends StObject {
     
-    var applicationCodePersistingDisabled: js.UndefOr[Boolean] = js.native
+    var applicationCodePersistingDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var carrierInfoSendingDisabled: js.UndefOr[Boolean] = js.native
+    var carrierInfoSendingDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var systemInfoSendingDisabled: js.UndefOr[Boolean] = js.native
+    var systemInfoSendingDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var userDataPersistingDisabled: js.UndefOr[Boolean] = js.native
+    var userDataPersistingDisabled: js.UndefOr[Boolean] = js.undefined
   }
   object ApplicationCodePersistingDisabled {
     
@@ -90,26 +87,25 @@ object anon {
     }
   }
   
-  @js.native
   trait AuthenticationRequired extends StObject {
     
-    var authenticationRequired: js.UndefOr[Boolean] = js.native
+    var authenticationRequired: js.UndefOr[Boolean] = js.undefined
     
-    var destructive: js.UndefOr[Boolean] = js.native
+    var destructive: js.UndefOr[Boolean] = js.undefined
     
-    var foreground: js.UndefOr[Boolean] = js.native
+    var foreground: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var identifier: js.UndefOr[String] = js.native
+    var identifier: js.UndefOr[String] = js.undefined
     
-    var moRequired: js.UndefOr[Boolean] = js.native
+    var moRequired: js.UndefOr[Boolean] = js.undefined
     
-    var textInputActionButtonTitle: js.UndefOr[String] = js.native
+    var textInputActionButtonTitle: js.UndefOr[String] = js.undefined
     
-    var textInputPlaceholder: js.UndefOr[String] = js.native
+    var textInputPlaceholder: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object AuthenticationRequired {
     
@@ -178,14 +174,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ForceCleanup extends StObject {
     
-    var forceCleanup: js.UndefOr[Boolean] = js.native
+    var forceCleanup: js.UndefOr[Boolean] = js.undefined
     
-    var logging: js.UndefOr[Boolean] = js.native
+    var logging: js.UndefOr[Boolean] = js.undefined
     
-    var notificationTypes: js.UndefOr[js.Array[String]] = js.native
+    var notificationTypes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ForceCleanup {
     
@@ -221,15 +216,14 @@ object anon {
     }
   }
   
-  @js.native
   trait MultipleNotifications extends StObject {
     
     // a resource name for a status bar icon (without extension), located in '/platforms/android/app/src/main/res/mipmap'
-    var multipleNotifications: Boolean = js.native
+    var multipleNotifications: Boolean
     
-    var notificationAccentColor: String = js.native
+    var notificationAccentColor: String
     
-    var notificationIcon: String = js.native
+    var notificationIcon: String
   }
   object MultipleNotifications {
     

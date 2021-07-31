@@ -2,23 +2,21 @@ package typings.forgeApis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterType extends StObject {
   
-  var filterExtensionType: js.UndefOr[js.Array[String]] = js.native
+  var filterExtensionType: js.UndefOr[js.Array[String]] = js.undefined
   
-  var filterId: js.UndefOr[js.Array[String]] = js.native
+  var filterId: js.UndefOr[js.Array[String]] = js.undefined
   
-  var filterType: js.UndefOr[js.Array[String]] = js.native
+  var filterType: js.UndefOr[js.Array[String]] = js.undefined
   
-  var filterVersionNumber: js.UndefOr[js.Array[Double]] = js.native
+  var filterVersionNumber: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var pageLimit: js.UndefOr[Double] = js.native
+  var pageLimit: js.UndefOr[Double] = js.undefined
   
-  var pageNumber: js.UndefOr[Double] = js.native
+  var pageNumber: js.UndefOr[Double] = js.undefined
 }
 object FilterType {
   

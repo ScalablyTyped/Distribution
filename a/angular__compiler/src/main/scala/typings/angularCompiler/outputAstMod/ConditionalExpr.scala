@@ -3,7 +3,6 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "ConditionalExpr")
@@ -11,42 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ConditionalExpr protected () extends Expression {
   def this(condition: Expression, trueCase: Expression) = this()
   def this(condition: Expression, trueCase: Expression, falseCase: Expression) = this()
-  def this(condition: Expression, trueCase: Expression, falseCase: js.UndefOr[scala.Nothing], `type`: Type) = this()
   def this(condition: Expression, trueCase: Expression, falseCase: Null, `type`: Type) = this()
+  def this(condition: Expression, trueCase: Expression, falseCase: Unit, `type`: Type) = this()
   def this(condition: Expression, trueCase: Expression, falseCase: Expression, `type`: Type) = this()
   def this(
     condition: Expression,
     trueCase: Expression,
-    falseCase: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: ParseSourceSpan
-  ) = this()
-  def this(
-    condition: Expression,
-    trueCase: Expression,
-    falseCase: js.UndefOr[scala.Nothing],
+    falseCase: Null,
     `type`: Null,
-    sourceSpan: ParseSourceSpan
-  ) = this()
-  def this(
-    condition: Expression,
-    trueCase: Expression,
-    falseCase: js.UndefOr[scala.Nothing],
-    `type`: Type,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(
     condition: Expression,
     trueCase: Expression,
     falseCase: Null,
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: ParseSourceSpan
-  ) = this()
-  def this(
-    condition: Expression,
-    trueCase: Expression,
-    falseCase: Null,
-    `type`: Null,
+    `type`: Unit,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(
@@ -59,8 +37,22 @@ class ConditionalExpr protected () extends Expression {
   def this(
     condition: Expression,
     trueCase: Expression,
-    falseCase: Expression,
-    `type`: js.UndefOr[scala.Nothing],
+    falseCase: Unit,
+    `type`: Null,
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    condition: Expression,
+    trueCase: Expression,
+    falseCase: Unit,
+    `type`: Unit,
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    condition: Expression,
+    trueCase: Expression,
+    falseCase: Unit,
+    `type`: Type,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(
@@ -68,6 +60,13 @@ class ConditionalExpr protected () extends Expression {
     trueCase: Expression,
     falseCase: Expression,
     `type`: Null,
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    condition: Expression,
+    trueCase: Expression,
+    falseCase: Expression,
+    `type`: Unit,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(

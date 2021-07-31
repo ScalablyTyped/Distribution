@@ -3,24 +3,24 @@ package typings.appBuilderLib
 import typings.lazyVal.mod.Lazy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object packageDependenciesMod {
   
-  @JSImport("app-builder-lib/out/util/packageDependencies", "createLazyProductionDeps")
+  @JSImport("app-builder-lib/out/util/packageDependencies", JSImport.Namespace)
   @js.native
-  def createLazyProductionDeps(projectDir: String): Lazy[js.Array[_]] = js.native
-  @JSImport("app-builder-lib/out/util/packageDependencies", "createLazyProductionDeps")
-  @js.native
-  def createLazyProductionDeps(projectDir: String, excludedDependencies: js.Array[String]): Lazy[js.Array[_]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createLazyProductionDeps(projectDir: String): Lazy[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLazyProductionDeps")(projectDir.asInstanceOf[js.Any]).asInstanceOf[Lazy[js.Array[js.Any]]]
+  @scala.inline
+  def createLazyProductionDeps(projectDir: String, excludedDependencies: js.Array[String]): Lazy[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLazyProductionDeps")(projectDir.asInstanceOf[js.Any], excludedDependencies.asInstanceOf[js.Any])).asInstanceOf[Lazy[js.Array[js.Any]]]
+  
   trait NodeModuleDirInfo extends StObject {
     
-    val deps: js.Array[NodeModuleInfo] = js.native
+    val deps: js.Array[NodeModuleInfo]
     
-    val dir: String = js.native
+    val dir: String
   }
   object NodeModuleDirInfo {
     
@@ -44,10 +44,9 @@ object packageDependenciesMod {
     }
   }
   
-  @js.native
   trait NodeModuleInfo extends StObject {
     
-    val name: String = js.native
+    val name: String
   }
   object NodeModuleInfo {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoricalParameterRangeSpecification extends StObject {
   
   /**
     * The allowed categories for the hyperparameter.
     */
-  var Values: ParameterValues = js.native
+  var Values: ParameterValues
 }
 object CategoricalParameterRangeSpecification {
   

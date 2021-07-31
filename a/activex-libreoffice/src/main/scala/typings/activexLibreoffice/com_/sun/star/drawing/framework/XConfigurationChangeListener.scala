@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A listener for configuration changes is called when it has been registered at the configuration controller and a configuration change occurs. */
-@js.native
-trait XConfigurationChangeListener extends XEventListener {
+trait XConfigurationChangeListener
+  extends StObject
+     with XEventListener {
   
   /**
     * The exact time of when a listener is called (before the change takes place, during the change, or when the change has been made) depends on the change
     * event. The order in which listeners are called is the order in which they are registered (First registered, first called.)
     */
-  def notifyConfigurationChange(aEvent: ConfigurationChangeEvent): Unit = js.native
+  def notifyConfigurationChange(aEvent: ConfigurationChangeEvent): Unit
 }
 object XConfigurationChangeListener {
   

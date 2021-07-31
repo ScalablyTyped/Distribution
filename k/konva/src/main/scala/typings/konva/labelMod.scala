@@ -13,7 +13,6 @@ import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labelMod {
@@ -73,16 +72,17 @@ object labelMod {
   
   type LabelConfig = ContainerConfig
   
-  @js.native
-  trait TagConfig extends ShapeConfig {
+  trait TagConfig
+    extends StObject
+       with ShapeConfig {
     
-    var cornerRadius: js.UndefOr[Double] = js.native
+    var cornerRadius: js.UndefOr[Double] = js.undefined
     
-    var pointerDirection: js.UndefOr[String] = js.native
+    var pointerDirection: js.UndefOr[String] = js.undefined
     
-    var pointerHeight: js.UndefOr[Double] = js.native
+    var pointerHeight: js.UndefOr[Double] = js.undefined
     
-    var pointerWidth: js.UndefOr[Double] = js.native
+    var pointerWidth: js.UndefOr[Double] = js.undefined
   }
   object TagConfig {
     

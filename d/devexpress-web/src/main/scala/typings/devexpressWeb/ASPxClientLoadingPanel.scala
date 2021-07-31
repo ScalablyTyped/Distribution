@@ -2,54 +2,54 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxLoadingPanel control.
   */
-@js.native
-trait ASPxClientLoadingPanel extends ASPxClientControl {
+trait ASPxClientLoadingPanel
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Gets the text displayed within the ASPxLoadingPanel.
     */
-  def GetText(): String = js.native
+  def GetText(): String
   
   /**
     * Hides the loading panel.
     */
-  def Hide(): Unit = js.native
+  def Hide(): Unit
   
   /**
     * Sets the text to be displayed within the ASPxLoadingPanel.
     * @param text A string value specifying the text to be displayed within the ASPxLoadingPanel.
     */
-  def SetText(text: String): Unit = js.native
+  def SetText(text: String): Unit
   
   /**
     * Invokes the loading panel.
     */
-  def Show(): Unit = js.native
+  def Show(): Unit
   
   /**
     * Invokes the loading panel at the specified position.
     * @param x An integer value specifying the x-coordinate of the loading panel's display position.
     * @param y An integer value specifying the y-coordinate of the loaidng panel's display position.
     */
-  def ShowAtPos(x: Double, y: Double): Unit = js.native
+  def ShowAtPos(x: Double, y: Double): Unit
   
   /**
     * Invokes the loading panel, displaying it over the specified HTML element.
     * @param htmlElement An object that specifies the required HTML element.
     */
-  def ShowInElement(htmlElement: js.Any): Unit = js.native
+  def ShowInElement(htmlElement: js.Any): Unit
   
   /**
     * Invokes the loading panel, displaying it over the specified element.
     * @param id A string that specifies the required element's identifier.
     */
-  def ShowInElementByID(id: String): Unit = js.native
+  def ShowInElementByID(id: String): Unit
 }
 object ASPxClientLoadingPanel {
   

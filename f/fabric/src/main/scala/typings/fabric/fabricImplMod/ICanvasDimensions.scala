@@ -2,24 +2,22 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////////
 // Canvas Interfaces
 //////////////////////////////////////////////////////////////////////////////
-@js.native
 trait ICanvasDimensions extends StObject {
   
   /**
     * Height of canvas element
     */
-  var height: Double | String = js.native
+  var height: Double | String
   
   /**
     * Width of canvas element
     */
-  var width: Double | String = js.native
+  var width: Double | String
 }
 object ICanvasDimensions {
   

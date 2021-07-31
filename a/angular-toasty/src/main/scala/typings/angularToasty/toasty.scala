@@ -2,54 +2,52 @@ package typings.angularToasty
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toasty {
   
-  @js.native
   trait IGlobalConfig extends StObject {
     
     /**
       * Whether clicking the toast closes it.
       */
-    var clickToClose: js.UndefOr[Boolean] = js.native
+    var clickToClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether HTML is allowed in toast.
       */
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum number of toasts to show at once.
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * The toast's message.
       */
-    var msg: js.UndefOr[String] = js.native
+    var msg: js.UndefOr[String] = js.undefined
     
     /**
       * The window position where the toast pops up.
       *
       */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to shake the toast.
       */
-    var shake: js.UndefOr[Boolean] = js.native
+    var shake: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show the 'X' icon to close the toast.
       */
-    var showClose: js.UndefOr[Boolean] = js.native
+    var showClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to play a sound when a toast is added.
       */
-    var sound: js.UndefOr[Boolean] = js.native
+    var sound: js.UndefOr[Boolean] = js.undefined
     
     /**
       * What theme to use.
@@ -57,17 +55,17 @@ object toasty {
       * - 'material'
       * - 'bootstrap'
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
     /**
       * How long (in miliseconds) the toast shows before it's removed. Set to false to disable.
       */
-    var timeout: js.UndefOr[Double | Boolean] = js.native
+    var timeout: js.UndefOr[Double | Boolean] = js.undefined
     
     /**
       * The toast's title.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object IGlobalConfig {
     
@@ -148,53 +146,52 @@ object toasty {
     }
   }
   
-  @js.native
   trait IToastyConfig extends StObject {
     
     /**
       * Whether clicking the toast closes it.
       */
-    var clickToClose: js.UndefOr[Boolean] = js.native
+    var clickToClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether HTML is allowed in toasts.
       */
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The toast's message.
       */
-    var msg: js.UndefOr[String] = js.native
+    var msg: js.UndefOr[String] = js.undefined
     
     /**
       * Add event handler.
       */
-    var onAdd: js.UndefOr[js.Function] = js.native
+    var onAdd: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Click event handler.
       */
-    var onClick: js.UndefOr[js.Function] = js.native
+    var onClick: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Remove event handler.
       */
-    var onRemove: js.UndefOr[js.Function] = js.native
+    var onRemove: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Whether to shake the toasts.
       */
-    var shake: js.UndefOr[Boolean] = js.native
+    var shake: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show the 'X' icon to close the toast.
       */
-    var showClose: js.UndefOr[Boolean] = js.native
+    var showClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to play a sound when a toast is added.
       */
-    var sound: js.UndefOr[Boolean] = js.native
+    var sound: js.UndefOr[Boolean] = js.undefined
     
     /**
       * What theme to use.
@@ -202,17 +199,17 @@ object toasty {
       * - 'material'
       * - 'bootstrap'
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
     /**
       * How long (in milliseconds) the toast shows before it's removed. Set to false to disable.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The toast's title.
       */
-    var title: String = js.native
+    var title: String
     
     /**
       * The toast's type:
@@ -223,7 +220,7 @@ object toasty {
       * - 'error'
       * - 'warning'
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object IToastyConfig {
     
@@ -313,13 +310,12 @@ object toasty {
     }
   }
   
-  @js.native
   trait IToastyConfigProvider extends StObject {
     
     @JSName("$get")
-    def $get(): IGlobalConfig = js.native
+    def $get(): IGlobalConfig
     
-    def setConfig(`override`: IGlobalConfig): Unit = js.native
+    def setConfig(`override`: IGlobalConfig): Unit
   }
   object IToastyConfigProvider {
     

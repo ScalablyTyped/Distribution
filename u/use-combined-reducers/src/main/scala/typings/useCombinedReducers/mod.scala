@@ -4,13 +4,15 @@ import typings.react.mod.Dispatch
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("use-combined-reducers", JSImport.Default)
+  @JSImport("use-combined-reducers", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default[T, A](
     combinedReducers: Record[
       /* keyof T */ String, 
@@ -19,5 +21,5 @@ object mod {
         Dispatch[A]
       ]
     ]
-  ): js.Tuple2[T, js.Function1[/* action */ A, Unit]] = js.native
+  ): js.Tuple2[T, js.Function1[/* action */ A, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(combinedReducers.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, js.Function1[/* action */ A, Unit]]]
 }

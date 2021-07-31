@@ -2,16 +2,14 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     * The list of tags assigned to the resource.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object ListTagsForResourceResponse {
   

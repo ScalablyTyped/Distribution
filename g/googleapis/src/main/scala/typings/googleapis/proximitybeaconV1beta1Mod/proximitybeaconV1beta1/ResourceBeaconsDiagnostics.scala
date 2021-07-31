@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/proximitybeacon/v1beta1", "proximitybeacon_v1beta1.Resource$Beacons$Diagnostics")
@@ -40,7 +39,7 @@ class ResourceBeaconsDiagnostics protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListDiagnosticsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDiagnosticsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDiagnosticsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDiagnosticsResponse] = js.native
   def list(params: ParamsResourceBeaconsDiagnosticsList): GaxiosPromise[SchemaListDiagnosticsResponse] = js.native
   def list(
     params: ParamsResourceBeaconsDiagnosticsList,

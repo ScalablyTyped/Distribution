@@ -6,11 +6,9 @@ import typings.officeJs.officeJsStrings.OneCell
 import typings.officeJs.officeJsStrings.TwoCell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Shape object, for use in `shape.set({ ... })`. */
-@js.native
 trait ShapeUpdateData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var altTextDescription: js.UndefOr[String] = js.native
+  var altTextDescription: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var altTextTitle: js.UndefOr[String] = js.native
+  var altTextTitle: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var fill: js.UndefOr[ShapeFillUpdateData] = js.native
+  var fill: js.UndefOr[ShapeFillUpdateData] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait ShapeUpdateData extends StObject {
     */
   var geometricShapeType: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -54,7 +52,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var lineFormat: js.UndefOr[ShapeLineFormatUpdateData] = js.native
+  var lineFormat: js.UndefOr[ShapeLineFormatUpdateData] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var lockAspectRatio: js.UndefOr[Boolean] = js.native
+  var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -87,7 +85,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -95,7 +93,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var placement: js.UndefOr[Placement | TwoCell | OneCell | Absolute] = js.native
+  var placement: js.UndefOr[Placement | TwoCell | OneCell | Absolute] = js.undefined
   
   /**
     *
@@ -103,7 +101,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -112,7 +110,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -120,7 +118,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -129,7 +127,7 @@ trait ShapeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ShapeUpdateData {
   

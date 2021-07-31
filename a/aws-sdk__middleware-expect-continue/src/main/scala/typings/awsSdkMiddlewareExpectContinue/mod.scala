@@ -5,27 +5,27 @@ import typings.awsSdkTypes.middlewareMod.BuildMiddleware
 import typings.awsSdkTypes.middlewareMod.Pluggable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/middleware-expect-continue", "addExpectContinueMiddleware")
+  @JSImport("@aws-sdk/middleware-expect-continue", JSImport.Namespace)
   @js.native
-  def addExpectContinueMiddleware(options: PreviouslyResolved): BuildMiddleware[_, _] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def addExpectContinueMiddleware(options: PreviouslyResolved): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addExpectContinueMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
   
   @JSImport("@aws-sdk/middleware-expect-continue", "addExpectContinueMiddlewareOptions")
   @js.native
   val addExpectContinueMiddlewareOptions: BuildHandlerOptions = js.native
   
-  @JSImport("@aws-sdk/middleware-expect-continue", "getAddExpectContinuePlugin")
-  @js.native
-  def getAddExpectContinuePlugin(options: PreviouslyResolved): Pluggable[_, _] = js.native
+  @scala.inline
+  def getAddExpectContinuePlugin(options: PreviouslyResolved): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddExpectContinuePlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
   
-  @js.native
   trait PreviouslyResolved extends StObject {
     
-    var runtime: String = js.native
+    var runtime: String
   }
   object PreviouslyResolved {
     

@@ -7,7 +7,6 @@ import typings.yaml.typesMod.Pair.Type.PAIR
 import typings.yaml.typesMod.Schema.StringifyContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yaml/types", "Pair")
@@ -22,20 +21,16 @@ class Pair protected () extends Node {
   /** Always Node or null when parsed, but can be set to anything. */
   var key: js.Any = js.native
   
-  def toJSON(arg: js.UndefOr[scala.Nothing], ctx: NodeToJsonContext): js.Object | (Map[_, _]) = js.native
-  def toJSON(arg: js.Any, ctx: NodeToJsonContext): js.Object | (Map[_, _]) = js.native
+  def toJSON(arg: js.Any, ctx: NodeToJsonContext): js.Object | (Map[js.Any, js.Any]) = js.native
+  def toJSON(arg: Unit, ctx: NodeToJsonContext): js.Object | (Map[js.Any, js.Any]) = js.native
   
-  def toString(
-    ctx: js.UndefOr[scala.Nothing],
-    onComment: js.UndefOr[scala.Nothing],
-    onChompKeep: js.Function0[Unit]
-  ): String = js.native
-  def toString(ctx: js.UndefOr[scala.Nothing], onComment: js.Function0[Unit]): String = js.native
-  def toString(ctx: js.UndefOr[scala.Nothing], onComment: js.Function0[Unit], onChompKeep: js.Function0[Unit]): String = js.native
+  def toString(ctx: Unit, onComment: js.Function0[Unit]): String = js.native
+  def toString(ctx: Unit, onComment: js.Function0[Unit], onChompKeep: js.Function0[Unit]): String = js.native
+  def toString(ctx: Unit, onComment: Unit, onChompKeep: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext): String = js.native
-  def toString(ctx: StringifyContext, onComment: js.UndefOr[scala.Nothing], onChompKeep: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext, onComment: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext, onComment: js.Function0[Unit], onChompKeep: js.Function0[Unit]): String = js.native
+  def toString(ctx: StringifyContext, onComment: Unit, onChompKeep: js.Function0[Unit]): String = js.native
   
   @JSName("type")
   var type_Pair: PAIR | MERGE_PAIR = js.native
@@ -52,14 +47,18 @@ object Pair {
   object Type extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Type with String] = js.native
+    def apply(value: String): js.UndefOr[Type & String] = js.native
     
     @js.native
-    sealed trait MERGE_PAIR extends Type
-    /* "MERGE_PAIR" */ val MERGE_PAIR: typings.yaml.typesMod.Pair.Type.MERGE_PAIR with String = js.native
+    sealed trait MERGE_PAIR
+      extends StObject
+         with Type
+    /* "MERGE_PAIR" */ val MERGE_PAIR: typings.yaml.typesMod.Pair.Type.MERGE_PAIR & String = js.native
     
     @js.native
-    sealed trait PAIR extends Type
-    /* "PAIR" */ val PAIR: typings.yaml.typesMod.Pair.Type.PAIR with String = js.native
+    sealed trait PAIR
+      extends StObject
+         with Type
+    /* "PAIR" */ val PAIR: typings.yaml.typesMod.Pair.Type.PAIR & String = js.native
   }
 }

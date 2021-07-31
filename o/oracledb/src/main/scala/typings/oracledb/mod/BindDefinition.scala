@@ -2,13 +2,11 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used with connection.executeMany() to define a bind variable's types, sizes and directions.
   */
-@js.native
 trait BindDefinition extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait BindDefinition extends StObject {
     *
     * @default BIND_IN
     */
-  var dir: js.UndefOr[Double] = js.native
+  var dir: js.UndefOr[Double] = js.undefined
   
   /**
     * Required for Strings and Buffers. Ignored for other types. Specifies the maximum number of bytes
@@ -25,12 +23,12 @@ trait BindDefinition extends StObject {
     * maxSize should be the size of the longest value. If maxSize is too small, executeMany() will throw an
     * error that is not handled by batchErrors.
     */
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The node-oracledb or JavaScript data type to be bound. One of the Node-oracledb Type Constants.
     */
-  var `type`: js.UndefOr[Double] = js.native
+  var `type`: js.UndefOr[Double] = js.undefined
 }
 object BindDefinition {
   

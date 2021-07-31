@@ -2,13 +2,11 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultPointCallback extends StObject {
   
-  def foundPossibleResultPoint(point: FinderPattern): Unit = js.native
+  def foundPossibleResultPoint(point: FinderPattern): Unit
 }
 object ResultPointCallback {
   

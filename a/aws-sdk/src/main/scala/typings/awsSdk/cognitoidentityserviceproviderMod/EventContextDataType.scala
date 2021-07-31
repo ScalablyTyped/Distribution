@@ -2,36 +2,34 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventContextDataType extends StObject {
   
   /**
     * The user's city.
     */
-  var City: js.UndefOr[StringType] = js.native
+  var City: js.UndefOr[StringType] = js.undefined
   
   /**
     * The user's country.
     */
-  var Country: js.UndefOr[StringType] = js.native
+  var Country: js.UndefOr[StringType] = js.undefined
   
   /**
     * The user's device name.
     */
-  var DeviceName: js.UndefOr[StringType] = js.native
+  var DeviceName: js.UndefOr[StringType] = js.undefined
   
   /**
     * The user's IP address.
     */
-  var IpAddress: js.UndefOr[StringType] = js.native
+  var IpAddress: js.UndefOr[StringType] = js.undefined
   
   /**
     * The user's time zone.
     */
-  var Timezone: js.UndefOr[StringType] = js.native
+  var Timezone: js.UndefOr[StringType] = js.undefined
 }
 object EventContextDataType {
   

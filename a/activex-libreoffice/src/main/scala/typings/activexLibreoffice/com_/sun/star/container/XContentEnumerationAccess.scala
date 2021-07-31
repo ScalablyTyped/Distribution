@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,17 +14,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * {{program example here, see documentation}}
   */
-@js.native
-trait XContentEnumerationAccess extends XInterface {
+trait XContentEnumerationAccess
+  extends StObject
+     with XInterface {
   
   /** @returns all names of services of which instances exist in this object.  {@link XContentEnumerationAccess.createContentEnumeration()} creates an enumerati */
-  val AvailableServiceNames: SafeArray[String] = js.native
+  val AvailableServiceNames: SafeArray[String]
   
   /** @returns a new enumeration object for the contents of the specified service type. */
-  def createContentEnumeration(aServiceName: String): XEnumeration = js.native
+  def createContentEnumeration(aServiceName: String): XEnumeration
   
   /** @returns all names of services of which instances exist in this object.  {@link XContentEnumerationAccess.createContentEnumeration()} creates an enumerati */
-  def getAvailableServiceNames(): SafeArray[String] = js.native
+  def getAvailableServiceNames(): SafeArray[String]
 }
 object XContentEnumerationAccess {
   

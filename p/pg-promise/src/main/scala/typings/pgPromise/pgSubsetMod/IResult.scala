@@ -3,26 +3,24 @@ package typings.pgPromise.pgSubsetMod
 import typings.pgPromise.anon.Binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IResult extends StObject {
   
-  var _parsers: js.Array[js.Function] = js.native
+  var _parsers: js.Array[js.Function]
   
-  var _types: Binary = js.native
+  var _types: Binary
   
-  var command: String = js.native
+  var command: String
   
-  var fields: js.Array[IColumn] = js.native
+  var fields: js.Array[IColumn]
   
   // properties below are not available within Native Bindings:
-  var rowAsArray: Boolean = js.native
+  var rowAsArray: Boolean
   
-  var rowCount: Double = js.native
+  var rowCount: Double
   
-  var rows: js.Array[_] = js.native
+  var rows: js.Array[js.Any]
 }
 object IResult {
   
@@ -34,7 +32,7 @@ object IResult {
     fields: js.Array[IColumn],
     rowAsArray: Boolean,
     rowCount: Double,
-    rows: js.Array[_]
+    rows: js.Array[js.Any]
   ): IResult = {
     val __obj = js.Dynamic.literal(_parsers = _parsers.asInstanceOf[js.Any], _types = _types.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], rowAsArray = rowAsArray.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResult]
@@ -59,7 +57,7 @@ object IResult {
     def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[_]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))

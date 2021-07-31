@@ -2,26 +2,24 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeConstraintSet extends StObject {
   
   /**
     * The name, if any, of the SizeConstraintSet.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * A unique identifier for a SizeConstraintSet. You use SizeConstraintSetId to get information about a SizeConstraintSet (see GetSizeConstraintSet), update a SizeConstraintSet (see UpdateSizeConstraintSet), insert a SizeConstraintSet into a Rule or delete one from a Rule (see UpdateRule), and delete a SizeConstraintSet from AWS WAF (see DeleteSizeConstraintSet).  SizeConstraintSetId is returned by CreateSizeConstraintSet and by ListSizeConstraintSets.
     */
-  var SizeConstraintSetId: ResourceId = js.native
+  var SizeConstraintSetId: ResourceId
   
   /**
     * Specifies the parts of web requests that you want to inspect the size of.
     */
-  var SizeConstraints: typings.awsSdk.wafMod.SizeConstraints = js.native
+  var SizeConstraints: typings.awsSdk.wafMod.SizeConstraints
 }
 object SizeConstraintSet {
   

@@ -2,19 +2,19 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapChartExportEventArgs extends BootstrapChartEventArgsBase {
+trait BootstrapChartExportEventArgs
+  extends StObject
+     with BootstrapChartEventArgsBase {
   
-  var cancel: Boolean = js.native
+  var cancel: Boolean
   
-  val data: js.Any = js.native
+  val data: js.Any
   
-  val fileName: String = js.native
+  val fileName: String
   
-  val format: String = js.native
+  val format: String
 }
 object BootstrapChartExportEventArgs {
   

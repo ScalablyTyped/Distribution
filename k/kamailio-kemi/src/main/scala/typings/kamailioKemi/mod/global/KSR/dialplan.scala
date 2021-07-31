@@ -2,16 +2,17 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialplan {
   
-  @JSGlobal("KSR.dialplan.dp_match")
+  @JSGlobal("KSR.dialplan")
   @js.native
-  def dpMatch(dpid: Double, src: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.dialplan.dp_replace")
-  @js.native
-  def dpReplace(dpid: Double, src: String, dst: String): Double = js.native
+  @scala.inline
+  def dpMatch(dpid: Double, src: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dp_match")(dpid.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def dpReplace(dpid: Double, src: String, dst: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dp_replace")(dpid.asInstanceOf[js.Any], src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

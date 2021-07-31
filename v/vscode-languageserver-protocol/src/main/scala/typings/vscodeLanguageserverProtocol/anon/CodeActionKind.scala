@@ -2,17 +2,15 @@ package typings.vscodeLanguageserverProtocol.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeActionKind extends StObject {
   
   /**
     * The code action kind is support with the following value
     * set.
     */
-  var codeActionKind: `2` = js.native
+  var codeActionKind: `2`
 }
 object CodeActionKind {
   

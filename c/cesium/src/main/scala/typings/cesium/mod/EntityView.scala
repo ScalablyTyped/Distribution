@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "EntityView")
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class EntityView protected () extends StObject {
   def this(entity: Entity, scene: Scene) = this()
   def this(entity: Entity, scene: Scene, ellipsoid: Ellipsoid) = this()
-  def this(entity: Entity, scene: Scene, ellipsoid: js.UndefOr[scala.Nothing], boundingSphere: BoundingSphere) = this()
+  def this(entity: Entity, scene: Scene, ellipsoid: Unit, boundingSphere: BoundingSphere) = this()
   def this(entity: Entity, scene: Scene, ellipsoid: Ellipsoid, boundingSphere: BoundingSphere) = this()
   
   var boundingSphere: Entity = js.native

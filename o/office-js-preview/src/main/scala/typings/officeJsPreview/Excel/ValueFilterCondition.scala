@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,9 @@ object ValueFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait between extends ValueFilterCondition
+  sealed trait between
+    extends StObject
+       with ValueFilterCondition
   
   /**
     * In bottom N (`threshold`) [items, percent, sum] of value category.
@@ -36,7 +37,9 @@ object ValueFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait bottomN extends ValueFilterCondition
+  sealed trait bottomN
+    extends StObject
+       with ValueFilterCondition
   
   /**
     * Equals comparator criterion.
@@ -46,7 +49,9 @@ object ValueFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait equals extends ValueFilterCondition
+  sealed trait equals
+    extends StObject
+       with ValueFilterCondition
   
   /**
     * Greater than comparator criterion.
@@ -55,7 +60,9 @@ object ValueFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait greaterThan extends ValueFilterCondition
+  sealed trait greaterThan
+    extends StObject
+       with ValueFilterCondition
   
   /**
     * Greater than or equal to comparator criterion.
@@ -64,7 +71,9 @@ object ValueFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait greaterThanOrEqualTo extends ValueFilterCondition
+  sealed trait greaterThanOrEqualTo
+    extends StObject
+       with ValueFilterCondition
   
   /**
     * Less than comparator criterion.
@@ -73,7 +82,9 @@ object ValueFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait lessThan extends ValueFilterCondition
+  sealed trait lessThan
+    extends StObject
+       with ValueFilterCondition
   
   /**
     * Less than or equal to comparator criterion.
@@ -82,7 +93,9 @@ object ValueFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait lessThanOrEqualTo extends ValueFilterCondition
+  sealed trait lessThanOrEqualTo
+    extends StObject
+       with ValueFilterCondition
   
   /**
     * In top N (`threshold`) [items, percent, sum] of value category.
@@ -91,12 +104,16 @@ object ValueFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait topN extends ValueFilterCondition
+  sealed trait topN
+    extends StObject
+       with ValueFilterCondition
   
   /**
     * ValueFilterCondition is unknown or unsupported.
     *
     */
   @js.native
-  sealed trait unknown extends ValueFilterCondition
+  sealed trait unknown
+    extends StObject
+       with ValueFilterCondition
 }

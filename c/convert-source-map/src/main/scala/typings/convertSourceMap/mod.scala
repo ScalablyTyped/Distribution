@@ -4,61 +4,53 @@ import typings.convertSourceMap.anon.Multiline
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("convert-source-map", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("convert-source-map", "commentRegex")
   @js.native
   val commentRegex: RegExp = js.native
   
-  @JSImport("convert-source-map", "fromBase64")
-  @js.native
-  def fromBase64(base64: String): SourceMapConverter = js.native
+  @scala.inline
+  def fromBase64(base64: String): SourceMapConverter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(base64.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter]
   
-  @JSImport("convert-source-map", "fromComment")
-  @js.native
-  def fromComment(comment: String): SourceMapConverter = js.native
+  @scala.inline
+  def fromComment(comment: String): SourceMapConverter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromComment")(comment.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter]
   
-  @JSImport("convert-source-map", "fromJSON")
-  @js.native
-  def fromJSON(json: String): SourceMapConverter = js.native
+  @scala.inline
+  def fromJSON(json: String): SourceMapConverter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter]
   
-  @JSImport("convert-source-map", "fromMapFileComment")
-  @js.native
-  def fromMapFileComment(comment: String, commentFileDir: String): SourceMapConverter = js.native
+  @scala.inline
+  def fromMapFileComment(comment: String, commentFileDir: String): SourceMapConverter = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMapFileComment")(comment.asInstanceOf[js.Any], commentFileDir.asInstanceOf[js.Any])).asInstanceOf[SourceMapConverter]
   
-  @JSImport("convert-source-map", "fromMapFileSource")
-  @js.native
-  def fromMapFileSource(content: String, commentFileDir: String): SourceMapConverter | Null = js.native
+  @scala.inline
+  def fromMapFileSource(content: String, commentFileDir: String): SourceMapConverter | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMapFileSource")(content.asInstanceOf[js.Any], commentFileDir.asInstanceOf[js.Any])).asInstanceOf[SourceMapConverter | Null]
   
-  @JSImport("convert-source-map", "fromObject")
-  @js.native
-  def fromObject(obj: js.Any): SourceMapConverter = js.native
+  @scala.inline
+  def fromObject(obj: js.Any): SourceMapConverter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter]
   
-  @JSImport("convert-source-map", "fromSource")
-  @js.native
-  def fromSource(content: String): SourceMapConverter | Null = js.native
+  @scala.inline
+  def fromSource(content: String): SourceMapConverter | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSource")(content.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter | Null]
   
-  @JSImport("convert-source-map", "generateMapFileComment")
-  @js.native
-  def generateMapFileComment(file: String): String = js.native
-  @JSImport("convert-source-map", "generateMapFileComment")
-  @js.native
-  def generateMapFileComment(file: String, options: Multiline): String = js.native
+  @scala.inline
+  def generateMapFileComment(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateMapFileComment")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def generateMapFileComment(file: String, options: Multiline): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateMapFileComment")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("convert-source-map", "mapFileCommentRegex")
   @js.native
   val mapFileCommentRegex: RegExp = js.native
   
-  @JSImport("convert-source-map", "removeComments")
-  @js.native
-  def removeComments(src: String): String = js.native
+  @scala.inline
+  def removeComments(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeComments")(src.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("convert-source-map", "removeMapFileComments")
-  @js.native
-  def removeMapFileComments(src: String): String = js.native
+  @scala.inline
+  def removeMapFileComments(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeMapFileComments")(src.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait SourceMapConverter extends StObject {

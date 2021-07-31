@@ -2,15 +2,13 @@ package typings.easeljs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    def handleEvent(eventObj: js.Object): Unit = js.native
+    def handleEvent(eventObj: js.Object): Unit
   }
   object `0` {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait HandleEvent extends StObject {
     
-    def handleEvent(eventObj: js.Object): Boolean = js.native
+    def handleEvent(eventObj: js.Object): Boolean
   }
   object HandleEvent {
     
@@ -49,22 +46,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Rotation extends StObject {
     
-    var rotation: Double = js.native
+    var rotation: Double
     
-    var scaleX: Double = js.native
+    var scaleX: Double
     
-    var scaleY: Double = js.native
+    var scaleY: Double
     
-    var skewX: Double = js.native
+    var skewX: Double
     
-    var skewY: Double = js.native
+    var skewY: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Rotation {
     

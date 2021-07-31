@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param app - The application.
   */
 @js.native
-trait I18n extends EventHandler {
+trait I18n
+  extends StObject
+     with EventHandler {
   
   /**
     * Adds localization data. If the locale and key for a translation already exists it will be overwritten.

@@ -4,30 +4,30 @@ import typings.pulumiAws.outputMod.lex.GetSlotTypeEnumerationValue
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSlotTypeMod {
   
-  @JSImport("@pulumi/aws/lex/getSlotType", "getSlotType")
+  @JSImport("@pulumi/aws/lex/getSlotType", JSImport.Namespace)
   @js.native
-  def getSlotType(args: GetSlotTypeArgs): js.Promise[GetSlotTypeResult] = js.native
-  @JSImport("@pulumi/aws/lex/getSlotType", "getSlotType")
-  @js.native
-  def getSlotType(args: GetSlotTypeArgs, opts: InvokeOptions): js.Promise[GetSlotTypeResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSlotType(args: GetSlotTypeArgs): js.Promise[GetSlotTypeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSlotType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSlotTypeResult]]
+  @scala.inline
+  def getSlotType(args: GetSlotTypeArgs, opts: InvokeOptions): js.Promise[GetSlotTypeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlotType")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSlotTypeResult]]
+  
   trait GetSlotTypeArgs extends StObject {
     
     /**
       * The name of the slot type. The name is case sensitive.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The version of the slot type.
       */
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object GetSlotTypeArgs {
     
@@ -51,46 +51,45 @@ object getSlotTypeMod {
     }
   }
   
-  @js.native
   trait GetSlotTypeResult extends StObject {
     
     /**
       * Checksum identifying the version of the slot type that was created. The checksum is
       * not included as an argument because the resource will add it automatically when updating the slot type.
       */
-    val checksum: String = js.native
+    val checksum: String
     
     /**
       * The date when the slot type version was created.
       */
-    val createdDate: String = js.native
+    val createdDate: String
     
     /**
       * A description of the slot type.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * A set of EnumerationValue objects that defines the values that
       * the slot type can take. Each value can have a set of synonyms, which are additional values that help
       * train the machine learning model about the values that it resolves for a slot.
       */
-    val enumerationValues: js.Array[GetSlotTypeEnumerationValue] = js.native
+    val enumerationValues: js.Array[GetSlotTypeEnumerationValue]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The date when the $LATEST version of this slot type was updated.
       */
-    val lastUpdatedDate: String = js.native
+    val lastUpdatedDate: String
     
     /**
       * The name of the slot type. The name is not case sensitive.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Determines the slot resolution strategy that Amazon Lex
@@ -98,12 +97,12 @@ object getSlotTypeMod {
       * value is similar to the slot value. `TOP_RESOLUTION` returns the first value in the resolution list
       * if there is a resolution list for the slot, otherwise null is returned.
       */
-    val valueSelectionStrategy: String = js.native
+    val valueSelectionStrategy: String
     
     /**
       * The version of the slot type.
       */
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object GetSlotTypeResult {
     

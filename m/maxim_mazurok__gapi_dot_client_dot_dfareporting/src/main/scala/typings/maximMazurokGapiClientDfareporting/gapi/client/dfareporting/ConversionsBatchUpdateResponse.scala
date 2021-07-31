@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConversionsBatchUpdateResponse extends StObject {
   
   /** Indicates that some or all conversions failed to update. */
-  var hasFailures: js.UndefOr[Boolean] = js.native
+  var hasFailures: js.UndefOr[Boolean] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#conversionsBatchUpdateResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The update status of each conversion. Statuses are returned in the same order that conversions are updated. */
-  var status: js.UndefOr[js.Array[ConversionStatus]] = js.native
+  var status: js.UndefOr[js.Array[ConversionStatus]] = js.undefined
 }
 object ConversionsBatchUpdateResponse {
   

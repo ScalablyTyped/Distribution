@@ -4,10 +4,13 @@ import typings.std.Int32Array
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object int64TensorsMod {
+  
+  @JSImport("@tensorflow/tfjs-node/dist/int64_tensors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-node/dist/int64_tensors", "Int64Scalar")
   @js.native
@@ -41,7 +44,6 @@ object int64TensorsMod {
     def endiannessOkay__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("endiannessOkay_")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@tensorflow/tfjs-node/dist/int64_tensors", "encodeInt32ArrayAsInt64")
-  @js.native
-  def encodeInt32ArrayAsInt64(value: Int32Array): Int32Array = js.native
+  @scala.inline
+  def encodeInt32ArrayAsInt64(value: Int32Array): Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeInt32ArrayAsInt64")(value.asInstanceOf[js.Any]).asInstanceOf[Int32Array]
 }

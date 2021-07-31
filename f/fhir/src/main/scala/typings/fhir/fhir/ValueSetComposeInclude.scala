@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Include one or more codes from a code system or other value set(s)
   */
-@js.native
-trait ValueSetComposeInclude extends BackboneElement {
+trait ValueSetComposeInclude
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'system'.
     */
-  var _system: js.UndefOr[Element] = js.native
+  var _system: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueSet'.
     */
-  var _valueSet: js.UndefOr[js.Array[Element]] = js.native
+  var _valueSet: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.native
+  var _version: js.UndefOr[Element] = js.undefined
   
   /**
     * A concept defined in the system
     */
-  var concept: js.UndefOr[js.Array[ValueSetComposeIncludeConcept]] = js.native
+  var concept: js.UndefOr[js.Array[ValueSetComposeIncludeConcept]] = js.undefined
   
   /**
     * Select codes/concepts by their properties (including relationships)
     */
-  var filter: js.UndefOr[js.Array[ValueSetComposeIncludeFilter]] = js.native
+  var filter: js.UndefOr[js.Array[ValueSetComposeIncludeFilter]] = js.undefined
   
   /**
     * The system the codes come from
     */
-  var system: js.UndefOr[uri] = js.native
+  var system: js.UndefOr[uri] = js.undefined
   
   /**
     * Select only contents included in this value set
     */
-  var valueSet: js.UndefOr[js.Array[uri]] = js.native
+  var valueSet: js.UndefOr[js.Array[uri]] = js.undefined
   
   /**
     * Specific version of the code system referred to
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object ValueSetComposeInclude {
   

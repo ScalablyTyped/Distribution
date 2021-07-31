@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelActivity extends StObject {
   
   /**
     * The name of the channel from which the messages are processed.
     */
-  var channelName: ChannelName = js.native
+  var channelName: ChannelName
   
   /**
     * The name of the channel activity.
     */
-  var name: ActivityName = js.native
+  var name: ActivityName
   
   /**
     * The next activity in the pipeline.
     */
-  var next: js.UndefOr[ActivityName] = js.native
+  var next: js.UndefOr[ActivityName] = js.undefined
 }
 object ChannelActivity {
   

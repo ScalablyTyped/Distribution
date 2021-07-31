@@ -3,42 +3,40 @@ package typings.sarif.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreadFlow extends StObject {
   
   /**
     * An string that uniquely identifies the threadFlow within the codeFlow in which it occurs.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Values of relevant expressions at the start of the thread flow that remain constant.
     */
-  var immutableState: js.UndefOr[StringDictionary[MultiformatMessageString]] = js.native
+  var immutableState: js.UndefOr[StringDictionary[MultiformatMessageString]] = js.undefined
   
   /**
     * Values of relevant expressions at the start of the thread flow that may change during thread flow execution.
     */
-  var initialState: js.UndefOr[StringDictionary[MultiformatMessageString]] = js.native
+  var initialState: js.UndefOr[StringDictionary[MultiformatMessageString]] = js.undefined
   
   /**
     * A temporally ordered array of 'threadFlowLocation' objects, each of which describes a location visited by the
     * tool while producing the result.
     */
-  var locations: js.Array[ThreadFlowLocation] = js.native
+  var locations: js.Array[ThreadFlowLocation]
   
   /**
     * A message relevant to the thread flow.
     */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the thread flow.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 object ThreadFlow {
   

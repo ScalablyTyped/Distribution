@@ -2,7 +2,6 @@ package typings.fridaGum.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("File")
 @js.native
 class File protected ()
-  extends typings.fridaGum.File {
+  extends StObject
+     with typings.fridaGum.File {
   /**
     * Opens or creates the file at `filePath` with `mode` specifying how
     * it should be opened. For example `"wb"` to open the file for writing

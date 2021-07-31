@@ -2,52 +2,50 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for roleAssignment resource in Directory API.
   */
-@js.native
 trait SchemaRoleAssignment extends StObject {
   
   /**
     * The unique ID of the user this role is assigned to.
     */
-  var assignedTo: js.UndefOr[String] = js.native
+  var assignedTo: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the API resource. This is always
     * admin#directory#roleAssignment.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * If the role is restricted to an organization unit, this contains the ID
     * for the organization unit the exercise of this role is restricted to.
     */
-  var orgUnitId: js.UndefOr[String] = js.native
+  var orgUnitId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of this roleAssignment.
     */
-  var roleAssignmentId: js.UndefOr[String] = js.native
+  var roleAssignmentId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the role that is assigned.
     */
-  var roleId: js.UndefOr[String] = js.native
+  var roleId: js.UndefOr[String] = js.undefined
   
   /**
     * The scope in which this role is assigned. Possible values are:  -
     * CUSTOMER - ORG_UNIT
     */
-  var scopeType: js.UndefOr[String] = js.native
+  var scopeType: js.UndefOr[String] = js.undefined
 }
 object SchemaRoleAssignment {
   

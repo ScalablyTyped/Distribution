@@ -5,7 +5,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -13,7 +12,8 @@ object global {
   @JSGlobal("Cropper")
   @js.native
   class Cropper protected ()
-    extends typings.cropperjs.Cropper {
+    extends StObject
+       with typings.cropperjs.Cropper {
     def this(element: HTMLCanvasElement) = this()
     def this(element: HTMLImageElement) = this()
     def this(element: HTMLCanvasElement, options: Options) = this()
@@ -21,14 +21,16 @@ object global {
   }
   object Cropper {
     
-    /* static member */
-    @JSGlobal("Cropper.noConflict")
+    @JSGlobal("Cropper")
     @js.native
-    def noConflict(): typings.cropperjs.Cropper = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("Cropper.setDefaults")
-    @js.native
-    def setDefaults(options: Options): Unit = js.native
+    @scala.inline
+    def noConflict(): typings.cropperjs.Cropper = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.cropperjs.Cropper]
+    
+    /* static member */
+    @scala.inline
+    def setDefaults(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

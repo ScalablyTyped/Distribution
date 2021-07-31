@@ -2,24 +2,22 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 地物对象的像素尺寸
   */
-@js.native
 trait Size extends StObject {
   
   /**
     * 获得高度
     */
-  def getHeight(): Double = js.native
+  def getHeight(): Double
   
   /**
     * 获得宽度
     */
-  def getWidth(): Double = js.native
+  def getWidth(): Double
 }
 object Size {
   

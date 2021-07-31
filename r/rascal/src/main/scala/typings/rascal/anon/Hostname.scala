@@ -2,31 +2,29 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hostname extends StObject {
   
-  var hostname: String = js.native
+  var hostname: String
   
-  var management: Options = js.native
+  var management: Options
   
-  var options: ChannelMax = js.native
+  var options: ChannelMax
   
-  var password: String = js.native
+  var password: String
   
-  var port: String = js.native
+  var port: String
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var retry: Factor = js.native
+  var retry: Factor
   
-  var slashes: Boolean = js.native
+  var slashes: Boolean
   
-  var socketOptions: TimeoutNumber = js.native
+  var socketOptions: TimeoutNumber
   
-  var user: String = js.native
+  var user: String
 }
 object Hostname {
   

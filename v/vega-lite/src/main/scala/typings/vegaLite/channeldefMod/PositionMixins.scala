@@ -6,10 +6,8 @@ import typings.vegaLite.srcImputeMod.ImputeParams
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionMixins extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PositionMixins extends StObject {
     *
     * __See also:__ [`axis`](https://vega.github.io/vega-lite/docs/axis.html) documentation.
     */
-  var axis: js.UndefOr[(Axis[ExprRef | SignalRef]) | Null] = js.native
+  var axis: js.UndefOr[(Axis[ExprRef | SignalRef]) | Null] = js.undefined
   
   /**
     * An object defining the properties of the Impute Operation to be applied.
@@ -29,7 +27,7 @@ trait PositionMixins extends StObject {
     *
     * __See also:__ [`impute`](https://vega.github.io/vega-lite/docs/impute.html) documentation.
     */
-  var impute: js.UndefOr[ImputeParams | Null] = js.native
+  var impute: js.UndefOr[ImputeParams | Null] = js.undefined
 }
 object PositionMixins {
   

@@ -2,17 +2,15 @@ package typings.bootstrapNotify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Align extends StObject {
     
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
   }
   object Align {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Enter extends StObject {
     
-    var enter: js.UndefOr[String] = js.native
+    var enter: js.UndefOr[String] = js.undefined
     
-    var exit: js.UndefOr[String] = js.native
+    var exit: js.UndefOr[String] = js.undefined
   }
   object Enter {
     
@@ -71,12 +68,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object X {
     

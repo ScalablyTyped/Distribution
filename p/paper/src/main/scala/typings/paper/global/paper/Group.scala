@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -19,7 +18,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * newly created group
   */
 class Group ()
-  extends typings.paper.paper.Group {
+  extends StObject
+     with typings.paper.paper.Group {
   def this(children: js.Array[typings.paper.paper.Item]) = this()
   /** 
     * Creates a new Group item and places it at the top of the active layer.

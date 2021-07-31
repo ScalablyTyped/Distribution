@@ -6,15 +6,88 @@ import typings.openapiFramework.typesMod.OpenAPIFrameworkVisitor
 import typings.openapiTypes.mod.OpenAPIV3.ServerObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("openapi-framework", JSImport.Default)
   @js.native
-  class default () extends OpenAPIFramework {
+  class default ()
+    extends StObject
+       with OpenAPIFramework {
     def this(args: OpenAPIFrameworkConstructorArgs) = this()
+    
+    /* CompleteClass */
+    override val apiDoc: js.Any = js.native
+    
+    /* CompleteClass */
+    var args: OpenAPIFrameworkConstructorArgs = js.native
+    
+    /* CompleteClass */
+    override val basePaths: js.Array[typings.openapiFramework.basePathMod.default] = js.native
+    
+    /* CompleteClass */
+    var customFormats: js.Any = js.native
+    
+    /* CompleteClass */
+    var customKeywords: js.Any = js.native
+    
+    /* CompleteClass */
+    var dependencies: js.Any = js.native
+    
+    /* CompleteClass */
+    var enableObjectCoercion: js.Any = js.native
+    
+    /* CompleteClass */
+    var errorTransformer: js.Any = js.native
+    
+    /* CompleteClass */
+    var externalSchemas: js.Any = js.native
+    
+    /* CompleteClass */
+    var featureType: String = js.native
+    
+    /* CompleteClass */
+    override def initialize(visitor: OpenAPIFrameworkVisitor): Unit = js.native
+    
+    /* CompleteClass */
+    var logger: js.Any = js.native
+    
+    /* CompleteClass */
+    var loggingPrefix: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
+    var operations: js.Any = js.native
+    
+    /* CompleteClass */
+    var originalApiDoc: js.Any = js.native
+    
+    /* CompleteClass */
+    var pathSecurity: js.Any = js.native
+    
+    /* CompleteClass */
+    var paths: js.Any = js.native
+    
+    /* CompleteClass */
+    var pathsIgnore: js.Any = js.native
+    
+    /* CompleteClass */
+    var routesGlob: js.Any = js.native
+    
+    /* CompleteClass */
+    var routesIndexFileRegExp: js.Any = js.native
+    
+    /* CompleteClass */
+    var securityHandlers: js.Any = js.native
+    
+    /* CompleteClass */
+    var validateApiDoc: js.Any = js.native
+    
+    /* CompleteClass */
+    var validator: js.Any = js.native
   }
   
   @JSImport("openapi-framework", "BasePath")
@@ -24,50 +97,51 @@ object mod {
     def this(server: ServerObject) = this()
   }
   
-  @js.native
-  trait OpenAPIFramework extends IOpenAPIFramework {
+  trait OpenAPIFramework
+    extends StObject
+       with IOpenAPIFramework {
     
-    val apiDoc: js.Any = js.native
+    val apiDoc: js.Any
     
-    var args: OpenAPIFrameworkConstructorArgs = js.native
+    var args: OpenAPIFrameworkConstructorArgs
     
-    val basePaths: js.Array[typings.openapiFramework.basePathMod.default] = js.native
+    val basePaths: js.Array[typings.openapiFramework.basePathMod.default]
     
-    var customFormats: js.Any = js.native
+    var customFormats: js.Any
     
-    var customKeywords: js.Any = js.native
+    var customKeywords: js.Any
     
-    var dependencies: js.Any = js.native
+    var dependencies: js.Any
     
-    var enableObjectCoercion: js.Any = js.native
+    var enableObjectCoercion: js.Any
     
-    var errorTransformer: js.Any = js.native
+    var errorTransformer: js.Any
     
-    var externalSchemas: js.Any = js.native
+    var externalSchemas: js.Any
     
-    def initialize(visitor: OpenAPIFrameworkVisitor): Unit = js.native
+    def initialize(visitor: OpenAPIFrameworkVisitor): Unit
     
-    var logger: js.Any = js.native
+    var logger: js.Any
     
-    var operations: js.Any = js.native
+    var operations: js.Any
     
-    var originalApiDoc: js.Any = js.native
+    var originalApiDoc: js.Any
     
-    var pathSecurity: js.Any = js.native
+    var pathSecurity: js.Any
     
-    var paths: js.Any = js.native
+    var paths: js.Any
     
-    var pathsIgnore: js.Any = js.native
+    var pathsIgnore: js.Any
     
-    var routesGlob: js.Any = js.native
+    var routesGlob: js.Any
     
-    var routesIndexFileRegExp: js.Any = js.native
+    var routesIndexFileRegExp: js.Any
     
-    var securityHandlers: js.Any = js.native
+    var securityHandlers: js.Any
     
-    var validateApiDoc: js.Any = js.native
+    var validateApiDoc: js.Any
     
-    var validator: js.Any = js.native
+    var validator: js.Any
   }
   object OpenAPIFramework {
     

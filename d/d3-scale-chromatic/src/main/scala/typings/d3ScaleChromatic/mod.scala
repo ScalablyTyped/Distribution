@@ -2,162 +2,127 @@ package typings.d3ScaleChromatic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-scale-chromatic", "interpolateBlues")
+  @JSImport("d3-scale-chromatic", JSImport.Namespace)
   @js.native
-  def interpolateBlues(t: Double): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-scale-chromatic", "interpolateBrBG")
-  @js.native
-  def interpolateBrBG(t: Double): String = js.native
+  @scala.inline
+  def interpolateBlues(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBlues")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateBuGn")
-  @js.native
-  def interpolateBuGn(t: Double): String = js.native
+  @scala.inline
+  def interpolateBrBG(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBrBG")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateBuPu")
-  @js.native
-  def interpolateBuPu(t: Double): String = js.native
+  @scala.inline
+  def interpolateBuGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBuGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateCividis")
-  @js.native
-  def interpolateCividis(t: Double): String = js.native
+  @scala.inline
+  def interpolateBuPu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBuPu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateCool")
-  @js.native
-  def interpolateCool(t: Double): String = js.native
+  @scala.inline
+  def interpolateCividis(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCividis")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateCubehelixDefault")
-  @js.native
-  def interpolateCubehelixDefault(t: Double): String = js.native
+  @scala.inline
+  def interpolateCool(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCool")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateGnBu")
-  @js.native
-  def interpolateGnBu(t: Double): String = js.native
+  @scala.inline
+  def interpolateCubehelixDefault(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelixDefault")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateGreens")
-  @js.native
-  def interpolateGreens(t: Double): String = js.native
+  @scala.inline
+  def interpolateGnBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGnBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateGreys")
-  @js.native
-  def interpolateGreys(t: Double): String = js.native
+  @scala.inline
+  def interpolateGreens(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGreens")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateInferno")
-  @js.native
-  def interpolateInferno(t: Double): String = js.native
+  @scala.inline
+  def interpolateGreys(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGreys")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateMagma")
-  @js.native
-  def interpolateMagma(t: Double): String = js.native
+  @scala.inline
+  def interpolateInferno(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateInferno")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateOrRd")
-  @js.native
-  def interpolateOrRd(t: Double): String = js.native
+  @scala.inline
+  def interpolateMagma(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateMagma")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateOranges")
-  @js.native
-  def interpolateOranges(t: Double): String = js.native
+  @scala.inline
+  def interpolateOrRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateOrRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolatePRGn")
-  @js.native
-  def interpolatePRGn(t: Double): String = js.native
+  @scala.inline
+  def interpolateOranges(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateOranges")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolatePiYG")
-  @js.native
-  def interpolatePiYG(t: Double): String = js.native
+  @scala.inline
+  def interpolatePRGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePRGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolatePlasma")
-  @js.native
-  def interpolatePlasma(t: Double): String = js.native
+  @scala.inline
+  def interpolatePiYG(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePiYG")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolatePuBu")
-  @js.native
-  def interpolatePuBu(t: Double): String = js.native
+  @scala.inline
+  def interpolatePlasma(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePlasma")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolatePuBuGn")
-  @js.native
-  def interpolatePuBuGn(t: Double): String = js.native
+  @scala.inline
+  def interpolatePuBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolatePuOr")
-  @js.native
-  def interpolatePuOr(t: Double): String = js.native
+  @scala.inline
+  def interpolatePuBuGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuBuGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolatePuRd")
-  @js.native
-  def interpolatePuRd(t: Double): String = js.native
+  @scala.inline
+  def interpolatePuOr(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuOr")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolatePurples")
-  @js.native
-  def interpolatePurples(t: Double): String = js.native
+  @scala.inline
+  def interpolatePuRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateRainbow")
-  @js.native
-  def interpolateRainbow(t: Double): String = js.native
+  @scala.inline
+  def interpolatePurples(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePurples")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateRdBu")
-  @js.native
-  def interpolateRdBu(t: Double): String = js.native
+  @scala.inline
+  def interpolateRainbow(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRainbow")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateRdGy")
-  @js.native
-  def interpolateRdGy(t: Double): String = js.native
+  @scala.inline
+  def interpolateRdBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateRdPu")
-  @js.native
-  def interpolateRdPu(t: Double): String = js.native
+  @scala.inline
+  def interpolateRdGy(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdGy")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateRdYlBu")
-  @js.native
-  def interpolateRdYlBu(t: Double): String = js.native
+  @scala.inline
+  def interpolateRdPu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdPu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateRdYlGn")
-  @js.native
-  def interpolateRdYlGn(t: Double): String = js.native
+  @scala.inline
+  def interpolateRdYlBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdYlBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateReds")
-  @js.native
-  def interpolateReds(t: Double): String = js.native
+  @scala.inline
+  def interpolateRdYlGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdYlGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateSinebow")
-  @js.native
-  def interpolateSinebow(t: Double): String = js.native
+  @scala.inline
+  def interpolateReds(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateReds")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateSpectral")
-  @js.native
-  def interpolateSpectral(t: Double): String = js.native
+  @scala.inline
+  def interpolateSinebow(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateSinebow")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateTurbo")
-  @js.native
-  def interpolateTurbo(t: Double): String = js.native
+  @scala.inline
+  def interpolateSpectral(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateSpectral")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateViridis")
-  @js.native
-  def interpolateViridis(t: Double): String = js.native
+  @scala.inline
+  def interpolateTurbo(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateTurbo")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateWarm")
-  @js.native
-  def interpolateWarm(t: Double): String = js.native
+  @scala.inline
+  def interpolateViridis(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateViridis")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateYlGn")
-  @js.native
-  def interpolateYlGn(t: Double): String = js.native
+  @scala.inline
+  def interpolateWarm(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateWarm")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateYlGnBu")
-  @js.native
-  def interpolateYlGnBu(t: Double): String = js.native
+  @scala.inline
+  def interpolateYlGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateYlOrBr")
-  @js.native
-  def interpolateYlOrBr(t: Double): String = js.native
+  @scala.inline
+  def interpolateYlGnBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlGnBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-scale-chromatic", "interpolateYlOrRd")
-  @js.native
-  def interpolateYlOrRd(t: Double): String = js.native
+  @scala.inline
+  def interpolateYlOrBr(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlOrBr")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def interpolateYlOrRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlOrRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("d3-scale-chromatic", "schemeAccent")
   @js.native

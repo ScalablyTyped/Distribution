@@ -5,7 +5,6 @@ import typings.rcCollapse.anon.CollapsePanelPropschildre
 import typings.react.mod.ForwardRefExoticComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelContentMod extends Shortcut {

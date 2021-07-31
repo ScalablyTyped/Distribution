@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointItemResponse extends StObject {
   
   /**
     * The custom message that's returned in the response as a result of processing the endpoint data.
     */
-  var Message: js.UndefOr[string] = js.native
+  var Message: js.UndefOr[string] = js.undefined
   
   /**
     * The status code that's returned in the response as a result of processing the endpoint data.
     */
-  var StatusCode: js.UndefOr[integer] = js.native
+  var StatusCode: js.UndefOr[integer] = js.undefined
 }
 object EndpointItemResponse {
   

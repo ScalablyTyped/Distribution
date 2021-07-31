@@ -3,29 +3,27 @@ package typings.inboxsdk.mod.Conversations
 import typings.inboxsdk.inboxsdkStrings.destroy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentCardView extends StObject {
   
-  def addButton(buttonDescriptor: CustomButtonDescriptor): Unit = js.native
+  def addButton(buttonDescriptor: CustomButtonDescriptor): Unit
   
-  var destroyed: Boolean = js.native
+  var destroyed: Boolean
   
-  def getAttachmentType(): String = js.native
+  def getAttachmentType(): String
   
   /**
     * @deprecated. Use AttachmentCardClickEvent.getDownloadURL() instead
     */
-  def getDownloadURL(): js.Promise[String] = js.native
+  def getDownloadURL(): js.Promise[String]
   
-  def getMessageView(): MessageView | Null = js.native
+  def getMessageView(): MessageView | Null
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
   @JSName("on")
-  def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit = js.native
+  def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit
 }
 object AttachmentCardView {
   

@@ -2,16 +2,14 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Number extends StObject {
   
   // 为空时，是数字，否则会以字符串加后缀形式赋值
-  var key: String = js.native
+  var key: String
   
-  var value: String = js.native
+  var value: String
 }
 object Number {
   

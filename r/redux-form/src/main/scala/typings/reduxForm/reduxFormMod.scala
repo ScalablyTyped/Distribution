@@ -3,7 +3,6 @@ package typings.reduxForm
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.Context
@@ -15,7 +14,7 @@ import typings.reduxForm.fieldMod.Validator
 import typings.reduxForm.mod.FieldType
 import typings.reduxForm.mod.FormErrors
 import typings.reduxForm.mod.FormWarnings
-import typings.reduxForm.reducerMod.FieldState
+import typings.reduxForm.reducerMod.FormState
 import typings.reduxForm.reducerMod.FormStateMap
 import typings.reduxForm.reducerMod.RegisteredFieldState
 import typings.reduxForm.reduxFormStrings.Field
@@ -28,28 +27,27 @@ import typings.std.HTMLElement
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reduxFormMod {
   
-  @JSImport("redux-form/lib/reduxForm", JSImport.Default)
+  @JSImport("redux-form/lib/reduxForm", JSImport.Namespace)
   @js.native
-  def default[FormData, P, ErrorType](config: ConfigProps[FormData, P, ErrorType]): FormDecorator[FormData, P, ErrorType] = js.native
-  @JSImport("redux-form/lib/reduxForm", JSImport.Default)
-  @js.native
-  def default[FormData, P, ErrorType](config: Partial[ConfigProps[FormData, P, ErrorType]]): FormDecorator[FormData, P, ErrorType] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[FormData, P, ErrorType](config: ConfigProps[FormData, P, ErrorType]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
+  @scala.inline
+  def default[FormData, P, ErrorType](config: Partial[ConfigProps[FormData, P, ErrorType]]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
   
   @JSImport("redux-form/lib/reduxForm", "ReduxFormContext")
   @js.native
   val ReduxFormContext: Context[FormContext] = js.native
   
-  @JSImport("redux-form/lib/reduxForm", "reduxForm")
-  @js.native
-  def reduxForm[FormData, P, ErrorType](config: ConfigProps[FormData, P, ErrorType]): FormDecorator[FormData, P, ErrorType] = js.native
-  @JSImport("redux-form/lib/reduxForm", "reduxForm")
-  @js.native
-  def reduxForm[FormData, P, ErrorType](config: Partial[ConfigProps[FormData, P, ErrorType]]): FormDecorator[FormData, P, ErrorType] = js.native
+  @scala.inline
+  def reduxForm[FormData, P, ErrorType](config: ConfigProps[FormData, P, ErrorType]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
+  @scala.inline
+  def reduxForm[FormData, P, ErrorType](config: Partial[ConfigProps[FormData, P, ErrorType]]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
   
   type ArrayInsertAction = js.Function3[/* field */ String, /* index */ Double, /* value */ js.Any, Unit]
   
@@ -71,20 +69,19 @@ object reduxFormMod {
   
   type ArrayUnshiftAction = js.Function2[/* field */ String, /* value */ js.Any, Unit]
   
-  @js.native
   trait AsyncValidateCallback[FormData, ErrorType] extends StObject {
     
-    var asyncErrors: js.UndefOr[FormErrors[FormData, ErrorType]] = js.native
+    var asyncErrors: js.UndefOr[FormErrors[FormData, ErrorType]] = js.undefined
     
-    var blurredField: js.UndefOr[String] = js.native
+    var blurredField: js.UndefOr[String] = js.undefined
     
-    var initialized: Boolean = js.native
+    var initialized: Boolean
     
-    var pristine: Boolean = js.native
+    var pristine: Boolean
     
-    var syncValidationPasses: Boolean = js.native
+    var syncValidationPasses: Boolean
     
-    var trigger: blur | submit = js.native
+    var trigger: blur | submit
   }
   object AsyncValidateCallback {
     
@@ -95,7 +92,7 @@ object reduxFormMod {
     }
     
     @scala.inline
-    implicit class AsyncValidateCallbackMutableBuilder[Self <: AsyncValidateCallback[_, _], FormData, ErrorType] (val x: Self with (AsyncValidateCallback[FormData, ErrorType])) extends AnyVal {
+    implicit class AsyncValidateCallbackMutableBuilder[Self <: AsyncValidateCallback[?, ?], FormData, ErrorType] (val x: Self & (AsyncValidateCallback[FormData, ErrorType])) extends AnyVal {
       
       @scala.inline
       def setAsyncErrors(value: FormErrors[FormData, ErrorType]): Self = StObject.set(x, "asyncErrors", value.asInstanceOf[js.Any])
@@ -131,106 +128,104 @@ object reduxFormMod {
   
   type ClearAsyncErrorAction = js.Function1[/* field */ String, Unit]
   
-  type ClearFieldsAction = js.Function3[
-    /* keepTouched */ Boolean, 
-    /* persistentSubmitErrors */ Boolean, 
-    /* repeated */ String, 
-    Unit
-  ]
+  @js.native
+  trait ClearFieldsAction extends StObject {
+    
+    def apply(keepTouched: Boolean, persistentSubmitErrors: Boolean, fields: String*): Unit = js.native
+  }
   
   type ClearSubmitAction = js.Function0[Unit]
   
   type ClearSubmitErrorsAction = js.Function0[Unit]
   
-  @js.native
   trait ConfigProps[FormData, P, ErrorType] extends StObject {
     
-    var asyncBlurFields: js.UndefOr[js.Array[String]] = js.native
+    var asyncBlurFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var asyncChangeFields: js.UndefOr[js.Array[String]] = js.native
+    var asyncChangeFields: js.UndefOr[js.Array[String]] = js.undefined
     
     var asyncValidate: js.UndefOr[
         js.Function4[
           /* values */ FormData, 
-          /* dispatch */ Dispatch[_], 
+          /* dispatch */ Dispatch[js.Any], 
           /* props */ DecoratedFormProps[FormData, P, ErrorType], 
           /* blurredField */ String, 
-          js.Promise[_]
+          js.Promise[js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var destroyOnUnmount: js.UndefOr[Boolean] = js.native
+    var destroyOnUnmount: js.UndefOr[Boolean] = js.undefined
     
-    var enableReinitialize: js.UndefOr[Boolean] = js.native
+    var enableReinitialize: js.UndefOr[Boolean] = js.undefined
     
-    var forceUnregisterOnUnmount: js.UndefOr[Boolean] = js.native
+    var forceUnregisterOnUnmount: js.UndefOr[Boolean] = js.undefined
     
-    var form: String = js.native
+    var form: String
     
-    var getFormState: js.UndefOr[GetFormState] = js.native
+    var getFormState: js.UndefOr[GetFormState] = js.undefined
     
-    var immutableProps: js.UndefOr[js.Array[String]] = js.native
+    var immutableProps: js.UndefOr[js.Array[String]] = js.undefined
     
-    var initialValues: js.UndefOr[Partial[FormData]] = js.native
+    var initialValues: js.UndefOr[Partial[FormData]] = js.undefined
     
-    var keepDirtyOnReinitialize: js.UndefOr[Boolean] = js.native
+    var keepDirtyOnReinitialize: js.UndefOr[Boolean] = js.undefined
     
-    var keepValues: js.UndefOr[Boolean] = js.native
+    var keepValues: js.UndefOr[Boolean] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function4[
           /* values */ Partial[FormData], 
-          /* dispatch */ Dispatch[_], 
+          /* dispatch */ Dispatch[js.Any], 
           /* props */ DecoratedFormProps[FormData, P, ErrorType], 
           /* previousValues */ Partial[FormData], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onSubmit: js.UndefOr[
         (FormSubmitHandler[FormData, P, ErrorType]) | (SubmitHandler[FormData, P, ErrorType])
-      ] = js.native
+      ] = js.undefined
     
     var onSubmitFail: js.UndefOr[
         js.Function4[
           /* errors */ js.UndefOr[FormErrors[FormData, ErrorType]], 
-          /* dispatch */ Dispatch[_], 
+          /* dispatch */ Dispatch[js.Any], 
           /* submitError */ js.Any, 
           /* props */ DecoratedFormProps[FormData, P, ErrorType], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onSubmitSuccess: js.UndefOr[
         js.Function3[
           /* result */ js.Any, 
-          /* dispatch */ Dispatch[_], 
+          /* dispatch */ Dispatch[js.Any], 
           /* props */ DecoratedFormProps[FormData, P, ErrorType], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var persistentSubmitErrors: js.UndefOr[Boolean] = js.native
+    var persistentSubmitErrors: js.UndefOr[Boolean] = js.undefined
     
-    var propNamespace: js.UndefOr[String] = js.native
+    var propNamespace: js.UndefOr[String] = js.undefined
     
-    var pure: js.UndefOr[Boolean] = js.native
+    var pure: js.UndefOr[Boolean] = js.undefined
     
-    var shouldAsyncValidate: js.UndefOr[js.Function1[/* params */ AsyncValidateCallback[FormData, ErrorType], Boolean]] = js.native
+    var shouldAsyncValidate: js.UndefOr[js.Function1[/* params */ AsyncValidateCallback[FormData, ErrorType], Boolean]] = js.undefined
     
-    var shouldError: js.UndefOr[js.Function1[/* params */ ValidateCallback[FormData, P, ErrorType], Boolean]] = js.native
+    var shouldError: js.UndefOr[js.Function1[/* params */ ValidateCallback[FormData, P, ErrorType], Boolean]] = js.undefined
     
-    var shouldValidate: js.UndefOr[js.Function1[/* params */ ValidateCallback[FormData, P, ErrorType], Boolean]] = js.native
+    var shouldValidate: js.UndefOr[js.Function1[/* params */ ValidateCallback[FormData, P, ErrorType], Boolean]] = js.undefined
     
-    var shouldWarn: js.UndefOr[js.Function1[/* params */ ValidateCallback[FormData, P, ErrorType], Boolean]] = js.native
+    var shouldWarn: js.UndefOr[js.Function1[/* params */ ValidateCallback[FormData, P, ErrorType], Boolean]] = js.undefined
     
-    var submitAsSideEffect: js.UndefOr[Boolean] = js.native
+    var submitAsSideEffect: js.UndefOr[Boolean] = js.undefined
     
-    var touchOnBlur: js.UndefOr[Boolean] = js.native
+    var touchOnBlur: js.UndefOr[Boolean] = js.undefined
     
-    var touchOnChange: js.UndefOr[Boolean] = js.native
+    var touchOnChange: js.UndefOr[Boolean] = js.undefined
     
-    var updateUnregisteredFields: js.UndefOr[Boolean] = js.native
+    var updateUnregisteredFields: js.UndefOr[Boolean] = js.undefined
     
     var validate: js.UndefOr[
         js.Function2[
@@ -238,7 +233,7 @@ object reduxFormMod {
           /* props */ DecoratedFormProps[FormData, P, ErrorType], 
           FormErrors[FormData, ErrorType]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var warn: js.UndefOr[
         js.Function2[
@@ -246,7 +241,7 @@ object reduxFormMod {
           /* props */ DecoratedFormProps[FormData, P, ErrorType], 
           FormWarnings[FormData, Unit]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ConfigProps {
     
@@ -257,7 +252,7 @@ object reduxFormMod {
     }
     
     @scala.inline
-    implicit class ConfigPropsMutableBuilder[Self <: ConfigProps[_, _, _], FormData, P, ErrorType] (val x: Self with (ConfigProps[FormData, P, ErrorType])) extends AnyVal {
+    implicit class ConfigPropsMutableBuilder[Self <: ConfigProps[?, ?, ?], FormData, P, ErrorType] (val x: Self & (ConfigProps[FormData, P, ErrorType])) extends AnyVal {
       
       @scala.inline
       def setAsyncBlurFields(value: js.Array[String]): Self = StObject.set(x, "asyncBlurFields", value.asInstanceOf[js.Any])
@@ -279,7 +274,7 @@ object reduxFormMod {
       
       @scala.inline
       def setAsyncValidate(
-        value: (/* values */ FormData, /* dispatch */ Dispatch[_], /* props */ DecoratedFormProps[FormData, P, ErrorType], /* blurredField */ String) => js.Promise[_]
+        value: (/* values */ FormData, /* dispatch */ Dispatch[js.Any], /* props */ DecoratedFormProps[FormData, P, ErrorType], /* blurredField */ String) => js.Promise[js.Any]
       ): Self = StObject.set(x, "asyncValidate", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -341,7 +336,7 @@ object reduxFormMod {
       
       @scala.inline
       def setOnChange(
-        value: (/* values */ Partial[FormData], /* dispatch */ Dispatch[_], /* props */ DecoratedFormProps[FormData, P, ErrorType], /* previousValues */ Partial[FormData]) => Unit
+        value: (/* values */ Partial[FormData], /* dispatch */ Dispatch[js.Any], /* props */ DecoratedFormProps[FormData, P, ErrorType], /* previousValues */ Partial[FormData]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -352,7 +347,7 @@ object reduxFormMod {
       
       @scala.inline
       def setOnSubmitFail(
-        value: (/* errors */ js.UndefOr[FormErrors[FormData, ErrorType]], /* dispatch */ Dispatch[_], /* submitError */ js.Any, /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit
+        value: (/* errors */ js.UndefOr[FormErrors[FormData, ErrorType]], /* dispatch */ Dispatch[js.Any], /* submitError */ js.Any, /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit
       ): Self = StObject.set(x, "onSubmitFail", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -365,7 +360,7 @@ object reduxFormMod {
       
       @scala.inline
       def setOnSubmitSuccess(
-        value: (/* result */ js.Any, /* dispatch */ Dispatch[_], /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit
+        value: (/* result */ js.Any, /* dispatch */ Dispatch[js.Any], /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit
       ): Self = StObject.set(x, "onSubmitSuccess", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -460,86 +455,90 @@ object reduxFormMod {
   
   @js.native
   trait DecoratedComponentClass[FormData, P]
-    extends Instantiable0[FormInstance[FormData, P]]
+    extends StObject
+       with Instantiable0[FormInstance[FormData, P]]
        with Instantiable1[/* props */ P, FormInstance[FormData, P]]
-       with Instantiable2[js.UndefOr[/* props */ P], /* context */ js.Any, FormInstance[FormData, P]]
+       with Instantiable2[
+          (/* props */ P) | (/* props */ Unit), 
+          /* context */ js.Any, 
+          FormInstance[FormData, P]
+        ]
   
-  @js.native
   trait DecoratedFormActions[ErrorType] extends StObject {
     
-    var array: InjectedArrayProps = js.native
+    var array: InjectedArrayProps
     
-    var arrayInsert: ArrayInsertAction = js.native
+    var arrayInsert: ArrayInsertAction
     
-    var arrayMove: ArrayMoveAction = js.native
+    var arrayMove: ArrayMoveAction
     
-    var arrayPop: ArrayPopAction = js.native
+    var arrayPop: ArrayPopAction
     
-    var arrayPush: ArrayPushAction = js.native
+    var arrayPush: ArrayPushAction
     
-    var arrayRemove: ArrayRemoveAction = js.native
+    var arrayRemove: ArrayRemoveAction
     
-    var arrayRemoveAll: ArrayRemoveAllAction = js.native
+    var arrayRemoveAll: ArrayRemoveAllAction
     
-    var arrayShift: ArrayShiftAction = js.native
+    var arrayShift: ArrayShiftAction
     
-    var arraySplice: ArraySpliceAction = js.native
+    var arraySplice: ArraySpliceAction
     
-    var arraySwap: ArraySwapAction = js.native
+    var arraySwap: ArraySwapAction
     
-    var arrayUnshift: ArrayUnshiftAction = js.native
+    var arrayUnshift: ArrayUnshiftAction
     
-    var autofill: AutoFillAction = js.native
+    var autofill: AutoFillAction
     
-    var blur: BlurAction = js.native
+    var blur: BlurAction
     
-    var change: ChangeAction = js.native
+    var change: ChangeAction
     
-    var clearAsyncError: ClearAsyncErrorAction = js.native
+    var clearAsyncError: ClearAsyncErrorAction
     
-    var clearFields: ClearFieldsAction = js.native
+    var clearFields: ClearFieldsAction
     
-    var clearSubmit: ClearSubmitAction = js.native
+    var clearSubmit: ClearSubmitAction
     
-    var clearSubmitErrors: ClearSubmitErrorsAction = js.native
+    var clearSubmitErrors: ClearSubmitErrorsAction
     
-    var destroy: DestroyAction = js.native
+    var destroy: DestroyAction
     
-    var dispatch: Dispatch[AnyAction] = js.native
+    var dispatch: Dispatch[AnyAction]
     
-    var focus: FocusAction = js.native
+    var focus: FocusAction
     
-    var initialize: InitializeAction[ErrorType] = js.native
+    var initialize: InitializeAction[ErrorType]
     
-    var registerField: RegisterFieldAction = js.native
+    var registerField: RegisterFieldAction
     
-    var reset: ResetAction = js.native
+    var reset: ResetAction
     
-    var resetSection: ResetSectionAction = js.native
+    var resetSection: ResetSectionAction
     
-    var setSubmitFailed: SetSubmitFailedAction = js.native
+    var setSubmitFailed: SetSubmitFailedAction
     
-    var setSubmitSucceeded: SetSubmitSucceededAction = js.native
+    var setSubmitSucceeded: SetSubmitSucceededAction
     
-    var startAsyncValidation: StartAsyncValidationAction = js.native
+    var startAsyncValidation: StartAsyncValidationAction
     
-    var startSubmit: StartSubmitAction = js.native
+    var startSubmit: StartSubmitAction
     
-    var stopAsyncValidation: StopAsyncValidationAction[ErrorType] = js.native
+    var stopAsyncValidation: StopAsyncValidationAction[ErrorType]
     
-    var stopSubmit: StopSubmitAction[ErrorType] = js.native
+    var stopSubmit: StopSubmitAction[ErrorType]
     
-    var submit: SubmitAction = js.native
+    var submit: SubmitAction
     
-    var touch: TouchAction = js.native
+    var touch: TouchAction
     
-    var unregisterField: UnregisterFieldAction = js.native
+    var unregisterField: UnregisterFieldAction
     
-    var untouch: UntouchAction = js.native
+    var untouch: UntouchAction
     
-    var updateSyncErrors: UpdateSyncErrorsAction[ErrorType] = js.native
+    var updateSyncErrors: UpdateSyncErrorsAction[ErrorType]
     
-    var updateSyncWarnings: UpdateSyncWarningsAction[ErrorType] = js.native
+    var updateSyncWarnings: UpdateSyncWarningsAction[ErrorType]
   }
   object DecoratedFormActions {
     
@@ -560,7 +559,7 @@ object reduxFormMod {
       blur: (/* field */ String, /* value */ js.Any) => Unit,
       change: (/* field */ String, /* value */ js.Any) => Unit,
       clearAsyncError: /* field */ String => Unit,
-      clearFields: (/* keepTouched */ Boolean, /* persistentSubmitErrors */ Boolean, /* repeated */ String) => Unit,
+      clearFields: ClearFieldsAction,
       clearSubmit: () => Unit,
       clearSubmitErrors: () => Unit,
       destroy: () => Unit,
@@ -570,25 +569,25 @@ object reduxFormMod {
       registerField: (/* name */ String, /* type */ FieldType) => Unit,
       reset: () => Unit,
       resetSection: () => Unit,
-      setSubmitFailed: /* repeated */ String => Unit,
-      setSubmitSucceeded: /* repeated */ String => Unit,
+      setSubmitFailed: SetSubmitFailedAction,
+      setSubmitSucceeded: SetSubmitSucceededAction,
       startAsyncValidation: /* field */ String => Unit,
       startSubmit: () => Unit,
       stopAsyncValidation: /* errors */ js.UndefOr[FormErrors[ErrorType, String]] => Unit,
       stopSubmit: /* errors */ js.UndefOr[FormErrors[ErrorType, String]] => Unit,
       submit: () => Unit,
-      touch: /* repeated */ String => Unit,
+      touch: TouchAction,
       unregisterField: (/* name */ String, /* destroyOnUnmount */ js.UndefOr[Boolean]) => Unit,
-      untouch: /* repeated */ String => Unit,
+      untouch: UntouchAction,
       updateSyncErrors: (/* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], /* error */ js.UndefOr[js.Any]) => Unit,
       updateSyncWarnings: (/* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], /* error */ js.UndefOr[js.Any]) => Unit
     ): DecoratedFormActions[ErrorType] = {
-      val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], arrayInsert = js.Any.fromFunction3(arrayInsert), arrayMove = js.Any.fromFunction3(arrayMove), arrayPop = js.Any.fromFunction1(arrayPop), arrayPush = js.Any.fromFunction2(arrayPush), arrayRemove = js.Any.fromFunction2(arrayRemove), arrayRemoveAll = js.Any.fromFunction1(arrayRemoveAll), arrayShift = js.Any.fromFunction1(arrayShift), arraySplice = js.Any.fromFunction4(arraySplice), arraySwap = js.Any.fromFunction3(arraySwap), arrayUnshift = js.Any.fromFunction2(arrayUnshift), autofill = js.Any.fromFunction2(autofill), blur = js.Any.fromFunction2(blur), change = js.Any.fromFunction2(change), clearAsyncError = js.Any.fromFunction1(clearAsyncError), clearFields = js.Any.fromFunction3(clearFields), clearSubmit = js.Any.fromFunction0(clearSubmit), clearSubmitErrors = js.Any.fromFunction0(clearSubmitErrors), destroy = js.Any.fromFunction0(destroy), dispatch = js.Any.fromFunction1(dispatch), focus = js.Any.fromFunction1(focus), initialize = js.Any.fromFunction3(initialize), registerField = js.Any.fromFunction2(registerField), reset = js.Any.fromFunction0(reset), resetSection = js.Any.fromFunction0(resetSection), setSubmitFailed = js.Any.fromFunction1(setSubmitFailed), setSubmitSucceeded = js.Any.fromFunction1(setSubmitSucceeded), startAsyncValidation = js.Any.fromFunction1(startAsyncValidation), startSubmit = js.Any.fromFunction0(startSubmit), stopAsyncValidation = js.Any.fromFunction1(stopAsyncValidation), stopSubmit = js.Any.fromFunction1(stopSubmit), submit = js.Any.fromFunction0(submit), touch = js.Any.fromFunction1(touch), unregisterField = js.Any.fromFunction2(unregisterField), untouch = js.Any.fromFunction1(untouch), updateSyncErrors = js.Any.fromFunction2(updateSyncErrors), updateSyncWarnings = js.Any.fromFunction2(updateSyncWarnings))
+      val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], arrayInsert = js.Any.fromFunction3(arrayInsert), arrayMove = js.Any.fromFunction3(arrayMove), arrayPop = js.Any.fromFunction1(arrayPop), arrayPush = js.Any.fromFunction2(arrayPush), arrayRemove = js.Any.fromFunction2(arrayRemove), arrayRemoveAll = js.Any.fromFunction1(arrayRemoveAll), arrayShift = js.Any.fromFunction1(arrayShift), arraySplice = js.Any.fromFunction4(arraySplice), arraySwap = js.Any.fromFunction3(arraySwap), arrayUnshift = js.Any.fromFunction2(arrayUnshift), autofill = js.Any.fromFunction2(autofill), blur = js.Any.fromFunction2(blur), change = js.Any.fromFunction2(change), clearAsyncError = js.Any.fromFunction1(clearAsyncError), clearFields = clearFields.asInstanceOf[js.Any], clearSubmit = js.Any.fromFunction0(clearSubmit), clearSubmitErrors = js.Any.fromFunction0(clearSubmitErrors), destroy = js.Any.fromFunction0(destroy), dispatch = js.Any.fromFunction1(dispatch), focus = js.Any.fromFunction1(focus), initialize = js.Any.fromFunction3(initialize), registerField = js.Any.fromFunction2(registerField), reset = js.Any.fromFunction0(reset), resetSection = js.Any.fromFunction0(resetSection), setSubmitFailed = setSubmitFailed.asInstanceOf[js.Any], setSubmitSucceeded = setSubmitSucceeded.asInstanceOf[js.Any], startAsyncValidation = js.Any.fromFunction1(startAsyncValidation), startSubmit = js.Any.fromFunction0(startSubmit), stopAsyncValidation = js.Any.fromFunction1(stopAsyncValidation), stopSubmit = js.Any.fromFunction1(stopSubmit), submit = js.Any.fromFunction0(submit), touch = touch.asInstanceOf[js.Any], unregisterField = js.Any.fromFunction2(unregisterField), untouch = untouch.asInstanceOf[js.Any], updateSyncErrors = js.Any.fromFunction2(updateSyncErrors), updateSyncWarnings = js.Any.fromFunction2(updateSyncWarnings))
       __obj.asInstanceOf[DecoratedFormActions[ErrorType]]
     }
     
     @scala.inline
-    implicit class DecoratedFormActionsMutableBuilder[Self <: DecoratedFormActions[_], ErrorType] (val x: Self with DecoratedFormActions[ErrorType]) extends AnyVal {
+    implicit class DecoratedFormActionsMutableBuilder[Self <: DecoratedFormActions[?], ErrorType] (val x: Self & DecoratedFormActions[ErrorType]) extends AnyVal {
       
       @scala.inline
       def setArray(value: InjectedArrayProps): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
@@ -638,9 +637,7 @@ object reduxFormMod {
       def setClearAsyncError(value: /* field */ String => Unit): Self = StObject.set(x, "clearAsyncError", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setClearFields(
-        value: (/* keepTouched */ Boolean, /* persistentSubmitErrors */ Boolean, /* repeated */ String) => Unit
-      ): Self = StObject.set(x, "clearFields", js.Any.fromFunction3(value))
+      def setClearFields(value: ClearFieldsAction): Self = StObject.set(x, "clearFields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setClearSubmit(value: () => Unit): Self = StObject.set(x, "clearSubmit", js.Any.fromFunction0(value))
@@ -672,10 +669,10 @@ object reduxFormMod {
       def setResetSection(value: () => Unit): Self = StObject.set(x, "resetSection", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setSetSubmitFailed(value: /* repeated */ String => Unit): Self = StObject.set(x, "setSubmitFailed", js.Any.fromFunction1(value))
+      def setSetSubmitFailed(value: SetSubmitFailedAction): Self = StObject.set(x, "setSubmitFailed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSetSubmitSucceeded(value: /* repeated */ String => Unit): Self = StObject.set(x, "setSubmitSucceeded", js.Any.fromFunction1(value))
+      def setSetSubmitSucceeded(value: SetSubmitSucceededAction): Self = StObject.set(x, "setSubmitSucceeded", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStartAsyncValidation(value: /* field */ String => Unit): Self = StObject.set(x, "startAsyncValidation", js.Any.fromFunction1(value))
@@ -693,13 +690,13 @@ object reduxFormMod {
       def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setTouch(value: /* repeated */ String => Unit): Self = StObject.set(x, "touch", js.Any.fromFunction1(value))
+      def setTouch(value: TouchAction): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUnregisterField(value: (/* name */ String, /* destroyOnUnmount */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "unregisterField", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setUntouch(value: /* repeated */ String => Unit): Self = StObject.set(x, "untouch", js.Any.fromFunction1(value))
+      def setUntouch(value: UntouchAction): Self = StObject.set(x, "untouch", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUpdateSyncErrors(
@@ -713,55 +710,37 @@ object reduxFormMod {
     }
   }
   
-  type DecoratedFormProps[FormData, P, ErrorType] = P with (Partial[ConfigProps[FormData, P, ErrorType]]) with (Partial[DecoratedFormState[FormData, ErrorType]]) with Partial[DecoratedFormActions[ErrorType]] with ReduxForm
+  type DecoratedFormProps[FormData, P, ErrorType] = P & (Partial[ConfigProps[FormData, P, ErrorType]]) & (Partial[DecoratedFormState[FormData, ErrorType]]) & Partial[DecoratedFormActions[ErrorType]] & ReduxForm
   
-  /* Inlined redux-form.redux-form/lib/reducer.FormState & {  asyncErrors :redux-form.redux-form.FormErrors<FormData, ErrorType> | undefined,   asyncValidating :boolean,   dirty :boolean,   error :any | undefined,   initialized :boolean,   invalid :boolean,   pristine :boolean,   submitSucceeded :boolean,   syncErrors :redux-form.redux-form.FormErrors<FormData, ErrorType> | undefined,   syncWarnings :redux-form.redux-form.FormWarnings<any, any> | undefined,   triggerSubmit :boolean | undefined,   valid :boolean,   validExceptSubmit :boolean,   warning :any | undefined} */
-  @js.native
-  trait DecoratedFormState[FormData, ErrorType] extends StObject {
+  trait DecoratedFormState[FormData, ErrorType]
+    extends StObject
+       with FormState {
     
-    var active: js.UndefOr[String] = js.native
+    var asyncErrors: js.UndefOr[FormErrors[FormData, ErrorType]] = js.undefined
     
-    var anyTouched: js.UndefOr[Boolean] = js.native
+    var asyncValidating: Boolean
     
-    var asyncErrors: js.UndefOr[FormErrors[FormData, ErrorType]] = js.native
+    var dirty: Boolean
     
-    var asyncValidating: Boolean = js.native
+    var initialized: Boolean
     
-    var dirty: Boolean = js.native
+    var invalid: Boolean
     
-    var error: js.UndefOr[js.Any] = js.native
+    var pristine: Boolean
     
-    var fields: js.UndefOr[StringDictionary[FieldState]] = js.native
+    var submitSucceeded: Boolean
     
-    var initialized: Boolean = js.native
+    var syncErrors: js.UndefOr[FormErrors[FormData, ErrorType]] = js.undefined
     
-    var invalid: Boolean = js.native
+    var syncWarnings: js.UndefOr[FormWarnings[js.Any, js.Any]] = js.undefined
     
-    var pristine: Boolean = js.native
+    var triggerSubmit: js.UndefOr[Boolean] = js.undefined
     
-    var registeredFields: js.Array[RegisteredFieldState] = js.native
+    var valid: Boolean
     
-    var submitErrors: js.UndefOr[StringDictionary[String]] = js.native
+    var validExceptSubmit: Boolean
     
-    var submitFailed: js.UndefOr[Boolean] = js.native
-    
-    var submitSucceeded: Boolean = js.native
-    
-    var submitting: js.UndefOr[Boolean] = js.native
-    
-    var syncErrors: js.UndefOr[FormErrors[FormData, ErrorType]] = js.native
-    
-    var syncWarnings: js.UndefOr[FormWarnings[_, _]] = js.native
-    
-    var triggerSubmit: js.UndefOr[Boolean] = js.native
-    
-    var valid: Boolean = js.native
-    
-    var validExceptSubmit: Boolean = js.native
-    
-    var values: js.UndefOr[StringDictionary[js.Any]] = js.native
-    
-    var warning: js.UndefOr[js.Any] = js.native
+    var warning: js.UndefOr[js.Any] = js.undefined
   }
   object DecoratedFormState {
     
@@ -782,19 +761,7 @@ object reduxFormMod {
     }
     
     @scala.inline
-    implicit class DecoratedFormStateMutableBuilder[Self <: DecoratedFormState[_, _], FormData, ErrorType] (val x: Self with (DecoratedFormState[FormData, ErrorType])) extends AnyVal {
-      
-      @scala.inline
-      def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
-      
-      @scala.inline
-      def setAnyTouched(value: Boolean): Self = StObject.set(x, "anyTouched", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAnyTouchedUndefined: Self = StObject.set(x, "anyTouched", js.undefined)
+    implicit class DecoratedFormStateMutableBuilder[Self <: DecoratedFormState[?, ?], FormData, ErrorType] (val x: Self & (DecoratedFormState[FormData, ErrorType])) extends AnyVal {
       
       @scala.inline
       def setAsyncErrors(value: FormErrors[FormData, ErrorType]): Self = StObject.set(x, "asyncErrors", value.asInstanceOf[js.Any])
@@ -809,18 +776,6 @@ object reduxFormMod {
       def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
-      
-      @scala.inline
-      def setFields(value: StringDictionary[FieldState]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
-      
-      @scala.inline
       def setInitialized(value: Boolean): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -830,31 +785,7 @@ object reduxFormMod {
       def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRegisteredFields(value: js.Array[RegisteredFieldState]): Self = StObject.set(x, "registeredFields", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRegisteredFieldsVarargs(value: RegisteredFieldState*): Self = StObject.set(x, "registeredFields", js.Array(value :_*))
-      
-      @scala.inline
-      def setSubmitErrors(value: StringDictionary[String]): Self = StObject.set(x, "submitErrors", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSubmitErrorsUndefined: Self = StObject.set(x, "submitErrors", js.undefined)
-      
-      @scala.inline
-      def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSubmitFailedUndefined: Self = StObject.set(x, "submitFailed", js.undefined)
-      
-      @scala.inline
       def setSubmitSucceeded(value: Boolean): Self = StObject.set(x, "submitSucceeded", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSubmittingUndefined: Self = StObject.set(x, "submitting", js.undefined)
       
       @scala.inline
       def setSyncErrors(value: FormErrors[FormData, ErrorType]): Self = StObject.set(x, "syncErrors", value.asInstanceOf[js.Any])
@@ -863,7 +794,7 @@ object reduxFormMod {
       def setSyncErrorsUndefined: Self = StObject.set(x, "syncErrors", js.undefined)
       
       @scala.inline
-      def setSyncWarnings(value: FormWarnings[_, _]): Self = StObject.set(x, "syncWarnings", value.asInstanceOf[js.Any])
+      def setSyncWarnings(value: FormWarnings[js.Any, js.Any]): Self = StObject.set(x, "syncWarnings", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSyncWarningsUndefined: Self = StObject.set(x, "syncWarnings", js.undefined)
@@ -881,12 +812,6 @@ object reduxFormMod {
       def setValidExceptSubmit(value: Boolean): Self = StObject.set(x, "validExceptSubmit", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
-      
-      @scala.inline
       def setWarning(value: js.Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -901,26 +826,26 @@ object reduxFormMod {
   @js.native
   trait FormContext extends StObject {
     
-    def asyncValidate(): js.Promise[_] = js.native
-    def asyncValidate(name: js.UndefOr[scala.Nothing], value: js.Any): js.Promise[_] = js.native
-    def asyncValidate(name: String): js.Promise[_] = js.native
-    def asyncValidate(name: String, value: js.Any): js.Promise[_] = js.native
+    def asyncValidate(): js.Promise[js.Any] = js.native
+    def asyncValidate(name: String): js.Promise[js.Any] = js.native
+    def asyncValidate(name: String, value: js.Any): js.Promise[js.Any] = js.native
+    def asyncValidate(name: Unit, value: js.Any): js.Promise[js.Any] = js.native
     @JSName("asyncValidate")
-    def asyncValidate_blur(name: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], trigger: blur): js.Promise[_] = js.native
+    def asyncValidate_blur(name: String, value: js.Any, trigger: blur): js.Promise[js.Any] = js.native
     @JSName("asyncValidate")
-    def asyncValidate_blur(name: js.UndefOr[scala.Nothing], value: js.Any, trigger: blur): js.Promise[_] = js.native
+    def asyncValidate_blur(name: String, value: Unit, trigger: blur): js.Promise[js.Any] = js.native
     @JSName("asyncValidate")
-    def asyncValidate_blur(name: String, value: js.UndefOr[scala.Nothing], trigger: blur): js.Promise[_] = js.native
+    def asyncValidate_blur(name: Unit, value: js.Any, trigger: blur): js.Promise[js.Any] = js.native
     @JSName("asyncValidate")
-    def asyncValidate_blur(name: String, value: js.Any, trigger: blur): js.Promise[_] = js.native
+    def asyncValidate_blur(name: Unit, value: Unit, trigger: blur): js.Promise[js.Any] = js.native
     @JSName("asyncValidate")
-    def asyncValidate_change(name: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], trigger: change): js.Promise[_] = js.native
+    def asyncValidate_change(name: String, value: js.Any, trigger: change): js.Promise[js.Any] = js.native
     @JSName("asyncValidate")
-    def asyncValidate_change(name: js.UndefOr[scala.Nothing], value: js.Any, trigger: change): js.Promise[_] = js.native
+    def asyncValidate_change(name: String, value: Unit, trigger: change): js.Promise[js.Any] = js.native
     @JSName("asyncValidate")
-    def asyncValidate_change(name: String, value: js.UndefOr[scala.Nothing], trigger: change): js.Promise[_] = js.native
+    def asyncValidate_change(name: Unit, value: js.Any, trigger: change): js.Promise[js.Any] = js.native
     @JSName("asyncValidate")
-    def asyncValidate_change(name: String, value: js.Any, trigger: change): js.Promise[_] = js.native
+    def asyncValidate_change(name: Unit, value: Unit, trigger: change): js.Promise[js.Any] = js.native
     
     def blur(name: String, value: js.Any): Unit = js.native
     
@@ -937,17 +862,17 @@ object reduxFormMod {
     var prefixName: js.UndefOr[String] = js.native
     
     def register(name: String, `type`: String): Unit = js.native
-    def register(
-      name: String,
-      `type`: String,
-      getValidator: js.UndefOr[scala.Nothing],
-      getWarner: js.Function0[Validator | js.Array[Validator]]
-    ): Unit = js.native
     def register(name: String, `type`: String, getValidator: js.Function0[Validator | js.Array[Validator]]): Unit = js.native
     def register(
       name: String,
       `type`: String,
       getValidator: js.Function0[Validator | js.Array[Validator]],
+      getWarner: js.Function0[Validator | js.Array[Validator]]
+    ): Unit = js.native
+    def register(
+      name: String,
+      `type`: String,
+      getValidator: Unit,
       getWarner: js.Function0[Validator | js.Array[Validator]]
     ): Unit = js.native
     
@@ -959,7 +884,7 @@ object reduxFormMod {
   }
   
   type FormDecorator[FormData, P, ErrorType] = js.Function1[
-    /* component */ ComponentType[P with (InjectedFormProps[FormData, P, ErrorType])], 
+    /* component */ ComponentType[P & (InjectedFormProps[FormData, P, ErrorType])], 
     DecoratedComponentClass[FormData, DecoratedFormProps[FormData, P, ErrorType]]
   ]
   
@@ -979,7 +904,7 @@ object reduxFormMod {
     
     def resetSection(sections: String*): Unit = js.native
     
-    def submit(): js.Promise[_] = js.native
+    def submit(): js.Promise[js.Any] = js.native
     
     var valid: Boolean = js.native
     
@@ -1004,28 +929,27 @@ object reduxFormMod {
     Unit
   ]
   
-  @js.native
   trait InjectedArrayProps extends StObject {
     
-    def insert(field: String, index: Double, value: js.Any): Unit = js.native
+    def insert(field: String, index: Double, value: js.Any): Unit
     
-    def move(field: String, from: Double, to: Double): Unit = js.native
+    def move(field: String, from: Double, to: Double): Unit
     
-    def pop(field: String): Unit = js.native
+    def pop(field: String): Unit
     
-    def push(field: String, value: js.Any): Unit = js.native
+    def push(field: String, value: js.Any): Unit
     
-    def remove(field: String, index: Double): Unit = js.native
+    def remove(field: String, index: Double): Unit
     
-    def removeAll(field: String): Unit = js.native
+    def removeAll(field: String): Unit
     
-    def shift(field: String): Unit = js.native
+    def shift(field: String): Unit
     
-    def splice(field: String, index: Double, removeNum: Double, value: js.Any): Unit = js.native
+    def splice(field: String, index: Double, removeNum: Double, value: js.Any): Unit
     
-    def swap(field: String, indexA: Double, indexB: Double): Unit = js.native
+    def swap(field: String, indexA: Double, indexB: Double): Unit
     
-    def unshift(field: String, value: js.Any): Unit = js.native
+    def unshift(field: String, value: js.Any): Unit
   }
   object InjectedArrayProps {
     
@@ -1081,62 +1005,61 @@ object reduxFormMod {
     }
   }
   
-  @js.native
   trait InjectedFormProps[FormData, P, ErrorType] extends StObject {
     
-    var anyTouched: Boolean = js.native
+    var anyTouched: Boolean
     
-    var array: InjectedArrayProps = js.native
+    var array: InjectedArrayProps
     
-    def asyncValidate(): Unit = js.native
+    def asyncValidate(): Unit
     
-    var asyncValidating: String | Boolean = js.native
+    var asyncValidating: String | Boolean
     
-    def autofill(field: String, value: js.Any): Unit = js.native
+    def autofill(field: String, value: js.Any): Unit
     
-    def blur(field: String, value: js.Any): Unit = js.native
+    def blur(field: String, value: js.Any): Unit
     
-    def change(field: String, value: js.Any): Unit = js.native
+    def change(field: String, value: js.Any): Unit
     
-    def clearAsyncError(field: String): Unit = js.native
+    def clearAsyncError(field: String): Unit
     
-    def clearSubmit(): Unit = js.native
+    def clearSubmit(): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var dirty: Boolean = js.native
+    var dirty: Boolean
     
-    var error: ErrorType = js.native
+    var error: ErrorType
     
-    var form: String = js.native
+    var form: String
     
-    var handleSubmit: SubmitHandler[FormData, P, ErrorType] = js.native
+    var handleSubmit: SubmitHandler[FormData, P, ErrorType]
     
-    var initialValues: Partial[FormData] = js.native
+    var initialValues: Partial[FormData]
     
-    def initialize(data: Partial[FormData]): Unit = js.native
+    def initialize(data: Partial[FormData]): Unit
     
-    var initialized: Boolean = js.native
+    var initialized: Boolean
     
-    var invalid: Boolean = js.native
+    var invalid: Boolean
     
-    var pristine: Boolean = js.native
+    var pristine: Boolean
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    var submitFailed: Boolean = js.native
+    var submitFailed: Boolean
     
-    var submitSucceeded: Boolean = js.native
+    var submitSucceeded: Boolean
     
-    var submitting: Boolean = js.native
+    var submitting: Boolean
     
-    def touch(field: String*): Unit = js.native
+    def touch(field: String*): Unit
     
-    def untouch(field: String*): Unit = js.native
+    def untouch(field: String*): Unit
     
-    var valid: Boolean = js.native
+    var valid: Boolean
     
-    var warning: js.Any = js.native
+    var warning: js.Any
   }
   object InjectedFormProps {
     
@@ -1175,7 +1098,7 @@ object reduxFormMod {
     }
     
     @scala.inline
-    implicit class InjectedFormPropsMutableBuilder[Self <: InjectedFormProps[_, _, _], FormData, P, ErrorType] (val x: Self with (InjectedFormProps[FormData, P, ErrorType])) extends AnyVal {
+    implicit class InjectedFormPropsMutableBuilder[Self <: InjectedFormProps[?, ?, ?], FormData, P, ErrorType] (val x: Self & (InjectedFormProps[FormData, P, ErrorType])) extends AnyVal {
       
       @scala.inline
       def setAnyTouched(value: Boolean): Self = StObject.set(x, "anyTouched", value.asInstanceOf[js.Any])
@@ -1262,14 +1185,13 @@ object reduxFormMod {
   
   type RegisterFieldAction = js.Function2[/* name */ String, /* type */ FieldType, Unit]
   
-  @js.native
   trait RegisteredField extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: Field | FieldArray = js.native
+    var `type`: Field | FieldArray
   }
   object RegisteredField {
     
@@ -1298,9 +1220,17 @@ object reduxFormMod {
   
   type ResetSectionAction = js.Function0[Unit]
   
-  type SetSubmitFailedAction = js.Function1[/* repeated */ String, Unit]
+  @js.native
+  trait SetSubmitFailedAction extends StObject {
+    
+    def apply(fields: String*): Unit = js.native
+  }
   
-  type SetSubmitSucceededAction = js.Function1[/* repeated */ String, Unit]
+  @js.native
+  trait SetSubmitSucceededAction extends StObject {
+    
+    def apply(fields: String*): Unit = js.native
+  }
   
   type StartAsyncValidationAction = js.Function1[/* field */ String, Unit]
   
@@ -1315,51 +1245,42 @@ object reduxFormMod {
   @js.native
   trait SubmitHandler[FormData, P, ErrorType] extends StObject {
     
-    def apply(event: SyntheticEvent[_, Event]): Unit = js.native
+    def apply(event: SyntheticEvent[js.Any, Event]): Unit = js.native
     def apply(submit: FormSubmitHandler[FormData, P, ErrorType]): js.Any = js.native
+    def apply(submit: FormSubmitHandler[FormData, P, ErrorType], props: Unit, valid: Boolean): js.Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: js.UndefOr[scala.Nothing],
-      valid: js.UndefOr[scala.Nothing],
-      asyncValidate: js.UndefOr[scala.Nothing],
-      fields: js.Array[String]
-    ): js.Any = js.native
-    def apply(
-      submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: js.UndefOr[scala.Nothing],
-      valid: js.UndefOr[scala.Nothing],
-      asyncValidate: js.Any
-    ): js.Any = js.native
-    def apply(
-      submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: js.UndefOr[scala.Nothing],
-      valid: js.UndefOr[scala.Nothing],
-      asyncValidate: js.Any,
-      fields: js.Array[String]
-    ): js.Any = js.native
-    def apply(
-      submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: js.UndefOr[scala.Nothing],
-      valid: Boolean
-    ): js.Any = js.native
-    def apply(
-      submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: js.UndefOr[scala.Nothing],
-      valid: Boolean,
-      asyncValidate: js.UndefOr[scala.Nothing],
-      fields: js.Array[String]
-    ): js.Any = js.native
-    def apply(
-      submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: js.UndefOr[scala.Nothing],
+      props: Unit,
       valid: Boolean,
       asyncValidate: js.Any
     ): js.Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: js.UndefOr[scala.Nothing],
+      props: Unit,
       valid: Boolean,
       asyncValidate: js.Any,
+      fields: js.Array[String]
+    ): js.Any = js.native
+    def apply(
+      submit: FormSubmitHandler[FormData, P, ErrorType],
+      props: Unit,
+      valid: Boolean,
+      asyncValidate: Unit,
+      fields: js.Array[String]
+    ): js.Any = js.native
+    def apply(submit: FormSubmitHandler[FormData, P, ErrorType], props: Unit, valid: Unit, asyncValidate: js.Any): js.Any = js.native
+    def apply(
+      submit: FormSubmitHandler[FormData, P, ErrorType],
+      props: Unit,
+      valid: Unit,
+      asyncValidate: js.Any,
+      fields: js.Array[String]
+    ): js.Any = js.native
+    def apply(
+      submit: FormSubmitHandler[FormData, P, ErrorType],
+      props: Unit,
+      valid: Unit,
+      asyncValidate: Unit,
       fields: js.Array[String]
     ): js.Any = js.native
     def apply(
@@ -1369,39 +1290,12 @@ object reduxFormMod {
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: DecoratedFormProps[FormData, P, ErrorType],
-      valid: js.UndefOr[scala.Nothing],
-      asyncValidate: js.UndefOr[scala.Nothing],
-      fields: js.Array[String]
-    ): js.Any = js.native
-    def apply(
-      submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: DecoratedFormProps[FormData, P, ErrorType],
-      valid: js.UndefOr[scala.Nothing],
-      asyncValidate: js.Any
-    ): js.Any = js.native
-    def apply(
-      submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: DecoratedFormProps[FormData, P, ErrorType],
-      valid: js.UndefOr[scala.Nothing],
-      asyncValidate: js.Any,
-      fields: js.Array[String]
-    ): js.Any = js.native
-    def apply(
-      submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: DecoratedFormProps[FormData, P, ErrorType],
       valid: Boolean
     ): js.Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: DecoratedFormProps[FormData, P, ErrorType],
       valid: Boolean,
-      asyncValidate: js.UndefOr[scala.Nothing],
-      fields: js.Array[String]
-    ): js.Any = js.native
-    def apply(
-      submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: DecoratedFormProps[FormData, P, ErrorType],
-      valid: Boolean,
       asyncValidate: js.Any
     ): js.Any = js.native
     def apply(
@@ -1411,13 +1305,48 @@ object reduxFormMod {
       asyncValidate: js.Any,
       fields: js.Array[String]
     ): js.Any = js.native
+    def apply(
+      submit: FormSubmitHandler[FormData, P, ErrorType],
+      props: DecoratedFormProps[FormData, P, ErrorType],
+      valid: Boolean,
+      asyncValidate: Unit,
+      fields: js.Array[String]
+    ): js.Any = js.native
+    def apply(
+      submit: FormSubmitHandler[FormData, P, ErrorType],
+      props: DecoratedFormProps[FormData, P, ErrorType],
+      valid: Unit,
+      asyncValidate: js.Any
+    ): js.Any = js.native
+    def apply(
+      submit: FormSubmitHandler[FormData, P, ErrorType],
+      props: DecoratedFormProps[FormData, P, ErrorType],
+      valid: Unit,
+      asyncValidate: js.Any,
+      fields: js.Array[String]
+    ): js.Any = js.native
+    def apply(
+      submit: FormSubmitHandler[FormData, P, ErrorType],
+      props: DecoratedFormProps[FormData, P, ErrorType],
+      valid: Unit,
+      asyncValidate: Unit,
+      fields: js.Array[String]
+    ): js.Any = js.native
   }
   
-  type TouchAction = js.Function1[/* repeated */ String, Unit]
+  @js.native
+  trait TouchAction extends StObject {
+    
+    def apply(fields: String*): Unit = js.native
+  }
   
   type UnregisterFieldAction = js.Function2[/* name */ String, /* destroyOnUnmount */ js.UndefOr[Boolean], Unit]
   
-  type UntouchAction = js.Function1[/* repeated */ String, Unit]
+  @js.native
+  trait UntouchAction extends StObject {
+    
+    def apply(fields: String*): Unit = js.native
+  }
   
   type UpdateSyncErrorsAction[ErrorType] = js.Function2[
     /* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], 
@@ -1431,22 +1360,21 @@ object reduxFormMod {
     Unit
   ]
   
-  @js.native
   trait ValidateCallback[FormData, P, ErrorType] extends StObject {
     
-    var fieldValidatorKeys: js.Array[String] = js.native
+    var fieldValidatorKeys: js.Array[String]
     
-    var initialRender: Boolean = js.native
+    var initialRender: Boolean
     
-    var lastFieldValidatorKeys: js.Array[String] = js.native
+    var lastFieldValidatorKeys: js.Array[String]
     
-    var nextProps: DecoratedFormProps[FormData, P, ErrorType] = js.native
+    var nextProps: DecoratedFormProps[FormData, P, ErrorType]
     
-    var props: DecoratedFormProps[FormData, P, ErrorType] = js.native
+    var props: DecoratedFormProps[FormData, P, ErrorType]
     
-    var structure: js.Any = js.native
+    var structure: js.Any
     
-    var values: FormData = js.native
+    var values: FormData
   }
   object ValidateCallback {
     
@@ -1465,7 +1393,7 @@ object reduxFormMod {
     }
     
     @scala.inline
-    implicit class ValidateCallbackMutableBuilder[Self <: ValidateCallback[_, _, _], FormData, P, ErrorType] (val x: Self with (ValidateCallback[FormData, P, ErrorType])) extends AnyVal {
+    implicit class ValidateCallbackMutableBuilder[Self <: ValidateCallback[?, ?, ?], FormData, P, ErrorType] (val x: Self & (ValidateCallback[FormData, P, ErrorType])) extends AnyVal {
       
       @scala.inline
       def setFieldValidatorKeys(value: js.Array[String]): Self = StObject.set(x, "fieldValidatorKeys", value.asInstanceOf[js.Any])
@@ -1496,10 +1424,9 @@ object reduxFormMod {
     }
   }
   
-  @js.native
   trait WrappedReduxFormContext extends StObject {
     
-    var _reduxForm: FormContext = js.native
+    var _reduxForm: FormContext
   }
   object WrappedReduxFormContext {
     

@@ -11,7 +11,6 @@ import typings.ol.styleStyleMod.StyleLike
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modifyMod {
@@ -50,10 +49,14 @@ object modifyMod {
   object ModifyEventType extends StObject {
     
     @js.native
-    sealed trait MODIFYEND extends ModifyEventType
+    sealed trait MODIFYEND
+      extends StObject
+         with ModifyEventType
     
     @js.native
-    sealed trait MODIFYSTART extends ModifyEventType
+    sealed trait MODIFYSTART
+      extends StObject
+         with ModifyEventType
   }
   
   @js.native
@@ -86,26 +89,25 @@ object modifyMod {
     def un_modifystart(`type`: modifystart, listener: js.Function1[/* evt */ ModifyEvent, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var condition: js.UndefOr[Condition] = js.native
+    var condition: js.UndefOr[Condition] = js.undefined
     
-    var deleteCondition: js.UndefOr[Condition] = js.native
+    var deleteCondition: js.UndefOr[Condition] = js.undefined
     
     var features: js.UndefOr[
         typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
-      ] = js.native
+      ] = js.undefined
     
-    var insertVertexCondition: js.UndefOr[Condition] = js.native
+    var insertVertexCondition: js.UndefOr[Condition] = js.undefined
     
-    var pixelTolerance: js.UndefOr[Double] = js.native
+    var pixelTolerance: js.UndefOr[Double] = js.undefined
     
-    var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.native
+    var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.undefined
     
-    var style: js.UndefOr[StyleLike] = js.native
+    var style: js.UndefOr[StyleLike] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -176,20 +178,19 @@ object modifyMod {
     }
   }
   
-  @js.native
   trait SegmentData extends StObject {
     
-    var depth: js.UndefOr[js.Array[Double]] = js.native
+    var depth: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
+    var feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]
     
-    var featureSegments: js.UndefOr[js.Array[SegmentData]] = js.native
+    var featureSegments: js.UndefOr[js.Array[SegmentData]] = js.undefined
     
-    var geometry: typings.ol.simpleGeometryMod.default = js.native
+    var geometry: typings.ol.simpleGeometryMod.default
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var segment: js.Array[Extent] = js.native
+    var segment: js.Array[Extent]
   }
   object SegmentData {
     

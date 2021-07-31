@@ -2,14 +2,14 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NodeDefinition extends ElementDefinition {
+trait NodeDefinition
+  extends StObject
+     with ElementDefinition {
   
   @JSName("data")
-  var data_NodeDefinition: NodeDataDefinition = js.native
+  var data_NodeDefinition: NodeDataDefinition
 }
 object NodeDefinition {
   

@@ -4,7 +4,6 @@ import typings.grammarkdown.anon.Code
 import typings.grammarkdown.anon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Diagnostics {
@@ -12,6 +11,14 @@ object Diagnostics {
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics")
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics._0_expected")
+  @js.native
+  val `0Expected`: Code = js.native
+  
+  @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics._0_or_1_")
+  @js.native
+  val `0Or1`: Code = js.native
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Argument_0_cannot_be_specified_multiple_times")
   @js.native
@@ -131,12 +138,4 @@ object Diagnostics {
   
   @scala.inline
   def UnterminatedStringLiteral_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unterminated_string_literal")(x.asInstanceOf[js.Any])
-  
-  @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics._0_expected")
-  @js.native
-  val `0Expected`: Code = js.native
-  
-  @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics._0_or_1_")
-  @js.native
-  val `0Or1`: Code = js.native
 }

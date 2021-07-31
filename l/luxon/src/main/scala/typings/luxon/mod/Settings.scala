@@ -2,7 +2,6 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Settings {
@@ -39,13 +38,11 @@ object Settings {
   @scala.inline
   def defaultZoneName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultZoneName")(x.asInstanceOf[js.Any])
   
-  @JSImport("luxon", "Settings.now")
-  @js.native
-  def now(): Double = js.native
+  @scala.inline
+  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
-  @JSImport("luxon", "Settings.resetCaches")
-  @js.native
-  def resetCaches(): Unit = js.native
+  @scala.inline
+  def resetCaches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCaches")().asInstanceOf[Unit]
   
   @JSImport("luxon", "Settings.throwOnInvalid")
   @js.native

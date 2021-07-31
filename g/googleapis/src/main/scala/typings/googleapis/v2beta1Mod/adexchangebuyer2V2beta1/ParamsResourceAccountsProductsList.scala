@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccountsProductsList extends StandardParameters {
+trait ParamsResourceAccountsProductsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Account ID of the buyer.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * An optional PQL query used to query for products. See
@@ -28,18 +28,18 @@ trait ParamsResourceAccountsProductsList extends StandardParameters {
     * documentation about PQL and examples.  Nested repeated fields, such as
     * product.targetingCriterion.inclusions, cannot be filtered.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Requested page size. The server may return fewer results than requested.
     * If unspecified, the server will pick an appropriate default.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The page token as returned from ListProductsResponse.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAccountsProductsList {
   

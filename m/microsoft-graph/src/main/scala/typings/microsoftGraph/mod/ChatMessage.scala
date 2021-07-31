@@ -2,82 +2,82 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChatMessage extends Entity {
+trait ChatMessage
+  extends StObject
+     with Entity {
   
   // Attached files. Attachments are currently read-only – sending attachments is not supported.
-  var attachments: js.UndefOr[NullableOption[js.Array[ChatMessageAttachment]]] = js.native
+  var attachments: js.UndefOr[NullableOption[js.Array[ChatMessageAttachment]]] = js.undefined
   
   /**
     * Plaintext/HTML representation of the content of the chat message. Representation is specified by the contentType inside
     * the body. The content is always in HTML if the chat message contains a chatMessageMention.
     */
-  var body: js.UndefOr[ItemBody] = js.native
+  var body: js.UndefOr[ItemBody] = js.undefined
   
   // Read only. Timestamp of when the chat message was created.
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read only. Timestamp at which the chat message was deleted, or null if not deleted.
-  var deletedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var deletedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. Version number of the chat message.
-  var etag: js.UndefOr[NullableOption[String]] = js.native
+  var etag: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read only. Details of the sender of the chat message.
-  var from: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var from: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
-  var hostedContents: js.UndefOr[NullableOption[js.Array[ChatMessageHostedContent]]] = js.native
+  var hostedContents: js.UndefOr[NullableOption[js.Array[ChatMessageHostedContent]]] = js.undefined
   
   // The importance of the chat message. The possible values are: normal, high, urgent.
-  var importance: js.UndefOr[ChatMessageImportance] = js.native
+  var importance: js.UndefOr[ChatMessageImportance] = js.undefined
   
   /**
     * Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Microsoft Teams UI. If
     * no edits are made the value is null.
     */
-  var lastEditedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastEditedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Read only. Timestamp when the chat message is created (initial setting) or edited, including when a reaction is added
     * or removed.
     */
-  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Locale of the chat message set by the client.
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   // List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
-  var mentions: js.UndefOr[NullableOption[js.Array[ChatMessageMention]]] = js.native
+  var mentions: js.UndefOr[NullableOption[js.Array[ChatMessageMention]]] = js.undefined
   
   // The type of chat message. The possible values are: message.
-  var messageType: js.UndefOr[ChatMessageType] = js.native
+  var messageType: js.UndefOr[ChatMessageType] = js.undefined
   
   // Defines the properties of a policy violation set by a data loss prevention (DLP) application.
-  var policyViolation: js.UndefOr[NullableOption[ChatMessagePolicyViolation]] = js.native
+  var policyViolation: js.UndefOr[NullableOption[ChatMessagePolicyViolation]] = js.undefined
   
-  var reactions: js.UndefOr[NullableOption[js.Array[ChatMessageReaction]]] = js.native
+  var reactions: js.UndefOr[NullableOption[js.Array[ChatMessageReaction]]] = js.undefined
   
-  var replies: js.UndefOr[NullableOption[js.Array[ChatMessage]]] = js.native
+  var replies: js.UndefOr[NullableOption[js.Array[ChatMessage]]] = js.undefined
   
   /**
     * Read-only. Id of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels
     * not chats)
     */
-  var replyToId: js.UndefOr[NullableOption[String]] = js.native
+  var replyToId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The subject of the chat message, in plaintext.
-  var subject: js.UndefOr[NullableOption[String]] = js.native
+  var subject: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only
     * applies to channel chat messages, not chat messages in a chat.
     */
-  var summary: js.UndefOr[NullableOption[String]] = js.native
+  var summary: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var webUrl: js.UndefOr[NullableOption[String]] = js.native
+  var webUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ChatMessage {
   

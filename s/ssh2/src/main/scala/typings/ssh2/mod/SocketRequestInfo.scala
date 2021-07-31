@@ -2,14 +2,12 @@ package typings.ssh2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketRequestInfo extends StObject {
   
   /** Destination socket path of outgoing connection. */
-  var socketPath: String = js.native
+  var socketPath: String
 }
 object SocketRequestInfo {
   

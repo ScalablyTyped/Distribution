@@ -2,36 +2,34 @@ package typings.awsSdk.augmentedairuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HumanLoopSummary extends StObject {
   
   /**
     * When Amazon Augmented AI created the human loop.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The reason why the human loop failed. A failure reason is returned when the status of the human loop is Failed.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.FailureReason] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the flow definition used to configure the human loop.
     */
-  var FlowDefinitionArn: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.FlowDefinitionArn] = js.native
+  var FlowDefinitionArn: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.FlowDefinitionArn] = js.undefined
   
   /**
     * The name of the human loop.
     */
-  var HumanLoopName: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.HumanLoopName] = js.native
+  var HumanLoopName: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.HumanLoopName] = js.undefined
   
   /**
     * The status of the human loop. 
     */
-  var HumanLoopStatus: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.HumanLoopStatus] = js.native
+  var HumanLoopStatus: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.HumanLoopStatus] = js.undefined
 }
 object HumanLoopSummary {
   

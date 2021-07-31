@@ -2,29 +2,27 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Done extends StObject {
   
   /** 已加载完 */
-  var done: String = js.native
+  var done: String
   
   /** 加载中... */
-  var loading: String = js.native
+  var loading: String
   
   /** 暂无数据 */
-  var noData: String = js.native
+  var noData: String
   
   /** 下拉刷新 */
-  var refreshableTitlePull: String = js.native
+  var refreshableTitlePull: String
   
   /** 加载中... */
-  var refreshableTitleRefreshing: String = js.native
+  var refreshableTitleRefreshing: String
   
   /** 释放加载 */
-  var refreshableTitleRelease: String = js.native
+  var refreshableTitleRelease: String
 }
 object Done {
   

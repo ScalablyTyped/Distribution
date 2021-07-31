@@ -20,7 +20,6 @@ import typings.std.Element
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
@@ -30,20 +29,20 @@ object listMod {
   @js.native
   class List protected ()
     extends Component[
-          ListProps with (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]), 
+          ListProps & (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: ListProps with (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement])) = this()
+    def this(props: ListProps & (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement])) = this()
     def this(
-      props: ListProps with (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]),
+      props: ListProps & (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet/components/List", "List")
   @js.native
   val List: ComponentClass[
-    ListProps with (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]), 
+    ListProps & (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]), 
     ComponentState
   ] = js.native
   
@@ -54,42 +53,41 @@ object listMod {
   */
   type BorderType = _BorderType | Boolean
   
-  @js.native
   trait ListProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var action: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, Unit]] = js.native
+    var action: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, Unit]] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
-    var background: js.UndefOr[String | js.Array[String] | Light] = js.native
+    var background: js.UndefOr[String | js.Array[String] | Light] = js.undefined
     
-    var border: js.UndefOr[BorderType] = js.native
+    var border: js.UndefOr[BorderType] = js.undefined
     
-    var data: js.UndefOr[js.Array[js.Object | String]] = js.native
+    var data: js.UndefOr[js.Array[js.Object | String]] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var itemProps: js.UndefOr[StringDictionary[Border]] = js.native
+    var itemProps: js.UndefOr[StringDictionary[Border]] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
     var onClickItem: js.UndefOr[
         js.Function1[(/* event */ Index) | (/* event */ MouseEvent[Element, NativeMouseEvent]), Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onMore: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMore: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var pad: js.UndefOr[PadType] = js.native
+    var pad: js.UndefOr[PadType] = js.undefined
     
-    var primaryKey: js.UndefOr[String | (js.Function1[/* item */ js.Any, ReactElement])] = js.native
+    var primaryKey: js.UndefOr[String | (js.Function1[/* item */ js.Any, ReactElement])] = js.undefined
     
-    var secondaryKey: js.UndefOr[String | (js.Function1[/* item */ js.Any, ReactElement])] = js.native
+    var secondaryKey: js.UndefOr[String | (js.Function1[/* item */ js.Any, ReactElement])] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object ListProps {
     
@@ -239,7 +237,9 @@ object listMod {
     - typings.grommet.grommetStrings.vertical
     - typings.grommet.grommetStrings.all
   */
-  trait SideType extends _BorderType
+  trait SideType
+    extends StObject
+       with _BorderType
   object SideType {
     
     @scala.inline
@@ -277,7 +277,9 @@ object listMod {
   
   trait _BorderType extends StObject
   
-  trait _PadSizeType extends _PadType
+  trait _PadSizeType
+    extends StObject
+       with _PadType
   
   trait _PadType extends StObject
   

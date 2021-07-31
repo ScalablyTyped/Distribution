@@ -5,13 +5,13 @@ import typings.wegameApi.wx.types.ButtonType
 import typings.wegameApi.wx.types.GameClubButtonIcon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GameClubButton extends CreatedButton {
+trait GameClubButton
+  extends StObject
+     with CreatedButton {
   
-  var icon: GameClubButtonIcon = js.native
+  var icon: GameClubButtonIcon
 }
 object GameClubButton {
   

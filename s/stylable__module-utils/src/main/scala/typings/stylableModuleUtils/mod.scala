@@ -5,13 +5,15 @@ import typings.stylableCore.stylableTransformerMod.StylableResults
 import typings.stylableModuleUtils.anon.PartialOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@stylable/module-utils", "createModuleSource")
+  @JSImport("@stylable/module-utils", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createModuleSource(
     stylableResult: StylableResults,
     moduleFormat: js.UndefOr[String],
@@ -22,10 +24,9 @@ object mod {
     staticRequests: js.UndefOr[js.Array[String]],
     runtimeRequest: js.UndefOr[String],
     afterModule: js.UndefOr[js.Array[String]]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleSource")(stylableResult.asInstanceOf[js.Any], moduleFormat.asInstanceOf[js.Any], includeCSSInJS.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any], renderableOnly.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], staticRequests.asInstanceOf[js.Any], runtimeRequest.asInstanceOf[js.Any], afterModule.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/module-utils", "generateModuleSource")
-  @js.native
+  @scala.inline
   def generateModuleSource(
     stylableResult: StylableResults,
     moduleId: String,
@@ -37,9 +38,8 @@ object mod {
     depth: String,
     exportsArgument: String,
     afterModule: String
-  ): String = js.native
-  @JSImport("@stylable/module-utils", "generateModuleSource")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateModuleSource")(stylableResult.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any], beforeModule.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any], createFunction.asInstanceOf[js.Any], createRenderableFunction.asInstanceOf[js.Any], css.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], exportsArgument.asInstanceOf[js.Any], afterModule.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def generateModuleSource(
     stylableResult: StylableResults,
     moduleId: String,
@@ -52,15 +52,13 @@ object mod {
     exportsArgument: String,
     afterModule: String,
     renderableOnly: Boolean
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateModuleSource")(stylableResult.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any], beforeModule.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any], createFunction.asInstanceOf[js.Any], createRenderableFunction.asInstanceOf[js.Any], css.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], exportsArgument.asInstanceOf[js.Any], afterModule.asInstanceOf[js.Any], renderableOnly.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/module-utils", "stylableModuleFactory")
-  @js.native
-  def stylableModuleFactory(stylableOptions: StylableConfig): js.Function2[/* source */ String, /* path */ String, String] = js.native
-  @JSImport("@stylable/module-utils", "stylableModuleFactory")
-  @js.native
+  @scala.inline
+  def stylableModuleFactory(stylableOptions: StylableConfig): js.Function2[/* source */ String, /* path */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stylableModuleFactory")(stylableOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* source */ String, /* path */ String, String]]
+  @scala.inline
   def stylableModuleFactory(
     stylableOptions: StylableConfig,
     hasRuntimePathRuntimeStylesheetIdInjectCSSRenderableOnlyStaticImports: PartialOptions
-  ): js.Function2[/* source */ String, /* path */ String, String] = js.native
+  ): js.Function2[/* source */ String, /* path */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stylableModuleFactory")(stylableOptions.asInstanceOf[js.Any], hasRuntimePathRuntimeStylesheetIdInjectCSSRenderableOnlyStaticImports.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* source */ String, /* path */ String, String]]
 }

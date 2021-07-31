@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFindingsResponse extends StObject {
   
   /**
     * An array of objects, one for each finding that meets the criteria specified in the request.
     */
-  var findings: js.UndefOr[listOfFinding] = js.native
+  var findings: js.UndefOr[listOfFinding] = js.undefined
 }
 object GetFindingsResponse {
   

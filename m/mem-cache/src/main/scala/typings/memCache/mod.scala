@@ -3,7 +3,6 @@ package typings.memCache
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,14 +31,13 @@ object mod {
     def set(key: String, value: js.Any, timeout: Double): Unit = js.native
   }
   
-  @js.native
   trait CacheOptions extends StObject {
     
-    var doesNotRenewTimeout: js.UndefOr[Boolean] = js.native
+    var doesNotRenewTimeout: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var timeoutDisabled: js.UndefOr[Boolean] = js.native
+    var timeoutDisabled: js.UndefOr[Boolean] = js.undefined
   }
   object CacheOptions {
     

@@ -1,16 +1,35 @@
 package typings.breeze.global.breeze
 
 import typings.breeze.anon.AllowConcurrentSaves
+import typings.breeze.breeze.SaveOptionsConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("breeze.SaveOptions")
 @js.native
 class SaveOptions ()
-  extends typings.breeze.breeze.SaveOptions {
+  extends StObject
+     with typings.breeze.breeze.SaveOptions {
   def this(config: AllowConcurrentSaves) = this()
+  
+  /* CompleteClass */
+  var allowConcurrentSaves: Boolean = js.native
+  
+  /* CompleteClass */
+  var dataService: typings.breeze.breeze.DataService = js.native
+  
+  /* CompleteClass */
+  var resourceName: String = js.native
+  
+  /* CompleteClass */
+  override def setAsDefault(): typings.breeze.breeze.SaveOptions = js.native
+  
+  /* CompleteClass */
+  var tag: js.Object = js.native
+  
+  /* CompleteClass */
+  override def `using`(config: SaveOptionsConfiguration): typings.breeze.breeze.SaveOptions = js.native
 }
 /* static members */
 object SaveOptions {

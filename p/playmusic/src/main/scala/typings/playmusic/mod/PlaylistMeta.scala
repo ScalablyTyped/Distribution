@@ -2,17 +2,15 @@ package typings.playmusic.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistMeta extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var shareState: js.UndefOr[String] = js.native
+  var shareState: js.UndefOr[String] = js.undefined
 }
 object PlaylistMeta {
   

@@ -3,21 +3,19 @@ package typings.cesium.anon
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellAlpha extends StObject {
   
-  var cellAlpha: js.UndefOr[Property] = js.native
+  var cellAlpha: js.UndefOr[Property] = js.undefined
   
-  var color: js.UndefOr[Property] = js.native
+  var color: js.UndefOr[Property] = js.undefined
   
-  var lineCount: js.UndefOr[Property] = js.native
+  var lineCount: js.UndefOr[Property] = js.undefined
   
-  var lineOffset: js.UndefOr[Property] = js.native
+  var lineOffset: js.UndefOr[Property] = js.undefined
   
-  var lineThickness: js.UndefOr[Property] = js.native
+  var lineThickness: js.UndefOr[Property] = js.undefined
 }
 object CellAlpha {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionIssuer extends StObject {
   
   /**
     * The unique identifier for the AWS account that owns the entity that was used to get the credentials.
     */
-  var accountId: js.UndefOr[string] = js.native
+  var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the source account, IAM user, or role that was used to get the credentials.
     */
-  var arn: js.UndefOr[string] = js.native
+  var arn: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the entity that was used to get the credentials.
     */
-  var principalId: js.UndefOr[string] = js.native
+  var principalId: js.UndefOr[string] = js.undefined
   
   /**
     * The source of the temporary security credentials, such as Root, IAMUser, or Role.
     */
-  var `type`: js.UndefOr[string] = js.native
+  var `type`: js.UndefOr[string] = js.undefined
   
   /**
     * The name or alias of the user or role that issued the session. This value is null if the credentials were obtained from a root account that doesn't have an alias.
     */
-  var userName: js.UndefOr[string] = js.native
+  var userName: js.UndefOr[string] = js.undefined
 }
 object SessionIssuer {
   

@@ -2,10 +2,13 @@ package typings.lcid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("lcid", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	Get a [standard locale identifier](https://en.wikipedia.org/wiki/Locale_(computer_software)) from a [Windows locale identifier (LCID)](http://en.wikipedia.org/wiki/Locale#Specifics_for_Microsoft_platforms).
@@ -16,9 +19,8 @@ object mod {
   	//=> 'nb_NO'
   	```
   	*/
-  @JSImport("lcid", "from")
-  @js.native
-  def from(lcidCode: Double): String = js.native
+  @scala.inline
+  def from(lcidCode: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(lcidCode.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
   	Get a [Windows locale identifier (LCID)](https://en.wikipedia.org/wiki/Locale#Specifics_for_Microsoft_platforms) from a [standard locale identifier](https://en.wikipedia.org/wiki/Locale_(computer_software)).
@@ -29,9 +31,8 @@ object mod {
   	//=> 1044
   	```
   	*/
-  @JSImport("lcid", "to")
-  @js.native
-  def to(localeId: String): Double = js.native
+  @scala.inline
+  def to(localeId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("to")(localeId.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
   	Mapping between [standard locale identifiers](https://en.wikipedia.org/wiki/Locale_(computer_software)) and [Windows locale identifiers (LCID)](http://en.wikipedia.org/wiki/Locale#Specifics_for_Microsoft_platforms).

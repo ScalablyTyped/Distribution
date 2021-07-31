@@ -3,15 +3,13 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PriorityLbConfig extends StObject {
   
-  var children: Map[String, PriorityChild] = js.native
+  var children: Map[String, PriorityChild]
   
-  var priorities: js.Array[String] = js.native
+  var priorities: js.Array[String]
 }
 object PriorityLbConfig {
   

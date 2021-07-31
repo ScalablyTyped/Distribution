@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Todo extends Entity {
+trait Todo
+  extends StObject
+     with Entity {
   
   // The task lists in the users mailbox.
-  var lists: js.UndefOr[NullableOption[js.Array[TodoTaskList]]] = js.native
+  var lists: js.UndefOr[NullableOption[js.Array[TodoTaskList]]] = js.undefined
 }
 object Todo {
   

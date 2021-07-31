@@ -2,13 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PositionedNodeOrToken extends PositionedElement {
+trait PositionedNodeOrToken
+  extends StObject
+     with PositionedElement {
   
-  def nodeOrToken(): ISyntaxNodeOrToken = js.native
+  def nodeOrToken(): ISyntaxNodeOrToken
 }
 object PositionedNodeOrToken {
   

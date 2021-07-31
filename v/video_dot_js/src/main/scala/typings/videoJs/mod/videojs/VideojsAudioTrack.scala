@@ -3,29 +3,27 @@ package typings.videoJs.mod.videojs
 import typings.std.SourceBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideojsAudioTrack extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  val id: String = js.native
+  val id: String
   
-  var kind: String = js.native
+  var kind: String
   
-  val label: String = js.native
+  val label: String
   
-  var language: String = js.native
+  var language: String
   
-  val sourceBuffer: SourceBuffer | Null = js.native
+  val sourceBuffer: SourceBuffer | Null
 }
 object VideojsAudioTrack {
   
   @scala.inline
   def apply(enabled: Boolean, id: String, kind: String, label: String, language: String): VideojsAudioTrack = {
-    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], sourceBuffer = null)
     __obj.asInstanceOf[VideojsAudioTrack]
   }
   

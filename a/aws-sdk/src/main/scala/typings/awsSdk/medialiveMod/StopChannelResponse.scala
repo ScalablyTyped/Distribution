@@ -2,87 +2,85 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopChannelResponse extends StObject {
   
   /**
     * The unique arn of the channel.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * Specification of CDI inputs for this channel
     */
-  var CdiInputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.CdiInputSpecification] = js.native
+  var CdiInputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.CdiInputSpecification] = js.undefined
   
   /**
     * The class for this channel. STANDARD for a channel with two pipelines or SINGLE_PIPELINE for a channel with one pipeline.
     */
-  var ChannelClass: js.UndefOr[typings.awsSdk.medialiveMod.ChannelClass] = js.native
+  var ChannelClass: js.UndefOr[typings.awsSdk.medialiveMod.ChannelClass] = js.undefined
   
   /**
     * A list of destinations of the channel. For UDP outputs, there is one
   destination per output. For other types (HLS, for example), there is
   one destination per packager.
     */
-  var Destinations: js.UndefOr[listOfOutputDestination] = js.native
+  var Destinations: js.UndefOr[listOfOutputDestination] = js.undefined
   
   /**
     * The endpoints where outgoing connections initiate from
     */
-  var EgressEndpoints: js.UndefOr[listOfChannelEgressEndpoint] = js.native
+  var EgressEndpoints: js.UndefOr[listOfChannelEgressEndpoint] = js.undefined
   
-  var EncoderSettings: js.UndefOr[typings.awsSdk.medialiveMod.EncoderSettings] = js.native
+  var EncoderSettings: js.UndefOr[typings.awsSdk.medialiveMod.EncoderSettings] = js.undefined
   
   /**
     * The unique id of the channel.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * List of input attachments for channel.
     */
-  var InputAttachments: js.UndefOr[listOfInputAttachment] = js.native
+  var InputAttachments: js.UndefOr[listOfInputAttachment] = js.undefined
   
   /**
     * Specification of network and file inputs for this channel
     */
-  var InputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.InputSpecification] = js.native
+  var InputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.InputSpecification] = js.undefined
   
   /**
     * The log level being written to CloudWatch Logs.
     */
-  var LogLevel: js.UndefOr[typings.awsSdk.medialiveMod.LogLevel] = js.native
+  var LogLevel: js.UndefOr[typings.awsSdk.medialiveMod.LogLevel] = js.undefined
   
   /**
     * The name of the channel. (user-mutable)
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * Runtime details for the pipelines of a running channel.
     */
-  var PipelineDetails: js.UndefOr[listOfPipelineDetail] = js.native
+  var PipelineDetails: js.UndefOr[listOfPipelineDetail] = js.undefined
   
   /**
     * The number of currently healthy pipelines.
     */
-  var PipelinesRunningCount: js.UndefOr[integer] = js.native
+  var PipelinesRunningCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
     */
-  var RoleArn: js.UndefOr[string] = js.native
+  var RoleArn: js.UndefOr[string] = js.undefined
   
-  var State: js.UndefOr[ChannelState] = js.native
+  var State: js.UndefOr[ChannelState] = js.undefined
   
   /**
     * A collection of key-value pairs.
     */
-  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
 }
 object StopChannelResponse {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetViolationDetailsResponse extends StObject {
   
   /**
     * Violation detail for a resource.
     */
-  var ViolationDetail: js.UndefOr[typings.awsSdk.fmsMod.ViolationDetail] = js.native
+  var ViolationDetail: js.UndefOr[typings.awsSdk.fmsMod.ViolationDetail] = js.undefined
 }
 object GetViolationDetailsResponse {
   

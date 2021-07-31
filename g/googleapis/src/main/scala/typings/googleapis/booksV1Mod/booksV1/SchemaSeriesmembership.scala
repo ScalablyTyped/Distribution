@@ -2,20 +2,18 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSeriesmembership extends StObject {
   
   /**
     * Resorce type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var member: js.UndefOr[js.Array[SchemaVolume]] = js.native
+  var member: js.UndefOr[js.Array[SchemaVolume]] = js.undefined
   
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaSeriesmembership {
   

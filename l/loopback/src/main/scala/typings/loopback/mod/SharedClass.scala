@@ -3,7 +3,6 @@ package typings.loopback.mod
 import typings.loopback.anon.IncludeDisabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -74,7 +73,7 @@ class SharedClass protected () extends StObject {
     * @param {any} options
     * @return {any[]} An array of shared methods SharedMethod[]
     */
-  def methods(options: IncludeDisabled): js.Array[_] = js.native
+  def methods(options: IncludeDisabled): js.Array[js.Any] = js.native
   
   /**
     * Define a shared method resolver for dynamically defining methods.
@@ -98,11 +97,14 @@ class SharedClass protected () extends StObject {
 }
 object SharedClass {
   
+  @JSImport("loopback", "SharedClass")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Normalize HTTP path.
     */
   /* static member */
-  @JSImport("loopback", "SharedClass.normalizeHttpPath")
-  @js.native
-  def normalizeHttpPath(): Unit = js.native
+  @scala.inline
+  def normalizeHttpPath(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeHttpPath")().asInstanceOf[Unit]
 }

@@ -2,23 +2,21 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGradient extends StObject {
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var colors: js.Array[String] = js.native
+  var colors: js.Array[String]
   
-  var direction: String = js.native
+  var direction: String
   
-  var offset: IPoint = js.native
+  var offset: IPoint
   
-  var stops: js.Array[Double] = js.native
+  var stops: js.Array[Double]
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object IGradient {
   

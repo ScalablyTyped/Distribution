@@ -2,32 +2,30 @@ package typings.googleapis.v2beta3Mod.cloudtasksV2beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A unit of scheduled work.
   */
-@js.native
 trait SchemaTask extends StObject {
   
   /**
     * HTTP request that is sent to the App Engine app handler.  An App Engine
     * task is a task that has AppEngineHttpRequest set.
     */
-  var appEngineHttpRequest: js.UndefOr[SchemaAppEngineHttpRequest] = js.native
+  var appEngineHttpRequest: js.UndefOr[SchemaAppEngineHttpRequest] = js.undefined
   
   /**
     * Output only. The time that the task was created.  `create_time` will be
     * truncated to the nearest second.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The number of attempts dispatched.  This count includes
     * attempts which have been dispatched but haven&#39;t received a response.
     */
-  var dispatchCount: js.UndefOr[Double] = js.native
+  var dispatchCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The deadline for requests sent to the worker. If the worker does not
@@ -53,19 +51,19 @@ trait SchemaTask extends StObject {
     * `dispatch_deadline` will be truncated to the nearest millisecond. The
     * deadline is an approximate deadline.
     */
-  var dispatchDeadline: js.UndefOr[String] = js.native
+  var dispatchDeadline: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The status of the task&#39;s first attempt.  Only
     * dispatch_time will be set. The other Attempt information is not retained
     * by Cloud Tasks.
     */
-  var firstAttempt: js.UndefOr[SchemaAttempt] = js.native
+  var firstAttempt: js.UndefOr[SchemaAttempt] = js.undefined
   
   /**
     * Output only. The status of the task&#39;s last attempt.
     */
-  var lastAttempt: js.UndefOr[SchemaAttempt] = js.native
+  var lastAttempt: js.UndefOr[SchemaAttempt] = js.undefined
   
   /**
     * Optionally caller-specified in CreateTask.  The task name.  The task name
@@ -83,25 +81,25 @@ trait SchemaTask extends StObject {
     * letters ([A-Za-z]), numbers ([0-9]),   hyphens (-), or underscores (_).
     * The maximum length is 500 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The number of attempts which have received a response.
     */
-  var responseCount: js.UndefOr[Double] = js.native
+  var responseCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The time when the task is scheduled to be attempted.  For App Engine
     * queues, this is when the task will be attempted or retried.
     * `schedule_time` will be truncated to the nearest microsecond.
     */
-  var scheduleTime: js.UndefOr[String] = js.native
+  var scheduleTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The view specifies which subset of the Task has been
     * returned.
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object SchemaTask {
   

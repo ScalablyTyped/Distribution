@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JdbcTarget extends StObject {
   
   /**
     * The name of the connection to use to connect to the JDBC target.
     */
-  var ConnectionName: js.UndefOr[typings.awsSdk.glueMod.ConnectionName] = js.native
+  var ConnectionName: js.UndefOr[typings.awsSdk.glueMod.ConnectionName] = js.undefined
   
   /**
     * A list of glob patterns used to exclude from the crawl. For more information, see Catalog Tables with a Crawler.
     */
-  var Exclusions: js.UndefOr[PathList] = js.native
+  var Exclusions: js.UndefOr[PathList] = js.undefined
   
   /**
     * The path of the JDBC target.
     */
-  var Path: js.UndefOr[typings.awsSdk.glueMod.Path] = js.native
+  var Path: js.UndefOr[typings.awsSdk.glueMod.Path] = js.undefined
 }
 object JdbcTarget {
   

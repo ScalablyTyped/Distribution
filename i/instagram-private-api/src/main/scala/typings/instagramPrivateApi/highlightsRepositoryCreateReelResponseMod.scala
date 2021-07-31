@@ -2,21 +2,19 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object highlightsRepositoryCreateReelResponseMod {
   
-  @js.native
   trait HighlightsRepositoryCreateReelResponseCandidatesItem extends StObject {
     
-    var estimated_scans_sizes: js.Array[Double] = js.native
+    var estimated_scans_sizes: js.Array[Double]
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object HighlightsRepositoryCreateReelResponseCandidatesItem {
     
@@ -46,16 +44,15 @@ object highlightsRepositoryCreateReelResponseMod {
     }
   }
   
-  @js.native
   trait HighlightsRepositoryCreateReelResponseCoverMedia extends StObject {
     
-    var crop_rect: Null = js.native
+    var crop_rect: Null
     
-    var cropped_image_version: HighlightsRepositoryCreateReelResponseCroppedImageVersion = js.native
+    var cropped_image_version: HighlightsRepositoryCreateReelResponseCroppedImageVersion
     
-    var full_image_version: HighlightsRepositoryCreateReelResponseFullImageVersion = js.native
+    var full_image_version: HighlightsRepositoryCreateReelResponseFullImageVersion
     
-    var media_id: String = js.native
+    var media_id: String
   }
   object HighlightsRepositoryCreateReelResponseCoverMedia {
     
@@ -87,16 +84,15 @@ object highlightsRepositoryCreateReelResponseMod {
     }
   }
   
-  @js.native
   trait HighlightsRepositoryCreateReelResponseCroppedImageVersion extends StObject {
     
-    var estimated_scans_sizes: js.Array[Double] = js.native
+    var estimated_scans_sizes: js.Array[Double]
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object HighlightsRepositoryCreateReelResponseCroppedImageVersion {
     
@@ -126,16 +122,15 @@ object highlightsRepositoryCreateReelResponseMod {
     }
   }
   
-  @js.native
   trait HighlightsRepositoryCreateReelResponseFullImageVersion extends StObject {
     
-    var estimated_scans_sizes: js.Array[Double] = js.native
+    var estimated_scans_sizes: js.Array[Double]
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object HighlightsRepositoryCreateReelResponseFullImageVersion {
     
@@ -165,10 +160,9 @@ object highlightsRepositoryCreateReelResponseMod {
     }
   }
   
-  @js.native
   trait HighlightsRepositoryCreateReelResponseImageVersions2 extends StObject {
     
-    var candidates: js.Array[HighlightsRepositoryCreateReelResponseCandidatesItem] = js.native
+    var candidates: js.Array[HighlightsRepositoryCreateReelResponseCandidatesItem]
   }
   object HighlightsRepositoryCreateReelResponseImageVersions2 {
     
@@ -189,94 +183,93 @@ object highlightsRepositoryCreateReelResponseMod {
     }
   }
   
-  @js.native
   trait HighlightsRepositoryCreateReelResponseItemsItem extends StObject {
     
-    var boost_unavailable_reason: String = js.native
+    var boost_unavailable_reason: String
     
-    var boosted_status: String = js.native
+    var boosted_status: String
     
-    var can_reply: Boolean = js.native
+    var can_reply: Boolean
     
-    var can_reshare: Boolean = js.native
+    var can_reshare: Boolean
     
-    var can_viewer_save: Boolean = js.native
+    var can_viewer_save: Boolean
     
-    var caption: Null = js.native
+    var caption: Null
     
-    var caption_is_edited: Boolean = js.native
+    var caption_is_edited: Boolean
     
-    var caption_position: Double = js.native
+    var caption_position: Double
     
-    var client_cache_key: String = js.native
+    var client_cache_key: String
     
-    var code: String = js.native
+    var code: String
     
-    var device_timestamp: Double = js.native
+    var device_timestamp: Double
     
-    var filter_type: Double = js.native
+    var filter_type: Double
     
-    var has_audio: Boolean = js.native
+    var has_audio: Boolean
     
-    var has_shared_to_fb: Double = js.native
+    var has_shared_to_fb: Double
     
-    var highlight_reel_ids: js.Array[String] = js.native
+    var highlight_reel_ids: js.Array[String]
     
-    var id: String = js.native
+    var id: String
     
-    var image_versions2: HighlightsRepositoryCreateReelResponseImageVersions2 = js.native
+    var image_versions2: HighlightsRepositoryCreateReelResponseImageVersions2
     
-    var imported_taken_at: Double = js.native
+    var imported_taken_at: Double
     
-    var is_dash_eligible: Double = js.native
+    var is_dash_eligible: Double
     
-    var is_pride_media: Boolean = js.native
+    var is_pride_media: Boolean
     
-    var is_reel_media: Boolean = js.native
+    var is_reel_media: Boolean
     
-    var media_type: Double = js.native
+    var media_type: Double
     
-    var multi_author_reel_names: js.Array[_] = js.native
+    var multi_author_reel_names: js.Array[js.Any]
     
-    var number_of_qualities: Double = js.native
+    var number_of_qualities: Double
     
-    var organic_tracking_token: String = js.native
+    var organic_tracking_token: String
     
-    var original_height: Double = js.native
+    var original_height: Double
     
-    var original_width: Double = js.native
+    var original_width: Double
     
-    var photo_of_you: Boolean = js.native
+    var photo_of_you: Boolean
     
-    var pk: String = js.native
+    var pk: String
     
-    var show_one_tap_fb_share_tooltip: Boolean = js.native
+    var show_one_tap_fb_share_tooltip: Boolean
     
-    var story_is_saved_to_archive: Boolean = js.native
+    var story_is_saved_to_archive: Boolean
     
-    var supports_reel_reactions: Boolean = js.native
+    var supports_reel_reactions: Boolean
     
-    var taken_at: Double = js.native
+    var taken_at: Double
     
-    var timezone_offset: Double = js.native
+    var timezone_offset: Double
     
-    var total_viewer_count: Double = js.native
+    var total_viewer_count: Double
     
-    var user: HighlightsRepositoryCreateReelResponseUser = js.native
+    var user: HighlightsRepositoryCreateReelResponseUser
     
-    var video_codec: String = js.native
+    var video_codec: String
     
-    var video_dash_manifest: String = js.native
+    var video_dash_manifest: String
     
-    var video_duration: Double = js.native
+    var video_duration: Double
     
-    var video_versions: js.Array[HighlightsRepositoryCreateReelResponseVideoVersionsItem] = js.native
+    var video_versions: js.Array[HighlightsRepositoryCreateReelResponseVideoVersionsItem]
     
-    var viewer_count: Double = js.native
+    var viewer_count: Double
     
-    var viewer_cursor: Null = js.native
+    var viewer_cursor: Null
     
-    var viewers: js.Array[_] = js.native
+    var viewers: js.Array[js.Any]
   }
   object HighlightsRepositoryCreateReelResponseItemsItem {
     
@@ -304,7 +297,7 @@ object highlightsRepositoryCreateReelResponseMod {
       is_pride_media: Boolean,
       is_reel_media: Boolean,
       media_type: Double,
-      multi_author_reel_names: js.Array[_],
+      multi_author_reel_names: js.Array[js.Any],
       number_of_qualities: Double,
       organic_tracking_token: String,
       original_height: Double,
@@ -324,7 +317,7 @@ object highlightsRepositoryCreateReelResponseMod {
       video_versions: js.Array[HighlightsRepositoryCreateReelResponseVideoVersionsItem],
       viewer_count: Double,
       viewer_cursor: Null,
-      viewers: js.Array[_]
+      viewers: js.Array[js.Any]
     ): HighlightsRepositoryCreateReelResponseItemsItem = {
       val __obj = js.Dynamic.literal(boost_unavailable_reason = boost_unavailable_reason.asInstanceOf[js.Any], boosted_status = boosted_status.asInstanceOf[js.Any], can_reply = can_reply.asInstanceOf[js.Any], can_reshare = can_reshare.asInstanceOf[js.Any], can_viewer_save = can_viewer_save.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], caption_position = caption_position.asInstanceOf[js.Any], client_cache_key = client_cache_key.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], device_timestamp = device_timestamp.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], has_audio = has_audio.asInstanceOf[js.Any], has_shared_to_fb = has_shared_to_fb.asInstanceOf[js.Any], highlight_reel_ids = highlight_reel_ids.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], imported_taken_at = imported_taken_at.asInstanceOf[js.Any], is_dash_eligible = is_dash_eligible.asInstanceOf[js.Any], is_pride_media = is_pride_media.asInstanceOf[js.Any], is_reel_media = is_reel_media.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], multi_author_reel_names = multi_author_reel_names.asInstanceOf[js.Any], number_of_qualities = number_of_qualities.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], photo_of_you = photo_of_you.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], show_one_tap_fb_share_tooltip = show_one_tap_fb_share_tooltip.asInstanceOf[js.Any], story_is_saved_to_archive = story_is_saved_to_archive.asInstanceOf[js.Any], supports_reel_reactions = supports_reel_reactions.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], timezone_offset = timezone_offset.asInstanceOf[js.Any], total_viewer_count = total_viewer_count.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], video_codec = video_codec.asInstanceOf[js.Any], video_dash_manifest = video_dash_manifest.asInstanceOf[js.Any], video_duration = video_duration.asInstanceOf[js.Any], video_versions = video_versions.asInstanceOf[js.Any], viewer_count = viewer_count.asInstanceOf[js.Any], viewer_cursor = viewer_cursor.asInstanceOf[js.Any], viewers = viewers.asInstanceOf[js.Any])
       __obj.asInstanceOf[HighlightsRepositoryCreateReelResponseItemsItem]
@@ -403,7 +396,7 @@ object highlightsRepositoryCreateReelResponseMod {
       def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMulti_author_reel_names(value: js.Array[_]): Self = StObject.set(x, "multi_author_reel_names", value.asInstanceOf[js.Any])
+      def setMulti_author_reel_names(value: js.Array[js.Any]): Self = StObject.set(x, "multi_author_reel_names", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMulti_author_reel_namesVarargs(value: js.Any*): Self = StObject.set(x, "multi_author_reel_names", js.Array(value :_*))
@@ -469,49 +462,48 @@ object highlightsRepositoryCreateReelResponseMod {
       def setViewer_cursor(value: Null): Self = StObject.set(x, "viewer_cursor", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setViewers(value: js.Array[_]): Self = StObject.set(x, "viewers", value.asInstanceOf[js.Any])
+      def setViewers(value: js.Array[js.Any]): Self = StObject.set(x, "viewers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setViewersVarargs(value: js.Any*): Self = StObject.set(x, "viewers", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait HighlightsRepositoryCreateReelResponseReel extends StObject {
     
-    var can_reply: Boolean = js.native
+    var can_reply: Boolean
     
-    var can_reshare: Boolean = js.native
+    var can_reshare: Boolean
     
-    var contains_stitched_media_blocked_by_rm: Boolean = js.native
+    var contains_stitched_media_blocked_by_rm: Boolean
     
-    var cover_media: HighlightsRepositoryCreateReelResponseCoverMedia = js.native
+    var cover_media: HighlightsRepositoryCreateReelResponseCoverMedia
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var has_pride_media: Boolean = js.native
+    var has_pride_media: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var items: js.Array[HighlightsRepositoryCreateReelResponseItemsItem] = js.native
+    var items: js.Array[HighlightsRepositoryCreateReelResponseItemsItem]
     
-    var latest_reel_media: Double = js.native
+    var latest_reel_media: Double
     
-    var media_count: Double = js.native
+    var media_count: Double
     
-    var prefetch_count: Double = js.native
+    var prefetch_count: Double
     
-    var ranked_position: Double = js.native
+    var ranked_position: Double
     
-    var reel_type: String = js.native
+    var reel_type: String
     
-    var seen: Null = js.native
+    var seen: Null
     
-    var seen_ranked_position: Double = js.native
+    var seen_ranked_position: Double
     
-    var title: String = js.native
+    var title: String
     
-    var user: HighlightsRepositoryCreateReelResponseUser = js.native
+    var user: HighlightsRepositoryCreateReelResponseUser
   }
   object HighlightsRepositoryCreateReelResponseReel {
     
@@ -598,12 +590,11 @@ object highlightsRepositoryCreateReelResponseMod {
     }
   }
   
-  @js.native
   trait HighlightsRepositoryCreateReelResponseRootObject extends StObject {
     
-    var reel: HighlightsRepositoryCreateReelResponseReel = js.native
+    var reel: HighlightsRepositoryCreateReelResponseReel
     
-    var status: String = js.native
+    var status: String
   }
   object HighlightsRepositoryCreateReelResponseRootObject {
     
@@ -624,36 +615,35 @@ object highlightsRepositoryCreateReelResponseMod {
     }
   }
   
-  @js.native
   trait HighlightsRepositoryCreateReelResponseUser extends StObject {
     
-    var allowed_commenter_type: js.UndefOr[String] = js.native
+    var allowed_commenter_type: js.UndefOr[String] = js.undefined
     
-    var can_boost_post: js.UndefOr[Boolean] = js.native
+    var can_boost_post: js.UndefOr[Boolean] = js.undefined
     
-    var can_see_organic_insights: js.UndefOr[Boolean] = js.native
+    var can_see_organic_insights: js.UndefOr[Boolean] = js.undefined
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_unpublished: js.UndefOr[Boolean] = js.native
+    var is_unpublished: js.UndefOr[Boolean] = js.undefined
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: js.UndefOr[String] = js.native
+    var reel_auto_archive: js.UndefOr[String] = js.undefined
     
-    var show_insights_terms: js.UndefOr[Boolean] = js.native
+    var show_insights_terms: js.UndefOr[Boolean] = js.undefined
     
-    var username: String = js.native
+    var username: String
   }
   object HighlightsRepositoryCreateReelResponseUser {
     
@@ -739,18 +729,17 @@ object highlightsRepositoryCreateReelResponseMod {
     }
   }
   
-  @js.native
   trait HighlightsRepositoryCreateReelResponseVideoVersionsItem extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var id: String = js.native
+    var id: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object HighlightsRepositoryCreateReelResponseVideoVersionsItem {
     

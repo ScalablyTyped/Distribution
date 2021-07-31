@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sqladmin/v1beta4", "sqladmin_v1beta4.Resource$Databases")
@@ -32,7 +31,7 @@ class ResourceDatabases protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceDatabasesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceDatabasesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -64,7 +63,7 @@ class ResourceDatabases protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDatabase] = js.native
   def get(callback: BodyResponseCallback[SchemaDatabase]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatabase] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDatabase] = js.native
   def get(params: ParamsResourceDatabasesGet): GaxiosPromise[SchemaDatabase] = js.native
   def get(params: ParamsResourceDatabasesGet, callback: BodyResponseCallback[SchemaDatabase]): Unit = js.native
   def get(
@@ -96,7 +95,7 @@ class ResourceDatabases protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceDatabasesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceDatabasesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -126,7 +125,7 @@ class ResourceDatabases protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaDatabasesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDatabasesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatabasesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDatabasesListResponse] = js.native
   def list(params: ParamsResourceDatabasesList): GaxiosPromise[SchemaDatabasesListResponse] = js.native
   def list(params: ParamsResourceDatabasesList, callback: BodyResponseCallback[SchemaDatabasesListResponse]): Unit = js.native
   def list(
@@ -159,7 +158,7 @@ class ResourceDatabases protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceDatabasesPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceDatabasesPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -192,7 +191,7 @@ class ResourceDatabases protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceDatabasesUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceDatabasesUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

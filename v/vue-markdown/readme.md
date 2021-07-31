@@ -11,8 +11,8 @@ A Powerful and Highspeed Markdown Parser for Vue
 | Full name          | vue-markdown |
 | Keywords           | vue, markdown, vue-markdown |
 | # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 707953 |
+| # dependents       | 49 |
+| # downloads        | 945714 |
 | # stars            | 8 |
 
 ## Links

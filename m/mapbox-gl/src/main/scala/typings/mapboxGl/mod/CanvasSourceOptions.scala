@@ -3,17 +3,15 @@ package typings.mapboxGl.mod
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasSourceOptions extends StObject {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var canvas: String | HTMLCanvasElement = js.native
+  var canvas: String | HTMLCanvasElement
   
-  var coordinates: js.Array[js.Array[Double]] = js.native
+  var coordinates: js.Array[js.Array[Double]]
 }
 object CanvasSourceOptions {
   

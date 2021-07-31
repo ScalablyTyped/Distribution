@@ -8,7 +8,6 @@ import typings.node.nodeStrings.stream
 import typings.node.tlsMod.TLSSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,7 +30,7 @@ trait ClientHttp2Session extends Http2Session {
     event: stream,
     listener: js.Function3[
       /* stream */ ClientHttp2Stream, 
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -49,7 +48,7 @@ trait ClientHttp2Session extends Http2Session {
   def emit_stream(
     event: stream,
     stream: ClientHttp2Stream,
-    headers: IncomingHttpHeaders with IncomingHttpStatusHeader,
+    headers: IncomingHttpHeaders & IncomingHttpStatusHeader,
     flags: Double
   ): Boolean = js.native
   
@@ -70,7 +69,7 @@ trait ClientHttp2Session extends Http2Session {
     event: stream,
     listener: js.Function3[
       /* stream */ ClientHttp2Stream, 
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -93,7 +92,7 @@ trait ClientHttp2Session extends Http2Session {
     event: stream,
     listener: js.Function3[
       /* stream */ ClientHttp2Stream, 
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -116,7 +115,7 @@ trait ClientHttp2Session extends Http2Session {
     event: stream,
     listener: js.Function3[
       /* stream */ ClientHttp2Stream, 
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -139,14 +138,14 @@ trait ClientHttp2Session extends Http2Session {
     event: stream,
     listener: js.Function3[
       /* stream */ ClientHttp2Stream, 
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
   ): this.type = js.native
   
   def request(): ClientHttp2Stream = js.native
-  def request(headers: js.UndefOr[scala.Nothing], options: ClientSessionRequestOptions): ClientHttp2Stream = js.native
+  def request(headers: Unit, options: ClientSessionRequestOptions): ClientHttp2Stream = js.native
   def request(headers: OutgoingHttpHeaders): ClientHttp2Stream = js.native
   def request(headers: OutgoingHttpHeaders, options: ClientSessionRequestOptions): ClientHttp2Stream = js.native
 }

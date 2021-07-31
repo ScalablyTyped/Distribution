@@ -6,16 +6,14 @@ import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/List/List.ListSelectionProps> */
-@js.native
 trait WeakValidationMapListSele extends StObject {
   
-  var checkBoxAriaLabel: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var checkBoxAriaLabel: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
   var onChange: js.UndefOr[
     Validator[
@@ -27,9 +25,9 @@ trait WeakValidationMapListSele extends StObject {
         ]) | Null
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var selected: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var selected: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
 }
 object WeakValidationMapListSele {
   

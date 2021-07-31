@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginRemoveXMLProcInst extends PluginConfig {
+trait PluginRemoveXMLProcInst
+  extends StObject
+     with PluginConfig {
   
-  var removeXMLProcInst: Boolean | js.Object = js.native
+  var removeXMLProcInst: Boolean | js.Object
 }
 object PluginRemoveXMLProcInst {
   

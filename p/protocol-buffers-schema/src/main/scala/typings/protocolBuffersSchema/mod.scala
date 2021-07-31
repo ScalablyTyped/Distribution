@@ -4,26 +4,24 @@ import typings.node.Buffer
 import typings.protocolBuffersSchema.typesMod.Schema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(buffer: String): Schema = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[Schema]
+  @scala.inline
+  def apply(buffer: Buffer): Schema = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[Schema]
+  
   @JSImport("protocol-buffers-schema", JSImport.Namespace)
   @js.native
-  def apply(buffer: String): Schema = js.native
-  @JSImport("protocol-buffers-schema", JSImport.Namespace)
-  @js.native
-  def apply(buffer: Buffer): Schema = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("protocol-buffers-schema", "parse")
-  @js.native
-  def parse(buffer: String): Schema = js.native
-  @JSImport("protocol-buffers-schema", "parse")
-  @js.native
-  def parse(buffer: Buffer): Schema = js.native
+  @scala.inline
+  def parse(buffer: String): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(buffer.asInstanceOf[js.Any]).asInstanceOf[Schema]
+  @scala.inline
+  def parse(buffer: Buffer): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(buffer.asInstanceOf[js.Any]).asInstanceOf[Schema]
   
-  @JSImport("protocol-buffers-schema", "stringify")
-  @js.native
-  def stringify(schema: Schema): String = js.native
+  @scala.inline
+  def stringify(schema: Schema): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(schema.asInstanceOf[js.Any]).asInstanceOf[String]
 }

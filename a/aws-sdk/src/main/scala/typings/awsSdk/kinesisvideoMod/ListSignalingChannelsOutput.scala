@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSignalingChannelsOutput extends StObject {
   
   /**
     * An array of ChannelInfo objects.
     */
-  var ChannelInfoList: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelInfoList] = js.native
+  var ChannelInfoList: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelInfoList] = js.undefined
   
   /**
     * If the response is truncated, the call returns this element with a token. To get the next batch of streams, use this token in your next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoMod.NextToken] = js.undefined
 }
 object ListSignalingChannelsOutput {
   

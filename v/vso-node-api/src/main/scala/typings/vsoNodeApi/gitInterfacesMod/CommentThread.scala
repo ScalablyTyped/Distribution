@@ -3,56 +3,54 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentThread extends StObject {
   
   /**
     * Links to other related objects.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * A list of the comments.
     */
-  var comments: js.Array[Comment] = js.native
+  var comments: js.Array[Comment]
   
   /**
     * The comment thread id.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Specify if the thread is deleted which happens when all comments are deleted.
     */
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
   
   /**
     * The time this thread was last updated.
     */
-  var lastUpdatedDate: Date = js.native
+  var lastUpdatedDate: Date
   
   /**
     * Optional properties associated with the thread as a collection of key-value pairs.
     */
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * The time this thread was published.
     */
-  var publishedDate: Date = js.native
+  var publishedDate: Date
   
   /**
     * The status of the comment thread.
     */
-  var status: CommentThreadStatus = js.native
+  var status: CommentThreadStatus
   
   /**
     * Specify thread context such as position in left/right file.
     */
-  var threadContext: CommentThreadContext = js.native
+  var threadContext: CommentThreadContext
 }
 object CommentThread {
   

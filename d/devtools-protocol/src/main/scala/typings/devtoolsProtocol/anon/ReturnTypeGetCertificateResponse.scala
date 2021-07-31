@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Network.GetCertificateRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.GetCertificateResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetCertificateResponse extends StObject {
   
-  var paramsType: js.Array[GetCertificateRequest] = js.native
+  var paramsType: js.Array[GetCertificateRequest]
   
-  var returnType: GetCertificateResponse = js.native
+  var returnType: GetCertificateResponse
 }
 object ReturnTypeGetCertificateResponse {
   

@@ -3,25 +3,23 @@ package typings.eggMultipart
 import typings.eggMultipart.anon.CurrentDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleOptions extends StObject {
   
-  var cron: js.UndefOr[String] = js.native
+  var cron: js.UndefOr[String] = js.undefined
   
-  var cronOptions: js.UndefOr[CurrentDate] = js.native
+  var cronOptions: js.UndefOr[CurrentDate] = js.undefined
   
-  var disable: js.UndefOr[Boolean] = js.native
+  var disable: js.UndefOr[Boolean] = js.undefined
   
-  var env: js.UndefOr[js.Array[String]] = js.native
+  var env: js.UndefOr[js.Array[String]] = js.undefined
   
-  var immediate: js.UndefOr[Boolean] = js.native
+  var immediate: js.UndefOr[Boolean] = js.undefined
   
-  var interval: js.UndefOr[Double | String] = js.native
+  var interval: js.UndefOr[Double | String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ScheduleOptions {
   

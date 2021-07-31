@@ -2,29 +2,27 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON response template for List privileges operation in Directory API.
   */
-@js.native
 trait SchemaPrivileges extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Privilege resources.
     */
-  var items: js.UndefOr[js.Array[SchemaPrivilege]] = js.native
+  var items: js.UndefOr[js.Array[SchemaPrivilege]] = js.undefined
   
   /**
     * The type of the API resource. This is always admin#directory#privileges.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaPrivileges {
   

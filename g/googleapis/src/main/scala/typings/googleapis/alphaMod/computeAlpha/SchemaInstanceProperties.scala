@@ -3,10 +3,8 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceProperties extends StObject {
   
   /**
@@ -17,49 +15,49 @@ trait SchemaInstanceProperties extends StObject {
     * resource, specify true. If unsure, leave this set to false. See the
     * Enable IP forwarding documentation for more information.
     */
-  var canIpForward: js.UndefOr[Boolean] = js.native
+  var canIpForward: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional text description for the instances that are created from this
     * instance template.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * An array of disks that are associated with the instances that are created
     * from this template.
     */
-  var disks: js.UndefOr[js.Array[SchemaAttachedDisk]] = js.native
+  var disks: js.UndefOr[js.Array[SchemaAttachedDisk]] = js.undefined
   
   /**
     * Display Device properties to enable support for remote display products
     * like: Teradici, VNC and TeamViewer
     */
-  var displayDevice: js.UndefOr[SchemaDisplayDevice] = js.native
+  var displayDevice: js.UndefOr[SchemaDisplayDevice] = js.undefined
   
   /**
     * A list of guest accelerator cards&#39; type and count to use for
     * instances created from the instance template.
     */
-  var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.native
+  var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.undefined
   
   /**
     * Labels to apply to instances that are created from this template.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The machine type to use for instances that are created from this
     * template.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata key/value pairs to assign to instances that are created from
     * this template. These pairs can consist of custom metadata or predefined
     * keys. See Project and instance metadata for more information.
     */
-  var metadata: js.UndefOr[SchemaMetadata] = js.native
+  var metadata: js.UndefOr[SchemaMetadata] = js.undefined
   
   /**
     * Minimum cpu/platform to be used by this instance. The instance may be
@@ -68,24 +66,24 @@ trait SchemaInstanceProperties extends StObject {
     * Haswell&quot; or minCpuPlatform: &quot;Intel Sandy Bridge&quot;. For more
     * information, read Specifying a Minimum CPU Platform.
     */
-  var minCpuPlatform: js.UndefOr[String] = js.native
+  var minCpuPlatform: js.UndefOr[String] = js.undefined
   
   /**
     * An array of network access configurations for this interface.
     */
-  var networkInterfaces: js.UndefOr[js.Array[SchemaNetworkInterface]] = js.native
+  var networkInterfaces: js.UndefOr[js.Array[SchemaNetworkInterface]] = js.undefined
   
   /**
     * The configuration of desired reservations which this Instance could
     * consume capacity from.
     */
-  var reservationAffinity: js.UndefOr[SchemaReservationAffinity] = js.native
+  var reservationAffinity: js.UndefOr[SchemaReservationAffinity] = js.undefined
   
   /**
     * Specifies the scheduling options for the instances that are created from
     * this template.
     */
-  var scheduling: js.UndefOr[SchemaScheduling] = js.native
+  var scheduling: js.UndefOr[SchemaScheduling] = js.undefined
   
   /**
     * A list of service accounts with specified scopes. Access tokens for these
@@ -93,15 +91,15 @@ trait SchemaInstanceProperties extends StObject {
     * this template. Use metadata queries to obtain the access tokens for these
     * instances.
     */
-  var serviceAccounts: js.UndefOr[js.Array[SchemaServiceAccount]] = js.native
+  var serviceAccounts: js.UndefOr[js.Array[SchemaServiceAccount]] = js.undefined
   
-  var shieldedInstanceConfig: js.UndefOr[SchemaShieldedInstanceConfig] = js.native
+  var shieldedInstanceConfig: js.UndefOr[SchemaShieldedInstanceConfig] = js.undefined
   
   /**
     * Specifies the Shielded VM options for the instances that are created from
     * this template.
     */
-  var shieldedVmConfig: js.UndefOr[SchemaShieldedVmConfig] = js.native
+  var shieldedVmConfig: js.UndefOr[SchemaShieldedVmConfig] = js.undefined
   
   /**
     * A list of tags to apply to the instances that are created from this
@@ -109,7 +107,7 @@ trait SchemaInstanceProperties extends StObject {
     * firewalls. The setTags method can modify this list of tags. Each tag
     * within the list must comply with RFC1035.
     */
-  var tags: js.UndefOr[SchemaTags] = js.native
+  var tags: js.UndefOr[SchemaTags] = js.undefined
 }
 object SchemaInstanceProperties {
   

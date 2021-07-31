@@ -2,17 +2,15 @@ package typings.backlogJs.mod.Option
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Notification {
   
-  @js.native
   trait GetNotificationsCountParams extends StObject {
     
-    var alreadyRead: Boolean = js.native
+    var alreadyRead: Boolean
     
-    var resourceAlreadyRead: Boolean = js.native
+    var resourceAlreadyRead: Boolean
   }
   object GetNotificationsCountParams {
     
@@ -33,16 +31,15 @@ object Notification {
     }
   }
   
-  @js.native
   trait GetNotificationsParams extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var maxId: js.UndefOr[Double] = js.native
+    var maxId: js.UndefOr[Double] = js.undefined
     
-    var minId: js.UndefOr[Double] = js.native
+    var minId: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[Order] = js.native
+    var order: js.UndefOr[Order] = js.undefined
   }
   object GetNotificationsParams {
     

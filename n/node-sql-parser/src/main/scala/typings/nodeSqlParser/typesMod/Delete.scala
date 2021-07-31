@@ -3,26 +3,26 @@ package typings.nodeSqlParser.typesMod
 import typings.nodeSqlParser.nodeSqlParserStrings.delete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Delete extends AST {
+trait Delete
+  extends StObject
+     with AST {
   
-  var from: js.Array[From | Dual] = js.native
+  var from: js.Array[From | Dual]
   
-  var table: js.Any = js.native
+  var table: js.Any
   
-  var `type`: delete = js.native
+  var `type`: delete
   
-  var where: js.Any = js.native
+  var where: js.Any
 }
 object Delete {
   
   @scala.inline
-  def apply(from: js.Array[From | Dual], table: js.Any, `type`: delete, where: js.Any): Delete = {
+  def apply(from: js.Array[From | Dual], table: js.Any, where: js.Any): Delete = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("delete")
     __obj.asInstanceOf[Delete]
   }
   

@@ -14,7 +14,6 @@ import typings.blueprintjsDatetime.shortcutsMod.IDateRangeShortcut
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateRangeInputMod {
@@ -139,7 +138,8 @@ object dateRangeInputMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.blueprintjsDatetime.dateFormatMod.IDateFormatProps because var conflicts: locale. Inlined invalidDateMessage, outOfRangeMessage, placeholder, formatDate, formatDate, parseDate, parseDate */ @js.native
   trait IDateRangeInputProps
-    extends IDatePickerBaseProps
+    extends StObject
+       with IDatePickerBaseProps
        with IProps {
     
     /**
@@ -180,7 +180,7 @@ object dateRangeInputMod {
       * `disabled` and `value` will be ignored in favor of the top-level props on this component.
       * `ref` is not supported; use `inputRef` instead.
       */
-    var endInputProps: js.UndefOr[HTMLInputProps with IInputGroupProps] = js.native
+    var endInputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.native
     
     /**
       * Function to render a JavaScript `Date` to a string.
@@ -273,7 +273,7 @@ object dateRangeInputMod {
       * `disabled` and `value` will be ignored in favor of the top-level props on this component.
       * `ref` is not supported; use `inputRef` instead.
       */
-    var startInputProps: js.UndefOr[HTMLInputProps with IInputGroupProps] = js.native
+    var startInputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.native
     
     /**
       * The currently selected date range.
@@ -286,40 +286,39 @@ object dateRangeInputMod {
     var value: js.UndefOr[DateRange] = js.native
   }
   
-  @js.native
   trait IDateRangeInputState extends StObject {
     
-    var boundaryToModify: js.UndefOr[Boundary] = js.native
+    var boundaryToModify: js.UndefOr[Boundary] = js.undefined
     
-    var endHoverString: js.UndefOr[String] = js.native
+    var endHoverString: js.UndefOr[String] = js.undefined
     
-    var endInputString: js.UndefOr[String] = js.native
+    var endInputString: js.UndefOr[String] = js.undefined
     
-    var formattedMaxDateString: js.UndefOr[String] = js.native
+    var formattedMaxDateString: js.UndefOr[String] = js.undefined
     
-    var formattedMinDateString: js.UndefOr[String] = js.native
+    var formattedMinDateString: js.UndefOr[String] = js.undefined
     
-    var isEndInputFocused: js.UndefOr[Boolean] = js.native
+    var isEndInputFocused: js.UndefOr[Boolean] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var isStartInputFocused: js.UndefOr[Boolean] = js.native
+    var isStartInputFocused: js.UndefOr[Boolean] = js.undefined
     
-    var lastFocusedField: js.UndefOr[Boundary] = js.native
+    var lastFocusedField: js.UndefOr[Boundary] = js.undefined
     
-    var selectedEnd: js.UndefOr[Date] = js.native
+    var selectedEnd: js.UndefOr[Date] = js.undefined
     
-    var selectedShortcutIndex: js.UndefOr[Double] = js.native
+    var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
-    var selectedStart: js.UndefOr[Date] = js.native
+    var selectedStart: js.UndefOr[Date] = js.undefined
     
-    var shouldSelectAfterUpdate: js.UndefOr[Boolean] = js.native
+    var shouldSelectAfterUpdate: js.UndefOr[Boolean] = js.undefined
     
-    var startHoverString: js.UndefOr[String] = js.native
+    var startHoverString: js.UndefOr[String] = js.undefined
     
-    var startInputString: js.UndefOr[String] = js.native
+    var startInputString: js.UndefOr[String] = js.undefined
     
-    var wasLastFocusChangeDueToHover: js.UndefOr[Boolean] = js.native
+    var wasLastFocusChangeDueToHover: js.UndefOr[Boolean] = js.undefined
   }
   object IDateRangeInputState {
     

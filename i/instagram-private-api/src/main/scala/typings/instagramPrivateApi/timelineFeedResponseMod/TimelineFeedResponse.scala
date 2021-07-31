@@ -2,37 +2,35 @@ package typings.instagramPrivateApi.timelineFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineFeedResponse extends StObject {
   
-  var auto_load_more_enabled: Boolean = js.native
+  var auto_load_more_enabled: Boolean
   
-  var client_feed_changelist_applied: Boolean = js.native
+  var client_feed_changelist_applied: Boolean
   
-  var client_gap_enforcer_matrix: js.Array[TimelineFeedResponseClientGapEnforcerMatrixItem] = js.native
+  var client_gap_enforcer_matrix: js.Array[TimelineFeedResponseClientGapEnforcerMatrixItem]
   
-  var client_session_id: String = js.native
+  var client_session_id: String
   
-  var feed_items: js.Array[TimelineFeedResponseFeedItemsItem] = js.native
+  var feed_items: js.Array[TimelineFeedResponseFeedItemsItem]
   
-  var feed_pill_text: String = js.native
+  var feed_pill_text: String
   
-  var is_direct_v2_enabled: Boolean = js.native
+  var is_direct_v2_enabled: Boolean
   
-  var more_available: Boolean = js.native
+  var more_available: Boolean
   
-  var next_max_id: String = js.native
+  var next_max_id: String
   
-  var num_results: Double = js.native
+  var num_results: Double
   
-  var pagination_info: TimelineFeedResponsePaginationInfo = js.native
+  var pagination_info: TimelineFeedResponsePaginationInfo
   
-  var status: String = js.native
+  var status: String
   
-  var view_state_version: String = js.native
+  var view_state_version: String
 }
 object TimelineFeedResponse {
   

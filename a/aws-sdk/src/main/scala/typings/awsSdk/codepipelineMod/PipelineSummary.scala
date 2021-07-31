@@ -2,31 +2,29 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineSummary extends StObject {
   
   /**
     * The date and time the pipeline was created, in timestamp format.
     */
-  var created: js.UndefOr[Timestamp] = js.native
+  var created: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the pipeline.
     */
-  var name: js.UndefOr[PipelineName] = js.native
+  var name: js.UndefOr[PipelineName] = js.undefined
   
   /**
     * The date and time of the last update to the pipeline, in timestamp format.
     */
-  var updated: js.UndefOr[Timestamp] = js.native
+  var updated: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The version number of the pipeline.
     */
-  var version: js.UndefOr[PipelineVersion] = js.native
+  var version: js.UndefOr[PipelineVersion] = js.undefined
 }
 object PipelineSummary {
   

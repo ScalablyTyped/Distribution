@@ -5,10 +5,8 @@ import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unlimited
 import typings.mapboxMapboxSdk.mapiRequestMod.DirectionsApproach
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionsRequestWaypoint extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait DirectionsRequestWaypoint extends StObject {
     * while  bearings influences how you start from a waypoint. If provided, the list of approaches must be the same length as the list of waypoints.
     * However, you can skip a coordinate and show its position in the list with the  ; separator.
     */
-  var approach: js.UndefOr[DirectionsApproach] = js.native
+  var approach: js.UndefOr[DirectionsApproach] = js.undefined
   
   /**
     * Semicolon-separated list of  {longitude},{latitude} coordinate pairs to visit in order. There can be between 2 and 25 coordinates.
     */
-  var coordinates: js.Array[Double] | LngLatLike = js.native
+  var coordinates: js.Array[Double] | LngLatLike
   
   /**
     * Maximum distance in meters that each coordinate is allowed to move when snapped to a nearby road segment.
@@ -32,7 +30,7 @@ trait DirectionsRequestWaypoint extends StObject {
     * Values can be any number greater than 0 or the string 'unlimited'.
     * A  NoSegment error is returned if no routable road is found within the radius.
     */
-  var radius: js.UndefOr[String | unlimited] = js.native
+  var radius: js.UndefOr[String | unlimited] = js.undefined
 }
 object DirectionsRequestWaypoint {
   

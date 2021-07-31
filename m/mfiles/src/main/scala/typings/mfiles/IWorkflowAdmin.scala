@@ -2,25 +2,23 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWorkflowAdmin extends StObject {
   
-  def Clone(): IWorkflowAdmin = js.native
+  def Clone(): IWorkflowAdmin
   
-  var Description: String = js.native
+  var Description: String
   
-  var Permissions: IAccessControlList = js.native
+  var Permissions: IAccessControlList
   
-  var SemanticAliases: ISemanticAliases = js.native
+  var SemanticAliases: ISemanticAliases
   
-  var StateTransitions: IStateTransitions = js.native
+  var StateTransitions: IStateTransitions
   
-  var States: IStatesAdmin = js.native
+  var States: IStatesAdmin
   
-  var Workflow: IWorkflow = js.native
+  var Workflow: IWorkflow
 }
 object IWorkflowAdmin {
   

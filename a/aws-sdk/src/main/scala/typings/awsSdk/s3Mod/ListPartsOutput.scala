@@ -2,78 +2,76 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPartsOutput extends StObject {
   
   /**
     * If the bucket has a lifecycle rule configured with an action to abort incomplete multipart uploads and the prefix in the lifecycle rule matches the object name in the request, then the response includes this header indicating when the initiated multipart upload will become eligible for abort operation. For more information, see Aborting Incomplete Multipart Uploads Using a Bucket Lifecycle Policy. The response will also include the x-amz-abort-rule-id header that will provide the ID of the lifecycle configuration rule that defines this action.
     */
-  var AbortDate: js.UndefOr[typings.awsSdk.s3Mod.AbortDate] = js.native
+  var AbortDate: js.UndefOr[typings.awsSdk.s3Mod.AbortDate] = js.undefined
   
   /**
     * This header is returned along with the x-amz-abort-date header. It identifies applicable lifecycle configuration rule that defines the action to abort incomplete multipart uploads.
     */
-  var AbortRuleId: js.UndefOr[typings.awsSdk.s3Mod.AbortRuleId] = js.native
+  var AbortRuleId: js.UndefOr[typings.awsSdk.s3Mod.AbortRuleId] = js.undefined
   
   /**
     * The name of the bucket to which the multipart upload was initiated.
     */
-  var Bucket: js.UndefOr[BucketName] = js.native
+  var Bucket: js.UndefOr[BucketName] = js.undefined
   
   /**
     * Container element that identifies who initiated the multipart upload. If the initiator is an AWS account, this element provides the same information as the Owner element. If the initiator is an IAM User, this element provides the user ARN and display name.
     */
-  var Initiator: js.UndefOr[typings.awsSdk.s3Mod.Initiator] = js.native
+  var Initiator: js.UndefOr[typings.awsSdk.s3Mod.Initiator] = js.undefined
   
   /**
     *  Indicates whether the returned list of parts is truncated. A true value indicates that the list was truncated. A list can be truncated if the number of parts exceeds the limit returned in the MaxParts element.
     */
-  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.native
+  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.undefined
   
   /**
     * Object key for which the multipart upload was initiated.
     */
-  var Key: js.UndefOr[ObjectKey] = js.native
+  var Key: js.UndefOr[ObjectKey] = js.undefined
   
   /**
     * Maximum number of parts that were allowed in the response.
     */
-  var MaxParts: js.UndefOr[typings.awsSdk.s3Mod.MaxParts] = js.native
+  var MaxParts: js.UndefOr[typings.awsSdk.s3Mod.MaxParts] = js.undefined
   
   /**
     * When a list is truncated, this element specifies the last part in the list, as well as the value to use for the part-number-marker request parameter in a subsequent request.
     */
-  var NextPartNumberMarker: js.UndefOr[typings.awsSdk.s3Mod.NextPartNumberMarker] = js.native
+  var NextPartNumberMarker: js.UndefOr[typings.awsSdk.s3Mod.NextPartNumberMarker] = js.undefined
   
   /**
     *  Container element that identifies the object owner, after the object is created. If multipart upload is initiated by an IAM user, this element provides the parent account ID and display name.
     */
-  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.native
+  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.undefined
   
   /**
     * When a list is truncated, this element specifies the last part in the list, as well as the value to use for the part-number-marker request parameter in a subsequent request.
     */
-  var PartNumberMarker: js.UndefOr[typings.awsSdk.s3Mod.PartNumberMarker] = js.native
+  var PartNumberMarker: js.UndefOr[typings.awsSdk.s3Mod.PartNumberMarker] = js.undefined
   
   /**
     *  Container for elements related to a particular part. A response can contain zero or more Part elements.
     */
-  var Parts: js.UndefOr[typings.awsSdk.s3Mod.Parts] = js.native
+  var Parts: js.UndefOr[typings.awsSdk.s3Mod.Parts] = js.undefined
   
-  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.native
+  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.undefined
   
   /**
     * Class of storage (STANDARD or REDUCED_REDUNDANCY) used to store the uploaded object.
     */
-  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.native
+  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.undefined
   
   /**
     * Upload ID identifying the multipart upload whose parts are being listed.
     */
-  var UploadId: js.UndefOr[MultipartUploadId] = js.native
+  var UploadId: js.UndefOr[MultipartUploadId] = js.undefined
 }
 object ListPartsOutput {
   

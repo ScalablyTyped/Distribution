@@ -2,7 +2,6 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,25 +25,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * values. If `all_values` is set to either `ALLOW` or `DENY`,
   * `allowed_values` and `denied_values` must be unset.
   */
-@js.native
 trait SchemaListPolicy extends StObject {
   
   /**
     * The policy all_values state.
     */
-  var allValues: js.UndefOr[String] = js.native
+  var allValues: js.UndefOr[String] = js.undefined
   
   /**
     * List of values allowed  at this resource. Can only be set if `all_values`
     * is set to `ALL_VALUES_UNSPECIFIED`.
     */
-  var allowedValues: js.UndefOr[js.Array[String]] = js.native
+  var allowedValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of values denied at this resource. Can only be set if `all_values`
     * is set to `ALL_VALUES_UNSPECIFIED`.
     */
-  var deniedValues: js.UndefOr[js.Array[String]] = js.native
+  var deniedValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Determines the inheritance behavior for this `Policy`.  By default, a
@@ -112,7 +110,7 @@ trait SchemaListPolicy extends StObject {
     * `projects/P2`,   `projects/P3`. The accepted values at `projects/bar` are
     * `organizations/O1`,   `folders/F1`, `projects/P1`.
     */
-  var inheritFromParent: js.UndefOr[Boolean] = js.native
+  var inheritFromParent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. The Google Cloud Console will try to default to a configuration
@@ -120,7 +118,7 @@ trait SchemaListPolicy extends StObject {
     * is not set, it will inherit the value specified higher in the hierarchy,
     * unless `inherit_from_parent` is `false`.
     */
-  var suggestedValue: js.UndefOr[String] = js.native
+  var suggestedValue: js.UndefOr[String] = js.undefined
 }
 object SchemaListPolicy {
   

@@ -2,19 +2,17 @@ package typings.instagramPrivateApi.savedFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFeedResponseFriendshipStatus extends StObject {
   
-  var following: Boolean = js.native
+  var following: Boolean
   
-  var is_bestie: Boolean = js.native
+  var is_bestie: Boolean
   
-  var is_restricted: Boolean = js.native
+  var is_restricted: Boolean
   
-  var outgoing_request: Boolean = js.native
+  var outgoing_request: Boolean
 }
 object SavedFeedResponseFriendshipStatus {
   

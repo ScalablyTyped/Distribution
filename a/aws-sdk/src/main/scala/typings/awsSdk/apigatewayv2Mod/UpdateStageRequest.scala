@@ -2,61 +2,59 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateStageRequest extends StObject {
   
   /**
     * Settings for logging access in this stage.
     */
-  var AccessLogSettings: js.UndefOr[typings.awsSdk.apigatewayv2Mod.AccessLogSettings] = js.native
+  var AccessLogSettings: js.UndefOr[typings.awsSdk.apigatewayv2Mod.AccessLogSettings] = js.undefined
   
   /**
     * The API identifier.
     */
-  var ApiId: string = js.native
+  var ApiId: string
   
   /**
     * Specifies whether updates to an API automatically trigger a new deployment. The default value is false.
     */
-  var AutoDeploy: js.UndefOr[boolean] = js.native
+  var AutoDeploy: js.UndefOr[boolean] = js.undefined
   
   /**
     * The identifier of a client certificate for a Stage.
     */
-  var ClientCertificateId: js.UndefOr[Id] = js.native
+  var ClientCertificateId: js.UndefOr[Id] = js.undefined
   
   /**
     * The default route settings for the stage.
     */
-  var DefaultRouteSettings: js.UndefOr[RouteSettings] = js.native
+  var DefaultRouteSettings: js.UndefOr[RouteSettings] = js.undefined
   
   /**
     * The deployment identifier for the API stage. Can't be updated if autoDeploy is enabled.
     */
-  var DeploymentId: js.UndefOr[Id] = js.native
+  var DeploymentId: js.UndefOr[Id] = js.undefined
   
   /**
     * The description for the API stage.
     */
-  var Description: js.UndefOr[StringWithLengthBetween0And1024] = js.native
+  var Description: js.UndefOr[StringWithLengthBetween0And1024] = js.undefined
   
   /**
     * Route settings for the stage.
     */
-  var RouteSettings: js.UndefOr[RouteSettingsMap] = js.native
+  var RouteSettings: js.UndefOr[RouteSettingsMap] = js.undefined
   
   /**
     * The stage name. Stage names can only contain alphanumeric characters, hyphens, and underscores. Maximum length is 128 characters.
     */
-  var StageName: string = js.native
+  var StageName: string
   
   /**
     * A map that defines the stage variables for a Stage. Variable names can have alphanumeric and underscore characters, and the values must match [A-Za-z0-9-._~:/?#&amp;=,]+.
     */
-  var StageVariables: js.UndefOr[StageVariablesMap] = js.native
+  var StageVariables: js.UndefOr[StageVariablesMap] = js.undefined
 }
 object UpdateStageRequest {
   

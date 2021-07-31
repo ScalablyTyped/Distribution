@@ -2,17 +2,15 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ctor extends StObject {
   
-  var ctor: js.Any = js.native
+  var ctor: js.Any
   
-  var filePath: String = js.native
+  var filePath: String
   
-  var name: String = js.native
+  var name: String
 }
 object Ctor {
   

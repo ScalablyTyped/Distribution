@@ -3,19 +3,17 @@ package typings.ngkookies
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angular {
   
   object kookies {
     
-    @js.native
     trait Config extends StObject {
       
-      var json: js.UndefOr[Boolean] = js.native
+      var json: js.UndefOr[Boolean] = js.undefined
       
-      var raw: js.UndefOr[Boolean] = js.native
+      var raw: js.UndefOr[Boolean] = js.undefined
     }
     object Config {
       
@@ -42,16 +40,15 @@ object angular {
       }
     }
     
-    @js.native
     trait IKookiesProvider extends StObject {
       
-      var config: Config = js.native
+      var config: Config
       
-      var defaults: Options = js.native
+      var defaults: Options
       
-      def setConfig(config: Config): Unit = js.native
+      def setConfig(config: Config): Unit
       
-      def setDefaults(options: Options): Unit = js.native
+      def setDefaults(options: Options): Unit
     }
     object IKookiesProvider {
       
@@ -94,16 +91,15 @@ object angular {
       def set(name: String, value: String, optopns: Options): Unit = js.native
     }
     
-    @js.native
     trait Options extends StObject {
       
-      var domain: js.UndefOr[String] = js.native
+      var domain: js.UndefOr[String] = js.undefined
       
-      var expires: js.UndefOr[Double | Date] = js.native
+      var expires: js.UndefOr[Double | Date] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var secure: js.UndefOr[Boolean] = js.native
+      var secure: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

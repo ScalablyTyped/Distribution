@@ -4,15 +4,15 @@
 Typings are for version 1.0.20201121
 
 ## Library description:
-TypeScript typings for G Suite Alert Center API v1beta1
+TypeScript typings for Google Workspace Alert Center API v1beta1
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.alertcenter |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 19 |
 | # dependents       | 1 |
-| # downloads        | 88 |
+| # downloads        | 1478 |
 | # stars            | 0 |
 
 ## Links

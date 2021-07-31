@@ -4,7 +4,6 @@ import typings.servicenow.servicenow.GlideRecord
 import typings.servicenow.servicenow.GlideRecordOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -64,14 +63,6 @@ object global {
       retroactiveMSecs: Double,
       current: GlideRecord,
       operation: GlideRecordOperation,
-      vars: js.UndefOr[scala.Nothing],
-      withSchedule: js.Any
-    ): GlideRecord = js.native
-    def startFlowRetroactive(
-      workflowID: String,
-      retroactiveMSecs: Double,
-      current: GlideRecord,
-      operation: GlideRecordOperation,
       vars: js.Object
     ): GlideRecord = js.native
     def startFlowRetroactive(
@@ -80,6 +71,14 @@ object global {
       current: GlideRecord,
       operation: GlideRecordOperation,
       vars: js.Object,
+      withSchedule: js.Any
+    ): GlideRecord = js.native
+    def startFlowRetroactive(
+      workflowID: String,
+      retroactiveMSecs: Double,
+      current: GlideRecord,
+      operation: GlideRecordOperation,
+      vars: Unit,
       withSchedule: js.Any
     ): GlideRecord = js.native
   }

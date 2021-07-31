@@ -3,15 +3,15 @@ package typings.activexLibreoffice.com_.sun.star.container
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Replacement of hierarchical elements. */
-@js.native
-trait XHierarchicalNameReplace extends XHierarchicalNameAccess {
+trait XHierarchicalNameReplace
+  extends StObject
+     with XHierarchicalNameAccess {
   
   /** replaces the element at the specified name. */
-  def replaceByHierarchicalName(aName: String, aElement: js.Any): Unit = js.native
+  def replaceByHierarchicalName(aName: String, aElement: js.Any): Unit
 }
 object XHierarchicalNameReplace {
   

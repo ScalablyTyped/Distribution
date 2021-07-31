@@ -3,20 +3,18 @@ package typings.reactSketchapp.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtboardProps extends StObject {
   
-  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
   
   /**
     * The name to be displayed in the Sketch Layer List
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[Style | StyleReference] = js.native
+  var style: js.UndefOr[Style | StyleReference] = js.undefined
 }
 object ArtboardProps {
   

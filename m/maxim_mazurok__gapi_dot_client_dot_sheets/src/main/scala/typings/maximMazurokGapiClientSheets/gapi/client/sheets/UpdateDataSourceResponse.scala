@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDataSourceResponse extends StObject {
   
   /** The data execution status. */
-  var dataExecutionStatus: js.UndefOr[DataExecutionStatus] = js.native
+  var dataExecutionStatus: js.UndefOr[DataExecutionStatus] = js.undefined
   
   /** The updated data source. */
-  var dataSource: js.UndefOr[DataSource] = js.native
+  var dataSource: js.UndefOr[DataSource] = js.undefined
 }
 object UpdateDataSourceResponse {
   

@@ -2,61 +2,59 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminologyProperties extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the custom terminology. 
     */
-  var Arn: js.UndefOr[TerminologyArn] = js.native
+  var Arn: js.UndefOr[TerminologyArn] = js.undefined
   
   /**
     * The time at which the custom terminology was created, based on the timestamp.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the custom terminology properties.
     */
-  var Description: js.UndefOr[typings.awsSdk.translateMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.translateMod.Description] = js.undefined
   
   /**
     * The encryption key for the custom terminology.
     */
-  var EncryptionKey: js.UndefOr[typings.awsSdk.translateMod.EncryptionKey] = js.native
+  var EncryptionKey: js.UndefOr[typings.awsSdk.translateMod.EncryptionKey] = js.undefined
   
   /**
     * The time at which the custom terminology was last update, based on the timestamp.
     */
-  var LastUpdatedAt: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the custom terminology.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The size of the file used when importing a custom terminology.
     */
-  var SizeBytes: js.UndefOr[Integer] = js.native
+  var SizeBytes: js.UndefOr[Integer] = js.undefined
   
   /**
     * The language code for the source text of the translation request for which the custom terminology is being used.
     */
-  var SourceLanguageCode: js.UndefOr[LanguageCodeString] = js.native
+  var SourceLanguageCode: js.UndefOr[LanguageCodeString] = js.undefined
   
   /**
     * The language codes for the target languages available with the custom terminology file. All possible target languages are returned in array.
     */
-  var TargetLanguageCodes: js.UndefOr[LanguageCodeStringList] = js.native
+  var TargetLanguageCodes: js.UndefOr[LanguageCodeStringList] = js.undefined
   
   /**
     * The number of terms included in the custom terminology.
     */
-  var TermCount: js.UndefOr[Integer] = js.native
+  var TermCount: js.UndefOr[Integer] = js.undefined
 }
 object TerminologyProperties {
   

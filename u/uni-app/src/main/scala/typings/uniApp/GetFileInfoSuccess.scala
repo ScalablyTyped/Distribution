@@ -2,26 +2,24 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFileInfoSuccess extends StObject {
   
   /**
     * 按照传入的 digestAlgorithm 计算得出的的文件摘要
     */
-  var digest: js.UndefOr[String] = js.native
+  var digest: js.UndefOr[String] = js.undefined
   
   /**
     * 调用结果
     */
-  var errMsg: js.UndefOr[String] = js.native
+  var errMsg: js.UndefOr[String] = js.undefined
   
   /**
     * 文件大小，单位：B
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object GetFileInfoSuccess {
   

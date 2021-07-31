@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2ExecutedActionMetadata extends StObject {
   
   /** When the worker completed executing the action command. */
-  var executionCompletedTimestamp: js.UndefOr[String] = js.native
+  var executionCompletedTimestamp: js.UndefOr[String] = js.undefined
   
   /** When the worker started executing the action command. */
-  var executionStartTimestamp: js.UndefOr[String] = js.native
+  var executionStartTimestamp: js.UndefOr[String] = js.undefined
   
   /** When the worker finished fetching action inputs. */
-  var inputFetchCompletedTimestamp: js.UndefOr[String] = js.native
+  var inputFetchCompletedTimestamp: js.UndefOr[String] = js.undefined
   
   /** When the worker started fetching action inputs. */
-  var inputFetchStartTimestamp: js.UndefOr[String] = js.native
+  var inputFetchStartTimestamp: js.UndefOr[String] = js.undefined
   
   /** When the worker finished uploading action outputs. */
-  var outputUploadCompletedTimestamp: js.UndefOr[String] = js.native
+  var outputUploadCompletedTimestamp: js.UndefOr[String] = js.undefined
   
   /** When the worker started uploading action outputs. */
-  var outputUploadStartTimestamp: js.UndefOr[String] = js.native
+  var outputUploadStartTimestamp: js.UndefOr[String] = js.undefined
   
   /** When was the action added to the queue. */
-  var queuedTimestamp: js.UndefOr[String] = js.native
+  var queuedTimestamp: js.UndefOr[String] = js.undefined
   
   /** The name of the worker which ran the execution. */
-  var worker: js.UndefOr[String] = js.native
+  var worker: js.UndefOr[String] = js.undefined
   
   /** When the worker completed the action, including all stages. */
-  var workerCompletedTimestamp: js.UndefOr[String] = js.native
+  var workerCompletedTimestamp: js.UndefOr[String] = js.undefined
   
   /** When the worker received the action. */
-  var workerStartTimestamp: js.UndefOr[String] = js.native
+  var workerStartTimestamp: js.UndefOr[String] = js.undefined
 }
 object BuildBazelRemoteExecutionV2ExecutedActionMetadata {
   

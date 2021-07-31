@@ -2,16 +2,16 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITerminalAddon extends IDisposable {
+trait ITerminalAddon
+  extends StObject
+     with IDisposable {
   
   /**
     * This is called when the addon is activated.
     */
-  def activate(terminal: Terminal): Unit = js.native
+  def activate(terminal: Terminal): Unit
 }
 object ITerminalAddon {
   

@@ -1,11 +1,19 @@
 package typings.winrt.global.Windows.Networking
 
+import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
+import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
+import typings.winrt.Windows.Foundation.Uri
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundUploadProgress
+import typings.winrt.Windows.Security.Credentials.PasswordCredential
+import typings.winrt.Windows.Storage.IStorageFile
+import typings.winrt.Windows.Storage.Streams.IInputStream
 import typings.winrt.Windows.Web.WebErrorStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BackgroundTransfer {
@@ -13,28 +21,64 @@ object BackgroundTransfer {
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundDownloader")
   @js.native
   class BackgroundDownloader ()
-    extends typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundDownloader
+    extends StObject
+       with typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundDownloader {
+    
+    /* CompleteClass */
+    var costPolicy: BackgroundTransferCostPolicy = js.native
+    
+    /* CompleteClass */
+    var group: String = js.native
+    
+    /* CompleteClass */
+    var method: String = js.native
+    
+    /* CompleteClass */
+    var proxyCredential: PasswordCredential = js.native
+    
+    /* CompleteClass */
+    var serverCredential: PasswordCredential = js.native
+    
+    /* CompleteClass */
+    override def setRequestHeader(headerName: String, headerValue: String): Unit = js.native
+  }
   /* static members */
   object BackgroundDownloader {
     
-    @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundDownloader.getCurrentDownloadsAsync")
+    @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundDownloader")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def getCurrentDownloadsAsync(): IAsyncOperation[
         IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation]
-      ] = js.native
-    @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundDownloader.getCurrentDownloadsAsync")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")().asInstanceOf[IAsyncOperation[
+        IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation]
+      ]]
+    @scala.inline
     def getCurrentDownloadsAsync(group: String): IAsyncOperation[
         IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation]
-      ] = js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[
+        IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation]
+      ]]
   }
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart")
   @js.native
   class BackgroundTransferContentPart ()
-    extends typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart {
+    extends StObject
+       with typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart {
     def this(name: String) = this()
     def this(name: String, fileName: String) = this()
+    
+    /* CompleteClass */
+    override def setFile(value: IStorageFile): Unit = js.native
+    
+    /* CompleteClass */
+    override def setHeader(headerName: String, headerValue: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def setText(value: String): Unit = js.native
   }
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy")
@@ -43,26 +87,30 @@ object BackgroundTransfer {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy with Double
+        typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy & Double
       ] = js.native
     
-    /* 0 */ val default: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.default with Double = js.native
+    /* 0 */ val default: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.default & Double = js.native
     
-    /* 2 */ val always: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.always with Double = js.native
+    /* 2 */ val always: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.always & Double = js.native
     
-    /* 1 */ val unrestrictedOnly: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.unrestrictedOnly with Double = js.native
+    /* 1 */ val unrestrictedOnly: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.unrestrictedOnly & Double = js.native
   }
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferError")
   @js.native
   class BackgroundTransferError ()
-    extends typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferError
+    extends StObject
+       with typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferError
   /* static members */
   object BackgroundTransferError {
     
-    @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferError.getStatus")
+    @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferError")
     @js.native
-    def getStatus(hresult: Double): WebErrorStatus = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getStatus(hresult: Double): WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[WebErrorStatus]
   }
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferStatus")
@@ -71,53 +119,177 @@ object BackgroundTransfer {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus with Double
+        typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus & Double
       ] = js.native
     
-    /* 6 */ val canceled: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.canceled with Double = js.native
+    /* 6 */ val canceled: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.canceled & Double = js.native
     
-    /* 5 */ val completed: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.completed with Double = js.native
+    /* 5 */ val completed: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.completed & Double = js.native
     
-    /* 7 */ val error: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.error with Double = js.native
+    /* 7 */ val error: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.error & Double = js.native
     
-    /* 0 */ val idle: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.idle with Double = js.native
+    /* 0 */ val idle: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.idle & Double = js.native
     
-    /* 2 */ val pausedByApplication: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedByApplication with Double = js.native
+    /* 2 */ val pausedByApplication: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedByApplication & Double = js.native
     
-    /* 3 */ val pausedCostedNetwork: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedCostedNetwork with Double = js.native
+    /* 3 */ val pausedCostedNetwork: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedCostedNetwork & Double = js.native
     
-    /* 4 */ val pausedNoNetwork: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedNoNetwork with Double = js.native
+    /* 4 */ val pausedNoNetwork: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedNoNetwork & Double = js.native
     
-    /* 1 */ val running: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.running with Double = js.native
+    /* 1 */ val running: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.running & Double = js.native
   }
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundUploader")
   @js.native
   class BackgroundUploader ()
-    extends typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundUploader
+    extends StObject
+       with typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundUploader {
+    
+    /* CompleteClass */
+    var costPolicy: BackgroundTransferCostPolicy = js.native
+    
+    /* CompleteClass */
+    var group: String = js.native
+    
+    /* CompleteClass */
+    var method: String = js.native
+    
+    /* CompleteClass */
+    var proxyCredential: PasswordCredential = js.native
+    
+    /* CompleteClass */
+    var serverCredential: PasswordCredential = js.native
+    
+    /* CompleteClass */
+    override def setRequestHeader(headerName: String, headerValue: String): Unit = js.native
+  }
   /* static members */
   object BackgroundUploader {
     
-    @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundUploader.getCurrentUploadsAsync")
+    @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundUploader")
     @js.native
-    def getCurrentUploadsAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]] = js.native
-    @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundUploader.getCurrentUploadsAsync")
-    @js.native
-    def getCurrentUploadsAsync(group: String): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getCurrentUploadsAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")().asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]]]
+    @scala.inline
+    def getCurrentUploadsAsync(group: String): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]]]
   }
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.DownloadOperation")
   @js.native
   class DownloadOperation ()
-    extends typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation
+    extends StObject
+       with typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation {
+    
+    /* CompleteClass */
+    override def attachAsync(): IAsyncOperationWithProgress[
+        typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation, 
+        typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation
+      ] = js.native
+    
+    /* CompleteClass */
+    var costPolicy: BackgroundTransferCostPolicy = js.native
+    
+    /* CompleteClass */
+    override def getResponseInformation(): typings.winrt.Windows.Networking.BackgroundTransfer.ResponseInformation = js.native
+    
+    /* CompleteClass */
+    override def getResultStreamAt(position: Double): IInputStream = js.native
+    
+    /* CompleteClass */
+    var group: String = js.native
+    
+    /* CompleteClass */
+    var guid: String = js.native
+    
+    /* CompleteClass */
+    var method: String = js.native
+    
+    /* CompleteClass */
+    override def pause(): Unit = js.native
+    
+    /* CompleteClass */
+    var progress: BackgroundDownloadProgress = js.native
+    
+    /* CompleteClass */
+    var requestedUri: Uri = js.native
+    
+    /* CompleteClass */
+    var resultFile: IStorageFile = js.native
+    
+    /* CompleteClass */
+    override def resume(): Unit = js.native
+    
+    /* CompleteClass */
+    override def startAsync(): IAsyncOperationWithProgress[
+        typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation, 
+        typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation
+      ] = js.native
+  }
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.ResponseInformation")
   @js.native
   class ResponseInformation ()
-    extends typings.winrt.Windows.Networking.BackgroundTransfer.ResponseInformation
+    extends StObject
+       with typings.winrt.Windows.Networking.BackgroundTransfer.ResponseInformation {
+    
+    /* CompleteClass */
+    var actualUri: Uri = js.native
+    
+    /* CompleteClass */
+    var headers: IMapView[String, String] = js.native
+    
+    /* CompleteClass */
+    var isResumable: Boolean = js.native
+    
+    /* CompleteClass */
+    var statusCode: Double = js.native
+  }
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.UploadOperation")
   @js.native
   class UploadOperation ()
-    extends typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation
+    extends StObject
+       with typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation {
+    
+    /* CompleteClass */
+    override def attachAsync(): IAsyncOperationWithProgress[
+        typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation, 
+        typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation
+      ] = js.native
+    
+    /* CompleteClass */
+    var costPolicy: BackgroundTransferCostPolicy = js.native
+    
+    /* CompleteClass */
+    override def getResponseInformation(): typings.winrt.Windows.Networking.BackgroundTransfer.ResponseInformation = js.native
+    
+    /* CompleteClass */
+    override def getResultStreamAt(position: Double): IInputStream = js.native
+    
+    /* CompleteClass */
+    var group: String = js.native
+    
+    /* CompleteClass */
+    var guid: String = js.native
+    
+    /* CompleteClass */
+    var method: String = js.native
+    
+    /* CompleteClass */
+    var progress: BackgroundUploadProgress = js.native
+    
+    /* CompleteClass */
+    var requestedUri: Uri = js.native
+    
+    /* CompleteClass */
+    var sourceFile: IStorageFile = js.native
+    
+    /* CompleteClass */
+    override def startAsync(): IAsyncOperationWithProgress[
+        typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation, 
+        typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation
+      ] = js.native
+  }
 }

@@ -5,7 +5,6 @@ import typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,43 +20,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://kubernetes.io/docs/concepts/configuration/secret/#security-properties
   * https://kubernetes.io/docs/concepts/configuration/secret/#risks
   */
-@js.native
 trait Secret extends StObject {
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]] = js.native
+  var apiVersion: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]] = js.undefined
   
   /**
     * Data contains the secret data. Each key must consist of alphanumeric characters, '-', '_' or '.'. The serialized form of the secret data is a base64 encoded string, representing the arbitrary (possibly non-string) data value here. Described in https://tools.ietf.org/html/rfc4648#section-4
     */
-  var data: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var data: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * Immutable, if set to true, ensures that data stored in the Secret cannot be updated (only object metadata can be modified). If not set to true, the field can be modified at any time. Defaulted to nil. This is a beta field enabled by ImmutableEphemeralVolumes feature gate.
     */
-  var immutable: js.UndefOr[Input[Boolean]] = js.native
+  var immutable: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Secret]] = js.native
+  var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Secret]] = js.undefined
   
   /**
     * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
-  var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+  var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
   
   /**
     * stringData allows specifying non-binary secret data in string form. It is provided as a write-only convenience method. All keys and values are merged into the data field on write, overwriting any existing values. It is never output when reading from the API.
     */
-  var stringData: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var stringData: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * Used to facilitate programmatic handling of secret data.
     */
-  var `type`: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.undefined
 }
 object Secret {
   

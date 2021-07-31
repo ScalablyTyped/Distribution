@@ -2,21 +2,21 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AccelerometerAnalogOption extends AccelerometerGeneralOption {
+trait AccelerometerAnalogOption
+  extends StObject
+     with AccelerometerGeneralOption {
   
-  var aref: js.UndefOr[Double] = js.native
+  var aref: js.UndefOr[Double] = js.undefined
   
-  var autoCalibrate: js.UndefOr[Boolean] = js.native
+  var autoCalibrate: js.UndefOr[Boolean] = js.undefined
   
-  var pins: js.Array[String] = js.native
+  var pins: js.Array[String]
   
-  var sensitivity: js.UndefOr[Double] = js.native
+  var sensitivity: js.UndefOr[Double] = js.undefined
   
-  var zeroV: js.UndefOr[Double | js.Array[Double]] = js.native
+  var zeroV: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 object AccelerometerAnalogOption {
   

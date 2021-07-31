@@ -5,7 +5,6 @@ import typings.jpm.anon.Anonymous
 import typings.jpm.anon.Content
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,10 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object requestMod {
   
-  @js.native
-  trait Request extends BaseRequest {
+  trait Request
+    extends StObject
+       with BaseRequest {
     
-    var response: Response = js.native
+    var response: Response
   }
   object Request {
     
@@ -35,26 +35,25 @@ object requestMod {
     }
   }
   
-  @js.native
   trait BaseRequest extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var contentType: String = js.native
+    var contentType: String
     
-    def delete(): Unit = js.native
+    def delete(): Unit
     
-    def get(): Unit = js.native
+    def get(): Unit
     
-    def head(): Unit = js.native
+    def head(): Unit
     
-    var headers: js.Object = js.native
+    var headers: js.Object
     
-    def post(): Unit = js.native
+    def post(): Unit
     
-    def put(): Unit = js.native
+    def put(): Unit
     
-    var url: String | SDKURL = js.native
+    var url: String | SDKURL
   }
   object BaseRequest {
     
@@ -106,20 +105,19 @@ object requestMod {
     }
   }
   
-  @js.native
   trait BaseResponse extends StObject {
     
-    var anonymous: Boolean = js.native
+    var anonymous: Boolean
     
-    var headers: js.Object = js.native
+    var headers: js.Object
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
     
-    var text: String = js.native
+    var text: String
     
-    var url: String = js.native
+    var url: String
   }
   object BaseResponse {
     
@@ -159,10 +157,11 @@ object requestMod {
     }
   }
   
-  @js.native
-  trait Response extends BaseResponse {
+  trait Response
+    extends StObject
+       with BaseResponse {
     
-    var json: js.Object = js.native
+    var json: js.Object
   }
   object Response {
     
@@ -188,10 +187,11 @@ object requestMod {
     }
   }
   
-  @js.native
-  trait STRequest[ResponseType] extends BaseRequest {
+  trait STRequest[ResponseType]
+    extends StObject
+       with BaseRequest {
     
-    var response: STResponse[ResponseType] = js.native
+    var response: STResponse[ResponseType]
   }
   object STRequest {
     
@@ -213,17 +213,16 @@ object requestMod {
     }
     
     @scala.inline
-    implicit class STRequestMutableBuilder[Self <: STRequest[_], ResponseType] (val x: Self with STRequest[ResponseType]) extends AnyVal {
+    implicit class STRequestMutableBuilder[Self <: STRequest[?], ResponseType] (val x: Self & STRequest[ResponseType]) extends AnyVal {
       
       @scala.inline
       def setResponse(value: STResponse[ResponseType]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait STResponse[T] extends StObject {
     
-    var json: T = js.native
+    var json: T
   }
   object STResponse {
     
@@ -234,7 +233,7 @@ object requestMod {
     }
     
     @scala.inline
-    implicit class STResponseMutableBuilder[Self <: STResponse[_], T] (val x: Self with STResponse[T]) extends AnyVal {
+    implicit class STResponseMutableBuilder[Self <: STResponse[?], T] (val x: Self & STResponse[T]) extends AnyVal {
       
       @scala.inline
       def setJson(value: T): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])

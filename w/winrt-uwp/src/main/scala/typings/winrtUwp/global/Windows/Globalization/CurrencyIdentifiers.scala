@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Globalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the currency identifiers for the supported currencies, as static properties. */
 @JSGlobal("Windows.Globalization.CurrencyIdentifiers")
 @js.native
 abstract class CurrencyIdentifiers ()
-  extends typings.winrtUwp.Windows.Globalization.CurrencyIdentifiers
+  extends StObject
+     with typings.winrtUwp.Windows.Globalization.CurrencyIdentifiers
 object CurrencyIdentifiers {
   
   @JSGlobal("Windows.Globalization.CurrencyIdentifiers")
@@ -1096,6 +1096,12 @@ object CurrencyIdentifiers {
   @scala.inline
   def top_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   
+  /** Gets the currency identifier for the Turkish Lira. */
+  /* static member */
+  @JSGlobal("Windows.Globalization.CurrencyIdentifiers.try")
+  @js.native
+  val `try`: String = js.native
+  
   /** Gets the currency identifier for the Trinidad and Tobago Dollar. */
   /* static member */
   @JSGlobal("Windows.Globalization.CurrencyIdentifiers.ttd")
@@ -1263,10 +1269,4 @@ object CurrencyIdentifiers {
   def zwl: String = js.native
   @scala.inline
   def zwl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zwl")(x.asInstanceOf[js.Any])
-  
-  /** Gets the currency identifier for the Turkish Lira. */
-  /* static member */
-  @JSGlobal("Windows.Globalization.CurrencyIdentifiers.try")
-  @js.native
-  val `try`: String = js.native
 }

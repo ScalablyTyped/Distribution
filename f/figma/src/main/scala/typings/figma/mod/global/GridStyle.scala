@@ -3,16 +3,16 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.GRID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridStyle extends BaseStyle {
+trait GridStyle
+  extends StObject
+     with BaseStyle {
   
-  var layoutGrids: js.Array[LayoutGrid] = js.native
+  var layoutGrids: js.Array[LayoutGrid]
   
   @JSName("type")
-  var type_GridStyle: GRID = js.native
+  var type_GridStyle: GRID
 }
 object GridStyle {
   
@@ -24,11 +24,10 @@ object GridStyle {
     layoutGrids: js.Array[LayoutGrid],
     name: String,
     remote: Boolean,
-    remove: () => Unit,
-    `type`: GRID
+    remove: () => Unit
   ): GridStyle = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], layoutGrids = layoutGrids.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("GRID")
     __obj.asInstanceOf[GridStyle]
   }
   

@@ -3,15 +3,22 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object copyButtonMod {
   
   @JSImport("carbon-components/components/copy-button/copy-button", JSImport.Default)
   @js.native
-  class default protected () extends CopyButton {
+  class default protected ()
+    extends StObject
+       with CopyButton {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def handleAnimationEnd(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def handleClick(): Unit = js.native
   }
   object default {
     
@@ -28,12 +35,11 @@ object copyButtonMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait CopyButton extends StObject {
+  - Dropped any */ trait CopyButton extends StObject {
     
-    def handleAnimationEnd(event: js.Any): Unit = js.native
+    def handleAnimationEnd(event: js.Any): Unit
     
-    def handleClick(): Unit = js.native
+    def handleClick(): Unit
   }
   object CopyButton {
     

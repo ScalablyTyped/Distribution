@@ -5,7 +5,6 @@ import typings.googleAuthLibrary.oauth2clientMod.OAuth2Client
 import typings.googleAuthLibrary.oauth2clientMod.RefreshOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object computeclientMod {
@@ -31,24 +30,25 @@ object computeclientMod {
     
     var serviceAccountEmail: js.Any = js.native
     
-    /* protected */ def wrapError(e: GaxiosError[_]): Unit = js.native
+    /* protected */ def wrapError(e: GaxiosError[js.Any]): Unit = js.native
   }
   
-  @js.native
-  trait ComputeOptions extends RefreshOptions {
+  trait ComputeOptions
+    extends StObject
+       with RefreshOptions {
     
     /**
       * The scopes that will be requested when acquiring service account
       * credentials. Only applicable to modern App Engine and Cloud Function
       * runtimes as of March 2019.
       */
-    var scopes: js.UndefOr[String | js.Array[String]] = js.native
+    var scopes: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The service account email to use, or 'default'. A Compute Engine instance
       * may have multiple service accounts.
       */
-    var serviceAccountEmail: js.UndefOr[String] = js.native
+    var serviceAccountEmail: js.UndefOr[String] = js.undefined
   }
   object ComputeOptions {
     

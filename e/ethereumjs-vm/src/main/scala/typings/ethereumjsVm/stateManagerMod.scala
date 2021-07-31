@@ -6,7 +6,6 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateManagerMod {
@@ -16,15 +15,15 @@ object stateManagerMod {
   /**
     * Instantiate the StateManager interface.
     */
-  class default () extends StateManager {
+  class default ()
+    extends StObject
+       with StateManager {
     def this(opts: StateManagerOpts) = this()
-  }
-  
-  @js.native
-  trait StateManager extends StObject {
     
+    /* CompleteClass */
     var _cache: typings.ethereumjsVm.cacheMod.default = js.native
     
+    /* CompleteClass */
     var _checkpointCount: Double = js.native
     
     /**
@@ -32,8 +31,10 @@ object stateManagerMod {
       * for more explanation.
       * @ignore
       */
-    def _clearOriginalStorageCache(): Unit = js.native
+    /* CompleteClass */
+    override def _clearOriginalStorageCache(): Unit = js.native
     
+    /* CompleteClass */
     var _common: typings.ethereumjsCommon.mod.default = js.native
     
     /**
@@ -41,14 +42,16 @@ object stateManagerMod {
       * cache or does a lookup.
       * @private
       */
-    def _getStorageTrie(address: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def _getStorageTrie(address: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Creates a storage trie from the primary storage trie
       * for an account and saves this in the storage cache.
       * @private
       */
-    def _lookupStorageTrie(address: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def _lookupStorageTrie(address: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Modifies the storage trie of an account
@@ -56,16 +59,22 @@ object stateManagerMod {
       * @param address -  Address of the account whose storage is to be modified
       * @param modifyTrie - Function to modify the storage trie of the account
       */
-    def _modifyContractStorage(address: Buffer, modifyTrie: js.Any, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def _modifyContractStorage(address: Buffer, modifyTrie: js.Any, cb: js.Any): Unit = js.native
     
+    /* CompleteClass */
     var _originalStorageCache: Map[String, Map[String, Buffer]] = js.native
     
+    /* CompleteClass */
     var _storageTries: js.Any = js.native
     
+    /* CompleteClass */
     var _touched: Set[String] = js.native
     
+    /* CompleteClass */
     var _touchedStack: js.Array[Set[String]] = js.native
     
+    /* CompleteClass */
     var _trie: js.Any = js.native
     
     /**
@@ -80,7 +89,8 @@ object stateManagerMod {
       * @param address - Address to check
       * @param {accountIsEmpty~callback} cb
       */
-    def accountIsEmpty(address: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def accountIsEmpty(address: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Checkpoints the current state of the StateManager instance.
@@ -88,35 +98,40 @@ object stateManagerMod {
       * `commit` or `reverted` by calling rollback.
       * @param cb - Callback function
       */
-    def checkpoint(cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def checkpoint(cb: js.Any): Unit = js.native
     
     /**
       * Removes accounts form the state trie that have been touched,
       * as defined in EIP-161 (https://eips.ethereum.org/EIPS/eip-161).
       * @param cb - Callback function
       */
-    def cleanupTouchedAccounts(cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def cleanupTouchedAccounts(cb: js.Any): Unit = js.native
     
     /**
       * Clears all storage entries for the account corresponding to `address`.
       * @param address -  Address to clear the storage of
       * @param cb - Callback function
       */
-    def clearContractStorage(address: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def clearContractStorage(address: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Commits the current change-set to the instance since the
       * last call to checkpoint.
       * @param cb - Callback function
       */
-    def commit(cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def commit(cb: js.Any): Unit = js.native
     
     /**
       * Copies the current instance of the `StateManager`
       * at the last fully committed point, i.e. as if all current
       * checkpoints were reverted.
       */
-    def copy(): StateManager = js.native
+    /* CompleteClass */
+    override def copy(): StateManager = js.native
     
     /**
       * Callback for `dumpStorage` method
@@ -131,7 +146,8 @@ object stateManagerMod {
       * @param address - The address of the `account` to return storage for
       * @param {dumpStorage~callback} cb
       */
-    def dumpStorage(address: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def dumpStorage(address: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Generates a canonical genesis state on the instance based on the
@@ -139,14 +155,16 @@ object stateManagerMod {
       * checkpoints on the instance.
       * @param cb - Callback function
       */
-    def generateCanonicalGenesis(cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def generateCanonicalGenesis(cb: js.Any): Unit = js.native
     
     /**
       * Initializes the provided genesis state into the state trie
       * @param initState - Object (address -> balance)
       * @param cb - Callback function
       */
-    def generateGenesis(initState: js.Any, cb: js.Any): js.Any = js.native
+    /* CompleteClass */
+    override def generateGenesis(initState: js.Any, cb: js.Any): js.Any = js.native
     
     /**
       * Callback for `getAccount` method.
@@ -161,7 +179,8 @@ object stateManagerMod {
       * @param address - Address of the `account` to get
       * @param {getAccount~callback} cb
       */
-    def getAccount(address: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def getAccount(address: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Callback for `getContractCode` method
@@ -175,7 +194,8 @@ object stateManagerMod {
       * @param address - Address to get the `code` for
       * @param {getContractCode~callback} cb
       */
-    def getContractCode(address: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def getContractCode(address: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Callback for `getContractStorage` method
@@ -192,7 +212,8 @@ object stateManagerMod {
       * @param key - Key in the account's storage to get the value for. Must be 32 bytes long.
       * @param {getContractCode~callback} cb.
       */
-    def getContractStorage(address: Buffer, key: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def getContractStorage(address: Buffer, key: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Caches the storage value associated with the provided `address` and `key`
@@ -202,7 +223,8 @@ object stateManagerMod {
       * @param address - Address of the account to get the storage for
       * @param key - Key in the account's storage to get the value for. Must be 32 bytes long.
       */
-    def getOriginalContractStorage(address: Buffer, key: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def getOriginalContractStorage(address: Buffer, key: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Callback for `getStateRoot` method
@@ -217,7 +239,8 @@ object stateManagerMod {
       * checkpoints on the instance.
       * @param {getStateRoot~callback} cb
       */
-    def getStateRoot(cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def getStateRoot(cb: js.Any): Unit = js.native
     
     /**
       * Callback for `hasGenesisState` method
@@ -231,7 +254,8 @@ object stateManagerMod {
       * for the configured chain parameters.
       * @param {hasGenesisState~callback} cb
       */
-    def hasGenesisState(cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def hasGenesisState(cb: js.Any): Unit = js.native
     
     /**
       * Saves an [`ethereumjs-account`](https://github.com/ethereumjs/ethereumjs-account)
@@ -240,7 +264,8 @@ object stateManagerMod {
       * @param account - The [`ethereumjs-account`](https://github.com/ethereumjs/ethereumjs-account) to store
       * @param cb - Callback function
       */
-    def putAccount(address: Buffer, account: typings.ethereumjsAccount.mod.default, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def putAccount(address: Buffer, account: typings.ethereumjsAccount.mod.default, cb: js.Any): Unit = js.native
     
     /**
       * Adds `value` to the state trie as code, and sets `codeHash` on the account
@@ -249,7 +274,8 @@ object stateManagerMod {
       * @param value - The value of the `code`
       * @param cb - Callback function
       */
-    def putContractCode(address: Buffer, value: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def putContractCode(address: Buffer, value: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Adds value to the state trie for the `account`
@@ -259,14 +285,16 @@ object stateManagerMod {
       * @param value - Value to set at `key` for account corresponding to `address`
       * @param cb - Callback function
       */
-    def putContractStorage(address: Buffer, key: Buffer, value: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def putContractStorage(address: Buffer, key: Buffer, value: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Reverts the current change-set to the instance since the
       * last call to checkpoint.
       * @param cb - Callback function
       */
-    def revert(cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def revert(cb: js.Any): Unit = js.native
     
     /**
       * Sets the state of the instance to that represented
@@ -276,7 +304,8 @@ object stateManagerMod {
       * @param stateRoot - The state-root to reset the instance to
       * @param cb - Callback function
       */
-    def setStateRoot(stateRoot: Buffer, cb: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def setStateRoot(stateRoot: Buffer, cb: js.Any): Unit = js.native
     
     /**
       * Marks an account as touched, according to the definition
@@ -285,7 +314,275 @@ object stateManagerMod {
       * event. Touched accounts that are empty will be cleared
       * at the end of the tx.
       */
-    def touchAccount(address: Buffer): Unit = js.native
+    /* CompleteClass */
+    override def touchAccount(address: Buffer): Unit = js.native
+  }
+  
+  trait StateManager extends StObject {
+    
+    var _cache: typings.ethereumjsVm.cacheMod.default
+    
+    var _checkpointCount: Double
+    
+    /**
+      * Clears the original storage cache. Refer to [[getOriginalContractStorage]]
+      * for more explanation.
+      * @ignore
+      */
+    def _clearOriginalStorageCache(): Unit
+    
+    var _common: typings.ethereumjsCommon.mod.default
+    
+    /**
+      * Gets the storage trie for an account from the storage
+      * cache or does a lookup.
+      * @private
+      */
+    def _getStorageTrie(address: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Creates a storage trie from the primary storage trie
+      * for an account and saves this in the storage cache.
+      * @private
+      */
+    def _lookupStorageTrie(address: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Modifies the storage trie of an account
+      * @private
+      * @param address -  Address of the account whose storage is to be modified
+      * @param modifyTrie - Function to modify the storage trie of the account
+      */
+    def _modifyContractStorage(address: Buffer, modifyTrie: js.Any, cb: js.Any): Unit
+    
+    var _originalStorageCache: Map[String, Map[String, Buffer]]
+    
+    var _storageTries: js.Any
+    
+    var _touched: Set[String]
+    
+    var _touchedStack: js.Array[Set[String]]
+    
+    var _trie: js.Any
+    
+    /**
+      * Callback for `accountIsEmpty` method
+      * @callback accountIsEmpty~callback
+      * @param {Error} error an error that may have happened or `null`
+      * @param {Boolean} empty True if the account is empty false otherwise
+      */
+    /**
+      * Checks if the `account` corresponding to `address` is empty as defined in
+      * EIP-161 (https://eips.ethereum.org/EIPS/eip-161).
+      * @param address - Address to check
+      * @param {accountIsEmpty~callback} cb
+      */
+    def accountIsEmpty(address: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Checkpoints the current state of the StateManager instance.
+      * State changes that follow can then be committed by calling
+      * `commit` or `reverted` by calling rollback.
+      * @param cb - Callback function
+      */
+    def checkpoint(cb: js.Any): Unit
+    
+    /**
+      * Removes accounts form the state trie that have been touched,
+      * as defined in EIP-161 (https://eips.ethereum.org/EIPS/eip-161).
+      * @param cb - Callback function
+      */
+    def cleanupTouchedAccounts(cb: js.Any): Unit
+    
+    /**
+      * Clears all storage entries for the account corresponding to `address`.
+      * @param address -  Address to clear the storage of
+      * @param cb - Callback function
+      */
+    def clearContractStorage(address: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Commits the current change-set to the instance since the
+      * last call to checkpoint.
+      * @param cb - Callback function
+      */
+    def commit(cb: js.Any): Unit
+    
+    /**
+      * Copies the current instance of the `StateManager`
+      * at the last fully committed point, i.e. as if all current
+      * checkpoints were reverted.
+      */
+    def copy(): StateManager
+    
+    /**
+      * Callback for `dumpStorage` method
+      * @callback dumpStorage~callback
+      * @param {Error} error an error that may have happened or `null`
+      * @param {Object} accountState The state of the account as an `Object` map.
+      * Keys are are the storage keys, values are the storage values as strings.
+      * Both are represented as hex strings without the `0x` prefix.
+      */
+    /**
+      * Dumps the the storage values for an `account` specified by `address`.
+      * @param address - The address of the `account` to return storage for
+      * @param {dumpStorage~callback} cb
+      */
+    def dumpStorage(address: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Generates a canonical genesis state on the instance based on the
+      * configured chain parameters. Will error if there are uncommitted
+      * checkpoints on the instance.
+      * @param cb - Callback function
+      */
+    def generateCanonicalGenesis(cb: js.Any): Unit
+    
+    /**
+      * Initializes the provided genesis state into the state trie
+      * @param initState - Object (address -> balance)
+      * @param cb - Callback function
+      */
+    def generateGenesis(initState: js.Any, cb: js.Any): js.Any
+    
+    /**
+      * Callback for `getAccount` method.
+      * @callback getAccount~callback
+      * @param error - an error that may have happened or `null`
+      * @param account - An [`ethereumjs-account`](https://github.com/ethereumjs/ethereumjs-account)
+      * instance corresponding to the provided `address`
+      */
+    /**
+      * Gets the [`ethereumjs-account`](https://github.com/ethereumjs/ethereumjs-account)
+      * associated with `address`. Returns an empty account if the account does not exist.
+      * @param address - Address of the `account` to get
+      * @param {getAccount~callback} cb
+      */
+    def getAccount(address: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Callback for `getContractCode` method
+      * @callback getContractCode~callback
+      * @param error - an error that may have happened or `null`
+      * @param code - The code corresponding to the provided address.
+      * Returns an empty `Buffer` if the account has no associated code.
+      */
+    /**
+      * Gets the code corresponding to the provided `address`.
+      * @param address - Address to get the `code` for
+      * @param {getContractCode~callback} cb
+      */
+    def getContractCode(address: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Callback for `getContractStorage` method
+      * @callback getContractStorage~callback
+      * @param {Error} error an error that may have happened or `null`
+      * @param {Buffer} storageValue The storage value for the account
+      * corresponding to the provided address at the provided key.
+      * If this does not exists an empty `Buffer` is returned
+      */
+    /**
+      * Gets the storage value associated with the provided `address` and `key`. This method returns
+      * the shortest representation of the stored value.
+      * @param address -  Address of the account to get the storage for
+      * @param key - Key in the account's storage to get the value for. Must be 32 bytes long.
+      * @param {getContractCode~callback} cb.
+      */
+    def getContractStorage(address: Buffer, key: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Caches the storage value associated with the provided `address` and `key`
+      * on first invocation, and returns the cached (original) value from then
+      * onwards. This is used to get the original value of a storage slot for
+      * computing gas costs according to EIP-1283.
+      * @param address - Address of the account to get the storage for
+      * @param key - Key in the account's storage to get the value for. Must be 32 bytes long.
+      */
+    def getOriginalContractStorage(address: Buffer, key: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Callback for `getStateRoot` method
+      * @callback getStateRoot~callback
+      * @param {Error} error an error that may have happened or `null`.
+      * Will be an error if the un-committed checkpoints on the instance.
+      * @param {Buffer} stateRoot The state-root of the `StateManager`
+      */
+    /**
+      * Gets the state-root of the Merkle-Patricia trie representation
+      * of the state of this StateManager. Will error if there are uncommitted
+      * checkpoints on the instance.
+      * @param {getStateRoot~callback} cb
+      */
+    def getStateRoot(cb: js.Any): Unit
+    
+    /**
+      * Callback for `hasGenesisState` method
+      * @callback hasGenesisState~callback
+      * @param {Error} error an error that may have happened or `null`
+      * @param {Boolean} hasGenesisState Whether the storage trie contains the
+      * canonical genesis state for the configured chain parameters.
+      */
+    /**
+      * Checks whether the current instance has the canonical genesis state
+      * for the configured chain parameters.
+      * @param {hasGenesisState~callback} cb
+      */
+    def hasGenesisState(cb: js.Any): Unit
+    
+    /**
+      * Saves an [`ethereumjs-account`](https://github.com/ethereumjs/ethereumjs-account)
+      * into state under the provided `address`.
+      * @param address - Address under which to store `account`
+      * @param account - The [`ethereumjs-account`](https://github.com/ethereumjs/ethereumjs-account) to store
+      * @param cb - Callback function
+      */
+    def putAccount(address: Buffer, account: typings.ethereumjsAccount.mod.default, cb: js.Any): Unit
+    
+    /**
+      * Adds `value` to the state trie as code, and sets `codeHash` on the account
+      * corresponding to `address` to reference this.
+      * @param address - Address of the `account` to add the `code` for
+      * @param value - The value of the `code`
+      * @param cb - Callback function
+      */
+    def putContractCode(address: Buffer, value: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Adds value to the state trie for the `account`
+      * corresponding to `address` at the provided `key`.
+      * @param address -  Address to set a storage value for
+      * @param key - Key to set the value at. Must be 32 bytes long.
+      * @param value - Value to set at `key` for account corresponding to `address`
+      * @param cb - Callback function
+      */
+    def putContractStorage(address: Buffer, key: Buffer, value: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Reverts the current change-set to the instance since the
+      * last call to checkpoint.
+      * @param cb - Callback function
+      */
+    def revert(cb: js.Any): Unit
+    
+    /**
+      * Sets the state of the instance to that represented
+      * by the provided `stateRoot`. Will error if there are uncommitted
+      * checkpoints on the instance or if the state root does not exist in
+      * the state trie.
+      * @param stateRoot - The state-root to reset the instance to
+      * @param cb - Callback function
+      */
+    def setStateRoot(stateRoot: Buffer, cb: js.Any): Unit
+    
+    /**
+      * Marks an account as touched, according to the definition
+      * in [EIP-158](https://eips.ethereum.org/EIPS/eip-158).
+      * This happens when the account is triggered for a state-changing
+      * event. Touched accounts that are empty will be cleared
+      * at the end of the tx.
+      */
+    def touchAccount(address: Buffer): Unit
   }
   object StateManager {
     
@@ -436,18 +733,17 @@ object stateManagerMod {
     }
   }
   
-  @js.native
   trait StateManagerOpts extends StObject {
     
     /**
       * Parameters of the chain ([`Common`](https://github.com/ethereumjs/ethereumjs-common))
       */
-    var common: js.UndefOr[typings.ethereumjsCommon.mod.default] = js.native
+    var common: js.UndefOr[typings.ethereumjsCommon.mod.default] = js.undefined
     
     /**
       * A [`merkle-patricia-tree`](https://github.com/ethereumjs/merkle-patricia-tree) instance
       */
-    var trie: js.UndefOr[js.Any] = js.native
+    var trie: js.UndefOr[js.Any] = js.undefined
   }
   object StateManagerOpts {
     

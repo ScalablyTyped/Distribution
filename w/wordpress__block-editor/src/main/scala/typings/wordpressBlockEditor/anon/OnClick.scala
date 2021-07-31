@@ -7,15 +7,13 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnClick extends StObject {
   
-  var onClick: MouseEventHandler[HTMLButtonElement] = js.native
+  var onClick: MouseEventHandler[HTMLButtonElement]
   
-  var title: ReactNode = js.native
+  var title: ReactNode
 }
 object OnClick {
   

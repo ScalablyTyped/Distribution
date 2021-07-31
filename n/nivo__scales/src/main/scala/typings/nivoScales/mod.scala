@@ -16,30 +16,30 @@ import typings.nivoScales.nivoScalesStrings.year
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
-  trait LinearScale extends Scale {
+  trait LinearScale
+    extends StObject
+       with Scale {
     
-    var max: js.UndefOr[auto | Double] = js.native
+    var max: js.UndefOr[auto | Double] = js.undefined
     
-    var min: js.UndefOr[auto | Double] = js.native
+    var min: js.UndefOr[auto | Double] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var stacked: js.UndefOr[Boolean] = js.native
+    var stacked: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: linear = js.native
+    var `type`: linear
   }
   object LinearScale {
     
     @scala.inline
-    def apply(`type`: linear): LinearScale = {
+    def apply(): LinearScale = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("linear")
       __obj.asInstanceOf[LinearScale]
     }
     
@@ -75,23 +75,24 @@ object mod {
     }
   }
   
-  @js.native
-  trait LogScale extends Scale {
+  trait LogScale
+    extends StObject
+       with Scale {
     
-    var base: js.UndefOr[Double] = js.native
+    var base: js.UndefOr[Double] = js.undefined
     
-    var max: js.UndefOr[auto | Double] = js.native
+    var max: js.UndefOr[auto | Double] = js.undefined
     
-    var min: js.UndefOr[auto | Double] = js.native
+    var min: js.UndefOr[auto | Double] = js.undefined
     
-    var `type`: log = js.native
+    var `type`: log
   }
   object LogScale {
     
     @scala.inline
-    def apply(`type`: log): LogScale = {
+    def apply(): LogScale = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("log")
       __obj.asInstanceOf[LogScale]
     }
     
@@ -121,17 +122,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait PointScale extends Scale {
+  trait PointScale
+    extends StObject
+       with Scale {
     
-    var `type`: point = js.native
+    var `type`: point
   }
   object PointScale {
     
     @scala.inline
-    def apply(`type`: point): PointScale = {
+    def apply(): PointScale = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("point")
       __obj.asInstanceOf[PointScale]
     }
     
@@ -155,67 +157,68 @@ object mod {
   object Scale {
     
     @scala.inline
-    def LinearScale(`type`: linear): typings.nivoScales.mod.LinearScale = {
+    def LinearScale(): typings.nivoScales.mod.LinearScale = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("linear")
       __obj.asInstanceOf[typings.nivoScales.mod.LinearScale]
     }
     
     @scala.inline
-    def LogScale(`type`: log): typings.nivoScales.mod.LogScale = {
+    def LogScale(): typings.nivoScales.mod.LogScale = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("log")
       __obj.asInstanceOf[typings.nivoScales.mod.LogScale]
     }
     
     @scala.inline
-    def PointScale(`type`: point): typings.nivoScales.mod.PointScale = {
+    def PointScale(): typings.nivoScales.mod.PointScale = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("point")
       __obj.asInstanceOf[typings.nivoScales.mod.PointScale]
     }
     
     @scala.inline
-    def SymlogScale(`type`: symlog): typings.nivoScales.mod.SymlogScale = {
+    def SymlogScale(): typings.nivoScales.mod.SymlogScale = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("symlog")
       __obj.asInstanceOf[typings.nivoScales.mod.SymlogScale]
     }
     
     @scala.inline
-    def TimeScale(`type`: time): typings.nivoScales.mod.TimeScale = {
+    def TimeScale(): typings.nivoScales.mod.TimeScale = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("time")
       __obj.asInstanceOf[typings.nivoScales.mod.TimeScale]
     }
     
     @scala.inline
-    def TimeScaleFormatted(format: String, `type`: time): typings.nivoScales.mod.TimeScaleFormatted = {
+    def TimeScaleFormatted(format: String): typings.nivoScales.mod.TimeScaleFormatted = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("time")
       __obj.asInstanceOf[typings.nivoScales.mod.TimeScaleFormatted]
     }
   }
   
   type ScaleFunc = js.Function1[/* value */ String | Double | Date, Double]
   
-  @js.native
-  trait SymlogScale extends Scale {
+  trait SymlogScale
+    extends StObject
+       with Scale {
     
-    var constant: js.UndefOr[Double] = js.native
+    var constant: js.UndefOr[Double] = js.undefined
     
-    var max: js.UndefOr[auto | Double] = js.native
+    var max: js.UndefOr[auto | Double] = js.undefined
     
-    var min: js.UndefOr[auto | Double] = js.native
+    var min: js.UndefOr[auto | Double] = js.undefined
     
-    var `type`: symlog = js.native
+    var `type`: symlog
   }
   object SymlogScale {
     
     @scala.inline
-    def apply(`type`: symlog): SymlogScale = {
+    def apply(): SymlogScale = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("symlog")
       __obj.asInstanceOf[SymlogScale]
     }
     
@@ -245,25 +248,26 @@ object mod {
     }
   }
   
-  @js.native
-  trait TimeScale extends Scale {
+  trait TimeScale
+    extends StObject
+       with Scale {
     
-    var max: js.UndefOr[auto | Date] = js.native
+    var max: js.UndefOr[auto | Date] = js.undefined
     
-    var min: js.UndefOr[auto | Date] = js.native
+    var min: js.UndefOr[auto | Date] = js.undefined
     
-    var precision: js.UndefOr[millisecond | second | minute | hour | month | year | day] = js.native
+    var precision: js.UndefOr[millisecond | second | minute | hour | month | year | day] = js.undefined
     
-    var `type`: time = js.native
+    var `type`: time
     
-    var useUTC: js.UndefOr[Boolean] = js.native
+    var useUTC: js.UndefOr[Boolean] = js.undefined
   }
   object TimeScale {
     
     @scala.inline
-    def apply(`type`: time): TimeScale = {
+    def apply(): TimeScale = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("time")
       __obj.asInstanceOf[TimeScale]
     }
     
@@ -299,27 +303,28 @@ object mod {
     }
   }
   
-  @js.native
-  trait TimeScaleFormatted extends Scale {
+  trait TimeScaleFormatted
+    extends StObject
+       with Scale {
     
-    var format: String = js.native
+    var format: String
     
-    var max: js.UndefOr[auto | String] = js.native
+    var max: js.UndefOr[auto | String] = js.undefined
     
-    var min: js.UndefOr[auto | String] = js.native
+    var min: js.UndefOr[auto | String] = js.undefined
     
-    var precision: js.UndefOr[millisecond | second | minute | hour | month | year | day] = js.native
+    var precision: js.UndefOr[millisecond | second | minute | hour | month | year | day] = js.undefined
     
-    var `type`: time = js.native
+    var `type`: time
     
-    var useUTC: js.UndefOr[Boolean] = js.native
+    var useUTC: js.UndefOr[Boolean] = js.undefined
   }
   object TimeScaleFormatted {
     
     @scala.inline
-    def apply(format: String, `type`: time): TimeScaleFormatted = {
+    def apply(format: String): TimeScaleFormatted = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("time")
       __obj.asInstanceOf[TimeScaleFormatted]
     }
     

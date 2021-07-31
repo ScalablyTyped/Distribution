@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ssn9InformationInput extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait Ssn9InformationInput extends StObject {
     * * `Editable`
     * * `DoNotDisplay`
     */
-  var displayLevelCode: js.UndefOr[String] = js.native
+  var displayLevelCode: js.UndefOr[String] = js.undefined
   
   /**
     * The recipient's full Social Security Number (SSN).
     */
-  var ssn9: js.UndefOr[String] = js.native
+  var ssn9: js.UndefOr[String] = js.undefined
 }
 object Ssn9InformationInput {
   

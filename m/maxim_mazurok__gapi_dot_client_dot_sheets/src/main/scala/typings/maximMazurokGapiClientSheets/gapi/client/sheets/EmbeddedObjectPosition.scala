@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmbeddedObjectPosition extends StObject {
   
   /** If true, the embedded object is put on a new sheet whose ID is chosen for you. Used only when writing. */
-  var newSheet: js.UndefOr[Boolean] = js.native
+  var newSheet: js.UndefOr[Boolean] = js.undefined
   
   /** The position at which the object is overlaid on top of a grid. */
-  var overlayPosition: js.UndefOr[OverlayPosition] = js.native
+  var overlayPosition: js.UndefOr[OverlayPosition] = js.undefined
   
   /** The sheet this is on. Set only if the embedded object is on its own sheet. Must be non-negative. */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
 }
 object EmbeddedObjectPosition {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MovSettings extends StObject {
   
   /**
     * When enabled, include 'clap' atom if appropriate for the video output settings.
     */
-  var ClapAtom: js.UndefOr[MovClapAtom] = js.native
+  var ClapAtom: js.UndefOr[MovClapAtom] = js.undefined
   
   /**
     * When enabled, file composition times will start at zero, composition times in the 'ctts' (composition time to sample) box for B-frames will be negative, and a 'cslg' (composition shift least greatest) box will be included per 14496-1 amendment 1. This improves compatibility with Apple players and tools.
     */
-  var CslgAtom: js.UndefOr[MovCslgAtom] = js.native
+  var CslgAtom: js.UndefOr[MovCslgAtom] = js.undefined
   
   /**
     * When set to XDCAM, writes MPEG2 video streams into the QuickTime file using XDCAM fourcc codes. This increases compatibility with Apple editors and players, but may decrease compatibility with other players. Only applicable when the video codec is MPEG2.
     */
-  var Mpeg2FourCCControl: js.UndefOr[MovMpeg2FourCCControl] = js.native
+  var Mpeg2FourCCControl: js.UndefOr[MovMpeg2FourCCControl] = js.undefined
   
   /**
     * To make this output compatible with Omenon, keep the default value, OMNEON. Unless you need Omneon compatibility, set this value to NONE. When you keep the default value, OMNEON, MediaConvert increases the length of the edit list atom. This might cause file rejections when a recipient of the output file doesn't expct this extra padding.
     */
-  var PaddingControl: js.UndefOr[MovPaddingControl] = js.native
+  var PaddingControl: js.UndefOr[MovPaddingControl] = js.undefined
   
   /**
     * Always keep the default value (SELF_CONTAINED) for this setting.
     */
-  var Reference: js.UndefOr[MovReference] = js.native
+  var Reference: js.UndefOr[MovReference] = js.undefined
 }
 object MovSettings {
   

@@ -2,11 +2,9 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains a single token within a formula. */
-@js.native
 trait FormulaToken extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait FormulaToken extends StObject {
     * @see com.sun.star.sheet.NamedRange.TokenIndex
     * @see com.sun.star.sheet.DatabaseRange.TokenIndex
     */
-  var Data: js.Any = js.native
+  var Data: js.Any
   
   /**
     * is the OpCode of the token.
     * @see com.sun.star.sheet.XFormulaOpCodeMapper
     */
-  var OpCode: Double = js.native
+  var OpCode: Double
 }
 object FormulaToken {
   

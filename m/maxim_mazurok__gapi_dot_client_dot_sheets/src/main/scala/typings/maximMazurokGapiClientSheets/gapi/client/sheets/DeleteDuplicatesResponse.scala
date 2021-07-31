@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDuplicatesResponse extends StObject {
   
   /** The number of duplicate rows removed. */
-  var duplicatesRemovedCount: js.UndefOr[Double] = js.native
+  var duplicatesRemovedCount: js.UndefOr[Double] = js.undefined
 }
 object DeleteDuplicatesResponse {
   

@@ -6,17 +6,17 @@ import typings.flowdoc.Flow.Size
 import typings.flowdoc.Flow.URLAsset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Graphic extends Node {
+trait Graphic
+  extends StObject
+     with Node {
   
-  var position: Point = js.native
+  var position: Point
   
-  var size: Size = js.native
+  var size: Size
   
-  var source: FileAsset | URLAsset = js.native
+  var source: FileAsset | URLAsset
 }
 object Graphic {
   

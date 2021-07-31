@@ -10,9 +10,9 @@ Interactive react component for displaying javascript arrays and JSON objects.
 | ------------------ | :-------------: |
 | Full name          | react-json-view |
 | Keywords           | array-viewer, base-16, component, interactive, interactive-json, json, json-component, json-display, json-tree, json-view, json-viewer, json-inspector, json-tree, react, react-component, react-json, theme, tree, tree-view, treeview |
-| # releases         | 0 |
-| # dependents       | 152 |
-| # downloads        | 6519518 |
+| # releases         | 6 |
+| # dependents       | 192 |
+| # downloads        | 8877614 |
 | # stars            | 4 |
 
 ## Links

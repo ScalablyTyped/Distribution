@@ -3,7 +3,6 @@ package typings.officeJsPreview.OneNote
 import typings.officeJsPreview.officeJsPreviewStrings.PageSelectionChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait PageSelectionChangedEventArgs extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait PageSelectionChangedEventArgs extends StObject {
     *
     * [Api set: OneNoteApi 1.3]
     */
-  var oldId: String = js.native
+  var oldId: String
   
   /**
     *
@@ -29,14 +27,14 @@ trait PageSelectionChangedEventArgs extends StObject {
     *
     * [Api set: OneNoteApi 1.3]
     */
-  var `type`: PageSelectionChanged = js.native
+  var `type`: PageSelectionChanged
 }
 object PageSelectionChangedEventArgs {
   
   @scala.inline
-  def apply(oldId: String, `type`: PageSelectionChanged): PageSelectionChangedEventArgs = {
+  def apply(oldId: String): PageSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(oldId = oldId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("PageSelectionChanged")
     __obj.asInstanceOf[PageSelectionChangedEventArgs]
   }
   

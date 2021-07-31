@@ -4,84 +4,84 @@ import typings.nodeZendesk.mod.AuditableModel
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developer.zendesk.com/rest_api/docs/support/tickets#json-format|Zendesk Tickets JSON Format}
   */
-@js.native
-trait ResponseModel extends AuditableModel {
+trait ResponseModel
+  extends StObject
+     with AuditableModel {
   
-  val allow_attachments: Boolean = js.native
-  
-  // Enterprise version only
-  val allow_channelback: Boolean = js.native
-  
-  val assignee_id: ZendeskID | Null = js.native
+  val allow_attachments: Boolean
   
   // Enterprise version only
-  val brand_id: js.UndefOr[Double | Null] = js.native
+  val allow_channelback: Boolean
   
-  val collaborator_ids: js.Array[Double] = js.native
+  val assignee_id: ZendeskID | Null
   
-  val comment_count: js.UndefOr[Double] = js.native
+  // Enterprise version only
+  val brand_id: js.UndefOr[Double | Null] = js.undefined
   
-  val custom_fields: js.Array[Field] = js.native
+  val collaborator_ids: js.Array[Double]
   
-  val description: String = js.native
+  val comment_count: js.UndefOr[Double] = js.undefined
   
-  val due_at: String | Null = js.native
+  val custom_fields: js.Array[Field]
   
-  val email_cc_ids: js.Array[Double] = js.native
+  val description: String
   
-  val external_id: String | Null = js.native
+  val due_at: String | Null
   
-  val fields: js.Array[Field] = js.native
+  val email_cc_ids: js.Array[Double]
   
-  val follower_ids: js.Array[Double] = js.native
+  val external_id: String | Null
   
-  val followup_ids: js.Array[Double] = js.native
+  val fields: js.Array[Field]
   
-  val forum_topic_id: Double | Null = js.native
+  val follower_ids: js.Array[Double]
   
-  val group_id: Double | Null = js.native
+  val followup_ids: js.Array[Double]
   
-  val has_incidents: Boolean = js.native
+  val forum_topic_id: Double | Null
   
-  val is_public: Boolean = js.native
+  val group_id: Double | Null
   
-  val organization_id: Double = js.native
+  val has_incidents: Boolean
   
-  val priority: Priority | Null = js.native
+  val is_public: Boolean
   
-  val problem_id: Double | Null = js.native
+  val organization_id: Double
   
-  val raw_subject: String | Null = js.native
+  val priority: Priority | Null
   
-  val recipient: String | Null = js.native
+  val problem_id: Double | Null
   
-  val requester_id: ZendeskID = js.native
+  val raw_subject: String | Null
   
-  val satisfaction_rating: js.Object | String | Null = js.native
+  val recipient: String | Null
   
-  val sharing_agreement_ids: js.Array[Double] = js.native
+  val requester_id: ZendeskID
   
-  val status: Status = js.native
+  val satisfaction_rating: js.Object | String | Null
   
-  val subject: String | Null = js.native
+  val sharing_agreement_ids: js.Array[Double]
   
-  val submitter_id: ZendeskID = js.native
+  val status: Status
   
-  val tags: js.Array[String] = js.native
+  val subject: String | Null
   
-  val ticket_form_id: js.UndefOr[Double | Null] = js.native
+  val submitter_id: ZendeskID
   
-  val `type`: TicketType | Null = js.native
+  val tags: js.Array[String]
   
-  val url: String = js.native
+  val ticket_form_id: js.UndefOr[Double | Null] = js.undefined
   
-  val via: Via = js.native
+  val `type`: TicketType | Null
+  
+  val url: String
+  
+  val via: Via
 }
 object ResponseModel {
   
@@ -109,7 +109,8 @@ object ResponseModel {
     url: String,
     via: Via
   ): ResponseModel = {
-    val __obj = js.Dynamic.literal(allow_attachments = allow_attachments.asInstanceOf[js.Any], allow_channelback = allow_channelback.asInstanceOf[js.Any], collaborator_ids = collaborator_ids.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_fields = custom_fields.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email_cc_ids = email_cc_ids.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], follower_ids = follower_ids.asInstanceOf[js.Any], followup_ids = followup_ids.asInstanceOf[js.Any], has_incidents = has_incidents.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_public = is_public.asInstanceOf[js.Any], organization_id = organization_id.asInstanceOf[js.Any], requester_id = requester_id.asInstanceOf[js.Any], sharing_agreement_ids = sharing_agreement_ids.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], submitter_id = submitter_id.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allow_attachments = allow_attachments.asInstanceOf[js.Any], allow_channelback = allow_channelback.asInstanceOf[js.Any], collaborator_ids = collaborator_ids.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_fields = custom_fields.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email_cc_ids = email_cc_ids.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], follower_ids = follower_ids.asInstanceOf[js.Any], followup_ids = followup_ids.asInstanceOf[js.Any], has_incidents = has_incidents.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_public = is_public.asInstanceOf[js.Any], organization_id = organization_id.asInstanceOf[js.Any], requester_id = requester_id.asInstanceOf[js.Any], sharing_agreement_ids = sharing_agreement_ids.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], submitter_id = submitter_id.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any], assignee_id = null, due_at = null, external_id = null, forum_topic_id = null, group_id = null, priority = null, problem_id = null, raw_subject = null, recipient = null, satisfaction_rating = null, subject = null, updated_at = null)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[ResponseModel]
   }
   

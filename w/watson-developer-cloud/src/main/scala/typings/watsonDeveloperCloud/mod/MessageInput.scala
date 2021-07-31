@@ -3,17 +3,16 @@ package typings.watsonDeveloperCloud.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An input object that includes the input text. */
-@js.native
 trait MessageInput
-  extends /** DialogNodeOutput accepts additional properties. */
+  extends StObject
+     with /** DialogNodeOutput accepts additional properties. */
 /* propName */ StringDictionary[js.Any] {
   
   /** The text of the user input. This string cannot contain carriage return, newline, or tab characters, and it must be no longer than 2048 characters. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object MessageInput {
   

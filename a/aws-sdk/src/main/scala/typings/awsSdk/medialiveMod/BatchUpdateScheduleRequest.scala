@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdateScheduleRequest extends StObject {
   
   /**
     * Id of the channel whose schedule is being updated.
     */
-  var ChannelId: string = js.native
+  var ChannelId: string
   
   /**
     * Schedule actions to create in the schedule.
     */
-  var Creates: js.UndefOr[BatchScheduleActionCreateRequest] = js.native
+  var Creates: js.UndefOr[BatchScheduleActionCreateRequest] = js.undefined
   
   /**
     * Schedule actions to delete from the schedule.
     */
-  var Deletes: js.UndefOr[BatchScheduleActionDeleteRequest] = js.native
+  var Deletes: js.UndefOr[BatchScheduleActionDeleteRequest] = js.undefined
 }
 object BatchUpdateScheduleRequest {
   

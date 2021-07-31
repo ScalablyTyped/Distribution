@@ -4,42 +4,40 @@ import typings.victory.anon.After
 import typings.victory.anon.Before
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimatePropTypeInterface extends StObject {
   
   /**
     * Animation duration
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * The easing prop specifies an easing function name to use for tweening.
     * @default "quadInOut"
     */
-  var easing: js.UndefOr[AnimationEasing] = js.native
+  var easing: js.UndefOr[AnimationEasing] = js.undefined
   
   /**
     * Animation end callback
     */
-  var onEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  var onEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Animation enter transition configuration
     */
-  var onEnter: js.UndefOr[After] = js.native
+  var onEnter: js.UndefOr[After] = js.undefined
   
   /**
     * Animation exit transition configuration
     */
-  var onExit: js.UndefOr[Before] = js.native
+  var onExit: js.UndefOr[Before] = js.undefined
   
   /**
     * Animation load transition configuration
     */
-  var onLoad: js.UndefOr[After] = js.native
+  var onLoad: js.UndefOr[After] = js.undefined
 }
 object AnimatePropTypeInterface {
   

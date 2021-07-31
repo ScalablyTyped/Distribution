@@ -4,7 +4,6 @@ import typings.std.Record
 import typings.yup.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -36,9 +35,9 @@ object SchemaFieldDescription {
   }
   
   @scala.inline
-  def SchemaFieldRefDescription(key: String, `type`: typings.yup.yupStrings.ref): typings.yup.mod.SchemaFieldRefDescription = {
+  def SchemaFieldRefDescription(key: String): typings.yup.mod.SchemaFieldRefDescription = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ref")
     __obj.asInstanceOf[typings.yup.mod.SchemaFieldRefDescription]
   }
 }

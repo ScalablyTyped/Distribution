@@ -3,7 +3,6 @@ package typings.signalsJs
 import typings.signalsJs.prioritySignalMod.PrioritySignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deluxeSignalMod {
@@ -11,7 +10,6 @@ object deluxeSignalMod {
   @JSImport("signals.js/lib/org/osflash/signals/DeluxeSignal", "DeluxeSignal")
   @js.native
   class DeluxeSignal protected () extends PrioritySignal {
-    def this(target: js.UndefOr[scala.Nothing], valueClasses: js.Any*) = this()
     /**
       * Creates a DeluxeSignal instance to dispatch events on behalf of a target object.
       * @param    target The object the signal is dispatching events on behalf of.
@@ -25,6 +23,7 @@ object deluxeSignalMod {
       * but this constructor has logic to support super(valueClasses).
       */
     def this(target: js.Object, valueClasses: js.Any*) = this()
+    def this(target: Unit, valueClasses: js.Any*) = this()
     
     var _target: js.Object = js.native
     

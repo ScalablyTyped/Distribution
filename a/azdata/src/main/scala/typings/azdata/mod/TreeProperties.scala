@@ -2,13 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreeProperties extends ComponentProperties {
+trait TreeProperties
+  extends StObject
+     with ComponentProperties {
   
-  var withCheckbox: js.UndefOr[Boolean] = js.native
+  var withCheckbox: js.UndefOr[Boolean] = js.undefined
 }
 object TreeProperties {
   

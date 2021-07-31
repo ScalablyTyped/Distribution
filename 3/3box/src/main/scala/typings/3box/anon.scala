@@ -2,15 +2,13 @@ package typings.`3box`
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: String = js.native
+    var address: String
   }
   object Address {
     
@@ -28,16 +26,15 @@ object anon {
     }
   }
   
-  @js.native
   trait AddressServer extends StObject {
     
-    var addressServer: js.UndefOr[String] = js.native
+    var addressServer: js.UndefOr[String] = js.undefined
     
-    var consentCallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var consentCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var ipfs: js.UndefOr[js.Any] = js.native
+    var ipfs: js.UndefOr[js.Any] = js.undefined
     
-    var pinningNode: js.UndefOr[String] = js.native
+    var pinningNode: js.UndefOr[String] = js.undefined
   }
   object AddressServer {
     
@@ -76,10 +73,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Audience extends StObject {
     
-    var audience: js.UndefOr[String] = js.native
+    var audience: js.UndefOr[String] = js.undefined
   }
   object Audience {
     
@@ -100,20 +96,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Blocklist extends StObject {
     
-    var addressServer: js.UndefOr[String] = js.native
+    var addressServer: js.UndefOr[String] = js.undefined
     
-    var blocklist: js.UndefOr[js.Function1[/* address */ String, Boolean]] = js.native
+    var blocklist: js.UndefOr[js.Function1[/* address */ String, Boolean]] = js.undefined
     
-    var ipfs: js.UndefOr[js.Any] = js.native
+    var ipfs: js.UndefOr[js.Any] = js.undefined
     
-    var metadata: js.UndefOr[String] = js.native
+    var metadata: js.UndefOr[String] = js.undefined
     
-    var profileServer: js.UndefOr[String] = js.native
+    var profileServer: js.UndefOr[String] = js.undefined
     
-    var useCacheService: js.UndefOr[Boolean] = js.native
+    var useCacheService: js.UndefOr[Boolean] = js.undefined
   }
   object Blocklist {
     
@@ -164,14 +159,13 @@ object anon {
     }
   }
   
-  @js.native
   trait BlocklistMetadata extends StObject {
     
-    var blocklist: js.UndefOr[js.Any] = js.native
+    var blocklist: js.UndefOr[js.Any] = js.undefined
     
-    var metadata: js.UndefOr[String] = js.native
+    var metadata: js.UndefOr[String] = js.undefined
     
-    var profileServer: js.UndefOr[String] = js.native
+    var profileServer: js.UndefOr[String] = js.undefined
   }
   object BlocklistMetadata {
     
@@ -204,12 +198,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ConsentCallback extends StObject {
     
-    var consentCallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var consentCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSyncDone: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSyncDone: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ConsentCallback {
     
@@ -236,18 +229,17 @@ object anon {
     }
   }
   
-  @js.native
   trait FirstModerator extends StObject {
     
-    var firstModerator: js.UndefOr[String] = js.native
+    var firstModerator: js.UndefOr[String] = js.undefined
     
-    var ghost: js.UndefOr[Boolean] = js.native
+    var ghost: js.UndefOr[Boolean] = js.undefined
     
-    var ghostBacklogLimit: js.UndefOr[Double] = js.native
+    var ghostBacklogLimit: js.UndefOr[Double] = js.undefined
     
-    var members: js.UndefOr[Boolean] = js.native
+    var members: js.UndefOr[Boolean] = js.undefined
     
-    var noAutoSub: js.UndefOr[Boolean] = js.native
+    var noAutoSub: js.UndefOr[Boolean] = js.undefined
   }
   object FirstModerator {
     
@@ -292,10 +284,9 @@ object anon {
     }
   }
   
-  @js.native
   trait GraphqlServer extends StObject {
     
-    var graphqlServer: js.UndefOr[String] = js.native
+    var graphqlServer: js.UndefOr[String] = js.undefined
   }
   object GraphqlServer {
     
@@ -316,14 +307,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Members extends StObject {
     
-    var firstModerator: js.UndefOr[String] = js.native
+    var firstModerator: js.UndefOr[String] = js.undefined
     
-    var members: js.UndefOr[String] = js.native
+    var members: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Members {
     
@@ -356,10 +346,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Metadata extends StObject {
     
-    var metadata: js.UndefOr[Boolean] = js.native
+    var metadata: js.UndefOr[Boolean] = js.undefined
   }
   object Metadata {
     
@@ -380,10 +369,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NoAutoSub extends StObject {
     
-    var noAutoSub: js.UndefOr[Boolean] = js.native
+    var noAutoSub: js.UndefOr[Boolean] = js.undefined
   }
   object NoAutoSub {
     
@@ -404,10 +392,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ProfileServer extends StObject {
     
-    var profileServer: js.UndefOr[String] = js.native
+    var profileServer: js.UndefOr[String] = js.undefined
   }
   object ProfileServer {
     
@@ -428,10 +415,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SignJWT extends StObject {
     
-    def signJWT(claim: String): String = js.native
+    def signJWT(claim: String): String
   }
   object SignJWT {
     

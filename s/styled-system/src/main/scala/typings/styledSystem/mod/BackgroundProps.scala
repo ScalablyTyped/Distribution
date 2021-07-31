@@ -2,12 +2,11 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
-  extends BackgroundImageProps[ThemeType]
+  extends StObject
+     with BackgroundImageProps[ThemeType]
      with BackgroundSizeProps[
       ThemeType, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLengthStyledSystem> */ js.Any
@@ -24,7 +23,7 @@ trait BackgroundProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
     */
-  var background: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var background: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BackgroundProps {
   
@@ -35,7 +34,7 @@ object BackgroundProps {
   }
   
   @scala.inline
-  implicit class BackgroundPropsMutableBuilder[Self <: BackgroundProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BackgroundProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BackgroundPropsMutableBuilder[Self <: BackgroundProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BackgroundProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBackground(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])

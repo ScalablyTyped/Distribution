@@ -2,13 +2,11 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Encapsulates the full scoping used to reference a job.
   */
-@js.native
 trait SchemaJobReference extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaJobReference extends StObject {
     * hyphens (-). The maximum length is 100 characters.If not specified by the
     * caller, the job ID will be provided by the server.
     */
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The ID of the Google Cloud Platform project that the job
     * belongs to.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object SchemaJobReference {
   

@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.core.HorizontalAlign
 import typings.openui5.sap.ui.core.TitleLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlockLayoutCell extends Control {
+trait BlockLayoutCell
+  extends StObject
+     with Control {
   
   /**
     * Adds some content to the aggregation <code>content</code>.

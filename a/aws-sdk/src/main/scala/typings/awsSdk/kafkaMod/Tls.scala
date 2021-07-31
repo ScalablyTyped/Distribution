@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tls extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Tls extends StObject {
     List of ACM Certificate Authority ARNs.
     
     */
-  var CertificateAuthorityArnList: js.UndefOr[listOfString] = js.native
+  var CertificateAuthorityArnList: js.UndefOr[listOfString] = js.undefined
 }
 object Tls {
   

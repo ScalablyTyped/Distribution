@@ -2,21 +2,19 @@ package typings.kafkaNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryOptions extends StObject {
   
-  var factor: js.UndefOr[Double] = js.native
+  var factor: js.UndefOr[Double] = js.undefined
   
-  var maxTimeout: js.UndefOr[Double] = js.native
+  var maxTimeout: js.UndefOr[Double] = js.undefined
   
-  var minTimeout: js.UndefOr[Double] = js.native
+  var minTimeout: js.UndefOr[Double] = js.undefined
   
-  var randomize: js.UndefOr[Boolean] = js.native
+  var randomize: js.UndefOr[Boolean] = js.undefined
   
-  var retries: js.UndefOr[Double] = js.native
+  var retries: js.UndefOr[Double] = js.undefined
 }
 object RetryOptions {
   

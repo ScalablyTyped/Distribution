@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,9 +38,8 @@ object AnnotationFlow {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AnnotationFlow.create")
-  @js.native
-  def create(model: IModel): AnnotationFlow = js.native
+  @scala.inline
+  def create(model: IModel): AnnotationFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AnnotationFlow]
   
   /**
     * Creates and returns a new AnnotationFlow instance in the SDK and on the server.
@@ -49,9 +47,8 @@ object AnnotationFlow {
     * of the parent MicroflowBase element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AnnotationFlow.createIn")
-  @js.native
-  def createIn(container: MicroflowBase): AnnotationFlow = js.native
+  @scala.inline
+  def createIn(container: MicroflowBase): AnnotationFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AnnotationFlow]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AnnotationFlow.structureTypeName")

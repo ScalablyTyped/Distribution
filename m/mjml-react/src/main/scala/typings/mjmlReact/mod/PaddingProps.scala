@@ -2,21 +2,19 @@ package typings.mjmlReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaddingProps extends StObject {
   
-  var padding: js.UndefOr[String | Double] = js.native
+  var padding: js.UndefOr[String | Double] = js.undefined
   
-  var paddingBottom: js.UndefOr[String | Double] = js.native
+  var paddingBottom: js.UndefOr[String | Double] = js.undefined
   
-  var paddingLeft: js.UndefOr[String | Double] = js.native
+  var paddingLeft: js.UndefOr[String | Double] = js.undefined
   
-  var paddingRight: js.UndefOr[String | Double] = js.native
+  var paddingRight: js.UndefOr[String | Double] = js.undefined
   
-  var paddingTop: js.UndefOr[String | Double] = js.native
+  var paddingTop: js.UndefOr[String | Double] = js.undefined
 }
 object PaddingProps {
   

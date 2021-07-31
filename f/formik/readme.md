@@ -4,19 +4,19 @@
 Typings are for version 2.2.5
 
 ## Library description:
-Forms in React, without tears
+Build forms in React, without the tears
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | formik |
-| Keywords           | formik, react, react-dom, form, hooks, validation, forms, higher order component, hoc |
-| # releases         | 87 |
-| # dependents       | 677 |
-| # downloads        | 45789636 |
+| Keywords           | formik, form, forms, react, react-dom, hooks, react hooks, validation, render props, validation, higher order component, hoc |
+| # releases         | 85 |
+| # dependents       | 707 |
+| # downloads        | 48969016 |
 | # stars            | 21 |
 
 ## Links
-- [Homepage](https://github.com/formium/formik#readme)
+- [Homepage](https://formik.org)
 - [Bugs](https://github.com/formium/formik/issues)
 - [Repository](https://github.com/formium/formik)
 - [Npm](https://www.npmjs.com/package/formik)

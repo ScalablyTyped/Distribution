@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudresourcemanager.gapi.client.cloudreso
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveFolderRequest extends StObject {
   
   /** Required. The resource name of the Folder or Organization to reparent the folder under. Must be of the form `folders/{folder_id}` or `organizations/{org_id}`. */
-  var destinationParent: js.UndefOr[String] = js.native
+  var destinationParent: js.UndefOr[String] = js.undefined
 }
 object MoveFolderRequest {
   

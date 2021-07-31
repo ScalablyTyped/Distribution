@@ -2,7 +2,6 @@ package typings.webcola
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rbtreeMod {
@@ -41,17 +40,18 @@ object rbtreeMod {
   /* static members */
   object RBTree {
     
-    @JSImport("webcola/dist/src/rbtree", "RBTree.double_rotate")
+    @JSImport("webcola/dist/src/rbtree", "RBTree")
     @js.native
-    def double_rotate(root: js.Any, dir: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("webcola/dist/src/rbtree", "RBTree.is_red")
-    @js.native
-    def is_red(node: js.Any): js.Any = js.native
+    @scala.inline
+    def double_rotate(root: js.Any, dir: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("double_rotate")(root.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("webcola/dist/src/rbtree", "RBTree.single_rotate")
-    @js.native
-    def single_rotate(root: js.Any, dir: js.Any): js.Any = js.native
+    @scala.inline
+    def is_red(node: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("is_red")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def single_rotate(root: js.Any, dir: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("single_rotate")(root.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("webcola/dist/src/rbtree", "TreeBase")

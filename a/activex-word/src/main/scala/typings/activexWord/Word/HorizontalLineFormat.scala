@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HorizontalLineFormat extends StObject {
   
-  var Alignment: WdHorizontalLineAlignment = js.native
+  var Alignment: WdHorizontalLineAlignment
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var NoShade: Boolean = js.native
+  var NoShade: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PercentWidth: Double = js.native
+  var PercentWidth: Double
   
-  var WidthType: WdHorizontalLineWidthType = js.native
+  var WidthType: WdHorizontalLineWidthType
   
   @JSName("Word.HorizontalLineFormat_typekey")
-  var WordDotHorizontalLineFormat_typekey: HorizontalLineFormat = js.native
+  var WordDotHorizontalLineFormat_typekey: HorizontalLineFormat
 }
 object HorizontalLineFormat {
   

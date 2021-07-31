@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReferencedSymbol extends StObject {
   
-  var definition: ReferencedSymbolDefinitionInfo = js.native
+  var definition: ReferencedSymbolDefinitionInfo
   
-  var references: js.Array[ReferenceEntry] = js.native
+  var references: js.Array[ReferenceEntry]
 }
 object ReferencedSymbol {
   

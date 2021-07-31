@@ -2,29 +2,27 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for a Lookup value.
   */
-@js.native
 trait LookupValue extends StObject {
   
   /**
     * Type of the entity.
     */
-  var entityType: String = js.native
+  var entityType: String
   
   /**
     * The identifier.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object LookupValue {
   

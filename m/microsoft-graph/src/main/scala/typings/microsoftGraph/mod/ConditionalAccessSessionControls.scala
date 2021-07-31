@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalAccessSessionControls extends StObject {
   
   /**
     * Session control to enforce application restrictions. Only Exchange Online and Sharepoint Online support this session
     * control.
     */
-  var applicationEnforcedRestrictions: js.UndefOr[NullableOption[ApplicationEnforcedRestrictionsSessionControl]] = js.native
+  var applicationEnforcedRestrictions: js.UndefOr[NullableOption[ApplicationEnforcedRestrictionsSessionControl]] = js.undefined
   
   // Session control to apply cloud app security.
-  var cloudAppSecurity: js.UndefOr[NullableOption[CloudAppSecuritySessionControl]] = js.native
+  var cloudAppSecurity: js.UndefOr[NullableOption[CloudAppSecuritySessionControl]] = js.undefined
   
   /**
     * Session control to define whether to persist cookies or not. All apps should be selected for this session control to
     * work correctly.
     */
-  var persistentBrowser: js.UndefOr[NullableOption[PersistentBrowserSessionControl]] = js.native
+  var persistentBrowser: js.UndefOr[NullableOption[PersistentBrowserSessionControl]] = js.undefined
   
   // Session control to enforce signin frequency.
-  var signInFrequency: js.UndefOr[NullableOption[SignInFrequencySessionControl]] = js.native
+  var signInFrequency: js.UndefOr[NullableOption[SignInFrequencySessionControl]] = js.undefined
 }
 object ConditionalAccessSessionControls {
   

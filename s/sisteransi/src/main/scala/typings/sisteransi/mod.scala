@@ -2,7 +2,6 @@ package typings.sisteransi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,26 +16,24 @@ object mod {
   
   object cursor {
     
-    @JSImport("sisteransi", "cursor.backward")
+    @JSImport("sisteransi", "cursor")
     @js.native
-    def backward(): String = js.native
-    @JSImport("sisteransi", "cursor.backward")
-    @js.native
-    def backward(count: Double): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("sisteransi", "cursor.down")
-    @js.native
-    def down(): String = js.native
-    @JSImport("sisteransi", "cursor.down")
-    @js.native
-    def down(count: Double): String = js.native
+    @scala.inline
+    def backward(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("backward")().asInstanceOf[String]
+    @scala.inline
+    def backward(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("backward")(count.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("sisteransi", "cursor.forward")
-    @js.native
-    def forward(): String = js.native
-    @JSImport("sisteransi", "cursor.forward")
-    @js.native
-    def forward(count: Double): String = js.native
+    @scala.inline
+    def down(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[String]
+    @scala.inline
+    def down(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")(count.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def forward(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")().asInstanceOf[String]
+    @scala.inline
+    def forward(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")(count.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("sisteransi", "cursor.hide")
     @js.native
@@ -46,23 +43,18 @@ object mod {
     @js.native
     val left: String = js.native
     
-    @JSImport("sisteransi", "cursor.move")
-    @js.native
-    def move(x: Double, y: Double): String = js.native
+    @scala.inline
+    def move(x: Double, y: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("sisteransi", "cursor.nextLine")
-    @js.native
-    def nextLine(): String = js.native
-    @JSImport("sisteransi", "cursor.nextLine")
-    @js.native
-    def nextLine(count: Double): String = js.native
+    @scala.inline
+    def nextLine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nextLine")().asInstanceOf[String]
+    @scala.inline
+    def nextLine(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nextLine")(count.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("sisteransi", "cursor.prevLine")
-    @js.native
-    def prevLine(): String = js.native
-    @JSImport("sisteransi", "cursor.prevLine")
-    @js.native
-    def prevLine(count: Double): String = js.native
+    @scala.inline
+    def prevLine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prevLine")().asInstanceOf[String]
+    @scala.inline
+    def prevLine(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prevLine")(count.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("sisteransi", "cursor.restore")
     @js.native
@@ -76,29 +68,27 @@ object mod {
     @js.native
     val show: String = js.native
     
-    @JSImport("sisteransi", "cursor.to")
-    @js.native
-    def to(x: Double): String = js.native
-    @JSImport("sisteransi", "cursor.to")
-    @js.native
-    def to(x: Double, y: Double): String = js.native
+    @scala.inline
+    def to(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def to(x: Double, y: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("to")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("sisteransi", "cursor.up")
-    @js.native
-    def up(): String = js.native
-    @JSImport("sisteransi", "cursor.up")
-    @js.native
-    def up(count: Double): String = js.native
+    @scala.inline
+    def up(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")().asInstanceOf[String]
+    @scala.inline
+    def up(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object erase {
     
-    @JSImport("sisteransi", "erase.down")
+    @JSImport("sisteransi", "erase")
     @js.native
-    def down(): String = js.native
-    @JSImport("sisteransi", "erase.down")
-    @js.native
-    def down(count: Double): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def down(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[String]
+    @scala.inline
+    def down(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")(count.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("sisteransi", "erase.line")
     @js.native
@@ -112,36 +102,33 @@ object mod {
     @js.native
     val lineStart: String = js.native
     
-    @JSImport("sisteransi", "erase.lines")
-    @js.native
-    def lines(count: Double): String = js.native
+    @scala.inline
+    def lines(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lines")(count.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("sisteransi", "erase.screen")
     @js.native
     val screen: String = js.native
     
-    @JSImport("sisteransi", "erase.up")
-    @js.native
-    def up(): String = js.native
-    @JSImport("sisteransi", "erase.up")
-    @js.native
-    def up(count: Double): String = js.native
+    @scala.inline
+    def up(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")().asInstanceOf[String]
+    @scala.inline
+    def up(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object scroll {
     
-    @JSImport("sisteransi", "scroll.down")
+    @JSImport("sisteransi", "scroll")
     @js.native
-    def down(): String = js.native
-    @JSImport("sisteransi", "scroll.down")
-    @js.native
-    def down(count: Double): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("sisteransi", "scroll.up")
-    @js.native
-    def up(): String = js.native
-    @JSImport("sisteransi", "scroll.up")
-    @js.native
-    def up(count: Double): String = js.native
+    @scala.inline
+    def down(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[String]
+    @scala.inline
+    def down(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")(count.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def up(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")().asInstanceOf[String]
+    @scala.inline
+    def up(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

@@ -2,31 +2,29 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSignalingChannelInput extends StObject {
   
   /**
     * A name for the signaling channel that you are creating. It must be unique for each AWS account and AWS Region.
     */
-  var ChannelName: typings.awsSdk.kinesisvideoMod.ChannelName = js.native
+  var ChannelName: typings.awsSdk.kinesisvideoMod.ChannelName
   
   /**
     * A type of the signaling channel that you are creating. Currently, SINGLE_MASTER is the only supported channel type. 
     */
-  var ChannelType: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelType] = js.native
+  var ChannelType: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelType] = js.undefined
   
   /**
     * A structure containing the configuration for the SINGLE_MASTER channel type. 
     */
-  var SingleMasterConfiguration: js.UndefOr[typings.awsSdk.kinesisvideoMod.SingleMasterConfiguration] = js.native
+  var SingleMasterConfiguration: js.UndefOr[typings.awsSdk.kinesisvideoMod.SingleMasterConfiguration] = js.undefined
   
   /**
     * A set of tags (key-value pairs) that you want to associate with this channel.
     */
-  var Tags: js.UndefOr[TagOnCreateList] = js.native
+  var Tags: js.UndefOr[TagOnCreateList] = js.undefined
 }
 object CreateSignalingChannelInput {
   

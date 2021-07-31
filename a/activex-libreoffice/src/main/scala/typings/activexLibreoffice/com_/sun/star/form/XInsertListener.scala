@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * service, as well as the {@link com.sun.star.sdbc.XRowSetListener} and {@link com.sun.star.sdb.XRowSetApproveListener} interfaces.
   * @deprecated Deprecated
   */
-@js.native
-trait XInsertListener extends XEventListener {
+trait XInsertListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked after a database form has inserted a record to a data source. */
-  def inserted(aEvent: EventObject): Unit = js.native
+  def inserted(aEvent: EventObject): Unit
   
   /** is invoked when a database form starts inserting a record. */
-  def inserting(aEvent: EventObject): Unit = js.native
+  def inserting(aEvent: EventObject): Unit
 }
 object XInsertListener {
   

@@ -13,25 +13,28 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("builder-util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("builder-util", "Arch")
   @js.native
   object Arch extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.builderUtil.archMod.Arch with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.builderUtil.archMod.Arch & Double] = js.native
     
-    /* 3 */ val arm64: typings.builderUtil.archMod.Arch.arm64 with Double = js.native
+    /* 3 */ val arm64: typings.builderUtil.archMod.Arch.arm64 & Double = js.native
     
-    /* 2 */ val armv7l: typings.builderUtil.archMod.Arch.armv7l with Double = js.native
+    /* 2 */ val armv7l: typings.builderUtil.archMod.Arch.armv7l & Double = js.native
     
-    /* 0 */ val ia32: typings.builderUtil.archMod.Arch.ia32 with Double = js.native
+    /* 0 */ val ia32: typings.builderUtil.archMod.Arch.ia32 & Double = js.native
     
-    /* 1 */ val x64: typings.builderUtil.archMod.Arch.x64 with Double = js.native
+    /* 1 */ val x64: typings.builderUtil.archMod.Arch.x64 & Double = js.native
   }
   
   @JSImport("builder-util", "AsyncTaskManager")
@@ -50,20 +53,36 @@ object mod {
   
   @JSImport("builder-util", "ExecError")
   @js.native
-  class ExecError protected () extends Error {
+  class ExecError protected ()
+    extends StObject
+       with Error {
     def this(command: String, exitCode: Double, out: String, errorOut: String) = this()
     def this(command: String, exitCode: Double, out: String, errorOut: String, code: String) = this()
     
     var alreadyLogged: Boolean = js.native
     
     val exitCode: Double = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("builder-util", "InvalidConfigurationError")
   @js.native
-  class InvalidConfigurationError protected () extends Error {
+  class InvalidConfigurationError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     def this(message: String, code: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("builder-util", "TmpDir")
@@ -73,30 +92,23 @@ object mod {
     def this(debugName: String) = this()
   }
   
-  @JSImport("builder-util", "addValue")
-  @js.native
-  def addValue[K, T](map: Map[K, js.Array[T]], key: K, value: T): Unit = js.native
+  @scala.inline
+  def addValue[K, T](map: Map[K, js.Array[T]], key: K, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addValue")(map.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("builder-util", "archFromString")
-  @js.native
-  def archFromString(name: String): Arch = js.native
+  @scala.inline
+  def archFromString(name: String): Arch = ^.asInstanceOf[js.Dynamic].applyDynamic("archFromString")(name.asInstanceOf[js.Any]).asInstanceOf[Arch]
   
-  @JSImport("builder-util", "asArray")
-  @js.native
-  def asArray[T](): js.Array[T] = js.native
-  @JSImport("builder-util", "asArray")
-  @js.native
-  def asArray[T](v: T): js.Array[T] = js.native
-  @JSImport("builder-util", "asArray")
-  @js.native
-  def asArray[T](v: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def asArray[T](): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")().asInstanceOf[js.Array[T]]
+  @scala.inline
+  def asArray[T](v: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def asArray[T](v: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("builder-util", "copyFile")
-  @js.native
-  def copyFile(src: String, dest: String): js.Promise[_] = js.native
-  @JSImport("builder-util", "copyFile")
-  @js.native
-  def copyFile(src: String, dest: String, isEnsureDir: Boolean): js.Promise[_] = js.native
+  @scala.inline
+  def copyFile(src: String, dest: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def copyFile(src: String, dest: String, isEnsureDir: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], isEnsureDir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   @JSImport("builder-util", "debug")
   @js.native
@@ -106,269 +118,168 @@ object mod {
   @js.native
   val debug7z: Debugger = js.native
   
-  @JSImport("builder-util", "deepAssign")
-  @js.native
-  def deepAssign[T](target: T, objects: js.Any*): T = js.native
+  @scala.inline
+  def deepAssign[T](target: T, objects: js.Any*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("deepAssign")(target.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("builder-util", "doSpawn")
-  @js.native
-  def doSpawn(command: String, args: js.Array[String]): ChildProcess = js.native
-  @JSImport("builder-util", "doSpawn")
-  @js.native
-  def doSpawn(
-    command: String,
-    args: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
-    extraOptions: ExtraSpawnOptions
-  ): ChildProcess = js.native
-  @JSImport("builder-util", "doSpawn")
-  @js.native
-  def doSpawn(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = js.native
-  @JSImport("builder-util", "doSpawn")
-  @js.native
-  def doSpawn(command: String, args: js.Array[String], options: SpawnOptions, extraOptions: ExtraSpawnOptions): ChildProcess = js.native
+  @scala.inline
+  def doSpawn(command: String, args: js.Array[String]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("doSpawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  @scala.inline
+  def doSpawn(command: String, args: js.Array[String], options: Unit, extraOptions: ExtraSpawnOptions): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("doSpawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  @scala.inline
+  def doSpawn(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("doSpawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  @scala.inline
+  def doSpawn(command: String, args: js.Array[String], options: SpawnOptions, extraOptions: ExtraSpawnOptions): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("doSpawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
-  @JSImport("builder-util", "exec")
-  @js.native
-  def exec(file: String): js.Promise[String] = js.native
-  @JSImport("builder-util", "exec")
-  @js.native
-  def exec(
-    file: String,
-    args: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    isLogOutIfDebug: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("builder-util", "exec")
-  @js.native
-  def exec(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptions): js.Promise[String] = js.native
-  @JSImport("builder-util", "exec")
-  @js.native
-  def exec(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptions, isLogOutIfDebug: Boolean): js.Promise[String] = js.native
-  @JSImport("builder-util", "exec")
-  @js.native
-  def exec(file: String, args: js.Array[String]): js.Promise[String] = js.native
-  @JSImport("builder-util", "exec")
-  @js.native
-  def exec(file: String, args: js.Array[String], options: js.UndefOr[scala.Nothing], isLogOutIfDebug: Boolean): js.Promise[String] = js.native
-  @JSImport("builder-util", "exec")
-  @js.native
-  def exec(file: String, args: js.Array[String], options: ExecFileOptions): js.Promise[String] = js.native
-  @JSImport("builder-util", "exec")
-  @js.native
-  def exec(file: String, args: js.Array[String], options: ExecFileOptions, isLogOutIfDebug: Boolean): js.Promise[String] = js.native
-  @JSImport("builder-util", "exec")
-  @js.native
-  def exec(file: String, args: Null, options: js.UndefOr[scala.Nothing], isLogOutIfDebug: Boolean): js.Promise[String] = js.native
-  @JSImport("builder-util", "exec")
-  @js.native
-  def exec(file: String, args: Null, options: ExecFileOptions): js.Promise[String] = js.native
-  @JSImport("builder-util", "exec")
-  @js.native
-  def exec(file: String, args: Null, options: ExecFileOptions, isLogOutIfDebug: Boolean): js.Promise[String] = js.native
+  @scala.inline
+  def exec(file: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def exec(file: String, args: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def exec(file: String, args: js.Array[String], options: Unit, isLogOutIfDebug: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isLogOutIfDebug.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def exec(file: String, args: js.Array[String], options: ExecFileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def exec(file: String, args: js.Array[String], options: ExecFileOptions, isLogOutIfDebug: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isLogOutIfDebug.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def exec(file: String, args: Null, options: Unit, isLogOutIfDebug: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isLogOutIfDebug.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def exec(file: String, args: Null, options: ExecFileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def exec(file: String, args: Null, options: ExecFileOptions, isLogOutIfDebug: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isLogOutIfDebug.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def exec(file: String, args: Unit, options: Unit, isLogOutIfDebug: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isLogOutIfDebug.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def exec(file: String, args: Unit, options: ExecFileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def exec(file: String, args: Unit, options: ExecFileOptions, isLogOutIfDebug: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isLogOutIfDebug.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("builder-util", "executeAppBuilder")
-  @js.native
-  def executeAppBuilder(args: js.Array[String]): js.Promise[String] = js.native
-  @JSImport("builder-util", "executeAppBuilder")
-  @js.native
-  def executeAppBuilder(
-    args: js.Array[String],
-    childProcessConsumer: js.UndefOr[scala.Nothing],
-    extraOptions: js.UndefOr[scala.Nothing],
-    maxRetries: Double
-  ): js.Promise[String] = js.native
-  @JSImport("builder-util", "executeAppBuilder")
-  @js.native
-  def executeAppBuilder(
-    args: js.Array[String],
-    childProcessConsumer: js.UndefOr[scala.Nothing],
-    extraOptions: SpawnOptions
-  ): js.Promise[String] = js.native
-  @JSImport("builder-util", "executeAppBuilder")
-  @js.native
-  def executeAppBuilder(
-    args: js.Array[String],
-    childProcessConsumer: js.UndefOr[scala.Nothing],
-    extraOptions: SpawnOptions,
-    maxRetries: Double
-  ): js.Promise[String] = js.native
-  @JSImport("builder-util", "executeAppBuilder")
-  @js.native
-  def executeAppBuilder(args: js.Array[String], childProcessConsumer: js.Function1[/* childProcess */ ChildProcess, Unit]): js.Promise[String] = js.native
-  @JSImport("builder-util", "executeAppBuilder")
-  @js.native
+  @scala.inline
+  def executeAppBuilder(args: js.Array[String]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilder")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def executeAppBuilder(args: js.Array[String], childProcessConsumer: js.Function1[/* childProcess */ ChildProcess, Unit]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilder")(args.asInstanceOf[js.Any], childProcessConsumer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def executeAppBuilder(
     args: js.Array[String],
     childProcessConsumer: js.Function1[/* childProcess */ ChildProcess, Unit],
-    extraOptions: js.UndefOr[scala.Nothing],
+    extraOptions: Unit,
     maxRetries: Double
-  ): js.Promise[String] = js.native
-  @JSImport("builder-util", "executeAppBuilder")
-  @js.native
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilder")(args.asInstanceOf[js.Any], childProcessConsumer.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any], maxRetries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def executeAppBuilder(
     args: js.Array[String],
     childProcessConsumer: js.Function1[/* childProcess */ ChildProcess, Unit],
     extraOptions: SpawnOptions
-  ): js.Promise[String] = js.native
-  @JSImport("builder-util", "executeAppBuilder")
-  @js.native
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilder")(args.asInstanceOf[js.Any], childProcessConsumer.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def executeAppBuilder(
     args: js.Array[String],
     childProcessConsumer: js.Function1[/* childProcess */ ChildProcess, Unit],
     extraOptions: SpawnOptions,
     maxRetries: Double
-  ): js.Promise[String] = js.native
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilder")(args.asInstanceOf[js.Any], childProcessConsumer.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any], maxRetries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def executeAppBuilder(args: js.Array[String], childProcessConsumer: Unit, extraOptions: Unit, maxRetries: Double): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilder")(args.asInstanceOf[js.Any], childProcessConsumer.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any], maxRetries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def executeAppBuilder(args: js.Array[String], childProcessConsumer: Unit, extraOptions: SpawnOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilder")(args.asInstanceOf[js.Any], childProcessConsumer.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def executeAppBuilder(args: js.Array[String], childProcessConsumer: Unit, extraOptions: SpawnOptions, maxRetries: Double): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilder")(args.asInstanceOf[js.Any], childProcessConsumer.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any], maxRetries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("builder-util", "getArchCliNames")
-  @js.native
-  def getArchCliNames(): js.Array[String] = js.native
+  @scala.inline
+  def getArchCliNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchCliNames")().asInstanceOf[js.Array[String]]
   
-  @JSImport("builder-util", "getArchSuffix")
-  @js.native
-  def getArchSuffix(arch: Arch): String = js.native
+  @scala.inline
+  def getArchSuffix(arch: Arch): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchSuffix")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("builder-util", "getPlatformIconFileName")
-  @js.native
-  def getPlatformIconFileName(value: js.UndefOr[scala.Nothing], isMac: Boolean): js.UndefOr[String | Null] = js.native
-  @JSImport("builder-util", "getPlatformIconFileName")
-  @js.native
-  def getPlatformIconFileName(value: String, isMac: Boolean): js.UndefOr[String | Null] = js.native
-  @JSImport("builder-util", "getPlatformIconFileName")
-  @js.native
-  def getPlatformIconFileName(value: Null, isMac: Boolean): js.UndefOr[String | Null] = js.native
+  @scala.inline
+  def getPlatformIconFileName(value: String, isMac: Boolean): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlatformIconFileName")(value.asInstanceOf[js.Any], isMac.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  @scala.inline
+  def getPlatformIconFileName(value: Null, isMac: Boolean): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlatformIconFileName")(value.asInstanceOf[js.Any], isMac.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  @scala.inline
+  def getPlatformIconFileName(value: Unit, isMac: Boolean): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlatformIconFileName")(value.asInstanceOf[js.Any], isMac.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
   
-  @JSImport("builder-util", "isEmptyOrSpaces")
-  @js.native
-  def isEmptyOrSpaces(): Boolean = js.native
-  @JSImport("builder-util", "isEmptyOrSpaces")
-  @js.native
-  def isEmptyOrSpaces(s: String): Boolean = js.native
+  @scala.inline
+  def isEmptyOrSpaces(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyOrSpaces")().asInstanceOf[Boolean]
+  @scala.inline
+  def isEmptyOrSpaces(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyOrSpaces")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("builder-util", "isEnvTrue")
-  @js.native
-  def isEnvTrue(): Boolean = js.native
-  @JSImport("builder-util", "isEnvTrue")
-  @js.native
-  def isEnvTrue(value: String): Boolean = js.native
+  @scala.inline
+  def isEnvTrue(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnvTrue")().asInstanceOf[Boolean]
+  @scala.inline
+  def isEnvTrue(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnvTrue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("builder-util", "isPullRequest")
-  @js.native
-  def isPullRequest(): js.UndefOr[Boolean | _empty] = js.native
+  @scala.inline
+  def isPullRequest(): js.UndefOr[Boolean | _empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("isPullRequest")().asInstanceOf[js.UndefOr[Boolean | _empty]]
   
-  @JSImport("builder-util", "isTokenCharValid")
-  @js.native
-  def isTokenCharValid(token: String): Boolean = js.native
+  @scala.inline
+  def isTokenCharValid(token: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenCharValid")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("builder-util", "log")
   @js.native
   val log: Logger = js.native
   
-  @JSImport("builder-util", "removePassword")
-  @js.native
-  def removePassword(input: String): String = js.native
+  @scala.inline
+  def removePassword(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removePassword")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("builder-util", "replaceDefault")
-  @js.native
-  def replaceDefault(inList: js.UndefOr[scala.Nothing], defaultList: js.Array[String]): js.Array[String] = js.native
-  @JSImport("builder-util", "replaceDefault")
-  @js.native
-  def replaceDefault(inList: js.Array[String], defaultList: js.Array[String]): js.Array[String] = js.native
-  @JSImport("builder-util", "replaceDefault")
-  @js.native
-  def replaceDefault(inList: Null, defaultList: js.Array[String]): js.Array[String] = js.native
+  @scala.inline
+  def replaceDefault(inList: js.Array[String], defaultList: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceDefault")(inList.asInstanceOf[js.Any], defaultList.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def replaceDefault(inList: Null, defaultList: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceDefault")(inList.asInstanceOf[js.Any], defaultList.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def replaceDefault(inList: Unit, defaultList: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceDefault")(inList.asInstanceOf[js.Any], defaultList.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("builder-util", "safeStringifyJson")
-  @js.native
-  def safeStringifyJson(data: js.Any): String = js.native
-  @JSImport("builder-util", "safeStringifyJson")
-  @js.native
-  def safeStringifyJson(data: js.Any, skippedNames: Set[String]): String = js.native
+  @scala.inline
+  def safeStringifyJson(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeStringifyJson")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def safeStringifyJson(data: js.Any, skippedNames: Set[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("safeStringifyJson")(data.asInstanceOf[js.Any], skippedNames.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("builder-util", "serializeToYaml")
-  @js.native
-  def serializeToYaml(`object`: js.Any): String = js.native
-  @JSImport("builder-util", "serializeToYaml")
-  @js.native
-  def serializeToYaml(`object`: js.Any, skipInvalid: js.UndefOr[scala.Nothing], noRefs: Boolean): String = js.native
-  @JSImport("builder-util", "serializeToYaml")
-  @js.native
-  def serializeToYaml(`object`: js.Any, skipInvalid: Boolean): String = js.native
-  @JSImport("builder-util", "serializeToYaml")
-  @js.native
-  def serializeToYaml(`object`: js.Any, skipInvalid: Boolean, noRefs: Boolean): String = js.native
+  @scala.inline
+  def serializeToYaml(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeToYaml")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def serializeToYaml(`object`: js.Any, skipInvalid: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeToYaml")(`object`.asInstanceOf[js.Any], skipInvalid.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def serializeToYaml(`object`: js.Any, skipInvalid: Boolean, noRefs: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeToYaml")(`object`.asInstanceOf[js.Any], skipInvalid.asInstanceOf[js.Any], noRefs.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def serializeToYaml(`object`: js.Any, skipInvalid: Unit, noRefs: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeToYaml")(`object`.asInstanceOf[js.Any], skipInvalid.asInstanceOf[js.Any], noRefs.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("builder-util", "spawn")
-  @js.native
-  def spawn(command: String): js.Promise[_] = js.native
-  @JSImport("builder-util", "spawn")
-  @js.native
-  def spawn(
-    command: String,
-    args: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    extraOptions: ExtraSpawnOptions
-  ): js.Promise[_] = js.native
-  @JSImport("builder-util", "spawn")
-  @js.native
-  def spawn(command: String, args: js.UndefOr[scala.Nothing], options: SpawnOptions): js.Promise[_] = js.native
-  @JSImport("builder-util", "spawn")
-  @js.native
-  def spawn(
-    command: String,
-    args: js.UndefOr[scala.Nothing],
-    options: SpawnOptions,
-    extraOptions: ExtraSpawnOptions
-  ): js.Promise[_] = js.native
-  @JSImport("builder-util", "spawn")
-  @js.native
-  def spawn(command: String, args: js.Array[String]): js.Promise[_] = js.native
-  @JSImport("builder-util", "spawn")
-  @js.native
-  def spawn(
-    command: String,
-    args: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
-    extraOptions: ExtraSpawnOptions
-  ): js.Promise[_] = js.native
-  @JSImport("builder-util", "spawn")
-  @js.native
-  def spawn(command: String, args: js.Array[String], options: SpawnOptions): js.Promise[_] = js.native
-  @JSImport("builder-util", "spawn")
-  @js.native
-  def spawn(command: String, args: js.Array[String], options: SpawnOptions, extraOptions: ExtraSpawnOptions): js.Promise[_] = js.native
-  @JSImport("builder-util", "spawn")
-  @js.native
-  def spawn(command: String, args: Null, options: js.UndefOr[scala.Nothing], extraOptions: ExtraSpawnOptions): js.Promise[_] = js.native
-  @JSImport("builder-util", "spawn")
-  @js.native
-  def spawn(command: String, args: Null, options: SpawnOptions): js.Promise[_] = js.native
-  @JSImport("builder-util", "spawn")
-  @js.native
-  def spawn(command: String, args: Null, options: SpawnOptions, extraOptions: ExtraSpawnOptions): js.Promise[_] = js.native
+  @scala.inline
+  def spawn(command: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def spawn(command: String, args: js.Array[String]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def spawn(command: String, args: js.Array[String], options: Unit, extraOptions: ExtraSpawnOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def spawn(command: String, args: js.Array[String], options: SpawnOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def spawn(command: String, args: js.Array[String], options: SpawnOptions, extraOptions: ExtraSpawnOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def spawn(command: String, args: Null, options: Unit, extraOptions: ExtraSpawnOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def spawn(command: String, args: Null, options: SpawnOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def spawn(command: String, args: Null, options: SpawnOptions, extraOptions: ExtraSpawnOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def spawn(command: String, args: Unit, options: Unit, extraOptions: ExtraSpawnOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def spawn(command: String, args: Unit, options: SpawnOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def spawn(command: String, args: Unit, options: SpawnOptions, extraOptions: ExtraSpawnOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("builder-util", "spawnAndWrite")
-  @js.native
-  def spawnAndWrite(command: String, args: js.Array[String], data: String): js.Promise[_] = js.native
-  @JSImport("builder-util", "spawnAndWrite")
-  @js.native
-  def spawnAndWrite(command: String, args: js.Array[String], data: String, options: SpawnOptions): js.Promise[_] = js.native
+  @scala.inline
+  def spawnAndWrite(command: String, args: js.Array[String], data: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawnAndWrite")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def spawnAndWrite(command: String, args: js.Array[String], data: String, options: SpawnOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawnAndWrite")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("builder-util", "toLinuxArchString")
-  @js.native
-  def toLinuxArchString(arch: Arch, targetName: String): String = js.native
+  @scala.inline
+  def toLinuxArchString(arch: Arch, targetName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLinuxArchString")(arch.asInstanceOf[js.Any], targetName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("builder-util", "use")
-  @js.native
-  def use[T, R](value: T, task: js.Function1[/* it */ T, R]): R | Null = js.native
-  @JSImport("builder-util", "use")
-  @js.native
-  def use[T, R](value: Null, task: js.Function1[/* it */ T, R]): R | Null = js.native
+  @scala.inline
+  def use[T, R](value: T, task: js.Function1[/* it */ T, R]): R | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(value.asInstanceOf[js.Any], task.asInstanceOf[js.Any])).asInstanceOf[R | Null]
+  @scala.inline
+  def use[T, R](value: Null, task: js.Function1[/* it */ T, R]): R | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(value.asInstanceOf[js.Any], task.asInstanceOf[js.Any])).asInstanceOf[R | Null]
   
-  @js.native
   trait ExtraSpawnOptions extends StObject {
     
-    var isPipeInput: js.UndefOr[Boolean] = js.native
+    var isPipeInput: js.UndefOr[Boolean] = js.undefined
   }
   object ExtraSpawnOptions {
     

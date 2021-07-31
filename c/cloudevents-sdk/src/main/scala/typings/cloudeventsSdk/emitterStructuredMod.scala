@@ -5,7 +5,6 @@ import typings.cloudeventsSdk.anon.UrlURL
 import typings.cloudeventsSdk.cloudeventMod.CE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emitterStructuredMod {
@@ -15,12 +14,26 @@ object emitterStructuredMod {
     */
   @JSImport("cloudevents-sdk/lib/bindings/http/emitter_structured", JSImport.Namespace)
   @js.native
-  class ^ () extends StructuredHTTPEmitter
+  class ^ ()
+    extends StObject
+       with StructuredHTTPEmitter {
+    
+    /**
+      * Sends the event over HTTP
+      * @param {Object} options The configuration options for this event. Options
+      * provided will be passed along to Node.js `http.request()`.
+      * https://nodejs.org/api/http.html#http_http_request_options_callback
+      * @param {URL} options.url The HTTP/S url that should receive this event
+      * @param {CloudEvent} cloudevent The CloudEvent to be sent
+      * @returns {Promise} Promise with an eventual response from the receiver
+      */
+    /* CompleteClass */
+    override def emit(options: UrlURL, cloudevent: CloudEvent): js.Promise[js.Any] = js.native
+  }
   
-  @js.native
   trait CloudEvent extends StObject {
     
-    var CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent] = js.native
+    var CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]
   }
   object CloudEvent {
     
@@ -41,7 +54,6 @@ object emitterStructuredMod {
   /**
     * A class for sending {CloudEvent} instances over HTTP.
     */
-  @js.native
   trait StructuredHTTPEmitter extends StObject {
     
     /**
@@ -53,12 +65,12 @@ object emitterStructuredMod {
       * @param {CloudEvent} cloudevent The CloudEvent to be sent
       * @returns {Promise} Promise with an eventual response from the receiver
       */
-    def emit(options: UrlURL, cloudevent: CloudEvent): js.Promise[_] = js.native
+    def emit(options: UrlURL, cloudevent: CloudEvent): js.Promise[js.Any]
   }
   object StructuredHTTPEmitter {
     
     @scala.inline
-    def apply(emit: (UrlURL, CloudEvent) => js.Promise[_]): StructuredHTTPEmitter = {
+    def apply(emit: (UrlURL, CloudEvent) => js.Promise[js.Any]): StructuredHTTPEmitter = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit))
       __obj.asInstanceOf[StructuredHTTPEmitter]
     }
@@ -67,7 +79,7 @@ object emitterStructuredMod {
     implicit class StructuredHTTPEmitterMutableBuilder[Self <: StructuredHTTPEmitter] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEmit(value: (UrlURL, CloudEvent) => js.Promise[_]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      def setEmit(value: (UrlURL, CloudEvent) => js.Promise[js.Any]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     }
   }
 }

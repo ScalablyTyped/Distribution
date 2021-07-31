@@ -7,22 +7,21 @@ import typings.officeUiFabricReact.buttonTypesMod.IButtonStyles
 import typings.officeUiFabricReact.spinButtonTypesMod.ISpinButtonStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spinButtonStylesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/SpinButton/SpinButton.styles", "getArrowButtonStyles")
+  @JSImport("office-ui-fabric-react/lib/components/SpinButton/SpinButton.styles", JSImport.Namespace)
   @js.native
-  def getArrowButtonStyles(theme: ITheme, isUpArrow: Boolean): IButtonStyles = js.native
-  @JSImport("office-ui-fabric-react/lib/components/SpinButton/SpinButton.styles", "getArrowButtonStyles")
-  @js.native
-  def getArrowButtonStyles(theme: ITheme, isUpArrow: Boolean, customSpecificArrowStyles: PartialIButtonStyles): IButtonStyles = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("office-ui-fabric-react/lib/components/SpinButton/SpinButton.styles", "getStyles")
-  @js.native
-  def getStyles(theme: ITheme): ISpinButtonStyles = js.native
-  @JSImport("office-ui-fabric-react/lib/components/SpinButton/SpinButton.styles", "getStyles")
-  @js.native
-  def getStyles(theme: ITheme, customStyles: PartialISpinButtonStyles): ISpinButtonStyles = js.native
+  @scala.inline
+  def getArrowButtonStyles(theme: ITheme, isUpArrow: Boolean): IButtonStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrowButtonStyles")(theme.asInstanceOf[js.Any], isUpArrow.asInstanceOf[js.Any])).asInstanceOf[IButtonStyles]
+  @scala.inline
+  def getArrowButtonStyles(theme: ITheme, isUpArrow: Boolean, customSpecificArrowStyles: PartialIButtonStyles): IButtonStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrowButtonStyles")(theme.asInstanceOf[js.Any], isUpArrow.asInstanceOf[js.Any], customSpecificArrowStyles.asInstanceOf[js.Any])).asInstanceOf[IButtonStyles]
+  
+  @scala.inline
+  def getStyles(theme: ITheme): ISpinButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[ISpinButtonStyles]
+  @scala.inline
+  def getStyles(theme: ITheme, customStyles: PartialISpinButtonStyles): ISpinButtonStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(theme.asInstanceOf[js.Any], customStyles.asInstanceOf[js.Any])).asInstanceOf[ISpinButtonStyles]
 }

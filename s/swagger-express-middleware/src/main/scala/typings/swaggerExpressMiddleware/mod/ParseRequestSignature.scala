@@ -7,24 +7,23 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParseRequestSignature extends StObject {
   
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
   def apply(/**
     * Options for each of the request-parsing middleware
     */
-  options: ParseRequestOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  options: ParseRequestOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
   def apply(
     /**
     * An Express Application or Router.
     * If provided, this will be used to register path-param middleware via Router.Param
     */
   router: Application_
-  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
   def apply(
     /**
     * An Express Application or Router.
@@ -35,14 +34,14 @@ trait ParseRequestSignature extends StObject {
     * Options for each of the request-parsing middleware
     */
   options: ParseRequestOptions
-  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
   def apply(
     /**
     * An Express Application or Router.
     * If provided, this will be used to register path-param middleware via Router.Param
     */
   router: Router
-  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
   def apply(
     /**
     * An Express Application or Router.
@@ -53,5 +52,5 @@ trait ParseRequestSignature extends StObject {
     * Options for each of the request-parsing middleware
     */
   options: ParseRequestOptions
-  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
 }

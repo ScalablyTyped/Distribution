@@ -4,13 +4,13 @@ import typings.isMyJsonValid.isMyJsonValidStrings.`null`
 import typings.isMyJsonValid.isMyJsonValidStrings.number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NullableNumberSchema extends _AnySchema {
+trait NullableNumberSchema
+  extends StObject
+     with _AnySchema {
   
-  var `type`: js.Array[number | `null`] = js.native
+  var `type`: js.Array[number | `null`]
 }
 object NullableNumberSchema {
   

@@ -9,10 +9,13 @@ import typings.std.HTMLCollection
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@babel/standalone", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@babel/standalone", "availablePlugins")
   @js.native
@@ -22,70 +25,47 @@ object mod {
   @js.native
   val availablePresets: Record[String, js.Object | js.Function0[Unit]] = js.native
   
-  @JSImport("@babel/standalone", "disableScriptTags")
-  @js.native
-  def disableScriptTags(): Unit = js.native
+  @scala.inline
+  def disableScriptTags(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableScriptTags")().asInstanceOf[Unit]
   
-  @JSImport("@babel/standalone", "registerPlugin")
-  @js.native
-  def registerPlugin(name: String, plugin: js.Function0[Unit]): Unit = js.native
-  @JSImport("@babel/standalone", "registerPlugin")
-  @js.native
-  def registerPlugin(name: String, plugin: js.Object): Unit = js.native
+  @scala.inline
+  def registerPlugin(name: String, plugin: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def registerPlugin(name: String, plugin: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@babel/standalone", "registerPlugins")
-  @js.native
-  def registerPlugins(newPlugins: StringDictionary[js.Object | js.Function0[Unit]]): Unit = js.native
+  @scala.inline
+  def registerPlugins(newPlugins: StringDictionary[js.Object | js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugins")(newPlugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@babel/standalone", "registerPreset")
-  @js.native
-  def registerPreset(name: String, preset: js.Function0[Unit]): Unit = js.native
-  @JSImport("@babel/standalone", "registerPreset")
-  @js.native
-  def registerPreset(name: String, preset: js.Object): Unit = js.native
+  @scala.inline
+  def registerPreset(name: String, preset: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPreset")(name.asInstanceOf[js.Any], preset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def registerPreset(name: String, preset: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPreset")(name.asInstanceOf[js.Any], preset.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@babel/standalone", "registerPresets")
-  @js.native
-  def registerPresets(newPresets: StringDictionary[js.Object | js.Function0[Unit]]): Unit = js.native
+  @scala.inline
+  def registerPresets(newPresets: StringDictionary[js.Object | js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPresets")(newPresets.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@babel/standalone", "transform")
-  @js.native
-  def transform(code: String, options: TransformOptions): BabelFileResult = js.native
+  @scala.inline
+  def transform(code: String, options: TransformOptions): BabelFileResult = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BabelFileResult]
   
-  @JSImport("@babel/standalone", "transformFromAst")
-  @js.native
-  def transformFromAst(ast: Node): Unit = js.native
-  @JSImport("@babel/standalone", "transformFromAst")
-  @js.native
-  def transformFromAst(
-    ast: Node,
-    code: js.UndefOr[scala.Nothing],
-    opts: js.UndefOr[scala.Nothing],
-    callback: FileResultCallback
-  ): Unit = js.native
-  @JSImport("@babel/standalone", "transformFromAst")
-  @js.native
-  def transformFromAst(ast: Node, code: js.UndefOr[scala.Nothing], opts: TransformOptions): Unit = js.native
-  @JSImport("@babel/standalone", "transformFromAst")
-  @js.native
-  def transformFromAst(ast: Node, code: js.UndefOr[scala.Nothing], opts: TransformOptions, callback: FileResultCallback): Unit = js.native
-  @JSImport("@babel/standalone", "transformFromAst")
-  @js.native
-  def transformFromAst(ast: Node, code: String): Unit = js.native
-  @JSImport("@babel/standalone", "transformFromAst")
-  @js.native
-  def transformFromAst(ast: Node, code: String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native
-  @JSImport("@babel/standalone", "transformFromAst")
-  @js.native
-  def transformFromAst(ast: Node, code: String, opts: TransformOptions): Unit = js.native
-  @JSImport("@babel/standalone", "transformFromAst")
-  @js.native
-  def transformFromAst(ast: Node, code: String, opts: TransformOptions, callback: FileResultCallback): Unit = js.native
+  @scala.inline
+  def transformFromAst(ast: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def transformFromAst(ast: Node, code: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def transformFromAst(ast: Node, code: String, opts: Unit, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def transformFromAst(ast: Node, code: String, opts: TransformOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def transformFromAst(ast: Node, code: String, opts: TransformOptions, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def transformFromAst(ast: Node, code: Unit, opts: Unit, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def transformFromAst(ast: Node, code: Unit, opts: TransformOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def transformFromAst(ast: Node, code: Unit, opts: TransformOptions, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@babel/standalone", "transformScriptTags")
-  @js.native
-  def transformScriptTags(): Unit = js.native
-  @JSImport("@babel/standalone", "transformScriptTags")
-  @js.native
-  def transformScriptTags(scriptTags: HTMLCollection): Unit = js.native
+  @scala.inline
+  def transformScriptTags(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("transformScriptTags")().asInstanceOf[Unit]
+  @scala.inline
+  def transformScriptTags(scriptTags: HTMLCollection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("transformScriptTags")(scriptTags.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

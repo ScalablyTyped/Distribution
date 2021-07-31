@@ -3,15 +3,13 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotFleetRequestLaunchSpecificationEphemeralBlockDevice extends StObject {
   
-  var deviceName: Input[String] = js.native
+  var deviceName: Input[String]
   
-  var virtualName: Input[String] = js.native
+  var virtualName: Input[String]
 }
 object SpotFleetRequestLaunchSpecificationEphemeralBlockDevice {
   

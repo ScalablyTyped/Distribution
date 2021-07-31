@@ -13,7 +13,6 @@ import typings.mosca.moscaStrings.unsubscribed
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,9 +38,9 @@ object mod {
     def this(connection: js.Any, server: Server) = this()
     
     def close(): Unit = js.native
-    def close(callback: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
     def close(callback: js.Function0[Unit]): Unit = js.native
     def close(callback: js.Function0[Unit], reason: String): Unit = js.native
+    def close(callback: Unit, reason: String): Unit = js.native
     
     var connection: js.Any = js.native
     
@@ -195,10 +194,9 @@ object mod {
     
     type FactoryFunc = js.Function1[/* options */ StringDictionary[js.Any], Persistence]
     
-    @js.native
     trait Persistence extends StObject {
       
-      def wire(server: Server): Unit = js.native
+      def wire(server: Server): Unit
     }
     object Persistence {
       
@@ -217,16 +215,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var payload: js.Any = js.native
+    var payload: js.Any
     
-    var qos: Double = js.native
+    var qos: Double
     
-    var retain: Boolean = js.native
+    var retain: Boolean
     
-    var topic: String = js.native
+    var topic: String
   }
   object Message {
     
@@ -253,18 +250,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Packet extends StObject {
     
-    var messageId: String = js.native
+    var messageId: String
     
-    var payload: js.Any = js.native
+    var payload: js.Any
     
-    var qos: Double = js.native
+    var qos: Double
     
-    var retain: Boolean = js.native
+    var retain: Boolean
     
-    var topic: String = js.native
+    var topic: String
   }
   object Packet {
     
@@ -294,34 +290,33 @@ object mod {
     }
   }
   
-  @js.native
   trait ServerOptions extends StObject {
     
-    var allowNonSecure: js.UndefOr[Boolean] = js.native
+    var allowNonSecure: js.UndefOr[Boolean] = js.undefined
     
-    var ascoltatore: js.UndefOr[js.Any] = js.native
+    var ascoltatore: js.UndefOr[js.Any] = js.undefined
     
-    var backend: js.UndefOr[js.Any] = js.native
+    var backend: js.UndefOr[js.Any] = js.undefined
     
-    var bundle: js.UndefOr[js.Any] = js.native
+    var bundle: js.UndefOr[js.Any] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var http: js.UndefOr[Port] = js.native
+    var http: js.UndefOr[Port] = js.undefined
     
-    var logger: js.UndefOr[js.Any] = js.native
+    var logger: js.UndefOr[js.Any] = js.undefined
     
-    var maxInflightMessages: js.UndefOr[Double] = js.native
+    var maxInflightMessages: js.UndefOr[Double] = js.undefined
     
-    var persistence: js.UndefOr[js.Any] = js.native
+    var persistence: js.UndefOr[js.Any] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var secure: js.UndefOr[CertPath] = js.native
+    var secure: js.UndefOr[CertPath] = js.undefined
     
-    var static: js.UndefOr[js.Any] = js.native
+    var static: js.UndefOr[js.Any] = js.undefined
     
-    var stats: js.UndefOr[js.Any] = js.native
+    var stats: js.UndefOr[js.Any] = js.undefined
   }
   object ServerOptions {
     

@@ -2,23 +2,21 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofCurveTimeline extends StObject {
   
   /* static member */
-  var BEZIER: Double = js.native
+  var BEZIER: Double
   
   /* static member */
-  var BEZIER_SIZE: Double = js.native
+  var BEZIER_SIZE: Double
   
   /* static member */
-  var LINEAR: Double = js.native
+  var LINEAR: Double
   
   /* static member */
-  var STEPPED: Double = js.native
+  var STEPPED: Double
 }
 object TypeofCurveTimeline {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestUploadCredentialsInput extends StObject {
   
   /**
     * A unique identifier for a build to get credentials for. You can use either the build ID or ARN value. 
     */
-  var BuildId: BuildIdOrArn = js.native
+  var BuildId: BuildIdOrArn
 }
 object RequestUploadCredentialsInput {
   

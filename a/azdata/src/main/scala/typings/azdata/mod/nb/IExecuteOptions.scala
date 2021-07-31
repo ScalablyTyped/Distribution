@@ -2,42 +2,40 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExecuteOptions extends StObject {
   
   /**
     * Whether to allow stdin requests.
     * The default is `true`.
     */
-  var allow_stdin: js.UndefOr[Boolean] = js.native
+  var allow_stdin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to execute the code as quietly as possible.
     * The default is `false`.
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to the abort execution queue on an error.
     * The default is `false`.
     */
-  var stop_on_error: js.UndefOr[Boolean] = js.native
+  var stop_on_error: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to store history of the execution.
     * The default `true` if silent is False.
     * It is forced to  `false ` if silent is `true`.
     */
-  var store_history: js.UndefOr[Boolean] = js.native
+  var store_history: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A mapping of names to expressions to be evaluated in the
     * kernel's interactive namespace.
     */
-  var user_expressions: js.UndefOr[js.Object] = js.native
+  var user_expressions: js.UndefOr[js.Object] = js.undefined
 }
 object IExecuteOptions {
   

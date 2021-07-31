@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /**
     * The aspect ratio of this image (width/height). This field allows clients to reserve the right height for the image while waiting for it to load. It's not meant to override the
     * native aspect ratio of the image. If unset, the server fills it by prefetching the image.
     */
-  var aspectRatio: js.UndefOr[Double] = js.native
+  var aspectRatio: js.UndefOr[Double] = js.undefined
   
   /** The URL of the image. */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /** The onclick action. */
-  var onClick: js.UndefOr[OnClick] = js.native
+  var onClick: js.UndefOr[OnClick] = js.undefined
 }
 object Image {
   

@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `rangeAreas.toJSON()`. */
-@js.native
 trait RangeAreasData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait RangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait RangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var addressLocal: js.UndefOr[String] = js.native
+  var addressLocal: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait RangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var areaCount: js.UndefOr[Double] = js.native
+  var areaCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait RangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var areas: js.UndefOr[js.Array[RangeData]] = js.native
+  var areas: js.UndefOr[js.Array[RangeData]] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait RangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var cellCount: js.UndefOr[Double] = js.native
+  var cellCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait RangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatData]] = js.native
+  var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatData]] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait RangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var dataValidation: js.UndefOr[DataValidationData] = js.native
+  var dataValidation: js.UndefOr[DataValidationData] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait RangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var format: js.UndefOr[RangeFormatData] = js.native
+  var format: js.UndefOr[RangeFormatData] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait RangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var isEntireColumn: js.UndefOr[Boolean] = js.native
+  var isEntireColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -87,7 +85,7 @@ trait RangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var isEntireRow: js.UndefOr[Boolean] = js.native
+  var isEntireRow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait RangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
 }
 object RangeAreasData {
   

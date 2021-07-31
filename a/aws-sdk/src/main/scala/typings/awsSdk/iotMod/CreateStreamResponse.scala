@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStreamResponse extends StObject {
   
   /**
     * A description of the stream.
     */
-  var description: js.UndefOr[StreamDescription] = js.native
+  var description: js.UndefOr[StreamDescription] = js.undefined
   
   /**
     * The stream ARN.
     */
-  var streamArn: js.UndefOr[StreamArn] = js.native
+  var streamArn: js.UndefOr[StreamArn] = js.undefined
   
   /**
     * The stream ID.
     */
-  var streamId: js.UndefOr[StreamId] = js.native
+  var streamId: js.UndefOr[StreamId] = js.undefined
   
   /**
     * The version of the stream.
     */
-  var streamVersion: js.UndefOr[StreamVersion] = js.native
+  var streamVersion: js.UndefOr[StreamVersion] = js.undefined
 }
 object CreateStreamResponse {
   

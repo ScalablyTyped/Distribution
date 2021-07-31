@@ -4,13 +4,13 @@ import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NumberFormatting {
   
-  @js.native
-  trait CurrencyFormatter extends ICurrencyFormatter
+  trait CurrencyFormatter
+    extends StObject
+       with ICurrencyFormatter
   object CurrencyFormatter {
     
     @scala.inline
@@ -38,9 +38,9 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait DecimalFormatter
-    extends INumberFormatterOptions
+    extends StObject
+       with INumberFormatterOptions
        with INumberFormatter
        with INumberFormatter2
        with INumberParser
@@ -70,14 +70,14 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait ICurrencyFormatter
-    extends INumberFormatterOptions
+    extends StObject
+       with INumberFormatterOptions
        with INumberFormatter
        with INumberFormatter2
        with INumberParser {
     
-    var currency: String = js.native
+    var currency: String
   }
   object ICurrencyFormatter {
     
@@ -113,12 +113,11 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait ICurrencyFormatterFactory extends StObject {
     
-    def createCurrencyFormatterCode(currencyCode: String): CurrencyFormatter = js.native
+    def createCurrencyFormatterCode(currencyCode: String): CurrencyFormatter
     
-    def createCurrencyFormatterCodeContext(currencyCode: String, languages: IIterable[String], geographicRegion: String): CurrencyFormatter = js.native
+    def createCurrencyFormatterCodeContext(currencyCode: String, languages: IIterable[String], geographicRegion: String): CurrencyFormatter
   }
   object ICurrencyFormatterFactory {
     
@@ -142,10 +141,9 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait IDecimalFormatterFactory extends StObject {
     
-    def createDecimalFormatter(languages: IIterable[String], geographicRegion: String): DecimalFormatter = js.native
+    def createDecimalFormatter(languages: IIterable[String], geographicRegion: String): DecimalFormatter
   }
   object IDecimalFormatterFactory {
     
@@ -163,10 +161,9 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait INumberFormatter extends StObject {
     
-    def format(value: Double): String = js.native
+    def format(value: Double): String
   }
   object INumberFormatter {
     
@@ -184,14 +181,13 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait INumberFormatter2 extends StObject {
     
-    def formatDouble(value: Double): String = js.native
+    def formatDouble(value: Double): String
     
-    def formatInt(value: Double): String = js.native
+    def formatInt(value: Double): String
     
-    def formatUInt(value: Double): String = js.native
+    def formatUInt(value: Double): String
   }
   object INumberFormatter2 {
     
@@ -215,26 +211,25 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait INumberFormatterOptions extends StObject {
     
-    var fractionDigits: Double = js.native
+    var fractionDigits: Double
     
-    var geographicRegion: String = js.native
+    var geographicRegion: String
     
-    var integerDigits: Double = js.native
+    var integerDigits: Double
     
-    var isDecimalPointAlwaysDisplayed: Boolean = js.native
+    var isDecimalPointAlwaysDisplayed: Boolean
     
-    var isGrouped: Boolean = js.native
+    var isGrouped: Boolean
     
-    var languages: IVectorView[String] = js.native
+    var languages: IVectorView[String]
     
-    var numeralSystem: String = js.native
+    var numeralSystem: String
     
-    var resolvedGeographicRegion: String = js.native
+    var resolvedGeographicRegion: String
     
-    var resolvedLanguage: String = js.native
+    var resolvedLanguage: String
   }
   object INumberFormatterOptions {
     
@@ -286,14 +281,13 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait INumberParser extends StObject {
     
-    def parseDouble(text: String): Double = js.native
+    def parseDouble(text: String): Double
     
-    def parseInt(text: String): Double = js.native
+    def parseInt(text: String): Double
     
-    def parseUInt(text: String): Double = js.native
+    def parseUInt(text: String): Double
   }
   object INumberParser {
     
@@ -317,10 +311,9 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait IPercentFormatterFactory extends StObject {
     
-    def createPercentFormatter(languages: IIterable[String], geographicRegion: String): PercentFormatter = js.native
+    def createPercentFormatter(languages: IIterable[String], geographicRegion: String): PercentFormatter
   }
   object IPercentFormatterFactory {
     
@@ -338,10 +331,9 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait IPermilleFormatterFactory extends StObject {
     
-    def createPermilleFormatter(languages: IIterable[String], geographicRegion: String): PermilleFormatter = js.native
+    def createPermilleFormatter(languages: IIterable[String], geographicRegion: String): PermilleFormatter
   }
   object IPermilleFormatterFactory {
     
@@ -359,9 +351,9 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait PercentFormatter
-    extends INumberFormatterOptions
+    extends StObject
+       with INumberFormatterOptions
        with INumberFormatter
        with INumberFormatter2
        with INumberParser
@@ -391,9 +383,9 @@ object NumberFormatting {
     }
   }
   
-  @js.native
   trait PermilleFormatter
-    extends INumberFormatterOptions
+    extends StObject
+       with INumberFormatterOptions
        with INumberFormatter
        with INumberFormatter2
        with INumberParser

@@ -10,7 +10,6 @@ import typings.three.threeStrings.LineLoop
 import typings.three.threeStrings.LineSegments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineMod {
@@ -20,11 +19,11 @@ object lineMod {
   class Line[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Object3D {
     def this(geometry: TGeometry) = this()
     def this(geometry: TGeometry, material: TMaterial) = this()
-    def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial) = this()
+    def this(geometry: Unit, material: TMaterial) = this()
     def this(geometry: TGeometry, material: TMaterial, mode: Double) = this()
-    def this(geometry: TGeometry, material: js.UndefOr[scala.Nothing], mode: Double) = this()
-    def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial, mode: Double) = this()
-    def this(geometry: js.UndefOr[scala.Nothing], material: js.UndefOr[scala.Nothing], mode: Double) = this()
+    def this(geometry: TGeometry, material: Unit, mode: Double) = this()
+    def this(geometry: Unit, material: TMaterial, mode: Double) = this()
+    def this(geometry: Unit, material: Unit, mode: Double) = this()
     
     def computeLineDistances(): this.type = js.native
     

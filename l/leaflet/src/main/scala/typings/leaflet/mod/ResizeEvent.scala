@@ -2,15 +2,15 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResizeEvent extends LeafletEvent {
+trait ResizeEvent
+  extends StObject
+     with LeafletEvent {
   
-  var newSize: Point_ = js.native
+  var newSize: Point_
   
-  var oldSize: Point_ = js.native
+  var oldSize: Point_
 }
 object ResizeEvent {
   

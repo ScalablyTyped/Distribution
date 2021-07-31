@@ -3,11 +3,12 @@ package typings.consul.mod
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Watch extends EventEmitter {
+trait Watch
+  extends StObject
+     with EventEmitter {
   
   var consul: Consul = js.native
   
@@ -28,18 +29,17 @@ trait Watch extends EventEmitter {
 }
 object Watch {
   
-  @js.native
   trait Options extends StObject {
     
-    var backoffFactor: js.UndefOr[Double] = js.native
+    var backoffFactor: js.UndefOr[Double] = js.undefined
     
-    var backoffMax: js.UndefOr[Double] = js.native
+    var backoffMax: js.UndefOr[Double] = js.undefined
     
-    var maxAttempts: js.UndefOr[Double] = js.native
+    var maxAttempts: js.UndefOr[Double] = js.undefined
     
-    var method: js.Function = js.native
+    var method: js.Function
     
-    var options: js.UndefOr[CommonOptions with WatchOptions] = js.native
+    var options: js.UndefOr[CommonOptions & WatchOptions] = js.undefined
   }
   object Options {
     
@@ -74,17 +74,16 @@ object Watch {
       def setMethod(value: js.Function): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOptions(value: CommonOptions with WatchOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      def setOptions(value: CommonOptions & WatchOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
-  @js.native
   trait WatchOptions extends StObject {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object WatchOptions {
     

@@ -12,7 +12,6 @@ import typings.jsrsasign.jsrsasign.ECPointFp
 import typings.jsrsasign.jsrsasign.RSAKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crypto {
@@ -312,24 +311,23 @@ object crypto {
     def verifyWithMessageHash(hashHex: String, sigHex: String): Boolean = js.native
   }
   
-  @js.native
   trait ECParameter extends StObject {
     
-    var G: ECPointFp = js.native
+    var G: ECPointFp
     
-    var curve: ECCurveFp = js.native
+    var curve: ECCurveFp
     
-    var h: BigInteger = js.native
+    var h: BigInteger
     
-    var info: js.UndefOr[String] = js.native
+    var info: js.UndefOr[String] = js.undefined
     
-    var keylen: Double = js.native
+    var keylen: Double
     
-    var n: BigInteger = js.native
+    var n: BigInteger
     
-    var name: String = js.native
+    var name: String
     
-    var oid: js.UndefOr[String] = js.native
+    var oid: js.UndefOr[String] = js.undefined
   }
   object ECParameter {
     
@@ -542,7 +540,6 @@ object crypto {
     * KJUR.crypto.MessageDigest.HASHLENGTH['sha1'] → 20
     * KJUR.crypto.MessageDigest.HASHLENGTH['sha512'] → 64
     */
-  @js.native
   trait MessageDigest extends StObject {
     
     /**
@@ -551,7 +548,7 @@ object crypto {
       * @example
       * md.digest()
       */
-    def digest(): Unit = js.native
+    def digest(): Unit
     
     /**
       * performs final update on the digest using hexadecimal string, then completes the digest computation
@@ -560,7 +557,7 @@ object crypto {
       * @example
       * md.digestHex('0f2abd')
       */
-    def digestHex(hex: String): Unit = js.native
+    def digestHex(hex: String): Unit
     
     /**
       * performs final update on the digest using string, then completes the digest computation
@@ -569,7 +566,7 @@ object crypto {
       * @example
       * md.digestString('aaa')
       */
-    def digestString(str: String): Unit = js.native
+    def digestString(str: String): Unit
     
     /**
       * set hash algorithm and provider
@@ -595,7 +592,7 @@ object crypto {
       * // for RIPEMD160
       * md.setAlgAndProvider('ripemd160', 'cryptojs');
       */
-    def setAlgAndProvider(alg: String, prov: String): Unit = js.native
+    def setAlgAndProvider(alg: String, prov: String): Unit
     
     /**
       * update digest by specified hexadecimal string
@@ -604,7 +601,7 @@ object crypto {
       * @example
       * md.updateHex('0afe36');
       */
-    def updateHex(hex: String): Unit = js.native
+    def updateHex(hex: String): Unit
     
     /**
       * update digest by specified string
@@ -613,7 +610,7 @@ object crypto {
       * @example
       * md.updateString('New York');
       */
-    def updateString(str: String): Unit = js.native
+    def updateString(str: String): Unit
   }
   object MessageDigest {
     

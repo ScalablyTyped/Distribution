@@ -2,24 +2,22 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for Firestore.ListCollectionIds.
   */
-@js.native
 trait SchemaListCollectionIdsRequest extends StObject {
   
   /**
     * The maximum number of results to return.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A page token. Must be a value from ListCollectionIdsResponse.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListCollectionIdsRequest {
   

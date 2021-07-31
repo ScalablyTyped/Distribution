@@ -9,9 +9,9 @@ Jquery UI Layout package
 | ------------------ | :-------------: |
 | Full name          | jquery.ui.layout |
 | Keywords           | jquery, ui, layout, typescript, angular2 |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 1784 |
+| # downloads        | 5530 |
 | # stars            | 0 |
 
 ## Links

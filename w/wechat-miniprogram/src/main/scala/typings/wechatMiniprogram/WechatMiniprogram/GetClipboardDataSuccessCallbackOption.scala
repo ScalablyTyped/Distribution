@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetClipboardDataSuccessCallbackOption extends StObject {
   
   /** 剪贴板的内容 */
-  var data: String = js.native
+  var data: String
 }
 object GetClipboardDataSuccessCallbackOption {
   

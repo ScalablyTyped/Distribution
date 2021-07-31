@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAnalysesRequest extends StObject {
   
   /**
     * The ID of the AWS account that contains the analyses.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The maximum number of results to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.quicksightMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.quicksightMod.MaxResults] = js.undefined
   
   /**
     * A pagination token that can be used in a subsequent request.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListAnalysesRequest {
   

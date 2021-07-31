@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Version extends StObject {
   
   /** Used to correct mistakes in the version numbering scheme. */
-  var epoch: js.UndefOr[Double] = js.native
+  var epoch: js.UndefOr[Double] = js.undefined
   
   /** Required. Distinguishes between sentinel MIN/MAX versions and normal versions. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Required only when version kind is NORMAL. The main part of the version name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The iteration of the package build from the above version. */
-  var revision: js.UndefOr[String] = js.native
+  var revision: js.UndefOr[String] = js.undefined
 }
 object Version {
   

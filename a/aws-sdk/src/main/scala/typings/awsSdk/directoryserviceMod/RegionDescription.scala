@@ -2,53 +2,51 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionDescription extends StObject {
   
   /**
     * The desired number of domain controllers in the specified Region for the specified directory.
     */
-  var DesiredNumberOfDomainControllers: js.UndefOr[typings.awsSdk.directoryserviceMod.DesiredNumberOfDomainControllers] = js.native
+  var DesiredNumberOfDomainControllers: js.UndefOr[typings.awsSdk.directoryserviceMod.DesiredNumberOfDomainControllers] = js.undefined
   
   /**
     * The identifier of the directory.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The date and time that the Region description was last updated.
     */
-  var LastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LastUpdatedDateTime] = js.native
+  var LastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LastUpdatedDateTime] = js.undefined
   
   /**
     * Specifies when the Region replication began.
     */
-  var LaunchTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LaunchTime] = js.native
+  var LaunchTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LaunchTime] = js.undefined
   
   /**
     * The name of the Region. For example, us-east-1.
     */
-  var RegionName: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionName] = js.native
+  var RegionName: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionName] = js.undefined
   
   /**
     * Specifies if the Region is the primary Region or an additional Region.
     */
-  var RegionType: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionType] = js.native
+  var RegionType: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionType] = js.undefined
   
   /**
     * The status of the replication process for the specified Region.
     */
-  var Status: js.UndefOr[DirectoryStage] = js.native
+  var Status: js.UndefOr[DirectoryStage] = js.undefined
   
   /**
     * The date and time that the Region status was last updated.
     */
-  var StatusLastUpdatedDateTime: js.UndefOr[StateLastUpdatedDateTime] = js.native
+  var StatusLastUpdatedDateTime: js.UndefOr[StateLastUpdatedDateTime] = js.undefined
   
-  var VpcSettings: js.UndefOr[DirectoryVpcSettings] = js.native
+  var VpcSettings: js.UndefOr[DirectoryVpcSettings] = js.undefined
 }
 object RegionDescription {
   

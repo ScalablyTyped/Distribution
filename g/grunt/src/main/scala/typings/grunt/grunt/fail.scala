@@ -3,7 +3,6 @@ package typings.grunt.grunt
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fail {
@@ -15,25 +14,39 @@ object fail {
   object ErrorCode extends StObject {
     
     @js.native
-    sealed trait Autocomplete extends ErrorCode
+    sealed trait Autocomplete
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait Fatal extends ErrorCode
+    sealed trait Fatal
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait MissingGruntfile extends ErrorCode
+    sealed trait MissingGruntfile
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait NoError extends ErrorCode
+    sealed trait NoError
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait Task extends ErrorCode
+    sealed trait Task
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait Template extends ErrorCode
+    sealed trait Template
+      extends StObject
+         with ErrorCode
     
     @js.native
-    sealed trait Warning extends ErrorCode
+    sealed trait Warning
+      extends StObject
+         with ErrorCode
   }
   
   @js.native

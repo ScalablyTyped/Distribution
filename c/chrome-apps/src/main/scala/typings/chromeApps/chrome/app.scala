@@ -64,7 +64,6 @@ import typings.filesystem.FileEntry
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////
@@ -240,8 +239,8 @@ object app {
       * A value of undefined will leave a constraint unchanged.
       */
     def setMaximumSize(): Unit = js.native
-    def setMaximumSize(maxWidth: js.UndefOr[scala.Nothing], maxHeight: integer): Unit = js.native
     def setMaximumSize(maxWidth: Null, maxHeight: integer): Unit = js.native
+    def setMaximumSize(maxWidth: Unit, maxHeight: integer): Unit = js.native
     def setMaximumSize(maxWidth: integer): Unit = js.native
     def setMaximumSize(maxWidth: integer, maxHeight: integer): Unit = js.native
     
@@ -250,8 +249,8 @@ object app {
       * A value of undefined will leave a constraint unchanged.
       **/
     def setMinimumSize(): Unit = js.native
-    def setMinimumSize(minWidth: js.UndefOr[scala.Nothing], minHeight: integer): Unit = js.native
     def setMinimumSize(minWidth: Null, minHeight: integer): Unit = js.native
+    def setMinimumSize(minWidth: Unit, minHeight: integer): Unit = js.native
     def setMinimumSize(minWidth: integer): Unit = js.native
     def setMinimumSize(minWidth: integer, minHeight: integer): Unit = js.native
     
@@ -268,32 +267,31 @@ object app {
     var width: integer = js.native
   }
   
-  @js.native
   trait BoundsSpecification extends StObject {
     
     /** The height of the content or window. */
-    var height: js.UndefOr[integer] = js.native
+    var height: js.UndefOr[integer] = js.undefined
     
     /** The X coordinate of the content or window. */
-    var left: js.UndefOr[integer] = js.native
+    var left: js.UndefOr[integer] = js.undefined
     
     /** The maximum height of the content or window. */
-    var maxHeight: js.UndefOr[integer] = js.native
+    var maxHeight: js.UndefOr[integer] = js.undefined
     
     /** The maximum width of the content or window. */
-    var maxWidth: js.UndefOr[integer] = js.native
+    var maxWidth: js.UndefOr[integer] = js.undefined
     
     /** The minimum height of the content or window. */
-    var minHeight: js.UndefOr[integer] = js.native
+    var minHeight: js.UndefOr[integer] = js.undefined
     
     /** The minimum width of the content or window. */
-    var minWidth: js.UndefOr[integer] = js.native
+    var minWidth: js.UndefOr[integer] = js.undefined
     
     /** The Y coordinate of the content or window. */
-    var top: js.UndefOr[integer] = js.native
+    var top: js.UndefOr[integer] = js.undefined
     
     /** The width of the content or window. */
-    var width: js.UndefOr[integer] = js.native
+    var width: js.UndefOr[integer] = js.undefined
   }
   object BoundsSpecification {
     
@@ -357,7 +355,9 @@ object app {
   }
   
   @js.native
-  trait ChromeAppWindow extends AppWindow {
+  trait ChromeAppWindow
+    extends StObject
+       with AppWindow {
     
     /**
       * @enum
@@ -382,11 +382,7 @@ object app {
       * @param [callback] Called in the creating window (parent) before the load event is called in the created window (child). The parent can set fields or functions on the child usable from onload. E.g. background.js: function(createdWindow) { createdWindow.contentWindow.foo = function () { }; }; window.js: window.onload = function () { foo(); } If you specify the callback parameter, it should be a function that looks like this: function(AppWindow createdWindow) {...};
       */
     def create(url: String): Unit = js.native
-    def create(
-      url: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* created_window */ AppWindow, Unit]
-    ): Unit = js.native
+    def create(url: String, options: Unit, callback: js.Function1[/* created_window */ AppWindow, Unit]): Unit = js.native
     def create(url: String, options: CreateWindowOptions): Unit = js.native
     def create(
       url: String,
@@ -410,16 +406,15 @@ object app {
     def getAll(): js.Array[AppWindow] = js.native
   }
   
-  @js.native
   trait ContentBounds extends StObject {
     
-    var height: js.UndefOr[integer] = js.native
+    var height: js.UndefOr[integer] = js.undefined
     
-    var left: js.UndefOr[integer] = js.native
+    var left: js.UndefOr[integer] = js.undefined
     
-    var top: js.UndefOr[integer] = js.native
+    var top: js.UndefOr[integer] = js.undefined
     
-    var width: js.UndefOr[integer] = js.native
+    var width: js.UndefOr[integer] = js.undefined
   }
   object ContentBounds {
     
@@ -458,8 +453,9 @@ object app {
     }
   }
   
-  @js.native
-  trait CreateWindowOptions extends ContentBounds {
+  trait CreateWindowOptions
+    extends StObject
+       with ContentBounds {
     
     /**
       * @requires(dev) Chrome dev only
@@ -467,7 +463,7 @@ object app {
       * @description
       * Enable alpha on frame 'none'
       */
-    var alphaEnabled: js.UndefOr[Boolean] = js.native
+    var alphaEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @requires Permissions: 'alwaysOnTopWindows' or 'app.window.alwaysOnTop'
@@ -477,7 +473,7 @@ object app {
       * Call setAlwaysOnTop() on the window to change this property after creation.
       * @default false
       */
-    var alwaysOnTop: js.UndefOr[Boolean] = js.native
+    var alwaysOnTop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Size and position of the content in the window (excluding the titlebar).
@@ -485,10 +481,10 @@ object app {
       * the remembered bounds of the window will be used instead.
       * @deprecated Deprecated since Chrome 36. Use innerBounds or outerBounds.
       */
-    var bounds: js.UndefOr[ContentBounds] = js.native
+    var bounds: js.UndefOr[ContentBounds] = js.undefined
     
     /** If true, the window will be focused when created. Defaults to true. */
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Frame type: none or chrome (defaults to chrome).
@@ -498,12 +494,12 @@ object app {
       */
     var frame: js.UndefOr[
         none_ | typings.chromeApps.chromeAppsStrings.chrome | FrameOptions | FrameOptionsChrome
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If true, the window will be created in a hidden state. Call show() on the window to show it once it has been created. Defaults to false.
       */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * URL of the window icon.
@@ -511,7 +507,7 @@ object app {
       * The URL should be a global or an app's local URL.
       * @since Chrome 54.
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * Id to identify the window.
@@ -520,7 +516,7 @@ object app {
       * If a window with a given id is created while another window with the same id already exists,
       * the currently opened window will be focused instead of creating a new window.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * @requires frame = 'none'
@@ -528,7 +524,7 @@ object app {
       * @description
       * Windows API - ime (No fullscreen window in kiosk mode)
       */
-    var ime: js.UndefOr[Boolean] = js.native
+    var ime: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Used to specify the initial position, initial size and constraints of the window's content (excluding window decorations).
@@ -537,31 +533,31 @@ object app {
       * Therefore setting the same bounds property for both the innerBounds and outerBounds will result in an error.
       * @since This property is new in Chrome 36.
       */
-    var innerBounds: js.UndefOr[BoundsSpecification] = js.native
+    var innerBounds: js.UndefOr[BoundsSpecification] = js.undefined
     
     /**
       * Maximum height of the window.
       * @deprecated Deprecated since Chrome 36. Use innerBounds or outerBounds.
       */
-    var maxHeight: js.UndefOr[integer] = js.native
+    var maxHeight: js.UndefOr[integer] = js.undefined
     
     /**
       * Maximum width of the window.
       * @deprecated Deprecated since Chrome 36. Use innerBounds or outerBounds.
       */
-    var maxWidth: js.UndefOr[integer] = js.native
+    var maxWidth: js.UndefOr[integer] = js.undefined
     
     /**
       * Minimum height of the window.
       * @deprecated Deprecated since Chrome 36. Use innerBounds or outerBounds.
       */
-    var minHeight: js.UndefOr[integer] = js.native
+    var minHeight: js.UndefOr[integer] = js.undefined
     
     /**
       * Minimum width of the window.
       * @deprecated Deprecated since Chrome 36. Use innerBounds or outerBounds.
       */
-    var minWidth: js.UndefOr[integer] = js.native
+    var minWidth: js.UndefOr[integer] = js.undefined
     
     /**
       * Used to specify the initial position, initial size and constraints of the window (including window decorations such as the title bar and frame).
@@ -570,12 +566,12 @@ object app {
       * Therefore setting the same bounds property for both the innerBounds and outerBounds will result in an error.
       * @since This property is new in Chrome 36.
       */
-    var outerBounds: js.UndefOr[BoundsSpecification] = js.native
+    var outerBounds: js.UndefOr[BoundsSpecification] = js.undefined
     
     /**
       * If true, the window will be resizable by the user. Defaults to true.
       */
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the window will have its own shelf icon.
@@ -584,7 +580,7 @@ object app {
       * @default false
       * @since Chrome 54.
       */
-    var showInShelf: js.UndefOr[Boolean] = js.native
+    var showInShelf: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @deprecated Deprecated since Chrome 34. Multiple windows with the same id is no longer supported.
@@ -593,7 +589,7 @@ object app {
       * If a window with the same id already exists that window is activated instead.
       * If you do want to create multiple windows with the same id, you can set this property to false.
       */
-    var singleton: js.UndefOr[Boolean] = js.native
+    var singleton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The initial state of the window, allowing it to be created already fullscreen, maximized, or minimized. Defaults to 'normal'.
@@ -607,19 +603,19 @@ object app {
             normal_ | fullscreen_ | maximized_ | minimized_
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * @deprecated Deprecated since Chrome 69. All app windows use the 'shell' window type.
       * @description Type of window to create
       **/
-    var `type`: js.UndefOr[shell] = js.native
+    var `type`: js.UndefOr[shell] = js.undefined
     
     /**
       * If true, and supported by the platform, the window will be visible on all workspaces.
       * @since Chrome 39.
       */
-    var visibleOnAllWorkspaces: js.UndefOr[Boolean] = js.native
+    var visibleOnAllWorkspaces: js.UndefOr[Boolean] = js.undefined
   }
   object CreateWindowOptions {
     
@@ -769,7 +765,6 @@ object app {
     }
   }
   
-  @js.native
   trait FrameOptions extends StObject {
     
     /**
@@ -778,7 +773,7 @@ object app {
       * @description
       * Enable alpha on frame 'none'
       */
-    var alphaEnabled: js.UndefOr[Boolean] = js.native
+    var alphaEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Frame type: none or chrome (defaults to chrome).
@@ -786,14 +781,14 @@ object app {
       * For none, the -webkit-app-region CSS property can be used to apply draggability to the app's window.
       * -webkit-app-region: drag can be used to mark regions draggable. no-drag can be used to disable this style on nested elements.
       */
-    var `type`: none_ = js.native
+    var `type`: none_
   }
   object FrameOptions {
     
     @scala.inline
-    def apply(`type`: none_): FrameOptions = {
+    def apply(): FrameOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("none")
       __obj.asInstanceOf[FrameOptions]
     }
     
@@ -811,7 +806,6 @@ object app {
     }
   }
   
-  @js.native
   trait FrameOptionsChrome extends StObject {
     
     /**
@@ -819,20 +813,20 @@ object app {
       * Frame coloring is only available if the frame type is chrome.
       * @since Frame coloring is new in Chrome 36.
       */
-    var activeColor: js.UndefOr[String] = js.native
+    var activeColor: js.UndefOr[String] = js.undefined
     
     /**
       * Allows the frame color to be set. Frame coloring is only available if the frame type is chrome.
       * @since Frame coloring is new in Chrome 36.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Allows the frame color of the window when inactive to be set differently to the active color. Frame coloring is only available if the frame type is chrome.
       * inactiveColor must be used in conjunction with color.
       * @since Frame coloring is new in Chrome 36.
       */
-    var inactiveColor: js.UndefOr[String] = js.native
+    var inactiveColor: js.UndefOr[String] = js.undefined
     
     /**
       * Frame type: none or chrome (defaults to chrome).
@@ -840,14 +834,14 @@ object app {
       * For none, the -webkit-app-region CSS property can be used to apply draggability to the app's window.
       * -webkit-app-region: drag can be used to mark regions draggable. no-drag can be used to disable this style on nested elements.
       */
-    var `type`: typings.chromeApps.chromeAppsStrings.chrome = js.native
+    var `type`: typings.chromeApps.chromeAppsStrings.chrome
   }
   object FrameOptionsChrome {
     
     @scala.inline
-    def apply(`type`: typings.chromeApps.chromeAppsStrings.chrome): FrameOptionsChrome = {
+    def apply(): FrameOptionsChrome = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("chrome")
       __obj.asInstanceOf[FrameOptionsChrome]
     }
     
@@ -881,7 +875,8 @@ object app {
   
   @js.native
   trait WindowParams
-    extends AppWindow
+    extends StObject
+       with AppWindow
        with /* key */ StringDictionary[js.Any] {
     
     var existingWindow: js.UndefOr[Boolean] = js.native
@@ -903,7 +898,6 @@ object app {
     */
   object runtime {
     
-    @js.native
     trait LaunchData extends StObject {
       
       /**
@@ -914,34 +908,34 @@ object app {
         * |____________________|____________|____________________________________________|
         * @since Chrome 54.
         */
-      var actionData: js.UndefOr[ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]] = js.native
+      var actionData: js.UndefOr[ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]] = js.undefined
       
       /**
         * The ID of the file or URL handler that the app is being invoked with.
         * Handler IDs are the top-level keys in the file_handlers and/or url_handlers dictionaries in the manifest.
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
       /**
         * Whether the app is being launched in a Chrome OS kiosk session.
         */
-      var isKioskSession: js.UndefOr[Boolean] = js.native
+      var isKioskSession: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether the app is being launched in a Chrome OS public session.
         * @since Chrome 47.
         */
-      var isPublicSession: js.UndefOr[Boolean] = js.native
+      var isPublicSession: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The file entries for the onLaunched event triggered by a matching file handler in the file_handlers manifest key.
         */
-      var items: js.UndefOr[js.Array[LaunchDataItem]] = js.native
+      var items: js.UndefOr[js.Array[LaunchDataItem]] = js.undefined
       
       /**
         * The referrer URL for the onLaunched event triggered by a matching URL handler in the url_handlers manifest key.
         */
-      var referrerUrl: js.UndefOr[String] = js.native
+      var referrerUrl: js.UndefOr[String] = js.undefined
       
       /**
         * Where the app is launched from.
@@ -956,12 +950,12 @@ object app {
                 command_line_ | background_ | url_handler_ | system_tray_ | context_menu_ | chrome_internal_ | installed_notification_ | kiosk_ | restart_ | reload_ | new_tab_page_ | test_ | extensions_page_ | file_handler_ | management_api_ | about_page_ | load_and_launch_ | untracked_ | app_launcher_ | keyboard_ | ephemeral_app_
               ]
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * The URL for the onLaunched event triggered by a matching URL handler in the url_handlers manifest key.
         */
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object LaunchData {
       
@@ -1036,18 +1030,17 @@ object app {
       }
     }
     
-    @js.native
     trait LaunchDataItem extends StObject {
       
       /**
         * Entry for the item
         */
-      var entry: FileEntry = js.native
+      var entry: FileEntry
       
       /**
         * The MIME type of the file.
         */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object LaunchDataItem {
       

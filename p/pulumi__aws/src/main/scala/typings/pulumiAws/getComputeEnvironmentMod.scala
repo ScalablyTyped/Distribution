@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getComputeEnvironmentMod {
   
-  @JSImport("@pulumi/aws/batch/getComputeEnvironment", "getComputeEnvironment")
+  @JSImport("@pulumi/aws/batch/getComputeEnvironment", JSImport.Namespace)
   @js.native
-  def getComputeEnvironment(args: GetComputeEnvironmentArgs): js.Promise[GetComputeEnvironmentResult] = js.native
-  @JSImport("@pulumi/aws/batch/getComputeEnvironment", "getComputeEnvironment")
-  @js.native
-  def getComputeEnvironment(args: GetComputeEnvironmentArgs, opts: InvokeOptions): js.Promise[GetComputeEnvironmentResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getComputeEnvironment(args: GetComputeEnvironmentArgs): js.Promise[GetComputeEnvironmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComputeEnvironment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetComputeEnvironmentResult]]
+  @scala.inline
+  def getComputeEnvironment(args: GetComputeEnvironmentArgs, opts: InvokeOptions): js.Promise[GetComputeEnvironmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getComputeEnvironment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetComputeEnvironmentResult]]
+  
   trait GetComputeEnvironmentArgs extends StObject {
     
     /**
       * The name of the Batch Compute Environment
       */
-    val computeEnvironmentName: String = js.native
+    val computeEnvironmentName: String
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetComputeEnvironmentArgs {
     
@@ -51,55 +51,54 @@ object getComputeEnvironmentMod {
     }
   }
   
-  @js.native
   trait GetComputeEnvironmentResult extends StObject {
     
     /**
       * The ARN of the compute environment.
       */
-    val arn: String = js.native
+    val arn: String
     
-    val computeEnvironmentName: String = js.native
+    val computeEnvironmentName: String
     
     /**
       * The ARN of the underlying Amazon ECS cluster used by the compute environment.
       */
-    val ecsClusterArn: String = js.native
+    val ecsClusterArn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ARN of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
       */
-    val serviceRole: String = js.native
+    val serviceRole: String
     
     /**
       * The state of the compute environment (for example, `ENABLED` or `DISABLED`). If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues.
       */
-    val state: String = js.native
+    val state: String
     
     /**
       * The current status of the compute environment (for example, `CREATING` or `VALID`).
       */
-    val status: String = js.native
+    val status: String
     
     /**
       * A short, human-readable string to provide additional details about the current status of the compute environment.
       */
-    val statusReason: String = js.native
+    val statusReason: String
     
     /**
       * Key-value map of resource tags
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The type of the compute environment (for example, `MANAGED` or `UNMANAGED`).
       */
-    val `type`: String = js.native
+    val `type`: String
   }
   object GetComputeEnvironmentResult {
     

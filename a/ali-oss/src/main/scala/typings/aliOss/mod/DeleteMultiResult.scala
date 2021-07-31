@@ -2,16 +2,14 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMultiResult extends StObject {
   
-  var deleted: js.UndefOr[js.Array[String]] = js.native
+  var deleted: js.UndefOr[js.Array[String]] = js.undefined
   
   // deleted object names list
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object DeleteMultiResult {
   

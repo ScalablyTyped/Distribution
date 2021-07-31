@@ -2,16 +2,14 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterOperatorsBoolean extends StObject {
   
   @JSName("eq")
-  var eq_FFilterOperatorsBoolean: js.UndefOr[String] = js.native
+  var eq_FFilterOperatorsBoolean: js.UndefOr[String] = js.undefined
   
-  var neq: js.UndefOr[String] = js.native
+  var neq: js.UndefOr[String] = js.undefined
 }
 object FilterOperatorsBoolean {
   

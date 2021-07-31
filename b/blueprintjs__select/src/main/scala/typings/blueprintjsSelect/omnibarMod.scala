@@ -11,7 +11,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object omnibarMod {
@@ -46,20 +45,21 @@ object omnibarMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/select/lib/esm/components/omnibar/omnibar", "Omnibar.ofType")
-    @js.native
-    def ofType[U](): Instantiable1[/* props */ IOmnibarProps[U], Omnibar[U]] = js.native
+    @scala.inline
+    def ofType[U](): Instantiable1[/* props */ IOmnibarProps[U], Omnibar[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IOmnibarProps[U], Omnibar[U]]]
   }
   
   @js.native
-  trait IOmnibarProps[T] extends IListItemsProps[T] {
+  trait IOmnibarProps[T]
+    extends StObject
+       with IListItemsProps[T] {
     
     /**
       * Props to spread to the query `InputGroup`. Use `query` and
       * `onQueryChange` instead of `inputProps.value` and `inputProps.onChange`
       * to control this input.
       */
-    var inputProps: js.UndefOr[IInputGroupProps with HTMLInputProps] = js.native
+    var inputProps: js.UndefOr[IInputGroupProps & HTMLInputProps] = js.native
     
     /**
       * Toggles the visibility of the omnibar.

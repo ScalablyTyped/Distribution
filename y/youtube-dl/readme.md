@@ -10,10 +10,10 @@ youtube-dl driver for node
 | ------------------ | :-------------: |
 | Full name          | youtube-dl |
 | Keywords           | download, video, youtube |
-| # releases         | 11 |
-| # dependents       | 77 |
-| # downloads        | 250898 |
-| # stars            | 37 |
+| # releases         | 16 |
+| # dependents       | 79 |
+| # downloads        | 318225 |
+| # stars            | 38 |
 
 ## Links
 - [Homepage](https://github.com/przemyslawpluta/node-youtube-dl#readme)

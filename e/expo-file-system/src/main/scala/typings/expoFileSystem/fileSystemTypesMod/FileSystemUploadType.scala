@@ -2,7 +2,6 @@ package typings.expoFileSystem.fileSystemTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,13 +11,17 @@ sealed trait FileSystemUploadType extends StObject
 object FileSystemUploadType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FileSystemUploadType with Double] = js.native
+  def apply(value: Double): js.UndefOr[FileSystemUploadType & Double] = js.native
   
   @js.native
-  sealed trait BINARY_CONTENT extends FileSystemUploadType
-  /* 0 */ val BINARY_CONTENT: typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadType.BINARY_CONTENT with Double = js.native
+  sealed trait BINARY_CONTENT
+    extends StObject
+       with FileSystemUploadType
+  /* 0 */ val BINARY_CONTENT: typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadType.BINARY_CONTENT & Double = js.native
   
   @js.native
-  sealed trait MULTIPART extends FileSystemUploadType
-  /* 1 */ val MULTIPART: typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadType.MULTIPART with Double = js.native
+  sealed trait MULTIPART
+    extends StObject
+       with FileSystemUploadType
+  /* 1 */ val MULTIPART: typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadType.MULTIPART & Double = js.native
 }

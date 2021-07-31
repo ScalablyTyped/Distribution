@@ -2,10 +2,8 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Avsfailure extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait Avsfailure extends StObject {
     * postal code. This setting only applies when a ZIP or postal code is
     * provided and they fail bank verification.
     */
-  var avs_failure: js.UndefOr[Boolean] = js.native
+  var avs_failure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether Stripe automatically declines charges with an incorrect CVC.
     * This setting only applies when a CVC is provided and it fails bank
     * verification.
     */
-  var cvc_failure: js.UndefOr[Boolean] = js.native
+  var cvc_failure: js.UndefOr[Boolean] = js.undefined
 }
 object Avsfailure {
   

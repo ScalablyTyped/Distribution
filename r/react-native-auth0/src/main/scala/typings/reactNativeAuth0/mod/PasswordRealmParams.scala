@@ -2,21 +2,19 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PasswordRealmParams extends StObject {
   
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
-  var password: String = js.native
+  var password: String
   
-  var realm: String = js.native
+  var realm: String
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var username: String = js.native
+  var username: String
 }
 object PasswordRealmParams {
   

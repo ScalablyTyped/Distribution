@@ -2,46 +2,44 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimulationJobBatchSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the batch.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the simulation job batch was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The number of created simulation job requests.
     */
-  var createdRequestCount: js.UndefOr[Integer] = js.native
+  var createdRequestCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of failed simulation job requests.
     */
-  var failedRequestCount: js.UndefOr[Integer] = js.native
+  var failedRequestCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the simulation job batch was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.native
+  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
   
   /**
     * The number of pending simulation job requests.
     */
-  var pendingRequestCount: js.UndefOr[Integer] = js.native
+  var pendingRequestCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The status of the simulation job batch.  Pending  The simulation job batch request is pending.  InProgress  The simulation job batch is in progress.   Failed  The simulation job batch failed. One or more simulation job requests could not be completed due to an internal failure (like InternalServiceError). See failureCode and failureReason for more information.  Completed  The simulation batch job completed. A batch is complete when (1) there are no pending simulation job requests in the batch and none of the failed simulation job requests are due to InternalServiceError and (2) when all created simulation jobs have reached a terminal state (for example, Completed or Failed).   Canceled  The simulation batch job was cancelled.  Canceling  The simulation batch job is being cancelled.  Completing  The simulation batch job is completing.  TimingOut  The simulation job batch is timing out. If a batch timing out, and there are pending requests that were failing due to an internal failure (like InternalServiceError), the batch status will be Failed. If there are no such failing request, the batch status will be TimedOut.   TimedOut  The simulation batch job timed out.  
     */
-  var status: js.UndefOr[SimulationJobBatchStatus] = js.native
+  var status: js.UndefOr[SimulationJobBatchStatus] = js.undefined
 }
 object SimulationJobBatchSummary {
   

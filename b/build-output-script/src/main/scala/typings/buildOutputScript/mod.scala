@@ -2,7 +2,6 @@ package typings.buildOutputScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,22 +15,24 @@ object mod {
     * @param outputs An array of one or more output objects.
     * @returns A (hex string) P2PKH transaction output script.
     */
+  @scala.inline
+  def apply(outputs: Array[Output]): String = ^.asInstanceOf[js.Dynamic].apply(outputs.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("build-output-script", JSImport.Namespace)
   @js.native
-  def apply(outputs: Array[Output]): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Output extends StObject {
     
     /**
       * A valid P2PKH address.
       */
-    var address: String = js.native
+    var address: String
     
     /**
       * Value to send to `address` in satoshis.
       */
-    var value: Double = js.native
+    var value: Double
   }
   object Output {
     

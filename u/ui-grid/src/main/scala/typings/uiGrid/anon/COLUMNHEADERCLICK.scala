@@ -2,19 +2,17 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait COLUMNHEADERCLICK extends StObject {
   
-  var COLUMN_HEADER_CLICK: String = js.native
+  var COLUMN_HEADER_CLICK: String
   
-  var COLUMN_MENU_SHOWN: String = js.native
+  var COLUMN_MENU_SHOWN: String
   
-  var GRID_SCROLL: String = js.native
+  var GRID_SCROLL: String
   
-  var ITEM_DRAGGING: String = js.native
+  var ITEM_DRAGGING: String
 }
 object COLUMNHEADERCLICK {
   

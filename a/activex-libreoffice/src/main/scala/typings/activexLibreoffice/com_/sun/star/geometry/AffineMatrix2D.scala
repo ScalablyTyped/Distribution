@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.geometry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,20 +26,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * output device, like a screen or a printer, Then, the total transformation matrix and the device resolution determine the actual measurement unit.
   * @since OOo 2.0
   */
-@js.native
 trait AffineMatrix2D extends StObject {
   
-  var m00: Double = js.native
+  var m00: Double
   
-  var m01: Double = js.native
+  var m01: Double
   
-  var m02: Double = js.native
+  var m02: Double
   
-  var m10: Double = js.native
+  var m10: Double
   
-  var m11: Double = js.native
+  var m11: Double
   
-  var m12: Double = js.native
+  var m12: Double
 }
 object AffineMatrix2D {
   

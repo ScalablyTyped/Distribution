@@ -6,15 +6,15 @@ import typings.winrt.Windows.Media.Capture.MediaStreamType
 import typings.winrt.Windows.Media.MediaProperties.IMediaEncodingProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAudioDeviceController extends IMediaDeviceController {
+trait IAudioDeviceController
+  extends StObject
+     with IMediaDeviceController {
   
-  var muted: Boolean = js.native
+  var muted: Boolean
   
-  var volumePercent: Double = js.native
+  var volumePercent: Double
 }
 object IAudioDeviceController {
   

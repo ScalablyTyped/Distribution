@@ -2,87 +2,85 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ALT extends StObject {
   
-  var ALT: Double = js.native
+  var ALT: Double
   
-  var ALTR: Double = js.native
+  var ALTR: Double
   
-  var ALTRIGHT: Double = js.native
+  var ALTRIGHT: Double
   
-  var BACKSPACE: Double = js.native
+  var BACKSPACE: Double
   
-  var BCKSP: Double = js.native
+  var BCKSP: Double
   
-  var CAPSLOCK: Double = js.native
+  var CAPSLOCK: Double
   
-  var CTRL: Double = js.native
+  var CTRL: Double
   
-  var CTRLR: Double = js.native
+  var CTRLR: Double
   
-  var CTRLRIGHT: Double = js.native
+  var CTRLRIGHT: Double
   
-  var DEL: Double = js.native
+  var DEL: Double
   
-  var DOWN: Double = js.native
+  var DOWN: Double
   
-  var ENTER: Double = js.native
+  var ENTER: Double
   
-  var ESC: Double = js.native
+  var ESC: Double
   
-  var F1: Double = js.native
+  var F1: Double
   
-  var F10: Double = js.native
+  var F10: Double
   
-  var F11: Double = js.native
+  var F11: Double
   
-  var F12: Double = js.native
+  var F12: Double
   
-  var F2: Double = js.native
+  var F2: Double
   
-  var F3: Double = js.native
+  var F3: Double
   
-  var F4: Double = js.native
+  var F4: Double
   
-  var F5: Double = js.native
+  var F5: Double
   
-  var F6: Double = js.native
+  var F6: Double
   
-  var F7: Double = js.native
+  var F7: Double
   
-  var F8: Double = js.native
+  var F8: Double
   
-  var F9: Double = js.native
+  var F9: Double
   
-  var FN: Double = js.native
+  var FN: Double
   
-  var LEFT: Double = js.native
+  var LEFT: Double
   
-  var MAC: Double = js.native
+  var MAC: Double
   
-  var PG_DOWN: Double = js.native
+  var PG_DOWN: Double
   
-  var PG_UP: Double = js.native
+  var PG_UP: Double
   
-  var RETURN: Double = js.native
+  var RETURN: Double
   
-  var RIGHT: Double = js.native
+  var RIGHT: Double
   
-  var SHIFT: Double = js.native
+  var SHIFT: Double
   
-  var SPACE: Double = js.native
+  var SPACE: Double
   
-  var STRG: Double = js.native
+  var STRG: Double
   
-  var TAB: Double = js.native
+  var TAB: Double
   
-  var UP: Double = js.native
+  var UP: Double
   
-  var WIN: Double = js.native
+  var WIN: Double
 }
 object ALT {
   

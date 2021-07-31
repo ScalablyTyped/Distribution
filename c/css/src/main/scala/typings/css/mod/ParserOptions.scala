@@ -2,17 +2,15 @@ package typings.css.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParserOptions extends StObject {
   
   /** Silently fail on parse errors */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /** The path to the file containing css. Makes errors and source maps more helpful, by letting them know where code comes from. */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object ParserOptions {
   

@@ -8,48 +8,48 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.SortDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes sort criteria for sorting text.
   * @deprecated Deprecated
   */
-@js.native
-trait TextSortDescriptor extends SortDescriptor {
+trait TextSortDescriptor
+  extends StObject
+     with SortDescriptor {
   
   /** contains the character that marks the separation of columns. */
-  var Delimiter: String = js.native
+  var Delimiter: String
   
   /** determines if the sorting in the first search key is done in ascending or descending order. */
-  var IsSortAscending0: Boolean = js.native
+  var IsSortAscending0: Boolean
   
   /** determines if the sorting in the second search key is done in ascending or descending order. */
-  var IsSortAscending1: Boolean = js.native
+  var IsSortAscending1: Boolean
   
   /** determines if the sorting in the third search key is done in ascending or descending order. */
-  var IsSortAscending2: Boolean = js.native
+  var IsSortAscending2: Boolean
   
   /** determines if the content of a table is to be sorted. */
-  var IsSortInTable: Boolean = js.native
+  var IsSortInTable: Boolean
   
   /** determines if the sorting in the first search key is done numeric or alphanumeric order. */
-  var IsSortNumeric0: Boolean = js.native
+  var IsSortNumeric0: Boolean
   
   /** determines if the sorting in the second search key is done in numeric or alphanumeric order. */
-  var IsSortNumeric1: Boolean = js.native
+  var IsSortNumeric1: Boolean
   
   /** determines if the sorting in the third search key is done in numeric or alphanumeric order. */
-  var IsSortNumeric2: Boolean = js.native
+  var IsSortNumeric2: Boolean
   
   /** contains the row or column index used in the first search key. */
-  var SortRowOrColumnNo0: Double = js.native
+  var SortRowOrColumnNo0: Double
   
   /** contains the row or column index used in the second search key. */
-  var SortRowOrColumnNo1: Double = js.native
+  var SortRowOrColumnNo1: Double
   
   /** contains the row or column index used in the third search key. */
-  var SortRowOrColumnNo2: Double = js.native
+  var SortRowOrColumnNo2: Double
 }
 object TextSortDescriptor {
   

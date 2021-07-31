@@ -2,7 +2,6 @@ package typings.cordovaPluginContacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,17 +16,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * url when the value attribute contains a URL to the photo image, or base64 when the value
   * contains a base64-encoded image string.
   */
-@js.native
 trait ContactField extends StObject {
   
   /** Set to true if this ContactField contains the user's preferred value. */
-  var pref: Boolean = js.native
+  var pref: Boolean
   
   /** A string that indicates what type of field this is, home for example. */
-  var `type`: String = js.native
+  var `type`: String
   
   /** The value of the field, such as a phone number or email address. */
-  var value: String = js.native
+  var value: String
 }
 object ContactField {
   

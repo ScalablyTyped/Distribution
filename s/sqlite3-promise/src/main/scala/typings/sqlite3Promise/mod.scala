@@ -4,10 +4,13 @@ import typings.sqlite3.mod.sqlite3
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("sqlite3-promise", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sqlite3-promise", "Database")
   @js.native
@@ -16,12 +19,8 @@ object mod {
     def this(filename: String) = this()
     def this(filename: String, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
     def this(filename: String, mode: Double) = this()
-    def this(
-      filename: String,
-      mode: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | Null, Unit]
-    ) = this()
     def this(filename: String, mode: Double, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
+    def this(filename: String, mode: Unit, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
   }
   
   @JSImport("sqlite3-promise", "OPEN_CREATE")
@@ -55,37 +54,35 @@ object mod {
   
   object cached {
     
-    @JSImport("sqlite3-promise", "cached.Database")
+    @JSImport("sqlite3-promise", "cached")
     @js.native
-    def Database(filename: String): typings.sqlite3.mod.Database = js.native
-    @JSImport("sqlite3-promise", "cached.Database")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def Database(filename: String): typings.sqlite3.mod.Database = ^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.sqlite3.mod.Database]
+    @scala.inline
     def Database(
       filename: String,
       callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
-    ): typings.sqlite3.mod.Database = js.native
-    @JSImport("sqlite3-promise", "cached.Database")
-    @js.native
-    def Database(
-      filename: String,
-      mode: js.UndefOr[scala.Nothing],
-      callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
-    ): typings.sqlite3.mod.Database = js.native
-    @JSImport("sqlite3-promise", "cached.Database")
-    @js.native
-    def Database(filename: String, mode: Double): typings.sqlite3.mod.Database = js.native
-    @JSImport("sqlite3-promise", "cached.Database")
-    @js.native
+    ): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
+    @scala.inline
+    def Database(filename: String, mode: Double): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
+    @scala.inline
     def Database(
       filename: String,
       mode: Double,
       callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
-    ): typings.sqlite3.mod.Database = js.native
+    ): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
+    @scala.inline
+    def Database(
+      filename: String,
+      mode: Unit,
+      callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
+    ): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
   }
   
-  @JSImport("sqlite3-promise", "verbose")
-  @js.native
-  def verbose(): sqlite3 = js.native
+  @scala.inline
+  def verbose(): sqlite3 = ^.asInstanceOf[js.Dynamic].applyDynamic("verbose")().asInstanceOf[sqlite3]
   
   /* augmented module */
   object sqlite3AugmentingMod {
@@ -93,7 +90,7 @@ object mod {
     @js.native
     trait Database extends StObject {
       
-      def allAsync(sql: String): js.Promise[js.Array[_]] = js.native
+      def allAsync(sql: String): js.Promise[js.Array[js.Any]] = js.native
       
       def closeAsync(): js.Promise[Unit] = js.native
       
@@ -121,7 +118,7 @@ object mod {
       
       def execAsync(sql: String): js.Promise[typings.sqlite3.mod.Statement] = js.native
       
-      def getAsync(sql: String): js.Promise[_] = js.native
+      def getAsync(sql: String): js.Promise[js.Any] = js.native
       
       def runAsync(sql: String): js.Promise[Unit] = js.native
     }

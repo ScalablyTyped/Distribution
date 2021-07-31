@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileStyle extends StObject {
   
   /**
     * The border around a tile.
     */
-  var Border: js.UndefOr[BorderStyle] = js.native
+  var Border: js.UndefOr[BorderStyle] = js.undefined
 }
 object TileStyle {
   

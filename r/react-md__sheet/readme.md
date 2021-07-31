@@ -10,9 +10,9 @@ A package for making temporary sheets of material (normally for navigation or de
 | ------------------ | :-------------: |
 | Full name          | @react-md/sheet |
 | Keywords           | react-md, material design, react, sheet, bottom sheet, side sheet, component, components |
-| # releases         | 32 |
+| # releases         | 39 |
 | # dependents       | 2 |
-| # downloads        | 6642 |
+| # downloads        | 18132 |
 | # stars            | 0 |
 
 ## Links

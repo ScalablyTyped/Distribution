@@ -2,41 +2,39 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionBulkWriteOptions extends StObject {
   
   /**
     * Allow driver to bypass schema validation in MongoDB 3.2 or higher.
     */
-  var bypassDocumentValidation: js.UndefOr[Boolean] = js.native
+  var bypassDocumentValidation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify a journal write concern.
     */
-  var j: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Execute write operation in ordered or unordered fashion.
     */
-  var ordered: js.UndefOr[Boolean] = js.native
+  var ordered: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Serialize functions on any object.
     */
-  var serializeFunctions: js.UndefOr[Boolean] = js.native
+  var serializeFunctions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The write concern.
     */
-  var w: js.UndefOr[scala.Double | String] = js.native
+  var w: js.UndefOr[scala.Double | String] = js.undefined
   
   /**
     * The write concern timeout.
     */
-  var wtimeout: js.UndefOr[scala.Double] = js.native
+  var wtimeout: js.UndefOr[scala.Double] = js.undefined
 }
 object CollectionBulkWriteOptions {
   

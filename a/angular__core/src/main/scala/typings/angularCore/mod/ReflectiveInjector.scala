@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ReflectiveInjector")
@@ -128,6 +127,10 @@ abstract class ReflectiveInjector () extends Injector {
 /* static members */
 object ReflectiveInjector {
   
+  @JSImport("@angular/core", "ReflectiveInjector")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates an injector from previously resolved providers.
     *
@@ -151,12 +154,10 @@ object ReflectiveInjector {
     * expect(injector.get(Car) instanceof Car).toBe(true);
     * ```
     */
-  @JSImport("@angular/core", "ReflectiveInjector.fromResolvedProviders")
-  @js.native
-  def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider]): ReflectiveInjector = js.native
-  @JSImport("@angular/core", "ReflectiveInjector.fromResolvedProviders")
-  @js.native
-  def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider], parent: Injector): ReflectiveInjector = js.native
+  @scala.inline
+  def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider]): ReflectiveInjector = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResolvedProviders")(providers.asInstanceOf[js.Any]).asInstanceOf[ReflectiveInjector]
+  @scala.inline
+  def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider], parent: Injector): ReflectiveInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("fromResolvedProviders")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[ReflectiveInjector]
   
   /**
     * Turns an array of provider definitions into an array of resolved providers.
@@ -191,9 +192,8 @@ object ReflectiveInjector {
     * ```
     *
     */
-  @JSImport("@angular/core", "ReflectiveInjector.resolve")
-  @js.native
-  def resolve(providers: js.Array[Provider]): js.Array[ResolvedReflectiveProvider] = js.native
+  @scala.inline
+  def resolve(providers: js.Array[Provider]): js.Array[ResolvedReflectiveProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(providers.asInstanceOf[js.Any]).asInstanceOf[js.Array[ResolvedReflectiveProvider]]
   
   /**
     * Resolves an array of providers and creates an injector from those providers.
@@ -218,10 +218,8 @@ object ReflectiveInjector {
     * expect(injector.get(Car) instanceof Car).toBe(true);
     * ```
     */
-  @JSImport("@angular/core", "ReflectiveInjector.resolveAndCreate")
-  @js.native
-  def resolveAndCreate(providers: js.Array[Provider]): ReflectiveInjector = js.native
-  @JSImport("@angular/core", "ReflectiveInjector.resolveAndCreate")
-  @js.native
-  def resolveAndCreate(providers: js.Array[Provider], parent: Injector): ReflectiveInjector = js.native
+  @scala.inline
+  def resolveAndCreate(providers: js.Array[Provider]): ReflectiveInjector = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAndCreate")(providers.asInstanceOf[js.Any]).asInstanceOf[ReflectiveInjector]
+  @scala.inline
+  def resolveAndCreate(providers: js.Array[Provider], parent: Injector): ReflectiveInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAndCreate")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[ReflectiveInjector]
 }

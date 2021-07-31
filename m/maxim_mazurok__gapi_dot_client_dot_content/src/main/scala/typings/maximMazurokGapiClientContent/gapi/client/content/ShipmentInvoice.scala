@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShipmentInvoice extends StObject {
   
   /** [required] Invoice summary. */
-  var invoiceSummary: js.UndefOr[InvoiceSummary] = js.native
+  var invoiceSummary: js.UndefOr[InvoiceSummary] = js.undefined
   
   /** [required] Invoice details per line item. */
-  var lineItemInvoices: js.UndefOr[js.Array[ShipmentInvoiceLineItemInvoice]] = js.native
+  var lineItemInvoices: js.UndefOr[js.Array[ShipmentInvoiceLineItemInvoice]] = js.undefined
   
   /**
     * [required] ID of the shipment group. It is assigned by the merchant in the `shipLineItems` method and is used to group multiple line items that have the same kind of shipping
     * charges.
     */
-  var shipmentGroupId: js.UndefOr[String] = js.native
+  var shipmentGroupId: js.UndefOr[String] = js.undefined
 }
 object ShipmentInvoice {
   

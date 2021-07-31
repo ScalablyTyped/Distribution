@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationsResource extends StObject {
   
-  var autoscalingPolicies: AutoscalingPoliciesResource = js.native
+  var autoscalingPolicies: AutoscalingPoliciesResource
   
-  var workflowTemplates: WorkflowTemplatesResource = js.native
+  var workflowTemplates: WorkflowTemplatesResource
 }
 object LocationsResource {
   

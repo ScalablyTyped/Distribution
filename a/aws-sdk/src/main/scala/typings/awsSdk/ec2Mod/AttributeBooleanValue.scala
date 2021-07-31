@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeBooleanValue extends StObject {
   
   /**
     * The attribute value. The valid values are true or false.
     */
-  var Value: js.UndefOr[Boolean] = js.native
+  var Value: js.UndefOr[Boolean] = js.undefined
 }
 object AttributeBooleanValue {
   

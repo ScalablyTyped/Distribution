@@ -2,35 +2,33 @@ package typings.postcssSelectorParser.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeTypes extends StObject {
   
-  var attribute: Attribute_ = js.native
+  var attribute: Attribute_
   
-  var `class`: ClassName_ = js.native
+  var `class`: ClassName_
   
-  var combinator: Combinator_ = js.native
+  var combinator: Combinator_
   
-  var comment: Comment_ = js.native
+  var comment: Comment_
   
-  var id: Identifier = js.native
+  var id: Identifier
   
-  var nesting: Nesting_ = js.native
+  var nesting: Nesting_
   
-  var pseudo: Pseudo_ = js.native
+  var pseudo: Pseudo_
   
-  var root: Root_ = js.native
+  var root: Root_
   
-  var selector: Selector_ = js.native
+  var selector: Selector_
   
-  var string: String_ = js.native
+  var string: String_
   
-  var tag: Tag_ = js.native
+  var tag: Tag_
   
-  var universal: Universal_ = js.native
+  var universal: Universal_
 }
 object NodeTypes {
   

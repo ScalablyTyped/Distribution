@@ -4,23 +4,23 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DistributionNormal extends Distribution {
+trait DistributionNormal
+  extends StObject
+     with Distribution {
   
-  var function: normal = js.native
+  var function: normal
   
-  var mean: js.UndefOr[Double | SignalRef] = js.native
+  var mean: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var stdev: js.UndefOr[Double | SignalRef] = js.native
+  var stdev: js.UndefOr[Double | SignalRef] = js.undefined
 }
 object DistributionNormal {
   
   @scala.inline
-  def apply(function: normal): DistributionNormal = {
-    val __obj = js.Dynamic.literal(function = function.asInstanceOf[js.Any])
+  def apply(): DistributionNormal = {
+    val __obj = js.Dynamic.literal(function = "normal")
     __obj.asInstanceOf[DistributionNormal]
   }
   

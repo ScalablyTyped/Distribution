@@ -2,15 +2,13 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarginTopPaddingHorizontal extends StObject {
   
-  var marginTop: Double = js.native
+  var marginTop: Double
   
-  var paddingHorizontal: Double = js.native
+  var paddingHorizontal: Double
 }
 object MarginTopPaddingHorizontal {
   

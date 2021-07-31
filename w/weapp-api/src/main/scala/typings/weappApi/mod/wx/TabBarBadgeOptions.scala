@@ -2,17 +2,17 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabBarBadgeOptions extends CommonCallbackOptions {
+trait TabBarBadgeOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   //  tabBar 的哪一项，从左边算起
-  var index: Double = js.native
+  var index: Double
   
   //  显示的文本，超过 4 个字符则显示成 ...
-  var text: String = js.native
+  var text: String
 }
 object TabBarBadgeOptions {
   

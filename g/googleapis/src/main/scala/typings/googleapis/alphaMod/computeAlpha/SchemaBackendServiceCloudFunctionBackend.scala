@@ -2,25 +2,23 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration of a Cloud Function backend.
   */
-@js.native
 trait SchemaBackendServiceCloudFunctionBackend extends StObject {
   
   /**
     * Required. A cloud function name. Special value ?*? represents all cloud
     * functions in the project.
     */
-  var functionName: js.UndefOr[String] = js.native
+  var functionName: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Project ID of the project hosting the cloud function.
     */
-  var targetProject: js.UndefOr[String] = js.native
+  var targetProject: js.UndefOr[String] = js.undefined
 }
 object SchemaBackendServiceCloudFunctionBackend {
   

@@ -2,42 +2,36 @@ package typings.archy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("archy", JSImport.Namespace)
-  @js.native
-  def apply(obj: String): String = js.native
-  @JSImport("archy", JSImport.Namespace)
-  @js.native
-  def apply(obj: String, prefix: js.UndefOr[scala.Nothing], opts: Options): String = js.native
-  @JSImport("archy", JSImport.Namespace)
-  @js.native
-  def apply(obj: String, prefix: String): String = js.native
-  @JSImport("archy", JSImport.Namespace)
-  @js.native
-  def apply(obj: String, prefix: String, opts: Options): String = js.native
-  @JSImport("archy", JSImport.Namespace)
-  @js.native
-  def apply(obj: Data): String = js.native
-  @JSImport("archy", JSImport.Namespace)
-  @js.native
-  def apply(obj: Data, prefix: js.UndefOr[scala.Nothing], opts: Options): String = js.native
-  @JSImport("archy", JSImport.Namespace)
-  @js.native
-  def apply(obj: Data, prefix: String): String = js.native
-  @JSImport("archy", JSImport.Namespace)
-  @js.native
-  def apply(obj: Data, prefix: String, opts: Options): String = js.native
+  @scala.inline
+  def apply(obj: String): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: String, prefix: String): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: String, prefix: String, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: String, prefix: Unit, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: Data): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: Data, prefix: String): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: Data, prefix: String, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: Data, prefix: Unit, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("archy", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Data extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var nodes: js.UndefOr[js.Array[Data | String]] = js.native
+    var nodes: js.UndefOr[js.Array[Data | String]] = js.undefined
   }
   object Data {
     
@@ -64,10 +58,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var unicode: js.UndefOr[Boolean] = js.native
+    var unicode: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

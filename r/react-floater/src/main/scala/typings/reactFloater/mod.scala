@@ -16,7 +16,6 @@ import typings.reactFloater.reactFloaterStrings.wrapper
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -102,123 +101,122 @@ object mod {
     def `top-start`: typings.reactFloater.reactFloaterStrings.`top-start` = "top-start".asInstanceOf[typings.reactFloater.reactFloaterStrings.`top-start`]
   }
   
-  @js.native
   trait Props extends StObject {
     
     /**
       * Open the Floater automatically.
       */
-    var autoOpen: js.UndefOr[Boolean] = js.native
+    var autoOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * It will be called when the Floater change state
       */
     var callback: js.UndefOr[
         js.Function2[/* action */ Action, /* props */ PropsWithComponent | PropsWithContent, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An element to trigger the Floater.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Log some basic actions.
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Animate the Floater on scroll/resize.
       */
-    var disableAnimation: js.UndefOr[Boolean] = js.native
+    var disableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable changes in the Floater position on scroll/resize.
       */
-    var disableFlip: js.UndefOr[Boolean] = js.native
+    var disableFlip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Don't convert hover event to click on mobile.
       */
-    var disableHoverToClick: js.UndefOr[Boolean] = js.native
+    var disableHoverToClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The event that will trigger the Floater. It can be hover | click.
       * These won't work in controlled mode.
       */
-    var event: js.UndefOr[click | hover] = js.native
+    var event: js.UndefOr[click | hover] = js.undefined
     
     /**
       * The amount of time (in seconds) that the floater should wait after a mouseLeave event before hiding. Only valid for event type hover.
       */
-    var eventDelay: js.UndefOr[Double] = js.native
+    var eventDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * It can be anything that can be rendered.
       */
-    var footer: js.UndefOr[ReactNode] = js.native
+    var footer: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Get the popper.js instance
       */
-    var getPopper: js.UndefOr[js.Function2[/* popper */ Data, /* origin */ floater | wrapper, Unit]] = js.native
+    var getPopper: js.UndefOr[js.Function2[/* popper */ Data, /* origin */ floater | wrapper, Unit]] = js.undefined
     
     /**
       * Don't show the arrow. Useful for centered or modal layout.
       */
-    var hideArrow: js.UndefOr[Boolean] = js.native
+    var hideArrow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * In case that you need to identify the portal.
       */
-    var id: js.UndefOr[String | Double] = js.native
+    var id: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The distance between the Floater and its target in pixels.
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * Controlled mode.
       */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Customize popper.js modifiers.
       */
-    var options: js.UndefOr[Modifiers] = js.native
+    var options: js.UndefOr[Modifiers] = js.undefined
     
     /**
       * The placement of the Floater. It will update the position if there's no space available.
       */
-    var placement: js.UndefOr[Placement] = js.native
+    var placement: js.UndefOr[Placement] = js.undefined
     
     /**
       * It will show a ⨉ button to close the Floater.
       */
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Customize the default UI.
       */
-    var styles: js.UndefOr[PartialStyles] = js.native
+    var styles: js.UndefOr[PartialStyles] = js.undefined
     
     /**
       * The target used to calculate the Floater position. If it's not set, it will use the `children` as the target.
       */
-    var target: js.UndefOr[String | HTMLElement | Null] = js.native
+    var target: js.UndefOr[String | HTMLElement | Null] = js.undefined
     
     /**
       * It can be anything that can be rendered.
       */
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Position the wrapper relative to the target.
       */
-    var wrapperOptions: js.UndefOr[Offset] = js.native
+    var wrapperOptions: js.UndefOr[Offset] = js.undefined
   }
   object Props {
     
@@ -374,14 +372,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait PropsWithComponent extends Props {
+  trait PropsWithComponent
+    extends StObject
+       with Props {
     
     /**
       * A React component or function to as a custom UI for the Floater.
       * The prop closeFloater will be available in your component.
       */
-    def component(renderProps: RenderProps): ReactNode = js.native
+    def component(renderProps: RenderProps): ReactNode
   }
   object PropsWithComponent {
     
@@ -399,14 +398,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait PropsWithContent extends Props {
+  trait PropsWithContent
+    extends StObject
+       with Props {
     
     /**
       * The Floater content. It can be anything that can be rendered.
       * This is the only required props, unless you pass a component.
       */
-    var content: ReactNode = js.native
+    var content: ReactNode
   }
   object PropsWithContent {
     
@@ -429,10 +429,9 @@ object mod {
   
   type ReactFloater = Component[PropsWithComponent | PropsWithContent, js.Object, js.Any]
   
-  @js.native
   trait RenderProps extends StObject {
     
-    def closeFn(): Unit = js.native
+    def closeFn(): Unit
   }
   object RenderProps {
     
@@ -450,38 +449,37 @@ object mod {
     }
   }
   
-  @js.native
   trait Styles extends StObject {
     
-    var arrow: CSSPropertieslengthnumber = js.native
+    var arrow: CSSPropertieslengthnumber
     
-    var close: CSSProperties = js.native
+    var close: CSSProperties
     
-    var container: CSSProperties = js.native
+    var container: CSSProperties
     
-    var content: CSSProperties = js.native
+    var content: CSSProperties
     
-    var floater: CSSProperties = js.native
+    var floater: CSSProperties
     
-    var floaterCentered: CSSProperties = js.native
+    var floaterCentered: CSSProperties
     
-    var floaterClosing: CSSProperties = js.native
+    var floaterClosing: CSSProperties
     
-    var floaterOpening: CSSProperties = js.native
+    var floaterOpening: CSSProperties
     
-    var floaterWithAnimation: CSSProperties = js.native
+    var floaterWithAnimation: CSSProperties
     
-    var floaterWithComponent: CSSProperties = js.native
+    var floaterWithComponent: CSSProperties
     
-    var footer: CSSProperties = js.native
+    var footer: CSSProperties
     
-    var options: ZIndex = js.native
+    var options: ZIndex
     
-    var title: CSSProperties = js.native
+    var title: CSSProperties
     
-    var wrapper: CSSProperties = js.native
+    var wrapper: CSSProperties
     
-    var wrapperPosition: CSSProperties = js.native
+    var wrapperPosition: CSSProperties
   }
   object Styles {
     

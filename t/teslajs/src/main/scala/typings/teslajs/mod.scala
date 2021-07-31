@@ -5,10 +5,13 @@ import typings.std.Error
 import typings.teslajs.anon.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("teslajs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("teslajs", "API_BODY_LEVEL")
   @js.native
@@ -82,188 +85,142 @@ object mod {
   @js.native
   val TRUNK: String = js.native
   
-  @JSImport("teslajs", "calendar")
-  @js.native
-  def calendar(options: optionsType, entry: js.Any, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def calendar(options: optionsType, entry: js.Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("calendar")(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "calendarAsync")
-  @js.native
-  def calendarAsync(options: optionsType, entry: js.Any): js.Promise[Result] = js.native
+  @scala.inline
+  def calendarAsync(options: optionsType, entry: js.Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("calendarAsync")(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "cancelSoftwareUpdate")
-  @js.native
-  def cancelSoftwareUpdate(options: optionsType, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def cancelSoftwareUpdate(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cancelSoftwareUpdate")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "cancelSoftwareUpdateAsync")
-  @js.native
-  def cancelSoftwareUpdateAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def cancelSoftwareUpdateAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelSoftwareUpdateAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "chargeMaxRange")
-  @js.native
-  def chargeMaxRange(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def chargeMaxRange(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chargeMaxRange")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "chargeMaxRangeAsync")
-  @js.native
-  def chargeMaxRangeAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def chargeMaxRangeAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("chargeMaxRangeAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "chargeStandard")
-  @js.native
-  def chargeStandard(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def chargeStandard(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chargeStandard")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "chargeStandardAsync")
-  @js.native
-  def chargeStandardAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def chargeStandardAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("chargeStandardAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "chargeState")
-  @js.native
-  def chargeState(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def chargeState(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chargeState")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "chargeStateAsync")
-  @js.native
-  def chargeStateAsync(options: optionsType): js.Promise[js.Object] = js.native
+  @scala.inline
+  def chargeStateAsync(options: optionsType): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("chargeStateAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("teslajs", "climateStart")
-  @js.native
-  def climateStart(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def climateStart(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("climateStart")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "climateStartAsync")
-  @js.native
-  def climateStartAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def climateStartAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("climateStartAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "climateState")
-  @js.native
-  def climateState(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def climateState(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("climateState")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "climateStateAsync")
-  @js.native
-  def climateStateAsync(options: optionsType): js.Promise[js.Object] = js.native
+  @scala.inline
+  def climateStateAsync(options: optionsType): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("climateStateAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("teslajs", "climateStop")
-  @js.native
-  def climateStop(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def climateStop(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("climateStop")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "climateStopAsync")
-  @js.native
-  def climateStopAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def climateStopAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("climateStopAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "closeChargePort")
-  @js.native
-  def closeChargePort(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def closeChargePort(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("closeChargePort")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "closeChargePortAsync")
-  @js.native
-  def closeChargePortAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def closeChargePortAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeChargePortAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "doorLock")
-  @js.native
-  def doorLock(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def doorLock(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doorLock")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "doorLockAsync")
-  @js.native
-  def doorLockAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def doorLockAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("doorLockAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "doorUnlock")
-  @js.native
-  def doorUnlock(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def doorUnlock(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doorUnlock")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "doorUnlockAsync")
-  @js.native
-  def doorUnlockAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def doorUnlockAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("doorUnlockAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "driveState")
-  @js.native
-  def driveState(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def driveState(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("driveState")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "driveStateAsync")
-  @js.native
-  def driveStateAsync(options: optionsType): js.Promise[js.Object] = js.native
+  @scala.inline
+  def driveStateAsync(options: optionsType): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("driveStateAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("teslajs", "flashLights")
-  @js.native
-  def flashLights(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def flashLights(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flashLights")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "flashLightsAsync")
-  @js.native
-  def flashLightsAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def flashLightsAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("flashLightsAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "get_command")
-  @js.native
-  def getCommand(options: optionsType, command: String, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def getCommand(options: optionsType, command: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get_command")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "get_commandAsync")
-  @js.native
-  def getCommandAsync(options: optionsType, command: String): js.Promise[_] = js.native
+  @scala.inline
+  def getCommandAsync(options: optionsType, command: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get_commandAsync")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("teslajs", "getLogLevel")
-  @js.native
-  def getLogLevel(): Double = js.native
+  @scala.inline
+  def getLogLevel(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogLevel")().asInstanceOf[Double]
   
-  @JSImport("teslajs", "getModel")
-  @js.native
-  def getModel(vehicle: Vehicle_): String = js.native
+  @scala.inline
+  def getModel(vehicle: Vehicle_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModel")(vehicle.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("teslajs", "getPaintColor")
-  @js.native
-  def getPaintColor(vehicle: Vehicle_): String = js.native
+  @scala.inline
+  def getPaintColor(vehicle: Vehicle_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPaintColor")(vehicle.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("teslajs", "getPortalBaseURI")
-  @js.native
-  def getPortalBaseURI(): String = js.native
+  @scala.inline
+  def getPortalBaseURI(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPortalBaseURI")().asInstanceOf[String]
   
-  @JSImport("teslajs", "getShortVin")
-  @js.native
-  def getShortVin(vehicle: Vehicle_): String = js.native
+  @scala.inline
+  def getShortVin(vehicle: Vehicle_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getShortVin")(vehicle.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("teslajs", "getStreamingBaseURI")
-  @js.native
-  def getStreamingBaseURI(): String = js.native
+  @scala.inline
+  def getStreamingBaseURI(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStreamingBaseURI")().asInstanceOf[String]
   
-  @JSImport("teslajs", "getVin")
-  @js.native
-  def getVin(vehicle: Vehicle_): String = js.native
+  @scala.inline
+  def getVin(vehicle: Vehicle_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVin")(vehicle.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("teslajs", "guiSettings")
-  @js.native
-  def guiSettings(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def guiSettings(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("guiSettings")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "guiSettingsAsync")
-  @js.native
-  def guiSettingsAsync(options: optionsType): js.Promise[js.Object] = js.native
+  @scala.inline
+  def guiSettingsAsync(options: optionsType): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("guiSettingsAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("teslajs", "homelink")
-  @js.native
-  def homelink(options: optionsType, lat: Double, long: Double, token: String, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def homelink(options: optionsType, lat: Double, long: Double, token: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("homelink")(options.asInstanceOf[js.Any], lat.asInstanceOf[js.Any], long.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "homelinkAsync")
-  @js.native
-  def homelinkAsync(options: optionsType, lat: Double, long: Double, token: String): js.Promise[Result] = js.native
+  @scala.inline
+  def homelinkAsync(options: optionsType, lat: Double, long: Double, token: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("homelinkAsync")(options.asInstanceOf[js.Any], lat.asInstanceOf[js.Any], long.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "honkHorn")
-  @js.native
-  def honkHorn(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def honkHorn(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("honkHorn")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "honkHornAsync")
-  @js.native
-  def honkHornAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def honkHornAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("honkHornAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "login")
-  @js.native
-  def login(username: String, password: String, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def login(username: String, password: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "loginAsync")
-  @js.native
-  def loginAsync(username: String, password: String): js.Promise[TokenResponse] = js.native
+  @scala.inline
+  def loginAsync(username: String, password: String): js.Promise[TokenResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("loginAsync")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TokenResponse]]
   
-  @JSImport("teslajs", "logout")
-  @js.native
-  def logout(authToken: String, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def logout(authToken: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logout")(authToken.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "logoutAsync")
-  @js.native
-  def logoutAsync(authToken: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def logoutAsync(authToken: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("logoutAsync")(authToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("teslajs", "makeCalendarEntry")
-  @js.native
+  @scala.inline
   def makeCalendarEntry(
     eventName: String,
     location: String,
@@ -271,267 +228,203 @@ object mod {
     endTime: Double,
     accountName: String,
     phoneName: String
-  ): js.Object = js.native
+  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("makeCalendarEntry")(eventName.asInstanceOf[js.Any], location.asInstanceOf[js.Any], startTime.asInstanceOf[js.Any], endTime.asInstanceOf[js.Any], accountName.asInstanceOf[js.Any], phoneName.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("teslajs", "maxDefrost")
-  @js.native
-  def maxDefrost(options: optionsType, onoff: Boolean, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def maxDefrost(options: optionsType, onoff: Boolean, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("maxDefrost")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "maxDefrostAsync")
-  @js.native
-  def maxDefrostAsync(options: optionsType, onoff: Boolean): js.Promise[Result] = js.native
+  @scala.inline
+  def maxDefrostAsync(options: optionsType, onoff: Boolean): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxDefrostAsync")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "mediaPlayNext")
-  @js.native
-  def mediaPlayNext(options: optionsType, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def mediaPlayNext(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayNext")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "mediaPlayNextAsync")
-  @js.native
-  def mediaPlayNextAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def mediaPlayNextAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayNextAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "mediaPlayNextFavorite")
-  @js.native
-  def mediaPlayNextFavorite(options: optionsType, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def mediaPlayNextFavorite(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayNextFavorite")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "mediaPlayNextFavoriteAsync")
-  @js.native
-  def mediaPlayNextFavoriteAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def mediaPlayNextFavoriteAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayNextFavoriteAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "mediaPlayPrevious")
-  @js.native
-  def mediaPlayPrevious(options: optionsType, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def mediaPlayPrevious(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayPrevious")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "mediaPlayPreviousAsync")
-  @js.native
-  def mediaPlayPreviousAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def mediaPlayPreviousAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayPreviousAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "mediaPlayPreviousFavorite")
-  @js.native
-  def mediaPlayPreviousFavorite(options: optionsType, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def mediaPlayPreviousFavorite(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayPreviousFavorite")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "mediaPlayPreviousFavoriteAsync")
-  @js.native
-  def mediaPlayPreviousFavoriteAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def mediaPlayPreviousFavoriteAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayPreviousFavoriteAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "mediaTogglePlayback")
-  @js.native
-  def mediaTogglePlayback(options: optionsType, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def mediaTogglePlayback(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaTogglePlayback")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "mediaTogglePlaybackAsync")
-  @js.native
-  def mediaTogglePlaybackAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def mediaTogglePlaybackAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaTogglePlaybackAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "mediaVolumeDown")
-  @js.native
-  def mediaVolumeDown(options: optionsType, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def mediaVolumeDown(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaVolumeDown")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "mediaVolumeDownAsync")
-  @js.native
-  def mediaVolumeDownAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def mediaVolumeDownAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaVolumeDownAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "mediaVolumeUp")
-  @js.native
-  def mediaVolumeUp(options: optionsType, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def mediaVolumeUp(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaVolumeUp")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "mediaVolumeUpAsync")
-  @js.native
-  def mediaVolumeUpAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def mediaVolumeUpAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaVolumeUpAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "mobileEnabled")
-  @js.native
-  def mobileEnabled(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def mobileEnabled(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mobileEnabled")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "mobileEnabledAsync")
-  @js.native
-  def mobileEnabledAsync(options: optionsType): js.Promise[Response] = js.native
+  @scala.inline
+  def mobileEnabledAsync(options: optionsType): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("mobileEnabledAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
   
-  @JSImport("teslajs", "navigationRequest")
-  @js.native
-  def navigationRequest(options: optionsType, subject: String, text: String, locale: String, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def navigationRequest(options: optionsType, subject: String, text: String, locale: String, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("navigationRequest")(options.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], text.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "navigationRequestAsync")
-  @js.native
-  def navigationRequestAsync(options: optionsType, subject: String, text: String, locale: String): js.Promise[Result] = js.native
+  @scala.inline
+  def navigationRequestAsync(options: optionsType, subject: String, text: String, locale: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("navigationRequestAsync")(options.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], text.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "nearbyChargers")
-  @js.native
-  def nearbyChargers(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def nearbyChargers(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nearbyChargers")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "nearbyChargersAsync")
-  @js.native
-  def nearbyChargersAsync(options: optionsType): js.Promise[js.Object] = js.native
+  @scala.inline
+  def nearbyChargersAsync(options: optionsType): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("nearbyChargersAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("teslajs", "openChargePort")
-  @js.native
-  def openChargePort(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def openChargePort(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openChargePort")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "openChargePortAsync")
-  @js.native
-  def openChargePortAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def openChargePortAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("openChargePortAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "openTrunk")
-  @js.native
-  def openTrunk(options: optionsType, which: String, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def openTrunk(options: optionsType, which: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openTrunk")(options.asInstanceOf[js.Any], which.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "openTrunkAsync")
-  @js.native
-  def openTrunkAsync(options: optionsType, which: String): js.Promise[Result] = js.native
+  @scala.inline
+  def openTrunkAsync(options: optionsType, which: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("openTrunkAsync")(options.asInstanceOf[js.Any], which.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
   @JSImport("teslajs", "portal")
   @js.native
   val portal: String = js.native
   
-  @JSImport("teslajs", "post_command")
-  @js.native
-  def postCommand(options: optionsType, command: String, body: js.Object, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def postCommand(options: optionsType, command: String, body: js.Object, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post_command")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any], body.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "post_commandAsync")
-  @js.native
-  def postCommandAsync(options: optionsType, command: String, body: js.Object): js.Promise[_] = js.native
+  @scala.inline
+  def postCommandAsync(options: optionsType, command: String, body: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("post_commandAsync")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("teslajs", "refreshToken")
-  @js.native
-  def refreshToken(refresh_token: String, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def refreshToken(refresh_token: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refresh_token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "refreshTokenAsync")
-  @js.native
-  def refreshTokenAsync(refresh_token: String): js.Promise[TokenResponse] = js.native
+  @scala.inline
+  def refreshTokenAsync(refresh_token: String): js.Promise[TokenResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshTokenAsync")(refresh_token.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TokenResponse]]
   
-  @JSImport("teslajs", "remoteStart")
-  @js.native
-  def remoteStart(options: optionsType, password: String, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def remoteStart(options: optionsType, password: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteStart")(options.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "remoteStartAsync")
-  @js.native
-  def remoteStartAsync(options: optionsType, password: String): js.Promise[Result] = js.native
+  @scala.inline
+  def remoteStartAsync(options: optionsType, password: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteStartAsync")(options.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "resetValetPin")
-  @js.native
-  def resetValetPin(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def resetValetPin(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetValetPin")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "resetValetPinAsync")
-  @js.native
-  def resetValetPinAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def resetValetPinAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("resetValetPinAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "scheduleSoftwareUpdate")
-  @js.native
-  def scheduleSoftwareUpdate(options: optionsType, offset: Double, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def scheduleSoftwareUpdate(options: optionsType, offset: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleSoftwareUpdate")(options.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "scheduleSoftwareUpdateAsync")
-  @js.native
-  def scheduleSoftwareUpdateAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def scheduleSoftwareUpdateAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleSoftwareUpdateAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "seatHeater")
-  @js.native
-  def seatHeater(options: optionsType, heater: Double, level: Double, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def seatHeater(options: optionsType, heater: Double, level: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("seatHeater")(options.asInstanceOf[js.Any], heater.asInstanceOf[js.Any], level.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "seatHeaterAsync")
-  @js.native
-  def seatHeaterAsync(options: optionsType, heater: Double, level: Double): js.Promise[Result] = js.native
+  @scala.inline
+  def seatHeaterAsync(options: optionsType, heater: Double, level: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("seatHeaterAsync")(options.asInstanceOf[js.Any], heater.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "setChargeLimit")
-  @js.native
-  def setChargeLimit(options: optionsType, amt: js.Any, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def setChargeLimit(options: optionsType, amt: js.Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setChargeLimit")(options.asInstanceOf[js.Any], amt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "setChargeLimitAsync")
-  @js.native
-  def setChargeLimitAsync(options: optionsType, amt: js.Any): js.Promise[Result] = js.native
+  @scala.inline
+  def setChargeLimitAsync(options: optionsType, amt: js.Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("setChargeLimitAsync")(options.asInstanceOf[js.Any], amt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "setLogLevel")
-  @js.native
-  def setLogLevel(level: Double): Unit = js.native
+  @scala.inline
+  def setLogLevel(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "setPortalBaseURI")
-  @js.native
-  def setPortalBaseURI(uri: String): Unit = js.native
+  @scala.inline
+  def setPortalBaseURI(uri: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPortalBaseURI")(uri.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "setSentryMode")
-  @js.native
-  def setSentryMode(options: optionsType, onoff: Boolean, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def setSentryMode(options: optionsType, onoff: Boolean, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setSentryMode")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "setSentryModeAsync")
-  @js.native
-  def setSentryModeAsync(options: optionsType, onoff: Boolean): js.Promise[Result] = js.native
+  @scala.inline
+  def setSentryModeAsync(options: optionsType, onoff: Boolean): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("setSentryModeAsync")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "setStreamingBaseURI")
-  @js.native
-  def setStreamingBaseURI(uri: String): Unit = js.native
+  @scala.inline
+  def setStreamingBaseURI(uri: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStreamingBaseURI")(uri.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "setTemps")
-  @js.native
-  def setTemps(options: optionsType, driver: Double, pass: Double, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def setTemps(options: optionsType, driver: Double, pass: Double, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTemps")(options.asInstanceOf[js.Any], driver.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "setTempsAsync")
-  @js.native
-  def setTempsAsync(options: optionsType, driver: Double, pass: Double): js.Promise[Result] = js.native
+  @scala.inline
+  def setTempsAsync(options: optionsType, driver: Double, pass: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("setTempsAsync")(options.asInstanceOf[js.Any], driver.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "setValetMode")
-  @js.native
-  def setValetMode(options: optionsType, onoff: Boolean, pin: js.Any, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def setValetMode(options: optionsType, onoff: Boolean, pin: js.Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValetMode")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "setValetModeAsync")
-  @js.native
-  def setValetModeAsync(options: optionsType, onoff: Boolean, pin: js.Any): js.Promise[Result] = js.native
+  @scala.inline
+  def setValetModeAsync(options: optionsType, onoff: Boolean, pin: js.Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("setValetModeAsync")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "speedLimitActivate")
-  @js.native
-  def speedLimitActivate(options: optionsType, pin: Double, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def speedLimitActivate(options: optionsType, pin: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitActivate")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "speedLimitActivateAsync")
-  @js.native
-  def speedLimitActivateAsync(options: optionsType, pin: Double): js.Promise[Result] = js.native
+  @scala.inline
+  def speedLimitActivateAsync(options: optionsType, pin: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitActivateAsync")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "speedLimitClearPin")
-  @js.native
-  def speedLimitClearPin(options: optionsType, pin: Double, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def speedLimitClearPin(options: optionsType, pin: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitClearPin")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "speedLimitClearPinAsync")
-  @js.native
-  def speedLimitClearPinAsync(options: optionsType, pin: Double): js.Promise[Result] = js.native
+  @scala.inline
+  def speedLimitClearPinAsync(options: optionsType, pin: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitClearPinAsync")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "speedLimitDeactivate")
-  @js.native
-  def speedLimitDeactivate(options: optionsType, pin: Double, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def speedLimitDeactivate(options: optionsType, pin: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitDeactivate")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "speedLimitDeactivateAsync")
-  @js.native
-  def speedLimitDeactivateAsync(options: optionsType, pin: Double): js.Promise[Result] = js.native
+  @scala.inline
+  def speedLimitDeactivateAsync(options: optionsType, pin: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitDeactivateAsync")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "speedLimitSetLimit")
-  @js.native
-  def speedLimitSetLimit(options: optionsType, limit: Double, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def speedLimitSetLimit(options: optionsType, limit: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitSetLimit")(options.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "speedLimitSetLimitAsync")
-  @js.native
-  def speedLimitSetLimitAsync(options: optionsType, limit: Double): js.Promise[Result] = js.native
+  @scala.inline
+  def speedLimitSetLimitAsync(options: optionsType, limit: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitSetLimitAsync")(options.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "startCharge")
-  @js.native
-  def startCharge(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def startCharge(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startCharge")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "startChargeAsync")
-  @js.native
-  def startChargeAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def startChargeAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("startChargeAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "startStreaming")
-  @js.native
-  def startStreaming(options: js.Any, callback: nodeBack, onDataCb: nodeBack): js.Any = js.native
+  @scala.inline
+  def startStreaming(options: js.Any, callback: nodeBack, onDataCb: nodeBack): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("startStreaming")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onDataCb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "steeringHeater")
-  @js.native
-  def steeringHeater(options: optionsType, level: Double, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def steeringHeater(options: optionsType, level: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("steeringHeater")(options.asInstanceOf[js.Any], level.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "steeringHeaterAsync")
-  @js.native
-  def steeringHeaterAsync(options: optionsType, level: Double): js.Promise[Result] = js.native
+  @scala.inline
+  def steeringHeaterAsync(options: optionsType, level: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("steeringHeaterAsync")(options.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "stopCharge")
-  @js.native
-  def stopCharge(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def stopCharge(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stopCharge")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "stopChargeAsync")
-  @js.native
-  def stopChargeAsync(options: optionsType): js.Promise[Result] = js.native
+  @scala.inline
+  def stopChargeAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopChargeAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
   @JSImport("teslajs", "streamingColumns")
   @js.native
@@ -541,88 +434,68 @@ object mod {
   @js.native
   val streamingPortal: String = js.native
   
-  @JSImport("teslajs", "sunRoofControl")
-  @js.native
-  def sunRoofControl(options: optionsType, state: String, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def sunRoofControl(options: optionsType, state: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sunRoofControl")(options.asInstanceOf[js.Any], state.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "sunRoofControlAsync")
-  @js.native
-  def sunRoofControlAsync(options: optionsType, state: String): js.Promise[Result] = js.native
+  @scala.inline
+  def sunRoofControlAsync(options: optionsType, state: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("sunRoofControlAsync")(options.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "sunRoofMove")
-  @js.native
-  def sunRoofMove(options: optionsType, percent: js.Any, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def sunRoofMove(options: optionsType, percent: js.Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sunRoofMove")(options.asInstanceOf[js.Any], percent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "sunRoofMoveAsync")
-  @js.native
-  def sunRoofMoveAsync(options: optionsType, percent: js.Any): js.Promise[Result] = js.native
+  @scala.inline
+  def sunRoofMoveAsync(options: optionsType, percent: js.Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("sunRoofMoveAsync")(options.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("teslajs", "vehicle")
-  @js.native
-  def vehicle(options: optionsType, callback: nodeBack): Vehicle_ = js.native
+  @scala.inline
+  def vehicle(options: optionsType, callback: nodeBack): Vehicle_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vehicle")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Vehicle_]
   
-  @JSImport("teslajs", "vehicleAsync")
-  @js.native
-  def vehicleAsync(options: optionsType): js.Promise[Vehicle_] = js.native
+  @scala.inline
+  def vehicleAsync(options: optionsType): js.Promise[Vehicle_] = ^.asInstanceOf[js.Dynamic].applyDynamic("vehicleAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Vehicle_]]
   
-  @JSImport("teslajs", "vehicleConfig")
-  @js.native
-  def vehicleConfig(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def vehicleConfig(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vehicleConfig")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "vehicleConfigAsync")
-  @js.native
-  def vehicleConfigAsync(options: optionsType): js.Promise[js.Object] = js.native
+  @scala.inline
+  def vehicleConfigAsync(options: optionsType): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("vehicleConfigAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("teslajs", "vehicleData")
-  @js.native
-  def vehicleData(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def vehicleData(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vehicleData")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "vehicleDataAsync")
-  @js.native
-  def vehicleDataAsync(options: optionsType): js.Promise[js.Object] = js.native
+  @scala.inline
+  def vehicleDataAsync(options: optionsType): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("vehicleDataAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("teslajs", "vehicleState")
-  @js.native
-  def vehicleState(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def vehicleState(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vehicleState")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "vehicleStateAsync")
-  @js.native
-  def vehicleStateAsync(options: optionsType): js.Promise[js.Object] = js.native
+  @scala.inline
+  def vehicleStateAsync(options: optionsType): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("vehicleStateAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("teslajs", "vehicles")
-  @js.native
-  def vehicles(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def vehicles(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vehicles")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "vehiclesAsync")
-  @js.native
-  def vehiclesAsync(options: optionsType): js.Promise[js.Array[StringDictionary[String | Double | Boolean | Null]]] = js.native
+  @scala.inline
+  def vehiclesAsync(options: optionsType): js.Promise[js.Array[StringDictionary[String | Double | Boolean | Null]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("vehiclesAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[StringDictionary[String | Double | Boolean | Null]]]]
   
-  @JSImport("teslajs", "vinDecode")
-  @js.native
-  def vinDecode(vehicle: Vehicle_): js.Object = js.native
+  @scala.inline
+  def vinDecode(vehicle: Vehicle_): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("vinDecode")(vehicle.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("teslajs", "wakeUp")
-  @js.native
-  def wakeUp(options: optionsType, callback: nodeBack): Unit = js.native
+  @scala.inline
+  def wakeUp(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wakeUp")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teslajs", "wakeUpAsync")
-  @js.native
-  def wakeUpAsync(options: optionsType): js.Promise[js.Object] = js.native
+  @scala.inline
+  def wakeUpAsync(options: optionsType): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("wakeUpAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("teslajs", "windowControl")
-  @js.native
-  def windowControl(options: optionsType, command: String, callback: js.Any): js.Any = js.native
+  @scala.inline
+  def windowControl(options: optionsType, command: String, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("windowControl")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("teslajs", "windowControlAsync")
-  @js.native
-  def windowControlAsync(options: optionsType, command: String): js.Promise[Result] = js.native
+  @scala.inline
+  def windowControlAsync(options: optionsType, command: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("windowControlAsync")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @js.native
   trait Result extends StObject {
     
-    var reason: String = js.native
+    var reason: String
     
-    var result: Boolean = js.native
+    var result: Boolean
   }
   object Result {
     
@@ -643,16 +516,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenResponse extends StObject {
     
-    var authToken: String = js.native
+    var authToken: String
     
-    var body: js.Object = js.native
+    var body: js.Object
     
-    var refreshToken: String = js.native
+    var refreshToken: String
     
-    var response: js.Object = js.native
+    var response: js.Object
   }
   object TokenResponse {
     
@@ -679,12 +551,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait Vehicle_ extends /* key */ StringDictionary[String | Double | Boolean | Null] {
+  trait Vehicle_
+    extends StObject
+       with /* key */ StringDictionary[String | Double | Boolean | Null] {
     
-    var id: String = js.native
+    var id: String
     
-    var vehicleID: Double = js.native
+    var vehicleID: Double
   }
   object Vehicle_ {
     
@@ -707,14 +580,13 @@ object mod {
   
   type nodeBack = js.Function2[/* error */ Error, /* data */ js.Any, js.Any]
   
-  @js.native
   trait optionsType extends StObject {
     
-    var authToken: String = js.native
+    var authToken: String
     
-    var carIndex: js.UndefOr[Double] = js.native
+    var carIndex: js.UndefOr[Double] = js.undefined
     
-    var vehicleID: String = js.native
+    var vehicleID: String
   }
   object optionsType {
     

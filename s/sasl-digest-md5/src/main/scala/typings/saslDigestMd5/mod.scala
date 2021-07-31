@@ -1,19 +1,38 @@
 package typings.saslDigestMd5
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
 import typings.saslDigestMd5.saslDigestMd5Booleans.`false`
 import typings.saslDigestMd5.saslDigestMd5Strings.`DIGEST-MD5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("sasl-digest-md5", JSImport.Namespace)
   @js.native
-  class ^ () extends DigestMd5Mechanism {
+  class ^ ()
+    extends StObject
+       with DigestMd5Mechanism {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def challenge(chal: String): Unit = js.native
+    
+    /* CompleteClass */
+    var clientFirst: `false` = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    var name_DigestMd5Mechanism: `DIGEST-MD5` = js.native
+    
+    /* CompleteClass */
+    override def response(cred: StringDictionary[js.Any]): String = js.native
+    /* CompleteClass */
+    override def response(cred: Credentials): String = js.native
   }
   @JSImport("sasl-digest-md5", JSImport.Namespace)
   @js.native
@@ -22,8 +41,27 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sasl-digest-md5", "Mechanism")
   @js.native
-  class Mechanism () extends DigestMd5Mechanism {
+  class Mechanism ()
+    extends StObject
+       with DigestMd5Mechanism {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def challenge(chal: String): Unit = js.native
+    
+    /* CompleteClass */
+    var clientFirst: `false` = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    var name_DigestMd5Mechanism: `DIGEST-MD5` = js.native
+    
+    /* CompleteClass */
+    override def response(cred: StringDictionary[js.Any]): String = js.native
+    /* CompleteClass */
+    override def response(cred: Credentials): String = js.native
   }
   /* static member */
   @JSImport("sasl-digest-md5", "Mechanism")
@@ -52,22 +90,21 @@ object mod {
     def name_=(x: `DIGEST-MD5`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Credentials extends StObject {
     
-    var authzid: js.UndefOr[String] = js.native
+    var authzid: js.UndefOr[String] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var password: String = js.native
+    var password: String
     
-    var realm: js.UndefOr[String] = js.native
+    var realm: js.UndefOr[String] = js.undefined
     
-    var serviceName: js.UndefOr[String] = js.native
+    var serviceName: js.UndefOr[String] = js.undefined
     
-    var serviceType: String = js.native
+    var serviceType: String
     
-    var username: String = js.native
+    var username: String
   }
   object Credentials {
     
@@ -112,27 +149,22 @@ object mod {
     }
   }
   
-  @js.native
   trait DigestMd5Mechanism
-    extends typings.saslmechanisms.mod.Mechanism {
+    extends StObject
+       with typings.saslmechanisms.mod.Mechanism {
     
-    var clientFirst: `false` = js.native
+    var clientFirst: `false`
     
     @JSName("name")
-    var name_DigestMd5Mechanism: `DIGEST-MD5` = js.native
+    var name_DigestMd5Mechanism: `DIGEST-MD5`
     
-    def response(cred: Credentials): String = js.native
+    def response(cred: Credentials): String
   }
   object DigestMd5Mechanism {
     
     @scala.inline
-    def apply(
-      challenge: String => Unit,
-      clientFirst: `false`,
-      name: `DIGEST-MD5`,
-      response: Credentials => String
-    ): DigestMd5Mechanism = {
-      val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], response = js.Any.fromFunction1(response))
+    def apply(challenge: String => Unit, response: Credentials => String): DigestMd5Mechanism = {
+      val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = false, name = "DIGEST-MD5", response = js.Any.fromFunction1(response))
       __obj.asInstanceOf[DigestMd5Mechanism]
     }
     
@@ -150,10 +182,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var genNonce: js.UndefOr[js.Function0[Double]] = js.native
+    var genNonce: js.UndefOr[js.Function0[Double]] = js.undefined
   }
   object Options {
     

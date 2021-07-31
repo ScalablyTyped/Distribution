@@ -14,16 +14,15 @@ import typings.activexLibreoffice.com_.sun.star.document.XEventsSupplier
 import typings.activexLibreoffice.com_.sun.star.drawing.PointSequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object image {
   
   /** This service specifies a HTML image map. */
-  @js.native
   trait ImageMap
-    extends XIndexContainer
+    extends StObject
        with XNamed
+       with XIndexContainer
   object ImageMap {
     
     @scala.inline
@@ -54,14 +53,15 @@ object image {
     * @see ImageMap
     * @see ImageMapObject
     */
-  @js.native
-  trait ImageMapCircleObject extends ImageMapObject {
+  trait ImageMapCircleObject
+    extends StObject
+       with ImageMapObject {
     
     /** This is the center point of the circle in pixels */
-    var Center: Point = js.native
+    var Center: Point
     
     /** This is the radius of the circle in pixels */
-    var Radius: Double = js.native
+    var Radius: Double
   }
   object ImageMapCircleObject {
     
@@ -110,25 +110,25 @@ object image {
     * @see ImageMapCircleObject
     * @see ImageMapPolygonObject
     */
-  @js.native
   trait ImageMapObject
-    extends XPropertySet
+    extends StObject
+       with XPropertySet
        with XEventsSupplier {
     
     /** This is an optional description text for the link. */
-    var Description: String = js.native
+    var Description: String
     
     /** If an object is not active, it is ignored when the user clicks on the {@link ImageMap} . */
-    var IsActive: Boolean = js.native
+    var IsActive: Boolean
     
     /** Optionally, objects could be named. */
-    var Name: String = js.native
+    var Name: String
     
     /** This is the target frame */
-    var Target: String = js.native
+    var Target: String
     
     /** This is the URL for this object */
-    var URL: String = js.native
+    var URL: String
   }
   object ImageMapObject {
     
@@ -182,11 +182,12 @@ object image {
     * @see ImageMap
     * @see ImageMapObject
     */
-  @js.native
-  trait ImageMapPolygonObject extends ImageMapObject {
+  trait ImageMapPolygonObject
+    extends StObject
+       with ImageMapObject {
     
     /** This sequence of points outlines the click area of this image map object. */
-    var Polygon: PointSequence = js.native
+    var Polygon: PointSequence
   }
   object ImageMapPolygonObject {
     
@@ -232,11 +233,12 @@ object image {
     * @see ImageMap
     * @see ImageMapObject
     */
-  @js.native
-  trait ImageMapRectangleObject extends ImageMapObject {
+  trait ImageMapRectangleObject
+    extends StObject
+       with ImageMapObject {
     
     /** This is the boundary of this rectangle object */
-    var Boundary: Rectangle = js.native
+    var Boundary: Rectangle
   }
   object ImageMapRectangleObject {
     

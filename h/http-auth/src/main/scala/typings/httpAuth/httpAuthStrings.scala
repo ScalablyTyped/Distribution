@@ -4,23 +4,28 @@ import typings.httpAuth.mod.Algorithm
 import typings.httpAuth.mod.Qop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpAuthStrings {
   
   @js.native
-  sealed trait MD5 extends Algorithm
+  sealed trait MD5
+    extends StObject
+       with Algorithm
   @scala.inline
   def MD5: MD5 = "MD5".asInstanceOf[MD5]
   
   @js.native
-  sealed trait `MD5-sess` extends Algorithm
+  sealed trait `MD5-sess`
+    extends StObject
+       with Algorithm
   @scala.inline
   def `MD5-sess`: `MD5-sess` = "MD5-sess".asInstanceOf[`MD5-sess`]
   
   @js.native
-  sealed trait auth extends Qop
+  sealed trait auth
+    extends StObject
+       with Qop
   @scala.inline
   def auth: auth = "auth".asInstanceOf[auth]
   
@@ -50,7 +55,9 @@ object httpAuthStrings {
   def fail: fail = "fail".asInstanceOf[fail]
   
   @js.native
-  sealed trait none extends Qop
+  sealed trait none
+    extends StObject
+       with Qop
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   

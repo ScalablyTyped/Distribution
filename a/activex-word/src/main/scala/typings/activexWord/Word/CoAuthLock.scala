@@ -2,30 +2,28 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoAuthLock extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val HeaderFooter: Boolean = js.native
+  val HeaderFooter: Boolean
   
-  val Owner: CoAuthor = js.native
+  val Owner: CoAuthor
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  val Type: WdLockType = js.native
+  val Type: WdLockType
   
-  def Unlock(): Unit = js.native
+  def Unlock(): Unit
   
   @JSName("Word.CoAuthLock_typekey")
-  var WordDotCoAuthLock_typekey: CoAuthLock = js.native
+  var WordDotCoAuthLock_typekey: CoAuthLock
 }
 object CoAuthLock {
   

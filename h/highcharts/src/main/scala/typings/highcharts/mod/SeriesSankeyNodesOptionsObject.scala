@@ -2,22 +2,20 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesSankeyNodesOptionsObject extends StObject {
   
   /**
     * (Highcharts) The color of the auto generated node.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) The color index of the auto generated node, especially for
     * use in styled mode.
     */
-  var colorIndex: js.UndefOr[Double] = js.native
+  var colorIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) An optional column index of where to place the node. The
@@ -26,7 +24,7 @@ trait SeriesSankeyNodesOptionsObject extends StObject {
     * example an organization chart rendered top down. In this case the
     * "columns" are horizontal.
     */
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Individual data label for each
@@ -34,32 +32,32 @@ trait SeriesSankeyNodesOptionsObject extends StObject {
     */
   var dataLabels: js.UndefOr[
     SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject | (js.Array[SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Highcharts) The job description for the node card, will be inserted by
     * the default `dataLabel.nodeFormatter`.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The id of the auto-generated node, refering to the `from` or
     * `to` setting of the link.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) An image for the node card, will be inserted by the default
     * `dataLabel.nodeFormatter`.
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Layout for the node's children. If `hanging`, this node's
     * children will hang below their parent, allowing a tighter packing of
     * nodes in the diagram.
     */
-  var layout: js.UndefOr[SeriesOrganizationNodesLayoutValue] = js.native
+  var layout: js.UndefOr[SeriesOrganizationNodesLayoutValue] = js.undefined
   
   /**
     * (Highcharts) An optional level index of where to place the node. The
@@ -67,14 +65,14 @@ trait SeriesSankeyNodesOptionsObject extends StObject {
     * `nodes.column`, but in inverted sankeys and org charts, the levels are
     * laid out as rows.
     */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The name to display for the node in data labels and
     * tooltips. Use this when the name is different from the `id`. Where the id
     * must be unique for each node, this is not necessary for the name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) In a horizontal layout, the vertical offset of a node in
@@ -85,13 +83,13 @@ trait SeriesSankeyNodesOptionsObject extends StObject {
     * If a percantage string is given, the node is offset by the percentage of
     * the node size plus `nodePadding`.
     */
-  var offset: js.UndefOr[Double | String] = js.native
+  var offset: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts) The job title for the node card, will be inserted by the
     * default `dataLabel.nodeFormatter`.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SeriesSankeyNodesOptionsObject {
   

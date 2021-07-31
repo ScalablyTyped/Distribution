@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceMessage extends StObject {
   
   /** A code that correspond to one type of user-facing message. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /** Message on memcached instance which will be exposed to users. */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object InstanceMessage {
   

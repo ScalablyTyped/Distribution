@@ -2,18 +2,16 @@ package typings.fuzzySearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Required<fuzzy-search.fuzzy-search.Options> */
-  @js.native
   trait RequiredOptions extends StObject {
     
-    var caseSensitive: Boolean = js.native
+    var caseSensitive: Boolean
     
-    var sort: Boolean = js.native
+    var sort: Boolean
   }
   object RequiredOptions {
     

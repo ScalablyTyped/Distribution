@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFleetRequest extends StObject {
   
   /**
     * The name of the fleet.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * A map that contains tag keys and tag values that are attached to the fleet.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateFleetRequest {
   

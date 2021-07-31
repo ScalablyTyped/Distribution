@@ -2,10 +2,8 @@ package typings.grpc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelCredentials extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ChannelCredentials extends StObject {
     * @param callCredentials A CallCredentials object to associate with this
     * instance.
     */
-  def compose(callCredentials: CallCredentials): ChannelCredentials = js.native
+  def compose(callCredentials: CallCredentials): ChannelCredentials
 }
 object ChannelCredentials {
   

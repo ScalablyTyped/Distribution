@@ -4,17 +4,17 @@ import typings.kendoUi.JQueryXHR
 import typings.kendoUi.kendo.wizard.Step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WizardErrorEvent extends WizardEvent {
+trait WizardErrorEvent
+  extends StObject
+     with WizardEvent {
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var step: js.UndefOr[Step] = js.native
+  var step: js.UndefOr[Step] = js.undefined
   
-  var xhr: js.UndefOr[JQueryXHR] = js.native
+  var xhr: js.UndefOr[JQueryXHR] = js.undefined
 }
 object WizardErrorEvent {
   

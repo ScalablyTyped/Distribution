@@ -6,15 +6,15 @@ import typings.extjs.Ext.data.ITreeStore
 import typings.extjs.Ext.panel.ITable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITreePanel extends ITable {
+trait ITreePanel
+  extends StObject
+     with ITable {
   
   /** [Config Option] (Boolean) */
   @JSName("animate")
-  var animate_ITreePanel: js.UndefOr[Boolean] = js.native
+  var animate_ITreePanel: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Collapse all nodes
     * @param callback Function A function to execute when the collapse finishes.
@@ -22,7 +22,7 @@ trait ITreePanel extends ITable {
     */
   var collapseAll: js.UndefOr[
     js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Collapses a record that is loaded in the tree
     * @param record Ext.data.Model The record to collapse
@@ -38,10 +38,10 @@ trait ITreePanel extends ITable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var displayField: js.UndefOr[java.lang.String] = js.native
+  var displayField: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Expand all nodes
     * @param callback Function A function to execute when the expand finishes.
@@ -49,7 +49,7 @@ trait ITreePanel extends ITable {
     */
   var expandAll: js.UndefOr[
     js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Expands a record that is loaded in the tree
     * @param record Ext.data.Model The record to expand
@@ -65,7 +65,7 @@ trait ITreePanel extends ITable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Expand the tree to the path of a particular node
     * @param path String The path to expand. The path should include a leading separator.
@@ -83,29 +83,29 @@ trait ITreePanel extends ITable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var folderSort: js.UndefOr[Boolean] = js.native
+  var folderSort: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Retrieve an array of checked records
     * @returns Ext.data.NodeInterface[] An array containing the checked records
     */
-  var getChecked: js.UndefOr[js.Function0[Array]] = js.native
+  var getChecked: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the root node for this tree
     * @returns Ext.data.NodeInterface
     */
-  var getRootNode: js.UndefOr[js.Function0[INodeInterface]] = js.native
+  var getRootNode: js.UndefOr[js.Function0[INodeInterface]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var lines: js.UndefOr[Boolean] = js.native
+  var lines: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.data.Model/Ext.data.NodeInterface/Object) */
-  var root: js.UndefOr[js.Any] = js.native
+  var root: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var rootVisible: js.UndefOr[Boolean] = js.native
+  var rootVisible: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Expand the tree to the path of a particular node then select it
     * @param path String The path to select. The path should include a leading separator.
@@ -123,23 +123,23 @@ trait ITreePanel extends ITable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets root node of this tree
     * @param root Ext.data.Model/Ext.data.NodeInterface/Object
     * @returns Ext.data.NodeInterface The new root
     */
-  var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], INodeInterface]] = js.native
+  var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], INodeInterface]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var singleExpand: js.UndefOr[Boolean] = js.native
+  var singleExpand: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.data.TreeStore) */
   @JSName("store")
-  var store_ITreePanel: js.UndefOr[ITreeStore] = js.native
+  var store_ITreePanel: js.UndefOr[ITreeStore] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useArrows: js.UndefOr[Boolean] = js.native
+  var useArrows: js.UndefOr[Boolean] = js.undefined
 }
 object ITreePanel {
   

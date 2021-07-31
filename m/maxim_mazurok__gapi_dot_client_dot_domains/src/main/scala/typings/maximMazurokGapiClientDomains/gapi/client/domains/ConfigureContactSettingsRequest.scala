@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigureContactSettingsRequest extends StObject {
   
   /** The list of contact notices that the caller acknowledges. The notices required here depend on the values specified in `contact_settings`. */
-  var contactNotices: js.UndefOr[js.Array[String]] = js.native
+  var contactNotices: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Fields of the `ContactSettings` to update. */
-  var contactSettings: js.UndefOr[ContactSettings] = js.native
+  var contactSettings: js.UndefOr[ContactSettings] = js.undefined
   
   /**
     * Required. The field mask describing which fields to update as a comma-separated list. For example, if only the registrant contact is being updated, the `update_mask` would be
     * `"registrant_contact"`.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Validate the request without actually updating the contact settings. */
-  var validateOnly: js.UndefOr[Boolean] = js.native
+  var validateOnly: js.UndefOr[Boolean] = js.undefined
 }
 object ConfigureContactSettingsRequest {
   

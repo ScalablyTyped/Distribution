@@ -4,23 +4,24 @@ import typings.socketIo.mod.Socket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("socketio-jwt-auth", "authenticate")
+  @JSImport("socketio-jwt-auth", JSImport.Namespace)
   @js.native
-  def authenticate(options: authOptions, verify: verifyFunc): js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def authenticate(options: authOptions, verify: verifyFunc): js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(options.asInstanceOf[js.Any], verify.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]]
+  
   trait authOptions extends StObject {
     
-    var algorithm: js.UndefOr[String] = js.native
+    var algorithm: js.UndefOr[String] = js.undefined
     
-    var secret: String = js.native
+    var secret: String
     
-    var succeedWithoutToken: js.UndefOr[Boolean] = js.native
+    var succeedWithoutToken: js.UndefOr[Boolean] = js.undefined
   }
   object authOptions {
     

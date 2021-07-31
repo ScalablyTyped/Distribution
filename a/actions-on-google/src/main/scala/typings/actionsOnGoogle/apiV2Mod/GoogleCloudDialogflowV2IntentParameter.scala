@@ -2,27 +2,25 @@ package typings.actionsOnGoogle.apiV2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentParameter extends StObject {
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var entityTypeDisplayName: js.UndefOr[String] = js.native
+  var entityTypeDisplayName: js.UndefOr[String] = js.undefined
   
-  var isList: js.UndefOr[Boolean] = js.native
+  var isList: js.UndefOr[Boolean] = js.undefined
   
-  var mandatory: js.UndefOr[Boolean] = js.native
+  var mandatory: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var prompts: js.UndefOr[js.Array[String]] = js.native
+  var prompts: js.UndefOr[js.Array[String]] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentParameter {
   

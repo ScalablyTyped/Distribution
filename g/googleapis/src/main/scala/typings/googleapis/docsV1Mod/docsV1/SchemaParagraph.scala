@@ -3,53 +3,51 @@ package typings.googleapis.docsV1Mod.docsV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A StructuralElement representing a paragraph. A paragraph is a range of
   * content that is terminated with a newline character.
   */
-@js.native
 trait SchemaParagraph extends StObject {
   
   /**
     * The bullet for this paragraph. If not present, the paragraph does not
     * belong to a list.
     */
-  var bullet: js.UndefOr[SchemaBullet] = js.native
+  var bullet: js.UndefOr[SchemaBullet] = js.undefined
   
   /**
     * The content of the paragraph broken down into its component parts.
     */
-  var elements: js.UndefOr[js.Array[SchemaParagraphElement]] = js.native
+  var elements: js.UndefOr[js.Array[SchemaParagraphElement]] = js.undefined
   
   /**
     * The style of this paragraph.
     */
-  var paragraphStyle: js.UndefOr[SchemaParagraphStyle] = js.native
+  var paragraphStyle: js.UndefOr[SchemaParagraphStyle] = js.undefined
   
   /**
     * The IDs of the positioned objects tethered to this paragraph.
     */
-  var positionedObjectIds: js.UndefOr[js.Array[String]] = js.native
+  var positionedObjectIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The suggested changes to this paragraph&#39;s bullet.
     */
-  var suggestedBulletChanges: js.UndefOr[StringDictionary[SchemaSuggestedBullet]] = js.native
+  var suggestedBulletChanges: js.UndefOr[StringDictionary[SchemaSuggestedBullet]] = js.undefined
   
   /**
     * The suggested paragraph style changes to this paragraph, keyed by
     * suggestion ID.
     */
-  var suggestedParagraphStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedParagraphStyle]] = js.native
+  var suggestedParagraphStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedParagraphStyle]] = js.undefined
   
   /**
     * The IDs of the positioned objects that are suggested to be attached to
     * this paragraph, keyed by suggestion ID.
     */
-  var suggestedPositionedObjectIds: js.UndefOr[StringDictionary[SchemaObjectReferences]] = js.native
+  var suggestedPositionedObjectIds: js.UndefOr[StringDictionary[SchemaObjectReferences]] = js.undefined
 }
 object SchemaParagraph {
   

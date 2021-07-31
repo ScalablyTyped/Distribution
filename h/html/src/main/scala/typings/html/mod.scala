@@ -8,19 +8,19 @@ import typings.html.htmlStrings.normal
 import typings.html.htmlStrings.separate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("html", "prettyPrint")
+  @JSImport("html", JSImport.Namespace)
   @js.native
-  def prettyPrint(htmlSource: String): String = js.native
-  @JSImport("html", "prettyPrint")
-  @js.native
-  def prettyPrint(htmlSource: String, options: PrintOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def prettyPrint(htmlSource: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(htmlSource.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def prettyPrint(htmlSource: String, options: PrintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(htmlSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait PrintOptions extends StObject {
     
     /**
@@ -28,22 +28,22 @@ object mod {
       * or put braces on own line (Allman / ANSI style, `expand`),
       * or just put end braces on own line (`end-expand`). Default: `collapse`.
       */
-    var brace_style: js.UndefOr[collapse | expand | `end-expand`] = js.native
+    var brace_style: js.UndefOr[collapse | expand | `end-expand`] = js.undefined
     
     /** character to indent with. Default: " " (space). */
-    var indent_char: js.UndefOr[String] = js.native
+    var indent_char: js.UndefOr[String] = js.undefined
     
     /** Default: `normal`. */
-    var indent_scripts: js.UndefOr[keep | separate | normal] = js.native
+    var indent_scripts: js.UndefOr[keep | separate | normal] = js.undefined
     
     /** indentation size. Default: 4. */
-    var indent_size: js.UndefOr[Double] = js.native
+    var indent_size: js.UndefOr[Double] = js.undefined
     
     /** Maximum amount of characters per line. Default: 70. */
-    var max_char: js.UndefOr[Double] = js.native
+    var max_char: js.UndefOr[Double] = js.undefined
     
     /** list of tags, that shouldn't be reformatted. Defaults to inline tags. */
-    var unformatted: js.UndefOr[js.Array[String]] = js.native
+    var unformatted: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PrintOptions {
     

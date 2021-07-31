@@ -2,14 +2,12 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a complete StyleSettings object. The primary key is a
   * combination of the tableId and a styleId.
   */
-@js.native
 trait SchemaStyleSetting extends StObject {
   
   /**
@@ -18,37 +16,37 @@ trait SchemaStyleSetting extends StObject {
     * have any one or all of them, a style definition can have point, line and
     * polygon style definitions.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Style definition for points in the table.
     */
-  var markerOptions: js.UndefOr[SchemaPointStyle] = js.native
+  var markerOptions: js.UndefOr[SchemaPointStyle] = js.undefined
   
   /**
     * Optional name for the style setting.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Style definition for polygons in the table.
     */
-  var polygonOptions: js.UndefOr[SchemaPolygonStyle] = js.native
+  var polygonOptions: js.UndefOr[SchemaPolygonStyle] = js.undefined
   
   /**
     * Style definition for lines in the table.
     */
-  var polylineOptions: js.UndefOr[SchemaLineStyle] = js.native
+  var polylineOptions: js.UndefOr[SchemaLineStyle] = js.undefined
   
   /**
     * Identifier for the style setting (unique only within tables).
     */
-  var styleId: js.UndefOr[Double] = js.native
+  var styleId: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifier for the table.
     */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
 }
 object SchemaStyleSetting {
   

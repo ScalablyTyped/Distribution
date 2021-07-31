@@ -9,16 +9,17 @@ import typings.vegaTypings.legendMod.Legend
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object legendAssembleMod {
   
-  @JSImport("vega-lite/build/src/compile/legend/assemble", "assembleLegend")
+  @JSImport("vega-lite/build/src/compile/legend/assemble", JSImport.Namespace)
   @js.native
-  def assembleLegend(legendCmpt: LegendComponent, config: Config[ExprRef | SignalRef]): ClipHeight = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/legend/assemble", "assembleLegends")
-  @js.native
-  def assembleLegends(model: Model): js.Array[Legend] = js.native
+  @scala.inline
+  def assembleLegend(legendCmpt: LegendComponent, config: Config[ExprRef | SignalRef]): ClipHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleLegend")(legendCmpt.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ClipHeight]
+  
+  @scala.inline
+  def assembleLegends(model: Model): js.Array[Legend] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleLegends")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[Legend]]
 }

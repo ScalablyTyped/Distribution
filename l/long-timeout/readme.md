@@ -11,8 +11,8 @@ Long timeout makes it possible to have a timeout or interval that is longer than
 | Full name          | long-timeout |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 14546147 |
+| # dependents       | 26 |
+| # downloads        | 44462721 |
 | # stars            | 1 |
 
 ## Links

@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Schedule extends StObject {
   
   /**
     * The expression that defines when to trigger an update. For more information, see Schedule Expressions for Rules in the Amazon CloudWatch Events User Guide.
     */
-  var expression: js.UndefOr[ScheduleExpression] = js.native
+  var expression: js.UndefOr[ScheduleExpression] = js.undefined
 }
 object Schedule {
   

@@ -13,7 +13,6 @@ import typings.parse5SaxParser.mod.StartTagToken
 import typings.parse5SaxParser.mod.TextToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {

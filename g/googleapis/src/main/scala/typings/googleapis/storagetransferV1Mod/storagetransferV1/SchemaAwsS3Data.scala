@@ -2,14 +2,12 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An AwsS3Data resource can be a data source, but not a data sink. In an
   * AwsS3Data resource, an object&#39;s name is the S3 object&#39;s key name.
   */
-@js.native
 trait SchemaAwsS3Data extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaAwsS3Data extends StObject {
     * Permissions on the bucket must be granted to the access ID of the AWS
     * access key. Required.
     */
-  var awsAccessKey: js.UndefOr[SchemaAwsAccessKey] = js.native
+  var awsAccessKey: js.UndefOr[SchemaAwsAccessKey] = js.undefined
   
   /**
     * S3 Bucket name (see [Creating a
     * bucket](http://docs.aws.amazon.com/AmazonS3/latest/dev/create-bucket-get-location-example.html)).
     * Required.
     */
-  var bucketName: js.UndefOr[String] = js.native
+  var bucketName: js.UndefOr[String] = js.undefined
 }
 object SchemaAwsS3Data {
   

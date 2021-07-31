@@ -7,23 +7,21 @@ import typings.reactVirtualized.esCollectionMod.CollectionCellRenderer
 import typings.reactVirtualized.esCollectionMod.CollectionCellSizeAndPositionGetter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arialabel extends StObject {
   
-  var `aria-label`: Requireable[String] = js.native
+  var `aria-label`: Requireable[String]
   
-  var cellCount: Validator[Double] = js.native
+  var cellCount: Validator[Double]
   
-  var cellGroupRenderer: Validator[CollectionCellGroupRenderer] = js.native
+  var cellGroupRenderer: Validator[CollectionCellGroupRenderer]
   
-  var cellRenderer: Validator[CollectionCellRenderer] = js.native
+  var cellRenderer: Validator[CollectionCellRenderer]
   
-  var cellSizeAndPositionGetter: Validator[CollectionCellSizeAndPositionGetter] = js.native
+  var cellSizeAndPositionGetter: Validator[CollectionCellSizeAndPositionGetter]
   
-  var sectionSize: Requireable[Double] = js.native
+  var sectionSize: Requireable[Double]
 }
 object Arialabel {
   

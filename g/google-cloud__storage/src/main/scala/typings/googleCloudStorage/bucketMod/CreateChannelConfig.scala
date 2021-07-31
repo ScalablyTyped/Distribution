@@ -2,13 +2,13 @@ package typings.googleCloudStorage.bucketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateChannelConfig extends WatchAllOptions {
+trait CreateChannelConfig
+  extends StObject
+     with WatchAllOptions {
   
-  var address: String = js.native
+  var address: String
 }
 object CreateChannelConfig {
   

@@ -2,25 +2,23 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfileObjectPermissions extends StObject {
   
-  var allowCreate: js.UndefOr[Boolean] = js.native
+  var allowCreate: js.UndefOr[Boolean] = js.undefined
   
-  var allowDelete: js.UndefOr[Boolean] = js.native
+  var allowDelete: js.UndefOr[Boolean] = js.undefined
   
-  var allowEdit: js.UndefOr[Boolean] = js.native
+  var allowEdit: js.UndefOr[Boolean] = js.undefined
   
-  var allowRead: js.UndefOr[Boolean] = js.native
+  var allowRead: js.UndefOr[Boolean] = js.undefined
   
-  var modifyAllRecords: js.UndefOr[Boolean] = js.native
+  var modifyAllRecords: js.UndefOr[Boolean] = js.undefined
   
-  var `object`: String = js.native
+  var `object`: String
   
-  var viewAllRecords: js.UndefOr[Boolean] = js.native
+  var viewAllRecords: js.UndefOr[Boolean] = js.undefined
 }
 object ProfileObjectPermissions {
   

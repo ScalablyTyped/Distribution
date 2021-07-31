@@ -7,7 +7,6 @@ import typings.blueprintjsDatetime.shortcutsMod.IDatePickerShortcut
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerMod {
@@ -85,28 +84,28 @@ object datePickerMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDatePickerProps
-    extends IDatePickerBaseProps
+    extends StObject
+       with IDatePickerBaseProps
        with IProps {
     
     /**
       * Allows the user to clear the selection by clicking the currently selected day.
       * @default true
       */
-    var canClearSelection: js.UndefOr[Boolean] = js.native
+    var canClearSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text for the reset button in the action bar.
       * @default "Clear"
       */
-    var clearButtonText: js.UndefOr[String] = js.native
+    var clearButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * Initial day the calendar will display as selected.
       * This should not be set if `value` is set.
       */
-    var defaultValue: js.UndefOr[Date] = js.native
+    var defaultValue: js.UndefOr[Date] = js.undefined
     
     /**
       * Called when the user selects a day.
@@ -115,18 +114,18 @@ object datePickerMod {
       * `isUserChange` is true if the user selected a day, and false if the date was automatically changed
       * by the user navigating to a new month or year rather than explicitly clicking on a date in the calendar.
       */
-    var onChange: js.UndefOr[js.Function2[/* selectedDate */ Date, /* isUserChange */ Boolean, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* selectedDate */ Date, /* isUserChange */ Boolean, Unit]] = js.undefined
     
     /**
       * Called when the `shortcuts` props is enabled and the user changes the shortcut.
       */
-    var onShortcutChange: js.UndefOr[js.Function2[/* shortcut */ IDatePickerShortcut, /* index */ Double, Unit]] = js.native
+    var onShortcutChange: js.UndefOr[js.Function2[/* shortcut */ IDatePickerShortcut, /* index */ Double, Unit]] = js.undefined
     
     /**
       * The currently selected shortcut.
       * If this prop is provided, the component acts in a controlled manner.
       */
-    var selectedShortcutIndex: js.UndefOr[Double] = js.native
+    var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether shortcuts to quickly select a date are displayed or not.
@@ -134,24 +133,24 @@ object datePickerMod {
       * If `false`, no shortcuts will be displayed.
       * If an array is provided, the custom shortcuts will be displayed.
       */
-    var shortcuts: js.UndefOr[Boolean | js.Array[IDatePickerShortcut]] = js.native
+    var shortcuts: js.UndefOr[Boolean | js.Array[IDatePickerShortcut]] = js.undefined
     
     /**
       * Whether the bottom bar displaying "Today" and "Clear" buttons should be shown.
       * @default false
       */
-    var showActionsBar: js.UndefOr[Boolean] = js.native
+    var showActionsBar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text for the today button in the action bar.
       * @default "Today"
       */
-    var todayButtonText: js.UndefOr[String] = js.native
+    var todayButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * The currently selected day. If this prop is provided, the component acts in a controlled manner.
       */
-    var value: js.UndefOr[Date | Null] = js.native
+    var value: js.UndefOr[Date | Null] = js.undefined
   }
   object IDatePickerProps {
     
@@ -232,24 +231,23 @@ object datePickerMod {
     }
   }
   
-  @js.native
   trait IDatePickerState extends StObject {
     
-    var displayMonth: Double = js.native
+    var displayMonth: Double
     
-    var displayYear: Double = js.native
+    var displayYear: Double
     
-    var selectedDay: Double | Null = js.native
+    var selectedDay: Double | Null
     
-    var selectedShortcutIndex: js.UndefOr[Double] = js.native
+    var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
-    var value: Date | Null = js.native
+    var value: Date | Null
   }
   object IDatePickerState {
     
     @scala.inline
     def apply(displayMonth: Double, displayYear: Double): IDatePickerState = {
-      val __obj = js.Dynamic.literal(displayMonth = displayMonth.asInstanceOf[js.Any], displayYear = displayYear.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(displayMonth = displayMonth.asInstanceOf[js.Any], displayYear = displayYear.asInstanceOf[js.Any], selectedDay = null, value = null)
       __obj.asInstanceOf[IDatePickerState]
     }
     

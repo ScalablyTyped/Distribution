@@ -2,21 +2,19 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var position: js.UndefOr[typings.vexflow.Vex.Flow.TextBracket.Positions] = js.native
+  var position: js.UndefOr[typings.vexflow.Vex.Flow.TextBracket.Positions] = js.undefined
   
-  var start: typings.vexflow.Vex.Flow.Note = js.native
+  var start: typings.vexflow.Vex.Flow.Note
   
-  var stop: typings.vexflow.Vex.Flow.Note = js.native
+  var stop: typings.vexflow.Vex.Flow.Note
   
-  var superscript: js.UndefOr[String] = js.native
+  var superscript: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object Position {
   

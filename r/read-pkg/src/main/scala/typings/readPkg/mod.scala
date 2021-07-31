@@ -1,10 +1,8 @@
 package typings.readPkg
 
-import typings.normalizePackageData.mod.Package
 import typings.readPkg.readPkgBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,15 +20,16 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(): js.Promise[NormalizedPackageJson] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[NormalizedPackageJson]]
+  @scala.inline
+  def apply(options: NormalizeOptions): js.Promise[NormalizedPackageJson] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NormalizedPackageJson]]
+  @scala.inline
+  def apply(options: Options): js.Promise[PackageJson] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageJson]]
+  
   @JSImport("read-pkg", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[NormalizedPackageJson] = js.native
-  @JSImport("read-pkg", JSImport.Namespace)
-  @js.native
-  def apply(options: NormalizeOptions): js.Promise[NormalizedPackageJson] = js.native
-  @JSImport("read-pkg", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[PackageJson] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	@returns The parsed JSON.
@@ -43,21 +42,19 @@ object mod {
   	//=> {name: 'unicorn', …}
   	```
   	*/
-  @JSImport("read-pkg", "sync")
-  @js.native
-  def sync(): NormalizedPackageJson = js.native
-  @JSImport("read-pkg", "sync")
-  @js.native
-  def sync(options: NormalizeOptions): NormalizedPackageJson = js.native
-  @JSImport("read-pkg", "sync")
-  @js.native
-  def sync(options: Options): PackageJson = js.native
+  @scala.inline
+  def sync(): NormalizedPackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[NormalizedPackageJson]
+  @scala.inline
+  def sync(options: NormalizeOptions): NormalizedPackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizedPackageJson]
+  @scala.inline
+  def sync(options: Options): PackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[PackageJson]
   
-  @js.native
-  trait NormalizeOptions extends Options {
+  trait NormalizeOptions
+    extends StObject
+       with Options {
     
     @JSName("normalize")
-    val normalize_NormalizeOptions: js.UndefOr[`true`] = js.native
+    val normalize_NormalizeOptions: js.UndefOr[`true`] = js.undefined
   }
   object NormalizeOptions {
     
@@ -78,22 +75,49 @@ object mod {
     }
   }
   
-  type NormalizedPackageJson = PackageJson with Package
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - org.scalablytyped.runtime.StObject because Already inherited
+  - org.scalablytyped.runtime.StringDictionary because Already inherited
+  - typings.normalizePackageData.mod.Package because var conflicts: author, bin, bugs, bundleDependencies, contributors, dependencies, description, devDependencies, engines, files, homepage, keywords, license, maintainers, man, name, optionalDependencies, repository, scripts, version. Inlined _id, readme */ trait NormalizedPackageJson
+    extends StObject
+       with typings.typeFest.packageJsonMod.PackageJson {
+    
+    var _id: String
+    
+    var readme: String
+  }
+  object NormalizedPackageJson {
+    
+    @scala.inline
+    def apply(_id: String, readme: String): NormalizedPackageJson = {
+      val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], readme = readme.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NormalizedPackageJson]
+    }
+    
+    @scala.inline
+    implicit class NormalizedPackageJsonMutableBuilder[Self <: NormalizedPackageJson] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setReadme(value: String): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    }
+  }
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Current working directory.
     		@default process.cwd()
     		*/
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
     /**
     		[Normalize](https://github.com/npm/normalize-package-data#what-normalization-currently-entails) the package data.
     		@default true
     		*/
-    val normalize: js.UndefOr[Boolean] = js.native
+    val normalize: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

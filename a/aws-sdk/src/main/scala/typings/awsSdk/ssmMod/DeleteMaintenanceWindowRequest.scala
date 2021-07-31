@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMaintenanceWindowRequest extends StObject {
   
   /**
     * The ID of the maintenance window to delete.
     */
-  var WindowId: MaintenanceWindowId = js.native
+  var WindowId: MaintenanceWindowId
 }
 object DeleteMaintenanceWindowRequest {
   

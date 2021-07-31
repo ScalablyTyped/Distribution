@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultipointProperties extends GeometryProperties {
+trait MultipointProperties
+  extends StObject
+     with GeometryProperties {
   
   /**
     * An array of points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html#points)
     */
-  var points: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var points: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
 }
 object MultipointProperties {
   

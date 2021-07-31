@@ -3,42 +3,40 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepoSource extends StObject {
   
   /** Regex matching branches to build. The syntax of the regular expressions accepted is the syntax accepted by RE2 and described at https://github.com/google/re2/wiki/Syntax */
-  var branchName: js.UndefOr[String] = js.native
+  var branchName: js.UndefOr[String] = js.undefined
   
   /** Explicit commit SHA to build. */
-  var commitSha: js.UndefOr[String] = js.native
+  var commitSha: js.UndefOr[String] = js.undefined
   
   /**
     * Directory, relative to the source root, in which to run the build. This must be a relative path. If a step's `dir` is specified and is an absolute path, this value is ignored for
     * that step's execution.
     */
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
   /** Only trigger a build if the revision regex does NOT match the revision regex. */
-  var invertRegex: js.UndefOr[Boolean] = js.native
+  var invertRegex: js.UndefOr[Boolean] = js.undefined
   
   /** ID of the project that owns the Cloud Source Repository. If omitted, the project ID requesting the build is assumed. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Required. Name of the Cloud Source Repository. */
-  var repoName: js.UndefOr[String] = js.native
+  var repoName: js.UndefOr[String] = js.undefined
   
   /** Substitutions to use in a triggered build. Should only be used with RunBuildTrigger */
   var substitutions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.RepoSource with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.RepoSource & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Regex matching tags to build. The syntax of the regular expressions accepted is the syntax accepted by RE2 and described at https://github.com/google/re2/wiki/Syntax */
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
 }
 object RepoSource {
   
@@ -91,7 +89,7 @@ object RepoSource {
     def setSubstitutions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.RepoSource with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.RepoSource & TopLevel[js.Any]
     ): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
     @scala.inline

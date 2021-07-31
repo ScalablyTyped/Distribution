@@ -10,9 +10,9 @@ SS2 with Promises
 | ------------------ | :-------------: |
 | Full name          | node-ssh |
 | Keywords           | ssh, ssh2, sftp |
-| # releases         | 9 |
-| # dependents       | 211 |
-| # downloads        | 766227 |
+| # releases         | 12 |
+| # dependents       | 257 |
+| # downloads        | 878095 |
 | # stars            | 20 |
 
 ## Links

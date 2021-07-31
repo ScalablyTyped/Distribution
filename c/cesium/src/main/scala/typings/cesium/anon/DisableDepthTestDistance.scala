@@ -4,31 +4,29 @@ import typings.cesium.mod.HeightReference
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableDepthTestDistance extends StObject {
   
-  var color: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var color: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var disableDepthTestDistance: js.UndefOr[Property] = js.native
+  var disableDepthTestDistance: js.UndefOr[Property] = js.undefined
   
-  var distanceDisplayCondition: js.UndefOr[Property] = js.native
+  var distanceDisplayCondition: js.UndefOr[Property] = js.undefined
   
-  var heightReference: js.UndefOr[HeightReference] = js.native
+  var heightReference: js.UndefOr[HeightReference] = js.undefined
   
-  var outlineColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var outlineColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var outlineWidth: js.UndefOr[Double] = js.native
+  var outlineWidth: js.UndefOr[Double] = js.undefined
   
-  var pixelSize: js.UndefOr[Double] = js.native
+  var pixelSize: js.UndefOr[Double] = js.undefined
   
-  var scaleByDistance: js.UndefOr[Property] = js.native
+  var scaleByDistance: js.UndefOr[Property] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var translucencyByDistance: js.UndefOr[Property] = js.native
+  var translucencyByDistance: js.UndefOr[Property] = js.undefined
 }
 object DisableDepthTestDistance {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplacementEmailContent extends StObject {
   
   /**
     * The ReplacementTemplate associated with ReplacementEmailContent.
     */
-  var ReplacementTemplate: js.UndefOr[typings.awsSdk.sesv2Mod.ReplacementTemplate] = js.native
+  var ReplacementTemplate: js.UndefOr[typings.awsSdk.sesv2Mod.ReplacementTemplate] = js.undefined
 }
 object ReplacementEmailContent {
   

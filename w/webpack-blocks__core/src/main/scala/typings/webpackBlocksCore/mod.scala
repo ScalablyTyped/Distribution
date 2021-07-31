@@ -5,64 +5,66 @@ import typings.std.RegExp
 import typings.webpackBlocksCore.anon.Test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@webpack-blocks/core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object Core {
     
-    @JSImport("@webpack-blocks/core", "Core.createConfig")
+    @JSImport("@webpack-blocks/core", "Core")
     @js.native
-    def createConfig(configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-    @JSImport("@webpack-blocks/core", "Core.createConfig")
-    @js.native
-    def createConfig(initialContext: InitialContext, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@webpack-blocks/core", "Core.env")
-    @js.native
-    def env(envName: String, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+    @scala.inline
+    def createConfig(configSetters: js.Array[Block[Context]]): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(configSetters.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
+    @scala.inline
+    def createConfig(initialContext: InitialContext, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(initialContext.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
     
-    @JSImport("@webpack-blocks/core", "Core.group")
-    @js.native
-    def group(configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+    @scala.inline
+    def env(envName: String, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("env")(envName.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
     
-    @JSImport("@webpack-blocks/core", "Core.when")
-    @js.native
-    def when(condition: Boolean, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+    @scala.inline
+    def group(configSetters: js.Array[Block[Context]]): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("group")(configSetters.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
     
-    @JSImport("@webpack-blocks/core", "Core.match")
-    @js.native
-    def `match`(test: String, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-    @JSImport("@webpack-blocks/core", "Core.match")
-    @js.native
-    def `match`(test: String, options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-    @JSImport("@webpack-blocks/core", "Core.match")
-    @js.native
-    def `match`(test: js.Array[String], configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-    @JSImport("@webpack-blocks/core", "Core.match")
-    @js.native
-    def `match`(test: js.Array[String], options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+    @scala.inline
+    def `match`(test: String, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
+    @scala.inline
+    def `match`(test: String, options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
+    @scala.inline
+    def `match`(test: js.Array[String], configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
+    @scala.inline
+    def `match`(test: js.Array[String], options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
+    
+    @scala.inline
+    def when(condition: Boolean, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(condition.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
   }
   
-  @JSImport("@webpack-blocks/core", "createConfig")
-  @js.native
-  def createConfig(configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-  @JSImport("@webpack-blocks/core", "createConfig")
-  @js.native
-  def createConfig(initialContext: InitialContext, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+  @scala.inline
+  def createConfig(configSetters: js.Array[Block[Context]]): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(configSetters.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
+  @scala.inline
+  def createConfig(initialContext: InitialContext, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(initialContext.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
   
-  @JSImport("@webpack-blocks/core", "env")
-  @js.native
-  def env(envName: String, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+  @scala.inline
+  def env(envName: String, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("env")(envName.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
   
-  @JSImport("@webpack-blocks/core", "group")
-  @js.native
-  def group(configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+  @scala.inline
+  def group(configSetters: js.Array[Block[Context]]): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("group")(configSetters.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  @JSImport("@webpack-blocks/core", "when")
-  @js.native
-  def when(condition: Boolean, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+  @scala.inline
+  def `match`(test: String, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
+  @scala.inline
+  def `match`(test: String, options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
+  @scala.inline
+  def `match`(test: js.Array[String], configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
+  @scala.inline
+  def `match`(test: js.Array[String], options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
+  
+  @scala.inline
+  def when(condition: Boolean, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(condition.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
   
   @js.native
   trait Block[T /* <: Context */] extends ConfigSetter[T] {
@@ -81,10 +83,9 @@ object mod {
     ]
   ]
   
-  @js.native
   trait Context extends StObject {
     
-    var `match`: Test = js.native
+    var `match`: Test
   }
   object Context {
     
@@ -103,12 +104,11 @@ object mod {
     }
   }
   
-  @js.native
   trait InitialContext extends StObject {
     
-    var webpack: js.Any = js.native
+    var webpack: js.Any
     
-    var webpackVersion: String = js.native
+    var webpackVersion: String
   }
   object InitialContext {
     
@@ -129,12 +129,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MatchOptions extends StObject {
     
-    var exclude: js.UndefOr[RegExp] = js.native
+    var exclude: js.UndefOr[RegExp] = js.undefined
     
-    var include: js.UndefOr[String] = js.native
+    var include: js.UndefOr[String] = js.undefined
   }
   object MatchOptions {
     
@@ -161,37 +160,36 @@ object mod {
     }
   }
   
-  @js.native
   trait Util extends StObject {
     
     def addLoader(
       loaderDefinition: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RuleSetRule */ js.Any
     ): js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ _
-      ] = js.native
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
+      ]
     
     def addPlugin(plugin: Plugin): js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ _
-      ] = js.native
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
+      ]
     
     def merge(
       configSnippet: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
     ): js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ _
-      ] = js.native
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
+      ]
   }
   object Util {
     
     @scala.inline
     def apply(
       addLoader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RuleSetRule */ js.Any => js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
         ],
       addPlugin: Plugin => js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
         ],
       merge: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any => js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
         ]
     ): Util = {
       val __obj = js.Dynamic.literal(addLoader = js.Any.fromFunction1(addLoader), addPlugin = js.Any.fromFunction1(addPlugin), merge = js.Any.fromFunction1(merge))
@@ -204,36 +202,23 @@ object mod {
       @scala.inline
       def setAddLoader(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RuleSetRule */ js.Any => js.Function0[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
             ]
       ): Self = StObject.set(x, "addLoader", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAddPlugin(
         value: Plugin => js.Function0[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
             ]
       ): Self = StObject.set(x, "addPlugin", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMerge(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any => js.Function0[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
             ]
       ): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
     }
   }
-  
-  @JSImport("@webpack-blocks/core", "match")
-  @js.native
-  def `match`(test: String, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-  @JSImport("@webpack-blocks/core", "match")
-  @js.native
-  def `match`(test: String, options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-  @JSImport("@webpack-blocks/core", "match")
-  @js.native
-  def `match`(test: js.Array[String], configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-  @JSImport("@webpack-blocks/core", "match")
-  @js.native
-  def `match`(test: js.Array[String], options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
 }

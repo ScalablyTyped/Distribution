@@ -6,14 +6,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemOptionsMod {
   
   @JSImport("@ionic/core/dist/types/components/item-options/item-options", "ItemOptions")
   @js.native
-  class ItemOptions () extends ComponentInterface {
+  class ItemOptions ()
+    extends StObject
+       with ComponentInterface {
     
     var el: HTMLElement = js.native
     
@@ -23,7 +24,7 @@ object itemOptionsMod {
     /**
       * Emitted when the item has been fully swiped.
       */
-    var ionSwipe: EventEmitter[_] = js.native
+    var ionSwipe: EventEmitter[js.Any] = js.native
     
     @JSName("render")
     def render_MItemOptions(): js.Any = js.native

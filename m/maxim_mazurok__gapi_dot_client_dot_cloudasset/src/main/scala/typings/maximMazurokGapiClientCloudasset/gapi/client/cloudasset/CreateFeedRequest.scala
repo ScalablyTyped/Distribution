@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFeedRequest extends StObject {
   
   /**
     * Required. The feed details. The field `name` must be empty and it will be generated in the format of: projects/project_number/feeds/feed_id folders/folder_number/feeds/feed_id
     * organizations/organization_number/feeds/feed_id
     */
-  var feed: js.UndefOr[Feed] = js.native
+  var feed: js.UndefOr[Feed] = js.undefined
   
   /** Required. This is the client-assigned asset feed identifier and it needs to be unique under a specific parent project/folder/organization. */
-  var feedId: js.UndefOr[String] = js.native
+  var feedId: js.UndefOr[String] = js.undefined
 }
 object CreateFeedRequest {
   

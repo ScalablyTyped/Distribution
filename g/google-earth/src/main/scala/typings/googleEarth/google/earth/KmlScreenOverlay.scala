@@ -2,11 +2,11 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlScreenOverlay extends KmlOverlay {
+trait KmlScreenOverlay
+  extends StObject
+     with KmlOverlay {
   
   /**
     * Specifies a point relative to the screen origin that the overlay image is mapped to.
@@ -19,18 +19,18 @@ trait KmlScreenOverlay extends KmlOverlay {
     *  screenXY and overlayXY behave opposite to their corresponding behaviors in KML.
     *  This is due to a bug in the Earth API that will intentionally remain unfixed until a major version change.
     */
-  def getOverlayXY(): KmlVec2 = js.native
+  def getOverlayXY(): KmlVec2
   
   /**
     * Adjusts how the image is placed inside the field of view.
     * This element is useful if your image has been rotated and deviates slightly from a desired horizontal view.
     */
-  def getRotation(): Double = js.native
+  def getRotation(): Double
   
   /**
     * Point relative to the screen about which the screen overlay is rotated.
     */
-  def getRotationXY(): KmlVec2 = js.native
+  def getRotationXY(): KmlVec2
   
   /**
     * Specifies a point on (or outside of) the overlay image that is mapped to the screen coordinate.
@@ -41,7 +41,7 @@ trait KmlScreenOverlay extends KmlOverlay {
     *  screenXY and overlayXY behave opposite to their corresponding behaviors in KML.
     *  This is due to a bug in the Earth API that will intentionally remain unfixed until a major version change.
     */
-  def getScreenXY(): KmlVec2 = js.native
+  def getScreenXY(): KmlVec2
   
   /**
     * Specifies the size of the image for the screen overlay, as follows:
@@ -50,13 +50,13 @@ trait KmlScreenOverlay extends KmlOverlay {
     * * A value of 0 indicates to maintain the aspect ratio
     * * A value of n sets the value of the dimension
     */
-  def getSize(): KmlVec2 = js.native
+  def getSize(): KmlVec2
   
   /**
     * Adjusts how the image is placed inside the field of view.
     * This element is useful if your image has been rotated and deviates slightly from a desired horizontal view.
     */
-  def setRotation(rotation: Double): Unit = js.native
+  def setRotation(rotation: Double): Unit
 }
 object KmlScreenOverlay {
   

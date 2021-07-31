@@ -2,31 +2,29 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBackupsRequest extends StObject {
   
   /**
     * Describes a single backup. 
     */
-  var BackupId: js.UndefOr[typings.awsSdk.opsworkscmMod.BackupId] = js.native
+  var BackupId: js.UndefOr[typings.awsSdk.opsworkscmMod.BackupId] = js.undefined
   
   /**
     * This is not currently implemented for DescribeBackups requests.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.opsworkscmMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.opsworkscmMod.MaxResults] = js.undefined
   
   /**
     * This is not currently implemented for DescribeBackups requests.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.opsworkscmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.opsworkscmMod.NextToken] = js.undefined
   
   /**
     * Returns backups for the server with the specified ServerName. 
     */
-  var ServerName: js.UndefOr[typings.awsSdk.opsworkscmMod.ServerName] = js.native
+  var ServerName: js.UndefOr[typings.awsSdk.opsworkscmMod.ServerName] = js.undefined
 }
 object DescribeBackupsRequest {
   

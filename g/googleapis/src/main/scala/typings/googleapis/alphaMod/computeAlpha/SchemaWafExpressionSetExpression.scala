@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaWafExpressionSetExpression extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SchemaWafExpressionSetExpression extends StObject {
     * definition that has been detected. It could also be used to exclude it
     * from the policy in case of false positive.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object SchemaWafExpressionSetExpression {
   

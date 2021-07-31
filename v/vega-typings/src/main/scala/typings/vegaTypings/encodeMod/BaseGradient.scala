@@ -4,16 +4,14 @@ import typings.vegaTypings.vegaTypingsStrings.linear
 import typings.vegaTypings.vegaTypingsStrings.radial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseGradient extends StObject {
   
   /**
     * The type of gradient.
     */
-  var gradient: linear | radial = js.native
+  var gradient: linear | radial
 }
 object BaseGradient {
   

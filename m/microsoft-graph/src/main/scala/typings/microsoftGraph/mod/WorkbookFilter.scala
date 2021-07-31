@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookFilter extends Entity {
+trait WorkbookFilter
+  extends StObject
+     with Entity {
   
   // The currently applied filter on the given column. Read-only.
-  var criteria: js.UndefOr[NullableOption[WorkbookFilterCriteria]] = js.native
+  var criteria: js.UndefOr[NullableOption[WorkbookFilterCriteria]] = js.undefined
 }
 object WorkbookFilter {
   

@@ -2,7 +2,6 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,28 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is set, the element is complete. If neither is set, the element is
   * incomplete.
   */
-@js.native
 trait SchemaPathElement extends StObject {
   
   /**
     * The auto-allocated ID of the entity. Never equal to zero. Values less
     * than zero are discouraged and may not be supported in the future.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of the entity. A kind matching regex `__.*__` is
     * reserved/read-only. A kind must not contain more than 1500 bytes when
     * UTF-8 encoded. Cannot be `&quot;&quot;`.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the entity. A name matching regex `__.*__` is
     * reserved/read-only. A name must not be more than 1500 bytes when UTF-8
     * encoded. Cannot be `&quot;&quot;`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaPathElement {
   

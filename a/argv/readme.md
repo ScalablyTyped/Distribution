@@ -10,8 +10,8 @@ CLI Argument Parser
 | Full name          | argv |
 | Keywords           | cli, argv, options |
 | # releases         | 0 |
-| # dependents       | 435 |
-| # downloads        | 19895956 |
+| # dependents       | 450 |
+| # downloads        | 20696410 |
 | # stars            | 20 |
 
 ## Links

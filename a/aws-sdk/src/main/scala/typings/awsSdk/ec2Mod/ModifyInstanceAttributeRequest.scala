@@ -2,91 +2,89 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyInstanceAttributeRequest extends StObject {
   
   /**
     * The name of the attribute.
     */
-  var Attribute: js.UndefOr[InstanceAttributeName] = js.native
+  var Attribute: js.UndefOr[InstanceAttributeName] = js.undefined
   
   /**
     * Modifies the DeleteOnTermination attribute for volumes that are currently attached. The volume must be owned by the caller. If no value is specified for DeleteOnTermination, the default is true and the volume is deleted when the instance is terminated. To add instance store volumes to an Amazon EBS-backed instance, you must add them when you launch the instance. For more information, see Updating the block device mapping when launching an instance in the Amazon Elastic Compute Cloud User Guide.
     */
-  var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingSpecificationList] = js.native
+  var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingSpecificationList] = js.undefined
   
   /**
     * If the value is true, you can't terminate the instance using the Amazon EC2 console, CLI, or API; otherwise, you can. You cannot use this parameter for Spot Instances.
     */
-  var DisableApiTermination: js.UndefOr[AttributeBooleanValue] = js.native
+  var DisableApiTermination: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether the instance is optimized for Amazon EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance.
     */
-  var EbsOptimized: js.UndefOr[AttributeBooleanValue] = js.native
+  var EbsOptimized: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
     * Set to true to enable enhanced networking with ENA for the instance. This option is supported only for HVM instances. Specifying this option with a PV instance can make it unreachable.
     */
-  var EnaSupport: js.UndefOr[AttributeBooleanValue] = js.native
+  var EnaSupport: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
     * [EC2-VPC] Changes the security groups of the instance. You must specify at least one security group, even if it's just the default security group for the VPC. You must specify the security group ID, not the security group name.
     */
-  var Groups: js.UndefOr[GroupIdStringList] = js.native
+  var Groups: js.UndefOr[GroupIdStringList] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: typings.awsSdk.ec2Mod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.ec2Mod.InstanceId
   
   /**
     * Specifies whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown).
     */
-  var InstanceInitiatedShutdownBehavior: js.UndefOr[AttributeValue] = js.native
+  var InstanceInitiatedShutdownBehavior: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * Changes the instance type to the specified value. For more information, see Instance types. If the instance type is not valid, the error returned is InvalidInstanceAttributeValue.
     */
-  var InstanceType: js.UndefOr[AttributeValue] = js.native
+  var InstanceType: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * Changes the instance's kernel to the specified value. We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see PV-GRUB.
     */
-  var Kernel: js.UndefOr[AttributeValue] = js.native
+  var Kernel: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * Changes the instance's RAM disk to the specified value. We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see PV-GRUB.
     */
-  var Ramdisk: js.UndefOr[AttributeValue] = js.native
+  var Ramdisk: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * Specifies whether source/destination checking is enabled. A value of true means that checking is enabled, and false means that checking is disabled. This value must be false for a NAT instance to perform NAT.
     */
-  var SourceDestCheck: js.UndefOr[AttributeBooleanValue] = js.native
+  var SourceDestCheck: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
     * Set to simple to enable enhanced networking with the Intel 82599 Virtual Function interface for the instance. There is no way to disable enhanced networking with the Intel 82599 Virtual Function interface at this time. This option is supported only for HVM instances. Specifying this option with a PV instance can make it unreachable.
     */
-  var SriovNetSupport: js.UndefOr[AttributeValue] = js.native
+  var SriovNetSupport: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * Changes the instance's user data to the specified value. If you are using an AWS SDK or command line tool, base64-encoding is performed for you, and you can load the text from a file. Otherwise, you must provide base64-encoded text.
     */
-  var UserData: js.UndefOr[BlobAttributeValue] = js.native
+  var UserData: js.UndefOr[BlobAttributeValue] = js.undefined
   
   /**
     * A new value for the attribute. Use only with the kernel, ramdisk, userData, disableApiTermination, or instanceInitiatedShutdownBehavior attribute.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object ModifyInstanceAttributeRequest {
   

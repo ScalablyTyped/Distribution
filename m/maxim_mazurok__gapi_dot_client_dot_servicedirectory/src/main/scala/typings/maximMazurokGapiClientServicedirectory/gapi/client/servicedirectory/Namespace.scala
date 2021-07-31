@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientServicedirectory.gapi.client.servicedirect
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Namespace extends StObject {
   
   /**
@@ -16,11 +14,11 @@ trait Namespace extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Namespace with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Namespace & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Immutable. The resource name for the namespace in the format 'projects/∗/locations/∗/namespaces/ *'. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Namespace {
   
@@ -37,7 +35,7 @@ object Namespace {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Namespace with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Namespace & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

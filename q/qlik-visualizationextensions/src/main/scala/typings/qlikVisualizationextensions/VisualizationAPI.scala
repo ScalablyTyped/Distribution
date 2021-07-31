@@ -4,7 +4,6 @@ import typings.angular.mod.IPromise
 import typings.qlikVisualizationextensions.TableAPI.IQTable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object VisualizationAPI {
@@ -16,7 +15,7 @@ object VisualizationAPI {
       * Closes a visualization and releases the session object.
       * @return - A promise.
       */
-    def close(): IPromise[_] = js.native
+    def close(): IPromise[js.Any] = js.native
     
     /**
       * Tells the visualization it has been resized and should re-paint.
@@ -40,11 +39,11 @@ object VisualizationAPI {
       * | | Parameter introduced in version 3.0.
       */
     def show(): Unit = js.native
-    def show(element: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
     def show(element: String): Unit = js.native
     def show(element: String, options: js.Any): Unit = js.native
     def show(element: js.Any): Unit = js.native
     def show(element: js.Any, options: js.Any): Unit = js.native
+    def show(element: Unit, options: js.Any): Unit = js.native
     
     /**
       * Table object for this visualization.
@@ -81,17 +80,17 @@ object VisualizationAPI {
       * @param [options] - Optional. Options to set.
       * @return - A promise of a QVisualization.
       */
-    def create(`type`: VisualizationType): IPromise[_] = js.native
-    def create(`type`: VisualizationType, cols: js.UndefOr[scala.Nothing], options: js.Any): IPromise[_] = js.native
-    def create(`type`: VisualizationType, cols: js.Array[_]): IPromise[_] = js.native
-    def create(`type`: VisualizationType, cols: js.Array[_], options: js.Any): IPromise[_] = js.native
+    def create(`type`: VisualizationType): IPromise[js.Any] = js.native
+    def create(`type`: VisualizationType, cols: js.Array[js.Any]): IPromise[js.Any] = js.native
+    def create(`type`: VisualizationType, cols: js.Array[js.Any], options: js.Any): IPromise[js.Any] = js.native
+    def create(`type`: VisualizationType, cols: Unit, options: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Gets an existing visualization.
       * @param id - Id for an existing visualization.
       * @return - A promise of a QVisualization.
       */
-    def get(id: String): IPromise[_] = js.native
+    def get(id: String): IPromise[js.Any] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -105,7 +104,7 @@ object VisualizationAPI {
     - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.scatterplot
     - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.table
     - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.treemap
-    - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.extension
+    - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.`extension`
   */
   trait VisualizationType extends StObject
   object VisualizationType {
@@ -117,7 +116,7 @@ object VisualizationAPI {
     def combochart: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.combochart = "combochart".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.combochart]
     
     @scala.inline
-    def extension: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.extension = "extension".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.extension]
+    def `extension`: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.`extension` = "extension".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.`extension`]
     
     @scala.inline
     def gauge: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.gauge = "gauge".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.gauge]

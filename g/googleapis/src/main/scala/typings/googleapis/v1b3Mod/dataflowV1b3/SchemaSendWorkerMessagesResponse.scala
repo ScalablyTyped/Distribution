@@ -2,19 +2,17 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response to the worker messages.
   */
-@js.native
 trait SchemaSendWorkerMessagesResponse extends StObject {
   
   /**
     * The servers response to the worker messages.
     */
-  var workerMessageResponses: js.UndefOr[js.Array[SchemaWorkerMessageResponse]] = js.native
+  var workerMessageResponses: js.UndefOr[js.Array[SchemaWorkerMessageResponse]] = js.undefined
 }
 object SchemaSendWorkerMessagesResponse {
   

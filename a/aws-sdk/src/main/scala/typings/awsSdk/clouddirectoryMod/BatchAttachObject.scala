@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchAttachObject extends StObject {
   
   /**
     * The child object reference that is to be attached to the object.
     */
-  var ChildReference: ObjectReference = js.native
+  var ChildReference: ObjectReference
   
   /**
     * The name of the link.
     */
-  var LinkName: typings.awsSdk.clouddirectoryMod.LinkName = js.native
+  var LinkName: typings.awsSdk.clouddirectoryMod.LinkName
   
   /**
     * The parent object reference.
     */
-  var ParentReference: ObjectReference = js.native
+  var ParentReference: ObjectReference
 }
 object BatchAttachObject {
   

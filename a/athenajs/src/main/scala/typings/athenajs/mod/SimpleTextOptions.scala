@@ -2,29 +2,29 @@ package typings.athenajs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleTextOptions extends DrawableOptions {
+trait SimpleTextOptions
+  extends StObject
+     with DrawableOptions {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var fontFace: js.UndefOr[String] = js.native
+  var fontFace: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SimpleTextOptions {
   

@@ -2,13 +2,11 @@ package typings.ckeditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabId extends StObject {
   
-  var tabId: js.UndefOr[String] = js.native
+  var tabId: js.UndefOr[String] = js.undefined
 }
 object TabId {
   

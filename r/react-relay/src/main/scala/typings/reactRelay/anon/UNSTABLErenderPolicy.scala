@@ -3,13 +3,11 @@ package typings.reactRelay.anon
 import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UNSTABLErenderPolicy extends StObject {
   
-  var UNSTABLE_renderPolicy: js.UndefOr[RenderPolicy] = js.native
+  var UNSTABLE_renderPolicy: js.UndefOr[RenderPolicy] = js.undefined
 }
 object UNSTABLErenderPolicy {
   

@@ -2,28 +2,26 @@ package typings.libp2pGossipsub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/score/peer-stats.TopicStats> */
-@js.native
 trait PartialTopicStats extends StObject {
   
-  var firstMessageDeliveries: js.UndefOr[Double] = js.native
+  var firstMessageDeliveries: js.UndefOr[Double] = js.undefined
   
-  var graftTime: js.UndefOr[Double] = js.native
+  var graftTime: js.UndefOr[Double] = js.undefined
   
-  var inMesh: js.UndefOr[Boolean] = js.native
+  var inMesh: js.UndefOr[Boolean] = js.undefined
   
-  var invalidMessageDeliveries: js.UndefOr[Double] = js.native
+  var invalidMessageDeliveries: js.UndefOr[Double] = js.undefined
   
-  var meshFailurePenalty: js.UndefOr[Double] = js.native
+  var meshFailurePenalty: js.UndefOr[Double] = js.undefined
   
-  var meshMessageDeliveries: js.UndefOr[Double] = js.native
+  var meshMessageDeliveries: js.UndefOr[Double] = js.undefined
   
-  var meshMessageDeliveriesActive: js.UndefOr[Boolean] = js.native
+  var meshMessageDeliveriesActive: js.UndefOr[Boolean] = js.undefined
   
-  var meshTime: js.UndefOr[Double] = js.native
+  var meshTime: js.UndefOr[Double] = js.undefined
 }
 object PartialTopicStats {
   

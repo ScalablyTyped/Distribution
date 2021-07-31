@@ -7,10 +7,13 @@ import typings.vegaLite.vegaLiteStrings.quantitative
 import typings.vegaLite.vegaLiteStrings.temporal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcTypeMod {
+  
+  @JSImport("vega-lite/build/src/type", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/type", "GEOJSON")
   @js.native
@@ -67,16 +70,13 @@ object srcTypeMod {
     val temporal: typings.vegaLite.vegaLiteStrings.temporal = js.native
   }
   
-  @JSImport("vega-lite/build/src/type", "getFullName")
-  @js.native
-  def getFullName(`type`: String): js.UndefOr[Type] = js.native
-  @JSImport("vega-lite/build/src/type", "getFullName")
-  @js.native
-  def getFullName(`type`: Type): js.UndefOr[Type] = js.native
+  @scala.inline
+  def getFullName(`type`: String): js.UndefOr[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullName")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Type]]
+  @scala.inline
+  def getFullName(`type`: Type): js.UndefOr[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullName")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Type]]
   
-  @JSImport("vega-lite/build/src/type", "isType")
-  @js.native
-  def isType(t: js.Any): /* is vega-lite.vega-lite/build/src/type.Type */ Boolean = js.native
+  @scala.inline
+  def isType(t: js.Any): /* is vega-lite.vega-lite/build/src/type.Type */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isType")(t.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/type.Type */ Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.quantitative

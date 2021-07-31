@@ -2,13 +2,21 @@ package typings.gsap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gsap", "Back")
 @js.native
 class Back ()
-  extends typings.gsap.gsap.Back
+  extends StObject
+     with typings.gsap.gsap.Back {
+  
+  /* CompleteClass */
+  override def config(overshoot: Double): typings.gsap.gsap.Elastic = js.native
+  
+  /** Translates the tween's progress ratio into the corresponding ease ratio. */
+  /* CompleteClass */
+  override def getRatio(p: Double): Double = js.native
+}
 object Back {
   
   @JSImport("gsap", "Back")

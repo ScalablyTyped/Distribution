@@ -3,15 +3,15 @@ package typings.prismReactRenderer.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ThemeDict extends /* type */ StringDictionary[StyleObj] {
+trait ThemeDict
+  extends StObject
+     with /* type */ StringDictionary[StyleObj] {
   
-  var plain: StyleObj = js.native
+  var plain: StyleObj
   
-  var root: StyleObj = js.native
+  var root: StyleObj
 }
 object ThemeDict {
   

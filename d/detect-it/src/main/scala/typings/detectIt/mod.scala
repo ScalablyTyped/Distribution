@@ -14,7 +14,6 @@ import typings.detectPointer.mod.detectPointer
 import typings.detectTouchEvents.mod.detectTouchEvents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -28,26 +27,25 @@ object mod extends Shortcut {
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
   override def _to: typings.detectIt.mod.detectIt = default
   
-  @js.native
   trait detectIt extends StObject {
     
-    var deviceType: hybrid | mouseOnly | touchOnly = js.native
+    var deviceType: hybrid | mouseOnly | touchOnly
     
-    var hasMouse: Boolean = js.native
+    var hasMouse: Boolean
     
-    var hasTouch: Boolean = js.native
+    var hasTouch: Boolean
     
-    var maxTouchPoints: Double = js.native
+    var maxTouchPoints: Double
     
-    var passiveEvents: Boolean = js.native
+    var passiveEvents: Boolean
     
-    var primaryHover: hover | none = js.native
+    var primaryHover: hover | none
     
-    var primaryPointer: coarse | fine | none = js.native
+    var primaryPointer: coarse | fine | none
     
-    var state: typings.detectIt.mod.state = js.native
+    var state: typings.detectIt.mod.state
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object detectIt {
     
@@ -99,16 +97,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait state extends StObject {
     
-    var detectHover: typings.detectHover.mod.detectHover = js.native
+    var detectHover: typings.detectHover.mod.detectHover
     
-    var detectPassiveEvents: typings.detectPassiveEvents.mod.detectPassiveEvents = js.native
+    var detectPassiveEvents: typings.detectPassiveEvents.mod.detectPassiveEvents
     
-    var detectPointer: typings.detectPointer.mod.detectPointer = js.native
+    var detectPointer: typings.detectPointer.mod.detectPointer
     
-    var detectTouchEvents: typings.detectTouchEvents.mod.detectTouchEvents = js.native
+    var detectTouchEvents: typings.detectTouchEvents.mod.detectTouchEvents
   }
   object state {
     

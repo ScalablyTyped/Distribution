@@ -2,15 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditUpdateCellParams extends IEditRowOperationParams {
+trait EditUpdateCellParams
+  extends StObject
+     with IEditRowOperationParams {
   
-  var columnId: Double = js.native
+  var columnId: Double
   
-  var newValue: String = js.native
+  var newValue: String
 }
 object EditUpdateCellParams {
   

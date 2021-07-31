@@ -3,23 +3,21 @@ package typings.chartist.mod
 import typings.chartist.anon.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILineChartAxis extends StObject {
   
-  var labelInterpolationFnc: js.UndefOr[js.Function] = js.native
+  var labelInterpolationFnc: js.UndefOr[js.Function] = js.undefined
   
-  var labelOffset: js.UndefOr[Y] = js.native
+  var labelOffset: js.UndefOr[Y] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var showGrid: js.UndefOr[Boolean] = js.native
+  var showGrid: js.UndefOr[Boolean] = js.undefined
   
-  var showLabel: js.UndefOr[Boolean] = js.native
+  var showLabel: js.UndefOr[Boolean] = js.undefined
 }
 object ILineChartAxis {
   

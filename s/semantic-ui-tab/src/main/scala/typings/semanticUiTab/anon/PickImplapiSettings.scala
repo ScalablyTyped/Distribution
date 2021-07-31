@@ -3,14 +3,12 @@ package typings.semanticUiTab.anon
 import typings.semanticUiApi.SemanticUI.ApiSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, 'apiSettings'> */
-@js.native
 trait PickImplapiSettings extends StObject {
   
-  var apiSettings: ApiSettings = js.native
+  var apiSettings: ApiSettings
 }
 object PickImplapiSettings {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayMulticastDomainAssociation extends StObject {
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: js.UndefOr[String] = js.native
+  var ResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of resource, for example a VPC attachment.
     */
-  var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.native
+  var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.undefined
   
   /**
     * The subnet associated with the transit gateway multicast domain.
     */
-  var Subnet: js.UndefOr[SubnetAssociation] = js.native
+  var Subnet: js.UndefOr[SubnetAssociation] = js.undefined
   
   /**
     * The ID of the transit gateway attachment.
     */
-  var TransitGatewayAttachmentId: js.UndefOr[String] = js.native
+  var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
 }
 object TransitGatewayMulticastDomainAssociation {
   

@@ -7,35 +7,33 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.touchStart
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DispatchTouchEventRequest extends StObject {
   
   /**
     * Bit field representing pressed modifier keys. Alt=1, Ctrl=2, Meta/Command=4, Shift=8
     * (default: 0).
     */
-  var modifiers: js.UndefOr[integer] = js.native
+  var modifiers: js.UndefOr[integer] = js.undefined
   
   /**
     * Time at which the event occurred.
     */
-  var timestamp: js.UndefOr[TimeSinceEpoch] = js.native
+  var timestamp: js.UndefOr[TimeSinceEpoch] = js.undefined
   
   /**
     * Active touch points on the touch device. One event per any changed point (compared to
     * previous touch event in a sequence) is generated, emulating pressing/moving/releasing points
     * one by one.
     */
-  var touchPoints: js.Array[TouchPoint] = js.native
+  var touchPoints: js.Array[TouchPoint]
   
   /**
     * Type of the touch event. TouchEnd and TouchCancel must not contain any touch points, while
     * TouchStart and TouchMove must contains at least one. (DispatchTouchEventRequestType enum)
     */
-  var `type`: touchStart | touchEnd | touchMove | touchCancel = js.native
+  var `type`: touchStart | touchEnd | touchMove | touchCancel
 }
 object DispatchTouchEventRequest {
   

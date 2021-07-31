@@ -8,10 +8,13 @@ import typings.jose.mod.JWK.Key
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JWS {
+  
+  @JSImport("jose", "JWS")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("jose", "JWS.Sign")
   @js.native
@@ -21,9 +24,9 @@ object JWS {
     def this(payload: Buffer) = this()
     
     def recipient(key: ProduceKeyInputWithNone): Unit = js.native
-    def recipient(key: ProduceKeyInputWithNone, `protected`: js.UndefOr[scala.Nothing], header: js.Object): Unit = js.native
     def recipient(key: ProduceKeyInputWithNone, `protected`: js.Object): Unit = js.native
     def recipient(key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): Unit = js.native
+    def recipient(key: ProduceKeyInputWithNone, `protected`: Unit, header: js.Object): Unit = js.native
     
     @JSName("sign")
     def sign_compact(serialization: compact): String = js.native
@@ -35,170 +38,120 @@ object JWS {
   
   object sign {
     
-    @JSImport("jose", "JWS.sign")
-    @js.native
-    def apply(payload: String, key: ProduceKeyInputWithNone): String = js.native
-    @JSImport("jose", "JWS.sign")
-    @js.native
-    def apply(payload: String, key: ProduceKeyInputWithNone, `protected`: js.Object): String = js.native
-    @JSImport("jose", "JWS.sign")
-    @js.native
-    def apply(payload: js.Object, key: ProduceKeyInputWithNone): String = js.native
-    @JSImport("jose", "JWS.sign")
-    @js.native
-    def apply(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: js.Object): String = js.native
-    @JSImport("jose", "JWS.sign")
-    @js.native
-    def apply(payload: Buffer, key: ProduceKeyInputWithNone): String = js.native
-    @JSImport("jose", "JWS.sign")
-    @js.native
-    def apply(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: js.Object): String = js.native
+    @scala.inline
+    def apply(payload: String, key: ProduceKeyInputWithNone): String = (^.asInstanceOf[js.Dynamic].apply(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(payload: String, key: ProduceKeyInputWithNone, `protected`: js.Object): String = (^.asInstanceOf[js.Dynamic].apply(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(payload: js.Object, key: ProduceKeyInputWithNone): String = (^.asInstanceOf[js.Dynamic].apply(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: js.Object): String = (^.asInstanceOf[js.Dynamic].apply(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(payload: Buffer, key: ProduceKeyInputWithNone): String = (^.asInstanceOf[js.Dynamic].apply(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: js.Object): String = (^.asInstanceOf[js.Dynamic].apply(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("jose", "JWS.sign.flattened")
+    @JSImport("jose", "JWS.sign")
     @js.native
-    def flattened(payload: String, key: ProduceKeyInputWithNone): FlattenedJWS = js.native
-    @JSImport("jose", "JWS.sign.flattened")
-    @js.native
-    def flattened(
-      payload: String,
-      key: ProduceKeyInputWithNone,
-      `protected`: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): FlattenedJWS = js.native
-    @JSImport("jose", "JWS.sign.flattened")
-    @js.native
-    def flattened(payload: String, key: ProduceKeyInputWithNone, `protected`: js.Object): FlattenedJWS = js.native
-    @JSImport("jose", "JWS.sign.flattened")
-    @js.native
-    def flattened(payload: String, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): FlattenedJWS = js.native
-    @JSImport("jose", "JWS.sign.flattened")
-    @js.native
-    def flattened(payload: js.Object, key: ProduceKeyInputWithNone): FlattenedJWS = js.native
-    @JSImport("jose", "JWS.sign.flattened")
-    @js.native
-    def flattened(
-      payload: js.Object,
-      key: ProduceKeyInputWithNone,
-      `protected`: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): FlattenedJWS = js.native
-    @JSImport("jose", "JWS.sign.flattened")
-    @js.native
-    def flattened(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: js.Object): FlattenedJWS = js.native
-    @JSImport("jose", "JWS.sign.flattened")
-    @js.native
-    def flattened(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): FlattenedJWS = js.native
-    @JSImport("jose", "JWS.sign.flattened")
-    @js.native
-    def flattened(payload: Buffer, key: ProduceKeyInputWithNone): FlattenedJWS = js.native
-    @JSImport("jose", "JWS.sign.flattened")
-    @js.native
-    def flattened(
-      payload: Buffer,
-      key: ProduceKeyInputWithNone,
-      `protected`: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): FlattenedJWS = js.native
-    @JSImport("jose", "JWS.sign.flattened")
-    @js.native
-    def flattened(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: js.Object): FlattenedJWS = js.native
-    @JSImport("jose", "JWS.sign.flattened")
-    @js.native
-    def flattened(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): FlattenedJWS = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(payload: String, key: ProduceKeyInputWithNone): GeneralJWS = js.native
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(
-      payload: String,
-      key: ProduceKeyInputWithNone,
-      `protected`: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): GeneralJWS = js.native
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(payload: String, key: ProduceKeyInputWithNone, `protected`: js.Object): GeneralJWS = js.native
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(payload: String, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): GeneralJWS = js.native
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(payload: js.Object, key: ProduceKeyInputWithNone): GeneralJWS = js.native
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(
-      payload: js.Object,
-      key: ProduceKeyInputWithNone,
-      `protected`: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): GeneralJWS = js.native
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: js.Object): GeneralJWS = js.native
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): GeneralJWS = js.native
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(payload: Buffer, key: ProduceKeyInputWithNone): GeneralJWS = js.native
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(
-      payload: Buffer,
-      key: ProduceKeyInputWithNone,
-      `protected`: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): GeneralJWS = js.native
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: js.Object): GeneralJWS = js.native
-    @JSImport("jose", "JWS.sign.general")
-    @js.native
-    def general(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): GeneralJWS = js.native
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInputWithNone): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInputWithNone, `protected`: js.Object): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInputWithNone, `protected`: Unit, header: js.Object): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    @scala.inline
+    def flattened(payload: js.Object, key: ProduceKeyInputWithNone): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    @scala.inline
+    def flattened(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: js.Object): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    @scala.inline
+    def flattened(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    @scala.inline
+    def flattened(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: Unit, header: js.Object): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInputWithNone): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: js.Object): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: Unit, header: js.Object): FlattenedJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWS]
+    
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInputWithNone): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInputWithNone, `protected`: js.Object): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInputWithNone, `protected`: Unit, header: js.Object): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
+    @scala.inline
+    def general(payload: js.Object, key: ProduceKeyInputWithNone): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
+    @scala.inline
+    def general(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: js.Object): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
+    @scala.inline
+    def general(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
+    @scala.inline
+    def general(payload: js.Object, key: ProduceKeyInputWithNone, `protected`: Unit, header: js.Object): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInputWithNone): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: js.Object): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: js.Object, header: js.Object): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInputWithNone, `protected`: Unit, header: js.Object): GeneralJWS = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWS]
   }
   
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: String, key: ConsumeKeyInputWithNone | EmbeddedVerifyKeys): Buffer = js.native
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: String, key: ConsumeKeyInput | EmbeddedVerifyKeys, options: VerifyOptionscompletetrue): completeVerification[Key] = js.native
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: String, key: ConsumeKeyInputWithNone | EmbeddedVerifyKeys, options: VerifyOptions): Buffer = js.native
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: String, key: NoneKey, options: VerifyOptionscompletetrue): completeVerification[NoneKey] = js.native
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: FlattenedJWS, key: ConsumeKeyInputWithNone | EmbeddedVerifyKeys): Buffer = js.native
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: FlattenedJWS, key: ConsumeKeyInput | EmbeddedVerifyKeys, options: VerifyOptionscompletetrue): completeVerification[Key] = js.native
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: FlattenedJWS, key: ConsumeKeyInputWithNone | EmbeddedVerifyKeys, options: VerifyOptions): Buffer = js.native
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: FlattenedJWS, key: NoneKey, options: VerifyOptionscompletetrue): completeVerification[NoneKey] = js.native
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: GeneralJWS, key: ConsumeKeyInputWithNone | EmbeddedVerifyKeys): Buffer = js.native
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: GeneralJWS, key: ConsumeKeyInput | EmbeddedVerifyKeys, options: VerifyOptionscompletetrue): completeVerification[Key] = js.native
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: GeneralJWS, key: ConsumeKeyInputWithNone | EmbeddedVerifyKeys, options: VerifyOptions): Buffer = js.native
-  @JSImport("jose", "JWS.verify")
-  @js.native
-  def verify(jws: GeneralJWS, key: NoneKey, options: VerifyOptionscompletetrue): completeVerification[NoneKey] = js.native
+  @scala.inline
+  def verify(jws: String, key: ConsumeKeyInputWithNone): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: String, key: ConsumeKeyInputWithNone, options: VerifyOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: String, key: ConsumeKeyInput, options: VerifyOptionscompletetrue): completeVerification[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeVerification[Key]]
+  @scala.inline
+  def verify(jws: String, key: EmbeddedVerifyKeys): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: String, key: EmbeddedVerifyKeys, options: VerifyOptionscompletetrue): completeVerification[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeVerification[Key]]
+  @scala.inline
+  def verify(jws: String, key: EmbeddedVerifyKeys, options: VerifyOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: String, key: NoneKey, options: VerifyOptionscompletetrue): completeVerification[NoneKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeVerification[NoneKey]]
+  @scala.inline
+  def verify(jws: FlattenedJWS, key: ConsumeKeyInputWithNone): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: FlattenedJWS, key: ConsumeKeyInputWithNone, options: VerifyOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: FlattenedJWS, key: ConsumeKeyInput, options: VerifyOptionscompletetrue): completeVerification[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeVerification[Key]]
+  @scala.inline
+  def verify(jws: FlattenedJWS, key: EmbeddedVerifyKeys): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: FlattenedJWS, key: EmbeddedVerifyKeys, options: VerifyOptionscompletetrue): completeVerification[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeVerification[Key]]
+  @scala.inline
+  def verify(jws: FlattenedJWS, key: EmbeddedVerifyKeys, options: VerifyOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: FlattenedJWS, key: NoneKey, options: VerifyOptionscompletetrue): completeVerification[NoneKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeVerification[NoneKey]]
+  @scala.inline
+  def verify(jws: GeneralJWS, key: ConsumeKeyInputWithNone): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: GeneralJWS, key: ConsumeKeyInputWithNone, options: VerifyOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: GeneralJWS, key: ConsumeKeyInput, options: VerifyOptionscompletetrue): completeVerification[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeVerification[Key]]
+  @scala.inline
+  def verify(jws: GeneralJWS, key: EmbeddedVerifyKeys): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: GeneralJWS, key: EmbeddedVerifyKeys, options: VerifyOptionscompletetrue): completeVerification[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeVerification[Key]]
+  @scala.inline
+  def verify(jws: GeneralJWS, key: EmbeddedVerifyKeys, options: VerifyOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def verify(jws: GeneralJWS, key: NoneKey, options: VerifyOptionscompletetrue): completeVerification[NoneKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jws.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeVerification[NoneKey]]
   
-  @js.native
   trait FlattenedJWS
-    extends JWSRecipient
+    extends StObject
+       with JWSRecipient
        with JWSJSON
   object FlattenedJWS {
     
@@ -209,10 +162,11 @@ object JWS {
     }
   }
   
-  @js.native
-  trait GeneralJWS extends JWSJSON {
+  trait GeneralJWS
+    extends StObject
+       with JWSJSON {
     
-    var signatures: js.Array[JWSRecipient] = js.native
+    var signatures: js.Array[JWSRecipient]
   }
   object GeneralJWS {
     
@@ -233,10 +187,9 @@ object JWS {
     }
   }
   
-  @js.native
   trait JWSJSON extends StObject {
     
-    var payload: String | Buffer = js.native
+    var payload: String | Buffer
   }
   object JWSJSON {
     
@@ -254,14 +207,13 @@ object JWS {
     }
   }
   
-  @js.native
   trait JWSRecipient extends StObject {
     
-    var header: js.UndefOr[js.Object] = js.native
+    var header: js.UndefOr[js.Object] = js.undefined
     
-    var `protected`: js.UndefOr[String] = js.native
+    var `protected`: js.UndefOr[String] = js.undefined
     
-    var signature: String = js.native
+    var signature: String
   }
   object JWSRecipient {
     
@@ -291,14 +243,13 @@ object JWS {
     }
   }
   
-  @js.native
   trait VerifyOptions extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var complete: js.UndefOr[Boolean] = js.native
+    var complete: js.UndefOr[Boolean] = js.undefined
     
-    var crit: js.UndefOr[js.Array[String]] = js.native
+    var crit: js.UndefOr[js.Array[String]] = js.undefined
   }
   object VerifyOptions {
     
@@ -337,16 +288,15 @@ object JWS {
     }
   }
   
-  @js.native
   trait completeVerification[T] extends StObject {
     
-    var header: js.UndefOr[js.Object] = js.native
+    var header: js.UndefOr[js.Object] = js.undefined
     
-    var key: T = js.native
+    var key: T
     
-    var payload: Buffer = js.native
+    var payload: Buffer
     
-    var `protected`: js.UndefOr[js.Object] = js.native
+    var `protected`: js.UndefOr[js.Object] = js.undefined
   }
   object completeVerification {
     
@@ -357,7 +307,7 @@ object JWS {
     }
     
     @scala.inline
-    implicit class completeVerificationMutableBuilder[Self <: completeVerification[_], T] (val x: Self with completeVerification[T]) extends AnyVal {
+    implicit class completeVerificationMutableBuilder[Self <: completeVerification[?], T] (val x: Self & completeVerification[T]) extends AnyVal {
       
       @scala.inline
       def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])

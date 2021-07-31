@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEditAssignedUserRolesRequest extends StObject {
   
   /** The assigned user roles to create in batch, specified as a list of AssignedUserRoles. */
-  var createdAssignedUserRoles: js.UndefOr[js.Array[AssignedUserRole]] = js.native
+  var createdAssignedUserRoles: js.UndefOr[js.Array[AssignedUserRole]] = js.undefined
   
   /** The assigned user roles to delete in batch, specified as a list of assigned_user_role_ids. The format of assigned_user_role_id is `entityType-entityid`, for example `partner-123`. */
-  var deletedAssignedUserRoles: js.UndefOr[js.Array[String]] = js.native
+  var deletedAssignedUserRoles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BulkEditAssignedUserRolesRequest {
   

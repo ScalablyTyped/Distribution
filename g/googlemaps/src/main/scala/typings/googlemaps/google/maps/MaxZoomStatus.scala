@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,12 +21,16 @@ object MaxZoomStatus extends StObject {
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/max-zoom#MaxZoomStatus.ERROR Maps JavaScript API}
     */
   @js.native
-  sealed trait ERROR extends MaxZoomStatus
+  sealed trait ERROR
+    extends StObject
+       with MaxZoomStatus
   
   /**
     * The response contains a valid {@link MaxZoomResult}.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/max-zoom#MaxZoomStatus.OK Maps JavaScript API}
     */
   @js.native
-  sealed trait OK extends MaxZoomStatus
+  sealed trait OK
+    extends StObject
+       with MaxZoomStatus
 }

@@ -4,16 +4,14 @@ import typings.antd.tableInterfaceMod.CompareFn
 import typings.antd.tableInterfaceMod.SortOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compare[RecordType] extends StObject {
   
-  var compare: js.UndefOr[CompareFn[RecordType]] = js.native
+  var compare: js.UndefOr[CompareFn[RecordType]] = js.undefined
   
   /** Config multiple sorter order priority */
-  var multiple: js.UndefOr[Double] = js.native
+  var multiple: js.UndefOr[Double] = js.undefined
 }
 object Compare {
   
@@ -24,7 +22,7 @@ object Compare {
   }
   
   @scala.inline
-  implicit class CompareMutableBuilder[Self <: Compare[_], RecordType] (val x: Self with Compare[RecordType]) extends AnyVal {
+  implicit class CompareMutableBuilder[Self <: Compare[?], RecordType] (val x: Self & Compare[RecordType]) extends AnyVal {
     
     @scala.inline
     def setCompare(value: (RecordType, RecordType, /* sortOrder */ js.UndefOr[SortOrder]) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction3(value))

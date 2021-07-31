@@ -2,31 +2,29 @@ package typings.gapiDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertParameters extends StObject {
   
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
-  var ocr: js.UndefOr[Boolean] = js.native
+  var ocr: js.UndefOr[Boolean] = js.undefined
   
-  var ocrLanguage: js.UndefOr[String] = js.native
+  var ocrLanguage: js.UndefOr[String] = js.undefined
   
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
-  var timedTextLanguage: js.UndefOr[String] = js.native
+  var timedTextLanguage: js.UndefOr[String] = js.undefined
   
-  var timedTextTrackName: js.UndefOr[String] = js.native
+  var timedTextTrackName: js.UndefOr[String] = js.undefined
   
-  var uploadType: String = js.native
+  var uploadType: String
   
-  var usecontentAsIndexableText: js.UndefOr[Boolean] = js.native
+  var usecontentAsIndexableText: js.UndefOr[Boolean] = js.undefined
   
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object InsertParameters {
   

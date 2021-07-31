@@ -4,33 +4,31 @@ import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaTypings.transformMod.AggregateOp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowFieldDef extends StObject {
   
   /**
     * The output name for the window operation.
     */
-  var as: FieldName = js.native
+  var as: FieldName
   
   /**
     * The data field for which to compute the aggregate or window function. This can be omitted for window functions that do not operate over a field such as `"count"`, `"rank"`, `"dense_rank"`.
     */
-  var field: js.UndefOr[FieldName] = js.native
+  var field: js.UndefOr[FieldName] = js.undefined
   
   /**
     * The window or aggregation operation to apply within a window (e.g., `"rank"`, `"lead"`, `"sum"`, `"average"` or `"count"`). See the list of all supported operations [here](https://vega.github.io/vega-lite/docs/window.html#ops).
     */
-  var op: AggregateOp | WindowOnlyOp = js.native
+  var op: AggregateOp | WindowOnlyOp
   
   /**
     * Parameter values for the window functions. Parameter values can be omitted for operations that do not accept a parameter.
     *
     * See the list of all supported operations and their parameters [here](https://vega.github.io/vega-lite/docs/transforms/window.html).
     */
-  var param: js.UndefOr[Double] = js.native
+  var param: js.UndefOr[Double] = js.undefined
 }
 object WindowFieldDef {
   

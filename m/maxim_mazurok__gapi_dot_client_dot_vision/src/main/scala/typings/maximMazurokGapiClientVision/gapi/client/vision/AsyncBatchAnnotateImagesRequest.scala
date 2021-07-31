@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsyncBatchAnnotateImagesRequest extends StObject {
   
   /** Required. The desired output location and metadata (e.g. format). */
-  var outputConfig: js.UndefOr[OutputConfig] = js.native
+  var outputConfig: js.UndefOr[OutputConfig] = js.undefined
   
   /**
     * Optional. Target project and location to make a call. Format: `projects/{project-id}/locations/{location-id}`. If no parent is specified, a region will be chosen automatically.
     * Supported location-ids: `us`: USA country only, `asia`: East asia areas, like Japan, Taiwan, `eu`: The European Union. Example: `projects/project-A/locations/eu`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /** Required. Individual image annotation requests for this batch. */
-  var requests: js.UndefOr[js.Array[AnnotateImageRequest]] = js.native
+  var requests: js.UndefOr[js.Array[AnnotateImageRequest]] = js.undefined
 }
 object AsyncBatchAnnotateImagesRequest {
   

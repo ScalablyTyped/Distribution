@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTeamdrivesInsert extends StandardParameters {
+trait ParamsResourceTeamdrivesInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaTeamDrive] = js.native
+  var requestBody: js.UndefOr[SchemaTeamDrive] = js.undefined
   
   /**
     * An ID, such as a random UUID, which uniquely identifies this user's
@@ -29,7 +29,7 @@ trait ParamsResourceTeamdrivesInsert extends StandardParameters {
     * by attempting to create the same Team Drive. If the Team Drive already
     * exists a 409 error will be returned.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTeamdrivesInsert {
   

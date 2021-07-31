@@ -11,40 +11,38 @@ import typings.std.RequestMode
 import typings.std.RequestRedirect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  resource :std.RequestInfo | undefined} & std.Partial<std.RequestInit> */
-@js.native
 trait OverrideParams extends StObject {
   
-  var body: js.UndefOr[BodyInit | Null] = js.native
+  var body: js.UndefOr[BodyInit | Null] = js.undefined
   
-  var cache: js.UndefOr[RequestCache] = js.native
+  var cache: js.UndefOr[RequestCache] = js.undefined
   
-  var credentials: js.UndefOr[RequestCredentials] = js.native
+  var credentials: js.UndefOr[RequestCredentials] = js.undefined
   
-  var headers: js.UndefOr[HeadersInit] = js.native
+  var headers: js.UndefOr[HeadersInit] = js.undefined
   
-  var integrity: js.UndefOr[String] = js.native
+  var integrity: js.UndefOr[String] = js.undefined
   
-  var keepalive: js.UndefOr[Boolean] = js.native
+  var keepalive: js.UndefOr[Boolean] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[RequestMode] = js.native
+  var mode: js.UndefOr[RequestMode] = js.undefined
   
-  var redirect: js.UndefOr[RequestRedirect] = js.native
+  var redirect: js.UndefOr[RequestRedirect] = js.undefined
   
-  var referrer: js.UndefOr[String] = js.native
+  var referrer: js.UndefOr[String] = js.undefined
   
-  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.native
+  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
   
-  var resource: js.UndefOr[RequestInfo] = js.native
+  var resource: js.UndefOr[RequestInfo] = js.undefined
   
-  var signal: js.UndefOr[AbortSignal | Null] = js.native
+  var signal: js.UndefOr[AbortSignal | Null] = js.undefined
   
-  var window: js.UndefOr[js.Any] = js.native
+  var window: js.UndefOr[js.Any] = js.undefined
 }
 object OverrideParams {
   

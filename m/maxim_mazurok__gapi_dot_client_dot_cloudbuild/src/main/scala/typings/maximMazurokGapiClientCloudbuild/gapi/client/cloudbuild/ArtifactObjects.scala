@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactObjects extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait ArtifactObjects extends StObject {
     * Requirements](https://cloud.google.com/storage/docs/bucket-naming#requirements)). Files in the workspace matching any path pattern will be uploaded to Cloud Storage with this
     * location as a prefix.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** Path globs used to match files in the build's workspace. */
-  var paths: js.UndefOr[js.Array[String]] = js.native
+  var paths: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. Stores timing information for pushing all artifact objects. */
-  var timing: js.UndefOr[TimeSpan] = js.native
+  var timing: js.UndefOr[TimeSpan] = js.undefined
 }
 object ArtifactObjects {
   

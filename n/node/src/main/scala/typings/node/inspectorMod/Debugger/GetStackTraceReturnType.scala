@@ -3,13 +3,11 @@ package typings.node.inspectorMod.Debugger
 import typings.node.inspectorMod.Runtime.StackTrace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStackTraceReturnType extends StObject {
   
-  var stackTrace: StackTrace = js.native
+  var stackTrace: StackTrace
 }
 object GetStackTraceReturnType {
   

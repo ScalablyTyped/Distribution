@@ -2,26 +2,24 @@ package typings.awsSdk.connectparticipantMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartPosition extends StObject {
   
   /**
     * The time in ISO format where to start. It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
     */
-  var AbsoluteTime: js.UndefOr[Instant] = js.native
+  var AbsoluteTime: js.UndefOr[Instant] = js.undefined
   
   /**
     * The ID of the message or event where to start. 
     */
-  var Id: js.UndefOr[ChatItemId] = js.native
+  var Id: js.UndefOr[ChatItemId] = js.undefined
   
   /**
     * The start position of the most recent message where you want to start. 
     */
-  var MostRecent: js.UndefOr[typings.awsSdk.connectparticipantMod.MostRecent] = js.native
+  var MostRecent: js.UndefOr[typings.awsSdk.connectparticipantMod.MostRecent] = js.undefined
 }
 object StartPosition {
   

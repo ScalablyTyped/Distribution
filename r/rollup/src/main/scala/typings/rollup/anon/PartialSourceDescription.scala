@@ -6,24 +6,22 @@ import typings.rollup.mod.SourceMapInput
 import typings.rollup.rollupStrings.`no-treeshake`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rollup.rollup.SourceDescription> */
-@js.native
 trait PartialSourceDescription extends StObject {
   
-  var ast: js.UndefOr[AcornNode] = js.native
+  var ast: js.UndefOr[AcornNode] = js.undefined
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
-  var map: js.UndefOr[SourceMapInput] = js.native
+  var map: js.UndefOr[SourceMapInput] = js.undefined
   
-  var meta: js.UndefOr[CustomPluginOptions | Null] = js.native
+  var meta: js.UndefOr[CustomPluginOptions | Null] = js.undefined
   
-  var moduleSideEffects: js.UndefOr[Boolean | `no-treeshake` | Null] = js.native
+  var moduleSideEffects: js.UndefOr[Boolean | `no-treeshake` | Null] = js.undefined
   
-  var syntheticNamedExports: js.UndefOr[Boolean | String | Null] = js.native
+  var syntheticNamedExports: js.UndefOr[Boolean | String | Null] = js.undefined
 }
 object PartialSourceDescription {
   

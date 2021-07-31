@@ -3,25 +3,29 @@ package typings.cssMediaquery
 import typings.cssMediaquery.anon.PartialMediaValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("css-mediaquery", "parse")
+  @JSImport("css-mediaquery", JSImport.Namespace)
   @js.native
-  def parse(query: String): AST = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def `match`(query: String, values: PartialMediaValues): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def parse(query: String): AST = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any]).asInstanceOf[AST]
   
   type AST = js.Array[QueryNode]
   
-  @js.native
   trait Expression extends StObject {
     
-    var feature: String = js.native
+    var feature: String
     
-    var modifier: String = js.native
+    var modifier: String
     
-    var value: String = js.native
+    var value: String
   }
   object Expression {
     
@@ -46,34 +50,33 @@ object mod {
   }
   
   /* Inlined std.Record<'orientation' | 'scan' | 'width' | 'height' | 'device-width' | 'device-height' | 'resolution' | 'aspect-ratio' | 'device-aspect-ratio' | 'grid' | 'color' | 'color-index' | 'monochrome', unknown> */
-  @js.native
   trait MediaValues extends StObject {
     
-    var `aspect-ratio`: js.Any = js.native
+    var `aspect-ratio`: js.Any
     
-    var color: js.Any = js.native
+    var color: js.Any
     
-    var `color-index`: js.Any = js.native
+    var `color-index`: js.Any
     
-    var `device-aspect-ratio`: js.Any = js.native
+    var `device-aspect-ratio`: js.Any
     
-    var `device-height`: js.Any = js.native
+    var `device-height`: js.Any
     
-    var `device-width`: js.Any = js.native
+    var `device-width`: js.Any
     
-    var grid: js.Any = js.native
+    var grid: js.Any
     
-    var height: js.Any = js.native
+    var height: js.Any
     
-    var monochrome: js.Any = js.native
+    var monochrome: js.Any
     
-    var orientation: js.Any = js.native
+    var orientation: js.Any
     
-    var resolution: js.Any = js.native
+    var resolution: js.Any
     
-    var scan: js.Any = js.native
+    var scan: js.Any
     
-    var width: js.Any = js.native
+    var width: js.Any
   }
   object MediaValues {
     
@@ -146,14 +149,13 @@ object mod {
     }
   }
   
-  @js.native
   trait QueryNode extends StObject {
     
-    var expressions: js.Array[Expression] = js.native
+    var expressions: js.Array[Expression]
     
-    var inverse: Boolean = js.native
+    var inverse: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object QueryNode {
     
@@ -180,8 +182,4 @@ object mod {
       def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
-  
-  @JSImport("css-mediaquery", "match")
-  @js.native
-  def `match`(query: String, values: PartialMediaValues): Boolean = js.native
 }

@@ -11,23 +11,21 @@ import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportKind extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var importKind: js.UndefOr[value | `type` | typeof] = js.native
+  var importKind: js.UndefOr[value | `type` | typeof] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var source: LiteralKind = js.native
+  var source: LiteralKind
   
   var specifiers: js.UndefOr[
     js.Array[ImportSpecifierKind | ImportNamespaceSpecifierKind | ImportDefaultSpecifierKind]
-  ] = js.native
+  ] = js.undefined
 }
 object ImportKind {
   

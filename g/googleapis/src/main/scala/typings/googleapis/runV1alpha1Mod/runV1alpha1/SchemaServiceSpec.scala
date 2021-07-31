@@ -2,14 +2,12 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ServiceSpec holds the desired state of the Route (from the client), which
   * is used to manipulate the underlying Route and Configuration(s).
   */
-@js.native
 trait SchemaServiceSpec extends StObject {
   
   /**
@@ -17,34 +15,34 @@ trait SchemaServiceSpec extends StObject {
     * metadata.generation instead, which is the sequence number containing the
     * latest generation of the desired state.  Read-only.
     */
-  var generation: js.UndefOr[Double] = js.native
+  var generation: js.UndefOr[Double] = js.undefined
   
   /**
     * Manual contains the options for configuring a manual service. See
     * ServiceSpec for more details.  Not currently supported by Cloud Run.
     */
-  var manual: js.UndefOr[SchemaServiceSpecManualType] = js.native
+  var manual: js.UndefOr[SchemaServiceSpecManualType] = js.undefined
   
   /**
     * Pins this service to a specific revision name. The revision must be owned
     * by the configuration provided.  Deprecated and not supported by Cloud
     * Run. +optional
     */
-  var pinned: js.UndefOr[SchemaServiceSpecPinnedType] = js.native
+  var pinned: js.UndefOr[SchemaServiceSpecPinnedType] = js.undefined
   
   /**
     * Release enables gradual promotion of new revisions by allowing traffic to
     * be split between two revisions. This type replaces the deprecated Pinned
     * type.  Not currently supported by Cloud Run.
     */
-  var release: js.UndefOr[SchemaServiceSpecReleaseType] = js.native
+  var release: js.UndefOr[SchemaServiceSpecReleaseType] = js.undefined
   
   /**
     * RunLatest defines a simple Service. It will automatically configure a
     * route that keeps the latest ready revision from the supplied
     * configuration running. +optional
     */
-  var runLatest: js.UndefOr[SchemaServiceSpecRunLatest] = js.native
+  var runLatest: js.UndefOr[SchemaServiceSpecRunLatest] = js.undefined
 }
 object SchemaServiceSpec {
   

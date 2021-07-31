@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLogSubscriptionsResult extends StObject {
   
   /**
     * A list of active LogSubscription objects for calling the AWS account.
     */
-  var LogSubscriptions: js.UndefOr[typings.awsSdk.directoryserviceMod.LogSubscriptions] = js.native
+  var LogSubscriptions: js.UndefOr[typings.awsSdk.directoryserviceMod.LogSubscriptions] = js.undefined
   
   /**
     * The token for the next set of items to return.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
 }
 object ListLogSubscriptionsResult {
   

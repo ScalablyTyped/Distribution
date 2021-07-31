@@ -2,16 +2,14 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStackResourcesOutput extends StObject {
   
   /**
     * A list of StackResource structures.
     */
-  var StackResources: js.UndefOr[typings.awsSdk.cloudformationMod.StackResources] = js.native
+  var StackResources: js.UndefOr[typings.awsSdk.cloudformationMod.StackResources] = js.undefined
 }
 object DescribeStackResourcesOutput {
   

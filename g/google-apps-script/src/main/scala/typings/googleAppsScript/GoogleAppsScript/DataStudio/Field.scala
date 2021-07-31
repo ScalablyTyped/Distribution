@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,50 +18,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setType(types.YEAR_MONTH)
   *       .setGroup('DATETIME');
   */
-@js.native
 trait Field extends StObject {
   
-  def getAggregation(): AggregationType | Null = js.native
+  def getAggregation(): AggregationType | Null
   
-  def getDescription(): String | Null = js.native
+  def getDescription(): String | Null
   
-  def getFormula(): String | Null = js.native
+  def getFormula(): String | Null
   
-  def getGroup(): String | Null = js.native
+  def getGroup(): String | Null
   
-  def getId(): String | Null = js.native
+  def getId(): String | Null
   
-  def getIsReaggregatable(): Boolean | Null = js.native
+  def getIsReaggregatable(): Boolean | Null
   
-  def getName(): String | Null = js.native
+  def getName(): String | Null
   
-  def getType(): FieldType | Null = js.native
+  def getType(): FieldType | Null
   
-  def isDefault(): Boolean = js.native
+  def isDefault(): Boolean
   
-  def isDimension(): Boolean = js.native
+  def isDimension(): Boolean
   
-  def isHidden(): Boolean = js.native
+  def isHidden(): Boolean
   
-  def isMetric(): Boolean = js.native
+  def isMetric(): Boolean
   
-  def setAggregation(aggregation: AggregationType): Field = js.native
+  def setAggregation(aggregation: AggregationType): Field
   
-  def setDescription(description: String): Field = js.native
+  def setDescription(description: String): Field
   
-  def setFormula(formula: String): Field = js.native
+  def setFormula(formula: String): Field
   
-  def setGroup(group: String): Field = js.native
+  def setGroup(group: String): Field
   
-  def setId(id: String): Field = js.native
+  def setId(id: String): Field
   
-  def setIsHidden(isHidden: Boolean): Field = js.native
+  def setIsHidden(isHidden: Boolean): Field
   
-  def setIsReaggregatable(isReaggregatable: Boolean): Field = js.native
+  def setIsReaggregatable(isReaggregatable: Boolean): Field
   
-  def setName(name: String): Field = js.native
+  def setName(name: String): Field
   
-  def setType(`type`: FieldType): Field = js.native
+  def setType(`type`: FieldType): Field
 }
 object Field {
   

@@ -15,72 +15,38 @@ import typings.std.Number
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("jspdf", JSImport.Namespace)
   @js.native
-  class ^ () extends jsPDF {
+  class ^ ()
+    extends StObject
+       with jsPDF {
     def this(orientation: js.Any) = this()
-    def this(orientation: js.UndefOr[scala.Nothing], unit: String) = this()
     def this(orientation: js.Any, unit: String) = this()
-    def this(orientation: js.UndefOr[scala.Nothing], unit: js.UndefOr[scala.Nothing], format: String) = this()
-    def this(orientation: js.UndefOr[scala.Nothing], unit: js.UndefOr[scala.Nothing], format: js.Array[Number]) = this()
-    def this(orientation: js.UndefOr[scala.Nothing], unit: String, format: String) = this()
-    def this(orientation: js.UndefOr[scala.Nothing], unit: String, format: js.Array[Number]) = this()
-    def this(orientation: js.Any, unit: js.UndefOr[scala.Nothing], format: String) = this()
-    def this(orientation: js.Any, unit: js.UndefOr[scala.Nothing], format: js.Array[Number]) = this()
+    def this(orientation: Unit, unit: String) = this()
     def this(orientation: js.Any, unit: String, format: String) = this()
     def this(orientation: js.Any, unit: String, format: js.Array[Number]) = this()
-    def this(
-      orientation: js.UndefOr[scala.Nothing],
-      unit: js.UndefOr[scala.Nothing],
-      format: js.UndefOr[scala.Nothing],
-      compressPdf: Double
-    ) = this()
-    def this(
-      orientation: js.UndefOr[scala.Nothing],
-      unit: js.UndefOr[scala.Nothing],
-      format: String,
-      compressPdf: Double
-    ) = this()
-    def this(
-      orientation: js.UndefOr[scala.Nothing],
-      unit: js.UndefOr[scala.Nothing],
-      format: js.Array[Number],
-      compressPdf: Double
-    ) = this()
-    def this(
-      orientation: js.UndefOr[scala.Nothing],
-      unit: String,
-      format: js.UndefOr[scala.Nothing],
-      compressPdf: Double
-    ) = this()
-    def this(orientation: js.UndefOr[scala.Nothing], unit: String, format: String, compressPdf: Double) = this()
-    def this(
-      orientation: js.UndefOr[scala.Nothing],
-      unit: String,
-      format: js.Array[Number],
-      compressPdf: Double
-    ) = this()
-    def this(
-      orientation: js.Any,
-      unit: js.UndefOr[scala.Nothing],
-      format: js.UndefOr[scala.Nothing],
-      compressPdf: Double
-    ) = this()
-    def this(orientation: js.Any, unit: js.UndefOr[scala.Nothing], format: String, compressPdf: Double) = this()
-    def this(
-      orientation: js.Any,
-      unit: js.UndefOr[scala.Nothing],
-      format: js.Array[Number],
-      compressPdf: Double
-    ) = this()
-    def this(orientation: js.Any, unit: String, format: js.UndefOr[scala.Nothing], compressPdf: Double) = this()
+    def this(orientation: js.Any, unit: Unit, format: String) = this()
+    def this(orientation: js.Any, unit: Unit, format: js.Array[Number]) = this()
+    def this(orientation: Unit, unit: String, format: String) = this()
+    def this(orientation: Unit, unit: String, format: js.Array[Number]) = this()
+    def this(orientation: Unit, unit: Unit, format: String) = this()
+    def this(orientation: Unit, unit: Unit, format: js.Array[Number]) = this()
     def this(orientation: js.Any, unit: String, format: String, compressPdf: Double) = this()
     def this(orientation: js.Any, unit: String, format: js.Array[Number], compressPdf: Double) = this()
+    def this(orientation: js.Any, unit: String, format: Unit, compressPdf: Double) = this()
+    def this(orientation: js.Any, unit: Unit, format: String, compressPdf: Double) = this()
+    def this(orientation: js.Any, unit: Unit, format: js.Array[Number], compressPdf: Double) = this()
+    def this(orientation: js.Any, unit: Unit, format: Unit, compressPdf: Double) = this()
+    def this(orientation: Unit, unit: String, format: String, compressPdf: Double) = this()
+    def this(orientation: Unit, unit: String, format: js.Array[Number], compressPdf: Double) = this()
+    def this(orientation: Unit, unit: String, format: Unit, compressPdf: Double) = this()
+    def this(orientation: Unit, unit: Unit, format: String, compressPdf: Double) = this()
+    def this(orientation: Unit, unit: Unit, format: js.Array[Number], compressPdf: Double) = this()
+    def this(orientation: Unit, unit: Unit, format: Unit, compressPdf: Double) = this()
   }
   
   @js.native
@@ -133,35 +99,35 @@ object mod {
     def addPage(format: String): jsPDF = js.native
     def addPage(format: js.Array[Double]): jsPDF = js.native
     @JSName("addPage")
-    def addPage_l(format: js.UndefOr[scala.Nothing], orientation: l): jsPDF = js.native
-    @JSName("addPage")
     def addPage_l(format: String, orientation: l): jsPDF = js.native
     @JSName("addPage")
     def addPage_l(format: js.Array[Double], orientation: l): jsPDF = js.native
     @JSName("addPage")
-    def addPage_landscape(format: js.UndefOr[scala.Nothing], orientation: landscape): jsPDF = js.native
+    def addPage_l(format: Unit, orientation: l): jsPDF = js.native
     @JSName("addPage")
     def addPage_landscape(format: String, orientation: landscape): jsPDF = js.native
     @JSName("addPage")
     def addPage_landscape(format: js.Array[Double], orientation: landscape): jsPDF = js.native
     @JSName("addPage")
-    def addPage_p(format: js.UndefOr[scala.Nothing], orientation: p): jsPDF = js.native
+    def addPage_landscape(format: Unit, orientation: landscape): jsPDF = js.native
     @JSName("addPage")
     def addPage_p(format: String, orientation: p): jsPDF = js.native
     @JSName("addPage")
     def addPage_p(format: js.Array[Double], orientation: p): jsPDF = js.native
     @JSName("addPage")
-    def addPage_portrait(format: js.UndefOr[scala.Nothing], orientation: portrait): jsPDF = js.native
+    def addPage_p(format: Unit, orientation: p): jsPDF = js.native
     @JSName("addPage")
     def addPage_portrait(format: String, orientation: portrait): jsPDF = js.native
     @JSName("addPage")
     def addPage_portrait(format: js.Array[Double], orientation: portrait): jsPDF = js.native
+    @JSName("addPage")
+    def addPage_portrait(format: Unit, orientation: portrait): jsPDF = js.native
     
     // jsPDF plugin: SVG
     def addSVG(svgtext: String, x: Double, y: Double): jsPDF = js.native
-    def addSVG(svgtext: String, x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): jsPDF = js.native
     def addSVG(svgtext: String, x: Double, y: Double, w: Double): jsPDF = js.native
     def addSVG(svgtext: String, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+    def addSVG(svgtext: String, x: Double, y: Double, w: Unit, h: Double): jsPDF = js.native
     
     // jsPDF plugin: Annotations
     var annotationPlugin: js.Any = js.native
@@ -170,15 +136,15 @@ object mod {
     
     def arrayBufferToBinaryString(buffer: js.Any): String = js.native
     
-    def arrayMax(array: js.Array[_]): Double = js.native
-    def arrayMax(array: js.Array[_], comparisonFn: js.Function): Double = js.native
+    def arrayMax(array: js.Array[js.Any]): Double = js.native
+    def arrayMax(array: js.Array[js.Any], comparisonFn: js.Function): Double = js.native
     
     // jsPDF plugin: AutoPrint
     def autoPrint(): jsPDF = js.native
     
     def binaryStringToUint8Array(binary_string: String): Uint8Array = js.native
     
-    def calculateLineHeight(headerNames: js.Array[String], columnWidths: js.Array[Double], model: js.Array[_]): Double = js.native
+    def calculateLineHeight(headerNames: js.Array[String], columnWidths: js.Array[Double], model: js.Array[js.Any]): Double = js.native
     
     // jsPDF plugin: Canvas
     var canvas: GetContext = js.native
@@ -210,205 +176,6 @@ object mod {
       bpc: js.Any,
       imageIndex: Double,
       alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.UndefOr[scala.Nothing],
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.Any,
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.Any,
-      pal: js.UndefOr[scala.Nothing],
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.Any,
-      pal: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.Any,
-      pal: js.Any,
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.Any,
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.UndefOr[scala.Nothing],
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.Any,
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.Any,
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.Any,
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.Any,
-      trns: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.Any,
-      trns: js.Any,
-      pal: js.UndefOr[scala.Nothing],
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.Any,
-      trns: js.Any,
-      pal: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.UndefOr[scala.Nothing],
-      dp: js.Any,
-      trns: js.Any,
-      pal: js.Any,
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
       f: js.Any
     ): js.Any = js.native
     def createImageInfo(
@@ -420,100 +187,6 @@ object mod {
       imageIndex: Double,
       alias: js.Any,
       f: js.Any,
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.UndefOr[scala.Nothing],
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.Any,
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.Any,
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.Any,
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.Any,
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.Any,
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.Any,
-      pal: js.UndefOr[scala.Nothing],
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.Any,
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.Any,
-      pal: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.Any,
-      dp: js.UndefOr[scala.Nothing],
-      trns: js.Any,
-      pal: js.Any,
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.Any,
       dp: js.Any
     ): js.Any = js.native
     def createImageInfo(
@@ -526,47 +199,6 @@ object mod {
       alias: js.Any,
       f: js.Any,
       dp: js.Any,
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.UndefOr[scala.Nothing],
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.Any,
-      dp: js.Any,
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.Any,
-      dp: js.Any,
-      trns: js.UndefOr[scala.Nothing],
-      pal: js.Any,
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.Any,
-      dp: js.Any,
       trns: js.Any
     ): js.Any = js.native
     def createImageInfo(
@@ -580,20 +212,6 @@ object mod {
       f: js.Any,
       dp: js.Any,
       trns: js.Any,
-      pal: js.UndefOr[scala.Nothing],
-      smask: js.Any
-    ): js.Any = js.native
-    def createImageInfo(
-      data: js.Any,
-      wd: js.Any,
-      ht: js.Any,
-      cs: js.Any,
-      bpc: js.Any,
-      imageIndex: Double,
-      alias: js.Any,
-      f: js.Any,
-      dp: js.Any,
-      trns: js.Any,
       pal: js.Any
     ): js.Any = js.native
     def createImageInfo(
@@ -608,6 +226,354 @@ object mod {
       dp: js.Any,
       trns: js.Any,
       pal: js.Any,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: js.Any,
+      dp: js.Any,
+      trns: js.Any,
+      pal: Unit,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: js.Any,
+      dp: js.Any,
+      trns: Unit,
+      pal: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: js.Any,
+      dp: js.Any,
+      trns: Unit,
+      pal: js.Any,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: js.Any,
+      dp: js.Any,
+      trns: Unit,
+      pal: Unit,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: js.Any,
+      dp: Unit,
+      trns: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: js.Any,
+      dp: Unit,
+      trns: js.Any,
+      pal: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: js.Any,
+      dp: Unit,
+      trns: js.Any,
+      pal: js.Any,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: js.Any,
+      dp: Unit,
+      trns: js.Any,
+      pal: Unit,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: js.Any,
+      dp: Unit,
+      trns: Unit,
+      pal: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: js.Any,
+      dp: Unit,
+      trns: Unit,
+      pal: js.Any,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: js.Any,
+      dp: Unit,
+      trns: Unit,
+      pal: Unit,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: js.Any,
+      trns: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: js.Any,
+      trns: js.Any,
+      pal: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: js.Any,
+      trns: js.Any,
+      pal: js.Any,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: js.Any,
+      trns: js.Any,
+      pal: Unit,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: js.Any,
+      trns: Unit,
+      pal: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: js.Any,
+      trns: Unit,
+      pal: js.Any,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: js.Any,
+      trns: Unit,
+      pal: Unit,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: Unit,
+      trns: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: Unit,
+      trns: js.Any,
+      pal: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: Unit,
+      trns: js.Any,
+      pal: js.Any,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: Unit,
+      trns: js.Any,
+      pal: Unit,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: Unit,
+      trns: Unit,
+      pal: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: Unit,
+      trns: Unit,
+      pal: js.Any,
+      smask: js.Any
+    ): js.Any = js.native
+    def createImageInfo(
+      data: js.Any,
+      wd: js.Any,
+      ht: js.Any,
+      cs: js.Any,
+      bpc: js.Any,
+      imageIndex: Double,
+      alias: js.Any,
+      f: Unit,
+      dp: Unit,
+      trns: Unit,
+      pal: Unit,
       smask: js.Any
     ): js.Any = js.native
     
@@ -621,77 +587,29 @@ object mod {
     // jsPDF plugin: vfs
     def existsFileInVFS(filename: String): Boolean = js.native
     
-    def extractInfoFromBase64DataURI(dataURI: String): js.Array[_] = js.native
+    def extractInfoFromBase64DataURI(dataURI: String): js.Array[js.Any] = js.native
     
     // jsPDF plugin: fromHTML
     def fromHTML(HTML: String, x: Double, y: Double): jsPDF = js.native
-    def fromHTML(
-      HTML: String,
-      x: Double,
-      y: Double,
-      settings: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      margins: js.Any
-    ): jsPDF = js.native
-    def fromHTML(HTML: String, x: Double, y: Double, settings: js.UndefOr[scala.Nothing], callback: js.Function): jsPDF = js.native
-    def fromHTML(
-      HTML: String,
-      x: Double,
-      y: Double,
-      settings: js.UndefOr[scala.Nothing],
-      callback: js.Function,
-      margins: js.Any
-    ): jsPDF = js.native
     def fromHTML(HTML: String, x: Double, y: Double, settings: js.Any): jsPDF = js.native
-    def fromHTML(
-      HTML: String,
-      x: Double,
-      y: Double,
-      settings: js.Any,
-      callback: js.UndefOr[scala.Nothing],
-      margins: js.Any
-    ): jsPDF = js.native
     def fromHTML(HTML: String, x: Double, y: Double, settings: js.Any, callback: js.Function): jsPDF = js.native
     def fromHTML(HTML: String, x: Double, y: Double, settings: js.Any, callback: js.Function, margins: js.Any): jsPDF = js.native
+    def fromHTML(HTML: String, x: Double, y: Double, settings: js.Any, callback: Unit, margins: js.Any): jsPDF = js.native
+    def fromHTML(HTML: String, x: Double, y: Double, settings: Unit, callback: js.Function): jsPDF = js.native
+    def fromHTML(HTML: String, x: Double, y: Double, settings: Unit, callback: js.Function, margins: js.Any): jsPDF = js.native
+    def fromHTML(HTML: String, x: Double, y: Double, settings: Unit, callback: Unit, margins: js.Any): jsPDF = js.native
     def fromHTML(HTML: HTMLElement, x: Double, y: Double): jsPDF = js.native
-    def fromHTML(
-      HTML: HTMLElement,
-      x: Double,
-      y: Double,
-      settings: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      margins: js.Any
-    ): jsPDF = js.native
-    def fromHTML(
-      HTML: HTMLElement,
-      x: Double,
-      y: Double,
-      settings: js.UndefOr[scala.Nothing],
-      callback: js.Function
-    ): jsPDF = js.native
-    def fromHTML(
-      HTML: HTMLElement,
-      x: Double,
-      y: Double,
-      settings: js.UndefOr[scala.Nothing],
-      callback: js.Function,
-      margins: js.Any
-    ): jsPDF = js.native
     def fromHTML(HTML: HTMLElement, x: Double, y: Double, settings: js.Any): jsPDF = js.native
-    def fromHTML(
-      HTML: HTMLElement,
-      x: Double,
-      y: Double,
-      settings: js.Any,
-      callback: js.UndefOr[scala.Nothing],
-      margins: js.Any
-    ): jsPDF = js.native
     def fromHTML(HTML: HTMLElement, x: Double, y: Double, settings: js.Any, callback: js.Function): jsPDF = js.native
     def fromHTML(HTML: HTMLElement, x: Double, y: Double, settings: js.Any, callback: js.Function, margins: js.Any): jsPDF = js.native
+    def fromHTML(HTML: HTMLElement, x: Double, y: Double, settings: js.Any, callback: Unit, margins: js.Any): jsPDF = js.native
+    def fromHTML(HTML: HTMLElement, x: Double, y: Double, settings: Unit, callback: js.Function): jsPDF = js.native
+    def fromHTML(HTML: HTMLElement, x: Double, y: Double, settings: Unit, callback: js.Function, margins: js.Any): jsPDF = js.native
+    def fromHTML(HTML: HTMLElement, x: Double, y: Double, settings: Unit, callback: Unit, margins: js.Any): jsPDF = js.native
     
     // jsPDF plugin: split_text_to_size
-    def getCharWidthsArray(text: String): js.Array[_] = js.native
-    def getCharWidthsArray(text: String, options: js.Any): js.Array[_] = js.native
+    def getCharWidthsArray(text: String): js.Array[js.Any] = js.native
+    def getCharWidthsArray(text: String, options: js.Any): js.Array[js.Any] = js.native
     
     def getFileFromVFS(filename: String): String = js.native
     
@@ -721,34 +639,13 @@ object mod {
     def line(x1: Double, y1: Double, x2: Double, y2: Double): js.Any = js.native
     
     def lines(lines: js.Any, x: js.Any, y: js.Any): jsPDF = js.native
-    def lines(
-      lines: js.Any,
-      x: js.Any,
-      y: js.Any,
-      scale: js.UndefOr[scala.Nothing],
-      style: js.UndefOr[scala.Nothing],
-      closed: Boolean
-    ): jsPDF = js.native
-    def lines(lines: js.Any, x: js.Any, y: js.Any, scale: js.UndefOr[scala.Nothing], style: String): jsPDF = js.native
-    def lines(
-      lines: js.Any,
-      x: js.Any,
-      y: js.Any,
-      scale: js.UndefOr[scala.Nothing],
-      style: String,
-      closed: Boolean
-    ): jsPDF = js.native
     def lines(lines: js.Any, x: js.Any, y: js.Any, scale: js.Any): jsPDF = js.native
-    def lines(
-      lines: js.Any,
-      x: js.Any,
-      y: js.Any,
-      scale: js.Any,
-      style: js.UndefOr[scala.Nothing],
-      closed: Boolean
-    ): jsPDF = js.native
     def lines(lines: js.Any, x: js.Any, y: js.Any, scale: js.Any, style: String): jsPDF = js.native
     def lines(lines: js.Any, x: js.Any, y: js.Any, scale: js.Any, style: String, closed: Boolean): jsPDF = js.native
+    def lines(lines: js.Any, x: js.Any, y: js.Any, scale: js.Any, style: Unit, closed: Boolean): jsPDF = js.native
+    def lines(lines: js.Any, x: js.Any, y: js.Any, scale: Unit, style: String): jsPDF = js.native
+    def lines(lines: js.Any, x: js.Any, y: js.Any, scale: Unit, style: String, closed: Boolean): jsPDF = js.native
+    def lines(lines: js.Any, x: js.Any, y: js.Any, scale: Unit, style: Unit, closed: Boolean): jsPDF = js.native
     
     def link(x: Double, y: Double, w: Double, h: Double, options: js.Any): Unit = js.native
     
@@ -757,23 +654,17 @@ object mod {
     def movePage(targetPage: Double, beforePage: Double): jsPDF = js.native
     
     def output(): js.Any = js.native
-    def output(`type`: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
     def output(`type`: String): js.Any = js.native
     def output(`type`: String, options: js.Any): js.Any = js.native
+    def output(`type`: Unit, options: js.Any): js.Any = js.native
     
     def printHeaderRow(lineNumber: Double): Unit = js.native
     def printHeaderRow(lineNumber: Double, new_page: Boolean): Unit = js.native
     
     def processJPEG(data: js.Any, index: Double, alias: js.Any): js.Any = js.native
-    def processJPEG(
-      data: js.Any,
-      index: Double,
-      alias: js.Any,
-      compression: js.UndefOr[scala.Nothing],
-      dataAsBinaryString: String
-    ): js.Any = js.native
     def processJPEG(data: js.Any, index: Double, alias: js.Any, compression: js.Any): js.Any = js.native
     def processJPEG(data: js.Any, index: Double, alias: js.Any, compression: js.Any, dataAsBinaryString: String): js.Any = js.native
+    def processJPEG(data: js.Any, index: Double, alias: js.Any, compression: Unit, dataAsBinaryString: String): js.Any = js.native
     
     def processJPG(): js.Any = js.native
     
@@ -797,16 +688,16 @@ object mod {
     def sHashCode(str: String): js.Any = js.native
     
     def save(filename: String): Unit = js.native
-    def save(filename: String, options: ReturnPromise): js.Promise[_] = js.native
+    def save(filename: String, options: ReturnPromise): js.Promise[js.Any] = js.native
     
     def setDisplayMode(): jsPDF = js.native
-    def setDisplayMode(zoom: js.UndefOr[scala.Nothing], layout: js.UndefOr[scala.Nothing], pmode: String): jsPDF = js.native
-    def setDisplayMode(zoom: js.UndefOr[scala.Nothing], layout: String): jsPDF = js.native
-    def setDisplayMode(zoom: js.UndefOr[scala.Nothing], layout: String, pmode: String): jsPDF = js.native
     def setDisplayMode(zoom: String): jsPDF = js.native
-    def setDisplayMode(zoom: String, layout: js.UndefOr[scala.Nothing], pmode: String): jsPDF = js.native
     def setDisplayMode(zoom: String, layout: String): jsPDF = js.native
     def setDisplayMode(zoom: String, layout: String, pmode: String): jsPDF = js.native
+    def setDisplayMode(zoom: String, layout: Unit, pmode: String): jsPDF = js.native
+    def setDisplayMode(zoom: Unit, layout: String): jsPDF = js.native
+    def setDisplayMode(zoom: Unit, layout: String, pmode: String): jsPDF = js.native
+    def setDisplayMode(zoom: Unit, layout: Unit, pmode: String): jsPDF = js.native
     
     def setDrawColor(ch1: String): jsPDF = js.native
     def setDrawColor(ch1: Double): jsPDF = js.native
@@ -819,9 +710,9 @@ object mod {
     def setFillColor(ch1: Double, ch2: Double, ch3: Double, ch4: Double): jsPDF = js.native
     
     def setFont(): jsPDF = js.native
-    def setFont(fontName: js.UndefOr[scala.Nothing], fontStyle: String): jsPDF = js.native
     def setFont(fontName: String): jsPDF = js.native
     def setFont(fontName: String, fontStyle: String): jsPDF = js.native
+    def setFont(fontName: Unit, fontStyle: String): jsPDF = js.native
     
     def setFontSize(size: Double): jsPDF = js.native
     
@@ -844,7 +735,7 @@ object mod {
     
     def setProperties(properties: js.Any): jsPDF = js.native
     
-    def setTableHeaderRow(config: js.Array[_]): Unit = js.native
+    def setTableHeaderRow(config: js.Array[js.Any]): Unit = js.native
     
     def setTextColor(ch1: String): jsPDF = js.native
     def setTextColor(ch1: Double): jsPDF = js.native
@@ -859,20 +750,13 @@ object mod {
     def table(x: Double, y: Double, data: js.Any, headers: js.Array[Align], config: js.Any): jsPDF = js.native
     
     def text(text: js.Any, x: js.Any, y: js.Any): jsPDF = js.native
-    def text(
-      text: js.Any,
-      x: js.Any,
-      y: js.Any,
-      flags: js.UndefOr[scala.Nothing],
-      angle: js.UndefOr[scala.Nothing],
-      align: js.Any
-    ): jsPDF = js.native
-    def text(text: js.Any, x: js.Any, y: js.Any, flags: js.UndefOr[scala.Nothing], angle: js.Any): jsPDF = js.native
-    def text(text: js.Any, x: js.Any, y: js.Any, flags: js.UndefOr[scala.Nothing], angle: js.Any, align: js.Any): jsPDF = js.native
     def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any): jsPDF = js.native
-    def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any, angle: js.UndefOr[scala.Nothing], align: js.Any): jsPDF = js.native
     def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any, angle: js.Any): jsPDF = js.native
     def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any, angle: js.Any, align: js.Any): jsPDF = js.native
+    def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any, angle: Unit, align: js.Any): jsPDF = js.native
+    def text(text: js.Any, x: js.Any, y: js.Any, flags: Unit, angle: js.Any): jsPDF = js.native
+    def text(text: js.Any, x: js.Any, y: js.Any, flags: Unit, angle: js.Any, align: js.Any): jsPDF = js.native
+    def text(text: js.Any, x: js.Any, y: js.Any, flags: Unit, angle: Unit, align: js.Any): jsPDF = js.native
     
     def textWithLink(text: String, x: Double, y: Double, options: js.Any): Double = js.native
     

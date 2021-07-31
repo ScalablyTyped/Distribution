@@ -5,6 +5,7 @@ import typings.bluebird.mod.Bluebird
 import typings.bluebird.mod.CatchFilter
 import typings.bluebird.mod.Constructor
 import typings.bluebird.mod.Resolvable
+import typings.node.urlMod.Url
 import typings.request.mod.CoreOptions
 import typings.request.mod.Request
 import typings.request.mod.RequestAPI
@@ -16,7 +17,6 @@ import typings.requestPromise.anon.FnCall
 import typings.requestPromise.anon.FnCallFilter1Filter2Filter3Filter4Filter5OnReject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,11 +25,53 @@ object mod extends Shortcut {
   @js.native
   val ^ : RequestPromiseAPI[js.Any] = js.native
   
-  type Options = OptionsWithUri | OptionsWithUrl
+  /* Rewritten from type alias, can be one of: 
+    - typings.requestPromise.mod.OptionsWithUri
+    - typings.requestPromise.mod.OptionsWithUrl
+  */
+  trait Options extends StObject
+  object Options {
+    
+    @scala.inline
+    def OptionsWithUri(uri: String | Url): typings.requestPromise.mod.OptionsWithUri = {
+      val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.requestPromise.mod.OptionsWithUri]
+    }
+    
+    @scala.inline
+    def OptionsWithUrl(url: String | Url): typings.requestPromise.mod.OptionsWithUrl = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.requestPromise.mod.OptionsWithUrl]
+    }
+  }
   
-  type OptionsWithUri = UriOptions with RequestPromiseOptions
+  trait OptionsWithUri
+    extends StObject
+       with UriOptions
+       with RequestPromiseOptions
+       with Options
+  object OptionsWithUri {
+    
+    @scala.inline
+    def apply(uri: String | Url): OptionsWithUri = {
+      val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OptionsWithUri]
+    }
+  }
   
-  type OptionsWithUrl = UrlOptions with RequestPromiseOptions
+  trait OptionsWithUrl
+    extends StObject
+       with UrlOptions
+       with RequestPromiseOptions
+       with Options
+  object OptionsWithUrl {
+    
+    @scala.inline
+    def apply(url: String | Url): OptionsWithUrl = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OptionsWithUrl]
+    }
+  }
   
   @js.native
   trait RequestPromise[T] extends Request {
@@ -485,29 +527,24 @@ object mod extends Shortcut {
     @JSName("catch")
     var catch_Original: FnCallFilter1Filter2Filter3Filter4Filter5OnReject[T] = js.native
     
-    def `finally`(handler: js.Function0[Resolvable[_]]): Bluebird[T] = js.native
+    def `finally`(handler: js.Function0[Resolvable[js.Any]]): Bluebird[T] = js.native
     @JSName("finally")
-    var finally_Original: js.Function1[/* handler */ js.Function0[Resolvable[_]], Bluebird[T]] = js.native
+    var finally_Original: js.Function1[/* handler */ js.Function0[Resolvable[js.Any]], Bluebird[T]] = js.native
     
     def promise(): typings.bluebird.mod.^[T] = js.native
     
     def `then`[U](): Bluebird[U] = js.native
-    def `then`[U](onFulfill: js.UndefOr[scala.Nothing], onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U] = js.native
     def `then`[U](onFulfill: js.Function1[/* value */ T, Resolvable[U]]): Bluebird[U] = js.native
     def `then`[U](
       onFulfill: js.Function1[/* value */ T, Resolvable[U]],
       onReject: js.Function1[/* error */ js.Any, Resolvable[U]]
     ): Bluebird[U] = js.native
+    def `then`[U](onFulfill: Unit, onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U] = js.native
     def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
     var then_Original: FnCall[T] = js.native
     @JSName("then")
     def then_TResult1TResult2[TResult1, TResult2](): Bluebird[TResult1 | TResult2] = js.native
-    @JSName("then")
-    def then_TResult1TResult2[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]
-    ): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
     def then_TResult1TResult2[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, Resolvable[TResult1]]): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
@@ -516,12 +553,9 @@ object mod extends Shortcut {
       onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]
     ): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2_Thenable[TResult1, TResult2](): js.Thenable[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2_Thenable[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Thenable[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2_Thenable[TResult1, TResult2](): js.Thenable[TResult1 | TResult2] = js.native
     @JSName("then")
     def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Thenable[TResult1 | TResult2] = js.native
     @JSName("then")
@@ -531,27 +565,30 @@ object mod extends Shortcut {
     ): js.Thenable[TResult1 | TResult2] = js.native
     @JSName("then")
     def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
+    @JSName("then")
+    def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
   }
   
   type RequestPromiseAPI[T] = RequestAPI[RequestPromise[T], RequestPromiseOptions, RequiredUriUrl]
   
-  @js.native
-  trait RequestPromiseOptions extends CoreOptions {
+  trait RequestPromiseOptions
+    extends StObject
+       with CoreOptions {
     
-    var resolveWithFullResponse: js.UndefOr[Boolean] = js.native
+    var resolveWithFullResponse: js.UndefOr[Boolean] = js.undefined
     
-    var simple: js.UndefOr[Boolean] = js.native
+    var simple: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
         js.Function3[
           /* body */ js.Any, 
           /* response */ Response, 
           /* resolveWithFullResponse */ js.UndefOr[Boolean], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var transform2xxOnly: js.UndefOr[Boolean] = js.native
+    var transform2xxOnly: js.UndefOr[Boolean] = js.undefined
   }
   object RequestPromiseOptions {
     
@@ -578,7 +615,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setTransform(
-        value: (/* body */ js.Any, /* response */ Response, /* resolveWithFullResponse */ js.UndefOr[Boolean]) => _
+        value: (/* body */ js.Any, /* response */ Response, /* resolveWithFullResponse */ js.UndefOr[Boolean]) => js.Any
       ): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       @scala.inline

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.GitCreateBlobResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersGitCreateBlobEndpoint extends StObject {
   
-  var parameters: GitCreateBlobEndpoint = js.native
+  var parameters: GitCreateBlobEndpoint
   
-  var request: GitCreateBlobRequestOptions = js.native
+  var request: GitCreateBlobRequestOptions
   
-  var response: OctokitResponse[GitCreateBlobResponseData] = js.native
+  var response: OctokitResponse[GitCreateBlobResponseData]
 }
 object ParametersGitCreateBlobEndpoint {
   

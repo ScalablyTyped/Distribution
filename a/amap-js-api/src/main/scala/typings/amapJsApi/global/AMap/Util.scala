@@ -3,140 +3,121 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.anon.Timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Util {
+  
+  @JSGlobal("AMap.Util")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * 将16进制RGBA转为rgba(R,G,B,A)
     * @param hex 16进制RGBA
     */
-  @JSGlobal("AMap.Util.argbHex2Rgba")
-  @js.native
-  def argbHex2Rgba(hex: String): String = js.native
+  @scala.inline
+  def argbHex2Rgba(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("argbHex2Rgba")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("AMap.Util.cancelAnimFrame")
-  @js.native
-  def cancelAnimFrame(handle: Double): Unit = js.native
+  @scala.inline
+  def cancelAnimFrame(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAnimFrame")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("AMap.Util.cancelIdleCallback")
-  @js.native
-  def cancelIdleCallback(handle: Double): Unit = js.native
+  @scala.inline
+  def cancelIdleCallback(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelIdleCallback")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("AMap.Util.color2Rgba")
-  @js.native
-  def color2Rgba(color: String): String = js.native
-  @JSGlobal("AMap.Util.color2Rgba")
-  @js.native
-  def color2Rgba(color: js.Array[Double]): String = js.native
+  @scala.inline
+  def color2Rgba(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("color2Rgba")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def color2Rgba(color: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("color2Rgba")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("AMap.Util.color2RgbaArray")
-  @js.native
-  def color2RgbaArray(color: String): js.Tuple4[Double, Double, Double, Double] = js.native
-  @JSGlobal("AMap.Util.color2RgbaArray")
-  @js.native
-  def color2RgbaArray(color: js.Array[Double]): js.Tuple4[Double, Double, Double, Double] = js.native
+  @scala.inline
+  def color2RgbaArray(color: String): js.Tuple4[Double, Double, Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("color2RgbaArray")(color.asInstanceOf[js.Any]).asInstanceOf[js.Tuple4[Double, Double, Double, Double]]
+  @scala.inline
+  def color2RgbaArray(color: js.Array[Double]): js.Tuple4[Double, Double, Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("color2RgbaArray")(color.asInstanceOf[js.Any]).asInstanceOf[js.Tuple4[Double, Double, Double, Double]]
   
   /**
     * 将颜色名转换为16进制RGB颜色值
     * @param colorName 颜色名
     */
-  @JSGlobal("AMap.Util.colorNameToHex")
-  @js.native
-  def colorNameToHex(colorName: String): String = js.native
+  @scala.inline
+  def colorNameToHex(colorName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("colorNameToHex")(colorName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * 从数组删除元素
     * @param array 数组
     * @param item 元素
     */
-  @JSGlobal("AMap.Util.deleteItemFromArray")
-  @js.native
-  def deleteItemFromArray[T](array: js.Array[T], item: T): js.Array[T] = js.native
+  @scala.inline
+  def deleteItemFromArray[T](array: js.Array[T], item: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteItemFromArray")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /**
     * 按索引删除数组元素
     * @param array 数组
     * @param index 索引
     */
-  @JSGlobal("AMap.Util.deleteItemFromArrayByIndex")
-  @js.native
-  def deleteItemFromArrayByIndex[T](array: js.Array[T], index: Double): js.Array[T] = js.native
+  @scala.inline
+  def deleteItemFromArrayByIndex[T](array: js.Array[T], index: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteItemFromArrayByIndex")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /**
     * 保留小数点后指定位
     * @param floatNumber 数值
     * @param digits 小数点位数
     */
-  @JSGlobal("AMap.Util.format")
-  @js.native
-  def format(floatNumber: Double): Double = js.native
-  @JSGlobal("AMap.Util.format")
-  @js.native
-  def format(floatNumber: Double, digits: Double): Double = js.native
+  @scala.inline
+  def format(floatNumber: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(floatNumber.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def format(floatNumber: Double, digits: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(floatNumber.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * 判断数组是否包含某个元素
     * @param array 数组
     * @param item 元素
     */
-  @JSGlobal("AMap.Util.includes")
-  @js.native
-  def includes[T](array: js.Array[T], item: T): Boolean = js.native
+  @scala.inline
+  def includes[T](array: js.Array[T], item: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * 返回元素索引
     * @param array 数组
     * @param item 元素
     */
-  @JSGlobal("AMap.Util.indexOf")
-  @js.native
-  def indexOf[T](array: js.Array[T], item: T): Double = js.native
+  @scala.inline
+  def indexOf[T](array: js.Array[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * 判断是否数组
     * @param data 判断对象
     */
-  @JSGlobal("AMap.Util.isArray")
-  @js.native
-  def isArray(data: js.Any): /* is std.Array<any> */ Boolean = js.native
+  @scala.inline
+  def isArray(data: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(data.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
   
   /**
     * 判断参数是否为DOM元素
     * @param data 判断对象
     */
-  @JSGlobal("AMap.Util.isDOM")
-  @js.native
-  def isDOM(data: js.Any): /* is std.HTMLElement */ Boolean = js.native
+  @scala.inline
+  def isDOM(data: js.Any): /* is std.HTMLElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOM")(data.asInstanceOf[js.Any]).asInstanceOf[/* is std.HTMLElement */ Boolean]
   
   /**
     * 判断一个对象是都为空
     * @param obj 目标对象
     */
-  @JSGlobal("AMap.Util.isEmpty")
-  @js.native
-  def isEmpty(obj: js.Object): Boolean = js.native
+  @scala.inline
+  def isEmpty(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("AMap.Util.requestAnimFrame")
-  @js.native
-  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, _]): Double = js.native
-  @JSGlobal("AMap.Util.requestAnimFrame")
-  @js.native
-  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, _], context: C): Double = js.native
+  @scala.inline
+  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, js.Any], context: C): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimFrame")(callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("AMap.Util.requestIdleCallback")
-  @js.native
-  def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, _]): Double = js.native
-  @JSGlobal("AMap.Util.requestIdleCallback")
-  @js.native
-  def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, _], options: Timeout): Double = js.native
+  @scala.inline
+  def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, js.Any], options: Timeout): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * 将16进制RGB转为rgba(R,G,B,A)
     * @param hex 16进制RGB
     */
-  @JSGlobal("AMap.Util.rgbHex2Rgba")
-  @js.native
-  def rgbHex2Rgba(hex: String): String = js.native
+  @scala.inline
+  def rgbHex2Rgba(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rgbHex2Rgba")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
 }

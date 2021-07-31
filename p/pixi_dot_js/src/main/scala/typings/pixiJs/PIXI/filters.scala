@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,7 +51,9 @@ object filters {
     * @memberof PIXI.filters
     */
   @js.native
-  trait AlphaFilter extends Filter {
+  trait AlphaFilter
+    extends StObject
+       with Filter {
     
     /**
       * Coefficient for alpha multiplication
@@ -73,7 +74,9 @@ object filters {
     * @memberof PIXI.filters
     */
   @js.native
-  trait BlurFilter extends Filter {
+  trait BlurFilter
+    extends StObject
+       with Filter {
     
     /**
       * Sets the strength of both the blurX and blurY properties simultaneously
@@ -124,7 +127,9 @@ object filters {
     * @memberof PIXI.filters
     */
   @js.native
-  trait BlurFilterPass extends Filter {
+  trait BlurFilterPass
+    extends StObject
+       with Filter {
     
     /**
       * Sets the strength of both the blur.
@@ -160,7 +165,9 @@ object filters {
     * @memberof PIXI.filters
     */
   @js.native
-  trait ColorMatrixFilter extends Filter {
+  trait ColorMatrixFilter
+    extends StObject
+       with Filter {
     
     /**
       * Transforms current matrix and set the new one
@@ -388,7 +395,9 @@ object filters {
     * @memberof PIXI.filters
     */
   @js.native
-  trait DisplacementFilter extends Filter {
+  trait DisplacementFilter
+    extends StObject
+       with Filter {
     
     /**
       * The texture used for the displacement map. Must be power of 2 sized texture.
@@ -416,7 +425,9 @@ object filters {
     *
     */
   @js.native
-  trait FXAAFilter extends Filter
+  trait FXAAFilter
+    extends StObject
+       with Filter
   
   /**
     * A Noise effect filter.
@@ -426,7 +437,9 @@ object filters {
     * @memberof PIXI.filters
     */
   @js.native
-  trait NoiseFilter extends Filter {
+  trait NoiseFilter
+    extends StObject
+       with Filter {
     
     /**
       * The amount of noise to apply, this value should be in the range (0, 1].

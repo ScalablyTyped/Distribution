@@ -7,15 +7,13 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofasset extends StObject {
   
-  def wrapAsset(http: AxiosInstance, data: AssetProps): Asset = js.native
+  def wrapAsset(http: AxiosInstance, data: AssetProps): Asset
   
-  def wrapAssetCollection(http: AxiosInstance, data: CollectionProp[AssetProps]): Collection[Asset, AssetProps] = js.native
+  def wrapAssetCollection(http: AxiosInstance, data: CollectionProp[AssetProps]): Collection[Asset, AssetProps]
 }
 object Typeofasset {
   

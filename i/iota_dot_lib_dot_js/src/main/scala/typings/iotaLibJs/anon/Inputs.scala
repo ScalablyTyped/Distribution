@@ -3,13 +3,11 @@ package typings.iotaLibJs.anon
 import typings.iotaLibJs.mod.InputObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inputs extends StObject {
   
-  var inputs: js.Array[InputObject] = js.native
+  var inputs: js.Array[InputObject]
 }
 object Inputs {
   

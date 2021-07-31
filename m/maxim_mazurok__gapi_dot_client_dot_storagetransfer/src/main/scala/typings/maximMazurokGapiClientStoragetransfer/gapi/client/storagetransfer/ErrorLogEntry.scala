@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorLogEntry extends StObject {
   
   /** A list of messages that carry the error details. */
-  var errorDetails: js.UndefOr[js.Array[String]] = js.native
+  var errorDetails: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. A URL that refers to the target (a data source, a data sink, or an object) with which the error is associated. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ErrorLogEntry {
   

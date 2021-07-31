@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserInfo extends StObject {
   
   /** The UN M.49 region code associated with the user's location. */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /** Unique user identifier defined by the client. */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object UserInfo {
   

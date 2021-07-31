@@ -2,17 +2,15 @@ package typings.clovelcedPluginAudiomanagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AudioMode extends StObject {
     
-    var audioMode: typings.clovelcedPluginAudiomanagement.mod.AudioMode = js.native
+    var audioMode: typings.clovelcedPluginAudiomanagement.mod.AudioMode
     
-    var label: String = js.native
+    var label: String
   }
   object AudioMode {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxVolume extends StObject {
     
-    var maxVolume: Double = js.native
+    var maxVolume: Double
   }
   object MaxVolume {
     
@@ -54,10 +51,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Volume extends StObject {
     
-    var volume: Double = js.native
+    var volume: Double
   }
   object Volume {
     

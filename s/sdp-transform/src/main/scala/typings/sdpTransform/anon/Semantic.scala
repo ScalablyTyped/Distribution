@@ -2,15 +2,13 @@ package typings.sdpTransform.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Semantic extends StObject {
   
-  var semantic: String = js.native
+  var semantic: String
   
-  var token: String = js.native
+  var token: String
 }
 object Semantic {
   

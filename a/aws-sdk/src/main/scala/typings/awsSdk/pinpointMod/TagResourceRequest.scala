@@ -2,18 +2,16 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArn: string = js.native
+  var ResourceArn: string
   
-  var TagsModel: typings.awsSdk.pinpointMod.TagsModel = js.native
+  var TagsModel: typings.awsSdk.pinpointMod.TagsModel
 }
 object TagResourceRequest {
   

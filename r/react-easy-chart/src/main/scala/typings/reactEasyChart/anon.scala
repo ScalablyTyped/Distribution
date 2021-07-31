@@ -2,21 +2,19 @@ package typings.reactEasyChart
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Bottom {
     
@@ -55,14 +53,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Color extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object Color {
     
@@ -89,10 +86,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ColorString extends StObject {
     
-    var color: String = js.native
+    var color: String
   }
   object ColorString {
     
@@ -110,14 +106,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Stroke extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var stroke: String = js.native
+    var stroke: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Stroke {
     
@@ -142,14 +137,13 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: js.UndefOr[String] = js.native
+    var x: js.UndefOr[String] = js.undefined
     
-    var y: js.UndefOr[String] = js.native
+    var y: js.UndefOr[String] = js.undefined
     
-    var y2: js.UndefOr[String] = js.native
+    var y2: js.UndefOr[String] = js.undefined
   }
   object X {
     
@@ -182,12 +176,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Y extends StObject {
     
-    var x: js.UndefOr[String] = js.native
+    var x: js.UndefOr[String] = js.undefined
     
-    var y: js.UndefOr[String] = js.native
+    var y: js.UndefOr[String] = js.undefined
   }
   object Y {
     

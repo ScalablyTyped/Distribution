@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glacierMod {
@@ -27,11 +26,15 @@ object glacierMod {
       */
     def this(name: String) = this()
     def this(name: String, args: VaultArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: VaultArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Vault {
+    
+    @JSImport("@pulumi/aws/glacier", "Vault")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Vault resource's state with the given name, ID, and optional extra
@@ -42,26 +45,21 @@ object glacierMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glacier", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.glacierVaultMod.Vault = js.native
-    @JSImport("@pulumi/aws/glacier", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.glacierVaultMod.Vault = js.native
-    @JSImport("@pulumi/aws/glacier", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultState): typings.pulumiAws.glacierVaultMod.Vault = js.native
-    @JSImport("@pulumi/aws/glacier", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultState, opts: CustomResourceOptions): typings.pulumiAws.glacierVaultMod.Vault = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.glacierVaultMod.Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.glacierVaultMod.Vault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.glacierVaultMod.Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.glacierVaultMod.Vault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultState): typings.pulumiAws.glacierVaultMod.Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.glacierVaultMod.Vault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultState, opts: CustomResourceOptions): typings.pulumiAws.glacierVaultMod.Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.glacierVaultMod.Vault]
     
     /**
       * Returns true if the given object is an instance of Vault.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glacier", "Vault.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vault.Vault */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vault.Vault */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glacier/vault.Vault */ Boolean]
   }
   
   @JSImport("@pulumi/aws/glacier", "VaultLock")
@@ -81,6 +79,10 @@ object glacierMod {
   /* static members */
   object VaultLock {
     
+    @JSImport("@pulumi/aws/glacier", "VaultLock")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VaultLock resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -90,25 +92,20 @@ object glacierMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glacier", "VaultLock.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.vaultLockMod.VaultLock = js.native
-    @JSImport("@pulumi/aws/glacier", "VaultLock.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vaultLockMod.VaultLock = js.native
-    @JSImport("@pulumi/aws/glacier", "VaultLock.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultLockState): typings.pulumiAws.vaultLockMod.VaultLock = js.native
-    @JSImport("@pulumi/aws/glacier", "VaultLock.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultLockState, opts: CustomResourceOptions): typings.pulumiAws.vaultLockMod.VaultLock = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.vaultLockMod.VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vaultLockMod.VaultLock]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.vaultLockMod.VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vaultLockMod.VaultLock]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultLockState): typings.pulumiAws.vaultLockMod.VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vaultLockMod.VaultLock]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultLockState, opts: CustomResourceOptions): typings.pulumiAws.vaultLockMod.VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vaultLockMod.VaultLock]
     
     /**
       * Returns true if the given object is an instance of VaultLock.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glacier", "VaultLock.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vaultLock.VaultLock */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vaultLock.VaultLock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glacier/vaultLock.VaultLock */ Boolean]
   }
 }

@@ -3,29 +3,27 @@ package typings.cesium.anon
 import typings.cesium.mod.Cartesian3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberOfVerticalLines extends StObject {
   
-  var center: Cartesian3 = js.native
+  var center: Cartesian3
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var extrudedHeight: js.UndefOr[Double] = js.native
+  var extrudedHeight: js.UndefOr[Double] = js.undefined
   
-  var granularity: js.UndefOr[Double] = js.native
+  var granularity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var numberOfVerticalLines: js.UndefOr[Double] = js.native
+  var numberOfVerticalLines: js.UndefOr[Double] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var semiMajorAxis: Double = js.native
+  var semiMajorAxis: Double
   
-  var semiMinorAxis: Double = js.native
+  var semiMinorAxis: Double
 }
 object NumberOfVerticalLines {
   

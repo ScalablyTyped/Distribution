@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSegmentDetectionFilters extends StObject {
   
   /**
     * Filters that are specific to shot detections.
     */
-  var ShotFilter: js.UndefOr[StartShotDetectionFilter] = js.native
+  var ShotFilter: js.UndefOr[StartShotDetectionFilter] = js.undefined
   
   /**
     * Filters that are specific to technical cues.
     */
-  var TechnicalCueFilter: js.UndefOr[StartTechnicalCueDetectionFilter] = js.native
+  var TechnicalCueFilter: js.UndefOr[StartTechnicalCueDetectionFilter] = js.undefined
 }
 object StartSegmentDetectionFilters {
   

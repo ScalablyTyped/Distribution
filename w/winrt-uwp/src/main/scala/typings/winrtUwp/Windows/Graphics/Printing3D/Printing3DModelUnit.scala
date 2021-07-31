@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,25 +13,37 @@ object Printing3DModelUnit extends StObject {
   
   /** The units of the 3D model are specified in centimeters. */
   @js.native
-  sealed trait centimeter extends Printing3DModelUnit
+  sealed trait centimeter
+    extends StObject
+       with Printing3DModelUnit
   
   /** The units of the 3D model are specified in feet. */
   @js.native
-  sealed trait foot extends Printing3DModelUnit
+  sealed trait foot
+    extends StObject
+       with Printing3DModelUnit
   
   /** The units of the 3D model are specified in inches. */
   @js.native
-  sealed trait inch extends Printing3DModelUnit
+  sealed trait inch
+    extends StObject
+       with Printing3DModelUnit
   
   /** The units of the 3D model are specified in meters. */
   @js.native
-  sealed trait meter extends Printing3DModelUnit
+  sealed trait meter
+    extends StObject
+       with Printing3DModelUnit
   
   /** The units of the 3D model are specified in microns. */
   @js.native
-  sealed trait micron extends Printing3DModelUnit
+  sealed trait micron
+    extends StObject
+       with Printing3DModelUnit
   
   /** The units of the 3D model are specified in millimeters. */
   @js.native
-  sealed trait millimeter extends Printing3DModelUnit
+  sealed trait millimeter
+    extends StObject
+       with Printing3DModelUnit
 }

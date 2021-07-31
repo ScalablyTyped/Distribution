@@ -15,14 +15,15 @@ import typings.three.mod.Texture
 import typings.threeTdsLoader.anon.TypeofTHREE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("three-tds-loader", JSImport.Namespace)
   @js.native
-  class ^ protected () extends TDSLoader {
+  class ^ protected ()
+    extends StObject
+       with TDSLoader {
     def this(three: TypeofTHREE) = this()
   }
   
@@ -57,18 +58,18 @@ object mod {
     def load(
       url: String,
       onLoad: js.Function1[/* object3D */ Object3D, Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): Unit = js.native
-    def load(
-      url: String,
-      onLoad: js.Function1[/* object3D */ Object3D, Unit],
       onProgress: js.Function1[/* progress */ ProgressEvent[EventTarget], Unit]
     ): Unit = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* object3D */ Object3D, Unit],
       onProgress: js.Function1[/* progress */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): Unit = js.native
+    def load(
+      url: String,
+      onLoad: js.Function1[/* object3D */ Object3D, Unit],
+      onProgress: Unit,
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     

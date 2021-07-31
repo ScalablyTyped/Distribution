@@ -2,19 +2,17 @@ package typings.eggCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Exports extends StObject {
     
-    var exports: js.Any = js.native
+    var exports: js.Any
     
-    var fullpath: String = js.native
+    var fullpath: String
     
-    var properties: js.Array[String] = js.native
+    var properties: js.Array[String]
   }
   object Exports {
     
@@ -41,12 +39,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IsWeakDep extends StObject {
     
-    var isWeakDep: js.UndefOr[Boolean] = js.native
+    var isWeakDep: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object IsWeakDep {
     
@@ -74,32 +71,31 @@ object anon {
   }
   
   /* Inlined std.Partial<egg-core.egg-core.ContextLoaderOption> */
-  @js.native
   trait PartialContextLoaderOptio extends StObject {
     
-    var call: js.UndefOr[Boolean] = js.native
+    var call: js.UndefOr[Boolean] = js.undefined
     
-    var caseStyle: js.UndefOr[String | (js.Function1[/* str */ String, js.Array[String]])] = js.native
+    var caseStyle: js.UndefOr[String | (js.Function1[/* str */ String, js.Array[String]])] = js.undefined
     
-    var directory: js.UndefOr[String | js.Array[String]] = js.native
+    var directory: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var fieldClass: js.UndefOr[String] = js.native
+    var fieldClass: js.UndefOr[String] = js.undefined
     
-    var filter: js.UndefOr[js.Function1[/* obj */ js.Object, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* obj */ js.Object, Boolean]] = js.undefined
     
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, _]] = js.native
+    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, js.Any]] = js.undefined
     
-    var inject: js.UndefOr[js.Object] = js.native
+    var inject: js.UndefOr[js.Object] = js.undefined
     
-    var `match`: js.UndefOr[String | js.Array[String]] = js.native
+    var `match`: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var `override`: js.UndefOr[Boolean] = js.native
+    var `override`: js.UndefOr[Boolean] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[js.Object] = js.native
+    var target: js.UndefOr[js.Object] = js.undefined
   }
   object PartialContextLoaderOptio {
     
@@ -158,7 +154,7 @@ object anon {
       def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
       @scala.inline
-      def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => _): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+      def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
@@ -199,28 +195,27 @@ object anon {
   }
   
   /* Inlined std.Partial<egg-core.egg-core.FileLoaderOption> */
-  @js.native
   trait PartialFileLoaderOption extends StObject {
     
-    var call: js.UndefOr[Boolean] = js.native
+    var call: js.UndefOr[Boolean] = js.undefined
     
-    var caseStyle: js.UndefOr[String | (js.Function1[/* str */ String, js.Array[String]])] = js.native
+    var caseStyle: js.UndefOr[String | (js.Function1[/* str */ String, js.Array[String]])] = js.undefined
     
-    var directory: js.UndefOr[String | js.Array[String]] = js.native
+    var directory: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var filter: js.UndefOr[js.Function1[/* obj */ js.Object, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* obj */ js.Object, Boolean]] = js.undefined
     
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, _]] = js.native
+    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, js.Any]] = js.undefined
     
-    var inject: js.UndefOr[js.Object] = js.native
+    var inject: js.UndefOr[js.Object] = js.undefined
     
-    var `match`: js.UndefOr[String | js.Array[String]] = js.native
+    var `match`: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var `override`: js.UndefOr[Boolean] = js.native
+    var `override`: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[js.Object] = js.native
+    var target: js.UndefOr[js.Object] = js.undefined
   }
   object PartialFileLoaderOption {
     
@@ -273,7 +268,7 @@ object anon {
       def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
       @scala.inline
-      def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => _): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+      def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
@@ -307,12 +302,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var pathName: String = js.native
+    var pathName: String
   }
   object Path {
     
@@ -333,12 +327,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Type {
     

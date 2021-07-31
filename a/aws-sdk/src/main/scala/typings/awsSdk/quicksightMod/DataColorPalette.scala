@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataColorPalette extends StObject {
   
   /**
     * The hexadecimal codes for the colors.
     */
-  var Colors: js.UndefOr[ColorList] = js.native
+  var Colors: js.UndefOr[ColorList] = js.undefined
   
   /**
     * The hexadecimal code of a color that applies to charts where a lack of data is highlighted.
     */
-  var EmptyFillColor: js.UndefOr[HexColor] = js.native
+  var EmptyFillColor: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The minimum and maximum hexadecimal codes that describe a color gradient. 
     */
-  var MinMaxGradient: js.UndefOr[ColorList] = js.native
+  var MinMaxGradient: js.UndefOr[ColorList] = js.undefined
 }
 object DataColorPalette {
   

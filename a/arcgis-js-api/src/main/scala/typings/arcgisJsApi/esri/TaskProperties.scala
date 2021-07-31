@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskProperties extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait TaskProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Task.html#requestOptions)
     */
-  var requestOptions: js.UndefOr[js.Any] = js.native
+  var requestOptions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The ArcGIS Server REST service URL (usually of a Feature Service Layer or Map Service Layer) for use in a task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Task.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object TaskProperties {
   

@@ -2,17 +2,15 @@ package typings.keystonejsEmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Root extends StObject {
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var transport: js.UndefOr[String] = js.native
+    var transport: js.UndefOr[String] = js.undefined
   }
   object Root {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Send extends StObject {
     
-    def send(rendererOpts: js.Any, transportOptions: js.Any): js.Any = js.native
+    def send(rendererOpts: js.Any, transportOptions: js.Any): js.Any
   }
   object Send {
     

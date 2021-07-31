@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExifInfoTags extends Object {
+trait ExifInfoTags
+  extends StObject
+     with Object {
   
   /**
     * The tag description.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#ExifInfo)
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The tag name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#ExifInfo)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The value of the tag.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#ExifInfo)
     */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ExifInfoTags {
   

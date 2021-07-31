@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apigatewayStageMod {
@@ -110,6 +109,10 @@ object apigatewayStageMod {
   /* static members */
   object Stage {
     
+    @JSImport("@pulumi/aws/apigateway/stage", "Stage")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Stage resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -119,90 +122,84 @@ object apigatewayStageMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/stage", "Stage.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Stage = js.native
-    @JSImport("@pulumi/aws/apigateway/stage", "Stage.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Stage = js.native
-    @JSImport("@pulumi/aws/apigateway/stage", "Stage.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StageState): Stage = js.native
-    @JSImport("@pulumi/aws/apigateway/stage", "Stage.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StageState, opts: CustomResourceOptions): Stage = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Stage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Stage]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Stage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stage]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StageState): Stage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stage]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StageState, opts: CustomResourceOptions): Stage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stage]
     
     /**
       * Returns true if the given object is an instance of Stage.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/stage", "Stage.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/stage.Stage */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/stage.Stage */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/stage.Stage */ Boolean]
   }
   
-  @js.native
   trait StageArgs extends StObject {
     
     /**
       * Enables access logs for the API stage. Detailed below.
       */
-    val accessLogSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.StageAccessLogSettings]] = js.native
+    val accessLogSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.StageAccessLogSettings]] = js.undefined
     
     /**
       * Specifies whether a cache cluster is enabled for the stage
       */
-    val cacheClusterEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val cacheClusterEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The size of the cache cluster for the stage, if enabled. Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
       */
-    val cacheClusterSize: js.UndefOr[Input[String]] = js.native
+    val cacheClusterSize: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of a client certificate for the stage.
       */
-    val clientCertificateId: js.UndefOr[Input[String]] = js.native
+    val clientCertificateId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the deployment that the stage points to
       */
-    val deployment: Input[String | Deployment] = js.native
+    val deployment: Input[String | Deployment]
     
     /**
       * The description of the stage
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the associated API documentation
       */
-    val documentationVersion: js.UndefOr[Input[String]] = js.native
+    val documentationVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: Input[String | RestApi] = js.native
+    val restApi: Input[String | RestApi]
     
     /**
       * The name of the stage
       */
-    val stageName: Input[String] = js.native
+    val stageName: Input[String]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map that defines the stage variables
       */
-    val variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Whether active tracing with X-ray is enabled. Defaults to `false`.
       */
-    val xrayTracingEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val xrayTracingEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object StageArgs {
     
@@ -280,86 +277,85 @@ object apigatewayStageMod {
     }
   }
   
-  @js.native
   trait StageState extends StObject {
     
     /**
       * Enables access logs for the API stage. Detailed below.
       */
-    val accessLogSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.StageAccessLogSettings]] = js.native
+    val accessLogSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.StageAccessLogSettings]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN)
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether a cache cluster is enabled for the stage
       */
-    val cacheClusterEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val cacheClusterEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The size of the cache cluster for the stage, if enabled. Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
       */
-    val cacheClusterSize: js.UndefOr[Input[String]] = js.native
+    val cacheClusterSize: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of a client certificate for the stage.
       */
-    val clientCertificateId: js.UndefOr[Input[String]] = js.native
+    val clientCertificateId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the deployment that the stage points to
       */
-    val deployment: js.UndefOr[Input[String | Deployment]] = js.native
+    val deployment: js.UndefOr[Input[String | Deployment]] = js.undefined
     
     /**
       * The description of the stage
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the associated API documentation
       */
-    val documentationVersion: js.UndefOr[Input[String]] = js.native
+    val documentationVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The execution ARN to be used in `lambdaPermission`'s `sourceArn`
       * when allowing API Gateway to invoke a Lambda function,
       * e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
       */
-    val executionArn: js.UndefOr[Input[String]] = js.native
+    val executionArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URL to invoke the API pointing to the stage,
       * e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
       */
-    val invokeUrl: js.UndefOr[Input[String]] = js.native
+    val invokeUrl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: js.UndefOr[Input[String | RestApi]] = js.native
+    val restApi: js.UndefOr[Input[String | RestApi]] = js.undefined
     
     /**
       * The name of the stage
       */
-    val stageName: js.UndefOr[Input[String]] = js.native
+    val stageName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map that defines the stage variables
       */
-    val variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Whether active tracing with X-ray is enabled. Defaults to `false`.
       */
-    val xrayTracingEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val xrayTracingEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object StageState {
     

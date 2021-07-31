@@ -2,126 +2,124 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceTypeInfo extends StObject {
   
   /**
     * Indicates whether auto recovery is supported.
     */
-  var AutoRecoverySupported: js.UndefOr[AutoRecoveryFlag] = js.native
+  var AutoRecoverySupported: js.UndefOr[AutoRecoveryFlag] = js.undefined
   
   /**
     * Indicates whether the instance is a bare metal instance type.
     */
-  var BareMetal: js.UndefOr[BareMetalFlag] = js.native
+  var BareMetal: js.UndefOr[BareMetalFlag] = js.undefined
   
   /**
     * Indicates whether the instance type is a burstable performance instance type.
     */
-  var BurstablePerformanceSupported: js.UndefOr[BurstablePerformanceFlag] = js.native
+  var BurstablePerformanceSupported: js.UndefOr[BurstablePerformanceFlag] = js.undefined
   
   /**
     * Indicates whether the instance type is current generation.
     */
-  var CurrentGeneration: js.UndefOr[CurrentGenerationFlag] = js.native
+  var CurrentGeneration: js.UndefOr[CurrentGenerationFlag] = js.undefined
   
   /**
     * Indicates whether Dedicated Hosts are supported on the instance type.
     */
-  var DedicatedHostsSupported: js.UndefOr[DedicatedHostFlag] = js.native
+  var DedicatedHostsSupported: js.UndefOr[DedicatedHostFlag] = js.undefined
   
   /**
     * Describes the Amazon EBS settings for the instance type.
     */
-  var EbsInfo: js.UndefOr[typings.awsSdk.ec2Mod.EbsInfo] = js.native
+  var EbsInfo: js.UndefOr[typings.awsSdk.ec2Mod.EbsInfo] = js.undefined
   
   /**
     * Describes the FPGA accelerator settings for the instance type.
     */
-  var FpgaInfo: js.UndefOr[typings.awsSdk.ec2Mod.FpgaInfo] = js.native
+  var FpgaInfo: js.UndefOr[typings.awsSdk.ec2Mod.FpgaInfo] = js.undefined
   
   /**
     * Indicates whether the instance type is eligible for the free tier.
     */
-  var FreeTierEligible: js.UndefOr[FreeTierEligibleFlag] = js.native
+  var FreeTierEligible: js.UndefOr[FreeTierEligibleFlag] = js.undefined
   
   /**
     * Describes the GPU accelerator settings for the instance type.
     */
-  var GpuInfo: js.UndefOr[typings.awsSdk.ec2Mod.GpuInfo] = js.native
+  var GpuInfo: js.UndefOr[typings.awsSdk.ec2Mod.GpuInfo] = js.undefined
   
   /**
     * Indicates whether On-Demand hibernation is supported.
     */
-  var HibernationSupported: js.UndefOr[HibernationFlag] = js.native
+  var HibernationSupported: js.UndefOr[HibernationFlag] = js.undefined
   
   /**
     * The hypervisor for the instance type.
     */
-  var Hypervisor: js.UndefOr[InstanceTypeHypervisor] = js.native
+  var Hypervisor: js.UndefOr[InstanceTypeHypervisor] = js.undefined
   
   /**
     * Describes the Inference accelerator settings for the instance type.
     */
-  var InferenceAcceleratorInfo: js.UndefOr[typings.awsSdk.ec2Mod.InferenceAcceleratorInfo] = js.native
+  var InferenceAcceleratorInfo: js.UndefOr[typings.awsSdk.ec2Mod.InferenceAcceleratorInfo] = js.undefined
   
   /**
     * Describes the instance storage for the instance type.
     */
-  var InstanceStorageInfo: js.UndefOr[typings.awsSdk.ec2Mod.InstanceStorageInfo] = js.native
+  var InstanceStorageInfo: js.UndefOr[typings.awsSdk.ec2Mod.InstanceStorageInfo] = js.undefined
   
   /**
     * Indicates whether instance storage is supported.
     */
-  var InstanceStorageSupported: js.UndefOr[InstanceStorageFlag] = js.native
+  var InstanceStorageSupported: js.UndefOr[InstanceStorageFlag] = js.undefined
   
   /**
     * The instance type. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * Describes the memory for the instance type.
     */
-  var MemoryInfo: js.UndefOr[typings.awsSdk.ec2Mod.MemoryInfo] = js.native
+  var MemoryInfo: js.UndefOr[typings.awsSdk.ec2Mod.MemoryInfo] = js.undefined
   
   /**
     * Describes the network settings for the instance type.
     */
-  var NetworkInfo: js.UndefOr[typings.awsSdk.ec2Mod.NetworkInfo] = js.native
+  var NetworkInfo: js.UndefOr[typings.awsSdk.ec2Mod.NetworkInfo] = js.undefined
   
   /**
     * Describes the placement group settings for the instance type.
     */
-  var PlacementGroupInfo: js.UndefOr[typings.awsSdk.ec2Mod.PlacementGroupInfo] = js.native
+  var PlacementGroupInfo: js.UndefOr[typings.awsSdk.ec2Mod.PlacementGroupInfo] = js.undefined
   
   /**
     * Describes the processor.
     */
-  var ProcessorInfo: js.UndefOr[typings.awsSdk.ec2Mod.ProcessorInfo] = js.native
+  var ProcessorInfo: js.UndefOr[typings.awsSdk.ec2Mod.ProcessorInfo] = js.undefined
   
   /**
     * The supported root device types.
     */
-  var SupportedRootDeviceTypes: js.UndefOr[RootDeviceTypeList] = js.native
+  var SupportedRootDeviceTypes: js.UndefOr[RootDeviceTypeList] = js.undefined
   
   /**
     * Indicates whether the instance type is offered for spot or On-Demand.
     */
-  var SupportedUsageClasses: js.UndefOr[UsageClassTypeList] = js.native
+  var SupportedUsageClasses: js.UndefOr[UsageClassTypeList] = js.undefined
   
   /**
     * The supported virtualization types.
     */
-  var SupportedVirtualizationTypes: js.UndefOr[VirtualizationTypeList] = js.native
+  var SupportedVirtualizationTypes: js.UndefOr[VirtualizationTypeList] = js.undefined
   
   /**
     * Describes the vCPU configurations for the instance type.
     */
-  var VCpuInfo: js.UndefOr[typings.awsSdk.ec2Mod.VCpuInfo] = js.native
+  var VCpuInfo: js.UndefOr[typings.awsSdk.ec2Mod.VCpuInfo] = js.undefined
 }
 object InstanceTypeInfo {
   

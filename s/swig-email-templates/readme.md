@@ -10,9 +10,9 @@ Node.js module for rendering emails with swig templates and email-friendly inlin
 | ------------------ | :-------------: |
 | Full name          | swig-email-templates |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 220645 |
+| # releases         | 2 |
+| # dependents       | 4 |
+| # downloads        | 207587 |
 | # stars            | 2 |
 
 ## Links

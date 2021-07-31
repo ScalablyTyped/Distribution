@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePhotoRequest extends StObject {
   
   /** Required. Photo object containing the new metadata. */
-  var photo: js.UndefOr[Photo] = js.native
+  var photo: js.UndefOr[Photo] = js.undefined
   
   /**
     * Required. Mask that identifies fields on the photo metadata to update. If not present, the old Photo metadata is entirely replaced with the new Photo metadata in this request. The
@@ -17,7 +15,7 @@ trait UpdatePhotoRequest extends StObject {
     * `pose.pitch` * `pose.roll` * `pose.level` * `pose.altitude` * `connections` * `places` *Note:* When updateMask contains repeated fields, the entire set of repeated values get
     * replaced with the new contents. For example, if updateMask contains `connections` and `UpdatePhotoRequest.photo.connections` is empty, all connections are removed.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object UpdatePhotoRequest {
   

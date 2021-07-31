@@ -3,43 +3,41 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A resource that represents Google Cloud Platform location.
   */
-@js.native
 trait SchemaLocation extends StObject {
   
   /**
     * The friendly name for this location, typically a nearby city name. For
     * example, &quot;Tokyo&quot;.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Cross-service attributes for the location. For example
     * {&quot;cloud.googleapis.com/region&quot;: &quot;us-east1&quot;}
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The canonical id for this location. For example: `&quot;us-east1&quot;`.
     */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /**
     * Service-specific metadata. For example the available capacity at the
     * given location.
     */
-  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Resource name for the location, which may vary between implementations.
     * For example: `&quot;projects/example-project/locations/us-east1&quot;`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaLocation {
   

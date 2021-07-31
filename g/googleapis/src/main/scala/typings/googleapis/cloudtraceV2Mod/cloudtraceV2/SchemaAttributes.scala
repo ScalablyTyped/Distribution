@@ -3,13 +3,11 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of attributes, each in the format `[KEY]:[VALUE]`.
   */
-@js.native
 trait SchemaAttributes extends StObject {
   
   /**
@@ -21,14 +19,14 @@ trait SchemaAttributes extends StObject {
     * &quot;/http/request_bytes&quot;: 300     &quot;abc.com/myattribute&quot;:
     * true
     */
-  var attributeMap: js.UndefOr[StringDictionary[SchemaAttributeValue]] = js.native
+  var attributeMap: js.UndefOr[StringDictionary[SchemaAttributeValue]] = js.undefined
   
   /**
     * The number of attributes that were discarded. Attributes can be discarded
     * because their keys are too long or because there are too many attributes.
     * If this value is 0 then all attributes are valid.
     */
-  var droppedAttributesCount: js.UndefOr[Double] = js.native
+  var droppedAttributesCount: js.UndefOr[Double] = js.undefined
 }
 object SchemaAttributes {
   

@@ -10,9 +10,9 @@ A list of [disposable email domains](http://en.wikipedia.org/wiki/Disposable_ema
 | ------------------ | :-------------: |
 | Full name          | disposable-email-domains |
 | Keywords           | - |
-| # releases         | 20 |
+| # releases         | 16 |
 | # dependents       | 12 |
-| # downloads        | 441775 |
+| # downloads        | 597535 |
 | # stars            | 1 |
 
 ## Links

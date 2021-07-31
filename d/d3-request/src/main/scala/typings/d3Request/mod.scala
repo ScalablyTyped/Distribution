@@ -14,16 +14,17 @@ import typings.std.XMLHttpRequest
 import typings.std.XMLHttpRequestResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-request", "csv")
+  @JSImport("d3-request", JSImport.Namespace)
   @js.native
-  def csv(url: String): DsvRequest = js.native
-  @JSImport("d3-request", "csv")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def csv(url: String): DsvRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any]).asInstanceOf[DsvRequest]
+  @scala.inline
   def csv(
     url: String,
     callback: js.ThisFunction2[
@@ -32,9 +33,8 @@ object mod {
       /* d */ DSVParsedArray[DSVRowString[String]], 
       Unit
     ]
-  ): DsvRequest = js.native
-  @JSImport("d3-request", "csv")
-  @js.native
+  ): DsvRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[DsvRequest]
+  @scala.inline
   def csv[ParsedRow /* <: js.Object */](
     url: String,
     row: js.Function3[
@@ -44,53 +44,43 @@ object mod {
       ParsedRow
     ],
     callback: js.ThisFunction2[/* this */ DsvRequest, /* error */ js.Any, /* d */ DSVParsedArray[ParsedRow], Unit]
-  ): DsvRequest = js.native
+  ): DsvRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], row.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[DsvRequest]
   
-  @JSImport("d3-request", "html")
-  @js.native
-  def html(url: String): Request_ = js.native
-  @JSImport("d3-request", "html")
-  @js.native
+  @scala.inline
+  def html(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
+  @scala.inline
   def html(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ DocumentFragment, Unit]
-  ): Request_ = js.native
+  ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
-  @JSImport("d3-request", "json")
-  @js.native
-  def json(url: String): Request_ = js.native
-  @JSImport("d3-request", "json")
-  @js.native
+  @scala.inline
+  def json(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
+  @scala.inline
   def json[ParsedObject /* <: StringDictionary[js.Any] */](
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ ParsedObject, Unit]
-  ): Request_ = js.native
+  ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
-  @JSImport("d3-request", "request")
-  @js.native
-  def request(url: String): Request_ = js.native
-  @JSImport("d3-request", "request")
-  @js.native
+  @scala.inline
+  def request(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
+  @scala.inline
   def request(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ XMLHttpRequest, Unit]
-  ): Request_ = js.native
+  ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
-  @JSImport("d3-request", "text")
-  @js.native
-  def text(url: String): Request_ = js.native
-  @JSImport("d3-request", "text")
-  @js.native
+  @scala.inline
+  def text(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
+  @scala.inline
   def text(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ String, Unit]
-  ): Request_ = js.native
+  ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
-  @JSImport("d3-request", "tsv")
-  @js.native
-  def tsv(url: String): DsvRequest = js.native
-  @JSImport("d3-request", "tsv")
-  @js.native
+  @scala.inline
+  def tsv(url: String): DsvRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any]).asInstanceOf[DsvRequest]
+  @scala.inline
   def tsv(
     url: String,
     callback: js.ThisFunction2[
@@ -99,9 +89,8 @@ object mod {
       /* d */ DSVParsedArray[DSVRowString[String]], 
       Unit
     ]
-  ): DsvRequest = js.native
-  @JSImport("d3-request", "tsv")
-  @js.native
+  ): DsvRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[DsvRequest]
+  @scala.inline
   def tsv[ParsedRow /* <: js.Object */](
     url: String,
     row: js.Function3[
@@ -111,20 +100,20 @@ object mod {
       ParsedRow
     ],
     callback: js.ThisFunction2[/* this */ DsvRequest, /* error */ js.Any, /* d */ DSVParsedArray[ParsedRow], Unit]
-  ): DsvRequest = js.native
+  ): DsvRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any], row.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[DsvRequest]
   
-  @JSImport("d3-request", "xml")
-  @js.native
-  def xml(url: String): Request_ = js.native
-  @JSImport("d3-request", "xml")
-  @js.native
+  @scala.inline
+  def xml(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
+  @scala.inline
   def xml(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ js.Any, Unit]
-  ): Request_ = js.native
+  ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
   @js.native
-  trait DsvRequest extends Request_ {
+  trait DsvRequest
+    extends StObject
+       with Request_ {
     
     def row[ParsedRow /* <: js.Object */](
       value: js.Function3[

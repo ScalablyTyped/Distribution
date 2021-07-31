@@ -2,26 +2,24 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Set up or update a new push notification watch on this user&#39;s mailbox.
   */
-@js.native
 trait SchemaWatchRequest extends StObject {
   
   /**
     * Filtering behavior of labelIds list specified.
     */
-  var labelFilterAction: js.UndefOr[String] = js.native
+  var labelFilterAction: js.UndefOr[String] = js.undefined
   
   /**
     * List of label_ids to restrict notifications about. By default, if
     * unspecified, all changes are pushed out. If specified then dictates which
     * labels are required for a push notification to be generated.
     */
-  var labelIds: js.UndefOr[js.Array[String]] = js.native
+  var labelIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A fully qualified Google Cloud Pub/Sub API topic name to publish the
@@ -33,7 +31,7 @@ trait SchemaWatchRequest extends StObject {
     * &quot;my-project-identifier&quot; portion must exactly match your Google
     * developer project id (the one executing this watch request).
     */
-  var topicName: js.UndefOr[String] = js.native
+  var topicName: js.UndefOr[String] = js.undefined
 }
 object SchemaWatchRequest {
   

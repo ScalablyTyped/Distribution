@@ -5,7 +5,6 @@ import typings.activexShdocvw.activexShdocvwNumbers.`2`
 import typings.activexShdocvw.activexShdocvwNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for ShellWindows FindWindow */

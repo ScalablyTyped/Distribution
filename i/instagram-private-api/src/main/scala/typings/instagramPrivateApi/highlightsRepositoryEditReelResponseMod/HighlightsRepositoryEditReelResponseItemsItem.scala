@@ -2,105 +2,103 @@ package typings.instagramPrivateApi.highlightsRepositoryEditReelResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightsRepositoryEditReelResponseItemsItem extends StObject {
   
-  var boost_unavailable_reason: String = js.native
+  var boost_unavailable_reason: String
   
-  var boosted_status: String = js.native
+  var boosted_status: String
   
-  var can_reply: Boolean = js.native
+  var can_reply: Boolean
   
-  var can_reshare: Boolean = js.native
+  var can_reshare: Boolean
   
-  var can_viewer_save: Boolean = js.native
+  var can_viewer_save: Boolean
   
-  var caption: Null = js.native
+  var caption: Null
   
-  var caption_is_edited: Boolean = js.native
+  var caption_is_edited: Boolean
   
-  var caption_position: Double = js.native
+  var caption_position: Double
   
-  var client_cache_key: String = js.native
+  var client_cache_key: String
   
-  var code: String = js.native
+  var code: String
   
-  var creative_config: js.UndefOr[HighlightsRepositoryEditReelResponseCreativeConfig] = js.native
+  var creative_config: js.UndefOr[HighlightsRepositoryEditReelResponseCreativeConfig] = js.undefined
   
-  var device_timestamp: Double = js.native
+  var device_timestamp: Double
   
-  var fb_user_tags: js.UndefOr[HighlightsRepositoryEditReelResponseFbUserTags] = js.native
+  var fb_user_tags: js.UndefOr[HighlightsRepositoryEditReelResponseFbUserTags] = js.undefined
   
-  var filter_type: Double = js.native
+  var filter_type: Double
   
-  var has_audio: js.UndefOr[Boolean] = js.native
+  var has_audio: js.UndefOr[Boolean] = js.undefined
   
-  var has_shared_to_fb: Double = js.native
+  var has_shared_to_fb: Double
   
-  var highlight_reel_ids: js.Array[String] = js.native
+  var highlight_reel_ids: js.Array[String]
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: HighlightsRepositoryEditReelResponseImageVersions2 = js.native
+  var image_versions2: HighlightsRepositoryEditReelResponseImageVersions2
   
-  var imported_taken_at: js.UndefOr[Double] = js.native
+  var imported_taken_at: js.UndefOr[Double] = js.undefined
   
-  var is_dash_eligible: js.UndefOr[Double] = js.native
+  var is_dash_eligible: js.UndefOr[Double] = js.undefined
   
-  var is_pride_media: Boolean = js.native
+  var is_pride_media: Boolean
   
-  var is_reel_media: Boolean = js.native
+  var is_reel_media: Boolean
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var multi_author_reel_names: js.Array[_] = js.native
+  var multi_author_reel_names: js.Array[js.Any]
   
-  var number_of_qualities: js.UndefOr[Double] = js.native
+  var number_of_qualities: js.UndefOr[Double] = js.undefined
   
-  var organic_tracking_token: String = js.native
+  var organic_tracking_token: String
   
-  var original_height: Double = js.native
+  var original_height: Double
   
-  var original_width: Double = js.native
+  var original_width: Double
   
-  var photo_of_you: Boolean = js.native
+  var photo_of_you: Boolean
   
-  var pk: String = js.native
+  var pk: String
   
-  var show_one_tap_fb_share_tooltip: Boolean = js.native
+  var show_one_tap_fb_share_tooltip: Boolean
   
-  var story_is_saved_to_archive: Boolean = js.native
+  var story_is_saved_to_archive: Boolean
   
-  var story_quiz_participant_infos: js.UndefOr[js.Array[HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem]] = js.native
+  var story_quiz_participant_infos: js.UndefOr[js.Array[HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem]] = js.undefined
   
-  var story_quizs: js.UndefOr[js.Array[HighlightsRepositoryEditReelResponseStoryQuizsItem]] = js.native
+  var story_quizs: js.UndefOr[js.Array[HighlightsRepositoryEditReelResponseStoryQuizsItem]] = js.undefined
   
-  var supports_reel_reactions: Boolean = js.native
+  var supports_reel_reactions: Boolean
   
-  var taken_at: Double = js.native
+  var taken_at: Double
   
-  var timezone_offset: Double = js.native
+  var timezone_offset: Double
   
-  var total_viewer_count: Double = js.native
+  var total_viewer_count: Double
   
-  var user: HighlightsRepositoryEditReelResponseUser = js.native
+  var user: HighlightsRepositoryEditReelResponseUser
   
-  var video_codec: js.UndefOr[String] = js.native
+  var video_codec: js.UndefOr[String] = js.undefined
   
-  var video_dash_manifest: js.UndefOr[String] = js.native
+  var video_dash_manifest: js.UndefOr[String] = js.undefined
   
-  var video_duration: js.UndefOr[Double] = js.native
+  var video_duration: js.UndefOr[Double] = js.undefined
   
-  var video_versions: js.UndefOr[js.Array[HighlightsRepositoryEditReelResponseVideoVersionsItem]] = js.native
+  var video_versions: js.UndefOr[js.Array[HighlightsRepositoryEditReelResponseVideoVersionsItem]] = js.undefined
   
-  var viewer_count: Double = js.native
+  var viewer_count: Double
   
-  var viewer_cursor: Null = js.native
+  var viewer_cursor: Null
   
-  var viewers: js.Array[_] = js.native
+  var viewers: js.Array[js.Any]
 }
 object HighlightsRepositoryEditReelResponseItemsItem {
   
@@ -125,7 +123,7 @@ object HighlightsRepositoryEditReelResponseItemsItem {
     is_pride_media: Boolean,
     is_reel_media: Boolean,
     media_type: Double,
-    multi_author_reel_names: js.Array[_],
+    multi_author_reel_names: js.Array[js.Any],
     organic_tracking_token: String,
     original_height: Double,
     original_width: Double,
@@ -140,7 +138,7 @@ object HighlightsRepositoryEditReelResponseItemsItem {
     user: HighlightsRepositoryEditReelResponseUser,
     viewer_count: Double,
     viewer_cursor: Null,
-    viewers: js.Array[_]
+    viewers: js.Array[js.Any]
   ): HighlightsRepositoryEditReelResponseItemsItem = {
     val __obj = js.Dynamic.literal(boost_unavailable_reason = boost_unavailable_reason.asInstanceOf[js.Any], boosted_status = boosted_status.asInstanceOf[js.Any], can_reply = can_reply.asInstanceOf[js.Any], can_reshare = can_reshare.asInstanceOf[js.Any], can_viewer_save = can_viewer_save.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], caption_position = caption_position.asInstanceOf[js.Any], client_cache_key = client_cache_key.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], device_timestamp = device_timestamp.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], has_shared_to_fb = has_shared_to_fb.asInstanceOf[js.Any], highlight_reel_ids = highlight_reel_ids.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], is_pride_media = is_pride_media.asInstanceOf[js.Any], is_reel_media = is_reel_media.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], multi_author_reel_names = multi_author_reel_names.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], photo_of_you = photo_of_you.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], show_one_tap_fb_share_tooltip = show_one_tap_fb_share_tooltip.asInstanceOf[js.Any], story_is_saved_to_archive = story_is_saved_to_archive.asInstanceOf[js.Any], supports_reel_reactions = supports_reel_reactions.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], timezone_offset = timezone_offset.asInstanceOf[js.Any], total_viewer_count = total_viewer_count.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], viewer_count = viewer_count.asInstanceOf[js.Any], viewer_cursor = viewer_cursor.asInstanceOf[js.Any], viewers = viewers.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseItemsItem]
@@ -240,7 +238,7 @@ object HighlightsRepositoryEditReelResponseItemsItem {
     def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulti_author_reel_names(value: js.Array[_]): Self = StObject.set(x, "multi_author_reel_names", value.asInstanceOf[js.Any])
+    def setMulti_author_reel_names(value: js.Array[js.Any]): Self = StObject.set(x, "multi_author_reel_names", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMulti_author_reel_namesVarargs(value: js.Any*): Self = StObject.set(x, "multi_author_reel_names", js.Array(value :_*))
@@ -339,7 +337,7 @@ object HighlightsRepositoryEditReelResponseItemsItem {
     def setViewer_cursor(value: Null): Self = StObject.set(x, "viewer_cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewers(value: js.Array[_]): Self = StObject.set(x, "viewers", value.asInstanceOf[js.Any])
+    def setViewers(value: js.Array[js.Any]): Self = StObject.set(x, "viewers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setViewersVarargs(value: js.Any*): Self = StObject.set(x, "viewers", js.Array(value :_*))

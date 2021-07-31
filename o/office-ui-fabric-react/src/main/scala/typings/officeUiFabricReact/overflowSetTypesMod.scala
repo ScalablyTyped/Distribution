@@ -16,7 +16,6 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overflowSetTypesMod {
@@ -44,9 +43,9 @@ object overflowSetTypesMod {
     def focusElement(childElement: HTMLElement): Boolean = js.native
   }
   
-  @js.native
   trait IOverflowSetItemProps
-    extends /**
+    extends StObject
+       with /**
     * (Optional) Any additional properties to apply to the rendered links.
     */
   /* propertyName */ StringDictionary[js.Any] {
@@ -54,12 +53,12 @@ object overflowSetTypesMod {
     /**
       * Unique id to identify the item.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * Optional keytip for the overflowSetItem.
       */
-    var keytipProps: js.UndefOr[IKeytipProps] = js.native
+    var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
   }
   object IOverflowSetItemProps {
     
@@ -83,18 +82,19 @@ object overflowSetTypesMod {
     }
   }
   
-  @js.native
-  trait IOverflowSetProps extends ClassAttributes[OverflowSetBase] {
+  trait IOverflowSetProps
+    extends StObject
+       with ClassAttributes[OverflowSetBase] {
     
     /**
       * Class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IOverflowSet]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IOverflowSet]] = js.undefined
     
     /**
       * If true do not contain the OverflowSet inside of a FocusZone,
@@ -103,7 +103,7 @@ object overflowSetTypesMod {
       * Use one or the other.
       * @deprecated In 8.0 the OverflowSet will no longer be wrapped in a FocusZone
       */
-    var doNotContainWithinFocusZone: js.UndefOr[Boolean] = js.native
+    var doNotContainWithinFocusZone: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom properties for OverflowSet's FocusZone.
@@ -111,72 +111,72 @@ object overflowSetTypesMod {
       * Use one or the other.
       * @deprecated In 8.0 the OverflowSet will no longer be wrapped in a FocusZone
       */
-    var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.native
+    var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.undefined
     
     /**
       * Function that will take in an IOverflowSetItemProps and return the subMenu for that item.
       * If not provided, will use 'item.subMenuProps.items' by default.
       * This is only used if your overflow set has keytips.
       */
-    var itemSubMenuProvider: js.UndefOr[js.Function1[/* item */ IOverflowSetItemProps, js.UndefOr[js.Array[_]]]] = js.native
+    var itemSubMenuProvider: js.UndefOr[js.Function1[/* item */ IOverflowSetItemProps, js.UndefOr[js.Array[js.Any]]]] = js.undefined
     
     /**
       * An array of items to be rendered by your onRenderItem function in the primary content area
       */
-    var items: js.UndefOr[js.Array[IOverflowSetItemProps]] = js.native
+    var items: js.UndefOr[js.Array[IOverflowSetItemProps]] = js.undefined
     
     /**
       * Optional full keytip sequence for the overflow button, if it will have a keytip.
       */
-    var keytipSequences: js.UndefOr[js.Array[String]] = js.native
+    var keytipSequences: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Method to call when trying to render an item.
       */
-    def onRenderItem(item: IOverflowSetItemProps): js.Any = js.native
+    def onRenderItem(item: IOverflowSetItemProps): js.Any
     
     /**
       * Rendering method for overflow button and contextual menu. The argument to the function is
       * the overflowItems passed in as props to this function.
       */
-    var onRenderOverflowButton: IRenderFunction[js.Array[_]] = js.native
+    var onRenderOverflowButton: IRenderFunction[js.Array[js.Any]]
     
     /**
       * An array of items to be passed to overflow contextual menu
       */
-    var overflowItems: js.UndefOr[js.Array[IOverflowSetItemProps]] = js.native
+    var overflowItems: js.UndefOr[js.Array[IOverflowSetItemProps]] = js.undefined
     
     /**
       * Controls wether or not the overflow button is placed at the start or end of the items.
       * This gives a reveresed visual behavior but maintains correct keyboard navigation.
       * @defaultValue 'end'
       */
-    var overflowSide: js.UndefOr[start | end] = js.native
+    var overflowSide: js.UndefOr[start | end] = js.undefined
     
     /**
       * The role for the OverflowSet.
       * @defaultvalue 'group'
       */
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IOverflowSetProps, IOverflowSetStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IOverflowSetProps, IOverflowSetStyles]] = js.undefined
     
     /**
       * Change item layout direction to vertical/stacked.
       * If role is set to `menubar`, `vertical={true}` will also add proper `aria-orientation`.
       * @defaultvalue false
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object IOverflowSetProps {
     
     @scala.inline
     def apply(
       onRenderItem: IOverflowSetItemProps => js.Any,
-      onRenderOverflowButton: (/* props */ js.UndefOr[js.Array[_]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[_]], Element | Null]]) => Element | Null
+      onRenderOverflowButton: (/* props */ js.UndefOr[js.Array[js.Any]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[js.Any]], Element | Null]]) => Element | Null
     ): IOverflowSetProps = {
       val __obj = js.Dynamic.literal(onRenderItem = js.Any.fromFunction1(onRenderItem), onRenderOverflowButton = js.Any.fromFunction2(onRenderOverflowButton))
       __obj.asInstanceOf[IOverflowSetProps]
@@ -213,7 +213,7 @@ object overflowSetTypesMod {
       def setFocusZonePropsUndefined: Self = StObject.set(x, "focusZoneProps", js.undefined)
       
       @scala.inline
-      def setItemSubMenuProvider(value: /* item */ IOverflowSetItemProps => js.UndefOr[js.Array[_]]): Self = StObject.set(x, "itemSubMenuProvider", js.Any.fromFunction1(value))
+      def setItemSubMenuProvider(value: /* item */ IOverflowSetItemProps => js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "itemSubMenuProvider", js.Any.fromFunction1(value))
       
       @scala.inline
       def setItemSubMenuProviderUndefined: Self = StObject.set(x, "itemSubMenuProvider", js.undefined)
@@ -241,7 +241,7 @@ object overflowSetTypesMod {
       
       @scala.inline
       def setOnRenderOverflowButton(
-        value: (/* props */ js.UndefOr[js.Array[_]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[_]], Element | Null]]) => Element | Null
+        value: (/* props */ js.UndefOr[js.Array[js.Any]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[js.Any]], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderOverflowButton", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -283,12 +283,11 @@ object overflowSetTypesMod {
   }
   
   /* Inlined std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/OverflowSet/OverflowSet.types.IOverflowSetProps, 'vertical' | 'className'> */
-  @js.native
   trait IOverflowSetStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object IOverflowSetStyleProps {
     
@@ -315,17 +314,16 @@ object overflowSetTypesMod {
     }
   }
   
-  @js.native
   trait IOverflowSetStyles extends StObject {
     
     /** The style that is layered onto each individual item in the overflow set. */
-    var item: js.UndefOr[IStyle] = js.native
+    var item: js.UndefOr[IStyle] = js.undefined
     
     /** The style that is layered onto the overflow button for the overflow set. */
-    var overflowButton: js.UndefOr[IStyle] = js.native
+    var overflowButton: js.UndefOr[IStyle] = js.undefined
     
     /** The style that is layered onto the root element of OverflowSet. */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
   }
   object IOverflowSetStyles {
     

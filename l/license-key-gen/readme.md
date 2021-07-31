@@ -12,7 +12,7 @@ Generates and Validates license
 | Keywords           | node, nodejs, license, licensing, license-generator, chai, mocha |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 2310 |
+| # downloads        | 3864 |
 | # stars            | 0 |
 
 ## Links

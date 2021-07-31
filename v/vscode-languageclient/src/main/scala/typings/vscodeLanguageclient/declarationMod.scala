@@ -12,7 +12,6 @@ import typings.vscodeLanguageserverProtocol.protocolDeclarationMod.DeclarationOp
 import typings.vscodeLanguageserverProtocol.protocolDeclarationMod.DeclarationRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object declarationMod {
@@ -23,7 +22,6 @@ object declarationMod {
     def this(client: BaseLanguageClient) = this()
   }
   
-  @js.native
   trait DeclarationMiddleware extends StObject {
     
     var provideDeclaration: js.UndefOr[
@@ -35,7 +33,7 @@ object declarationMod {
           /* next */ ProvideDeclarationSignature, 
           ProviderResult[Declaration]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object DeclarationMiddleware {
     

@@ -2,7 +2,6 @@ package typings.jsClipper.ClipperLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait Protects extends StObject
 object Protects extends StObject {
   
   @js.native
-  sealed trait ipBoth extends Protects
+  sealed trait ipBoth
+    extends StObject
+       with Protects
   
   @js.native
-  sealed trait ipLeft extends Protects
+  sealed trait ipLeft
+    extends StObject
+       with Protects
   
   @js.native
-  sealed trait ipNone extends Protects
+  sealed trait ipNone
+    extends StObject
+       with Protects
   
   @js.native
-  sealed trait ipRight extends Protects
+  sealed trait ipRight
+    extends StObject
+       with Protects
 }

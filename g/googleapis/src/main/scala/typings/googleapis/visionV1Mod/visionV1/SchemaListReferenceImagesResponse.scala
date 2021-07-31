@@ -2,29 +2,27 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for the `ListReferenceImages` method.
   */
-@js.native
 trait SchemaListReferenceImagesResponse extends StObject {
   
   /**
     * The next_page_token returned from a previous List request, if any.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of items to return. Default 10, maximum 100.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The list of reference images.
     */
-  var referenceImages: js.UndefOr[js.Array[SchemaReferenceImage]] = js.native
+  var referenceImages: js.UndefOr[js.Array[SchemaReferenceImage]] = js.undefined
 }
 object SchemaListReferenceImagesResponse {
   

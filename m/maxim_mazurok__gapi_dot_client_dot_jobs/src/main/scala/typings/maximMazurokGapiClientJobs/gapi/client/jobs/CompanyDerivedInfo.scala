@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompanyDerivedInfo extends StObject {
   
   /** A structured headquarters location of the company, resolved from Company.hq_location if provided. */
-  var headquartersLocation: js.UndefOr[Location] = js.native
+  var headquartersLocation: js.UndefOr[Location] = js.undefined
 }
 object CompanyDerivedInfo {
   

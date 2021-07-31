@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HumanLoopActivationConfig extends StObject {
   
   /**
     * Container structure for defining under what conditions SageMaker creates a human loop.
     */
-  var HumanLoopActivationConditionsConfig: typings.awsSdk.sagemakerMod.HumanLoopActivationConditionsConfig = js.native
+  var HumanLoopActivationConditionsConfig: typings.awsSdk.sagemakerMod.HumanLoopActivationConditionsConfig
 }
 object HumanLoopActivationConfig {
   

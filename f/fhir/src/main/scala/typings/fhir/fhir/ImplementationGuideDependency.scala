@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Another Implementation guide this depends on
   */
-@js.native
-trait ImplementationGuideDependency extends BackboneElement {
+trait ImplementationGuideDependency
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'uri'.
     */
-  var _uri: js.UndefOr[Element] = js.native
+  var _uri: js.UndefOr[Element] = js.undefined
   
   /**
     * reference | inclusion
     */
-  var `type`: code = js.native
+  var `type`: code
   
   /**
     * Where to find dependency
     */
-  var uri: typings.fhir.fhir.uri = js.native
+  var uri: typings.fhir.fhir.uri
 }
 object ImplementationGuideDependency {
   

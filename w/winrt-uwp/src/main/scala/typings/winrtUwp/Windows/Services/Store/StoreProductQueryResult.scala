@@ -4,18 +4,16 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides response data for a request to retrieve details about products that can be purchased from within the current app. */
-@js.native
 trait StoreProductQueryResult extends StObject {
   
   /** Gets the error code for the request, if the operation encountered an error. */
-  var extendedError: WinRTError = js.native
+  var extendedError: WinRTError
   
   /** Gets the collection of products returned by the request. */
-  var products: IMapView[String, StoreProduct] = js.native
+  var products: IMapView[String, StoreProduct]
 }
 object StoreProductQueryResult {
   

@@ -2,25 +2,23 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Account Permission Group List Response
   */
-@js.native
 trait SchemaAccountPermissionGroupsListResponse extends StObject {
   
   /**
     * Account permission group collection.
     */
-  var accountPermissionGroups: js.UndefOr[js.Array[SchemaAccountPermissionGroup]] = js.native
+  var accountPermissionGroups: js.UndefOr[js.Array[SchemaAccountPermissionGroup]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#accountPermissionGroupsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountPermissionGroupsListResponse {
   

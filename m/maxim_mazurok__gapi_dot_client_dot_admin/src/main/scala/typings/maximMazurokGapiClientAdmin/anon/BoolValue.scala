@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientAdmin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoolValue extends StObject {
   
   /** Boolean value of the parameter. */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /** Integer value of the parameter. */
-  var intValue: js.UndefOr[String] = js.native
+  var intValue: js.UndefOr[String] = js.undefined
   
   /**
     * Nested parameter value pairs associated with this parameter. Complex value type for a parameter are returned as a list of parameter values. For example, the address
     * parameter may have a value as [{parameter: [{name: city, value: abc}]}]
     */
-  var messageValue: js.UndefOr[Parameter] = js.native
+  var messageValue: js.UndefOr[Parameter] = js.undefined
   
   /** Integer values of the parameter. */
-  var multiIntValue: js.UndefOr[js.Array[String]] = js.native
+  var multiIntValue: js.UndefOr[js.Array[String]] = js.undefined
   
   /** List of messageValue objects. */
-  var multiMessageValue: js.UndefOr[js.Array[Parameter]] = js.native
+  var multiMessageValue: js.UndefOr[js.Array[Parameter]] = js.undefined
   
   /** String values of the parameter. */
-  var multiValue: js.UndefOr[js.Array[String]] = js.native
+  var multiValue: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The name of the parameter. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** String value of the parameter. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object BoolValue {
   

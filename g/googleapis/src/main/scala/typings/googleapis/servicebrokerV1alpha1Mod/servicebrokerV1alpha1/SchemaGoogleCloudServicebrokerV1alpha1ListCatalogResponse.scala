@@ -2,13 +2,11 @@ package typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for the `ListCatalog()` method.
   */
-@js.native
 trait SchemaGoogleCloudServicebrokerV1alpha1ListCatalogResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaGoogleCloudServicebrokerV1alpha1ListCatalogResponse extends StObject
     * error codes.
     * https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#service-broker-errors
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * This token allows you to get the next page of results for list requests.
@@ -25,12 +23,12 @@ trait SchemaGoogleCloudServicebrokerV1alpha1ListCatalogResponse extends StObject
     * next list request. Subsequent list requests will have their own
     * `nextPageToken` to continue paging through the results
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The services available for the requested GCP project.
     */
-  var services: js.UndefOr[js.Array[SchemaGoogleCloudServicebrokerV1alpha1Service]] = js.native
+  var services: js.UndefOr[js.Array[SchemaGoogleCloudServicebrokerV1alpha1Service]] = js.undefined
 }
 object SchemaGoogleCloudServicebrokerV1alpha1ListCatalogResponse {
   

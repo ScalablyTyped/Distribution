@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExchangeConfigEnabledExchange extends StObject {
   
   /** The enabled exchange. */
-  var exchange: js.UndefOr[String] = js.native
+  var exchange: js.UndefOr[String] = js.undefined
   
   /** Output only. Agency ID of Google Ad Manager. The field is only relevant when Google Ad Manager is the enabled exchange. */
-  var googleAdManagerAgencyId: js.UndefOr[String] = js.native
+  var googleAdManagerAgencyId: js.UndefOr[String] = js.undefined
   
   /** Output only. Network ID of Google Ad Manager. The field is only relevant when Google Ad Manager is the enabled exchange. */
-  var googleAdManagerBuyerNetworkId: js.UndefOr[String] = js.native
+  var googleAdManagerBuyerNetworkId: js.UndefOr[String] = js.undefined
   
   /** Output only. Seat ID of the enabled exchange. */
-  var seatId: js.UndefOr[String] = js.native
+  var seatId: js.UndefOr[String] = js.undefined
 }
 object ExchangeConfigEnabledExchange {
   

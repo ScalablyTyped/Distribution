@@ -17,35 +17,35 @@ import typings.baseui.baseuiStrings.STRING
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataTableMod {
   
-  @JSImport("baseui/data-table", "AnchorColumn")
+  @JSImport("baseui/data-table", JSImport.Namespace)
   @js.native
-  def AnchorColumn(options: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("baseui/data-table", "BooleanColumn")
-  @js.native
-  def BooleanColumn(options: js.Any): js.Any = js.native
+  @scala.inline
+  def AnchorColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AnchorColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
+  @scala.inline
+  def BooleanColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("BooleanColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   trait COLUMNS extends StObject {
     
-    var ANCHOR: typings.baseui.baseuiStrings.ANCHOR = js.native
+    var ANCHOR: typings.baseui.baseuiStrings.ANCHOR
     
-    var BOOLEAN: typings.baseui.baseuiStrings.BOOLEAN = js.native
+    var BOOLEAN: typings.baseui.baseuiStrings.BOOLEAN
     
-    var CATEGORICAL: typings.baseui.baseuiStrings.CATEGORICAL = js.native
+    var CATEGORICAL: typings.baseui.baseuiStrings.CATEGORICAL
     
-    var CUSTOM: typings.baseui.baseuiStrings.CUSTOM = js.native
+    var CUSTOM: typings.baseui.baseuiStrings.CUSTOM
     
-    var DATETIME: typings.baseui.baseuiStrings.DATETIME = js.native
+    var DATETIME: typings.baseui.baseuiStrings.DATETIME
     
-    var NUMERICAL: typings.baseui.baseuiStrings.NUMERICAL = js.native
+    var NUMERICAL: typings.baseui.baseuiStrings.NUMERICAL
     
-    var STRING: typings.baseui.baseuiStrings.STRING = js.native
+    var STRING: typings.baseui.baseuiStrings.STRING
   }
   object COLUMNS {
     
@@ -79,26 +79,22 @@ object dataTableMod {
     }
   }
   
-  @JSImport("baseui/data-table", "CategoricalColumn")
-  @js.native
-  def CategoricalColumn(options: js.Any): js.Any = js.native
+  @scala.inline
+  def CategoricalColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CategoricalColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("baseui/data-table", "CustomColumn")
-  @js.native
-  def CustomColumn[ValueT, FilterParamsT](options: js.Any): js.Any = js.native
+  @scala.inline
+  def CustomColumn[ValueT, FilterParamsT](options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("baseui/data-table", "DatetimeColumn")
-  @js.native
-  def DatetimeColumn(options: js.Any): js.Any = js.native
+  @scala.inline
+  def DatetimeColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DatetimeColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait NUMERICAL_FORMATS extends StObject {
     
-    var ACCOUNTING: typings.baseui.baseuiStrings.ACCOUNTING = js.native
+    var ACCOUNTING: typings.baseui.baseuiStrings.ACCOUNTING
     
-    var DEFAULT: typings.baseui.baseuiStrings.DEFAULT = js.native
+    var DEFAULT: typings.baseui.baseuiStrings.DEFAULT
     
-    var PERCENTAGE: typings.baseui.baseuiStrings.PERCENTAGE = js.native
+    var PERCENTAGE: typings.baseui.baseuiStrings.PERCENTAGE
   }
   object NUMERICAL_FORMATS {
     
@@ -120,16 +116,14 @@ object dataTableMod {
     }
   }
   
-  @JSImport("baseui/data-table", "NumericalColumn")
-  @js.native
-  def NumericalColumn(options: js.Any): js.Any = js.native
+  @scala.inline
+  def NumericalColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("NumericalColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait SORT_DIRECTIONS extends StObject {
     
-    var ASC: typings.baseui.baseuiStrings.ASC = js.native
+    var ASC: typings.baseui.baseuiStrings.ASC
     
-    var DESC: typings.baseui.baseuiStrings.DESC = js.native
+    var DESC: typings.baseui.baseuiStrings.DESC
   }
   object SORT_DIRECTIONS {
     
@@ -160,18 +154,16 @@ object dataTableMod {
     def this(props: js.Any, context: js.Any) = this()
   }
   
-  @JSImport("baseui/data-table", "StringColumn")
-  @js.native
-  def StringColumn(options: js.Any): js.Any = js.native
+  @scala.inline
+  def StringColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("StringColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait BatchActionT extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    def onClick(params: ClearSelection): js.Any = js.native
+    def onClick(params: ClearSelection): js.Any
     
-    var renderIcon: js.UndefOr[js.Any] = js.native
+    var renderIcon: js.UndefOr[js.Any] = js.undefined
   }
   object BatchActionT {
     
@@ -200,18 +192,17 @@ object dataTableMod {
   
   type ColumnT = js.Any
   
-  @js.native
   trait Props extends StObject {
     
-    var batchActions: js.UndefOr[js.Array[BatchActionT]] = js.native
+    var batchActions: js.UndefOr[js.Array[BatchActionT]] = js.undefined
     
-    var columns: js.Array[ColumnT] = js.native
+    var columns: js.Array[ColumnT]
     
-    var onSelectionChange: js.UndefOr[js.Function1[/* rows */ js.Array[RowT], _]] = js.native
+    var onSelectionChange: js.UndefOr[js.Function1[/* rows */ js.Array[RowT], js.Any]] = js.undefined
     
-    var rowActions: js.UndefOr[js.Array[RowActionT]] = js.native
+    var rowActions: js.UndefOr[js.Array[RowActionT]] = js.undefined
     
-    var rows: js.Array[RowT] = js.native
+    var rows: js.Array[RowT]
   }
   object Props {
     
@@ -240,7 +231,7 @@ object dataTableMod {
       def setColumnsVarargs(value: ColumnT*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
       @scala.inline
-      def setOnSelectionChange(value: /* rows */ js.Array[RowT] => _): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
+      def setOnSelectionChange(value: /* rows */ js.Array[RowT] => js.Any): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
@@ -262,14 +253,13 @@ object dataTableMod {
     }
   }
   
-  @js.native
   trait RowActionT extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    def onClick(params: Event): js.Any = js.native
+    def onClick(params: Event): js.Any
     
-    var renderIcon: js.Any = js.native
+    var renderIcon: js.Any
   }
   object RowActionT {
     
@@ -293,12 +283,11 @@ object dataTableMod {
     }
   }
   
-  @js.native
   trait RowT extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var id: Double | String = js.native
+    var id: Double | String
   }
   object RowT {
     

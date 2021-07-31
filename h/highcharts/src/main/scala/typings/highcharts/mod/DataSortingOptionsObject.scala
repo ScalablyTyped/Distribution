@@ -2,26 +2,24 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSortingOptionsObject extends StObject {
   
   /**
     * Enable or disable data sorting for the series.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to allow matching points by name in an update.
     */
-  var matchByName: js.UndefOr[Boolean] = js.native
+  var matchByName: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines what data value should be used to sort by.
     */
-  var sortKey: js.UndefOr[String] = js.native
+  var sortKey: js.UndefOr[String] = js.undefined
 }
 object DataSortingOptionsObject {
   

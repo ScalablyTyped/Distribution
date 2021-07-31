@@ -11,7 +11,6 @@ import typings.std.HTMLInputElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -50,7 +49,7 @@ object componentMod {
     
     var annotatedEventListeners: js.Any = js.native
     
-    def appendChild(newChild: IComponent[_]): Unit = js.native
+    def appendChild(newChild: IComponent[js.Any]): Unit = js.native
     def appendChild(newChild: Node): Unit = js.native
     
     var childComponents: js.Any = js.native
@@ -123,10 +122,11 @@ object componentMod {
     def EVENT_VISIBLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_VISIBLE_CHANGED")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait VisibleChangedEvent extends AgEvent {
+  trait VisibleChangedEvent
+    extends StObject
+       with AgEvent {
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object VisibleChangedEvent {
     

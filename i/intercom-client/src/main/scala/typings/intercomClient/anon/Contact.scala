@@ -4,15 +4,13 @@ import typings.intercomClient.leadMod.LeadIdentifier
 import typings.intercomClient.userMod.UserIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contact extends StObject {
   
-  var contact: LeadIdentifier = js.native
+  var contact: LeadIdentifier
   
-  var user: UserIdentifier = js.native
+  var user: UserIdentifier
 }
 object Contact {
   

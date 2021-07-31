@@ -7,45 +7,45 @@ import typings.appBuilderLib.appBuilderLibStrings.LZMA
 import typings.appBuilderLib.coreMod.CompressionLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object archiveMod {
   
-  @JSImport("app-builder-lib/out/targets/archive", "compute7zCompressArgs")
+  @JSImport("app-builder-lib/out/targets/archive", JSImport.Namespace)
   @js.native
-  def compute7zCompressArgs(format: String): js.Array[String] = js.native
-  @JSImport("app-builder-lib/out/targets/archive", "compute7zCompressArgs")
-  @js.native
-  def compute7zCompressArgs(format: String, options: ArchiveOptions): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def compute7zCompressArgs(format: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compute7zCompressArgs")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def compute7zCompressArgs(format: String, options: ArchiveOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compute7zCompressArgs")(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   trait ArchiveOptions extends StObject {
     
-    var compression: js.UndefOr[CompressionLevel | Null] = js.native
+    var compression: js.UndefOr[CompressionLevel | Null] = js.undefined
     
-    var dictSize: js.UndefOr[Double] = js.native
+    var dictSize: js.UndefOr[Double] = js.undefined
     
-    var excluded: js.UndefOr[js.Array[String] | Null] = js.native
-    
-    /**
-      * @default true
-      */
-    var isArchiveHeaderCompressed: js.UndefOr[Boolean] = js.native
-    
-    var isRegularFile: js.UndefOr[Boolean] = js.native
-    
-    var method: js.UndefOr[Copy | LZMA | Deflate | DEFAULT] = js.native
+    var excluded: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * @default true
       */
-    var solid: js.UndefOr[Boolean] = js.native
+    var isArchiveHeaderCompressed: js.UndefOr[Boolean] = js.undefined
+    
+    var isRegularFile: js.UndefOr[Boolean] = js.undefined
+    
+    var method: js.UndefOr[Copy | LZMA | Deflate | DEFAULT] = js.undefined
+    
+    /**
+      * @default true
+      */
+    var solid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default false
       */
-    var withoutDir: js.UndefOr[Boolean] = js.native
+    var withoutDir: js.UndefOr[Boolean] = js.undefined
   }
   object ArchiveOptions {
     

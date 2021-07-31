@@ -7,68 +7,66 @@ import typings.auth0.auth0Strings.access_token
 import typings.auth0.auth0Strings.access_token_authz
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceServer extends StObject {
   
   /**
     * Allows issuance of refresh tokens for this entity.
     */
-  var allow_offline_access: js.UndefOr[Boolean] = js.native
+  var allow_offline_access: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables the enforcement of the authorization policies.
     */
-  var enforce_policies: js.UndefOr[Boolean] = js.native
+  var enforce_policies: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the resource server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of the resource server.
     */
-  var identifier: js.UndefOr[String] = js.native
+  var identifier: js.UndefOr[String] = js.undefined
   
   /**
     * A friendly name for the resource server.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var scopes: js.UndefOr[js.Array[Description]] = js.native
+  var scopes: js.UndefOr[js.Array[Description]] = js.undefined
   
   /**
     * The algorithm used to sign tokens.
     */
-  var signing_alg: js.UndefOr[HS256 | RS256] = js.native
+  var signing_alg: js.UndefOr[HS256 | RS256] = js.undefined
   
   /**
     * The secret used to sign tokens when using symmetric algorithms.
     */
-  var signing_secret: js.UndefOr[String] = js.native
+  var signing_secret: js.UndefOr[String] = js.undefined
   
   /**
     * Flag this entity as capable of skipping consent.
     */
-  var skip_consent_for_verifiable_first_party_clients: js.UndefOr[Boolean] = js.native
+  var skip_consent_for_verifiable_first_party_clients: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The dialect for the access token.
     */
-  var token_dialect: js.UndefOr[access_token | access_token_authz] = js.native
+  var token_dialect: js.UndefOr[access_token | access_token_authz] = js.undefined
   
   /**
     * The amount of time (in seconds) that the token will be valid after being issued.
     */
-  var token_lifetime: js.UndefOr[Double] = js.native
+  var token_lifetime: js.UndefOr[Double] = js.undefined
   
   /**
     * The amount of time (in seconds) that the token will be valid after being issued from browser based flows. Value cannot be larger than token_lifetime..
     */
-  var token_lifetime_for_web: js.UndefOr[Double] = js.native
+  var token_lifetime_for_web: js.UndefOr[Double] = js.undefined
 }
 object ResourceServer {
   

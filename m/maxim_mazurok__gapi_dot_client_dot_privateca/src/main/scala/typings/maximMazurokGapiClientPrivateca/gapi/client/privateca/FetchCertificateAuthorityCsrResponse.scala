@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FetchCertificateAuthorityCsrResponse extends StObject {
   
   /** Output only. The PEM-encoded signed certificate signing request (CSR). */
-  var pemCsr: js.UndefOr[String] = js.native
+  var pemCsr: js.UndefOr[String] = js.undefined
 }
 object FetchCertificateAuthorityCsrResponse {
   

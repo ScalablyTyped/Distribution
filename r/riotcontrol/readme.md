@@ -11,7 +11,7 @@ Event Controller / Dispatcher For RiotJS, Inspired By Flux
 | Keywords           | riotjs, flux |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 3700 |
+| # downloads        | 4204 |
 | # stars            | 1 |
 
 ## Links

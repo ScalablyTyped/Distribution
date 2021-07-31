@@ -5,15 +5,16 @@ import typings.std.Error
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aggregateErrorMod {
   
   @JSImport("@ardatan/aggregate-error/AggregateError", "AggregateError")
   @js.native
-  class AggregateError protected () extends Error {
-    def this(errors: js.Array[Error | StringDictionary[_] | String]) = this()
+  class AggregateError protected ()
+    extends StObject
+       with Error {
+    def this(errors: js.Array[Error | StringDictionary[js.Any] | String]) = this()
     
     /**
       @param errors - If a string, a new `Error` is created with the string as the error message. If a non-Error object, a new `Error` is created with all properties from the object copied over.
@@ -50,5 +51,11 @@ object aggregateErrorMod {
       */
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[Error]] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
 }

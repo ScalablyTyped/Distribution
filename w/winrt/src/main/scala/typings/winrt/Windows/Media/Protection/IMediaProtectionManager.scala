@@ -3,19 +3,17 @@ package typings.winrt.Windows.Media.Protection
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMediaProtectionManager extends StObject {
   
-  var oncomponentloadfailed: js.Any = js.native
+  var oncomponentloadfailed: js.Any
   
-  var onrebootneeded: js.Any = js.native
+  var onrebootneeded: js.Any
   
-  var onservicerequested: js.Any = js.native
+  var onservicerequested: js.Any
   
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
 }
 object IMediaProtectionManager {
   

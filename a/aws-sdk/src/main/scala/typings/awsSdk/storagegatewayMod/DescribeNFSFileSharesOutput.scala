@@ -2,16 +2,14 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNFSFileSharesOutput extends StObject {
   
   /**
     * An array containing a description for each requested file share.
     */
-  var NFSFileShareInfoList: js.UndefOr[typings.awsSdk.storagegatewayMod.NFSFileShareInfoList] = js.native
+  var NFSFileShareInfoList: js.UndefOr[typings.awsSdk.storagegatewayMod.NFSFileShareInfoList] = js.undefined
 }
 object DescribeNFSFileSharesOutput {
   

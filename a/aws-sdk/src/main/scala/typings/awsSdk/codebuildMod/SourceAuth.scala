@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceAuth extends StObject {
   
   /**
     * The resource value that applies to the specified authorization type.
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /**
     *   This data type is deprecated and is no longer accurate or used.   The authorization type to use. The only valid value is OAUTH, which represents the OAuth authorization type.
     */
-  var `type`: SourceAuthType = js.native
+  var `type`: SourceAuthType
 }
 object SourceAuth {
   

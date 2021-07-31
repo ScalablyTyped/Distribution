@@ -2,13 +2,13 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayerConfig extends ObjectOptionsConfig {
+trait LayerConfig
+  extends StObject
+     with ObjectOptionsConfig {
   
-  var clearBeforeDraw: js.UndefOr[Boolean] = js.native
+  var clearBeforeDraw: js.UndefOr[Boolean] = js.undefined
 }
 object LayerConfig {
   

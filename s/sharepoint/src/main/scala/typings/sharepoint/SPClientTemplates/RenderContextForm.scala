@@ -3,25 +3,25 @@ package typings.sharepoint.SPClientTemplates
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenderContextForm extends RenderContext {
+trait RenderContextForm
+  extends StObject
+     with RenderContext {
   
-  var CSRCustomLayout: js.UndefOr[Boolean] = js.native
+  var CSRCustomLayout: js.UndefOr[Boolean] = js.undefined
   
-  var CurrentItem: Item = js.native
+  var CurrentItem: Item
   
-  var FieldControlModes: StringDictionary[ClientControlMode] = js.native
+  var FieldControlModes: StringDictionary[ClientControlMode]
   
-  var FormContext: ClientFormContext = js.native
+  var FormContext: ClientFormContext
   
-  var FormUniqueId: String = js.native
+  var FormUniqueId: String
   
-  var ListData: ListDataInForm = js.native
+  var ListData: ListDataInForm
   
-  var ListSchema: ListSchemaInForm = js.native
+  var ListSchema: ListSchemaInForm
 }
 object RenderContextForm {
   

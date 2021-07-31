@@ -4,17 +4,15 @@ import typings.rcTree.interfaceMod.EventDataNode
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expanded extends StObject {
   
-  var expanded: Boolean = js.native
+  var expanded: Boolean
   
-  var nativeEvent: MouseEvent = js.native
+  var nativeEvent: MouseEvent
   
-  var node: EventDataNode = js.native
+  var node: EventDataNode
 }
 object Expanded {
   

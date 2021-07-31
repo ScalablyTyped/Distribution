@@ -1,8 +1,8 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,7 +13,7 @@ trait EventSystem extends StObject {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def detachEvent(id: String): Unit = js.native
   
@@ -22,4 +22,9 @@ trait EventSystem extends StObject {
   def mapEvent(map: js.Any): Unit = js.native
   
   def unblockEvent(): Unit = js.native
+}
+object EventSystem {
+  
+  @scala.inline
+  def apply: EventSystem = ^.asInstanceOf[js.Dynamic].selectDynamic("EventSystem").asInstanceOf[EventSystem]
 }

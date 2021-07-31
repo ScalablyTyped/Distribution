@@ -2,26 +2,24 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodegroupScalingConfig extends StObject {
   
   /**
     * The current number of worker nodes that the managed node group should maintain.
     */
-  var desiredSize: js.UndefOr[Capacity] = js.native
+  var desiredSize: js.UndefOr[Capacity] = js.undefined
   
   /**
     * The maximum number of worker nodes that the managed node group can scale out to. Managed node groups can support up to 100 nodes by default.
     */
-  var maxSize: js.UndefOr[Capacity] = js.native
+  var maxSize: js.UndefOr[Capacity] = js.undefined
   
   /**
     * The minimum number of worker nodes that the managed node group can scale in to. This number must be greater than zero.
     */
-  var minSize: js.UndefOr[Capacity] = js.native
+  var minSize: js.UndefOr[Capacity] = js.undefined
 }
 object NodegroupScalingConfig {
   

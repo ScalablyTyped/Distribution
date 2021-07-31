@@ -5,11 +5,12 @@ import typings.vexflow.anon.Fret
 import typings.vexflow.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabNote extends StemmableNote {
+trait TabNote
+  extends StObject
+     with StemmableNote {
   
   def addDot(): TabNote = js.native
   

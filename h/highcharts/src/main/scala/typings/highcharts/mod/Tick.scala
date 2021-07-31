@@ -2,7 +2,6 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Tick")
@@ -28,24 +27,12 @@ class Tick protected () extends StObject {
     */
   def this(axis: Axis, pos: Double) = this()
   def this(axis: Axis, pos: Double, `type`: String) = this()
-  def this(axis: Axis, pos: Double, `type`: js.UndefOr[scala.Nothing], noLabel: Boolean) = this()
   def this(axis: Axis, pos: Double, `type`: String, noLabel: Boolean) = this()
-  def this(
-    axis: Axis,
-    pos: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    noLabel: js.UndefOr[scala.Nothing],
-    parameters: js.Object
-  ) = this()
-  def this(
-    axis: Axis,
-    pos: Double,
-    `type`: js.UndefOr[scala.Nothing],
-    noLabel: Boolean,
-    parameters: js.Object
-  ) = this()
-  def this(axis: Axis, pos: Double, `type`: String, noLabel: js.UndefOr[scala.Nothing], parameters: js.Object) = this()
+  def this(axis: Axis, pos: Double, `type`: Unit, noLabel: Boolean) = this()
   def this(axis: Axis, pos: Double, `type`: String, noLabel: Boolean, parameters: js.Object) = this()
+  def this(axis: Axis, pos: Double, `type`: String, noLabel: Unit, parameters: js.Object) = this()
+  def this(axis: Axis, pos: Double, `type`: Unit, noLabel: Boolean, parameters: js.Object) = this()
+  def this(axis: Axis, pos: Double, `type`: Unit, noLabel: Unit, parameters: js.Object) = this()
   
   /**
     * The related axis of the tick.

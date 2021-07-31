@@ -2,15 +2,13 @@ package typings.gulpHelpDoc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Log extends StObject {
     
-    var log: js.Function = js.native
+    var log: js.Function
   }
   object Log {
     

@@ -2,19 +2,18 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Ellipsoid")
 @js.native
 class Ellipsoid () extends Packable {
   def this(x: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+  def this(x: Unit, y: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
+  def this(x: Double, y: Unit, z: Double) = this()
+  def this(x: Unit, y: Double, z: Double) = this()
+  def this(x: Unit, y: Unit, z: Double) = this()
   
   def cartesianArrayToCartographicArray(cartesians: js.Array[Cartesian3]): js.Array[Cartographic] = js.native
   def cartesianArrayToCartographicArray(cartesians: js.Array[Cartesian3], result: js.Array[Cartographic]): js.Array[Cartographic] = js.native
@@ -96,32 +95,24 @@ object Ellipsoid {
   def WGS84_=(x: Ellipsoid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WGS84")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("cesium", "Ellipsoid.clone")
-  @js.native
-  def clone_(ellipsoid: Ellipsoid): Ellipsoid = js.native
-  @JSImport("cesium", "Ellipsoid.clone")
-  @js.native
-  def clone_(ellipsoid: Ellipsoid, result: Ellipsoid): Ellipsoid = js.native
+  @scala.inline
+  def clone_(ellipsoid: Ellipsoid): Ellipsoid = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(ellipsoid.asInstanceOf[js.Any]).asInstanceOf[Ellipsoid]
+  @scala.inline
+  def clone_(ellipsoid: Ellipsoid, result: Ellipsoid): Ellipsoid = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(ellipsoid.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Ellipsoid]
   
   /* static member */
-  @JSImport("cesium", "Ellipsoid.fromCartesian3")
-  @js.native
-  def fromCartesian3(): Ellipsoid = js.native
-  @JSImport("cesium", "Ellipsoid.fromCartesian3")
-  @js.native
-  def fromCartesian3(radii: Cartesian3): Ellipsoid = js.native
+  @scala.inline
+  def fromCartesian3(): Ellipsoid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian3")().asInstanceOf[Ellipsoid]
+  @scala.inline
+  def fromCartesian3(radii: Cartesian3): Ellipsoid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian3")(radii.asInstanceOf[js.Any]).asInstanceOf[Ellipsoid]
   
   /* static member */
-  @JSImport("cesium", "Ellipsoid.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): Ellipsoid = js.native
-  @JSImport("cesium", "Ellipsoid.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Ellipsoid): Ellipsoid = js.native
-  @JSImport("cesium", "Ellipsoid.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): Ellipsoid = js.native
-  @JSImport("cesium", "Ellipsoid.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: Ellipsoid): Ellipsoid = js.native
+  @scala.inline
+  def unpack(array: js.Array[Double]): Ellipsoid = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[Ellipsoid]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): Ellipsoid = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[Ellipsoid]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: Ellipsoid): Ellipsoid = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Ellipsoid]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: Ellipsoid): Ellipsoid = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Ellipsoid]
 }

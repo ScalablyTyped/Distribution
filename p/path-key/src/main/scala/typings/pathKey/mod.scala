@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.processMod.global.NodeJS.Platform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,12 +19,10 @@ object mod {
   	//=> '/usr/local/bin:/usr/bin:/bin'
   	```
   	*/
-  @JSImport("path-key", JSImport.Namespace)
-  @js.native
-  def apply(): String = js.native
-  @JSImport("path-key", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): String = js.native
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("path-key", JSImport.Namespace)
   @js.native
@@ -40,18 +37,17 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pathKey */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Use a custom environment variables object. Default: [`process.env`](https://nodejs.org/api/process.html#process_process_env).
     		*/
-    val env: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+    val env: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
     
     /**
     		Get the PATH key for a specific platform. Default: [`process.platform`](https://nodejs.org/api/process.html#process_process_platform).
     		*/
-    val platform: js.UndefOr[Platform] = js.native
+    val platform: js.UndefOr[Platform] = js.undefined
   }
   object Options {
     

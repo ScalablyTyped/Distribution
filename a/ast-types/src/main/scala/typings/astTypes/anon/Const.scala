@@ -7,25 +7,23 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TSEnumMemberKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Const extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var const: js.UndefOr[Boolean] = js.native
+  var const: js.UndefOr[Boolean] = js.undefined
   
-  var declare: js.UndefOr[Boolean] = js.native
+  var declare: js.UndefOr[Boolean] = js.undefined
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var initializer: js.UndefOr[ExpressionKind | Null] = js.native
+  var initializer: js.UndefOr[ExpressionKind | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var members: js.Array[TSEnumMemberKind] = js.native
+  var members: js.Array[TSEnumMemberKind]
 }
 object Const {
   

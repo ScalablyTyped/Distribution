@@ -2,27 +2,26 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Nth
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode {
   
-  var nth: AnPlusB | Identifier = js.native
+  var nth: AnPlusB | Identifier
   
-  var selector: SelectorList | Null = js.native
+  var selector: SelectorList | Null
   
   @JSName("type")
-  var type_Nth: typings.cssTree.cssTreeStrings.Nth = js.native
+  var type_Nth: typings.cssTree.cssTreeStrings.Nth
 }
 object Nth {
   
   @scala.inline
-  def apply(nth: AnPlusB | Identifier, `type`: typings.cssTree.cssTreeStrings.Nth): Nth = {
-    val __obj = js.Dynamic.literal(nth = nth.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(nth: AnPlusB | Identifier): Nth = {
+    val __obj = js.Dynamic.literal(nth = nth.asInstanceOf[js.Any], selector = null)
+    __obj.updateDynamic("type")("Nth")
     __obj.asInstanceOf[Nth]
   }
   

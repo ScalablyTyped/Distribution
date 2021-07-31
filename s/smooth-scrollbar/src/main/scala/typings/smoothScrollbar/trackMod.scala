@@ -3,25 +3,23 @@ package typings.smoothScrollbar
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trackMod {
   
-  @js.native
   trait ScrollbarThumb extends StObject {
     
-    def attachTo(track: HTMLElement): Unit = js.native
+    def attachTo(track: HTMLElement): Unit
     
-    var displaySize: Double = js.native
+    var displaySize: Double
     
-    val element: HTMLElement = js.native
+    val element: HTMLElement
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var realSize: Double = js.native
+    var realSize: Double
     
-    def update(scrollOffset: Double, containerSize: Double, pageSize: Double): Unit = js.native
+    def update(scrollOffset: Double, containerSize: Double, pageSize: Double): Unit
   }
   object ScrollbarThumb {
     
@@ -61,20 +59,19 @@ object trackMod {
     }
   }
   
-  @js.native
   trait ScrollbarTrack extends StObject {
     
-    def attachTo(container: HTMLElement): Unit = js.native
+    def attachTo(container: HTMLElement): Unit
     
-    val element: HTMLElement = js.native
+    val element: HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    val thumb: ScrollbarThumb = js.native
+    val thumb: ScrollbarThumb
     
-    def update(scrollOffset: Double, containerSize: Double, pageSize: Double): Unit = js.native
+    def update(scrollOffset: Double, containerSize: Double, pageSize: Double): Unit
   }
   object ScrollbarTrack {
     
@@ -114,16 +111,15 @@ object trackMod {
     }
   }
   
-  @js.native
   trait TrackController extends StObject {
     
-    def autoHideOnIdle(): Unit = js.native
+    def autoHideOnIdle(): Unit
     
-    def update(): Unit = js.native
+    def update(): Unit
     
-    val xAxis: ScrollbarTrack = js.native
+    val xAxis: ScrollbarTrack
     
-    val yAxis: ScrollbarTrack = js.native
+    val yAxis: ScrollbarTrack
   }
   object TrackController {
     

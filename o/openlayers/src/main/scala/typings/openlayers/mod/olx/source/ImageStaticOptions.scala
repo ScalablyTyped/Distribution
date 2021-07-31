@@ -10,27 +10,25 @@ import typings.openlayers.mod.Size
 import typings.openlayers.mod.olx.LogoOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageStaticOptions extends StObject {
   
-  var attributions: js.UndefOr[AttributionLike] = js.native
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var imageExtent: Extent_ = js.native
+  var imageExtent: Extent_
   
-  var imageLoadFunction: js.UndefOr[ImageLoadFunctionType] = js.native
+  var imageLoadFunction: js.UndefOr[ImageLoadFunctionType] = js.undefined
   
-  var imageSize: js.UndefOr[Size] = js.native
+  var imageSize: js.UndefOr[Size] = js.undefined
   
-  var logo: js.UndefOr[String | LogoOptions] = js.native
+  var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var projection: ProjectionLike = js.native
+  var projection: ProjectionLike
   
-  var url: String = js.native
+  var url: String
 }
 object ImageStaticOptions {
   

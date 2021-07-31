@@ -5,31 +5,29 @@ import typings.webpack.webpackStrings.error
 import typings.webpack.webpackStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerformanceOptions extends StObject {
   
   /**
   	 * Filter function to select assets that are checked
   	 */
-  var assetFilter: js.UndefOr[js.Function] = js.native
+  var assetFilter: js.UndefOr[js.Function] = js.undefined
   
   /**
   	 * Sets the format of the hints: warnings, errors or nothing at all
   	 */
-  var hints: js.UndefOr[`false` | warning | error] = js.native
+  var hints: js.UndefOr[`false` | warning | error] = js.undefined
   
   /**
   	 * Filesize limit (in bytes) when exceeded, that webpack will provide performance hints
   	 */
-  var maxAssetSize: js.UndefOr[Double] = js.native
+  var maxAssetSize: js.UndefOr[Double] = js.undefined
   
   /**
   	 * Total size of an entry point (in bytes)
   	 */
-  var maxEntrypointSize: js.UndefOr[Double] = js.native
+  var maxEntrypointSize: js.UndefOr[Double] = js.undefined
 }
 object PerformanceOptions {
   

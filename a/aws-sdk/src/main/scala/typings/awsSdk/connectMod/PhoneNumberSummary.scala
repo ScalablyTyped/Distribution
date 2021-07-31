@@ -2,36 +2,34 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneNumberSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the phone number.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the phone number.
     */
-  var Id: js.UndefOr[PhoneNumberId] = js.native
+  var Id: js.UndefOr[PhoneNumberId] = js.undefined
   
   /**
     * The phone number.
     */
-  var PhoneNumber: js.UndefOr[typings.awsSdk.connectMod.PhoneNumber] = js.native
+  var PhoneNumber: js.UndefOr[typings.awsSdk.connectMod.PhoneNumber] = js.undefined
   
   /**
     * The ISO country code.
     */
-  var PhoneNumberCountryCode: js.UndefOr[typings.awsSdk.connectMod.PhoneNumberCountryCode] = js.native
+  var PhoneNumberCountryCode: js.UndefOr[typings.awsSdk.connectMod.PhoneNumberCountryCode] = js.undefined
   
   /**
     * The type of phone number.
     */
-  var PhoneNumberType: js.UndefOr[typings.awsSdk.connectMod.PhoneNumberType] = js.native
+  var PhoneNumberType: js.UndefOr[typings.awsSdk.connectMod.PhoneNumberType] = js.undefined
 }
 object PhoneNumberSummary {
   

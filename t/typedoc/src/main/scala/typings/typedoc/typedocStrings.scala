@@ -3,7 +3,6 @@ package typings.typedoc
 import typings.typedoc.typescriptMod.IgnoredTsOptionKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typedocStrings {
@@ -34,17 +33,23 @@ object typedocStrings {
   def categoryOrder: categoryOrder = "categoryOrder".asInstanceOf[categoryOrder]
   
   @js.native
-  sealed trait declaration extends IgnoredTsOptionKeys
+  sealed trait declaration
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def declaration: declaration = "declaration".asInstanceOf[declaration]
   
   @js.native
-  sealed trait declarationDir extends IgnoredTsOptionKeys
+  sealed trait declarationDir
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def declarationDir: declarationDir = "declarationDir".asInstanceOf[declarationDir]
   
   @js.native
-  sealed trait declarationMap extends IgnoredTsOptionKeys
+  sealed trait declarationMap
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def declarationMap: declarationMap = "declarationMap".asInstanceOf[declarationMap]
   
@@ -69,7 +74,9 @@ object typedocStrings {
   def dts: dts = "dts".asInstanceOf[dts]
   
   @js.native
-  sealed trait emitDeclarationOnly extends IgnoredTsOptionKeys
+  sealed trait emitDeclarationOnly
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def emitDeclarationOnly: emitDeclarationOnly = "emitDeclarationOnly".asInstanceOf[emitDeclarationOnly]
   
@@ -144,7 +151,9 @@ object typedocStrings {
   def gitRevision: gitRevision = "gitRevision".asInstanceOf[gitRevision]
   
   @js.native
-  sealed trait help extends IgnoredTsOptionKeys
+  sealed trait help
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def help: help = "help".asInstanceOf[help]
   
@@ -174,12 +183,16 @@ object typedocStrings {
   def includes: includes = "includes".asInstanceOf[includes]
   
   @js.native
-  sealed trait incremental extends IgnoredTsOptionKeys
+  sealed trait incremental
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def incremental: incremental = "incremental".asInstanceOf[incremental]
   
   @js.native
-  sealed trait inlineSources extends IgnoredTsOptionKeys
+  sealed trait inlineSources
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def inlineSources: inlineSources = "inlineSources".asInstanceOf[inlineSources]
   
@@ -219,7 +232,9 @@ object typedocStrings {
   def logger: logger = "logger".asInstanceOf[logger]
   
   @js.native
-  sealed trait mapRoot extends IgnoredTsOptionKeys
+  sealed trait mapRoot
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def mapRoot: mapRoot = "mapRoot".asInstanceOf[mapRoot]
   
@@ -254,7 +269,9 @@ object typedocStrings {
   def options: options = "options".asInstanceOf[options]
   
   @js.native
-  sealed trait out extends IgnoredTsOptionKeys
+  sealed trait out
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def out: out = "out".asInstanceOf[out]
   
@@ -279,12 +296,16 @@ object typedocStrings {
   def readonly: readonly = "readonly".asInstanceOf[readonly]
   
   @js.native
-  sealed trait removeComments extends IgnoredTsOptionKeys
+  sealed trait removeComments
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def removeComments: removeComments = "removeComments".asInstanceOf[removeComments]
   
   @js.native
-  sealed trait sourceMap extends IgnoredTsOptionKeys
+  sealed trait sourceMap
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def sourceMap: sourceMap = "sourceMap".asInstanceOf[sourceMap]
   
@@ -304,7 +325,9 @@ object typedocStrings {
   def toc: toc = "toc".asInstanceOf[toc]
   
   @js.native
-  sealed trait tsBuildInfoFile extends IgnoredTsOptionKeys
+  sealed trait tsBuildInfoFile
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def tsBuildInfoFile: tsBuildInfoFile = "tsBuildInfoFile".asInstanceOf[tsBuildInfoFile]
   
@@ -319,12 +342,16 @@ object typedocStrings {
   def unique: unique = "unique".asInstanceOf[unique]
   
   @js.native
-  sealed trait version extends IgnoredTsOptionKeys
+  sealed trait version
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def version: version = "version".asInstanceOf[version]
   
   @js.native
-  sealed trait watch extends IgnoredTsOptionKeys
+  sealed trait watch
+    extends StObject
+       with IgnoredTsOptionKeys
   @scala.inline
   def watch: watch = "watch".asInstanceOf[watch]
 }

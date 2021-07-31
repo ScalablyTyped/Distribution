@@ -4,23 +4,26 @@ import typings.antd.modalModalMod.ModalFuncProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object confirmDialogMod {
   
-  @JSImport("antd/lib/modal/ConfirmDialog", JSImport.Default)
+  @JSImport("antd/lib/modal/ConfirmDialog", JSImport.Namespace)
   @js.native
-  def default(props: ConfirmDialogProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait ConfirmDialogProps extends ModalFuncProps {
+  @scala.inline
+  def default(props: ConfirmDialogProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  trait ConfirmDialogProps
+    extends StObject
+       with ModalFuncProps {
     
-    var afterClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def close(args: js.Any*): Unit = js.native
+    def close(args: js.Any*): Unit
     
-    var rootPrefixCls: js.UndefOr[String] = js.native
+    var rootPrefixCls: js.UndefOr[String] = js.undefined
   }
   object ConfirmDialogProps {
     

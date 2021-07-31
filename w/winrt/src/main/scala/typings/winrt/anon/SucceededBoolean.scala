@@ -2,15 +2,13 @@ package typings.winrt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SucceededBoolean extends StObject {
   
-  var succeeded: Boolean = js.native
+  var succeeded: Boolean
   
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object SucceededBoolean {
   

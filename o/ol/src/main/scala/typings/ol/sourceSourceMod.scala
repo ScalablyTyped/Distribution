@@ -5,7 +5,6 @@ import typings.ol.projMod.ProjectionLike
 import typings.ol.stateMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceSourceMod {
@@ -20,18 +19,17 @@ object sourceSourceMod {
   
   type AttributionLike = String | js.Array[String] | Attribution
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var attributionsCollapsible: js.UndefOr[Boolean] = js.native
+    var attributionsCollapsible: js.UndefOr[Boolean] = js.undefined
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var state: js.UndefOr[State] = js.native
+    var state: js.UndefOr[State] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartiallyResolved extends StObject {
   
-  var partiallyResolved: scala.Double = js.native
+  var partiallyResolved: scala.Double
   
-  var resolved: scala.Double = js.native
+  var resolved: scala.Double
   
-  var unresolved: scala.Double = js.native
+  var unresolved: scala.Double
 }
 object PartiallyResolved {
   

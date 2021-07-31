@@ -9,7 +9,6 @@ import typings.braintreeWeb.coreMod.callback
 import typings.std.HTMLIFrameElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object threeDSecureMod {
@@ -23,7 +22,7 @@ object threeDSecureMod {
     var VERSION: String = js.native
     
     def addFrameCallback(): Unit = js.native
-    def addFrameCallback(err: js.UndefOr[scala.Nothing], iframe: HTMLIFrameElement): Unit = js.native
+    def addFrameCallback(err: Unit, iframe: HTMLIFrameElement): Unit = js.native
     def addFrameCallback(err: BraintreeError): Unit = js.native
     def addFrameCallback(err: BraintreeError, iframe: HTMLIFrameElement): Unit = js.native
     
@@ -41,7 +40,7 @@ object threeDSecureMod {
       *   verifyPayload.liabilityShiftPossible; // boolean
       * });
       */
-    def cancelVerifyCard(callback: callback[_]): Unit = js.native
+    def cancelVerifyCard(callback: callback[js.Any]): Unit = js.native
     
     /**
       * braintree.threeDSecure.create({
@@ -49,7 +48,7 @@ object threeDSecureMod {
       * }, callback);
       */
     def create(options: Version): js.Promise[ThreeDSecure] = js.native
-    def create(options: Version, callback: callback[_]): Unit = js.native
+    def create(options: Version, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Gather the data needed for a 3D Secure lookup call.
@@ -68,7 +67,7 @@ object threeDSecureMod {
       * });
       */
     def prepareLookup(options: BinNonce): js.Promise[String] = js.native
-    def prepareLookup(options: BinNonce, callback: callback[_]): Unit = js.native
+    def prepareLookup(options: BinNonce, callback: callback[js.Any]): Unit = js.native
     
     /**
       * @description The callback used for options.removeFrame in {@link ThreeDSecure#verifyCard|verifyCard}.
@@ -79,7 +78,7 @@ object threeDSecureMod {
       * Cleanly tear down anything set up by {@link module:braintree-web/three-d-secure.create|create}
       */
     def teardown(): Unit = js.native
-    def teardown(callback: callback[_]): Unit = js.native
+    def teardown(callback: callback[js.Any]): Unit = js.native
     
     /**
       * Launch the 3D Secure login flow, returning a nonce payload.
@@ -119,15 +118,14 @@ object threeDSecureMod {
       * });
       */
     def verifyCard(options: AddFrame): js.Promise[ThreeDSecureVerifyPayload] = js.native
-    def verifyCard(options: RemoveFrame, callback: callback[_]): Unit = js.native
+    def verifyCard(options: RemoveFrame, callback: callback[js.Any]): Unit = js.native
   }
   
-  @js.native
   trait ThreeDSecureAccountDetails extends StObject {
     
-    var cardType: String = js.native
+    var cardType: String
     
-    var lastTwo: String = js.native
+    var lastTwo: String
   }
   object ThreeDSecureAccountDetails {
     
@@ -148,18 +146,17 @@ object threeDSecureMod {
     }
   }
   
-  @js.native
   trait ThreeDSecureVerifyPayload extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var details: ThreeDSecureAccountDetails = js.native
+    var details: ThreeDSecureAccountDetails
     
-    var liabilityShiftPossible: Boolean = js.native
+    var liabilityShiftPossible: Boolean
     
-    var liabilityShifted: Boolean = js.native
+    var liabilityShifted: Boolean
     
-    var nonce: String = js.native
+    var nonce: String
   }
   object ThreeDSecureVerifyPayload {
     

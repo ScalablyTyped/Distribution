@@ -2,15 +2,13 @@ package typings.reactVis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Horizontal extends StObject {
   
-  var horizontal: String = js.native
+  var horizontal: String
   
-  var vertical: String = js.native
+  var vertical: String
 }
 object Horizontal {
   

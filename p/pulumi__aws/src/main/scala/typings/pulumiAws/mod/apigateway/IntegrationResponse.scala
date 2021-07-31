@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "apigateway.IntegrationResponse")
@@ -27,6 +26,10 @@ class IntegrationResponse protected ()
 /* static members */
 object IntegrationResponse {
   
+  @JSImport("@pulumi/aws", "apigateway.IntegrationResponse")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get an existing IntegrationResponse resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -36,24 +39,19 @@ object IntegrationResponse {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @JSImport("@pulumi/aws", "apigateway.IntegrationResponse.get")
-  @js.native
-  def get(name: String, id: Input[ID]): typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse = js.native
-  @JSImport("@pulumi/aws", "apigateway.IntegrationResponse.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse = js.native
-  @JSImport("@pulumi/aws", "apigateway.IntegrationResponse.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: IntegrationResponseState): typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse = js.native
-  @JSImport("@pulumi/aws", "apigateway.IntegrationResponse.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: IntegrationResponseState, opts: CustomResourceOptions): typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse = js.native
+  @scala.inline
+  def get(name: String, id: Input[ID]): typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: IntegrationResponseState): typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: IntegrationResponseState, opts: CustomResourceOptions): typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.apigatewayIntegrationResponseMod.IntegrationResponse]
   
   /**
     * Returns true if the given object is an instance of IntegrationResponse.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @JSImport("@pulumi/aws", "apigateway.IntegrationResponse.isInstance")
-  @js.native
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/integrationResponse.IntegrationResponse */ Boolean = js.native
+  @scala.inline
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/integrationResponse.IntegrationResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/integrationResponse.IntegrationResponse */ Boolean]
 }

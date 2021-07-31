@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderWidthProps[TLength] extends StObject {
   
   val borderWidth: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BorderWidthProps {
   
@@ -23,12 +21,12 @@ object BorderWidthProps {
   }
   
   @scala.inline
-  implicit class BorderWidthPropsMutableBuilder[Self <: BorderWidthProps[_], TLength] (val x: Self with BorderWidthProps[TLength]) extends AnyVal {
+  implicit class BorderWidthPropsMutableBuilder[Self <: BorderWidthProps[?], TLength] (val x: Self & BorderWidthProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setBorderWidth(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object BorderWidthProps {
     def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def setBorderWidthVarargs(value: js.Any*): Self = StObject.set(x, "borderWidth", js.Array(value :_*))
+    def setBorderWidthVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "borderWidth", js.Array(value :_*))
   }
 }

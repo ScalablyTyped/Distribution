@@ -4,25 +4,25 @@ import typings.senchaTouch.Ext.mixin.IIdentifiable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object event {
   
   type IController = IBase
   
-  @js.native
-  trait IDispatcher extends IBase {
+  trait IDispatcher
+    extends StObject
+       with IBase {
     
     /** [Method] Returns the value of publishers
       * @returns Object
       */
-    var getPublishers: js.UndefOr[js.Function0[_]] = js.native
+    var getPublishers: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of publishers
       * @param publishers Object The new value.
       */
-    var setPublishers: js.UndefOr[js.Function1[/* publishers */ js.UndefOr[js.Any], Unit]] = js.native
+    var setPublishers: js.UndefOr[js.Function1[/* publishers */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IDispatcher {
     
@@ -36,7 +36,7 @@ object event {
     implicit class IDispatcherMutableBuilder[Self <: IDispatcher] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetPublishers(value: () => _): Self = StObject.set(x, "getPublishers", js.Any.fromFunction0(value))
+      def setGetPublishers(value: () => js.Any): Self = StObject.set(x, "getPublishers", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetPublishersUndefined: Self = StObject.set(x, "getPublishers", js.undefined)
@@ -49,21 +49,20 @@ object event {
     }
   }
   
-  @js.native
   trait IDom extends StObject {
     
     /** [Property] (Number) */
-    var distance: js.UndefOr[Double] = js.native
+    var distance: js.UndefOr[Double] = js.undefined
     
     /** [Method] Gets the x coordinate of the event
       * @returns Number
       */
-    var getPageX: js.UndefOr[js.Function0[Double]] = js.native
+    var getPageX: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Gets the y coordinate of the event
       * @returns Number
       */
-    var getPageY: js.UndefOr[js.Function0[Double]] = js.native
+    var getPageY: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Gets the target for the event
       * @param selector String A simple selector to filter the target or look for an ancestor of the target
@@ -78,29 +77,29 @@ object event {
           /* returnEl */ js.UndefOr[Boolean], 
           HTMLElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the time of the event
       * @returns Date
       */
-    var getTime: js.UndefOr[js.Function0[_]] = js.native
+    var getTime: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Gets the X and Y coordinates of the event
       * @returns Array
       */
-    var getXY: js.UndefOr[js.Function0[Array]] = js.native
+    var getXY: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Property] (Number) */
-    var pageX: js.UndefOr[Double] = js.native
+    var pageX: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var pageY: js.UndefOr[Double] = js.native
+    var pageY: js.UndefOr[Double] = js.undefined
     
     /** [Method] Prevents the browsers default handling of the event  */
-    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.native
+    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (HTMLElement) */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
   }
   object IDom {
     
@@ -140,7 +139,7 @@ object event {
       def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
       
       @scala.inline
-      def setGetTime(value: () => _): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+      def setGetTime(value: () => js.Any): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTimeUndefined: Self = StObject.set(x, "getTime", js.undefined)
@@ -177,35 +176,35 @@ object event {
     }
   }
   
-  @js.native
   trait IEvent
-    extends IBase
+    extends StObject
+       with IBase
        with IDom {
     
     /** [Property] (Number) */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var direction: js.UndefOr[Double] = js.native
+    var direction: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
     /** [Method] Stop the event preventDefault and stopPropagation
       * @returns Ext.event.Event this
       */
-    var stopEvent: js.UndefOr[js.Function0[this.type]] = js.native
+    var stopEvent: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Cancels bubbling of the event
       * @returns Ext.event.Event this
       */
-    var stopPropagation: js.UndefOr[js.Function0[this.type]] = js.native
+    var stopPropagation: js.UndefOr[js.Function0[this.type]] = js.undefined
   }
   object IEvent {
     
@@ -282,28 +281,29 @@ object event {
     
     type IPublisher = IBase
     
-    @js.native
-    trait ITouchGesture extends IBase {
+    trait ITouchGesture
+      extends StObject
+         with IBase {
       
       /** [Method] Returns the value of moveThrottle
         * @returns Number
         */
-      var getMoveThrottle: js.UndefOr[js.Function0[Double]] = js.native
+      var getMoveThrottle: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Method] Returns the value of recognizers
         * @returns Object
         */
-      var getRecognizers: js.UndefOr[js.Function0[_]] = js.native
+      var getRecognizers: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Sets the value of moveThrottle
         * @param moveThrottle Number The new value.
         */
-      var setMoveThrottle: js.UndefOr[js.Function1[/* moveThrottle */ js.UndefOr[Double], Unit]] = js.native
+      var setMoveThrottle: js.UndefOr[js.Function1[/* moveThrottle */ js.UndefOr[Double], Unit]] = js.undefined
       
       /** [Method] Sets the value of recognizers
         * @param recognizers Object The new value.
         */
-      var setRecognizers: js.UndefOr[js.Function1[/* recognizers */ js.UndefOr[js.Any], Unit]] = js.native
+      var setRecognizers: js.UndefOr[js.Function1[/* recognizers */ js.UndefOr[js.Any], Unit]] = js.undefined
     }
     object ITouchGesture {
       
@@ -323,7 +323,7 @@ object event {
         def setGetMoveThrottleUndefined: Self = StObject.set(x, "getMoveThrottle", js.undefined)
         
         @scala.inline
-        def setGetRecognizers(value: () => _): Self = StObject.set(x, "getRecognizers", js.Any.fromFunction0(value))
+        def setGetRecognizers(value: () => js.Any): Self = StObject.set(x, "getRecognizers", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetRecognizersUndefined: Self = StObject.set(x, "getRecognizers", js.undefined)
@@ -345,18 +345,19 @@ object event {
   
   object recognizer {
     
-    @js.native
-    trait IDoubleTap extends IRecognizer {
+    trait IDoubleTap
+      extends StObject
+         with IRecognizer {
       
       /** [Method] Returns the value of maxDuration
         * @returns Number
         */
-      var getMaxDuration: js.UndefOr[js.Function0[Double]] = js.native
+      var getMaxDuration: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Method] Sets the value of maxDuration
         * @param maxDuration Number The new value.
         */
-      var setMaxDuration: js.UndefOr[js.Function1[/* maxDuration */ js.UndefOr[Double], Unit]] = js.native
+      var setMaxDuration: js.UndefOr[js.Function1[/* maxDuration */ js.UndefOr[Double], Unit]] = js.undefined
     }
     object IDoubleTap {
       
@@ -383,21 +384,22 @@ object event {
       }
     }
     
-    @js.native
-    trait IDrag extends IRecognizer {
+    trait IDrag
+      extends StObject
+         with IRecognizer {
       
       /** [Method] Returns the value of minDistance
         * @returns Number
         */
-      var getMinDistance: js.UndefOr[js.Function0[Double]] = js.native
+      var getMinDistance: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Config Option] (Number) */
-      var minDistance: js.UndefOr[Double] = js.native
+      var minDistance: js.UndefOr[Double] = js.undefined
       
       /** [Method] Sets the value of minDistance
         * @param minDistance Number The new value.
         */
-      var setMinDistance: js.UndefOr[js.Function1[/* minDistance */ js.UndefOr[Double], Unit]] = js.native
+      var setMinDistance: js.UndefOr[js.Function1[/* minDistance */ js.UndefOr[Double], Unit]] = js.undefined
     }
     object IDrag {
       
@@ -430,8 +432,9 @@ object event {
       }
     }
     
-    @js.native
-    trait IEdgeSwipe extends ISwipe
+    trait IEdgeSwipe
+      extends StObject
+         with ISwipe
     object IEdgeSwipe {
       
       @scala.inline
@@ -443,18 +446,19 @@ object event {
     
     type IHorizontalSwipe = ISwipe
     
-    @js.native
-    trait ILongPress extends IRecognizer {
+    trait ILongPress
+      extends StObject
+         with IRecognizer {
       
       /** [Method] Returns the value of minDuration
         * @returns Number
         */
-      var getMinDuration: js.UndefOr[js.Function0[Double]] = js.native
+      var getMinDuration: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Method] Sets the value of minDuration
         * @param minDuration Number The new value.
         */
-      var setMinDuration: js.UndefOr[js.Function1[/* minDuration */ js.UndefOr[Double], Unit]] = js.native
+      var setMinDuration: js.UndefOr[js.Function1[/* minDuration */ js.UndefOr[Double], Unit]] = js.undefined
     }
     object ILongPress {
       
@@ -485,44 +489,45 @@ object event {
     
     type IPinch = IMultiTouch
     
-    @js.native
-    trait IRecognizer extends IIdentifiable {
+    trait IRecognizer
+      extends StObject
+         with IIdentifiable {
       
       /** [Method] Returns the value of callbackScope
         * @returns Object
         */
-      var getCallbackScope: js.UndefOr[js.Function0[_]] = js.native
+      var getCallbackScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Retrieves the id of this component
         * @returns String id
         */
       @JSName("getId")
-      var getId_IRecognizer: js.UndefOr[js.Function0[java.lang.String]] = js.native
+      var getId_IRecognizer: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
       
       /** [Method] Returns the value of onFailed
         * @returns Object
         */
-      var getOnFailed: js.UndefOr[js.Function0[_]] = js.native
+      var getOnFailed: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of onRecognized
         * @returns Object
         */
-      var getOnRecognized: js.UndefOr[js.Function0[_]] = js.native
+      var getOnRecognized: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Sets the value of callbackScope
         * @param callbackScope Object The new value.
         */
-      var setCallbackScope: js.UndefOr[js.Function1[/* callbackScope */ js.UndefOr[js.Any], Unit]] = js.native
+      var setCallbackScope: js.UndefOr[js.Function1[/* callbackScope */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of onFailed
         * @param onFailed Object The new value.
         */
-      var setOnFailed: js.UndefOr[js.Function1[/* onFailed */ js.UndefOr[js.Any], Unit]] = js.native
+      var setOnFailed: js.UndefOr[js.Function1[/* onFailed */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of onRecognized
         * @param onRecognized Object The new value.
         */
-      var setOnRecognized: js.UndefOr[js.Function1[/* onRecognized */ js.UndefOr[js.Any], Unit]] = js.native
+      var setOnRecognized: js.UndefOr[js.Function1[/* onRecognized */ js.UndefOr[js.Any], Unit]] = js.undefined
     }
     object IRecognizer {
       
@@ -536,7 +541,7 @@ object event {
       implicit class IRecognizerMutableBuilder[Self <: IRecognizer] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setGetCallbackScope(value: () => _): Self = StObject.set(x, "getCallbackScope", js.Any.fromFunction0(value))
+        def setGetCallbackScope(value: () => js.Any): Self = StObject.set(x, "getCallbackScope", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetCallbackScopeUndefined: Self = StObject.set(x, "getCallbackScope", js.undefined)
@@ -548,13 +553,13 @@ object event {
         def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
         
         @scala.inline
-        def setGetOnFailed(value: () => _): Self = StObject.set(x, "getOnFailed", js.Any.fromFunction0(value))
+        def setGetOnFailed(value: () => js.Any): Self = StObject.set(x, "getOnFailed", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetOnFailedUndefined: Self = StObject.set(x, "getOnFailed", js.undefined)
         
         @scala.inline
-        def setGetOnRecognized(value: () => _): Self = StObject.set(x, "getOnRecognized", js.Any.fromFunction0(value))
+        def setGetOnRecognized(value: () => js.Any): Self = StObject.set(x, "getOnRecognized", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetOnRecognizedUndefined: Self = StObject.set(x, "getOnRecognized", js.undefined)
@@ -583,38 +588,39 @@ object event {
     
     type ISingleTouch = typings.senchaTouch.Ext.event.recognizer.ITouch
     
-    @js.native
-    trait ISwipe extends IRecognizer {
+    trait ISwipe
+      extends StObject
+         with IRecognizer {
       
       /** [Method] Returns the value of maxDuration
         * @returns Number
         */
-      var getMaxDuration: js.UndefOr[js.Function0[Double]] = js.native
+      var getMaxDuration: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Method] Returns the value of maxOffset
         * @returns Number
         */
-      var getMaxOffset: js.UndefOr[js.Function0[Double]] = js.native
+      var getMaxOffset: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Method] Returns the value of minDistance
         * @returns Number
         */
-      var getMinDistance: js.UndefOr[js.Function0[Double]] = js.native
+      var getMinDistance: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Method] Sets the value of maxDuration
         * @param maxDuration Number The new value.
         */
-      var setMaxDuration: js.UndefOr[js.Function1[/* maxDuration */ js.UndefOr[Double], Unit]] = js.native
+      var setMaxDuration: js.UndefOr[js.Function1[/* maxDuration */ js.UndefOr[Double], Unit]] = js.undefined
       
       /** [Method] Sets the value of maxOffset
         * @param maxOffset Number The new value.
         */
-      var setMaxOffset: js.UndefOr[js.Function1[/* maxOffset */ js.UndefOr[Double], Unit]] = js.native
+      var setMaxOffset: js.UndefOr[js.Function1[/* maxOffset */ js.UndefOr[Double], Unit]] = js.undefined
       
       /** [Method] Sets the value of minDistance
         * @param minDistance Number The new value.
         */
-      var setMinDistance: js.UndefOr[js.Function1[/* minDistance */ js.UndefOr[Double], Unit]] = js.native
+      var setMinDistance: js.UndefOr[js.Function1[/* minDistance */ js.UndefOr[Double], Unit]] = js.undefined
     }
     object ISwipe {
       
@@ -665,21 +671,22 @@ object event {
       }
     }
     
-    @js.native
-    trait ITap extends IRecognizer {
+    trait ITap
+      extends StObject
+         with IRecognizer {
       
       /** [Method] Returns the value of moveDistance
         * @returns Number
         */
-      var getMoveDistance: js.UndefOr[js.Function0[Double]] = js.native
+      var getMoveDistance: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Config Option] (Number) */
-      var moveDistance: js.UndefOr[Double] = js.native
+      var moveDistance: js.UndefOr[Double] = js.undefined
       
       /** [Method] Sets the value of moveDistance
         * @param moveDistance Number The new value.
         */
-      var setMoveDistance: js.UndefOr[js.Function1[/* moveDistance */ js.UndefOr[Double], Unit]] = js.native
+      var setMoveDistance: js.UndefOr[js.Function1[/* moveDistance */ js.UndefOr[Double], Unit]] = js.undefined
     }
     object ITap {
       

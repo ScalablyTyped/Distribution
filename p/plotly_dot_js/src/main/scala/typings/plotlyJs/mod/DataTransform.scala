@@ -8,34 +8,32 @@ import typings.plotlyJs.plotlyJsStrings.groupby
 import typings.plotlyJs.plotlyJsStrings.sort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Transform> */
-@js.native
 trait DataTransform extends StObject {
   
-  var aggregations: js.UndefOr[js.Array[TransformAggregation]] = js.native
+  var aggregations: js.UndefOr[js.Array[TransformAggregation]] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var groups: js.UndefOr[String | (js.Array[Double | String])] = js.native
+  var groups: js.UndefOr[String | (js.Array[Double | String])] = js.undefined
   
-  var nameformat: js.UndefOr[String] = js.native
+  var nameformat: js.UndefOr[String] = js.undefined
   
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
   
-  var order: js.UndefOr[ascending | descending] = js.native
+  var order: js.UndefOr[ascending | descending] = js.undefined
   
-  var preservegaps: js.UndefOr[Boolean] = js.native
+  var preservegaps: js.UndefOr[Boolean] = js.undefined
   
-  var styles: js.UndefOr[js.Array[TransformStyle]] = js.native
+  var styles: js.UndefOr[js.Array[TransformStyle]] = js.undefined
   
-  var target: js.UndefOr[Double | String | (js.Array[Double | String])] = js.native
+  var target: js.UndefOr[Double | String | (js.Array[Double | String])] = js.undefined
   
-  var `type`: js.UndefOr[aggregate | filter | groupby | sort] = js.native
+  var `type`: js.UndefOr[aggregate | filter | groupby | sort] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object DataTransform {
   

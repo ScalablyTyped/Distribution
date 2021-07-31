@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudAssetV1Resource extends StObject {
   
   /** The analysis state of this resource. */
-  var analysisState: js.UndefOr[IamPolicyAnalysisState] = js.native
+  var analysisState: js.UndefOr[IamPolicyAnalysisState] = js.undefined
   
   /** The [full resource name](https://cloud.google.com/asset-inventory/docs/resource-name-format) */
-  var fullResourceName: js.UndefOr[String] = js.native
+  var fullResourceName: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudAssetV1Resource {
   

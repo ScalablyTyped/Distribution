@@ -2,7 +2,6 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,23 +17,23 @@ trait IHTMLDocument2 extends StObject {
   var alinkColor: js.Any = js.native
   
   def all(): js.Any = js.native
-  def all(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def all(name: js.Any): js.Any = js.native
   def all(name: js.Any, index: js.Any): js.Any = js.native
+  def all(name: Unit, index: js.Any): js.Any = js.native
   @JSName("all")
   val all_Original: IHTMLElementCollection = js.native
   
   def anchors(): js.Any = js.native
-  def anchors(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def anchors(name: js.Any): js.Any = js.native
   def anchors(name: js.Any, index: js.Any): js.Any = js.native
+  def anchors(name: Unit, index: js.Any): js.Any = js.native
   @JSName("anchors")
   val anchors_Original: IHTMLElementCollection = js.native
   
   def applets(): js.Any = js.native
-  def applets(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def applets(name: js.Any): js.Any = js.native
   def applets(name: js.Any, index: js.Any): js.Any = js.native
+  def applets(name: Unit, index: js.Any): js.Any = js.native
   @JSName("applets")
   val applets_Original: IHTMLElementCollection = js.native
   
@@ -57,9 +56,9 @@ trait IHTMLDocument2 extends StObject {
     * @param lIndex [lIndex=-1]
     */
   def createStyleSheet(): IHTMLStyleSheet = js.native
-  def createStyleSheet(bstrHref: js.UndefOr[scala.Nothing], lIndex: Double): IHTMLStyleSheet = js.native
   def createStyleSheet(bstrHref: String): IHTMLStyleSheet = js.native
   def createStyleSheet(bstrHref: String, lIndex: Double): IHTMLStyleSheet = js.native
+  def createStyleSheet(bstrHref: Unit, lIndex: Double): IHTMLStyleSheet = js.native
   
   var defaultCharset: String = js.native
   
@@ -70,17 +69,17 @@ trait IHTMLDocument2 extends StObject {
   def elementFromPoint(x: Double, y: Double): IHTMLElement = js.native
   
   def embeds(): js.Any = js.native
-  def embeds(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def embeds(name: js.Any): js.Any = js.native
   def embeds(name: js.Any, index: js.Any): js.Any = js.native
+  def embeds(name: Unit, index: js.Any): js.Any = js.native
   @JSName("embeds")
   val embeds_Original: IHTMLElementCollection = js.native
   
   /** @param showUI [showUI=false] */
   def execCommand(cmdID: String): Boolean = js.native
-  def execCommand(cmdID: String, showUI: js.UndefOr[scala.Nothing], value: js.Any): Boolean = js.native
   def execCommand(cmdID: String, showUI: Boolean): Boolean = js.native
   def execCommand(cmdID: String, showUI: Boolean, value: js.Any): Boolean = js.native
+  def execCommand(cmdID: String, showUI: Unit, value: js.Any): Boolean = js.native
   
   def execCommandShowHelp(cmdID: String): Boolean = js.native
   
@@ -97,9 +96,9 @@ trait IHTMLDocument2 extends StObject {
   val fileUpdatedDate: String = js.native
   
   def forms(): js.Any = js.native
-  def forms(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def forms(name: js.Any): js.Any = js.native
   def forms(name: js.Any, index: js.Any): js.Any = js.native
+  def forms(name: Unit, index: js.Any): js.Any = js.native
   @JSName("forms")
   val forms_Original: IHTMLElementCollection = js.native
   
@@ -108,9 +107,9 @@ trait IHTMLDocument2 extends StObject {
   val frames_Original: FramesCollection = js.native
   
   def images(): js.Any = js.native
-  def images(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def images(name: js.Any): js.Any = js.native
   def images(name: js.Any, index: js.Any): js.Any = js.native
+  def images(name: Unit, index: js.Any): js.Any = js.native
   @JSName("images")
   val images_Original: IHTMLElementCollection = js.native
   
@@ -119,9 +118,9 @@ trait IHTMLDocument2 extends StObject {
   var linkColor: js.Any = js.native
   
   def links(): js.Any = js.native
-  def links(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def links(name: js.Any): js.Any = js.native
   def links(name: js.Any, index: js.Any): js.Any = js.native
+  def links(name: Unit, index: js.Any): js.Any = js.native
   @JSName("links")
   val links_Original: IHTMLElementCollection = js.native
   
@@ -171,35 +170,30 @@ trait IHTMLDocument2 extends StObject {
   
   /** @param url [url='text/html'] */
   def open(): js.Any = js.native
-  def open(
-    url: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    features: js.UndefOr[scala.Nothing],
-    replace: js.Any
-  ): js.Any = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], features: js.Any): js.Any = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], features: js.Any, replace: js.Any): js.Any = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: js.Any): js.Any = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: js.Any, features: js.UndefOr[scala.Nothing], replace: js.Any): js.Any = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: js.Any, features: js.Any): js.Any = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: js.Any, features: js.Any, replace: js.Any): js.Any = js.native
   def open(url: String): js.Any = js.native
-  def open(url: String, name: js.UndefOr[scala.Nothing], features: js.UndefOr[scala.Nothing], replace: js.Any): js.Any = js.native
-  def open(url: String, name: js.UndefOr[scala.Nothing], features: js.Any): js.Any = js.native
-  def open(url: String, name: js.UndefOr[scala.Nothing], features: js.Any, replace: js.Any): js.Any = js.native
   def open(url: String, name: js.Any): js.Any = js.native
-  def open(url: String, name: js.Any, features: js.UndefOr[scala.Nothing], replace: js.Any): js.Any = js.native
   def open(url: String, name: js.Any, features: js.Any): js.Any = js.native
   def open(url: String, name: js.Any, features: js.Any, replace: js.Any): js.Any = js.native
+  def open(url: String, name: js.Any, features: Unit, replace: js.Any): js.Any = js.native
+  def open(url: String, name: Unit, features: js.Any): js.Any = js.native
+  def open(url: String, name: Unit, features: js.Any, replace: js.Any): js.Any = js.native
+  def open(url: String, name: Unit, features: Unit, replace: js.Any): js.Any = js.native
+  def open(url: Unit, name: js.Any): js.Any = js.native
+  def open(url: Unit, name: js.Any, features: js.Any): js.Any = js.native
+  def open(url: Unit, name: js.Any, features: js.Any, replace: js.Any): js.Any = js.native
+  def open(url: Unit, name: js.Any, features: Unit, replace: js.Any): js.Any = js.native
+  def open(url: Unit, name: Unit, features: js.Any): js.Any = js.native
+  def open(url: Unit, name: Unit, features: js.Any, replace: js.Any): js.Any = js.native
+  def open(url: Unit, name: Unit, features: Unit, replace: js.Any): js.Any = js.native
   
   def parentWindow(pvarIndex: js.Any): js.Any = js.native
   @JSName("parentWindow")
   val parentWindow_Original: IHTMLWindow2 = js.native
   
   def plugins(): js.Any = js.native
-  def plugins(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def plugins(name: js.Any): js.Any = js.native
   def plugins(name: js.Any, index: js.Any): js.Any = js.native
+  def plugins(name: Unit, index: js.Any): js.Any = js.native
   @JSName("plugins")
   val plugins_Original: IHTMLElementCollection = js.native
   
@@ -222,9 +216,9 @@ trait IHTMLDocument2 extends StObject {
   val referrer: String = js.native
   
   def scripts(): js.Any = js.native
-  def scripts(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def scripts(name: js.Any): js.Any = js.native
   def scripts(name: js.Any, index: js.Any): js.Any = js.native
+  def scripts(name: Unit, index: js.Any): js.Any = js.native
   @JSName("scripts")
   val scripts_Original: IHTMLElementCollection = js.native
   

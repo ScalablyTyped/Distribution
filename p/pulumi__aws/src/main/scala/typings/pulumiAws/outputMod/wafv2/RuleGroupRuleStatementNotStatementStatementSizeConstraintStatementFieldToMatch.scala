@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatch extends StObject {
   
   /**
@@ -13,49 +11,49 @@ trait RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToM
     */
   var allQueryArguments: js.UndefOr[
     RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the request body, which immediately follows the request headers.
     */
   var body: js.UndefOr[
     RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchBody
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the HTTP method. The method indicates the type of operation that the request is asking the origin to perform.
     */
   var method: js.UndefOr[
     RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethod
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the query string. This is the part of a URL that appears after a `?` character, if any.
     */
   var queryString: js.UndefOr[
     RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryString
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect a single header. See Single Header below for details.
     */
   var singleHeader: js.UndefOr[
     RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect a single query argument. See Single Query Argument below for details.
     */
   var singleQueryArgument: js.UndefOr[
     RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the request URI path. This is the part of a web request that identifies a resource, for example, `/images/daily-ad.jpg`.
     */
   var uriPath: js.UndefOr[
     RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPath
-  ] = js.native
+  ] = js.undefined
 }
 object RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatch {
   

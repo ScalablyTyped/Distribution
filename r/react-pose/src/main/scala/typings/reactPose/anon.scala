@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Current extends StObject {
     
-    var current: js.Any = js.native
+    var current: js.Any
   }
   object Current {
     
@@ -30,13 +28,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
-    var withParent: js.UndefOr[Boolean] = js.native
+    var withParent: js.UndefOr[Boolean] = js.undefined
   }
   object Dictkey {
     
@@ -63,10 +61,9 @@ object anon {
     }
   }
   
-  @js.native
   trait FlipMove extends StObject {
     
-    var flipMove: Boolean = js.native
+    var flipMove: Boolean
   }
   object FlipMove {
     
@@ -85,18 +82,17 @@ object anon {
   }
   
   /* Inlined std.Partial<react-pose.react-pose/lib/components/Transition/types.State> */
-  @js.native
   trait PartialState extends StObject {
     
-    var displayedChildren: js.UndefOr[js.Array[ReactElement]] = js.native
+    var displayedChildren: js.UndefOr[js.Array[ReactElement]] = js.undefined
     
-    var finishedLeaving: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var finishedLeaving: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var hasInitialized: js.UndefOr[Boolean] = js.native
+    var hasInitialized: js.UndefOr[Boolean] = js.undefined
     
-    var indexedChildren: js.UndefOr[StringDictionary[ReactElement]] = js.native
+    var indexedChildren: js.UndefOr[StringDictionary[ReactElement]] = js.undefined
     
-    var scheduleChildRemoval: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.native
+    var scheduleChildRemoval: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
   }
   object PartialState {
     

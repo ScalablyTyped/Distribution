@@ -1,8 +1,8 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,7 +13,7 @@ trait TreeAPI extends StObject {
   
   def closeAll(): Unit = js.native
   
-  def getOpenItems(): js.Array[_] = js.native
+  def getOpenItems(): js.Array[js.Any] = js.native
   
   def getState(): js.Any = js.native
   
@@ -28,4 +28,9 @@ trait TreeAPI extends StObject {
   def openAll(): Unit = js.native
   
   def setState(state: js.Any): Unit = js.native
+}
+object TreeAPI {
+  
+  @scala.inline
+  def apply: TreeAPI = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeAPI").asInstanceOf[TreeAPI]
 }

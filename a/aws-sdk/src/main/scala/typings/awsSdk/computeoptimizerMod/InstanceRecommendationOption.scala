@@ -2,31 +2,29 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceRecommendationOption extends StObject {
   
   /**
     * The instance type of the instance recommendation.
     */
-  var instanceType: js.UndefOr[InstanceType] = js.native
+  var instanceType: js.UndefOr[InstanceType] = js.undefined
   
   /**
     * The performance risk of the instance recommendation option. Performance risk is the likelihood of the recommended instance type not meeting the performance requirement of your workload. The lowest performance risk is categorized as 0, and the highest as 5.
     */
-  var performanceRisk: js.UndefOr[PerformanceRisk] = js.native
+  var performanceRisk: js.UndefOr[PerformanceRisk] = js.undefined
   
   /**
     * An array of objects that describe the projected utilization metrics of the instance recommendation option.  The Cpu and Memory metrics are the only projected utilization metrics returned. Additionally, the Memory metric is returned only for resources that have the unified CloudWatch agent installed on them. For more information, see Enabling Memory Utilization with the CloudWatch Agent. 
     */
-  var projectedUtilizationMetrics: js.UndefOr[ProjectedUtilizationMetrics] = js.native
+  var projectedUtilizationMetrics: js.UndefOr[ProjectedUtilizationMetrics] = js.undefined
   
   /**
     * The rank of the instance recommendation option. The top recommendation option is ranked as 1.
     */
-  var rank: js.UndefOr[Rank] = js.native
+  var rank: js.UndefOr[Rank] = js.undefined
 }
 object InstanceRecommendationOption {
   

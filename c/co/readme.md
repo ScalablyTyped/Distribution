@@ -11,8 +11,8 @@ generator async control flow goodness
 | Full name          | co |
 | Keywords           | async, flow, generator, coro, coroutine |
 | # releases         | 0 |
-| # dependents       | 4161 |
-| # downloads        | 510659741 |
+| # dependents       | 4235 |
+| # downloads        | 561747385 |
 | # stars            | 233 |
 
 ## Links

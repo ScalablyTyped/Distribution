@@ -2,33 +2,31 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountId extends StObject {
   
-  var accountId: String = js.native
+  var accountId: String
   
-  var apiId: String = js.native
+  var apiId: String
   
-  var authorizer: js.UndefOr[Jwt] = js.native
+  var authorizer: js.UndefOr[Jwt] = js.undefined
   
-  var domainName: String = js.native
+  var domainName: String
   
-  var domainPrefix: String = js.native
+  var domainPrefix: String
   
-  var http: Method = js.native
+  var http: Method
   
-  var requestId: String = js.native
+  var requestId: String
   
-  var routeKey: String = js.native
+  var routeKey: String
   
-  var stage: String = js.native
+  var stage: String
   
-  var time: String = js.native
+  var time: String
   
-  var timeEpoch: Double = js.native
+  var timeEpoch: Double
 }
 object AccountId {
   

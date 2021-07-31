@@ -10,9 +10,9 @@ Pretty Textarea react component used in used in ant.design
 | ------------------ | :-------------: |
 | Full name          | rc-textarea |
 | Keywords           | react, react-component, react-textarea, textarea, antd, ant-design |
-| # releases         | 9 |
-| # dependents       | 18 |
-| # downloads        | 1725315 |
+| # releases         | 13 |
+| # dependents       | 26 |
+| # downloads        | 5476673 |
 | # stars            | 0 |
 
 ## Links

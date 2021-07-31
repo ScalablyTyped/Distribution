@@ -2,31 +2,29 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemTypeUpdateModel extends StObject {
   
   /**
     * Color of the work item type
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Description of the work item type
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Icon of the work item type
     */
-  var icon: String = js.native
+  var icon: String
   
   /**
     * Is the workitem type to be disabled
     */
-  var isDisabled: Boolean = js.native
+  var isDisabled: Boolean
 }
 object WorkItemTypeUpdateModel {
   

@@ -18,7 +18,6 @@ import typings.std.Error
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -203,7 +202,7 @@ object mod {
     
     var options: Options = js.native
     
-    var pkg: PlainObject[_] = js.native
+    var pkg: PlainObject[js.Any] = js.native
     
     var plugins: Plugins = js.native
     
@@ -214,7 +213,8 @@ object mod {
   
   @js.native
   trait ContextLoader
-    extends /**
+    extends StObject
+       with /**
     * Same as {@link FileLoader}, but it will attach file to `inject[fieldClass]`. The exports will be lazy loaded, such as `ctx.group.repository`.
     * @extends FileLoader
     * @since 1.0.0
@@ -224,36 +224,35 @@ object mod {
   type ContextLoaderBase = FileLoaderBase
   
   /* Inlined parent std.Partial<egg-core.egg-core.FileLoaderOption> */
-  @js.native
   trait ContextLoaderOption extends StObject {
     
-    var call: js.UndefOr[Boolean] = js.native
+    var call: js.UndefOr[Boolean] = js.undefined
     
-    var caseStyle: js.UndefOr[String | (js.Function1[/* str */ String, js.Array[String]])] = js.native
+    var caseStyle: js.UndefOr[String | (js.Function1[/* str */ String, js.Array[String]])] = js.undefined
     
     /** directories to be loaded */
-    var directory: String | js.Array[String] = js.native
+    var directory: String | js.Array[String]
     
     /** determine the field name of inject object. */
-    var fieldClass: js.UndefOr[String] = js.native
+    var fieldClass: js.UndefOr[String] = js.undefined
     
-    var filter: js.UndefOr[js.Function1[/* obj */ js.Object, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* obj */ js.Object, Boolean]] = js.undefined
     
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, _]] = js.native
+    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, js.Any]] = js.undefined
     
     /** required inject */
-    var inject: js.Object = js.native
+    var inject: js.Object
     
-    var `match`: js.UndefOr[String | js.Array[String]] = js.native
+    var `match`: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var `override`: js.UndefOr[Boolean] = js.native
+    var `override`: js.UndefOr[Boolean] = js.undefined
     
     /** property name defined to target */
-    var property: String = js.native
+    var property: String
     
-    var target: js.UndefOr[js.Object] = js.native
+    var target: js.UndefOr[js.Object] = js.undefined
   }
   object ContextLoaderOption {
     
@@ -309,7 +308,7 @@ object mod {
       def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
       @scala.inline
-      def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => _): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+      def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
@@ -343,31 +342,30 @@ object mod {
     }
   }
   
-  @js.native
   trait EggAppInfo extends StObject {
     
     /** home directory of the OS */
-    var HOME: String = js.native
+    var HOME: String
     
     /** current directory of application */
-    var baseDir: String = js.native
+    var baseDir: String
     
     /** equals to serverEnv */
-    var env: String = js.native
+    var env: String
     
     /** the application name from package.json */
-    var name: String = js.native
+    var name: String
     
     /** package.json */
-    var pkg: PlainObject[_] = js.native
+    var pkg: PlainObject[js.Any]
     
     /** baseDir when local and unittest, HOME when other environment */
-    var root: String = js.native
+    var root: String
   }
   object EggAppInfo {
     
     @scala.inline
-    def apply(HOME: String, baseDir: String, env: String, name: String, pkg: PlainObject[_], root: String): EggAppInfo = {
+    def apply(HOME: String, baseDir: String, env: String, name: String, pkg: PlainObject[js.Any], root: String): EggAppInfo = {
       val __obj = js.Dynamic.literal(HOME = HOME.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pkg = pkg.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[EggAppInfo]
     }
@@ -388,7 +386,7 @@ object mod {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPkg(value: PlainObject[_]): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+      def setPkg(value: PlainObject[js.Any]): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
@@ -427,7 +425,7 @@ object mod {
       * @return {Promise} promise
       * @since 1.0.0
       */
-    def close(): js.Promise[_] = js.native
+    def close(): js.Promise[js.Any] = js.native
     
     /**
       * The configuration of application
@@ -552,20 +550,19 @@ object mod {
     var `type`: EggType = js.native
   }
   
-  @js.native
   trait EggCoreOptions extends StObject {
     
     /** the directory of application */
-    var baseDir: js.UndefOr[String] = js.native
+    var baseDir: js.UndefOr[String] = js.undefined
     
     /** custom plugins */
-    var plugins: js.UndefOr[Plugins] = js.native
+    var plugins: js.UndefOr[Plugins] = js.undefined
     
     /** server scope */
-    var serverScope: js.UndefOr[String] = js.native
+    var serverScope: js.UndefOr[String] = js.undefined
     
     /** egg type, application or agent */
-    var `type`: js.UndefOr[EggType] = js.native
+    var `type`: js.UndefOr[EggType] = js.undefined
   }
   object EggCoreOptions {
     
@@ -604,28 +601,27 @@ object mod {
     }
   }
   
-  @js.native
   trait EggLoaderOptions extends StObject {
     
     /** Application instance */
-    var app: EggCore[PlainObject[_]] = js.native
+    var app: EggCore[PlainObject[js.Any]]
     
     /** the directory of application */
-    var baseDir: String = js.native
+    var baseDir: String
     
     /** egg logger */
-    var logger: Logger[LoggerOptions] = js.native
+    var logger: Logger[LoggerOptions]
     
     /** custom plugins */
-    var plugins: js.UndefOr[Plugins] = js.native
+    var plugins: js.UndefOr[Plugins] = js.undefined
     
     /** server scope */
-    var serverScope: js.UndefOr[String] = js.native
+    var serverScope: js.UndefOr[String] = js.undefined
   }
   object EggLoaderOptions {
     
     @scala.inline
-    def apply(app: EggCore[PlainObject[_]], baseDir: String, logger: Logger[LoggerOptions]): EggLoaderOptions = {
+    def apply(app: EggCore[PlainObject[js.Any]], baseDir: String, logger: Logger[LoggerOptions]): EggLoaderOptions = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any])
       __obj.asInstanceOf[EggLoaderOptions]
     }
@@ -634,7 +630,7 @@ object mod {
     implicit class EggLoaderOptionsMutableBuilder[Self <: EggLoaderOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setApp(value: EggCore[PlainObject[_]]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      def setApp(value: EggCore[PlainObject[js.Any]]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
@@ -672,13 +668,13 @@ object mod {
   
   @js.native
   trait FileLoader
-    extends /**
+    extends StObject
+       with /**
     * Load files from directory to target object.
     * @since 1.0.0
     */
   Instantiable1[/* options */ FileLoaderOption, FileLoaderBase]
   
-  @js.native
   trait FileLoaderBase extends StObject {
     
     /**
@@ -687,7 +683,7 @@ object mod {
       * @return {Object} target
       * @since 1.0.0
       */
-    def load(): js.Object = js.native
+    def load(): js.Object
     
     /**
       * Parse files from given directories, then return an items list, each item contains properties and exports.
@@ -715,7 +711,7 @@ object mod {
       * @return {Array} items
       * @since 1.0.0
       */
-    def parse(): js.Array[Exports] = js.native
+    def parse(): js.Array[Exports]
   }
   object FileLoaderBase {
     
@@ -736,38 +732,37 @@ object mod {
     }
   }
   
-  @js.native
   trait FileLoaderOption extends StObject {
     
     /** determine whether invoke when exports is function */
-    var call: js.UndefOr[Boolean] = js.native
+    var call: js.UndefOr[Boolean] = js.undefined
     
     /** set property's case when converting a filepath to property list. */
-    var caseStyle: js.UndefOr[String | (js.Function1[/* str */ String, js.Array[String]])] = js.native
+    var caseStyle: js.UndefOr[String | (js.Function1[/* str */ String, js.Array[String]])] = js.undefined
     
     /** directories to be loaded */
-    var directory: String | js.Array[String] = js.native
+    var directory: String | js.Array[String]
     
     /** a function that filter the exports which can be loaded */
-    var filter: js.UndefOr[js.Function1[/* obj */ js.Object, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* obj */ js.Object, Boolean]] = js.undefined
     
     /** ignore the files when load, support glob */
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** custom file exports, receive two parameters, first is the inject object(if not js file, will be content buffer), second is an `options` object that contain `path` */
-    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, _]] = js.native
+    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, js.Any]] = js.undefined
     
     /** an object that be the argument when invoke the function */
-    var inject: js.UndefOr[js.Object] = js.native
+    var inject: js.UndefOr[js.Object] = js.undefined
     
     /** match the files when load, support glob, default to all js files */
-    var `match`: js.UndefOr[String | js.Array[String]] = js.native
+    var `match`: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** determine whether override the property when get the same name */
-    var `override`: js.UndefOr[Boolean] = js.native
+    var `override`: js.UndefOr[Boolean] = js.undefined
     
     /** attach the target object from loaded files */
-    var target: js.Object = js.native
+    var target: js.Object
   }
   object FileLoaderOption {
     
@@ -817,7 +812,7 @@ object mod {
       def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
       @scala.inline
-      def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => _): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+      def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
@@ -850,33 +845,32 @@ object mod {
   
   type PlainObject[T] = StringDictionary[T]
   
-  @js.native
   trait PluginInfo extends StObject {
     
     /** the package name of plugin */
     @JSName("package")
-    var _package: String = js.native
+    var _package: String
     
     /** the dependent plugins, you can use the plugin name */
-    var dependencies: js.Array[String] = js.native
+    var dependencies: js.Array[String]
     
     /** whether enabled */
-    var enable: Boolean = js.native
+    var enable: Boolean
     
     /** specify the serverEnv that only enable the plugin in it */
-    var env: js.Array[String] = js.native
+    var env: js.Array[String]
     
     /** the file plugin config in. */
-    var from: String = js.native
+    var from: String
     
     /** the plugin name, it can be used in `dep` */
-    var name: String = js.native
+    var name: String
     
     /** the optional dependent plugins. */
-    var optionalDependencies: js.Array[String] = js.native
+    var optionalDependencies: js.Array[String]
     
     /** the directory of the plugin package */
-    var path: String = js.native
+    var path: String
   }
   object PluginInfo {
     

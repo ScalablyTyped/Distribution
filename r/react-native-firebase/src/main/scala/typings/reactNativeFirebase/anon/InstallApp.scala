@@ -2,17 +2,15 @@ package typings.reactNativeFirebase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstallApp extends StObject {
   
-  var installApp: js.UndefOr[Boolean] = js.native
+  var installApp: js.UndefOr[Boolean] = js.undefined
   
-  var minimumVersion: js.UndefOr[String] = js.native
+  var minimumVersion: js.UndefOr[String] = js.undefined
   
-  var packageName: String = js.native
+  var packageName: String
 }
 object InstallApp {
   

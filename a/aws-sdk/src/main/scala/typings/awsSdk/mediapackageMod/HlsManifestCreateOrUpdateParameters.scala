@@ -2,10 +2,8 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HlsManifestCreateOrUpdateParameters extends StObject {
   
   /**
@@ -19,38 +17,38 @@ trait HlsManifestCreateOrUpdateParameters extends StObject {
   in HLS and CMAF manifests. For this option, you must set a programDateTimeIntervalSeconds value 
   that is greater than 0.
     */
-  var AdMarkers: js.UndefOr[typings.awsSdk.mediapackageMod.AdMarkers] = js.native
+  var AdMarkers: js.UndefOr[typings.awsSdk.mediapackageMod.AdMarkers] = js.undefined
   
-  var AdTriggers: js.UndefOr[typings.awsSdk.mediapackageMod.AdTriggers] = js.native
+  var AdTriggers: js.UndefOr[typings.awsSdk.mediapackageMod.AdTriggers] = js.undefined
   
-  var AdsOnDeliveryRestrictions: js.UndefOr[typings.awsSdk.mediapackageMod.AdsOnDeliveryRestrictions] = js.native
+  var AdsOnDeliveryRestrictions: js.UndefOr[typings.awsSdk.mediapackageMod.AdsOnDeliveryRestrictions] = js.undefined
   
   /**
     * The ID of the manifest. The ID must be unique within the OriginEndpoint and it cannot be changed after it is created.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * When enabled, an I-Frame only stream will be included in the output.
     */
-  var IncludeIframeOnlyStream: js.UndefOr[boolean] = js.native
+  var IncludeIframeOnlyStream: js.UndefOr[boolean] = js.undefined
   
   /**
     * An optional short string appended to the end of the OriginEndpoint URL. If not specified, defaults to the manifestName for the OriginEndpoint.
     */
-  var ManifestName: js.UndefOr[string] = js.native
+  var ManifestName: js.UndefOr[string] = js.undefined
   
   /**
     * The HTTP Live Streaming (HLS) playlist type.
   When either "EVENT" or "VOD" is specified, a corresponding EXT-X-PLAYLIST-TYPE
   entry will be included in the media playlist.
     */
-  var PlaylistType: js.UndefOr[typings.awsSdk.mediapackageMod.PlaylistType] = js.native
+  var PlaylistType: js.UndefOr[typings.awsSdk.mediapackageMod.PlaylistType] = js.undefined
   
   /**
     * Time window (in seconds) contained in each parent manifest.
     */
-  var PlaylistWindowSeconds: js.UndefOr[integer] = js.native
+  var PlaylistWindowSeconds: js.UndefOr[integer] = js.undefined
   
   /**
     * The interval (in seconds) between each EXT-X-PROGRAM-DATE-TIME tag
@@ -63,7 +61,7 @@ trait HlsManifestCreateOrUpdateParameters extends StObject {
   of this parameter, if any ID3 Timed Metadata is found in HTTP Live Streaming (HLS) input,
   it will be passed through to HLS output.
     */
-  var ProgramDateTimeIntervalSeconds: js.UndefOr[integer] = js.native
+  var ProgramDateTimeIntervalSeconds: js.UndefOr[integer] = js.undefined
 }
 object HlsManifestCreateOrUpdateParameters {
   

@@ -2,15 +2,13 @@ package typings.slackMock.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigOptions extends StObject {
   
-  var logLevel: js.UndefOr[String] = js.native
+  var logLevel: js.UndefOr[String] = js.undefined
   
-  var rtmPort: js.UndefOr[Double] = js.native
+  var rtmPort: js.UndefOr[Double] = js.undefined
 }
 object ConfigOptions {
   

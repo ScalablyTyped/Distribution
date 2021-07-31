@@ -3,22 +3,22 @@ package typings.reactMdForm.typesMod
 import typings.reactMdForm.reactMdFormStrings.minimum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SliderMinimumAction extends SliderAction {
+trait SliderMinimumAction
+  extends StObject
+     with SliderAction {
   
-  var min: Double = js.native
+  var min: Double
   
-  var `type`: minimum = js.native
+  var `type`: minimum
 }
 object SliderMinimumAction {
   
   @scala.inline
-  def apply(min: Double, `type`: minimum): SliderMinimumAction = {
+  def apply(min: Double): SliderMinimumAction = {
     val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("minimum")
     __obj.asInstanceOf[SliderMinimumAction]
   }
   

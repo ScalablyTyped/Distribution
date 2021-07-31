@@ -5,24 +5,24 @@ import typings.awsSdkClientGlacierNode.typesVaultNotificationConfigMod.Unmarshal
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetVaultNotificationsOutputMod {
   
-  @js.native
-  trait GetVaultNotificationsOutput extends _OutputTypesUnion {
+  trait GetVaultNotificationsOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Returns the notification configuration set on the vault.</p>
       */
-    var vaultNotificationConfig: js.UndefOr[UnmarshalledVaultNotificationConfig] = js.native
+    var vaultNotificationConfig: js.UndefOr[UnmarshalledVaultNotificationConfig] = js.undefined
   }
   object GetVaultNotificationsOutput {
     

@@ -13,10 +13,13 @@ import typings.reactColor.colorWrapMod.InjectedColorProps
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-color", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-color", "AlphaPicker")
   @js.native
@@ -47,12 +50,10 @@ object mod {
   class CompactPicker ()
     extends typings.reactColor.compactMod.default
   
-  @JSImport("react-color", "CustomPicker")
-  @js.native
-  def CustomPicker[A](component: ComponentClass[A with InjectedColorProps, ComponentState]): ComponentClass[A with ExportedColorProps, ComponentState] = js.native
-  @JSImport("react-color", "CustomPicker")
-  @js.native
-  def CustomPicker[A](component: StatelessComponent[A with InjectedColorProps]): ComponentClass[A with ExportedColorProps, ComponentState] = js.native
+  @scala.inline
+  def CustomPicker[A](component: ComponentClass[A & InjectedColorProps, ComponentState]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomPicker")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
+  @scala.inline
+  def CustomPicker[A](component: StatelessComponent[A & InjectedColorProps]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomPicker")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
   
   @JSImport("react-color", "GithubPicker")
   @js.native
@@ -103,18 +104,19 @@ object mod {
   
   type ColorChangeHandler = js.Function2[/* color */ ColorResult, /* event */ ChangeEvent[HTMLInputElement], Unit]
   
-  @js.native
-  trait ColorPickerProps[A] extends ClassAttributes[A] {
+  trait ColorPickerProps[A]
+    extends StObject
+       with ClassAttributes[A] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[Color] = js.native
+    var color: js.UndefOr[Color] = js.undefined
     
-    var onChange: js.UndefOr[ColorChangeHandler] = js.native
+    var onChange: js.UndefOr[ColorChangeHandler] = js.undefined
     
-    var onChangeComplete: js.UndefOr[ColorChangeHandler] = js.native
+    var onChangeComplete: js.UndefOr[ColorChangeHandler] = js.undefined
     
-    var styles: js.UndefOr[PartialClassesany] = js.native
+    var styles: js.UndefOr[PartialClassesany] = js.undefined
   }
   object ColorPickerProps {
     
@@ -125,7 +127,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ColorPickerPropsMutableBuilder[Self <: ColorPickerProps[_], A] (val x: Self with ColorPickerProps[A]) extends AnyVal {
+    implicit class ColorPickerPropsMutableBuilder[Self <: ColorPickerProps[?], A] (val x: Self & ColorPickerProps[A]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -159,14 +161,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ColorResult extends StObject {
     
-    var hex: String = js.native
+    var hex: String
     
-    var hsl: HSLColor = js.native
+    var hsl: HSLColor
     
-    var rgb: RGBColor = js.native
+    var rgb: RGBColor
   }
   object ColorResult {
     
@@ -190,18 +191,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait CustomPickerProps[A] extends ClassAttributes[A] {
+  trait CustomPickerProps[A]
+    extends StObject
+       with ClassAttributes[A] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[Color] = js.native
+    var color: js.UndefOr[Color] = js.undefined
     
-    var onChange: ColorChangeHandler = js.native
+    var onChange: ColorChangeHandler
     
-    var pointer: js.UndefOr[ReactNode] = js.native
+    var pointer: js.UndefOr[ReactNode] = js.undefined
     
-    var styles: js.UndefOr[PartialClassesany] = js.native
+    var styles: js.UndefOr[PartialClassesany] = js.undefined
   }
   object CustomPickerProps {
     
@@ -212,7 +214,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CustomPickerPropsMutableBuilder[Self <: CustomPickerProps[_], A] (val x: Self with CustomPickerProps[A]) extends AnyVal {
+    implicit class CustomPickerPropsMutableBuilder[Self <: CustomPickerProps[?], A] (val x: Self & CustomPickerProps[A]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -243,16 +245,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait HSLColor extends _Color {
+  trait HSLColor
+    extends StObject
+       with _Color {
     
-    var a: js.UndefOr[Double] = js.native
+    var a: js.UndefOr[Double] = js.undefined
     
-    var h: Double = js.native
+    var h: Double
     
-    var l: Double = js.native
+    var l: Double
     
-    var s: Double = js.native
+    var s: Double
   }
   object HSLColor {
     
@@ -282,16 +285,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait RGBColor extends _Color {
+  trait RGBColor
+    extends StObject
+       with _Color {
     
-    var a: js.UndefOr[Double] = js.native
+    var a: js.UndefOr[Double] = js.undefined
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object RGBColor {
     

@@ -5,83 +5,81 @@ import typings.gulpMinify.gulpMinifyNumbers.`32000`
 import typings.gulpMinify.gulpMinifyNumbers.`80`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Asciionly extends StObject {
     
     /**
       * Output ASCII-safe? (encodes Unicode characters as ASCII)
       */
-    var ascii_only: js.UndefOr[Boolean] = js.native
+    var ascii_only: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Beautify output?
       */
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use brackets every time?
       */
-    var bracketize: js.UndefOr[Boolean] = js.native
+    var bracketize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Output comments?
       */
-    var comments: js.UndefOr[Boolean] = js.native
+    var comments: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Beautify output?
       */
-    var ie_proof: js.UndefOr[Boolean] = js.native
+    var ie_proof: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indentation level (only when `beautify`)
       */
-    var indent_level: js.UndefOr[Double] = js.native
+    var indent_level: js.UndefOr[Double] = js.undefined
     
     /**
       * Start indentation on every line (only when `beautify`)
       */
-    var indent_start: js.UndefOr[Double] = js.native
+    var indent_start: js.UndefOr[Double] = js.undefined
     
     /**
       * Escape "</script"?
       */
-    var inline_script: js.UndefOr[Boolean] = js.native
+    var inline_script: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum line length (for non-beautified output)
       */
-    var max_line_len: js.UndefOr[`32000`] = js.native
+    var max_line_len: js.UndefOr[`32000`] = js.undefined
     
     /**
       * Quote all keys in object literals?
       */
-    var quote_keys: js.UndefOr[`false`] = js.native
+    var quote_keys: js.UndefOr[`false`] = js.undefined
     
     /**
       * Use semicolons to separate statements? (otherwise, newlines)
       */
-    var semicolons: js.UndefOr[Boolean] = js.native
+    var semicolons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Output a source map
       */
-    var source_map: js.UndefOr[Boolean] = js.native
+    var source_map: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Add a space after colon signs?
       */
-    var space_colon: js.UndefOr[Boolean] = js.native
+    var space_colon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Informative maximum line width (for beautified output)
       */
-    var width: js.UndefOr[`80`] = js.native
+    var width: js.UndefOr[`80`] = js.undefined
   }
   object Asciionly {
     
@@ -180,105 +178,104 @@ object anon {
     }
   }
   
-  @js.native
   trait Booleans extends StObject {
     
     /**
       * optimize boolean expressions
       */
-    var booleans: js.UndefOr[Boolean] = js.native
+    var booleans: js.UndefOr[Boolean] = js.undefined
     
     /**
       * try to cascade `right` into `left` in sequences
       */
-    var cascade: js.UndefOr[Boolean] = js.native
+    var cascade: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optimize comparisons
       */
-    var comparisons: js.UndefOr[Boolean] = js.native
+    var comparisons: js.UndefOr[Boolean] = js.undefined
     
     //
     /**
       * optimize if-s and conditional expressions
       */
-    var conditionals: js.UndefOr[Boolean] = js.native
+    var conditionals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * discard unreachable code
       */
-    var dead_code: js.UndefOr[Boolean] = js.native
+    var dead_code: js.UndefOr[Boolean] = js.undefined
     
     /**
       * discard “debugger” statements
       */
-    var drop_debugger: js.UndefOr[Boolean] = js.native
+    var drop_debugger: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optimize boolean expressions
       */
-    var evaluate: js.UndefOr[Boolean] = js.native
+    var evaluate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * global definitions
       */
-    var global_defs: js.UndefOr[js.Object] = js.native
+    var global_defs: js.UndefOr[js.Object] = js.undefined
     
     /**
       * hoist function declarations
       */
-    var hoist_funs: js.UndefOr[Boolean] = js.native
+    var hoist_funs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * hoist variable declarations
       */
-    var hoist_vars: js.UndefOr[Boolean] = js.native
+    var hoist_vars: js.UndefOr[Boolean] = js.undefined
     
     // hoist variable declarations
     /**
       * optimize if-s followed by return/continue
       */
-    var if_return: js.UndefOr[Boolean] = js.native
+    var if_return: js.UndefOr[Boolean] = js.undefined
     
     /**
       * join var declarations
       */
-    var join_vars: js.UndefOr[Boolean] = js.native
+    var join_vars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optimize loops
       */
-    var loops: js.UndefOr[Boolean] = js.native
+    var loops: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optimize property access?: a["foo"] → a.foo
       */
-    var properties: js.UndefOr[Boolean] = js.native
+    var properties: js.UndefOr[Boolean] = js.undefined
     
     /**
       * join consecutive statemets with the “comma operator”
       */
-    var sequences: js.UndefOr[Boolean] = js.native
+    var sequences: js.UndefOr[Boolean] = js.undefined
     
     /**
       * drop side-effect-free statements
       */
-    var side_effects: js.UndefOr[Boolean] = js.native
+    var side_effects: js.UndefOr[Boolean] = js.undefined
     
     /**
       * some unsafe optimizations (see below)
       */
-    var unsafe: js.UndefOr[Boolean] = js.native
+    var unsafe: js.UndefOr[Boolean] = js.undefined
     
     /**
       * drop unused variables/functions
       */
-    var unused: js.UndefOr[Boolean] = js.native
+    var unused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * warn about potentially dangerous optimizations/code
       */
-    var warnings: js.UndefOr[Boolean] = js.native
+    var warnings: js.UndefOr[Boolean] = js.undefined
   }
   object Booleans {
     
@@ -407,18 +404,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Min extends StObject {
     
     /**
       * The suffix string of the filenames that output minified files ends with or the regex expressions to be replaced with input filenames.
       */
-    var min: js.UndefOr[String | js.Array[String]] = js.native
+    var min: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The suffix string of the filenames that output source files ends with.
       */
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object Min {
     

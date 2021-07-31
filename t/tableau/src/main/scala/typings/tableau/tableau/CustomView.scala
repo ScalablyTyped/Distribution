@@ -2,38 +2,36 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomView extends StObject {
   
   /** Indicates whether the custom view is public or private. */
-  def getAdvertised(): Boolean = js.native
+  def getAdvertised(): Boolean
   
   /** Gets or sets whether this is the default custom view. */
-  def getDefault(): Boolean = js.native
+  def getDefault(): Boolean
   
   /** User-friendly name for the custom view */
-  def getName(): String = js.native
+  def getName(): String
   
   /** Gets the user that created the custom view. */
-  def getOwnerName(): String = js.native
+  def getOwnerName(): String
   
   /** Unique URL to load this view again. */
-  def getUrl(): String = js.native
+  def getUrl(): String
   
   /** Gets the Workbook to which this CustomView belongs. */
-  def getWorkbook(): Workbook = js.native
+  def getWorkbook(): Workbook
   
   /** After saveAsync() is called, the result of the getUrl method is no longer blank. */
-  def saveAsync(): js.Promise[CustomView] = js.native
+  def saveAsync(): js.Promise[CustomView]
   
   /** Indicates whether the custom view is public or private. */
-  def setAdvertised(bool: Boolean): Boolean = js.native
+  def setAdvertised(bool: Boolean): Boolean
   
   /** User-friendly name for the custom view */
-  def setName(name: String): String = js.native
+  def setName(name: String): String
 }
 object CustomView {
   

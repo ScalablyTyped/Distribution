@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property skinInstances - An array of SkinInstances contained in this model.
   * @property morphInstances - An array of MorphInstances contained in this model.
   */
-@js.native
 trait Model extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait Model extends StObject {
     * That means all in-scene models + the "base" one (asset.resource) which is created when the model is parsed.
     * It is recommended to use asset.unload() instead, which will also remove the model from the scene.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Generates the necessary internal data for a model to be
@@ -37,27 +35,27 @@ trait Model extends StObject {
     *     model.meshInstances[i].renderStyle = pc.RENDERSTYLE_WIREFRAME;
     * }
     */
-  def generateWireframe(): Unit = js.native
+  def generateWireframe(): Unit
   
   /**
     * The root node of the model's graph node hierarchy.
     */
-  var graph: GraphNode = js.native
+  var graph: GraphNode
   
   /**
     * An array of MeshInstances contained in this model.
     */
-  var meshInstances: js.Array[MeshInstance] = js.native
+  var meshInstances: js.Array[MeshInstance]
   
   /**
     * An array of MorphInstances contained in this model.
     */
-  var morphInstances: js.Array[MorphInstance] = js.native
+  var morphInstances: js.Array[MorphInstance]
   
   /**
     * An array of SkinInstances contained in this model.
     */
-  var skinInstances: js.Array[SkinInstance] = js.native
+  var skinInstances: js.Array[SkinInstance]
 }
 object Model {
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recorderStatusMod {
@@ -38,6 +37,10 @@ object recorderStatusMod {
   /* static members */
   object RecorderStatus {
     
+    @JSImport("@pulumi/aws/cfg/recorderStatus", "RecorderStatus")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RecorderStatus resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object recorderStatusMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cfg/recorderStatus", "RecorderStatus.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RecorderStatus = js.native
-    @JSImport("@pulumi/aws/cfg/recorderStatus", "RecorderStatus.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RecorderStatus = js.native
-    @JSImport("@pulumi/aws/cfg/recorderStatus", "RecorderStatus.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RecorderStatusState): RecorderStatus = js.native
-    @JSImport("@pulumi/aws/cfg/recorderStatus", "RecorderStatus.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RecorderStatusState, opts: CustomResourceOptions): RecorderStatus = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RecorderStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RecorderStatus]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RecorderStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RecorderStatus]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RecorderStatusState): RecorderStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RecorderStatus]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RecorderStatusState, opts: CustomResourceOptions): RecorderStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RecorderStatus]
     
     /**
       * Returns true if the given object is an instance of RecorderStatus.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cfg/recorderStatus", "RecorderStatus.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/recorderStatus.RecorderStatus */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/recorderStatus.RecorderStatus */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/recorderStatus.RecorderStatus */ Boolean]
   }
   
-  @js.native
   trait RecorderStatusArgs extends StObject {
     
     /**
       * Whether the configuration recorder should be enabled or disabled.
       */
-    val isEnabled: Input[Boolean] = js.native
+    val isEnabled: Input[Boolean]
     
     /**
       * The name of the recorder
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object RecorderStatusArgs {
     
@@ -104,18 +101,17 @@ object recorderStatusMod {
     }
   }
   
-  @js.native
   trait RecorderStatusState extends StObject {
     
     /**
       * Whether the configuration recorder should be enabled or disabled.
       */
-    val isEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val isEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the recorder
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object RecorderStatusState {
     

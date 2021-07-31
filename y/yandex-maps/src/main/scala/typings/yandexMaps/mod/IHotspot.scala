@@ -2,11 +2,11 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IHotspot extends IEventEmitter
+trait IHotspot
+  extends StObject
+     with IEventEmitter
 object IHotspot {
   
   @scala.inline

@@ -2,7 +2,6 @@ package typings.styledComponents
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.ComponentState
@@ -39,10 +38,13 @@ import typings.styledComponents.styledComponentsMod.WithOptionalTheme
 import typings.styledComponents.styledComponentsMod.WithThemeFnInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object nativeMod extends Shortcut {
+object nativeMod {
+  
+  @JSImport("styled-components/native", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("styled-components/native", JSImport.Default)
   @js.native
@@ -91,13 +93,11 @@ object nativeMod extends Shortcut {
   @js.native
   val css: ThemedCssFunction[DefaultTheme] = js.native
   
-  @JSImport("styled-components/native", "isStyledComponent")
-  @js.native
-  def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean = js.native
+  @scala.inline
+  def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStyledComponent")(target.asInstanceOf[js.Any]).asInstanceOf[/* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean]
   
-  @JSImport("styled-components/native", "useTheme")
-  @js.native
-  def useTheme(): DefaultTheme = js.native
+  @scala.inline
+  def useTheme(): DefaultTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[DefaultTheme]
   
   @JSImport("styled-components/native", "withTheme")
   @js.native
@@ -106,7 +106,9 @@ object nativeMod extends Shortcut {
   type AnyIfEmpty[T /* <: js.Object */] = T
   
   @js.native
-  trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemedBaseStyledInterface[AnyIfEmpty[T]] {
+  trait ReactNativeStyledInterface[T /* <: js.Object */]
+    extends StObject
+       with ReactNativeThemedBaseStyledInterface[AnyIfEmpty[T]] {
     
     var ActivityIndicator: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.ActivityIndicator], T] = js.native
     
@@ -208,35 +210,34 @@ object nativeMod extends Shortcut {
   @js.native
   trait ReactNativeThemedBaseStyledInterface[T /* <: js.Object */] extends StObject {
     
-    def apply[C /* <: ComponentType[_] */](
+    def apply[C /* <: ComponentType[js.Any] */](
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: C
     ): ThemedStyledFunction[C, T, js.Object, scala.Nothing] = js.native
   }
   
-  @js.native
   trait ReactNativeThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.Object */] extends StObject {
     
-    var default: ReactNativeStyledInterface[T] = js.native
+    var default: ReactNativeStyledInterface[T]
     
-    var ThemeConsumer: Consumer[T] = js.native
+    var ThemeConsumer: Consumer[T]
     
-    var ThemeContext: Context[T] = js.native
+    var ThemeContext: Context[T]
     
-    var ThemeProvider: ThemeProviderComponent[T, U] = js.native
+    var ThemeProvider: ThemeProviderComponent[T, U]
     
-    var css: ThemedCssFunction[T] = js.native
+    var css: ThemedCssFunction[T]
     
     // This could be made to assert `target is StyledComponent<any, T>` instead, but that feels not type safe
     var isStyledComponent: js.Function1[
         /* target */ js.Any, 
         /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean
-      ] = js.native
+      ]
     
-    def useTheme(): T = js.native
+    def useTheme(): T
     
-    var withTheme: WithThemeFnInterface[T] = js.native
+    var withTheme: WithThemeFnInterface[T]
   }
   object ReactNativeThemedStyledComponentsModule {
     
@@ -261,7 +262,7 @@ object nativeMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class ReactNativeThemedStyledComponentsModuleMutableBuilder[Self <: ReactNativeThemedStyledComponentsModule[_, _], T /* <: js.Object */, U /* <: js.Object */] (val x: Self with (ReactNativeThemedStyledComponentsModule[T, U])) extends AnyVal {
+    implicit class ReactNativeThemedStyledComponentsModuleMutableBuilder[Self <: ReactNativeThemedStyledComponentsModule[?, ?], T /* <: js.Object */, U /* <: js.Object */] (val x: Self & (ReactNativeThemedStyledComponentsModule[T, U])) extends AnyVal {
       
       @scala.inline
       def setCss(value: ThemedCssFunction[T]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
@@ -298,12 +299,7 @@ object nativeMod extends Shortcut {
     }
   }
   
-  type ReactNativeThemedStyledFunction[C /* <: ComponentType[_] */, T /* <: js.Object */] = ThemedStyledFunction[C, T, js.Object, scala.Nothing]
+  type ReactNativeThemedStyledFunction[C /* <: ComponentType[js.Any] */, T /* <: js.Object */] = ThemedStyledFunction[C, T, js.Object, scala.Nothing]
   
   type ReactNativeThemedStyledInterface[T /* <: js.Object */] = ReactNativeThemedBaseStyledInterface[AnyIfEmpty[T]]
-  
-  type _To = ReactNativeStyledInterface[DefaultTheme]
-  
-  /* This means you don't have to write `default`, but can instead just say `nativeMod.foo` */
-  override def _to: ReactNativeStyledInterface[DefaultTheme] = default
 }

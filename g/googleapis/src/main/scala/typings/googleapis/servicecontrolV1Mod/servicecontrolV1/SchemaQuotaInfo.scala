@@ -3,13 +3,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the quota information for a quota check response.
   */
-@js.native
 trait SchemaQuotaInfo extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaQuotaInfo extends StObject {
     * QuotaLimit.name See: google.api.Quota Deprecated: Use quota_metrics to
     * get per quota group limit exceeded status.
     */
-  var limitExceeded: js.UndefOr[js.Array[String]] = js.native
+  var limitExceeded: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Map of quota group name to the actual number of tokens consumed. If the
@@ -29,7 +27,7 @@ trait SchemaQuotaInfo extends StObject {
     * Castor (that scales quota usage) and &#39;quota_metrics&#39; for
     * SuperQuota (that doesn&#39;t scale quota usage).
     */
-  var quotaConsumed: js.UndefOr[StringDictionary[Double]] = js.native
+  var quotaConsumed: js.UndefOr[StringDictionary[Double]] = js.undefined
   
   /**
     * Quota metrics to indicate the usage. Depending on the check request, one
@@ -44,7 +42,7 @@ trait SchemaQuotaInfo extends StObject {
     * condition will be specified using the following boolean metric:
     * &quot;serviceruntime.googleapis.com/quota/exceeded&quot;
     */
-  var quotaMetrics: js.UndefOr[js.Array[SchemaMetricValueSet]] = js.native
+  var quotaMetrics: js.UndefOr[js.Array[SchemaMetricValueSet]] = js.undefined
 }
 object SchemaQuotaInfo {
   

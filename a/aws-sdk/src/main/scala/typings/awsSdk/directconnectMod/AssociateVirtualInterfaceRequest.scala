@@ -2,21 +2,19 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateVirtualInterfaceRequest extends StObject {
   
   /**
     * The ID of the LAG or connection.
     */
-  var connectionId: ConnectionId = js.native
+  var connectionId: ConnectionId
   
   /**
     * The ID of the virtual interface.
     */
-  var virtualInterfaceId: VirtualInterfaceId = js.native
+  var virtualInterfaceId: VirtualInterfaceId
 }
 object AssociateVirtualInterfaceRequest {
   

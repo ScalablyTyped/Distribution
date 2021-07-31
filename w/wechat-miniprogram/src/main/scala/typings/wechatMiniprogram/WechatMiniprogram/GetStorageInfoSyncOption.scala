@@ -2,20 +2,18 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStorageInfoSyncOption extends StObject {
   
   /** 当前占用的空间大小, 单位 KB */
-  var currentSize: Double = js.native
+  var currentSize: Double
   
   /** 当前 storage 中所有的 key */
-  var keys: js.Array[String] = js.native
+  var keys: js.Array[String]
   
   /** 限制的空间大小，单位 KB */
-  var limitSize: Double = js.native
+  var limitSize: Double
 }
 object GetStorageInfoSyncOption {
   

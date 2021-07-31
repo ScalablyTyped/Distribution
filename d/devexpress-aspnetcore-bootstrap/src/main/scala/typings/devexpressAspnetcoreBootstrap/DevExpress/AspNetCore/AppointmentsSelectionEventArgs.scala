@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AppointmentsSelectionEventArgs extends EventArgs {
+trait AppointmentsSelectionEventArgs
+  extends StObject
+     with EventArgs {
   
-  val appointmentIds: js.Array[String] = js.native
+  val appointmentIds: js.Array[String]
 }
 object AppointmentsSelectionEventArgs {
   

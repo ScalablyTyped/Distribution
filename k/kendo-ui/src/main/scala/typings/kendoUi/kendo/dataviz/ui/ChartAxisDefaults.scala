@@ -2,43 +2,41 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartAxisDefaults extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var crosshair: js.UndefOr[ChartAxisDefaultsCrosshair] = js.native
+  var crosshair: js.UndefOr[ChartAxisDefaultsCrosshair] = js.undefined
   
-  var labels: js.UndefOr[ChartAxisDefaultsLabels] = js.native
+  var labels: js.UndefOr[ChartAxisDefaultsLabels] = js.undefined
   
-  var line: js.UndefOr[ChartAxisDefaultsLine] = js.native
+  var line: js.UndefOr[ChartAxisDefaultsLine] = js.undefined
   
-  var majorGridLines: js.UndefOr[ChartAxisDefaultsMajorGridLines] = js.native
+  var majorGridLines: js.UndefOr[ChartAxisDefaultsMajorGridLines] = js.undefined
   
-  var majorTicks: js.UndefOr[ChartAxisDefaultsMajorTicks] = js.native
+  var majorTicks: js.UndefOr[ChartAxisDefaultsMajorTicks] = js.undefined
   
-  var minorGridLines: js.UndefOr[ChartAxisDefaultsMinorGridLines] = js.native
+  var minorGridLines: js.UndefOr[ChartAxisDefaultsMinorGridLines] = js.undefined
   
-  var minorTicks: js.UndefOr[ChartAxisDefaultsMinorTicks] = js.native
+  var minorTicks: js.UndefOr[ChartAxisDefaultsMinorTicks] = js.undefined
   
-  var narrowRange: js.UndefOr[Boolean] = js.native
+  var narrowRange: js.UndefOr[Boolean] = js.undefined
   
-  var pane: js.UndefOr[String] = js.native
+  var pane: js.UndefOr[String] = js.undefined
   
-  var plotBands: js.UndefOr[js.Array[ChartAxisDefaultsPlotBand]] = js.native
+  var plotBands: js.UndefOr[js.Array[ChartAxisDefaultsPlotBand]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[ChartAxisDefaultsTitle] = js.native
+  var title: js.UndefOr[ChartAxisDefaultsTitle] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ChartAxisDefaults {
   

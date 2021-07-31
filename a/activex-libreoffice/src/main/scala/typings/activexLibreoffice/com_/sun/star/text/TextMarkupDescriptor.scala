@@ -3,25 +3,23 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.com_.sun.star.container.XStringKeyMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A descriptor for a single text markup.
   * @since OOo 3.0.1
   */
-@js.native
 trait TextMarkupDescriptor extends StObject {
   
-  var aIdentifier: String = js.native
+  var aIdentifier: String
   
-  var nLength: Double = js.native
+  var nLength: Double
   
-  var nOffset: Double = js.native
+  var nOffset: Double
   
-  var nType: Double = js.native
+  var nType: Double
   
-  var xMarkupInfoContainer: XStringKeyMap = js.native
+  var xMarkupInfoContainer: XStringKeyMap
 }
 object TextMarkupDescriptor {
   

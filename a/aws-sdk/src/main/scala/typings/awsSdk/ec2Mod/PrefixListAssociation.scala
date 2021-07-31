@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrefixListAssociation extends StObject {
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: js.UndefOr[String] = js.native
+  var ResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The owner of the resource.
     */
-  var ResourceOwner: js.UndefOr[String] = js.native
+  var ResourceOwner: js.UndefOr[String] = js.undefined
 }
 object PrefixListAssociation {
   

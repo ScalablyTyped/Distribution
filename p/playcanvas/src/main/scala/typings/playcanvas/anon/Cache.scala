@@ -2,27 +2,25 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cache extends StObject {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var cache: js.UndefOr[js.Any] = js.native
+  var cache: js.UndefOr[js.Any] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var maxRetries: js.UndefOr[Double] = js.native
+  var maxRetries: js.UndefOr[Double] = js.undefined
   
-  var maxRetryDelay: js.UndefOr[Double] = js.native
+  var maxRetryDelay: js.UndefOr[Double] = js.undefined
   
-  var responseType: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.undefined
   
-  var retry: js.UndefOr[Boolean] = js.native
+  var retry: js.UndefOr[Boolean] = js.undefined
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object Cache {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewStatusInfo extends StObject {
   
   /** Represents the basic approval needed for a creative to begin serving. Summary of creative_and_landing_page_review_status and content_and_policy_review_status. */
-  var approvalStatus: js.UndefOr[String] = js.native
+  var approvalStatus: js.UndefOr[String] = js.undefined
   
   /** Content and policy review status for the creative. */
-  var contentAndPolicyReviewStatus: js.UndefOr[String] = js.native
+  var contentAndPolicyReviewStatus: js.UndefOr[String] = js.undefined
   
   /** Creative and landing page review status for the creative. */
-  var creativeAndLandingPageReviewStatus: js.UndefOr[String] = js.native
+  var creativeAndLandingPageReviewStatus: js.UndefOr[String] = js.undefined
   
   /** Exchange review statuses for the creative. */
-  var exchangeReviewStatuses: js.UndefOr[js.Array[ExchangeReviewStatus]] = js.native
+  var exchangeReviewStatuses: js.UndefOr[js.Array[ExchangeReviewStatus]] = js.undefined
   
   /** Publisher review statuses for the creative. */
-  var publisherReviewStatuses: js.UndefOr[js.Array[PublisherReviewStatus]] = js.native
+  var publisherReviewStatuses: js.UndefOr[js.Array[PublisherReviewStatus]] = js.undefined
 }
 object ReviewStatusInfo {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventsRequest extends StObject {
   
   /**
     * The batch of events to process. For each item in a batch, the endpoint ID acts as a key that has an EventsBatch object as its value.
     */
-  var BatchItem: MapOfEventsBatch = js.native
+  var BatchItem: MapOfEventsBatch
 }
 object EventsRequest {
   

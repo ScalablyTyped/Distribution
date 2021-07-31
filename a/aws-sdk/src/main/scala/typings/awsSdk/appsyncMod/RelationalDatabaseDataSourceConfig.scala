@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationalDatabaseDataSourceConfig extends StObject {
   
   /**
     * Amazon RDS HTTP endpoint settings.
     */
-  var rdsHttpEndpointConfig: js.UndefOr[RdsHttpEndpointConfig] = js.native
+  var rdsHttpEndpointConfig: js.UndefOr[RdsHttpEndpointConfig] = js.undefined
   
   /**
     * Source type for the relational database.    RDS_HTTP_ENDPOINT: The relational database source type is an Amazon RDS HTTP endpoint.  
     */
-  var relationalDatabaseSourceType: js.UndefOr[RelationalDatabaseSourceType] = js.native
+  var relationalDatabaseSourceType: js.UndefOr[RelationalDatabaseSourceType] = js.undefined
 }
 object RelationalDatabaseDataSourceConfig {
   

@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Scale
   * @see XScaling
   */
-@js.native
 trait IncrementData extends StObject {
   
   /**
     * if the any contains a double value this is used as a fixed BaseValue. Otherwise, if the any is empty or contains an incompatible type, the BaseValue
     * is meant to be calculated automatically by the view component representing the model containing this increment.
     */
-  var BaseValue: js.Any = js.native
+  var BaseValue: js.Any
   
   /**
     * if the any contains a double value this is used as a fixed Distance value. Otherwise, if the any is empty or contains an incompatible type, the
     * Distance is meant to be calculated automatically by the view component representing the model containing this increment.
     */
-  var Distance: js.Any = js.native
+  var Distance: js.Any
   
   /**
     * {@link PostEquidistant} rules whether the member {@link Distance} describes a distance before or after the scaling is applied.
@@ -35,7 +33,7 @@ trait IncrementData extends StObject {
     * always look equidistant on the screen. If {@link PostEquidistant} equals `FALSE`{@link Distance} is given in values before {@link XScaling} is
     * applied.
     */
-  var PostEquidistant: js.Any = js.native
+  var PostEquidistant: js.Any
   
   /**
     * {@link SubIncrements} describes the positioning of further sub tickmarks on the scale of an axis.
@@ -44,7 +42,7 @@ trait IncrementData extends StObject {
     * further sub tickmarks. Every following {@link SubIncrement} determines the positions of subsequent tickmarks in relation to their parent tickmarks
     * given by the preceding {@link SubIncrement} .
     */
-  var SubIncrements: SafeArray[SubIncrement] = js.native
+  var SubIncrements: SafeArray[SubIncrement]
 }
 object IncrementData {
   

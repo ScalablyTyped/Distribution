@@ -36,15 +36,14 @@ import typings.awsSdkClientLambdaNode.updateFunctionCodeExceptionsUnionMod.Updat
 import typings.awsSdkClientLambdaNode.updateFunctionConfigurationExceptionsUnionMod.UpdateFunctionConfigurationExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTooManyRequestsExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TooManyRequestsExceptionDetails> * / any */ @js.native
-  trait TooManyRequestsException
-    extends AddPermissionExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TooManyRequestsExceptionDetails> * / any */ trait TooManyRequestsException
+    extends StObject
+       with AddPermissionExceptionsUnion
        with CreateAliasExceptionsUnion
        with CreateEventSourceMappingExceptionsUnion
        with CreateFunctionExceptionsUnion
@@ -74,13 +73,13 @@ object typesTooManyRequestsExceptionMod {
        with UpdateFunctionCodeExceptionsUnion
        with UpdateFunctionConfigurationExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.TooManyRequestsException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.TooManyRequestsException
   }
   object TooManyRequestsException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.TooManyRequestsException): TooManyRequestsException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): TooManyRequestsException = {
+      val __obj = js.Dynamic.literal(name = "TooManyRequestsException")
       __obj.asInstanceOf[TooManyRequestsException]
     }
     
@@ -92,7 +91,6 @@ object typesTooManyRequestsExceptionMod {
     }
   }
   
-  @js.native
   trait TooManyRequestsExceptionDetails extends StObject {
     
     /**
@@ -100,22 +98,22 @@ object typesTooManyRequestsExceptionMod {
       */
     var Reason: js.UndefOr[
         ConcurrentInvocationLimitExceeded | FunctionInvocationRateLimitExceeded | ReservedFunctionConcurrentInvocationLimitExceeded | ReservedFunctionInvocationRateLimitExceeded | CallerRateLimitExceeded | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * _String shape
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The number of seconds the caller should wait before retrying.</p>
       */
-    var retryAfterSeconds: js.UndefOr[String] = js.native
+    var retryAfterSeconds: js.UndefOr[String] = js.undefined
   }
   object TooManyRequestsExceptionDetails {
     

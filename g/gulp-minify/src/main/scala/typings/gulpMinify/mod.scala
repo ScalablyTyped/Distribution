@@ -9,7 +9,6 @@ import typings.gulpMinify.gulpMinifyStrings.some
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,43 +17,42 @@ object mod extends Shortcut {
   @js.native
   val ^ : minify = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Pass an object to specify custom compressor options. Pass false to skip compression completely.
       */
-    var compress: js.UndefOr[Booleans | Boolean] = js.native
+    var compress: js.UndefOr[Booleans | Boolean] = js.undefined
     
     /**
       * Will not minify files in the dirs.
       */
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An object that specifies output src and minified file extensions.
       */
-    var ext: js.UndefOr[Min] = js.native
+    var ext: js.UndefOr[Min] = js.undefined
     
     /**
       * Will not minify files which matches the pattern.
       */
-    var ignoreFiles: js.UndefOr[js.Array[String]] = js.native
+    var ignoreFiles: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * If true, will mangle variable names.
       */
-    var mangle: js.UndefOr[Boolean] = js.native
+    var mangle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, will not output the source code in the dest dirs.
       */
-    var noSource: js.UndefOr[Boolean] = js.native
+    var noSource: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass an object if you wish to specify additional output options.The defaults are optimized for best compression.
       */
-    var output: js.UndefOr[Asciionly] = js.native
+    var output: js.UndefOr[Asciionly] = js.undefined
     
     /**
       * A convenience option for options.output.comments. Defaults to preserving no comments.
@@ -67,7 +65,7 @@ object mod extends Shortcut {
       */
     var preserveComments: js.UndefOr[
         all | some | (js.Function2[/* node */ js.UndefOr[js.Any], /* comment */ js.UndefOr[js.Any], Boolean])
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

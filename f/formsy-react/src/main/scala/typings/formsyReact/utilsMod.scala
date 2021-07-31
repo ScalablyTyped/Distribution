@@ -5,83 +5,69 @@ import typings.formsyReact.interfacesMod.Validations
 import typings.formsyReact.interfacesMod.Values
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("formsy-react/dist/utils", "isArray")
+  @JSImport("formsy-react/dist/utils", JSImport.Namespace)
   @js.native
-  def isArray(value: js.Any): /* is std.Array<unknown> */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("formsy-react/dist/utils", "isDate")
-  @js.native
-  def isDate(value: js.Any): /* is std.Date */ Boolean = js.native
+  @scala.inline
+  def isArray(value: js.Any): /* is std.Array<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<unknown> */ Boolean]
   
-  @JSImport("formsy-react/dist/utils", "isFunction")
-  @js.native
-  def isFunction(value: js.Any): /* is std.Function */ Boolean = js.native
+  @scala.inline
+  def isDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
   
-  @JSImport("formsy-react/dist/utils", "isNumber")
-  @js.native
-  def isNumber(value: js.Any): /* is number */ Boolean = js.native
+  @scala.inline
+  def isFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  @JSImport("formsy-react/dist/utils", "isObject")
-  @js.native
-  def isObject(value: js.Any): /* is object */ Boolean = js.native
+  @scala.inline
+  def isNumber(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
   
-  @JSImport("formsy-react/dist/utils", "isRegex")
-  @js.native
-  def isRegex(value: js.Any): /* is std.RegExp */ Boolean = js.native
+  @scala.inline
+  def isObject(value: js.Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
   
-  @JSImport("formsy-react/dist/utils", "isSame")
-  @js.native
-  def isSame(a: js.Any, b: js.Any): js.Any = js.native
+  @scala.inline
+  def isRegex(value: js.Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegex")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
   
-  @JSImport("formsy-react/dist/utils", "isString")
-  @js.native
-  def isString(value: js.Any): /* is string */ Boolean = js.native
+  @scala.inline
+  def isSame(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isSame")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("formsy-react/dist/utils", "isTypeUndefined")
-  @js.native
-  def isTypeUndefined(value: js.Any): /* is undefined */ Boolean = js.native
+  @scala.inline
+  def isString(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  @JSImport("formsy-react/dist/utils", "isValueNullOrUndefined")
-  @js.native
-  def isValueNullOrUndefined(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isTypeUndefined(value: js.Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
   
-  @JSImport("formsy-react/dist/utils", "isValueStringEmpty")
-  @js.native
-  def isValueStringEmpty(value: String): Boolean = js.native
+  @scala.inline
+  def isValueNullOrUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValueNullOrUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("formsy-react/dist/utils", "isValueUndefined")
-  @js.native
-  def isValueUndefined(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isValueStringEmpty(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValueStringEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("formsy-react/dist/utils", "noop")
-  @js.native
-  def noop(): Unit = js.native
+  @scala.inline
+  def isValueUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValueUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("formsy-react/dist/utils", "protectAgainstParamReassignment")
-  @js.native
-  def protectAgainstParamReassignment(value: js.Any): js.Any = js.native
+  @scala.inline
+  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
   
-  @JSImport("formsy-react/dist/utils", "runRules")
-  @js.native
-  def runRules[V](value: V, currentValues: Values, validations: Validations[V], validationRules: Validations[V]): RulesResult = js.native
+  @scala.inline
+  def protectAgainstParamReassignment(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("protectAgainstParamReassignment")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("formsy-react/dist/utils", "throttle")
-  @js.native
-  def throttle(callback: js.Any, interval: js.Any): js.Function1[/* repeated */ js.Any, Unit] = js.native
+  @scala.inline
+  def runRules[V](value: V, currentValues: Values, validations: Validations[V], validationRules: Validations[V]): RulesResult = (^.asInstanceOf[js.Dynamic].applyDynamic("runRules")(value.asInstanceOf[js.Any], currentValues.asInstanceOf[js.Any], validations.asInstanceOf[js.Any], validationRules.asInstanceOf[js.Any])).asInstanceOf[RulesResult]
   
-  @js.native
+  @scala.inline
+  def throttle(callback: js.Any, interval: js.Any): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(callback.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  
   trait RulesResult extends StObject {
     
-    var errors: js.Array[ValidationError] = js.native
+    var errors: js.Array[ValidationError]
     
-    var failed: js.Array[String] = js.native
+    var failed: js.Array[String]
     
-    var success: js.Array[String] = js.native
+    var success: js.Array[String]
   }
   object RulesResult {
     

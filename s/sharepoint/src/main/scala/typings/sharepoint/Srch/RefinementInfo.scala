@@ -3,55 +3,53 @@ package typings.sharepoint.Srch
 import typings.sharepoint.SP.Guid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefinementInfo extends StObject {
   
-  var Culture: String = js.native
+  var Culture: String
   
-  var DisplayName: String = js.native
+  var DisplayName: String
   
-  var Entropy: Double = js.native
+  var Entropy: Double
   
-  var HitCount: Double = js.native
+  var HitCount: Double
   
-  var Max: Double = js.native
+  var Max: Double
   
-  var Mean: Double = js.native
+  var Mean: Double
   
-  var Min: Double = js.native
+  var Min: Double
   
-  var Modifier: String = js.native
+  var Modifier: String
   
-  var NonZeroCount: Double = js.native
+  var NonZeroCount: Double
   
-  var PartitionId: Guid = js.native
+  var PartitionId: Guid
   
-  var Ratio: Double = js.native
+  var Ratio: Double
   
-  var RefinementCount: Double = js.native
+  var RefinementCount: Double
   
-  var RefinementName: String = js.native
+  var RefinementName: String
   
-  var RefinementToken: String = js.native
+  var RefinementToken: String
   
-  var RefinementValue: String = js.native
+  var RefinementValue: String
   
-  var RefinerName: String = js.native
+  var RefinerName: String
   
-  var RenderTemplateId: String = js.native
+  var RenderTemplateId: String
   
-  var Score: Double = js.native
+  var Score: Double
   
-  var Sum: Double = js.native
+  var Sum: Double
   
-  var Type: String = js.native
+  var Type: String
   
-  var UniqueCount: Double = js.native
+  var UniqueCount: Double
   
-  var UrlZone: Double = js.native
+  var UrlZone: Double
 }
 object RefinementInfo {
   

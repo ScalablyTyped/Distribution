@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.EdgeColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ClippingPlaneCollection")
@@ -31,9 +30,9 @@ class ClippingPlaneCollection () extends StObject {
   
   var modelMatrix: Matrix4 = js.native
   
-  var planeAdded: Event[js.Array[_]] = js.native
+  var planeAdded: Event[js.Array[js.Any]] = js.native
   
-  var planeRemoved: Event[js.Array[_]] = js.native
+  var planeRemoved: Event[js.Array[js.Any]] = js.native
   
   def remove(plane: ClippingPlane): Boolean = js.native
   

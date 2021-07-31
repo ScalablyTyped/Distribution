@@ -2,30 +2,30 @@ package typings.gamedig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gamedig", "query")
+  @JSImport("gamedig", JSImport.Namespace)
   @js.native
-  def query(options: QueryOptions): js.Promise[QueryResult] = js.native
-  @JSImport("gamedig", "query")
-  @js.native
-  def query(options: QueryOptions, callback: js.Function2[/* error */ js.Any, /* state */ QueryResult, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def query(options: QueryOptions): js.Promise[QueryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[QueryResult]]
+  @scala.inline
+  def query(options: QueryOptions, callback: js.Function2[/* error */ js.Any, /* state */ QueryResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Player extends StObject {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var ping: js.UndefOr[Double] = js.native
+    var ping: js.UndefOr[Double] = js.undefined
     
-    var score: js.UndefOr[Double] = js.native
+    var score: js.UndefOr[Double] = js.undefined
     
-    var team: js.UndefOr[String] = js.native
+    var team: js.UndefOr[String] = js.undefined
   }
   object Player {
     
@@ -70,24 +70,23 @@ object mod {
     }
   }
   
-  @js.native
   trait QueryOptions extends StObject {
     
-    var attemptTimeout: js.UndefOr[Double] = js.native
+    var attemptTimeout: js.UndefOr[Double] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var givenPortOnly: js.UndefOr[Boolean] = js.native
+    var givenPortOnly: js.UndefOr[Boolean] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var maxAttempts: js.UndefOr[Double] = js.native
+    var maxAttempts: js.UndefOr[Double] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var socketTimeout: js.UndefOr[Double] = js.native
+    var socketTimeout: js.UndefOr[Double] = js.undefined
     
-    var `type`: Type = js.native
+    var `type`: Type
   }
   object QueryOptions {
     
@@ -145,26 +144,25 @@ object mod {
     }
   }
   
-  @js.native
   trait QueryResult extends StObject {
     
-    var bots: js.Array[Player] = js.native
+    var bots: js.Array[Player]
     
-    var connect: String = js.native
+    var connect: String
     
-    var map: String = js.native
+    var map: String
     
-    var maxplayers: Double = js.native
+    var maxplayers: Double
     
-    var name: String = js.native
+    var name: String
     
-    var password: Boolean = js.native
+    var password: Boolean
     
-    var ping: Double = js.native
+    var ping: Double
     
-    var players: js.Array[Player] = js.native
+    var players: js.Array[Player]
     
-    var raw: js.UndefOr[js.Object] = js.native
+    var raw: js.UndefOr[js.Object] = js.undefined
   }
   object QueryResult {
     

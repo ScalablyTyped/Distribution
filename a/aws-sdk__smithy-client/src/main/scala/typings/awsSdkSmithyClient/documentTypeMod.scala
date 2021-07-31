@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentTypeMod {
@@ -13,14 +12,15 @@ object documentTypeMod {
     
     @js.native
     trait List
-      extends Array[Value]
+      extends StObject
+         with Array[Value]
          with _Value
     
     type Scalar = String | Double | Boolean | Null
     
-    @js.native
     trait Structure
-      extends /* member */ StringDictionary[Value]
+      extends StObject
+         with /* member */ StringDictionary[Value]
          with _Value
     object Structure {
       

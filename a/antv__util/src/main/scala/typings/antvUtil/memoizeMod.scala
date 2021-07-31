@@ -3,15 +3,16 @@ package typings.antvUtil
 import typings.antvUtil.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoizeMod {
   
-  @JSImport("@antv/util/lib/memoize", JSImport.Default)
+  @JSImport("@antv/util/lib/memoize", JSImport.Namespace)
   @js.native
-  def default(f: js.Function): Call = js.native
-  @JSImport("@antv/util/lib/memoize", JSImport.Default)
-  @js.native
-  def default(f: js.Function, resolver: js.Function1[/* repeated */ js.Any, String]): Call = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(f: js.Function): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[Call]
+  @scala.inline
+  def default(f: js.Function, resolver: js.Function1[/* repeated */ js.Any, String]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[Call]
 }

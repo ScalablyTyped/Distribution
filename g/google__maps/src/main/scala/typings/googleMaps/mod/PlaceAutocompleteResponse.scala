@@ -2,27 +2,25 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceAutocompleteResponse extends StObject {
   
   /**
     * When the Places service returns a status code other than `OK`, there may be an additional `error_message` field
     * within the response object. This field contains more detailed information about the reasons behind the given status code.
     */
-  var error_message: String = js.native
+  var error_message: String
   
   /**
     * contains an array of places, with information about the place.
     * See [Place Autocomplete Results](https://developers.google.com/places/web-service/autocomplete#place_autocomplete_results)
     * for information about these results. The Places API returns up to 5 results.
     */
-  var predictions: js.Array[PlaceAutocompleteResult] = js.native
+  var predictions: js.Array[PlaceAutocompleteResult]
   
   /** contains metadata on the request. */
-  var status: PlaceAutocompleteResponseStatus = js.native
+  var status: PlaceAutocompleteResponseStatus
 }
 object PlaceAutocompleteResponse {
   

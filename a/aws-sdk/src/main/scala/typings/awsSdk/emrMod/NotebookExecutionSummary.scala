@@ -2,41 +2,39 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotebookExecutionSummary extends StObject {
   
   /**
     * The unique identifier of the editor associated with the notebook execution.
     */
-  var EditorId: js.UndefOr[XmlStringMaxLen256] = js.native
+  var EditorId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * The timestamp when notebook execution started.
     */
-  var EndTime: js.UndefOr[Date] = js.native
+  var EndTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The unique identifier of the notebook execution.
     */
-  var NotebookExecutionId: js.UndefOr[XmlStringMaxLen256] = js.native
+  var NotebookExecutionId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * The name of the notebook execution.
     */
-  var NotebookExecutionName: js.UndefOr[XmlStringMaxLen256] = js.native
+  var NotebookExecutionName: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * The timestamp when notebook execution started.
     */
-  var StartTime: js.UndefOr[Date] = js.native
+  var StartTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The status of the notebook execution.    START_PENDING indicates that the cluster has received the execution request but execution has not begun.    STARTING indicates that the execution is starting on the cluster.    RUNNING indicates that the execution is being processed by the cluster.    FINISHING indicates that execution processing is in the final stages.    FINISHED indicates that the execution has completed without error.    FAILING indicates that the execution is failing and will not finish successfully.    FAILED indicates that the execution failed.    STOP_PENDING indicates that the cluster has received a StopNotebookExecution request and the stop is pending.    STOPPING indicates that the cluster is in the process of stopping the execution as a result of a StopNotebookExecution request.    STOPPED indicates that the execution stopped because of a StopNotebookExecution request.  
     */
-  var Status: js.UndefOr[NotebookExecutionStatus] = js.native
+  var Status: js.UndefOr[NotebookExecutionStatus] = js.undefined
 }
 object NotebookExecutionSummary {
   

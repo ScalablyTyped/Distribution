@@ -3,26 +3,26 @@ package typings.fmWebsync.fm.websync
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait receiveArgs extends baseResponseArgs {
+trait receiveArgs
+  extends StObject
+     with baseResponseArgs {
   
   /**
     * The channel over which the data was published.
     */
-  var channel: String = js.native
+  var channel: String
   
   /**
     * The published data.
     */
-  var data: js.Any = js.native
+  var data: js.Any
   
   /**
     * Details about the client publishing the data.
     */
-  var publishingClient: typings.fmWebsync.fm.websync.publishingClient = js.native
+  var publishingClient: typings.fmWebsync.fm.websync.publishingClient
 }
 object receiveArgs {
   

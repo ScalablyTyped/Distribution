@@ -10,56 +10,54 @@ import typings.reactNativeElements.mod.IconType
 import typings.reactNativeElements.mod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.CheckBoxProps>> */
-@js.native
 trait RecursivePartialPartialCh extends StObject {
   
-  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.native
+  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
   
-  var center: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var center: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var checked: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var checked: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var checkedColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var checkedColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var checkedIcon: js.UndefOr[RecursivePartial[js.UndefOr[String | ReactElement]]] = js.native
+  var checkedIcon: js.UndefOr[RecursivePartial[js.UndefOr[String | ReactElement]]] = js.undefined
   
-  var checkedTitle: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var checkedTitle: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var fontFamily: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var fontFamily: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var iconRight: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var iconRight: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var iconType: js.UndefOr[RecursivePartial[js.UndefOr[IconType]]] = js.native
+  var iconType: js.UndefOr[RecursivePartial[js.UndefOr[IconType]]] = js.undefined
   
-  var onIconPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onIconPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onLongIconPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onLongIconPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onLongPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onLongPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var right: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var right: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var size: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var size: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var textStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var textStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var title: js.UndefOr[RecursivePartial[js.UndefOr[String | ReactElement]]] = js.native
+  var title: js.UndefOr[RecursivePartial[js.UndefOr[String | ReactElement]]] = js.undefined
   
-  var titleProps: js.UndefOr[RecursivePartial[js.UndefOr[PartialTextProperties]]] = js.native
+  var titleProps: js.UndefOr[RecursivePartial[js.UndefOr[PartialTextProperties]]] = js.undefined
   
-  var uncheckedColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var uncheckedColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var uncheckedIcon: js.UndefOr[RecursivePartial[js.UndefOr[String | ReactElement]]] = js.native
+  var uncheckedIcon: js.UndefOr[RecursivePartial[js.UndefOr[String | ReactElement]]] = js.undefined
   
-  var wrapperStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var wrapperStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
 }
 object RecursivePartialPartialCh {
   

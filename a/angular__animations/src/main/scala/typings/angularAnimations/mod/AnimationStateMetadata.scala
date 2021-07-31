@@ -3,28 +3,28 @@ package typings.angularAnimations.mod
 import typings.angularAnimations.anon.Params
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationStateMetadata extends AnimationMetadata {
+trait AnimationStateMetadata
+  extends StObject
+     with AnimationMetadata {
   
   /**
     * The state name, unique within the component.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * An options object containing
     * developer-defined parameters that provide styling defaults and
     * can be overridden on invocation.
     */
-  var options: js.UndefOr[Params] = js.native
+  var options: js.UndefOr[Params] = js.undefined
   
   /**
     *  The CSS styles associated with this state.
     */
-  var styles: AnimationStyleMetadata = js.native
+  var styles: AnimationStyleMetadata
 }
 object AnimationStateMetadata {
   

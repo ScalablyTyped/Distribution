@@ -5,14 +5,15 @@ import typings.insight.mod.insight.IEvent
 import typings.insight.mod.insight.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("insight", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Insight_ {
+  class ^ protected ()
+    extends StObject
+       with Insight_ {
     def this(options: IOptions) = this()
   }
   
@@ -22,9 +23,9 @@ object mod {
     var appVersion: String = js.native
     
     def askPermission(): Unit = js.native
-    def askPermission(msg: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
     def askPermission(msg: String): Unit = js.native
     def askPermission(msg: String, cb: js.Function): Unit = js.native
+    def askPermission(msg: Unit, cb: js.Function): Unit = js.native
     
     var clientId: String = js.native
     
@@ -51,18 +52,17 @@ object mod {
   
   object insight {
     
-    @js.native
     trait IConfigstore extends StObject {
       
-      var all: js.Any = js.native
+      var all: js.Any
       
-      def del(key: String): Unit = js.native
+      def del(key: String): Unit
       
-      def get(key: String): js.Any = js.native
+      def get(key: String): js.Any
       
-      var path: String = js.native
+      var path: String
       
-      def set(key: String, `val`: js.Any): Unit = js.native
+      def set(key: String, `val`: js.Any): Unit
     }
     object IConfigstore {
       
@@ -98,16 +98,15 @@ object mod {
       }
     }
     
-    @js.native
     trait IEvent extends StObject {
       
-      var action: String = js.native
+      var action: String
       
-      var category: String = js.native
+      var category: String
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double | String] = js.native
+      var value: js.UndefOr[Double | String] = js.undefined
     }
     object IEvent {
       
@@ -140,20 +139,19 @@ object mod {
       }
     }
     
-    @js.native
     trait IOptions extends StObject {
       
-      var config: js.UndefOr[IConfigstore] = js.native
+      var config: js.UndefOr[IConfigstore] = js.undefined
       
-      var packageName: js.UndefOr[String] = js.native
+      var packageName: js.UndefOr[String] = js.undefined
       
-      var packageVersion: js.UndefOr[String] = js.native
+      var packageVersion: js.UndefOr[String] = js.undefined
       
-      var pkg: js.UndefOr[IPackage] = js.native
+      var pkg: js.UndefOr[IPackage] = js.undefined
       
-      var trackingCode: String = js.native
+      var trackingCode: String
       
-      var trackingProvider: js.UndefOr[String] = js.native
+      var trackingProvider: js.UndefOr[String] = js.undefined
     }
     object IOptions {
       
@@ -201,12 +199,11 @@ object mod {
       }
     }
     
-    @js.native
     trait IPackage extends StObject {
       
-      var name: String = js.native
+      var name: String
       
-      var version: String = js.native
+      var version: String
     }
     object IPackage {
       

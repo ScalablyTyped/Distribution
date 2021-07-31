@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasporta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalNode extends StObject {
   
   /** The node's display name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. Resource name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** User ids used by the devices belonging to this node. */
-  var sasUserIds: js.UndefOr[js.Array[String]] = js.native
+  var sasUserIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SasPortalNode {
   

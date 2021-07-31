@@ -2,13 +2,11 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A server-stored device credential used for authentication.
   */
-@js.native
 trait SchemaDeviceCredential extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaDeviceCredential extends StObject {
     * credential will be ignored for new client authentication requests after
     * this timestamp; however, it will not be automatically deleted.
     */
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
   /**
     * A public key used to verify the signature of JSON Web Tokens (JWTs). When
@@ -31,7 +29,7 @@ trait SchemaDeviceCredential extends StObject {
     * New device credentials must be different from every registry-level
     * certificate.
     */
-  var publicKey: js.UndefOr[SchemaPublicKeyCredential] = js.native
+  var publicKey: js.UndefOr[SchemaPublicKeyCredential] = js.undefined
 }
 object SchemaDeviceCredential {
   

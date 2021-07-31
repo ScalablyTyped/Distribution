@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutDataCatalogEncryptionSettingsRequest extends StObject {
   
   /**
     * The ID of the Data Catalog to set the security configuration for. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The security configuration to set.
     */
-  var DataCatalogEncryptionSettings: typings.awsSdk.glueMod.DataCatalogEncryptionSettings = js.native
+  var DataCatalogEncryptionSettings: typings.awsSdk.glueMod.DataCatalogEncryptionSettings
 }
 object PutDataCatalogEncryptionSettingsRequest {
   

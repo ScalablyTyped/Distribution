@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurationMillis extends StObject {
   
   /** The duration of the video in milliseconds. */
-  var durationMillis: js.UndefOr[String] = js.native
+  var durationMillis: js.UndefOr[String] = js.undefined
   
   /** The height of the video in pixels. */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** The width of the video in pixels. */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object DurationMillis {
   

@@ -3,15 +3,13 @@ package typings.nodeForge.anon
 import typings.nodeForge.mod.pkcs12.Bag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Encrypted extends StObject {
   
-  var encrypted: Boolean = js.native
+  var encrypted: Boolean
   
-  var safeBags: js.Array[Bag] = js.native
+  var safeBags: js.Array[Bag]
 }
 object Encrypted {
   

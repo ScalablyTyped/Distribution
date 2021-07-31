@@ -13,7 +13,6 @@ import typings.node.fsMod.Stats
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -64,10 +63,7 @@ object Box {
       */
     def read(): js.Promise[String | Buffer] = js.native
     def read(fn: js.Function2[/* err */ js.Any, /* result */ String | Buffer, Unit]): js.Promise[String | Buffer] = js.native
-    def read(
-      option: js.UndefOr[scala.Nothing],
-      fn: js.Function2[/* err */ js.Any, /* result */ String | Buffer, Unit]
-    ): js.Promise[String | Buffer] = js.native
+    def read(option: Unit, fn: js.Function2[/* err */ js.Any, /* result */ String | Buffer, Unit]): js.Promise[String | Buffer] = js.native
     def read(option: Encoding): js.Promise[String | Buffer] = js.native
     def read(option: Encoding, fn: js.Function2[/* err */ js.Any, /* result */ String | Buffer, Unit]): js.Promise[String | Buffer] = js.native
     
@@ -82,9 +78,9 @@ object Box {
       */
     def render(): js.Promise[String] = js.native
     def render(fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
-    def render(option: js.UndefOr[scala.Nothing], fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
     def render(option: js.Any): js.Promise[String] = js.native
     def render(option: js.Any, fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
+    def render(option: Unit, fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
     
     /**
       * Render a file synchronously

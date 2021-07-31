@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoalSetData extends StObject {
   
   /** All the goals that were reached in the current activity. */
-  var goals: js.UndefOr[js.Array[GoalData]] = js.native
+  var goals: js.UndefOr[js.Array[GoalData]] = js.undefined
 }
 object GoalSetData {
   

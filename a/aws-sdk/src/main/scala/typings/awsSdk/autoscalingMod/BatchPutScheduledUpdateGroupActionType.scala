@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPutScheduledUpdateGroupActionType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName = js.native
+  var AutoScalingGroupName: ResourceName
   
   /**
     * One or more scheduled actions. The maximum number allowed is 50.
     */
-  var ScheduledUpdateGroupActions: ScheduledUpdateGroupActionRequests = js.native
+  var ScheduledUpdateGroupActions: ScheduledUpdateGroupActionRequests
 }
 object BatchPutScheduledUpdateGroupActionType {
   

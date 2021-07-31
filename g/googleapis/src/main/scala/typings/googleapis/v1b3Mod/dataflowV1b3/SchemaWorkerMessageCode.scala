@@ -3,7 +3,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * startup.   2. Worker processes reporting specific errors (e.g. package
   * staging      failure).
   */
-@js.native
 trait SchemaWorkerMessageCode extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait SchemaWorkerMessageCode extends StObject {
     * of one of the worker containers.  This is a string and not an enum to
     * make it easy to add new codes without waiting for an API change.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * Parameters contains specific information about the code.  This is a
@@ -43,7 +41,7 @@ trait SchemaWorkerMessageCode extends StObject {
     * other worker identifiers should almost always be passed  as labels since
     * they will be included on most messages.
     */
-  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaWorkerMessageCode {
   

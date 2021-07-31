@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "TypeFilter")
 @js.native
-class TypeFilter protected () extends Filter {
+class TypeFilter protected ()
+  extends StObject
+     with Filter {
   /*
     Filter results by a specified index type.
     */

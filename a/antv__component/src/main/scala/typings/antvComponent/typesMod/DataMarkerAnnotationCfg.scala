@@ -8,44 +8,44 @@ import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.BBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataMarkerAnnotationCfg extends GroupComponentCfg {
+trait DataMarkerAnnotationCfg
+  extends StObject
+     with GroupComponentCfg {
   
   /**
     * 是否自动调整
     */
-  var autoAdjust: js.UndefOr[Boolean] = js.native
+  var autoAdjust: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Coord 的 BBox，用于 autoAdjust
     */
-  var coordBBox: js.UndefOr[BBox] = js.native
+  var coordBBox: js.UndefOr[BBox] = js.undefined
   
   /**
     * 方向
     */
-  var direction: js.UndefOr[upward | downward] = js.native
+  var direction: js.UndefOr[upward | downward] = js.undefined
   
-  var line: js.UndefOr[DisplayLength] = js.native
+  var line: js.UndefOr[DisplayLength] = js.undefined
   
-  var point: js.UndefOr[DisplayStyle] = js.native
+  var point: js.UndefOr[DisplayStyle] = js.undefined
   
-  var text: DataMarkerTextCfg = js.native
+  var text: DataMarkerTextCfg
   
   /**
     * 标注位置 x
     * @type {number}
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * 标注位置 y
     * @type {number}
     */
-  var y: Double = js.native
+  var y: Double
 }
 object DataMarkerAnnotationCfg {
   

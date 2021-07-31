@@ -6,38 +6,38 @@ import typings.sharp.sharpNumbers.`4`
 import typings.sharp.sharpNumbers.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TiffOptions extends OutputOptions {
+trait TiffOptions
+  extends StObject
+     with OutputOptions {
   
   /** Reduce bitdepth to 1, 2 or 4 bit (optional, default 8) */
-  var bitdepth: js.UndefOr[`1` | `2` | `4` | `8`] = js.native
+  var bitdepth: js.UndefOr[`1` | `2` | `4` | `8`] = js.undefined
   
   /** Compression options: lzw, deflate, jpeg, ccittfax4 (optional, default 'jpeg') */
-  var compression: js.UndefOr[String] = js.native
+  var compression: js.UndefOr[String] = js.undefined
   
   /** Compression predictor options: none, horizontal, float (optional, default 'horizontal') */
-  var predictor: js.UndefOr[String] = js.native
+  var predictor: js.UndefOr[String] = js.undefined
   
   /** Write an image pyramid (optional, default false) */
-  var pyramid: js.UndefOr[Boolean] = js.native
+  var pyramid: js.UndefOr[Boolean] = js.undefined
   
   /** Write a tiled tiff (optional, default false) */
-  var tile: js.UndefOr[Boolean] = js.native
+  var tile: js.UndefOr[Boolean] = js.undefined
   
   /** Vertical tile size (optional, default 256) */
-  var tileHeight: js.UndefOr[Boolean] = js.native
+  var tileHeight: js.UndefOr[Boolean] = js.undefined
   
   /** Horizontal tile size (optional, default 256) */
-  var tileWidth: js.UndefOr[Boolean] = js.native
+  var tileWidth: js.UndefOr[Boolean] = js.undefined
   
   /** Horizontal resolution in pixels/mm (optional, default 1.0) */
-  var xres: js.UndefOr[Double] = js.native
+  var xres: js.UndefOr[Double] = js.undefined
   
   /** Vertical resolution in pixels/mm (optional, default 1.0) */
-  var yres: js.UndefOr[Double] = js.native
+  var yres: js.UndefOr[Double] = js.undefined
 }
 object TiffOptions {
   

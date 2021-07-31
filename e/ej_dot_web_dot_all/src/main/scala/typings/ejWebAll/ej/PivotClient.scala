@@ -9,11 +9,12 @@ import typings.ejWebAll.ej.PivotChart.ChartTypes
 import typings.ejWebAll.ej.PivotGrid.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotClient extends Widget_ {
+trait PivotClient
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -40,7 +41,7 @@ trait PivotClient extends Widget_ {
   /** Returns the formed JSON records to render the control.
     * @returns {any[]}
     */
-  def getJSONRecords(): js.Array[_] = js.native
+  def getJSONRecords(): js.Array[js.Any] = js.native
   
   /** Returns the OLAP report string that is maintained along with the axis elements information.
     * @returns {string}
@@ -85,15 +86,21 @@ object PivotClient {
     
     ///Exports both the PivotChart and PivotGrid on exporting.
     @js.native
-    sealed trait ChartAndGrid extends ClientExportMode
+    sealed trait ChartAndGrid
+      extends StObject
+         with ClientExportMode
     
     ///Exports the PivotChart control alone on exporting.
     @js.native
-    sealed trait ChartOnly extends ClientExportMode
+    sealed trait ChartOnly
+      extends StObject
+         with ClientExportMode
     
     ///Exports the PivotGrid control alone on exporting.
     @js.native
-    sealed trait GridOnly extends ClientExportMode
+    sealed trait GridOnly
+      extends StObject
+         with ClientExportMode
   }
   
   @js.native
@@ -104,11 +111,15 @@ object PivotClient {
     
     ///Displays PivotChart and PivotGrid widgets in separate tabs.
     @js.native
-    sealed trait Tab extends ControlPlacement
+    sealed trait Tab
+      extends StObject
+         with ControlPlacement
     
     ///Displays PivotChart and PivotGrid widgets one above the other.
     @js.native
-    sealed trait Tile extends ControlPlacement
+    sealed trait Tile
+      extends StObject
+         with ControlPlacement
   }
   
   @js.native
@@ -119,11 +130,15 @@ object PivotClient {
     
     ///To set PivotChart as a default control in view.
     @js.native
-    sealed trait Chart extends DefaultView
+    sealed trait Chart
+      extends StObject
+         with DefaultView
     
     ///To set PivotGrid as a default control in view.
     @js.native
-    sealed trait Grid extends DefaultView
+    sealed trait Grid
+      extends StObject
+         with DefaultView
   }
   
   @js.native
@@ -134,31 +149,36 @@ object PivotClient {
     
     ///To display both PivotChart and PivotGrid widgets.
     @js.native
-    sealed trait ChartAndGrid extends DisplayMode
+    sealed trait ChartAndGrid
+      extends StObject
+         with DisplayMode
     
     ///To display only PivotChart widget.
     @js.native
-    sealed trait ChartOnly extends DisplayMode
+    sealed trait ChartOnly
+      extends StObject
+         with DisplayMode
     
     ///To display only PivotGrid widget.
     @js.native
-    sealed trait GridOnly extends DisplayMode
+    sealed trait GridOnly
+      extends StObject
+         with DisplayMode
   }
   
-  @js.native
   trait AfterServiceInvokeEventArgs extends StObject {
     
     /** returns the current action of PivotClient control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bounds with PivotClient control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotClient control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object AfterServiceInvokeEventArgs {
     
@@ -191,20 +211,19 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait AxesLabelRenderingEventArgs extends StObject {
     
     /** returns the Chart label information.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the model object bound with PivotClient control.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current action of PivotClient control.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AxesLabelRenderingEventArgs {
     
@@ -237,16 +256,15 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait BeforeExportEventArgs extends StObject {
     
     /** holds the name of the file to be exported.
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /** holds the url of the service method responsible for exporting the PivotClient control.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object BeforeExportEventArgs {
     
@@ -273,20 +291,19 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait BeforeServiceInvokeEventArgs extends StObject {
     
     /** returns the current action of PivotClient control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bounds with PivotClient control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotClient control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object BeforeServiceInvokeEventArgs {
     
@@ -319,20 +336,19 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait CellClickEventArgs extends StObject {
     
     /** returns the custom object bound with PivotClient control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotGrid control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the JSON details of the respective on cell.
       */
-    var selectedData: js.UndefOr[js.Array[_]] = js.native
+    var selectedData: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object CellClickEventArgs {
     
@@ -358,7 +374,7 @@ object PivotClient {
       def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
       @scala.inline
-      def setSelectedData(value: js.Array[_]): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
+      def setSelectedData(value: js.Array[js.Any]): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedDataUndefined: Self = StObject.set(x, "selectedData", js.undefined)
@@ -368,20 +384,19 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait ChartLoadEventArgs extends StObject {
     
     /** returns the current action of PivotChart control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object ChartLoadEventArgs {
     
@@ -414,67 +429,66 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSource extends StObject {
     
     /** In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
       * @Default {â€œâ€}
       */
-    var catalog: js.UndefOr[String] = js.native
+    var catalog: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be arranged in the columns section of the pivot client.
       * @Default {[]}
       */
-    var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.native
+    var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.undefined
     
     /** Contains the respective cube name from the OLAP database as string type.
       * @Default {â€œâ€}
       */
-    var cube: js.UndefOr[String] = js.native
+    var cube: js.UndefOr[String] = js.undefined
     
     /** Provides the raw data source for the pivot client.
       * @Default {null}
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Allows you to filter the members (by its name and values) through the advanced filtering (e.g., Microsoft Excel) option in the client-mode.
       * @Default {false}
       */
-    var enableAdvancedFilter: js.UndefOr[Boolean] = js.native
+    var enableAdvancedFilter: js.UndefOr[Boolean] = js.undefined
     
     /** Lists out the items which supports filtering of values without displaying the members in UI of the pivot client.
       * @Default {[]}
       */
-    var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.native
+    var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.undefined
     
     /** Allows to set the page size and current page number for each axis on applying the paging.
       * @Default {{}}
       */
-    var pagerOptions: js.UndefOr[DataSourcePagerOptions] = js.native
+    var pagerOptions: js.UndefOr[DataSourcePagerOptions] = js.undefined
     
     /** Sets the provider name for the pivot client to identify whether the provider is SSAS or Mondrian.
       * @Default {ssas}
       */
-    var providerName: js.UndefOr[String] = js.native
+    var providerName: js.UndefOr[String] = js.undefined
     
     /** Sets a name to the report bound to the control.
       */
-    var reportName: js.UndefOr[String] = js.native
+    var reportName: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be arranged in the rows section of the pivot client.
       * @Default {[]}
       */
-    var rows: js.UndefOr[js.Array[DataSourceRow]] = js.native
+    var rows: js.UndefOr[js.Array[DataSourceRow]] = js.undefined
     
     /** Allows to set the data source name to fetch the data from that.
       * @Default {â€œâ€}
       */
-    var sourceInfo: js.UndefOr[String] = js.native
+    var sourceInfo: js.UndefOr[String] = js.undefined
     
     /** Lists out the items which supports calculation in the pivot client.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[DataSourceValue]] = js.native
+    var values: js.UndefOr[js.Array[DataSourceValue]] = js.undefined
   }
   object DataSource {
     
@@ -573,58 +587,57 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSourceColumn extends StObject {
     
     /** Allows you to filter the report by default using the advanced filtering (e.g., Microsoft Excel) option for the OLAP data source in the client-mode.
       * @Default {[]}
       */
-    var advancedFilter: js.UndefOr[js.Array[DataSourceColumnsAdvancedFilter]] = js.native
+    var advancedFilter: js.UndefOr[js.Array[DataSourceColumnsAdvancedFilter]] = js.undefined
     
     /** Allows you to set the custom theme for the column headers.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Contains the list of members need to be drilled down by default in the field.
       * @Default {[]}
       */
-    var drilledItems: js.UndefOr[js.Array[_]] = js.native
+    var drilledItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Allows you to set the display caption for an item.
       */
-    var fieldCaption: js.UndefOr[String] = js.native
+    var fieldCaption: js.UndefOr[String] = js.undefined
     
     /** Allows you to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies the filter to field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.undefined
     
     /** Allows to set the format for the column headers.
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** This property is set to display the formatted values with format types in the pivot grid.
       */
-    var formatString: js.UndefOr[String] = js.native
+    var formatString: js.UndefOr[String] = js.undefined
     
     /** Allows you to indicate whether the added item is a named set or not.
       * @Default {false}
       */
-    var isNamedSets: js.UndefOr[Boolean] = js.native
+    var isNamedSets: js.UndefOr[Boolean] = js.undefined
     
     /** Shows/hides the sub-total of the field in the pivot grid.
       * @Default {true}
       */
-    var showSubTotal: js.UndefOr[Boolean] = js.native
+    var showSubTotal: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the sorting order of members of the field.
       * @Default {ej.PivotAnalysis.SortOrder.Ascending}
       */
-    var sortOrder: js.UndefOr[SortOrder | String] = js.native
+    var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }
   object DataSourceColumn {
     
@@ -653,7 +666,7 @@ object PivotClient {
       def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
       @scala.inline
-      def setDrilledItems(value: js.Array[_]): Self = StObject.set(x, "drilledItems", value.asInstanceOf[js.Any])
+      def setDrilledItems(value: js.Array[js.Any]): Self = StObject.set(x, "drilledItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDrilledItemsUndefined: Self = StObject.set(x, "drilledItems", js.undefined)
@@ -711,34 +724,33 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSourceColumnsAdvancedFilter extends StObject {
     
     /** Allows you to set the filtering type while performing the advanced filtering.
       */
-    var advancedFilterType: js.UndefOr[String] = js.native
+    var advancedFilterType: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform label filtering.
       * @Default {none}
       */
-    var labelFilterOperator: js.UndefOr[String] = js.native
+    var labelFilterOperator: js.UndefOr[String] = js.undefined
     
     /** In value filtering, this property contains the measure name to which the filter is applied.
       */
-    var measure: js.UndefOr[String] = js.native
+    var measure: js.UndefOr[String] = js.undefined
     
     /** Allows you to provide a level unique name to perform the advanced filtering.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform value filtering.
       * @Default {none}
       */
-    var valueFilterOperator: js.UndefOr[String] = js.native
+    var valueFilterOperator: js.UndefOr[String] = js.undefined
     
     /** Allows you to hold the filter operand values in the advanced filtering.
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceColumnsAdvancedFilter {
     
@@ -782,7 +794,7 @@ object PivotClient {
       def setValueFilterOperatorUndefined: Self = StObject.set(x, "valueFilterOperator", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -792,18 +804,17 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSourceColumnsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
       * @Default {ej.PivotAnalysis.FilterType.Exclude}
       */
-    var filterType: js.UndefOr[FilterType | String] = js.native
+    var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceColumnsFilterItems {
     
@@ -823,7 +834,7 @@ object PivotClient {
       def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -833,21 +844,20 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSourceFilter extends StObject {
     
     /** Allows you to set the display name for an item.
       */
-    var fieldCaption: js.UndefOr[String] = js.native
+    var fieldCaption: js.UndefOr[String] = js.undefined
     
     /** Allows you to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to the field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.undefined
   }
   object DataSourceFilter {
     
@@ -880,18 +890,17 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSourceFiltersFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
       * @Default {ej.PivotAnalysis.FilterType.Exclude}
       */
-    var filterType: js.UndefOr[FilterType | String] = js.native
+    var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceFiltersFilterItems {
     
@@ -911,7 +920,7 @@ object PivotClient {
       def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -921,28 +930,27 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSourcePagerOptions extends StObject {
     
     /** Allows to set the page number in the categorical axis to be loaded by default.
       * @Default {1}
       */
-    var categoricalCurrentPage: js.UndefOr[Double] = js.native
+    var categoricalCurrentPage: js.UndefOr[Double] = js.undefined
     
     /** Allows to set the number of categorical columns to be displayed in each page on applying the paging.
       * @Default {0}
       */
-    var categoricalPageSize: js.UndefOr[Double] = js.native
+    var categoricalPageSize: js.UndefOr[Double] = js.undefined
     
     /** Allows to set the page number in the series axis to be loaded by default.
       * @Default {1}
       */
-    var seriesCurrentPage: js.UndefOr[Double] = js.native
+    var seriesCurrentPage: js.UndefOr[Double] = js.undefined
     
     /** Allows to set the number of series rows to be displayed in each page on applying the paging.
       * @Default {0}
       */
-    var seriesPageSize: js.UndefOr[Double] = js.native
+    var seriesPageSize: js.UndefOr[Double] = js.undefined
   }
   object DataSourcePagerOptions {
     
@@ -981,58 +989,57 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSourceRow extends StObject {
     
     /** Allows you to filter the report by using the advanced filtering (e.g., Microsoft Excel) option for the OLAP data source in the client-mode.
       * @Default {[]}
       */
-    var advancedFilter: js.UndefOr[js.Array[DataSourceRowsAdvancedFilter]] = js.native
+    var advancedFilter: js.UndefOr[js.Array[DataSourceRowsAdvancedFilter]] = js.undefined
     
     /** Allows to set the custom theme for row headers.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Contains the list of members need to be drilled down by default in the field.
       * @Default {[]}
       */
-    var drilledItems: js.UndefOr[js.Array[_]] = js.native
+    var drilledItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Allows you to set the display caption for an item.
       */
-    var fieldCaption: js.UndefOr[String] = js.native
+    var fieldCaption: js.UndefOr[String] = js.undefined
     
     /** Allows you to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies the filter to the field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.undefined
     
     /** Allows to set the format for row headers.
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** This property is set to display the formatted values with format types in the pivot grid.
       */
-    var formatString: js.UndefOr[String] = js.native
+    var formatString: js.UndefOr[String] = js.undefined
     
     /** Allows you to indicate whether the added item is a named set or not.
       * @Default {false}
       */
-    var isNamedSets: js.UndefOr[Boolean] = js.native
+    var isNamedSets: js.UndefOr[Boolean] = js.undefined
     
     /** Shows/hides the sub-total of the field.
       * @Default {true}
       */
-    var showSubTotal: js.UndefOr[Boolean] = js.native
+    var showSubTotal: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the sorting order for the field members.
       * @Default {ej.PivotAnalysis.SortOrder.Ascending}
       */
-    var sortOrder: js.UndefOr[SortOrder | String] = js.native
+    var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }
   object DataSourceRow {
     
@@ -1061,7 +1068,7 @@ object PivotClient {
       def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
       @scala.inline
-      def setDrilledItems(value: js.Array[_]): Self = StObject.set(x, "drilledItems", value.asInstanceOf[js.Any])
+      def setDrilledItems(value: js.Array[js.Any]): Self = StObject.set(x, "drilledItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDrilledItemsUndefined: Self = StObject.set(x, "drilledItems", js.undefined)
@@ -1119,34 +1126,33 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSourceRowsAdvancedFilter extends StObject {
     
     /** Allows you to set the filtering type while performing the advanced filtering.
       */
-    var advancedFilterType: js.UndefOr[String] = js.native
+    var advancedFilterType: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform the label filtering.
       * @Default {none}
       */
-    var labelFilterOperator: js.UndefOr[String] = js.native
+    var labelFilterOperator: js.UndefOr[String] = js.undefined
     
     /** In value filtering, this property contains the measure name to which the filter is applied.
       */
-    var measure: js.UndefOr[String] = js.native
+    var measure: js.UndefOr[String] = js.undefined
     
     /** Allows you to provide a level unique name to perform the advanced filtering.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform the value filtering.
       * @Default {none}
       */
-    var valueFilterOperator: js.UndefOr[String] = js.native
+    var valueFilterOperator: js.UndefOr[String] = js.undefined
     
     /** Allows you to hold the filter operand values in the advanced filtering.
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceRowsAdvancedFilter {
     
@@ -1190,7 +1196,7 @@ object PivotClient {
       def setValueFilterOperatorUndefined: Self = StObject.set(x, "valueFilterOperator", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -1200,18 +1206,17 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSourceRowsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
       * @Default {ej.PivotAnalysis.FilterType.Exclude}
       */
-    var filterType: js.UndefOr[FilterType | String] = js.native
+    var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceRowsFilterItems {
     
@@ -1231,7 +1236,7 @@ object PivotClient {
       def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -1241,52 +1246,51 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSourceValue extends StObject {
     
     /** Allows to set the axis name to place the measures items.
       * @Default {rows}
       */
-    var axis: js.UndefOr[String] = js.native
+    var axis: js.UndefOr[String] = js.undefined
     
     /** Allows to set the custom theme for the values.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the display caption for an item for the relational data source.
       */
-    var fieldCaption: js.UndefOr[String] = js.native
+    var fieldCaption: js.UndefOr[String] = js.undefined
     
     /** Allows you to bind the item by using its unique name as field name for the relational data source.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Allows to set the format of the values.
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** This property is set to display the formatted values with format types in the pivot grid.
       */
-    var formatString: js.UndefOr[String] = js.native
+    var formatString: js.UndefOr[String] = js.undefined
     
     /** Allows to set the formula for calculation of members values in the relational data source.
       */
-    var formula: js.UndefOr[String] = js.native
+    var formula: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the field is a calculated field or not with the relational data source.
       * @Default {false}
       */
-    var isCalculatedField: js.UndefOr[Boolean] = js.native
+    var isCalculatedField: js.UndefOr[Boolean] = js.undefined
     
     /** This holds the list of unique names of measures to bind them from the OLAP cube.
       * @Default {[]}
       */
-    var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.native
+    var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.undefined
     
     /** Allows to set the type of the pivot grid summary calculation for the value field with the relational data source.
       * @Default {ej.PivotAnalysis.SummaryType.Sum}
       */
-    var summaryType: js.UndefOr[SummaryType | String] = js.native
+    var summaryType: js.UndefOr[SummaryType | String] = js.undefined
   }
   object DataSourceValue {
     
@@ -1364,12 +1368,11 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DataSourceValuesMeasure extends StObject {
     
     /** Allows you to bind the measure from the OLAP data source by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
   }
   object DataSourceValuesMeasure {
     
@@ -1390,33 +1393,32 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DisplaySettings extends StObject {
     
     /** Allows you to customize the display of the pivot chart and pivot grid widgets in the tabs or tiles.
       * @Default {ej.PivotClient.ControlPlacement.Tab}
       */
-    var controlPlacement: js.UndefOr[ControlPlacement | String] = js.native
+    var controlPlacement: js.UndefOr[ControlPlacement | String] = js.undefined
     
     /** Allows you to set either the chart or grid as the start-up widget.
       * @Default {ej.PivotClient.DefaultView.Grid}
       */
-    var defaultView: js.UndefOr[DefaultView | String] = js.native
+    var defaultView: js.UndefOr[DefaultView | String] = js.undefined
     
     /** Allows you to switch to full screen view of the pivot chart and the pivot grid from default view in the pivot client.
       * @Default {false}
       */
-    var enableFullScreen: js.UndefOr[Boolean] = js.native
+    var enableFullScreen: js.UndefOr[Boolean] = js.undefined
     
     /** Enables an option to enhance the space for the pivot grid and pivot chart by hiding the cube browser and the axis element builder.
       * @Default {false}
       */
-    var enableTogglePanel: js.UndefOr[Boolean] = js.native
+    var enableTogglePanel: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the display mode (only chart/only grid/both) in the pivot client.
       * @Default {ej.PivotClient.DisplayMode.ChartAndGrid}
       */
-    var mode: js.UndefOr[DisplayMode | String] = js.native
+    var mode: js.UndefOr[DisplayMode | String] = js.undefined
   }
   object DisplaySettings {
     
@@ -1461,16 +1463,15 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait DrillThroughEventArgs extends StObject {
     
     /** return the JSON records of the generated cells on drill-through operation.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotClient.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object DrillThroughEventArgs {
     
@@ -1497,16 +1498,15 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait FetchReportEventArgs extends StObject {
     
     /** returns the object which holds the necessary parameters required for fetching the report names stored in database.
       */
-    var fetchReportSetting: js.UndefOr[js.Any] = js.native
+    var fetchReportSetting: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current instance of PivotClient control.
       */
-    var targetControl: js.UndefOr[js.Any] = js.native
+    var targetControl: js.UndefOr[js.Any] = js.undefined
   }
   object FetchReportEventArgs {
     
@@ -1533,16 +1533,15 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotClient component.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object LoadEventArgs {
     
@@ -1569,16 +1568,15 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait LoadReportEventArgs extends StObject {
     
     /** returns the object which holds the necessary parameters required for loading a report collection from database.
       */
-    var loadReportSetting: js.UndefOr[js.Any] = js.native
+    var loadReportSetting: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current instance of PivotClient control.
       */
-    var targetControl: js.UndefOr[js.Any] = js.native
+    var targetControl: js.UndefOr[js.Any] = js.undefined
   }
   object LoadReportEventArgs {
     
@@ -1605,274 +1603,273 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers when it reaches the client-side after any AJAX request.
       */
-    var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.native
+    var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Sets the mode for the pivot client widget for binding the OLAP or relational data sources.
       * @Default {ej.Pivot.AnalysisMode.Pivot}
       */
-    var analysisMode: js.UndefOr[AnalysisMode | String] = js.native
+    var analysisMode: js.UndefOr[AnalysisMode | String] = js.undefined
     
     /** Triggers before the chart label is rendered in the pivot chart.
       */
-    var axesLabelRendering: js.UndefOr[js.Function1[/* e */ AxesLabelRenderingEventArgs, Unit]] = js.native
+    var axesLabelRendering: js.UndefOr[js.Function1[/* e */ AxesLabelRenderingEventArgs, Unit]] = js.undefined
     
     /** Triggers before exporting the control.
       */
-    var beforeExport: js.UndefOr[js.Function1[/* e */ BeforeExportEventArgs, Unit]] = js.native
+    var beforeExport: js.UndefOr[js.Function1[/* e */ BeforeExportEventArgs, Unit]] = js.undefined
     
     /** Triggers before any AJAX request is passed from the client-side to the service methods.
       */
-    var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.native
+    var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Triggers when click action is performed over a grid value cell.
       */
-    var cellClick: js.UndefOr[js.Function1[/* e */ CellClickEventArgs, Unit]] = js.native
+    var cellClick: js.UndefOr[js.Function1[/* e */ CellClickEventArgs, Unit]] = js.undefined
     
     /** Triggers before rendering the pivot chart.
       */
-    var chartLoad: js.UndefOr[js.Function1[/* e */ ChartLoadEventArgs, Unit]] = js.native
+    var chartLoad: js.UndefOr[js.Function1[/* e */ ChartLoadEventArgs, Unit]] = js.undefined
     
     /** Allows you to set the specific chart type for the pivot chart in the pivot client widget.
       * @Default {ej.PivotChart.ChartTypes.Column}
       */
-    var chartType: js.UndefOr[ChartTypes | String] = js.native
+    var chartType: js.UndefOr[ChartTypes | String] = js.undefined
     
     /** Allows you to set the content for exporting the pivot client widget.
       * @Default {ej.PivotClient.ClientExportMode.ChartAndGrid}
       */
-    var clientExportMode: js.UndefOr[ClientExportMode | String] = js.native
+    var clientExportMode: js.UndefOr[ClientExportMode | String] = js.undefined
     
     /** Allows you to hide the cube browser and the axis element builder of the pivot client while initiating the widget.
       * @Default {false}
       */
-    var collapseCubeBrowserByDefault: js.UndefOr[Boolean] = js.native
+    var collapseCubeBrowserByDefault: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the CSS class to the pivot client for achieving the custom theme.
       * @Default {â€œâ€}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** An object is utilized to pass the additional information between the client-end and the service-end when the control functions are present in the server-mode.
       * @Default {{}}
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** Initializes the data source for the pivot client widget, when it functions completely on the client-side.
       * @Default {{}}
       */
-    var dataSource: js.UndefOr[DataSource] = js.native
+    var dataSource: js.UndefOr[DataSource] = js.undefined
     
     /** Allows you to customize the layout and appearance of the widget.
       * @Default {{}}
       */
-    var displaySettings: js.UndefOr[DisplaySettings] = js.native
+    var displaySettings: js.UndefOr[DisplaySettings] = js.undefined
     
     /** Triggers while clicking the value cells in the pivot grid.
       */
-    var drillThrough: js.UndefOr[js.Function1[/* e */ DrillThroughEventArgs, Unit]] = js.native
+    var drillThrough: js.UndefOr[js.Function1[/* e */ DrillThroughEventArgs, Unit]] = js.undefined
     
     /** Enables the advanced filtering options such as value filtering, label filtering, and sorting for each dimensions when binding the OLAP data in the server mode.
       * @Default {false}
       */
-    var enableAdvancedFilter: js.UndefOr[Boolean] = js.native
+    var enableAdvancedFilter: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to get cell details in JSON format by clicking the value cell.
       * @Default {false}
       */
-    var enableCellClick: js.UndefOr[Boolean] = js.native
+    var enableCellClick: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to get cell details in JSON format by double-clicking the value cell.
       * @Default {false}
       */
-    var enableCellDoubleClick: js.UndefOr[Boolean] = js.native
+    var enableCellDoubleClick: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to export entire data instead of current page data, while paging option is enabled.
       * @Default {false}
       */
-    var enableCompleteDataExport: js.UndefOr[Boolean] = js.native
+    var enableCompleteDataExport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to refresh the control on-demand and not during the every UI operation.
       * @Default {false}
       */
-    var enableDeferUpdate: js.UndefOr[Boolean] = js.native
+    var enableDeferUpdate: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the drill-through feature which retrieves the raw items that are used to create a specific cell in the pivot grid.
       * @Default {false}
       */
-    var enableDrillThrough: js.UndefOr[Boolean] = js.native
+    var enableDrillThrough: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to view the KPI elements in tree-view of the pivot client's cube browser.
       * @Default {false}
       */
-    var enableKPI: js.UndefOr[Boolean] = js.native
+    var enableKPI: js.UndefOr[Boolean] = js.undefined
     
     /** Allows to save and load the reports in a customized way with the help of events.
       * @Default {false}
       */
-    var enableLocalStorage: js.UndefOr[Boolean] = js.native
+    var enableLocalStorage: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the visibility of measure group selector drop-down in the cube browser.
       * @Default {false}
       */
-    var enableMeasureGroups: js.UndefOr[Boolean] = js.native
+    var enableMeasureGroups: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables paging in the member editor for viewing the large count of members in the pages.
       * @Default {false}
       */
-    var enableMemberEditorPaging: js.UndefOr[Boolean] = js.native
+    var enableMemberEditorPaging: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/Disables sorting option in member editor dialog for the members of the respective field.
       * @Default {false}
       */
-    var enableMemberEditorSorting: js.UndefOr[Boolean] = js.native
+    var enableMemberEditorSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable the paging for both the pivot chart and the pivot grid components for viewing the large data.
       * @Default {false}
       */
-    var enablePaging: js.UndefOr[Boolean] = js.native
+    var enablePaging: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to include the pivot tree map component as one of the chart types.
       * @Default {false}
       */
-    var enablePivotTreeMap: js.UndefOr[Boolean] = js.native
+    var enablePivotTreeMap: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to view the layout of the pivot client from right to left.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the splitter option for resizing the elements in the control.
       * @Default {false}
       */
-    var enableSplitter: js.UndefOr[Boolean] = js.native
+    var enableSplitter: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable the virtual scrolling for both the pivot chart and pivot grid components for viewing the large data.
       * @Default {false}
       */
-    var enableVirtualScrolling: js.UndefOr[Boolean] = js.native
+    var enableVirtualScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable &quot;withCredentials&quot; property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
       * @Default {false}
       */
-    var enableXHRCredentials: js.UndefOr[Boolean] = js.native
+    var enableXHRCredentials: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers before fetching the report collection from the storage.
       */
-    var fetchReport: js.UndefOr[js.Function1[/* e */ FetchReportEventArgs, Unit]] = js.native
+    var fetchReport: js.UndefOr[js.Function1[/* e */ FetchReportEventArgs, Unit]] = js.undefined
     
     /** Sets the summary layout for the pivot grid. Following are the ways in which the summary can be positioned: normal summary (bottom), top summary, no summary, and Microsoft Excel
       * summary.
       * @Default {ej.PivotGrid.Layout.Normal}
       */
-    var gridLayout: js.UndefOr[Layout | String] = js.native
+    var gridLayout: js.UndefOr[Layout | String] = js.undefined
     
     /** Allows you to enable the pivot clientâ€™s responsiveness in the browser layout.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers while initiating the loading of the widget.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Triggers before loading the saved collection of reports.
       */
-    var loadReport: js.UndefOr[js.Function1[/* e */ LoadReportEventArgs, Unit]] = js.native
+    var loadReport: js.UndefOr[js.Function1[/* e */ LoadReportEventArgs, Unit]] = js.undefined
     
     /** Allows you to set the localized language for the widget.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the maximum number of nodes as well as child nodes to be displayed in the member editor.
       * @Default {1000}
       */
-    var maxNodeLimitInMemberEditor: js.UndefOr[Double] = js.native
+    var maxNodeLimitInMemberEditor: js.UndefOr[Double] = js.undefined
     
     /** Allows you to set the number of members to be displayed in each page of the member editor on applying the paging in it.
       * @Default {100}
       */
-    var memberEditorPageSize: js.UndefOr[Double] = js.native
+    var memberEditorPageSize: js.UndefOr[Double] = js.undefined
     
     /** Sets the mode for the pivot client widget to bind the data source in the server-side or the client-side.
       * @Default {ej.Pivot.OperationalMode.ClientMode}
       */
-    var operationalMode: js.UndefOr[OperationalMode | String] = js.native
+    var operationalMode: js.UndefOr[OperationalMode | String] = js.undefined
     
     /** Triggers when clicking on any chart series points in the pivot chart.
       */
-    var pointRegionClick: js.UndefOr[js.Function1[/* e */ PointRegionClickEventArgs, Unit]] = js.native
+    var pointRegionClick: js.UndefOr[js.Function1[/* e */ PointRegionClickEventArgs, Unit]] = js.undefined
     
     /** Triggers when the pivot client widget completes all operations at client-end after any AJAX request.
       */
-    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.native
+    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.undefined
     
     /** Triggers when any error is occurred during the AJAX request.
       */
-    var renderFailure: js.UndefOr[js.Function1[/* e */ RenderFailureEventArgs, Unit]] = js.native
+    var renderFailure: js.UndefOr[js.Function1[/* e */ RenderFailureEventArgs, Unit]] = js.undefined
     
     /** Triggers when the pivot client is completely rendered.
       */
-    var renderSuccess: js.UndefOr[js.Function1[/* e */ RenderSuccessEventArgs, Unit]] = js.native
+    var renderSuccess: js.UndefOr[js.Function1[/* e */ RenderSuccessEventArgs, Unit]] = js.undefined
     
     /** Triggers before saving the current collection of reports.
       */
-    var saveReport: js.UndefOr[js.Function1[/* e */ SaveReportEventArgs, Unit]] = js.native
+    var saveReport: js.UndefOr[js.Function1[/* e */ SaveReportEventArgs, Unit]] = js.undefined
     
     /** Triggers before rendering the pivot schema designer.
       */
-    var schemaLoad: js.UndefOr[js.Function1[/* e */ SchemaLoadEventArgs, Unit]] = js.native
+    var schemaLoad: js.UndefOr[js.Function1[/* e */ SchemaLoadEventArgs, Unit]] = js.undefined
     
     /** Allows you to set the custom name for methods at service-end, and it is communicated during the AJAX post.
       * @Default {{}}
       */
-    var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.native
+    var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.undefined
     
     /** Allows you to load the saved report collection from the database.
       * @Default {false}
       */
-    var showReportCollection: js.UndefOr[Boolean] = js.native
+    var showReportCollection: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to show a unique name on the pivot button.
       * @Default {false}
       */
-    var showUniqueNameOnPivotButton: js.UndefOr[Boolean] = js.native
+    var showUniqueNameOnPivotButton: js.UndefOr[Boolean] = js.undefined
     
     /** Options to customize the size of the pivot client control.
       * @Default {Example:}
       */
-    var size: js.UndefOr[js.Any] = js.native
+    var size: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the title for the pivot client widget.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the visibility of icons in the toolbar panel.
       * @Default {{}}
       */
-    var toolbarIconSettings: js.UndefOr[ToolbarIconSettings] = js.native
+    var toolbarIconSettings: js.UndefOr[ToolbarIconSettings] = js.undefined
     
     /** Triggers before rendering the pivot tree map.
       */
-    var treeMapLoad: js.UndefOr[js.Function1[/* e */ TreeMapLoadEventArgs, Unit]] = js.native
+    var treeMapLoad: js.UndefOr[js.Function1[/* e */ TreeMapLoadEventArgs, Unit]] = js.undefined
     
     /** Connects the service using the specified URL for any server updates.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /** Triggers when clicking any value cell in the pivot grid.
       */
-    var valueCellHyperlinkClick: js.UndefOr[js.Function1[/* e */ ValueCellHyperlinkClickEventArgs, Unit]] = js.native
+    var valueCellHyperlinkClick: js.UndefOr[js.Function1[/* e */ ValueCellHyperlinkClickEventArgs, Unit]] = js.undefined
     
     /** Holds the necessary properties for value sorting.
       * @Default {{}}
       */
-    var valueSortSettings: js.UndefOr[ValueSortSettings] = js.native
+    var valueSortSettings: js.UndefOr[ValueSortSettings] = js.undefined
   }
   object Model {
     
@@ -2229,20 +2226,19 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait PointRegionClickEventArgs extends StObject {
     
     /** returns the clicked Chart series points information.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the model object bound with PivotClient control.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current action of PivotClient control.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PointRegionClickEventArgs {
     
@@ -2275,16 +2271,15 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait RenderCompleteEventArgs extends StObject {
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotClient component.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object RenderCompleteEventArgs {
     
@@ -2311,20 +2306,19 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait RenderFailureEventArgs extends StObject {
     
     /** returns the custom object bound with the control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotClient control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the error message with error code.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object RenderFailureEventArgs {
     
@@ -2357,12 +2351,11 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait RenderSuccessEventArgs extends StObject {
     
     /** returns the object of PivotClient control at that instant.
       */
-    var args: js.UndefOr[js.Any] = js.native
+    var args: js.UndefOr[js.Any] = js.undefined
   }
   object RenderSuccessEventArgs {
     
@@ -2383,16 +2376,15 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait SaveReportEventArgs extends StObject {
     
     /** returns the object which holds the necessary parameters required for saving the report collection.
       */
-    var saveReportSetting: js.UndefOr[js.Any] = js.native
+    var saveReportSetting: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current instance of PivotClient control.
       */
-    var targetControl: js.UndefOr[js.Any] = js.native
+    var targetControl: js.UndefOr[js.Any] = js.undefined
   }
   object SaveReportEventArgs {
     
@@ -2419,12 +2411,11 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait SchemaLoadEventArgs extends StObject {
     
     /** returns the current action of PivotSchemaDesigner control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
   }
   object SchemaLoadEventArgs {
     
@@ -2445,123 +2436,122 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait ServiceMethodSettings extends StObject {
     
     /** Allows you to set the custom name for the service method that is responsible for updating the report with the calculated member.
       * @Default {CalculatedMember}
       */
-    var calculatedMember: js.UndefOr[String] = js.native
+    var calculatedMember: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for updating the entire report and widget, while changing the cube.
       * @Default {CubeChanged}
       */
-    var cubeChanged: js.UndefOr[String] = js.native
+    var cubeChanged: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for performing the drill through operation in the data table.
       * @Default {DrillThroughDataTable}
       */
-    var drillThroughDataTable: js.UndefOr[String] = js.native
+    var drillThroughDataTable: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for performing the drill through operation.
       * @Default {DrillThroughHierarchies}
       */
-    var drillThroughHierarchies: js.UndefOr[String] = js.native
+    var drillThroughHierarchies: js.UndefOr[String] = js.undefined
     
     /** Allows to set the custom name for the service method responsible for exporting.
       * @Default {Export}
       */
-    var exportPivotClient: js.UndefOr[String] = js.native
+    var exportPivotClient: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible to get the members for tree-view in the member-editor dialog.
       * @Default {FetchMemberTreeNodes}
       */
-    var fetchMemberTreeNodes: js.UndefOr[String] = js.native
+    var fetchMemberTreeNodes: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for fetching the report names from the database.
       * @Default {FetchReportListFromDB}
       */
-    var fetchReportList: js.UndefOr[String] = js.native
+    var fetchReportList: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for updating the report while filtering the members.
       * @Default {FilterElement}
       */
-    var filterElement: js.UndefOr[String] = js.native
+    var filterElement: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for initializing the pivot client.
       * @Default {InitializeClient}
       */
-    var initialize: js.UndefOr[String] = js.native
+    var initialize: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for loading a report collection from the database.
       * @Default {LoadReportFromDB}
       */
-    var loadReport: js.UndefOr[String] = js.native
+    var loadReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for retrieving the MDX query for the current report.
       * @Default {GetMDXQuery}
       */
-    var mdxQuery: js.UndefOr[String] = js.native
+    var mdxQuery: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for updating the tree-view in the cube browser, while changing the measure group.
       * @Default {MeasureGroupChanged}
       */
-    var measureGroupChanged: js.UndefOr[String] = js.native
+    var measureGroupChanged: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible to get the child members, on tree-view node expansion.
       * @Default {MemberExpanded}
       */
-    var memberExpand: js.UndefOr[String] = js.native
+    var memberExpand: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for updating the report while dropping a node/split button in the axis element builder.
       * @Default {NodeDropped}
       */
-    var nodeDropped: js.UndefOr[String] = js.native
+    var nodeDropped: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method while navigating between the pages in the paged pivot client.
       * @Default {Paging}
       */
-    var paging: js.UndefOr[String] = js.native
+    var paging: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible to remove a report collection from the database.
       * @Default {RemoveReportFromDB}
       */
-    var removeDBReport: js.UndefOr[String] = js.native
+    var removeDBReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible to update the report while removing the split button from the axis element builder.
       * @Default {RemoveSplitButton}
       */
-    var removeSplitButton: js.UndefOr[String] = js.native
+    var removeSplitButton: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for renaming the report collection in the database.
       * @Default {RenameReportInDB}
       */
-    var renameDBReport: js.UndefOr[String] = js.native
+    var renameDBReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for saving the report collection in the database.
       * @Default {SaveReportToDB}
       */
-    var saveReport: js.UndefOr[String] = js.native
+    var saveReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for toggling the elements in the row and column axes.
       * @Default {ToggleAxis}
       */
-    var toggleAxis: js.UndefOr[String] = js.native
+    var toggleAxis: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for all the toolbar operations.
       * @Default {ToolbarOperations}
       */
-    var toolbarServices: js.UndefOr[String] = js.native
+    var toolbarServices: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for updating the report collection.
       * @Default {UpdateReport}
       */
-    var updateReport: js.UndefOr[String] = js.native
+    var updateReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for performing value sorting operation in the PivotClient.
       * @Default {ValueSorting}
       */
-    var valueSorting: js.UndefOr[String] = js.native
+    var valueSorting: js.UndefOr[String] = js.undefined
   }
   object ServiceMethodSettings {
     
@@ -2714,88 +2704,87 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait ToolbarIconSettings extends StObject {
     
     /** Allows you to set the visibility of Add Report icon in the toolbar panel.
       * @Default {true}
       */
-    var enableAddReport: js.UndefOr[Boolean] = js.native
+    var enableAddReport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Calculated Member icon in the toolbar panel.
       * @Default {false}
       */
-    var enableCalculatedMember: js.UndefOr[Boolean] = js.native
+    var enableCalculatedMember: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Chart Types icon in the toolbar panel.
       * @Default {true}
       */
-    var enableChartTypes: js.UndefOr[Boolean] = js.native
+    var enableChartTypes: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of DB Manipulation icon in the toolbar panel.
       * @Default {true}
       */
-    var enableDBManipulation: js.UndefOr[Boolean] = js.native
+    var enableDBManipulation: js.UndefOr[Boolean] = js.undefined
     
     /** Allows to set the visibility of Defer Update icon in the toolbar panel.
       * @Default {false}
       */
-    var enableDeferUpdate: js.UndefOr[Boolean] = js.native
+    var enableDeferUpdate: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Excel Export icon in the toolbar panel.
       * @Default {true}
       */
-    var enableExcelExport: js.UndefOr[Boolean] = js.native
+    var enableExcelExport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows to set the visibility of Full Screen icon in the toolbar panel.
       * @Default {false}
       */
-    var enableFullScreen: js.UndefOr[Boolean] = js.native
+    var enableFullScreen: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of MDX Query icon in the toolbar panel.
       * @Default {true}
       */
-    var enableMDXQuery: js.UndefOr[Boolean] = js.native
+    var enableMDXQuery: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of New Report icon in the toolbar panel.
       * @Default {true}
       */
-    var enableNewReport: js.UndefOr[Boolean] = js.native
+    var enableNewReport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of PDF Export icon in the toolbar panel.
       * @Default {true}
       */
-    var enablePdfExport: js.UndefOr[Boolean] = js.native
+    var enablePdfExport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Remove Report icon in the toolbar panel.
       * @Default {true}
       */
-    var enableRemoveReport: js.UndefOr[Boolean] = js.native
+    var enableRemoveReport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Rename Report icon in the toolbar panel.
       * @Default {true}
       */
-    var enableRenameReport: js.UndefOr[Boolean] = js.native
+    var enableRenameReport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Sort/Filter Column icon in the toolbar panel.
       * @Default {true}
       */
-    var enableSortOrFilterColumn: js.UndefOr[Boolean] = js.native
+    var enableSortOrFilterColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Sort/Filter Row icon in the toolbar panel.
       * @Default {true}
       */
-    var enableSortOrFilterRow: js.UndefOr[Boolean] = js.native
+    var enableSortOrFilterRow: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Toggle Axis icon in the toolbar panel.
       * @Default {true}
       */
-    var enableToggleAxis: js.UndefOr[Boolean] = js.native
+    var enableToggleAxis: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Word Export icon in the toolbar panel.
       * @Default {true}
       */
-    var enableWordExport: js.UndefOr[Boolean] = js.native
+    var enableWordExport: js.UndefOr[Boolean] = js.undefined
   }
   object ToolbarIconSettings {
     
@@ -2906,20 +2895,19 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait TreeMapLoadEventArgs extends StObject {
     
     /** returns the current action of PivotTreeMap control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object TreeMapLoadEventArgs {
     
@@ -2952,28 +2940,27 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait ValueCellHyperlinkClickEventArgs extends StObject {
     
     /** returns the clicked cell information.
       */
-    var args: js.UndefOr[js.Any] = js.native
+    var args: js.UndefOr[js.Any] = js.undefined
     
     /** returns the custom object bounds with PivotClient control.
       */
-    var customerObject: js.UndefOr[js.Any] = js.native
+    var customerObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotGrid control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the model object bound with PivotClient control.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current action of PivotClient control.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ValueCellHyperlinkClickEventArgs {
     
@@ -3018,21 +3005,20 @@ object PivotClient {
     }
   }
   
-  @js.native
   trait ValueSortSettings extends StObject {
     
     /** Allows you to set the string for separating column headers provided in the headerText property.
       */
-    var headerDelimiters: js.UndefOr[String] = js.native
+    var headerDelimiters: js.UndefOr[String] = js.undefined
     
     /** Contains the header of the specific column to which value sorting is applied.
       */
-    var headerText: js.UndefOr[String] = js.native
+    var headerText: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the sorting order of values of the field.
       * @Default {ej.PivotAnalysis.SortOrder.Ascending}
       */
-    var sortOrder: js.UndefOr[SortOrder | String] = js.native
+    var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }
   object ValueSortSettings {
     

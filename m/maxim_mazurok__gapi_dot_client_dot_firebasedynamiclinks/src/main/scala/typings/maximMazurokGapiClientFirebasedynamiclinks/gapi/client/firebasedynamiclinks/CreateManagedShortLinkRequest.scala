@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebased
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateManagedShortLinkRequest extends StObject {
   
   /** Information about the Dynamic Link to be shortened. [Learn more](https://firebase.google.com/docs/reference/dynamic-links/link-shortener). */
-  var dynamicLinkInfo: js.UndefOr[DynamicLinkInfo] = js.native
+  var dynamicLinkInfo: js.UndefOr[DynamicLinkInfo] = js.undefined
   
   /**
     * Full long Dynamic Link URL with desired query parameters specified. For example, "https://sample.app.goo.gl/?link=http://www.google.com&apn=com.sample", [Learn
     * more](https://firebase.google.com/docs/reference/dynamic-links/link-shortener).
     */
-  var longDynamicLink: js.UndefOr[String] = js.native
+  var longDynamicLink: js.UndefOr[String] = js.undefined
   
   /**
     * Link name to associate with the link. It's used for marketer to identify manually-created links in the Firebase console (https://console.firebase.google.com/). Links must be named
     * to be tracked.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Google SDK version. Version takes the form "$major.$minor.$patch" */
-  var sdkVersion: js.UndefOr[String] = js.native
+  var sdkVersion: js.UndefOr[String] = js.undefined
   
   /** Short Dynamic Link suffix. Optional. */
-  var suffix: js.UndefOr[Suffix] = js.native
+  var suffix: js.UndefOr[Suffix] = js.undefined
 }
 object CreateManagedShortLinkRequest {
   

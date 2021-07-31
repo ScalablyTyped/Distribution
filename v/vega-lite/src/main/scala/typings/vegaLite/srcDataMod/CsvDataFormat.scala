@@ -4,16 +4,15 @@ import typings.vegaLite.vegaLiteStrings.csv
 import typings.vegaLite.vegaLiteStrings.tsv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CsvDataFormat
-  extends DataFormatBase
+  extends StObject
+     with DataFormatBase
      with DataFormat {
   
   @JSName("type")
-  var type_CsvDataFormat: js.UndefOr[csv | tsv] = js.native
+  var type_CsvDataFormat: js.UndefOr[csv | tsv] = js.undefined
 }
 object CsvDataFormat {
   

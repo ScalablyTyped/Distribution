@@ -3,15 +3,15 @@ package typings.socketclusterClient.clientsocketMod
 import typings.agChannel.mod.ChannelState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SubscribeStateChangeData extends SubscribeData {
+trait SubscribeStateChangeData
+  extends StObject
+     with SubscribeData {
   
-  var newChannelState: ChannelState = js.native
+  var newChannelState: ChannelState
   
-  var oldChannelState: ChannelState = js.native
+  var oldChannelState: ChannelState
 }
 object SubscribeStateChangeData {
   

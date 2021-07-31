@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.ColumnMoving event.
   */
-@js.native
-trait ASPxClientGridViewColumnMovingEventArgs extends ASPxClientEventArgs {
+trait ASPxClientGridViewColumnMovingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets or sets whether a column is allowed to be moved.
     */
-  var allow: Boolean = js.native
+  var allow: Boolean
   
   /**
     * Gets the target column, before or after which the source column will be inserted (if dropped).
     */
-  var destinationColumn: ASPxClientGridViewColumn = js.native
+  var destinationColumn: ASPxClientGridViewColumn
   
   /**
     * Gets whether the source column will be inserted before the target column (if dropped).
     */
-  var isDropBefore: Boolean = js.native
+  var isDropBefore: Boolean
   
   /**
     * Gets whether the source column is currently over the Group Panel.
     */
-  var isGroupPanel: Boolean = js.native
+  var isGroupPanel: Boolean
   
   /**
     * Gets the column currently being dragged by an end-user.
     */
-  var sourceColumn: ASPxClientGridViewColumn = js.native
+  var sourceColumn: ASPxClientGridViewColumn
 }
 object ASPxClientGridViewColumnMovingEventArgs {
   

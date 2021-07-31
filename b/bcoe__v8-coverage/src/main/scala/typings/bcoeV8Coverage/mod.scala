@@ -12,10 +12,13 @@ import typings.bcoeV8Coverage.typesMod.ScriptCov
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@bcoe/v8-coverage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@bcoe/v8-coverage", "RangeTree")
   @js.native
@@ -31,67 +34,56 @@ object mod {
   /* static members */
   object RangeTree {
     
+    @JSImport("@bcoe/v8-coverage", "RangeTree")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @precodition `ranges` are well-formed and pre-order sorted
       */
-    @JSImport("@bcoe/v8-coverage", "RangeTree.fromSortedRanges")
-    @js.native
-    def fromSortedRanges(ranges: js.Array[RangeCov]): js.UndefOr[typings.bcoeV8Coverage.rangeTreeMod.RangeTree] = js.native
+    @scala.inline
+    def fromSortedRanges(ranges: js.Array[RangeCov]): js.UndefOr[typings.bcoeV8Coverage.rangeTreeMod.RangeTree] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSortedRanges")(ranges.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.bcoeV8Coverage.rangeTreeMod.RangeTree]]
   }
   
-  @JSImport("@bcoe/v8-coverage", "cloneFunctionCov")
-  @js.native
-  def cloneFunctionCov(functionCov: ReadonlyFunctionCov): FunctionCov = js.native
+  @scala.inline
+  def cloneFunctionCov(functionCov: ReadonlyFunctionCov): FunctionCov = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneFunctionCov")(functionCov.asInstanceOf[js.Any]).asInstanceOf[FunctionCov]
   
-  @JSImport("@bcoe/v8-coverage", "cloneProcessCov")
-  @js.native
-  def cloneProcessCov(processCov: ReadonlyProcessCov): ProcessCov = js.native
+  @scala.inline
+  def cloneProcessCov(processCov: ReadonlyProcessCov): ProcessCov = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneProcessCov")(processCov.asInstanceOf[js.Any]).asInstanceOf[ProcessCov]
   
-  @JSImport("@bcoe/v8-coverage", "cloneRangeCov")
-  @js.native
-  def cloneRangeCov(rangeCov: ReadonlyRangeCov): RangeCov = js.native
+  @scala.inline
+  def cloneRangeCov(rangeCov: ReadonlyRangeCov): RangeCov = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneRangeCov")(rangeCov.asInstanceOf[js.Any]).asInstanceOf[RangeCov]
   
-  @JSImport("@bcoe/v8-coverage", "cloneScriptCov")
-  @js.native
-  def cloneScriptCov(scriptCov: ReadonlyScriptCov): ScriptCov = js.native
+  @scala.inline
+  def cloneScriptCov(scriptCov: ReadonlyScriptCov): ScriptCov = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneScriptCov")(scriptCov.asInstanceOf[js.Any]).asInstanceOf[ScriptCov]
   
-  @JSImport("@bcoe/v8-coverage", "compareFunctionCovs")
-  @js.native
-  def compareFunctionCovs(a: ReadonlyFunctionCov, b: ReadonlyFunctionCov): Double = js.native
+  @scala.inline
+  def compareFunctionCovs(a: ReadonlyFunctionCov, b: ReadonlyFunctionCov): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareFunctionCovs")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@bcoe/v8-coverage", "compareRangeCovs")
-  @js.native
-  def compareRangeCovs(a: ReadonlyRangeCov, b: ReadonlyRangeCov): Double = js.native
+  @scala.inline
+  def compareRangeCovs(a: ReadonlyRangeCov, b: ReadonlyRangeCov): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangeCovs")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@bcoe/v8-coverage", "compareScriptCovs")
-  @js.native
-  def compareScriptCovs(a: ReadonlyScriptCov, b: ReadonlyScriptCov): Double = js.native
+  @scala.inline
+  def compareScriptCovs(a: ReadonlyScriptCov, b: ReadonlyScriptCov): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareScriptCovs")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@bcoe/v8-coverage", "emitForest")
-  @js.native
-  def emitForest(trees: js.Array[ReadonlyRangeTree]): String = js.native
+  @scala.inline
+  def emitForest(trees: js.Array[ReadonlyRangeTree]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emitForest")(trees.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@bcoe/v8-coverage", "emitForestLines")
-  @js.native
-  def emitForestLines(trees: js.Array[ReadonlyRangeTree]): js.Array[String] = js.native
+  @scala.inline
+  def emitForestLines(trees: js.Array[ReadonlyRangeTree]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("emitForestLines")(trees.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@bcoe/v8-coverage", "mergeFunctionCovs")
-  @js.native
-  def mergeFunctionCovs(funcCovs: js.Array[FunctionCov]): js.UndefOr[FunctionCov] = js.native
+  @scala.inline
+  def mergeFunctionCovs(funcCovs: js.Array[FunctionCov]): js.UndefOr[FunctionCov] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeFunctionCovs")(funcCovs.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[FunctionCov]]
   
-  @JSImport("@bcoe/v8-coverage", "mergeProcessCovs")
-  @js.native
-  def mergeProcessCovs(processCovs: js.Array[ProcessCov]): ProcessCov = js.native
+  @scala.inline
+  def mergeProcessCovs(processCovs: js.Array[ProcessCov]): ProcessCov = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeProcessCovs")(processCovs.asInstanceOf[js.Any]).asInstanceOf[ProcessCov]
   
-  @JSImport("@bcoe/v8-coverage", "mergeScriptCovs")
-  @js.native
-  def mergeScriptCovs(scriptCovs: js.Array[ScriptCov]): js.UndefOr[ScriptCov] = js.native
+  @scala.inline
+  def mergeScriptCovs(scriptCovs: js.Array[ScriptCov]): js.UndefOr[ScriptCov] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeScriptCovs")(scriptCovs.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ScriptCov]]
   
-  @JSImport("@bcoe/v8-coverage", "parseFunctionRanges")
-  @js.native
-  def parseFunctionRanges(text: String, offsetMap: Map[Double, Double]): js.Array[RangeCov] = js.native
+  @scala.inline
+  def parseFunctionRanges(text: String, offsetMap: Map[Double, Double]): js.Array[RangeCov] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFunctionRanges")(text.asInstanceOf[js.Any], offsetMap.asInstanceOf[js.Any])).asInstanceOf[js.Array[RangeCov]]
   
-  @JSImport("@bcoe/v8-coverage", "parseOffsets")
-  @js.native
-  def parseOffsets(text: String): Map[Double, Double] = js.native
+  @scala.inline
+  def parseOffsets(text: String): Map[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseOffsets")(text.asInstanceOf[js.Any]).asInstanceOf[Map[Double, Double]]
 }

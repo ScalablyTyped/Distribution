@@ -6,7 +6,6 @@ import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,12 +18,11 @@ object mod extends Shortcut {
   @js.native
   val Splitpane: SplitpaneConstructor = js.native
   
-  @js.native
   trait SplitpaneComputed extends StObject {
     
-    def cursor(): String = js.native
+    def cursor(): String
     
-    def userSelect(): String = js.native
+    def userSelect(): String
   }
   object SplitpaneComputed {
     
@@ -46,7 +44,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait SplitpaneConstructor extends VueConstructor[Vue] {
+  trait SplitpaneConstructor
+    extends StObject
+       with VueConstructor[Vue] {
     
     var computed: SplitpaneComputed = js.native
     
@@ -59,21 +59,20 @@ object mod extends Shortcut {
     var watch: SplitpaneWatch = js.native
   }
   
-  @js.native
   trait SplitpaneData extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var hasMoved: Boolean = js.native
+    var hasMoved: Boolean
     
-    var height: js.Any = js.native
+    var height: js.Any
     
     // null number string
-    var percent: Double = js.native
+    var percent: Double
     
-    var resizeType: String = js.native
+    var resizeType: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SplitpaneData {
     
@@ -114,16 +113,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SplitpaneMethods extends StObject {
     
-    def onClick(): Unit = js.native
+    def onClick(): Unit
     
-    def onMouseDown(): Unit = js.native
+    def onMouseDown(): Unit
     
-    def onMouseMove(e: Event): Unit = js.native
+    def onMouseMove(e: Event): Unit
     
-    def onMouseUp(): Unit = js.native
+    def onMouseUp(): Unit
   }
   object SplitpaneMethods {
     
@@ -150,17 +148,16 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SplitpaneProps extends StObject {
     
     // = ['vertical', 'horizontal']
-    var className: String = js.native
+    var className: String
     
-    var defaultPercent: Double = js.native
+    var defaultPercent: Double
     
-    var minPercent: Double = js.native
+    var minPercent: Double
     
-    var split: String = js.native
+    var split: String
   }
   object SplitpaneProps {
     
@@ -187,10 +184,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SplitpaneWatch extends StObject {
     
-    def defaultPercent(`val`: js.Any): Unit = js.native
+    def defaultPercent(`val`: js.Any): Unit
   }
   object SplitpaneWatch {
     

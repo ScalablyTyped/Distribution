@@ -5,64 +5,62 @@ import typings.nwJs.nwJsStrings.no_restriction
 import typings.nwJs.nwJsStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Coockies.set() details argument object
   */
-@js.native
 trait CookiesSetDetails extends StObject {
   
   /**
     * The domain of the cookie. If omitted, the cookie becomes a host-only cookie.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * The expiration date of the cookie as the number of seconds since the UNIX epoch. If omitted, the cookie becomes a session cookie.
     */
-  var expirationDate: js.UndefOr[Double] = js.native
+  var expirationDate: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the cookie should be marked as HttpOnly. Defaults to false.
     */
-  var httpOnly: js.UndefOr[Boolean] = js.native
+  var httpOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the cookie. Empty by default if omitted.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The path of the cookie. Defaults to the path portion of the url parameter.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The cookie's same-site status: defaults to 'no_restriction'.
     */
-  var sameSite: js.UndefOr[String | no_restriction | lax | strict] = js.native
+  var sameSite: js.UndefOr[String | no_restriction | lax | strict] = js.undefined
   
   /**
     * Whether the cookie should be marked as Secure. Defaults to false.
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the cookie store in which to set the cookie. By default, the cookie is set in the current execution context's cookie store.
     */
-  var storeId: js.UndefOr[String] = js.native
+  var storeId: js.UndefOr[String] = js.undefined
   
   /**
     * The request-URI to associate with the setting of the cookie.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * The value of the cookie. Empty by default if omitted.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object CookiesSetDetails {
   

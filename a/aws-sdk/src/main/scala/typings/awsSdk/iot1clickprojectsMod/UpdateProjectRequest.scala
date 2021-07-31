@@ -2,26 +2,24 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateProjectRequest extends StObject {
   
   /**
     * An optional user-defined description for the project.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * An object defining the project update. Once a project has been created, you cannot add device template names to the project. However, for a given placementTemplate, you can update the associated callbackOverrides for the device definition using this API.
     */
-  var placementTemplate: js.UndefOr[PlacementTemplate] = js.native
+  var placementTemplate: js.UndefOr[PlacementTemplate] = js.undefined
   
   /**
     * The name of the project to be updated.
     */
-  var projectName: ProjectName = js.native
+  var projectName: ProjectName
 }
 object UpdateProjectRequest {
   

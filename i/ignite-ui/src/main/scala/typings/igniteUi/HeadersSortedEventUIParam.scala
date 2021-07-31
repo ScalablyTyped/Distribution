@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadersSortedEventUIParam extends StObject {
   
   /**
     * Gets an array of the level names and sort directions that were actually applied to the table view.
     */
-  var appliedLevelSortDirections: js.UndefOr[js.Array[_]] = js.native
+  var appliedLevelSortDirections: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets an array of the level names and sort directions that were used.
     */
-  var levelSortDirections: js.UndefOr[js.Array[_]] = js.native
+  var levelSortDirections: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets a reference to the pivot grid.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object HeadersSortedEventUIParam {
   
@@ -35,7 +33,7 @@ object HeadersSortedEventUIParam {
   implicit class HeadersSortedEventUIParamMutableBuilder[Self <: HeadersSortedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAppliedLevelSortDirections(value: js.Array[_]): Self = StObject.set(x, "appliedLevelSortDirections", value.asInstanceOf[js.Any])
+    def setAppliedLevelSortDirections(value: js.Array[js.Any]): Self = StObject.set(x, "appliedLevelSortDirections", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAppliedLevelSortDirectionsUndefined: Self = StObject.set(x, "appliedLevelSortDirections", js.undefined)
@@ -44,7 +42,7 @@ object HeadersSortedEventUIParam {
     def setAppliedLevelSortDirectionsVarargs(value: js.Any*): Self = StObject.set(x, "appliedLevelSortDirections", js.Array(value :_*))
     
     @scala.inline
-    def setLevelSortDirections(value: js.Array[_]): Self = StObject.set(x, "levelSortDirections", value.asInstanceOf[js.Any])
+    def setLevelSortDirections(value: js.Array[js.Any]): Self = StObject.set(x, "levelSortDirections", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLevelSortDirectionsUndefined: Self = StObject.set(x, "levelSortDirections", js.undefined)

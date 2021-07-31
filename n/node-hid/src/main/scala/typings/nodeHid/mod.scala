@@ -6,10 +6,13 @@ import typings.nodeHid.nodeHidStrings.hidraw
 import typings.nodeHid.nodeHidStrings.libusb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-hid", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-hid", "HID")
   @js.native
@@ -40,42 +43,38 @@ object mod {
     def write(values: Buffer): Double = js.native
   }
   
-  @JSImport("node-hid", "devices")
-  @js.native
-  def devices(): js.Array[Device] = js.native
-  @JSImport("node-hid", "devices")
-  @js.native
-  def devices(vid: Double, pid: Double): js.Array[Device] = js.native
+  @scala.inline
+  def devices(): js.Array[Device] = ^.asInstanceOf[js.Dynamic].applyDynamic("devices")().asInstanceOf[js.Array[Device]]
+  @scala.inline
+  def devices(vid: Double, pid: Double): js.Array[Device] = (^.asInstanceOf[js.Dynamic].applyDynamic("devices")(vid.asInstanceOf[js.Any], pid.asInstanceOf[js.Any])).asInstanceOf[js.Array[Device]]
   
-  @JSImport("node-hid", "setDriverType")
-  @js.native
-  def setDriverType_hidraw(`type`: hidraw): Unit = js.native
-  @JSImport("node-hid", "setDriverType")
-  @js.native
-  def setDriverType_libusb(`type`: libusb): Unit = js.native
+  @scala.inline
+  def setDriverType_hidraw(`type`: hidraw): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDriverType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def setDriverType_libusb(`type`: libusb): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDriverType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Device extends StObject {
     
-    var interface: Double = js.native
+    var interface: Double
     
-    var manufacturer: js.UndefOr[String] = js.native
+    var manufacturer: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var product: js.UndefOr[String] = js.native
+    var product: js.UndefOr[String] = js.undefined
     
-    var productId: Double = js.native
+    var productId: Double
     
-    var release: Double = js.native
+    var release: Double
     
-    var serialNumber: js.UndefOr[String] = js.native
+    var serialNumber: js.UndefOr[String] = js.undefined
     
-    var usage: js.UndefOr[Double] = js.native
+    var usage: js.UndefOr[Double] = js.undefined
     
-    var usagePage: js.UndefOr[Double] = js.native
+    var usagePage: js.UndefOr[Double] = js.undefined
     
-    var vendorId: Double = js.native
+    var vendorId: Double
   }
   object Device {
     

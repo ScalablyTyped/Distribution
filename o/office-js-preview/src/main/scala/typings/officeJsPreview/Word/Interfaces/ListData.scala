@@ -3,11 +3,9 @@ package typings.officeJsPreview.Word.Interfaces
 import typings.officeJsPreview.Word.ListLevelType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `list.toJSON()`. */
-@js.native
 trait ListData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ListData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait ListData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var levelExistences: js.UndefOr[js.Array[Boolean]] = js.native
+  var levelExistences: js.UndefOr[js.Array[Boolean]] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait ListData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var levelTypes: js.UndefOr[js.Array[ListLevelType]] = js.native
+  var levelTypes: js.UndefOr[js.Array[ListLevelType]] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait ListData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.native
+  var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
 }
 object ListData {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Perception
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Event data for depth frame source added events. */
-@js.native
 trait PerceptionDepthFrameSourceAddedEventArgs extends StObject {
   
   /** Gets the depth frame source that was added. */
-  var frameSource: PerceptionDepthFrameSource = js.native
+  var frameSource: PerceptionDepthFrameSource
 }
 object PerceptionDepthFrameSourceAddedEventArgs {
   

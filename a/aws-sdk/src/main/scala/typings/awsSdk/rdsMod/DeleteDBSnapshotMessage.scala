@@ -2,16 +2,14 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDBSnapshotMessage extends StObject {
   
   /**
     * The DB snapshot identifier. Constraints: Must be the name of an existing DB snapshot in the available state.
     */
-  var DBSnapshotIdentifier: String = js.native
+  var DBSnapshotIdentifier: String
 }
 object DeleteDBSnapshotMessage {
   

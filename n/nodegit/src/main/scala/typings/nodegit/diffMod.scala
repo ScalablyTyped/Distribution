@@ -58,7 +58,6 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeMod.Tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diffMod {
@@ -95,13 +94,16 @@ object diffMod {
   /* static members */
   object Diff {
     
+    @JSImport("nodegit/diff", "Diff")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Directly run a diff between a blob and a buffer.
       *
       *
       */
-    @JSImport("nodegit/diff", "Diff.blobToBuffer")
-    @js.native
+    @scala.inline
     def blobToBuffer(
       oldBlob: js.UndefOr[Blob],
       oldAsPath: js.UndefOr[String],
@@ -112,117 +114,76 @@ object diffMod {
       binaryCb: js.UndefOr[js.Function],
       hunkCb: js.UndefOr[js.Function],
       lineCb: js.UndefOr[js.Function]
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("blobToBuffer")(oldBlob.asInstanceOf[js.Any], oldAsPath.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], bufferAsPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fileCb.asInstanceOf[js.Any], binaryCb.asInstanceOf[js.Any], hunkCb.asInstanceOf[js.Any], lineCb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("nodegit/diff", "Diff.fromBuffer")
-    @js.native
-    def fromBuffer(content: String, contentLen: Double): js.Promise[Diff] = js.native
+    @scala.inline
+    def fromBuffer(content: String, contentLen: Double): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(content.asInstanceOf[js.Any], contentLen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
     
-    @JSImport("nodegit/diff", "Diff.indexToIndex")
-    @js.native
-    def indexToIndex(repo: Repository, oldIndex: Index, newIndex: Index): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.indexToIndex")
-    @js.native
-    def indexToIndex(repo: Repository, oldIndex: Index, newIndex: Index, opts: DiffOptions): js.Promise[Diff] = js.native
+    @scala.inline
+    def indexToIndex(repo: Repository, oldIndex: Index, newIndex: Index): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexToIndex")(repo.asInstanceOf[js.Any], oldIndex.asInstanceOf[js.Any], newIndex.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def indexToIndex(repo: Repository, oldIndex: Index, newIndex: Index, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexToIndex")(repo.asInstanceOf[js.Any], oldIndex.asInstanceOf[js.Any], newIndex.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
     
-    @JSImport("nodegit/diff", "Diff.indexToWorkdir")
-    @js.native
-    def indexToWorkdir(repo: Repository): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.indexToWorkdir")
-    @js.native
-    def indexToWorkdir(repo: Repository, index: js.UndefOr[scala.Nothing], opts: DiffOptions): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.indexToWorkdir")
-    @js.native
-    def indexToWorkdir(repo: Repository, index: Index): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.indexToWorkdir")
-    @js.native
-    def indexToWorkdir(repo: Repository, index: Index, opts: DiffOptions): js.Promise[Diff] = js.native
+    @scala.inline
+    def indexToWorkdir(repo: Repository): js.Promise[Diff] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexToWorkdir")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def indexToWorkdir(repo: Repository, index: Unit, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexToWorkdir")(repo.asInstanceOf[js.Any], index.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def indexToWorkdir(repo: Repository, index: Index): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexToWorkdir")(repo.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def indexToWorkdir(repo: Repository, index: Index, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexToWorkdir")(repo.asInstanceOf[js.Any], index.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
     
-    @JSImport("nodegit/diff", "Diff.treeToIndex")
-    @js.native
-    def treeToIndex(repo: Repository): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToIndex")
-    @js.native
-    def treeToIndex(
-      repo: Repository,
-      oldTree: js.UndefOr[scala.Nothing],
-      index: js.UndefOr[scala.Nothing],
-      opts: DiffOptions
-    ): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToIndex")
-    @js.native
-    def treeToIndex(repo: Repository, oldTree: js.UndefOr[scala.Nothing], index: Index): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToIndex")
-    @js.native
-    def treeToIndex(repo: Repository, oldTree: js.UndefOr[scala.Nothing], index: Index, opts: DiffOptions): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToIndex")
-    @js.native
-    def treeToIndex(repo: Repository, oldTree: Tree): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToIndex")
-    @js.native
-    def treeToIndex(repo: Repository, oldTree: Tree, index: js.UndefOr[scala.Nothing], opts: DiffOptions): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToIndex")
-    @js.native
-    def treeToIndex(repo: Repository, oldTree: Tree, index: Index): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToIndex")
-    @js.native
-    def treeToIndex(repo: Repository, oldTree: Tree, index: Index, opts: DiffOptions): js.Promise[Diff] = js.native
+    @scala.inline
+    def treeToIndex(repo: Repository): js.Promise[Diff] = ^.asInstanceOf[js.Dynamic].applyDynamic("treeToIndex")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToIndex(repo: Repository, oldTree: Unit, index: Unit, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToIndex")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], index.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToIndex(repo: Repository, oldTree: Unit, index: Index): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToIndex")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToIndex(repo: Repository, oldTree: Unit, index: Index, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToIndex")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], index.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToIndex(repo: Repository, oldTree: Tree): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToIndex")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToIndex(repo: Repository, oldTree: Tree, index: Unit, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToIndex")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], index.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToIndex(repo: Repository, oldTree: Tree, index: Index): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToIndex")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToIndex(repo: Repository, oldTree: Tree, index: Index, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToIndex")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], index.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
     
-    @JSImport("nodegit/diff", "Diff.treeToTree")
-    @js.native
-    def treeToTree(repo: Repository): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToTree")
-    @js.native
-    def treeToTree(
-      repo: Repository,
-      oldTree: js.UndefOr[scala.Nothing],
-      new_tree: js.UndefOr[scala.Nothing],
-      opts: DiffOptions
-    ): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToTree")
-    @js.native
-    def treeToTree(repo: Repository, oldTree: js.UndefOr[scala.Nothing], new_tree: Tree): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToTree")
-    @js.native
-    def treeToTree(repo: Repository, oldTree: js.UndefOr[scala.Nothing], new_tree: Tree, opts: DiffOptions): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToTree")
-    @js.native
-    def treeToTree(repo: Repository, oldTree: Tree): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToTree")
-    @js.native
-    def treeToTree(repo: Repository, oldTree: Tree, new_tree: js.UndefOr[scala.Nothing], opts: DiffOptions): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToTree")
-    @js.native
-    def treeToTree(repo: Repository, oldTree: Tree, new_tree: Tree): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToTree")
-    @js.native
-    def treeToTree(repo: Repository, oldTree: Tree, new_tree: Tree, opts: DiffOptions): js.Promise[Diff] = js.native
+    @scala.inline
+    def treeToTree(repo: Repository): js.Promise[Diff] = ^.asInstanceOf[js.Dynamic].applyDynamic("treeToTree")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToTree(repo: Repository, oldTree: Unit, new_tree: Unit, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToTree")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], new_tree.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToTree(repo: Repository, oldTree: Unit, new_tree: Tree): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToTree")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], new_tree.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToTree(repo: Repository, oldTree: Unit, new_tree: Tree, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToTree")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], new_tree.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToTree(repo: Repository, oldTree: Tree): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToTree")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToTree(repo: Repository, oldTree: Tree, new_tree: Unit, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToTree")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], new_tree.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToTree(repo: Repository, oldTree: Tree, new_tree: Tree): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToTree")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], new_tree.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToTree(repo: Repository, oldTree: Tree, new_tree: Tree, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToTree")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], new_tree.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
     
-    @JSImport("nodegit/diff", "Diff.treeToWorkdir")
-    @js.native
-    def treeToWorkdir(repo: Repository): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToWorkdir")
-    @js.native
-    def treeToWorkdir(repo: Repository, oldTree: js.UndefOr[scala.Nothing], opts: DiffOptions): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToWorkdir")
-    @js.native
-    def treeToWorkdir(repo: Repository, oldTree: Tree): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToWorkdir")
-    @js.native
-    def treeToWorkdir(repo: Repository, oldTree: Tree, opts: DiffOptions): js.Promise[Diff] = js.native
+    @scala.inline
+    def treeToWorkdir(repo: Repository): js.Promise[Diff] = ^.asInstanceOf[js.Dynamic].applyDynamic("treeToWorkdir")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToWorkdir(repo: Repository, oldTree: Unit, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToWorkdir")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToWorkdir(repo: Repository, oldTree: Tree): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToWorkdir")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToWorkdir(repo: Repository, oldTree: Tree, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToWorkdir")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
     
-    @JSImport("nodegit/diff", "Diff.treeToWorkdirWithIndex")
-    @js.native
-    def treeToWorkdirWithIndex(repo: Repository): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToWorkdirWithIndex")
-    @js.native
-    def treeToWorkdirWithIndex(repo: Repository, oldTree: js.UndefOr[scala.Nothing], opts: DiffOptions): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToWorkdirWithIndex")
-    @js.native
-    def treeToWorkdirWithIndex(repo: Repository, oldTree: Tree): js.Promise[Diff] = js.native
-    @JSImport("nodegit/diff", "Diff.treeToWorkdirWithIndex")
-    @js.native
-    def treeToWorkdirWithIndex(repo: Repository, oldTree: Tree, opts: DiffOptions): js.Promise[Diff] = js.native
+    @scala.inline
+    def treeToWorkdirWithIndex(repo: Repository): js.Promise[Diff] = ^.asInstanceOf[js.Dynamic].applyDynamic("treeToWorkdirWithIndex")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToWorkdirWithIndex(repo: Repository, oldTree: Unit, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToWorkdirWithIndex")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToWorkdirWithIndex(repo: Repository, oldTree: Tree): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToWorkdirWithIndex")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
+    @scala.inline
+    def treeToWorkdirWithIndex(repo: Repository, oldTree: Tree, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToWorkdirWithIndex")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -596,22 +557,21 @@ object diffMod {
     }
   }
   
-  @js.native
   trait DiffFindOptions extends StObject {
     
-    var breakRewriteThreshold: js.UndefOr[Double] = js.native
+    var breakRewriteThreshold: js.UndefOr[Double] = js.undefined
     
-    var copyThreshold: js.UndefOr[Double] = js.native
+    var copyThreshold: js.UndefOr[Double] = js.undefined
     
-    var flags: js.UndefOr[Double] = js.native
+    var flags: js.UndefOr[Double] = js.undefined
     
-    var renameFromRewriteThreshold: js.UndefOr[Double] = js.native
+    var renameFromRewriteThreshold: js.UndefOr[Double] = js.undefined
     
-    var renameLimit: js.UndefOr[Double] = js.native
+    var renameLimit: js.UndefOr[Double] = js.undefined
     
-    var renameThreshold: js.UndefOr[Double] = js.native
+    var renameThreshold: js.UndefOr[Double] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object DiffFindOptions {
     

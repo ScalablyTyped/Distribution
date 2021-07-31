@@ -2,13 +2,11 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Job compensation details.
   */
-@js.native
 trait SchemaCompensationInfo extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaCompensationInfo extends StObject {
     * CompensationEntry.expected_units_per_year.  See CompensationEntry for
     * explanation on compensation annualization.
     */
-  var annualizedBaseCompensationRange: js.UndefOr[SchemaCompensationRange] = js.native
+  var annualizedBaseCompensationRange: js.UndefOr[SchemaCompensationRange] = js.undefined
   
   /**
     * Output only. Annualized total compensation range. Computed as all
@@ -25,14 +23,14 @@ trait SchemaCompensationInfo extends StObject {
     * CompensationEntry.expected_units_per_year.  See CompensationEntry for
     * explanation on compensation annualization.
     */
-  var annualizedTotalCompensationRange: js.UndefOr[SchemaCompensationRange] = js.native
+  var annualizedTotalCompensationRange: js.UndefOr[SchemaCompensationRange] = js.undefined
   
   /**
     * Optional.  Job compensation information.  At most one entry can be of
     * type CompensationInfo.CompensationType.BASE, which is referred as ** base
     * compensation entry ** for the job.
     */
-  var entries: js.UndefOr[js.Array[SchemaCompensationEntry]] = js.native
+  var entries: js.UndefOr[js.Array[SchemaCompensationEntry]] = js.undefined
 }
 object SchemaCompensationInfo {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightRuleContributorDatapoint extends StObject {
   
   /**
     * The approximate value that this contributor added during this timestamp.
     */
-  var ApproximateValue: InsightRuleUnboundDouble = js.native
+  var ApproximateValue: InsightRuleUnboundDouble
   
   /**
     * The timestamp of the data point.
     */
-  var Timestamp: typings.awsSdk.cloudwatchMod.Timestamp = js.native
+  var Timestamp: typings.awsSdk.cloudwatchMod.Timestamp
 }
 object InsightRuleContributorDatapoint {
   

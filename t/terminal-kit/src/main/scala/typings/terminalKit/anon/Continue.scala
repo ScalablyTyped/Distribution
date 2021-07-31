@@ -2,25 +2,23 @@ package typings.terminalKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Continue extends StObject {
   
-  var continue: js.UndefOr[Boolean] = js.native
+  var continue: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var width: Null | Double = js.native
+  var width: Null | Double
   
-  var x: Double = js.native
+  var x: Double
 }
 object Continue {
   
   @scala.inline
   def apply(x: Double): Continue = {
-    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], width = null)
     __obj.asInstanceOf[Continue]
   }
   

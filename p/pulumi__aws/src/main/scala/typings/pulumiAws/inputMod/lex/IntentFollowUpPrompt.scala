@@ -3,23 +3,21 @@ package typings.pulumiAws.inputMod.lex
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntentFollowUpPrompt extends StObject {
   
   /**
     * Prompts for information from the user. Attributes are documented under prompt.
     */
-  var prompt: Input[IntentFollowUpPromptPrompt] = js.native
+  var prompt: Input[IntentFollowUpPromptPrompt]
   
   /**
     * If the user answers "no" to the question defined in the prompt field,
     * Amazon Lex responds with this statement to acknowledge that the intent was canceled. Attributes are
     * documented below under statement.
     */
-  var rejectionStatement: Input[IntentFollowUpPromptRejectionStatement] = js.native
+  var rejectionStatement: Input[IntentFollowUpPromptRejectionStatement]
 }
 object IntentFollowUpPrompt {
   

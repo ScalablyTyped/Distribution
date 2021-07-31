@@ -8,7 +8,6 @@ import typings.nightwatch.nightwatchStrings.server
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -33,42 +32,42 @@ trait WebDriverProtocolSessions extends StObject {
     * }
     */
   def session(): this.type = js.native
-  def session(
-    action: js.UndefOr[scala.Nothing],
-    sessionId: js.UndefOr[scala.Nothing],
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, _]], 
-      Unit
-    ]
-  ): this.type = js.native
-  def session(action: js.UndefOr[scala.Nothing], sessionId: String): this.type = js.native
-  def session(
-    action: js.UndefOr[scala.Nothing],
-    sessionId: String,
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, _]], 
-      Unit
-    ]
-  ): this.type = js.native
   def session(action: String): this.type = js.native
-  def session(
-    action: String,
-    sessionId: js.UndefOr[scala.Nothing],
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, _]], 
-      Unit
-    ]
-  ): this.type = js.native
   def session(action: String, sessionId: String): this.type = js.native
   def session(
     action: String,
     sessionId: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, _]], 
+      /* result */ NightwatchCallbackResult[Record[String, js.Any]], 
+      Unit
+    ]
+  ): this.type = js.native
+  def session(
+    action: String,
+    sessionId: Unit,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[Record[String, js.Any]], 
+      Unit
+    ]
+  ): this.type = js.native
+  def session(action: Unit, sessionId: String): this.type = js.native
+  def session(
+    action: Unit,
+    sessionId: String,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[Record[String, js.Any]], 
+      Unit
+    ]
+  ): this.type = js.native
+  def session(
+    action: Unit,
+    sessionId: Unit,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[Record[String, js.Any]], 
       Unit
     ]
   ): this.type = js.native
@@ -124,7 +123,7 @@ trait WebDriverProtocolSessions extends StObject {
   def sessions(
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[Record[String, _]]], 
+      /* result */ NightwatchCallbackResult[js.Array[Record[String, js.Any]]], 
       Unit
     ]
   ): this.type = js.native

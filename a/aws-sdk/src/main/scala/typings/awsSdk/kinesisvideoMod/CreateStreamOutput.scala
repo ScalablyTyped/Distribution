@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStreamOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the stream.
     */
-  var StreamARN: js.UndefOr[ResourceARN] = js.native
+  var StreamARN: js.UndefOr[ResourceARN] = js.undefined
 }
 object CreateStreamOutput {
   

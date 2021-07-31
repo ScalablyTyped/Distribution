@@ -2,15 +2,15 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MenuButtonOptions extends ComponentOptions {
+trait MenuButtonOptions
+  extends StObject
+     with ComponentOptions {
   
-  var iniChildren: js.UndefOr[Boolean] = js.native
+  var iniChildren: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object MenuButtonOptions {
   

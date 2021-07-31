@@ -2,47 +2,45 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Lien represents an encumbrance on the actions that can be performed on a
   * resource.
   */
-@js.native
 trait SchemaLien extends StObject {
   
   /**
     * The creation time of this Lien.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * A system-generated unique identifier for this Lien.  Example:
     * `liens/1234abcd`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A stable, user-visible/meaningful string identifying the origin of the
     * Lien, intended to be inspected programmatically. Maximum length of 200
     * characters.  Example: &#39;compute.googleapis.com&#39;
     */
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
   /**
     * A reference to the resource this Lien is attached to. The server will
     * validate the parent against those for which Liens are supported. Example:
     * `projects/1234`
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Concise user-visible strings indicating why an action cannot be performed
     * on a resource. Maximum length of 200 characters.  Example: &#39;Holds
     * production API key&#39;
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The types of operations which should be blocked as a result of this Lien.
@@ -51,7 +49,7 @@ trait SchemaLien extends StObject {
     * empty list is meaningless and will be rejected.  Example:
     * [&#39;resourcemanager.projects.delete&#39;]
     */
-  var restrictions: js.UndefOr[js.Array[String]] = js.native
+  var restrictions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaLien {
   

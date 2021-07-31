@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Total extends StObject {
   
   /**
     * The total usage.
     */
-  var Amount: js.UndefOr[String] = js.native
+  var Amount: js.UndefOr[String] = js.undefined
   
   /**
     * The currency unit that the amount is given in.
     */
-  var Unit: js.UndefOr[String] = js.native
+  var Unit: js.UndefOr[String] = js.undefined
 }
 object Total {
   

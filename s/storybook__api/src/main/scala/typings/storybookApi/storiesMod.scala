@@ -15,67 +15,56 @@ import typings.storybookApi.storybookApiBooleans.`true`
 import typings.storybookApi.storybookApiNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storiesMod {
   
-  @JSImport("@storybook/api/dist/lib/stories", "denormalizeStoryParameters")
+  @JSImport("@storybook/api/dist/lib/stories", JSImport.Namespace)
   @js.native
-  def denormalizeStoryParameters(hasGlobalParametersKindParametersStories: SetStoriesPayload): StoriesRaw = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/api/dist/lib/stories", "isGroup")
-  @js.native
-  def isGroup(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Group */ Boolean = js.native
+  @scala.inline
+  def denormalizeStoryParameters(hasGlobalParametersKindParametersStories: SetStoriesPayload): StoriesRaw = ^.asInstanceOf[js.Dynamic].applyDynamic("denormalizeStoryParameters")(hasGlobalParametersKindParametersStories.asInstanceOf[js.Any]).asInstanceOf[StoriesRaw]
   
-  @JSImport("@storybook/api/dist/lib/stories", "isRoot")
-  @js.native
-  def isRoot(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Root */ Boolean = js.native
+  @scala.inline
+  def isGroup(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Group */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroup")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Group */ Boolean]
   
-  @JSImport("@storybook/api/dist/lib/stories", "isStory")
-  @js.native
-  def isStory(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Story */ Boolean = js.native
+  @scala.inline
+  def isRoot(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Root */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRoot")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Root */ Boolean]
   
-  @JSImport("@storybook/api/dist/lib/stories", "transformStoriesRawToStoriesHash")
-  @js.native
-  def transformStoriesRawToStoriesHash(input: StoriesRaw, hasProvider: Provider): StoriesHash = js.native
+  @scala.inline
+  def isStory(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Story */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStory")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Story */ Boolean]
   
-  @js.native
+  @scala.inline
+  def transformStoriesRawToStoriesHash(input: StoriesRaw, hasProvider: Provider): StoriesHash = (^.asInstanceOf[js.Dynamic].applyDynamic("transformStoriesRawToStoriesHash")(input.asInstanceOf[js.Any], hasProvider.asInstanceOf[js.Any])).asInstanceOf[StoriesHash]
+  
   trait Group extends StObject {
     
-    var children: js.Array[StoryId] = js.native
+    var children: js.Array[StoryId]
     
-    var depth: Double = js.native
+    var depth: Double
     
-    var id: StoryId = js.native
+    var id: StoryId
     
-    var isComponent: Boolean = js.native
+    var isComponent: Boolean
     
-    var isLeaf: `false` = js.native
+    var isLeaf: `false`
     
-    var isRoot: `false` = js.native
+    var isRoot: `false`
     
-    var name: String = js.native
+    var name: String
     
-    var parameters: js.UndefOr[DocsOnly] = js.native
+    var parameters: js.UndefOr[DocsOnly] = js.undefined
     
-    var parent: js.UndefOr[StoryId] = js.native
+    var parent: js.UndefOr[StoryId] = js.undefined
     
-    var refId: js.UndefOr[String] = js.native
+    var refId: js.UndefOr[String] = js.undefined
   }
   object Group {
     
     @scala.inline
-    def apply(
-      children: js.Array[StoryId],
-      depth: Double,
-      id: StoryId,
-      isComponent: Boolean,
-      isLeaf: `false`,
-      isRoot: `false`,
-      name: String
-    ): Group = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], isRoot = isRoot.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(children: js.Array[StoryId], depth: Double, id: StoryId, isComponent: Boolean, name: String): Group = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], isLeaf = false, isRoot = false, name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Group]
     }
     
@@ -183,38 +172,29 @@ object storiesMod {
     def refId: typings.storybookApi.storybookApiStrings.refId = "refId".asInstanceOf[typings.storybookApi.storybookApiStrings.refId]
   }
   
-  @js.native
   trait Root extends StObject {
     
-    var children: js.Array[StoryId] = js.native
+    var children: js.Array[StoryId]
     
-    var depth: `0` = js.native
+    var depth: `0`
     
-    var id: StoryId = js.native
+    var id: StoryId
     
-    var isComponent: `false` = js.native
+    var isComponent: `false`
     
-    var isLeaf: `false` = js.native
+    var isLeaf: `false`
     
-    var isRoot: `true` = js.native
+    var isRoot: `true`
     
-    var name: String = js.native
+    var name: String
     
-    var refId: js.UndefOr[String] = js.native
+    var refId: js.UndefOr[String] = js.undefined
   }
   object Root {
     
     @scala.inline
-    def apply(
-      children: js.Array[StoryId],
-      depth: `0`,
-      id: StoryId,
-      isComponent: `false`,
-      isLeaf: `false`,
-      isRoot: `true`,
-      name: String
-    ): Root = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], isRoot = isRoot.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(children: js.Array[StoryId], id: StoryId, name: String): Root = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], depth = 0, id = id.asInstanceOf[js.Any], isComponent = false, isLeaf = false, isRoot = true, name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Root]
     }
     
@@ -253,7 +233,7 @@ object storiesMod {
     }
   }
   
-  type SetStoriesPayload = Error | (Stories with (Record[String, scala.Nothing]))
+  type SetStoriesPayload = Error | (Stories & (Record[String, scala.Nothing]))
   
   type StoriesHash = StringDictionary[Root | Group | Story]
   
@@ -261,32 +241,31 @@ object storiesMod {
   
   type StoriesRaw = StringDictionary[StoryInput]
   
-  @js.native
   trait Story extends StObject {
     
-    var args: Args = js.native
+    var args: Args
     
-    var children: js.UndefOr[js.Array[StoryId]] = js.native
+    var children: js.UndefOr[js.Array[StoryId]] = js.undefined
     
-    var depth: Double = js.native
+    var depth: Double
     
-    var id: StoryId = js.native
+    var id: StoryId
     
-    var isComponent: Boolean = js.native
+    var isComponent: Boolean
     
-    var isLeaf: `true` = js.native
+    var isLeaf: `true`
     
-    var isRoot: `false` = js.native
+    var isRoot: `false`
     
-    var kind: StoryKind = js.native
+    var kind: StoryKind
     
-    var name: String = js.native
+    var name: String
     
-    var parameters: js.UndefOr[DictparameterName] = js.native
+    var parameters: js.UndefOr[DictparameterName] = js.undefined
     
-    var parent: StoryId = js.native
+    var parent: StoryId
     
-    var refId: js.UndefOr[String] = js.native
+    var refId: js.UndefOr[String] = js.undefined
   }
   object Story {
     
@@ -296,13 +275,11 @@ object storiesMod {
       depth: Double,
       id: StoryId,
       isComponent: Boolean,
-      isLeaf: `true`,
-      isRoot: `false`,
       kind: StoryKind,
       name: String,
       parent: StoryId
     ): Story = {
-      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], isRoot = isRoot.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], isLeaf = true, isRoot = false, kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Story]
     }
     
@@ -359,24 +336,23 @@ object storiesMod {
     }
   }
   
-  @js.native
   trait StoryInput extends StObject {
     
-    var args: Args = js.native
+    var args: Args
     
-    var children: js.Array[String] = js.native
+    var children: js.Array[String]
     
-    var id: StoryId = js.native
+    var id: StoryId
     
-    var isLeaf: Boolean = js.native
+    var isLeaf: Boolean
     
-    var kind: StoryKind = js.native
+    var kind: StoryKind
     
-    var name: String = js.native
+    var name: String
     
-    var parameters: DictparameterName = js.native
+    var parameters: DictparameterName
     
-    var refId: js.UndefOr[String] = js.native
+    var refId: js.UndefOr[String] = js.undefined
   }
   object StoryInput {
     

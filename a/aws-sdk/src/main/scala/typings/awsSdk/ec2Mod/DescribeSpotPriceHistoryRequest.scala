@@ -2,56 +2,54 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSpotPriceHistoryRequest extends StObject {
   
   /**
     * Filters the results by the specified Availability Zone.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The date and time, up to the current date, from which to stop retrieving the price history data, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var EndTime: js.UndefOr[DateTime] = js.native
+  var EndTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * One or more filters.    availability-zone - The Availability Zone for which prices should be returned.    instance-type - The type of instance (for example, m3.medium).    product-description - The product description for the Spot price (Linux/UNIX | Red Hat Enterprise Linux | SUSE Linux | Windows | Linux/UNIX (Amazon VPC) | Red Hat Enterprise Linux (Amazon VPC) | SUSE Linux (Amazon VPC) | Windows (Amazon VPC)).    spot-price - The Spot price. The value must match exactly (or use wildcards; greater than or less than comparison is not supported).    timestamp - The time stamp of the Spot price history, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). You can use wildcards (* and ?). Greater than or less than comparison is not supported.  
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * Filters the results by the specified instance types.
     */
-  var InstanceTypes: js.UndefOr[InstanceTypeList] = js.native
+  var InstanceTypes: js.UndefOr[InstanceTypeList] = js.undefined
   
   /**
     * The maximum number of results to return in a single call. Specify a value between 1 and 1000. The default value is 1000. To retrieve the remaining results, make another call with the returned NextToken value.
     */
-  var MaxResults: js.UndefOr[Integer] = js.native
+  var MaxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Filters the results by the specified basic product descriptions.
     */
-  var ProductDescriptions: js.UndefOr[ProductDescriptionList] = js.native
+  var ProductDescriptions: js.UndefOr[ProductDescriptionList] = js.undefined
   
   /**
     * The date and time, up to the past 90 days, from which to start retrieving the price history data, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var StartTime: js.UndefOr[DateTime] = js.native
+  var StartTime: js.UndefOr[DateTime] = js.undefined
 }
 object DescribeSpotPriceHistoryRequest {
   

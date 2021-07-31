@@ -2,21 +2,19 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpCors extends StObject {
   
-  var allowCredentials: js.UndefOr[Boolean] = js.native
+  var allowCredentials: js.UndefOr[Boolean] = js.undefined
   
-  var cacheControl: js.UndefOr[String] = js.native
+  var cacheControl: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[String | js.Array[String]] = js.native
+  var headers: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
   
-  var origins: js.UndefOr[String | js.Array[String]] = js.native
+  var origins: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object HttpCors {
   

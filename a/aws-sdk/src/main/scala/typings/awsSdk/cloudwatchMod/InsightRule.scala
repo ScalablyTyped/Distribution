@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightRule extends StObject {
   
   /**
     * The definition of the rule, as a JSON object. The definition contains the keywords used to define contributors, the value to aggregate on if this rule returns a sum instead of a count, and the filters. For details on the valid syntax, see Contributor Insights Rule Syntax.
     */
-  var Definition: InsightRuleDefinition = js.native
+  var Definition: InsightRuleDefinition
   
   /**
     * The name of the rule.
     */
-  var Name: InsightRuleName = js.native
+  var Name: InsightRuleName
   
   /**
     * For rules that you create, this is always {"Name": "CloudWatchLogRule", "Version": 1}. For built-in rules, this is {"Name": "ServiceLogRule", "Version": 1} 
     */
-  var Schema: InsightRuleSchema = js.native
+  var Schema: InsightRuleSchema
   
   /**
     * Indicates whether the rule is enabled or disabled.
     */
-  var State: InsightRuleState = js.native
+  var State: InsightRuleState
 }
 object InsightRule {
   

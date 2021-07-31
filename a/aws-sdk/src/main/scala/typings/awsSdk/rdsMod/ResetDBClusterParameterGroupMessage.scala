@@ -2,26 +2,24 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetDBClusterParameterGroupMessage extends StObject {
   
   /**
     * The name of the DB cluster parameter group to reset.
     */
-  var DBClusterParameterGroupName: String = js.native
+  var DBClusterParameterGroupName: String
   
   /**
     * A list of parameter names in the DB cluster parameter group to reset to the default values. You can't use this parameter if the ResetAllParameters parameter is enabled.
     */
-  var Parameters: js.UndefOr[ParametersList] = js.native
+  var Parameters: js.UndefOr[ParametersList] = js.undefined
   
   /**
     * A value that indicates whether to reset all parameters in the DB cluster parameter group to their default values. You can't use this parameter if there is a list of parameter names specified for the Parameters parameter.
     */
-  var ResetAllParameters: js.UndefOr[Boolean] = js.native
+  var ResetAllParameters: js.UndefOr[Boolean] = js.undefined
 }
 object ResetDBClusterParameterGroupMessage {
   

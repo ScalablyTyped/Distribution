@@ -9,29 +9,28 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * enhances the {@link XPresentation} interface to give access to a {@link XSlideShowController} and to start a presentation with arguments.
   * @since OOo 3.0
   */
-@js.native
 trait XPresentation2
-  extends XPresentation
+  extends StObject
+     with XPresentation
      with XPropertySet {
   
   /** if the slide show is running, this returns a controller object to control the running slide show. */
-  val Controller: XSlideShowController = js.native
+  val Controller: XSlideShowController
   
   /** if the slide show is running, this returns a controller object to control the running slide show. */
-  def getController(): XSlideShowController = js.native
+  def getController(): XSlideShowController
   
   /** returns true if the slide show is currently running */
-  def isRunning(): Boolean = js.native
+  def isRunning(): Boolean
   
   /** start the slide show with the given arguments. All arguments override the values from {@link Presentation} . */
-  def startWithArguments(Arguments: SeqEquiv[PropertyValue]): Unit = js.native
+  def startWithArguments(Arguments: SeqEquiv[PropertyValue]): Unit
 }
 object XPresentation2 {
   

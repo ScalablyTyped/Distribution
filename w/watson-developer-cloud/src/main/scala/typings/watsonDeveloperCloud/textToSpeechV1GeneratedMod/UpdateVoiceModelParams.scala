@@ -2,28 +2,26 @@ package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateVoiceModel` operation. */
-@js.native
 trait UpdateVoiceModelParams extends StObject {
   
   /** The customization ID (GUID) of the custom voice model. You must make the request with service credentials created for the instance of the service that owns the custom model. */
-  var customization_id: String = js.native
+  var customization_id: String
   
   /** A new description for the custom voice model. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** A new name for the custom voice model. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** An array of `Word` objects that provides the words and their translations that are to be added or updated for the custom voice model. Pass an empty array to make no additions or updates. */
-  var words: js.UndefOr[js.Array[Word]] = js.native
+  var words: js.UndefOr[js.Array[Word]] = js.undefined
 }
 object UpdateVoiceModelParams {
   

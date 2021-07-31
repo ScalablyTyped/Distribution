@@ -2,16 +2,14 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetComponentPolicyRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the component whose policy you want to retrieve. 
     */
-  var componentArn: ComponentBuildVersionArn = js.native
+  var componentArn: ComponentBuildVersionArn
 }
 object GetComponentPolicyRequest {
   

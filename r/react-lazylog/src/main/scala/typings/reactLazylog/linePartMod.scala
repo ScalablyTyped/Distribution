@@ -7,7 +7,6 @@ import typings.reactLazylog.anon.PartialLinePartProps
 import typings.reactLazylog.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linePartMod {
@@ -32,14 +31,13 @@ object linePartMod {
   
   type LinePart = Component[LinePartProps, js.Object, js.Any]
   
-  @js.native
   trait LinePartProps extends StObject {
     
-    var format: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.native
+    var format: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.undefined
     
-    var part: Text = js.native
+    var part: Text
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object LinePartProps {
     

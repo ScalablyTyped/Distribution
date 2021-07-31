@@ -2,26 +2,24 @@ package typings.awsSdk.ebsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSnapshotBlockRequest extends StObject {
   
   /**
     * The block index of the block from which to get data. Obtain the BlockIndex by running the ListChangedBlocks or ListSnapshotBlocks operations.
     */
-  var BlockIndex: typings.awsSdk.ebsMod.BlockIndex = js.native
+  var BlockIndex: typings.awsSdk.ebsMod.BlockIndex
   
   /**
     * The block token of the block from which to get data. Obtain the BlockToken by running the ListChangedBlocks or ListSnapshotBlocks operations.
     */
-  var BlockToken: typings.awsSdk.ebsMod.BlockToken = js.native
+  var BlockToken: typings.awsSdk.ebsMod.BlockToken
   
   /**
     * The ID of the snapshot containing the block from which to get data.
     */
-  var SnapshotId: typings.awsSdk.ebsMod.SnapshotId = js.native
+  var SnapshotId: typings.awsSdk.ebsMod.SnapshotId
 }
 object GetSnapshotBlockRequest {
   

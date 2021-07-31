@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGroupResponse extends StObject {
   
   /**
     * A structure containing details about the new group.
     */
-  var Group: typings.awsSdk.iamMod.Group = js.native
+  var Group: typings.awsSdk.iamMod.Group
 }
 object CreateGroupResponse {
   

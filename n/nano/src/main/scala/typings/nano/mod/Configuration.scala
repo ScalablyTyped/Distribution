@@ -2,23 +2,21 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
-  var cookie: js.UndefOr[String] = js.native
+  var cookie: js.UndefOr[String] = js.undefined
   
-  var log: js.UndefOr[js.Function2[/* id */ String, /* args */ js.Any, Unit]] = js.native
+  var log: js.UndefOr[js.Function2[/* id */ String, /* args */ js.Any, Unit]] = js.undefined
   
-  var parseUrl: js.UndefOr[Boolean] = js.native
+  var parseUrl: js.UndefOr[Boolean] = js.undefined
   
-  var request: js.UndefOr[js.Function1[/* params */ js.Any, Unit]] = js.native
+  var request: js.UndefOr[js.Function1[/* params */ js.Any, Unit]] = js.undefined
   
-  var requestDefaults: js.UndefOr[requestDefaultsOptions] = js.native
+  var requestDefaults: js.UndefOr[requestDefaultsOptions] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object Configuration {
   

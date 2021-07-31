@@ -2,13 +2,11 @@ package typings.googleapis.speechV1Mod.speechV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Word-specific information for recognized words.
   */
-@js.native
 trait SchemaWordInfo extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaWordInfo extends StObject {
     * `enable_word_time_offsets=true` and only in the top hypothesis. This is
     * an experimental feature and the accuracy of the time offset can vary.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time offset relative to the beginning of the audio, and
@@ -25,12 +23,12 @@ trait SchemaWordInfo extends StObject {
     * `enable_word_time_offsets=true` and only in the top hypothesis. This is
     * an experimental feature and the accuracy of the time offset can vary.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The word corresponding to this set of information.
     */
-  var word: js.UndefOr[String] = js.native
+  var word: js.UndefOr[String] = js.undefined
 }
 object SchemaWordInfo {
   

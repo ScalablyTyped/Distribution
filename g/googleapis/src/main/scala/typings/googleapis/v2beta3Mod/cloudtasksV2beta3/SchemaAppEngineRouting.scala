@@ -2,7 +2,6 @@ package typings.googleapis.v2beta3Mod.cloudtasksV2beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and [App Engine Flex request
   * routing](https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed).
   */
-@js.native
 trait SchemaAppEngineRouting extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait SchemaAppEngineRouting extends StObject {
     * have a custom domain name.  For more information, see [How Requests are
     * Routed](https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed).
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * App instance.  By default, the task is sent to an instance which is
@@ -41,7 +39,7 @@ trait SchemaAppEngineRouting extends StObject {
     * and [App Engine Flex request
     * routing](https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed).
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * App service.  By default, the task is sent to the service which is the
@@ -52,7 +50,7 @@ trait SchemaAppEngineRouting extends StObject {
     * custom domains are not parsed by Cloud Tasks. If host is not parsable,
     * then service, version, and instance are the empty string.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * App version.  By default, the task is sent to the version which is the
@@ -63,7 +61,7 @@ trait SchemaAppEngineRouting extends StObject {
     * custom domains are not parsed by Cloud Tasks. If host is not parsable,
     * then service, version, and instance are the empty string.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaAppEngineRouting {
   

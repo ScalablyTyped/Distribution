@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1StorageClassMod {
@@ -28,7 +27,7 @@ object v1StorageClassMod {
       */
     def this(name: String) = this()
     def this(name: String, args: StorageClassArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: StorageClassArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -84,6 +83,10 @@ object v1StorageClassMod {
   /* static members */
   object StorageClass {
     
+    @JSImport("@pulumi/kubernetes/storage/v1/storageClass", "StorageClass")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing StorageClass resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -92,76 +95,72 @@ object v1StorageClassMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/storage/v1/storageClass", "StorageClass.get")
-    @js.native
-    def get(name: String, id: Input[ID]): StorageClass = js.native
-    @JSImport("@pulumi/kubernetes/storage/v1/storageClass", "StorageClass.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): StorageClass = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): StorageClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StorageClass]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): StorageClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StorageClass]
     
     /**
       * Returns true if the given object is an instance of StorageClass.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/storage/v1/storageClass", "StorageClass.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/storageClass.StorageClass */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/storageClass.StorageClass */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/storageClass.StorageClass */ Boolean]
   }
   
-  @js.native
   trait StorageClassArgs extends StObject {
     
     /**
       * AllowVolumeExpansion shows whether the storage class allow volume expand
       */
-    val allowVolumeExpansion: js.UndefOr[Input[Boolean]] = js.native
+    val allowVolumeExpansion: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Restrict the node topologies where volumes can be dynamically provisioned. Each volume plugin defines its own supported topology specifications. An empty TopologySelectorTerm list means there is no topology restriction. This field is only honored by servers that enable the VolumeScheduling feature.
       */
     val allowedTopologies: js.UndefOr[
         Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.TopologySelectorTerm]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[storageDotk8sDotioSlashv1]] = js.native
+    val apiVersion: js.UndefOr[Input[storageDotk8sDotioSlashv1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.StorageClass]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.StorageClass]] = js.undefined
     
     /**
       * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * Dynamically provisioned PersistentVolumes of this storage class are created with these mountOptions, e.g. ["ro", "soft"]. Not validated - mount of the PVs will simply fail if one is invalid.
       */
-    val mountOptions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val mountOptions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Parameters holds the parameters for the provisioner that should create volumes of this storage class.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Provisioner indicates the type of the provisioner.
       */
-    val provisioner: Input[String] = js.native
+    val provisioner: Input[String]
     
     /**
       * Dynamically provisioned PersistentVolumes of this storage class are created with this reclaimPolicy. Defaults to Delete.
       */
-    val reclaimPolicy: js.UndefOr[Input[String]] = js.native
+    val reclaimPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * VolumeBindingMode indicates how PersistentVolumeClaims should be provisioned and bound.  When unset, VolumeBindingImmediate is used. This field is only honored by servers that enable the VolumeScheduling feature.
       */
-    val volumeBindingMode: js.UndefOr[Input[String]] = js.native
+    val volumeBindingMode: js.UndefOr[Input[String]] = js.undefined
   }
   object StorageClassArgs {
     

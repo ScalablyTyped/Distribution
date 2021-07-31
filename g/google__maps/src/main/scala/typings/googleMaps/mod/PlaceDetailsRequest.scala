@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceDetailsRequest extends StObject {
   
   /**
@@ -15,17 +13,17 @@ trait PlaceDetailsRequest extends StObject {
     * parameter from a request, ALL possible fields will be returned, and you will be billed accordingly.
     * This applies only to Place Details requests.
     */
-  var fields: js.UndefOr[js.Array[PlaceDetailsRequestField]] = js.native
+  var fields: js.UndefOr[js.Array[PlaceDetailsRequestField]] = js.undefined
   
   /**
     * The language code, indicating in which language the results should be returned, if possible.
     * Note that some fields may not be available in the requested language.
     * Note that we often update supported languages so this list may not be exhaustive.
     */
-  var language: js.UndefOr[Language] = js.native
+  var language: js.UndefOr[Language] = js.undefined
   
   /** A textual identifier that uniquely identifies a place, returned from a Place Search. */
-  var placeid: String = js.native
+  var placeid: String
   
   /**
     * The region code, specified as a ccTLD (country code top-level domain) two-character value.
@@ -35,13 +33,13 @@ trait PlaceDetailsRequest extends StObject {
     * When this parameter is used, the country name is omitted from the resulting `formatted_address`
     * for results in the specified region.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * A random string which identifies an autocomplete session for billing purposes.
     * Use this for Place Details requests that are called following an autocomplete request in the same user session
     */
-  var sessiontoken: js.UndefOr[String] = js.native
+  var sessiontoken: js.UndefOr[String] = js.undefined
 }
 object PlaceDetailsRequest {
   

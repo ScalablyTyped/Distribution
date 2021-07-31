@@ -2,10 +2,8 @@ package typings.feflowCli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hook extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Hook extends StObject {
     * @param type  Hook name eg：report
     * @param fn  Hook callback function eg：report
     */
-  def hook(`type`: String, fn: js.Function0[Unit]): Unit = js.native
+  def hook(`type`: String, fn: js.Function0[Unit]): Unit
 }
 object Hook {
   

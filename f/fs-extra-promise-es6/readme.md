@@ -12,7 +12,7 @@ An ES6 promise adapter for fs-extra for use with ES7 async/await
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 15317 |
+| # downloads        | 16199 |
 | # stars            | 0 |
 
 ## Links

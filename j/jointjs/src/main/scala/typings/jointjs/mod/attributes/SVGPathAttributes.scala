@@ -2,17 +2,17 @@ package typings.jointjs.mod.attributes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGPathAttributes extends SVGAttributes {
+trait SVGPathAttributes
+  extends StObject
+     with SVGAttributes {
   
-  var d: js.UndefOr[String] = js.native
+  var d: js.UndefOr[String] = js.undefined
   
-  var `path-length`: js.UndefOr[Double] = js.native
+  var `path-length`: js.UndefOr[Double] = js.undefined
   
-  var pathLength: js.UndefOr[Double] = js.native
+  var pathLength: js.UndefOr[Double] = js.undefined
 }
 object SVGPathAttributes {
   

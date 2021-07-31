@@ -2,15 +2,13 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PredictionTerm extends StObject {
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var value: String = js.native
+  var value: String
 }
 object PredictionTerm {
   

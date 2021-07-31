@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * filter sets that specify a realtime time range RTB metrics continue to be
   * aggregated throughout the lifetime of the filter set.
   */
-@js.native
 trait SchemaRealtimeTimeRange extends StObject {
   
   /**
     * The start timestamp of the real-time RTB metrics aggregation.
     */
-  var startTimestamp: js.UndefOr[String] = js.native
+  var startTimestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaRealtimeTimeRange {
   

@@ -11,8 +11,8 @@ A DOT language parser / writer for graphlib
 | Full name          | graphlib-dot |
 | Keywords           | graph, dot, parse |
 | # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 227065 |
+| # dependents       | 21 |
+| # downloads        | 337980 |
 | # stars            | 1 |
 
 ## Links

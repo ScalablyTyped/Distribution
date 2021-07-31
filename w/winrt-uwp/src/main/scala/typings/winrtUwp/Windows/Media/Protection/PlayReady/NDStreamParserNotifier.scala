@@ -7,11 +7,9 @@ import typings.winrtUwp.Windows.Media.Core.MediaStreamSample
 import typings.winrtUwp.Windows.Media.Core.VideoStreamDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains methods that a stream parser plug-in uses to send notifications to a PlayReady-ND client. */
-@js.native
 trait NDStreamParserNotifier extends StObject {
   
   /**
@@ -20,13 +18,13 @@ trait NDStreamParserNotifier extends StObject {
     * @param keyID The key identifier used for decryption.
     * @param proBytes The data for the setup decryptor.
     */
-  def onBeginSetupDecryptor(descriptor: IMediaStreamDescriptor, keyID: String, proBytes: js.Array[Double]): Unit = js.native
+  def onBeginSetupDecryptor(descriptor: IMediaStreamDescriptor, keyID: String, proBytes: js.Array[Double]): Unit
   
   /**
     * Called by a stream parser when it receives the content identifier.
     * @param licenseFetchDescriptor The license fetch descriptor containing the content identifier.
     */
-  def onContentIDReceived(licenseFetchDescriptor: INDLicenseFetchDescriptor): Unit = js.native
+  def onContentIDReceived(licenseFetchDescriptor: INDLicenseFetchDescriptor): Unit
   
   /**
     * Called by the stream parser when the media stream descriptor is created.
@@ -36,7 +34,7 @@ trait NDStreamParserNotifier extends StObject {
   def onMediaStreamDescriptorCreated(
     audioStreamDescriptors: IVector[AudioStreamDescriptor],
     videoStreamDescriptors: IVector[VideoStreamDescriptor]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Called when the stream parser parses a sample from the media stream.
@@ -54,7 +52,7 @@ trait NDStreamParserNotifier extends StObject {
     pts: Double,
     ccFormat: NDClosedCaptionFormat,
     ccDataBytes: js.Array[Double]
-  ): Unit = js.native
+  ): Unit
 }
 object NDStreamParserNotifier {
   

@@ -2,23 +2,24 @@ package typings.parseAuthor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(author: String): Author = ^.asInstanceOf[js.Dynamic].apply(author.asInstanceOf[js.Any]).asInstanceOf[Author]
+  
   @JSImport("parse-author", JSImport.Namespace)
   @js.native
-  def apply(author: String): Author = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Author extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Author {
     

@@ -3,24 +3,22 @@ package typings.plotlyJs.anon
 import typings.plotlyJs.mod.MarkerSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  outliercolor :plotly.js.plotly.js.Color,   symbol :plotly.js.plotly.js.MarkerSymbol,   opacity :number,   size :number,   color :plotly.js.plotly.js.Color,   line :std.Partial<{  color :plotly.js.plotly.js.Color,   width :number,   outliercolor :plotly.js.plotly.js.Color,   outlierwidth :number}>}> */
-@js.native
 trait PartialoutliercolorColors extends StObject {
   
-  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var line: js.UndefOr[PartialcolorColorwidthnum] = js.native
+  var line: js.UndefOr[PartialcolorColorwidthnum] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var outliercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var outliercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var symbol: js.UndefOr[MarkerSymbol] = js.native
+  var symbol: js.UndefOr[MarkerSymbol] = js.undefined
 }
 object PartialoutliercolorColors {
   

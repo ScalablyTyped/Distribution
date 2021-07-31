@@ -5,13 +5,14 @@ import typings.expoConfigureSplashScreen.constantsMod.SplashScreenImageResizeMod
 import typings.expoConfigureSplashScreen.constantsMod.SplashScreenStatusBarStyleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoConfigureSplashScreenStrings {
   
   @js.native
-  sealed trait default extends SplashScreenStatusBarStyleType
+  sealed trait default
+    extends StObject
+       with SplashScreenStatusBarStyleType
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
@@ -31,42 +32,58 @@ object expoConfigureSplashScreenStrings {
   def StateManager: StateManager = "StateManager".asInstanceOf[StateManager]
   
   @js.native
-  sealed trait all extends PlatformType
+  sealed trait all
+    extends StObject
+       with PlatformType
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait android extends PlatformType
+  sealed trait android
+    extends StObject
+       with PlatformType
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   
   @js.native
-  sealed trait contain extends SplashScreenImageResizeModeType
+  sealed trait contain
+    extends StObject
+       with SplashScreenImageResizeModeType
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
-  sealed trait cover extends SplashScreenImageResizeModeType
+  sealed trait cover
+    extends StObject
+       with SplashScreenImageResizeModeType
   @scala.inline
   def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
-  sealed trait `dark-content` extends SplashScreenStatusBarStyleType
+  sealed trait `dark-content`
+    extends StObject
+       with SplashScreenStatusBarStyleType
   @scala.inline
   def `dark-content`: `dark-content` = "dark-content".asInstanceOf[`dark-content`]
   
   @js.native
-  sealed trait ios extends PlatformType
+  sealed trait ios
+    extends StObject
+       with PlatformType
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
   
   @js.native
-  sealed trait `light-content` extends SplashScreenStatusBarStyleType
+  sealed trait `light-content`
+    extends StObject
+       with SplashScreenStatusBarStyleType
   @scala.inline
   def `light-content`: `light-content` = "light-content".asInstanceOf[`light-content`]
   
   @js.native
-  sealed trait native extends SplashScreenImageResizeModeType
+  sealed trait native
+    extends StObject
+       with SplashScreenImageResizeModeType
   @scala.inline
   def native: native = "native".asInstanceOf[native]
 }

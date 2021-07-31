@@ -2,14 +2,16 @@ package typings.amazonProductApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("amazon-product-api", "createClient")
+  @JSImport("amazon-product-api", JSImport.Namespace)
   @js.native
-  def createClient(credentials: ICredentials): IAmazonProductClient = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createClient(credentials: ICredentials): IAmazonProductClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(credentials.asInstanceOf[js.Any]).asInstanceOf[IAmazonProductClient]
   
   @js.native
   trait IAmazonProductClient extends StObject {
@@ -26,12 +28,11 @@ object mod {
   
   type IAmazonProductQueryCallback = js.Function2[/* err */ String, /* results */ js.Array[js.Object], Unit]
   
-  @js.native
   trait IBrowseNodeLookupOptions extends StObject {
     
-    var browseNodeId: js.UndefOr[String] = js.native
+    var browseNodeId: js.UndefOr[String] = js.undefined
     
-    var responseGroup: js.UndefOr[String] = js.native
+    var responseGroup: js.UndefOr[String] = js.undefined
   }
   object IBrowseNodeLookupOptions {
     
@@ -58,14 +59,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ICredentials extends StObject {
     
-    var awsId: String = js.native
+    var awsId: String
     
-    var awsSecret: String = js.native
+    var awsSecret: String
     
-    var awsTag: String = js.native
+    var awsTag: String
   }
   object ICredentials {
     
@@ -89,28 +89,27 @@ object mod {
     }
   }
   
-  @js.native
   trait IItemLookupOptions extends StObject {
     
-    var condition: js.UndefOr[String] = js.native
+    var condition: js.UndefOr[String] = js.undefined
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var idType: js.UndefOr[String] = js.native
+    var idType: js.UndefOr[String] = js.undefined
     
-    var includeReviewsSummary: js.UndefOr[Boolean] = js.native
+    var includeReviewsSummary: js.UndefOr[Boolean] = js.undefined
     
-    var itemId: js.UndefOr[String | js.Array[String]] = js.native
+    var itemId: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var request: js.UndefOr[js.Function] = js.native
+    var request: js.UndefOr[js.Function] = js.undefined
     
-    var responseGroup: js.UndefOr[String] = js.native
+    var responseGroup: js.UndefOr[String] = js.undefined
     
-    var searchIndex: js.UndefOr[String] = js.native
+    var searchIndex: js.UndefOr[String] = js.undefined
     
-    var truncateReviewsAt: js.UndefOr[Double] = js.native
+    var truncateReviewsAt: js.UndefOr[Double] = js.undefined
     
-    var variationPage: js.UndefOr[String] = js.native
+    var variationPage: js.UndefOr[String] = js.undefined
   }
   object IItemLookupOptions {
     
@@ -188,20 +187,19 @@ object mod {
     }
   }
   
-  @js.native
   trait IItemSearchOptions extends StObject {
     
-    var condition: js.UndefOr[String] = js.native
+    var condition: js.UndefOr[String] = js.undefined
     
-    var itemPage: js.UndefOr[Double] = js.native
+    var itemPage: js.UndefOr[Double] = js.undefined
     
-    var keywords: js.UndefOr[String] = js.native
+    var keywords: js.UndefOr[String] = js.undefined
     
-    var responseGroup: js.UndefOr[String] = js.native
+    var responseGroup: js.UndefOr[String] = js.undefined
     
-    var searchIndex: js.UndefOr[String] = js.native
+    var searchIndex: js.UndefOr[String] = js.undefined
     
-    var sort: js.UndefOr[String] = js.native
+    var sort: js.UndefOr[String] = js.undefined
   }
   object IItemSearchOptions {
     

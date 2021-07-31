@@ -5,32 +5,31 @@ import typings.bizcharts.anon.OffsetY
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FacetProps
-  extends Props[js.Any] {
+  extends StObject
+     with Props[js.Any] {
   
-  var autoSetAxis: js.UndefOr[Boolean] = js.native
+  var autoSetAxis: js.UndefOr[Boolean] = js.undefined
   
-  var colTitle: js.UndefOr[OffsetY] = js.native
+  var colTitle: js.UndefOr[OffsetY] = js.undefined
   
   var eachView: js.UndefOr[
     js.Function2[/* view */ js.UndefOr[js.Any], /* facet */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var fields: js.UndefOr[String | js.Array[_]] = js.native
+  var fields: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var margin: js.UndefOr[Double | js.Array[Double]] = js.native
+  var margin: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var padding: js.UndefOr[Double | js.Array[Double]] = js.native
+  var padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var rowTitle: js.UndefOr[OffsetX] = js.native
+  var rowTitle: js.UndefOr[OffsetX] = js.undefined
   
-  var showTitle: js.UndefOr[Boolean] = js.native
+  var showTitle: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[FacetType] = js.native
+  var `type`: js.UndefOr[FacetType] = js.undefined
 }
 object FacetProps {
   
@@ -62,7 +61,7 @@ object FacetProps {
     def setEachViewUndefined: Self = StObject.set(x, "eachView", js.undefined)
     
     @scala.inline
-    def setFields(value: String | js.Array[_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    def setFields(value: String | js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)

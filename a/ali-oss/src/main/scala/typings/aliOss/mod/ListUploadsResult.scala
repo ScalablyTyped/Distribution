@@ -2,23 +2,21 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUploadsResult extends StObject {
   
-  var bucket: String = js.native
+  var bucket: String
   
-  var isTruncated: Boolean = js.native
+  var isTruncated: Boolean
   
-  var nextKeyMarker: js.Any = js.native
+  var nextKeyMarker: js.Any
   
-  var nextUploadIdMarker: js.Any = js.native
+  var nextUploadIdMarker: js.Any
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
   
-  var uploads: js.Array[Upload] = js.native
+  var uploads: js.Array[Upload]
 }
 object ListUploadsResult {
   

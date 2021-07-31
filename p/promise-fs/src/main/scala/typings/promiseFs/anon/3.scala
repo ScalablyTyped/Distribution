@@ -3,19 +3,17 @@ package typings.promiseFs.anon
 import typings.promiseFs.promiseFsStrings.buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `3` extends StObject {
   
-  var encoding: buffer = js.native
+  var encoding: buffer
 }
 object `3` {
   
   @scala.inline
-  def apply(encoding: buffer): `3` = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+  def apply(): `3` = {
+    val __obj = js.Dynamic.literal(encoding = "buffer")
     __obj.asInstanceOf[`3`]
   }
   

@@ -5,15 +5,13 @@ import typings.monacoEditor.mod.Range
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentRangeSemanticTokensProvider extends StObject {
   
-  def getLegend(): SemanticTokensLegend = js.native
+  def getLegend(): SemanticTokensLegend
   
-  def provideDocumentRangeSemanticTokens(model: ITextModel, range: Range, token: CancellationToken): ProviderResult[SemanticTokens] = js.native
+  def provideDocumentRangeSemanticTokens(model: ITextModel, range: Range, token: CancellationToken): ProviderResult[SemanticTokens]
 }
 object DocumentRangeSemanticTokensProvider {
   

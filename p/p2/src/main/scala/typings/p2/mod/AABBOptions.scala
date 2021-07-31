@@ -2,15 +2,13 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AABBOptions extends StObject {
   
-  var lowerBound: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var lowerBound: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var upperBound: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var upperBound: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
 object AABBOptions {
   

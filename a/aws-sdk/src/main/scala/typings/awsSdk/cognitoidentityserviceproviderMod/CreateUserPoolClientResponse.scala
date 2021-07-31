@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserPoolClientResponse extends StObject {
   
   /**
     * The user pool client that was just created.
     */
-  var UserPoolClient: js.UndefOr[UserPoolClientType] = js.native
+  var UserPoolClient: js.UndefOr[UserPoolClientType] = js.undefined
 }
 object CreateUserPoolClientResponse {
   

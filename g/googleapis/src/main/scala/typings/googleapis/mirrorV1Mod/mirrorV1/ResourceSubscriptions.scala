@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Subscriptions")
@@ -30,7 +29,7 @@ class ResourceSubscriptions protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceSubscriptionsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceSubscriptionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -59,7 +58,7 @@ class ResourceSubscriptions protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaSubscription] = js.native
   def insert(callback: BodyResponseCallback[SchemaSubscription]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubscription] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSubscription] = js.native
   def insert(params: ParamsResourceSubscriptionsInsert): GaxiosPromise[SchemaSubscription] = js.native
   def insert(params: ParamsResourceSubscriptionsInsert, callback: BodyResponseCallback[SchemaSubscription]): Unit = js.native
   def insert(
@@ -88,7 +87,7 @@ class ResourceSubscriptions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSubscriptionsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSubscriptionsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubscriptionsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSubscriptionsListResponse] = js.native
   def list(params: ParamsResourceSubscriptionsList): GaxiosPromise[SchemaSubscriptionsListResponse] = js.native
   def list(
     params: ParamsResourceSubscriptionsList,
@@ -121,7 +120,7 @@ class ResourceSubscriptions protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaSubscription] = js.native
   def update(callback: BodyResponseCallback[SchemaSubscription]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubscription] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSubscription] = js.native
   def update(params: ParamsResourceSubscriptionsUpdate): GaxiosPromise[SchemaSubscription] = js.native
   def update(params: ParamsResourceSubscriptionsUpdate, callback: BodyResponseCallback[SchemaSubscription]): Unit = js.native
   def update(

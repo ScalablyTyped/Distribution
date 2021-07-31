@@ -2,7 +2,6 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,23 +12,37 @@ sealed trait DirectiveLocationEnum extends StObject
 object DirectiveLocationEnum extends StObject {
   
   @js.native
-  sealed trait FIELD extends DirectiveLocationEnum
+  sealed trait FIELD
+    extends StObject
+       with DirectiveLocationEnum
   
   @js.native
-  sealed trait FRAGMENT_DEFINITION extends DirectiveLocationEnum
+  sealed trait FRAGMENT_DEFINITION
+    extends StObject
+       with DirectiveLocationEnum
   
   @js.native
-  sealed trait FRAGMENT_SPREAD extends DirectiveLocationEnum
+  sealed trait FRAGMENT_SPREAD
+    extends StObject
+       with DirectiveLocationEnum
   
   @js.native
-  sealed trait INLINE_FRAGMENT extends DirectiveLocationEnum
+  sealed trait INLINE_FRAGMENT
+    extends StObject
+       with DirectiveLocationEnum
   
   @js.native
-  sealed trait MUTATION extends DirectiveLocationEnum
+  sealed trait MUTATION
+    extends StObject
+       with DirectiveLocationEnum
   
   @js.native
-  sealed trait QUERY extends DirectiveLocationEnum
+  sealed trait QUERY
+    extends StObject
+       with DirectiveLocationEnum
   
   @js.native
-  sealed trait SUBSCRIPTION extends DirectiveLocationEnum
+  sealed trait SUBSCRIPTION
+    extends StObject
+       with DirectiveLocationEnum
 }

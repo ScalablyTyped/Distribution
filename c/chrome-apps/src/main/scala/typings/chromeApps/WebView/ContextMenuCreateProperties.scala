@@ -13,10 +13,8 @@ import typings.chromeApps.chromeAppsStrings.separator_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextMenuCreateProperties extends StObject {
   
   /**
@@ -24,43 +22,43 @@ trait ContextMenuCreateProperties extends StObject {
     * true for selected and false for unselected.
     * Only one radio item can be selected at a time in a given group of radio items.
     */
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * List of contexts this menu item will appear in.
     * Defaults to ['page'] if not specified.
     */
-  var contexts: js.UndefOr[js.Array[_]] = js.native
+  var contexts: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Lets you restrict the item to apply only to documents whose URL matches one of the given patterns. (This applies to frames as well.) For details on the format of a pattern, see <a href='match_patterns'>Match Patterns</a>.
     */
-  var documentUrlPatterns: js.UndefOr[js.Array[_]] = js.native
+  var documentUrlPatterns: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Whether this context menu item is enabled or disabled. Defaults to true.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The unique ID to assign to this item. Mandatory for event pages. Cannot be the same as another ID for this extension.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A function that will be called back when the menu item is clicked.
     */
-  var onclick: js.UndefOr[js.Function1[/* info */ js.Any, Unit]] = js.native
+  var onclick: js.UndefOr[js.Function1[/* info */ js.Any, Unit]] = js.undefined
   
   /**
     * The ID of a parent menu item; this makes the item a child of a previously added item.
     */
-  var parentId: js.UndefOr[integer | String] = js.native
+  var parentId: js.UndefOr[integer | String] = js.undefined
   
   /**
     * Similar to documentUrlPatterns, but lets you filter based on the src attribute of img/audio/video tags and the href of anchor tags.
     */
-  var targetUrlPatterns: js.UndefOr[js.Array[_]] = js.native
+  var targetUrlPatterns: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The text to be displayed in the item; this is -required- unless type is 'separator'.
@@ -68,7 +66,7 @@ trait ContextMenuCreateProperties extends StObject {
     * For example, if this parameter's value is 'Translate '%s' to Pig Latin' and the user selects
     * the word 'cool', the context menu item for the selection is 'Translate 'cool' to Pig Latin'.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The type of menu item. Defaults to 'normal' if not specified.
@@ -82,7 +80,7 @@ trait ContextMenuCreateProperties extends StObject {
         normal_ | checkbox_ | radio_ | separator_
       ]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ContextMenuCreateProperties {
   
@@ -102,7 +100,7 @@ object ContextMenuCreateProperties {
     def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
-    def setContexts(value: js.Array[_]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    def setContexts(value: js.Array[js.Any]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
@@ -111,7 +109,7 @@ object ContextMenuCreateProperties {
     def setContextsVarargs(value: js.Any*): Self = StObject.set(x, "contexts", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentUrlPatterns(value: js.Array[_]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
+    def setDocumentUrlPatterns(value: js.Array[js.Any]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
@@ -144,7 +142,7 @@ object ContextMenuCreateProperties {
     def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
     @scala.inline
-    def setTargetUrlPatterns(value: js.Array[_]): Self = StObject.set(x, "targetUrlPatterns", value.asInstanceOf[js.Any])
+    def setTargetUrlPatterns(value: js.Array[js.Any]): Self = StObject.set(x, "targetUrlPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)

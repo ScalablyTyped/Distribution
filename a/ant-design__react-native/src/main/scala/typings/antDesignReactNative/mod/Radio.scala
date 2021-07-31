@@ -4,7 +4,6 @@ import typings.antDesignReactNative.radioMod.default
 import typings.antDesignReactNative.radioRadioMod.RadioNativeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Radio")

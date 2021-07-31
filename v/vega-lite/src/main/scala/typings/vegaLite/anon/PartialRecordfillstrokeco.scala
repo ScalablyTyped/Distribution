@@ -3,34 +3,32 @@ package typings.vegaLite.anon
 import typings.vegaLite.legendComponentMod.LegendComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<'fill' | 'stroke' | 'color' | 'shape' | 'opacity' | 'fillOpacity' | 'strokeOpacity' | 'strokeWidth' | 'strokeDash' | 'size' | 'angle', vega-lite.vega-lite/build/src/compile/legend/component.LegendComponent>> */
-@js.native
 trait PartialRecordfillstrokeco extends StObject {
   
-  var angle: js.UndefOr[LegendComponent] = js.native
+  var angle: js.UndefOr[LegendComponent] = js.undefined
   
-  var color: js.UndefOr[LegendComponent] = js.native
+  var color: js.UndefOr[LegendComponent] = js.undefined
   
-  var fill: js.UndefOr[LegendComponent] = js.native
+  var fill: js.UndefOr[LegendComponent] = js.undefined
   
-  var fillOpacity: js.UndefOr[LegendComponent] = js.native
+  var fillOpacity: js.UndefOr[LegendComponent] = js.undefined
   
-  var opacity: js.UndefOr[LegendComponent] = js.native
+  var opacity: js.UndefOr[LegendComponent] = js.undefined
   
-  var shape: js.UndefOr[LegendComponent] = js.native
+  var shape: js.UndefOr[LegendComponent] = js.undefined
   
-  var size: js.UndefOr[LegendComponent] = js.native
+  var size: js.UndefOr[LegendComponent] = js.undefined
   
-  var stroke: js.UndefOr[LegendComponent] = js.native
+  var stroke: js.UndefOr[LegendComponent] = js.undefined
   
-  var strokeDash: js.UndefOr[LegendComponent] = js.native
+  var strokeDash: js.UndefOr[LegendComponent] = js.undefined
   
-  var strokeOpacity: js.UndefOr[LegendComponent] = js.native
+  var strokeOpacity: js.UndefOr[LegendComponent] = js.undefined
   
-  var strokeWidth: js.UndefOr[LegendComponent] = js.native
+  var strokeWidth: js.UndefOr[LegendComponent] = js.undefined
 }
 object PartialRecordfillstrokeco {
   

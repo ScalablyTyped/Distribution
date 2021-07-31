@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FetchDeploymentStateResponse extends StObject {
   
   /** The state of the game server deployment in each game server cluster. */
-  var clusterState: js.UndefOr[js.Array[DeployedClusterState]] = js.native
+  var clusterState: js.UndefOr[js.Array[DeployedClusterState]] = js.undefined
   
   /** List of locations that could not be reached. */
-  var unavailable: js.UndefOr[js.Array[String]] = js.native
+  var unavailable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object FetchDeploymentStateResponse {
   

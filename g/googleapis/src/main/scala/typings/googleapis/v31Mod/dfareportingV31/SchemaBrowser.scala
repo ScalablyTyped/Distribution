@@ -2,31 +2,29 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about a browser that can be targeted by ads.
   */
-@js.native
 trait SchemaBrowser extends StObject {
   
   /**
     * ID referring to this grouping of browser and version numbers. This is the
     * ID used for targeting.
     */
-  var browserVersionId: js.UndefOr[String] = js.native
+  var browserVersionId: js.UndefOr[String] = js.undefined
   
   /**
     * DART ID of this browser. This is the ID used when generating reports.
     */
-  var dartId: js.UndefOr[String] = js.native
+  var dartId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#browser&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Major version number (leftmost number) of this browser. For example, for
@@ -38,7 +36,7 @@ trait SchemaBrowser extends StObject {
     * cases where the ad server knows the browser is Firefox but can&#39;t tell
     * which version it is.
     */
-  var majorVersion: js.UndefOr[String] = js.native
+  var majorVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Minor version number (number after first dot on left) of this browser.
@@ -50,12 +48,12 @@ trait SchemaBrowser extends StObject {
     * not 4.0. Firefox ?.? targets cases where the ad server knows the browser
     * is Firefox but can&#39;t tell which version it is.
     */
-  var minorVersion: js.UndefOr[String] = js.native
+  var minorVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this browser.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaBrowser {
   

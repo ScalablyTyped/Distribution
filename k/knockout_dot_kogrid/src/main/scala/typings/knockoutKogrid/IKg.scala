@@ -3,31 +3,29 @@ package typings.knockoutKogrid
 import typings.knockoutKogrid.kg.DomUtilityService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKg extends StObject {
   
   /** Default aggregate template */
-  def aggregateTemplate(): String = js.native
+  def aggregateTemplate(): String
   
   /** Default cell template. Can be overriden in GridOptions.cellTemplate */
-  def defaultCellTemplate(): String = js.native
+  def defaultCellTemplate(): String
   
   /** Default grid template */
-  def defaultGridTemplate(): String = js.native
+  def defaultGridTemplate(): String
   
   /** Default headercell template. Can be overriden in GridOptions.headerCellTemplate */
-  def defaultHeaderCellTemplate(): String = js.native
+  def defaultHeaderCellTemplate(): String
   
   /** Default headerrow template. Can be overriden in GridOptions.headerRowTemplate */
-  def defaultHeaderRowTemplate(): String = js.native
+  def defaultHeaderRowTemplate(): String
   
   /** Default row template. Can be overriden in GridOptions.rowTemplate */
-  def defaultRowTemplate(): String = js.native
+  def defaultRowTemplate(): String
   
-  var domUtilityService: DomUtilityService = js.native
+  var domUtilityService: DomUtilityService
 }
 object IKg {
   

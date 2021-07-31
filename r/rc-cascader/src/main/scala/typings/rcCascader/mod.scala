@@ -4,7 +4,6 @@ import typings.rcCascader.cascaderMod.CascaderProps
 import typings.rcCascader.cascaderMod.CascaderState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,8 +28,7 @@ object mod {
     def defaultProps_=(x: CascaderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("rc-cascader", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: CascaderProps, prevState: CascaderState): CascaderState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: CascaderProps, prevState: CascaderState): CascaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[CascaderState]
   }
 }

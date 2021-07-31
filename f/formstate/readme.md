@@ -10,9 +10,9 @@ Painless and simple MobX form management
 | ------------------ | :-------------: |
 | Full name          | formstate |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 6 |
-| # downloads        | 86929 |
+| # releases         | 7 |
+| # dependents       | 11 |
+| # downloads        | 91017 |
 | # stars            | 1 |
 
 ## Links

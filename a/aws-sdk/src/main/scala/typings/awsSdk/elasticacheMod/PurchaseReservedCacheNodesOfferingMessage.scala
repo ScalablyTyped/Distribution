@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseReservedCacheNodesOfferingMessage extends StObject {
   
   /**
     * The number of cache node instances to reserve. Default: 1 
     */
-  var CacheNodeCount: js.UndefOr[IntegerOptional] = js.native
+  var CacheNodeCount: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * A customer-specified identifier to track this reservation.  The Reserved Cache Node ID is an unique customer-specified identifier to track this reservation. If this parameter is not specified, ElastiCache automatically generates an identifier for the reservation.  Example: myreservationID
     */
-  var ReservedCacheNodeId: js.UndefOr[String] = js.native
+  var ReservedCacheNodeId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the reserved cache node offering to purchase. Example: 438012d3-4052-4cc7-b2e3-8d3372e0e706 
     */
-  var ReservedCacheNodesOfferingId: String = js.native
+  var ReservedCacheNodesOfferingId: String
 }
 object PurchaseReservedCacheNodesOfferingMessage {
   

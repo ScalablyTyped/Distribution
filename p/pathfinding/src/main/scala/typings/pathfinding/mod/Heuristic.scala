@@ -2,13 +2,11 @@ package typings.pathfinding.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Heuristic extends StObject {
   
-  var heuristic: js.UndefOr[js.Function2[/* dx */ Double, /* dy */ Double, Double]] = js.native
+  var heuristic: js.UndefOr[js.Function2[/* dx */ Double, /* dy */ Double, Double]] = js.undefined
 }
 object Heuristic {
   
@@ -18,21 +16,21 @@ object Heuristic {
     __obj.asInstanceOf[Heuristic]
   }
   
-  @JSImport("pathfinding", "Heuristic.chebyshev")
+  @JSImport("pathfinding", "Heuristic")
   @js.native
-  def chebyshev(dx: Double, dy: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pathfinding", "Heuristic.euclidean")
-  @js.native
-  def euclidean(dx: Double, dy: Double): Double = js.native
+  @scala.inline
+  def chebyshev(dx: Double, dy: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("chebyshev")(dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("pathfinding", "Heuristic.manhattan")
-  @js.native
-  def manhattan(dx: Double, dy: Double): Double = js.native
+  @scala.inline
+  def euclidean(dx: Double, dy: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("euclidean")(dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("pathfinding", "Heuristic.octile")
-  @js.native
-  def octile(dx: Double, dy: Double): Double = js.native
+  @scala.inline
+  def manhattan(dx: Double, dy: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("manhattan")(dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def octile(dx: Double, dy: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("octile")(dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @scala.inline
   implicit class HeuristicMutableBuilder[Self <: Heuristic] (val x: Self) extends AnyVal {

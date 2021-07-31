@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoScalingPolicyUpdate extends StObject {
   
   /**
     * The name of the scaling policy.
     */
-  var PolicyName: js.UndefOr[AutoScalingPolicyName] = js.native
+  var PolicyName: js.UndefOr[AutoScalingPolicyName] = js.undefined
   
   /**
     * Represents a target tracking scaling policy configuration.
     */
-  var TargetTrackingScalingPolicyConfiguration: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = js.native
+  var TargetTrackingScalingPolicyConfiguration: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate
 }
 object AutoScalingPolicyUpdate {
   

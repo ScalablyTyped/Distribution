@@ -3,16 +3,14 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] extends StObject {
   
   /**
     * Custom filter parameters to be passed to the generator function
     */
-  var customFilterParameters: CustomFilterParameters[FParams] = js.native
+  var customFilterParameters: CustomFilterParameters[FParams]
   
   /**
     * Function to generate the filter component
@@ -25,12 +23,12 @@ trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElemen
       Unit
     ],
     customFilterParameters: CustomFilterParameters[FParams]
-  ): ReactElement = js.native
+  ): ReactElement
   
   /**
     * Type must be 'CustomFilter'
     */
-  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter = js.native
+  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter
 }
 object CustomFilter {
   
@@ -41,16 +39,15 @@ object CustomFilter {
       /* value */ js.UndefOr[CustomFilterParameters[FParams]], 
       /* type */ js.UndefOr[typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter], 
       Unit
-    ], CustomFilterParameters[FParams]) => ReactElement,
-    `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter
+    ], CustomFilterParameters[FParams]) => ReactElement
   ): CustomFilter[FParams, FElement] = {
     val __obj = js.Dynamic.literal(customFilterParameters = customFilterParameters.asInstanceOf[js.Any], getElement = js.Any.fromFunction2(getElement))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CustomFilter")
     __obj.asInstanceOf[CustomFilter[FParams, FElement]]
   }
   
   @scala.inline
-  implicit class CustomFilterMutableBuilder[Self <: CustomFilter[_, _], FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] (val x: Self with (CustomFilter[FParams, FElement])) extends AnyVal {
+  implicit class CustomFilterMutableBuilder[Self <: CustomFilter[?, ?], FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] (val x: Self & (CustomFilter[FParams, FElement])) extends AnyVal {
     
     @scala.inline
     def setCustomFilterParameters(value: CustomFilterParameters[FParams]): Self = StObject.set(x, "customFilterParameters", value.asInstanceOf[js.Any])

@@ -1,50 +1,48 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Avatarurl
-import typings.octokitTypes.anon.Confused
+import typings.octokitTypes.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsUpdateDiscussionInOrgResponseData extends StObject {
   
-  var author: Avatarurl = js.native
+  var author: Avatarurl
   
-  var body: String = js.native
+  var body: String
   
-  var body_html: String = js.native
+  var body_html: String
   
-  var body_version: String = js.native
+  var body_version: String
   
-  var comments_count: Double = js.native
+  var comments_count: Double
   
-  var comments_url: String = js.native
+  var comments_url: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var last_edited_at: String = js.native
+  var last_edited_at: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var number: Double = js.native
+  var number: Double
   
-  var pinned: Boolean = js.native
+  var pinned: Boolean
   
-  var `private`: Boolean = js.native
+  var `private`: Boolean
   
-  var reactions: Confused = js.native
+  var reactions: `1`
   
-  var team_url: String = js.native
+  var team_url: String
   
-  var title: String = js.native
+  var title: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object TeamsUpdateDiscussionInOrgResponseData {
   
@@ -63,7 +61,7 @@ object TeamsUpdateDiscussionInOrgResponseData {
     number: Double,
     pinned: Boolean,
     `private`: Boolean,
-    reactions: Confused,
+    reactions: `1`,
     team_url: String,
     title: String,
     updated_at: String,
@@ -117,7 +115,7 @@ object TeamsUpdateDiscussionInOrgResponseData {
     def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReactions(value: Confused): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    def setReactions(value: `1`): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTeam_url(value: String): Self = StObject.set(x, "team_url", value.asInstanceOf[js.Any])

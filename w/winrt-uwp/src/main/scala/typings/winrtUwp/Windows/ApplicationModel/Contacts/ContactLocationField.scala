@@ -2,42 +2,40 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a user's location and address. */
-@js.native
 trait ContactLocationField extends StObject {
   
   /** Gets the category for the contact data. */
-  var category: ContactFieldCategory = js.native
+  var category: ContactFieldCategory
   
   /** Gets the contact's city. */
-  var city: String = js.native
+  var city: String
   
   /** Gets the contact's country. */
-  var country: String = js.native
+  var country: String
   
   /** Gets the name of the field. */
-  var name: String = js.native
+  var name: String
   
   /** Gets the contact's postal code. */
-  var postalCode: String = js.native
+  var postalCode: String
   
   /** Gets the contact's region. */
-  var region: String = js.native
+  var region: String
   
   /** Gets the contact's street. */
-  var street: String = js.native
+  var street: String
   
   /** Gets the contact field type for the data. */
-  var `type`: ContactFieldType = js.native
+  var `type`: ContactFieldType
   
   /** Gets a string that represents an unstructured address. */
-  var unstructuredAddress: String = js.native
+  var unstructuredAddress: String
   
   /** Gets the value of the contact data. */
-  var value: String = js.native
+  var value: String
 }
 object ContactLocationField {
   

@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XSupportedLanguages extends XInterface {
+trait XSupportedLanguages
+  extends StObject
+     with XInterface {
   
-  val Languages: SafeArray[Double] = js.native
+  val Languages: SafeArray[Double]
   
-  def getLanguages(): SafeArray[Double] = js.native
+  def getLanguages(): SafeArray[Double]
   
-  def hasLanguage(nLanguage: Double): Boolean = js.native
+  def hasLanguage(nLanguage: Double): Boolean
 }
 object XSupportedLanguages {
   

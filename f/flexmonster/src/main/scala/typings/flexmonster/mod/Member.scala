@@ -2,23 +2,21 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Member extends StObject {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var children: js.UndefOr[js.Array[Member]] = js.native
+  var children: js.UndefOr[js.Array[Member]] = js.undefined
   
-  var hierarchyName: js.UndefOr[String] = js.native
+  var hierarchyName: js.UndefOr[String] = js.undefined
   
-  var isLeaf: js.UndefOr[Boolean] = js.native
+  var isLeaf: js.UndefOr[Boolean] = js.undefined
   
-  var parentMember: js.UndefOr[String] = js.native
+  var parentMember: js.UndefOr[String] = js.undefined
   
-  var uniqueName: js.UndefOr[String] = js.native
+  var uniqueName: js.UndefOr[String] = js.undefined
 }
 object Member {
   

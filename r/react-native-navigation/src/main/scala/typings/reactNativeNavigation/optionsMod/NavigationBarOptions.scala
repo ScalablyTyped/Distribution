@@ -2,15 +2,13 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationBarOptions extends StObject {
   
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object NavigationBarOptions {
   

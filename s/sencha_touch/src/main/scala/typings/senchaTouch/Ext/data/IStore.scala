@@ -5,68 +5,68 @@ import typings.senchaTouch.Ext.IEvented
 import typings.senchaTouch.Ext.util.IMixedCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IStore extends IEvented {
+trait IStore
+  extends StObject
+     with IEvented {
   
   /** [Method] Adds Model instance to the Store
     * @param model Ext.data.Model[]/Ext.data.Model... An array of Model instances or Model configuration objects, or variable number of Model instance or config arguments.
     * @returns Ext.data.Model[] The model instances that were added.
     */
-  var add: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Array]] = js.native
+  var add: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Array]] = js.undefined
   
   /** [Method] Uses the configured reader to convert the data into records and adds it to the Store
     * @param data Object[] Array of data to load
     */
-  var addData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Array], Unit]] = js.native
+  var addData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] We are using applyData so that we can return nothing and prevent the this data property to be overridden
     * @param data Array/Object
     */
-  var applyData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+  var applyData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var autoLoad: js.UndefOr[js.Any] = js.native
+  var autoLoad: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoSync: js.UndefOr[Boolean] = js.native
+  var autoSync: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Gets the average value in the store
     * @param field String The field in each record you want to get the average for.
     * @returns Number The average value, if no items exist, 0.
     */
-  var average: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Double]] = js.native
+  var average: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Double]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var buffered: js.UndefOr[Boolean] = js.native
+  var buffered: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Reverts to a view of the Record cache with no filtering applied
     * @param suppressEvent Boolean true to clear silently without firing the refresh event.
     */
-  var clearFilter: js.UndefOr[js.Function1[/* suppressEvent */ js.UndefOr[Boolean], Unit]] = js.native
+  var clearFilter: js.UndefOr[js.Function1[/* suppressEvent */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var clearOnPageLoad: js.UndefOr[Boolean] = js.native
+  var clearOnPageLoad: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Number) */
-  var currentPage: js.UndefOr[Double] = js.native
+  var currentPage: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Object[]/Ext.data.Model[]) */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var destroyRemovedRecords: js.UndefOr[Boolean] = js.native
+  var destroyRemovedRecords: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Calls the specified function for each of the Records in the cache
     * @param fn Function The function to call. Returning false aborts and exits the iteration.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Record in the iteration.
     */
-  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.native
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Object[]/Ext.util.Collection) */
-  var fields: js.UndefOr[js.Any] = js.native
+  var fields: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Filters the loaded set of records by a given set of filters
     * @param filters Object[]/Ext.util.Filter[]/String The set of filters to apply to the data. These are stored internally on the store, but the filtering itself is done on the Store's MixedCollection. See MixedCollection's filter method for filter syntax. Alternatively, pass in a property string.
@@ -82,16 +82,16 @@ trait IStore extends IEvented {
       /* caseSensitive */ js.UndefOr[Boolean], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Filter by a function
     * @param fn Function The function to be called. It will be passed the following parameters:
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to this Store.
     */
-  var filterBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.native
+  var filterBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Object[]) */
-  var filters: js.UndefOr[Array] = js.native
+  var filters: js.UndefOr[Array] = js.undefined
   
   /** [Method] Finds the index of the first matching Record in this store by a specific field value
     * @param fieldName String The name of the Record field to test.
@@ -112,7 +112,7 @@ trait IStore extends IEvented {
       /* exactMatch */ js.UndefOr[Boolean], 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Find the index of the first matching Record in this Store by a function
     * @param fn Function The function to be called. It will be passed the following parameters:
@@ -127,7 +127,7 @@ trait IStore extends IEvented {
       /* startIndex */ js.UndefOr[Double], 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Finds the index of the first matching Record in this store by a specific field value
     * @param fieldName String The name of the Record field to test.
@@ -142,7 +142,7 @@ trait IStore extends IEvented {
       /* startIndex */ js.UndefOr[Double], 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Finds the first matching Record in this store by a specific field value
     * @param fieldName String The name of the Record field to test.
@@ -163,133 +163,133 @@ trait IStore extends IEvented {
       /* exactMatch */ js.UndefOr[Boolean], 
       IModel
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Convenience function for getting the first model instance in the store
     * @returns Ext.data.Model/undefined The first model instance in the store, or undefined.
     */
-  var first: js.UndefOr[js.Function0[_]] = js.native
+  var first: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Gets the number of all cached records including the ones currently filtered
     * @returns Number The number of all Records in the Store's cache.
     */
-  var getAllCount: js.UndefOr[js.Function0[Double]] = js.native
+  var getAllCount: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Get the Record at the specified index
     * @param index Number The index of the Record to find.
     * @returns Ext.data.Model/undefined The Record at the passed index. Returns undefined if not found.
     */
-  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], _]] = js.native
+  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
   
   /** [Method] Returns the value of autoLoad
     * @returns Boolean/Object
     */
-  var getAutoLoad: js.UndefOr[js.Function0[_]] = js.native
+  var getAutoLoad: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of autoSync
     * @returns Boolean
     */
-  var getAutoSync: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAutoSync: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of buffered
     * @returns Boolean
     */
-  var getBuffered: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getBuffered: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Get the Record with the specified id
     * @param id String The id of the Record to find.
     * @returns Ext.data.Model/undefined The Record with the passed id. Returns undefined if not found.
     */
-  var getById: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], _]] = js.native
+  var getById: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], js.Any]] = js.undefined
   
   /** [Method] Returns the value of clearOnPageLoad
     * @returns Boolean
     */
-  var getClearOnPageLoad: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getClearOnPageLoad: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Gets the number of cached records
     * @returns Number The number of Records in the Store's cache.
     */
-  var getCount: js.UndefOr[js.Function0[Double]] = js.native
+  var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of data
     * @returns Object[]/Ext.data.Model[]
     */
-  var getData: js.UndefOr[js.Function0[_]] = js.native
+  var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of destroyRemovedRecords
     * @returns Boolean
     */
-  var getDestroyRemovedRecords: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getDestroyRemovedRecords: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of fields
     * @returns Object[]/Ext.util.Collection
     */
-  var getFields: js.UndefOr[js.Function0[_]] = js.native
+  var getFields: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of getGroupString
     * @returns Function
     */
-  var getGetGroupString: js.UndefOr[js.Function0[_]] = js.native
+  var getGetGroupString: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of groupDir
     * @returns String
     */
-  var getGroupDir: js.UndefOr[js.Function0[String]] = js.native
+  var getGroupDir: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of groupField
     * @returns String
     */
-  var getGroupField: js.UndefOr[js.Function0[String]] = js.native
+  var getGroupField: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (Function) */
-  var getGroupString: js.UndefOr[js.Any] = js.native
+  var getGroupString: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Returns the value of grouper
     * @returns Object
     */
-  var getGrouper: js.UndefOr[js.Function0[_]] = js.native
+  var getGrouper: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns an array containing the result of applying the grouper to the records in this store
     * @param groupName String Pass in an optional groupName argument to access a specific group as defined by grouper.
     * @returns Object/Object[] The grouped data.
     */
-  var getGroups: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], _]] = js.native
+  var getGroups: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], js.Any]] = js.undefined
   
   /** [Method] Returns the value of model
     * @returns String
     */
-  var getModel: js.UndefOr[js.Function0[String]] = js.native
+  var getModel: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of modelDefaults
     * @returns Object
     */
-  var getModelDefaults: js.UndefOr[js.Function0[_]] = js.native
+  var getModelDefaults: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns all Model instances that are either currently a phantom e g
     * @returns Ext.data.Model[] The Model instances.
     */
-  var getNewRecords: js.UndefOr[js.Function0[Array]] = js.native
+  var getNewRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of pageSize
     * @returns Number
     */
-  var getPageSize: js.UndefOr[js.Function0[Double]] = js.native
+  var getPageSize: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of params
     * @returns Object
     */
-  var getParams: js.UndefOr[js.Function0[_]] = js.native
+  var getParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of plugins
     * @returns Object/Array
     */
-  var getPlugins: js.UndefOr[js.Function0[_]] = js.native
+  var getPlugins: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of proxy
     * @returns String/Ext.data.proxy.Proxy/Object
     */
-  var getProxy: js.UndefOr[js.Function0[_]] = js.native
+  var getProxy: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns a range of Records between specified indices
     * @param startIndex Number The starting index.
@@ -298,110 +298,112 @@ trait IStore extends IEvented {
     */
   var getRange: js.UndefOr[
     js.Function2[/* startIndex */ js.UndefOr[Double], /* endIndex */ js.UndefOr[Double], Array]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns the value of remoteFilter
     * @returns Boolean
     */
-  var getRemoteFilter: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getRemoteFilter: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of remoteGroup
     * @returns Boolean
     */
-  var getRemoteGroup: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getRemoteGroup: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of remoteSort
     * @returns Boolean
     */
-  var getRemoteSort: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getRemoteSort: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns any records that have been removed from the store but not yet destroyed on the proxy
     * @returns Ext.data.Model[] The removed Model instances.
     */
-  var getRemovedRecords: js.UndefOr[js.Function0[Array]] = js.native
+  var getRemovedRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of storeId
     * @returns String
     */
-  var getStoreId: js.UndefOr[js.Function0[String]] = js.native
+  var getStoreId: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of syncRemovedRecords
     * @returns Boolean
     */
-  var getSyncRemovedRecords: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getSyncRemovedRecords: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of totalCount
     * @returns Number
     */
-  var getTotalCount: js.UndefOr[js.Function0[Double]] = js.native
+  var getTotalCount: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns all Model instances that have been updated in the Store but not yet synchronized with the Proxy
     * @returns Ext.data.Model[] The updated Model instances.
     */
-  var getUpdatedRecords: js.UndefOr[js.Function0[Array]] = js.native
+  var getUpdatedRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Config Option] (String) */
-  var groupDir: js.UndefOr[String] = js.native
+  var groupDir: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var groupField: js.UndefOr[String] = js.native
+  var groupField: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var grouper: js.UndefOr[js.Any] = js.native
+  var grouper: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Get the index within the cache of the passed Record
     * @param record Ext.data.Model The Ext.data.Model object to find.
     * @returns Number The index of the passed Record. Returns -1 if not found.
     */
-  var indexOf: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Double]] = js.native
+  var indexOf: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Double]] = js.undefined
   
   /** [Method] Get the index within the cache of the Record with the passed id
     * @param id String The id of the Record to find.
     * @returns Number The index of the Record. Returns -1 if not found.
     */
-  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Double]] = js.native
+  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Double]] = js.undefined
   
   /** [Method] Inserts Model instances into the Store at the given index and fires the add event
     * @param index Number The start index at which to insert the passed Records.
     * @param records Ext.data.Model[] An Array of Ext.data.Model objects to add to the cache.
     * @returns Object
     */
-  var insert: js.UndefOr[js.Function2[/* index */ js.UndefOr[Double], /* records */ js.UndefOr[Array], _]] = js.native
+  var insert: js.UndefOr[
+    js.Function2[/* index */ js.UndefOr[Double], /* records */ js.UndefOr[Array], js.Any]
+  ] = js.undefined
   
   /** [Method] Returns true if the Store is set to autoLoad or is a type which loads upon instantiation
     * @returns Boolean
     */
-  var isAutoLoading: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isAutoLoading: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if this store is currently filtered
     * @returns Boolean
     */
-  var isFiltered: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isFiltered: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] This method tells you if this store has a grouper defined on it
     * @returns Boolean true if this store has a grouper defined.
     */
-  var isGrouped: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isGrouped: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if the Store has been loaded
     * @returns Boolean true if the Store has been loaded.
     */
-  var isLoaded: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isLoaded: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if the Store is currently performing a load operation
     * @returns Boolean true if the Store is currently loading.
     */
-  var isLoading: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isLoading: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if this store is currently sorted
     * @returns Boolean
     */
-  var isSorted: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isSorted: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Convenience function for getting the last model instance in the store
     * @returns Ext.data.Model/undefined The last model instance in the store, or undefined.
     */
-  var last: js.UndefOr[js.Function0[_]] = js.native
+  var last: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Loads data into the Store via the configured proxy
     * @param options Object/Function config object, passed into the Ext.data.Operation object before loading.
@@ -409,8 +411,8 @@ trait IStore extends IEvented {
     * @returns Object
     */
   var load: js.UndefOr[
-    js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], _]
-  ] = js.native
+    js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], js.Any]
+  ] = js.undefined
   
   /** [Method] Loads an array of data straight into the Store
     * @param data Ext.data.Model[]/Object[] Array of data to load. Any non-model instances will be cast into model instances first.
@@ -418,7 +420,7 @@ trait IStore extends IEvented {
     */
   var loadData: js.UndefOr[
     js.Function2[/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Loads a given page of data by setting the start and limit values appropriately
     * @param page Number The number of the page to load.
@@ -432,50 +434,50 @@ trait IStore extends IEvented {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Adds Model instance to the Store
     * @param model Ext.data.Model[]/Ext.data.Model... An array of Model instances or Model configuration objects, or variable number of Model instance or config arguments.
     * @returns Ext.data.Model[] The model instances that were added.
     */
-  var loadRecords: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Array]] = js.native
+  var loadRecords: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Array]] = js.undefined
   
   /** [Method] Gets the maximum value in the store
     * @param field String The field in each record.
     * @returns Object/undefined The maximum value, if no items exist, undefined.
     */
-  var max: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], _]] = js.native
+  var max: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], js.Any]] = js.undefined
   
   /** [Method] Gets the minimum value in the store
     * @param field String The field in each record.
     * @returns Object/undefined The minimum value, if no items exist, undefined.
     */
-  var min: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], _]] = js.native
+  var min: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], js.Any]] = js.undefined
   
   /** [Config Option] (String) */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /** [Method] Loads the next page in the current data set
     * @param options Object See options for load.
     */
-  var nextPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+  var nextPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Object) */
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object/Array) */
-  var plugins: js.UndefOr[js.Any] = js.native
+  var plugins: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Loads the previous page in the current data set
     * @param options Object See options for load.
     */
-  var previousPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+  var previousPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (String/Ext.data.proxy.Proxy/Object) */
-  var proxy: js.UndefOr[js.Any] = js.native
+  var proxy: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Query the cached records in this Store using a filtering function
     * @param fn Function The function to be called. It will be passed the following parameters:
@@ -484,157 +486,157 @@ trait IStore extends IEvented {
     */
   var queryBy: js.UndefOr[
     js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IMixedCollection]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var remoteFilter: js.UndefOr[Boolean] = js.native
+  var remoteFilter: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var remoteGroup: js.UndefOr[Boolean] = js.native
+  var remoteGroup: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var remoteSort: js.UndefOr[Boolean] = js.native
+  var remoteSort: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Removes the given record from the Store firing the removerecords event passing all the instances that are removed
     * @param records Ext.data.Model/Ext.data.Model[] Model instance or array of instances to remove.
     */
-  var remove: js.UndefOr[js.Function1[/* records */ js.UndefOr[js.Any], Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* records */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Remove all items from the store
     * @param silent Boolean Prevent the clear event from being fired.
     */
-  var removeAll: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.native
+  var removeAll: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Removes the model instance at the given index
     * @param index Number The record index.
     */
-  var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.native
+  var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of autoLoad
     * @param autoLoad Boolean/Object The new value.
     */
-  var setAutoLoad: js.UndefOr[js.Function1[/* autoLoad */ js.UndefOr[js.Any], Unit]] = js.native
+  var setAutoLoad: js.UndefOr[js.Function1[/* autoLoad */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of autoSync
     * @param autoSync Boolean The new value.
     */
-  var setAutoSync: js.UndefOr[js.Function1[/* autoSync */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAutoSync: js.UndefOr[js.Function1[/* autoSync */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of buffered
     * @param buffered Boolean The new value.
     */
-  var setBuffered: js.UndefOr[js.Function1[/* buffered */ js.UndefOr[Boolean], Unit]] = js.native
+  var setBuffered: js.UndefOr[js.Function1[/* buffered */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of clearOnPageLoad
     * @param clearOnPageLoad Boolean The new value.
     */
-  var setClearOnPageLoad: js.UndefOr[js.Function1[/* clearOnPageLoad */ js.UndefOr[Boolean], Unit]] = js.native
+  var setClearOnPageLoad: js.UndefOr[js.Function1[/* clearOnPageLoad */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of data
     * @param data Object[]/Ext.data.Model[] The new value.
     */
-  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of destroyRemovedRecords
     * @param destroyRemovedRecords Boolean The new value.
     */
-  var setDestroyRemovedRecords: js.UndefOr[js.Function1[/* destroyRemovedRecords */ js.UndefOr[Boolean], Unit]] = js.native
+  var setDestroyRemovedRecords: js.UndefOr[js.Function1[/* destroyRemovedRecords */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of fields
     * @param fields Object[]/Ext.util.Collection The new value.
     * @returns Object Ext.util.Collection
     */
-  var setFields: js.UndefOr[js.Function1[/* fields */ js.UndefOr[js.Any], _]] = js.native
+  var setFields: js.UndefOr[js.Function1[/* fields */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Sets the value of filters
     * @param filters Object[] The new value.
     */
-  var setFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], Unit]] = js.native
+  var setFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of getGroupString
     * @param getGroupString Function The new value.
     */
-  var setGetGroupString: js.UndefOr[js.Function1[/* getGroupString */ js.UndefOr[js.Any], Unit]] = js.native
+  var setGetGroupString: js.UndefOr[js.Function1[/* getGroupString */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of groupDir
     * @param groupDir String The new value.
     */
-  var setGroupDir: js.UndefOr[js.Function1[/* groupDir */ js.UndefOr[String], Unit]] = js.native
+  var setGroupDir: js.UndefOr[js.Function1[/* groupDir */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of groupField
     * @param groupField String The new value.
     */
-  var setGroupField: js.UndefOr[js.Function1[/* groupField */ js.UndefOr[String], Unit]] = js.native
+  var setGroupField: js.UndefOr[js.Function1[/* groupField */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of grouper
     * @param grouper Object The new value.
     */
-  var setGrouper: js.UndefOr[js.Function1[/* grouper */ js.UndefOr[js.Any], Unit]] = js.native
+  var setGrouper: js.UndefOr[js.Function1[/* grouper */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of model
     * @param model String The new value.
     */
-  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[String], Unit]] = js.native
+  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of modelDefaults
     * @param modelDefaults Object The new value.
     */
-  var setModelDefaults: js.UndefOr[js.Function1[/* modelDefaults */ js.UndefOr[js.Any], Unit]] = js.native
+  var setModelDefaults: js.UndefOr[js.Function1[/* modelDefaults */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of pageSize
     * @param pageSize Number The new value.
     */
-  var setPageSize: js.UndefOr[js.Function1[/* pageSize */ js.UndefOr[Double], Unit]] = js.native
+  var setPageSize: js.UndefOr[js.Function1[/* pageSize */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of params
     * @param params Object The new value.
     */
-  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of plugins
     * @param plugins Object/Array The new value.
     */
-  var setPlugins: js.UndefOr[js.Function1[/* plugins */ js.UndefOr[js.Any], Unit]] = js.native
+  var setPlugins: js.UndefOr[js.Function1[/* plugins */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of proxy
     * @param proxy String/Ext.data.proxy.Proxy/Object The new value.
     */
-  var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[js.Any], Unit]] = js.native
+  var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of remoteFilter
     * @param remoteFilter Boolean The new value.
     */
-  var setRemoteFilter: js.UndefOr[js.Function1[/* remoteFilter */ js.UndefOr[Boolean], Unit]] = js.native
+  var setRemoteFilter: js.UndefOr[js.Function1[/* remoteFilter */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of remoteGroup
     * @param remoteGroup Boolean The new value.
     */
-  var setRemoteGroup: js.UndefOr[js.Function1[/* remoteGroup */ js.UndefOr[Boolean], Unit]] = js.native
+  var setRemoteGroup: js.UndefOr[js.Function1[/* remoteGroup */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of remoteSort
     * @param remoteSort Boolean The new value.
     */
-  var setRemoteSort: js.UndefOr[js.Function1[/* remoteSort */ js.UndefOr[Boolean], Unit]] = js.native
+  var setRemoteSort: js.UndefOr[js.Function1[/* remoteSort */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of sorters
     * @param sorters Object[] The new value.
     */
-  var setSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], Unit]] = js.native
+  var setSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of storeId
     * @param storeId String The new value.
     */
-  var setStoreId: js.UndefOr[js.Function1[/* storeId */ js.UndefOr[String], Unit]] = js.native
+  var setStoreId: js.UndefOr[js.Function1[/* storeId */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of syncRemovedRecords
     * @param syncRemovedRecords Boolean The new value.
     */
-  var setSyncRemovedRecords: js.UndefOr[js.Function1[/* syncRemovedRecords */ js.UndefOr[Boolean], Unit]] = js.native
+  var setSyncRemovedRecords: js.UndefOr[js.Function1[/* syncRemovedRecords */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of totalCount
     * @param totalCount Number The new value.
     */
-  var setTotalCount: js.UndefOr[js.Function1[/* totalCount */ js.UndefOr[Double], Unit]] = js.native
+  var setTotalCount: js.UndefOr[js.Function1[/* totalCount */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sorts the data in the Store by one or more of its properties
     * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
@@ -648,31 +650,31 @@ trait IStore extends IEvented {
       /* where */ js.UndefOr[String], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Object[]) */
-  var sorters: js.UndefOr[Array] = js.native
+  var sorters: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (String) */
-  var storeId: js.UndefOr[String] = js.native
+  var storeId: js.UndefOr[String] = js.undefined
   
   /** [Method] Sums the value of property for each record between start and end and returns the result
     * @param field String The field in each record.
     * @returns Number The sum.
     */
-  var sum: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Double]] = js.native
+  var sum: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Double]] = js.undefined
   
   /** [Method] Synchronizes the Store with its Proxy
     * @param options Object
     * @returns Object
     */
-  var sync: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], _]] = js.native
+  var sync: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var syncRemovedRecords: js.UndefOr[Boolean] = js.native
+  var syncRemovedRecords: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var totalCount: js.UndefOr[Double] = js.native
+  var totalCount: js.UndefOr[Double] = js.undefined
 }
 object IStore {
   
@@ -822,7 +824,7 @@ object IStore {
     def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
     
     @scala.inline
-    def setFirst(value: () => _): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    def setFirst(value: () => js.Any): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
     def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
@@ -834,13 +836,13 @@ object IStore {
     def setGetAllCountUndefined: Self = StObject.set(x, "getAllCount", js.undefined)
     
     @scala.inline
-    def setGetAt(value: /* index */ js.UndefOr[Double] => _): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+    def setGetAt(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetAtUndefined: Self = StObject.set(x, "getAt", js.undefined)
     
     @scala.inline
-    def setGetAutoLoad(value: () => _): Self = StObject.set(x, "getAutoLoad", js.Any.fromFunction0(value))
+    def setGetAutoLoad(value: () => js.Any): Self = StObject.set(x, "getAutoLoad", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetAutoLoadUndefined: Self = StObject.set(x, "getAutoLoad", js.undefined)
@@ -858,7 +860,7 @@ object IStore {
     def setGetBufferedUndefined: Self = StObject.set(x, "getBuffered", js.undefined)
     
     @scala.inline
-    def setGetById(value: /* id */ js.UndefOr[String] => _): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
+    def setGetById(value: /* id */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetByIdUndefined: Self = StObject.set(x, "getById", js.undefined)
@@ -876,7 +878,7 @@ object IStore {
     def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
     @scala.inline
-    def setGetData(value: () => _): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
@@ -888,13 +890,13 @@ object IStore {
     def setGetDestroyRemovedRecordsUndefined: Self = StObject.set(x, "getDestroyRemovedRecords", js.undefined)
     
     @scala.inline
-    def setGetFields(value: () => _): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
+    def setGetFields(value: () => js.Any): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
     
     @scala.inline
-    def setGetGetGroupString(value: () => _): Self = StObject.set(x, "getGetGroupString", js.Any.fromFunction0(value))
+    def setGetGetGroupString(value: () => js.Any): Self = StObject.set(x, "getGetGroupString", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetGetGroupStringUndefined: Self = StObject.set(x, "getGetGroupString", js.undefined)
@@ -918,13 +920,13 @@ object IStore {
     def setGetGroupStringUndefined: Self = StObject.set(x, "getGroupString", js.undefined)
     
     @scala.inline
-    def setGetGrouper(value: () => _): Self = StObject.set(x, "getGrouper", js.Any.fromFunction0(value))
+    def setGetGrouper(value: () => js.Any): Self = StObject.set(x, "getGrouper", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetGrouperUndefined: Self = StObject.set(x, "getGrouper", js.undefined)
     
     @scala.inline
-    def setGetGroups(value: /* groupName */ js.UndefOr[String] => _): Self = StObject.set(x, "getGroups", js.Any.fromFunction1(value))
+    def setGetGroups(value: /* groupName */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "getGroups", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetGroupsUndefined: Self = StObject.set(x, "getGroups", js.undefined)
@@ -933,7 +935,7 @@ object IStore {
     def setGetModel(value: () => String): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetModelDefaults(value: () => _): Self = StObject.set(x, "getModelDefaults", js.Any.fromFunction0(value))
+    def setGetModelDefaults(value: () => js.Any): Self = StObject.set(x, "getModelDefaults", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetModelDefaultsUndefined: Self = StObject.set(x, "getModelDefaults", js.undefined)
@@ -954,19 +956,19 @@ object IStore {
     def setGetPageSizeUndefined: Self = StObject.set(x, "getPageSize", js.undefined)
     
     @scala.inline
-    def setGetParams(value: () => _): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
+    def setGetParams(value: () => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
     
     @scala.inline
-    def setGetPlugins(value: () => _): Self = StObject.set(x, "getPlugins", js.Any.fromFunction0(value))
+    def setGetPlugins(value: () => js.Any): Self = StObject.set(x, "getPlugins", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetPluginsUndefined: Self = StObject.set(x, "getPlugins", js.undefined)
     
     @scala.inline
-    def setGetProxy(value: () => _): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
+    def setGetProxy(value: () => js.Any): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
@@ -1056,7 +1058,7 @@ object IStore {
     def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
     
     @scala.inline
-    def setInsert(value: (/* index */ js.UndefOr[Double], /* records */ js.UndefOr[Array]) => _): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+    def setInsert(value: (/* index */ js.UndefOr[Double], /* records */ js.UndefOr[Array]) => js.Any): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     @scala.inline
     def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
@@ -1098,13 +1100,13 @@ object IStore {
     def setIsSortedUndefined: Self = StObject.set(x, "isSorted", js.undefined)
     
     @scala.inline
-    def setLast(value: () => _): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+    def setLast(value: () => js.Any): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
     @scala.inline
     def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     @scala.inline
-    def setLoad(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+    def setLoad(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     
     @scala.inline
     def setLoadData(value: (/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "loadData", js.Any.fromFunction2(value))
@@ -1130,13 +1132,13 @@ object IStore {
     def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
     @scala.inline
-    def setMax(value: /* field */ js.UndefOr[String] => _): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+    def setMax(value: /* field */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
     @scala.inline
     def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setMin(value: /* field */ js.UndefOr[String] => _): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+    def setMin(value: /* field */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
     @scala.inline
     def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
@@ -1262,7 +1264,7 @@ object IStore {
     def setSetDestroyRemovedRecordsUndefined: Self = StObject.set(x, "setDestroyRemovedRecords", js.undefined)
     
     @scala.inline
-    def setSetFields(value: /* fields */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
+    def setSetFields(value: /* fields */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetFieldsUndefined: Self = StObject.set(x, "setFields", js.undefined)
@@ -1402,7 +1404,7 @@ object IStore {
     def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
     
     @scala.inline
-    def setSync(value: /* options */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "sync", js.Any.fromFunction1(value))
+    def setSync(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "sync", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSyncRemovedRecords(value: Boolean): Self = StObject.set(x, "syncRemovedRecords", value.asInstanceOf[js.Any])

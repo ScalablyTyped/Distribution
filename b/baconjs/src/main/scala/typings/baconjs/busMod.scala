@@ -6,7 +6,6 @@ import typings.baconjs.typesMod.EventSink
 import typings.baconjs.typesMod.Unsub
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object busMod {
@@ -75,15 +74,14 @@ object busMod {
     def unsubAll(): Unit = js.native
     
     /** @hidden */
-    def unsubscribeInput(input: typings.baconjs.observableMod.default[_]): Unit = js.native
+    def unsubscribeInput(input: typings.baconjs.observableMod.default[js.Any]): Unit = js.native
   }
   
-  @js.native
   trait Subscription[V] extends StObject {
     
-    var input: typings.baconjs.observableMod.default[V] = js.native
+    var input: typings.baconjs.observableMod.default[V]
     
-    var unsub: js.UndefOr[Unsub] = js.native
+    var unsub: js.UndefOr[Unsub] = js.undefined
   }
   object Subscription {
     
@@ -94,7 +92,7 @@ object busMod {
     }
     
     @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription[_], V] (val x: Self with Subscription[V]) extends AnyVal {
+    implicit class SubscriptionMutableBuilder[Self <: Subscription[?], V] (val x: Self & Subscription[V]) extends AnyVal {
       
       @scala.inline
       def setInput(value: typings.baconjs.observableMod.default[V]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])

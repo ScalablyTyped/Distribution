@@ -53,7 +53,6 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.StepIntoRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.StepOverRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TelephonySettings extends StObject {
   
   /**
     * Allows or denies inbound calling.
     */
-  var InboundCalling: Boolean = js.native
+  var InboundCalling: Boolean
   
   /**
     * Allows or denies outbound calling.
     */
-  var OutboundCalling: Boolean = js.native
+  var OutboundCalling: Boolean
   
   /**
     * Allows or denies SMS messaging.
     */
-  var SMS: Boolean = js.native
+  var SMS: Boolean
 }
 object TelephonySettings {
   

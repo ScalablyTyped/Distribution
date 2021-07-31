@@ -10,9 +10,9 @@ Get an available port
 | ------------------ | :-------------: |
 | Full name          | get-port |
 | Keywords           | port, find, finder, portfinder, free, available, connection, connect, open, net, tcp, scan, random, preferred, chosen |
-| # releases         | 6 |
-| # dependents       | 867 |
-| # downloads        | 106118204 |
+| # releases         | 5 |
+| # dependents       | 973 |
+| # downloads        | 132762204 |
 | # stars            | 17 |
 
 ## Links

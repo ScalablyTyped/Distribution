@@ -2,23 +2,21 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAilment extends StObject {
   
-  def detected(): js.Promise[Boolean] = js.native
+  def detected(): js.Promise[Boolean]
   
-  def getMessage(): js.Promise[String] = js.native
+  def getMessage(): js.Promise[String]
   
-  def getTreatmentSteps(): js.Promise[js.Array[PatientTreatmentStep]] = js.native
+  def getTreatmentSteps(): js.Promise[js.Array[PatientTreatmentStep]]
   
-  val id: String = js.native
+  val id: String
   
-  var `implicit`: Boolean = js.native
+  var `implicit`: Boolean
   
-  var projects: js.UndefOr[js.Array[ProjectType]] = js.native
+  var projects: js.UndefOr[js.Array[ProjectType]] = js.undefined
 }
 object IAilment {
   

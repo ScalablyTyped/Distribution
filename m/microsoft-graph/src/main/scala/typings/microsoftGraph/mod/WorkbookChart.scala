@@ -2,53 +2,53 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChart extends Entity {
+trait WorkbookChart
+  extends StObject
+     with Entity {
   
   // Represents chart axes. Read-only.
-  var axes: js.UndefOr[NullableOption[WorkbookChartAxes]] = js.native
+  var axes: js.UndefOr[NullableOption[WorkbookChartAxes]] = js.undefined
   
   // Represents the datalabels on the chart. Read-only.
-  var dataLabels: js.UndefOr[NullableOption[WorkbookChartDataLabels]] = js.native
+  var dataLabels: js.UndefOr[NullableOption[WorkbookChartDataLabels]] = js.undefined
   
   // Encapsulates the format properties for the chart area. Read-only.
-  var format: js.UndefOr[NullableOption[WorkbookChartAreaFormat]] = js.native
+  var format: js.UndefOr[NullableOption[WorkbookChartAreaFormat]] = js.undefined
   
   // Represents the height, in points, of the chart object.
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   // The distance, in points, from the left side of the chart to the worksheet origin.
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   // Represents the legend for the chart. Read-only.
-  var legend: js.UndefOr[NullableOption[WorkbookChartLegend]] = js.native
+  var legend: js.UndefOr[NullableOption[WorkbookChartLegend]] = js.undefined
   
   // Represents the name of a chart object.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Represents either a single series or collection of series in the chart. Read-only.
-  var series: js.UndefOr[NullableOption[js.Array[WorkbookChartSeries]]] = js.native
+  var series: js.UndefOr[NullableOption[js.Array[WorkbookChartSeries]]] = js.undefined
   
   /**
     * Represents the title of the specified chart, including the text, visibility, position and formating of the title.
     * Read-only.
     */
-  var title: js.UndefOr[NullableOption[WorkbookChartTitle]] = js.native
+  var title: js.UndefOr[NullableOption[WorkbookChartTitle]] = js.undefined
   
   /**
     * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of
     * the chart area (on a chart).
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   // Represents the width, in points, of the chart object.
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   // The worksheet containing the current chart. Read-only.
-  var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.native
+  var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.undefined
 }
 object WorkbookChart {
   

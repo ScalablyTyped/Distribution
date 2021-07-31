@@ -2,21 +2,19 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryAccessRange extends StObject {
   
   /**
     * Base address.
     */
-  var base: NativePointer = js.native
+  var base: NativePointer
   
   /**
     * Size in bytes.
     */
-  var size: Double = js.native
+  var size: Double
 }
 object MemoryAccessRange {
   

@@ -1,25 +1,23 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`15`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotsObjectExpression
-  extends ObjectExpression
+  extends StObject
+     with ObjectExpression
      with SlotsExpression {
   
   @JSName("properties")
-  var properties_SlotsObjectExpression: js.Array[SlotsObjectProperty] = js.native
+  var properties_SlotsObjectExpression: js.Array[SlotsObjectProperty]
 }
 object SlotsObjectExpression {
   
   @scala.inline
-  def apply(loc: SourceLocation, properties: js.Array[SlotsObjectProperty], `type`: `15`): SlotsObjectExpression = {
+  def apply(loc: SourceLocation, properties: js.Array[SlotsObjectProperty]): SlotsObjectExpression = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(15)
     __obj.asInstanceOf[SlotsObjectExpression]
   }
   

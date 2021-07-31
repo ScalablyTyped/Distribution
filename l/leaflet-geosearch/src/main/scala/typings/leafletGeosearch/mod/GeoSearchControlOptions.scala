@@ -7,26 +7,24 @@ import typings.leafletGeosearch.leafletGeosearchStrings.bar
 import typings.leafletGeosearch.leafletGeosearchStrings.button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GeoSearchControl
   */
-@js.native
 trait GeoSearchControlOptions extends StObject {
   
   /** @default true */
-  var animateZoom: js.UndefOr[Boolean] = js.native
+  var animateZoom: js.UndefOr[Boolean] = js.undefined
   
   /** @default false */
-  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.undefined
   
   /** @default true */
-  var autoComplete: js.UndefOr[Boolean] = js.native
+  var autoComplete: js.UndefOr[Boolean] = js.undefined
   
   /** @default 250 */
-  var autoCompleteDelay: js.UndefOr[Double] = js.native
+  var autoCompleteDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * @default {
@@ -38,10 +36,10 @@ trait GeoSearchControlOptions extends StObject {
     *      input: '';
     * }
     */
-  var classNames: js.UndefOr[Button] = js.native
+  var classNames: js.UndefOr[Button] = js.undefined
   
   /** @default false */
-  var keepResult: js.UndefOr[Boolean] = js.native
+  var keepResult: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  @default {
@@ -49,42 +47,42 @@ trait GeoSearchControlOptions extends StObject {
     *      draggable: false,
     *  }
     */
-  var marker: js.UndefOr[MarkerOptions] = js.native
+  var marker: js.UndefOr[MarkerOptions] = js.undefined
   
   /** @default false */
-  var maxMarkers: js.UndefOr[Double] = js.native
+  var maxMarkers: js.UndefOr[Double] = js.undefined
   
   /** @default 3000 */
-  var messageHideDelay: js.UndefOr[Double] = js.native
+  var messageHideDelay: js.UndefOr[Double] = js.undefined
   
   /** @default 'Sorry; that address could not be found.' */
-  var notFoundMessage: js.UndefOr[String] = js.native
+  var notFoundMessage: js.UndefOr[String] = js.undefined
   
   /** @default ({ result }) => `${result.label}` */
-  var popupFormat: js.UndefOr[js.Function1[/* hasQueryResult */ Query, String]] = js.native
+  var popupFormat: js.UndefOr[js.Function1[/* hasQueryResult */ Query, String]] = js.undefined
   
   /** @default 'topleft' */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var provider: BaseProvider[js.Object, js.Object] = js.native
+  var provider: BaseProvider[js.Object, js.Object]
   
   /** @default false */
-  var retainZoomLevel: js.UndefOr[Boolean] = js.native
+  var retainZoomLevel: js.UndefOr[Boolean] = js.undefined
   
   /** @default 'Enter address' */
-  var searchLabel: js.UndefOr[String] = js.native
+  var searchLabel: js.UndefOr[String] = js.undefined
   
   /** @default true */
-  var showMarker: js.UndefOr[Boolean] = js.native
+  var showMarker: js.UndefOr[Boolean] = js.undefined
   
   /** @default false */
-  var showPopup: js.UndefOr[Boolean] = js.native
+  var showPopup: js.UndefOr[Boolean] = js.undefined
   
   /** @default 'button' */
-  var style: js.UndefOr[button | bar] = js.native
+  var style: js.UndefOr[button | bar] = js.undefined
   
   /** @default 18 */
-  var zoomLevel: js.UndefOr[Double] = js.native
+  var zoomLevel: js.UndefOr[Double] = js.undefined
 }
 object GeoSearchControlOptions {
   

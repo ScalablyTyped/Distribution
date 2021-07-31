@@ -2,36 +2,34 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDataSourceResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the data source.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The ID of the data source. This ID is unique per AWS Region for each AWS account.
     */
-  var DataSourceId: js.UndefOr[ResourceId] = js.native
+  var DataSourceId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
   
   /**
     * The update status of the data source's last update.
     */
-  var UpdateStatus: js.UndefOr[ResourceStatus] = js.native
+  var UpdateStatus: js.UndefOr[ResourceStatus] = js.undefined
 }
 object UpdateDataSourceResponse {
   

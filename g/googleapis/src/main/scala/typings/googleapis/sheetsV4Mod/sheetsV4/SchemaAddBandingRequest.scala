@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds a new banded range to the spreadsheet.
   */
-@js.native
 trait SchemaAddBandingRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaAddBandingRequest extends StObject {
     * not set, an id will be randomly generated. (It is an error to specify the
     * ID of a range that already exists.)
     */
-  var bandedRange: js.UndefOr[SchemaBandedRange] = js.native
+  var bandedRange: js.UndefOr[SchemaBandedRange] = js.undefined
 }
 object SchemaAddBandingRequest {
   

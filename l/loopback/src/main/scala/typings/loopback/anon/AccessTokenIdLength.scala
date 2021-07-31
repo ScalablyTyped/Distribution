@@ -3,17 +3,15 @@ package typings.loopback.anon
 import typings.loopback.mod.ACL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessTokenIdLength extends StObject {
   
-  var accessTokenIdLength: Double = js.native
+  var accessTokenIdLength: Double
   
-  var acls: js.Array[ACL] = js.native
+  var acls: js.Array[ACL]
   
-  var http: Path = js.native
+  var http: Path
 }
 object AccessTokenIdLength {
   

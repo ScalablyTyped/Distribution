@@ -3,21 +3,19 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 import typings.googleAppsScript.GoogleAppsScript.Base.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Chart object, which can be converted to a static image. For charts embedded in spreadsheets,
   * see EmbeddedChart.
   */
-@js.native
 trait Chart extends StObject {
   
-  def getAs(contentType: String): Blob = js.native
+  def getAs(contentType: String): Blob
   
-  def getBlob(): Blob = js.native
+  def getBlob(): Blob
   
-  def getOptions(): ChartOptions = js.native
+  def getOptions(): ChartOptions
 }
 object Chart {
   

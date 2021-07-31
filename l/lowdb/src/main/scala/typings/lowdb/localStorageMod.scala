@@ -5,7 +5,6 @@ import typings.lowdb.mod.AdapterOptions
 import typings.lowdb.mod.AdapterSync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localStorageMod extends Shortcut {
@@ -13,7 +12,9 @@ object localStorageMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("lowdb/adapters/LocalStorage", JSImport.Namespace)
   @js.native
-  class ^[SchemaT] protected () extends AdapterSync[SchemaT] {
+  class ^[SchemaT] protected ()
+    extends StObject
+       with AdapterSync[SchemaT] {
     def this(source: String) = this()
     def this(source: String, options: AdapterOptions[SchemaT]) = this()
   }

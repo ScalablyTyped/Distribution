@@ -3,20 +3,19 @@ package typings.weixinApp.wx
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppendFileOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   // 要追加内容的文件路径
-  var data: String | ArrayBuffer = js.native
+  var data: String | ArrayBuffer
   
   // 要追加的文本或二进制数据
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var filePath: String = js.native
+  var filePath: String
 }
 object AppendFileOptions {
   

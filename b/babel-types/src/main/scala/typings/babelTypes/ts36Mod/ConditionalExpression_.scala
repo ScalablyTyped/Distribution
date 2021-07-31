@@ -3,23 +3,22 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ConditionalExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalExpression_
-  extends Node
+  extends StObject
+     with Node
      with Conditional
      with Expression {
   
-  var alternate: Expression = js.native
+  var alternate: Expression
   
-  var consequent: Expression = js.native
+  var consequent: Expression
   
-  var test: Expression = js.native
+  var test: Expression
   
   @JSName("type")
-  var type_ConditionalExpression_ : ConditionalExpression = js.native
+  var type_ConditionalExpression_ : ConditionalExpression
 }
 object ConditionalExpression_ {
   
@@ -30,11 +29,10 @@ object ConditionalExpression_ {
     end: Double,
     loc: SourceLocation,
     start: Double,
-    test: Expression,
-    `type`: ConditionalExpression
+    test: Expression
   ): ConditionalExpression_ = {
     val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ConditionalExpression")
     __obj.asInstanceOf[ConditionalExpression_]
   }
   

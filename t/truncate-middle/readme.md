@@ -10,9 +10,9 @@ Truncates in the middle.
 | ------------------ | :-------------: |
 | Full name          | truncate-middle |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 96538 |
+| # downloads        | 135951 |
 | # stars            | 4 |
 
 ## Links

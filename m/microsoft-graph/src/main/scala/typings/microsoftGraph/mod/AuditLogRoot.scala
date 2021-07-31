@@ -2,19 +2,19 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AuditLogRoot extends Entity {
+trait AuditLogRoot
+  extends StObject
+     with Entity {
   
   // Read-only. Nullable.
-  var directoryAudits: js.UndefOr[NullableOption[js.Array[DirectoryAudit]]] = js.native
+  var directoryAudits: js.UndefOr[NullableOption[js.Array[DirectoryAudit]]] = js.undefined
   
-  var restrictedSignIns: js.UndefOr[NullableOption[js.Array[RestrictedSignIn]]] = js.native
+  var restrictedSignIns: js.UndefOr[NullableOption[js.Array[RestrictedSignIn]]] = js.undefined
   
   // Read-only. Nullable.
-  var signIns: js.UndefOr[NullableOption[js.Array[SignIn]]] = js.native
+  var signIns: js.UndefOr[NullableOption[js.Array[SignIn]]] = js.undefined
 }
 object AuditLogRoot {
   

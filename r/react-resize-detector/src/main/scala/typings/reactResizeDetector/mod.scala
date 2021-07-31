@@ -16,22 +16,23 @@ import typings.std.HTMLElement
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-resize-detector", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-resize-detector", JSImport.Default)
   @js.native
   class default ()
     extends PureComponent[ReactResizeDetectorProps, js.Object, js.Any]
   
-  @JSImport("react-resize-detector", "withResizeDetector")
-  @js.native
-  def withResizeDetector[T /* <: PartialReactResizeDetecto */](WrappedComponent: ComponentType[T]): ComponentType[Omit[T, height | width]] = js.native
-  @JSImport("react-resize-detector", "withResizeDetector")
-  @js.native
-  def withResizeDetector[T /* <: PartialReactResizeDetecto */](WrappedComponent: ComponentType[T], props: ReactResizeDetectorProps): ComponentType[Omit[T, height | width]] = js.native
+  @scala.inline
+  def withResizeDetector[T /* <: PartialReactResizeDetecto */](WrappedComponent: ComponentType[T]): ComponentType[Omit[T, height | width]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withResizeDetector")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[T, height | width]]]
+  @scala.inline
+  def withResizeDetector[T /* <: PartialReactResizeDetecto */](WrappedComponent: ComponentType[T], props: ReactResizeDetectorProps): ComponentType[Omit[T, height | width]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withResizeDetector")(WrappedComponent.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ComponentType[Omit[T, height | width]]]
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
@@ -39,12 +40,11 @@ object mod {
   trait ReactResizeDetector
     extends PureComponent[ReactResizeDetectorProps, js.Object, js.Any]
   
-  @js.native
   trait ReactResizeDetectorDimensions extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ReactResizeDetectorDimensions {
     
@@ -65,20 +65,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait ReactResizeDetectorProps extends Props[ReactResizeDetector] {
+  trait ReactResizeDetectorProps
+    extends StObject
+       with Props[ReactResizeDetector] {
     
     /**
       * Trigger onResize on height change.
       * Default: false
       */
-    var handleHeight: js.UndefOr[Boolean] = js.native
+    var handleHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Trigger onResize on width change.
       * Default: false
       */
-    var handleWidth: js.UndefOr[Boolean] = js.native
+    var handleWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Valid only for a callback-pattern.
@@ -92,13 +93,13 @@ object mod {
       */
     var nodeType: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Function that will be invoked with width and height arguments.
       * Default: undefined
       */
-    var onResize: js.UndefOr[js.Function2[/* width */ Double, /* height */ Double, Unit]] = js.native
+    var onResize: js.UndefOr[js.Function2[/* width */ Double, /* height */ Double, Unit]] = js.undefined
     
     /**
       * A selector of an element to observe.
@@ -108,7 +109,7 @@ object mod {
       * @deprecated since version 5.0.0. It will be removed in version 6.0.0.
       * Use targetRef instead
       */
-    var querySelector: js.UndefOr[String] = js.native
+    var querySelector: js.UndefOr[String] = js.undefined
     
     /**
       * Possible values: "throttle" and "debounce".
@@ -116,29 +117,29 @@ object mod {
       * undefined - callback will be fired for every frame.
       * Default: undefined
       */
-    var refreshMode: js.UndefOr[throttle | debounce] = js.native
+    var refreshMode: js.UndefOr[throttle | debounce] = js.undefined
     
     /**
       * Use this in conjunction with refreshMode. An object in shape of { leading: bool, trailing: bool }.
       * Please refer to lodash's docs for more info.
       * Default: undefined
       */
-    var refreshOptions: js.UndefOr[Leading] = js.native
+    var refreshOptions: js.UndefOr[Leading] = js.undefined
     
     /**
       * Use this in conjunction with refreshMode.
       * Important! It's a numeric prop so set it accordingly, e.g. refreshRate={500}.
       * efault: 1000.
       */
-    var refreshRate: js.UndefOr[Double] = js.native
+    var refreshRate: js.UndefOr[Double] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* props */ ReactResizeDetectorDimensions, ReactNode]] = js.native
+    var render: js.UndefOr[js.Function1[/* props */ ReactResizeDetectorDimensions, ReactNode]] = js.undefined
     
     /**
       * Do not trigger onResize when a component mounts.
       * Default: false
       */
-    var skipOnMount: js.UndefOr[Boolean] = js.native
+    var skipOnMount: js.UndefOr[Boolean] = js.undefined
     
     // will be passed to React.createElement()
     /**
@@ -150,7 +151,7 @@ object mod {
       * @deprecated since version 5.0.0. It will be removed in version 6.0.0.
       * Use targetRef instead
       */
-    var targetDomEl: js.UndefOr[HTMLElement] = js.native
+    var targetDomEl: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * A React reference of the element to observe.
@@ -158,7 +159,7 @@ object mod {
       * It must be an instance of React.useRef or React.createRef functions
       * Default: undefined
       */
-    var targetRef: js.UndefOr[Ref[HTMLElement]] = js.native
+    var targetRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
   }
   object ReactResizeDetectorProps {
     

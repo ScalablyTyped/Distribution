@@ -19,79 +19,77 @@ import typings.devextreme.devextremeStrings.year
 import typings.devextreme.mod.DevExpress.viz.ScaleBreak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateByCategory extends StObject {
   
-  var aggregateByCategory: js.UndefOr[Boolean] = js.native
+  var aggregateByCategory: js.UndefOr[Boolean] = js.undefined
   
-  var aggregationGroupWidth: js.UndefOr[Double] = js.native
+  var aggregationGroupWidth: js.UndefOr[Double] = js.undefined
   
   var aggregationInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.native
+  ] = js.undefined
   
-  var allowDecimals: js.UndefOr[Boolean] = js.native
+  var allowDecimals: js.UndefOr[Boolean] = js.undefined
   
-  var breakStyle: js.UndefOr[Line] = js.native
+  var breakStyle: js.UndefOr[Line] = js.undefined
   
-  var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.native
+  var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.undefined
   
-  var categories: js.UndefOr[js.Array[Double | String | typings.std.Date]] = js.native
+  var categories: js.UndefOr[js.Array[Double | String | typings.std.Date]] = js.undefined
   
-  var endOnTick: js.UndefOr[Boolean] = js.native
+  var endOnTick: js.UndefOr[Boolean] = js.undefined
   
-  var endValue: js.UndefOr[Double | typings.std.Date | String] = js.native
+  var endValue: js.UndefOr[Double | typings.std.Date | String] = js.undefined
   
-  var holidays: js.UndefOr[js.Array[typings.std.Date | Double | String]] = js.native
+  var holidays: js.UndefOr[js.Array[typings.std.Date | Double | String]] = js.undefined
   
-  var label: js.UndefOr[OverlappingBehavior] = js.native
+  var label: js.UndefOr[OverlappingBehavior] = js.undefined
   
-  var linearThreshold: js.UndefOr[Double] = js.native
+  var linearThreshold: js.UndefOr[Double] = js.undefined
   
-  var logarithmBase: js.UndefOr[Double] = js.native
+  var logarithmBase: js.UndefOr[Double] = js.undefined
   
-  var marker: js.UndefOr[Label] = js.native
+  var marker: js.UndefOr[Label] = js.undefined
   
   var maxRange: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.native
+  ] = js.undefined
   
   var minRange: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.native
+  ] = js.undefined
   
-  var minorTick: js.UndefOr[ColorOpacity] = js.native
+  var minorTick: js.UndefOr[ColorOpacity] = js.undefined
   
-  var minorTickCount: js.UndefOr[Double] = js.native
+  var minorTickCount: js.UndefOr[Double] = js.undefined
   
   var minorTickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.native
+  ] = js.undefined
   
-  var placeholderHeight: js.UndefOr[Double] = js.native
+  var placeholderHeight: js.UndefOr[Double] = js.undefined
   
-  var showCustomBoundaryTicks: js.UndefOr[Boolean] = js.native
+  var showCustomBoundaryTicks: js.UndefOr[Boolean] = js.undefined
   
-  var singleWorkdays: js.UndefOr[js.Array[typings.std.Date | Double | String]] = js.native
+  var singleWorkdays: js.UndefOr[js.Array[typings.std.Date | Double | String]] = js.undefined
   
-  var startValue: js.UndefOr[Double | typings.std.Date | String] = js.native
+  var startValue: js.UndefOr[Double | typings.std.Date | String] = js.undefined
   
-  var tick: js.UndefOr[OpacityWidth] = js.native
+  var tick: js.UndefOr[OpacityWidth] = js.undefined
   
   var tickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.native
+  ] = js.undefined
   
-  var `type`: js.UndefOr[continuous | discrete | logarithmic | semidiscrete] = js.native
+  var `type`: js.UndefOr[continuous | discrete | logarithmic | semidiscrete] = js.undefined
   
-  var valueType: js.UndefOr[datetime | numeric | string_] = js.native
+  var valueType: js.UndefOr[datetime | numeric | string_] = js.undefined
   
-  var workWeek: js.UndefOr[js.Array[Double]] = js.native
+  var workWeek: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var workdaysOnly: js.UndefOr[Boolean] = js.native
+  var workdaysOnly: js.UndefOr[Boolean] = js.undefined
 }
 object AggregateByCategory {
   

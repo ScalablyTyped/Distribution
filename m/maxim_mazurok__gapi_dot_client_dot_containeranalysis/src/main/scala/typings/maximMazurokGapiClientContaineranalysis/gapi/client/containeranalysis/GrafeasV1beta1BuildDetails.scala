@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrafeasV1beta1BuildDetails extends StObject {
   
   /** Required. The actual provenance for the build. */
-  var provenance: js.UndefOr[BuildProvenance] = js.native
+  var provenance: js.UndefOr[BuildProvenance] = js.undefined
   
   /**
     * Serialized JSON representation of the provenance, used in generating the build signature in the corresponding build note. After verifying the signature, `provenance_bytes` can be
@@ -17,7 +15,7 @@ trait GrafeasV1beta1BuildDetails extends StObject {
     * interoperate with openssl which expects this format for signature verification. The serialized form is captured both to avoid ambiguity in how the provenance is marshalled to json
     * as well to prevent incompatibilities with future changes.
     */
-  var provenanceBytes: js.UndefOr[String] = js.native
+  var provenanceBytes: js.UndefOr[String] = js.undefined
 }
 object GrafeasV1beta1BuildDetails {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMeetingResponse extends StObject {
   
   /**
     * The meeting information, including the meeting ID and MediaPlacement.
     */
-  var Meeting: js.UndefOr[typings.awsSdk.chimeMod.Meeting] = js.native
+  var Meeting: js.UndefOr[typings.awsSdk.chimeMod.Meeting] = js.undefined
 }
 object CreateMeetingResponse {
   

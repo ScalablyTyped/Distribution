@@ -12,11 +12,12 @@ import typings.amapJsApi.amapJsApiStrings.touchmove
 import typings.amapJsApi.amapJsApiStrings.touchstart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Overlay[ExtraData] extends EventEmitter {
+trait Overlay[ExtraData]
+  extends StObject
+     with EventEmitter {
   
   /**
     * 获取自定义数据
@@ -60,28 +61,27 @@ trait Overlay[ExtraData] extends EventEmitter {
 }
 object Overlay {
   
-  @js.native
   trait EventMap[I] extends StObject {
     
-    var click: MapsEvent[typings.amapJsApi.amapJsApiStrings.click, I] = js.native
+    var click: MapsEvent[typings.amapJsApi.amapJsApiStrings.click, I]
     
-    var dblclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.dblclick, I] = js.native
+    var dblclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.dblclick, I]
     
-    var mousedown: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousedown, I] = js.native
+    var mousedown: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousedown, I]
     
-    var mousemove: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousemove, I] = js.native
+    var mousemove: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousemove, I]
     
-    var mouseover: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseover, I] = js.native
+    var mouseover: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseover, I]
     
-    var mouseup: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseup, I] = js.native
+    var mouseup: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseup, I]
     
-    var rightclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.rightclick, I] = js.native
+    var rightclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.rightclick, I]
     
-    var touchend: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchend, I] = js.native
+    var touchend: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchend, I]
     
-    var touchmove: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchmove, I] = js.native
+    var touchmove: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchmove, I]
     
-    var touchstart: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchstart, I] = js.native
+    var touchstart: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchstart, I]
   }
   object EventMap {
     
@@ -103,7 +103,7 @@ object Overlay {
     }
     
     @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[_], I] (val x: Self with EventMap[I]) extends AnyVal {
+    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       @scala.inline
       def setClick(value: MapsEvent[click, I]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
@@ -137,38 +137,37 @@ object Overlay {
     }
   }
   
-  @js.native
   trait Options[ExtraData] extends StObject {
     
     /**
       * 事件是否穿透到地图
       */
-    var bubble: js.UndefOr[Boolean] = js.native
+    var bubble: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 是否支持点击
       */
-    var clickable: js.UndefOr[Boolean] = js.native
+    var clickable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 鼠标悬停时的鼠标样式
       */
-    var cursor: js.UndefOr[String] = js.native
+    var cursor: js.UndefOr[String] = js.undefined
     
     /**
       * 是否支持拖拽
       */
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 自定义数据
       */
-    var extData: js.UndefOr[ExtraData] = js.native
+    var extData: js.UndefOr[ExtraData] = js.undefined
     
     /**
       * 所属地图
       */
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
   }
   object Options {
     
@@ -179,7 +178,7 @@ object Overlay {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setBubble(value: Boolean): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])

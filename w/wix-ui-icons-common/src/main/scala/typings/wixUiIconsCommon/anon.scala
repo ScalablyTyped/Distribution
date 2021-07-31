@@ -3,17 +3,15 @@ package typings.wixUiIconsCommon
 import typings.wixUiIconsCommon.typesMod.IconMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DebouncedSearch extends StObject {
     
-    def debouncedSearch(query: String): Unit = js.native
+    def debouncedSearch(query: String): Unit
     
-    var filteredIconsMetadata: js.Array[IconMetadata] = js.native
+    var filteredIconsMetadata: js.Array[IconMetadata]
   }
   object DebouncedSearch {
     

@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Devices.Perception
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides static properties of color frame sources. */
 @JSGlobal("Windows.Devices.Perception.KnownPerceptionColorFrameSourceProperties")
 @js.native
 abstract class KnownPerceptionColorFrameSourceProperties ()
-  extends typings.winrtUwp.Windows.Devices.Perception.KnownPerceptionColorFrameSourceProperties
+  extends StObject
+     with typings.winrtUwp.Windows.Devices.Perception.KnownPerceptionColorFrameSourceProperties
 object KnownPerceptionColorFrameSourceProperties {
   
   @JSGlobal("Windows.Devices.Perception.KnownPerceptionColorFrameSourceProperties")

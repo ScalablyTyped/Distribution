@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.FullscreenConstructor
 import typings.arcgisJsApi.esri.FullscreenProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fullscreenMod extends Shortcut {
   
   @JSImport("esri/widgets/Fullscreen", JSImport.Namespace)
   @js.native
-  val ^ : FullscreenConstructor = js.native
+  val ^ : js.Object & FullscreenConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Fullscreen", JSImport.Namespace)
@@ -23,12 +22,14 @@ object fullscreenMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen.html)
     */
-  class Class () extends Fullscreen {
+  class Class ()
+    extends StObject
+       with Fullscreen {
     def this(properties: FullscreenProperties) = this()
   }
   
-  type _To = FullscreenConstructor
+  type _To = js.Object & FullscreenConstructor
   
   /* This means you don't have to write `^`, but can instead just say `fullscreenMod.foo` */
-  override def _to: FullscreenConstructor = ^
+  override def _to: js.Object & FullscreenConstructor = ^
 }

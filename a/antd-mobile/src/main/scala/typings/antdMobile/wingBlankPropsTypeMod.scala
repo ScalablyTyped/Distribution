@@ -5,15 +5,13 @@ import typings.antdMobile.antdMobileStrings.md
 import typings.antdMobile.antdMobileStrings.sm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wingBlankPropsTypeMod {
   
-  @js.native
   trait WingBlankPropsType extends StObject {
     
-    var size: js.UndefOr[sm | md | lg] = js.native
+    var size: js.UndefOr[sm | md | lg] = js.undefined
   }
   object WingBlankPropsType {
     

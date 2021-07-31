@@ -4,15 +4,13 @@ import typings.sourceListMap.mod.CodeNode
 import typings.sourceListMap.mod.SourceNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait File extends StObject {
     
-    var file: js.Any = js.native
+    var file: js.Any
   }
   object File {
     
@@ -30,12 +28,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Map extends StObject {
     
-    var map: Mappings = js.native
+    var map: Mappings
     
-    var source: String = js.native
+    var source: String
   }
   object Map {
     
@@ -56,18 +53,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Mappings extends StObject {
     
-    var file: js.Any = js.native
+    var file: js.Any
     
-    var mappings: String = js.native
+    var mappings: String
     
-    var sources: js.Array[String] = js.native
+    var sources: js.Array[String]
     
-    var sourcesContent: js.Array[String] = js.native
+    var sourcesContent: js.Array[String]
     
-    var version: Double = js.native
+    var version: Double
   }
   object Mappings {
     
@@ -109,14 +105,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Sources extends StObject {
     
-    var mappings: String = js.native
+    var mappings: String
     
-    var sources: js.Array[String | SourceNode | CodeNode] = js.native
+    var sources: js.Array[String | SourceNode | CodeNode]
     
-    var sourcesContent: js.Array[String] = js.native
+    var sourcesContent: js.Array[String]
   }
   object Sources {
     

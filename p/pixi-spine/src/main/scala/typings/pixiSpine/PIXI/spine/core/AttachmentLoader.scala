@@ -2,23 +2,21 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentLoader extends StObject {
   
-  def newBoundingBoxAttachment(skin: Skin, name: String): BoundingBoxAttachment = js.native
+  def newBoundingBoxAttachment(skin: Skin, name: String): BoundingBoxAttachment
   
-  def newClippingAttachment(skin: Skin, name: String): ClippingAttachment = js.native
+  def newClippingAttachment(skin: Skin, name: String): ClippingAttachment
   
-  def newMeshAttachment(skin: Skin, name: String, path: String): MeshAttachment = js.native
+  def newMeshAttachment(skin: Skin, name: String, path: String): MeshAttachment
   
-  def newPathAttachment(skin: Skin, name: String): PathAttachment = js.native
+  def newPathAttachment(skin: Skin, name: String): PathAttachment
   
-  def newPointAttachment(skin: Skin, name: String): PointAttachment = js.native
+  def newPointAttachment(skin: Skin, name: String): PointAttachment
   
-  def newRegionAttachment(skin: Skin, name: String, path: String): RegionAttachment = js.native
+  def newRegionAttachment(skin: Skin, name: String, path: String): RegionAttachment
 }
 object AttachmentLoader {
   

@@ -2,15 +2,13 @@ package typings.angularCompiler.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Route extends StObject {
   
-  var children: js.UndefOr[js.Array[Route]] = js.native
+  var children: js.UndefOr[js.Array[Route]] = js.undefined
   
-  var loadChildren: js.UndefOr[String | typings.angularCompiler.coreMod.Type | js.Any] = js.native
+  var loadChildren: js.UndefOr[String | Type | js.Any] = js.undefined
 }
 object Route {
   
@@ -33,7 +31,7 @@ object Route {
     def setChildrenVarargs(value: Route*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setLoadChildren(value: String | typings.angularCompiler.coreMod.Type | js.Any): Self = StObject.set(x, "loadChildren", value.asInstanceOf[js.Any])
+    def setLoadChildren(value: String | Type | js.Any): Self = StObject.set(x, "loadChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLoadChildrenUndefined: Self = StObject.set(x, "loadChildren", js.undefined)

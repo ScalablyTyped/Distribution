@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BPMNDiagram extends TypeDerived {
+trait BPMNDiagram
+  extends StObject
+     with TypeDerived {
   
-  var labelStyle: BPMNLabelStyle = js.native
+  var labelStyle: BPMNLabelStyle
   
-  var plane: BPMNPlane = js.native
+  var plane: BPMNPlane
 }
 object BPMNDiagram {
   

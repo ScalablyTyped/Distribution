@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateConnectionRequest extends StObject {
   
   /**
     * The ID of the Data Catalog in which to create the connection. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * A ConnectionInput object defining the connection to create.
     */
-  var ConnectionInput: typings.awsSdk.glueMod.ConnectionInput = js.native
+  var ConnectionInput: typings.awsSdk.glueMod.ConnectionInput
 }
 object CreateConnectionRequest {
   

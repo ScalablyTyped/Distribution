@@ -7,7 +7,6 @@ import typings.reactabularTable.mod.HeaderProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,13 +14,13 @@ object mod {
   @JSImport("reactabular-sticky", "Body")
   @js.native
   class Body protected ()
-    extends Component[StickyBodyProps with BodyProps, js.Object, js.Any] {
-    def this(props: StickyBodyProps with BodyProps) = this()
+    extends Component[StickyBodyProps & BodyProps, js.Object, js.Any] {
+    def this(props: StickyBodyProps & BodyProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: StickyBodyProps with BodyProps, context: js.Any) = this()
+    def this(props: StickyBodyProps & BodyProps, context: js.Any) = this()
     
     var ref: HTMLElement = js.native
   }
@@ -29,31 +28,30 @@ object mod {
   @JSImport("reactabular-sticky", "Header")
   @js.native
   class Header protected ()
-    extends Component[StickyHeaderProps with HeaderProps, js.Object, js.Any] {
-    def this(props: StickyHeaderProps with HeaderProps) = this()
+    extends Component[StickyHeaderProps & HeaderProps, js.Object, js.Any] {
+    def this(props: StickyHeaderProps & HeaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: StickyHeaderProps with HeaderProps, context: js.Any) = this()
+    def this(props: StickyHeaderProps & HeaderProps, context: js.Any) = this()
     
     var container: HTMLElement = js.native
     
     var ref: HTMLElement = js.native
   }
   
-  @js.native
   trait StickyBodyProps extends StObject {
     
-    var onScroll: js.UndefOr[js.Function1[/* e */ PartialUIEvent, Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* e */ PartialUIEvent, Unit]] = js.undefined
     
-    var tableHeader: HTMLElement | Null = js.native
+    var tableHeader: HTMLElement | Null
   }
   object StickyBodyProps {
     
     @scala.inline
     def apply(): StickyBodyProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(tableHeader = null)
       __obj.asInstanceOf[StickyBodyProps]
     }
     
@@ -74,18 +72,17 @@ object mod {
     }
   }
   
-  @js.native
   trait StickyHeaderProps extends StObject {
     
-    var onScroll: js.UndefOr[js.Function1[/* e */ PartialUIEvent, Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* e */ PartialUIEvent, Unit]] = js.undefined
     
-    var tableBody: HTMLElement | Null = js.native
+    var tableBody: HTMLElement | Null
   }
   object StickyHeaderProps {
     
     @scala.inline
     def apply(): StickyHeaderProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(tableBody = null)
       __obj.asInstanceOf[StickyHeaderProps]
     }
     

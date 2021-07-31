@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * contents of a file or a directory. The latter is represented by the
   * byte-encoded Directory message.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteworkersV1test2Digest extends StObject {
   
   /**
     * A string-encoded hash (eg &quot;1a2b3c&quot;, not the byte array [0x1a,
     * 0x2b, 0x3c]) using an implementation-defined hash algorithm (eg SHA-256).
     */
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the contents. While this is not strictly required as part of
@@ -30,7 +28,7 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2Digest extends StObject {
     * size), it&#39;s useful in almost all cases when one might want to send or
     * retrieve blobs of content and is included here for this reason.
     */
-  var sizeBytes: js.UndefOr[String] = js.native
+  var sizeBytes: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2Digest {
   

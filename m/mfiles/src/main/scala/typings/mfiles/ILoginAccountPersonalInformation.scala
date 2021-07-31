@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILoginAccountPersonalInformation extends StObject {
   
-  val AccountName: String = js.native
+  val AccountName: String
   
-  val Email: String = js.native
+  val Email: String
   
-  val FullName: String = js.native
+  val FullName: String
 }
 object ILoginAccountPersonalInformation {
   

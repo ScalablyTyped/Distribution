@@ -6,18 +6,18 @@ import typings.esquery.esqueryStrings.descendant
 import typings.esquery.esqueryStrings.sibling
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BinarySelectorAtom extends SubjectSelectorAtom {
+trait BinarySelectorAtom
+  extends StObject
+     with SubjectSelectorAtom {
   
-  var left: SubjectSelector = js.native
+  var left: SubjectSelector
   
-  var right: SubjectSelector = js.native
+  var right: SubjectSelector
   
   @JSName("type")
-  var type_BinarySelectorAtom: child | sibling | adjacent | descendant = js.native
+  var type_BinarySelectorAtom: child | sibling | adjacent | descendant
 }
 object BinarySelectorAtom {
   

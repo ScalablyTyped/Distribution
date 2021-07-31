@@ -2,21 +2,19 @@ package typings.awsSdk.mediastoreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutLifecyclePolicyInput extends StObject {
   
   /**
     * The name of the container that you want to assign the object lifecycle policy to.
     */
-  var ContainerName: typings.awsSdk.mediastoreMod.ContainerName = js.native
+  var ContainerName: typings.awsSdk.mediastoreMod.ContainerName
   
   /**
     * The object lifecycle policy to apply to the container.
     */
-  var LifecyclePolicy: typings.awsSdk.mediastoreMod.LifecyclePolicy = js.native
+  var LifecyclePolicy: typings.awsSdk.mediastoreMod.LifecyclePolicy
 }
 object PutLifecyclePolicyInput {
   

@@ -2,33 +2,31 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonAdd extends StObject {
   
-  var button: String = js.native
+  var button: String
   
-  var buttonAdd: String = js.native
+  var buttonAdd: String
   
-  var buttonNext: String = js.native
+  var buttonNext: String
   
-  var buttonPrev: String = js.native
+  var buttonPrev: String
   
-  var buttonRemove: String = js.native
+  var buttonRemove: String
   
-  var progress: String = js.native
+  var progress: String
   
-  var progressBar: String = js.native
+  var progressBar: String
   
-  var progressContainer: String = js.native
+  var progressContainer: String
   
-  var progressText: String = js.native
+  var progressText: String
   
-  var root: String = js.native
+  var root: String
   
-  var title: String = js.native
+  var title: String
 }
 object ButtonAdd {
   

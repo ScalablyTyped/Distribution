@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutubereporting.gapi.client.youtubereport
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GdataObjectId extends StObject {
   
   /** gdata */
-  var bucketName: js.UndefOr[String] = js.native
+  var bucketName: js.UndefOr[String] = js.undefined
   
   /** gdata */
-  var generation: js.UndefOr[String] = js.native
+  var generation: js.UndefOr[String] = js.undefined
   
   /** gdata */
-  var objectName: js.UndefOr[String] = js.native
+  var objectName: js.UndefOr[String] = js.undefined
 }
 object GdataObjectId {
   

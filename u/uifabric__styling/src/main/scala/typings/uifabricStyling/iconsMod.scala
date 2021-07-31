@@ -7,38 +7,33 @@ import typings.uifabricMergeStyles.irawstylebaseMod.IFontFace
 import typings.uifabricStyling.anon.PartialIIconOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconsMod {
   
-  @JSImport("@uifabric/styling/lib/utilities/icons", "getIcon")
+  @JSImport("@uifabric/styling/lib/utilities/icons", JSImport.Namespace)
   @js.native
-  def getIcon(): js.UndefOr[IIconRecord] = js.native
-  @JSImport("@uifabric/styling/lib/utilities/icons", "getIcon")
-  @js.native
-  def getIcon(name: String): js.UndefOr[IIconRecord] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uifabric/styling/lib/utilities/icons", "registerIconAlias")
-  @js.native
-  def registerIconAlias(iconName: String, mappedToName: String): Unit = js.native
+  @scala.inline
+  def getIcon(): js.UndefOr[IIconRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")().asInstanceOf[js.UndefOr[IIconRecord]]
+  @scala.inline
+  def getIcon(name: String): js.UndefOr[IIconRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IIconRecord]]
   
-  @JSImport("@uifabric/styling/lib/utilities/icons", "registerIcons")
-  @js.native
-  def registerIcons(iconSubset: IIconSubset): Unit = js.native
-  @JSImport("@uifabric/styling/lib/utilities/icons", "registerIcons")
-  @js.native
-  def registerIcons(iconSubset: IIconSubset, options: PartialIIconOptions): Unit = js.native
+  @scala.inline
+  def registerIconAlias(iconName: String, mappedToName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerIconAlias")(iconName.asInstanceOf[js.Any], mappedToName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@uifabric/styling/lib/utilities/icons", "setIconOptions")
-  @js.native
-  def setIconOptions(options: PartialIIconOptions): Unit = js.native
+  @scala.inline
+  def registerIcons(iconSubset: IIconSubset): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def registerIcons(iconSubset: IIconSubset, options: PartialIIconOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@uifabric/styling/lib/utilities/icons", "unregisterIcons")
-  @js.native
-  def unregisterIcons(iconNames: js.Array[String]): Unit = js.native
+  @scala.inline
+  def setIconOptions(options: PartialIIconOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIconOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def unregisterIcons(iconNames: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterIcons")(iconNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait IIconOptions extends StObject {
     
     /**
@@ -55,13 +50,13 @@ object iconsMod {
       * that if an icon which was previous registered is registered again, it will be silently ignored.
       * However, consider whether the problems listed above will cause issues.
       **/
-    var disableWarnings: Boolean = js.native
+    var disableWarnings: Boolean
     
     /**
       * @deprecated
       * Use 'disableWarnings' instead.
       */
-    var warnOnMissingIcons: js.UndefOr[Boolean] = js.native
+    var warnOnMissingIcons: js.UndefOr[Boolean] = js.undefined
   }
   object IIconOptions {
     
@@ -85,12 +80,11 @@ object iconsMod {
     }
   }
   
-  @js.native
   trait IIconRecord extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var subset: IIconSubsetRecord = js.native
+    var subset: IIconSubsetRecord
   }
   object IIconRecord {
     
@@ -114,13 +108,13 @@ object iconsMod {
     }
   }
   
-  @js.native
   trait IIconRecords
-    extends /* key */ StringDictionary[IIconRecord | js.Object] {
+    extends StObject
+       with /* key */ StringDictionary[IIconRecord | js.Object] {
     
-    var __options: IIconOptions = js.native
+    var __options: IIconOptions
     
-    var __remapped: StringDictionary[String] = js.native
+    var __remapped: StringDictionary[String]
   }
   object IIconRecords {
     
@@ -141,14 +135,13 @@ object iconsMod {
     }
   }
   
-  @js.native
   trait IIconSubset extends StObject {
     
-    var fontFace: js.UndefOr[IFontFace] = js.native
+    var fontFace: js.UndefOr[IFontFace] = js.undefined
     
-    var icons: StringDictionary[String | Element] = js.native
+    var icons: StringDictionary[String | Element]
     
-    var style: js.UndefOr[IRawStyle] = js.native
+    var style: js.UndefOr[IRawStyle] = js.undefined
   }
   object IIconSubset {
     
@@ -178,12 +171,13 @@ object iconsMod {
     }
   }
   
-  @js.native
-  trait IIconSubsetRecord extends IIconSubset {
+  trait IIconSubsetRecord
+    extends StObject
+       with IIconSubset {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var isRegistered: js.UndefOr[Boolean] = js.native
+    var isRegistered: js.UndefOr[Boolean] = js.undefined
   }
   object IIconSubsetRecord {
     

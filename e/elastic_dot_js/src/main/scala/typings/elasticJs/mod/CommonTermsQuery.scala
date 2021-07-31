@@ -3,12 +3,13 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "CommonTermsQuery")
 @js.native
-class CommonTermsQuery protected () extends Query {
+class CommonTermsQuery protected ()
+  extends StObject
+     with Query {
   /*
     A query that executes high-frequency terms in a optional sub-query.
     */

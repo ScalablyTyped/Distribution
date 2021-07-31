@@ -2,16 +2,14 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
   /**
     * The name of the attribute whose value can be injected.
     */
-  var attributeName: String = js.native
+  var attributeName: String
 }
 object Attribute {
   

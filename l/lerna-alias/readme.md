@@ -11,8 +11,8 @@ Get aliases for your lerna packages for the other tools
 | Full name          | lerna-alias |
 | Keywords           | lerna, monorepo, alias, webpack, rollup, jest |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 74514 |
+| # dependents       | 3 |
+| # downloads        | 83355 |
 | # stars            | 0 |
 
 ## Links

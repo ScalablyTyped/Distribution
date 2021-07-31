@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1Metadata extends StObject {
   
-  var intentId: js.UndefOr[String] = js.native
+  var intentId: js.UndefOr[String] = js.undefined
   
-  var intentName: js.UndefOr[String] = js.native
+  var intentName: js.UndefOr[String] = js.undefined
   
-  var nluResponseTime: js.UndefOr[Double] = js.native
+  var nluResponseTime: js.UndefOr[Double] = js.undefined
   
-  var webhookForSlotFillingUsed: js.UndefOr[String] = js.native
+  var webhookForSlotFillingUsed: js.UndefOr[String] = js.undefined
   
-  var webhookUsed: js.UndefOr[String] = js.native
+  var webhookUsed: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1Metadata {
   

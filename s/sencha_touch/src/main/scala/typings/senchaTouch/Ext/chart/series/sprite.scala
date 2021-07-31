@@ -8,31 +8,30 @@ import typings.senchaTouch.Ext.draw.sprite.ISector
 import typings.senchaTouch.Ext.draw.sprite.ISprite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sprite {
   
-  @js.native
   trait IAggregative
-    extends typings.senchaTouch.Ext.chart.series.sprite.ICartesian {
+    extends StObject
+       with typings.senchaTouch.Ext.chart.series.sprite.ICartesian {
     
     /** [Config Option] (Object) */
-    var dataClose: js.UndefOr[js.Any] = js.native
+    var dataClose: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataHigh: js.UndefOr[js.Any] = js.native
+    var dataHigh: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataLow: js.UndefOr[js.Any] = js.native
+    var dataLow: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataOpen: js.UndefOr[js.Any] = js.native
+    var dataOpen: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of aggregator
       * @returns Object
       */
-    var getAggregator: js.UndefOr[js.Function0[_]] = js.native
+    var getAggregator: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Render the given visible clip range
       * @param surface Object
@@ -49,12 +48,12 @@ object sprite {
           /* region */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of aggregator
       * @param aggregator Object The new value.
       */
-    var setAggregator: js.UndefOr[js.Function1[/* aggregator */ js.UndefOr[js.Any], Unit]] = js.native
+    var setAggregator: js.UndefOr[js.Function1[/* aggregator */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IAggregative {
     
@@ -92,7 +91,7 @@ object sprite {
       def setDataOpenUndefined: Self = StObject.set(x, "dataOpen", js.undefined)
       
       @scala.inline
-      def setGetAggregator(value: () => _): Self = StObject.set(x, "getAggregator", js.Any.fromFunction0(value))
+      def setGetAggregator(value: () => js.Any): Self = StObject.set(x, "getAggregator", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetAggregatorUndefined: Self = StObject.set(x, "getAggregator", js.undefined)
@@ -113,9 +112,9 @@ object sprite {
     }
   }
   
-  @js.native
   trait IArea
-    extends typings.senchaTouch.Ext.chart.series.sprite.IStackedCartesian {
+    extends StObject
+       with typings.senchaTouch.Ext.chart.series.sprite.IStackedCartesian {
     
     /** [Method] Render the given visible clip range
       * @param surface Object
@@ -132,10 +131,10 @@ object sprite {
           /* clipRegion */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var step: js.UndefOr[Boolean] = js.native
+    var step: js.UndefOr[Boolean] = js.undefined
   }
   object IArea {
     
@@ -164,24 +163,24 @@ object sprite {
     }
   }
   
-  @js.native
   trait IBar
-    extends typings.senchaTouch.Ext.chart.series.sprite.IStackedCartesian {
+    extends StObject
+       with typings.senchaTouch.Ext.chart.series.sprite.IStackedCartesian {
     
     /** [Config Option] (Number) */
-    var inGroupGapWidth: js.UndefOr[Double] = js.native
+    var inGroupGapWidth: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var maxBarWidth: js.UndefOr[Double] = js.native
+    var maxBarWidth: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minBarWidth: js.UndefOr[Double] = js.native
+    var minBarWidth: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minGapWidth: js.UndefOr[Double] = js.native
+    var minGapWidth: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /** [Method] Render the given visible clip range
       * @param surface Object
@@ -196,7 +195,7 @@ object sprite {
           /* clip */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IBar {
     
@@ -249,17 +248,18 @@ object sprite {
     }
   }
   
-  @js.native
-  trait ICandleStick extends IAggregative {
+  trait ICandleStick
+    extends StObject
+       with IAggregative {
     
     /** [Config Option] (Number) */
-    var barWidth: js.UndefOr[Double] = js.native
+    var barWidth: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var ohlcType: js.UndefOr[String] = js.native
+    var ohlcType: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Number) */
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
   }
   object ICandleStick {
     
@@ -295,65 +295,66 @@ object sprite {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.senchaTouch.Ext.IClass because Already inherited
   - typings.senchaTouch.Ext.IBase because Already inherited
-  - typings.senchaTouch.Ext.chart.IMarkerHolder because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined bindMarker */ @js.native
-  trait ICartesian extends ISprite {
+  - typings.senchaTouch.Ext.chart.IMarkerHolder because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined bindMarker */ trait ICartesian
+    extends StObject
+       with ISprite {
     
     /** [Config Option] (Array) */
-    var Data: js.UndefOr[Array] = js.native
+    var Data: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var If: js.UndefOr[Boolean] = js.native
+    var If: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Does a binary search of the data on the x axis using the given key
       * @param key String
       * @returns *
       */
-    var binarySearch: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], _]] = js.native
+    var binarySearch: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], js.Any]] = js.undefined
     
     /** [Method]
       * @param name String
       * @param marker Ext.chart.Markers
       */
-    var bindMarker: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[IMarkers], Unit]] = js.native
+    var bindMarker: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[IMarkers], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var dataMaxX: js.UndefOr[Double] = js.native
+    var dataMaxX: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var dataMaxY: js.UndefOr[Double] = js.native
+    var dataMaxY: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var dataMinX: js.UndefOr[Double] = js.native
+    var dataMinX: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var dataMinY: js.UndefOr[Double] = js.native
+    var dataMinY: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataX: js.UndefOr[js.Any] = js.native
+    var dataX: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataY: js.UndefOr[js.Any] = js.native
+    var dataY: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of field
       * @returns String
       */
-    var getField: js.UndefOr[js.Function0[String]] = js.native
+    var getField: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Get the nearest item index from point x y
       * @param x Number
       * @param y Number
       * @returns Number The index
       */
-    var getIndexNearPoint: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Double]] = js.native
+    var getIndexNearPoint: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Double]] = js.undefined
     
     /** [Config Option] (Number) */
-    var labelOverflowPadding: js.UndefOr[Double] = js.native
+    var labelOverflowPadding: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var labels: js.UndefOr[js.Any] = js.native
+    var labels: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Render the given visible clip range
       * @param surface Ext.draw.Surface
@@ -369,7 +370,7 @@ object sprite {
           /* region */ js.UndefOr[Array], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Render method
       * @param surface Object
@@ -383,17 +384,17 @@ object sprite {
           /* surface */ js.UndefOr[js.Any], 
           /* ctx */ js.UndefOr[js.Any], 
           /* region */ js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Number) */
-    var selectionTolerance: js.UndefOr[Double] = js.native
+    var selectionTolerance: js.UndefOr[Double] = js.undefined
     
     /** [Method] Sets the value of field
       * @param field String The new value.
       */
-    var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.native
+    var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.undefined
   }
   object ICartesian {
     
@@ -407,7 +408,7 @@ object sprite {
     implicit class ICartesianMutableBuilder[Self <: typings.senchaTouch.Ext.chart.series.sprite.ICartesian] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBinarySearch(value: /* key */ js.UndefOr[String] => _): Self = StObject.set(x, "binarySearch", js.Any.fromFunction1(value))
+      def setBinarySearch(value: /* key */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "binarySearch", js.Any.fromFunction1(value))
       
       @scala.inline
       def setBinarySearchUndefined: Self = StObject.set(x, "binarySearch", js.undefined)
@@ -498,7 +499,7 @@ object sprite {
       
       @scala.inline
       def setRender(
-        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => _
+        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -526,20 +527,21 @@ object sprite {
     }
   }
   
-  @js.native
-  trait ILine extends IAggregative {
+  trait ILine
+    extends StObject
+       with IAggregative {
     
     /** [Config Option] (Boolean) */
-    var fillArea: js.UndefOr[Boolean] = js.native
+    var fillArea: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var preciseStroke: js.UndefOr[Boolean] = js.native
+    var preciseStroke: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var smooth: js.UndefOr[Boolean] = js.native
+    var smooth: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var step: js.UndefOr[Boolean] = js.native
+    var step: js.UndefOr[Boolean] = js.undefined
   }
   object ILine {
     
@@ -581,56 +583,57 @@ object sprite {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.senchaTouch.Ext.IClass because Already inherited
   - typings.senchaTouch.Ext.IBase because Already inherited
-  - typings.senchaTouch.Ext.chart.IMarkerHolder because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined bindMarker */ @js.native
-  trait IPie3DPart extends IPath {
+  - typings.senchaTouch.Ext.chart.IMarkerHolder because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined bindMarker */ trait IPie3DPart
+    extends StObject
+       with IPath {
     
     /** [Config Option] (Object) */
-    var baseColor: js.UndefOr[js.Any] = js.native
+    var baseColor: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number) */
-    var baseRotation: js.UndefOr[Double] = js.native
+    var baseRotation: js.UndefOr[Double] = js.undefined
     
     /** [Method]
       * @param name String
       * @param marker Ext.chart.Markers
       */
-    var bindMarker: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[IMarkers], Unit]] = js.native
+    var bindMarker: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[IMarkers], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var centerX: js.UndefOr[Double] = js.native
+    var centerX: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var centerY: js.UndefOr[Double] = js.native
+    var centerY: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var distortion: js.UndefOr[Double] = js.native
+    var distortion: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var endAngle: js.UndefOr[Double] = js.native
+    var endAngle: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var endRho: js.UndefOr[Double] = js.native
+    var endRho: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var part: js.UndefOr[String] = js.native
+    var part: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Number) */
-    var startAngle: js.UndefOr[Double] = js.native
+    var startAngle: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var startRho: js.UndefOr[Double] = js.native
+    var startRho: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var thickness: js.UndefOr[Double] = js.native
+    var thickness: js.UndefOr[Double] = js.undefined
     
     /** [Method] Update the path
       * @param path Object
       */
     @JSName("updatePath")
-    var updatePath_IPie3DPart: js.UndefOr[js.Function1[/* path */ js.UndefOr[js.Any], Unit]] = js.native
+    var updatePath_IPie3DPart: js.UndefOr[js.Function1[/* path */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IPie3DPart {
     
@@ -732,28 +735,29 @@ object sprite {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.senchaTouch.Ext.IClass because Already inherited
   - typings.senchaTouch.Ext.IBase because Already inherited
-  - typings.senchaTouch.Ext.chart.IMarkerHolder because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined bindMarker */ @js.native
-  trait IPieSlice extends ISector {
+  - typings.senchaTouch.Ext.chart.IMarkerHolder because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined bindMarker */ trait IPieSlice
+    extends StObject
+       with ISector {
     
     /** [Method]
       * @param name String
       * @param marker Ext.chart.Markers
       */
-    var bindMarker: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[IMarkers], Unit]] = js.native
+    var bindMarker: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[IMarkers], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var doCallout: js.UndefOr[Boolean] = js.native
+    var doCallout: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the value of rendererIndex
       * @returns Number
       */
-    var getRendererIndex: js.UndefOr[js.Function0[Double]] = js.native
+    var getRendererIndex: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Config Option] (String) */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Number) */
-    var labelOverflowPadding: js.UndefOr[Double] = js.native
+    var labelOverflowPadding: js.UndefOr[Double] = js.undefined
     
     /** [Method] Render method
       * @param ctx Object
@@ -767,17 +771,17 @@ object sprite {
           /* ctx */ js.UndefOr[js.Any], 
           /* surface */ js.UndefOr[js.Any], 
           /* clipRegion */ js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var rotateLabels: js.UndefOr[Boolean] = js.native
+    var rotateLabels: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of rendererIndex
       * @param rendererIndex Number The new value.
       */
-    var setRendererIndex: js.UndefOr[js.Function1[/* rendererIndex */ js.UndefOr[Double], Unit]] = js.native
+    var setRendererIndex: js.UndefOr[js.Function1[/* rendererIndex */ js.UndefOr[Double], Unit]] = js.undefined
   }
   object IPieSlice {
     
@@ -822,7 +826,7 @@ object sprite {
       
       @scala.inline
       def setRender(
-        value: (/* ctx */ js.UndefOr[js.Any], /* surface */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => _
+        value: (/* ctx */ js.UndefOr[js.Any], /* surface */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -845,72 +849,73 @@ object sprite {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.senchaTouch.Ext.IClass because Already inherited
   - typings.senchaTouch.Ext.IBase because Already inherited
-  - typings.senchaTouch.Ext.chart.IMarkerHolder because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined bindMarker */ @js.native
-  trait IPolar extends ISprite {
+  - typings.senchaTouch.Ext.chart.IMarkerHolder because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined bindMarker */ trait IPolar
+    extends StObject
+       with ISprite {
     
     /** [Config Option] (Array) */
-    var Data: js.UndefOr[Array] = js.native
+    var Data: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Number) */
-    var baseRotation: js.UndefOr[Double] = js.native
+    var baseRotation: js.UndefOr[Double] = js.undefined
     
     /** [Method]
       * @param name String
       * @param marker Ext.chart.Markers
       */
-    var bindMarker: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[IMarkers], Unit]] = js.native
+    var bindMarker: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[IMarkers], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var centerX: js.UndefOr[Double] = js.native
+    var centerX: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var centerY: js.UndefOr[Double] = js.native
+    var centerY: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var dataMaxX: js.UndefOr[Double] = js.native
+    var dataMaxX: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var dataMaxY: js.UndefOr[Double] = js.native
+    var dataMaxY: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var dataMinX: js.UndefOr[Double] = js.native
+    var dataMinX: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var dataMinY: js.UndefOr[Double] = js.native
+    var dataMinY: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataX: js.UndefOr[js.Any] = js.native
+    var dataX: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataY: js.UndefOr[js.Any] = js.native
+    var dataY: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number) */
-    var endAngle: js.UndefOr[Double] = js.native
+    var endAngle: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var endRho: js.UndefOr[Double] = js.native
+    var endRho: js.UndefOr[Double] = js.undefined
     
     /** [Method] Returns the value of field
       * @returns Object
       */
-    var getField: js.UndefOr[js.Function0[_]] = js.native
+    var getField: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (Number) */
-    var labelOverflowPadding: js.UndefOr[Double] = js.native
+    var labelOverflowPadding: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var labels: js.UndefOr[js.Any] = js.native
+    var labels: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the value of field
       * @param field Object The new value.
       */
-    var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[js.Any], Unit]] = js.native
+    var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var startAngle: js.UndefOr[Double] = js.native
+    var startAngle: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var startRho: js.UndefOr[Double] = js.native
+    var startRho: js.UndefOr[Double] = js.undefined
   }
   object IPolar {
     
@@ -1002,7 +1007,7 @@ object sprite {
       def setEndRhoUndefined: Self = StObject.set(x, "endRho", js.undefined)
       
       @scala.inline
-      def setGetField(value: () => _): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
+      def setGetField(value: () => js.Any): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
@@ -1039,9 +1044,9 @@ object sprite {
     }
   }
   
-  @js.native
   trait IRadar
-    extends typings.senchaTouch.Ext.chart.series.sprite.IPolar {
+    extends StObject
+       with typings.senchaTouch.Ext.chart.series.sprite.IPolar {
     
     /** [Method] Render method
       * @param surface Object
@@ -1049,7 +1054,9 @@ object sprite {
       * @returns * returns false to stop rendering in this frame. All the sprite haven't been rendered will have their dirty flag untouched.
       */
     @JSName("render")
-    var render_IRadar: js.UndefOr[js.Function2[/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], _]] = js.native
+    var render_IRadar: js.UndefOr[
+        js.Function2[/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], js.Any]
+      ] = js.undefined
   }
   object IRadar {
     
@@ -1063,16 +1070,16 @@ object sprite {
     implicit class IRadarMutableBuilder[Self <: typings.senchaTouch.Ext.chart.series.sprite.IRadar] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
   
-  @js.native
   trait IScatter
-    extends typings.senchaTouch.Ext.chart.series.sprite.ICartesian {
+    extends StObject
+       with typings.senchaTouch.Ext.chart.series.sprite.ICartesian {
     
     /** [Method] Render the given visible clip range
       * @param surface Object
@@ -1089,7 +1096,7 @@ object sprite {
           /* clipRegion */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IScatter {
     
@@ -1112,9 +1119,9 @@ object sprite {
     }
   }
   
-  @js.native
   trait IStackedCartesian
-    extends typings.senchaTouch.Ext.chart.series.sprite.ICartesian {
+    extends StObject
+       with typings.senchaTouch.Ext.chart.series.sprite.ICartesian {
     
     /** [Method] Get the nearest item index from point x y
       * @param x Object
@@ -1122,7 +1129,7 @@ object sprite {
       * @returns Number The index
       */
     @JSName("getIndexNearPoint")
-    var getIndexNearPoint_IStackedCartesian: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], Double]] = js.native
+    var getIndexNearPoint_IStackedCartesian: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], Double]] = js.undefined
   }
   object IStackedCartesian {
     

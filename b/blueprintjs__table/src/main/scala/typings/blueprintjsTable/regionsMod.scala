@@ -7,7 +7,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regionsMod {
@@ -31,19 +30,20 @@ object regionsMod {
     def shouldComponentUpdate_MRegionLayer(nextProps: IRegionLayerProps): Boolean = js.native
   }
   
-  @js.native
-  trait IRegionLayerProps extends IProps {
+  trait IRegionLayerProps
+    extends StObject
+       with IProps {
     
     /**
       * The array of CSS styles to apply to each region. The ith style object in this array will be
       * applied to the ith region in `regions`.
       */
-    var regionStyles: js.UndefOr[js.Array[CSSProperties]] = js.native
+    var regionStyles: js.UndefOr[js.Array[CSSProperties]] = js.undefined
     
     /**
       * The array of regions to render.
       */
-    var regions: js.UndefOr[js.Array[IRegion]] = js.native
+    var regions: js.UndefOr[js.Array[IRegion]] = js.undefined
   }
   object IRegionLayerProps {
     

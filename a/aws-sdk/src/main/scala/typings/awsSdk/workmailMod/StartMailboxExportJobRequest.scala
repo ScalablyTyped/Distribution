@@ -2,51 +2,49 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartMailboxExportJobRequest extends StObject {
   
   /**
     * The idempotency token for the client request.
     */
-  var ClientToken: IdempotencyClientToken = js.native
+  var ClientToken: IdempotencyClientToken
   
   /**
     * The mailbox export job description.
     */
-  var Description: js.UndefOr[typings.awsSdk.workmailMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.workmailMod.Description] = js.undefined
   
   /**
     * The identifier of the user or resource associated with the mailbox.
     */
-  var EntityId: WorkMailIdentifier = js.native
+  var EntityId: WorkMailIdentifier
   
   /**
     * The Amazon Resource Name (ARN) of the symmetric AWS Key Management Service (AWS KMS) key that encrypts the exported mailbox content.
     */
-  var KmsKeyArn: typings.awsSdk.workmailMod.KmsKeyArn = js.native
+  var KmsKeyArn: typings.awsSdk.workmailMod.KmsKeyArn
   
   /**
     * The identifier associated with the organization.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The ARN of the AWS Identity and Access Management (IAM) role that grants write permission to the S3 bucket.
     */
-  var RoleArn: typings.awsSdk.workmailMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.workmailMod.RoleArn
   
   /**
     * The name of the S3 bucket.
     */
-  var S3BucketName: typings.awsSdk.workmailMod.S3BucketName = js.native
+  var S3BucketName: typings.awsSdk.workmailMod.S3BucketName
   
   /**
     * The S3 bucket prefix.
     */
-  var S3Prefix: S3ObjectKey = js.native
+  var S3Prefix: S3ObjectKey
 }
 object StartMailboxExportJobRequest {
   

@@ -2,26 +2,24 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.ConfirmOptions> */
-@js.native
 trait PartialConfirmOptions extends StObject {
   
-  var cancelButtonText: js.UndefOr[String] = js.native
+  var cancelButtonText: js.UndefOr[String] = js.undefined
   
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var confirmButtonText: js.UndefOr[String] = js.native
+  var confirmButtonText: js.UndefOr[String] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* result */ Confirm, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* result */ Confirm, Unit]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PartialConfirmOptions {
   

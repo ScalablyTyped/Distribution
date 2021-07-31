@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.ReposDeleteAccessRestrictionsRequestOpt
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposDeleteAccessRestrictionsEndpoint extends StObject {
   
-  var parameters: ReposDeleteAccessRestrictionsEndpoint = js.native
+  var parameters: ReposDeleteAccessRestrictionsEndpoint
   
-  var request: ReposDeleteAccessRestrictionsRequestOptions = js.native
+  var request: ReposDeleteAccessRestrictionsRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersReposDeleteAccessRestrictionsEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersReposDeleteAccessRestrictionsEndpoint {
   def apply(
     parameters: ReposDeleteAccessRestrictionsEndpoint,
     request: ReposDeleteAccessRestrictionsRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersReposDeleteAccessRestrictionsEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersReposDeleteAccessRestrictionsEndpoint]
@@ -39,6 +37,6 @@ object ParametersReposDeleteAccessRestrictionsEndpoint {
     def setRequest(value: ReposDeleteAccessRestrictionsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

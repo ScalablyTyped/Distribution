@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeRange extends StObject {
   
   /**
     * The end time of the time range.  Specify null to leave the end time open-ended. 
     */
-  var end: js.UndefOr[Timestamp] = js.native
+  var end: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The start time of the time range.  Specify null to leave the start time open-ended. 
     */
-  var start: js.UndefOr[Timestamp] = js.native
+  var start: js.UndefOr[Timestamp] = js.undefined
 }
 object TimeRange {
   

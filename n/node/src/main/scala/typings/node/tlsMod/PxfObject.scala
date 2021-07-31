@@ -3,21 +3,19 @@ package typings.node.tlsMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PxfObject extends StObject {
   
   /**
     * PFX or PKCS12 encoded private key and certificate chain.
     */
-  var buf: String | Buffer = js.native
+  var buf: String | Buffer
   
   /**
     * Optional passphrase.
     */
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
 }
 object PxfObject {
   

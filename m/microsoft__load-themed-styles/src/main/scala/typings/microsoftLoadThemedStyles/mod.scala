@@ -7,69 +7,57 @@ import typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`2`
 import typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@microsoft/load-themed-styles", "clearStyles")
+  @JSImport("@microsoft/load-themed-styles", JSImport.Namespace)
   @js.native
-  def clearStyles(): Unit = js.native
-  @JSImport("@microsoft/load-themed-styles", "clearStyles")
-  @js.native
-  def clearStyles(option: ClearStyleOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@microsoft/load-themed-styles", "configureLoadStyles")
-  @js.native
-  def configureLoadStyles(): Unit = js.native
-  @JSImport("@microsoft/load-themed-styles", "configureLoadStyles")
-  @js.native
+  @scala.inline
+  def clearStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStyles")().asInstanceOf[Unit]
+  @scala.inline
+  def clearStyles(option: ClearStyleOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStyles")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def configureLoadStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureLoadStyles")().asInstanceOf[Unit]
+  @scala.inline
   def configureLoadStyles(
     loadStylesFn: js.Function2[
       /* processedStyles */ String, 
       /* rawStyles */ js.UndefOr[String | ThemableArray], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureLoadStyles")(loadStylesFn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@microsoft/load-themed-styles", "configureRunMode")
-  @js.native
-  def configureRunMode(mode: Mode): Unit = js.native
+  @scala.inline
+  def configureRunMode(mode: Mode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureRunMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@microsoft/load-themed-styles", "detokenize")
-  @js.native
-  def detokenize(): js.UndefOr[String] = js.native
-  @JSImport("@microsoft/load-themed-styles", "detokenize")
-  @js.native
-  def detokenize(styles: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def detokenize(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detokenize")().asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def detokenize(styles: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detokenize")(styles.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@microsoft/load-themed-styles", "flush")
-  @js.native
-  def flush(): Unit = js.native
+  @scala.inline
+  def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
   
-  @JSImport("@microsoft/load-themed-styles", "loadStyles")
-  @js.native
-  def loadStyles(styles: String): Unit = js.native
-  @JSImport("@microsoft/load-themed-styles", "loadStyles")
-  @js.native
-  def loadStyles(styles: String, loadAsync: Boolean): Unit = js.native
-  @JSImport("@microsoft/load-themed-styles", "loadStyles")
-  @js.native
-  def loadStyles(styles: ThemableArray): Unit = js.native
-  @JSImport("@microsoft/load-themed-styles", "loadStyles")
-  @js.native
-  def loadStyles(styles: ThemableArray, loadAsync: Boolean): Unit = js.native
+  @scala.inline
+  def loadStyles(styles: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def loadStyles(styles: String, loadAsync: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any], loadAsync.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def loadStyles(styles: ThemableArray): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def loadStyles(styles: ThemableArray, loadAsync: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any], loadAsync.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@microsoft/load-themed-styles", "loadTheme")
-  @js.native
-  def loadTheme(): Unit = js.native
-  @JSImport("@microsoft/load-themed-styles", "loadTheme")
-  @js.native
-  def loadTheme(theme: ITheme): Unit = js.native
+  @scala.inline
+  def loadTheme(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")().asInstanceOf[Unit]
+  @scala.inline
+  def loadTheme(theme: ITheme): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@microsoft/load-themed-styles", "splitStyles")
-  @js.native
-  def splitStyles(styles: String): ThemableArray = js.native
+  @scala.inline
+  def splitStyles(styles: String): ThemableArray = ^.asInstanceOf[js.Dynamic].applyDynamic("splitStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[ThemableArray]
   
   /* Rewritten from type alias, can be one of: 
     - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`1`
@@ -94,14 +82,13 @@ object mod {
   
   type ITheme = StringDictionary[String]
   
-  @js.native
   trait IThemingInstruction extends StObject {
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var rawString: js.UndefOr[String] = js.native
+    var rawString: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
   }
   object IThemingInstruction {
     

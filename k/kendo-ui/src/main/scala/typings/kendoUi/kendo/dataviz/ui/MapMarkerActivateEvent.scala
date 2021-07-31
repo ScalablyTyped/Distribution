@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.kendoUi.kendo.dataviz.map.Marker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapMarkerActivateEvent extends MapEvent {
+trait MapMarkerActivateEvent
+  extends StObject
+     with MapEvent {
   
-  var layer: js.UndefOr[Marker] = js.native
+  var layer: js.UndefOr[Marker] = js.undefined
   
-  var marker: js.UndefOr[Marker] = js.native
+  var marker: js.UndefOr[Marker] = js.undefined
 }
 object MapMarkerActivateEvent {
   

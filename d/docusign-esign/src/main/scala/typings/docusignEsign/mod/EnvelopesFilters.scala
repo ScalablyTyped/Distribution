@@ -2,67 +2,65 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopesFilters extends StObject {
   
-  var acStatus: js.UndefOr[String] = js.native
+  var acStatus: js.UndefOr[String] = js.undefined
   
-  var continuationToken: js.UndefOr[String] = js.native
+  var continuationToken: js.UndefOr[String] = js.undefined
   
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
-  var customField: js.UndefOr[String] = js.native
+  var customField: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var envelopeIds: js.UndefOr[String] = js.native
+  var envelopeIds: js.UndefOr[String] = js.undefined
   
-  var exclude: js.UndefOr[String] = js.native
+  var exclude: js.UndefOr[String] = js.undefined
   
-  var folderIds: js.UndefOr[String] = js.native
+  var folderIds: js.UndefOr[String] = js.undefined
   
-  var folderTypes: js.UndefOr[String] = js.native
+  var folderTypes: js.UndefOr[String] = js.undefined
   
-  var fromDate: js.UndefOr[String] = js.native
+  var fromDate: js.UndefOr[String] = js.undefined
   
-  var fromToStatus: js.UndefOr[String] = js.native
+  var fromToStatus: js.UndefOr[String] = js.undefined
   
-  var include: js.UndefOr[String] = js.native
+  var include: js.UndefOr[String] = js.undefined
   
-  var includePurgeInformation: js.UndefOr[String] = js.native
+  var includePurgeInformation: js.UndefOr[String] = js.undefined
   
-  var intersectingFolderIds: js.UndefOr[String] = js.native
+  var intersectingFolderIds: js.UndefOr[String] = js.undefined
   
-  var lastQueriedDate: js.UndefOr[String] = js.native
+  var lastQueriedDate: js.UndefOr[String] = js.undefined
   
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
   
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
-  var powerformids: js.UndefOr[String] = js.native
+  var powerformids: js.UndefOr[String] = js.undefined
   
-  var queryBudget: js.UndefOr[String] = js.native
+  var queryBudget: js.UndefOr[String] = js.undefined
   
-  var requesterDateFormat: js.UndefOr[String] = js.native
+  var requesterDateFormat: js.UndefOr[String] = js.undefined
   
-  var searchText: js.UndefOr[String] = js.native
+  var searchText: js.UndefOr[String] = js.undefined
   
-  var startPosition: js.UndefOr[String] = js.native
+  var startPosition: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var toDate: js.UndefOr[String] = js.native
+  var toDate: js.UndefOr[String] = js.undefined
   
-  var transactionIds: js.UndefOr[String] = js.native
+  var transactionIds: js.UndefOr[String] = js.undefined
   
-  var userFilter: js.UndefOr[String] = js.native
+  var userFilter: js.UndefOr[String] = js.undefined
   
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
   
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object EnvelopesFilters {
   

@@ -3,7 +3,6 @@ package typings.mendixmodelsdk.mod
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constants {
@@ -34,9 +33,8 @@ object constants {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "constants.Constant.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.constantsMod.constants.Constant = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.constantsMod.constants.Constant = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.constantsMod.constants.Constant]
     
     /* static member */
     @JSImport("mendixmodelsdk", "constants.Constant.structureTypeName")

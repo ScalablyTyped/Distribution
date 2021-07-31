@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlOpenJob extends Generic {
+trait MlOpenJob
+  extends StObject
+     with Generic {
   
-  var job_id: String = js.native
+  var job_id: String
 }
 object MlOpenJob {
   

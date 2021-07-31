@@ -4,40 +4,40 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ellipsisMod {
+  
+  @JSImport("ant-design-pro/lib/Ellipsis", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ant-design-pro/lib/Ellipsis", JSImport.Default)
   @js.native
   class default ()
     extends Component[EllipsisProps, js.Any, js.Any]
   
-  @JSImport("ant-design-pro/lib/Ellipsis", "cutStrByFullLength")
-  @js.native
-  def cutStrByFullLength(str: String, maxLength: Double): String = js.native
+  @scala.inline
+  def cutStrByFullLength(str: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cutStrByFullLength")(str.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ant-design-pro/lib/Ellipsis", "getStrFullLength")
-  @js.native
-  def getStrFullLength(str: String): Double = js.native
+  @scala.inline
+  def getStrFullLength(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrFullLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   type Ellipsis = Component[EllipsisProps, js.Any, js.Any]
   
-  @js.native
   trait EllipsisProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var fullWidthRecognition: js.UndefOr[Boolean] = js.native
+    var fullWidthRecognition: js.UndefOr[Boolean] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var lines: js.UndefOr[Double] = js.native
+    var lines: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tooltip: js.UndefOr[Boolean | EllipsisTooltipProps] = js.native
+    var tooltip: js.UndefOr[Boolean | EllipsisTooltipProps] = js.undefined
   }
   object EllipsisProps {
     
@@ -89,11 +89,28 @@ object ellipsisMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped antd.antd/lib/tooltip.TooltipPropsWithTitle | antd.antd/lib/tooltip.TooltipPropsWithOverlay */ @js.native
-  trait EllipsisTooltipProps extends StObject {
+  - Dropped antd.antd/lib/tooltip.TooltipPropsWithTitle | antd.antd/lib/tooltip.TooltipPropsWithOverlay */ trait EllipsisTooltipProps extends StObject {
     
-    var overlayStyle: js.UndefOr[scala.Nothing] = js.native
+    var overlayStyle: Unit
     
-    var title: js.UndefOr[scala.Nothing] = js.native
+    var title: Unit
+  }
+  object EllipsisTooltipProps {
+    
+    @scala.inline
+    def apply(overlayStyle: Unit, title: Unit): EllipsisTooltipProps = {
+      val __obj = js.Dynamic.literal(overlayStyle = overlayStyle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EllipsisTooltipProps]
+    }
+    
+    @scala.inline
+    implicit class EllipsisTooltipPropsMutableBuilder[Self <: EllipsisTooltipProps] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOverlayStyle(value: Unit): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTitle(value: Unit): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    }
   }
 }

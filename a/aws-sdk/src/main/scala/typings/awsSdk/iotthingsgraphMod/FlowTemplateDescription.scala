@@ -2,26 +2,24 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowTemplateDescription extends StObject {
   
   /**
     * A workflow's definition document.
     */
-  var definition: js.UndefOr[DefinitionDocument] = js.native
+  var definition: js.UndefOr[DefinitionDocument] = js.undefined
   
   /**
     * An object that contains summary information about a workflow.
     */
-  var summary: js.UndefOr[FlowTemplateSummary] = js.native
+  var summary: js.UndefOr[FlowTemplateSummary] = js.undefined
   
   /**
     * The version of the user's namespace against which the workflow was validated. Use this value in your system instance.
     */
-  var validatedNamespaceVersion: js.UndefOr[Version] = js.native
+  var validatedNamespaceVersion: js.UndefOr[Version] = js.undefined
 }
 object FlowTemplateDescription {
   

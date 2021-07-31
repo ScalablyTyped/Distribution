@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object InitializationReason extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeJsPreview.Office.InitializationReason with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.officeJsPreview.Office.InitializationReason & Double] = js.native
   
-  /* 1 */ val DocumentOpened: typings.officeJsPreview.Office.InitializationReason.DocumentOpened with Double = js.native
+  /* 1 */ val DocumentOpened: typings.officeJsPreview.Office.InitializationReason.DocumentOpened & Double = js.native
   
-  /* 0 */ val Inserted: typings.officeJsPreview.Office.InitializationReason.Inserted with Double = js.native
+  /* 0 */ val Inserted: typings.officeJsPreview.Office.InitializationReason.Inserted & Double = js.native
 }

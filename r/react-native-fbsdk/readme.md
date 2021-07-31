@@ -10,9 +10,9 @@ Facebook SDK support for React Native apps.
 | ------------------ | :-------------: |
 | Full name          | react-native-fbsdk |
 | Keywords           | react, react-native, react-component, ios, android, facebook, core |
-| # releases         | 20 |
+| # releases         | 21 |
 | # dependents       | 14 |
-| # downloads        | 2419928 |
+| # downloads        | 2615168 |
 | # stars            | 1 |
 
 ## Links

@@ -2,19 +2,17 @@ package typings.angularCompiler.compilerFacadeInterfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParseSourceSpan extends StObject {
   
-  var details: js.Any = js.native
+  var details: js.Any
   
-  var end: js.Any = js.native
+  var end: js.Any
   
-  var fullStart: js.Any = js.native
+  var fullStart: js.Any
   
-  var start: js.Any = js.native
+  var start: js.Any
 }
 object ParseSourceSpan {
   

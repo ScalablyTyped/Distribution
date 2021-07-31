@@ -2,26 +2,24 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetUserPasswordRequest extends StObject {
   
   /**
     * Identifier of the AWS Managed Microsoft AD or Simple AD directory in which the user resides.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The new password that will be reset.
     */
-  var NewPassword: UserPassword = js.native
+  var NewPassword: UserPassword
   
   /**
     * The user name of the user whose password will be reset.
     */
-  var UserName: CustomerUserName = js.native
+  var UserName: CustomerUserName
 }
 object ResetUserPasswordRequest {
   

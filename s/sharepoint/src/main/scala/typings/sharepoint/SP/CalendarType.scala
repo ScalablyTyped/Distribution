@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,50 +11,82 @@ sealed trait CalendarType extends StObject
 object CalendarType extends StObject {
   
   @js.native
-  sealed trait chineseLunar extends CalendarType
+  sealed trait chineseLunar
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait gregorian extends CalendarType
+  sealed trait gregorian
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait gregorianArabic extends CalendarType
+  sealed trait gregorianArabic
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait gregorianMEFrench extends CalendarType
+  sealed trait gregorianMEFrench
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait gregorianXLITEnglish extends CalendarType
+  sealed trait gregorianXLITEnglish
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait gregorianXLITFrench extends CalendarType
+  sealed trait gregorianXLITFrench
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait hebrew extends CalendarType
+  sealed trait hebrew
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait hijri extends CalendarType
+  sealed trait hijri
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait japan extends CalendarType
+  sealed trait japan
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait korea extends CalendarType
+  sealed trait korea
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait koreaJapanLunar extends CalendarType
+  sealed trait koreaJapanLunar
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait none extends CalendarType
+  sealed trait none
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait sakaEra extends CalendarType
+  sealed trait sakaEra
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait taiwan extends CalendarType
+  sealed trait taiwan
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait thai extends CalendarType
+  sealed trait thai
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait umAlQura extends CalendarType
+  sealed trait umAlQura
+    extends StObject
+       with CalendarType
 }

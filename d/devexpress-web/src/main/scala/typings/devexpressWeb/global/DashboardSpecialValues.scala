@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,8 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("DashboardSpecialValues")
 @js.native
 class DashboardSpecialValues ()
-  extends typings.devexpressWeb.DashboardSpecialValues
+  extends StObject
+     with typings.devexpressWeb.DashboardSpecialValues
 object DashboardSpecialValues {
+  
+  @JSGlobal("DashboardSpecialValues")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Represents an error value (for instance, this can be a calculated field value that cannot be evaluated).
@@ -27,36 +31,32 @@ object DashboardSpecialValues {
     * @param value The specified value.
     */
   /* static member */
-  @JSGlobal("DashboardSpecialValues.IsErrorValue")
-  @js.native
-  def IsErrorValue(value: js.Any): Boolean = js.native
+  @scala.inline
+  def IsErrorValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsErrorValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns whether the specified value is an DashboardSpecialValues.NullValue. true, if the specified value is an DashboardSpecialValues.NullValue; otherwise, false.
     * @param value The specified value.
     */
   /* static member */
-  @JSGlobal("DashboardSpecialValues.IsNullValue")
-  @js.native
-  def IsNullValue(value: js.Any): Boolean = js.native
+  @scala.inline
+  def IsNullValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNullValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns whether the specified value is an DashboardSpecialValues.OlapNullValue. true, if the specified value is an DashboardSpecialValues.OlapNullValue; otherwise, false.
     * @param value The specified value.
     */
   /* static member */
-  @JSGlobal("DashboardSpecialValues.IsOlapNullValue")
-  @js.native
-  def IsOlapNullValue(value: js.Any): Boolean = js.native
+  @scala.inline
+  def IsOlapNullValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOlapNullValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns whether the specified value is an DashboardSpecialValues.OthersValue. true, if the specified value is an DashboardSpecialValues.OthersValue; otherwise, false.
     * @param value The specified value.
     */
   /* static member */
-  @JSGlobal("DashboardSpecialValues.IsOthersValue")
-  @js.native
-  def IsOthersValue(value: js.Any): Boolean = js.native
+  @scala.inline
+  def IsOthersValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOthersValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Represents a null value.

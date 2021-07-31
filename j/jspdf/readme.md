@@ -10,9 +10,9 @@ PDF Document creation from JavaScript
 | ------------------ | :-------------: |
 | Full name          | jspdf |
 | Keywords           | pdf |
-| # releases         | 5 |
-| # dependents       | 264 |
-| # downloads        | 7357082 |
+| # releases         | 6 |
+| # dependents       | 338 |
+| # downloads        | 10542237 |
 | # stars            | 21 |
 
 ## Links

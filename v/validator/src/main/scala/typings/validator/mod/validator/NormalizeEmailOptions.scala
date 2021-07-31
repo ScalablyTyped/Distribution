@@ -2,10 +2,8 @@ package typings.validator.mod.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NormalizeEmailOptions extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait NormalizeEmailOptions extends StObject {
     *
     * @default true
     */
-  var all_lowercase: js.UndefOr[Boolean] = js.native
+  var all_lowercase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Converts addresses with domain `@googlemail.com` to `@gmail.com`, as they're equivalent.
     *
     * @default true
     */
-  var gmail_convert_googlemaildotcom: js.UndefOr[Boolean] = js.native
+  var gmail_convert_googlemaildotcom: js.UndefOr[Boolean] = js.undefined
   
   /**
     * GMail addresses are known to be case-insensitive, so this switch allows lowercasing them even when `all_lowercase` is set to `false`.
@@ -32,7 +30,7 @@ trait NormalizeEmailOptions extends StObject {
     *
     * @default true
     */
-  var gmail_lowercase: js.UndefOr[Boolean] = js.native
+  var gmail_lowercase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Removes dots from the local part of the email address, as GMail ignores them
@@ -40,7 +38,7 @@ trait NormalizeEmailOptions extends StObject {
     *
     * @default true
     */
-  var gmail_remove_dots: js.UndefOr[Boolean] = js.native
+  var gmail_remove_dots: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Normalizes addresses by removing "sub-addresses", which is the part following a `"+"` sign
@@ -48,7 +46,7 @@ trait NormalizeEmailOptions extends StObject {
     *
     * @default true
     */
-  var gmail_remove_subaddress: js.UndefOr[Boolean] = js.native
+  var gmail_remove_subaddress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * iCloud addresses (including MobileMe) are known to be case-insensitive, so this switch allows lowercasing them even when `all_lowercase` is set to `false`.
@@ -56,7 +54,7 @@ trait NormalizeEmailOptions extends StObject {
     *
     * @default true
     */
-  var icloud_lowercase: js.UndefOr[Boolean] = js.native
+  var icloud_lowercase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Normalizes addresses by removing "sub-addresses", which is the part following a `"+"` sign
@@ -64,7 +62,7 @@ trait NormalizeEmailOptions extends StObject {
     *
     * @default true
     */
-  var icloud_remove_subaddress: js.UndefOr[Boolean] = js.native
+  var icloud_remove_subaddress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Outlook.com addresses (including Windows Live and Hotmail) are known to be case-insensitive, so this switch allows lowercasing them even when `all_lowercase` is set to `false`.
@@ -72,7 +70,7 @@ trait NormalizeEmailOptions extends StObject {
     *
     * @default true
     */
-  var outlookdotcom_lowercase: js.UndefOr[Boolean] = js.native
+  var outlookdotcom_lowercase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Normalizes addresses by removing "sub-addresses", which is the part following a `"+"` sign
@@ -80,7 +78,7 @@ trait NormalizeEmailOptions extends StObject {
     *
     * @default true
     */
-  var outlookdotcom_remove_subaddress: js.UndefOr[Boolean] = js.native
+  var outlookdotcom_remove_subaddress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Yahoo Mail addresses are known to be case-insensitive, so this switch allows lowercasing them even when `all_lowercase` is set to `false`.
@@ -88,7 +86,7 @@ trait NormalizeEmailOptions extends StObject {
     *
     * @default true
     */
-  var yahoo_lowercase: js.UndefOr[Boolean] = js.native
+  var yahoo_lowercase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Normalizes addresses by removing "sub-addresses", which is the part following a `"-"` sign
@@ -96,7 +94,7 @@ trait NormalizeEmailOptions extends StObject {
     *
     * @default true
     */
-  var yahoo_remove_subaddress: js.UndefOr[Boolean] = js.native
+  var yahoo_remove_subaddress: js.UndefOr[Boolean] = js.undefined
 }
 object NormalizeEmailOptions {
   

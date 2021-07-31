@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnmergeTableCellsRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait UnmergeTableCellsRequest extends StObject {
     * range has no merged cells, the request will do nothing. If there is text in any of the merged cells, the text will remain in the "head" cell of the resulting block of unmerged
     * cells. The "head" cell is the upper-left cell when the content direction is from left to right, and the upper-right otherwise.
     */
-  var tableRange: js.UndefOr[TableRange] = js.native
+  var tableRange: js.UndefOr[TableRange] = js.undefined
 }
 object UnmergeTableCellsRequest {
   

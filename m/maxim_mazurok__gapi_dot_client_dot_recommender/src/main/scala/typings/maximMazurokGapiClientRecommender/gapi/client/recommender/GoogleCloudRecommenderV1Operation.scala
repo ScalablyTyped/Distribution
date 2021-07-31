@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommenderV1Operation extends StObject {
   
   /** Type of this operation. Contains one of 'and', 'remove', 'replace', 'move', 'copy', 'test' and custom operations. This field is case-insensitive and always populated. */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /** Path to the target field being operated on. If the operation is at the resource level, then path should be "/". This field is always populated. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Set of filters to apply if `path` refers to array elements or nested array elements in order to narrow down to a single unique element that is being tested/modified. This is
@@ -24,8 +22,8 @@ trait GoogleCloudRecommenderV1Operation extends StObject {
   var pathFilters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Similar to path_filters, this contains set of filters to apply if `path` field referes to array elements. This is meant to support value matching beyond exact match. To perform
@@ -34,32 +32,32 @@ trait GoogleCloudRecommenderV1Operation extends StObject {
   var pathValueMatchers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.recommender.gapi.client.recommender.GoogleCloudRecommenderV1ValueMatcher}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Contains the fully qualified resource name. This field is always populated. ex: //cloudresourcemanager.googleapis.com/projects/foo. */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /** Type of GCP resource being modified/tested. This field is always populated. Example: cloudresourcemanager.googleapis.com/Project, compute.googleapis.com/Instance */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
   
   /** Can be set with action 'copy' or 'move' to indicate the source field within resource or source_resource, ignored if provided for other operation types. */
-  var sourcePath: js.UndefOr[String] = js.native
+  var sourcePath: js.UndefOr[String] = js.undefined
   
   /**
     * Can be set with action 'copy' to copy resource configuration across different resources of the same type. Example: A resource clone can be done via action = 'copy', path = "/", from
     * = "/", source_resource = and resource_name = . This field is empty for all other values of `action`.
     */
-  var sourceResource: js.UndefOr[String] = js.native
+  var sourceResource: js.UndefOr[String] = js.undefined
   
   /**
     * Value for the `path` field. Will be set for actions:'add'/'replace'. Maybe set for action: 'test'. Either this or `value_matcher` will be set for 'test' operation. An exact match
     * must be performed.
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
   
   /** Can be set for action 'test' for advanced matching for the value of 'path' field. Either this or `value` will be set for 'test' operation. */
-  var valueMatcher: js.UndefOr[GoogleCloudRecommenderV1ValueMatcher] = js.native
+  var valueMatcher: js.UndefOr[GoogleCloudRecommenderV1ValueMatcher] = js.undefined
 }
 object GoogleCloudRecommenderV1Operation {
   
@@ -85,7 +83,7 @@ object GoogleCloudRecommenderV1Operation {
     def setPathFilters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[js.Any]
     ): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -98,7 +96,7 @@ object GoogleCloudRecommenderV1Operation {
     def setPathValueMatchers(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.recommender.gapi.client.recommender.GoogleCloudRecommenderV1ValueMatcher}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[js.Any]
     ): Self = StObject.set(x, "pathValueMatchers", value.asInstanceOf[js.Any])
     
     @scala.inline

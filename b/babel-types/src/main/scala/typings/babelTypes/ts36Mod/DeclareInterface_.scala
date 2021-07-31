@@ -3,27 +3,26 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.DeclareInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclareInterface_
-  extends Node
+  extends StObject
+     with Node
      with Declaration
      with Flow
      with FlowDeclaration
      with Statement {
   
-  var body: ObjectTypeAnnotation_ = js.native
+  var body: ObjectTypeAnnotation_
   
-  var `extends`: js.Array[InterfaceExtends_] = js.native
+  var `extends`: js.Array[InterfaceExtends_]
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var typeParameters: TypeParameterDeclaration_ = js.native
+  var typeParameters: TypeParameterDeclaration_
   
   @JSName("type")
-  var type_DeclareInterface_ : DeclareInterface = js.native
+  var type_DeclareInterface_ : DeclareInterface
 }
 object DeclareInterface_ {
   
@@ -35,12 +34,11 @@ object DeclareInterface_ {
     id: Identifier_,
     loc: SourceLocation,
     start: Double,
-    `type`: DeclareInterface,
     typeParameters: TypeParameterDeclaration_
   ): DeclareInterface_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
     __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DeclareInterface")
     __obj.asInstanceOf[DeclareInterface_]
   }
   

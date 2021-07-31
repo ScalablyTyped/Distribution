@@ -2,13 +2,11 @@ package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for KeyManagementService.AsymmetricSign.
   */
-@js.native
 trait SchemaAsymmetricSignRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaAsymmetricSignRequest extends StObject {
     * with the same digest algorithm as specified by the key version&#39;s
     * algorithm.
     */
-  var digest: js.UndefOr[SchemaDigest] = js.native
+  var digest: js.UndefOr[SchemaDigest] = js.undefined
 }
 object SchemaAsymmetricSignRequest {
   

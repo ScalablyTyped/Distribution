@@ -2,23 +2,22 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Support extends StObject {
   
-  var export: SupportItem = js.native
+  var `export`: SupportItem
   
-  var exportData: SupportItem = js.native
+  var exportData: SupportItem
   
-  var snapshot: SupportItem | SnapshotLegacy = js.native
+  var snapshot: SupportItem | SnapshotLegacy
 }
 object Support {
   
   @scala.inline
-  def apply(export: SupportItem, exportData: SupportItem, snapshot: SupportItem | SnapshotLegacy): Support = {
-    val __obj = js.Dynamic.literal(export = export.asInstanceOf[js.Any], exportData = exportData.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any])
+  def apply(`export`: SupportItem, exportData: SupportItem, snapshot: SupportItem | SnapshotLegacy): Support = {
+    val __obj = js.Dynamic.literal(exportData = exportData.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any])
+    __obj.updateDynamic("export")(`export`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Support]
   }
   

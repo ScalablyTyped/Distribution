@@ -3,18 +3,19 @@ package typings.dateFns
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateFnsLightFormatMod {
   
   object default {
     
+    @scala.inline
+    def apply(date: Double, format: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(date: Date, format: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    
     @JSImport("date-fns/lightFormat", JSImport.Default)
     @js.native
-    def apply(date: Double, format: String): String = js.native
-    @JSImport("date-fns/lightFormat", JSImport.Default)
-    @js.native
-    def apply(date: Date, format: String): String = js.native
+    val ^ : js.Any = js.native
   }
 }

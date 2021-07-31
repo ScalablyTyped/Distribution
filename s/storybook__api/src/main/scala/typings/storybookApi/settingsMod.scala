@@ -3,7 +3,6 @@ package typings.storybookApi
 import typings.storybookApi.mod.ModuleFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingsMod {
@@ -12,10 +11,9 @@ object settingsMod {
   @js.native
   val init: ModuleFn = js.native
   
-  @js.native
   trait Settings extends StObject {
     
-    var lastTrackedStoryId: String = js.native
+    var lastTrackedStoryId: String
   }
   object Settings {
     
@@ -33,16 +31,15 @@ object settingsMod {
     }
   }
   
-  @js.native
   trait SubAPI extends StObject {
     
-    def changeSettingsTab(tab: String): Unit = js.native
+    def changeSettingsTab(tab: String): Unit
     
-    def closeSettings(): Unit = js.native
+    def closeSettings(): Unit
     
-    def isSettingsScreenActive(): Boolean = js.native
+    def isSettingsScreenActive(): Boolean
     
-    def navigateToSettingsPage(path: String): js.Promise[Unit] = js.native
+    def navigateToSettingsPage(path: String): js.Promise[Unit]
   }
   object SubAPI {
     
@@ -74,10 +71,9 @@ object settingsMod {
     }
   }
   
-  @js.native
   trait SubState extends StObject {
     
-    var settings: Settings = js.native
+    var settings: Settings
   }
   object SubState {
     

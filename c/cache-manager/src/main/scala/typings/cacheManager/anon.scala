@@ -3,15 +3,13 @@ package typings.cacheManager
 import typings.cacheManager.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Create extends StObject {
     
-    def create(args: js.Any*): Store = js.native
+    def create(args: js.Any*): Store
   }
   object Create {
     

@@ -4,7 +4,6 @@ import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.structuresMod.aliases.IContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "Structure")
@@ -26,14 +25,14 @@ abstract class Structure[TModel /* <: IAbstractModel */, TContainer /* <: IConta
     _model: typings.mendixmodelsdk.abstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
-    _isPartial: js.UndefOr[scala.Nothing],
+    _isPartial: Boolean,
     container: IContainer
   ) = this()
   def this(
     _model: typings.mendixmodelsdk.abstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
-    _isPartial: Boolean,
+    _isPartial: Unit,
     container: IContainer
   ) = this()
 }

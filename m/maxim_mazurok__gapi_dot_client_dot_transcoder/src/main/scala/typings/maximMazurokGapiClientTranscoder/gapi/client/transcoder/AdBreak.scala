@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdBreak extends StObject {
   
   /** Start time in seconds for the ad break, relative to the output file timeline. The default is `0s`. */
-  var startTimeOffset: js.UndefOr[String] = js.native
+  var startTimeOffset: js.UndefOr[String] = js.undefined
 }
 object AdBreak {
   

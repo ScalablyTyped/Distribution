@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,62 +12,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.TableConditionalEntry
   * @see com.sun.star.sheet.TableValidation
   */
-@js.native
-trait XSheetCondition extends XInterface {
+trait XSheetCondition
+  extends StObject
+     with XInterface {
   
   /**
     * returns either the comparison value, which is used in the condition, or the first value if two values are needed for the operator.
     * @returns a formula, a numeric constant, or a string constant in quotes.
     */
-  var Formula1: String = js.native
+  var Formula1: String
   
   /**
     * if two values are needed for the operator, this method returns the second one.
     * @returns a formula, a numeric constant, or a string constant in quotes.
     */
-  var Formula2: String = js.native
+  var Formula2: String
   
   /** returns the operator in the condition. */
-  var Operator: ConditionOperator = js.native
+  var Operator: ConditionOperator
   
   /** returns the position in the document which is used as a base for relative references in the formulas. */
-  var SourcePosition: CellAddress = js.native
+  var SourcePosition: CellAddress
   
   /**
     * returns either the comparison value, which is used in the condition, or the first value if two values are needed for the operator.
     * @returns a formula, a numeric constant, or a string constant in quotes.
     */
-  def getFormula1(): String = js.native
+  def getFormula1(): String
   
   /**
     * if two values are needed for the operator, this method returns the second one.
     * @returns a formula, a numeric constant, or a string constant in quotes.
     */
-  def getFormula2(): String = js.native
+  def getFormula2(): String
   
   /** returns the operator in the condition. */
-  def getOperator(): ConditionOperator = js.native
+  def getOperator(): ConditionOperator
   
   /** returns the position in the document which is used as a base for relative references in the formulas. */
-  def getSourcePosition(): CellAddress = js.native
+  def getSourcePosition(): CellAddress
   
   /**
     * sets either the comparison value, which is used in the condition, or the first value if two values are needed for the operator.
     * @param aFormula1 a formula, a numeric constant, or a string constant in quotes.
     */
-  def setFormula1(aFormula1: String): Unit = js.native
+  def setFormula1(aFormula1: String): Unit
   
   /**
     * if two values are needed for the operator, this method sets the second one.
     * @param aFormula2 a formula, a numeric constant, or a string constant in quotes.
     */
-  def setFormula2(aFormula2: String): Unit = js.native
+  def setFormula2(aFormula2: String): Unit
   
   /** sets the operator in the condition. */
-  def setOperator(nOperator: ConditionOperator): Unit = js.native
+  def setOperator(nOperator: ConditionOperator): Unit
   
   /** sets the position in the document which is used as a base for relative references in the formulas. */
-  def setSourcePosition(aSourcePosition: CellAddress): Unit = js.native
+  def setSourcePosition(aSourcePosition: CellAddress): Unit
 }
 object XSheetCondition {
   

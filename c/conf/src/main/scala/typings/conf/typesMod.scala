@@ -10,7 +10,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -23,7 +22,6 @@ object typesMod {
   
   type OnDidChangeCallback[T] = js.Function2[/* newValue */ js.UndefOr[T], /* oldValue */ js.UndefOr[T], Unit]
   
-  @js.native
   trait Options[T] extends StObject {
     
     /**
@@ -53,39 +51,39 @@ object typesMod {
       //=> '🦄'
       ```
       */
-    val accessPropertiesByDotNotation: js.UndefOr[Boolean] = js.native
+    val accessPropertiesByDotNotation: js.UndefOr[Boolean] = js.undefined
     
     /**
       The config is cleared if reading the config file causes a `SyntaxError`. This is a good default, as the config file is not intended to be hand-edited, so it usually means the config is corrupt and there's nothing the user can do about it anyway. However, if you let the user edit the config file directly, mistakes might happen and it could be more useful to throw an error when the config is invalid instead of clearing. Disabling this option will make it throw a `SyntaxError` on invalid config instead of clearing.
       @default true
       */
-    var clearInvalidConfig: js.UndefOr[Boolean] = js.native
+    var clearInvalidConfig: js.UndefOr[Boolean] = js.undefined
     
     /**
       Name of the config file (without extension).
       Useful if you need multiple config files for your app or module. For example, different config files between two major versions.
       @default 'config'
       */
-    var configName: js.UndefOr[String] = js.native
+    var configName: js.UndefOr[String] = js.undefined
     
     /**
       __You most likely don't need this. Please don't use it unless you really have to.__
       The only use-case I can think of is having the config located in the app directory or on some external storage. Default: System default user [config directory](https://github.com/sindresorhus/env-paths#pathsconfig).
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       Config used if there are no existing config.
       **Note:** The values in `defaults` will overwrite the `default` key in the `schema` option.
       */
-    var defaults: js.UndefOr[T] = js.native
+    var defaults: js.UndefOr[T] = js.undefined
     
     /**
       Function to deserialize the config object from a UTF-8 string when reading the config file.
       You would usually not need this, but it could be useful if you want to use a format other than JSON.
       @default JSON.parse
       */
-    val deserialize: js.UndefOr[Deserialize[T]] = js.native
+    val deserialize: js.UndefOr[Deserialize[T]] = js.undefined
     
     /**
       Note that this is __not intended for security purposes__, since the encryption key would be easily found inside a plain-text Node.js app.
@@ -93,14 +91,14 @@ object typesMod {
       It also has the added bonus of ensuring the config file's integrity. If the file is changed in any way, the decryption will not work, in which case the store will just reset back to its default state.
       When specified, the store will be encrypted using the [`aes-256-cbc`](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation) encryption algorithm.
       */
-    var encryptionKey: js.UndefOr[String | Buffer | TypedArray | DataView] = js.native
+    var encryptionKey: js.UndefOr[String | Buffer | TypedArray | DataView] = js.undefined
     
     /**
       Extension of the config file.
       You would usually not need this, but could be useful if you want to interact with a file with a custom file extension that can be associated with your app. These might be simple save/export/preference files that are intended to be shareable or saved outside of the app.
       @default 'json'
       */
-    var fileExtension: js.UndefOr[String] = js.native
+    var fileExtension: js.UndefOr[String] = js.undefined
     
     /**
       You can use migrations to perform operations to the store whenever a version is changed.
@@ -128,13 +126,13 @@ object typesMod {
       });
       ```
       */
-    var migrations: js.UndefOr[Migrations[T]] = js.native
+    var migrations: js.UndefOr[Migrations[T]] = js.undefined
     
     /**
       You only need to specify this if you don't have a package.json file in your project or if it doesn't have a name defined within it.
       Default: The name field in the `package.json` closest to where `conf` is imported.
       */
-    var projectName: js.UndefOr[String] = js.native
+    var projectName: js.UndefOr[String] = js.undefined
     
     /**
       __You most likely don't need this. Please don't use it unless you really have to.__
@@ -143,13 +141,13 @@ object typesMod {
       For example, on macOS, the config file will be stored in the `~/Library/Preferences/foo-nodejs` directory, where `foo` is the `projectName`.
       @default 'nodejs'
       */
-    val projectSuffix: js.UndefOr[String] = js.native
+    val projectSuffix: js.UndefOr[String] = js.undefined
     
     /**
       You only need to specify this if you don't have a package.json file in your project or if it doesn't have a version defined within it.
       Default: The name field in the `package.json` closest to where `conf` is imported.
       */
-    var projectVersion: js.UndefOr[String] = js.native
+    var projectVersion: js.UndefOr[String] = js.undefined
     
     /**
       [JSON Schema](https://json-schema.org) to validate your config data.
@@ -178,21 +176,21 @@ object typesMod {
       ```
       **Note:** The `default` value will be overwritten by the `defaults` option if set.
       */
-    var schema: js.UndefOr[Schema[T]] = js.native
+    var schema: js.UndefOr[Schema[T]] = js.undefined
     
     /**
       Function to serialize the config object to a UTF-8 string when writing the config file.
       You would usually not need this, but it could be useful if you want to use a format other than JSON.
       @default value => JSON.stringify(value, null, '\t')
       */
-    val serialize: js.UndefOr[Serialize[T]] = js.native
+    val serialize: js.UndefOr[Serialize[T]] = js.undefined
     
     /**
       Watch for any changes in the config file and call the callback for `onDidChange` if set. This is useful if there are multiple processes changing the same config file.
       __Currently this option doesn't work on Node.js 8 on macOS.__
       @default false
       */
-    val watch: js.UndefOr[Boolean] = js.native
+    val watch: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -203,7 +201,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], T] (val x: Self with Options[T]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       @scala.inline
       def setAccessPropertiesByDotNotation(value: Boolean): Self = StObject.set(x, "accessPropertiesByDotNotation", value.asInstanceOf[js.Any])
@@ -299,7 +297,7 @@ object typesMod {
   
   type Schema[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ Property in keyof T ]: conf.conf/dist/source/types.ValueSchema}
-    */ typings.conf.confStrings.Schema with TopLevel[js.Any]
+    */ typings.conf.confStrings.Schema & TopLevel[js.Any]
   
   type Serialize[T] = js.Function1[/* value */ T, String]
   

@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.TextArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTextArea extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): TextArea = js.native
+  def extend(proto: js.Object): TextArea
   
   /* static member */
-  var fn: TextArea = js.native
+  var fn: TextArea
 }
 object TypeofTextArea {
   

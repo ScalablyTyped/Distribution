@@ -3,7 +3,6 @@ package typings.datadogTracer
 import typings.datadogTracer.datadogTracerStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,18 +28,17 @@ object mod {
     def on_error(method: error, cb: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
   }
   
-  @js.native
   trait TracerOptions extends StObject {
     
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var service: String = js.native
+    var service: String
   }
   object TracerOptions {
     

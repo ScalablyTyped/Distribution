@@ -2,15 +2,13 @@ package typings.stripeV3.stripe.paymentMethod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultibancoDetails extends StObject {
   
-  var entity: String = js.native
+  var entity: String
   
-  var reference: String = js.native
+  var reference: String
 }
 object MultibancoDetails {
   

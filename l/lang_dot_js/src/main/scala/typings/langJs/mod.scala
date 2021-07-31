@@ -3,14 +3,15 @@ package typings.langJs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("lang.js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Lang {
+  class ^ protected ()
+    extends StObject
+       with Lang {
     def this(options: Options) = this()
   }
   
@@ -28,7 +29,7 @@ object mod {
       * @return The translation message according to an integer value.
       */
     def choice(key: String, count: Double): String = js.native
-    def choice(key: String, count: Double, replacements: js.UndefOr[scala.Nothing], locale: String): String = js.native
+    def choice(key: String, count: Double, replacements: Unit, locale: String): String = js.native
     def choice(key: String, count: Double, replacements: Replacements): String = js.native
     def choice(key: String, count: Double, replacements: Replacements, locale: String): String = js.native
     
@@ -42,7 +43,7 @@ object mod {
       * @return The translation message, if not found the given key.
       */
     def get(key: String): String = js.native
-    def get(key: String, replacements: js.UndefOr[scala.Nothing], locale: String): String = js.native
+    def get(key: String, replacements: Unit, locale: String): String = js.native
     def get(key: String, replacements: Replacements): String = js.native
     def get(key: String, replacements: Replacements, locale: String): String = js.native
     
@@ -122,14 +123,13 @@ object mod {
   
   type Messages = StringDictionary[StringDictionary[String]]
   
-  @js.native
   trait Options extends StObject {
     
-    var fallback: String = js.native
+    var fallback: String
     
-    var locale: String = js.native
+    var locale: String
     
-    var messages: Messages = js.native
+    var messages: Messages
   }
   object Options {
     

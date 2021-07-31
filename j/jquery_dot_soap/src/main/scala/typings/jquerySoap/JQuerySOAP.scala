@@ -4,59 +4,57 @@ import typings.jquery.JQueryXHR
 import typings.std.XMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQuerySOAP {
   
-  @js.native
   trait Options extends StObject {
     
-    var HTTPHeaders: js.UndefOr[js.Object] = js.native
+    var HTTPHeaders: js.UndefOr[js.Object] = js.undefined
     
-    var SOAPAction: js.UndefOr[String] = js.native
+    var SOAPAction: js.UndefOr[String] = js.undefined
     
-    var SOAPHeader: js.UndefOr[js.Object] = js.native
+    var SOAPHeader: js.UndefOr[js.Object] = js.undefined
     
-    var appendMethodToURL: js.UndefOr[Boolean] = js.native
+    var appendMethodToURL: js.UndefOr[Boolean] = js.undefined
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var beforeSend: js.UndefOr[js.Function1[/* SOAPEnvelope */ SOAPEnvelope, Unit]] = js.native
+    var beforeSend: js.UndefOr[js.Function1[/* SOAPEnvelope */ SOAPEnvelope, Unit]] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var data: js.UndefOr[js.Object] = js.native
+    var data: js.UndefOr[js.Object] = js.undefined
     
-    var elementName: js.UndefOr[String] = js.native
+    var elementName: js.UndefOr[String] = js.undefined
     
-    var enableLogging: js.UndefOr[Boolean] = js.native
+    var enableLogging: js.UndefOr[Boolean] = js.undefined
     
-    var envAttributes: js.UndefOr[js.Any] = js.native
+    var envAttributes: js.UndefOr[js.Any] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* SOAPResponse */ SOAPResponse, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* SOAPResponse */ SOAPResponse, Unit]] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var namespaceQualifier: js.UndefOr[String] = js.native
+    var namespaceQualifier: js.UndefOr[String] = js.undefined
     
-    var namespaceURL: js.UndefOr[String] = js.native
+    var namespaceURL: js.UndefOr[String] = js.undefined
     
-    var noPrefix: js.UndefOr[Boolean] = js.native
+    var noPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var request: js.UndefOr[js.Function1[/* SOAPEnvelope */ SOAPEnvelope, Unit]] = js.native
+    var request: js.UndefOr[js.Function1[/* SOAPEnvelope */ SOAPEnvelope, Unit]] = js.undefined
     
-    var soap12: js.UndefOr[Boolean] = js.native
+    var soap12: js.UndefOr[Boolean] = js.undefined
     
-    var statusCode: js.UndefOr[js.Object] = js.native
+    var statusCode: js.UndefOr[js.Object] = js.undefined
     
-    var success: js.UndefOr[js.Function1[/* SOAPResponse */ SOAPResponse, Unit]] = js.native
+    var success: js.UndefOr[js.Function1[/* SOAPResponse */ SOAPResponse, Unit]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var wss: js.UndefOr[js.Object] = js.native
+    var wss: js.UndefOr[js.Object] = js.undefined
   }
   object Options {
     
@@ -279,12 +277,11 @@ object JQuerySOAP {
     var value: js.Any = js.native
   }
   
-  @js.native
   trait SOAPResponse extends StObject {
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toXML(): XMLDocument = js.native
+    def toXML(): XMLDocument
   }
   object SOAPResponse {
     

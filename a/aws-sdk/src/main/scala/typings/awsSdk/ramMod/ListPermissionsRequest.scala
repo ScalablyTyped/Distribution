@@ -2,26 +2,24 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPermissionsRequest extends StObject {
   
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the resource type for which to list permissions. For example, to list only permissions that apply to EC2 subnets, specify ec2:Subnet.
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
 }
 object ListPermissionsRequest {
   

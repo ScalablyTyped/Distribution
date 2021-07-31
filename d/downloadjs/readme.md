@@ -11,8 +11,8 @@ file downloading using client-side javascript
 | Full name          | downloadjs |
 | Keywords           | files, dataURL, blob, download |
 | # releases         | 0 |
-| # dependents       | 159 |
-| # downloads        | 4567799 |
+| # dependents       | 180 |
+| # downloads        | 5375593 |
 | # stars            | 4 |
 
 ## Links

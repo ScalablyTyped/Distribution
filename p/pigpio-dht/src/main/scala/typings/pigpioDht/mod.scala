@@ -3,7 +3,6 @@ package typings.pigpioDht
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,12 +12,17 @@ object mod {
     * @param gpio      an unsigned integer specifying the GPIO number
     * @param type      11 to initialize for reading a DHT11, 22 for DHT22/AM2302
     */
+  @scala.inline
+  def apply(gpio: Double, `type`: Double): Dht = (^.asInstanceOf[js.Dynamic].apply(gpio.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Dht]
+  
   @JSImport("pigpio-dht", JSImport.Namespace)
   @js.native
-  def apply(gpio: Double, `type`: Double): Dht = js.native
+  val ^ : js.Any = js.native
   
   @js.native
-  trait Dht extends EventEmitter {
+  trait Dht
+    extends StObject
+       with EventEmitter {
     
     /**
       * Starts reading the sensor value. Emits the 'start' event before starting,
@@ -33,14 +37,13 @@ object mod {
   /**
     * Result from a successful sensor read.
     */
-  @js.native
   trait DhtResult extends StObject {
     
     /** The humidity value in percentage points. */
-    var humidity: Double = js.native
+    var humidity: Double
     
     /** The temperature value in degrees Celsius. */
-    var temperature: Double = js.native
+    var temperature: Double
   }
   object DhtResult {
     

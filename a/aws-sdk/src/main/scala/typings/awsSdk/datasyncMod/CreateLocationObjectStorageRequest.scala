@@ -2,56 +2,54 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLocationObjectStorageRequest extends StObject {
   
   /**
     * Optional. The access key is used if credentials are required to access the self-managed object storage server. If your object storage requires a user name and password to authenticate, use AccessKey and SecretKey to provide the user name and password, respectively.
     */
-  var AccessKey: js.UndefOr[ObjectStorageAccessKey] = js.native
+  var AccessKey: js.UndefOr[ObjectStorageAccessKey] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the agents associated with the self-managed object storage server location.
     */
-  var AgentArns: AgentArnList = js.native
+  var AgentArns: AgentArnList
   
   /**
     * The bucket on the self-managed object storage server that is used to read data from.
     */
-  var BucketName: ObjectStorageBucketName = js.native
+  var BucketName: ObjectStorageBucketName
   
   /**
     * Optional. The secret key is used if credentials are required to access the self-managed object storage server. If your object storage requires a user name and password to authenticate, use AccessKey and SecretKey to provide the user name and password, respectively.
     */
-  var SecretKey: js.UndefOr[ObjectStorageSecretKey] = js.native
+  var SecretKey: js.UndefOr[ObjectStorageSecretKey] = js.undefined
   
   /**
     * The name of the self-managed object storage server. This value is the IP address or Domain Name Service (DNS) name of the object storage server. An agent uses this host name to mount the object storage server in a network. 
     */
-  var ServerHostname: typings.awsSdk.datasyncMod.ServerHostname = js.native
+  var ServerHostname: typings.awsSdk.datasyncMod.ServerHostname
   
   /**
     * The port that your self-managed object storage server accepts inbound network traffic on. The server port is set by default to TCP 80 (HTTP) or TCP 443 (HTTPS). You can specify a custom port if your self-managed object storage server requires one.
     */
-  var ServerPort: js.UndefOr[ObjectStorageServerPort] = js.native
+  var ServerPort: js.UndefOr[ObjectStorageServerPort] = js.undefined
   
   /**
     * The protocol that the object storage server uses to communicate. Valid values are HTTP or HTTPS.
     */
-  var ServerProtocol: js.UndefOr[ObjectStorageServerProtocol] = js.native
+  var ServerProtocol: js.UndefOr[ObjectStorageServerProtocol] = js.undefined
   
   /**
     * The subdirectory in the self-managed object storage server that is used to read data from.
     */
-  var Subdirectory: js.UndefOr[S3Subdirectory] = js.native
+  var Subdirectory: js.UndefOr[S3Subdirectory] = js.undefined
   
   /**
     * The key-value pair that represents the tag that you want to add to the location. The value can be an empty string. We recommend using tags to name your resources.
     */
-  var Tags: js.UndefOr[InputTagList] = js.native
+  var Tags: js.UndefOr[InputTagList] = js.undefined
 }
 object CreateLocationObjectStorageRequest {
   

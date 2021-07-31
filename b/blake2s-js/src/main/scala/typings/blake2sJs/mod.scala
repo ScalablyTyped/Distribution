@@ -6,19 +6,20 @@ import typings.blake2sJs.blake2sJsNumbers.`8`
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("blake2s-js", JSImport.Default)
   @js.native
-  class default () extends BLAKE2s {
+  class default ()
+    extends StObject
+       with BLAKE2s {
     def this(digestLength: Double) = this()
-    def this(digestLength: js.UndefOr[scala.Nothing], config: BLAKE2sConfig) = this()
-    def this(digestLength: js.UndefOr[scala.Nothing], key: ByteArray) = this()
     def this(digestLength: Double, config: BLAKE2sConfig) = this()
     def this(digestLength: Double, key: ByteArray) = this()
+    def this(digestLength: Unit, config: BLAKE2sConfig) = this()
+    def this(digestLength: Unit, key: ByteArray) = this()
   }
   /* static members */
   object default {
@@ -72,19 +73,18 @@ object mod {
     def hexDigest(): String = js.native
     
     def update(p: ByteArray): this.type = js.native
-    def update(p: ByteArray, offset: js.UndefOr[scala.Nothing], length: Double): this.type = js.native
     def update(p: ByteArray, offset: Double): this.type = js.native
     def update(p: ByteArray, offset: Double, length: Double): this.type = js.native
+    def update(p: ByteArray, offset: Unit, length: Double): this.type = js.native
   }
   
-  @js.native
   trait BLAKE2sConfig extends StObject {
     
-    var key: js.UndefOr[ByteArray] = js.native
+    var key: js.UndefOr[ByteArray] = js.undefined
     
-    var personalization: js.UndefOr[ByteArray] = js.native
+    var personalization: js.UndefOr[ByteArray] = js.undefined
     
-    var salt: js.UndefOr[ByteArray] = js.native
+    var salt: js.UndefOr[ByteArray] = js.undefined
   }
   object BLAKE2sConfig {
     

@@ -4,7 +4,6 @@ import typings.glReactHeadless.glviewheadlessMod.GLViewHeadless
 import typings.glReactHeadless.glviewheadlessMod.GLViewHeadlessProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,9 +20,9 @@ object mod {
     def this(props: typings.glReact.mod.SurfaceProps, context: js.Any) = this()
   }
   
-  @js.native
   trait SurfaceProps
-    extends typings.glReact.mod.SurfaceProps
+    extends StObject
+       with typings.glReact.mod.SurfaceProps
        with GLViewHeadlessProps
   object SurfaceProps {
     

@@ -2,13 +2,11 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Exit code from a tool execution.
   */
-@js.native
 trait SchemaToolExitCode extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaToolExitCode extends StObject {
     * successful.  - In response: always set - In create/update request: always
     * set
     */
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
 }
 object SchemaToolExitCode {
   

@@ -2,19 +2,17 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a buy from the Planning inventory store.
   */
-@js.native
 trait SchemaInventoryItem extends StObject {
   
   /**
     * Account ID of this inventory item.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Ad slots of this inventory item. If this inventory item represents a
@@ -22,100 +20,100 @@ trait SchemaInventoryItem extends StObject {
     * inventory item represents a placement group, there will be more than one
     * ad slot, each representing one child placement in that placement group.
     */
-  var adSlots: js.UndefOr[js.Array[SchemaAdSlot]] = js.native
+  var adSlots: js.UndefOr[js.Array[SchemaAdSlot]] = js.undefined
   
   /**
     * Advertiser ID of this inventory item.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Content category ID of this inventory item.
     */
-  var contentCategoryId: js.UndefOr[String] = js.native
+  var contentCategoryId: js.UndefOr[String] = js.undefined
   
   /**
     * Estimated click-through rate of this inventory item.
     */
-  var estimatedClickThroughRate: js.UndefOr[String] = js.native
+  var estimatedClickThroughRate: js.UndefOr[String] = js.undefined
   
   /**
     * Estimated conversion rate of this inventory item.
     */
-  var estimatedConversionRate: js.UndefOr[String] = js.native
+  var estimatedConversionRate: js.UndefOr[String] = js.undefined
   
   /**
     * ID of this inventory item.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this inventory item is in plan.
     */
-  var inPlan: js.UndefOr[Boolean] = js.native
+  var inPlan: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#inventoryItem&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the most recent modification of this inventory item.
     */
-  var lastModifiedInfo: js.UndefOr[SchemaLastModifiedInfo] = js.native
+  var lastModifiedInfo: js.UndefOr[SchemaLastModifiedInfo] = js.undefined
   
   /**
     * Name of this inventory item. For standalone inventory items, this is the
     * same name as that of its only ad slot. For group inventory items, this
     * can differ from the name of any of its ad slots.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Negotiation channel ID of this inventory item.
     */
-  var negotiationChannelId: js.UndefOr[String] = js.native
+  var negotiationChannelId: js.UndefOr[String] = js.undefined
   
   /**
     * Order ID of this inventory item.
     */
-  var orderId: js.UndefOr[String] = js.native
+  var orderId: js.UndefOr[String] = js.undefined
   
   /**
     * Placement strategy ID of this inventory item.
     */
-  var placementStrategyId: js.UndefOr[String] = js.native
+  var placementStrategyId: js.UndefOr[String] = js.undefined
   
   /**
     * Pricing of this inventory item.
     */
-  var pricing: js.UndefOr[SchemaPricing] = js.native
+  var pricing: js.UndefOr[SchemaPricing] = js.undefined
   
   /**
     * Project ID of this inventory item.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * RFP ID of this inventory item.
     */
-  var rfpId: js.UndefOr[String] = js.native
+  var rfpId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the site this inventory item is associated with.
     */
-  var siteId: js.UndefOr[String] = js.native
+  var siteId: js.UndefOr[String] = js.undefined
   
   /**
     * Subaccount ID of this inventory item.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Type of inventory item.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaInventoryItem {
   

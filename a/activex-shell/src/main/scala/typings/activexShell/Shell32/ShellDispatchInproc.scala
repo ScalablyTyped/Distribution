@@ -2,15 +2,13 @@ package typings.activexShell.Shell32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ShellDispatch Load in Shell Context */
-@js.native
 trait ShellDispatchInproc extends StObject {
   
   @JSName("Shell32.ShellDispatchInproc_typekey")
-  var Shell32DotShellDispatchInproc_typekey: ShellDispatchInproc = js.native
+  var Shell32DotShellDispatchInproc_typekey: ShellDispatchInproc
 }
 object ShellDispatchInproc {
   

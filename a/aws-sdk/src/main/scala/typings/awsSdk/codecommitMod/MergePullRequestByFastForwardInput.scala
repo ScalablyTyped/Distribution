@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergePullRequestByFastForwardInput extends StObject {
   
   /**
     * The system-generated ID of the pull request. To get this ID, use ListPullRequests.
     */
-  var pullRequestId: PullRequestId = js.native
+  var pullRequestId: PullRequestId
   
   /**
     * The name of the repository where the pull request was created.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
   
   /**
     * The full commit ID of the original or updated commit in the pull request source branch. Pass this value if you want an exception thrown if the current commit ID of the tip of the source branch does not match this commit ID.
     */
-  var sourceCommitId: js.UndefOr[ObjectId] = js.native
+  var sourceCommitId: js.UndefOr[ObjectId] = js.undefined
 }
 object MergePullRequestByFastForwardInput {
   

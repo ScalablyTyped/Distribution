@@ -10,16 +10,15 @@ import typings.activexLibreoffice.com_.sun.star.util.XCancellable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides unified interface for {@link FilePicker} service.
   * @since LibreOffice 4.1
   */
-@js.native
 trait XFilePicker3
-  extends XFilePicker2
+  extends StObject
+     with XFilePicker2
      with XFilePickerNotifier
      with XFilterManager
      with XFilePreview

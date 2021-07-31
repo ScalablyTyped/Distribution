@@ -3,51 +3,49 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IFaxIncomingMessage interface */
-@js.native
 trait IFaxIncomingMessage extends StObject {
   
   /** Called Station ID */
-  val CSID: String = js.native
+  val CSID: String
   
   /** Caller ID */
-  val CallerId: String = js.native
+  val CallerId: String
   
   /** Copy Tiff image to the local file */
-  def CopyTiff(bstrTiffPath: String): Unit = js.native
+  def CopyTiff(bstrTiffPath: String): Unit
   
   /** Delete the message from the archive */
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
   /** Name of the device that received the message */
-  val DeviceName: String = js.native
+  val DeviceName: String
   
   /** Unique message ID */
-  val Id: String = js.native
+  val Id: String
   
   /** Total number of pages */
-  val Pages: Double = js.native
+  val Pages: Double
   
   /** Number of failed routing retries */
-  val Retries: Double = js.native
+  val Retries: Double
   
   /** Routing information */
-  val RoutingInformation: String = js.native
+  val RoutingInformation: String
   
   /** Size in bytes of the message's TIFF file */
-  val Size: Double = js.native
+  val Size: Double
   
   /** Transmitting Station ID */
-  val TSID: String = js.native
+  val TSID: String
   
   /** Transmission end time */
-  val TransmissionEnd: VarDate = js.native
+  val TransmissionEnd: VarDate
   
   /** Transmission start time */
-  val TransmissionStart: VarDate = js.native
+  val TransmissionStart: VarDate
 }
 object IFaxIncomingMessage {
   

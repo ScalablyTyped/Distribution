@@ -10,7 +10,6 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderMod extends Shortcut {
@@ -27,38 +26,39 @@ object sliderMod extends Shortcut {
   @js.native
   val default: ComponentClass[SliderProps, SliderState] = js.native
   
-  @js.native
-  trait SliderProps extends GenericSliderProps {
+  trait SliderProps
+    extends StObject
+       with GenericSliderProps {
     
-    var ariaLabelForHandle: js.UndefOr[String] = js.native
+    var ariaLabelForHandle: js.UndefOr[String] = js.undefined
     
-    var ariaLabelledByForHandle: js.UndefOr[String] = js.native
+    var ariaLabelledByForHandle: js.UndefOr[String] = js.undefined
     
-    var ariaValueTextFormatterForHandle: js.UndefOr[String] = js.native
+    var ariaValueTextFormatterForHandle: js.UndefOr[String] = js.undefined
     
-    var defaultValue: js.UndefOr[Double] = js.native
+    var defaultValue: js.UndefOr[Double] = js.undefined
     
-    var handle: js.UndefOr[js.Function1[/* props */ AriaLabel, ReactElement]] = js.native
+    var handle: js.UndefOr[js.Function1[/* props */ AriaLabel, ReactElement]] = js.undefined
     
     @JSName("handleStyle")
-    var handleStyle_SliderProps: js.UndefOr[CSSProperties] = js.native
+    var handleStyle_SliderProps: js.UndefOr[CSSProperties] = js.undefined
     
-    var minimumTrackStyle: js.UndefOr[CSSProperties] = js.native
+    var minimumTrackStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var onAfterChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onAfterChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var onBeforeChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onBeforeChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var startPoint: js.UndefOr[Double] = js.native
+    var startPoint: js.UndefOr[Double] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
     @JSName("trackStyle")
-    var trackStyle_SliderProps: js.UndefOr[CSSProperties] = js.native
+    var trackStyle_SliderProps: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object SliderProps {
     
@@ -157,13 +157,14 @@ object sliderMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait SliderState extends GenericSliderState {
+  trait SliderState
+    extends StObject
+       with GenericSliderState {
     
-    var dragging: Boolean = js.native
+    var dragging: Boolean
     
     @JSName("value")
-    var value_SliderState: Double = js.native
+    var value_SliderState: Double
   }
   object SliderState {
     

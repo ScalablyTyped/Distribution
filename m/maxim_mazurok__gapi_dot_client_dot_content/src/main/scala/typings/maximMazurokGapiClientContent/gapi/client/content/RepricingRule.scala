@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepricingRule extends StObject {
   
   /** Required. Immutable. CLDR country code (e.g. "US"). */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /** Required. Time period when the rule should take effect. */
-  var effectiveTimePeriod: js.UndefOr[RepricingRuleEffectiveTime] = js.native
+  var effectiveTimePeriod: js.UndefOr[RepricingRuleEffectiveTime] = js.undefined
   
   /** Required. Match criteria for the eligible offers. */
-  var eligibleOfferMatcher: js.UndefOr[RepricingRuleEligibleOfferMatcher] = js.native
+  var eligibleOfferMatcher: js.UndefOr[RepricingRuleEligibleOfferMatcher] = js.undefined
   
   /** Required. Immutable. The two-letter ISO 639-1 language code associated with the repricing rule. */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /** Output only. Immutable. Merchant that owns the repricing rule. */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /**
     * Represents whether a rule is paused. A paused rule will behave like a non-paused rule within CRUD operations, with the major difference that a paused rule will not be evaluated and
     * will have no effect on offers.
     */
-  var paused: js.UndefOr[Boolean] = js.native
+  var paused: js.UndefOr[Boolean] = js.undefined
   
   /** Required. Restriction of the rule appliance. */
-  var restriction: js.UndefOr[RepricingRuleRestriction] = js.native
+  var restriction: js.UndefOr[RepricingRuleRestriction] = js.undefined
   
   /** Output only. Immutable. The ID to uniquely identify each repricing rule. */
-  var ruleId: js.UndefOr[String] = js.native
+  var ruleId: js.UndefOr[String] = js.undefined
   
   /** The title for the rule. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The type of the rule. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object RepricingRule {
   

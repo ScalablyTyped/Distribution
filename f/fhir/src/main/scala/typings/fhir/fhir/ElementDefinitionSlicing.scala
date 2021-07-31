@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This element is sliced - slices follow
   */
-@js.native
-trait ElementDefinitionSlicing extends Element {
+trait ElementDefinitionSlicing
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'ordered'.
     */
-  var _ordered: js.UndefOr[Element] = js.native
+  var _ordered: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'rules'.
     */
-  var _rules: js.UndefOr[Element] = js.native
+  var _rules: js.UndefOr[Element] = js.undefined
   
   /**
     * Text description of how slicing works (or not)
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Element values that are used to distinguish the slices
     */
-  var discriminator: js.UndefOr[js.Array[ElementDefinitionSlicingDiscriminator]] = js.native
+  var discriminator: js.UndefOr[js.Array[ElementDefinitionSlicingDiscriminator]] = js.undefined
   
   /**
     * If elements must be in same order as slices
     */
-  var ordered: js.UndefOr[Boolean] = js.native
+  var ordered: js.UndefOr[Boolean] = js.undefined
   
   /**
     * closed | open | openAtEnd
     */
-  var rules: code = js.native
+  var rules: code
 }
 object ElementDefinitionSlicing {
   

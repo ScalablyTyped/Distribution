@@ -4,23 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ckeditor.CKEDITOR.htmlParser.basicWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait htmlWriter extends basicWriter {
+trait htmlWriter
+  extends StObject
+     with basicWriter {
   
-  def indentation(): Unit = js.native
+  def indentation(): Unit
   
-  var indentationChars: String = js.native
+  var indentationChars: String
   
-  def lineBreak(): Unit = js.native
+  def lineBreak(): Unit
   
-  var lineBreakChars: String = js.native
+  var lineBreakChars: String
   
-  var selfClosingEnd: String = js.native
+  var selfClosingEnd: String
   
-  def setRules(tagName: String, rules: StringDictionary[js.Any]): Unit = js.native
+  def setRules(tagName: String, rules: StringDictionary[js.Any]): Unit
 }
 object htmlWriter {
   

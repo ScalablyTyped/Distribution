@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWebACLForResourceResponse extends StObject {
   
   /**
     * The Web ACL that is associated with the resource. If there is no associated resource, AWS WAF returns a null Web ACL.
     */
-  var WebACL: js.UndefOr[typings.awsSdk.wafv2Mod.WebACL] = js.native
+  var WebACL: js.UndefOr[typings.awsSdk.wafv2Mod.WebACL] = js.undefined
 }
 object GetWebACLForResourceResponse {
   

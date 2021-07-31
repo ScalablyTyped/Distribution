@@ -2,47 +2,47 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OrgContact extends DirectoryObject {
+trait OrgContact
+  extends StObject
+     with DirectoryObject {
   
-  var addresses: js.UndefOr[NullableOption[js.Array[PhysicalOfficeAddress]]] = js.native
+  var addresses: js.UndefOr[NullableOption[js.Array[PhysicalOfficeAddress]]] = js.undefined
   
-  var companyName: js.UndefOr[NullableOption[String]] = js.native
+  var companyName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var department: js.UndefOr[NullableOption[String]] = js.native
+  var department: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var directReports: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var directReports: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var givenName: js.UndefOr[NullableOption[String]] = js.native
+  var givenName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var jobTitle: js.UndefOr[NullableOption[String]] = js.native
+  var jobTitle: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var mail: js.UndefOr[NullableOption[String]] = js.native
+  var mail: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var mailNickname: js.UndefOr[NullableOption[String]] = js.native
+  var mailNickname: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var manager: js.UndefOr[NullableOption[DirectoryObject]] = js.native
+  var manager: js.UndefOr[NullableOption[DirectoryObject]] = js.undefined
   
-  var memberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var memberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
-  var onPremisesLastSyncDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var onPremisesLastSyncDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var onPremisesProvisioningErrors: js.UndefOr[NullableOption[js.Array[OnPremisesProvisioningError]]] = js.native
+  var onPremisesProvisioningErrors: js.UndefOr[NullableOption[js.Array[OnPremisesProvisioningError]]] = js.undefined
   
-  var onPremisesSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var onPremisesSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var phones: js.UndefOr[NullableOption[js.Array[Phone]]] = js.native
+  var phones: js.UndefOr[NullableOption[js.Array[Phone]]] = js.undefined
   
-  var proxyAddresses: js.UndefOr[js.Array[String]] = js.native
+  var proxyAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
-  var surname: js.UndefOr[NullableOption[String]] = js.native
+  var surname: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var transitiveMemberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var transitiveMemberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
 }
 object OrgContact {
   

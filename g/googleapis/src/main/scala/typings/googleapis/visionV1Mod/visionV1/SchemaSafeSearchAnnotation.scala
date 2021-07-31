@@ -2,7 +2,6 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * methods over safe-search verticals (for example, adult, spoof, medical,
   * violence).
   */
-@js.native
 trait SchemaSafeSearchAnnotation extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaSafeSearchAnnotation extends StObject {
     * contain elements such as nudity, pornographic images or cartoons, or
     * sexual activities.
     */
-  var adult: js.UndefOr[String] = js.native
+  var adult: js.UndefOr[String] = js.undefined
   
   /**
     * Likelihood that this is a medical image.
     */
-  var medical: js.UndefOr[String] = js.native
+  var medical: js.UndefOr[String] = js.undefined
   
   /**
     * Likelihood that the request image contains racy content. Racy content may
@@ -31,18 +29,18 @@ trait SchemaSafeSearchAnnotation extends StObject {
     * covered nudity, lewd or provocative poses, or close-ups of sensitive body
     * areas.
     */
-  var racy: js.UndefOr[String] = js.native
+  var racy: js.UndefOr[String] = js.undefined
   
   /**
     * Spoof likelihood. The likelihood that an modification was made to the
     * image&#39;s canonical version to make it appear funny or offensive.
     */
-  var spoof: js.UndefOr[String] = js.native
+  var spoof: js.UndefOr[String] = js.undefined
   
   /**
     * Likelihood that this image contains violent content.
     */
-  var violence: js.UndefOr[String] = js.native
+  var violence: js.UndefOr[String] = js.undefined
 }
 object SchemaSafeSearchAnnotation {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterApplicationRevisionInput extends StObject {
   
   /**
     * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
     */
-  var applicationName: ApplicationName = js.native
+  var applicationName: ApplicationName
   
   /**
     * A comment about the revision.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * Information about the application revision to register, including type and location.
     */
-  var revision: RevisionLocation = js.native
+  var revision: RevisionLocation
 }
 object RegisterApplicationRevisionInput {
   

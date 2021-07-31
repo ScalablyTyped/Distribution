@@ -2,31 +2,29 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketCountBySharedAccessType extends StObject {
   
   /**
     * The total number of buckets that are shared with an AWS account that isn't part of the same Amazon Macie organization.
     */
-  var external: js.UndefOr[long] = js.native
+  var external: js.UndefOr[long] = js.undefined
   
   /**
     * The total number of buckets that are shared with an AWS account that's part of the same Amazon Macie organization.
     */
-  var internal: js.UndefOr[long] = js.native
+  var internal: js.UndefOr[long] = js.undefined
   
   /**
     * The total number of buckets that aren't shared with other AWS accounts.
     */
-  var notShared: js.UndefOr[long] = js.native
+  var notShared: js.UndefOr[long] = js.undefined
   
   /**
     * The total number of buckets that Amazon Macie wasn't able to evaluate shared access settings for. Macie can't determine whether these buckets are shared with other AWS accounts.
     */
-  var unknown: js.UndefOr[long] = js.native
+  var unknown: js.UndefOr[long] = js.undefined
 }
 object BucketCountBySharedAccessType {
   

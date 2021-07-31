@@ -3,11 +3,9 @@ package typings.officeJs.Excel.Interfaces
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
-@js.native
 trait DocumentPropertiesData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var comments: js.UndefOr[String] = js.native
+  var comments: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var company: js.UndefOr[String] = js.native
+  var company: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var creationDate: js.UndefOr[Date] = js.native
+  var creationDate: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -56,7 +54,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var custom: js.UndefOr[js.Array[CustomPropertyData]] = js.native
+  var custom: js.UndefOr[js.Array[CustomPropertyData]] = js.undefined
   
   /**
     *
@@ -64,7 +62,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var keywords: js.UndefOr[String] = js.native
+  var keywords: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -72,7 +70,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var lastAuthor: js.UndefOr[String] = js.native
+  var lastAuthor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -80,7 +78,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var manager: js.UndefOr[String] = js.native
+  var manager: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -88,7 +86,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var revisionNumber: js.UndefOr[Double] = js.native
+  var revisionNumber: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -96,7 +94,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -104,7 +102,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DocumentPropertiesData {
   

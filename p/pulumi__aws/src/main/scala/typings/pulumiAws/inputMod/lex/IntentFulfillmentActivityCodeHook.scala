@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.lex
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntentFulfillmentActivityCodeHook extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait IntentFulfillmentActivityCodeHook extends StObject {
     * to invoke your Lambda function. For more information, see
     * [Using Lambda Functions](https://docs.aws.amazon.com/lex/latest/dg/using-lambda.html). Must be less than or equal to 5 characters in length.
     */
-  var messageVersion: Input[String] = js.native
+  var messageVersion: Input[String]
   
   /**
     * The Amazon Resource Name (ARN) of the Lambda function.
     */
-  var uri: Input[String] = js.native
+  var uri: Input[String]
 }
 object IntentFulfillmentActivityCodeHook {
   

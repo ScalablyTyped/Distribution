@@ -2,26 +2,24 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing filter sets.
   */
-@js.native
 trait SchemaListFilterSetsResponse extends StObject {
   
   /**
     * The filter sets belonging to the buyer.
     */
-  var filterSets: js.UndefOr[js.Array[SchemaFilterSet]] = js.native
+  var filterSets: js.UndefOr[js.Array[SchemaFilterSet]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the
     * ListFilterSetsRequest.pageToken field in the subsequent call to the
     * accounts.filterSets.list method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListFilterSetsResponse {
   

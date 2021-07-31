@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The status and message of the deletion request. */
-@js.native
 trait FeedbackDeleted extends StObject {
   
   /** Status message returned from the service. */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /** HTTP return code. */
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
 }
 object FeedbackDeleted {
   

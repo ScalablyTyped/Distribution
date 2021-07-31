@@ -4,29 +4,74 @@ import typings.bootstrap.anon.PartialOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselMod {
   
   @JSImport("bootstrap/js/dist/carousel", JSImport.Default)
   @js.native
-  class default protected () extends Carousel {
+  class default protected ()
+    extends StObject
+       with Carousel {
     def this(element: Element) = this()
     def this(element: Element, options: PartialOptions) = this()
+    
+    /**
+      * Cycles through the carousel items from left to right.
+      */
+    /* CompleteClass */
+    override def cycle(): Unit = js.native
+    
+    /**
+      * Destroys an element's carousel.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Cycles to the next item. Returns to the caller before the next item has
+      * been shown (e.g., before the slid.bs.carousel event occurs).
+      */
+    /* CompleteClass */
+    override def next(): Unit = js.native
+    
+    /**
+      * Cycles the carousel to a particular frame (0 based, similar to an array).
+      * Returns to the caller before the target item has been shown (e.g., before
+      * the slid.bs.carousel event occurs).
+      */
+    /* CompleteClass */
+    override def nextWhenVisible(): Unit = js.native
+    
+    /**
+      * Stops the carousel from cycling through items.
+      */
+    /* CompleteClass */
+    override def pause(): Unit = js.native
+    
+    /**
+      * Cycles to the previous item. Returns to the caller before the previous
+      * item has been shown (e.g., before the slid.bs.carousel event occurs).
+      */
+    /* CompleteClass */
+    override def prev(): Unit = js.native
   }
   object default {
+    
+    @JSImport("bootstrap/js/dist/carousel", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("bootstrap/js/dist/carousel", "default.Events")
     @js.native
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.carouselMod.Carousel.Events with String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.carouselMod.Carousel.Events & String] = js.native
       
-      /* "slid.bs.carousel" */ val slid: typings.bootstrap.carouselMod.Carousel.Events.slid with String = js.native
+      /* "slid.bs.carousel" */ val slid: typings.bootstrap.carouselMod.Carousel.Events.slid & String = js.native
       
-      /* "slide.bs.carousel" */ val slide: typings.bootstrap.carouselMod.Carousel.Events.slide with String = js.native
+      /* "slide.bs.carousel" */ val slide: typings.bootstrap.carouselMod.Carousel.Events.slide & String = js.native
     }
     
     /**
@@ -34,50 +79,47 @@ object carouselMod {
       * with a DOM element.
       */
     /* static member */
-    @JSImport("bootstrap/js/dist/carousel", "default.getInstance")
-    @js.native
-    def getInstance(element: Element): Carousel = js.native
-    @JSImport("bootstrap/js/dist/carousel", "default.getInstance")
-    @js.native
-    def getInstance(element: Element, options: PartialOptions): Carousel = js.native
+    @scala.inline
+    def getInstance(element: Element): Carousel = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Carousel]
+    @scala.inline
+    def getInstance(element: Element, options: PartialOptions): Carousel = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Carousel]
   }
   
-  @js.native
   trait Carousel extends StObject {
     
     /**
       * Cycles through the carousel items from left to right.
       */
-    def cycle(): Unit = js.native
+    def cycle(): Unit
     
     /**
       * Destroys an element's carousel.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * Cycles to the next item. Returns to the caller before the next item has
       * been shown (e.g., before the slid.bs.carousel event occurs).
       */
-    def next(): Unit = js.native
+    def next(): Unit
     
     /**
       * Cycles the carousel to a particular frame (0 based, similar to an array).
       * Returns to the caller before the target item has been shown (e.g., before
       * the slid.bs.carousel event occurs).
       */
-    def nextWhenVisible(): Unit = js.native
+    def nextWhenVisible(): Unit
     
     /**
       * Stops the carousel from cycling through items.
       */
-    def pause(): Unit = js.native
+    def pause(): Unit
     
     /**
       * Cycles to the previous item. Returns to the caller before the previous
       * item has been shown (e.g., before the slid.bs.carousel event occurs).
       */
-    def prev(): Unit = js.native
+    def prev(): Unit
   }
   object Carousel {
     
@@ -104,13 +146,17 @@ object carouselMod {
         * Fired when the carousel has completed its slide transition.
         */
       @js.native
-      sealed trait slid extends Events
+      sealed trait slid
+        extends StObject
+           with Events
       
       /**
         * Fires immediately when the slide instance method is invoked.
         */
       @js.native
-      sealed trait slide extends Events
+      sealed trait slide
+        extends StObject
+           with Events
     }
     
     @scala.inline
@@ -135,7 +181,6 @@ object carouselMod {
       def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -144,14 +189,14 @@ object carouselMod {
         *
         * @default 5000
         */
-      var interval: Double = js.native
+      var interval: Double
       
       /**
         * Whether the carousel should react to keyboard events.
         *
         * @default true
         */
-      var keyboard: Boolean = js.native
+      var keyboard: Boolean
       
       /**
         * If set to "hover", pauses the cycling of the carousel on mouseenter and
@@ -163,7 +208,7 @@ object carouselMod {
         *
         * @default "hover"
         */
-      var pause: String | Boolean = js.native
+      var pause: String | Boolean
       
       /**
         * Autoplays the carousel after the user manually cycles the first item. If
@@ -171,7 +216,7 @@ object carouselMod {
         *
         * @default false
         */
-      var slide: String | Boolean = js.native
+      var slide: String | Boolean
       
       /**
         * Whether the carousel should support left/right swipe interactions on
@@ -179,14 +224,14 @@ object carouselMod {
         *
         * @default true
         */
-      var touch: Boolean = js.native
+      var touch: Boolean
       
       /**
         * Whether the carousel should cycle continuously or have hard stops.
         *
         * @default true
         */
-      var wrap: Boolean = js.native
+      var wrap: Boolean
     }
     object Options {
       

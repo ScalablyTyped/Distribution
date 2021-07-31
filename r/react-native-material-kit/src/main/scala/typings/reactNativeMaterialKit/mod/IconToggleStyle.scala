@@ -2,17 +2,15 @@ package typings.reactNativeMaterialKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconToggleStyle extends StObject {
   
-  var offColor: js.UndefOr[String] = js.native
+  var offColor: js.UndefOr[String] = js.undefined
   
-  var onColor: js.UndefOr[String] = js.native
+  var onColor: js.UndefOr[String] = js.undefined
   
-  var rippleColor: js.UndefOr[String] = js.native
+  var rippleColor: js.UndefOr[String] = js.undefined
 }
 object IconToggleStyle {
   

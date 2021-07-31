@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatafeedstatusesCustomBatchRequestEntry extends StObject {
   
   /** An entry ID, unique within the batch request. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** The country for which to get the datafeed status. If this parameter is provided then language must also be provided. Note that for multi-target datafeeds this parameter is required. */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /** The ID of the data feed to get. */
-  var datafeedId: js.UndefOr[String] = js.native
+  var datafeedId: js.UndefOr[String] = js.undefined
   
   /** The language for which to get the datafeed status. If this parameter is provided then country must also be provided. Note that for multi-target datafeeds this parameter is required. */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** The ID of the managing account. */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /** The method of the batch entry. Acceptable values are: - "`get`" */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
 }
 object DatafeedstatusesCustomBatchRequestEntry {
   

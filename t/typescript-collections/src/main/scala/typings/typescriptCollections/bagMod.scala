@@ -3,7 +3,6 @@ package typings.typescriptCollections
 import typings.typescriptCollections.utilMod.ILoopFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bagMod {
@@ -29,7 +28,9 @@ object bagMod {
     * is not appropriate, a custom function which receives an object and returns a
     * unique string must be provided.
     */
-  class default[T] () extends Bag[T] {
+  class default[T] ()
+    extends StObject
+       with Bag[T] {
     def this(toStrFunction: js.Function1[/* item */ T, String]) = this()
   }
   

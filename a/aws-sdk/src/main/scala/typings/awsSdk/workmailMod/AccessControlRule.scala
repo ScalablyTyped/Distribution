@@ -2,66 +2,64 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessControlRule extends StObject {
   
   /**
     * Access protocol actions to include in the rule. Valid values include ActiveSync, AutoDiscover, EWS, IMAP, SMTP, WindowsOutlook, and WebMail.
     */
-  var Actions: js.UndefOr[ActionsList] = js.native
+  var Actions: js.UndefOr[ActionsList] = js.undefined
   
   /**
     * The date that the rule was created.
     */
-  var DateCreated: js.UndefOr[Timestamp] = js.native
+  var DateCreated: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date that the rule was modified.
     */
-  var DateModified: js.UndefOr[Timestamp] = js.native
+  var DateModified: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The rule description.
     */
-  var Description: js.UndefOr[AccessControlRuleDescription] = js.native
+  var Description: js.UndefOr[AccessControlRuleDescription] = js.undefined
   
   /**
     * The rule effect.
     */
-  var Effect: js.UndefOr[AccessControlRuleEffect] = js.native
+  var Effect: js.UndefOr[AccessControlRuleEffect] = js.undefined
   
   /**
     * IPv4 CIDR ranges to include in the rule.
     */
-  var IpRanges: js.UndefOr[IpRangeList] = js.native
+  var IpRanges: js.UndefOr[IpRangeList] = js.undefined
   
   /**
     * The rule name.
     */
-  var Name: js.UndefOr[AccessControlRuleName] = js.native
+  var Name: js.UndefOr[AccessControlRuleName] = js.undefined
   
   /**
     * Access protocol actions to exclude from the rule. Valid values include ActiveSync, AutoDiscover, EWS, IMAP, SMTP, WindowsOutlook, and WebMail.
     */
-  var NotActions: js.UndefOr[ActionsList] = js.native
+  var NotActions: js.UndefOr[ActionsList] = js.undefined
   
   /**
     * IPv4 CIDR ranges to exclude from the rule.
     */
-  var NotIpRanges: js.UndefOr[IpRangeList] = js.native
+  var NotIpRanges: js.UndefOr[IpRangeList] = js.undefined
   
   /**
     * User IDs to exclude from the rule.
     */
-  var NotUserIds: js.UndefOr[UserIdList] = js.native
+  var NotUserIds: js.UndefOr[UserIdList] = js.undefined
   
   /**
     * User IDs to include in the rule.
     */
-  var UserIds: js.UndefOr[UserIdList] = js.native
+  var UserIds: js.UndefOr[UserIdList] = js.undefined
 }
 object AccessControlRule {
   

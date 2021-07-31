@@ -2,17 +2,15 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureActivations extends StObject {
   
   /**
     * Enables the Input Prepare feature. You can create Input Prepare actions in the schedule only if this feature is enabled.
   If you disable the feature on an existing schedule, make sure that you first delete all input prepare actions from the schedule.
     */
-  var InputPrepareScheduleActions: js.UndefOr[FeatureActivationsInputPrepareScheduleActions] = js.native
+  var InputPrepareScheduleActions: js.UndefOr[FeatureActivationsInputPrepareScheduleActions] = js.undefined
 }
 object FeatureActivations {
   

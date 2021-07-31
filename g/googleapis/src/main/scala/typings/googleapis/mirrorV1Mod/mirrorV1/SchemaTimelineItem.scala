@@ -2,14 +2,12 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Each item in the user&#39;s timeline is represented as a TimelineItem JSON
   * structure, described below.
   */
-@js.native
 trait SchemaTimelineItem extends StObject {
   
   /**
@@ -21,30 +19,30 @@ trait SchemaTimelineItem extends StObject {
     * src=&quot;cid:attachment_id&quot;&gt; where attachment_id is the ID of
     * the attachment.
     */
-  var attachments: js.UndefOr[js.Array[SchemaAttachment]] = js.native
+  var attachments: js.UndefOr[js.Array[SchemaAttachment]] = js.undefined
   
   /**
     * The bundle ID for this item. Services can specify a bundleId to group
     * many items together. They appear under a single top-level item on the
     * device.
     */
-  var bundleId: js.UndefOr[String] = js.native
+  var bundleId: js.UndefOr[String] = js.undefined
   
   /**
     * A canonical URL pointing to the canonical/high quality version of the
     * data represented by the timeline item.
     */
-  var canonicalUrl: js.UndefOr[String] = js.native
+  var canonicalUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which this item was created, formatted according to RFC 3339.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * The user or group that created this item.
     */
-  var creator: js.UndefOr[SchemaContact] = js.native
+  var creator: js.UndefOr[SchemaContact] = js.undefined
   
   /**
     * The time that should be displayed when this item is viewed in the
@@ -53,12 +51,12 @@ trait SchemaTimelineItem extends StObject {
     * the item is displayed in the timeline. If not set by the service, the
     * display time defaults to the updated time.
     */
-  var displayTime: js.UndefOr[String] = js.native
+  var displayTime: js.UndefOr[String] = js.undefined
   
   /**
     * ETag for this item.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * HTML content for this item. If both text and html are provided for an
@@ -75,19 +73,19 @@ trait SchemaTimelineItem extends StObject {
     * script   Other elements: Any elements that aren&#39;t listed are removed,
     * but their contents are preserved.
     */
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the timeline item. This is unique within a user&#39;s timeline.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * If this item was generated as a reply to another item, this field will be
     * set to the ID of the item being replied to. This can be used to attach a
     * reply to the appropriate conversation or post.
     */
-  var inReplyTo: js.UndefOr[String] = js.native
+  var inReplyTo: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this item is a bundle cover.  If an item is marked as a bundle
@@ -98,13 +96,13 @@ trait SchemaTimelineItem extends StObject {
     * have a bundleId  In a bundle sub-timeline, items that are shown are:   -
     * Items that have the bundleId in question AND isBundleCover set to false
     */
-  var isBundleCover: js.UndefOr[Boolean] = js.native
+  var isBundleCover: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, indicates this item is deleted, and only the ID property is
     * set.
     */
-  var isDeleted: js.UndefOr[Boolean] = js.native
+  var isDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, indicates this item is pinned, which means it&#39;s grouped
@@ -113,52 +111,52 @@ trait SchemaTimelineItem extends StObject {
     * items. You can allow the user to toggle the value of this property with
     * the TOGGLE_PINNED built-in menu item.
     */
-  var isPinned: js.UndefOr[Boolean] = js.native
+  var isPinned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of resource. This is always mirror#timelineItem.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The geographic location associated with this item.
     */
-  var location: js.UndefOr[SchemaLocation] = js.native
+  var location: js.UndefOr[SchemaLocation] = js.undefined
   
   /**
     * A list of menu items that will be presented to the user when this item is
     * selected in the timeline.
     */
-  var menuItems: js.UndefOr[js.Array[SchemaMenuItem]] = js.native
+  var menuItems: js.UndefOr[js.Array[SchemaMenuItem]] = js.undefined
   
   /**
     * Controls how notifications for this item are presented on the device. If
     * this is missing, no notification will be generated.
     */
-  var notification: js.UndefOr[SchemaNotificationConfig] = js.native
+  var notification: js.UndefOr[SchemaNotificationConfig] = js.undefined
   
   /**
     * For pinned items, this determines the order in which the item is
     * displayed in the timeline, with a higher score appearing closer to the
     * clock. Note: setting this field is currently not supported.
     */
-  var pinScore: js.UndefOr[Double] = js.native
+  var pinScore: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of users or groups that this item has been shared with.
     */
-  var recipients: js.UndefOr[js.Array[SchemaContact]] = js.native
+  var recipients: js.UndefOr[js.Array[SchemaContact]] = js.undefined
   
   /**
     * A URL that can be used to retrieve this item.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Opaque string you can use to map a timeline item to data in your own
     * service.
     */
-  var sourceItemId: js.UndefOr[String] = js.native
+  var sourceItemId: js.UndefOr[String] = js.undefined
   
   /**
     * The speakable version of the content of this item. Along with the
@@ -169,7 +167,7 @@ trait SchemaTimelineItem extends StObject {
     * the additional context is useful, for example when the user requests that
     * the item be read aloud following a notification.
     */
-  var speakableText: js.UndefOr[String] = js.native
+  var speakableText: js.UndefOr[String] = js.undefined
   
   /**
     * A speakable description of the type of this item. This will be announced
@@ -182,23 +180,23 @@ trait SchemaTimelineItem extends StObject {
     * contain speakableText or text so that the user can learn the type of the
     * item without looking at the screen.
     */
-  var speakableType: js.UndefOr[String] = js.native
+  var speakableType: js.UndefOr[String] = js.undefined
   
   /**
     * Text content of this item.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * The title of this item.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which this item was last modified, formatted according to RFC
     * 3339.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object SchemaTimelineItem {
   

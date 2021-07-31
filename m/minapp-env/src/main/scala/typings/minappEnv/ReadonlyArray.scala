@@ -3,14 +3,15 @@ package typings.minappEnv
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////////
 /// ECMAScript Array API (specially handled by compiler)
 /////////////////////////////
 @js.native
-trait ReadonlyArray[T] extends /* n */ NumberDictionary[T] {
+trait ReadonlyArray[T]
+  extends StObject
+     with /* n */ NumberDictionary[T] {
   
   /**
     * Combines two or more arrays.
@@ -41,9 +42,9 @@ trait ReadonlyArray[T] extends /* n */ NumberDictionary[T] {
     * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], _]): Array[T] = js.native
+  def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], js.Any]): Array[T] = js.native
   def filter(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], _],
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], js.Any],
     thisArg: js.Any
   ): Array[T] = js.native
   /**
@@ -253,9 +254,9 @@ trait ReadonlyArray[T] extends /* n */ NumberDictionary[T] {
     * @param end The end of the specified portion of the array.
     */
   def slice(): Array[T] = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): Array[T] = js.native
   def slice(start: Double): Array[T] = js.native
   def slice(start: Double, end: Double): Array[T] = js.native
+  def slice(start: Unit, end: Double): Array[T] = js.native
   
   /**
     * Determines whether the specified callback function returns true for any element of an array.

@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterToWorkMailRequest extends StObject {
   
   /**
     * The email for the user, group, or resource to be updated.
     */
-  var Email: EmailAddress = js.native
+  var Email: EmailAddress
   
   /**
     * The identifier for the user, group, or resource to be updated.
     */
-  var EntityId: WorkMailIdentifier = js.native
+  var EntityId: WorkMailIdentifier
   
   /**
     * The identifier for the organization under which the user, group, or resource exists.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object RegisterToWorkMailRequest {
   

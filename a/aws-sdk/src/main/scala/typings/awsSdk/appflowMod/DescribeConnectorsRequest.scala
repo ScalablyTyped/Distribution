@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConnectorsRequest extends StObject {
   
   /**
     *  The type of connector, such as Salesforce, Amplitude, and so on. 
     */
-  var connectorTypes: js.UndefOr[ConnectorTypeList] = js.native
+  var connectorTypes: js.UndefOr[ConnectorTypeList] = js.undefined
   
   /**
     *  The pagination token for the next page of data. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeConnectorsRequest {
   

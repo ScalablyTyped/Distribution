@@ -2,52 +2,52 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Site extends BaseItem {
+trait Site
+  extends StObject
+     with BaseItem {
   
   // Analytics about the view activities that took place in this site.
-  var analytics: js.UndefOr[NullableOption[ItemAnalytics]] = js.native
+  var analytics: js.UndefOr[NullableOption[ItemAnalytics]] = js.undefined
   
   // The collection of column definitions reusable across lists under this site.
-  var columns: js.UndefOr[NullableOption[js.Array[ColumnDefinition]]] = js.native
+  var columns: js.UndefOr[NullableOption[js.Array[ColumnDefinition]]] = js.undefined
   
   // The collection of content types defined for this site.
-  var contentTypes: js.UndefOr[NullableOption[js.Array[ContentType]]] = js.native
+  var contentTypes: js.UndefOr[NullableOption[js.Array[ContentType]]] = js.undefined
   
   // The full title for the site. Read-only.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The default drive (document library) for this site.
-  var drive: js.UndefOr[NullableOption[Drive]] = js.native
+  var drive: js.UndefOr[NullableOption[Drive]] = js.undefined
   
   // The collection of drives (document libraries) under this site.
-  var drives: js.UndefOr[NullableOption[js.Array[Drive]]] = js.native
+  var drives: js.UndefOr[NullableOption[js.Array[Drive]]] = js.undefined
   
-  var error: js.UndefOr[NullableOption[PublicError]] = js.native
+  var error: js.UndefOr[NullableOption[PublicError]] = js.undefined
   
   // Used to address any item contained in this site. This collection cannot be enumerated.
-  var items: js.UndefOr[NullableOption[js.Array[BaseItem]]] = js.native
+  var items: js.UndefOr[NullableOption[js.Array[BaseItem]]] = js.undefined
   
   // The collection of lists under this site.
-  var lists: js.UndefOr[NullableOption[js.Array[List]]] = js.native
+  var lists: js.UndefOr[NullableOption[js.Array[List]]] = js.undefined
   
   // Calls the OneNote service for notebook related operations.
-  var onenote: js.UndefOr[NullableOption[Onenote]] = js.native
+  var onenote: js.UndefOr[NullableOption[Onenote]] = js.undefined
   
   // If present, indicates that this is the root site in the site collection. Read-only.
-  var root: js.UndefOr[NullableOption[Root]] = js.native
+  var root: js.UndefOr[NullableOption[Root]] = js.undefined
   
   // Returns identifiers useful for SharePoint REST compatibility. Read-only.
-  var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.native
+  var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.undefined
   
   // Provides details about the site's site collection. Available only on the root site. Read-only.
-  var siteCollection: js.UndefOr[NullableOption[SiteCollection]] = js.native
+  var siteCollection: js.UndefOr[NullableOption[SiteCollection]] = js.undefined
   
   // The collection of the sub-sites under this site.
-  var sites: js.UndefOr[NullableOption[js.Array[Site]]] = js.native
+  var sites: js.UndefOr[NullableOption[js.Array[Site]]] = js.undefined
 }
 object Site {
   

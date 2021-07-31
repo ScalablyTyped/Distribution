@@ -4,26 +4,26 @@ import typings.sparqljs.sparqljsBooleans.`false`
 import typings.sparqljs.sparqljsStrings.load
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LoadOperation extends ManagementOperation {
+trait LoadOperation
+  extends StObject
+     with ManagementOperation {
   
-  var destination: IriTerm | `false` = js.native
+  var destination: IriTerm | `false`
   
-  var silent: Boolean = js.native
+  var silent: Boolean
   
-  var source: IriTerm = js.native
+  var source: IriTerm
   
-  var `type`: load = js.native
+  var `type`: load
 }
 object LoadOperation {
   
   @scala.inline
-  def apply(destination: IriTerm | `false`, silent: Boolean, source: IriTerm, `type`: load): LoadOperation = {
+  def apply(destination: IriTerm | `false`, silent: Boolean, source: IriTerm): LoadOperation = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("load")
     __obj.asInstanceOf[LoadOperation]
   }
   

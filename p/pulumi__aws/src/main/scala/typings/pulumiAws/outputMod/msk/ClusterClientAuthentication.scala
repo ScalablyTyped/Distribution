@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.msk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterClientAuthentication extends StObject {
   
   /**
     * Configuration block for specifying TLS client authentication. See below.
     */
-  var tls: js.UndefOr[ClusterClientAuthenticationTls] = js.native
+  var tls: js.UndefOr[ClusterClientAuthenticationTls] = js.undefined
 }
 object ClusterClientAuthentication {
   

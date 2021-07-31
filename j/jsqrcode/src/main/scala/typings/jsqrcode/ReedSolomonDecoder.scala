@@ -2,21 +2,19 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReedSolomonDecoder extends StObject {
   
-  def decode(received: GF256, twoS: js.Array[Double]): Unit = js.native
+  def decode(received: GF256, twoS: js.Array[Double]): Unit
   
-  var field: GF256 = js.native
+  var field: GF256
   
-  def findErrorLocations(errorLocator: GF256Poly): js.Array[Double] = js.native
+  def findErrorLocations(errorLocator: GF256Poly): js.Array[Double]
   
-  def findErrorMagnitudes(errorEvaluator: GF256Poly, errorLocations: js.Array[Double], dataMatrix: Boolean): js.Array[Double] = js.native
+  def findErrorMagnitudes(errorEvaluator: GF256Poly, errorLocations: js.Array[Double], dataMatrix: Boolean): js.Array[Double]
   
-  def runEuclideanAlgorithm(a: GF256Poly, b: GF256Poly, R: Double): js.Tuple2[GF256Poly, GF256Poly] = js.native
+  def runEuclideanAlgorithm(a: GF256Poly, b: GF256Poly, R: Double): js.Tuple2[GF256Poly, GF256Poly]
 }
 object ReedSolomonDecoder {
   

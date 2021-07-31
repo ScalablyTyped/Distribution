@@ -2,17 +2,15 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmulateOptions extends StObject {
   
   /** The emulated user-agent. */
-  var userAgent: String = js.native
+  var userAgent: String
   
   /** The viewport emulation options. */
-  var viewport: Viewport = js.native
+  var viewport: Viewport
 }
 object EmulateOptions {
   

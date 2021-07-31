@@ -4,19 +4,19 @@ import typings.agGrid.columnApiMod.ColumnApi
 import typings.agGrid.gridApiMod.GridApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PaginationChangedEvent extends AgGridEvent {
+trait PaginationChangedEvent
+  extends StObject
+     with AgGridEvent {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var keepRenderedRows: Boolean = js.native
+  var keepRenderedRows: Boolean
   
-  var newData: Boolean = js.native
+  var newData: Boolean
   
-  var newPage: Boolean = js.native
+  var newPage: Boolean
 }
 object PaginationChangedEvent {
   

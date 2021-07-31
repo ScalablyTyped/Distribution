@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flagFlagMod {
@@ -1998,9 +1997,9 @@ object flagFlagMod {
     def zw: typings.semanticUiReact.semanticUiReactStrings.zw = "zw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zw]
   }
   
-  @js.native
   trait FlagProps
-    extends StrictFlagProps
+    extends StObject
+       with StrictFlagProps
        with /* key */ StringDictionary[js.Any]
   object FlagProps {
     
@@ -2011,17 +2010,16 @@ object flagFlagMod {
     }
   }
   
-  @js.native
   trait StrictFlagProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Flag name, can use the two digit country code, the full name, or a common alias. */
-    var name: FlagNameValues = js.native
+    var name: FlagNameValues
   }
   object StrictFlagProps {
     

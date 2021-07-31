@@ -2,29 +2,27 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Issues include warnings, errors, and deprecation notices.
   */
-@js.native
 trait SchemaIssue extends StObject {
   
   /**
     * Short error description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The severity of the issue.
     */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /**
     * Position of the issue in the `Source`.
     */
-  var sourcePosition: js.UndefOr[SchemaSourcePosition] = js.native
+  var sourcePosition: js.UndefOr[SchemaSourcePosition] = js.undefined
 }
 object SchemaIssue {
   

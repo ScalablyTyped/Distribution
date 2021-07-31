@@ -3,29 +3,27 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MakeBluetoothPairOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[MakeBluetoothPairCompleteCallback] = js.native
+  var complete: js.UndefOr[MakeBluetoothPairCompleteCallback] = js.undefined
   
   /** 蓝牙设备 id */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[MakeBluetoothPairFailCallback] = js.native
+  var fail: js.UndefOr[MakeBluetoothPairFailCallback] = js.undefined
   
   /** pin 码 */
-  var pin: js.UndefOr[ArrayBuffer] = js.native
+  var pin: js.UndefOr[ArrayBuffer] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[MakeBluetoothPairSuccessCallback] = js.native
+  var success: js.UndefOr[MakeBluetoothPairSuccessCallback] = js.undefined
   
   /** 超时时间 */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object MakeBluetoothPairOption {
   

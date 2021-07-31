@@ -2,86 +2,84 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Workspace extends StObject {
   
   /**
     * The identifier of the bundle used to create the WorkSpace.
     */
-  var BundleId: js.UndefOr[typings.awsSdk.workspacesMod.BundleId] = js.native
+  var BundleId: js.UndefOr[typings.awsSdk.workspacesMod.BundleId] = js.undefined
   
   /**
     * The name of the WorkSpace, as seen by the operating system. The format of this name varies. For more information, see  Launch a WorkSpace. 
     */
-  var ComputerName: js.UndefOr[typings.awsSdk.workspacesMod.ComputerName] = js.native
+  var ComputerName: js.UndefOr[typings.awsSdk.workspacesMod.ComputerName] = js.undefined
   
   /**
     * The identifier of the AWS Directory Service directory for the WorkSpace.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.workspacesMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.workspacesMod.DirectoryId] = js.undefined
   
   /**
     * The error code that is returned if the WorkSpace cannot be created.
     */
-  var ErrorCode: js.UndefOr[WorkspaceErrorCode] = js.native
+  var ErrorCode: js.UndefOr[WorkspaceErrorCode] = js.undefined
   
   /**
     * The text of the error message that is returned if the WorkSpace cannot be created.
     */
-  var ErrorMessage: js.UndefOr[Description] = js.native
+  var ErrorMessage: js.UndefOr[Description] = js.undefined
   
   /**
     * The IP address of the WorkSpace.
     */
-  var IpAddress: js.UndefOr[typings.awsSdk.workspacesMod.IpAddress] = js.native
+  var IpAddress: js.UndefOr[typings.awsSdk.workspacesMod.IpAddress] = js.undefined
   
   /**
     * The modification states of the WorkSpace.
     */
-  var ModificationStates: js.UndefOr[ModificationStateList] = js.native
+  var ModificationStates: js.UndefOr[ModificationStateList] = js.undefined
   
   /**
     * Indicates whether the data stored on the root volume is encrypted.
     */
-  var RootVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.native
+  var RootVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * The operational state of the WorkSpace.  After a WorkSpace is terminated, the TERMINATED state is returned only briefly before the WorkSpace directory metadata is cleaned up, so this state is rarely returned. To confirm that a WorkSpace is terminated, check for the WorkSpace ID by using  DescribeWorkSpaces. If the WorkSpace ID isn't returned, then the WorkSpace has been successfully terminated. 
     */
-  var State: js.UndefOr[WorkspaceState] = js.native
+  var State: js.UndefOr[WorkspaceState] = js.undefined
   
   /**
     * The identifier of the subnet for the WorkSpace.
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.workspacesMod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.workspacesMod.SubnetId] = js.undefined
   
   /**
     * The user for the WorkSpace.
     */
-  var UserName: js.UndefOr[typings.awsSdk.workspacesMod.UserName] = js.native
+  var UserName: js.UndefOr[typings.awsSdk.workspacesMod.UserName] = js.undefined
   
   /**
     * Indicates whether the data stored on the user volume is encrypted.
     */
-  var UserVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.native
+  var UserVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * The symmetric AWS KMS customer master key (CMK) used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric CMKs.
     */
-  var VolumeEncryptionKey: js.UndefOr[typings.awsSdk.workspacesMod.VolumeEncryptionKey] = js.native
+  var VolumeEncryptionKey: js.UndefOr[typings.awsSdk.workspacesMod.VolumeEncryptionKey] = js.undefined
   
   /**
     * The identifier of the WorkSpace.
     */
-  var WorkspaceId: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceId] = js.native
+  var WorkspaceId: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceId] = js.undefined
   
   /**
     * The properties of the WorkSpace.
     */
-  var WorkspaceProperties: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceProperties] = js.native
+  var WorkspaceProperties: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceProperties] = js.undefined
 }
 object Workspace {
   

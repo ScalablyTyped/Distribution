@@ -4,10 +4,13 @@ import typings.opentracing.binaryCarrierMod.default
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("opentracing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("opentracing", "BinaryCarrier")
   @js.native
@@ -163,25 +166,19 @@ object mod {
   class Tracer ()
     extends typings.opentracing.tracerMod.Tracer
   
-  @JSImport("opentracing", "childOf")
-  @js.native
-  def childOf(spanContext: typings.opentracing.spanContextMod.default): typings.opentracing.referenceMod.default = js.native
-  @JSImport("opentracing", "childOf")
-  @js.native
-  def childOf(spanContext: typings.opentracing.spanMod.default): typings.opentracing.referenceMod.default = js.native
+  @scala.inline
+  def childOf(spanContext: typings.opentracing.spanContextMod.default): typings.opentracing.referenceMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("childOf")(spanContext.asInstanceOf[js.Any]).asInstanceOf[typings.opentracing.referenceMod.default]
+  @scala.inline
+  def childOf(spanContext: typings.opentracing.spanMod.default): typings.opentracing.referenceMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("childOf")(spanContext.asInstanceOf[js.Any]).asInstanceOf[typings.opentracing.referenceMod.default]
   
-  @JSImport("opentracing", "followsFrom")
-  @js.native
-  def followsFrom(spanContext: typings.opentracing.spanContextMod.default): typings.opentracing.referenceMod.default = js.native
-  @JSImport("opentracing", "followsFrom")
-  @js.native
-  def followsFrom(spanContext: typings.opentracing.spanMod.default): typings.opentracing.referenceMod.default = js.native
+  @scala.inline
+  def followsFrom(spanContext: typings.opentracing.spanContextMod.default): typings.opentracing.referenceMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("followsFrom")(spanContext.asInstanceOf[js.Any]).asInstanceOf[typings.opentracing.referenceMod.default]
+  @scala.inline
+  def followsFrom(spanContext: typings.opentracing.spanMod.default): typings.opentracing.referenceMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("followsFrom")(spanContext.asInstanceOf[js.Any]).asInstanceOf[typings.opentracing.referenceMod.default]
   
-  @JSImport("opentracing", "globalTracer")
-  @js.native
-  def globalTracer(): typings.opentracing.tracerMod.default = js.native
+  @scala.inline
+  def globalTracer(): typings.opentracing.tracerMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("globalTracer")().asInstanceOf[typings.opentracing.tracerMod.default]
   
-  @JSImport("opentracing", "initGlobalTracer")
-  @js.native
-  def initGlobalTracer(tracer: typings.opentracing.tracerMod.default): Unit = js.native
+  @scala.inline
+  def initGlobalTracer(tracer: typings.opentracing.tracerMod.default): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initGlobalTracer")(tracer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

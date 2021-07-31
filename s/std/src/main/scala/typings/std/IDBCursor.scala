@@ -2,7 +2,6 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This IndexedDB API interface represents a cursor for traversing or iterating over multiple records in a database. */
@@ -30,7 +29,7 @@ trait IDBCursor extends StObject {
     * 
     * If successful, request's result will be undefined.
     */
-  def delete(): IDBRequest[js.UndefOr[scala.Nothing]] = js.native
+  def delete(): IDBRequest[Unit] = js.native
   
   /**
     * Returns the direction ("next", "nextunique", "prev" or "prevunique") of the cursor.

@@ -3,27 +3,25 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceContext extends StObject {
   
   /** A SourceContext referring to a revision in a Google Cloud Source Repo. */
-  var cloudRepo: js.UndefOr[CloudRepoSourceContext] = js.native
+  var cloudRepo: js.UndefOr[CloudRepoSourceContext] = js.undefined
   
   /** A SourceContext referring to a Gerrit project. */
-  var gerrit: js.UndefOr[GerritSourceContext] = js.native
+  var gerrit: js.UndefOr[GerritSourceContext] = js.undefined
   
   /** A SourceContext referring to any third party Git repo (e.g., GitHub). */
-  var git: js.UndefOr[GitSourceContext] = js.native
+  var git: js.UndefOr[GitSourceContext] = js.undefined
   
   /** Labels with user defined metadata. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.SourceContext with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.SourceContext & TopLevel[js.Any]
+  ] = js.undefined
 }
 object SourceContext {
   
@@ -58,7 +56,7 @@ object SourceContext {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.SourceContext with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.SourceContext & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

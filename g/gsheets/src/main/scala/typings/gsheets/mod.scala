@@ -4,33 +4,32 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.gsheets.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gsheets", "getSpreadsheet")
+  @JSImport("gsheets", JSImport.Namespace)
   @js.native
-  def getSpreadsheet(spreadsheetId: String): js.Promise[Spreadsheet] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gsheets", "getWorksheet")
-  @js.native
-  def getWorksheet(spreadsheetId: String, worksheetTitle: String): js.Promise[Worksheet] = js.native
+  @scala.inline
+  def getSpreadsheet(spreadsheetId: String): js.Promise[Spreadsheet] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpreadsheet")(spreadsheetId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Spreadsheet]]
   
-  @JSImport("gsheets", "getWorksheetById")
-  @js.native
-  def getWorksheetById(spreadsheetId: String, worksheetId: String): js.Promise[WorksheetFromId] = js.native
+  @scala.inline
+  def getWorksheet(spreadsheetId: String, worksheetTitle: String): js.Promise[Worksheet] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorksheet")(spreadsheetId.asInstanceOf[js.Any], worksheetTitle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Worksheet]]
+  
+  @scala.inline
+  def getWorksheetById(spreadsheetId: String, worksheetId: String): js.Promise[WorksheetFromId] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorksheetById")(spreadsheetId.asInstanceOf[js.Any], worksheetId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WorksheetFromId]]
   
   type Row = StringDictionary[String | Double | Null]
   
-  @js.native
   trait Spreadsheet extends StObject {
     
-    var title: String = js.native
+    var title: String
     
-    var updated: String = js.native
+    var updated: String
     
-    var worksheets: js.Array[Id] = js.native
+    var worksheets: js.Array[Id]
   }
   object Spreadsheet {
     
@@ -57,20 +56,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Worksheet extends StObject {
     
-    var data: js.Array[Row] | Null = js.native
+    var data: js.Array[Row] | Null
     
-    var title: String = js.native
+    var title: String
     
-    var updated: String = js.native
+    var updated: String
   }
   object Worksheet {
     
     @scala.inline
     def apply(title: String, updated: String): Worksheet = {
-      val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], data = null)
       __obj.asInstanceOf[Worksheet]
     }
     
@@ -94,11 +92,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait WorksheetFromId extends Worksheet {
+  trait WorksheetFromId
+    extends StObject
+       with Worksheet {
     
     @JSName("data")
-    var data_WorksheetFromId: js.Array[Row] = js.native
+    var data_WorksheetFromId: js.Array[Row]
   }
   object WorksheetFromId {
     

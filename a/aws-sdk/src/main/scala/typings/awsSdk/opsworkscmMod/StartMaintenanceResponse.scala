@@ -2,16 +2,14 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartMaintenanceResponse extends StObject {
   
   /**
     * Contains the response to a StartMaintenance request. 
     */
-  var Server: js.UndefOr[typings.awsSdk.opsworkscmMod.Server] = js.native
+  var Server: js.UndefOr[typings.awsSdk.opsworkscmMod.Server] = js.undefined
 }
 object StartMaintenanceResponse {
   

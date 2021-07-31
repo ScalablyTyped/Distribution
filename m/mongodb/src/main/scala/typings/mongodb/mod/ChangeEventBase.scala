@@ -5,26 +5,24 @@ import typings.mongodb.anon.Coll
 import typings.mongodb.anon.Uid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeEventBase[TSchema /* <: StringDictionary[js.Any] */] extends StObject {
   
-  var _id: ResumeToken = js.native
+  var _id: ResumeToken
   
-  var clusterTime: typings.bson.mod.Timestamp = js.native
+  var clusterTime: typings.bson.mod.Timestamp
   
-  var lsid: js.UndefOr[Uid] = js.native
+  var lsid: js.UndefOr[Uid] = js.undefined
   
   /**
     * We leave this off the base type so that we can differentiate
     * by checking its value and get intelligent types on the other fields
     */
   // operationType: ChangeEventTypes;
-  var ns: Coll = js.native
+  var ns: Coll
   
-  var txnNumber: js.UndefOr[scala.Double] = js.native
+  var txnNumber: js.UndefOr[scala.Double] = js.undefined
 }
 object ChangeEventBase {
   
@@ -35,7 +33,7 @@ object ChangeEventBase {
   }
   
   @scala.inline
-  implicit class ChangeEventBaseMutableBuilder[Self <: ChangeEventBase[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with ChangeEventBase[TSchema]) extends AnyVal {
+  implicit class ChangeEventBaseMutableBuilder[Self <: ChangeEventBase[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & ChangeEventBase[TSchema]) extends AnyVal {
     
     @scala.inline
     def setClusterTime(value: typings.bson.mod.Timestamp): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])

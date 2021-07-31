@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNotificationChannelVerificationCodeRequest extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait GetNotificationChannelVerificationCodeRequest extends StObject {
     * expiration will be used, which may be less than the max permissible expiration (so specifying an expiration may extend the code's lifetime over omitting an expiration, even though
     * the API does impose an upper limit on the maximum expiration that is permitted).
     */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
 }
 object GetNotificationChannelVerificationCodeRequest {
   

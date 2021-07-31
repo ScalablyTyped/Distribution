@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentThread extends StObject {
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The ID that YouTube uses to uniquely identify the comment thread. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#commentThread". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The replies object contains a limited number of replies (if any) to the top level comment found in the snippet. */
-  var replies: js.UndefOr[CommentThreadReplies] = js.native
+  var replies: js.UndefOr[CommentThreadReplies] = js.undefined
   
   /** The snippet object contains basic details about the comment thread and also the top level comment. */
-  var snippet: js.UndefOr[CommentThreadSnippet] = js.native
+  var snippet: js.UndefOr[CommentThreadSnippet] = js.undefined
 }
 object CommentThread {
   

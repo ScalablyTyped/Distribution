@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the WorksheetCustomProperty object, for use in `worksheetCustomProperty.set({ ... })`. */
-@js.native
 trait WorksheetCustomPropertyUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait WorksheetCustomPropertyUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object WorksheetCustomPropertyUpdateData {
   

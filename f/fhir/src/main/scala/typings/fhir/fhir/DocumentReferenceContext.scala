@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Clinical context of document
   */
-@js.native
-trait DocumentReferenceContext extends BackboneElement {
+trait DocumentReferenceContext
+  extends StObject
+     with BackboneElement {
   
   /**
     * Context of the document  content
     */
-  var encounter: js.UndefOr[Reference] = js.native
+  var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
     * Main clinical acts documented
     */
-  var event: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var event: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Kind of facility where patient was seen
     */
-  var facilityType: js.UndefOr[CodeableConcept] = js.native
+  var facilityType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Time of service that is being documented
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * Additional details about where the content was created (e.g. clinical specialty)
     */
-  var practiceSetting: js.UndefOr[CodeableConcept] = js.native
+  var practiceSetting: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Related identifiers or resources
     */
-  var related: js.UndefOr[js.Array[DocumentReferenceContextRelated]] = js.native
+  var related: js.UndefOr[js.Array[DocumentReferenceContextRelated]] = js.undefined
   
   /**
     * Patient demographics from source
     */
-  var sourcePatientInfo: js.UndefOr[Reference] = js.native
+  var sourcePatientInfo: js.UndefOr[Reference] = js.undefined
 }
 object DocumentReferenceContext {
   

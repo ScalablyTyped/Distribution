@@ -2,15 +2,13 @@ package typings.formatjsEcma402Abstract.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cardinal extends StObject {
   
-  var cardinal: js.Array[String] = js.native
+  var cardinal: js.Array[String]
   
-  var ordinal: js.Array[String] = js.native
+  var ordinal: js.Array[String]
 }
 object Cardinal {
   

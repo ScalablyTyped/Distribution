@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait configWorkersLoaderConfig extends Object {
+trait configWorkersLoaderConfig
+  extends StObject
+     with Object {
   
   /**
     * The AMD loader loads all code relative to the baseUrl.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
     */
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Determines if the specified feature capabilities are supported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
     */
-  var has: js.UndefOr[js.Any] = js.native
+  var has: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Map paths in module identifiers to different paths.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
     */
-  var map: js.UndefOr[js.Any] = js.native
+  var map: js.UndefOr[js.Any] = js.undefined
   
   /**
     * An array of objects which provide the package name and its location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
     */
-  var packages: js.UndefOr[js.Array[_]] = js.native
+  var packages: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Map of module id fragments to file paths.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
     */
-  var paths: js.UndefOr[js.Any] = js.native
+  var paths: js.UndefOr[js.Any] = js.undefined
 }
 object configWorkersLoaderConfig {
   
@@ -79,7 +79,7 @@ object configWorkersLoaderConfig {
     def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def setPackages(value: js.Array[_]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+    def setPackages(value: js.Array[js.Any]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)

@@ -2,13 +2,13 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserPage[A, U] extends Page {
+trait UserPage[A, U]
+  extends StObject
+     with Page {
   
-  var users: js.Array[User[A, U]] = js.native
+  var users: js.Array[User[A, U]]
 }
 object UserPage {
   
@@ -19,7 +19,7 @@ object UserPage {
   }
   
   @scala.inline
-  implicit class UserPageMutableBuilder[Self <: UserPage[_, _], A, U] (val x: Self with (UserPage[A, U])) extends AnyVal {
+  implicit class UserPageMutableBuilder[Self <: UserPage[?, ?], A, U] (val x: Self & (UserPage[A, U])) extends AnyVal {
     
     @scala.inline
     def setUsers(value: js.Array[User[A, U]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])

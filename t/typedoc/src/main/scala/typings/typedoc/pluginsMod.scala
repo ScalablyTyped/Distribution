@@ -9,7 +9,6 @@ import typings.typedoc.reflectionGroupMod.ReflectionGroup
 import typings.typedoc.reflectionsMod.ProjectReflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginsMod {
@@ -40,17 +39,14 @@ object pluginsMod {
     @scala.inline
     def defaultCategory_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCategory")(x.asInstanceOf[js.Any])
     
-    @JSImport("typedoc/dist/lib/converter/plugins", "CategoryPlugin.getCategory")
-    @js.native
-    def getCategory(reflection: Reflection): String = js.native
+    @scala.inline
+    def getCategory(reflection: Reflection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCategory")(reflection.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("typedoc/dist/lib/converter/plugins", "CategoryPlugin.getReflectionCategories")
-    @js.native
-    def getReflectionCategories(reflections: js.Array[Reflection]): js.Array[ReflectionCategory] = js.native
+    @scala.inline
+    def getReflectionCategories(reflections: js.Array[Reflection]): js.Array[ReflectionCategory] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReflectionCategories")(reflections.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReflectionCategory]]
     
-    @JSImport("typedoc/dist/lib/converter/plugins", "CategoryPlugin.sortCatCallback")
-    @js.native
-    def sortCatCallback(a: ReflectionCategory, b: ReflectionCategory): Double = js.native
+    @scala.inline
+    def sortCatCallback(a: ReflectionCategory, b: ReflectionCategory): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sortCatCallback")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("typedoc/dist/lib/converter/plugins", "CommentPlugin")
@@ -73,20 +69,16 @@ object pluginsMod {
     @scala.inline
     def isHidden_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isHidden")(x.asInstanceOf[js.Any])
     
-    @JSImport("typedoc/dist/lib/converter/plugins", "CommentPlugin.removeReflection")
-    @js.native
-    def removeReflection(project: ProjectReflection, reflection: typings.typedoc.reflectionsMod.Reflection): Unit = js.native
+    @scala.inline
+    def removeReflection(project: ProjectReflection, reflection: typings.typedoc.reflectionsMod.Reflection): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeReflection")(project.asInstanceOf[js.Any], reflection.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("typedoc/dist/lib/converter/plugins", "CommentPlugin.removeReflections")
-    @js.native
-    def removeReflections(project: ProjectReflection, reflections: js.Array[typings.typedoc.reflectionsMod.Reflection]): Unit = js.native
+    @scala.inline
+    def removeReflections(project: ProjectReflection, reflections: js.Array[typings.typedoc.reflectionsMod.Reflection]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeReflections")(project.asInstanceOf[js.Any], reflections.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("typedoc/dist/lib/converter/plugins", "CommentPlugin.removeTags")
-    @js.native
-    def removeTags(comment: js.UndefOr[scala.Nothing], tagName: String): Unit = js.native
-    @JSImport("typedoc/dist/lib/converter/plugins", "CommentPlugin.removeTags")
-    @js.native
-    def removeTags(comment: Comment, tagName: String): Unit = js.native
+    @scala.inline
+    def removeTags(comment: Unit, tagName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTags")(comment.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeTags(comment: Comment, tagName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTags")(comment.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("typedoc/dist/lib/converter/plugins", "DecoratorPlugin")
@@ -153,13 +145,11 @@ object pluginsMod {
     @scala.inline
     def WEIGHTS_=(x: js.Array[ReflectionKind]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEIGHTS")(x.asInstanceOf[js.Any])
     
-    @JSImport("typedoc/dist/lib/converter/plugins", "GroupPlugin.getKindPlural")
-    @js.native
-    def getKindPlural(kind: ReflectionKind): String = js.native
+    @scala.inline
+    def getKindPlural(kind: ReflectionKind): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKindPlural")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("typedoc/dist/lib/converter/plugins", "GroupPlugin.getKindSingular")
-    @js.native
-    def getKindSingular(kind: ReflectionKind): String = js.native
+    @scala.inline
+    def getKindSingular(kind: ReflectionKind): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKindSingular")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("typedoc/dist/lib/converter/plugins", "GroupPlugin.getKindString")
     @js.native
@@ -167,13 +157,11 @@ object pluginsMod {
     @scala.inline
     def getKindString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getKindString")(x.asInstanceOf[js.Any])
     
-    @JSImport("typedoc/dist/lib/converter/plugins", "GroupPlugin.getReflectionGroups")
-    @js.native
-    def getReflectionGroups(reflections: js.Array[typings.typedoc.reflectionsMod.Reflection]): js.Array[ReflectionGroup] = js.native
+    @scala.inline
+    def getReflectionGroups(reflections: js.Array[typings.typedoc.reflectionsMod.Reflection]): js.Array[ReflectionGroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReflectionGroups")(reflections.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReflectionGroup]]
     
-    @JSImport("typedoc/dist/lib/converter/plugins", "GroupPlugin.sortCallback")
-    @js.native
-    def sortCallback(a: typings.typedoc.reflectionsMod.Reflection, b: typings.typedoc.reflectionsMod.Reflection): Double = js.native
+    @scala.inline
+    def sortCallback(a: typings.typedoc.reflectionsMod.Reflection, b: typings.typedoc.reflectionsMod.Reflection): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sortCallback")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("typedoc/dist/lib/converter/plugins", "ImplementsPlugin")

@@ -7,29 +7,30 @@ import typings.sqsProducer.sqsProducerStrings.Binary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sqs-producer", "create")
+  @JSImport("sqs-producer", JSImport.Namespace)
   @js.native
-  def create(opts: Options): Producer = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def create(opts: Options): Producer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Producer]
+  
   trait Options extends StObject {
     
-    var accessKeyId: js.UndefOr[String] = js.native
+    var accessKeyId: js.UndefOr[String] = js.undefined
     
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
-    var queueUrl: String = js.native
+    var queueUrl: String
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var secretAccessKey: js.UndefOr[String] = js.native
+    var secretAccessKey: js.UndefOr[String] = js.undefined
     
-    var sqs: js.UndefOr[SQS] = js.native
+    var sqs: js.UndefOr[SQS] = js.undefined
   }
   object Options {
     
@@ -89,20 +90,19 @@ object mod {
   
   type ProducerCallback[T] = js.Function2[/* err */ js.UndefOr[Error], /* data */ js.UndefOr[T], js.Any]
   
-  @js.native
   trait ProducerMessage extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var deduplicationId: js.UndefOr[String] = js.native
+    var deduplicationId: js.UndefOr[String] = js.undefined
     
-    var delaySeconds: js.UndefOr[Double] = js.native
+    var delaySeconds: js.UndefOr[Double] = js.undefined
     
-    var groupId: js.UndefOr[String] = js.native
+    var groupId: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var messageAttributes: js.UndefOr[StringDictionary[ProducerMessageAttribute]] = js.native
+    var messageAttributes: js.UndefOr[StringDictionary[ProducerMessageAttribute]] = js.undefined
   }
   object ProducerMessage {
     
@@ -147,14 +147,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ProducerMessageAttribute extends StObject {
     
-    var BinaryValue: js.UndefOr[Buffer] = js.native
+    var BinaryValue: js.UndefOr[Buffer] = js.undefined
     
-    var DataType: typings.sqsProducer.sqsProducerStrings.String | Binary = js.native
+    var DataType: typings.sqsProducer.sqsProducerStrings.String | Binary
     
-    var StringValue: js.UndefOr[String] = js.native
+    var StringValue: js.UndefOr[String] = js.undefined
   }
   object ProducerMessageAttribute {
     

@@ -3,16 +3,14 @@ package typings.baiduApp.swan.ai
 import typings.baiduApp.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectIdentifyResponse extends StObject {
   
-  var log_id: Double = js.native
+  var log_id: Double
   
   //     唯一的log id，用于问题定位。
-  var result: Height = js.native
+  var result: Height
 }
 object DetectIdentifyResponse {
   

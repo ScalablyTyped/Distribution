@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpec extends StObject {
   
   /** Traffic specifies how to distribute traffic over a collection of Knative Revisions and Configurations. Cloud Run currently supports a single configurationName. */
-  var traffic: js.UndefOr[js.Array[TrafficTarget]] = js.native
+  var traffic: js.UndefOr[js.Array[TrafficTarget]] = js.undefined
 }
 object RouteSpec {
   

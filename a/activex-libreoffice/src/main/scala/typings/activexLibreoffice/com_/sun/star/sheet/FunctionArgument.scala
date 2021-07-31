@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * contains the description of a single argument within a spreadsheet function.
   * @see com.sun.star.sheet.FunctionDescription
   */
-@js.native
 trait FunctionArgument extends StObject {
   
   /** a description of the argument. */
-  var Description: String = js.native
+  var Description: String
   
   /** determines whether the argument is optional. */
-  var IsOptional: Boolean = js.native
+  var IsOptional: Boolean
   
   /** the name of the argument. */
-  var Name: String = js.native
+  var Name: String
 }
 object FunctionArgument {
   

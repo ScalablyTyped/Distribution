@@ -7,18 +7,18 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * manages the diagram of the chart document.
   * @see XChartDocument
   */
-@js.native
-trait XDiagram extends XShape {
+trait XDiagram
+  extends StObject
+     with XShape {
   
   /** @returns a string representing the diagram type. This string contains the fully qualified name of the corresponding service. */
-  val DiagramType: String = js.native
+  val DiagramType: String
   
   /**
     * @param nCol the index of the data point of a series (0-based).
@@ -26,17 +26,17 @@ trait XDiagram extends XShape {
     * @returns the properties of the specified data point.
     * @see ChartDataPointProperties
     */
-  def getDataPointProperties(nCol: Double, nRow: Double): XPropertySet = js.native
+  def getDataPointProperties(nCol: Double, nRow: Double): XPropertySet
   
   /**
     * @param nRow the index of the series (0-based)
     * @returns the properties of the specified data row (series).
     * @see ChartDataRowProperties
     */
-  def getDataRowProperties(nRow: Double): XPropertySet = js.native
+  def getDataRowProperties(nRow: Double): XPropertySet
   
   /** @returns a string representing the diagram type. This string contains the fully qualified name of the corresponding service. */
-  def getDiagramType(): String = js.native
+  def getDiagramType(): String
 }
 object XDiagram {
   

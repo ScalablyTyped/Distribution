@@ -3,10 +3,8 @@ package typings.officeJsPreview.Office
 import typings.officeJsPreview.officeJsPreviewStrings.officeThemeChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OfficeThemeChangedEventArgs extends StObject {
   
   /**
@@ -14,21 +12,21 @@ trait OfficeThemeChangedEventArgs extends StObject {
     *
     * [Api set: Mailbox Preview]
     */
-  var officeTheme: OfficeTheme = js.native
+  var officeTheme: OfficeTheme
   
   /**
     * Gets the type of the event. See `Office.EventType` for details.
     *
     * [Api set: Mailbox Preview]
     */
-  var `type`: officeThemeChanged = js.native
+  var `type`: officeThemeChanged
 }
 object OfficeThemeChangedEventArgs {
   
   @scala.inline
-  def apply(officeTheme: OfficeTheme, `type`: officeThemeChanged): OfficeThemeChangedEventArgs = {
+  def apply(officeTheme: OfficeTheme): OfficeThemeChangedEventArgs = {
     val __obj = js.Dynamic.literal(officeTheme = officeTheme.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("officeThemeChanged")
     __obj.asInstanceOf[OfficeThemeChangedEventArgs]
   }
   

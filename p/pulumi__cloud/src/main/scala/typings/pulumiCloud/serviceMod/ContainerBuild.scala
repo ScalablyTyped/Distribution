@@ -3,17 +3,15 @@ package typings.pulumiCloud.serviceMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerBuild extends StObject {
   
   /**
     * An optional map of named build-time argument variables to set during the Docker build.  This flag allows you
     * to pass built-time variables that can be accessed like environment variables inside the `RUN` instruction.
     */
-  var args: js.UndefOr[StringDictionary[String]] = js.native
+  var args: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * An optional CacheFrom object with information about the build stages to use for the Docker build cache.
@@ -21,7 +19,7 @@ trait ContainerBuild extends StObject {
     * image will be pulled and passed to --cache-from; if it is a CacheFrom object, the stages named therein will
     * also be pulled and passed to --cache-from.
     */
-  var cacheFrom: js.UndefOr[Boolean | CacheFrom] = js.native
+  var cacheFrom: js.UndefOr[Boolean | CacheFrom] = js.undefined
   
   /**
     * context is a path to a directory to use for the Docker build context, usually the directory in which the
@@ -29,13 +27,13 @@ trait ContainerBuild extends StObject {
     * If not specified, the context defaults to the current working directory; if a relative path is used, it
     * is relative to the current working directory that Pulumi is evaluating.
     */
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
   /**
     * dockerfile may be used to override the default Dockerfile name and/or location.  By default, it is assumed
     * to be a file named Dockerfile in the root of the build context.
     */
-  var dockerfile: js.UndefOr[String] = js.native
+  var dockerfile: js.UndefOr[String] = js.undefined
 }
 object ContainerBuild {
   

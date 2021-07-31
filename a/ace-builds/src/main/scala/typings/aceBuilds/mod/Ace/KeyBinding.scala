@@ -2,23 +2,21 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyBinding extends StObject {
   
-  def addKeyboardHandler(handler: KeyboardHandler, pos: Double): Unit = js.native
+  def addKeyboardHandler(handler: KeyboardHandler, pos: Double): Unit
   
-  def getKeyboardHandler(): KeyboardHandler = js.native
+  def getKeyboardHandler(): KeyboardHandler
   
-  def getStatusText(): String = js.native
+  def getStatusText(): String
   
-  def removeKeyboardHandler(handler: KeyboardHandler): Boolean = js.native
+  def removeKeyboardHandler(handler: KeyboardHandler): Boolean
   
-  def setDefaultHandler(handler: KeyboardHandler): Unit = js.native
+  def setDefaultHandler(handler: KeyboardHandler): Unit
   
-  def setKeyboardHandler(handler: KeyboardHandler): Unit = js.native
+  def setKeyboardHandler(handler: KeyboardHandler): Unit
 }
 object KeyBinding {
   

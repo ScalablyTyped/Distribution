@@ -8,7 +8,6 @@ import typings.googleCloudStorage.bucketMod.Bucket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationMod {
@@ -51,10 +50,9 @@ object notificationMod {
   
   type DeleteNotificationCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.UndefOr[Metadata], Unit]
   
-  @js.native
   trait DeleteNotificationOptions extends StObject {
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object DeleteNotificationOptions {
     
@@ -89,10 +87,9 @@ object notificationMod {
     Unit
   ]
   
-  @js.native
   trait GetNotificationMetadataOptions extends StObject {
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object GetNotificationMetadataOptions {
     
@@ -115,18 +112,17 @@ object notificationMod {
   
   type GetNotificationMetadataResponse = js.Tuple2[ResponseBody, Metadata]
   
-  @js.native
   trait GetNotificationOptions extends StObject {
     
     /**
       * Automatically create the object if it does not exist. Default: `false`.
       */
-    var autoCreate: js.UndefOr[Boolean] = js.native
+    var autoCreate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The ID of the project which will be billed for the request.
       */
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object GetNotificationOptions {
     

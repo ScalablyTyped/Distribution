@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectClassNamesFromSubtreeResponse extends StObject {
   
   /**
     * Class name list.
     */
-  var classNames: js.Array[String] = js.native
+  var classNames: js.Array[String]
 }
 object CollectClassNamesFromSubtreeResponse {
   

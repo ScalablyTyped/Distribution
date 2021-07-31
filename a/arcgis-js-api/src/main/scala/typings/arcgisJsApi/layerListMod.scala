@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.LayerListConstructor
 import typings.arcgisJsApi.esri.LayerListProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerListMod extends Shortcut {
   
   @JSImport("esri/widgets/LayerList", JSImport.Namespace)
   @js.native
-  val ^ : LayerListConstructor = js.native
+  val ^ : js.Object & LayerListConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/LayerList", JSImport.Namespace)
@@ -23,12 +22,14 @@ object layerListMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html)
     */
-  class Class () extends LayerList {
+  class Class ()
+    extends StObject
+       with LayerList {
     def this(properties: LayerListProperties) = this()
   }
   
-  type _To = LayerListConstructor
+  type _To = js.Object & LayerListConstructor
   
   /* This means you don't have to write `^`, but can instead just say `layerListMod.foo` */
-  override def _to: LayerListConstructor = ^
+  override def _to: js.Object & LayerListConstructor = ^
 }

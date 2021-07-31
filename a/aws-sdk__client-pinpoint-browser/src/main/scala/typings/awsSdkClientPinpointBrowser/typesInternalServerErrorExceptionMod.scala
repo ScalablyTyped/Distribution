@@ -73,15 +73,14 @@ import typings.awsSdkClientPinpointBrowser.updateSegmentExceptionsUnionMod.Updat
 import typings.awsSdkClientPinpointBrowser.updateSmsChannelExceptionsUnionMod.UpdateSmsChannelExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInternalServerErrorExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InternalServerErrorExceptionDetails> * / any */ @js.native
-  trait InternalServerErrorException
-    extends CreateAppExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InternalServerErrorExceptionDetails> * / any */ trait InternalServerErrorException
+    extends StObject
+       with CreateAppExceptionsUnion
        with CreateCampaignExceptionsUnion
        with CreateExportJobExceptionsUnion
        with CreateImportJobExceptionsUnion
@@ -153,15 +152,13 @@ object typesInternalServerErrorExceptionMod {
        with UpdateSegmentExceptionsUnion
        with UpdateSmsChannelExceptionsUnion {
     
-    var name: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.InternalServerErrorException = js.native
+    var name: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.InternalServerErrorException
   }
   object InternalServerErrorException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.InternalServerErrorException
-    ): InternalServerErrorException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InternalServerErrorException = {
+      val __obj = js.Dynamic.literal(name = "InternalServerErrorException")
       __obj.asInstanceOf[InternalServerErrorException]
     }
     
@@ -175,18 +172,17 @@ object typesInternalServerErrorExceptionMod {
     }
   }
   
-  @js.native
   trait InternalServerErrorExceptionDetails extends StObject {
     
     /**
       * The error message that's returned from the API.
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * The unique message body ID.
       */
-    var RequestID: js.UndefOr[String] = js.native
+    var RequestID: js.UndefOr[String] = js.undefined
   }
   object InternalServerErrorExceptionDetails {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SampleChannelDataResponse extends StObject {
   
   /**
     * The list of message samples. Each sample message is returned as a base64-encoded string.
     */
-  var payloads: js.UndefOr[MessagePayloads] = js.native
+  var payloads: js.UndefOr[MessagePayloads] = js.undefined
 }
 object SampleChannelDataResponse {
   

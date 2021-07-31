@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RampTitle extends Object {
+trait RampTitle
+  extends StObject
+     with Object {
   
   /**
     * The field name used in a visual variable of a renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
     */
-  var field: String = js.native
+  var field: String
   
   /**
     * If provided, the normalization field name used in a visual variable of a renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
     */
-  var normField: String = js.native
+  var normField: String
   
   /**
     * If `true`, the legend formats to display the field and normalization field as a ratio.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
     */
-  var ratio: Boolean = js.native
+  var ratio: Boolean
   
   /**
     * If `true`, the legend formats to display the field and normalization field as a percentage.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
     */
-  var ratioPercent: Boolean = js.native
+  var ratioPercent: Boolean
   
   /**
     * If `true`, the legend formats to display the field and normalization field as a percentage of total.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
     */
-  var ratioPercentTotal: Boolean = js.native
+  var ratioPercentTotal: Boolean
 }
 object RampTitle {
   

@@ -2,17 +2,15 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupsToOverride extends StObject {
   
-  var groupsToOverride: js.UndefOr[js.Array[String]] = js.native
+  var groupsToOverride: js.UndefOr[js.Array[String]] = js.undefined
   
-  var iamRolesToOverride: js.UndefOr[js.Array[String]] = js.native
+  var iamRolesToOverride: js.UndefOr[js.Array[String]] = js.undefined
   
-  var preferredRole: js.UndefOr[String] = js.native
+  var preferredRole: js.UndefOr[String] = js.undefined
 }
 object GroupsToOverride {
   

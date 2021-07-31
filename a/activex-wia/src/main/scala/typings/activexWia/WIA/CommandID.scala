@@ -7,7 +7,6 @@ import typings.activexWia.activexWiaStrings.`LeftcurlybracketAF933CAC-ACAD-11D2-
 import typings.activexWia.activexWiaStrings.`LeftcurlybracketE208C170-ACAD-11D2-A093-00C04F72DC3CRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** String versions of globally unique identifiers (GUIDs) that identify common Device and Item commands. */

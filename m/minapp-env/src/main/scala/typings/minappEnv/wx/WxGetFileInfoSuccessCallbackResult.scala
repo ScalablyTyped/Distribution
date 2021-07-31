@@ -2,17 +2,15 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WxGetFileInfoSuccessCallbackResult extends StObject {
   
   /** 按照传入的 digestAlgorithm 计算得出的的文件摘要 */
-  var digest: String = js.native
+  var digest: String
   
   /** 文件大小，以字节为单位 */
-  var size: Double = js.native
+  var size: Double
 }
 object WxGetFileInfoSuccessCallbackResult {
   

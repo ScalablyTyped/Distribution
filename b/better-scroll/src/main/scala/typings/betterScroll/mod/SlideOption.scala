@@ -3,25 +3,23 @@ package typings.betterScroll.mod
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlideOption extends StObject {
   
-  var el: Element = js.native
+  var el: Element
   
-  var listenFlick: Boolean = js.native
+  var listenFlick: Boolean
   
-  var loop: Boolean = js.native
+  var loop: Boolean
   
-  var speed: Double = js.native
+  var speed: Double
   
-  var stepX: Double = js.native
+  var stepX: Double
   
-  var stepY: Double = js.native
+  var stepY: Double
   
-  var threshold: Double = js.native
+  var threshold: Double
 }
 object SlideOption {
   

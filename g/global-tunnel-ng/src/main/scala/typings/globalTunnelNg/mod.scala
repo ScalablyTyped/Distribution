@@ -8,24 +8,23 @@ import typings.globalTunnelNg.globalTunnelNgStrings.httpsColon
 import typings.globalTunnelNg.globalTunnelNgStrings.neither
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("global-tunnel-ng", "end")
+  @JSImport("global-tunnel-ng", JSImport.Namespace)
   @js.native
-  def end(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("global-tunnel-ng", "initialize")
-  @js.native
-  def initialize(): Unit = js.native
-  @JSImport("global-tunnel-ng", "initialize")
-  @js.native
-  def initialize(options: String): Unit = js.native
-  @JSImport("global-tunnel-ng", "initialize")
-  @js.native
-  def initialize(options: Options): Unit = js.native
+  @scala.inline
+  def end(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("end")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
+  @scala.inline
+  def initialize(options: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def initialize(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("global-tunnel-ng", "isProxying")
   @js.native
@@ -39,24 +38,23 @@ object mod {
   @js.native
   val proxyUrl: String | Null = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var connect: js.UndefOr[neither | https | both] = js.native
+    var connect: js.UndefOr[neither | https | both] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var originHttpsOptions: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var originHttpsOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: js.UndefOr[httpColon | httpsColon] = js.native
+    var protocol: js.UndefOr[httpColon | httpsColon] = js.undefined
     
-    var proxyAuth: js.UndefOr[String] = js.native
+    var proxyAuth: js.UndefOr[String] = js.undefined
     
-    var proxyHttpsOptions: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var proxyHttpsOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var sockets: js.UndefOr[Double] = js.native
+    var sockets: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

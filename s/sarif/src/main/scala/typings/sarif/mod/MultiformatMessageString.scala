@@ -2,26 +2,24 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiformatMessageString extends StObject {
   
   /**
     * A Markdown message string or format string.
     */
-  var markdown: js.UndefOr[String] = js.native
+  var markdown: js.UndefOr[String] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the message.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * A plain text message string or format string.
     */
-  var text: String = js.native
+  var text: String
 }
 object MultiformatMessageString {
   

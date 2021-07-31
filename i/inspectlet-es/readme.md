@@ -12,7 +12,7 @@ ES module for Inspectlet.
 | Keywords           | inspectlet, session, replay, recording, heatmap, a/b, testing, analytics, error, logging, tracking, es, es6, module, npm, package |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 3628 |
+| # downloads        | 3949 |
 | # stars            | 0 |
 
 ## Links

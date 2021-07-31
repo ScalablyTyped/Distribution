@@ -6,23 +6,21 @@ import typings.mjmlReact.mjmlReactStrings.soft
 import typings.mjmlReact.mjmlReactStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mjml2HtmlOptions extends StObject {
   
-  var beautify: js.UndefOr[Boolean] = js.native
+  var beautify: js.UndefOr[Boolean] = js.undefined
   
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
-  var fonts: js.UndefOr[StringDictionary[String]] = js.native
+  var fonts: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var keepComments: js.UndefOr[Boolean] = js.native
+  var keepComments: js.UndefOr[Boolean] = js.undefined
   
-  var minify: js.UndefOr[Boolean] = js.native
+  var minify: js.UndefOr[Boolean] = js.undefined
   
-  var validationLevel: js.UndefOr[strict | soft | skip] = js.native
+  var validationLevel: js.UndefOr[strict | soft | skip] = js.undefined
 }
 object Mjml2HtmlOptions {
   

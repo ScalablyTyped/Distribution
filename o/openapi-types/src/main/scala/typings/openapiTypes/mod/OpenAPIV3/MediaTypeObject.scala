@@ -3,19 +3,17 @@ package typings.openapiTypes.mod.OpenAPIV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaTypeObject extends StObject {
   
-  var encoding: js.UndefOr[StringDictionary[EncodingObject]] = js.native
+  var encoding: js.UndefOr[StringDictionary[EncodingObject]] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.native
+  var example: js.UndefOr[js.Any] = js.undefined
   
-  var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.native
+  var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.undefined
   
-  var schema: js.UndefOr[ReferenceObject | SchemaObject] = js.native
+  var schema: js.UndefOr[ReferenceObject | SchemaObject] = js.undefined
 }
 object MediaTypeObject {
   

@@ -3,27 +3,25 @@ package typings.atlassianCrowdClient
 import typings.atlassianCrowdClient.anon.Password
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingsMod {
   
-  @js.native
   trait Settings extends StObject {
     
-    val application: Password = js.native
+    val application: Password
     
-    val attributesEncoder: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.native
+    val attributesEncoder: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.undefined
     
-    val attributesParser: js.UndefOr[js.Function1[/* json */ String, _]] = js.native
+    val attributesParser: js.UndefOr[js.Function1[/* json */ String, js.Any]] = js.undefined
     
-    val baseUrl: String = js.native
+    val baseUrl: String
     
-    val debug: js.UndefOr[Boolean] = js.native
+    val debug: js.UndefOr[Boolean] = js.undefined
     
-    val nesting: js.UndefOr[Boolean] = js.native
+    val nesting: js.UndefOr[Boolean] = js.undefined
     
-    val sessionTimeout: js.UndefOr[Double] = js.native
+    val sessionTimeout: js.UndefOr[Double] = js.undefined
   }
   object Settings {
     
@@ -46,7 +44,7 @@ object settingsMod {
       def setAttributesEncoderUndefined: Self = StObject.set(x, "attributesEncoder", js.undefined)
       
       @scala.inline
-      def setAttributesParser(value: /* json */ String => _): Self = StObject.set(x, "attributesParser", js.Any.fromFunction1(value))
+      def setAttributesParser(value: /* json */ String => js.Any): Self = StObject.set(x, "attributesParser", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAttributesParserUndefined: Self = StObject.set(x, "attributesParser", js.undefined)

@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateThemeAliasRequest extends StObject {
   
   /**
     * The name of the theme alias that you want to update.
     */
-  var AliasName: typings.awsSdk.quicksightMod.AliasName = js.native
+  var AliasName: typings.awsSdk.quicksightMod.AliasName
   
   /**
     * The ID of the AWS account that contains the theme alias that you're updating.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID for the theme.
     */
-  var ThemeId: RestrictiveResourceId = js.native
+  var ThemeId: RestrictiveResourceId
   
   /**
     * The version number of the theme that the alias should reference.
     */
-  var ThemeVersionNumber: VersionNumber = js.native
+  var ThemeVersionNumber: VersionNumber
 }
 object UpdateThemeAliasRequest {
   

@@ -7,17 +7,15 @@ import typings.typescript.mod.ParameterDeclaration
 import typings.typescript.mod.PropertyDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForwardRefs extends StObject {
   
-  var forwardRefs: Set[typings.typescript.mod.Identifier] = js.native
+  var forwardRefs: Set[typings.typescript.mod.Identifier]
   
-  var methodCalls: Set[CallExpression] = js.native
+  var methodCalls: Set[CallExpression]
   
-  var typedNodes: Set[ParameterDeclaration | AsExpression | PropertyDeclaration] = js.native
+  var typedNodes: Set[ParameterDeclaration | AsExpression | PropertyDeclaration]
 }
 object ForwardRefs {
   

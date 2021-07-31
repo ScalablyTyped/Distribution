@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientSourcerepo.gapi.client.sourcerepo
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectConfig extends StObject {
   
   /** Reject a Git push that contains a private key. */
-  var enablePrivateKeyCheck: js.UndefOr[Boolean] = js.native
+  var enablePrivateKeyCheck: js.UndefOr[Boolean] = js.undefined
   
   /** The name of the project. Values are of the form `projects/`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** How this project publishes a change in the repositories through Cloud Pub/Sub. Keyed by the topic names. */
   var pubsubConfigs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig}
-    */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.ProjectConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.ProjectConfig & TopLevel[js.Any]
+  ] = js.undefined
 }
 object ProjectConfig {
   
@@ -49,7 +47,7 @@ object ProjectConfig {
     def setPubsubConfigs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig}
-      */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.ProjectConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.ProjectConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "pubsubConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline

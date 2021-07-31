@@ -2,28 +2,26 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2RegisterUpdateValueSpec extends StObject {
   
   /**
     * The list of arguments to necessary to fulfill an update.
     */
-  var arguments: js.UndefOr[js.Array[GoogleActionsV2Argument]] = js.native
+  var arguments: js.UndefOr[js.Array[GoogleActionsV2Argument]] = js.undefined
   
   /**
     * The intent that the user wants to get updates from.
     */
-  var intent: js.UndefOr[String] = js.native
+  var intent: js.UndefOr[String] = js.undefined
   
   /**
     * The trigger context that defines how the update will be triggered.
     * This may modify the dialog in order to narrow down the user's preferences
     * for getting his or her updates.
     */
-  var triggerContext: js.UndefOr[GoogleActionsV2TriggerContext] = js.native
+  var triggerContext: js.UndefOr[GoogleActionsV2TriggerContext] = js.undefined
 }
 object GoogleActionsV2RegisterUpdateValueSpec {
   

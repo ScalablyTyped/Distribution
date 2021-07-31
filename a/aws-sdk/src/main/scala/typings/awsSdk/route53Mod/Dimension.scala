@@ -2,21 +2,19 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimension extends StObject {
   
   /**
     * For the metric that the CloudWatch alarm is associated with, the name of one dimension.
     */
-  var Name: DimensionField = js.native
+  var Name: DimensionField
   
   /**
     * For the metric that the CloudWatch alarm is associated with, the value of one dimension.
     */
-  var Value: DimensionField = js.native
+  var Value: DimensionField
 }
 object Dimension {
   

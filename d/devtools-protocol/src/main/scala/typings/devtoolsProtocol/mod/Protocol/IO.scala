@@ -3,18 +3,16 @@ package typings.devtoolsProtocol.mod.Protocol
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object IO {
   
-  @js.native
   trait CloseRequest extends StObject {
     
     /**
       * Handle of the stream to close.
       */
-    var handle: StreamHandle = js.native
+    var handle: StreamHandle
   }
   object CloseRequest {
     
@@ -32,24 +30,23 @@ object IO {
     }
   }
   
-  @js.native
   trait ReadRequest extends StObject {
     
     /**
       * Handle of the stream to read.
       */
-    var handle: StreamHandle = js.native
+    var handle: StreamHandle
     
     /**
       * Seek to the specified offset before reading (if not specificed, proceed with offset
       * following the last read). Some types of streams may only support sequential reads.
       */
-    var offset: js.UndefOr[integer] = js.native
+    var offset: js.UndefOr[integer] = js.undefined
     
     /**
       * Maximum number of bytes to read (left upon the agent discretion if not specified).
       */
-    var size: js.UndefOr[integer] = js.native
+    var size: js.UndefOr[integer] = js.undefined
   }
   object ReadRequest {
     
@@ -79,23 +76,22 @@ object IO {
     }
   }
   
-  @js.native
   trait ReadResponse extends StObject {
     
     /**
       * Set if the data is base64-encoded
       */
-    var base64Encoded: js.UndefOr[Boolean] = js.native
+    var base64Encoded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Data that were read.
       */
-    var data: String = js.native
+    var data: String
     
     /**
       * Set if the end-of-file condition occured while reading.
       */
-    var eof: Boolean = js.native
+    var eof: Boolean
   }
   object ReadResponse {
     
@@ -122,13 +118,12 @@ object IO {
     }
   }
   
-  @js.native
   trait ResolveBlobRequest extends StObject {
     
     /**
       * Object id of a Blob object wrapper.
       */
-    var objectId: RemoteObjectId = js.native
+    var objectId: RemoteObjectId
   }
   object ResolveBlobRequest {
     
@@ -146,13 +141,12 @@ object IO {
     }
   }
   
-  @js.native
   trait ResolveBlobResponse extends StObject {
     
     /**
       * UUID of the specified Blob.
       */
-    var uuid: String = js.native
+    var uuid: String
   }
   object ResolveBlobResponse {
     

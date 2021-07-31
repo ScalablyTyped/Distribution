@@ -2,19 +2,19 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A series of required clean up steps
   */
-@js.native
-trait TestScriptTeardown extends BackboneElement {
+trait TestScriptTeardown
+  extends StObject
+     with BackboneElement {
   
   /**
     * One or more teardown operations to perform
     */
-  var action: js.Array[TestScriptTeardownAction] = js.native
+  var action: js.Array[TestScriptTeardownAction]
 }
 object TestScriptTeardown {
   

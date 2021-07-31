@@ -2,31 +2,29 @@ package typings.awsSdk.cloudsearchdomainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadDocumentsResponse extends StObject {
   
   /**
     * The number of documents that were added to the search domain.
     */
-  var adds: js.UndefOr[Adds] = js.native
+  var adds: js.UndefOr[Adds] = js.undefined
   
   /**
     * The number of documents that were deleted from the search domain.
     */
-  var deletes: js.UndefOr[Deletes] = js.native
+  var deletes: js.UndefOr[Deletes] = js.undefined
   
   /**
     * The status of an UploadDocumentsRequest.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Any warnings returned by the document service about the documents being uploaded.
     */
-  var warnings: js.UndefOr[DocumentServiceWarnings] = js.native
+  var warnings: js.UndefOr[DocumentServiceWarnings] = js.undefined
 }
 object UploadDocumentsResponse {
   

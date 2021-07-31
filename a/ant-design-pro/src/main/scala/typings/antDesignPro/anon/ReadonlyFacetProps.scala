@@ -7,38 +7,36 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<bizcharts.bizcharts.FacetProps> */
-@js.native
 trait ReadonlyFacetProps extends StObject {
   
-  val autoSetAxis: js.UndefOr[Boolean] = js.native
+  val autoSetAxis: js.UndefOr[Boolean] = js.undefined
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
   
-  val colTitle: js.UndefOr[OffsetY] = js.native
+  val colTitle: js.UndefOr[OffsetY] = js.undefined
   
   val eachView: js.UndefOr[
     js.Function2[/* view */ js.UndefOr[js.Any], /* facet */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  val fields: js.UndefOr[String | js.Array[_]] = js.native
+  val fields: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  val key: js.UndefOr[typings.react.mod.Key] = js.native
+  val key: js.UndefOr[typings.react.mod.Key] = js.undefined
   
-  val margin: js.UndefOr[Double | js.Array[Double]] = js.native
+  val margin: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  val padding: js.UndefOr[Double | js.Array[Double]] = js.native
+  val padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  val ref: js.UndefOr[LegacyRef[_]] = js.native
+  val ref: js.UndefOr[LegacyRef[js.Any]] = js.undefined
   
-  val rowTitle: js.UndefOr[OffsetX] = js.native
+  val rowTitle: js.UndefOr[OffsetX] = js.undefined
   
-  val showTitle: js.UndefOr[Boolean] = js.native
+  val showTitle: js.UndefOr[Boolean] = js.undefined
   
-  val `type`: js.UndefOr[FacetType] = js.native
+  val `type`: js.UndefOr[FacetType] = js.undefined
 }
 object ReadonlyFacetProps {
   
@@ -76,7 +74,7 @@ object ReadonlyFacetProps {
     def setEachViewUndefined: Self = StObject.set(x, "eachView", js.undefined)
     
     @scala.inline
-    def setFields(value: String | js.Array[_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    def setFields(value: String | js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -109,10 +107,10 @@ object ReadonlyFacetProps {
     def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
     @scala.inline
-    def setRef(value: LegacyRef[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: LegacyRef[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)

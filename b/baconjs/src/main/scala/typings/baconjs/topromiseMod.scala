@@ -3,22 +3,21 @@ package typings.baconjs
 import typings.baconjs.observableMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topromiseMod {
   
-  @JSImport("baconjs/types/topromise", "firstToPromise")
+  @JSImport("baconjs/types/topromise", JSImport.Namespace)
   @js.native
-  def firstToPromise[V](src: default[V]): js.Promise[V] = js.native
-  @JSImport("baconjs/types/topromise", "firstToPromise")
-  @js.native
-  def firstToPromise[V](src: default[V], PromiseCtr: js.Function): js.Promise[V] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("baconjs/types/topromise", "toPromise")
-  @js.native
-  def toPromise[V](src: default[V]): js.Promise[V] = js.native
-  @JSImport("baconjs/types/topromise", "toPromise")
-  @js.native
-  def toPromise[V](src: default[V], PromiseCtr: js.Function): js.Promise[V] = js.native
+  @scala.inline
+  def firstToPromise[V](src: default[V]): js.Promise[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("firstToPromise")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[V]]
+  @scala.inline
+  def firstToPromise[V](src: default[V], PromiseCtr: js.Function): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("firstToPromise")(src.asInstanceOf[js.Any], PromiseCtr.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
+  
+  @scala.inline
+  def toPromise[V](src: default[V]): js.Promise[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPromise")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[V]]
+  @scala.inline
+  def toPromise[V](src: default[V], PromiseCtr: js.Function): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPromise")(src.asInstanceOf[js.Any], PromiseCtr.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
 }

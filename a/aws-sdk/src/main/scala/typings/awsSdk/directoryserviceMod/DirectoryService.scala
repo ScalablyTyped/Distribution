@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -83,7 +82,7 @@ trait DirectoryService extends Service {
   ): Request[CancelSchemaExtensionResult, AWSError] = js.native
   
   @JSName("config")
-  var config_DirectoryService: ConfigBase with ClientConfiguration = js.native
+  var config_DirectoryService: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates an AD Connector to connect to an on-premises directory. Before you call ConnectDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the ConnectDirectory operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.

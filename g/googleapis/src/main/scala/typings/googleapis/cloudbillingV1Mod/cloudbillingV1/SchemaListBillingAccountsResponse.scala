@@ -2,26 +2,24 @@ package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for `ListBillingAccounts`.
   */
-@js.native
 trait SchemaListBillingAccountsResponse extends StObject {
   
   /**
     * A list of billing accounts.
     */
-  var billingAccounts: js.UndefOr[js.Array[SchemaBillingAccount]] = js.native
+  var billingAccounts: js.UndefOr[js.Array[SchemaBillingAccount]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. To retrieve the next page,
     * call `ListBillingAccounts` again with the `page_token` field set to this
     * value. This field is empty if there are no more results to retrieve.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListBillingAccountsResponse {
   

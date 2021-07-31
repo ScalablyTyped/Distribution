@@ -2,31 +2,29 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagOptionDetail extends StObject {
   
   /**
     * The TagOption active state.
     */
-  var Active: js.UndefOr[TagOptionActive] = js.native
+  var Active: js.UndefOr[TagOptionActive] = js.undefined
   
   /**
     * The TagOption identifier.
     */
-  var Id: js.UndefOr[TagOptionId] = js.native
+  var Id: js.UndefOr[TagOptionId] = js.undefined
   
   /**
     * The TagOption key.
     */
-  var Key: js.UndefOr[TagOptionKey] = js.native
+  var Key: js.UndefOr[TagOptionKey] = js.undefined
   
   /**
     * The TagOption value.
     */
-  var Value: js.UndefOr[TagOptionValue] = js.native
+  var Value: js.UndefOr[TagOptionValue] = js.undefined
 }
 object TagOptionDetail {
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates Event Tracing for Windows (ETW) events that mark the start and end of a group of related events. */

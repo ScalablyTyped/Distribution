@@ -3,28 +3,27 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSQualifiedName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSQualifiedName_
-  extends TSEntityName
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSQualifiedName_
+  extends StObject
+     with BaseNode
+     with TSEntityName {
   
-  var left: TSEntityName = js.native
+  var left: TSEntityName
   
-  var right: Identifier_ = js.native
+  var right: Identifier_
   
   @JSName("type")
-  var type_TSQualifiedName_ : TSQualifiedName = js.native
+  var type_TSQualifiedName_ : TSQualifiedName
 }
 object TSQualifiedName_ {
   
   @scala.inline
-  def apply(left: TSEntityName, right: Identifier_, `type`: TSQualifiedName): TSQualifiedName_ = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(left: TSEntityName, right: Identifier_): TSQualifiedName_ = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSQualifiedName")
     __obj.asInstanceOf[TSQualifiedName_]
   }
   

@@ -2,21 +2,19 @@ package typings.easyXHeaders.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Actual extends StObject {
   
-  var actual: js.UndefOr[js.Any] = js.native
+  var actual: js.UndefOr[js.Any] = js.undefined
   
-  var expected: js.UndefOr[js.Any] = js.native
+  var expected: js.UndefOr[js.Any] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
-  var stackStartFunction: js.UndefOr[js.Function] = js.native
+  var stackStartFunction: js.UndefOr[js.Function] = js.undefined
 }
 object Actual {
   

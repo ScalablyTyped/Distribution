@@ -2,31 +2,29 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotErrorMessage extends StObject {
   
   /**
     * The failure code for the error.
     */
-  var FailureCode: js.UndefOr[String] = js.native
+  var FailureCode: js.UndefOr[String] = js.undefined
   
   /**
     * The text message describing the error.
     */
-  var FailureReason: js.UndefOr[String] = js.native
+  var FailureReason: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for the cluster.
     */
-  var SnapshotClusterIdentifier: js.UndefOr[String] = js.native
+  var SnapshotClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for the snapshot returning the error.
     */
-  var SnapshotIdentifier: js.UndefOr[String] = js.native
+  var SnapshotIdentifier: js.UndefOr[String] = js.undefined
 }
 object SnapshotErrorMessage {
   

@@ -2,43 +2,41 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A location on a map when the Earth's surface is projected onto a
   * two-dimensional surface.
   */
-@js.native
 trait MapPoint extends StObject {
   
   /**
     * Returns a copy of a map point.
     */
-  def copy(): MapPoint = js.native
+  def copy(): MapPoint
   
   /**
     * Indicates whether two map points are equal.
     *
     * @param anotherPoint A map point to use for comparison.
     */
-  def equals(anotherPoint: MapPoint): Boolean = js.native
+  def equals(anotherPoint: MapPoint): Boolean
   
   /**
     * Returns a coordinate containing the latitude and longitude corresponding
     * to a map point.
     */
-  def toCoordinate(): Coordinate = js.native
+  def toCoordinate(): Coordinate
   
   /**
     * The location of the point along the x-axis of the map.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The location of the point along the y-axis of the map.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object MapPoint {
   

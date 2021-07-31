@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WatchCreativeRequest extends StObject {
   
   /**
     * The Pub/Sub topic to publish notifications to. This topic must already exist and must give permission to ad-exchange-buyside-reports@google.com to write to the topic. This should be
     * the full resource name in "projects/{project_id}/topics/{topic_id}" format.
     */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object WatchCreativeRequest {
   

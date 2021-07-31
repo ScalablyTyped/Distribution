@@ -2,20 +2,18 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Vacation auto-reply settings for an account. These settings correspond to
   * the &quot;Vacation responder&quot; feature in the web interface.
   */
-@js.native
 trait SchemaVacationSettings extends StObject {
   
   /**
     * Flag that controls whether Gmail automatically replies to messages.
     */
-  var enableAutoReply: js.UndefOr[Boolean] = js.native
+  var enableAutoReply: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional end time for sending auto-replies (epoch ms). When this is
@@ -23,38 +21,38 @@ trait SchemaVacationSettings extends StObject {
     * receives before the end time. If both startTime and endTime are
     * specified, startTime must precede endTime.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Response body in HTML format. Gmail will sanitize the HTML before storing
     * it.
     */
-  var responseBodyHtml: js.UndefOr[String] = js.native
+  var responseBodyHtml: js.UndefOr[String] = js.undefined
   
   /**
     * Response body in plain text format.
     */
-  var responseBodyPlainText: js.UndefOr[String] = js.native
+  var responseBodyPlainText: js.UndefOr[String] = js.undefined
   
   /**
     * Optional text to prepend to the subject line in vacation responses. In
     * order to enable auto-replies, either the response subject or the response
     * body must be nonempty.
     */
-  var responseSubject: js.UndefOr[String] = js.native
+  var responseSubject: js.UndefOr[String] = js.undefined
   
   /**
     * Flag that determines whether responses are sent to recipients who are not
     * in the user&#39;s list of contacts.
     */
-  var restrictToContacts: js.UndefOr[Boolean] = js.native
+  var restrictToContacts: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Flag that determines whether responses are sent to recipients who are
     * outside of the user&#39;s domain. This feature is only available for G
     * Suite users.
     */
-  var restrictToDomain: js.UndefOr[Boolean] = js.native
+  var restrictToDomain: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional start time for sending auto-replies (epoch ms). When this is
@@ -62,7 +60,7 @@ trait SchemaVacationSettings extends StObject {
     * receives after the start time. If both startTime and endTime are
     * specified, startTime must precede endTime.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaVacationSettings {
   

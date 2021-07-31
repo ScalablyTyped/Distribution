@@ -7,7 +7,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object footerMod extends Shortcut {
@@ -16,16 +15,15 @@ object footerMod extends Shortcut {
   @js.native
   val default: FC[FooterProps] = js.native
   
-  @js.native
   trait FooterProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var copyright: js.UndefOr[WithFalse[String]] = js.native
+    var copyright: js.UndefOr[WithFalse[String]] = js.undefined
     
-    var links: js.UndefOr[WithFalse[js.Array[BlankTarget]]] = js.native
+    var links: js.UndefOr[WithFalse[js.Array[BlankTarget]]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object FooterProps {
     

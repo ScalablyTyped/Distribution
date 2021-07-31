@@ -2,7 +2,6 @@ package typings.utilPromisify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -65,7 +64,6 @@ object anon {
       ] = js.native
   }
   
-  @js.native
   trait Typeofpromisify extends StObject {
     
     /**
@@ -76,7 +74,7 @@ object anon {
       */
     val customPromisifyArgs: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof polyfill.customPromisifyArgs */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object Typeofpromisify {
     

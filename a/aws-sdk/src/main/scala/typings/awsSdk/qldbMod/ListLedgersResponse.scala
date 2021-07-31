@@ -2,21 +2,19 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLedgersResponse extends StObject {
   
   /**
     * The array of ledger summaries that are associated with the current AWS account and Region.
     */
-  var Ledgers: js.UndefOr[LedgerList] = js.native
+  var Ledgers: js.UndefOr[LedgerList] = js.undefined
   
   /**
     * A pagination token, indicating whether there are more results available:   If NextToken is empty, then the last page of results has been processed and there are no more results to be retrieved.   If NextToken is not empty, then there are more results available. To retrieve the next page of results, use the value of NextToken in a subsequent ListLedgers call.  
     */
-  var NextToken: js.UndefOr[typings.awsSdk.qldbMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.qldbMod.NextToken] = js.undefined
 }
 object ListLedgersResponse {
   

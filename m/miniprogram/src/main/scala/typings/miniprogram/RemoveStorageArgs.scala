@@ -2,13 +2,13 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RemoveStorageArgs extends AsyncCallback[Unit] {
+trait RemoveStorageArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
-  var key: String = js.native
+  var key: String
 }
 object RemoveStorageArgs {
   

@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBeaconsDecommission extends StandardParameters {
+trait ParamsResourceBeaconsDecommission
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Beacon that should be decommissioned. A beacon name has the format
@@ -25,14 +25,14 @@ trait ParamsResourceBeaconsDecommission extends StandardParameters {
     * AltBeacon. For Eddystone-EID beacons, you may use either the current EID
     * of the beacon's "stable" UID. Required.
     */
-  var beaconName: js.UndefOr[String] = js.native
+  var beaconName: js.UndefOr[String] = js.undefined
   
   /**
     * The project id of the beacon to decommission. If the project id is not
     * specified then the project making the request is used. The project id
     * must match the project that owns the beacon. Optional.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceBeaconsDecommission {
   

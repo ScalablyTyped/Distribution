@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGrokClassifierRequest extends StObject {
   
   /**
     * An identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, Amazon CloudWatch Logs, and so on.
     */
-  var Classification: typings.awsSdk.glueMod.Classification = js.native
+  var Classification: typings.awsSdk.glueMod.Classification
   
   /**
     * Optional custom grok patterns used by this classifier.
     */
-  var CustomPatterns: js.UndefOr[typings.awsSdk.glueMod.CustomPatterns] = js.native
+  var CustomPatterns: js.UndefOr[typings.awsSdk.glueMod.CustomPatterns] = js.undefined
   
   /**
     * The grok pattern used by this classifier.
     */
-  var GrokPattern: typings.awsSdk.glueMod.GrokPattern = js.native
+  var GrokPattern: typings.awsSdk.glueMod.GrokPattern
   
   /**
     * The name of the new classifier.
     */
-  var Name: NameString = js.native
+  var Name: NameString
 }
 object CreateGrokClassifierRequest {
   

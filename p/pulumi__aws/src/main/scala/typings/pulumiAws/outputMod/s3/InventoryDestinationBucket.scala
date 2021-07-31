@@ -2,36 +2,34 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryDestinationBucket extends StObject {
   
   /**
     * The ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon S3 bucket ARN of the destination.
     */
-  var bucketArn: String = js.native
+  var bucketArn: String
   
   /**
     * Contains the type of server-side encryption to use to encrypt the inventory (documented below).
     */
-  var encryption: js.UndefOr[InventoryDestinationBucketEncryption] = js.native
+  var encryption: js.UndefOr[InventoryDestinationBucketEncryption] = js.undefined
   
   /**
     * Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/) or [`Parquet`](https://parquet.apache.org/).
     */
-  var format: String = js.native
+  var format: String
   
   /**
     * The prefix that is prepended to all inventory results.
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
 }
 object InventoryDestinationBucket {
   

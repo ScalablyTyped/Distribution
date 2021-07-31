@@ -12,7 +12,7 @@ ASCII cats all up in your node.js
 | Keywords           | cats, ascii, art |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 365 |
+| # downloads        | 496 |
 | # stars            | 0 |
 
 ## Links

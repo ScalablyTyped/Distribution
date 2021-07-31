@@ -4,36 +4,34 @@ import typings.serverless.anon.Prompt
 import typings.serverless.serverlessStrings.cognito
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CognitoAuthorizer extends StObject {
   
-  var allowUnauthenticated: js.UndefOr[Boolean] = js.native
+  var allowUnauthenticated: js.UndefOr[Boolean] = js.undefined
   
-  var requestExtraParams: js.UndefOr[Prompt] = js.native
+  var requestExtraParams: js.UndefOr[Prompt] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var sessionCookieName: js.UndefOr[String] = js.native
+  var sessionCookieName: js.UndefOr[String] = js.undefined
   
-  var sessionTimeout: js.UndefOr[Double | String] = js.native
+  var sessionTimeout: js.UndefOr[Double | String] = js.undefined
   
-  var `type`: cognito = js.native
+  var `type`: cognito
   
-  var userPoolArn: String = js.native
+  var userPoolArn: String
   
-  var userPoolClientId: String = js.native
+  var userPoolClientId: String
   
-  var userPoolDomain: String = js.native
+  var userPoolDomain: String
 }
 object CognitoAuthorizer {
   
   @scala.inline
-  def apply(`type`: cognito, userPoolArn: String, userPoolClientId: String, userPoolDomain: String): CognitoAuthorizer = {
+  def apply(userPoolArn: String, userPoolClientId: String, userPoolDomain: String): CognitoAuthorizer = {
     val __obj = js.Dynamic.literal(userPoolArn = userPoolArn.asInstanceOf[js.Any], userPoolClientId = userPoolClientId.asInstanceOf[js.Any], userPoolDomain = userPoolDomain.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("cognito")
     __obj.asInstanceOf[CognitoAuthorizer]
   }
   

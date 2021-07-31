@@ -10,35 +10,35 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.open
 import typings.elasticElasticsearch.elasticElasticsearchStrings.shards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesStats extends Generic {
+trait IndicesStats
+  extends StObject
+     with Generic {
   
-  var completion_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var completion_fields: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var fielddata_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var fielddata_fields: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var fields: js.UndefOr[String | js.Array[String]] = js.native
+  var fields: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var forbid_closed_indices: js.UndefOr[Boolean] = js.native
+  var forbid_closed_indices: js.UndefOr[Boolean] = js.undefined
   
-  var groups: js.UndefOr[String | js.Array[String]] = js.native
+  var groups: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var include_segment_file_sizes: js.UndefOr[Boolean] = js.native
+  var include_segment_file_sizes: js.UndefOr[Boolean] = js.undefined
   
-  var include_unloaded_segments: js.UndefOr[Boolean] = js.native
+  var include_unloaded_segments: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var level: js.UndefOr[cluster | indices | shards] = js.native
+  var level: js.UndefOr[cluster | indices | shards] = js.undefined
   
-  var metric: js.UndefOr[String | js.Array[String]] = js.native
+  var metric: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var types: js.UndefOr[String | js.Array[String]] = js.native
+  var types: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object IndicesStats {
   

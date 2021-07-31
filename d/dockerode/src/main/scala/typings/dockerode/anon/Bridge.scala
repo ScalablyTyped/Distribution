@@ -3,49 +3,47 @@ package typings.dockerode.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bridge extends StObject {
   
-  var Bridge: String = js.native
+  var Bridge: String
   
-  var EndpointID: String = js.native
+  var EndpointID: String
   
-  var Gateway: String = js.native
+  var Gateway: String
   
-  var GlobalIPv6Address: String = js.native
+  var GlobalIPv6Address: String
   
-  var GlobalIPv6PrefixLen: Double = js.native
+  var GlobalIPv6PrefixLen: Double
   
-  var HairpinMode: Boolean = js.native
+  var HairpinMode: Boolean
   
-  var IPAddress: String = js.native
+  var IPAddress: String
   
-  var IPPrefixLen: Double = js.native
+  var IPPrefixLen: Double
   
-  var IPv6Gateway: String = js.native
+  var IPv6Gateway: String
   
-  var LinkLocalIPv6Address: String = js.native
+  var LinkLocalIPv6Address: String
   
-  var LinkLocalIPv6PrefixLen: Double = js.native
+  var LinkLocalIPv6PrefixLen: Double
   
-  var MacAddress: String = js.native
+  var MacAddress: String
   
-  var Networks: StringDictionary[Aliases] = js.native
+  var Networks: StringDictionary[Aliases]
   
-  var Node: js.UndefOr[Addr] = js.native
+  var Node: js.UndefOr[Addr] = js.undefined
   
-  var Ports: StringDictionary[js.Array[HostIp]] = js.native
+  var Ports: StringDictionary[js.Array[HostIp]]
   
-  var SandboxID: String = js.native
+  var SandboxID: String
   
-  var SandboxKey: String = js.native
+  var SandboxKey: String
   
-  var SecondaryIPAddresses: js.UndefOr[js.Any] = js.native
+  var SecondaryIPAddresses: js.UndefOr[js.Any] = js.undefined
   
-  var SecondaryIPv6Addresses: js.UndefOr[js.Any] = js.native
+  var SecondaryIPv6Addresses: js.UndefOr[js.Any] = js.undefined
 }
 object Bridge {
   

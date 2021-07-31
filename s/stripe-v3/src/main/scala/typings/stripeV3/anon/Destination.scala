@@ -2,17 +2,15 @@ package typings.stripeV3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destination extends StObject {
   
   /**
     * The account (if any) the payment will be attributed to for tax reporting,
     * and where funds from the payment will be transferred to upon payment success.
     */
-  var destination: String = js.native
+  var destination: String
 }
 object Destination {
   

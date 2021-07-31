@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCDtlsParameters extends StObject {
   
-  var fingerprints: js.UndefOr[js.Array[RTCDtlsFingerprint]] = js.native
+  var fingerprints: js.UndefOr[js.Array[RTCDtlsFingerprint]] = js.undefined
   
-  var role: js.UndefOr[RTCDtlsRole] = js.native
+  var role: js.UndefOr[RTCDtlsRole] = js.undefined
 }
 object RTCDtlsParameters {
   

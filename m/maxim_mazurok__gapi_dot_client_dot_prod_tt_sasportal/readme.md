@@ -10,9 +10,9 @@ TypeScript typings for SAS Portal API (Testing) v1alpha1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.prod_tt_sasportal |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 53 |
 | # dependents       | 1 |
-| # downloads        | 122 |
+| # downloads        | 3640 |
 | # stars            | 0 |
 
 ## Links

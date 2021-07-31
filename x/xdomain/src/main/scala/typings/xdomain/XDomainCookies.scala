@@ -2,15 +2,13 @@ package typings.xdomain
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XDomainCookies extends StObject {
   
-  var master: String = js.native
+  var master: String
   
-  var slave: String = js.native
+  var slave: String
 }
 object XDomainCookies {
   

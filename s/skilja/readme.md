@@ -10,9 +10,9 @@ Array chunker for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | skilja |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 0 |
+| # downloads        | 278 |
 | # stars            | 0 |
 
 ## Links

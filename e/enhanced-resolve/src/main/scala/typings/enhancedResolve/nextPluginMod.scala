@@ -2,26 +2,36 @@ package typings.enhancedResolve
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nextPluginMod {
   
   @JSImport("enhanced-resolve/lib/NextPlugin", JSImport.Namespace)
   @js.native
-  class ^ protected () extends NextPlugin {
+  class ^ protected ()
+    extends StObject
+       with NextPlugin {
     def this(source: String, target: String) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    
+    /* CompleteClass */
+    var source: String = js.native
+    
+    /* CompleteClass */
+    var target: String = js.native
   }
   
-  @js.native
   trait NextPlugin extends StObject {
     
     @JSName("apply")
-    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit
     
-    var source: String = js.native
+    var source: String
     
-    var target: String = js.native
+    var target: String
   }
   object NextPlugin {
     

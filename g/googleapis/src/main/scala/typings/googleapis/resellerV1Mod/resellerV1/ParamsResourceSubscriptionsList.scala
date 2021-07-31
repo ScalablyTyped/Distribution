@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSubscriptionsList extends StandardParameters {
+trait ParamsResourceSubscriptionsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The customerAuthToken query string is required when creating a resold
@@ -25,7 +25,7 @@ trait ParamsResourceSubscriptionsList extends StandardParameters {
     * subscription transfer. For more information, see the administrator help
     * center.
     */
-  var customerAuthToken: js.UndefOr[String] = js.native
+  var customerAuthToken: js.UndefOr[String] = js.undefined
   
   /**
     * Either the customer's primary domain name or the customer's unique
@@ -33,7 +33,7 @@ trait ParamsResourceSubscriptionsList extends StandardParameters {
     * customerId as a key for persistent data. If the domain name for a
     * customerId is changed, the Google system automatically updates.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * When retrieving all of your subscriptions and filtering for specific
@@ -44,19 +44,19 @@ trait ParamsResourceSubscriptionsList extends StandardParameters {
     * similar to using a regular expression's asterisk, exa*.  - example --
     * Returns example20.com and example.com.
     */
-  var customerNamePrefix: js.UndefOr[String] = js.native
+  var customerNamePrefix: js.UndefOr[String] = js.undefined
   
   /**
     * When retrieving a large list, the maxResults is the maximum number of
     * results per page. The nextPageToken value takes you to the next page. The
     * default is 20.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Token to specify next page in the list
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSubscriptionsList {
   

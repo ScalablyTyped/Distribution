@@ -2,15 +2,13 @@ package typings.fundamentalReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Next extends StObject {
   
-  var next: String = js.native
+  var next: String
   
-  var previous: String = js.native
+  var previous: String
 }
 object Next {
   

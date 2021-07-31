@@ -2,17 +2,15 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleUrl extends StObject {
   
-  var moduleUrl: js.UndefOr[String] = js.native
+  var moduleUrl: js.UndefOr[String] = js.undefined
   
-  var styleUrls: js.UndefOr[js.Array[String]] = js.native
+  var styleUrls: js.UndefOr[js.Array[String]] = js.undefined
   
-  var styles: js.UndefOr[js.Array[String]] = js.native
+  var styles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ModuleUrl {
   

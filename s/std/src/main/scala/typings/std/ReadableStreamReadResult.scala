@@ -1,10 +1,7 @@
 package typings.std
 
-import typings.std.stdBooleans.`false`
-import typings.std.stdBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -15,14 +12,14 @@ trait ReadableStreamReadResult[T] extends StObject
 object ReadableStreamReadResult {
   
   @scala.inline
-  def ReadableStreamReadDoneResult[T](done: `true`): typings.std.ReadableStreamReadDoneResult[T] = {
-    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
+  def ReadableStreamReadDoneResult[T](): typings.std.ReadableStreamReadDoneResult[T] = {
+    val __obj = js.Dynamic.literal(done = true)
     __obj.asInstanceOf[typings.std.ReadableStreamReadDoneResult[T]]
   }
   
   @scala.inline
-  def ReadableStreamReadValueResult[T](done: `false`, value: T): typings.std.ReadableStreamReadValueResult[T] = {
-    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def ReadableStreamReadValueResult[T](value: T): typings.std.ReadableStreamReadValueResult[T] = {
+    val __obj = js.Dynamic.literal(done = false, value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.std.ReadableStreamReadValueResult[T]]
   }
 }

@@ -9,7 +9,6 @@ import typings.angular.mod.IScope
 import typings.angular.mod.ITranscludeFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,39 +16,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * see http://docs.angular-formly.com/docs/custom-templates#section-formlyconfig-settype-options
   */
-@js.native
 trait ITypeOptions extends StObject {
   
-  var apiCheck: js.UndefOr[StringDictionary[js.Function]] = js.native
+  var apiCheck: js.UndefOr[StringDictionary[js.Function]] = js.undefined
   
-  var apiCheckFunction: js.UndefOr[String] = js.native
+  var apiCheckFunction: js.UndefOr[String] = js.undefined
   
   //'throw' or 'warn
-  var apiCheckInstance: js.UndefOr[js.Any] = js.native
+  var apiCheckInstance: js.UndefOr[js.Any] = js.undefined
   
-  var apiCheckOptions: js.UndefOr[js.Object] = js.native
+  var apiCheckOptions: js.UndefOr[js.Object] = js.undefined
   
-  var controller: js.UndefOr[js.Function | String | js.Array[_]] = js.native
+  var controller: js.UndefOr[js.Function | String | js.Array[js.Any]] = js.undefined
   
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var defaultOptions: js.UndefOr[IFieldConfigurationObject | js.Function] = js.native
+  var defaultOptions: js.UndefOr[IFieldConfigurationObject | js.Function] = js.undefined
   
-  var `extends`: js.UndefOr[String] = js.native
+  var `extends`: js.UndefOr[String] = js.undefined
   
-  var link: js.UndefOr[IDirectiveLinkFn[IScope, JQLite, IAttributes, IController]] = js.native
+  var link: js.UndefOr[IDirectiveLinkFn[IScope, JQLite, IAttributes, IController]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var overwriteOk: js.UndefOr[Boolean] = js.native
+  var overwriteOk: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[js.Function | String] = js.native
+  var template: js.UndefOr[js.Function | String] = js.undefined
   
-  var templateUrl: js.UndefOr[js.Function | String] = js.native
+  var templateUrl: js.UndefOr[js.Function | String] = js.undefined
   
-  var validateOptions: js.UndefOr[js.Function] = js.native
+  var validateOptions: js.UndefOr[js.Function] = js.undefined
   
-  var wrapper: js.UndefOr[String | js.Array[String]] = js.native
+  var wrapper: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object ITypeOptions {
   
@@ -87,7 +85,7 @@ object ITypeOptions {
     def setApiCheckUndefined: Self = StObject.set(x, "apiCheck", js.undefined)
     
     @scala.inline
-    def setController(value: js.Function | String | js.Array[_]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    def setController(value: js.Function | String | js.Array[js.Any]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)

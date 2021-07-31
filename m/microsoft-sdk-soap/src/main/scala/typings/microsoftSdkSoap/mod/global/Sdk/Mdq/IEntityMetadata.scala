@@ -6,129 +6,127 @@ import typings.microsoftSdkSoap.microsoftSdkSoapStrings.`None    OrganizationOwn
 import typings.microsoftSdkSoap.microsoftSdkSoapStrings.`TeamOwned    UserOwned`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEntityMetadata extends StObject {
   
-  var ActivityTypeMask: Double = js.native
+  var ActivityTypeMask: Double
   
-  var Attributes: js.Array[IAttributeMetadata] = js.native
+  var Attributes: js.Array[IAttributeMetadata]
   
-  var AutoCreateAccessTeams: js.Any = js.native
+  var AutoCreateAccessTeams: js.Any
   
-  var AutoRouteToOwnerQueue: Boolean = js.native
+  var AutoRouteToOwnerQueue: Boolean
   
-  var CanBeInManyToMany: ManagedProperty[Boolean] = js.native
+  var CanBeInManyToMany: ManagedProperty[Boolean]
   
-  var CanBePrimaryEntityInRelationship: ManagedProperty[Boolean] = js.native
+  var CanBePrimaryEntityInRelationship: ManagedProperty[Boolean]
   
-  var CanBeRelatedEntityInRelationship: ManagedProperty[Boolean] = js.native
+  var CanBeRelatedEntityInRelationship: ManagedProperty[Boolean]
   
-  var CanCreateAttributes: ManagedProperty[Boolean] = js.native
+  var CanCreateAttributes: ManagedProperty[Boolean]
   
-  var CanCreateCharts: ManagedProperty[Boolean] = js.native
+  var CanCreateCharts: ManagedProperty[Boolean]
   
-  var CanCreateForms: ManagedProperty[Boolean] = js.native
+  var CanCreateForms: ManagedProperty[Boolean]
   
-  var CanCreateViews: ManagedProperty[Boolean] = js.native
+  var CanCreateViews: ManagedProperty[Boolean]
   
-  var CanModifyAdditionalSettings: ManagedProperty[Boolean] = js.native
+  var CanModifyAdditionalSettings: ManagedProperty[Boolean]
   
-  var CanTriggerWorkflow: Boolean = js.native
+  var CanTriggerWorkflow: Boolean
   
-  var Description: Label = js.native
+  var Description: Label
   
-  var DisplayCollectionName: Label = js.native
+  var DisplayCollectionName: Label
   
-  var DisplayName: Label = js.native
+  var DisplayName: Label
   
-  var IconLargeName: String = js.native
+  var IconLargeName: String
   
-  var IconMediumName: String = js.native
+  var IconMediumName: String
   
-  var IconSmallName: String = js.native
+  var IconSmallName: String
   
-  var IntroducedVersion: js.Any = js.native
+  var IntroducedVersion: js.Any
   
-  var IsAIRUpdated: Boolean = js.native
+  var IsAIRUpdated: Boolean
   
-  var IsActivity: Boolean = js.native
+  var IsActivity: Boolean
   
-  var IsActivityParty: Boolean = js.native
+  var IsActivityParty: Boolean
   
-  var IsAuditEnabled: ManagedProperty[Boolean] = js.native
+  var IsAuditEnabled: ManagedProperty[Boolean]
   
-  var IsAvailableOffline: Boolean = js.native
+  var IsAvailableOffline: Boolean
   
-  var IsBusinessProcessEnabled: Boolean = js.native
+  var IsBusinessProcessEnabled: Boolean
   
-  var IsChildEntity: Boolean = js.native
+  var IsChildEntity: Boolean
   
-  var IsConnectionsEnabled: ManagedProperty[Boolean] = js.native
+  var IsConnectionsEnabled: ManagedProperty[Boolean]
   
-  var IsCustomEntity: Boolean = js.native
+  var IsCustomEntity: Boolean
   
-  var IsCustomizable: ManagedProperty[Boolean] = js.native
+  var IsCustomizable: ManagedProperty[Boolean]
   
-  var IsDocumentManagementEnabled: Boolean = js.native
+  var IsDocumentManagementEnabled: Boolean
   
-  var IsDuplicateDetectionEnabled: ManagedProperty[Boolean] = js.native
+  var IsDuplicateDetectionEnabled: ManagedProperty[Boolean]
   
-  var IsEnabledForCharts: Boolean = js.native
+  var IsEnabledForCharts: Boolean
   
-  var IsImportable: Boolean = js.native
+  var IsImportable: Boolean
   
-  var IsIntersect: Boolean = js.native
+  var IsIntersect: Boolean
   
-  var IsMailMergeEnabled: ManagedProperty[Boolean] = js.native
+  var IsMailMergeEnabled: ManagedProperty[Boolean]
   
-  var IsManaged: Boolean = js.native
+  var IsManaged: Boolean
   
-  var IsMappable: ManagedProperty[Boolean] = js.native
+  var IsMappable: ManagedProperty[Boolean]
   
-  var IsQuickCreateEnabled: Boolean = js.native
+  var IsQuickCreateEnabled: Boolean
   
-  var IsReadingPaneEnabled: Boolean = js.native
+  var IsReadingPaneEnabled: Boolean
   
-  var IsRenameable: Boolean = js.native
+  var IsRenameable: Boolean
   
-  var IsValidForAdvancedFind: Boolean = js.native
+  var IsValidForAdvancedFind: Boolean
   
-  var IsValidForQueue: ManagedProperty[Boolean] = js.native
+  var IsValidForQueue: ManagedProperty[Boolean]
   
-  var IsVisibleInMobile: ManagedProperty[Boolean] = js.native
+  var IsVisibleInMobile: ManagedProperty[Boolean]
   
-  var IsVisibleInMobileClient: Boolean = js.native
+  var IsVisibleInMobileClient: Boolean
   
-  var LogicalName: String = js.native
+  var LogicalName: String
   
-  var ManyToManyRelationships: ManyToManyRelationshipMetadata = js.native
+  var ManyToManyRelationships: ManyToManyRelationshipMetadata
   
-  var ManyToOneRelationships: OneToManyRelationshipMetadata = js.native
+  var ManyToOneRelationships: OneToManyRelationshipMetadata
   
-  var MetadataId: String = js.native
+  var MetadataId: String
   
-  var ObjectTypeCode: Double = js.native
+  var ObjectTypeCode: Double
   
-  var OneToManyRelationships: OneToManyRelationshipMetadata = js.native
+  var OneToManyRelationships: OneToManyRelationshipMetadata
   
-  var OwnershipType: BusinessOwned | BusinessParented | (`None    OrganizationOwned`) | (`TeamOwned    UserOwned`) = js.native
+  var OwnershipType: BusinessOwned | BusinessParented | (`None    OrganizationOwned`) | (`TeamOwned    UserOwned`)
   
-  var PrimaryIdAttribute: String = js.native
+  var PrimaryIdAttribute: String
   
-  var PrimaryImageAttribute: String = js.native
+  var PrimaryImageAttribute: String
   
-  var PrimaryNameAttribute: String = js.native
+  var PrimaryNameAttribute: String
   
-  var Privileges: js.Array[SecurityPrivilegeMetadata] = js.native
+  var Privileges: js.Array[SecurityPrivilegeMetadata]
   
-  var RecurrenceBaseEntityLogicalName: String = js.native
+  var RecurrenceBaseEntityLogicalName: String
   
-  var ReportViewName: String = js.native
+  var ReportViewName: String
   
-  var SchemaName: String = js.native
+  var SchemaName: String
 }
 object IEntityMetadata {
   

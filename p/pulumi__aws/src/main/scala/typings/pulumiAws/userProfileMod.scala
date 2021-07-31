@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userProfileMod {
@@ -48,6 +47,10 @@ object userProfileMod {
   /* static members */
   object UserProfile {
     
+    @JSImport("@pulumi/aws/opsworks/userProfile", "UserProfile")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UserProfile resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,50 +60,44 @@ object userProfileMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/opsworks/userProfile", "UserProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID]): UserProfile = js.native
-    @JSImport("@pulumi/aws/opsworks/userProfile", "UserProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UserProfile = js.native
-    @JSImport("@pulumi/aws/opsworks/userProfile", "UserProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserProfileState): UserProfile = js.native
-    @JSImport("@pulumi/aws/opsworks/userProfile", "UserProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserProfileState, opts: CustomResourceOptions): UserProfile = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserProfileState): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserProfileState, opts: CustomResourceOptions): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
     
     /**
       * Returns true if the given object is an instance of UserProfile.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/opsworks/userProfile", "UserProfile.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/userProfile.UserProfile */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/userProfile.UserProfile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/userProfile.UserProfile */ Boolean]
   }
   
-  @js.native
   trait UserProfileArgs extends StObject {
     
     /**
       * Whether users can specify their own SSH public key through the My Settings page
       */
-    val allowSelfManagement: js.UndefOr[Input[Boolean]] = js.native
+    val allowSelfManagement: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The users public key
       */
-    val sshPublicKey: js.UndefOr[Input[String]] = js.native
+    val sshPublicKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ssh username, with witch this user wants to log in
       */
-    val sshUsername: Input[String] = js.native
+    val sshUsername: Input[String]
     
     /**
       * The user's IAM ARN
       */
-    val userArn: Input[String] = js.native
+    val userArn: Input[String]
   }
   object UserProfileArgs {
     
@@ -133,28 +130,27 @@ object userProfileMod {
     }
   }
   
-  @js.native
   trait UserProfileState extends StObject {
     
     /**
       * Whether users can specify their own SSH public key through the My Settings page
       */
-    val allowSelfManagement: js.UndefOr[Input[Boolean]] = js.native
+    val allowSelfManagement: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The users public key
       */
-    val sshPublicKey: js.UndefOr[Input[String]] = js.native
+    val sshPublicKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ssh username, with witch this user wants to log in
       */
-    val sshUsername: js.UndefOr[Input[String]] = js.native
+    val sshUsername: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user's IAM ARN
       */
-    val userArn: js.UndefOr[Input[String]] = js.native
+    val userArn: js.UndefOr[Input[String]] = js.undefined
   }
   object UserProfileState {
     

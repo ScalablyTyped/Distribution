@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
   /** Floating point value. When this is set, other values must not be set. */
-  var fpVal: js.UndefOr[Double] = js.native
+  var fpVal: js.UndefOr[Double] = js.undefined
   
   /** Integer value. When this is set, other values must not be set. */
-  var intVal: js.UndefOr[Double] = js.native
+  var intVal: js.UndefOr[Double] = js.undefined
   
   /**
     * Map value. The valid key space and units for the corresponding value of each entry should be documented as part of the data type definition. Keys should be kept small whenever
     * possible. Data streams with large keys and high data frequency may be down sampled.
     */
-  var mapVal: js.UndefOr[js.Array[ValueMapValEntry]] = js.native
+  var mapVal: js.UndefOr[js.Array[ValueMapValEntry]] = js.undefined
   
   /**
     * String value. When this is set, other values must not be set. Strings should be kept small whenever possible. Data streams with large string values and high data frequency may be
     * down sampled.
     */
-  var stringVal: js.UndefOr[String] = js.native
+  var stringVal: js.UndefOr[String] = js.undefined
 }
 object Value {
   

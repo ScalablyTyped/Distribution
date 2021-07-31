@@ -4,13 +4,13 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AvatarIcon extends IconObject {
+trait AvatarIcon
+  extends StObject
+     with IconObject {
   
-  var iconStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var iconStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object AvatarIcon {
   

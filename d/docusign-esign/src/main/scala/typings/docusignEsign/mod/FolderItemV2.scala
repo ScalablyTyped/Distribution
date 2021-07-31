@@ -2,111 +2,109 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FolderItemV2 extends StObject {
   
   /**
     * If the item is an envelope, this is the UTC DateTime when the envelope was completed.
     */
-  var completedDateTime: js.UndefOr[String] = js.native
+  var completedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the item was created.
     */
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * If the item is an envelope, this is the id of the envelope.
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * If the item is an envelope, this is the URI for retrieving it.
     */
-  var envelopeUri: js.UndefOr[String] = js.native
+  var envelopeUri: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the envelope is set to expire.
     */
-  var expireDateTime: js.UndefOr[String] = js.native
+  var expireDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the folder.
     */
-  var folderId: js.UndefOr[String] = js.native
+  var folderId: js.UndefOr[String] = js.undefined
   
   /**
     * If the item is a subfolder, this is the URI for retrieving it.
     */
-  var folderUri: js.UndefOr[String] = js.native
+  var folderUri: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, indicates compliance with United States Food and Drug Administration (FDA) regulations on electronic records and electronic signatures (ERES).
     */
-  var is21CFRPart11: js.UndefOr[String] = js.native
+  var is21CFRPart11: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the user who owns the folder.
     */
-  var ownerName: js.UndefOr[String] = js.native
+  var ownerName: js.UndefOr[String] = js.undefined
   
   /**
     * An array of recipient objects that provides details about the recipients of the envelope.
     */
-  var recipients: js.UndefOr[/* Envelope recipients */ EnvelopeRecipients] = js.native
+  var recipients: js.UndefOr[/* Envelope recipients */ EnvelopeRecipients] = js.undefined
   
   /**
     * Contains a URI for an endpoint that you can use to retrieve the recipients.
     */
-  var recipientsUri: js.UndefOr[String] = js.native
+  var recipientsUri: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the sender's company.
     */
-  var senderCompany: js.UndefOr[String] = js.native
+  var senderCompany: js.UndefOr[String] = js.undefined
   
   /**
     * The sender's email address.
     */
-  var senderEmail: js.UndefOr[String] = js.native
+  var senderEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The sender's name.
     */
-  var senderName: js.UndefOr[String] = js.native
+  var senderName: js.UndefOr[String] = js.undefined
   
   /**
     * The sender's id.
     */
-  var senderUserId: js.UndefOr[String] = js.native
+  var senderUserId: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the envelope was sent. Read only.
     */
-  var sentDateTime: js.UndefOr[String] = js.native
+  var sentDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the item.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The subject of the envelope.
     */
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the template.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for retrieving the template.
     */
-  var templateUri: js.UndefOr[String] = js.native
+  var templateUri: js.UndefOr[String] = js.undefined
 }
 object FolderItemV2 {
   

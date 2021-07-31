@@ -2,19 +2,17 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowRuleTargetOptions extends StObject {
   
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var queue: String = js.native
+  var queue: String
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object WorkflowRuleTargetOptions {
   

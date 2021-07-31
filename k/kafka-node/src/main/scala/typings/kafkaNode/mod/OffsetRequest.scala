@@ -2,19 +2,17 @@ package typings.kafkaNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OffsetRequest extends StObject {
   
-  var maxNum: js.UndefOr[Double] = js.native
+  var maxNum: js.UndefOr[Double] = js.undefined
   
-  var partition: js.UndefOr[Double] = js.native
+  var partition: js.UndefOr[Double] = js.undefined
   
-  var time: js.UndefOr[Double] = js.native
+  var time: js.UndefOr[Double] = js.undefined
   
-  var topic: String = js.native
+  var topic: String
 }
 object OffsetRequest {
   

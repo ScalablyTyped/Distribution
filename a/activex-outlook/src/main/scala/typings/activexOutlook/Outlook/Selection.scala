@@ -2,30 +2,28 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Selection extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def GetSelection(SelectionContents: OlSelectionContents): Selection = js.native
+  def GetSelection(SelectionContents: OlSelectionContents): Selection
   
-  def Item(Index: js.Any): js.Any = js.native
+  def Item(Index: js.Any): js.Any
   
-  val Location: OlSelectionLocation = js.native
+  val Location: OlSelectionLocation
   
   @JSName("Outlook.Selection_typekey")
-  var OutlookDotSelection_typekey: Selection = js.native
+  var OutlookDotSelection_typekey: Selection
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object Selection {
   

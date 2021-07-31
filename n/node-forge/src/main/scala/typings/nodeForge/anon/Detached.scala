@@ -2,13 +2,11 @@ package typings.nodeForge.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Detached extends StObject {
   
-  var detached: js.UndefOr[Boolean] = js.native
+  var detached: js.UndefOr[Boolean] = js.undefined
 }
 object Detached {
   

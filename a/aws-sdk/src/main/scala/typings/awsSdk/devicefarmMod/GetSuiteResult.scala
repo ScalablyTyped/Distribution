@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSuiteResult extends StObject {
   
   /**
     * A collection of one or more tests.
     */
-  var suite: js.UndefOr[Suite] = js.native
+  var suite: js.UndefOr[Suite] = js.undefined
 }
 object GetSuiteResult {
   

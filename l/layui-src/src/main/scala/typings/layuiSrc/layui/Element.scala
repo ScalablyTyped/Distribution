@@ -7,14 +7,13 @@ import typings.layuiSrc.layuiSrcStrings.progress
 import typings.layuiSrc.layuiSrcStrings.tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Element extends StObject {
   
   def init(): Unit = js.native
-  def init(`type`: js.UndefOr[scala.Nothing], filter: String): Unit = js.native
+  def init(`type`: Unit, filter: String): Unit = js.native
   @JSName("init")
   def init_breadcrumb(`type`: breadcrumb): Unit = js.native
   @JSName("init")
@@ -37,14 +36,14 @@ trait Element extends StObject {
   def init_tab(`type`: tab, filter: String): Unit = js.native
   
   // set(options: object): object;  很少用
-  def on(filter: String, callback: js.ThisFunction1[/* this */ js.Any, /* data */ js.Any, _]): Unit = js.native
+  def on(filter: String, callback: js.ThisFunction1[/* this */ js.Any, /* data */ js.Any, js.Any]): Unit = js.native
   
   def progress(filter: String, percent: String): Unit = js.native
   
   // Element.prototype.render = Element.prototype.init;
   // 当type不能识别时，layui会遍历渲染"tab""nav"|"breadcrumb"|"progress"|"collapse" 全部；
   def render(): Unit = js.native
-  def render(`type`: js.UndefOr[scala.Nothing], filter: String): Unit = js.native
+  def render(`type`: Unit, filter: String): Unit = js.native
   @JSName("render")
   def render_breadcrumb(`type`: breadcrumb): Unit = js.native
   @JSName("render")

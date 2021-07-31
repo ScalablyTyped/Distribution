@@ -5,15 +5,15 @@ import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import typings.node.httpMod.OutgoingHttpHeaders
-import typings.passportApple.anon.Responsemode
 import typings.passportApple.passportAppleBooleans.`false`
 import typings.passportApple.passportAppleBooleans.`true`
+import typings.passportApple.passportAppleStrings.`name email`
 import typings.passportApple.passportAppleStrings.apple
+import typings.passportApple.passportAppleStrings.form_post
 import typings.passportOauth2.mod.StateStore
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,7 +25,44 @@ object mod {
     def this(options: AuthenticateOptions, verify: VerifyFunction) = this()
   }
   
-  type AppleAuthorizationParams = js.Object with Responsemode
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped object */ trait AppleAuthorizationParams extends StObject {
+    
+    var response_mode: form_post
+    
+    var response_type: `name email`
+    
+    var scope: `name email`
+    
+    var state: js.UndefOr[String] = js.undefined
+  }
+  object AppleAuthorizationParams {
+    
+    @scala.inline
+    def apply(): AppleAuthorizationParams = {
+      val __obj = js.Dynamic.literal(response_mode = "form_post", response_type = "name email", scope = "name email")
+      __obj.asInstanceOf[AppleAuthorizationParams]
+    }
+    
+    @scala.inline
+    implicit class AppleAuthorizationParamsMutableBuilder[Self <: AppleAuthorizationParams] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setResponse_mode(value: form_post): Self = StObject.set(x, "response_mode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setResponse_type(value: `name email`): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScope(value: `name email`): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    }
+  }
   
   @js.native
   trait AppleStrategy
@@ -36,10 +73,11 @@ object mod {
     var name: apple = js.native
   }
   
-  @js.native
-  trait AuthenticateOptions extends AuthenticateOptionsBase {
+  trait AuthenticateOptions
+    extends StObject
+       with AuthenticateOptionsBase {
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
   }
   object AuthenticateOptions {
     
@@ -61,44 +99,43 @@ object mod {
   }
   
   /* Inlined parent std.Partial<passport-oauth2.passport-oauth2._StrategyOptionsBase> */
-  @js.native
   trait AuthenticateOptionsBase extends StObject {
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: js.UndefOr[String] = js.native
+    var callbackURL: js.UndefOr[String] = js.undefined
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: js.UndefOr[String] = js.native
+    var clientSecret: js.UndefOr[String] = js.undefined
     
-    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var keyID: String = js.native
+    var keyID: String
     
-    var pkce: js.UndefOr[Boolean] = js.native
+    var pkce: js.UndefOr[Boolean] = js.undefined
     
-    var privateKeyLocation: js.UndefOr[String] = js.native
+    var privateKeyLocation: js.UndefOr[String] = js.undefined
     
-    var privateKeyString: js.UndefOr[String] = js.native
+    var privateKeyString: js.UndefOr[String] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.native
+    var proxy: js.UndefOr[js.Any] = js.undefined
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
     
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.native
+    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
     
-    var store: js.UndefOr[StateStore] = js.native
+    var store: js.UndefOr[StateStore] = js.undefined
     
-    var teamID: String = js.native
+    var teamID: String
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
   }
   object AuthenticateOptionsBase {
     
@@ -215,16 +252,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait AuthenticateOptionsWithRequest extends AuthenticateOptionsBase {
+  trait AuthenticateOptionsWithRequest
+    extends StObject
+       with AuthenticateOptionsBase {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object AuthenticateOptionsWithRequest {
     
     @scala.inline
-    def apply(clientID: String, keyID: String, passReqToCallback: `true`, teamID: String): AuthenticateOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], keyID = keyID.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any], teamID = teamID.asInstanceOf[js.Any])
+    def apply(clientID: String, keyID: String, teamID: String): AuthenticateOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], keyID = keyID.asInstanceOf[js.Any], passReqToCallback = true, teamID = teamID.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthenticateOptionsWithRequest]
     }
     
@@ -236,11 +274,11 @@ object mod {
     }
   }
   
-  @js.native
   trait DecodedIdToken
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var sub: String = js.native
+    var sub: String
   }
   object DecodedIdToken {
     

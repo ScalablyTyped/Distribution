@@ -2,24 +2,24 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyboardEventInit extends EventModifierInit {
+trait KeyboardEventInit
+  extends StObject
+     with EventModifierInit {
   
-  var code: js.UndefOr[java.lang.String] = js.native
+  var code: js.UndefOr[java.lang.String] = js.undefined
   
-  var isComposing: js.UndefOr[scala.Boolean] = js.native
+  var isComposing: js.UndefOr[scala.Boolean] = js.undefined
   
-  var key: js.UndefOr[java.lang.String] = js.native
+  var key: js.UndefOr[java.lang.String] = js.undefined
   
   /** @deprecated */
-  var keyCode: js.UndefOr[Double] = js.native
+  var keyCode: js.UndefOr[Double] = js.undefined
   
-  var location: js.UndefOr[Double] = js.native
+  var location: js.UndefOr[Double] = js.undefined
   
-  var repeat: js.UndefOr[scala.Boolean] = js.native
+  var repeat: js.UndefOr[scala.Boolean] = js.undefined
 }
 object KeyboardEventInit {
   

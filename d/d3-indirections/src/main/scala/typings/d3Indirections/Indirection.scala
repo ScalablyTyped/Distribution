@@ -4,7 +4,6 @@ import typings.d3Indirections.anon.ResourceIndex
 import typings.d3Indirections.anon.ResourceUid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

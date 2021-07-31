@@ -5,32 +5,33 @@ import typings.iso31662.mod.CountryInfo.Full
 import typings.iso31662.mod.CountryInfo.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("iso-3166-2", "country")
+  @JSImport("iso-3166-2", JSImport.Namespace)
   @js.native
-  def country(countryCodeOrName: String): CountryInfo | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def country(countryCodeOrName: String): CountryInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("country")(countryCodeOrName.asInstanceOf[js.Any]).asInstanceOf[CountryInfo | Null]
   
   @JSImport("iso-3166-2", "data")
   @js.native
   val data: Map = js.native
   
-  @JSImport("iso-3166-2", "subdivision")
-  @js.native
-  def subdivision(countryCodeOrFullSubdivisionCode: String): SubdivisionInfo | Null = js.native
-  @JSImport("iso-3166-2", "subdivision")
-  @js.native
-  def subdivision(countryCodeOrFullSubdivisionCode: String, subdivisionCodeOrName: String): SubdivisionInfo | Null = js.native
+  @scala.inline
+  def subdivision(countryCodeOrFullSubdivisionCode: String): SubdivisionInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("subdivision")(countryCodeOrFullSubdivisionCode.asInstanceOf[js.Any]).asInstanceOf[SubdivisionInfo | Null]
+  @scala.inline
+  def subdivision(countryCodeOrFullSubdivisionCode: String, subdivisionCodeOrName: String): SubdivisionInfo | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("subdivision")(countryCodeOrFullSubdivisionCode.asInstanceOf[js.Any], subdivisionCodeOrName.asInstanceOf[js.Any])).asInstanceOf[SubdivisionInfo | Null]
   
   object CountryInfo {
     
-    @js.native
-    trait Full extends Partial {
+    trait Full
+      extends StObject
+         with Partial {
       
-      var code: String = js.native
+      var code: String
     }
     object Full {
       
@@ -51,12 +52,11 @@ object mod {
     type Map = // full data if this country has been retrieved with country() at least once
     StringDictionary[Full | Partial]
     
-    @js.native
     trait Partial extends StObject {
       
-      var name: String = js.native
+      var name: String
       
-      var sub: typings.iso31662.mod.SubdivisionInfo.Map = js.native
+      var sub: typings.iso31662.mod.SubdivisionInfo.Map
     }
     object Partial {
       
@@ -81,16 +81,17 @@ object mod {
   
   object SubdivisionInfo {
     
-    @js.native
-    trait Full extends Partial {
+    trait Full
+      extends StObject
+         with Partial {
       
-      var code: String = js.native
+      var code: String
       
-      var countryCode: String = js.native
+      var countryCode: String
       
-      var countryName: String = js.native
+      var countryName: String
       
-      var regionCode: String = js.native
+      var regionCode: String
     }
     object Full {
       
@@ -128,12 +129,11 @@ object mod {
     type Map = // full data if this subdivision has been retrieved with subdivision() at least once
     StringDictionary[typings.iso31662.mod.SubdivisionInfo.Full | Partial]
     
-    @js.native
     trait Partial extends StObject {
       
-      var name: String = js.native
+      var name: String
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object Partial {
       

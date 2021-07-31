@@ -4,7 +4,6 @@ import typings.sharedb.anon.Results
 import typings.std.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sharedb", "Connection")
@@ -16,14 +15,14 @@ class Connection protected () extends StObject {
     collectionName: String,
     query: String,
     options: Results,
-    callback: js.Function2[/* err */ Error, /* results */ js.Any, _]
+    callback: js.Function2[/* err */ Error, /* results */ js.Any, js.Any]
   ): typings.sharedb.sharedbMod.Query = js.native
   
   def createSubscribeQuery(
     collectionName: String,
     query: String,
     options: Results,
-    callback: js.Function2[/* err */ Error, /* results */ js.Any, _]
+    callback: js.Function2[/* err */ Error, /* results */ js.Any, js.Any]
   ): typings.sharedb.sharedbMod.Query = js.native
   
   def get(collectionName: String, documentID: String): typings.sharedb.sharedbMod.Doc = js.native

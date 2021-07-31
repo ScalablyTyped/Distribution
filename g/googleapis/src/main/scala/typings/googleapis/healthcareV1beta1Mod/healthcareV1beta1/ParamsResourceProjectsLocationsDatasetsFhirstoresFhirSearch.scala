@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch extends StandardParameters {
+trait ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the FHIR store to retrieve resources from.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaSearchResourcesRequest] = js.native
+  var requestBody: js.UndefOr[SchemaSearchResourcesRequest] = js.undefined
 }
 object ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch {
   

@@ -3,31 +3,29 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBlockHeader extends StObject {
   
   /** BlockHeader batchIds */
-  var batchIds: js.UndefOr[js.Array[String] | Null] = js.native
+  var batchIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** BlockHeader blockNum */
   var blockNum: js.UndefOr[
     Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** BlockHeader consensus */
-  var consensus: js.UndefOr[Uint8Array | Null] = js.native
+  var consensus: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** BlockHeader previousBlockId */
-  var previousBlockId: js.UndefOr[String | Null] = js.native
+  var previousBlockId: js.UndefOr[String | Null] = js.undefined
   
   /** BlockHeader signerPublicKey */
-  var signerPublicKey: js.UndefOr[String | Null] = js.native
+  var signerPublicKey: js.UndefOr[String | Null] = js.undefined
   
   /** BlockHeader stateRootHash */
-  var stateRootHash: js.UndefOr[String | Null] = js.native
+  var stateRootHash: js.UndefOr[String | Null] = js.undefined
 }
 object IBlockHeader {
   

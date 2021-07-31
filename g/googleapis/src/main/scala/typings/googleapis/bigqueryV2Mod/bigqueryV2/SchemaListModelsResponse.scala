@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListModelsResponse extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait SchemaListModelsResponse extends StObject {
     * model_reference, model_type, creation_time, last_modified_time and
     * labels.
     */
-  var models: js.UndefOr[js.Array[SchemaModel]] = js.native
+  var models: js.UndefOr[js.Array[SchemaModel]] = js.undefined
   
   /**
     * A token to request the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListModelsResponse {
   

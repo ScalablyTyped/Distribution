@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gives access to the text of a progress monitor.
   * @deprecated Deprecated
   */
-@js.native
-trait XProgressMonitor extends XProgressBar {
+trait XProgressMonitor
+  extends StObject
+     with XProgressBar {
   
   /** adds a new text line to the control. */
-  def addText(Topic: String, Text: String, beforeProgress: Boolean): Unit = js.native
+  def addText(Topic: String, Text: String, beforeProgress: Boolean): Unit
   
   /** removes a text line from the control. */
-  def removeText(Topic: String, beforeProgress: Boolean): Unit = js.native
+  def removeText(Topic: String, beforeProgress: Boolean): Unit
   
   /** updates an existing text line at the control. */
-  def updateText(Topic: String, Text: String, beforeProgress: Boolean): Unit = js.native
+  def updateText(Topic: String, Text: String, beforeProgress: Boolean): Unit
 }
 object XProgressMonitor {
   

@@ -6,19 +6,19 @@ import typings.node.nodeStrings.buffer_
 import typings.node.processMod.global.NodeJS.Signals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpawnSyncOptions extends CommonSpawnOptions {
+trait SpawnSyncOptions
+  extends StObject
+     with CommonSpawnOptions {
   
-  var encoding: js.UndefOr[BufferEncoding | buffer_ | Null] = js.native
+  var encoding: js.UndefOr[BufferEncoding | buffer_ | Null] = js.undefined
   
-  var input: js.UndefOr[String | ArrayBufferView] = js.native
+  var input: js.UndefOr[String | ArrayBufferView] = js.undefined
   
-  var killSignal: js.UndefOr[Signals | Double] = js.native
+  var killSignal: js.UndefOr[Signals | Double] = js.undefined
   
-  var maxBuffer: js.UndefOr[Double] = js.native
+  var maxBuffer: js.UndefOr[Double] = js.undefined
 }
 object SpawnSyncOptions {
   

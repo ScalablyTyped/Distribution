@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListClustersResponse extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ListClustersResponse extends StObject {
     Information on each of the MSK clusters in the response.
     
     */
-  var ClusterInfoList: js.UndefOr[listOfClusterInfo] = js.native
+  var ClusterInfoList: js.UndefOr[listOfClusterInfo] = js.undefined
   
   /**
     * 
@@ -21,7 +19,7 @@ trait ListClustersResponse extends StObject {
     To get another batch of clusters, provide this token in your next request.
     
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListClustersResponse {
   

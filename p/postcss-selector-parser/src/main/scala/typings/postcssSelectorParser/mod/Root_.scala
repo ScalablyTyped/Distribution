@@ -3,12 +3,12 @@ package typings.postcssSelectorParser.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Root_
-  extends Container[js.UndefOr[scala.Nothing], Selector_] {
+  extends StObject
+     with Container[Unit, Selector_] {
   
   /**
     * Raises an error, if the processor is invoked on

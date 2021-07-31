@@ -11,27 +11,27 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.pure
 import typings.tuyaPanelKit.tuyaPanelKitStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ControllerBarProps extends ViewProps {
+trait ControllerBarProps
+  extends StObject
+     with ViewProps {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var backgroundType: js.UndefOr[alpha | pure] = js.native
+  var backgroundType: js.UndefOr[alpha | pure] = js.undefined
   
-  var button: js.Array[ButtonProps] = js.native
+  var button: js.Array[ButtonProps]
   
-  var hasBottomBorder: js.UndefOr[Boolean] = js.native
+  var hasBottomBorder: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[large | normal | small | Double] = js.native
+  var size: js.UndefOr[large | normal | small | Double] = js.undefined
   
-  var stretch: js.UndefOr[Boolean] = js.native
+  var stretch: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[primary | normal] = js.native
+  var `type`: js.UndefOr[primary | normal] = js.undefined
   
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object ControllerBarProps {
   

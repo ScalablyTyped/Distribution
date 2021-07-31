@@ -7,59 +7,57 @@ import typings.awsSdkTypes.credentialsMod.CredentialProvider
 import typings.awsSdkTypes.credentialsMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@aws-sdk/credential-provider-ini", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/credential-provider-ini", "ENV_PROFILE")
   @js.native
   val ENV_PROFILE: /* "AWS_PROFILE" */ String = js.native
   
-  @JSImport("@aws-sdk/credential-provider-ini", "fromIni")
-  @js.native
-  def fromIni(): CredentialProvider = js.native
-  @JSImport("@aws-sdk/credential-provider-ini", "fromIni")
-  @js.native
-  def fromIni(init: FromIniInit): CredentialProvider = js.native
+  @scala.inline
+  def fromIni(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")().asInstanceOf[CredentialProvider]
+  @scala.inline
+  def fromIni(init: FromIniInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
   
-  @JSImport("@aws-sdk/credential-provider-ini", "getMasterProfileName")
-  @js.native
-  def getMasterProfileName(init: FromIniInit): String = js.native
+  @scala.inline
+  def getMasterProfileName(init: FromIniInit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMasterProfileName")(init.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@aws-sdk/credential-provider-ini", "parseKnownFiles")
-  @js.native
-  def parseKnownFiles(init: FromIniInit): js.Promise[ParsedIniData] = js.native
+  @scala.inline
+  def parseKnownFiles(init: FromIniInit): js.Promise[ParsedIniData] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKnownFiles")(init.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParsedIniData]]
   
-  @js.native
   trait AssumeRoleParams extends StObject {
     
     /**
       * A unique identifier that is used by third parties when assuming roles in
       * their customers' accounts.
       */
-    var ExternalId: js.UndefOr[String] = js.native
+    var ExternalId: js.UndefOr[String] = js.undefined
     
     /**
       * The identifier of the role to be assumed.
       */
-    var RoleArn: String = js.native
+    var RoleArn: String
     
     /**
       * A name for the assumed role session.
       */
-    var RoleSessionName: String = js.native
+    var RoleSessionName: String
     
     /**
       * The identification number of the MFA device that is associated with the
       * user who is making the `AssumeRole` call.
       */
-    var SerialNumber: js.UndefOr[String] = js.native
+    var SerialNumber: js.UndefOr[String] = js.undefined
     
     /**
       * The value provided by the MFA device.
       */
-    var TokenCode: js.UndefOr[String] = js.native
+    var TokenCode: js.UndefOr[String] = js.undefined
   }
   object AssumeRoleParams {
     
@@ -98,14 +96,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait FromIniInit extends SharedConfigInit {
+  trait FromIniInit
+    extends StObject
+       with SharedConfigInit {
     
     /**
       * A promise that will be resolved with loaded and parsed credentials files.
       * Used to avoid loading shared config files multiple times.
       */
-    var loadedConfig: js.UndefOr[js.Promise[SharedConfigFiles]] = js.native
+    var loadedConfig: js.UndefOr[js.Promise[SharedConfigFiles]] = js.undefined
     
     /**
       * A function that returna a promise fulfilled with an MFA token code for
@@ -115,12 +114,12 @@ object mod {
       *
       * @param mfaSerial The serial code of the MFA device specified.
       */
-    var mfaCodeProvider: js.UndefOr[js.Function1[/* mfaSerial */ String, js.Promise[String]]] = js.native
+    var mfaCodeProvider: js.UndefOr[js.Function1[/* mfaSerial */ String, js.Promise[String]]] = js.undefined
     
     /**
       * The configuration profile to use.
       */
-    var profile: js.UndefOr[String] = js.native
+    var profile: js.UndefOr[String] = js.undefined
     
     /**
       * A function that assumes a role and returns a promise fulfilled with
@@ -135,7 +134,7 @@ object mod {
           /* params */ AssumeRoleParams, 
           js.Promise[Credentials]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object FromIniInit {
     

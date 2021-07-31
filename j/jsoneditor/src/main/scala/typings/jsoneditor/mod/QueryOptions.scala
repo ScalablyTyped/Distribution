@@ -5,17 +5,15 @@ import typings.jsoneditor.anon.Field
 import typings.jsoneditor.anon.Fields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOptions extends StObject {
   
-  var filter: js.UndefOr[Field] = js.native
+  var filter: js.UndefOr[Field] = js.undefined
   
-  var projection: js.UndefOr[Fields] = js.native
+  var projection: js.UndefOr[Fields] = js.undefined
   
-  var sort: js.UndefOr[Direction] = js.native
+  var sort: js.UndefOr[Direction] = js.undefined
 }
 object QueryOptions {
   

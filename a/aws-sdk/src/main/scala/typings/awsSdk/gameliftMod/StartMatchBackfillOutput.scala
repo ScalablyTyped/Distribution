@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartMatchBackfillOutput extends StObject {
   
   /**
     * Ticket representing the backfill matchmaking request. This object includes the information in the request, ticket status, and match results as generated during the matchmaking process.
     */
-  var MatchmakingTicket: js.UndefOr[typings.awsSdk.gameliftMod.MatchmakingTicket] = js.native
+  var MatchmakingTicket: js.UndefOr[typings.awsSdk.gameliftMod.MatchmakingTicket] = js.undefined
 }
 object StartMatchBackfillOutput {
   

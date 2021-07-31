@@ -3,7 +3,6 @@ package typings.screeps.global
 import typings.screeps.screepsNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object INVADER_CORE_CREEP_SPAWN_TIME {

@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSuppressedDestinationsResponse extends StObject {
   
   /**
     * A token that indicates that there are additional email addresses on the suppression list for your account. To view additional suppressed addresses, issue another request to ListSuppressedDestinations, and pass this token in the NextToken parameter.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.undefined
   
   /**
     * A list of summaries, each containing a summary for a suppressed email destination.
     */
-  var SuppressedDestinationSummaries: js.UndefOr[typings.awsSdk.sesv2Mod.SuppressedDestinationSummaries] = js.native
+  var SuppressedDestinationSummaries: js.UndefOr[typings.awsSdk.sesv2Mod.SuppressedDestinationSummaries] = js.undefined
 }
 object ListSuppressedDestinationsResponse {
   

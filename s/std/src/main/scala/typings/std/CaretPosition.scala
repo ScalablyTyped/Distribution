@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaretPosition extends StObject {
   
-  def getClientRect(): DOMRect | Null = js.native
+  def getClientRect(): DOMRect | Null
   
-  val offset: Double = js.native
+  val offset: Double
   
-  val offsetNode: Node = js.native
+  val offsetNode: Node
 }
 object CaretPosition {
   

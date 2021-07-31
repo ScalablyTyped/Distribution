@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportJob extends StObject {
   
   /**
     * Output only. Statement that was generated and signed by the key creator (for example, an HSM) at key creation time. Use this statement to verify attributes of the key as stored on
     * the HSM, independently of Google. Only present if the chosen ImportMethod is one with a protection level of HSM.
     */
-  var attestation: js.UndefOr[KeyOperationAttestation] = js.native
+  var attestation: js.UndefOr[KeyOperationAttestation] = js.undefined
   
   /** Output only. The time at which this ImportJob was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time this ImportJob expired. Only present if state is EXPIRED. */
-  var expireEventTime: js.UndefOr[String] = js.native
+  var expireEventTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time at which this ImportJob is scheduled for expiration and can no longer be used to import key material. */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time this ImportJob's key material was generated. */
-  var generateTime: js.UndefOr[String] = js.native
+  var generateTime: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The wrapping method to be used for incoming key material. */
-  var importMethod: js.UndefOr[String] = js.native
+  var importMethod: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name for this ImportJob in the format `projects/∗/locations/∗/keyRings/∗/importJobs/ *`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The protection level of the ImportJob. This must match the protection_level of the version_template on the CryptoKey you attempt to import into. */
-  var protectionLevel: js.UndefOr[String] = js.native
+  var protectionLevel: js.UndefOr[String] = js.undefined
   
   /** Output only. The public key with which to wrap key material prior to import. Only returned if state is ACTIVE. */
-  var publicKey: js.UndefOr[WrappingPublicKey] = js.native
+  var publicKey: js.UndefOr[WrappingPublicKey] = js.undefined
   
   /** Output only. The current state of the ImportJob, indicating if it can be used. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object ImportJob {
   

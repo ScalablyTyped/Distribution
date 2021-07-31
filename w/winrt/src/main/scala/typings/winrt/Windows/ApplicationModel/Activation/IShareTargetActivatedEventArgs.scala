@@ -3,13 +3,13 @@ package typings.winrt.Windows.ApplicationModel.Activation
 import typings.winrt.Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IShareTargetActivatedEventArgs extends IActivatedEventArgs {
+trait IShareTargetActivatedEventArgs
+  extends StObject
+     with IActivatedEventArgs {
   
-  var shareOperation: ShareOperation = js.native
+  var shareOperation: ShareOperation
 }
 object IShareTargetActivatedEventArgs {
   

@@ -2,13 +2,34 @@ package typings.winrtUwp.global.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Media.Capture.AppCapture")
 @js.native
 abstract class AppCapture ()
-  extends typings.winrtUwp.Windows.Media.Capture.AppCapture
+  extends StObject
+     with typings.winrtUwp.Windows.Media.Capture.AppCapture {
+  
+  /* unmapped type */
+  /* CompleteClass */
+  var addEventListener: js.Any = js.native
+  
+  /* unmapped type */
+  /* CompleteClass */
+  var isCapturingAudio: js.Any = js.native
+  
+  /* unmapped type */
+  /* CompleteClass */
+  var isCapturingVideo: js.Any = js.native
+  
+  /* unmapped type */
+  /* CompleteClass */
+  var oncapturingchanged: js.Any = js.native
+  
+  /* unmapped type */
+  /* CompleteClass */
+  var removeEventListener: js.Any = js.native
+}
 object AppCapture {
   
   @JSGlobal("Windows.Media.Capture.AppCapture")

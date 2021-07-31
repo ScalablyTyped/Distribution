@@ -7,18 +7,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to import files into the object. */
-@js.native
-trait XImportable extends XInterface {
+trait XImportable
+  extends StObject
+     with XInterface {
   
   /** @returns a descriptor which contains the arguments for an import. */
-  def createImportDescriptor(bEmpty: Boolean): SafeArray[PropertyValue] = js.native
+  def createImportDescriptor(bEmpty: Boolean): SafeArray[PropertyValue]
   
   /** imports data from an external database. */
-  def doImport(aDescriptor: SeqEquiv[PropertyValue]): Unit = js.native
+  def doImport(aDescriptor: SeqEquiv[PropertyValue]): Unit
 }
 object XImportable {
   

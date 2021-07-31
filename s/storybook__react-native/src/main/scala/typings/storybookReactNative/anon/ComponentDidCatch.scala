@@ -8,7 +8,6 @@ import typings.std.Error
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -50,7 +49,7 @@ trait ComponentDidCatch extends StObject {
   def forceUpdate(): Unit = js.native
   def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
   
-  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ js.Object, /* prevState */ js.Object, _]] = js.native
+  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ js.Object, /* prevState */ js.Object, js.Any]] = js.native
   
   val props: ReadonlyReadonlychildrenR = js.native
   

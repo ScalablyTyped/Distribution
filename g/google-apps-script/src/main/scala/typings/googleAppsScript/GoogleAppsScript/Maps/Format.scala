@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,20 +17,32 @@ sealed trait Format extends StObject
 object Format extends StObject {
   
   @js.native
-  sealed trait GIF extends Format
+  sealed trait GIF
+    extends StObject
+       with Format
   
   @js.native
-  sealed trait JPG extends Format
+  sealed trait JPG
+    extends StObject
+       with Format
   
   @js.native
-  sealed trait JPG_BASELINE extends Format
+  sealed trait JPG_BASELINE
+    extends StObject
+       with Format
   
   @js.native
-  sealed trait PNG extends Format
+  sealed trait PNG
+    extends StObject
+       with Format
   
   @js.native
-  sealed trait PNG32 extends Format
+  sealed trait PNG32
+    extends StObject
+       with Format
   
   @js.native
-  sealed trait PNG8 extends Format
+  sealed trait PNG8
+    extends StObject
+       with Format
 }

@@ -2,31 +2,29 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateScheduleRequest extends StObject {
   
   /**
     * The date or dates and time or times, in cron format, when the jobs are to be run.
     */
-  var CronExpression: typings.awsSdk.databrewMod.CronExpression = js.native
+  var CronExpression: typings.awsSdk.databrewMod.CronExpression
   
   /**
     * The name or names of one or more jobs to be run.
     */
-  var JobNames: js.UndefOr[JobNameList] = js.native
+  var JobNames: js.UndefOr[JobNameList] = js.undefined
   
   /**
     * A unique name for the schedule.
     */
-  var Name: ScheduleName = js.native
+  var Name: ScheduleName
   
   /**
     * Metadata tags to apply to this schedule.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateScheduleRequest {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAssociationRequest extends StObject {
   
   /**
     * The association ID for which you want information.
     */
-  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.native
+  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.undefined
   
   /**
     * Specify the association version to retrieve. To view the latest version, either specify $LATEST for this parameter, or omit this parameter. To view a list of all associations for an instance, use ListAssociations. To get a list of versions for a specific association, use ListAssociationVersions. 
     */
-  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.native
+  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.undefined
   
   /**
     * The instance ID.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
   /**
     * The name of the Systems Manager document.
     */
-  var Name: js.UndefOr[DocumentARN] = js.native
+  var Name: js.UndefOr[DocumentARN] = js.undefined
 }
 object DescribeAssociationRequest {
   

@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Schedule for triggeredJobs.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Schedule extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGooglePrivacyDlpV2Schedule extends StObject {
     * value must be set to a time duration greater than or equal to 1 day and
     * can be no longer than 60 days.
     */
-  var recurrencePeriodDuration: js.UndefOr[String] = js.native
+  var recurrencePeriodDuration: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Schedule {
   

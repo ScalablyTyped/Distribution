@@ -8,36 +8,34 @@ import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.segmentSegmentInterfaceMod.SegmentButtonLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonSegmentButton extends StObject {
   
   /**
     * If `true`, the user cannot interact with the segment button.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the layout of the text and icon in the segment.
     */
-  var layout: js.UndefOr[SegmentButtonLayout] = js.native
+  var layout: js.UndefOr[SegmentButtonLayout] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * The type of the button.
     */
-  var `type`: js.UndefOr[submit | reset | button] = js.native
+  var `type`: js.UndefOr[submit | reset | button] = js.undefined
   
   /**
     * The value of the segment button.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object IonSegmentButton {
   

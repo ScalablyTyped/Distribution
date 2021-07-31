@@ -3,19 +3,19 @@ package typings.jweixin.mod
 import typings.jweixin.anon.CheckResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IcheckJsApi extends BaseParams {
+trait IcheckJsApi
+  extends StObject
+     with BaseParams {
   
-  var jsApiList: typings.jweixin.mod.jsApiList = js.native
+  var jsApiList: typings.jweixin.mod.jsApiList
   
   // 需要检测的JS接口列表，所有JS接口列表见附录2,
   // 以键值对的形式返回，可用的api值true，不可用为false
   // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
   @JSName("success")
-  def success_MIcheckJsApi(res: CheckResult): Unit = js.native
+  def success_MIcheckJsApi(res: CheckResult): Unit
 }
 object IcheckJsApi {
   

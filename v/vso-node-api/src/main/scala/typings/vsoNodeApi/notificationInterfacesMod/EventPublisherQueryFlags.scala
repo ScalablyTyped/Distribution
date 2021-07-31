@@ -2,7 +2,6 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,16 +11,20 @@ sealed trait EventPublisherQueryFlags extends StObject
 object EventPublisherQueryFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EventPublisherQueryFlags with Double] = js.native
+  def apply(value: Double): js.UndefOr[EventPublisherQueryFlags & Double] = js.native
   
   /**
     * Include event types from the remote services too
     */
   @js.native
-  sealed trait IncludeRemoteServices extends EventPublisherQueryFlags
-  /* 2 */ val IncludeRemoteServices: typings.vsoNodeApi.notificationInterfacesMod.EventPublisherQueryFlags.IncludeRemoteServices with Double = js.native
+  sealed trait IncludeRemoteServices
+    extends StObject
+       with EventPublisherQueryFlags
+  /* 2 */ val IncludeRemoteServices: typings.vsoNodeApi.notificationInterfacesMod.EventPublisherQueryFlags.IncludeRemoteServices & Double = js.native
   
   @js.native
-  sealed trait None extends EventPublisherQueryFlags
-  /* 0 */ val None: typings.vsoNodeApi.notificationInterfacesMod.EventPublisherQueryFlags.None with Double = js.native
+  sealed trait None
+    extends StObject
+       with EventPublisherQueryFlags
+  /* 0 */ val None: typings.vsoNodeApi.notificationInterfacesMod.EventPublisherQueryFlags.None & Double = js.native
 }

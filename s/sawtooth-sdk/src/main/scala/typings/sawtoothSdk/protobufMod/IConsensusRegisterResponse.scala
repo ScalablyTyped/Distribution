@@ -3,20 +3,18 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.ConsensusRegisterResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusRegisterResponse extends StObject {
   
   /** ConsensusRegisterResponse chainHead */
-  var chainHead: js.UndefOr[IConsensusBlock | Null] = js.native
+  var chainHead: js.UndefOr[IConsensusBlock | Null] = js.undefined
   
   /** ConsensusRegisterResponse peers */
-  var peers: js.UndefOr[js.Array[IConsensusPeerInfo] | Null] = js.native
+  var peers: js.UndefOr[js.Array[IConsensusPeerInfo] | Null] = js.undefined
   
   /** ConsensusRegisterResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IConsensusRegisterResponse {
   

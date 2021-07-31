@@ -10,9 +10,9 @@ Execute Gherkin scenarios in Jest
 | ------------------ | :-------------: |
 | Full name          | jest-cucumber |
 | Keywords           | jest, gherkin, cucumber |
-| # releases         | 22 |
-| # dependents       | 7 |
-| # downloads        | 801274 |
+| # releases         | 13 |
+| # dependents       | 9 |
+| # downloads        | 1625717 |
 | # stars            | 0 |
 
 ## Links

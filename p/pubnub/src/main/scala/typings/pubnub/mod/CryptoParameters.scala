@@ -2,20 +2,18 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // encrypt & decrypt
-@js.native
 trait CryptoParameters extends StObject {
   
-  var encryptKey: js.UndefOr[Boolean] = js.native
+  var encryptKey: js.UndefOr[Boolean] = js.undefined
   
-  var keyEncoding: js.UndefOr[String] = js.native
+  var keyEncoding: js.UndefOr[String] = js.undefined
   
-  var keyLength: js.UndefOr[Double] = js.native
+  var keyLength: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
 }
 object CryptoParameters {
   

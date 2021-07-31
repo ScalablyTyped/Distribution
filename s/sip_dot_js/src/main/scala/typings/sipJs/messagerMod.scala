@@ -6,7 +6,6 @@ import typings.sipJs.messagerOptionsMod.MessagerOptions
 import typings.sipJs.userAgentMod.UserAgent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagerMod {
@@ -28,16 +27,10 @@ object messagerMod {
       userAgent: UserAgent,
       targetURI: URI,
       content: String,
-      contentType: js.UndefOr[scala.Nothing],
-      options: MessagerOptions
-    ) = this()
-    def this(
-      userAgent: UserAgent,
-      targetURI: URI,
-      content: String,
       contentType: String,
       options: MessagerOptions
     ) = this()
+    def this(userAgent: UserAgent, targetURI: URI, content: String, contentType: Unit, options: MessagerOptions) = this()
     
     var logger: js.Any = js.native
     

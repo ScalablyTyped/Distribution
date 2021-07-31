@@ -4,7 +4,6 @@ import typings.playcanvas.anon.Callback
 import typings.playcanvas.pc.callbacks.XrError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param app - The main application.
   */
 @js.native
-trait XrManager extends EventHandler {
+trait XrManager
+  extends StObject
+     with EventHandler {
   
   /**
     * True if XR session is running.

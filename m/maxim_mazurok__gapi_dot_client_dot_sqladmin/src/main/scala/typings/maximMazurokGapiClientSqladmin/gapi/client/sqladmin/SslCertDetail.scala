@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SslCertDetail extends StObject {
   
   /** The public information about the cert. */
-  var certInfo: js.UndefOr[SslCert] = js.native
+  var certInfo: js.UndefOr[SslCert] = js.undefined
   
   /** The private key for the client cert, in pem format. Keep private in order to protect your security. */
-  var certPrivateKey: js.UndefOr[String] = js.native
+  var certPrivateKey: js.UndefOr[String] = js.undefined
 }
 object SslCertDetail {
   

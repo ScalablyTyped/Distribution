@@ -2,46 +2,44 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProjectResponse extends StObject {
   
   /**
     * The ID of the portal that the project is in.
     */
-  var portalId: ID = js.native
+  var portalId: ID
   
   /**
     * The ARN of the project, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:project/${ProjectId} 
     */
-  var projectArn: ARN = js.native
+  var projectArn: ARN
   
   /**
     * The date the project was created, in Unix epoch time.
     */
-  var projectCreationDate: Timestamp = js.native
+  var projectCreationDate: Timestamp
   
   /**
     * The project's description.
     */
-  var projectDescription: js.UndefOr[Description] = js.native
+  var projectDescription: js.UndefOr[Description] = js.undefined
   
   /**
     * The ID of the project.
     */
-  var projectId: ID = js.native
+  var projectId: ID
   
   /**
     * The date the project was last updated, in Unix epoch time.
     */
-  var projectLastUpdateDate: Timestamp = js.native
+  var projectLastUpdateDate: Timestamp
   
   /**
     * The name of the project.
     */
-  var projectName: Name = js.native
+  var projectName: Name
 }
 object DescribeProjectResponse {
   

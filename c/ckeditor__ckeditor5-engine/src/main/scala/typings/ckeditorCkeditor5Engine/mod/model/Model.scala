@@ -12,13 +12,14 @@ import typings.ckeditorCkeditor5Utils.mod.Observable
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/model/model
 @JSImport("@ckeditor/ckeditor5-engine", "model.Model")
 @js.native
-class Model () extends Observable {
+class Model ()
+  extends StObject
+     with Observable {
   
   def applyOperation(operation: Operation): Unit = js.native
   

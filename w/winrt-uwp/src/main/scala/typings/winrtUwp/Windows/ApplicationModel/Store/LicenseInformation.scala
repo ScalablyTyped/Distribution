@@ -7,14 +7,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.licensechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the current app's license metadata. */
 @js.native
 trait LicenseInformation extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_licensechanged(`type`: licensechanged, listener: LicenseChangedEventHandler): Unit = js.native
   
@@ -36,7 +35,7 @@ trait LicenseInformation extends StObject {
   /** Gets the associative list of licenses for in-app products that a user is currently entitled to. */
   var productLicenses: IMapView[String, ProductLicense] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_licensechanged(`type`: licensechanged, listener: LicenseChangedEventHandler): Unit = js.native
 }

@@ -3,89 +3,87 @@ package typings.fluentuiTheme
 import typings.uifabricMergeStyles.irawstyleMod.IRawStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ianimationstylesMod {
   
-  @js.native
   trait IAnimationStyles extends StObject {
     
-    var fadeIn100: IRawStyle = js.native
+    var fadeIn100: IRawStyle
     
-    var fadeIn200: IRawStyle = js.native
+    var fadeIn200: IRawStyle
     
-    var fadeIn400: IRawStyle = js.native
+    var fadeIn400: IRawStyle
     
-    var fadeIn500: IRawStyle = js.native
+    var fadeIn500: IRawStyle
     
-    var fadeOut100: IRawStyle = js.native
+    var fadeOut100: IRawStyle
     
-    var fadeOut200: IRawStyle = js.native
+    var fadeOut200: IRawStyle
     
-    var fadeOut400: IRawStyle = js.native
+    var fadeOut400: IRawStyle
     
-    var fadeOut500: IRawStyle = js.native
+    var fadeOut500: IRawStyle
     
-    var rotate90deg: IRawStyle = js.native
+    var rotate90deg: IRawStyle
     
-    var rotateN90deg: IRawStyle = js.native
+    var rotateN90deg: IRawStyle
     
-    var scaleDownIn100: IRawStyle = js.native
+    var scaleDownIn100: IRawStyle
     
-    var scaleDownOut98: IRawStyle = js.native
+    var scaleDownOut98: IRawStyle
     
-    var scaleUpIn100: IRawStyle = js.native
+    var scaleUpIn100: IRawStyle
     
-    var scaleUpOut103: IRawStyle = js.native
+    var scaleUpOut103: IRawStyle
     
-    var slideDownIn10: IRawStyle = js.native
+    var slideDownIn10: IRawStyle
     
-    var slideDownIn20: IRawStyle = js.native
+    var slideDownIn20: IRawStyle
     
-    var slideDownOut10: IRawStyle = js.native
+    var slideDownOut10: IRawStyle
     
-    var slideDownOut20: IRawStyle = js.native
+    var slideDownOut20: IRawStyle
     
-    var slideLeftIn10: IRawStyle = js.native
+    var slideLeftIn10: IRawStyle
     
-    var slideLeftIn20: IRawStyle = js.native
+    var slideLeftIn20: IRawStyle
     
-    var slideLeftIn40: IRawStyle = js.native
+    var slideLeftIn40: IRawStyle
     
-    var slideLeftIn400: IRawStyle = js.native
+    var slideLeftIn400: IRawStyle
     
-    var slideLeftOut10: IRawStyle = js.native
+    var slideLeftOut10: IRawStyle
     
-    var slideLeftOut20: IRawStyle = js.native
+    var slideLeftOut20: IRawStyle
     
-    var slideLeftOut40: IRawStyle = js.native
+    var slideLeftOut40: IRawStyle
     
-    var slideLeftOut400: IRawStyle = js.native
+    var slideLeftOut400: IRawStyle
     
-    var slideRightIn10: IRawStyle = js.native
+    var slideRightIn10: IRawStyle
     
-    var slideRightIn20: IRawStyle = js.native
+    var slideRightIn20: IRawStyle
     
-    var slideRightIn40: IRawStyle = js.native
+    var slideRightIn40: IRawStyle
     
-    var slideRightIn400: IRawStyle = js.native
+    var slideRightIn400: IRawStyle
     
-    var slideRightOut10: IRawStyle = js.native
+    var slideRightOut10: IRawStyle
     
-    var slideRightOut20: IRawStyle = js.native
+    var slideRightOut20: IRawStyle
     
-    var slideRightOut40: IRawStyle = js.native
+    var slideRightOut40: IRawStyle
     
-    var slideRightOut400: IRawStyle = js.native
+    var slideRightOut400: IRawStyle
     
-    var slideUpIn10: IRawStyle = js.native
+    var slideUpIn10: IRawStyle
     
-    var slideUpIn20: IRawStyle = js.native
+    var slideUpIn20: IRawStyle
     
-    var slideUpOut10: IRawStyle = js.native
+    var slideUpOut10: IRawStyle
     
-    var slideUpOut20: IRawStyle = js.native
+    var slideUpOut20: IRawStyle
   }
   object IAnimationStyles {
     
@@ -253,20 +251,19 @@ object ianimationstylesMod {
     }
   }
   
-  @js.native
   trait IAnimationVariables extends StObject {
     
-    var durationValue1: String = js.native
+    var durationValue1: String
     
-    var durationValue2: String = js.native
+    var durationValue2: String
     
-    var durationValue3: String = js.native
+    var durationValue3: String
     
-    var durationValue4: String = js.native
+    var durationValue4: String
     
-    var easeFunction1: String = js.native
+    var easeFunction1: String
     
-    var easeFunction2: String = js.native
+    var easeFunction2: String
   }
   object IAnimationVariables {
     

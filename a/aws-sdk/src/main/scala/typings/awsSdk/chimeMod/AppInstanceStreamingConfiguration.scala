@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppInstanceStreamingConfiguration extends StObject {
   
   /**
     * The data type of the app instance.
     */
-  var AppInstanceDataType: typings.awsSdk.chimeMod.AppInstanceDataType = js.native
+  var AppInstanceDataType: typings.awsSdk.chimeMod.AppInstanceDataType
   
   /**
     * The resource ARN.
     */
-  var ResourceArn: Arn = js.native
+  var ResourceArn: Arn
 }
 object AppInstanceStreamingConfiguration {
   

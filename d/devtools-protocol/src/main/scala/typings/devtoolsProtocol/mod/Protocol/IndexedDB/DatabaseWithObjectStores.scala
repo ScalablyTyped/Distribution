@@ -2,27 +2,25 @@ package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseWithObjectStores extends StObject {
   
   /**
     * Database name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Object stores in this database.
     */
-  var objectStores: js.Array[ObjectStore] = js.native
+  var objectStores: js.Array[ObjectStore]
   
   /**
     * Database version (type is not 'integer', as the standard
     * requires the version number to be 'unsigned long long')
     */
-  var version: Double = js.native
+  var version: Double
 }
 object DatabaseWithObjectStores {
   

@@ -3,35 +3,36 @@ package typings.matchMediaMock
 import typings.std.MediaQueryList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("match-media-mock", "create")
+  @JSImport("match-media-mock", JSImport.Namespace)
   @js.native
-  def create(): MatchMediaMock = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(): MatchMediaMock = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MatchMediaMock]
   
   /**
     * Mock configuration options
     */
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * Screen height
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Screen type
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * Screen width
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ConfigOptions {
     

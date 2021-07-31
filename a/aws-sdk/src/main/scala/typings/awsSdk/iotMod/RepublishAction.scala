@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepublishAction extends StObject {
   
   /**
     * The Quality of Service (QoS) level to use when republishing messages. The default value is 0.
     */
-  var qos: js.UndefOr[Qos] = js.native
+  var qos: js.UndefOr[Qos] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
   
   /**
     * The name of the MQTT topic.
     */
-  var topic: TopicPattern = js.native
+  var topic: TopicPattern
 }
 object RepublishAction {
   

@@ -2,21 +2,19 @@ package typings.googleapis.iamcredentialsV1Mod.iamcredentialsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGenerateIdentityBindingAccessTokenResponse extends StObject {
   
   /**
     * The OAuth 2.0 access token.
     */
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
   /**
     * Token expiration time. The expiration time is always set.
     */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGenerateIdentityBindingAccessTokenResponse {
   

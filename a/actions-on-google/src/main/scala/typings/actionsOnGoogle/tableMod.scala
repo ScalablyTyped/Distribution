@@ -8,20 +8,22 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsTableCardColumnPro
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/card/table", "Table")
   @js.native
-  class Table protected () extends GoogleActionsV2UiElementsTableCard {
+  class Table protected ()
+    extends StObject
+       with GoogleActionsV2UiElementsTableCard {
     /** @public */
     def this(options: TableOptions) = this()
   }
   
-  @js.native
-  trait TableColumn extends GoogleActionsV2UiElementsTableCardColumnProperties {
+  trait TableColumn
+    extends StObject
+       with GoogleActionsV2UiElementsTableCardColumnProperties {
     
     /**
       * Alias for `horizontalAlignment`
@@ -30,7 +32,7 @@ object tableMod {
       * will be aligned to the leading edge.
       * @public
       */
-    var align: js.UndefOr[GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment] = js.native
+    var align: js.UndefOr[GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment] = js.undefined
   }
   object TableColumn {
     
@@ -51,7 +53,6 @@ object tableMod {
     }
   }
   
-  @js.native
   trait TableOptions extends StObject {
     
     /**
@@ -59,7 +60,7 @@ object tableMod {
       * Currently at most 1 button is supported.
       * @public
       */
-    var buttons: js.UndefOr[GoogleActionsV2UiElementsButton | js.Array[GoogleActionsV2UiElementsButton]] = js.native
+    var buttons: js.UndefOr[GoogleActionsV2UiElementsButton | js.Array[GoogleActionsV2UiElementsButton]] = js.undefined
     
     /**
       * Headers and alignment of columns.
@@ -69,7 +70,7 @@ object tableMod {
       * When provided as string array, just the header field is set per column.
       * @public
       */
-    var columnProperties: js.UndefOr[js.Array[TableColumn | String]] = js.native
+    var columnProperties: js.UndefOr[js.Array[TableColumn | String]] = js.undefined
     
     /**
       * Headers and alignment of columns with shortened name.
@@ -81,20 +82,20 @@ object tableMod {
       * When provided a number, it represents the number of elements per row.
       * @public
       */
-    var columns: js.UndefOr[(js.Array[TableColumn | String]) | Double] = js.native
+    var columns: js.UndefOr[(js.Array[TableColumn | String]) | Double] = js.undefined
     
     /**
       * Default dividerAfter for all rows.
       * Individual rows with `dividerAfter` set will override for that specific row.
       * @public
       */
-    var dividers: js.UndefOr[Boolean] = js.native
+    var dividers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Image associated with the table.
       * @public
       */
-    var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+    var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
     
     /**
       * Row data of the table.
@@ -106,13 +107,13 @@ object tableMod {
       * a web page with more data.
       * @public
       */
-    var rows: js.Array[TableRow | js.Array[String]] = js.native
+    var rows: js.Array[TableRow | js.Array[String]]
     
     /**
       * Subtitle for the table.
       * @public
       */
-    var subtitle: js.UndefOr[String] = js.native
+    var subtitle: js.UndefOr[String] = js.undefined
     
     /**
       * Overall title of the table.
@@ -120,7 +121,7 @@ object tableMod {
       * Must be set if subtitle is set.
       * @public
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object TableOptions {
     
@@ -192,7 +193,6 @@ object tableMod {
     }
   }
   
-  @js.native
   trait TableRow extends StObject {
     
     /**
@@ -203,7 +203,7 @@ object tableMod {
       * When provided as a string array, creates the cells as text.
       * @public
       */
-    var cells: js.UndefOr[js.Array[GoogleActionsV2UiElementsTableCardCell | String]] = js.native
+    var cells: js.UndefOr[js.Array[GoogleActionsV2UiElementsTableCardCell | String]] = js.undefined
     
     /**
       * Indicates whether there should be a divider after each row.
@@ -211,7 +211,7 @@ object tableMod {
       * Overrides top level `dividers` property for this specific row if set.
       * @public
       */
-    var dividerAfter: js.UndefOr[Boolean] = js.native
+    var dividerAfter: js.UndefOr[Boolean] = js.undefined
   }
   object TableRow {
     

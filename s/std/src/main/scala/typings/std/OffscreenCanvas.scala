@@ -6,13 +6,13 @@ import typings.std.stdStrings.webgl
 import typings.std.stdStrings.webgl2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OffscreenCanvas
-  extends CanvasImageSource
+  extends StObject
      with EventTarget
+     with CanvasImageSource
      with TexImageSource
      with Transferable {
   

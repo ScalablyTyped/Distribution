@@ -13,7 +13,6 @@ import typings.web3EthEns.web3EthEnsStrings.onion
 import typings.web3EthEns.web3EthEnsStrings.onion3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -122,7 +121,7 @@ object mod {
     def setAddress(
       name: String,
       address: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -145,7 +144,7 @@ object mod {
     def setApprovalForAll(
       operator: String,
       approved: Boolean,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -168,7 +167,7 @@ object mod {
     def setContent(
       name: String,
       hash: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -191,7 +190,7 @@ object mod {
     def setContenthash(
       name: String,
       hash: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -214,7 +213,7 @@ object mod {
     def setMultihash(
       name: String,
       hash: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -237,7 +236,7 @@ object mod {
     def setOwner(
       name: String,
       address: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -261,7 +260,7 @@ object mod {
       name: String,
       x: String,
       y: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -287,7 +286,7 @@ object mod {
       owner: String,
       resolver: String,
       ttl: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -313,7 +312,7 @@ object mod {
       owner: String,
       resolver: String,
       ttl: Double,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -338,7 +337,7 @@ object mod {
     def setResolver(
       name: String,
       address: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -362,7 +361,7 @@ object mod {
       name: String,
       label: String,
       address: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -389,7 +388,7 @@ object mod {
       owner: String,
       resolver: String,
       ttl: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -424,7 +423,7 @@ object mod {
       owner: String,
       resolver: String,
       ttl: Double,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -457,7 +456,7 @@ object mod {
     def setTTL(
       name: String,
       ttl: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -479,7 +478,7 @@ object mod {
     def setTTL(
       name: String,
       ttl: Double,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -503,7 +502,7 @@ object mod {
       name: String,
       key: String,
       value: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -583,7 +582,7 @@ object mod {
     def setOwner(
       name: String,
       address: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -606,7 +605,7 @@ object mod {
     def setResolver(
       name: String,
       address: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -630,7 +629,7 @@ object mod {
       name: String,
       label: String,
       address: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -654,7 +653,7 @@ object mod {
     def setTTL(
       name: String,
       ttl: String,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -676,7 +675,7 @@ object mod {
     def setTTL(
       name: String,
       ttl: Double,
-      txConfig: js.UndefOr[scala.Nothing],
+      txConfig: Unit,
       callback: js.Function2[
           /* error */ Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
@@ -696,20 +695,19 @@ object mod {
     ): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   }
   
-  @js.native
   trait ContentHash extends StObject {
     
-    var decoded: String | Null = js.native
+    var decoded: String | Null
     
-    var error: js.UndefOr[Error | Null] = js.native
+    var error: js.UndefOr[Error | Null] = js.undefined
     
-    var protocolType: ipfs | bzz | onion | onion3 | Null = js.native
+    var protocolType: ipfs | bzz | onion | onion3 | Null
   }
   object ContentHash {
     
     @scala.inline
     def apply(): ContentHash = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(decoded = null, protocolType = null)
       __obj.asInstanceOf[ContentHash]
     }
     

@@ -4,21 +4,19 @@ import typings.leafletRoutingMachine.leafletRoutingMachineStrings.imperial
 import typings.leafletRoutingMachine.leafletRoutingMachineStrings.metric
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormatterOptions extends StObject {
   
-  var distanceTemplate: String = js.native
+  var distanceTemplate: String
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var roundingSensitivity: js.UndefOr[Double] = js.native
+  var roundingSensitivity: js.UndefOr[Double] = js.undefined
   
-  var unitNames: js.UndefOr[js.Object] = js.native
+  var unitNames: js.UndefOr[js.Object] = js.undefined
   
-  var units: js.UndefOr[metric | imperial] = js.native
+  var units: js.UndefOr[metric | imperial] = js.undefined
 }
 object FormatterOptions {
   

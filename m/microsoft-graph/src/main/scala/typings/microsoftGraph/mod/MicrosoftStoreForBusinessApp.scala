@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MicrosoftStoreForBusinessApp extends MobileApp {
+trait MicrosoftStoreForBusinessApp
+  extends StObject
+     with MobileApp {
   
   // The app license type. Possible values are: offline, online.
-  var licenseType: js.UndefOr[MicrosoftStoreForBusinessLicenseType] = js.native
+  var licenseType: js.UndefOr[MicrosoftStoreForBusinessLicenseType] = js.undefined
   
   // The app package identifier
-  var packageIdentityName: js.UndefOr[NullableOption[String]] = js.native
+  var packageIdentityName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The app product key
-  var productKey: js.UndefOr[NullableOption[String]] = js.native
+  var productKey: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The total number of Microsoft Store for Business licenses.
-  var totalLicenseCount: js.UndefOr[Double] = js.native
+  var totalLicenseCount: js.UndefOr[Double] = js.undefined
   
   // The number of Microsoft Store for Business licenses in use.
-  var usedLicenseCount: js.UndefOr[Double] = js.native
+  var usedLicenseCount: js.UndefOr[Double] = js.undefined
 }
 object MicrosoftStoreForBusinessApp {
   

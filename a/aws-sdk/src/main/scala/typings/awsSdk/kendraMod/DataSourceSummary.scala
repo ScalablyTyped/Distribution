@@ -2,41 +2,39 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSummary extends StObject {
   
   /**
     * The UNIX datetime that the data source was created.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The unique identifier for the data source.
     */
-  var Id: js.UndefOr[DataSourceId] = js.native
+  var Id: js.UndefOr[DataSourceId] = js.undefined
   
   /**
     * The name of the data source.
     */
-  var Name: js.UndefOr[DataSourceName] = js.native
+  var Name: js.UndefOr[DataSourceName] = js.undefined
   
   /**
     * The status of the data source. When the status is ATIVE the data source is ready to use.
     */
-  var Status: js.UndefOr[DataSourceStatus] = js.native
+  var Status: js.UndefOr[DataSourceStatus] = js.undefined
   
   /**
     * The type of the data source.
     */
-  var Type: js.UndefOr[DataSourceType] = js.native
+  var Type: js.UndefOr[DataSourceType] = js.undefined
   
   /**
     * The UNIX datetime that the data source was lasted updated. 
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.native
+  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object DataSourceSummary {
   

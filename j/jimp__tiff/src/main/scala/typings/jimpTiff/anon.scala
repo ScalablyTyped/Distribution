@@ -8,16 +8,14 @@ import typings.jimpTiff.jimpTiffStrings.imageSlashtiff
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Imagetiff extends StObject {
     
     @JSName("image/tiff")
-    var imageSlashtiff: js.Array[String] = js.native
+    var imageSlashtiff: js.Array[String]
   }
   object Imagetiff {
     
@@ -39,34 +37,63 @@ object anon {
     }
   }
   
-  @js.native
   trait ImagetiffDecoderFn extends StObject {
     
     @JSName("image/tiff")
-    def imageSlashtiff(data: Buffer): Bitmap = js.native
+    def imageSlashtiff(data: Buffer): Bitmap
     @JSName("image/tiff")
-    var imageSlashtiff_Original: DecoderFn = js.native
+    var imageSlashtiff_Original: DecoderFn
+  }
+  object ImagetiffDecoderFn {
+    
+    @scala.inline
+    def apply(imageSlashtiff: /* data */ Buffer => Bitmap): ImagetiffDecoderFn = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("image/tiff")(js.Any.fromFunction1(imageSlashtiff))
+      __obj.asInstanceOf[ImagetiffDecoderFn]
+    }
+    
+    @scala.inline
+    implicit class ImagetiffDecoderFnMutableBuilder[Self <: ImagetiffDecoderFn] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setImageSlashtiff(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/tiff", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait ImagetiffEncoderFn extends StObject {
     
     @JSName("image/tiff")
-    def imageSlashtiff(image: Image): Buffer = js.native
+    def imageSlashtiff(image: Image): Buffer
     @JSName("image/tiff")
-    var imageSlashtiff_Original: EncoderFn[Image] = js.native
+    var imageSlashtiff_Original: EncoderFn[Image]
+  }
+  object ImagetiffEncoderFn {
+    
+    @scala.inline
+    def apply(imageSlashtiff: Image => Buffer): ImagetiffEncoderFn = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("image/tiff")(js.Any.fromFunction1(imageSlashtiff))
+      __obj.asInstanceOf[ImagetiffEncoderFn]
+    }
+    
+    @scala.inline
+    implicit class ImagetiffEncoderFnMutableBuilder[Self <: ImagetiffEncoderFn] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setImageSlashtiff(value: Image => Buffer): Self = StObject.set(x, "image/tiff", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait MIMETIFF extends StObject {
     
-    var MIME_TIFF: imageSlashtiff = js.native
+    var MIME_TIFF: imageSlashtiff
   }
   object MIMETIFF {
     
     @scala.inline
-    def apply(MIME_TIFF: imageSlashtiff): MIMETIFF = {
-      val __obj = js.Dynamic.literal(MIME_TIFF = MIME_TIFF.asInstanceOf[js.Any])
+    def apply(): MIMETIFF = {
+      val __obj = js.Dynamic.literal(MIME_TIFF = "image/tiff")
       __obj.asInstanceOf[MIMETIFF]
     }
     

@@ -2,43 +2,41 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaPlayerOptions extends StObject {
   
-  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  var autoRepeat: js.UndefOr[Boolean] = js.native
+  var autoRepeat: js.UndefOr[Boolean] = js.undefined
   
-  var end: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.native
+  var end: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.undefined
   
-  var forwardSeek: js.UndefOr[Boolean] = js.native
+  var forwardSeek: js.UndefOr[Boolean] = js.undefined
   
-  var fullScreen: js.UndefOr[Boolean] = js.native
+  var fullScreen: js.UndefOr[Boolean] = js.undefined
   
-  var media: js.UndefOr[MediaPlayerMedia] = js.native
+  var media: js.UndefOr[MediaPlayerMedia] = js.undefined
   
-  var messages: js.UndefOr[MediaPlayerMessages] = js.native
+  var messages: js.UndefOr[MediaPlayerMessages] = js.undefined
   
-  var mute: js.UndefOr[Boolean] = js.native
+  var mute: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigatable: js.UndefOr[Boolean] = js.native
+  var navigatable: js.UndefOr[Boolean] = js.undefined
   
-  var pause: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.native
+  var pause: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.undefined
   
-  var play: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.native
+  var play: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.undefined
   
-  var ready: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.native
+  var ready: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.undefined
   
-  var timeChange: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.native
+  var timeChange: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.undefined
   
-  var volume: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.undefined
   
-  var volumeChange: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.native
+  var volumeChange: js.UndefOr[js.Function1[/* e */ MediaPlayerEvent, Unit]] = js.undefined
 }
 object MediaPlayerOptions {
   

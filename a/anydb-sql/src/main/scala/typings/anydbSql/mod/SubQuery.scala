@@ -2,7 +2,6 @@ package typings.anydbSql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,7 +17,7 @@ trait SubQuery[T] extends StObject {
   def group_Group(nodes: js.Any*): Group[SubQuery[T]] = js.native
   
   def notExists(): BinaryNode = js.native
-  def notExists(subQuery: SubQuery[_]): BinaryNode = js.native
+  def notExists(subQuery: SubQuery[js.Any]): BinaryNode = js.native
   
   def order(criteria: OrderByValueNode): SubQuery[T] = js.native
   

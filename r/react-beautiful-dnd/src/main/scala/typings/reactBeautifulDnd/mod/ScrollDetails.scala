@@ -2,20 +2,18 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollDetails extends StObject {
   
-  var current: Position = js.native
+  var current: Position
   
-  var diff: ScrollDifference = js.native
+  var diff: ScrollDifference
   
-  var initial: Position = js.native
+  var initial: Position
   
   // the maximum allowable scroll for the frame
-  var max: Position = js.native
+  var max: Position
 }
 object ScrollDetails {
   

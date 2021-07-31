@@ -2,39 +2,37 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to run a stored query to generate a report.
   */
-@js.native
 trait SchemaRunQueryRequest extends StObject {
   
   /**
     * Report data range used to generate the report.
     */
-  var dataRange: js.UndefOr[String] = js.native
+  var dataRange: js.UndefOr[String] = js.undefined
   
   /**
     * The ending time for the data that is shown in the report. Note,
     * reportDataEndTimeMs is required if dataRange is CUSTOM_DATES and ignored
     * otherwise.
     */
-  var reportDataEndTimeMs: js.UndefOr[String] = js.native
+  var reportDataEndTimeMs: js.UndefOr[String] = js.undefined
   
   /**
     * The starting time for the data that is shown in the report. Note,
     * reportDataStartTimeMs is required if dataRange is CUSTOM_DATES and
     * ignored otherwise.
     */
-  var reportDataStartTimeMs: js.UndefOr[String] = js.native
+  var reportDataStartTimeMs: js.UndefOr[String] = js.undefined
   
   /**
     * Canonical timezone code for report data time. Defaults to
     * America/New_York.
     */
-  var timezoneCode: js.UndefOr[String] = js.native
+  var timezoneCode: js.UndefOr[String] = js.undefined
 }
 object SchemaRunQueryRequest {
   

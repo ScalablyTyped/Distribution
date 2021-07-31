@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTopicRulesRequest extends StObject {
   
   /**
     * The maximum number of results to return.
     */
-  var maxResults: js.UndefOr[TopicRuleMaxResults] = js.native
+  var maxResults: js.UndefOr[TopicRuleMaxResults] = js.undefined
   
   /**
     * To retrieve the next set of results, the nextToken value from a previous response; otherwise null to receive the first set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * Specifies whether the rule is disabled.
     */
-  var ruleDisabled: js.UndefOr[IsDisabled] = js.native
+  var ruleDisabled: js.UndefOr[IsDisabled] = js.undefined
   
   /**
     * The topic.
     */
-  var topic: js.UndefOr[Topic] = js.native
+  var topic: js.UndefOr[Topic] = js.undefined
 }
 object ListTopicRulesRequest {
   

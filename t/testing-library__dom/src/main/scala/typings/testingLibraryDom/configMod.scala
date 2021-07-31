@@ -5,52 +5,51 @@ import typings.std.HTMLElement
 import typings.testingLibraryDom.anon.PartialConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
   
-  @JSImport("@testing-library/dom/types/config", "configure")
+  @JSImport("@testing-library/dom/types/config", JSImport.Namespace)
   @js.native
-  def configure(configDelta: PartialConfig): Unit = js.native
-  @JSImport("@testing-library/dom/types/config", "configure")
-  @js.native
-  def configure(configDelta: ConfigFn): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@testing-library/dom/types/config", "getConfig")
-  @js.native
-  def getConfig(): Config = js.native
+  @scala.inline
+  def configure(configDelta: PartialConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(configDelta.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def configure(configDelta: ConfigFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(configDelta.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def getConfig(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config]
+  
   trait Config extends StObject {
     
-    var asyncUtilTimeout: Double = js.native
+    var asyncUtilTimeout: Double
     
-    def asyncWrapper(cb: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+    def asyncWrapper(cb: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any]
     
-    var computedStyleSupportsPseudoElements: Boolean = js.native
+    var computedStyleSupportsPseudoElements: Boolean
     
-    var defaultHidden: Boolean = js.native
+    var defaultHidden: Boolean
     
-    def eventWrapper(cb: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+    def eventWrapper(cb: js.Function1[/* repeated */ js.Any, js.Any]): Unit
     
-    def getElementError(message: String, container: HTMLElement): Error = js.native
+    def getElementError(message: String, container: HTMLElement): Error
     
-    var showOriginalStackTrace: Boolean = js.native
+    var showOriginalStackTrace: Boolean
     
-    var testIdAttribute: String = js.native
+    var testIdAttribute: String
     
-    var throwSuggestions: Boolean = js.native
+    var throwSuggestions: Boolean
   }
   object Config {
     
     @scala.inline
     def apply(
       asyncUtilTimeout: Double,
-      asyncWrapper: js.Function1[/* repeated */ js.Any, _] => js.Promise[_],
+      asyncWrapper: js.Function1[/* repeated */ js.Any, js.Any] => js.Promise[js.Any],
       computedStyleSupportsPseudoElements: Boolean,
       defaultHidden: Boolean,
-      eventWrapper: js.Function1[/* repeated */ js.Any, _] => Unit,
+      eventWrapper: js.Function1[/* repeated */ js.Any, js.Any] => Unit,
       getElementError: (String, HTMLElement) => Error,
       showOriginalStackTrace: Boolean,
       testIdAttribute: String,
@@ -67,7 +66,7 @@ object configMod {
       def setAsyncUtilTimeout(value: Double): Self = StObject.set(x, "asyncUtilTimeout", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAsyncWrapper(value: js.Function1[/* repeated */ js.Any, _] => js.Promise[_]): Self = StObject.set(x, "asyncWrapper", js.Any.fromFunction1(value))
+      def setAsyncWrapper(value: js.Function1[/* repeated */ js.Any, js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "asyncWrapper", js.Any.fromFunction1(value))
       
       @scala.inline
       def setComputedStyleSupportsPseudoElements(value: Boolean): Self = StObject.set(x, "computedStyleSupportsPseudoElements", value.asInstanceOf[js.Any])
@@ -76,7 +75,7 @@ object configMod {
       def setDefaultHidden(value: Boolean): Self = StObject.set(x, "defaultHidden", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEventWrapper(value: js.Function1[/* repeated */ js.Any, _] => Unit): Self = StObject.set(x, "eventWrapper", js.Any.fromFunction1(value))
+      def setEventWrapper(value: js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "eventWrapper", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetElementError(value: (String, HTMLElement) => Error): Self = StObject.set(x, "getElementError", js.Any.fromFunction2(value))

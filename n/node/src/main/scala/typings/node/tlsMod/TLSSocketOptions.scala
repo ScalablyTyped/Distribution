@@ -3,36 +3,35 @@ package typings.node.tlsMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TLSSocketOptions
-  extends SecureContextOptions
+  extends StObject
+     with SecureContextOptions
      with CommonConnectionOptions {
   
   /**
     * If true the TLS socket will be instantiated in server-mode.
     * Defaults to false.
     */
-  var isServer: js.UndefOr[Boolean] = js.native
+  var isServer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, specifies that the OCSP status request extension will be
     * added to the client hello and an 'OCSPResponse' event will be
     * emitted on the socket before establishing a secure communication
     */
-  var requestOCSP: js.UndefOr[Boolean] = js.native
+  var requestOCSP: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional net.Server instance.
     */
-  var server: js.UndefOr[typings.node.netMod.Server] = js.native
+  var server: js.UndefOr[typings.node.netMod.Server] = js.undefined
   
   /**
     * An optional Buffer instance containing a TLS session.
     */
-  var session: js.UndefOr[Buffer] = js.native
+  var session: js.UndefOr[Buffer] = js.undefined
 }
 object TLSSocketOptions {
   

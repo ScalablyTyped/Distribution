@@ -5,21 +5,22 @@ import typings.react.mod.ReactNode
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeProviderThemeProviderMod {
   
-  @JSImport("@material-ui/styles/ThemeProvider/ThemeProvider", JSImport.Default)
+  @JSImport("@material-ui/styles/ThemeProvider/ThemeProvider", JSImport.Namespace)
   @js.native
-  def default[T](props: ThemeProviderProps[T]): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[T](props: ThemeProviderProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait ThemeProviderProps[Theme] extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var theme: Partial[Theme] | (js.Function1[/* outerTheme */ Theme, Theme]) = js.native
+    var theme: Partial[Theme] | (js.Function1[/* outerTheme */ Theme, Theme])
   }
   object ThemeProviderProps {
     
@@ -30,7 +31,7 @@ object themeProviderThemeProviderMod {
     }
     
     @scala.inline
-    implicit class ThemeProviderPropsMutableBuilder[Self <: ThemeProviderProps[_], Theme] (val x: Self with ThemeProviderProps[Theme]) extends AnyVal {
+    implicit class ThemeProviderPropsMutableBuilder[Self <: ThemeProviderProps[?], Theme] (val x: Self & ThemeProviderProps[Theme]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

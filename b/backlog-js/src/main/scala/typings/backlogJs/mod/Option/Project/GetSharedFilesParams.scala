@@ -3,17 +3,15 @@ package typings.backlogJs.mod.Option.Project
 import typings.backlogJs.mod.Option.Order
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSharedFilesParams extends StObject {
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var order: js.UndefOr[Order] = js.native
+  var order: js.UndefOr[Order] = js.undefined
 }
 object GetSharedFilesParams {
   

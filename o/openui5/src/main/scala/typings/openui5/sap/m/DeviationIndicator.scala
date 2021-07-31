@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait DeviationIndicator extends StObject
 object DeviationIndicator extends StObject {
   
   @js.native
-  sealed trait Down extends DeviationIndicator
+  sealed trait Down
+    extends StObject
+       with DeviationIndicator
   
   @js.native
-  sealed trait None extends DeviationIndicator
+  sealed trait None
+    extends StObject
+       with DeviationIndicator
   
   @js.native
-  sealed trait Up extends DeviationIndicator
+  sealed trait Up
+    extends StObject
+       with DeviationIndicator
 }

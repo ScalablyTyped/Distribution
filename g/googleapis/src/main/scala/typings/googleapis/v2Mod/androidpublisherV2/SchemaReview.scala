@@ -2,26 +2,24 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaReview extends StObject {
   
   /**
     * The name of the user who wrote the review.
     */
-  var authorName: js.UndefOr[String] = js.native
+  var authorName: js.UndefOr[String] = js.undefined
   
   /**
     * A repeated field containing comments for the review.
     */
-  var comments: js.UndefOr[js.Array[SchemaComment]] = js.native
+  var comments: js.UndefOr[js.Array[SchemaComment]] = js.undefined
   
   /**
     * Unique identifier for this review.
     */
-  var reviewId: js.UndefOr[String] = js.native
+  var reviewId: js.UndefOr[String] = js.undefined
 }
 object SchemaReview {
   

@@ -4,14 +4,16 @@ import typings.node.netMod.Server
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(server: Server): Unit = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("server-destroy", JSImport.Namespace)
   @js.native
-  def apply(server: Server): Unit = js.native
+  val ^ : js.Any = js.native
   
   /* augmented module */
   object netAugmentingMod {

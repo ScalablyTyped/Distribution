@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSitesVersionsPatch extends StandardParameters {
+trait ParamsResourceSitesVersionsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The unique identifier for a version, in the format:
@@ -23,12 +23,12 @@ trait ParamsResourceSitesVersionsPatch extends StandardParameters {
     * This name is provided in the response body when you call the
     * [`CreateVersion`](../sites.versions/create) endpoint.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaVersion] = js.native
+  var requestBody: js.UndefOr[SchemaVersion] = js.undefined
   
   /**
     * A set of field names from your [version](../sites.versions) that you want
@@ -36,7 +36,7 @@ trait ParamsResourceSitesVersionsPatch extends StandardParameters {
     * mask. <br>If a mask is not provided then a default mask of only
     * [`status`](../sites.versions#Version.FIELDS.status) will be used.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSitesVersionsPatch {
   

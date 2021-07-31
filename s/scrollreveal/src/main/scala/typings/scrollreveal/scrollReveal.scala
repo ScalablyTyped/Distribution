@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.std.NodeListOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollReveal {
@@ -32,46 +31,45 @@ object scrollReveal {
     def sync(): Unit = js.native
   }
   
-  @js.native
   trait ScrollRevealObjectOptions extends StObject {
     
-    var afterReset: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.native
+    var afterReset: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
     
-    var afterReveal: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.native
+    var afterReveal: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
     
-    var beforeReset: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.native
+    var beforeReset: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
     
-    var beforeReveal: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.native
+    var beforeReveal: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
     
-    var container: js.UndefOr[js.Any] = js.native
+    var container: js.UndefOr[js.Any] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var distance: js.UndefOr[String] = js.native
+    var distance: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var mobile: js.UndefOr[Boolean] = js.native
+    var mobile: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
     
-    var reset: js.UndefOr[Boolean] = js.native
+    var reset: js.UndefOr[Boolean] = js.undefined
     
-    var rotate: js.UndefOr[ScrollRevealRotateObject] = js.native
+    var rotate: js.UndefOr[ScrollRevealRotateObject] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var useDelay: js.UndefOr[String] = js.native
+    var useDelay: js.UndefOr[String] = js.undefined
     
-    var viewFactor: js.UndefOr[Double] = js.native
+    var viewFactor: js.UndefOr[Double] = js.undefined
     
-    var viewOffset: js.UndefOr[ScrollRevealPositionObject] = js.native
+    var viewOffset: js.UndefOr[ScrollRevealPositionObject] = js.undefined
   }
   object ScrollRevealObjectOptions {
     
@@ -200,16 +198,15 @@ object scrollReveal {
     }
   }
   
-  @js.native
   trait ScrollRevealPositionObject extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object ScrollRevealPositionObject {
     
@@ -248,14 +245,13 @@ object scrollReveal {
     }
   }
   
-  @js.native
   trait ScrollRevealRotateObject extends StObject {
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
     
-    var z: js.UndefOr[Double] = js.native
+    var z: js.UndefOr[Double] = js.undefined
   }
   object ScrollRevealRotateObject {
     

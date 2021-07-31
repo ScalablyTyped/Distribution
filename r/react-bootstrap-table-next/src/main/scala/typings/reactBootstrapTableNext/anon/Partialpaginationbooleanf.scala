@@ -2,22 +2,20 @@ package typings.reactBootstrapTableNext.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  pagination :boolean,   filter :boolean,   sort :boolean,   cellEdit :boolean,   search :boolean}> */
-@js.native
 trait Partialpaginationbooleanf extends StObject {
   
-  var cellEdit: js.UndefOr[Boolean] = js.native
+  var cellEdit: js.UndefOr[Boolean] = js.undefined
   
-  var filter: js.UndefOr[Boolean] = js.native
+  var filter: js.UndefOr[Boolean] = js.undefined
   
-  var pagination: js.UndefOr[Boolean] = js.native
+  var pagination: js.UndefOr[Boolean] = js.undefined
   
-  var search: js.UndefOr[Boolean] = js.native
+  var search: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
 }
 object Partialpaginationbooleanf {
   

@@ -2,33 +2,31 @@ package typings.winrt.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICallControl extends StObject {
   
-  def endCall(callToken: Double): Unit = js.native
+  def endCall(callToken: Double): Unit
   
-  var hasRinger: Boolean = js.native
+  var hasRinger: Boolean
   
-  def indicateActiveCall(callToken: Double): Unit = js.native
+  def indicateActiveCall(callToken: Double): Unit
   
-  def indicateNewIncomingCall(enableRinger: Boolean, callerId: String): Double = js.native
+  def indicateNewIncomingCall(enableRinger: Boolean, callerId: String): Double
   
-  def indicateNewOutgoingCall(): Double = js.native
+  def indicateNewOutgoingCall(): Double
   
-  var onanswerrequested: js.Any = js.native
+  var onanswerrequested: js.Any
   
-  var onaudiotransferrequested: js.Any = js.native
+  var onaudiotransferrequested: js.Any
   
-  var ondialrequested: js.Any = js.native
+  var ondialrequested: js.Any
   
-  var onhanguprequested: js.Any = js.native
+  var onhanguprequested: js.Any
   
-  var onkeypadpressed: js.Any = js.native
+  var onkeypadpressed: js.Any
   
-  var onredialrequested: js.Any = js.native
+  var onredialrequested: js.Any
 }
 object ICallControl {
   

@@ -12,7 +12,7 @@ Common types for TypeScript
 | Keywords           | - |
 | # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 334488 |
+| # downloads        | 1429567 |
 | # stars            | 0 |
 
 ## Links

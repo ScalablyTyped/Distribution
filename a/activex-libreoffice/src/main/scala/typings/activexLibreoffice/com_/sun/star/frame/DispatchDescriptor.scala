@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.frame
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * pack these parameters in a flat structure which can be used in a simple manner.
   * @see XDispatchProvider.queryDispatches()
   */
-@js.native
 trait DispatchDescriptor extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait DispatchDescriptor extends StObject {
     * Must be a full parsed URL. Use service {@link com.sun.star.util.URLTransformer} for that.
     * @see com.sun.star.util.URLTransformer
     */
-  var FeatureURL: URL = js.native
+  var FeatureURL: URL
   
   /**
     * name of the target frame
@@ -30,7 +28,7 @@ trait DispatchDescriptor extends StObject {
     * Special targets (e.g. "_blank", "_self") or really existing target names can be used.
     * @see XDispatchProvider.queryDispatch()
     */
-  var FrameName: String = js.native
+  var FrameName: String
   
   /**
     * describes how the target frame is to be searched
@@ -38,7 +36,7 @@ trait DispatchDescriptor extends StObject {
     * This optional parameter is used if **FrameName** isn't a special target only.
     * @see FrameSearchFlag
     */
-  var SearchFlags: Double = js.native
+  var SearchFlags: Double
 }
 object DispatchDescriptor {
   

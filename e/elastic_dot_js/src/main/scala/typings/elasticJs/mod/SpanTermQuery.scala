@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "SpanTermQuery")
 @js.native
-class SpanTermQuery protected () extends Query {
+class SpanTermQuery protected ()
+  extends StObject
+     with Query {
   /*
     Matches spans containing a term
     */

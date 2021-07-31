@@ -49,7 +49,6 @@ import typings.firebase.firebaseStrings.view_search_results
 import typings.firebase.mod.firebase.app.App
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -77,16 +76,16 @@ trait Analytics extends StObject {
   def logEvent[T /* <: String */](eventName: typings.firebase.mod.firebase.analytics.CustomEventName[T]): Unit = js.native
   def logEvent[T /* <: String */](
     eventName: typings.firebase.mod.firebase.analytics.CustomEventName[T],
-    eventParams: js.UndefOr[scala.Nothing],
-    options: typings.firebase.mod.firebase.analytics.AnalyticsCallOptions
-  ): Unit = js.native
-  def logEvent[T /* <: String */](
-    eventName: typings.firebase.mod.firebase.analytics.CustomEventName[T],
     eventParams: StringDictionary[js.Any]
   ): Unit = js.native
   def logEvent[T /* <: String */](
     eventName: typings.firebase.mod.firebase.analytics.CustomEventName[T],
     eventParams: StringDictionary[js.Any],
+    options: typings.firebase.mod.firebase.analytics.AnalyticsCallOptions
+  ): Unit = js.native
+  def logEvent[T /* <: String */](
+    eventName: typings.firebase.mod.firebase.analytics.CustomEventName[T],
+    eventParams: Unit,
     options: typings.firebase.mod.firebase.analytics.AnalyticsCallOptions
   ): Unit = js.native
   /**
@@ -102,7 +101,7 @@ trait Analytics extends StObject {
   @JSName("logEvent")
   def logEvent_addpaymentinfo(
     eventName: add_payment_info,
-    eventParams: js.UndefOr[scala.Nothing],
+    eventParams: Unit,
     options: typings.firebase.mod.firebase.analytics.AnalyticsCallOptions
   ): Unit = js.native
   @JSName("logEvent")

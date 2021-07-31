@@ -2,21 +2,19 @@ package typings.reactNativeFetchBlob.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RNFetchBlobWriteStream extends StObject {
   
-  var append: Boolean = js.native
+  var append: Boolean
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  var encoding: String = js.native
+  var encoding: String
   
-  var id: String = js.native
+  var id: String
   
-  def write(data: String): js.Promise[Unit] = js.native
+  def write(data: String): js.Promise[Unit]
 }
 object RNFetchBlobWriteStream {
   

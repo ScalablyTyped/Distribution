@@ -2,15 +2,13 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X11ChannelData extends StObject {
   
-  var srcIP: String = js.native
+  var srcIP: String
   
-  var srcPort: Double = js.native
+  var srcPort: Double
 }
 object X11ChannelData {
   

@@ -10,7 +10,6 @@ import typings.less.Less.StaticOptions
 import typings.std.HTMLLinkElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,13 +22,13 @@ trait LessStatic extends StObject {
   var options: StaticOptions = js.native
   
   def refresh(): js.Promise[RefreshOutput] = js.native
-  def refresh(reload: js.UndefOr[scala.Nothing], modifyVars: js.UndefOr[scala.Nothing], clearFileCache: Boolean): js.Promise[RefreshOutput] = js.native
-  def refresh(reload: js.UndefOr[scala.Nothing], modifyVars: StringDictionary[String]): js.Promise[RefreshOutput] = js.native
-  def refresh(reload: js.UndefOr[scala.Nothing], modifyVars: StringDictionary[String], clearFileCache: Boolean): js.Promise[RefreshOutput] = js.native
   def refresh(reload: Boolean): js.Promise[RefreshOutput] = js.native
-  def refresh(reload: Boolean, modifyVars: js.UndefOr[scala.Nothing], clearFileCache: Boolean): js.Promise[RefreshOutput] = js.native
   def refresh(reload: Boolean, modifyVars: StringDictionary[String]): js.Promise[RefreshOutput] = js.native
   def refresh(reload: Boolean, modifyVars: StringDictionary[String], clearFileCache: Boolean): js.Promise[RefreshOutput] = js.native
+  def refresh(reload: Boolean, modifyVars: Unit, clearFileCache: Boolean): js.Promise[RefreshOutput] = js.native
+  def refresh(reload: Unit, modifyVars: StringDictionary[String]): js.Promise[RefreshOutput] = js.native
+  def refresh(reload: Unit, modifyVars: StringDictionary[String], clearFileCache: Boolean): js.Promise[RefreshOutput] = js.native
+  def refresh(reload: Unit, modifyVars: Unit, clearFileCache: Boolean): js.Promise[RefreshOutput] = js.native
   
   def refreshStyles(): Unit = js.native
   

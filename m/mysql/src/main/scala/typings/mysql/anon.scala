@@ -7,13 +7,11 @@ import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined node.tls.SecureContextOptions & {  rejectUnauthorized :boolean | undefined} */
-  @js.native
   trait SecureContextOptionsrejec extends StObject {
     
     /**
@@ -21,7 +19,7 @@ object anon {
       * the well-known CAs curated by Mozilla. Mozilla's CAs are completely
       * replaced when CAs are explicitly specified using this option.
       */
-    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
     /**
       *  Cert chains in PEM format. One cert chain should be provided per
@@ -34,7 +32,7 @@ object anon {
       *  intermediate certificates are not provided, the peer will not be
       *  able to validate the certificate, and the handshake will fail.
       */
-    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
     /**
       * Cipher suite specification, replacing the default. For more
@@ -42,17 +40,17 @@ object anon {
       * ciphers can be obtained via tls.getCiphers(). Cipher names must be
       * uppercased in order for OpenSSL to accept them.
       */
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
     /**
       * Name of an OpenSSL engine which can provide the client certificate.
       */
-    var clientCertEngine: js.UndefOr[String] = js.native
+    var clientCertEngine: js.UndefOr[String] = js.undefined
     
     /**
       * PEM formatted CRLs (Certificate Revocation Lists).
       */
-    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
     /**
       * Diffie Hellman parameters, required for Perfect Forward Secrecy. Use
@@ -62,7 +60,7 @@ object anon {
       * stronger security. If omitted or invalid, the parameters are
       * silently discarded and DHE ciphers will not be available.
       */
-    var dhparam: js.UndefOr[String | Buffer] = js.native
+    var dhparam: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * A string describing a named curve or a colon separated list of curve
@@ -73,14 +71,14 @@ object anon {
       * name and description of each available elliptic curve. Default:
       * tls.DEFAULT_ECDH_CURVE.
       */
-    var ecdhCurve: js.UndefOr[String] = js.native
+    var ecdhCurve: js.UndefOr[String] = js.undefined
     
     /**
       * Attempt to use the server's cipher suite preferences instead of the
       * client's. When true, causes SSL_OP_CIPHER_SERVER_PREFERENCE to be
       * set in secureOptions
       */
-    var honorCipherOrder: js.UndefOr[Boolean] = js.native
+    var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Private keys in PEM format. PEM allows the option of private keys
@@ -92,7 +90,7 @@ object anon {
       * object.passphrase is optional. Encrypted keys will be decrypted with
       * object.passphrase if provided, or options.passphrase if it is not.
       */
-    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.native
+    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.undefined
     
     /**
       * Optionally set the maximum TLS version to allow. One
@@ -102,7 +100,7 @@ object anon {
       * `--tls-max-v1.2` sets the default to `'TLSv1.2'`. Using `--tls-max-v1.3` sets the default to
       * `'TLSv1.3'`. If multiple of the options are provided, the highest maximum is used.
       */
-    var maxVersion: js.UndefOr[SecureVersion] = js.native
+    var maxVersion: js.UndefOr[SecureVersion] = js.undefined
     
     /**
       * Optionally set the minimum TLS version to allow. One
@@ -114,12 +112,12 @@ object anon {
       * `'TLSv1.1'`. Using `--tls-min-v1.3` sets the default to
       * 'TLSv1.3'. If multiple of the options are provided, the lowest minimum is used.
       */
-    var minVersion: js.UndefOr[SecureVersion] = js.native
+    var minVersion: js.UndefOr[SecureVersion] = js.undefined
     
     /**
       * Shared passphrase used for a single private key and/or a PFX.
       */
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
     /**
       * PFX or PKCS12 encoded private key and certificate chain. pfx is an
@@ -131,29 +129,29 @@ object anon {
       * object.passphrase is optional. Encrypted PFX will be decrypted with
       * object.passphrase if provided, or options.passphrase if it is not.
       */
-    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.native
+    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.undefined
     
     /**
       * Name of an OpenSSL engine to get private key from. Should be used
       * together with privateKeyIdentifier.
       */
-    var privateKeyEngine: js.UndefOr[String] = js.native
+    var privateKeyEngine: js.UndefOr[String] = js.undefined
     
     /**
       * Identifier of a private key managed by an OpenSSL engine. Should be
       * used together with privateKeyEngine. Should not be set together with
       * key, because both options define a private key in different ways.
       */
-    var privateKeyIdentifier: js.UndefOr[String] = js.native
+    var privateKeyIdentifier: js.UndefOr[String] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optionally affect the OpenSSL protocol behavior, which is not
       * usually necessary. This should be used carefully if at all! Value is
       * a numeric bitmask of the SSL_OP_* options from OpenSSL Options
       */
-    var secureOptions: js.UndefOr[Double] = js.native
+    var secureOptions: js.UndefOr[Double] = js.undefined
     
     // Value is a numeric bitmask of the `SSL_OP_*` options
     /**
@@ -167,20 +165,20 @@ object anon {
       * TLS versions less than 1.2, but it may be required for
       * interoperability. Default: none, see minVersion.
       */
-    var secureProtocol: js.UndefOr[String] = js.native
+    var secureProtocol: js.UndefOr[String] = js.undefined
     
     /**
       * Opaque identifier used by servers to ensure session state is not
       * shared between applications. Unused by clients.
       */
-    var sessionIdContext: js.UndefOr[String] = js.native
+    var sessionIdContext: js.UndefOr[String] = js.undefined
     
     /**
       * The number of seconds after which a TLS session created by the
       * server will no longer be resumable. See Session Resumption for more
       * information. Default: 300.
       */
-    var sessionTimeout: js.UndefOr[Double] = js.native
+    var sessionTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       *  Colon-separated list of supported signature algorithms. The list
@@ -188,13 +186,13 @@ object anon {
       *  algorithms (RSA-PSS, ECDSA etc.), combination of both (e.g
       *  'RSA+SHA384') or TLS v1.3 scheme names (e.g. rsa_pss_pss_sha512).
       */
-    var sigalgs: js.UndefOr[String] = js.native
+    var sigalgs: js.UndefOr[String] = js.undefined
     
     /**
       * 48-bytes of cryptographically strong pseudo-random data.
       * See Session Resumption for more information.
       */
-    var ticketKeys: js.UndefOr[Buffer] = js.native
+    var ticketKeys: js.UndefOr[Buffer] = js.undefined
   }
   object SecureContextOptionsrejec {
     
@@ -356,10 +354,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ToSqlString extends StObject {
     
-    def toSqlString(): String = js.native
+    def toSqlString(): String
   }
   object ToSqlString {
     
@@ -378,42 +375,41 @@ object anon {
   }
   
   /* Inlined mysql.mysql.UntypedFieldInfo & {  type :string,   length :number, string (): string, buffer (): node.Buffer, geometry (): null | mysql.mysql.GeometryType} */
-  @js.native
   trait UntypedFieldInfotypestrin extends StObject {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    def buffer(): Buffer = js.native
+    def buffer(): Buffer
     
-    var catalog: String = js.native
+    var catalog: String
     
-    var charsetNr: Double = js.native
+    var charsetNr: Double
     
-    var db: String = js.native
+    var db: String
     
-    var decimals: Double = js.native
+    var decimals: Double
     
-    var flags: Double = js.native
+    var flags: Double
     
-    def geometry(): Null | GeometryType = js.native
+    def geometry(): Null | GeometryType
     
-    var length: Double = js.native
+    var length: Double
     
-    var name: String = js.native
+    var name: String
     
-    var orgName: String = js.native
+    var orgName: String
     
-    var orgTable: String = js.native
+    var orgTable: String
     
-    var protocol41: Boolean = js.native
+    var protocol41: Boolean
     
-    def string(): String = js.native
+    def string(): String
     
-    var table: String = js.native
+    var table: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var zeroFill: Boolean = js.native
+    var zeroFill: Boolean
   }
   object UntypedFieldInfotypestrin {
     
@@ -500,12 +496,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

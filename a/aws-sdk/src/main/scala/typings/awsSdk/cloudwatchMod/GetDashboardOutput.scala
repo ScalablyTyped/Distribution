@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDashboardOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dashboard.
     */
-  var DashboardArn: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardArn] = js.native
+  var DashboardArn: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardArn] = js.undefined
   
   /**
     * The detailed information about the dashboard, including what widgets are included and their location on the dashboard. For more information about the DashboardBody syntax, see Dashboard Body Structure and Syntax. 
     */
-  var DashboardBody: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardBody] = js.native
+  var DashboardBody: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardBody] = js.undefined
   
   /**
     * The name of the dashboard.
     */
-  var DashboardName: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardName] = js.native
+  var DashboardName: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardName] = js.undefined
 }
 object GetDashboardOutput {
   

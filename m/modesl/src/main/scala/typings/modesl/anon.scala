@@ -2,19 +2,17 @@ package typings.modesl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HIGH extends StObject {
     
-    var HIGH: String = js.native
+    var HIGH: String
     
-    var LOW: String = js.native
+    var LOW: String
     
-    var NORMAL: String = js.native
+    var NORMAL: String
   }
   object HIGH {
     

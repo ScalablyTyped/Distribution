@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigatorYAxisOptions extends StObject {
   
   /**
     * (Highstock, Gantt) Accessibility options for an axis. Requires the
     * accessibility module.
     */
-  var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.native
+  var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) When using multiple axis, the ticks of two
@@ -28,20 +26,20 @@ trait NavigatorYAxisOptions extends StObject {
     *
     * Disabled for logarithmic axes.
     */
-  var alignTicks: js.UndefOr[Boolean] = js.native
+  var alignTicks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) Whether to allow decimals in this axis' ticks. When
     * counting integers, like persons or hits on a web page, decimals should be
     * avoided in the labels.
     */
-  var allowDecimals: js.UndefOr[Boolean] = js.native
+  var allowDecimals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) When using an alternate grid color, a band is painted
     * across the plot area between every other grid line.
     */
-  var alternateGridColor: js.UndefOr[ColorType] = js.native
+  var alternateGridColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts) In a polar chart, this is the angle of the Y axis in
@@ -50,14 +48,14 @@ trait NavigatorYAxisOptions extends StObject {
     * unaffected. Since v8.0.0 this option is also applicable for X axis
     * (inverted polar).
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An array defining breaks in the axis, the
     * sections defined will be left out and all the points shifted closer to
     * each other.
     */
-  var breaks: js.UndefOr[js.Array[NavigatorYAxisBreaksOptions]] = js.native
+  var breaks: js.UndefOr[js.Array[NavigatorYAxisBreaksOptions]] = js.undefined
   
   /**
     * (Highcharts, Gantt) If categories are present for the xAxis, names are
@@ -69,20 +67,20 @@ trait NavigatorYAxisOptions extends StObject {
     *
     * Example: `categories: ['Apples', 'Bananas', 'Oranges']`
     */
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The highest allowed value for
     * automatically computed axis extremes.
     */
-  var ceiling: js.UndefOr[Double] = js.native
+  var ceiling: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) A class name that opens for styling the axis by CSS,
     * especially in Highcharts styled mode. The class name is applied to group
     * elements for the grid, axis elements and labels.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) Configure a crosshair that follows either the mouse
@@ -91,7 +89,7 @@ trait NavigatorYAxisOptions extends StObject {
     * In styled mode, the crosshairs are styled in the `.highcharts-crosshair`,
     * `.highcharts-crosshair-thin` or `.highcharts-xaxis-category` classes.
     */
-  var crosshair: js.UndefOr[Boolean | AxisCrosshairOptions] = js.native
+  var crosshair: js.UndefOr[Boolean | AxisCrosshairOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) For a datetime axis, the scale will
@@ -105,7 +103,7 @@ trait NavigatorYAxisOptions extends StObject {
     *
     * Defaults to: (see online documentation for example)
     */
-  var dateTimeLabelFormats: js.UndefOr[AxisDateTimeLabelFormatsOptions] = js.native
+  var dateTimeLabelFormats: js.UndefOr[AxisDateTimeLabelFormatsOptions] = js.undefined
   
   /**
     * (Highstock, Gantt) Whether to force the axis to end on a tick. Use this
@@ -113,23 +111,23 @@ trait NavigatorYAxisOptions extends StObject {
     *
     * This option is always disabled, when panning type is either `y` or `xy`.
     */
-  var endOnTick: js.UndefOr[Boolean] = js.native
+  var endOnTick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) Event handlers for the axis.
     */
-  var events: js.UndefOr[NavigatorYAxisEventsOptions] = js.native
+  var events: js.UndefOr[NavigatorYAxisEventsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The lowest allowed value for automatically
     * computed axis extremes.
     */
-  var floor: js.UndefOr[Double] = js.native
+  var floor: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Set grid options for the axis labels. Requires Highcharts Gantt.
     */
-  var grid: js.UndefOr[NavigatorYAxisGridOptions] = js.native
+  var grid: js.UndefOr[NavigatorYAxisGridOptions] = js.undefined
   
   /**
     * (Highstock, Gantt) Color of the grid lines extending the ticks across the
@@ -137,13 +135,13 @@ trait NavigatorYAxisOptions extends StObject {
     *
     * In styled mode, the stroke is given in the `.highcharts-grid-line` class.
     */
-  var gridLineColor: js.UndefOr[ColorType] = js.native
+  var gridLineColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highstock, Gantt) The dash or dot style of the grid lines. For possible
     * values, see this demonstration.
     */
-  var gridLineDashStyle: js.UndefOr[DashStyleValue] = js.native
+  var gridLineDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highcharts) Polar charts only. Whether the grid lines should draw as a
@@ -151,7 +149,7 @@ trait NavigatorYAxisOptions extends StObject {
     * either `circle` or `polygon`. Since v8.0.0 this option is also applicable
     * for X axis (inverted polar).
     */
-  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.native
+  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.undefined
   
   /**
     * (Highstock, Gantt) The width of the grid lines extending the ticks across
@@ -160,18 +158,18 @@ trait NavigatorYAxisOptions extends StObject {
     * In styled mode, the stroke width is given in the `.highcharts-grid-line`
     * class.
     */
-  var gridLineWidth: js.UndefOr[Double] = js.native
+  var gridLineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The Z index of the grid lines.
     */
-  var gridZIndex: js.UndefOr[Double] = js.native
+  var gridZIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) An id for the axis. This can be used after render time
     * to get a pointer to the axis object through `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) The axis labels show the number or category for each
@@ -180,7 +178,7 @@ trait NavigatorYAxisOptions extends StObject {
     * Since v8.0.0: Labels are animated in categorized x-axis with updating
     * data if `tickInterval` and `step` is set to 1.
     */
-  var labels: js.UndefOr[NavigatorYAxisLabelsOptions] = js.native
+  var labels: js.UndefOr[NavigatorYAxisLabelsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) The left position as the horizontal axis. If it's
@@ -189,7 +187,7 @@ trait NavigatorYAxisOptions extends StObject {
     * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
     * as percentages of the plot width, offset from plot area left.
     */
-  var left: js.UndefOr[Double | String] = js.native
+  var left: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highstock, Gantt) The color of the line marking the axis itself.
@@ -197,7 +195,7 @@ trait NavigatorYAxisOptions extends StObject {
     * In styled mode, the line stroke is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineColor: js.UndefOr[ColorType] = js.native
+  var lineColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highstock, Gantt) The width of the line marking the axis itself.
@@ -205,14 +203,14 @@ trait NavigatorYAxisOptions extends StObject {
     * In styled mode, the stroke width is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) If there are multiple axes on the same side of the
     * chart, the pixel margin between the axes. Defaults to 0 on vertical axes,
     * 15 on horizontal axes.
     */
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The maximum value of the axis. If `null`, the max
@@ -225,13 +223,13 @@ trait NavigatorYAxisOptions extends StObject {
     * with multiple axes, determined by chart. alignTicks, where a `tickAmount`
     * is applied internally.
     */
-  var max: js.UndefOr[Double | Null] = js.native
+  var max: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * (Highcharts) Solid gauge only. Unless stops are set, the color to
     * represent the maximum value of the Y axis.
     */
-  var maxColor: js.UndefOr[ColorType] = js.native
+  var maxColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Padding of the max value relative to the
@@ -245,7 +243,7 @@ trait NavigatorYAxisOptions extends StObject {
     * the data is tangent to the threshold, `maxPadding` may not apply unless
     * `softThreshold` is set to false.
     */
-  var maxPadding: js.UndefOr[Double] = js.native
+  var maxPadding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The minimum value of the axis. If `null` the min value
@@ -258,13 +256,13 @@ trait NavigatorYAxisOptions extends StObject {
     * softMin, minPadding, minRange as well as series.threshold and
     * series.softThreshold.
     */
-  var min: js.UndefOr[Double | Null] = js.native
+  var min: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * (Highcharts) Solid gauge only. Unless stops are set, the color to
     * represent the minimum value of the Y axis.
     */
-  var minColor: js.UndefOr[ColorType] = js.native
+  var minColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Padding of the min value relative to the
@@ -278,7 +276,7 @@ trait NavigatorYAxisOptions extends StObject {
     * the data is tangent to the threshold, `minPadding` may not apply unless
     * `softThreshold` is set to false.
     */
-  var minPadding: js.UndefOr[Double] = js.native
+  var minPadding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The minimum tick interval allowed in axis values. For
@@ -286,7 +284,7 @@ trait NavigatorYAxisOptions extends StObject {
     * prevent the axis from showing hours. Defaults to the closest distance
     * between two points on the axis.
     */
-  var minTickInterval: js.UndefOr[Double] = js.native
+  var minTickInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) Color of the minor, secondary grid lines.
@@ -294,13 +292,13 @@ trait NavigatorYAxisOptions extends StObject {
     * In styled mode, the stroke width is given in the
     * `.highcharts-minor-grid-line` class.
     */
-  var minorGridLineColor: js.UndefOr[ColorType] = js.native
+  var minorGridLineColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highstock, Gantt) The dash or dot style of the minor grid lines. For
     * possible values, see this demonstration.
     */
-  var minorGridLineDashStyle: js.UndefOr[DashStyleValue] = js.native
+  var minorGridLineDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highstock, Gantt) Width of the minor, secondary grid lines.
@@ -308,12 +306,12 @@ trait NavigatorYAxisOptions extends StObject {
     * In styled mode, the stroke width is given in the `.highcharts-grid-line`
     * class.
     */
-  var minorGridLineWidth: js.UndefOr[Double] = js.native
+  var minorGridLineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) Color for the minor tick marks.
     */
-  var minorTickColor: js.UndefOr[ColorType] = js.native
+  var minorTickColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highstock, Gantt) Specific tick interval in axis units for the minor
@@ -329,23 +327,23 @@ trait NavigatorYAxisOptions extends StObject {
     * If user settings dictate minor ticks to become too dense, they don't make
     * sense, and will be ignored to prevent performance problems.
     */
-  var minorTickInterval: js.UndefOr[Double | String | Null] = js.native
+  var minorTickInterval: js.UndefOr[Double | String | Null] = js.undefined
   
   /**
     * (Highstock, Gantt) The pixel length of the minor tick marks.
     */
-  var minorTickLength: js.UndefOr[Double] = js.native
+  var minorTickLength: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The position of the minor tick marks relative to the
     * axis line. Can be one of `inside` and `outside`.
     */
-  var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.native
+  var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.undefined
   
   /**
     * (Highstock, Gantt) The pixel width of the minor tick mark.
     */
-  var minorTickWidth: js.UndefOr[Double] = js.native
+  var minorTickWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) Enable or disable minor ticks. Unless
@@ -358,7 +356,7 @@ trait NavigatorYAxisOptions extends StObject {
     * Prior to v6.0.0, ticks were unabled in auto layout by setting
     * `minorTickInterval` to `"auto"`.
     */
-  var minorTicks: js.UndefOr[Boolean] = js.native
+  var minorTicks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) The distance in pixels from the plot area to the axis
@@ -368,7 +366,7 @@ trait NavigatorYAxisOptions extends StObject {
     * dynamically adjusted to avoid collision, this can be overridden by
     * setting offset explicitly.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Highcharts, Gantt) Whether to display the axis on the
@@ -376,14 +374,14 @@ trait NavigatorYAxisOptions extends StObject {
     * axes and bottom for horizontal, so the opposite sides will be right and
     * top respectively. This is typically used with dual or multiple axes.
     */
-  var opposite: js.UndefOr[Boolean] = js.native
+  var opposite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Refers to the index in the panes array. Used for circular
     * gauges and polar charts. When the option is not set then first pane will
     * be used.
     */
-  var pane: js.UndefOr[Double] = js.native
+  var pane: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An array of colored bands stretching
@@ -392,7 +390,7 @@ trait NavigatorYAxisOptions extends StObject {
     * In styled mode, the plot bands are styled by the `.highcharts-plot-band`
     * class in addition to the `className` option.
     */
-  var plotBands: js.UndefOr[js.Array[NavigatorYAxisPlotBandsOptions]] = js.native
+  var plotBands: js.UndefOr[js.Array[NavigatorYAxisPlotBandsOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An array of lines stretching across the
@@ -401,31 +399,31 @@ trait NavigatorYAxisOptions extends StObject {
     * In styled mode, the plot lines are styled by the `.highcharts-plot-line`
     * class in addition to the `className` option.
     */
-  var plotLines: js.UndefOr[js.Array[NavigatorYAxisPlotLinesOptions]] = js.native
+  var plotLines: js.UndefOr[js.Array[NavigatorYAxisPlotLinesOptions]] = js.undefined
   
   /**
     * (Highstock, Gantt) Whether to reverse the axis so that the highest number
     * is closest to the origin.
     */
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) If `true`, the first series in a stack will be
     * drawn on top in a positive, non-reversed Y axis. If `false`, the first
     * series is in the base of the stack.
     */
-  var reversedStacks: js.UndefOr[Boolean] = js.native
+  var reversedStacks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) Whether to show the first tick label.
     */
-  var showFirstLabel: js.UndefOr[Boolean] = js.native
+  var showFirstLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to show the last tick label.
     * Defaults to `true` on cartesian charts, and `false` on polar charts.
     */
-  var showLastLabel: js.UndefOr[Boolean] = js.native
+  var showLastLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A soft maximum for the axis. If the series
@@ -436,7 +434,7 @@ trait NavigatorYAxisOptions extends StObject {
     * **Note**: The series.softThreshold option takes precedence over this
     * option.
     */
-  var softMax: js.UndefOr[Double] = js.native
+  var softMax: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A soft minimum for the axis. If the series
@@ -447,7 +445,7 @@ trait NavigatorYAxisOptions extends StObject {
     * **Note**: The series.softThreshold option takes precedence over this
     * option.
     */
-  var softMin: js.UndefOr[Double] = js.native
+  var softMin: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The stack labels show the total value for each bar in a
@@ -456,13 +454,13 @@ trait NavigatorYAxisOptions extends StObject {
     * or a bar chart the label is placed to the right of positive bars and to
     * the left of negative bars.
     */
-  var stackLabels: js.UndefOr[NavigatorYAxisStackLabelsOptions] = js.native
+  var stackLabels: js.UndefOr[NavigatorYAxisStackLabelsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) For datetime axes, this decides where to
     * put the tick between weeks. 0 = Sunday, 1 = Monday.
     */
-  var startOfWeek: js.UndefOr[Double] = js.native
+  var startOfWeek: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to force the axis to start on a
@@ -471,7 +469,7 @@ trait NavigatorYAxisOptions extends StObject {
     *
     * This option is always disabled, when panning type is either `y` or `xy`.
     */
-  var startOnTick: js.UndefOr[Boolean] = js.native
+  var startOnTick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) For vertical axes only. Setting the static scale ensures that
@@ -480,7 +478,7 @@ trait NavigatorYAxisOptions extends StObject {
     * 24 pixels, and the height of the chart adjusts. Adding or removing items
     * will make the chart resize.
     */
-  var staticScale: js.UndefOr[Double] = js.native
+  var staticScale: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Solid gauge series only. Color stops for the solid gauge.
@@ -492,7 +490,7 @@ trait NavigatorYAxisOptions extends StObject {
     * For solid gauges, the Y axis also inherits the concept of data classes
     * from the Highmaps color axis.
     */
-  var stops: js.UndefOr[js.Array[js.Tuple2[Double, ColorType]]] = js.native
+  var stops: js.UndefOr[js.Array[js.Tuple2[Double, ColorType]]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The amount of ticks to draw on the axis.
@@ -502,14 +500,14 @@ trait NavigatorYAxisOptions extends StObject {
     * This option only has an effect on linear axes. Datetime, logarithmic or
     * category axes are not affected.
     */
-  var tickAmount: js.UndefOr[Double] = js.native
+  var tickAmount: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) Color for the main tick marks.
     *
     * In styled mode, the stroke is given in the `.highcharts-tick` class.
     */
-  var tickColor: js.UndefOr[ColorType] = js.native
+  var tickColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highstock, Gantt) The interval of the tick marks in axis units. When
@@ -531,12 +529,12 @@ trait NavigatorYAxisOptions extends StObject {
     * If the chart has multiple axes, the alignTicks option may interfere with
     * the `tickInterval` setting.
     */
-  var tickInterval: js.UndefOr[Double] = js.native
+  var tickInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The pixel length of the main tick marks.
     */
-  var tickLength: js.UndefOr[Double] = js.native
+  var tickLength: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) If tickInterval is `null` this option sets the
@@ -546,13 +544,13 @@ trait NavigatorYAxisOptions extends StObject {
     * The tick interval is also influenced by the minTickInterval option, that,
     * by default prevents ticks from being denser than the data points.
     */
-  var tickPixelInterval: js.UndefOr[Double] = js.native
+  var tickPixelInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The position of the major tick marks relative to the
     * axis line. Can be one of `inside` and `outside`.
     */
-  var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.native
+  var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.undefined
   
   /**
     * (Highstock, Gantt) A callback function returning array defining where the
@@ -561,19 +559,19 @@ trait NavigatorYAxisOptions extends StObject {
     * accessible through `this.tickPositions` and can be modified by the
     * callback.
     */
-  var tickPositioner: js.UndefOr[AxisTickPositionerCallbackFunction] = js.native
+  var tickPositioner: js.UndefOr[AxisTickPositionerCallbackFunction] = js.undefined
   
   /**
     * (Highstock, Gantt) An array defining where the ticks are laid out on the
     * axis. This overrides the default behaviour of tickPixelInterval and
     * tickInterval.
     */
-  var tickPositions: js.UndefOr[js.Array[Double]] = js.native
+  var tickPositions: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The pixel width of the major tick marks.
     */
-  var tickWidth: js.UndefOr[Double] = js.native
+  var tickWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Gantt) For categorized axes only. If `on` the tick mark is
@@ -581,12 +579,12 @@ trait NavigatorYAxisOptions extends StObject {
     * placed between categories. The default is `between` if the `tickInterval`
     * is 1, else `on`.
     */
-  var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.native
+  var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.undefined
   
   /**
     * (Highstock, Gantt) The axis title, showing next to the axis line.
     */
-  var title: js.UndefOr[NavigatorYAxisTitleOptions] = js.native
+  var title: js.UndefOr[NavigatorYAxisTitleOptions] = js.undefined
   
   /**
     * (Highcharts) Parallel coordinates only. Format that will be used for
@@ -603,7 +601,7 @@ trait NavigatorYAxisOptions extends StObject {
     *
     * 4. If yAxis is linear/logarithmic type, then simple value will be used
     */
-  var tooltipValueFormat: js.UndefOr[String] = js.native
+  var tooltipValueFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Gantt) The type of axis. Can be one of `linear`,
@@ -615,7 +613,7 @@ trait NavigatorYAxisOptions extends StObject {
     * or treegrid axis, the point names of the chart's series are used for
     * categories, if a categories array is not defined.
     */
-  var `type`: js.UndefOr[AxisTypeValue] = js.native
+  var `type`: js.UndefOr[AxisTypeValue] = js.undefined
   
   /**
     * (Highcharts, Gantt) Applies only when the axis `type` is `category`. When
@@ -626,13 +624,13 @@ trait NavigatorYAxisOptions extends StObject {
     * X positions regardless of their names, and the X axis category will take
     * the name of the last point in each position.
     */
-  var uniqueNames: js.UndefOr[Boolean] = js.native
+  var uniqueNames: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether axis, including axis title, line,
     * ticks and labels, should be visible.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) The width as the horizontal axis. If it's a
@@ -641,13 +639,13 @@ trait NavigatorYAxisOptions extends StObject {
     * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
     * as percentages of the total plot width.
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highstock, Gantt) Whether to zoom axis. If `chart.zoomType` is set, the
     * option allows to disable zooming on an individual axis.
     */
-  var zoomEnabled: js.UndefOr[Boolean] = js.native
+  var zoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object NavigatorYAxisOptions {
   

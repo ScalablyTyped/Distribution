@@ -11,8 +11,8 @@ The lodash method `_.mean` exported as a module.
 | Full name          | lodash.mean |
 | Keywords           | lodash-modularized, mean |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 145031 |
+| # dependents       | 8 |
+| # downloads        | 110018 |
 | # stars            | 0 |
 
 ## Links

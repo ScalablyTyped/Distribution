@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a system event that triggers a background task to run. */
-@js.native
 trait SystemTrigger extends StObject {
   
   /** Gets whether a system event trigger will be used only once. */
-  var oneShot: Boolean = js.native
+  var oneShot: Boolean
   
   /** Gets the system event type of a system event trigger. */
-  var triggerType: SystemTriggerType = js.native
+  var triggerType: SystemTriggerType
 }
 object SystemTrigger {
   

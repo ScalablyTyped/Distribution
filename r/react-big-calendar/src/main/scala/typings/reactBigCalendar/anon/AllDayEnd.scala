@@ -3,17 +3,15 @@ package typings.reactBigCalendar.anon
 import typings.reactBigCalendar.mod.stringOrDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllDayEnd extends StObject {
   
-  var allDay: Boolean = js.native
+  var allDay: Boolean
   
-  var end: stringOrDate = js.native
+  var end: stringOrDate
   
-  var start: stringOrDate = js.native
+  var start: stringOrDate
 }
 object AllDayEnd {
   

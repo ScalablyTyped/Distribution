@@ -2,31 +2,29 @@ package typings.monacoEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRange extends StObject {
   
   /**
     * Column on which the range ends in line `endLineNumber`.
     */
-  val endColumn: Double = js.native
+  val endColumn: Double
   
   /**
     * Line number on which the range ends.
     */
-  val endLineNumber: Double = js.native
+  val endLineNumber: Double
   
   /**
     * Column on which the range starts in line `startLineNumber` (starts at 1).
     */
-  val startColumn: Double = js.native
+  val startColumn: Double
   
   /**
     * Line number on which the range starts (starts at 1).
     */
-  val startLineNumber: Double = js.native
+  val startLineNumber: Double
 }
 object IRange {
   

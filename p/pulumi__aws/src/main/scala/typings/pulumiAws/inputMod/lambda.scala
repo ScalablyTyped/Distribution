@@ -4,18 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lambda {
   
-  @js.native
   trait AliasRoutingConfig extends StObject {
     
     /**
       * A map that defines the proportion of events that should be sent to different versions of a lambda function.
       */
-    var additionalVersionWeights: js.UndefOr[Input[StringDictionary[Input[Double]]]] = js.native
+    var additionalVersionWeights: js.UndefOr[Input[StringDictionary[Input[Double]]]] = js.undefined
   }
   object AliasRoutingConfig {
     
@@ -36,13 +34,12 @@ object lambda {
     }
   }
   
-  @js.native
   trait EventSourceMappingDestinationConfig extends StObject {
     
     /**
       * The destination configuration for failed invocations. Detailed below.
       */
-    var onFailure: js.UndefOr[Input[EventSourceMappingDestinationConfigOnFailure]] = js.native
+    var onFailure: js.UndefOr[Input[EventSourceMappingDestinationConfigOnFailure]] = js.undefined
   }
   object EventSourceMappingDestinationConfig {
     
@@ -63,13 +60,12 @@ object lambda {
     }
   }
   
-  @js.native
   trait EventSourceMappingDestinationConfigOnFailure extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the destination resource.
       */
-    var destinationArn: Input[String] = js.native
+    var destinationArn: Input[String]
   }
   object EventSourceMappingDestinationConfigOnFailure {
     
@@ -87,7 +83,6 @@ object lambda {
     }
   }
   
-  @js.native
   trait FunctionDeadLetterConfig extends StObject {
     
     /**
@@ -96,7 +91,7 @@ object lambda {
       * which means allowing either the `sns:Publish` or `sqs:SendMessage` action on this ARN, depending on
       * which service is targeted.
       */
-    var targetArn: Input[String] = js.native
+    var targetArn: Input[String]
   }
   object FunctionDeadLetterConfig {
     
@@ -114,13 +109,12 @@ object lambda {
     }
   }
   
-  @js.native
   trait FunctionEnvironment extends StObject {
     
     /**
       * A map that defines environment variables for the Lambda function.
       */
-    var variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    var variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object FunctionEnvironment {
     
@@ -141,18 +135,17 @@ object lambda {
     }
   }
   
-  @js.native
   trait FunctionEventInvokeConfigDestinationConfig extends StObject {
     
     /**
       * Configuration block with destination configuration for failed asynchronous invocations. See below for details.
       */
-    var onFailure: js.UndefOr[Input[FunctionEventInvokeConfigDestinationConfigOnFailure]] = js.native
+    var onFailure: js.UndefOr[Input[FunctionEventInvokeConfigDestinationConfigOnFailure]] = js.undefined
     
     /**
       * Configuration block with destination configuration for successful asynchronous invocations. See below for details.
       */
-    var onSuccess: js.UndefOr[Input[FunctionEventInvokeConfigDestinationConfigOnSuccess]] = js.native
+    var onSuccess: js.UndefOr[Input[FunctionEventInvokeConfigDestinationConfigOnSuccess]] = js.undefined
   }
   object FunctionEventInvokeConfigDestinationConfig {
     
@@ -179,13 +172,12 @@ object lambda {
     }
   }
   
-  @js.native
   trait FunctionEventInvokeConfigDestinationConfigOnFailure extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the destination resource. See the [Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html#invocation-async-destinations) for acceptable resource types and associated IAM permissions.
       */
-    var destination: Input[String] = js.native
+    var destination: Input[String]
   }
   object FunctionEventInvokeConfigDestinationConfigOnFailure {
     
@@ -203,13 +195,12 @@ object lambda {
     }
   }
   
-  @js.native
   trait FunctionEventInvokeConfigDestinationConfigOnSuccess extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the destination resource. See the [Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html#invocation-async-destinations) for acceptable resource types and associated IAM permissions.
       */
-    var destination: Input[String] = js.native
+    var destination: Input[String]
   }
   object FunctionEventInvokeConfigDestinationConfigOnSuccess {
     
@@ -227,18 +218,17 @@ object lambda {
     }
   }
   
-  @js.native
   trait FunctionFileSystemConfig extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the Amazon EFS Access Point that provides access to the file system.
       */
-    var arn: Input[String] = js.native
+    var arn: Input[String]
     
     /**
       * The path where the function can access the file system, starting with /mnt/.
       */
-    var localMountPath: Input[String] = js.native
+    var localMountPath: Input[String]
   }
   object FunctionFileSystemConfig {
     
@@ -259,7 +249,6 @@ object lambda {
     }
   }
   
-  @js.native
   trait FunctionTracingConfig extends StObject {
     
     /**
@@ -269,7 +258,7 @@ object lambda {
       * from an upstream service. If no tracing header is received, Lambda will call
       * X-Ray for a tracing decision.
       */
-    var mode: Input[String] = js.native
+    var mode: Input[String]
   }
   object FunctionTracingConfig {
     
@@ -287,20 +276,19 @@ object lambda {
     }
   }
   
-  @js.native
   trait FunctionVpcConfig extends StObject {
     
     /**
       * A list of security group IDs associated with the Lambda function.
       */
-    var securityGroupIds: Input[js.Array[Input[String]]] = js.native
+    var securityGroupIds: Input[js.Array[Input[String]]]
     
     /**
       * A list of subnet IDs associated with the Lambda function.
       */
-    var subnetIds: Input[js.Array[Input[String]]] = js.native
+    var subnetIds: Input[js.Array[Input[String]]]
     
-    var vpcId: js.UndefOr[Input[String]] = js.native
+    var vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object FunctionVpcConfig {
     

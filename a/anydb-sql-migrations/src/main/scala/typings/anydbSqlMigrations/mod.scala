@@ -5,27 +5,26 @@ import typings.anydbSql.mod.Column
 import typings.anydbSql.mod.Table
 import typings.anydbSql.mod.Transaction
 import typings.anydbSqlMigrations.anon.Check
-import typings.bluebird.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("anydb-sql-migrations", "create")
+  @JSImport("anydb-sql-migrations", JSImport.Namespace)
   @js.native
-  def create(db: AnydbSql, tasks: String): Check = js.native
-  @JSImport("anydb-sql-migrations", "create")
-  @js.native
-  def create(db: AnydbSql, tasks: js.Array[MigrationTask]): Check = js.native
+  val ^ : js.Any = js.native
   
-  type MigFn = js.Function1[/* tx */ Transaction, ^[js.Any]]
+  @scala.inline
+  def create(db: AnydbSql, tasks: String): Check = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(db.asInstanceOf[js.Any], tasks.asInstanceOf[js.Any])).asInstanceOf[Check]
+  @scala.inline
+  def create(db: AnydbSql, tasks: js.Array[MigrationTask]): Check = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(db.asInstanceOf[js.Any], tasks.asInstanceOf[js.Any])).asInstanceOf[Check]
   
-  @js.native
+  type MigFn = js.Function1[/* tx */ Transaction, typings.bluebird.mod.^[js.Any]]
+  
   trait Migration extends StObject {
     
-    var version: String = js.native
+    var version: String
   }
   object Migration {
     
@@ -43,16 +42,15 @@ object mod {
     }
   }
   
-  @js.native
   trait MigrationOptions extends StObject {
     
-    var check: js.UndefOr[Boolean] = js.native
+    var check: js.UndefOr[Boolean] = js.undefined
     
-    var drop: js.UndefOr[Boolean] = js.native
+    var drop: js.UndefOr[Boolean] = js.undefined
     
-    var execute: js.UndefOr[Boolean] = js.native
+    var execute: js.UndefOr[Boolean] = js.undefined
     
-    var rollback: js.UndefOr[Boolean] = js.native
+    var rollback: js.UndefOr[Boolean] = js.undefined
   }
   object MigrationOptions {
     
@@ -91,22 +89,48 @@ object mod {
     }
   }
   
-  @js.native
   trait MigrationTask extends StObject {
     
-    def down(tx: Transaction): ^[_] = js.native
+    def down(tx: Transaction): typings.bluebird.mod.^[js.Any]
     @JSName("down")
-    var down_Original: MigFn = js.native
+    var down_Original: MigFn
     
-    var name: String = js.native
+    var name: String
     
-    def up(tx: Transaction): ^[_] = js.native
+    def up(tx: Transaction): typings.bluebird.mod.^[js.Any]
     @JSName("up")
-    var up_Original: MigFn = js.native
+    var up_Original: MigFn
+  }
+  object MigrationTask {
+    
+    @scala.inline
+    def apply(
+      down: /* tx */ Transaction => typings.bluebird.mod.^[js.Any],
+      name: String,
+      up: /* tx */ Transaction => typings.bluebird.mod.^[js.Any]
+    ): MigrationTask = {
+      val __obj = js.Dynamic.literal(down = js.Any.fromFunction1(down), name = name.asInstanceOf[js.Any], up = js.Any.fromFunction1(up))
+      __obj.asInstanceOf[MigrationTask]
+    }
+    
+    @scala.inline
+    implicit class MigrationTaskMutableBuilder[Self <: MigrationTask] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDown(value: /* tx */ Transaction => typings.bluebird.mod.^[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUp(value: /* tx */ Transaction => typings.bluebird.mod.^[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+    }
   }
   
   @js.native
-  trait MigrationsTable extends Table[Migration] {
+  trait MigrationsTable
+    extends StObject
+       with Table[Migration] {
     
     var version: Column[String] = js.native
   }

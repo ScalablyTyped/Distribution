@@ -3,15 +3,15 @@ package typings.jupyterlabNbformat.mod
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IKernelspecMetadata extends PartialJSONObject {
+trait IKernelspecMetadata
+  extends StObject
+     with PartialJSONObject {
   
-  var display_name: String = js.native
+  var display_name: String
   
-  var name: String = js.native
+  var name: String
 }
 object IKernelspecMetadata {
   

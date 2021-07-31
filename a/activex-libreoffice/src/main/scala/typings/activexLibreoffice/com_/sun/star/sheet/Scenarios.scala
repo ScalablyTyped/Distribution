@@ -9,13 +9,12 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a collection of scenarios. */
-@js.native
 trait Scenarios
-  extends XScenarios
+  extends StObject
+     with XScenarios
      with XEnumerationAccess
      with XIndexAccess
 object Scenarios {

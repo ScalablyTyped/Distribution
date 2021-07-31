@@ -6,7 +6,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeMod {
@@ -32,16 +31,17 @@ object rangeMod {
   trait Range
     extends Component[RangeProps, js.Any, js.Any]
   
-  @js.native
-  trait RangeProps extends RangePropsType {
+  trait RangeProps
+    extends StObject
+       with RangePropsType {
     
-    var handleStyle: js.UndefOr[js.Array[CSSProperties]] = js.native
+    var handleStyle: js.UndefOr[js.Array[CSSProperties]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var railStyle: js.UndefOr[CSSProperties] = js.native
+    var railStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var trackStyle: js.UndefOr[js.Array[CSSProperties]] = js.native
+    var trackStyle: js.UndefOr[js.Array[CSSProperties]] = js.undefined
   }
   object RangeProps {
     

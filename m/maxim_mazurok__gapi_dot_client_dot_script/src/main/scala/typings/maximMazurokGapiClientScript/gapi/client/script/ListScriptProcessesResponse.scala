@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListScriptProcessesResponse extends StObject {
   
   /** Token for the next page of results. If empty, there are no more pages remaining. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of processes matching request parameters. */
-  var processes: js.UndefOr[js.Array[GoogleAppsScriptTypeProcess]] = js.native
+  var processes: js.UndefOr[js.Array[GoogleAppsScriptTypeProcess]] = js.undefined
 }
 object ListScriptProcessesResponse {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioChannel extends StObject {
   
   /** List of `Job.inputs` for this audio channel. */
-  var inputs: js.UndefOr[js.Array[AudioChannelInput]] = js.native
+  var inputs: js.UndefOr[js.Array[AudioChannelInput]] = js.undefined
 }
 object AudioChannel {
   

@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,22 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Range.createDeveloperMetadataFinder(), Sheet.createDeveloperMetadataFinder(),
   * or Spreadsheet.createDeveloperMetadataFinder().
   */
-@js.native
 trait DeveloperMetadataFinder extends StObject {
   
-  def find(): js.Array[DeveloperMetadata] = js.native
+  def find(): js.Array[DeveloperMetadata]
   
-  def onIntersectingLocations(): DeveloperMetadataFinder = js.native
+  def onIntersectingLocations(): DeveloperMetadataFinder
   
-  def withId(id: Integer): DeveloperMetadataFinder = js.native
+  def withId(id: Integer): DeveloperMetadataFinder
   
-  def withKey(key: String): DeveloperMetadataFinder = js.native
+  def withKey(key: String): DeveloperMetadataFinder
   
-  def withLocationType(locationType: DeveloperMetadataLocationType): DeveloperMetadataFinder = js.native
+  def withLocationType(locationType: DeveloperMetadataLocationType): DeveloperMetadataFinder
   
-  def withValue(value: String): DeveloperMetadataFinder = js.native
+  def withValue(value: String): DeveloperMetadataFinder
   
-  def withVisibility(visibility: DeveloperMetadataVisibility): DeveloperMetadataFinder = js.native
+  def withVisibility(visibility: DeveloperMetadataVisibility): DeveloperMetadataFinder
 }
 object DeveloperMetadataFinder {
   

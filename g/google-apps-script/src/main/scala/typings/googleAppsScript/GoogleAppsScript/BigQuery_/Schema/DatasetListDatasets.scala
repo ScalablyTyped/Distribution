@@ -2,23 +2,21 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetListDatasets extends StObject {
   
-  var datasetReference: js.UndefOr[DatasetReference] = js.native
+  var datasetReference: js.UndefOr[DatasetReference] = js.undefined
   
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[js.Object] = js.native
+  var labels: js.UndefOr[js.Object] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
 }
 object DatasetListDatasets {
   

@@ -2,15 +2,13 @@ package typings.matrixAppserviceBridge.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Avatarurl extends StObject {
   
-  var avatar_url: String = js.native
+  var avatar_url: String
   
-  var display_name: String = js.native
+  var display_name: String
 }
 object Avatarurl {
   

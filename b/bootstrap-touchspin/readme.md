@@ -11,7 +11,7 @@ A mobile and touch friendly input spinner component for Bootstrap 3 & 4.
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 19 |
-| # downloads        | 785873 |
+| # downloads        | 913311 |
 | # stars            | 0 |
 
 ## Links

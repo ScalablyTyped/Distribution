@@ -6,7 +6,6 @@ import typings.three.vector2Mod.Vector2
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object triangleMod {
@@ -15,11 +14,11 @@ object triangleMod {
   @js.native
   class Triangle () extends StObject {
     def this(a: Vector3) = this()
-    def this(a: js.UndefOr[scala.Nothing], b: Vector3) = this()
+    def this(a: Unit, b: Vector3) = this()
     def this(a: Vector3, b: Vector3) = this()
-    def this(a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], c: Vector3) = this()
-    def this(a: js.UndefOr[scala.Nothing], b: Vector3, c: Vector3) = this()
-    def this(a: Vector3, b: js.UndefOr[scala.Nothing], c: Vector3) = this()
+    def this(a: Unit, b: Unit, c: Vector3) = this()
+    def this(a: Unit, b: Vector3, c: Vector3) = this()
+    def this(a: Vector3, b: Unit, c: Vector3) = this()
     def this(a: Vector3, b: Vector3, c: Vector3) = this()
     
     /**
@@ -68,20 +67,20 @@ object triangleMod {
   /* static members */
   object Triangle {
     
-    @JSImport("three/src/math/Triangle", "Triangle.containsPoint")
+    @JSImport("three/src/math/Triangle", "Triangle")
     @js.native
-    def containsPoint(point: Vector3, a: Vector3, b: Vector3, c: Vector3): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("three/src/math/Triangle", "Triangle.getBarycoord")
-    @js.native
-    def getBarycoord(point: Vector3, a: Vector3, b: Vector3, c: Vector3, target: Vector3): Vector3 = js.native
+    @scala.inline
+    def containsPoint(point: Vector3, a: Vector3, b: Vector3, c: Vector3): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsPoint")(point.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("three/src/math/Triangle", "Triangle.getNormal")
-    @js.native
-    def getNormal(a: Vector3, b: Vector3, c: Vector3, target: Vector3): Vector3 = js.native
+    @scala.inline
+    def getBarycoord(point: Vector3, a: Vector3, b: Vector3, c: Vector3, target: Vector3): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getBarycoord")(point.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
-    @JSImport("three/src/math/Triangle", "Triangle.getUV")
-    @js.native
+    @scala.inline
+    def getNormal(a: Vector3, b: Vector3, c: Vector3, target: Vector3): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getNormal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    
+    @scala.inline
     def getUV(
       point: Vector3,
       p1: Vector3,
@@ -91,10 +90,9 @@ object triangleMod {
       uv2: Vector2,
       uv3: Vector2,
       target: Vector2
-    ): Vector2 = js.native
+    ): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("getUV")(point.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], uv1.asInstanceOf[js.Any], uv2.asInstanceOf[js.Any], uv3.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Vector2]
     
-    @JSImport("three/src/math/Triangle", "Triangle.isFrontFacing")
-    @js.native
-    def isFrontFacing(a: Vector3, b: Vector3, c: Vector3, direction: Vector3): Boolean = js.native
+    @scala.inline
+    def isFrontFacing(a: Vector3, b: Vector3, c: Vector3, direction: Vector3): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFrontFacing")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

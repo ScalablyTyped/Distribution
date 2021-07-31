@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The tag key.
     */
-  var key: js.UndefOr[TagKey] = js.native
+  var key: js.UndefOr[TagKey] = js.undefined
   
   /**
     * The tag value.
     */
-  var value: js.UndefOr[TagValue] = js.native
+  var value: js.UndefOr[TagValue] = js.undefined
 }
 object Tag {
   

@@ -2,13 +2,11 @@ package typings.googleapis.cloudtasksV2Mod.cloudtasksV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for CreateTask.
   */
-@js.native
 trait SchemaCreateTaskRequest extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaCreateTaskRequest extends StObject {
     * `cloudtasks.tasks.fullView` [Google IAM](https://cloud.google.com/iam/)
     * permission on the Task resource.
     */
-  var responseView: js.UndefOr[String] = js.native
+  var responseView: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The task to add.  Task names have the following format:
@@ -46,7 +44,7 @@ trait SchemaCreateTaskRequest extends StObject {
     * on an approximately uniform distribution of task ids to store and serve
     * tasks efficiently.
     */
-  var task: js.UndefOr[SchemaTask] = js.native
+  var task: js.UndefOr[SchemaTask] = js.undefined
 }
 object SchemaCreateTaskRequest {
   

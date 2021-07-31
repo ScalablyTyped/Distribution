@@ -12,25 +12,23 @@ import typings.googleMaps.mod.PlaceType2
 import typings.googleMaps.mod.PlusCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code extends StObject {
     
     /** This is the same as the HTTP status of the response. */
-    var code: Double = js.native
+    var code: Double
     
     /**
       * A list of errors which occurred. Each error contains an identifier for the type of error (the `reason`)
       * and a short description (the `message`).
       */
-    var errors: js.Array[Domain] = js.native
+    var errors: js.Array[Domain]
     
     /** A short description of the error. */
-    var message: String = js.native
+    var message: String
   }
   object Code {
     
@@ -57,14 +55,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Domain extends StObject {
     
-    var domain: String = js.native
+    var domain: String
     
-    var message: String = js.native
+    var message: String
     
-    var reason: GeolocationErrorReason = js.native
+    var reason: GeolocationErrorReason
   }
   object Domain {
     
@@ -88,11 +85,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Location extends StObject {
     
     /** Contains a `latitude` and `longitude` value. */
-    var location: LatLngLiteralVerbose = js.native
+    var location: LatLngLiteralVerbose
     
     /**
       * An integer that indicates the corresponding value in the original request.
@@ -101,7 +97,7 @@ object anon {
       *  - If the nearest road is one-way, one segment is returned.
       *  - If the nearest road is bidirectional, two segments are returned.
       */
-    var originalIndex: Double = js.native
+    var originalIndex: Double
     
     /**
       * A unique identifier for a place. All place IDs returned by the Roads API correspond to road segments.
@@ -110,7 +106,7 @@ object anon {
       * you can pass the `placeId` to the Places SDK or the Geocoding API. Within the Roads API,
       * you can pass the `placeId` in a speed limits request to determine the speed limit along that road segment.
       */
-    var placeId: String = js.native
+    var placeId: String
   }
   object Location {
     
@@ -135,38 +131,37 @@ object anon {
   }
   
   /* Inlined std.Partial<@google/maps.@google/maps.PlaceSearchResult> */
-  @js.native
   trait PartialPlaceSearchResult extends StObject {
     
-    var alt_ids: js.UndefOr[js.Array[AlternativePlaceId]] = js.native
+    var alt_ids: js.UndefOr[js.Array[AlternativePlaceId]] = js.undefined
     
-    var formatted_address: js.UndefOr[String] = js.native
+    var formatted_address: js.UndefOr[String] = js.undefined
     
-    var geometry: js.UndefOr[AddressGeometry] = js.native
+    var geometry: js.UndefOr[AddressGeometry] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var opening_hours: js.UndefOr[OpeningHours] = js.native
+    var opening_hours: js.UndefOr[OpeningHours] = js.undefined
     
-    var permanently_closed: js.UndefOr[Boolean] = js.native
+    var permanently_closed: js.UndefOr[Boolean] = js.undefined
     
-    var photos: js.UndefOr[js.Array[PlacePhoto]] = js.native
+    var photos: js.UndefOr[js.Array[PlacePhoto]] = js.undefined
     
-    var place_id: js.UndefOr[String] = js.native
+    var place_id: js.UndefOr[String] = js.undefined
     
-    var plus_code: js.UndefOr[PlusCode] = js.native
+    var plus_code: js.UndefOr[PlusCode] = js.undefined
     
-    var price_level: js.UndefOr[Double] = js.native
+    var price_level: js.UndefOr[Double] = js.undefined
     
-    var rating: js.UndefOr[Double] = js.native
+    var rating: js.UndefOr[Double] = js.undefined
     
-    var scope: js.UndefOr[PlaceIdScope] = js.native
+    var scope: js.UndefOr[PlaceIdScope] = js.undefined
     
-    var types: js.UndefOr[js.Array[PlaceType1 | PlaceType2]] = js.native
+    var types: js.UndefOr[js.Array[PlaceType1 | PlaceType2]] = js.undefined
     
-    var vicinity: js.UndefOr[String] = js.native
+    var vicinity: js.UndefOr[String] = js.undefined
   }
   object PartialPlaceSearchResult {
     
@@ -280,10 +275,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Points extends StObject {
     
-    var points: String = js.native
+    var points: String
   }
   object Points {
     

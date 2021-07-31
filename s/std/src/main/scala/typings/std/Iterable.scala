@@ -2,12 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Iterable[T] extends StObject {
   
   @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[Iterator[T, _, js.UndefOr[scala.Nothing]]] = js.native
+  var iterator: js.Function0[Iterator[T, js.Any, Unit]] = js.native
 }

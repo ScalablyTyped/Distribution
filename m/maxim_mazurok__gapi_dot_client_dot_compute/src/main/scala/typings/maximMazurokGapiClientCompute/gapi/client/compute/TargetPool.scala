@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetPool extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait TargetPool extends StObject {
     * In case where failoverRatio and backupPool are not set, or all the instances in the backup pool are unhealthy, the traffic will be directed back to the primary pool in the "force"
     * mode, where traffic will be spread to the healthy instances with the best effort, or to all instances when no instance is healthy.
     */
-  var backupPool: js.UndefOr[String] = js.native
+  var backupPool: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /** An optional description of this resource. Provide this property when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * This field is applicable only when the containing target pool is serving a forwarding rule as the primary pool (i.e., not as a backup pool to some other target pool). The value of
@@ -36,35 +34,35 @@ trait TargetPool extends StObject {
     * In case where failoverRatio is not set or all the instances in the backup pool are unhealthy, the traffic will be directed back to the primary pool in the "force" mode, where
     * traffic will be spread to the healthy instances with the best effort, or to all instances when no instance is healthy.
     */
-  var failoverRatio: js.UndefOr[Double] = js.native
+  var failoverRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL of the HttpHealthCheck resource. A member instance in this pool is considered healthy if and only if the health checks pass. An empty list means all member instances will be
     * considered healthy at all times. Only legacy HttpHealthChecks are supported. Only one health check may be specified.
     */
-  var healthChecks: js.UndefOr[js.Array[String]] = js.native
+  var healthChecks: js.UndefOr[js.Array[String]] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** A list of resource URLs to the virtual machine instances serving this pool. They must live in zones contained in the same region as this pool. */
-  var instances: js.UndefOr[js.Array[String]] = js.native
+  var instances: js.UndefOr[js.Array[String]] = js.undefined
   
   /** [Output Only] Type of the resource. Always compute#targetPool for target pools. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63
     * characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a
     * dash, lowercase letter, or digit, except the last character, which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Output Only] URL of the region where the target pool resides. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Server-defined URL for the resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Session affinity option, must be one of the following values:
@@ -72,7 +70,7 @@ trait TargetPool extends StObject {
     * CLIENT_IP: Connections from the same client IP will go to the same instance in the pool while that instance remains healthy.
     * CLIENT_IP_PROTO: Connections from the same client IP with the same IP protocol will go to the same instance in the pool while that instance remains healthy.
     */
-  var sessionAffinity: js.UndefOr[String] = js.native
+  var sessionAffinity: js.UndefOr[String] = js.undefined
 }
 object TargetPool {
   

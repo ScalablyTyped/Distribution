@@ -3,15 +3,13 @@ package typings.iconvLite
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncoderStream extends StObject {
   
-  def end(): js.UndefOr[Buffer] = js.native
+  def end(): js.UndefOr[Buffer]
   
-  def write(str: String): Buffer = js.native
+  def write(str: String): Buffer
 }
 object EncoderStream {
   

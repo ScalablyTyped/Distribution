@@ -2,13 +2,11 @@ package typings.vscodeJsonrpc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetTraceParams extends StObject {
   
-  var value: TraceValues = js.native
+  var value: TraceValues
 }
 object SetTraceParams {
   

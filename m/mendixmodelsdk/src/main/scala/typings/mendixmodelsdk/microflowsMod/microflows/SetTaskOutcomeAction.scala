@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowTaskOutcome
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -58,9 +57,8 @@ object SetTaskOutcomeAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SetTaskOutcomeAction.create")
-  @js.native
-  def create(model: IModel): SetTaskOutcomeAction = js.native
+  @scala.inline
+  def create(model: IModel): SetTaskOutcomeAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeAction instance in the SDK and on the server.
@@ -71,9 +69,8 @@ object SetTaskOutcomeAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SetTaskOutcomeAction.createIn")
-  @js.native
-  def createIn(container: ActionActivity): SetTaskOutcomeAction = js.native
+  @scala.inline
+  def createIn(container: ActionActivity): SetTaskOutcomeAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SetTaskOutcomeAction.structureTypeName")

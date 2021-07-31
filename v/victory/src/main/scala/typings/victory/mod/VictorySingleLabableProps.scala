@@ -2,11 +2,11 @@ package typings.victory.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VictorySingleLabableProps extends VictoryLabableProps {
+trait VictorySingleLabableProps
+  extends StObject
+     with VictoryLabableProps {
   
   /**
     * The label prop defines the label that will appear at the edge of the area.
@@ -15,7 +15,7 @@ trait VictorySingleLabableProps extends VictoryLabableProps {
     * VictoryArea with VictoryScatter
     * @example: "Series 1", (data) => `${data.length} points`
     */
-  var label: js.UndefOr[String | (js.Function1[/* data */ js.Any, String])] = js.native
+  var label: js.UndefOr[String | (js.Function1[/* data */ js.Any, String])] = js.undefined
 }
 object VictorySingleLabableProps {
   

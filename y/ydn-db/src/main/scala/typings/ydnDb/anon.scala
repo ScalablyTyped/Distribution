@@ -2,15 +2,13 @@ package typings.ydnDb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Push extends StObject {
     
-    def push(value: js.Any): Unit = js.native
+    def push(value: js.Any): Unit
   }
   object Push {
     

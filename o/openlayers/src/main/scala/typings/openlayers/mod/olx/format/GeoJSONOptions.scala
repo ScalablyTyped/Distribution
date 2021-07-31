@@ -3,17 +3,15 @@ package typings.openlayers.mod.olx.format
 import typings.openlayers.mod.ProjectionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoJSONOptions extends StObject {
   
-  var defaultDataProjection: ProjectionLike = js.native
+  var defaultDataProjection: ProjectionLike
   
-  var featureProjection: ProjectionLike = js.native
+  var featureProjection: ProjectionLike
   
-  var geometryName: js.UndefOr[String] = js.native
+  var geometryName: js.UndefOr[String] = js.undefined
 }
 object GeoJSONOptions {
   

@@ -11,7 +11,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timelineTimelineMod extends Shortcut {
@@ -20,23 +19,22 @@ object timelineTimelineMod extends Shortcut {
   @js.native
   val default: TimelineType = js.native
   
-  @js.native
   trait TimelineProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[left | alternate | right] = js.native
+    var mode: js.UndefOr[left | alternate | right] = js.undefined
     
     /** 指定最后一个幽灵节点是否存在或内容 */
-    var pending: js.UndefOr[ReactNode] = js.native
+    var pending: js.UndefOr[ReactNode] = js.undefined
     
-    var pendingDot: js.UndefOr[ReactNode] = js.native
+    var pendingDot: js.UndefOr[ReactNode] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TimelineProps {
     
@@ -94,7 +92,9 @@ object timelineTimelineMod extends Shortcut {
   }
   
   @js.native
-  trait TimelineType extends FunctionComponent[TimelineProps] {
+  trait TimelineType
+    extends StObject
+       with FunctionComponent[TimelineProps] {
     
     var Item: FC[TimelineItemProps] = js.native
   }

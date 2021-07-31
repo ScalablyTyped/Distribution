@@ -2,19 +2,17 @@ package typings.winstonMail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ca extends StObject {
     
-    var ca: String = js.native
+    var ca: String
     
-    var cert: String = js.native
+    var cert: String
     
-    var key: String = js.native
+    var key: String
   }
   object Ca {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Ciphers extends StObject {
     
-    var ciphers: String = js.native
+    var ciphers: String
   }
   object Ciphers {
     
@@ -59,14 +56,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Level extends StObject {
     
-    var level: String = js.native
+    var level: String
     
-    var message: String = js.native
+    var message: String
     
-    var meta: js.Any = js.native
+    var meta: js.Any
   }
   object Level {
     

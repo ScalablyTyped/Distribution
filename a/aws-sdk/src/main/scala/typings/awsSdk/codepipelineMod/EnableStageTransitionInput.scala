@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableStageTransitionInput extends StObject {
   
   /**
     * The name of the pipeline in which you want to enable the flow of artifacts from one stage to another.
     */
-  var pipelineName: PipelineName = js.native
+  var pipelineName: PipelineName
   
   /**
     * The name of the stage where you want to enable the transition of artifacts, either into the stage (inbound) or from that stage to the next stage (outbound).
     */
-  var stageName: StageName = js.native
+  var stageName: StageName
   
   /**
     * Specifies whether artifacts are allowed to enter the stage and be processed by the actions in that stage (inbound) or whether already processed artifacts are allowed to transition to the next stage (outbound).
     */
-  var transitionType: StageTransitionType = js.native
+  var transitionType: StageTransitionType
 }
 object EnableStageTransitionInput {
   

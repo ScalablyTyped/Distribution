@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPreProcessedFileInfo extends StObject {
   
-  var diagnostics: js.Array[Diagnostic] = js.native
+  var diagnostics: js.Array[Diagnostic]
   
-  var importedFiles: js.Array[IFileReference] = js.native
+  var importedFiles: js.Array[IFileReference]
   
-  var isLibFile: Boolean = js.native
+  var isLibFile: Boolean
   
-  var referencedFiles: js.Array[IFileReference] = js.native
+  var referencedFiles: js.Array[IFileReference]
 }
 object IPreProcessedFileInfo {
   

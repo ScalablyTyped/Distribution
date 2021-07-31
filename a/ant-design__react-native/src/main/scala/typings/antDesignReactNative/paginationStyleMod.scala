@@ -5,33 +5,34 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/pagination/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/pagination/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): PaginationStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): PaginationStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[PaginationStyle]
+  
   trait PaginationStyle extends StObject {
     
-    var activeTextStyle: TextStyle = js.native
+    var activeTextStyle: TextStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var indicatorStyle: ViewStyle = js.native
+    var indicatorStyle: ViewStyle
     
-    var numberStyle: ViewStyle = js.native
+    var numberStyle: ViewStyle
     
-    var pointActiveStyle: ViewStyle = js.native
+    var pointActiveStyle: ViewStyle
     
-    var pointStyle: ViewStyle = js.native
+    var pointStyle: ViewStyle
     
-    var spaceStyle: ViewStyle = js.native
+    var spaceStyle: ViewStyle
     
-    var totalStyle: TextStyle = js.native
+    var totalStyle: TextStyle
   }
   object PaginationStyle {
     

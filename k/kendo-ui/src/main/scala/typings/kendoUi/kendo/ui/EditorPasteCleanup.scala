@@ -2,29 +2,27 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorPasteCleanup extends StObject {
   
-  var all: js.UndefOr[Boolean] = js.native
+  var all: js.UndefOr[Boolean] = js.undefined
   
-  var css: js.UndefOr[Boolean] = js.native
+  var css: js.UndefOr[Boolean] = js.undefined
   
-  var custom: js.UndefOr[js.Function] = js.native
+  var custom: js.UndefOr[js.Function] = js.undefined
   
-  var keepNewLines: js.UndefOr[Boolean] = js.native
+  var keepNewLines: js.UndefOr[Boolean] = js.undefined
   
-  var msAllFormatting: js.UndefOr[Boolean] = js.native
+  var msAllFormatting: js.UndefOr[Boolean] = js.undefined
   
-  var msConvertLists: js.UndefOr[Boolean] = js.native
+  var msConvertLists: js.UndefOr[Boolean] = js.undefined
   
-  var msTags: js.UndefOr[Boolean] = js.native
+  var msTags: js.UndefOr[Boolean] = js.undefined
   
-  var none: js.UndefOr[Boolean] = js.native
+  var none: js.UndefOr[Boolean] = js.undefined
   
-  var span: js.UndefOr[Boolean] = js.native
+  var span: js.UndefOr[Boolean] = js.undefined
 }
 object EditorPasteCleanup {
   

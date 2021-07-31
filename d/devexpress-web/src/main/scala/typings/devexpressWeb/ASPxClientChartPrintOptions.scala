@@ -2,135 +2,133 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The chart print options storage.
   */
-@js.native
 trait ASPxClientChartPrintOptions extends StObject {
   
   /**
     * Gets the custom paper height which will be used to print a chart.
     */
-  def GetCustomPaperHeight(): Double = js.native
+  def GetCustomPaperHeight(): Double
   
   /**
     * Gets the name of the custom paper width-height ratio used to print the chart.
     */
-  def GetCustomPaperName(): String = js.native
+  def GetCustomPaperName(): String
   
   /**
     * Gets the custom paper width which will be used to print a chart.
     */
-  def GetCustomPaperWidth(): Double = js.native
+  def GetCustomPaperWidth(): Double
   
   /**
     * Gets a value indicating that the landscape orientation will be used to print a chart.
     */
-  def GetLandscape(): Boolean = js.native
+  def GetLandscape(): Boolean
   
   /**
     * Gets the bottom margin which will be used to print a chart.
     */
-  def GetMarginBottom(): Double = js.native
+  def GetMarginBottom(): Double
   
   /**
     * Gets the left margin which will be used to print a chart.
     */
-  def GetMarginLeft(): Double = js.native
+  def GetMarginLeft(): Double
   
   /**
     * Gets the right margin which will be used to print a chart.
     */
-  def GetMarginRight(): Double = js.native
+  def GetMarginRight(): Double
   
   /**
     * Gets the top margin which will be used to print a chart.
     */
-  def GetMarginTop(): Double = js.native
+  def GetMarginTop(): Double
   
   /**
     * Gets the predefined size ratio of the paper which will be used to print a chart.
     */
-  def GetPaperKind(): String = js.native
+  def GetPaperKind(): String
   
   /**
     * Returns the value that defines whether to display the crosshair on the printed or exported chart.
     */
-  def GetPrintCrosshair(): Boolean = js.native
+  def GetPrintCrosshair(): Boolean
   
   /**
     * Gets the size mode used to print a chart.
     */
-  def GetSizeMode(): String = js.native
+  def GetSizeMode(): String
   
   /**
     * Sets the custom paper height which will be used to print a chart.
     * @param customPaperHeight A System.Int32 object, specifying the height in hundredths of an inch.
     */
-  def SetCustomPaperHeight(customPaperHeight: Double): Unit = js.native
+  def SetCustomPaperHeight(customPaperHeight: Double): Unit
   
   /**
     * Sets the name of the custom paper width-height ratio used to print a chart.
     * @param customPaperName A String object, specifying the name of the custom paper width-height ratio.
     */
-  def SetCustomPaperName(customPaperName: String): Unit = js.native
+  def SetCustomPaperName(customPaperName: String): Unit
   
   /**
     * Sets the custom paper width which will be used to print a chart.
     * @param customPaperWidth A System.Int32 object, specifying the width in hundredths of an inch.
     */
-  def SetCustomPaperWidth(customPaperWidth: Double): Unit = js.native
+  def SetCustomPaperWidth(customPaperWidth: Double): Unit
   
   /**
     * Sets a value indicating that the landscape orientation will be used to print a chart.
     * @param landscape A Boolean value, specifying that the landscape orientation will be used to print a chart.
     */
-  def SetLandscape(landscape: Boolean): Unit = js.native
+  def SetLandscape(landscape: Boolean): Unit
   
   /**
     * Sets the bottom margin which will be used to print a chart.
     * @param marginBottom A System.Int32 value, specifying the margin in hundredths of an inch.
     */
-  def SetMarginBottom(marginBottom: Double): Unit = js.native
+  def SetMarginBottom(marginBottom: Double): Unit
   
   /**
     * Sets the left margin which will be used to print a chart.
     * @param marginLeft A System.Int32 value, specifying the margin in hundredths of an inch.
     */
-  def SetMarginLeft(marginLeft: Double): Unit = js.native
+  def SetMarginLeft(marginLeft: Double): Unit
   
   /**
     * Sets the right margin which will be used to print a chart.
     * @param marginRight A System.Int32 value, specifying the margin in hundredths of an inch.
     */
-  def SetMarginRight(marginRight: Double): Unit = js.native
+  def SetMarginRight(marginRight: Double): Unit
   
   /**
     * Sets the top margin which will be used to print a chart.
     * @param marginTop A System.Int32 value, specifying the margin in hundredths of an inch.
     */
-  def SetMarginTop(marginTop: Double): Unit = js.native
+  def SetMarginTop(marginTop: Double): Unit
   
   /**
     * Sets the predefined size ratio of the paper which will be used to print a chart.
     * @param paperKind A System.String object, specifying the name of a size ratio.
     */
-  def SetPaperKind(paperKind: String): Unit = js.native
+  def SetPaperKind(paperKind: String): Unit
   
   /**
     * Specifies the value that defines whether to display the crosshair on the printed or exported chart.
     * @param printCrosshair true, if the crosshair should be printed or exported; otherwise, false.
     */
-  def SetPrintCrosshair(printCrosshair: Boolean): Unit = js.native
+  def SetPrintCrosshair(printCrosshair: Boolean): Unit
   
   /**
     * Sets the size mode used to print a chart.
     * @param sizeMode A System.String object, specifying the name of the size mode.
     */
-  def SetSizeMode(sizeMode: String): Unit = js.native
+  def SetSizeMode(sizeMode: String): Unit
 }
 object ASPxClientChartPrintOptions {
   

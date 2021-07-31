@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceAccessDetailsRequest extends StObject {
   
   /**
     * The name of the instance to access.
     */
-  var instanceName: ResourceName = js.native
+  var instanceName: ResourceName
   
   /**
     * The protocol to use to connect to your instance. Defaults to ssh.
     */
-  var protocol: js.UndefOr[InstanceAccessProtocol] = js.native
+  var protocol: js.UndefOr[InstanceAccessProtocol] = js.undefined
 }
 object GetInstanceAccessDetailsRequest {
   

@@ -2,15 +2,13 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentLookupFailure extends StObject {
   
-  var error: String = js.native
+  var error: String
   
-  var key: String = js.native
+  var key: String
 }
 object DocumentLookupFailure {
   

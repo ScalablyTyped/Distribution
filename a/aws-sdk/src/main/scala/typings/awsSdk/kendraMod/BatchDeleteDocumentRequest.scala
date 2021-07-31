@@ -2,23 +2,21 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteDocumentRequest extends StObject {
   
-  var DataSourceSyncJobMetricTarget: js.UndefOr[typings.awsSdk.kendraMod.DataSourceSyncJobMetricTarget] = js.native
+  var DataSourceSyncJobMetricTarget: js.UndefOr[typings.awsSdk.kendraMod.DataSourceSyncJobMetricTarget] = js.undefined
   
   /**
     * One or more identifiers for documents to delete from the index.
     */
-  var DocumentIdList: typings.awsSdk.kendraMod.DocumentIdList = js.native
+  var DocumentIdList: typings.awsSdk.kendraMod.DocumentIdList
   
   /**
     * The identifier of the index that contains the documents to delete.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
 }
 object BatchDeleteDocumentRequest {
   

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slideInChildMod {
@@ -19,16 +18,17 @@ object slideInChildMod {
   trait SlideInChild
     extends Component[SlideInChildProps, js.Object, js.Any]
   
-  @js.native
-  trait SlideInChildProps extends Props[SlideInChild] {
+  trait SlideInChildProps
+    extends StObject
+       with Props[SlideInChild] {
     
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
-    var enterDelay: js.UndefOr[Double] = js.native
+    var enterDelay: js.UndefOr[Double] = js.undefined
     
-    var getLeaveDirection: js.Function = js.native
+    var getLeaveDirection: js.Function
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SlideInChildProps {
     

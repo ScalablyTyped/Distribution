@@ -4,35 +4,33 @@ import typings.octokitTypes.anon.Insecuressl
 import typings.octokitTypes.anon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateWebhookResponseData extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var config: Insecuressl = js.native
+  var config: Insecuressl
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var events: js.Array[String] = js.native
+  var events: js.Array[String]
   
-  var id: Double = js.native
+  var id: Double
   
-  var last_response: Message = js.native
+  var last_response: Message
   
-  var name: String = js.native
+  var name: String
   
-  var ping_url: String = js.native
+  var ping_url: String
   
-  var test_url: String = js.native
+  var test_url: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object ReposCreateWebhookResponseData {
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lightsailInstanceMod {
@@ -95,6 +94,10 @@ object lightsailInstanceMod {
   /* static members */
   object Instance {
     
+    @JSImport("@pulumi/aws/lightsail/instance", "Instance")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Instance resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -104,67 +107,61 @@ object lightsailInstanceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lightsail/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Instance = js.native
-    @JSImport("@pulumi/aws/lightsail/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Instance = js.native
-    @JSImport("@pulumi/aws/lightsail/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceState): Instance = js.native
-    @JSImport("@pulumi/aws/lightsail/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): Instance = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceState): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instance]
     
     /**
       * Returns true if the given object is an instance of Instance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lightsail/instance", "Instance.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/instance.Instance */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/instance.Instance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/instance.Instance */ Boolean]
   }
   
-  @js.native
   trait InstanceArgs extends StObject {
     
     /**
       * The Availability Zone in which to create your
       * instance (see list below)
       */
-    val availabilityZone: Input[String] = js.native
+    val availabilityZone: Input[String]
     
     /**
       * The ID for a virtual private server image. A list of available blueprint IDs can be obtained using the AWS CLI command: `aws lightsail get-blueprints`
       */
-    val blueprintId: Input[String] = js.native
+    val blueprintId: Input[String]
     
     /**
       * The bundle of specification information (see list below)
       */
-    val bundleId: Input[String] = js.native
+    val bundleId: Input[String]
     
     /**
       * The name of your key pair. Created in the
       * Lightsail console (cannot use `aws.ec2.KeyPair` at this time)
       */
-    val keyPairName: js.UndefOr[Input[String]] = js.native
+    val keyPairName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Lightsail Instance. Names be unique within each AWS Region in your Lightsail account.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource. To create a key-only tag, use an empty string as the value.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * launch script to configure server with additional user data
       */
-    val userData: js.UndefOr[Input[String]] = js.native
+    val userData: js.UndefOr[Input[String]] = js.undefined
   }
   object InstanceArgs {
     
@@ -212,31 +209,30 @@ object lightsailInstanceMod {
     }
   }
   
-  @js.native
   trait InstanceState extends StObject {
     
     /**
       * The ARN of the Lightsail instance (matches `id`).
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Availability Zone in which to create your
       * instance (see list below)
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID for a virtual private server image. A list of available blueprint IDs can be obtained using the AWS CLI command: `aws lightsail get-blueprints`
       */
-    val blueprintId: js.UndefOr[Input[String]] = js.native
+    val blueprintId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The bundle of specification information (see list below)
       */
-    val bundleId: js.UndefOr[Input[String]] = js.native
+    val bundleId: js.UndefOr[Input[String]] = js.undefined
     
-    val cpuCount: js.UndefOr[Input[Double]] = js.native
+    val cpuCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The timestamp when the instance was created.
@@ -246,40 +242,40 @@ object lightsailInstanceMod {
       * * `keyPairName`
       * * `userData`
       */
-    val createdAt: js.UndefOr[Input[String]] = js.native
+    val createdAt: js.UndefOr[Input[String]] = js.undefined
     
-    val ipv6Address: js.UndefOr[Input[String]] = js.native
+    val ipv6Address: js.UndefOr[Input[String]] = js.undefined
     
-    val isStaticIp: js.UndefOr[Input[Boolean]] = js.native
+    val isStaticIp: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of your key pair. Created in the
       * Lightsail console (cannot use `aws.ec2.KeyPair` at this time)
       */
-    val keyPairName: js.UndefOr[Input[String]] = js.native
+    val keyPairName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Lightsail Instance. Names be unique within each AWS Region in your Lightsail account.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
-    val privateIpAddress: js.UndefOr[Input[String]] = js.native
+    val privateIpAddress: js.UndefOr[Input[String]] = js.undefined
     
-    val publicIpAddress: js.UndefOr[Input[String]] = js.native
+    val publicIpAddress: js.UndefOr[Input[String]] = js.undefined
     
-    val ramSize: js.UndefOr[Input[Double]] = js.native
+    val ramSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A map of tags to assign to the resource. To create a key-only tag, use an empty string as the value.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * launch script to configure server with additional user data
       */
-    val userData: js.UndefOr[Input[String]] = js.native
+    val userData: js.UndefOr[Input[String]] = js.undefined
     
-    val username: js.UndefOr[Input[String]] = js.native
+    val username: js.UndefOr[Input[String]] = js.undefined
   }
   object InstanceState {
     

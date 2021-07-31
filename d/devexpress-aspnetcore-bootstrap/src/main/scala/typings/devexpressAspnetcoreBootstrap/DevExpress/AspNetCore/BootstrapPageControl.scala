@@ -2,11 +2,12 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapPageControl extends BootstrapTabControl {
+trait BootstrapPageControl
+  extends StObject
+     with BootstrapTabControl {
   
   def getTabContentHTML(tab: BootstrapTab): String = js.native
   

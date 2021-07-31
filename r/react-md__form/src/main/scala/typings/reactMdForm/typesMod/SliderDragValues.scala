@@ -2,27 +2,27 @@ package typings.reactMdForm.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SliderDragValues extends SliderStepParts {
+trait SliderDragValues
+  extends StObject
+     with SliderStepParts {
   
-  var clientX: Double = js.native
+  var clientX: Double
   
-  var clientY: Double = js.native
+  var clientY: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var left: Double = js.native
+  var left: Double
   
-  var reversed: Boolean = js.native
+  var reversed: Boolean
   
-  var top: Double = js.native
+  var top: Double
   
-  var vertical: Boolean = js.native
+  var vertical: Boolean
   
-  var width: Double = js.native
+  var width: Double
 }
 object SliderDragValues {
   

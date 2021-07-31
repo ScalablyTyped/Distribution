@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResponseBodyForInterceptionResponse extends StObject {
   
   /**
     * True, if content was sent as base64.
     */
-  var base64Encoded: Boolean = js.native
+  var base64Encoded: Boolean
   
   /**
     * Response body.
     */
-  var body: String = js.native
+  var body: String
 }
 object GetResponseBodyForInterceptionResponse {
   

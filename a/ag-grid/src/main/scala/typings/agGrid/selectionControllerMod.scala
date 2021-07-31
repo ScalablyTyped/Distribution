@@ -3,7 +3,6 @@ package typings.agGrid
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectionControllerMod {
@@ -33,7 +32,7 @@ object selectionControllerMod {
     
     def getSelectedNodes(): js.Array[RowNode] = js.native
     
-    def getSelectedRows(): js.Array[_] = js.native
+    def getSelectedRows(): js.Array[js.Any] = js.native
     
     var gridApi: js.Any = js.native
     

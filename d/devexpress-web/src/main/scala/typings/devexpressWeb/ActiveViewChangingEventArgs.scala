@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client-side ASPxClientScheduler.ActiveViewChanging event.
   */
-@js.native
-trait ActiveViewChangingEventArgs extends ASPxClientEventArgs {
+trait ActiveViewChangingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets or sets whether the change of active view should be canceled.
     */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
   
   /**
     * Gets the new value of the ASPxScheduler.ActiveView property.
     */
-  var newView: ASPxSchedulerViewType = js.native
+  var newView: ASPxSchedulerViewType
   
   /**
     * Gets the value of the ASPxScheduler.ActiveView property before modification.
     */
-  var oldView: ASPxSchedulerViewType = js.native
+  var oldView: ASPxSchedulerViewType
 }
 object ActiveViewChangingEventArgs {
   

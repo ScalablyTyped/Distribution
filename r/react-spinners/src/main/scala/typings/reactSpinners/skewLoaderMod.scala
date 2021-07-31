@@ -5,7 +5,6 @@ import typings.reactSpinners.interfacesMod.LoaderSizeProps
 import typings.reactSpinners.interfacesMod.StyleFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skewLoaderMod {

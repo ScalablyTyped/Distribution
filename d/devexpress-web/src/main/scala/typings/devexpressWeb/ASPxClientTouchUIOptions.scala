@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains options affecting the touch scrolling functionality.
   */
-@js.native
 trait ASPxClientTouchUIOptions extends StObject {
   
   /**
     * Gets or sets the name of the CSS class defining the horizontal scroll bar's appearance.
     */
-  var hScrollClassName: String = js.native
+  var hScrollClassName: String
   
   /**
     * Gets or sets a value that specifies whether or not the horizontal scroll bar should be displayed.
     */
-  var showHorizontalScrollbar: Boolean = js.native
+  var showHorizontalScrollbar: Boolean
   
   /**
     * Gets or sets a value that specifies whether or not the vertical scroll bar should be displayed.
     */
-  var showVerticalScrollbar: Boolean = js.native
+  var showVerticalScrollbar: Boolean
   
   /**
     * Gets or sets the name of the CSS class defining the vertical scroll bar's appearance.
     */
-  var vScrollClassName: String = js.native
+  var vScrollClassName: String
 }
 object ASPxClientTouchUIOptions {
   

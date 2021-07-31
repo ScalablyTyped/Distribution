@@ -4,15 +4,13 @@ import typings.isMyJsonValid.isMyJsonValidStrings.`null`
 import typings.isMyJsonValid.isMyJsonValidStrings.array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NullableArraySchema[ItemSchema /* <: AnySchema */] extends StObject {
   
-  var items: ItemSchema = js.native
+  var items: ItemSchema
   
-  var `type`: js.Array[array | `null`] = js.native
+  var `type`: js.Array[array | `null`]
 }
 object NullableArraySchema {
   
@@ -24,7 +22,7 @@ object NullableArraySchema {
   }
   
   @scala.inline
-  implicit class NullableArraySchemaMutableBuilder[Self <: NullableArraySchema[_], ItemSchema /* <: AnySchema */] (val x: Self with NullableArraySchema[ItemSchema]) extends AnyVal {
+  implicit class NullableArraySchemaMutableBuilder[Self <: NullableArraySchema[?], ItemSchema /* <: AnySchema */] (val x: Self & NullableArraySchema[ItemSchema]) extends AnyVal {
     
     @scala.inline
     def setItems(value: ItemSchema): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])

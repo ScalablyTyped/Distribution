@@ -2,21 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This WebVR API interface represents all the information required to correctly render a scene for a given eye, including field of view information. */
-@js.native
 trait VREyeParameters extends StObject {
   
   /** @deprecated */
-  val fieldOfView: VRFieldOfView = js.native
+  val fieldOfView: VRFieldOfView
   
-  val offset: Float32Array = js.native
+  val offset: Float32Array
   
-  val renderHeight: Double = js.native
+  val renderHeight: Double
   
-  val renderWidth: Double = js.native
+  val renderWidth: Double
 }
 object VREyeParameters {
   

@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainsEpubBubbles extends StObject {
   
-  var containsEpubBubbles: js.UndefOr[Boolean] = js.native
+  var containsEpubBubbles: js.UndefOr[Boolean] = js.undefined
   
-  var containsImageBubbles: js.UndefOr[Boolean] = js.native
+  var containsImageBubbles: js.UndefOr[Boolean] = js.undefined
   
-  var epubBubbleVersion: js.UndefOr[String] = js.native
+  var epubBubbleVersion: js.UndefOr[String] = js.undefined
   
-  var imageBubbleVersion: js.UndefOr[String] = js.native
+  var imageBubbleVersion: js.UndefOr[String] = js.undefined
 }
 object ContainsEpubBubbles {
   

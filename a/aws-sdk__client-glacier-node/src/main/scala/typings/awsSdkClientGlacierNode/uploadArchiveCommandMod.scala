@@ -7,17 +7,19 @@ import typings.awsSdkClientGlacierNode.typesUploadArchiveInputMod.UploadArchiveI
 import typings.awsSdkClientGlacierNode.typesUploadArchiveOutputMod.UploadArchiveOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadArchiveCommandMod {
   
   @JSImport("@aws-sdk/client-glacier-node/commands/UploadArchiveCommand", "UploadArchiveCommand")
   @js.native
-  class UploadArchiveCommand protected () extends Command[
+  class UploadArchiveCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           UploadArchiveInput[Readable], 
           OutputTypesUnion, 
@@ -26,9 +28,21 @@ object uploadArchiveCommandMod {
         ] {
     def this(input: UploadArchiveInput[Readable]) = this()
     
+    /* CompleteClass */
+    override val input: UploadArchiveInput[Readable] = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[UploadArchiveInput[Readable], UploadArchiveOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: GlacierResolvedConfiguration
+    ): Handler[UploadArchiveInput[Readable], UploadArchiveOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: GlacierResolvedConfiguration,
+      options: js.Any
     ): Handler[UploadArchiveInput[Readable], UploadArchiveOutput] = js.native
   }
 }

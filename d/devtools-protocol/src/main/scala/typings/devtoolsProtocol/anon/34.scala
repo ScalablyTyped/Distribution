@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Browser.GrantPermissionsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `34` extends StObject {
   
-  var paramsType: js.Array[GrantPermissionsRequest] = js.native
+  var paramsType: js.Array[GrantPermissionsRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `34` {
   

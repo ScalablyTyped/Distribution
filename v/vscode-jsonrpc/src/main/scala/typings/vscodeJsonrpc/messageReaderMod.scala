@@ -11,7 +11,6 @@ import typings.vscodeJsonrpc.eventsMod.Event
 import typings.vscodeJsonrpc.messagesMod.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageReaderMod {
@@ -64,42 +63,37 @@ object messageReaderMod {
     
     def listen(callback: DataCallback): Unit = js.native
     
-    def onClose(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
-    def onClose(
-      listener: js.Function1[/* e */ Unit, _],
-      thisArgs: js.UndefOr[scala.Nothing],
-      disposables: js.Array[Disposable]
-    ): Disposable = js.native
-    def onClose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
-    def onClose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onClose(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
+    def onClose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
+    def onClose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onClose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
     
-    def onError(listener: js.Function1[/* e */ Error, _]): Disposable = js.native
-    def onError(
-      listener: js.Function1[/* e */ Error, _],
-      thisArgs: js.UndefOr[scala.Nothing],
-      disposables: js.Array[Disposable]
-    ): Disposable = js.native
-    def onError(listener: js.Function1[/* e */ Error, _], thisArgs: js.Any): Disposable = js.native
-    def onError(listener: js.Function1[/* e */ Error, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onError(listener: js.Function1[/* e */ Error, js.Any]): Disposable = js.native
+    def onError(listener: js.Function1[/* e */ Error, js.Any], thisArgs: js.Any): Disposable = js.native
+    def onError(listener: js.Function1[/* e */ Error, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onError(listener: js.Function1[/* e */ Error, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
     
-    def onPartialMessage(listener: js.Function1[/* e */ PartialMessageInfo, _]): Disposable = js.native
+    def onPartialMessage(listener: js.Function1[/* e */ PartialMessageInfo, js.Any]): Disposable = js.native
+    def onPartialMessage(listener: js.Function1[/* e */ PartialMessageInfo, js.Any], thisArgs: js.Any): Disposable = js.native
     def onPartialMessage(
-      listener: js.Function1[/* e */ PartialMessageInfo, _],
-      thisArgs: js.UndefOr[scala.Nothing],
-      disposables: js.Array[Disposable]
-    ): Disposable = js.native
-    def onPartialMessage(listener: js.Function1[/* e */ PartialMessageInfo, _], thisArgs: js.Any): Disposable = js.native
-    def onPartialMessage(
-      listener: js.Function1[/* e */ PartialMessageInfo, _],
+      listener: js.Function1[/* e */ PartialMessageInfo, js.Any],
       thisArgs: js.Any,
+      disposables: js.Array[Disposable]
+    ): Disposable = js.native
+    def onPartialMessage(
+      listener: js.Function1[/* e */ PartialMessageInfo, js.Any],
+      thisArgs: Unit,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
   }
   object MessageReader {
     
-    @JSImport("vscode-jsonrpc/lib/messageReader", "MessageReader.is")
+    @JSImport("vscode-jsonrpc/lib/messageReader", "MessageReader")
     @js.native
-    def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/messageReader.MessageReader */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/messageReader.MessageReader */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/messageReader.MessageReader */ Boolean]
   }
   
   @JSImport("vscode-jsonrpc/lib/messageReader", "SocketMessageReader")
@@ -146,12 +140,11 @@ object messageReaderMod {
   
   type DataCallback = js.Function1[/* data */ Message, Unit]
   
-  @js.native
   trait PartialMessageInfo extends StObject {
     
-    val messageToken: Double = js.native
+    val messageToken: Double
     
-    val waitingTime: Double = js.native
+    val waitingTime: Double
   }
   object PartialMessageInfo {
     

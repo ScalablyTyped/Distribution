@@ -4,37 +4,35 @@ import typings.psi.psiStrings.desktop
 import typings.psi.psiStrings.mobile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
     * When using this module for a production-level build process,
     * registering for an API key from the Google Developer Console is recommended.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Locale results should be generated in.
     * @default 'en_US'
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var nokey: js.UndefOr[String] = js.native
+  var nokey: js.UndefOr[String] = js.undefined
   
   /**
     * Strategy to use when analyzing the page.
     * @default 'mobile'
     */
-  var strategy: js.UndefOr[mobile | desktop] = js.native
+  var strategy: js.UndefOr[mobile | desktop] = js.undefined
   
   /**
     * Threshold score to pass the PageSpeed test. Useful for setting a performance budget.
     * @default 70
     */
-  var treshold: js.UndefOr[Double] = js.native
+  var treshold: js.UndefOr[Double] = js.undefined
 }
 object Options {
   

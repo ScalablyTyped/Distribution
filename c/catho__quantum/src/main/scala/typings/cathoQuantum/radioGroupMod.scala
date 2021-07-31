@@ -23,7 +23,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioGroupMod {
@@ -56,34 +55,33 @@ object radioGroupMod {
   
   type RadioButton = ComponentType[RadioButtonProps]
   
-  @js.native
   trait RadioButtonProps extends StObject {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[String] = js.native
+    var children: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.native
+    var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
     
-    var skin: js.UndefOr[neutral | primary | success | warning | error] = js.native
+    var skin: js.UndefOr[neutral | primary | success | warning | error] = js.undefined
     
-    var theme: js.UndefOr[ColorsComponents] = js.native
+    var theme: js.UndefOr[ColorsComponents] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object RadioButtonProps {
     
@@ -175,28 +173,27 @@ object radioGroupMod {
   
   type RadioGroup = Component[RadioGroupProps, js.Object, js.Any]
   
-  @js.native
   trait RadioGroupProps extends StObject {
     
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var options: js.UndefOr[js.Array[Disabled]] = js.native
+    var options: js.UndefOr[js.Array[Disabled]] = js.undefined
     
-    var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.native
+    var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
     
-    var theme: js.UndefOr[ColorsSpacing] = js.native
+    var theme: js.UndefOr[ColorsSpacing] = js.undefined
     
-    var `type`: js.UndefOr[radio | button] = js.native
+    var `type`: js.UndefOr[radio | button] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object RadioGroupProps {
     
@@ -274,22 +271,21 @@ object radioGroupMod {
     }
   }
   
-  @js.native
   trait RadioProps extends StObject {
     
-    var children: js.UndefOr[String | js.Array[ReactNode] | ReactNode] = js.native
+    var children: js.UndefOr[String | js.Array[ReactNode] | ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var theme: js.UndefOr[ColorsSpacing] = js.native
+    var theme: js.UndefOr[ColorsSpacing] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object RadioProps {
     

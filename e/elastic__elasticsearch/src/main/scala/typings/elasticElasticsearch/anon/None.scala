@@ -2,17 +2,15 @@ package typings.elasticElasticsearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait None extends StObject {
   
-  var none: Double = js.native
+  var none: Double
   
-  var optimistic: Double = js.native
+  var optimistic: Double
   
-  var ping: Double = js.native
+  var ping: Double
 }
 object None {
   

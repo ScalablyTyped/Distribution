@@ -4,18 +4,16 @@ import typings.jqueryui.JQuery
 import typings.jqueryui.anon.Left
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Draggable //////////////////////////////////////////////////
-@js.native
 trait DraggableEventUIParams extends StObject {
   
-  var helper: JQuery = js.native
+  var helper: JQuery
   
-  var offset: Left = js.native
+  var offset: Left
   
-  var position: Left = js.native
+  var position: Left
 }
 object DraggableEventUIParams {
   

@@ -3,7 +3,6 @@ package typings.primereact
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columngroupColumnGroupMod {
@@ -21,6 +20,5 @@ object columngroupColumnGroupMod {
   }
   
   // tslint:disable-next-line:no-empty-interface
-  @js.native
   trait ColumnGroupProps extends StObject
 }

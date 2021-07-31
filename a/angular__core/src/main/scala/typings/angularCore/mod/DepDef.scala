@@ -2,17 +2,15 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DepDef extends StObject {
   
-  var flags: ɵDepFlags = js.native
+  var flags: ɵDepFlags
   
-  var token: js.Any = js.native
+  var token: js.Any
   
-  var tokenKey: String = js.native
+  var tokenKey: String
 }
 object DepDef {
   

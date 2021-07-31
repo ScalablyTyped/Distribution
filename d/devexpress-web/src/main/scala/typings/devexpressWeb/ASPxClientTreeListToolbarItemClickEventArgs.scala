@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxTreeList.ToolbarItemClick event.
   */
-@js.native
-trait ASPxClientTreeListToolbarItemClickEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientTreeListToolbarItemClickEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Specifies whether the toolbar item click is handled manually, so no default processing is required.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   
   /**
     * Gets the clicked menu item
     */
-  var item: ASPxClientMenuItem = js.native
+  var item: ASPxClientMenuItem
   
   /**
     * Gets the toolbar index related to the event.
     */
-  var toolbarIndex: Double = js.native
+  var toolbarIndex: Double
   
   /**
     * Gets the toolbar name.
     */
-  var toolbarName: String = js.native
+  var toolbarName: String
   
   /**
     * Specifies whether a postback or a callback is used to finally process the event on the server side.
     */
-  var usePostBack: Boolean = js.native
+  var usePostBack: Boolean
 }
 object ASPxClientTreeListToolbarItemClickEventArgs {
   

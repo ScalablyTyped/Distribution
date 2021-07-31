@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.IssuesGetMilestoneResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersIssuesGetMilestoneEndpoint extends StObject {
   
-  var parameters: IssuesGetMilestoneEndpoint = js.native
+  var parameters: IssuesGetMilestoneEndpoint
   
-  var request: IssuesGetMilestoneRequestOptions = js.native
+  var request: IssuesGetMilestoneRequestOptions
   
-  var response: OctokitResponse[IssuesGetMilestoneResponseData] = js.native
+  var response: OctokitResponse[IssuesGetMilestoneResponseData]
 }
 object ParametersIssuesGetMilestoneEndpoint {
   

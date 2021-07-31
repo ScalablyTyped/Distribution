@@ -6,49 +6,47 @@ import typings.std.ClientRect
 import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createVerticalPositionMod {
   
-  @JSImport("@react-md/utils/types/positioning/createVerticalPosition", "createAnchoredAbove")
+  @JSImport("@react-md/utils/types/positioning/createVerticalPosition", JSImport.Namespace)
   @js.native
-  def createAnchoredAbove(config: FixConfig): YPosition = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-md/utils/types/positioning/createVerticalPosition", "createAnchoredBelow")
-  @js.native
-  def createAnchoredBelow(config: FixConfig): YPosition = js.native
+  @scala.inline
+  def createAnchoredAbove(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredAbove")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
-  @JSImport("@react-md/utils/types/positioning/createVerticalPosition", "createAnchoredBottom")
-  @js.native
-  def createAnchoredBottom(config: FixConfig): YPosition = js.native
+  @scala.inline
+  def createAnchoredBelow(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredBelow")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
-  @JSImport("@react-md/utils/types/positioning/createVerticalPosition", "createAnchoredCenter")
-  @js.native
-  def createAnchoredCenter(config: FixConfig): YPosition = js.native
+  @scala.inline
+  def createAnchoredBottom(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredBottom")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
-  @JSImport("@react-md/utils/types/positioning/createVerticalPosition", "createAnchoredTop")
-  @js.native
-  def createAnchoredTop(config: FixConfig): YPosition = js.native
+  @scala.inline
+  def createAnchoredCenter(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredCenter")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
-  @JSImport("@react-md/utils/types/positioning/createVerticalPosition", "createVerticalPosition")
-  @js.native
+  @scala.inline
+  def createAnchoredTop(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredTop")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
+  
+  @scala.inline
   def createVerticalPosition(
     hasYVhVhMarginYMarginElHeightInitialYContainerRectDisableSwappingPreventOverlapDisableVHBounds: Options
-  ): YPosition = js.native
+  ): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerticalPosition")(hasYVhVhMarginYMarginElHeightInitialYContainerRectDisableSwappingPreventOverlapDisableVHBounds.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
-  @js.native
-  trait FixConfig extends YCoordConfig {
+  trait FixConfig
+    extends StObject
+       with YCoordConfig {
     
-    var disableSwapping: Boolean = js.native
+    var disableSwapping: Boolean
     
-    var disableVHBounds: Boolean = js.native
+    var disableVHBounds: Boolean
     
-    var preventOverlap: Boolean = js.native
+    var preventOverlap: Boolean
     
-    var screenBottom: Double = js.native
+    var screenBottom: Double
     
-    var vhMargin: Double = js.native
+    var vhMargin: Double
   }
   object FixConfig {
     
@@ -91,28 +89,27 @@ object createVerticalPositionMod {
     * @private
     */
   /* Inlined parent std.Required<std.Pick<@react-md/utils.@react-md/utils/types/positioning/types.FixedPositionOptions, 'yMargin' | 'vhMargin' | 'preventOverlap' | 'disableSwapping' | 'disableVHBounds'>> */
-  @js.native
   trait Options extends StObject {
     
-    var containerRect: DOMRect | ClientRect = js.native
+    var containerRect: DOMRect | ClientRect
     
-    var disableSwapping: Boolean = js.native
+    var disableSwapping: Boolean
     
-    var disableVHBounds: Boolean = js.native
+    var disableVHBounds: Boolean
     
-    var elHeight: Double = js.native
+    var elHeight: Double
     
-    var initialY: js.UndefOr[Double] = js.native
+    var initialY: js.UndefOr[Double] = js.undefined
     
-    var preventOverlap: Boolean = js.native
+    var preventOverlap: Boolean
     
-    var vh: Double = js.native
+    var vh: Double
     
-    var vhMargin: Double = js.native
+    var vhMargin: Double
     
-    var y: VerticalPosition = js.native
+    var y: VerticalPosition
     
-    var yMargin: Double = js.native
+    var yMargin: Double
   }
   object Options {
     
@@ -173,14 +170,13 @@ object createVerticalPositionMod {
   /**
     * @private
     */
-  @js.native
   trait YPosition extends StObject {
     
-    var actualY: VerticalPosition = js.native
+    var actualY: VerticalPosition
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var top: Double = js.native
+    var top: Double
   }
   object YPosition {
     

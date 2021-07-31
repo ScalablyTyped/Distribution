@@ -2,7 +2,6 @@ package typings.officeJs.OneNote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,27 @@ sealed trait ParagraphType extends StObject
 object ParagraphType extends StObject {
   
   @js.native
-  sealed trait image extends ParagraphType
+  sealed trait image
+    extends StObject
+       with ParagraphType
   
   @js.native
-  sealed trait ink extends ParagraphType
+  sealed trait ink
+    extends StObject
+       with ParagraphType
   
   @js.native
-  sealed trait other extends ParagraphType
+  sealed trait other
+    extends StObject
+       with ParagraphType
   
   @js.native
-  sealed trait richText extends ParagraphType
+  sealed trait richText
+    extends StObject
+       with ParagraphType
   
   @js.native
-  sealed trait table extends ParagraphType
+  sealed trait table
+    extends StObject
+       with ParagraphType
 }

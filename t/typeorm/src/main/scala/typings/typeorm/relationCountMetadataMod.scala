@@ -6,7 +6,6 @@ import typings.typeorm.relationMetadataMod.RelationMetadata
 import typings.typeorm.selectQueryBuilderMod.SelectQueryBuilder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relationCountMetadataMod {
@@ -40,7 +39,7 @@ object relationCountMetadataMod {
     /**
       * Extra condition applied to "ON" section of join.
       */
-    var queryBuilderFactory: js.UndefOr[js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]]] = js.native
+    var queryBuilderFactory: js.UndefOr[js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]] = js.native
     
     /**
       * Relation which needs to be counted.
@@ -50,7 +49,7 @@ object relationCountMetadataMod {
     /**
       * Relation name which need to count.
       */
-    var relationNameOrFactory: String | (js.Function1[/* object */ js.Any, _]) = js.native
+    var relationNameOrFactory: String | (js.Function1[/* object */ js.Any, js.Any]) = js.native
     
     /**
       * Target class to which metadata is applied.

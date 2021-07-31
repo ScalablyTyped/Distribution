@@ -8,7 +8,6 @@ import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.Sudo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snippetsMod {
@@ -18,7 +17,7 @@ object snippetsMod {
   class Snippets () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
-    def all(hasPublicOptions: publicbooleanPaginatedReq): js.Promise[GetResponse] = js.native
+    def all(hasPOptions: publicbooleanPaginatedReq): js.Promise[GetResponse] = js.native
     
     def content(snippetId: Double): js.Promise[GetResponse] = js.native
     def content(snippetId: Double, options: Sudo): js.Promise[GetResponse] = js.native

@@ -8,15 +8,14 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wrapper {
   
   /** Service of {@link XMLDocumentWrapper} */
-  @js.native
   trait XMLDocumentWrapper
-    extends XXMLDocumentWrapper
+    extends StObject
+       with XXMLDocumentWrapper
        with XInitialization
   object XMLDocumentWrapper {
     
@@ -30,7 +29,7 @@ object wrapper {
       getCurrentElement: () => XXMLElementWrapper,
       getNodeName: XXMLElementWrapper => String,
       getTree: XDocumentHandler => Unit,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       isCurrent: XXMLElementWrapper => Boolean,
       isCurrentElementEmpty: () => Boolean,
       queryInterface: `type` => js.Any,
@@ -45,9 +44,9 @@ object wrapper {
   }
   
   /** Service of {@link XMLElementWrapper} */
-  @js.native
   trait XMLElementWrapper
-    extends XUnoTunnel
+    extends StObject
+       with XUnoTunnel
        with XInitialization
   object XMLElementWrapper {
     
@@ -55,7 +54,7 @@ object wrapper {
     def apply(
       acquire: () => Unit,
       getSomething: SeqEquiv[Double] => Double,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit
     ): XMLElementWrapper = {
@@ -74,14 +73,15 @@ object wrapper {
     *
     * In another word, this interface wraps language dependent methods, then other component can manipulate DOM data through UNO methods.
     */
-  @js.native
-  trait XXMLDocumentWrapper extends XInterface {
+  trait XXMLDocumentWrapper
+    extends StObject
+       with XInterface {
     
     /**
       * Gets the current element.
       * @returns the current element in the SAX event stream
       */
-    var CurrentElement: XXMLElementWrapper = js.native
+    var CurrentElement: XXMLElementWrapper
     
     /**
       * Clears all useless element in a branch of the DOM tree along the tree order.
@@ -93,7 +93,7 @@ object wrapper {
       node: XXMLElementWrapper,
       reservedDescendants: SeqEquiv[XXMLElementWrapper],
       stopAtNode: XXMLElementWrapper
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Collapses a tree path
@@ -101,7 +101,7 @@ object wrapper {
       * Each element in the ancestor path of the node will be checked, if this element is empty, then deletes it.
       * @param node the start point of the path from where the tree path will be collapsed
       */
-    def collapse(node: XXMLElementWrapper): Unit = js.native
+    def collapse(node: XXMLElementWrapper): Unit
     
     /**
       * Converts a part of the DOM tree into SAX events.
@@ -115,52 +115,52 @@ object wrapper {
       saxEventKeeperHandler: XDocumentHandler,
       startNode: XXMLElementWrapper,
       endNode: XXMLElementWrapper
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Gets the current element.
       * @returns the current element in the SAX event stream
       */
-    def getCurrentElement(): XXMLElementWrapper = js.native
+    def getCurrentElement(): XXMLElementWrapper
     
     /**
       * Gets the name of the element.
       * @param node the element whose name will be gotten
       * @returns the name of the element
       */
-    def getNodeName(node: XXMLElementWrapper): String = js.native
+    def getNodeName(node: XXMLElementWrapper): String
     
     /**
       * Converts the whole DOM tree into a SAX event stream.
       * @param handler the document handler which will receive the SAX event stream
       */
-    def getTree(handler: XDocumentHandler): Unit = js.native
+    def getTree(handler: XDocumentHandler): Unit
     
     /**
       * Checks whether an element is the current element.
       * @param node the element to be checked
       * @returns `true` if the node is the current element, `false` otherwise
       */
-    def isCurrent(node: XXMLElementWrapper): Boolean = js.native
+    def isCurrent(node: XXMLElementWrapper): Boolean
     
     /**
       * Checks whether the current element is empty.
       * @returns `true` if the current element is empty, `false` otherwise
       */
-    def isCurrentElementEmpty(): Boolean = js.native
+    def isCurrentElementEmpty(): Boolean
     
     /**
       * Rebuild the ID attribute in the branch starting from the particular element.
       * @param node the root element of the branch whose ID link will be built
       */
-    def rebuildIDLink(node: XXMLElementWrapper): Unit = js.native
+    def rebuildIDLink(node: XXMLElementWrapper): Unit
     
     /**
       * Removes the current element.
       *
       * When the current element is removed, then its parent element becomes the new current element.
       */
-    def removeCurrentElement(): Unit = js.native
+    def removeCurrentElement(): Unit
     
     /**
       * Sets the current element.
@@ -168,7 +168,7 @@ object wrapper {
       * When the current element is replaced outside of this interface, then uses this method can update the current element pointer.
       * @param element the new current element
       */
-    def setCurrentElement(element: XXMLElementWrapper): Unit = js.native
+    def setCurrentElement(element: XXMLElementWrapper): Unit
   }
   object XXMLDocumentWrapper {
     

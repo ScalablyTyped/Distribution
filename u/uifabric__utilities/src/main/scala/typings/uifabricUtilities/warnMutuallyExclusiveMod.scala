@@ -3,12 +3,14 @@ package typings.uifabricUtilities
 import typings.uifabricUtilities.warnWarnMod.ISettingsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object warnMutuallyExclusiveMod {
   
-  @JSImport("@uifabric/utilities/lib/warn/warnMutuallyExclusive", "warnMutuallyExclusive")
+  @JSImport("@uifabric/utilities/lib/warn/warnMutuallyExclusive", JSImport.Namespace)
   @js.native
-  def warnMutuallyExclusive[P](componentName: String, props: P, exclusiveMap: ISettingsMap[P]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def warnMutuallyExclusive[P](componentName: String, props: P, exclusiveMap: ISettingsMap[P]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnMutuallyExclusive")(componentName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], exclusiveMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -4,19 +4,17 @@ import typings.hubot.mod.Adapter
 import typings.hubot.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Listener[A /* <: Adapter */] extends StObject {
     
-    var listener: Middleware[A] = js.native
+    var listener: Middleware[A]
     
-    var receive: Middleware[A] = js.native
+    var receive: Middleware[A]
     
-    var response: Middleware[A] = js.native
+    var response: Middleware[A]
   }
   object Listener {
     
@@ -27,7 +25,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ListenerMutableBuilder[Self <: Listener[_], A /* <: Adapter */] (val x: Self with Listener[A]) extends AnyVal {
+    implicit class ListenerMutableBuilder[Self <: Listener[?], A /* <: Adapter */] (val x: Self & Listener[A]) extends AnyVal {
       
       @scala.inline
       def setListener(value: Middleware[A]): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])

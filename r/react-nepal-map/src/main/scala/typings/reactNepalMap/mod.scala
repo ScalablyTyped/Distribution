@@ -3,10 +3,13 @@ package typings.reactNepalMap
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-nepal-map", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-nepal-map", "DistrictMap")
   @js.native
@@ -24,9 +27,8 @@ object mod {
   @js.native
   val districtMapData: js.Array[DistrictMapTypes] = js.native
   
-  @JSImport("react-nepal-map", "getRandomColor")
-  @js.native
-  def getRandomColor(): String = js.native
+  @scala.inline
+  def getRandomColor(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomColor")().asInstanceOf[String]
   
   @JSImport("react-nepal-map", "provinceMapData")
   @js.native
@@ -36,12 +38,13 @@ object mod {
   @js.native
   val zonalMapData: js.Array[ZonalMapTypes] = js.native
   
-  @js.native
-  trait DistrictMapTypes extends MapMetaDataTypes {
+  trait DistrictMapTypes
+    extends StObject
+       with MapMetaDataTypes {
     
-    var province: Double = js.native
+    var province: Double
     
-    var zip: Double = js.native
+    var zip: Double
   }
   object DistrictMapTypes {
     
@@ -62,12 +65,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MapMetaDataTypes extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var shape: String = js.native
+    var shape: String
   }
   object MapMetaDataTypes {
     
@@ -88,24 +90,23 @@ object mod {
     }
   }
   
-  @js.native
   trait MapPropsTypes extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
-    var hoverColor: js.UndefOr[String] = js.native
+    var hoverColor: js.UndefOr[String] = js.undefined
     
-    var onMapClick: js.UndefOr[js.Function1[/* item */ itemProps, Unit]] = js.native
+    var onMapClick: js.UndefOr[js.Function1[/* item */ itemProps, Unit]] = js.undefined
     
-    var randomSectorColor: js.UndefOr[Boolean] = js.native
+    var randomSectorColor: js.UndefOr[Boolean] = js.undefined
     
-    var sectorClassName: js.UndefOr[String] = js.native
+    var sectorClassName: js.UndefOr[String] = js.undefined
     
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
   }
   object MapPropsTypes {
     
@@ -168,10 +169,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ProvinceMapPropsTypes extends MapPropsTypes {
+  trait ProvinceMapPropsTypes
+    extends StObject
+       with MapPropsTypes {
     
-    var provinceColor: js.UndefOr[js.Array[String]] = js.native
+    var provinceColor: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ProvinceMapPropsTypes {
     
@@ -195,10 +197,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ProvinceMapTypes extends MapMetaDataTypes {
+  trait ProvinceMapTypes
+    extends StObject
+       with MapMetaDataTypes {
     
-    var zip: Double = js.native
+    var zip: Double
   }
   object ProvinceMapTypes {
     
@@ -216,10 +219,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ZonalMapTypes extends MapMetaDataTypes {
+  trait ZonalMapTypes
+    extends StObject
+       with MapMetaDataTypes {
     
-    var code: String = js.native
+    var code: String
   }
   object ZonalMapTypes {
     
@@ -237,16 +241,15 @@ object mod {
     }
   }
   
-  @js.native
   trait itemProps extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var name: String = js.native
+    var name: String
     
-    var province: Double = js.native
+    var province: Double
     
-    var zip: Double = js.native
+    var zip: Double
   }
   object itemProps {
     

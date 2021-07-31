@@ -50,7 +50,6 @@ import typings.std.ArrayBuffer
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -72,35 +71,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object usb {
   
   /** @since Chrome 39. */
-  @js.native
   trait ConfigDescriptor extends StObject {
     
     /**
       * Is this the active configuration?
       * @since Chrome 47.
       */
-    var active: Boolean = js.native
+    var active: Boolean
     
     /** The configuration number. */
-    var configurationValue: integer = js.native
+    var configurationValue: integer
     
     /** Description of the configuration. */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** Extra descriptor data associated with this configuration. */
-    var extra_data: ArrayBuffer = js.native
+    var extra_data: ArrayBuffer
     
     /** Available interfaces. */
-    var interfaces: js.Array[InterfaceDescriptor] = js.native
+    var interfaces: js.Array[InterfaceDescriptor]
     
     /** The maximum power needed by this device in milliamps (mA). */
-    var maxPower: integer = js.native
+    var maxPower: integer
     
     /** The device supports remote wakeup. */
-    var remoteWakeup: Boolean = js.native
+    var remoteWakeup: Boolean
     
     /** The device is self-powered. */
-    var selfPowered: Boolean = js.native
+    var selfPowered: Boolean
   }
   object ConfigDescriptor {
     
@@ -154,7 +152,6 @@ object usb {
   }
   
   /** Since Chrome 31. */
-  @js.native
   trait ConnectionHandle extends StObject {
     
     /**
@@ -163,13 +160,13 @@ object usb {
       * A new handle is created each time the device is opened.
       * The connection handle is different from Device.device.
       */
-    var handle: integer = js.native
+    var handle: integer
     
     /** The product ID. */
-    var productId: integer = js.native
+    var productId: integer
     
     /** The device vendor ID. */
-    var vendorId: integer = js.native
+    var vendorId: integer
   }
   object ConnectionHandle {
     
@@ -193,44 +190,43 @@ object usb {
     }
   }
   
-  @js.native
   trait Device extends StObject {
     
     /**
       * An opaque ID for the USB device. It remains unchanged until the device is unplugged.
       * @since Chrome 31.
       */
-    var device: integer = js.native
+    var device: integer
     
     /**
       * The iManufacturer string read from the device, if available.
       * @since Chrome 46.
       */
-    var manufacturerName: String = js.native
+    var manufacturerName: String
     
     /** The product ID. */
-    var productId: integer = js.native
+    var productId: integer
     
     /**
       * The iProduct string read from the device, if available.
       * @since Chrome 46.
       */
-    var productName: String = js.native
+    var productName: String
     
     /**
       * The iSerialNumber string read from the device, if available.
       * @since Chrome 46.
       */
-    var serialNumber: String = js.native
+    var serialNumber: String
     
     /** The vendor ID. */
-    var vendorId: integer = js.native
+    var vendorId: integer
     
     /**
       * The device version (bcdDevice field).
       * @since Chrome 46.
       */
-    var version: integer = js.native
+    var version: integer
   }
   object Device {
     
@@ -278,18 +274,17 @@ object usb {
   
   /** @since Chrome 39. */
   /* Inlined parent std.Partial<chrome-apps.chrome.usb.DeviceFilterStrict> */
-  @js.native
   trait DeviceFilter extends StObject {
     
-    var interfaceClass: js.UndefOr[integer] = js.native
+    var interfaceClass: js.UndefOr[integer] = js.undefined
     
-    var interfaceProtocol: js.UndefOr[integer] = js.native
+    var interfaceProtocol: js.UndefOr[integer] = js.undefined
     
-    var interfaceSubclass: js.UndefOr[integer] = js.native
+    var interfaceSubclass: js.UndefOr[integer] = js.undefined
     
-    var productId: js.UndefOr[integer] = js.native
+    var productId: js.UndefOr[integer] = js.undefined
     
-    var vendorId: js.UndefOr[integer] = js.native
+    var vendorId: js.UndefOr[integer] = js.undefined
   }
   object DeviceFilter {
     
@@ -334,23 +329,22 @@ object usb {
     }
   }
   
-  @js.native
   trait DeviceFilterStrict extends StObject {
     
     /** USB interface class, matches any interface on the device. */
-    var interfaceClass: js.UndefOr[integer] = js.native
+    var interfaceClass: js.UndefOr[integer] = js.undefined
     
     /** USB interface protocol, checked only if the interface sub-class matches. */
-    var interfaceProtocol: js.UndefOr[integer] = js.native
+    var interfaceProtocol: js.UndefOr[integer] = js.undefined
     
     /** USB interface sub-class, checked only if the interface class matches. */
-    var interfaceSubclass: js.UndefOr[integer] = js.native
+    var interfaceSubclass: js.UndefOr[integer] = js.undefined
     
     /** Device product ID, checked only if the vendor ID matches. */
-    var productId: js.UndefOr[integer] = js.native
+    var productId: js.UndefOr[integer] = js.undefined
     
     /** Device vendor ID. */
-    var vendorId: integer = js.native
+    var vendorId: integer
   }
   object DeviceFilterStrict {
     
@@ -393,11 +387,10 @@ object usb {
   }
   
   /** Since Chrome 29. */
-  @js.native
   trait EndpointDescriptor extends StObject {
     
     /** Transfer type. */
-    var address: integer = js.native
+    var address: integer
     
     /**
       * Transfer direction.
@@ -410,19 +403,19 @@ object usb {
           /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
           in_ | out_
         ]
-      ] = js.native
+      ]
     
     /**
       * Extra descriptor data associated with this endpoint.
       * @since Chrome 39.
       */
-    var extra_data: ArrayBuffer = js.native
+    var extra_data: ArrayBuffer
     
     /** Maximum packet size. */
-    var maximumPacketSize: integer = js.native
+    var maximumPacketSize: integer
     
     /** Polling interval (interrupt and isochronous only). */
-    var pollingInterval: js.UndefOr[integer] = js.native
+    var pollingInterval: js.UndefOr[integer] = js.undefined
     
     /**
       * Transfer synchronization mode (isochronous only).
@@ -437,7 +430,7 @@ object usb {
             asynchronous_ | adaptive_ | synchronous_
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Transfer type.
@@ -451,7 +444,7 @@ object usb {
           /* keyof chrome-apps.anon.BULK */ CONTROL | INTERRUPT | ISOCHRONOUS | typings.chromeApps.chromeAppsStrings.BULK, 
           control_ | interrupt_ | isochronous_ | bulk_
         ]
-      ] = js.native
+      ]
     
     /**
       * Endpoint usage hint
@@ -466,7 +459,7 @@ object usb {
             notification_ | data_ | periodic_ | feedback_ | explicitFeedback
           ]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object EndpointDescriptor {
     
@@ -571,11 +564,10 @@ object usb {
     }
   }
   
-  @js.native
   trait GenericTransferInfo extends StObject {
     
     /** The data to transmit (required only by output transfers). */
-    var data: js.UndefOr[ArrayBuffer] = js.native
+    var data: js.UndefOr[ArrayBuffer] = js.undefined
     
     /**
       * The transfer direction ('in' or 'out').
@@ -588,20 +580,20 @@ object usb {
           /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
           in_ | out_
         ]
-      ] = js.native
+      ]
     
     /** The target endpoint address. The interface containing this endpoint must be claimed. */
-    var endpoint: integer = js.native
+    var endpoint: integer
     
     /** The maximum number of bytes to receive (required only by input transfers). */
-    var length: js.UndefOr[integer] = js.native
+    var length: js.UndefOr[integer] = js.undefined
     
     /**
       * Request timeout (in milliseconds).
       * The default value 0 indicates no timeout.
       * @default 0
       */
-    var timeout: js.UndefOr[integer] = js.native
+    var timeout: js.UndefOr[integer] = js.undefined
   }
   object GenericTransferInfo {
     
@@ -660,38 +652,37 @@ object usb {
   }
   
   /** @since Chrome 29. */
-  @js.native
   trait InterfaceDescriptor extends StObject {
     
     /**
       * The interface alternate setting number.
       * @default 0
       */
-    var alternateSetting: integer = js.native
+    var alternateSetting: integer
     
     /** Description of the interface */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** Available endpoints. */
-    var endpoints: js.Array[EndpointDescriptor] = js.native
+    var endpoints: js.Array[EndpointDescriptor]
     
     /**
       * Extra descriptor data associated with this interface.
       * @since Chrome 39.
       */
-    var extra_data: ArrayBuffer = js.native
+    var extra_data: ArrayBuffer
     
     /** The USB interface class. */
-    var interfaceClass: integer = js.native
+    var interfaceClass: integer
     
     /** The interface number */
-    var interfaceNumber: integer = js.native
+    var interfaceNumber: integer
     
     /** The USB interface protocol. */
-    var interfaceProtocol: integer = js.native
+    var interfaceProtocol: integer
     
     /** The USB interface sub-class. */
-    var interfaceSubclass: integer = js.native
+    var interfaceSubclass: integer
   }
   object InterfaceDescriptor {
     
@@ -744,21 +735,20 @@ object usb {
     }
   }
   
-  @js.native
   trait IsochronousTransferInfo extends StObject {
     
     /** The length of each of the packets in this transfer. */
-    var packetLength: integer = js.native
+    var packetLength: integer
     
     /** The total number of packets in this transfer. */
-    var packets: integer = js.native
+    var packets: integer
     
     /**
       * Transfer parameters.
       * The transfer length or data buffer specified in this parameter block is split
       * along packetLength boundaries to form the individual packets of the transfer.
       */
-    var transferInfo: GenericTransferInfo = js.native
+    var transferInfo: GenericTransferInfo
   }
   object IsochronousTransferInfo {
     
@@ -782,11 +772,10 @@ object usb {
     }
   }
   
-  @js.native
   trait TransferInfo extends StObject {
     
     /** The data to transmit (required only by output transfers). */
-    var data: js.UndefOr[ArrayBuffer] = js.native
+    var data: js.UndefOr[ArrayBuffer] = js.undefined
     
     /**
       * The transfer direction ('in' or 'out').
@@ -799,13 +788,13 @@ object usb {
           /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
           in_ | out_
         ]
-      ] = js.native
+      ]
     
     /** The wIndex field, see *Ibid*. */
-    var index: integer = js.native
+    var index: integer
     
     /** The maximum number of bytes to receive(required only by input transfers). */
-    var length: js.UndefOr[integer] = js.native
+    var length: js.UndefOr[integer] = js.undefined
     
     /**
       * The transfer target.
@@ -819,10 +808,10 @@ object usb {
           /* keyof chrome-apps.anon.DEVICE */ typings.chromeApps.chromeAppsStrings.DEVICE | INTERFACE | ENDPOINT | OTHER, 
           device__ | interface_ | endpoint_ | other_
         ]
-      ] = js.native
+      ]
     
     /** The bRequest field, see *Universal Serial Bus Specification Revision 1.1 § 9.3.* */
-    var request: integer = js.native
+    var request: integer
     
     /**
       * The request type.
@@ -835,7 +824,7 @@ object usb {
           /* keyof chrome-apps.anon.CLASS */ STANDARD | typings.chromeApps.chromeAppsStrings.CLASS | VENDOR | RESERVED, 
           standard_ | class_ | vendor_ | reserved_
         ]
-      ] = js.native
+      ]
     
     /**
       * @since Chrome 43.
@@ -843,10 +832,10 @@ object usb {
       * The default value 0 indicates no timeout.
       * @default 0
       */
-    var timeout: js.UndefOr[integer] = js.native
+    var timeout: js.UndefOr[integer] = js.undefined
     
     /** The wValue field, see *Ibid*. */
-    var value: integer = js.native
+    var value: integer
   }
   object TransferInfo {
     
@@ -952,14 +941,13 @@ object usb {
     }
   }
   
-  @js.native
   trait TransferResultInfo extends StObject {
     
     /** The data returned by an input transfer. undefined for output transfers. */
-    var data: js.UndefOr[ArrayBuffer] = js.native
+    var data: js.UndefOr[ArrayBuffer] = js.undefined
     
     /** A value of 0 indicates that the transfer was a success. Other values indicate failure. */
-    var resultCode: js.UndefOr[integer] = js.native
+    var resultCode: js.UndefOr[integer] = js.undefined
   }
   object TransferResultInfo {
     

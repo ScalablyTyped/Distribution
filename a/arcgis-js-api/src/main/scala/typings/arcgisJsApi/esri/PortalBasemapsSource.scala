@@ -5,11 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.loading
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalBasemapsSource extends LocalBasemapsSource {
+trait PortalBasemapsSource
+  extends StObject
+     with LocalBasemapsSource {
   
   /**
     * Function used to filter basemaps after being fetched from the Portal.

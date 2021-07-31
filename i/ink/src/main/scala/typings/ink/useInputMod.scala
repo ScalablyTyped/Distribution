@@ -2,10 +2,13 @@ package typings.ink
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useInputMod {
+  
+  @JSImport("ink/build/hooks/use-input", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * This hook is used for handling user input.
@@ -31,87 +34,84 @@ object useInputMod {
     * };
     * ```
     */
-  @JSImport("ink/build/hooks/use-input", JSImport.Default)
-  @js.native
-  def default(inputHandler: Handler): Unit = js.native
-  @JSImport("ink/build/hooks/use-input", JSImport.Default)
-  @js.native
-  def default(inputHandler: Handler, options: Options): Unit = js.native
+  @scala.inline
+  def default(inputHandler: Handler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(inputHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def default(inputHandler: Handler, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(inputHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Handler = js.Function2[/* input */ String, /* key */ Key, Unit]
   
-  @js.native
   trait Key extends StObject {
     
     /**
       * Backspace key was pressed.
       */
-    var backspace: Boolean = js.native
+    var backspace: Boolean
     
     /**
       * Ctrl key was pressed.
       */
-    var ctrl: Boolean = js.native
+    var ctrl: Boolean
     
     /**
       * Delete key was pressed.
       */
-    var delete: Boolean = js.native
+    var delete: Boolean
     
     /**
       * Down arrow key was pressed.
       */
-    var downArrow: Boolean = js.native
+    var downArrow: Boolean
     
     /**
       * Escape key was pressed.
       */
-    var escape: Boolean = js.native
+    var escape: Boolean
     
     /**
       * Left arrow key was pressed.
       */
-    var leftArrow: Boolean = js.native
+    var leftArrow: Boolean
     
     /**
       * [Meta key](https://en.wikipedia.org/wiki/Meta_key) was pressed.
       */
-    var meta: Boolean = js.native
+    var meta: Boolean
     
     /**
       * Page Down key was pressed.
       */
-    var pageDown: Boolean = js.native
+    var pageDown: Boolean
     
     /**
       * Page Up key was pressed.
       */
-    var pageUp: Boolean = js.native
+    var pageUp: Boolean
     
     /**
       * Return (Enter) key was pressed.
       */
-    var `return`: Boolean = js.native
+    var `return`: Boolean
     
     /**
       * Right arrow key was pressed.
       */
-    var rightArrow: Boolean = js.native
+    var rightArrow: Boolean
     
     /**
       * Shift key was pressed.
       */
-    var shift: Boolean = js.native
+    var shift: Boolean
     
     /**
       * Tab key was pressed.
       */
-    var tab: Boolean = js.native
+    var tab: Boolean
     
     /**
       * Up arrow key was pressed.
       */
-    var upArrow: Boolean = js.native
+    var upArrow: Boolean
   }
   object Key {
     
@@ -184,7 +184,6 @@ object useInputMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -193,7 +192,7 @@ object useInputMod {
       *
       * @default true
       */
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

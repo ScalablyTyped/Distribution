@@ -6,11 +6,12 @@ import typings.storybookAddonKnobs.numberMod.NumberTypeProps
 import typings.storybookAddonKnobs.numberMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofNumberType extends Instantiable0[default] {
+trait TypeofNumberType
+  extends StObject
+     with Instantiable0[default] {
   
   var defaultProps: NumberTypeProps = js.native
   

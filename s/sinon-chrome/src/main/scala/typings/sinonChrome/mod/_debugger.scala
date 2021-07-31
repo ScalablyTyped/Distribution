@@ -3,7 +3,6 @@ package typings.sinonChrome.mod
 import typings.sinonChrome.mod.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Workaround for debugger being a reserved word and can't be exported as a namespace normally

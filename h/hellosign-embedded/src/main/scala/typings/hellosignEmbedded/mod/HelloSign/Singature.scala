@@ -2,17 +2,15 @@ package typings.hellosignEmbedded.mod.HelloSign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Singature extends StObject {
   
-  var order: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[Double] = js.undefined
   
-  var signer_email_address: String = js.native
+  var signer_email_address: String
   
-  var signer_name: String = js.native
+  var signer_name: String
 }
 object Singature {
   

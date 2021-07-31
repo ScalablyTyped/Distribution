@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteArchiveRequest extends StObject {
   
   /**
     * The name of the archive to delete.
     */
-  var ArchiveName: typings.awsSdk.cloudwatcheventsMod.ArchiveName = js.native
+  var ArchiveName: typings.awsSdk.cloudwatcheventsMod.ArchiveName
 }
 object DeleteArchiveRequest {
   

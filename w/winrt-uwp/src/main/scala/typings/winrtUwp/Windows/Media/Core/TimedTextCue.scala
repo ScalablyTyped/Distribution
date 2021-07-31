@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.Media.Core
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a text cue in a TimedMetadataTrack . */
-@js.native
 trait TimedTextCue extends StObject {
   
   /** Gets or sets the TimedTextRegion of the cue, which defines the style of the rendering area for the cue. */
-  var cueRegion: TimedTextRegion = js.native
+  var cueRegion: TimedTextRegion
   
   /** Gets or sets the TimedTextStyle of the cue, which defines the style of the rendered text. */
-  var cueStyle: TimedTextStyle = js.native
+  var cueStyle: TimedTextStyle
   
   /** Gets or sets the duration of the cue. */
-  var duration: Double = js.native
+  var duration: Double
   
   /** Gets or sets an identifier for the cue. */
-  var id: String = js.native
+  var id: String
   
   /** Gets the collection of TimedTextLine objects that convey the text of the cue. */
-  var lines: IVector[TimedTextLine] = js.native
+  var lines: IVector[TimedTextLine]
   
   /** Gets the start time of the cue. */
-  var startTime: Double = js.native
+  var startTime: Double
 }
 object TimedTextCue {
   

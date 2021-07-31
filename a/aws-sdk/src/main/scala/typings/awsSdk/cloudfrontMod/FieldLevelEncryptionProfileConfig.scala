@@ -2,31 +2,29 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldLevelEncryptionProfileConfig extends StObject {
   
   /**
     * A unique number that ensures that the request can't be replayed.
     */
-  var CallerReference: String = js.native
+  var CallerReference: String
   
   /**
     * An optional comment for the field-level encryption profile.
     */
-  var Comment: js.UndefOr[String] = js.native
+  var Comment: js.UndefOr[String] = js.undefined
   
   /**
     * A complex data type of encryption entities for the field-level encryption profile that include the public key ID, provider, and field patterns for specifying which fields to encrypt with this key.
     */
-  var EncryptionEntities: typings.awsSdk.cloudfrontMod.EncryptionEntities = js.native
+  var EncryptionEntities: typings.awsSdk.cloudfrontMod.EncryptionEntities
   
   /**
     * Profile name for the field-level encryption profile.
     */
-  var Name: String = js.native
+  var Name: String
 }
 object FieldLevelEncryptionProfileConfig {
   

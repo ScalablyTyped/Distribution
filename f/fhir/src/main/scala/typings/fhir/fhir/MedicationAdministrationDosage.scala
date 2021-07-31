@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of how medication was taken
   */
-@js.native
-trait MedicationAdministrationDosage extends BackboneElement {
+trait MedicationAdministrationDosage
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'text'.
     */
-  var _text: js.UndefOr[Element] = js.native
+  var _text: js.UndefOr[Element] = js.undefined
   
   /**
     * Amount of medication per dose
     */
-  var dose: js.UndefOr[Quantity] = js.native
+  var dose: js.UndefOr[Quantity] = js.undefined
   
   /**
     * How drug was administered
     */
-  var method: js.UndefOr[CodeableConcept] = js.native
+  var method: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Dose quantity per unit of time
     */
-  var rateQuantity: js.UndefOr[Quantity] = js.native
+  var rateQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Dose quantity per unit of time
     */
-  var rateRatio: js.UndefOr[Ratio] = js.native
+  var rateRatio: js.UndefOr[Ratio] = js.undefined
   
   /**
     * Path of substance into body
     */
-  var route: js.UndefOr[CodeableConcept] = js.native
+  var route: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Body site administered to
     */
-  var site: js.UndefOr[CodeableConcept] = js.native
+  var site: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Free text dosage instructions e.g. SIG
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object MedicationAdministrationDosage {
   

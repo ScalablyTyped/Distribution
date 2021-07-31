@@ -3,13 +3,11 @@ package typings.minappEnv.wx
 import typings.minappEnv.anon.CallFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WX_ extends StObject {
   
-  var cloud: CallFunction = js.native
+  var cloud: CallFunction
 }
 object WX_ {
   

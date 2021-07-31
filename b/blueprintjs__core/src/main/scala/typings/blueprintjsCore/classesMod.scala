@@ -7,10 +7,13 @@ import typings.blueprintjsCore.intentMod.Intent
 import typings.blueprintjsCore.positionMod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classesMod {
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/classes", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/core/lib/esm/common/classes", "ACTIVE")
   @js.native
@@ -848,66 +851,55 @@ object classesMod {
   @js.native
   val VERTICAL: String = js.native
   
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "alignmentClass")
-  @js.native
-  def alignmentClass(): js.UndefOr[String] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "alignmentClass")
-  @js.native
-  def alignmentClass(alignment: Alignment): js.UndefOr[String] = js.native
+  @scala.inline
+  def alignmentClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alignmentClass")().asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def alignmentClass(alignment: Alignment): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alignmentClass")(alignment.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "elevationClass")
-  @js.native
-  def elevationClass(): js.UndefOr[String] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "elevationClass")
-  @js.native
-  def elevationClass(elevation: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "elevationClass")
-  @js.native
-  def elevationClass(elevation: Elevation): String = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "elevationClass")
-  @js.native
-  def elevationClass_Union(elevation: Elevation): js.UndefOr[String] = js.native
+  @scala.inline
+  def elevationClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")().asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def elevationClass(elevation: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def elevationClass(elevation: Elevation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "getClassNamespace")
-  @js.native
-  def getClassNamespace(): String = js.native
+  @scala.inline
+  def elevationClass_Union(elevation: Elevation): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "iconClass")
-  @js.native
-  def iconClass(): js.UndefOr[String] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "iconClass")
-  @js.native
-  def iconClass(iconName: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "iconClass")
-  @js.native
-  def iconClass(iconName: String): String = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "iconClass")
-  @js.native
-  def iconClass_Union(iconName: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def getClassNamespace(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNamespace")().asInstanceOf[String]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "intentClass")
-  @js.native
-  def intentClass(): js.UndefOr[scala.Nothing] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "intentClass")
-  @js.native
-  def intentClass(intent: Intent): String = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "intentClass")
-  @js.native
-  def intentClass_Union(intent: Intent): js.UndefOr[Intent] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "intentClass")
-  @js.native
-  def intentClass_none(intent: none): js.UndefOr[scala.Nothing] = js.native
+  @scala.inline
+  def iconClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")().asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def iconClass(iconName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")(iconName.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def iconClass(iconName: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")(iconName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "positionClass")
-  @js.native
-  def positionClass(): js.UndefOr[String] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "positionClass")
-  @js.native
-  def positionClass(position: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "positionClass")
-  @js.native
-  def positionClass(position: Position): String = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/classes", "positionClass")
-  @js.native
-  def positionClass_Union(position: Position): js.UndefOr[String] = js.native
+  @scala.inline
+  def iconClass_Union(iconName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")(iconName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  @scala.inline
+  def intentClass(): js.UndefOr[Intent] = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")().asInstanceOf[js.UndefOr[Intent]]
+  @scala.inline
+  def intentClass(intent: Intent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def intentClass_Union(intent: Intent): js.UndefOr[Intent] = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Intent]]
+  
+  @scala.inline
+  def intentClass_Unit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def intentClass_none(intent: none): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def positionClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")().asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def positionClass(position: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def positionClass(position: Position): String = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def positionClass_Union(position: Position): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

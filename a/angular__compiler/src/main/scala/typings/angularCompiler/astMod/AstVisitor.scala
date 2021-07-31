@@ -2,10 +2,8 @@ package typings.angularCompiler.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AstVisitor extends StObject {
   
   /**
@@ -14,61 +12,61 @@ trait AstVisitor extends StObject {
     * @param ast node to visit
     * @param context context that gets passed to the node and all its children
     */
-  var visit: js.UndefOr[js.Function2[/* ast */ AST, /* context */ js.UndefOr[js.Any], _]] = js.native
+  var visit: js.UndefOr[js.Function2[/* ast */ AST, /* context */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
-  var visitASTWithSource: js.UndefOr[js.Function2[/* ast */ ASTWithSource, /* context */ js.Any, _]] = js.native
+  var visitASTWithSource: js.UndefOr[js.Function2[/* ast */ ASTWithSource, /* context */ js.Any, js.Any]] = js.undefined
   
-  def visitBinary(ast: Binary, context: js.Any): js.Any = js.native
+  def visitBinary(ast: Binary, context: js.Any): js.Any
   
-  def visitChain(ast: Chain, context: js.Any): js.Any = js.native
+  def visitChain(ast: Chain, context: js.Any): js.Any
   
-  def visitConditional(ast: Conditional, context: js.Any): js.Any = js.native
+  def visitConditional(ast: Conditional, context: js.Any): js.Any
   
-  def visitFunctionCall(ast: FunctionCall, context: js.Any): js.Any = js.native
+  def visitFunctionCall(ast: FunctionCall, context: js.Any): js.Any
   
-  def visitImplicitReceiver(ast: ImplicitReceiver, context: js.Any): js.Any = js.native
+  def visitImplicitReceiver(ast: ImplicitReceiver, context: js.Any): js.Any
   
-  def visitInterpolation(ast: Interpolation, context: js.Any): js.Any = js.native
+  def visitInterpolation(ast: Interpolation, context: js.Any): js.Any
   
-  def visitKeyedRead(ast: KeyedRead, context: js.Any): js.Any = js.native
+  def visitKeyedRead(ast: KeyedRead, context: js.Any): js.Any
   
-  def visitKeyedWrite(ast: KeyedWrite, context: js.Any): js.Any = js.native
+  def visitKeyedWrite(ast: KeyedWrite, context: js.Any): js.Any
   
-  def visitLiteralArray(ast: LiteralArray, context: js.Any): js.Any = js.native
+  def visitLiteralArray(ast: LiteralArray, context: js.Any): js.Any
   
-  def visitLiteralMap(ast: LiteralMap, context: js.Any): js.Any = js.native
+  def visitLiteralMap(ast: LiteralMap, context: js.Any): js.Any
   
-  def visitLiteralPrimitive(ast: LiteralPrimitive, context: js.Any): js.Any = js.native
+  def visitLiteralPrimitive(ast: LiteralPrimitive, context: js.Any): js.Any
   
-  def visitMethodCall(ast: MethodCall, context: js.Any): js.Any = js.native
+  def visitMethodCall(ast: MethodCall, context: js.Any): js.Any
   
-  def visitNonNullAssert(ast: NonNullAssert, context: js.Any): js.Any = js.native
+  def visitNonNullAssert(ast: NonNullAssert, context: js.Any): js.Any
   
-  def visitPipe(ast: BindingPipe, context: js.Any): js.Any = js.native
+  def visitPipe(ast: BindingPipe, context: js.Any): js.Any
   
-  def visitPrefixNot(ast: PrefixNot, context: js.Any): js.Any = js.native
+  def visitPrefixNot(ast: PrefixNot, context: js.Any): js.Any
   
-  def visitPropertyRead(ast: PropertyRead, context: js.Any): js.Any = js.native
+  def visitPropertyRead(ast: PropertyRead, context: js.Any): js.Any
   
-  def visitPropertyWrite(ast: PropertyWrite, context: js.Any): js.Any = js.native
+  def visitPropertyWrite(ast: PropertyWrite, context: js.Any): js.Any
   
-  def visitQuote(ast: Quote, context: js.Any): js.Any = js.native
+  def visitQuote(ast: Quote, context: js.Any): js.Any
   
-  def visitSafeMethodCall(ast: SafeMethodCall, context: js.Any): js.Any = js.native
+  def visitSafeMethodCall(ast: SafeMethodCall, context: js.Any): js.Any
   
-  def visitSafePropertyRead(ast: SafePropertyRead, context: js.Any): js.Any = js.native
+  def visitSafePropertyRead(ast: SafePropertyRead, context: js.Any): js.Any
   
   /**
     * The `visitThisReceiver` method is declared as optional for backwards compatibility.
     * In an upcoming major release, this method will be made required.
     */
-  var visitThisReceiver: js.UndefOr[js.Function2[/* ast */ ThisReceiver, /* context */ js.Any, _]] = js.native
+  var visitThisReceiver: js.UndefOr[js.Function2[/* ast */ ThisReceiver, /* context */ js.Any, js.Any]] = js.undefined
   
   /**
     * The `visitUnary` method is declared as optional for backwards compatibility. In an upcoming
     * major release, this method will be made required.
     */
-  var visitUnary: js.UndefOr[js.Function2[/* ast */ Unary, /* context */ js.Any, _]] = js.native
+  var visitUnary: js.UndefOr[js.Function2[/* ast */ Unary, /* context */ js.Any, js.Any]] = js.undefined
 }
 object AstVisitor {
   
@@ -103,10 +101,10 @@ object AstVisitor {
   implicit class AstVisitorMutableBuilder[Self <: AstVisitor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setVisit(value: (/* ast */ AST, /* context */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
+    def setVisit(value: (/* ast */ AST, /* context */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitASTWithSource(value: (/* ast */ ASTWithSource, /* context */ js.Any) => _): Self = StObject.set(x, "visitASTWithSource", js.Any.fromFunction2(value))
+    def setVisitASTWithSource(value: (/* ast */ ASTWithSource, /* context */ js.Any) => js.Any): Self = StObject.set(x, "visitASTWithSource", js.Any.fromFunction2(value))
     
     @scala.inline
     def setVisitASTWithSourceUndefined: Self = StObject.set(x, "visitASTWithSource", js.undefined)
@@ -172,13 +170,13 @@ object AstVisitor {
     def setVisitSafePropertyRead(value: (SafePropertyRead, js.Any) => js.Any): Self = StObject.set(x, "visitSafePropertyRead", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitThisReceiver(value: (/* ast */ ThisReceiver, /* context */ js.Any) => _): Self = StObject.set(x, "visitThisReceiver", js.Any.fromFunction2(value))
+    def setVisitThisReceiver(value: (/* ast */ ThisReceiver, /* context */ js.Any) => js.Any): Self = StObject.set(x, "visitThisReceiver", js.Any.fromFunction2(value))
     
     @scala.inline
     def setVisitThisReceiverUndefined: Self = StObject.set(x, "visitThisReceiver", js.undefined)
     
     @scala.inline
-    def setVisitUnary(value: (/* ast */ Unary, /* context */ js.Any) => _): Self = StObject.set(x, "visitUnary", js.Any.fromFunction2(value))
+    def setVisitUnary(value: (/* ast */ Unary, /* context */ js.Any) => js.Any): Self = StObject.set(x, "visitUnary", js.Any.fromFunction2(value))
     
     @scala.inline
     def setVisitUnaryUndefined: Self = StObject.set(x, "visitUnary", js.undefined)

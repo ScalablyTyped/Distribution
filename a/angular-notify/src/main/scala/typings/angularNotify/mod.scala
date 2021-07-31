@@ -4,7 +4,6 @@ import typings.angularNotify.anon.Classes
 import typings.angularNotify.anon.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -12,18 +11,17 @@ object mod {
   
   object cgNotify {
     
-    @js.native
     trait INotify extends StObject {
       
       /**
         * Close this open notifications.
         */
-      def close(): Unit = js.native
+      def close(): Unit
       
       /**
         * The message to show.
         */
-      var message: String = js.native
+      var message: String
     }
     object INotify {
       

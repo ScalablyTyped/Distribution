@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDocumentResponse extends StObject {
   
   /**
     * Resulting node.
     */
-  var root: Node = js.native
+  var root: Node
 }
 object GetDocumentResponse {
   

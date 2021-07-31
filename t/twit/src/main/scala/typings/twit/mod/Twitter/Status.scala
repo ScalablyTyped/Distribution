@@ -7,85 +7,83 @@ import typings.twit.twitStrings.medium
 import typings.twit.twitStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Status extends StObject {
   
-  var annotations: js.UndefOr[js.Object] = js.native
+  var annotations: js.UndefOr[js.Object] = js.undefined
   
-  var contributors: js.UndefOr[js.Array[Contributors]] = js.native
+  var contributors: js.UndefOr[js.Array[Contributors]] = js.undefined
   
-  var coordinates: js.UndefOr[Point] = js.native
+  var coordinates: js.UndefOr[Point] = js.undefined
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var current_user_retweet: js.UndefOr[Id] = js.native
+  var current_user_retweet: js.UndefOr[Id] = js.undefined
   
-  var display_text_range: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var display_text_range: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var entities: Entities = js.native
+  var entities: Entities
   
-  var favorite_count: js.UndefOr[Double] = js.native
+  var favorite_count: js.UndefOr[Double] = js.undefined
   
-  var favorited: js.UndefOr[Boolean] = js.native
+  var favorited: js.UndefOr[Boolean] = js.undefined
   
-  var filter_level: none | low | medium = js.native
+  var filter_level: none | low | medium
   
-  var full_text: js.UndefOr[String] = js.native
+  var full_text: js.UndefOr[String] = js.undefined
   
-  var id: Double = js.native
+  var id: Double
   
-  var id_str: String = js.native
+  var id_str: String
   
-  var in_reply_to_screen_name: js.UndefOr[String] = js.native
+  var in_reply_to_screen_name: js.UndefOr[String] = js.undefined
   
-  var in_reply_to_status_id: js.UndefOr[Double] = js.native
+  var in_reply_to_status_id: js.UndefOr[Double] = js.undefined
   
-  var in_reply_to_status_id_str: js.UndefOr[String] = js.native
+  var in_reply_to_status_id_str: js.UndefOr[String] = js.undefined
   
-  var in_reply_to_user_id: js.UndefOr[Double] = js.native
+  var in_reply_to_user_id: js.UndefOr[Double] = js.undefined
   
-  var in_reply_to_user_id_str: js.UndefOr[String] = js.native
+  var in_reply_to_user_id_str: js.UndefOr[String] = js.undefined
   
-  var is_quote_status: String = js.native
+  var is_quote_status: String
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var matching_rules: js.UndefOr[js.Array[MatchingRules]] = js.native
+  var matching_rules: js.UndefOr[js.Array[MatchingRules]] = js.undefined
   
-  var place: js.UndefOr[Place] = js.native
+  var place: js.UndefOr[Place] = js.undefined
   
-  var possibly_sensitive: js.UndefOr[Boolean] = js.native
+  var possibly_sensitive: js.UndefOr[Boolean] = js.undefined
   
-  var quoted_status: js.UndefOr[Status] = js.native
+  var quoted_status: js.UndefOr[Status] = js.undefined
   
-  var quoted_status_id: js.UndefOr[Double] = js.native
+  var quoted_status_id: js.UndefOr[Double] = js.undefined
   
-  var quoted_status_id_str: js.UndefOr[String] = js.native
+  var quoted_status_id_str: js.UndefOr[String] = js.undefined
   
-  var retweet_count: Double = js.native
+  var retweet_count: Double
   
-  var retweeted: Boolean = js.native
+  var retweeted: Boolean
   
-  var retweeted_status: js.UndefOr[Status] = js.native
+  var retweeted_status: js.UndefOr[Status] = js.undefined
   
-  var scopes: js.UndefOr[js.Object] = js.native
+  var scopes: js.UndefOr[js.Object] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var truncated: Boolean = js.native
+  var truncated: Boolean
   
-  var user: User = js.native
+  var user: User
   
-  var withheld_copyright: js.UndefOr[Boolean] = js.native
+  var withheld_copyright: js.UndefOr[Boolean] = js.undefined
   
-  var withheld_in_countries: js.UndefOr[js.Array[String]] = js.native
+  var withheld_in_countries: js.UndefOr[js.Array[String]] = js.undefined
   
-  var withheld_scope: js.UndefOr[String] = js.native
+  var withheld_scope: js.UndefOr[String] = js.undefined
 }
 object Status {
   

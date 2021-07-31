@@ -4,13 +4,14 @@ import typings.vscode.mod.Disposable
 import typings.vscode.mod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.azdata.mod.ComponentProperties because Already inherited
 - typings.azdata.mod.InputBoxProperties because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined value, ariaLive, placeHolder, inputType, required, multiline, rows, columns, min, max, stopEnterPropagation */ @js.native
-trait InputBoxComponent extends Component {
+trait InputBoxComponent
+  extends StObject
+     with Component {
   
   var ariaLive: js.UndefOr[String] = js.native
   
@@ -27,30 +28,30 @@ trait InputBoxComponent extends Component {
   /**
     * Event that's fired whenever enter is pressed within the input box
     */
-  def onEnterKeyPressed(listener: js.Function1[/* e */ String, _]): Disposable = js.native
+  def onEnterKeyPressed(listener: js.Function1[/* e */ String, js.Any]): Disposable = js.native
+  def onEnterKeyPressed(listener: js.Function1[/* e */ String, js.Any], thisArgs: js.Any): Disposable = js.native
   def onEnterKeyPressed(
-    listener: js.Function1[/* e */ String, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ String, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
-  def onEnterKeyPressed(listener: js.Function1[/* e */ String, _], thisArgs: js.Any): Disposable = js.native
-  def onEnterKeyPressed(listener: js.Function1[/* e */ String, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onEnterKeyPressed(listener: js.Function1[/* e */ String, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * Event that's fired whenever enter is pressed within the input box
     */
   @JSName("onEnterKeyPressed")
   var onEnterKeyPressed_Original: Event[String] = js.native
   
-  def onTextChanged(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onTextChanged(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
+  def onTextChanged(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
   def onTextChanged(
-    listener: js.Function1[/* e */ js.Any, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ js.Any, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
-  def onTextChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
-  def onTextChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onTextChanged(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   @JSName("onTextChanged")
-  var onTextChanged_Original: Event[_] = js.native
+  var onTextChanged_Original: Event[js.Any] = js.native
   
   var placeHolder: js.UndefOr[String] = js.native
   

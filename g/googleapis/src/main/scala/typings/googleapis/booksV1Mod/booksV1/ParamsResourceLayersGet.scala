@@ -6,36 +6,36 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceLayersGet extends StandardParameters {
+trait ParamsResourceLayersGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The content version for the requested volume.
     */
-  var contentVersion: js.UndefOr[String] = js.native
+  var contentVersion: js.UndefOr[String] = js.undefined
   
   /**
     * String to identify the originator of this request.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * The ID for the layer to get the summary for.
     */
-  var summaryId: js.UndefOr[String] = js.native
+  var summaryId: js.UndefOr[String] = js.undefined
   
   /**
     * The volume to retrieve layers for.
     */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceLayersGet {
   

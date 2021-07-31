@@ -2,7 +2,6 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * authorities in security sensitive contexts, such as when looking up
   * attestations to verify.
   */
-@js.native
 trait SchemaHint extends StObject {
   
   /**
     * Required. The human readable name of this attestation authority, for
     * example &quot;qa&quot;.
     */
-  var humanReadableName: js.UndefOr[String] = js.native
+  var humanReadableName: js.UndefOr[String] = js.undefined
 }
 object SchemaHint {
   

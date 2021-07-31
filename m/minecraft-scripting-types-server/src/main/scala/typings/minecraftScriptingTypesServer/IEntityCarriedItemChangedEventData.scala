@@ -4,29 +4,27 @@ import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.IItemStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever an entity changes the item carried in their hand.
   */
-@js.native
 trait IEntityCarriedItemChangedEventData extends StObject {
   
   /**
     * The item that is now in the entities hands
     */
-  var carried_item: IItemStack = js.native
+  var carried_item: IItemStack
   
   /**
     * The entity that changed what they were carrying
     */
-  var entity: IEntity = js.native
+  var entity: IEntity
   
   /**
     * The item that was previously in the entities hands
     */
-  var previous_carried_item: IItemStack = js.native
+  var previous_carried_item: IItemStack
 }
 object IEntityCarriedItemChangedEventData {
   

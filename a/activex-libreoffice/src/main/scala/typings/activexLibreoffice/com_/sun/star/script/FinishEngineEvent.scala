@@ -4,32 +4,32 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * event contains the reasons and the data for the {@link XEngineListener.finished()} method.
   * @deprecated Deprecated
   */
-@js.native
-trait FinishEngineEvent extends EventObject {
+trait FinishEngineEvent
+  extends StObject
+     with EventObject {
   
   /**
     * error message.
     *
     * Only valid if Reason is RuntimeError or CompileError.
     */
-  var ErrorMessage: String = js.native
+  var ErrorMessage: String
   
   /** specifies why the script terminates. */
-  var Finish: FinishReason = js.native
+  var Finish: FinishReason
   
   /**
     * contains the return value.
     *
     * This field is only valid if {@link FinishEngineEvent.Finish} is FinishReason::OK.
     */
-  var Return: js.Any = js.native
+  var Return: js.Any
 }
 object FinishEngineEvent {
   

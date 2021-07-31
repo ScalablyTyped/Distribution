@@ -5,31 +5,29 @@ import typings.vscodeLanguageserverTypes.mod.Position
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentOnTypeFormattingParams extends StObject {
   
   /**
     * The character that has been typed.
     */
-  var ch: String = js.native
+  var ch: String
   
   /**
     * The format options.
     */
-  var options: FormattingOptions = js.native
+  var options: FormattingOptions
   
   /**
     * The position at which this request was send.
     */
-  var position: Position = js.native
+  var position: Position
   
   /**
     * The document to format.
     */
-  var textDocument: TextDocumentIdentifier = js.native
+  var textDocument: TextDocumentIdentifier
 }
 object DocumentOnTypeFormattingParams {
   

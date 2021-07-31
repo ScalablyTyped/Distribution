@@ -2,52 +2,50 @@ package typings.remarkable.libMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateInline extends StObject {
   
-  var env: Env = js.native
+  var env: Env
   
   /** Set true when seek link label */
-  var isInLabel: Boolean = js.native
+  var isInLabel: Boolean
   
   /**
     * Track unpaired `[` for link labels.
     */
-  var labelUnmatchedScopes: Double = js.native
+  var labelUnmatchedScopes: Double
   
-  var level: Double = js.native
+  var level: Double
   
   /**
     * Temporary storage for link url.
     */
-  var linkContent: String = js.native
+  var linkContent: String
   
   /**
     * Increment for each nesting link.
     * Used to prevent nesting in definitions.
     */
-  var linkLevel: Double = js.native
+  var linkLevel: Double
   
-  var parser: ParserInline = js.native
+  var parser: ParserInline
   
-  var pending: String = js.native
+  var pending: String
   
-  var pendingLevel: Double = js.native
+  var pendingLevel: Double
   
-  var pos: Double = js.native
+  var pos: Double
   
-  var posMax: Double = js.native
+  var posMax: Double
   
-  def push(token: ContentToken): Unit = js.native
+  def push(token: ContentToken): Unit
   
-  def pushPending(): Unit = js.native
+  def pushPending(): Unit
   
-  var src: String = js.native
+  var src: String
   
-  var tokens: js.Array[ContentToken] = js.native
+  var tokens: js.Array[ContentToken]
 }
 object StateInline {
   

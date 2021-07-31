@@ -2,23 +2,21 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeActionContext extends StObject {
   
   /**
     * An array of diagnostics.
     */
-  val diagnostics: js.Array[Diagnostic] = js.native
+  val diagnostics: js.Array[Diagnostic]
   
   /**
     * Requested kind of actions to return.
     *
     * Actions not of this kind are filtered out before being shown by the [lightbulb](https://code.visualstudio.com/docs/editor/editingevolved#_code-action).
     */
-  val only: js.UndefOr[CodeActionKind] = js.native
+  val only: js.UndefOr[CodeActionKind] = js.undefined
 }
 object CodeActionContext {
   

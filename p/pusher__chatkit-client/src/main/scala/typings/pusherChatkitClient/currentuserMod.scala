@@ -15,23 +15,21 @@ import typings.pusherChatkitClient.roomMod.PusherRoom
 import typings.pusherChatkitClient.userMod.PusherUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object currentuserMod {
   
-  @js.native
   trait CreateRoomParams extends StObject {
     
-    var addUserIds: js.UndefOr[js.Array[String]] = js.native
+    var addUserIds: js.UndefOr[js.Array[String]] = js.undefined
     
-    var customData: js.UndefOr[js.Any] = js.native
+    var customData: js.UndefOr[js.Any] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
   }
   object CreateRoomParams {
     
@@ -76,48 +74,47 @@ object currentuserMod {
     }
   }
   
-  @js.native
   trait CurrentUser extends StObject {
     
-    def addUserToRoom(params: UserAndRoomParams): js.Promise[Unit] = js.native
+    def addUserToRoom(params: UserAndRoomParams): js.Promise[Unit]
     
-    def createRoom(params: CreateRoomParams): js.Promise[PusherRoom] = js.native
+    def createRoom(params: CreateRoomParams): js.Promise[PusherRoom]
     
-    def deleteRoom(params: RoomIdParams): js.Promise[Unit] = js.native
+    def deleteRoom(params: RoomIdParams): js.Promise[Unit]
     
-    def disconnect(): js.Promise[Unit] = js.native
+    def disconnect(): js.Promise[Unit]
     
-    def enablePushNotifications(): js.Promise[Unit] = js.native
+    def enablePushNotifications(): js.Promise[Unit]
     
-    def fetchMultipartMessages(params: FetchMultipartMessagesParams): js.Promise[js.Array[PusherMessage]] = js.native
+    def fetchMultipartMessages(params: FetchMultipartMessagesParams): js.Promise[js.Array[PusherMessage]]
     
-    def getJoinableRooms(): js.Promise[js.Array[PusherRoom]] = js.native
+    def getJoinableRooms(): js.Promise[js.Array[PusherRoom]]
     
-    def isTypingIn(params: RoomIdParams): js.Promise[Unit] = js.native
+    def isTypingIn(params: RoomIdParams): js.Promise[Unit]
     
-    def joinRoom(params: RoomIdParams): js.Promise[PusherRoom] = js.native
+    def joinRoom(params: RoomIdParams): js.Promise[PusherRoom]
     
-    def leaveRoom(params: RoomIdParams): js.Promise[PusherRoom] = js.native
+    def leaveRoom(params: RoomIdParams): js.Promise[PusherRoom]
     
-    def readCursor(params: ReadCursorParams): js.Promise[PusherReadCursor] = js.native
+    def readCursor(params: ReadCursorParams): js.Promise[PusherReadCursor]
     
-    def removeUserFromRoom(params: UserAndRoomParams): js.Promise[Unit] = js.native
+    def removeUserFromRoom(params: UserAndRoomParams): js.Promise[Unit]
     
-    var roomSubscriptions: RoomSubscriptions = js.native
+    var roomSubscriptions: RoomSubscriptions
     
-    var rooms: js.Array[PusherRoom] = js.native
+    var rooms: js.Array[PusherRoom]
     
-    def sendMultipartMessage(params: SendMultipartMessageParams): js.Promise[Double] = js.native
+    def sendMultipartMessage(params: SendMultipartMessageParams): js.Promise[Double]
     
-    def sendSimpleMessage(params: SendSimpleMessageParams): js.Promise[Double] = js.native
+    def sendSimpleMessage(params: SendSimpleMessageParams): js.Promise[Double]
     
-    def setReadCursor(params: SetReadCursorParams): js.Promise[Unit] = js.native
+    def setReadCursor(params: SetReadCursorParams): js.Promise[Unit]
     
-    def subscribeToRoomMultipart(params: RoomSubcriptionParams): js.Promise[PusherRoom] = js.native
+    def subscribeToRoomMultipart(params: RoomSubcriptionParams): js.Promise[PusherRoom]
     
-    def updateRoom(params: UpdateRoomParams): js.Promise[PusherRoom] = js.native
+    def updateRoom(params: UpdateRoomParams): js.Promise[PusherRoom]
     
-    var users: js.Array[PusherUser] = js.native
+    var users: js.Array[PusherUser]
   }
   object CurrentUser {
     
@@ -219,16 +216,15 @@ object currentuserMod {
     }
   }
   
-  @js.native
   trait FetchMultipartMessagesParams extends StObject {
     
-    var direction: js.UndefOr[older | newer] = js.native
+    var direction: js.UndefOr[older | newer] = js.undefined
     
-    var initialId: js.UndefOr[Double] = js.native
+    var initialId: js.UndefOr[Double] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var roomId: String = js.native
+    var roomId: String
   }
   object FetchMultipartMessagesParams {
     
@@ -264,12 +260,11 @@ object currentuserMod {
     }
   }
   
-  @js.native
   trait ReadCursorParams extends StObject {
     
-    var roomId: String = js.native
+    var roomId: String
     
-    var userId: String = js.native
+    var userId: String
   }
   object ReadCursorParams {
     
@@ -290,10 +285,9 @@ object currentuserMod {
     }
   }
   
-  @js.native
   trait RoomIdParams extends StObject {
     
-    var roomId: String = js.native
+    var roomId: String
   }
   object RoomIdParams {
     
@@ -311,16 +305,15 @@ object currentuserMod {
     }
   }
   
-  @js.native
   trait RoomSubcriptionParams extends StObject {
     
-    var disableCursors: js.UndefOr[Boolean] = js.native
+    var disableCursors: js.UndefOr[Boolean] = js.undefined
     
-    var hooks: js.UndefOr[RoomSubscriptionHooks] = js.native
+    var hooks: js.UndefOr[RoomSubscriptionHooks] = js.undefined
     
-    var messageLimit: js.UndefOr[Double] = js.native
+    var messageLimit: js.UndefOr[Double] = js.undefined
     
-    var roomId: String = js.native
+    var roomId: String
   }
   object RoomSubcriptionParams {
     
@@ -356,18 +349,17 @@ object currentuserMod {
     }
   }
   
-  @js.native
   trait RoomSubscription extends StObject {
     
-    def cancel(): js.Promise[Unit] = js.native
+    def cancel(): js.Promise[Unit]
     
-    var disableCursors: Boolean = js.native
+    var disableCursors: Boolean
     
-    var hooks: js.UndefOr[RoomSubscriptionHooks] = js.native
+    var hooks: js.UndefOr[RoomSubscriptionHooks] = js.undefined
     
-    var messageLimit: Double = js.native
+    var messageLimit: Double
     
-    var roomId: String = js.native
+    var roomId: String
   }
   object RoomSubscription {
     
@@ -400,24 +392,23 @@ object currentuserMod {
     }
   }
   
-  @js.native
   trait RoomSubscriptionHooks extends StObject {
     
-    var onMessage: js.UndefOr[js.Function1[/* message */ PusherMessage, Unit]] = js.native
+    var onMessage: js.UndefOr[js.Function1[/* message */ PusherMessage, Unit]] = js.undefined
     
-    var onMessageDeleted: js.UndefOr[js.Function1[/* messageId */ Double, Unit]] = js.native
+    var onMessageDeleted: js.UndefOr[js.Function1[/* messageId */ Double, Unit]] = js.undefined
     
-    var onNewReadCursor: js.UndefOr[ReadCursorHook] = js.native
+    var onNewReadCursor: js.UndefOr[ReadCursorHook] = js.undefined
     
-    var onPresenceChanged: js.UndefOr[UserPresenceHook] = js.native
+    var onPresenceChanged: js.UndefOr[UserPresenceHook] = js.undefined
     
-    var onUserJoined: js.UndefOr[UserHook] = js.native
+    var onUserJoined: js.UndefOr[UserHook] = js.undefined
     
-    var onUserLeft: js.UndefOr[UserHook] = js.native
+    var onUserLeft: js.UndefOr[UserHook] = js.undefined
     
-    var onUserStartedTyping: js.UndefOr[UserHook] = js.native
+    var onUserStartedTyping: js.UndefOr[UserHook] = js.undefined
     
-    var onUserStoppedTyping: js.UndefOr[UserHook] = js.native
+    var onUserStoppedTyping: js.UndefOr[UserHook] = js.undefined
   }
   object RoomSubscriptionHooks {
     
@@ -482,12 +473,11 @@ object currentuserMod {
   
   type RoomSubscriptions = StringDictionary[RoomSubscription]
   
-  @js.native
   trait SendMultipartMessageParams extends StObject {
     
-    var parts: js.Array[SendMessagePayload] = js.native
+    var parts: js.Array[SendMessagePayload]
     
-    var roomId: String = js.native
+    var roomId: String
   }
   object SendMultipartMessageParams {
     
@@ -511,12 +501,11 @@ object currentuserMod {
     }
   }
   
-  @js.native
   trait SendSimpleMessageParams extends StObject {
     
-    var roomId: String = js.native
+    var roomId: String
     
-    var text: String = js.native
+    var text: String
   }
   object SendSimpleMessageParams {
     
@@ -537,12 +526,11 @@ object currentuserMod {
     }
   }
   
-  @js.native
   trait SetReadCursorParams extends StObject {
     
-    var position: Double = js.native
+    var position: Double
     
-    var roomId: String = js.native
+    var roomId: String
   }
   object SetReadCursorParams {
     
@@ -563,16 +551,15 @@ object currentuserMod {
     }
   }
   
-  @js.native
   trait UpdateRoomParams extends StObject {
     
-    var customData: js.UndefOr[js.Any] = js.native
+    var customData: js.UndefOr[js.Any] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
     
-    var roomId: String = js.native
+    var roomId: String
   }
   object UpdateRoomParams {
     

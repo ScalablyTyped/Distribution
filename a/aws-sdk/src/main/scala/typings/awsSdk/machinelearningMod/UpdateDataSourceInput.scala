@@ -2,21 +2,19 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDataSourceInput extends StObject {
   
   /**
     * The ID assigned to the DataSource during creation.
     */
-  var DataSourceId: EntityId = js.native
+  var DataSourceId: EntityId
   
   /**
     * A new user-supplied name or description of the DataSource that will replace the current description. 
     */
-  var DataSourceName: EntityName = js.native
+  var DataSourceName: EntityName
 }
 object UpdateDataSourceInput {
   

@@ -11,7 +11,6 @@ import typings.reactSlider.reactSliderStrings.horizontal
 import typings.reactSlider.reactSliderStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,9 +25,8 @@ object mod extends Shortcut {
   }
   @JSImport("react-slider", JSImport.Namespace)
   @js.native
-  val ^ : ComponentClass[ReactSliderProps, ComponentState] = js.native
+  val ^ : js.Object & (ComponentClass[ReactSliderProps, ComponentState]) = js.native
   
-  @js.native
   trait ReactSliderProps extends StObject {
     
     /**
@@ -36,18 +34,18 @@ object mod extends Shortcut {
       * Use an array for more than one thumb.
       * The length of the array must match the number of thumbs in the value array.
       */
-    var ariaLabel: js.UndefOr[String | js.Array[String]] = js.native
+    var ariaLabel: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * aria-valuetext for screen-readers.
       * Can be a static string, or a function that returns a string.
       */
-    var ariaValuetext: js.UndefOr[String | (js.Function1[/* value */ Index, String])] = js.native
+    var ariaValuetext: js.UndefOr[String | (js.Function1[/* value */ Index, String])] = js.undefined
     
     /**
       * The css class set on the slider node.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Determines the initial positions of the thumbs and the number of thumbs.
@@ -56,60 +54,60 @@ object mod extends Shortcut {
       * If an array is passed each value will determine the position of one thumb.
       * The values in the array must be sorted.
       */
-    var defaultValue: js.UndefOr[Double | js.Array[Double]] = js.native
+    var defaultValue: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * If `true` the thumbs can't be moved.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Inverts the slider.
       */
-    var invert: js.UndefOr[Boolean] = js.native
+    var invert: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum value of the slider.
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum value of the slider.
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimal distance between any pair of thumbs.
       * Must be positive, but zero means they can sit on top of each other.
       */
-    var minDistance: js.UndefOr[Double] = js.native
+    var minDistance: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback called only after moving a thumb has ended.
       */
-    var onAfterChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | js.Array[Double] | Null], Unit]] = js.native
+    var onAfterChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | js.Array[Double] | Null], Unit]] = js.undefined
     
     /**
       * Callback called before starting to move a thumb.
       */
-    var onBeforeChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | js.Array[Double] | Null], Unit]] = js.native
+    var onBeforeChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | js.Array[Double] | Null], Unit]] = js.undefined
     
     /**
       * Callback called on every value change.
       */
-    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | js.Array[Double] | Null], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | js.Array[Double] | Null], Unit]] = js.undefined
     
     /**
       * Callback called when the the slider is clicked (thumb or tracks).
       * Receives the value at the clicked position as argument.
       */
-    var onSliderClick: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onSliderClick: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
     /**
       * Determines whether the slider moves horizontally (from left to right)
       * or vertically (from top to bottom).
       */
-    var orientation: js.UndefOr[horizontal | vertical] = js.native
+    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
       * The result of the function is the value to be added or subtracted
@@ -118,44 +116,44 @@ object mod extends Shortcut {
       * The current `step` value will be passed as the only argument.
       * By default, paging will modify `step` by a factor of 10.
       */
-    var pageFn: js.UndefOr[js.Function1[/* step */ Double, Double]] = js.native
+    var pageFn: js.UndefOr[js.Function1[/* step */ Double, Double]] = js.undefined
     
     /**
       * If `true` the active thumb will push other thumbs
       * within the constraints of `min`, `max`, `step` and `minDistance`.
       */
-    var pearling: js.UndefOr[Boolean] = js.native
+    var pearling: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Provide a custom render function for dynamic thumb content.
       * The render function will be passed two arguments.The first is
       * an object that should be added to your thumb node,
       */
-    var renderThumb: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ Index, Element]] = js.native
+    var renderThumb: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ Index, Element]] = js.undefined
     
     /**
       * Provide a custom render function for the track node.
       * The render function will be passed two arguments. The first is
       * an object that should be added to your handle node.
       */
-    var renderTrack: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ Value, Element]] = js.native
+    var renderTrack: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ Value, Element]] = js.undefined
     
     /**
       * Disables thumb move when clicking the slider track
       */
-    var snapDragDisabled: js.UndefOr[Boolean] = js.native
+    var snapDragDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Value to be added or subtracted on each step the slider makes.
       * Must be greater than zero.
       * `max - min` should be evenly divisible by the step value.
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * The css class set on the thumb that is currently being moved.
       */
-    var thumbActiveClassName: js.UndefOr[String] = js.native
+    var thumbActiveClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The css class set on each thumb node.
@@ -163,25 +161,25 @@ object mod extends Shortcut {
       * In addition each thumb will receive a numbered css class of the form
       * `${thumbClassName}-${i}`, e.g. `thumb-0`, `thumb-1`, ...
       */
-    var thumbClassName: js.UndefOr[String] = js.native
+    var thumbClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The css class set on the tracks between the thumbs.
       * In addition track fragment will receive a numbered css class of the form
       * `${trackClassName}-${i}`, e.g. `track-0`, `track-1`, ...
       */
-    var trackClassName: js.UndefOr[String] = js.native
+    var trackClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Like `defaultValue` but for
       * [controlled components](http://facebook.github.io/react/docs/forms.html#controlled-components).
       */
-    var value: js.UndefOr[Double | js.Array[Double]] = js.native
+    var value: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * If `true` tracks between the thumbs will be rendered.
       */
-    var withTracks: js.UndefOr[Boolean] = js.native
+    var withTracks: js.UndefOr[Boolean] = js.undefined
   }
   object ReactSliderProps {
     
@@ -358,8 +356,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = ComponentClass[ReactSliderProps, ComponentState]
+  type _To = js.Object & (ComponentClass[ReactSliderProps, ComponentState])
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: ComponentClass[ReactSliderProps, ComponentState] = ^
+  override def _to: js.Object & (ComponentClass[ReactSliderProps, ComponentState]) = ^
 }

@@ -2,86 +2,84 @@ package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentSnapshot extends StObject {
   
   /**
     * Base URL that `Document` or `FrameOwner` node uses for URL completion.
     */
-  var baseURL: StringIndex = js.native
+  var baseURL: StringIndex
   
   /**
     * Document content height.
     */
-  var contentHeight: js.UndefOr[Double] = js.native
+  var contentHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Contains the document's content language.
     */
-  var contentLanguage: StringIndex = js.native
+  var contentLanguage: StringIndex
   
   /**
     * Document content width.
     */
-  var contentWidth: js.UndefOr[Double] = js.native
+  var contentWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Document URL that `Document` or `FrameOwner` node points to.
     */
-  var documentURL: StringIndex = js.native
+  var documentURL: StringIndex
   
   /**
     * Contains the document's character set encoding.
     */
-  var encodingName: StringIndex = js.native
+  var encodingName: StringIndex
   
   /**
     * Frame ID for frame owner elements and also for the document node.
     */
-  var frameId: StringIndex = js.native
+  var frameId: StringIndex
   
   /**
     * The nodes in the layout tree.
     */
-  var layout: LayoutTreeSnapshot = js.native
+  var layout: LayoutTreeSnapshot
   
   /**
     * A table with dom nodes.
     */
-  var nodes: NodeTreeSnapshot = js.native
+  var nodes: NodeTreeSnapshot
   
   /**
     * `DocumentType` node's publicId.
     */
-  var publicId: StringIndex = js.native
+  var publicId: StringIndex
   
   /**
     * Horizontal scroll offset.
     */
-  var scrollOffsetX: js.UndefOr[Double] = js.native
+  var scrollOffsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Vertical scroll offset.
     */
-  var scrollOffsetY: js.UndefOr[Double] = js.native
+  var scrollOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * `DocumentType` node's systemId.
     */
-  var systemId: StringIndex = js.native
+  var systemId: StringIndex
   
   /**
     * The post-layout inline text nodes.
     */
-  var textBoxes: TextBoxSnapshot = js.native
+  var textBoxes: TextBoxSnapshot
   
   /**
     * Document title.
     */
-  var title: StringIndex = js.native
+  var title: StringIndex
 }
 object DocumentSnapshot {
   

@@ -2,10 +2,8 @@ package typings.std.Intl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelativeTimeFormat extends StObject {
   
   /**
@@ -37,7 +35,7 @@ trait RelativeTimeFormat extends StObject {
     *
     * [Specification](https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype.format).
     */
-  def format(value: Double, unit: RelativeTimeFormatUnit): String = js.native
+  def format(value: Double, unit: RelativeTimeFormatUnit): String
   
   /**
     *  A version of the format method which it returns an array of objects
@@ -67,7 +65,7 @@ trait RelativeTimeFormat extends StObject {
     *
     *  [Specification](https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype.formatToParts).
     */
-  def formatToParts(value: Double, unit: RelativeTimeFormatUnit): js.Array[RelativeTimeFormatPart] = js.native
+  def formatToParts(value: Double, unit: RelativeTimeFormatUnit): js.Array[RelativeTimeFormatPart]
   
   /**
     * Provides access to the locale and options computed during initialization of this `Intl.RelativeTimeFormat` object.
@@ -80,7 +78,7 @@ trait RelativeTimeFormat extends StObject {
     *
     * [Specification](https://tc39.es/ecma402/#sec-intl.relativetimeformat.prototype.resolvedoptions)
     */
-  def resolvedOptions(): ResolvedRelativeTimeFormatOptions = js.native
+  def resolvedOptions(): ResolvedRelativeTimeFormatOptions
 }
 object RelativeTimeFormat {
   

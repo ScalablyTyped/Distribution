@@ -2,46 +2,44 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationTaskAssessmentResult extends StObject {
   
   /**
     *  The task assessment results in JSON format. 
     */
-  var AssessmentResults: js.UndefOr[String] = js.native
+  var AssessmentResults: js.UndefOr[String] = js.undefined
   
   /**
     *  The file containing the results of the task assessment. 
     */
-  var AssessmentResultsFile: js.UndefOr[String] = js.native
+  var AssessmentResultsFile: js.UndefOr[String] = js.undefined
   
   /**
     *  The status of the task assessment. 
     */
-  var AssessmentStatus: js.UndefOr[String] = js.native
+  var AssessmentStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the replication task. 
     */
-  var ReplicationTaskArn: js.UndefOr[String] = js.native
+  var ReplicationTaskArn: js.UndefOr[String] = js.undefined
   
   /**
     *  The replication task identifier of the task on which the task assessment was run. 
     */
-  var ReplicationTaskIdentifier: js.UndefOr[String] = js.native
+  var ReplicationTaskIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The date the task assessment was completed. 
     */
-  var ReplicationTaskLastAssessmentDate: js.UndefOr[TStamp] = js.native
+  var ReplicationTaskLastAssessmentDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     *  The URL of the S3 object containing the task assessment results. 
     */
-  var S3ObjectUrl: js.UndefOr[String] = js.native
+  var S3ObjectUrl: js.UndefOr[String] = js.undefined
 }
 object ReplicationTaskAssessmentResult {
   

@@ -2,19 +2,17 @@ package typings.restify.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CpuUsageThrottleOptions extends StObject {
   
-  var halfLife: js.UndefOr[Double] = js.native
+  var halfLife: js.UndefOr[Double] = js.undefined
   
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
 }
 object CpuUsageThrottleOptions {
   

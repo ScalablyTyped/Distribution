@@ -2,41 +2,39 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connection extends StObject {
   
   /**
     * The ARN string that uniquely identifies the endpoint.
     */
-  var EndpointArn: js.UndefOr[String] = js.native
+  var EndpointArn: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of the endpoint. Identifiers must begin with a letter and must contain only ASCII letters, digits, and hyphens. They can't end with a hyphen or contain two consecutive hyphens.
     */
-  var EndpointIdentifier: js.UndefOr[String] = js.native
+  var EndpointIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The error message when the connection last failed.
     */
-  var LastFailureMessage: js.UndefOr[String] = js.native
+  var LastFailureMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the replication instance.
     */
-  var ReplicationInstanceArn: js.UndefOr[String] = js.native
+  var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
     * The replication instance identifier. This parameter is stored as a lowercase string.
     */
-  var ReplicationInstanceIdentifier: js.UndefOr[String] = js.native
+  var ReplicationInstanceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The connection status. This parameter can return one of the following values:    "successful"     "testing"     "failed"     "deleting"   
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object Connection {
   

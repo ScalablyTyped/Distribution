@@ -12,13 +12,14 @@ import typings.blueprintjsCore.tagInputMod.TagInputAddMethod
 import typings.blueprintjsCore.toasterMod.ToasterPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blueprintjsCoreStrings {
   
   @js.native
-  sealed trait default extends TagInputAddMethod
+  sealed trait default
+    extends StObject
+       with TagInputAddMethod
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
@@ -113,17 +114,23 @@ object blueprintjsCoreStrings {
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait auto extends PopoverPosition
+  sealed trait auto
+    extends StObject
+       with PopoverPosition
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait `auto-end` extends PopoverPosition
+  sealed trait `auto-end`
+    extends StObject
+       with PopoverPosition
   @scala.inline
   def `auto-end`: `auto-end` = "auto-end".asInstanceOf[`auto-end`]
   
   @js.native
-  sealed trait `auto-start` extends PopoverPosition
+  sealed trait `auto-start`
+    extends StObject
+       with PopoverPosition
   @scala.inline
   def `auto-start`: `auto-start` = "auto-start".asInstanceOf[`auto-start`]
   
@@ -163,7 +170,9 @@ object blueprintjsCoreStrings {
   def blueprintPortalClassName: blueprintPortalClassName = "blueprintPortalClassName".asInstanceOf[blueprintPortalClassName]
   
   @js.native
-  sealed trait blur extends TagInputAddMethod
+  sealed trait blur
+    extends StObject
+       with TagInputAddMethod
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   
@@ -179,7 +188,8 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait bottom
-    extends PopoverPosition
+    extends StObject
+       with PopoverPosition
        with Position
        with ToasterPosition
   @scala.inline
@@ -187,7 +197,8 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait `bottom-left`
-    extends PopoverPosition
+    extends StObject
+       with PopoverPosition
        with Position
        with ToasterPosition
   @scala.inline
@@ -195,7 +206,8 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait `bottom-right`
-    extends PopoverPosition
+    extends StObject
+       with PopoverPosition
        with Position
        with ToasterPosition
   @scala.inline
@@ -222,7 +234,9 @@ object blueprintjsCoreStrings {
   def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
-  sealed trait center extends Alignment
+  sealed trait center
+    extends StObject
+       with Alignment
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -237,12 +251,16 @@ object blueprintjsCoreStrings {
   def cite: cite = "cite".asInstanceOf[cite]
   
   @js.native
-  sealed trait click extends PopoverInteractionKind
+  sealed trait click
+    extends StObject
+       with PopoverInteractionKind
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait `click-target` extends PopoverInteractionKind
+  sealed trait `click-target`
+    extends StObject
+       with PopoverInteractionKind
   @scala.inline
   def `click-target`: `click-target` = "click-target".asInstanceOf[`click-target`]
   
@@ -272,7 +290,9 @@ object blueprintjsCoreStrings {
   def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait danger extends Intent
+  sealed trait danger
+    extends StObject
+       with Intent
   @scala.inline
   def danger: danger = "danger".asInstanceOf[danger]
   
@@ -373,7 +393,8 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait end
-    extends Boundary
+    extends StObject
+       with Boundary
        with HandleType
   @scala.inline
   def end: end = "end".asInstanceOf[end]
@@ -544,7 +565,9 @@ object blueprintjsCoreStrings {
   def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait full extends HandleType
+  sealed trait full
+    extends StObject
+       with HandleType
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   
@@ -614,12 +637,16 @@ object blueprintjsCoreStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait hover extends PopoverInteractionKind
+  sealed trait hover
+    extends StObject
+       with PopoverInteractionKind
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
-  sealed trait `hover-target` extends PopoverInteractionKind
+  sealed trait `hover-target`
+    extends StObject
+       with PopoverInteractionKind
   @scala.inline
   def `hover-target`: `hover-target` = "hover-target".asInstanceOf[`hover-target`]
   
@@ -690,7 +717,8 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait left
-    extends Alignment
+    extends StObject
+       with Alignment
        with PopoverPosition
        with Position
   @scala.inline
@@ -698,14 +726,16 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait `left-bottom`
-    extends PopoverPosition
+    extends StObject
+       with PopoverPosition
        with Position
   @scala.inline
   def `left-bottom`: `left-bottom` = "left-bottom".asInstanceOf[`left-bottom`]
   
   @js.native
   sealed trait `left-top`
-    extends PopoverPosition
+    extends StObject
+       with PopoverPosition
        with Position
   @scala.inline
   def `left-top`: `left-top` = "left-top".asInstanceOf[`left-top`]
@@ -751,7 +781,9 @@ object blueprintjsCoreStrings {
   def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait lock extends HandleInteractionKind
+  sealed trait lock
+    extends StObject
+       with HandleInteractionKind
   @scala.inline
   def lock: lock = "lock".asInstanceOf[lock]
   
@@ -837,7 +869,8 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait none
-    extends HandleInteractionKind
+    extends StObject
+       with HandleInteractionKind
        with Intent
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -908,7 +941,9 @@ object blueprintjsCoreStrings {
   def param: param = "param".asInstanceOf[param]
   
   @js.native
-  sealed trait paste extends TagInputAddMethod
+  sealed trait paste
+    extends StObject
+       with TagInputAddMethod
   @scala.inline
   def paste: paste = "paste".asInstanceOf[paste]
   
@@ -958,7 +993,9 @@ object blueprintjsCoreStrings {
   def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
-  sealed trait primary extends Intent
+  sealed trait primary
+    extends StObject
+       with Intent
   @scala.inline
   def primary: primary = "primary".asInstanceOf[primary]
   
@@ -968,7 +1005,9 @@ object blueprintjsCoreStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait push extends HandleInteractionKind
+  sealed trait push
+    extends StObject
+       with HandleInteractionKind
   @scala.inline
   def push: push = "push".asInstanceOf[push]
   
@@ -1009,7 +1048,8 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait right
-    extends Alignment
+    extends StObject
+       with Alignment
        with PopoverPosition
        with Position
   @scala.inline
@@ -1017,14 +1057,16 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait `right-bottom`
-    extends PopoverPosition
+    extends StObject
+       with PopoverPosition
        with Position
   @scala.inline
   def `right-bottom`: `right-bottom` = "right-bottom".asInstanceOf[`right-bottom`]
   
   @js.native
   sealed trait `right-top`
-    extends PopoverPosition
+    extends StObject
+       with PopoverPosition
        with Position
   @scala.inline
   def `right-top`: `right-top` = "right-top".asInstanceOf[`right-top`]
@@ -1106,7 +1148,8 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait start
-    extends Boundary
+    extends StObject
+       with Boundary
        with HandleType
   @scala.inline
   def start: start = "start".asInstanceOf[start]
@@ -1142,7 +1185,9 @@ object blueprintjsCoreStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait success extends Intent
+  sealed trait success
+    extends StObject
+       with Intent
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
@@ -1248,7 +1293,8 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait top
-    extends PopoverPosition
+    extends StObject
+       with PopoverPosition
        with Position
        with ToasterPosition
   @scala.inline
@@ -1256,7 +1302,8 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait `top-left`
-    extends PopoverPosition
+    extends StObject
+       with PopoverPosition
        with Position
        with ToasterPosition
   @scala.inline
@@ -1264,7 +1311,8 @@ object blueprintjsCoreStrings {
   
   @js.native
   sealed trait `top-right`
-    extends PopoverPosition
+    extends StObject
+       with PopoverPosition
        with Position
        with ToasterPosition
   @scala.inline
@@ -1331,7 +1379,9 @@ object blueprintjsCoreStrings {
   def view: view = "view".asInstanceOf[view]
   
   @js.native
-  sealed trait warning extends Intent
+  sealed trait warning
+    extends StObject
+       with Intent
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   

@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Overlay.GetHighlightObjectForTestRe
 import typings.devtoolsProtocol.mod.Protocol.Overlay.GetHighlightObjectForTestResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetHighlightObjectForTestResponse extends StObject {
   
-  var paramsType: js.Array[GetHighlightObjectForTestRequest] = js.native
+  var paramsType: js.Array[GetHighlightObjectForTestRequest]
   
-  var returnType: GetHighlightObjectForTestResponse = js.native
+  var returnType: GetHighlightObjectForTestResponse
 }
 object ReturnTypeGetHighlightObjectForTestResponse {
   

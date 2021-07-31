@@ -2,52 +2,50 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   Collection of properties of the current browser
 */
-@js.native
 trait JQuerySupport extends StObject {
   
-  var ajax: js.UndefOr[Boolean] = js.native
+  var ajax: js.UndefOr[Boolean] = js.undefined
   
-  var boxModel: js.UndefOr[Boolean] = js.native
+  var boxModel: js.UndefOr[Boolean] = js.undefined
   
-  var changeBubbles: js.UndefOr[Boolean] = js.native
+  var changeBubbles: js.UndefOr[Boolean] = js.undefined
   
-  var checkClone: js.UndefOr[Boolean] = js.native
+  var checkClone: js.UndefOr[Boolean] = js.undefined
   
-  var checkOn: js.UndefOr[Boolean] = js.native
+  var checkOn: js.UndefOr[Boolean] = js.undefined
   
-  var cors: js.UndefOr[Boolean] = js.native
+  var cors: js.UndefOr[Boolean] = js.undefined
   
-  var cssFloat: js.UndefOr[Boolean] = js.native
+  var cssFloat: js.UndefOr[Boolean] = js.undefined
   
-  var hrefNormalized: js.UndefOr[Boolean] = js.native
+  var hrefNormalized: js.UndefOr[Boolean] = js.undefined
   
-  var htmlSerialize: js.UndefOr[Boolean] = js.native
+  var htmlSerialize: js.UndefOr[Boolean] = js.undefined
   
-  var leadingWhitespace: js.UndefOr[Boolean] = js.native
+  var leadingWhitespace: js.UndefOr[Boolean] = js.undefined
   
-  var noCloneChecked: js.UndefOr[Boolean] = js.native
+  var noCloneChecked: js.UndefOr[Boolean] = js.undefined
   
-  var noCloneEvent: js.UndefOr[Boolean] = js.native
+  var noCloneEvent: js.UndefOr[Boolean] = js.undefined
   
-  var opacity: js.UndefOr[Boolean] = js.native
+  var opacity: js.UndefOr[Boolean] = js.undefined
   
-  var optDisabled: js.UndefOr[Boolean] = js.native
+  var optDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var optSelected: js.UndefOr[Boolean] = js.native
+  var optSelected: js.UndefOr[Boolean] = js.undefined
   
-  var scriptEval: js.UndefOr[js.Function0[Boolean]] = js.native
+  var scriptEval: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
   
-  var submitBubbles: js.UndefOr[Boolean] = js.native
+  var submitBubbles: js.UndefOr[Boolean] = js.undefined
   
-  var tbody: js.UndefOr[Boolean] = js.native
+  var tbody: js.UndefOr[Boolean] = js.undefined
 }
 object JQuerySupport {
   

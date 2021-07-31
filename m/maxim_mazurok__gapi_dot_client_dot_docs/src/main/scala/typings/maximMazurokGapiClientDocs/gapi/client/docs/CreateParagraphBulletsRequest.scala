@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateParagraphBulletsRequest extends StObject {
   
   /** The kinds of bullet glyphs to be used. */
-  var bulletPreset: js.UndefOr[String] = js.native
+  var bulletPreset: js.UndefOr[String] = js.undefined
   
   /** The range to apply the bullet preset to. */
-  var range: js.UndefOr[Range] = js.native
+  var range: js.UndefOr[Range] = js.undefined
 }
 object CreateParagraphBulletsRequest {
   

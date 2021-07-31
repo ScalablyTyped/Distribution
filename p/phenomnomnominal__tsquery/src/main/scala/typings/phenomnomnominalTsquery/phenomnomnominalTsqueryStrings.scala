@@ -3,7 +3,6 @@ package typings.phenomnomnominalTsquery
 import typings.phenomnomnominalTsquery.tsqueryTypesMod.TSQueryAttributeOperatorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object phenomnomnominalTsqueryStrings {
@@ -44,12 +43,16 @@ object phenomnomnominalTsqueryStrings {
   def every: every = "every".asInstanceOf[every]
   
   @js.native
-  sealed trait literal extends TSQueryAttributeOperatorType
+  sealed trait literal
+    extends StObject
+       with TSQueryAttributeOperatorType
   @scala.inline
   def literal: literal = "literal".asInstanceOf[literal]
   
   @js.native
-  sealed trait regexp extends TSQueryAttributeOperatorType
+  sealed trait regexp
+    extends StObject
+       with TSQueryAttributeOperatorType
   @scala.inline
   def regexp: regexp = "regexp".asInstanceOf[regexp]
   
@@ -59,7 +62,9 @@ object phenomnomnominalTsqueryStrings {
   def some: some = "some".asInstanceOf[some]
   
   @js.native
-  sealed trait `type` extends TSQueryAttributeOperatorType
+  sealed trait `type`
+    extends StObject
+       with TSQueryAttributeOperatorType
   @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
 }

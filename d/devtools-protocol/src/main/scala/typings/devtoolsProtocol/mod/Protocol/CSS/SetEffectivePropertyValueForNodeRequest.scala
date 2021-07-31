@@ -3,20 +3,18 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetEffectivePropertyValueForNodeRequest extends StObject {
   
   /**
     * The element id for which to set property.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
   
-  var propertyName: String = js.native
+  var propertyName: String
   
-  var value: String = js.native
+  var value: String
 }
 object SetEffectivePropertyValueForNodeRequest {
   

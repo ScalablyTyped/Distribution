@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerrainTile extends StObject {
   
   /** The global tile coordinates that uniquely identify this tile. */
-  var coordinates: js.UndefOr[TileCoordinates] = js.native
+  var coordinates: js.UndefOr[TileCoordinates] = js.undefined
   
   /** Terrain elevation data encoded as a FirstDerivativeElevationGrid. */
-  var firstDerivative: js.UndefOr[FirstDerivativeElevationGrid] = js.native
+  var firstDerivative: js.UndefOr[FirstDerivativeElevationGrid] = js.undefined
   
   /**
     * Resource name of the tile. The tile resource name is prefixed by its collection ID `terrain/` followed by the resource ID, which encodes the tile's global x and y coordinates and
     * zoom level as `@,,z`. For example, `terrain/@1,2,3z`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Terrain elevation data encoded as a SecondDerivativeElevationGrid. . */
-  var secondDerivative: js.UndefOr[SecondDerivativeElevationGrid] = js.native
+  var secondDerivative: js.UndefOr[SecondDerivativeElevationGrid] = js.undefined
 }
 object TerrainTile {
   

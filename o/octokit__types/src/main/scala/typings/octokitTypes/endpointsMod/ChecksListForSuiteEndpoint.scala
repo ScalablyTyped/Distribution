@@ -1,57 +1,55 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`2`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.all
+import typings.octokitTypes.octokitTypesStrings.antiope
 import typings.octokitTypes.octokitTypesStrings.completed
 import typings.octokitTypes.octokitTypesStrings.in_progress
 import typings.octokitTypes.octokitTypesStrings.latest
 import typings.octokitTypes.octokitTypesStrings.queued
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  owner :string,   repo :string,   check_suite_id :number,   check_name :string | undefined,   status :'queued' | 'in_progress' | 'completed' | undefined,   filter :'latest' | 'all' | undefined,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'antiope'> */
-@js.native
-trait ChecksListForSuiteEndpoint extends StObject {
+trait ChecksListForSuiteEndpoint
+  extends StObject
+     with RequiredPreview[antiope] {
   
   /**
     * Returns check runs with the specified `name`.
     */
-  var check_name: js.UndefOr[String] = js.native
+  var check_name: js.UndefOr[String] = js.undefined
   
-  var check_suite_id: Double = js.native
+  var check_suite_id: Double
   
   /**
     * Filters check runs by their `completed_at` timestamp. Can be one of `latest` (returning the most recent check runs) or `all`.
     */
-  var filter: js.UndefOr[latest | all] = js.native
+  var filter: js.UndefOr[latest | all] = js.undefined
   
-  var mediaType: `2` = js.native
-  
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * Returns check runs with the specified `status`. Can be one of `queued`, `in_progress`, or `completed`.
     */
-  var status: js.UndefOr[queued | in_progress | completed] = js.native
+  var status: js.UndefOr[queued | in_progress | completed] = js.undefined
 }
 object ChecksListForSuiteEndpoint {
   
   @scala.inline
-  def apply(check_suite_id: Double, mediaType: `2`, owner: String, repo: String): ChecksListForSuiteEndpoint = {
+  def apply(check_suite_id: Double, mediaType: `0`[antiope], owner: String, repo: String): ChecksListForSuiteEndpoint = {
     val __obj = js.Dynamic.literal(check_suite_id = check_suite_id.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksListForSuiteEndpoint]
   }
@@ -73,9 +71,6 @@ object ChecksListForSuiteEndpoint {
     
     @scala.inline
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
-    
-    @scala.inline
-    def setMediaType(value: `2`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])

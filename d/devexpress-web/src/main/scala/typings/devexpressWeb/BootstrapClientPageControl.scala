@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapPageControl control.
   */
 @js.native
-trait BootstrapClientPageControl extends ASPxClientPageControl {
+trait BootstrapClientPageControl
+  extends StObject
+     with ASPxClientPageControl {
   
   /**
     * Returns the HTML code that represents the contents of the specified page within the page control. A string that represents the specified page's HTML content.

@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcPeeringConnectionAccepterMod {
@@ -83,6 +82,10 @@ object vpcPeeringConnectionAccepterMod {
   /* static members */
   object VpcPeeringConnectionAccepter {
     
+    @JSImport("@pulumi/aws/ec2/vpcPeeringConnectionAccepter", "VpcPeeringConnectionAccepter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcPeeringConnectionAccepter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -92,57 +95,51 @@ object vpcPeeringConnectionAccepterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpcPeeringConnectionAccepter", "VpcPeeringConnectionAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcPeeringConnectionAccepter = js.native
-    @JSImport("@pulumi/aws/ec2/vpcPeeringConnectionAccepter", "VpcPeeringConnectionAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcPeeringConnectionAccepter = js.native
-    @JSImport("@pulumi/aws/ec2/vpcPeeringConnectionAccepter", "VpcPeeringConnectionAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcPeeringConnectionAccepterState): VpcPeeringConnectionAccepter = js.native
-    @JSImport("@pulumi/aws/ec2/vpcPeeringConnectionAccepter", "VpcPeeringConnectionAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcPeeringConnectionAccepterState, opts: CustomResourceOptions): VpcPeeringConnectionAccepter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcPeeringConnectionAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcPeeringConnectionAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcPeeringConnectionAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcPeeringConnectionAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcPeeringConnectionAccepterState): VpcPeeringConnectionAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcPeeringConnectionAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcPeeringConnectionAccepterState, opts: CustomResourceOptions): VpcPeeringConnectionAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcPeeringConnectionAccepter]
     
     /**
       * Returns true if the given object is an instance of VpcPeeringConnectionAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpcPeeringConnectionAccepter", "VpcPeeringConnectionAccepter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepter */ Boolean]
   }
   
-  @js.native
   trait VpcPeeringConnectionAccepterArgs extends StObject {
     
     /**
       * A configuration block that describes [VPC Peering Connection]
       * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the accepter VPC.
       */
-    val accepter: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.VpcPeeringConnectionAccepterAccepter]] = js.native
+    val accepter: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.VpcPeeringConnectionAccepterAccepter]] = js.undefined
     
     /**
       * Whether or not to accept the peering request. Defaults to `false`.
       */
-    val autoAccept: js.UndefOr[Input[Boolean]] = js.native
+    val autoAccept: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A configuration block that describes [VPC Peering Connection]
       * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
       */
-    val requester: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.VpcPeeringConnectionAccepterRequester]] = js.native
+    val requester: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.VpcPeeringConnectionAccepterRequester]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The VPC Peering Connection ID to manage.
       */
-    val vpcPeeringConnectionId: Input[String] = js.native
+    val vpcPeeringConnectionId: Input[String]
   }
   object VpcPeeringConnectionAccepterArgs {
     
@@ -184,60 +181,59 @@ object vpcPeeringConnectionAccepterMod {
     }
   }
   
-  @js.native
   trait VpcPeeringConnectionAccepterState extends StObject {
     
     /**
       * The status of the VPC Peering Connection request.
       */
-    val acceptStatus: js.UndefOr[Input[String]] = js.native
+    val acceptStatus: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration block that describes [VPC Peering Connection]
       * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the accepter VPC.
       */
-    val accepter: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.VpcPeeringConnectionAccepterAccepter]] = js.native
+    val accepter: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.VpcPeeringConnectionAccepterAccepter]] = js.undefined
     
     /**
       * Whether or not to accept the peering request. Defaults to `false`.
       */
-    val autoAccept: js.UndefOr[Input[Boolean]] = js.native
+    val autoAccept: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The AWS account ID of the owner of the requester VPC.
       */
-    val peerOwnerId: js.UndefOr[Input[String]] = js.native
+    val peerOwnerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The region of the accepter VPC.
       */
-    val peerRegion: js.UndefOr[Input[String]] = js.native
+    val peerRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the requester VPC.
       */
-    val peerVpcId: js.UndefOr[Input[String]] = js.native
+    val peerVpcId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration block that describes [VPC Peering Connection]
       * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
       */
-    val requester: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.VpcPeeringConnectionAccepterRequester]] = js.native
+    val requester: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.VpcPeeringConnectionAccepterRequester]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the accepter VPC.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The VPC Peering Connection ID to manage.
       */
-    val vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.native
+    val vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpcPeeringConnectionAccepterState {
     

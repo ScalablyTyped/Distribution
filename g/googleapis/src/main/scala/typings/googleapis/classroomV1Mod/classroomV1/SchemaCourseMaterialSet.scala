@@ -2,7 +2,6 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * course. These materials might include a syllabus, schedule, or other
   * background information relating to the course as a whole.
   */
-@js.native
 trait SchemaCourseMaterialSet extends StObject {
   
   /**
     * Materials attached to this set.
     */
-  var materials: js.UndefOr[js.Array[SchemaCourseMaterial]] = js.native
+  var materials: js.UndefOr[js.Array[SchemaCourseMaterial]] = js.undefined
   
   /**
     * Title for this set.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaCourseMaterialSet {
   

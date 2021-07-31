@@ -10,23 +10,21 @@ import typings.massive.massiveStrings.first_
 import typings.massive.massiveStrings.last_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderingOptions extends StObject {
   
-  var direction: js.UndefOr[ASC | asc_ | DESC | desc_] = js.native
+  var direction: js.UndefOr[ASC | asc_ | DESC | desc_] = js.undefined
   
-  var expr: js.UndefOr[String] = js.native
+  var expr: js.UndefOr[String] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var last: js.UndefOr[String] = js.native
+  var last: js.UndefOr[String] = js.undefined
   
-  var nulls: js.UndefOr[FIRST | first_ | LAST | last_] = js.native
+  var nulls: js.UndefOr[FIRST | first_ | LAST | last_] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object OrderingOptions {
   

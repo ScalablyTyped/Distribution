@@ -3,29 +3,27 @@ package typings.chrome.chrome.cast.media
 import typings.chrome.chrome.cast.Image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MovieMediaMetadata extends StObject {
   
-  var images: js.Array[Image] = js.native
+  var images: js.Array[Image]
   
-  var metadataType: MetadataType = js.native
+  var metadataType: MetadataType
   
-  var releaseDate: String = js.native
+  var releaseDate: String
   
   /** @deprecated. Use releaseDate instead. */
-  var releaseYear: Double = js.native
+  var releaseYear: Double
   
-  var studio: String = js.native
+  var studio: String
   
-  var subtitle: String = js.native
+  var subtitle: String
   
-  var title: String = js.native
+  var title: String
   
   /** @deprecated. Use metadataType instead. */
-  var `type`: MetadataType = js.native
+  var `type`: MetadataType
 }
 object MovieMediaMetadata {
   

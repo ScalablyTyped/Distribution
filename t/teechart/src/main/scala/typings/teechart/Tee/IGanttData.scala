@@ -2,17 +2,17 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGanttData extends ISeriesData {
+trait IGanttData
+  extends StObject
+     with ISeriesData {
   
-  var end: js.Array[Double] = js.native
+  var end: js.Array[Double]
   
-  var start: js.Array[Double] = js.native
+  var start: js.Array[Double]
   
-  var x: js.Array[Double] = js.native
+  var x: js.Array[Double]
 }
 object IGanttData {
   

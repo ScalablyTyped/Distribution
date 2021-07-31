@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAggregateDiscoveredResourceCountsResponse extends StObject {
   
   /**
     * The key passed into the request object. If GroupByKey is not provided, the result will be empty.
     */
-  var GroupByKey: js.UndefOr[StringWithCharLimit256] = js.native
+  var GroupByKey: js.UndefOr[StringWithCharLimit256] = js.undefined
   
   /**
     * Returns a list of GroupedResourceCount objects.
     */
-  var GroupedResourceCounts: js.UndefOr[GroupedResourceCountList] = js.native
+  var GroupedResourceCounts: js.UndefOr[GroupedResourceCountList] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
   
   /**
     * The total number of resources that are present in an aggregator with the filters that you provide.
     */
-  var TotalDiscoveredResources: Long = js.native
+  var TotalDiscoveredResources: Long
 }
 object GetAggregateDiscoveredResourceCountsResponse {
   

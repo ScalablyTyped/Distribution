@@ -2,15 +2,13 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enabled extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var required_status_checks: Contexts = js.native
+  var required_status_checks: Contexts
 }
 object Enabled {
   

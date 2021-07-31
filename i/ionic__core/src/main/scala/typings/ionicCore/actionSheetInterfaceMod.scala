@@ -8,23 +8,21 @@ import typings.ionicCore.ionicCoreStrings.selected
 import typings.ionicCore.mod.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionSheetInterfaceMod {
   
-  @js.native
   trait ActionSheetButton extends StObject {
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var handler: js.UndefOr[js.Function0[Boolean | Unit | (js.Promise[Boolean | Unit])]] = js.native
+    var handler: js.UndefOr[js.Function0[Boolean | Unit | (js.Promise[Boolean | Unit])]] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[cancel | destructive | selected | String] = js.native
+    var role: js.UndefOr[cancel | destructive | selected | String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ActionSheetButton {
     
@@ -72,32 +70,31 @@ object actionSheetInterfaceMod {
     }
   }
   
-  @js.native
   trait ActionSheetOptions extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var backdropDismiss: js.UndefOr[Boolean] = js.native
+    var backdropDismiss: js.UndefOr[Boolean] = js.undefined
     
-    var buttons: js.Array[ActionSheetButton | String] = js.native
+    var buttons: js.Array[ActionSheetButton | String]
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var keyboardClose: js.UndefOr[Boolean] = js.native
+    var keyboardClose: js.UndefOr[Boolean] = js.undefined
     
-    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
-    var subHeader: js.UndefOr[String] = js.native
+    var subHeader: js.UndefOr[String] = js.undefined
     
-    var translucent: js.UndefOr[Boolean] = js.native
+    var translucent: js.UndefOr[Boolean] = js.undefined
   }
   object ActionSheetOptions {
     

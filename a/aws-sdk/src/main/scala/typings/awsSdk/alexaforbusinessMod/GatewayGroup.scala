@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewayGroup extends StObject {
   
   /**
     * The ARN of the gateway group.
     */
-  var Arn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Arn] = js.undefined
   
   /**
     * The description of the gateway group.
     */
-  var Description: js.UndefOr[GatewayGroupDescription] = js.native
+  var Description: js.UndefOr[GatewayGroupDescription] = js.undefined
   
   /**
     * The name of the gateway group.
     */
-  var Name: js.UndefOr[GatewayGroupName] = js.native
+  var Name: js.UndefOr[GatewayGroupName] = js.undefined
 }
 object GatewayGroup {
   

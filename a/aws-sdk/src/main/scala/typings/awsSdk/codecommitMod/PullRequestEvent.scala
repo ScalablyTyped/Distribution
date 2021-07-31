@@ -2,66 +2,64 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullRequestEvent extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the user whose actions resulted in the event. Examples include updating the pull request with more commits or changing the status of a pull request.
     */
-  var actorArn: js.UndefOr[Arn] = js.native
+  var actorArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Information about a pull request event.
     */
-  var approvalRuleEventMetadata: js.UndefOr[ApprovalRuleEventMetadata] = js.native
+  var approvalRuleEventMetadata: js.UndefOr[ApprovalRuleEventMetadata] = js.undefined
   
   /**
     * Information about an approval rule override event for a pull request.
     */
-  var approvalRuleOverriddenEventMetadata: js.UndefOr[ApprovalRuleOverriddenEventMetadata] = js.native
+  var approvalRuleOverriddenEventMetadata: js.UndefOr[ApprovalRuleOverriddenEventMetadata] = js.undefined
   
   /**
     * Information about an approval state change for a pull request.
     */
-  var approvalStateChangedEventMetadata: js.UndefOr[ApprovalStateChangedEventMetadata] = js.native
+  var approvalStateChangedEventMetadata: js.UndefOr[ApprovalStateChangedEventMetadata] = js.undefined
   
   /**
     * The day and time of the pull request event, in timestamp format.
     */
-  var eventDate: js.UndefOr[EventDate] = js.native
+  var eventDate: js.UndefOr[EventDate] = js.undefined
   
   /**
     * Information about the source and destination branches for the pull request.
     */
-  var pullRequestCreatedEventMetadata: js.UndefOr[PullRequestCreatedEventMetadata] = js.native
+  var pullRequestCreatedEventMetadata: js.UndefOr[PullRequestCreatedEventMetadata] = js.undefined
   
   /**
     * The type of the pull request event (for example, a status change event (PULL_REQUEST_STATUS_CHANGED) or update event (PULL_REQUEST_SOURCE_REFERENCE_UPDATED)).
     */
-  var pullRequestEventType: js.UndefOr[PullRequestEventType] = js.native
+  var pullRequestEventType: js.UndefOr[PullRequestEventType] = js.undefined
   
   /**
     * The system-generated ID of the pull request.
     */
-  var pullRequestId: js.UndefOr[PullRequestId] = js.native
+  var pullRequestId: js.UndefOr[PullRequestId] = js.undefined
   
   /**
     * Information about the change in mergability state for the pull request event.
     */
-  var pullRequestMergedStateChangedEventMetadata: js.UndefOr[PullRequestMergedStateChangedEventMetadata] = js.native
+  var pullRequestMergedStateChangedEventMetadata: js.UndefOr[PullRequestMergedStateChangedEventMetadata] = js.undefined
   
   /**
     * Information about the updated source branch for the pull request event. 
     */
-  var pullRequestSourceReferenceUpdatedEventMetadata: js.UndefOr[PullRequestSourceReferenceUpdatedEventMetadata] = js.native
+  var pullRequestSourceReferenceUpdatedEventMetadata: js.UndefOr[PullRequestSourceReferenceUpdatedEventMetadata] = js.undefined
   
   /**
     * Information about the change in status for the pull request event.
     */
-  var pullRequestStatusChangedEventMetadata: js.UndefOr[PullRequestStatusChangedEventMetadata] = js.native
+  var pullRequestStatusChangedEventMetadata: js.UndefOr[PullRequestStatusChangedEventMetadata] = js.undefined
 }
 object PullRequestEvent {
   

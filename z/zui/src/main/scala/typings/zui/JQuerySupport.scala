@@ -2,13 +2,11 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuerySupport extends StObject {
   
-  var transition: Boolean | TransitionEventNames = js.native
+  var transition: Boolean | TransitionEventNames
 }
 object JQuerySupport {
   

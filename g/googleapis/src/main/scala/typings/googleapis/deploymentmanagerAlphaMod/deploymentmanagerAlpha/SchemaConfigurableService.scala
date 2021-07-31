@@ -2,34 +2,32 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BaseType that describes a service-backed Type.
   */
-@js.native
 trait SchemaConfigurableService extends StObject {
   
   /**
     * Allows resource handling overrides for specific collections
     */
-  var collectionOverrides: js.UndefOr[js.Array[SchemaCollectionOverride]] = js.native
+  var collectionOverrides: js.UndefOr[js.Array[SchemaCollectionOverride]] = js.undefined
   
   /**
     * Credential used when interacting with this type.
     */
-  var credential: js.UndefOr[SchemaCredential] = js.native
+  var credential: js.UndefOr[SchemaCredential] = js.undefined
   
   /**
     * Descriptor Url for the this type.
     */
-  var descriptorUrl: js.UndefOr[String] = js.native
+  var descriptorUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Options to apply when handling any resources in this service.
     */
-  var options: js.UndefOr[SchemaOptions] = js.native
+  var options: js.UndefOr[SchemaOptions] = js.undefined
 }
 object SchemaConfigurableService {
   

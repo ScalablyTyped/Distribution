@@ -10,9 +10,9 @@ An enhanced React Native modal
 | ------------------ | :-------------: |
 | Full name          | react-native-modal |
 | Keywords           | react-native, react, native, modal, android, ios, backdrop, simple, animated |
-| # releases         | 24 |
-| # dependents       | 151 |
-| # downloads        | 6922135 |
+| # releases         | 21 |
+| # dependents       | 178 |
+| # downloads        | 8055302 |
 | # stars            | 3 |
 
 ## Links

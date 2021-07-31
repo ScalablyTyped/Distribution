@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingInfo extends StObject {
   
   /**
     * The name of an S3 bucket where execution logs are stored .
     */
-  var S3BucketName: typings.awsSdk.ssmMod.S3BucketName = js.native
+  var S3BucketName: typings.awsSdk.ssmMod.S3BucketName
   
   /**
     * (Optional) The S3 bucket subfolder. 
     */
-  var S3KeyPrefix: js.UndefOr[typings.awsSdk.ssmMod.S3KeyPrefix] = js.native
+  var S3KeyPrefix: js.UndefOr[typings.awsSdk.ssmMod.S3KeyPrefix] = js.undefined
   
   /**
     * The Region where the S3 bucket is located.
     */
-  var S3Region: typings.awsSdk.ssmMod.S3Region = js.native
+  var S3Region: typings.awsSdk.ssmMod.S3Region
 }
 object LoggingInfo {
   

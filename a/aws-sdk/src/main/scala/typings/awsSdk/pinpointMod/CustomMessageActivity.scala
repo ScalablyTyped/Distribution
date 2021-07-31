@@ -2,41 +2,39 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomMessageActivity extends StObject {
   
   /**
     * The destination to send the campaign or treatment to. This value can be one of the following: The name or Amazon Resource Name (ARN) of an AWS Lambda function to invoke to handle delivery of the campaign or treatment. The URL for a web application or service that supports HTTPS and can receive the message. The URL has to be a full URL, including the HTTPS protocol.
     */
-  var DeliveryUri: js.UndefOr[string] = js.native
+  var DeliveryUri: js.UndefOr[string] = js.undefined
   
   /**
     * The types of endpoints to send the custom message to. Each valid value maps to a type of channel that you can associate with an endpoint by using the ChannelType property of an endpoint.
     */
-  var EndpointTypes: js.UndefOr[ListOfEndpointTypesElement] = js.native
+  var EndpointTypes: js.UndefOr[ListOfEndpointTypesElement] = js.undefined
   
   /**
     * Specifies the message data included in a custom channel message that's sent to participants in a journey.
     */
-  var MessageConfig: js.UndefOr[JourneyCustomMessage] = js.native
+  var MessageConfig: js.UndefOr[JourneyCustomMessage] = js.undefined
   
   /**
     * The unique identifier for the next activity to perform, after Amazon Pinpoint calls the AWS Lambda function or web hook.
     */
-  var NextActivity: js.UndefOr[string] = js.native
+  var NextActivity: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the custom message template to use for the message. If specified, this value must match the name of an existing message template.
     */
-  var TemplateName: js.UndefOr[string] = js.native
+  var TemplateName: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the version of the message template to use for the message. If specified, this value must match the identifier for an existing template version. To retrieve a list of versions and version identifiers for a template, use the Template Versions resource. If you don't specify a value for this property, Amazon Pinpoint uses the active version of the template. The active version is typically the version of a template that's been most recently reviewed and approved for use, depending on your workflow. It isn't necessarily the latest version of a template.
     */
-  var TemplateVersion: js.UndefOr[string] = js.native
+  var TemplateVersion: js.UndefOr[string] = js.undefined
 }
 object CustomMessageActivity {
   

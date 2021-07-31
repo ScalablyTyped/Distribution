@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the PivotTable object, for use in `pivotTable.set({ ... })`. */
-@js.native
 trait PivotTableUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PivotTableUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.native
+  var allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait PivotTableUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var enableDataValueEditing: js.UndefOr[Boolean] = js.native
+  var enableDataValueEditing: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait PivotTableUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait PivotTableUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var useCustomSortLists: js.UndefOr[Boolean] = js.native
+  var useCustomSortLists: js.UndefOr[Boolean] = js.undefined
 }
 object PivotTableUpdateData {
   

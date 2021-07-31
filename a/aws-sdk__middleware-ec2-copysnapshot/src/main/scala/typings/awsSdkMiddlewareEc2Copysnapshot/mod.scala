@@ -9,49 +9,52 @@ import typings.awsSdkTypes.utilMod.Provider
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/middleware-ec2-copysnapshot", "addPresignedUrl")
+  @JSImport("@aws-sdk/middleware-ec2-copysnapshot", JSImport.Namespace)
   @js.native
-  def addPresignedUrl[Input /* <: CopySnapshotInput */, Output /* <: MetadataBearer */](hasRegionCredentialsEndpointBase64EncoderUtf8DecoderSha256: AddPresignedUrlParameters): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def addPresignedUrl[Input /* <: CopySnapshotInput */, Output /* <: MetadataBearer */](
+    hasRegionProviderCredentialsProviderEndpointProviderBase64EncoderUtf8DecoderSha256: AddPresignedUrlParameters
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addPresignedUrl")(hasRegionProviderCredentialsProviderEndpointProviderBase64EncoderUtf8DecoderSha256.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   trait AddPresignedUrlParameters extends StObject {
     
     /**
       * Encoder to encode the blob input when generate presigned URL
       */
-    var base64Encoder: Encoder = js.native
+    var base64Encoder: Encoder
     
     /**
       * Credentials provider used to sign the presigned URL
       */
-    var credentials: Provider[Credentials] = js.native
+    var credentials: Provider[Credentials]
     
     /**
       * Endpoint provider of the original request.
       */
     var endpoint: Provider[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ _
-      ] = js.native
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ js.Any
+      ]
     
     /**
       * Region provider used to sign the presigned URL
       */
-    var region: Provider[String] = js.native
+    var region: Provider[String]
     
     /**
       * Hashing class used by signer
       */
-    var sha256: HashConstructor = js.native
+    var sha256: HashConstructor
     
     /**
       * Decoder to decode input string when generate presigned URL
       */
-    var utf8Decoder: Decoder = js.native
+    var utf8Decoder: Decoder
   }
   object AddPresignedUrlParameters {
     
@@ -60,7 +63,7 @@ object mod {
       base64Encoder: /* input */ Uint8Array => String,
       credentials: () => js.Promise[Credentials],
       endpoint: () => js.Promise[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ js.Any
         ],
       region: () => js.Promise[String],
       sha256: HashConstructor,
@@ -82,7 +85,7 @@ object mod {
       @scala.inline
       def setEndpoint(
         value: () => js.Promise[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ js.Any
             ]
       ): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
@@ -97,14 +100,13 @@ object mod {
     }
   }
   
-  @js.native
   trait CopySnapshotInput extends StObject {
     
-    var DestinationRegion: js.UndefOr[String] = js.native
+    var DestinationRegion: js.UndefOr[String] = js.undefined
     
-    var PresignedUrl: js.UndefOr[String] = js.native
+    var PresignedUrl: js.UndefOr[String] = js.undefined
     
-    var SourceRegion: String = js.native
+    var SourceRegion: String
   }
   object CopySnapshotInput {
     

@@ -10,9 +10,9 @@ react tooltip component
 | ------------------ | :-------------: |
 | Full name          | react-tooltip |
 | Keywords           | react, react-component, tooltip, react-tooltip |
-| # releases         | 35 |
-| # dependents       | 414 |
-| # downloads        | 17113091 |
+| # releases         | 34 |
+| # dependents       | 490 |
+| # downloads        | 21577337 |
 | # stars            | 26 |
 
 ## Links

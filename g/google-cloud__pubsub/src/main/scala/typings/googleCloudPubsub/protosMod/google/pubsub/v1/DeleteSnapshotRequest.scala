@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a DeleteSnapshotRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new DeleteSnapshotRequest.
   * @param [properties] Properties to set
   */
-class DeleteSnapshotRequest () extends IDeleteSnapshotRequest {
+class DeleteSnapshotRequest ()
+  extends StObject
+     with IDeleteSnapshotRequest {
   def this(properties: IDeleteSnapshotRequest) = this()
   
   /** DeleteSnapshotRequest snapshot. */
@@ -32,18 +33,20 @@ class DeleteSnapshotRequest () extends IDeleteSnapshotRequest {
 }
 object DeleteSnapshotRequest {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new DeleteSnapshotRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns DeleteSnapshotRequest instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.create")
-  @js.native
-  def create(): DeleteSnapshotRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.create")
-  @js.native
-  def create(properties: IDeleteSnapshotRequest): DeleteSnapshotRequest = js.native
+  @scala.inline
+  def create(): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeleteSnapshotRequest]
+  @scala.inline
+  def create(properties: IDeleteSnapshotRequest): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
   
   /**
     * Decodes a DeleteSnapshotRequest message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object DeleteSnapshotRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.decode")
-  @js.native
-  def decode(reader: Reader): DeleteSnapshotRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): DeleteSnapshotRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): DeleteSnapshotRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): DeleteSnapshotRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): DeleteSnapshotRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteSnapshotRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): DeleteSnapshotRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteSnapshotRequest]
   
   /**
     * Decodes a DeleteSnapshotRequest message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object DeleteSnapshotRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): DeleteSnapshotRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): DeleteSnapshotRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
   
   /**
     * Encodes the specified DeleteSnapshotRequest message. Does not implicitly {@link google.pubsub.v1.DeleteSnapshotRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object DeleteSnapshotRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.encode")
-  @js.native
-  def encode(message: IDeleteSnapshotRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.encode")
-  @js.native
-  def encode(message: IDeleteSnapshotRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IDeleteSnapshotRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IDeleteSnapshotRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified DeleteSnapshotRequest message, length delimited. Does not implicitly {@link google.pubsub.v1.DeleteSnapshotRequest.verify|verify} messages.
@@ -103,12 +98,10 @@ object DeleteSnapshotRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IDeleteSnapshotRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IDeleteSnapshotRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IDeleteSnapshotRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IDeleteSnapshotRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a DeleteSnapshotRequest message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object DeleteSnapshotRequest {
     * @returns DeleteSnapshotRequest
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): DeleteSnapshotRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
   
   /**
     * Creates a plain object from a DeleteSnapshotRequest message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object DeleteSnapshotRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.toObject")
-  @js.native
-  def toObject(message: DeleteSnapshotRequest): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.toObject")
-  @js.native
-  def toObject(message: DeleteSnapshotRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: DeleteSnapshotRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: DeleteSnapshotRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a DeleteSnapshotRequest message.
@@ -140,7 +130,6 @@ object DeleteSnapshotRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.DeleteSnapshotRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

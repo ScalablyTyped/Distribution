@@ -5,7 +5,6 @@ import typings.storybookComponents.typesMod.ArgType
 import typings.storybookComponents.typesMod.Args
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object argControlMod {
@@ -14,14 +13,13 @@ object argControlMod {
   @js.native
   val ArgControl: FC[ArgControlProps] = js.native
   
-  @js.native
   trait ArgControlProps extends StObject {
     
-    var arg: js.Any = js.native
+    var arg: js.Any
     
-    var row: ArgType = js.native
+    var row: ArgType
     
-    def updateArgs(args: Args): Unit = js.native
+    def updateArgs(args: Args): Unit
   }
   object ArgControlProps {
     

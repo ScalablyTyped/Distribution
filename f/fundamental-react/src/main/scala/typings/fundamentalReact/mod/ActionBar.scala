@@ -8,18 +8,16 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/ActionBar/ActionBar.ActionBarProps> & {  displayName :'ActionBar'} */
 object ActionBar {
   
-  @JSImport("fundamental-react", "ActionBar")
-  @js.native
-  def apply(props: PropsWithChildren[ActionBarProps]): ReactElement | Null = js.native
-  @JSImport("fundamental-react", "ActionBar")
-  @js.native
-  def apply(props: PropsWithChildren[ActionBarProps], context: js.Any): ReactElement | Null = js.native
+  @scala.inline
+  def apply(props: PropsWithChildren[ActionBarProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  @scala.inline
+  def apply(props: PropsWithChildren[ActionBarProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  
   @JSImport("fundamental-react", "ActionBar")
   @js.native
   val ^ : js.Any = js.native

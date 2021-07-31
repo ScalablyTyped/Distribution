@@ -3,76 +3,74 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.ResourceRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitCommitRef extends StObject {
   
   /**
     * A collection of related REST reference links.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Author of the commit.
     */
-  var author: GitUserDate = js.native
+  var author: GitUserDate
   
   /**
     * Counts of the types of changes (edits, deletes, etc.) included with the commit.
     */
-  var changeCounts: ChangeCountDictionary = js.native
+  var changeCounts: ChangeCountDictionary
   
   /**
     * An enumeration of the changes included with the commit.
     */
-  var changes: js.Array[GitChange] = js.native
+  var changes: js.Array[GitChange]
   
   /**
     * Comment or message of the commit.
     */
-  var comment: String = js.native
+  var comment: String
   
   /**
     * Indicates if the comment is truncated from the full Git commit comment message.
     */
-  var commentTruncated: Boolean = js.native
+  var commentTruncated: Boolean
   
   /**
     * ID (SHA-1) of the commit.
     */
-  var commitId: String = js.native
+  var commitId: String
   
   /**
     * Committer of the commit.
     */
-  var committer: GitUserDate = js.native
+  var committer: GitUserDate
   
   /**
     * An enumeration of the parent commit IDs for this commit.
     */
-  var parents: js.Array[String] = js.native
+  var parents: js.Array[String]
   
   /**
     * Remote URL path to the commit.
     */
-  var remoteUrl: String = js.native
+  var remoteUrl: String
   
   /**
     * A list of status metadata from services and extensions that may associate additional information to the commit.
     */
-  var statuses: js.Array[GitStatus] = js.native
+  var statuses: js.Array[GitStatus]
   
   /**
     * REST URL for this resource.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * A list of workitems associated with this commit.
     */
-  var workItems: js.Array[ResourceRef] = js.native
+  var workItems: js.Array[ResourceRef]
 }
 object GitCommitRef {
   

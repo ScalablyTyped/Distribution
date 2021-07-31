@@ -2,16 +2,14 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSuggestersResponse extends StObject {
   
   /**
     * The suggesters configured for the domain specified in the request.
     */
-  var Suggesters: SuggesterStatusList = js.native
+  var Suggesters: SuggesterStatusList
 }
 object DescribeSuggestersResponse {
   

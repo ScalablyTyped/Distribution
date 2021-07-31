@@ -2,25 +2,23 @@ package typings.wordpressCustomTemplatedPathWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Basename extends StObject {
     
-    var basename: js.UndefOr[String] = js.native
+    var basename: js.UndefOr[String] = js.undefined
     
     var chunk: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Chunk */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
   }
   object Basename {
     

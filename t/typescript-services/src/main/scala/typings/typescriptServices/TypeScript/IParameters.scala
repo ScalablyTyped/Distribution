@@ -2,27 +2,25 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IParameters extends StObject {
   
-  var ast: AST = js.native
+  var ast: AST
   
-  def astAt(index: Double): AST = js.native
+  def astAt(index: Double): AST
   
-  def identifierAt(index: Double): Identifier = js.native
+  def identifierAt(index: Double): Identifier
   
-  def initializerAt(index: Double): EqualsValueClause = js.native
+  def initializerAt(index: Double): EqualsValueClause
   
-  def isOptionalAt(index: Double): Boolean = js.native
+  def isOptionalAt(index: Double): Boolean
   
-  def lastParameterIsRest(): Boolean = js.native
+  def lastParameterIsRest(): Boolean
   
-  var length: Double = js.native
+  var length: Double
   
-  def typeAt(index: Double): AST = js.native
+  def typeAt(index: Double): AST
 }
 object IParameters {
   

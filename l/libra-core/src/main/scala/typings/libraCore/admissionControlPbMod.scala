@@ -13,7 +13,6 @@ import typings.libraCore.vmErrorsPbMod.VMStatus
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object admissionControlPbMod {
@@ -37,13 +36,11 @@ object admissionControlPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "AdmissionControlStatus.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): AdmissionControlStatus = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): AdmissionControlStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AdmissionControlStatus]
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "AdmissionControlStatus.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: AdmissionControlStatus, reader: BinaryReader): AdmissionControlStatus = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: AdmissionControlStatus, reader: BinaryReader): AdmissionControlStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AdmissionControlStatus]
     
     @JSImport("libra-core/lib/@/generated/admission_control_pb", "AdmissionControlStatus.extensions")
     @js.native
@@ -58,20 +55,17 @@ object admissionControlPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "AdmissionControlStatus.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: AdmissionControlStatus, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: AdmissionControlStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "AdmissionControlStatus.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: AdmissionControlStatus): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: AdmissionControlStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var code: AdmissionControlStatusCode = js.native
+      var code: AdmissionControlStatusCode
       
-      var message: String = js.native
+      var message: String
     }
     object AsObject {
       
@@ -100,19 +94,25 @@ object admissionControlPbMod {
   object AdmissionControlStatusCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AdmissionControlStatusCode with Double] = js.native
+    def apply(value: Double): js.UndefOr[AdmissionControlStatusCode & Double] = js.native
     
     @js.native
-    sealed trait ACCEPTED extends AdmissionControlStatusCode
-    /* 0 */ val ACCEPTED: typings.libraCore.admissionControlPbMod.AdmissionControlStatusCode.ACCEPTED with Double = js.native
+    sealed trait ACCEPTED
+      extends StObject
+         with AdmissionControlStatusCode
+    /* 0 */ val ACCEPTED: typings.libraCore.admissionControlPbMod.AdmissionControlStatusCode.ACCEPTED & Double = js.native
     
     @js.native
-    sealed trait BLACKLISTED extends AdmissionControlStatusCode
-    /* 1 */ val BLACKLISTED: typings.libraCore.admissionControlPbMod.AdmissionControlStatusCode.BLACKLISTED with Double = js.native
+    sealed trait BLACKLISTED
+      extends StObject
+         with AdmissionControlStatusCode
+    /* 1 */ val BLACKLISTED: typings.libraCore.admissionControlPbMod.AdmissionControlStatusCode.BLACKLISTED & Double = js.native
     
     @js.native
-    sealed trait REJECTED extends AdmissionControlStatusCode
-    /* 2 */ val REJECTED: typings.libraCore.admissionControlPbMod.AdmissionControlStatusCode.REJECTED with Double = js.native
+    sealed trait REJECTED
+      extends StObject
+         with AdmissionControlStatusCode
+    /* 2 */ val REJECTED: typings.libraCore.admissionControlPbMod.AdmissionControlStatusCode.REJECTED & Double = js.native
   }
   
   @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionRequest")
@@ -135,13 +135,11 @@ object admissionControlPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionRequest.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): SubmitTransactionRequest = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): SubmitTransactionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SubmitTransactionRequest]
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionRequest.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: SubmitTransactionRequest, reader: BinaryReader): SubmitTransactionRequest = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: SubmitTransactionRequest, reader: BinaryReader): SubmitTransactionRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SubmitTransactionRequest]
     
     @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionRequest.extensions")
     @js.native
@@ -156,18 +154,15 @@ object admissionControlPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionRequest.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: SubmitTransactionRequest, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: SubmitTransactionRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionRequest.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: SubmitTransactionRequest): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: SubmitTransactionRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var signedTxn: js.UndefOr[typings.libraCore.transactionPbMod.SignedTransaction.AsObject] = js.native
+      var signedTxn: js.UndefOr[typings.libraCore.transactionPbMod.SignedTransaction.AsObject] = js.undefined
     }
     object AsObject {
       
@@ -245,32 +240,38 @@ object admissionControlPbMod {
     object StatusCase extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[StatusCase with Double] = js.native
+      def apply(value: Double): js.UndefOr[StatusCase & Double] = js.native
       
       @js.native
-      sealed trait AC_STATUS extends StatusCase
-      /* 2 */ val AC_STATUS: typings.libraCore.admissionControlPbMod.SubmitTransactionResponse.StatusCase.AC_STATUS with Double = js.native
+      sealed trait AC_STATUS
+        extends StObject
+           with StatusCase
+      /* 2 */ val AC_STATUS: typings.libraCore.admissionControlPbMod.SubmitTransactionResponse.StatusCase.AC_STATUS & Double = js.native
       
       @js.native
-      sealed trait MEMPOOL_STATUS extends StatusCase
-      /* 3 */ val MEMPOOL_STATUS: typings.libraCore.admissionControlPbMod.SubmitTransactionResponse.StatusCase.MEMPOOL_STATUS with Double = js.native
+      sealed trait MEMPOOL_STATUS
+        extends StObject
+           with StatusCase
+      /* 3 */ val MEMPOOL_STATUS: typings.libraCore.admissionControlPbMod.SubmitTransactionResponse.StatusCase.MEMPOOL_STATUS & Double = js.native
       
       @js.native
-      sealed trait STATUS_NOT_SET extends StatusCase
-      /* 0 */ val STATUS_NOT_SET: typings.libraCore.admissionControlPbMod.SubmitTransactionResponse.StatusCase.STATUS_NOT_SET with Double = js.native
+      sealed trait STATUS_NOT_SET
+        extends StObject
+           with StatusCase
+      /* 0 */ val STATUS_NOT_SET: typings.libraCore.admissionControlPbMod.SubmitTransactionResponse.StatusCase.STATUS_NOT_SET & Double = js.native
       
       @js.native
-      sealed trait VM_STATUS extends StatusCase
-      /* 1 */ val VM_STATUS: typings.libraCore.admissionControlPbMod.SubmitTransactionResponse.StatusCase.VM_STATUS with Double = js.native
+      sealed trait VM_STATUS
+        extends StObject
+           with StatusCase
+      /* 1 */ val VM_STATUS: typings.libraCore.admissionControlPbMod.SubmitTransactionResponse.StatusCase.VM_STATUS & Double = js.native
     }
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionResponse.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): SubmitTransactionResponse = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): SubmitTransactionResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SubmitTransactionResponse]
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionResponse.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: SubmitTransactionResponse, reader: BinaryReader): SubmitTransactionResponse = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: SubmitTransactionResponse, reader: BinaryReader): SubmitTransactionResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SubmitTransactionResponse]
     
     @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionResponse.extensions")
     @js.native
@@ -285,24 +286,21 @@ object admissionControlPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionResponse.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: SubmitTransactionResponse, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: SubmitTransactionResponse, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionResponse.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: SubmitTransactionResponse): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: SubmitTransactionResponse): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var acStatus: js.UndefOr[typings.libraCore.admissionControlPbMod.AdmissionControlStatus.AsObject] = js.native
+      var acStatus: js.UndefOr[typings.libraCore.admissionControlPbMod.AdmissionControlStatus.AsObject] = js.undefined
       
-      var mempoolStatus: js.UndefOr[typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatus.AsObject] = js.native
+      var mempoolStatus: js.UndefOr[typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatus.AsObject] = js.undefined
       
-      var validatorId: Uint8Array | String = js.native
+      var validatorId: Uint8Array | String
       
-      var vmStatus: js.UndefOr[typings.libraCore.vmErrorsPbMod.VMStatus.AsObject] = js.native
+      var vmStatus: js.UndefOr[typings.libraCore.vmErrorsPbMod.VMStatus.AsObject] = js.undefined
     }
     object AsObject {
       

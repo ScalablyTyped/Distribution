@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.protocolProxyApiMod.ProtocolProxyApi
 import typings.devtoolsProtocol.mod.Protocol.DeviceOrientation.SetDeviceOrientationOverrideRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceOrientationApi extends StObject {
   
   /**
     * Clears the overridden Device Orientation.
     */
-  def clearDeviceOrientationOverride(): js.Promise[Unit] = js.native
+  def clearDeviceOrientationOverride(): js.Promise[Unit]
   
   /**
     * Overrides the Device Orientation.
     */
-  def setDeviceOrientationOverride(params: SetDeviceOrientationOverrideRequest): js.Promise[Unit] = js.native
+  def setDeviceOrientationOverride(params: SetDeviceOrientationOverrideRequest): js.Promise[Unit]
 }
 object DeviceOrientationApi {
   

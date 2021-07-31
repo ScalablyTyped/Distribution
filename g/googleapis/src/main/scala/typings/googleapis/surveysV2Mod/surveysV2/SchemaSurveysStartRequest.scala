@@ -2,10 +2,8 @@ package typings.googleapis.surveysV2Mod.surveysV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSurveysStartRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaSurveysStartRequest extends StObject {
     * prices is less than or equal to this value. See Survey.Cost for more
     * details. This will no longer be available after June 2018.
     */
-  var maxCostPerResponseNanos: js.UndefOr[String] = js.native
+  var maxCostPerResponseNanos: js.UndefOr[String] = js.undefined
 }
 object SchemaSurveysStartRequest {
   

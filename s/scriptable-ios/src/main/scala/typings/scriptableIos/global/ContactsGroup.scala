@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,8 +21,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/contactsgroup/#-new-contactsgroup
   */
 class ContactsGroup ()
-  extends typings.scriptableIos.ContactsGroup
+  extends StObject
+     with typings.scriptableIos.ContactsGroup {
+  
+  /**
+    * _Adds a contact to the group._
+    *
+    * In order to persist the change, you should call `Contact.persistChanges()`. It is important that the contact is added to the address book. To add the contact to the address book,
+    * you should queue it for insertion using `Contact.add()` before persisting the changes.
+    * @param contact - Contact to add to the group.
+    * @see https://docs.scriptable.app/contactsgroup/#-addmember
+    */
+  /* CompleteClass */
+  override def addMember(contact: typings.scriptableIos.Contact): Unit = js.native
+  
+  /**
+    * _Identifier of the contacts group._
+    * @see https://docs.scriptable.app/contactsgroup/#identifier
+    */
+  /* CompleteClass */
+  var identifier: String = js.native
+  
+  /**
+    * _Name of the contacts group._
+    * @see https://docs.scriptable.app/contactsgroup/#name
+    */
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /**
+    * _Removes a contact from the group._
+    *
+    * In order to persist the change, you should call `Contact.persistChanges()`. It is important that the contact is added to the address book. To add the contact to the address book,
+    * you should queue it for insertion using `Contact.add()` before persisting the changes.
+    * @param contact - Contact to add to the group.
+    * @see https://docs.scriptable.app/contactsgroup/#-removemember
+    */
+  /* CompleteClass */
+  override def removeMember(contact: typings.scriptableIos.Contact): Unit = js.native
+}
 object ContactsGroup {
+  
+  @JSGlobal("ContactsGroup")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * _Queues a contacts group to be added._
@@ -37,12 +78,10 @@ object ContactsGroup {
     * @see https://docs.scriptable.app/contactsgroup/#add
     */
   /* static member */
-  @JSGlobal("ContactsGroup.add")
-  @js.native
-  def add(group: typings.scriptableIos.ContactsGroup): Unit = js.native
-  @JSGlobal("ContactsGroup.add")
-  @js.native
-  def add(group: typings.scriptableIos.ContactsGroup, containerIdentifier: String): Unit = js.native
+  @scala.inline
+  def add(group: typings.scriptableIos.ContactsGroup): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def add(group: typings.scriptableIos.ContactsGroup, containerIdentifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(group.asInstanceOf[js.Any], containerIdentifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * _Fetches contacts groups._
@@ -52,9 +91,8 @@ object ContactsGroup {
     * @see https://docs.scriptable.app/contactsgroup/#all
     */
   /* static member */
-  @JSGlobal("ContactsGroup.all")
-  @js.native
-  def all(containers: js.Array[typings.scriptableIos.ContactsContainer]): js.Promise[js.Array[typings.scriptableIos.ContactsGroup]] = js.native
+  @scala.inline
+  def all(containers: js.Array[typings.scriptableIos.ContactsContainer]): js.Promise[js.Array[typings.scriptableIos.ContactsGroup]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(containers.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.ContactsGroup]]]
   
   /**
     * _Queues a contacts group to be deleted._
@@ -67,9 +105,8 @@ object ContactsGroup {
     * @see https://docs.scriptable.app/contactsgroup/#delete
     */
   /* static member */
-  @JSGlobal("ContactsGroup.delete")
-  @js.native
-  def delete(group: typings.scriptableIos.ContactsGroup): Unit = js.native
+  @scala.inline
+  def delete(group: typings.scriptableIos.ContactsGroup): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Queues an update to a contacts group._
@@ -83,7 +120,6 @@ object ContactsGroup {
     * @see https://docs.scriptable.app/contactsgroup/#update
     */
   /* static member */
-  @JSGlobal("ContactsGroup.update")
-  @js.native
-  def update(group: typings.scriptableIos.ContactsGroup): Unit = js.native
+  @scala.inline
+  def update(group: typings.scriptableIos.ContactsGroup): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,17 +2,15 @@ package typings.rcAlign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AdjustX extends StObject {
     
-    var adjustX: js.UndefOr[Boolean | Double] = js.native
+    var adjustX: js.UndefOr[Boolean | Double] = js.undefined
     
-    var adjustY: js.UndefOr[Boolean | Double] = js.native
+    var adjustY: js.UndefOr[Boolean | Double] = js.undefined
   }
   object AdjustX {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait AdjustY extends StObject {
     
-    var adjustX: Boolean | Double = js.native
+    var adjustX: Boolean | Double
     
-    var adjustY: Boolean | Double = js.native
+    var adjustY: Boolean | Double
   }
   object AdjustY {
     

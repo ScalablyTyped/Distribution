@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Payment details, if paid
   */
-@js.native
-trait ClaimResponsePayment extends BackboneElement {
+trait ClaimResponsePayment
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Payment adjustment for non-Claim issues
     */
-  var adjustment: js.UndefOr[Money] = js.native
+  var adjustment: js.UndefOr[Money] = js.undefined
   
   /**
     * Explanation for the non-claim adjustment
     */
-  var adjustmentReason: js.UndefOr[CodeableConcept] = js.native
+  var adjustmentReason: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Payable amount after adjustment
     */
-  var amount: js.UndefOr[Money] = js.native
+  var amount: js.UndefOr[Money] = js.undefined
   
   /**
     * Expected data of Payment
     */
-  var date: js.UndefOr[typings.fhir.fhir.date] = js.native
+  var date: js.UndefOr[typings.fhir.fhir.date] = js.undefined
   
   /**
     * Identifier of the payment instrument
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Partial or Complete
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ClaimResponsePayment {
   

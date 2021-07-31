@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baiduChannelMod {
@@ -48,6 +47,10 @@ object baiduChannelMod {
   /* static members */
   object BaiduChannel {
     
+    @JSImport("@pulumi/aws/pinpoint/baiduChannel", "BaiduChannel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing BaiduChannel resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,50 +60,44 @@ object baiduChannelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/pinpoint/baiduChannel", "BaiduChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID]): BaiduChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/baiduChannel", "BaiduChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BaiduChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/baiduChannel", "BaiduChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BaiduChannelState): BaiduChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/baiduChannel", "BaiduChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BaiduChannelState, opts: CustomResourceOptions): BaiduChannel = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): BaiduChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BaiduChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BaiduChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BaiduChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BaiduChannelState): BaiduChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BaiduChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BaiduChannelState, opts: CustomResourceOptions): BaiduChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BaiduChannel]
     
     /**
       * Returns true if the given object is an instance of BaiduChannel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/pinpoint/baiduChannel", "BaiduChannel.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/baiduChannel.BaiduChannel */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/baiduChannel.BaiduChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/baiduChannel.BaiduChannel */ Boolean]
   }
   
-  @js.native
   trait BaiduChannelArgs extends StObject {
     
     /**
       * Platform credential API key from Baidu.
       */
-    val apiKey: Input[String] = js.native
+    val apiKey: Input[String]
     
     /**
       * The application ID.
       */
-    val applicationId: Input[String] = js.native
+    val applicationId: Input[String]
     
     /**
       * Specifies whether to enable the channel. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Platform credential Secret key from Baidu.
       */
-    val secretKey: Input[String] = js.native
+    val secretKey: Input[String]
   }
   object BaiduChannelArgs {
     
@@ -130,28 +127,27 @@ object baiduChannelMod {
     }
   }
   
-  @js.native
   trait BaiduChannelState extends StObject {
     
     /**
       * Platform credential API key from Baidu.
       */
-    val apiKey: js.UndefOr[Input[String]] = js.native
+    val apiKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The application ID.
       */
-    val applicationId: js.UndefOr[Input[String]] = js.native
+    val applicationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether to enable the channel. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Platform credential Secret key from Baidu.
       */
-    val secretKey: js.UndefOr[Input[String]] = js.native
+    val secretKey: js.UndefOr[Input[String]] = js.undefined
   }
   object BaiduChannelState {
     

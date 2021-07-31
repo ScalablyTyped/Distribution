@@ -2,13 +2,11 @@ package typings.recurlyRecurlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionId extends StObject {
   
-  var sessionId: js.UndefOr[String] = js.native
+  var sessionId: js.UndefOr[String] = js.undefined
 }
 object SessionId {
   

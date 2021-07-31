@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRouteSettingsRequest extends StObject {
   
   /**
     * The API identifier.
     */
-  var ApiId: string = js.native
+  var ApiId: string
   
   /**
     * The route key.
     */
-  var RouteKey: string = js.native
+  var RouteKey: string
   
   /**
     * The stage name. Stage names can only contain alphanumeric characters, hyphens, and underscores. Maximum length is 128 characters.
     */
-  var StageName: string = js.native
+  var StageName: string
 }
 object DeleteRouteSettingsRequest {
   

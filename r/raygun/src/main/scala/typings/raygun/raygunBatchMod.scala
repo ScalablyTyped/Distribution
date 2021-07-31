@@ -6,10 +6,13 @@ import typings.raygun.typesMod.Callback
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object raygunBatchMod {
+  
+  @JSImport("raygun/build/raygun.batch", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("raygun/build/raygun.batch", "MAX_BATCH_SIZE_BYTES")
   @js.native
@@ -43,22 +46,20 @@ object raygunBatchMod {
     def stopProcessing(): Unit = js.native
   }
   
-  @JSImport("raygun/build/raygun.batch", "prepareBatch")
-  @js.native
-  def prepareBatch(messageQueue: js.Array[MessageAndCallback]): PreparedBatch = js.native
+  @scala.inline
+  def prepareBatch(messageQueue: js.Array[MessageAndCallback]): PreparedBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareBatch")(messageQueue.asInstanceOf[js.Any]).asInstanceOf[PreparedBatch]
   
-  @js.native
   trait MessageAndCallback extends StObject {
     
-    var callback: Callback[IncomingMessage] | Null = js.native
+    var callback: Callback[IncomingMessage] | Null
     
-    var serializedMessage: String = js.native
+    var serializedMessage: String
   }
   object MessageAndCallback {
     
     @scala.inline
     def apply(serializedMessage: String): MessageAndCallback = {
-      val __obj = js.Dynamic.literal(serializedMessage = serializedMessage.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(serializedMessage = serializedMessage.asInstanceOf[js.Any], callback = null)
       __obj.asInstanceOf[MessageAndCallback]
     }
     
@@ -82,14 +83,13 @@ object raygunBatchMod {
     }
   }
   
-  @js.native
   trait PreparedBatch extends StObject {
     
-    var callbacks: js.Array[Callback[IncomingMessage]] = js.native
+    var callbacks: js.Array[Callback[IncomingMessage]]
     
-    var messageCount: Double = js.native
+    var messageCount: Double
     
-    var payload: String = js.native
+    var payload: String
   }
   object PreparedBatch {
     

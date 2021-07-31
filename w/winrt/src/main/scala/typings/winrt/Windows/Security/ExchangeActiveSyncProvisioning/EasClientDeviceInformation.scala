@@ -2,11 +2,11 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EasClientDeviceInformation extends IEasClientDeviceInformation
+trait EasClientDeviceInformation
+  extends StObject
+     with IEasClientDeviceInformation
 object EasClientDeviceInformation {
   
   @scala.inline

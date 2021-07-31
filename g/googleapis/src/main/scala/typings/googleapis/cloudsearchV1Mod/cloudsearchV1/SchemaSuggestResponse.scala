@@ -2,19 +2,17 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of the suggest API.
   */
-@js.native
 trait SchemaSuggestResponse extends StObject {
   
   /**
     * List of suggestion results.
     */
-  var suggestResults: js.UndefOr[js.Array[SchemaSuggestResult]] = js.native
+  var suggestResults: js.UndefOr[js.Array[SchemaSuggestResult]] = js.undefined
 }
 object SchemaSuggestResponse {
   

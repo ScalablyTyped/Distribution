@@ -2,65 +2,63 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AreaStyle extends StObject {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var animateOption: Appear = js.native
+  var animateOption: Appear
   
-  var areaStyle: FillStringOpacityNumber = js.native
+  var areaStyle: FillStringOpacityNumber
   
-  var backgroundStyle: OpacityNumber = js.native
+  var backgroundStyle: OpacityNumber
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var container: js.Any = js.native
+  var container: js.Any
   
-  var data: js.Array[_] = js.native
+  var data: js.Array[js.Any]
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var group: js.Any = js.native
+  var group: js.Any
   
-  var height: Double = js.native
+  var height: Double
   
-  var id: String = js.native
+  var id: String
   
-  var isArea: Boolean = js.native
+  var isArea: Boolean
   
-  var isInit: Boolean = js.native
+  var isInit: Boolean
   
-  var isRegister: Boolean = js.native
+  var isRegister: Boolean
   
-  var isUpdating: Boolean = js.native
+  var isUpdating: Boolean
   
-  var lineStyle: StrokeOpacity = js.native
+  var lineStyle: StrokeOpacity
   
-  var locationType: String = js.native
+  var locationType: String
   
-  var name: String = js.native
+  var name: String
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var smooth: Boolean = js.native
+  var smooth: Boolean
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAutoRender: Boolean = js.native
+  var updateAutoRender: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object AreaStyle {
   
@@ -72,7 +70,7 @@ object AreaStyle {
     backgroundStyle: OpacityNumber,
     capture: Boolean,
     container: js.Any,
-    data: js.Array[_],
+    data: js.Array[js.Any],
     events: js.Any,
     group: js.Any,
     height: Double,
@@ -121,7 +119,7 @@ object AreaStyle {
     def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))

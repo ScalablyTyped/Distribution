@@ -4,25 +4,26 @@ import typings.mobxStateTree.typeMod.ExtractCSTWithSTN
 import typings.mobxStateTree.typeMod.IAnyType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeCheckerMod {
   
-  @JSImport("mobx-state-tree/dist/core/type/type-checker", "typecheck")
+  @JSImport("mobx-state-tree/dist/core/type/type-checker", JSImport.Namespace)
   @js.native
-  def typecheck[IT /* <: IAnyType */](`type`: IT, value: ExtractCSTWithSTN[IT]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def typecheck[IT /* <: IAnyType */](`type`: IT, value: ExtractCSTWithSTN[IT]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("typecheck")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type IValidationContext = js.Array[IValidationContextEntry]
   
-  @js.native
   trait IValidationContextEntry extends StObject {
     
     /** Subpath where the validation should be run, or an empty string to validate it all */
-    var path: String = js.native
+    var path: String
     
     /** Type to validate the subpath against */
-    var `type`: IAnyType = js.native
+    var `type`: IAnyType
   }
   object IValidationContextEntry {
     
@@ -44,17 +45,16 @@ object typeCheckerMod {
     }
   }
   
-  @js.native
   trait IValidationError extends StObject {
     
     /** Validation context */
-    var context: IValidationContext = js.native
+    var context: IValidationContext
     
     /** Error message */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /** Value that was being validated, either a snapshot or an instance */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object IValidationError {
     

@@ -9,14 +9,13 @@ import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object csvParserStreamMod {
   
   @JSImport("@fast-csv/parse/build/src/CsvParserStream", "CsvParserStream")
   @js.native
-  class CsvParserStream[I /* <: Row[_] */, O /* <: Row[_] */] protected () extends Transform {
+  class CsvParserStream[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */] protected () extends Transform {
     def this(parserOptions: ParserOptions) = this()
     
     def _transform(data: Buffer, encoding: String, done: TransformCallback): Unit = js.native

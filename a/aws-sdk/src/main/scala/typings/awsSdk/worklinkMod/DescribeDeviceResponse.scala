@@ -2,56 +2,54 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDeviceResponse extends StObject {
   
   /**
     * The date that the device first signed in to Amazon WorkLink.
     */
-  var FirstAccessedTime: js.UndefOr[DateTime] = js.native
+  var FirstAccessedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The date that the device last accessed Amazon WorkLink.
     */
-  var LastAccessedTime: js.UndefOr[DateTime] = js.native
+  var LastAccessedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The manufacturer of the device.
     */
-  var Manufacturer: js.UndefOr[DeviceManufacturer] = js.native
+  var Manufacturer: js.UndefOr[DeviceManufacturer] = js.undefined
   
   /**
     * The model of the device.
     */
-  var Model: js.UndefOr[DeviceModel] = js.native
+  var Model: js.UndefOr[DeviceModel] = js.undefined
   
   /**
     * The operating system of the device.
     */
-  var OperatingSystem: js.UndefOr[DeviceOperatingSystemName] = js.native
+  var OperatingSystem: js.UndefOr[DeviceOperatingSystemName] = js.undefined
   
   /**
     * The operating system version of the device.
     */
-  var OperatingSystemVersion: js.UndefOr[DeviceOperatingSystemVersion] = js.native
+  var OperatingSystemVersion: js.UndefOr[DeviceOperatingSystemVersion] = js.undefined
   
   /**
     * The operating system patch level of the device.
     */
-  var PatchLevel: js.UndefOr[DevicePatchLevel] = js.native
+  var PatchLevel: js.UndefOr[DevicePatchLevel] = js.undefined
   
   /**
     * The current state of the device.
     */
-  var Status: js.UndefOr[DeviceStatus] = js.native
+  var Status: js.UndefOr[DeviceStatus] = js.undefined
   
   /**
     * The user name associated with the device.
     */
-  var Username: js.UndefOr[typings.awsSdk.worklinkMod.Username] = js.native
+  var Username: js.UndefOr[typings.awsSdk.worklinkMod.Username] = js.undefined
 }
 object DescribeDeviceResponse {
   

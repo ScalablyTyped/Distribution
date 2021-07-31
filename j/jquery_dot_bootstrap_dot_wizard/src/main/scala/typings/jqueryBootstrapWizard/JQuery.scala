@@ -16,7 +16,6 @@ import typings.jqueryBootstrapWizard.jqueryBootstrapWizardStrings.remove
 import typings.jqueryBootstrapWizard.jqueryBootstrapWizardStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

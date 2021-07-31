@@ -2,34 +2,32 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationEventsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock) A `closePopup` event. Fired when Popup should be
     * hidden, for example when clicking on an annotation again.
     */
-  var closePopup: js.UndefOr[js.Function] = js.native
+  var closePopup: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts, Highstock) Event fired when button state should change, for
     * example after adding an annotation.
     */
-  var deselectButton: js.UndefOr[js.Function] = js.native
+  var deselectButton: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts, Highstock) Event fired on a button click.
     */
-  var selectButton: js.UndefOr[js.Function] = js.native
+  var selectButton: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts, Highstock) A `showPopup` event. Fired when selecting for
     * example an annotation.
     */
-  var showPopup: js.UndefOr[js.Function] = js.native
+  var showPopup: js.UndefOr[js.Function] = js.undefined
 }
 object NavigationEventsOptions {
   

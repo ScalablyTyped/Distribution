@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoprovisioningNodePoolDefaults extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait AutoprovisioningNodePoolDefaults extends StObject {
     * projects/[KEY_PROJECT_ID]/locations/[LOCATION]/keyRings/[RING_NAME]/cryptoKeys/[KEY_NAME]. For more information about protecting resources with Cloud KMS Keys please see:
     * https://cloud.google.com/compute/docs/disks/customer-managed-encryption
     */
-  var bootDiskKmsKey: js.UndefOr[String] = js.native
+  var bootDiskKmsKey: js.UndefOr[String] = js.undefined
   
   /** Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. If unspecified, the default disk size is 100GB. */
-  var diskSizeGb: js.UndefOr[Double] = js.native
+  var diskSizeGb: js.UndefOr[Double] = js.undefined
   
   /** Type of the disk attached to each node (e.g. 'pd-standard' or 'pd-ssd') If unspecified, the default disk type is 'pd-standard' */
-  var diskType: js.UndefOr[String] = js.native
+  var diskType: js.UndefOr[String] = js.undefined
   
   /** Specifies the node management options for NAP created node-pools. */
-  var management: js.UndefOr[NodeManagement] = js.native
+  var management: js.UndefOr[NodeManagement] = js.undefined
   
   /**
     * Minimum CPU platform to be used for NAP created node pools. The instance may be scheduled on the specified or newer CPU platform. Applicable values are the friendly names of CPU
     * platforms, such as minCpuPlatform: Intel Haswell or minCpuPlatform: Intel Sandy Bridge. For more information, read [how to specify min CPU
     * platform](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform) To unset the min cpu platform field pass "automatic" as field value.
     */
-  var minCpuPlatform: js.UndefOr[String] = js.native
+  var minCpuPlatform: js.UndefOr[String] = js.undefined
   
   /** Scopes that are used by NAP when creating node pools. */
-  var oauthScopes: js.UndefOr[js.Array[String]] = js.native
+  var oauthScopes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The Google Cloud Platform Service Account to be used by the node VMs. */
-  var serviceAccount: js.UndefOr[String] = js.native
+  var serviceAccount: js.UndefOr[String] = js.undefined
   
   /** Shielded Instance options. */
-  var shieldedInstanceConfig: js.UndefOr[ShieldedInstanceConfig] = js.native
+  var shieldedInstanceConfig: js.UndefOr[ShieldedInstanceConfig] = js.undefined
   
   /** Specifies the upgrade settings for NAP created node pools */
-  var upgradeSettings: js.UndefOr[UpgradeSettings] = js.native
+  var upgradeSettings: js.UndefOr[UpgradeSettings] = js.undefined
 }
 object AutoprovisioningNodePoolDefaults {
   

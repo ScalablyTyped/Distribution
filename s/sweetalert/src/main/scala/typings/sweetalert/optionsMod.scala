@@ -5,41 +5,41 @@ import typings.sweetalert.optionsButtonsMod.ButtonList
 import typings.sweetalert.optionsContentMod.ContentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  @JSImport("sweetalert/typings/modules/options", "getOpts")
+  @JSImport("sweetalert/typings/modules/options", JSImport.Namespace)
   @js.native
-  def getOpts(params: (String | PartialSwalOptions)*): SwalOptions = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sweetalert/typings/modules/options", "setDefaults")
-  @js.native
-  def setDefaults(opts: js.Object): Unit = js.native
+  @scala.inline
+  def getOpts(params: (String | PartialSwalOptions)*): SwalOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpts")(params.asInstanceOf[js.Any]).asInstanceOf[SwalOptions]
   
-  @js.native
+  @scala.inline
+  def setDefaults(opts: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait SwalOptions extends StObject {
     
-    var buttons: ButtonList | (js.Array[String | Boolean]) = js.native
+    var buttons: ButtonList | (js.Array[String | Boolean])
     
-    var className: String = js.native
+    var className: String
     
-    var closeOnClickOutside: Boolean = js.native
+    var closeOnClickOutside: Boolean
     
-    var closeOnEsc: Boolean = js.native
+    var closeOnEsc: Boolean
     
-    var content: ContentOptions = js.native
+    var content: ContentOptions
     
-    var dangerMode: Boolean = js.native
+    var dangerMode: Boolean
     
-    var icon: String = js.native
+    var icon: String
     
-    var text: String = js.native
+    var text: String
     
-    var timer: Double = js.native
+    var timer: Double
     
-    var title: String = js.native
+    var title: String
   }
   object SwalOptions {
     

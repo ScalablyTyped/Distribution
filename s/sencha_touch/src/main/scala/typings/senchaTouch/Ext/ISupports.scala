@@ -2,26 +2,24 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISupports extends StObject {
   
   /** [Property] (Object) */
-  var AudioTag: js.UndefOr[js.Any] = js.native
+  var AudioTag: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Object) */
-  var GeoLocation: js.UndefOr[js.Any] = js.native
+  var GeoLocation: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Object) */
-  var SVG: js.UndefOr[js.Any] = js.native
+  var SVG: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Object) */
-  var Transitions: js.UndefOr[js.Any] = js.native
+  var Transitions: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Object) */
-  var VML: js.UndefOr[js.Any] = js.native
+  var VML: js.UndefOr[js.Any] = js.undefined
 }
 object ISupports {
   

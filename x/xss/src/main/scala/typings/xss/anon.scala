@@ -2,17 +2,15 @@ package typings.xss
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait IsClosing extends StObject {
     
-    var isClosing: Boolean = js.native
+    var isClosing: Boolean
     
-    var position: Double = js.native
+    var position: Double
   }
   object IsClosing {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait OnIgnoreTag extends StObject {
     
-    def onIgnoreTag(tag: String, html: String, options: IsClosing): String = js.native
+    def onIgnoreTag(tag: String, html: String, options: IsClosing): String
     
-    def remove(html: String): String = js.native
+    def remove(html: String): String
   }
   object OnIgnoreTag {
     

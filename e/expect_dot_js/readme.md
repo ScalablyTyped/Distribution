@@ -11,8 +11,8 @@ BDD style assertions for node and the browser.
 | Full name          | expect.js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 176 |
-| # downloads        | 7542677 |
+| # dependents       | 179 |
+| # downloads        | 7049712 |
 | # stars            | 23 |
 
 ## Links

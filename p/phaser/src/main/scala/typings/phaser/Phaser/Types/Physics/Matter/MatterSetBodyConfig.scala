@@ -2,81 +2,79 @@ package typings.phaser.Phaser.Types.Physics.Matter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatterSetBodyConfig extends StObject {
   
   /**
     * Should the new body be automatically added to the world?
     */
-  var addToWorld: js.UndefOr[Boolean] = js.native
+  var addToWorld: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used by the `fromVerts` shape. Flag internal edges (coincident part edges)
     */
-  var flagInternal: js.UndefOr[Boolean] = js.native
+  var flagInternal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The height of the body.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The max sizes of the body. Used by the `circle` shape.
     */
-  var maxSides: js.UndefOr[Double] = js.native
+  var maxSides: js.UndefOr[Double] = js.undefined
   
   /**
     * Used by the `fromVerts` shape. During decomposition discard parts that have an area less than this.
     */
-  var minimumArea: js.UndefOr[Double] = js.native
+  var minimumArea: js.UndefOr[Double] = js.undefined
   
   /**
     * The radius of the body. Used by `circle` and `polygon` shapes.
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * Used by the `fromVerts` shape. Whether Matter.js will discard collinear edges (to improve performance).
     */
-  var removeCollinear: js.UndefOr[Double] = js.native
+  var removeCollinear: js.UndefOr[Double] = js.undefined
   
   /**
     * Used by the `polygon` shape. The number of sides the polygon will have.
     */
-  var sides: js.UndefOr[Double] = js.native
+  var sides: js.UndefOr[Double] = js.undefined
   
   /**
     * Used by the `trapezoid` shape. The slope of the trapezoid. 0 creates a rectangle, while 1 creates a triangle. Positive values make the top side shorter, while negative values make the bottom side shorter.
     */
-  var slope: js.UndefOr[Double] = js.native
+  var slope: js.UndefOr[Double] = js.undefined
   
   /**
     * The shape type. Either `rectangle`, `circle`, `trapezoid`, `polygon`, `fromVertices`, `fromVerts` or `fromPhysicsEditor`.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Used by the `fromVerts` shape. The vertices data. Either a path string or an array of vertices.
     */
-  var verts: js.UndefOr[String | js.Array[_]] = js.native
+  var verts: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
   /**
     * The width of the body.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * The horizontal world position to place the body at.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * The vertical world position to place the body at.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object MatterSetBodyConfig {
   
@@ -150,7 +148,7 @@ object MatterSetBodyConfig {
     def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setVerts(value: String | js.Array[_]): Self = StObject.set(x, "verts", value.asInstanceOf[js.Any])
+    def setVerts(value: String | js.Array[js.Any]): Self = StObject.set(x, "verts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVertsUndefined: Self = StObject.set(x, "verts", js.undefined)

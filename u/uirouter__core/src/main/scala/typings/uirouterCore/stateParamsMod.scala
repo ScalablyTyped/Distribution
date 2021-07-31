@@ -5,7 +5,6 @@ import typings.uirouterCore.commonCommonMod.Obj
 import typings.uirouterCore.stateObjectMod.StateObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateParamsMod {
@@ -13,7 +12,8 @@ object stateParamsMod {
   @JSImport("@uirouter/core/lib/params/stateParams", "StateParams")
   @js.native
   class StateParams ()
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     def this(params: Obj) = this()
     
     /**

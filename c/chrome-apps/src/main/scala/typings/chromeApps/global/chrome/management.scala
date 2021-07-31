@@ -6,9 +6,9 @@ import typings.chromeApps.chromeAppsStrings.OPEN_AS_PINNED_TAB
 import typings.chromeApps.chromeAppsStrings.OPEN_AS_REGULAR_TAB
 import typings.chromeApps.chromeAppsStrings.OPEN_AS_WINDOW
 import typings.chromeApps.chromeAppsStrings.OPEN_FULL_SCREEN
+import typings.chromeApps.chromeAppsStrings.`extension`
 import typings.chromeApps.chromeAppsStrings.admin_
 import typings.chromeApps.chromeAppsStrings.development_
-import typings.chromeApps.chromeAppsStrings.extension
 import typings.chromeApps.chromeAppsStrings.hosted_app
 import typings.chromeApps.chromeAppsStrings.legacy_packaged_app
 import typings.chromeApps.chromeAppsStrings.normal_
@@ -20,7 +20,6 @@ import typings.chromeApps.chromeAppsStrings.theme
 import typings.chromeApps.chromeAppsStrings.unknown__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -34,6 +33,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that are installed and running.
   */
 object management {
+  
+  @JSGlobal("chrome.management")
+  @js.native
+  val ^ : js.Any = js.native
   
   object ExtensionDisabledReason {
     
@@ -99,9 +102,9 @@ object management {
     
     @JSGlobal("chrome.management.ExtensionType.EXTENSION")
     @js.native
-    def EXTENSION: extension = js.native
+    def EXTENSION: `extension` = js.native
     @scala.inline
-    def EXTENSION_=(x: extension): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXTENSION")(x.asInstanceOf[js.Any])
+    def EXTENSION_=(x: `extension`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXTENSION")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.management.ExtensionType.HOSTED_APP")
     @js.native
@@ -166,12 +169,10 @@ object management {
     * @example
     * chrome.management.getPermissionWarningsByManifest(JSON.stringify(chrome.runtime.getManifest()), (warnings) => { *Do something here* });
     */
-  @JSGlobal("chrome.management.getPermissionWarningsByManifest")
-  @js.native
-  def getPermissionWarningsByManifest(manifestStr: String): Unit = js.native
-  @JSGlobal("chrome.management.getPermissionWarningsByManifest")
-  @js.native
-  def getPermissionWarningsByManifest(manifestStr: String, callback: js.Function1[/* permissionWarnings */ js.Array[String], Unit]): Unit = js.native
+  @scala.inline
+  def getPermissionWarningsByManifest(manifestStr: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPermissionWarningsByManifest")(manifestStr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getPermissionWarningsByManifest(manifestStr: String, callback: js.Function1[/* permissionWarnings */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPermissionWarningsByManifest")(manifestStr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns information about the calling extension, app, or theme. Note: This function can be used without requesting the 'management' permission in the manifest.
@@ -179,12 +180,10 @@ object management {
     * @param [callback] If you specify the callback parameter, it should be a function that looks like this:
     * function( ExtensionInfo result) {...};
     */
-  @JSGlobal("chrome.management.getSelf")
-  @js.native
-  def getSelf(): Unit = js.native
-  @JSGlobal("chrome.management.getSelf")
-  @js.native
-  def getSelf(callback: js.Function1[/* result */ ExtensionInfo, Unit]): Unit = js.native
+  @scala.inline
+  def getSelf(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelf")().asInstanceOf[Unit]
+  @scala.inline
+  def getSelf(callback: js.Function1[/* result */ ExtensionInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelf")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Uninstalls the calling extension.
@@ -193,16 +192,12 @@ object management {
     * @param [options] Optional unstall options
     * @param [callback]
     */
-  @JSGlobal("chrome.management.uninstallSelf")
-  @js.native
-  def uninstallSelf(): Unit = js.native
-  @JSGlobal("chrome.management.uninstallSelf")
-  @js.native
-  def uninstallSelf(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.management.uninstallSelf")
-  @js.native
-  def uninstallSelf(options: UninstallOptions): Unit = js.native
-  @JSGlobal("chrome.management.uninstallSelf")
-  @js.native
-  def uninstallSelf(options: UninstallOptions, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def uninstallSelf(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstallSelf")().asInstanceOf[Unit]
+  @scala.inline
+  def uninstallSelf(options: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uninstallSelf")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def uninstallSelf(options: UninstallOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstallSelf")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def uninstallSelf(options: UninstallOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uninstallSelf")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

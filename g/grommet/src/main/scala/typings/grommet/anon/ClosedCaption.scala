@@ -3,27 +3,25 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.ColorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClosedCaption extends StObject {
   
-  var closedCaption: js.UndefOr[js.Any] = js.native
+  var closedCaption: js.UndefOr[js.Any] = js.undefined
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var configure: js.UndefOr[js.Any] = js.native
+  var configure: js.UndefOr[js.Any] = js.undefined
   
-  var fullScreen: js.UndefOr[js.Any] = js.native
+  var fullScreen: js.UndefOr[js.Any] = js.undefined
   
-  var pause: js.UndefOr[js.Any] = js.native
+  var pause: js.UndefOr[js.Any] = js.undefined
   
-  var play: js.UndefOr[js.Any] = js.native
+  var play: js.UndefOr[js.Any] = js.undefined
   
-  var reduceVolume: js.UndefOr[js.Any] = js.native
+  var reduceVolume: js.UndefOr[js.Any] = js.undefined
   
-  var volume: js.UndefOr[js.Any] = js.native
+  var volume: js.UndefOr[js.Any] = js.undefined
 }
 object ClosedCaption {
   

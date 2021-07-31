@@ -3,15 +3,13 @@ package typings.fsExtra.anon
 import typings.std.Int16Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferInt16Array extends StObject {
   
-  var buffer: Int16Array = js.native
+  var buffer: Int16Array
   
-  var bytesRead: Double = js.native
+  var bytesRead: Double
 }
 object BufferInt16Array {
   

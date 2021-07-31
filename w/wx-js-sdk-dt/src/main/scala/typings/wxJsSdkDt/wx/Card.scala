@@ -2,18 +2,16 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 卡券对象
   */
-@js.native
 trait Card extends StObject {
   
-  var cardExt: String = js.native
+  var cardExt: String
   
-  var cardId: String = js.native
+  var cardId: String
 }
 object Card {
   

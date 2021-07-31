@@ -9,123 +9,123 @@ import typings.reactNativeMaps.anon.`0`
 import typings.reactNativeMaps.reactNativeMapsStrings.google
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapViewProps extends ViewProps {
+trait MapViewProps
+  extends StObject
+     with ViewProps {
   
-  var cacheEnabled: js.UndefOr[Boolean] = js.native
+  var cacheEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var camera: js.UndefOr[Camera] = js.native
+  var camera: js.UndefOr[Camera] = js.undefined
   
-  var compassOffset: js.UndefOr[Point] = js.native
+  var compassOffset: js.UndefOr[Point] = js.undefined
   
-  var customMapStyle: js.UndefOr[js.Array[MapStyleElement]] = js.native
+  var customMapStyle: js.UndefOr[js.Array[MapStyleElement]] = js.undefined
   
-  var customMapStyleString: js.UndefOr[String] = js.native
+  var customMapStyleString: js.UndefOr[String] = js.undefined
   
-  var followsUserLocation: js.UndefOr[Boolean] = js.native
+  var followsUserLocation: js.UndefOr[Boolean] = js.undefined
   
-  var initialCamera: js.UndefOr[Camera] = js.native
+  var initialCamera: js.UndefOr[Camera] = js.undefined
   
-  var initialRegion: js.UndefOr[Region] = js.native
+  var initialRegion: js.UndefOr[Region] = js.undefined
   
-  var kmlSrc: js.UndefOr[String] = js.native
+  var kmlSrc: js.UndefOr[String] = js.undefined
   
-  var legalLabelInsets: js.UndefOr[EdgeInsets] = js.native
+  var legalLabelInsets: js.UndefOr[EdgeInsets] = js.undefined
   
-  var liteMode: js.UndefOr[Boolean] = js.native
+  var liteMode: js.UndefOr[Boolean] = js.undefined
   
-  var loadingBackgroundColor: js.UndefOr[String] = js.native
+  var loadingBackgroundColor: js.UndefOr[String] = js.undefined
   
-  var loadingEnabled: js.UndefOr[Boolean] = js.native
+  var loadingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var loadingIndicatorColor: js.UndefOr[String] = js.native
+  var loadingIndicatorColor: js.UndefOr[String] = js.undefined
   
-  var mapPadding: js.UndefOr[EdgePadding] = js.native
+  var mapPadding: js.UndefOr[EdgePadding] = js.undefined
   
-  var mapType: js.UndefOr[MapTypes] = js.native
+  var mapType: js.UndefOr[MapTypes] = js.undefined
   
-  var maxDelta: js.UndefOr[Double] = js.native
+  var maxDelta: js.UndefOr[Double] = js.undefined
   
-  var maxZoomLevel: js.UndefOr[Double] = js.native
+  var maxZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var minDelta: js.UndefOr[Double] = js.native
+  var minDelta: js.UndefOr[Double] = js.undefined
   
-  var minZoomLevel: js.UndefOr[Double] = js.native
+  var minZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var moveOnMarkerPress: js.UndefOr[Boolean] = js.native
+  var moveOnMarkerPress: js.UndefOr[Boolean] = js.undefined
   
-  var onCalloutPress: js.UndefOr[js.Function1[/* event */ MapEvent[`0`], Unit]] = js.native
+  var onCalloutPress: js.UndefOr[js.Function1[/* event */ MapEvent[`0`], Unit]] = js.undefined
   
-  var onKmlReady: js.UndefOr[js.Function1[/* values */ KmlMapEvent, Unit]] = js.native
+  var onKmlReady: js.UndefOr[js.Function1[/* values */ KmlMapEvent, Unit]] = js.undefined
   
-  var onLongPress: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   
-  var onMapReady: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMapReady: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onMarkerDeselect: js.UndefOr[js.Function1[/* event */ MapEvent[ActionId], Unit]] = js.native
+  var onMarkerDeselect: js.UndefOr[js.Function1[/* event */ MapEvent[ActionId], Unit]] = js.undefined
   
-  var onMarkerDrag: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.native
+  var onMarkerDrag: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   
-  var onMarkerDragEnd: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.native
+  var onMarkerDragEnd: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   
-  var onMarkerDragStart: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.native
+  var onMarkerDragStart: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   
-  var onMarkerPress: js.UndefOr[js.Function1[/* event */ MapEvent[Action], Unit]] = js.native
+  var onMarkerPress: js.UndefOr[js.Function1[/* event */ MapEvent[Action], Unit]] = js.undefined
   
-  var onMarkerSelect: js.UndefOr[js.Function1[/* event */ MapEvent[Id], Unit]] = js.native
+  var onMarkerSelect: js.UndefOr[js.Function1[/* event */ MapEvent[Id], Unit]] = js.undefined
   
-  var onPanDrag: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.native
+  var onPanDrag: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   
-  var onPoiClick: js.UndefOr[js.Function1[/* event */ MapEvent[Name], Unit]] = js.native
+  var onPoiClick: js.UndefOr[js.Function1[/* event */ MapEvent[Name], Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   
-  var onRegionChange: js.UndefOr[js.Function1[/* region */ Region, Unit]] = js.native
+  var onRegionChange: js.UndefOr[js.Function1[/* region */ Region, Unit]] = js.undefined
   
-  var onRegionChangeComplete: js.UndefOr[js.Function1[/* region */ Region, Unit]] = js.native
+  var onRegionChangeComplete: js.UndefOr[js.Function1[/* region */ Region, Unit]] = js.undefined
   
-  var onUserLocationChange: js.UndefOr[js.Function1[/* event */ EventUserLocation, Unit]] = js.native
+  var onUserLocationChange: js.UndefOr[js.Function1[/* event */ EventUserLocation, Unit]] = js.undefined
   
-  var pitchEnabled: js.UndefOr[Boolean] = js.native
+  var pitchEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var provider: js.UndefOr[google | Null] = js.native
+  var provider: js.UndefOr[google | Null] = js.undefined
   
-  var region: js.UndefOr[Region] = js.native
+  var region: js.UndefOr[Region] = js.undefined
   
-  var rotateEnabled: js.UndefOr[Boolean] = js.native
+  var rotateEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var scrollEnabled: js.UndefOr[Boolean] = js.native
+  var scrollEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var showsBuildings: js.UndefOr[Boolean] = js.native
+  var showsBuildings: js.UndefOr[Boolean] = js.undefined
   
-  var showsCompass: js.UndefOr[Boolean] = js.native
+  var showsCompass: js.UndefOr[Boolean] = js.undefined
   
-  var showsIndoorLevelPicker: js.UndefOr[Boolean] = js.native
+  var showsIndoorLevelPicker: js.UndefOr[Boolean] = js.undefined
   
-  var showsIndoors: js.UndefOr[Boolean] = js.native
+  var showsIndoors: js.UndefOr[Boolean] = js.undefined
   
-  var showsMyLocationButton: js.UndefOr[Boolean] = js.native
+  var showsMyLocationButton: js.UndefOr[Boolean] = js.undefined
   
-  var showsPointsOfInterest: js.UndefOr[Boolean] = js.native
+  var showsPointsOfInterest: js.UndefOr[Boolean] = js.undefined
   
-  var showsScale: js.UndefOr[Boolean] = js.native
+  var showsScale: js.UndefOr[Boolean] = js.undefined
   
-  var showsTraffic: js.UndefOr[Boolean] = js.native
+  var showsTraffic: js.UndefOr[Boolean] = js.undefined
   
-  var showsUserLocation: js.UndefOr[Boolean] = js.native
+  var showsUserLocation: js.UndefOr[Boolean] = js.undefined
   
-  var toolbarEnabled: js.UndefOr[Boolean] = js.native
+  var toolbarEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var userLocationAnnotationTitle: js.UndefOr[String] = js.native
+  var userLocationAnnotationTitle: js.UndefOr[String] = js.undefined
   
-  var zoomControlEnabled: js.UndefOr[Boolean] = js.native
+  var zoomControlEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var zoomEnabled: js.UndefOr[Boolean] = js.native
+  var zoomEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var zoomTapEnabled: js.UndefOr[Boolean] = js.native
+  var zoomTapEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object MapViewProps {
   

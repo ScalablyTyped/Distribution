@@ -2,30 +2,28 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkAsTaskRuleAction extends StObject {
   
-  val ActionType: OlRuleActionType = js.native
+  val ActionType: OlRuleActionType
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var FlagTo: String = js.native
+  var FlagTo: String
   
-  var MarkInterval: OlMarkInterval = js.native
+  var MarkInterval: OlMarkInterval
   
   @JSName("Outlook.MarkAsTaskRuleAction_typekey")
-  var OutlookDotMarkAsTaskRuleAction_typekey: MarkAsTaskRuleAction = js.native
+  var OutlookDotMarkAsTaskRuleAction_typekey: MarkAsTaskRuleAction
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object MarkAsTaskRuleAction {
   

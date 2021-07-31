@@ -4,7 +4,6 @@ import typings.minify.anon.MaxSize
 import typings.terser.mod.MinifyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,40 +12,41 @@ object mod {
     * A minifier of js, css, html and img files.
     * @async
     */
+  @scala.inline
+  def apply(name: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(name: String, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
   @JSImport("minify", JSImport.Namespace)
   @js.native
-  def apply(name: String): js.Promise[String] = js.native
-  @JSImport("minify", JSImport.Namespace)
-  @js.native
-  def apply(name: String, options: Options): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Full documentation for options that each file type accepts
     * can be found on the pages of the libraries used by minify to process the files
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * see {@link https://github.com/jakubpawlowicz/clean-css}
       */
-    var css: js.UndefOr[typings.cleanCss.mod.Options] = js.native
+    var css: js.UndefOr[typings.cleanCss.mod.Options] = js.undefined
     
     /**
       * see {@link https://github.com/kangax/html-minifier}
       */
-    var html: js.UndefOr[typings.htmlMinifierTerser.mod.Options] = js.native
+    var html: js.UndefOr[typings.htmlMinifierTerser.mod.Options] = js.undefined
     
     /**
       * see {@link https://github.com/Filirom1/css-base64-images}
       */
-    var img: js.UndefOr[MaxSize] = js.native
+    var img: js.UndefOr[MaxSize] = js.undefined
     
     /**
       * see {@link https://github.com/terser/terser}
       */
     @JSName("js")
-    var js_ : js.UndefOr[MinifyOptions] = js.native
+    var js_ : js.UndefOr[MinifyOptions] = js.undefined
   }
   object Options {
     

@@ -8,14 +8,15 @@ import typings.googleGax.gaxMod.CallOptions
 import typings.googleGax.pageDescriptorMod.PageDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagedApiCallerMod {
   
   @JSImport("google-gax/build/src/paginationCalls/pagedApiCaller", "PagedApiCaller")
   @js.native
-  class PagedApiCaller protected () extends APICaller {
+  class PagedApiCaller protected ()
+    extends StObject
+       with APICaller {
     /**
       * Creates an API caller that returns a stream to performs page-streaming.
       *

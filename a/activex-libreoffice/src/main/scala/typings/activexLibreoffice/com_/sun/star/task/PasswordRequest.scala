@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.task
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It is supported by {@link InteractionHandler} service, and can be used to interact for a password. Continuations for using with the mentioned service
   * are Abort and Approve.
   */
-@js.native
-trait PasswordRequest extends ClassifiedInteractionRequest {
+trait PasswordRequest
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /**
     * the mode in which password should be asked
     * @see com.sun.star.task.PasswordRequestMode
     */
-  var Mode: PasswordRequestMode = js.native
+  var Mode: PasswordRequestMode
 }
 object PasswordRequest {
   

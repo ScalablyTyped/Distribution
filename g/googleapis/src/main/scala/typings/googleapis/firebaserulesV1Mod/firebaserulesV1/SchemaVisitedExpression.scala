@@ -2,24 +2,22 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Store the position and access outcome for an expression visited in rules.
   */
-@js.native
 trait SchemaVisitedExpression extends StObject {
   
   /**
     * Position in the `Source` or `Ruleset` where an expression was visited.
     */
-  var sourcePosition: js.UndefOr[SchemaSourcePosition] = js.native
+  var sourcePosition: js.UndefOr[SchemaSourcePosition] = js.undefined
   
   /**
     * The evaluated value for the visited expression, e.g. true/false
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object SchemaVisitedExpression {
   

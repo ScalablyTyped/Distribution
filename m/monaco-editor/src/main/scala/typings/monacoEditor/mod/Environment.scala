@@ -3,17 +3,15 @@ package typings.monacoEditor.mod
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
-  var getWorker: js.UndefOr[js.Function2[/* workerId */ String, /* label */ String, Worker]] = js.native
+  var getWorker: js.UndefOr[js.Function2[/* workerId */ String, /* label */ String, Worker]] = js.undefined
   
-  var getWorkerUrl: js.UndefOr[js.Function2[/* workerId */ String, /* label */ String, String]] = js.native
+  var getWorkerUrl: js.UndefOr[js.Function2[/* workerId */ String, /* label */ String, String]] = js.undefined
 }
 object Environment {
   

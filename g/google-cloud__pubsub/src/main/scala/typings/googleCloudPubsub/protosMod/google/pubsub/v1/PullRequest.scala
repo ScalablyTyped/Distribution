@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a PullRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new PullRequest.
   * @param [properties] Properties to set
   */
-class PullRequest () extends IPullRequest {
+class PullRequest ()
+  extends StObject
+     with IPullRequest {
   def this(properties: IPullRequest) = this()
   
   /** PullRequest maxMessages. */
@@ -40,18 +41,20 @@ class PullRequest () extends IPullRequest {
 }
 object PullRequest {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new PullRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns PullRequest instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.create")
-  @js.native
-  def create(): PullRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.create")
-  @js.native
-  def create(properties: IPullRequest): PullRequest = js.native
+  @scala.inline
+  def create(): PullRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PullRequest]
+  @scala.inline
+  def create(properties: IPullRequest): PullRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PullRequest]
   
   /**
     * Decodes a PullRequest message from the specified reader or buffer.
@@ -62,18 +65,14 @@ object PullRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.decode")
-  @js.native
-  def decode(reader: Reader): PullRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): PullRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): PullRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): PullRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): PullRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PullRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): PullRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PullRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): PullRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PullRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): PullRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PullRequest]
   
   /**
     * Decodes a PullRequest message from the specified reader or buffer, length delimited.
@@ -83,12 +82,10 @@ object PullRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): PullRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): PullRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): PullRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PullRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): PullRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PullRequest]
   
   /**
     * Encodes the specified PullRequest message. Does not implicitly {@link google.pubsub.v1.PullRequest.verify|verify} messages.
@@ -97,12 +94,10 @@ object PullRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.encode")
-  @js.native
-  def encode(message: IPullRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.encode")
-  @js.native
-  def encode(message: IPullRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IPullRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IPullRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified PullRequest message, length delimited. Does not implicitly {@link google.pubsub.v1.PullRequest.verify|verify} messages.
@@ -111,12 +106,10 @@ object PullRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IPullRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IPullRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IPullRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IPullRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a PullRequest message from a plain object. Also converts values to their respective internal types.
@@ -124,9 +117,8 @@ object PullRequest {
     * @returns PullRequest
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): PullRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): PullRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PullRequest]
   
   /**
     * Creates a plain object from a PullRequest message. Also converts values to other types if specified.
@@ -135,12 +127,10 @@ object PullRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.toObject")
-  @js.native
-  def toObject(message: PullRequest): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.toObject")
-  @js.native
-  def toObject(message: PullRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: PullRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: PullRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a PullRequest message.
@@ -148,7 +138,6 @@ object PullRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PullRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

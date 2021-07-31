@@ -2,7 +2,6 @@ package typings.pWaitFor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,12 +19,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-wait-for", JSImport.Namespace)
-  @js.native
-  def apply(condition: js.Function0[js.Thenable[Boolean] | Boolean]): js.Promise[Unit] = js.native
-  @JSImport("p-wait-for", JSImport.Namespace)
-  @js.native
-  def apply(condition: js.Function0[js.Thenable[Boolean] | Boolean], options: Options): js.Promise[Unit] = js.native
+  @scala.inline
+  def apply(condition: js.Function0[js.Thenable[Boolean] | Boolean]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(condition: js.Function0[js.Thenable[Boolean] | Boolean], options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("p-wait-for", JSImport.Namespace)
   @js.native
@@ -43,20 +40,19 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pWaitFor */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Number of milliseconds to wait before retrying `condition`.
     		@default 20
     		*/
-    val interval: js.UndefOr[Double] = js.native
+    val interval: js.UndefOr[Double] = js.undefined
     
     /**
     		Number of milliseconds to wait before automatically rejecting.
     		@default Infinity
     		*/
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

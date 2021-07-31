@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DropDownListFilteringEvent extends DropDownListEvent {
+trait DropDownListFilteringEvent
+  extends StObject
+     with DropDownListEvent {
   
-  var filter: js.UndefOr[js.Any] = js.native
+  var filter: js.UndefOr[js.Any] = js.undefined
 }
 object DropDownListFilteringEvent {
   

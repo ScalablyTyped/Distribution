@@ -5,26 +5,37 @@ import typings.std.Error
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autoRenderMod {
+  
+  @JSImport("katex/dist/contrib/auto-render", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Auto-render TeX expressions in HTML element
     * @param elem HTML element to auto-render
     * @param options Render options
     */
-  @JSImport("katex/dist/contrib/auto-render", JSImport.Default)
-  @js.native
-  def default(elem: HTMLElement): Unit = js.native
-  @JSImport("katex/dist/contrib/auto-render", JSImport.Default)
-  @js.native
-  def default(elem: HTMLElement, options: RenderMathInElementOptions): Unit = js.native
+  @scala.inline
+  def default(elem: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def default(elem: HTMLElement, options: RenderMathInElementOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type RenderMathInElementOptions = KatexOptions with RenderMathInElementSpecificOptions
+  trait RenderMathInElementOptions
+    extends StObject
+       with KatexOptions
+       with RenderMathInElementSpecificOptions
+  object RenderMathInElementOptions {
+    
+    @scala.inline
+    def apply(): RenderMathInElementOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RenderMathInElementOptions]
+    }
+  }
   
-  @js.native
   trait RenderMathInElementSpecificOptions extends StObject {
     
     /**
@@ -36,7 +47,7 @@ object autoRenderMod {
       *   {left: "\\[", right: "\\]", display: true}
       * ]
       */
-    var delimiters: js.UndefOr[js.Array[RenderMathInElementSpecificOptionsDelimiters]] = js.native
+    var delimiters: js.UndefOr[js.Array[RenderMathInElementSpecificOptionsDelimiters]] = js.undefined
     
     /**
       * A callback method returning a message and an error stack in case of an critical error during rendering
@@ -45,14 +56,14 @@ object autoRenderMod {
       *
       * @default console.error
       */
-    var errorCallback: js.UndefOr[js.Function2[/* msg */ String, /* err */ Error, Unit]] = js.native
+    var errorCallback: js.UndefOr[js.Function2[/* msg */ String, /* err */ Error, Unit]] = js.undefined
     
     /**
       * A list of DOM node class names to ignore when recursing through
       *
       * @default []
       */
-    var ignoredClasses: js.UndefOr[js.Array[String]] = js.native
+    var ignoredClasses: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A list of DOM node types to ignore when recursing through
@@ -63,7 +74,7 @@ object autoRenderMod {
         js.Array[
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object RenderMathInElementSpecificOptions {
     
@@ -117,23 +128,22 @@ object autoRenderMod {
     }
   }
   
-  @js.native
   trait RenderMathInElementSpecificOptionsDelimiters extends StObject {
     
     /**
       * A boolean of whether the math in the expression should be rendered in display mode or not
       */
-    var display: Boolean = js.native
+    var display: Boolean
     
     /**
       * A string which starts the math expression (i.e. the left delimiter)
       */
-    var left: String = js.native
+    var left: String
     
     /**
       * A string which ends the math expression (i.e. the right delimiter)
       */
-    var right: String = js.native
+    var right: String
   }
   object RenderMathInElementSpecificOptionsDelimiters {
     

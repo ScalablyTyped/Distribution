@@ -7,12 +7,10 @@ import typings.toJsonSchema.toJsonSchemaStrings.tuple
 import typings.toJsonSchema.toJsonSchemaStrings.uniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AdditionalProperties extends StObject {
     
     /**
@@ -22,7 +20,7 @@ object anon {
       *
       * @default true
       */
-    var additionalProperties: js.UndefOr[Boolean] = js.native
+    var additionalProperties: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By providing `postProcessFnc`, you can modify or replace generated
@@ -43,7 +41,7 @@ object anon {
           /* defaultFnc */ js.Function2[/* schema */ JSONSchema3or4, /* obj */ js.Any, JSONSchema3or4], 
           JSONSchema3or4
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * By providing custom function you will be able to modify any object
@@ -62,7 +60,7 @@ object anon {
           /* defaultFunc */ js.Function1[/* obj */ js.Any, JSONSchema3or4], 
           JSONSchema3or4
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object AdditionalProperties {
     
@@ -99,7 +97,6 @@ object anon {
     }
   }
   
-  @js.native
   trait DetectFormat extends StObject {
     
     /**
@@ -122,7 +119,7 @@ object anon {
       *
       * @default true
       */
-    var detectFormat: js.UndefOr[Boolean] = js.native
+    var detectFormat: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By providing custom function you will be able to modify any string
@@ -141,7 +138,7 @@ object anon {
           /* defaultFnc */ js.Function1[/* value */ String, JSONSchema3or4], 
           JSONSchema3or4
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object DetectFormat {
     
@@ -170,7 +167,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Mode extends StObject {
     
     /**
@@ -188,7 +184,7 @@ object anon {
       *
       * @default 'all'
       */
-    var mode: js.UndefOr[all | first | uniform | tuple] = js.native
+    var mode: js.UndefOr[all | first | uniform | tuple] = js.undefined
   }
   object Mode {
     

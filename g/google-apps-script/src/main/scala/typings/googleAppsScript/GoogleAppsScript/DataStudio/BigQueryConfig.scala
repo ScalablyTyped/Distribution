@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,22 +19,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .addQueryParameter('dob', types.STRING, '01011990')
   *       .build();
   */
-@js.native
 trait BigQueryConfig extends StObject {
   
-  def addQueryParameter(name: String, `type`: BigQueryParameterType, value: String): BigQueryConfig = js.native
+  def addQueryParameter(name: String, `type`: BigQueryParameterType, value: String): BigQueryConfig
   
-  def build(): Config = js.native
+  def build(): Config
   
-  def printJson(): String = js.native
+  def printJson(): String
   
-  def setAccessToken(accessToken: String): BigQueryConfig = js.native
+  def setAccessToken(accessToken: String): BigQueryConfig
   
-  def setBillingProjectId(billingProjectId: String): BigQueryConfig = js.native
+  def setBillingProjectId(billingProjectId: String): BigQueryConfig
   
-  def setQuery(query: String): BigQueryConfig = js.native
+  def setQuery(query: String): BigQueryConfig
   
-  def setUseStandardSql(useStandardSql: Boolean): BigQueryConfig = js.native
+  def setUseStandardSql(useStandardSql: Boolean): BigQueryConfig
 }
 object BigQueryConfig {
   

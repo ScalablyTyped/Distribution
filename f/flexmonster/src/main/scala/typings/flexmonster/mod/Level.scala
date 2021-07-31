@@ -2,15 +2,13 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Level extends StObject {
   
-  var caption: String = js.native
+  var caption: String
   
-  var uniqueName: String = js.native
+  var uniqueName: String
 }
 object Level {
   

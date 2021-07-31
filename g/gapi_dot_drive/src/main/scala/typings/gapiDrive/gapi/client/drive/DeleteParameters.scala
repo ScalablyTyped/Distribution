@@ -2,15 +2,13 @@ package typings.gapiDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteParameters extends StObject {
   
-  var fileId: String = js.native
+  var fileId: String
   
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
 }
 object DeleteParameters {
   

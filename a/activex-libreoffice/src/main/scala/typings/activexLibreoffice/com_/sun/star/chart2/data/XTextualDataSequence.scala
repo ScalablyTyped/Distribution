@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows access to a one-dimensional sequence of strings. */
-@js.native
-trait XTextualDataSequence extends XInterface {
+trait XTextualDataSequence
+  extends StObject
+     with XInterface {
   
   /** retrieves the data as strings */
-  val TextualData: SafeArray[String] = js.native
+  val TextualData: SafeArray[String]
   
   /** retrieves the data as strings */
-  def getTextualData(): SafeArray[String] = js.native
+  def getTextualData(): SafeArray[String]
 }
 object XTextualDataSequence {
   

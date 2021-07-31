@@ -2,20 +2,19 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _Provider extends StObject
 object _Provider {
   
   @scala.inline
-  def ClassProvider(provide: js.Any, useClass: typings.angularCore.mod.Type[_]): typings.angularCore.mod.ClassProvider = {
+  def ClassProvider(provide: js.Any, useClass: Type[js.Any]): typings.angularCore.mod.ClassProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCore.mod.ClassProvider]
   }
   
   @scala.inline
-  def ConstructorProvider(provide: typings.angularCore.mod.Type[_]): typings.angularCore.mod.ConstructorProvider = {
+  def ConstructorProvider(provide: Type[js.Any]): typings.angularCore.mod.ConstructorProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCore.mod.ConstructorProvider]
   }

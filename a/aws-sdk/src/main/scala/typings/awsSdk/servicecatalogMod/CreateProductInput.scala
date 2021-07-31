@@ -2,71 +2,69 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProductInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The description of the product.
     */
-  var Description: js.UndefOr[ProductViewShortDescription] = js.native
+  var Description: js.UndefOr[ProductViewShortDescription] = js.undefined
   
   /**
     * The distributor of the product.
     */
-  var Distributor: js.UndefOr[ProductViewOwner] = js.native
+  var Distributor: js.UndefOr[ProductViewOwner] = js.undefined
   
   /**
     * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
     */
-  var IdempotencyToken: typings.awsSdk.servicecatalogMod.IdempotencyToken = js.native
+  var IdempotencyToken: typings.awsSdk.servicecatalogMod.IdempotencyToken
   
   /**
     * The name of the product.
     */
-  var Name: ProductViewName = js.native
+  var Name: ProductViewName
   
   /**
     * The owner of the product.
     */
-  var Owner: ProductViewOwner = js.native
+  var Owner: ProductViewOwner
   
   /**
     * The type of product.
     */
-  var ProductType: typings.awsSdk.servicecatalogMod.ProductType = js.native
+  var ProductType: typings.awsSdk.servicecatalogMod.ProductType
   
   /**
     * The configuration of the provisioning artifact. The info field accepts ImportFromPhysicalID.
     */
-  var ProvisioningArtifactParameters: ProvisioningArtifactProperties = js.native
+  var ProvisioningArtifactParameters: ProvisioningArtifactProperties
   
   /**
     * The support information about the product.
     */
-  var SupportDescription: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportDescription] = js.native
+  var SupportDescription: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportDescription] = js.undefined
   
   /**
     * The contact email for product support.
     */
-  var SupportEmail: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportEmail] = js.native
+  var SupportEmail: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportEmail] = js.undefined
   
   /**
     * The contact URL for product support.
     */
-  var SupportUrl: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportUrl] = js.native
+  var SupportUrl: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportUrl] = js.undefined
   
   /**
     * One or more tags.
     */
-  var Tags: js.UndefOr[AddTags] = js.native
+  var Tags: js.UndefOr[AddTags] = js.undefined
 }
 object CreateProductInput {
   

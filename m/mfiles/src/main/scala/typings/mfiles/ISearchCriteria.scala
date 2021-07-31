@@ -6,47 +6,45 @@ import typings.mfiles.MFiles.MFPredefinedSearchFilterType
 import typings.mfiles.MFiles.MFSearchFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISearchCriteria extends StObject {
   
-  var AdditionalConditions: ISearchConditionExs = js.native
+  var AdditionalConditions: ISearchConditionExs
   
-  def Clone(): ISearchCriteria = js.native
+  def Clone(): ISearchCriteria
   
-  var ExpandUI: Boolean = js.native
+  var ExpandUI: Boolean
   
-  var FacetFilterAsJSON: String = js.native
+  var FacetFilterAsJSON: String
   
-  var FacetFilterStatusFlags: MFFacetFilterStatusFlags = js.native
+  var FacetFilterStatusFlags: MFFacetFilterStatusFlags
   
-  var FirstCondition: ISearchConditionEx = js.native
+  var FirstCondition: ISearchConditionEx
   
-  var FullTextSearchFlags: MFFullTextSearchFlags = js.native
+  var FullTextSearchFlags: MFFullTextSearchFlags
   
-  var FullTextSearchString: String = js.native
+  var FullTextSearchString: String
   
   def GetAsSearchConditions(
     ForceGettingExpandedConds: Boolean,
     IncludeSearchRefinementConditions: Boolean,
     IncludePreviousBaseConditions: Boolean
-  ): ISearchConditions = js.native
+  ): ISearchConditions
   
-  var ObjectTypeCondition: ISearchConditionEx = js.native
+  var ObjectTypeCondition: ISearchConditionEx
   
-  var PredefinedSearchFilter: MFPredefinedSearchFilterType = js.native
+  var PredefinedSearchFilter: MFPredefinedSearchFilterType
   
-  var PreviousBaseConditions: ISearchConditions = js.native
+  var PreviousBaseConditions: ISearchConditions
   
-  var SearchFlags: MFSearchFlags = js.native
+  var SearchFlags: MFSearchFlags
   
-  var SearchRefinement: ISearchConditions = js.native
+  var SearchRefinement: ISearchConditions
   
-  var SearchWithinThisFolder: Boolean = js.native
+  var SearchWithinThisFolder: Boolean
   
-  var SecondCondition: ISearchConditionEx = js.native
+  var SecondCondition: ISearchConditionEx
 }
 object ISearchCriteria {
   

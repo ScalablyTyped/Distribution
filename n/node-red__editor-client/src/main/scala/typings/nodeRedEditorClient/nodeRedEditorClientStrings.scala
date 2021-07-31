@@ -4,7 +4,6 @@ import typings.nodeRedEditorClient.mod.NotificationType
 import typings.nodeRedEditorClient.mod.WidgetTypedInputType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeRedEditorClientStrings {
@@ -55,12 +54,16 @@ object nodeRedEditorClientStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait bin extends WidgetTypedInputType
+  sealed trait bin
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def bin: bin = "bin".asInstanceOf[bin]
   
   @js.native
-  sealed trait bool extends WidgetTypedInputType
+  sealed trait bool
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
   
@@ -75,7 +78,9 @@ object nodeRedEditorClientStrings {
   def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait compact extends NotificationType
+  sealed trait compact
+    extends StObject
+       with NotificationType
   @scala.inline
   def compact: compact = "compact".asInstanceOf[compact]
   
@@ -95,7 +100,9 @@ object nodeRedEditorClientStrings {
   def createSubflow: createSubflow = "createSubflow".asInstanceOf[createSubflow]
   
   @js.native
-  sealed trait date extends WidgetTypedInputType
+  sealed trait date
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
@@ -125,12 +132,16 @@ object nodeRedEditorClientStrings {
   def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
-  sealed trait env extends WidgetTypedInputType
+  sealed trait env
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def env: env = "env".asInstanceOf[env]
   
   @js.native
-  sealed trait error extends NotificationType
+  sealed trait error
+    extends StObject
+       with NotificationType
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -145,7 +156,9 @@ object nodeRedEditorClientStrings {
   def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait flow extends WidgetTypedInputType
+  sealed trait flow
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def flow: flow = "flow".asInstanceOf[flow]
   
@@ -155,7 +168,9 @@ object nodeRedEditorClientStrings {
   def getItemAt: getItemAt = "getItemAt".asInstanceOf[getItemAt]
   
   @js.native
-  sealed trait global extends WidgetTypedInputType
+  sealed trait global
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   
@@ -185,12 +200,16 @@ object nodeRedEditorClientStrings {
   def items: items = "items".asInstanceOf[items]
   
   @js.native
-  sealed trait json extends WidgetTypedInputType
+  sealed trait json
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait jsonata extends WidgetTypedInputType
+  sealed trait jsonata
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def jsonata: jsonata = "jsonata".asInstanceOf[jsonata]
   
@@ -215,7 +234,9 @@ object nodeRedEditorClientStrings {
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait msg extends WidgetTypedInputType
+  sealed trait msg
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def msg: msg = "msg".asInstanceOf[msg]
   
@@ -235,7 +256,9 @@ object nodeRedEditorClientStrings {
   def node_label_italic: node_label_italic = "node_label_italic".asInstanceOf[node_label_italic]
   
   @js.native
-  sealed trait num extends WidgetTypedInputType
+  sealed trait num
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def num: num = "num".asInstanceOf[num]
   
@@ -245,7 +268,9 @@ object nodeRedEditorClientStrings {
   def password: password = "password".asInstanceOf[password]
   
   @js.native
-  sealed trait re extends WidgetTypedInputType
+  sealed trait re
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def re: re = "re".asInstanceOf[re]
   
@@ -290,12 +315,16 @@ object nodeRedEditorClientStrings {
   def sort: sort = "sort".asInstanceOf[sort]
   
   @js.native
-  sealed trait str extends WidgetTypedInputType
+  sealed trait str
+    extends StObject
+       with WidgetTypedInputType
   @scala.inline
   def str: str = "str".asInstanceOf[str]
   
   @js.native
-  sealed trait success extends NotificationType
+  sealed trait success
+    extends StObject
+       with NotificationType
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
@@ -345,7 +374,9 @@ object nodeRedEditorClientStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait warning extends NotificationType
+  sealed trait warning
+    extends StObject
+       with NotificationType
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   

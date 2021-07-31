@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shard extends StObject {
   
   /** Output only. The total number of shards. */
-  var numShards: js.UndefOr[Double] = js.native
+  var numShards: js.UndefOr[Double] = js.undefined
   
   /** Output only. The index of the shard among all the shards. */
-  var shardIndex: js.UndefOr[Double] = js.native
+  var shardIndex: js.UndefOr[Double] = js.undefined
   
   /** Output only. Test targets for each shard. */
-  var testTargetsForShard: js.UndefOr[TestTargetsForShard] = js.native
+  var testTargetsForShard: js.UndefOr[TestTargetsForShard] = js.undefined
 }
 object Shard {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateSponsoredAttack extends StObject {
   
   /** The email of the user this incident was created for. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
 }
 object StateSponsoredAttack {
   

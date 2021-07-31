@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoleUsageType extends StObject {
   
   /**
     * The name of the Region where the service-linked role is being used.
     */
-  var Region: js.UndefOr[RegionNameType] = js.native
+  var Region: js.UndefOr[RegionNameType] = js.undefined
   
   /**
     * The name of the resource that is using the service-linked role.
     */
-  var Resources: js.UndefOr[ArnListType] = js.native
+  var Resources: js.UndefOr[ArnListType] = js.undefined
 }
 object RoleUsageType {
   

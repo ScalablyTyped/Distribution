@@ -2,21 +2,19 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePrivateVirtualInterfaceRequest extends StObject {
   
   /**
     * The ID of the connection.
     */
-  var connectionId: ConnectionId = js.native
+  var connectionId: ConnectionId
   
   /**
     * Information about the private virtual interface.
     */
-  var newPrivateVirtualInterface: NewPrivateVirtualInterface = js.native
+  var newPrivateVirtualInterface: NewPrivateVirtualInterface
 }
 object CreatePrivateVirtualInterfaceRequest {
   

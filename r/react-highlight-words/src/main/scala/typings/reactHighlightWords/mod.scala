@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,12 +15,11 @@ object mod {
   class default ()
     extends Component[HighlighterProps, js.Object, js.Any]
   
-  @js.native
   trait Chunk extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object Chunk {
     
@@ -42,18 +40,17 @@ object mod {
     }
   }
   
-  @js.native
   trait FindChunks extends StObject {
     
-    var autoEscape: js.UndefOr[Boolean] = js.native
+    var autoEscape: js.UndefOr[Boolean] = js.undefined
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var sanitize: js.UndefOr[js.Function1[/* text */ String, String]] = js.native
+    var sanitize: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
     
-    var searchWords: js.Array[String] = js.native
+    var searchWords: js.Array[String]
     
-    var textToHighlight: String = js.native
+    var textToHighlight: String
   }
   object FindChunks {
     
@@ -97,65 +94,65 @@ object mod {
   
   type Highlighter = Component[HighlighterProps, js.Object, js.Any]
   
-  @js.native
   trait HighlighterProps
-    extends /** Allows to pass through any parameter to wrapped component */
+    extends StObject
+       with /** Allows to pass through any parameter to wrapped component */
   /* index */ StringDictionary[js.Any] {
     
     /** The class name to be applied to an active match. Use along with activeIndex */
-    var activeClassName: js.UndefOr[String] = js.native
+    var activeClassName: js.UndefOr[String] = js.undefined
     
     /** Specify the match index that should be actively highlighted. Use along with activeClassName */
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
     /** The inline style to be applied to an active match. Use along with activeIndex */
-    var activeStyle: js.UndefOr[CSSProperties] = js.native
+    var activeStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /** Escape characters in searchWords which are meaningful in regular expressions */
-    var autoEscape: js.UndefOr[Boolean] = js.native
+    var autoEscape: js.UndefOr[Boolean] = js.undefined
     
     /** Search should be case sensitive; defaults to false */
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
     /** CSS class name applied to the outer/wrapper <span> */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Use a custom function to search for matching chunks. This makes it possible to use arbitrary logic
       * when looking for matches. See the default findChunks function in highlight-words-core for signature.
       * Have a look at the custom findChunks example on how to use it.
       */
-    var findChunks: js.UndefOr[js.Function1[/* options */ FindChunks, js.Array[Chunk]]] = js.native
+    var findChunks: js.UndefOr[js.Function1[/* options */ FindChunks, js.Array[Chunk]]] = js.undefined
     
     /** CSS class name applied to highlighted text */
-    var highlightClassName: js.UndefOr[String] = js.native
+    var highlightClassName: js.UndefOr[String] = js.undefined
     
     /** Inline styles applied to highlighted text */
-    var highlightStyle: js.UndefOr[CSSProperties] = js.native
+    var highlightStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Type of tag to wrap around highlighted matches; defaults to mark but can also be a React element
       * (class or functional)
       */
-    var highlightTag: js.UndefOr[String | ComponentType[_]] = js.native
+    var highlightTag: js.UndefOr[String | ComponentType[js.Any]] = js.undefined
     
     /**
       * Process each search word and text to highlight before comparing (eg remove accents); signature
       * (text: string): string
       */
-    var sanitize: js.UndefOr[js.Function1[/* text */ String, String]] = js.native
+    var sanitize: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
     
     /** Array of search words. The search terms are treated as RegExps unless autoEscape is set. */
-    var searchWords: js.Array[String] = js.native
+    var searchWords: js.Array[String]
     
     /** Text to highlight matches in */
-    var textToHighlight: String = js.native
+    var textToHighlight: String
     
     /** CSS class name applied to unhighlighted text */
-    var unhighlightClassName: js.UndefOr[String] = js.native
+    var unhighlightClassName: js.UndefOr[String] = js.undefined
     
     /** Inline styles applied to unhighlighted text */
-    var unhighlightStyle: js.UndefOr[CSSProperties] = js.native
+    var unhighlightStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object HighlighterProps {
     
@@ -223,7 +220,7 @@ object mod {
       def setHighlightStyleUndefined: Self = StObject.set(x, "highlightStyle", js.undefined)
       
       @scala.inline
-      def setHighlightTag(value: String | ComponentType[_]): Self = StObject.set(x, "highlightTag", value.asInstanceOf[js.Any])
+      def setHighlightTag(value: String | ComponentType[js.Any]): Self = StObject.set(x, "highlightTag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHighlightTagUndefined: Self = StObject.set(x, "highlightTag", js.undefined)

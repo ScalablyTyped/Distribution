@@ -4,46 +4,46 @@ import typings.chromeApps.chrome.fileSystemProvider.internal.EntryPathRequestedE
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MetadataRequestedEventOptions extends EntryPathRequestedEventOptions {
+trait MetadataRequestedEventOptions
+  extends StObject
+     with EntryPathRequestedEventOptions {
   
   /**
     * Set to true if is_directory value is requested
     * @since Chrome 49.
     */
-  var isDirectory: Boolean = js.native
+  var isDirectory: Boolean
   
   /**
     * Set to true if mimeType value is requested.
     * @since Chrome 49.
     */
-  var mimeType: Boolean = js.native
+  var mimeType: Boolean
   
   /**
     * Set to true if modificationTime value is requested
     * @since Chrome 49.
     */
-  var modificationTime: Boolean = js.native
+  var modificationTime: Boolean
   
   /**
     * Set to true if is_directory value is requested.
     * @since Chrome 49.
     */
-  var name: Boolean = js.native
+  var name: Boolean
   
   /**
     * Set to true if size value is requested.
     * @since Chrome 49.
     */
-  var size: Boolean = js.native
+  var size: Boolean
   
   /**
     * Set to true if the thumbnail is requested.
     */
-  var thumbnail: Boolean = js.native
+  var thumbnail: Boolean
 }
 object MetadataRequestedEventOptions {
   

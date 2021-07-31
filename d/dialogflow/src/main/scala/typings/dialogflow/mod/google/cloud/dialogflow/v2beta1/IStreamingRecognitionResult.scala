@@ -4,35 +4,33 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.StreamingRecogniti
 import typings.dialogflow.mod.google.protobuf.IDuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a StreamingRecognitionResult. */
-@js.native
 trait IStreamingRecognitionResult extends StObject {
   
   /** StreamingRecognitionResult confidence */
-  var confidence: js.UndefOr[Double | Null] = js.native
+  var confidence: js.UndefOr[Double | Null] = js.undefined
   
   /** StreamingRecognitionResult isFinal */
-  var isFinal: js.UndefOr[Boolean | Null] = js.native
+  var isFinal: js.UndefOr[Boolean | Null] = js.undefined
   
   /** StreamingRecognitionResult messageType */
   var messageType: js.UndefOr[
     MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.MessageType * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** StreamingRecognitionResult speechEndOffset */
-  var speechEndOffset: js.UndefOr[IDuration | Null] = js.native
+  var speechEndOffset: js.UndefOr[IDuration | Null] = js.undefined
   
   /** StreamingRecognitionResult speechWordInfo */
-  var speechWordInfo: js.UndefOr[js.Array[ISpeechWordInfo] | Null] = js.native
+  var speechWordInfo: js.UndefOr[js.Array[ISpeechWordInfo] | Null] = js.undefined
   
   /** StreamingRecognitionResult stability */
-  var stability: js.UndefOr[Double | Null] = js.native
+  var stability: js.UndefOr[Double | Null] = js.undefined
   
   /** StreamingRecognitionResult transcript */
-  var transcript: js.UndefOr[String | Null] = js.native
+  var transcript: js.UndefOr[String | Null] = js.undefined
 }
 object IStreamingRecognitionResult {
   

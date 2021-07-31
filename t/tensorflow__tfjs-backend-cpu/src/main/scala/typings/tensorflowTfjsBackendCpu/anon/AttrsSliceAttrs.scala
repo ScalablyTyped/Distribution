@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.SliceAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.SliceInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsSliceAttrs extends StObject {
   
-  var attrs: SliceAttrs = js.native
+  var attrs: SliceAttrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: SliceInputs = js.native
+  var inputs: SliceInputs
 }
 object AttrsSliceAttrs {
   

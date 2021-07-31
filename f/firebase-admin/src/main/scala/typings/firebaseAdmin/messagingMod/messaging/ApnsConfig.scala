@@ -3,26 +3,24 @@ package typings.firebaseAdmin.messagingMod.messaging
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApnsConfig extends StObject {
   
   /**
     * Options for features provided by the FCM SDK for iOS.
     */
-  var fcmOptions: js.UndefOr[ApnsFcmOptions] = js.native
+  var fcmOptions: js.UndefOr[ApnsFcmOptions] = js.undefined
   
   /**
     * A collection of APNs headers. Header values must be strings.
     */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * An APNs payload to be included in the message.
     */
-  var payload: js.UndefOr[ApnsPayload] = js.native
+  var payload: js.UndefOr[ApnsPayload] = js.undefined
 }
 object ApnsConfig {
   

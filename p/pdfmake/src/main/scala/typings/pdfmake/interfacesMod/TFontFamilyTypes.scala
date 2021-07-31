@@ -3,19 +3,17 @@ package typings.pdfmake.interfacesMod
 import typings.pdfkit.PDFKit.Mixins.PDFFontSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TFontFamilyTypes extends StObject {
   
-  var bold: js.UndefOr[PDFFontSource] = js.native
+  var bold: js.UndefOr[PDFFontSource] = js.undefined
   
-  var bolditalics: js.UndefOr[PDFFontSource] = js.native
+  var bolditalics: js.UndefOr[PDFFontSource] = js.undefined
   
-  var italics: js.UndefOr[PDFFontSource] = js.native
+  var italics: js.UndefOr[PDFFontSource] = js.undefined
   
-  var normal: js.UndefOr[PDFFontSource] = js.native
+  var normal: js.UndefOr[PDFFontSource] = js.undefined
 }
 object TFontFamilyTypes {
   

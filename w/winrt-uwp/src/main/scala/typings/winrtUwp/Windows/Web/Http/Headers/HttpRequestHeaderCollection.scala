@@ -8,7 +8,6 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Networking.HostName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a collection of the HTTP headers associated with an HTTP request. */
@@ -56,7 +55,7 @@ trait HttpRequestHeaderCollection extends StObject {
     * Retrieves an iterator to the first item in the HttpRequestHeaderCollection .
     * @return An object that can be used to enumerate the items in the collection. The iterator points to the first item in the HttpRequestHeaderCollection .
     */
-  def first(): IIterator[IKeyValuePair[_, _]] = js.native
+  def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
   
   /** Gets or sets the String that represents the value of a From HTTP header on an HTTP request. */
   var from: String = js.native

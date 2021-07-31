@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseHostReservationResult extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The currency in which the totalUpfrontPrice and totalHourlyPrice amounts are specified. At this time, the only supported currency is USD.
     */
-  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.native
+  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.undefined
   
   /**
     * Describes the details of the purchase.
     */
-  var Purchase: js.UndefOr[PurchaseSet] = js.native
+  var Purchase: js.UndefOr[PurchaseSet] = js.undefined
   
   /**
     * The total hourly price of the reservation calculated per hour.
     */
-  var TotalHourlyPrice: js.UndefOr[String] = js.native
+  var TotalHourlyPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The total amount charged to your account when you purchase the reservation.
     */
-  var TotalUpfrontPrice: js.UndefOr[String] = js.native
+  var TotalUpfrontPrice: js.UndefOr[String] = js.undefined
 }
 object PurchaseHostReservationResult {
   

@@ -14,7 +14,6 @@ import typings.activexLibreoffice.com_.sun.star.task.XStatusIndicator
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,25 +24,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * OnPageEnded Is fired when the page ended.
   * @see com.sun.star.document.OfficeDocument
   */
-@js.native
 trait XReportEngine
-  extends XComponent
+  extends StObject
+     with XComponent
      with XPropertySet {
   
   /** specifies the active connection which is used to create the resulting report. */
-  var ActiveConnection: XConnection = js.native
+  var ActiveConnection: XConnection
   
   /**
     * defines the maximum number of rows which should be fetched for the report. If the limit is exceeded, the excess rows are silently dropped. ;  There is
     * no limitation, if set to zero.
     */
-  var MaxRows: Double = js.native
+  var MaxRows: Double
   
   /** specifies the report definition object which is used to create the resulting report. */
-  var ReportDefinition: XReportDefinition = js.native
+  var ReportDefinition: XReportDefinition
   
   /** specifies the status indicator which shows the progress of the report generation process. */
-  var StatusIndicator: XStatusIndicator = js.native
+  var StatusIndicator: XStatusIndicator
   
   /**
     * creates a report document.
@@ -51,7 +50,7 @@ trait XReportEngine
     * @throws com::sun::star::lang::DisposedException If the report engine is already disposed.
     * @throws com::sun::star::lang::IllegalArgumentException If the report definition was not set or is `NULL` .
     */
-  def createDocument(): URL = js.native
+  def createDocument(): URL
   
   /**
     * creates a report document.
@@ -59,20 +58,20 @@ trait XReportEngine
     * @throws com::sun::star::lang::DisposedException If the report engine is already disposed.
     * @throws com::sun::star::lang::IllegalArgumentException If the report definition was not set or is `NULL` . OJ: Has to be discussed if this method is useful.
     */
-  def createDocumentAlive(frame: XFrame): XModel = js.native
+  def createDocumentAlive(frame: XFrame): XModel
   
   /**
     * creates a report document.
     * @throws com::sun::star::lang::DisposedException If the report engine is already disposed.
     * @throws com::sun::star::lang::IllegalArgumentException If the report definition was not set or is `NULL` .
     */
-  def createDocumentModel(): XModel = js.native
+  def createDocumentModel(): XModel
   
   /**
     * allows to interrupt the creation process of the report document.
     * @throws com::sun::star::lang::DisposedException If the report engine is already disposed.
     */
-  def interrupt(): Unit = js.native
+  def interrupt(): Unit
 }
 object XReportEngine {
   

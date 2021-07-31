@@ -3,53 +3,51 @@ package typings.maximMazurokGapiClientStorage.anon
 import typings.maximMazurokGapiClientStorage.gapi.client.storage.ObjectAccessControl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketEntity extends StObject {
   
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** Name of a bucket. */
-  var bucket: String = js.native
+  var bucket: String
   
   /** The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers. */
-  var entity: String = js.native
+  var entity: String
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** If present, selects a specific revision of this object (as opposed to the latest version, the default). */
-  var generation: js.UndefOr[String] = js.native
+  var generation: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** Name of the object. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts. */
-  var `object`: String = js.native
+  var `object`: String
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** The project to be billed for this request if the target bucket is requester-pays bucket. */
-  var provisionalUserProject: js.UndefOr[String] = js.native
+  var provisionalUserProject: js.UndefOr[String] = js.undefined
   
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ObjectAccessControl = js.native
+  var resource: ObjectAccessControl
   
   /** Deprecated. Please use quotaUser instead. */
-  var userIp: js.UndefOr[String] = js.native
+  var userIp: js.UndefOr[String] = js.undefined
   
   /** The project to be billed for this request. Required for Requester Pays buckets. */
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
 }
 object BucketEntity {
   

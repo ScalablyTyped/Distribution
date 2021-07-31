@@ -14,7 +14,6 @@ import typings.std.HTMLImageElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,29 +21,29 @@ object mod {
   @JSImport("react-image-crop", JSImport.Namespace)
   @js.native
   class ^ () extends ReactCrop
-  
-  @JSImport("react-image-crop", "containCrop")
+  @JSImport("react-image-crop", JSImport.Namespace)
   @js.native
-  def containCrop(prevCrop: Crop, crop: Crop, imageWidth: Double, imageHeight: Double): Crop = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-image-crop", "makeAspectCrop")
-  @js.native
-  def makeAspectCrop(crop: Crop, imageWidth: Double, imageHeight: Double): Crop = js.native
+  @scala.inline
+  def containCrop(prevCrop: Crop, crop: Crop, imageWidth: Double, imageHeight: Double): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("containCrop")(prevCrop.asInstanceOf[js.Any], crop.asInstanceOf[js.Any], imageWidth.asInstanceOf[js.Any], imageHeight.asInstanceOf[js.Any])).asInstanceOf[Crop]
   
-  @js.native
+  @scala.inline
+  def makeAspectCrop(crop: Crop, imageWidth: Double, imageHeight: Double): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAspectCrop")(crop.asInstanceOf[js.Any], imageWidth.asInstanceOf[js.Any], imageHeight.asInstanceOf[js.Any])).asInstanceOf[Crop]
+  
   trait Crop extends StObject {
     
-    var aspect: js.UndefOr[Double] = js.native
+    var aspect: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var unit: js.UndefOr[px | Percentsign] = js.native
+    var unit: js.UndefOr[px | Percentsign] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Crop {
     
@@ -95,11 +94,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait PercentCrop extends Crop {
+  trait PercentCrop
+    extends StObject
+       with Crop {
     
     @JSName("unit")
-    var unit_PercentCrop: js.UndefOr[Percentsign] = js.native
+    var unit_PercentCrop: js.UndefOr[Percentsign] = js.undefined
   }
   object PercentCrop {
     
@@ -155,58 +155,57 @@ object mod {
     def straightenYPath(clientX: Double): Double = js.native
   }
   
-  @js.native
   trait ReactCropProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var circularCrop: js.UndefOr[Boolean] = js.native
+    var circularCrop: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var crop: js.UndefOr[Crop] = js.native
+    var crop: js.UndefOr[Crop] = js.undefined
     
-    var crossorigin: js.UndefOr[anonymous | `use-credentials`] = js.native
+    var crossorigin: js.UndefOr[anonymous | `use-credentials`] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var imageAlt: js.UndefOr[String] = js.native
+    var imageAlt: js.UndefOr[String] = js.undefined
     
-    var imageStyle: js.UndefOr[CSSProperties] = js.native
+    var imageStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var keepSelection: js.UndefOr[Boolean] = js.native
+    var keepSelection: js.UndefOr[Boolean] = js.undefined
     
-    var locked: js.UndefOr[Boolean] = js.native
+    var locked: js.UndefOr[Boolean] = js.undefined
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    def onChange(crop: Crop, percentCrop: PercentCrop): Unit = js.native
+    def onChange(crop: Crop, percentCrop: PercentCrop): Unit
     
-    var onComplete: js.UndefOr[js.Function2[/* crop */ Crop, /* percentCrop */ PercentCrop, Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function2[/* crop */ Crop, /* percentCrop */ PercentCrop, Unit]] = js.undefined
     
-    var onDragEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDragEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDragStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onImageError: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLImageElement, Event], Unit]] = js.native
+    var onImageError: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLImageElement, Event], Unit]] = js.undefined
     
-    var onImageLoaded: js.UndefOr[js.Function1[/* target */ HTMLImageElement, Unit]] = js.native
+    var onImageLoaded: js.UndefOr[js.Function1[/* target */ HTMLImageElement, Unit]] = js.undefined
     
-    var renderComponent: js.UndefOr[ReactNode] = js.native
+    var renderComponent: js.UndefOr[ReactNode] = js.undefined
     
-    var renderSelectionAddon: js.UndefOr[js.Function1[/* state */ js.Any, ReactNode]] = js.native
+    var renderSelectionAddon: js.UndefOr[js.Function1[/* state */ js.Any, ReactNode]] = js.undefined
     
-    var ruleOfThirds: js.UndefOr[Boolean] = js.native
+    var ruleOfThirds: js.UndefOr[Boolean] = js.undefined
     
-    var src: String = js.native
+    var src: String
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ReactCropProps {
     

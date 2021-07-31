@@ -3,58 +3,56 @@ package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayoutTreeSnapshot extends StObject {
   
   /**
     * The absolute position bounding box.
     */
-  var bounds: js.Array[Rectangle] = js.native
+  var bounds: js.Array[Rectangle]
   
   /**
     * The client rect of nodes. Only available when includeDOMRects is set to true
     */
-  var clientRects: js.UndefOr[js.Array[Rectangle]] = js.native
+  var clientRects: js.UndefOr[js.Array[Rectangle]] = js.undefined
   
   /**
     * Index of the corresponding node in the `NodeTreeSnapshot` array returned by `captureSnapshot`.
     */
-  var nodeIndex: js.Array[integer] = js.native
+  var nodeIndex: js.Array[integer]
   
   /**
     * The offset rect of nodes. Only available when includeDOMRects is set to true
     */
-  var offsetRects: js.UndefOr[js.Array[Rectangle]] = js.native
+  var offsetRects: js.UndefOr[js.Array[Rectangle]] = js.undefined
   
   /**
     * Global paint order index, which is determined by the stacking order of the nodes. Nodes
     * that are painted together will have the same index. Only provided if includePaintOrder in
     * captureSnapshot was true.
     */
-  var paintOrders: js.UndefOr[js.Array[integer]] = js.native
+  var paintOrders: js.UndefOr[js.Array[integer]] = js.undefined
   
   /**
     * The scroll rect of nodes. Only available when includeDOMRects is set to true
     */
-  var scrollRects: js.UndefOr[js.Array[Rectangle]] = js.native
+  var scrollRects: js.UndefOr[js.Array[Rectangle]] = js.undefined
   
   /**
     * Stacking context information.
     */
-  var stackingContexts: RareBooleanData = js.native
+  var stackingContexts: RareBooleanData
   
   /**
     * Array of indexes specifying computed style strings, filtered according to the `computedStyles` parameter passed to `captureSnapshot`.
     */
-  var styles: js.Array[ArrayOfStrings] = js.native
+  var styles: js.Array[ArrayOfStrings]
   
   /**
     * Contents of the LayoutText, if any.
     */
-  var text: js.Array[StringIndex] = js.native
+  var text: js.Array[StringIndex]
 }
 object LayoutTreeSnapshot {
   

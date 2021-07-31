@@ -10,9 +10,9 @@ Utilities for handling Ethereum Addresses for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/address |
 | Keywords           | Ethereum, ethers |
-| # releases         | 26 |
-| # dependents       | 45 |
-| # downloads        | 1812927 |
+| # releases         | 30 |
+| # dependents       | 53 |
+| # downloads        | 2993005 |
 | # stars            | 0 |
 
 ## Links

@@ -2,30 +2,28 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NamespaceCondition contains details about state of namespace.
   */
-@js.native
 trait NamespaceCondition extends StObject {
   
-  var lastTransitionTime: String = js.native
+  var lastTransitionTime: String
   
-  var message: String = js.native
+  var message: String
   
-  var reason: String = js.native
+  var reason: String
   
   /**
     * Status of the condition, one of True, False, Unknown.
     */
-  var status: String = js.native
+  var status: String
   
   /**
     * Type of namespace controller condition.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object NamespaceCondition {
   

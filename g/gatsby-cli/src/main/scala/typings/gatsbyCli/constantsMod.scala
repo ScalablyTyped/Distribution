@@ -2,7 +2,6 @@ package typings.gatsbyCli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -14,47 +13,67 @@ object constantsMod {
   object Actions extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Actions with String] = js.native
+    def apply(value: String): js.UndefOr[Actions & String] = js.native
     
     @js.native
-    sealed trait ActivityErrored extends Actions
-    /* "ACTIVITY_ERRORED" */ val ActivityErrored: typings.gatsbyCli.constantsMod.Actions.ActivityErrored with String = js.native
+    sealed trait ActivityErrored
+      extends StObject
+         with Actions
+    /* "ACTIVITY_ERRORED" */ val ActivityErrored: typings.gatsbyCli.constantsMod.Actions.ActivityErrored & String = js.native
     
     @js.native
-    sealed trait CancelActivity extends Actions
-    /* "ACTIVITY_CANCEL" */ val CancelActivity: typings.gatsbyCli.constantsMod.Actions.CancelActivity with String = js.native
+    sealed trait CancelActivity
+      extends StObject
+         with Actions
+    /* "ACTIVITY_CANCEL" */ val CancelActivity: typings.gatsbyCli.constantsMod.Actions.CancelActivity & String = js.native
     
     @js.native
-    sealed trait EndActivity extends Actions
-    /* "ACTIVITY_END" */ val EndActivity: typings.gatsbyCli.constantsMod.Actions.EndActivity with String = js.native
+    sealed trait EndActivity
+      extends StObject
+         with Actions
+    /* "ACTIVITY_END" */ val EndActivity: typings.gatsbyCli.constantsMod.Actions.EndActivity & String = js.native
     
     @js.native
-    sealed trait Log extends Actions
-    /* "LOG" */ val Log: typings.gatsbyCli.constantsMod.Actions.Log with String = js.native
+    sealed trait Log
+      extends StObject
+         with Actions
+    /* "LOG" */ val Log: typings.gatsbyCli.constantsMod.Actions.Log & String = js.native
     
     @js.native
-    sealed trait LogAction extends Actions
-    /* "LOG_ACTION" */ val LogAction: typings.gatsbyCli.constantsMod.Actions.LogAction with String = js.native
+    sealed trait LogAction
+      extends StObject
+         with Actions
+    /* "LOG_ACTION" */ val LogAction: typings.gatsbyCli.constantsMod.Actions.LogAction & String = js.native
     
     @js.native
-    sealed trait PendingActivity extends Actions
-    /* "ACTIVITY_PENDING" */ val PendingActivity: typings.gatsbyCli.constantsMod.Actions.PendingActivity with String = js.native
+    sealed trait PendingActivity
+      extends StObject
+         with Actions
+    /* "ACTIVITY_PENDING" */ val PendingActivity: typings.gatsbyCli.constantsMod.Actions.PendingActivity & String = js.native
     
     @js.native
-    sealed trait SetLogs extends Actions
-    /* "SET_LOGS" */ val SetLogs: typings.gatsbyCli.constantsMod.Actions.SetLogs with String = js.native
+    sealed trait SetLogs
+      extends StObject
+         with Actions
+    /* "SET_LOGS" */ val SetLogs: typings.gatsbyCli.constantsMod.Actions.SetLogs & String = js.native
     
     @js.native
-    sealed trait SetStatus extends Actions
-    /* "SET_STATUS" */ val SetStatus: typings.gatsbyCli.constantsMod.Actions.SetStatus with String = js.native
+    sealed trait SetStatus
+      extends StObject
+         with Actions
+    /* "SET_STATUS" */ val SetStatus: typings.gatsbyCli.constantsMod.Actions.SetStatus & String = js.native
     
     @js.native
-    sealed trait StartActivity extends Actions
-    /* "ACTIVITY_START" */ val StartActivity: typings.gatsbyCli.constantsMod.Actions.StartActivity with String = js.native
+    sealed trait StartActivity
+      extends StObject
+         with Actions
+    /* "ACTIVITY_START" */ val StartActivity: typings.gatsbyCli.constantsMod.Actions.StartActivity & String = js.native
     
     @js.native
-    sealed trait UpdateActivity extends Actions
-    /* "ACTIVITY_UPDATE" */ val UpdateActivity: typings.gatsbyCli.constantsMod.Actions.UpdateActivity with String = js.native
+    sealed trait UpdateActivity
+      extends StObject
+         with Actions
+    /* "ACTIVITY_UPDATE" */ val UpdateActivity: typings.gatsbyCli.constantsMod.Actions.UpdateActivity & String = js.native
   }
   
   @js.native
@@ -64,19 +83,25 @@ object constantsMod {
   object ActivityLogLevels extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ActivityLogLevels with String] = js.native
+    def apply(value: String): js.UndefOr[ActivityLogLevels & String] = js.native
     
     @js.native
-    sealed trait Failed extends ActivityLogLevels
-    /* "ACTIVITY_FAILED" */ val Failed: typings.gatsbyCli.constantsMod.ActivityLogLevels.Failed with String = js.native
+    sealed trait Failed
+      extends StObject
+         with ActivityLogLevels
+    /* "ACTIVITY_FAILED" */ val Failed: typings.gatsbyCli.constantsMod.ActivityLogLevels.Failed & String = js.native
     
     @js.native
-    sealed trait Interrupted extends ActivityLogLevels
-    /* "ACTIVITY_INTERRUPTED" */ val Interrupted: typings.gatsbyCli.constantsMod.ActivityLogLevels.Interrupted with String = js.native
+    sealed trait Interrupted
+      extends StObject
+         with ActivityLogLevels
+    /* "ACTIVITY_INTERRUPTED" */ val Interrupted: typings.gatsbyCli.constantsMod.ActivityLogLevels.Interrupted & String = js.native
     
     @js.native
-    sealed trait Success extends ActivityLogLevels
-    /* "ACTIVITY_SUCCESS" */ val Success: typings.gatsbyCli.constantsMod.ActivityLogLevels.Success with String = js.native
+    sealed trait Success
+      extends StObject
+         with ActivityLogLevels
+    /* "ACTIVITY_SUCCESS" */ val Success: typings.gatsbyCli.constantsMod.ActivityLogLevels.Success & String = js.native
   }
   
   @js.native
@@ -86,31 +111,43 @@ object constantsMod {
   object ActivityStatuses extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ActivityStatuses with String] = js.native
+    def apply(value: String): js.UndefOr[ActivityStatuses & String] = js.native
     
     @js.native
-    sealed trait Cancelled extends ActivityStatuses
-    /* "CANCELLED" */ val Cancelled: typings.gatsbyCli.constantsMod.ActivityStatuses.Cancelled with String = js.native
+    sealed trait Cancelled
+      extends StObject
+         with ActivityStatuses
+    /* "CANCELLED" */ val Cancelled: typings.gatsbyCli.constantsMod.ActivityStatuses.Cancelled & String = js.native
     
     @js.native
-    sealed trait Failed extends ActivityStatuses
-    /* "FAILED" */ val Failed: typings.gatsbyCli.constantsMod.ActivityStatuses.Failed with String = js.native
+    sealed trait Failed
+      extends StObject
+         with ActivityStatuses
+    /* "FAILED" */ val Failed: typings.gatsbyCli.constantsMod.ActivityStatuses.Failed & String = js.native
     
     @js.native
-    sealed trait InProgress extends ActivityStatuses
-    /* "IN_PROGRESS" */ val InProgress: typings.gatsbyCli.constantsMod.ActivityStatuses.InProgress with String = js.native
+    sealed trait InProgress
+      extends StObject
+         with ActivityStatuses
+    /* "IN_PROGRESS" */ val InProgress: typings.gatsbyCli.constantsMod.ActivityStatuses.InProgress & String = js.native
     
     @js.native
-    sealed trait Interrupted extends ActivityStatuses
-    /* "INTERRUPTED" */ val Interrupted: typings.gatsbyCli.constantsMod.ActivityStatuses.Interrupted with String = js.native
+    sealed trait Interrupted
+      extends StObject
+         with ActivityStatuses
+    /* "INTERRUPTED" */ val Interrupted: typings.gatsbyCli.constantsMod.ActivityStatuses.Interrupted & String = js.native
     
     @js.native
-    sealed trait NotStarted extends ActivityStatuses
-    /* "NOT_STARTED" */ val NotStarted: typings.gatsbyCli.constantsMod.ActivityStatuses.NotStarted with String = js.native
+    sealed trait NotStarted
+      extends StObject
+         with ActivityStatuses
+    /* "NOT_STARTED" */ val NotStarted: typings.gatsbyCli.constantsMod.ActivityStatuses.NotStarted & String = js.native
     
     @js.native
-    sealed trait Success extends ActivityStatuses
-    /* "SUCCESS" */ val Success: typings.gatsbyCli.constantsMod.ActivityStatuses.Success with String = js.native
+    sealed trait Success
+      extends StObject
+         with ActivityStatuses
+    /* "SUCCESS" */ val Success: typings.gatsbyCli.constantsMod.ActivityStatuses.Success & String = js.native
   }
   
   @js.native
@@ -120,23 +157,31 @@ object constantsMod {
   object ActivityTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ActivityTypes with String] = js.native
+    def apply(value: String): js.UndefOr[ActivityTypes & String] = js.native
     
     @js.native
-    sealed trait Hidden extends ActivityTypes
-    /* "hidden" */ val Hidden: typings.gatsbyCli.constantsMod.ActivityTypes.Hidden with String = js.native
+    sealed trait Hidden
+      extends StObject
+         with ActivityTypes
+    /* "hidden" */ val Hidden: typings.gatsbyCli.constantsMod.ActivityTypes.Hidden & String = js.native
     
     @js.native
-    sealed trait Pending extends ActivityTypes
-    /* "pending" */ val Pending: typings.gatsbyCli.constantsMod.ActivityTypes.Pending with String = js.native
+    sealed trait Pending
+      extends StObject
+         with ActivityTypes
+    /* "pending" */ val Pending: typings.gatsbyCli.constantsMod.ActivityTypes.Pending & String = js.native
     
     @js.native
-    sealed trait Progress extends ActivityTypes
-    /* "progress" */ val Progress: typings.gatsbyCli.constantsMod.ActivityTypes.Progress with String = js.native
+    sealed trait Progress
+      extends StObject
+         with ActivityTypes
+    /* "progress" */ val Progress: typings.gatsbyCli.constantsMod.ActivityTypes.Progress & String = js.native
     
     @js.native
-    sealed trait Spinner extends ActivityTypes
-    /* "spinner" */ val Spinner: typings.gatsbyCli.constantsMod.ActivityTypes.Spinner with String = js.native
+    sealed trait Spinner
+      extends StObject
+         with ActivityTypes
+    /* "spinner" */ val Spinner: typings.gatsbyCli.constantsMod.ActivityTypes.Spinner & String = js.native
   }
   
   @js.native
@@ -146,30 +191,42 @@ object constantsMod {
   object LogLevels extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[LogLevels with String] = js.native
+    def apply(value: String): js.UndefOr[LogLevels & String] = js.native
     
     @js.native
-    sealed trait Debug extends LogLevels
-    /* "DEBUG" */ val Debug: typings.gatsbyCli.constantsMod.LogLevels.Debug with String = js.native
+    sealed trait Debug
+      extends StObject
+         with LogLevels
+    /* "DEBUG" */ val Debug: typings.gatsbyCli.constantsMod.LogLevels.Debug & String = js.native
     
     @js.native
-    sealed trait Error extends LogLevels
-    /* "ERROR" */ val Error: typings.gatsbyCli.constantsMod.LogLevels.Error with String = js.native
+    sealed trait Error
+      extends StObject
+         with LogLevels
+    /* "ERROR" */ val Error: typings.gatsbyCli.constantsMod.LogLevels.Error & String = js.native
     
     @js.native
-    sealed trait Info extends LogLevels
-    /* "INFO" */ val Info: typings.gatsbyCli.constantsMod.LogLevels.Info with String = js.native
+    sealed trait Info
+      extends StObject
+         with LogLevels
+    /* "INFO" */ val Info: typings.gatsbyCli.constantsMod.LogLevels.Info & String = js.native
     
     @js.native
-    sealed trait Log extends LogLevels
-    /* "LOG" */ val Log: typings.gatsbyCli.constantsMod.LogLevels.Log with String = js.native
+    sealed trait Log
+      extends StObject
+         with LogLevels
+    /* "LOG" */ val Log: typings.gatsbyCli.constantsMod.LogLevels.Log & String = js.native
     
     @js.native
-    sealed trait Success extends LogLevels
-    /* "SUCCESS" */ val Success: typings.gatsbyCli.constantsMod.LogLevels.Success with String = js.native
+    sealed trait Success
+      extends StObject
+         with LogLevels
+    /* "SUCCESS" */ val Success: typings.gatsbyCli.constantsMod.LogLevels.Success & String = js.native
     
     @js.native
-    sealed trait Warning extends LogLevels
-    /* "WARNING" */ val Warning: typings.gatsbyCli.constantsMod.LogLevels.Warning with String = js.native
+    sealed trait Warning
+      extends StObject
+         with LogLevels
+    /* "WARNING" */ val Warning: typings.gatsbyCli.constantsMod.LogLevels.Warning & String = js.native
   }
 }

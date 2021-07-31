@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetInspectedNodeRequest extends StObject {
   
   /**
     * DOM node id to be accessible by means of $x command line API.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
 }
 object SetInspectedNodeRequest {
   

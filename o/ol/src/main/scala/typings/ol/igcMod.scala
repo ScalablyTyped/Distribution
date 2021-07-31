@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object igcMod {
@@ -23,23 +22,28 @@ object igcMod {
   object IGCZ extends StObject {
     
     @js.native
-    sealed trait BAROMETRIC extends IGCZ
+    sealed trait BAROMETRIC
+      extends StObject
+         with IGCZ
     
     @js.native
-    sealed trait GPS extends IGCZ
+    sealed trait GPS
+      extends StObject
+         with IGCZ
     
     @js.native
-    sealed trait NONE extends IGCZ
+    sealed trait NONE
+      extends StObject
+         with IGCZ
   }
   
   @js.native
   trait IGC
     extends typings.ol.textFeatureMod.default
   
-  @js.native
   trait Options extends StObject {
     
-    var altitudeMode: js.UndefOr[IGCZ | String] = js.native
+    var altitudeMode: js.UndefOr[IGCZ | String] = js.undefined
   }
   object Options {
     

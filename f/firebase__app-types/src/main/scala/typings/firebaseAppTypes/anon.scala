@@ -14,7 +14,6 @@ import typings.firebaseUtil.subscribeMod.Subscribe
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -55,7 +54,7 @@ object anon {
           String, 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {readonly [ K in / * import warning: RewrittenClass.unapply cls was tparam ErrorCode * / any ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData}
-      */ typings.firebaseAppTypes.firebaseAppTypesStrings.Components with TopLevel[js.Any]
+      */ typings.firebaseAppTypes.firebaseAppTypesStrings.Components & TopLevel[js.Any]
         ]
       ] = js.native
     
@@ -64,7 +63,7 @@ object anon {
       */
     var components: Map[
         String, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component */ js.Any
       ] = js.native
     
     /**
@@ -123,10 +122,9 @@ object anon {
     def useAsService(app: FirebaseApp, serviceName: String): String | Null = js.native
   }
   
-  @js.native
   trait Global extends StObject {
     
-    var global: Boolean = js.native
+    var global: Boolean
   }
   object Global {
     

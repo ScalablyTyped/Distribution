@@ -4,67 +4,56 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lookupConvertMod {
   
-  @JSImport("timezone-support/dist/lookup-convert", "convertDateToTime")
+  @JSImport("timezone-support/dist/lookup-convert", JSImport.Namespace)
   @js.native
-  def convertDateToTime(date: Date): Time = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("timezone-support/dist/lookup-convert", "convertTimeToDate")
-  @js.native
-  def convertTimeToDate(time: Time): Date = js.native
+  @scala.inline
+  def convertDateToTime(date: Date): Time = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDateToTime")(date.asInstanceOf[js.Any]).asInstanceOf[Time]
   
-  @JSImport("timezone-support/dist/lookup-convert", "findTimeZone")
-  @js.native
-  def findTimeZone(name: String): TimeZoneInfo = js.native
+  @scala.inline
+  def convertTimeToDate(time: Time): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTimeToDate")(time.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("timezone-support/dist/lookup-convert", "getUTCOffset")
-  @js.native
-  def getUTCOffset(date: DateInput, timeZone: TimeZoneInfo): TimeZoneOffset = js.native
+  @scala.inline
+  def findTimeZone(name: String): TimeZoneInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("findTimeZone")(name.asInstanceOf[js.Any]).asInstanceOf[TimeZoneInfo]
   
-  @JSImport("timezone-support/dist/lookup-convert", "getUnixTime")
-  @js.native
-  def getUnixTime(time: Time): Double = js.native
-  @JSImport("timezone-support/dist/lookup-convert", "getUnixTime")
-  @js.native
-  def getUnixTime(time: Time, timeZone: TimeZoneInfo): Double = js.native
+  @scala.inline
+  def getUTCOffset(date: DateInput, timeZone: TimeZoneInfo): TimeZoneOffset = (^.asInstanceOf[js.Dynamic].applyDynamic("getUTCOffset")(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[TimeZoneOffset]
   
-  @JSImport("timezone-support/dist/lookup-convert", "getZonedTime")
-  @js.native
-  def getZonedTime(date: DateInput, timeZone: TimeZoneInfo): Time = js.native
+  @scala.inline
+  def getUnixTime(time: Time): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnixTime")(time.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getUnixTime(time: Time, timeZone: TimeZoneInfo): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnixTime")(time.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezone-support/dist/lookup-convert", "listTimeZones")
-  @js.native
-  def listTimeZones(): js.Array[String] = js.native
+  @scala.inline
+  def getZonedTime(date: DateInput, timeZone: TimeZoneInfo): Time = (^.asInstanceOf[js.Dynamic].applyDynamic("getZonedTime")(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[Time]
   
-  @JSImport("timezone-support/dist/lookup-convert", "populateTimeZones")
-  @js.native
-  def populateTimeZones(TimeZoneData: js.Any): Unit = js.native
+  @scala.inline
+  def listTimeZones(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTimeZones")().asInstanceOf[js.Array[String]]
   
-  @JSImport("timezone-support/dist/lookup-convert", "setTimeZone")
-  @js.native
-  def setTimeZone(time: Date, timeZone: TimeZoneInfo): Time = js.native
-  @JSImport("timezone-support/dist/lookup-convert", "setTimeZone")
-  @js.native
-  def setTimeZone(time: Date, timeZone: TimeZoneInfo, options: SetTimeZoneOptions): Time = js.native
-  @JSImport("timezone-support/dist/lookup-convert", "setTimeZone")
-  @js.native
-  def setTimeZone(time: Time, timeZone: TimeZoneInfo): Time = js.native
-  @JSImport("timezone-support/dist/lookup-convert", "setTimeZone")
-  @js.native
-  def setTimeZone(time: Time, timeZone: TimeZoneInfo, options: SetTimeZoneOptions): Time = js.native
+  @scala.inline
+  def populateTimeZones(TimeZoneData: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("populateTimeZones")(TimeZoneData.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setTimeZone(time: Date, timeZone: TimeZoneInfo): Time = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeZone")(time.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[Time]
+  @scala.inline
+  def setTimeZone(time: Date, timeZone: TimeZoneInfo, options: SetTimeZoneOptions): Time = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeZone")(time.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Time]
+  @scala.inline
+  def setTimeZone(time: Time, timeZone: TimeZoneInfo): Time = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeZone")(time.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[Time]
+  @scala.inline
+  def setTimeZone(time: Time, timeZone: TimeZoneInfo, options: SetTimeZoneOptions): Time = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeZone")(time.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Time]
   
   type DateInput = Date | Double
   
   type PackedTimeZones = StringDictionary[String]
   
-  @js.native
   trait SetTimeZoneOptions extends StObject {
     
-    var useUTC: Boolean = js.native
+    var useUTC: Boolean
   }
   object SetTimeZoneOptions {
     
@@ -82,28 +71,27 @@ object lookupConvertMod {
     }
   }
   
-  @js.native
   trait Time extends StObject {
     
-    var day: Double = js.native
+    var day: Double
     
-    var dayOfWeek: js.UndefOr[Double] = js.native
+    var dayOfWeek: js.UndefOr[Double] = js.undefined
     
-    var epoch: js.UndefOr[Double] = js.native
+    var epoch: js.UndefOr[Double] = js.undefined
     
-    var hours: Double = js.native
+    var hours: Double
     
-    var milliseconds: js.UndefOr[Double] = js.native
+    var milliseconds: js.UndefOr[Double] = js.undefined
     
-    var minutes: Double = js.native
+    var minutes: Double
     
-    var month: Double = js.native
+    var month: Double
     
-    var seconds: js.UndefOr[Double] = js.native
+    var seconds: js.UndefOr[Double] = js.undefined
     
-    var year: Double = js.native
+    var year: Double
     
-    var zone: js.UndefOr[TimeZoneOffset] = js.native
+    var zone: js.UndefOr[TimeZoneOffset] = js.undefined
   }
   object Time {
     
@@ -163,12 +151,11 @@ object lookupConvertMod {
     }
   }
   
-  @js.native
   trait TimeZoneData extends StObject {
     
-    var links: js.Array[String] = js.native
+    var links: js.Array[String]
     
-    var zones: PackedTimeZones = js.native
+    var zones: PackedTimeZones
   }
   object TimeZoneData {
     
@@ -192,10 +179,9 @@ object lookupConvertMod {
     }
   }
   
-  @js.native
   trait TimeZoneInfo extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object TimeZoneInfo {
     
@@ -213,12 +199,11 @@ object lookupConvertMod {
     }
   }
   
-  @js.native
   trait TimeZoneOffset extends StObject {
     
-    var abbreviation: js.UndefOr[String] = js.native
+    var abbreviation: js.UndefOr[String] = js.undefined
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object TimeZoneOffset {
     

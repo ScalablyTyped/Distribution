@@ -2,36 +2,34 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPipelineStateOutput extends StObject {
   
   /**
     * The date and time the pipeline was created, in timestamp format.
     */
-  var created: js.UndefOr[Timestamp] = js.native
+  var created: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the pipeline for which you want to get the state.
     */
-  var pipelineName: js.UndefOr[PipelineName] = js.native
+  var pipelineName: js.UndefOr[PipelineName] = js.undefined
   
   /**
     * The version number of the pipeline.  A newly created pipeline is always assigned a version number of 1. 
     */
-  var pipelineVersion: js.UndefOr[PipelineVersion] = js.native
+  var pipelineVersion: js.UndefOr[PipelineVersion] = js.undefined
   
   /**
     * A list of the pipeline stage output information, including stage name, state, most recent run details, whether the stage is disabled, and other data.
     */
-  var stageStates: js.UndefOr[StageStateList] = js.native
+  var stageStates: js.UndefOr[StageStateList] = js.undefined
   
   /**
     * The date and time the pipeline was last updated, in timestamp format.
     */
-  var updated: js.UndefOr[Timestamp] = js.native
+  var updated: js.UndefOr[Timestamp] = js.undefined
 }
 object GetPipelineStateOutput {
   

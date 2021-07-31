@@ -3,26 +3,24 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.stackTypesMod.StackDescriptorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/views/Stack/StackView.State> */
-@js.native
 trait ReadonlyState extends StObject {
   
-  val closingRouteKeys: js.Array[String] = js.native
+  val closingRouteKeys: js.Array[String]
   
-  val descriptors: StackDescriptorMap = js.native
+  val descriptors: StackDescriptorMap
   
-  val openingRouteKeys: js.Array[String] = js.native
+  val openingRouteKeys: js.Array[String]
   
-  val previousDescriptors: StackDescriptorMap = js.native
+  val previousDescriptors: StackDescriptorMap
   
-  val previousRoutes: js.Array[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]] = js.native
+  val previousRoutes: js.Array[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]]
   
-  val replacingRouteKeys: js.Array[String] = js.native
+  val replacingRouteKeys: js.Array[String]
   
-  val routes: js.Array[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]] = js.native
+  val routes: js.Array[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]]
 }
 object ReadonlyState {
   

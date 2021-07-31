@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridFiltering
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -18,7 +17,7 @@ trait IgGridFiltering
     * Defines whether to render editors in advanced [mode](ui.iggridfiltering#options:mode). If false, no editors will be rendered in the advanced [mode](ui.iggridfiltering#options:mode).
     *
     */
-  var advancedModeEditorsVisible: js.UndefOr[Boolean] = js.native
+  var advancedModeEditorsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Location of the advanced filtering button when [advancedModeEditorsVisible](ui.iggridfiltering#options:advancedModeEditorsVisible) is false (i.e. when the button is rendered in the header).
@@ -28,76 +27,76 @@ trait IgGridFiltering
     * "left"
     * "right"
     */
-  var advancedModeHeaderButtonLocation: js.UndefOr[String] = js.native
+  var advancedModeHeaderButtonLocation: js.UndefOr[String] = js.undefined
   
   /**
     * Enables or disables the filtering case sensitivity. Works only for local filtering. If true, it case sensitive filtering is performed. If false, filtering is case insensitive.
     *
     */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of column settings that specifies custom filtering options on a per column basis.
     *
     */
-  var columnSettings: js.UndefOr[js.Array[IgGridFilteringColumnSetting]] = js.native
+  var columnSettings: js.UndefOr[js.Array[IgGridFilteringColumnSetting]] = js.undefined
   
   /**
     * Event fired after the filtering has been executed and results are rendered.
     */
-  var dataFiltered: js.UndefOr[DataFilteredEvent] = js.native
+  var dataFiltered: js.UndefOr[DataFilteredEvent] = js.undefined
   
   /**
     * Event fired before a filtering operation is executed (remote request or local).
     * Return false in order to cancel filtering operation.
     */
-  var dataFiltering: js.UndefOr[DataFilteringEvent] = js.native
+  var dataFiltering: js.UndefOr[DataFilteringEvent] = js.undefined
   
   /**
     * Name of the dialog widget to be used. It should inherit from $.ui.igGridModalDialog.
     *
     */
-  var dialogWidget: js.UndefOr[String] = js.native
+  var dialogWidget: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after a filter column dropdown is completely closed.
     */
-  var dropDownClosed: js.UndefOr[DropDownClosedEvent] = js.native
+  var dropDownClosed: js.UndefOr[DropDownClosedEvent] = js.undefined
   
   /**
     * Event fired before the filter dropdown starts closing.
     * Return false in order to cancel dropdown closing.
     */
-  var dropDownClosing: js.UndefOr[DropDownClosingEvent] = js.native
+  var dropDownClosing: js.UndefOr[DropDownClosingEvent] = js.undefined
   
   /**
     * Event fired after the filter dropdown is opened for a specific column.
     */
-  var dropDownOpened: js.UndefOr[DropDownOpenedEvent] = js.native
+  var dropDownOpened: js.UndefOr[DropDownOpenedEvent] = js.undefined
   
   /**
     * Event fired before the filter dropdown is opened for a specific column.
     * Return false in order to cancel dropdown opening.
     */
-  var dropDownOpening: js.UndefOr[DropDownOpeningEvent] = js.native
+  var dropDownOpening: js.UndefOr[DropDownOpeningEvent] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Feature chooser text when filter is shown and filter [mode](ui.iggridfiltering#options:mode) is simple. Use option [locale.featureChooserText](ui.iggridfiltering#options:locale.featureChooserText).
     */
-  var featureChooserText: js.UndefOr[String] = js.native
+  var featureChooserText: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Feature chooser text when filter [mode](ui.iggridfiltering#options:mode) is advanced. Use option [locale.featureChooserTextAdvancedFilter](ui.iggridfiltering#options:locale.featureChooserTextAdvancedFilter).
     */
-  var featureChooserTextAdvancedFilter: js.UndefOr[String] = js.native
+  var featureChooserTextAdvancedFilter: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Feature chooser text when filter is hidden and filter [mode](ui.iggridfiltering#options:mode) is simple. Use option [locale.featureChooserTextHide](ui.iggridfiltering#options:locale.featureChooserTextHide).
     */
-  var featureChooserTextHide: js.UndefOr[String] = js.native
+  var featureChooserTextHide: js.UndefOr[String] = js.undefined
   
   /**
     * The filtering button for filter dropdowns can be rendered either on the left of the filter editor, or on the right.
@@ -107,13 +106,13 @@ trait IgGridFiltering
     * "left" The button is rendered on the left.
     * "right" The button is rendered on the right.
     */
-  var filterButtonLocation: js.UndefOr[String] = js.native
+  var filterButtonLocation: js.UndefOr[String] = js.undefined
   
   /**
     * Time in milliseconds for which widget will wait between keystrokes before sending filtering requests.
     *
     */
-  var filterDelay: js.UndefOr[Double] = js.native
+  var filterDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Add button width - in the advanced filter dialog.
@@ -123,31 +122,31 @@ trait IgGridFiltering
     * "string" The dialog Add button width in pixels (100px).
     * "number" The dialog Add button width in pixels as a number (100).
     */
-  var filterDialogAddButtonWidth: js.UndefOr[String | Double] = js.native
+  var filterDialogAddButtonWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Custom template for options in dropdown in add condition area in the filter dialog. The default template is "<option value='${value}'>${text}</option>"
     * and it is used when [filterDialogAddConditionTemplate](ui.iggridfiltering#options:filterDialogAddConditionTemplate) is applied
     *
     */
-  var filterDialogAddConditionDropDownTemplate: js.UndefOr[String] = js.native
+  var filterDialogAddConditionDropDownTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Custom template for add condition area in the filter dialog. The default template is "<div><span>${label1}</span><div><input></input></div><span>${label2}</span></div>".
     *
     */
-  var filterDialogAddConditionTemplate: js.UndefOr[String] = js.native
+  var filterDialogAddConditionTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after the advanced filter dialog has been closed.
     */
-  var filterDialogClosed: js.UndefOr[FilterDialogClosedEvent] = js.native
+  var filterDialogClosed: js.UndefOr[FilterDialogClosedEvent] = js.undefined
   
   /**
     * Event fired before the advanced filter dialog is closed.
     * Return false in order to cancel filtering dialog closing.
     */
-  var filterDialogClosing: js.UndefOr[FilterDialogClosingEvent] = js.native
+  var filterDialogClosing: js.UndefOr[FilterDialogClosingEvent] = js.undefined
   
   /**
     * Width of the column chooser dropdowns in the advanced filter dialog.
@@ -157,7 +156,7 @@ trait IgGridFiltering
     * "string" The column chooser dropdowns width in pixels (80px).
     * "number" The column chooser dropdowns width in pixels  as a number (80).
     */
-  var filterDialogColumnDropDownDefaultWidth: js.UndefOr[String | Double] = js.native
+  var filterDialogColumnDropDownDefaultWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Controls containment behavior.
@@ -165,18 +164,18 @@ trait IgGridFiltering
     * owner  The filter dialog will be draggable only within the grid area.
     * window  The filter dialog will be draggable within the whole window area.
     */
-  var filterDialogContainment: js.UndefOr[String] = js.native
+  var filterDialogContainment: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after the contents of the advanced filter dialog are rendered.
     */
-  var filterDialogContentsRendered: js.UndefOr[FilterDialogContentsRenderedEvent] = js.native
+  var filterDialogContentsRendered: js.UndefOr[FilterDialogContentsRenderedEvent] = js.undefined
   
   /**
     * Event fired before the contents of the advanced filter dialog are rendered.
     * Return false in order to cancel filtering dialog rendering.
     */
-  var filterDialogContentsRendering: js.UndefOr[FilterDialogContentsRenderingEvent] = js.native
+  var filterDialogContentsRendering: js.UndefOr[FilterDialogContentsRenderingEvent] = js.undefined
   
   /**
     * Width of the filtering expression input boxes in the advanced filter dialog.
@@ -186,25 +185,25 @@ trait IgGridFiltering
     * "string" The filtering expression input boxes width in pixels (80px).
     * "number" The filtering expression input boxes width in pixels as a number (80).
     */
-  var filterDialogExprInputDefaultWidth: js.UndefOr[String | Double] = js.native
+  var filterDialogExprInputDefaultWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Event fired after a filter row is added to the advanced filter dialog.
     */
-  var filterDialogFilterAdded: js.UndefOr[FilterDialogFilterAddedEvent] = js.native
+  var filterDialogFilterAdded: js.UndefOr[FilterDialogFilterAddedEvent] = js.undefined
   
   /**
     * Event fired before a filter row is added to the advanced filter dialog.
     * Return false in order to cancel filter adding to the advanced filtering dialog.
     */
-  var filterDialogFilterAdding: js.UndefOr[FilterDialogFilterAddingEvent] = js.native
+  var filterDialogFilterAdding: js.UndefOr[FilterDialogFilterAddingEvent] = js.undefined
   
   /**
     * Custom template for options in condition list in filter dialog. The default template is "<option value='${condition}'>${text}</option>"
     * and it is used for custimizing DOM elemenent with attribute "data-af-cond".
     *
     */
-  var filterDialogFilterConditionTemplate: js.UndefOr[String] = js.native
+  var filterDialogFilterConditionTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Width of the filtering condition dropdowns in the advanced filter dialog.
@@ -214,7 +213,7 @@ trait IgGridFiltering
     * "string" The filtering condition dropdowns width in pixels (80px).
     * "number" The filtering condition dropdowns width in pixels as a number (80).
     */
-  var filterDialogFilterDropDownDefaultWidth: js.UndefOr[String | Double] = js.native
+  var filterDialogFilterDropDownDefaultWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Custom template for filter dialog.
@@ -224,12 +223,12 @@ trait IgGridFiltering
     * The default template is "<tr data-af-row><td><input data-af-col/></td><td><input data-af-cond/></td><td><input data-af-expr /> </td><td><span data-af-rmv></span></td></tr>".
     *
     */
-  var filterDialogFilterTemplate: js.UndefOr[String] = js.native
+  var filterDialogFilterTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired when the OK button in the advanced filter dialog is pressed.
     */
-  var filterDialogFiltering: js.UndefOr[FilterDialogFilteringEvent] = js.native
+  var filterDialogFiltering: js.UndefOr[FilterDialogFilteringEvent] = js.undefined
   
   /**
     * default filter dialog height (used for Advanced filtering [mode](ui.iggridfiltering#options:mode)).
@@ -239,18 +238,18 @@ trait IgGridFiltering
     * "string" The dialog window height in pixels (350px).
     * "number" The dialog window height in pixels as a number (350).
     */
-  var filterDialogHeight: js.UndefOr[String | Double] = js.native
+  var filterDialogHeight: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Maximum number of filter rows in the advanced filtering dialog. If this number is exceeded, an error message will be rendered.
     *
     */
-  var filterDialogMaxFilterCount: js.UndefOr[Double] = js.native
+  var filterDialogMaxFilterCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Event fired every time the advanced filter dialog changes its position.
     */
-  var filterDialogMoving: js.UndefOr[FilterDialogMovingEvent] = js.native
+  var filterDialogMoving: js.UndefOr[FilterDialogMovingEvent] = js.undefined
   
   /**
     * Width of the Ok and Cancel buttons in the advanced filtering dialogs.
@@ -260,18 +259,18 @@ trait IgGridFiltering
     * "string" The advanced filter dialog Ok and Cancel buttons width in pixels (120px).
     * "number" The advanced filter dialog Ok and Cancel buttons width in pixels as a number (120).
     */
-  var filterDialogOkCancelButtonWidth: js.UndefOr[String | Double] = js.native
+  var filterDialogOkCancelButtonWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Event fired after the advanced filter dialog is already opened.
     */
-  var filterDialogOpened: js.UndefOr[FilterDialogOpenedEvent] = js.native
+  var filterDialogOpened: js.UndefOr[FilterDialogOpenedEvent] = js.undefined
   
   /**
     * Event fired before the advanced filtering dialog is opened.
     * Return false in order to cancel filter dialog opening.
     */
-  var filterDialogOpening: js.UndefOr[FilterDialogOpeningEvent] = js.native
+  var filterDialogOpening: js.UndefOr[FilterDialogOpeningEvent] = js.undefined
   
   /**
     * Default filter dialog width (used for Advanced filtering [mode](ui.iggridfiltering#options:mode)).
@@ -281,13 +280,13 @@ trait IgGridFiltering
     * "string" The dialog window width in pixels (500px).
     * "number" The dialog window width in pixels as a number (500).
     */
-  var filterDialogWidth: js.UndefOr[String | Double] = js.native
+  var filterDialogWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Animation duration in milliseconds for the [filterDropDownAnimations](ui.iggridfiltering#options:filterDropDownAnimations).
     *
     */
-  var filterDropDownAnimationDuration: js.UndefOr[Double] = js.native
+  var filterDropDownAnimationDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Type of animations for the column filter dropdowns.
@@ -297,7 +296,7 @@ trait IgGridFiltering
     * "linear" The column filtering drop downs are shown with a linear animation.
     * "none" No animation is used when showing the filtering drop downs.
     */
-  var filterDropDownAnimations: js.UndefOr[String] = js.native
+  var filterDropDownAnimations: js.UndefOr[String] = js.undefined
   
   /**
     * Height of the column filter dropdowns.
@@ -305,7 +304,7 @@ trait IgGridFiltering
     * string  The height of the column filter dropdowns in pixels (0px).
     * number  The height of the column filter dropdowns in pixels as a number (0).
     */
-  var filterDropDownHeight: js.UndefOr[js.Any] = js.native
+  var filterDropDownHeight: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Enable/disable filter icons visibility.
@@ -315,7 +314,7 @@ trait IgGridFiltering
     * "true" All predefined filters in the filter dropdowns will have icons rendered in front of the text.
     * "false" No icons will be rendered.
     */
-  var filterDropDownItemIcons: js.UndefOr[Boolean] = js.native
+  var filterDropDownItemIcons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Width of the column filter dropdowns.
@@ -325,13 +324,13 @@ trait IgGridFiltering
     * "string" The width in pixels (0px)
     * "number" The width in pixels as a number (0)
     */
-  var filterDropDownWidth: js.UndefOr[String | Double] = js.native
+  var filterDropDownWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * URL key name that specifies how the filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData.
     *
     */
-  var filterExprUrlKey: js.UndefOr[String] = js.native
+  var filterExprUrlKey: js.UndefOr[String] = js.undefined
   
   /**
     * Enable/disable footer visibility with summary info about the filter.
@@ -339,33 +338,33 @@ trait IgGridFiltering
     * When true, the filter summary row will only be visible when a filter is applied i.e. it's not visible by default.
     *
     */
-  var filterSummaryAlwaysVisible: js.UndefOr[Boolean] = js.native
+  var filterSummaryAlwaysVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Summary template that will appear in the bottom left corner of the footer. Has the format '${matches} matching records'. Use option [locale.filterSummaryTemplate](ui.iggridfiltering#options:locale.filterSummaryTemplate).
     */
-  var filterSummaryTemplate: js.UndefOr[String] = js.native
+  var filterSummaryTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Enables/disables feature inheritance for the child [layouts](ui.ighierarchicalgrid#options:columnLayouts). NOTE: It only applies for [igHierarchicalGrid](ui.ighierarchicalgrid).
     *
     */
-  var inherit: js.UndefOr[Boolean] = js.native
+  var inherit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * A list of configurable and localized labels that are used for the predefined filtering conditions in the filter dropdowns. Use option [locale](ui.iggridfiltering#options:locale).
     */
-  var labels: js.UndefOr[String] = js.native
+  var labels: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var locale: js.UndefOr[IgGridFilteringLocale] = js.native
+  var locale: js.UndefOr[IgGridFilteringLocale] = js.undefined
   
   /**
     * Default is 'simple' for non-virtualized grids, and 'advanced' when [virtualization](ui.iggrid#options:virtualization) is enabled.
@@ -375,55 +374,55 @@ trait IgGridFiltering
     * "simple" Renders just a filter row.
     * "advanced" Allows to configure multiple filters from a dialog - Excel style.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * List of configurable and localized null texts that will be used for the filter editors. Use option [locale](ui.iggridfiltering#options:locale).
     */
-  var nullTexts: js.UndefOr[String] = js.native
+  var nullTexts: js.UndefOr[String] = js.undefined
   
   /**
     * Enables/disables filtering persistence between states.
     *
     */
-  var persist: js.UndefOr[Boolean] = js.native
+  var persist: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Render in [Feature Chooser](http://www.igniteui.com/help/iggrid-feature-chooser)
     *
     */
-  var renderFC: js.UndefOr[Boolean] = js.native
+  var renderFC: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable/disable filter button visibility. If false, no filter dropdown buttons will be rendered and a predefined list of filters will not be rendered for the columns.
     *
     */
-  var renderFilterButton: js.UndefOr[Boolean] = js.native
+  var renderFilterButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable/disable empty condition visibility in the filter. If true, shows empty and not empty filtering conditions in the dropdowns.
     *
     */
-  var showEmptyConditions: js.UndefOr[Boolean] = js.native
+  var showEmptyConditions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable/disable visibility of null and not null filtering conditions in the dropdowns. If true, shows null and not null filtering conditions in the dropdowns.
     *
     */
-  var showNullConditions: js.UndefOr[Boolean] = js.native
+  var showNullConditions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Custom tooltip template for the filter button, when a filter is applied. Use option [locale.tooltipTemplate](ui.iggridfiltering#options:locale.tooltipTemplate).
     */
-  var tooltipTemplate: js.UndefOr[String] = js.native
+  var tooltipTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Type of filtering. Delegates all filtering functionality to the [$.ig.DataSource](ig.datasource).
@@ -433,7 +432,7 @@ trait IgGridFiltering
     * "remote" Filtering is performed by a remote end-point.
     * "local" Filtering is performed locally by the [$.ig.DataSource](ig.datasource).
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object IgGridFiltering {
   

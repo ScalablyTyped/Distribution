@@ -6,11 +6,12 @@ import typings.std.Node
 import typings.std.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangyRange extends Range {
+trait RangyRange
+  extends StObject
+     with Range {
   
   def canSurroundContents(): Boolean = js.native
   
@@ -38,9 +39,9 @@ trait RangyRange extends Range {
   def getDocument(): Document = js.native
   
   def getNodes(): js.Array[Node] = js.native
-  def getNodes(nodeTypes: js.UndefOr[scala.Nothing], filter: js.Function1[/* node */ Node, Boolean]): js.Array[Node] = js.native
-  def getNodes(nodeTypes: js.Array[_]): js.Array[Node] = js.native
-  def getNodes(nodeTypes: js.Array[_], filter: js.Function1[/* node */ Node, Boolean]): js.Array[Node] = js.native
+  def getNodes(nodeTypes: js.Array[js.Any]): js.Array[Node] = js.native
+  def getNodes(nodeTypes: js.Array[js.Any], filter: js.Function1[/* node */ Node, Boolean]): js.Array[Node] = js.native
+  def getNodes(nodeTypes: Unit, filter: js.Function1[/* node */ Node, Boolean]): js.Array[Node] = js.native
   
   def inspect(): String = js.native
   
@@ -61,7 +62,7 @@ trait RangyRange extends Range {
   def select(): js.Any = js.native
   
   def setStartAndEnd(startNode: Node, startOffset: Double): js.Any = js.native
-  def setStartAndEnd(startNode: Node, startOffset: Double, endNode: js.UndefOr[scala.Nothing], endOffset: Double): js.Any = js.native
+  def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Unit, endOffset: Double): js.Any = js.native
   def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Node): js.Any = js.native
   def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Node, endOffset: Double): js.Any = js.native
   def setStartAndEnd(startNode: Node, startOffset: Double, endOffset: Double): js.Any = js.native

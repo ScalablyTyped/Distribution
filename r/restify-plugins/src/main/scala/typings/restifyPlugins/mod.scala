@@ -1,6 +1,5 @@
 package typings.restifyPlugins
 
-import typings.bunyan.mod.^
 import typings.restify.mod.Request
 import typings.restify.mod.RequestHandler
 import typings.restify.mod.Response
@@ -14,214 +13,178 @@ import typings.restifyPlugins.anon.UserAgentRegExp
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("restify-plugins", "acceptParser")
+  @JSImport("restify-plugins", JSImport.Namespace)
   @js.native
-  def acceptParser(accepts: js.Array[String]): RequestHandler = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("restify-plugins", "auditLogger")
-  @js.native
-  def auditLogger(options: AuditLoggerOptions): js.Function1[/* repeated */ js.Any, Unit] = js.native
+  @scala.inline
+  def acceptParser(accepts: js.Array[String]): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("acceptParser")(accepts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "authorizationParser")
-  @js.native
-  def authorizationParser(): RequestHandler = js.native
-  @JSImport("restify-plugins", "authorizationParser")
-  @js.native
-  def authorizationParser(options: js.Any): RequestHandler = js.native
+  @scala.inline
+  def auditLogger(options: AuditLoggerOptions): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("auditLogger")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
   
-  @JSImport("restify-plugins", "bodyParser")
-  @js.native
-  def bodyParser(): js.Array[RequestHandler] = js.native
-  @JSImport("restify-plugins", "bodyParser")
-  @js.native
-  def bodyParser(options: BodyParserOptions): js.Array[RequestHandler] = js.native
+  @scala.inline
+  def authorizationParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def authorizationParser(options: js.Any): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "bodyReader")
-  @js.native
-  def bodyReader(): RequestHandler = js.native
-  @JSImport("restify-plugins", "bodyReader")
-  @js.native
-  def bodyReader(options: MaxBodySize): RequestHandler = js.native
+  @scala.inline
+  def bodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")().asInstanceOf[js.Array[RequestHandler]]
+  @scala.inline
+  def bodyParser(options: BodyParserOptions): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
   
-  @JSImport("restify-plugins", "conditionalRequest")
-  @js.native
-  def conditionalRequest(): js.Array[RequestHandler] = js.native
+  @scala.inline
+  def bodyReader(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyReader")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def bodyReader(options: MaxBodySize): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyReader")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "dateParser")
-  @js.native
-  def dateParser(): RequestHandler = js.native
-  @JSImport("restify-plugins", "dateParser")
-  @js.native
-  def dateParser(delta: Double): RequestHandler = js.native
+  @scala.inline
+  def conditionalRequest(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("conditionalRequest")().asInstanceOf[js.Array[RequestHandler]]
   
-  @JSImport("restify-plugins", "fullResponse")
-  @js.native
-  def fullResponse(): RequestHandler = js.native
+  @scala.inline
+  def dateParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dateParser")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def dateParser(delta: Double): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dateParser")(delta.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "gzipResponse")
-  @js.native
-  def gzipResponse(): RequestHandler = js.native
-  @JSImport("restify-plugins", "gzipResponse")
-  @js.native
-  def gzipResponse(options: js.Any): RequestHandler = js.native
+  @scala.inline
+  def fullResponse(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("fullResponse")().asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "jsonBodyParser")
-  @js.native
-  def jsonBodyParser(): js.Array[RequestHandler] = js.native
-  @JSImport("restify-plugins", "jsonBodyParser")
-  @js.native
-  def jsonBodyParser(options: MapParams): js.Array[RequestHandler] = js.native
+  @scala.inline
+  def gzipResponse(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def gzipResponse(options: js.Any): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "jsonp")
-  @js.native
-  def jsonp(): RequestHandler = js.native
+  @scala.inline
+  def jsonBodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")().asInstanceOf[js.Array[RequestHandler]]
+  @scala.inline
+  def jsonBodyParser(options: MapParams): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
   
-  @JSImport("restify-plugins", "metrics")
-  @js.native
-  def metrics(opts: Server, callback: js.Function1[/* options */ MetricsCallback, _]): js.Function1[/* repeated */ js.Any, Unit] = js.native
+  @scala.inline
+  def jsonp(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")().asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "multipartBodyParser")
-  @js.native
-  def multipartBodyParser(): RequestHandler = js.native
-  @JSImport("restify-plugins", "multipartBodyParser")
-  @js.native
-  def multipartBodyParser(options: MultipartBodyParser_): RequestHandler = js.native
+  @scala.inline
+  def metrics(opts: Server, callback: js.Function1[/* options */ MetricsCallback, js.Any]): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("metrics")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
   
-  @JSImport("restify-plugins", "oauth2TokenParser")
-  @js.native
-  def oauth2TokenParser(): RequestHandler = js.native
+  @scala.inline
+  def multipartBodyParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def multipartBodyParser(options: MultipartBodyParser_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  
+  @scala.inline
+  def oauth2TokenParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("oauth2TokenParser")().asInstanceOf[RequestHandler]
   
   object pre {
+    
+    @JSImport("restify-plugins", "pre")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Provide req.set(key, val) and req.get(key) methods for setting and retrieving context to a specific request.
       */
-    @JSImport("restify-plugins", "pre.context")
-    @js.native
-    def context(): RequestHandler = js.native
+    @scala.inline
+    def context(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("context")().asInstanceOf[RequestHandler]
     
-    @JSImport("restify-plugins", "pre.dedupeSlashes")
-    @js.native
-    def dedupeSlashes(): RequestHandler = js.native
+    @scala.inline
+    def dedupeSlashes(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dedupeSlashes")().asInstanceOf[RequestHandler]
     
     /**
       * This pre handler fixes issues with node hanging when an asyncHandler is used prior to bodyParser.
       */
-    @JSImport("restify-plugins", "pre.pause")
-    @js.native
-    def pause(): RequestHandler = js.native
+    @scala.inline
+    def pause(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")().asInstanceOf[RequestHandler]
     
     /**
       * Automatically reuse incoming request header as the request id.
       */
-    @JSImport("restify-plugins", "pre.reqIdHeaders")
-    @js.native
-    def reqIdHeaders(options: Headers): RequestHandler = js.native
+    @scala.inline
+    def reqIdHeaders(options: Headers): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("reqIdHeaders")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
     
     /**
       * Cleans up duplicate or trailing / on the URL
       */
-    @JSImport("restify-plugins", "pre.sanitizePath")
-    @js.native
-    def sanitizePath(): RequestHandler = js.native
+    @scala.inline
+    def sanitizePath(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizePath")().asInstanceOf[RequestHandler]
     
     /**
       * Checks req.urls query params with strict key/val format and rejects non-strict requests with status code 400.
       */
-    @JSImport("restify-plugins", "pre.strictQueryParams")
-    @js.native
-    def strictQueryParams(): RequestHandler = js.native
-    @JSImport("restify-plugins", "pre.strictQueryParams")
-    @js.native
-    def strictQueryParams(options: Message): RequestHandler = js.native
+    @scala.inline
+    def strictQueryParams(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("strictQueryParams")().asInstanceOf[RequestHandler]
+    @scala.inline
+    def strictQueryParams(options: Message): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("strictQueryParams")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
     
     /**
       * Regexp to capture curl user-agents
       */
-    @JSImport("restify-plugins", "pre.userAgentConnection")
-    @js.native
-    def userAgentConnection(): RequestHandler = js.native
-    @JSImport("restify-plugins", "pre.userAgentConnection")
-    @js.native
-    def userAgentConnection(options: UserAgentRegExp): RequestHandler = js.native
+    @scala.inline
+    def userAgentConnection(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentConnection")().asInstanceOf[RequestHandler]
+    @scala.inline
+    def userAgentConnection(options: UserAgentRegExp): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentConnection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   }
   
-  @JSImport("restify-plugins", "queryParser")
-  @js.native
-  def queryParser(): RequestHandler = js.native
-  @JSImport("restify-plugins", "queryParser")
-  @js.native
-  def queryParser(options: QueryParserOptions): RequestHandler = js.native
+  @scala.inline
+  def queryParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParser")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def queryParser(options: QueryParserOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "requestExpiry")
-  @js.native
-  def requestExpiry(): RequestHandler = js.native
-  @JSImport("restify-plugins", "requestExpiry")
-  @js.native
-  def requestExpiry(options: RequestExpiryOptions): RequestHandler = js.native
+  @scala.inline
+  def requestExpiry(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestExpiry")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def requestExpiry(options: RequestExpiryOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestExpiry")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "requestLogger")
-  @js.native
-  def requestLogger(): RequestHandler = js.native
-  @JSImport("restify-plugins", "requestLogger")
-  @js.native
-  def requestLogger(options: RequestLogger_): RequestHandler = js.native
+  @scala.inline
+  def requestLogger(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def requestLogger(options: RequestLogger_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "serveStatic")
-  @js.native
-  def serveStatic(): RequestHandler = js.native
-  @JSImport("restify-plugins", "serveStatic")
-  @js.native
-  def serveStatic(options: ServeStatic_): RequestHandler = js.native
+  @scala.inline
+  def serveStatic(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def serveStatic(options: ServeStatic_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "throttle")
-  @js.native
-  def throttle(): RequestHandler = js.native
-  @JSImport("restify-plugins", "throttle")
-  @js.native
-  def throttle(options: ThrottleOptions): RequestHandler = js.native
+  @scala.inline
+  def throttle(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def throttle(options: ThrottleOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @JSImport("restify-plugins", "urlEncodedBodyParser")
-  @js.native
-  def urlEncodedBodyParser(): js.Array[RequestHandler] = js.native
-  @JSImport("restify-plugins", "urlEncodedBodyParser")
-  @js.native
-  def urlEncodedBodyParser(options: UrlEncodedBodyParser_): js.Array[RequestHandler] = js.native
+  @scala.inline
+  def urlEncodedBodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodedBodyParser")().asInstanceOf[js.Array[RequestHandler]]
+  @scala.inline
+  def urlEncodedBodyParser(options: UrlEncodedBodyParser_): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodedBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
   
-  @js.native
   trait AuditLoggerOptions extends StObject {
     
-    var body: js.UndefOr[Boolean] = js.native
+    var body: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Bunyan logger
       */
-    var log: ^ = js.native
+    var log: typings.bunyan.mod.^
     
     /**
       * Ringbuffer which is written to if passed in
       */
-    var logBuffer: js.UndefOr[js.Any] = js.native
+    var logBuffer: js.UndefOr[js.Any] = js.undefined
     
     /**
       * When true, prints audit logs. default true.
       */
-    var printLog: js.UndefOr[Boolean] = js.native
+    var printLog: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Restify server. If passed in, causes server to emit 'auditlog' event after audit logs are flushed
       */
-    var server: js.UndefOr[typings.restify.mod.Server] = js.native
+    var server: js.UndefOr[typings.restify.mod.Server] = js.undefined
   }
   object AuditLoggerOptions {
     
     @scala.inline
-    def apply(log: ^): AuditLoggerOptions = {
+    def apply(log: typings.bunyan.mod.^): AuditLoggerOptions = {
       val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuditLoggerOptions]
     }
@@ -236,7 +199,7 @@ object mod {
       def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
       @scala.inline
-      def setLog(value: ^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLogBuffer(value: js.Any): Self = StObject.set(x, "logBuffer", value.asInstanceOf[js.Any])
@@ -258,37 +221,36 @@ object mod {
     }
   }
   
-  @js.native
   trait BodyParserOptions extends StObject {
     
     /**
       * If you want checksums calculated for incoming files, set this to either sha1 or md5.
       */
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
     /**
       * If you want the uploaded files to include the extensions of the original files (multipart uploads only). Does nothing if multipartFileHandler is defined.
       */
-    var keepExtensions: js.UndefOr[Boolean] = js.native
+    var keepExtensions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If req.params should be filled with the contents of files sent through a multipart request.
       * Formidable is used internally for parsing, and a file is denoted as a multipart part with the filename option set in its Content-Disposition.
       * This will only be performed if mapParams is true.
       */
-    var mapFiles: js.UndefOr[Boolean] = js.native
+    var mapFiles: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If req.params should be filled with parsed parameters from HTTP body.
       */
-    var mapParams: js.UndefOr[Boolean] = js.native
+    var mapParams: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum size in bytes allowed in the HTTP body. Useful for limiting clients from hogging server memory.
       */
-    var maxBodySize: js.UndefOr[Double] = js.native
+    var maxBodySize: js.UndefOr[Double] = js.undefined
     
-    var maxFieldsSize: js.UndefOr[Double] = js.native
+    var maxFieldsSize: js.UndefOr[Double] = js.undefined
     
     /**
       * A callback to handle any multipart file.
@@ -296,37 +258,37 @@ object mod {
       * This typically happens when a browser sends a form and there is a parameter similar to <input type="file" />.
       * If this is not provided, the default behaviour is to map the contents into req.params.
       */
-    var multipartFileHandler: js.UndefOr[js.Function0[Unit]] = js.native
+    var multipartFileHandler: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A callback to handle any multipart part which is not a file.
       * If this is omitted, the default handler is invoked which may or may not map the parts into req.params, depending on the mapParams-option.
       */
-    var multipartHandler: js.UndefOr[js.Function0[Unit]] = js.native
+    var multipartHandler: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * If you want to support html5 multiple attribute in upload fields.
       */
-    var multiples: js.UndefOr[Boolean] = js.native
+    var multiples: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If an entry in req.params should be overwritten by the value in the body if the names are the same.
       * For instance, if you have the route /:someval, and someone posts an x-www-form-urlencoded Content-Type with the body someval=happy to /sad,
       * the value will be happy if overrideParams is true, sad otherwise.
       */
-    var overrideParams: js.UndefOr[Boolean] = js.native
+    var overrideParams: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true if you want to end the request with a UnsupportedMediaTypeError when none of the supported content types was given.
       */
-    var rejectUnknown: js.UndefOr[Boolean] = js.native
+    var rejectUnknown: js.UndefOr[Boolean] = js.undefined
     
-    var reviver: js.UndefOr[js.Any] = js.native
+    var reviver: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Where uploaded files are intermediately stored during transfer before the contents is mapped into req.params. Does nothing if multipartFileHandler is defined.
       */
-    var uploadDir: js.UndefOr[String] = js.native
+    var uploadDir: js.UndefOr[String] = js.undefined
   }
   object BodyParserOptions {
     
@@ -419,24 +381,23 @@ object mod {
     }
   }
   
-  @js.native
   trait MetricsCallback extends StObject {
     
     /**
       *  An error if the request had an error
       */
-    var err: Error = js.native
+    var err: Error
     
-    var metrics: MetricsCallbackOptions = js.native
+    var metrics: MetricsCallbackOptions
     
-    var req: Request = js.native
+    var req: Request
     
-    var res: Response = js.native
+    var res: Response
     
     /**
       * The route obj that serviced the request
       */
-    var route: Route = js.native
+    var route: Route
   }
   object MetricsCallback {
     
@@ -466,7 +427,6 @@ object mod {
     }
   }
   
-  @js.native
   trait MetricsCallbackOptions extends StObject {
     
     /**
@@ -474,28 +434,28 @@ object mod {
       *
       * If connectionState is either 'close' or 'aborted', then the statusCode is not applicable since the connection was severed before a response was written.
       */
-    var connectionState: TMetricsCallback = js.native
+    var connectionState: TMetricsCallback
     
     /**
       * Request latency
       */
-    var latency: Double = js.native
+    var latency: Double
     
     /**
       * HTTP request verb
       */
-    var method: String = js.native
+    var method: String
     
     /**
       * req.path() value
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * Status code of the response. Can be undefined in the case of an `uncaughtException`.
       * Otherwise, in most normal scenarios, even calling `res.send()` or `res.end()` should result in a 200 by default.
       */
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object MetricsCallbackOptions {
     
@@ -528,28 +488,27 @@ object mod {
     }
   }
   
-  @js.native
   trait MultipartBodyParser_ extends StObject {
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var keepExtensions: js.UndefOr[Boolean] = js.native
+    var keepExtensions: js.UndefOr[Boolean] = js.undefined
     
-    var mapFiles: js.UndefOr[Boolean] = js.native
+    var mapFiles: js.UndefOr[Boolean] = js.undefined
     
-    var mapParams: js.UndefOr[Boolean] = js.native
+    var mapParams: js.UndefOr[Boolean] = js.undefined
     
-    var maxFieldsSize: js.UndefOr[Double] = js.native
+    var maxFieldsSize: js.UndefOr[Double] = js.undefined
     
-    var multipartFileHandler: js.UndefOr[js.Any] = js.native
+    var multipartFileHandler: js.UndefOr[js.Any] = js.undefined
     
-    var multipartHandler: js.UndefOr[js.Any] = js.native
+    var multipartHandler: js.UndefOr[js.Any] = js.undefined
     
-    var multiples: js.UndefOr[Boolean] = js.native
+    var multiples: js.UndefOr[Boolean] = js.undefined
     
-    var overrideParams: js.UndefOr[Boolean] = js.native
+    var overrideParams: js.UndefOr[Boolean] = js.undefined
     
-    var uploadDir: js.UndefOr[String] = js.native
+    var uploadDir: js.UndefOr[String] = js.undefined
   }
   object MultipartBodyParser_ {
     
@@ -624,54 +583,53 @@ object mod {
     }
   }
   
-  @js.native
   trait QueryParserOptions extends StObject {
     
     /**
       *  Default false. Transform `?foo.bar=baz` to a nested object: `{foo: {bar: 'baz'}}`.
       */
-    var allowDots: js.UndefOr[Boolean] = js.native
+    var allowDots: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default 20. Only transform `?a[$index]=b` to an array if `$index` is less than `arrayLimit`.
       */
-    var arrayLimit: js.UndefOr[Double] = js.native
+    var arrayLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Default 5. The depth limit for parsing nested objects, e.g. `?a[b][c][d][e][f][g][h][i]=j`.
       */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
     /**
       * Default `false`. Copies parsed query parameters into `req.params`.
       */
-    var mapParams: js.UndefOr[Boolean] = js.native
+    var mapParams: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default `false`. Only applies when if mapParams true. When true, will stomp on req.params field when existing value is found.
       */
-    var overrideParams: js.UndefOr[Boolean] = js.native
+    var overrideParams: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default 1000. Maximum number of query params parsed. Additional params are silently dropped.
       */
-    var parameterLimit: js.UndefOr[Double] = js.native
+    var parameterLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Default true. Whether to parse `?a[]=b&a[1]=c` to an array, e.g. `{a: ['b', 'c']}`.
       */
-    var parseArrays: js.UndefOr[Boolean] = js.native
+    var parseArrays: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default false. Whether `req.query` is a "plain" object -- does not inherit from `Object`.
       * This can be used to allow query params whose names collide with Object methods, e.g. `?hasOwnProperty=blah`.
       */
-    var plainObjects: js.UndefOr[Boolean] = js.native
+    var plainObjects: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default false. If true, `?a&b=` results in `{a: null, b: ''}`. Otherwise, `{a: '', b: ''}`.
       */
-    var strictNullHandling: js.UndefOr[Boolean] = js.native
+    var strictNullHandling: js.UndefOr[Boolean] = js.undefined
   }
   object QueryParserOptions {
     
@@ -740,23 +698,22 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestExpiryOptions extends StObject {
     
     /**
       * Header name of the absolute time for request expiration
       */
-    var absoluteHeader: js.UndefOr[String] = js.native
+    var absoluteHeader: js.UndefOr[String] = js.undefined
     
     /**
       * Header name for the start time of the request
       */
-    var startHeader: js.UndefOr[String] = js.native
+    var startHeader: js.UndefOr[String] = js.undefined
     
     /**
       * The header name for the time in milliseconds that should ellapse before the request is considered expired.
       */
-    var timeoutHeader: js.UndefOr[String] = js.native
+    var timeoutHeader: js.UndefOr[String] = js.undefined
   }
   object RequestExpiryOptions {
     
@@ -789,16 +746,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestLogger_ extends StObject {
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var log: js.UndefOr[js.Any] = js.native
+    var log: js.UndefOr[js.Any] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
-    var serializers: js.UndefOr[js.Any] = js.native
+    var serializers: js.UndefOr[js.Any] = js.undefined
   }
   object RequestLogger_ {
     
@@ -837,26 +793,25 @@ object mod {
     }
   }
   
-  @js.native
   trait ServeStatic_ extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
-    var appendRequestPath: js.UndefOr[Boolean] = js.native
+    var appendRequestPath: js.UndefOr[Boolean] = js.undefined
     
-    var charSet: js.UndefOr[String] = js.native
+    var charSet: js.UndefOr[String] = js.undefined
     
-    var directory: js.UndefOr[String] = js.native
+    var directory: js.UndefOr[String] = js.undefined
     
-    var etag: js.UndefOr[String] = js.native
+    var etag: js.UndefOr[String] = js.undefined
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
-    var `match`: js.UndefOr[js.Any] = js.native
+    var `match`: js.UndefOr[js.Any] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
   }
   object ServeStatic_ {
     
@@ -928,28 +883,27 @@ object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.restifyPlugins.restifyPluginsStrings.close
     - typings.restifyPlugins.restifyPluginsStrings.aborted
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type TMetricsCallback = js.UndefOr[_TMetricsCallback]
   
-  @js.native
   trait ThrottleOptions extends StObject {
     
-    var burst: js.UndefOr[Double] = js.native
+    var burst: js.UndefOr[Double] = js.undefined
     
-    var ip: js.UndefOr[Boolean] = js.native
+    var ip: js.UndefOr[Boolean] = js.undefined
     
-    var maxKeys: js.UndefOr[Double] = js.native
+    var maxKeys: js.UndefOr[Double] = js.undefined
     
-    var overrides: js.UndefOr[js.Any] = js.native
+    var overrides: js.UndefOr[js.Any] = js.undefined
     
-    var rate: js.UndefOr[Double] = js.native
+    var rate: js.UndefOr[Double] = js.undefined
     
-    var tokensTable: js.UndefOr[js.Any] = js.native
+    var tokensTable: js.UndefOr[js.Any] = js.undefined
     
-    var username: js.UndefOr[Boolean] = js.native
+    var username: js.UndefOr[Boolean] = js.undefined
     
-    var xff: js.UndefOr[Boolean] = js.native
+    var xff: js.UndefOr[Boolean] = js.undefined
   }
   object ThrottleOptions {
     
@@ -1012,12 +966,11 @@ object mod {
     }
   }
   
-  @js.native
   trait UrlEncodedBodyParser_ extends StObject {
     
-    var mapParams: js.UndefOr[Boolean] = js.native
+    var mapParams: js.UndefOr[Boolean] = js.undefined
     
-    var overrideParams: js.UndefOr[Boolean] = js.native
+    var overrideParams: js.UndefOr[Boolean] = js.undefined
   }
   object UrlEncodedBodyParser_ {
     

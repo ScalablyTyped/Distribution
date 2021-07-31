@@ -2,36 +2,34 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightEvent extends StObject {
   
   /**
     * The impact statistics of the client side service. This includes the number of requests to the client service and whether the requests were faults or okay.
     */
-  var ClientRequestImpactStatistics: js.UndefOr[RequestImpactStatistics] = js.native
+  var ClientRequestImpactStatistics: js.UndefOr[RequestImpactStatistics] = js.undefined
   
   /**
     * The time, in Unix seconds, at which the event was recorded.
     */
-  var EventTime: js.UndefOr[Timestamp] = js.native
+  var EventTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The impact statistics of the root cause service. This includes the number of requests to the client service and whether the requests were faults or okay.
     */
-  var RootCauseServiceRequestImpactStatistics: js.UndefOr[RequestImpactStatistics] = js.native
+  var RootCauseServiceRequestImpactStatistics: js.UndefOr[RequestImpactStatistics] = js.undefined
   
   /**
     * A brief description of the event.
     */
-  var Summary: js.UndefOr[EventSummaryText] = js.native
+  var Summary: js.UndefOr[EventSummaryText] = js.undefined
   
   /**
     * The service during the event that is most impacted by the incident.
     */
-  var TopAnomalousServices: js.UndefOr[AnomalousServiceList] = js.native
+  var TopAnomalousServices: js.UndefOr[AnomalousServiceList] = js.undefined
 }
 object InsightEvent {
   

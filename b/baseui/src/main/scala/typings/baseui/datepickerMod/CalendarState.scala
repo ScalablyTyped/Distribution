@@ -3,19 +3,17 @@ package typings.baseui.datepickerMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarState extends StObject {
   
-  var date: Date = js.native
+  var date: Date
   
-  var focused: Boolean = js.native
+  var focused: Boolean
   
-  var highlightedDate: Date = js.native
+  var highlightedDate: Date
   
-  var quickSelectId: js.UndefOr[String] = js.native
+  var quickSelectId: js.UndefOr[String] = js.undefined
 }
 object CalendarState {
   

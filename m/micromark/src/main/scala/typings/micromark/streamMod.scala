@@ -4,15 +4,16 @@ import typings.micromark.sharedTypesMod.Options
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object streamMod {
   
-  @JSImport("micromark/stream", JSImport.Default)
+  @JSImport("micromark/stream", JSImport.Namespace)
   @js.native
-  def default(): EventEmitter = js.native
-  @JSImport("micromark/stream", JSImport.Default)
-  @js.native
-  def default(options: Options): EventEmitter = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[EventEmitter]
+  @scala.inline
+  def default(options: Options): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
 }

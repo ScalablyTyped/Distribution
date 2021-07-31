@@ -3,16 +3,15 @@ package typings.octokitPluginRequestLog
 import typings.octokitCore.mod.Octokit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object requestLog {
     
-    @JSImport("@octokit/plugin-request-log", "requestLog")
-    @js.native
-    def apply(octokit: Octokit): Unit = js.native
+    @scala.inline
+    def apply(octokit: Octokit): Unit = ^.asInstanceOf[js.Dynamic].apply(octokit.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
     @JSImport("@octokit/plugin-request-log", "requestLog")
     @js.native
     val ^ : js.Any = js.native

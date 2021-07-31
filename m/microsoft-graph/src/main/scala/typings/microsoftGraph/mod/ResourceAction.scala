@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceAction extends StObject {
   
   // Allowed Actions
-  var allowedResourceActions: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var allowedResourceActions: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Not Allowed Actions
-  var notAllowedResourceActions: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var notAllowedResourceActions: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object ResourceAction {
   

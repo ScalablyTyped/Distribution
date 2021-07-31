@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyTopicEvidence extends StObject {
   
   /** The creative's destination URL was not crawlable by Google. */
-  var destinationNotCrawlable: js.UndefOr[DestinationNotCrawlableEvidence] = js.native
+  var destinationNotCrawlable: js.UndefOr[DestinationNotCrawlableEvidence] = js.undefined
   
   /** The creative's destination URL did not function properly or was incorrectly set up. */
-  var destinationNotWorking: js.UndefOr[DestinationNotWorkingEvidence] = js.native
+  var destinationNotWorking: js.UndefOr[DestinationNotWorkingEvidence] = js.undefined
   
   /** URL of the actual landing page. */
-  var destinationUrl: js.UndefOr[DestinationUrlEvidence] = js.native
+  var destinationUrl: js.UndefOr[DestinationUrlEvidence] = js.undefined
   
   /** Number of HTTP calls made by the creative, broken down by domain. */
-  var domainCall: js.UndefOr[DomainCallEvidence] = js.native
+  var domainCall: js.UndefOr[DomainCallEvidence] = js.undefined
   
   /** Total download size and URL-level download size breakdown for resources in a creative. */
-  var downloadSize: js.UndefOr[DownloadSizeEvidence] = js.native
+  var downloadSize: js.UndefOr[DownloadSizeEvidence] = js.undefined
   
   /** HTTP calls made by the creative that resulted in policy violations. */
-  var httpCall: js.UndefOr[HttpCallEvidence] = js.native
+  var httpCall: js.UndefOr[HttpCallEvidence] = js.undefined
   
   /** Evidence for HTTP cookie-related policy violations. */
-  var httpCookie: js.UndefOr[HttpCookieEvidence] = js.native
+  var httpCookie: js.UndefOr[HttpCookieEvidence] = js.undefined
 }
 object PolicyTopicEvidence {
   

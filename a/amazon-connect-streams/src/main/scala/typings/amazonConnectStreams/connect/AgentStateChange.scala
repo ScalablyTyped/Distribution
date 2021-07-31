@@ -2,20 +2,18 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentStateChange extends StObject {
   
   /** The `Agent` API object. */
-  val agent: Agent = js.native
+  val agent: Agent
   
   /** The name of the agent's new state. */
-  val newState: String = js.native
+  val newState: String
   
   /** The name of the agent's previous state. */
-  val oldState: String = js.native
+  val oldState: String
 }
 object AgentStateChange {
   

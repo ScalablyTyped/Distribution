@@ -2,13 +2,11 @@ package typings.activexShdocvw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhishingFilterStatus extends StObject {
   
-  val PhishingFilterStatus: Double = js.native
+  val PhishingFilterStatus: Double
 }
 object PhishingFilterStatus {
   

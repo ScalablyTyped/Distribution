@@ -2,109 +2,107 @@ package typings.ariaQuery.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ARIAPropertyMap extends StObject {
   
-  var `aria-activedescendant`: js.UndefOr[js.Any] = js.native
+  var `aria-activedescendant`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[js.Any] = js.native
+  var `aria-atomic`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[js.Any] = js.native
+  var `aria-autocomplete`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-busy`: js.UndefOr[js.Any] = js.native
+  var `aria-busy`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-checked`: js.UndefOr[js.Any] = js.native
+  var `aria-checked`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-colcount`: js.UndefOr[js.Any] = js.native
+  var `aria-colcount`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-colindex`: js.UndefOr[js.Any] = js.native
+  var `aria-colindex`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-colspan`: js.UndefOr[js.Any] = js.native
+  var `aria-colspan`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-controls`: js.UndefOr[js.Any] = js.native
+  var `aria-controls`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-current`: js.UndefOr[ARIAPropertyCurrent | Null] = js.native
+  var `aria-current`: js.UndefOr[ARIAPropertyCurrent | Null] = js.undefined
   
-  var `aria-describedat`: js.UndefOr[js.Any] = js.native
+  var `aria-describedat`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-describedby`: js.UndefOr[js.Any] = js.native
+  var `aria-describedby`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-details`: js.UndefOr[js.Any] = js.native
+  var `aria-details`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[js.Any] = js.native
+  var `aria-disabled`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[js.Any] = js.native
+  var `aria-dropeffect`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-errormessage`: js.UndefOr[js.Any] = js.native
+  var `aria-errormessage`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[js.Any] = js.native
+  var `aria-expanded`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-flowto`: js.UndefOr[js.Any] = js.native
+  var `aria-flowto`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[js.Any] = js.native
+  var `aria-grabbed`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[js.Any] = js.native
+  var `aria-haspopup`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[js.Any] = js.native
+  var `aria-hidden`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-invalid`: js.UndefOr[js.Any] = js.native
+  var `aria-invalid`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-keyshortcuts`: js.UndefOr[js.Any] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-label`: js.UndefOr[js.Any] = js.native
+  var `aria-label`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-labelledby`: js.UndefOr[js.Any] = js.native
+  var `aria-labelledby`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-level`: js.UndefOr[js.Any] = js.native
+  var `aria-level`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-live`: js.UndefOr[js.Any] = js.native
+  var `aria-live`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-modal`: js.UndefOr[js.Any] = js.native
+  var `aria-modal`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[js.Any] = js.native
+  var `aria-multiline`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[js.Any] = js.native
+  var `aria-multiselectable`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-orientation`: js.UndefOr[js.Any] = js.native
+  var `aria-orientation`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-owns`: js.UndefOr[js.Any] = js.native
+  var `aria-owns`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-placeholder`: js.UndefOr[js.Any] = js.native
+  var `aria-placeholder`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-posinset`: js.UndefOr[js.Any] = js.native
+  var `aria-posinset`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-pressed`: js.UndefOr[js.Any] = js.native
+  var `aria-pressed`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[js.Any] = js.native
+  var `aria-readonly`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-relevant`: js.UndefOr[js.Any] = js.native
+  var `aria-relevant`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-required`: js.UndefOr[js.Any] = js.native
+  var `aria-required`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-roledescription`: js.UndefOr[js.Any] = js.native
+  var `aria-roledescription`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-rowcount`: js.UndefOr[js.Any] = js.native
+  var `aria-rowcount`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-rowindex`: js.UndefOr[js.Any] = js.native
+  var `aria-rowindex`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-rowspan`: js.UndefOr[js.Any] = js.native
+  var `aria-rowspan`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-selected`: js.UndefOr[js.Any] = js.native
+  var `aria-selected`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-setsize`: js.UndefOr[js.Any] = js.native
+  var `aria-setsize`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-sort`: js.UndefOr[js.Any] = js.native
+  var `aria-sort`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-valuemax`: js.UndefOr[js.Any] = js.native
+  var `aria-valuemax`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-valuemin`: js.UndefOr[js.Any] = js.native
+  var `aria-valuemin`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-valuenow`: js.UndefOr[js.Any] = js.native
+  var `aria-valuenow`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-valuetext`: js.UndefOr[js.Any] = js.native
+  var `aria-valuetext`: js.UndefOr[js.Any] = js.undefined
 }
 object ARIAPropertyMap {
   

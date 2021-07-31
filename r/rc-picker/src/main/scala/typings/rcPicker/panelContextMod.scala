@@ -13,7 +13,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelContextMod extends Shortcut {
@@ -22,12 +21,11 @@ object panelContextMod extends Shortcut {
   @js.native
   val default: Context[PanelContextProps] = js.native
   
-  @js.native
   trait ContextOperationRefProps extends StObject {
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Boolean]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Boolean]] = js.undefined
   }
   object ContextOperationRefProps {
     
@@ -54,32 +52,31 @@ object panelContextMod extends Shortcut {
     }
   }
   
-  @js.native
   trait PanelContextProps extends StObject {
     
     /** Only used for TimePicker and this is a deprecated prop */
-    var defaultOpenValue: js.UndefOr[js.Any] = js.native
+    var defaultOpenValue: js.UndefOr[js.Any] = js.undefined
     
     /** Only work with time panel */
-    var hideHeader: js.UndefOr[Boolean] = js.native
+    var hideHeader: js.UndefOr[Boolean] = js.undefined
     
-    var hideNextBtn: js.UndefOr[Boolean] = js.native
+    var hideNextBtn: js.UndefOr[Boolean] = js.undefined
     
-    var hidePrevBtn: js.UndefOr[Boolean] = js.native
+    var hidePrevBtn: js.UndefOr[Boolean] = js.undefined
     
-    var hideRanges: js.UndefOr[Boolean] = js.native
+    var hideRanges: js.UndefOr[Boolean] = js.undefined
     
-    var onDateMouseEnter: js.UndefOr[js.Function1[/* date */ js.Any, Unit]] = js.native
+    var onDateMouseEnter: js.UndefOr[js.Function1[/* date */ js.Any, Unit]] = js.undefined
     
-    var onDateMouseLeave: js.UndefOr[js.Function1[/* date */ js.Any, Unit]] = js.native
+    var onDateMouseLeave: js.UndefOr[js.Function1[/* date */ js.Any, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[OnSelect[_]] = js.native
+    var onSelect: js.UndefOr[OnSelect[js.Any]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var operationRef: js.UndefOr[MutableRefObject[ContextOperationRefProps | Null]] = js.native
+    var operationRef: js.UndefOr[MutableRefObject[ContextOperationRefProps | Null]] = js.undefined
     
-    var panelRef: js.UndefOr[Ref[HTMLDivElement]] = js.native
+    var panelRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
   }
   object PanelContextProps {
     
@@ -135,7 +132,7 @@ object panelContextMod extends Shortcut {
       def setOnDateMouseLeaveUndefined: Self = StObject.set(x, "onDateMouseLeave", js.undefined)
       
       @scala.inline
-      def setOnSelect(value: (_, /* type */ key | mouse | submit) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      def setOnSelect(value: (js.Any, /* type */ key | mouse | submit) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)

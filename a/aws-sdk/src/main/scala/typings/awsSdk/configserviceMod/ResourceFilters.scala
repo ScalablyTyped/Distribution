@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceFilters extends StObject {
   
   /**
     * The 12-digit source account ID.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.configserviceMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.configserviceMod.AccountId] = js.undefined
   
   /**
     * The source region.
     */
-  var Region: js.UndefOr[AwsRegion] = js.native
+  var Region: js.UndefOr[AwsRegion] = js.undefined
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: js.UndefOr[typings.awsSdk.configserviceMod.ResourceId] = js.native
+  var ResourceId: js.UndefOr[typings.awsSdk.configserviceMod.ResourceId] = js.undefined
   
   /**
     * The name of the resource.
     */
-  var ResourceName: js.UndefOr[typings.awsSdk.configserviceMod.ResourceName] = js.native
+  var ResourceName: js.UndefOr[typings.awsSdk.configserviceMod.ResourceName] = js.undefined
 }
 object ResourceFilters {
   

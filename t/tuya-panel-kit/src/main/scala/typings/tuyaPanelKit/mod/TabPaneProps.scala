@@ -3,15 +3,15 @@ package typings.tuyaPanelKit.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabPaneProps extends TabProps {
+trait TabPaneProps
+  extends StObject
+     with TabProps {
   
-  var tab: js.UndefOr[ReactNode] = js.native
+  var tab: js.UndefOr[ReactNode] = js.undefined
   
-  var tabWidth: js.UndefOr[Double] = js.native
+  var tabWidth: js.UndefOr[Double] = js.undefined
 }
 object TabPaneProps {
   

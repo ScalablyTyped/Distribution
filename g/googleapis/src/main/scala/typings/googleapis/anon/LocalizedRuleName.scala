@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalizedRuleName extends StObject {
   
-  var localizedRuleName: js.UndefOr[String] = js.native
+  var localizedRuleName: js.UndefOr[String] = js.undefined
   
-  var ruleImpact: js.UndefOr[Double] = js.native
+  var ruleImpact: js.UndefOr[Double] = js.undefined
   
-  var urlBlocks: js.UndefOr[js.Array[Header]] = js.native
+  var urlBlocks: js.UndefOr[js.Array[Header]] = js.undefined
 }
 object LocalizedRuleName {
   

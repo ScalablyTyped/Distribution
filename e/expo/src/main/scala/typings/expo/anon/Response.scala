@@ -2,15 +2,13 @@ package typings.expo.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
-  var error: typings.std.Error = js.native
+  var error: typings.std.Error
   
-  var response: js.UndefOr[typings.std.Response] = js.native
+  var response: js.UndefOr[typings.std.Response] = js.undefined
 }
 object Response {
   

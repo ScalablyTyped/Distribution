@@ -2,15 +2,13 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an IntentBatch. */
-@js.native
 trait IIntentBatch extends StObject {
   
   /** IntentBatch intents */
-  var intents: js.UndefOr[js.Array[IIntent] | Null] = js.native
+  var intents: js.UndefOr[js.Array[IIntent] | Null] = js.undefined
 }
 object IIntentBatch {
   

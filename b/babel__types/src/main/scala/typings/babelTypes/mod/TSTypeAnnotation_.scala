@@ -3,25 +3,24 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSTypeAnnotation_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var typeAnnotation: TSType = js.native
+  var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSTypeAnnotation_ : TSTypeAnnotation = js.native
+  var type_TSTypeAnnotation_ : TSTypeAnnotation
 }
 object TSTypeAnnotation_ {
   
   @scala.inline
-  def apply(`type`: TSTypeAnnotation, typeAnnotation: TSType): TSTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(typeAnnotation: TSType): TSTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSTypeAnnotation")
     __obj.asInstanceOf[TSTypeAnnotation_]
   }
   

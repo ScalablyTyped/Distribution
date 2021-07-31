@@ -2,7 +2,6 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,9 +24,9 @@ trait AjaxMethodModel extends StObject {
     * @param resetPaging Reset (default action or true) or hold the current paging position (false).
     */
   def reload(): Api = js.native
-  def reload(callback: js.UndefOr[scala.Nothing], resetPaging: Boolean): Api = js.native
   def reload(callback: js.Function1[/* json */ js.Any, Unit]): Api = js.native
   def reload(callback: js.Function1[/* json */ js.Any, Unit], resetPaging: Boolean): Api = js.native
+  def reload(callback: Unit, resetPaging: Boolean): Api = js.native
   
   /**
     * Reload the table data from the Ajax data source

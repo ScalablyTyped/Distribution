@@ -2,18 +2,16 @@ package typings.webicon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aliasOptionsMod {
   
-  @js.native
   trait AliasOptions extends StObject {
     
     /**
       * The icon-set this alias refers to.
       */
-    var alias: String = js.native
+    var alias: String
   }
   object AliasOptions {
     

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetInstrumentationBreakpointResponse extends StObject {
   
   /**
     * Id of the created breakpoint for further reference.
     */
-  var breakpointId: BreakpointId = js.native
+  var breakpointId: BreakpointId
 }
 object SetInstrumentationBreakpointResponse {
   

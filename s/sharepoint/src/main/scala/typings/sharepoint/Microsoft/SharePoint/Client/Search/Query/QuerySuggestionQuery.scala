@@ -5,19 +5,19 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QuerySuggestionQuery extends ClientValueObject {
+trait QuerySuggestionQuery
+  extends StObject
+     with ClientValueObject {
   
-  def get_isPersonal(): Boolean = js.native
+  def get_isPersonal(): Boolean
   
-  def get_query(): String = js.native
+  def get_query(): String
   
-  def set_isPersonal(value: Boolean): Unit = js.native
+  def set_isPersonal(value: Boolean): Unit
   
-  def set_query(value: String): Unit = js.native
+  def set_query(value: String): Unit
 }
 object QuerySuggestionQuery {
   

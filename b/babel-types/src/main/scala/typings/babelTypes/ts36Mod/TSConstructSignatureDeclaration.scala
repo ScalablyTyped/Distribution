@@ -2,22 +2,21 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSConstructSignatureDeclaration
-  extends Node
+  extends StObject
+     with Node
      with TSTypeElement {
   
-  var parameters: (js.Array[Identifier_ | RestElement_]) | Null = js.native
+  var parameters: (js.Array[Identifier_ | RestElement_]) | Null
   
-  var typeAnnotation: TSTypeAnnotation | Null = js.native
+  var typeAnnotation: TSTypeAnnotation | Null
   
-  var typeParameters: TypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSConstructSignatureDeclaration: typings.babelTypes.babelTypesStrings.TSConstructSignatureDeclaration = js.native
+  var type_TSConstructSignatureDeclaration: typings.babelTypes.babelTypesStrings.TSConstructSignatureDeclaration
 }
 object TSConstructSignatureDeclaration {
   
@@ -26,31 +25,20 @@ object TSConstructSignatureDeclaration {
   def apply(): TSTypeElement = js.native
   @JSImport("babel-types/ts3.6", "TSConstructSignatureDeclaration")
   @js.native
-  def apply(
-    typeParameters: js.UndefOr[scala.Nothing],
-    parameters: js.UndefOr[scala.Nothing],
-    typeAnnotation: TSTypeAnnotation
-  ): TSTypeElement = js.native
-  @JSImport("babel-types/ts3.6", "TSConstructSignatureDeclaration")
-  @js.native
-  def apply(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[Identifier_ | RestElement_]): TSTypeElement = js.native
+  def apply(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSTypeElement = js.native
   @JSImport("babel-types/ts3.6", "TSConstructSignatureDeclaration")
   @js.native
   def apply(
-    typeParameters: js.UndefOr[scala.Nothing],
+    typeParameters: Unit,
     parameters: js.Array[Identifier_ | RestElement_],
     typeAnnotation: TSTypeAnnotation
   ): TSTypeElement = js.native
   @JSImport("babel-types/ts3.6", "TSConstructSignatureDeclaration")
   @js.native
-  def apply(typeParameters: TypeParameterDeclaration_): TSTypeElement = js.native
+  def apply(typeParameters: Unit, parameters: Unit, typeAnnotation: TSTypeAnnotation): TSTypeElement = js.native
   @JSImport("babel-types/ts3.6", "TSConstructSignatureDeclaration")
   @js.native
-  def apply(
-    typeParameters: TypeParameterDeclaration_,
-    parameters: js.UndefOr[scala.Nothing],
-    typeAnnotation: TSTypeAnnotation
-  ): TSTypeElement = js.native
+  def apply(typeParameters: TypeParameterDeclaration_): TSTypeElement = js.native
   @JSImport("babel-types/ts3.6", "TSConstructSignatureDeclaration")
   @js.native
   def apply(typeParameters: TypeParameterDeclaration_, parameters: js.Array[Identifier_ | RestElement_]): TSTypeElement = js.native
@@ -61,6 +49,9 @@ object TSConstructSignatureDeclaration {
     parameters: js.Array[Identifier_ | RestElement_],
     typeAnnotation: TSTypeAnnotation
   ): TSTypeElement = js.native
+  @JSImport("babel-types/ts3.6", "TSConstructSignatureDeclaration")
+  @js.native
+  def apply(typeParameters: TypeParameterDeclaration_, parameters: Unit, typeAnnotation: TSTypeAnnotation): TSTypeElement = js.native
   
   @scala.inline
   implicit class TSConstructSignatureDeclarationMutableBuilder[Self <: TSConstructSignatureDeclaration] (val x: Self) extends AnyVal {

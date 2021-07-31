@@ -5,45 +5,45 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientControl extends Control {
+trait ClientControl
+  extends StObject
+     with Control {
   
-  var alternateRenderContext: js.Any = js.native
+  var alternateRenderContext: js.Any
   
-  var alternateRenderer: js.Any = js.native
+  var alternateRenderer: js.Any
   
-  def clickHandler(e: Event): js.Any = js.native
+  def clickHandler(e: Event): js.Any
   
-  def get_alternateErrorMessage(): String = js.native
+  def get_alternateErrorMessage(): String
   
   /** Returns true if control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
-  def get_delayLoadTemplateScripts(): Boolean = js.native
+  def get_delayLoadTemplateScripts(): Boolean
   
   /** returns true if control has already been loaded at least once */
-  def get_isInitialLoad(): Boolean = js.native
+  def get_isInitialLoad(): Boolean
   
-  def get_messages(): js.Array[_] = js.native
+  def get_messages(): js.Array[js.Any]
   
   /** returns next unique identifier for nested controls */
-  def get_nextUniqueId(): String = js.native
+  def get_nextUniqueId(): String
   
   /** Gets the id of View display template that is used to render this control.
     * Example: '~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchResults.js'
     */
-  def get_renderTemplateId(): String = js.native
+  def get_renderTemplateId(): String
   
-  def get_showDataErrors(): Boolean = js.native
+  def get_showDataErrors(): Boolean
   
-  def get_states(): js.Any = js.native
+  def get_states(): js.Any
   
-  def hasMessages(): js.Any = js.native
+  def hasMessages(): js.Any
   
-  def invokeAlternateRender(callback: js.Any, container: js.Any, ctx: js.Any): js.Any = js.native
+  def invokeAlternateRender(callback: js.Any, container: js.Any, ctx: js.Any): js.Any
   
-  def invokeClientRenderer(node: js.Any, ctx: js.Any): js.Any = js.native
+  def invokeClientRenderer(node: js.Any, ctx: js.Any): js.Any
   
   def loadRenderTemplateScripts(
     scriptReferences: js.Any,
@@ -51,48 +51,48 @@ trait ClientControl extends Control {
     failure: js.Any,
     timeout: js.Any,
     loadStandAloneCustomScripts: js.Any
-  ): Boolean = js.native
+  ): Boolean
   
-  def loadServerTemplateScripts(): Unit = js.native
+  def loadServerTemplateScripts(): Unit
   
-  var loaded: Boolean = js.native
+  var loaded: Boolean
   
-  def processDataErrorMessages(dataErrorsList: js.Any): js.Any = js.native
+  def processDataErrorMessages(dataErrorsList: js.Any): js.Any
   
-  def processDataProviderErrors(dataProviderToProcess: js.Any): Unit = js.native
+  def processDataProviderErrors(dataProviderToProcess: js.Any): Unit
   
-  def processRenderingErrorMessages(ctx: js.Any): js.Any = js.native
+  def processRenderingErrorMessages(ctx: js.Any): js.Any
   
-  def renderControl(listData: js.Any, dataProvider: js.Any): Unit = js.native
+  def renderControl(listData: js.Any, dataProvider: js.Any): Unit
   
-  def scriptApplication_Load(sender: js.Any, e: js.Any): Unit = js.native
+  def scriptApplication_Load(sender: js.Any, e: js.Any): Unit
   
-  def scriptApplication_PostLoad(sender: js.Any, e: js.Any): Unit = js.native
+  def scriptApplication_PostLoad(sender: js.Any, e: js.Any): Unit
   
-  def scriptApplication_PreLoad(sender: js.Any, e: js.Any): Unit = js.native
+  def scriptApplication_PreLoad(sender: js.Any, e: js.Any): Unit
   
-  def serverTemplateScriptsCallback(): Unit = js.native
+  def serverTemplateScriptsCallback(): Unit
   
-  var serverTemplateScriptsToLoad: js.Array[_] = js.native
+  var serverTemplateScriptsToLoad: js.Array[js.Any]
   
   /** show/hide the DOM element associated with control */
-  def setControlElementVisibility(showElement: Boolean): js.Any = js.native
+  def setControlElementVisibility(showElement: Boolean): js.Any
   
-  def set_alternateErrorMessage(value: String): String = js.native
+  def set_alternateErrorMessage(value: String): String
   
   /** If set to true, control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
-  def set_delayLoadTemplateScripts(value: Boolean): Boolean = js.native
+  def set_delayLoadTemplateScripts(value: Boolean): Boolean
   
-  def set_messages(value: js.Array[_]): js.Array[_] = js.native
+  def set_messages(value: js.Array[js.Any]): js.Array[js.Any]
   
-  def set_renderTemplateId(value: String): String = js.native
+  def set_renderTemplateId(value: String): String
   
   /** False by default. */
-  def set_showDataErrors(value: Boolean): Boolean = js.native
+  def set_showDataErrors(value: Boolean): Boolean
   
-  def set_states(value: js.Any): js.Any = js.native
+  def set_states(value: js.Any): js.Any
   
-  def updateDisplayControlWithNewMessages(): js.Any = js.native
+  def updateDisplayControlWithNewMessages(): js.Any
 }
 object ClientControl {
   
@@ -115,7 +115,7 @@ object ClientControl {
     get_isInitialLoad: () => Boolean,
     get_isInitialized: () => Boolean,
     get_isUpdating: () => Boolean,
-    get_messages: () => js.Array[_],
+    get_messages: () => js.Array[js.Any],
     get_nextUniqueId: () => String,
     get_renderTemplateId: () => String,
     get_showDataErrors: () => Boolean,
@@ -141,12 +141,12 @@ object ClientControl {
     scriptApplication_PostLoad: (js.Any, js.Any) => Unit,
     scriptApplication_PreLoad: (js.Any, js.Any) => Unit,
     serverTemplateScriptsCallback: () => Unit,
-    serverTemplateScriptsToLoad: js.Array[_],
+    serverTemplateScriptsToLoad: js.Array[js.Any],
     setControlElementVisibility: Boolean => js.Any,
     set_alternateErrorMessage: String => String,
     set_delayLoadTemplateScripts: Boolean => Boolean,
     set_id: String => Unit,
-    set_messages: js.Array[_] => js.Array[_],
+    set_messages: js.Array[js.Any] => js.Array[js.Any],
     set_renderTemplateId: String => String,
     set_showDataErrors: Boolean => Boolean,
     set_states: js.Any => js.Any,
@@ -180,7 +180,7 @@ object ClientControl {
     def setGet_isInitialLoad(value: () => Boolean): Self = StObject.set(x, "get_isInitialLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_messages(value: () => js.Array[_]): Self = StObject.set(x, "get_messages", js.Any.fromFunction0(value))
+    def setGet_messages(value: () => js.Array[js.Any]): Self = StObject.set(x, "get_messages", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGet_nextUniqueId(value: () => String): Self = StObject.set(x, "get_nextUniqueId", js.Any.fromFunction0(value))
@@ -237,7 +237,7 @@ object ClientControl {
     def setServerTemplateScriptsCallback(value: () => Unit): Self = StObject.set(x, "serverTemplateScriptsCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setServerTemplateScriptsToLoad(value: js.Array[_]): Self = StObject.set(x, "serverTemplateScriptsToLoad", value.asInstanceOf[js.Any])
+    def setServerTemplateScriptsToLoad(value: js.Array[js.Any]): Self = StObject.set(x, "serverTemplateScriptsToLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setServerTemplateScriptsToLoadVarargs(value: js.Any*): Self = StObject.set(x, "serverTemplateScriptsToLoad", js.Array(value :_*))
@@ -252,7 +252,7 @@ object ClientControl {
     def setSet_delayLoadTemplateScripts(value: Boolean => Boolean): Self = StObject.set(x, "set_delayLoadTemplateScripts", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_messages(value: js.Array[_] => js.Array[_]): Self = StObject.set(x, "set_messages", js.Any.fromFunction1(value))
+    def setSet_messages(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "set_messages", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSet_renderTemplateId(value: String => String): Self = StObject.set(x, "set_renderTemplateId", js.Any.fromFunction1(value))

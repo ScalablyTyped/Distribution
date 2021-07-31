@@ -10,9 +10,9 @@ Speedtest.net client
 | ------------------ | :-------------: |
 | Full name          | speedtest-net |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 53 |
-| # downloads        | 457301 |
+| # releases         | 12 |
+| # dependents       | 56 |
+| # downloads        | 504957 |
 | # stars            | 13 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: similar to how Fragment is actually a symbol, the values returned from createContext,
@@ -21,7 +20,7 @@ trait ExoticComponent[P] extends StObject {
   /**
     * **NOTE**: Exotic components are not callable.
     */
-  def apply(props: P): (ReactElement[_, String | JSXElementConstructor[_]]) | Null = js.native
+  def apply(props: P): (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | Null = js.native
   
   @JSName("$$typeof")
   val DollarDollartypeof: js.Symbol = js.native

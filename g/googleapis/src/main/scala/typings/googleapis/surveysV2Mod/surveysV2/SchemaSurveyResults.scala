@@ -2,24 +2,22 @@ package typings.googleapis.surveysV2Mod.surveysV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reference to the current results for a given survey.
   */
-@js.native
 trait SchemaSurveyResults extends StObject {
   
   /**
     * Human readable string describing the status of the request.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * External survey ID as viewable by survey owners in the editor view.
     */
-  var surveyUrlId: js.UndefOr[String] = js.native
+  var surveyUrlId: js.UndefOr[String] = js.undefined
 }
 object SchemaSurveyResults {
   

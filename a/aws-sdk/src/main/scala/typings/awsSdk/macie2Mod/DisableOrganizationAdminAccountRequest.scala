@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableOrganizationAdminAccountRequest extends StObject {
   
   /**
     * The AWS account ID of the delegated administrator account.
     */
-  var adminAccountId: string = js.native
+  var adminAccountId: string
 }
 object DisableOrganizationAdminAccountRequest {
   

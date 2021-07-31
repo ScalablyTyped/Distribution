@@ -15,34 +15,33 @@ import typings.mondaySdkJs.mondaySdkJsStrings.sessionToken
 import typings.mondaySdkJs.mondaySdkJsStrings.settings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("monday-sdk-js", JSImport.Namespace)
-  @js.native
-  def apply(): MondayClientSdk = js.native
-  @JSImport("monday-sdk-js", JSImport.Namespace)
-  @js.native
-  def apply(config: PartialclientIdstringapiT): MondayClientSdk = js.native
-  @JSImport("monday-sdk-js", JSImport.Namespace)
-  @js.native
-  def apply(config: Partialtokenstring): MondayServerSdk = js.native
+  @scala.inline
+  def apply(): MondayClientSdk = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MondayClientSdk]
+  @scala.inline
+  def apply(config: PartialclientIdstringapiT): MondayClientSdk = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[MondayClientSdk]
+  @scala.inline
+  def apply(config: Partialtokenstring): MondayServerSdk = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[MondayServerSdk]
   
+  @JSImport("monday-sdk-js", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait APIOptions extends StObject {
     
     /**
       * Access token for the API
       * If not set, will use the credentials of the current user (client only)
       */
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
     /**
       * An object containing GraphQL query variables
       */
-    var variables: js.UndefOr[js.Object] = js.native
+    var variables: js.UndefOr[js.Object] = js.undefined
   }
   object APIOptions {
     
@@ -69,12 +68,11 @@ object mod {
     }
   }
   
-  @js.native
   trait GetResponse extends StObject {
     
-    var value: js.Any = js.native
+    var value: js.Any
     
-    var version: js.Any = js.native
+    var version: js.Any
   }
   object GetResponse {
     
@@ -105,8 +103,8 @@ object mod {
       * Placeholders may be used, which will be substituted by the variables object passed within the options.
       * @param options
       */
-    def api(query: String): js.Promise[_] = js.native
-    def api(query: String, options: APIOptions): js.Promise[_] = js.native
+    def api(query: String): js.Promise[js.Any] = js.native
+    def api(query: String, options: APIOptions): js.Promise[js.Any] = js.native
     
     /**
       * Opens a confirmation dialog to the user **type** `'confirm'`
@@ -114,21 +112,21 @@ object mod {
       * @param params Optional parameters for the action
       */
     @JSName("execute")
-    def execute_confirm(`type`: confirm, params: CancelButton): js.Promise[_] = js.native
+    def execute_confirm(`type`: confirm, params: CancelButton): js.Promise[js.Any] = js.native
     /**
       * Display a message at the top of the user's page. Useful for success, error & general messages.
       * @param type Which action to perform
       * @param params Optional parameters for the action
       */
     @JSName("execute")
-    def execute_notice(`type`: notice, params: Message): js.Promise[_] = js.native
+    def execute_notice(`type`: notice, params: Message): js.Promise[js.Any] = js.native
     /**
       * Opens a popup card with information from the selected item
       * @param type Which action to perform
       * @param params Optional parameters for the action
       */
     @JSName("execute")
-    def execute_openItemCard(`type`: openItemCard, params: ItemId): js.Promise[_] = js.native
+    def execute_openItemCard(`type`: openItemCard, params: ItemId): js.Promise[js.Any] = js.native
     
     /**
       * Used for retrieving data from the parent monday.com application where your app is currently running.
@@ -141,21 +139,21 @@ object mod {
       * @param params Reserved for future use
       */
     @JSName("get")
-    def get_context(`type`: context): js.Promise[_] = js.native
+    def get_context(`type`: context): js.Promise[js.Any] = js.native
     @JSName("get")
-    def get_context(`type`: context, params: js.Object): js.Promise[_] = js.native
+    def get_context(`type`: context, params: js.Object): js.Promise[js.Any] = js.native
     @JSName("get")
-    def get_itemIds(`type`: itemIds): js.Promise[_] = js.native
+    def get_itemIds(`type`: itemIds): js.Promise[js.Any] = js.native
     @JSName("get")
-    def get_itemIds(`type`: itemIds, params: js.Object): js.Promise[_] = js.native
+    def get_itemIds(`type`: itemIds, params: js.Object): js.Promise[js.Any] = js.native
     @JSName("get")
-    def get_sessionToken(`type`: sessionToken): js.Promise[_] = js.native
+    def get_sessionToken(`type`: sessionToken): js.Promise[js.Any] = js.native
     @JSName("get")
-    def get_sessionToken(`type`: sessionToken, params: js.Object): js.Promise[_] = js.native
+    def get_sessionToken(`type`: sessionToken, params: js.Object): js.Promise[js.Any] = js.native
     @JSName("get")
-    def get_settings(`type`: settings): js.Promise[_] = js.native
+    def get_settings(`type`: settings): js.Promise[js.Any] = js.native
     @JSName("get")
-    def get_settings(`type`: settings, params: js.Object): js.Promise[_] = js.native
+    def get_settings(`type`: settings, params: js.Object): js.Promise[js.Any] = js.native
     
     def listen(typeOrTypes: js.Array[SubscribableEvents], callback: js.Function1[/* res */ js.Any, Unit]): Unit = js.native
     def listen(
@@ -201,27 +199,26 @@ object mod {
   @js.native
   trait MondayServerSdk extends StObject {
     
-    def api(query: String): js.Promise[_] = js.native
-    def api(query: String, options: Partialtokenstring): js.Promise[_] = js.native
+    def api(query: String): js.Promise[js.Any] = js.native
+    def api(query: String, options: Partialtokenstring): js.Promise[js.Any] = js.native
     
-    def oauthToken(code: String, clientId: String, clientSecret: String): js.Promise[_] = js.native
+    def oauthToken(code: String, clientId: String, clientSecret: String): js.Promise[js.Any] = js.native
     
     def setToken(token: String): Unit = js.native
   }
   
-  @js.native
   trait OAuthOptions extends StObject {
     
     /**
       * The OAuth client ID of the requesting application
       * Defaults to your client ID
       */
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
     /**
       * The URL of the monday OAuth endpoint
       */
-    var mondayOauthUrl: js.UndefOr[String] = js.native
+    var mondayOauthUrl: js.UndefOr[String] = js.undefined
   }
   object OAuthOptions {
     
@@ -248,12 +245,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SetResponse extends StObject {
     
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object SetResponse {
     

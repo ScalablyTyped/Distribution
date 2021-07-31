@@ -2,13 +2,11 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowProps extends StObject {
   
-  val row: js.UndefOr[ResponsiveValue[String | Double | Boolean]] = js.native
+  val row: js.UndefOr[ResponsiveValue[String | Double | Boolean]] = js.undefined
 }
 object RowProps {
   

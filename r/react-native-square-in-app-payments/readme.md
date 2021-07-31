@@ -12,7 +12,7 @@ An open source React Native plugin for calling Square’s native In-App Payments
 | Keywords           | react-native, in-app-payments, square, payments |
 | # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 21788 |
+| # downloads        | 24900 |
 | # stars            | 0 |
 
 ## Links

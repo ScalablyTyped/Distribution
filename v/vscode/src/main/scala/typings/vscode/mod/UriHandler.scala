@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UriHandler extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait UriHandler extends StObject {
     *
     * @see [window.registerUriHandler](#window.registerUriHandler).
     */
-  def handleUri(uri: Uri): ProviderResult[Unit] = js.native
+  def handleUri(uri: Uri): ProviderResult[Unit]
 }
 object UriHandler {
   

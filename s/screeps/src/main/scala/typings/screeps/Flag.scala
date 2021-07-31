@@ -3,14 +3,15 @@ package typings.screeps
 import typings.screeps.anon.Pos
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A flag. Flags can be used to mark particular spots in a room. Flags are visible to their owners only.
   */
 @js.native
-trait Flag extends RoomObject {
+trait Flag
+  extends StObject
+     with RoomObject {
   
   /**
     * Flag color. One of the `COLOR_*` constants.

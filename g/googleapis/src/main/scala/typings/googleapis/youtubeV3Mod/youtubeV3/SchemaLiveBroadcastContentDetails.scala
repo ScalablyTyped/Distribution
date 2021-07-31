@@ -2,32 +2,30 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Detailed settings of a broadcast.
   */
-@js.native
 trait SchemaLiveBroadcastContentDetails extends StObject {
   
   /**
     * This value uniquely identifies the live stream bound to the broadcast.
     */
-  var boundStreamId: js.UndefOr[String] = js.native
+  var boundStreamId: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the live stream referenced by boundStreamId was
     * last updated.
     */
-  var boundStreamLastUpdateTimeMs: js.UndefOr[String] = js.native
+  var boundStreamLastUpdateTimeMs: js.UndefOr[String] = js.undefined
   
-  var closedCaptionsType: js.UndefOr[String] = js.native
+  var closedCaptionsType: js.UndefOr[String] = js.undefined
   
   /**
     * This setting indicates whether auto start is enabled for this broadcast.
     */
-  var enableAutoStart: js.UndefOr[Boolean] = js.native
+  var enableAutoStart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This setting indicates whether HTTP POST closed captioning is enabled for
@@ -36,13 +34,13 @@ trait SchemaLiveBroadcastContentDetails extends StObject {
     * closed_captions_type property, and is equivalent to setting
     * closed_captions_type to CLOSED_CAPTIONS_HTTP_POST.
     */
-  var enableClosedCaptions: js.UndefOr[Boolean] = js.native
+  var enableClosedCaptions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This setting indicates whether YouTube should enable content encryption
     * for the broadcast.
     */
-  var enableContentEncryption: js.UndefOr[Boolean] = js.native
+  var enableContentEncryption: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This setting determines whether viewers can access DVR controls while
@@ -53,7 +51,7 @@ trait SchemaLiveBroadcastContentDetails extends StObject {
     * true if you want to make playback available immediately after the
     * broadcast ends.
     */
-  var enableDvr: js.UndefOr[Boolean] = js.native
+  var enableDvr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This setting indicates whether the broadcast video can be played in an
@@ -61,12 +59,12 @@ trait SchemaLiveBroadcastContentDetails extends StObject {
     * enableArchive property), this setting will also apply to the archived
     * video.
     */
-  var enableEmbed: js.UndefOr[Boolean] = js.native
+  var enableEmbed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether this broadcast has low latency enabled.
     */
-  var enableLowLatency: js.UndefOr[Boolean] = js.native
+  var enableLowLatency: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If both this and enable_low_latency are set, they must match.
@@ -74,21 +72,21 @@ trait SchemaLiveBroadcastContentDetails extends StObject {
     * match enable_low_latency=true LATENCY_ULTRA_LOW should have
     * enable_low_latency omitted.
     */
-  var latencyPreference: js.UndefOr[String] = js.native
+  var latencyPreference: js.UndefOr[String] = js.undefined
   
-  var mesh: js.UndefOr[String] = js.native
+  var mesh: js.UndefOr[String] = js.undefined
   
   /**
     * The monitorStream object contains information about the monitor stream,
     * which the broadcaster can use to review the event content before the
     * broadcast stream is shown publicly.
     */
-  var monitorStream: js.UndefOr[SchemaMonitorStreamInfo] = js.native
+  var monitorStream: js.UndefOr[SchemaMonitorStreamInfo] = js.undefined
   
   /**
     * The projection format of this broadcast. This defaults to rectangular.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /**
     * Automatically start recording after the event goes live. The default
@@ -99,7 +97,7 @@ trait SchemaLiveBroadcastContentDetails extends StObject {
     * to true, there may be a delay of around one day before the archived video
     * will be available for playback.
     */
-  var recordFromStart: js.UndefOr[Boolean] = js.native
+  var recordFromStart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This setting indicates whether the broadcast should automatically begin
@@ -109,9 +107,9 @@ trait SchemaLiveBroadcastContentDetails extends StObject {
     * end to remove the in-stream slate and make your broadcast stream visible
     * to viewers.
     */
-  var startWithSlate: js.UndefOr[Boolean] = js.native
+  var startWithSlate: js.UndefOr[Boolean] = js.undefined
   
-  var stereoLayout: js.UndefOr[String] = js.native
+  var stereoLayout: js.UndefOr[String] = js.undefined
 }
 object SchemaLiveBroadcastContentDetails {
   

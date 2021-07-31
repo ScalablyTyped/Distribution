@@ -4,15 +4,15 @@ import typings.nodeForge.mod.tls.Alert.Description
 import typings.nodeForge.mod.tls.Verified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Alert extends Verified {
+trait Alert
+  extends StObject
+     with Verified {
   
-  var alert: js.UndefOr[Description] = js.native
+  var alert: js.UndefOr[Description] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object Alert {
   

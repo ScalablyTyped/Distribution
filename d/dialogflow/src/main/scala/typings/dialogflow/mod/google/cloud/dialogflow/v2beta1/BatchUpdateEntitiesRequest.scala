@@ -8,7 +8,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a BatchUpdateEntitiesRequest. */
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new BatchUpdateEntitiesRequest.
   * @param [properties] Properties to set
   */
-class BatchUpdateEntitiesRequest () extends IBatchUpdateEntitiesRequest {
+class BatchUpdateEntitiesRequest ()
+  extends StObject
+     with IBatchUpdateEntitiesRequest {
   def this(properties: IBatchUpdateEntitiesRequest) = this()
   
   /** BatchUpdateEntitiesRequest entities. */
@@ -41,18 +42,20 @@ class BatchUpdateEntitiesRequest () extends IBatchUpdateEntitiesRequest {
 }
 object BatchUpdateEntitiesRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new BatchUpdateEntitiesRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns BatchUpdateEntitiesRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.create")
-  @js.native
-  def create(): BatchUpdateEntitiesRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.create")
-  @js.native
-  def create(properties: IBatchUpdateEntitiesRequest): BatchUpdateEntitiesRequest = js.native
+  @scala.inline
+  def create(): BatchUpdateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BatchUpdateEntitiesRequest]
+  @scala.inline
+  def create(properties: IBatchUpdateEntitiesRequest): BatchUpdateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntitiesRequest]
   
   /**
     * Decodes a BatchUpdateEntitiesRequest message from the specified reader or buffer.
@@ -63,18 +66,14 @@ object BatchUpdateEntitiesRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.decode")
-  @js.native
-  def decode(reader: Reader): BatchUpdateEntitiesRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): BatchUpdateEntitiesRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): BatchUpdateEntitiesRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): BatchUpdateEntitiesRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): BatchUpdateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntitiesRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): BatchUpdateEntitiesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchUpdateEntitiesRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): BatchUpdateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntitiesRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): BatchUpdateEntitiesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchUpdateEntitiesRequest]
   
   /**
     * Decodes a BatchUpdateEntitiesRequest message from the specified reader or buffer, length delimited.
@@ -84,12 +83,10 @@ object BatchUpdateEntitiesRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): BatchUpdateEntitiesRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): BatchUpdateEntitiesRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): BatchUpdateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntitiesRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): BatchUpdateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntitiesRequest]
   
   /**
     * Encodes the specified BatchUpdateEntitiesRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.verify|verify} messages.
@@ -98,12 +95,10 @@ object BatchUpdateEntitiesRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.encode")
-  @js.native
-  def encode(message: IBatchUpdateEntitiesRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.encode")
-  @js.native
-  def encode(message: IBatchUpdateEntitiesRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IBatchUpdateEntitiesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IBatchUpdateEntitiesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified BatchUpdateEntitiesRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.verify|verify} messages.
@@ -112,12 +107,10 @@ object BatchUpdateEntitiesRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IBatchUpdateEntitiesRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IBatchUpdateEntitiesRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IBatchUpdateEntitiesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IBatchUpdateEntitiesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a BatchUpdateEntitiesRequest message from a plain object. Also converts values to their respective internal types.
@@ -125,9 +118,8 @@ object BatchUpdateEntitiesRequest {
     * @returns BatchUpdateEntitiesRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): BatchUpdateEntitiesRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): BatchUpdateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntitiesRequest]
   
   /**
     * Creates a plain object from a BatchUpdateEntitiesRequest message. Also converts values to other types if specified.
@@ -136,12 +128,10 @@ object BatchUpdateEntitiesRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.toObject")
-  @js.native
-  def toObject(message: BatchUpdateEntitiesRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.toObject")
-  @js.native
-  def toObject(message: BatchUpdateEntitiesRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: BatchUpdateEntitiesRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: BatchUpdateEntitiesRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a BatchUpdateEntitiesRequest message.
@@ -149,7 +139,6 @@ object BatchUpdateEntitiesRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateEntitiesRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

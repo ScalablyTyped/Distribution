@@ -11,8 +11,8 @@ Pure JavaScript implementation of the scrypt key deriviation function that is fu
 | Full name          | scryptsy |
 | Keywords           | crytpo, cryptography, scrypt, kdf, litecoin, dogecoin, bitcoin, bip38 |
 | # releases         | 2 |
-| # dependents       | 114 |
-| # downloads        | 5035297 |
+| # dependents       | 121 |
+| # downloads        | 5069075 |
 | # stars            | 2 |
 
 ## Links

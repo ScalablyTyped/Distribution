@@ -2,13 +2,11 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Allvoices extends StObject {
   
-  var all_voices: js.UndefOr[Boolean] = js.native
+  var all_voices: js.UndefOr[Boolean] = js.undefined
 }
 object Allvoices {
   

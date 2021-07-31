@@ -2,16 +2,14 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMedicalTranscriptionJobRequest extends StObject {
   
   /**
     * The name of the medical transcription job.
     */
-  var MedicalTranscriptionJobName: TranscriptionJobName = js.native
+  var MedicalTranscriptionJobName: TranscriptionJobName
 }
 object GetMedicalTranscriptionJobRequest {
   

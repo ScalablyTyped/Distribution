@@ -2,32 +2,29 @@ package typings.storybookAddonActions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object presetMod {
   
-  @JSImport("@storybook/addon-actions/dist/preset", "config")
+  @JSImport("@storybook/addon-actions/dist/preset", JSImport.Namespace)
   @js.native
-  def config(): js.Array[_] = js.native
-  @JSImport("@storybook/addon-actions/dist/preset", "config")
-  @js.native
-  def config(entry: js.UndefOr[scala.Nothing], hasAddDecorator: ActionsOptions): js.Array[_] = js.native
-  @JSImport("@storybook/addon-actions/dist/preset", "config")
-  @js.native
-  def config(entry: js.Array[_]): js.Array[_] = js.native
-  @JSImport("@storybook/addon-actions/dist/preset", "config")
-  @js.native
-  def config(entry: js.Array[_], hasAddDecorator: ActionsOptions): js.Array[_] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/addon-actions/dist/preset", "managerEntries")
-  @js.native
-  def managerEntries(entry: js.Array[_], options: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def config(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def config(entry: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def config(entry: js.Array[js.Any], hasAddDecorator: ActionsOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any], hasAddDecorator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def config(entry: Unit, hasAddDecorator: ActionsOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any], hasAddDecorator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @js.native
+  @scala.inline
+  def managerEntries(entry: js.Array[js.Any], options: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")(entry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  
   trait ActionsOptions extends StObject {
     
-    var addDecorator: js.UndefOr[Boolean] = js.native
+    var addDecorator: js.UndefOr[Boolean] = js.undefined
   }
   object ActionsOptions {
     

@@ -5,31 +5,29 @@ import typings.typeorm.persistenceSubjectChangeMapMod.SubjectChangeMap
 import typings.typeorm.persistenceSubjectMod.Subject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanBeRecovered extends StObject {
   
-  var canBeInserted: js.UndefOr[Boolean] = js.native
+  var canBeInserted: js.UndefOr[Boolean] = js.undefined
   
-  var canBeRecovered: js.UndefOr[Boolean] = js.native
+  var canBeRecovered: js.UndefOr[Boolean] = js.undefined
   
-  var canBeSoftRemoved: js.UndefOr[Boolean] = js.native
+  var canBeSoftRemoved: js.UndefOr[Boolean] = js.undefined
   
-  var canBeUpdated: js.UndefOr[Boolean] = js.native
+  var canBeUpdated: js.UndefOr[Boolean] = js.undefined
   
-  var changeMaps: js.UndefOr[js.Array[SubjectChangeMap]] = js.native
+  var changeMaps: js.UndefOr[js.Array[SubjectChangeMap]] = js.undefined
   
-  var entity: js.UndefOr[ObjectLiteral] = js.native
+  var entity: js.UndefOr[ObjectLiteral] = js.undefined
   
-  var identifier: js.UndefOr[ObjectLiteral] = js.native
+  var identifier: js.UndefOr[ObjectLiteral] = js.undefined
   
-  var metadata: typings.typeorm.metadataEntityMetadataMod.EntityMetadata = js.native
+  var metadata: typings.typeorm.metadataEntityMetadataMod.EntityMetadata
   
-  var mustBeRemoved: js.UndefOr[Boolean] = js.native
+  var mustBeRemoved: js.UndefOr[Boolean] = js.undefined
   
-  var parentSubject: js.UndefOr[Subject] = js.native
+  var parentSubject: js.UndefOr[Subject] = js.undefined
 }
 object CanBeRecovered {
   

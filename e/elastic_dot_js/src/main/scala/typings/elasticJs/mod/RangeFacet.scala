@@ -3,12 +3,13 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "RangeFacet")
 @js.native
-class RangeFacet protected () extends Facet {
+class RangeFacet protected ()
+  extends StObject
+     with Facet {
   /*
     A facet which provides information over a range of numeric intervals.
     */

@@ -96,78 +96,70 @@ import typings.semanticUiApi.semanticUiApiStrings.verbose
 import typings.semanticUiApi.semanticUiApiStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def api(): JQuery = js.native
-  def api(behavior: setting, name: action, value: js.UndefOr[scala.Nothing]): String | `false` = js.native
-  def api(behavior: setting, name: action, value: String): JQuery = js.native
-  def api(behavior: setting, name: action, value: `false`): JQuery = js.native
-  def api(
-    behavior: setting,
-    name: typings.semanticUiApi.semanticUiApiStrings.api,
-    value: js.UndefOr[scala.Nothing]
-  ): StringDictionary[String] = js.native
+  def api(): JQuery
+  def api(behavior: setting, name: action, value: String): JQuery
+  def api(behavior: setting, name: action, value: Unit): String | `false`
+  def api(behavior: setting, name: action, value: `false`): JQuery
   def api(
     behavior: setting,
     name: typings.semanticUiApi.semanticUiApiStrings.api,
     value: StringDictionary[String]
-  ): JQuery = js.native
-  def api(behavior: setting, name: beforeSend, value: js.UndefOr[scala.Nothing]): js.Function1[/* settings */ ApiSettings, _] = js.native
-  def api(behavior: setting, name: beforeSend, value: js.Function1[/* settings */ ApiSettings, _]): JQuery = js.native
-  def api(behavior: setting, name: beforeXHR, value: js.UndefOr[scala.Nothing]): js.Function1[/* xhrObject */ jqXHR[_], _] = js.native
-  def api(behavior: setting, name: beforeXHR, value: js.Function1[/* xhrObject */ jqXHR[_], _]): JQuery = js.native
-  def api(behavior: setting, name: cache, value: js.UndefOr[scala.Nothing]): local | Boolean = js.native
-  def api(behavior: setting, name: cache, value: Boolean): JQuery = js.native
-  def api(behavior: setting, name: cache, value: local): JQuery = js.native
-  def api(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def api(behavior: setting, name: dataType, value: js.UndefOr[scala.Nothing]): xml | json | jsonp | script | html | text = js.native
-  def api(behavior: setting, name: dataType, value: html): JQuery = js.native
-  def api(behavior: setting, name: dataType, value: json): JQuery = js.native
-  def api(behavior: setting, name: dataType, value: jsonp): JQuery = js.native
-  def api(behavior: setting, name: dataType, value: script): JQuery = js.native
-  def api(behavior: setting, name: dataType, value: text): JQuery = js.native
-  def api(behavior: setting, name: dataType, value: xml): JQuery = js.native
-  def api(behavior: setting, name: data, value: js.UndefOr[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any = js.native
+  ): JQuery
+  def api(behavior: setting, name: typings.semanticUiApi.semanticUiApiStrings.api, value: Unit): StringDictionary[String]
+  def api(behavior: setting, name: beforeSend, value: js.Function1[/* settings */ ApiSettings, js.Any]): JQuery
+  def api(behavior: setting, name: beforeSend, value: Unit): js.Function1[/* settings */ ApiSettings, js.Any]
+  def api(behavior: setting, name: beforeXHR, value: js.Function1[/* xhrObject */ jqXHR[js.Any], js.Any]): JQuery
+  def api(behavior: setting, name: beforeXHR, value: Unit): js.Function1[/* xhrObject */ jqXHR[js.Any], js.Any]
+  def api(behavior: setting, name: cache, value: Boolean): JQuery
+  def api(behavior: setting, name: cache, value: Unit): local | Boolean
+  def api(behavior: setting, name: cache, value: local): JQuery
+  def api(behavior: setting, name: className, value: Unit): ClassNameSettings
+  def api(behavior: setting, name: className, value: ClassNameSettings): JQuery
+  def api(behavior: setting, name: dataType, value: Unit): xml | json | jsonp | script | html | text
+  def api(behavior: setting, name: dataType, value: html): JQuery
+  def api(behavior: setting, name: dataType, value: json): JQuery
+  def api(behavior: setting, name: dataType, value: jsonp): JQuery
+  def api(behavior: setting, name: dataType, value: script): JQuery
+  def api(behavior: setting, name: dataType, value: text): JQuery
+  def api(behavior: setting, name: dataType, value: xml): JQuery
   def api(
     behavior: setting,
     name: data,
     value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any
-  ): JQuery = js.native
-  def api(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def api(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def api(behavior: setting, name: defaultData, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def api(behavior: setting, name: defaultData, value: Boolean): JQuery = js.native
-  def api(behavior: setting, name: encodeParameters, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def api(behavior: setting, name: encodeParameters, value: Boolean): JQuery = js.native
-  def api(behavior: setting, name: errorDuration, value: js.UndefOr[scala.Nothing]): `true` | Double = js.native
-  def api(behavior: setting, name: errorDuration, value: Double): JQuery = js.native
-  def api(behavior: setting, name: errorDuration, value: `true`): JQuery = js.native
-  def api(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-  def api(behavior: setting, name: hideError, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
-  def api(behavior: setting, name: hideError, value: Boolean): JQuery = js.native
-  def api(behavior: setting, name: hideError, value: auto): JQuery = js.native
-  def api(behavior: setting, name: interruptRequests, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def api(behavior: setting, name: interruptRequests, value: Boolean): JQuery = js.native
-  def api(behavior: setting, name: loadingDuration, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def api(behavior: setting, name: loadingDuration, value: Double): JQuery = js.native
-  def api(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
-  def api(behavior: setting, name: method, value: js.UndefOr[scala.Nothing]): post | get | put | delete | head | options | patch = js.native
-  def api(behavior: setting, name: method, value: delete): JQuery = js.native
-  def api(behavior: setting, name: method, value: get): JQuery = js.native
-  def api(behavior: setting, name: method, value: head): JQuery = js.native
-  def api(behavior: setting, name: method, value: options): JQuery = js.native
-  def api(behavior: setting, name: method, value: patch): JQuery = js.native
-  def api(behavior: setting, name: method, value: post): JQuery = js.native
-  def api(behavior: setting, name: method, value: put): JQuery = js.native
-  def api(behavior: setting, name: mockResponseAsync, value: js.UndefOr[scala.Nothing]): (js.Function2[
-    /* settings */ ApiSettings, 
-    /* callback */ js.Function1[/* response */ js.Any, Unit], 
-    Unit
-  ]) | `false` = js.native
+  ): JQuery
+  def api(behavior: setting, name: data, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any
+  def api(behavior: setting, name: debug, value: Boolean): JQuery
+  def api(behavior: setting, name: debug, value: Unit): Boolean
+  def api(behavior: setting, name: defaultData, value: Boolean): JQuery
+  def api(behavior: setting, name: defaultData, value: Unit): Boolean
+  def api(behavior: setting, name: encodeParameters, value: Boolean): JQuery
+  def api(behavior: setting, name: encodeParameters, value: Unit): Boolean
+  def api(behavior: setting, name: errorDuration, value: Double): JQuery
+  def api(behavior: setting, name: errorDuration, value: Unit): `true` | Double
+  def api(behavior: setting, name: errorDuration, value: `true`): JQuery
+  def api(behavior: setting, name: error, value: Unit): ErrorSettings
+  def api(behavior: setting, name: error, value: ErrorSettings): JQuery
+  def api(behavior: setting, name: hideError, value: Boolean): JQuery
+  def api(behavior: setting, name: hideError, value: Unit): auto | Boolean
+  def api(behavior: setting, name: hideError, value: auto): JQuery
+  def api(behavior: setting, name: interruptRequests, value: Boolean): JQuery
+  def api(behavior: setting, name: interruptRequests, value: Unit): Boolean
+  def api(behavior: setting, name: loadingDuration, value: Double): JQuery
+  def api(behavior: setting, name: loadingDuration, value: Unit): Double
+  def api(behavior: setting, name: metadata, value: Unit): MetadataSettings
+  def api(behavior: setting, name: metadata, value: MetadataSettings): JQuery
+  def api(behavior: setting, name: method, value: Unit): post | get | put | delete | head | options | patch
+  def api(behavior: setting, name: method, value: delete): JQuery
+  def api(behavior: setting, name: method, value: get): JQuery
+  def api(behavior: setting, name: method, value: head): JQuery
+  def api(behavior: setting, name: method, value: options): JQuery
+  def api(behavior: setting, name: method, value: patch): JQuery
+  def api(behavior: setting, name: method, value: post): JQuery
+  def api(behavior: setting, name: method, value: put): JQuery
   def api(
     behavior: setting,
     name: mockResponseAsync,
@@ -176,63 +168,64 @@ trait JQuery extends StObject {
       /* callback */ js.Function1[/* response */ js.Any, Unit], 
       Unit
     ]
-  ): JQuery = js.native
-  def api(behavior: setting, name: mockResponseAsync, value: `false`): JQuery = js.native
-  def api(behavior: setting, name: mockResponse, value: js.UndefOr[scala.Nothing]): js.Any | `false` = js.native
-  def api(behavior: setting, name: mockResponse, value: js.Any): JQuery = js.native
-  def api(behavior: setting, name: mockResponse, value: `false`): JQuery = js.native
-  def api(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
-  def api(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def api(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
-  def api(behavior: setting, name: name, value: String): JQuery = js.native
-  def api(behavior: setting, name: onAbort, value: js.UndefOr[scala.Nothing]): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+  ): JQuery
+  def api(behavior: setting, name: mockResponseAsync, value: Unit): (js.Function2[
+    /* settings */ ApiSettings, 
+    /* callback */ js.Function1[/* response */ js.Any, Unit], 
+    Unit
+  ]) | `false`
+  def api(behavior: setting, name: mockResponseAsync, value: `false`): JQuery
+  def api(behavior: setting, name: mockResponse, value: js.Any): JQuery
+  def api(behavior: setting, name: mockResponse, value: Unit): js.Any | `false`
+  def api(behavior: setting, name: mockResponse, value: `false`): JQuery
+  def api(behavior: setting, name: namespace, value: String): JQuery
+  def api(behavior: setting, name: namespace, value: Unit): String
+  def api(behavior: setting, name: name, value: String): JQuery
+  def api(behavior: setting, name: name, value: Unit): String
   def api(
     behavior: setting,
     name: onAbort,
-    value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
-  ): JQuery = js.native
-  def api(behavior: setting, name: onComplete, value: js.UndefOr[scala.Nothing]): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+    value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
+  ): JQuery
+  def api(behavior: setting, name: onAbort, value: Unit): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
   def api(
     behavior: setting,
     name: onComplete,
-    value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
-  ): JQuery = js.native
-  def api(behavior: setting, name: onError, value: js.UndefOr[scala.Nothing]): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+    value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
+  ): JQuery
+  def api(behavior: setting, name: onComplete, value: Unit): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
   def api(
     behavior: setting,
     name: onError,
-    value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
-  ): JQuery = js.native
-  def api(behavior: setting, name: onFailure, value: js.UndefOr[scala.Nothing]): js.Function2[/* response */ js.Any, /* element */ JQuery, Unit] = js.native
+    value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
+  ): JQuery
+  def api(behavior: setting, name: onError, value: Unit): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
   def api(
     behavior: setting,
     name: onFailure,
     value: js.Function2[/* response */ js.Any, /* element */ JQuery, Unit]
-  ): JQuery = js.native
-  def api(behavior: setting, name: onRequest, value: js.UndefOr[scala.Nothing]): js.Function2[/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_], Unit] = js.native
+  ): JQuery
+  def api(behavior: setting, name: onFailure, value: Unit): js.Function2[/* response */ js.Any, /* element */ JQuery, Unit]
   def api(
     behavior: setting,
     name: onRequest,
-    value: js.Function2[/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_], Unit]
-  ): JQuery = js.native
-  def api(behavior: setting, name: onResponse, value: js.UndefOr[scala.Nothing]): js.Function1[/* response */ js.Any, Unit] = js.native
-  def api(behavior: setting, name: onResponse, value: js.Function1[/* response */ js.Any, Unit]): JQuery = js.native
-  def api(behavior: setting, name: onSuccess, value: js.UndefOr[scala.Nothing]): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+    value: js.Function2[/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any], Unit]
+  ): JQuery
+  def api(behavior: setting, name: onRequest, value: Unit): js.Function2[/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any], Unit]
+  def api(behavior: setting, name: onResponse, value: js.Function1[/* response */ js.Any, Unit]): JQuery
+  def api(behavior: setting, name: onResponse, value: Unit): js.Function1[/* response */ js.Any, Unit]
   def api(
     behavior: setting,
     name: onSuccess,
-    value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
-  ): JQuery = js.native
-  def api(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): String = js.native
-  def api(behavior: setting, name: on, value: String): JQuery = js.native
-  def api(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def api(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def api(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
-  def api(behavior: setting, name: responseAsync, value: js.UndefOr[scala.Nothing]): (js.Function2[
-    /* settings */ ApiSettings, 
-    /* callback */ js.Function1[/* response */ js.Any, Unit], 
-    Unit
-  ]) | `false` = js.native
+    value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
+  ): JQuery
+  def api(behavior: setting, name: onSuccess, value: Unit): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
+  def api(behavior: setting, name: on, value: String): JQuery
+  def api(behavior: setting, name: on, value: Unit): String
+  def api(behavior: setting, name: performance, value: Boolean): JQuery
+  def api(behavior: setting, name: performance, value: Unit): Boolean
+  def api(behavior: setting, name: regExp, value: Unit): RegExpSettings
+  def api(behavior: setting, name: regExp, value: RegExpSettings): JQuery
   def api(
     behavior: setting,
     name: responseAsync,
@@ -241,156 +234,167 @@ trait JQuery extends StObject {
       /* callback */ js.Function1[/* response */ js.Any, Unit], 
       Unit
     ]
-  ): JQuery = js.native
-  def api(behavior: setting, name: responseAsync, value: `false`): JQuery = js.native
-  def api(behavior: setting, name: response, value: js.UndefOr[scala.Nothing]): js.Any | `false` = js.native
-  def api(behavior: setting, name: response, value: js.Any): JQuery = js.native
-  def api(behavior: setting, name: response, value: `false`): JQuery = js.native
-  def api(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-  def api(behavior: setting, name: serializeForm, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def api(behavior: setting, name: serializeForm, value: Boolean): JQuery = js.native
-  def api(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def api(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def api(behavior: setting, name: stateContext, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
-  def api(behavior: setting, name: stateContext, value: String): JQuery = js.native
-  def api(behavior: setting, name: stateContext, value: JQuery): JQuery = js.native
-  def api(behavior: setting, name: successTest, value: js.UndefOr[scala.Nothing]): js.Function1[/* response */ js.Any, Boolean] = js.native
-  def api(behavior: setting, name: successTest, value: js.Function1[/* response */ js.Any, Boolean]): JQuery = js.native
-  def api(behavior: setting, name: throttleFirstRequest, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def api(behavior: setting, name: throttleFirstRequest, value: Boolean): JQuery = js.native
-  def api(behavior: setting, name: throttle, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def api(behavior: setting, name: throttle, value: Double): JQuery = js.native
-  def api(behavior: setting, name: urlData, value: js.UndefOr[scala.Nothing]): js.Any | `false` = js.native
-  def api(behavior: setting, name: urlData, value: js.Any): JQuery = js.native
-  def api(behavior: setting, name: urlData, value: `false`): JQuery = js.native
-  def api(behavior: setting, name: url, value: js.UndefOr[scala.Nothing]): String | `false` = js.native
-  def api(behavior: setting, name: url, value: String): JQuery = js.native
-  def api(behavior: setting, name: url, value: `false`): JQuery = js.native
-  def api(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def api(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def api(settings: ApiSettings): JQuery = js.native
+  ): JQuery
+  def api(behavior: setting, name: responseAsync, value: Unit): (js.Function2[
+    /* settings */ ApiSettings, 
+    /* callback */ js.Function1[/* response */ js.Any, Unit], 
+    Unit
+  ]) | `false`
+  def api(behavior: setting, name: responseAsync, value: `false`): JQuery
+  def api(behavior: setting, name: response, value: js.Any): JQuery
+  def api(behavior: setting, name: response, value: Unit): js.Any | `false`
+  def api(behavior: setting, name: response, value: `false`): JQuery
+  def api(behavior: setting, name: selector, value: Unit): SelectorSettings
+  def api(behavior: setting, name: selector, value: SelectorSettings): JQuery
+  def api(behavior: setting, name: serializeForm, value: Boolean): JQuery
+  def api(behavior: setting, name: serializeForm, value: Unit): Boolean
+  def api(behavior: setting, name: silent, value: Boolean): JQuery
+  def api(behavior: setting, name: silent, value: Unit): Boolean
+  def api(behavior: setting, name: stateContext, value: String): JQuery
+  def api(behavior: setting, name: stateContext, value: Unit): String | JQuery
+  def api(behavior: setting, name: stateContext, value: JQuery): JQuery
+  def api(behavior: setting, name: successTest, value: js.Function1[/* response */ js.Any, Boolean]): JQuery
+  def api(behavior: setting, name: successTest, value: Unit): js.Function1[/* response */ js.Any, Boolean]
+  def api(behavior: setting, name: throttleFirstRequest, value: Boolean): JQuery
+  def api(behavior: setting, name: throttleFirstRequest, value: Unit): Boolean
+  def api(behavior: setting, name: throttle, value: Double): JQuery
+  def api(behavior: setting, name: throttle, value: Unit): Double
+  def api(behavior: setting, name: urlData, value: js.Any): JQuery
+  def api(behavior: setting, name: urlData, value: Unit): js.Any | `false`
+  def api(behavior: setting, name: urlData, value: `false`): JQuery
+  def api(behavior: setting, name: url, value: String): JQuery
+  def api(behavior: setting, name: url, value: Unit): String | `false`
+  def api(behavior: setting, name: url, value: `false`): JQuery
+  def api(behavior: setting, name: verbose, value: Boolean): JQuery
+  def api(behavior: setting, name: verbose, value: Unit): Boolean
+  def api(settings: ApiSettings): JQuery
   @JSName("api")
-  def api_ClassNameSettings(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-  @JSName("api")
-  def api_JQuery(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  @JSName("api")
-  def api_JQuery(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-  @JSName("api")
-  def api_JQuery(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
-  @JSName("api")
-  def api_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  @JSName("api")
-  var api_Original: Api = js.native
+  var api_Original: Api
   /**
     * Aborts current API request
     */
   @JSName("api")
-  def api_abort(behavior: abort): JQuery = js.native
+  def api_abort(behavior: abort): JQuery
   /**
     * Adds data to existing templated url and returns full url string
     */
   @JSName("api")
-  def api_addurldata(behavior: `add url data`, url: String, data: js.Any): String = js.native
+  def api_addurldata(behavior: `add url data`, url: String, data: js.Any): String
   /**
     * Creates new cache, removing all locally cached URLs
     */
   @JSName("api")
-  def api_createcache(behavior: `create cache`): JQuery = js.native
+  def api_createcache(behavior: `create cache`): JQuery
   /**
     * Removes API settings from the page and all events
     */
   @JSName("api")
-  def api_destroy(behavior: destroy): JQuery = js.native
+  def api_destroy(behavior: destroy): JQuery
   /**
     * Gets event that API request will occur on
     */
   @JSName("api")
-  def api_getevent(behavior: `get event`): String = js.native
+  def api_getevent(behavior: `get event`): String
   /**
     * Gets promise for current API request
     */
   @JSName("api")
-  def api_getrequest(behavior: `get request`): JQueryDeferred[_] | `false` = js.native
+  def api_getrequest(behavior: `get request`): JQueryDeferred[js.Any] | `false`
   /**
     * Returns encodeURIComponent value only if value passed is not already encoded
     */
   @JSName("api")
-  def api_geturlencodedvalue(behavior: `get url encoded value`, value: js.Any): String = js.native
+  def api_geturlencodedvalue(behavior: `get url encoded value`, value: js.Any): String
   /**
     * Returns whether element is disabled
     */
   @JSName("api")
-  def api_isdisabled(behavior: `is disabled`): Boolean = js.native
+  def api_isdisabled(behavior: `is disabled`): Boolean
   /**
     * Returns whether element is loading
     */
   @JSName("api")
-  def api_isloading(behavior: `is loading`): Boolean = js.native
+  def api_isloading(behavior: `is loading`): Boolean
   /**
     * Returns whether element response is mocked
     */
   @JSName("api")
-  def api_ismocked(behavior: `is mocked`): Boolean = js.native
+  def api_ismocked(behavior: `is mocked`): Boolean
   /**
     * Execute query using existing API settings
     */
   @JSName("api")
-  def api_query(behavior: query): JQuery = js.native
+  def api_query(behavior: query): JQuery
   /**
     * Reads a locally cached response for a URL
     */
   @JSName("api")
-  def api_readcachedresponse(behavior: `read cached response`, url: String): js.Any = js.native
+  def api_readcachedresponse(behavior: `read cached response`, url: String): js.Any
   /**
     * Removes error state to element
     */
   @JSName("api")
-  def api_removeerror(behavior: `remove error`): JQuery = js.native
+  def api_removeerror(behavior: `remove error`): JQuery
   /**
     * Removes loading state to element
     */
   @JSName("api")
-  def api_removeloading(behavior: `remove loading`): JQuery = js.native
+  def api_removeloading(behavior: `remove loading`): JQuery
   /**
     * Removes loading and error state from element
     */
   @JSName("api")
-  def api_reset(behavior: reset): JQuery = js.native
+  def api_reset(behavior: reset): JQuery
   /**
     * Sets error state to element
     */
   @JSName("api")
-  def api_seterror(behavior: `set error`): JQuery = js.native
+  def api_seterror(behavior: `set error`): JQuery
   /**
     * Sets loading state to element
     */
   @JSName("api")
-  def api_setloading(behavior: `set loading`): JQuery = js.native
+  def api_setloading(behavior: `set loading`): JQuery
   @JSName("api")
-  def api_setting(behavior: setting, value: ApiSettings): JQuery = js.native
+  def api_setting(behavior: setting, value: ApiSettings): JQuery
   /**
     * Returns whether last request was cancelled
     */
   @JSName("api")
-  def api_wascancelled(behavior: `was cancelled`): Boolean = js.native
+  def api_wascancelled(behavior: `was cancelled`): Boolean
   /**
     * Returns whether last request was completed
     */
   @JSName("api")
-  def api_wascomplete(behavior: `was complete`): Boolean = js.native
+  def api_wascomplete(behavior: `was complete`): Boolean
   /**
     * Returns whether last request was failure
     */
   @JSName("api")
-  def api_wasfailure(behavior: `was failure`): Boolean = js.native
+  def api_wasfailure(behavior: `was failure`): Boolean
   /**
     * Returns whether last request was successful
     */
   @JSName("api")
-  def api_wassuccessful(behavior: `was successful`): Boolean = js.native
+  def api_wassuccessful(behavior: `was successful`): Boolean
   /**
     * Writes a cached response for a URL
     */
   @JSName("api")
-  def api_writecachedresponse(behavior: `write cached response`, url: String, response: js.Any): JQuery = js.native
+  def api_writecachedresponse(behavior: `write cached response`, url: String, response: js.Any): JQuery
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(api: Api): JQuery = {
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setApi(value: Api): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+  }
 }

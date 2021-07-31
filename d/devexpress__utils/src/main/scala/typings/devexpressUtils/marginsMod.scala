@@ -4,7 +4,6 @@ import typings.devexpressUtils.offsetsMod.Offsets
 import typings.devexpressUtils.typesMod.ICloneable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object marginsMod {
@@ -19,8 +18,11 @@ object marginsMod {
   /* static members */
   object Margins {
     
-    @JSImport("@devexpress/utils/lib/geometry/margins", "Margins.empty")
+    @JSImport("@devexpress/utils/lib/geometry/margins", "Margins")
     @js.native
-    def empty(): Margins = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def empty(): Margins = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Margins]
   }
 }

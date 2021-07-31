@@ -3,13 +3,11 @@ package typings.googleapis.anon
 import typings.googleapis.calendarV3Mod.calendarV3.SchemaCalendarNotification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notifications extends StObject {
   
-  var notifications: js.UndefOr[js.Array[SchemaCalendarNotification]] = js.native
+  var notifications: js.UndefOr[js.Array[SchemaCalendarNotification]] = js.undefined
 }
 object Notifications {
   

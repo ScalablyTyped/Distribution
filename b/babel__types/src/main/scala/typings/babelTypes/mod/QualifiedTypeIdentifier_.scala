@@ -3,32 +3,27 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.QualifiedTypeIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait QualifiedTypeIdentifier_
-  extends Flow
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait QualifiedTypeIdentifier_
+  extends StObject
+     with BaseNode
+     with Flow {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var qualification: Identifier_ | QualifiedTypeIdentifier_ = js.native
+  var qualification: Identifier_ | QualifiedTypeIdentifier_
   
   @JSName("type")
-  var type_QualifiedTypeIdentifier_ : QualifiedTypeIdentifier = js.native
+  var type_QualifiedTypeIdentifier_ : QualifiedTypeIdentifier
 }
 object QualifiedTypeIdentifier_ {
   
   @scala.inline
-  def apply(
-    id: Identifier_,
-    qualification: Identifier_ | QualifiedTypeIdentifier_,
-    `type`: QualifiedTypeIdentifier
-  ): QualifiedTypeIdentifier_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], qualification = qualification.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_, qualification: Identifier_ | QualifiedTypeIdentifier_): QualifiedTypeIdentifier_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], qualification = qualification.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("QualifiedTypeIdentifier")
     __obj.asInstanceOf[QualifiedTypeIdentifier_]
   }
   

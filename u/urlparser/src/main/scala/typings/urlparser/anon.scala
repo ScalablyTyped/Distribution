@@ -2,19 +2,17 @@ package typings.urlparser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Base extends StObject {
     
-    var base: String = js.native
+    var base: String
     
-    var hash: String = js.native
+    var hash: String
     
-    var name: String = js.native
+    var name: String
   }
   object Base {
     
@@ -38,18 +36,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Hostname extends StObject {
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var password: String = js.native
+    var password: String
     
-    var port: String | Double = js.native
+    var port: String | Double
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var username: String = js.native
+    var username: String
   }
   object Hostname {
     
@@ -79,12 +76,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Params extends StObject {
     
-    var params: js.Object = js.native
+    var params: js.Object
     
-    var parts: js.Array[String] = js.native
+    var parts: js.Array[String]
   }
   object Params {
     

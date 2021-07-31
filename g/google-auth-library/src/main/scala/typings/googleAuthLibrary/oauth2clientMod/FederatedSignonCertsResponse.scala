@@ -3,17 +3,15 @@ package typings.googleAuthLibrary.oauth2clientMod
 import typings.gaxios.commonMod.GaxiosResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FederatedSignonCertsResponse extends StObject {
   
-  var certs: Certificates = js.native
+  var certs: Certificates
   
-  var format: CertificateFormat = js.native
+  var format: CertificateFormat
   
-  var res: js.UndefOr[GaxiosResponse[Unit] | Null] = js.native
+  var res: js.UndefOr[GaxiosResponse[Unit] | Null] = js.undefined
 }
 object FederatedSignonCertsResponse {
   

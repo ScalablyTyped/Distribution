@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.instagramPrivateApi.anon.Viewprogresss
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object igtvWriteSeenStateOptionsMod {
   
-  @js.native
   trait IgtvWriteSeenStateOptions extends StObject {
     
-    var grid_impressions: js.UndefOr[js.Array[String]] = js.native
+    var grid_impressions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var impressions: js.UndefOr[StringDictionary[Viewprogresss]] = js.native
+    var impressions: js.UndefOr[StringDictionary[Viewprogresss]] = js.undefined
   }
   object IgtvWriteSeenStateOptions {
     

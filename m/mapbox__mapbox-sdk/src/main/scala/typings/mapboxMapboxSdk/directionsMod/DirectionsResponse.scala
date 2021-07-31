@@ -2,30 +2,28 @@ package typings.mapboxMapboxSdk.directionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionsResponse extends StObject {
   
   /**
     * String indicating the state of the response. This is a separate code than the HTTP status code.
     * On normal valid responses, the value will be Ok.
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * Array of Route objects ordered by descending recommendation rank. May contain at most two routes.
     */
-  var routes: js.Array[Route] = js.native
+  var routes: js.Array[Route]
   
-  var uuid: String = js.native
+  var uuid: String
   
   /**
     * Array of Waypoint objects. Each waypoints is an input coordinate snapped to the road and path network.
     * The waypoints appear in the array in the order of the input coordinates.
     */
-  var waypoints: js.Array[Waypoint] = js.native
+  var waypoints: js.Array[Waypoint]
 }
 object DirectionsResponse {
   

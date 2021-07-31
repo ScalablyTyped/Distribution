@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexableText extends StObject {
   
   /** Text to be indexed for the file to improve fullText queries. This is limited to 128KB in length and may contain HTML elements. */
-  var indexableText: js.UndefOr[String] = js.native
+  var indexableText: js.UndefOr[String] = js.undefined
   
   /** A thumbnail for the file. This will only be used if Google Drive cannot generate a standard thumbnail. */
-  var thumbnail: js.UndefOr[Image] = js.native
+  var thumbnail: js.UndefOr[Image] = js.undefined
 }
 object IndexableText {
   

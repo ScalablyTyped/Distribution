@@ -9,7 +9,6 @@ import typings.imageQ.pointContainerMod.PointContainer
 import typings.imageQ.utilsPaletteMod.Palette
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helperMod {

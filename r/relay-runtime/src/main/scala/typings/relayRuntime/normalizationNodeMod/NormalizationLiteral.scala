@@ -2,20 +2,20 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NormalizationLiteral extends NormalizationArgument {
+trait NormalizationLiteral
+  extends StObject
+     with NormalizationArgument {
   
-  val kind: String = js.native
+  val kind: String
   
   // 'Literal';
-  val name: String = js.native
+  val name: String
   
-  val `type`: js.UndefOr[String | Null] = js.native
+  val `type`: js.UndefOr[String | Null] = js.undefined
   
-  val value: js.UndefOr[js.Any] = js.native
+  val value: js.UndefOr[js.Any] = js.undefined
 }
 object NormalizationLiteral {
   

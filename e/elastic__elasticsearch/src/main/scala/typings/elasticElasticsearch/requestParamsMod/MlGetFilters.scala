@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlGetFilters extends Generic {
+trait MlGetFilters
+  extends StObject
+     with Generic {
   
-  var filter_id: js.UndefOr[String] = js.native
+  var filter_id: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object MlGetFilters {
   

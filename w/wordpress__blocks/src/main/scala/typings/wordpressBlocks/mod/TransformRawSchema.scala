@@ -3,253 +3,251 @@ package typings.wordpressBlocks.mod
 import typings.wordpressBlocks.anon.Classes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ k in keyof std.HTMLElementTagNameMap | '#text' ]:? {  attributes :std.Array<string> | undefined,   require :std.Array<keyof std.HTMLElementTagNameMap> | undefined,   classes :std.Array<string | std.RegExp> | undefined,   children :@wordpress/blocks.@wordpress/blocks.TransformRawSchema | undefined}} */
-@js.native
 trait TransformRawSchema extends StObject {
   
   @JSName("#text")
-  var Numbersigntext: js.UndefOr[Classes] = js.native
+  var Numbersigntext: js.UndefOr[Classes] = js.undefined
   
-  var a: js.UndefOr[Classes] = js.native
+  var a: js.UndefOr[Classes] = js.undefined
   
-  var abbr: js.UndefOr[Classes] = js.native
+  var abbr: js.UndefOr[Classes] = js.undefined
   
-  var address: js.UndefOr[Classes] = js.native
+  var address: js.UndefOr[Classes] = js.undefined
   
-  var applet: js.UndefOr[Classes] = js.native
+  var applet: js.UndefOr[Classes] = js.undefined
   
-  var area: js.UndefOr[Classes] = js.native
+  var area: js.UndefOr[Classes] = js.undefined
   
-  var article: js.UndefOr[Classes] = js.native
+  var article: js.UndefOr[Classes] = js.undefined
   
-  var aside: js.UndefOr[Classes] = js.native
+  var aside: js.UndefOr[Classes] = js.undefined
   
-  var audio: js.UndefOr[Classes] = js.native
+  var audio: js.UndefOr[Classes] = js.undefined
   
-  var b: js.UndefOr[Classes] = js.native
+  var b: js.UndefOr[Classes] = js.undefined
   
-  var base: js.UndefOr[Classes] = js.native
+  var base: js.UndefOr[Classes] = js.undefined
   
-  var basefont: js.UndefOr[Classes] = js.native
+  var basefont: js.UndefOr[Classes] = js.undefined
   
-  var bdi: js.UndefOr[Classes] = js.native
+  var bdi: js.UndefOr[Classes] = js.undefined
   
-  var bdo: js.UndefOr[Classes] = js.native
+  var bdo: js.UndefOr[Classes] = js.undefined
   
-  var blockquote: js.UndefOr[Classes] = js.native
+  var blockquote: js.UndefOr[Classes] = js.undefined
   
-  var body: js.UndefOr[Classes] = js.native
+  var body: js.UndefOr[Classes] = js.undefined
   
-  var br: js.UndefOr[Classes] = js.native
+  var br: js.UndefOr[Classes] = js.undefined
   
-  var button: js.UndefOr[Classes] = js.native
+  var button: js.UndefOr[Classes] = js.undefined
   
-  var canvas: js.UndefOr[Classes] = js.native
+  var canvas: js.UndefOr[Classes] = js.undefined
   
-  var caption: js.UndefOr[Classes] = js.native
+  var caption: js.UndefOr[Classes] = js.undefined
   
-  var cite: js.UndefOr[Classes] = js.native
+  var cite: js.UndefOr[Classes] = js.undefined
   
-  var code: js.UndefOr[Classes] = js.native
+  var code: js.UndefOr[Classes] = js.undefined
   
-  var col: js.UndefOr[Classes] = js.native
+  var col: js.UndefOr[Classes] = js.undefined
   
-  var colgroup: js.UndefOr[Classes] = js.native
+  var colgroup: js.UndefOr[Classes] = js.undefined
   
-  var data: js.UndefOr[Classes] = js.native
+  var data: js.UndefOr[Classes] = js.undefined
   
-  var datalist: js.UndefOr[Classes] = js.native
+  var datalist: js.UndefOr[Classes] = js.undefined
   
-  var dd: js.UndefOr[Classes] = js.native
+  var dd: js.UndefOr[Classes] = js.undefined
   
-  var del: js.UndefOr[Classes] = js.native
+  var del: js.UndefOr[Classes] = js.undefined
   
-  var details: js.UndefOr[Classes] = js.native
+  var details: js.UndefOr[Classes] = js.undefined
   
-  var dfn: js.UndefOr[Classes] = js.native
+  var dfn: js.UndefOr[Classes] = js.undefined
   
-  var dialog: js.UndefOr[Classes] = js.native
+  var dialog: js.UndefOr[Classes] = js.undefined
   
-  var dir: js.UndefOr[Classes] = js.native
+  var dir: js.UndefOr[Classes] = js.undefined
   
-  var div: js.UndefOr[Classes] = js.native
+  var div: js.UndefOr[Classes] = js.undefined
   
-  var dl: js.UndefOr[Classes] = js.native
+  var dl: js.UndefOr[Classes] = js.undefined
   
-  var dt: js.UndefOr[Classes] = js.native
+  var dt: js.UndefOr[Classes] = js.undefined
   
-  var em: js.UndefOr[Classes] = js.native
+  var em: js.UndefOr[Classes] = js.undefined
   
-  var embed: js.UndefOr[Classes] = js.native
+  var embed: js.UndefOr[Classes] = js.undefined
   
-  var fieldset: js.UndefOr[Classes] = js.native
+  var fieldset: js.UndefOr[Classes] = js.undefined
   
-  var figcaption: js.UndefOr[Classes] = js.native
+  var figcaption: js.UndefOr[Classes] = js.undefined
   
-  var figure: js.UndefOr[Classes] = js.native
+  var figure: js.UndefOr[Classes] = js.undefined
   
-  var font: js.UndefOr[Classes] = js.native
+  var font: js.UndefOr[Classes] = js.undefined
   
-  var footer: js.UndefOr[Classes] = js.native
+  var footer: js.UndefOr[Classes] = js.undefined
   
-  var form: js.UndefOr[Classes] = js.native
+  var form: js.UndefOr[Classes] = js.undefined
   
-  var frame: js.UndefOr[Classes] = js.native
+  var frame: js.UndefOr[Classes] = js.undefined
   
-  var frameset: js.UndefOr[Classes] = js.native
+  var frameset: js.UndefOr[Classes] = js.undefined
   
-  var h1: js.UndefOr[Classes] = js.native
+  var h1: js.UndefOr[Classes] = js.undefined
   
-  var h2: js.UndefOr[Classes] = js.native
+  var h2: js.UndefOr[Classes] = js.undefined
   
-  var h3: js.UndefOr[Classes] = js.native
+  var h3: js.UndefOr[Classes] = js.undefined
   
-  var h4: js.UndefOr[Classes] = js.native
+  var h4: js.UndefOr[Classes] = js.undefined
   
-  var h5: js.UndefOr[Classes] = js.native
+  var h5: js.UndefOr[Classes] = js.undefined
   
-  var h6: js.UndefOr[Classes] = js.native
+  var h6: js.UndefOr[Classes] = js.undefined
   
-  var head: js.UndefOr[Classes] = js.native
+  var head: js.UndefOr[Classes] = js.undefined
   
-  var header: js.UndefOr[Classes] = js.native
+  var header: js.UndefOr[Classes] = js.undefined
   
-  var hgroup: js.UndefOr[Classes] = js.native
+  var hgroup: js.UndefOr[Classes] = js.undefined
   
-  var hr: js.UndefOr[Classes] = js.native
+  var hr: js.UndefOr[Classes] = js.undefined
   
-  var html: js.UndefOr[Classes] = js.native
+  var html: js.UndefOr[Classes] = js.undefined
   
-  var i: js.UndefOr[Classes] = js.native
+  var i: js.UndefOr[Classes] = js.undefined
   
-  var iframe: js.UndefOr[Classes] = js.native
+  var iframe: js.UndefOr[Classes] = js.undefined
   
-  var img: js.UndefOr[Classes] = js.native
+  var img: js.UndefOr[Classes] = js.undefined
   
-  var input: js.UndefOr[Classes] = js.native
+  var input: js.UndefOr[Classes] = js.undefined
   
-  var ins: js.UndefOr[Classes] = js.native
+  var ins: js.UndefOr[Classes] = js.undefined
   
-  var kbd: js.UndefOr[Classes] = js.native
+  var kbd: js.UndefOr[Classes] = js.undefined
   
-  var label: js.UndefOr[Classes] = js.native
+  var label: js.UndefOr[Classes] = js.undefined
   
-  var legend: js.UndefOr[Classes] = js.native
+  var legend: js.UndefOr[Classes] = js.undefined
   
-  var li: js.UndefOr[Classes] = js.native
+  var li: js.UndefOr[Classes] = js.undefined
   
-  var link: js.UndefOr[Classes] = js.native
+  var link: js.UndefOr[Classes] = js.undefined
   
-  var main: js.UndefOr[Classes] = js.native
+  var main: js.UndefOr[Classes] = js.undefined
   
-  var map: js.UndefOr[Classes] = js.native
+  var map: js.UndefOr[Classes] = js.undefined
   
-  var mark: js.UndefOr[Classes] = js.native
+  var mark: js.UndefOr[Classes] = js.undefined
   
-  var marquee: js.UndefOr[Classes] = js.native
+  var marquee: js.UndefOr[Classes] = js.undefined
   
-  var menu: js.UndefOr[Classes] = js.native
+  var menu: js.UndefOr[Classes] = js.undefined
   
-  var meta: js.UndefOr[Classes] = js.native
+  var meta: js.UndefOr[Classes] = js.undefined
   
-  var meter: js.UndefOr[Classes] = js.native
+  var meter: js.UndefOr[Classes] = js.undefined
   
-  var nav: js.UndefOr[Classes] = js.native
+  var nav: js.UndefOr[Classes] = js.undefined
   
-  var noscript: js.UndefOr[Classes] = js.native
+  var noscript: js.UndefOr[Classes] = js.undefined
   
-  var `object`: js.UndefOr[Classes] = js.native
+  var `object`: js.UndefOr[Classes] = js.undefined
   
-  var ol: js.UndefOr[Classes] = js.native
+  var ol: js.UndefOr[Classes] = js.undefined
   
-  var optgroup: js.UndefOr[Classes] = js.native
+  var optgroup: js.UndefOr[Classes] = js.undefined
   
-  var option: js.UndefOr[Classes] = js.native
+  var option: js.UndefOr[Classes] = js.undefined
   
-  var output: js.UndefOr[Classes] = js.native
+  var output: js.UndefOr[Classes] = js.undefined
   
-  var p: js.UndefOr[Classes] = js.native
+  var p: js.UndefOr[Classes] = js.undefined
   
-  var param: js.UndefOr[Classes] = js.native
+  var param: js.UndefOr[Classes] = js.undefined
   
-  var picture: js.UndefOr[Classes] = js.native
+  var picture: js.UndefOr[Classes] = js.undefined
   
-  var pre: js.UndefOr[Classes] = js.native
+  var pre: js.UndefOr[Classes] = js.undefined
   
-  var progress: js.UndefOr[Classes] = js.native
+  var progress: js.UndefOr[Classes] = js.undefined
   
-  var q: js.UndefOr[Classes] = js.native
+  var q: js.UndefOr[Classes] = js.undefined
   
-  var rp: js.UndefOr[Classes] = js.native
+  var rp: js.UndefOr[Classes] = js.undefined
   
-  var rt: js.UndefOr[Classes] = js.native
+  var rt: js.UndefOr[Classes] = js.undefined
   
-  var ruby: js.UndefOr[Classes] = js.native
+  var ruby: js.UndefOr[Classes] = js.undefined
   
-  var s: js.UndefOr[Classes] = js.native
+  var s: js.UndefOr[Classes] = js.undefined
   
-  var samp: js.UndefOr[Classes] = js.native
+  var samp: js.UndefOr[Classes] = js.undefined
   
-  var script: js.UndefOr[Classes] = js.native
+  var script: js.UndefOr[Classes] = js.undefined
   
-  var section: js.UndefOr[Classes] = js.native
+  var section: js.UndefOr[Classes] = js.undefined
   
-  var select: js.UndefOr[Classes] = js.native
+  var select: js.UndefOr[Classes] = js.undefined
   
-  var slot: js.UndefOr[Classes] = js.native
+  var slot: js.UndefOr[Classes] = js.undefined
   
-  var small: js.UndefOr[Classes] = js.native
+  var small: js.UndefOr[Classes] = js.undefined
   
-  var source: js.UndefOr[Classes] = js.native
+  var source: js.UndefOr[Classes] = js.undefined
   
-  var span: js.UndefOr[Classes] = js.native
+  var span: js.UndefOr[Classes] = js.undefined
   
-  var strong: js.UndefOr[Classes] = js.native
+  var strong: js.UndefOr[Classes] = js.undefined
   
-  var style: js.UndefOr[Classes] = js.native
+  var style: js.UndefOr[Classes] = js.undefined
   
-  var sub: js.UndefOr[Classes] = js.native
+  var sub: js.UndefOr[Classes] = js.undefined
   
-  var summary: js.UndefOr[Classes] = js.native
+  var summary: js.UndefOr[Classes] = js.undefined
   
-  var sup: js.UndefOr[Classes] = js.native
+  var sup: js.UndefOr[Classes] = js.undefined
   
-  var table: js.UndefOr[Classes] = js.native
+  var table: js.UndefOr[Classes] = js.undefined
   
-  var tbody: js.UndefOr[Classes] = js.native
+  var tbody: js.UndefOr[Classes] = js.undefined
   
-  var td: js.UndefOr[Classes] = js.native
+  var td: js.UndefOr[Classes] = js.undefined
   
-  var template: js.UndefOr[Classes] = js.native
+  var template: js.UndefOr[Classes] = js.undefined
   
-  var textarea: js.UndefOr[Classes] = js.native
+  var textarea: js.UndefOr[Classes] = js.undefined
   
-  var tfoot: js.UndefOr[Classes] = js.native
+  var tfoot: js.UndefOr[Classes] = js.undefined
   
-  var th: js.UndefOr[Classes] = js.native
+  var th: js.UndefOr[Classes] = js.undefined
   
-  var thead: js.UndefOr[Classes] = js.native
+  var thead: js.UndefOr[Classes] = js.undefined
   
-  var time: js.UndefOr[Classes] = js.native
+  var time: js.UndefOr[Classes] = js.undefined
   
-  var title: js.UndefOr[Classes] = js.native
+  var title: js.UndefOr[Classes] = js.undefined
   
-  var tr: js.UndefOr[Classes] = js.native
+  var tr: js.UndefOr[Classes] = js.undefined
   
-  var track: js.UndefOr[Classes] = js.native
+  var track: js.UndefOr[Classes] = js.undefined
   
-  var u: js.UndefOr[Classes] = js.native
+  var u: js.UndefOr[Classes] = js.undefined
   
-  var ul: js.UndefOr[Classes] = js.native
+  var ul: js.UndefOr[Classes] = js.undefined
   
-  var `var`: js.UndefOr[Classes] = js.native
+  var `var`: js.UndefOr[Classes] = js.undefined
   
-  var video: js.UndefOr[Classes] = js.native
+  var video: js.UndefOr[Classes] = js.undefined
   
-  var wbr: js.UndefOr[Classes] = js.native
+  var wbr: js.UndefOr[Classes] = js.undefined
 }
 object TransformRawSchema {
   

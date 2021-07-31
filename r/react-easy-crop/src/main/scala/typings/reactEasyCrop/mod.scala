@@ -28,7 +28,6 @@ import typings.std.TouchEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -214,66 +213,65 @@ object mod {
     var wheelTimer: Double | Null = js.native
   }
   
-  @js.native
   trait CropperProps extends StObject {
     
-    var aspect: Double = js.native
+    var aspect: Double
     
-    var classes: ContainerClassName = js.native
+    var classes: ContainerClassName
     
-    var crop: Point = js.native
+    var crop: Point
     
-    var cropShape: rect | round = js.native
+    var cropShape: rect | round
     
-    var cropSize: js.UndefOr[Size] = js.native
+    var cropSize: js.UndefOr[Size] = js.undefined
     
-    var disableAutomaticStylesInjection: js.UndefOr[Boolean] = js.native
+    var disableAutomaticStylesInjection: js.UndefOr[Boolean] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var initialCroppedAreaPixels: js.UndefOr[Area] = js.native
+    var initialCroppedAreaPixels: js.UndefOr[Area] = js.undefined
     
-    var maxZoom: Double = js.native
+    var maxZoom: Double
     
-    var mediaProps: ImgHTMLAttributes[HTMLElement] | VideoHTMLAttributes[HTMLElement] = js.native
+    var mediaProps: ImgHTMLAttributes[HTMLElement] | VideoHTMLAttributes[HTMLElement]
     
-    var minZoom: Double = js.native
+    var minZoom: Double
     
-    var onCropAreaChange: js.UndefOr[js.Function2[/* croppedArea */ Area, /* croppedAreaPixels */ Area, Unit]] = js.native
+    var onCropAreaChange: js.UndefOr[js.Function2[/* croppedArea */ Area, /* croppedAreaPixels */ Area, Unit]] = js.undefined
     
-    def onCropChange(location: Point): Unit = js.native
+    def onCropChange(location: Point): Unit
     
-    var onCropComplete: js.UndefOr[js.Function2[/* croppedArea */ Area, /* croppedAreaPixels */ Area, Unit]] = js.native
+    var onCropComplete: js.UndefOr[js.Function2[/* croppedArea */ Area, /* croppedAreaPixels */ Area, Unit]] = js.undefined
     
-    var onCropSizeChange: js.UndefOr[js.Function1[/* cropSize */ Size, Unit]] = js.native
+    var onCropSizeChange: js.UndefOr[js.Function1[/* cropSize */ Size, Unit]] = js.undefined
     
-    var onInteractionEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onInteractionEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onInteractionStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onInteractionStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onMediaLoaded: js.UndefOr[js.Function1[/* mediaSize */ MediaSize, Unit]] = js.native
+    var onMediaLoaded: js.UndefOr[js.Function1[/* mediaSize */ MediaSize, Unit]] = js.undefined
     
-    var onRotationChange: js.UndefOr[js.Function1[/* rotation */ Double, Unit]] = js.native
+    var onRotationChange: js.UndefOr[js.Function1[/* rotation */ Double, Unit]] = js.undefined
     
-    var onZoomChange: js.UndefOr[js.Function1[/* zoom */ Double, Unit]] = js.native
+    var onZoomChange: js.UndefOr[js.Function1[/* zoom */ Double, Unit]] = js.undefined
     
-    var restrictPosition: Boolean = js.native
+    var restrictPosition: Boolean
     
-    var rotation: Double = js.native
+    var rotation: Double
     
-    var showGrid: js.UndefOr[Boolean] = js.native
+    var showGrid: js.UndefOr[Boolean] = js.undefined
     
-    var style: ContainerStyle = js.native
+    var style: ContainerStyle
     
-    var transform: js.UndefOr[String] = js.native
+    var transform: js.UndefOr[String] = js.undefined
     
-    var video: js.UndefOr[String] = js.native
+    var video: js.UndefOr[String] = js.undefined
     
-    var zoom: Double = js.native
+    var zoom: Double
     
-    var zoomSpeed: Double = js.native
+    var zoomSpeed: Double
     
-    var zoomWithScroll: js.UndefOr[Boolean] = js.native
+    var zoomWithScroll: js.UndefOr[Boolean] = js.undefined
   }
   object CropperProps {
     
@@ -437,18 +435,17 @@ object mod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var cropSize: Size | Null = js.native
+    var cropSize: Size | Null
     
-    var hasWheelJustStarted: Boolean = js.native
+    var hasWheelJustStarted: Boolean
   }
   object State {
     
     @scala.inline
     def apply(hasWheelJustStarted: Boolean): State = {
-      val __obj = js.Dynamic.literal(hasWheelJustStarted = hasWheelJustStarted.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(hasWheelJustStarted = hasWheelJustStarted.asInstanceOf[js.Any], cropSize = null)
       __obj.asInstanceOf[State]
     }
     

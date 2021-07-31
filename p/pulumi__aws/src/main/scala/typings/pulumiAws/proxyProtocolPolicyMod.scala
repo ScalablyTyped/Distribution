@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proxyProtocolPolicyMod {
@@ -40,6 +39,10 @@ object proxyProtocolPolicyMod {
   /* static members */
   object ProxyProtocolPolicy {
     
+    @JSImport("@pulumi/aws/ec2/proxyProtocolPolicy", "ProxyProtocolPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ProxyProtocolPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -49,42 +52,36 @@ object proxyProtocolPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/proxyProtocolPolicy", "ProxyProtocolPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ProxyProtocolPolicy = js.native
-    @JSImport("@pulumi/aws/ec2/proxyProtocolPolicy", "ProxyProtocolPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ProxyProtocolPolicy = js.native
-    @JSImport("@pulumi/aws/ec2/proxyProtocolPolicy", "ProxyProtocolPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProxyProtocolPolicyState): ProxyProtocolPolicy = js.native
-    @JSImport("@pulumi/aws/ec2/proxyProtocolPolicy", "ProxyProtocolPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProxyProtocolPolicyState, opts: CustomResourceOptions): ProxyProtocolPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProxyProtocolPolicyState): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProxyProtocolPolicyState, opts: CustomResourceOptions): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
     
     /**
       * Returns true if the given object is an instance of ProxyProtocolPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/proxyProtocolPolicy", "ProxyProtocolPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/proxyProtocolPolicy.ProxyProtocolPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/proxyProtocolPolicy.ProxyProtocolPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/proxyProtocolPolicy.ProxyProtocolPolicy */ Boolean]
   }
   
-  @js.native
   trait ProxyProtocolPolicyArgs extends StObject {
     
     /**
       * List of instance ports to which the policy
       * should be applied. This can be specified if the protocol is SSL or TCP.
       */
-    val instancePorts: Input[js.Array[Input[String]]] = js.native
+    val instancePorts: Input[js.Array[Input[String]]]
     
     /**
       * The load balancer to which the policy
       * should be attached.
       */
-    val loadBalancer: Input[String] = js.native
+    val loadBalancer: Input[String]
   }
   object ProxyProtocolPolicyArgs {
     
@@ -108,20 +105,19 @@ object proxyProtocolPolicyMod {
     }
   }
   
-  @js.native
   trait ProxyProtocolPolicyState extends StObject {
     
     /**
       * List of instance ports to which the policy
       * should be applied. This can be specified if the protocol is SSL or TCP.
       */
-    val instancePorts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val instancePorts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The load balancer to which the policy
       * should be attached.
       */
-    val loadBalancer: js.UndefOr[Input[String]] = js.native
+    val loadBalancer: js.UndefOr[Input[String]] = js.undefined
   }
   object ProxyProtocolPolicyState {
     

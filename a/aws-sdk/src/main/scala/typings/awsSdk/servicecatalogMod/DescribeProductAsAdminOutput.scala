@@ -2,36 +2,34 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProductAsAdminOutput extends StObject {
   
   /**
     * Information about the associated budgets.
     */
-  var Budgets: js.UndefOr[typings.awsSdk.servicecatalogMod.Budgets] = js.native
+  var Budgets: js.UndefOr[typings.awsSdk.servicecatalogMod.Budgets] = js.undefined
   
   /**
     * Information about the product view.
     */
-  var ProductViewDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ProductViewDetail] = js.native
+  var ProductViewDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ProductViewDetail] = js.undefined
   
   /**
     * Information about the provisioning artifacts (also known as versions) for the specified product.
     */
-  var ProvisioningArtifactSummaries: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactSummaries] = js.native
+  var ProvisioningArtifactSummaries: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactSummaries] = js.undefined
   
   /**
     * Information about the TagOptions associated with the product.
     */
-  var TagOptions: js.UndefOr[TagOptionDetails] = js.native
+  var TagOptions: js.UndefOr[TagOptionDetails] = js.undefined
   
   /**
     * Information about the tags associated with the product.
     */
-  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.undefined
 }
 object DescribeProductAsAdminOutput {
   

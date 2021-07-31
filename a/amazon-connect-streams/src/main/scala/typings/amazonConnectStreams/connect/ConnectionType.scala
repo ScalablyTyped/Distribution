@@ -2,7 +2,6 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object ConnectionType extends StObject {
   
   /** The agent connection. */
   @js.native
-  sealed trait AGENT extends ConnectionType
+  sealed trait AGENT
+    extends StObject
+       with ConnectionType
   
   /** An inbound connection, usually representing an inbound call. */
   @js.native
-  sealed trait INBOUND extends ConnectionType
+  sealed trait INBOUND
+    extends StObject
+       with ConnectionType
   
   /** A special connection type representing a manager listen-in session. */
   @js.native
-  sealed trait MONITORING extends ConnectionType
+  sealed trait MONITORING
+    extends StObject
+       with ConnectionType
   
   /** An outbound connection, representing either an outbound call or additional connection added to the contact. */
   @js.native
-  sealed trait OUTBOUND extends ConnectionType
+  sealed trait OUTBOUND
+    extends StObject
+       with ConnectionType
 }

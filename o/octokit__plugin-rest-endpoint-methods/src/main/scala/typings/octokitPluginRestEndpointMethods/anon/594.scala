@@ -10,21 +10,19 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `594` extends StObject {
   
-  var parameters: RequestParameters with (Omit[ActivityGetThreadEndpoint, baseUrl | headers | mediaType]) = js.native
+  var parameters: RequestParameters & (Omit[ActivityGetThreadEndpoint, baseUrl | headers | mediaType])
   
-  var response: OctokitResponse[ActivityGetThreadResponseData] = js.native
+  var response: OctokitResponse[ActivityGetThreadResponseData]
 }
 object `594` {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[ActivityGetThreadEndpoint, baseUrl | headers | mediaType]),
+    parameters: RequestParameters & (Omit[ActivityGetThreadEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[ActivityGetThreadResponseData]
   ): `594` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -35,7 +33,7 @@ object `594` {
   implicit class `594MutableBuilder`[Self <: `594`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setParameters(value: RequestParameters with (Omit[ActivityGetThreadEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: RequestParameters & (Omit[ActivityGetThreadEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResponse(value: OctokitResponse[ActivityGetThreadResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])

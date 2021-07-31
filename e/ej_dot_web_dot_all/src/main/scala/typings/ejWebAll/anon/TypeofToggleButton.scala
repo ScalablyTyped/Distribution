@@ -3,17 +3,15 @@ package typings.ejWebAll.anon
 import typings.ejWebAll.ej.ToggleButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofToggleButton extends StObject {
   
   /* static member */
-  var Locale: js.Any = js.native
+  var Locale: js.Any
   
   /* static member */
-  var fn: ToggleButton = js.native
+  var fn: ToggleButton
 }
 object TypeofToggleButton {
   

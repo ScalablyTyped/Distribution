@@ -2,21 +2,19 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopContinuousExportResponse extends StObject {
   
   /**
     * Timestamp that represents when this continuous export started collecting data.
     */
-  var startTime: js.UndefOr[TimeStamp] = js.native
+  var startTime: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * Timestamp that represents when this continuous export was stopped.
     */
-  var stopTime: js.UndefOr[TimeStamp] = js.native
+  var stopTime: js.UndefOr[TimeStamp] = js.undefined
 }
 object StopContinuousExportResponse {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAttributeGroupRequest extends StObject {
   
   /**
     * The name or ID of the attribute group that holds the attributes to describe the application.
     */
-  var attributeGroup: AttributeGroupSpecifier = js.native
+  var attributeGroup: AttributeGroupSpecifier
   
   /**
     * A JSON string in the form of nested key-value pairs that represent the attributes in the group and describes an application and its components.
     */
-  var attributes: js.UndefOr[Attributes] = js.native
+  var attributes: js.UndefOr[Attributes] = js.undefined
   
   /**
     * The description of the attribute group that the user provides.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The new name of the attribute group. The name must be unique in the region in which you are updating the attribute group.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
 }
 object UpdateAttributeGroupRequest {
   

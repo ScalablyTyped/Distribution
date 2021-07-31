@@ -10,21 +10,22 @@ import typings.std.HTMLInputElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-text-mask", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-text-mask", JSImport.Default)
   @js.native
   class default () extends MaskedInput
   
-  @JSImport("react-text-mask", "conformToMask")
-  @js.native
-  def conformToMask(text: String, mask: js.Function1[/* value */ String, maskArray], config: js.Any): conformToMaskResult = js.native
-  @JSImport("react-text-mask", "conformToMask")
-  @js.native
-  def conformToMask(text: String, mask: maskArray, config: js.Any): conformToMaskResult = js.native
+  @scala.inline
+  def conformToMask(text: String, mask: js.Function1[/* value */ String, maskArray], config: js.Any): conformToMaskResult = (^.asInstanceOf[js.Dynamic].applyDynamic("conformToMask")(text.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[conformToMaskResult]
+  @scala.inline
+  def conformToMask(text: String, mask: maskArray, config: js.Any): conformToMaskResult = (^.asInstanceOf[js.Dynamic].applyDynamic("conformToMask")(text.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[conformToMaskResult]
   
   @js.native
   trait MaskedInput
@@ -33,14 +34,15 @@ object mod {
     var inputElement: HTMLElement = js.native
   }
   
-  @js.native
-  trait MaskedInputProps extends InputHTMLAttributes[HTMLInputElement] {
+  trait MaskedInputProps
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement] {
     
-    var guide: js.UndefOr[Boolean] = js.native
+    var guide: js.UndefOr[Boolean] = js.undefined
     
-    var keepCharPositions: js.UndefOr[Boolean] = js.native
+    var keepCharPositions: js.UndefOr[Boolean] = js.undefined
     
-    var mask: js.UndefOr[maskArray | (js.Function1[/* value */ String, maskArray])] = js.native
+    var mask: js.UndefOr[maskArray | (js.Function1[/* value */ String, maskArray])] = js.undefined
     
     var pipe: js.UndefOr[
         js.Function2[
@@ -48,15 +50,19 @@ object mod {
           /* config */ js.Any, 
           `false` | String | IndexesOfPipedChars
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var placeholderChar: js.UndefOr[String] = js.native
+    var placeholderChar: js.UndefOr[String] = js.undefined
     
     var render: js.UndefOr[
-        js.Function2[/* ref */ js.Function1[/* inputElement */ HTMLElement, Unit], /* props */ js.Any, _]
-      ] = js.native
+        js.Function2[
+          /* ref */ js.Function1[/* inputElement */ HTMLElement, Unit], 
+          /* props */ js.Any, 
+          js.Any
+        ]
+      ] = js.undefined
     
-    var showMask: js.UndefOr[Boolean] = js.native
+    var showMask: js.UndefOr[Boolean] = js.undefined
   }
   object MaskedInputProps {
     
@@ -108,7 +114,9 @@ object mod {
       def setPlaceholderCharUndefined: Self = StObject.set(x, "placeholderChar", js.undefined)
       
       @scala.inline
-      def setRender(value: (/* ref */ js.Function1[/* inputElement */ HTMLElement, Unit], /* props */ js.Any) => _): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      def setRender(
+        value: (/* ref */ js.Function1[/* inputElement */ HTMLElement, Unit], /* props */ js.Any) => js.Any
+      ): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -121,12 +129,11 @@ object mod {
     }
   }
   
-  @js.native
   trait conformToMaskResult extends StObject {
     
-    var conformedValue: String = js.native
+    var conformedValue: String
     
-    var meta: SomeCharsRejected = js.native
+    var meta: SomeCharsRejected
   }
   object conformToMaskResult {
     

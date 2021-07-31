@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CognitoMemberDefinition extends StObject {
   
   /**
     * An identifier for an application client. You must create the app client ID using Amazon Cognito.
     */
-  var ClientId: typings.awsSdk.sagemakerMod.ClientId = js.native
+  var ClientId: typings.awsSdk.sagemakerMod.ClientId
   
   /**
     * An identifier for a user group.
     */
-  var UserGroup: CognitoUserGroup = js.native
+  var UserGroup: CognitoUserGroup
   
   /**
     * An identifier for a user pool. The user pool must be in the same region as the service that you are calling.
     */
-  var UserPool: CognitoUserPool = js.native
+  var UserPool: CognitoUserPool
 }
 object CognitoMemberDefinition {
   

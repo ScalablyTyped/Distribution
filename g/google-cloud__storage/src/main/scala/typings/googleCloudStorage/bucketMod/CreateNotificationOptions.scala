@@ -3,21 +3,19 @@ package typings.googleCloudStorage.bucketMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNotificationOptions extends StObject {
   
-  var customAttributes: js.UndefOr[StringDictionary[String]] = js.native
+  var customAttributes: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var eventTypes: js.UndefOr[js.Array[String]] = js.native
+  var eventTypes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var objectNamePrefix: js.UndefOr[String] = js.native
+  var objectNamePrefix: js.UndefOr[String] = js.undefined
   
-  var payloadFormat: js.UndefOr[String] = js.native
+  var payloadFormat: js.UndefOr[String] = js.undefined
   
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
 }
 object CreateNotificationOptions {
   

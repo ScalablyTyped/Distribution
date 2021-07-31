@@ -13,10 +13,13 @@ import typings.typestyle.typestyleBooleans.`false`
 import typings.typestyle.typestyleMod.StylesTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("typestyle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("typestyle", "TypeStyle")
   @js.native
@@ -25,64 +28,51 @@ object mod {
     def this(hasAutoGenerateTag: AutoGenerateTag) = this()
   }
   
-  @JSImport("typestyle", "classes")
-  @js.native
-  def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = js.native
+  @scala.inline
+  def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classes")(classes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("typestyle", "createTypeStyle")
-  @js.native
-  def createTypeStyle(): typings.typestyle.typestyleMod.TypeStyle = js.native
-  @JSImport("typestyle", "createTypeStyle")
-  @js.native
-  def createTypeStyle(target: TextContent): typings.typestyle.typestyleMod.TypeStyle = js.native
+  @scala.inline
+  def createTypeStyle(): typings.typestyle.typestyleMod.TypeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeStyle")().asInstanceOf[typings.typestyle.typestyleMod.TypeStyle]
+  @scala.inline
+  def createTypeStyle(target: TextContent): typings.typestyle.typestyleMod.TypeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeStyle")(target.asInstanceOf[js.Any]).asInstanceOf[typings.typestyle.typestyleMod.TypeStyle]
   
-  @JSImport("typestyle", "cssRaw")
-  @js.native
-  def cssRaw(mustBeValidCSS: String): Unit = js.native
+  @scala.inline
+  def cssRaw(mustBeValidCSS: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cssRaw")(mustBeValidCSS.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typestyle", "cssRule")
-  @js.native
-  def cssRule(selector: String, objects: NestedCSSProperties*): Unit = js.native
+  @scala.inline
+  def cssRule(selector: String, objects: NestedCSSProperties*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cssRule")(selector.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("typestyle", "extend")
-  @js.native
-  def extend_false(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): NestedCSSProperties = js.native
+  @scala.inline
+  def extend_false(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): NestedCSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(objects.asInstanceOf[js.Any]).asInstanceOf[NestedCSSProperties]
   
-  @JSImport("typestyle", "fontFace")
-  @js.native
-  def fontFace(fontFace: FontFace*): Unit = js.native
+  @scala.inline
+  def fontFace(fontFace: FontFace*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFace")(fontFace.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typestyle", "forceRenderStyles")
-  @js.native
-  def forceRenderStyles(): Unit = js.native
+  @scala.inline
+  def forceRenderStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceRenderStyles")().asInstanceOf[Unit]
   
-  @JSImport("typestyle", "getStyles")
-  @js.native
-  def getStyles(): String = js.native
+  @scala.inline
+  def getStyles(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")().asInstanceOf[String]
   
-  @JSImport("typestyle", "keyframes")
-  @js.native
-  def keyframes(frames: KeyFrames): String = js.native
+  @scala.inline
+  def keyframes(frames: KeyFrames): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(frames.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("typestyle", "media")
-  @js.native
-  def media_false(mediaQuery: MediaQuery, objects: (js.UndefOr[`false` | NestedCSSProperties | Null])*): NestedCSSProperties = js.native
+  @scala.inline
+  def media_false(mediaQuery: MediaQuery, objects: (js.UndefOr[`false` | NestedCSSProperties | Null])*): NestedCSSProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("media")(mediaQuery.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[NestedCSSProperties]
   
-  @JSImport("typestyle", "reinit")
-  @js.native
-  def reinit(): Unit = js.native
+  @scala.inline
+  def reinit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reinit")().asInstanceOf[Unit]
   
-  @JSImport("typestyle", "setStylesTarget")
-  @js.native
-  def setStylesTarget(tag: StylesTarget): Unit = js.native
+  @scala.inline
+  def setStylesTarget(tag: StylesTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStylesTarget")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typestyle", "style")
-  @js.native
-  def style(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): String = js.native
+  @scala.inline
+  def style(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(objects.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("typestyle", "stylesheet")
-  @js.native
+  @scala.inline
   def stylesheet[Classes /* <: Record[String, NestedCSSProperties] */](classes: Classes): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ ClassName in keyof Classes ]: string}
-    */ typings.typestyle.typestyleStrings.stylesheet with TopLevel[js.Any] = js.native
+    */ typings.typestyle.typestyleStrings.stylesheet & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stylesheet")(classes.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ ClassName in keyof Classes ]: string}
+    */ typings.typestyle.typestyleStrings.stylesheet & TopLevel[js.Any]]
 }

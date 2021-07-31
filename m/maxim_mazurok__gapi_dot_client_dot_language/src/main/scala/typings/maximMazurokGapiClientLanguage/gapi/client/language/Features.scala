@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Features extends StObject {
   
   /** Classify the full document into categories. */
-  var classifyText: js.UndefOr[Boolean] = js.native
+  var classifyText: js.UndefOr[Boolean] = js.undefined
   
   /** Extract document-level sentiment. */
-  var extractDocumentSentiment: js.UndefOr[Boolean] = js.native
+  var extractDocumentSentiment: js.UndefOr[Boolean] = js.undefined
   
   /** Extract entities. */
-  var extractEntities: js.UndefOr[Boolean] = js.native
+  var extractEntities: js.UndefOr[Boolean] = js.undefined
   
   /** Extract entities and their associated sentiment. */
-  var extractEntitySentiment: js.UndefOr[Boolean] = js.native
+  var extractEntitySentiment: js.UndefOr[Boolean] = js.undefined
   
   /** Extract syntax information. */
-  var extractSyntax: js.UndefOr[Boolean] = js.native
+  var extractSyntax: js.UndefOr[Boolean] = js.undefined
 }
 object Features {
   

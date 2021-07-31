@@ -3,7 +3,6 @@ package typings.pixiJs.PIXI
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @extends PIXI.Geometry
   */
 @js.native
-trait QuadUv extends Geometry {
+trait QuadUv
+  extends StObject
+     with Geometry {
   
   /**
     * legacy upload method, just marks buffers dirty

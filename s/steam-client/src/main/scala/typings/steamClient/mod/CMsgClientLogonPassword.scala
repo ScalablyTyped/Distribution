@@ -2,16 +2,16 @@ package typings.steamClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CMsgClientLogonPassword extends CMsgClientLogon {
+trait CMsgClientLogonPassword
+  extends StObject
+     with CMsgClientLogon {
   
   /**
     * Required unless login_key is used
     */
-  var password: String = js.native
+  var password: String
 }
 object CMsgClientLogonPassword {
   

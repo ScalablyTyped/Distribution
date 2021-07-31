@@ -2,26 +2,25 @@ package typings.nodeForge.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pem {
   
-  @JSImport("node-forge", "pem.decode")
+  @JSImport("node-forge", "pem")
   @js.native
-  def decode(str: String): js.Array[ObjectPEM] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-forge", "pem.encode")
-  @js.native
-  def encode(msg: ObjectPEM): String = js.native
-  @JSImport("node-forge", "pem.encode")
-  @js.native
-  def encode(msg: ObjectPEM, options: EncodeOptions): String = js.native
+  @scala.inline
+  def decode(str: String): js.Array[ObjectPEM] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[ObjectPEM]]
   
-  @js.native
+  @scala.inline
+  def encode(msg: ObjectPEM): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(msg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(msg: ObjectPEM, options: EncodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(msg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait EncodeOptions extends StObject {
     
-    var maxline: js.UndefOr[Double] = js.native
+    var maxline: js.UndefOr[Double] = js.undefined
   }
   object EncodeOptions {
     
@@ -42,20 +41,19 @@ object pem {
     }
   }
   
-  @js.native
   trait ObjectPEM extends StObject {
     
-    var body: Bytes = js.native
+    var body: Bytes
     
-    var contentDomain: js.UndefOr[js.Any] = js.native
+    var contentDomain: js.UndefOr[js.Any] = js.undefined
     
-    var dekInfo: js.UndefOr[js.Any] = js.native
+    var dekInfo: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[js.Array[_]] = js.native
+    var headers: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var procType: js.UndefOr[js.Any] = js.native
+    var procType: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ObjectPEM {
     
@@ -85,7 +83,7 @@ object pem {
       def setDekInfoUndefined: Self = StObject.set(x, "dekInfo", js.undefined)
       
       @scala.inline
-      def setHeaders(value: js.Array[_]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)

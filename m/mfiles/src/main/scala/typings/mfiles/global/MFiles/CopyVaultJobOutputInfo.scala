@@ -1,12 +1,18 @@
 package typings.mfiles.global.MFiles
 
 import typings.mfiles.ICopyVaultJobOutputInfo
+import typings.mfiles.IVaultProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.CopyVaultJobOutputInfo")
 @js.native
-class CopyVaultJobOutputInfo () extends ICopyVaultJobOutputInfo
+class CopyVaultJobOutputInfo ()
+  extends StObject
+     with ICopyVaultJobOutputInfo {
+  
+  /* CompleteClass */
+  override val VaultProperties: IVaultProperties = js.native
+}

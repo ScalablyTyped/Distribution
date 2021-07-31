@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceAccountCredentials extends StObject {
   
   /**
     * The user name of the account. This account must have the following privileges: create computer objects, join computers to the domain, and change/reset the password on descendant computer objects for the organizational units specified.
     */
-  var AccountName: typings.awsSdk.appstreamMod.AccountName = js.native
+  var AccountName: typings.awsSdk.appstreamMod.AccountName
   
   /**
     * The password for the account.
     */
-  var AccountPassword: typings.awsSdk.appstreamMod.AccountPassword = js.native
+  var AccountPassword: typings.awsSdk.appstreamMod.AccountPassword
 }
 object ServiceAccountCredentials {
   

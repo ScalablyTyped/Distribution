@@ -7,7 +7,6 @@ import typings.node.streamMod.TransformOptions
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object json2csvasyncparserMod {
@@ -16,7 +15,7 @@ object json2csvasyncparserMod {
   @js.native
   class default[T] () extends JSON2CSVAsyncParser[T] {
     def this(opts: Options[T]) = this()
-    def this(opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions) = this()
+    def this(opts: Unit, transformOpts: TransformOptions) = this()
     def this(opts: Options[T], transformOpts: TransformOptions) = this()
   }
   

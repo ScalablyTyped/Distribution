@@ -2,24 +2,22 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @experimental
   */
-@js.native
 trait CustomPreview extends StObject {
   
-  var bindRemoteObjectFunctionId: RemoteObjectId = js.native
+  var bindRemoteObjectFunctionId: RemoteObjectId
   
-  var configObjectId: js.UndefOr[RemoteObjectId] = js.native
+  var configObjectId: js.UndefOr[RemoteObjectId] = js.undefined
   
-  var formatterObjectId: RemoteObjectId = js.native
+  var formatterObjectId: RemoteObjectId
   
-  var hasBody: Boolean = js.native
+  var hasBody: Boolean
   
-  var header: String = js.native
+  var header: String
 }
 object CustomPreview {
   

@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxCheckboxMod {
@@ -23,40 +22,39 @@ object checkboxCheckboxMod {
     def this(props: CheckboxProps, context: js.Any) = this()
   }
   
-  @js.native
   trait CheckboxProps extends StObject {
     
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputId: js.UndefOr[String] = js.native
+    var inputId: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ CheckedOriginalEvent, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ CheckedOriginalEvent, Unit]] = js.undefined
     
-    var onContextMenu: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onContextMenu: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onMouseDown: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onMouseDown: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
-    var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+    var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object CheckboxProps {
     

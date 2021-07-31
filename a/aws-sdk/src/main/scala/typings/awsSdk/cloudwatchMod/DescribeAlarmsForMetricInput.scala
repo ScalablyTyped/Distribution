@@ -2,46 +2,44 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAlarmsForMetricInput extends StObject {
   
   /**
     * The dimensions associated with the metric. If the metric has any associated dimensions, you must specify them in order for the call to succeed.
     */
-  var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.native
+  var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.undefined
   
   /**
     * The percentile statistic for the metric. Specify a value between p0.0 and p100.
     */
-  var ExtendedStatistic: js.UndefOr[typings.awsSdk.cloudwatchMod.ExtendedStatistic] = js.native
+  var ExtendedStatistic: js.UndefOr[typings.awsSdk.cloudwatchMod.ExtendedStatistic] = js.undefined
   
   /**
     * The name of the metric.
     */
-  var MetricName: typings.awsSdk.cloudwatchMod.MetricName = js.native
+  var MetricName: typings.awsSdk.cloudwatchMod.MetricName
   
   /**
     * The namespace of the metric.
     */
-  var Namespace: typings.awsSdk.cloudwatchMod.Namespace = js.native
+  var Namespace: typings.awsSdk.cloudwatchMod.Namespace
   
   /**
     * The period, in seconds, over which the statistic is applied.
     */
-  var Period: js.UndefOr[typings.awsSdk.cloudwatchMod.Period] = js.native
+  var Period: js.UndefOr[typings.awsSdk.cloudwatchMod.Period] = js.undefined
   
   /**
     * The statistic for the metric, other than percentiles. For percentile statistics, use ExtendedStatistics.
     */
-  var Statistic: js.UndefOr[typings.awsSdk.cloudwatchMod.Statistic] = js.native
+  var Statistic: js.UndefOr[typings.awsSdk.cloudwatchMod.Statistic] = js.undefined
   
   /**
     * The unit for the metric.
     */
-  var Unit: js.UndefOr[StandardUnit] = js.native
+  var Unit: js.UndefOr[StandardUnit] = js.undefined
 }
 object DescribeAlarmsForMetricInput {
   

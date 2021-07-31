@@ -2,44 +2,42 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the image slider's ImageSliderItem object.
   */
-@js.native
 trait ASPxClientImageSliderItem extends StObject {
   
   /**
     * Gets an image slider to which the current item belongs.
     */
-  var imageSlider: ASPxClientImageSlider = js.native
+  var imageSlider: ASPxClientImageSlider
   
   /**
     * Gets or sets the path to the image displayed within the ASPxClientImageSliderItem.
     */
-  var imageUrl: String = js.native
+  var imageUrl: String
   
   /**
     * Gets the item's index within an items collection.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets whether the image slider's item is loaded.
     */
-  var loaded: Boolean = js.native
+  var loaded: Boolean
   
   /**
     * Gets the name that uniquely identifies the image slider item.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets the item's display text.
     */
-  var text: String = js.native
+  var text: String
 }
 object ASPxClientImageSliderItem {
   

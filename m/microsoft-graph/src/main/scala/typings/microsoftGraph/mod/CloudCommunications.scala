@@ -3,17 +3,17 @@ package typings.microsoftGraph.mod
 import typings.microsoftGraph.mod.CallRecords.CallRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CloudCommunications extends Entity {
+trait CloudCommunications
+  extends StObject
+     with Entity {
   
-  var callRecords: js.UndefOr[NullableOption[js.Array[CallRecord]]] = js.native
+  var callRecords: js.UndefOr[NullableOption[js.Array[CallRecord]]] = js.undefined
   
-  var calls: js.UndefOr[NullableOption[js.Array[Call]]] = js.native
+  var calls: js.UndefOr[NullableOption[js.Array[Call]]] = js.undefined
   
-  var onlineMeetings: js.UndefOr[NullableOption[js.Array[OnlineMeeting]]] = js.native
+  var onlineMeetings: js.UndefOr[NullableOption[js.Array[OnlineMeeting]]] = js.undefined
 }
 object CloudCommunications {
   

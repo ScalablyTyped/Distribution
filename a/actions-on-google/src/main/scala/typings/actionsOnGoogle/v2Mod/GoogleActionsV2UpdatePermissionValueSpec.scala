@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2UpdatePermissionValueSpec extends StObject {
   
   /**
     * The list of arguments necessary to fulfill an update.
     */
-  var arguments: js.UndefOr[js.Array[GoogleActionsV2Argument]] = js.native
+  var arguments: js.UndefOr[js.Array[GoogleActionsV2Argument]] = js.undefined
   
   /**
     * The intent that the user wants to get updates from.
     */
-  var intent: js.UndefOr[String] = js.native
+  var intent: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2UpdatePermissionValueSpec {
   

@@ -2,80 +2,79 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowEventMap
-  extends GlobalEventHandlersEventMap
+  extends StObject
+     with GlobalEventHandlersEventMap
      with WindowEventHandlersEventMap {
   
-  var MSGestureChange: Event = js.native
+  var MSGestureChange: Event
   
-  var MSGestureDoubleTap: Event = js.native
+  var MSGestureDoubleTap: Event
   
-  var MSGestureEnd: Event = js.native
+  var MSGestureEnd: Event
   
-  var MSGestureHold: Event = js.native
+  var MSGestureHold: Event
   
-  var MSGestureStart: Event = js.native
+  var MSGestureStart: Event
   
-  var MSGestureTap: Event = js.native
+  var MSGestureTap: Event
   
-  var MSInertiaStart: Event = js.native
+  var MSInertiaStart: Event
   
-  var MSPointerCancel: Event = js.native
+  var MSPointerCancel: Event
   
-  var MSPointerDown: Event = js.native
+  var MSPointerDown: Event
   
-  var MSPointerEnter: Event = js.native
+  var MSPointerEnter: Event
   
-  var MSPointerLeave: Event = js.native
+  var MSPointerLeave: Event
   
-  var MSPointerMove: Event = js.native
+  var MSPointerMove: Event
   
-  var MSPointerOut: Event = js.native
+  var MSPointerOut: Event
   
-  var MSPointerOver: Event = js.native
+  var MSPointerOver: Event
   
-  var MSPointerUp: Event = js.native
+  var MSPointerUp: Event
   
-  var compassneedscalibration: Event = js.native
+  var compassneedscalibration: Event
   
-  var devicelight: DeviceLightEvent = js.native
+  var devicelight: DeviceLightEvent
   
-  var devicemotion: DeviceMotionEvent = js.native
+  var devicemotion: DeviceMotionEvent
   
-  var deviceorientation: DeviceOrientationEvent = js.native
+  var deviceorientation: DeviceOrientationEvent
   
-  var deviceorientationabsolute: DeviceOrientationEvent = js.native
+  var deviceorientationabsolute: DeviceOrientationEvent
   
-  var mousewheel: Event = js.native
+  var mousewheel: Event
   
-  var orientationchange: Event = js.native
+  var orientationchange: Event
   
   @JSName("progress")
-  var progress_WindowEventMap: ProgressEvent[Window] = js.native
+  var progress_WindowEventMap: ProgressEvent[Window]
   
-  var readystatechange: ProgressEvent[Window] = js.native
+  var readystatechange: ProgressEvent[Window]
   
-  var vrdisplayactivate: Event = js.native
+  var vrdisplayactivate: Event
   
-  var vrdisplayblur: Event = js.native
+  var vrdisplayblur: Event
   
-  var vrdisplayconnect: Event = js.native
+  var vrdisplayconnect: Event
   
-  var vrdisplaydeactivate: Event = js.native
+  var vrdisplaydeactivate: Event
   
-  var vrdisplaydisconnect: Event = js.native
+  var vrdisplaydisconnect: Event
   
-  var vrdisplayfocus: Event = js.native
+  var vrdisplayfocus: Event
   
-  var vrdisplaypointerrestricted: Event = js.native
+  var vrdisplaypointerrestricted: Event
   
-  var vrdisplaypointerunrestricted: Event = js.native
+  var vrdisplaypointerunrestricted: Event
   
-  var vrdisplaypresentchange: Event = js.native
+  var vrdisplaypresentchange: Event
 }
 object WindowEventMap {
   
@@ -148,8 +147,8 @@ object WindowEventMap {
     loadedmetadata: Event,
     loadstart: Event,
     lostpointercapture: PointerEvent,
-    message: MessageEvent[_],
-    messageerror: MessageEvent[_],
+    message: MessageEvent[js.Any],
+    messageerror: MessageEvent[js.Any],
     mousedown: MouseEvent,
     mouseenter: MouseEvent,
     mouseleave: MouseEvent,

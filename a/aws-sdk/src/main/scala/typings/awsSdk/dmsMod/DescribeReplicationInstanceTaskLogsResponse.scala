@@ -2,26 +2,24 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReplicationInstanceTaskLogsResponse extends StObject {
   
   /**
     *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the replication instance.
     */
-  var ReplicationInstanceArn: js.UndefOr[String] = js.native
+  var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
     * An array of replication task log metadata. Each member of the array contains the replication task name, ARN, and task log size (in bytes). 
     */
-  var ReplicationInstanceTaskLogs: js.UndefOr[ReplicationInstanceTaskLogsList] = js.native
+  var ReplicationInstanceTaskLogs: js.UndefOr[ReplicationInstanceTaskLogsList] = js.undefined
 }
 object DescribeReplicationInstanceTaskLogsResponse {
   

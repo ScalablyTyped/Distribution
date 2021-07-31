@@ -2,80 +2,79 @@ package typings.senchaTouch.Ext.form
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IToggle
-  extends typings.senchaTouch.Ext.field.ISlider {
+  extends StObject
+     with typings.senchaTouch.Ext.field.ISlider {
   
   /** [Config Option] (String) */
-  var activeLabel: js.UndefOr[String] = js.native
+  var activeLabel: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
   @JSName("cls")
-  var cls_IToggle: js.UndefOr[String] = js.native
+  var cls_IToggle: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value of activeLabel
     * @returns String
     */
-  var getActiveLabel: js.UndefOr[js.Function0[String]] = js.native
+  var getActiveLabel: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of inactiveLabel
     * @returns String
     */
-  var getInactiveLabel: js.UndefOr[js.Function0[String]] = js.native
+  var getInactiveLabel: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of maxValueCls
     * @returns String
     */
-  var getMaxValueCls: js.UndefOr[js.Function0[String]] = js.native
+  var getMaxValueCls: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of minValueCls
     * @returns String
     */
-  var getMinValueCls: js.UndefOr[js.Function0[String]] = js.native
+  var getMinValueCls: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (String) */
-  var inactiveLabel: js.UndefOr[String] = js.native
+  var inactiveLabel: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var maxValueCls: js.UndefOr[String] = js.native
+  var maxValueCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var minValueCls: js.UndefOr[String] = js.native
+  var minValueCls: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of activeLabel
     * @param activeLabel String The new value.
     */
-  var setActiveLabel: js.UndefOr[js.Function1[/* activeLabel */ js.UndefOr[String], Unit]] = js.native
+  var setActiveLabel: js.UndefOr[js.Function1[/* activeLabel */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of inactiveLabel
     * @param inactiveLabel String The new value.
     */
-  var setInactiveLabel: js.UndefOr[js.Function1[/* inactiveLabel */ js.UndefOr[String], Unit]] = js.native
+  var setInactiveLabel: js.UndefOr[js.Function1[/* inactiveLabel */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of maxValueCls
     * @param maxValueCls String The new value.
     */
-  var setMaxValueCls: js.UndefOr[js.Function1[/* maxValueCls */ js.UndefOr[String], Unit]] = js.native
+  var setMaxValueCls: js.UndefOr[js.Function1[/* maxValueCls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of minValueCls
     * @param minValueCls String The new value.
     */
-  var setMinValueCls: js.UndefOr[js.Function1[/* minValueCls */ js.UndefOr[String], Unit]] = js.native
+  var setMinValueCls: js.UndefOr[js.Function1[/* minValueCls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of the toggle
     * @param newValue Number 1 for toggled, 0 for untoggled.
     * @returns Object this
     */
   @JSName("setValue")
-  var setValue_IToggle: js.UndefOr[js.Function1[/* newValue */ js.UndefOr[Double], _]] = js.native
+  var setValue_IToggle: js.UndefOr[js.Function1[/* newValue */ js.UndefOr[Double], js.Any]] = js.undefined
   
   /** [Method] Toggles the value of this toggle field
     * @returns Object this
     */
-  var toggle: js.UndefOr[js.Function0[_]] = js.native
+  var toggle: js.UndefOr[js.Function0[js.Any]] = js.undefined
 }
 object IToggle {
   
@@ -167,13 +166,13 @@ object IToggle {
     def setSetMinValueClsUndefined: Self = StObject.set(x, "setMinValueCls", js.undefined)
     
     @scala.inline
-    def setSetValue(value: /* newValue */ js.UndefOr[Double] => _): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    def setSetValue(value: /* newValue */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
     @scala.inline
-    def setToggle(value: () => _): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    def setToggle(value: () => js.Any): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
     @scala.inline
     def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)

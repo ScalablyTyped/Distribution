@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleAction extends StObject {
   
   /**
     * Instructs AWS WAF to allow the web request. Configure as an empty block `{}`.
     */
-  var allow: js.UndefOr[WebAclRuleActionAllow] = js.native
+  var allow: js.UndefOr[WebAclRuleActionAllow] = js.undefined
   
   /**
     * Instructs AWS WAF to block the web request. Configure as an empty block `{}`.
     */
-  var block: js.UndefOr[WebAclRuleActionBlock] = js.native
+  var block: js.UndefOr[WebAclRuleActionBlock] = js.undefined
   
   /**
     * Instructs AWS WAF to count the web request and allow it. Configure as an empty block `{}`.
     */
-  var count: js.UndefOr[WebAclRuleActionCount] = js.native
+  var count: js.UndefOr[WebAclRuleActionCount] = js.undefined
 }
 object WebAclRuleAction {
   

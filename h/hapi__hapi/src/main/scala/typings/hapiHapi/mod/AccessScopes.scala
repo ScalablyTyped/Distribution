@@ -2,17 +2,15 @@ package typings.hapiHapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessScopes extends StObject {
   
-  var forbidden: js.UndefOr[js.Array[String]] = js.native
+  var forbidden: js.UndefOr[js.Array[String]] = js.undefined
   
-  var required: js.UndefOr[js.Array[String]] = js.native
+  var required: js.UndefOr[js.Array[String]] = js.undefined
   
-  var selection: js.UndefOr[js.Array[String]] = js.native
+  var selection: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AccessScopes {
   

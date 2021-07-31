@@ -2,15 +2,13 @@ package typings.plottable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CenterValue extends StObject {
   
-  var centerValue: CenterX = js.native
+  var centerValue: CenterX
   
-  var zoomAmount: Double = js.native
+  var zoomAmount: Double
 }
 object CenterValue {
   

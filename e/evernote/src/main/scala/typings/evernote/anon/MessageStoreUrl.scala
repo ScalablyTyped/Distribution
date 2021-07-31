@@ -2,23 +2,21 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageStoreUrl extends StObject {
   
-  var messageStoreUrl: js.UndefOr[String] = js.native
+  var messageStoreUrl: js.UndefOr[String] = js.undefined
   
-  var noteStoreUrl: js.UndefOr[String] = js.native
+  var noteStoreUrl: js.UndefOr[String] = js.undefined
   
-  var userStoreUrl: js.UndefOr[String] = js.native
+  var userStoreUrl: js.UndefOr[String] = js.undefined
   
-  var userWebSocketUrl: js.UndefOr[String] = js.native
+  var userWebSocketUrl: js.UndefOr[String] = js.undefined
   
-  var utilityUrl: js.UndefOr[String] = js.native
+  var utilityUrl: js.UndefOr[String] = js.undefined
   
-  var webApiUrlPrefix: js.UndefOr[String] = js.native
+  var webApiUrlPrefix: js.UndefOr[String] = js.undefined
 }
 object MessageStoreUrl {
   

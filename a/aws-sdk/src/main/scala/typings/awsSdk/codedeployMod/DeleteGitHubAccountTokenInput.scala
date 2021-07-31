@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteGitHubAccountTokenInput extends StObject {
   
   /**
     * The name of the GitHub account connection to delete.
     */
-  var tokenName: js.UndefOr[GitHubAccountTokenName] = js.native
+  var tokenName: js.UndefOr[GitHubAccountTokenName] = js.undefined
 }
 object DeleteGitHubAccountTokenInput {
   

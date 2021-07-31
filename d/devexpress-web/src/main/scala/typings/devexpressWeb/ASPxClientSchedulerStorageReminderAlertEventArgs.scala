@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientSchedulerStorageControl.ReminderAlert event.
   */
-@js.native
-trait ASPxClientSchedulerStorageReminderAlertEventArgs extends ASPxClientEventArgs {
+trait ASPxClientSchedulerStorageReminderAlertEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Returns an array of currently triggered reminders.
     */
-  var alertNotifications: js.Array[ASPxClientReminderAlertNotification] = js.native
+  var alertNotifications: js.Array[ASPxClientReminderAlertNotification]
 }
 object ASPxClientSchedulerStorageReminderAlertEventArgs {
   

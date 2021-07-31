@@ -2,16 +2,16 @@ package typings.parse5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DefaultTreeParentNode extends DefaultTreeNode {
+trait DefaultTreeParentNode
+  extends StObject
+     with DefaultTreeNode {
   
   /**
     * Child nodes.
     */
-  var childNodes: js.Array[DefaultTreeNode] = js.native
+  var childNodes: js.Array[DefaultTreeNode]
 }
 object DefaultTreeParentNode {
   

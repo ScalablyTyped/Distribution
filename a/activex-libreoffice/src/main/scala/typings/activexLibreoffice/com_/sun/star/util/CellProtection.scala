@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes the kind of protection for a protectable cell. */
-@js.native
 trait CellProtection extends StObject {
   
   /** specifies if the formula is hidden from the user. */
-  var IsFormulaHidden: Boolean = js.native
+  var IsFormulaHidden: Boolean
   
   /** specifies if the cell is hidden from the user. */
-  var IsHidden: Boolean = js.native
+  var IsHidden: Boolean
   
   /** specifies if the cell is locked from modifications by the user. */
-  var IsLocked: Boolean = js.native
+  var IsLocked: Boolean
   
   /** specifies if the cell is hidden on printouts. */
-  var IsPrintHidden: Boolean = js.native
+  var IsPrintHidden: Boolean
 }
 object CellProtection {
   

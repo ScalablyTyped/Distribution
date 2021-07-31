@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchconsoleV1Mod {
@@ -51,7 +50,7 @@ object searchconsoleV1Mod {
         */
       def run(): GaxiosPromise[SchemaRunMobileFriendlyTestResponse] = js.native
       def run(callback: BodyResponseCallback[SchemaRunMobileFriendlyTestResponse]): Unit = js.native
-      def run(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRunMobileFriendlyTestResponse] = js.native
+      def run(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRunMobileFriendlyTestResponse] = js.native
       def run(params: ParamsResourceUrltestingtoolsMobilefriendlytestRun): GaxiosPromise[SchemaRunMobileFriendlyTestResponse] = js.native
       def run(
         params: ParamsResourceUrltestingtoolsMobilefriendlytestRun,
@@ -96,16 +95,17 @@ object searchconsoleV1Mod {
       var urlTestingTools: ResourceUrltestingtools = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -117,18 +117,19 @@ object searchconsoleV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceUrltestingtoolsMobilefriendlytestRun extends StandardParameters {
+    trait ParamsResourceUrltestingtoolsMobilefriendlytestRun
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaRunMobileFriendlyTestRequest] = js.native
+      var requestBody: js.UndefOr[SchemaRunMobileFriendlyTestRequest] = js.undefined
     }
     object ParamsResourceUrltestingtoolsMobilefriendlytestRun {
       
@@ -158,13 +159,12 @@ object searchconsoleV1Mod {
     /**
       * Blocked resource.
       */
-    @js.native
     trait SchemaBlockedResource extends StObject {
       
       /**
         * URL of the blocked resource.
         */
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object SchemaBlockedResource {
       
@@ -188,7 +188,6 @@ object searchconsoleV1Mod {
     /**
       * Describe image data.
       */
-    @js.native
     trait SchemaImage extends StObject {
       
       /**
@@ -196,12 +195,12 @@ object searchconsoleV1Mod {
         * will always be &quot;image/png&quot;, but this might change in the
         * future.
         */
-      var data: js.UndefOr[String] = js.native
+      var data: js.UndefOr[String] = js.undefined
       
       /**
         * The mime-type of the image data.
         */
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
     }
     object SchemaImage {
       
@@ -231,13 +230,12 @@ object searchconsoleV1Mod {
     /**
       * Mobile-friendly issue.
       */
-    @js.native
     trait SchemaMobileFriendlyIssue extends StObject {
       
       /**
         * Rule violated.
         */
-      var rule: js.UndefOr[String] = js.native
+      var rule: js.UndefOr[String] = js.undefined
     }
     object SchemaMobileFriendlyIssue {
       
@@ -261,13 +259,12 @@ object searchconsoleV1Mod {
     /**
       * Information about a resource with issue.
       */
-    @js.native
     trait SchemaResourceIssue extends StObject {
       
       /**
         * Describes a blocked resource issue.
         */
-      var blockedResource: js.UndefOr[SchemaBlockedResource] = js.native
+      var blockedResource: js.UndefOr[SchemaBlockedResource] = js.undefined
     }
     object SchemaResourceIssue {
       
@@ -291,18 +288,17 @@ object searchconsoleV1Mod {
     /**
       * Mobile-friendly test request.
       */
-    @js.native
     trait SchemaRunMobileFriendlyTestRequest extends StObject {
       
       /**
         * Whether or not screenshot is requested. Default is false.
         */
-      var requestScreenshot: js.UndefOr[Boolean] = js.native
+      var requestScreenshot: js.UndefOr[Boolean] = js.undefined
       
       /**
         * URL for inspection.
         */
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object SchemaRunMobileFriendlyTestRequest {
       
@@ -333,33 +329,32 @@ object searchconsoleV1Mod {
       * Mobile-friendly test response, including mobile-friendly issues and
       * resource issues.
       */
-    @js.native
     trait SchemaRunMobileFriendlyTestResponse extends StObject {
       
       /**
         * Test verdict, whether the page is mobile friendly or not.
         */
-      var mobileFriendliness: js.UndefOr[String] = js.native
+      var mobileFriendliness: js.UndefOr[String] = js.undefined
       
       /**
         * List of mobile-usability issues.
         */
-      var mobileFriendlyIssues: js.UndefOr[js.Array[SchemaMobileFriendlyIssue]] = js.native
+      var mobileFriendlyIssues: js.UndefOr[js.Array[SchemaMobileFriendlyIssue]] = js.undefined
       
       /**
         * Information about embedded resources issues.
         */
-      var resourceIssues: js.UndefOr[js.Array[SchemaResourceIssue]] = js.native
+      var resourceIssues: js.UndefOr[js.Array[SchemaResourceIssue]] = js.undefined
       
       /**
         * Screenshot of the requested URL.
         */
-      var screenshot: js.UndefOr[SchemaImage] = js.native
+      var screenshot: js.UndefOr[SchemaImage] = js.undefined
       
       /**
         * Final state of the test, can be either complete or an error.
         */
-      var testStatus: js.UndefOr[SchemaTestStatus] = js.native
+      var testStatus: js.UndefOr[SchemaTestStatus] = js.undefined
     }
     object SchemaRunMobileFriendlyTestResponse {
       
@@ -413,18 +408,17 @@ object searchconsoleV1Mod {
     /**
       * Final state of the test, including error details if necessary.
       */
-    @js.native
     trait SchemaTestStatus extends StObject {
       
       /**
         * Error details if applicable.
         */
-      var details: js.UndefOr[String] = js.native
+      var details: js.UndefOr[String] = js.undefined
       
       /**
         * Status of the test.
         */
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object SchemaTestStatus {
       
@@ -451,68 +445,67 @@ object searchconsoleV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * V1 error format.
         */
       @JSName("$.xgafv")
-      var $Dotxgafv: js.UndefOr[String] = js.native
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth access token.
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Data format for response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * JSONP
         */
-      var callback: js.UndefOr[String] = js.native
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Available to use for quota purposes for server-side applications. Can be
         * any arbitrary string assigned to a user, but should not exceed 40
         * characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
       /**
         * Upload protocol for media (e.g. "raw", "multipart").
         */
-      var upload_protocol: js.UndefOr[String] = js.native
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

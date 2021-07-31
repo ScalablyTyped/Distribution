@@ -2,21 +2,19 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rationale extends StObject {
   
-  var buttonNegative: js.UndefOr[String] = js.native
+  var buttonNegative: js.UndefOr[String] = js.undefined
   
-  var buttonNeutral: js.UndefOr[String] = js.native
+  var buttonNeutral: js.UndefOr[String] = js.undefined
   
-  var buttonPositive: String = js.native
+  var buttonPositive: String
   
-  var message: String = js.native
+  var message: String
   
-  var title: String = js.native
+  var title: String
 }
 object Rationale {
   

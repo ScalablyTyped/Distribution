@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object CellularClass extends StObject {
   
   /** The device type is CDMA cellular class. */
   @js.native
-  sealed trait cdma extends CellularClass
+  sealed trait cdma
+    extends StObject
+       with CellularClass
   
   /** The device type is GSM cellular class. */
   @js.native
-  sealed trait gsm extends CellularClass
+  sealed trait gsm
+    extends StObject
+       with CellularClass
   
   /** The device type corresponds to no cellular class. */
   @js.native
-  sealed trait none extends CellularClass
+  sealed trait none
+    extends StObject
+       with CellularClass
 }

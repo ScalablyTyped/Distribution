@@ -20,70 +20,70 @@ import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datasetsMod {
   
-  @JSImport("@mapbox/mapbox-sdk/services/datasets", JSImport.Default)
+  @JSImport("@mapbox/mapbox-sdk/services/datasets", JSImport.Namespace)
   @js.native
-  def default(config: SdkConfig): DatasetsService = js.native
-  @JSImport("@mapbox/mapbox-sdk/services/datasets", JSImport.Default)
-  @js.native
-  def default(config: typings.mapboxMapboxSdk.mod.default): DatasetsService = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(config: SdkConfig): DatasetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[DatasetsService]
+  @scala.inline
+  def default(config: typings.mapboxMapboxSdk.mod.default): DatasetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[DatasetsService]
   
   /**
     * All GeoJSON types except for FeatureCollection.
     */
   type DataSetsFeature = Point | MultiPoint | LineString | MultiLineString | Polygon | MultiPolygon | GeometryCollection | (Feature[Geometry, GeoJsonProperties])
   
-  @js.native
   trait Dataset extends StObject {
     
     /**
       * The extent of features in the dataset as an array of west, south, east, north coordinates
       */
-    var bounds: js.Array[Double] = js.native
+    var bounds: js.Array[Double]
     
     /*
       * Date and time the dataset was created
       */
-    var created: String = js.native
+    var created: String
     
     /**
       * The description of the dataset
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * The number of features in the dataset
       */
-    var features: Double = js.native
+    var features: Double
     
     /**
       * Id for an existing dataset
       */
-    var id: String = js.native
+    var id: String
     
     /*
       * Date and time the dataset was last modified
       */
-    var modified: String = js.native
+    var modified: String
     
     /**
       * The name of the dataset
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The username of the dataset owner
       */
-    var owner: String = js.native
+    var owner: String
     
     /**
       * The size of the dataset in bytes
       */
-    var size: Double = js.native
+    var size: Double
   }
   object Dataset {
     
@@ -138,45 +138,44 @@ object datasetsMod {
     }
   }
   
-  @js.native
   trait DatasetsService extends StObject {
     
     /**
       *  Create a new, empty dataset.
       * @param config Object
       */
-    def createDataset(config: Description): MapiRequest = js.native
+    def createDataset(config: Description): MapiRequest
     
     /**
       * Delete a dataset, including all features it contains.
       * @param config
       */
-    def deleteDataset(config: `0`): MapiRequest = js.native
+    def deleteDataset(config: `0`): MapiRequest
     
     /**
       * Delete a feature in a dataset.
       * @param config
       */
     // implicit any
-    def deleteFeature(config: FeatureId): js.Any = js.native
+    def deleteFeature(config: FeatureId): js.Any
     
     /**
       * Get a feature in a dataset.
       * @param config
       */
     // implicit any
-    def getFeature(config: FeatureId): js.Any = js.native
+    def getFeature(config: FeatureId): js.Any
     
     /**
       * Get metadata about a dataset.
       * @param config
       */
-    def getMetadata(config: DatasetId): MapiRequest = js.native
+    def getMetadata(config: DatasetId): MapiRequest
     
     /**
       * List datasets in your account.
       */
-    def listDatasets(): MapiRequest = js.native
+    def listDatasets(): MapiRequest
     
     /**
       * List features in a dataset.
@@ -184,19 +183,19 @@ object datasetsMod {
       * @param config
       */
     // implicit any
-    def listFeatures(config: Limit): js.Any = js.native
+    def listFeatures(config: Limit): js.Any
     
     /**
       * Add a feature to a dataset or update an existing one.
       * @param config
       */
-    def putFeature(config: typings.mapboxMapboxSdk.anon.Feature): MapiRequest = js.native
+    def putFeature(config: typings.mapboxMapboxSdk.anon.Feature): MapiRequest
     
     /**
       * Update user-defined properties of a dataset's metadata.
       * @param config
       */
-    def updateMetadata(config: Name): MapiRequest = js.native
+    def updateMetadata(config: Name): MapiRequest
   }
   object DatasetsService {
     

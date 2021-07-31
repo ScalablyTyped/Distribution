@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v2beta1HorizontalPodAutoscalerListMod {
@@ -27,7 +26,7 @@ object v2beta1HorizontalPodAutoscalerListMod {
       */
     def this(name: String) = this()
     def this(name: String, args: HorizontalPodAutoscalerListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: HorizontalPodAutoscalerListArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object v2beta1HorizontalPodAutoscalerListMod {
   /* static members */
   object HorizontalPodAutoscalerList {
     
+    @JSImport("@pulumi/kubernetes/autoscaling/v2beta1/horizontalPodAutoscalerList", "HorizontalPodAutoscalerList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HorizontalPodAutoscalerList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,29 +64,25 @@ object v2beta1HorizontalPodAutoscalerListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/autoscaling/v2beta1/horizontalPodAutoscalerList", "HorizontalPodAutoscalerList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): HorizontalPodAutoscalerList = js.native
-    @JSImport("@pulumi/kubernetes/autoscaling/v2beta1/horizontalPodAutoscalerList", "HorizontalPodAutoscalerList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): HorizontalPodAutoscalerList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): HorizontalPodAutoscalerList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HorizontalPodAutoscalerList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): HorizontalPodAutoscalerList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HorizontalPodAutoscalerList]
     
     /**
       * Returns true if the given object is an instance of HorizontalPodAutoscalerList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/autoscaling/v2beta1/horizontalPodAutoscalerList", "HorizontalPodAutoscalerList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/autoscaling/v2beta1/horizontalPodAutoscalerList.HorizontalPodAutoscalerList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/autoscaling/v2beta1/horizontalPodAutoscalerList.HorizontalPodAutoscalerList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/autoscaling/v2beta1/horizontalPodAutoscalerList.HorizontalPodAutoscalerList */ Boolean]
   }
   
-  @js.native
   trait HorizontalPodAutoscalerListArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[autoscalingSlashv2beta1]] = js.native
+    val apiVersion: js.UndefOr[Input[autoscalingSlashv2beta1]] = js.undefined
     
     /**
       * items is the list of horizontal pod autoscaler objects.
@@ -92,19 +91,19 @@ object v2beta1HorizontalPodAutoscalerListMod {
         js.Array[
           Input[typings.pulumiKubernetes.inputMod.autoscaling.v2beta1.HorizontalPodAutoscaler]
         ]
-      ] = js.native
+      ]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
     val kind: js.UndefOr[
         Input[typings.pulumiKubernetes.pulumiKubernetesStrings.HorizontalPodAutoscalerList]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * metadata is the standard list metadata.
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.undefined
   }
   object HorizontalPodAutoscalerListArgs {
     

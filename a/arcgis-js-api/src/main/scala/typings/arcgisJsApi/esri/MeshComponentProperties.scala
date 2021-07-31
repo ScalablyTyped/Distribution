@@ -7,10 +7,8 @@ import typings.std.Uint16Array
 import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeshComponentProperties extends StObject {
   
   /**
@@ -18,21 +16,21 @@ trait MeshComponentProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html#faces)
     */
-  var faces: js.UndefOr[Uint32Array | js.Array[Double] | Uint16Array] = js.native
+  var faces: js.UndefOr[Uint32Array | js.Array[Double] | Uint16Array] = js.undefined
   
   /**
     * The material determines how the component is visualized.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html#material)
     */
-  var material: js.UndefOr[MeshMaterialProperties | MeshMaterialMetallicRoughnessProperties] = js.native
+  var material: js.UndefOr[MeshMaterialProperties | MeshMaterialMetallicRoughnessProperties] = js.undefined
   
   /**
     * Specifies the type of normals used for lighting.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html#shading)
     */
-  var shading: js.UndefOr[source | flat | smooth] = js.native
+  var shading: js.UndefOr[source | flat | smooth] = js.undefined
 }
 object MeshComponentProperties {
   

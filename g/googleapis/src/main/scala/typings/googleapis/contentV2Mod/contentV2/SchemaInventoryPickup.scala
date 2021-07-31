@@ -2,10 +2,8 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInventoryPickup extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait SchemaInventoryPickup extends StObject {
     * for local inventory. Unless the value is &quot;not supported&quot;, must
     * be submitted together with pickupSla.
     */
-  var pickupMethod: js.UndefOr[String] = js.native
+  var pickupMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The expected date that an order will be ready for pickup, relative to
     * when the order is placed. Only supported for local inventory. Must be
     * submitted together with pickupMethod.
     */
-  var pickupSla: js.UndefOr[String] = js.native
+  var pickupSla: js.UndefOr[String] = js.undefined
 }
 object SchemaInventoryPickup {
   

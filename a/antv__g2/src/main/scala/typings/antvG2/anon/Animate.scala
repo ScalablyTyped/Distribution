@@ -4,26 +4,24 @@ import typings.antvG2.antvG2Strings.multiple
 import typings.antvG2.antvG2Strings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animate extends StObject {
   
   /**
     * 选中是否执行动画，默认执行动画
     */
-  var animate: Boolean = js.native
+  var animate: Boolean
   
   /**
     * 选中之后是否允许取消选中，默认允许取消选中
     */
-  var cancelable: Boolean = js.native
+  var cancelable: Boolean
   
   /**
     * 选中模式，单选、多选
     */
-  var mode: single | multiple = js.native
+  var mode: single | multiple
 }
 object Animate {
   

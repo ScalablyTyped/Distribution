@@ -10,7 +10,6 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exceptionMod {
@@ -22,28 +21,27 @@ object exceptionMod {
   
   type Exception = Component[ExceptionProps[Href], js.Any, js.Any]
   
-  @js.native
   trait ExceptionProps[L] extends StObject {
     
-    var actions: js.UndefOr[ReactNode] = js.native
+    var actions: js.UndefOr[ReactNode] = js.undefined
     
-    var backText: js.UndefOr[ReactNode] = js.native
+    var backText: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var desc: js.UndefOr[ReactNode] = js.native
+    var desc: js.UndefOr[ReactNode] = js.undefined
     
-    var img: js.UndefOr[String] = js.native
+    var img: js.UndefOr[String] = js.undefined
     
-    var linkElement: js.UndefOr[String | ComponentType[L]] = js.native
+    var linkElement: js.UndefOr[String | ComponentType[L]] = js.undefined
     
-    var redirect: js.UndefOr[String] = js.native
+    var redirect: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var `type`: js.UndefOr[`403` | `404` | `500`] = js.native
+    var `type`: js.UndefOr[`403` | `404` | `500`] = js.undefined
   }
   object ExceptionProps {
     
@@ -54,7 +52,7 @@ object exceptionMod {
     }
     
     @scala.inline
-    implicit class ExceptionPropsMutableBuilder[Self <: ExceptionProps[_], L] (val x: Self with ExceptionProps[L]) extends AnyVal {
+    implicit class ExceptionPropsMutableBuilder[Self <: ExceptionProps[?], L] (val x: Self & ExceptionProps[L]) extends AnyVal {
       
       @scala.inline
       def setActions(value: ReactNode): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])

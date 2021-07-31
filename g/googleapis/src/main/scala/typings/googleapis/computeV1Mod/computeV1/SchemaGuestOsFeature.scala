@@ -2,20 +2,18 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Guest OS features.
   */
-@js.native
 trait SchemaGuestOsFeature extends StObject {
   
   /**
     * The ID of a supported feature. Read  Enabling guest operating system
     * features to see a list of available options.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaGuestOsFeature {
   

@@ -10,9 +10,9 @@ Simple yet powerful framework for building command-line apps.
 | ------------------ | :-------------: |
 | Full name          | cac |
 | Keywords           | - |
-| # releases         | 54 |
-| # dependents       | 310 |
-| # downloads        | 9317998 |
+| # releases         | 19 |
+| # dependents       | 369 |
+| # downloads        | 14215092 |
 | # stars            | 5 |
 
 ## Links

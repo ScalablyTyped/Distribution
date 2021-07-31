@@ -29,11 +29,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeasurementViewModel extends Accessor {
+trait MeasurementViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * Specifies the current measurement tool to display.

@@ -2,7 +2,6 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,24 +10,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     <li>Decay: 5 ticks per body part of the deceased creep</li>
   * </ul>
   */
-@js.native
-trait Tombstone extends RoomObject {
+trait Tombstone
+  extends StObject
+     with RoomObject {
   
   /**
     * An object containing the deceased creep.
     */
-  var creep: AnyCreep = js.native
+  var creep: AnyCreep
   
   /**
     * Time of death.
     */
-  var deathTime: Double = js.native
+  var deathTime: Double
   
   /**
     * A unique object identificator.
     * You can use {@link Game.getObjectById} method to retrieve an object instance by its id.
     */
-  var id: Id[this.type] = js.native
+  var id: Id[this.type]
   
   /**
     * An object with the tombstone contents.
@@ -37,12 +37,12 @@ trait Tombstone extends RoomObject {
     * other resources are undefined when empty.
     * You can use lodash.sum to get the total amount of contents.
     */
-  var store: StoreDefinitionUnlimited = js.native
+  var store: StoreDefinitionUnlimited
   
   /**
     * The amount of game ticks before this tombstone decays.
     */
-  var ticksToDecay: Double = js.native
+  var ticksToDecay: Double
 }
 object Tombstone {
   

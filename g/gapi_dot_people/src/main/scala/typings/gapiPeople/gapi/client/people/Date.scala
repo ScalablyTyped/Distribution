@@ -2,17 +2,15 @@ package typings.gapiPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Date extends StObject {
   
-  var day: Double = js.native
+  var day: Double
   
-  var month: Double = js.native
+  var month: Double
   
-  var year: Double = js.native
+  var year: Double
 }
 object Date {
   

@@ -4,19 +4,17 @@ import typings.paypalCordovaPlugin.anon.Authorizationid
 import typings.paypalCordovaPlugin.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region cdv-plugin-paypal-mobile-sdk.js
 object PayPalCordovaPlugin {
   
-  @js.native
   trait BaseResult extends StObject {
     
-    var client: Client = js.native
+    var client: Client
     
-    var response_type: String = js.native
+    var response_type: String
   }
   object BaseResult {
     
@@ -37,16 +35,15 @@ object PayPalCordovaPlugin {
     }
   }
   
-  @js.native
   trait Client extends StObject {
     
-    var environment: String = js.native
+    var environment: String
     
-    var paypal_sdk_version: String = js.native
+    var paypal_sdk_version: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var product_name: String = js.native
+    var product_name: String
   }
   object Client {
     
@@ -73,10 +70,11 @@ object PayPalCordovaPlugin {
     }
   }
   
-  @js.native
-  trait FuturePaymentResult extends BaseResult {
+  trait FuturePaymentResult
+    extends StObject
+       with BaseResult {
     
-    var response: Code = js.native
+    var response: Code
   }
   object FuturePaymentResult {
     
@@ -94,12 +92,11 @@ object PayPalCordovaPlugin {
     }
   }
   
-  @js.native
   trait PayPalClientIds extends StObject {
     
-    var PayPalEnvironmentProduction: String = js.native
+    var PayPalEnvironmentProduction: String
     
-    var PayPalEnvironmentSandbox: String = js.native
+    var PayPalEnvironmentSandbox: String
   }
   object PayPalClientIds {
     
@@ -120,7 +117,6 @@ object PayPalCordovaPlugin {
     }
   }
   
-  @js.native
   trait PayPalMobileStatic extends StObject {
     
     /**
@@ -136,7 +132,7 @@ object PayPalCordovaPlugin {
       * @param environment available options are "PayPalEnvironmentNoNetwork", "PayPalEnvironmentProduction" and "PayPalEnvironmentSandbox"
       * @param callback applicationCorrelationID Your server will send this to PayPal in a 'Paypal-Application-Correlation-Id' header.
       */
-    def applicationCorrelationIDForEnvironment(environment: String, completionCallback: js.Function1[/* applicationCorrelationId */ String, Unit]): Unit = js.native
+    def applicationCorrelationIDForEnvironment(environment: String, completionCallback: js.Function1[/* applicationCorrelationId */ String, Unit]): Unit
     
     /**
       * Once a user has consented to future payments, when the user subsequently initiates a PayPal payment
@@ -149,7 +145,7 @@ object PayPalCordovaPlugin {
       *
       * @param callback clientMetadataID Your server will send this to PayPal in a 'PayPal-Client-Metadata-Id' header.
       */
-    def clientMetadataID(completionCallback: js.Function1[/* clientMetadataId */ String, Unit]): Unit = js.native
+    def clientMetadataID(completionCallback: js.Function1[/* clientMetadataId */ String, Unit]): Unit
     
     /**
       * You MUST call this method to initialize the PayPal Mobile SDK.
@@ -163,7 +159,7 @@ object PayPalCordovaPlugin {
       *  }
       * @param completionCallback a callback function on success
       */
-    def init(clientIdsForEnvironments: PayPalClientIds, completionCallback: js.Function0[Unit]): Unit = js.native
+    def init(clientIdsForEnvironments: PayPalClientIds, completionCallback: js.Function0[Unit]): Unit
     
     /**
       * You must preconnect to PayPal to prepare the device for processing payments.
@@ -176,7 +172,7 @@ object PayPalCordovaPlugin {
       *      and merchantUserAgreementURL must be set be set
       * @param completionCallback a callback function on success
       */
-    def prepareToRender(environment: String, configuration: PayPalConfiguration, completionCallback: js.Function0[Unit]): Unit = js.native
+    def prepareToRender(environment: String, configuration: PayPalConfiguration, completionCallback: js.Function0[Unit]): Unit
     
     /**
       * Please Read Docs on Future Payments at https://github.com/paypal/PayPal-iOS-SDK#future-payments
@@ -187,7 +183,7 @@ object PayPalCordovaPlugin {
     def renderFuturePaymentUI(
       completionCallback: js.Function1[/* result */ FuturePaymentResult, Unit],
       cancelCallback: js.Function1[/* cancelReason */ String, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Please Read Docs on Profile Sharing at https://github.com/paypal/PayPal-iOS-SDK#profile-sharing
@@ -201,7 +197,7 @@ object PayPalCordovaPlugin {
       scopes: js.Array[String],
       completionCallback: js.Function1[/* result */ js.Any, Unit],
       cancelCallback: js.Function1[/* cancelReason */ String, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Start PayPal UI to collect payment from the user.
@@ -216,14 +212,14 @@ object PayPalCordovaPlugin {
       payment: PayPalPayment,
       completionCallback: js.Function1[/* result */ SinglePaymentResult, Unit],
       cancelCallback: js.Function1[/* cancelReason */ String, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Retrieve the version of the PayPal iOS SDK library. Useful when contacting support.
       *
       * @param completionCallback a callback function accepting a string
       */
-    def version(completionCallback: js.Function1[/* result */ String, Unit]): Unit = js.native
+    def version(completionCallback: js.Function1[/* result */ String, Unit]): Unit
   }
   object PayPalMobileStatic {
     
@@ -277,10 +273,11 @@ object PayPalCordovaPlugin {
     }
   }
   
-  @js.native
-  trait SinglePaymentResult extends BaseResult {
+  trait SinglePaymentResult
+    extends StObject
+       with BaseResult {
     
-    var response: Authorizationid = js.native
+    var response: Authorizationid
   }
   object SinglePaymentResult {
     

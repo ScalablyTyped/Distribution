@@ -6,17 +6,15 @@ import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudfrontRequestMod {
   
   type CloudFrontRequestCallback = Callback[CloudFrontRequestResult]
   
-  @js.native
   trait CloudFrontRequestEvent extends StObject {
     
-    var Records: js.Array[Cf] = js.native
+    var Records: js.Array[Cf]
   }
   object CloudFrontRequestEvent {
     
@@ -40,7 +38,7 @@ object cloudfrontRequestMod {
   type CloudFrontRequestHandler = Handler[CloudFrontRequestEvent, CloudFrontRequestResult]
   
   /* Rewritten from type alias, can be one of: 
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - scala.Null
     - typings.awsLambda.cloudfrontMod.CloudFrontResultResponse
     - typings.awsLambda.cloudfrontMod.CloudFrontRequest

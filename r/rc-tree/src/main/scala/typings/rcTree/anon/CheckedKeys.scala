@@ -4,29 +4,27 @@ import typings.rcTree.interfaceMod.DataEntity
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckedKeys extends StObject {
   
-  var checkedKeys: js.Array[String | Double] = js.native
+  var checkedKeys: js.Array[String | Double]
   
-  var dragOverNodeKey: String | Double = js.native
+  var dragOverNodeKey: String | Double
   
-  var dropPosition: Double = js.native
+  var dropPosition: Double
   
-  var expandedKeys: js.Array[String | Double] = js.native
+  var expandedKeys: js.Array[String | Double]
   
-  var halfCheckedKeys: js.Array[String | Double] = js.native
+  var halfCheckedKeys: js.Array[String | Double]
   
-  var keyEntities: Record[String | Double, DataEntity] = js.native
+  var keyEntities: Record[String | Double, DataEntity]
   
-  var loadedKeys: js.Array[String | Double] = js.native
+  var loadedKeys: js.Array[String | Double]
   
-  var loadingKeys: js.Array[String | Double] = js.native
+  var loadingKeys: js.Array[String | Double]
   
-  var selectedKeys: js.Array[String | Double] = js.native
+  var selectedKeys: js.Array[String | Double]
 }
 object CheckedKeys {
   

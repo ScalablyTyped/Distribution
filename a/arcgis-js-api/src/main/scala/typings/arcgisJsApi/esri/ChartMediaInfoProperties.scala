@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartMediaInfoProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ChartMediaInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-mixins-ChartMediaInfo.html#value)
     */
-  var value: js.UndefOr[ChartMediaInfoValueProperties] = js.native
+  var value: js.UndefOr[ChartMediaInfoValueProperties] = js.undefined
 }
 object ChartMediaInfoProperties {
   

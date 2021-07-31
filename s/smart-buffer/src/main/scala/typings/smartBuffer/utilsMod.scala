@@ -12,10 +12,13 @@ import typings.smartBuffer.smartBufferStrings.writeBigUInt64BE
 import typings.smartBuffer.smartBufferStrings.writeBigUInt64LE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
+  
+  @JSImport("smart-buffer/typings/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Error strings
@@ -102,38 +105,34 @@ object utilsMod {
   /**
     * Throws if Node.js version is too low to support bigint
     */
-  @JSImport("smart-buffer/typings/utils", "bigIntAndBufferInt64Check")
-  @js.native
+  @scala.inline
   def bigIntAndBufferInt64Check(
     bufferMethod: /* keyof smart-buffer.smart-buffer/typings/utils.Buffer */ readBigInt64BE | readBigInt64LE | readBigUInt64BE | readBigUInt64LE | writeBigInt64BE | writeBigInt64LE | writeBigUInt64BE | writeBigUInt64LE
-  ): Unit = js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bigIntAndBufferInt64Check")(bufferMethod.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Checks if a given encoding is a valid Buffer encoding. (Throws an exception if check fails)
     *
     * @param { String } encoding The encoding string to check.
     */
-  @JSImport("smart-buffer/typings/utils", "checkEncoding")
-  @js.native
-  def checkEncoding(encoding: BufferEncoding): Unit = js.native
+  @scala.inline
+  def checkEncoding(encoding: BufferEncoding): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkEncoding")(encoding.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Checks if a length value is valid. (Throws an exception if check fails)
     *
     * @param { Number } length The value to check.
     */
-  @JSImport("smart-buffer/typings/utils", "checkLengthValue")
-  @js.native
-  def checkLengthValue(length: js.Any): Unit = js.native
+  @scala.inline
+  def checkLengthValue(length: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLengthValue")(length.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Checks if a offset value is valid. (Throws an exception if check fails)
     *
     * @param { Number } offset The value to check.
     */
-  @JSImport("smart-buffer/typings/utils", "checkOffsetValue")
-  @js.native
-  def checkOffsetValue(offset: js.Any): Unit = js.native
+  @scala.inline
+  def checkOffsetValue(offset: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkOffsetValue")(offset.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Checks if a target offset value is out of bounds. (Throws an exception if check fails)
@@ -141,18 +140,16 @@ object utilsMod {
     * @param { Number } offset The offset value to check.
     * @param { SmartBuffer } buff The SmartBuffer instance to check against.
     */
-  @JSImport("smart-buffer/typings/utils", "checkTargetOffset")
-  @js.native
-  def checkTargetOffset(offset: Double, buff: SmartBuffer): Unit = js.native
+  @scala.inline
+  def checkTargetOffset(offset: Double, buff: SmartBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkTargetOffset")(offset.asInstanceOf[js.Any], buff.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Checks if a given number is a finite integer. (Throws an exception if check fails)
     *
     * @param { Number } value The number value to check.
     */
-  @JSImport("smart-buffer/typings/utils", "isFiniteInteger")
-  @js.native
-  def isFiniteInteger(value: Double): Boolean = js.native
+  @scala.inline
+  def isFiniteInteger(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFiniteInteger")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @js.native
   trait Buffer extends StObject {

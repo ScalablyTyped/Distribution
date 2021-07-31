@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalAccessLocations extends StObject {
   
   // Location IDs excluded from scope of policy.
-  var excludeLocations: js.UndefOr[js.Array[String]] = js.native
+  var excludeLocations: js.UndefOr[js.Array[String]] = js.undefined
   
   // Location IDs in scope of policy unless explicitly excluded, All, or AllTrusted.
-  var includeLocations: js.UndefOr[js.Array[String]] = js.native
+  var includeLocations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConditionalAccessLocations {
   

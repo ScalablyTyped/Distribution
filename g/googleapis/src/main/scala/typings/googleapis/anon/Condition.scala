@@ -3,17 +3,15 @@ package typings.googleapis.anon
 import typings.googleapis.storageV1Mod.storageV1.SchemaExpr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Condition extends StObject {
   
-  var condition: js.UndefOr[SchemaExpr] = js.native
+  var condition: js.UndefOr[SchemaExpr] = js.undefined
   
-  var members: js.UndefOr[js.Array[String]] = js.native
+  var members: js.UndefOr[js.Array[String]] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object Condition {
   

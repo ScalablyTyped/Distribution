@@ -7,67 +7,67 @@ import typings.arcgisJsApi.arcgisJsApiStrings.tick
 import typings.arcgisJsApi.arcgisJsApiStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SmartMappingSliderBaseProperties extends WidgetProperties {
+trait SmartMappingSliderBaseProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The [Histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html) associated with the data represented on the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#histogramConfig)
     */
-  var histogramConfig: js.UndefOr[HistogramConfig] = js.native
+  var histogramConfig: js.UndefOr[HistogramConfig] = js.undefined
   
   /**
     * A function used to format user inputs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputFormatFunction)
     */
-  var inputFormatFunction: js.UndefOr[SmartMappingSliderBaseLabelFormatter] = js.native
+  var inputFormatFunction: js.UndefOr[SmartMappingSliderBaseLabelFormatter] = js.undefined
   
   /**
     * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputFormatFunction).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputParseFunction)
     */
-  var inputParseFunction: js.UndefOr[InputParser] = js.native
+  var inputParseFunction: js.UndefOr[InputParser] = js.undefined
   
   /**
     * A modified version of [Slider.labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction), which is a custom function used to format labels on the thumbs, min, max, and average values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#labelFormatFunction)
     */
-  var labelFormatFunction: js.UndefOr[SmartMappingSliderBaseLabelFormatter] = js.native
+  var labelFormatFunction: js.UndefOr[SmartMappingSliderBaseLabelFormatter] = js.undefined
   
   /**
     * The maximum value or upper bound of the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#max)
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum value or lower bound of the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#min)
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines how slider thumb values should be rounded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#precision)
     */
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   /**
     * Zooms the slider track to the bounds provided in this property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#zoomOptions)
     */
-  var zoomOptions: js.UndefOr[SmartMappingSliderBaseZoomOptions] = js.native
+  var zoomOptions: js.UndefOr[SmartMappingSliderBaseZoomOptions] = js.undefined
 }
 object SmartMappingSliderBaseProperties {
   

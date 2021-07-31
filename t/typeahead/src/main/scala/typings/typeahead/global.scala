@@ -4,7 +4,6 @@ import typings.typeahead.Bloodhound.BloodhoundOptions
 import typings.typeahead.Bloodhound.Tokenizers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,7 +16,8 @@ object global {
   @JSGlobal("Bloodhound")
   @js.native
   class Bloodhound[T] protected ()
-    extends typings.typeahead.Bloodhound[T] {
+    extends StObject
+       with typings.typeahead.Bloodhound[T] {
     /**
       * The constructor function.
       *
@@ -37,9 +37,8 @@ object global {
       * previous value. Can be used to avoid naming collisions.
       */
     /* static member */
-    @JSGlobal("Bloodhound.noConflict")
-    @js.native
-    def noConflict(): typings.typeahead.Bloodhound[_] = js.native
+    @scala.inline
+    def noConflict(): typings.typeahead.Bloodhound[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.typeahead.Bloodhound[js.Any]]
     
     /**
       * The Bloodhound suggestion engine is token-based, so how datums and queries are tokenized plays a vital role in the quality of search results.

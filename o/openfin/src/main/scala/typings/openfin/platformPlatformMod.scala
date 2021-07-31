@@ -17,7 +17,6 @@ import typings.openfin.viewViewMod.ViewCreationOptions
 import typings.openfin.windowWindowMod.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformPlatformMod {
@@ -80,7 +79,7 @@ object platformPlatformMod {
       * @return { Promise<_Window> }
       * @tutorial Platform.createWindow
       */
-    def createWindow(options: PlatformWindowCreationOptions): js.Promise[Window with Identity] = js.native
+    def createWindow(options: PlatformWindowCreationOptions): js.Promise[Window & Identity] = js.native
     
     def getClient(): js.Promise[ChannelClient] = js.native
     def getClient(identity: Identity): js.Promise[ChannelClient] = js.native
@@ -103,8 +102,8 @@ object platformPlatformMod {
       * @tutorial Platform.getWindowContext
       * @experimental
       */
-    def getWindowContext(): js.Promise[_] = js.native
-    def getWindowContext(target: Identity): js.Promise[_] = js.native
+    def getWindowContext(): js.Promise[js.Any] = js.native
+    def getWindowContext(target: Identity): js.Promise[js.Any] = js.native
     
     /**
       * Retrieves a manifest by url and launches a legacy application manifest or snapshot into the platform.  Returns a promise that
@@ -147,9 +146,9 @@ object platformPlatformMod {
       * @experimental
       */
     def setWindowContext(): js.Promise[Unit] = js.native
-    def setWindowContext(context: js.UndefOr[scala.Nothing], target: Identity): js.Promise[Unit] = js.native
     def setWindowContext(context: js.Any): js.Promise[Unit] = js.native
     def setWindowContext(context: js.Any, target: Identity): js.Promise[Unit] = js.native
+    def setWindowContext(context: Unit, target: Identity): js.Promise[Unit] = js.native
   }
   
   @js.native
@@ -186,8 +185,8 @@ object platformPlatformMod {
       * @experimental
       * @static
       */
-    def init(): js.Promise[_] = js.native
-    def init(options: InitPlatformOptions): js.Promise[_] = js.native
+    def init(): js.Promise[js.Any] = js.native
+    def init(options: InitPlatformOptions): js.Promise[js.Any] = js.native
     
     /**
       * Creates and starts a Platform and returns a wrapped and running Platform instance. The wrapped Platform methods can

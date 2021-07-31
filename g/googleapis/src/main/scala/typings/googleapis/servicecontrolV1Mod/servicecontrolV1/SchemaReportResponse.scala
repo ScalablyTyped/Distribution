@@ -2,13 +2,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for the Report method.
   */
-@js.native
 trait SchemaReportResponse extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait SchemaReportResponse extends StObject {
     * happens, it&#39;s impossible to know which of the    &#39;Operations&#39;
     * in the request succeeded or failed.
     */
-  var reportErrors: js.UndefOr[js.Array[SchemaReportError]] = js.native
+  var reportErrors: js.UndefOr[js.Array[SchemaReportError]] = js.undefined
   
   /**
     * Quota usage for each quota release `Operation` request.  Fully or
@@ -34,12 +32,12 @@ trait SchemaReportResponse extends StObject {
     * info. A deadline exceeded quota request will not have quota usage info.
     * If there is no quota release request, report_quota_info will be empty.
     */
-  var reportInfos: js.UndefOr[js.Array[SchemaReportInfo]] = js.native
+  var reportInfos: js.UndefOr[js.Array[SchemaReportInfo]] = js.undefined
   
   /**
     * The actual config id used to process the request.
     */
-  var serviceConfigId: js.UndefOr[String] = js.native
+  var serviceConfigId: js.UndefOr[String] = js.undefined
 }
 object SchemaReportResponse {
   

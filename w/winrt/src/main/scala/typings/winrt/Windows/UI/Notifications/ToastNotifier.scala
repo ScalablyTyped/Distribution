@@ -3,11 +3,11 @@ package typings.winrt.Windows.UI.Notifications
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ToastNotifier extends IToastNotifier
+trait ToastNotifier
+  extends StObject
+     with IToastNotifier
 object ToastNotifier {
   
   @scala.inline

@@ -2,23 +2,21 @@ package typings.awsSdkClientCodecommitNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBranchInfoMod {
   
-  @js.native
   trait BranchInfo extends StObject {
     
     /**
       * <p>The name of the branch.</p>
       */
-    var branchName: js.UndefOr[String] = js.native
+    var branchName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The ID of the last commit made to the branch.</p>
       */
-    var commitId: js.UndefOr[String] = js.native
+    var commitId: js.UndefOr[String] = js.undefined
   }
   object BranchInfo {
     

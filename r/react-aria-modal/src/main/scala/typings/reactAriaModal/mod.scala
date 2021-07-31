@@ -12,7 +12,6 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,35 +20,36 @@ object mod {
   @js.native
   class default ()
     extends PureComponent[
-          AriaModalProps with (RequiredAriaTypes[PickAriaModalPropstitleId, PickAriaModalPropstitleTe]), 
+          AriaModalProps & (RequiredAriaTypes[PickAriaModalPropstitleId, PickAriaModalPropstitleTe]), 
           js.Object, 
           js.Any
         ]
   /* static members */
   object default {
     
-    @JSImport("react-aria-modal", "default.renderTo")
+    @JSImport("react-aria-modal", JSImport.Default)
     @js.native
-    def renderTo(node: String): ReactType[_] = js.native
-    @JSImport("react-aria-modal", "default.renderTo")
-    @js.native
-    def renderTo(node: HTMLElement): ReactType[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def renderTo(node: String): ReactType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTo")(node.asInstanceOf[js.Any]).asInstanceOf[ReactType[js.Any]]
+    @scala.inline
+    def renderTo(node: HTMLElement): ReactType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTo")(node.asInstanceOf[js.Any]).asInstanceOf[ReactType[js.Any]]
   }
   
   type AriaModal = PureComponent[
-    AriaModalProps with (RequiredAriaTypes[PickAriaModalPropstitleId, PickAriaModalPropstitleTe]), 
+    AriaModalProps & (RequiredAriaTypes[PickAriaModalPropstitleId, PickAriaModalPropstitleTe]), 
     js.Object, 
     js.Any
   ]
   
-  @js.native
   trait AriaModalProps extends StObject {
     
     /**
       * If true, the modal will receive a role of alertdialog,
       * instead of its default dialog.
       */
-    var alert: js.UndefOr[Boolean] = js.native
+    var alert: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Provide your main application node here (which the modal should
@@ -57,7 +57,7 @@ object mod {
       * node will receive the attribute `aria-hidden="true"`.
       * This can help screen readers understand what's going on.
       */
-    var applicationNode: js.UndefOr[Node | Element] = js.native
+    var applicationNode: js.UndefOr[Node | Element] = js.undefined
     
     /**
       * Apply a class to the dialog in order to custom-style it.
@@ -66,24 +66,24 @@ object mod {
       * inline styles to the dialog element in order position it.
       * To disable _all inline styles_, see `includeDefaultStyles`.
       */
-    var dialogClass: js.UndefOr[String] = js.native
+    var dialogClass: js.UndefOr[String] = js.undefined
     
     /**
       * Choose your own id attribute for the dialog element.
       *
       * Default: `react-aria-modal-dialog`.
       */
-    var dialogId: js.UndefOr[String] = js.native
+    var dialogId: js.UndefOr[String] = js.undefined
     
     /**
       * Customize properties of the style prop that is passed to the dialog.
       */
-    var dialogStyle: js.UndefOr[CSSProperties] = js.native
+    var dialogStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * By default, the Escape key exits the modal. Pass `false`, and it won't.
       */
-    var escapeExits: js.UndefOr[Boolean] = js.native
+    var escapeExits: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, when the modal activates its first focusable child will
@@ -91,20 +91,20 @@ object mod {
       * will receive initial focus — and that focus will be hidden.
       * (This is essentially what Bootstrap does with their modal.)
       */
-    var focusDialog: js.UndefOr[Boolean] = js.native
+    var focusDialog: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Customize properties of the focusTrapOptions prop that is passed to the modal dialog's focus trap.
       * For example, you can use this prop if you need better control of where focus is returned.
       */
-    var focusTrapOptions: js.UndefOr[js.Object] = js.native
+    var focusTrapOptions: js.UndefOr[js.Object] = js.undefined
     
     /**
       * If true, the modal dialog's focus trap will be paused.
       * You won't typically need to use this prop. It used to be that the typical reason for pausing a focus trap was to enable nested focus traps;
       * but as of focus-trap v4, the pausing and unpausing of hierachical traps is handled automatically.
       */
-    var focusTrapPaused: js.UndefOr[Boolean] = js.native
+    var focusTrapPaused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Same as `applicationNode`, but a function that returns the node
@@ -115,7 +115,7 @@ object mod {
       * and refer to DOM nodes within it (e.g. `document.getElementById(..)`),
       * without ruining your server-side rendering.
       */
-    var getApplicationNode: js.UndefOr[js.Function0[Node | Element]] = js.native
+    var getApplicationNode: js.UndefOr[js.Function0[Node | Element]] = js.undefined
     
     /**
       * By default, styles are applied inline to the dialog and underlay
@@ -127,7 +127,7 @@ object mod {
       * _Note_: underlayStyle and dialogStyle can still be set inline,
       * but these will be the only styles applied.
       */
-    var includeDefaultStyles: js.UndefOr[Boolean] = js.native
+    var includeDefaultStyles: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, when the modal activates its first focusable child will
@@ -136,21 +136,21 @@ object mod {
       * prop. (That selector is passed to `document.querySelector()` to find
       * the DOM node.)
       */
-    var initialFocus: js.UndefOr[String] = js.native
+    var initialFocus: js.UndefOr[String] = js.undefined
     
     /**
       * By default, the modal is active when mounted, deactivated when unmounted.
       * However, you can also control its active/inactive state by changing
       * its mounted property instead.
       */
-    var mounted: js.UndefOr[Boolean] = js.native
+    var mounted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This function is called in the modal's `componentDidMount()` lifecycle method.
       * You can use it to do whatever diverse and sundry things you feel like
       * doing after the modal activates.
       */
-    var onEnter: js.UndefOr[js.Function0[_]] = js.native
+    var onEnter: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * This function needs to handles the state change of exiting (or deactivating) the modal.
@@ -160,26 +160,26 @@ object mod {
       * That also makes it easier to create your own "close modal" buttons; because you
       * have the function that closes the modal right there, written by you, at your disposal.
       */
-    var onExit: js.UndefOr[js.Function0[_]] = js.native
+    var onExit: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * If true, the modal dialog will prevent any scrolling behind the modal window.
       */
-    var scrollDisabled: js.UndefOr[Boolean] = js.native
+    var scrollDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The `id` of the element that should be used as the modal's accessible
       * title. This value is passed to the modal's `aria-labelledby` attribute.
       * You must use either `titleId` or `titleText`, but not both.
       */
-    var titleId: js.UndefOr[String] = js.native
+    var titleId: js.UndefOr[String] = js.undefined
     
     /**
       * A string to use as the modal's accessible title. This value is passed
       * to the modal's `aria-label` attribute. You must use either `titleId` or
       * `titleText`, but not both.
       */
-    var titleText: js.UndefOr[String] = js.native
+    var titleText: js.UndefOr[String] = js.undefined
     
     /**
       * Apply a class to the underlay in order to custom-style it.
@@ -189,13 +189,13 @@ object mod {
       * `underlayColor` prop instead of a class.
       * If you would rather control all CSS, see `includeDefaultStyles`.
       */
-    var underlayClass: js.UndefOr[String] = js.native
+    var underlayClass: js.UndefOr[String] = js.undefined
     
     /**
       * By default, a click on the underlay will exit the modal.
       * Pass `false`, and clicking on the underlay will do nothing.
       */
-    var underlayClickExits: js.UndefOr[Boolean] = js.native
+    var underlayClickExits: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you want to change the underlay's color, you can
@@ -205,7 +205,7 @@ object mod {
       *
       * Default: rgba(0,0,0,0.5)
       */
-    var underlayColor: js.UndefOr[String | `false`] = js.native
+    var underlayColor: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * Customize properties of the `style` prop that is passed to the underlay.
@@ -213,12 +213,12 @@ object mod {
       * top & bottom padding to the underlay.
       * This is illustrated in the demo examples.
       */
-    var underlayStyle: js.UndefOr[CSSProperties] = js.native
+    var underlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * If `true`, the modal's contents will be vertically (as well as horizontally) centered.
       */
-    var verticallyCenter: js.UndefOr[Boolean] = js.native
+    var verticallyCenter: js.UndefOr[Boolean] = js.undefined
   }
   object AriaModalProps {
     
@@ -310,13 +310,13 @@ object mod {
       def setMountedUndefined: Self = StObject.set(x, "mounted", js.undefined)
       
       @scala.inline
-      def setOnEnter(value: () => _): Self = StObject.set(x, "onEnter", js.Any.fromFunction0(value))
+      def setOnEnter(value: () => js.Any): Self = StObject.set(x, "onEnter", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
       @scala.inline
-      def setOnExit(value: () => _): Self = StObject.set(x, "onExit", js.Any.fromFunction0(value))
+      def setOnExit(value: () => js.Any): Self = StObject.set(x, "onExit", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
@@ -371,5 +371,5 @@ object mod {
     }
   }
   
-  type RequiredAriaTypes[T, U] = (typings.reactAriaModal.reactAriaModalStrings.RequiredAriaTypes with TopLevel[T] with TopLevel[js.Any]) | (typings.reactAriaModal.reactAriaModalStrings.RequiredAriaTypes with TopLevel[js.Any] with TopLevel[U])
+  type RequiredAriaTypes[T, U] = (typings.reactAriaModal.reactAriaModalStrings.RequiredAriaTypes & TopLevel[T] & TopLevel[js.Any]) | (typings.reactAriaModal.reactAriaModalStrings.RequiredAriaTypes & TopLevel[js.Any] & TopLevel[U])
 }

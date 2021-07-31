@@ -3,17 +3,15 @@ package typings.jqueryui.JQueryUI
 import typings.jqueryui.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderUIParams extends StObject {
   
-  var handle: js.UndefOr[JQuery] = js.native
+  var handle: js.UndefOr[JQuery] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
-  var values: js.UndefOr[js.Array[Double]] = js.native
+  var values: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SliderUIParams {
   

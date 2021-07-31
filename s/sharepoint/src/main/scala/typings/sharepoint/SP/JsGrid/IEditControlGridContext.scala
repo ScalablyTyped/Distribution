@@ -4,15 +4,15 @@ import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEditControlGridContext extends IEditActorGridContext {
+trait IEditControlGridContext
+  extends StObject
+     with IEditActorGridContext {
   
-  def OnActivateActor(): Unit = js.native
+  def OnActivateActor(): Unit
   
-  def OnDeactivateActor(): Unit = js.native
+  def OnDeactivateActor(): Unit
 }
 object IEditControlGridContext {
   

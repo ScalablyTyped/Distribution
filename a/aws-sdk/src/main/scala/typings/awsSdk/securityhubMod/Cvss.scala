@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cvss extends StObject {
   
   /**
     * The base CVSS score.
     */
-  var BaseScore: js.UndefOr[Double] = js.native
+  var BaseScore: js.UndefOr[Double] = js.undefined
   
   /**
     * The base scoring vector for the CVSS score.
     */
-  var BaseVector: js.UndefOr[NonEmptyString] = js.native
+  var BaseVector: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The version of CVSS for the CVSS score.
     */
-  var Version: js.UndefOr[NonEmptyString] = js.native
+  var Version: js.UndefOr[NonEmptyString] = js.undefined
 }
 object Cvss {
   

@@ -7,41 +7,35 @@ import typings.prosemirrorState.mod.Plugin
 import typings.prosemirrorState.mod.Transaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("prosemirror-history", "closeHistory")
+  @JSImport("prosemirror-history", JSImport.Namespace)
   @js.native
-  def closeHistory[S /* <: Schema[_, _] */](tr: Transaction[S]): Transaction[S] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("prosemirror-history", "history")
-  @js.native
-  def history(): Plugin[_, _] = js.native
-  @JSImport("prosemirror-history", "history")
-  @js.native
-  def history(config: Depth): Plugin[_, _] = js.native
+  @scala.inline
+  def closeHistory[S /* <: Schema[js.Any, js.Any] */](tr: Transaction[S]): Transaction[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeHistory")(tr.asInstanceOf[js.Any]).asInstanceOf[Transaction[S]]
   
-  @JSImport("prosemirror-history", "redo")
-  @js.native
-  def redo[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-history", "redo")
-  @js.native
-  def redo[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def history(): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("history")().asInstanceOf[Plugin[js.Any, js.Any]]
+  @scala.inline
+  def history(config: Depth): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("history")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
   
-  @JSImport("prosemirror-history", "redoDepth")
-  @js.native
-  def redoDepth(state: EditorState[_]): Double = js.native
+  @scala.inline
+  def redo[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("redo")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def redo[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("redo")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-history", "undo")
-  @js.native
-  def undo[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-history", "undo")
-  @js.native
-  def undo[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def redoDepth(state: EditorState[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("redoDepth")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("prosemirror-history", "undoDepth")
-  @js.native
-  def undoDepth(state: EditorState[_]): Double = js.native
+  @scala.inline
+  def undo[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("undo")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def undo[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("undo")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def undoDepth(state: EditorState[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("undoDepth")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

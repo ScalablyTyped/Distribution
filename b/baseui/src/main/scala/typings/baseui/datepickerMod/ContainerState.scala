@@ -3,13 +3,11 @@ package typings.baseui.datepickerMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerState extends StObject {
   
-  var value: js.UndefOr[Date | js.Array[Date]] = js.native
+  var value: js.UndefOr[Date | js.Array[Date]] = js.undefined
 }
 object ContainerState {
   

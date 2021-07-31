@@ -11,8 +11,8 @@ Check if the process is running as Administrator on Windows
 | Full name          | is-admin |
 | Keywords           | admin, administrator, windows, win32, process, running, cmd, shell, command-line, check, detect, is, root |
 | # releases         | 2 |
-| # dependents       | 18 |
-| # downloads        | 309483 |
+| # dependents       | 20 |
+| # downloads        | 392655 |
 | # stars            | 1 |
 
 ## Links

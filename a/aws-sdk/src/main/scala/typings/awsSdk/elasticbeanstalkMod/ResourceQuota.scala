@@ -2,16 +2,14 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceQuota extends StObject {
   
   /**
     * The maximum number of instances of this Elastic Beanstalk resource type that an AWS account can use.
     */
-  var Maximum: js.UndefOr[BoxedInt] = js.native
+  var Maximum: js.UndefOr[BoxedInt] = js.undefined
 }
 object ResourceQuota {
   

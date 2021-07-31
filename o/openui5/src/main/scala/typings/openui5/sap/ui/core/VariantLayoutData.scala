@@ -2,11 +2,12 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VariantLayoutData extends LayoutData {
+trait VariantLayoutData
+  extends StObject
+     with LayoutData {
   
   /**
     * Adds some multipleLayoutData to the aggregation <code>multipleLayoutData</code>.

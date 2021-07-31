@@ -2,7 +2,6 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * deployment. Only applicable for App Engine flexible environment when
   * creating a version using source code directly.
   */
-@js.native
 trait SchemaCloudBuildOptions extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait SchemaCloudBuildOptions extends StObject {
     * https://cloud.google.com/appengine/docs/standard/python/config/appref for
     * more details.
     */
-  var appYamlPath: js.UndefOr[String] = js.native
+  var appYamlPath: js.UndefOr[String] = js.undefined
   
   /**
     * The Cloud Build timeout used as part of any dependent builds performed by
     * version creation. Defaults to 10 minutes.
     */
-  var cloudBuildTimeout: js.UndefOr[String] = js.native
+  var cloudBuildTimeout: js.UndefOr[String] = js.undefined
 }
 object SchemaCloudBuildOptions {
   

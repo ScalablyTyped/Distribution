@@ -3,13 +3,11 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Groupdescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsListIdPGroupsForOrgResponseData extends StObject {
   
-  var groups: js.Array[Groupdescription] = js.native
+  var groups: js.Array[Groupdescription]
 }
 object TeamsListIdPGroupsForOrgResponseData {
   

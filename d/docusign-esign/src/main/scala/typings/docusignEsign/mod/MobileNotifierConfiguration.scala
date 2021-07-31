@@ -2,25 +2,23 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MobileNotifierConfiguration extends StObject {
   
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The Platform of the client application
     */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
 }
 object MobileNotifierConfiguration {
   

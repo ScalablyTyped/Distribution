@@ -3,33 +3,33 @@ package typings.senchaTouch.Ext.form
 import typings.senchaTouch.Ext.IContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFieldSet extends IContainer {
+trait IFieldSet
+  extends StObject
+     with IContainer {
   
   /** [Method] A convenient method to disable all fields in this FieldSet
     * @param newDisabled Object
     * @returns Ext.form.FieldSet This FieldSet
     */
-  var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[js.Any], this.type]] = js.native
+  var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[js.Any], this.type]] = js.undefined
   
   /** [Config Option] (String) */
-  var instructions: js.UndefOr[String] = js.native
+  var instructions: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of instructions
     * @param instructions String The new value.
     */
-  var setInstructions: js.UndefOr[js.Function1[/* instructions */ js.UndefOr[String], Unit]] = js.native
+  var setInstructions: js.UndefOr[js.Function1[/* instructions */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of title
     * @param title String The new value.
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.native
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object IFieldSet {
   

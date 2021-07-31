@@ -9,16 +9,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a {@link TextField} which is not specified by itself, but dependent on a {@link TextFieldMaster} .
   * @see TextFieldMaster
   */
-@js.native
 trait DependentTextField
-  extends TextField_
+  extends StObject
+     with TextField_
      with XDependentTextField
 object DependentTextField {
   

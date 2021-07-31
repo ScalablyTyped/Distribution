@@ -18,11 +18,9 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.pop_
 import typings.tuyaPanelKit.tuyaPanelKitStrings.push_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackHeaderOptions & std.Partial<tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.TransitionPreset> & {  title :string | undefined,   header :(props : tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackHeaderProps): react.react.ReactNode | undefined,   headerShown :boolean | undefined,   cardShadowEnabled :boolean | undefined,   cardOverlayEnabled :boolean | undefined,   cardOverlay :(props : {  style :react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.ViewStyle>>}): react.react.ReactNode | undefined,   cardStyle :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   animationEnabled :boolean | undefined,   animationTypeForReplace :'push' | 'pop' | undefined,   gestureEnabled :boolean | undefined,   gestureResponseDistance :{  vertical :number | undefined,   horizontal :number | undefined} | undefined,   gestureVelocityImpact :number | undefined,   safeAreaInsets :{  top :number | undefined,   right :number | undefined,   bottom :number | undefined,   left :number | undefined} | undefined,   detachPreviousScreen :boolean | undefined} */
-@js.native
 trait StackNavigationOptions extends StObject {
   
   /**
@@ -30,29 +28,29 @@ trait StackNavigationOptions extends StObject {
     * If you set it to `false`, the screen won't animate when pushing or popping.
     * Defaults to `true` on Android and iOS, `false` on Web.
     */
-  var animationEnabled: js.UndefOr[Boolean] = js.native
+  var animationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of animation to use when this screen replaces another screen. Defaults to `push`.
     * When `pop` is used, the `pop` animation is applied to the screen being replaced.
     */
-  var animationTypeForReplace: js.UndefOr[push_ | pop_] = js.native
+  var animationTypeForReplace: js.UndefOr[push_ | pop_] = js.undefined
   
   /**
     * Function that returns a React Element to display as a overlay for the card.
     */
-  var cardOverlay: js.UndefOr[js.Function1[/* props */ StyleWithAnimatedValue, ReactNode]] = js.native
+  var cardOverlay: js.UndefOr[js.Function1[/* props */ StyleWithAnimatedValue, ReactNode]] = js.undefined
   
   /**
     * Whether to have a semi-transparent dark overlay visible under the card during transitions.
     * Defaults to `true` on Android and `false` on iOS.
     */
-  var cardOverlayEnabled: js.UndefOr[Boolean] = js.native
+  var cardOverlayEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether a shadow is visible for the card during transitions. Defaults to `true`.
     */
-  var cardShadowEnabled: js.UndefOr[Boolean] = js.native
+  var cardShadowEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Style object for the card in stack.
@@ -63,9 +61,9 @@ trait StackNavigationOptions extends StObject {
     * If you use [`react-native-screens`](https://github.com/kmagiera/react-native-screens), you should also specify `mode: 'modal'`
     * in the stack view config when using a transparent background so previous screens aren't detached.
     */
-  var cardStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var cardStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var cardStyleInterpolator: js.UndefOr[StackCardStyleInterpolator] = js.native
+  var cardStyleInterpolator: js.UndefOr[StackCardStyleInterpolator] = js.undefined
   
   /**
     * Whether to detach the previous screen from the view hierarchy to save memory.
@@ -73,124 +71,124 @@ trait StackNavigationOptions extends StObject {
     * Only applicable if `detachInactiveScreens` isn't set to `false`.
     * Defaults to `false` for the last screen when mode='modal', otherwise `true`.
     */
-  var detachPreviousScreen: js.UndefOr[Boolean] = js.native
+  var detachPreviousScreen: js.UndefOr[Boolean] = js.undefined
   
-  var gestureDirection: js.UndefOr[GestureDirection] = js.native
+  var gestureDirection: js.UndefOr[GestureDirection] = js.undefined
   
   /**
     * Whether you can use gestures to dismiss this screen. Defaults to `true` on iOS, `false` on Android.
     * Not supported on Web.
     */
-  var gestureEnabled: js.UndefOr[Boolean] = js.native
+  var gestureEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Object to override the distance of touch start from the edge of the screen to recognize gestures.
     * Not supported on Web.
     */
-  var gestureResponseDistance: js.UndefOr[Horizontal] = js.native
+  var gestureResponseDistance: js.UndefOr[Horizontal] = js.undefined
   
   /**
     * Number which determines the relevance of velocity for the gesture. Defaults to 0.3.
     * Not supported on Web.
     */
-  var gestureVelocityImpact: js.UndefOr[Double] = js.native
+  var gestureVelocityImpact: js.UndefOr[Double] = js.undefined
   
   /**
     * Function that given `HeaderProps` returns a React Element to display as a header.
     */
-  var header: js.UndefOr[js.Function1[/* props */ StackHeaderProps, ReactNode]] = js.native
+  var header: js.UndefOr[js.Function1[/* props */ StackHeaderProps, ReactNode]] = js.undefined
   
   /**
     * Accessibility label for the header back button.
     */
-  var headerBackAccessibilityLabel: js.UndefOr[String] = js.native
+  var headerBackAccessibilityLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Whether back button title font should scale to respect Text Size accessibility settings. Defaults to `false`.
     */
-  var headerBackAllowFontScaling: js.UndefOr[Boolean] = js.native
+  var headerBackAllowFontScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Function which returns a React Element to display custom image in header's back button.
     * It receives the `tintColor` in in the options object as an argument. object.
     * Defaults to Image component with a the default back icon image for the platform (a chevron on iOS and an arrow on Android).
     */
-  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.native
+  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.undefined
   
   /**
     * Title string used by the back button on iOS. Defaults to the previous scene's `headerTitle`.
     * Use `headerBackTitleVisible: false` to hide it.
     */
-  var headerBackTitle: js.UndefOr[String] = js.native
+  var headerBackTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Style object for the back title.
     */
-  var headerBackTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var headerBackTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * A reasonable default is supplied for whether the back button title should be visible or not.
     * But if you want to override that you can use `true` or `false` in this option.
     */
-  var headerBackTitleVisible: js.UndefOr[Boolean] = js.native
+  var headerBackTitleVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Function which returns a React Element to render as the background of the header.
     * This is useful for using backgrounds such as an image or a gradient.
     * You can use this with `headerTransparent` to render a blur view, for example, to create a translucent header.
     */
-  var headerBackground: js.UndefOr[js.Function1[/* props */ Style, ReactNode]] = js.native
+  var headerBackground: js.UndefOr[js.Function1[/* props */ Style, ReactNode]] = js.undefined
   
   /**
     * Function which returns a React Element to display on the left side of the header.
     * It receives a number of arguments when rendered (`onPress`, `label`, `labelStyle` and more.
     */
-  var headerLeft: js.UndefOr[js.Function1[/* props */ StackHeaderLeftButtonProps, ReactNode]] = js.native
+  var headerLeft: js.UndefOr[js.Function1[/* props */ StackHeaderLeftButtonProps, ReactNode]] = js.undefined
   
   /**
     * Style object for the container of the `headerLeft` component, for example to add padding.
     */
-  var headerLeftContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
+  var headerLeftContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   
   /**
     * Color for material ripple (Android >= 5.0 only).
     */
-  var headerPressColorAndroid: js.UndefOr[String] = js.native
+  var headerPressColorAndroid: js.UndefOr[String] = js.undefined
   
   /**
     * Function which returns a React Element to display on the right side of the header.
     */
-  var headerRight: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.native
+  var headerRight: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.undefined
   
   /**
     * Style object for the container of the `headerRight` component, for example to add padding.
     */
-  var headerRightContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
+  var headerRightContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   
   /**
     * Whether to show the header. The header is shown by default unless `headerMode` was set to `none`.
     * Setting this to `false` hides the header.
     */
-  var headerShown: js.UndefOr[Boolean] = js.native
+  var headerShown: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Extra padding to add at the top of header to account for translucent status bar.
     * By default, it uses the top value from the safe area insets of the device.
     * Pass 0 or a custom value to disable the default behaviour, and customize the height.
     */
-  var headerStatusBarHeight: js.UndefOr[Double] = js.native
+  var headerStatusBarHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Style object for the header. You can specify a custom background color here, for example.
     */
-  var headerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
+  var headerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   
-  var headerStyleInterpolator: js.UndefOr[StackHeaderStyleInterpolator] = js.native
+  var headerStyleInterpolator: js.UndefOr[StackHeaderStyleInterpolator] = js.undefined
   
   /**
     * Tint color for the header.
     */
-  var headerTintColor: js.UndefOr[String] = js.native
+  var headerTintColor: js.UndefOr[String] = js.undefined
   
   /**
     * String or a function that returns a React Element to be used by the header.
@@ -198,18 +196,18 @@ trait StackNavigationOptions extends StObject {
     * It receives `allowFontScaling`, `onLayout`, `style` and `children` in the options object as an argument.
     * The title string is passed in `children`.
     */
-  var headerTitle: js.UndefOr[String | (js.Function1[/* props */ StackHeaderTitleProps, ReactNode])] = js.native
+  var headerTitle: js.UndefOr[String | (js.Function1[/* props */ StackHeaderTitleProps, ReactNode])] = js.undefined
   
   /**
     * How to align the the header title.
     * Defaults to `center` on iOS and `left` on Android.
     */
-  var headerTitleAlign: js.UndefOr[left | center] = js.native
+  var headerTitleAlign: js.UndefOr[left | center] = js.undefined
   
   /**
     * Whether header title font should scale to respect Text Size accessibility settings. Defaults to `false`.
     */
-  var headerTitleAllowFontScaling: js.UndefOr[Boolean] = js.native
+  var headerTitleAllowFontScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Style object for the container of the `headerTitle` component, for example to add padding.
@@ -217,38 +215,38 @@ trait StackNavigationOptions extends StObject {
     * This may lead to white space or overlap between `headerLeft` and `headerTitle` if a customized `headerLeft` is used.
     * It can be solved by adjusting `left` and `right` style in `headerTitleContainerStyle` and `marginHorizontal` in `headerTitleStyle`.
     */
-  var headerTitleContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
+  var headerTitleContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   
   /**
     * Style object for the title component.
     */
-  var headerTitleStyle: js.UndefOr[WithAnimatedValue[StyleProp[TextStyle]]] = js.native
+  var headerTitleStyle: js.UndefOr[WithAnimatedValue[StyleProp[TextStyle]]] = js.undefined
   
   /**
     * Defaults to `false`. If `true`, the header will not have a background unless you explicitly provide it with `headerBackground`.
     * The header will also float over the screen so that it overlaps the content underneath.
     * This is useful if you want to render a semi-transparent header or a blurred background.
     */
-  var headerTransparent: js.UndefOr[Boolean] = js.native
+  var headerTransparent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Title string used by the back button when `headerBackTitle` doesn't fit on the screen. `"Back"` by default.
     */
-  var headerTruncatedBackTitle: js.UndefOr[String] = js.native
+  var headerTruncatedBackTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Safe area insets for the screen. This is used to avoid elements like notch and status bar.
     * By default, the device's safe area insets are automatically detected. You can override the behavior with this option.
     * For example, to remove the extra spacing for status bar, pass `safeAreaInsets: { top: 0 }`.
     */
-  var safeAreaInsets: js.UndefOr[Bottom] = js.native
+  var safeAreaInsets: js.UndefOr[Bottom] = js.undefined
   
   /**
     * String that can be displayed in the header as a fallback for `headerTitle`.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var transitionSpec: js.UndefOr[Close] = js.native
+  var transitionSpec: js.UndefOr[Close] = js.undefined
 }
 object StackNavigationOptions {
   

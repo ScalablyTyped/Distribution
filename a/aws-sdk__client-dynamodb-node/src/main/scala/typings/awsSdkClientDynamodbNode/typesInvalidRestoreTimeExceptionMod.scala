@@ -3,22 +3,22 @@ package typings.awsSdkClientDynamodbNode
 import typings.awsSdkClientDynamodbNode.restoreTableToPointInTimeExceptionsUnionMod.RestoreTableToPointInTimeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidRestoreTimeExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRestoreTimeExceptionDetails> * / any */ @js.native
-  trait InvalidRestoreTimeException extends RestoreTableToPointInTimeExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRestoreTimeExceptionDetails> * / any */ trait InvalidRestoreTimeException
+    extends StObject
+       with RestoreTableToPointInTimeExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InvalidRestoreTimeException = js.native
+    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InvalidRestoreTimeException
   }
   object InvalidRestoreTimeException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InvalidRestoreTimeException): InvalidRestoreTimeException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidRestoreTimeException = {
+      val __obj = js.Dynamic.literal(name = "InvalidRestoreTimeException")
       __obj.asInstanceOf[InvalidRestoreTimeException]
     }
     
@@ -32,13 +32,12 @@ object typesInvalidRestoreTimeExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidRestoreTimeExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InvalidRestoreTimeExceptionDetails {
     

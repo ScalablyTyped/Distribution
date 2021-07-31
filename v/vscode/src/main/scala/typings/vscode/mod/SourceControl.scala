@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceControl extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SourceControl extends StObject {
     * This command will be invoked when the user accepts the value
     * in the Source Control input.
     */
-  var acceptInputCommand: js.UndefOr[Command] = js.native
+  var acceptInputCommand: js.UndefOr[Command] = js.undefined
   
   /**
     * Optional commit template string.
@@ -22,7 +20,7 @@ trait SourceControl extends StObject {
     * The Source Control viewlet will populate the Source Control
     * input with this value when appropriate.
     */
-  var commitTemplate: js.UndefOr[String] = js.native
+  var commitTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * The UI-visible count of [resource states](#SourceControlResourceState) of
@@ -31,49 +29,49 @@ trait SourceControl extends StObject {
     * Equals to the total number of [resource state](#SourceControlResourceState)
     * of this source control, if undefined.
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * Create a new [resource group](#SourceControlResourceGroup).
     */
-  def createResourceGroup(id: String, label: String): SourceControlResourceGroup = js.native
+  def createResourceGroup(id: String, label: String): SourceControlResourceGroup
   
   /**
     * Dispose this source control.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * The id of this source control.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * The [input box](#SourceControlInputBox) for this source control.
     */
-  val inputBox: SourceControlInputBox = js.native
+  val inputBox: SourceControlInputBox
   
   /**
     * The human-readable label of this source control.
     */
-  val label: String = js.native
+  val label: String
   
   /**
     * An optional [quick diff provider](#QuickDiffProvider).
     */
-  var quickDiffProvider: js.UndefOr[QuickDiffProvider] = js.native
+  var quickDiffProvider: js.UndefOr[QuickDiffProvider] = js.undefined
   
   /**
     * The (optional) Uri of the root of this source control.
     */
-  val rootUri: js.UndefOr[Uri] = js.native
+  val rootUri: js.UndefOr[Uri] = js.undefined
   
   /**
     * Optional status bar commands.
     *
     * These commands will be displayed in the editor's status bar.
     */
-  var statusBarCommands: js.UndefOr[js.Array[Command]] = js.native
+  var statusBarCommands: js.UndefOr[js.Array[Command]] = js.undefined
 }
 object SourceControl {
   

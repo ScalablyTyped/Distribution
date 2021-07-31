@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReserveIdsRequest extends StObject {
   
   /** If not empty, the ID of the database against which to make the request. */
-  var databaseId: js.UndefOr[String] = js.native
+  var databaseId: js.UndefOr[String] = js.undefined
   
   /** Required. A list of keys with complete key paths whose numeric IDs should not be auto-allocated. */
-  var keys: js.UndefOr[js.Array[Key]] = js.native
+  var keys: js.UndefOr[js.Array[Key]] = js.undefined
 }
 object ReserveIdsRequest {
   

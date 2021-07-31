@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitHubLocation extends StObject {
   
   /**
     * The SHA1 commit ID of the GitHub commit that represents the bundled artifacts for the application revision.
     */
-  var commitId: js.UndefOr[CommitId] = js.native
+  var commitId: js.UndefOr[CommitId] = js.undefined
   
   /**
     * The GitHub account and repository pair that stores a reference to the commit that represents the bundled artifacts for the application revision.  Specified as account/repository.
     */
-  var repository: js.UndefOr[Repository] = js.native
+  var repository: js.UndefOr[Repository] = js.undefined
 }
 object GitHubLocation {
   

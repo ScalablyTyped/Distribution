@@ -5,55 +5,49 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-shell", JSImport.Namespace)
-  @js.native
-  def apply(commands: String): ReadWriteStream = js.native
-  @JSImport("gulp-shell", JSImport.Namespace)
-  @js.native
-  def apply(commands: String, options: Options): ReadWriteStream = js.native
-  @JSImport("gulp-shell", JSImport.Namespace)
-  @js.native
-  def apply(commands: js.Array[String]): ReadWriteStream = js.native
-  @JSImport("gulp-shell", JSImport.Namespace)
-  @js.native
-  def apply(commands: js.Array[String], options: Options): ReadWriteStream = js.native
+  @scala.inline
+  def apply(commands: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(commands: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(commands: js.Array[String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(commands: js.Array[String], options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
-  @JSImport("gulp-shell", "task")
+  @JSImport("gulp-shell", JSImport.Namespace)
   @js.native
-  def task(commands: String): js.Function0[js.Promise[Unit]] = js.native
-  @JSImport("gulp-shell", "task")
-  @js.native
-  def task(commands: String, options: Options): js.Function0[js.Promise[Unit]] = js.native
-  @JSImport("gulp-shell", "task")
-  @js.native
-  def task(commands: js.Array[String]): js.Function0[js.Promise[Unit]] = js.native
-  @JSImport("gulp-shell", "task")
-  @js.native
-  def task(commands: js.Array[String], options: Options): js.Function0[js.Promise[Unit]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def task(commands: String): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("task")(commands.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
+  @scala.inline
+  def task(commands: String, options: Options): js.Function0[js.Promise[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("task")(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Promise[Unit]]]
+  @scala.inline
+  def task(commands: js.Array[String]): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("task")(commands.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
+  @scala.inline
+  def task(commands: js.Array[String], options: Options): js.Function0[js.Promise[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("task")(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Promise[Unit]]]
+  
   trait Options extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[ProcessEnv] = js.native
+    var env: js.UndefOr[ProcessEnv] = js.undefined
     
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
-    var ignoreErrors: js.UndefOr[Boolean] = js.native
+    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var shell: js.UndefOr[`true` | String] = js.native
+    var shell: js.UndefOr[`true` | String] = js.undefined
     
-    var templateData: js.UndefOr[js.Object] = js.native
+    var templateData: js.UndefOr[js.Object] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

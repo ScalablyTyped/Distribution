@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstraintType extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ConstraintType extends StObject {
     * @type number
     * @default 0
     */
-  var angleA: Double = js.native
+  var angleA: Double
   
   /**
     * Either the angle of BodyB, or a config value.
@@ -24,7 +22,7 @@ trait ConstraintType extends StObject {
     * @type number
     * @default 0
     */
-  var angleB: Double = js.native
+  var angleB: Double
   
   /**
     * A `Number` that specifies the angular stiffness of the constraint.
@@ -33,7 +31,7 @@ trait ConstraintType extends StObject {
     * @type number
     * @default 0
     */
-  var angularStiffness: Double = js.native
+  var angularStiffness: Double
   
   /**
     * The first possible `Body` that this constraint is attached to.
@@ -42,7 +40,7 @@ trait ConstraintType extends StObject {
     * @type body
     * @default null
     */
-  var bodyA: js.UndefOr[BodyType] = js.native
+  var bodyA: js.UndefOr[BodyType] = js.undefined
   
   /**
     * The second possible `Body` that this constraint is attached to.
@@ -51,7 +49,7 @@ trait ConstraintType extends StObject {
     * @type body
     * @default null
     */
-  var bodyB: js.UndefOr[BodyType] = js.native
+  var bodyB: js.UndefOr[BodyType] = js.undefined
   
   /**
     * A `Number` that specifies the damping of the constraint, 
@@ -64,7 +62,7 @@ trait ConstraintType extends StObject {
     * @type number
     * @default 0
     */
-  var damping: Double = js.native
+  var damping: Double
   
   /**
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
@@ -72,7 +70,7 @@ trait ConstraintType extends StObject {
     * @property id
     * @type number
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * An arbitrary `String` name to help the user identify and manage bodies.
@@ -81,7 +79,7 @@ trait ConstraintType extends StObject {
     * @type string
     * @default "Constraint"
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * A `Number` that specifies the target resting length of the constraint. 
@@ -90,7 +88,7 @@ trait ConstraintType extends StObject {
     * @property length
     * @type number
     */
-  var length: Double = js.native
+  var length: Double
   
   /**
     * An object reserved for storing plugin-specific properties.
@@ -98,7 +96,7 @@ trait ConstraintType extends StObject {
     * @property plugin
     * @type {}
     */
-  var plugin: js.Any = js.native
+  var plugin: js.Any
   
   /**
     * A `Vector` that specifies the offset of the constraint from center of the `constraint.bodyA` if defined, otherwise a world-space position.
@@ -107,7 +105,7 @@ trait ConstraintType extends StObject {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var pointA: Vector = js.native
+  var pointA: Vector
   
   /**
     * A `Vector` that specifies the offset of the constraint from center of the `constraint.bodyB` if defined, otherwise a world-space position.
@@ -116,7 +114,7 @@ trait ConstraintType extends StObject {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var pointB: Vector = js.native
+  var pointB: Vector
   
   /**
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
@@ -124,7 +122,7 @@ trait ConstraintType extends StObject {
     * @property render
     * @type object
     */
-  var render: IConstraintRenderDefinition = js.native
+  var render: IConstraintRenderDefinition
   
   /**
     * A `Number` that specifies the stiffness of the constraint, i.e. the rate at which it returns to its resting `constraint.length`.
@@ -135,7 +133,7 @@ trait ConstraintType extends StObject {
     * @type number
     * @default 1
     */
-  var stiffness: Double = js.native
+  var stiffness: Double
   
   /**
     * A `String` denoting the type of object.
@@ -145,7 +143,7 @@ trait ConstraintType extends StObject {
     * @default "constraint"
     * @readOnly
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ConstraintType {
   

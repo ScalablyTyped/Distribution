@@ -3,19 +3,19 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait String extends Node {
+trait String
+  extends StObject
+     with Node {
   
-  var prefixed: scala.Boolean = js.native
+  var prefixed: scala.Boolean
   
-  var quote: java.lang.String = js.native
+  var quote: java.lang.String
   
-  var string: java.lang.String = js.native
+  var string: java.lang.String
   
-  var `val`: java.lang.String = js.native
+  var `val`: java.lang.String
 }
 object String {
   

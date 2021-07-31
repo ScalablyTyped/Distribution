@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebApp extends StObject {
   
   /** Immutable. The globally unique, Firebase-assigned identifier for the `WebApp`. This identifier should be treated as an opaque token, as the data format is not specified. */
-  var appId: js.UndefOr[String] = js.native
+  var appId: js.UndefOr[String] = js.undefined
   
   /** The URLs where the `WebApp` is hosted. */
-  var appUrls: js.UndefOr[js.Array[String]] = js.native
+  var appUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The user-assigned display name for the `WebApp`. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the WebApp, in the format: projects/PROJECT_IDENTIFIER /webApps/APP_ID * PROJECT_IDENTIFIER: the parent Project's
@@ -23,16 +21,16 @@ trait WebApp extends StObject {
     * project identifiers in Google's [AIP 2510 standard](https://google.aip.dev/cloud/2510). Note that the value for PROJECT_IDENTIFIER in any response body will be the `ProjectId`. *
     * APP_ID: the globally unique, Firebase-assigned identifier for the App (see [`appId`](../projects.webApps#WebApp.FIELDS.app_id)).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Immutable. A user-assigned unique identifier of the parent FirebaseProject for the `WebApp`. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Immutable. A unique, Firebase-assigned identifier for the `WebApp`. This identifier is only used to populate the `namespace` value for the `WebApp`. For most use cases,
     * use `appId` to identify or reference the App. The `webId` value is only unique within a `FirebaseProject` and its associated Apps.
     */
-  var webId: js.UndefOr[String] = js.native
+  var webId: js.UndefOr[String] = js.undefined
 }
 object WebApp {
   

@@ -2,25 +2,23 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for all operations used and required for all operations that
   * created by Container Analysis Providers
   */
-@js.native
 trait SchemaGoogleDevtoolsContaineranalysisV1alpha1OperationMetadata extends StObject {
   
   /**
     * Output only. The time this operation was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time that this operation was marked completed or failed.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1OperationMetadata {
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcEndpointSubnetAssociationMod {
@@ -38,6 +37,10 @@ object vpcEndpointSubnetAssociationMod {
   /* static members */
   object VpcEndpointSubnetAssociation {
     
+    @JSImport("@pulumi/aws/ec2/vpcEndpointSubnetAssociation", "VpcEndpointSubnetAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcEndpointSubnetAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object vpcEndpointSubnetAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpcEndpointSubnetAssociation", "VpcEndpointSubnetAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcEndpointSubnetAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointSubnetAssociation", "VpcEndpointSubnetAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcEndpointSubnetAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointSubnetAssociation", "VpcEndpointSubnetAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcEndpointSubnetAssociationState): VpcEndpointSubnetAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointSubnetAssociation", "VpcEndpointSubnetAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcEndpointSubnetAssociationState, opts: CustomResourceOptions): VpcEndpointSubnetAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcEndpointSubnetAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointSubnetAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcEndpointSubnetAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointSubnetAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcEndpointSubnetAssociationState): VpcEndpointSubnetAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointSubnetAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcEndpointSubnetAssociationState, opts: CustomResourceOptions): VpcEndpointSubnetAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointSubnetAssociation]
     
     /**
       * Returns true if the given object is an instance of VpcEndpointSubnetAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpcEndpointSubnetAssociation", "VpcEndpointSubnetAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation */ Boolean]
   }
   
-  @js.native
   trait VpcEndpointSubnetAssociationArgs extends StObject {
     
     /**
       * The ID of the subnet to be associated with the VPC endpoint.
       */
-    val subnetId: Input[String] = js.native
+    val subnetId: Input[String]
     
     /**
       * The ID of the VPC endpoint with which the subnet will be associated.
       */
-    val vpcEndpointId: Input[String] = js.native
+    val vpcEndpointId: Input[String]
   }
   object VpcEndpointSubnetAssociationArgs {
     
@@ -101,18 +98,17 @@ object vpcEndpointSubnetAssociationMod {
     }
   }
   
-  @js.native
   trait VpcEndpointSubnetAssociationState extends StObject {
     
     /**
       * The ID of the subnet to be associated with the VPC endpoint.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC endpoint with which the subnet will be associated.
       */
-    val vpcEndpointId: js.UndefOr[Input[String]] = js.native
+    val vpcEndpointId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpcEndpointSubnetAssociationState {
     

@@ -2,20 +2,18 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an action taken by the user that triggered a notification.
   */
-@js.native
 trait SchemaUserAction extends StObject {
   
   /**
     * An optional payload for the action.  For actions of type CUSTOM, this is
     * the ID of the custom menu item that was selected.
     */
-  var payload: js.UndefOr[String] = js.native
+  var payload: js.UndefOr[String] = js.undefined
   
   /**
     * The type of action. The value of this can be:   - SHARE - the user shared
@@ -27,7 +25,7 @@ trait SchemaUserAction extends StObject {
     * additional types may be added. UserActions with unrecognized types should
     * be ignored.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaUserAction {
   

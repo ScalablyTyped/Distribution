@@ -4,33 +4,33 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.router5TransitionPath.anon.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionPathMod {
   
-  @JSImport("router5-transition-path/dist/transitionPath", JSImport.Default)
+  @JSImport("router5-transition-path/dist/transitionPath", JSImport.Namespace)
   @js.native
-  def default(toState: State): TransitionPath = js.native
-  @JSImport("router5-transition-path/dist/transitionPath", JSImport.Default)
-  @js.native
-  def default(toState: State, fromState: State): TransitionPath = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("router5-transition-path/dist/transitionPath", "nameToIDs")
-  @js.native
-  def nameToIDs(name: String): js.Array[String] = js.native
+  @scala.inline
+  def default(toState: State): TransitionPath = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(toState.asInstanceOf[js.Any]).asInstanceOf[TransitionPath]
+  @scala.inline
+  def default(toState: State, fromState: State): TransitionPath = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(toState.asInstanceOf[js.Any], fromState.asInstanceOf[js.Any])).asInstanceOf[TransitionPath]
+  
+  @scala.inline
+  def nameToIDs(name: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("nameToIDs")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   type SegementParams = StringDictionary[String]
   
-  @js.native
   trait State
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var meta: js.UndefOr[Options] = js.native
+    var meta: js.UndefOr[Options] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object State {
     
@@ -60,14 +60,13 @@ object transitionPathMod {
     }
   }
   
-  @js.native
   trait TransitionPath extends StObject {
     
-    var intersection: String = js.native
+    var intersection: String
     
-    var toActivate: js.Array[String] = js.native
+    var toActivate: js.Array[String]
     
-    var toDeactivate: js.Array[String] = js.native
+    var toDeactivate: js.Array[String]
   }
   object TransitionPath {
     

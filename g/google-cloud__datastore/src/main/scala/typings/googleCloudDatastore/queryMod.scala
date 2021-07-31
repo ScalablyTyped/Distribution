@@ -10,7 +10,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryMod {
@@ -56,10 +55,9 @@ object queryMod {
   
   type NoMoreResults = NO_MORE_RESULTS
   
-  @js.native
   trait OrderOptions extends StObject {
     
-    var descending: Boolean = js.native
+    var descending: Boolean
   }
   object OrderOptions {
     
@@ -105,12 +103,11 @@ object queryMod {
     def LessthansignEqualssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.LessthansignEqualssign]
   }
   
-  @js.native
   trait QueryInfo extends StObject {
     
-    var endCursor: js.UndefOr[String] = js.native
+    var endCursor: js.UndefOr[String] = js.undefined
     
-    val moreResults: MoreResultsAfterCursor | MoreResultsAfterLimit | NoMoreResults = js.native
+    val moreResults: MoreResultsAfterCursor | MoreResultsAfterLimit | NoMoreResults
   }
   object QueryInfo {
     
@@ -134,12 +131,11 @@ object queryMod {
     }
   }
   
-  @js.native
   trait QueryOptions extends StObject {
     
-    var consistency: js.UndefOr[strong | eventual] = js.native
+    var consistency: js.UndefOr[strong | eventual] = js.undefined
     
-    var maxApiCalls: js.UndefOr[Double] = js.native
+    var maxApiCalls: js.UndefOr[Double] = js.undefined
   }
   object QueryOptions {
     

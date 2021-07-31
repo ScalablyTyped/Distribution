@@ -2,16 +2,14 @@ package typings.awsSdk.augmentedairuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HumanLoopOutput extends StObject {
   
   /**
     * The location of the Amazon S3 object where Amazon Augmented AI stores your human loop output.
     */
-  var OutputS3Uri: String = js.native
+  var OutputS3Uri: String
 }
 object HumanLoopOutput {
   

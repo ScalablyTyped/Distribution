@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import typings.mendixmodelsdk.securityMod.security.IModuleRole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -109,9 +108,8 @@ object PublishedRestService {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestService.createIn")
-  @js.native
-  def createIn(container: IFolderBase): PublishedRestService = js.native
+  @scala.inline
+  def createIn(container: IFolderBase): PublishedRestService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedRestService]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestService.structureTypeName")

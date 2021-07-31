@@ -2,16 +2,14 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppProps extends StObject {
   
   /**
     * Called when the quit menu item is called, right before the entire app quits.
     */
-  var onShouldQuit: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShouldQuit: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object AppProps {
   

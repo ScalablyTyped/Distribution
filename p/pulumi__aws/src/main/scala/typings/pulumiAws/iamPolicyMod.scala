@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iamPolicyMod {
@@ -60,6 +59,10 @@ object iamPolicyMod {
   /* static members */
   object Policy {
     
+    @JSImport("@pulumi/aws/iam/policy", "Policy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Policy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -69,56 +72,50 @@ object iamPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Policy = js.native
-    @JSImport("@pulumi/aws/iam/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Policy = js.native
-    @JSImport("@pulumi/aws/iam/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyState): Policy = js.native
-    @JSImport("@pulumi/aws/iam/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): Policy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyState): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Policy]
     
     /**
       * Returns true if the given object is an instance of Policy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/policy", "Policy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/policy.Policy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/policy.Policy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/policy.Policy */ Boolean]
   }
   
-  @js.native
   trait PolicyArgs extends StObject {
     
     /**
       * Description of the IAM policy.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the policy. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Path in which to create the policy.
       * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The policy document. This is a JSON formatted string.
       */
-    val policy: Input[String | PolicyDocument] = js.native
+    val policy: Input[String | PolicyDocument]
   }
   object PolicyArgs {
     
@@ -160,39 +157,38 @@ object iamPolicyMod {
     }
   }
   
-  @js.native
   trait PolicyState extends StObject {
     
     /**
       * The ARN assigned by AWS to this policy.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the IAM policy.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the policy. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Path in which to create the policy.
       * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The policy document. This is a JSON formatted string.
       */
-    val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
+    val policy: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
   }
   object PolicyState {
     

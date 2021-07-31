@@ -12,7 +12,6 @@ import typings.sipJs.sessionMod.Session
 import typings.sipJs.userAgentMod.UserAgent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inviterMod {

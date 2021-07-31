@@ -6,23 +6,23 @@ import typings.figma.figmaStrings.GRADIENT_LINEAR
 import typings.figma.figmaStrings.GRADIENT_RADIAL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GradientPaint extends Paint {
+trait GradientPaint
+  extends StObject
+     with Paint {
   
-  val blendMode: js.UndefOr[BlendMode] = js.native
+  val blendMode: js.UndefOr[BlendMode] = js.undefined
   
-  val gradientStops: js.Array[ColorStop] = js.native
+  val gradientStops: js.Array[ColorStop]
   
-  val gradientTransform: Transform = js.native
+  val gradientTransform: Transform
   
-  val opacity: js.UndefOr[Double] = js.native
+  val opacity: js.UndefOr[Double] = js.undefined
   
-  val `type`: GRADIENT_LINEAR | GRADIENT_RADIAL | GRADIENT_ANGULAR | GRADIENT_DIAMOND = js.native
+  val `type`: GRADIENT_LINEAR | GRADIENT_RADIAL | GRADIENT_ANGULAR | GRADIENT_DIAMOND
   
-  val visible: js.UndefOr[Boolean] = js.native
+  val visible: js.UndefOr[Boolean] = js.undefined
 }
 object GradientPaint {
   

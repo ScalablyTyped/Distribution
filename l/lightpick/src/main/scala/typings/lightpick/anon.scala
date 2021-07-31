@@ -2,18 +2,16 @@ package typings.lightpick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<lightpick.lightpick.Options.Locale.PluralizeFnLocale> */
-  @js.native
   trait PartialPluralizeFnLocale extends StObject {
     
-    var one: js.UndefOr[String] = js.native
+    var one: js.UndefOr[String] = js.undefined
     
-    var other: js.UndefOr[String] = js.native
+    var other: js.UndefOr[String] = js.undefined
   }
   object PartialPluralizeFnLocale {
     

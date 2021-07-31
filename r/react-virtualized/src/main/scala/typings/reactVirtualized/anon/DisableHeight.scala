@@ -3,23 +3,21 @@ package typings.reactVirtualized.anon
 import typings.reactVirtualized.reactVirtualizedBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableHeight extends StObject {
   
-  var disableHeight: `false` = js.native
+  var disableHeight: `false`
   
-  var disableWidth: `false` = js.native
+  var disableWidth: `false`
   
-  def onResize(): Unit = js.native
+  def onResize(): Unit
 }
 object DisableHeight {
   
   @scala.inline
-  def apply(disableHeight: `false`, disableWidth: `false`, onResize: () => Unit): DisableHeight = {
-    val __obj = js.Dynamic.literal(disableHeight = disableHeight.asInstanceOf[js.Any], disableWidth = disableWidth.asInstanceOf[js.Any], onResize = js.Any.fromFunction0(onResize))
+  def apply(onResize: () => Unit): DisableHeight = {
+    val __obj = js.Dynamic.literal(disableHeight = false, disableWidth = false, onResize = js.Any.fromFunction0(onResize))
     __obj.asInstanceOf[DisableHeight]
   }
   

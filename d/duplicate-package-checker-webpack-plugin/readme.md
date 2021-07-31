@@ -11,8 +11,8 @@ Webpack plugin that warns you when multiple versions of the same package exist i
 | Full name          | duplicate-package-checker-webpack-plugin |
 | Keywords           | webpack, plugin |
 | # releases         | 0 |
-| # dependents       | 84 |
-| # downloads        | 6656348 |
+| # dependents       | 90 |
+| # downloads        | 8300636 |
 | # stars            | 5 |
 
 ## Links

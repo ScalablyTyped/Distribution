@@ -2,19 +2,17 @@ package typings.tampermonkey.Tampermonkey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenTabObject extends StObject {
   
   /** Closes tab */
-  def close(): Unit = js.native
+  def close(): Unit
   
-  var closed: Boolean = js.native
+  var closed: Boolean
   
   /** Set closed listener */
-  var onclosed: js.UndefOr[js.Function0[Unit]] = js.native
+  var onclosed: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object OpenTabObject {
   

@@ -2,22 +2,20 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContentsSuccessCallbackResult extends StObject {
   
   /** 表示内容的delta对象 */
-  var delta: IAnyObject = js.native
+  var delta: IAnyObject
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 带标签的HTML内容 */
-  var html: String = js.native
+  var html: String
   
   /** 纯文本内容 */
-  var text: String = js.native
+  var text: String
 }
 object GetContentsSuccessCallbackResult {
   

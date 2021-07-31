@@ -2,19 +2,17 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RegionInstanceGroupManagers.createInstances
   */
-@js.native
 trait SchemaRegionInstanceGroupManagersCreateInstancesRequest extends StObject {
   
   /**
     * [Required] List of specifications of per-instance configs.
     */
-  var instances: js.UndefOr[js.Array[SchemaPerInstanceConfig]] = js.native
+  var instances: js.UndefOr[js.Array[SchemaPerInstanceConfig]] = js.undefined
 }
 object SchemaRegionInstanceGroupManagersCreateInstancesRequest {
   

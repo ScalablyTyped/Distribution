@@ -2,16 +2,14 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterContainerInstanceResponse extends StObject {
   
   /**
     * The container instance that was deregistered.
     */
-  var containerInstance: js.UndefOr[ContainerInstance] = js.native
+  var containerInstance: js.UndefOr[ContainerInstance] = js.undefined
 }
 object DeregisterContainerInstanceResponse {
   

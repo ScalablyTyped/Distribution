@@ -10,9 +10,9 @@ Simple, scalable state management.
 | ------------------ | :-------------: |
 | Full name          | mobx |
 | Keywords           | mobx, mobservable, observable, react-component, react, reactjs, reactive, model, frp, functional-reactive-programming, state management, data flow |
-| # releases         | 60 |
-| # dependents       | 1377 |
-| # downloads        | 19329303 |
+| # releases         | 59 |
+| # dependents       | 1517 |
+| # downloads        | 23685097 |
 | # stars            | 39 |
 
 ## Links

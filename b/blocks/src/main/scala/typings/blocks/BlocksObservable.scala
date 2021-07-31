@@ -2,14 +2,15 @@ package typings.blocks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////////////////////
 // blocks observable
 /////////////////////////////////////////
 @js.native
-trait BlocksObservable extends Extendable[BlocksObservable] {
+trait BlocksObservable
+  extends StObject
+     with Extendable[BlocksObservable] {
   
   def apply(arg: js.Any): BlocksObservable = js.native
   

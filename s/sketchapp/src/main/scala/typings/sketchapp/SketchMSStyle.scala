@@ -3,60 +3,57 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSStyle extends StObject {
   
-  var _class: style = js.native
+  var _class: style
   
-  var blur: js.UndefOr[SketchMSStyleBlur] = js.native
+  var blur: js.UndefOr[SketchMSStyleBlur] = js.undefined
   
-  var borderOptions: js.UndefOr[SketchMSStyleBorderOptions] = js.native
+  var borderOptions: js.UndefOr[SketchMSStyleBorderOptions] = js.undefined
   
-  var borders: js.UndefOr[js.Array[SketchMSStyleBorder]] = js.native
+  var borders: js.UndefOr[js.Array[SketchMSStyleBorder]] = js.undefined
   
-  var colorControls: js.UndefOr[SketchMSStyleColorControls] = js.native
+  var colorControls: js.UndefOr[SketchMSStyleColorControls] = js.undefined
   
-  var contextSettings: js.UndefOr[SketchMSGraphicsContextSettings] = js.native
+  var contextSettings: js.UndefOr[SketchMSGraphicsContextSettings] = js.undefined
   
-  var do_objectID: String = js.native
+  var do_objectID: String
   
-  var endDecorationType: js.UndefOr[Double] = js.native
+  var endDecorationType: js.UndefOr[Double] = js.undefined
   
-  var endMarkerType: Double = js.native
+  var endMarkerType: Double
   
-  var fills: js.UndefOr[js.Array[SketchMSStyleFill]] = js.native
+  var fills: js.UndefOr[js.Array[SketchMSStyleFill]] = js.undefined
   
-  var innerShadows: js.UndefOr[js.Array[SketchMSStyleShadow]] = js.native
+  var innerShadows: js.UndefOr[js.Array[SketchMSStyleShadow]] = js.undefined
   
-  var miterLimit: Double = js.native
+  var miterLimit: Double
   
-  var reflection: js.UndefOr[SketchMSStyleReflection] = js.native
+  var reflection: js.UndefOr[SketchMSStyleReflection] = js.undefined
   
-  var shadows: js.UndefOr[js.Array[SketchMSStyleShadow]] = js.native
+  var shadows: js.UndefOr[js.Array[SketchMSStyleShadow]] = js.undefined
   
-  var startDecorationType: js.UndefOr[Double] = js.native
+  var startDecorationType: js.UndefOr[Double] = js.undefined
   
-  var startMarkerType: Double = js.native
+  var startMarkerType: Double
   
-  var textStyle: js.UndefOr[SketchMSTextStyle] = js.native
+  var textStyle: js.UndefOr[SketchMSTextStyle] = js.undefined
   
-  var windingRule: Double = js.native
+  var windingRule: Double
 }
 object SketchMSStyle {
   
   @scala.inline
   def apply(
-    _class: style,
     do_objectID: String,
     endMarkerType: Double,
     miterLimit: Double,
     startMarkerType: Double,
     windingRule: Double
   ): SketchMSStyle = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], do_objectID = do_objectID.asInstanceOf[js.Any], endMarkerType = endMarkerType.asInstanceOf[js.Any], miterLimit = miterLimit.asInstanceOf[js.Any], startMarkerType = startMarkerType.asInstanceOf[js.Any], windingRule = windingRule.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "style", do_objectID = do_objectID.asInstanceOf[js.Any], endMarkerType = endMarkerType.asInstanceOf[js.Any], miterLimit = miterLimit.asInstanceOf[js.Any], startMarkerType = startMarkerType.asInstanceOf[js.Any], windingRule = windingRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyle]
   }
   

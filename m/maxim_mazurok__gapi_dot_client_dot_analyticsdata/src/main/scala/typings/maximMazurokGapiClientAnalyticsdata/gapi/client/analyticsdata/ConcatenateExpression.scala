@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConcatenateExpression extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait ConcatenateExpression extends StObject {
     * will be present in response with no distinction. For example if dimension 1 value = "US,FR", dimension 2 value = "JP", and delimiter = ",", then the response will contain
     * "US,FR,JP".
     */
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
   /** Names of dimensions. The names must refer back to names in the dimensions field of the request. */
-  var dimensionNames: js.UndefOr[js.Array[String]] = js.native
+  var dimensionNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConcatenateExpression {
   

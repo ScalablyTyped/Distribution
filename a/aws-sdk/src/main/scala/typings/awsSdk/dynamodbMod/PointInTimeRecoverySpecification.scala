@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointInTimeRecoverySpecification extends StObject {
   
   /**
     * Indicates whether point in time recovery is enabled (true) or disabled (false) on the table.
     */
-  var PointInTimeRecoveryEnabled: BooleanObject = js.native
+  var PointInTimeRecoveryEnabled: BooleanObject
 }
 object PointInTimeRecoverySpecification {
   

@@ -12,7 +12,7 @@ The lodash method `_.isError` exported as a module.
 | Keywords           | lodash-modularized, iserror |
 | # releases         | 0 |
 | # dependents       | 39 |
-| # downloads        | 2854321 |
+| # downloads        | 3915584 |
 | # stars            | 0 |
 
 ## Links

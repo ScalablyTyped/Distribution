@@ -2,17 +2,15 @@ package typings.cordovaSqliteStorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Item extends StObject {
     
-    def item(i: Double): js.Any = js.native
+    def item(i: Double): js.Any
     
-    var length: Double = js.native
+    var length: Double
   }
   object Item {
     

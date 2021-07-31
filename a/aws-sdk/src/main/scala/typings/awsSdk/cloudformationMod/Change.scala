@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Change extends StObject {
   
   /**
     * A ResourceChange structure that describes the resource and action that AWS CloudFormation will perform.
     */
-  var ResourceChange: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceChange] = js.native
+  var ResourceChange: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceChange] = js.undefined
   
   /**
     * The type of entity that AWS CloudFormation changes. Currently, the only entity type is Resource.
     */
-  var Type: js.UndefOr[ChangeType] = js.native
+  var Type: js.UndefOr[ChangeType] = js.undefined
 }
 object Change {
   

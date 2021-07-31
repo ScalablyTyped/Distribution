@@ -2,26 +2,24 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteError extends StObject {
   
   /**
     * Write concern error code.
     */
-  var code: scala.Double = js.native
+  var code: scala.Double
   
   /**
     * Write concern error message.
     */
-  var errmsg: String = js.native
+  var errmsg: String
   
   /**
     * Write concern error original bulk operation index.
     */
-  var index: scala.Double = js.native
+  var index: scala.Double
 }
 object WriteError {
   

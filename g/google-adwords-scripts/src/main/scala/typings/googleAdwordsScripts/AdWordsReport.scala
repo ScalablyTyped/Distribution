@@ -3,18 +3,16 @@ package typings.googleAdwordsScripts
 import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Sheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Reports
-@js.native
 trait AdWordsReport extends StObject {
   
-  def exportToSheet(sheet: Sheet): Unit = js.native
+  def exportToSheet(sheet: Sheet): Unit
   
-  def getColumnHeader(awqlColumnName: String): AdWordsReportColumnHeader = js.native
+  def getColumnHeader(awqlColumnName: String): AdWordsReportColumnHeader
   
-  def rows(): AdWordsReportRowIterator = js.native
+  def rows(): AdWordsReportRowIterator
 }
 object AdWordsReport {
   

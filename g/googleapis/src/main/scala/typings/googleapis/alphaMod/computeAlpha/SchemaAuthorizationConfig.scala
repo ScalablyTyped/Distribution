@@ -2,20 +2,18 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Authorization configuration provides service-level and method-level access
   * control for a service.
   */
-@js.native
 trait SchemaAuthorizationConfig extends StObject {
   
   /**
     * List of RbacPolicies.
     */
-  var policies: js.UndefOr[js.Array[SchemaRbacPolicy]] = js.native
+  var policies: js.UndefOr[js.Array[SchemaRbacPolicy]] = js.undefined
 }
 object SchemaAuthorizationConfig {
   

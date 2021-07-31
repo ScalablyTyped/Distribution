@@ -2,15 +2,13 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SjclECCPublicKeyData extends StObject {
   
-  var x: BitArray_ = js.native
+  var x: BitArray_
   
-  var y: BitArray_ = js.native
+  var y: BitArray_
 }
 object SjclECCPublicKeyData {
   

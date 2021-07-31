@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersonalUsagePolicies extends StObject {
   
   /** Account types that can't be managed by the user. */
-  var accountTypesWithManagementDisabled: js.UndefOr[js.Array[String]] = js.native
+  var accountTypesWithManagementDisabled: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether camera is disabled. */
-  var cameraDisabled: js.UndefOr[Boolean] = js.native
+  var cameraDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Controls how long the work profile can stay off. */
-  var maxDaysWithWorkOff: js.UndefOr[Double] = js.native
+  var maxDaysWithWorkOff: js.UndefOr[Double] = js.undefined
   
   /** Policy applied to applications in the personal profile. */
-  var personalApplications: js.UndefOr[js.Array[PersonalApplicationPolicy]] = js.native
+  var personalApplications: js.UndefOr[js.Array[PersonalApplicationPolicy]] = js.undefined
   
   /** Used together with personalApplications to control how apps in the personal profile are allowed or blocked. */
-  var personalPlayStoreMode: js.UndefOr[String] = js.native
+  var personalPlayStoreMode: js.UndefOr[String] = js.undefined
   
   /** Whether screen capture is disabled. */
-  var screenCaptureDisabled: js.UndefOr[Boolean] = js.native
+  var screenCaptureDisabled: js.UndefOr[Boolean] = js.undefined
 }
 object PersonalUsagePolicies {
   

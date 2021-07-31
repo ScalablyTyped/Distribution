@@ -7,37 +7,35 @@ import typings.keepNetworkTbtcJs.electrumClientMod.default
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ACTIVE extends StObject {
     
-    var ACTIVE: Double = js.native
+    var ACTIVE: Double
     
-    var AWAITING_BTC_FUNDING_PROOF: Double = js.native
+    var AWAITING_BTC_FUNDING_PROOF: Double
     
-    var AWAITING_SIGNER_SETUP: Double = js.native
+    var AWAITING_SIGNER_SETUP: Double
     
-    var AWAITING_WITHDRAWAL_PROOF: Double = js.native
+    var AWAITING_WITHDRAWAL_PROOF: Double
     
-    var AWAITING_WITHDRAWAL_SIGNATURE: Double = js.native
+    var AWAITING_WITHDRAWAL_SIGNATURE: Double
     
-    var COURTESY_CALL: Double = js.native
+    var COURTESY_CALL: Double
     
-    var FAILED_SETUP: Double = js.native
+    var FAILED_SETUP: Double
     
-    var FRAUD_LIQUIDATION_IN_PROGRESS: Double = js.native
+    var FRAUD_LIQUIDATION_IN_PROGRESS: Double
     
-    var LIQUIDATED: Double = js.native
+    var LIQUIDATED: Double
     
-    var LIQUIDATION_IN_PROGRESS: Double = js.native
+    var LIQUIDATION_IN_PROGRESS: Double
     
-    var REDEEMED: Double = js.native
+    var REDEEMED: Double
     
-    var START: Double = js.native
+    var START: Double
   }
   object ACTIVE {
     
@@ -101,40 +99,39 @@ object anon {
     }
   }
   
-  @js.native
   trait AddWitnessSignature extends StObject {
     
-    def addWitnessSignature(unsignedTransaction: String, inputIndex: Double, r: String, s: String, publicKey: String): String = js.native
+    def addWitnessSignature(unsignedTransaction: String, inputIndex: Double, r: String, s: String, publicKey: String): String
     
-    def broadcast(signedTransaction: String): js.Promise[TransactionID] = js.native
+    def broadcast(signedTransaction: String): js.Promise[TransactionID]
     
-    def checkForConfirmations(transactionID: String, requiredConfirmations: Double): js.Promise[Double] = js.native
+    def checkForConfirmations(transactionID: String, requiredConfirmations: Double): js.Promise[Double]
     
-    def constructOneInputOneOutputWitnessTransaction(previousOutpoint: String, inputSequence: Double, outputValue: Double, outputScript: String): String = js.native
+    def constructOneInputOneOutputWitnessTransaction(previousOutpoint: String, inputSequence: Double, outputValue: Double, outputScript: String): String
     
-    def estimateFee(tbtcConstantsContract: js.Any): js.Promise[Double] = js.native
+    def estimateFee(tbtcConstantsContract: js.Any): js.Promise[Double]
     
-    def find(bitcoinAddress: String, expectedValue: Double): js.Promise[FoundTransaction] = js.native
+    def find(bitcoinAddress: String, expectedValue: Double): js.Promise[FoundTransaction]
     
-    def findAllUnspent(bitcoinAddress: String): js.Promise[js.Array[FoundTransaction]] = js.native
+    def findAllUnspent(bitcoinAddress: String): js.Promise[js.Array[FoundTransaction]]
     
-    def findAllUnspentWithClient(electrumClient: default, receiverScript: String): js.Promise[js.Array[FoundTransaction]] = js.native
+    def findAllUnspentWithClient(electrumClient: default, receiverScript: String): js.Promise[js.Array[FoundTransaction]]
     
-    def findOrWaitFor(bitcoinAddress: String, expectedValue: Double): js.Promise[FoundTransaction] = js.native
+    def findOrWaitFor(bitcoinAddress: String, expectedValue: Double): js.Promise[FoundTransaction]
     
-    def findScript(outputScript: String, expectedValue: Double): js.Promise[FoundTransaction] = js.native
+    def findScript(outputScript: String, expectedValue: Double): js.Promise[FoundTransaction]
     
-    def findWithClient(electrumClient: default, receiverScript: String, expectedValue: Double): js.Promise[js.UndefOr[FoundTransaction]] = js.native
+    def findWithClient(electrumClient: default, receiverScript: String, expectedValue: Double): js.Promise[js.UndefOr[FoundTransaction]]
     
-    def getBalance(bitcoinAddress: String): js.Promise[Double] = js.native
+    def getBalance(bitcoinAddress: String): js.Promise[Double]
     
-    def getSPVProof(transactionID: String, confirmations: Double): js.Promise[SPVProof] = js.native
+    def getSPVProof(transactionID: String, confirmations: Double): js.Promise[SPVProof]
     
     def waitForConfirmations(
       transactionID: String,
       requiredConfirmations: Double,
       onReceivedConfirmation: js.Function1[/* tx */ Confirmations, Unit]
-    ): js.Promise[Double] = js.native
+    ): js.Promise[Double]
   }
   object AddWitnessSignature {
     
@@ -206,10 +203,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Address extends StObject {
     
-    var address: String = js.native
+    var address: String
   }
   object Address {
     
@@ -227,12 +223,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Confirmations extends StObject {
     
-    var confirmations: Double = js.native
+    var confirmations: Double
     
-    var transactionID: String = js.native
+    var transactionID: String
   }
   object Confirmations {
     
@@ -253,12 +248,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DepositAddress extends StObject {
     
-    var depositAddress: String = js.native
+    var depositAddress: String
     
-    var keepAddress: String = js.native
+    var keepAddress: String
   }
   object DepositAddress {
     
@@ -279,18 +273,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Digest extends StObject {
     
-    var _digest: String = js.native
+    var _digest: String
     
-    var _outpoint: String = js.native
+    var _outpoint: String
     
-    var _redeemerOutputScript: String = js.native
+    var _redeemerOutputScript: String
     
-    var _requestedFee: String = js.native
+    var _requestedFee: String
     
-    var _utxoValue: String = js.native
+    var _utxoValue: String
   }
   object Digest {
     
@@ -326,16 +319,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Locktime extends StObject {
     
-    var locktime: js.Any = js.native
+    var locktime: js.Any
     
-    var txInVector: js.Any = js.native
+    var txInVector: js.Any
     
-    var txOutVector: js.Any = js.native
+    var txOutVector: js.Any
     
-    var version: js.Any = js.native
+    var version: js.Any
   }
   object Locktime {
     
@@ -362,14 +354,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MAINNET extends StObject {
     
-    var MAINNET: String = js.native
+    var MAINNET: String
     
-    var SIMNET: String = js.native
+    var SIMNET: String
     
-    var TESTNET: String = js.native
+    var TESTNET: String
   }
   object MAINNET {
     
@@ -394,12 +385,11 @@ object anon {
   }
   
   /* Inlined std.Omit<@keep-network/tbtc.js.@keep-network/tbtc.js/src/BitcoinHelpers.FoundTransaction, 'value'> */
-  @js.native
   trait OmitFoundTransactionvalue extends StObject {
     
-    var outputPosition: Double = js.native
+    var outputPosition: Double
     
-    var transactionID: String = js.native
+    var transactionID: String
   }
   object OmitFoundTransactionvalue {
     
@@ -420,20 +410,19 @@ object anon {
     }
   }
   
-  @js.native
   trait PubKeyHashFrom extends StObject {
     
-    def pubKeyHashFrom(address: String): Buffer | Null = js.native
+    def pubKeyHashFrom(address: String): Buffer | Null
     
-    def pubKeyHashToBech32(pubKeyHash: String, network: BitcoinNetworkType): String = js.native
+    def pubKeyHashToBech32(pubKeyHash: String, network: BitcoinNetworkType): String
     
-    def publicKeyPointToP2WPKHAddress(publicKeyX: String, publicKeyY: String, bitcoinNetwork: BitcoinNetworkType): String = js.native
+    def publicKeyPointToP2WPKHAddress(publicKeyX: String, publicKeyY: String, bitcoinNetwork: BitcoinNetworkType): String
     
-    def publicKeyToP2WPKHAddress(publicKeyString: String, network: BitcoinNetworkType): String = js.native
+    def publicKeyToP2WPKHAddress(publicKeyString: String, network: BitcoinNetworkType): String
     
-    def toRawScript(address: String): Buffer = js.native
+    def toRawScript(address: String): Buffer
     
-    def toScript(address: String): String = js.native
+    def toScript(address: String): String
   }
   object PubKeyHashFrom {
     
@@ -473,12 +462,11 @@ object anon {
     }
   }
   
-  @js.native
   trait RequiredConfirmations extends StObject {
     
-    var requiredConfirmations: Double = js.native
+    var requiredConfirmations: Double
     
-    var transaction: FoundTransaction = js.native
+    var transaction: FoundTransaction
   }
   object RequiredConfirmations {
     
@@ -499,12 +487,11 @@ object anon {
     }
   }
   
-  @js.native
   trait RequiredConfirmationsTransactionID extends StObject {
     
-    var requiredConfirmations: Double = js.native
+    var requiredConfirmations: Double
     
-    var transactionID: String = js.native
+    var transactionID: String
   }
   object RequiredConfirmationsTransactionID {
     
@@ -525,10 +512,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TransactionID extends StObject {
     
-    var transactionID: String = js.native
+    var transactionID: String
   }
   object TransactionID {
     

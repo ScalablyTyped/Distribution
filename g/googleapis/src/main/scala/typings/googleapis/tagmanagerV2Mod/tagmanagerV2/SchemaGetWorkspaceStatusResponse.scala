@@ -2,25 +2,23 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The changes that have occurred in the workspace since the base container
   * version.
   */
-@js.native
 trait SchemaGetWorkspaceStatusResponse extends StObject {
   
   /**
     * The merge conflict after sync.
     */
-  var mergeConflict: js.UndefOr[js.Array[SchemaMergeConflict]] = js.native
+  var mergeConflict: js.UndefOr[js.Array[SchemaMergeConflict]] = js.undefined
   
   /**
     * Entities that have been changed in the workspace.
     */
-  var workspaceChange: js.UndefOr[js.Array[SchemaEntity]] = js.native
+  var workspaceChange: js.UndefOr[js.Array[SchemaEntity]] = js.undefined
 }
 object SchemaGetWorkspaceStatusResponse {
   

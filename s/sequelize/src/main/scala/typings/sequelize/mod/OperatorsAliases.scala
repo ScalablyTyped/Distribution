@@ -2,117 +2,115 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{[key: string] : symbol,   $eq :symbol,   $ne :symbol,   $gte :symbol,   $gt :symbol,   $lte :symbol,   $lt :symbol,   $not :symbol,   $in :symbol,   $notIn :symbol,   $is :symbol,   $like :symbol,   $notLike :symbol,   $iLike :symbol,   $notILike :symbol,   $regexp :symbol,   $notRegexp :symbol,   $iRegexp :symbol,   $notIRegexp :symbol,   $between :symbol,   $notBetween :symbol,   $overlap :symbol,   $contains :symbol,   $contained :symbol,   $adjacent :symbol,   $strictLeft :symbol,   $strictRight :symbol,   $noExtendRight :symbol,   $noExtendLeft :symbol,   $and :symbol,   $or :symbol,   $any :symbol,   $all :symbol,   $values :symbol,   $col :symbol,   $raw :symbol}> */
-@js.native
 trait OperatorsAliases extends StObject {
   
   @JSName("$adjacent")
-  var $adjacent: js.UndefOr[js.Symbol] = js.native
+  var $adjacent: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$all")
-  var $all: js.UndefOr[js.Symbol] = js.native
+  var $all: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$and")
-  var $and: js.UndefOr[js.Symbol] = js.native
+  var $and: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$any")
-  var $any: js.UndefOr[js.Symbol] = js.native
+  var $any: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$between")
-  var $between: js.UndefOr[js.Symbol] = js.native
+  var $between: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$col")
-  var $col: js.UndefOr[js.Symbol] = js.native
+  var $col: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$contained")
-  var $contained: js.UndefOr[js.Symbol] = js.native
+  var $contained: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$contains")
-  var $contains: js.UndefOr[js.Symbol] = js.native
+  var $contains: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$eq")
-  var $eq: js.UndefOr[js.Symbol] = js.native
+  var $eq: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$gt")
-  var $gt: js.UndefOr[js.Symbol] = js.native
+  var $gt: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$gte")
-  var $gte: js.UndefOr[js.Symbol] = js.native
+  var $gte: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$iLike")
-  var $iLike: js.UndefOr[js.Symbol] = js.native
+  var $iLike: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$iRegexp")
-  var $iRegexp: js.UndefOr[js.Symbol] = js.native
+  var $iRegexp: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$in")
-  var $in: js.UndefOr[js.Symbol] = js.native
+  var $in: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$is")
-  var $is: js.UndefOr[js.Symbol] = js.native
+  var $is: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$like")
-  var $like: js.UndefOr[js.Symbol] = js.native
+  var $like: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$lt")
-  var $lt: js.UndefOr[js.Symbol] = js.native
+  var $lt: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$lte")
-  var $lte: js.UndefOr[js.Symbol] = js.native
+  var $lte: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$ne")
-  var $ne: js.UndefOr[js.Symbol] = js.native
+  var $ne: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$noExtendLeft")
-  var $noExtendLeft: js.UndefOr[js.Symbol] = js.native
+  var $noExtendLeft: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$noExtendRight")
-  var $noExtendRight: js.UndefOr[js.Symbol] = js.native
+  var $noExtendRight: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$not")
-  var $not: js.UndefOr[js.Symbol] = js.native
+  var $not: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$notBetween")
-  var $notBetween: js.UndefOr[js.Symbol] = js.native
+  var $notBetween: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$notILike")
-  var $notILike: js.UndefOr[js.Symbol] = js.native
+  var $notILike: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$notIRegexp")
-  var $notIRegexp: js.UndefOr[js.Symbol] = js.native
+  var $notIRegexp: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$notIn")
-  var $notIn: js.UndefOr[js.Symbol] = js.native
+  var $notIn: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$notLike")
-  var $notLike: js.UndefOr[js.Symbol] = js.native
+  var $notLike: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$notRegexp")
-  var $notRegexp: js.UndefOr[js.Symbol] = js.native
+  var $notRegexp: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$or")
-  var $or: js.UndefOr[js.Symbol] = js.native
+  var $or: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$overlap")
-  var $overlap: js.UndefOr[js.Symbol] = js.native
+  var $overlap: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$raw")
-  var $raw: js.UndefOr[js.Symbol] = js.native
+  var $raw: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$regexp")
-  var $regexp: js.UndefOr[js.Symbol] = js.native
+  var $regexp: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$strictLeft")
-  var $strictLeft: js.UndefOr[js.Symbol] = js.native
+  var $strictLeft: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$strictRight")
-  var $strictRight: js.UndefOr[js.Symbol] = js.native
+  var $strictRight: js.UndefOr[js.Symbol] = js.undefined
   
   @JSName("$values")
-  var $values: js.UndefOr[js.Symbol] = js.native
+  var $values: js.UndefOr[js.Symbol] = js.undefined
 }
 object OperatorsAliases {
   

@@ -5,47 +5,45 @@ import typings.yandexMaps.yandexMapsStrings.ifNull
 import typings.yandexMaps.yandexMapsStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMapOptions extends StObject {
   
-  var autoFitToViewport: js.UndefOr[none | ifNull | always] = js.native
+  var autoFitToViewport: js.UndefOr[none | ifNull | always] = js.undefined
   
-  var avoidFractionalZoom: js.UndefOr[Boolean] = js.native
+  var avoidFractionalZoom: js.UndefOr[Boolean] = js.undefined
   
-  var copyrightLogoVisible: js.UndefOr[Boolean] = js.native
+  var copyrightLogoVisible: js.UndefOr[Boolean] = js.undefined
   
-  var copyrightProvidersVisible: js.UndefOr[Boolean] = js.native
+  var copyrightProvidersVisible: js.UndefOr[Boolean] = js.undefined
   
-  var copyrightUaVisible: js.UndefOr[Boolean] = js.native
+  var copyrightUaVisible: js.UndefOr[Boolean] = js.undefined
   
-  var exitFullscreenByEsc: js.UndefOr[Boolean] = js.native
+  var exitFullscreenByEsc: js.UndefOr[Boolean] = js.undefined
   
-  var fullscreenZIndex: js.UndefOr[Double] = js.native
+  var fullscreenZIndex: js.UndefOr[Double] = js.undefined
   
-  var mapAutoFocus: js.UndefOr[Boolean] = js.native
+  var mapAutoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var maxAnimationZoomDifference: js.UndefOr[Double] = js.native
+  var maxAnimationZoomDifference: js.UndefOr[Double] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var nativeFullscreen: js.UndefOr[Boolean] = js.native
+  var nativeFullscreen: js.UndefOr[Boolean] = js.undefined
   
-  var projection: js.UndefOr[IProjection] = js.native
+  var projection: js.UndefOr[IProjection] = js.undefined
   
-  var restrictMapArea: js.UndefOr[Boolean] = js.native
+  var restrictMapArea: js.UndefOr[Boolean] = js.undefined
   
-  var suppressMapOpenBlock: js.UndefOr[Boolean] = js.native
+  var suppressMapOpenBlock: js.UndefOr[Boolean] = js.undefined
   
-  var suppressObsoleteBrowserNotifier: js.UndefOr[Boolean] = js.native
+  var suppressObsoleteBrowserNotifier: js.UndefOr[Boolean] = js.undefined
   
-  var yandexMapAutoSwitch: js.UndefOr[Boolean] = js.native
+  var yandexMapAutoSwitch: js.UndefOr[Boolean] = js.undefined
   
-  var yandexMapDisablePoiInteractivity: js.UndefOr[Boolean] = js.native
+  var yandexMapDisablePoiInteractivity: js.UndefOr[Boolean] = js.undefined
 }
 object IMapOptions {
   

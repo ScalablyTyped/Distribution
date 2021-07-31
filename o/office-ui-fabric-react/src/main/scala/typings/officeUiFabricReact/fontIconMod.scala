@@ -5,43 +5,39 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fontIconMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/Icon/FontIcon", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/Icon/FontIcon", "FontIcon")
   @js.native
   val FontIcon: FunctionComponent[IFontIconProps] = js.native
   
-  @JSImport("office-ui-fabric-react/lib/components/Icon/FontIcon", "getFontIcon")
-  @js.native
-  def getFontIcon(iconName: String): ReactElement | Null = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Icon/FontIcon", "getFontIcon")
-  @js.native
-  def getFontIcon(iconName: String, className: js.UndefOr[scala.Nothing], ariaLabel: String): ReactElement | Null = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Icon/FontIcon", "getFontIcon")
-  @js.native
-  def getFontIcon(iconName: String, className: String): ReactElement | Null = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Icon/FontIcon", "getFontIcon")
-  @js.native
-  def getFontIcon(iconName: String, className: String, ariaLabel: String): ReactElement | Null = js.native
+  @scala.inline
+  def getFontIcon(iconName: String): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  @scala.inline
+  def getFontIcon(iconName: String, className: String): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  @scala.inline
+  def getFontIcon(iconName: String, className: String, ariaLabel: String): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], ariaLabel.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  @scala.inline
+  def getFontIcon(iconName: String, className: Unit, ariaLabel: String): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], ariaLabel.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   
-  @JSImport("office-ui-fabric-react/lib/components/Icon/FontIcon", "getIconContent")
-  @js.native
-  def getIconContent(): IIconContent | Null = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Icon/FontIcon", "getIconContent")
-  @js.native
-  def getIconContent(iconName: String): IIconContent | Null = js.native
+  @scala.inline
+  def getIconContent(): IIconContent | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconContent")().asInstanceOf[IIconContent | Null]
+  @scala.inline
+  def getIconContent(iconName: String): IIconContent | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconContent")(iconName.asInstanceOf[js.Any]).asInstanceOf[IIconContent | Null]
   
-  @js.native
   trait IIconContent extends StObject {
     
-    var children: js.UndefOr[String] = js.native
+    var children: js.UndefOr[String] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var iconClassName: js.UndefOr[String] = js.native
+    var iconClassName: js.UndefOr[String] = js.undefined
   }
   object IIconContent {
     

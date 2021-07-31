@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.GistsListForUserResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersGistsListForUserEndpoint extends StObject {
   
-  var parameters: GistsListForUserEndpoint = js.native
+  var parameters: GistsListForUserEndpoint
   
-  var request: GistsListForUserRequestOptions = js.native
+  var request: GistsListForUserRequestOptions
   
-  var response: OctokitResponse[GistsListForUserResponseData] = js.native
+  var response: OctokitResponse[GistsListForUserResponseData]
 }
 object ParametersGistsListForUserEndpoint {
   

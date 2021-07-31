@@ -3,32 +3,25 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ParenthesizedExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParenthesizedExpression_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with ExpressionWrapper {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
   @JSName("type")
-  var type_ParenthesizedExpression_ : ParenthesizedExpression = js.native
+  var type_ParenthesizedExpression_ : ParenthesizedExpression
 }
 object ParenthesizedExpression_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    expression: Expression,
-    loc: SourceLocation,
-    start: Double,
-    `type`: ParenthesizedExpression
-  ): ParenthesizedExpression_ = {
+  def apply(end: Double, expression: Expression, loc: SourceLocation, start: Double): ParenthesizedExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ParenthesizedExpression")
     __obj.asInstanceOf[ParenthesizedExpression_]
   }
   

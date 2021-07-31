@@ -2,17 +2,17 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // SCEProvider
 // see http://docs.angularjs.org/api/ng/provider/$sceProvider
 ///////////////////////////////////////////////////////////////////////////
-@js.native
-trait ISCEProvider extends IServiceProvider {
+trait ISCEProvider
+  extends StObject
+     with IServiceProvider {
   
-  def enabled(value: Boolean): Unit = js.native
+  def enabled(value: Boolean): Unit
 }
 object ISCEProvider {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * primitive.
   * @since OOo 2.0
   */
-@js.native
 trait RenderState extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait RenderState extends StObject {
     * This is used to transform coordinates of canvas primitives from user space to view space (from which they are subsequently transformed to device space
     * by the view transform).
     */
-  var AffineTransform: AffineMatrix2D = js.native
+  var AffineTransform: AffineMatrix2D
   
   /**
     * The clipping area associated with this render operation.
@@ -35,7 +33,7 @@ trait RenderState extends StObject {
     * course). Specifying an empty {@link XPolyPolygon2D} , i.e. a poly-polygon containing zero polygons, or an {@link XPolyPolygon2D} with any number of
     * empty sub-polygons, denotes the NULL clip. That means, nothing rendered to the canvas will be visible.
     */
-  var Clip: XPolyPolygon2D = js.native
+  var Clip: XPolyPolygon2D
   
   /**
     * The composition mode associated with this render operation.
@@ -43,7 +41,7 @@ trait RenderState extends StObject {
     * The composite mode determines in which way the primitive and possibly existing background is combined. The permissible values must be one out of the
     * {@link CompositeOperation} constants.
     */
-  var CompositeOperation: Double = js.native
+  var CompositeOperation: Double
   
   /**
     * The device color associated with this render operation.
@@ -52,7 +50,7 @@ trait RenderState extends StObject {
     * @see XGraphicDevice
     * @see XColorSpace
     */
-  var DeviceColor: SafeArray[ColorComponent] = js.native
+  var DeviceColor: SafeArray[ColorComponent]
 }
 object RenderState {
   

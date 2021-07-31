@@ -2,22 +2,20 @@ package typings.gandiLivedns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Snapshot extends StObject {
   
   /**
     * Can be used as a date with "new Date(change_time);"
     */
-  var change_time: String = js.native
+  var change_time: String
   
-  var serial: Double = js.native
+  var serial: Double
   
-  var zone_data: js.Array[ZoneRecord] = js.native
+  var zone_data: js.Array[ZoneRecord]
   
-  var zone_uuid: String = js.native
+  var zone_uuid: String
 }
 object Snapshot {
   

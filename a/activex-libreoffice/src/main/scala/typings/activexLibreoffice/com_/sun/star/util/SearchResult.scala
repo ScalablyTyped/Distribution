@@ -3,15 +3,13 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchResult extends StObject {
   
-  var endOffset: SafeArray[Double] = js.native
+  var endOffset: SafeArray[Double]
   
-  var startOffset: SafeArray[Double] = js.native
+  var startOffset: SafeArray[Double]
   
   /**
     * Number of subexpressions.
@@ -33,7 +31,7 @@ trait SearchResult extends StObject {
     * 1, still startoffset[0] and endoffset[0] points to the matching substring for whole regular expression startoffset[i] and endoffset[i] points to the
     * matching substring of i th matching substring.
     */
-  var subRegExpressions: Double = js.native
+  var subRegExpressions: Double
 }
 object SearchResult {
   

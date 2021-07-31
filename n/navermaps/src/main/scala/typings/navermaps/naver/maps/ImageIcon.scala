@@ -2,21 +2,19 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageIcon extends StObject {
   
-  var anchor: js.UndefOr[Point | PointLiteral | Position] = js.native
+  var anchor: js.UndefOr[Point | PointLiteral | Position] = js.undefined
   
-  var origin: js.UndefOr[Point | PointLiteral] = js.native
+  var origin: js.UndefOr[Point | PointLiteral] = js.undefined
   
-  var scaledSize: js.UndefOr[Size | SizeLiteral] = js.native
+  var scaledSize: js.UndefOr[Size | SizeLiteral] = js.undefined
   
-  var size: js.UndefOr[Size | SizeLiteral] = js.native
+  var size: js.UndefOr[Size | SizeLiteral] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object ImageIcon {
   

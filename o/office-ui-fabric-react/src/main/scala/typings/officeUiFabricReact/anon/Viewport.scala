@@ -3,13 +3,11 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.withViewportMod.IViewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Viewport extends StObject {
   
-  var viewport: js.UndefOr[IViewport] = js.native
+  var viewport: js.UndefOr[IViewport] = js.undefined
 }
 object Viewport {
   

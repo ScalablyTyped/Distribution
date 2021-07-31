@@ -27,7 +27,6 @@ import typings.sipJs.transactionsMod.InviteServerTransaction
 import typings.sipJs.userAgentCoreMod.UserAgentCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionDialogMod {
@@ -141,7 +140,7 @@ object sessionDialogMod {
       * @param options - Options bucket.
       */
     def bye(): OutgoingByeRequest = js.native
-    def bye(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingByeRequest = js.native
+    def bye(delegate: Unit, options: RequestOptions): OutgoingByeRequest = js.native
     def bye(delegate: OutgoingRequestDelegate): OutgoingByeRequest = js.native
     def bye(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingByeRequest = js.native
     
@@ -165,7 +164,7 @@ object sessionDialogMod {
       * @param options - Options bucket.
       */
     def info(): OutgoingInfoRequest = js.native
-    def info(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingInfoRequest = js.native
+    def info(delegate: Unit, options: RequestOptions): OutgoingInfoRequest = js.native
     def info(delegate: OutgoingRequestDelegate): OutgoingInfoRequest = js.native
     def info(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingInfoRequest = js.native
     
@@ -200,7 +199,7 @@ object sessionDialogMod {
       * @param options - Options bucket.
       */
     def invite(): OutgoingInviteRequest = js.native
-    def invite(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingInviteRequest = js.native
+    def invite(delegate: Unit, options: RequestOptions): OutgoingInviteRequest = js.native
     def invite(delegate: OutgoingInviteRequestDelegate): OutgoingInviteRequest = js.native
     def invite(delegate: OutgoingInviteRequestDelegate, options: RequestOptions): OutgoingInviteRequest = js.native
     
@@ -217,7 +216,7 @@ object sessionDialogMod {
       * @param options - Options bucket.
       */
     def message(): OutgoingMessageRequest = js.native
-    def message(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingMessageRequest = js.native
+    def message(delegate: Unit, options: RequestOptions): OutgoingMessageRequest = js.native
     /**
       * A UAC MAY associate a MESSAGE request with an existing dialog.  If a
       * MESSAGE request is sent within a dialog, it is "associated" with any
@@ -228,7 +227,7 @@ object sessionDialogMod {
     def message(delegate: OutgoingRequestDelegate): OutgoingMessageRequest = js.native
     def message(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingMessageRequest = js.native
     
-    def notify(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingNotifyRequest = js.native
+    def notify(delegate: Unit, options: RequestOptions): OutgoingNotifyRequest = js.native
     def notify(delegate: OutgoingRequestDelegate): OutgoingNotifyRequest = js.native
     def notify(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingNotifyRequest = js.native
     
@@ -256,7 +255,7 @@ object sessionDialogMod {
       * @param options - Options bucket.
       */
     def prack(): OutgoingPrackRequest = js.native
-    def prack(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingPrackRequest = js.native
+    def prack(delegate: Unit, options: RequestOptions): OutgoingPrackRequest = js.native
     def prack(delegate: OutgoingRequestDelegate): OutgoingPrackRequest = js.native
     def prack(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingPrackRequest = js.native
     
@@ -277,7 +276,7 @@ object sessionDialogMod {
       * @param options - Options bucket.
       */
     def refer(): OutgoingReferRequest = js.native
-    def refer(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingReferRequest = js.native
+    def refer(delegate: Unit, options: RequestOptions): OutgoingReferRequest = js.native
     def refer(delegate: OutgoingRequestDelegate): OutgoingReferRequest = js.native
     def refer(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingReferRequest = js.native
     

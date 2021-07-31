@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object EasMaxPasswordFailedAttemptsResult extends StObject {
   
   /** This computer can be compliant by using the ApplyAsync method. */
   @js.native
-  sealed trait canBeCompliant extends EasMaxPasswordFailedAttemptsResult
+  sealed trait canBeCompliant
+    extends StObject
+       with EasMaxPasswordFailedAttemptsResult
   
   /** This computer is compliant to the policy. */
   @js.native
-  sealed trait compliant extends EasMaxPasswordFailedAttemptsResult
+  sealed trait compliant
+    extends StObject
+       with EasMaxPasswordFailedAttemptsResult
   
   /** The policy value is not in a valid range. */
   @js.native
-  sealed trait invalidParameter extends EasMaxPasswordFailedAttemptsResult
+  sealed trait invalidParameter
+    extends StObject
+       with EasMaxPasswordFailedAttemptsResult
   
   /** The policy is not set for evaluation. */
   @js.native
-  sealed trait notEvaluated extends EasMaxPasswordFailedAttemptsResult
+  sealed trait notEvaluated
+    extends StObject
+       with EasMaxPasswordFailedAttemptsResult
   
   /** The requested policy is stricter than the computer policies. */
   @js.native
-  sealed trait requestedPolicyIsStricter extends EasMaxPasswordFailedAttemptsResult
+  sealed trait requestedPolicyIsStricter
+    extends StObject
+       with EasMaxPasswordFailedAttemptsResult
 }

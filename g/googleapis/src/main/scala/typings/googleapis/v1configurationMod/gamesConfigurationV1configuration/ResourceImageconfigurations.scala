@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesConfiguration/v1configuration", "gamesConfiguration_v1configuration.Resource$Imageconfigurations")
@@ -34,7 +33,7 @@ class ResourceImageconfigurations protected () extends StObject {
     */
   def upload(): GaxiosPromise[SchemaImageConfiguration] = js.native
   def upload(callback: BodyResponseCallback[SchemaImageConfiguration]): Unit = js.native
-  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaImageConfiguration] = js.native
+  def upload(params: Unit, options: MethodOptions): GaxiosPromise[SchemaImageConfiguration] = js.native
   def upload(params: ParamsResourceImageconfigurationsUpload): GaxiosPromise[SchemaImageConfiguration] = js.native
   def upload(
     params: ParamsResourceImageconfigurationsUpload,

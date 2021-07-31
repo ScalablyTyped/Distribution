@@ -4,23 +4,21 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckboxProps extends StObject {
   
-  val checked: js.UndefOr[Boolean] = js.native
+  val checked: js.UndefOr[Boolean] = js.undefined
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
   
-  val disabled: js.UndefOr[Boolean] = js.native
+  val disabled: js.UndefOr[Boolean] = js.undefined
   
-  val label: js.UndefOr[String] = js.native
+  val label: js.UndefOr[String] = js.undefined
   
-  val onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.native
+  val onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
 }
 object CheckboxProps {
   

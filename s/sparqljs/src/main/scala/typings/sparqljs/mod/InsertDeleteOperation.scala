@@ -6,21 +6,21 @@ import typings.sparqljs.sparqljsStrings.insert
 import typings.sparqljs.sparqljsStrings.insertdelete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InsertDeleteOperation extends UpdateOperation {
+trait InsertDeleteOperation
+  extends StObject
+     with UpdateOperation {
   
-  var delete: js.UndefOr[js.Array[Quads]] = js.native
+  var delete: js.UndefOr[js.Array[Quads]] = js.undefined
   
-  var graph: js.UndefOr[IriTerm] = js.native
+  var graph: js.UndefOr[IriTerm] = js.undefined
   
-  var insert: js.UndefOr[js.Array[Quads]] = js.native
+  var insert: js.UndefOr[js.Array[Quads]] = js.undefined
   
-  var updateType: insert | delete | deletewhere | insertdelete = js.native
+  var updateType: insert | delete | deletewhere | insertdelete
   
-  var where: js.UndefOr[js.Array[Pattern]] = js.native
+  var where: js.UndefOr[js.Array[Pattern]] = js.undefined
 }
 object InsertDeleteOperation {
   

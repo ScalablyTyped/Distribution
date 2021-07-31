@@ -7,21 +7,21 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a string search operation. */
-@js.native
-trait XSearchDescriptor extends XPropertySet {
+trait XSearchDescriptor
+  extends StObject
+     with XPropertySet {
   
   /** @returns the string of characters to search for. */
-  var SearchString: String = js.native
+  var SearchString: String
   
   /** @returns the string of characters to search for. */
-  def getSearchString(): String = js.native
+  def getSearchString(): String
   
   /** sets the string of characters to look for. */
-  def setSearchString(aString: String): Unit = js.native
+  def setSearchString(aString: String): Unit
 }
 object XSearchDescriptor {
   

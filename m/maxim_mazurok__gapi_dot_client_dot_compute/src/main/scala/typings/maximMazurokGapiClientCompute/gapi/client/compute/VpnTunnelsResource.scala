@@ -7,7 +7,6 @@ import typings.maximMazurokGapiClientCompute.anon.KeyOauthtokenPrettyPrintProjec
 import typings.maximMazurokGapiClientCompute.anon.UserIpVpnTunnel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

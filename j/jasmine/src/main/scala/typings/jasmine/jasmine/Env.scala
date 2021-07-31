@@ -3,7 +3,6 @@ package typings.jasmine.jasmine
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -53,7 +52,7 @@ trait Env extends StObject {
   
   def it(description: String, func: js.Function0[Unit]): Spec = js.native
   
-  var matchersClass: Matchers[_] = js.native
+  var matchersClass: Matchers[js.Any] = js.native
   
   def nextSpecId(): Double = js.native
   

@@ -3,15 +3,15 @@ package typings.ethereumProtocol.mod
 import typings.ethereumProtocol.mod.AbiType.Fallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FallbackAbi extends FunctionAbi {
+trait FallbackAbi
+  extends StObject
+     with FunctionAbi {
   
-  var payable: Boolean = js.native
+  var payable: Boolean
   
-  var `type`: Fallback = js.native
+  var `type`: Fallback
 }
 object FallbackAbi {
   

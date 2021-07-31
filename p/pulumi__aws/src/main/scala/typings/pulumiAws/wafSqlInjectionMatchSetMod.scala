@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wafSqlInjectionMatchSetMod {
@@ -25,7 +24,7 @@ object wafSqlInjectionMatchSetMod {
       */
     def this(name: String) = this()
     def this(name: String, args: SqlInjectionMatchSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: SqlInjectionMatchSetArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -41,6 +40,10 @@ object wafSqlInjectionMatchSetMod {
   /* static members */
   object SqlInjectionMatchSet {
     
+    @JSImport("@pulumi/aws/waf/sqlInjectionMatchSet", "SqlInjectionMatchSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SqlInjectionMatchSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -50,35 +53,29 @@ object wafSqlInjectionMatchSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/waf/sqlInjectionMatchSet", "SqlInjectionMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SqlInjectionMatchSet = js.native
-    @JSImport("@pulumi/aws/waf/sqlInjectionMatchSet", "SqlInjectionMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SqlInjectionMatchSet = js.native
-    @JSImport("@pulumi/aws/waf/sqlInjectionMatchSet", "SqlInjectionMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState): SqlInjectionMatchSet = js.native
-    @JSImport("@pulumi/aws/waf/sqlInjectionMatchSet", "SqlInjectionMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState, opts: CustomResourceOptions): SqlInjectionMatchSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState, opts: CustomResourceOptions): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
     
     /**
       * Returns true if the given object is an instance of SqlInjectionMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/waf/sqlInjectionMatchSet", "SqlInjectionMatchSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ Boolean]
   }
   
-  @js.native
   trait SqlInjectionMatchSetArgs extends StObject {
     
     /**
       * The name or description of the SQL Injection Match Set.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The parts of web requests that you want AWS WAF to inspect for malicious SQL code and, if you want AWS WAF to inspect a header, the name of the header.
@@ -87,7 +84,7 @@ object wafSqlInjectionMatchSetMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.waf.SqlInjectionMatchSetSqlInjectionMatchTuple]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object SqlInjectionMatchSetArgs {
     
@@ -121,13 +118,12 @@ object wafSqlInjectionMatchSetMod {
     }
   }
   
-  @js.native
   trait SqlInjectionMatchSetState extends StObject {
     
     /**
       * The name or description of the SQL Injection Match Set.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The parts of web requests that you want AWS WAF to inspect for malicious SQL code and, if you want AWS WAF to inspect a header, the name of the header.
@@ -136,7 +132,7 @@ object wafSqlInjectionMatchSetMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.waf.SqlInjectionMatchSetSqlInjectionMatchTuple]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object SqlInjectionMatchSetState {
     

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object AppointmentSummaryCardView extends StObject {
   
   /** The appointment summary card is displayed by the app that owns the appointment calendar. */
   @js.native
-  sealed trait app extends AppointmentSummaryCardView
+  sealed trait app
+    extends StObject
+       with AppointmentSummaryCardView
   
   /** The appointment summary card is displayed by the system. */
   @js.native
-  sealed trait system extends AppointmentSummaryCardView
+  sealed trait system
+    extends StObject
+       with AppointmentSummaryCardView
 }

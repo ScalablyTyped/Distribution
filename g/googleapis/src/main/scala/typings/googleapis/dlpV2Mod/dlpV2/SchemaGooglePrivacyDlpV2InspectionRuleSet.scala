@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * circumstances, depending on the specific details of the rules within the
   * set.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2InspectionRuleSet extends StObject {
   
   /**
     * List of infoTypes this rule set is applied to.
     */
-  var infoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoType]] = js.native
+  var infoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoType]] = js.undefined
   
   /**
     * Set of rules to be applied to infoTypes. The rules are applied in order.
     */
-  var rules: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InspectionRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InspectionRule]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InspectionRuleSet {
   

@@ -11,8 +11,8 @@ ProseMirror's document model
 | Full name          | prosemirror-model |
 | Keywords           | - |
 | # releases         | 18 |
-| # dependents       | 211 |
-| # downloads        | 5559542 |
+| # dependents       | 248 |
+| # downloads        | 7673667 |
 | # stars            | 0 |
 
 ## Links

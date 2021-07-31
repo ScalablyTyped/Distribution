@@ -2,16 +2,14 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIntrospectionSchemaResponse extends StObject {
   
   /**
     * The schema, in GraphQL Schema Definition Language (SDL) format. For more information, see the GraphQL SDL documentation.
     */
-  var schema: js.UndefOr[_Blob] = js.native
+  var schema: js.UndefOr[_Blob] = js.undefined
 }
 object GetIntrospectionSchemaResponse {
   

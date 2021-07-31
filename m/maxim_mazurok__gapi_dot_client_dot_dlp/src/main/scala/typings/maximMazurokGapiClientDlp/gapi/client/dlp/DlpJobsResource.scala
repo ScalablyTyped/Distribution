@@ -10,7 +10,6 @@ import typings.maximMazurokGapiClientDlp.anon.Key
 import typings.maximMazurokGapiClientDlp.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

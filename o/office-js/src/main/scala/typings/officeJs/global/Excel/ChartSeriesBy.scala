@@ -2,7 +2,6 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ChartSeriesBy extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ChartSeriesBy with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ChartSeriesBy & String] = js.native
   
-  /* "Auto" */ val auto: typings.officeJs.Excel.ChartSeriesBy.auto with String = js.native
+  /* "Auto" */ val auto: typings.officeJs.Excel.ChartSeriesBy.auto & String = js.native
   
-  /* "Columns" */ val columns: typings.officeJs.Excel.ChartSeriesBy.columns with String = js.native
+  /* "Columns" */ val columns: typings.officeJs.Excel.ChartSeriesBy.columns & String = js.native
   
-  /* "Rows" */ val rows: typings.officeJs.Excel.ChartSeriesBy.rows with String = js.native
+  /* "Rows" */ val rows: typings.officeJs.Excel.ChartSeriesBy.rows & String = js.native
 }

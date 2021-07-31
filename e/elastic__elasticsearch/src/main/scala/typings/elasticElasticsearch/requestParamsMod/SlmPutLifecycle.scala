@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlmPutLifecycle[T] extends Generic {
+trait SlmPutLifecycle[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var policy_id: String = js.native
+  var policy_id: String
 }
 object SlmPutLifecycle {
   
@@ -21,7 +21,7 @@ object SlmPutLifecycle {
   }
   
   @scala.inline
-  implicit class SlmPutLifecycleMutableBuilder[Self <: SlmPutLifecycle[_], T] (val x: Self with SlmPutLifecycle[T]) extends AnyVal {
+  implicit class SlmPutLifecycleMutableBuilder[Self <: SlmPutLifecycle[?], T] (val x: Self & SlmPutLifecycle[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

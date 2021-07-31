@@ -12,7 +12,7 @@ Crossbrowser & lightweight way to check if user is looking at the page or intera
 | Keywords           | visibility, HTML5, cross, browser, api, UI, idle, status, mousemove, reading, mode, tab, change |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 456472 |
+| # downloads        | 434584 |
 | # stars            | 0 |
 
 ## Links

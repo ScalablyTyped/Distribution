@@ -3,17 +3,15 @@ package typings.ejWebAll.anon
 import typings.ejWebAll.ej.TimePicker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTimePicker extends StObject {
   
   /* static member */
-  var Locale: js.Any = js.native
+  var Locale: js.Any
   
   /* static member */
-  var fn: TimePicker = js.native
+  var fn: TimePicker
 }
 object TypeofTimePicker {
   

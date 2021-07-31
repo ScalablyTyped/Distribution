@@ -27,7 +27,6 @@ import typings.std.Date
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -124,10 +123,9 @@ object anon {
     def apply(target: PathLike, path: PathLike, `type`: Type): Unit = js.native
   }
   
-  @js.native
   trait Recursive extends StObject {
     
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
   }
   object Recursive {
     

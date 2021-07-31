@@ -2,36 +2,34 @@ package typings.pulumiAws.outputMod.ssm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDataSyncS3Destination extends StObject {
   
   /**
     * Name of S3 bucket where the aggregated data is stored.
     */
-  var bucketName: String = js.native
+  var bucketName: String
   
   /**
     * ARN of an encryption key for a destination in Amazon S3.
     */
-  var kmsKeyArn: js.UndefOr[String] = js.native
+  var kmsKeyArn: js.UndefOr[String] = js.undefined
   
   /**
     * Prefix for the bucket.
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /**
     * Region with the bucket targeted by the Resource Data Sync.
     */
-  var region: String = js.native
+  var region: String
   
   /**
     * A supported sync format. Only JsonSerDe is currently supported. Defaults to JsonSerDe.
     */
-  var syncFormat: js.UndefOr[String] = js.native
+  var syncFormat: js.UndefOr[String] = js.undefined
 }
 object ResourceDataSyncS3Destination {
   

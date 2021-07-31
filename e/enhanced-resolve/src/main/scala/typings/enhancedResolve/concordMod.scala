@@ -3,83 +3,69 @@ package typings.enhancedResolve
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object concordMod {
   
-  @JSImport("enhanced-resolve/lib/concord", "getExtensions")
+  @JSImport("enhanced-resolve/lib/concord", JSImport.Namespace)
   @js.native
-  def getExtensions(context: ConcordContext, configuration: Concord): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("enhanced-resolve/lib/concord", "getField")
-  @js.native
-  def getField(context: ConcordContext, configuration: Concord, field: String): js.Any = js.native
+  @scala.inline
+  def getExtensions(context: ConcordContext, configuration: Concord): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtensions")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("enhanced-resolve/lib/concord", "getMain")
-  @js.native
-  def getMain(context: ConcordContext, configuration: Concord): js.Any = js.native
+  @scala.inline
+  def getField(context: ConcordContext, configuration: Concord, field: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getField")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("enhanced-resolve/lib/concord", "isConditionMatched")
-  @js.native
-  def isConditionMatched(context: ConcordContext, condition: String): Boolean = js.native
+  @scala.inline
+  def getMain(context: ConcordContext, configuration: Concord): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMain")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("enhanced-resolve/lib/concord", "isEnvironment")
-  @js.native
-  def isEnvironment(context: ConcordContext, env: String): Boolean = js.native
-  @JSImport("enhanced-resolve/lib/concord", "isEnvironment")
-  @js.native
-  def isEnvironment(context: ConcordContext, env: Type): Boolean = js.native
+  @scala.inline
+  def isConditionMatched(context: ConcordContext, condition: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isConditionMatched")(context.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("enhanced-resolve/lib/concord", "isGlobMatched")
-  @js.native
-  def isGlobMatched(glob: String, relativePath: String): Boolean = js.native
+  @scala.inline
+  def isEnvironment(context: ConcordContext, env: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnvironment")(context.asInstanceOf[js.Any], env.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isEnvironment(context: ConcordContext, env: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnvironment")(context.asInstanceOf[js.Any], env.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("enhanced-resolve/lib/concord", "isKeyMatched")
-  @js.native
-  def isKeyMatched(context: ConcordContext, key: String): String | Boolean = js.native
+  @scala.inline
+  def isGlobMatched(glob: String, relativePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isGlobMatched")(glob.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("enhanced-resolve/lib/concord", "isResourceTypeSupported")
-  @js.native
-  def isResourceTypeSupported(context: ConcordContext, `type`: String): Boolean = js.native
+  @scala.inline
+  def isKeyMatched(context: ConcordContext, key: String): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKeyMatched")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
   
-  @JSImport("enhanced-resolve/lib/concord", "isTypeMatched")
-  @js.native
-  def isTypeMatched(baseType: String, testedType: String): Boolean = js.native
-  @JSImport("enhanced-resolve/lib/concord", "isTypeMatched")
-  @js.native
-  def isTypeMatched(baseType: String, testedType: Type): Boolean = js.native
-  @JSImport("enhanced-resolve/lib/concord", "isTypeMatched")
-  @js.native
-  def isTypeMatched(baseType: Type, testedType: String): Boolean = js.native
-  @JSImport("enhanced-resolve/lib/concord", "isTypeMatched")
-  @js.native
-  def isTypeMatched(baseType: Type, testedType: Type): Boolean = js.native
+  @scala.inline
+  def isResourceTypeSupported(context: ConcordContext, `type`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isResourceTypeSupported")(context.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("enhanced-resolve/lib/concord", "matchModule")
-  @js.native
-  def matchModule(context: ConcordContext, configuration: Concord, request: String): js.Any = js.native
+  @scala.inline
+  def isTypeMatched(baseType: String, testedType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isTypeMatched(baseType: String, testedType: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isTypeMatched(baseType: Type, testedType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isTypeMatched(baseType: Type, testedType: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("enhanced-resolve/lib/concord", "matchType")
-  @js.native
-  def matchType(context: ConcordContext, configuration: Concord, relativePath: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def matchModule(context: ConcordContext, configuration: Concord, request: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("matchModule")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("enhanced-resolve/lib/concord", "parseType")
-  @js.native
-  def parseType(`type`: String): Type = js.native
+  @scala.inline
+  def matchType(context: ConcordContext, configuration: Concord, relativePath: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchType")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @js.native
+  @scala.inline
+  def parseType(`type`: String): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("parseType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type]
+  
   trait Concord extends StObject {
     
-    var `[server] main`: String = js.native
+    var `[server] main`: String
     
-    var extensions: js.Array[String] = js.native
+    var extensions: js.Array[String]
     
-    var main: String = js.native
+    var main: String
     
-    var modules: Dictionary[String] = js.native
+    var modules: Dictionary[String]
     
-    var types: Dictionary[String] = js.native
+    var types: Dictionary[String]
   }
   object Concord {
     
@@ -119,14 +105,13 @@ object concordMod {
     }
   }
   
-  @js.native
   trait ConcordContext extends StObject {
     
-    var environments: js.UndefOr[js.Array[String]] = js.native
+    var environments: js.UndefOr[js.Array[String]] = js.undefined
     
-    var referrer: js.UndefOr[String] = js.native
+    var referrer: js.UndefOr[String] = js.undefined
     
-    var supportedResourceTypes: js.UndefOr[js.Array[String]] = js.native
+    var supportedResourceTypes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ConcordContext {
     
@@ -167,12 +152,11 @@ object concordMod {
   
   type Dictionary[T] = StringDictionary[T]
   
-  @js.native
   trait Type extends StObject {
     
-    var features: js.Array[String] = js.native
+    var features: js.Array[String]
     
-    var `type`: js.UndefOr[String | Null] = js.native
+    var `type`: js.UndefOr[String | Null] = js.undefined
   }
   object Type {
     

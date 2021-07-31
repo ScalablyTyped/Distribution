@@ -10,9 +10,9 @@ Simple to use, blazing fast and thoroughly tested websocket client and server fo
 | ------------------ | :-------------: |
 | Full name          | ws |
 | Keywords           | HyBi, Push, RFC-6455, WebSocket, WebSockets, real-time |
-| # releases         | 20 |
-| # dependents       | 7176 |
-| # downloads        | 1174303117 |
+| # releases         | 18 |
+| # dependents       | 7853 |
+| # downloads        | 1446066764 |
 | # stars            | 255 |
 
 ## Links

@@ -3,7 +3,6 @@ package typings.officeJs.Excel
 import typings.officeJs.anon.CellPropertiesFormatrowHe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
-trait SettableRowProperties extends SettableCellProperties {
+trait SettableRowProperties
+  extends StObject
+     with SettableCellProperties {
   
   /**
     *
@@ -22,7 +22,7 @@ trait SettableRowProperties extends SettableCellProperties {
     * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
-  var format_SettableRowProperties: js.UndefOr[CellPropertiesFormatrowHe] = js.native
+  var format_SettableRowProperties: js.UndefOr[CellPropertiesFormatrowHe] = js.undefined
   
   /**
     *
@@ -30,7 +30,7 @@ trait SettableRowProperties extends SettableCellProperties {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rowHidden: js.UndefOr[Boolean] = js.native
+  var rowHidden: js.UndefOr[Boolean] = js.undefined
 }
 object SettableRowProperties {
   

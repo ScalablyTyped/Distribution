@@ -2,12 +2,13 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "LngLatBounds")
 @js.native
-class LngLatBounds () extends _LngLatBoundsLike {
+class LngLatBounds ()
+  extends StObject
+     with _LngLatBoundsLike {
   def this(boundsLike: js.Tuple2[LngLatLike, LngLatLike]) = this()
   def this(boundsLike: js.Tuple4[Double, Double, Double, Double]) = this()
   def this(sw: LngLatLike, ne: LngLatLike) = this()
@@ -63,8 +64,11 @@ class LngLatBounds () extends _LngLatBoundsLike {
 /* static members */
 object LngLatBounds {
   
-  /** Convert an array to a LngLatBounds object, or return an existing LngLatBounds object unchanged. */
-  @JSImport("mapbox-gl", "LngLatBounds.convert")
+  @JSImport("mapbox-gl", "LngLatBounds")
   @js.native
-  def convert(input: LngLatBoundsLike): LngLatBounds = js.native
+  val ^ : js.Any = js.native
+  
+  /** Convert an array to a LngLatBounds object, or return an existing LngLatBounds object unchanged. */
+  @scala.inline
+  def convert(input: LngLatBoundsLike): LngLatBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(input.asInstanceOf[js.Any]).asInstanceOf[LngLatBounds]
 }

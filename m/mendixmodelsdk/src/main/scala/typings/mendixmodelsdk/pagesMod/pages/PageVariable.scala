@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -58,9 +57,8 @@ object PageVariable {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable.create")
-  @js.native
-  def create(model: IModel): PageVariable = js.native
+  @scala.inline
+  def create(model: IModel): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -71,9 +69,8 @@ object PageVariable {
     *  8.8.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable.createInAttributeWidgetUnderSourceVariable")
-  @js.native
-  def createInAttributeWidgetUnderSourceVariable(container: AttributeWidget): PageVariable = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderSourceVariable(container: AttributeWidget): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -84,9 +81,8 @@ object PageVariable {
     *  8.4.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable.createInMicroflowParameterMappingUnderVariable")
-  @js.native
-  def createInMicroflowParameterMappingUnderVariable(container: MicroflowParameterMapping): PageVariable = js.native
+  @scala.inline
+  def createInMicroflowParameterMappingUnderVariable(container: MicroflowParameterMapping): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -97,9 +93,8 @@ object PageVariable {
     *  8.4.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable.createInNanoflowParameterMappingUnderVariable")
-  @js.native
-  def createInNanoflowParameterMappingUnderVariable(container: NanoflowParameterMapping): PageVariable = js.native
+  @scala.inline
+  def createInNanoflowParameterMappingUnderVariable(container: NanoflowParameterMapping): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -110,9 +105,8 @@ object PageVariable {
     *  8.8.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable.createInWidgetValueUnderSourceVariable")
-  @js.native
-  def createInWidgetValueUnderSourceVariable(container: WidgetValue): PageVariable = js.native
+  @scala.inline
+  def createInWidgetValueUnderSourceVariable(container: WidgetValue): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable.structureTypeName")

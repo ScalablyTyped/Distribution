@@ -14,55 +14,53 @@ import typings.appleMusicApi.appleMusicApiStrings.explicit
 import typings.appleMusicApi.appleMusicApiStrings.external
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AlbumName extends StObject {
     
-    var albumName: String = js.native
+    var albumName: String
     
-    var artistName: String = js.native
+    var artistName: String
     
-    var artwork: js.UndefOr[typings.appleMusicApi.AppleMusicApi.Artwork] = js.native
+    var artwork: js.UndefOr[typings.appleMusicApi.AppleMusicApi.Artwork] = js.undefined
     
-    var composerName: js.UndefOr[String] = js.native
+    var composerName: js.UndefOr[String] = js.undefined
     
-    var contentRating: js.UndefOr[String] = js.native
+    var contentRating: js.UndefOr[String] = js.undefined
     
-    var discNumber: Double = js.native
+    var discNumber: Double
     
-    var durationInMillis: Double = js.native
+    var durationInMillis: Double
     
-    var editorialNotes: js.UndefOr[typings.appleMusicApi.AppleMusicApi.EditorialNotes] = js.native
+    var editorialNotes: js.UndefOr[typings.appleMusicApi.AppleMusicApi.EditorialNotes] = js.undefined
     
-    var genreNames: js.Array[String] = js.native
+    var genreNames: js.Array[String]
     
-    var hasLyrics: Boolean = js.native
+    var hasLyrics: Boolean
     
-    var isrc: String = js.native
+    var isrc: String
     
-    var movementCount: js.UndefOr[Double] = js.native
+    var movementCount: js.UndefOr[Double] = js.undefined
     
-    var movementName: js.UndefOr[String] = js.native
+    var movementName: js.UndefOr[String] = js.undefined
     
-    var movementNumber: js.UndefOr[String] = js.native
+    var movementNumber: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var playParams: js.UndefOr[PlayParameters] = js.native
+    var playParams: js.UndefOr[PlayParameters] = js.undefined
     
-    var previews: js.Array[Preview] = js.native
+    var previews: js.Array[Preview]
     
-    var releaseDate: String = js.native
+    var releaseDate: String
     
-    var trackNumber: Double = js.native
+    var trackNumber: Double
     
-    var url: String = js.native
+    var url: String
     
-    var workName: js.UndefOr[String] = js.native
+    var workName: js.UndefOr[String] = js.undefined
   }
   object AlbumName {
     
@@ -186,45 +184,44 @@ object anon {
     }
   }
   
-  @js.native
   trait ArtistName extends StObject {
     
     // albumName might not actually be a required attribute of Album.
     // There may be a typo in Apple's documentation, their data doesn't
     // actually return this attribute for the example I picked and the description of the field references music videos, further increasingly the likelihood that it's just a typo):
-    var albumName: js.UndefOr[String] = js.native
+    var albumName: js.UndefOr[String] = js.undefined
     
-    var artistName: String = js.native
+    var artistName: String
     
-    var artwork: js.UndefOr[typings.appleMusicApi.AppleMusicApi.Artwork] = js.native
+    var artwork: js.UndefOr[typings.appleMusicApi.AppleMusicApi.Artwork] = js.undefined
     
-    var contentRating: js.UndefOr[clean | explicit] = js.native
+    var contentRating: js.UndefOr[clean | explicit] = js.undefined
     
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
-    var editorialNotes: js.UndefOr[typings.appleMusicApi.AppleMusicApi.EditorialNotes] = js.native
+    var editorialNotes: js.UndefOr[typings.appleMusicApi.AppleMusicApi.EditorialNotes] = js.undefined
     
-    var genreNames: js.Array[String] = js.native
+    var genreNames: js.Array[String]
     
-    var isCompilation: Boolean = js.native
+    var isCompilation: Boolean
     
-    var isComplete: Boolean = js.native
+    var isComplete: Boolean
     
-    var isMasteredForItunes: Boolean = js.native
+    var isMasteredForItunes: Boolean
     
-    var isSingle: Boolean = js.native
+    var isSingle: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var playParams: js.UndefOr[PlayParameters] = js.native
+    var playParams: js.UndefOr[PlayParameters] = js.undefined
     
-    var recordLabel: String = js.native
+    var recordLabel: String
     
-    var releaseDate: String = js.native
+    var releaseDate: String
     
-    var trackCount: Double = js.native
+    var trackCount: Double
     
-    var url: String = js.native
+    var url: String
   }
   object ArtistName {
     
@@ -323,27 +320,26 @@ object anon {
     }
   }
   
-  @js.native
   trait Artwork extends StObject {
     
-    var artwork: js.UndefOr[typings.appleMusicApi.AppleMusicApi.Artwork] = js.native
+    var artwork: js.UndefOr[typings.appleMusicApi.AppleMusicApi.Artwork] = js.undefined
     
-    var curatorName: js.UndefOr[String] = js.native
+    var curatorName: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[typings.appleMusicApi.AppleMusicApi.EditorialNotes] = js.native
+    var description: js.UndefOr[typings.appleMusicApi.AppleMusicApi.EditorialNotes] = js.undefined
     
     // `isChart` is not currently mentioned in the apple music api documentation:
-    var isChart: js.UndefOr[Boolean] = js.native
+    var isChart: js.UndefOr[Boolean] = js.undefined
     
-    var lastModifiedDate: String = js.native
+    var lastModifiedDate: String
     
-    var name: String = js.native
+    var name: String
     
-    var playParams: js.UndefOr[PlayParameters] = js.native
+    var playParams: js.UndefOr[PlayParameters] = js.undefined
     
-    var playlistType: `user-shared` | editorial | external | `personal-mix` = js.native
+    var playlistType: `user-shared` | editorial | external | `personal-mix`
     
-    var url: String = js.native
+    var url: String
   }
   object Artwork {
     
@@ -405,12 +401,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Curator extends StObject {
     
-    var curator: Relationship[typings.appleMusicApi.AppleMusicApi.Curator] = js.native
+    var curator: Relationship[typings.appleMusicApi.AppleMusicApi.Curator]
     
-    var tracks: js.UndefOr[Relationship[Song]] = js.native
+    var tracks: js.UndefOr[Relationship[Song]] = js.undefined
   }
   object Curator {
     
@@ -434,10 +429,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: Station = js.native
+    var data: Station
   }
   object Data {
     
@@ -455,16 +449,15 @@ object anon {
     }
   }
   
-  @js.native
   trait EditorialNotes extends StObject {
     
-    var editorialNotes: js.UndefOr[typings.appleMusicApi.AppleMusicApi.EditorialNotes] = js.native
+    var editorialNotes: js.UndefOr[typings.appleMusicApi.AppleMusicApi.EditorialNotes] = js.undefined
     
-    var genreNames: js.Array[String] = js.native
+    var genreNames: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var url: String = js.native
+    var url: String
   }
   object EditorialNotes {
     
@@ -497,10 +490,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -518,10 +510,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Playlists extends StObject {
     
-    var playlists: js.UndefOr[Relationship[Playlist]] = js.native
+    var playlists: js.UndefOr[Relationship[Playlist]] = js.undefined
   }
   object Playlists {
     
@@ -542,16 +533,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var artwork: js.UndefOr[typings.appleMusicApi.AppleMusicApi.Artwork] = js.native
+    var artwork: js.UndefOr[typings.appleMusicApi.AppleMusicApi.Artwork] = js.undefined
     
-    var editorialNotes: js.UndefOr[typings.appleMusicApi.AppleMusicApi.EditorialNotes] = js.native
+    var editorialNotes: js.UndefOr[typings.appleMusicApi.AppleMusicApi.EditorialNotes] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     

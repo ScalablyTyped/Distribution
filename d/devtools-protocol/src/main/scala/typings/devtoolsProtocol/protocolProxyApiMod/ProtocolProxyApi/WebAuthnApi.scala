@@ -14,70 +14,68 @@ import typings.devtoolsProtocol.mod.Protocol.WebAuthn.SetAutomaticPresenceSimula
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.SetUserVerifiedRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAuthnApi extends StObject {
   
   /**
     * Adds the credential to the specified authenticator.
     */
-  def addCredential(params: AddCredentialRequest): js.Promise[Unit] = js.native
+  def addCredential(params: AddCredentialRequest): js.Promise[Unit]
   
   /**
     * Creates and adds a virtual authenticator.
     */
-  def addVirtualAuthenticator(params: AddVirtualAuthenticatorRequest): js.Promise[AddVirtualAuthenticatorResponse] = js.native
+  def addVirtualAuthenticator(params: AddVirtualAuthenticatorRequest): js.Promise[AddVirtualAuthenticatorResponse]
   
   /**
     * Clears all the credentials from the specified device.
     */
-  def clearCredentials(params: ClearCredentialsRequest): js.Promise[Unit] = js.native
+  def clearCredentials(params: ClearCredentialsRequest): js.Promise[Unit]
   
   /**
     * Disable the WebAuthn domain.
     */
-  def disable(): js.Promise[Unit] = js.native
+  def disable(): js.Promise[Unit]
   
   /**
     * Enable the WebAuthn domain and start intercepting credential storage and
     * retrieval with a virtual authenticator.
     */
-  def enable(): js.Promise[Unit] = js.native
+  def enable(): js.Promise[Unit]
   
   /**
     * Returns a single credential stored in the given virtual authenticator that
     * matches the credential ID.
     */
-  def getCredential(params: GetCredentialRequest): js.Promise[GetCredentialResponse] = js.native
+  def getCredential(params: GetCredentialRequest): js.Promise[GetCredentialResponse]
   
   /**
     * Returns all the credentials stored in the given virtual authenticator.
     */
-  def getCredentials(params: GetCredentialsRequest): js.Promise[GetCredentialsResponse] = js.native
+  def getCredentials(params: GetCredentialsRequest): js.Promise[GetCredentialsResponse]
   
   /**
     * Removes a credential from the authenticator.
     */
-  def removeCredential(params: RemoveCredentialRequest): js.Promise[Unit] = js.native
+  def removeCredential(params: RemoveCredentialRequest): js.Promise[Unit]
   
   /**
     * Removes the given authenticator.
     */
-  def removeVirtualAuthenticator(params: RemoveVirtualAuthenticatorRequest): js.Promise[Unit] = js.native
+  def removeVirtualAuthenticator(params: RemoveVirtualAuthenticatorRequest): js.Promise[Unit]
   
   /**
     * Sets whether tests of user presence will succeed immediately (if true) or fail to resolve (if false) for an authenticator.
     * The default is true.
     */
-  def setAutomaticPresenceSimulation(params: SetAutomaticPresenceSimulationRequest): js.Promise[Unit] = js.native
+  def setAutomaticPresenceSimulation(params: SetAutomaticPresenceSimulationRequest): js.Promise[Unit]
   
   /**
     * Sets whether User Verification succeeds or fails for an authenticator.
     * The default is true.
     */
-  def setUserVerified(params: SetUserVerifiedRequest): js.Promise[Unit] = js.native
+  def setUserVerified(params: SetUserVerifiedRequest): js.Promise[Unit]
 }
 object WebAuthnApi {
   

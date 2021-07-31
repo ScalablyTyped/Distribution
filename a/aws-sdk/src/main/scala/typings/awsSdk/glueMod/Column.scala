@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
   /**
     * A free-form text comment.
     */
-  var Comment: js.UndefOr[CommentString] = js.native
+  var Comment: js.UndefOr[CommentString] = js.undefined
   
   /**
     * The name of the Column.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * These key-value pairs define properties associated with the column.
     */
-  var Parameters: js.UndefOr[ParametersMap] = js.native
+  var Parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
     * The data type of the Column.
     */
-  var Type: js.UndefOr[ColumnTypeString] = js.native
+  var Type: js.UndefOr[ColumnTypeString] = js.undefined
 }
 object Column {
   

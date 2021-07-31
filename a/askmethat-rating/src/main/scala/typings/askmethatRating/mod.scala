@@ -5,7 +5,6 @@ import typings.std.HTMLDivElement
 import typings.std.MutationRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,8 +21,8 @@ object mod {
       */
     def this(element: HTMLDivElement) = this()
     def this(element: HTMLDivElement, defaultValue: Double) = this()
-    def this(element: HTMLDivElement, defaultValue: js.UndefOr[scala.Nothing], options: js.Any) = this()
     def this(element: HTMLDivElement, defaultValue: Double, options: js.Any) = this()
+    def this(element: HTMLDivElement, defaultValue: Unit, options: js.Any) = this()
     
     /**
       * Default option base on @type IAskmethatRatingOptions
@@ -127,14 +126,17 @@ object mod {
   /* static members */
   object AskmethatRating {
     
+    @JSImport("askmethat-rating", "AskmethatRating")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @function static method to retrieve with identifier the value
       * @param  {string} identifier: string container identifier
       * @return {number} current rating
       */
-    @JSImport("askmethat-rating", "AskmethatRating.value")
-    @js.native
-    def value(identifier: String): Double = js.native
+    @scala.inline
+    def value(identifier: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(identifier.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @js.native
@@ -144,74 +146,79 @@ object mod {
   object AskmethatRatingSteps extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AskmethatRatingSteps with Double] = js.native
+    def apply(value: Double): js.UndefOr[AskmethatRatingSteps & Double] = js.native
     
     /**
       * Step 0.1 per 0.1
       */
     @js.native
-    sealed trait DecimalStep extends AskmethatRatingSteps
-    /* 0 */ val DecimalStep: typings.askmethatRating.mod.AskmethatRatingSteps.DecimalStep with Double = js.native
+    sealed trait DecimalStep
+      extends StObject
+         with AskmethatRatingSteps
+    /* 0 */ val DecimalStep: typings.askmethatRating.mod.AskmethatRatingSteps.DecimalStep & Double = js.native
     
     /**
       * Step 0.5 per 0.5
       */
     @js.native
-    sealed trait HalfStep extends AskmethatRatingSteps
-    /* 1 */ val HalfStep: typings.askmethatRating.mod.AskmethatRatingSteps.HalfStep with Double = js.native
+    sealed trait HalfStep
+      extends StObject
+         with AskmethatRatingSteps
+    /* 1 */ val HalfStep: typings.askmethatRating.mod.AskmethatRatingSteps.HalfStep & Double = js.native
     
     /**
       * Step 1 per 1
       */
     @js.native
-    sealed trait OnePerOneStep extends AskmethatRatingSteps
-    /* 2 */ val OnePerOneStep: typings.askmethatRating.mod.AskmethatRatingSteps.OnePerOneStep with Double = js.native
+    sealed trait OnePerOneStep
+      extends StObject
+         with AskmethatRatingSteps
+    /* 2 */ val OnePerOneStep: typings.askmethatRating.mod.AskmethatRatingSteps.OnePerOneStep & Double = js.native
   }
   
-  @js.native
   trait AskmethatRatingOptions extends StObject {
     
     /**
       * Color when the rating is not hovered
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * Class to display as rating (FontAwesome or Rating for exemple)
       */
-    var fontClass: js.UndefOr[String] = js.native
+    var fontClass: js.UndefOr[String] = js.undefined
     
-    var hoverColor: js.UndefOr[String] = js.native
+    var hoverColor: js.UndefOr[String] = js.undefined
     
     /**
       * Input name (Default is AskmethatRating)
       */
-    var inputName: js.UndefOr[String] = js.native
+    var inputName: js.UndefOr[String] = js.undefined
     
     /**
       * Maximum rating that the plugin display
       */
-    var maxRating: js.UndefOr[Double] = js.native
+    var maxRating: js.UndefOr[Double] = js.undefined
     
     /**
       * Mininmum rating that the user can set
       */
-    var minRating: js.UndefOr[Double] = js.native
+    var minRating: js.UndefOr[Double] = js.undefined
     
     /**
       * options if popover is set. Put element as readonly
       */
-    var popover: js.UndefOr[AskmethatRatingPopoverOptions] = js.native
+    var popover: js.UndefOr[AskmethatRatingPopoverOptions] = js.undefined
     
     /**
       * Set the rating to readonly
       */
-    var readonly: js.UndefOr[Boolean] = js.native
+    var readonly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The stepping for the rating
       */
-    var step: js.UndefOr[AskmethatRatingSteps] = js.native
+    var step: js.UndefOr[AskmethatRatingSteps] = js.undefined
   }
   object AskmethatRatingOptions {
     

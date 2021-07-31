@@ -10,7 +10,6 @@ import typings.officeJs.officeJsStrings.Exclusive
 import typings.officeJs.officeJsStrings.Inclusive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait ChartBoxwhiskerOptions extends ClientObject {
+trait ChartBoxwhiskerOptions
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")

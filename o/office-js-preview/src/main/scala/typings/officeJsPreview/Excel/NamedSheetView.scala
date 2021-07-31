@@ -6,7 +6,6 @@ import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait NamedSheetView extends ClientObject {
+trait NamedSheetView
+  extends StObject
+     with ClientObject {
   
   /**
     * Activates this sheet view. This is equivalent to using "Switch To" in the Excel UI.

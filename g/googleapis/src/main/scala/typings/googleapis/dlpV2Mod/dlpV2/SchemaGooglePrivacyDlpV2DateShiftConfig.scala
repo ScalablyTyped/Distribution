@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * same context. See https://cloud.google.com/dlp/docs/concepts-date-shifting
   * to learn more.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2DateShiftConfig extends StObject {
   
   /**
@@ -18,19 +16,19 @@ trait SchemaGooglePrivacyDlpV2DateShiftConfig extends StObject {
     * If set, must also set method. If set, shift will be consistent for the
     * given context.
     */
-  var context: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var context: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
   
   /**
     * Causes the shift to be computed based on this key and the context. This
     * results in the same shift for the same context and crypto_key.
     */
-  var cryptoKey: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoKey] = js.native
+  var cryptoKey: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoKey] = js.undefined
   
   /**
     * For example, -5 means shift date to at most 5 days back in the past.
     * [Required]
     */
-  var lowerBoundDays: js.UndefOr[Double] = js.native
+  var lowerBoundDays: js.UndefOr[Double] = js.undefined
   
   /**
     * Range of shift in days. Actual shift will be selected at random within
@@ -38,7 +36,7 @@ trait SchemaGooglePrivacyDlpV2DateShiftConfig extends StObject {
     * Must not be more than 365250 days (1000 years) each direction.  For
     * example, 3 means shift date to at most 3 days into the future. [Required]
     */
-  var upperBoundDays: js.UndefOr[Double] = js.native
+  var upperBoundDays: js.UndefOr[Double] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2DateShiftConfig {
   

@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "RangeFilter")
 @js.native
-class RangeFilter protected () extends Filter {
+class RangeFilter protected ()
+  extends StObject
+     with Filter {
   /*
     Filters documents with fields that have terms within a certain range.
     */

@@ -3,21 +3,21 @@ package typings.iobroker.mod.global.ioBroker
 import typings.iobroker.anon.Execute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defined the complete set of access rights a user has */
-@js.native
-trait PermissionSet extends ObjectPermissions {
+trait PermissionSet
+  extends StObject
+     with ObjectPermissions {
   
   /** The name of the groups this ACL was merged from */
-  var groups: js.Array[String] = js.native
+  var groups: js.Array[String]
   
   /** The access rights for certain commands */
-  var other: Execute = js.native
+  var other: Execute
   
   /** The name of the user this ACL is for */
-  var user: String = js.native
+  var user: String
 }
 object PermissionSet {
   

@@ -2,23 +2,21 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toggleableOptionsMod {
   
-  @js.native
   trait ToggleableOptions extends StObject {
     
     /**
       * A value indicating whether to add a box for enabling/disabling the control.
       */
-    var addToggle: js.UndefOr[Boolean] = js.native
+    var addToggle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether the control is initially disabled.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
   }
   object ToggleableOptions {
     

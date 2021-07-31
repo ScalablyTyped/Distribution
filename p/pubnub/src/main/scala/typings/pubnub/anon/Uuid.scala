@@ -2,15 +2,13 @@ package typings.pubnub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Uuid extends StObject {
   
-  var channel: Id = js.native
+  var channel: Id
   
-  var uuid: Id = js.native
+  var uuid: Id
 }
 object Uuid {
   

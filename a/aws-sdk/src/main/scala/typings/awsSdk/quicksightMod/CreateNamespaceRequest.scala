@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNamespaceRequest extends StObject {
   
   /**
     * The ID for the AWS account that you want to create the QuickSight namespace in.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * Specifies the type of your user identity directory. Currently, this supports users with an identity type of QUICKSIGHT.
     */
-  var IdentityStore: typings.awsSdk.quicksightMod.IdentityStore = js.native
+  var IdentityStore: typings.awsSdk.quicksightMod.IdentityStore
   
   /**
     * The name that you want to use to describe the new namespace.
     */
-  var Namespace: typings.awsSdk.quicksightMod.Namespace = js.native
+  var Namespace: typings.awsSdk.quicksightMod.Namespace
   
   /**
     * The tags that you want to associate with the namespace that you're creating.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateNamespaceRequest {
   

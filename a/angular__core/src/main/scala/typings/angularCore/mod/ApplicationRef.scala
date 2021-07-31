@@ -3,7 +3,6 @@ package typings.angularCore.mod
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ApplicationRef")
@@ -60,20 +59,20 @@ class ApplicationRef () extends StObject {
   def bootstrap[C](componentOrFactory: ComponentFactory[C]): ComponentRef[C] = js.native
   def bootstrap[C](componentOrFactory: ComponentFactory[C], rootSelectorOrNode: String): ComponentRef[C] = js.native
   def bootstrap[C](componentOrFactory: ComponentFactory[C], rootSelectorOrNode: js.Any): ComponentRef[C] = js.native
-  def bootstrap[C](componentOrFactory: typings.angularCore.mod.Type[C]): ComponentRef[C] = js.native
-  def bootstrap[C](componentOrFactory: typings.angularCore.mod.Type[C], rootSelectorOrNode: String): ComponentRef[C] = js.native
-  def bootstrap[C](componentOrFactory: typings.angularCore.mod.Type[C], rootSelectorOrNode: js.Any): ComponentRef[C] = js.native
+  def bootstrap[C](componentOrFactory: Type[C]): ComponentRef[C] = js.native
+  def bootstrap[C](componentOrFactory: Type[C], rootSelectorOrNode: String): ComponentRef[C] = js.native
+  def bootstrap[C](componentOrFactory: Type[C], rootSelectorOrNode: js.Any): ComponentRef[C] = js.native
   
   /**
     * Get a list of component types registered to this application.
     * This list is populated even before the component is created.
     */
-  val componentTypes: js.Array[typings.angularCore.mod.Type[_]] = js.native
+  val componentTypes: js.Array[Type[js.Any]] = js.native
   
   /**
     * Get a list of components registered to this application.
     */
-  val components: js.Array[ComponentRef[_]] = js.native
+  val components: js.Array[ComponentRef[js.Any]] = js.native
   
   /**
     * Detaches a view from dirty checking again.

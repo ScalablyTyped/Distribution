@@ -2,29 +2,28 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportNamedDeclaration
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with ModuleDeclaration {
   
-  var declaration: js.UndefOr[Declaration | Null] = js.native
+  var declaration: js.UndefOr[Declaration | Null] = js.undefined
   
-  var source: js.UndefOr[Literal | Null] = js.native
+  var source: js.UndefOr[Literal | Null] = js.undefined
   
-  var specifiers: js.Array[ExportSpecifier] = js.native
+  var specifiers: js.Array[ExportSpecifier]
   
   @JSName("type")
-  var type_ExportNamedDeclaration: typings.estree.estreeStrings.ExportNamedDeclaration = js.native
+  var type_ExportNamedDeclaration: typings.estree.estreeStrings.ExportNamedDeclaration
 }
 object ExportNamedDeclaration {
   
   @scala.inline
-  def apply(specifiers: js.Array[ExportSpecifier], `type`: typings.estree.estreeStrings.ExportNamedDeclaration): ExportNamedDeclaration = {
+  def apply(specifiers: js.Array[ExportSpecifier]): ExportNamedDeclaration = {
     val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ExportNamedDeclaration")
     __obj.asInstanceOf[ExportNamedDeclaration]
   }
   

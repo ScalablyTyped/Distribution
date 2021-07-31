@@ -2,29 +2,27 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EarlyStop extends StObject {
   
-  var earlyStop: js.UndefOr[Boolean] = js.native
+  var earlyStop: js.UndefOr[Boolean] = js.undefined
   
-  var l1Reg: js.UndefOr[Double] = js.native
+  var l1Reg: js.UndefOr[Double] = js.undefined
   
-  var l2Reg: js.UndefOr[Double] = js.native
+  var l2Reg: js.UndefOr[Double] = js.undefined
   
-  var learnRate: js.UndefOr[Double] = js.native
+  var learnRate: js.UndefOr[Double] = js.undefined
   
-  var learnRateStrategy: js.UndefOr[String] = js.native
+  var learnRateStrategy: js.UndefOr[String] = js.undefined
   
-  var lineSearchInitLearnRate: js.UndefOr[Double] = js.native
+  var lineSearchInitLearnRate: js.UndefOr[Double] = js.undefined
   
-  var maxIteration: js.UndefOr[String] = js.native
+  var maxIteration: js.UndefOr[String] = js.undefined
   
-  var minRelProgress: js.UndefOr[Double] = js.native
+  var minRelProgress: js.UndefOr[Double] = js.undefined
   
-  var warmStart: js.UndefOr[Boolean] = js.native
+  var warmStart: js.UndefOr[Boolean] = js.undefined
 }
 object EarlyStop {
   

@@ -12,7 +12,7 @@ Truncate a semver version: `1.2.3` → `1.2.0`
 | Keywords           | semver, version, semantic, truncate, shorten, simplify |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 43091079 |
+| # downloads        | 49652007 |
 | # stars            | 1 |
 
 ## Links

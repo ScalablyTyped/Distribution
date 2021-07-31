@@ -2,19 +2,17 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Set of dominant colors and their corresponding scores.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p3beta1DominantColorsAnnotation extends StObject {
   
   /**
     * RGB color values with their score and pixel fraction.
     */
-  var colors: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p3beta1ColorInfo]] = js.native
+  var colors: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p3beta1ColorInfo]] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p3beta1DominantColorsAnnotation {
   

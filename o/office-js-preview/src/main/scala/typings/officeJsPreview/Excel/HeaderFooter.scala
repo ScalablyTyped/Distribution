@@ -8,14 +8,15 @@ import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait HeaderFooter extends ClientObject {
+trait HeaderFooter
+  extends StObject
+     with ClientObject {
   
   /**
     *

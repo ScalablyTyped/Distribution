@@ -2,15 +2,13 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkWriteResultUpsertedIdObject extends StObject {
   
-  var _id: typings.bson.mod.ObjectId = js.native
+  var _id: typings.bson.mod.ObjectId
   
-  var index: scala.Double = js.native
+  var index: scala.Double
 }
 object BulkWriteResultUpsertedIdObject {
   

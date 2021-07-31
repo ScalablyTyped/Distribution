@@ -2,14 +2,12 @@ package typings.googleapis.languageV1Mod.languageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a mention for an entity in the text. Currently, proper noun
   * mentions are supported.
   */
-@js.native
 trait SchemaEntityMention extends StObject {
   
   /**
@@ -18,17 +16,17 @@ trait SchemaEntityMention extends StObject {
     * this field will contain the sentiment expressed for this mention of the
     * entity in the provided document.
     */
-  var sentiment: js.UndefOr[SchemaSentiment] = js.native
+  var sentiment: js.UndefOr[SchemaSentiment] = js.undefined
   
   /**
     * The mention text.
     */
-  var text: js.UndefOr[SchemaTextSpan] = js.native
+  var text: js.UndefOr[SchemaTextSpan] = js.undefined
   
   /**
     * The type of the entity mention.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaEntityMention {
   

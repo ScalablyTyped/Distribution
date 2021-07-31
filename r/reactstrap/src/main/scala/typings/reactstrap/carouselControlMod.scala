@@ -9,7 +9,6 @@ import typings.reactstrap.reactstrapStrings.prev
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselControlMod {
@@ -21,18 +20,18 @@ object carouselControlMod {
   
   type CarouselControl = Component[CarouselControlProps, js.Object, js.Any]
   
-  @js.native
   trait CarouselControlProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var direction: prev | next = js.native
+    var direction: prev | next
     
-    var directionText: js.UndefOr[String] = js.native
+    var directionText: js.UndefOr[String] = js.undefined
     
-    def onClickHandler(): Unit = js.native
+    def onClickHandler(): Unit
   }
   object CarouselControlProps {
     

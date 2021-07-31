@@ -3,58 +3,49 @@ package typings.reactNativeOrientation
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-native-orientation", "addOrientationListener")
+  @JSImport("react-native-orientation", JSImport.Namespace)
   @js.native
-  def addOrientationListener(callback: js.Function1[/* orientation */ orientation, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-native-orientation", "addSpecificOrientationListener")
-  @js.native
-  def addSpecificOrientationListener(callback: js.Function1[/* specificOrientation */ specificOrientation, Unit]): Unit = js.native
+  @scala.inline
+  def addOrientationListener(callback: js.Function1[/* orientation */ orientation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addOrientationListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-orientation", "getInitialOrientation")
-  @js.native
-  def getInitialOrientation(): orientation = js.native
+  @scala.inline
+  def addSpecificOrientationListener(callback: js.Function1[/* specificOrientation */ specificOrientation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSpecificOrientationListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-orientation", "getOrientation")
-  @js.native
-  def getOrientation(callback: js.Function2[/* err */ Error, /* orientation */ orientation, Unit]): Unit = js.native
+  @scala.inline
+  def getInitialOrientation(): orientation = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialOrientation")().asInstanceOf[orientation]
   
-  @JSImport("react-native-orientation", "getSpecificOrientation")
-  @js.native
-  def getSpecificOrientation(callback: js.Function2[/* err */ Error, /* orientation */ specificOrientation, Unit]): Unit = js.native
+  @scala.inline
+  def getOrientation(callback: js.Function2[/* err */ Error, /* orientation */ orientation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrientation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-orientation", "lockToLandscape")
-  @js.native
-  def lockToLandscape(): Unit = js.native
+  @scala.inline
+  def getSpecificOrientation(callback: js.Function2[/* err */ Error, /* orientation */ specificOrientation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpecificOrientation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-orientation", "lockToLandscapeLeft")
-  @js.native
-  def lockToLandscapeLeft(): Unit = js.native
+  @scala.inline
+  def lockToLandscape(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lockToLandscape")().asInstanceOf[Unit]
   
-  @JSImport("react-native-orientation", "lockToLandscapeRight")
-  @js.native
-  def lockToLandscapeRight(): Unit = js.native
+  @scala.inline
+  def lockToLandscapeLeft(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lockToLandscapeLeft")().asInstanceOf[Unit]
   
-  @JSImport("react-native-orientation", "lockToPortrait")
-  @js.native
-  def lockToPortrait(): Unit = js.native
+  @scala.inline
+  def lockToLandscapeRight(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lockToLandscapeRight")().asInstanceOf[Unit]
   
-  @JSImport("react-native-orientation", "removeOrientationListener")
-  @js.native
-  def removeOrientationListener(callback: js.Function1[/* orientation */ orientation, Unit]): Unit = js.native
+  @scala.inline
+  def lockToPortrait(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lockToPortrait")().asInstanceOf[Unit]
   
-  @JSImport("react-native-orientation", "removeSpecificOrientationListener")
-  @js.native
-  def removeSpecificOrientationListener(callback: js.Function1[/* specificOrientation */ specificOrientation, Unit]): Unit = js.native
+  @scala.inline
+  def removeOrientationListener(callback: js.Function1[/* orientation */ orientation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOrientationListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-orientation", "unlockAllOrientations")
-  @js.native
-  def unlockAllOrientations(): Unit = js.native
+  @scala.inline
+  def removeSpecificOrientationListener(callback: js.Function1[/* specificOrientation */ specificOrientation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSpecificOrientationListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def unlockAllOrientations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlockAllOrientations")().asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeOrientation.reactNativeOrientationStrings.LANDSCAPE

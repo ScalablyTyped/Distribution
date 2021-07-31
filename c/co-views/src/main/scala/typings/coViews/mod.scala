@@ -2,7 +2,6 @@ package typings.coViews
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,51 +9,50 @@ object mod {
   /**
     * Pass views `dir` and `opts` to return a render function.
     */
-  @JSImport("co-views", JSImport.Namespace)
-  @js.native
-  def apply(): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], _] = js.native
-  @JSImport("co-views", JSImport.Namespace)
-  @js.native
-  def apply(dir: js.UndefOr[scala.Nothing], opts: Options): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], _] = js.native
-  @JSImport("co-views", JSImport.Namespace)
-  @js.native
-  def apply(dir: String): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], _] = js.native
-  @JSImport("co-views", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, opts: Options): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], _] = js.native
+  @scala.inline
+  def apply(): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any]]
+  @scala.inline
+  def apply(dir: String): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any]]
+  @scala.inline
+  def apply(dir: String, opts: Options): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any]]
+  @scala.inline
+  def apply(dir: Unit, opts: Options): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any]]
   
+  @JSImport("co-views", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * default extname
       */
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
     /**
       * cache compiled templates
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * default extname
       */
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
     /**
       * common locals data
       */
-    var locals: js.UndefOr[js.Object] = js.native
+    var locals: js.UndefOr[js.Object] = js.undefined
     
     /**
       * engine map
       */
-    var map: js.UndefOr[js.Object] = js.native
+    var map: js.UndefOr[js.Object] = js.undefined
     
     /**
       * proxy partials
       */
-    var partials: js.UndefOr[js.Object] = js.native
+    var partials: js.UndefOr[js.Object] = js.undefined
   }
   object Options {
     

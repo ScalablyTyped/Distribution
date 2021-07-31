@@ -2,27 +2,25 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartParallelAxesLabelsSymbolOptions extends StObject {
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) The symbol type. Points to a definition function in the
     * `Highcharts.Renderer.symbols` collection.
     */
-  var `type`: js.UndefOr[SymbolKeyValue] = js.native
+  var `type`: js.UndefOr[SymbolKeyValue] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object ChartParallelAxesLabelsSymbolOptions {
   

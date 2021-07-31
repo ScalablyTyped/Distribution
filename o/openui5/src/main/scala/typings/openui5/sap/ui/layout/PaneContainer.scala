@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.core.Orientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaneContainer extends Element {
+trait PaneContainer
+  extends StObject
+     with Element {
   
   /**
     * Adds some pane to the aggregation <code>panes</code>.

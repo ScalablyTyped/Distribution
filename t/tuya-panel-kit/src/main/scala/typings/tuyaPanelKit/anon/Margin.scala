@@ -3,27 +3,25 @@ package typings.tuyaPanelKit.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Margin extends StObject {
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var margin: js.UndefOr[Double | js.Array[Double]] = js.native
+  var margin: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var onThumbTintColor: js.UndefOr[String] = js.native
+  var onThumbTintColor: js.UndefOr[String] = js.undefined
   
-  var onTintColor: js.UndefOr[String] = js.native
+  var onTintColor: js.UndefOr[String] = js.undefined
   
-  var thumbSize: js.UndefOr[Double] = js.native
+  var thumbSize: js.UndefOr[Double] = js.undefined
   
-  var thumbTintColor: js.UndefOr[String] = js.native
+  var thumbTintColor: js.UndefOr[String] = js.undefined
   
-  var tintColor: js.UndefOr[String | StringDictionary[String]] = js.native
+  var tintColor: js.UndefOr[String | StringDictionary[String]] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Margin {
   

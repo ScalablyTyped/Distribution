@@ -6,29 +6,30 @@ import typings.react.mod.Key
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabPanelListMod {
   
-  @JSImport("rc-tabs/es/TabPanelList", JSImport.Default)
+  @JSImport("rc-tabs/es/TabPanelList", JSImport.Namespace)
   @js.native
-  def default(hasIdActiveKeyAnimatedTabPositionRtlDestroyInactiveTabPane: TabPanelListProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasIdActiveKeyAnimatedTabPositionRtlDestroyInactiveTabPane: TabPanelListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIdActiveKeyAnimatedTabPositionRtlDestroyInactiveTabPane.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait TabPanelListProps extends StObject {
     
-    var activeKey: Key = js.native
+    var activeKey: Key
     
-    var animated: js.UndefOr[AnimatedConfig] = js.native
+    var animated: js.UndefOr[AnimatedConfig] = js.undefined
     
-    var destroyInactiveTabPane: js.UndefOr[Boolean] = js.native
+    var destroyInactiveTabPane: js.UndefOr[Boolean] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var rtl: Boolean = js.native
+    var rtl: Boolean
     
-    var tabPosition: js.UndefOr[TabPosition] = js.native
+    var tabPosition: js.UndefOr[TabPosition] = js.undefined
   }
   object TabPanelListProps {
     

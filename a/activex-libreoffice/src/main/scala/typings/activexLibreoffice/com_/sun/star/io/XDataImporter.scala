@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Importer objects are registered for specific components and data types.
   */
-@js.native
-trait XDataImporter extends XInterface {
+trait XDataImporter
+  extends StObject
+     with XInterface {
   
   /** cancels the import process. */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /** imports data for a component from an active data source. */
-  def importData(aActiveSource: XActiveDataSource, Component: XComponent, aListener: XDataTransferEventListener): Unit = js.native
+  def importData(aActiveSource: XActiveDataSource, Component: XComponent, aListener: XDataTransferEventListener): Unit
 }
 object XDataImporter {
   

@@ -11,8 +11,8 @@ A Karma plugin. Report all spec-results to console (like mocha's spec reporter).
 | Full name          | karma-spec-reporter |
 | Keywords           | karma-plugin, reporter |
 | # releases         | 0 |
-| # dependents       | 132 |
-| # downloads        | 11860893 |
+| # dependents       | 144 |
+| # downloads        | 13143766 |
 | # stars            | 12 |
 
 ## Links

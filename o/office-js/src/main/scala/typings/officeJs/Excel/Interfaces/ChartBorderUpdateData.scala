@@ -14,11 +14,9 @@ import typings.officeJs.officeJsStrings.None
 import typings.officeJs.officeJsStrings.RoundDot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartBorder object, for use in `chartBorder.set({ ... })`. */
-@js.native
 trait ChartBorderUpdateData extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait ChartBorderUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -37,7 +35,7 @@ trait ChartBorderUpdateData extends StObject {
     */
   var lineStyle: js.UndefOr[
     ChartLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Grey25 | Grey50 | Grey75 | Automatic | RoundDot
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait ChartBorderUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object ChartBorderUpdateData {
   

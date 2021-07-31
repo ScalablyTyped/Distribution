@@ -11,8 +11,8 @@ Fast and simple xml generator. Supports attributes, CDATA, etc. Includes tests a
 | Full name          | xml |
 | Keywords           | xml, create, builder, json, simple |
 | # releases         | 0 |
-| # dependents       | 336 |
-| # downloads        | 74981243 |
+| # dependents       | 353 |
+| # downloads        | 91390649 |
 | # stars            | 38 |
 
 ## Links

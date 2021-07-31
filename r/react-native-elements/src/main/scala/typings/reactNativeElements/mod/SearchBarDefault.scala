@@ -2,25 +2,25 @@ package typings.reactNativeElements.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchBarDefault extends SearchBarBase {
+trait SearchBarDefault
+  extends StObject
+     with SearchBarBase {
   
   /**
     * Change theme to light theme
     *
     * @default false
     */
-  var lightTheme: js.UndefOr[Boolean] = js.native
+  var lightTheme: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Change TextInput styling to rounded corners
     *
     * @default false
     */
-  var round: js.UndefOr[Boolean] = js.native
+  var round: js.UndefOr[Boolean] = js.undefined
 }
 object SearchBarDefault {
   

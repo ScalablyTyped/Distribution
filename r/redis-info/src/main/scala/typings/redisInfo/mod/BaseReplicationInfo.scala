@@ -2,29 +2,27 @@ package typings.redisInfo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseReplicationInfo extends StObject {
   
-  var connected_slaves: String = js.native
+  var connected_slaves: String
   
-  var master_repl_offset: String = js.native
+  var master_repl_offset: String
   
-  var master_replid: String = js.native
+  var master_replid: String
   
-  var master_replid2: String = js.native
+  var master_replid2: String
   
-  var repl_backlog_active: Flag = js.native
+  var repl_backlog_active: Flag
   
-  var repl_backlog_first_byte_offset: String = js.native
+  var repl_backlog_first_byte_offset: String
   
-  var repl_backlog_histlen: String = js.native
+  var repl_backlog_histlen: String
   
-  var repl_backlog_size: String = js.native
+  var repl_backlog_size: String
   
-  var second_repl_offset: String = js.native
+  var second_repl_offset: String
 }
 object BaseReplicationInfo {
   

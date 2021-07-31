@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rename extends StObject {
   
   /** The new title of the drive object. */
-  var newTitle: js.UndefOr[String] = js.native
+  var newTitle: js.UndefOr[String] = js.undefined
   
   /** The previous title of the drive object. */
-  var oldTitle: js.UndefOr[String] = js.native
+  var oldTitle: js.UndefOr[String] = js.undefined
 }
 object Rename {
   

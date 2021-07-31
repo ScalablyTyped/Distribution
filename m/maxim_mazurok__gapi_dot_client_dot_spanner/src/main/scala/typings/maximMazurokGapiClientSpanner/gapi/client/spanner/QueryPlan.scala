@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryPlan extends StObject {
   
   /** The nodes in the query plan. Plan nodes are returned in pre-order starting with the plan root. Each PlanNode's `id` corresponds to its index in `plan_nodes`. */
-  var planNodes: js.UndefOr[js.Array[PlanNode]] = js.native
+  var planNodes: js.UndefOr[js.Array[PlanNode]] = js.undefined
 }
 object QueryPlan {
   

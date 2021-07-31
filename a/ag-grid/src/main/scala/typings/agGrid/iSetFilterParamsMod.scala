@@ -11,41 +11,40 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iSetFilterParamsMod {
   
-  @js.native
   trait ISetFilterParams
-    extends IFilterParams
+    extends StObject
+       with IFilterParams
        with ComponentHolder {
     
     @JSName("apply")
-    var apply: Boolean = js.native
+    var apply: Boolean
     
-    var cellHeight: Double = js.native
+    var cellHeight: Double
     
-    var cellRenderer: InstantiableICellRendererComp | ICellRendererFunc | String = js.native
+    var cellRenderer: InstantiableICellRendererComp | ICellRendererFunc | String
     
-    var comparator: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.native
+    var comparator: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.undefined
     
-    var debounceMs: js.UndefOr[Double] = js.native
+    var debounceMs: js.UndefOr[Double] = js.undefined
     
-    var miniFilterSearchByRefDataKey: js.UndefOr[Boolean] = js.native
+    var miniFilterSearchByRefDataKey: js.UndefOr[Boolean] = js.undefined
     
     @JSName("newRowsAction")
-    var newRowsAction_ISetFilterParams: String = js.native
+    var newRowsAction_ISetFilterParams: String
     
-    var selectAllOnMiniFilter: Boolean = js.native
+    var selectAllOnMiniFilter: Boolean
     
-    var suppressMiniFilter: Boolean = js.native
+    var suppressMiniFilter: Boolean
     
-    var suppressRemoveEntries: js.UndefOr[Boolean] = js.native
+    var suppressRemoveEntries: js.UndefOr[Boolean] = js.undefined
     
-    var suppressSorting: Boolean = js.native
+    var suppressSorting: Boolean
     
-    var values: js.UndefOr[SetFilterValues] = js.native
+    var values: js.UndefOr[SetFilterValues] = js.undefined
   }
   object ISetFilterParams {
     
@@ -141,12 +140,11 @@ object iSetFilterParamsMod {
   
   type SetFilterValuesFunc = js.Function1[/* params */ SetFilterValuesFuncParams, Unit]
   
-  @js.native
   trait SetFilterValuesFuncParams extends StObject {
     
-    var colDef: ColDef = js.native
+    var colDef: ColDef
     
-    def success(values: js.Array[String]): Unit = js.native
+    def success(values: js.Array[String]): Unit
   }
   object SetFilterValuesFuncParams {
     

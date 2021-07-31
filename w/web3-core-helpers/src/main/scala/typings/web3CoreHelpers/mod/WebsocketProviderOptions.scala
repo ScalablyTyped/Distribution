@@ -2,29 +2,27 @@ package typings.web3CoreHelpers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebsocketProviderOptions extends StObject {
   
-  var clientConfig: js.UndefOr[js.Object] = js.native
+  var clientConfig: js.UndefOr[js.Object] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
-  var reconnect: js.UndefOr[ReconnectOptions] = js.native
+  var reconnect: js.UndefOr[ReconnectOptions] = js.undefined
   
-  var reconnectDelay: js.UndefOr[Double] = js.native
+  var reconnectDelay: js.UndefOr[Double] = js.undefined
   
-  var requestOptions: js.UndefOr[js.Any] = js.native
+  var requestOptions: js.UndefOr[js.Any] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object WebsocketProviderOptions {
   

@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait ConditionalDataBarPositiveFormatLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait ConditionalDataBarPositiveFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var borderColor: js.UndefOr[Boolean] = js.native
+  var borderColor: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait ConditionalDataBarPositiveFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var fillColor: js.UndefOr[Boolean] = js.native
+  var fillColor: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait ConditionalDataBarPositiveFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var gradientFill: js.UndefOr[Boolean] = js.native
+  var gradientFill: js.UndefOr[Boolean] = js.undefined
 }
 object ConditionalDataBarPositiveFormatLoadOptions {
   

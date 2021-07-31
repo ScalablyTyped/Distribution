@@ -10,9 +10,9 @@ tab completion helpers, for node cli programs. Inspired by npm completion.
 | ------------------ | :-------------: |
 | Full name          | tabtab |
 | Keywords           | terminal, tab, unix, console, complete, completion |
-| # releases         | 4 |
-| # dependents       | 126 |
-| # downloads        | 27770186 |
+| # releases         | 0 |
+| # dependents       | 132 |
+| # downloads        | 32463033 |
 | # stars            | 7 |
 
 ## Links

@@ -3,17 +3,15 @@ package typings.googleapis.anon
 import typings.googleapis.bloggerV3Mod.bloggerV3.SchemaPost
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Items extends StObject {
   
-  var items: js.UndefOr[js.Array[SchemaPost]] = js.native
+  var items: js.UndefOr[js.Array[SchemaPost]] = js.undefined
   
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object Items {
   

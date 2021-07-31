@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mp2Settings extends StObject {
   
   /**
     * Specify the average bitrate in bits per second.
     */
-  var Bitrate: js.UndefOr[integerMin32000Max384000] = js.native
+  var Bitrate: js.UndefOr[integerMin32000Max384000] = js.undefined
   
   /**
     * Set Channels to specify the number of channels in this output audio track. Choosing Mono in the console will give you 1 output channel; choosing Stereo will give you 2. In the API, valid values are 1 and 2.
     */
-  var Channels: js.UndefOr[integerMin1Max2] = js.native
+  var Channels: js.UndefOr[integerMin1Max2] = js.undefined
   
   /**
     * Sample rate in hz.
     */
-  var SampleRate: js.UndefOr[integerMin32000Max48000] = js.native
+  var SampleRate: js.UndefOr[integerMin32000Max48000] = js.undefined
 }
 object Mp2Settings {
   

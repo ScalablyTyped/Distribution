@@ -11,7 +11,6 @@ import typings.react.mod.Component
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timepickerMod {
@@ -34,12 +33,11 @@ object timepickerMod {
     def handleChange(steps: Double): Unit = js.native
   }
   
-  @js.native
   trait TimePickerOverrides extends StObject {
     
     var Select: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object TimePickerOverrides {
     
@@ -62,32 +60,31 @@ object timepickerMod {
     }
   }
   
-  @js.native
   trait TimePickerProps extends StObject {
     
-    var creatable: js.UndefOr[Boolean] = js.native
+    var creatable: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[`12` | `24`] = js.native
+    var format: js.UndefOr[`12` | `24`] = js.undefined
     
-    var nullable: js.UndefOr[Boolean] = js.native
+    var nullable: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* args */ Date, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* args */ Date, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[TimePickerOverrides] = js.native
+    var overrides: js.UndefOr[TimePickerOverrides] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var positive: js.UndefOr[Boolean] = js.native
+    var positive: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[mini | default_ | compact | large_] = js.native
+    var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[Date | Null] = js.native
+    var value: js.UndefOr[Date | Null] = js.undefined
   }
   object TimePickerProps {
     
@@ -131,7 +128,7 @@ object timepickerMod {
       def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* args */ Date => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* args */ Date => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -177,12 +174,11 @@ object timepickerMod {
     }
   }
   
-  @js.native
   trait TimePickerState extends StObject {
     
-    var steps: js.Array[Double] = js.native
+    var steps: js.Array[Double]
     
-    var value: js.UndefOr[Option] = js.native
+    var value: js.UndefOr[Option] = js.undefined
   }
   object TimePickerState {
     

@@ -2,47 +2,45 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GalleryItem extends StObject {
   
-  var account_id: js.UndefOr[Double] = js.native
+  var account_id: js.UndefOr[Double] = js.undefined
   
-  var account_url: js.UndefOr[String] = js.native
+  var account_url: js.UndefOr[String] = js.undefined
   
-  var comment_count: Double = js.native
+  var comment_count: Double
   
-  var datetime: Double = js.native
+  var datetime: Double
   
-  var description: String = js.native
+  var description: String
   
-  var downs: Double = js.native
+  var downs: Double
   
-  var favorite: Boolean = js.native
+  var favorite: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var is_album: Boolean = js.native
+  var is_album: Boolean
   
-  var link: String = js.native
+  var link: String
   
-  var nsfw: js.UndefOr[Boolean] = js.native
+  var nsfw: js.UndefOr[Boolean] = js.undefined
   
-  var score: Double = js.native
+  var score: Double
   
-  var title: String = js.native
+  var title: String
   
-  var topic: String = js.native
+  var topic: String
   
-  var topic_id: Double = js.native
+  var topic_id: Double
   
-  var ups: Double = js.native
+  var ups: Double
   
-  var views: Double = js.native
+  var views: Double
   
-  var vote: js.UndefOr[String] = js.native
+  var vote: js.UndefOr[String] = js.undefined
 }
 object GalleryItem {
   

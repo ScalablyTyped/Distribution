@@ -3,11 +3,12 @@ package typings.kendoUi.kendo.drawing
 import typings.kendoUi.kendo.geometry.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiPath extends Element {
+trait MultiPath
+  extends StObject
+     with Element {
   
   def close(): MultiPath = js.native
   
@@ -43,7 +44,7 @@ trait MultiPath extends Element {
   var paths: js.Any = js.native
   
   def stroke(color: String): MultiPath = js.native
-  def stroke(color: String, width: js.UndefOr[scala.Nothing], opacity: Double): MultiPath = js.native
   def stroke(color: String, width: Double): MultiPath = js.native
   def stroke(color: String, width: Double, opacity: Double): MultiPath = js.native
+  def stroke(color: String, width: Unit, opacity: Double): MultiPath = js.native
 }

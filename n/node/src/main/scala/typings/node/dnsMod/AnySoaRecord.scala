@@ -3,15 +3,14 @@ package typings.node.dnsMod
 import typings.node.nodeStrings.SOA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnySoaRecord
-  extends SoaRecord
+  extends StObject
+     with SoaRecord
      with AnyRecord {
   
-  var `type`: SOA = js.native
+  var `type`: SOA
 }
 object AnySoaRecord {
   
@@ -23,11 +22,10 @@ object AnySoaRecord {
     nsname: String,
     refresh: Double,
     retry: Double,
-    serial: Double,
-    `type`: SOA
+    serial: Double
   ): AnySoaRecord = {
     val __obj = js.Dynamic.literal(expire = expire.asInstanceOf[js.Any], hostmaster = hostmaster.asInstanceOf[js.Any], minttl = minttl.asInstanceOf[js.Any], nsname = nsname.asInstanceOf[js.Any], refresh = refresh.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SOA")
     __obj.asInstanceOf[AnySoaRecord]
   }
   

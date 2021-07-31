@@ -7,7 +7,6 @@ import typings.braintreeWeb.anon.Token
 import typings.braintreeWeb.coreMod.callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applePayMod {
@@ -57,47 +56,63 @@ object applePayMod {
   object ApplePayStatusCodes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ApplePayStatusCodes with Double] = js.native
+    def apply(value: Double): js.UndefOr[ApplePayStatusCodes & Double] = js.native
     
     // The requested action failed.
     @js.native
-    sealed trait STATUS_FAILURE extends ApplePayStatusCodes
-    /* 0 */ val STATUS_FAILURE: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_FAILURE with Double = js.native
+    sealed trait STATUS_FAILURE
+      extends StObject
+         with ApplePayStatusCodes
+    /* 0 */ val STATUS_FAILURE: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_FAILURE & Double = js.native
     
     // The billing address is not valid.
     @js.native
-    sealed trait STATUS_INVALID_BILLING_POSTAL_ADDRESS extends ApplePayStatusCodes
-    /* 1 */ val STATUS_INVALID_BILLING_POSTAL_ADDRESS: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_INVALID_BILLING_POSTAL_ADDRESS with Double = js.native
+    sealed trait STATUS_INVALID_BILLING_POSTAL_ADDRESS
+      extends StObject
+         with ApplePayStatusCodes
+    /* 1 */ val STATUS_INVALID_BILLING_POSTAL_ADDRESS: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_INVALID_BILLING_POSTAL_ADDRESS & Double = js.native
     
     // The shipping contact information is not valid.
     @js.native
-    sealed trait STATUS_INVALID_SHIPPING_CONTACT extends ApplePayStatusCodes
-    /* 3 */ val STATUS_INVALID_SHIPPING_CONTACT: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_INVALID_SHIPPING_CONTACT with Double = js.native
+    sealed trait STATUS_INVALID_SHIPPING_CONTACT
+      extends StObject
+         with ApplePayStatusCodes
+    /* 3 */ val STATUS_INVALID_SHIPPING_CONTACT: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_INVALID_SHIPPING_CONTACT & Double = js.native
     
     // The shipping address is not valid.
     @js.native
-    sealed trait STATUS_INVALID_SHIPPING_POSTAL_ADDRESS extends ApplePayStatusCodes
-    /* 2 */ val STATUS_INVALID_SHIPPING_POSTAL_ADDRESS: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_INVALID_SHIPPING_POSTAL_ADDRESS with Double = js.native
+    sealed trait STATUS_INVALID_SHIPPING_POSTAL_ADDRESS
+      extends StObject
+         with ApplePayStatusCodes
+    /* 2 */ val STATUS_INVALID_SHIPPING_POSTAL_ADDRESS: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_INVALID_SHIPPING_POSTAL_ADDRESS & Double = js.native
     
     // The PIN information is not valid.Cards on the China Union Pay network may require a PIN.
     @js.native
-    sealed trait STATUS_PIN_INCORRECT extends ApplePayStatusCodes
-    /* 5 */ val STATUS_PIN_INCORRECT: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_PIN_INCORRECT with Double = js.native
+    sealed trait STATUS_PIN_INCORRECT
+      extends StObject
+         with ApplePayStatusCodes
+    /* 5 */ val STATUS_PIN_INCORRECT: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_PIN_INCORRECT & Double = js.native
     
     // The maximum number of tries for a PIN has been reached and the user has been locked out. Cards on the China Union Pay network may require a PIN.
     @js.native
-    sealed trait STATUS_PIN_LOCKOUT extends ApplePayStatusCodes
-    /* 6 */ val STATUS_PIN_LOCKOUT: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_PIN_LOCKOUT with Double = js.native
+    sealed trait STATUS_PIN_LOCKOUT
+      extends StObject
+         with ApplePayStatusCodes
+    /* 6 */ val STATUS_PIN_LOCKOUT: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_PIN_LOCKOUT & Double = js.native
     
     // The required PIN information was not provided. Cards on the China Union Pay payment network may require a PIN to authenticate the transaction.
     @js.native
-    sealed trait STATUS_PIN_REQUIRED extends ApplePayStatusCodes
-    /* 4 */ val STATUS_PIN_REQUIRED: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_PIN_REQUIRED with Double = js.native
+    sealed trait STATUS_PIN_REQUIRED
+      extends StObject
+         with ApplePayStatusCodes
+    /* 4 */ val STATUS_PIN_REQUIRED: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_PIN_REQUIRED & Double = js.native
     
     // The requested action succeeded.
     @js.native
-    sealed trait STATUS_SUCCESS extends ApplePayStatusCodes
-    /* 1 */ val STATUS_SUCCESS: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_SUCCESS with Double = js.native
+    sealed trait STATUS_SUCCESS
+      extends StObject
+         with ApplePayStatusCodes
+    /* 1 */ val STATUS_SUCCESS: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_SUCCESS & Double = js.native
   }
   
   @js.native
@@ -109,7 +124,7 @@ object applePayMod {
     var VERSION: String = js.native
     
     def create(options: Client): Unit = js.native
-    def create(options: Client, callback: callback[_]): Unit = js.native
+    def create(options: Client, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Merges a payment request with Braintree defaults
@@ -135,7 +150,7 @@ object applePayMod {
     def createPaymentRequest(paymentRequest: ApplePayPaymentRequest): ApplePayPaymentRequest = js.native
     
     @JSName("create")
-    def create_Promise(options: Client): js.Promise[_] = js.native
+    def create_Promise(options: Client): js.Promise[js.Any] = js.native
     
     /**
       * Validates the merchant website, as required by ApplePaySession before payment can be authorized.     * - The canonical name for your store.
@@ -167,7 +182,7 @@ object applePayMod {
       *   };
       * });
       */
-    def performValidation(options: DisplayName, callback: callback[_]): Unit = js.native
+    def performValidation(options: DisplayName, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Tokenizes an Apple Pay payment.     * @example
@@ -191,17 +206,16 @@ object applePayMod {
       *  };
       * });
       */
-    def tokenize(options: Token, callback: callback[_]): Unit = js.native
+    def tokenize(options: Token, callback: callback[js.Any]): Unit = js.native
   }
   
-  @js.native
   trait ApplePayPayload extends StObject {
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var domainName: String = js.native
+    var domainName: String
     
-    var merchantIdentifier: String = js.native
+    var merchantIdentifier: String
   }
   object ApplePayPayload {
     
@@ -225,30 +239,29 @@ object applePayMod {
     }
   }
   
-  @js.native
   trait ApplePayPaymentRequest extends StObject {
     
-    var billingContact: js.UndefOr[js.Any] = js.native
+    var billingContact: js.UndefOr[js.Any] = js.undefined
     
-    var countryCode: String = js.native
+    var countryCode: String
     
-    var currencyCode: String = js.native
+    var currencyCode: String
     
-    var merchantCapabilities: js.Array[String] = js.native
+    var merchantCapabilities: js.Array[String]
     
-    var requiredBillingContactFields: js.UndefOr[js.Any] = js.native
+    var requiredBillingContactFields: js.UndefOr[js.Any] = js.undefined
     
-    var requiredShippingContactFields: js.UndefOr[js.Any] = js.native
+    var requiredShippingContactFields: js.UndefOr[js.Any] = js.undefined
     
-    var shippingContact: js.UndefOr[js.Any] = js.native
+    var shippingContact: js.UndefOr[js.Any] = js.undefined
     
-    var shippingMethods: js.UndefOr[js.Any] = js.native
+    var shippingMethods: js.UndefOr[js.Any] = js.undefined
     
-    var shippingType: js.UndefOr[js.Any] = js.native
+    var shippingType: js.UndefOr[js.Any] = js.undefined
     
-    var supportedNetworks: js.Array[String] = js.native
+    var supportedNetworks: js.Array[String]
     
-    var total: Amount = js.native
+    var total: Amount
   }
   object ApplePayPaymentRequest {
     

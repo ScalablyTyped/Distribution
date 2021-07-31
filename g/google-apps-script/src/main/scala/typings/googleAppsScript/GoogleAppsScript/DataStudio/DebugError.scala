@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setText("This is the debug error text.")
   *       .throwException();
   */
-@js.native
 trait DebugError extends StObject {
   
-  def printJson(): String = js.native
+  def printJson(): String
   
-  def setText(text: String): DebugError = js.native
+  def setText(text: String): DebugError
   
-  def throwException(): scala.Nothing = js.native
+  def throwException(): scala.Nothing
 }
 object DebugError {
   

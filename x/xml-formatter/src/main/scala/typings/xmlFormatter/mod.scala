@@ -2,32 +2,32 @@ package typings.xmlFormatter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("xml-formatter", JSImport.Namespace)
-  @js.native
-  def apply(xml: String): String = js.native
-  @JSImport("xml-formatter", JSImport.Namespace)
-  @js.native
-  def apply(xml: String, options: FormatOptions): String = js.native
+  @scala.inline
+  def apply(xml: String): String = ^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(xml: String, options: FormatOptions): String = (^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("xml-formatter", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait FormatOptions extends StObject {
     
-    var collapseContent: js.UndefOr[Boolean] = js.native
+    var collapseContent: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[js.Function1[/* node */ js.Any, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* node */ js.Any, Boolean]] = js.undefined
     
-    var indentation: js.UndefOr[String] = js.native
+    var indentation: js.UndefOr[String] = js.undefined
     
-    var lineSeparator: js.UndefOr[String] = js.native
+    var lineSeparator: js.UndefOr[String] = js.undefined
     
-    var stripComments: js.UndefOr[Boolean] = js.native
+    var stripComments: js.UndefOr[Boolean] = js.undefined
     
-    var whiteSpaceAtEndOfSelfclosingTag: js.UndefOr[Boolean] = js.native
+    var whiteSpaceAtEndOfSelfclosingTag: js.UndefOr[Boolean] = js.undefined
   }
   object FormatOptions {
     

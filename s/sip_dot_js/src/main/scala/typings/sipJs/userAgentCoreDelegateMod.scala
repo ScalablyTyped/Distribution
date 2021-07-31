@@ -8,49 +8,47 @@ import typings.sipJs.registerMod.IncomingRegisterRequest
 import typings.sipJs.subscribeMod.IncomingSubscribeRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userAgentCoreDelegateMod {
   
-  @js.native
   trait UserAgentCoreDelegate extends StObject {
     
     /**
       * Receive INVITE request.
       * @param request - Incoming INVITE request.
       */
-    var onInvite: js.UndefOr[js.Function1[/* request */ IncomingInviteRequest, Unit]] = js.native
+    var onInvite: js.UndefOr[js.Function1[/* request */ IncomingInviteRequest, Unit]] = js.undefined
     
     /**
       * Receive MESSAGE request.
       * @param request - Incoming MESSAGE request.
       */
-    var onMessage: js.UndefOr[js.Function1[/* request */ IncomingMessageRequest, Unit]] = js.native
+    var onMessage: js.UndefOr[js.Function1[/* request */ IncomingMessageRequest, Unit]] = js.undefined
     
     /**
       * DEPRECATED. Receive NOTIFY request.
       * @param message - Incoming NOTIFY request.
       */
-    var onNotify: js.UndefOr[js.Function1[/* request */ IncomingNotifyRequest, Unit]] = js.native
+    var onNotify: js.UndefOr[js.Function1[/* request */ IncomingNotifyRequest, Unit]] = js.undefined
     
     /**
       * Receive REFER request.
       * @param request - Incoming REFER request.
       */
-    var onRefer: js.UndefOr[js.Function1[/* request */ IncomingReferRequest, Unit]] = js.native
+    var onRefer: js.UndefOr[js.Function1[/* request */ IncomingReferRequest, Unit]] = js.undefined
     
     /**
       * Receive REGISTER request.
       * @param request - Incoming REGISTER request.
       */
-    var onRegister: js.UndefOr[js.Function1[/* request */ IncomingRegisterRequest, Unit]] = js.native
+    var onRegister: js.UndefOr[js.Function1[/* request */ IncomingRegisterRequest, Unit]] = js.undefined
     
     /**
       * Receive SUBSCRIBE request.
       * @param request - Incoming SUBSCRIBE request.
       */
-    var onSubscribe: js.UndefOr[js.Function1[/* request */ IncomingSubscribeRequest, Unit]] = js.native
+    var onSubscribe: js.UndefOr[js.Function1[/* request */ IncomingSubscribeRequest, Unit]] = js.undefined
   }
   object UserAgentCoreDelegate {
     

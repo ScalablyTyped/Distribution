@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupRetentionSettings extends StObject {
   
   /** Depending on the value of retention_unit, this is used to determine if a backup needs to be deleted. If retention_unit is 'COUNT', we will retain this many backups. */
-  var retainedBackups: js.UndefOr[Double] = js.native
+  var retainedBackups: js.UndefOr[Double] = js.undefined
   
   /** The unit that 'retained_backups' represents. */
-  var retentionUnit: js.UndefOr[String] = js.native
+  var retentionUnit: js.UndefOr[String] = js.undefined
 }
 object BackupRetentionSettings {
   

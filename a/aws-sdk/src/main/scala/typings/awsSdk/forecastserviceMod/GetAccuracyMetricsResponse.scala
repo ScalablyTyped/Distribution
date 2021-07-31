@@ -2,16 +2,14 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccuracyMetricsResponse extends StObject {
   
   /**
     * An array of results from evaluating the predictor.
     */
-  var PredictorEvaluationResults: js.UndefOr[typings.awsSdk.forecastserviceMod.PredictorEvaluationResults] = js.native
+  var PredictorEvaluationResults: js.UndefOr[typings.awsSdk.forecastserviceMod.PredictorEvaluationResults] = js.undefined
 }
 object GetAccuracyMetricsResponse {
   

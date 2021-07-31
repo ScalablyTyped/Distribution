@@ -5,35 +5,33 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`1`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SITYPEDEVELOPINGSERVER extends StObject {
   
   /**
     * Developing server
     * @since 2.3
     */
-  var SI_TYPE_DEVELOPING_SERVER: `2` = js.native
+  var SI_TYPE_DEVELOPING_SERVER: `2`
   
   /**
     * Development server
     * @since 2.3
     */
-  var SI_TYPE_DEVELOPMENT_SERVER: `1` = js.native
+  var SI_TYPE_DEVELOPMENT_SERVER: `1`
   
   /**
     * Operating server
     * @since 2.3
     */
-  var SI_TYPE_OPERATIING_SERVER: `0` = js.native
+  var SI_TYPE_OPERATIING_SERVER: `0`
 }
 object SITYPEDEVELOPINGSERVER {
   
   @scala.inline
-  def apply(SI_TYPE_DEVELOPING_SERVER: `2`, SI_TYPE_DEVELOPMENT_SERVER: `1`, SI_TYPE_OPERATIING_SERVER: `0`): SITYPEDEVELOPINGSERVER = {
-    val __obj = js.Dynamic.literal(SI_TYPE_DEVELOPING_SERVER = SI_TYPE_DEVELOPING_SERVER.asInstanceOf[js.Any], SI_TYPE_DEVELOPMENT_SERVER = SI_TYPE_DEVELOPMENT_SERVER.asInstanceOf[js.Any], SI_TYPE_OPERATIING_SERVER = SI_TYPE_OPERATIING_SERVER.asInstanceOf[js.Any])
+  def apply(): SITYPEDEVELOPINGSERVER = {
+    val __obj = js.Dynamic.literal(SI_TYPE_DEVELOPING_SERVER = 2, SI_TYPE_DEVELOPMENT_SERVER = 1, SI_TYPE_OPERATIING_SERVER = 0)
     __obj.asInstanceOf[SITYPEDEVELOPINGSERVER]
   }
   

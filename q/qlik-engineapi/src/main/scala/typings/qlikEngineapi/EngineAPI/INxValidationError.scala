@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxValidationError...
   */
-@js.native
 trait INxValidationError extends StObject {
   
   /**
@@ -17,21 +15,21 @@ trait INxValidationError extends StObject {
     * This parameter is optional.
     * String
     */
-  var qContext: js.UndefOr[String] = js.native
+  var qContext: js.UndefOr[String] = js.undefined
   
   /**
     * Error code.
     * This parameter is always displayed in case of error.
     * Integer
     */
-  var qErrorCode: Double = js.native
+  var qErrorCode: Double
   
   /**
     * Internal information from the server.
     * This parameter is optional.
     * String
     */
-  var qExtendedMessage: js.UndefOr[String] = js.native
+  var qExtendedMessage: js.UndefOr[String] = js.undefined
 }
 object INxValidationError {
   

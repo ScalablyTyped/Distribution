@@ -5,7 +5,6 @@ import typings.cathoQuantum.anon.`1`
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object socialsMod {
@@ -19,16 +18,15 @@ object socialsMod {
   
   type Socials = Component[SocialsProps, js.Object, js.Any]
   
-  @js.native
   trait SocialsProps extends StObject {
     
-    var items: NonEmptyArray[Name] = js.native
+    var items: NonEmptyArray[Name]
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[`1`] = js.native
+    var theme: js.UndefOr[`1`] = js.undefined
     
-    var withBox: js.UndefOr[Boolean] = js.native
+    var withBox: js.UndefOr[Boolean] = js.undefined
   }
   object SocialsProps {
     

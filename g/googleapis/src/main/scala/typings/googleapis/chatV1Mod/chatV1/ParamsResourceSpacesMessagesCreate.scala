@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSpacesMessagesCreate extends StandardParameters {
+trait ParamsResourceSpacesMessagesCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. Space resource name, in the form "spaces/x". Example:
     * spaces/AAAAMpdlehY
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaMessage] = js.native
+  var requestBody: js.UndefOr[SchemaMessage] = js.undefined
   
   /**
     * Opaque thread identifier string that can be specified to group messages
@@ -37,7 +37,7 @@ trait ParamsResourceSpacesMessagesCreate extends StandardParameters {
     * (created earlier by them) to post further updates to it.  Has no effect
     * if thread field, corresponding to an existing thread, is set in message.
     */
-  var threadKey: js.UndefOr[String] = js.native
+  var threadKey: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSpacesMessagesCreate {
   

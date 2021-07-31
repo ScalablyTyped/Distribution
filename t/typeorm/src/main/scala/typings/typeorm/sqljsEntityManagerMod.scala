@@ -6,7 +6,6 @@ import typings.typeorm.entityManagerMod.EntityManager
 import typings.typeorm.queryRunnerMod.QueryRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqljsEntityManagerMod {

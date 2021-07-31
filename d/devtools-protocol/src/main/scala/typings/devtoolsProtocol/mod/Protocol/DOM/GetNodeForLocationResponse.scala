@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNodeForLocationResponse extends StObject {
   
   /**
     * Resulting node.
     */
-  var backendNodeId: BackendNodeId = js.native
+  var backendNodeId: BackendNodeId
   
   /**
     * Frame this node belongs to.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * Id of the node at given coordinates, only when enabled and requested document.
     */
-  var nodeId: js.UndefOr[NodeId] = js.native
+  var nodeId: js.UndefOr[NodeId] = js.undefined
 }
 object GetNodeForLocationResponse {
   

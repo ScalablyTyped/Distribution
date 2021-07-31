@@ -2,7 +2,6 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,6 +21,6 @@ trait RowMethodsModel extends StObject {
     *
     * @param data Data to use for the new row. This may be an array, object or Javascript object instance, but must be in the same format as the other data in the table
     */
-  def add(data: js.Array[_]): Api = js.native
+  def add(data: js.Array[js.Any]): Api = js.native
   def add(data: js.Object): Api = js.native
 }

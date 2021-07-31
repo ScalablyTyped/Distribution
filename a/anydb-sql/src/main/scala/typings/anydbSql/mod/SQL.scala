@@ -3,13 +3,11 @@ package typings.anydbSql.mod
 import typings.anydbSql.anon.LOWER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SQL extends StObject {
   
-  var functions: LOWER = js.native
+  var functions: LOWER
 }
 object SQL {
   

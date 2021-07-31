@@ -6,13 +6,13 @@ import typings.gestalt.gestaltStrings.row
 import typings.gestalt.gestaltStrings.rowgroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TableHeaderCellProps extends TableCellProps {
+trait TableHeaderCellProps
+  extends StObject
+     with TableCellProps {
   
-  var scope: js.UndefOr[col | row | colgroup | rowgroup] = js.native
+  var scope: js.UndefOr[col | row | colgroup | rowgroup] = js.undefined
 }
 object TableHeaderCellProps {
   

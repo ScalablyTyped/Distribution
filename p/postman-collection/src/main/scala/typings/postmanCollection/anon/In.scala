@@ -2,15 +2,13 @@ package typings.postmanCollection.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait In extends StObject {
   
-  def in(`val`: js.Any): String = js.native
+  def in(`val`: js.Any): String
   
-  def out(`val`: String): js.Any = js.native
+  def out(`val`: String): js.Any
 }
 object In {
   

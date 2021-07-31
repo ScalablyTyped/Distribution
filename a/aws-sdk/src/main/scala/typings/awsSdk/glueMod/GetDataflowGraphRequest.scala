@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataflowGraphRequest extends StObject {
   
   /**
     * The Python script to transform.
     */
-  var PythonScript: js.UndefOr[typings.awsSdk.glueMod.PythonScript] = js.native
+  var PythonScript: js.UndefOr[typings.awsSdk.glueMod.PythonScript] = js.undefined
 }
 object GetDataflowGraphRequest {
   

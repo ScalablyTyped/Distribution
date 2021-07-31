@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait ConditionalColorScaleCriteria extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait ConditionalColorScaleCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var maximum: ConditionalColorScaleCriterion = js.native
+  var maximum: ConditionalColorScaleCriterion
   
   /**
     *
@@ -28,7 +26,7 @@ trait ConditionalColorScaleCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var midpoint: js.UndefOr[ConditionalColorScaleCriterion] = js.native
+  var midpoint: js.UndefOr[ConditionalColorScaleCriterion] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait ConditionalColorScaleCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var minimum: ConditionalColorScaleCriterion = js.native
+  var minimum: ConditionalColorScaleCriterion
 }
 object ConditionalColorScaleCriteria {
   

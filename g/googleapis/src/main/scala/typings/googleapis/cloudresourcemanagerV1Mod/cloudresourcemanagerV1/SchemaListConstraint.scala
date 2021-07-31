@@ -2,21 +2,19 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `Constraint` that allows or disallows a list of string values, which are
   * configured by an Organization&#39;s policy administrator with a `Policy`.
   */
-@js.native
 trait SchemaListConstraint extends StObject {
   
   /**
     * Optional. The Google Cloud Console will try to default to a configuration
     * that matches the value specified in this `Constraint`.
     */
-  var suggestedValue: js.UndefOr[String] = js.native
+  var suggestedValue: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether subtrees of Cloud Resource Manager resource hierarchy
@@ -24,7 +22,7 @@ trait SchemaListConstraint extends StObject {
     * example, `&quot;under:folders/123&quot;` would match any resource under
     * the &#39;folders/123&#39; folder.
     */
-  var supportsUnder: js.UndefOr[Boolean] = js.native
+  var supportsUnder: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaListConstraint {
   

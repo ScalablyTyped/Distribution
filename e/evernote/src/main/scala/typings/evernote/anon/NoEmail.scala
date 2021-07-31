@@ -2,21 +2,19 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoEmail extends StObject {
   
-  var noEmail: js.UndefOr[Boolean] = js.native
+  var noEmail: js.UndefOr[Boolean] = js.undefined
   
-  var noShare: js.UndefOr[Boolean] = js.native
+  var noShare: js.UndefOr[Boolean] = js.undefined
   
-  var noSharePublicly: js.UndefOr[Boolean] = js.native
+  var noSharePublicly: js.UndefOr[Boolean] = js.undefined
   
-  var noUpdateContent: js.UndefOr[Boolean] = js.native
+  var noUpdateContent: js.UndefOr[Boolean] = js.undefined
   
-  var noUpdateTitle: js.UndefOr[Boolean] = js.native
+  var noUpdateTitle: js.UndefOr[Boolean] = js.undefined
 }
 object NoEmail {
   

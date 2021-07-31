@@ -3,17 +3,18 @@ package typings.xss
 import typings.xss.anon.OnIgnoreTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("xss", JSImport.Default)
+  @JSImport("xss", JSImport.Namespace)
   @js.native
-  def default(html: String): String = js.native
-  @JSImport("xss", JSImport.Default)
-  @js.native
-  def default(html: String, options: IFilterXSSOptions): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(html: String, options: IFilterXSSOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("xss", "FilterXSS")
   @js.native
@@ -23,9 +24,8 @@ object mod {
     def process(html: String): String = js.native
   }
   
-  @JSImport("xss", "StripTagBody")
-  @js.native
-  def StripTagBody(tags: js.Array[String], next: js.Function0[Unit]): OnIgnoreTag = js.native
+  @scala.inline
+  def StripTagBody(tags: js.Array[String], next: js.Function0[Unit]): OnIgnoreTag = (^.asInstanceOf[js.Dynamic].applyDynamic("StripTagBody")(tags.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[OnIgnoreTag]
   
   @JSImport("xss", "clearNonPrintableCharacter")
   @js.native
@@ -55,42 +55,35 @@ object mod {
   @js.native
   val escapeQuote: EscapeHandler = js.native
   
-  @JSImport("xss", "filterXSS")
-  @js.native
-  def filterXSS(html: String): String = js.native
-  @JSImport("xss", "filterXSS")
-  @js.native
-  def filterXSS(html: String, options: IFilterXSSOptions): String = js.native
+  @scala.inline
+  def filterXSS(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("filterXSS")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def filterXSS(html: String, options: IFilterXSSOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("filterXSS")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("xss", "friendlyAttrValue")
   @js.native
   val friendlyAttrValue: EscapeHandler = js.native
   
-  @JSImport("xss", "getDefaultCSSWhiteList")
-  @js.native
-  def getDefaultCSSWhiteList(): ICSSFilter = js.native
+  @scala.inline
+  def getDefaultCSSWhiteList(): ICSSFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultCSSWhiteList")().asInstanceOf[ICSSFilter]
   
-  @JSImport("xss", "getDefaultWhiteList")
-  @js.native
-  def getDefaultWhiteList(): IWhiteList = js.native
+  @scala.inline
+  def getDefaultWhiteList(): IWhiteList = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultWhiteList")().asInstanceOf[IWhiteList]
   
   object global {
     
-    @JSGlobal("filterXSS")
-    @js.native
-    def filterXSS(html: String): String = js.native
-    @JSGlobal("filterXSS")
-    @js.native
-    def filterXSS(html: String, options: IFilterXSSOptions): String = js.native
+    @scala.inline
+    def filterXSS(html: String): String = js.Dynamic.global.applyDynamic("filterXSS")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def filterXSS(html: String, options: IFilterXSSOptions): String = (js.Dynamic.global.applyDynamic("filterXSS")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     object XSS {
       
       type EscapeHandler = js.Function1[/* str */ String, String]
       
-      @js.native
       trait ICSSFilter extends StObject {
         
-        def process(value: String): String = js.native
+        def process(value: String): String
       }
       object ICSSFilter {
         
@@ -108,32 +101,31 @@ object mod {
         }
       }
       
-      @js.native
       trait IFilterXSSOptions extends StObject {
         
-        var allowCommentTag: js.UndefOr[Boolean] = js.native
+        var allowCommentTag: js.UndefOr[Boolean] = js.undefined
         
-        var css: js.UndefOr[js.Object | Boolean] = js.native
+        var css: js.UndefOr[js.Object | Boolean] = js.undefined
         
-        var escapeHtml: js.UndefOr[typings.xss.mod.global.XSS.EscapeHandler] = js.native
+        var escapeHtml: js.UndefOr[typings.xss.mod.global.XSS.EscapeHandler] = js.undefined
         
-        var onIgnoreTag: js.UndefOr[typings.xss.mod.global.XSS.OnTagHandler] = js.native
+        var onIgnoreTag: js.UndefOr[typings.xss.mod.global.XSS.OnTagHandler] = js.undefined
         
-        var onIgnoreTagAttr: js.UndefOr[typings.xss.mod.global.XSS.OnTagAttrHandler] = js.native
+        var onIgnoreTagAttr: js.UndefOr[typings.xss.mod.global.XSS.OnTagAttrHandler] = js.undefined
         
-        var onTag: js.UndefOr[typings.xss.mod.global.XSS.OnTagHandler] = js.native
+        var onTag: js.UndefOr[typings.xss.mod.global.XSS.OnTagHandler] = js.undefined
         
-        var onTagAttr: js.UndefOr[typings.xss.mod.global.XSS.OnTagAttrHandler] = js.native
+        var onTagAttr: js.UndefOr[typings.xss.mod.global.XSS.OnTagAttrHandler] = js.undefined
         
-        var safeAttrValue: js.UndefOr[typings.xss.mod.global.XSS.SafeAttrValueHandler] = js.native
+        var safeAttrValue: js.UndefOr[typings.xss.mod.global.XSS.SafeAttrValueHandler] = js.undefined
         
-        var stripBlankChar: js.UndefOr[Boolean] = js.native
+        var stripBlankChar: js.UndefOr[Boolean] = js.undefined
         
-        var stripIgnoreTag: js.UndefOr[Boolean] = js.native
+        var stripIgnoreTag: js.UndefOr[Boolean] = js.undefined
         
-        var stripIgnoreTagBody: js.UndefOr[Boolean | js.Array[String]] = js.native
+        var stripIgnoreTagBody: js.UndefOr[Boolean | js.Array[String]] = js.undefined
         
-        var whiteList: js.UndefOr[typings.xss.mod.global.XSS.IWhiteList] = js.native
+        var whiteList: js.UndefOr[typings.xss.mod.global.XSS.IWhiteList] = js.undefined
       }
       object IFilterXSSOptions {
         
@@ -229,134 +221,133 @@ object mod {
         }
       }
       
-      @js.native
       trait IWhiteList extends StObject {
         
-        var a: js.UndefOr[js.Array[String]] = js.native
+        var a: js.UndefOr[js.Array[String]] = js.undefined
         
-        var abbr: js.UndefOr[js.Array[String]] = js.native
+        var abbr: js.UndefOr[js.Array[String]] = js.undefined
         
-        var address: js.UndefOr[js.Array[String]] = js.native
+        var address: js.UndefOr[js.Array[String]] = js.undefined
         
-        var area: js.UndefOr[js.Array[String]] = js.native
+        var area: js.UndefOr[js.Array[String]] = js.undefined
         
-        var article: js.UndefOr[js.Array[String]] = js.native
+        var article: js.UndefOr[js.Array[String]] = js.undefined
         
-        var aside: js.UndefOr[js.Array[String]] = js.native
+        var aside: js.UndefOr[js.Array[String]] = js.undefined
         
-        var audio: js.UndefOr[js.Array[String]] = js.native
+        var audio: js.UndefOr[js.Array[String]] = js.undefined
         
-        var b: js.UndefOr[js.Array[String]] = js.native
+        var b: js.UndefOr[js.Array[String]] = js.undefined
         
-        var bdi: js.UndefOr[js.Array[String]] = js.native
+        var bdi: js.UndefOr[js.Array[String]] = js.undefined
         
-        var bdo: js.UndefOr[js.Array[String]] = js.native
+        var bdo: js.UndefOr[js.Array[String]] = js.undefined
         
-        var big: js.UndefOr[js.Array[String]] = js.native
+        var big: js.UndefOr[js.Array[String]] = js.undefined
         
-        var blockquote: js.UndefOr[js.Array[String]] = js.native
+        var blockquote: js.UndefOr[js.Array[String]] = js.undefined
         
-        var br: js.UndefOr[js.Array[String]] = js.native
+        var br: js.UndefOr[js.Array[String]] = js.undefined
         
-        var caption: js.UndefOr[js.Array[String]] = js.native
+        var caption: js.UndefOr[js.Array[String]] = js.undefined
         
-        var center: js.UndefOr[js.Array[String]] = js.native
+        var center: js.UndefOr[js.Array[String]] = js.undefined
         
-        var cite: js.UndefOr[js.Array[String]] = js.native
+        var cite: js.UndefOr[js.Array[String]] = js.undefined
         
-        var code: js.UndefOr[js.Array[String]] = js.native
+        var code: js.UndefOr[js.Array[String]] = js.undefined
         
-        var col: js.UndefOr[js.Array[String]] = js.native
+        var col: js.UndefOr[js.Array[String]] = js.undefined
         
-        var colgroup: js.UndefOr[js.Array[String]] = js.native
+        var colgroup: js.UndefOr[js.Array[String]] = js.undefined
         
-        var dd: js.UndefOr[js.Array[String]] = js.native
+        var dd: js.UndefOr[js.Array[String]] = js.undefined
         
-        var del: js.UndefOr[js.Array[String]] = js.native
+        var del: js.UndefOr[js.Array[String]] = js.undefined
         
-        var details: js.UndefOr[js.Array[String]] = js.native
+        var details: js.UndefOr[js.Array[String]] = js.undefined
         
-        var div: js.UndefOr[js.Array[String]] = js.native
+        var div: js.UndefOr[js.Array[String]] = js.undefined
         
-        var dl: js.UndefOr[js.Array[String]] = js.native
+        var dl: js.UndefOr[js.Array[String]] = js.undefined
         
-        var dt: js.UndefOr[js.Array[String]] = js.native
+        var dt: js.UndefOr[js.Array[String]] = js.undefined
         
-        var em: js.UndefOr[js.Array[String]] = js.native
+        var em: js.UndefOr[js.Array[String]] = js.undefined
         
-        var font: js.UndefOr[js.Array[String]] = js.native
+        var font: js.UndefOr[js.Array[String]] = js.undefined
         
-        var footer: js.UndefOr[js.Array[String]] = js.native
+        var footer: js.UndefOr[js.Array[String]] = js.undefined
         
-        var h1: js.UndefOr[js.Array[String]] = js.native
+        var h1: js.UndefOr[js.Array[String]] = js.undefined
         
-        var h2: js.UndefOr[js.Array[String]] = js.native
+        var h2: js.UndefOr[js.Array[String]] = js.undefined
         
-        var h3: js.UndefOr[js.Array[String]] = js.native
+        var h3: js.UndefOr[js.Array[String]] = js.undefined
         
-        var h4: js.UndefOr[js.Array[String]] = js.native
+        var h4: js.UndefOr[js.Array[String]] = js.undefined
         
-        var h5: js.UndefOr[js.Array[String]] = js.native
+        var h5: js.UndefOr[js.Array[String]] = js.undefined
         
-        var h6: js.UndefOr[js.Array[String]] = js.native
+        var h6: js.UndefOr[js.Array[String]] = js.undefined
         
-        var header: js.UndefOr[js.Array[String]] = js.native
+        var header: js.UndefOr[js.Array[String]] = js.undefined
         
-        var hr: js.UndefOr[js.Array[String]] = js.native
+        var hr: js.UndefOr[js.Array[String]] = js.undefined
         
-        var i: js.UndefOr[js.Array[String]] = js.native
+        var i: js.UndefOr[js.Array[String]] = js.undefined
         
-        var img: js.UndefOr[js.Array[String]] = js.native
+        var img: js.UndefOr[js.Array[String]] = js.undefined
         
-        var ins: js.UndefOr[js.Array[String]] = js.native
+        var ins: js.UndefOr[js.Array[String]] = js.undefined
         
-        var li: js.UndefOr[js.Array[String]] = js.native
+        var li: js.UndefOr[js.Array[String]] = js.undefined
         
-        var mark: js.UndefOr[js.Array[String]] = js.native
+        var mark: js.UndefOr[js.Array[String]] = js.undefined
         
-        var nav: js.UndefOr[js.Array[String]] = js.native
+        var nav: js.UndefOr[js.Array[String]] = js.undefined
         
-        var ol: js.UndefOr[js.Array[String]] = js.native
+        var ol: js.UndefOr[js.Array[String]] = js.undefined
         
-        var p: js.UndefOr[js.Array[String]] = js.native
+        var p: js.UndefOr[js.Array[String]] = js.undefined
         
-        var pre: js.UndefOr[js.Array[String]] = js.native
+        var pre: js.UndefOr[js.Array[String]] = js.undefined
         
-        var s: js.UndefOr[js.Array[String]] = js.native
+        var s: js.UndefOr[js.Array[String]] = js.undefined
         
-        var section: js.UndefOr[js.Array[String]] = js.native
+        var section: js.UndefOr[js.Array[String]] = js.undefined
         
-        var small: js.UndefOr[js.Array[String]] = js.native
+        var small: js.UndefOr[js.Array[String]] = js.undefined
         
-        var span: js.UndefOr[js.Array[String]] = js.native
+        var span: js.UndefOr[js.Array[String]] = js.undefined
         
-        var strong: js.UndefOr[js.Array[String]] = js.native
+        var strong: js.UndefOr[js.Array[String]] = js.undefined
         
-        var sub: js.UndefOr[js.Array[String]] = js.native
+        var sub: js.UndefOr[js.Array[String]] = js.undefined
         
-        var sup: js.UndefOr[js.Array[String]] = js.native
+        var sup: js.UndefOr[js.Array[String]] = js.undefined
         
-        var table: js.UndefOr[js.Array[String]] = js.native
+        var table: js.UndefOr[js.Array[String]] = js.undefined
         
-        var tbody: js.UndefOr[js.Array[String]] = js.native
+        var tbody: js.UndefOr[js.Array[String]] = js.undefined
         
-        var td: js.UndefOr[js.Array[String]] = js.native
+        var td: js.UndefOr[js.Array[String]] = js.undefined
         
-        var tfoot: js.UndefOr[js.Array[String]] = js.native
+        var tfoot: js.UndefOr[js.Array[String]] = js.undefined
         
-        var th: js.UndefOr[js.Array[String]] = js.native
+        var th: js.UndefOr[js.Array[String]] = js.undefined
         
-        var thead: js.UndefOr[js.Array[String]] = js.native
+        var thead: js.UndefOr[js.Array[String]] = js.undefined
         
-        var tr: js.UndefOr[js.Array[String]] = js.native
+        var tr: js.UndefOr[js.Array[String]] = js.undefined
         
-        var tt: js.UndefOr[js.Array[String]] = js.native
+        var tt: js.UndefOr[js.Array[String]] = js.undefined
         
-        var u: js.UndefOr[js.Array[String]] = js.native
+        var u: js.UndefOr[js.Array[String]] = js.undefined
         
-        var ul: js.UndefOr[js.Array[String]] = js.native
+        var ul: js.UndefOr[js.Array[String]] = js.undefined
         
-        var video: js.UndefOr[js.Array[String]] = js.native
+        var video: js.UndefOr[js.Array[String]] = js.undefined
       }
       object IWhiteList {
         
@@ -966,9 +957,8 @@ object mod {
   @js.native
   val onIgnoreTagAttr: OnTagAttrHandler = js.native
   
-  @JSImport("xss", "onIgnoreTagStripAll")
-  @js.native
-  def onIgnoreTagStripAll(): String = js.native
+  @scala.inline
+  def onIgnoreTagStripAll(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("onIgnoreTagStripAll")().asInstanceOf[String]
   
   @JSImport("xss", "onTag")
   @js.native
@@ -978,12 +968,10 @@ object mod {
   @js.native
   val onTagAttr: OnTagAttrHandler = js.native
   
-  @JSImport("xss", "parseAttr")
-  @js.native
-  def parseAttr(html: String, onAttr: js.Function2[/* name */ String, /* value */ String, String]): String = js.native
+  @scala.inline
+  def parseAttr(html: String, onAttr: js.Function2[/* name */ String, /* value */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAttr")(html.asInstanceOf[js.Any], onAttr.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("xss", "parseTag")
-  @js.native
+  @scala.inline
   def parseTag(
     html: String,
     onTag: js.Function5[
@@ -995,7 +983,7 @@ object mod {
       String
     ],
     escapeHtml: EscapeHandler
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTag")(html.asInstanceOf[js.Any], onTag.asInstanceOf[js.Any], escapeHtml.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("xss", "safeAttrValue")
   @js.native

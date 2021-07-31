@@ -6,23 +6,23 @@ import typings.extjs.Ext.grid.header.IContainer
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locking {
   
-  @js.native
-  trait IHeaderContainer extends IContainer {
+  trait IHeaderContainer
+    extends StObject
+       with IContainer {
     
     /** [Method] This is the function which all other column access methods are based upon Return the full column set for the whole Lo
       * @returns Array
       */
     @JSName("getGridColumns")
-    var getGridColumns_IHeaderContainer: js.UndefOr[js.Function0[Array]] = js.native
+    var getGridColumns_IHeaderContainer: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Used by ComponentQuery child and down to retrieve all of the items which can potentially be considered a child of th  */
     @JSName("getRefItems")
-    var getRefItems_IHeaderContainer: js.UndefOr[js.Function0[Unit]] = js.native
+    var getRefItems_IHeaderContainer: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IHeaderContainer {
     
@@ -49,32 +49,33 @@ object locking {
     }
   }
   
-  @js.native
-  trait ILockable extends IBase {
+  trait ILockable
+    extends StObject
+       with IBase {
     
     /** [Config Option] (Object) */
-    var lockedGridConfig: js.UndefOr[js.Any] = js.native
+    var lockedGridConfig: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var lockedViewConfig: js.UndefOr[js.Any] = js.native
+    var lockedViewConfig: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var normalGridConfig: js.UndefOr[js.Any] = js.native
+    var normalGridConfig: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var normalViewConfig: js.UndefOr[js.Any] = js.native
+    var normalViewConfig: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number) */
-    var scrollDelta: js.UndefOr[Double] = js.native
+    var scrollDelta: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var subGridXType: js.UndefOr[String] = js.native
+    var subGridXType: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var syncRowHeight: js.UndefOr[Boolean] = js.native
+    var syncRowHeight: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Synchronizes the row heights between the locked and non locked portion of the grid for each row  */
-    var syncRowHeights: js.UndefOr[js.Function0[Unit]] = js.native
+    var syncRowHeights: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ILockable {
     
@@ -137,11 +138,12 @@ object locking {
     }
   }
   
-  @js.native
-  trait IView extends IObservable {
+  trait IView
+    extends StObject
+       with IObservable {
     
     /** [Property] (Boolean) */
-    var isLockingView: js.UndefOr[Boolean] = js.native
+    var isLockingView: js.UndefOr[Boolean] = js.undefined
   }
   object IView {
     

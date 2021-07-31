@@ -2,45 +2,43 @@ package typings.promiseSftp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** From the [statvfs struct](http://linux.die.net/man/2/statvfs). */
-@js.native
 trait Statvfs extends StObject {
   
   /** free blocks for unprivileged users */
-  var f_bavail: Double = js.native
+  var f_bavail: Double
   
   /** free blocks */
-  var f_bfree: Double = js.native
+  var f_bfree: Double
   
   /** size of fs in f_frsize units */
-  var f_blocks: Double = js.native
+  var f_blocks: Double
   
   /** file system block size */
-  var f_bsize: Double = js.native
+  var f_bsize: Double
   
   /** free inodes for unprivileged users */
-  var f_favail: Double = js.native
+  var f_favail: Double
   
   /** free inodes */
-  var f_ffree: Double = js.native
+  var f_ffree: Double
   
   /** inodes */
-  var f_files: Double = js.native
+  var f_files: Double
   
   /** mount flags */
-  var f_flag: Double = js.native
+  var f_flag: Double
   
   /** fragment size */
-  var f_frsize: Double = js.native
+  var f_frsize: Double
   
   /** file system ID */
-  var f_fsid: Double = js.native
+  var f_fsid: Double
   
   /** maximum filename length */
-  var f_namemax: Double = js.native
+  var f_namemax: Double
 }
 object Statvfs {
   

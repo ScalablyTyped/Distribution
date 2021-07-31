@@ -2,29 +2,27 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstantSearchProps extends StObject {
   
-  var createURL: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var createURL: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var indexName: String = js.native
+  var indexName: String
   
-  var onSearchParameters: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onSearchParameters: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var onSearchStateChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onSearchStateChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var refresh: js.UndefOr[Boolean] = js.native
+  var refresh: js.UndefOr[Boolean] = js.undefined
   
-  var resultsState: js.UndefOr[js.Any] = js.native
+  var resultsState: js.UndefOr[js.Any] = js.undefined
   
-  var searchClient: js.Any = js.native
+  var searchClient: js.Any
   
-  var searchState: js.UndefOr[js.Any] = js.native
+  var searchState: js.UndefOr[js.Any] = js.undefined
   
-  var stalledSearchDelay: js.UndefOr[Double] = js.native
+  var stalledSearchDelay: js.UndefOr[Double] = js.undefined
 }
 object InstantSearchProps {
   
@@ -38,7 +36,7 @@ object InstantSearchProps {
   implicit class InstantSearchPropsMutableBuilder[Self <: InstantSearchProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCreateURL(value: /* repeated */ js.Any => _): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+    def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCreateURLUndefined: Self = StObject.set(x, "createURL", js.undefined)
@@ -47,13 +45,13 @@ object InstantSearchProps {
     def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSearchParameters(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onSearchParameters", js.Any.fromFunction1(value))
+    def setOnSearchParameters(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onSearchParameters", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSearchParametersUndefined: Self = StObject.set(x, "onSearchParameters", js.undefined)
     
     @scala.inline
-    def setOnSearchStateChange(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onSearchStateChange", js.Any.fromFunction1(value))
+    def setOnSearchStateChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onSearchStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSearchStateChangeUndefined: Self = StObject.set(x, "onSearchStateChange", js.undefined)

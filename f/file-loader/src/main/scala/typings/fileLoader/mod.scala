@@ -3,7 +3,6 @@ package typings.fileLoader
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,7 +16,6 @@ object mod {
     */
   type BuildResourcePathFn = js.Function3[/* url */ String, /* resourcePath */ String, /* context */ String, String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -44,7 +42,7 @@ object mod {
       *
       * @default {@link https://webpack.js.org/configuration/entry-context/#context context}
       */
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
     /**
       * If `true`, emits a file (writes a file to the filesystem); otherwise, the loader will return a public URI
@@ -52,7 +50,7 @@ object mod {
       *
       * @default true
       */
-    var emitFile: js.UndefOr[Boolean] = js.native
+    var emitFile: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies a custom filename template for the target file(s) using the query parameter name.
@@ -101,7 +99,7 @@ object mod {
       *
       * @default '[contenthash].[ext]'
       */
-    var name: js.UndefOr[String | (js.Function1[/* file */ String, String])] = js.native
+    var name: js.UndefOr[String | (js.Function1[/* file */ String, String])] = js.undefined
     
     /**
       * Specify a filesystem path where the target file(s) will be placed.
@@ -136,7 +134,7 @@ object mod {
       *
       * @default undefined
       */
-    var outputPath: js.UndefOr[String | BuildResourcePathFn] = js.native
+    var outputPath: js.UndefOr[String | BuildResourcePathFn] = js.undefined
     
     /**
       * Specifies a custom function to post-process the generated public path.
@@ -162,7 +160,7 @@ object mod {
       *
       * @default undefined
       */
-    var postTransformPublicPath: js.UndefOr[js.Function1[/* p */ String, String]] = js.native
+    var postTransformPublicPath: js.UndefOr[js.Function1[/* p */ String, String]] = js.undefined
     
     /**
       * Specifies a custom public path for the target file(s).
@@ -197,7 +195,7 @@ object mod {
       *
       * @default {@link https://webpack.js.org/api/module-variables/#__webpack_public_path__-webpack-specific __webpack_public_path__}
       */
-    var publicPath: js.UndefOr[String | BuildResourcePathFn] = js.native
+    var publicPath: js.UndefOr[String | BuildResourcePathFn] = js.undefined
     
     /**
       * Specifies a Regular Expression to one or many parts of the target file path.
@@ -233,7 +231,7 @@ object mod {
       *
       * @default undefined
       */
-    var regExp: js.UndefOr[RegExp] = js.native
+    var regExp: js.UndefOr[RegExp] = js.undefined
   }
   object Options {
     

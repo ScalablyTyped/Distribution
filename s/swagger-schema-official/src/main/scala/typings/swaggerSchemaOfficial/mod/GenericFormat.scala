@@ -2,15 +2,15 @@ package typings.swaggerSchemaOfficial.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GenericFormat extends SchemaFormatConstraints {
+trait GenericFormat
+  extends StObject
+     with SchemaFormatConstraints {
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[ParameterType] = js.native
+  var `type`: js.UndefOr[ParameterType] = js.undefined
 }
 object GenericFormat {
   

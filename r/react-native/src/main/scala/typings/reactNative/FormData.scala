@@ -2,13 +2,11 @@ package typings.reactNative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormData extends StObject {
   
-  def append(name: String, value: js.Any): Unit = js.native
+  def append(name: String, value: js.Any): Unit
 }
 object FormData {
   

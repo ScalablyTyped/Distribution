@@ -11,83 +11,81 @@ import typings.stripe.stripeStrings.succeeded
 import typings.stripe.stripeStrings.unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refunds {
   
-  @js.native
   trait IRefund extends StObject {
     
     /**
       * Amount in cents/pence.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Balance transaction that describes the impact of this reversal on your account balance.
       */
-    var balance_transaction: String | IBalanceTransaction = js.native
+    var balance_transaction: String | IBalanceTransaction
     
     /**
       * ID of the charge that was refunded. [Expandable]
       */
-    var charge: String | ICharge = js.native
+    var charge: String | ICharge
     
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO currency code representing the currency in which the charge was made.
       */
-    var currency: String = js.native
+    var currency: String
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * If the refund failed, the reason for refund failure if known.
       */
-    var failure_reason: js.UndefOr[lost_or_stolen_card | expired_or_canceled_card | unknown_] = js.native
+    var failure_reason: js.UndefOr[lost_or_stolen_card | expired_or_canceled_card | unknown_] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
     /**
       * A set of key/value pairs that you can attach to the object. It can be useful
       * for storing additional information in a structured format.
       */
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * Value is 'refund'
       */
-    var `object`: String = js.native
+    var `object`: String
     
     /**
       * Reason for the refund. If set, possible values are "duplicate", "fraudulent", and "requested_by_customer".
       */
-    var reason: String = js.native
+    var reason: String
     
     /**
       * This is the transaction number that appears on email receipts sent for this refund.
       */
-    var receipt_number: String = js.native
+    var receipt_number: String
     
     /**
       * The transfer reversal that is associated with the refund. Only present if the charge
       * came from another Stripe account. See the Connect documentation for details.
       */
-    var source_transfer_reversal: js.UndefOr[String | Null] = js.native
+    var source_transfer_reversal: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Status of the refund. For credit card refunds, this can be succeeded or failed.
       * For other types of refunds, it can be pending, succeeded, failed, or canceled.
       */
-    var status: pending | succeeded | failed | canceled = js.native
+    var status: pending | succeeded | failed | canceled
     
     /**
       * If the accompanying transfer was reversed, the transfer reversal object. Only
       * applicable if the charge was created using the destination parameter.
       */
-    var transfer_reversal: js.UndefOr[String | Null] = js.native
+    var transfer_reversal: js.UndefOr[String | Null] = js.undefined
   }
   object IRefund {
     
@@ -178,8 +176,9 @@ object refunds {
     }
   }
   
-  @js.native
-  trait IRefundCreationOptions extends IDataOptionsWithMetadata {
+  trait IRefundCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * A positive integer in cents/pence representing how much of this charge to
@@ -188,7 +187,7 @@ object refunds {
       *
       * default is entire charge
       */
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
     /**
       * String indicating the reason for the refund. If set, possible values are
@@ -196,7 +195,7 @@ object refunds {
       * "fraudulent" as the reason when you believe the charge to be fraudulent
       * will help us improve our fraud detection algorithms.
       */
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean indicating whether the application fee should be refunded when
@@ -208,7 +207,7 @@ object refunds {
       *
       * Connect only, default is false.
       */
-    var refund_application_fee: js.UndefOr[Boolean] = js.native
+    var refund_application_fee: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean indicating whether the transfer should be reversed when
@@ -218,7 +217,7 @@ object refunds {
       *
       * Connect only, default is false.
       */
-    var reverse_transfer: js.UndefOr[Boolean] = js.native
+    var reverse_transfer: js.UndefOr[Boolean] = js.undefined
   }
   object IRefundCreationOptions {
     
@@ -257,13 +256,14 @@ object refunds {
     }
   }
   
-  @js.native
-  trait IRefundCreationOptionsWithCharge extends IRefundCreationOptions {
+  trait IRefundCreationOptionsWithCharge
+    extends StObject
+       with IRefundCreationOptions {
     
     /**
       * The identifier of the charge to refund.
       */
-    var charge: String = js.native
+    var charge: String
   }
   object IRefundCreationOptionsWithCharge {
     
@@ -281,13 +281,14 @@ object refunds {
     }
   }
   
-  @js.native
-  trait IRefundListOptions extends IListOptions {
+  trait IRefundListOptions
+    extends StObject
+       with IListOptions {
     
     /**
       * Only return refunds for the charge specified by this charge ID.
       */
-    var charge: js.UndefOr[String] = js.native
+    var charge: js.UndefOr[String] = js.undefined
   }
   object IRefundListOptions {
     

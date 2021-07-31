@@ -3,28 +3,28 @@ package typings.cssTree.mod
 import typings.cssTree.cssTreeStrings.Multiplier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DSNodeMultiplier extends DSNode {
+trait DSNodeMultiplier
+  extends StObject
+     with DSNode {
   
-  var comma: Boolean = js.native
+  var comma: Boolean
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var term: DSNodeMultiplied = js.native
+  var term: DSNodeMultiplied
   
-  var `type`: Multiplier = js.native
+  var `type`: Multiplier
 }
 object DSNodeMultiplier {
   
   @scala.inline
-  def apply(comma: Boolean, max: Double, min: Double, term: DSNodeMultiplied, `type`: Multiplier): DSNodeMultiplier = {
+  def apply(comma: Boolean, max: Double, min: Double, term: DSNodeMultiplied): DSNodeMultiplier = {
     val __obj = js.Dynamic.literal(comma = comma.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Multiplier")
     __obj.asInstanceOf[DSNodeMultiplier]
   }
   

@@ -6,65 +6,56 @@ import typings.wordpressDate.anon.Locale
 import typings.wordpressDate.anon.Offset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@wordpress/date", "date")
+  @JSImport("@wordpress/date", JSImport.Namespace)
   @js.native
-  def date(dateFormat: String): String = js.native
-  @JSImport("@wordpress/date", "date")
-  @js.native
-  def date(dateFormat: String, dateValue: MomentInput): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/date", "dateI18n")
-  @js.native
-  def dateI18n(dateFormat: String): String = js.native
-  @JSImport("@wordpress/date", "dateI18n")
-  @js.native
-  def dateI18n(dateFormat: String, dateValue: js.UndefOr[MomentInput], gmt: Boolean): String = js.native
-  @JSImport("@wordpress/date", "dateI18n")
-  @js.native
-  def dateI18n(dateFormat: String, dateValue: MomentInput): String = js.native
+  @scala.inline
+  def date(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def date(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@wordpress/date", "format")
-  @js.native
-  def format(dateFormat: String): String = js.native
-  @JSImport("@wordpress/date", "format")
-  @js.native
-  def format(dateFormat: String, dateValue: MomentInput): String = js.native
+  @scala.inline
+  def dateI18n(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def dateI18n(dateFormat: String, dateValue: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def dateI18n(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def dateI18n(dateFormat: String, dateValue: MomentInput, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@wordpress/date", "getDate")
-  @js.native
-  def getDate(): Date = js.native
-  @JSImport("@wordpress/date", "getDate")
-  @js.native
-  def getDate(dateValue: MomentInput): Date = js.native
+  @scala.inline
+  def format(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def format(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@wordpress/date", "gmdate")
-  @js.native
-  def gmdate(dateFormat: String): String = js.native
-  @JSImport("@wordpress/date", "gmdate")
-  @js.native
-  def gmdate(dateFormat: String, dateValue: MomentInput): String = js.native
+  @scala.inline
+  def getDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")().asInstanceOf[Date]
+  @scala.inline
+  def getDate(dateValue: MomentInput): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("@wordpress/date", "isInTheFuture")
-  @js.native
-  def isInTheFuture(dateValue: MomentInput): Boolean = js.native
+  @scala.inline
+  def gmdate(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gmdate")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def gmdate(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gmdate")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@wordpress/date", "setSettings")
-  @js.native
-  def setSettings(dateSettings: DateSettings): Unit = js.native
+  @scala.inline
+  def isInTheFuture(dateValue: MomentInput): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInTheFuture")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def setSettings(dateSettings: DateSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSettings")(dateSettings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait DateSettings extends StObject {
     
-    var formats: typings.wordpressDate.anon.Date = js.native
+    var formats: typings.wordpressDate.anon.Date
     
-    var l10n: Locale = js.native
+    var l10n: Locale
     
-    var timezone: Offset = js.native
+    var timezone: Offset
   }
   object DateSettings {
     

@@ -7,24 +7,23 @@ import typings.nodePgMigrate.rolesTypesMod.DropRole
 import typings.nodePgMigrate.rolesTypesMod.RenameRole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rolesMod {
   
-  @JSImport("node-pg-migrate/dist/operations/roles", "alterRole")
+  @JSImport("node-pg-migrate/dist/operations/roles", JSImport.Namespace)
   @js.native
-  def alterRole(mOptions: MigrationOptions): AlterRole = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-pg-migrate/dist/operations/roles", "createRole")
-  @js.native
-  def createRole(mOptions: MigrationOptions): CreateRole = js.native
+  @scala.inline
+  def alterRole(mOptions: MigrationOptions): AlterRole = ^.asInstanceOf[js.Dynamic].applyDynamic("alterRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterRole]
   
-  @JSImport("node-pg-migrate/dist/operations/roles", "dropRole")
-  @js.native
-  def dropRole(mOptions: MigrationOptions): DropRole = js.native
+  @scala.inline
+  def createRole(mOptions: MigrationOptions): CreateRole = ^.asInstanceOf[js.Dynamic].applyDynamic("createRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateRole]
   
-  @JSImport("node-pg-migrate/dist/operations/roles", "renameRole")
-  @js.native
-  def renameRole(mOptions: MigrationOptions): RenameRole = js.native
+  @scala.inline
+  def dropRole(mOptions: MigrationOptions): DropRole = ^.asInstanceOf[js.Dynamic].applyDynamic("dropRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropRole]
+  
+  @scala.inline
+  def renameRole(mOptions: MigrationOptions): RenameRole = ^.asInstanceOf[js.Dynamic].applyDynamic("renameRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameRole]
 }

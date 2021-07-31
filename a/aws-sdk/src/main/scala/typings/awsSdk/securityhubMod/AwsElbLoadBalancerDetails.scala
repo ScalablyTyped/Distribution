@@ -2,96 +2,94 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElbLoadBalancerDetails extends StObject {
   
   /**
     * The list of Availability Zones for the load balancer.
     */
-  var AvailabilityZones: js.UndefOr[StringList] = js.native
+  var AvailabilityZones: js.UndefOr[StringList] = js.undefined
   
   /**
     * Information about the configuration of the EC2 instances.
     */
-  var BackendServerDescriptions: js.UndefOr[AwsElbLoadBalancerBackendServerDescriptions] = js.native
+  var BackendServerDescriptions: js.UndefOr[AwsElbLoadBalancerBackendServerDescriptions] = js.undefined
   
   /**
     * The name of the Amazon Route 53 hosted zone for the load balancer.
     */
-  var CanonicalHostedZoneName: js.UndefOr[NonEmptyString] = js.native
+  var CanonicalHostedZoneName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ID of the Amazon Route 53 hosted zone for the load balancer.
     */
-  var CanonicalHostedZoneNameID: js.UndefOr[NonEmptyString] = js.native
+  var CanonicalHostedZoneNameID: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the load balancer was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreatedTime: js.UndefOr[NonEmptyString] = js.native
+  var CreatedTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The DNS name of the load balancer.
     */
-  var DnsName: js.UndefOr[NonEmptyString] = js.native
+  var DnsName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Information about the health checks that are conducted on the load balancer.
     */
-  var HealthCheck: js.UndefOr[AwsElbLoadBalancerHealthCheck] = js.native
+  var HealthCheck: js.UndefOr[AwsElbLoadBalancerHealthCheck] = js.undefined
   
   /**
     * List of EC2 instances for the load balancer.
     */
-  var Instances: js.UndefOr[AwsElbLoadBalancerInstances] = js.native
+  var Instances: js.UndefOr[AwsElbLoadBalancerInstances] = js.undefined
   
   /**
     * The policies that are enabled for the load balancer listeners.
     */
-  var ListenerDescriptions: js.UndefOr[AwsElbLoadBalancerListenerDescriptions] = js.native
+  var ListenerDescriptions: js.UndefOr[AwsElbLoadBalancerListenerDescriptions] = js.undefined
   
   /**
     * The attributes for a load balancer.
     */
-  var LoadBalancerAttributes: js.UndefOr[AwsElbLoadBalancerAttributes] = js.native
+  var LoadBalancerAttributes: js.UndefOr[AwsElbLoadBalancerAttributes] = js.undefined
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: js.UndefOr[NonEmptyString] = js.native
+  var LoadBalancerName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The policies for a load balancer.
     */
-  var Policies: js.UndefOr[AwsElbLoadBalancerPolicies] = js.native
+  var Policies: js.UndefOr[AwsElbLoadBalancerPolicies] = js.undefined
   
   /**
     * The type of load balancer. Only provided if the load balancer is in a VPC. If Scheme is internet-facing, the load balancer has a public DNS name that resolves to a public IP address. If Scheme is internal, the load balancer has a public DNS name that resolves to a private IP address.
     */
-  var Scheme: js.UndefOr[NonEmptyString] = js.native
+  var Scheme: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The security groups for the load balancer. Only provided if the load balancer is in a VPC.
     */
-  var SecurityGroups: js.UndefOr[StringList] = js.native
+  var SecurityGroups: js.UndefOr[StringList] = js.undefined
   
   /**
     * Information about the security group for the load balancer. This is the security group that is used for inbound rules.
     */
-  var SourceSecurityGroup: js.UndefOr[AwsElbLoadBalancerSourceSecurityGroup] = js.native
+  var SourceSecurityGroup: js.UndefOr[AwsElbLoadBalancerSourceSecurityGroup] = js.undefined
   
   /**
     * The list of subnet identifiers for the load balancer.
     */
-  var Subnets: js.UndefOr[StringList] = js.native
+  var Subnets: js.UndefOr[StringList] = js.undefined
   
   /**
     * The identifier of the VPC for the load balancer.
     */
-  var VpcId: js.UndefOr[NonEmptyString] = js.native
+  var VpcId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsElbLoadBalancerDetails {
   

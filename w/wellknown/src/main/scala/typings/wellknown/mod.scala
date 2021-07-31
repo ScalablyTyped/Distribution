@@ -8,18 +8,19 @@ import typings.wellknown.wellknownStrings.Point
 import typings.wellknown.wellknownStrings.Polygon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("wellknown", "parse")
+  @JSImport("wellknown", JSImport.Namespace)
   @js.native
-  def parse(input: String): GeoJSONGeometry = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("wellknown", "stringify")
-  @js.native
-  def stringify(gj: GeoJSONGeometry): String = js.native
+  @scala.inline
+  def parse(input: String): GeoJSONGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[GeoJSONGeometry]
+  
+  @scala.inline
+  def stringify(gj: GeoJSONGeometry): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(gj.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type GeoJSONGeometry = GeoJSONPoint | GeoJSONMultiPoint | GeoJSONLineString | GeoJSONMultiLineString | GeoJSONPolygon | GeoJSONMultiPolygon | Null
   
@@ -37,12 +38,11 @@ object mod {
   
   type GeoJSONPosition = (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double])
   
-  @js.native
   trait Geometry[T, C] extends StObject {
     
-    var coordinates: C = js.native
+    var coordinates: C
     
-    var `type`: T = js.native
+    var `type`: T
   }
   object Geometry {
     
@@ -54,7 +54,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GeometryMutableBuilder[Self <: Geometry[_, _], T, C] (val x: Self with (Geometry[T, C])) extends AnyVal {
+    implicit class GeometryMutableBuilder[Self <: Geometry[?, ?], T, C] (val x: Self & (Geometry[T, C])) extends AnyVal {
       
       @scala.inline
       def setCoordinates(value: C): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])

@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `trainLanguageModel` operation. */
@@ -16,14 +15,18 @@ object TrainLanguageModelConstants {
   object WordTypeToAdd extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[WordTypeToAdd with String] = js.native
+    def apply(value: String): js.UndefOr[WordTypeToAdd & String] = js.native
     
     @js.native
-    sealed trait ALL extends WordTypeToAdd
-    /* "all" */ val ALL: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.TrainLanguageModelConstants.WordTypeToAdd.ALL with String = js.native
+    sealed trait ALL
+      extends StObject
+         with WordTypeToAdd
+    /* "all" */ val ALL: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.TrainLanguageModelConstants.WordTypeToAdd.ALL & String = js.native
     
     @js.native
-    sealed trait USER extends WordTypeToAdd
-    /* "user" */ val USER: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.TrainLanguageModelConstants.WordTypeToAdd.USER with String = js.native
+    sealed trait USER
+      extends StObject
+         with WordTypeToAdd
+    /* "user" */ val USER: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.TrainLanguageModelConstants.WordTypeToAdd.USER & String = js.native
   }
 }

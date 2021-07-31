@@ -2,17 +2,15 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapStyleItem extends StObject {
   
-  var elementType: js.UndefOr[String] = js.native
+  var elementType: js.UndefOr[String] = js.undefined
   
-  var featureType: js.UndefOr[String] = js.native
+  var featureType: js.UndefOr[String] = js.undefined
   
-  var stylers: MapStyleItemStylers = js.native
+  var stylers: MapStyleItemStylers
 }
 object MapStyleItem {
   

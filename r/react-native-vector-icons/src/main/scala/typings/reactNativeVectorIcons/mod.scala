@@ -3,41 +3,34 @@ package typings.reactNativeVectorIcons
 import typings.reactNativeVectorIcons.anon.Instantiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-native-vector-icons", "createIconSet")
+  @JSImport("react-native-vector-icons", JSImport.Namespace)
   @js.native
-  def createIconSet(glyphMap: js.Object, fontFamily: String): Instantiable = js.native
-  @JSImport("react-native-vector-icons", "createIconSet")
-  @js.native
-  def createIconSet(glyphMap: js.Object, fontFamily: String, fontFile: String): Instantiable = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-native-vector-icons", "createIconSetFromFontello")
-  @js.native
-  def createIconSetFromFontello(config: js.Object): Instantiable = js.native
-  @JSImport("react-native-vector-icons", "createIconSetFromFontello")
-  @js.native
-  def createIconSetFromFontello(config: js.Object, fontName: js.UndefOr[scala.Nothing], fontFile: String): Instantiable = js.native
-  @JSImport("react-native-vector-icons", "createIconSetFromFontello")
-  @js.native
-  def createIconSetFromFontello(config: js.Object, fontName: String): Instantiable = js.native
-  @JSImport("react-native-vector-icons", "createIconSetFromFontello")
-  @js.native
-  def createIconSetFromFontello(config: js.Object, fontName: String, fontFile: String): Instantiable = js.native
+  @scala.inline
+  def createIconSet(glyphMap: js.Object, fontFamily: String): Instantiable = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSet")(glyphMap.asInstanceOf[js.Any], fontFamily.asInstanceOf[js.Any])).asInstanceOf[Instantiable]
+  @scala.inline
+  def createIconSet(glyphMap: js.Object, fontFamily: String, fontFile: String): Instantiable = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSet")(glyphMap.asInstanceOf[js.Any], fontFamily.asInstanceOf[js.Any], fontFile.asInstanceOf[js.Any])).asInstanceOf[Instantiable]
   
-  @JSImport("react-native-vector-icons", "createIconSetFromIcoMoon")
-  @js.native
-  def createIconSetFromIcoMoon(config: js.Object): Instantiable = js.native
-  @JSImport("react-native-vector-icons", "createIconSetFromIcoMoon")
-  @js.native
-  def createIconSetFromIcoMoon(config: js.Object, fontName: js.UndefOr[scala.Nothing], fontFile: String): Instantiable = js.native
-  @JSImport("react-native-vector-icons", "createIconSetFromIcoMoon")
-  @js.native
-  def createIconSetFromIcoMoon(config: js.Object, fontName: String): Instantiable = js.native
-  @JSImport("react-native-vector-icons", "createIconSetFromIcoMoon")
-  @js.native
-  def createIconSetFromIcoMoon(config: js.Object, fontName: String, fontFile: String): Instantiable = js.native
+  @scala.inline
+  def createIconSetFromFontello(config: js.Object): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromFontello")(config.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  @scala.inline
+  def createIconSetFromFontello(config: js.Object, fontName: String): Instantiable = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromFontello")(config.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any])).asInstanceOf[Instantiable]
+  @scala.inline
+  def createIconSetFromFontello(config: js.Object, fontName: String, fontFile: String): Instantiable = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromFontello")(config.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], fontFile.asInstanceOf[js.Any])).asInstanceOf[Instantiable]
+  @scala.inline
+  def createIconSetFromFontello(config: js.Object, fontName: Unit, fontFile: String): Instantiable = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromFontello")(config.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], fontFile.asInstanceOf[js.Any])).asInstanceOf[Instantiable]
+  
+  @scala.inline
+  def createIconSetFromIcoMoon(config: js.Object): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromIcoMoon")(config.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  @scala.inline
+  def createIconSetFromIcoMoon(config: js.Object, fontName: String): Instantiable = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromIcoMoon")(config.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any])).asInstanceOf[Instantiable]
+  @scala.inline
+  def createIconSetFromIcoMoon(config: js.Object, fontName: String, fontFile: String): Instantiable = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromIcoMoon")(config.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], fontFile.asInstanceOf[js.Any])).asInstanceOf[Instantiable]
+  @scala.inline
+  def createIconSetFromIcoMoon(config: js.Object, fontName: Unit, fontFile: String): Instantiable = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromIcoMoon")(config.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], fontFile.asInstanceOf[js.Any])).asInstanceOf[Instantiable]
 }

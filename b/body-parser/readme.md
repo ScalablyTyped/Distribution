@@ -11,8 +11,8 @@ Node.js body parsing middleware
 | Full name          | body-parser |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 13279 |
-| # downloads        | 621064830 |
+| # dependents       | 13963 |
+| # downloads        | 710932507 |
 | # stars            | 616 |
 
 ## Links

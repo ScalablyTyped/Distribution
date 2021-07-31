@@ -8,7 +8,6 @@ import typings.winrtUwp.winrtUwpStrings.printrequested
 import typings.winrtUwp.winrtUwpStrings.saverequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains classes and interfaces that provide access to the Windows Runtime Components for print task configuration and print notifications. */
@@ -23,31 +22,45 @@ object Extensions {
     
     /** An invalid printing material has been selected. */
     @js.native
-    sealed trait invalidMaterialSelection extends Print3DWorkflowDetail
+    sealed trait invalidMaterialSelection
+      extends StObject
+         with Print3DWorkflowDetail
     
     /** The 3D model is not valid. */
     @js.native
-    sealed trait invalidModel extends Print3DWorkflowDetail
+    sealed trait invalidModel
+      extends StObject
+         with Print3DWorkflowDetail
     
     /** The print ticket is not valid. */
     @js.native
-    sealed trait invalidPrintTicket extends Print3DWorkflowDetail
+    sealed trait invalidPrintTicket
+      extends StObject
+         with Print3DWorkflowDetail
     
     /** The 3D model exceeds the print bed. */
     @js.native
-    sealed trait modelExceedsPrintBed extends Print3DWorkflowDetail
+    sealed trait modelExceedsPrintBed
+      extends StObject
+         with Print3DWorkflowDetail
     
     /** The 3D model does not have manifold edges. */
     @js.native
-    sealed trait modelNotManifold extends Print3DWorkflowDetail
+    sealed trait modelNotManifold
+      extends StObject
+         with Print3DWorkflowDetail
     
     /** No known error has been encountered. */
     @js.native
-    sealed trait unknown extends Print3DWorkflowDetail
+    sealed trait unknown
+      extends StObject
+         with Print3DWorkflowDetail
     
     /** The upload failed. */
     @js.native
-    sealed trait uploadFailed extends Print3DWorkflowDetail
+    sealed trait uploadFailed
+      extends StObject
+         with Print3DWorkflowDetail
   }
   
   @js.native
@@ -59,30 +72,40 @@ object Extensions {
     
     /** The printing experience has been abandoned. */
     @js.native
-    sealed trait abandoned extends Print3DWorkflowStatus
+    sealed trait abandoned
+      extends StObject
+         with Print3DWorkflowStatus
     
     /** The printing experience has been canceled. */
     @js.native
-    sealed trait canceled extends Print3DWorkflowStatus
+    sealed trait canceled
+      extends StObject
+         with Print3DWorkflowStatus
     
     /** The print request failed. */
     @js.native
-    sealed trait failed extends Print3DWorkflowStatus
+    sealed trait failed
+      extends StObject
+         with Print3DWorkflowStatus
     
     /** The object is undergoing slicing in preparation for printing. */
     @js.native
-    sealed trait slicing extends Print3DWorkflowStatus
+    sealed trait slicing
+      extends StObject
+         with Print3DWorkflowStatus
     
     /** The print request has been submitted. */
     @js.native
-    sealed trait submitted extends Print3DWorkflowStatus
+    sealed trait submitted
+      extends StObject
+         with Print3DWorkflowStatus
   }
   
   /** Represents a customized printing experience for a 3D printer. */
   @js.native
   trait Print3DWorkflow extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_printrequested(
       `type`: printrequested,
@@ -102,12 +125,12 @@ object Extensions {
     var isPrintReady: Boolean = js.native
     
     /** Occurs when the user initiates printing. */
-    def onprintrequested(ev: Print3DWorkflowPrintRequestedEventArgs with WinRTEvent[Print3DWorkflow]): Unit = js.native
+    def onprintrequested(ev: Print3DWorkflowPrintRequestedEventArgs & WinRTEvent[Print3DWorkflow]): Unit = js.native
     /** Occurs when the user initiates printing. */
     @JSName("onprintrequested")
     var onprintrequested_Original: TypedEventHandler[Print3DWorkflow, Print3DWorkflowPrintRequestedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_printrequested(
       `type`: printrequested,
@@ -116,29 +139,28 @@ object Extensions {
   }
   
   /** Provides data about the print request to the app that initiated the request. */
-  @js.native
   trait Print3DWorkflowPrintRequestedEventArgs extends StObject {
     
     /**
       * Sets the extended status of the print request.
       * @param value The extended status of the print request.
       */
-    def setExtendedStatus(value: Print3DWorkflowDetail): Unit = js.native
+    def setExtendedStatus(value: Print3DWorkflowDetail): Unit
     
     /**
       * Sets the latest model data, including any updates made by the Print3DWorkflow .
       * @param source The latest model data, including any updates made by the Print3DWorkflow .
       */
-    def setSource(source: js.Any): Unit = js.native
+    def setSource(source: js.Any): Unit
     
     /**
       * Indicates if the data model has been updated by the Print3DWorkflow .
       * @param value Returns true if the data model has been updated; otherwise, false.
       */
-    def setSourceChanged(value: Boolean): Unit = js.native
+    def setSourceChanged(value: Boolean): Unit
     
     /** Gets the status of the print request. */
-    var status: Print3DWorkflowStatus = js.native
+    var status: Print3DWorkflowStatus
   }
   object Print3DWorkflowPrintRequestedEventArgs {
     
@@ -171,18 +193,16 @@ object Extensions {
   }
   
   /** Provides the context for the printer extension object. */
-  @js.native
   trait PrintExtensionContext extends StObject
   
   /** Contains properties that allow a client to access and/or manipulate print event data and print device name information. */
-  @js.native
   trait PrintNotificationEventDetails extends StObject {
     
     /** Gets or sets the event data for a print notification event. */
-    var eventData: String = js.native
+    var eventData: String
     
     /** Gets the name of the print device associated with the print notification. */
-    var printerName: String = js.native
+    var printerName: String
   }
   object PrintNotificationEventDetails {
     
@@ -207,7 +227,7 @@ object Extensions {
   @js.native
   trait PrintTaskConfiguration extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_saverequested(
       `type`: saverequested,
@@ -215,7 +235,7 @@ object Extensions {
     ): Unit = js.native
     
     /** Raised by the print window for your app to notify the device app that the print ticket must be updated. */
-    def onsaverequested(ev: PrintTaskConfigurationSaveRequestedEventArgs with WinRTEvent[PrintTaskConfiguration]): Unit = js.native
+    def onsaverequested(ev: PrintTaskConfigurationSaveRequestedEventArgs & WinRTEvent[PrintTaskConfiguration]): Unit = js.native
     /** Raised by the print window for your app to notify the device app that the print ticket must be updated. */
     @JSName("onsaverequested")
     var onsaverequested_Original: TypedEventHandler[PrintTaskConfiguration, PrintTaskConfigurationSaveRequestedEventArgs] = js.native
@@ -223,7 +243,7 @@ object Extensions {
     /** Gets the context for the print task extension. */
     var printerExtensionContext: js.Any = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_saverequested(
       `type`: saverequested,
@@ -232,26 +252,25 @@ object Extensions {
   }
   
   /** Called when the print dialog for your app raises a SaveRequested event. */
-  @js.native
   trait PrintTaskConfigurationSaveRequest extends StObject {
     
     /** Called by the device app to cancel the client's request to save the print task configuration. */
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
     /** Gets the date-time object that provides the deadline information for the print task. */
-    var deadline: Date = js.native
+    var deadline: Date
     
     /**
       * Called by the device app when it has to complete some asynchronous tasks before it can save the print task configuration information.
       * @return The object that represents the deferral for the print task configuration save request.
       */
-    def getDeferral(): PrintTaskConfigurationSaveRequestedDeferral = js.native
+    def getDeferral(): PrintTaskConfigurationSaveRequestedDeferral
     
     /**
       * Called by the device app to save the print task configuration.
       * @param printerExtensionContext The object that represents the print task extension context.
       */
-    def save(printerExtensionContext: js.Any): Unit = js.native
+    def save(printerExtensionContext: js.Any): Unit
   }
   object PrintTaskConfigurationSaveRequest {
     
@@ -284,11 +303,10 @@ object Extensions {
   }
   
   /** Called by the device app to provide an update of the status of the deferral. */
-  @js.native
   trait PrintTaskConfigurationSaveRequestedDeferral extends StObject {
     
     /** Called by the device app when the deferral is completed. */
-    def complete(): Unit = js.native
+    def complete(): Unit
   }
   object PrintTaskConfigurationSaveRequestedDeferral {
     
@@ -307,11 +325,10 @@ object Extensions {
   }
   
   /** Called to notify the device app that the print task configuration must be saved. */
-  @js.native
   trait PrintTaskConfigurationSaveRequestedEventArgs extends StObject {
     
     /** Gets the information that is required for updating the print task configuration. */
-    var request: PrintTaskConfigurationSaveRequest = js.native
+    var request: PrintTaskConfigurationSaveRequest
   }
   object PrintTaskConfigurationSaveRequestedEventArgs {
     

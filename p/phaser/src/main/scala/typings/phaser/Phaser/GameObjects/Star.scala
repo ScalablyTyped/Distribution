@@ -3,7 +3,6 @@ package typings.phaser.Phaser.GameObjects
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Modify these values to create more interesting shapes.
   */
 @js.native
-trait Star extends Shape {
+trait Star
+  extends StObject
+     with Shape {
   
   /**
     * The inner radius of the Star shape.

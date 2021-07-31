@@ -6,17 +6,17 @@ import typings.reactNavigationRouters.reactNavigationRoutersStrings.OPEN_DRAWER
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.TOGGLE_DRAWER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SourceTarget extends DrawerActionType {
+trait SourceTarget
+  extends StObject
+     with DrawerActionType {
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: OPEN_DRAWER | CLOSE_DRAWER | TOGGLE_DRAWER = js.native
+  var `type`: OPEN_DRAWER | CLOSE_DRAWER | TOGGLE_DRAWER
 }
 object SourceTarget {
   

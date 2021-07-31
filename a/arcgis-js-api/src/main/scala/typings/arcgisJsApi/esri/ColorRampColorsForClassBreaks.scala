@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColorRampColorsForClassBreaks extends Object {
+trait ColorRampColorsForClassBreaks
+  extends StObject
+     with Object {
   
   /**
     * An array of 1 to 10 colors intended for displaying as a ramp with distinct or unique colors.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#ColorRamp)
     */
-  var colors: js.Array[Color_] = js.native
+  var colors: js.Array[Color_]
   
   /**
     * The number of classes or colors used in the ramp of discrete colors.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#ColorRamp)
     */
-  var numClasses: Double = js.native
+  var numClasses: Double
 }
 object ColorRampColorsForClassBreaks {
   

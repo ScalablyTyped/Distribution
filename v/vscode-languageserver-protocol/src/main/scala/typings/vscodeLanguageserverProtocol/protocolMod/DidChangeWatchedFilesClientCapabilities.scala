@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DidChangeWatchedFilesClientCapabilities extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait DidChangeWatchedFilesClientCapabilities extends StObject {
     * that the current protocol doesn't support static configuration for file changes
     * from the server side.
     */
-  var dynamicRegistration: js.UndefOr[Boolean] = js.native
+  var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
 }
 object DidChangeWatchedFilesClientCapabilities {
   

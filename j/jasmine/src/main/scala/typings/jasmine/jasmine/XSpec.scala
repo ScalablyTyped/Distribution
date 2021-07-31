@@ -2,15 +2,13 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XSpec extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  def runs(): Unit = js.native
+  def runs(): Unit
 }
 object XSpec {
   

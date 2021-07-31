@@ -13,7 +13,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recordMod {
@@ -110,6 +109,10 @@ object recordMod {
   /* static members */
   object Record {
     
+    @JSImport("@pulumi/aws/route53/record", "Record")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Record resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -119,48 +122,42 @@ object recordMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53/record", "Record.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Record = js.native
-    @JSImport("@pulumi/aws/route53/record", "Record.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Record = js.native
-    @JSImport("@pulumi/aws/route53/record", "Record.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RecordState): Record = js.native
-    @JSImport("@pulumi/aws/route53/record", "Record.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RecordState, opts: CustomResourceOptions): Record = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Record]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Record]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RecordState): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Record]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RecordState, opts: CustomResourceOptions): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Record]
     
     /**
       * Returns true if the given object is an instance of Record.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53/record", "Record.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/record.Record */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/record.Record */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/record.Record */ Boolean]
   }
   
-  @js.native
   trait RecordArgs extends StObject {
     
     /**
       * An alias block. Conflicts with `ttl` & `records`.
       * Alias record documented below.
       */
-    val aliases: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordAlias]]]] = js.native
+    val aliases: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordAlias]]]] = js.undefined
     
     /**
       * Allow creation of this record to overwrite an existing record, if any. This does not affect the ability to update the record using this provider and does not prevent other resources within this provider or manual Route 53 changes outside this provider from overwriting this record. `false` by default. This configuration is not recommended for most environments.
       */
-    val allowOverwrite: js.UndefOr[Input[Boolean]] = js.native
+    val allowOverwrite: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A block indicating the routing behavior when associated health check fails. Conflicts with any other routing policy. Documented below.
       */
     val failoverRoutingPolicies: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordFailoverRoutingPolicy]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A block indicating a routing policy based on the geolocation of the requestor. Conflicts with any other routing policy. Documented below.
@@ -169,61 +166,61 @@ object recordMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.route53.RecordGeolocationRoutingPolicy]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The health check the record should be associated with.
       */
-    val healthCheckId: js.UndefOr[Input[String]] = js.native
+    val healthCheckId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A block indicating a routing policy based on the latency between the requestor and an AWS region. Conflicts with any other routing policy. Documented below.
       */
     val latencyRoutingPolicies: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordLatencyRoutingPolicy]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Set to `true` to indicate a multivalue answer routing policy. Conflicts with any other routing policy.
       */
-    val multivalueAnswerRoutingPolicy: js.UndefOr[Input[Boolean]] = js.native
+    val multivalueAnswerRoutingPolicy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * DNS domain name for a CloudFront distribution, S3 bucket, ELB, or another resource record set in this hosted zone.
       */
-    val name: Input[String] = js.native
+    val name: Input[String]
     
     /**
       * A string list of records. To specify a single record value longer than 255 characters such as a TXT record for DKIM, add `\"\"` inside the configuration string (e.g. `"first255characters\"\"morecharacters"`).
       */
-    val records: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val records: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Unique identifier to differentiate records with routing policies from one another. Required if using `failover`, `geolocation`, `latency`, or `weighted` routing policies documented below.
       */
-    val setIdentifier: js.UndefOr[Input[String]] = js.native
+    val setIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The TTL of the record.
       */
-    val ttl: js.UndefOr[Input[Double]] = js.native
+    val ttl: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * `PRIMARY` or `SECONDARY`. A `PRIMARY` record will be served if its healthcheck is passing, otherwise the `SECONDARY` will be served. See http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring-options.html#dns-failover-failover-rrsets
       */
-    val `type`: Input[String | RecordType] = js.native
+    val `type`: Input[String | RecordType]
     
     /**
       * A block indicating a weighted routing policy. Conflicts with any other routing policy. Documented below.
       */
     val weightedRoutingPolicies: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordWeightedRoutingPolicy]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See `resource_elb.zone_id` for example.
       */
-    val zoneId: Input[String] = js.native
+    val zoneId: Input[String]
   }
   object RecordArgs {
     
@@ -336,31 +333,30 @@ object recordMod {
     }
   }
   
-  @js.native
   trait RecordState extends StObject {
     
     /**
       * An alias block. Conflicts with `ttl` & `records`.
       * Alias record documented below.
       */
-    val aliases: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordAlias]]]] = js.native
+    val aliases: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordAlias]]]] = js.undefined
     
     /**
       * Allow creation of this record to overwrite an existing record, if any. This does not affect the ability to update the record using this provider and does not prevent other resources within this provider or manual Route 53 changes outside this provider from overwriting this record. `false` by default. This configuration is not recommended for most environments.
       */
-    val allowOverwrite: js.UndefOr[Input[Boolean]] = js.native
+    val allowOverwrite: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A block indicating the routing behavior when associated health check fails. Conflicts with any other routing policy. Documented below.
       */
     val failoverRoutingPolicies: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordFailoverRoutingPolicy]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) built using the zone domain and `name`.
       */
-    val fqdn: js.UndefOr[Input[String]] = js.native
+    val fqdn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A block indicating a routing policy based on the geolocation of the requestor. Conflicts with any other routing policy. Documented below.
@@ -369,61 +365,61 @@ object recordMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.route53.RecordGeolocationRoutingPolicy]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The health check the record should be associated with.
       */
-    val healthCheckId: js.UndefOr[Input[String]] = js.native
+    val healthCheckId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A block indicating a routing policy based on the latency between the requestor and an AWS region. Conflicts with any other routing policy. Documented below.
       */
     val latencyRoutingPolicies: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordLatencyRoutingPolicy]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Set to `true` to indicate a multivalue answer routing policy. Conflicts with any other routing policy.
       */
-    val multivalueAnswerRoutingPolicy: js.UndefOr[Input[Boolean]] = js.native
+    val multivalueAnswerRoutingPolicy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * DNS domain name for a CloudFront distribution, S3 bucket, ELB, or another resource record set in this hosted zone.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A string list of records. To specify a single record value longer than 255 characters such as a TXT record for DKIM, add `\"\"` inside the configuration string (e.g. `"first255characters\"\"morecharacters"`).
       */
-    val records: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val records: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Unique identifier to differentiate records with routing policies from one another. Required if using `failover`, `geolocation`, `latency`, or `weighted` routing policies documented below.
       */
-    val setIdentifier: js.UndefOr[Input[String]] = js.native
+    val setIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The TTL of the record.
       */
-    val ttl: js.UndefOr[Input[Double]] = js.native
+    val ttl: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * `PRIMARY` or `SECONDARY`. A `PRIMARY` record will be served if its healthcheck is passing, otherwise the `SECONDARY` will be served. See http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring-options.html#dns-failover-failover-rrsets
       */
-    val `type`: js.UndefOr[Input[String | RecordType]] = js.native
+    val `type`: js.UndefOr[Input[String | RecordType]] = js.undefined
     
     /**
       * A block indicating a weighted routing policy. Conflicts with any other routing policy. Documented below.
       */
     val weightedRoutingPolicies: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordWeightedRoutingPolicy]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See `resource_elb.zone_id` for example.
       */
-    val zoneId: js.UndefOr[Input[String]] = js.native
+    val zoneId: js.UndefOr[Input[String]] = js.undefined
   }
   object RecordState {
     

@@ -2,14 +2,12 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The location in Cloud Storage and naming method of the daily usage report.
   * Contains bucket_name and report_name prefix.
   */
-@js.native
 trait SchemaUsageExportLocation extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaUsageExportLocation extends StObject {
     * https://storage.googleapis.com/ in front of it, such as
     * gs://example-bucket.
     */
-  var bucketName: js.UndefOr[String] = js.native
+  var bucketName: js.UndefOr[String] = js.undefined
   
   /**
     * An optional prefix for the name of the usage report object stored in
@@ -29,7 +27,7 @@ trait SchemaUsageExportLocation extends StObject {
     * day of the usage according to Pacific Time. If you supply a prefix, it
     * should conform to Cloud Storage object naming conventions.
     */
-  var reportNamePrefix: js.UndefOr[String] = js.native
+  var reportNamePrefix: js.UndefOr[String] = js.undefined
 }
 object SchemaUsageExportLocation {
   

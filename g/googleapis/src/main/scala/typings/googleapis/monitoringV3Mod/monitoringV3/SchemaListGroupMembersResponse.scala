@@ -2,31 +2,29 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ListGroupMembers response.
   */
-@js.native
 trait SchemaListGroupMembersResponse extends StObject {
   
   /**
     * A set of monitored resources in the group.
     */
-  var members: js.UndefOr[js.Array[SchemaMonitoredResource]] = js.native
+  var members: js.UndefOr[js.Array[SchemaMonitoredResource]] = js.undefined
   
   /**
     * If there are more results than have been returned, then this field is set
     * to a non-empty value. To see the additional results, use that value as
     * pageToken in the next call to this method.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of elements matching this request.
     */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object SchemaListGroupMembersResponse {
   

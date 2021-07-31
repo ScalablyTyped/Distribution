@@ -2,36 +2,34 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationSummary extends StObject {
   
   /**
     * The ARN of the application.
     */
-  var ApplicationARN: ResourceARN = js.native
+  var ApplicationARN: ResourceARN
   
   /**
     * The name of the application.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName
   
   /**
     * The status of the application.
     */
-  var ApplicationStatus: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationStatus = js.native
+  var ApplicationStatus: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationStatus
   
   /**
     * Provides the current application version.
     */
-  var ApplicationVersionId: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId = js.native
+  var ApplicationVersionId: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId
   
   /**
     * The runtime environment for the application (SQL-1.0, FLINK-1_6, or FLINK-1_8).
     */
-  var RuntimeEnvironment: typings.awsSdk.kinesisanalyticsv2Mod.RuntimeEnvironment = js.native
+  var RuntimeEnvironment: typings.awsSdk.kinesisanalyticsv2Mod.RuntimeEnvironment
 }
 object ApplicationSummary {
   

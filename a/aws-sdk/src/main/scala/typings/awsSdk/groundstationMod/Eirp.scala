@@ -2,21 +2,19 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Eirp extends StObject {
   
   /**
     * Units of an EIRP.
     */
-  var units: EirpUnits = js.native
+  var units: EirpUnits
   
   /**
     * Value of an EIRP. Valid values are between 20.0 to 50.0 dBW.
     */
-  var value: Double = js.native
+  var value: Double
 }
 object Eirp {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,17 +14,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A possible continuation of type {@link XInteractionFilterSelect} transport this decision back to source of started interaction.
   * @see XInteractionFilterSelect
   */
-@js.native
-trait AmbigousFilterRequest extends Exception {
+trait AmbigousFilterRequest
+  extends StObject
+     with Exception {
   
   /** transport the real detected filter, which stands in conflict to the pre selected one */
-  var DetectedFilter: String = js.native
+  var DetectedFilter: String
   
   /** transport the preselected filter */
-  var SelectedFilter: String = js.native
+  var SelectedFilter: String
   
   /** transport URL which couldn't be detected right */
-  var URL: String = js.native
+  var URL: String
 }
 object AmbigousFilterRequest {
   

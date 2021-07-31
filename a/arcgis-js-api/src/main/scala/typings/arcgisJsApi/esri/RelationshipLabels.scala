@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RelationshipLabels extends Object {
+trait RelationshipLabels
+  extends StObject
+     with Object {
   
   /**
     * The label corresponding with the bottom corner of the legend if the focus is set to `HH`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
     */
-  var bottom: String = js.native
+  var bottom: String
   
   /**
     * The label corresponding with the left corner of the legend (if the focus is set to `HH`).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
     */
-  var left: String = js.native
+  var left: String
   
   /**
     * The label corresponding with the right corner of the legend (if the focus is set to `HH`).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
     */
-  var right: String = js.native
+  var right: String
   
   /**
     * The label corresponding with the top corner of the legend if the focus is set to `HH`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
     */
-  var top: String = js.native
+  var top: String
 }
 object RelationshipLabels {
   

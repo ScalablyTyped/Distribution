@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,10 +14,9 @@ object mod extends Shortcut {
   
   type Espower = js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
   
-  @js.native
   trait Options extends StObject {
     
-    var patterns: js.Array[String] = js.native
+    var patterns: js.Array[String]
   }
   object Options {
     

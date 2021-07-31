@@ -2,14 +2,12 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the PageContentCollection object, for use in "pageContentCollection.set({ ... })". */
-@js.native
 trait PageContentCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[PageContentData]] = js.native
+  var items: js.UndefOr[js.Array[PageContentData]] = js.undefined
 }
 object PageContentCollectionUpdateData {
   

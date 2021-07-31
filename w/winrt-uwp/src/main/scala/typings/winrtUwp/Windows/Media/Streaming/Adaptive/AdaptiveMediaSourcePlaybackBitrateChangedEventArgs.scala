@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PlaybackBitrateChanged event. */
-@js.native
 trait AdaptiveMediaSourcePlaybackBitrateChangedEventArgs extends StObject {
   
   /** Gets a value indicating whether the media source contains only audio data. */
-  var audioOnly: Boolean = js.native
+  var audioOnly: Boolean
   
   /** Gets the new playback bitrate. */
-  var newValue: Double = js.native
+  var newValue: Double
   
   /** Gets the old playback bitrate. */
-  var oldValue: Double = js.native
+  var oldValue: Double
 }
 object AdaptiveMediaSourcePlaybackBitrateChangedEventArgs {
   

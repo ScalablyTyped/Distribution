@@ -2,28 +2,26 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMsoBorder extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var Color: js.Any = js.native
+  var Color: js.Any
   
-  var ColorIndex: js.Any = js.native
+  var ColorIndex: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var LineStyle: js.Any = js.native
+  var LineStyle: js.Any
   
   @JSName("Office.IMsoBorder_typekey")
-  var OfficeDotIMsoBorder_typekey: IMsoBorder = js.native
+  var OfficeDotIMsoBorder_typekey: IMsoBorder
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Weight: js.Any = js.native
+  var Weight: js.Any
 }
 object IMsoBorder {
   

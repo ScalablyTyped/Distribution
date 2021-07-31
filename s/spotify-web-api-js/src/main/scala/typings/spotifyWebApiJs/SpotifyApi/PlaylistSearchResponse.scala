@@ -2,7 +2,6 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GET /v1/search?type=playlist
   * https://developer.spotify.com/web-api/search-item/
   */
-@js.native
 trait PlaylistSearchResponse extends StObject {
   
-  var playlists: PagingObject[PlaylistObjectSimplified] = js.native
+  var playlists: PagingObject[PlaylistObjectSimplified]
 }
 object PlaylistSearchResponse {
   

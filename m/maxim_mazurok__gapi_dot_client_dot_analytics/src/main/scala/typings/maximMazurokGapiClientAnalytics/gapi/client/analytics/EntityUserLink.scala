@@ -3,29 +3,27 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 import typings.maximMazurokGapiClientAnalytics.anon.Local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityUserLink extends StObject {
   
   /** Entity for this link. It can be an account, a web property, or a view (profile). */
-  var entity: js.UndefOr[typings.maximMazurokGapiClientAnalytics.anon.AccountRef] = js.native
+  var entity: js.UndefOr[typings.maximMazurokGapiClientAnalytics.anon.AccountRef] = js.undefined
   
   /** Entity user link ID */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Resource type for entity user link. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Permissions the user has for this entity. */
-  var permissions: js.UndefOr[Local] = js.native
+  var permissions: js.UndefOr[Local] = js.undefined
   
   /** Self link for this resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** User reference. */
-  var userRef: js.UndefOr[UserRef] = js.native
+  var userRef: js.UndefOr[UserRef] = js.undefined
 }
 object EntityUserLink {
   

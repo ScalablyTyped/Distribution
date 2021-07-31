@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PanelBarErrorEvent extends PanelBarEvent {
+trait PanelBarErrorEvent
+  extends StObject
+     with PanelBarEvent {
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var xhr: js.UndefOr[JQueryXHR] = js.native
+  var xhr: js.UndefOr[JQueryXHR] = js.undefined
 }
 object PanelBarErrorEvent {
   

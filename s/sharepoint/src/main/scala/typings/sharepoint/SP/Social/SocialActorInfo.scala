@@ -5,48 +5,48 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Identifies an actor to the server. An actor can be a user, document, site, or tag. */
-@js.native
-trait SocialActorInfo extends ClientValueObject {
+trait SocialActorInfo
+  extends StObject
+     with ClientValueObject {
   
   /** User account name.
     This property is only available for social actors of type "user". */
-  def get_accountName(): String = js.native
+  def get_accountName(): String
   
   /** Identifies whether the actor is a user, document, site, or tag. */
-  def get_actorType(): SocialActorType = js.native
+  def get_actorType(): SocialActorType
   
   /** URI of the document or site content.
     This property is only available for social actors of type Document or Site. */
-  def get_contentUri(): String = js.native
+  def get_contentUri(): String
   
   /** Actor's unique identifier. */
-  def get_id(): String = js.native
+  def get_id(): String
   
   /** GUID of the tag.
     Only available for social actors of type "tag" */
-  def get_tagGuid(): String = js.native
+  def get_tagGuid(): String
   
   /** User account name.
     This property is only available for social actors of type "user". */
-  def set_accountName(value: String): String = js.native
+  def set_accountName(value: String): String
   
   /** Identifies whether the actor is a user, document, site, or tag. */
-  def set_actorType(value: SocialActorType): SocialActorType = js.native
+  def set_actorType(value: SocialActorType): SocialActorType
   
   /** URI of the document or site content.
     This property is only available for social actors of type Document or Site. */
-  def set_contentUri(value: String): String = js.native
+  def set_contentUri(value: String): String
   
   /** Actor's unique identifier. */
-  def set_id(value: String): String = js.native
+  def set_id(value: String): String
   
   /** GUID of the tag.
     Only available for social actors of type "tag" */
-  def set_tagGuid(value: String): String = js.native
+  def set_tagGuid(value: String): String
 }
 object SocialActorInfo {
   

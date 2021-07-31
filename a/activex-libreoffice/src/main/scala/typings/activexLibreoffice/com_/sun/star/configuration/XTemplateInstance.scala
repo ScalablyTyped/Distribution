@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,20 +15,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * kinds of objects dynamically.
   * @see XTemplateContainer
   */
-@js.native
-trait XTemplateInstance extends XInterface {
+trait XTemplateInstance
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the name of the template
     * @returns the name of the template this object was built from or conforms to.
     */
-  val TemplateName: String = js.native
+  val TemplateName: String
   
   /**
     * retrieves the name of the template
     * @returns the name of the template this object was built from or conforms to.
     */
-  def getTemplateName(): String = js.native
+  def getTemplateName(): String
 }
 object XTemplateInstance {
   

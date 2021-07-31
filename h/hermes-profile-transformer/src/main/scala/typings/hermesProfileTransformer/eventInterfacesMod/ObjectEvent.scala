@@ -5,7 +5,6 @@ import typings.hermesProfileTransformer.phasesMod.EventsPhase.OBJECT_EVENTS_DEST
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.OBJECT_EVENTS_SNAPSHOT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hermesProfileTransformer.eventInterfacesMod.ObjectEventSnapshot
   - typings.hermesProfileTransformer.eventInterfacesMod.ObjectEventDestroyed
 */
-trait ObjectEvent extends Event
+trait ObjectEvent
+  extends StObject
+     with Event
 object ObjectEvent {
   
   @scala.inline

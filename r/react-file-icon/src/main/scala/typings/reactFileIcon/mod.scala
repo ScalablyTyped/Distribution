@@ -4,7 +4,6 @@ import typings.react.mod.FunctionComponent
 import typings.reactFileIcon.anon.PartialFileIconProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,6 +18,26 @@ object mod {
     @JSImport("react-file-icon", "defaultStyles")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("react-file-icon", "defaultStyles.3dm")
+    @js.native
+    val `3dm`: PartialFileIconProps = js.native
+    
+    @JSImport("react-file-icon", "defaultStyles.3ds")
+    @js.native
+    val `3ds`: PartialFileIconProps = js.native
+    
+    @JSImport("react-file-icon", "defaultStyles.3g2")
+    @js.native
+    val `3g2`: PartialFileIconProps = js.native
+    
+    @JSImport("react-file-icon", "defaultStyles.3gp")
+    @js.native
+    val `3gp`: PartialFileIconProps = js.native
+    
+    @JSImport("react-file-icon", "defaultStyles.7zip")
+    @js.native
+    val `7zip`: PartialFileIconProps = js.native
     
     @JSImport("react-file-icon", "defaultStyles.aac")
     @js.native
@@ -633,26 +652,6 @@ object mod {
     def zipx: PartialFileIconProps = js.native
     @scala.inline
     def zipx_=(x: PartialFileIconProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zipx")(x.asInstanceOf[js.Any])
-    
-    @JSImport("react-file-icon", "defaultStyles.3dm")
-    @js.native
-    val `3dm`: PartialFileIconProps = js.native
-    
-    @JSImport("react-file-icon", "defaultStyles.3ds")
-    @js.native
-    val `3ds`: PartialFileIconProps = js.native
-    
-    @JSImport("react-file-icon", "defaultStyles.3g2")
-    @js.native
-    val `3g2`: PartialFileIconProps = js.native
-    
-    @JSImport("react-file-icon", "defaultStyles.3gp")
-    @js.native
-    val `3gp`: PartialFileIconProps = js.native
-    
-    @JSImport("react-file-icon", "defaultStyles.7zip")
-    @js.native
-    val `7zip`: PartialFileIconProps = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -1089,34 +1088,33 @@ object mod {
     def zipx: typings.reactFileIcon.reactFileIconStrings.zipx = "zipx".asInstanceOf[typings.reactFileIcon.reactFileIconStrings.zipx]
   }
   
-  @js.native
   trait FileIconProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
-    var fold: js.UndefOr[Boolean] = js.native
+    var fold: js.UndefOr[Boolean] = js.undefined
     
-    var foldColor: js.UndefOr[String] = js.native
+    var foldColor: js.UndefOr[String] = js.undefined
     
-    var glyphColor: js.UndefOr[String] = js.native
+    var glyphColor: js.UndefOr[String] = js.undefined
     
-    var gradientColor: js.UndefOr[String] = js.native
+    var gradientColor: js.UndefOr[String] = js.undefined
     
-    var gradientOpacity: js.UndefOr[Double] = js.native
+    var gradientOpacity: js.UndefOr[Double] = js.undefined
     
-    var labelColor: js.UndefOr[String] = js.native
+    var labelColor: js.UndefOr[String] = js.undefined
     
-    var labelTextColor: js.UndefOr[String] = js.native
+    var labelTextColor: js.UndefOr[String] = js.undefined
     
-    var labelTextStyle: js.UndefOr[js.Object] = js.native
+    var labelTextStyle: js.UndefOr[js.Object] = js.undefined
     
-    var labelUppercase: js.UndefOr[Boolean] = js.native
+    var labelUppercase: js.UndefOr[Boolean] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[IconType] = js.native
+    var `type`: js.UndefOr[IconType] = js.undefined
   }
   object FileIconProps {
     

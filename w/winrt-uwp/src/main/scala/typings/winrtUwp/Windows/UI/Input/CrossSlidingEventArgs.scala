@@ -4,21 +4,19 @@ import typings.winrtUwp.Windows.Devices.Input.PointerDeviceType
 import typings.winrtUwp.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the CrossSliding event. */
-@js.native
 trait CrossSlidingEventArgs extends StObject {
   
   /** Gets the state of the CrossSliding event. */
-  var crossSlidingState: CrossSlidingState = js.native
+  var crossSlidingState: CrossSlidingState
   
   /** Gets the device type of the input source. */
-  var pointerDeviceType: PointerDeviceType = js.native
+  var pointerDeviceType: PointerDeviceType
   
   /** Gets the location of the touch contact. */
-  var position: Point = js.native
+  var position: Point
 }
 object CrossSlidingEventArgs {
   

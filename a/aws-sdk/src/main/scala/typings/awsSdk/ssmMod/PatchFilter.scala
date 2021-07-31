@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchFilter extends StObject {
   
   /**
     * The key for the filter. Run the DescribePatchProperties command to view lists of valid keys for each operating system type.
     */
-  var Key: PatchFilterKey = js.native
+  var Key: PatchFilterKey
   
   /**
     * The value for the filter key. Run the DescribePatchProperties command to view lists of valid values for each key based on operating system type.
     */
-  var Values: PatchFilterValueList = js.native
+  var Values: PatchFilterValueList
 }
 object PatchFilter {
   

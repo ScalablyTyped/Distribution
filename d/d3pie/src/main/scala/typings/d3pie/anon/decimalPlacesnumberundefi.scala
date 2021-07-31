@@ -2,20 +2,18 @@ package typings.d3pie.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  decimalPlaces :number | undefined} & d3pie.d3pie.ID3PieStyleOptions */
-@js.native
 trait decimalPlacesnumberundefi extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var decimalPlaces: js.UndefOr[Double] = js.native
+  var decimalPlaces: js.UndefOr[Double] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
 }
 object decimalPlacesnumberundefi {
   

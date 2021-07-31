@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Stephan Bergmann
   * @version 1.0
   */
-@js.native
-trait XParameterizedContentProvider extends XInterface {
+trait XParameterizedContentProvider
+  extends StObject
+     with XInterface {
   
   /**
     * Deregisters a content provider.
@@ -21,7 +21,7 @@ trait XParameterizedContentProvider extends XInterface {
     * @param Arguments Any supplementary arguments required by this {@link XContentProvider} , represented as a single string. If the input is malformed, an {
     * @returns Either this {@link XContentProvider} , or another, specially adjusted version of this {@link XContentProvider} (this flexibility allows for diffe
     */
-  def deregisterInstance(Template: String, Arguments: String): XContentProvider = js.native
+  def deregisterInstance(Template: String, Arguments: String): XContentProvider
   
   /**
     * Register a content provider on a URL template and supplementary arguments.
@@ -30,7 +30,7 @@ trait XParameterizedContentProvider extends XInterface {
     * @param ReplaceExisting If true, and if the given Template conflicts with an already registered instance, the old registration is replaced by the new one
     * @returns Either this {@link XContentProvider} , or another, specially adjusted version of this {@link XContentProvider} (this flexibility allows for diffe
     */
-  def registerInstance(Template: String, Arguments: String, ReplaceExisting: Boolean): XContentProvider = js.native
+  def registerInstance(Template: String, Arguments: String, ReplaceExisting: Boolean): XContentProvider
 }
 object XParameterizedContentProvider {
   

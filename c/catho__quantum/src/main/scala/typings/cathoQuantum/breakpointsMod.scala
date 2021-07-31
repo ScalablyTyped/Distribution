@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.cathoQuantum.anon.Columns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breakpointsMod extends Shortcut {
@@ -13,18 +12,17 @@ object breakpointsMod extends Shortcut {
   @js.native
   val default: Breakpoints = js.native
   
-  @js.native
   trait Breakpoints extends StObject {
     
-    var large: Columns = js.native
+    var large: Columns
     
-    var medium: Columns = js.native
+    var medium: Columns
     
-    var small: Columns = js.native
+    var small: Columns
     
-    var xlarge: Columns = js.native
+    var xlarge: Columns
     
-    var xsmall: Columns = js.native
+    var xsmall: Columns
   }
   object Breakpoints {
     

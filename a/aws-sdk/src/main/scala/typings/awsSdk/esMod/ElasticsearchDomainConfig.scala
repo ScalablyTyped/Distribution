@@ -2,76 +2,74 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticsearchDomainConfig extends StObject {
   
   /**
     * IAM access policy as a JSON-formatted string.
     */
-  var AccessPolicies: js.UndefOr[AccessPoliciesStatus] = js.native
+  var AccessPolicies: js.UndefOr[AccessPoliciesStatus] = js.undefined
   
   /**
     * Specifies the AdvancedOptions for the domain. See Configuring Advanced Options for more information.
     */
-  var AdvancedOptions: js.UndefOr[AdvancedOptionsStatus] = js.native
+  var AdvancedOptions: js.UndefOr[AdvancedOptionsStatus] = js.undefined
   
   /**
     * Specifies AdvancedSecurityOptions for the domain. 
     */
-  var AdvancedSecurityOptions: js.UndefOr[AdvancedSecurityOptionsStatus] = js.native
+  var AdvancedSecurityOptions: js.UndefOr[AdvancedSecurityOptionsStatus] = js.undefined
   
   /**
     * The CognitoOptions for the specified domain. For more information, see Amazon Cognito Authentication for Kibana.
     */
-  var CognitoOptions: js.UndefOr[CognitoOptionsStatus] = js.native
+  var CognitoOptions: js.UndefOr[CognitoOptionsStatus] = js.undefined
   
   /**
     * Specifies the DomainEndpointOptions for the Elasticsearch domain.
     */
-  var DomainEndpointOptions: js.UndefOr[DomainEndpointOptionsStatus] = js.native
+  var DomainEndpointOptions: js.UndefOr[DomainEndpointOptionsStatus] = js.undefined
   
   /**
     * Specifies the EBSOptions for the Elasticsearch domain.
     */
-  var EBSOptions: js.UndefOr[EBSOptionsStatus] = js.native
+  var EBSOptions: js.UndefOr[EBSOptionsStatus] = js.undefined
   
   /**
     * Specifies the ElasticsearchClusterConfig for the Elasticsearch domain.
     */
-  var ElasticsearchClusterConfig: js.UndefOr[ElasticsearchClusterConfigStatus] = js.native
+  var ElasticsearchClusterConfig: js.UndefOr[ElasticsearchClusterConfigStatus] = js.undefined
   
   /**
     * String of format X.Y to specify version for the Elasticsearch domain.
     */
-  var ElasticsearchVersion: js.UndefOr[ElasticsearchVersionStatus] = js.native
+  var ElasticsearchVersion: js.UndefOr[ElasticsearchVersionStatus] = js.undefined
   
   /**
     * Specifies the EncryptionAtRestOptions for the Elasticsearch domain.
     */
-  var EncryptionAtRestOptions: js.UndefOr[EncryptionAtRestOptionsStatus] = js.native
+  var EncryptionAtRestOptions: js.UndefOr[EncryptionAtRestOptionsStatus] = js.undefined
   
   /**
     * Log publishing options for the given domain.
     */
-  var LogPublishingOptions: js.UndefOr[LogPublishingOptionsStatus] = js.native
+  var LogPublishingOptions: js.UndefOr[LogPublishingOptionsStatus] = js.undefined
   
   /**
     * Specifies the NodeToNodeEncryptionOptions for the Elasticsearch domain.
     */
-  var NodeToNodeEncryptionOptions: js.UndefOr[NodeToNodeEncryptionOptionsStatus] = js.native
+  var NodeToNodeEncryptionOptions: js.UndefOr[NodeToNodeEncryptionOptionsStatus] = js.undefined
   
   /**
     * Specifies the SnapshotOptions for the Elasticsearch domain.
     */
-  var SnapshotOptions: js.UndefOr[SnapshotOptionsStatus] = js.native
+  var SnapshotOptions: js.UndefOr[SnapshotOptionsStatus] = js.undefined
   
   /**
     * The VPCOptions for the specified domain. For more information, see VPC Endpoints for Amazon Elasticsearch Service Domains.
     */
-  var VPCOptions: js.UndefOr[VPCDerivedInfoStatus] = js.native
+  var VPCOptions: js.UndefOr[VPCDerivedInfoStatus] = js.undefined
 }
 object ElasticsearchDomainConfig {
   

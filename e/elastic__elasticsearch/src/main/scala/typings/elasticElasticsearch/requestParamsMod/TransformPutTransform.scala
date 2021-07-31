@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransformPutTransform[T] extends Generic {
+trait TransformPutTransform[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var defer_validation: js.UndefOr[Boolean] = js.native
+  var defer_validation: js.UndefOr[Boolean] = js.undefined
   
-  var transform_id: String = js.native
+  var transform_id: String
 }
 object TransformPutTransform {
   
@@ -23,7 +23,7 @@ object TransformPutTransform {
   }
   
   @scala.inline
-  implicit class TransformPutTransformMutableBuilder[Self <: TransformPutTransform[_], T] (val x: Self with TransformPutTransform[T]) extends AnyVal {
+  implicit class TransformPutTransformMutableBuilder[Self <: TransformPutTransform[?], T] (val x: Self & TransformPutTransform[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

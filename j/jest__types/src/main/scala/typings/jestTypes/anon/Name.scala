@@ -6,25 +6,25 @@ import typings.jestTypes.circusMod.Process
 import typings.jestTypes.jestTypesStrings.setup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Name extends AsyncEvent {
+trait Name
+  extends StObject
+     with AsyncEvent {
   
-  var name: setup = js.native
+  var name: setup
   
-  var parentProcess: Process = js.native
+  var parentProcess: Process
   
-  var runtimeGlobals: JestGlobals = js.native
+  var runtimeGlobals: JestGlobals
   
-  var testNamePattern: js.UndefOr[String] = js.native
+  var testNamePattern: js.UndefOr[String] = js.undefined
 }
 object Name {
   
   @scala.inline
-  def apply(name: setup, parentProcess: Process, runtimeGlobals: JestGlobals): Name = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parentProcess = parentProcess.asInstanceOf[js.Any], runtimeGlobals = runtimeGlobals.asInstanceOf[js.Any])
+  def apply(parentProcess: Process, runtimeGlobals: JestGlobals): Name = {
+    val __obj = js.Dynamic.literal(name = "setup", parentProcess = parentProcess.asInstanceOf[js.Any], runtimeGlobals = runtimeGlobals.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.wrapper.XXMLElementWrapper
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,23 +19,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Owner: Andrew Fan
   */
-@js.native
-trait XXMLSignatureTemplate extends XXMLSecurityTemplate {
+trait XXMLSignatureTemplate
+  extends StObject
+     with XXMLSecurityTemplate {
   
   /** Get the dynamic URI binding */
-  var Binding: XUriBinding = js.native
+  var Binding: XUriBinding
   
   /** Get the target XML element, i.e. the element to be signed */
-  val Targets: SafeArray[XXMLElementWrapper] = js.native
+  val Targets: SafeArray[XXMLElementWrapper]
   
   /** Get the dynamic URI binding */
-  def getBinding(): XUriBinding = js.native
+  def getBinding(): XUriBinding
   
   /** Get the target XML element, i.e. the element to be signed */
-  def getTargets(): SafeArray[XXMLElementWrapper] = js.native
+  def getTargets(): SafeArray[XXMLElementWrapper]
   
   /** Set the dynamic URI binding */
-  def setBinding(aUriBinding: XUriBinding): Unit = js.native
+  def setBinding(aUriBinding: XUriBinding): Unit
 }
 object XXMLSignatureTemplate {
   

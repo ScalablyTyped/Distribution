@@ -2,15 +2,13 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClipProps extends StObject {
   
-  var clipPath: js.UndefOr[String] = js.native
+  var clipPath: js.UndefOr[String] = js.undefined
   
-  var clipRule: js.UndefOr[FillRule] = js.native
+  var clipRule: js.UndefOr[FillRule] = js.undefined
 }
 object ClipProps {
   

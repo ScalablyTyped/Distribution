@@ -19,19 +19,17 @@ import typings.vegaTypings.transformMod.TransformField
 import typings.vegaTypings.vegaTypingsStrings.outer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signalMod {
   
-  @js.native
   trait BaseSignal extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var on: js.UndefOr[js.Array[OnEvent]] = js.native
+    var on: js.UndefOr[js.Array[OnEvent]] = js.undefined
   }
   object BaseSignal {
     
@@ -64,16 +62,16 @@ object signalMod {
     }
   }
   
-  @js.native
   trait InitSignal
-    extends BaseSignal
+    extends StObject
+       with BaseSignal
        with Signal {
     
-    var bind: js.UndefOr[Binding] = js.native
+    var bind: js.UndefOr[Binding] = js.undefined
     
-    var init: Expr = js.native
+    var init: Expr
     
-    var value: js.UndefOr[SignalValue] = js.native
+    var value: js.UndefOr[SignalValue] = js.undefined
   }
   object InitSignal {
     
@@ -103,18 +101,18 @@ object signalMod {
     }
   }
   
-  @js.native
   trait NewSignal
-    extends BaseSignal
+    extends StObject
+       with BaseSignal
        with Signal {
     
-    var bind: js.UndefOr[Binding] = js.native
+    var bind: js.UndefOr[Binding] = js.undefined
     
-    var react: js.UndefOr[Boolean] = js.native
+    var react: js.UndefOr[Boolean] = js.undefined
     
-    var update: js.UndefOr[Expr] = js.native
+    var update: js.UndefOr[Expr] = js.undefined
     
-    var value: js.UndefOr[SignalValue] = js.native
+    var value: js.UndefOr[SignalValue] = js.undefined
   }
   object NewSignal {
     
@@ -153,18 +151,18 @@ object signalMod {
     }
   }
   
-  @js.native
   trait PushSignal
-    extends BaseSignal
+    extends StObject
+       with BaseSignal
        with Signal {
     
-    var push: outer = js.native
+    var push: outer
   }
   object PushSignal {
     
     @scala.inline
-    def apply(name: String, push: outer): PushSignal = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
+    def apply(name: String): PushSignal = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], push = "outer")
       __obj.asInstanceOf[PushSignal]
     }
     
@@ -197,15 +195,15 @@ object signalMod {
     }
     
     @scala.inline
-    def PushSignal(name: String, push: outer): typings.vegaTypings.signalMod.PushSignal = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
+    def PushSignal(name: String): typings.vegaTypings.signalMod.PushSignal = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], push = "outer")
       __obj.asInstanceOf[typings.vegaTypings.signalMod.PushSignal]
     }
   }
   
-  @js.native
   trait SignalRef
-    extends BaseValueRef[js.Any]
+    extends StObject
+       with BaseValueRef[js.Any]
        with Layout
        with LayoutBounds
        with ScaleInterpolate
@@ -219,7 +217,7 @@ object signalMod {
        with _TickCount
        with _Update {
     
-    var signal: String = js.native
+    var signal: String
   }
   object SignalRef {
     

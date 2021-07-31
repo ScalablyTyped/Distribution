@@ -2,27 +2,25 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextPropsIOS extends StObject {
   
   /**
     * Specifies whether font should be scaled down automatically to fit given style constraints.
     */
-  var adjustsFontSizeToFit: js.UndefOr[Boolean] = js.native
+  var adjustsFontSizeToFit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies smallest possible scale a font can reach when adjustsFontSizeToFit is enabled. (values 0.01-1.0).
     */
-  var minimumFontScale: js.UndefOr[Double] = js.native
+  var minimumFontScale: js.UndefOr[Double] = js.undefined
   
   /**
     * When `true`, no visual change is made when text is pressed down. By
     * default, a gray oval highlights the text on press down.
     */
-  var suppressHighlighting: js.UndefOr[Boolean] = js.native
+  var suppressHighlighting: js.UndefOr[Boolean] = js.undefined
 }
 object TextPropsIOS {
   

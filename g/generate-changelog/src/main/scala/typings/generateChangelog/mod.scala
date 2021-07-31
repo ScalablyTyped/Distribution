@@ -2,38 +2,39 @@ package typings.generateChangelog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("generate-changelog", "generate")
+  @JSImport("generate-changelog", JSImport.Namespace)
   @js.native
-  def generate(options: Options): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def generate(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
   trait Options extends StObject {
     
     /** allow unkown commit types */
-    var allowUnknown: js.UndefOr[Boolean] = js.native
+    var allowUnknown: js.UndefOr[Boolean] = js.undefined
     
     /** exclude listed commit types (e.g. `['chore', 'style', 'refactor']`) */
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
     /** whether it should be a major changelog */
-    var major: js.UndefOr[Boolean] = js.native
+    var major: js.UndefOr[Boolean] = js.undefined
     
     /** whether it should be a minor changelog */
-    var minor: js.UndefOr[Boolean] = js.native
+    var minor: js.UndefOr[Boolean] = js.undefined
     
     /** whether it should be a patch changelog */
-    var patch: js.UndefOr[Boolean] = js.native
+    var patch: js.UndefOr[Boolean] = js.undefined
     
     /** repo URL that will be used when linking commits */
-    var repoUrl: js.UndefOr[String] = js.native
+    var repoUrl: js.UndefOr[String] = js.undefined
     
     /** generate from specific tag or range (e.g. `v1.2.3` or `v1.2.3..v1.2.4`)' */
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
   }
   object Options {
     

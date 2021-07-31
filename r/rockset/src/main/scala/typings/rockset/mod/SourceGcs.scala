@@ -2,17 +2,15 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceGcs extends StObject {
   
   // name of GCS bucket you want to ingest from
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   // Prefix that selects keys to ingest.
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
 }
 object SourceGcs {
   

@@ -2,14 +2,13 @@ package typings.meteor.meteorMod.Meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypedError
-  extends typings.std.Error {
+  extends StObject
+     with typings.std.Error {
   
-  var errorType: String = js.native
+  var errorType: String
 }
 object TypedError {
   

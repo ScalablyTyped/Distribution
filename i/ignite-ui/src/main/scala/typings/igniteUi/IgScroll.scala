@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgScroll
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -18,72 +17,72 @@ trait IgScroll
     * Sets or gets if the scrollbars should be always visible (on all environments). Otherwise it will be the default behavior. Note: this option is only for the custom scrollbars set through the scrollbarType option.
     *
     */
-  var alwaysVisible: js.UndefOr[Boolean] = js.native
+  var alwaysVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets gets the step of the default scrolling behavior when using any of the custom scrollbar track areas.
     *
     */
-  var bigIncrementStep: js.UndefOr[Double] = js.native
+  var bigIncrementStep: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets at least how many times the horizontal speed should be bigger so the inertia proceeds only horizontally without scrolling vertically. This is to improve interactions due to not perfectly swiping left/right with some deviation down/up
     *
     */
-  var inertiaDeltaX: js.UndefOr[Double] = js.native
+  var inertiaDeltaX: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets at least how many times the vertical speed should be bigger so the inertia proceeds only vertically without scrolling horizontally. This is to improve interactions due to not perfectly swiping down/up with some deviation left/right
     *
     */
-  var inertiaDeltaY: js.UndefOr[Double] = js.native
+  var inertiaDeltaY: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets the modifier for how long the inertia last on mobile devices
     *
     */
-  var inertiaDuration: js.UndefOr[Double] = js.native
+  var inertiaDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets the modifier for how much the inertia scrolls on mobile devices
     *
     */
-  var inertiaStep: js.UndefOr[Double] = js.native
+  var inertiaStep: js.UndefOr[Double] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets or gets the minimum size of the thumb drag in pixels. For the vertical thumb it means its minimum height, for the horizontal thumb it means its minimum width. This affects only the custom scrollblar when scrollbarType is set to "custom".
     *
     */
-  var minThumbSize: js.UndefOr[Double | String] = js.native
+  var minThumbSize: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Sets or gets if igScroll can modify the DOM when it is initialized on certain element so that the content can be scrollable.
     *
     */
-  var modifyDOM: js.UndefOr[Boolean] = js.native
+  var modifyDOM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Event which is raised after the scroller has been rendered fully
     */
-  var rendered: js.UndefOr[RenderedEvent] = js.native
+  var rendered: js.UndefOr[RenderedEvent] = js.undefined
   
   /**
     * Event which is raised after the igScroll has finished resizing.
@@ -91,7 +90,7 @@ trait IgScroll
     * Use evt.originalEvent (with validation for not null of evt) to obtain reference to event of browser.
     * Use args.owner to obtain reference to igScroll.
     */
-  var resized: js.UndefOr[ResizedEvent] = js.native
+  var resized: js.UndefOr[ResizedEvent] = js.undefined
   
   /**
     * Event which is raised when the igScroll detects that the element is reizing.
@@ -99,55 +98,55 @@ trait IgScroll
     * Use evt.originalEvent (with validation for not null of evt) to obtain reference to event of browser.
     * Use args.owner to obtain reference to igScroll.
     */
-  var resizing: js.UndefOr[ResizingEvent] = js.native
+  var resizing: js.UndefOr[ResizingEvent] = js.undefined
   
   /**
     * Sets custom value for how high is actually the content. Useful when wanting to scroll and update the shown content manually.
     *
     */
-  var scrollHeight: js.UndefOr[Double] = js.native
+  var scrollHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets current horizontal position of the content.
     *
     */
-  var scrollLeft: js.UndefOr[Double] = js.native
+  var scrollLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets if only the linked horizontal scrollbar should be used for horizontal scrolling. Note: The behavior when the linked scrollbar is scrolled in this case should be handled manually.
     *
     */
-  var scrollOnlyHBar: js.UndefOr[Boolean] = js.native
+  var scrollOnlyHBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets gets if only the linked vertical scrollbar should be used for vertical scrolling. Note: The behavior when the linked scrollbar is scrolled in this case should be handled manually.
     *
     */
-  var scrollOnlyVBar: js.UndefOr[Boolean] = js.native
+  var scrollOnlyVBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets gets current vertical position of the content.
     *
     */
-  var scrollTop: js.UndefOr[Double] = js.native
+  var scrollTop: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets custom value for what width is actually the content. Useful when wanting to scroll and update the shown content manually.
     *
     */
-  var scrollWidth: js.UndefOr[Double] = js.native
+  var scrollWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets html or jQuery element which is used for horizontal scrolling.
     *
     */
-  var scrollbarH: js.UndefOr[String] = js.native
+  var scrollbarH: js.UndefOr[String] = js.undefined
   
   /**
     * Sets gets html or jQuery element to which the horizontal scrollbar will be appended to.
     *
     */
-  var scrollbarHParent: js.UndefOr[String] = js.native
+  var scrollbarHParent: js.UndefOr[String] = js.undefined
   
   /**
     * Sets or gets what type of scrollbars should be using the igScroll (on all environments).
@@ -158,93 +157,93 @@ trait IgScroll
     * "native" Native scrollbars
     * "none" No scrollbars should be visible
     */
-  var scrollbarType: js.UndefOr[String] = js.native
+  var scrollbarType: js.UndefOr[String] = js.undefined
   
   /**
     * Sets gets html or jQuery element which is used for vertical scrolling.
     *
     */
-  var scrollbarV: js.UndefOr[String] = js.native
+  var scrollbarV: js.UndefOr[String] = js.undefined
   
   /**
     * Sets gets html or jQuery element to which the vertical scrollbar will be appended to.
     *
     */
-  var scrollbarVParent: js.UndefOr[String] = js.native
+  var scrollbarVParent: js.UndefOr[String] = js.undefined
   
   /**
     * Event which is raised after scrolling has stopped.
     */
-  var scrolled: js.UndefOr[ScrolledEvent] = js.native
+  var scrolled: js.UndefOr[ScrolledEvent] = js.undefined
   
   /**
     * Event which is raised before scrolling or before each step when having inertia.
     * Return false in order to cancel action.
     */
-  var scrolling: js.UndefOr[ScrollingEvent] = js.native
+  var scrolling: js.UndefOr[ScrollingEvent] = js.undefined
   
   /**
     * Sets gets the step of the default scrolling behavior when using any of the custom scrollbar arrows
     *
     */
-  var smallIncrementStep: js.UndefOr[Double] = js.native
+  var smallIncrementStep: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets if smoother scrolling with small intertia should be used when using mouse wheel
     *
     */
-  var smoothing: js.UndefOr[Boolean] = js.native
+  var smoothing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets or gets the modifier for how long the scroll ‘animation’ lasts when using the mouse wheel once. This is used only for the smooth scrolling behavior.
     *
     */
-  var smoothingDuration: js.UndefOr[Double] = js.native
+  var smoothingDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets or gets the modifier for how many pixels will be scrolled when using the mouse wheel once. This is used only for the smooth scrolling behavior.
     *
     */
-  var smoothingStep: js.UndefOr[Double] = js.native
+  var smoothingStep: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets how much pixels of toleration there will be when initially swiping horizontally. This is to improve swiping up/down without scrolling left/right when not intended due to small deviation left/right
     *
     */
-  var swipeToleranceX: js.UndefOr[Double] = js.native
+  var swipeToleranceX: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets elements that are linked to the main content horizontally. When the content is scrolled on X axis the linked elements scroll accordingly.
     *
     */
-  var syncedElemsH: js.UndefOr[js.Array[_]] = js.native
+  var syncedElemsH: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Sets gets elements that are linked to the main content vertically. When the content is scrolled on Y axis the linked elements scroll accordingly.
     *
     */
-  var syncedElemsV: js.UndefOr[js.Array[_]] = js.native
+  var syncedElemsV: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Event which is raised on mouse up from the scrollbar's thumb drag.
     */
-  var thumbDragEnd: js.UndefOr[ThumbDragEndEvent] = js.native
+  var thumbDragEnd: js.UndefOr[ThumbDragEndEvent] = js.undefined
   
   /**
     * Event which is raised when the thumb drag is being moved.
     */
-  var thumbDragMove: js.UndefOr[ThumbDragMoveEvent] = js.native
+  var thumbDragMove: js.UndefOr[ThumbDragMoveEvent] = js.undefined
   
   /**
     * Event which is raised when there is mouse click on the scrollbar's thumb drag.
     */
-  var thumbDragStart: js.UndefOr[ThumbDragStartEvent] = js.native
+  var thumbDragStart: js.UndefOr[ThumbDragStartEvent] = js.undefined
   
   /**
     * Sets gets the step of the default scrolling behavior when using mouse wheel
     *
     */
-  var wheelStep: js.UndefOr[Double] = js.native
+  var wheelStep: js.UndefOr[Double] = js.undefined
 }
 object IgScroll {
   
@@ -450,7 +449,7 @@ object IgScroll {
     def setSwipeToleranceXUndefined: Self = StObject.set(x, "swipeToleranceX", js.undefined)
     
     @scala.inline
-    def setSyncedElemsH(value: js.Array[_]): Self = StObject.set(x, "syncedElemsH", value.asInstanceOf[js.Any])
+    def setSyncedElemsH(value: js.Array[js.Any]): Self = StObject.set(x, "syncedElemsH", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSyncedElemsHUndefined: Self = StObject.set(x, "syncedElemsH", js.undefined)
@@ -459,7 +458,7 @@ object IgScroll {
     def setSyncedElemsHVarargs(value: js.Any*): Self = StObject.set(x, "syncedElemsH", js.Array(value :_*))
     
     @scala.inline
-    def setSyncedElemsV(value: js.Array[_]): Self = StObject.set(x, "syncedElemsV", value.asInstanceOf[js.Any])
+    def setSyncedElemsV(value: js.Array[js.Any]): Self = StObject.set(x, "syncedElemsV", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSyncedElemsVUndefined: Self = StObject.set(x, "syncedElemsV", js.undefined)

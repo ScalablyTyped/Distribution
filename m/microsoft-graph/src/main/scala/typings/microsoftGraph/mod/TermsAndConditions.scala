@@ -2,53 +2,53 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TermsAndConditions extends Entity {
+trait TermsAndConditions
+  extends StObject
+     with Entity {
   
   /**
     * Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms
     * and conditions set out in the T&amp;C policy. This is shown to the user on prompts to accept the T&amp;C policy.
     */
-  var acceptanceStatement: js.UndefOr[NullableOption[String]] = js.native
+  var acceptanceStatement: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The list of acceptance statuses for this T&amp;C policy.
-  var acceptanceStatuses: js.UndefOr[NullableOption[js.Array[TermsAndConditionsAcceptanceStatus]]] = js.native
+  var acceptanceStatuses: js.UndefOr[NullableOption[js.Array[TermsAndConditionsAcceptanceStatus]]] = js.undefined
   
   // The list of assignments for this T&amp;C policy.
-  var assignments: js.UndefOr[NullableOption[js.Array[TermsAndConditionsAssignment]]] = js.native
+  var assignments: js.UndefOr[NullableOption[js.Array[TermsAndConditionsAssignment]]] = js.undefined
   
   /**
     * Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user
     * on prompts to accept the T&amp;C policy.
     */
-  var bodyText: js.UndefOr[NullableOption[String]] = js.native
+  var bodyText: js.UndefOr[NullableOption[String]] = js.undefined
   
   // DateTime the object was created.
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // Administrator-supplied description of the T&amp;C policy.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Administrator-supplied name for the T&amp;C policy.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // DateTime the object was last modified.
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&amp;C
     * policy.
     */
-  var title: js.UndefOr[NullableOption[String]] = js.native
+  var title: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and
     * wishes to require users to re-accept the modified T&amp;C policy.
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object TermsAndConditions {
   

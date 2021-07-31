@@ -3,15 +3,13 @@ package typings.webxr
 import typings.webxr.mod.XRPlaneSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DetectedPlanes extends StObject {
     
-    var detectedPlanes: js.UndefOr[XRPlaneSet] = js.native
+    var detectedPlanes: js.UndefOr[XRPlaneSet] = js.undefined
   }
   object DetectedPlanes {
     
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Enabled extends StObject {
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
   }
   object Enabled {
     
@@ -53,10 +50,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PlaneDetectionState extends StObject {
     
-    var planeDetectionState: js.UndefOr[Enabled] = js.native
+    var planeDetectionState: js.UndefOr[Enabled] = js.undefined
   }
   object PlaneDetectionState {
     

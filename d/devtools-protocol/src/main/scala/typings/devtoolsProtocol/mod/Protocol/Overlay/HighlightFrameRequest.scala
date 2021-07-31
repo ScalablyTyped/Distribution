@@ -4,26 +4,24 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.RGBA
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightFrameRequest extends StObject {
   
   /**
     * The content box highlight fill color (default: transparent).
     */
-  var contentColor: js.UndefOr[RGBA] = js.native
+  var contentColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The content box highlight outline color (default: transparent).
     */
-  var contentOutlineColor: js.UndefOr[RGBA] = js.native
+  var contentOutlineColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * Identifier of the frame to highlight.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
 }
 object HighlightFrameRequest {
   

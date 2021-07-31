@@ -2,42 +2,40 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The kinds of value that a cell in a spreadsheet can have.
   */
-@js.native
 trait SchemaExtendedValue extends StObject {
   
   /**
     * Represents a boolean value.
     */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Represents an error. This field is read-only.
     */
-  var errorValue: js.UndefOr[SchemaErrorValue] = js.native
+  var errorValue: js.UndefOr[SchemaErrorValue] = js.undefined
   
   /**
     * Represents a formula.
     */
-  var formulaValue: js.UndefOr[String] = js.native
+  var formulaValue: js.UndefOr[String] = js.undefined
   
   /**
     * Represents a double value. Note: Dates, Times and DateTimes are
     * represented as doubles in &quot;serial number&quot; format.
     */
-  var numberValue: js.UndefOr[Double] = js.native
+  var numberValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Represents a string value. Leading single quotes are not included. For
     * example, if the user typed `&#39;123` into the UI, this would be
     * represented as a `stringValue` of `&quot;123&quot;`.
     */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object SchemaExtendedValue {
   

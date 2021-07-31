@@ -2,14 +2,12 @@ package typings.firebase.mod.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `FirebaseError` is a subclass of the standard JavaScript `Error` object. In
   * addition to a message string and stack trace, it contains a string code.
   */
-@js.native
 trait FirebaseError extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait FirebaseError extends StObject {
     * While the message for a given error can change, the code will remain the same
     * between backward-compatible versions of the Firebase SDK.
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * An explanatory message for the error that just occurred.
@@ -28,12 +26,12 @@ trait FirebaseError extends StObject {
     * it generally does not convey meaningful information to end users,
     * this message should not be displayed in your application.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The name of the class of errors, which is `"FirebaseError"`.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * A string value containing the execution backtrace when the error originally
@@ -43,7 +41,7 @@ trait FirebaseError extends StObject {
     * {@link https://firebase.google.com/support/ Firebase Support} to help
     * explain the cause of an error.
     */
-  var stack: js.UndefOr[String] = js.native
+  var stack: js.UndefOr[String] = js.undefined
 }
 object FirebaseError {
   

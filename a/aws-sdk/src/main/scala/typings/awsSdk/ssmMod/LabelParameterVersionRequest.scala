@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelParameterVersionRequest extends StObject {
   
   /**
     * One or more labels to attach to the specified parameter version.
     */
-  var Labels: ParameterLabelList = js.native
+  var Labels: ParameterLabelList
   
   /**
     * The parameter name on which you want to attach one or more labels.
     */
-  var Name: PSParameterName = js.native
+  var Name: PSParameterName
   
   /**
     * The specific version of the parameter on which you want to attach one or more labels. If no version is specified, the system attaches the label to the latest version.
     */
-  var ParameterVersion: js.UndefOr[PSParameterVersion] = js.native
+  var ParameterVersion: js.UndefOr[PSParameterVersion] = js.undefined
 }
 object LabelParameterVersionRequest {
   

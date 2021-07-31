@@ -4,7 +4,6 @@ import typings.jqueryNextId.anon.Prefix
 import typings.jqueryNextId.mod.global.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,13 +19,27 @@ object mod {
   
   object global {
     
-    @js.native
     trait JQuery extends StObject {
       
-      def nextId(): JQuery = js.native
-      def nextId(prefix: String): JQuery = js.native
+      def nextId(): JQuery
+      def nextId(prefix: String): JQuery
       @JSName("nextId")
-      var nextId_Original: JQueryNextId = js.native
+      var nextId_Original: JQueryNextId
+    }
+    object JQuery {
+      
+      @scala.inline
+      def apply(nextId: JQueryNextId): JQuery = {
+        val __obj = js.Dynamic.literal(nextId = nextId.asInstanceOf[js.Any])
+        __obj.asInstanceOf[JQuery]
+      }
+      
+      @scala.inline
+      implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setNextId(value: JQueryNextId): Self = StObject.set(x, "nextId", value.asInstanceOf[js.Any])
+      }
     }
   }
 }

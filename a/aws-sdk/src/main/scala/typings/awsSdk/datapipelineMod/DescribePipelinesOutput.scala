@@ -2,16 +2,14 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePipelinesOutput extends StObject {
   
   /**
     * An array of descriptions for the specified pipelines.
     */
-  var pipelineDescriptionList: PipelineDescriptionList = js.native
+  var pipelineDescriptionList: PipelineDescriptionList
 }
 object DescribePipelinesOutput {
   

@@ -2,15 +2,13 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MutateRegisterOptions extends StObject {
   
-  var family: js.UndefOr[js.Any] = js.native
+  var family: js.UndefOr[js.Any] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
 }
 object MutateRegisterOptions {
   

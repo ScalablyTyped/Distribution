@@ -2,15 +2,15 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComplexType extends IStructuralType {
+trait ComplexType
+  extends StObject
+     with IStructuralType {
   
-  def addProperty(dataProperty: DataProperty): ComplexType = js.native
+  def addProperty(dataProperty: DataProperty): ComplexType
   
-  def getProperties(): js.Array[DataProperty] = js.native
+  def getProperties(): js.Array[DataProperty]
 }
 object ComplexType {
   

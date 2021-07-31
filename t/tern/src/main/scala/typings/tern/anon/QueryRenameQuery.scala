@@ -4,15 +4,13 @@ import typings.tern.ternMod.RenameQuery
 import typings.tern.ternMod.RenameQueryResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryRenameQuery extends StObject {
   
-  var query: RenameQuery = js.native
+  var query: RenameQuery
   
-  var result: RenameQueryResult = js.native
+  var result: RenameQueryResult
 }
 object QueryRenameQuery {
   

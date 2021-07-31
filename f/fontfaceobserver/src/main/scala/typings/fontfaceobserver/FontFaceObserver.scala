@@ -2,7 +2,6 @@ package typings.fontfaceobserver
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,20 @@ trait FontFaceObserver extends StObject {
     * @param timeout The default timeout for giving up on font loading is 3 seconds. You can increase or decrease this by passing a number of milliseconds.
     */
   def load(): js.Promise[Unit] = js.native
-  def load(testString: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[Unit] = js.native
   def load(testString: String): js.Promise[Unit] = js.native
   def load(testString: String, timeout: Double): js.Promise[Unit] = js.native
   def load(testString: Null, timeout: Double): js.Promise[Unit] = js.native
+  def load(testString: Unit, timeout: Double): js.Promise[Unit] = js.native
 }
 object FontFaceObserver {
   
-  @js.native
   trait FontVariant extends StObject {
     
-    var stretch: js.UndefOr[String] = js.native
+    var stretch: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
-    var weight: js.UndefOr[Double | String] = js.native
+    var weight: js.UndefOr[Double | String] = js.undefined
   }
   object FontVariant {
     

@@ -3,27 +3,25 @@ package typings.dockerode.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiVersion extends StObject {
   
-  var ApiVersion: String = js.native
+  var ApiVersion: String
   
-  var Arch: String = js.native
+  var Arch: String
   
-  var BuildTime: Date = js.native
+  var BuildTime: Date
   
-  var Experimental: String = js.native
+  var Experimental: String
   
-  var GitCommit: String = js.native
+  var GitCommit: String
   
-  var GoVersion: String = js.native
+  var GoVersion: String
   
-  var KernelVersion: String = js.native
+  var KernelVersion: String
   
-  var Os: String = js.native
+  var Os: String
 }
 object ApiVersion {
   

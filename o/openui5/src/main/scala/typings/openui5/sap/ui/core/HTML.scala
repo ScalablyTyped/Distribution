@@ -2,11 +2,12 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTML extends Control {
+trait HTML
+  extends StObject
+     with Control {
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterRendering</code> event of this

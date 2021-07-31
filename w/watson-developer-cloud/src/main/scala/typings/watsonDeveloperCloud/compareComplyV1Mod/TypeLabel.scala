@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Identification of a specific type. */
-@js.native
 trait TypeLabel extends StObject {
   
   /** A pair of `nature` and `party` objects. The `nature` object identifies the effect of the element on the identified `party`, and the `party` object identifies the affected party. */
-  var label: js.UndefOr[Label] = js.native
+  var label: js.UndefOr[Label] = js.undefined
   
   /** One or more hash values that you can send to IBM to provide feedback or receive support. */
-  var provenance_ids: js.UndefOr[js.Array[String]] = js.native
+  var provenance_ids: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TypeLabel {
   

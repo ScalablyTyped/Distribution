@@ -2,21 +2,19 @@ package typings.tizenCommonWeb.applicationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationCertificate extends StObject {
   
   /**
     * An attribute to store the type of the application certificate
     */
-  val `type`: String = js.native
+  val `type`: String
   
   /**
     * An attribute to store the value of the application certificate
     */
-  val value: String = js.native
+  val value: String
 }
 object ApplicationCertificate {
   

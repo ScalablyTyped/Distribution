@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents data for the sensor trigger. */
-@js.native
 trait ActivitySensorReadingChangeReport extends StObject {
   
   /** Gets the reading of the sensor when it's triggered. */
-  var reading: ActivitySensorReading = js.native
+  var reading: ActivitySensorReading
 }
 object ActivitySensorReadingChangeReport {
   

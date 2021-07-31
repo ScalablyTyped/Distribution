@@ -2,41 +2,39 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputSummary extends StObject {
   
   /**
     * The time the input was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the input.
     */
-  var inputArn: js.UndefOr[InputArn] = js.native
+  var inputArn: js.UndefOr[InputArn] = js.undefined
   
   /**
     * A brief description of the input.
     */
-  var inputDescription: js.UndefOr[InputDescription] = js.native
+  var inputDescription: js.UndefOr[InputDescription] = js.undefined
   
   /**
     * The name of the input.
     */
-  var inputName: js.UndefOr[InputName] = js.native
+  var inputName: js.UndefOr[InputName] = js.undefined
   
   /**
     * The last time the input was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The status of the input.
     */
-  var status: js.UndefOr[InputStatus] = js.native
+  var status: js.UndefOr[InputStatus] = js.undefined
 }
 object InputSummary {
   

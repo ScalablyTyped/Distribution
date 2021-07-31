@@ -2,21 +2,19 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputDataConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group.
     */
-  var DatasetGroupArn: Arn = js.native
+  var DatasetGroupArn: Arn
   
   /**
     * An array of supplementary features. The only supported feature is a holiday calendar.
     */
-  var SupplementaryFeatures: js.UndefOr[typings.awsSdk.forecastserviceMod.SupplementaryFeatures] = js.native
+  var SupplementaryFeatures: js.UndefOr[typings.awsSdk.forecastserviceMod.SupplementaryFeatures] = js.undefined
 }
 object InputDataConfig {
   

@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceList extends StObject {
   
   /**
     * The last index position in the result set.
     */
-  var endPosition: js.UndefOr[String] = js.native
+  var endPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The number of results in this response. Because you can filter which entries are included in the response, this value is always less than or equal to the `totalSetSize`.
     */
-  var resultSetSize: js.UndefOr[String] = js.native
+  var resultSetSize: js.UndefOr[String] = js.undefined
   
   /**
     * The starting index position of the current result set.
     */
-  var startPosition: js.UndefOr[String] = js.native
+  var startPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of items in the result set. This value is always greater than or equal to the value of `resultSetSize`.
     */
-  var totalSetSize: js.UndefOr[String] = js.native
+  var totalSetSize: js.UndefOr[String] = js.undefined
   
   /**
     * A list of workspaces.
@@ -35,7 +33,7 @@ trait WorkspaceList extends StObject {
     js.Array[
       /* A DocuSign workspace is a collaboration area for sharing files and data. */ Workspace
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object WorkspaceList {
   

@@ -4,21 +4,19 @@ import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import typings.contentfulManagement.uploadMod.UploadProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {delete (): std.Promise<void>, toPlainObject (): contentful-management.contentful-management/dist/typings/entities/upload.UploadProps} & contentful-management.contentful-management/dist/typings/entities/upload.UploadProps */
-@js.native
 trait deletePromisevoidtoPlainO extends StObject {
   
-  def delete(): js.Promise[Unit] = js.native
+  def delete(): js.Promise[Unit]
   
   /**
     * System metadata
     */
-  var sys: MetaSysProps = js.native
+  var sys: MetaSysProps
   
-  def toPlainObject(): UploadProps = js.native
+  def toPlainObject(): UploadProps
 }
 object deletePromisevoidtoPlainO {
   

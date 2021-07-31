@@ -4,20 +4,19 @@ import typings.webicon.iconMod.Icon
 import typings.webicon.sizeableMod.Sizeable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgIconMod {
   
-  @js.native
   trait SvgIcon
-    extends Icon
+    extends StObject
+       with Icon
        with Sizeable {
     
     /**
       * The default viewBox of the icon.
       */
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
   }
   object SvgIcon {
     

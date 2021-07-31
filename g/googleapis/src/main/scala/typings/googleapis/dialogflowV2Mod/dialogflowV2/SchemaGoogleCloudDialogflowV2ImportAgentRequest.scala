@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for Agents.ImportAgent.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2ImportAgentRequest extends StObject {
   
   /**
@@ -22,13 +20,13 @@ trait SchemaGoogleCloudDialogflowV2ImportAgentRequest extends StObject {
     * &#39;$(cat &amp;lt;agent zip file&amp;gt; | base64 -w 0)&#39;
     * }&quot;&lt;/pre&gt;
     */
-  var agentContent: js.UndefOr[String] = js.native
+  var agentContent: js.UndefOr[String] = js.undefined
   
   /**
     * The URI to a Google Cloud Storage file containing the agent to import.
     * Note: The URI must start with &quot;gs://&quot;.
     */
-  var agentUri: js.UndefOr[String] = js.native
+  var agentUri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2ImportAgentRequest {
   

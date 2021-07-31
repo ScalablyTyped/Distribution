@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingGroupMetadata extends StObject {
   
   /**
     * The date the billing group was created.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.native
+  var creationDate: js.UndefOr[CreationDate] = js.undefined
 }
 object BillingGroupMetadata {
   

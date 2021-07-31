@@ -6,7 +6,6 @@ import typings.react.mod.ComponentType
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,22 +15,21 @@ object mod {
   class default ()
     extends Component[MultiSliderProps, js.Object, js.Any]
   
-  @js.native
   trait MarkerProps extends StObject {
     
-    var currentValue: Double = js.native
+    var currentValue: Double
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
-    var markerStyle: ViewStyle = js.native
+    var markerStyle: ViewStyle
     
-    var pressed: Boolean = js.native
+    var pressed: Boolean
     
-    var pressedMarkerStyle: ViewStyle = js.native
+    var pressedMarkerStyle: ViewStyle
     
-    var valuePrefix: String = js.native
+    var valuePrefix: String
     
-    var valueSuffix: String = js.native
+    var valueSuffix: String
   }
   object MarkerProps {
     
@@ -77,70 +75,69 @@ object mod {
   
   type MultiSlider = Component[MultiSliderProps, js.Object, js.Any]
   
-  @js.native
   trait MultiSliderProps extends StObject {
     
-    var allowOverlap: js.UndefOr[Boolean] = js.native
+    var allowOverlap: js.UndefOr[Boolean] = js.undefined
     
-    var containerStyle: js.UndefOr[ViewStyle] = js.native
+    var containerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var customMarker: js.UndefOr[ComponentType[MarkerProps]] = js.native
+    var customMarker: js.UndefOr[ComponentType[MarkerProps]] = js.undefined
     
-    var customMarkerLeft: js.UndefOr[ComponentType[MarkerProps]] = js.native
+    var customMarkerLeft: js.UndefOr[ComponentType[MarkerProps]] = js.undefined
     
-    var customMarkerRight: js.UndefOr[ComponentType[MarkerProps]] = js.native
+    var customMarkerRight: js.UndefOr[ComponentType[MarkerProps]] = js.undefined
     
-    var enabledOne: js.UndefOr[Boolean] = js.native
+    var enabledOne: js.UndefOr[Boolean] = js.undefined
     
-    var enabledTwo: js.UndefOr[Boolean] = js.native
+    var enabledTwo: js.UndefOr[Boolean] = js.undefined
     
-    var isMarkersSeparated: js.UndefOr[Boolean] = js.native
+    var isMarkersSeparated: js.UndefOr[Boolean] = js.undefined
     
-    var markerContainerStyle: js.UndefOr[ViewStyle] = js.native
+    var markerContainerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var markerOffsetX: js.UndefOr[Double] = js.native
+    var markerOffsetX: js.UndefOr[Double] = js.undefined
     
-    var markerOffsetY: js.UndefOr[Double] = js.native
+    var markerOffsetY: js.UndefOr[Double] = js.undefined
     
-    var markerStyle: js.UndefOr[ViewStyle] = js.native
+    var markerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var onToggleOne: js.UndefOr[js.Function0[Unit]] = js.native
+    var onToggleOne: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onToggleTwo: js.UndefOr[js.Function0[Unit]] = js.native
+    var onToggleTwo: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onValuesChange: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.native
+    var onValuesChange: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.undefined
     
-    var onValuesChangeFinish: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.native
+    var onValuesChangeFinish: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.undefined
     
-    var onValuesChangeStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onValuesChangeStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var optionsArray: js.UndefOr[js.Array[Double]] = js.native
+    var optionsArray: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var pressedMarkerStyle: js.UndefOr[ViewStyle] = js.native
+    var pressedMarkerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var selectedStyle: js.UndefOr[ViewStyle] = js.native
+    var selectedStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var sliderLength: js.UndefOr[Double] = js.native
+    var sliderLength: js.UndefOr[Double] = js.undefined
     
-    var snapped: js.UndefOr[Boolean] = js.native
+    var snapped: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var touchDimensions: js.UndefOr[BorderRadius] = js.native
+    var touchDimensions: js.UndefOr[BorderRadius] = js.undefined
     
-    var trackStyle: js.UndefOr[ViewStyle] = js.native
+    var trackStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var unselectedStyle: js.UndefOr[ViewStyle] = js.native
+    var unselectedStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var valuePrefix: js.UndefOr[String] = js.native
+    var valuePrefix: js.UndefOr[String] = js.undefined
     
-    var valueSuffix: js.UndefOr[String] = js.native
+    var valueSuffix: js.UndefOr[String] = js.undefined
     
-    var values: js.UndefOr[js.Array[Double]] = js.native
+    var values: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object MultiSliderProps {
     

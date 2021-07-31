@@ -4,17 +4,15 @@ import typings.jointjs.mod.attributes.SVGAttributes
 import typings.jointjs.mod.attributes.SVGEllipseAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CylinderSelectors extends StObject {
   
-  var body: js.UndefOr[CylinderBodyAttributes] = js.native
+  var body: js.UndefOr[CylinderBodyAttributes] = js.undefined
   
-  var root: js.UndefOr[SVGAttributes] = js.native
+  var root: js.UndefOr[SVGAttributes] = js.undefined
   
-  var top: js.UndefOr[SVGEllipseAttributes] = js.native
+  var top: js.UndefOr[SVGEllipseAttributes] = js.undefined
 }
 object CylinderSelectors {
   

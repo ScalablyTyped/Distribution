@@ -2,48 +2,46 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInterruptedDownloadOptions extends StObject {
   
   /**
     * ETag header value.
     */
-  var eTag: js.UndefOr[String] = js.native
+  var eTag: js.UndefOr[String] = js.undefined
   
   /**
     * Last-Modified header value.
     */
-  var lastModified: js.UndefOr[String] = js.native
+  var lastModified: js.UndefOr[String] = js.undefined
   
   /**
     * Total length of the download.
     */
-  var length: Double = js.native
+  var length: Double
   
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Start range for the download.
     */
-  var offset: Double = js.native
+  var offset: Double
   
   /**
     * Absolute path of the download.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Time when download was started in number of seconds since UNIX epoch.
     */
-  var startTime: js.UndefOr[Double] = js.native
+  var startTime: js.UndefOr[Double] = js.undefined
   
   /**
     * Complete URL chain for the download.
     */
-  var urlChain: js.Array[String] = js.native
+  var urlChain: js.Array[String]
 }
 object CreateInterruptedDownloadOptions {
   

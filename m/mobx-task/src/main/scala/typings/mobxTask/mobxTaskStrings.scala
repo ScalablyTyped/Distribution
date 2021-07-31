@@ -4,7 +4,6 @@ import typings.mobxTask.taskGroupMod.QueryableMethods
 import typings.mobxTask.taskMod.TaskStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mobxTaskStrings {
@@ -15,43 +14,54 @@ object mobxTaskStrings {
   def args: args = "args".asInstanceOf[args]
   
   @js.native
-  sealed trait error extends QueryableMethods
+  sealed trait error
+    extends StObject
+       with QueryableMethods
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait `match` extends QueryableMethods
+  sealed trait `match`
+    extends StObject
+       with QueryableMethods
   @scala.inline
   def `match`: `match` = "match".asInstanceOf[`match`]
   
   @js.native
   sealed trait pending
-    extends QueryableMethods
+    extends StObject
+       with QueryableMethods
        with TaskStatus
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
   sealed trait rejected
-    extends QueryableMethods
+    extends StObject
+       with QueryableMethods
        with TaskStatus
   @scala.inline
   def rejected: rejected = "rejected".asInstanceOf[rejected]
   
   @js.native
   sealed trait resolved
-    extends QueryableMethods
+    extends StObject
+       with QueryableMethods
        with TaskStatus
   @scala.inline
   def resolved: resolved = "resolved".asInstanceOf[resolved]
   
   @js.native
-  sealed trait result extends QueryableMethods
+  sealed trait result
+    extends StObject
+       with QueryableMethods
   @scala.inline
   def result: result = "result".asInstanceOf[result]
   
   @js.native
-  sealed trait state extends QueryableMethods
+  sealed trait state
+    extends StObject
+       with QueryableMethods
   @scala.inline
   def state: state = "state".asInstanceOf[state]
   

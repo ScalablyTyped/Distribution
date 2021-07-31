@@ -2,31 +2,29 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastDeploymentInfo extends StObject {
   
   /**
     * A timestamp that indicates when the most recent deployment to the deployment group started.
     */
-  var createTime: js.UndefOr[Timestamp] = js.native
+  var createTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The unique ID of a deployment. 
     */
-  var deploymentId: js.UndefOr[DeploymentId] = js.native
+  var deploymentId: js.UndefOr[DeploymentId] = js.undefined
   
   /**
     * A timestamp that indicates when the most recent deployment to the deployment group was complete.
     */
-  var endTime: js.UndefOr[Timestamp] = js.native
+  var endTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The status of the most recent deployment.
     */
-  var status: js.UndefOr[DeploymentStatus] = js.native
+  var status: js.UndefOr[DeploymentStatus] = js.undefined
 }
 object LastDeploymentInfo {
   

@@ -5,21 +5,19 @@ import typings.libxmljs.libxmljsStrings.xhtml
 import typings.libxmljs.libxmljsStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Declaration extends StObject {
     
-    var declaration: Boolean = js.native
+    var declaration: Boolean
     
-    var selfCloseEmpty: Boolean = js.native
+    var selfCloseEmpty: Boolean
     
-    var `type`: xml | html | xhtml = js.native
+    var `type`: xml | html | xhtml
     
-    var whitespace: Boolean = js.native
+    var whitespace: Boolean
   }
   object Declaration {
     
@@ -47,14 +45,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ExternalId extends StObject {
     
-    var externalId: String = js.native
+    var externalId: String
     
-    var name: String = js.native
+    var name: String
     
-    var systemId: String = js.native
+    var systemId: String
   }
   object ExternalId {
     

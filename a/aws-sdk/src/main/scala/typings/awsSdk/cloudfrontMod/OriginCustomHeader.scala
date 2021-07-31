@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginCustomHeader extends StObject {
   
   /**
     * The name of a header that you want CloudFront to send to your origin. For more information, see Adding Custom Headers to Origin Requests in the  Amazon CloudFront Developer Guide.
     */
-  var HeaderName: String = js.native
+  var HeaderName: String
   
   /**
     * The value for the header that you specified in the HeaderName field.
     */
-  var HeaderValue: String = js.native
+  var HeaderValue: String
 }
 object OriginCustomHeader {
   

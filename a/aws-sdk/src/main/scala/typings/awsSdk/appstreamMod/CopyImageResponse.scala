@@ -2,16 +2,14 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyImageResponse extends StObject {
   
   /**
     * The name of the destination image.
     */
-  var DestinationImageName: js.UndefOr[Name] = js.native
+  var DestinationImageName: js.UndefOr[Name] = js.undefined
 }
 object CopyImageResponse {
   

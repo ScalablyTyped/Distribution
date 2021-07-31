@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1PrCurve extends StObject {
   
   /** The annotation spec of the label for which the precision-recall curve calculated. If this field is empty, that means the precision-recall curve is an aggregate curve for all labels. */
-  var annotationSpec: js.UndefOr[GoogleCloudDatalabelingV1beta1AnnotationSpec] = js.native
+  var annotationSpec: js.UndefOr[GoogleCloudDatalabelingV1beta1AnnotationSpec] = js.undefined
   
   /** Area under the precision-recall curve. Not to be confused with area under a receiver operating characteristic (ROC) curve. */
-  var areaUnderCurve: js.UndefOr[Double] = js.native
+  var areaUnderCurve: js.UndefOr[Double] = js.undefined
   
   /** Entries that make up the precision-recall graph. Each entry is a "point" on the graph drawn for a different `confidence_threshold`. */
-  var confidenceMetricsEntries: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry]] = js.native
+  var confidenceMetricsEntries: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry]] = js.undefined
   
   /** Mean average prcision of this curve. */
-  var meanAveragePrecision: js.UndefOr[Double] = js.native
+  var meanAveragePrecision: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1PrCurve {
   

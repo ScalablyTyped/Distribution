@@ -2,15 +2,13 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckboxRadioOptions extends StObject {
   
-  var mini: js.UndefOr[Boolean] = js.native
+  var mini: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object CheckboxRadioOptions {
   

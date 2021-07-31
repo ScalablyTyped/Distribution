@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnmappedIdentity extends StObject {
   
   /** The resource name for an external user. */
-  var externalIdentity: js.UndefOr[Principal] = js.native
+  var externalIdentity: js.UndefOr[Principal] = js.undefined
   
   /** The resolution status for the external identity. */
-  var resolutionStatusCode: js.UndefOr[String] = js.native
+  var resolutionStatusCode: js.UndefOr[String] = js.undefined
 }
 object UnmappedIdentity {
   

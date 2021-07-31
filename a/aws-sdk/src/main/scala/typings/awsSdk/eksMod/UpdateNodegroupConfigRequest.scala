@@ -2,36 +2,34 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateNodegroupConfigRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[String] = js.native
+  var clientRequestToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Amazon EKS cluster that the managed node group resides in.
     */
-  var clusterName: String = js.native
+  var clusterName: String
   
   /**
     * The Kubernetes labels to be applied to the nodes in the node group after the update.
     */
-  var labels: js.UndefOr[UpdateLabelsPayload] = js.native
+  var labels: js.UndefOr[UpdateLabelsPayload] = js.undefined
   
   /**
     * The name of the managed node group to update.
     */
-  var nodegroupName: String = js.native
+  var nodegroupName: String
   
   /**
     * The scaling configuration details for the Auto Scaling group after the update.
     */
-  var scalingConfig: js.UndefOr[NodegroupScalingConfig] = js.native
+  var scalingConfig: js.UndefOr[NodegroupScalingConfig] = js.undefined
 }
 object UpdateNodegroupConfigRequest {
   

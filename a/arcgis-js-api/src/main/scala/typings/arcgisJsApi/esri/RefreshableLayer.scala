@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefreshableLayer extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait RefreshableLayer extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refresh)
     */
-  def refresh(): Unit = js.native
+  def refresh(): Unit
   
   /**
     * Refresh interval of the layer in minutes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
     */
-  var refreshInterval: Double = js.native
+  var refreshInterval: Double
 }
 object RefreshableLayer {
   

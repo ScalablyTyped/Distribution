@@ -12,7 +12,7 @@ simple logger module for nodejs
 | Keywords           | log, file, console, lineNumber, fileName, error, config, color |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 5577 |
+| # downloads        | 5851 |
 | # stars            | 0 |
 
 ## Links

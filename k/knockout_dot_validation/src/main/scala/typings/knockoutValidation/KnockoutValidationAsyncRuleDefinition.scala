@@ -2,15 +2,15 @@ package typings.knockoutValidation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KnockoutValidationAsyncRuleDefinition extends KnockoutValidationRuleBase {
+trait KnockoutValidationAsyncRuleDefinition
+  extends StObject
+     with KnockoutValidationRuleBase {
   
-  var async: Boolean = js.native
+  var async: Boolean
   
-  def validator(value: js.Any, params: js.Any, callback: KnockoutValidationAsyncCallback): Unit = js.native
+  def validator(value: js.Any, params: js.Any, callback: KnockoutValidationAsyncCallback): Unit
 }
 object KnockoutValidationAsyncRuleDefinition {
   

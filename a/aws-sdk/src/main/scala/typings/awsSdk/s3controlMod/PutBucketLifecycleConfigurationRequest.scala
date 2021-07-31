@@ -2,26 +2,24 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutBucketLifecycleConfigurationRequest extends StObject {
   
   /**
     * The AWS account ID of the Outposts bucket.
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
     * The name of the bucket for which to set the configuration.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * Container for lifecycle rules. You can add as many as 1,000 rules.
     */
-  var LifecycleConfiguration: js.UndefOr[typings.awsSdk.s3controlMod.LifecycleConfiguration] = js.native
+  var LifecycleConfiguration: js.UndefOr[typings.awsSdk.s3controlMod.LifecycleConfiguration] = js.undefined
 }
 object PutBucketLifecycleConfigurationRequest {
   

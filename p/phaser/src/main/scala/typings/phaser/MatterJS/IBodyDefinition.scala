@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBodyDefinition extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that _measures_ the current angular speed of the body after the last `Body.update`. It is read-only and always positive (it's the magnitude of `body.angularVelocity`).
@@ -25,7 +23,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0
     */
-  var angularSpeed: js.UndefOr[Double] = js.native
+  var angularSpeed: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that _measures_ the current angular velocity of the body after the last `Body.update`. It is read-only.
@@ -36,7 +34,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0
     */
-  var angularVelocity: js.UndefOr[Double] = js.native
+  var angularVelocity: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that _measures_ the area of the body's convex hull, calculated at creation by `Body.create`.
@@ -45,7 +43,7 @@ trait IBodyDefinition extends StObject {
     * @type string
     * @default
     */
-  var area: js.UndefOr[Double] = js.native
+  var area: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of unique axis vectors (edge normals) used for collision detection.
@@ -55,7 +53,7 @@ trait IBodyDefinition extends StObject {
     * @property axes
     * @type vector[]
     */
-  var axes: js.UndefOr[js.Array[Vector]] = js.native
+  var axes: js.UndefOr[js.Array[Vector]] = js.undefined
   
   /**
     * A `Bounds` object that defines the AABB region for the body.
@@ -64,7 +62,7 @@ trait IBodyDefinition extends StObject {
     * @property bounds
     * @type bounds
     */
-  var bounds: js.UndefOr[IBound] = js.native
+  var bounds: js.UndefOr[IBound] = js.undefined
   
   /**
     * An `Object` that specifies the collision filtering properties of this body.
@@ -91,7 +89,7 @@ trait IBodyDefinition extends StObject {
     * @property collisionFilter
     * @type object
     */
-  var collisionFilter: js.UndefOr[ICollisionFilter] = js.native
+  var collisionFilter: js.UndefOr[ICollisionFilter] = js.undefined
   
   /**
     * A `Number` that defines the density of the body, that is its mass per unit area.
@@ -102,7 +100,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0.001
     */
-  var density: js.UndefOr[Double] = js.native
+  var density: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Vector` that specifies the force to apply in the current step. It is zeroed after every `Body.update`. See also `Body.applyForce`.
@@ -111,7 +109,7 @@ trait IBodyDefinition extends StObject {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var force: js.UndefOr[Vector] = js.native
+  var force: js.UndefOr[Vector] = js.undefined
   
   /**
     * A `Number` that defines the friction of the body. The value is always positive and is in the range `(0, 1)`.
@@ -129,7 +127,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0.1
     */
-  var friction: js.UndefOr[Double] = js.native
+  var friction: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that defines the air friction of the body (air resistance).
@@ -141,7 +139,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0.01
     */
-  var frictionAir: js.UndefOr[Double] = js.native
+  var frictionAir: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that defines the static friction of the body (in the Coulomb friction model).
@@ -153,7 +151,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0.5
     */
-  var frictionStatic: js.UndefOr[Double] = js.native
+  var frictionStatic: js.UndefOr[Double] = js.undefined
   
   /**
     * A reference to the Phaser Game Object this body belongs to, if any.
@@ -161,7 +159,7 @@ trait IBodyDefinition extends StObject {
     * @property gameObject
     * @type Phaser.GameObjects.GameObject
     */
-  var gameObject: js.UndefOr[js.Any] = js.native
+  var gameObject: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Scale the influence of World gravity when applied to this body.
@@ -170,7 +168,7 @@ trait IBodyDefinition extends StObject {
     * @type vector
     * @default { x: 1, y: 1 }
     */
-  var gravityScale: js.UndefOr[Vector] = js.native
+  var gravityScale: js.UndefOr[Vector] = js.undefined
   
   /**
     * Will this Body ignore World gravity during the Engine update?
@@ -179,7 +177,7 @@ trait IBodyDefinition extends StObject {
     * @type boolean
     * @default false
     */
-  var ignoreGravity: js.UndefOr[Boolean] = js.native
+  var ignoreGravity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Will this Body ignore Phaser Pointer input events?
@@ -188,7 +186,7 @@ trait IBodyDefinition extends StObject {
     * @type boolean
     * @default false
     */
-  var ignorePointer: js.UndefOr[Boolean] = js.native
+  var ignorePointer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A `Number` that defines the moment of inertia (i.e. second moment of area) of the body.
@@ -198,7 +196,7 @@ trait IBodyDefinition extends StObject {
     * @property inertia
     * @type number
     */
-  var inertia: js.UndefOr[Double] = js.native
+  var inertia: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that defines the inverse moment of inertia of the body (`1 / inertia`).
@@ -207,7 +205,7 @@ trait IBodyDefinition extends StObject {
     * @property inverseInertia
     * @type number
     */
-  var inverseInertia: js.UndefOr[Double] = js.native
+  var inverseInertia: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that defines the inverse mass of the body (`1 / mass`).
@@ -216,7 +214,7 @@ trait IBodyDefinition extends StObject {
     * @property inverseMass
     * @type number
     */
-  var inverseMass: js.UndefOr[Double] = js.native
+  var inverseMass: js.UndefOr[Double] = js.undefined
   
   /**
     * A flag that indicates whether a body is a sensor. Sensor triggers collision events, but doesn't react with colliding body physically.
@@ -225,7 +223,7 @@ trait IBodyDefinition extends StObject {
     * @type boolean
     * @default false
     */
-  var isSensor: js.UndefOr[Boolean] = js.native
+  var isSensor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag that indicates whether the body is considered sleeping. A sleeping body acts similar to a static body, except it is only temporary and can be awoken.
@@ -235,7 +233,7 @@ trait IBodyDefinition extends StObject {
     * @type boolean
     * @default false
     */
-  var isSleeping: js.UndefOr[Boolean] = js.native
+  var isSleeping: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag that indicates whether a body is considered static. A static body can never change position or angle and is completely fixed.
@@ -245,7 +243,7 @@ trait IBodyDefinition extends StObject {
     * @type boolean
     * @default false
     */
-  var isStatic: js.UndefOr[Boolean] = js.native
+  var isStatic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An arbitrary `String` name to help the user identify and manage bodies.
@@ -254,7 +252,7 @@ trait IBodyDefinition extends StObject {
     * @type string
     * @default "Body"
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * A `Number` that defines the mass of the body, although it may be more appropriate to specify the `density` property instead.
@@ -263,7 +261,7 @@ trait IBodyDefinition extends StObject {
     * @property mass
     * @type number
     */
-  var mass: js.UndefOr[Double] = js.native
+  var mass: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that _measures_ the amount of movement a body currently has (a combination of `speed` and `angularSpeed`). It is read-only and always positive.
@@ -274,7 +272,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0
     */
-  var motion: js.UndefOr[Double] = js.native
+  var motion: js.UndefOr[Double] = js.undefined
   
   /**
     * A callback that is invoked for the duration that this Body is colliding with any other Body.
@@ -285,7 +283,7 @@ trait IBodyDefinition extends StObject {
     * @type function
     * @default null
     */
-  var onCollideActiveCallback: js.UndefOr[js.Function] = js.native
+  var onCollideActiveCallback: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A callback that is invoked when this Body starts colliding with any other Body.
@@ -296,7 +294,7 @@ trait IBodyDefinition extends StObject {
     * @type function
     * @default null
     */
-  var onCollideCallback: js.UndefOr[js.Function] = js.native
+  var onCollideCallback: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A callback that is invoked when this Body stops colliding with any other Body.
@@ -307,7 +305,7 @@ trait IBodyDefinition extends StObject {
     * @type function
     * @default null
     */
-  var onCollideEndCallback: js.UndefOr[js.Function] = js.native
+  var onCollideEndCallback: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A collision callback dictionary used by the `Body.setOnCollideWith` function.
@@ -316,7 +314,7 @@ trait IBodyDefinition extends StObject {
     * @type object
     * @default null
     */
-  var onCollideWith: js.UndefOr[js.Any] = js.native
+  var onCollideWith: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A self reference if the body is _not_ a part of another body.
@@ -326,7 +324,7 @@ trait IBodyDefinition extends StObject {
     * @property parent
     * @type body
     */
-  var parent: js.UndefOr[BodyType] = js.native
+  var parent: js.UndefOr[BodyType] = js.undefined
   
   /**
     * An array of bodies that make up this body.
@@ -339,7 +337,7 @@ trait IBodyDefinition extends StObject {
     * @property parts
     * @type body[]
     */
-  var parts: js.UndefOr[js.Array[BodyType]] = js.native
+  var parts: js.UndefOr[js.Array[BodyType]] = js.undefined
   
   /**
     * A `Vector` that specifies the current world-space position of the body.
@@ -347,7 +345,7 @@ trait IBodyDefinition extends StObject {
     * @property position
     * @type vector
     */
-  var position: js.UndefOr[Vector] = js.native
+  var position: js.UndefOr[Vector] = js.undefined
   
   /**
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
@@ -355,7 +353,7 @@ trait IBodyDefinition extends StObject {
     * @property render
     * @type object
     */
-  var render: js.UndefOr[IBodyRenderOptions] = js.native
+  var render: js.UndefOr[IBodyRenderOptions] = js.undefined
   
   /**
     * A `Number` that defines the restitution (elasticity) of the body. The value is always positive and is in the range `(0, 1)`.
@@ -369,7 +367,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0
     */
-  var restitution: js.UndefOr[Double] = js.native
+  var restitution: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that defines the number of updates in which this body must have near-zero velocity before it is set as sleeping by the `Matter.Sleeping` module (if sleeping is enabled by the engine).
@@ -378,7 +376,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 60
     */
-  var sleepThreshold: js.UndefOr[Double] = js.native
+  var sleepThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that specifies a tolerance on how far a body is allowed to 'sink' or rotate into other bodies.
@@ -389,7 +387,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0.05
     */
-  var slop: js.UndefOr[Double] = js.native
+  var slop: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that _measures_ the current speed of the body after the last `Body.update`. It is read-only and always positive (it's the magnitude of `body.velocity`).
@@ -399,7 +397,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0
     */
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that allows per-body time scaling, e.g. a force-field where bodies inside are in slow-motion, while others are at full speed.
@@ -408,7 +406,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 1
     */
-  var timeScale: js.UndefOr[Double] = js.native
+  var timeScale: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that specifies the torque (turning force) to apply in the current step. It is zeroed after every `Body.update`.
@@ -417,7 +415,7 @@ trait IBodyDefinition extends StObject {
     * @type number
     * @default 0
     */
-  var torque: js.UndefOr[Double] = js.native
+  var torque: js.UndefOr[Double] = js.undefined
   
   /**
     * A `String` denoting the type of object.
@@ -426,7 +424,7 @@ trait IBodyDefinition extends StObject {
     * @type string
     * @default "body"
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * A `Vector` that _measures_ the current velocity of the body after the last `Body.update`. It is read-only.
@@ -437,7 +435,7 @@ trait IBodyDefinition extends StObject {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var velocity: js.UndefOr[Vector] = js.native
+  var velocity: js.UndefOr[Vector] = js.undefined
   
   /**
     * An array of `Vector` objects that specify the convex hull of the rigid body.
@@ -454,7 +452,7 @@ trait IBodyDefinition extends StObject {
     * @property vertices
     * @type vector[]
     */
-  var vertices: js.UndefOr[js.Array[Vector]] = js.native
+  var vertices: js.UndefOr[js.Array[Vector]] = js.undefined
 }
 object IBodyDefinition {
   

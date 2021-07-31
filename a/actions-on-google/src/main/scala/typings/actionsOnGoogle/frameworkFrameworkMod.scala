@@ -2,13 +2,17 @@ package typings.actionsOnGoogle
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.actionsOnGoogle.commonMod.JsonObject
+import typings.actionsOnGoogle.expressMod.ExpressHandler
 import typings.actionsOnGoogle.expressMod.ExpressMetadata
 import typings.actionsOnGoogle.expressMod.Express_
 import typings.actionsOnGoogle.lambdaMod.LambdaMetadata
 import typings.actionsOnGoogle.lambdaMod.Lambda_
+import typings.express.mod.Request_
+import typings.express.mod.Response_
+import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object frameworkFrameworkMod {
@@ -17,14 +21,15 @@ object frameworkFrameworkMod {
   @js.native
   val builtin: BuiltinFrameworks = js.native
   
-  @js.native
-  trait BuiltinFrameworkMetadata extends FrameworkMetadata {
+  trait BuiltinFrameworkMetadata
+    extends StObject
+       with FrameworkMetadata {
     
     /** @public */
-    var express: js.UndefOr[ExpressMetadata] = js.native
+    var express: js.UndefOr[ExpressMetadata] = js.undefined
     
     /** @public */
-    var lambda: js.UndefOr[LambdaMetadata] = js.native
+    var lambda: js.UndefOr[LambdaMetadata] = js.undefined
   }
   object BuiltinFrameworkMetadata {
     
@@ -51,20 +56,21 @@ object frameworkFrameworkMod {
     }
   }
   
-  @js.native
-  trait BuiltinFrameworks extends Frameworks {
+  trait BuiltinFrameworks
+    extends StObject
+       with Frameworks {
     
     /**
       * Plug and play web framework support for express using body-parser
       * @public
       */
-    var express: Express_ = js.native
+    var express: Express_
     
     /**
       * Plug and play web framework support for lambda API gateway
       * @public
       */
-    var lambda: Lambda_ = js.native
+    var lambda: Lambda_
   }
   object BuiltinFrameworks {
     
@@ -85,14 +91,13 @@ object frameworkFrameworkMod {
     }
   }
   
-  @js.native
   trait Framework[THandler] extends StObject {
     
     /** @public */
-    def check(args: js.Any*): Boolean = js.native
+    def check(args: js.Any*): Boolean
     
     /** @public */
-    def handle(base: StandardHandler): THandler = js.native
+    def handle(base: StandardHandler): THandler
   }
   object Framework {
     
@@ -103,7 +108,7 @@ object frameworkFrameworkMod {
     }
     
     @scala.inline
-    implicit class FrameworkMutableBuilder[Self <: Framework[_], THandler] (val x: Self with Framework[THandler]) extends AnyVal {
+    implicit class FrameworkMutableBuilder[Self <: Framework[?], THandler] (val x: Self & Framework[THandler]) extends AnyVal {
       
       @scala.inline
       def setCheck(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
@@ -123,13 +128,30 @@ object frameworkFrameworkMod {
   StringDictionary[js.UndefOr[String | js.Array[String]]]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Already inherited
+  - scala.AnyRef because Already inherited
+  - js.Any because Already inherited
+  - js.Object because Already inherited
   - js.Function because Already inherited
-  - typings.actionsOnGoogle.lambdaMod.LambdaHandler because Already inherited
-  - typings.actionsOnGoogle.expressMod.ExpressHandler because var conflicts: length. Inlined  */ @js.native
-  trait OmniHandler extends StandardHandler {
+  - typings.actionsOnGoogle.lambdaMod.LambdaHandler because Already inherited */ @js.native
+  trait OmniHandler
+    extends StandardHandler
+       with ExpressHandler {
     
     /** @public */
     def apply(args: js.Any*): js.Any = js.native
+    
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* body */ JsonObject,
+      arg2: /* headers */ Headers,
+      arg3: /* metadata */ js.UndefOr[BuiltinFrameworkMetadata]
+    ): js.Promise[StandardResponse] = js.native
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query],
+      arg2: /* response */ Response_[js.Any]
+    ): Unit = js.native
   }
   
   type StandardHandler = js.Function3[
@@ -139,17 +161,16 @@ object frameworkFrameworkMod {
     js.Promise[StandardResponse]
   ]
   
-  @js.native
   trait StandardResponse extends StObject {
     
     /** @public */
-    var body: JsonObject = js.native
+    var body: JsonObject
     
     /** @public */
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
     /** @public */
-    var status: Double = js.native
+    var status: Double
   }
   object StandardResponse {
     

@@ -2,21 +2,19 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the requested beacons, optionally including attachment
   * data.
   */
-@js.native
 trait SchemaGetInfoForObservedBeaconsResponse extends StObject {
   
   /**
     * Public information about beacons. May be empty if the request matched no
     * beacons.
     */
-  var beacons: js.UndefOr[js.Array[SchemaBeaconInfo]] = js.native
+  var beacons: js.UndefOr[js.Array[SchemaBeaconInfo]] = js.undefined
 }
 object SchemaGetInfoForObservedBeaconsResponse {
   

@@ -3,13 +3,11 @@ package typings.firebaseAdmin.authMod.auth
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing a user.
   */
-@js.native
 trait UserRecord extends StObject {
   
   /**
@@ -18,38 +16,38 @@ trait UserRecord extends StObject {
     * This is set via
     * {@link auth.Auth.setCustomUserClaims `setCustomUserClaims()`}
     */
-  var customClaims: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var customClaims: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Whether or not the user is disabled: `true` for disabled; `false` for
     * enabled.
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /**
     * The user's display name.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The user's primary email, if set.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not the user's primary email is verified.
     */
-  var emailVerified: Boolean = js.native
+  var emailVerified: Boolean
   
   /**
     * Additional metadata about the user.
     */
-  var metadata: UserMetadata = js.native
+  var metadata: UserMetadata
   
   /**
     * The multi-factor related properties for the current user, if available.
     */
-  var multiFactor: js.UndefOr[MultiFactorSettings] = js.native
+  var multiFactor: js.UndefOr[MultiFactorSettings] = js.undefined
   
   /**
     * The user's hashed password (base64-encoded), only if Firebase Auth hashing
@@ -60,7 +58,7 @@ trait UserRecord extends StObject {
     * {@link auth.Auth.listUsers `listUsers()`}.
     *
     */
-  var passwordHash: js.UndefOr[String] = js.native
+  var passwordHash: js.UndefOr[String] = js.undefined
   
   /**
     * The user's password salt (base64-encoded), only if Firebase Auth hashing
@@ -71,32 +69,32 @@ trait UserRecord extends StObject {
     * {@link auth.Auth.listUsers `listUsers()`}.
     *
     */
-  var passwordSalt: js.UndefOr[String] = js.native
+  var passwordSalt: js.UndefOr[String] = js.undefined
   
   /**
     * The user's primary phone number, if set.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The user's photo URL.
     */
-  var photoURL: js.UndefOr[String] = js.native
+  var photoURL: js.UndefOr[String] = js.undefined
   
   /**
     * An array of providers (for example, Google, Facebook) linked to the user.
     */
-  var providerData: js.Array[UserInfo] = js.native
+  var providerData: js.Array[UserInfo]
   
   /**
     * The ID of the tenant the user belongs to, if available.
     */
-  var tenantId: js.UndefOr[String | Null] = js.native
+  var tenantId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * @return A JSON-serializable representation of this object.
     */
-  def toJSON(): js.Object = js.native
+  def toJSON(): js.Object
   
   /**
     * The date the user's tokens are valid after, formatted as a UTC string.
@@ -105,12 +103,12 @@ trait UserRecord extends StObject {
     * API or from the Firebase Auth backend on big account changes (password
     * resets, password or email updates, etc).
     */
-  var tokensValidAfterTime: js.UndefOr[String] = js.native
+  var tokensValidAfterTime: js.UndefOr[String] = js.undefined
   
   /**
     * The user's `uid`.
     */
-  var uid: String = js.native
+  var uid: String
 }
 object UserRecord {
   

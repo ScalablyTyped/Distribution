@@ -2,46 +2,44 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskStatistics extends StObject {
   
   /**
     * The number of checks that did not run because the audit was canceled.
     */
-  var canceledChecks: js.UndefOr[CanceledChecksCount] = js.native
+  var canceledChecks: js.UndefOr[CanceledChecksCount] = js.undefined
   
   /**
     * The number of checks that found compliant resources.
     */
-  var compliantChecks: js.UndefOr[CompliantChecksCount] = js.native
+  var compliantChecks: js.UndefOr[CompliantChecksCount] = js.undefined
   
   /**
     * The number of checks.
     */
-  var failedChecks: js.UndefOr[FailedChecksCount] = js.native
+  var failedChecks: js.UndefOr[FailedChecksCount] = js.undefined
   
   /**
     * The number of checks in progress.
     */
-  var inProgressChecks: js.UndefOr[InProgressChecksCount] = js.native
+  var inProgressChecks: js.UndefOr[InProgressChecksCount] = js.undefined
   
   /**
     * The number of checks that found noncompliant resources.
     */
-  var nonCompliantChecks: js.UndefOr[NonCompliantChecksCount] = js.native
+  var nonCompliantChecks: js.UndefOr[NonCompliantChecksCount] = js.undefined
   
   /**
     * The number of checks in this audit.
     */
-  var totalChecks: js.UndefOr[TotalChecksCount] = js.native
+  var totalChecks: js.UndefOr[TotalChecksCount] = js.undefined
   
   /**
     * The number of checks waiting for data collection.
     */
-  var waitingForDataCollectionChecks: js.UndefOr[WaitingForDataCollectionChecksCount] = js.native
+  var waitingForDataCollectionChecks: js.UndefOr[WaitingForDataCollectionChecksCount] = js.undefined
 }
 object TaskStatistics {
   

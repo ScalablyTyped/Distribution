@@ -4,24 +4,24 @@ import typings.relayRuntime.relayRuntimeStrings.queryresourceDotretain
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'queryresource.retain',   resourceID :number,   profilerContext :any}> */
-@js.native
-trait ReadonlynamequeryresourceName extends LogEvent {
+trait ReadonlynamequeryresourceName
+  extends StObject
+     with LogEvent {
   
-  val name: queryresourceDotretain = js.native
+  val name: queryresourceDotretain
   
-  val profilerContext: js.Any = js.native
+  val profilerContext: js.Any
   
-  val resourceID: Double = js.native
+  val resourceID: Double
 }
 object ReadonlynamequeryresourceName {
   
   @scala.inline
-  def apply(name: queryresourceDotretain, profilerContext: js.Any, resourceID: Double): ReadonlynamequeryresourceName = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], profilerContext = profilerContext.asInstanceOf[js.Any], resourceID = resourceID.asInstanceOf[js.Any])
+  def apply(profilerContext: js.Any, resourceID: Double): ReadonlynamequeryresourceName = {
+    val __obj = js.Dynamic.literal(name = "queryresource.retain", profilerContext = profilerContext.asInstanceOf[js.Any], resourceID = resourceID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlynamequeryresourceName]
   }
   

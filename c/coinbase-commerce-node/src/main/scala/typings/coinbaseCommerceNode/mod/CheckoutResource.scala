@@ -3,7 +3,6 @@ package typings.coinbaseCommerceNode.mod
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.checkout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,34 +10,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @link https://commerce.coinbase.com/docs/api/#checkout-resource
   */
-@js.native
-trait CheckoutResource extends BaseCheckout {
+trait CheckoutResource
+  extends StObject
+     with BaseCheckout {
   
   /**
     * Checkout UUID.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Price in local fiat currency.
     */
-  var local_price: js.UndefOr[Price[FiatCurrency]] = js.native
+  var local_price: js.UndefOr[Price[FiatCurrency]] = js.undefined
   
   /**
     * Checkout image URL.
     */
-  var logo_url: js.UndefOr[String] = js.native
+  var logo_url: js.UndefOr[String] = js.undefined
   
   /**
     * Resource name.
     */
-  var resource: checkout = js.native
+  var resource: checkout
 }
 object CheckoutResource {
   
   @scala.inline
-  def apply(description: String, id: String, name: String, pricing_type: PricingType, resource: checkout): CheckoutResource = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  def apply(description: String, id: String, name: String, pricing_type: PricingType): CheckoutResource = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any], resource = "checkout")
     __obj.asInstanceOf[CheckoutResource]
   }
   

@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionSourceFramerate extends StObject {
   
   /**
     * Specify the denominator of the fraction that represents the frame rate for the setting Caption source frame rate (CaptionSourceFramerate). Use this setting along with the setting Framerate numerator (framerateNumerator).
     */
-  var FramerateDenominator: js.UndefOr[integerMin1Max1001] = js.native
+  var FramerateDenominator: js.UndefOr[integerMin1Max1001] = js.undefined
   
   /**
     * Specify the numerator of the fraction that represents the frame rate for the setting Caption source frame rate (CaptionSourceFramerate). Use this setting along with the setting Framerate denominator (framerateDenominator).
     */
-  var FramerateNumerator: js.UndefOr[integerMin1Max60000] = js.native
+  var FramerateNumerator: js.UndefOr[integerMin1Max60000] = js.undefined
 }
 object CaptionSourceFramerate {
   

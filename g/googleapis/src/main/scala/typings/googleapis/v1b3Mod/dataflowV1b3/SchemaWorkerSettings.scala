@@ -2,13 +2,11 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data to pass through to the worker harness.
   */
-@js.native
 trait SchemaWorkerSettings extends StObject {
   
   /**
@@ -19,24 +17,24 @@ trait SchemaWorkerSettings extends StObject {
     * &quot;Relative Uniform Resource Locators&quot;.  If not specified, the
     * default value is &quot;http://www.googleapis.com/&quot;
     */
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to send work progress updates to the service.
     */
-  var reportingEnabled: js.UndefOr[Boolean] = js.native
+  var reportingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Cloud Dataflow service path relative to the root URL, for example,
     * &quot;dataflow/v1b3/projects&quot;.
     */
-  var servicePath: js.UndefOr[String] = js.native
+  var servicePath: js.UndefOr[String] = js.undefined
   
   /**
     * The Shuffle service path relative to the root URL, for example,
     * &quot;shuffle/v1beta1&quot;.
     */
-  var shuffleServicePath: js.UndefOr[String] = js.native
+  var shuffleServicePath: js.UndefOr[String] = js.undefined
   
   /**
     * The prefix of the resources the system should use for temporary storage.
@@ -44,12 +42,12 @@ trait SchemaWorkerSettings extends StObject {
     * storage.googleapis.com/{bucket}/{object}
     * bucket.storage.googleapis.com/{object}
     */
-  var tempStoragePrefix: js.UndefOr[String] = js.native
+  var tempStoragePrefix: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the worker running this pipeline.
     */
-  var workerId: js.UndefOr[String] = js.native
+  var workerId: js.UndefOr[String] = js.undefined
 }
 object SchemaWorkerSettings {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1StudyConfig extends StObject {
   
   /** The search algorithm specified for the study. */
-  var algorithm: js.UndefOr[String] = js.native
+  var algorithm: js.UndefOr[String] = js.undefined
   
   /** Configuration for automated stopping of unpromising Trials. */
-  var automatedStoppingConfig: js.UndefOr[GoogleCloudMlV1AutomatedStoppingConfig] = js.native
+  var automatedStoppingConfig: js.UndefOr[GoogleCloudMlV1AutomatedStoppingConfig] = js.undefined
   
   /** Metric specs for the study. */
-  var metrics: js.UndefOr[js.Array[GoogleCloudMlV1StudyConfigMetricSpec]] = js.native
+  var metrics: js.UndefOr[js.Array[GoogleCloudMlV1StudyConfigMetricSpec]] = js.undefined
   
   /** Required. The set of parameters to tune. */
-  var parameters: js.UndefOr[js.Array[GoogleCloudMlV1StudyConfigParameterSpec]] = js.native
+  var parameters: js.UndefOr[js.Array[GoogleCloudMlV1StudyConfigParameterSpec]] = js.undefined
 }
 object GoogleCloudMlV1StudyConfig {
   

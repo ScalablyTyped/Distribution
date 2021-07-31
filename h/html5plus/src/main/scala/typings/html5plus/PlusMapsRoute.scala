@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
-@js.native
 trait PlusMapsRoute extends StObject {
   
   /**
@@ -20,21 +18,21 @@ trait PlusMapsRoute extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * 路线终点地理坐标点
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var endPoint: js.UndefOr[PlusMapsPoint] = js.native
+  var endPoint: js.UndefOr[PlusMapsPoint] = js.undefined
   
   /**
     * 路线坐标点段数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var pointCount: js.UndefOr[PlusMapsPoint] = js.native
+  var pointCount: js.UndefOr[PlusMapsPoint] = js.undefined
   
   /**
     * 路线的地理坐标点数组
@@ -42,7 +40,7 @@ trait PlusMapsRoute extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var pointList: js.UndefOr[js.Array[_]] = js.native
+  var pointList: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 线路的提示信息
@@ -50,14 +48,14 @@ trait PlusMapsRoute extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var routeTip: js.UndefOr[String] = js.native
+  var routeTip: js.UndefOr[String] = js.undefined
   
   /**
     * 路线起点地理坐标点
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var startPoint: js.UndefOr[PlusMapsPoint] = js.native
+  var startPoint: js.UndefOr[PlusMapsPoint] = js.undefined
 }
 object PlusMapsRoute {
   
@@ -89,7 +87,7 @@ object PlusMapsRoute {
     def setPointCountUndefined: Self = StObject.set(x, "pointCount", js.undefined)
     
     @scala.inline
-    def setPointList(value: js.Array[_]): Self = StObject.set(x, "pointList", value.asInstanceOf[js.Any])
+    def setPointList(value: js.Array[js.Any]): Self = StObject.set(x, "pointList", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPointListUndefined: Self = StObject.set(x, "pointList", js.undefined)

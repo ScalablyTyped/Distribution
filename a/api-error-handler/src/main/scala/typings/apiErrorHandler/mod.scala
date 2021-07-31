@@ -5,35 +5,35 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: js.Any): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("api-error-handler", JSImport.Namespace)
   @js.native
-  def apply(): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("api-error-handler", JSImport.Namespace)
-  @js.native
-  def apply(options: js.Any): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   // Body response: the JSON returned by api-error-handler
   // See https://github.com/expressjs/api-error-handler/blob/1.0.0/index.js
-  @js.native
   trait Response extends StObject {
     
     // Client errors
-    var code: js.UndefOr[js.Any] = js.native
+    var code: js.UndefOr[js.Any] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
     
-    var status: Double = js.native
+    var status: Double
     
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object Response {
     

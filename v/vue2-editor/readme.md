@@ -11,8 +11,8 @@ HTML editor using Vue.js 2, and Quill.js, an open source editor
 | Full name          | vue2-editor |
 | Keywords           | vue, vue-component, quill, html editor, text editor |
 | # releases         | 59 |
-| # dependents       | 98 |
-| # downloads        | 867012 |
+| # dependents       | 147 |
+| # downloads        | 1132173 |
 | # stars            | 5 |
 
 ## Links

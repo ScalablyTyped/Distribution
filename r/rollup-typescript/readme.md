@@ -12,7 +12,7 @@ Seamless integration between Rollup and TypeScript.
 | Keywords           | rollup-plugin, typescript, es2015 |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 4460 |
+| # downloads        | 2212 |
 | # stars            | 0 |
 
 ## Links

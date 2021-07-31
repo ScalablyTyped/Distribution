@@ -2,56 +2,54 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Frameset extends StObject {
   
-  def AddNewFrame(Where: WdFramesetNewFrameLocation): Frameset = js.native
+  def AddNewFrame(Where: WdFramesetNewFrameLocation): Frameset
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val ChildFramesetCount: Double = js.native
+  val ChildFramesetCount: Double
   
-  def ChildFramesetItem(Index: Double): Frameset = js.native
+  def ChildFramesetItem(Index: Double): Frameset
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var FrameDefaultURL: String = js.native
+  var FrameDefaultURL: String
   
-  var FrameDisplayBorders: Boolean = js.native
+  var FrameDisplayBorders: Boolean
   
-  var FrameLinkToFile: Boolean = js.native
+  var FrameLinkToFile: Boolean
   
-  var FrameName: String = js.native
+  var FrameName: String
   
-  var FrameResizable: Boolean = js.native
+  var FrameResizable: Boolean
   
-  var FrameScrollbarType: WdScrollbarType = js.native
+  var FrameScrollbarType: WdScrollbarType
   
-  var FramesetBorderColor: WdColor = js.native
+  var FramesetBorderColor: WdColor
   
-  var FramesetBorderWidth: Double = js.native
+  var FramesetBorderWidth: Double
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var HeightType: WdFramesetSizeType = js.native
+  var HeightType: WdFramesetSizeType
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val ParentFrameset: Frameset = js.native
+  val ParentFrameset: Frameset
   
-  val Type: WdFramesetType = js.native
+  val Type: WdFramesetType
   
-  var Width: Double = js.native
+  var Width: Double
   
-  var WidthType: WdFramesetSizeType = js.native
+  var WidthType: WdFramesetSizeType
   
   @JSName("Word.Frameset_typekey")
-  var WordDotFrameset_typekey: Frameset = js.native
+  var WordDotFrameset_typekey: Frameset
 }
 object Frameset {
   

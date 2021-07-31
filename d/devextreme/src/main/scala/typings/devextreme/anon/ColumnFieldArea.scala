@@ -2,19 +2,17 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnFieldArea extends StObject {
   
-  var columnFieldArea: js.UndefOr[String] = js.native
+  var columnFieldArea: js.UndefOr[String] = js.undefined
   
-  var dataFieldArea: js.UndefOr[String] = js.native
+  var dataFieldArea: js.UndefOr[String] = js.undefined
   
-  var filterFieldArea: js.UndefOr[String] = js.native
+  var filterFieldArea: js.UndefOr[String] = js.undefined
   
-  var rowFieldArea: js.UndefOr[String] = js.native
+  var rowFieldArea: js.UndefOr[String] = js.undefined
 }
 object ColumnFieldArea {
   

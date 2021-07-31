@@ -2,19 +2,17 @@ package typings.azure.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Database extends StObject {
   
-  var database: String = js.native
+  var database: String
   
-  var password: String = js.native
+  var password: String
   
-  var server: String = js.native
+  var server: String
   
-  var user: String = js.native
+  var user: String
 }
 object Database {
   

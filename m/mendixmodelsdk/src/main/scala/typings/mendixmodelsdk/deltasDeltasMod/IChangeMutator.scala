@@ -3,23 +3,23 @@ package typings.mendixmodelsdk.deltasDeltasMod
 import typings.mendixmodelsdk.mendixmodelsdkStrings.CHANGE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChangeMutator extends Mutator {
+trait IChangeMutator
+  extends StObject
+     with Mutator {
   
-  var mutatorType: CHANGE = js.native
+  var mutatorType: CHANGE
   
-  var updateIndex: js.UndefOr[Double] = js.native
+  var updateIndex: js.UndefOr[Double] = js.undefined
   
-  var value: PrimitiveValue | Null = js.native
+  var value: PrimitiveValue | Null
 }
 object IChangeMutator {
   
   @scala.inline
-  def apply(mutatorType: CHANGE): IChangeMutator = {
-    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any])
+  def apply(): IChangeMutator = {
+    val __obj = js.Dynamic.literal(mutatorType = "CHANGE", value = null)
     __obj.asInstanceOf[IChangeMutator]
   }
   

@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsToResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AWS CloudHSM resource to tag.
     */
-  var ResourceArn: String = js.native
+  var ResourceArn: String
   
   /**
     * One or more tags.
     */
-  var TagList: typings.awsSdk.cloudhsmMod.TagList = js.native
+  var TagList: typings.awsSdk.cloudhsmMod.TagList
 }
 object AddTagsToResourceRequest {
   

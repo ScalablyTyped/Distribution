@@ -4,17 +4,17 @@ import typings.babelPluginTransformRuntime.mod.CorejsOption
 import typings.babelPluginTransformRuntime.mod.CorejsVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Proposals extends CorejsOption {
+  trait Proposals
+    extends StObject
+       with CorejsOption {
     
-    var proposals: Boolean = js.native
+    var proposals: Boolean
     
-    var version: CorejsVersion = js.native
+    var version: CorejsVersion
   }
   object Proposals {
     

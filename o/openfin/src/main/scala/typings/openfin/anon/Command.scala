@@ -2,15 +2,13 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Command extends StObject {
   
-  var command: String = js.native
+  var command: String
   
-  var keys: String = js.native
+  var keys: String
 }
 object Command {
   

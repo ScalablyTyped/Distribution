@@ -2,33 +2,31 @@ package typings.getInstalledPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("get-installed-path", "getInstalledPath")
+  @JSImport("get-installed-path", JSImport.Namespace)
   @js.native
-  def getInstalledPath(name: String): js.Promise[String] = js.native
-  @JSImport("get-installed-path", "getInstalledPath")
-  @js.native
-  def getInstalledPath(name: String, opts: Options): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("get-installed-path", "getInstalledPathSync")
-  @js.native
-  def getInstalledPathSync(name: String): String = js.native
-  @JSImport("get-installed-path", "getInstalledPathSync")
-  @js.native
-  def getInstalledPathSync(name: String, opts: Options): String = js.native
+  @scala.inline
+  def getInstalledPath(name: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstalledPath")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def getInstalledPath(name: String, opts: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstalledPath")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @js.native
+  @scala.inline
+  def getInstalledPathSync(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstalledPathSync")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getInstalledPathSync(name: String, opts: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstalledPathSync")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Options extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var local: js.UndefOr[Boolean] = js.native
+    var local: js.UndefOr[Boolean] = js.undefined
     
-    var paths: js.UndefOr[js.Array[String]] = js.native
+    var paths: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

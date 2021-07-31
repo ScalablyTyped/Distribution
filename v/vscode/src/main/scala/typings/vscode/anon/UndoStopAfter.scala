@@ -2,15 +2,13 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UndoStopAfter extends StObject {
   
-  var undoStopAfter: Boolean = js.native
+  var undoStopAfter: Boolean
   
-  var undoStopBefore: Boolean = js.native
+  var undoStopBefore: Boolean
 }
 object UndoStopAfter {
   

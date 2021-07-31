@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCloudMapInstanceAttribute extends StObject {
   
   /**
     * The name of an AWS Cloud Map service instance attribute key. Any AWS Cloud Map service instance that contains the specified key and value is returned.
     */
-  var key: AwsCloudMapInstanceAttributeKey = js.native
+  var key: AwsCloudMapInstanceAttributeKey
   
   /**
     * The value of an AWS Cloud Map service instance attribute key. Any AWS Cloud Map service instance that contains the specified key and value is returned.
     */
-  var value: AwsCloudMapInstanceAttributeValue = js.native
+  var value: AwsCloudMapInstanceAttributeValue
 }
 object AwsCloudMapInstanceAttribute {
   

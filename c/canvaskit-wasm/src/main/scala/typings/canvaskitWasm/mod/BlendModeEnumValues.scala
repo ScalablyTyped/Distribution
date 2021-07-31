@@ -2,69 +2,69 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BlendModeEnumValues extends EmbindEnum {
+trait BlendModeEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Clear: BlendMode = js.native
+  var Clear: BlendMode
   
-  var Color: BlendMode = js.native
+  var Color: BlendMode
   
-  var ColorBurn: BlendMode = js.native
+  var ColorBurn: BlendMode
   
-  var ColorDodge: BlendMode = js.native
+  var ColorDodge: BlendMode
   
-  var Darken: BlendMode = js.native
+  var Darken: BlendMode
   
-  var Difference: BlendMode = js.native
+  var Difference: BlendMode
   
-  var Dst: BlendMode = js.native
+  var Dst: BlendMode
   
-  var DstATop: BlendMode = js.native
+  var DstATop: BlendMode
   
-  var DstIn: BlendMode = js.native
+  var DstIn: BlendMode
   
-  var DstOut: BlendMode = js.native
+  var DstOut: BlendMode
   
-  var DstOver: BlendMode = js.native
+  var DstOver: BlendMode
   
-  var Exclusion: BlendMode = js.native
+  var Exclusion: BlendMode
   
-  var HardLight: BlendMode = js.native
+  var HardLight: BlendMode
   
-  var Hue: BlendMode = js.native
+  var Hue: BlendMode
   
-  var Lighten: BlendMode = js.native
+  var Lighten: BlendMode
   
-  var Luminosity: BlendMode = js.native
+  var Luminosity: BlendMode
   
-  var Modulate: BlendMode = js.native
+  var Modulate: BlendMode
   
-  var Multiply: BlendMode = js.native
+  var Multiply: BlendMode
   
-  var Overlay: BlendMode = js.native
+  var Overlay: BlendMode
   
-  var Plus: BlendMode = js.native
+  var Plus: BlendMode
   
-  var Saturation: BlendMode = js.native
+  var Saturation: BlendMode
   
-  var Screen: BlendMode = js.native
+  var Screen: BlendMode
   
-  var SoftLight: BlendMode = js.native
+  var SoftLight: BlendMode
   
-  var Src: BlendMode = js.native
+  var Src: BlendMode
   
-  var SrcATop: BlendMode = js.native
+  var SrcATop: BlendMode
   
-  var SrcIn: BlendMode = js.native
+  var SrcIn: BlendMode
   
-  var SrcOut: BlendMode = js.native
+  var SrcOut: BlendMode
   
-  var SrcOver: BlendMode = js.native
+  var SrcOver: BlendMode
   
-  var Xor: BlendMode = js.native
+  var Xor: BlendMode
 }
 object BlendModeEnumValues {
   

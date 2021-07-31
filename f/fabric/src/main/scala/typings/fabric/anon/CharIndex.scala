@@ -2,15 +2,13 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CharIndex extends StObject {
   
-  var charIndex: Double = js.native
+  var charIndex: Double
   
-  var lineIndex: Double = js.native
+  var lineIndex: Double
 }
 object CharIndex {
   

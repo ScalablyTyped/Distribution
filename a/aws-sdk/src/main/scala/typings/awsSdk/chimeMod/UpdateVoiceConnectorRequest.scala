@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateVoiceConnectorRequest extends StObject {
   
   /**
     * The name of the Amazon Chime Voice Connector.
     */
-  var Name: VoiceConnectorName = js.native
+  var Name: VoiceConnectorName
   
   /**
     * When enabled, requires encryption for the Amazon Chime Voice Connector.
     */
-  var RequireEncryption: Boolean = js.native
+  var RequireEncryption: Boolean
   
   /**
     * The Amazon Chime Voice Connector ID.
     */
-  var VoiceConnectorId: NonEmptyString = js.native
+  var VoiceConnectorId: NonEmptyString
 }
 object UpdateVoiceConnectorRequest {
   

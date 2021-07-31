@@ -2,26 +2,24 @@ package typings.awsSdk.resourcegroupstaggingapiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceTagMapping extends StObject {
   
   /**
     * Information that shows whether a resource is compliant with the effective tag policy, including details on any noncompliant tag keys.
     */
-  var ComplianceDetails: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ComplianceDetails] = js.native
+  var ComplianceDetails: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ComplianceDetails] = js.undefined
   
   /**
     * The ARN of the resource.
     */
-  var ResourceARN: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ResourceARN] = js.native
+  var ResourceARN: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ResourceARN] = js.undefined
   
   /**
     * The tags that have been applied to one or more AWS resources.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ResourceTagMapping {
   

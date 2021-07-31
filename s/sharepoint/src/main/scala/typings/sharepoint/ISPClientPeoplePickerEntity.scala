@@ -4,32 +4,31 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sharepoint.anon.Department
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISPClientPeoplePickerEntity
-  extends /* name */ StringDictionary[js.Any] {
+  extends StObject
+     with /* name */ StringDictionary[js.Any] {
   
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
-  var DisplayText: js.UndefOr[String] = js.native
+  var DisplayText: js.UndefOr[String] = js.undefined
   
-  var DomainText: js.UndefOr[String] = js.native
+  var DomainText: js.UndefOr[String] = js.undefined
   
-  var EntityData: js.UndefOr[Department] = js.native
+  var EntityData: js.UndefOr[Department] = js.undefined
   
-  var EntityType: js.UndefOr[String] = js.native
+  var EntityType: js.UndefOr[String] = js.undefined
   
-  var IsResolved: js.UndefOr[Boolean] = js.native
+  var IsResolved: js.UndefOr[Boolean] = js.undefined
   
-  var Key: js.UndefOr[String] = js.native
+  var Key: js.UndefOr[String] = js.undefined
   
-  var MultipleMatches: js.Array[ISPClientPeoplePickerEntity] = js.native
+  var MultipleMatches: js.Array[ISPClientPeoplePickerEntity]
   
-  var ProviderDisplayName: js.UndefOr[String] = js.native
+  var ProviderDisplayName: js.UndefOr[String] = js.undefined
   
-  var ProviderName: js.UndefOr[String] = js.native
+  var ProviderName: js.UndefOr[String] = js.undefined
 }
 object ISPClientPeoplePickerEntity {
   

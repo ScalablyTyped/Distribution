@@ -5,7 +5,6 @@ import typings.std.HTMLImageElement
 import typings.std.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ImageryProvider")
@@ -30,7 +29,7 @@ abstract class ImageryProvider () extends StObject {
   
   var defaultSaturation: Double = js.native
   
-  val errorEvent: Event[js.Array[_]] = js.native
+  val errorEvent: Event[js.Array[js.Any]] = js.native
   
   def getTileCredits(x: Double, y: Double, level: Double): js.Array[Credit] = js.native
   
@@ -63,8 +62,11 @@ abstract class ImageryProvider () extends StObject {
 }
 object ImageryProvider {
   
-  /* static member */
-  @JSImport("cesium", "ImageryProvider.loadImage")
+  @JSImport("cesium", "ImageryProvider")
   @js.native
-  def loadImage(imageryProvider: ImageryProvider, url: String): js.UndefOr[js.Promise[HTMLImageElement | HTMLCanvasElement]] = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def loadImage(imageryProvider: ImageryProvider, url: String): js.UndefOr[js.Promise[HTMLImageElement | HTMLCanvasElement]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(imageryProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Promise[HTMLImageElement | HTMLCanvasElement]]]
 }

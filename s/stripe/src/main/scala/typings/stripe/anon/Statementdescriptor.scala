@@ -2,10 +2,8 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Statementdescriptor extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait Statementdescriptor extends StObject {
     * made. This field prefixes any dynamic statement_descriptor specified on the
     * charge.
     */
-  var statement_descriptor: js.UndefOr[String] = js.native
+  var statement_descriptor: js.UndefOr[String] = js.undefined
   
   /**
     * The Kana variation of the default text that appears on credit card statements
     * when a charge is made (Japan only)
     */
-  var statement_descriptor_kana: js.UndefOr[String | Null] = js.native
+  var statement_descriptor_kana: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The Kanji variation of the default text that appears on credit card statements
     * when a charge is made (Japan only)
     */
-  var statement_descriptor_kanji: js.UndefOr[String | Null] = js.native
+  var statement_descriptor_kanji: js.UndefOr[String | Null] = js.undefined
 }
 object Statementdescriptor {
   

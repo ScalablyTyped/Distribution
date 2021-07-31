@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinHeightProps[TLength] extends StObject {
   
   val minHeight: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object MinHeightProps {
   
@@ -23,12 +21,12 @@ object MinHeightProps {
   }
   
   @scala.inline
-  implicit class MinHeightPropsMutableBuilder[Self <: MinHeightProps[_], TLength] (val x: Self with MinHeightProps[TLength]) extends AnyVal {
+  implicit class MinHeightPropsMutableBuilder[Self <: MinHeightProps[?], TLength] (val x: Self & MinHeightProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setMinHeight(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object MinHeightProps {
     def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def setMinHeightVarargs(value: js.Any*): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+    def setMinHeightVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "minHeight", js.Array(value :_*))
   }
 }

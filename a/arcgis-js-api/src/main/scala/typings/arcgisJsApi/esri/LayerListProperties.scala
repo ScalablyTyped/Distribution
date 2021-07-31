@@ -2,74 +2,74 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayerListProperties extends WidgetProperties {
+trait LayerListProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#listItemCreatedFunction)
     */
-  var listItemCreatedFunction: js.UndefOr[LayerListListItemCreatedHandler] = js.native
+  var listItemCreatedFunction: js.UndefOr[LayerListListItemCreatedHandler] = js.undefined
   
   /**
     * Indicates whether more than one list item may be selected by the user at a single time.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#multipleSelectionEnabled)
     */
-  var multipleSelectionEnabled: js.UndefOr[Boolean] = js.native
+  var multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A collection of selected [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing operational layers selected by the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectedItems)
     */
-  var selectedItems: js.UndefOr[CollectionProperties[ListItemProperties]] = js.native
+  var selectedItems: js.UndefOr[CollectionProperties[ListItemProperties]] = js.undefined
   
   /**
     * Indicates whether list items may be selected by the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectionEnabled)
     */
-  var selectionEnabled: js.UndefOr[Boolean] = js.native
+  var selectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Option for enabling status indicators, which indicate whether or not each layer is loading resources.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#statusIndicatorsVisible)
     */
-  var statusIndicatorsVisible: js.UndefOr[Boolean] = js.native
+  var statusIndicatorsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#viewModel)
     */
-  var viewModel: js.UndefOr[LayerListViewModelProperties] = js.native
+  var viewModel: js.UndefOr[LayerListViewModelProperties] = js.undefined
   
   /**
     * The visible elements that are displayed within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[LayerListVisibleElements] = js.native
+  var visibleElements: js.UndefOr[LayerListVisibleElements] = js.undefined
 }
 object LayerListProperties {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdateDetectorResponse extends StObject {
   
   /**
     * A list of those detector updates that resulted in errors. (If an error is listed here, the specific update did not occur.)
     */
-  var batchUpdateDetectorErrorEntries: js.UndefOr[BatchUpdateDetectorErrorEntries] = js.native
+  var batchUpdateDetectorErrorEntries: js.UndefOr[BatchUpdateDetectorErrorEntries] = js.undefined
 }
 object BatchUpdateDetectorResponse {
   

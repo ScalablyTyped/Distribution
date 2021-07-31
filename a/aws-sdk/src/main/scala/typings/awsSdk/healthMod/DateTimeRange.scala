@@ -2,21 +2,19 @@ package typings.awsSdk.healthMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateTimeRange extends StObject {
   
   /**
     * The starting date and time of a time range.
     */
-  var from: js.UndefOr[timestamp] = js.native
+  var from: js.UndefOr[timestamp] = js.undefined
   
   /**
     * The ending date and time of a time range.
     */
-  var to: js.UndefOr[timestamp] = js.native
+  var to: js.UndefOr[timestamp] = js.undefined
 }
 object DateTimeRange {
   

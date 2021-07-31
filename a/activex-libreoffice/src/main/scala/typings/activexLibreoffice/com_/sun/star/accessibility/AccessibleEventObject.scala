@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,29 +13,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It is usually implemented by {@link AccessibleContext} .
   * @since OOo 1.1.2
   */
-@js.native
-trait AccessibleEventObject extends EventObject {
+trait AccessibleEventObject
+  extends StObject
+     with EventObject {
   
   /**
     * specifies the type of this event.
     *
     * For a list of possible events see {@link AccessibleEventId} .
     */
-  var EventId: Double = js.native
+  var EventId: Double
   
   /**
     * for events that specifies a value change, this is the new value.
     *
     * Depending on the {@link EventId} , this can be void.
     */
-  var NewValue: js.Any = js.native
+  var NewValue: js.Any
   
   /**
     * for events that specifies a value change, this is the old value.
     *
     * Depending on the {@link EventId} , this can be void.
     */
-  var OldValue: js.Any = js.native
+  var OldValue: js.Any
 }
 object AccessibleEventObject {
   

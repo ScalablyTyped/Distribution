@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryItemsListResponse extends StObject {
   
   /** Inventory item collection */
-  var inventoryItems: js.UndefOr[js.Array[InventoryItem]] = js.native
+  var inventoryItems: js.UndefOr[js.Array[InventoryItem]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#inventoryItemsListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Pagination token to be used for the next list operation. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object InventoryItemsListResponse {
   

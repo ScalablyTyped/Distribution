@@ -2,13 +2,11 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayUniqueOptions extends StObject {
   
-  var ignoreUndefined: js.UndefOr[Boolean] = js.native
+  var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
 }
 object ArrayUniqueOptions {
   

@@ -2,15 +2,13 @@ package typings.dndCore.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action[Payload] extends StObject {
   
-  var payload: Payload = js.native
+  var payload: Payload
   
-  var `type`: Identifier = js.native
+  var `type`: Identifier
 }
 object Action {
   
@@ -22,7 +20,7 @@ object Action {
   }
   
   @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action[_], Payload] (val x: Self with Action[Payload]) extends AnyVal {
+  implicit class ActionMutableBuilder[Self <: Action[?], Payload] (val x: Self & Action[Payload]) extends AnyVal {
     
     @scala.inline
     def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])

@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.Add
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,7 +29,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "AssetReference")
 @js.native
 class AssetReference protected ()
-  extends typings.playcanvas.pc.AssetReference {
+  extends StObject
+     with typings.playcanvas.pc.AssetReference {
   def this(
     propertyName: String,
     parent: js.Any,
@@ -57,4 +57,16 @@ class AssetReference protected ()
     callbacks: Add,
     scope: js.Any
   ) = this()
+  
+  /**
+    * Get or set the asset id which this references. One of either id or url must be set to initialize an asset reference.
+    */
+  /* CompleteClass */
+  var id: Double = js.native
+  
+  /**
+    * Get or set the asset url which this references. One of either id or url must be called to initialize an asset reference.
+    */
+  /* CompleteClass */
+  var url: String = js.native
 }

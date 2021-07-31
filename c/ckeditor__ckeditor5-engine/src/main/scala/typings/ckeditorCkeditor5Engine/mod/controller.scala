@@ -15,7 +15,6 @@ import typings.ckeditorCkeditor5Utils.mod.Observable
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controller {
@@ -23,7 +22,9 @@ object controller {
   // engine/controller/datacontroller
   @JSImport("@ckeditor/ckeditor5-engine", "controller.DataController")
   @js.native
-  class DataController protected () extends Observable {
+  class DataController protected ()
+    extends StObject
+       with Observable {
     def this(model: Model) = this()
     def this(model: Model, dataProcessor: DataProcessor) = this()
     
@@ -34,8 +35,8 @@ object controller {
     def get(): String = js.native
     def get(rootName: String): String = js.native
     
-    def init(data: String): js.Promise[_] = js.native
-    def init(data: String, rootName: String): js.Promise[_] = js.native
+    def init(data: String): js.Promise[js.Any] = js.native
+    def init(data: String, rootName: String): js.Promise[js.Any] = js.native
     
     def listenTo(emitter: Emitter, event: String, callback: js.Function, options: Priority): Unit = js.native
     
@@ -69,7 +70,9 @@ object controller {
   // engine/controller/editingcontroller
   @JSImport("@ckeditor/ckeditor5-engine", "controller.EditingController")
   @js.native
-  class EditingController protected () extends Observable {
+  class EditingController protected ()
+    extends StObject
+       with Observable {
     def this(model: Model) = this()
     
     def destroy(): Unit = js.native

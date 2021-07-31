@@ -2,28 +2,26 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSchemasRequest extends StObject {
   
   /**
     * Specifying this limits the results to only schemas that include the provided keywords.
     */
-  var Keywords: string = js.native
+  var Keywords: string
   
-  var Limit: js.UndefOr[integer] = js.native
+  var Limit: js.UndefOr[integer] = js.undefined
   
   /**
     * The token that specifies the next page of results to return. To request the first page, leave NextToken empty. The token will expire in 24 hours, and cannot be shared with other accounts.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the registry.
     */
-  var RegistryName: string = js.native
+  var RegistryName: string
 }
 object SearchSchemasRequest {
   

@@ -3,7 +3,6 @@ package typings.luminoProperties
 import typings.luminoProperties.mod.AttachedProperty.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -92,6 +91,10 @@ object mod {
   }
   object AttachedProperty {
     
+    @JSImport("@lumino/properties", "AttachedProperty")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Clear the stored property data for the given owner.
       *
@@ -101,14 +104,12 @@ object mod {
       * This will clear all property values for the owner, but it will
       * **not** run the change notification for any of the properties.
       */
-    @JSImport("@lumino/properties", "AttachedProperty.clearData")
-    @js.native
-    def clearData(owner: js.Any): Unit = js.native
+    @scala.inline
+    def clearData(owner: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(owner.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * The options object used to initialize an attached property.
       */
-    @js.native
     trait IOptions[T, U] extends StObject {
       
       /**
@@ -121,7 +122,7 @@ object mod {
         *
         * This will **not** be called for the initial default value.
         */
-      var changed: js.UndefOr[js.Function3[/* owner */ T, /* oldValue */ U, /* newValue */ U, Unit]] = js.native
+      var changed: js.UndefOr[js.Function3[/* owner */ T, /* oldValue */ U, /* newValue */ U, Unit]] = js.undefined
       
       /**
         * A function used to coerce a supplied value into the final value.
@@ -133,7 +134,7 @@ object mod {
         *
         * This will **not** be called for the initial default value.
         */
-      var coerce: js.UndefOr[js.Function2[/* owner */ T, /* value */ U, U]] = js.native
+      var coerce: js.UndefOr[js.Function2[/* owner */ T, /* value */ U, U]] = js.undefined
       
       /**
         * A function used to compare two values for equality.
@@ -145,7 +146,7 @@ object mod {
         *
         * If this is not provided, it defaults to the `===` operator.
         */
-      var compare: js.UndefOr[js.Function2[/* oldValue */ U, /* newValue */ U, Boolean]] = js.native
+      var compare: js.UndefOr[js.Function2[/* oldValue */ U, /* newValue */ U, Boolean]] = js.undefined
       
       /**
         * A factory function used to create the default property value.
@@ -154,7 +155,7 @@ object mod {
         * This will be called whenever the property value is required,
         * but has not yet been set for a given owner.
         */
-      def create(owner: T): U = js.native
+      def create(owner: T): U
       
       /**
         * The human readable name for the property.
@@ -166,7 +167,7 @@ object mod {
         * This **does not** have an effect on the property lookup behavior.
         * Multiple properties may share the same name without conflict.
         */
-      var name: String = js.native
+      var name: String
     }
     object IOptions {
       
@@ -177,7 +178,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_, _], T, U] (val x: Self with (IOptions[T, U])) extends AnyVal {
+      implicit class IOptionsMutableBuilder[Self <: IOptions[?, ?], T, U] (val x: Self & (IOptions[T, U])) extends AnyVal {
         
         @scala.inline
         def setChanged(value: (/* owner */ T, /* oldValue */ U, /* newValue */ U) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction3(value))

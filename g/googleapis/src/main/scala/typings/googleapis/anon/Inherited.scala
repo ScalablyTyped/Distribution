@@ -2,21 +2,19 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inherited extends StObject {
   
-  var additionalRoles: js.UndefOr[js.Array[String]] = js.native
+  var additionalRoles: js.UndefOr[js.Array[String]] = js.undefined
   
-  var inherited: js.UndefOr[Boolean] = js.native
+  var inherited: js.UndefOr[Boolean] = js.undefined
   
-  var inheritedFrom: js.UndefOr[String] = js.native
+  var inheritedFrom: js.UndefOr[String] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var teamDrivePermissionType: js.UndefOr[String] = js.native
+  var teamDrivePermissionType: js.UndefOr[String] = js.undefined
 }
 object Inherited {
   

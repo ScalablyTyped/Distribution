@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Section extends StObject {
   
   /** The header of the section, text formatted supported. */
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
   /** A section must contain at least 1 widget. */
-  var widgets: js.UndefOr[js.Array[WidgetMarkup]] = js.native
+  var widgets: js.UndefOr[js.Array[WidgetMarkup]] = js.undefined
 }
 object Section {
   

@@ -10,7 +10,6 @@ import typings.ngTable.ngTableSettingsMod.ISettings
 import typings.ngTable.ngTableSettingsMod.NgTableSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod {
@@ -46,8 +45,8 @@ object coreMod {
     extends typings.ngTable.ngTableParamsMod.NgTableParams[T] {
     def this(baseParameters: Boolean) = this()
     def this(baseParameters: IParamValues[T]) = this()
-    def this(baseParameters: js.UndefOr[scala.Nothing], baseSettings: ISettings[T]) = this()
     def this(baseParameters: Boolean, baseSettings: ISettings[T]) = this()
+    def this(baseParameters: Unit, baseSettings: ISettings[T]) = this()
     def this(baseParameters: IParamValues[T], baseSettings: ISettings[T]) = this()
   }
   /* static members */
@@ -69,15 +68,14 @@ object coreMod {
     @scala.inline
     def $q_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
     
-    @JSImport("ng-table/src/core", "NgTableParams.init")
-    @js.native
+    @scala.inline
     def init(
       $q: IQService,
       $log: ILogService,
       ngTableDefaults: IDefaults,
       ngTableEventsChannel: typings.ngTable.ngTableEventsChannelMod.NgTableEventsChannel,
       ngTableSettings: NgTableSettings
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")($q.asInstanceOf[js.Any], $log.asInstanceOf[js.Any], ngTableDefaults.asInstanceOf[js.Any], ngTableEventsChannel.asInstanceOf[js.Any], ngTableSettings.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("ng-table/src/core", "NgTableParams.ngTableDefaults")
     @js.native

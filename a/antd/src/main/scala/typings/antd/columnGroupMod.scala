@@ -23,74 +23,75 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnGroupMod {
+  
+  @JSImport("antd/lib/table/ColumnGroup", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * This is a syntactic sugar for `columns` prop.
     * So HOC will not work on this.
     */
-  @JSImport("antd/lib/table/ColumnGroup", JSImport.Default)
-  @js.native
-  def default[RecordType](_underscore: ColumnGroupProps[RecordType]): Null = js.native
+  @scala.inline
+  def default[RecordType](_underscore: ColumnGroupProps[RecordType]): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   /* Inlined parent std.Omit<antd.antd/lib/table/interface.ColumnType<RecordType>, 'children'> */
-  @js.native
   trait ColumnGroupProps[RecordType] extends StObject {
     
-    var align: js.UndefOr[AlignType] = js.native
+    var align: js.UndefOr[AlignType] = js.undefined
     
-    var children: ReactElement | js.Array[ReactElement] = js.native
+    var children: ReactElement | js.Array[ReactElement]
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
-    var dataIndex: js.UndefOr[DataIndex] = js.native
+    var dataIndex: js.UndefOr[DataIndex] = js.undefined
     
-    var defaultFilteredValue: js.UndefOr[js.Array[Key] | Null] = js.native
+    var defaultFilteredValue: js.UndefOr[js.Array[Key] | Null] = js.undefined
     
-    var defaultSortOrder: js.UndefOr[SortOrder] = js.native
+    var defaultSortOrder: js.UndefOr[SortOrder] = js.undefined
     
-    var ellipsis: js.UndefOr[CellEllipsisType] = js.native
+    var ellipsis: js.UndefOr[CellEllipsisType] = js.undefined
     
-    var filterDropdown: js.UndefOr[ReactNode | (js.Function1[/* props */ FilterDropdownProps, ReactNode])] = js.native
+    var filterDropdown: js.UndefOr[ReactNode | (js.Function1[/* props */ FilterDropdownProps, ReactNode])] = js.undefined
     
-    var filterDropdownVisible: js.UndefOr[Boolean] = js.native
+    var filterDropdownVisible: js.UndefOr[Boolean] = js.undefined
     
-    var filterIcon: js.UndefOr[ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode])] = js.native
+    var filterIcon: js.UndefOr[ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode])] = js.undefined
     
-    var filterMultiple: js.UndefOr[Boolean] = js.native
+    var filterMultiple: js.UndefOr[Boolean] = js.undefined
     
-    var filtered: js.UndefOr[Boolean] = js.native
+    var filtered: js.UndefOr[Boolean] = js.undefined
     
-    var filteredValue: js.UndefOr[js.Array[Key] | Null] = js.native
+    var filteredValue: js.UndefOr[js.Array[Key] | Null] = js.undefined
     
-    var filters: js.UndefOr[js.Array[ColumnFilterItem]] = js.native
+    var filters: js.UndefOr[js.Array[ColumnFilterItem]] = js.undefined
     
-    var fixed: js.UndefOr[FixedType] = js.native
+    var fixed: js.UndefOr[FixedType] = js.undefined
     
-    var key: js.UndefOr[typings.rcTable.interfaceMod.Key] = js.native
+    var key: js.UndefOr[typings.rcTable.interfaceMod.Key] = js.undefined
     
-    var onCell: js.UndefOr[GetComponentProps[RecordType]] = js.native
+    var onCell: js.UndefOr[GetComponentProps[RecordType]] = js.undefined
     
     var onCellClick: js.UndefOr[
         js.Function2[/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onFilter: js.UndefOr[
         js.Function2[/* value */ String | Double | Boolean, /* record */ RecordType, Boolean]
-      ] = js.native
+      ] = js.undefined
     
-    var onFilterDropdownVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onFilterDropdownVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
     var onHeaderCell: js.UndefOr[
         GetComponentProps[
           /* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var render: js.UndefOr[
         js.Function3[
@@ -99,25 +100,25 @@ object columnGroupMod {
           /* index */ Double, 
           ReactNode | RenderedCell[RecordType]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var responsive: js.UndefOr[js.Array[Breakpoint]] = js.native
+    var responsive: js.UndefOr[js.Array[Breakpoint]] = js.undefined
     
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.native
+    var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.undefined
     
-    var showSorterTooltip: js.UndefOr[Boolean] = js.native
+    var showSorterTooltip: js.UndefOr[Boolean] = js.undefined
     
-    var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.native
+    var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
     
-    var sortOrder: js.UndefOr[SortOrder] = js.native
+    var sortOrder: js.UndefOr[SortOrder] = js.undefined
     
-    var sorter: js.UndefOr[Boolean | CompareFn[RecordType] | Compare[RecordType]] = js.native
+    var sorter: js.UndefOr[Boolean | CompareFn[RecordType] | Compare[RecordType]] = js.undefined
     
-    var title: js.UndefOr[ColumnTitle[RecordType]] = js.native
+    var title: js.UndefOr[ColumnTitle[RecordType]] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object ColumnGroupProps {
     
@@ -128,7 +129,7 @@ object columnGroupMod {
     }
     
     @scala.inline
-    implicit class ColumnGroupPropsMutableBuilder[Self <: ColumnGroupProps[_], RecordType] (val x: Self with ColumnGroupProps[RecordType]) extends AnyVal {
+    implicit class ColumnGroupPropsMutableBuilder[Self <: ColumnGroupProps[?], RecordType] (val x: Self & ColumnGroupProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])

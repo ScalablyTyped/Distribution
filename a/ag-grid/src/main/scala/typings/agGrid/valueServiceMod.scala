@@ -4,7 +4,6 @@ import typings.agGrid.columnMod.Column
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object valueServiceMod {
@@ -26,9 +25,9 @@ object valueServiceMod {
     def getKeyForNode(col: Column, rowNode: RowNode): js.Any = js.native
     
     def getValue(column: Column, rowNode: RowNode): js.Any = js.native
-    def getValue(column: Column, rowNode: RowNode, forFilter: js.UndefOr[scala.Nothing], ignoreAggData: Boolean): js.Any = js.native
     def getValue(column: Column, rowNode: RowNode, forFilter: Boolean): js.Any = js.native
     def getValue(column: Column, rowNode: RowNode, forFilter: Boolean, ignoreAggData: Boolean): js.Any = js.native
+    def getValue(column: Column, rowNode: RowNode, forFilter: Unit, ignoreAggData: Boolean): js.Any = js.native
     
     /* private */ def getValueCallback(node: js.Any, field: js.Any): js.Any = js.native
     

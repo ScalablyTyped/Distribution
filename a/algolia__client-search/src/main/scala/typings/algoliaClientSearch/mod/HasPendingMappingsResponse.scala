@@ -3,21 +3,19 @@ package typings.algoliaClientSearch.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasPendingMappingsResponse extends StObject {
   
   /**
     * Describe cluster pending (migrating, creating, deleting) mapping state.
     */
-  var clusters: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+  var clusters: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   
   /**
     * If there is any clusters with pending mapping state.
     */
-  var pending: Boolean = js.native
+  var pending: Boolean
 }
 object HasPendingMappingsResponse {
   

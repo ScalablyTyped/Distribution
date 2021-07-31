@@ -4,7 +4,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,20 +19,19 @@ object mod {
     def observe(): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var callbackParams: js.UndefOr[js.Array[_]] = js.native
+    var callbackParams: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var intersectionPercentage: js.UndefOr[Double] = js.native
+    var intersectionPercentage: js.UndefOr[Double] = js.undefined
     
-    var rootMargin: js.UndefOr[String] = js.native
+    var rootMargin: js.UndefOr[String] = js.undefined
     
-    var scrollDimmer: js.UndefOr[Double] = js.native
+    var scrollDimmer: js.UndefOr[Double] = js.undefined
     
-    var threshold: js.UndefOr[js.Array[Double]] = js.native
+    var threshold: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var unobserve: js.UndefOr[Boolean] = js.native
+    var unobserve: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -47,7 +45,7 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallbackParams(value: js.Array[_]): Self = StObject.set(x, "callbackParams", value.asInstanceOf[js.Any])
+      def setCallbackParams(value: js.Array[js.Any]): Self = StObject.set(x, "callbackParams", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCallbackParamsUndefined: Self = StObject.set(x, "callbackParams", js.undefined)

@@ -5,43 +5,56 @@ import typings.glidejsGlide.mod.Type
 import typings.glidejsGlide.mod._Pattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glidejsGlideStrings {
   
   @js.native
-  sealed trait Greaterthansign extends _Pattern
+  sealed trait Greaterthansign
+    extends StObject
+       with _Pattern
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait GreaterthansignGreaterthansign extends _Pattern
+  sealed trait GreaterthansignGreaterthansign
+    extends StObject
+       with _Pattern
   @scala.inline
   def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
   
   @js.native
-  sealed trait Lessthansign extends _Pattern
+  sealed trait Lessthansign
+    extends StObject
+       with _Pattern
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignLessthansign extends _Pattern
+  sealed trait LessthansignLessthansign
+    extends StObject
+       with _Pattern
   @scala.inline
   def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
   
   @js.native
-  sealed trait buildDotafter extends Events
+  sealed trait buildDotafter
+    extends StObject
+       with Events
   @scala.inline
   def buildDotafter: buildDotafter = "build.after".asInstanceOf[buildDotafter]
   
   @js.native
-  sealed trait buildDotbefore extends Events
+  sealed trait buildDotbefore
+    extends StObject
+       with Events
   @scala.inline
   def buildDotbefore: buildDotbefore = "build.before".asInstanceOf[buildDotbefore]
   
   @js.native
-  sealed trait carousel extends Type
+  sealed trait carousel
+    extends StObject
+       with Type
   @scala.inline
   def carousel: carousel = "carousel".asInstanceOf[carousel]
   
@@ -51,37 +64,51 @@ object glidejsGlideStrings {
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait mountDotafter extends Events
+  sealed trait mountDotafter
+    extends StObject
+       with Events
   @scala.inline
   def mountDotafter: mountDotafter = "mount.after".asInstanceOf[mountDotafter]
   
   @js.native
-  sealed trait mountDotbefore extends Events
+  sealed trait mountDotbefore
+    extends StObject
+       with Events
   @scala.inline
   def mountDotbefore: mountDotbefore = "mount.before".asInstanceOf[mountDotbefore]
   
   @js.native
-  sealed trait move extends Events
+  sealed trait move
+    extends StObject
+       with Events
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait moveDotafter extends Events
+  sealed trait moveDotafter
+    extends StObject
+       with Events
   @scala.inline
   def moveDotafter: moveDotafter = "move.after".asInstanceOf[moveDotafter]
   
   @js.native
-  sealed trait pause extends Events
+  sealed trait pause
+    extends StObject
+       with Events
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait play extends Events
+  sealed trait play
+    extends StObject
+       with Events
   @scala.inline
   def play: play = "play".asInstanceOf[play]
   
   @js.native
-  sealed trait resize extends Events
+  sealed trait resize
+    extends StObject
+       with Events
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   
@@ -91,62 +118,86 @@ object glidejsGlideStrings {
   def rtr: rtr = "rtr".asInstanceOf[rtr]
   
   @js.native
-  sealed trait run extends Events
+  sealed trait run
+    extends StObject
+       with Events
   @scala.inline
   def run: run = "run".asInstanceOf[run]
   
   @js.native
-  sealed trait runDotafter extends Events
+  sealed trait runDotafter
+    extends StObject
+       with Events
   @scala.inline
   def runDotafter: runDotafter = "run.after".asInstanceOf[runDotafter]
   
   @js.native
-  sealed trait runDotbefore extends Events
+  sealed trait runDotbefore
+    extends StObject
+       with Events
   @scala.inline
   def runDotbefore: runDotbefore = "run.before".asInstanceOf[runDotbefore]
   
   @js.native
-  sealed trait runDotend extends Events
+  sealed trait runDotend
+    extends StObject
+       with Events
   @scala.inline
   def runDotend: runDotend = "run.end".asInstanceOf[runDotend]
   
   @js.native
-  sealed trait runDotoffset extends Events
+  sealed trait runDotoffset
+    extends StObject
+       with Events
   @scala.inline
   def runDotoffset: runDotoffset = "run.offset".asInstanceOf[runDotoffset]
   
   @js.native
-  sealed trait runDotstart extends Events
+  sealed trait runDotstart
+    extends StObject
+       with Events
   @scala.inline
   def runDotstart: runDotstart = "run.start".asInstanceOf[runDotstart]
   
   @js.native
-  sealed trait slider extends Type
+  sealed trait slider
+    extends StObject
+       with Type
   @scala.inline
   def slider: slider = "slider".asInstanceOf[slider]
   
   @js.native
-  sealed trait swipeDotend extends Events
+  sealed trait swipeDotend
+    extends StObject
+       with Events
   @scala.inline
   def swipeDotend: swipeDotend = "swipe.end".asInstanceOf[swipeDotend]
   
   @js.native
-  sealed trait swipeDotmove extends Events
+  sealed trait swipeDotmove
+    extends StObject
+       with Events
   @scala.inline
   def swipeDotmove: swipeDotmove = "swipe.move".asInstanceOf[swipeDotmove]
   
   @js.native
-  sealed trait swipeDotstart extends Events
+  sealed trait swipeDotstart
+    extends StObject
+       with Events
   @scala.inline
   def swipeDotstart: swipeDotstart = "swipe.start".asInstanceOf[swipeDotstart]
   
   @js.native
-  sealed trait translateDotjump extends Events
+  sealed trait translateDotjump
+    extends StObject
+       with Events
   @scala.inline
   def translateDotjump: translateDotjump = "translate.jump".asInstanceOf[translateDotjump]
   
   @js.native
-  sealed trait update extends Events
+  sealed trait update
+    extends StObject
+       with Events
   @scala.inline
   def update: update = "update".asInstanceOf[update]
 }

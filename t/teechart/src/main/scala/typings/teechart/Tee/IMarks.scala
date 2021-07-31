@@ -2,19 +2,19 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMarks extends IAnnotation {
+trait IMarks
+  extends StObject
+     with IAnnotation {
   
-  var arrow: IArrow = js.native
+  var arrow: IArrow
   
-  var drawEvery: Double = js.native
+  var drawEvery: Double
   
-  var series: ISeries = js.native
+  var series: ISeries
   
-  var style: String = js.native
+  var style: String
 }
 object IMarks {
   

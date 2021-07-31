@@ -4,39 +4,38 @@ import typings.baiduApp.baiduAppStrings.loading
 import typings.baiduApp.baiduAppStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region 界面API列表
-@js.native
 trait ToastOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 提示的延迟时间，单位毫秒，默认：1500
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * 图标，只支持"success"、"loading"
     */
-  var icon: js.UndefOr[success | loading] = js.native
+  var icon: js.UndefOr[success | loading] = js.undefined
   
   /**
     * 自定义图标的本地路径，image 的优先级高于 icon
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * 是否显示透明蒙层，防止触摸穿透，默认：false
     */
-  var mask: js.UndefOr[Boolean] = js.native
+  var mask: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 提示的内容
     */
-  var title: String = js.native
+  var title: String
 }
 object ToastOptions {
   

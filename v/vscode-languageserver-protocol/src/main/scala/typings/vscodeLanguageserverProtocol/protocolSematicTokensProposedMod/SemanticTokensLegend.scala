@@ -2,21 +2,19 @@ package typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticTokensLegend extends StObject {
   
   /**
     * The token modifiers a server uses.
     */
-  var tokenModifiers: js.Array[String] = js.native
+  var tokenModifiers: js.Array[String]
   
   /**
     * The token types a server uses.
     */
-  var tokenTypes: js.Array[String] = js.native
+  var tokenTypes: js.Array[String]
 }
 object SemanticTokensLegend {
   

@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1Instruction extends StObject {
   
   /** Output only. The names of any related resources that are blocking changes to the instruction. */
-  var blockingResources: js.UndefOr[js.Array[String]] = js.native
+  var blockingResources: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. Creation time of instruction. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated: this instruction format is not supported any more. Instruction from a CSV file, such as for classification task. The CSV file should have exact two columns, in the
     * following format: * The first column is labeled data, such as an image reference, text. * The second column is comma separated labels associated with data.
     */
-  var csvInstruction: js.UndefOr[GoogleCloudDatalabelingV1beta1CsvInstruction] = js.native
+  var csvInstruction: js.UndefOr[GoogleCloudDatalabelingV1beta1CsvInstruction] = js.undefined
   
   /** Required. The data type of this instruction. */
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
   /** Optional. User-provided description of the instruction. The description can be up to 10000 characters long. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Required. The display name of the instruction. Maximum of 64 characters. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. Instruction resource name, format: projects/{project_id}/instructions/{instruction_id} */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Instruction from a PDF document. The PDF should be in a Cloud Storage bucket. */
-  var pdfInstruction: js.UndefOr[GoogleCloudDatalabelingV1beta1PdfInstruction] = js.native
+  var pdfInstruction: js.UndefOr[GoogleCloudDatalabelingV1beta1PdfInstruction] = js.undefined
   
   /** Output only. Last update time of instruction. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1Instruction {
   

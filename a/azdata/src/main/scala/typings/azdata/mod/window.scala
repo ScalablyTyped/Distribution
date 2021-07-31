@@ -5,10 +5,13 @@ import typings.vscode.mod.Disposable
 import typings.vscode.mod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object window {
+  
+  @JSImport("azdata", "window")
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait MessageLevel extends StObject
@@ -17,64 +20,58 @@ object window {
   object MessageLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[MessageLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[MessageLevel & Double] = js.native
     
     @js.native
-    sealed trait Error extends MessageLevel
-    /* 0 */ val Error: typings.azdata.mod.window.MessageLevel.Error with Double = js.native
+    sealed trait Error
+      extends StObject
+         with MessageLevel
+    /* 0 */ val Error: typings.azdata.mod.window.MessageLevel.Error & Double = js.native
     
     @js.native
-    sealed trait Information extends MessageLevel
-    /* 2 */ val Information: typings.azdata.mod.window.MessageLevel.Information with Double = js.native
+    sealed trait Information
+      extends StObject
+         with MessageLevel
+    /* 2 */ val Information: typings.azdata.mod.window.MessageLevel.Information & Double = js.native
     
     @js.native
-    sealed trait Warning extends MessageLevel
-    /* 1 */ val Warning: typings.azdata.mod.window.MessageLevel.Warning with Double = js.native
+    sealed trait Warning
+      extends StObject
+         with MessageLevel
+    /* 1 */ val Warning: typings.azdata.mod.window.MessageLevel.Warning & Double = js.native
   }
   
-  @JSImport("azdata", "window.closeDialog")
-  @js.native
-  def closeDialog(dialog: Dialog): Unit = js.native
+  @scala.inline
+  def closeDialog(dialog: Dialog): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDialog")(dialog.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("azdata", "window.createButton")
-  @js.native
-  def createButton(label: String): Button = js.native
-  @JSImport("azdata", "window.createButton")
-  @js.native
-  def createButton(label: String, position: DialogButtonPosition): Button = js.native
+  @scala.inline
+  def createButton(label: String): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("createButton")(label.asInstanceOf[js.Any]).asInstanceOf[Button]
+  @scala.inline
+  def createButton(label: String, position: DialogButtonPosition): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("createButton")(label.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Button]
   
-  @JSImport("azdata", "window.createModelViewDialog")
-  @js.native
-  def createModelViewDialog(title: String): Dialog = js.native
-  @JSImport("azdata", "window.createModelViewDialog")
-  @js.native
-  def createModelViewDialog(title: String, dialogName: js.UndefOr[scala.Nothing], isWide: Boolean): Dialog = js.native
-  @JSImport("azdata", "window.createModelViewDialog")
-  @js.native
-  def createModelViewDialog(title: String, dialogName: String): Dialog = js.native
-  @JSImport("azdata", "window.createModelViewDialog")
-  @js.native
-  def createModelViewDialog(title: String, dialogName: String, isWide: Boolean): Dialog = js.native
+  @scala.inline
+  def createModelViewDialog(title: String): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any]).asInstanceOf[Dialog]
+  @scala.inline
+  def createModelViewDialog(title: String, dialogName: String): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any])).asInstanceOf[Dialog]
+  @scala.inline
+  def createModelViewDialog(title: String, dialogName: String, isWide: Boolean): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any], isWide.asInstanceOf[js.Any])).asInstanceOf[Dialog]
+  @scala.inline
+  def createModelViewDialog(title: String, dialogName: Unit, isWide: Boolean): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any], isWide.asInstanceOf[js.Any])).asInstanceOf[Dialog]
   
-  @JSImport("azdata", "window.createTab")
-  @js.native
-  def createTab(title: String): DialogTab = js.native
+  @scala.inline
+  def createTab(title: String): DialogTab = ^.asInstanceOf[js.Dynamic].applyDynamic("createTab")(title.asInstanceOf[js.Any]).asInstanceOf[DialogTab]
   
-  @JSImport("azdata", "window.createWebViewDialog")
-  @js.native
-  def createWebViewDialog(title: String): ModalDialog = js.native
+  @scala.inline
+  def createWebViewDialog(title: String): ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebViewDialog")(title.asInstanceOf[js.Any]).asInstanceOf[ModalDialog]
   
-  @JSImport("azdata", "window.createWizard")
-  @js.native
-  def createWizard(title: String): Wizard = js.native
+  @scala.inline
+  def createWizard(title: String): Wizard = ^.asInstanceOf[js.Dynamic].applyDynamic("createWizard")(title.asInstanceOf[js.Any]).asInstanceOf[Wizard]
   
-  @JSImport("azdata", "window.createWizardPage")
-  @js.native
-  def createWizardPage(title: String): WizardPage = js.native
+  @scala.inline
+  def createWizardPage(title: String): WizardPage = ^.asInstanceOf[js.Dynamic].applyDynamic("createWizardPage")(title.asInstanceOf[js.Any]).asInstanceOf[WizardPage]
   
-  @JSImport("azdata", "window.openDialog")
-  @js.native
-  def openDialog(dialog: Dialog): Unit = js.native
+  @scala.inline
+  def openDialog(dialog: Dialog): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDialog")(dialog.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait Button extends StObject {
@@ -102,14 +99,10 @@ object window {
     /**
       * Raised when the button is clicked
       */
-    def onClick(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
-    def onClick(
-      listener: js.Function1[/* e */ Unit, _],
-      thisArgs: js.UndefOr[scala.Nothing],
-      disposables: js.Array[Disposable]
-    ): Disposable = js.native
-    def onClick(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
-    def onClick(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onClick(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
+    def onClick(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
+    def onClick(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onClick(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
     
     /**
       * Position of the button on the dialog footer
@@ -118,7 +111,9 @@ object window {
   }
   
   @js.native
-  trait Dialog extends ModelViewPanel {
+  trait Dialog
+    extends StObject
+       with ModelViewPanel {
     
     /**
       * The cancel button
@@ -193,14 +188,13 @@ object window {
     def right: typings.azdata.azdataStrings.right = "right".asInstanceOf[typings.azdata.azdataStrings.right]
   }
   
-  @js.native
   trait DialogMessage extends StObject {
     
-    val description: js.UndefOr[String] = js.native
+    val description: js.UndefOr[String] = js.undefined
     
-    val level: js.UndefOr[MessageLevel] = js.native
+    val level: js.UndefOr[MessageLevel] = js.undefined
     
-    val text: String = js.native
+    val text: String
   }
   object DialogMessage {
     
@@ -231,7 +225,9 @@ object window {
   }
   
   @js.native
-  trait DialogTab extends ModelViewPanel {
+  trait DialogTab
+    extends StObject
+       with ModelViewPanel {
     
     /**
       * A string giving the ID of the tab's model view content
@@ -255,14 +251,14 @@ object window {
     /**
       * Fired whenever the panel's valid property changes
       */
-    def onValidityChanged(listener: js.Function1[/* e */ Boolean, _]): Disposable = js.native
+    def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any]): Disposable = js.native
+    def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: js.Any): Disposable = js.native
     def onValidityChanged(
-      listener: js.Function1[/* e */ Boolean, _],
-      thisArgs: js.UndefOr[scala.Nothing],
+      listener: js.Function1[/* e */ Boolean, js.Any],
+      thisArgs: js.Any,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
-    def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any): Disposable = js.native
-    def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
     
     /**
       * Register model view content for the dialog.
@@ -347,16 +343,16 @@ object window {
       * Event fired when the wizard's page changes, containing information about the
       * previous page and the new page
       */
-    def onPageChanged(listener: js.Function1[/* e */ WizardPageChangeInfo, _]): Disposable = js.native
+    def onPageChanged(listener: js.Function1[/* e */ WizardPageChangeInfo, js.Any]): Disposable = js.native
+    def onPageChanged(listener: js.Function1[/* e */ WizardPageChangeInfo, js.Any], thisArgs: js.Any): Disposable = js.native
     def onPageChanged(
-      listener: js.Function1[/* e */ WizardPageChangeInfo, _],
-      thisArgs: js.UndefOr[scala.Nothing],
+      listener: js.Function1[/* e */ WizardPageChangeInfo, js.Any],
+      thisArgs: js.Any,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
-    def onPageChanged(listener: js.Function1[/* e */ WizardPageChangeInfo, _], thisArgs: js.Any): Disposable = js.native
     def onPageChanged(
-      listener: js.Function1[/* e */ WizardPageChangeInfo, _],
-      thisArgs: js.Any,
+      listener: js.Function1[/* e */ WizardPageChangeInfo, js.Any],
+      thisArgs: Unit,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
     /**
@@ -412,7 +408,9 @@ object window {
   }
   
   @js.native
-  trait WizardPage extends ModelViewPanel {
+  trait WizardPage
+    extends StObject
+       with ModelViewPanel {
     
     /**
       * A string giving the ID of the page's model view content
@@ -441,18 +439,17 @@ object window {
     var title: String = js.native
   }
   
-  @js.native
   trait WizardPageChangeInfo extends StObject {
     
     /**
       * The page number that the wizard changed from
       */
-    var lastPage: Double = js.native
+    var lastPage: Double
     
     /**
       * The new page number or undefined if the user is closing the wizard
       */
-    var newPage: Double = js.native
+    var newPage: Double
   }
   object WizardPageChangeInfo {
     

@@ -5,25 +5,34 @@ import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayQueryResponseCacheMod {
   
   @JSImport("relay-runtime/lib/network/RelayQueryResponseCache", JSImport.Default)
   @js.native
-  class default protected () extends RelayQueryResponseCache {
+  class default protected ()
+    extends StObject
+       with RelayQueryResponseCache {
     def this(config: Size) = this()
+    
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /* CompleteClass */
+    override def get(queryID: String, variables: Variables): GraphQLResponse | Null = js.native
+    
+    /* CompleteClass */
+    override def set(queryID: String, variables: Variables, payload: GraphQLResponse): Unit = js.native
   }
   
-  @js.native
   trait RelayQueryResponseCache extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def get(queryID: String, variables: Variables): GraphQLResponse | Null = js.native
+    def get(queryID: String, variables: Variables): GraphQLResponse | Null
     
-    def set(queryID: String, variables: Variables, payload: GraphQLResponse): Unit = js.native
+    def set(queryID: String, variables: Variables, payload: GraphQLResponse): Unit
   }
   object RelayQueryResponseCache {
     

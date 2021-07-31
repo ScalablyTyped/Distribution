@@ -2,34 +2,32 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for running a transfer.
   */
-@js.native
 trait SchemaTransferSpec extends StObject {
   
   /**
     * An AWS S3 data source.
     */
-  var awsS3DataSource: js.UndefOr[SchemaAwsS3Data] = js.native
+  var awsS3DataSource: js.UndefOr[SchemaAwsS3Data] = js.undefined
   
   /**
     * A Google Cloud Storage data sink.
     */
-  var gcsDataSink: js.UndefOr[SchemaGcsData] = js.native
+  var gcsDataSink: js.UndefOr[SchemaGcsData] = js.undefined
   
   /**
     * A Google Cloud Storage data source.
     */
-  var gcsDataSource: js.UndefOr[SchemaGcsData] = js.native
+  var gcsDataSource: js.UndefOr[SchemaGcsData] = js.undefined
   
   /**
     * An HTTP URL data source.
     */
-  var httpDataSource: js.UndefOr[SchemaHttpData] = js.native
+  var httpDataSource: js.UndefOr[SchemaHttpData] = js.undefined
   
   /**
     * Only objects that satisfy these object conditions are included in the set
@@ -37,14 +35,14 @@ trait SchemaTransferSpec extends StObject {
     * objects&#39; `lastModificationTime` do not exclude objects in a data
     * sink.
     */
-  var objectConditions: js.UndefOr[SchemaObjectConditions] = js.native
+  var objectConditions: js.UndefOr[SchemaObjectConditions] = js.undefined
   
   /**
     * If the option `deleteObjectsUniqueInSink` is `true`, object conditions
     * based on objects&#39; `lastModificationTime` are ignored and do not
     * exclude objects in a data source or a data sink.
     */
-  var transferOptions: js.UndefOr[SchemaTransferOptions] = js.native
+  var transferOptions: js.UndefOr[SchemaTransferOptions] = js.undefined
 }
 object SchemaTransferSpec {
   

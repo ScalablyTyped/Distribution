@@ -2,21 +2,19 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageIdentifier extends StObject {
   
   /**
     * The sha256 digest of the image manifest.
     */
-  var imageDigest: js.UndefOr[ImageDigest] = js.native
+  var imageDigest: js.UndefOr[ImageDigest] = js.undefined
   
   /**
     * The tag used for the image.
     */
-  var imageTag: js.UndefOr[ImageTag] = js.native
+  var imageTag: js.UndefOr[ImageTag] = js.undefined
 }
 object ImageIdentifier {
   

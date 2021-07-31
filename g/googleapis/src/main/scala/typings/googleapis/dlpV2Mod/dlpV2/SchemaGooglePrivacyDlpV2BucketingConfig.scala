@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,13 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of the bound before comparing. See
   * https://cloud.google.com/dlp/docs/concepts-bucketing to learn more.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2BucketingConfig extends StObject {
   
   /**
     * Set of buckets. Ranges must be non-overlapping.
     */
-  var buckets: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Bucket]] = js.native
+  var buckets: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Bucket]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2BucketingConfig {
   

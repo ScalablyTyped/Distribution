@@ -12,13 +12,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a service for bar and column diagrams. */
-@js.native
 trait BarDiagram
-  extends Diagram
+  extends StObject
+     with Diagram
      with ChartStatistics
      with ChartAxisXSupplier
      with ChartTwoAxisYSupplier
@@ -30,7 +29,7 @@ trait BarDiagram
     * If `TRUE` , determines that in a three-dimensional bar chart the bars of each series are arranged behind each other in the z-direction. If `FALSE` the
     * arrangement of bars is like in two-dimensional bar charts.
     */
-  var Deep: Boolean = js.native
+  var Deep: Boolean
   
   /**
     * If bars of a bar or column chart are attached to different axis, this property determines how to display those. If `TRUE` , the bars are grouped
@@ -40,7 +39,7 @@ trait BarDiagram
     *
     * If all data series of a bar or column chart are attached to only one axis, this property has no effect.
     */
-  var GroupBarsPerAxis: Boolean = js.native
+  var GroupBarsPerAxis: Boolean
   
   /**
     * Determines how many data rows are displayed as lines rather than bars.
@@ -49,20 +48,20 @@ trait BarDiagram
     * dimensional vertical bar charts only.
     * @deprecated Deprecated
     */
-  var NumberOfLines: Double = js.native
+  var NumberOfLines: Double
   
   /**
     * determines if, in a stacked chart, there are connecting lines between corresponding bars. Currently, bar charts with horizontal bars do not support
     * this property.
     */
-  var StackedBarsConnected: Boolean = js.native
+  var StackedBarsConnected: Boolean
   
   /**
     * Determines if the bars of a chart are drawn vertically or horizontally. Default is vertical.
     *
     * If Vertical is `FALSE` you get a column chart rather than a bar chart.
     */
-  var Vertical: Boolean = js.native
+  var Vertical: Boolean
 }
 object BarDiagram {
   

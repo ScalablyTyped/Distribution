@@ -9,63 +9,61 @@ import typings.stripe.stripeStrings.prepaid
 import typings.stripe.stripeStrings.unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Brand extends StObject {
   
   /**
     * Card brand. Can be `amex`, `diners`, `discover`, `jcb`, `mastercard`, `unionpay`, `visa`, or `unknown`.
     */
-  var brand: CardBrand = js.native
+  var brand: CardBrand
   
   /**
     * Check results by Card networks on Card address and CVC at time of payment.
     */
-  var checks: CardChecks = js.native
+  var checks: CardChecks
   
   /**
     * Two-letter ISO code representing the country of the card. You could use this attribute to get a sense of
     * the international breakdown of cards you’ve collected.
     */
-  var country: String = js.native
+  var country: String
   
   /**
     * Two-digit number representing the card’s expiration month.
     */
-  var exp_month: Double = js.native
+  var exp_month: Double
   
   /**
     * Four-digit number representing the card’s expiration year.
     */
-  var exp_year: Double = js.native
+  var exp_year: Double
   
   /**
     * Uniquely identifies this particular card number. You can use this attribute to check whether two
     * customers who’ve signed up with you are using the same card number, for example.
     */
-  var fingerprint: String = js.native
+  var fingerprint: String
   
   /**
     * Card funding type. Can be credit, debit, prepaid, or unknown.
     */
-  var funding: credit | debit | prepaid | unknown_ = js.native
+  var funding: credit | debit | prepaid | unknown_
   
   /**
     * The last four digits of the card.
     */
-  var last4: String = js.native
+  var last4: String
   
   /**
     * Populated if this transaction used 3D Secure authentication.
     */
-  var three_d_secure: js.UndefOr[Authenticated] = js.native
+  var three_d_secure: js.UndefOr[Authenticated] = js.undefined
   
   /**
     * If this Card is part of a card wallet, this contains the details of the card wallet.
     */
-  var wallet: js.UndefOr[CardWallet] = js.native
+  var wallet: js.UndefOr[CardWallet] = js.undefined
 }
 object Brand {
   

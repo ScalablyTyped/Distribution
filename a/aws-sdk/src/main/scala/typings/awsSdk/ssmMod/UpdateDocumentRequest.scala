@@ -2,46 +2,44 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDocumentRequest extends StObject {
   
   /**
     * A list of key and value pairs that describe attachments to a version of a document.
     */
-  var Attachments: js.UndefOr[AttachmentsSourceList] = js.native
+  var Attachments: js.UndefOr[AttachmentsSourceList] = js.undefined
   
   /**
     * A valid JSON or YAML string.
     */
-  var Content: DocumentContent = js.native
+  var Content: DocumentContent
   
   /**
     * Specify the document format for the new document version. Systems Manager supports JSON and YAML documents. JSON is the default format.
     */
-  var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.native
+  var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.undefined
   
   /**
     * (Required) The latest version of the document that you want to update. The latest document version can be specified using the $LATEST variable or by the version number. Updating a previous version of a document is not supported.
     */
-  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.native
+  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
     * The name of the document that you want to update.
     */
-  var Name: DocumentName = js.native
+  var Name: DocumentName
   
   /**
     * Specify a new target type for the document.
     */
-  var TargetType: js.UndefOr[typings.awsSdk.ssmMod.TargetType] = js.native
+  var TargetType: js.UndefOr[typings.awsSdk.ssmMod.TargetType] = js.undefined
   
   /**
     * An optional field specifying the version of the artifact you are updating with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
     */
-  var VersionName: js.UndefOr[DocumentVersionName] = js.native
+  var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
 }
 object UpdateDocumentRequest {
   

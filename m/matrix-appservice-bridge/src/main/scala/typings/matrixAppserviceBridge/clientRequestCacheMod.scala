@@ -4,14 +4,13 @@ import typings.matrixAppserviceBridge.anon.Content
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientRequestCacheMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/client-request-cache", "ClientRequestCache")
   @js.native
-  class ClientRequestCache[T, P /* <: js.Array[_] */] protected () extends StObject {
+  class ClientRequestCache[T, P /* <: js.Array[js.Any] */] protected () extends StObject {
     /**
       * @param ttl How old a result can be before it gets expired.
       * @param size How many results to store before we trim.

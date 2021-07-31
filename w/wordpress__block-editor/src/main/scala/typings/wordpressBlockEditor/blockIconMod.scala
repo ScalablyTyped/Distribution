@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressBlockEditor.blockIconMod.BlockIcon.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockIconMod {
@@ -24,14 +23,13 @@ object blockIconMod {
   
   object BlockIcon {
     
-    @js.native
     trait Props extends StObject {
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var icon: /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/components.@wordpress/components/icon.Icon.Props<any>['icon'] */ js.Any = js.native
+      var icon: /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/components.@wordpress/components/icon.Icon.Props<any>['icon'] */ js.Any
       
-      var showColors: js.UndefOr[Boolean] = js.native
+      var showColors: js.UndefOr[Boolean] = js.undefined
     }
     object Props {
       

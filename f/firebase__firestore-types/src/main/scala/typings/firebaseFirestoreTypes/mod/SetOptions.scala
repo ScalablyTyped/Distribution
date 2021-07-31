@@ -2,15 +2,13 @@ package typings.firebaseFirestoreTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetOptions extends StObject {
   
-  val merge: js.UndefOr[Boolean] = js.native
+  val merge: js.UndefOr[Boolean] = js.undefined
   
-  val mergeFields: js.UndefOr[js.Array[String | FieldPath]] = js.native
+  val mergeFields: js.UndefOr[js.Array[String | FieldPath]] = js.undefined
 }
 object SetOptions {
   

@@ -10,7 +10,6 @@ import typings.devexpressUtils.typesMod.ICloneable
 import typings.devexpressUtils.typesMod.IEquatable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
@@ -21,541 +20,444 @@ object listMod {
   /* static members */
   object ListUtils {
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulate")
+    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def accumulate[T, TAcc](
       list: js.Array[T],
       initAccValue: TAcc,
       callback: js.Function3[/* acc */ TAcc, /* currVal */ T, /* index */ Double, TAcc]
-    ): TAcc = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulate")
-    @js.native
-    def accumulate[T, TAcc](
-      list: js.Array[T],
-      initAccValue: TAcc,
-      callback: js.Function3[/* acc */ TAcc, /* currVal */ T, /* index */ Double, TAcc],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): TAcc = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulate")
-    @js.native
+    ): TAcc = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulate")(list.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TAcc]
+    @scala.inline
     def accumulate[T, TAcc](
       list: js.Array[T],
       initAccValue: TAcc,
       callback: js.Function3[/* acc */ TAcc, /* currVal */ T, /* index */ Double, TAcc],
       startIndex: Double
-    ): TAcc = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulate")
-    @js.native
+    ): TAcc = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulate")(list.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[TAcc]
+    @scala.inline
     def accumulate[T, TAcc](
       list: js.Array[T],
       initAccValue: TAcc,
       callback: js.Function3[/* acc */ TAcc, /* currVal */ T, /* index */ Double, TAcc],
       startIndex: Double,
       endIndex: Double
-    ): TAcc = js.native
+    ): TAcc = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulate")(list.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[TAcc]
+    @scala.inline
+    def accumulate[T, TAcc](
+      list: js.Array[T],
+      initAccValue: TAcc,
+      callback: js.Function3[/* acc */ TAcc, /* currVal */ T, /* index */ Double, TAcc],
+      startIndex: Unit,
+      endIndex: Double
+    ): TAcc = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulate")(list.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[TAcc]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulateNumber")
-    @js.native
+    @scala.inline
     def accumulateNumber[T](
       list: js.Array[T],
       callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double]
-    ): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulateNumber")
-    @js.native
-    def accumulateNumber[T](
-      list: js.Array[T],
-      callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double],
-      initAccValue: js.UndefOr[scala.Nothing],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulateNumber")
-    @js.native
-    def accumulateNumber[T](
-      list: js.Array[T],
-      callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double],
-      initAccValue: js.UndefOr[scala.Nothing],
-      startIndex: Double
-    ): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulateNumber")
-    @js.native
-    def accumulateNumber[T](
-      list: js.Array[T],
-      callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double],
-      initAccValue: js.UndefOr[scala.Nothing],
-      startIndex: Double,
-      endIndex: Double
-    ): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulateNumber")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulateNumber")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def accumulateNumber[T](
       list: js.Array[T],
       callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double],
       initAccValue: Double
-    ): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulateNumber")
-    @js.native
-    def accumulateNumber[T](
-      list: js.Array[T],
-      callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double],
-      initAccValue: Double,
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulateNumber")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulateNumber")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def accumulateNumber[T](
       list: js.Array[T],
       callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double],
       initAccValue: Double,
       startIndex: Double
-    ): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.accumulateNumber")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulateNumber")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def accumulateNumber[T](
       list: js.Array[T],
       callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double],
       initAccValue: Double,
       startIndex: Double,
       endIndex: Double
-    ): Double = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.addListOnTail")
-    @js.native
-    def addListOnTail[T](resultList: js.Array[T], addedList: js.Array[T]): js.Array[T] = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.allOf")
-    @js.native
-    def allOf[T](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean]): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.allOf")
-    @js.native
-    def allOf[T](
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulateNumber")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def accumulateNumber[T](
       list: js.Array[T],
-      callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
-      startIndex: js.UndefOr[scala.Nothing],
+      callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double],
+      initAccValue: Double,
+      startIndex: Unit,
       endIndex: Double
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.allOf")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulateNumber")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def accumulateNumber[T](
+      list: js.Array[T],
+      callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double],
+      initAccValue: Unit,
+      startIndex: Double
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulateNumber")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def accumulateNumber[T](
+      list: js.Array[T],
+      callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double],
+      initAccValue: Unit,
+      startIndex: Double,
+      endIndex: Double
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulateNumber")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def accumulateNumber[T](
+      list: js.Array[T],
+      callback: js.Function3[/* currVal */ T, /* index */ Double, /* acc */ Double, Double],
+      initAccValue: Unit,
+      startIndex: Unit,
+      endIndex: Double
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulateNumber")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def addListOnTail[T](resultList: js.Array[T], addedList: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListOnTail")(resultList.asInstanceOf[js.Any], addedList.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    
+    @scala.inline
+    def allOf[T](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
     def allOf[T](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
       startIndex: Double
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.allOf")
-    @js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
     def allOf[T](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
       startIndex: Double,
       endIndex: Double
-    ): Boolean = js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def allOf[T](
+      list: js.Array[T],
+      callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
+      startIndex: Unit,
+      endIndex: Double
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.allOf2")
-    @js.native
+    @scala.inline
     def allOf2[TA, TB](
       listA: js.Array[TA],
       listB: js.Array[TB],
       callback: js.Function3[/* currValA */ TA, /* currValB */ TB, /* index */ Double, Boolean]
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.allOf2")
-    @js.native
-    def allOf2[TA, TB](
-      listA: js.Array[TA],
-      listB: js.Array[TB],
-      callback: js.Function3[/* currValA */ TA, /* currValB */ TB, /* index */ Double, Boolean],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.allOf2")
-    @js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allOf2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
     def allOf2[TA, TB](
       listA: js.Array[TA],
       listB: js.Array[TB],
       callback: js.Function3[/* currValA */ TA, /* currValB */ TB, /* index */ Double, Boolean],
       startIndex: Double
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.allOf2")
-    @js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allOf2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
     def allOf2[TA, TB](
       listA: js.Array[TA],
       listB: js.Array[TB],
       callback: js.Function3[/* currValA */ TA, /* currValB */ TB, /* index */ Double, Boolean],
       startIndex: Double,
       endIndex: Double
-    ): Boolean = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.allOfOnInterval")
-    @js.native
-    def allOfOnInterval(interval: ConstInterval, callback: js.Function1[/* index */ Double, Boolean]): Boolean = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.anyOf")
-    @js.native
-    def anyOf[T](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean]): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.anyOf")
-    @js.native
-    def anyOf[T](
-      list: js.Array[T],
-      callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
-      startIndex: js.UndefOr[scala.Nothing],
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allOf2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def allOf2[TA, TB](
+      listA: js.Array[TA],
+      listB: js.Array[TB],
+      callback: js.Function3[/* currValA */ TA, /* currValB */ TB, /* index */ Double, Boolean],
+      startIndex: Unit,
       endIndex: Double
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.anyOf")
-    @js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allOf2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def allOfOnInterval(interval: ConstInterval, callback: js.Function1[/* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allOfOnInterval")(interval.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def anyOf[T](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
     def anyOf[T](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
       startIndex: Double
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.anyOf")
-    @js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
     def anyOf[T](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
       startIndex: Double,
       endIndex: Double
-    ): Boolean = js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def anyOf[T](
+      list: js.Array[T],
+      callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
+      startIndex: Unit,
+      endIndex: Double
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.anyOf2")
-    @js.native
+    @scala.inline
     def anyOf2[TA, TB](
       listA: js.Array[TA],
       listB: js.Array[TB],
       callback: js.Function3[/* currValA */ TA, /* currValB */ TB, /* index */ Double, Boolean]
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.anyOf2")
-    @js.native
-    def anyOf2[TA, TB](
-      listA: js.Array[TA],
-      listB: js.Array[TB],
-      callback: js.Function3[/* currValA */ TA, /* currValB */ TB, /* index */ Double, Boolean],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.anyOf2")
-    @js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyOf2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
     def anyOf2[TA, TB](
       listA: js.Array[TA],
       listB: js.Array[TB],
       callback: js.Function3[/* currValA */ TA, /* currValB */ TB, /* index */ Double, Boolean],
       startIndex: Double
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.anyOf2")
-    @js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyOf2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
     def anyOf2[TA, TB](
       listA: js.Array[TA],
       listB: js.Array[TB],
       callback: js.Function3[/* currValA */ TA, /* currValB */ TB, /* index */ Double, Boolean],
       startIndex: Double,
       endIndex: Double
-    ): Boolean = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.clear")
-    @js.native
-    def clear[T](list: js.Array[T]): Unit = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.countIf")
-    @js.native
-    def countIf[T](list: js.Array[T], callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean]): Double = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.decLast")
-    @js.native
-    def decLast(list: js.Array[Double]): Double = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.deepCopy")
-    @js.native
-    def deepCopy[T /* <: ICloneable[T] */](list: js.Array[T]): js.Array[T] = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.elementBy")
-    @js.native
-    def elementBy[T](list: js.Array[T], callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean]): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.elementBy")
-    @js.native
-    def elementBy[T](
-      list: js.Array[T],
-      callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
-      startIndex: js.UndefOr[scala.Nothing],
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyOf2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def anyOf2[TA, TB](
+      listA: js.Array[TA],
+      listB: js.Array[TB],
+      callback: js.Function3[/* currValA */ TA, /* currValB */ TB, /* index */ Double, Boolean],
+      startIndex: Unit,
       endIndex: Double
-    ): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.elementBy")
-    @js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyOf2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def clear[T](list: js.Array[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(list.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def countIf[T](list: js.Array[T], callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countIf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def decLast(list: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decLast")(list.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def deepCopy[T /* <: ICloneable[T] */](list: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    
+    @scala.inline
+    def elementBy[T](list: js.Array[T], callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("elementBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
     def elementBy[T](
       list: js.Array[T],
       callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
       startIndex: Double
-    ): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.elementBy")
-    @js.native
+    ): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("elementBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
     def elementBy[T](
       list: js.Array[T],
       callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
       startIndex: Double,
       endIndex: Double
-    ): T | Null = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.equals")
-    @js.native
-    def equals[T /* <: IEquatable[T] */](a: js.Array[T], b: js.Array[T]): Boolean = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.equalsByReference")
-    @js.native
-    def equalsByReference(a: js.Array[_], b: js.Array[_]): Boolean = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.filter")
-    @js.native
-    def filter[T](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean]): js.Array[T] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.filter")
-    @js.native
-    def filter[T](
+    ): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("elementBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def elementBy[T](
       list: js.Array[T],
-      callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
-      startIndex: js.UndefOr[scala.Nothing],
+      callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
+      startIndex: Unit,
       endIndex: Double
-    ): js.Array[T] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.filter")
-    @js.native
+    ): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("elementBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    
+    @scala.inline
+    def equals[T /* <: IEquatable[T] */](a: js.Array[T], b: js.Array[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def equalsByReference(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsByReference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def filter[T](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    @scala.inline
     def filter[T](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
       startIndex: Double
-    ): js.Array[T] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.filter")
-    @js.native
+    ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    @scala.inline
     def filter[T](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
       startIndex: Double,
       endIndex: Double
-    ): js.Array[T] = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.forEach")
-    @js.native
-    def forEach[T](list: js.Array[T], callback: js.Function2[/* value */ T, /* index */ Double, Unit]): Unit = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.forEach")
-    @js.native
-    def forEach[T](
+    ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    @scala.inline
+    def filter[T](
       list: js.Array[T],
-      callback: js.Function2[/* value */ T, /* index */ Double, Unit],
-      startIndex: js.UndefOr[scala.Nothing],
+      callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
+      startIndex: Unit,
       endIndex: Double
-    ): Unit = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.forEach")
-    @js.native
+    ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    
+    @scala.inline
+    def forEach[T](list: js.Array[T], callback: js.Function2[/* value */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def forEach[T](
       list: js.Array[T],
       callback: js.Function2[/* value */ T, /* index */ Double, Unit],
       startIndex: Double
-    ): Unit = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.forEach")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def forEach[T](
       list: js.Array[T],
       callback: js.Function2[/* value */ T, /* index */ Double, Unit],
       startIndex: Double,
       endIndex: Double
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def forEach[T](
+      list: js.Array[T],
+      callback: js.Function2[/* value */ T, /* index */ Double, Unit],
+      startIndex: Unit,
+      endIndex: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.forEach2")
-    @js.native
+    @scala.inline
     def forEach2[TA, TB](
       listA: js.Array[TA],
       listB: js.Array[TB],
       callback: js.Function3[/* valueA */ TA, /* valueB */ TB, /* index */ Double, Unit]
-    ): Unit = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.forEach2")
-    @js.native
-    def forEach2[TA, TB](
-      listA: js.Array[TA],
-      listB: js.Array[TB],
-      callback: js.Function3[/* valueA */ TA, /* valueB */ TB, /* index */ Double, Unit],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): Unit = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.forEach2")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def forEach2[TA, TB](
       listA: js.Array[TA],
       listB: js.Array[TB],
       callback: js.Function3[/* valueA */ TA, /* valueB */ TB, /* index */ Double, Unit],
       startIndex: Double
-    ): Unit = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.forEach2")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def forEach2[TA, TB](
       listA: js.Array[TA],
       listB: js.Array[TB],
       callback: js.Function3[/* valueA */ TA, /* valueB */ TB, /* index */ Double, Unit],
       startIndex: Double,
       endIndex: Double
-    ): Unit = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.forEachOnInterval")
-    @js.native
-    def forEachOnInterval(interval: ConstInterval, callback: js.Function1[/* index */ Double, Unit]): Unit = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.incLast")
-    @js.native
-    def incLast(list: js.Array[Double]): Double = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.indexBy")
-    @js.native
-    def indexBy[T](list: js.Array[T], callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean]): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.indexBy")
-    @js.native
-    def indexBy[T](
-      list: js.Array[T],
-      callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
-      startIndex: js.UndefOr[scala.Nothing],
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def forEach2[TA, TB](
+      listA: js.Array[TA],
+      listB: js.Array[TB],
+      callback: js.Function3[/* valueA */ TA, /* valueB */ TB, /* index */ Double, Unit],
+      startIndex: Unit,
       endIndex: Double
-    ): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.indexBy")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach2")(listA.asInstanceOf[js.Any], listB.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def forEachOnInterval(interval: ConstInterval, callback: js.Function1[/* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachOnInterval")(interval.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def incLast(list: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("incLast")(list.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def indexBy[T](list: js.Array[T], callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def indexBy[T](
       list: js.Array[T],
       callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
       startIndex: Double
-    ): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.indexBy")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def indexBy[T](
       list: js.Array[T],
       callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
       startIndex: Double,
       endIndex: Double
-    ): Double = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.initByCallback")
-    @js.native
-    def initByCallback[T](numElements: Double, initCallback: js.Function1[/* index */ Double, T]): js.Array[T] = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.initByValue")
-    @js.native
-    def initByValue[T](numElements: Double, initValue: T): js.Array[T] = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.joinLists")
-    @js.native
-    def joinLists[T, TRes](converter: js.Function1[/* list */ js.Array[T], js.Array[TRes]], lists: js.Array[T]*): js.Array[TRes] = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.last")
-    @js.native
-    def last[T](list: js.Array[T]): T = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.map")
-    @js.native
-    def map[T, TRes](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, TRes]): js.Array[TRes] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.map")
-    @js.native
-    def map[T, TRes](
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def indexBy[T](
       list: js.Array[T],
-      callback: js.Function2[/* currVal */ T, /* index */ Double, TRes],
-      startIndex: js.UndefOr[scala.Nothing],
+      callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
+      startIndex: Unit,
       endIndex: Double
-    ): js.Array[TRes] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.map")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def initByCallback[T](numElements: Double, initCallback: js.Function1[/* index */ Double, T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("initByCallback")(numElements.asInstanceOf[js.Any], initCallback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    
+    @scala.inline
+    def initByValue[T](numElements: Double, initValue: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("initByValue")(numElements.asInstanceOf[js.Any], initValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    
+    @scala.inline
+    def joinLists[T, TRes](converter: js.Function1[/* list */ js.Array[T], js.Array[TRes]], lists: js.Array[T]*): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinLists")(converter.asInstanceOf[js.Any], lists.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
+    
+    @scala.inline
+    def last[T](list: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(list.asInstanceOf[js.Any]).asInstanceOf[T]
+    
+    @scala.inline
+    def map[T, TRes](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, TRes]): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
+    @scala.inline
     def map[T, TRes](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, TRes],
       startIndex: Double
-    ): js.Array[TRes] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.map")
-    @js.native
+    ): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
+    @scala.inline
     def map[T, TRes](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, TRes],
       startIndex: Double,
       endIndex: Double
-    ): js.Array[TRes] = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.max")
-    @js.native
-    def max[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.max")
-    @js.native
-    def max[T](
+    ): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
+    @scala.inline
+    def map[T, TRes](
       list: js.Array[T],
-      getValue: js.Function1[/* val */ T, Double],
-      startIndex: js.UndefOr[scala.Nothing],
+      callback: js.Function2[/* currVal */ T, /* index */ Double, TRes],
+      startIndex: Unit,
       endIndex: Double
-    ): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.max")
-    @js.native
-    def max[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.max")
-    @js.native
+    ): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
+    
+    @scala.inline
+    def max[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def max[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
     def max[T](
       list: js.Array[T],
       getValue: js.Function1[/* val */ T, Double],
       startIndex: Double,
       endIndex: Double
-    ): T | Null = js.native
+    ): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def max[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Unit, endIndex: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.maxByCmp")
-    @js.native
-    def maxByCmp[T](list: js.Array[T], cmp: CmpFunc[T]): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.maxByCmp")
-    @js.native
-    def maxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: js.UndefOr[scala.Nothing], endIndex: Double): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.maxByCmp")
-    @js.native
-    def maxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.maxByCmp")
-    @js.native
-    def maxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double, endIndex: Double): T | Null = js.native
+    @scala.inline
+    def maxByCmp[T](list: js.Array[T], cmp: CmpFunc[T]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def maxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def maxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double, endIndex: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def maxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Unit, endIndex: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.maxExtended")
-    @js.native
-    def maxExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): ExtendedMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.maxExtended")
-    @js.native
-    def maxExtended[T](
-      list: js.Array[T],
-      getValue: js.Function1[/* val */ T, Double],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): ExtendedMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.maxExtended")
-    @js.native
-    def maxExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): ExtendedMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.maxExtended")
-    @js.native
+    @scala.inline
+    def maxExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): ExtendedMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[ExtendedMax[T] | Null]
+    @scala.inline
+    def maxExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): ExtendedMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[ExtendedMax[T] | Null]
+    @scala.inline
     def maxExtended[T](
       list: js.Array[T],
       getValue: js.Function1[/* val */ T, Double],
       startIndex: Double,
       endIndex: Double
-    ): ExtendedMax[T] | Null = js.native
+    ): ExtendedMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[ExtendedMax[T] | Null]
+    @scala.inline
+    def maxExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Unit, endIndex: Double): ExtendedMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[ExtendedMax[T] | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.merge")
-    @js.native
+    @scala.inline
     def merge[T](
       list: js.Array[T],
       cmp: CmpFunc[T],
       shouldMerge: js.Function2[/* a */ T, /* b */ T, Boolean],
       merge: js.Function2[/* toMerge */ T, /* fromMerge */ T, Unit]
-    ): js.Array[T] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.merge")
-    @js.native
-    def merge[T](
-      list: js.Array[T],
-      cmp: CmpFunc[T],
-      shouldMerge: js.Function2[/* a */ T, /* b */ T, Boolean],
-      merge: js.Function2[/* toMerge */ T, /* fromMerge */ T, Unit],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): js.Array[T] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.merge")
-    @js.native
+    ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any], merge.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    @scala.inline
     def merge[T](
       list: js.Array[T],
       cmp: CmpFunc[T],
       shouldMerge: js.Function2[/* a */ T, /* b */ T, Boolean],
       merge: js.Function2[/* toMerge */ T, /* fromMerge */ T, Unit],
       startIndex: Double
-    ): js.Array[T] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.merge")
-    @js.native
+    ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any], merge.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    @scala.inline
     def merge[T](
       list: js.Array[T],
       cmp: CmpFunc[T],
@@ -563,383 +465,300 @@ object listMod {
       merge: js.Function2[/* toMerge */ T, /* fromMerge */ T, Unit],
       startIndex: Double,
       endIndex: Double
-    ): js.Array[T] = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.min")
-    @js.native
-    def min[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.min")
-    @js.native
-    def min[T](
+    ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any], merge.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    @scala.inline
+    def merge[T](
       list: js.Array[T],
-      getValue: js.Function1[/* val */ T, Double],
-      startIndex: js.UndefOr[scala.Nothing],
+      cmp: CmpFunc[T],
+      shouldMerge: js.Function2[/* a */ T, /* b */ T, Boolean],
+      merge: js.Function2[/* toMerge */ T, /* fromMerge */ T, Unit],
+      startIndex: Unit,
       endIndex: Double
-    ): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.min")
-    @js.native
-    def min[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.min")
-    @js.native
+    ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any], merge.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    
+    @scala.inline
+    def min[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def min[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
     def min[T](
       list: js.Array[T],
       getValue: js.Function1[/* val */ T, Double],
       startIndex: Double,
       endIndex: Double
-    ): T | Null = js.native
+    ): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def min[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Unit, endIndex: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minByCmp")
-    @js.native
-    def minByCmp[T](list: js.Array[T], cmp: CmpFunc[T]): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minByCmp")
-    @js.native
-    def minByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: js.UndefOr[scala.Nothing], endIndex: Double): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minByCmp")
-    @js.native
-    def minByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minByCmp")
-    @js.native
-    def minByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double, endIndex: Double): T | Null = js.native
+    @scala.inline
+    def minByCmp[T](list: js.Array[T], cmp: CmpFunc[T]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def minByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def minByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double, endIndex: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def minByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Unit, endIndex: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minExtended")
-    @js.native
-    def minExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): ExtendedMin[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minExtended")
-    @js.native
-    def minExtended[T](
-      list: js.Array[T],
-      getValue: js.Function1[/* val */ T, Double],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): ExtendedMin[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minExtended")
-    @js.native
-    def minExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): ExtendedMin[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minExtended")
-    @js.native
+    @scala.inline
+    def minExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): ExtendedMin[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[ExtendedMin[T] | Null]
+    @scala.inline
+    def minExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): ExtendedMin[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[ExtendedMin[T] | Null]
+    @scala.inline
     def minExtended[T](
       list: js.Array[T],
       getValue: js.Function1[/* val */ T, Double],
       startIndex: Double,
       endIndex: Double
-    ): ExtendedMin[T] | Null = js.native
+    ): ExtendedMin[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[ExtendedMin[T] | Null]
+    @scala.inline
+    def minExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Unit, endIndex: Double): ExtendedMin[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[ExtendedMin[T] | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMax")
-    @js.native
-    def minMax[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): MinMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMax")
-    @js.native
-    def minMax[T](
-      list: js.Array[T],
-      getValue: js.Function1[/* val */ T, Double],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): MinMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMax")
-    @js.native
-    def minMax[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): MinMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMax")
-    @js.native
+    @scala.inline
+    def minMax[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): MinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMax")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[MinMax[T] | Null]
+    @scala.inline
+    def minMax[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): MinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMax")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[MinMax[T] | Null]
+    @scala.inline
     def minMax[T](
       list: js.Array[T],
       getValue: js.Function1[/* val */ T, Double],
       startIndex: Double,
       endIndex: Double
-    ): MinMax[T] | Null = js.native
+    ): MinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMax")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[MinMax[T] | Null]
+    @scala.inline
+    def minMax[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Unit, endIndex: Double): MinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMax")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[MinMax[T] | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMaxByCmp")
-    @js.native
-    def minMaxByCmp[T](list: js.Array[T], cmp: CmpFunc[T]): MinMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMaxByCmp")
-    @js.native
-    def minMaxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: js.UndefOr[scala.Nothing], endIndex: Double): MinMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMaxByCmp")
-    @js.native
-    def minMaxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double): MinMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMaxByCmp")
-    @js.native
-    def minMaxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double, endIndex: Double): MinMax[T] | Null = js.native
+    @scala.inline
+    def minMaxByCmp[T](list: js.Array[T], cmp: CmpFunc[T]): MinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMaxByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[MinMax[T] | Null]
+    @scala.inline
+    def minMaxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double): MinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMaxByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[MinMax[T] | Null]
+    @scala.inline
+    def minMaxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Double, endIndex: Double): MinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMaxByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[MinMax[T] | Null]
+    @scala.inline
+    def minMaxByCmp[T](list: js.Array[T], cmp: CmpFunc[T], startIndex: Unit, endIndex: Double): MinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMaxByCmp")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[MinMax[T] | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMaxExtended")
-    @js.native
-    def minMaxExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): ExtendedMinMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMaxExtended")
-    @js.native
-    def minMaxExtended[T](
-      list: js.Array[T],
-      getValue: js.Function1[/* val */ T, Double],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): ExtendedMinMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMaxExtended")
-    @js.native
-    def minMaxExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): ExtendedMinMax[T] | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.minMaxExtended")
-    @js.native
+    @scala.inline
+    def minMaxExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double]): ExtendedMinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMaxExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[ExtendedMinMax[T] | Null]
+    @scala.inline
+    def minMaxExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Double): ExtendedMinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMaxExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[ExtendedMinMax[T] | Null]
+    @scala.inline
     def minMaxExtended[T](
       list: js.Array[T],
       getValue: js.Function1[/* val */ T, Double],
       startIndex: Double,
       endIndex: Double
-    ): ExtendedMinMax[T] | Null = js.native
+    ): ExtendedMinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMaxExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[ExtendedMinMax[T] | Null]
+    @scala.inline
+    def minMaxExtended[T](list: js.Array[T], getValue: js.Function1[/* val */ T, Double], startIndex: Unit, endIndex: Double): ExtendedMinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMaxExtended")(list.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[ExtendedMinMax[T] | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.push")
-    @js.native
-    def push[T](list: js.Array[T], element: T): js.Array[T] = js.native
+    @scala.inline
+    def push[T](list: js.Array[T], element: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(list.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reducedMap")
-    @js.native
-    def reducedMap[T, TRes](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, TRes | Null]): js.Array[TRes] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reducedMap")
-    @js.native
-    def reducedMap[T, TRes](
-      list: js.Array[T],
-      callback: js.Function2[/* currVal */ T, /* index */ Double, TRes | Null],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): js.Array[TRes] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reducedMap")
-    @js.native
+    @scala.inline
+    def reducedMap[T, TRes](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, TRes | Null]): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("reducedMap")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
+    @scala.inline
     def reducedMap[T, TRes](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, TRes | Null],
       startIndex: Double
-    ): js.Array[TRes] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reducedMap")
-    @js.native
+    ): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("reducedMap")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
+    @scala.inline
     def reducedMap[T, TRes](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, TRes | Null],
       startIndex: Double,
       endIndex: Double
-    ): js.Array[TRes] = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.remove")
-    @js.native
-    def remove[T](list: js.Array[T], element: T): Unit = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.removeBy")
-    @js.native
-    def removeBy[T](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean]): T | Null = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseAnyOf")
-    @js.native
-    def reverseAnyOf[T](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean]): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseAnyOf")
-    @js.native
-    def reverseAnyOf[T](
+    ): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("reducedMap")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
+    @scala.inline
+    def reducedMap[T, TRes](
       list: js.Array[T],
-      callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
-      startIndex: js.UndefOr[scala.Nothing],
+      callback: js.Function2[/* currVal */ T, /* index */ Double, TRes | Null],
+      startIndex: Unit,
       endIndex: Double
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseAnyOf")
-    @js.native
+    ): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("reducedMap")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
+    
+    @scala.inline
+    def remove[T](list: js.Array[T], element: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(list.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def removeBy[T](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    
+    @scala.inline
+    def reverseAnyOf[T](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
     def reverseAnyOf[T](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
       startIndex: Double
-    ): Boolean = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseAnyOf")
-    @js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
     def reverseAnyOf[T](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
       startIndex: Double,
       endIndex: Double
-    ): Boolean = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseElementBy")
-    @js.native
-    def reverseElementBy[T](list: js.Array[T], callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean]): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseElementBy")
-    @js.native
-    def reverseElementBy[T](
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def reverseAnyOf[T](
       list: js.Array[T],
-      callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
-      startIndex: js.UndefOr[scala.Nothing],
+      callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean],
+      startIndex: Unit,
       endIndex: Double
-    ): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseElementBy")
-    @js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def reverseElementBy[T](list: js.Array[T], callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseElementBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
     def reverseElementBy[T](
       list: js.Array[T],
       callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
       startIndex: Double
-    ): T | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseElementBy")
-    @js.native
+    ): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseElementBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
     def reverseElementBy[T](
       list: js.Array[T],
       callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
       startIndex: Double,
       endIndex: Double
-    ): T | Null = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseForEach")
-    @js.native
-    def reverseForEach[T](list: js.Array[T], callback: js.Function2[/* value */ T, /* index */ Double, Unit]): Unit = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseForEach")
-    @js.native
-    def reverseForEach[T](
+    ): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseElementBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def reverseElementBy[T](
       list: js.Array[T],
-      callback: js.Function2[/* value */ T, /* index */ Double, Unit],
-      startIndex: js.UndefOr[scala.Nothing],
+      callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
+      startIndex: Unit,
       endIndex: Double
-    ): Unit = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseForEach")
-    @js.native
+    ): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseElementBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    
+    @scala.inline
+    def reverseForEach[T](list: js.Array[T], callback: js.Function2[/* value */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseForEach")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def reverseForEach[T](
       list: js.Array[T],
       callback: js.Function2[/* value */ T, /* index */ Double, Unit],
       startIndex: Double
-    ): Unit = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseForEach")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseForEach")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def reverseForEach[T](
       list: js.Array[T],
       callback: js.Function2[/* value */ T, /* index */ Double, Unit],
       startIndex: Double,
       endIndex: Double
-    ): Unit = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseForEachOnInterval")
-    @js.native
-    def reverseForEachOnInterval(interval: ConstInterval, callback: js.Function1[/* index */ Double, Unit]): Unit = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseIndexBy")
-    @js.native
-    def reverseIndexBy[T](list: js.Array[T], callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean]): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseIndexBy")
-    @js.native
-    def reverseIndexBy[T](
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseForEach")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def reverseForEach[T](
       list: js.Array[T],
-      callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
-      startIndex: js.UndefOr[scala.Nothing],
+      callback: js.Function2[/* value */ T, /* index */ Double, Unit],
+      startIndex: Unit,
       endIndex: Double
-    ): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseIndexBy")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseForEach")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def reverseForEachOnInterval(interval: ConstInterval, callback: js.Function1[/* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseForEachOnInterval")(interval.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def reverseIndexBy[T](list: js.Array[T], callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseIndexBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def reverseIndexBy[T](
       list: js.Array[T],
       callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
       startIndex: Double
-    ): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseIndexBy")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseIndexBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def reverseIndexBy[T](
       list: js.Array[T],
       callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
       startIndex: Double,
       endIndex: Double
-    ): Double = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseIndexOf")
-    @js.native
-    def reverseIndexOf[T](list: js.Array[T], element: T): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseIndexOf")
-    @js.native
-    def reverseIndexOf[T](list: js.Array[T], element: T, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseIndexOf")
-    @js.native
-    def reverseIndexOf[T](list: js.Array[T], element: T, startIndex: Double): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.reverseIndexOf")
-    @js.native
-    def reverseIndexOf[T](list: js.Array[T], element: T, startIndex: Double, endIndex: Double): Double = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.setLast")
-    @js.native
-    def setLast[T](list: js.Array[T], newVal: T): T = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.shallowCopy")
-    @js.native
-    def shallowCopy[T](list: js.Array[T]): js.Array[T] = js.native
-    
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unique")
-    @js.native
-    def unique[T](list: js.Array[T], cmp: CmpFunc[T]): js.Array[T] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unique")
-    @js.native
-    def unique[T](
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseIndexBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def reverseIndexBy[T](
       list: js.Array[T],
-      cmp: CmpFunc[T],
-      equal: js.UndefOr[scala.Nothing],
-      finalizeObj: js.Function1[/* obj */ T, Unit]
-    ): js.Array[T] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unique")
-    @js.native
-    def unique[T](list: js.Array[T], cmp: CmpFunc[T], equal: CmpFunc[T]): js.Array[T] = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unique")
-    @js.native
+      callback: js.Function2[/* currElement */ T, /* index */ Double, Boolean],
+      startIndex: Unit,
+      endIndex: Double
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseIndexBy")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def reverseIndexOf[T](list: js.Array[T], element: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseIndexOf")(list.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def reverseIndexOf[T](list: js.Array[T], element: T, startIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseIndexOf")(list.asInstanceOf[js.Any], element.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def reverseIndexOf[T](list: js.Array[T], element: T, startIndex: Double, endIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseIndexOf")(list.asInstanceOf[js.Any], element.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def reverseIndexOf[T](list: js.Array[T], element: T, startIndex: Unit, endIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseIndexOf")(list.asInstanceOf[js.Any], element.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def setLast[T](list: js.Array[T], newVal: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setLast")(list.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any])).asInstanceOf[T]
+    
+    @scala.inline
+    def shallowCopy[T](list: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCopy")(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    
+    @scala.inline
+    def unique[T](list: js.Array[T], cmp: CmpFunc[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    @scala.inline
+    def unique[T](list: js.Array[T], cmp: CmpFunc[T], equal: Unit, finalizeObj: js.Function1[/* obj */ T, Unit]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], equal.asInstanceOf[js.Any], finalizeObj.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    @scala.inline
+    def unique[T](list: js.Array[T], cmp: CmpFunc[T], equal: CmpFunc[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], equal.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    @scala.inline
     def unique[T](
       list: js.Array[T],
       cmp: CmpFunc[T],
       equal: CmpFunc[T],
       finalizeObj: js.Function1[/* obj */ T, Unit]
-    ): js.Array[T] = js.native
+    ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(list.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], equal.asInstanceOf[js.Any], finalizeObj.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.uniqueNumber")
-    @js.native
-    def uniqueNumber(list: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def uniqueNumber(list: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueNumber")(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unsafeAnyOf")
-    @js.native
+    @scala.inline
     def unsafeAnyOf[T, TRes](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, js.UndefOr[TRes | Null]]
-    ): TRes | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unsafeAnyOf")
-    @js.native
-    def unsafeAnyOf[T, TRes](
-      list: js.Array[T],
-      callback: js.Function2[/* currVal */ T, /* index */ Double, js.UndefOr[TRes | Null]],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): TRes | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unsafeAnyOf")
-    @js.native
+    ): TRes | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("unsafeAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TRes | Null]
+    @scala.inline
     def unsafeAnyOf[T, TRes](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, js.UndefOr[TRes | Null]],
       startIndex: Double
-    ): TRes | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unsafeAnyOf")
-    @js.native
+    ): TRes | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("unsafeAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[TRes | Null]
+    @scala.inline
     def unsafeAnyOf[T, TRes](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, js.UndefOr[TRes | Null]],
       startIndex: Double,
       endIndex: Double
-    ): TRes | Null = js.native
+    ): TRes | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("unsafeAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[TRes | Null]
+    @scala.inline
+    def unsafeAnyOf[T, TRes](
+      list: js.Array[T],
+      callback: js.Function2[/* currVal */ T, /* index */ Double, js.UndefOr[TRes | Null]],
+      startIndex: Unit,
+      endIndex: Double
+    ): TRes | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("unsafeAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[TRes | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unsafeReverseAnyOf")
-    @js.native
+    @scala.inline
     def unsafeReverseAnyOf[T, TRes](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, js.UndefOr[TRes | Null]]
-    ): TRes | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unsafeReverseAnyOf")
-    @js.native
-    def unsafeReverseAnyOf[T, TRes](
-      list: js.Array[T],
-      callback: js.Function2[/* currVal */ T, /* index */ Double, js.UndefOr[TRes | Null]],
-      startIndex: js.UndefOr[scala.Nothing],
-      endIndex: Double
-    ): TRes | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unsafeReverseAnyOf")
-    @js.native
+    ): TRes | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("unsafeReverseAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TRes | Null]
+    @scala.inline
     def unsafeReverseAnyOf[T, TRes](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, js.UndefOr[TRes | Null]],
       startIndex: Double
-    ): TRes | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/list", "ListUtils.unsafeReverseAnyOf")
-    @js.native
+    ): TRes | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("unsafeReverseAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[TRes | Null]
+    @scala.inline
     def unsafeReverseAnyOf[T, TRes](
       list: js.Array[T],
       callback: js.Function2[/* currVal */ T, /* index */ Double, js.UndefOr[TRes | Null]],
       startIndex: Double,
       endIndex: Double
-    ): TRes | Null = js.native
+    ): TRes | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("unsafeReverseAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[TRes | Null]
+    @scala.inline
+    def unsafeReverseAnyOf[T, TRes](
+      list: js.Array[T],
+      callback: js.Function2[/* currVal */ T, /* index */ Double, js.UndefOr[TRes | Null]],
+      startIndex: Unit,
+      endIndex: Double
+    ): TRes | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("unsafeReverseAnyOf")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[TRes | Null]
   }
 }

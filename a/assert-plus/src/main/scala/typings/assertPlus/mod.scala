@@ -6,566 +6,403 @@ import typings.std.Date
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("assert-plus", "AssertionError")
+  @JSImport("assert-plus", JSImport.Namespace)
   @js.native
-  def AssertionError(options: js.Any): Unit = js.native
-  @JSImport("assert-plus", "AssertionError")
-  @js.native
-  def AssertionError(options: js.Any, message: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("assert-plus", "array")
-  @js.native
-  def array(arr: js.Array[_]): Unit = js.native
-  @JSImport("assert-plus", "array")
-  @js.native
-  def array(arr: js.Array[_], message: String): Unit = js.native
+  @scala.inline
+  def AssertionError(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AssertionError")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def AssertionError(options: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AssertionError")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfArray")
-  @js.native
-  def arrayOfArray(arr: js.Array[js.Array[_]]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfArray")
-  @js.native
-  def arrayOfArray(arr: js.Array[js.Array[_]], message: String): Unit = js.native
+  @scala.inline
+  def array(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def array(arr: js.Array[js.Any], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfBool")
-  @js.native
-  def arrayOfBool(arr: js.Array[Boolean]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfBool")
-  @js.native
-  def arrayOfBool(arr: js.Array[Boolean], message: String): Unit = js.native
+  @scala.inline
+  def arrayOfArray(arr: js.Array[js.Array[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfArray(arr: js.Array[js.Array[js.Any]], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfArray")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfBuffer")
-  @js.native
-  def arrayOfBuffer(arr: js.Array[Buffer]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfBuffer")
-  @js.native
-  def arrayOfBuffer(arr: js.Array[Buffer], message: String): Unit = js.native
+  @scala.inline
+  def arrayOfBool(arr: js.Array[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfBool")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfBool(arr: js.Array[Boolean], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfBool")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfDate")
-  @js.native
-  def arrayOfDate(arr: js.Array[Date]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfDate")
-  @js.native
-  def arrayOfDate(arr: js.Array[Date], message: String): Unit = js.native
+  @scala.inline
+  def arrayOfBuffer(arr: js.Array[Buffer]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfBuffer")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfBuffer(arr: js.Array[Buffer], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfBuffer")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfFinite")
-  @js.native
-  def arrayOfFinite(arr: js.Array[Double]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfFinite")
-  @js.native
-  def arrayOfFinite(arr: js.Array[Double], message: String): Unit = js.native
+  @scala.inline
+  def arrayOfDate(arr: js.Array[Date]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfDate")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfDate(arr: js.Array[Date], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfDate")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfFunc")
-  @js.native
-  def arrayOfFunc(arr: js.Array[_]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfFunc")
-  @js.native
-  def arrayOfFunc(arr: js.Array[_], message: String): Unit = js.native
+  @scala.inline
+  def arrayOfFinite(arr: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfFinite")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfFinite(arr: js.Array[Double], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfFinite")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfNumber")
-  @js.native
-  def arrayOfNumber(arr: js.Array[Double]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfNumber")
-  @js.native
-  def arrayOfNumber(arr: js.Array[Double], message: String): Unit = js.native
+  @scala.inline
+  def arrayOfFunc(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfFunc")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfFunc(arr: js.Array[js.Any], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfFunc")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfObject")
-  @js.native
-  def arrayOfObject(arr: js.Array[_]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfObject")
-  @js.native
-  def arrayOfObject(arr: js.Array[_], message: String): Unit = js.native
+  @scala.inline
+  def arrayOfNumber(arr: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfNumber")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfNumber(arr: js.Array[Double], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfNumber")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfRegexp")
-  @js.native
-  def arrayOfRegexp(arr: js.Array[RegExp]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfRegexp")
-  @js.native
-  def arrayOfRegexp(arr: js.Array[RegExp], message: String): Unit = js.native
+  @scala.inline
+  def arrayOfObject(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfObject")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfObject(arr: js.Array[js.Any], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfObject")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfStream")
-  @js.native
-  def arrayOfStream(arr: js.Array[Stream]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfStream")
-  @js.native
-  def arrayOfStream(arr: js.Array[Stream], message: String): Unit = js.native
+  @scala.inline
+  def arrayOfRegexp(arr: js.Array[RegExp]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfRegexp")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfRegexp(arr: js.Array[RegExp], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfRegexp")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfString")
-  @js.native
-  def arrayOfString(arr: js.Array[String]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfString")
-  @js.native
-  def arrayOfString(arr: js.Array[String], message: String): Unit = js.native
+  @scala.inline
+  def arrayOfStream(arr: js.Array[Stream]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfStream")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfStream(arr: js.Array[Stream], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfStream")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "arrayOfUuid")
-  @js.native
-  def arrayOfUuid(arr: js.Array[String]): Unit = js.native
-  @JSImport("assert-plus", "arrayOfUuid")
-  @js.native
-  def arrayOfUuid(arr: js.Array[String], message: String): Unit = js.native
+  @scala.inline
+  def arrayOfString(arr: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfString")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfString(arr: js.Array[String], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfString")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "bool")
-  @js.native
-  def bool(bool: Boolean): Unit = js.native
-  @JSImport("assert-plus", "bool")
-  @js.native
-  def bool(bool: Boolean, message: String): Unit = js.native
+  @scala.inline
+  def arrayOfUuid(arr: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfUuid")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def arrayOfUuid(arr: js.Array[String], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfUuid")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "buffer")
-  @js.native
-  def buffer(buffer: Buffer): Unit = js.native
-  @JSImport("assert-plus", "buffer")
-  @js.native
-  def buffer(buffer: Buffer, message: String): Unit = js.native
+  @scala.inline
+  def bool(bool: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bool")(bool.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def bool(bool: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bool")(bool.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "date")
-  @js.native
-  def date(date: Date): Unit = js.native
-  @JSImport("assert-plus", "date")
-  @js.native
-  def date(date: Date, message: String): Unit = js.native
+  @scala.inline
+  def buffer(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def buffer(buffer: Buffer, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(buffer.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "deepEqual")
-  @js.native
-  def deepEqual[T](actual: T, expected: T): Unit = js.native
-  @JSImport("assert-plus", "deepEqual")
-  @js.native
-  def deepEqual[T](actual: T, expected: T, message: String): Unit = js.native
+  @scala.inline
+  def date(date: Date): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(date.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def date(date: Date, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(date.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Any): Unit = js.native
-  @JSImport("assert-plus", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Any, error: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Any, error: js.Any): Unit = js.native
-  @JSImport("assert-plus", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Any, error: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def deepEqual[T](actual: T, expected: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def deepEqual[T](actual: T, expected: T, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "equal")
-  @js.native
-  def equal(actual: js.Any, expected: js.Any): Unit = js.native
-  @JSImport("assert-plus", "equal")
-  @js.native
-  def equal(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def doesNotThrow(block: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def doesNotThrow(block: js.Any, error: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def doesNotThrow(block: js.Any, error: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def doesNotThrow(block: js.Any, error: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "fail")
-  @js.native
-  def fail(actual: js.Any, expected: js.Any, message: js.Any, operator: js.Any): Unit = js.native
+  @scala.inline
+  def equal(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def equal(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "finite")
-  @js.native
-  def finite(finite: Double): Unit = js.native
-  @JSImport("assert-plus", "finite")
-  @js.native
-  def finite(finite: Double, message: String): Unit = js.native
+  @scala.inline
+  def fail(actual: js.Any, expected: js.Any, message: js.Any, operator: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "func")
-  @js.native
-  def func(func: js.Any): Unit = js.native
-  @JSImport("assert-plus", "func")
-  @js.native
-  def func(func: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def finite(finite: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("finite")(finite.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def finite(finite: Double, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("finite")(finite.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "ifError")
-  @js.native
-  def ifError(value: js.Any): Unit = js.native
+  @scala.inline
+  def func(func: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def func(func: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(func.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "notDeepEqual")
-  @js.native
-  def notDeepEqual(actual: js.Any, expected: js.Any): Unit = js.native
-  @JSImport("assert-plus", "notDeepEqual")
-  @js.native
-  def notDeepEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def ifError(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ifError")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "notEqual")
-  @js.native
-  def notEqual(actual: js.Any, expected: js.Any): Unit = js.native
-  @JSImport("assert-plus", "notEqual")
-  @js.native
-  def notEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def notDeepEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def notDeepEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "notStrictEqual")
-  @js.native
-  def notStrictEqual(actual: js.Any, expected: js.Any): Unit = js.native
-  @JSImport("assert-plus", "notStrictEqual")
-  @js.native
-  def notStrictEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def notEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def notEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "number")
-  @js.native
-  def number(number: Double): Unit = js.native
-  @JSImport("assert-plus", "number")
-  @js.native
-  def number(number: Double, message: String): Unit = js.native
+  @scala.inline
+  def notStrictEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def notStrictEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "ok")
-  @js.native
-  def ok(options: js.Any): Unit = js.native
-  @JSImport("assert-plus", "ok")
-  @js.native
-  def ok(options: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def number(number: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(number.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def number(number: Double, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(number.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArray")
-  @js.native
-  def optionalArray(): Unit = js.native
-  @JSImport("assert-plus", "optionalArray")
-  @js.native
-  def optionalArray(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArray")
-  @js.native
-  def optionalArray(arr: js.Array[_]): Unit = js.native
-  @JSImport("assert-plus", "optionalArray")
-  @js.native
-  def optionalArray(arr: js.Array[_], message: String): Unit = js.native
+  @scala.inline
+  def `object`(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def `object`(obj: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(obj.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfArray")
-  @js.native
-  def optionalArrayOfArray(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfArray")
-  @js.native
-  def optionalArrayOfArray(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfArray")
-  @js.native
-  def optionalArrayOfArray(arr: js.Array[js.Array[_]]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfArray")
-  @js.native
-  def optionalArrayOfArray(arr: js.Array[js.Array[_]], message: String): Unit = js.native
+  @scala.inline
+  def ok(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def ok(options: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ok")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfBool")
-  @js.native
-  def optionalArrayOfBool(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfBool")
-  @js.native
-  def optionalArrayOfBool(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfBool")
-  @js.native
-  def optionalArrayOfBool(arr: js.Array[Boolean]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfBool")
-  @js.native
-  def optionalArrayOfBool(arr: js.Array[Boolean], message: String): Unit = js.native
+  @scala.inline
+  def optionalArray(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArray")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArray(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArray(arr: js.Array[js.Any], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArray")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArray(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArray")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfBuffer")
-  @js.native
-  def optionalArrayOfBuffer(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfBuffer")
-  @js.native
-  def optionalArrayOfBuffer(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfBuffer")
-  @js.native
-  def optionalArrayOfBuffer(arr: js.Array[Buffer]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfBuffer")
-  @js.native
-  def optionalArrayOfBuffer(arr: js.Array[Buffer], message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfArray(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfArray")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfArray(arr: js.Array[js.Array[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfArray(arr: js.Array[js.Array[js.Any]], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfArray")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfArray(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfArray")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfDate")
-  @js.native
-  def optionalArrayOfDate(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfDate")
-  @js.native
-  def optionalArrayOfDate(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfDate")
-  @js.native
-  def optionalArrayOfDate(arr: js.Array[Date]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfDate")
-  @js.native
-  def optionalArrayOfDate(arr: js.Array[Date], message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfBool(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfBool")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfBool(arr: js.Array[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfBool")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfBool(arr: js.Array[Boolean], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfBool")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfBool(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfBool")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfFinite")
-  @js.native
-  def optionalArrayOfFinite(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfFinite")
-  @js.native
-  def optionalArrayOfFinite(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfFinite")
-  @js.native
-  def optionalArrayOfFinite(arr: js.Array[Double]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfFinite")
-  @js.native
-  def optionalArrayOfFinite(arr: js.Array[Double], message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfBuffer")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfBuffer(arr: js.Array[Buffer]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfBuffer")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfBuffer(arr: js.Array[Buffer], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfBuffer")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfBuffer(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfBuffer")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfFunc")
-  @js.native
-  def optionalArrayOfFunc(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfFunc")
-  @js.native
-  def optionalArrayOfFunc(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfFunc")
-  @js.native
-  def optionalArrayOfFunc(arr: js.Array[_]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfFunc")
-  @js.native
-  def optionalArrayOfFunc(arr: js.Array[_], message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfDate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfDate")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfDate(arr: js.Array[Date]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfDate")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfDate(arr: js.Array[Date], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfDate")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfDate(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfDate")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfNumber")
-  @js.native
-  def optionalArrayOfNumber(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfNumber")
-  @js.native
-  def optionalArrayOfNumber(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfNumber")
-  @js.native
-  def optionalArrayOfNumber(arr: js.Array[Double]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfNumber")
-  @js.native
-  def optionalArrayOfNumber(arr: js.Array[Double], message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfFinite(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfFinite")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfFinite(arr: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfFinite")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfFinite(arr: js.Array[Double], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfFinite")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfFinite(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfFinite")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfObject")
-  @js.native
-  def optionalArrayOfObject(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfObject")
-  @js.native
-  def optionalArrayOfObject(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfObject")
-  @js.native
-  def optionalArrayOfObject(arr: js.Array[_]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfObject")
-  @js.native
-  def optionalArrayOfObject(arr: js.Array[_], message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfFunc(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfFunc")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfFunc(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfFunc")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfFunc(arr: js.Array[js.Any], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfFunc")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfFunc(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfFunc")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfRegexp")
-  @js.native
-  def optionalArrayOfRegexp(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfRegexp")
-  @js.native
-  def optionalArrayOfRegexp(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfRegexp")
-  @js.native
-  def optionalArrayOfRegexp(arr: js.Array[RegExp]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfRegexp")
-  @js.native
-  def optionalArrayOfRegexp(arr: js.Array[RegExp], message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfNumber(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfNumber")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfNumber(arr: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfNumber")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfNumber(arr: js.Array[Double], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfNumber")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfNumber(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfNumber")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfStream")
-  @js.native
-  def optionalArrayOfStream(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfStream")
-  @js.native
-  def optionalArrayOfStream(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfStream")
-  @js.native
-  def optionalArrayOfStream(arr: js.Array[Stream]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfStream")
-  @js.native
-  def optionalArrayOfStream(arr: js.Array[Stream], message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfObject(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfObject")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfObject(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfObject")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfObject(arr: js.Array[js.Any], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfObject")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfObject(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfObject")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfString")
-  @js.native
-  def optionalArrayOfString(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfString")
-  @js.native
-  def optionalArrayOfString(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfString")
-  @js.native
-  def optionalArrayOfString(arr: js.Array[String]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfString")
-  @js.native
-  def optionalArrayOfString(arr: js.Array[String], message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfRegexp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfRegexp")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfRegexp(arr: js.Array[RegExp]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfRegexp")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfRegexp(arr: js.Array[RegExp], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfRegexp")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfRegexp(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfRegexp")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalArrayOfUuid")
-  @js.native
-  def optionalArrayOfUuid(): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfUuid")
-  @js.native
-  def optionalArrayOfUuid(arr: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfUuid")
-  @js.native
-  def optionalArrayOfUuid(arr: js.Array[String]): Unit = js.native
-  @JSImport("assert-plus", "optionalArrayOfUuid")
-  @js.native
-  def optionalArrayOfUuid(arr: js.Array[String], message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfStream(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfStream")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfStream(arr: js.Array[Stream]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfStream")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfStream(arr: js.Array[Stream], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfStream")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfStream(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfStream")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalBool")
-  @js.native
-  def optionalBool(): Unit = js.native
-  @JSImport("assert-plus", "optionalBool")
-  @js.native
-  def optionalBool(bool: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalBool")
-  @js.native
-  def optionalBool(bool: Boolean): Unit = js.native
-  @JSImport("assert-plus", "optionalBool")
-  @js.native
-  def optionalBool(bool: Boolean, message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfString(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfString")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfString(arr: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfString")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfString(arr: js.Array[String], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfString")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfString(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfString")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalBuffer")
-  @js.native
-  def optionalBuffer(): Unit = js.native
-  @JSImport("assert-plus", "optionalBuffer")
-  @js.native
-  def optionalBuffer(buffer: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalBuffer")
-  @js.native
-  def optionalBuffer(buffer: Buffer): Unit = js.native
-  @JSImport("assert-plus", "optionalBuffer")
-  @js.native
-  def optionalBuffer(buffer: Buffer, message: String): Unit = js.native
+  @scala.inline
+  def optionalArrayOfUuid(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfUuid")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfUuid(arr: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfUuid")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfUuid(arr: js.Array[String], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfUuid")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalArrayOfUuid(arr: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalArrayOfUuid")(arr.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalDate")
-  @js.native
-  def optionalDate(): Unit = js.native
-  @JSImport("assert-plus", "optionalDate")
-  @js.native
-  def optionalDate(options: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalDate")
-  @js.native
-  def optionalDate(options: Date): Unit = js.native
-  @JSImport("assert-plus", "optionalDate")
-  @js.native
-  def optionalDate(options: Date, message: String): Unit = js.native
+  @scala.inline
+  def optionalBool(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalBool")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalBool(bool: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalBool")(bool.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalBool(bool: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalBool")(bool.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalBool(bool: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalBool")(bool.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalFinite")
-  @js.native
-  def optionalFinite(): Unit = js.native
-  @JSImport("assert-plus", "optionalFinite")
-  @js.native
-  def optionalFinite(options: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalFinite")
-  @js.native
-  def optionalFinite(options: Double): Unit = js.native
-  @JSImport("assert-plus", "optionalFinite")
-  @js.native
-  def optionalFinite(options: Double, message: String): Unit = js.native
+  @scala.inline
+  def optionalBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalBuffer")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalBuffer(buffer: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalBuffer")(buffer.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalBuffer(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalBuffer(buffer: Buffer, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalBuffer")(buffer.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalFunc")
-  @js.native
-  def optionalFunc(options: js.Any): Unit = js.native
-  @JSImport("assert-plus", "optionalFunc")
-  @js.native
-  def optionalFunc(options: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def optionalDate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalDate")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalDate(options: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalDate")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalDate(options: Date): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalDate")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalDate(options: Date, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalDate")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalNumber")
-  @js.native
-  def optionalNumber(): Unit = js.native
-  @JSImport("assert-plus", "optionalNumber")
-  @js.native
-  def optionalNumber(options: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalNumber")
-  @js.native
-  def optionalNumber(options: Double): Unit = js.native
-  @JSImport("assert-plus", "optionalNumber")
-  @js.native
-  def optionalNumber(options: Double, message: String): Unit = js.native
+  @scala.inline
+  def optionalFinite(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalFinite")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalFinite(options: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalFinite")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalFinite(options: Double, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalFinite")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalFinite(options: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalFinite")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalObject")
-  @js.native
-  def optionalObject(options: js.Any): Unit = js.native
-  @JSImport("assert-plus", "optionalObject")
-  @js.native
-  def optionalObject(options: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def optionalFunc(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalFunc")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalFunc(options: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalFunc")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalRegexp")
-  @js.native
-  def optionalRegexp(): Unit = js.native
-  @JSImport("assert-plus", "optionalRegexp")
-  @js.native
-  def optionalRegexp(options: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalRegexp")
-  @js.native
-  def optionalRegexp(options: RegExp): Unit = js.native
-  @JSImport("assert-plus", "optionalRegexp")
-  @js.native
-  def optionalRegexp(options: RegExp, message: String): Unit = js.native
+  @scala.inline
+  def optionalNumber(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalNumber")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalNumber(options: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalNumber")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalNumber(options: Double, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalNumber")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalNumber(options: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalNumber")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalStream")
-  @js.native
-  def optionalStream(): Unit = js.native
-  @JSImport("assert-plus", "optionalStream")
-  @js.native
-  def optionalStream(options: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalStream")
-  @js.native
-  def optionalStream(options: Stream): Unit = js.native
-  @JSImport("assert-plus", "optionalStream")
-  @js.native
-  def optionalStream(options: Stream, message: String): Unit = js.native
+  @scala.inline
+  def optionalObject(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalObject")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalObject(options: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalObject")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalString")
-  @js.native
-  def optionalString(): Unit = js.native
-  @JSImport("assert-plus", "optionalString")
-  @js.native
-  def optionalString(options: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalString")
-  @js.native
-  def optionalString(options: String): Unit = js.native
-  @JSImport("assert-plus", "optionalString")
-  @js.native
-  def optionalString(options: String, message: String): Unit = js.native
+  @scala.inline
+  def optionalRegexp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalRegexp")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalRegexp(options: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalRegexp")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalRegexp(options: RegExp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalRegexp")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalRegexp(options: RegExp, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalRegexp")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "optionalUuid")
-  @js.native
-  def optionalUuid(): Unit = js.native
-  @JSImport("assert-plus", "optionalUuid")
-  @js.native
-  def optionalUuid(options: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "optionalUuid")
-  @js.native
-  def optionalUuid(options: String): Unit = js.native
-  @JSImport("assert-plus", "optionalUuid")
-  @js.native
-  def optionalUuid(options: String, message: String): Unit = js.native
+  @scala.inline
+  def optionalStream(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalStream")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalStream(options: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalStream")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalStream(options: Stream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalStream")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalStream(options: Stream, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalStream")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "regexp")
-  @js.native
-  def regexp(regexp: RegExp): Unit = js.native
-  @JSImport("assert-plus", "regexp")
-  @js.native
-  def regexp(regexp: RegExp, message: String): Unit = js.native
+  @scala.inline
+  def optionalString(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalString")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalString(options: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalString")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalString(options: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalString")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalString(options: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalString")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "stream")
-  @js.native
-  def stream(stream: Stream): Unit = js.native
-  @JSImport("assert-plus", "stream")
-  @js.native
-  def stream(stream: Stream, message: String): Unit = js.native
+  @scala.inline
+  def optionalUuid(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalUuid")().asInstanceOf[Unit]
+  @scala.inline
+  def optionalUuid(options: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("optionalUuid")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def optionalUuid(options: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalUuid")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def optionalUuid(options: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalUuid")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "strictEqual")
-  @js.native
-  def strictEqual[T](actual: T, expected: T): Unit = js.native
-  @JSImport("assert-plus", "strictEqual")
-  @js.native
-  def strictEqual[T](actual: T, expected: T, message: String): Unit = js.native
+  @scala.inline
+  def regexp(regexp: RegExp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(regexp.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def regexp(regexp: RegExp, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(regexp.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "string")
-  @js.native
-  def string(str: String): Unit = js.native
-  @JSImport("assert-plus", "string")
-  @js.native
-  def string(str: String, message: String): Unit = js.native
+  @scala.inline
+  def stream(stream: Stream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def stream(stream: Stream, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(stream.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "throws")
-  @js.native
-  def throws(block: js.Any): Unit = js.native
-  @JSImport("assert-plus", "throws")
-  @js.native
-  def throws(block: js.Any, error: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-  @JSImport("assert-plus", "throws")
-  @js.native
-  def throws(block: js.Any, error: js.Any): Unit = js.native
-  @JSImport("assert-plus", "throws")
-  @js.native
-  def throws(block: js.Any, error: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def strictEqual[T](actual: T, expected: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def strictEqual[T](actual: T, expected: T, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "uuid")
-  @js.native
-  def uuid(uuid: String): Unit = js.native
-  @JSImport("assert-plus", "uuid")
-  @js.native
-  def uuid(uuid: String, message: String): Unit = js.native
+  @scala.inline
+  def string(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def string(str: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("string")(str.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("assert-plus", "object")
-  @js.native
-  def `object`(obj: js.Any): Unit = js.native
-  @JSImport("assert-plus", "object")
-  @js.native
-  def `object`(obj: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def throws(block: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def throws(block: js.Any, error: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def throws(block: js.Any, error: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def throws(block: js.Any, error: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def uuid(uuid: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")(uuid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def uuid(uuid: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uuid")(uuid.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

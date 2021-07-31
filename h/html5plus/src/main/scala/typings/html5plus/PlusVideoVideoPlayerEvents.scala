@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
   */
-@js.native
 trait PlusVideoVideoPlayerEvents extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusVideoVideoPlayerEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var ended: js.UndefOr[String] = js.native
+  var ended: js.UndefOr[String] = js.undefined
   
   /**
     * 视频错误事件
@@ -29,7 +27,7 @@ trait PlusVideoVideoPlayerEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     * 视频播放全屏播放状态变化事件
@@ -38,7 +36,7 @@ trait PlusVideoVideoPlayerEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var fullscreenchange: js.UndefOr[String] = js.native
+  var fullscreenchange: js.UndefOr[String] = js.undefined
   
   /**
     * 视频暂停事件
@@ -47,7 +45,7 @@ trait PlusVideoVideoPlayerEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var pause: js.UndefOr[String] = js.native
+  var pause: js.UndefOr[String] = js.undefined
   
   /**
     * 视频播放事件
@@ -56,7 +54,7 @@ trait PlusVideoVideoPlayerEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var play: js.UndefOr[String] = js.native
+  var play: js.UndefOr[String] = js.undefined
   
   /**
     * 视频播放进度更新事件
@@ -65,7 +63,7 @@ trait PlusVideoVideoPlayerEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var timeupdate: js.UndefOr[String] = js.native
+  var timeupdate: js.UndefOr[String] = js.undefined
   
   /**
     * 视频缓冲事件
@@ -74,7 +72,7 @@ trait PlusVideoVideoPlayerEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var waiting: js.UndefOr[String] = js.native
+  var waiting: js.UndefOr[String] = js.undefined
 }
 object PlusVideoVideoPlayerEvents {
   

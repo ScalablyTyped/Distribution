@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XssMatchSetUpdate extends StObject {
   
   /**
     * Specify INSERT to add an XssMatchSetUpdate to an XssMatchSet. Use DELETE to remove an XssMatchSetUpdate from an XssMatchSet.
     */
-  var Action: ChangeAction = js.native
+  var Action: ChangeAction
   
   /**
     * Specifies the part of a web request that you want AWS WAF to inspect for cross-site scripting attacks and, if you want AWS WAF to inspect a header, the name of the header.
     */
-  var XssMatchTuple: typings.awsSdk.wafMod.XssMatchTuple = js.native
+  var XssMatchTuple: typings.awsSdk.wafMod.XssMatchTuple
 }
 object XssMatchSetUpdate {
   

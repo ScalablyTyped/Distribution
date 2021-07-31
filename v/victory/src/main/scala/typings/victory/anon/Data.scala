@@ -3,15 +3,13 @@ package typings.victory.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: js.UndefOr[CSSProperties] = js.native
+  var data: js.UndefOr[CSSProperties] = js.undefined
   
-  var labels: js.UndefOr[CSSProperties] = js.native
+  var labels: js.UndefOr[CSSProperties] = js.undefined
 }
 object Data {
   

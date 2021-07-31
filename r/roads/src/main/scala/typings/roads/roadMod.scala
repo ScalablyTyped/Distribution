@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.roads.responseMod.ResponseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object roadMod {
@@ -16,15 +15,17 @@ object roadMod {
     *
     * Creates a new Road class. This function does not accept any parameters!
     */
-  class default () extends Road
+  class default ()
+    extends StObject
+       with Road
   
-  @js.native
   trait Context
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var Response: ResponseConstructor = js.native
+    var Response: ResponseConstructor
     
-    var request: js.Function = js.native
+    var request: js.Function
   }
   object Context {
     
@@ -60,27 +61,6 @@ object roadMod {
   @js.native
   trait Road extends StObject {
     
-    /* protected */ def _buildNext(
-      request_method: String,
-      path: String,
-      request_body: js.UndefOr[scala.Nothing],
-      request_headers: js.UndefOr[scala.Nothing],
-      context: Context
-    ): ResponseMiddleware = js.native
-    /* protected */ def _buildNext(
-      request_method: String,
-      path: String,
-      request_body: js.UndefOr[scala.Nothing],
-      request_headers: js.Object,
-      context: Context
-    ): ResponseMiddleware = js.native
-    /* protected */ def _buildNext(
-      request_method: String,
-      path: String,
-      request_body: String,
-      request_headers: js.UndefOr[scala.Nothing],
-      context: Context
-    ): ResponseMiddleware = js.native
     /**
       * Turn an HTTP request into an executable function with a useful request context. Will also incorporate the entire
       * request handler chain
@@ -99,6 +79,21 @@ object roadMod {
       request_headers: js.Object,
       context: Context
     ): ResponseMiddleware = js.native
+    /* protected */ def _buildNext(
+      request_method: String,
+      path: String,
+      request_body: String,
+      request_headers: Unit,
+      context: Context
+    ): ResponseMiddleware = js.native
+    /* protected */ def _buildNext(
+      request_method: String,
+      path: String,
+      request_body: Unit,
+      request_headers: js.Object,
+      context: Context
+    ): ResponseMiddleware = js.native
+    /* protected */ def _buildNext(request_method: String, path: String, request_body: Unit, request_headers: Unit, context: Context): ResponseMiddleware = js.native
     
     /**
       * Execute a resource method, and ensure that a promise is always returned
@@ -123,9 +118,9 @@ object roadMod {
       * @returns {Promise} this promise will resolve to a Response object
       */
     def request(method: String, url: String): js.Promise[typings.roads.responseMod.default] = js.native
-    def request(method: String, url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): js.Promise[typings.roads.responseMod.default] = js.native
     def request(method: String, url: String, body: String): js.Promise[typings.roads.responseMod.default] = js.native
     def request(method: String, url: String, body: String, headers: js.Object): js.Promise[typings.roads.responseMod.default] = js.native
+    def request(method: String, url: String, body: Unit, headers: js.Object): js.Promise[typings.roads.responseMod.default] = js.native
     
     /**
       * Add one or many custom functions to be executed along with every request.

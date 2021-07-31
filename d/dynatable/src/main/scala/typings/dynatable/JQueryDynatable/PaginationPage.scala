@@ -2,28 +2,26 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginationPage extends StObject {
   
   /** Parse the current window.location in order to determine the target page */
-  def init(): Unit = js.native
+  def init(): Unit
   
   /**
     * Check if the paginate feature is enabled in `settings.features`
     *
     * @return A boolean
     */
-  def initOnLoad(): Boolean = js.native
+  def initOnLoad(): Boolean
   
   /**
     * Set the page in the dataset
     *
     * @param page The new page number
     */
-  def set(page: Double): Unit = js.native
+  def set(page: Double): Unit
 }
 object PaginationPage {
   

@@ -3,25 +3,23 @@ package typings.winrt.Windows.Globalization
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGeographicRegion extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var codeThreeDigit: String = js.native
+  var codeThreeDigit: String
   
-  var codeThreeLetter: String = js.native
+  var codeThreeLetter: String
   
-  var codeTwoLetter: String = js.native
+  var codeTwoLetter: String
   
-  var currenciesInUse: IVectorView[String] = js.native
+  var currenciesInUse: IVectorView[String]
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var nativeName: String = js.native
+  var nativeName: String
 }
 object IGeographicRegion {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicemanagement/v1", "servicemanagement_v1.Resource$Services$Configs")
@@ -36,7 +35,7 @@ class ResourceServicesConfigs protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaService] = js.native
   def create(callback: BodyResponseCallback[SchemaService]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaService] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaService] = js.native
   def create(params: ParamsResourceServicesConfigsCreate): GaxiosPromise[SchemaService] = js.native
   def create(params: ParamsResourceServicesConfigsCreate, callback: BodyResponseCallback[SchemaService]): Unit = js.native
   def create(
@@ -67,7 +66,7 @@ class ResourceServicesConfigs protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaService] = js.native
   def get(callback: BodyResponseCallback[SchemaService]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaService] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaService] = js.native
   def get(params: ParamsResourceServicesConfigsGet): GaxiosPromise[SchemaService] = js.native
   def get(params: ParamsResourceServicesConfigsGet, callback: BodyResponseCallback[SchemaService]): Unit = js.native
   def get(
@@ -99,7 +98,7 @@ class ResourceServicesConfigs protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListServiceConfigsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListServiceConfigsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListServiceConfigsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListServiceConfigsResponse] = js.native
   def list(params: ParamsResourceServicesConfigsList): GaxiosPromise[SchemaListServiceConfigsResponse] = js.native
   def list(
     params: ParamsResourceServicesConfigsList,
@@ -139,7 +138,7 @@ class ResourceServicesConfigs protected () extends StObject {
     */
   def submit(): GaxiosPromise[SchemaOperation] = js.native
   def submit(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def submit(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def submit(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def submit(params: ParamsResourceServicesConfigsSubmit): GaxiosPromise[SchemaOperation] = js.native
   def submit(params: ParamsResourceServicesConfigsSubmit, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def submit(

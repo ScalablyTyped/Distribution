@@ -3,27 +3,26 @@ package typings.openapiTypes.mod.OpenAPIV2
 import typings.openapiTypes.openapiTypesStrings.apiKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecuritySchemeApiKey
-  extends SecuritySchemeObjectBase
+  extends StObject
+     with SecuritySchemeObjectBase
      with SecuritySchemeObject {
   
-  var in: String = js.native
+  var in: String
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_SecuritySchemeApiKey: apiKey = js.native
+  var type_SecuritySchemeApiKey: apiKey
 }
 object SecuritySchemeApiKey {
   
   @scala.inline
-  def apply(in: String, name: String, `type`: apiKey): SecuritySchemeApiKey = {
+  def apply(in: String, name: String): SecuritySchemeApiKey = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("apiKey")
     __obj.asInstanceOf[SecuritySchemeApiKey]
   }
   

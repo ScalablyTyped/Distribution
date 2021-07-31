@@ -6,7 +6,6 @@ import typings.react.mod.ReactElement
 import typings.storybookUi.anon.Absolute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelMod extends Shortcut {
@@ -15,14 +14,13 @@ object panelMod extends Shortcut {
   @js.native
   val default: NamedExoticComponent[Absolute] = js.native
   
-  @js.native
   trait SafeTabProps extends StObject {
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var id: String = js.native
+    var id: String
     
-    var title: js.Function0[String] | String = js.native
+    var title: js.Function0[String] | String
   }
   object SafeTabProps {
     

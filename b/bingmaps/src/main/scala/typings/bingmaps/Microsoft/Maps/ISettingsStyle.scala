@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISettingsStyle extends StObject {
   
   /** A hex color value that all land is first flushed to before things are drawn on it. */
-  var landColor: js.UndefOr[String] = js.native
+  var landColor: js.UndefOr[String] = js.undefined
   
   /** Specifies whether or not to draw elevation shading on the map. */
-  var shadedReliefVisible: js.UndefOr[Boolean] = js.native
+  var shadedReliefVisible: js.UndefOr[Boolean] = js.undefined
 }
 object ISettingsStyle {
   

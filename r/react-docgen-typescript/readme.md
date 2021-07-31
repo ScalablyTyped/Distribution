@@ -10,9 +10,9 @@ Typings are for version 1.20.5
 | ------------------ | :-------------: |
 | Full name          | react-docgen-typescript |
 | Keywords           | - |
-| # releases         | 28 |
-| # dependents       | 69 |
-| # downloads        | 19756300 |
+| # releases         | 23 |
+| # dependents       | 77 |
+| # downloads        | 33724403 |
 | # stars            | 1 |
 
 ## Links

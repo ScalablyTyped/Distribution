@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BigQueryDestination extends StObject {
   
   /**
     * Required. The BigQuery dataset in format "projects/projectId/datasets/datasetId", to which the snapshot result should be exported. If this dataset does not exist, the export call
     * returns an INVALID_ARGUMENT error.
     */
-  var dataset: js.UndefOr[String] = js.native
+  var dataset: js.UndefOr[String] = js.undefined
   
   /**
     * If the destination table already exists and this flag is `TRUE`, the table will be overwritten by the contents of assets snapshot. If the flag is `FALSE` or unset and the
     * destination table already exists, the export call returns an INVALID_ARGUMEMT error.
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [partition_spec] determines whether to export to partitioned table(s) and how to partition the data. If [partition_spec] is unset or [partition_spec.partion_key] is unset or
@@ -28,7 +26,7 @@ trait BigQueryDestination extends StObject {
     * [force] is `TRUE`, the corresponding partition will be overwritten by the snapshot results (data in different partitions will remain intact); if [force] is unset or `FALSE`, it will
     * append the data. An error will be returned if the schema update or data appension fails.
     */
-  var partitionSpec: js.UndefOr[PartitionSpec] = js.native
+  var partitionSpec: js.UndefOr[PartitionSpec] = js.undefined
   
   /**
     * If this flag is `TRUE`, the snapshot results will be written to one or multiple tables, each of which contains results of one asset type. The [force] and [partition_spec] fields
@@ -42,10 +40,10 @@ trait BigQueryDestination extends StObject {
     * table_type_A succeeds when exporting to table_type_B fails during one export call, the results in table_type_A will persist and there will not be partial results persisting in a
     * table.
     */
-  var separateTablesPerAssetType: js.UndefOr[Boolean] = js.native
+  var separateTablesPerAssetType: js.UndefOr[Boolean] = js.undefined
   
   /** Required. The BigQuery table to which the snapshot result should be written. If this table does not exist, a new table with the given name will be created. */
-  var table: js.UndefOr[String] = js.native
+  var table: js.UndefOr[String] = js.undefined
 }
 object BigQueryDestination {
   

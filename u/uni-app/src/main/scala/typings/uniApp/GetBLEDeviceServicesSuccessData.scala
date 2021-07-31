@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBLEDeviceServicesSuccessData extends StObject {
   
   /**
     * 该服务是否为主服务
     */
-  var isPrimary: js.UndefOr[Boolean] = js.native
+  var isPrimary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 蓝牙设备服务的 uuid
     */
-  var uuid: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object GetBLEDeviceServicesSuccessData {
   

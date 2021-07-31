@@ -3,7 +3,6 @@ package typings.ldapjs.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ldapjs", "Attribute")
@@ -27,11 +26,13 @@ class Attribute () extends StObject {
 /* static members */
 object Attribute {
   
-  @JSImport("ldapjs", "Attribute.compare")
+  @JSImport("ldapjs", "Attribute")
   @js.native
-  def compare(a: Attribute, b: Attribute): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ldapjs", "Attribute.isAttribute")
-  @js.native
-  def isAttribute(`object`: js.Any): /* is ldapjs.ldapjs.Attribute */ Boolean = js.native
+  @scala.inline
+  def compare(a: Attribute, b: Attribute): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def isAttribute(`object`: js.Any): /* is ldapjs.ldapjs.Attribute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAttribute")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is ldapjs.ldapjs.Attribute */ Boolean]
 }

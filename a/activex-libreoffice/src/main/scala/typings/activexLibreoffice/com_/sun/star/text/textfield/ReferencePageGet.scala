@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,11 +20,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.TextField
   * @see com.sun.star.text.textfield.ReferencePageSet
   */
-@js.native
-trait ReferencePageGet extends TextField_ {
+trait ReferencePageGet
+  extends StObject
+     with TextField_ {
   
   /** specifies the type of the numbering as {@link com.sun.star.style.NumberingType} */
-  var NumberingType: Double = js.native
+  var NumberingType: Double
 }
 object ReferencePageGet {
   

@@ -3,19 +3,17 @@ package typings.wegameApi.wx.types
 import typings.wegameApi.anon.DataAny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStorageParams extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var success: js.UndefOr[js.Function1[/* res */ DataAny, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ DataAny, Unit]] = js.undefined
 }
 object GetStorageParams {
   

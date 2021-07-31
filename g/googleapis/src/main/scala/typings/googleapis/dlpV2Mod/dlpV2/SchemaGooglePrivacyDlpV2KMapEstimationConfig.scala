@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * by extrapolating from the distribution of values in the input dataset. A
   * column with a semantic tag attached.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2KMapEstimationConfig extends StObject {
   
   /**
@@ -22,20 +20,20 @@ trait SchemaGooglePrivacyDlpV2KMapEstimationConfig extends StObject {
     * used to tag a quasi-identifiers column must appear in exactly one column
     * of one auxiliary table.
     */
-  var auxiliaryTables: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2AuxiliaryTable]] = js.native
+  var auxiliaryTables: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2AuxiliaryTable]] = js.undefined
   
   /**
     * Fields considered to be quasi-identifiers. No two columns can have the
     * same tag. [required]
     */
-  var quasiIds: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2TaggedField]] = js.native
+  var quasiIds: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2TaggedField]] = js.undefined
   
   /**
     * ISO 3166-1 alpha-2 region code to use in the statistical modeling.
     * Required if no column is tagged with a region-specific InfoType (like
     * US_ZIP_5) or a region code.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2KMapEstimationConfig {
   

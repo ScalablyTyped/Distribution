@@ -24,17 +24,18 @@ import typings.swaggerStats.anon.Request
 import typings.swaggerStats.anon.TypeofPromClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("swagger-stats", "getCoreStats")
+  @JSImport("swagger-stats", JSImport.Namespace)
   @js.native
-  def getCoreStats(): CoreStats = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("swagger-stats", "getFastifyPlugin")
-  @js.native
+  @scala.inline
+  def getCoreStats(): CoreStats = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoreStats")().asInstanceOf[CoreStats]
+  
+  @scala.inline
   def getFastifyPlugin(
     fastify: FastifyInstance[
       RawServerDefault, 
@@ -44,59 +45,55 @@ object mod {
     ],
     opts: SWStats,
     done: js.Function0[Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFastifyPlugin")(fastify.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object getHapiPlugin {
+    
+    @JSImport("swagger-stats", "getHapiPlugin")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("swagger-stats", "getHapiPlugin.name")
     @js.native
     val name: String = js.native
     
-    @JSImport("swagger-stats", "getHapiPlugin.register")
-    @js.native
-    def register(server: Server_): js.Promise[Unit] = js.native
-    @JSImport("swagger-stats", "getHapiPlugin.register")
-    @js.native
-    def register(server: Server_, opts: SWStats): js.Promise[Unit] = js.native
+    @scala.inline
+    def register(server: Server_): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def register(server: Server_, opts: SWStats): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     @JSImport("swagger-stats", "getHapiPlugin.version")
     @js.native
     val version: String = js.native
   }
   
-  @JSImport("swagger-stats", "getMiddleware")
-  @js.native
-  def getMiddleware(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("swagger-stats", "getMiddleware")
-  @js.native
-  def getMiddleware(opts: SWStats): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def getMiddleware(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleware")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def getMiddleware(opts: SWStats): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleware")(opts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("swagger-stats", "getPromClient")
-  @js.native
-  def getPromClient(): TypeofPromClient = js.native
+  @scala.inline
+  def getPromClient(): TypeofPromClient = ^.asInstanceOf[js.Dynamic].applyDynamic("getPromClient")().asInstanceOf[TypeofPromClient]
   
-  @JSImport("swagger-stats", "getPromStats")
-  @js.native
-  def getPromStats(): String = js.native
+  @scala.inline
+  def getPromStats(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPromStats")().asInstanceOf[String]
   
-  @JSImport("swagger-stats", "stop")
-  @js.native
-  def stop(): Unit = js.native
+  @scala.inline
+  def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
   
-  @js.native
   trait APIOperationDefinition extends StObject {
     
-    var deprecated: Boolean = js.native
+    var deprecated: Boolean
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var operationId: js.UndefOr[String] = js.native
+    var operationId: js.UndefOr[String] = js.undefined
     
-    var summary: js.UndefOr[String] = js.native
+    var summary: js.UndefOr[String] = js.undefined
     
-    var swagger: Boolean = js.native
+    var swagger: Boolean
     
-    var tags: js.UndefOr[js.Any] = js.native
+    var tags: js.UndefOr[js.Any] = js.undefined
   }
   object APIOperationDefinition {
     
@@ -141,14 +138,13 @@ object mod {
     }
   }
   
-  @js.native
   trait APIOperationStats extends StObject {
     
-    var defs: js.UndefOr[APIOperationDefinition] = js.native
+    var defs: js.UndefOr[APIOperationDefinition] = js.undefined
     
-    var details: js.UndefOr[APIOperationDefinition] = js.native
+    var details: js.UndefOr[APIOperationDefinition] = js.undefined
     
-    var stats: js.UndefOr[APIOperationDefinition] = js.native
+    var stats: js.UndefOr[APIOperationDefinition] = js.undefined
   }
   object APIOperationStats {
     
@@ -181,42 +177,41 @@ object mod {
     }
   }
   
-  @js.native
   trait CoreStats extends StObject {
     
-    var all: ReqResStats = js.native
+    var all: ReqResStats
     
-    var apdexThreshold: Double = js.native
+    var apdexThreshold: Double
     
-    var apidefs: js.UndefOr[Record[String, RecordHTTPMethodAPIOperat]] = js.native
+    var apidefs: js.UndefOr[Record[String, RecordHTTPMethodAPIOperat]] = js.undefined
     
-    var apiop: js.UndefOr[Record[String, RecordHTTPMethodAPIOperatDELETE]] = js.native
+    var apiop: js.UndefOr[Record[String, RecordHTTPMethodAPIOperatDELETE]] = js.undefined
     
-    var apistats: js.UndefOr[Record[String, RecordHTTPMethodReqResSta]] = js.native
+    var apistats: js.UndefOr[Record[String, RecordHTTPMethodReqResSta]] = js.undefined
     
-    var egress: ReqResStats = js.native
+    var egress: ReqResStats
     
-    var errors: js.UndefOr[ErrorsStats] = js.native
+    var errors: js.UndefOr[ErrorsStats] = js.undefined
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var ip: String = js.native
+    var ip: String
     
-    var lasterrors: js.UndefOr[js.Array[RequestResponseRecord]] = js.native
+    var lasterrors: js.UndefOr[js.Array[RequestResponseRecord]] = js.undefined
     
-    var longestreq: js.UndefOr[js.Array[RequestResponseRecord]] = js.native
+    var longestreq: js.UndefOr[js.Array[RequestResponseRecord]] = js.undefined
     
-    var method: js.UndefOr[RecordHTTPMethodSubsetReq] = js.native
+    var method: js.UndefOr[RecordHTTPMethodSubsetReq] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var startts: Double = js.native
+    var startts: Double
     
-    var sys: SysStats = js.native
+    var sys: SysStats
     
-    var timeline: js.UndefOr[TimelineStats] = js.native
+    var timeline: js.UndefOr[TimelineStats] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object CoreStats {
     
@@ -322,14 +317,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ErrorsStats extends StObject {
     
-    var statuscode: Record[Double, Double] = js.native
+    var statuscode: Record[Double, Double]
     
-    var topnotfound: Record[String, Double] = js.native
+    var topnotfound: Record[String, Double]
     
-    var topservererror: Record[String, Double] = js.native
+    var topservererror: Record[String, Double]
   }
   object ErrorsStats {
     
@@ -417,54 +411,53 @@ object mod {
     def PUT: typings.swaggerStats.swaggerStatsStrings.PUT = "PUT".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.PUT]
   }
   
-  @js.native
   trait ReqResStats extends StObject {
     
-    var apdex_satisfied: Double = js.native
+    var apdex_satisfied: Double
     
-    var apdex_score: Double = js.native
+    var apdex_score: Double
     
-    var apdex_threshold: Double = js.native
+    var apdex_threshold: Double
     
-    var apdex_tolerated: Double = js.native
+    var apdex_tolerated: Double
     
-    var avg_req_clength: Double = js.native
+    var avg_req_clength: Double
     
-    var avg_res_clength: Double = js.native
+    var avg_res_clength: Double
     
-    var avg_time: Double = js.native
+    var avg_time: Double
     
-    var client_error: Double = js.native
+    var client_error: Double
     
-    var err_rate: Double = js.native
+    var err_rate: Double
     
-    var errors: Double = js.native
+    var errors: Double
     
-    var info: Double = js.native
+    var info: Double
     
-    var max_req_clength: Double = js.native
+    var max_req_clength: Double
     
-    var max_res_clength: Double = js.native
+    var max_res_clength: Double
     
-    var max_time: Double = js.native
+    var max_time: Double
     
-    var redirect: Double = js.native
+    var redirect: Double
     
-    var req_rate: Double = js.native
+    var req_rate: Double
     
-    var requests: Double = js.native
+    var requests: Double
     
-    var responses: Double = js.native
+    var responses: Double
     
-    var server_error: Double = js.native
+    var server_error: Double
     
-    var success: Double = js.native
+    var success: Double
     
-    var total_req_clength: Double = js.native
+    var total_req_clength: Double
     
-    var total_res_clength: Double = js.native
+    var total_res_clength: Double
     
-    var total_time: Double = js.native
+    var total_time: Double
   }
   object ReqResStats {
     
@@ -572,39 +565,39 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestResponseRecord
-    extends /* field */ StringDictionary[js.Any] {
+    extends StObject
+       with /* field */ StringDictionary[js.Any] {
     
-    var `@timestamp`: String = js.native
+    var `@timestamp`: String
     
-    var api: Deprecated = js.native
+    var api: Deprecated
     
-    var attrs: js.UndefOr[Record[String, String]] = js.native
+    var attrs: js.UndefOr[Record[String, String]] = js.undefined
     
-    var attrsint: js.UndefOr[Record[String, Double]] = js.native
+    var attrsint: js.UndefOr[Record[String, Double]] = js.undefined
     
-    var endts: Double = js.native
+    var endts: Double
     
-    var http: Request = js.native
+    var http: Request
     
-    var ip: String = js.native
+    var ip: String
     
-    var method: String = js.native
+    var method: String
     
-    var node: Hostname = js.native
+    var node: Hostname
     
-    var path: String = js.native
+    var path: String
     
-    var port: String = js.native
+    var port: String
     
-    var query: String = js.native
+    var query: String
     
-    var real_ip: String = js.native
+    var real_ip: String
     
-    var responsetime: Double = js.native
+    var responsetime: Double
     
-    var startts: Double = js.native
+    var startts: Double
   }
   object RequestResponseRecord {
     
@@ -686,36 +679,35 @@ object mod {
   }
   
   /* Inlined std.Partial<{  hostname :string,   name :string,   version :string,   ip :string,   swaggerSpec :std.Record<any, any>,   uriPath :string,   timelineBucketDuration :number,   durationBuckets :std.Array<number>,   requestSizeBuckets :std.Array<number>,   responseSizeBuckets :std.Array<number>,   apdexThreshold :number, onResponseFinish (req : node.http.IncomingMessage, res : node.http.ServerResponse, rrr : swagger-stats.swagger-stats.RequestResponseRecord): void,   authentication :boolean, onAuthenticate (req : node.http.IncomingMessage, username : string, password : string): boolean,   sessionMaxAge :number,   elasticsearch :string,   elasticsearchIndexPrefix :string,   elasticsearchUsername :string,   elasticsearchPassword :string,   swaggerOnly :boolean,   metricsPrefix :string,   enableEgress :boolean}> */
-  @js.native
   trait SWStats extends StObject {
     
-    var apdexThreshold: js.UndefOr[Double] = js.native
+    var apdexThreshold: js.UndefOr[Double] = js.undefined
     
-    var authentication: js.UndefOr[Boolean] = js.native
+    var authentication: js.UndefOr[Boolean] = js.undefined
     
-    var durationBuckets: js.UndefOr[js.Array[Double]] = js.native
+    var durationBuckets: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var elasticsearch: js.UndefOr[String] = js.native
+    var elasticsearch: js.UndefOr[String] = js.undefined
     
-    var elasticsearchIndexPrefix: js.UndefOr[String] = js.native
+    var elasticsearchIndexPrefix: js.UndefOr[String] = js.undefined
     
-    var elasticsearchPassword: js.UndefOr[String] = js.native
+    var elasticsearchPassword: js.UndefOr[String] = js.undefined
     
-    var elasticsearchUsername: js.UndefOr[String] = js.native
+    var elasticsearchUsername: js.UndefOr[String] = js.undefined
     
-    var enableEgress: js.UndefOr[Boolean] = js.native
+    var enableEgress: js.UndefOr[Boolean] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var ip: js.UndefOr[String] = js.native
+    var ip: js.UndefOr[String] = js.undefined
     
-    var metricsPrefix: js.UndefOr[String] = js.native
+    var metricsPrefix: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     var onAuthenticate: js.UndefOr[
         js.Function3[/* req */ IncomingMessage, /* username */ String, /* password */ String, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var onResponseFinish: js.UndefOr[
         js.Function3[
@@ -724,23 +716,23 @@ object mod {
           /* rrr */ RequestResponseRecord, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var requestSizeBuckets: js.UndefOr[js.Array[Double]] = js.native
+    var requestSizeBuckets: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var responseSizeBuckets: js.UndefOr[js.Array[Double]] = js.native
+    var responseSizeBuckets: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var sessionMaxAge: js.UndefOr[Double] = js.native
+    var sessionMaxAge: js.UndefOr[Double] = js.undefined
     
-    var swaggerOnly: js.UndefOr[Boolean] = js.native
+    var swaggerOnly: js.UndefOr[Boolean] = js.undefined
     
-    var swaggerSpec: js.UndefOr[Record[_, _]] = js.native
+    var swaggerSpec: js.UndefOr[Record[js.Any, js.Any]] = js.undefined
     
-    var timelineBucketDuration: js.UndefOr[Double] = js.native
+    var timelineBucketDuration: js.UndefOr[Double] = js.undefined
     
-    var uriPath: js.UndefOr[String] = js.native
+    var uriPath: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object SWStats {
     
@@ -873,7 +865,7 @@ object mod {
       def setSwaggerOnlyUndefined: Self = StObject.set(x, "swaggerOnly", js.undefined)
       
       @scala.inline
-      def setSwaggerSpec(value: Record[_, _]): Self = StObject.set(x, "swaggerSpec", value.asInstanceOf[js.Any])
+      def setSwaggerSpec(value: Record[js.Any, js.Any]): Self = StObject.set(x, "swaggerSpec", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSwaggerSpecUndefined: Self = StObject.set(x, "swaggerSpec", js.undefined)
@@ -898,18 +890,17 @@ object mod {
     }
   }
   
-  @js.native
   trait SysStats extends StObject {
     
-    var cpu: Double = js.native
+    var cpu: Double
     
-    var external: Double = js.native
+    var external: Double
     
-    var heapTotal: Double = js.native
+    var heapTotal: Double
     
-    var heapUsed: Double = js.native
+    var heapUsed: Double
     
-    var rss: Double = js.native
+    var rss: Double
   }
   object SysStats {
     
@@ -939,12 +930,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TimelineStats extends StObject {
     
-    var data: Record[String, TimelineStatsData] = js.native
+    var data: Record[String, TimelineStatsData]
     
-    var settings: Bucketcurrent = js.native
+    var settings: Bucketcurrent
   }
   object TimelineStats {
     
@@ -965,12 +955,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TimelineStatsData extends StObject {
     
-    var stats: ReqResStats = js.native
+    var stats: ReqResStats
     
-    var sys: SysStats = js.native
+    var sys: SysStats
   }
   object TimelineStatsData {
     

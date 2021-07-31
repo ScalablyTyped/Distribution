@@ -10,9 +10,9 @@ Detect what commit message convention your repository is using.
 | ------------------ | :-------------: |
 | Full name          | conventional-commits-detector |
 | Keywords           | commit-conventions, conventions, commit-message |
-| # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 945887 |
+| # releases         | 2 |
+| # dependents       | 15 |
+| # downloads        | 1229758 |
 | # stars            | 1 |
 
 ## Links

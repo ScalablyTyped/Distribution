@@ -4,27 +4,27 @@ import typings.sharepoint.IEnumerable
 import typings.sharepoint.IEnumerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait List[T] extends IEnumerable[T] {
+trait List[T]
+  extends StObject
+     with IEnumerable[T] {
   
-  def add(data: T): scala.Unit = js.native
+  def add(data: T): scala.Unit
   
-  def clear(): scala.Unit = js.native
+  def clear(): scala.Unit
   
-  def getEnumeratorAtPos(): ListEnumerator[T] = js.native
+  def getEnumeratorAtPos(): ListEnumerator[T]
   
-  def get_count(): Double = js.native
+  def get_count(): Double
   
-  def get_item(index: Double): T = js.native
+  def get_item(index: Double): T
   
-  def indexOf(data: T): Double = js.native
+  def indexOf(data: T): Double
   
-  def insert(index: Double, data: T): scala.Unit = js.native
+  def insert(index: Double, data: T): scala.Unit
   
-  def remove(data: T): scala.Unit = js.native
+  def remove(data: T): scala.Unit
 }
 object List {
   
@@ -45,7 +45,7 @@ object List {
   }
   
   @scala.inline
-  implicit class ListMutableBuilder[Self <: List[_], T] (val x: Self with List[T]) extends AnyVal {
+  implicit class ListMutableBuilder[Self <: List[?], T] (val x: Self & List[T]) extends AnyVal {
     
     @scala.inline
     def setAdd(value: T => scala.Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))

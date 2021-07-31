@@ -2,46 +2,44 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Application extends StObject {
   
   /**
     * The application name to display.
     */
-  var DisplayName: js.UndefOr[String] = js.native
+  var DisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * If there is a problem, the application can be disabled after image creation.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The URL for the application icon. This URL might be time-limited.
     */
-  var IconURL: js.UndefOr[String] = js.native
+  var IconURL: js.UndefOr[String] = js.undefined
   
   /**
     * The arguments that are passed to the application at launch.
     */
-  var LaunchParameters: js.UndefOr[String] = js.native
+  var LaunchParameters: js.UndefOr[String] = js.undefined
   
   /**
     * The path to the application executable in the instance.
     */
-  var LaunchPath: js.UndefOr[String] = js.native
+  var LaunchPath: js.UndefOr[String] = js.undefined
   
   /**
     * Additional attributes that describe the application.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.appstreamMod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.appstreamMod.Metadata] = js.undefined
   
   /**
     * The name of the application.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
 }
 object Application {
   

@@ -3,7 +3,6 @@ package typings.wordpressNotices
 import typings.wordpressNotices.mod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wordpressNoticesStrings {
@@ -19,12 +18,16 @@ object wordpressNoticesStrings {
   def coreSlashnotices: coreSlashnotices = "core/notices".asInstanceOf[coreSlashnotices]
   
   @js.native
-  sealed trait error extends Status
+  sealed trait error
+    extends StObject
+       with Status
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait info extends Status
+  sealed trait info
+    extends StObject
+       with Status
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -34,12 +37,16 @@ object wordpressNoticesStrings {
   def snackbar: snackbar = "snackbar".asInstanceOf[snackbar]
   
   @js.native
-  sealed trait success extends Status
+  sealed trait success
+    extends StObject
+       with Status
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait warning extends Status
+  sealed trait warning
+    extends StObject
+       with Status
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }

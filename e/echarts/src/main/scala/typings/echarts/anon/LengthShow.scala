@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LengthShow extends js.Object {
+trait LengthShow extends StObject {
   
   /**
     * The length of pointer which could be absolute value and also
@@ -18,7 +17,7 @@ trait LengthShow extends js.Object {
     * '80%'
     * @see https://echarts.apache.org/en/option.html#series-gauge.pointer.length
     */
-  var length: js.UndefOr[Double | String] = js.native
+  var length: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Whether to show the pointer.
@@ -28,7 +27,7 @@ trait LengthShow extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-gauge.pointer.show
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The width of pointer.
@@ -38,7 +37,7 @@ trait LengthShow extends js.Object {
     * 8
     * @see https://echarts.apache.org/en/option.html#series-gauge.pointer.width
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object LengthShow {
   
@@ -49,36 +48,24 @@ object LengthShow {
   }
   
   @scala.inline
-  implicit class LengthShowOps[Self <: LengthShow] (val x: Self) extends AnyVal {
+  implicit class LengthShowMutableBuilder[Self <: LengthShow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double | String): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1001`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1002`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FetchDirection {

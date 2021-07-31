@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForcePseudoStateRequest extends StObject {
   
   /**
     * Element pseudo classes to force when computing the element's style.
     */
-  var forcedPseudoClasses: js.Array[String] = js.native
+  var forcedPseudoClasses: js.Array[String]
   
   /**
     * The element id for which to force the pseudo state.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
 }
 object ForcePseudoStateRequest {
   

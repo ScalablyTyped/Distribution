@@ -6,7 +6,6 @@ import typings.mapboxGl.mod.PointLike
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-map-gl", "InteractiveMap")
@@ -23,8 +22,9 @@ class InteractiveMap protected ()
   def getMap(): Map = js.native
   
   def queryRenderedFeatures(): js.Array[MapboxGeoJSONFeature] = js.native
-  def queryRenderedFeatures(geometry: js.UndefOr[PointLike], parameters: QueryRenderedFeaturesParams): js.Array[MapboxGeoJSONFeature] = js.native
   def queryRenderedFeatures(geometry: js.Tuple2[PointLike, PointLike]): js.Array[MapboxGeoJSONFeature] = js.native
   def queryRenderedFeatures(geometry: js.Tuple2[PointLike, PointLike], parameters: QueryRenderedFeaturesParams): js.Array[MapboxGeoJSONFeature] = js.native
+  def queryRenderedFeatures(geometry: Unit, parameters: QueryRenderedFeaturesParams): js.Array[MapboxGeoJSONFeature] = js.native
   def queryRenderedFeatures(geometry: PointLike): js.Array[MapboxGeoJSONFeature] = js.native
+  def queryRenderedFeatures(geometry: PointLike, parameters: QueryRenderedFeaturesParams): js.Array[MapboxGeoJSONFeature] = js.native
 }

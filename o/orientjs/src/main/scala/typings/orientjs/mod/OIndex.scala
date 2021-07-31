@@ -2,7 +2,6 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,7 +12,7 @@ trait OIndex extends StObject {
   
   var algorithm: String = js.native
   
-  def cacheData(indices: js.Array[_]): js.Promise[ODB] = js.native
+  def cacheData(indices: js.Array[js.Any]): js.Promise[ODB] = js.native
   
   var cached: Boolean = js.native
   

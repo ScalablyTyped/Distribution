@@ -11,7 +11,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.keypress
 import typings.wordpressComponents.wordpressComponentsStrings.keyup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyboardShortcutsMod {
@@ -30,7 +29,6 @@ object keyboardShortcutsMod {
   
   object KeyboardShortcuts {
     
-    @js.native
     trait BaseProps extends StObject {
       
       /**
@@ -38,14 +36,14 @@ object keyboardShortcutsMod {
         * occurs in an editable field. Pass `bindGlobal` as `true` if the key
         * events should be observed globally, including within editable fields.
         */
-      var bindGlobal: js.UndefOr[Boolean] = js.native
+      var bindGlobal: js.UndefOr[Boolean] = js.undefined
       
       /**
         * By default, a callback is invoked in response to the `keydown` event.
         * To override this, pass `eventName` with the name of a specific keyboard
         * event.
         */
-      var eventName: js.UndefOr[keydown | keypress | keyup] = js.native
+      var eventName: js.UndefOr[keydown | keypress | keyup] = js.undefined
       
       /**
         * An object of shortcut bindings, where each key is a keyboard
@@ -61,7 +59,7 @@ object keyboardShortcutsMod {
         * separate `KeyboardShortcuts` element, which can be achieved by
         * assigning a unique `key` prop.
         */
-      var shortcuts: Record[String, js.Function0[Unit]] = js.native
+      var shortcuts: Record[String, js.Function0[Unit]]
     }
     object BaseProps {
       
@@ -105,18 +103,18 @@ object keyboardShortcutsMod {
       }
       
       @scala.inline
-      def PropsWithoutChildren(bindGlobal: `true`, shortcuts: Record[String, js.Function0[Unit]]): typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithoutChildren = {
-        val __obj = js.Dynamic.literal(bindGlobal = bindGlobal.asInstanceOf[js.Any], shortcuts = shortcuts.asInstanceOf[js.Any])
+      def PropsWithoutChildren(shortcuts: Record[String, js.Function0[Unit]]): typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithoutChildren = {
+        val __obj = js.Dynamic.literal(bindGlobal = true, shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithoutChildren]
       }
     }
     
-    @js.native
     trait PropsWithChildren
-      extends BaseProps
+      extends StObject
+         with BaseProps
          with Props {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
     }
     object PropsWithChildren {
       
@@ -137,21 +135,21 @@ object keyboardShortcutsMod {
       }
     }
     
-    @js.native
     trait PropsWithoutChildren
-      extends BaseProps
+      extends StObject
+         with BaseProps
          with Props {
       
       @JSName("bindGlobal")
-      var bindGlobal_PropsWithoutChildren: `true` = js.native
+      var bindGlobal_PropsWithoutChildren: `true`
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
     }
     object PropsWithoutChildren {
       
       @scala.inline
-      def apply(bindGlobal: `true`, shortcuts: Record[String, js.Function0[Unit]]): PropsWithoutChildren = {
-        val __obj = js.Dynamic.literal(bindGlobal = bindGlobal.asInstanceOf[js.Any], shortcuts = shortcuts.asInstanceOf[js.Any])
+      def apply(shortcuts: Record[String, js.Function0[Unit]]): PropsWithoutChildren = {
+        val __obj = js.Dynamic.literal(bindGlobal = true, shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[PropsWithoutChildren]
       }
       

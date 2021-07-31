@@ -2,26 +2,24 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptInvitationRequest extends StObject {
   
   /**
     * The unique ID of the detector of the GuardDuty member account.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The value that is used to validate the master account to the member account.
     */
-  var InvitationId: String = js.native
+  var InvitationId: String
   
   /**
     * The account ID of the master GuardDuty account whose invitation you're accepting.
     */
-  var MasterId: String = js.native
+  var MasterId: String
 }
 object AcceptInvitationRequest {
   

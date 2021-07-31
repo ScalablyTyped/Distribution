@@ -3,12 +3,13 @@ package typings.navermaps.naver.maps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Map.Tile
 @js.native
-trait Tile extends KVO {
+trait Tile
+  extends StObject
+     with KVO {
   
   def appendTo(parentNode: HTMLElement): Unit = js.native
   
@@ -16,8 +17,8 @@ trait Tile extends KVO {
   
   def destroy(): Unit = js.native
   
-  def fadeIn(callback: js.Function0[_]): Unit = js.native
-  def fadeIn(callback: js.Function0[_], startOpacity: Double): Unit = js.native
+  def fadeIn(callback: js.Function0[js.Any]): Unit = js.native
+  def fadeIn(callback: js.Function0[js.Any], startOpacity: Double): Unit = js.native
   
   def getElement(): HTMLElement = js.native
   

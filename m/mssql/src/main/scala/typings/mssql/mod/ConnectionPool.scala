@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mssql", "ConnectionPool")
@@ -16,12 +15,12 @@ class ConnectionPool protected () extends EventEmitter {
   def this(config: typings.mssql.mod.config, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]) = this()
   def this(connectionString: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]) = this()
   
-  def batch(batch: String): js.Promise[IResult[_]] = js.native
+  def batch(batch: String): js.Promise[IResult[js.Any]] = js.native
   def batch(
     batch: String,
-    callback: js.Function2[/* err */ js.UndefOr[Error], /* recordset */ js.UndefOr[IResult[_]], Unit]
+    callback: js.Function2[/* err */ js.UndefOr[Error], /* recordset */ js.UndefOr[IResult[js.Any]], Unit]
   ): Unit = js.native
-  def batch(strings: TemplateStringsArray, interpolations: js.Any*): js.Promise[IResult[_]] = js.native
+  def batch(strings: TemplateStringsArray, interpolations: js.Any*): js.Promise[IResult[js.Any]] = js.native
   @JSName("batch")
   def batch_Entity[Entity](batch: String): js.Promise[IResult[Entity]] = js.native
   @JSName("batch")
@@ -39,8 +38,8 @@ class ConnectionPool protected () extends EventEmitter {
   
   var driver: String = js.native
   
-  def query(command: String): js.Promise[IResult[_]] = js.native
-  def query(strings: TemplateStringsArray, interpolations: js.Any*): js.Promise[IResult[_]] = js.native
+  def query(command: String): js.Promise[IResult[js.Any]] = js.native
+  def query(strings: TemplateStringsArray, interpolations: js.Any*): js.Promise[IResult[js.Any]] = js.native
   def query[Entity](
     command: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* recordset */ js.UndefOr[IResult[Entity]], Unit]

@@ -2,15 +2,13 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timestamp[T] extends StObject {
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var value: T = js.native
+  var value: T
 }
 object Timestamp {
   
@@ -21,7 +19,7 @@ object Timestamp {
   }
   
   @scala.inline
-  implicit class TimestampMutableBuilder[Self <: Timestamp[_], T] (val x: Self with Timestamp[T]) extends AnyVal {
+  implicit class TimestampMutableBuilder[Self <: Timestamp[?], T] (val x: Self & Timestamp[T]) extends AnyVal {
     
     @scala.inline
     def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])

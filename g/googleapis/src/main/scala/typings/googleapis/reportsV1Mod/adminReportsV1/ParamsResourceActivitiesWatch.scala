@@ -6,81 +6,81 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceActivitiesWatch extends StandardParameters {
+trait ParamsResourceActivitiesWatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * IP Address of host where the event was performed. Supports both IPv4 and
     * IPv6 addresses.
     */
-  var actorIpAddress: js.UndefOr[String] = js.native
+  var actorIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Application name for which the events are to be retrieved.
     */
-  var applicationName: js.UndefOr[String] = js.native
+  var applicationName: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Represents the customer for which the data is to be fetched.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * Return events which occurred at or before this time.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the event being queried.
     */
-  var eventName: js.UndefOr[String] = js.native
+  var eventName: js.UndefOr[String] = js.undefined
   
   /**
     * Event parameters in the form [parameter1 name][operator][parameter1
     * value],[parameter2 name][operator][parameter2 value],...
     */
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
   /**
     * Number of activity records to be shown in each page.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * the organizational unit's(OU) ID to filter activities from users
     * belonging to a specific OU or one of its sub-OU(s)
     */
-  var orgUnitID: js.UndefOr[String] = js.native
+  var orgUnitID: js.UndefOr[String] = js.undefined
   
   /**
     * Token to specify next page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaChannel] = js.native
+  var requestBody: js.UndefOr[SchemaChannel] = js.undefined
   
   /**
     * Return events which occurred at or after this time.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the profile id or the user email for which the data should be
     * filtered. When 'all' is specified as the userKey, it returns usageReports
     * for all users.
     */
-  var userKey: js.UndefOr[String] = js.native
+  var userKey: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceActivitiesWatch {
   

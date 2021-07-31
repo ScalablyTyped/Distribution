@@ -2,23 +2,21 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashVideoItem extends StObject {
   
-  def exportToFLV(fileURI: String): Boolean = js.native
+  def exportToFLV(fileURI: String): Boolean
   
-  var fileLastModifiedDate: String = js.native
+  var fileLastModifiedDate: String
   
-  var sourceFileExists: Boolean = js.native
+  var sourceFileExists: Boolean
   
-  var sourceFileIsCurrent: Boolean = js.native
+  var sourceFileIsCurrent: Boolean
   
-  var sourceFilePath: String = js.native
+  var sourceFilePath: String
   
-  var videoType: String = js.native
+  var videoType: String
 }
 object FlashVideoItem {
   

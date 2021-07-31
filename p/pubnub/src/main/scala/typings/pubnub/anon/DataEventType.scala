@@ -6,29 +6,27 @@ import typings.pubnub.pubnubStrings.set
 import typings.pubnub.pubnubStrings.uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataEventType[UUIDCustom /* <: ObjectCustom */] extends StObject {
   
-  var data: UUIDMetadataObject[UUIDCustom] = js.native
+  var data: UUIDMetadataObject[UUIDCustom]
   
-  var event: set = js.native
+  var event: set
   
-  var `type`: uuid = js.native
+  var `type`: uuid
 }
 object DataEventType {
   
   @scala.inline
-  def apply[UUIDCustom /* <: ObjectCustom */](data: UUIDMetadataObject[UUIDCustom], event: set, `type`: uuid): DataEventType[UUIDCustom] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply[UUIDCustom /* <: ObjectCustom */](data: UUIDMetadataObject[UUIDCustom]): DataEventType[UUIDCustom] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "set")
+    __obj.updateDynamic("type")("uuid")
     __obj.asInstanceOf[DataEventType[UUIDCustom]]
   }
   
   @scala.inline
-  implicit class DataEventTypeMutableBuilder[Self <: DataEventType[_], UUIDCustom /* <: ObjectCustom */] (val x: Self with DataEventType[UUIDCustom]) extends AnyVal {
+  implicit class DataEventTypeMutableBuilder[Self <: DataEventType[?], UUIDCustom /* <: ObjectCustom */] (val x: Self & DataEventType[UUIDCustom]) extends AnyVal {
     
     @scala.inline
     def setData(value: UUIDMetadataObject[UUIDCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

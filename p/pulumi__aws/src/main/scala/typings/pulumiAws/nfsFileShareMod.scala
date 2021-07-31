@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nfsFileShareMod {
@@ -126,6 +125,10 @@ object nfsFileShareMod {
   /* static members */
   object NfsFileShare {
     
+    @JSImport("@pulumi/aws/storagegateway/nfsFileShare", "NfsFileShare")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NfsFileShare resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -135,112 +138,106 @@ object nfsFileShareMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway/nfsFileShare", "NfsFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NfsFileShare = js.native
-    @JSImport("@pulumi/aws/storagegateway/nfsFileShare", "NfsFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NfsFileShare = js.native
-    @JSImport("@pulumi/aws/storagegateway/nfsFileShare", "NfsFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NfsFileShareState): NfsFileShare = js.native
-    @JSImport("@pulumi/aws/storagegateway/nfsFileShare", "NfsFileShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NfsFileShareState, opts: CustomResourceOptions): NfsFileShare = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NfsFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NfsFileShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NfsFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NfsFileShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NfsFileShareState): NfsFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NfsFileShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NfsFileShareState, opts: CustomResourceOptions): NfsFileShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NfsFileShare]
     
     /**
       * Returns true if the given object is an instance of NfsFileShare.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway/nfsFileShare", "NfsFileShare.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/nfsFileShare.NfsFileShare */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/nfsFileShare.NfsFileShare */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/nfsFileShare.NfsFileShare */ Boolean]
   }
   
-  @js.native
   trait NfsFileShareArgs extends StObject {
     
     /**
       * Refresh cache information. see Cache Attributes for more details.
       */
-    val cacheAttributes: js.UndefOr[Input[typings.pulumiAws.inputMod.storagegateway.NfsFileShareCacheAttributes]] = js.native
+    val cacheAttributes: js.UndefOr[Input[typings.pulumiAws.inputMod.storagegateway.NfsFileShareCacheAttributes]] = js.undefined
     
     /**
       * The list of clients that are allowed to access the file gateway. The list must contain either valid IP addresses or valid CIDR blocks. Set to `["0.0.0.0/0"]` to not limit access. Minimum 1 item. Maximum 100 items.
       */
-    val clientLists: Input[js.Array[Input[String]]] = js.native
+    val clientLists: Input[js.Array[Input[String]]]
     
     /**
       * The default storage class for objects put into an Amazon S3 bucket by the file gateway. Defaults to `S3_STANDARD`. Valid values: `S3_STANDARD`, `S3_STANDARD_IA`, `S3_ONEZONE_IA`.
       */
-    val defaultStorageClass: js.UndefOr[Input[String]] = js.native
+    val defaultStorageClass: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the file share. Must be set if an S3 prefix name is set in `locationArn`.
       */
-    val fileShareName: js.UndefOr[Input[String]] = js.native
+    val fileShareName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the file gateway.
       */
-    val gatewayArn: Input[String] = js.native
+    val gatewayArn: Input[String]
     
     /**
       * Boolean value that enables guessing of the MIME type for uploaded objects based on file extensions. Defaults to `true`.
       */
-    val guessMimeTypeEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val guessMimeTypeEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean value if `true` to use Amazon S3 server side encryption with your own AWS KMS key, or `false` to use a key managed by Amazon S3. Defaults to `false`.
       */
-    val kmsEncrypted: js.UndefOr[Input[Boolean]] = js.native
+    val kmsEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) for KMS key used for Amazon S3 server side encryption. This value can only be set when `kmsEncrypted` is true.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the backed storage used for storing file data.
       */
-    val locationArn: Input[String] = js.native
+    val locationArn: Input[String]
     
     /**
       * Nested argument with file share default values. More information below. see NFS File Share Defaults for more details.
       */
     val nfsFileShareDefaults: js.UndefOr[
         Input[typings.pulumiAws.inputMod.storagegateway.NfsFileShareNfsFileShareDefaults]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Access Control List permission for S3 bucket objects. Defaults to `private`.
       */
-    val objectAcl: js.UndefOr[Input[String]] = js.native
+    val objectAcl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean to indicate write status of file share. File share does not accept writes if `true`. Defaults to `false`.
       */
-    val readOnly: js.UndefOr[Input[Boolean]] = js.native
+    val readOnly: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean who pays the cost of the request and the data download from the Amazon S3 bucket. Set this value to `true` if you want the requester to pay instead of the bucket owner. Defaults to `false`.
       */
-    val requesterPays: js.UndefOr[Input[Boolean]] = js.native
+    val requesterPays: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of the AWS Identity and Access Management (IAM) role that a file gateway assumes when it accesses the underlying storage.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
     
     /**
       * Maps a user to anonymous user. Defaults to `RootSquash`. Valid values: `RootSquash` (only root is mapped to anonymous user), `NoSquash` (no one is mapped to anonymous user), `AllSquash` (everyone is mapped to anonymous user)
       */
-    val squash: js.UndefOr[Input[String]] = js.native
+    val squash: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object NfsFileShareArgs {
     
@@ -347,105 +344,104 @@ object nfsFileShareMod {
     }
   }
   
-  @js.native
   trait NfsFileShareState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the NFS File Share.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Refresh cache information. see Cache Attributes for more details.
       */
-    val cacheAttributes: js.UndefOr[Input[typings.pulumiAws.inputMod.storagegateway.NfsFileShareCacheAttributes]] = js.native
+    val cacheAttributes: js.UndefOr[Input[typings.pulumiAws.inputMod.storagegateway.NfsFileShareCacheAttributes]] = js.undefined
     
     /**
       * The list of clients that are allowed to access the file gateway. The list must contain either valid IP addresses or valid CIDR blocks. Set to `["0.0.0.0/0"]` to not limit access. Minimum 1 item. Maximum 100 items.
       */
-    val clientLists: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val clientLists: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The default storage class for objects put into an Amazon S3 bucket by the file gateway. Defaults to `S3_STANDARD`. Valid values: `S3_STANDARD`, `S3_STANDARD_IA`, `S3_ONEZONE_IA`.
       */
-    val defaultStorageClass: js.UndefOr[Input[String]] = js.native
+    val defaultStorageClass: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the file share. Must be set if an S3 prefix name is set in `locationArn`.
       */
-    val fileShareName: js.UndefOr[Input[String]] = js.native
+    val fileShareName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the NFS File Share.
       */
-    val fileshareId: js.UndefOr[Input[String]] = js.native
+    val fileshareId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the file gateway.
       */
-    val gatewayArn: js.UndefOr[Input[String]] = js.native
+    val gatewayArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean value that enables guessing of the MIME type for uploaded objects based on file extensions. Defaults to `true`.
       */
-    val guessMimeTypeEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val guessMimeTypeEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean value if `true` to use Amazon S3 server side encryption with your own AWS KMS key, or `false` to use a key managed by Amazon S3. Defaults to `false`.
       */
-    val kmsEncrypted: js.UndefOr[Input[Boolean]] = js.native
+    val kmsEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) for KMS key used for Amazon S3 server side encryption. This value can only be set when `kmsEncrypted` is true.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the backed storage used for storing file data.
       */
-    val locationArn: js.UndefOr[Input[String]] = js.native
+    val locationArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument with file share default values. More information below. see NFS File Share Defaults for more details.
       */
     val nfsFileShareDefaults: js.UndefOr[
         Input[typings.pulumiAws.inputMod.storagegateway.NfsFileShareNfsFileShareDefaults]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Access Control List permission for S3 bucket objects. Defaults to `private`.
       */
-    val objectAcl: js.UndefOr[Input[String]] = js.native
+    val objectAcl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * File share path used by the NFS client to identify the mount point.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean to indicate write status of file share. File share does not accept writes if `true`. Defaults to `false`.
       */
-    val readOnly: js.UndefOr[Input[Boolean]] = js.native
+    val readOnly: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean who pays the cost of the request and the data download from the Amazon S3 bucket. Set this value to `true` if you want the requester to pay instead of the bucket owner. Defaults to `false`.
       */
-    val requesterPays: js.UndefOr[Input[Boolean]] = js.native
+    val requesterPays: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of the AWS Identity and Access Management (IAM) role that a file gateway assumes when it accesses the underlying storage.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Maps a user to anonymous user. Defaults to `RootSquash`. Valid values: `RootSquash` (only root is mapped to anonymous user), `NoSquash` (no one is mapped to anonymous user), `AllSquash` (everyone is mapped to anonymous user)
       */
-    val squash: js.UndefOr[Input[String]] = js.native
+    val squash: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object NfsFileShareState {
     

@@ -2,21 +2,19 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Body extends StObject {
   
   /**
     * Media body contents
     */
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Media mime-type
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
 }
 object Body {
   

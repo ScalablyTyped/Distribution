@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginMinifyStyles extends PluginConfig {
+trait PluginMinifyStyles
+  extends StObject
+     with PluginConfig {
   
-  var minifyStyles: Boolean | js.Object = js.native
+  var minifyStyles: Boolean | js.Object
 }
 object PluginMinifyStyles {
   

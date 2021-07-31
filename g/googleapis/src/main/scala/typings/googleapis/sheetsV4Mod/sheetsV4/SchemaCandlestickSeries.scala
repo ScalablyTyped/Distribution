@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The series of a CandlestickData.
   */
-@js.native
 trait SchemaCandlestickSeries extends StObject {
   
   /**
     * The data of the CandlestickSeries.
     */
-  var data: js.UndefOr[SchemaChartData] = js.native
+  var data: js.UndefOr[SchemaChartData] = js.undefined
 }
 object SchemaCandlestickSeries {
   

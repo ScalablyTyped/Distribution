@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTargetedSitesRequest extends StObject {
   
   /** A list of site URLs to stop targeting in the pretargeting configuration. These values will be removed from the list of targeted URLs in PretargetingConfig.webTargeting.values. */
-  var sites: js.UndefOr[js.Array[String]] = js.native
+  var sites: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RemoveTargetedSitesRequest {
   

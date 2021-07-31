@@ -10,9 +10,9 @@ Settings registry for Jupyterlab
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/settingregistry |
 | Keywords           | - |
-| # releases         | 60 |
-| # dependents       | 75 |
-| # downloads        | 847176 |
+| # releases         | 75 |
+| # dependents       | 90 |
+| # downloads        | 1262334 |
 | # stars            | 0 |
 
 ## Links

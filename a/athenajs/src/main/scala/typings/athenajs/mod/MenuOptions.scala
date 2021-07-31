@@ -2,17 +2,15 @@ package typings.athenajs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuOptions extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var menuItems: js.Array[MenuItem] = js.native
+  var menuItems: js.Array[MenuItem]
   
-  var title: String = js.native
+  var title: String
 }
 object MenuOptions {
   

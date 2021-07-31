@@ -2,31 +2,29 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRealtimeLogConfigRequest extends StObject {
   
   /**
     * Contains information about the Amazon Kinesis data stream where you are sending real-time log data.
     */
-  var EndPoints: EndPointList = js.native
+  var EndPoints: EndPointList
   
   /**
     * A list of fields to include in each real-time log record. For more information about fields, see Real-time log configuration fields in the Amazon CloudFront Developer Guide.
     */
-  var Fields: FieldList = js.native
+  var Fields: FieldList
   
   /**
     * A unique name to identify this real-time log configuration.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * The sampling rate for this real-time log configuration. The sampling rate determines the percentage of viewer requests that are represented in the real-time log data. You must provide an integer between 1 and 100, inclusive.
     */
-  var SamplingRate: long = js.native
+  var SamplingRate: long
 }
 object CreateRealtimeLogConfigRequest {
   

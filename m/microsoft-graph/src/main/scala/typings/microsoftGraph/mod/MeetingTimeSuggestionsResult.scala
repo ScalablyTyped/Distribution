@@ -2,10 +2,8 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeetingTimeSuggestionsResult extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait MeetingTimeSuggestionsResult extends StObject {
     * attendeesUnavailableOrUnknown, locationsUnavailable, organizerUnavailable, or unknown. This property is an empty string
     * if the meetingTimeSuggestions property does include any meeting suggestions.
     */
-  var emptySuggestionsReason: js.UndefOr[NullableOption[String]] = js.native
+  var emptySuggestionsReason: js.UndefOr[NullableOption[String]] = js.undefined
   
   // An array of meeting suggestions.
-  var meetingTimeSuggestions: js.UndefOr[NullableOption[js.Array[MeetingTimeSuggestion]]] = js.native
+  var meetingTimeSuggestions: js.UndefOr[NullableOption[js.Array[MeetingTimeSuggestion]]] = js.undefined
 }
 object MeetingTimeSuggestionsResult {
   

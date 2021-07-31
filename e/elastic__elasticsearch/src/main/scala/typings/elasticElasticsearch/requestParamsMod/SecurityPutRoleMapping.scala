@@ -3,17 +3,17 @@ package typings.elasticElasticsearch.requestParamsMod
 import typings.elasticElasticsearch.elasticElasticsearchStrings.wait_for
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecurityPutRoleMapping[T] extends Generic {
+trait SecurityPutRoleMapping[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var name: String = js.native
+  var name: String
   
-  var refresh: js.UndefOr[wait_for | Boolean] = js.native
+  var refresh: js.UndefOr[wait_for | Boolean] = js.undefined
 }
 object SecurityPutRoleMapping {
   
@@ -24,7 +24,7 @@ object SecurityPutRoleMapping {
   }
   
   @scala.inline
-  implicit class SecurityPutRoleMappingMutableBuilder[Self <: SecurityPutRoleMapping[_], T] (val x: Self with SecurityPutRoleMapping[T]) extends AnyVal {
+  implicit class SecurityPutRoleMappingMutableBuilder[Self <: SecurityPutRoleMapping[?], T] (val x: Self & SecurityPutRoleMapping[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -6,91 +6,89 @@ import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Groupbuy
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.PoiPhoto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Adcode extends StObject {
   
   /**
     * 所在区域编码
     */
-  var adcode: String = js.native
+  var adcode: String
   
   /**
     * 所在行政区名称
     */
-  var adname: String = js.native
+  var adname: String
   
   /**
     * 所在城市编码
     */
-  var citycode: String = js.native
+  var citycode: String
   
   /**
     * 所在城市名称
     */
-  var cityname: String = js.native
+  var cityname: String
   
   /**
     * @deprecated 是否有优惠信息
     */
-  var discount: Boolean = js.native
+  var discount: Boolean
   
   /**
     * @deprecated 优惠信息
     */
-  var discounts: js.UndefOr[js.Array[Discount]] = js.native
+  var discounts: js.UndefOr[js.Array[Discount]] = js.undefined
   
   /**
     * 电子邮箱
     */
-  var email: String = js.native
+  var email: String
   
   /**
     * 入口经纬度
     */
-  var entr_location: LngLat | Null = js.native
+  var entr_location: LngLat | Null
   
   /**
     * 出口经纬度
     */
-  var exit_location: LngLat | Null = js.native
+  var exit_location: LngLat | Null
   
   /**
     * @deprecated 是否有团购信息
     */
-  var groupbuy: Boolean = js.native
+  var groupbuy: Boolean
   
   /**
     * @deprecated 团购信息
     */
-  var groupbuys: js.UndefOr[js.Array[Groupbuy]] = js.native
+  var groupbuys: js.UndefOr[js.Array[Groupbuy]] = js.undefined
   
   /**
     * 所在省份编码
     */
-  var pcode: String = js.native
+  var pcode: String
   
   /**
     * 照片
     */
-  var photos: js.Array[PoiPhoto] = js.native
+  var photos: js.Array[PoiPhoto]
   
   /**
     * 所在省份
     */
-  var pname: String = js.native
+  var pname: String
   
   /**
     * 邮编
     */
-  var postcode: String = js.native
+  var postcode: String
   
   /**
     * 网址
     */
-  var website: String = js.native
+  var website: String
 }
 object Adcode {
   
@@ -109,7 +107,7 @@ object Adcode {
     postcode: String,
     website: String
   ): Adcode = {
-    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], adname = adname.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], cityname = cityname.asInstanceOf[js.Any], discount = discount.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], groupbuy = groupbuy.asInstanceOf[js.Any], pcode = pcode.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], pname = pname.asInstanceOf[js.Any], postcode = postcode.asInstanceOf[js.Any], website = website.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], adname = adname.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], cityname = cityname.asInstanceOf[js.Any], discount = discount.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], groupbuy = groupbuy.asInstanceOf[js.Any], pcode = pcode.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], pname = pname.asInstanceOf[js.Any], postcode = postcode.asInstanceOf[js.Any], website = website.asInstanceOf[js.Any], entr_location = null, exit_location = null)
     __obj.asInstanceOf[Adcode]
   }
   

@@ -2,16 +2,14 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildTrigger extends StObject {
   
   /**
     * The type of the trigger.
     */
-  var triggerType: DefinitionTriggerType = js.native
+  var triggerType: DefinitionTriggerType
 }
 object BuildTrigger {
   

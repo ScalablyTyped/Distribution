@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObjViewStyles extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait PlusNativeObjViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * View控件垂直向上的偏移量
@@ -34,7 +32,7 @@ trait PlusNativeObjViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var bottom: js.UndefOr[String] = js.native
+  var bottom: js.UndefOr[String] = js.undefined
   
   /**
     * View控件的停靠方式
@@ -48,7 +46,7 @@ trait PlusNativeObjViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var dock: js.UndefOr[String] = js.native
+  var dock: js.UndefOr[String] = js.undefined
   
   /**
     * 区域的高度
@@ -60,7 +58,7 @@ trait PlusNativeObjViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * 区域左上角的水平偏移量
@@ -72,7 +70,7 @@ trait PlusNativeObjViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var left: js.UndefOr[String] = js.native
+  var left: js.UndefOr[String] = js.undefined
   
   /**
     * View控件的不透明度
@@ -80,7 +78,7 @@ trait PlusNativeObjViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * View控件的排版方式
@@ -93,7 +91,7 @@ trait PlusNativeObjViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * View控件的状态栏样式
@@ -101,7 +99,7 @@ trait PlusNativeObjViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var statusbar: js.UndefOr[PlusNativeObjViewStatusbarStyles] = js.native
+  var statusbar: js.UndefOr[PlusNativeObjViewStatusbarStyles] = js.undefined
   
   /**
     * View控件左上角的垂直偏移量
@@ -109,7 +107,7 @@ trait PlusNativeObjViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var top: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.undefined
   
   /**
     * 区域的宽度
@@ -117,7 +115,7 @@ trait PlusNativeObjViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object PlusNativeObjViewStyles {
   

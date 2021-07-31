@@ -10,9 +10,9 @@ A library for filtering JavaScript objects based on a json SQL-like language, js
 | ------------------ | :-------------: |
 | Full name          | searchjs |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 3 |
 | # dependents       | 7 |
-| # downloads        | 113257 |
+| # downloads        | 158969 |
 | # stars            | 0 |
 
 ## Links

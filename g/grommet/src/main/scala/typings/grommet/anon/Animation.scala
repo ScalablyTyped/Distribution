@@ -2,51 +2,49 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animation extends StObject {
   
-  var active: js.UndefOr[`8`] = js.native
+  var active: js.UndefOr[`8`] = js.undefined
   
-  var animation: js.UndefOr[Jiggle] = js.native
+  var animation: js.UndefOr[Jiggle] = js.undefined
   
-  var borderSize: js.UndefOr[Medium] = js.native
+  var borderSize: js.UndefOr[Medium] = js.undefined
   
-  var breakpoints: js.UndefOr[Dictx] = js.native
+  var breakpoints: js.UndefOr[Dictx] = js.undefined
   
-  var colors: js.UndefOr[typings.grommet.baseMod.Colors] = js.native
+  var colors: js.UndefOr[typings.grommet.baseMod.Colors] = js.undefined
   
-  var control: js.UndefOr[BorderDisabled] = js.native
+  var control: js.UndefOr[BorderDisabled] = js.undefined
   
-  var debounceDelay: js.UndefOr[Double] = js.native
+  var debounceDelay: js.UndefOr[Double] = js.undefined
   
-  var deviceBreakpoints: js.UndefOr[Computer] = js.native
+  var deviceBreakpoints: js.UndefOr[Computer] = js.undefined
   
-  var drop: js.UndefOr[ShadowSize] = js.native
+  var drop: js.UndefOr[ShadowSize] = js.undefined
   
-  var edgeSize: js.UndefOr[Hair] = js.native
+  var edgeSize: js.UndefOr[Hair] = js.undefined
   
-  var elevation: js.UndefOr[DarkLight] = js.native
+  var elevation: js.UndefOr[DarkLight] = js.undefined
   
-  var focus: js.UndefOr[Outline] = js.native
+  var focus: js.UndefOr[Outline] = js.undefined
   
-  var font: js.UndefOr[Face] = js.native
+  var font: js.UndefOr[Face] = js.undefined
   
-  var graph: js.UndefOr[`9`] = js.native
+  var graph: js.UndefOr[`9`] = js.undefined
   
-  var hover: js.UndefOr[BackgroundColor] = js.native
+  var hover: js.UndefOr[BackgroundColor] = js.undefined
   
-  var input: js.UndefOr[Padding] = js.native
+  var input: js.UndefOr[Padding] = js.undefined
   
-  var opacity: js.UndefOr[Strong] = js.native
+  var opacity: js.UndefOr[Strong] = js.undefined
   
-  var selected: js.UndefOr[BackgroundColor] = js.native
+  var selected: js.UndefOr[BackgroundColor] = js.undefined
   
-  var size: js.UndefOr[Full] = js.native
+  var size: js.UndefOr[Full] = js.undefined
   
-  var spacing: js.UndefOr[String] = js.native
+  var spacing: js.UndefOr[String] = js.undefined
 }
 object Animation {
   

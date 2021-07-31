@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRouteOutput extends StObject {
   
   /**
     * The full description of your route.
     */
-  var route: RouteData = js.native
+  var route: RouteData
 }
 object DescribeRouteOutput {
   

@@ -2,17 +2,15 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Kount extends StObject {
   
-  var client: typings.braintreeWeb.clientMod.Client = js.native
+  var client: typings.braintreeWeb.clientMod.Client
   
-  var kount: js.UndefOr[Boolean] = js.native
+  var kount: js.UndefOr[Boolean] = js.undefined
   
-  var paypal: js.UndefOr[Boolean] = js.native
+  var paypal: js.UndefOr[Boolean] = js.undefined
 }
 object Kount {
   

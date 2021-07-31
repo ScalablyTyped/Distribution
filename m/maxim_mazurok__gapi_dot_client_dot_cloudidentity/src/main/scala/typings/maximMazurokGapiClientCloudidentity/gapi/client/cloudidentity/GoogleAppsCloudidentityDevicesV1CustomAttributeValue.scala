@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsCloudidentityDevicesV1CustomAttributeValue extends StObject {
   
   /** Represents a boolean value. */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /** Represents a double value. */
-  var numberValue: js.UndefOr[Double] = js.native
+  var numberValue: js.UndefOr[Double] = js.undefined
   
   /** Represents a string value. */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object GoogleAppsCloudidentityDevicesV1CustomAttributeValue {
   

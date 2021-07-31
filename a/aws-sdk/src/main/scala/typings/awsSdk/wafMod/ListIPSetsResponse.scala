@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIPSetsResponse extends StObject {
   
   /**
     * An array of IPSetSummary objects.
     */
-  var IPSets: js.UndefOr[IPSetSummaries] = js.native
+  var IPSets: js.UndefOr[IPSetSummaries] = js.undefined
   
   /**
     * To list more IPSet objects, submit another ListIPSets request, and in the next request use the NextMarker response value as the NextMarker value.
     */
-  var NextMarker: js.UndefOr[typings.awsSdk.wafMod.NextMarker] = js.native
+  var NextMarker: js.UndefOr[typings.awsSdk.wafMod.NextMarker] = js.undefined
 }
 object ListIPSetsResponse {
   

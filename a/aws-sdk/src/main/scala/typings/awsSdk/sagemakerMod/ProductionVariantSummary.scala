@@ -2,41 +2,39 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductionVariantSummary extends StObject {
   
   /**
     * The number of instances associated with the variant.
     */
-  var CurrentInstanceCount: js.UndefOr[TaskCount] = js.native
+  var CurrentInstanceCount: js.UndefOr[TaskCount] = js.undefined
   
   /**
     * The weight associated with the variant.
     */
-  var CurrentWeight: js.UndefOr[VariantWeight] = js.native
+  var CurrentWeight: js.UndefOr[VariantWeight] = js.undefined
   
   /**
     * An array of DeployedImage objects that specify the Amazon EC2 Container Registry paths of the inference images deployed on instances of this ProductionVariant.
     */
-  var DeployedImages: js.UndefOr[typings.awsSdk.sagemakerMod.DeployedImages] = js.native
+  var DeployedImages: js.UndefOr[typings.awsSdk.sagemakerMod.DeployedImages] = js.undefined
   
   /**
     * The number of instances requested in the UpdateEndpointWeightsAndCapacities request. 
     */
-  var DesiredInstanceCount: js.UndefOr[TaskCount] = js.native
+  var DesiredInstanceCount: js.UndefOr[TaskCount] = js.undefined
   
   /**
     * The requested weight, as specified in the UpdateEndpointWeightsAndCapacities request. 
     */
-  var DesiredWeight: js.UndefOr[VariantWeight] = js.native
+  var DesiredWeight: js.UndefOr[VariantWeight] = js.undefined
   
   /**
     * The name of the variant.
     */
-  var VariantName: typings.awsSdk.sagemakerMod.VariantName = js.native
+  var VariantName: typings.awsSdk.sagemakerMod.VariantName
 }
 object ProductionVariantSummary {
   

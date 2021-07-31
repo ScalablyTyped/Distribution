@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTarget extends StObject {
   
   /**
     * The cluster version for the new maintenance track.
     */
-  var DatabaseVersion: js.UndefOr[String] = js.native
+  var DatabaseVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the new maintenance track.
     */
-  var MaintenanceTrackName: js.UndefOr[String] = js.native
+  var MaintenanceTrackName: js.UndefOr[String] = js.undefined
   
   /**
     * A list of operations supported by the maintenance track.
     */
-  var SupportedOperations: js.UndefOr[SupportedOperationList] = js.native
+  var SupportedOperations: js.UndefOr[SupportedOperationList] = js.undefined
 }
 object UpdateTarget {
   

@@ -4,19 +4,17 @@ import typings.asn1js.mod.LocalBaseBlock
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait IsIndefiniteForm extends StObject {
     
-    var isIndefiniteForm: js.UndefOr[Boolean] = js.native
+    var isIndefiniteForm: js.UndefOr[Boolean] = js.undefined
     
-    var length: Double = js.native
+    var length: Double
     
-    var longFormUsed: js.UndefOr[Boolean] = js.native
+    var longFormUsed: js.UndefOr[Boolean] = js.undefined
   }
   object IsIndefiniteForm {
     
@@ -47,26 +45,25 @@ object anon {
   }
   
   /* Inlined asn1js.asn1js.LocalHexBlockParams & {  isConstructed :boolean | undefined,   tagClass :number | undefined,   tagNumber :number | undefined} */
-  @js.native
   trait LocalHexBlockParamsisCons extends StObject {
     
-    var blockLength: js.UndefOr[Double] = js.native
+    var blockLength: js.UndefOr[Double] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var isConstructed: js.UndefOr[Boolean] = js.native
+    var isConstructed: js.UndefOr[Boolean] = js.undefined
     
-    var isHexOnly: js.UndefOr[Boolean] = js.native
+    var isHexOnly: js.UndefOr[Boolean] = js.undefined
     
-    var tagClass: js.UndefOr[Double] = js.native
+    var tagClass: js.UndefOr[Double] = js.undefined
     
-    var tagNumber: js.UndefOr[Double] = js.native
+    var tagNumber: js.UndefOr[Double] = js.undefined
     
-    var valueBeforeDecode: js.UndefOr[ArrayBuffer] = js.native
+    var valueBeforeDecode: js.UndefOr[ArrayBuffer] = js.undefined
     
-    var valueHex: js.UndefOr[ArrayBuffer] = js.native
+    var valueHex: js.UndefOr[ArrayBuffer] = js.undefined
     
-    var warnings: js.UndefOr[js.Array[String]] = js.native
+    var warnings: js.UndefOr[js.Array[String]] = js.undefined
   }
   object LocalHexBlockParamsisCons {
     
@@ -138,12 +135,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Offset extends StObject {
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var result: LocalBaseBlock = js.native
+    var result: LocalBaseBlock
   }
   object Offset {
     
@@ -164,12 +160,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var result: js.UndefOr[js.Any] = js.native
+    var result: js.UndefOr[js.Any] = js.undefined
     
-    var verified: Boolean = js.native
+    var verified: Boolean
   }
   object Result {
     

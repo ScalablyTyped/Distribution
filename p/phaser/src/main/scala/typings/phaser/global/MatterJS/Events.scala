@@ -24,14 +24,18 @@ import typings.phaser.phaserStrings.sleepStart
 import typings.phaser.phaserStrings.tick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MatterJS.Events")
 @js.native
 class Events ()
-  extends typings.phaser.MatterJS.Events
+  extends StObject
+     with typings.phaser.MatterJS.Events
 object Events {
+  
+  @JSGlobal("MatterJS.Events")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Removes the given event callback. If no callback, clears all callbacks in eventNames. If no eventNames, clears all events.
@@ -41,14 +45,13 @@ object Events {
     * @param callback
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.off")
-  @js.native
-  def off(obj: js.Any, eventName: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def off(obj: js.Any, eventName: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(obj.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
-  def on(obj: js.Any, name: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def on(obj: js.Any, name: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired when a call to `Composite.add` is made, after objects have been added.
     *
@@ -59,13 +62,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_afterAdd(
     obj: typings.phaser.MatterJS.Engine,
     name: afterAdd,
     callback: js.Function1[/* e */ IEventComposite[CompositeType], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired when a call to `Composite.remove` is made, after objects have been removed.
     *
@@ -76,13 +79,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_afterRemove(
     obj: typings.phaser.MatterJS.Engine,
     name: afterRemove,
     callback: js.Function1[/* e */ IEventComposite[CompositeType], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired after rendering
     *
@@ -93,13 +96,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_afterRender(
     obj: typings.phaser.MatterJS.Engine,
     name: afterRender,
     callback: js.Function1[/* e */ IEventTimestamped[typings.phaser.MatterJS.Runner], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired at the end of a tick, after engine update and after rendering
     *
@@ -110,13 +113,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_afterTick(
     obj: typings.phaser.MatterJS.Engine,
     name: afterTick,
     callback: js.Function1[/* e */ IEventTimestamped[typings.phaser.MatterJS.Runner], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired after engine update and all collision events
     *
@@ -127,13 +130,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_afterUpdate(
     obj: typings.phaser.MatterJS.Engine,
     name: afterUpdate,
     callback: js.Function1[/* e */ IEventTimestamped[typings.phaser.MatterJS.Engine], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired when a call to `Composite.add` is made, before objects have been added.
     *
@@ -144,13 +147,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_beforeAdd(
     obj: typings.phaser.MatterJS.Engine,
     name: beforeAdd,
     callback: js.Function1[/* e */ IEventComposite[CompositeType], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired when a call to `Composite.remove` is made, before objects have been removed.
     *
@@ -161,13 +164,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_beforeRemove(
     obj: typings.phaser.MatterJS.Engine,
     name: beforeRemove,
     callback: js.Function1[/* e */ IEventComposite[CompositeType], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired before rendering
     *
@@ -178,13 +181,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_beforeRender(
     obj: typings.phaser.MatterJS.Engine,
     name: beforeRender,
     callback: js.Function1[/* e */ IEventTimestamped[typings.phaser.MatterJS.Runner], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired at the start of a tick, before any updates to the engine or timing
     *
@@ -195,13 +198,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_beforeTick(
     obj: typings.phaser.MatterJS.Engine,
     name: beforeTick,
     callback: js.Function1[/* e */ IEventTimestamped[typings.phaser.MatterJS.Runner], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired just before an update
     *
@@ -212,13 +215,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_beforeUpdate(
     obj: typings.phaser.MatterJS.Engine,
     name: beforeUpdate,
     callback: js.Function1[/* e */ IEventTimestamped[typings.phaser.MatterJS.Engine], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired after engine update, provides a list of all pairs that are colliding in the current tick (if any)
     *
@@ -230,13 +233,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_collisionActive(
     obj: typings.phaser.MatterJS.Engine,
     name: collisionActive,
     callback: js.Function1[/* e */ IEventCollision[typings.phaser.MatterJS.Engine], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired after engine update, provides a list of all pairs that have ended collision in the current tick (if any)
     *
@@ -248,13 +251,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_collisionEnd(
     obj: typings.phaser.MatterJS.Engine,
     name: collisionEnd,
     callback: js.Function1[/* e */ IEventCollision[typings.phaser.MatterJS.Engine], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired after engine update, provides a list of all pairs that have started to collide in the current tick (if any)
     *
@@ -266,13 +269,13 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_collisionStart(
     obj: typings.phaser.MatterJS.Engine,
     name: collisionStart,
     callback: js.Function1[/* e */ IEventCollision[typings.phaser.MatterJS.Engine], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired when a body ends sleeping (where `this` is the body).
     *
@@ -283,9 +286,9 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
-  def on_sleepEnd(obj: BodyType, name: sleepEnd, callback: js.Function1[/* e */ IEvent[BodyType], Unit]): Unit = js.native
+  @scala.inline
+  def on_sleepEnd(obj: BodyType, name: sleepEnd, callback: js.Function1[/* e */ IEvent[BodyType], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired when a body starts sleeping (where `this` is the body).
     *
@@ -296,9 +299,9 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
-  def on_sleepStart(obj: BodyType, name: sleepStart, callback: js.Function1[/* e */ IEvent[BodyType], Unit]): Unit = js.native
+  @scala.inline
+  def on_sleepStart(obj: BodyType, name: sleepStart, callback: js.Function1[/* e */ IEvent[BodyType], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Fired after engine timing updated, but just before update
     *
@@ -309,13 +312,12 @@ object Events {
     * @param {} event.name The name of the event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.on")
-  @js.native
+  @scala.inline
   def on_tick(
     obj: typings.phaser.MatterJS.Engine,
     name: tick,
     callback: js.Function1[/* e */ IEventTimestamped[typings.phaser.MatterJS.Runner], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fires all the callbacks subscribed to the given object's eventName, in the order they subscribed, if any.
@@ -325,10 +327,8 @@ object Events {
     * @param event
     */
   /* static member */
-  @JSGlobal("MatterJS.Events.trigger")
-  @js.native
-  def trigger(`object`: js.Any, eventNames: String): Unit = js.native
-  @JSGlobal("MatterJS.Events.trigger")
-  @js.native
-  def trigger(`object`: js.Any, eventNames: String, event: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def trigger(`object`: js.Any, eventNames: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(`object`.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trigger(`object`: js.Any, eventNames: String, event: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(`object`.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,20 +2,18 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait HeaderFooterGroupLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait HeaderFooterGroupLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var defaultForAllPages: js.UndefOr[HeaderFooterLoadOptions] = js.native
+  var defaultForAllPages: js.UndefOr[HeaderFooterLoadOptions] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait HeaderFooterGroupLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var evenPages: js.UndefOr[HeaderFooterLoadOptions] = js.native
+  var evenPages: js.UndefOr[HeaderFooterLoadOptions] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait HeaderFooterGroupLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var firstPage: js.UndefOr[HeaderFooterLoadOptions] = js.native
+  var firstPage: js.UndefOr[HeaderFooterLoadOptions] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait HeaderFooterGroupLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var oddPages: js.UndefOr[HeaderFooterLoadOptions] = js.native
+  var oddPages: js.UndefOr[HeaderFooterLoadOptions] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait HeaderFooterGroupLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var state: js.UndefOr[Boolean] = js.native
+  var state: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait HeaderFooterGroupLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var useSheetMargins: js.UndefOr[Boolean] = js.native
+  var useSheetMargins: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait HeaderFooterGroupLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var useSheetScale: js.UndefOr[Boolean] = js.native
+  var useSheetScale: js.UndefOr[Boolean] = js.undefined
 }
 object HeaderFooterGroupLoadOptions {
   

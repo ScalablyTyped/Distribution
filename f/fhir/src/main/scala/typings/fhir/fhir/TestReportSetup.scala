@@ -2,19 +2,19 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The results of the series of required setup operations before the tests were executed
   */
-@js.native
-trait TestReportSetup extends BackboneElement {
+trait TestReportSetup
+  extends StObject
+     with BackboneElement {
   
   /**
     * A setup operation or assert that was executed
     */
-  var action: js.Array[TestReportSetupAction] = js.native
+  var action: js.Array[TestReportSetupAction]
 }
 object TestReportSetup {
   

@@ -3,28 +3,26 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a command.
   * @see XCommandProcessor
   */
-@js.native
 trait CommandInfo extends StObject {
   
   /** contains the type of the command's argument. */
-  var ArgType: `type` = js.native
+  var ArgType: `type`
   
   /**
     * contains an implementation specific handle for the command.
     *
     * It may be `-1` if the implementation has no handle.
     */
-  var Handle: Double = js.native
+  var Handle: Double
   
   /** contains the name of a command. */
-  var Name: String = js.native
+  var Name: String
 }
 object CommandInfo {
   

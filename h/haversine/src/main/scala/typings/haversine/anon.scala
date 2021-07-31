@@ -7,21 +7,19 @@ import typings.haversine.haversineStrings.`[lonCommalat]`
 import typings.haversine.haversineStrings.geojson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var format: LeftcurlybracketlatCommalonRightcurlybracket = js.native
+    var format: LeftcurlybracketlatCommalonRightcurlybracket
   }
   object `0` {
     
     @scala.inline
-    def apply(format: LeftcurlybracketlatCommalonRightcurlybracket): `0` = {
-      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(format = "{lat,lon}")
       __obj.asInstanceOf[`0`]
     }
     
@@ -33,16 +31,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var format: LeftcurlybracketlatCommalngRightcurlybracket = js.native
+    var format: LeftcurlybracketlatCommalngRightcurlybracket
   }
   object `1` {
     
     @scala.inline
-    def apply(format: LeftcurlybracketlatCommalngRightcurlybracket): `1` = {
-      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+    def apply(): `1` = {
+      val __obj = js.Dynamic.literal(format = "{lat,lng}")
       __obj.asInstanceOf[`1`]
     }
     
@@ -54,16 +51,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `2` extends StObject {
     
-    var format: geojson = js.native
+    var format: geojson
   }
   object `2` {
     
     @scala.inline
-    def apply(format: geojson): `2` = {
-      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+    def apply(): `2` = {
+      val __obj = js.Dynamic.literal(format = "geojson")
       __obj.asInstanceOf[`2`]
     }
     
@@ -75,10 +71,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Coordinates extends StObject {
     
-    var coordinates: js.Array[Double] = js.native
+    var coordinates: js.Array[Double]
   }
   object Coordinates {
     
@@ -99,10 +94,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Format extends StObject {
     
-    var format: `[latCommalon]` | `[lonCommalat]` = js.native
+    var format: `[latCommalon]` | `[lonCommalat]`
   }
   object Format {
     
@@ -120,10 +114,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Threshold extends StObject {
     
-    var threshold: Double = js.native
+    var threshold: Double
   }
   object Threshold {
     

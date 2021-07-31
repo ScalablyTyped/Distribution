@@ -22,13 +22,14 @@ import typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.error
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
   
   @js.native
-  trait Geolocation extends EventEmitter {
+  trait Geolocation
+    extends StObject
+       with EventEmitter {
     
     /**
       * 取消对当前位置的监控
@@ -84,63 +85,62 @@ object AMap {
       def RT: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RT = "RT".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RT]
     }
     
-    @js.native
     trait CityResult extends StObject {
       
       /**
         * 区域编码
         */
-      var adcode: String = js.native
+      var adcode: String
       
       /**
         * 范围
         */
-      var bounds: js.Array[Double] = js.native
+      var bounds: js.Array[Double]
       
       /**
         * 中心点
         */
-      var center: js.Tuple2[Double, Double] = js.native
+      var center: js.Tuple2[Double, Double]
       
       /**
         * 城市
         */
-      var city: String = js.native
+      var city: String
       
       /**
         * 城市编码
         */
-      var citycode: String = js.native
+      var citycode: String
       
       /**
         * 国家
         */
-      var country: String = js.native
+      var country: String
       
       /**
         * 状态信息
         */
-      var info: String = js.native
+      var info: String
       
       /**
         * 是否已转换成高德坐标
         */
-      var isConverted: Boolean = js.native
+      var isConverted: Boolean
       
       /**
         * 信息描述
         */
-      var message: String = js.native
+      var message: String
       
       /**
         * 省份
         */
-      var province: String = js.native
+      var province: String
       
       /**
         * 状态码
         */
-      var status: `1` = js.native
+      var status: `1`
     }
     object CityResult {
       
@@ -155,10 +155,9 @@ object AMap {
         info: String,
         isConverted: Boolean,
         message: String,
-        province: String,
-        status: `1`
+        province: String
       ): CityResult = {
-        val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], isConverted = isConverted.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], province = province.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], isConverted = isConverted.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], province = province.asInstanceOf[js.Any], status = 1)
         __obj.asInstanceOf[CityResult]
       }
       
@@ -203,29 +202,28 @@ object AMap {
       }
     }
     
-    @js.native
     trait ErrorStatus extends StObject {
       
       /**
         * 错误信息
         */
-      var info: String = js.native
+      var info: String
       
       /**
         * 造成定位失败结果的一些有用信息
         */
-      var message: String = js.native
+      var message: String
       
       /**
         * 状态码
         */
-      var status: `0` = js.native
+      var status: `0`
     }
     object ErrorStatus {
       
       @scala.inline
-      def apply(info: String, message: String, status: `0`): ErrorStatus = {
-        val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      def apply(info: String, message: String): ErrorStatus = {
+        val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = 0)
         __obj.asInstanceOf[ErrorStatus]
       }
       
@@ -243,15 +241,14 @@ object AMap {
       }
     }
     
-    @js.native
     trait EventMap extends StObject {
       
       var complete: Event_[
             typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.complete, 
             GeolocationResult
-          ] = js.native
+          ]
       
-      var error: Event_[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.error, ErrorStatus] = js.native
+      var error: Event_[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.error, ErrorStatus]
     }
     object EventMap {
       
@@ -272,43 +269,44 @@ object AMap {
       }
     }
     
-    @js.native
-    trait GeolocationResult extends ReGeocode {
+    trait GeolocationResult
+      extends StObject
+         with ReGeocode {
       
       /**
         * 精度
         */
-      var accuracy: Double | Null = js.native
+      var accuracy: Double | Null
       
       /**
         * 状态信息
         */
-      var info: String = js.native
+      var info: String
       
       /**
         * 是否已经转换成高德坐标
         */
-      var isConverted: Boolean = js.native
+      var isConverted: Boolean
       
       /**
         * 定位结果的来源
         */
-      var location_type: LocationType = js.native
+      var location_type: LocationType
       
       /**
         * 形成当前定位结果的一些信息
         */
-      var message: String = js.native
+      var message: String
       
       /**
         * 定位结果
         */
-      var position: LngLat = js.native
+      var position: LngLat
       
       /**
         * 状态码
         */
-      var status: `1` = js.native
+      var status: `1`
     }
     object GeolocationResult {
       
@@ -323,10 +321,9 @@ object AMap {
         message: String,
         pois: js.Array[ReGeocodePoi],
         position: LngLat,
-        roads: js.Array[Road],
-        status: `1`
+        roads: js.Array[Road]
       ): GeolocationResult = {
-        val __obj = js.Dynamic.literal(addressComponent = addressComponent.asInstanceOf[js.Any], crosses = crosses.asInstanceOf[js.Any], formattedAddress = formattedAddress.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], isConverted = isConverted.asInstanceOf[js.Any], location_type = location_type.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], pois = pois.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], roads = roads.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(addressComponent = addressComponent.asInstanceOf[js.Any], crosses = crosses.asInstanceOf[js.Any], formattedAddress = formattedAddress.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], isConverted = isConverted.asInstanceOf[js.Any], location_type = location_type.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], pois = pois.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], roads = roads.asInstanceOf[js.Any], status = 1, accuracy = null)
         __obj.asInstanceOf[GeolocationResult]
       }
       
@@ -377,23 +374,22 @@ object AMap {
       def sdk: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.sdk = "sdk".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.sdk]
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * 是否PC端为优先使用浏览器定位
         */
-      var GeoLocationFirst: js.UndefOr[Boolean] = js.native
+      var GeoLocationFirst: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 自定义定位按钮的内容
         */
-      var buttonDom: js.UndefOr[String | HTMLElement] = js.native
+      var buttonDom: js.UndefOr[String | HTMLElement] = js.undefined
       
       /**
         * 按钮距离停靠位置的偏移量
         */
-      var buttonOffset: js.UndefOr[Pixel] = js.native
+      var buttonOffset: js.UndefOr[Pixel] = js.undefined
       
       /**
         * 定位按钮可停靠的位置
@@ -402,40 +398,40 @@ object AMap {
         * “RT”：右上角
         * “RB”：右下角
         */
-      var buttonPosition: js.UndefOr[ButtonPosition] = js.native
+      var buttonPosition: js.UndefOr[ButtonPosition] = js.undefined
       
       /**
         * 定位点Circle的配置
         */
-      var circleOptions: js.UndefOr[typings.amapJsApi.AMap.Circle.Options[_]] = js.native
+      var circleOptions: js.UndefOr[typings.amapJsApi.AMap.Circle.Options[js.Any]] = js.undefined
       
       /**
         * 是否转换成高德坐标
         */
-      var convert: js.UndefOr[Boolean] = js.native
+      var convert: js.UndefOr[Boolean] = js.undefined
       
       // internal
-      var convertUrl: js.UndefOr[String] = js.native
+      var convertUrl: js.UndefOr[String] = js.undefined
       
       /**
         * 是否使用高精度
         */
-      var enableHighAccuracy: js.UndefOr[Boolean] = js.native
+      var enableHighAccuracy: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 是否返回详细信息
         */
-      var extensions: js.UndefOr[all | base] = js.native
+      var extensions: js.UndefOr[all | base] = js.undefined
       
       /**
         * 定位点Marker的配置
         */
-      var markerOptions: js.UndefOr[typings.amapJsApi.AMap.Marker.Options[_]] = js.native
+      var markerOptions: js.UndefOr[typings.amapJsApi.AMap.Marker.Options[js.Any]] = js.undefined
       
       /**
         * 缓存毫秒数
         */
-      var maximumAge: js.UndefOr[Double] = js.native
+      var maximumAge: js.UndefOr[Double] = js.undefined
       
       /**
         * 是否禁止使用浏览器Geolocation定位，默认值为0
@@ -444,7 +440,7 @@ object AMap {
         * 2: PC上禁止使用浏览器定位
         * 3: 所有终端禁止使用浏览器定位
         */
-      var noGeoLocation: js.UndefOr[Double] = js.native
+      var noGeoLocation: js.UndefOr[Double] = js.undefined
       
       /**
         * 是否禁止使用IP定位，默认值为0
@@ -453,44 +449,44 @@ object AMap {
         * 2: PC上禁止使用IP定位
         * 3: 所有终端禁止使用IP定位
         */
-      var noIpLocate: js.UndefOr[Double] = js.native
+      var noIpLocate: js.UndefOr[Double] = js.undefined
       
       /**
         * 定位成功后，是否把定位得到的坐标设置为地图中心点坐标
         */
-      var panToLocation: js.UndefOr[Boolean] = js.native
+      var panToLocation: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 是否显示定位按钮
         */
-      var showButton: js.UndefOr[Boolean] = js.native
+      var showButton: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 定位成功并且有精度信息时，是否用一个圆圈circle表示精度范围
         */
-      var showCircle: js.UndefOr[Boolean] = js.native
+      var showCircle: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 定位成功时是否在定位位置显示一个Marker
         */
-      var showMarker: js.UndefOr[Boolean] = js.native
+      var showMarker: js.UndefOr[Boolean] = js.undefined
       
-      var stopWhenPermissionDenied: js.UndefOr[Boolean] = js.native
+      var stopWhenPermissionDenied: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 超时毫秒数
         */
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
       
       /**
         * 是否使用安卓定位sdk用来进行定位
         */
-      var useNative: js.UndefOr[Boolean] = js.native
+      var useNative: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 定位成功且显示精度范围时，是否把地图视野调整到正好显示精度范围
         */
-      var zoomToAccuracy: js.UndefOr[Boolean] = js.native
+      var zoomToAccuracy: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -522,7 +518,7 @@ object AMap {
         def setButtonPositionUndefined: Self = StObject.set(x, "buttonPosition", js.undefined)
         
         @scala.inline
-        def setCircleOptions(value: typings.amapJsApi.AMap.Circle.Options[_]): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
+        def setCircleOptions(value: typings.amapJsApi.AMap.Circle.Options[js.Any]): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setCircleOptionsUndefined: Self = StObject.set(x, "circleOptions", js.undefined)
@@ -558,7 +554,7 @@ object AMap {
         def setGeoLocationFirstUndefined: Self = StObject.set(x, "GeoLocationFirst", js.undefined)
         
         @scala.inline
-        def setMarkerOptions(value: typings.amapJsApi.AMap.Marker.Options[_]): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
+        def setMarkerOptions(value: typings.amapJsApi.AMap.Marker.Options[js.Any]): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)

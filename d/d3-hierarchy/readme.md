@@ -11,8 +11,8 @@ Layout algorithms for visualizing hierarchical data.
 | Full name          | d3-hierarchy |
 | Keywords           | d3, d3-module, layout, tree, treemap, hierarchy, infovis |
 | # releases         | 7 |
-| # dependents       | 183 |
-| # downloads        | 46431414 |
+| # dependents       | 220 |
+| # downloads        | 56620108 |
 | # stars            | 1 |
 
 ## Links

@@ -12,7 +12,7 @@ Convert HTML/XML source code or DOM nodes to React elements
 | Keywords           | string, DOM, converter, react, component |
 | # releases         | 13 |
 | # dependents       | 4 |
-| # downloads        | 2270049 |
+| # downloads        | 2820760 |
 | # stars            | 0 |
 
 ## Links

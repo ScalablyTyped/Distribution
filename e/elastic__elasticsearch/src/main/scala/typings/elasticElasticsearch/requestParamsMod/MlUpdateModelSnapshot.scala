@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlUpdateModelSnapshot[T] extends Generic {
+trait MlUpdateModelSnapshot[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var job_id: String = js.native
+  var job_id: String
   
-  var snapshot_id: String = js.native
+  var snapshot_id: String
 }
 object MlUpdateModelSnapshot {
   
@@ -23,7 +23,7 @@ object MlUpdateModelSnapshot {
   }
   
   @scala.inline
-  implicit class MlUpdateModelSnapshotMutableBuilder[Self <: MlUpdateModelSnapshot[_], T] (val x: Self with MlUpdateModelSnapshot[T]) extends AnyVal {
+  implicit class MlUpdateModelSnapshotMutableBuilder[Self <: MlUpdateModelSnapshot[?], T] (val x: Self & MlUpdateModelSnapshot[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

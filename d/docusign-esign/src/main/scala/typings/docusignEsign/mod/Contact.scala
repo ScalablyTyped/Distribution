@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contact extends StObject {
   
   /**
@@ -24,17 +22,17 @@ trait Contact extends StObject {
     *
     * -->
     */
-  var cloudProvider: js.UndefOr[String] = js.native
+  var cloudProvider: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the container at the cloud provider. For example, this might be the room id for a DocuSign Transaction Room.
     */
-  var cloudProviderContainerId: js.UndefOr[String] = js.native
+  var cloudProviderContainerId: js.UndefOr[String] = js.undefined
   
   /**
     * The id of a contact person in the account's address book.
     */
-  var contactId: js.UndefOr[String] = js.native
+  var contactId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the contact's phone numbers.
@@ -51,41 +49,41 @@ trait Contact extends StObject {
     js.Array[
       /* Details about the phone numbers associated with a specific contact. */ ContactPhoneNumber
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The URI for retrieving information about the contact.
     */
-  var contactUri: js.UndefOr[String] = js.native
+  var contactUri: js.UndefOr[String] = js.undefined
   
-  var emails: js.UndefOr[js.Array[String]] = js.native
+  var emails: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
-  var isOwner: js.UndefOr[Boolean] = js.native
+  var isOwner: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var organization: js.UndefOr[String] = js.native
+  var organization: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the tab is shared.
     */
-  var shared: js.UndefOr[String] = js.native
+  var shared: js.UndefOr[String] = js.undefined
   
-  var signingGroup: js.UndefOr[String] = js.native
+  var signingGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The name of the signing group.
     *
     * Maximum Length: 100 characters.
     */
-  var signingGroupName: js.UndefOr[String] = js.native
+  var signingGroupName: js.UndefOr[String] = js.undefined
 }
 object Contact {
   

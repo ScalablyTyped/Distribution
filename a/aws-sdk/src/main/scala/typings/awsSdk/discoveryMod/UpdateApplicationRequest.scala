@@ -2,26 +2,24 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApplicationRequest extends StObject {
   
   /**
     * Configuration ID of the application to be updated.
     */
-  var configurationId: ApplicationId = js.native
+  var configurationId: ApplicationId
   
   /**
     * New description of the application to be updated.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * New name of the application to be updated.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object UpdateApplicationRequest {
   

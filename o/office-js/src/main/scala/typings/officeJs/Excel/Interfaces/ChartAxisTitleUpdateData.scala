@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartAxisTitle object, for use in `chartAxisTitle.set({ ... })`. */
-@js.native
 trait ChartAxisTitleUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ChartAxisTitleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[ChartAxisTitleFormatUpdateData] = js.native
+  var format: js.UndefOr[ChartAxisTitleFormatUpdateData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ChartAxisTitleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ChartAxisTitleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var textOrientation: js.UndefOr[Double] = js.native
+  var textOrientation: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait ChartAxisTitleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ChartAxisTitleUpdateData {
   

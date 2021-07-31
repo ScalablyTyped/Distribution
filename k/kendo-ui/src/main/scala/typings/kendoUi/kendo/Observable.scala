@@ -3,11 +3,12 @@ package typings.kendoUi.kendo
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Observable extends Class {
+trait Observable
+  extends StObject
+     with Class {
   
   def bind(eventName: String, handler: js.Function): Observable = js.native
   def bind(events: js.Array[String], handler: js.Function): Observable = js.native
@@ -27,7 +28,7 @@ trait Observable extends Class {
   def trigger(eventName: String, e: js.Any): Boolean = js.native
   
   def unbind(): Observable = js.native
-  def unbind(eventName: js.UndefOr[scala.Nothing], handler: js.Any): Observable = js.native
   def unbind(eventName: String): Observable = js.native
   def unbind(eventName: String, handler: js.Any): Observable = js.native
+  def unbind(eventName: Unit, handler: js.Any): Observable = js.native
 }

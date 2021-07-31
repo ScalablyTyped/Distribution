@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specification details such as Component Revisions, or Serial Numbers
   */
-@js.native
-trait DeviceComponentProductionSpecification extends BackboneElement {
+trait DeviceComponentProductionSpecification
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'productionSpec'.
     */
-  var _productionSpec: js.UndefOr[Element] = js.native
+  var _productionSpec: js.UndefOr[Element] = js.undefined
   
   /**
     * Internal component unique identification
     */
-  var componentId: js.UndefOr[Identifier] = js.native
+  var componentId: js.UndefOr[Identifier] = js.undefined
   
   /**
     * A printable string defining the component
     */
-  var productionSpec: js.UndefOr[String] = js.native
+  var productionSpec: js.UndefOr[String] = js.undefined
   
   /**
     * Type or kind of production specification, for example serial number or software revision
     */
-  var specType: js.UndefOr[CodeableConcept] = js.native
+  var specType: js.UndefOr[CodeableConcept] = js.undefined
 }
 object DeviceComponentProductionSpecification {
   

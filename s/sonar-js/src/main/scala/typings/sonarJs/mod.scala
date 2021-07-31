@@ -3,7 +3,6 @@ package typings.sonarJs
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,7 +15,9 @@ object mod {
     */
   @JSImport("sonar-js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Sonar {
+  class ^ protected ()
+    extends StObject
+       with Sonar {
     def this(window: Window) = this()
   }
   
@@ -30,7 +31,7 @@ object mod {
   trait Sonar extends StObject {
     
     def ping(range: Double): Unit = js.native
-    def ping(range: Double, bottomFoundCallback: js.UndefOr[scala.Nothing], bottomLostCallback: SonarCallback): Unit = js.native
+    def ping(range: Double, bottomFoundCallback: Unit, bottomLostCallback: SonarCallback): Unit = js.native
     def ping(range: Double, bottomFoundCallback: SonarCallback): Unit = js.native
     def ping(range: Double, bottomFoundCallback: SonarCallback, bottomLostCallback: SonarCallback): Unit = js.native
     

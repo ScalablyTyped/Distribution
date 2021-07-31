@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadAccesses extends StObject {
   
   /** A list of download access responses. */
-  var downloadAccessList: js.UndefOr[js.Array[DownloadAccessRestriction]] = js.native
+  var downloadAccessList: js.UndefOr[js.Array[DownloadAccessRestriction]] = js.undefined
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object DownloadAccesses {
   

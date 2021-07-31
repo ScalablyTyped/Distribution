@@ -2,26 +2,24 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Returns service account information associated with a project.
   */
-@js.native
 trait SchemaGoogleCloudMlV1GetConfigResponse extends StObject {
   
-  var config: js.UndefOr[SchemaGoogleCloudMlV1Config] = js.native
+  var config: js.UndefOr[SchemaGoogleCloudMlV1Config] = js.undefined
   
   /**
     * The service account Cloud ML uses to access resources in the project.
     */
-  var serviceAccount: js.UndefOr[String] = js.native
+  var serviceAccount: js.UndefOr[String] = js.undefined
   
   /**
     * The project number for `service_account`.
     */
-  var serviceAccountProject: js.UndefOr[String] = js.native
+  var serviceAccountProject: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1GetConfigResponse {
   

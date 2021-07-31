@@ -2,16 +2,14 @@ package typings.awsSdk.elasticinferenceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAcceleratorTypesResponse extends StObject {
   
   /**
     *  The available accelerator types. 
     */
-  var acceleratorTypes: js.UndefOr[AcceleratorTypeList] = js.native
+  var acceleratorTypes: js.UndefOr[AcceleratorTypeList] = js.undefined
 }
 object DescribeAcceleratorTypesResponse {
   

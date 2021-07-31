@@ -3,38 +3,36 @@ package typings.winrtUwp.Windows.Security.Credentials
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Credential Locker of credentials. The contents of the locker are specific to the app or service. Apps and services don't have access to credentials associated with other apps or services. */
-@js.native
 trait PasswordVault extends StObject {
   
   /**
     * Adds a credential to the Credential Locker.
     * @param credential The credential to be added.
     */
-  def add(credential: PasswordCredential): Unit = js.native
+  def add(credential: PasswordCredential): Unit
   
   /**
     * Searches the Credential Locker for credentials matching the resource specified.
     * @param resource The resource to be searched for.
     * @return When this method returns, contains an IVectorView of credential objects that match the search criteria.
     */
-  def findAllByResource(resource: String): IVectorView[PasswordCredential] = js.native
+  def findAllByResource(resource: String): IVectorView[PasswordCredential]
   
   /**
     * Searches the Credential Locker for credentials that match the user name specified.
     * @param userName The user name to be searched for.
     * @return When this method returns, contains an IVectorView of credential objects that match the search criteria.
     */
-  def findAllByUserName(userName: String): IVectorView[PasswordCredential] = js.native
+  def findAllByUserName(userName: String): IVectorView[PasswordCredential]
   
   /**
     * Removes a credential from the Credential Locker.
     * @param credential The credential to be removed.
     */
-  def remove(credential: PasswordCredential): Unit = js.native
+  def remove(credential: PasswordCredential): Unit
   
   /**
     * Reads a credential from the Credential Locker.
@@ -42,13 +40,13 @@ trait PasswordVault extends StObject {
     * @param userName The user name that must be present in the credential.
     * @return The returned credential that contains all the data.
     */
-  def retrieve(resource: String, userName: String): PasswordCredential = js.native
+  def retrieve(resource: String, userName: String): PasswordCredential
   
   /**
     * Retrieves all of the credentials stored in the Credential Locker.
     * @return When this method returns, contains an IVectorView output of credential objects that match the search criteria. This output is a snapshot and not dynamic. If the results are used for updating or deleting credentials, those changes won't be reflected in the previous output.
     */
-  def retrieveAll(): IVectorView[PasswordCredential] = js.native
+  def retrieveAll(): IVectorView[PasswordCredential]
 }
 object PasswordVault {
   

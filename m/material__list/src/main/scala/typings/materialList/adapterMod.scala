@@ -2,86 +2,84 @@ package typings.materialList
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCListAdapter extends StObject {
     
-    def addClassForElementIndex(index: Double, className: String): Unit = js.native
+    def addClassForElementIndex(index: Double, className: String): Unit
     
     /**
       * Focuses list item at the index specified.
       */
-    def focusItemAtIndex(index: Double): Unit = js.native
+    def focusItemAtIndex(index: Double): Unit
     
     /**
       * Returns the attribute value of list item at given `index`.
       */
-    def getAttributeForElementIndex(index: Double, attr: String): String | Null = js.native
+    def getAttributeForElementIndex(index: Double, attr: String): String | Null
     
-    def getFocusedElementIndex(): Double = js.native
+    def getFocusedElementIndex(): Double
     
-    def getListItemCount(): Double = js.native
+    def getListItemCount(): Double
     
     /**
       * @return the primary text content of the list item at index.
       */
-    def getPrimaryTextAtIndex(index: Double): String = js.native
+    def getPrimaryTextAtIndex(index: Double): String
     
     /**
       * @return true if checkbox is present at given list item index.
       */
-    def hasCheckboxAtIndex(index: Double): Boolean = js.native
+    def hasCheckboxAtIndex(index: Double): Boolean
     
     /**
       * @return true if radio button is present at given list item index.
       */
-    def hasRadioAtIndex(index: Double): Boolean = js.native
+    def hasRadioAtIndex(index: Double): Boolean
     
     /**
       * @return true if checkbox inside a list item is checked.
       */
-    def isCheckboxCheckedAtIndex(index: Double): Boolean = js.native
+    def isCheckboxCheckedAtIndex(index: Double): Boolean
     
     /**
       * @return true when the current focused element is inside list root.
       */
-    def isFocusInsideList(): Boolean = js.native
+    def isFocusInsideList(): Boolean
     
     /**
       * @return true if root element is focused.
       */
-    def isRootFocused(): Boolean = js.native
+    def isRootFocused(): Boolean
     
     /**
       * @param index list item index.
       * @param className the name of the class whose presence is to be checked.
       * @return true if list item at `index` has class `className`.
       */
-    def listItemAtIndexHasClass(index: Double, className: String): Boolean = js.native
+    def listItemAtIndexHasClass(index: Double, className: String): Boolean
     
     /**
       * Notifies user action on list item.
       */
-    def notifyAction(index: Double): Unit = js.native
+    def notifyAction(index: Double): Unit
     
-    def removeClassForElementIndex(index: Double, className: String): Unit = js.native
+    def removeClassForElementIndex(index: Double, className: String): Unit
     
-    def setAttributeForElementIndex(index: Double, attribute: String, value: String): Unit = js.native
+    def setAttributeForElementIndex(index: Double, attribute: String, value: String): Unit
     
     /**
       * Sets the checked status of checkbox or radio at given list item index.
       */
-    def setCheckedCheckboxOrRadioAtIndex(index: Double, isChecked: Boolean): Unit = js.native
+    def setCheckedCheckboxOrRadioAtIndex(index: Double, isChecked: Boolean): Unit
     
     /**
       * Sets the tabindex to the value specified for all button/a element children of
       * the list item at the index specified.
       */
-    def setTabIndexForListItemChildren(listItemIndex: Double, tabIndexValue: String): Unit = js.native
+    def setTabIndexForListItemChildren(listItemIndex: Double, tabIndexValue: String): Unit
   }
   object MDCListAdapter {
     

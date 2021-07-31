@@ -3,10 +3,8 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait YAxisLabelsOptions extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait YAxisLabelsOptions extends StObject {
     * two labels have additional option `"auto"` for automatic horizontal and
     * vertical alignment.
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) For horizontal axes, the allowed degrees
@@ -28,7 +26,7 @@ trait YAxisLabelsOptions extends StObject {
     * again with rotations 0 and -45 etc. Set it to `false` to disable
     * rotation, which will cause the labels to word-wrap if possible.
     */
-  var autoRotation: js.UndefOr[`false` | js.Array[Double]] = js.native
+  var autoRotation: js.UndefOr[`false` | js.Array[Double]] = js.undefined
   
   /**
     * (Highcharts, Gantt) When each category width is more than this many
@@ -37,7 +35,7 @@ trait YAxisLabelsOptions extends StObject {
     * multiple short words that don't extend the available horizontal space for
     * each label.
     */
-  var autoRotationLimit: js.UndefOr[Double] = js.native
+  var autoRotationLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Angular gauges and solid gauges only. The label's pixel
@@ -46,19 +44,19 @@ trait YAxisLabelsOptions extends StObject {
     * Since v7.1.2: If it's a percentage string, it is interpreted the same as
     * series.radius, so label can be aligned under the gauge's shape.
     */
-  var distance: js.UndefOr[Double | String] = js.native
+  var distance: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the axis
     * labels.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A format string for the axis
     * label.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback JavaScript function to
@@ -69,19 +67,19 @@ trait YAxisLabelsOptions extends StObject {
     *
     * Defaults to: (see online documentation for example)
     */
-  var formatter: js.UndefOr[AxisLabelsFormatterCallbackFunction] = js.native
+  var formatter: js.UndefOr[AxisLabelsFormatterCallbackFunction] = js.undefined
   
   /**
     * (Gantt) The number of pixels to indent the labels per level in a treegrid
     * axis.
     */
-  var indentation: js.UndefOr[Double] = js.native
+  var indentation: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Set options on specific levels in a tree grid axis. Takes
     * precedence over labels options.
     */
-  var levels: js.UndefOr[js.Array[YAxisLabelsLevelsOptions]] = js.native
+  var levels: js.UndefOr[js.Array[YAxisLabelsLevelsOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) How to handle overflowing labels
@@ -89,13 +87,13 @@ trait YAxisLabelsOptions extends StObject {
     * By default it `"justify"` labels inside the chart area. If there is room
     * to move it, it will be aligned to the edge, else it will be removed.
     */
-  var overflow: js.UndefOr[OptionsOverflowValue] = js.native
+  var overflow: js.UndefOr[OptionsOverflowValue] = js.undefined
   
   /**
     * (Highcharts, Gantt) The pixel padding for axis labels, to ensure white
     * space between them.
     */
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Defines how the labels are be repositioned according to the
@@ -116,7 +114,7 @@ trait YAxisLabelsOptions extends StObject {
     * orthogonal to the axis. This is very similar to `'flap'`, but prevents
     * skewing the labels (X and Y scaling are still present).
     */
-  var position3d: js.UndefOr[OptionsPosition3dValue] = js.native
+  var position3d: js.UndefOr[OptionsPosition3dValue] = js.undefined
   
   /**
     * (Highcharts, Gantt) Whether to reserve space for the labels. By default,
@@ -132,13 +130,13 @@ trait YAxisLabelsOptions extends StObject {
     * This can be turned off when for example the labels are rendered inside
     * the plot area instead of outside.
     */
-  var reserveSpace: js.UndefOr[Boolean] = js.native
+  var reserveSpace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Rotation of the labels in
     * degrees.
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) If enabled, the axis labels will skewed to follow the
@@ -149,13 +147,13 @@ trait YAxisLabelsOptions extends StObject {
     *
     * The final appearance depends heavily on `labels.position3d`.
     */
-  var skew3d: js.UndefOr[Boolean] = js.native
+  var skew3d: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Horizontal axes only. The number
     * of lines to spread the labels over to make room or tighter labels.
     */
-  var staggerLines: js.UndefOr[Double] = js.native
+  var staggerLines: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) To show only every _n_'th label
@@ -168,7 +166,7 @@ trait YAxisLabelsOptions extends StObject {
     *
     * Read more at Axis docs => What axis should I use?
     */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the label. Use
@@ -178,37 +176,37 @@ trait YAxisLabelsOptions extends StObject {
     * In styled mode, the labels are styled with the `.highcharts-axis-labels`
     * class.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Gantt) The symbol for the collapse and expand icon in a treegrid.
     */
-  var symbol: js.UndefOr[YAxisLabelsSymbolOptions] = js.native
+  var symbol: js.UndefOr[YAxisLabelsSymbolOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to use HTML to render
     * the labels.
     */
-  var useHTML: js.UndefOr[Boolean] = js.native
+  var useHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The x position offset of all
     * labels relative to the tick positions on the axis. Defaults to -15 for
     * left axis, 15 for right axis.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The y position offset of all
     * labels relative to the tick positions on the axis. For polar and radial
     * axis consider the use of the distance option.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The Z index for the axis labels.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object YAxisLabelsOptions {
   

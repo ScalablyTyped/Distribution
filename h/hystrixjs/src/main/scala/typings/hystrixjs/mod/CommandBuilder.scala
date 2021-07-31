@@ -3,43 +3,43 @@ package typings.hystrixjs.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandBuilder extends StObject {
   
-  def build(): Command = js.native
+  def build(): Command
   
-  def circuitBreakerErrorThresholdPercentage(value: Double): CommandBuilder = js.native
+  def circuitBreakerErrorThresholdPercentage(value: Double): CommandBuilder
   
-  def circuitBreakerForceClosed(value: Boolean): CommandBuilder = js.native
+  def circuitBreakerForceClosed(value: Boolean): CommandBuilder
   
-  def circuitBreakerForceOpened(value: Boolean): CommandBuilder = js.native
+  def circuitBreakerForceOpened(value: Boolean): CommandBuilder
   
-  def circuitBreakerRequestVolumeThreshold(value: Double): CommandBuilder = js.native
+  def circuitBreakerRequestVolumeThreshold(value: Double): CommandBuilder
   
-  def circuitBreakerSleepWindowInMilliseconds(value: Double): CommandBuilder = js.native
+  def circuitBreakerSleepWindowInMilliseconds(value: Double): CommandBuilder
   
-  def context(value: js.Any): CommandBuilder = js.native
+  def context(value: js.Any): CommandBuilder
   
-  def errorHandler(value: js.Function1[/* error */ js.Any, Boolean]): CommandBuilder = js.native
+  def errorHandler(value: js.Function1[/* error */ js.Any, Boolean]): CommandBuilder
   
-  def fallbackTo(value: js.Function2[/* error */ Error, /* args */ js.UndefOr[js.Array[_]], js.Thenable[_]]): CommandBuilder = js.native
+  def fallbackTo(
+    value: js.Function2[/* error */ Error, /* args */ js.UndefOr[js.Array[js.Any]], js.Thenable[js.Any]]
+  ): CommandBuilder
   
-  def percentileWindowLength(value: Double): CommandBuilder = js.native
+  def percentileWindowLength(value: Double): CommandBuilder
   
-  def percentileWindowNumberOfBuckets(value: Double): CommandBuilder = js.native
+  def percentileWindowNumberOfBuckets(value: Double): CommandBuilder
   
-  def requestVolumeRejectionThreshold(value: Double): CommandBuilder = js.native
+  def requestVolumeRejectionThreshold(value: Double): CommandBuilder
   
-  def run(value: js.Function1[/* repeated */ js.Any, js.Thenable[_]]): CommandBuilder = js.native
+  def run(value: js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]]): CommandBuilder
   
-  def statisticalWindowLength(value: Double): CommandBuilder = js.native
+  def statisticalWindowLength(value: Double): CommandBuilder
   
-  def statisticalWindowNumberOfBuckets(value: Double): CommandBuilder = js.native
+  def statisticalWindowNumberOfBuckets(value: Double): CommandBuilder
   
-  def timeout(value: Double): CommandBuilder = js.native
+  def timeout(value: Double): CommandBuilder
 }
 object CommandBuilder {
   
@@ -53,11 +53,11 @@ object CommandBuilder {
     circuitBreakerSleepWindowInMilliseconds: Double => CommandBuilder,
     context: js.Any => CommandBuilder,
     errorHandler: js.Function1[/* error */ js.Any, Boolean] => CommandBuilder,
-    fallbackTo: js.Function2[/* error */ Error, /* args */ js.UndefOr[js.Array[_]], js.Thenable[_]] => CommandBuilder,
+    fallbackTo: js.Function2[/* error */ Error, /* args */ js.UndefOr[js.Array[js.Any]], js.Thenable[js.Any]] => CommandBuilder,
     percentileWindowLength: Double => CommandBuilder,
     percentileWindowNumberOfBuckets: Double => CommandBuilder,
     requestVolumeRejectionThreshold: Double => CommandBuilder,
-    run: js.Function1[/* repeated */ js.Any, js.Thenable[_]] => CommandBuilder,
+    run: js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]] => CommandBuilder,
     statisticalWindowLength: Double => CommandBuilder,
     statisticalWindowNumberOfBuckets: Double => CommandBuilder,
     timeout: Double => CommandBuilder
@@ -95,7 +95,7 @@ object CommandBuilder {
     
     @scala.inline
     def setFallbackTo(
-      value: js.Function2[/* error */ Error, /* args */ js.UndefOr[js.Array[_]], js.Thenable[_]] => CommandBuilder
+      value: js.Function2[/* error */ Error, /* args */ js.UndefOr[js.Array[js.Any]], js.Thenable[js.Any]] => CommandBuilder
     ): Self = StObject.set(x, "fallbackTo", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -108,7 +108,7 @@ object CommandBuilder {
     def setRequestVolumeRejectionThreshold(value: Double => CommandBuilder): Self = StObject.set(x, "requestVolumeRejectionThreshold", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRun(value: js.Function1[/* repeated */ js.Any, js.Thenable[_]] => CommandBuilder): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+    def setRun(value: js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]] => CommandBuilder): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
     
     @scala.inline
     def setStatisticalWindowLength(value: Double => CommandBuilder): Self = StObject.set(x, "statisticalWindowLength", js.Any.fromFunction1(value))

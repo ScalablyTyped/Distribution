@@ -3,22 +3,20 @@ package typings.minappEnv.wx
 import typings.minappEnv.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestSuccessCallbackResult extends StObject {
   
   /** 开发者服务器返回的数据 */
-  var data: String | js.Object | ArrayBuffer = js.native
+  var data: String | js.Object | ArrayBuffer
   
   /** 开发者服务器返回的 HTTP Response Header
     *
     * 最低基础库： `1.2.0` */
-  var header: js.Object = js.native
+  var header: js.Object
   
   /** 开发者服务器返回的 HTTP 状态码 */
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object RequestSuccessCallbackResult {
   

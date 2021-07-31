@@ -3,13 +3,11 @@ package typings.webBluetooth
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CharacteristicEventHandlers extends StObject {
   
-  def oncharacteristicvaluechanged(ev: Event): js.Any = js.native
+  def oncharacteristicvaluechanged(ev: Event): js.Any
 }
 object CharacteristicEventHandlers {
   

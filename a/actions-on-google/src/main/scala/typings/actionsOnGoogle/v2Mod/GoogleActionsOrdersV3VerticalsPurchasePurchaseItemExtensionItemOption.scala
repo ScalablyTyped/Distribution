@@ -2,46 +2,44 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption extends StObject {
   
   /**
     * For options that are items, unique item id.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Option name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Note related to the option.
     */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
   /**
     * Option total price.
     */
-  var prices: js.UndefOr[js.Array[GoogleActionsOrdersV3PriceAttribute]] = js.native
+  var prices: js.UndefOr[js.Array[GoogleActionsOrdersV3PriceAttribute]] = js.undefined
   
   /**
     * Product or offer id associated with this option.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * For options that are items, quantity.
     */
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
   
   /**
     * To define other nested sub options.
     */
-  var subOptions: js.UndefOr[js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption]] = js.native
+  var subOptions: js.UndefOr[js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption]] = js.undefined
 }
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption {
   

@@ -2,10 +2,8 @@ package typings.msRestAzure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MSIOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait MSIOptions extends StObject {
     * - resourcemanagement endpoint "https://management.azure.com"(default) 
     * - management endpoint "https://management.core.windows.net/"
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
 }
 object MSIOptions {
   

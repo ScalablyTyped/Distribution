@@ -3,7 +3,6 @@ package typings.storybookComponents
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceMod {
@@ -22,27 +21,30 @@ object sourceMod {
   object SourceError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SourceError with String] = js.native
+    def apply(value: String): js.UndefOr[SourceError & String] = js.native
     
     @js.native
-    sealed trait NO_STORY extends SourceError
-    /* "There\\u2019s no story here." */ val NO_STORY: typings.storybookComponents.sourceMod.SourceError.NO_STORY with String = js.native
+    sealed trait NO_STORY
+      extends StObject
+         with SourceError
+    /* "There\\u2019s no story here." */ val NO_STORY: typings.storybookComponents.sourceMod.SourceError.NO_STORY & String = js.native
     
     @js.native
-    sealed trait SOURCE_UNAVAILABLE extends SourceError
-    /* "Oh no! The source is not available." */ val SOURCE_UNAVAILABLE: typings.storybookComponents.sourceMod.SourceError.SOURCE_UNAVAILABLE with String = js.native
+    sealed trait SOURCE_UNAVAILABLE
+      extends StObject
+         with SourceError
+    /* "Oh no! The source is not available." */ val SOURCE_UNAVAILABLE: typings.storybookComponents.sourceMod.SourceError.SOURCE_UNAVAILABLE & String = js.native
   }
   
-  @js.native
   trait SourceCodeProps extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var dark: js.UndefOr[Boolean] = js.native
+    var dark: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[Boolean] = js.native
+    var format: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
   }
   object SourceCodeProps {
     
@@ -81,10 +83,9 @@ object sourceMod {
     }
   }
   
-  @js.native
   trait SourceErrorProps extends StObject {
     
-    var error: js.UndefOr[SourceError] = js.native
+    var error: js.UndefOr[SourceError] = js.undefined
   }
   object SourceErrorProps {
     
@@ -105,5 +106,16 @@ object sourceMod {
     }
   }
   
-  type SourceProps = SourceErrorProps with SourceCodeProps
+  trait SourceProps
+    extends StObject
+       with SourceErrorProps
+       with SourceCodeProps
+  object SourceProps {
+    
+    @scala.inline
+    def apply(): SourceProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SourceProps]
+    }
+  }
 }

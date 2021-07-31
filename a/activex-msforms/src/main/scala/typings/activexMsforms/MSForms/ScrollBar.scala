@@ -3,40 +3,38 @@ package typings.activexMsforms.MSForms
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollBar extends StObject {
   
-  var BackColor: Double = js.native
+  var BackColor: Double
   
-  var Delay: Double = js.native
+  var Delay: Double
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var ForeColor: Double = js.native
+  var ForeColor: Double
   
-  var LargeChange: Double = js.native
+  var LargeChange: Double
   
   @JSName("MSForms.ScrollBar_typekey")
-  var MSFormsDotScrollBar_typekey: ScrollBar = js.native
+  var MSFormsDotScrollBar_typekey: ScrollBar
   
-  var Max: Double = js.native
+  var Max: Double
   
-  var Min: Double = js.native
+  var Min: Double
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: fmMousePointer = js.native
+  var MousePointer: fmMousePointer
   
-  var Orientation: fmOrientation = js.native
+  var Orientation: fmOrientation
   
-  var ProportionalThumb: Boolean = js.native
+  var ProportionalThumb: Boolean
   
-  var SmallChange: Double = js.native
+  var SmallChange: Double
   
-  var Value: Double = js.native
+  var Value: Double
 }
 object ScrollBar {
   

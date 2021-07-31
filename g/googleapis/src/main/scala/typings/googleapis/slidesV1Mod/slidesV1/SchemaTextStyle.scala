@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,14 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * fields will revert the style to a value matching the defaults in the Slides
   * editor.
   */
-@js.native
 trait SchemaTextStyle extends StObject {
   
   /**
     * The background color of the text. If set, the color is either opaque or
     * transparent, depending on if the `opaque_color` field in it is set.
     */
-  var backgroundColor: js.UndefOr[SchemaOptionalColor] = js.native
+  var backgroundColor: js.UndefOr[SchemaOptionalColor] = js.undefined
   
   /**
     * The text&#39;s vertical offset from its normal position.  Text with
@@ -35,12 +33,12 @@ trait SchemaTextStyle extends StObject {
     * in a smaller font size, computed based on the `font_size` field. The
     * `font_size` itself is not affected by changes in this field.
     */
-  var baselineOffset: js.UndefOr[String] = js.native
+  var baselineOffset: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not the text is rendered as bold.
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The font family of the text.  The font family can be any font from the
@@ -50,24 +48,24 @@ trait SchemaTextStyle extends StObject {
     * values for both `font_family` and `bold`, the explicitly-set `bold` value
     * is used.
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the text&#39;s font. When read, the `font_size` will
     * specified in points.
     */
-  var fontSize: js.UndefOr[SchemaDimension] = js.native
+  var fontSize: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The color of the text itself. If set, the color is either opaque or
     * transparent, depending on if the `opaque_color` field in it is set.
     */
-  var foregroundColor: js.UndefOr[SchemaOptionalColor] = js.native
+  var foregroundColor: js.UndefOr[SchemaOptionalColor] = js.undefined
   
   /**
     * Whether or not the text is italicized.
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The hyperlink destination of the text. If unset, there is no link. Links
@@ -87,22 +85,22 @@ trait SchemaTextStyle extends StObject {
     * preceding text (or the default text styles if the preceding   text is
     * another link) unless different styles are being set in the same request.
     */
-  var link: js.UndefOr[SchemaLink] = js.native
+  var link: js.UndefOr[SchemaLink] = js.undefined
   
   /**
     * Whether or not the text is in small capital letters.
     */
-  var smallCaps: js.UndefOr[Boolean] = js.native
+  var smallCaps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not the text is struck through.
     */
-  var strikethrough: js.UndefOr[Boolean] = js.native
+  var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not the text is underlined.
     */
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The font family and rendered weight of the text.  This field is an
@@ -128,7 +126,7 @@ trait SchemaTextStyle extends StObject {
     * `weighted_font_family#font_family` must also be set with a non-empty
     * value. Otherwise, a 400 bad request error is returned.
     */
-  var weightedFontFamily: js.UndefOr[SchemaWeightedFontFamily] = js.native
+  var weightedFontFamily: js.UndefOr[SchemaWeightedFontFamily] = js.undefined
 }
 object SchemaTextStyle {
   

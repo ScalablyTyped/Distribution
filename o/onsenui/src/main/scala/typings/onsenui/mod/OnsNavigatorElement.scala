@@ -1,16 +1,27 @@
 package typings.onsenui.mod
 
+import typings.std.AddEventListenerOptions
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @description A component that provides page stack management and navigation. This component does not have a visible content
   */
 @js.native
-trait OnsNavigatorElement extends HTMLElement {
+trait OnsNavigatorElement
+  extends StObject
+     with HTMLElement {
+  
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   /**
     * @param {any} item
@@ -72,6 +83,13 @@ trait OnsNavigatorElement extends HTMLElement {
     */
   def pushPage(page: js.Any): js.Promise[HTMLElement] = js.native
   def pushPage(page: js.Any, options: PushPageOptions): js.Promise[HTMLElement] = js.native
+  
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   
   def removePage(args: js.Any*): js.Any = js.native
   

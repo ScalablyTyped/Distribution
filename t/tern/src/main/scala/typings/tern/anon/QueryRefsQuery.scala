@@ -4,15 +4,13 @@ import typings.tern.ternMod.RefsQuery
 import typings.tern.ternMod.RefsQueryResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryRefsQuery extends StObject {
   
-  var query: RefsQuery = js.native
+  var query: RefsQuery
   
-  var result: RefsQueryResult = js.native
+  var result: RefsQueryResult
 }
 object QueryRefsQuery {
   

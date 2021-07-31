@@ -2,17 +2,17 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TriggerMeta extends AbstractMeta {
+trait TriggerMeta
+  extends StObject
+     with AbstractMeta {
   
-  var body: String = js.native
+  var body: String
   
-  var triggerOperation: String = js.native
+  var triggerOperation: String
   
-  var triggerType: String = js.native
+  var triggerType: String
 }
 object TriggerMeta {
   

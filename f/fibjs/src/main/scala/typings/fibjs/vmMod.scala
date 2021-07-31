@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -14,5 +13,7 @@ object vmMod {
   
   @JSImport("vm", "SandBox")
   @js.native
-  class SandBox () extends ClassSandBox
+  class SandBox ()
+    extends StObject
+       with ClassSandBox
 }

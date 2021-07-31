@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyString extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var value: js.Array[KeyValue] = js.native
+  var value: js.Array[KeyValue]
 }
 object KeyString {
   

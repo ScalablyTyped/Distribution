@@ -3,19 +3,17 @@ package typings.minecraftScriptingTypesClient
 import typings.minecraftScriptingTypesShared.IEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is fired whenever a player joins the world. The event data contains the player entity object.
   */
-@js.native
 trait IClientEnteredWorldEventData extends StObject {
   
   /**
     * the player entering the world
     */
-  var player: IEntity = js.native
+  var player: IEntity
 }
 object IClientEnteredWorldEventData {
   

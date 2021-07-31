@@ -2,38 +2,36 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReviewPolicyResultsForHITResponse extends StObject {
   
   /**
     *  The name of the Assignment-level Review Policy. This contains only the PolicyName element. 
     */
-  var AssignmentReviewPolicy: js.UndefOr[ReviewPolicy] = js.native
+  var AssignmentReviewPolicy: js.UndefOr[ReviewPolicy] = js.undefined
   
   /**
     *  Contains both ReviewResult and ReviewAction elements for an Assignment. 
     */
-  var AssignmentReviewReport: js.UndefOr[ReviewReport] = js.native
+  var AssignmentReviewReport: js.UndefOr[ReviewReport] = js.undefined
   
   /**
     * The HITId of the HIT for which results have been returned.
     */
-  var HITId: js.UndefOr[EntityId] = js.native
+  var HITId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * The name of the HIT-level Review Policy. This contains only the PolicyName element.
     */
-  var HITReviewPolicy: js.UndefOr[ReviewPolicy] = js.native
+  var HITReviewPolicy: js.UndefOr[ReviewPolicy] = js.undefined
   
   /**
     * Contains both ReviewResult and ReviewAction elements for a particular HIT. 
     */
-  var HITReviewReport: js.UndefOr[ReviewReport] = js.native
+  var HITReviewReport: js.UndefOr[ReviewReport] = js.undefined
   
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListReviewPolicyResultsForHITResponse {
   

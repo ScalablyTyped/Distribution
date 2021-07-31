@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlLabelMod {
@@ -18,12 +17,13 @@ object controlLabelMod {
   trait ControlLabel
     extends Component[ControlLabelProps, js.Object, js.Any]
   
-  @js.native
-  trait ControlLabelProps extends HTMLProps[ControlLabel] {
+  trait ControlLabelProps
+    extends StObject
+       with HTMLProps[ControlLabel] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var srOnly: js.UndefOr[Boolean] = js.native
+    var srOnly: js.UndefOr[Boolean] = js.undefined
   }
   object ControlLabelProps {
     

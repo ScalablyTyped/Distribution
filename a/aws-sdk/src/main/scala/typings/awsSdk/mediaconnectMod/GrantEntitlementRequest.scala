@@ -2,41 +2,39 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrantEntitlementRequest extends StObject {
   
   /**
     * Percentage from 0-100 of the data transfer cost to be billed to the subscriber.
     */
-  var DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.native
+  var DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.undefined
   
   /**
     * A description of the entitlement. This description appears only on the AWS Elemental MediaConnect console and will not be seen by the subscriber or end user.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The type of encryption that will be used on the output that is associated with this entitlement.
     */
-  var Encryption: js.UndefOr[typings.awsSdk.mediaconnectMod.Encryption] = js.native
+  var Encryption: js.UndefOr[typings.awsSdk.mediaconnectMod.Encryption] = js.undefined
   
   /**
     * An indication of whether the new entitlement should be enabled or disabled as soon as it is created. If you don’t specify the entitlementStatus field in your request, MediaConnect sets it to ENABLED.
     */
-  var EntitlementStatus: js.UndefOr[typings.awsSdk.mediaconnectMod.EntitlementStatus] = js.native
+  var EntitlementStatus: js.UndefOr[typings.awsSdk.mediaconnectMod.EntitlementStatus] = js.undefined
   
   /**
     * The name of the entitlement. This value must be unique within the current flow.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * The AWS account IDs that you want to share your content with. The receiving accounts (subscribers) will be allowed to create their own flows using your content as the source.
     */
-  var Subscribers: listOfString = js.native
+  var Subscribers: listOfString
 }
 object GrantEntitlementRequest {
   

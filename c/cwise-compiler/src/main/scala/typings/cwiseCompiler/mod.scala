@@ -4,19 +4,26 @@ import typings.cwiseParser.mod.CompiledRoutine
 import typings.ndarray.mod.ndarray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cwise-compiler", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(user_args: UserArgs): js.Function3[
     /* a */ ndarray[Double], 
     /* b */ ndarray[Double], 
     /* repeated */ ndarray[Double], 
     ndarray[Double]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].apply(user_args.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* a */ ndarray[Double], 
+    /* b */ ndarray[Double], 
+    /* repeated */ ndarray[Double], 
+    ndarray[Double]
+  ]]
+  
+  @JSImport("cwise-compiler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.cwiseCompiler.cwiseCompilerStrings.array
@@ -29,10 +36,11 @@ object mod {
   */
   trait ArgType extends StObject
   
-  @js.native
-  trait BlockIndice extends ArgType {
+  trait BlockIndice
+    extends StObject
+       with ArgType {
     
-    var blockIndices: Double = js.native
+    var blockIndices: Double
   }
   object BlockIndice {
     
@@ -50,12 +58,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait OffsetArg extends ArgType {
+  trait OffsetArg
+    extends StObject
+       with ArgType {
     
-    var array: Double = js.native
+    var array: Double
     
-    var offset: js.Array[Double] = js.native
+    var offset: js.Array[Double]
   }
   object OffsetArg {
     
@@ -79,38 +88,37 @@ object mod {
     }
   }
   
-  @js.native
   trait Procedure extends StObject {
     
-    var argTypes: js.Array[ArgType] = js.native
+    var argTypes: js.Array[ArgType]
     
-    var arrayArgs: js.Array[Double] = js.native
+    var arrayArgs: js.Array[Double]
     
-    var arrayBlockIndices: js.Array[Double] = js.native
+    var arrayBlockIndices: js.Array[Double]
     
-    var blockSize: js.UndefOr[Double] = js.native
+    var blockSize: js.UndefOr[Double] = js.undefined
     
-    var body: CompiledRoutine = js.native
+    var body: CompiledRoutine
     
-    var debug: Boolean = js.native
+    var debug: Boolean
     
-    var funcName: String = js.native
+    var funcName: String
     
-    var indexArgs: js.Array[Double] = js.native
+    var indexArgs: js.Array[Double]
     
-    var offsetArgIndex: js.Array[Double] = js.native
+    var offsetArgIndex: js.Array[Double]
     
-    var offsetArgs: js.Array[OffsetArg] = js.native
+    var offsetArgs: js.Array[OffsetArg]
     
-    var post: CompiledRoutine = js.native
+    var post: CompiledRoutine
     
-    var pre: CompiledRoutine = js.native
+    var pre: CompiledRoutine
     
-    var scalarArgs: js.Array[Double] = js.native
+    var scalarArgs: js.Array[Double]
     
-    var shapeArgs: js.Array[Double] = js.native
+    var shapeArgs: js.Array[Double]
     
-    var shimArgs: js.Array[String] = js.native
+    var shimArgs: js.Array[String]
   }
   object Procedure {
     
@@ -215,24 +223,23 @@ object mod {
     }
   }
   
-  @js.native
   trait UserArgs extends StObject {
     
-    var args: js.Array[ArgType] = js.native
+    var args: js.Array[ArgType]
     
-    var blockSize: Double = js.native
+    var blockSize: Double
     
-    var body: CompiledRoutine = js.native
+    var body: CompiledRoutine
     
-    var debug: Boolean = js.native
+    var debug: Boolean
     
-    var funcName: String = js.native
+    var funcName: String
     
-    var post: CompiledRoutine = js.native
+    var post: CompiledRoutine
     
-    var pre: CompiledRoutine = js.native
+    var pre: CompiledRoutine
     
-    var printCode: js.UndefOr[Boolean] = js.native
+    var printCode: js.UndefOr[Boolean] = js.undefined
   }
   object UserArgs {
     

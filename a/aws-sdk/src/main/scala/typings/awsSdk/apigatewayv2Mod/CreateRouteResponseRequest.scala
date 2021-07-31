@@ -2,41 +2,39 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRouteResponseRequest extends StObject {
   
   /**
     * The API identifier.
     */
-  var ApiId: string = js.native
+  var ApiId: string
   
   /**
     * The model selection expression for the route response. Supported only for WebSocket APIs.
     */
-  var ModelSelectionExpression: js.UndefOr[SelectionExpression] = js.native
+  var ModelSelectionExpression: js.UndefOr[SelectionExpression] = js.undefined
   
   /**
     * The response models for the route response.
     */
-  var ResponseModels: js.UndefOr[RouteModels] = js.native
+  var ResponseModels: js.UndefOr[RouteModels] = js.undefined
   
   /**
     * The route response parameters.
     */
-  var ResponseParameters: js.UndefOr[RouteParameters] = js.native
+  var ResponseParameters: js.UndefOr[RouteParameters] = js.undefined
   
   /**
     * The route ID.
     */
-  var RouteId: string = js.native
+  var RouteId: string
   
   /**
     * The route response key.
     */
-  var RouteResponseKey: SelectionKey = js.native
+  var RouteResponseKey: SelectionKey
 }
 object CreateRouteResponseRequest {
   

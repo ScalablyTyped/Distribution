@@ -9,10 +9,10 @@ Simple react PDF viewer component with controls based on PDF.js.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pdf-viewer-reactjs |
-| Keywords           | pdf, pdf viewer, rotate, rotate pdf, zoom, zoom pdf, react, reactjs |
-| # releases         | 16 |
-| # dependents       | 2 |
-| # downloads        | 93882 |
+| Keywords           | pdf, document, pages, pdf viewer, pdf-viewer, rotate, rotate pdf, zoom, zoom pdf, react, reactjs, react-pdf, react-pdf-viewer |
+| # releases         | 21 |
+| # dependents       | 1 |
+| # downloads        | 167069 |
 | # stars            | 0 |
 
 ## Links

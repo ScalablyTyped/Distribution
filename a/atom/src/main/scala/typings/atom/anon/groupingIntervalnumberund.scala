@@ -3,17 +3,15 @@ package typings.atom.anon
 import typings.atom.mod.MarkerLayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  groupingInterval :number | undefined} & atom.atom.HistoryTransactionOptions */
-@js.native
 trait groupingIntervalnumberund extends StObject {
   
-  var groupingInterval: js.UndefOr[Double] = js.native
+  var groupingInterval: js.UndefOr[Double] = js.undefined
   
   /** When provided, skip taking snapshot for other selections markerLayers except given one. */
-  var selectionsMarkerLayer: js.UndefOr[MarkerLayer] = js.native
+  var selectionsMarkerLayer: js.UndefOr[MarkerLayer] = js.undefined
 }
 object groupingIntervalnumberund {
   

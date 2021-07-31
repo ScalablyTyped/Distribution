@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for the Row Properties dialog within the ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorTableRowPropertiesDialog extends ASPxClientHtmlEditorTableElementPropertiesDialog {
+trait ASPxClientHtmlEditorTableRowPropertiesDialog
+  extends StObject
+     with ASPxClientHtmlEditorTableElementPropertiesDialog {
   
   /**
     * Provides access to the client object of the "Height" combo box in the Html Editor's "Row Properties" dialog.
     */
-  def GetHeightTypeComboBox(): ASPxClientComboBox = js.native
+  def GetHeightTypeComboBox(): ASPxClientComboBox
   
   /**
     * Provides access to the client ASPxSpinEdit object that allows you to specify the row height in the Html Editor's "Row Properties" dialog.
     */
-  def GetHeightValueSpinEdit(): ASPxClientSpinEdit = js.native
+  def GetHeightValueSpinEdit(): ASPxClientSpinEdit
   
   /**
     * Provides access to the client ASPxComboBox object that allows you to specify the row height measurement unit in the Html Editor's "Row Properties" dialog.
     */
-  def GetHeightValueTypeComboBox(): ASPxClientComboBox = js.native
+  def GetHeightValueTypeComboBox(): ASPxClientComboBox
 }
 object ASPxClientHtmlEditorTableRowPropertiesDialog {
   

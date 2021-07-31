@@ -2,16 +2,14 @@ package typings.materialUi.MaterialUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ReactLink is from "react/addons"
-@js.native
 trait ReactLink[T] extends StObject {
   
-  def requestChange(newValue: T): Unit = js.native
+  def requestChange(newValue: T): Unit
   
-  var value: T = js.native
+  var value: T
 }
 object ReactLink {
   
@@ -22,7 +20,7 @@ object ReactLink {
   }
   
   @scala.inline
-  implicit class ReactLinkMutableBuilder[Self <: ReactLink[_], T] (val x: Self with ReactLink[T]) extends AnyVal {
+  implicit class ReactLinkMutableBuilder[Self <: ReactLink[?], T] (val x: Self & ReactLink[T]) extends AnyVal {
     
     @scala.inline
     def setRequestChange(value: T => Unit): Self = StObject.set(x, "requestChange", js.Any.fromFunction1(value))

@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mempoolStatusPbMod {
@@ -33,13 +32,11 @@ object mempoolStatusPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("libra-core/lib/@/generated/mempool_status_pb", "MempoolAddTransactionStatus.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): MempoolAddTransactionStatus = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): MempoolAddTransactionStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[MempoolAddTransactionStatus]
     
-    @JSImport("libra-core/lib/@/generated/mempool_status_pb", "MempoolAddTransactionStatus.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: MempoolAddTransactionStatus, reader: BinaryReader): MempoolAddTransactionStatus = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: MempoolAddTransactionStatus, reader: BinaryReader): MempoolAddTransactionStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[MempoolAddTransactionStatus]
     
     @JSImport("libra-core/lib/@/generated/mempool_status_pb", "MempoolAddTransactionStatus.extensions")
     @js.native
@@ -54,20 +51,17 @@ object mempoolStatusPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("libra-core/lib/@/generated/mempool_status_pb", "MempoolAddTransactionStatus.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: MempoolAddTransactionStatus, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: MempoolAddTransactionStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("libra-core/lib/@/generated/mempool_status_pb", "MempoolAddTransactionStatus.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: MempoolAddTransactionStatus): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: MempoolAddTransactionStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var code: MempoolAddTransactionStatusCode = js.native
+      var code: MempoolAddTransactionStatusCode
       
-      var message: String = js.native
+      var message: String
     }
     object AsObject {
       
@@ -96,30 +90,42 @@ object mempoolStatusPbMod {
   object MempoolAddTransactionStatusCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[MempoolAddTransactionStatusCode with Double] = js.native
+    def apply(value: Double): js.UndefOr[MempoolAddTransactionStatusCode & Double] = js.native
     
     @js.native
-    sealed trait INSUFFICIENTBALANCE extends MempoolAddTransactionStatusCode
-    /* 1 */ val INSUFFICIENTBALANCE: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.INSUFFICIENTBALANCE with Double = js.native
+    sealed trait INSUFFICIENTBALANCE
+      extends StObject
+         with MempoolAddTransactionStatusCode
+    /* 1 */ val INSUFFICIENTBALANCE: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.INSUFFICIENTBALANCE & Double = js.native
     
     @js.native
-    sealed trait INVALIDSEQNUMBER extends MempoolAddTransactionStatusCode
-    /* 2 */ val INVALIDSEQNUMBER: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.INVALIDSEQNUMBER with Double = js.native
+    sealed trait INVALIDSEQNUMBER
+      extends StObject
+         with MempoolAddTransactionStatusCode
+    /* 2 */ val INVALIDSEQNUMBER: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.INVALIDSEQNUMBER & Double = js.native
     
     @js.native
-    sealed trait INVALIDUPDATE extends MempoolAddTransactionStatusCode
-    /* 5 */ val INVALIDUPDATE: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.INVALIDUPDATE with Double = js.native
+    sealed trait INVALIDUPDATE
+      extends StObject
+         with MempoolAddTransactionStatusCode
+    /* 5 */ val INVALIDUPDATE: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.INVALIDUPDATE & Double = js.native
     
     @js.native
-    sealed trait MEMPOOLISFULL extends MempoolAddTransactionStatusCode
-    /* 3 */ val MEMPOOLISFULL: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.MEMPOOLISFULL with Double = js.native
+    sealed trait MEMPOOLISFULL
+      extends StObject
+         with MempoolAddTransactionStatusCode
+    /* 3 */ val MEMPOOLISFULL: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.MEMPOOLISFULL & Double = js.native
     
     @js.native
-    sealed trait TOOMANYTRANSACTIONS extends MempoolAddTransactionStatusCode
-    /* 4 */ val TOOMANYTRANSACTIONS: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.TOOMANYTRANSACTIONS with Double = js.native
+    sealed trait TOOMANYTRANSACTIONS
+      extends StObject
+         with MempoolAddTransactionStatusCode
+    /* 4 */ val TOOMANYTRANSACTIONS: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.TOOMANYTRANSACTIONS & Double = js.native
     
     @js.native
-    sealed trait VALID extends MempoolAddTransactionStatusCode
-    /* 0 */ val VALID: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.VALID with Double = js.native
+    sealed trait VALID
+      extends StObject
+         with MempoolAddTransactionStatusCode
+    /* 0 */ val VALID: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatusCode.VALID & Double = js.native
   }
 }

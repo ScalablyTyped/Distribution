@@ -29,10 +29,13 @@ import typings.tuyaPanelKit.tabRouterMod.TabNavigationState
 import typings.tuyaPanelKit.tabRouterMod.TabRouterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routersMod {
+  
+  @JSImport("tuya-panel-kit/@react-navigation/routers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Base router object that can be used when writing custom routers.
@@ -40,126 +43,125 @@ object routersMod {
     */
   object BaseRouter {
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "BaseRouter.getStateForAction")
+    @JSImport("tuya-panel-kit/@react-navigation/routers", "BaseRouter")
     @js.native
-    def getStateForAction[State /* <: Readonlykeystringindexnum */](state: State, action: CommonNavigationAction): State | PartialState[State] | Null = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "BaseRouter.shouldActionChangeFocus")
-    @js.native
-    def shouldActionChangeFocus(action: CommonNavigationAction): Boolean = js.native
+    @scala.inline
+    def getStateForAction[State /* <: Readonlykeystringindexnum */](state: State, action: CommonNavigationAction): State | PartialState[State] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateForAction")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State | PartialState[State] | Null]
+    
+    @scala.inline
+    def shouldActionChangeFocus(action: CommonNavigationAction): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldActionChangeFocus")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object CommonActions {
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "CommonActions.goBack")
+    @JSImport("tuya-panel-kit/@react-navigation/routers", "CommonActions")
     @js.native
-    def goBack(): Action = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "CommonActions.navigate")
-    @js.native
-    def navigate(name: String): Action = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "CommonActions.navigate")
-    @js.native
-    def navigate(name: String, params: js.Object): Action = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "CommonActions.navigate")
-    @js.native
-    def navigate(route: Key): Action = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "CommonActions.navigate")
-    @js.native
-    def navigate(route: Params): Action = js.native
+    @scala.inline
+    def goBack(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[Action]
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "CommonActions.reset")
-    @js.native
-    def reset(): Action = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "CommonActions.reset")
-    @js.native
-    def reset(state: ResetState): Action = js.native
+    @scala.inline
+    def navigate(name: String): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any]).asInstanceOf[Action]
+    @scala.inline
+    def navigate(name: String, params: js.Object): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Action]
+    @scala.inline
+    def navigate(route: Key): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
+    @scala.inline
+    def navigate(route: Params): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "CommonActions.setParams")
-    @js.native
-    def setParams(params: js.Object): Action = js.native
+    @scala.inline
+    def reset(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Action]
+    @scala.inline
+    def reset(state: ResetState): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(state.asInstanceOf[js.Any]).asInstanceOf[Action]
+    
+    @scala.inline
+    def setParams(params: js.Object): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("setParams")(params.asInstanceOf[js.Any]).asInstanceOf[Action]
   }
   
   object DrawerActions {
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "DrawerActions.closeDrawer")
+    @JSImport("tuya-panel-kit/@react-navigation/routers", "DrawerActions")
     @js.native
-    def closeDrawer(): DrawerActionType = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def closeDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[DrawerActionType]
     
     // tslint:disable-next-line no-redundant-undefined
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "DrawerActions.jumpTo")
-    @js.native
-    def jumpTo(name: String): TabActionType = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "DrawerActions.jumpTo")
-    @js.native
-    def jumpTo(name: String, params: js.Object): TabActionType = js.native
+    @scala.inline
+    def jumpTo(name: String): TabActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any]).asInstanceOf[TabActionType]
+    @scala.inline
+    def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "DrawerActions.openDrawer")
-    @js.native
-    def openDrawer(): DrawerActionType = js.native
+    @scala.inline
+    def openDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[DrawerActionType]
     
     // tslint:disable-next-line no-redundant-undefined
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "DrawerActions.toggleDrawer")
-    @js.native
-    def toggleDrawer(): DrawerActionType = js.native
+    @scala.inline
+    def toggleDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[DrawerActionType]
   }
   
-  @JSImport("tuya-panel-kit/@react-navigation/routers", "DrawerRouter")
-  @js.native
-  def DrawerRouter(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = js.native
+  @scala.inline
+  def DrawerRouter(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(hasOpenByDefaultRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
   
   object StackActions {
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "StackActions.pop")
+    @JSImport("tuya-panel-kit/@react-navigation/routers", "StackActions")
     @js.native
-    def pop(): StackActionType = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "StackActions.pop")
-    @js.native
-    def pop(count: Double): StackActionType = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "StackActions.popToTop")
-    @js.native
-    def popToTop(): StackActionType = js.native
+    @scala.inline
+    def pop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")().asInstanceOf[StackActionType]
+    @scala.inline
+    def pop(count: Double): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(count.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
     
-    // tslint:disable-next-line no-redundant-undefined
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "StackActions.push")
-    @js.native
-    def push(name: String): StackActionType = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "StackActions.push")
-    @js.native
-    def push(name: String, params: js.Object): StackActionType = js.native
+    @scala.inline
+    def popToTop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("popToTop")().asInstanceOf[StackActionType]
     
     // tslint:disable-next-line no-redundant-undefined
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "StackActions.replace")
-    @js.native
-    def replace(name: String): StackActionType = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "StackActions.replace")
-    @js.native
-    def replace(name: String, params: js.Object): StackActionType = js.native
+    @scala.inline
+    def push(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
+    @scala.inline
+    def push(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
+    
+    // tslint:disable-next-line no-redundant-undefined
+    @scala.inline
+    def replace(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
+    @scala.inline
+    def replace(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
   }
   
-  @JSImport("tuya-panel-kit/@react-navigation/routers", "StackRouter")
-  @js.native
+  @scala.inline
   def StackRouter(options: StackRouterOptions): Router[
     StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | Target | Type | PayloadSource | SourceTarget | TargetType | SourceTargetType
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("StackRouter")(options.asInstanceOf[js.Any]).asInstanceOf[Router[
+    StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
+    Source | Payload | Target | Type | PayloadSource | SourceTarget | TargetType | SourceTargetType
+  ]]
   
   object TabActions {
     
+    @JSImport("tuya-panel-kit/@react-navigation/routers", "TabActions")
+    @js.native
+    val ^ : js.Any = js.native
+    
     // tslint:disable-next-line no-redundant-undefined
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "TabActions.jumpTo")
-    @js.native
-    def jumpTo(name: String): TabActionType = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers", "TabActions.jumpTo")
-    @js.native
-    def jumpTo(name: String, params: js.Object): TabActionType = js.native
+    @scala.inline
+    def jumpTo(name: String): TabActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any]).asInstanceOf[TabActionType]
+    @scala.inline
+    def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
   }
   
-  @JSImport("tuya-panel-kit/@react-navigation/routers", "TabRouter")
-  @js.native
+  @scala.inline
   def TabRouter(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[
     TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | Target | Type | TabActionType
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[
+    TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
+    Source | Payload | Target | Type | TabActionType
+  ]]
 }

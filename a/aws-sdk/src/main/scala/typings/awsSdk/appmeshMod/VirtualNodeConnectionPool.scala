@@ -2,31 +2,29 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeConnectionPool extends StObject {
   
   /**
     * An object that represents a type of connection pool.
     */
-  var grpc: js.UndefOr[VirtualNodeGrpcConnectionPool] = js.native
+  var grpc: js.UndefOr[VirtualNodeGrpcConnectionPool] = js.undefined
   
   /**
     * An object that represents a type of connection pool.
     */
-  var http: js.UndefOr[VirtualNodeHttpConnectionPool] = js.native
+  var http: js.UndefOr[VirtualNodeHttpConnectionPool] = js.undefined
   
   /**
     * An object that represents a type of connection pool.
     */
-  var http2: js.UndefOr[VirtualNodeHttp2ConnectionPool] = js.native
+  var http2: js.UndefOr[VirtualNodeHttp2ConnectionPool] = js.undefined
   
   /**
     * An object that represents a type of connection pool.
     */
-  var tcp: js.UndefOr[VirtualNodeTcpConnectionPool] = js.native
+  var tcp: js.UndefOr[VirtualNodeTcpConnectionPool] = js.undefined
 }
 object VirtualNodeConnectionPool {
   

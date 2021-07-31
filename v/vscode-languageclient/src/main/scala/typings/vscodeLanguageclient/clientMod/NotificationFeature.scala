@@ -3,16 +3,14 @@ package typings.vscodeLanguageclient.clientMod
 import typings.vscodeLanguageclient.anon.Send
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationFeature[T /* <: js.Function */] extends StObject {
   
   /**
     * Triggers the corresponding RPC method.
     */
-  def getProvider(document: typings.vscode.mod.TextDocument): Send[T] = js.native
+  def getProvider(document: typings.vscode.mod.TextDocument): Send[T]
 }
 object NotificationFeature {
   
@@ -23,7 +21,7 @@ object NotificationFeature {
   }
   
   @scala.inline
-  implicit class NotificationFeatureMutableBuilder[Self <: NotificationFeature[_], T /* <: js.Function */] (val x: Self with NotificationFeature[T]) extends AnyVal {
+  implicit class NotificationFeatureMutableBuilder[Self <: NotificationFeature[?], T /* <: js.Function */] (val x: Self & NotificationFeature[T]) extends AnyVal {
     
     @scala.inline
     def setGetProvider(value: typings.vscode.mod.TextDocument => Send[T]): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))

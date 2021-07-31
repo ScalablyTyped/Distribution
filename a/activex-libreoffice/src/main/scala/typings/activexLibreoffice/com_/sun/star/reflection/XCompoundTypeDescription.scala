@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * For struct types, this type is superseded by {@link XStructTypeDescription} , which supports polymorphic struct types.
   */
-@js.native
-trait XCompoundTypeDescription extends XTypeDescription {
+trait XCompoundTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /**
     * Returns the type of the base type of the compound type. If the compound does not have a base type, the method returns a null interface.
     * @returns base interface or null
     */
-  val BaseType: XTypeDescription = js.native
+  val BaseType: XTypeDescription
   
   /**
     * Returns the member names of the struct/exception in IDL declaration order.
     * @returns members names of struct/exception
     */
-  val MemberNames: SafeArray[String] = js.native
+  val MemberNames: SafeArray[String]
   
   /**
     * Returns the member types of the struct/exception in IDL declaration order.
@@ -35,19 +35,19 @@ trait XCompoundTypeDescription extends XTypeDescription {
     * com.sun.star.reflection.XTypeDescription} whose type class is `UNKNOWN` and whose name is the name of the type parameter.
     * @returns members of struct/exception
     */
-  val MemberTypes: SafeArray[XTypeDescription] = js.native
+  val MemberTypes: SafeArray[XTypeDescription]
   
   /**
     * Returns the type of the base type of the compound type. If the compound does not have a base type, the method returns a null interface.
     * @returns base interface or null
     */
-  def getBaseType(): XTypeDescription = js.native
+  def getBaseType(): XTypeDescription
   
   /**
     * Returns the member names of the struct/exception in IDL declaration order.
     * @returns members names of struct/exception
     */
-  def getMemberNames(): SafeArray[String] = js.native
+  def getMemberNames(): SafeArray[String]
   
   /**
     * Returns the member types of the struct/exception in IDL declaration order.
@@ -56,7 +56,7 @@ trait XCompoundTypeDescription extends XTypeDescription {
     * com.sun.star.reflection.XTypeDescription} whose type class is `UNKNOWN` and whose name is the name of the type parameter.
     * @returns members of struct/exception
     */
-  def getMemberTypes(): SafeArray[XTypeDescription] = js.native
+  def getMemberTypes(): SafeArray[XTypeDescription]
 }
 object XCompoundTypeDescription {
   

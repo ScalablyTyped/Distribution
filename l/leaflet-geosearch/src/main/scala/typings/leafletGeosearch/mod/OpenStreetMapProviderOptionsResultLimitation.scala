@@ -4,23 +4,21 @@ import typings.leafletGeosearch.leafletGeosearchNumbers.`0`
 import typings.leafletGeosearch.leafletGeosearchNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenStreetMapProviderOptionsResultLimitation extends StObject {
   
-  var bounded: js.UndefOr[`0` | `1`] = js.native
+  var bounded: js.UndefOr[`0` | `1`] = js.undefined
   
-  var countrycodes: js.UndefOr[String] = js.native
+  var countrycodes: js.UndefOr[String] = js.undefined
   
-  var exclude_place_ids: js.UndefOr[String] = js.native
+  var exclude_place_ids: js.UndefOr[String] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var viewbox: js.UndefOr[String] = js.native
+  var viewbox: js.UndefOr[String] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object OpenStreetMapProviderOptionsResultLimitation {
   

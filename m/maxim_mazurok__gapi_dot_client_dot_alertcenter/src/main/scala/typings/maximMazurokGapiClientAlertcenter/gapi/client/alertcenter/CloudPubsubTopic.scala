@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudPubsubTopic extends StObject {
   
   /** Optional. The format of the payload that would be sent. If not specified the format will be JSON. */
-  var payloadFormat: js.UndefOr[String] = js.native
+  var payloadFormat: js.UndefOr[String] = js.undefined
   
   /** The `name` field of a Cloud Pubsub [Topic] (https://cloud.google.com/pubsub/docs/reference/rest/v1/projects.topics#Topic). */
-  var topicName: js.UndefOr[String] = js.native
+  var topicName: js.UndefOr[String] = js.undefined
 }
 object CloudPubsubTopic {
   

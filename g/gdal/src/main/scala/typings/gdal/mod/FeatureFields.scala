@@ -2,7 +2,6 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,7 +27,7 @@ trait FeatureFields extends StObject {
   def set(key: String, value: js.Any): Unit = js.native
   def set(key: Double, value: js.Any): Unit = js.native
   
-  def toArray(): js.Array[_] = js.native
+  def toArray(): js.Array[js.Any] = js.native
   
   def toJSON(): String = js.native
   

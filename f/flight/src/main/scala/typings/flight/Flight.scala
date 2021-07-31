@@ -7,13 +7,14 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Flight {
   
   @js.native
-  trait Advice extends Base {
+  trait Advice
+    extends StObject
+       with Base {
     
     /**
       * Run the customFunc function after the existingFunc function.
@@ -53,10 +54,9 @@ object Flight {
     def before(method: String, fn: js.Function): Unit = js.native
   }
   
-  @js.native
   trait AdviceStatic extends StObject {
     
-    def withAdvice(): js.Function = js.native
+    def withAdvice(): js.Function
   }
   object AdviceStatic {
     
@@ -238,7 +238,9 @@ object Flight {
   }
   
   @js.native
-  trait Component extends Advice {
+  trait Component
+    extends StObject
+       with Advice {
     
     @JSName("$node")
     var $node: JQuery[HTMLElement] = js.native
@@ -261,10 +263,9 @@ object Flight {
     def teardownAll(): Unit = js.native
   }
   
-  @js.native
   trait ComposeStatic extends StObject {
     
-    def mixin(base: js.Object, mixins: js.Array[js.Function]): Unit = js.native
+    def mixin(base: js.Object, mixins: js.Array[js.Function]): Unit
   }
   object ComposeStatic {
     
@@ -282,10 +283,9 @@ object Flight {
     }
   }
   
-  @js.native
   trait DebugStatic extends StObject {
     
-    var events: LogAll = js.native
+    var events: LogAll
   }
   object DebugStatic {
     
@@ -303,10 +303,9 @@ object Flight {
     }
   }
   
-  @js.native
   trait EventData extends StObject {
     
-    var el: HTMLElement = js.native
+    var el: HTMLElement
   }
   object EventData {
     
@@ -324,18 +323,41 @@ object Flight {
     }
   }
   
-  @js.native
   trait FlightStatic extends StObject {
     
-    var advice: AdviceStatic = js.native
+    var advice: AdviceStatic
     
-    def component(fns: js.Function*): ComponentStatic = js.native
+    def component(fns: js.Function*): ComponentStatic
     @JSName("component")
-    var component_Original: ComponentStatic = js.native
+    var component_Original: ComponentStatic
     
-    var compose: ComposeStatic = js.native
+    var compose: ComposeStatic
     
-    var utils: UtilsStatic = js.native
+    var utils: UtilsStatic
+  }
+  object FlightStatic {
+    
+    @scala.inline
+    def apply(advice: AdviceStatic, component: ComponentStatic, compose: ComposeStatic, utils: UtilsStatic): FlightStatic = {
+      val __obj = js.Dynamic.literal(advice = advice.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], compose = compose.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FlightStatic]
+    }
+    
+    @scala.inline
+    implicit class FlightStaticMutableBuilder[Self <: FlightStatic] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAdvice(value: AdviceStatic): Self = StObject.set(x, "advice", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setComponent(value: ComponentStatic): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCompose(value: ComposeStatic): Self = StObject.set(x, "compose", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUtils(value: UtilsStatic): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -362,9 +384,9 @@ object Flight {
     
     def throttle(func: js.Function, wait: Double): js.Function = js.native
     
-    def toArray(obj: js.Object): js.Array[_] = js.native
-    def toArray(obj: js.Object, from: Double): js.Array[_] = js.native
+    def toArray(obj: js.Object): js.Array[js.Any] = js.native
+    def toArray(obj: js.Object, from: Double): js.Array[js.Any] = js.native
     
-    def uniqueArray(array: js.Array[_]): js.Array[_] = js.native
+    def uniqueArray(array: js.Array[js.Any]): js.Array[js.Any] = js.native
   }
 }

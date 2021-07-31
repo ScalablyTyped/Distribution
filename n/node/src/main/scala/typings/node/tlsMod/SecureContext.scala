@@ -2,13 +2,11 @@ package typings.node.tlsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecureContext extends StObject {
   
-  var context: js.Any = js.native
+  var context: js.Any
 }
 object SecureContext {
   

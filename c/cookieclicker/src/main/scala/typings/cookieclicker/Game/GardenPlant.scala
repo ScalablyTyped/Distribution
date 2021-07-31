@@ -3,128 +3,126 @@ package typings.cookieclicker.Game
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GardenPlant extends StObject {
   
   /**
     * The minimum amount of life ticks to go through on tick
     */
-  var ageTick: Double = js.native
+  var ageTick: Double
   
   /**
     * The amount of additional ticks of life to go through on tick.
     * A part of the number is added to the age, part amount chosen randomly.
     */
-  var ageTickR: Double = js.native
+  var ageTickR: Double
   
   /**
     * The names of plants which are displayed to be the plants it mutate to
     */
-  var children: js.Array[String] = js.native
+  var children: js.Array[String]
   
   /**
     * The chance of contaminating a neighbor plant
     */
-  var contam: js.UndefOr[Double] = js.native
+  var contam: js.UndefOr[Double] = js.undefined
   
   /**
     * The cost of the plant, in second of CpS
     */
-  var cost: Double = js.native
+  var cost: Double
   
   /**
     * The minimum cost of the plant
     */
-  var costM: Double = js.native
+  var costM: Double
   
   /**
     * An additional description for the plant, eg. "Immortal"
     */
-  var detailsStr: js.UndefOr[String] = js.native
+  var detailsStr: js.UndefOr[String] = js.undefined
   
   /**
     * The HTML string of the effects of the plant
     */
-  var effsStr: String = js.native
+  var effsStr: String
   
   /**
     * True if the plant is a fungus
     */
-  var fungus: js.UndefOr[Boolean] = js.native
+  var fungus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The icon row for the plant in the plant sheet
     */
-  var icon: Double = js.native
+  var icon: Double
   
-  var id: Double = js.native
+  var id: Double
   
   /**
     * True if the plant should never go past the mature stage
     */
-  var immortal: js.UndefOr[PseudoBoolean | Boolean] = js.native
+  var immortal: js.UndefOr[PseudoBoolean | Boolean] = js.undefined
   
   /**
     * The internal name of the plant
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The seed icon element
     */
-  var l: HTMLDivElement = js.native
+  var l: HTMLDivElement
   
   /**
     * The amount of ticks required to pass to mature, with effects
     */
-  var mature: Double = js.native
+  var mature: Double
   
   /**
     * The amount of ticks required to pass to mature, without effects
     */
-  var matureBase: Double = js.native
+  var matureBase: Double
   
   /**
     * The displayed name of the plant
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * If true, the plant can't be contaminated
     */
-  var noContam: js.UndefOr[Boolean] = js.native
+  var noContam: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Called when the plant has died due to natural causes
     */
-  var onDie: js.UndefOr[js.Function2[/* x */ Double, /* y */ Double, Unit]] = js.native
+  var onDie: js.UndefOr[js.Function2[/* x */ Double, /* y */ Double, Unit]] = js.undefined
   
   /**
     * Called when the plant has been harvested
     */
-  var onHarvest: js.UndefOr[js.Function3[/* x */ Double, /* y */ Double, /* age */ Double, Unit]] = js.native
+  var onHarvest: js.UndefOr[js.Function3[/* x */ Double, /* y */ Double, /* age */ Double, Unit]] = js.undefined
   
   /**
     * Called when the plant has been harvested or freezed to death
     */
-  var onKill: js.UndefOr[js.Function3[/* x */ Double, /* y */ Double, /* age */ Double, Unit]] = js.native
+  var onKill: js.UndefOr[js.Function3[/* x */ Double, /* y */ Double, /* age */ Double, Unit]] = js.undefined
   
-  var plantable: Boolean = js.native
+  var plantable: Boolean
   
   /**
     * The flavour text of the upgrade
     */
-  var q: String = js.native
+  var q: String
   
-  var unlocked: PseudoBoolean | Boolean = js.native
+  var unlocked: PseudoBoolean | Boolean
   
   /**
     * True if the plant is a weed
     */
-  var weed: Boolean = js.native
+  var weed: Boolean
 }
 object GardenPlant {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobResult extends StObject {
   
   /**
     * An object that contains information about the requested job.
     */
-  var job: js.UndefOr[Job] = js.native
+  var job: js.UndefOr[Job] = js.undefined
 }
 object GetJobResult {
   

@@ -3,19 +3,19 @@ package typings.awsSdkClientPinpointBrowser
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUpdateAttributesRequestMod {
   
-  @js.native
-  trait UnmarshalledUpdateAttributesRequest extends UpdateAttributesRequest {
+  trait UnmarshalledUpdateAttributesRequest
+    extends StObject
+       with UpdateAttributesRequest {
     
     /**
       * The GLOB wildcard for removing the attributes in the application
       */
     @JSName("Blacklist")
-    var Blacklist_UnmarshalledUpdateAttributesRequest: js.UndefOr[js.Array[String]] = js.native
+    var Blacklist_UnmarshalledUpdateAttributesRequest: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnmarshalledUpdateAttributesRequest {
     
@@ -39,13 +39,12 @@ object typesUpdateAttributesRequestMod {
     }
   }
   
-  @js.native
   trait UpdateAttributesRequest extends StObject {
     
     /**
       * The GLOB wildcard for removing the attributes in the application
       */
-    var Blacklist: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var Blacklist: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
   }
   object UpdateAttributesRequest {
     

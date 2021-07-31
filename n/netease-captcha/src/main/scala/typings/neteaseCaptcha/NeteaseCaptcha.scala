@@ -10,47 +10,45 @@ import typings.neteaseCaptcha.neteaseCaptchaStrings.popup
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NeteaseCaptcha {
   
-  @js.native
   trait Config extends StObject {
     
     /**
       * Verification code id
       */
-    var captchaId: String = js.native
+    var captchaId: String
     
     /**
       * Selector string or HTMLElement to render widget into
       */
-    var element: String | HTMLElement = js.native
+    var element: String | HTMLElement
     
     /**
       * Defaults to 'zh-CN'
       */
-    var lang: js.UndefOr[`zh-CN` | en] = js.native
+    var lang: js.UndefOr[`zh-CN` | en] = js.undefined
     
     /**
       * Defaults to 'float' on desktop, and 'popup' on mobile
       */
-    var mode: js.UndefOr[float | embed | popup] = js.native
+    var mode: js.UndefOr[float | embed | popup] = js.undefined
     
-    var onReady: js.UndefOr[js.Function1[/* instance */ Instance, Unit]] = js.native
+    var onReady: js.UndefOr[js.Function1[/* instance */ Instance, Unit]] = js.undefined
     
-    var onVerify: js.UndefOr[js.Function2[/* error */ js.Any, /* data */ Data, Unit]] = js.native
+    var onVerify: js.UndefOr[js.Function2[/* error */ js.Any, /* data */ Data, Unit]] = js.undefined
     
     /**
       * Defaults to page protocol
       */
-    var protocol: js.UndefOr[http | https] = js.native
+    var protocol: js.UndefOr[http | https] = js.undefined
     
     /**
       * Defaults to 'auto'
       */
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object Config {
     
@@ -107,10 +105,9 @@ object NeteaseCaptcha {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var validate: String = js.native
+    var validate: String
   }
   object Data {
     
@@ -135,23 +132,22 @@ object NeteaseCaptcha {
     Unit
   ]
   
-  @js.native
   trait Instance extends StObject {
     
     /**
       * Destroy the current instance
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * Available when the mode is set to 'popup' - opens the popup to accept verification
       */
-    var popUp: js.UndefOr[js.Function0[Unit]] = js.native
+    var popUp: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Refresh the instance to get new verification information
       */
-    def refresh(): Unit = js.native
+    def refresh(): Unit
   }
   object Instance {
     

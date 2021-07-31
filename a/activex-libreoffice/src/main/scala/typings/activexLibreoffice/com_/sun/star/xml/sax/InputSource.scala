@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.xml.sax
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * as the argument of {@link XParser.parseStream()}as the return value of XEntityReslover::resolveEntity().
   */
-@js.native
 trait InputSource extends StObject {
   
   /** contains the byte input stream of the document. */
-  var aInputStream: XInputStream = js.native
+  var aInputStream: XInputStream
   
   /**
     * contains the encoding of the data stream. This is used by the parser to do Unicode conversions.
@@ -25,13 +23,13 @@ trait InputSource extends StObject {
     * Note that in general you do not need to specify an encoding. Either it is UTF-8 or UTF-16 which is recognized by the parser or it is specified in the
     * first line of the XML-File ( e.g. **?xml encoding="EUC-JP"?** ).
     */
-  var sEncoding: String = js.native
+  var sEncoding: String
   
   /** contains the public Id of the document, for example, needed in exception-message strings. */
-  var sPublicId: String = js.native
+  var sPublicId: String
   
   /** contains the system ID of the document. */
-  var sSystemId: String = js.native
+  var sSystemId: String
 }
 object InputSource {
   

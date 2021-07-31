@@ -2,7 +2,6 @@ package typings.std.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("VarDate")
 @js.native
 class VarDate protected ()
-  extends typings.std.VarDate
+  extends StObject
+     with typings.std.VarDate {
+  
+  /* CompleteClass */
+  var VarDate_typekey: typings.std.VarDate = js.native
+}

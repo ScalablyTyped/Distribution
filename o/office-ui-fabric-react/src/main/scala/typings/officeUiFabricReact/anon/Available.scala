@@ -2,25 +2,23 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Available extends StObject {
   
-  var available: String = js.native
+  var available: String
   
-  var away: String = js.native
+  var away: String
   
-  var background: String = js.native
+  var background: String
   
-  var busy: String = js.native
+  var busy: String
   
-  var dnd: String = js.native
+  var dnd: String
   
-  var offline: String = js.native
+  var offline: String
   
-  var oof: String = js.native
+  var oof: String
 }
 object Available {
   

@@ -2,19 +2,17 @@ package typings.kuromoji.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViterbiSearcher extends StObject {
   
-  def backward(lattice: ViterbiLattice): js.Array[ViterbiNode] = js.native
+  def backward(lattice: ViterbiLattice): js.Array[ViterbiNode]
   
-  var connection_costs: ConnectionCosts = js.native
+  var connection_costs: ConnectionCosts
   
-  def forward(lattice: ViterbiLattice): ViterbiLattice = js.native
+  def forward(lattice: ViterbiLattice): ViterbiLattice
   
-  def search(lattice: ViterbiLattice): js.Array[ViterbiNode] = js.native
+  def search(lattice: ViterbiLattice): js.Array[ViterbiNode]
 }
 object ViterbiSearcher {
   

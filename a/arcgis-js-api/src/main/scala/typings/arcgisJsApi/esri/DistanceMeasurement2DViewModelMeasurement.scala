@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DistanceMeasurement2DViewModelMeasurement extends Object {
+trait DistanceMeasurement2DViewModelMeasurement
+  extends StObject
+     with Object {
   
   /**
     * Measurement line.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#measurement)
     */
-  var geometry: js.Any = js.native
+  var geometry: js.Any
   
   /**
     * Line length (m).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#measurement)
     */
-  var length: Double = js.native
+  var length: Double
 }
 object DistanceMeasurement2DViewModelMeasurement {
   

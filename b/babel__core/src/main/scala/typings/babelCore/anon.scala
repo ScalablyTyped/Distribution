@@ -3,17 +3,15 @@ package typings.babelCore
 import typings.babelCore.mod.TransformOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Exported extends StObject {
     
-    var exported: js.Array[js.Object] = js.native
+    var exported: js.Array[js.Object]
     
-    var specifiers: js.Array[js.Object] = js.native
+    var specifiers: js.Array[js.Object]
   }
   object Exported {
     
@@ -40,22 +38,21 @@ object anon {
     }
   }
   
-  @js.native
   trait File extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var mappings: String = js.native
+    var mappings: String
     
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
     
-    var sourceRoot: js.UndefOr[String] = js.native
+    var sourceRoot: js.UndefOr[String] = js.undefined
     
-    var sources: js.Array[String] = js.native
+    var sources: js.Array[String]
     
-    var sourcesContent: js.UndefOr[js.Array[String]] = js.native
+    var sourcesContent: js.UndefOr[js.Array[String]] = js.undefined
     
-    var version: Double = js.native
+    var version: Double
   }
   object File {
     
@@ -112,14 +109,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Loc extends StObject {
     
-    var loc: js.Object = js.native
+    var loc: js.Object
     
-    var message: String = js.native
+    var message: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Loc {
     
@@ -145,18 +141,17 @@ object anon {
   }
   
   /* Inlined std.Readonly<@babel/core.@babel/core.PartialConfig> */
-  @js.native
   trait ReadonlyPartialConfig extends StObject {
     
-    val babelignore: js.UndefOr[String] = js.native
+    val babelignore: js.UndefOr[String] = js.undefined
     
-    val babelrc: js.UndefOr[String] = js.native
+    val babelrc: js.UndefOr[String] = js.undefined
     
-    val config: js.UndefOr[String] = js.native
+    val config: js.UndefOr[String] = js.undefined
     
-    def hasFilesystemConfig(): Boolean = js.native
+    def hasFilesystemConfig(): Boolean
     
-    val options: TransformOptions = js.native
+    val options: TransformOptions
   }
   object ReadonlyPartialConfig {
     
@@ -195,18 +190,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
     /**
       * The file that the user requested, e.g. `"@babel/env"`
       */
-    var request: String = js.native
+    var request: String
     
     /**
       * The full path of the resolved file, e.g. `"/tmp/node_modules/@babel/preset-env/lib/index.js"`
       */
-    var resolved: String = js.native
+    var resolved: String
   }
   object Request {
     

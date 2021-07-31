@@ -2,23 +2,21 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectAggregateResourceConfigResponse extends StObject {
   
   /**
     * The nextToken string returned in a previous request that you use to request the next page of results in a paginated response. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
   
-  var QueryInfo: js.UndefOr[typings.awsSdk.configserviceMod.QueryInfo] = js.native
+  var QueryInfo: js.UndefOr[typings.awsSdk.configserviceMod.QueryInfo] = js.undefined
   
   /**
     * Returns the results for the SQL query.
     */
-  var Results: js.UndefOr[typings.awsSdk.configserviceMod.Results] = js.native
+  var Results: js.UndefOr[typings.awsSdk.configserviceMod.Results] = js.undefined
 }
 object SelectAggregateResourceConfigResponse {
   

@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DomainDnsTxtRecord extends DomainDnsRecord {
+trait DomainDnsTxtRecord
+  extends StObject
+     with DomainDnsRecord {
   
   // Value used when configuring the text property at the DNS host.
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object DomainDnsTxtRecord {
   

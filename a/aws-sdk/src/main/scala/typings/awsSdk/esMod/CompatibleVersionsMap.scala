@@ -2,18 +2,16 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompatibleVersionsMap extends StObject {
   
   /**
     * The current version of Elasticsearch on which a domain is.
     */
-  var SourceVersion: js.UndefOr[ElasticsearchVersionString] = js.native
+  var SourceVersion: js.UndefOr[ElasticsearchVersionString] = js.undefined
   
-  var TargetVersions: js.UndefOr[ElasticsearchVersionList] = js.native
+  var TargetVersions: js.UndefOr[ElasticsearchVersionList] = js.undefined
 }
 object CompatibleVersionsMap {
   

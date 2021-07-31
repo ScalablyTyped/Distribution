@@ -2,26 +2,24 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FacetHit extends StObject {
   
   /**
     * The count.
     */
-  val count: Double = js.native
+  val count: Double
   
   /**
     * The highlighted value.
     */
-  val highlighted: String = js.native
+  val highlighted: String
   
   /**
     * The value of the facet.
     */
-  val value: String = js.native
+  val value: String
 }
 object FacetHit {
   

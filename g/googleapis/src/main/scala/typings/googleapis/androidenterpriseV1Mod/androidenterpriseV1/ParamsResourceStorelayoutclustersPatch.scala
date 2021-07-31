@@ -6,36 +6,36 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceStorelayoutclustersPatch extends StandardParameters {
+trait ParamsResourceStorelayoutclustersPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the cluster.
     */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the enterprise.
     */
-  var enterpriseId: js.UndefOr[String] = js.native
+  var enterpriseId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the page.
     */
-  var pageId: js.UndefOr[String] = js.native
+  var pageId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaStoreCluster] = js.native
+  var requestBody: js.UndefOr[SchemaStoreCluster] = js.undefined
 }
 object ParamsResourceStorelayoutclustersPatch {
   

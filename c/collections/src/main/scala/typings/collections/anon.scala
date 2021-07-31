@@ -3,28 +3,26 @@ package typings.collections
 import typings.collections.collectionsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Done[T] extends StObject {
     
-    var done: `true` = js.native
+    var done: `true`
     
-    var value: js.UndefOr[T | Null] = js.native
+    var value: js.UndefOr[T | Null] = js.undefined
   }
   object Done {
     
     @scala.inline
-    def apply[T](done: `true`): Done[T] = {
-      val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
+    def apply[T](): Done[T] = {
+      val __obj = js.Dynamic.literal(done = true)
       __obj.asInstanceOf[Done[T]]
     }
     
     @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done[_], T] (val x: Self with Done[T]) extends AnyVal {
+    implicit class DoneMutableBuilder[Self <: Done[?], T] (val x: Self & Done[T]) extends AnyVal {
       
       @scala.inline
       def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])

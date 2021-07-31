@@ -2,14 +2,14 @@ package typings.tcomb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MergeCommand extends Command {
+trait MergeCommand
+  extends StObject
+     with Command {
   
   @JSName("$merge")
-  var $merge: js.Object = js.native
+  var $merge: js.Object
 }
 object MergeCommand {
   

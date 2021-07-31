@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ReferenceProperty")
@@ -27,8 +26,11 @@ class ReferenceProperty protected () extends Property {
 }
 object ReferenceProperty {
   
-  /* static member */
-  @JSImport("cesium", "ReferenceProperty.fromString")
+  @JSImport("cesium", "ReferenceProperty")
   @js.native
-  def fromString(targetCollection: Entity, referenceString: String): ReferenceProperty = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def fromString(targetCollection: Entity, referenceString: String): ReferenceProperty = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(targetCollection.asInstanceOf[js.Any], referenceString.asInstanceOf[js.Any])).asInstanceOf[ReferenceProperty]
 }

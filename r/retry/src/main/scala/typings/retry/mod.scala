@@ -3,60 +3,51 @@ package typings.retry
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("retry", "createTimeout")
+  @JSImport("retry", JSImport.Namespace)
   @js.native
-  def createTimeout(attempt: Double): Double = js.native
-  @JSImport("retry", "createTimeout")
-  @js.native
-  def createTimeout(attempt: Double, options: CreateTimeoutOptions): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("retry", "operation")
-  @js.native
-  def operation(): RetryOperation = js.native
-  @JSImport("retry", "operation")
-  @js.native
-  def operation(options: OperationOptions): RetryOperation = js.native
+  @scala.inline
+  def createTimeout(attempt: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimeout")(attempt.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def createTimeout(attempt: Double, options: CreateTimeoutOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimeout")(attempt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("retry", "timeouts")
-  @js.native
-  def timeouts(): js.Array[Double] = js.native
-  @JSImport("retry", "timeouts")
-  @js.native
-  def timeouts(options: TimeoutsOptions): js.Array[Double] = js.native
+  @scala.inline
+  def operation(): RetryOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("operation")().asInstanceOf[RetryOperation]
+  @scala.inline
+  def operation(options: OperationOptions): RetryOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("operation")(options.asInstanceOf[js.Any]).asInstanceOf[RetryOperation]
   
-  @JSImport("retry", "wrap")
-  @js.native
-  def wrap(`object`: js.Object): Unit = js.native
-  @JSImport("retry", "wrap")
-  @js.native
-  def wrap(`object`: js.Object, methods: js.Array[String]): Unit = js.native
-  @JSImport("retry", "wrap")
-  @js.native
-  def wrap(`object`: js.Object, options: js.UndefOr[scala.Nothing], methods: js.Array[String]): Unit = js.native
-  @JSImport("retry", "wrap")
-  @js.native
-  def wrap(`object`: js.Object, options: OperationOptions): Unit = js.native
-  @JSImport("retry", "wrap")
-  @js.native
-  def wrap(`object`: js.Object, options: OperationOptions, methods: js.Array[String]): Unit = js.native
+  @scala.inline
+  def timeouts(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeouts")().asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def timeouts(options: TimeoutsOptions): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeouts")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @js.native
+  @scala.inline
+  def wrap(`object`: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def wrap(`object`: js.Object, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def wrap(`object`: js.Object, options: Unit, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def wrap(`object`: js.Object, options: OperationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def wrap(`object`: js.Object, options: OperationOptions, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait AttemptTimeoutOptions extends StObject {
     
     /**
       * Callback to execute when the operation takes longer than the timeout.
       */
-    var callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A timeout in milliseconds.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object AttemptTimeoutOptions {
     
@@ -83,32 +74,31 @@ object mod {
     }
   }
   
-  @js.native
   trait CreateTimeoutOptions extends StObject {
     
     /**
       * The exponential factor to use.
       * @default 2
       */
-    var factor: js.UndefOr[Double] = js.native
+    var factor: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of milliseconds between two retries.
       * @default Infinity
       */
-    var maxTimeout: js.UndefOr[Double] = js.native
+    var maxTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of milliseconds before starting the first retry.
       * @default 1000
       */
-    var minTimeout: js.UndefOr[Double] = js.native
+    var minTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Randomizes the timeouts by multiplying a factor between 1-2.
       * @default false
       */
-    var randomize: js.UndefOr[Boolean] = js.native
+    var randomize: js.UndefOr[Boolean] = js.undefined
   }
   object CreateTimeoutOptions {
     
@@ -147,26 +137,27 @@ object mod {
     }
   }
   
-  @js.native
-  trait OperationOptions extends TimeoutsOptions {
+  trait OperationOptions
+    extends StObject
+       with TimeoutsOptions {
     
     /**
       * Whether to retry forever.
       * @default false
       */
-    var forever: js.UndefOr[Boolean] = js.native
+    var forever: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum time (in milliseconds) that the retried operation is allowed to run.
       * @default Infinity
       */
-    var maxRetryTime: js.UndefOr[Double] = js.native
+    var maxRetryTime: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to [unref](https://nodejs.org/api/timers.html#timers_unref) the setTimeout's.
       * @default false
       */
-    var unref: js.UndefOr[Boolean] = js.native
+    var unref: js.UndefOr[Boolean] = js.undefined
   }
   object OperationOptions {
     
@@ -253,14 +244,15 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
-  trait TimeoutsOptions extends CreateTimeoutOptions {
+  trait TimeoutsOptions
+    extends StObject
+       with CreateTimeoutOptions {
     
     /**
       * The maximum amount of times to retry the operation.
       * @default 10
       */
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
   }
   object TimeoutsOptions {
     

@@ -2,21 +2,21 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaGroupProps extends AreaBaseProps {
+trait AreaGroupProps
+  extends StObject
+     with AreaBaseProps {
   
   /**
     * Specify `width` and `height` to be able to use percentage values in transforms.
     */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Specify `width` and `height` to be able to use percentage values in transforms.
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object AreaGroupProps {
   

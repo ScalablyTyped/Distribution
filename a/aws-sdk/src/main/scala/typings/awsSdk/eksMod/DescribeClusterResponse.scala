@@ -2,16 +2,14 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeClusterResponse extends StObject {
   
   /**
     * The full description of your specified cluster.
     */
-  var cluster: js.UndefOr[Cluster] = js.native
+  var cluster: js.UndefOr[Cluster] = js.undefined
 }
 object DescribeClusterResponse {
   

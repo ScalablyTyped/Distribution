@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PlaybackPositionChangeRequested event. */
-@js.native
 trait PlaybackPositionChangeRequestedEventArgs extends StObject {
   
   /** Gets a value indicating the requested offset into the media item. */
-  var requestedPlaybackPosition: Double = js.native
+  var requestedPlaybackPosition: Double
 }
 object PlaybackPositionChangeRequestedEventArgs {
   

@@ -3,15 +3,25 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerNavMod {
   
   @JSImport("carbon-components/components/ui-shell/header-nav", JSImport.Default)
   @js.native
-  class default protected () extends HeaderNav {
+  class default protected ()
+    extends StObject
+       with HeaderNav {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _handleKeyDown(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def getCurrentNavigation(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def navigate(direction: js.Any): Unit = js.native
   }
   object default {
     
@@ -48,14 +58,13 @@ object headerNavMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait HeaderNav extends StObject {
+  - Dropped any */ trait HeaderNav extends StObject {
     
-    def _handleKeyDown(event: js.Any): Unit = js.native
+    def _handleKeyDown(event: js.Any): Unit
     
-    def getCurrentNavigation(): js.Any = js.native
+    def getCurrentNavigation(): js.Any
     
-    def navigate(direction: js.Any): Unit = js.native
+    def navigate(direction: js.Any): Unit
   }
   object HeaderNav {
     

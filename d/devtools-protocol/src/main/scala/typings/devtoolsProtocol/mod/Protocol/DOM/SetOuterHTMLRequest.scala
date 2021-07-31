@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetOuterHTMLRequest extends StObject {
   
   /**
     * Id of the node to set markup for.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
   
   /**
     * Outer HTML markup to set.
     */
-  var outerHTML: String = js.native
+  var outerHTML: String
 }
 object SetOuterHTMLRequest {
   

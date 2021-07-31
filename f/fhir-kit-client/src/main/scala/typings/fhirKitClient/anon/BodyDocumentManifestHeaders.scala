@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.DocumentManifest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyDocumentManifestHeaders extends StObject {
   
-  var body: DocumentManifest = js.native
+  var body: DocumentManifest
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DocumentManifest = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DocumentManifest
 }
 object BodyDocumentManifestHeaders {
   
   @scala.inline
-  def apply(
-    body: DocumentManifest,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.DocumentManifest
-  ): BodyDocumentManifestHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: DocumentManifest, id: String): BodyDocumentManifestHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "DocumentManifest")
     __obj.asInstanceOf[BodyDocumentManifestHeaders]
   }
   

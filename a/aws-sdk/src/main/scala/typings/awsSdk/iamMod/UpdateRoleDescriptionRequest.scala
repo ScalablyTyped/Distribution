@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRoleDescriptionRequest extends StObject {
   
   /**
     * The new description that you want to apply to the specified role.
     */
-  var Description: roleDescriptionType = js.native
+  var Description: roleDescriptionType
   
   /**
     * The name of the role that you want to modify.
     */
-  var RoleName: roleNameType = js.native
+  var RoleName: roleNameType
 }
 object UpdateRoleDescriptionRequest {
   

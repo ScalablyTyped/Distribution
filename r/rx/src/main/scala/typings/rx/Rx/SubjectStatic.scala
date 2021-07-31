@@ -3,12 +3,12 @@ package typings.rx.Rx
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SubjectStatic
-  extends /**
+  extends StObject
+     with /**
   * Creates a subject.
   */
 Instantiable0[Subject[js.Object]] {
@@ -20,7 +20,7 @@ Instantiable0[Subject[js.Object]] {
     * @returns {Subject} Subject implemented using the given observer and observable.
     */
   def create[T](): Subject[T] = js.native
-  def create[T](observer: js.UndefOr[scala.Nothing], observable: IObservable[T]): Subject[T] = js.native
+  def create[T](observer: Unit, observable: IObservable[T]): Subject[T] = js.native
   def create[T](observer: IObserver[T]): Subject[T] = js.native
   def create[T](observer: IObserver[T], observable: IObservable[T]): Subject[T] = js.native
 }

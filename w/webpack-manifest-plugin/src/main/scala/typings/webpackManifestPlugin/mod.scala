@@ -4,24 +4,25 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webpack-manifest-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Chunk
-    extends /* propName */ StringDictionary[js.Any] {
+    extends StObject
+       with /* propName */ StringDictionary[js.Any] {
     
-    var id: String = js.native
+    var id: String
     
-    var parents: js.Array[String] = js.native
+    var parents: js.Array[String]
   }
   object Chunk {
     
@@ -45,31 +46,30 @@ object mod {
     }
   }
   
-  @js.native
   trait FileDescriptor extends StObject {
     
     /** Only available is isChunk is true. */
-    var chunk: js.UndefOr[Chunk] = js.native
+    var chunk: js.UndefOr[Chunk] = js.undefined
     
-    var isAsset: Boolean = js.native
+    var isAsset: Boolean
     
-    var isChunk: Boolean = js.native
+    var isChunk: Boolean
     
     /** Is required to run you app. Cannot be true if isChunk is false. */
-    var isInitial: Boolean = js.native
+    var isInitial: Boolean
     
     /** Is required by a module. Cannot be true if isAsset is false. */
-    var isModuleAsset: Boolean = js.native
+    var isModuleAsset: Boolean
     
-    var name: String | Null = js.native
+    var name: String | Null
     
-    var path: String = js.native
+    var path: String
   }
   object FileDescriptor {
     
     @scala.inline
     def apply(isAsset: Boolean, isChunk: Boolean, isInitial: Boolean, isModuleAsset: Boolean, path: String): FileDescriptor = {
-      val __obj = js.Dynamic.literal(isAsset = isAsset.asInstanceOf[js.Any], isChunk = isChunk.asInstanceOf[js.Any], isInitial = isInitial.asInstanceOf[js.Any], isModuleAsset = isModuleAsset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(isAsset = isAsset.asInstanceOf[js.Any], isChunk = isChunk.asInstanceOf[js.Any], isInitial = isInitial.asInstanceOf[js.Any], isModuleAsset = isModuleAsset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], name = null)
       __obj.asInstanceOf[FileDescriptor]
     }
     
@@ -105,24 +105,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * A path prefix for all keys. Useful for including your output path in the manifest.
       */
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
     /**
       * The manifest filename in your output directory.
       * Default: manifest.json
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /**
       * Filter out files.
       */
-    var filter: js.UndefOr[js.Function1[/* file */ FileDescriptor, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* file */ FileDescriptor, Boolean]] = js.undefined
     
     /**
       * Create the manifest. It can return anything as long as it's serialisable by JSON.stringify.
@@ -134,18 +133,18 @@ object mod {
           /* entrypoints */ StringDictionary[js.Array[String]], 
           js.Object
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Modify files details before the manifest is created.
       */
-    var map: js.UndefOr[js.Function1[/* file */ FileDescriptor, FileDescriptor]] = js.native
+    var map: js.UndefOr[js.Function1[/* file */ FileDescriptor, FileDescriptor]] = js.undefined
     
     /**
       * A path prefix that will be added to values of the manifest.
       * Default: output.publicPath
       */
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
     
     /**
       * A cache of key/value pairs to used to seed the manifest. This may include a set of custom key/value pairs to include in your manifest,
@@ -153,23 +152,23 @@ object mod {
       * To combine manifests, pass a shared seed object to each compiler's ManifestPlugin instance.
       * Default: {}
       */
-    var seed: js.UndefOr[js.Object] = js.native
+    var seed: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Output manifest file in different format then json (i.e. yaml).
       */
-    var serialize: js.UndefOr[js.Function1[/* manifest */ js.Object, String]] = js.native
+    var serialize: js.UndefOr[js.Function1[/* manifest */ js.Object, String]] = js.undefined
     
     /**
       * Sort files before they are passed to generate.
       */
-    var sort: js.UndefOr[js.Function2[/* a */ FileDescriptor, /* b */ FileDescriptor, Double]] = js.native
+    var sort: js.UndefOr[js.Function2[/* a */ FileDescriptor, /* b */ FileDescriptor, Double]] = js.undefined
     
     /**
       * If set to true will emit to build folder and memory in combination with webpack-dev-server
       * Default: false
       */
-    var writeToFileEmit: js.UndefOr[Boolean] = js.native
+    var writeToFileEmit: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

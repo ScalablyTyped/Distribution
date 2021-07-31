@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,37 +9,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * notifications when there are status changes detected by the associated
   * health check service.
   */
-@js.native
 trait SchemaNotificationEndpoint extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Settings of the gRPC notification endpoint including the endpoint URL and
     * the retry duration.
     */
-  var grpcSettings: js.UndefOr[SchemaNotificationEndpointGrpcSettings] = js.native
+  var grpcSettings: js.UndefOr[SchemaNotificationEndpointGrpcSettings] = js.undefined
   
   /**
     * [Output Only] A unique identifier for this resource type. The server
     * generates this identifier.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#notificationEndpoint
     * for notification endpoints.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -51,7 +49,7 @@ trait SchemaNotificationEndpoint extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] URL of the region where the notification endpoint resides.
@@ -59,12 +57,12 @@ trait SchemaNotificationEndpoint extends StObject {
     * field as part of the HTTP request URL. It is not settable as a field in
     * the request body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaNotificationEndpoint {
   

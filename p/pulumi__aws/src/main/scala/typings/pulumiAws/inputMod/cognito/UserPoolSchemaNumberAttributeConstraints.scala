@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.cognito
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolSchemaNumberAttributeConstraints extends StObject {
   
   /**
     * The maximum value of an attribute that is of the number data type.
     */
-  var maxValue: js.UndefOr[Input[String]] = js.native
+  var maxValue: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The minimum value of an attribute that is of the number data type.
     */
-  var minValue: js.UndefOr[Input[String]] = js.native
+  var minValue: js.UndefOr[Input[String]] = js.undefined
 }
 object UserPoolSchemaNumberAttributeConstraints {
   

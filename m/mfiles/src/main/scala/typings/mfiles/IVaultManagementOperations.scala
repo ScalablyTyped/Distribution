@@ -2,37 +2,35 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultManagementOperations extends StObject {
   
-  def ArchiveOldVersions(ArchiveOldVersionsJob: IArchiveOldVersionsJob): Unit = js.native
+  def ArchiveOldVersions(ArchiveOldVersionsJob: IArchiveOldVersionsJob): Unit
   
-  def ExportContent(ExportContentJob: IExportContentJob): Unit = js.native
+  def ExportContent(ExportContentJob: IExportContentJob): Unit
   
-  def GetEventHandlers(): IEventHandlers = js.native
+  def GetEventHandlers(): IEventHandlers
   
-  def GetVaultProperties(): IVaultProperties = js.native
+  def GetVaultProperties(): IVaultProperties
   
-  def ImportContent(ImportContentJob: IImportContentJob): Unit = js.native
+  def ImportContent(ImportContentJob: IImportContentJob): Unit
   
-  def ImportContentAsync(ImportContentJob: IImportContentJob): Double = js.native
+  def ImportContentAsync(ImportContentJob: IImportContentJob): Double
   
-  def IsAsyncJobRunning(JobID: Double): Boolean = js.native
+  def IsAsyncJobRunning(JobID: Double): Boolean
   
-  def PreviewImportContent(ImportContentJob: IImportContentJob, SummaryFile: String): Unit = js.native
+  def PreviewImportContent(ImportContentJob: IImportContentJob, SummaryFile: String): Unit
   
-  def RebuildFullTextSearchIndex(Metadata: Boolean, FileContents: Boolean): Unit = js.native
+  def RebuildFullTextSearchIndex(Metadata: Boolean, FileContents: Boolean): Unit
   
-  def SetEventHandlers(EventHandlers: IEventHandlers): Unit = js.native
+  def SetEventHandlers(EventHandlers: IEventHandlers): Unit
   
-  def UpdateVaultProperties(VaultProperties: IVaultProperties, RegistrationDataOnly: Boolean): Unit = js.native
+  def UpdateVaultProperties(VaultProperties: IVaultProperties, RegistrationDataOnly: Boolean): Unit
   
-  def VerifyVault(VerifyVaultJob: IVerifyVaultJob): IVerifyVaultJobOutput = js.native
+  def VerifyVault(VerifyVaultJob: IVerifyVaultJob): IVerifyVaultJobOutput
   
-  def WaitAsyncJob(JobID: Double): Unit = js.native
+  def WaitAsyncJob(JobID: Double): Unit
 }
 object IVaultManagementOperations {
   

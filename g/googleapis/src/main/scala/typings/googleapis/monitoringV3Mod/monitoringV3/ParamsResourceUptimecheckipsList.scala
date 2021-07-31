@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUptimecheckipsList extends StandardParameters {
+trait ParamsResourceUptimecheckipsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The maximum number of results to return in a single response. The server
@@ -23,7 +23,7 @@ trait ParamsResourceUptimecheckipsList extends StandardParameters {
     * page. If the page_size is <=0, the server will decide the number of
     * results to be returned. NOTE: this field is not yet implemented
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * If this field is not empty then it must contain the nextPageToken value
@@ -31,7 +31,7 @@ trait ParamsResourceUptimecheckipsList extends StandardParameters {
     * method to return more results from the previous method call. NOTE: this
     * field is not yet implemented
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUptimecheckipsList {
   

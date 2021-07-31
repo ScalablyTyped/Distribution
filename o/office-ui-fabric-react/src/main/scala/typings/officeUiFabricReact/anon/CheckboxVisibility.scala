@@ -5,25 +5,23 @@ import typings.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckboxVisibility extends StObject {
   
-  var checkboxVisibility: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility = js.native
+  var checkboxVisibility: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility
   
-  var compact: Boolean = js.native
+  var compact: Boolean
   
-  var constrainMode: ConstrainMode = js.native
+  var constrainMode: ConstrainMode
   
-  var isHeaderVisible: Boolean = js.native
+  var isHeaderVisible: Boolean
   
-  var layoutMode: DetailsListLayoutMode = js.native
+  var layoutMode: DetailsListLayoutMode
   
-  var selectionMode: SelectionMode = js.native
+  var selectionMode: SelectionMode
   
-  var useFastIcons: Boolean = js.native
+  var useFastIcons: Boolean
 }
 object CheckboxVisibility {
   

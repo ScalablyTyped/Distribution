@@ -14,7 +14,6 @@ import typings.std.HTMLInputElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customInputMod {
@@ -57,21 +56,17 @@ object customInputMod {
       @scala.inline
       def keyboardPrefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyboardPrefixCls")(x.asInstanceOf[js.Any])
       
-      @JSImport("antd-mobile/lib/input-item/CustomInput", "default.defaultProps.onBlur")
-      @js.native
-      def onBlur(): Unit = js.native
+      @scala.inline
+      def onBlur(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBlur")().asInstanceOf[Unit]
       
-      @JSImport("antd-mobile/lib/input-item/CustomInput", "default.defaultProps.onChange")
-      @js.native
-      def onChange(): Unit = js.native
+      @scala.inline
+      def onChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")().asInstanceOf[Unit]
       
-      @JSImport("antd-mobile/lib/input-item/CustomInput", "default.defaultProps.onFocus")
-      @js.native
-      def onFocus(): Unit = js.native
+      @scala.inline
+      def onFocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFocus")().asInstanceOf[Unit]
       
-      @JSImport("antd-mobile/lib/input-item/CustomInput", "default.defaultProps.onVirtualKeyboardConfirm")
-      @js.native
-      def onVirtualKeyboardConfirm(): Unit = js.native
+      @scala.inline
+      def onVirtualKeyboardConfirm(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVirtualKeyboardConfirm")().asInstanceOf[Unit]
       
       @JSImport("antd-mobile/lib/input-item/CustomInput", "default.defaultProps.placeholder")
       @js.native
@@ -137,50 +132,49 @@ object customInputMod {
     def unLinkInput(): Unit = js.native
   }
   
-  @js.native
   trait NumberInputProps extends StObject {
     
-    var autoAdjustHeight: js.UndefOr[Boolean] = js.native
+    var autoAdjustHeight: js.UndefOr[Boolean] = js.undefined
     
-    var backspaceLabel: js.Any = js.native
+    var backspaceLabel: js.Any
     
-    var cancelKeyboardLabel: js.Any = js.native
+    var cancelKeyboardLabel: js.Any
     
-    var confirmLabel: js.Any = js.native
+    var confirmLabel: js.Any
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var disabledKeys: js.UndefOr[js.Array[InputKey] | Null] = js.native
+    var disabledKeys: js.UndefOr[js.Array[InputKey] | Null] = js.undefined
     
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardPrefixCls: js.UndefOr[String] = js.native
+    var keyboardPrefixCls: js.UndefOr[String] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var moneyKeyboardAlign: js.UndefOr[left | right | String] = js.native
+    var moneyKeyboardAlign: js.UndefOr[left | right | String] = js.undefined
     
-    var moneyKeyboardHeader: js.UndefOr[ReactNode] = js.native
+    var moneyKeyboardHeader: js.UndefOr[ReactNode] = js.undefined
     
-    var moneyKeyboardWrapProps: js.UndefOr[js.Object] = js.native
+    var moneyKeyboardWrapProps: js.UndefOr[js.Object] = js.undefined
     
-    var onBlur: js.UndefOr[InputEventHandler] = js.native
+    var onBlur: js.UndefOr[InputEventHandler] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[HTMLInputElement], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[HTMLInputElement], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[InputEventHandler] = js.native
+    var onFocus: js.UndefOr[InputEventHandler] = js.undefined
     
-    var onVirtualKeyboardConfirm: js.UndefOr[InputEventHandler] = js.native
+    var onVirtualKeyboardConfirm: js.UndefOr[InputEventHandler] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object NumberInputProps {
     

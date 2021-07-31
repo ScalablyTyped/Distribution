@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,182 +11,302 @@ sealed trait ListTemplateType extends StObject
 object ListTemplateType extends StObject {
   
   @js.native
-  sealed trait accessRequest extends ListTemplateType
+  sealed trait accessRequest
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait adminTasks extends ListTemplateType
+  sealed trait adminTasks
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait agenda extends ListTemplateType
+  sealed trait agenda
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait announcements extends ListTemplateType
+  sealed trait announcements
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait appDataCatalog extends ListTemplateType
+  sealed trait appDataCatalog
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait callTrack extends ListTemplateType
+  sealed trait callTrack
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait categories extends ListTemplateType
+  sealed trait categories
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait circulation extends ListTemplateType
+  sealed trait circulation
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait comments extends ListTemplateType
+  sealed trait comments
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait contacts extends ListTemplateType
+  sealed trait contacts
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait customGrid extends ListTemplateType
+  sealed trait customGrid
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait dataConnectionLibrary extends ListTemplateType
+  sealed trait dataConnectionLibrary
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait dataSources extends ListTemplateType
+  sealed trait dataSources
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait decision extends ListTemplateType
+  sealed trait decision
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait designCatalog extends ListTemplateType
+  sealed trait designCatalog
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait developerSiteDraftApps extends ListTemplateType
+  sealed trait developerSiteDraftApps
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait discussionBoard extends ListTemplateType
+  sealed trait discussionBoard
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait documentLibrary extends ListTemplateType
+  sealed trait documentLibrary
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait events extends ListTemplateType
+  sealed trait events
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait externalList extends ListTemplateType
+  sealed trait externalList
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait facility extends ListTemplateType
+  sealed trait facility
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait ganttTasks extends ListTemplateType
+  sealed trait ganttTasks
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait genericList extends ListTemplateType
+  sealed trait genericList
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait healthReports extends ListTemplateType
+  sealed trait healthReports
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait healthRules extends ListTemplateType
+  sealed trait healthRules
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait helpLibrary extends ListTemplateType
+  sealed trait helpLibrary
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait holidays extends ListTemplateType
+  sealed trait holidays
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait homePageLibrary extends ListTemplateType
+  sealed trait homePageLibrary
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait iMEDic extends ListTemplateType
+  sealed trait iMEDic
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait invalidType extends ListTemplateType
+  sealed trait invalidType
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait issueTracking extends ListTemplateType
+  sealed trait issueTracking
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait links extends ListTemplateType
+  sealed trait links
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait listTemplateCatalog extends ListTemplateType
+  sealed trait listTemplateCatalog
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait maintenanceLogs extends ListTemplateType
+  sealed trait maintenanceLogs
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait masterPageCatalog extends ListTemplateType
+  sealed trait masterPageCatalog
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait meetingObjective extends ListTemplateType
+  sealed trait meetingObjective
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait meetingUser extends ListTemplateType
+  sealed trait meetingUser
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait meetings extends ListTemplateType
+  sealed trait meetings
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait mySiteDocumentLibrary extends ListTemplateType
+  sealed trait mySiteDocumentLibrary
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait noCodePublic extends ListTemplateType
+  sealed trait noCodePublic
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait noCodeWorkflows extends ListTemplateType
+  sealed trait noCodeWorkflows
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait noListTemplate extends ListTemplateType
+  sealed trait noListTemplate
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait pictureLibrary extends ListTemplateType
+  sealed trait pictureLibrary
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait posts extends ListTemplateType
+  sealed trait posts
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait solutionCatalog extends ListTemplateType
+  sealed trait solutionCatalog
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait survey extends ListTemplateType
+  sealed trait survey
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait tasks extends ListTemplateType
+  sealed trait tasks
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait tasksWithTimelineAndHierarchy extends ListTemplateType
+  sealed trait tasksWithTimelineAndHierarchy
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait textBox extends ListTemplateType
+  sealed trait textBox
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait themeCatalog extends ListTemplateType
+  sealed trait themeCatalog
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait thingsToBring extends ListTemplateType
+  sealed trait thingsToBring
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait timecard extends ListTemplateType
+  sealed trait timecard
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait userInformation extends ListTemplateType
+  sealed trait userInformation
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait webPageLibrary extends ListTemplateType
+  sealed trait webPageLibrary
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait webPartCatalog extends ListTemplateType
+  sealed trait webPartCatalog
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait webTemplateCatalog extends ListTemplateType
+  sealed trait webTemplateCatalog
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait whereabouts extends ListTemplateType
+  sealed trait whereabouts
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait workflowHistory extends ListTemplateType
+  sealed trait workflowHistory
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait workflowProcess extends ListTemplateType
+  sealed trait workflowProcess
+    extends StObject
+       with ListTemplateType
   
   @js.native
-  sealed trait xMLForm extends ListTemplateType
+  sealed trait xMLForm
+    extends StObject
+       with ListTemplateType
 }

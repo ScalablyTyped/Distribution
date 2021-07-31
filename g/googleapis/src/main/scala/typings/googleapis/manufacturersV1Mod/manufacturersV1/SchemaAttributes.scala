@@ -2,224 +2,222 @@ package typings.googleapis.manufacturersV1Mod.manufacturersV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Attributes of the product. For more information, see
   * https://support.google.com/manufacturers/answer/6124116.
   */
-@js.native
 trait SchemaAttributes extends StObject {
   
   /**
     * The additional images of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#addlimage.
     */
-  var additionalImageLink: js.UndefOr[js.Array[SchemaImage]] = js.native
+  var additionalImageLink: js.UndefOr[js.Array[SchemaImage]] = js.undefined
   
   /**
     * The target age group of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#agegroup.
     */
-  var ageGroup: js.UndefOr[String] = js.native
+  var ageGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The brand name of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#brand.
     */
-  var brand: js.UndefOr[String] = js.native
+  var brand: js.UndefOr[String] = js.undefined
   
   /**
     * The capacity of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#capacity.
     */
-  var capacity: js.UndefOr[SchemaCapacity] = js.native
+  var capacity: js.UndefOr[SchemaCapacity] = js.undefined
   
   /**
     * The color of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#color.
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * The count of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#count.
     */
-  var count: js.UndefOr[SchemaCount] = js.native
+  var count: js.UndefOr[SchemaCount] = js.undefined
   
   /**
     * The description of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The disclosure date of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#disclosure.
     */
-  var disclosureDate: js.UndefOr[String] = js.native
+  var disclosureDate: js.UndefOr[String] = js.undefined
   
   /**
     * A list of excluded destinations.
     */
-  var excludedDestination: js.UndefOr[js.Array[String]] = js.native
+  var excludedDestination: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The rich format description of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#featuredesc.
     */
-  var featureDescription: js.UndefOr[js.Array[SchemaFeatureDescription]] = js.native
+  var featureDescription: js.UndefOr[js.Array[SchemaFeatureDescription]] = js.undefined
   
   /**
     * The flavor of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#flavor.
     */
-  var flavor: js.UndefOr[String] = js.native
+  var flavor: js.UndefOr[String] = js.undefined
   
   /**
     * The format of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#format.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * The target gender of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#gender.
     */
-  var gender: js.UndefOr[String] = js.native
+  var gender: js.UndefOr[String] = js.undefined
   
   /**
     * The Global Trade Item Number (GTIN) of the product. For more information,
     * see https://support.google.com/manufacturers/answer/6124116#gtin.
     */
-  var gtin: js.UndefOr[js.Array[String]] = js.native
+  var gtin: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The image of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#image.
     */
-  var imageLink: js.UndefOr[SchemaImage] = js.native
+  var imageLink: js.UndefOr[SchemaImage] = js.undefined
   
   /**
     * A list of included destinations.
     */
-  var includedDestination: js.UndefOr[js.Array[String]] = js.native
+  var includedDestination: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The item group id of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#itemgroupid.
     */
-  var itemGroupId: js.UndefOr[String] = js.native
+  var itemGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The material of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#material.
     */
-  var material: js.UndefOr[String] = js.native
+  var material: js.UndefOr[String] = js.undefined
   
   /**
     * The Manufacturer Part Number (MPN) of the product. For more information,
     * see https://support.google.com/manufacturers/answer/6124116#mpn.
     */
-  var mpn: js.UndefOr[String] = js.native
+  var mpn: js.UndefOr[String] = js.undefined
   
   /**
     * The pattern of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#pattern.
     */
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
   /**
     * The details of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#productdetail.
     */
-  var productDetail: js.UndefOr[js.Array[SchemaProductDetail]] = js.native
+  var productDetail: js.UndefOr[js.Array[SchemaProductDetail]] = js.undefined
   
   /**
     * The name of the group of products related to the product. For more
     * information, see
     * https://support.google.com/manufacturers/answer/6124116#productline.
     */
-  var productLine: js.UndefOr[String] = js.native
+  var productLine: js.UndefOr[String] = js.undefined
   
   /**
     * The canonical name of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#productname.
     */
-  var productName: js.UndefOr[String] = js.native
+  var productName: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the detail page of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#productpage.
     */
-  var productPageUrl: js.UndefOr[String] = js.native
+  var productPageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The type or category of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#producttype.
     */
-  var productType: js.UndefOr[js.Array[String]] = js.native
+  var productType: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The release date of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#release.
     */
-  var releaseDate: js.UndefOr[String] = js.native
+  var releaseDate: js.UndefOr[String] = js.undefined
   
   /**
     * The scent of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#scent.
     */
-  var scent: js.UndefOr[String] = js.native
+  var scent: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#size.
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /**
     * The size system of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#sizesystem.
     */
-  var sizeSystem: js.UndefOr[String] = js.native
+  var sizeSystem: js.UndefOr[String] = js.undefined
   
   /**
     * The size type of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#sizetype.
     */
-  var sizeType: js.UndefOr[String] = js.native
+  var sizeType: js.UndefOr[String] = js.undefined
   
   /**
     * The suggested retail price (MSRP) of the product. For more information,
     * see https://support.google.com/manufacturers/answer/6124116#price.
     */
-  var suggestedRetailPrice: js.UndefOr[SchemaPrice] = js.native
+  var suggestedRetailPrice: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The target client id. Should only be used in the accounts of the data
     * partners.
     */
-  var targetClientId: js.UndefOr[String] = js.native
+  var targetClientId: js.UndefOr[String] = js.undefined
   
   /**
     * The theme of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#theme.
     */
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The videos of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#video.
     */
-  var videoLink: js.UndefOr[js.Array[String]] = js.native
+  var videoLink: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAttributes {
   

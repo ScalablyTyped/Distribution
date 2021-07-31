@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitPathAction extends StObject {
   
-  var action: GitPathActions = js.native
+  var action: GitPathActions
   
-  var base64Content: String = js.native
+  var base64Content: String
   
-  var path: String = js.native
+  var path: String
   
-  var rawTextContent: String = js.native
+  var rawTextContent: String
   
-  var targetPath: String = js.native
+  var targetPath: String
 }
 object GitPathAction {
   

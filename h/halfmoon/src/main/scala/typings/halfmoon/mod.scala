@@ -8,7 +8,6 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,16 +16,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("halfmoon", "clickHandler")
-  @js.native
-  def clickHandler(event: MouseEvent): Unit = js.native
+  @scala.inline
+  def clickHandler(event: MouseEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickHandler")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("halfmoon", "createCookie")
-  @js.native
-  def createCookie(name: String, value: String): Unit = js.native
-  @JSImport("halfmoon", "createCookie")
-  @js.native
-  def createCookie(name: String, value: String, days: Double): Unit = js.native
+  @scala.inline
+  def createCookie(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createCookie(name: String, value: String, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("halfmoon", "darkModeOn")
   @js.native
@@ -34,58 +30,46 @@ object mod {
   @scala.inline
   def darkModeOn_=(x: yes | no): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkModeOn")(x.asInstanceOf[js.Any])
   
-  @JSImport("halfmoon", "deactivateAllDropdownToggles")
-  @js.native
-  def deactivateAllDropdownToggles(): Unit = js.native
+  @scala.inline
+  def deactivateAllDropdownToggles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivateAllDropdownToggles")().asInstanceOf[Unit]
   
-  @JSImport("halfmoon", "eraseCookie")
-  @js.native
-  def eraseCookie(name: String): Unit = js.native
+  @scala.inline
+  def eraseCookie(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eraseCookie")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("halfmoon", "initStickyAlert")
-  @js.native
-  def initStickyAlert(param: AlertType): Unit = js.native
+  @scala.inline
+  def initStickyAlert(param: AlertType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initStickyAlert")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("halfmoon", "keydownHandler")
-  @js.native
-  def keydownHandler(event: KeyboardEvent): Unit = js.native
+  @scala.inline
+  def keydownHandler(event: KeyboardEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keydownHandler")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("halfmoon", "makeId")
-  @js.native
-  def makeId(length: Double): String = js.native
+  @scala.inline
+  def makeId(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeId")(length.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("halfmoon", "onDOMContentLoaded")
-  @js.native
-  def onDOMContentLoaded(): Unit = js.native
+  @scala.inline
+  def onDOMContentLoaded(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDOMContentLoaded")().asInstanceOf[Unit]
   
   @JSImport("halfmoon", "pageWrapper")
   @js.native
   val pageWrapper: Element = js.native
   
-  @JSImport("halfmoon", "readCookie")
-  @js.native
-  def readCookie(name: String): String | Null = js.native
+  @scala.inline
+  def readCookie(name: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("readCookie")(name.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   @JSImport("halfmoon", "stickyAlerts")
   @js.native
   val stickyAlerts: Element = js.native
   
-  @JSImport("halfmoon", "toastAlert")
-  @js.native
-  def toastAlert(alertId: String): Unit = js.native
-  @JSImport("halfmoon", "toastAlert")
-  @js.native
-  def toastAlert(alertId: String, timeShown: Double): Unit = js.native
+  @scala.inline
+  def toastAlert(alertId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toastAlert")(alertId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def toastAlert(alertId: String, timeShown: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toastAlert")(alertId.asInstanceOf[js.Any], timeShown.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("halfmoon", "toggleDarkMode")
-  @js.native
-  def toggleDarkMode(): Unit = js.native
+  @scala.inline
+  def toggleDarkMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDarkMode")().asInstanceOf[Unit]
   
-  @JSImport("halfmoon", "toggleModal")
-  @js.native
-  def toggleModal(modalId: String): Unit = js.native
+  @scala.inline
+  def toggleModal(modalId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleModal")(modalId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("halfmoon", "toggleSidebar")
-  @js.native
-  def toggleSidebar(): Unit = js.native
+  @scala.inline
+  def toggleSidebar(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleSidebar")().asInstanceOf[Unit]
 }

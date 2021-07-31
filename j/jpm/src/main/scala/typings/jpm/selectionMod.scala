@@ -3,7 +3,6 @@ package typings.jpm
 import typings.jpm.jpmStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,13 +24,11 @@ object selectionMod {
   @js.native
   val isContiguous: Boolean = js.native
   
-  @JSImport("sdk/selection", "on")
-  @js.native
-  def on_select(event: select, handler: js.Function0[_]): Unit = js.native
+  @scala.inline
+  def on_select(event: select, handler: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("sdk/selection", "removeListener")
-  @js.native
-  def removeListener_select(event: select, handler: js.Function): Unit = js.native
+  @scala.inline
+  def removeListener_select(event: select, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sdk/selection", "text")
   @js.native

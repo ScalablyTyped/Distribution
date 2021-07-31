@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of a reaction that follows immunization
   */
-@js.native
-trait ImmunizationReaction extends BackboneElement {
+trait ImmunizationReaction
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'reported'.
     */
-  var _reported: js.UndefOr[Element] = js.native
+  var _reported: js.UndefOr[Element] = js.undefined
   
   /**
     * When reaction started
     */
-  var date: js.UndefOr[dateTime] = js.native
+  var date: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Additional information on reaction
     */
-  var detail: js.UndefOr[Reference] = js.native
+  var detail: js.UndefOr[Reference] = js.undefined
   
   /**
     * Indicates self-reported reaction
     */
-  var reported: js.UndefOr[Boolean] = js.native
+  var reported: js.UndefOr[Boolean] = js.undefined
 }
 object ImmunizationReaction {
   

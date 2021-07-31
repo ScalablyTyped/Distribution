@@ -3,15 +3,13 @@ package typings.muiDatatables.anon
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lookup extends StObject {
   
-  var data: js.Array[DataIndex] = js.native
+  var data: js.Array[DataIndex]
   
-  var lookup: NumberDictionary[Boolean] = js.native
+  var lookup: NumberDictionary[Boolean]
 }
 object Lookup {
   

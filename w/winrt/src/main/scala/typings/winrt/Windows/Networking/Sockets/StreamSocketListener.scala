@@ -4,13 +4,13 @@ import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Networking.HostName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StreamSocketListener extends IStreamSocketListener {
+trait StreamSocketListener
+  extends StObject
+     with IStreamSocketListener {
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object StreamSocketListener {
   

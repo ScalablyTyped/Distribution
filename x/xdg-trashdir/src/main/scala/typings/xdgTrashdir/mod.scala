@@ -2,7 +2,6 @@ package typings.xdgTrashdir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,12 +19,14 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
   @JSImport("xdg-trashdir", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[String] = js.native
-  @JSImport("xdg-trashdir", JSImport.Namespace)
-  @js.native
-  def apply(filePath: String): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Get all possible trash paths on Linux according to the [spec](http://www.ramendik.ru/docs/trashspec.html)
@@ -38,7 +39,6 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("xdg-trashdir", "all")
-  @js.native
-  def all(): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def all(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[String]]]
 }

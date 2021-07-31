@@ -22,7 +22,6 @@ import typings.reactFoundation.utilsMod.FlexboxPropTypes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridMod {
@@ -36,169 +35,169 @@ object gridMod {
   val Row: StatelessComponent[RowProps] = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ @js.native
-  trait ColumnProps
-    extends FlexboxPropTypes
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait ColumnProps
+    extends StObject
+       with FlexboxPropTypes
        with AriaAttributes
        with DOMAttributes[HTMLDivElement] {
     
     // RDFa Attributes
-    var about: js.UndefOr[String] = js.native
+    var about: js.UndefOr[String] = js.undefined
     
     // Standard HTML Attributes
-    var accessKey: js.UndefOr[String] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
     
     // Non-standard Attributes
-    var autoCapitalize: js.UndefOr[String] = js.native
+    var autoCapitalize: js.UndefOr[String] = js.undefined
     
-    var autoCorrect: js.UndefOr[String] = js.native
+    var autoCorrect: js.UndefOr[String] = js.undefined
     
-    var autoSave: js.UndefOr[String] = js.native
+    var autoSave: js.UndefOr[String] = js.undefined
     
-    var centerOnLarge: js.UndefOr[Boolean] = js.native
+    var centerOnLarge: js.UndefOr[Boolean] = js.undefined
     
-    var centerOnMedium: js.UndefOr[Boolean] = js.native
+    var centerOnMedium: js.UndefOr[Boolean] = js.undefined
     
-    var centerOnSmall: js.UndefOr[Boolean] = js.native
+    var centerOnSmall: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
-    var contextMenu: js.UndefOr[String] = js.native
+    var contextMenu: js.UndefOr[String] = js.undefined
     
-    var datatype: js.UndefOr[String] = js.native
+    var datatype: js.UndefOr[String] = js.undefined
     
     // React-specific Attributes
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var draggable: js.UndefOr[Booleanish] = js.native
+    var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var expandOnLarge: js.UndefOr[Boolean] = js.native
+    var expandOnLarge: js.UndefOr[Boolean] = js.undefined
     
-    var expandOnMedium: js.UndefOr[Boolean] = js.native
+    var expandOnMedium: js.UndefOr[Boolean] = js.undefined
     
-    var expandOnSmall: js.UndefOr[Boolean] = js.native
+    var expandOnSmall: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.native
+    var inlist: js.UndefOr[js.Any] = js.undefined
     
     // Living Standard
     /**
       * Hints at the type of data that might be entered by the user while editing the element or its contents
       * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
       */
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
     /**
       * Specify that a standard HTML element should behave like a defined custom built-in element
       * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
       */
-    var is: js.UndefOr[String] = js.native
+    var is: js.UndefOr[String] = js.undefined
     
-    var isColumn: js.UndefOr[Boolean] = js.native
+    var isColumn: js.UndefOr[Boolean] = js.undefined
     
-    var isLast: js.UndefOr[Boolean] = js.native
+    var isLast: js.UndefOr[Boolean] = js.undefined
     
-    var isShrunk: js.UndefOr[Boolean] = js.native
+    var isShrunk: js.UndefOr[Boolean] = js.undefined
     
-    var itemID: js.UndefOr[String] = js.native
+    var itemID: js.UndefOr[String] = js.undefined
     
-    var itemProp: js.UndefOr[String] = js.native
+    var itemProp: js.UndefOr[String] = js.undefined
     
-    var itemRef: js.UndefOr[String] = js.native
+    var itemRef: js.UndefOr[String] = js.undefined
     
-    var itemScope: js.UndefOr[Boolean] = js.native
+    var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemType: js.UndefOr[String] = js.native
+    var itemType: js.UndefOr[String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var large: js.UndefOr[Double] = js.native
+    var large: js.UndefOr[Double] = js.undefined
     
-    var medium: js.UndefOr[Double] = js.native
+    var medium: js.UndefOr[Double] = js.undefined
     
-    var offsetOnLarge: js.UndefOr[Double] = js.native
+    var offsetOnLarge: js.UndefOr[Double] = js.undefined
     
-    var offsetOnMedium: js.UndefOr[Double] = js.native
+    var offsetOnMedium: js.UndefOr[Double] = js.undefined
     
-    var offsetOnSmall: js.UndefOr[Double] = js.native
+    var offsetOnSmall: js.UndefOr[Double] = js.undefined
     
-    var orderOnLarge: js.UndefOr[Double] = js.native
+    var orderOnLarge: js.UndefOr[Double] = js.undefined
     
-    var orderOnMedium: js.UndefOr[Double] = js.native
+    var orderOnMedium: js.UndefOr[Double] = js.undefined
     
-    var orderOnSmall: js.UndefOr[Double] = js.native
+    var orderOnSmall: js.UndefOr[Double] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var pullOnLarge: js.UndefOr[Double] = js.native
+    var pullOnLarge: js.UndefOr[Double] = js.undefined
     
-    var pullOnMedium: js.UndefOr[Double] = js.native
+    var pullOnMedium: js.UndefOr[Double] = js.undefined
     
-    var pullOnSmall: js.UndefOr[Double] = js.native
+    var pullOnSmall: js.UndefOr[Double] = js.undefined
     
-    var pushOnLarge: js.UndefOr[Double] = js.native
+    var pushOnLarge: js.UndefOr[Double] = js.undefined
     
-    var pushOnMedium: js.UndefOr[Double] = js.native
+    var pushOnMedium: js.UndefOr[Double] = js.undefined
     
-    var pushOnSmall: js.UndefOr[Double] = js.native
+    var pushOnSmall: js.UndefOr[Double] = js.undefined
     
     // Unknown
-    var radioGroup: js.UndefOr[String] = js.native
+    var radioGroup: js.UndefOr[String] = js.undefined
     
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
     
-    var results: js.UndefOr[Double] = js.native
+    var results: js.UndefOr[Double] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var security: js.UndefOr[String] = js.native
+    var security: js.UndefOr[String] = js.undefined
     
-    var slot: js.UndefOr[String] = js.native
+    var slot: js.UndefOr[String] = js.undefined
     
-    var small: js.UndefOr[Double] = js.native
+    var small: js.UndefOr[Double] = js.undefined
     
-    var spellCheck: js.UndefOr[Booleanish] = js.native
+    var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
-    var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+    var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.native
+    var translate: js.UndefOr[yes | no] = js.undefined
     
-    var typeof: js.UndefOr[String] = js.native
+    var typeof: js.UndefOr[String] = js.undefined
     
-    var uncenterOnLarge: js.UndefOr[Boolean] = js.native
+    var uncenterOnLarge: js.UndefOr[Boolean] = js.undefined
     
-    var uncenterOnMedium: js.UndefOr[Boolean] = js.native
+    var uncenterOnMedium: js.UndefOr[Boolean] = js.undefined
     
-    var uncenterOnSmall: js.UndefOr[Boolean] = js.native
+    var uncenterOnSmall: js.UndefOr[Boolean] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.native
+    var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var upOnSmall: js.UndefOr[Double] = js.native
+    var upOnSmall: js.UndefOr[Double] = js.undefined
     
-    var vocab: js.UndefOr[String] = js.native
+    var vocab: js.UndefOr[String] = js.undefined
   }
   object ColumnProps {
     
@@ -643,147 +642,147 @@ object gridMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ @js.native
-  trait RowProps
-    extends FlexboxPropTypes
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait RowProps
+    extends StObject
+       with FlexboxPropTypes
        with AriaAttributes
        with DOMAttributes[HTMLDivElement] {
     
     // RDFa Attributes
-    var about: js.UndefOr[String] = js.native
+    var about: js.UndefOr[String] = js.undefined
     
     // Standard HTML Attributes
-    var accessKey: js.UndefOr[String] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
     
     // Non-standard Attributes
-    var autoCapitalize: js.UndefOr[String] = js.native
+    var autoCapitalize: js.UndefOr[String] = js.undefined
     
-    var autoCorrect: js.UndefOr[String] = js.native
+    var autoCorrect: js.UndefOr[String] = js.undefined
     
-    var autoSave: js.UndefOr[String] = js.native
+    var autoSave: js.UndefOr[String] = js.undefined
     
-    var collapseOnLarge: js.UndefOr[Boolean] = js.native
+    var collapseOnLarge: js.UndefOr[Boolean] = js.undefined
     
-    var collapseOnMedium: js.UndefOr[Boolean] = js.native
+    var collapseOnMedium: js.UndefOr[Boolean] = js.undefined
     
-    var collapseOnSmall: js.UndefOr[Boolean] = js.native
+    var collapseOnSmall: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
-    var contextMenu: js.UndefOr[String] = js.native
+    var contextMenu: js.UndefOr[String] = js.undefined
     
-    var datatype: js.UndefOr[String] = js.native
+    var datatype: js.UndefOr[String] = js.undefined
     
     // React-specific Attributes
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var draggable: js.UndefOr[Booleanish] = js.native
+    var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var horizontalAlignment: js.UndefOr[String] = js.native
+    var horizontalAlignment: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.native
+    var inlist: js.UndefOr[js.Any] = js.undefined
     
     // Living Standard
     /**
       * Hints at the type of data that might be entered by the user while editing the element or its contents
       * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
       */
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
     /**
       * Specify that a standard HTML element should behave like a defined custom built-in element
       * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
       */
-    var is: js.UndefOr[String] = js.native
+    var is: js.UndefOr[String] = js.undefined
     
-    var isCollapsed: js.UndefOr[Boolean] = js.native
+    var isCollapsed: js.UndefOr[Boolean] = js.undefined
     
-    var isColumn: js.UndefOr[Boolean] = js.native
+    var isColumn: js.UndefOr[Boolean] = js.undefined
     
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
     
-    var itemID: js.UndefOr[String] = js.native
+    var itemID: js.UndefOr[String] = js.undefined
     
-    var itemProp: js.UndefOr[String] = js.native
+    var itemProp: js.UndefOr[String] = js.undefined
     
-    var itemRef: js.UndefOr[String] = js.native
+    var itemRef: js.UndefOr[String] = js.undefined
     
-    var itemScope: js.UndefOr[Boolean] = js.native
+    var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemType: js.UndefOr[String] = js.native
+    var itemType: js.UndefOr[String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
     // Unknown
-    var radioGroup: js.UndefOr[String] = js.native
+    var radioGroup: js.UndefOr[String] = js.undefined
     
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
     
-    var results: js.UndefOr[Double] = js.native
+    var results: js.UndefOr[Double] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var security: js.UndefOr[String] = js.native
+    var security: js.UndefOr[String] = js.undefined
     
-    var slot: js.UndefOr[String] = js.native
+    var slot: js.UndefOr[String] = js.undefined
     
-    var spellCheck: js.UndefOr[Booleanish] = js.native
+    var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
-    var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+    var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.native
+    var translate: js.UndefOr[yes | no] = js.undefined
     
-    var typeof: js.UndefOr[String] = js.native
+    var typeof: js.UndefOr[String] = js.undefined
     
-    var uncollapseOnLarge: js.UndefOr[Boolean] = js.native
+    var uncollapseOnLarge: js.UndefOr[Boolean] = js.undefined
     
-    var uncollapseOnMedium: js.UndefOr[Boolean] = js.native
+    var uncollapseOnMedium: js.UndefOr[Boolean] = js.undefined
     
-    var uncollapseOnSmall: js.UndefOr[Boolean] = js.native
+    var uncollapseOnSmall: js.UndefOr[Boolean] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.native
+    var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var unstackOnLarge: js.UndefOr[Boolean] = js.native
+    var unstackOnLarge: js.UndefOr[Boolean] = js.undefined
     
-    var unstackOnMedium: js.UndefOr[Boolean] = js.native
+    var unstackOnMedium: js.UndefOr[Boolean] = js.undefined
     
-    var unstackOnSmall: js.UndefOr[Boolean] = js.native
+    var unstackOnSmall: js.UndefOr[Boolean] = js.undefined
     
-    var upOnLarge: js.UndefOr[Double] = js.native
+    var upOnLarge: js.UndefOr[Double] = js.undefined
     
-    var upOnMedium: js.UndefOr[Double] = js.native
+    var upOnMedium: js.UndefOr[Double] = js.undefined
     
-    var upOnSmall: js.UndefOr[Double] = js.native
+    var upOnSmall: js.UndefOr[Double] = js.undefined
     
-    var verticalAlignment: js.UndefOr[String] = js.native
+    var verticalAlignment: js.UndefOr[String] = js.undefined
     
-    var vocab: js.UndefOr[String] = js.native
+    var vocab: js.UndefOr[String] = js.undefined
   }
   object RowProps {
     

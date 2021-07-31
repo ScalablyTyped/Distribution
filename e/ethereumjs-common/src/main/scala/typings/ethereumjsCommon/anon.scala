@@ -5,30 +5,28 @@ import typings.ethereumjsCommon.typesMod.GenesisBlock
 import typings.ethereumjsCommon.typesMod.Hardfork
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<ethereumjs-common.ethereumjs-common/dist/types.Chain> */
-  @js.native
   trait PartialChain extends StObject {
     
-    var bootstrapNodes: js.UndefOr[js.Array[BootstrapNode]] = js.native
+    var bootstrapNodes: js.UndefOr[js.Array[BootstrapNode]] = js.undefined
     
-    var chainId: js.UndefOr[Double] = js.native
+    var chainId: js.UndefOr[Double] = js.undefined
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var genesis: js.UndefOr[GenesisBlock] = js.native
+    var genesis: js.UndefOr[GenesisBlock] = js.undefined
     
-    var hardforks: js.UndefOr[js.Array[Hardfork]] = js.native
+    var hardforks: js.UndefOr[js.Array[Hardfork]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var networkId: js.UndefOr[Double] = js.native
+    var networkId: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object PartialChain {
     

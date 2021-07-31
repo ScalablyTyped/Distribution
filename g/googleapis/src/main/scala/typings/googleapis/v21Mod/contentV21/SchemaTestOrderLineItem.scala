@@ -2,31 +2,29 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTestOrderLineItem extends StObject {
   
   /**
     * Product data from the time of the order placement.
     */
-  var product: js.UndefOr[SchemaTestOrderLineItemProduct] = js.native
+  var product: js.UndefOr[SchemaTestOrderLineItemProduct] = js.undefined
   
   /**
     * Number of items ordered.
     */
-  var quantityOrdered: js.UndefOr[Double] = js.native
+  var quantityOrdered: js.UndefOr[Double] = js.undefined
   
   /**
     * Details of the return policy for the line item.
     */
-  var returnInfo: js.UndefOr[SchemaOrderLineItemReturnInfo] = js.native
+  var returnInfo: js.UndefOr[SchemaOrderLineItemReturnInfo] = js.undefined
   
   /**
     * Details of the requested shipping for the line item.
     */
-  var shippingDetails: js.UndefOr[SchemaOrderLineItemShippingDetails] = js.native
+  var shippingDetails: js.UndefOr[SchemaOrderLineItemShippingDetails] = js.undefined
 }
 object SchemaTestOrderLineItem {
   

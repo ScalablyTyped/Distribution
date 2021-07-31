@@ -2,23 +2,21 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandManager extends StObject {
   
-  def addCommand(command: EditorCommand): Unit = js.native
+  def addCommand(command: EditorCommand): Unit
   
-  def addCommands(commands: js.Array[EditorCommand]): Unit = js.native
+  def addCommands(commands: js.Array[EditorCommand]): Unit
   
-  var byName: js.Any = js.native
+  var byName: js.Any
   
-  var commands: js.Any = js.native
+  var commands: js.Any
   
-  def exec(name: String, editor: Editor, args: js.Any): Unit = js.native
+  def exec(name: String, editor: Editor, args: js.Any): Unit
   
-  var platform: String = js.native
+  var platform: String
 }
 object CommandManager {
   

@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,4 +12,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.Frustum")
 @js.native
 class Frustum ()
-  extends typings.playcanvas.pc.Frustum
+  extends StObject
+     with typings.playcanvas.pc.Frustum {
+  
+  /**
+    * Tests whether a point is inside the frustum. Note that points lying in a frustum plane are
+    * considered to be outside the frustum.
+    * @param point - The point to test.
+    * @returns True if the point is inside the frustum, false otherwise.
+    */
+  /* CompleteClass */
+  override def containsPoint(point: typings.playcanvas.pc.Vec3): Boolean = js.native
+  
+  /**
+    * Tests whether a bounding sphere intersects the frustum. If the sphere is outside the frustum,
+    * zero is returned. If the sphere intersects the frustum, 1 is returned. If the sphere is completely inside
+    * the frustum, 2 is returned. Note that a sphere touching a frustum plane from the outside is considered to
+    * be outside the frustum.
+    * @param sphere - The sphere to test.
+    * @returns 0 if the bounding sphere is outside the frustum, 1 if it intersects the frustum and 2 if
+    * it is contained by the frustum.
+    */
+  /* CompleteClass */
+  override def containsSphere(sphere: typings.playcanvas.pc.BoundingSphere): Double = js.native
+  
+  /**
+    * Updates the frustum shape based on the supplied 4x4 matrix.
+    * @example
+    * // Create a perspective projection matrix
+    * var projMat = pc.Mat4();
+    * projMat.setPerspective(45, 16 / 9, 1, 1000);
+    *
+    * // Create a frustum shape that is represented by the matrix
+    * var frustum = new pc.Frustum();
+    * frustum.setFromMat4(projMat);
+    * @param matrix - The matrix describing the shape of the frustum.
+    */
+  /* CompleteClass */
+  override def setFromMat4(matrix: typings.playcanvas.pc.Mat4): Unit = js.native
+}

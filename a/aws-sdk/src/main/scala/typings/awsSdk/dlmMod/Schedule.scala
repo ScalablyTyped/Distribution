@@ -2,51 +2,49 @@ package typings.awsSdk.dlmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Schedule extends StObject {
   
   /**
     * Copy all user-defined tags on a source volume to snapshots of the volume created by this policy.
     */
-  var CopyTags: js.UndefOr[typings.awsSdk.dlmMod.CopyTags] = js.native
+  var CopyTags: js.UndefOr[typings.awsSdk.dlmMod.CopyTags] = js.undefined
   
   /**
     * The creation rule.
     */
-  var CreateRule: js.UndefOr[typings.awsSdk.dlmMod.CreateRule] = js.native
+  var CreateRule: js.UndefOr[typings.awsSdk.dlmMod.CreateRule] = js.undefined
   
   /**
     * The rule for cross-Region snapshot copies.
     */
-  var CrossRegionCopyRules: js.UndefOr[typings.awsSdk.dlmMod.CrossRegionCopyRules] = js.native
+  var CrossRegionCopyRules: js.UndefOr[typings.awsSdk.dlmMod.CrossRegionCopyRules] = js.undefined
   
   /**
     * The rule for enabling fast snapshot restore.
     */
-  var FastRestoreRule: js.UndefOr[typings.awsSdk.dlmMod.FastRestoreRule] = js.native
+  var FastRestoreRule: js.UndefOr[typings.awsSdk.dlmMod.FastRestoreRule] = js.undefined
   
   /**
     * The name of the schedule.
     */
-  var Name: js.UndefOr[ScheduleName] = js.native
+  var Name: js.UndefOr[ScheduleName] = js.undefined
   
   /**
     * The retention rule.
     */
-  var RetainRule: js.UndefOr[typings.awsSdk.dlmMod.RetainRule] = js.native
+  var RetainRule: js.UndefOr[typings.awsSdk.dlmMod.RetainRule] = js.undefined
   
   /**
     * The tags to apply to policy-created resources. These user-defined tags are in addition to the AWS-added lifecycle tags.
     */
-  var TagsToAdd: js.UndefOr[TagsToAddList] = js.native
+  var TagsToAdd: js.UndefOr[TagsToAddList] = js.undefined
   
   /**
     * A collection of key/value pairs with values determined dynamically when the policy is executed. Keys may be any valid Amazon EC2 tag key. Values must be in one of the two following formats: $(instance-id) or $(timestamp). Variable tags are only valid for EBS Snapshot Management – Instance policies.
     */
-  var VariableTags: js.UndefOr[VariableTagsList] = js.native
+  var VariableTags: js.UndefOr[VariableTagsList] = js.undefined
 }
 object Schedule {
   

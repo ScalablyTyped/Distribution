@@ -10,19 +10,19 @@ import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import typings.ts3NodejsLibrary.ts3NodejsLibraryStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propertyTypesMod {
   
-  @js.native
-  trait ApiKeyAdd extends ResponseEntry {
+  trait ApiKeyAdd
+    extends StObject
+       with ResponseEntry {
     
-    var cldbid: js.UndefOr[String] = js.native
+    var cldbid: js.UndefOr[String] = js.undefined
     
-    var lifetime: js.UndefOr[Double] = js.native
+    var lifetime: js.UndefOr[Double] = js.undefined
     
-    var scope: ApiKeyScope = js.native
+    var scope: ApiKeyScope
   }
   object ApiKeyAdd {
     
@@ -52,17 +52,18 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait ApiKeyList extends ResponseEntry {
+  trait ApiKeyList
+    extends StObject
+       with ResponseEntry {
     
     /** database ids to list  */
-    var cldbid: js.UndefOr[String | Asterisk] = js.native
+    var cldbid: js.UndefOr[String | Asterisk] = js.undefined
     
     /** amount of entries to retrieve */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /** offset from where the list should start */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object ApiKeyList {
     
@@ -95,26 +96,27 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait BanAdd extends ResponseEntry {
+  trait BanAdd
+    extends StObject
+       with ResponseEntry {
     
     /** ban reason */
-    var banreason: String = js.native
+    var banreason: String
     
     /** ip regular expression */
-    var ip: js.UndefOr[String] = js.native
+    var ip: js.UndefOr[String] = js.undefined
     
     /** myteamspeak id, use "empty" to ban all clients without connected myteamspeak */
-    var mytsid: js.UndefOr[String] = js.native
+    var mytsid: js.UndefOr[String] = js.undefined
     
     /** name regular expression */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** bantime in seconds, if left empty it will result in a permaban */
-    var time: js.UndefOr[Double] = js.native
+    var time: js.UndefOr[Double] = js.undefined
     
     /** uid regular expression */
-    var uid: js.UndefOr[String] = js.native
+    var uid: js.UndefOr[String] = js.undefined
   }
   object BanAdd {
     
@@ -162,22 +164,23 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait BanClient extends ResponseEntry {
+  trait BanClient
+    extends StObject
+       with ResponseEntry {
     
     /** ban reason */
-    var banreason: String = js.native
+    var banreason: String
     
-    var clid: String | js.Array[String] = js.native
+    var clid: String | js.Array[String]
     
     /** ignore errors  */
-    var continueOnError: js.UndefOr[Boolean] = js.native
+    var continueOnError: js.UndefOr[Boolean] = js.undefined
     
     /** myteamspeak id, use "empty" to ban all clients without connected myteamspeak */
-    var mytsid: js.UndefOr[String] = js.native
+    var mytsid: js.UndefOr[String] = js.undefined
     
     /** bantime in seconds, if left empty it will result in a permaban */
-    var time: js.UndefOr[Double] = js.native
+    var time: js.UndefOr[Double] = js.undefined
   }
   object BanClient {
     
@@ -219,48 +222,49 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait ChannelEdit extends ResponseEntry {
+  trait ChannelEdit
+    extends StObject
+       with ResponseEntry {
     
-    var channelCodec: js.UndefOr[Codec] = js.native
+    var channelCodec: js.UndefOr[Codec] = js.undefined
     
-    var channelCodecIsUnencrypted: js.UndefOr[Boolean] = js.native
+    var channelCodecIsUnencrypted: js.UndefOr[Boolean] = js.undefined
     
-    var channelCodecQuality: js.UndefOr[Double] = js.native
+    var channelCodecQuality: js.UndefOr[Double] = js.undefined
     
-    var channelDescription: js.UndefOr[String] = js.native
+    var channelDescription: js.UndefOr[String] = js.undefined
     
-    var channelFlagDefault: js.UndefOr[Boolean] = js.native
+    var channelFlagDefault: js.UndefOr[Boolean] = js.undefined
     
-    var channelFlagMaxclientsUnlimited: js.UndefOr[Boolean] = js.native
+    var channelFlagMaxclientsUnlimited: js.UndefOr[Boolean] = js.undefined
     
-    var channelFlagMaxfamilyclientsInherited: js.UndefOr[Boolean] = js.native
+    var channelFlagMaxfamilyclientsInherited: js.UndefOr[Boolean] = js.undefined
     
-    var channelFlagPermanent: js.UndefOr[Boolean] = js.native
+    var channelFlagPermanent: js.UndefOr[Boolean] = js.undefined
     
-    var channelFlagSemiPermanent: js.UndefOr[Boolean] = js.native
+    var channelFlagSemiPermanent: js.UndefOr[Boolean] = js.undefined
     
-    var channelFlagTemporary: js.UndefOr[Boolean] = js.native
+    var channelFlagTemporary: js.UndefOr[Boolean] = js.undefined
     
-    var channelMaxclients: js.UndefOr[Double] = js.native
+    var channelMaxclients: js.UndefOr[Double] = js.undefined
     
-    var channelMaxfamilyclients: js.UndefOr[Double] = js.native
+    var channelMaxfamilyclients: js.UndefOr[Double] = js.undefined
     
-    var channelName: js.UndefOr[String] = js.native
+    var channelName: js.UndefOr[String] = js.undefined
     
-    var channelNamePhonetic: js.UndefOr[String] = js.native
+    var channelNamePhonetic: js.UndefOr[String] = js.undefined
     
-    var channelNeededTalkPower: js.UndefOr[Double] = js.native
+    var channelNeededTalkPower: js.UndefOr[Double] = js.undefined
     
-    var channelOrder: js.UndefOr[Double] = js.native
+    var channelOrder: js.UndefOr[Double] = js.undefined
     
-    var channelPassword: js.UndefOr[String] = js.native
+    var channelPassword: js.UndefOr[String] = js.undefined
     
-    var channelTopic: js.UndefOr[String] = js.native
+    var channelTopic: js.UndefOr[String] = js.undefined
     
-    var cid: js.UndefOr[String] = js.native
+    var cid: js.UndefOr[String] = js.undefined
     
-    var cpid: js.UndefOr[String] = js.native
+    var cpid: js.UndefOr[String] = js.undefined
   }
   object ChannelEdit {
     
@@ -395,10 +399,11 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait ClientDBEdit extends ResponseEntry {
+  trait ClientDBEdit
+    extends StObject
+       with ResponseEntry {
     
-    var clientDescription: String = js.native
+    var clientDescription: String
   }
   object ClientDBEdit {
     
@@ -416,12 +421,13 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait ClientEdit extends ResponseEntry {
+  trait ClientEdit
+    extends StObject
+       with ResponseEntry {
     
-    var clientDescription: js.UndefOr[String] = js.native
+    var clientDescription: js.UndefOr[String] = js.undefined
     
-    var clientIsTalker: js.UndefOr[Boolean] = js.native
+    var clientIsTalker: js.UndefOr[Boolean] = js.undefined
   }
   object ClientEdit {
     
@@ -448,10 +454,11 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait ClientUpdate extends ResponseEntry {
+  trait ClientUpdate
+    extends StObject
+       with ResponseEntry {
     
-    var clientNickname: String = js.native
+    var clientNickname: String
   }
   object ClientUpdate {
     
@@ -469,28 +476,29 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait InstanceEdit extends ResponseEntry {
+  trait InstanceEdit
+    extends StObject
+       with ResponseEntry {
     
-    var serverinstanceFiletransferPort: js.UndefOr[Double] = js.native
+    var serverinstanceFiletransferPort: js.UndefOr[Double] = js.undefined
     
-    var serverinstanceMaxDownloadTotalBandwidth: js.UndefOr[Double] = js.native
+    var serverinstanceMaxDownloadTotalBandwidth: js.UndefOr[Double] = js.undefined
     
-    var serverinstanceMaxUploadTotalBandwidth: js.UndefOr[Double] = js.native
+    var serverinstanceMaxUploadTotalBandwidth: js.UndefOr[Double] = js.undefined
     
-    var serverinstanceServerqueryFloodBanTime: js.UndefOr[Double] = js.native
+    var serverinstanceServerqueryFloodBanTime: js.UndefOr[Double] = js.undefined
     
-    var serverinstanceServerqueryFloodCommands: js.UndefOr[Double] = js.native
+    var serverinstanceServerqueryFloodCommands: js.UndefOr[Double] = js.undefined
     
-    var serverinstanceServerqueryFloodTime: js.UndefOr[Double] = js.native
+    var serverinstanceServerqueryFloodTime: js.UndefOr[Double] = js.undefined
     
-    var serverinstanceTemplateChanneladminGroup: js.UndefOr[String] = js.native
+    var serverinstanceTemplateChanneladminGroup: js.UndefOr[String] = js.undefined
     
-    var serverinstanceTemplateChanneldefaultGroup: js.UndefOr[String] = js.native
+    var serverinstanceTemplateChanneldefaultGroup: js.UndefOr[String] = js.undefined
     
-    var serverinstanceTemplateServeradminGroup: js.UndefOr[String] = js.native
+    var serverinstanceTemplateServeradminGroup: js.UndefOr[String] = js.undefined
     
-    var serverinstanceTemplateServerdefaultGroup: js.UndefOr[String] = js.native
+    var serverinstanceTemplateServerdefaultGroup: js.UndefOr[String] = js.undefined
   }
   object InstanceEdit {
     
@@ -565,104 +573,105 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait ServerEdit extends ResponseEntry {
+  trait ServerEdit
+    extends StObject
+       with ResponseEntry {
     
-    var virtualserverAntifloodPointsNeededCommandBlock: js.UndefOr[Double] = js.native
+    var virtualserverAntifloodPointsNeededCommandBlock: js.UndefOr[Double] = js.undefined
     
-    var virtualserverAntifloodPointsNeededIpBlock: js.UndefOr[Double] = js.native
+    var virtualserverAntifloodPointsNeededIpBlock: js.UndefOr[Double] = js.undefined
     
-    var virtualserverAntifloodPointsNeededPluginBlock: js.UndefOr[Double] = js.native
+    var virtualserverAntifloodPointsNeededPluginBlock: js.UndefOr[Double] = js.undefined
     
-    var virtualserverAntifloodPointsTickReduce: js.UndefOr[Double] = js.native
+    var virtualserverAntifloodPointsTickReduce: js.UndefOr[Double] = js.undefined
     
-    var virtualserverAutostart: js.UndefOr[Double] = js.native
+    var virtualserverAutostart: js.UndefOr[Double] = js.undefined
     
-    var virtualserverCodecEncryptionMode: js.UndefOr[CodecEncryptionMode] = js.native
+    var virtualserverCodecEncryptionMode: js.UndefOr[CodecEncryptionMode] = js.undefined
     
-    var virtualserverComplainAutobanCount: js.UndefOr[Double] = js.native
+    var virtualserverComplainAutobanCount: js.UndefOr[Double] = js.undefined
     
-    var virtualserverComplainAutobanTime: js.UndefOr[Double] = js.native
+    var virtualserverComplainAutobanTime: js.UndefOr[Double] = js.undefined
     
-    var virtualserverComplainRemoveTime: js.UndefOr[Double] = js.native
+    var virtualserverComplainRemoveTime: js.UndefOr[Double] = js.undefined
     
-    var virtualserverDefaultChannelAdminGroup: js.UndefOr[Double] = js.native
+    var virtualserverDefaultChannelAdminGroup: js.UndefOr[Double] = js.undefined
     
-    var virtualserverDefaultChannelGroup: js.UndefOr[Double] = js.native
+    var virtualserverDefaultChannelGroup: js.UndefOr[Double] = js.undefined
     
-    var virtualserverDefaultServerGroup: js.UndefOr[Double] = js.native
+    var virtualserverDefaultServerGroup: js.UndefOr[Double] = js.undefined
     
-    var virtualserverDownloadQuota: js.UndefOr[Double] = js.native
+    var virtualserverDownloadQuota: js.UndefOr[Double] = js.undefined
     
-    var virtualserverHostbannerGfxInterval: js.UndefOr[Double] = js.native
+    var virtualserverHostbannerGfxInterval: js.UndefOr[Double] = js.undefined
     
-    var virtualserverHostbannerGfxUrl: js.UndefOr[String] = js.native
+    var virtualserverHostbannerGfxUrl: js.UndefOr[String] = js.undefined
     
-    var virtualserverHostbannerMode: js.UndefOr[HostBannerMode] = js.native
+    var virtualserverHostbannerMode: js.UndefOr[HostBannerMode] = js.undefined
     
-    var virtualserverHostbannerUrl: js.UndefOr[String] = js.native
+    var virtualserverHostbannerUrl: js.UndefOr[String] = js.undefined
     
-    var virtualserverHostbuttonGfxUrl: js.UndefOr[String] = js.native
+    var virtualserverHostbuttonGfxUrl: js.UndefOr[String] = js.undefined
     
-    var virtualserverHostbuttonTooltip: js.UndefOr[String] = js.native
+    var virtualserverHostbuttonTooltip: js.UndefOr[String] = js.undefined
     
-    var virtualserverHostbuttonUrl: js.UndefOr[String] = js.native
+    var virtualserverHostbuttonUrl: js.UndefOr[String] = js.undefined
     
-    var virtualserverHostmessage: js.UndefOr[String] = js.native
+    var virtualserverHostmessage: js.UndefOr[String] = js.undefined
     
-    var virtualserverHostmessageMode: js.UndefOr[HostMessageMode] = js.native
+    var virtualserverHostmessageMode: js.UndefOr[HostMessageMode] = js.undefined
     
-    var virtualserverIconId: js.UndefOr[Double] = js.native
+    var virtualserverIconId: js.UndefOr[Double] = js.undefined
     
-    var virtualserverLogChannel: js.UndefOr[Double] = js.native
+    var virtualserverLogChannel: js.UndefOr[Double] = js.undefined
     
-    var virtualserverLogClient: js.UndefOr[Double] = js.native
+    var virtualserverLogClient: js.UndefOr[Double] = js.undefined
     
-    var virtualserverLogFiletransfer: js.UndefOr[Double] = js.native
+    var virtualserverLogFiletransfer: js.UndefOr[Double] = js.undefined
     
-    var virtualserverLogPermissions: js.UndefOr[Double] = js.native
+    var virtualserverLogPermissions: js.UndefOr[Double] = js.undefined
     
-    var virtualserverLogQuery: js.UndefOr[Double] = js.native
+    var virtualserverLogQuery: js.UndefOr[Double] = js.undefined
     
-    var virtualserverLogServer: js.UndefOr[Double] = js.native
+    var virtualserverLogServer: js.UndefOr[Double] = js.undefined
     
-    var virtualserverMachineId: js.UndefOr[String] = js.native
+    var virtualserverMachineId: js.UndefOr[String] = js.undefined
     
-    var virtualserverMaxDownloadTotalBandwidth: js.UndefOr[Double] = js.native
+    var virtualserverMaxDownloadTotalBandwidth: js.UndefOr[Double] = js.undefined
     
-    var virtualserverMaxUploadTotalBandwidth: js.UndefOr[Double] = js.native
+    var virtualserverMaxUploadTotalBandwidth: js.UndefOr[Double] = js.undefined
     
-    var virtualserverMaxclients: js.UndefOr[Double] = js.native
+    var virtualserverMaxclients: js.UndefOr[Double] = js.undefined
     
-    var virtualserverMinAndroidVersion: js.UndefOr[Double] = js.native
+    var virtualserverMinAndroidVersion: js.UndefOr[Double] = js.undefined
     
-    var virtualserverMinClientVersion: js.UndefOr[Double] = js.native
+    var virtualserverMinClientVersion: js.UndefOr[Double] = js.undefined
     
-    var virtualserverMinClientsInChannelBeforeForcedSilence: js.UndefOr[Double] = js.native
+    var virtualserverMinClientsInChannelBeforeForcedSilence: js.UndefOr[Double] = js.undefined
     
-    var virtualserverMinIosVersion: js.UndefOr[Double] = js.native
+    var virtualserverMinIosVersion: js.UndefOr[Double] = js.undefined
     
-    var virtualserverName: js.UndefOr[String] = js.native
+    var virtualserverName: js.UndefOr[String] = js.undefined
     
-    var virtualserverNamePhonetic: js.UndefOr[String] = js.native
+    var virtualserverNamePhonetic: js.UndefOr[String] = js.undefined
     
-    var virtualserverNeededIdentitySecurityLevel: js.UndefOr[Double] = js.native
+    var virtualserverNeededIdentitySecurityLevel: js.UndefOr[Double] = js.undefined
     
-    var virtualserverPassword: js.UndefOr[String] = js.native
+    var virtualserverPassword: js.UndefOr[String] = js.undefined
     
-    var virtualserverPort: js.UndefOr[Double] = js.native
+    var virtualserverPort: js.UndefOr[Double] = js.undefined
     
-    var virtualserverPrioritySpeakerDimmModificator: js.UndefOr[Double] = js.native
+    var virtualserverPrioritySpeakerDimmModificator: js.UndefOr[Double] = js.undefined
     
-    var virtualserverReservedSlots: js.UndefOr[Double] = js.native
+    var virtualserverReservedSlots: js.UndefOr[Double] = js.undefined
     
-    var virtualserverStatus: js.UndefOr[VirtualServerStatus] = js.native
+    var virtualserverStatus: js.UndefOr[VirtualServerStatus] = js.undefined
     
-    var virtualserverUploadQuota: js.UndefOr[Double] = js.native
+    var virtualserverUploadQuota: js.UndefOr[Double] = js.undefined
     
-    var virtualserverWeblistEnabled: js.UndefOr[Double] = js.native
+    var virtualserverWeblistEnabled: js.UndefOr[Double] = js.undefined
     
-    var virtualserverWelcomemessage: js.UndefOr[String] = js.native
+    var virtualserverWelcomemessage: js.UndefOr[String] = js.undefined
   }
   object ServerEdit {
     
@@ -965,23 +974,24 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait ServerTempPasswordAdd extends ResponseEntry {
+  trait ServerTempPasswordAdd
+    extends StObject
+       with ResponseEntry {
     
     /** description of the password */
-    var desc: js.UndefOr[String] = js.native
+    var desc: js.UndefOr[String] = js.undefined
     
     /** the duration the password is valid in seconds */
-    var duration: Double = js.native
+    var duration: Double
     
     /** the temporary password */
-    var pw: String = js.native
+    var pw: String
     
     /** the channel to let the user join */
-    var tcid: js.UndefOr[String] = js.native
+    var tcid: js.UndefOr[String] = js.undefined
     
     /** the password to the channel */
-    var tcpw: js.UndefOr[String] = js.native
+    var tcpw: js.UndefOr[String] = js.undefined
   }
   object ServerTempPasswordAdd {
     
@@ -1020,22 +1030,23 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait TransferDownload extends ResponseEntry {
+  trait TransferDownload
+    extends StObject
+       with ResponseEntry {
     
     /** channel id to upload to */
-    var cid: js.UndefOr[String] = js.native
+    var cid: js.UndefOr[String] = js.undefined
     
     /** arbitary id to identify the transfer */
-    var clientftfid: js.UndefOr[Double] = js.native
+    var clientftfid: js.UndefOr[Double] = js.undefined
     
     /** channel password of the channel which will be uploaded to */
-    var cpw: js.UndefOr[String] = js.native
+    var cpw: js.UndefOr[String] = js.undefined
     
     /** destination filename */
-    var name: String = js.native
+    var name: String
     
-    var seekpos: js.UndefOr[Double] = js.native
+    var seekpos: js.UndefOr[Double] = js.undefined
   }
   object TransferDownload {
     
@@ -1077,28 +1088,29 @@ object propertyTypesMod {
     }
   }
   
-  @js.native
-  trait TransferUpload extends ResponseEntry {
+  trait TransferUpload
+    extends StObject
+       with ResponseEntry {
     
     /** channel id to upload to */
-    var cid: js.UndefOr[String] = js.native
+    var cid: js.UndefOr[String] = js.undefined
     
     /** arbitary id to identify the transfer */
-    var clientftfid: js.UndefOr[Double] = js.native
+    var clientftfid: js.UndefOr[Double] = js.undefined
     
     /** channel password of the channel which will be uploaded to */
-    var cpw: js.UndefOr[String] = js.native
+    var cpw: js.UndefOr[String] = js.undefined
     
     /** destination filename */
-    var name: String = js.native
+    var name: String
     
     /** overwrites an existing file */
-    var overwrite: js.UndefOr[Double] = js.native
+    var overwrite: js.UndefOr[Double] = js.undefined
     
-    var resume: js.UndefOr[Double] = js.native
+    var resume: js.UndefOr[Double] = js.undefined
     
     /** size of the file */
-    var size: Double = js.native
+    var size: Double
   }
   object TransferUpload {
     

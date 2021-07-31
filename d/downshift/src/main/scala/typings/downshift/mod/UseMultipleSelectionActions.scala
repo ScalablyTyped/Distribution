@@ -2,21 +2,19 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseMultipleSelectionActions[Item] extends StObject {
   
-  def addSelectedItem(item: Item): Unit = js.native
+  def addSelectedItem(item: Item): Unit
   
-  def removeSelectedItem(item: Item): Unit = js.native
+  def removeSelectedItem(item: Item): Unit
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def setActiveIndex(index: Double): Unit = js.native
+  def setActiveIndex(index: Double): Unit
   
-  def setSelectedItems(items: js.Array[Item]): Unit = js.native
+  def setSelectedItems(items: js.Array[Item]): Unit
 }
 object UseMultipleSelectionActions {
   
@@ -33,7 +31,7 @@ object UseMultipleSelectionActions {
   }
   
   @scala.inline
-  implicit class UseMultipleSelectionActionsMutableBuilder[Self <: UseMultipleSelectionActions[_], Item] (val x: Self with UseMultipleSelectionActions[Item]) extends AnyVal {
+  implicit class UseMultipleSelectionActionsMutableBuilder[Self <: UseMultipleSelectionActions[?], Item] (val x: Self & UseMultipleSelectionActions[Item]) extends AnyVal {
     
     @scala.inline
     def setAddSelectedItem(value: Item => Unit): Self = StObject.set(x, "addSelectedItem", js.Any.fromFunction1(value))

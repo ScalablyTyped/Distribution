@@ -3,84 +3,84 @@ package typings.appBuilderLib
 import typings.appBuilderLib.coreMod.TargetSpecificOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appXOptionsMod {
   
-  @js.native
-  trait AppXOptions extends TargetSpecificOptions {
+  trait AppXOptions
+    extends StObject
+       with TargetSpecificOptions {
     
     /**
       * Whether to add auto launch extension. Defaults to `true` if [electron-winstore-auto-launch](https://github.com/felixrieseberg/electron-winstore-auto-launch) in the dependencies.
       */
-    val addAutoLaunchExtension: js.UndefOr[Boolean] = js.native
+    val addAutoLaunchExtension: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The application id. Defaults to `identityName`. Can’t start with numbers.
       */
-    val applicationId: js.UndefOr[String] = js.native
+    val applicationId: js.UndefOr[String] = js.undefined
     
     /**
       * The background color of the app tile. See [Visual Elements](https://msdn.microsoft.com/en-us/library/windows/apps/br211471.aspx).
       * @default #464646
       */
-    val backgroundColor: js.UndefOr[String | Null] = js.native
+    val backgroundColor: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Relative path to custom extensions xml to be included in an `appmanifest.xml`.
       */
-    val customExtensionsPath: js.UndefOr[String] = js.native
+    val customExtensionsPath: js.UndefOr[String] = js.undefined
     
     /**
       * A friendly name that can be displayed to users. Corresponds to [Properties.DisplayName](https://msdn.microsoft.com/en-us/library/windows/apps/br211432.aspx).
       * Defaults to the application product name.
       */
-    val displayName: js.UndefOr[String | Null] = js.native
+    val displayName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * @private
       * @default false
       */
-    val electronUpdaterAware: js.UndefOr[Boolean] = js.native
+    val electronUpdaterAware: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name. Corresponds to [Identity.Name](https://msdn.microsoft.com/en-us/library/windows/apps/br211441.aspx). Defaults to the [application name](/configuration/configuration#Metadata-name).
       */
-    val identityName: js.UndefOr[String | Null] = js.native
+    val identityName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The list of [supported languages](https://docs.microsoft.com/en-us/windows/uwp/globalizing/manage-language-and-region#specify-the-supported-languages-in-the-apps-manifest) that will be listed in the Windows Store.
       * The first entry (index 0) will be the default language.
       * Defaults to en-US if omitted.
       */
-    val languages: js.UndefOr[js.Array[String] | String | Null] = js.native
+    val languages: js.UndefOr[js.Array[String] | String | Null] = js.undefined
     
     /** @private */
-    val makeappxArgs: js.UndefOr[js.Array[String] | Null] = js.native
+    val makeappxArgs: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * The Windows Store publisher. Not used if AppX is build for testing. See [AppX Package Code Signing](#appx-package-code-signing) below.
       */
-    val publisher: js.UndefOr[String | Null] = js.native
+    val publisher: js.UndefOr[String | Null] = js.undefined
     
     /**
       * A friendly name for the publisher that can be displayed to users. Corresponds to [Properties.PublisherDisplayName](https://msdn.microsoft.com/en-us/library/windows/apps/br211460.aspx).
       * Defaults to company name from the application metadata.
       */
-    val publisherDisplayName: js.UndefOr[String | Null] = js.native
+    val publisherDisplayName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether to set build number. See https://github.com/electron-userland/electron-builder/issues/3875
       * @default false
       */
-    val setBuildNumber: js.UndefOr[Boolean] = js.native
+    val setBuildNumber: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to overlay the app's name on top of tile images on the Start screen. Defaults to `false`. (https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap-shownameontiles) in the dependencies.
       * @default false
       */
-    val showNameOnTiles: js.UndefOr[Boolean] = js.native
+    val showNameOnTiles: js.UndefOr[Boolean] = js.undefined
   }
   object AppXOptions {
     

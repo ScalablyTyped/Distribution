@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/identitytoolkit/v3", "identitytoolkit_v3.Resource$Relyingparty")
@@ -30,7 +29,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def createAuthUri(): GaxiosPromise[SchemaCreateAuthUriResponse] = js.native
   def createAuthUri(callback: BodyResponseCallback[SchemaCreateAuthUriResponse]): Unit = js.native
-  def createAuthUri(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreateAuthUriResponse] = js.native
+  def createAuthUri(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreateAuthUriResponse] = js.native
   def createAuthUri(params: ParamsResourceRelyingpartyCreateauthuri): GaxiosPromise[SchemaCreateAuthUriResponse] = js.native
   def createAuthUri(
     params: ParamsResourceRelyingpartyCreateauthuri,
@@ -62,7 +61,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def deleteAccount(): GaxiosPromise[SchemaDeleteAccountResponse] = js.native
   def deleteAccount(callback: BodyResponseCallback[SchemaDeleteAccountResponse]): Unit = js.native
-  def deleteAccount(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeleteAccountResponse] = js.native
+  def deleteAccount(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDeleteAccountResponse] = js.native
   def deleteAccount(params: ParamsResourceRelyingpartyDeleteaccount): GaxiosPromise[SchemaDeleteAccountResponse] = js.native
   def deleteAccount(
     params: ParamsResourceRelyingpartyDeleteaccount,
@@ -94,7 +93,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def downloadAccount(): GaxiosPromise[SchemaDownloadAccountResponse] = js.native
   def downloadAccount(callback: BodyResponseCallback[SchemaDownloadAccountResponse]): Unit = js.native
-  def downloadAccount(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDownloadAccountResponse] = js.native
+  def downloadAccount(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDownloadAccountResponse] = js.native
   def downloadAccount(params: ParamsResourceRelyingpartyDownloadaccount): GaxiosPromise[SchemaDownloadAccountResponse] = js.native
   def downloadAccount(
     params: ParamsResourceRelyingpartyDownloadaccount,
@@ -126,7 +125,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def emailLinkSignin(): GaxiosPromise[SchemaEmailLinkSigninResponse] = js.native
   def emailLinkSignin(callback: BodyResponseCallback[SchemaEmailLinkSigninResponse]): Unit = js.native
-  def emailLinkSignin(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmailLinkSigninResponse] = js.native
+  def emailLinkSignin(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmailLinkSigninResponse] = js.native
   def emailLinkSignin(params: ParamsResourceRelyingpartyEmaillinksignin): GaxiosPromise[SchemaEmailLinkSigninResponse] = js.native
   def emailLinkSignin(
     params: ParamsResourceRelyingpartyEmaillinksignin,
@@ -158,7 +157,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def getAccountInfo(): GaxiosPromise[SchemaGetAccountInfoResponse] = js.native
   def getAccountInfo(callback: BodyResponseCallback[SchemaGetAccountInfoResponse]): Unit = js.native
-  def getAccountInfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetAccountInfoResponse] = js.native
+  def getAccountInfo(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetAccountInfoResponse] = js.native
   def getAccountInfo(params: ParamsResourceRelyingpartyGetaccountinfo): GaxiosPromise[SchemaGetAccountInfoResponse] = js.native
   def getAccountInfo(
     params: ParamsResourceRelyingpartyGetaccountinfo,
@@ -190,7 +189,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def getOobConfirmationCode(): GaxiosPromise[SchemaGetOobConfirmationCodeResponse] = js.native
   def getOobConfirmationCode(callback: BodyResponseCallback[SchemaGetOobConfirmationCodeResponse]): Unit = js.native
-  def getOobConfirmationCode(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetOobConfirmationCodeResponse] = js.native
+  def getOobConfirmationCode(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetOobConfirmationCodeResponse] = js.native
   def getOobConfirmationCode(params: ParamsResourceRelyingpartyGetoobconfirmationcode): GaxiosPromise[SchemaGetOobConfirmationCodeResponse] = js.native
   def getOobConfirmationCode(
     params: ParamsResourceRelyingpartyGetoobconfirmationcode,
@@ -223,7 +222,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def getProjectConfig(): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyGetProjectConfigResponse] = js.native
   def getProjectConfig(callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartyGetProjectConfigResponse]): Unit = js.native
-  def getProjectConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyGetProjectConfigResponse] = js.native
+  def getProjectConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyGetProjectConfigResponse] = js.native
   def getProjectConfig(params: ParamsResourceRelyingpartyGetprojectconfig): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyGetProjectConfigResponse] = js.native
   def getProjectConfig(
     params: ParamsResourceRelyingpartyGetprojectconfig,
@@ -254,7 +253,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def getPublicKeys(): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyGetPublicKeysResponse] = js.native
   def getPublicKeys(callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartyGetPublicKeysResponse]): Unit = js.native
-  def getPublicKeys(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyGetPublicKeysResponse] = js.native
+  def getPublicKeys(params: Unit, options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyGetPublicKeysResponse] = js.native
   def getPublicKeys(params: ParamsResourceRelyingpartyGetpublickeys): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyGetPublicKeysResponse] = js.native
   def getPublicKeys(
     params: ParamsResourceRelyingpartyGetpublickeys,
@@ -285,7 +284,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def getRecaptchaParam(): GaxiosPromise[SchemaGetRecaptchaParamResponse] = js.native
   def getRecaptchaParam(callback: BodyResponseCallback[SchemaGetRecaptchaParamResponse]): Unit = js.native
-  def getRecaptchaParam(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetRecaptchaParamResponse] = js.native
+  def getRecaptchaParam(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetRecaptchaParamResponse] = js.native
   def getRecaptchaParam(params: ParamsResourceRelyingpartyGetrecaptchaparam): GaxiosPromise[SchemaGetRecaptchaParamResponse] = js.native
   def getRecaptchaParam(
     params: ParamsResourceRelyingpartyGetrecaptchaparam,
@@ -317,7 +316,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def resetPassword(): GaxiosPromise[SchemaResetPasswordResponse] = js.native
   def resetPassword(callback: BodyResponseCallback[SchemaResetPasswordResponse]): Unit = js.native
-  def resetPassword(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResetPasswordResponse] = js.native
+  def resetPassword(params: Unit, options: MethodOptions): GaxiosPromise[SchemaResetPasswordResponse] = js.native
   def resetPassword(params: ParamsResourceRelyingpartyResetpassword): GaxiosPromise[SchemaResetPasswordResponse] = js.native
   def resetPassword(
     params: ParamsResourceRelyingpartyResetpassword,
@@ -349,7 +348,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def sendVerificationCode(): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse] = js.native
   def sendVerificationCode(callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse]): Unit = js.native
-  def sendVerificationCode(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse] = js.native
+  def sendVerificationCode(params: Unit, options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse] = js.native
   def sendVerificationCode(params: ParamsResourceRelyingpartySendverificationcode): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse] = js.native
   def sendVerificationCode(
     params: ParamsResourceRelyingpartySendverificationcode,
@@ -381,7 +380,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def setAccountInfo(): GaxiosPromise[SchemaSetAccountInfoResponse] = js.native
   def setAccountInfo(callback: BodyResponseCallback[SchemaSetAccountInfoResponse]): Unit = js.native
-  def setAccountInfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSetAccountInfoResponse] = js.native
+  def setAccountInfo(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSetAccountInfoResponse] = js.native
   def setAccountInfo(params: ParamsResourceRelyingpartySetaccountinfo): GaxiosPromise[SchemaSetAccountInfoResponse] = js.native
   def setAccountInfo(
     params: ParamsResourceRelyingpartySetaccountinfo,
@@ -413,7 +412,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def setProjectConfig(): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse] = js.native
   def setProjectConfig(callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse]): Unit = js.native
-  def setProjectConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse] = js.native
+  def setProjectConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse] = js.native
   def setProjectConfig(params: ParamsResourceRelyingpartySetprojectconfig): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse] = js.native
   def setProjectConfig(
     params: ParamsResourceRelyingpartySetprojectconfig,
@@ -445,7 +444,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def signOutUser(): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySignOutUserResponse] = js.native
   def signOutUser(callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartySignOutUserResponse]): Unit = js.native
-  def signOutUser(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySignOutUserResponse] = js.native
+  def signOutUser(params: Unit, options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySignOutUserResponse] = js.native
   def signOutUser(params: ParamsResourceRelyingpartySignoutuser): GaxiosPromise[SchemaIdentitytoolkitRelyingpartySignOutUserResponse] = js.native
   def signOutUser(
     params: ParamsResourceRelyingpartySignoutuser,
@@ -477,7 +476,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def signupNewUser(): GaxiosPromise[SchemaSignupNewUserResponse] = js.native
   def signupNewUser(callback: BodyResponseCallback[SchemaSignupNewUserResponse]): Unit = js.native
-  def signupNewUser(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSignupNewUserResponse] = js.native
+  def signupNewUser(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSignupNewUserResponse] = js.native
   def signupNewUser(params: ParamsResourceRelyingpartySignupnewuser): GaxiosPromise[SchemaSignupNewUserResponse] = js.native
   def signupNewUser(
     params: ParamsResourceRelyingpartySignupnewuser,
@@ -509,7 +508,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def uploadAccount(): GaxiosPromise[SchemaUploadAccountResponse] = js.native
   def uploadAccount(callback: BodyResponseCallback[SchemaUploadAccountResponse]): Unit = js.native
-  def uploadAccount(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUploadAccountResponse] = js.native
+  def uploadAccount(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUploadAccountResponse] = js.native
   def uploadAccount(params: ParamsResourceRelyingpartyUploadaccount): GaxiosPromise[SchemaUploadAccountResponse] = js.native
   def uploadAccount(
     params: ParamsResourceRelyingpartyUploadaccount,
@@ -541,7 +540,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def verifyAssertion(): GaxiosPromise[SchemaVerifyAssertionResponse] = js.native
   def verifyAssertion(callback: BodyResponseCallback[SchemaVerifyAssertionResponse]): Unit = js.native
-  def verifyAssertion(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVerifyAssertionResponse] = js.native
+  def verifyAssertion(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVerifyAssertionResponse] = js.native
   def verifyAssertion(params: ParamsResourceRelyingpartyVerifyassertion): GaxiosPromise[SchemaVerifyAssertionResponse] = js.native
   def verifyAssertion(
     params: ParamsResourceRelyingpartyVerifyassertion,
@@ -573,7 +572,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def verifyCustomToken(): GaxiosPromise[SchemaVerifyCustomTokenResponse] = js.native
   def verifyCustomToken(callback: BodyResponseCallback[SchemaVerifyCustomTokenResponse]): Unit = js.native
-  def verifyCustomToken(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVerifyCustomTokenResponse] = js.native
+  def verifyCustomToken(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVerifyCustomTokenResponse] = js.native
   def verifyCustomToken(params: ParamsResourceRelyingpartyVerifycustomtoken): GaxiosPromise[SchemaVerifyCustomTokenResponse] = js.native
   def verifyCustomToken(
     params: ParamsResourceRelyingpartyVerifycustomtoken,
@@ -605,7 +604,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def verifyPassword(): GaxiosPromise[SchemaVerifyPasswordResponse] = js.native
   def verifyPassword(callback: BodyResponseCallback[SchemaVerifyPasswordResponse]): Unit = js.native
-  def verifyPassword(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVerifyPasswordResponse] = js.native
+  def verifyPassword(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVerifyPasswordResponse] = js.native
   def verifyPassword(params: ParamsResourceRelyingpartyVerifypassword): GaxiosPromise[SchemaVerifyPasswordResponse] = js.native
   def verifyPassword(
     params: ParamsResourceRelyingpartyVerifypassword,
@@ -638,7 +637,7 @@ class ResourceRelyingparty protected () extends StObject {
     */
   def verifyPhoneNumber(): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse] = js.native
   def verifyPhoneNumber(callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]): Unit = js.native
-  def verifyPhoneNumber(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse] = js.native
+  def verifyPhoneNumber(params: Unit, options: MethodOptions): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse] = js.native
   def verifyPhoneNumber(params: ParamsResourceRelyingpartyVerifyphonenumber): GaxiosPromise[SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse] = js.native
   def verifyPhoneNumber(
     params: ParamsResourceRelyingpartyVerifyphonenumber,

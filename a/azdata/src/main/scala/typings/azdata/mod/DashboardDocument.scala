@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashboardDocument extends StObject {
   
-  var profile: IConnectionProfile = js.native
+  var profile: IConnectionProfile
   
-  var serverInfo: ServerInfo = js.native
+  var serverInfo: ServerInfo
 }
 object DashboardDocument {
   

@@ -3,73 +3,71 @@ package typings.antdMobileRn.anon
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container extends StObject {
   
-  var container: ViewStyle = js.native
+  var container: ViewStyle
   
-  var defaultDisabledRaw: BorderColor = js.native
+  var defaultDisabledRaw: BorderColor
   
-  var defaultDisabledRawText: ColorString = js.native
+  var defaultDisabledRawText: ColorString
   
-  var defaultHighlight: BorderColor = js.native
+  var defaultHighlight: BorderColor
   
-  var defaultHighlightText: ColorString = js.native
+  var defaultHighlightText: ColorString
   
-  var defaultRaw: BorderColor = js.native
+  var defaultRaw: BorderColor
   
-  var defaultRawText: ColorString = js.native
+  var defaultRawText: ColorString
   
-  var ghostDisabledRaw: BorderColorString = js.native
+  var ghostDisabledRaw: BorderColorString
   
-  var ghostDisabledRawText: ColorString = js.native
+  var ghostDisabledRawText: ColorString
   
-  var ghostHighlight: BorderColor = js.native
+  var ghostHighlight: BorderColor
   
-  var ghostHighlightText: ColorString = js.native
+  var ghostHighlightText: ColorString
   
-  var ghostRaw: BorderColor = js.native
+  var ghostRaw: BorderColor
   
-  var ghostRawText: ColorString = js.native
+  var ghostRawText: ColorString
   
-  var indicator: MarginRight = js.native
+  var indicator: MarginRight
   
-  var largeRaw: PaddingLeft = js.native
+  var largeRaw: PaddingLeft
   
-  var largeRawText: FontSizeNumber = js.native
+  var largeRawText: FontSizeNumber
   
-  var primaryDisabledRaw: Opacity = js.native
+  var primaryDisabledRaw: Opacity
   
-  var primaryDisabledRawText: ColorString = js.native
+  var primaryDisabledRawText: ColorString
   
-  var primaryHighlight: BorderColor = js.native
+  var primaryHighlight: BorderColor
   
-  var primaryHighlightText: ColorString = js.native
+  var primaryHighlightText: ColorString
   
-  var primaryRaw: BorderColor = js.native
+  var primaryRaw: BorderColor
   
-  var primaryRawText: ColorString = js.native
+  var primaryRawText: ColorString
   
-  var smallRaw: PaddingLeft = js.native
+  var smallRaw: PaddingLeft
   
-  var smallRawText: FontSizeNumber = js.native
+  var smallRawText: FontSizeNumber
   
-  var warningDisabledRaw: Opacity = js.native
+  var warningDisabledRaw: Opacity
   
-  var warningDisabledRawText: ColorString = js.native
+  var warningDisabledRawText: ColorString
   
-  var warningHighlight: BorderColor = js.native
+  var warningHighlight: BorderColor
   
-  var warningHighlightText: ColorString = js.native
+  var warningHighlightText: ColorString
   
-  var warningRaw: BorderColor = js.native
+  var warningRaw: BorderColor
   
-  var warningRawText: ColorString = js.native
+  var warningRawText: ColorString
   
-  var wrapperStyle: BorderWidth = js.native
+  var wrapperStyle: BorderWidth
 }
 object Container {
   

@@ -2,21 +2,19 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CAConfig extends StObject {
   
-  var ExternalCAs: js.UndefOr[js.Array[ExternalCA]] = js.native
+  var ExternalCAs: js.UndefOr[js.Array[ExternalCA]] = js.undefined
   
-  var ForceRotate: js.UndefOr[Double] = js.native
+  var ForceRotate: js.UndefOr[Double] = js.undefined
   
-  var NodeCertExpiry: js.UndefOr[Duration] = js.native
+  var NodeCertExpiry: js.UndefOr[Duration] = js.undefined
   
-  var SigningCACert: js.UndefOr[String] = js.native
+  var SigningCACert: js.UndefOr[String] = js.undefined
   
-  var SigningCAKey: js.UndefOr[String] = js.native
+  var SigningCAKey: js.UndefOr[String] = js.undefined
 }
 object CAConfig {
   

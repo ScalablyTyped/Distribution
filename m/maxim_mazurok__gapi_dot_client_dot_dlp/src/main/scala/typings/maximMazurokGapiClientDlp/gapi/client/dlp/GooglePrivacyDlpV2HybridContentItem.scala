@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2HybridContentItem extends StObject {
   
   /** Supplementary information that will be added to each finding. */
-  var findingDetails: js.UndefOr[GooglePrivacyDlpV2HybridFindingDetails] = js.native
+  var findingDetails: js.UndefOr[GooglePrivacyDlpV2HybridFindingDetails] = js.undefined
   
   /** The item to inspect. */
-  var item: js.UndefOr[GooglePrivacyDlpV2ContentItem] = js.native
+  var item: js.UndefOr[GooglePrivacyDlpV2ContentItem] = js.undefined
 }
 object GooglePrivacyDlpV2HybridContentItem {
   

@@ -21,54 +21,48 @@ import typings.jointjs.mod.dia.Point
 import typings.jointjs.mod.g.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layout {
   
   object DirectedGraph {
     
-    @JSImport("jointjs", "layout.DirectedGraph.fromGraphLib")
+    @JSImport("jointjs", "layout.DirectedGraph")
     @js.native
-    def fromGraphLib(glGraph: js.Any): Graph = js.native
-    @JSImport("jointjs", "layout.DirectedGraph.fromGraphLib")
-    @js.native
-    def fromGraphLib(glGraph: js.Any, opt: StringDictionary[js.Any]): Graph = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("jointjs", "layout.DirectedGraph.layout")
-    @js.native
-    def layout(graph: js.Array[Cell]): Rect = js.native
-    @JSImport("jointjs", "layout.DirectedGraph.layout")
-    @js.native
-    def layout(graph: js.Array[Cell], opt: LayoutOptions): Rect = js.native
-    @JSImport("jointjs", "layout.DirectedGraph.layout")
-    @js.native
-    def layout(graph: Graph): Rect = js.native
-    @JSImport("jointjs", "layout.DirectedGraph.layout")
-    @js.native
-    def layout(graph: Graph, opt: LayoutOptions): Rect = js.native
+    @scala.inline
+    def fromGraphLib(glGraph: js.Any): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphLib")(glGraph.asInstanceOf[js.Any]).asInstanceOf[Graph]
+    @scala.inline
+    def fromGraphLib(glGraph: js.Any, opt: StringDictionary[js.Any]): Graph = (^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphLib")(glGraph.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Graph]
     
-    @JSImport("jointjs", "layout.DirectedGraph.toGraphLib")
-    @js.native
-    def toGraphLib(graph: Graph): js.Any = js.native
-    @JSImport("jointjs", "layout.DirectedGraph.toGraphLib")
-    @js.native
-    def toGraphLib(graph: Graph, opt: toGraphLibOptions): js.Any = js.native
+    @scala.inline
+    def layout(graph: js.Array[Cell]): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any]).asInstanceOf[Rect]
+    @scala.inline
+    def layout(graph: js.Array[Cell], opt: LayoutOptions): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Rect]
+    @scala.inline
+    def layout(graph: Graph): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any]).asInstanceOf[Rect]
+    @scala.inline
+    def layout(graph: Graph, opt: LayoutOptions): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Rect]
     
-    @js.native
+    @scala.inline
+    def toGraphLib(graph: Graph): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toGraphLib")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def toGraphLib(graph: Graph, opt: toGraphLibOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toGraphLib")(graph.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
     trait Edge extends StObject {
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var labeloffset: js.UndefOr[Double] = js.native
+      var labeloffset: js.UndefOr[Double] = js.undefined
       
-      var labelpos: js.UndefOr[l_ | c_ | r] = js.native
+      var labelpos: js.UndefOr[l_ | c_ | r] = js.undefined
       
-      var minLen: js.UndefOr[Double] = js.native
+      var minLen: js.UndefOr[Double] = js.undefined
       
-      var weight: js.UndefOr[Double] = js.native
+      var weight: js.UndefOr[Double] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object Edge {
       
@@ -119,47 +113,46 @@ object layout {
       }
     }
     
-    @js.native
     trait LayoutOptions extends StObject {
       
-      var clusterPadding: js.UndefOr[Padding] = js.native
+      var clusterPadding: js.UndefOr[Padding] = js.undefined
       
-      var dagre: js.UndefOr[js.Any] = js.native
+      var dagre: js.UndefOr[js.Any] = js.undefined
       
-      var debugTiming: js.UndefOr[Boolean] = js.native
+      var debugTiming: js.UndefOr[Boolean] = js.undefined
       
-      var edgeSep: js.UndefOr[Double] = js.native
+      var edgeSep: js.UndefOr[Double] = js.undefined
       
-      var exportElement: js.UndefOr[js.Function1[/* element */ Element, Node]] = js.native
+      var exportElement: js.UndefOr[js.Function1[/* element */ Element, Node]] = js.undefined
       
-      var exportLink: js.UndefOr[js.Function1[/* link */ Link, Edge]] = js.native
+      var exportLink: js.UndefOr[js.Function1[/* link */ Link, Edge]] = js.undefined
       
-      var graphlib: js.UndefOr[js.Any] = js.native
+      var graphlib: js.UndefOr[js.Any] = js.undefined
       
-      var marginX: js.UndefOr[Double] = js.native
+      var marginX: js.UndefOr[Double] = js.undefined
       
-      var marginY: js.UndefOr[Double] = js.native
+      var marginY: js.UndefOr[Double] = js.undefined
       
-      var nodeSep: js.UndefOr[Double] = js.native
+      var nodeSep: js.UndefOr[Double] = js.undefined
       
-      var rankDir: js.UndefOr[TB | BT | LR | RL] = js.native
+      var rankDir: js.UndefOr[TB | BT | LR | RL] = js.undefined
       
-      var rankSep: js.UndefOr[Double] = js.native
+      var rankSep: js.UndefOr[Double] = js.undefined
       
-      var ranker: js.UndefOr[`network-simplex` | `tight-tree` | `longest-path`] = js.native
+      var ranker: js.UndefOr[`network-simplex` | `tight-tree` | `longest-path`] = js.undefined
       
-      var resizeClusters: js.UndefOr[Boolean] = js.native
+      var resizeClusters: js.UndefOr[Boolean] = js.undefined
       
       var setLabels: js.UndefOr[
             Boolean | (js.Function3[/* link */ Link, /* position */ Point, /* points */ js.Array[Point], Unit])
-          ] = js.native
+          ] = js.undefined
       
       // deprecated
-      var setLinkVertices: js.UndefOr[Boolean] = js.native
+      var setLinkVertices: js.UndefOr[Boolean] = js.undefined
       
-      var setPosition: js.UndefOr[js.Function2[/* element */ Element, /* position */ BBox, Unit]] = js.native
+      var setPosition: js.UndefOr[js.Function2[/* element */ Element, /* position */ BBox, Unit]] = js.undefined
       
-      var setVertices: js.UndefOr[Boolean | (js.Function2[/* link */ Link, /* vertices */ js.Array[Point], Unit])] = js.native
+      var setVertices: js.UndefOr[Boolean | (js.Function2[/* link */ Link, /* vertices */ js.Array[Point], Unit])] = js.undefined
     }
     object LayoutOptions {
       
@@ -290,12 +283,11 @@ object layout {
       }
     }
     
-    @js.native
     trait Node extends StObject {
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object Node {
       
@@ -322,11 +314,11 @@ object layout {
       }
     }
     
-    @js.native
     trait toGraphLibOptions
-      extends /* key */ StringDictionary[js.Any] {
+      extends StObject
+         with /* key */ StringDictionary[js.Any] {
       
-      var graphlib: js.UndefOr[js.Any] = js.native
+      var graphlib: js.UndefOr[js.Any] = js.undefined
     }
     object toGraphLibOptions {
       

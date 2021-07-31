@@ -3,14 +3,12 @@ package typings.semanticUiDimmer.anon
 import typings.semanticUiDimmer.semanticUiDimmerStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl, 'closable'> */
-@js.native
 trait PickImplclosable extends StObject {
   
-  var closable: auto | Boolean = js.native
+  var closable: auto | Boolean
 }
 object PickImplclosable {
   

@@ -5,7 +5,6 @@ import typings.chessboardjs.mod.OrientationType
 import typings.chessboardjs.mod.SpeedType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chessboardjsStrings {
@@ -16,12 +15,16 @@ object chessboardjsStrings {
   def BoardPositionType: BoardPositionType = "BoardPositionType".asInstanceOf[BoardPositionType]
   
   @js.native
-  sealed trait black extends OrientationType
+  sealed trait black
+    extends StObject
+       with OrientationType
   @scala.inline
   def black: black = "black".asInstanceOf[black]
   
   @js.native
-  sealed trait fast extends SpeedType
+  sealed trait fast
+    extends StObject
+       with SpeedType
   @scala.inline
   def fast: fast = "fast".asInstanceOf[fast]
   
@@ -36,12 +39,16 @@ object chessboardjsStrings {
   def flip: flip = "flip".asInstanceOf[flip]
   
   @js.native
-  sealed trait slow extends SpeedType
+  sealed trait slow
+    extends StObject
+       with SpeedType
   @scala.inline
   def slow: slow = "slow".asInstanceOf[slow]
   
   @js.native
-  sealed trait snapback extends DropOffBoardType
+  sealed trait snapback
+    extends StObject
+       with DropOffBoardType
   @scala.inline
   def snapback: snapback = "snapback".asInstanceOf[snapback]
   
@@ -51,12 +58,16 @@ object chessboardjsStrings {
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait trash extends DropOffBoardType
+  sealed trait trash
+    extends StObject
+       with DropOffBoardType
   @scala.inline
   def trash: trash = "trash".asInstanceOf[trash]
   
   @js.native
-  sealed trait white extends OrientationType
+  sealed trait white
+    extends StObject
+       with OrientationType
   @scala.inline
   def white: white = "white".asInstanceOf[white]
 }

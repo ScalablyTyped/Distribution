@@ -2,15 +2,13 @@ package typings.googleLibphonenumber.libphonenumber
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsYouTypeFormatter extends StObject {
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def inputDigit(digit: String): String = js.native
+  def inputDigit(digit: String): String
 }
 object AsYouTypeFormatter {
   

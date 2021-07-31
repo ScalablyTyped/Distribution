@@ -2,28 +2,26 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createIntent` operation. */
-@js.native
 trait CreateIntentParams extends StObject {
   
   /** The description of the intent. This string cannot contain carriage return, newline, or tab characters, and it must be no longer than 128 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** An array of user input examples for the intent. */
-  var examples: js.UndefOr[js.Array[Example]] = js.native
+  var examples: js.UndefOr[js.Array[Example]] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The name of the intent. This string must conform to the following restrictions: - It can contain only Unicode alphanumeric, underscore, hyphen, and dot characters. - It cannot begin with the reserved prefix `sys-`. - It must be no longer than 128 characters. */
-  var intent: String = js.native
+  var intent: String
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** Unique identifier of the workspace. */
-  var workspace_id: String = js.native
+  var workspace_id: String
 }
 object CreateIntentParams {
   

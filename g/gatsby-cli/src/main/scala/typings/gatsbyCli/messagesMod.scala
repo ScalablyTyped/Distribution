@@ -5,7 +5,6 @@ import typings.gatsbyCli.constantsMod.LogLevels
 import typings.react.mod.NamedExoticComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagesMod {
@@ -14,16 +13,15 @@ object messagesMod {
   @js.native
   val Message: NamedExoticComponent[IMessageProps] = js.native
   
-  @js.native
   trait IMessageProps extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var level: ActivityLogLevels | LogLevels = js.native
+    var level: ActivityLogLevels | LogLevels
     
-    var statusText: js.UndefOr[String] = js.native
+    var statusText: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object IMessageProps {
     

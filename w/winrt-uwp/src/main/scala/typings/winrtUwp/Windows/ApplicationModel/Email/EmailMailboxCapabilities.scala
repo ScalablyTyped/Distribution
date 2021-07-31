@@ -2,54 +2,52 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the capabilities associated with an email mailbox. */
-@js.native
 trait EmailMailboxCapabilities extends StObject {
   
   /** Gets a Boolean value indicating if folders can be created in the mailbox. */
-  var canCreateFolder: Boolean = js.native
+  var canCreateFolder: Boolean
   
   /** Gets a Boolean value indicating if folders can be deleted from the mailbox. */
-  var canDeleteFolder: Boolean = js.native
+  var canDeleteFolder: Boolean
   
   /** Gets a Boolean value indicating if folders in the mailbox can be emptied. */
-  var canEmptyFolder: Boolean = js.native
+  var canEmptyFolder: Boolean
   
-  var canForwardMeetings: js.Any = js.native
-  
-  /* unmapped type */
-  var canGetAndSetExternalAutoReplies: js.Any = js.native
+  var canForwardMeetings: js.Any
   
   /* unmapped type */
-  var canGetAndSetInternalAutoReplies: js.Any = js.native
+  var canGetAndSetExternalAutoReplies: js.Any
+  
+  /* unmapped type */
+  var canGetAndSetInternalAutoReplies: js.Any
   
   /* unmapped type */
   /** Gets a Boolean value indicating if folders in the mailbox can be moved. */
-  var canMoveFolder: Boolean = js.native
+  var canMoveFolder: Boolean
   
-  var canProposeNewTimeForMeetings: js.Any = js.native
+  var canProposeNewTimeForMeetings: js.Any
   
   /* unmapped type */
   /** Gets a Boolean value that indicates whether the email mailbox is capable of resolving recipients. */
-  var canResolveRecipients: Boolean = js.native
+  var canResolveRecipients: Boolean
   
-  var canServerSearchFolders: js.Any = js.native
-  
-  /* unmapped type */
-  var canServerSearchMailbox: js.Any = js.native
+  var canServerSearchFolders: js.Any
   
   /* unmapped type */
-  var canSmartSend: js.Any = js.native
+  var canServerSearchMailbox: js.Any
   
   /* unmapped type */
-  var canUpdateMeetingResponses: js.Any = js.native
+  var canSmartSend: js.Any
+  
+  /* unmapped type */
+  var canUpdateMeetingResponses: js.Any
   
   /* unmapped type */
   /** Gets a Boolean value that indicates whether the email mailbox is capable of validating certificates. */
-  var canValidateCertificates: Boolean = js.native
+  var canValidateCertificates: Boolean
 }
 object EmailMailboxCapabilities {
   

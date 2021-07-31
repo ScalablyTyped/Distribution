@@ -2,16 +2,14 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSigningJobRequest extends StObject {
   
   /**
     * The ID of the signing job on input.
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
 }
 object DescribeSigningJobRequest {
   

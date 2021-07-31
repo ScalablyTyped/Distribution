@@ -3,23 +3,21 @@ package typings.three.anon
 import typings.three.uniformsLibMod.IUniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlphaMap extends StObject {
   
-  var alphaMap: IUniform = js.native
+  var alphaMap: IUniform
   
-  var diffuse: IUniform = js.native
+  var diffuse: IUniform
   
-  var map: IUniform = js.native
+  var map: IUniform
   
-  var opacity: IUniform = js.native
+  var opacity: IUniform
   
-  var uv2Transform: IUniform = js.native
+  var uv2Transform: IUniform
   
-  var uvTransform: IUniform = js.native
+  var uvTransform: IUniform
 }
 object AlphaMap {
   

@@ -10,9 +10,9 @@ Configuration preset loader for `conventional-changelog`.
 | ------------------ | :-------------: |
 | Full name          | conventional-changelog-preset-loader |
 | Keywords           | conventional-changelog, preset, loader |
-| # releases         | 6 |
-| # dependents       | 16 |
-| # downloads        | 49658308 |
+| # releases         | 5 |
+| # dependents       | 34 |
+| # downloads        | 59842577 |
 | # stars            | 0 |
 
 ## Links

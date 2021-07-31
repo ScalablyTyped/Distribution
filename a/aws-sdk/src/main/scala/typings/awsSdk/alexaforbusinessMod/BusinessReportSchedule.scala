@@ -2,51 +2,49 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusinessReportSchedule extends StObject {
   
   /**
     * The content range of the reports.
     */
-  var ContentRange: js.UndefOr[BusinessReportContentRange] = js.native
+  var ContentRange: js.UndefOr[BusinessReportContentRange] = js.undefined
   
   /**
     * The format of the generated report (individual CSV files or zipped files of individual files).
     */
-  var Format: js.UndefOr[BusinessReportFormat] = js.native
+  var Format: js.UndefOr[BusinessReportFormat] = js.undefined
   
   /**
     * The details of the last business report delivery for a specified time interval.
     */
-  var LastBusinessReport: js.UndefOr[BusinessReport] = js.native
+  var LastBusinessReport: js.UndefOr[BusinessReport] = js.undefined
   
   /**
     * The recurrence of the reports.
     */
-  var Recurrence: js.UndefOr[BusinessReportRecurrence] = js.native
+  var Recurrence: js.UndefOr[BusinessReportRecurrence] = js.undefined
   
   /**
     * The S3 bucket name of the output reports.
     */
-  var S3BucketName: js.UndefOr[CustomerS3BucketName] = js.native
+  var S3BucketName: js.UndefOr[CustomerS3BucketName] = js.undefined
   
   /**
     * The S3 key where the report is delivered.
     */
-  var S3KeyPrefix: js.UndefOr[typings.awsSdk.alexaforbusinessMod.S3KeyPrefix] = js.native
+  var S3KeyPrefix: js.UndefOr[typings.awsSdk.alexaforbusinessMod.S3KeyPrefix] = js.undefined
   
   /**
     * The ARN of the business report schedule.
     */
-  var ScheduleArn: js.UndefOr[Arn] = js.native
+  var ScheduleArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name identifier of the schedule.
     */
-  var ScheduleName: js.UndefOr[BusinessReportScheduleName] = js.native
+  var ScheduleName: js.UndefOr[BusinessReportScheduleName] = js.undefined
 }
 object BusinessReportSchedule {
   

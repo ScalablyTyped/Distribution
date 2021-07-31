@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInterfaceAssociation extends StObject {
   
   /**
     * The allocation ID.
     */
-  var AllocationId: js.UndefOr[String] = js.native
+  var AllocationId: js.UndefOr[String] = js.undefined
   
   /**
     * The association ID.
     */
-  var AssociationId: js.UndefOr[String] = js.native
+  var AssociationId: js.UndefOr[String] = js.undefined
   
   /**
     * The carrier IP address associated with the network interface. This option is only available when the network interface is in a subnet which is associated with a Wavelength Zone.
     */
-  var CarrierIp: js.UndefOr[String] = js.native
+  var CarrierIp: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-owned IP address associated with the network interface.
     */
-  var CustomerOwnedIp: js.UndefOr[String] = js.native
+  var CustomerOwnedIp: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Elastic IP address owner.
     */
-  var IpOwnerId: js.UndefOr[String] = js.native
+  var IpOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The public DNS name.
     */
-  var PublicDnsName: js.UndefOr[String] = js.native
+  var PublicDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The address of the Elastic IP address bound to the network interface.
     */
-  var PublicIp: js.UndefOr[String] = js.native
+  var PublicIp: js.UndefOr[String] = js.undefined
 }
 object NetworkInterfaceAssociation {
   

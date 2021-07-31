@@ -10,9 +10,9 @@ Fast, caching, dynamic inline SVG DOM injection library.
 | ------------------ | :-------------: |
 | Full name          | @tanem/svg-injector |
 | Keywords           | dom, html, images, img, javascript, scalable-vector-graphics, svg, typescript |
-| # releases         | 114 |
+| # releases         | 100 |
 | # dependents       | 6 |
-| # downloads        | 2932881 |
+| # downloads        | 3328190 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,6 @@ import typings.std.Event
 import typings.urbanairshipCordova.anon.Alert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object UrbanAirshipPlugin {
@@ -87,7 +86,9 @@ object UrbanAirshipPlugin {
   //#endregion
   //#region Data Types
   @js.native
-  trait PushEvent extends Event {
+  trait PushEvent
+    extends StObject
+       with Event {
     
     var extras: StringDictionary[js.Any] = js.native
     
@@ -100,16 +101,15 @@ object UrbanAirshipPlugin {
     * For example, 10PM - 6AM would be:
     * { startHour: 22, startMinute: 0, endHour: 6, endMinute: 0 }
     */
-  @js.native
   trait QuietTimeTimeSpan extends StObject {
     
-    var endHour: Double = js.native
+    var endHour: Double
     
-    var endMinute: Double = js.native
+    var endMinute: Double
     
-    var startHour: Double = js.native
+    var startHour: Double
     
-    var startMinute: Double = js.native
+    var startMinute: Double
   }
   object QuietTimeTimeSpan {
     
@@ -137,7 +137,9 @@ object UrbanAirshipPlugin {
   }
   
   @js.native
-  trait RegistrationEvent extends Event {
+  trait RegistrationEvent
+    extends StObject
+       with Event {
     
     /**
       * The channel ID for the device.
@@ -157,12 +159,11 @@ object UrbanAirshipPlugin {
   /**
     * The result of the runAction() call.
     */
-  @js.native
   trait RunActionResult extends StObject {
     
-    var error: String = js.native
+    var error: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object RunActionResult {
     
@@ -184,7 +185,6 @@ object UrbanAirshipPlugin {
   }
   
   //#region API Definitions
-  @js.native
   trait UrbanAirshipStatic extends StObject {
     
     /**
@@ -194,7 +194,7 @@ object UrbanAirshipPlugin {
       *
       * @param callback The function to call on completion.
       */
-    def clearNotifications(callback: js.Function0[Unit]): Unit = js.native
+    def clearNotifications(callback: js.Function0[Unit]): Unit
     
     /**
       * Fluent API to edit the channel tag groups by adding or removing tags,
@@ -207,7 +207,7 @@ object UrbanAirshipPlugin {
       *      .removeTags("loyalty", ["silver-member", "bronze-member"])
       *      .apply()
       */
-    def editChannelTagGroups(): EditChannelTagGroupsApi = js.native
+    def editChannelTagGroups(): EditChannelTagGroupsApi
     
     /**
       * Fluent API to edit the named user tag groups by adding or removing
@@ -222,14 +222,14 @@ object UrbanAirshipPlugin {
       *
       * @returns The chainable API instance.
       */
-    def editNamedUserTagGroups(): EditNamedUserTagGroupsApi = js.native
+    def editNamedUserTagGroups(): EditNamedUserTagGroupsApi
     
     /**
       * Gets the alias for this device.
       *
       * @param callback The function to call on completion.
       */
-    def getAlias(callback: js.Function1[/* alias */ String, Unit]): Unit = js.native
+    def getAlias(callback: js.Function1[/* alias */ String, Unit]): Unit
     
     /**
       * (iOS Only)
@@ -238,7 +238,7 @@ object UrbanAirshipPlugin {
       *
       * @param callback The function to call on completion.
       */
-    def getBadgeNumber(callback: js.Function1[/* badgeNumber */ Double, Unit]): Unit = js.native
+    def getBadgeNumber(callback: js.Function1[/* badgeNumber */ Double, Unit]): Unit
     
     /**
       * Get the push identifier for the device. The channel ID is used to send
@@ -247,7 +247,7 @@ object UrbanAirshipPlugin {
       *
       * @param callback The function to call on completion.
       */
-    def getChannelID(callback: js.Function1[/* id */ String, Unit]): Unit = js.native
+    def getChannelID(callback: js.Function1[/* id */ String, Unit]): Unit
     
     /**
       * Returns the push message object that contains the data associated with a
@@ -257,14 +257,14 @@ object UrbanAirshipPlugin {
       * @param clear Set to true to clear the notification.
       * @param callback The function to call on completion.
       */
-    def getLaunchNotification(clear: Boolean, callback: js.Function1[/* push */ PushEvent, Unit]): Unit = js.native
+    def getLaunchNotification(clear: Boolean, callback: js.Function1[/* push */ PushEvent, Unit]): Unit
     
     /**
       * Gets the named user ID for this device.
       *
       * @param callback The function to call on completion.
       */
-    def getNamedUser(callback: js.Function1[/* namedUserId */ String, Unit]): Unit = js.native
+    def getNamedUser(callback: js.Function1[/* namedUserId */ String, Unit]): Unit
     
     /**
       * Get the current quiet time. The quietTime object represents a timespan
@@ -274,49 +274,49 @@ object UrbanAirshipPlugin {
       *
       * @param callback The function to call on completion.
       */
-    def getQuietTime(callback: js.Function1[/* quietTime */ QuietTimeTimeSpan, Unit]): Unit = js.native
+    def getQuietTime(callback: js.Function1[/* quietTime */ QuietTimeTimeSpan, Unit]): Unit
     
     /**
       * Returns the tags for the device.
       *
       * @param callback The function to call on completion.
       */
-    def getTags(callback: js.Function1[/* tags */ js.Array[String], Unit]): Unit = js.native
+    def getTags(callback: js.Function1[/* tags */ js.Array[String], Unit]): Unit
     
     /**
       * Checks if analytics is enabled or not.
       *
       * @param callback The function to call on completion.
       */
-    def isAnalyticsEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit = js.native
+    def isAnalyticsEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit
     
     /**
       * Checks if background location updates are enabled or not.
       *
       * @param callback The function to call on completion.
       */
-    def isBackgroundLocationEnabled(callback: js.Function0[Unit]): Unit = js.native
+    def isBackgroundLocationEnabled(callback: js.Function0[Unit]): Unit
     
     /**
       * Checks if quiet time is currently in effect.
       *
       * @param callback The function to call on completion.
       */
-    def isInQuietTime(callback: js.Function1[/* inQuietTime */ Boolean, Unit]): Unit = js.native
+    def isInQuietTime(callback: js.Function1[/* inQuietTime */ Boolean, Unit]): Unit
     
     /**
       * Checks if location is enabled or not.
       *
       * @param callback The function to call on completion.
       */
-    def isLocationEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit = js.native
+    def isLocationEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit
     
     /**
       * Checks if quiet time is enabled or not.
       *
       * @param callback The function to call on completion.
       */
-    def isQuietTimeEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit = js.native
+    def isQuietTimeEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit
     
     /**
       * (Android Only)
@@ -325,14 +325,14 @@ object UrbanAirshipPlugin {
       *
       * @param callback The function to call on completion.
       */
-    def isSoundEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit = js.native
+    def isSoundEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit
     
     /**
       * Checks if user notifications are enabled or not.
       *
       * @param callback The function to call on completion.
       */
-    def isUserNotificationsEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit = js.native
+    def isUserNotificationsEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit
     
     /**
       * (Android Only)
@@ -341,19 +341,19 @@ object UrbanAirshipPlugin {
       *
       * @param callback The function to call on completion.
       */
-    def isVibrateEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit = js.native
+    def isVibrateEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit
     
     /**
       * The enumeration values for use with setNotificationTypes().
       */
-    var notificationType: Alert = js.native
+    var notificationType: Alert
     
     /**
       * Records the current location of the device.
       *
       * @param callback The function to call on completion.
       */
-    def recordCurrentLocation(callback: js.Function0[Unit]): Unit = js.native
+    def recordCurrentLocation(callback: js.Function0[Unit]): Unit
     
     /**
       * (iOS Only)
@@ -362,7 +362,7 @@ object UrbanAirshipPlugin {
       *
       * @param callback The function to call on completion.
       */
-    def resetBadge(callback: js.Function0[Unit]): Unit = js.native
+    def resetBadge(callback: js.Function0[Unit]): Unit
     
     /**
       * Runs an Urban Airship action.
@@ -375,7 +375,7 @@ object UrbanAirshipPlugin {
       actionName: String,
       actionValue: String,
       callback: js.Function1[/* result */ RunActionResult, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Set alias for the device.
@@ -383,7 +383,7 @@ object UrbanAirshipPlugin {
       * @param alias The alias to set for this device.
       * @param callback The function to call on completion.
       */
-    def setAlias(alias: String, callback: js.Function0[Unit]): Unit = js.native
+    def setAlias(alias: String, callback: js.Function0[Unit]): Unit
     
     /**
       * Enables or disables analytics. Disabling analytics will delete any
@@ -395,7 +395,7 @@ object UrbanAirshipPlugin {
       * @param enabled Set to true to enable analytics, false to disable.
       * @param callback The function to call on completion.
       */
-    def setAnalyticsEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    def setAnalyticsEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit
     
     /**
       * (iOS Only)
@@ -405,7 +405,7 @@ object UrbanAirshipPlugin {
       * @param enabled Set to true to enable Autobadge, false to disable.
       * @param callback The function to call on completion.
       */
-    def setAutobadgeEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    def setAutobadgeEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit
     
     /**
       * Enables or disables background location on the device.
@@ -413,7 +413,7 @@ object UrbanAirshipPlugin {
       * @param enabled Set to true to enable background location, false to disable.
       * @param callback The function to call on completion.
       */
-    def setBackgroundLocationEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    def setBackgroundLocationEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit
     
     /**
       * (iOS Only)
@@ -423,7 +423,7 @@ object UrbanAirshipPlugin {
       * @param badge The number to use for the badge.
       * @param callback The function to call on completion.
       */
-    def setBadgeNumber(badge: Double, callback: js.Function0[Unit]): Unit = js.native
+    def setBadgeNumber(badge: Double, callback: js.Function0[Unit]): Unit
     
     /**
       * Enables or disables Urban Airship location services on the device.
@@ -431,7 +431,7 @@ object UrbanAirshipPlugin {
       * @param enabled Set to true to enable location, false to disable.
       * @param callback The function to call on completion.
       */
-    def setLocationEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    def setLocationEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit
     
     /**
       * Set the named user ID for this device.
@@ -439,7 +439,7 @@ object UrbanAirshipPlugin {
       * @param namedUser The named user ID.
       * @param callback The function to call on completion.
       */
-    def setNamedUser(namedUserId: String, callback: js.Function0[Unit]): Unit = js.native
+    def setNamedUser(namedUserId: String, callback: js.Function0[Unit]): Unit
     
     /**
       * (iOS Only)
@@ -456,7 +456,7 @@ object UrbanAirshipPlugin {
       * @param bitmask The notification types to set.
       * @param callback The function to call on completion.
       */
-    def setNotificationTypes(bitmask: Double, callback: js.Function0[Unit]): Unit = js.native
+    def setNotificationTypes(bitmask: Double, callback: js.Function0[Unit]): Unit
     
     /**
       * Set the quiet time for the device.
@@ -473,7 +473,7 @@ object UrbanAirshipPlugin {
       endHour: Double,
       endMinute: Double,
       callback: js.Function0[Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Enables or disables quiet time.
@@ -481,7 +481,7 @@ object UrbanAirshipPlugin {
       * @param enabled Set to true to enable quiet time, false to disable.
       * @param callback The function to call on completion.
       */
-    def setQuietTimeEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    def setQuietTimeEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit
     
     /**
       * (Android only, iOS sound settings come in the push)
@@ -491,7 +491,7 @@ object UrbanAirshipPlugin {
       * @param enabled Set to true to enable sound, false to disable.
       * @param callback The function to call on completion.
       */
-    def setSoundEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    def setSoundEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit
     
     /**
       * Sets tags for the device.
@@ -499,7 +499,7 @@ object UrbanAirshipPlugin {
       * @param tags An array of tags.
       * @param callback The function to call on completion.
       */
-    def setTags(tags: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
+    def setTags(tags: js.Array[String], callback: js.Function0[Unit]): Unit
     
     /**
       * Enables or disables user notifications on the device.
@@ -508,7 +508,7 @@ object UrbanAirshipPlugin {
       * @param enabled Set to true to enable notifications, false to disable.
       * @param callback The function to call on completion.
       */
-    def setUserNotificationsEnabled(enabled: Boolean, callback: js.Function1[/* status */ String, Unit]): Unit = js.native
+    def setUserNotificationsEnabled(enabled: Boolean, callback: js.Function1[/* status */ String, Unit]): Unit
     
     /**
       * (Android Only)
@@ -518,7 +518,7 @@ object UrbanAirshipPlugin {
       * @param enabled Set to true to enable vibration, false to disable.
       * @param callback The function to call on completion.
       */
-    def setVibrateEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    def setVibrateEnabled(enabled: Boolean, callback: js.Function0[Unit]): Unit
   }
   object UrbanAirshipStatic {
     

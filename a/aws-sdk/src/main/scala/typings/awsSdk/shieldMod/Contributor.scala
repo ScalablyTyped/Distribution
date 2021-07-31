@@ -2,21 +2,19 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contributor extends StObject {
   
   /**
     * The name of the contributor. This is dependent on the AttackPropertyIdentifier. For example, if the AttackPropertyIdentifier is SOURCE_COUNTRY, the Name could be United States.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The contribution of this contributor expressed in Protection units. For example 10,000.
     */
-  var Value: js.UndefOr[Long] = js.native
+  var Value: js.UndefOr[Long] = js.undefined
 }
 object Contributor {
   

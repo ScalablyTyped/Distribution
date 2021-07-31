@@ -3,34 +3,28 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.`direct-streamlocal@opensshDotcom`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait opensshDirectStreamLocalChannelInfo extends ChannelOpenInfo {
+trait opensshDirectStreamLocalChannelInfo
+  extends StObject
+     with ChannelOpenInfo {
   
-  var data: SocketChannelData = js.native
+  var data: SocketChannelData
   
-  var packetSize: Double = js.native
+  var packetSize: Double
   
-  var sender: Double = js.native
+  var sender: Double
   
-  var `type`: `direct-streamlocal@opensshDotcom` = js.native
+  var `type`: `direct-streamlocal@opensshDotcom`
   
-  var window: Double = js.native
+  var window: Double
 }
 object opensshDirectStreamLocalChannelInfo {
   
   @scala.inline
-  def apply(
-    data: SocketChannelData,
-    packetSize: Double,
-    sender: Double,
-    `type`: `direct-streamlocal@opensshDotcom`,
-    window: Double
-  ): opensshDirectStreamLocalChannelInfo = {
+  def apply(data: SocketChannelData, packetSize: Double, sender: Double, window: Double): opensshDirectStreamLocalChannelInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("direct-streamlocal@openssh.com")
     __obj.asInstanceOf[opensshDirectStreamLocalChannelInfo]
   }
   

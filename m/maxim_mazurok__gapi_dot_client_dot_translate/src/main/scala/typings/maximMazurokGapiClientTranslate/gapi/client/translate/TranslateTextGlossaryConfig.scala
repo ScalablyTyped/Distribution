@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslateTextGlossaryConfig extends StObject {
   
   /**
     * Required. The `glossary` to be applied for this translation. The format depends on glossary: - User provided custom glossary:
     * `projects/{project-number-or-id}/locations/{location-id}/glossaries/{glossary-id}`
     */
-  var glossary: js.UndefOr[String] = js.native
+  var glossary: js.UndefOr[String] = js.undefined
   
   /** Optional. Indicates match is case-insensitive. Default value is false if missing. */
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
 }
 object TranslateTextGlossaryConfig {
   

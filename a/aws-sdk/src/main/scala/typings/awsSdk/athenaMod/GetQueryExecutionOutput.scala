@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetQueryExecutionOutput extends StObject {
   
   /**
     * Information about the query execution.
     */
-  var QueryExecution: js.UndefOr[typings.awsSdk.athenaMod.QueryExecution] = js.native
+  var QueryExecution: js.UndefOr[typings.awsSdk.athenaMod.QueryExecution] = js.undefined
 }
 object GetQueryExecutionOutput {
   

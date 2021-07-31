@@ -1,11 +1,7 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ExpressionStatement
-import typings.babelTypes.babelTypesStrings.ParenthesizedExpression
-import typings.babelTypes.babelTypesStrings.TypeCastExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -13,27 +9,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.mod.ParenthesizedExpression_
   - typings.babelTypes.mod.TypeCastExpression_
 */
-trait ExpressionWrapper extends _Node
+trait ExpressionWrapper
+  extends StObject
+     with _Node
 object ExpressionWrapper {
   
   @scala.inline
-  def ExpressionStatement_(expression: Expression, `type`: ExpressionStatement): typings.babelTypes.mod.ExpressionStatement_ = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def ExpressionStatement_(expression: Expression): typings.babelTypes.mod.ExpressionStatement_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ExpressionStatement")
     __obj.asInstanceOf[typings.babelTypes.mod.ExpressionStatement_]
   }
   
   @scala.inline
-  def ParenthesizedExpression_(expression: Expression, `type`: ParenthesizedExpression): typings.babelTypes.mod.ParenthesizedExpression_ = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def ParenthesizedExpression_(expression: Expression): typings.babelTypes.mod.ParenthesizedExpression_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ParenthesizedExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.ParenthesizedExpression_]
   }
   
   @scala.inline
-  def TypeCastExpression_(expression: Expression, `type`: TypeCastExpression, typeAnnotation: TypeAnnotation_): typings.babelTypes.mod.TypeCastExpression_ = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def TypeCastExpression_(expression: Expression, typeAnnotation: TypeAnnotation_): typings.babelTypes.mod.TypeCastExpression_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TypeCastExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.TypeCastExpression_]
   }
 }

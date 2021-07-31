@@ -3,7 +3,6 @@ package typings.twilioSync
 import typings.twilioSync.treeMod.TreeMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheMod {
@@ -32,14 +31,13 @@ object cacheMod {
     def store(key: K, value: V, revision: Double): V = js.native
   }
   
-  @js.native
   trait CacheEntry[T] extends StObject {
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
     
-    var revision: Double = js.native
+    var revision: Double
     
-    var value: T = js.native
+    var value: T
   }
   object CacheEntry {
     
@@ -50,7 +48,7 @@ object cacheMod {
     }
     
     @scala.inline
-    implicit class CacheEntryMutableBuilder[Self <: CacheEntry[_], T] (val x: Self with CacheEntry[T]) extends AnyVal {
+    implicit class CacheEntryMutableBuilder[Self <: CacheEntry[?], T] (val x: Self & CacheEntry[T]) extends AnyVal {
       
       @scala.inline
       def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])

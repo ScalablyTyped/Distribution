@@ -11,7 +11,6 @@ import typings.papaparse.papaparseStrings.greedy
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,7 +42,7 @@ object mod {
   @JSImport("papaparse", "Parser")
   @js.native
   class Parser protected () extends StObject {
-    def this(config: ParseConfig[_]) = this()
+    def this(config: ParseConfig[js.Any]) = this()
     
     // Sets the abort flag
     def abort(): Unit = js.native
@@ -82,43 +81,31 @@ object mod {
   @js.native
   val WORKERS_SUPPORTED: Boolean = js.native
   
-  @JSImport("papaparse", "parse")
-  @js.native
-  def parse(stream: NODE_STREAM_INPUT_TYPE): ReadWriteStream = js.native
-  @JSImport("papaparse", "parse")
-  @js.native
-  def parse(stream: NODE_STREAM_INPUT_TYPE, config: ParseConfig[_]): ReadWriteStream = js.native
-  @JSImport("papaparse", "parse")
-  @js.native
-  def parse[T](input: String): ParseResult[T] = js.native
-  @JSImport("papaparse", "parse")
-  @js.native
-  def parse[T](input: String, config: ParseConfig[T]): ParseResult[T] = js.native
-  @JSImport("papaparse", "parse")
-  @js.native
-  def parse[T](input: ReadableStream): ParseResult[T] = js.native
-  @JSImport("papaparse", "parse")
-  @js.native
-  def parse[T](input: ReadableStream, config: ParseConfig[T]): ParseResult[T] = js.native
-  @JSImport("papaparse", "parse")
-  @js.native
-  def parse[T](input: File): ParseResult[T] = js.native
-  @JSImport("papaparse", "parse")
-  @js.native
-  def parse[T](input: File, config: ParseConfig[T]): ParseResult[T] = js.native
+  @scala.inline
+  def parse(stream: NODE_STREAM_INPUT_TYPE): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stream.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def parse(stream: NODE_STREAM_INPUT_TYPE, config: ParseConfig[js.Any]): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stream.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def parse[T](input: String): ParseResult[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[ParseResult[T]]
+  @scala.inline
+  def parse[T](input: String, config: ParseConfig[T]): ParseResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ParseResult[T]]
+  @scala.inline
+  def parse[T](input: ReadableStream): ParseResult[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[ParseResult[T]]
+  @scala.inline
+  def parse[T](input: ReadableStream, config: ParseConfig[T]): ParseResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ParseResult[T]]
+  @scala.inline
+  def parse[T](input: File): ParseResult[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[ParseResult[T]]
+  @scala.inline
+  def parse[T](input: File, config: ParseConfig[T]): ParseResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ParseResult[T]]
   
-  @JSImport("papaparse", "unparse")
-  @js.native
-  def unparse(data: js.Array[js.Array[_] | js.Object]): String = js.native
-  @JSImport("papaparse", "unparse")
-  @js.native
-  def unparse(data: js.Array[js.Array[_] | js.Object], config: UnparseConfig): String = js.native
-  @JSImport("papaparse", "unparse")
-  @js.native
-  def unparse(data: UnparseObject): String = js.native
-  @JSImport("papaparse", "unparse")
-  @js.native
-  def unparse(data: UnparseObject, config: UnparseConfig): String = js.native
+  @scala.inline
+  def unparse(data: js.Array[js.Array[js.Any] | js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def unparse(data: js.Array[js.Array[js.Any] | js.Object], config: UnparseConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def unparse(data: UnparseObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def unparse(data: UnparseObject, config: UnparseConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.papaparse.papaparseStrings.Comma
@@ -132,85 +119,84 @@ object mod {
   
   type NODE_STREAM_INPUT_TYPE = `1`
   
-  @js.native
   trait ParseConfig[T] extends StObject {
     
     // default: undefined
-    var beforeFirstChunk: js.UndefOr[js.Function1[/* chunk */ String, String | Unit]] = js.native
+    var beforeFirstChunk: js.UndefOr[js.Function1[/* chunk */ String, String | Unit]] = js.undefined
     
     // default: undefined
-    var chunk: js.UndefOr[js.Function2[/* results */ ParseResult[T], /* parser */ Parser, Unit]] = js.native
+    var chunk: js.UndefOr[js.Function2[/* results */ ParseResult[T], /* parser */ Parser, Unit]] = js.undefined
     
     // default: [',', '\t', '|', ';', Papa.RECORD_SEP, Papa.UNIT_SEP]
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
     // default: false
-    var comments: js.UndefOr[Boolean | String] = js.native
+    var comments: js.UndefOr[Boolean | String] = js.undefined
     
     // default: undefined
-    var complete: js.UndefOr[js.Function2[/* results */ ParseResult[T], /* file */ js.UndefOr[File], Unit]] = js.native
+    var complete: js.UndefOr[js.Function2[/* results */ ParseResult[T], /* file */ js.UndefOr[File], Unit]] = js.undefined
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     // default: undefined
-    var delimitersToGuess: js.UndefOr[js.Array[GuessableDelimiters]] = js.native
+    var delimitersToGuess: js.UndefOr[js.Array[GuessableDelimiters]] = js.undefined
     
     // default: false
-    var download: js.UndefOr[Boolean] = js.native
+    var download: js.UndefOr[Boolean] = js.undefined
     
     // default: false
-    var downloadRequestHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var downloadRequestHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
     // default: false
     var dynamicTyping: js.UndefOr[
-        Boolean | (StringDictionary[Boolean] with NumberDictionary[Boolean]) | (js.Function1[/* field */ String | Double, Boolean])
-      ] = js.native
+        Boolean | (StringDictionary[Boolean] & NumberDictionary[Boolean]) | (js.Function1[/* field */ String | Double, Boolean])
+      ] = js.undefined
     
     // default: 0
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     // default: undefined
-    var error: js.UndefOr[js.Function2[/* error */ ParseError, /* file */ js.UndefOr[File], Unit]] = js.native
+    var error: js.UndefOr[js.Function2[/* error */ ParseError, /* file */ js.UndefOr[File], Unit]] = js.undefined
     
     // default: '"'
-    var escapeChar: js.UndefOr[String] = js.native
+    var escapeChar: js.UndefOr[String] = js.undefined
     
     // default: false
-    var fastMode: js.UndefOr[Boolean] = js.native
+    var fastMode: js.UndefOr[Boolean] = js.undefined
     
     // default: '"'
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
     
     // default: ","
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
     // default: false
-    var preview: js.UndefOr[Double] = js.native
+    var preview: js.UndefOr[Double] = js.undefined
     
     // default: "\r\n"
-    var quoteChar: js.UndefOr[String] = js.native
+    var quoteChar: js.UndefOr[String] = js.undefined
     
     // default: undefined
-    var skipEmptyLines: js.UndefOr[Boolean | greedy] = js.native
+    var skipEmptyLines: js.UndefOr[Boolean | greedy] = js.undefined
     
     // default: undefined
     // Callbacks
-    var step: js.UndefOr[js.Function2[/* results */ ParseResult[T], /* parser */ Parser, Unit]] = js.native
+    var step: js.UndefOr[js.Function2[/* results */ ParseResult[T], /* parser */ Parser, Unit]] = js.undefined
     
     // default: undefined
-    var transform: js.UndefOr[js.Function2[/* value */ String, /* field */ String | Double, _]] = js.native
+    var transform: js.UndefOr[js.Function2[/* value */ String, /* field */ String | Double, js.Any]] = js.undefined
     
     // default: undefined
-    var transformHeader: js.UndefOr[js.Function2[/* header */ String, /* index */ js.UndefOr[Double], String]] = js.native
+    var transformHeader: js.UndefOr[js.Function2[/* header */ String, /* index */ js.UndefOr[Double], String]] = js.undefined
     
     // default: false
-    var trimHeaders: js.UndefOr[Boolean] = js.native
+    var trimHeaders: js.UndefOr[Boolean] = js.undefined
     
     // default: undefined
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
     
     // default: ""
-    var worker: js.UndefOr[Boolean] = js.native
+    var worker: js.UndefOr[Boolean] = js.undefined
   }
   object ParseConfig {
     
@@ -221,7 +207,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ParseConfigMutableBuilder[Self <: ParseConfig[_], T] (val x: Self with ParseConfig[T]) extends AnyVal {
+    implicit class ParseConfigMutableBuilder[Self <: ParseConfig[?], T] (val x: Self & ParseConfig[T]) extends AnyVal {
       
       @scala.inline
       def setBeforeFirstChunk(value: /* chunk */ String => String | Unit): Self = StObject.set(x, "beforeFirstChunk", js.Any.fromFunction1(value))
@@ -282,7 +268,7 @@ object mod {
       
       @scala.inline
       def setDynamicTyping(
-        value: Boolean | (StringDictionary[Boolean] with NumberDictionary[Boolean]) | (js.Function1[/* field */ String | Double, Boolean])
+        value: Boolean | (StringDictionary[Boolean] & NumberDictionary[Boolean]) | (js.Function1[/* field */ String | Double, Boolean])
       ): Self = StObject.set(x, "dynamicTyping", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -352,7 +338,7 @@ object mod {
       def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
       @scala.inline
-      def setTransform(value: (/* value */ String, /* field */ String | Double) => _): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      def setTransform(value: (/* value */ String, /* field */ String | Double) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
       @scala.inline
       def setTransformHeader(value: (/* header */ String, /* index */ js.UndefOr[Double]) => String): Self = StObject.set(x, "transformHeader", js.Any.fromFunction2(value))
@@ -383,19 +369,18 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseError extends StObject {
     
     // A generalization of the error
-    var code: String = js.native
+    var code: String
     
     // Standardized error code
-    var message: String = js.native
+    var message: String
     
     // Human-readable details
-    var row: Double = js.native
+    var row: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ParseError {
     
@@ -423,25 +408,24 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseMeta extends StObject {
     
     // Line break sequence used
-    var aborted: Boolean = js.native
+    var aborted: Boolean
     
     // Whether preview consumed all input
-    var cursor: Double = js.native
+    var cursor: Double
     
-    var delimiter: String = js.native
+    var delimiter: String
     
     // Whether process was aborted
-    var fields: js.UndefOr[js.Array[String]] = js.native
+    var fields: js.UndefOr[js.Array[String]] = js.undefined
     
     // Delimiter used
-    var linebreak: String = js.native
+    var linebreak: String
     
     // Array of field names
-    var truncated: Boolean = js.native
+    var truncated: Boolean
   }
   object ParseMeta {
     
@@ -480,14 +464,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseResult[T] extends StObject {
     
-    var data: js.Array[T] = js.native
+    var data: js.Array[T]
     
-    var errors: js.Array[ParseError] = js.native
+    var errors: js.Array[ParseError]
     
-    var meta: ParseMeta = js.native
+    var meta: ParseMeta
   }
   object ParseResult {
     
@@ -498,7 +481,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ParseResultMutableBuilder[Self <: ParseResult[_], T] (val x: Self with ParseResult[T]) extends AnyVal {
+    implicit class ParseResultMutableBuilder[Self <: ParseResult[?], T] (val x: Self & ParseResult[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -521,14 +504,13 @@ object mod {
   
   type UNIT_SEP_TYPE = Informationseparatorone
   
-  @js.native
   trait UnparseConfig extends StObject {
     
     // default: false
-    var columns: js.UndefOr[js.Array[String]] = js.native
+    var columns: js.UndefOr[js.Array[String]] = js.undefined
     
     // default: false
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     // default: ","
     /**
@@ -536,26 +518,26 @@ object mod {
       * a POST request will be made instead of a GET request and the passed argument will be set as the body of the request.
       * @default undefined
       */
-    var downloadRequestBody: js.UndefOr[Boolean] = js.native
+    var downloadRequestBody: js.UndefOr[Boolean] = js.undefined
     
     // default: '"'
-    var escapeChar: js.UndefOr[String] = js.native
+    var escapeChar: js.UndefOr[String] = js.undefined
     
     // default: '"'
-    var escapeFormulae: js.UndefOr[Boolean] = js.native
+    var escapeFormulae: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
     
     // default: true
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
     // default: false
-    var quoteChar: js.UndefOr[String] = js.native
+    var quoteChar: js.UndefOr[String] = js.undefined
     
-    var quotes: js.UndefOr[Boolean | js.Array[Boolean] | (js.Function1[/* value */ js.Any, Boolean])] = js.native
+    var quotes: js.UndefOr[Boolean | js.Array[Boolean] | (js.Function1[/* value */ js.Any, Boolean])] = js.undefined
     
     // default: "\r\n"
-    var skipEmptyLines: js.UndefOr[Boolean | greedy] = js.native
+    var skipEmptyLines: js.UndefOr[Boolean | greedy] = js.undefined
   }
   object UnparseConfig {
     
@@ -639,17 +621,16 @@ object mod {
     }
   }
   
-  @js.native
   trait UnparseObject extends StObject {
     
-    var data: String | js.Array[_] = js.native
+    var data: String | js.Array[js.Any]
     
-    var fields: js.Array[_] = js.native
+    var fields: js.Array[js.Any]
   }
   object UnparseObject {
     
     @scala.inline
-    def apply(data: String | js.Array[_], fields: js.Array[_]): UnparseObject = {
+    def apply(data: String | js.Array[js.Any], fields: js.Array[js.Any]): UnparseObject = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnparseObject]
     }
@@ -658,13 +639,13 @@ object mod {
     implicit class UnparseObjectMutableBuilder[Self <: UnparseObject] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
       @scala.inline
-      def setFields(value: js.Array[_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))

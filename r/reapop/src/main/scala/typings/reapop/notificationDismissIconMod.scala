@@ -7,23 +7,24 @@ import typings.reapop.typesMod.Notification
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationDismissIconMod {
   
-  @JSImport("reapop/dist/components/NotificationDismissIcon", JSImport.Default)
+  @JSImport("reapop/dist/components/NotificationDismissIcon", JSImport.Namespace)
   @js.native
-  def default(props: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props extends StObject {
     
-    def dismissNotification(event: SyntheticEvent[typings.std.Element, Event]): Unit = js.native
+    def dismissNotification(event: SyntheticEvent[typings.std.Element, Event]): Unit
     
-    var notification: Notification = js.native
+    var notification: Notification
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object Props {
     

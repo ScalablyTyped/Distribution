@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayedProperty extends StObject {
   
   /**
     * The name of the top-level property as defined in a property definition for the object. If the name is not a defined property in the schema, an error is given when attempting to
     * update the schema.
     */
-  var propertyName: js.UndefOr[String] = js.native
+  var propertyName: js.UndefOr[String] = js.undefined
 }
 object DisplayedProperty {
   

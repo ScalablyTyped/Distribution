@@ -7,7 +7,6 @@ import typings.tensorflowTfjsLayers.topologyMod.Layer
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noiseMod {
@@ -83,17 +82,18 @@ object noiseMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait AlphaDropoutArgs extends LayerArgs {
+  trait AlphaDropoutArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * A 1-D `Tensor` of type `int32`, representing the
       * shape for randomly generated keep/drop flags.
       */
-    var noiseShape: js.UndefOr[Shape] = js.native
+    var noiseShape: js.UndefOr[Shape] = js.undefined
     
     /** drop probability.  */
-    var rate: Double = js.native
+    var rate: Double
   }
   object AlphaDropoutArgs {
     
@@ -120,11 +120,12 @@ object noiseMod {
     }
   }
   
-  @js.native
-  trait GaussianDropoutArgs extends LayerArgs {
+  trait GaussianDropoutArgs
+    extends StObject
+       with LayerArgs {
     
     /** drop probability.  */
-    var rate: Double = js.native
+    var rate: Double
   }
   object GaussianDropoutArgs {
     
@@ -142,11 +143,12 @@ object noiseMod {
     }
   }
   
-  @js.native
-  trait GaussianNoiseArgs extends LayerArgs {
+  trait GaussianNoiseArgs
+    extends StObject
+       with LayerArgs {
     
     /** Standard Deviation.  */
-    var stddev: Double = js.native
+    var stddev: Double
   }
   object GaussianNoiseArgs {
     

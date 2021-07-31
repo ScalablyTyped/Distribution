@@ -8,23 +8,21 @@ import typings.chartist.chartistStrings.x
 import typings.chartist.chartistStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IChartUnits extends StObject {
   
-  var dir: vertical | horizontal = js.native
+  var dir: vertical | horizontal
   
-  var len: height | width = js.native
+  var len: height | width
   
-  var pos: x | y = js.native
+  var pos: x | y
   
-  var rectEnd: String = js.native
+  var rectEnd: String
   
-  var rectOffset: String = js.native
+  var rectOffset: String
   
-  var rectStart: String = js.native
+  var rectStart: String
 }
 object IChartUnits {
   

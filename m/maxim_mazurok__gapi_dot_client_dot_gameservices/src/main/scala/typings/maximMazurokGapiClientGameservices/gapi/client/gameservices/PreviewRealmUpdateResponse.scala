@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviewRealmUpdateResponse extends StObject {
   
   /** ETag of the realm. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The target state. */
-  var targetState: js.UndefOr[TargetState] = js.native
+  var targetState: js.UndefOr[TargetState] = js.undefined
 }
 object PreviewRealmUpdateResponse {
   

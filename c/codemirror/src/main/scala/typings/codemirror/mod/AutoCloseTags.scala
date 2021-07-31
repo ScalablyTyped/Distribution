@@ -2,38 +2,36 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoCloseTags extends StObject {
   
   /**
     * An array of tag names that should not be autoclosed. (default is empty tags for HTML, none for XML)
     */
-  var dontCloseTags: js.UndefOr[js.Array[String]] = js.native
+  var dontCloseTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An array of XML tag names that should be autoclosed with '/>'. (default is none)
     */
-  var emptyTags: js.Array[String] = js.native
+  var emptyTags: js.Array[String]
   
   /**
     * An array of tag names that should, when opened, cause a
     * blank line to be added inside the tag, and the blank line and
     * closing line to be indented. (default is block tags for HTML, none for XML)
     */
-  var indentTags: js.UndefOr[js.Array[String]] = js.native
+  var indentTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether to autoclose when the '/' of a closing tag is typed. (default true)
     */
-  var whenClosing: js.UndefOr[Boolean] = js.native
+  var whenClosing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to autoclose the tag when the final '>' of an opening tag is typed. (default true)
     */
-  var whenOpening: js.UndefOr[Boolean] = js.native
+  var whenOpening: js.UndefOr[Boolean] = js.undefined
 }
 object AutoCloseTags {
   

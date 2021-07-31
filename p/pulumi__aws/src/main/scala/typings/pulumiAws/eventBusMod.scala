@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventBusMod {
@@ -25,7 +24,7 @@ object eventBusMod {
       */
     def this(name: String) = this()
     def this(name: String, args: EventBusArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: EventBusArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -46,6 +45,10 @@ object eventBusMod {
   /* static members */
   object EventBus {
     
+    @JSImport("@pulumi/aws/cloudwatch/eventBus", "EventBus")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EventBus resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -55,40 +58,34 @@ object eventBusMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudwatch/eventBus", "EventBus.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EventBus = js.native
-    @JSImport("@pulumi/aws/cloudwatch/eventBus", "EventBus.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EventBus = js.native
-    @JSImport("@pulumi/aws/cloudwatch/eventBus", "EventBus.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventBusState): EventBus = js.native
-    @JSImport("@pulumi/aws/cloudwatch/eventBus", "EventBus.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventBusState, opts: CustomResourceOptions): EventBus = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EventBus = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventBus]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventBus = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventBus]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventBusState): EventBus = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventBus]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventBusState, opts: CustomResourceOptions): EventBus = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventBus]
     
     /**
       * Returns true if the given object is an instance of EventBus.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudwatch/eventBus", "EventBus.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventBus.EventBus */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventBus.EventBus */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/eventBus.EventBus */ Boolean]
   }
   
-  @js.native
   trait EventBusArgs extends StObject {
     
     /**
       * The name of the new event bus. The names of custom event buses can't contain the / character. Please note that a partner event bus is not supported at the moment.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object EventBusArgs {
     
@@ -115,23 +112,22 @@ object eventBusMod {
     }
   }
   
-  @js.native
   trait EventBusState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the event bus.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the new event bus. The names of custom event buses can't contain the / character. Please note that a partner event bus is not supported at the moment.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object EventBusState {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForgetSmartHomeAppliancesRequest extends StObject {
   
   /**
     * The room that the appliances are associated with.
     */
-  var RoomArn: Arn = js.native
+  var RoomArn: Arn
 }
 object ForgetSmartHomeAppliancesRequest {
   

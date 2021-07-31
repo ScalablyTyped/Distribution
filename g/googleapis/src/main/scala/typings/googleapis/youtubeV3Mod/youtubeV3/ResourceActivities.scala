@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Activities")
@@ -37,7 +36,7 @@ class ResourceActivities protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaActivity] = js.native
   def insert(callback: BodyResponseCallback[SchemaActivity]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaActivity] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaActivity] = js.native
   def insert(params: ParamsResourceActivitiesInsert): GaxiosPromise[SchemaActivity] = js.native
   def insert(params: ParamsResourceActivitiesInsert, callback: BodyResponseCallback[SchemaActivity]): Unit = js.native
   def insert(
@@ -78,7 +77,7 @@ class ResourceActivities protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaActivityListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaActivityListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaActivityListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaActivityListResponse] = js.native
   def list(params: ParamsResourceActivitiesList): GaxiosPromise[SchemaActivityListResponse] = js.native
   def list(params: ParamsResourceActivitiesList, callback: BodyResponseCallback[SchemaActivityListResponse]): Unit = js.native
   def list(

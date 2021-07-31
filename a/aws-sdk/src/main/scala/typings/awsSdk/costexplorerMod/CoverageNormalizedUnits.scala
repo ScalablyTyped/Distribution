@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoverageNormalizedUnits extends StObject {
   
   /**
     * The percentage of your used instance normalized units that a reservation covers.
     */
-  var CoverageNormalizedUnitsPercentage: js.UndefOr[typings.awsSdk.costexplorerMod.CoverageNormalizedUnitsPercentage] = js.native
+  var CoverageNormalizedUnitsPercentage: js.UndefOr[typings.awsSdk.costexplorerMod.CoverageNormalizedUnitsPercentage] = js.undefined
   
   /**
     * The number of normalized units that are covered by On-Demand Instances instead of a reservation.
     */
-  var OnDemandNormalizedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.OnDemandNormalizedUnits] = js.native
+  var OnDemandNormalizedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.OnDemandNormalizedUnits] = js.undefined
   
   /**
     * The number of normalized units that a reservation covers.
     */
-  var ReservedNormalizedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.ReservedNormalizedUnits] = js.native
+  var ReservedNormalizedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.ReservedNormalizedUnits] = js.undefined
   
   /**
     * The total number of normalized units that you used.
     */
-  var TotalRunningNormalizedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.TotalRunningNormalizedUnits] = js.native
+  var TotalRunningNormalizedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.TotalRunningNormalizedUnits] = js.undefined
 }
 object CoverageNormalizedUnits {
   

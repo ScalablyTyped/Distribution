@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Database extends StObject {
   
   /** Output only. If exists, the time at which the database creation started. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The name of the database. Values are of the form `projects//instances//databases/`, where `` is as specified in the `CREATE DATABASE` statement. This name can be passed to
     * other API methods to identify the database.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Applicable only for restored databases. Contains information about the restore source. */
-  var restoreInfo: js.UndefOr[RestoreInfo] = js.native
+  var restoreInfo: js.UndefOr[RestoreInfo] = js.undefined
   
   /** Output only. The current database state. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object Database {
   

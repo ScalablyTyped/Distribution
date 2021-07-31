@@ -2,14 +2,12 @@ package typings.cordovaPluginContacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
   /** Provides access to the device contacts database. */
-  var contacts: Contacts = js.native
+  var contacts: Contacts
 }
 object Navigator {
   

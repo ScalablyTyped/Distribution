@@ -4,30 +4,104 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rotJs.anon.PartialOptionsOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringgeneratorMod {
   
   @JSImport("rot-js/lib/stringgenerator", JSImport.Default)
   @js.native
-  class default protected () extends StringGenerator {
+  class default protected ()
+    extends StObject
+       with StringGenerator {
     def this(options: PartialOptionsOrder) = this()
+    
+    /**
+      * @param {string[]}
+      * @returns {string[]}
+      */
+    /* CompleteClass */
+    override def _backoff(context: js.Array[String]): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    var _boundary: String = js.native
+    
+    /* CompleteClass */
+    var _data: StringDictionary[Events] = js.native
+    
+    /**
+      * @param {string[]}
+      * @returns {string}
+      */
+    /* CompleteClass */
+    override def _join(arr: js.Array[String]): String = js.native
+    
+    /**
+      * @param {string[]} context
+      * @param {string} event
+      */
+    /* CompleteClass */
+    override def _observeEvent(context: js.Array[String], event: String): Unit = js.native
+    
+    /* CompleteClass */
+    var _options: Options = js.native
+    
+    /* CompleteClass */
+    var _prefix: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    var _priorValues: StringDictionary[Double] = js.native
+    
+    /**
+      * @param {string[]}
+      * @returns {string}
+      */
+    /* CompleteClass */
+    override def _sample(context: js.Array[String]): String = js.native
+    
+    /**
+      * @param {string}
+      * @returns {string[]}
+      */
+    /* CompleteClass */
+    override def _split(str: String): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    var _suffix: String = js.native
+    
+    /**
+      * Remove all learning data
+      */
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /**
+      * @returns {string} Generated string
+      */
+    /* CompleteClass */
+    override def generate(): String = js.native
+    
+    /* CompleteClass */
+    override def getStats(): String = js.native
+    
+    /**
+      * Observe (learn) a string from a training set
+      */
+    /* CompleteClass */
+    override def observe(string: String): Unit = js.native
   }
   
   type Events = StringDictionary[Double]
   
-  @js.native
   trait Options extends StObject {
     
     /** Order, default = 3 */
-    var order: Double = js.native
+    var order: Double
     
     /** Prior value, default = 0.001 */
-    var prior: Double = js.native
+    var prior: Double
     
     /** Use word mode? */
-    var words: Boolean = js.native
+    var words: Boolean
   }
   object Options {
     
@@ -51,67 +125,66 @@ object stringgeneratorMod {
     }
   }
   
-  @js.native
   trait StringGenerator extends StObject {
     
     /**
       * @param {string[]}
       * @returns {string[]}
       */
-    def _backoff(context: js.Array[String]): js.Array[String] = js.native
+    def _backoff(context: js.Array[String]): js.Array[String]
     
-    var _boundary: String = js.native
+    var _boundary: String
     
-    var _data: StringDictionary[Events] = js.native
+    var _data: StringDictionary[Events]
     
     /**
       * @param {string[]}
       * @returns {string}
       */
-    def _join(arr: js.Array[String]): String = js.native
+    def _join(arr: js.Array[String]): String
     
     /**
       * @param {string[]} context
       * @param {string} event
       */
-    def _observeEvent(context: js.Array[String], event: String): Unit = js.native
+    def _observeEvent(context: js.Array[String], event: String): Unit
     
-    var _options: Options = js.native
+    var _options: Options
     
-    var _prefix: js.Array[String] = js.native
+    var _prefix: js.Array[String]
     
-    var _priorValues: StringDictionary[Double] = js.native
+    var _priorValues: StringDictionary[Double]
     
     /**
       * @param {string[]}
       * @returns {string}
       */
-    def _sample(context: js.Array[String]): String = js.native
+    def _sample(context: js.Array[String]): String
     
     /**
       * @param {string}
       * @returns {string[]}
       */
-    def _split(str: String): js.Array[String] = js.native
+    def _split(str: String): js.Array[String]
     
-    var _suffix: String = js.native
+    var _suffix: String
     
     /**
       * Remove all learning data
       */
-    def clear(): Unit = js.native
+    def clear(): Unit
     
     /**
       * @returns {string} Generated string
       */
-    def generate(): String = js.native
+    def generate(): String
     
-    def getStats(): String = js.native
+    def getStats(): String
     
     /**
       * Observe (learn) a string from a training set
       */
-    def observe(string: String): Unit = js.native
+    def observe(string: String): Unit
   }
   object StringGenerator {
     

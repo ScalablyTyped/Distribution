@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportKeyPairResult extends StObject {
   
   /**
     * The MD5 public key fingerprint as specified in section 4 of RFC 4716.
     */
-  var KeyFingerprint: js.UndefOr[String] = js.native
+  var KeyFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The key pair name you provided.
     */
-  var KeyName: js.UndefOr[String] = js.native
+  var KeyName: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the resulting key pair.
     */
-  var KeyPairId: js.UndefOr[String] = js.native
+  var KeyPairId: js.UndefOr[String] = js.undefined
   
   /**
     * The tags applied to the imported key pair.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ImportKeyPairResult {
   

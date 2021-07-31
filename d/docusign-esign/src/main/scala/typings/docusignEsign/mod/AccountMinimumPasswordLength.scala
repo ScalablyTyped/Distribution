@@ -2,18 +2,16 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountMinimumPasswordLength extends StObject {
   
-  var maximumLength: js.UndefOr[String] = js.native
+  var maximumLength: js.UndefOr[String] = js.undefined
   
   /**
     * Minimum length of the access code string.
     */
-  var minimumLength: js.UndefOr[String] = js.native
+  var minimumLength: js.UndefOr[String] = js.undefined
 }
 object AccountMinimumPasswordLength {
   

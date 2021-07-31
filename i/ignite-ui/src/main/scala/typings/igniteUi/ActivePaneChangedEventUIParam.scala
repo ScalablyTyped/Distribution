@@ -2,36 +2,34 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivePaneChangedEventUIParam extends StObject {
   
   /**
     * Gets the active cell of the new active pane or null if there is no active pane.
     */
-  var activeCell: js.UndefOr[String] = js.native
+  var activeCell: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the current active [pane](ig.spreadsheet.SpreadsheetPane).
     */
-  var newActivePane: js.UndefOr[js.Any] = js.native
+  var newActivePane: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the previous active [pane](ig.spreadsheet.SpreadsheetPane).
     */
-  var oldActivePane: js.UndefOr[js.Any] = js.native
+  var oldActivePane: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the current visible range of the new active pane or null if there is no active pane.
     */
-  var visibleRange: js.UndefOr[String] = js.native
+  var visibleRange: js.UndefOr[String] = js.undefined
 }
 object ActivePaneChangedEventUIParam {
   

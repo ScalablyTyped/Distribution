@@ -2,24 +2,22 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access filter criteria. To create a new criteria, use SpreadsheetApp.newFilterCriteria() and FilterCriteriaBuilder.
   */
-@js.native
 trait FilterCriteria extends StObject {
   
-  def copy(): FilterCriteriaBuilder = js.native
+  def copy(): FilterCriteriaBuilder
   
-  def getCriteriaType(): BooleanCriteria = js.native
+  def getCriteriaType(): BooleanCriteria
   
-  def getCriteriaValues(): js.Array[_] = js.native
+  def getCriteriaValues(): js.Array[js.Any]
   
-  def getHiddenValues(): js.Array[String] = js.native
+  def getHiddenValues(): js.Array[String]
   
-  def getVisibleValues(): js.Array[String] = js.native
+  def getVisibleValues(): js.Array[String]
 }
 object FilterCriteria {
   
@@ -27,7 +25,7 @@ object FilterCriteria {
   def apply(
     copy: () => FilterCriteriaBuilder,
     getCriteriaType: () => BooleanCriteria,
-    getCriteriaValues: () => js.Array[_],
+    getCriteriaValues: () => js.Array[js.Any],
     getHiddenValues: () => js.Array[String],
     getVisibleValues: () => js.Array[String]
   ): FilterCriteria = {
@@ -45,7 +43,7 @@ object FilterCriteria {
     def setGetCriteriaType(value: () => BooleanCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCriteriaValues(value: () => js.Array[_]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
+    def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetHiddenValues(value: () => js.Array[String]): Self = StObject.set(x, "getHiddenValues", js.Any.fromFunction0(value))

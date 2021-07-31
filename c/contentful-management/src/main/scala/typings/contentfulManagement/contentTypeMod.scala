@@ -15,22 +15,23 @@ import typings.contentfulManagement.snapshotMod.SnapshotProps
 import typings.typeFest.setOptionalMod.SetOptional
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contentTypeMod {
   
-  @JSImport("contentful-management/dist/typings/entities/content-type", "wrapContentType")
+  @JSImport("contentful-management/dist/typings/entities/content-type", JSImport.Namespace)
   @js.native
-  def wrapContentType(http: AxiosInstance, data: ContentTypeProps): ContentType = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/content-type", "wrapContentTypeCollection")
-  @js.native
-  def wrapContentTypeCollection(http: AxiosInstance, data: CollectionProp[ContentTypeProps]): Collection[ContentType, ContentTypeProps] = js.native
+  @scala.inline
+  def wrapContentType(http: AxiosInstance, data: ContentTypeProps): ContentType = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapContentType")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ContentType]
   
-  @js.native
+  @scala.inline
+  def wrapContentTypeCollection(http: AxiosInstance, data: CollectionProp[ContentTypeProps]): Collection[ContentType, ContentTypeProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapContentTypeCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[ContentType, ContentTypeProps]]
+  
   trait ContentType
-    extends ContentTypeProps
+    extends StObject
+       with ContentTypeProps
        with DefaultElements[ContentTypeProps]
        with ContentTypeApi
   object ContentType {
@@ -60,7 +61,6 @@ object contentTypeMod {
     }
   }
   
-  @js.native
   trait ContentTypeApi extends StObject {
     
     /**
@@ -80,7 +80,7 @@ object contentTypeMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Gets the editor interface for the object <br />
@@ -101,7 +101,7 @@ object contentTypeMod {
       * .catch(console.error)
       * ```
       */
-    def getEditorInterface(): js.Promise[EditorInterface] = js.native
+    def getEditorInterface(): js.Promise[EditorInterface]
     
     /**
       * Gets a snapshot of a contentType
@@ -120,7 +120,7 @@ object contentTypeMod {
       * .catch(console.error)
       * ```
       */
-    def getSnapshot(id: String): js.Promise[SnapshotProps[ContentTypeProps]] = js.native
+    def getSnapshot(id: String): js.Promise[SnapshotProps[ContentTypeProps]]
     
     /**
       * Gets all snapshots of a contentType
@@ -138,29 +138,29 @@ object contentTypeMod {
       * .catch(console.error)
       * ```
       */
-    def getSnapshots(): js.Promise[Collection[Snapshot[ContentTypeProps], SnapshotProps[ContentTypeProps]]] = js.native
+    def getSnapshots(): js.Promise[Collection[Snapshot[ContentTypeProps], SnapshotProps[ContentTypeProps]]]
     
     /**
       * Checks if the contentType is in draft mode. This means it is not published.
       */
-    def isDraft(): Boolean = js.native
+    def isDraft(): Boolean
     
     /**
       * Checks if the contentType is published. A published contentType might have unpublished changes (@see {ContentType.isUpdated})
       */
-    def isPublished(): Boolean = js.native
+    def isPublished(): Boolean
     
     /**
       * Checks if the contentType is updated. This means the contentType was previously published but has unpublished changes.
       */
-    def isUpdated(): Boolean = js.native
+    def isUpdated(): Boolean
     
     /**
       * Omits and deletes a field if it exists on the contentType. This is a convenience method which does both operations at once and potentially less
       * safe than the standard way. See note about deleting fields on the Update method.
       * @return Object returned from the server with updated metadata.
       */
-    def omitAndDeleteField(id: String): js.Promise[ContentType] = js.native
+    def omitAndDeleteField(id: String): js.Promise[ContentType]
     
     /**
       * Publishes the object
@@ -179,7 +179,7 @@ object contentTypeMod {
       * .catch(console.error)
       * ```
       */
-    def publish(): js.Promise[ContentType] = js.native
+    def publish(): js.Promise[ContentType]
     
     /**
       * Unpublishes the object
@@ -198,7 +198,7 @@ object contentTypeMod {
       * .catch(console.error)
       * ```
       */
-    def unpublish(): js.Promise[ContentType] = js.native
+    def unpublish(): js.Promise[ContentType]
     
     /**
       * Sends an update to the server with any changes made to the object's properties. <br />
@@ -224,7 +224,7 @@ object contentTypeMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[ContentType] = js.native
+    def update(): js.Promise[ContentType]
   }
   object ContentTypeApi {
     
@@ -284,20 +284,19 @@ object contentTypeMod {
     }
   }
   
-  @js.native
   trait ContentTypeProps extends StObject {
     
-    var description: String = js.native
+    var description: String
     
     /** Field used as the main display field for Entries */
-    var displayField: String = js.native
+    var displayField: String
     
     /** All the fields contained in this Content Type */
-    var fields: js.Array[ContentFields] = js.native
+    var fields: js.Array[ContentFields]
     
-    var name: String = js.native
+    var name: String
     
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object ContentTypeProps {
     

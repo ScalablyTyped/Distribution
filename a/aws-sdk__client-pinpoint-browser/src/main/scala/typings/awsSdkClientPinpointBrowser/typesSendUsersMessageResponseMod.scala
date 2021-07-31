@@ -6,23 +6,21 @@ import typings.awsSdkClientPinpointBrowser.typesEndpointMessageResultMod.Unmarsh
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSendUsersMessageResponseMod {
   
-  @js.native
   trait SendUsersMessageResponse extends StObject {
     
     /**
       * The unique ID of the Amazon Pinpoint project used to send the message.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * The unique ID assigned to the users-messages request.
       */
-    var RequestId: js.UndefOr[String] = js.native
+    var RequestId: js.UndefOr[String] = js.undefined
     
     /**
       * An object that shows the endpoints that were messaged for each user. The object provides a list of user IDs. For each user ID, it provides the endpoint IDs that were messaged. For each endpoint ID, it provides an EndpointMessageResult object.
@@ -36,7 +34,7 @@ object typesSendUsersMessageResponseMod {
             StringDictionary[EndpointMessageResult] | (Iterable[js.Tuple2[String, EndpointMessageResult]])
           ]
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object SendUsersMessageResponse {
     
@@ -78,14 +76,15 @@ object typesSendUsersMessageResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSendUsersMessageResponse extends SendUsersMessageResponse {
+  trait UnmarshalledSendUsersMessageResponse
+    extends StObject
+       with SendUsersMessageResponse {
     
     /**
       * An object that shows the endpoints that were messaged for each user. The object provides a list of user IDs. For each user ID, it provides the endpoint IDs that were messaged. For each endpoint ID, it provides an EndpointMessageResult object.
       */
     @JSName("Result")
-    var Result_UnmarshalledSendUsersMessageResponse: js.UndefOr[StringDictionary[StringDictionary[UnmarshalledEndpointMessageResult]]] = js.native
+    var Result_UnmarshalledSendUsersMessageResponse: js.UndefOr[StringDictionary[StringDictionary[UnmarshalledEndpointMessageResult]]] = js.undefined
   }
   object UnmarshalledSendUsersMessageResponse {
     

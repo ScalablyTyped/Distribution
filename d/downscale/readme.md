@@ -12,7 +12,7 @@ Better image downscale with canvas.
 | Keywords           | crop, downscale, downsample, fast, jpeg, jpg, image, linear, performance, photo, pica, png, processing, scale, canvas, resample, resize, sharp, simple, thumbnail, upload, webp |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 30113 |
+| # downloads        | 31160 |
 | # stars            | 0 |
 
 ## Links

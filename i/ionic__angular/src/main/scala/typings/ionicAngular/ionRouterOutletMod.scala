@@ -21,7 +21,6 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.componentsMod.global.HTMLIonRouterOutletElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionRouterOutletMod {
@@ -29,7 +28,8 @@ object ionRouterOutletMod {
   @JSImport("@ionic/angular/directives/navigation/ion-router-outlet", "IonRouterOutlet")
   @js.native
   class IonRouterOutlet protected ()
-    extends OnDestroy
+    extends StObject
+       with OnDestroy
        with OnInit {
     def this(
       parentContexts: ChildrenOutletContexts,
@@ -40,7 +40,7 @@ object ionRouterOutletMod {
       config: Config,
       navCtrl: NavController,
       commonLocation: Location,
-      elementRef: ElementRef[_],
+      elementRef: ElementRef[js.Any],
       router: Router,
       zone: NgZone,
       activatedRoute: ActivatedRoute
@@ -54,7 +54,7 @@ object ionRouterOutletMod {
       config: Config,
       navCtrl: NavController,
       commonLocation: Location,
-      elementRef: ElementRef[_],
+      elementRef: ElementRef[js.Any],
       router: Router,
       zone: NgZone,
       activatedRoute: ActivatedRoute,
@@ -65,7 +65,7 @@ object ionRouterOutletMod {
     
     var _swipeGesture: js.Any = js.native
     
-    var activateEvents: EventEmitter[_] = js.native
+    var activateEvents: EventEmitter[js.Any] = js.native
     
     def activateWith(activatedRoute: ActivatedRoute): Unit = js.native
     def activateWith(activatedRoute: ActivatedRoute, resolver: ComponentFactoryResolver): Unit = js.native
@@ -88,15 +88,15 @@ object ionRouterOutletMod {
     /**
       * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
       */
-    def attach(_ref: ComponentRef[_], _activatedRoute: ActivatedRoute): Unit = js.native
+    def attach(_ref: ComponentRef[js.Any], _activatedRoute: ActivatedRoute): Unit = js.native
     
     /**
       * Returns `true` if there are pages in the stack to go back.
       */
     def canGoBack(): Boolean = js.native
-    def canGoBack(deep: js.UndefOr[scala.Nothing], stackId: String): Boolean = js.native
     def canGoBack(deep: Double): Boolean = js.native
     def canGoBack(deep: Double, stackId: String): Boolean = js.native
+    def canGoBack(deep: Unit, stackId: String): Boolean = js.native
     
     val component: js.Object = js.native
     
@@ -113,12 +113,12 @@ object ionRouterOutletMod {
     
     def deactivate(): Unit = js.native
     
-    var deactivateEvents: EventEmitter[_] = js.native
+    var deactivateEvents: EventEmitter[js.Any] = js.native
     
     /**
       * Called when the `RouteReuseStrategy` instructs to detach the subtree
       */
-    def detach(): ComponentRef[_] = js.native
+    def detach(): ComponentRef[js.Any] = js.native
     
     /**
       * Returns the active stack ID. In the context of ion-tabs, it means the active tab.
@@ -157,6 +157,23 @@ object ionRouterOutletMod {
     
     var navCtrl: js.Any = js.native
     
+    /**
+      * A callback method that performs custom clean-up, invoked immediately
+      * before a directive, pipe, or service instance is destroyed.
+      */
+    /* CompleteClass */
+    override def ngOnDestroy(): Unit = js.native
+    
+    /**
+      * A callback method that is invoked immediately after the
+      * default change detector has checked the directive's
+      * data-bound properties for the first time,
+      * and before any of the view or content children have been checked.
+      * It is invoked only once when the directive is instantiated.
+      */
+    /* CompleteClass */
+    override def ngOnInit(): Unit = js.native
+    
     var parentContexts: js.Any = js.native
     
     val parentOutlet: js.UndefOr[IonRouterOutlet] = js.native
@@ -165,9 +182,9 @@ object ionRouterOutletMod {
       * Resolves to `true` if it the outlet was able to sucessfully pop the last N pages.
       */
     def pop(): js.Promise[Boolean] = js.native
-    def pop(deep: js.UndefOr[scala.Nothing], stackId: String): js.Promise[Boolean] = js.native
     def pop(deep: Double): js.Promise[Boolean] = js.native
     def pop(deep: Double, stackId: String): js.Promise[Boolean] = js.native
+    def pop(deep: Unit, stackId: String): js.Promise[Boolean] = js.native
     
     var proxyMap: js.Any = js.native
     
@@ -180,7 +197,7 @@ object ionRouterOutletMod {
     
     var stackCtrl: js.Any = js.native
     
-    var stackEvents: EventEmitter[_] = js.native
+    var stackEvents: EventEmitter[js.Any] = js.native
     
     var swipeGesture: Boolean = js.native
     

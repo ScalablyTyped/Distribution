@@ -3,31 +3,29 @@ package typings.googleapis.storageV1Mod.storageV1
 import typings.googleapis.anon.Condition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A bucket/object IAM policy.
   */
-@js.native
 trait SchemaPolicy extends StObject {
   
   /**
     * An association between a role, which comes with a set of permissions, and
     * members who may assume that role.
     */
-  var bindings: js.UndefOr[js.Array[Condition]] = js.native
+  var bindings: js.UndefOr[js.Array[Condition]] = js.undefined
   
   /**
     * HTTP 1.1  Entity tag for the policy.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of item this is. For policies, this is always storage#policy.
     * This field is ignored on input.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the resource to which this policy belongs. Will be of the form
@@ -38,7 +36,7 @@ trait SchemaPolicy extends StObject {
     * The current generation can be denoted with #0. This field is ignored on
     * input.
     */
-  var resourceId: js.UndefOr[String] = js.native
+  var resourceId: js.UndefOr[String] = js.undefined
 }
 object SchemaPolicy {
   

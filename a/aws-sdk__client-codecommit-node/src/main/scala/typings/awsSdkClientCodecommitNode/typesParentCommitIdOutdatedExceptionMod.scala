@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.deleteFileExceptionsUnionMod.DeleteFil
 import typings.awsSdkClientCodecommitNode.putFileExceptionsUnionMod.PutFileExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesParentCommitIdOutdatedExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ParentCommitIdOutdatedExceptionDetails> * / any */ @js.native
-  trait ParentCommitIdOutdatedException
-    extends DeleteFileExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ParentCommitIdOutdatedExceptionDetails> * / any */ trait ParentCommitIdOutdatedException
+    extends StObject
+       with DeleteFileExceptionsUnion
        with PutFileExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ParentCommitIdOutdatedException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ParentCommitIdOutdatedException
   }
   object ParentCommitIdOutdatedException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ParentCommitIdOutdatedException
-    ): ParentCommitIdOutdatedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ParentCommitIdOutdatedException = {
+      val __obj = js.Dynamic.literal(name = "ParentCommitIdOutdatedException")
       __obj.asInstanceOf[ParentCommitIdOutdatedException]
     }
     
@@ -37,6 +34,5 @@ object typesParentCommitIdOutdatedExceptionMod {
     }
   }
   
-  @js.native
   trait ParentCommitIdOutdatedExceptionDetails extends StObject
 }

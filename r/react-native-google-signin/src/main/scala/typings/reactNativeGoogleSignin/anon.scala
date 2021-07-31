@@ -2,31 +2,29 @@ package typings.reactNativeGoogleSignin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Email extends StObject {
     
-    var email: String | Null = js.native
+    var email: String | Null
     
-    var familyName: String | Null = js.native
+    var familyName: String | Null
     
-    var givenName: String | Null = js.native
+    var givenName: String | Null
     
-    var id: String | Null = js.native
+    var id: String | Null
     
-    var name: String | Null = js.native
+    var name: String | Null
     
-    var photo: String | Null = js.native
+    var photo: String | Null
   }
   object Email {
     
     @scala.inline
     def apply(): Email = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(email = null, familyName = null, givenName = null, id = null, name = null, photo = null)
       __obj.asInstanceOf[Email]
     }
     

@@ -3,7 +3,6 @@ package typings.glaze
 import typings.glaze.loggerMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glazeStrings {
@@ -179,7 +178,9 @@ object glazeStrings {
   def duration: duration = "duration".asInstanceOf[duration]
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -354,7 +355,9 @@ object glazeStrings {
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait warn
+    extends StObject
+       with LogLevel
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
   

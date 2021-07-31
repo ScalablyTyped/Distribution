@@ -10,9 +10,9 @@ React Native Appsflyer plugin
 | ------------------ | :-------------: |
 | Full name          | react-native-appsflyer |
 | Keywords           | react-native, react, native, appsflyer |
-| # releases         | 26 |
-| # dependents       | 0 |
-| # downloads        | 793750 |
+| # releases         | 27 |
+| # dependents       | 2 |
+| # downloads        | 929236 |
 | # stars            | 0 |
 
 ## Links

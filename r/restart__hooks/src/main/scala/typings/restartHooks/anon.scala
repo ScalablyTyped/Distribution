@@ -8,15 +8,13 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Clear extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
   }
   object Clear {
     
@@ -45,18 +43,17 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<@restart/hooks.@restart/hooks/cjs/useBreakpoint.DefaultBreakpoints, @restart/hooks.@restart/hooks/cjs/useBreakpoint.BreakpointDirection>> */
-  @js.native
   trait PartialRecordDefaultBreak extends StObject {
     
-    var lg: js.UndefOr[BreakpointDirection] = js.native
+    var lg: js.UndefOr[BreakpointDirection] = js.undefined
     
-    var md: js.UndefOr[BreakpointDirection] = js.native
+    var md: js.UndefOr[BreakpointDirection] = js.undefined
     
-    var sm: js.UndefOr[BreakpointDirection] = js.native
+    var sm: js.UndefOr[BreakpointDirection] = js.undefined
     
-    var xl: js.UndefOr[BreakpointDirection] = js.native
+    var xl: js.UndefOr[BreakpointDirection] = js.undefined
     
-    var xs: js.UndefOr[BreakpointDirection] = js.native
+    var xs: js.UndefOr[BreakpointDirection] = js.undefined
   }
   object PartialRecordDefaultBreak {
     

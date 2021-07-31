@@ -2,24 +2,22 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for updating an existing operation
   */
-@js.native
 trait SchemaUpdateOperationRequest extends StObject {
   
   /**
     * The operation to create.
     */
-  var operation: js.UndefOr[SchemaOperation] = js.native
+  var operation: js.UndefOr[SchemaOperation] = js.undefined
   
   /**
     * The fields to update.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateOperationRequest {
   

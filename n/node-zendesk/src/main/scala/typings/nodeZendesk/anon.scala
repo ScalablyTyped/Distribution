@@ -5,21 +5,19 @@ import typings.nodeZendesk.mod.Users._UpdateIdPayload
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var html_body: String = js.native
+    var html_body: String
     
-    var public: js.UndefOr[Boolean] = js.native
+    var public: js.UndefOr[Boolean] = js.undefined
     
-    var scoped_body: js.UndefOr[js.Any] = js.native
+    var scoped_body: js.UndefOr[js.Any] = js.undefined
   }
   object Body {
     
@@ -52,12 +50,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Comment extends StObject {
     
-    var comment: Body = js.native
+    var comment: Body
     
-    var ticket: CreateModel = js.native
+    var ticket: CreateModel
   }
   object Comment {
     
@@ -78,10 +75,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Externalids extends _UpdateIdPayload {
+  trait Externalids
+    extends StObject
+       with _UpdateIdPayload {
     
-    var external_ids: js.Array[ZendeskID] = js.native
+    var external_ids: js.Array[ZendeskID]
   }
   object Externalids {
     
@@ -102,12 +100,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Filename extends StObject {
     
-    var filename: String = js.native
+    var filename: String
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object Filename {
     
@@ -131,10 +128,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Ids extends _UpdateIdPayload {
+  trait Ids
+    extends StObject
+       with _UpdateIdPayload {
     
-    var ids: js.Array[ZendeskID] = js.native
+    var ids: js.Array[ZendeskID]
   }
   object Ids {
     

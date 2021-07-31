@@ -6,25 +6,23 @@ import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Method extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var method: Boolean = js.native
+  var method: Boolean
   
-  var optional: Boolean = js.native
+  var optional: Boolean
   
-  var static: Boolean = js.native
+  var static: Boolean
   
-  var value: FlowTypeKind = js.native
+  var value: FlowTypeKind
 }
 object Method {
   

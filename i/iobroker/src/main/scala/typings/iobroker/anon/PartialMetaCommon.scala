@@ -7,37 +7,38 @@ import typings.iobroker.objectsMod.global.ioBroker.CommonType
 import typings.iobroker.objectsMod.global.ioBroker.StringOrTranslated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.MetaCommon> */
-@js.native
 trait PartialMetaCommon extends StObject {
   
-  var custom: js.UndefOr[scala.Nothing] = js.native
+  var custom: Unit
   
-  var dontDelete: js.UndefOr[`true`] = js.native
+  var dontDelete: js.UndefOr[`true`] = js.undefined
   
-  var expert: js.UndefOr[`true`] = js.native
+  var expert: js.UndefOr[`true`] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[StringOrTranslated] = js.native
+  var name: js.UndefOr[StringOrTranslated] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[CommonType | metaDotuser | metaDotfolder] = js.native
+  var `type`: js.UndefOr[CommonType | metaDotuser | metaDotfolder] = js.undefined
 }
 object PartialMetaCommon {
   
   @scala.inline
-  def apply(): PartialMetaCommon = {
-    val __obj = js.Dynamic.literal()
+  def apply(custom: Unit): PartialMetaCommon = {
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialMetaCommon]
   }
   
   @scala.inline
   implicit class PartialMetaCommonMutableBuilder[Self <: PartialMetaCommon] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDontDelete(value: `true`): Self = StObject.set(x, "dontDelete", value.asInstanceOf[js.Any])

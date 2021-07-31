@@ -2,27 +2,25 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcdatachannelinit
-@js.native
 trait RTCDataChannelInit extends StObject {
   
   // default = false
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   // default = true
-  var maxPacketLifeTime: js.UndefOr[Double] = js.native
+  var maxPacketLifeTime: js.UndefOr[Double] = js.undefined
   
-  var maxRetransmits: js.UndefOr[Double] = js.native
+  var maxRetransmits: js.UndefOr[Double] = js.undefined
   
   // default = ''
-  var negotiated: js.UndefOr[Boolean] = js.native
+  var negotiated: js.UndefOr[Boolean] = js.undefined
   
-  var ordered: js.UndefOr[Boolean] = js.native
+  var ordered: js.UndefOr[Boolean] = js.undefined
   
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
 }
 object RTCDataChannelInit {
   

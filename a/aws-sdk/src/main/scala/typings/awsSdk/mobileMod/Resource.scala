@@ -2,21 +2,19 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resource extends StObject {
   
-  var arn: js.UndefOr[ResourceArn] = js.native
+  var arn: js.UndefOr[ResourceArn] = js.undefined
   
-  var attributes: js.UndefOr[Attributes] = js.native
+  var attributes: js.UndefOr[Attributes] = js.undefined
   
-  var feature: js.UndefOr[Feature] = js.native
+  var feature: js.UndefOr[Feature] = js.undefined
   
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
-  var `type`: js.UndefOr[ResourceType] = js.native
+  var `type`: js.UndefOr[ResourceType] = js.undefined
 }
 object Resource {
   

@@ -2,16 +2,16 @@ package typings.youtube.YT
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnPlaybackRateChangeEvent extends PlayerEvent {
+trait OnPlaybackRateChangeEvent
+  extends StObject
+     with PlayerEvent {
   
   /**
     * New playback rate.
     */
-  var data: Double = js.native
+  var data: Double
 }
 object OnPlaybackRateChangeEvent {
   

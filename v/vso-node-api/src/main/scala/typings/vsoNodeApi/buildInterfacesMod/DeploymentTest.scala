@@ -2,13 +2,13 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeploymentTest extends Deployment {
+trait DeploymentTest
+  extends StObject
+     with Deployment {
   
-  var runId: Double = js.native
+  var runId: Double
 }
 object DeploymentTest {
   

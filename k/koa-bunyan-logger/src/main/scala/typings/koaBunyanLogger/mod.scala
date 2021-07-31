@@ -1,6 +1,5 @@
 package typings.koaBunyanLogger
 
-import typings.bunyan.mod.^
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
@@ -9,43 +8,37 @@ import typings.koa.mod.Response
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(logger: typings.bunyan.mod.^): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("koa-bunyan-logger", JSImport.Namespace)
   @js.native
-  def apply(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-bunyan-logger", JSImport.Namespace)
-  @js.native
-  def apply(logger: ^): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("koa-bunyan-logger", "requestIdContext")
-  @js.native
-  def requestIdContext(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-bunyan-logger", "requestIdContext")
-  @js.native
-  def requestIdContext(opts: RequestIdContextOptions): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def requestIdContext(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdContext")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def requestIdContext(opts: RequestIdContextOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdContext")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
-  @JSImport("koa-bunyan-logger", "requestLogger")
-  @js.native
-  def requestLogger(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-bunyan-logger", "requestLogger")
-  @js.native
-  def requestLogger(opts: RequestLoggerOptions): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def requestLogger(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def requestLogger(opts: RequestLoggerOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
-  @JSImport("koa-bunyan-logger", "timeContext")
-  @js.native
-  def timeContext(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-bunyan-logger", "timeContext")
-  @js.native
-  def timeContext(opts: TimeContextOptions): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def timeContext(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeContext")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def timeContext(opts: TimeContextOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeContext")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
-  @js.native
   trait RequestData extends StObject {
     
-    var req: Request = js.native
+    var req: Request
   }
   object RequestData {
     
@@ -63,16 +56,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestIdContextOptions extends StObject {
     
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var prop: js.UndefOr[String] = js.native
+    var prop: js.UndefOr[String] = js.undefined
     
-    var requestProp: js.UndefOr[String] = js.native
+    var requestProp: js.UndefOr[String] = js.undefined
   }
   object RequestIdContextOptions {
     
@@ -111,24 +103,23 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestLoggerOptions extends StObject {
     
-    var durationField: js.UndefOr[String] = js.native
+    var durationField: js.UndefOr[String] = js.undefined
     
-    var formatRequestMessage: js.UndefOr[js.Function1[/* requestData */ RequestData, String]] = js.native
+    var formatRequestMessage: js.UndefOr[js.Function1[/* requestData */ RequestData, String]] = js.undefined
     
-    var formatResponseMessage: js.UndefOr[js.Function1[/* responseData */ ResponseData, String]] = js.native
+    var formatResponseMessage: js.UndefOr[js.Function1[/* responseData */ ResponseData, String]] = js.undefined
     
-    var ignorePath: js.UndefOr[js.Array[String]] = js.native
+    var ignorePath: js.UndefOr[js.Array[String]] = js.undefined
     
-    var levelFn: js.UndefOr[js.Function2[/* status */ Double, /* err */ Error, String]] = js.native
+    var levelFn: js.UndefOr[js.Function2[/* status */ Double, /* err */ Error, String]] = js.undefined
     
-    var updateLogFields: js.UndefOr[js.Function1[/* data */ RequestData, RequestData]] = js.native
+    var updateLogFields: js.UndefOr[js.Function1[/* data */ RequestData, RequestData]] = js.undefined
     
-    var updateRequestLogFields: js.UndefOr[js.Function1[/* requestData */ RequestData, RequestData]] = js.native
+    var updateRequestLogFields: js.UndefOr[js.Function1[/* requestData */ RequestData, RequestData]] = js.undefined
     
-    var updateResponseLogFields: js.UndefOr[js.Function1[/* responseData */ ResponseData, ResponseData]] = js.native
+    var updateResponseLogFields: js.UndefOr[js.Function1[/* responseData */ ResponseData, ResponseData]] = js.undefined
   }
   object RequestLoggerOptions {
     
@@ -194,12 +185,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ResponseData extends StObject {
     
-    var req: Request = js.native
+    var req: Request
     
-    var res: Response = js.native
+    var res: Response
   }
   object ResponseData {
     
@@ -220,12 +210,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TimeContextOptions extends StObject {
     
-    var logLevel: js.UndefOr[String] = js.native
+    var logLevel: js.UndefOr[String] = js.undefined
     
-    var updateLogFields: js.UndefOr[js.Function1[/* fields */ js.Any, _]] = js.native
+    var updateLogFields: js.UndefOr[js.Function1[/* fields */ js.Any, js.Any]] = js.undefined
   }
   object TimeContextOptions {
     
@@ -245,7 +234,7 @@ object mod {
       def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
       @scala.inline
-      def setUpdateLogFields(value: /* fields */ js.Any => _): Self = StObject.set(x, "updateLogFields", js.Any.fromFunction1(value))
+      def setUpdateLogFields(value: /* fields */ js.Any => js.Any): Self = StObject.set(x, "updateLogFields", js.Any.fromFunction1(value))
       
       @scala.inline
       def setUpdateLogFieldsUndefined: Self = StObject.set(x, "updateLogFields", js.undefined)
@@ -256,15 +245,14 @@ object mod {
   /* augmented module */
   object koaAugmentingMod {
     
-    @js.native
     trait BaseContext extends StObject {
       
-      var log: ^ = js.native
+      var log: typings.bunyan.mod.^
     }
     object BaseContext {
       
       @scala.inline
-      def apply(log: ^): BaseContext = {
+      def apply(log: typings.bunyan.mod.^): BaseContext = {
         val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
         __obj.asInstanceOf[BaseContext]
       }
@@ -273,7 +261,7 @@ object mod {
       implicit class BaseContextMutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setLog(value: ^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+        def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       }
     }
   }

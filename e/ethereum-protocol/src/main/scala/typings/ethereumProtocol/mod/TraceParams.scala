@@ -2,17 +2,15 @@ package typings.ethereumProtocol.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TraceParams extends StObject {
   
-  var disableMemory: js.UndefOr[Boolean] = js.native
+  var disableMemory: js.UndefOr[Boolean] = js.undefined
   
-  var disableStack: js.UndefOr[Boolean] = js.native
+  var disableStack: js.UndefOr[Boolean] = js.undefined
   
-  var disableStorage: js.UndefOr[Boolean] = js.native
+  var disableStorage: js.UndefOr[Boolean] = js.undefined
 }
 object TraceParams {
   

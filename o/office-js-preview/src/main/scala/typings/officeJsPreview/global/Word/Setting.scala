@@ -1,8 +1,8 @@
 package typings.officeJsPreview.global.Word
 
+import typings.officeJsPreview.OfficeExtension.ClientRequestContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,4 +15,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Word.Setting")
 @js.native
 class Setting ()
-  extends typings.officeJsPreview.Word.Setting
+  extends StObject
+     with typings.officeJsPreview.Word.Setting {
+  
+  /** The request context associated with the object */
+  /* CompleteClass */
+  var context: ClientRequestContext = js.native
+  
+  /**
+    *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
+    * isNullObject property.
+    */
+  /* CompleteClass */
+  var isNullObject: Boolean = js.native
+}

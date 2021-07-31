@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributesResource extends StObject {
   
   /**
     * The unique identifier for the application.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * The type of attribute or attributes that were removed from the endpoints. Valid values are: endpoint-custom-attributes - Custom attributes that describe endpoints. endpoint-metric-attributes - Custom metrics that your app reports to Amazon Pinpoint for endpoints. endpoint-user-attributes - Custom attributes that describe users.
     */
-  var AttributeType: string = js.native
+  var AttributeType: string
   
   /**
     * An array that specifies the names of the attributes that were removed from the endpoints.
     */
-  var Attributes: js.UndefOr[ListOfString] = js.native
+  var Attributes: js.UndefOr[ListOfString] = js.undefined
 }
 object AttributesResource {
   

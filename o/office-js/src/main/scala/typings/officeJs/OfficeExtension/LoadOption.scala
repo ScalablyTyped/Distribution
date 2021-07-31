@@ -2,7 +2,6 @@ package typings.officeJs.OfficeExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,29 +26,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note that if we don't specify the specific properties on the font object in the select statement, the expand statement by itself would 
   * indicate that all of the font properties are loaded.
   */
-@js.native
 trait LoadOption extends StObject {
   
   /**
     * A comma-delimited string, or array of strings, that specifies the navigation properties to load.
     */
-  var expand: js.UndefOr[String | js.Array[String]] = js.native
+  var expand: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * A comma-delimited string, or array of strings, that specifies the properties to load.
     */
-  var select: js.UndefOr[String | js.Array[String]] = js.native
+  var select: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Only usable on collection types. Specifies the number of items in the collection that are to be skipped and not included in the result. 
     * If top is specified, the result set will start after skipping the specified number of items.
     */
-  var skip: js.UndefOr[Double] = js.native
+  var skip: js.UndefOr[Double] = js.undefined
   
   /**
     * Only usable on collection types. Specifies the maximum number of collection items that can be included in the result.
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object LoadOption {
   

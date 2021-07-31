@@ -3,11 +3,11 @@ package typings.senchaTouch.Ext.draw
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISegmentTree extends IBase {
+trait ISegmentTree
+  extends StObject
+     with IBase {
   
   /** [Method] Returns the minimum range of data that fits the given range and step size
     * @param min Number
@@ -20,14 +20,14 @@ trait ISegmentTree extends IBase {
       /* min */ js.UndefOr[Double], 
       /* max */ js.UndefOr[Double], 
       /* estStep */ js.UndefOr[Double], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns the value of strategy
     * @returns String
     */
-  var getStrategy: js.UndefOr[js.Function0[String]] = js.native
+  var getStrategy: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Sets the data of the segment tree
     * @param dataX Number
@@ -45,12 +45,12 @@ trait ISegmentTree extends IBase {
       /* dataClose */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the value of strategy
     * @param strategy String The new value.
     */
-  var setStrategy: js.UndefOr[js.Function1[/* strategy */ js.UndefOr[String], Unit]] = js.native
+  var setStrategy: js.UndefOr[js.Function1[/* strategy */ js.UndefOr[String], Unit]] = js.undefined
 }
 object ISegmentTree {
   
@@ -65,7 +65,7 @@ object ISegmentTree {
     
     @scala.inline
     def setGetAggregation(
-      value: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* estStep */ js.UndefOr[Double]) => _
+      value: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* estStep */ js.UndefOr[Double]) => js.Any
     ): Self = StObject.set(x, "getAggregation", js.Any.fromFunction3(value))
     
     @scala.inline

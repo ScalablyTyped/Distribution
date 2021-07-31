@@ -2,19 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGPathSegCurvetoQuadraticRel extends SVGPathSeg {
+trait SVGPathSegCurvetoQuadraticRel
+  extends StObject
+     with SVGPathSeg {
   
-  var x: Double = js.native
+  var x: Double
   
-  var x1: Double = js.native
+  var x1: Double
   
-  var y: Double = js.native
+  var y: Double
   
-  var y1: Double = js.native
+  var y1: Double
 }
 object SVGPathSegCurvetoQuadraticRel {
   

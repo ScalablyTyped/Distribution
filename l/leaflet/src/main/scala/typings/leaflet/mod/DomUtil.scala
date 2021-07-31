@@ -4,7 +4,6 @@ import typings.leaflet.leafletBooleans.`false`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DomUtil {
@@ -31,113 +30,85 @@ object DomUtil {
   @scala.inline
   def TRANSITION_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSITION_END")(x.asInstanceOf[js.Any])
   
-  @JSImport("leaflet", "DomUtil.addClass")
-  @js.native
-  def addClass(el: HTMLElement, name: String): Unit = js.native
+  @scala.inline
+  def addClass(el: HTMLElement, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.create")
-  @js.native
-  def create(tagName: String): HTMLElement = js.native
-  @JSImport("leaflet", "DomUtil.create")
-  @js.native
-  def create(tagName: String, className: js.UndefOr[scala.Nothing], container: HTMLElement): HTMLElement = js.native
-  @JSImport("leaflet", "DomUtil.create")
-  @js.native
-  def create(tagName: String, className: String): HTMLElement = js.native
-  @JSImport("leaflet", "DomUtil.create")
-  @js.native
-  def create(tagName: String, className: String, container: HTMLElement): HTMLElement = js.native
+  @scala.inline
+  def create(tagName: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create(tagName: String, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create(tagName: String, className: String, container: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create(tagName: String, className: Unit, container: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  @JSImport("leaflet", "DomUtil.disableImageDrag")
-  @js.native
-  def disableImageDrag(): Unit = js.native
+  @scala.inline
+  def disableImageDrag(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableImageDrag")().asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.disableTextSelection")
-  @js.native
-  def disableTextSelection(): Unit = js.native
+  @scala.inline
+  def disableTextSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableTextSelection")().asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.empty")
-  @js.native
-  def empty(el: HTMLElement): Unit = js.native
+  @scala.inline
+  def empty(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.enableImageDrag")
-  @js.native
-  def enableImageDrag(): Unit = js.native
+  @scala.inline
+  def enableImageDrag(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableImageDrag")().asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.enableTextSelection")
-  @js.native
-  def enableTextSelection(): Unit = js.native
+  @scala.inline
+  def enableTextSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableTextSelection")().asInstanceOf[Unit]
   
   /**
     * Get Element by its ID or with the given HTML-Element
     */
-  @JSImport("leaflet", "DomUtil.get")
-  @js.native
-  def get(element: String): HTMLElement | Null = js.native
-  @JSImport("leaflet", "DomUtil.get")
-  @js.native
-  def get(element: HTMLElement): HTMLElement | Null = js.native
+  @scala.inline
+  def get(element: String): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+  @scala.inline
+  def get(element: HTMLElement): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
   
-  @JSImport("leaflet", "DomUtil.getClass")
-  @js.native
-  def getClass_(el: HTMLElement): String = js.native
+  @scala.inline
+  def getClass_(el: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(el.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("leaflet", "DomUtil.getPosition")
-  @js.native
-  def getPosition(el: HTMLElement): Point_ = js.native
+  @scala.inline
+  def getPosition(el: HTMLElement): Point_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(el.asInstanceOf[js.Any]).asInstanceOf[Point_]
   
-  @JSImport("leaflet", "DomUtil.getStyle")
-  @js.native
-  def getStyle(el: HTMLElement, styleAttrib: String): String | Null = js.native
+  @scala.inline
+  def getStyle(el: HTMLElement, styleAttrib: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], styleAttrib.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("leaflet", "DomUtil.hasClass")
-  @js.native
-  def hasClass(el: HTMLElement, name: String): Boolean = js.native
+  @scala.inline
+  def hasClass(el: HTMLElement, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("leaflet", "DomUtil.preventOutline")
-  @js.native
-  def preventOutline(el: HTMLElement): Unit = js.native
+  @scala.inline
+  def preventOutline(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventOutline")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.remove")
-  @js.native
-  def remove(el: HTMLElement): Unit = js.native
+  @scala.inline
+  def remove(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.removeClass")
-  @js.native
-  def removeClass(el: HTMLElement, name: String): Unit = js.native
+  @scala.inline
+  def removeClass(el: HTMLElement, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.restoreOutline")
-  @js.native
-  def restoreOutline(): Unit = js.native
+  @scala.inline
+  def restoreOutline(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restoreOutline")().asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.setClass")
-  @js.native
-  def setClass(el: HTMLElement, name: String): Unit = js.native
+  @scala.inline
+  def setClass(el: HTMLElement, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.setOpacity")
-  @js.native
-  def setOpacity(el: HTMLElement, opacity: Double): Unit = js.native
+  @scala.inline
+  def setOpacity(el: HTMLElement, opacity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOpacity")(el.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.setPosition")
-  @js.native
-  def setPosition(el: HTMLElement, position: Point_): Unit = js.native
+  @scala.inline
+  def setPosition(el: HTMLElement, position: Point_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(el.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.setTransform")
-  @js.native
-  def setTransform(el: HTMLElement, offset: Point_): Unit = js.native
-  @JSImport("leaflet", "DomUtil.setTransform")
-  @js.native
-  def setTransform(el: HTMLElement, offset: Point_, scale: Double): Unit = js.native
+  @scala.inline
+  def setTransform(el: HTMLElement, offset: Point_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTransform")(el.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setTransform(el: HTMLElement, offset: Point_, scale: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTransform")(el.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.testProp")
-  @js.native
-  def testProp(props: js.Array[String]): String | `false` = js.native
+  @scala.inline
+  def testProp(props: js.Array[String]): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testProp")(props.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
   
-  @JSImport("leaflet", "DomUtil.toBack")
-  @js.native
-  def toBack(el: HTMLElement): Unit = js.native
+  @scala.inline
+  def toBack(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toBack")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("leaflet", "DomUtil.toFront")
-  @js.native
-  def toFront(el: HTMLElement): Unit = js.native
+  @scala.inline
+  def toFront(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toFront")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

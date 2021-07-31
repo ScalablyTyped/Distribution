@@ -2,51 +2,49 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deferred extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var approved: scala.Double = js.native
+  var approved: scala.Double
   
-  var canceled: scala.Double = js.native
+  var canceled: scala.Double
   
-  var cancelling: scala.Double = js.native
+  var cancelling: scala.Double
   
-  var deferred: scala.Double = js.native
+  var deferred: scala.Double
   
-  var evaluatingGates: scala.Double = js.native
+  var evaluatingGates: scala.Double
   
-  var gateFailed: scala.Double = js.native
+  var gateFailed: scala.Double
   
-  var manualInterventionPending: scala.Double = js.native
+  var manualInterventionPending: scala.Double
   
-  var pending: scala.Double = js.native
+  var pending: scala.Double
   
-  var phaseCanceled: scala.Double = js.native
+  var phaseCanceled: scala.Double
   
-  var phaseFailed: scala.Double = js.native
+  var phaseFailed: scala.Double
   
-  var phaseInProgress: scala.Double = js.native
+  var phaseInProgress: scala.Double
   
-  var phasePartiallySucceeded: scala.Double = js.native
+  var phasePartiallySucceeded: scala.Double
   
-  var phaseSucceeded: scala.Double = js.native
+  var phaseSucceeded: scala.Double
   
-  var queued: scala.Double = js.native
+  var queued: scala.Double
   
-  var queuedForAgent: scala.Double = js.native
+  var queuedForAgent: scala.Double
   
-  var queuedForPipeline: scala.Double = js.native
+  var queuedForPipeline: scala.Double
   
-  var rejected: scala.Double = js.native
+  var rejected: scala.Double
   
-  var scheduled: scala.Double = js.native
+  var scheduled: scala.Double
   
-  var undefined: scala.Double = js.native
+  var undefined: scala.Double
 }
 object Deferred {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRoleAliasRequest extends StObject {
   
   /**
     * The role alias to describe.
     */
-  var roleAlias: RoleAlias = js.native
+  var roleAlias: RoleAlias
 }
 object DescribeRoleAliasRequest {
   

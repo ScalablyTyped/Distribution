@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportsConfiguration extends StObject {
   
   /** Whether the exposure to conversion report is enabled. This report shows detailed pathway information on up to 10 of the most recent ad exposures seen by a user before converting. */
-  var exposureToConversionEnabled: js.UndefOr[Boolean] = js.native
+  var exposureToConversionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Default lookback windows for new advertisers in this account. */
-  var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.native
+  var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.undefined
   
   /**
     * Report generation time zone ID of this account. This is a required field that can only be changed by a superuser. Acceptable values are: - "1" for "America/New_York" - "2" for
@@ -22,7 +20,7 @@ trait ReportsConfiguration extends StObject {
     * "24" for "Asia/Calcutta" - "25" for "Asia/Pyongyang" - "26" for "Asia/Rangoon" - "27" for "Atlantic/Cape_Verde" - "28" for "Atlantic/South_Georgia" - "29" for "Australia/Adelaide" -
     * "30" for "Australia/Lord_Howe" - "31" for "Europe/Moscow" - "32" for "Pacific/Kiritimati" - "35" for "Pacific/Norfolk" - "36" for "Pacific/Tongatapu"
     */
-  var reportGenerationTimeZoneId: js.UndefOr[String] = js.native
+  var reportGenerationTimeZoneId: js.UndefOr[String] = js.undefined
 }
 object ReportsConfiguration {
   

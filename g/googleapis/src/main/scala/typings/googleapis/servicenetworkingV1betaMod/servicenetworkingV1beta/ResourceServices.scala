@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicenetworking/v1beta", "servicenetworking_v1beta.Resource$Services")
@@ -38,7 +37,7 @@ class ResourceServices protected () extends StObject {
     */
   def addSubnetwork(): GaxiosPromise[SchemaOperation] = js.native
   def addSubnetwork(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def addSubnetwork(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def addSubnetwork(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addSubnetwork(params: ParamsResourceServicesAddsubnetwork): GaxiosPromise[SchemaOperation] = js.native
   def addSubnetwork(params: ParamsResourceServicesAddsubnetwork, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addSubnetwork(
@@ -77,7 +76,7 @@ class ResourceServices protected () extends StObject {
     */
   def searchRange(): GaxiosPromise[SchemaOperation] = js.native
   def searchRange(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def searchRange(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def searchRange(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def searchRange(params: ParamsResourceServicesSearchrange): GaxiosPromise[SchemaOperation] = js.native
   def searchRange(params: ParamsResourceServicesSearchrange, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def searchRange(
@@ -111,7 +110,7 @@ class ResourceServices protected () extends StObject {
     */
   def updateConnections(): GaxiosPromise[SchemaOperation] = js.native
   def updateConnections(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def updateConnections(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def updateConnections(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateConnections(params: ParamsResourceServicesUpdateconnections): GaxiosPromise[SchemaOperation] = js.native
   def updateConnections(params: ParamsResourceServicesUpdateconnections, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def updateConnections(

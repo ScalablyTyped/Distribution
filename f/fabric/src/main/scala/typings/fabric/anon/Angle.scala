@@ -2,25 +2,23 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Angle extends StObject {
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var scaleX: Double = js.native
+  var scaleX: Double
   
-  var scaleY: Double = js.native
+  var scaleY: Double
   
-  var skewX: Double = js.native
+  var skewX: Double
   
-  var skewY: Double = js.native
+  var skewY: Double
   
-  var translateX: Double = js.native
+  var translateX: Double
   
-  var translateY: Double = js.native
+  var translateY: Double
 }
 object Angle {
   

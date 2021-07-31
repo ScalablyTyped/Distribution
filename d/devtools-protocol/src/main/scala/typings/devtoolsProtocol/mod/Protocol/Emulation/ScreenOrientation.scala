@@ -7,21 +7,19 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.portraitSecondary
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreenOrientation extends StObject {
   
   /**
     * Orientation angle.
     */
-  var angle: integer = js.native
+  var angle: integer
   
   /**
     * Orientation type. (ScreenOrientationType enum)
     */
-  var `type`: portraitPrimary | portraitSecondary | landscapePrimary | landscapeSecondary = js.native
+  var `type`: portraitPrimary | portraitSecondary | landscapePrimary | landscapeSecondary
 }
 object ScreenOrientation {
   

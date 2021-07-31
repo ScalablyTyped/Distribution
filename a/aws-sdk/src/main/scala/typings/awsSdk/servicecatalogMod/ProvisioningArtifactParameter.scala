@@ -2,41 +2,39 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisioningArtifactParameter extends StObject {
   
   /**
     * The default value.
     */
-  var DefaultValue: js.UndefOr[typings.awsSdk.servicecatalogMod.DefaultValue] = js.native
+  var DefaultValue: js.UndefOr[typings.awsSdk.servicecatalogMod.DefaultValue] = js.undefined
   
   /**
     * The description of the parameter.
     */
-  var Description: js.UndefOr[typings.awsSdk.servicecatalogMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.servicecatalogMod.Description] = js.undefined
   
   /**
     * If this value is true, the value for this parameter is obfuscated from view when the parameter is retrieved. This parameter is used to hide sensitive information.
     */
-  var IsNoEcho: js.UndefOr[NoEcho] = js.native
+  var IsNoEcho: js.UndefOr[NoEcho] = js.undefined
   
   /**
     * Constraints that the administrator has put on a parameter.
     */
-  var ParameterConstraints: js.UndefOr[typings.awsSdk.servicecatalogMod.ParameterConstraints] = js.native
+  var ParameterConstraints: js.UndefOr[typings.awsSdk.servicecatalogMod.ParameterConstraints] = js.undefined
   
   /**
     * The parameter key.
     */
-  var ParameterKey: js.UndefOr[typings.awsSdk.servicecatalogMod.ParameterKey] = js.native
+  var ParameterKey: js.UndefOr[typings.awsSdk.servicecatalogMod.ParameterKey] = js.undefined
   
   /**
     * The parameter type.
     */
-  var ParameterType: js.UndefOr[typings.awsSdk.servicecatalogMod.ParameterType] = js.native
+  var ParameterType: js.UndefOr[typings.awsSdk.servicecatalogMod.ParameterType] = js.undefined
 }
 object ProvisioningArtifactParameter {
   

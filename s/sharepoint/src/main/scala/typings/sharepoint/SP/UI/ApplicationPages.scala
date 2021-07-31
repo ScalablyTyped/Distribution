@@ -12,7 +12,6 @@ import typings.sharepoint.SP.Web
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ApplicationPages {
@@ -24,22 +23,34 @@ object ApplicationPages {
   object CalendarScope extends StObject {
     
     @js.native
-    sealed trait daily extends CalendarScope
+    sealed trait daily
+      extends StObject
+         with CalendarScope
     
     @js.native
-    sealed trait dailyGroup extends CalendarScope
+    sealed trait dailyGroup
+      extends StObject
+         with CalendarScope
     
     @js.native
-    sealed trait monthly extends CalendarScope
+    sealed trait monthly
+      extends StObject
+         with CalendarScope
     
     @js.native
-    sealed trait nothing extends CalendarScope
+    sealed trait nothing
+      extends StObject
+         with CalendarScope
     
     @js.native
-    sealed trait weekly extends CalendarScope
+    sealed trait weekly
+      extends StObject
+         with CalendarScope
     
     @js.native
-    sealed trait weeklyGroup extends CalendarScope
+    sealed trait weeklyGroup
+      extends StObject
+         with CalendarScope
   }
   
   @js.native
@@ -49,23 +60,34 @@ object ApplicationPages {
   object SelectorType extends StObject {
     
     @js.native
-    sealed trait event extends SelectorType
+    sealed trait event
+      extends StObject
+         with SelectorType
     
     @js.native
-    sealed trait none extends SelectorType
+    sealed trait none
+      extends StObject
+         with SelectorType
     
     @js.native
-    sealed trait people extends SelectorType
+    sealed trait people
+      extends StObject
+         with SelectorType
     
     @js.native
-    sealed trait people_And_Resource extends SelectorType
+    sealed trait people_And_Resource
+      extends StObject
+         with SelectorType
     
     @js.native
-    sealed trait resource extends SelectorType
+    sealed trait resource
+      extends StObject
+         with SelectorType
   }
   
-  @js.native
-  trait BaseSelectorComponent extends ISelectorComponent
+  trait BaseSelectorComponent
+    extends StObject
+       with ISelectorComponent
   object BaseSelectorComponent {
     
     @scala.inline
@@ -85,26 +107,26 @@ object ApplicationPages {
     }
   }
   
-  @js.native
   trait CalendarInstanceRepository extends StObject
   
-  @js.native
-  trait CalendarSelector extends Component {
+  trait CalendarSelector
+    extends StObject
+       with Component {
     
     def addHandler(
       scopeKey: String,
       people: Boolean,
       resource: Boolean,
       handler: js.Function2[/* sender */ js.Any, /* selection */ SelectorSelectionEventArgs, Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def getSelector(`type`: SelectorType, scopeKey: String): ISelectorComponent = js.native
+    def getSelector(`type`: SelectorType, scopeKey: String): ISelectorComponent
     
-    def registerSelector(selector: ISelectorComponent): Unit = js.native
+    def registerSelector(selector: ISelectorComponent): Unit
     
-    def removeEntity(scopeKey: String, ent: ResolveEntity): Unit = js.native
+    def removeEntity(scopeKey: String, ent: ResolveEntity): Unit
     
-    def revertTo(scopeKey: String, ent: ResolveEntity): Unit = js.native
+    def revertTo(scopeKey: String, ent: ResolveEntity): Unit
   }
   object CalendarSelector {
     
@@ -157,68 +179,69 @@ object ApplicationPages {
     }
   }
   
-  @js.native
-  trait ClientPeoplePickerQueryParameters extends ClientValueObject {
+  trait ClientPeoplePickerQueryParameters
+    extends StObject
+       with ClientValueObject {
     
-    def get_allUrlZones(): Boolean = js.native
+    def get_allUrlZones(): Boolean
     
-    def get_allowEmailAddresses(): Boolean = js.native
+    def get_allowEmailAddresses(): Boolean
     
-    def get_allowMultipleEntities(): Boolean = js.native
+    def get_allowMultipleEntities(): Boolean
     
-    def get_enabledClaimProviders(): String = js.native
+    def get_enabledClaimProviders(): String
     
-    def get_forceClaims(): Boolean = js.native
+    def get_forceClaims(): Boolean
     
-    def get_maximumEntitySuggestions(): Double = js.native
+    def get_maximumEntitySuggestions(): Double
     
-    def get_principalSource(): PrincipalSource = js.native
+    def get_principalSource(): PrincipalSource
     
-    def get_principalType(): PrincipalType = js.native
+    def get_principalType(): PrincipalType
     
-    def get_queryString(): String = js.native
+    def get_queryString(): String
     
-    def get_required(): Boolean = js.native
+    def get_required(): Boolean
     
-    def get_sharePointGroupID(): Double = js.native
+    def get_sharePointGroupID(): Double
     
-    def get_urlZone(): UrlZone = js.native
+    def get_urlZone(): UrlZone
     
-    def get_urlZoneSpecified(): Boolean = js.native
+    def get_urlZoneSpecified(): Boolean
     
-    def get_web(): Web = js.native
+    def get_web(): Web
     
-    def get_webApplicationID(): Guid = js.native
+    def get_webApplicationID(): Guid
     
-    def set_allUrlZones(value: Boolean): Unit = js.native
+    def set_allUrlZones(value: Boolean): Unit
     
-    def set_allowEmailAddresses(value: Boolean): Unit = js.native
+    def set_allowEmailAddresses(value: Boolean): Unit
     
-    def set_allowMultipleEntities(value: Boolean): Unit = js.native
+    def set_allowMultipleEntities(value: Boolean): Unit
     
-    def set_enabledClaimProviders(value: String): Unit = js.native
+    def set_enabledClaimProviders(value: String): Unit
     
-    def set_forceClaims(value: Boolean): Unit = js.native
+    def set_forceClaims(value: Boolean): Unit
     
-    def set_maximumEntitySuggestions(value: Double): Unit = js.native
+    def set_maximumEntitySuggestions(value: Double): Unit
     
-    def set_principalSource(value: PrincipalSource): Unit = js.native
+    def set_principalSource(value: PrincipalSource): Unit
     
-    def set_principalType(value: PrincipalType): Unit = js.native
+    def set_principalType(value: PrincipalType): Unit
     
-    def set_queryString(value: String): Unit = js.native
+    def set_queryString(value: String): Unit
     
-    def set_required(value: Boolean): Unit = js.native
+    def set_required(value: Boolean): Unit
     
-    def set_sharePointGroupID(value: Double): Unit = js.native
+    def set_sharePointGroupID(value: Double): Unit
     
-    def set_urlZone(value: UrlZone): Unit = js.native
+    def set_urlZone(value: UrlZone): Unit
     
-    def set_urlZoneSpecified(value: Boolean): Unit = js.native
+    def set_urlZoneSpecified(value: Boolean): Unit
     
-    def set_web(value: Web): Unit = js.native
+    def set_web(value: Web): Unit
     
-    def set_webApplicationID(value: Guid): Unit = js.native
+    def set_webApplicationID(value: Guid): Unit
   }
   object ClientPeoplePickerQueryParameters {
     
@@ -359,31 +382,29 @@ object ApplicationPages {
     }
   }
   
-  @js.native
   trait ClientPeoplePickerWebServiceInterface extends StObject
   
-  @js.native
   trait ICalendarController extends StObject {
     
-    def collapseAll(): Unit = js.native
+    def collapseAll(): Unit
     
-    def deleteItem(itemId: String): Unit = js.native
+    def deleteItem(itemId: String): Unit
     
-    def expandAll(): Unit = js.native
+    def expandAll(): Unit
     
-    def getActiveScope(): CalendarScope = js.native
+    def getActiveScope(): CalendarScope
     
-    def moveToDate(date: String): Unit = js.native
+    def moveToDate(date: String): Unit
     
-    def moveToView(scope: CalendarScope): Unit = js.native
+    def moveToView(scope: CalendarScope): Unit
     
-    def moveToViewDate(scope: CalendarScope, date: String): Unit = js.native
+    def moveToViewDate(scope: CalendarScope, date: String): Unit
     
-    def moveToViewType(viewType: String): Unit = js.native
+    def moveToViewType(viewType: String): Unit
     
-    def newItemDialog(contentTypeId: String): Unit = js.native
+    def newItemDialog(contentTypeId: String): Unit
     
-    def refreshItems(): Unit = js.native
+    def refreshItems(): Unit
   }
   object ICalendarController {
     
@@ -439,26 +460,25 @@ object ApplicationPages {
     }
   }
   
-  @js.native
   trait ISelectorComponent extends StObject {
     
-    def get_callback(): js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] = js.native
+    def get_callback(): js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]
     
-    def get_componentType(): SelectorType = js.native
+    def get_componentType(): SelectorType
     
-    def get_scopeKey(): String = js.native
+    def get_scopeKey(): String
     
-    def get_selectedEntities(): js.Any = js.native
+    def get_selectedEntities(): js.Any
     
-    def removeEntity(ent: ResolveEntity): Unit = js.native
+    def removeEntity(ent: ResolveEntity): Unit
     
-    def revertTo(ent: ResolveEntity): Unit = js.native
+    def revertTo(ent: ResolveEntity): Unit
     
-    def setEntity(ent: ResolveEntity): Unit = js.native
+    def setEntity(ent: ResolveEntity): Unit
     
-    def set_callback(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit = js.native
+    def set_callback(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit
     
-    def set_selectedEntities(value: js.Any): Unit = js.native
+    def set_selectedEntities(value: js.Any): Unit
   }
   object ISelectorComponent {
     
@@ -510,37 +530,35 @@ object ApplicationPages {
     }
   }
   
-  @js.native
   trait PeoplePickerWebServiceInterface extends StObject
   
-  @js.native
   trait ResolveEntity extends StObject {
     
-    var accountName: String = js.native
+    var accountName: String
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var email: String = js.native
+    var email: String
     
-    var entityType: String = js.native
+    var entityType: String
     
-    def get_key(): String = js.native
+    def get_key(): String
     
-    var id: String = js.native
+    var id: String
     
-    var isGroup: Boolean = js.native
+    var isGroup: Boolean
     
-    var members: js.Array[ResolveEntity] = js.native
+    var members: js.Array[ResolveEntity]
     
-    var needResolve: Boolean = js.native
+    var needResolve: Boolean
     
-    var tYPE_EVENT: String = js.native
+    var tYPE_EVENT: String
     
-    var tYPE_EXCHANGE: String = js.native
+    var tYPE_EXCHANGE: String
     
-    var tYPE_RESOURCE: String = js.native
+    var tYPE_RESOURCE: String
     
-    var tYPE_USER: String = js.native
+    var tYPE_USER: String
   }
   object ResolveEntity {
     
@@ -611,10 +629,11 @@ object ApplicationPages {
     }
   }
   
-  @js.native
-  trait SelectorSelectionEventArgs extends EventArgs {
+  trait SelectorSelectionEventArgs
+    extends StObject
+       with EventArgs {
     
-    def get_entities(): js.Any = js.native
+    def get_entities(): js.Any
   }
   object SelectorSelectionEventArgs {
     

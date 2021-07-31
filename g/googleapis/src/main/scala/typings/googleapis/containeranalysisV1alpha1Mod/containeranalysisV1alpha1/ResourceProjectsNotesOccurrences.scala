@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/containeranalysis/v1alpha1", "containeranalysis_v1alpha1.Resource$Projects$Notes$Occurrences")
@@ -35,7 +34,7 @@ class ResourceProjectsNotesOccurrences protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListNoteOccurrencesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListNoteOccurrencesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListNoteOccurrencesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListNoteOccurrencesResponse] = js.native
   def list(params: ParamsResourceProjectsNotesOccurrencesList): GaxiosPromise[SchemaListNoteOccurrencesResponse] = js.native
   def list(
     params: ParamsResourceProjectsNotesOccurrencesList,

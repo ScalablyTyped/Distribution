@@ -2,25 +2,23 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientSpecificActorInfo extends StObject {
   
-  var clientSpecificActorInfo: js.UndefOr[YoutubeActorInfo] = js.native
+  var clientSpecificActorInfo: js.UndefOr[YoutubeActorInfo] = js.undefined
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[Url] = js.native
+  var image: js.UndefOr[Url] = js.undefined
   
-  var name: js.UndefOr[FamilyName] = js.native
+  var name: js.UndefOr[FamilyName] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var verification: js.UndefOr[AdHocVerified] = js.native
+  var verification: js.UndefOr[AdHocVerified] = js.undefined
 }
 object ClientSpecificActorInfo {
   

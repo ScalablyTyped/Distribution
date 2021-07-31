@@ -2,22 +2,22 @@ package typings.fastLevenshtein
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fast-levenshtein", "get")
+  @JSImport("fast-levenshtein", JSImport.Namespace)
   @js.native
-  def get(str1: String, str2: String): Double = js.native
-  @JSImport("fast-levenshtein", "get")
-  @js.native
-  def get(str1: String, str2: String, opts: LevenshteinOptions): Double = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def get(str1: String, str2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def get(str1: String, str2: String, opts: LevenshteinOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   trait LevenshteinOptions extends StObject {
     
-    var useCollator: js.UndefOr[Boolean] = js.native
+    var useCollator: js.UndefOr[Boolean] = js.undefined
   }
   object LevenshteinOptions {
     

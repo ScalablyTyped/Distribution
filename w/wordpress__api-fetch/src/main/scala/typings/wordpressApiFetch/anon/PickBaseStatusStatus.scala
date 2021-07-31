@@ -4,21 +4,20 @@ import typings.std.Record
 import typings.wordpressApiFetch.mod.Schema.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BaseStatus, @wordpress/api-fetch.@wordpress/api-fetch.Schema.EmbedKeys.Status> */
-@js.native
 trait PickBaseStatusStatus
-  extends Status[js.Any] {
+  extends StObject
+     with Status[js.Any] {
   
-  var _embedded: js.UndefOr[Record[String, js.Array[_]]] = js.native
+  var _embedded: js.UndefOr[Record[String, js.Array[js.Any]]] = js.undefined
   
-  var _links: Record[String, js.Array[Dictk]] = js.native
+  var _links: Record[String, js.Array[Dictk]]
   
-  var name: String = js.native
+  var name: String
   
-  var slug: String = js.native
+  var slug: String
 }
 object PickBaseStatusStatus {
   
@@ -38,7 +37,7 @@ object PickBaseStatusStatus {
     def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_embedded(value: Record[String, js.Array[_]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
+    def set_embedded(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set_embeddedUndefined: Self = StObject.set(x, "_embedded", js.undefined)

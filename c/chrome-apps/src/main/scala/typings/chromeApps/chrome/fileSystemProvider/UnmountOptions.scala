@@ -2,14 +2,12 @@ package typings.chromeApps.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnmountOptions extends StObject {
   
   /** The identifier of the file system to be unmounted. */
-  var fileSystemId: String = js.native
+  var fileSystemId: String
 }
 object UnmountOptions {
   

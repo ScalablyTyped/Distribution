@@ -2,14 +2,15 @@ package typings.blocks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////////////////////
 // App.Collection
 /////////////////////////////////////////
 @js.native
-trait Collection extends Extendable[Collection] {
+trait Collection
+  extends StObject
+     with Extendable[Collection] {
   
   def apply(): Collection = js.native
   def apply(props: js.Array[js.Object]): Collection = js.native

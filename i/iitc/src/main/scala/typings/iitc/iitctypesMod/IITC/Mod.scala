@@ -3,19 +3,17 @@ package typings.iitc.iitctypesMod.IITC
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mod extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var owner: String = js.native
+  var owner: String
   
-  var rarity: ModRarity = js.native
+  var rarity: ModRarity
   
-  var stats: StringDictionary[String] = js.native
+  var stats: StringDictionary[String]
 }
 object Mod {
   

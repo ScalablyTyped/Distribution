@@ -2,27 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MailSearchFolder extends MailFolder {
+trait MailSearchFolder
+  extends StObject
+     with MailFolder {
   
   // The OData query to filter the messages.
-  var filterQuery: js.UndefOr[NullableOption[String]] = js.native
+  var filterQuery: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Indicates how the mailbox folder hierarchy should be traversed in the search. true means that a deep search should be
     * done to include child folders in the hierarchy of each folder explicitly specified in sourceFolderIds. false means a
     * shallow search of only each of the folders explicitly specified in sourceFolderIds.
     */
-  var includeNestedFolders: js.UndefOr[NullableOption[Boolean]] = js.native
+  var includeNestedFolders: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether a search folder is editable using REST APIs.
-  var isSupported: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isSupported: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The mailbox folders that should be mined.
-  var sourceFolderIds: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var sourceFolderIds: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object MailSearchFolder {
   

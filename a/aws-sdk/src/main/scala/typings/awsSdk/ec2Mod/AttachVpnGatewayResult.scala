@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachVpnGatewayResult extends StObject {
   
   /**
     * Information about the attachment.
     */
-  var VpcAttachment: js.UndefOr[typings.awsSdk.ec2Mod.VpcAttachment] = js.native
+  var VpcAttachment: js.UndefOr[typings.awsSdk.ec2Mod.VpcAttachment] = js.undefined
 }
 object AttachVpnGatewayResult {
   

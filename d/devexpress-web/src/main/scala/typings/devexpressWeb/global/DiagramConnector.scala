@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("DiagramConnector")
 @js.native
 class DiagramConnector ()
-  extends typings.devexpressWeb.DiagramConnector
+  extends StObject
+     with typings.devexpressWeb.DiagramConnector {
+  
+  /**
+    * Gets the connector's start node key.
+    */
+  /* CompleteClass */
+  var fromKey: js.Any = js.native
+  
+  /**
+    * Gets the item's internal identifier.
+    */
+  /* CompleteClass */
+  var id: String = js.native
+  
+  /**
+    * Gets the item's key from a data source.
+    */
+  /* CompleteClass */
+  var key: js.Any = js.native
+  
+  /**
+    * Gets the connector's texts.
+    */
+  /* CompleteClass */
+  var texts: js.Array[String] = js.native
+  
+  /**
+    * Gets the connector's end node key.
+    */
+  /* CompleteClass */
+  var toKey: js.Any = js.native
+}

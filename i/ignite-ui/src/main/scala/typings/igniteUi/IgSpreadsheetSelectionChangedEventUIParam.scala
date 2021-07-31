@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSpreadsheetSelectionChangedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Get the [pane](ig.spreadsheet.SpreadsheetPane) for which the selection has changed.
     */
-  var pane: js.UndefOr[js.Any] = js.native
+  var pane: js.UndefOr[js.Any] = js.undefined
 }
 object IgSpreadsheetSelectionChangedEventUIParam {
   

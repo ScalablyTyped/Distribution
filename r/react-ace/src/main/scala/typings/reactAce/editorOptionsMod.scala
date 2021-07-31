@@ -3,14 +3,16 @@ package typings.reactAce
 import typings.reactAce.anon.TypeofAceBuilds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editorOptionsMod {
   
-  @JSImport("react-ace/lib/editorOptions", "debounce")
+  @JSImport("react-ace/lib/editorOptions", JSImport.Namespace)
   @js.native
-  def debounce(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function0[Unit] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def debounce(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("react-ace/lib/editorOptions", "editorEvents")
   @js.native
@@ -20,9 +22,8 @@ object editorOptionsMod {
   @js.native
   val editorOptions: js.Array[EditorOption] = js.native
   
-  @JSImport("react-ace/lib/editorOptions", "getAceInstance")
-  @js.native
-  def getAceInstance(): TypeofAceBuilds = js.native
+  @scala.inline
+  def getAceInstance(): TypeofAceBuilds = ^.asInstanceOf[js.Dynamic].applyDynamic("getAceInstance")().asInstanceOf[TypeofAceBuilds]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactAce.reactAceStrings.onChange
@@ -116,10 +117,9 @@ object editorOptionsMod {
     
     object NodeJS {
       
-      @js.native
       trait Global extends StObject {
         
-        var window: js.Any = js.native
+        var window: js.Any
       }
       object Global {
         

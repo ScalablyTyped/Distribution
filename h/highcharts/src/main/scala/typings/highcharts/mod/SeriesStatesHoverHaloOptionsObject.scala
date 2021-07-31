@@ -2,26 +2,24 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesStatesHoverHaloOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock) A collection of SVG attributes to override the
     * appearance of the halo, for example `fill`, `stroke` and `stroke-width`.
     */
-  var attributes: js.UndefOr[PlotTilemapStatesHoverHaloAttributesOptions | SVGAttributes] = js.native
+  var attributes: js.UndefOr[PlotTilemapStatesHoverHaloAttributesOptions | SVGAttributes] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) Opacity for the halo unless a specific fill is
     * overridden using the `attributes` setting. Note that Highcharts is only
     * able to apply opacity to colors of hex or rgb(a) formats.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The pixel size of the halo. For point markers
@@ -29,7 +27,7 @@ trait SeriesStatesHoverHaloOptionsObject extends StObject {
     * halo outside the slice. For bubbles it defaults to 5 and is the width of
     * the halo outside the bubble.
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object SeriesStatesHoverHaloOptionsObject {
   

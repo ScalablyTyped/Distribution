@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateEnclaveOptions extends StObject {
   
   /**
     * If this parameter is set to true, the instance is enabled for AWS Nitro Enclaves; otherwise, it is not enabled for AWS Nitro Enclaves.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
 }
 object LaunchTemplateEnclaveOptions {
   

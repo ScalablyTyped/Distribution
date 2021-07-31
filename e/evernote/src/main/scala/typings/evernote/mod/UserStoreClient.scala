@@ -12,7 +12,6 @@ import typings.evernote.mod.UserStore.PublicUserInfo
 import typings.evernote.mod.UserStore.UserUrls
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "UserStoreClient")

@@ -2,15 +2,13 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Children extends StObject {
   
-  var children: js.UndefOr[js.Array[_]] = js.native
+  var children: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 object Children {
   
@@ -24,7 +22,7 @@ object Children {
   implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setChildren(value: js.Array[_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)

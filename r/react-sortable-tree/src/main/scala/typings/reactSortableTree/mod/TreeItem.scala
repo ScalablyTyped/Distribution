@@ -4,20 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeItem
-  extends /* x */ StringDictionary[js.Any] {
+  extends StObject
+     with /* x */ StringDictionary[js.Any] {
   
-  var children: js.UndefOr[js.Array[TreeItem] | GetTreeItemChildrenFn] = js.native
+  var children: js.UndefOr[js.Array[TreeItem] | GetTreeItemChildrenFn] = js.undefined
   
-  var expanded: js.UndefOr[Boolean] = js.native
+  var expanded: js.UndefOr[Boolean] = js.undefined
   
-  var subtitle: js.UndefOr[ReactNode] = js.native
+  var subtitle: js.UndefOr[ReactNode] = js.undefined
   
-  var title: js.UndefOr[ReactNode] = js.native
+  var title: js.UndefOr[ReactNode] = js.undefined
 }
 object TreeItem {
   

@@ -2,36 +2,34 @@ package typings.textMaskAddons
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<text-mask-addons.text-mask-addons.NumberMaskOptions> */
-  @js.native
   trait PartialNumberMaskOptions extends StObject {
     
-    var allowDecimal: js.UndefOr[Boolean] = js.native
+    var allowDecimal: js.UndefOr[Boolean] = js.undefined
     
-    var allowLeadingZeroes: js.UndefOr[Boolean] = js.native
+    var allowLeadingZeroes: js.UndefOr[Boolean] = js.undefined
     
-    var allowNegative: js.UndefOr[Boolean] = js.native
+    var allowNegative: js.UndefOr[Boolean] = js.undefined
     
-    var decimalLimit: js.UndefOr[Double] = js.native
+    var decimalLimit: js.UndefOr[Double] = js.undefined
     
-    var decimalSymbol: js.UndefOr[String] = js.native
+    var decimalSymbol: js.UndefOr[String] = js.undefined
     
-    var includeThousandsSeparator: js.UndefOr[Boolean] = js.native
+    var includeThousandsSeparator: js.UndefOr[Boolean] = js.undefined
     
-    var integerLimit: js.UndefOr[Double | Null] = js.native
+    var integerLimit: js.UndefOr[Double | Null] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var requireDecimal: js.UndefOr[Boolean] = js.native
+    var requireDecimal: js.UndefOr[Boolean] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var thousandsSeparatorSymbol: js.UndefOr[String] = js.native
+    var thousandsSeparatorSymbol: js.UndefOr[String] = js.undefined
   }
   object PartialNumberMaskOptions {
     

@@ -2,19 +2,19 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForceTouchGestureHandlerGestureEvent extends GestureHandlerGestureEvent {
+trait ForceTouchGestureHandlerGestureEvent
+  extends StObject
+     with GestureHandlerGestureEvent {
   
   @JSName("nativeEvent")
-  var nativeEvent_ForceTouchGestureHandlerGestureEvent: GestureHandlerGestureEventNativeEvent with ForceTouchGestureHandlerEventExtra = js.native
+  var nativeEvent_ForceTouchGestureHandlerGestureEvent: GestureHandlerGestureEventNativeEvent & ForceTouchGestureHandlerEventExtra
 }
 object ForceTouchGestureHandlerGestureEvent {
   
   @scala.inline
-  def apply(nativeEvent: GestureHandlerGestureEventNativeEvent with ForceTouchGestureHandlerEventExtra): ForceTouchGestureHandlerGestureEvent = {
+  def apply(nativeEvent: GestureHandlerGestureEventNativeEvent & ForceTouchGestureHandlerEventExtra): ForceTouchGestureHandlerGestureEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForceTouchGestureHandlerGestureEvent]
   }
@@ -23,6 +23,6 @@ object ForceTouchGestureHandlerGestureEvent {
   implicit class ForceTouchGestureHandlerGestureEventMutableBuilder[Self <: ForceTouchGestureHandlerGestureEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setNativeEvent(value: GestureHandlerGestureEventNativeEvent with ForceTouchGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    def setNativeEvent(value: GestureHandlerGestureEventNativeEvent & ForceTouchGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

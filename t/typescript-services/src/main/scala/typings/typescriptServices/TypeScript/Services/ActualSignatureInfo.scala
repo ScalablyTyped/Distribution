@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActualSignatureInfo extends StObject {
   
-  var currentParameter: Double = js.native
+  var currentParameter: Double
   
-  var currentParameterIsTypeParameter: Boolean = js.native
+  var currentParameterIsTypeParameter: Boolean
   
-  var parameterLimChar: Double = js.native
+  var parameterLimChar: Double
   
-  var parameterMinChar: Double = js.native
+  var parameterMinChar: Double
 }
 object ActualSignatureInfo {
   

@@ -6,17 +6,15 @@ import typings.astTypes.kindsMod.TSTypeAnnotationKind
 import typings.astTypes.kindsMod.TSTypeKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentsLocTypeAnnotation extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var typeAnnotation: TSTypeKind | TSTypeAnnotationKind = js.native
+  var typeAnnotation: TSTypeKind | TSTypeAnnotationKind
 }
 object CommentsLocTypeAnnotation {
   

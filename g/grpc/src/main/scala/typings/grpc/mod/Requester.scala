@@ -2,21 +2,19 @@ package typings.grpc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Requester extends StObject {
   
-  var cancel: js.UndefOr[CancelRequester] = js.native
+  var cancel: js.UndefOr[CancelRequester] = js.undefined
   
-  var getPeer: js.UndefOr[GetPeerRequester] = js.native
+  var getPeer: js.UndefOr[GetPeerRequester] = js.undefined
   
-  var halfClose: js.UndefOr[CloseRequester] = js.native
+  var halfClose: js.UndefOr[CloseRequester] = js.undefined
   
-  var sendMessage: js.UndefOr[MessageRequester] = js.native
+  var sendMessage: js.UndefOr[MessageRequester] = js.undefined
   
-  var start: js.UndefOr[MetadataRequester] = js.native
+  var start: js.UndefOr[MetadataRequester] = js.undefined
 }
 object Requester {
   

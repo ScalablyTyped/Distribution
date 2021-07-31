@@ -4,14 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.semanticUiForm.SemanticUI.Form.Field
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-form.SemanticUI.FormSettings._Impl, 'fields'> */
-@js.native
 trait PickImplfields extends StObject {
   
-  var fields: StringDictionary[String | js.Array[String] | Field] = js.native
+  var fields: StringDictionary[String | js.Array[String] | Field]
 }
 object PickImplfields {
   

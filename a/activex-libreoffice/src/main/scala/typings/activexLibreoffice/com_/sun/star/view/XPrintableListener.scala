@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link XPrintableListener} can be registered to {@link XPrintableBroadcaster} . Then, the client object will receive events about print progress.
   * @see XPrintableBroadcaster
   */
-@js.native
-trait XPrintableListener extends XEventListener {
+trait XPrintableListener
+  extends StObject
+     with XEventListener {
   
   /**
     * informs the user of the new state in print progress.
     * @param Event contains the {@link XPrintable} having changed state and the new state.
     */
-  def stateChanged(Event: PrintableStateEvent): Unit = js.native
+  def stateChanged(Event: PrintableStateEvent): Unit
 }
 object XPrintableListener {
   

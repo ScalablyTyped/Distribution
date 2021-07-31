@@ -12,37 +12,37 @@ import typings.electron.electronStrings.mouseWheel
 import typings.electron.electronStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MouseInputEvent extends InputEvent {
+trait MouseInputEvent
+  extends StObject
+     with InputEvent {
   
   // Docs: https://electronjs.org/docs/api/structures/mouse-input-event
   /**
     * The button pressed, can be `left`, `middle`, `right`.
     */
-  var button: js.UndefOr[left | middle | right] = js.native
+  var button: js.UndefOr[left | middle | right] = js.undefined
   
-  var clickCount: js.UndefOr[Double] = js.native
+  var clickCount: js.UndefOr[Double] = js.undefined
   
-  var globalX: js.UndefOr[Double] = js.native
+  var globalX: js.UndefOr[Double] = js.undefined
   
-  var globalY: js.UndefOr[Double] = js.native
+  var globalY: js.UndefOr[Double] = js.undefined
   
-  var movementX: js.UndefOr[Double] = js.native
+  var movementX: js.UndefOr[Double] = js.undefined
   
-  var movementY: js.UndefOr[Double] = js.native
+  var movementY: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of the event, can be `mouseDown`, `mouseUp`, `mouseEnter`,
     * `mouseLeave`, `contextMenu`, `mouseWheel` or `mouseMove`.
     */
-  var `type`: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove = js.native
+  var `type`: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object MouseInputEvent {
   

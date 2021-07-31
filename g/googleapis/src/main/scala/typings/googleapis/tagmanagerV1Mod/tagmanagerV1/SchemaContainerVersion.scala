@@ -2,85 +2,83 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Container Version.
   */
-@js.native
 trait SchemaContainerVersion extends StObject {
   
   /**
     * GTM Account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The container that this version was taken from.
     */
-  var container: js.UndefOr[SchemaContainer] = js.native
+  var container: js.UndefOr[SchemaContainer] = js.undefined
   
   /**
     * GTM Container ID.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /**
     * The Container Version ID uniquely identifies the GTM Container Version.
     */
-  var containerVersionId: js.UndefOr[String] = js.native
+  var containerVersionId: js.UndefOr[String] = js.undefined
   
   /**
     * A value of true indicates this container version has been deleted.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The fingerprint of the GTM Container Version as computed at storage time.
     * This value is recomputed whenever the container version is modified.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The folders in the container that this version was taken from.
     */
-  var folder: js.UndefOr[js.Array[SchemaFolder]] = js.native
+  var folder: js.UndefOr[js.Array[SchemaFolder]] = js.undefined
   
   /**
     * The macros in the container that this version was taken from.
     */
-  var `macro`: js.UndefOr[js.Array[SchemaMacro]] = js.native
+  var `macro`: js.UndefOr[js.Array[SchemaMacro]] = js.undefined
   
   /**
     * Container version display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * User notes on how to apply this container version in the container.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * The rules in the container that this version was taken from.
     */
-  var rule: js.UndefOr[js.Array[SchemaRule]] = js.native
+  var rule: js.UndefOr[js.Array[SchemaRule]] = js.undefined
   
   /**
     * The tags in the container that this version was taken from.
     */
-  var tag: js.UndefOr[js.Array[SchemaTag]] = js.native
+  var tag: js.UndefOr[js.Array[SchemaTag]] = js.undefined
   
   /**
     * The triggers in the container that this version was taken from.
     */
-  var trigger: js.UndefOr[js.Array[SchemaTrigger]] = js.native
+  var trigger: js.UndefOr[js.Array[SchemaTrigger]] = js.undefined
   
   /**
     * The variables in the container that this version was taken from.
     */
-  var variable: js.UndefOr[js.Array[SchemaVariable]] = js.native
+  var variable: js.UndefOr[js.Array[SchemaVariable]] = js.undefined
 }
 object SchemaContainerVersion {
   

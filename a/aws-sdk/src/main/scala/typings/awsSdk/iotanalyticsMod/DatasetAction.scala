@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetAction extends StObject {
   
   /**
     * The name of the data set action by which data set contents are automatically created.
     */
-  var actionName: js.UndefOr[DatasetActionName] = js.native
+  var actionName: js.UndefOr[DatasetActionName] = js.undefined
   
   /**
     * Information that allows the system to run a containerized application to create the dataset contents. The application must be in a Docker container along with any required support libraries.
     */
-  var containerAction: js.UndefOr[ContainerDatasetAction] = js.native
+  var containerAction: js.UndefOr[ContainerDatasetAction] = js.undefined
   
   /**
     * An SqlQueryDatasetAction object that uses an SQL query to automatically create data set contents.
     */
-  var queryAction: js.UndefOr[SqlQueryDatasetAction] = js.native
+  var queryAction: js.UndefOr[SqlQueryDatasetAction] = js.undefined
 }
 object DatasetAction {
   

@@ -2,12 +2,11 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardPropertiesHyphenFallback[TLength]
-  extends StandardLonghandPropertiesHyphenFallback[TLength]
+  extends StObject
+     with StandardLonghandPropertiesHyphenFallback[TLength]
      with StandardShorthandPropertiesHyphenFallback[TLength]
 object StandardPropertiesHyphenFallback {
   

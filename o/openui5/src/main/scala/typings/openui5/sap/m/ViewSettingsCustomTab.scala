@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewSettingsCustomTab extends Item {
+trait ViewSettingsCustomTab
+  extends StObject
+     with Item {
   
   /**
     * Adds some content to the aggregation <code>content</code>.

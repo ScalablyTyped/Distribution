@@ -4,7 +4,6 @@ import typings.sjcl.mod.TypeHelpers.BigNumberBinaryOperator
 import typings.sjcl.mod.TypeHelpers.BigNumberTrinaryOperator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________

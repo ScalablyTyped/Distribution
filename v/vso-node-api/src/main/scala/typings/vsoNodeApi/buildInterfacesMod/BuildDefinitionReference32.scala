@@ -5,40 +5,40 @@ import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildDefinitionReference32 extends DefinitionReference {
+trait BuildDefinitionReference32
+  extends StObject
+     with DefinitionReference {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * The author of the definition.
     */
-  var authoredBy: IdentityRef = js.native
+  var authoredBy: IdentityRef
   
   /**
     * A reference to the definition that this definition is a draft of, if this is a draft definition.
     */
-  var draftOf: DefinitionReference = js.native
+  var draftOf: DefinitionReference
   
   /**
     * The list of drafts associated with this definition, if this is not a draft definition.
     */
-  var drafts: js.Array[DefinitionReference] = js.native
+  var drafts: js.Array[DefinitionReference]
   
-  var metrics: js.Array[BuildMetric] = js.native
+  var metrics: js.Array[BuildMetric]
   
   /**
     * The quality of the definition document (draft, etc.)
     */
-  var quality: DefinitionQuality = js.native
+  var quality: DefinitionQuality
   
   /**
     * The default queue for builds run against this definition.
     */
-  var queue: AgentPoolQueue = js.native
+  var queue: AgentPoolQueue
 }
 object BuildDefinitionReference32 {
   

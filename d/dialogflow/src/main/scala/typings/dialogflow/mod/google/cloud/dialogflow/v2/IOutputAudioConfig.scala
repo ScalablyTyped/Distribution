@@ -2,23 +2,21 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an OutputAudioConfig. */
-@js.native
 trait IOutputAudioConfig extends StObject {
   
   /** OutputAudioConfig audioEncoding */
   var audioEncoding: js.UndefOr[
     OutputAudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.OutputAudioEncoding * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** OutputAudioConfig sampleRateHertz */
-  var sampleRateHertz: js.UndefOr[Double | Null] = js.native
+  var sampleRateHertz: js.UndefOr[Double | Null] = js.undefined
   
   /** OutputAudioConfig synthesizeSpeechConfig */
-  var synthesizeSpeechConfig: js.UndefOr[ISynthesizeSpeechConfig | Null] = js.native
+  var synthesizeSpeechConfig: js.UndefOr[ISynthesizeSpeechConfig | Null] = js.undefined
 }
 object IOutputAudioConfig {
   

@@ -2,17 +2,20 @@ package typings.tempFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("temp-file", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("temp-file", "TmpDir")
   @js.native
   class TmpDir () extends StObject {
     def this(debugName: String) = this()
     
-    def cleanup(): js.Promise[_] = js.native
+    def cleanup(): js.Promise[js.Any] = js.native
     
     def cleanupSync(): Unit = js.native
     
@@ -25,7 +28,7 @@ object mod {
     def getTempDir(options: GetTempFileOptions): js.Promise[String] = js.native
     
     def getTempFile(): js.Promise[String] = js.native
-    def getTempFile(options: js.UndefOr[scala.Nothing], isDir: Boolean): js.Promise[String] = js.native
+    def getTempFile(options: Unit, isDir: Boolean): js.Promise[String] = js.native
     def getTempFile(options: GetTempFileOptions): js.Promise[String] = js.native
     def getTempFile(options: GetTempFileOptions, isDir: Boolean): js.Promise[String] = js.native
     
@@ -36,21 +39,18 @@ object mod {
     var tempFiles: js.Any = js.native
   }
   
-  @JSImport("temp-file", "getTempName")
-  @js.native
-  def getTempName(): String = js.native
-  @JSImport("temp-file", "getTempName")
-  @js.native
-  def getTempName(prefix: String): String = js.native
+  @scala.inline
+  def getTempName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTempName")().asInstanceOf[String]
+  @scala.inline
+  def getTempName(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTempName")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait GetTempFileOptions extends StObject {
     
-    var disposer: js.UndefOr[(js.Function1[/* file */ String, js.Promise[Unit]]) | Null] = js.native
+    var disposer: js.UndefOr[(js.Function1[/* file */ String, js.Promise[Unit]]) | Null] = js.undefined
     
-    var prefix: js.UndefOr[String | Null] = js.native
+    var prefix: js.UndefOr[String | Null] = js.undefined
     
-    var suffix: js.UndefOr[String | Null] = js.native
+    var suffix: js.UndefOr[String | Null] = js.undefined
   }
   object GetTempFileOptions {
     

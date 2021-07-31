@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.stripe.mod.IObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Previousattributes extends StObject {
   
   /**
@@ -15,9 +13,9 @@ trait Previousattributes extends StObject {
     * invoice.created event will have a full invoice object as the value of
     * the object key.
     */
-  var `object`: IObject = js.native
+  var `object`: IObject
   
-  var previous_attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var previous_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object Previousattributes {
   

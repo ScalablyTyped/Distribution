@@ -8,7 +8,6 @@ import typings.react.mod.SFC
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,28 +17,27 @@ object mod {
   class default ()
     extends Component[ReactTagsProps, js.Object, js.Any]
   
-  @js.native
   trait ClassNames extends StObject {
     
-    var root: String = js.native
+    var root: String
     
-    var rootFocused: String = js.native
+    var rootFocused: String
     
-    var search: String = js.native
+    var search: String
     
-    var searchInput: String = js.native
+    var searchInput: String
     
-    var selected: String = js.native
+    var selected: String
     
-    var selectedTag: String = js.native
+    var selectedTag: String
     
-    var selectedTagName: String = js.native
+    var selectedTagName: String
     
-    var suggestionActive: String = js.native
+    var suggestionActive: String
     
-    var suggestionDisabled: String = js.native
+    var suggestionDisabled: String
     
-    var suggestions: String = js.native
+    var suggestions: String
   }
   object ClassNames {
     
@@ -97,128 +95,127 @@ object mod {
   
   type ReactTags = Component[ReactTagsProps, js.Object, js.Any]
   
-  @js.native
   trait ReactTagsProps extends StObject {
     
     /**
       * Creates a tag from the current input value when focus on the input is lost. Default: false.
       */
-    var addOnBlur: js.UndefOr[Boolean] = js.native
+    var addOnBlur: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disables ability to delete the selected tags when backspace is pressed while focussed on the text input. Default: true.
       */
-    var allowBackspace: js.UndefOr[Boolean] = js.native
+    var allowBackspace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows users to add new (not suggested) tags. Default: false.
       */
-    var allowNew: js.UndefOr[Boolean] = js.native
+    var allowNew: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean parameter to control whether the text-input should be autofocused on mount. Default: true.
       */
-    var autofocus: js.UndefOr[Boolean] = js.native
+    var autofocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean parameter to control whether the text-input should be automatically resized to fit its value. Default: true.
       */
-    var autoresize: js.UndefOr[Boolean] = js.native
+    var autoresize: js.UndefOr[Boolean] = js.undefined
     
-    var classNames: js.UndefOr[ClassNames] = js.native
+    var classNames: js.UndefOr[ClassNames] = js.undefined
     
     /**
       * Clear the text input when a tag is deleted. Default: true.
       */
-    var clearInputOnDelete: js.UndefOr[Boolean] = js.native
+    var clearInputOnDelete: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array of characters matching keyboard event key values. This is useful when needing to support a specific character irrespective of the keyboard layout.
       * Note, that this list is separate from the one specified by the delimiters option, so you'll need to set the value there to [],
       * if you wish to disable those keys. Example usage: delimiterChars={[',', ' ']}. Default: []
       */
-    var delimiterChars: js.UndefOr[js.Array[String]] = js.native
+    var delimiterChars: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Array of integers matching keyboard event keyCode values. When a corresponding key is pressed, the preceding string is finalised as tag. Default: [9, 13] (Tab and return keys).
       */
-    var delimiters: js.UndefOr[js.Array[Double]] = js.native
+    var delimiters: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Function called when the user wants to add a tag. Receives the tag
       */
-    def handleAddition(tag: Tag): Unit = js.native
+    def handleAddition(tag: Tag): Unit
     
     /**
       * Optional event handler when focus on the input is lost. Receives no arguments.
       */
-    var handleBlur: js.UndefOr[js.Function0[Unit]] = js.native
+    var handleBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Function called when the user wants to delete a tag. Receives the tag index.
       */
-    def handleDelete(index: Double): Unit = js.native
+    def handleDelete(index: Double): Unit
     
     /**
       * Optional event handler when the input receives focus. Receives no arguments.
       */
-    var handleFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var handleFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Optional event handler when the input changes. Receives the current input value.
       */
-    var handleInputChange: js.UndefOr[js.Function1[/* input */ String, Unit]] = js.native
+    var handleInputChange: js.UndefOr[js.Function1[/* input */ String, Unit]] = js.undefined
     
     /**
       * Optional validation function that determines if tag should be added to tags. Receives a tag object. Should return a boolean.
       */
-    var handleValidate: js.UndefOr[js.Function1[/* tag */ Tag, Boolean]] = js.native
+    var handleValidate: js.UndefOr[js.Function1[/* tag */ Tag, Boolean]] = js.undefined
     
     /**
       * An object containing additional attributes that will be applied to the underlying <input /> field.
       */
-    var inputAttributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var inputAttributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * Maximum number of suggestions to display. Default: 6.
       */
-    var maxSuggestionsLength: js.UndefOr[Double] = js.native
+    var maxSuggestionsLength: js.UndefOr[Double] = js.undefined
     
     /**
       * How many characters are needed for suggestions to appear. Default: 2.
       */
-    var minQueryLength: js.UndefOr[Double] = js.native
+    var minQueryLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Message shown if there are no matching suggestions. Default: null.
       */
-    var noSuggestionsText: js.UndefOr[String] = js.native
+    var noSuggestionsText: js.UndefOr[String] = js.undefined
     
     /**
       * The placeholder string shown for the input. Default: 'Add new tag'.
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * An array of suggestions that are used as basis for showing suggestions. Each suggestion must have an id and a name property and an optional disabled property. Default: []
       */
-    var suggestions: js.UndefOr[js.Array[Tag]] = js.native
+    var suggestions: js.UndefOr[js.Array[Tag]] = js.undefined
     
     /**
       * A callback function to filter suggestion items with. The callback receives two arguments; a suggestion and the current query and must return a boolean value.
       * If no function is supplied the default filter is applied. Default: null.
       */
-    var suggestionsFilter: js.UndefOr[js.Function2[/* suggestion */ Tag, /* query */ String, Boolean]] = js.native
+    var suggestionsFilter: js.UndefOr[js.Function2[/* suggestion */ Tag, /* query */ String, Boolean]] = js.undefined
     
     /**
       * Provide a custom tag component to render. Default: null.
       */
-    var tagComponent: js.UndefOr[SFC[TagComponentProps]] = js.native
+    var tagComponent: js.UndefOr[SFC[TagComponentProps]] = js.undefined
     
     /**
       * An array of tags that are displayed as pre-selected. Each tag must have an id and a name property. Default: []
       */
-    var tags: js.UndefOr[js.Array[Tag]] = js.native
+    var tags: js.UndefOr[js.Array[Tag]] = js.undefined
   }
   object ReactTagsProps {
     
@@ -383,14 +380,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var id: String | Double = js.native
+    var id: String | Double
     
-    var name: String = js.native
+    var name: String
   }
   object Tag {
     
@@ -417,14 +413,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TagComponentProps extends StObject {
     
-    var classNames: ClassNames = js.native
+    var classNames: ClassNames
     
-    def onDelete(event: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Unit = js.native
+    def onDelete(event: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Unit
     
-    var tag: Tag = js.native
+    var tag: Tag
   }
   object TagComponentProps {
     

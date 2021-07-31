@@ -5,10 +5,8 @@ import typings.algoliaLoggerCommon.mod.Logger
 import typings.algoliaRequesterCommon.mod.Requester
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransporterOptions extends StObject {
   
   /**
@@ -16,37 +14,37 @@ trait TransporterOptions extends StObject {
     * layer may add some extra headers during the request
     * for the user agent, and others.
     */
-  val headers: Headers = js.native
+  val headers: Headers
   
   /**
     * The hosts used by the requester.
     */
-  val hosts: js.Array[HostOptions] = js.native
+  val hosts: js.Array[HostOptions]
   
   /**
     * The cache of the hosts. Usually used to persist
     * the state of the host when its down.
     */
-  val hostsCache: Cache = js.native
+  val hostsCache: Cache
   
   /**
     * The logger instance to send events of the transporter.
     */
-  val logger: Logger = js.native
+  val logger: Logger
   
   /**
     * The query parameters used by the requester. The transporter
     * layer may add some extra headers during the request
     * for the user agent, and others.
     */
-  val queryParameters: QueryParameters = js.native
+  val queryParameters: QueryParameters
   
   /**
     * The underlying requester used. Should differ
     * depending of the enviroment where the client
     * will be used.
     */
-  val requester: Requester = js.native
+  val requester: Requester
   
   /**
     * The cache of the requests. When requests are
@@ -54,26 +52,26 @@ trait TransporterOptions extends StObject {
     * in this cache to shared in similar resquests
     * before being resolved.
     */
-  val requestsCache: Cache = js.native
+  val requestsCache: Cache
   
   /**
     * The cache of the responses. When requests are
     * `cacheable`, the returned responses persists
     * in this cache to shared in similar resquests.
     */
-  val responsesCache: Cache = js.native
+  val responsesCache: Cache
   
   /**
     * The timeouts used by the requester. The transporter
     * layer may increase this timeouts as defined on the
     * retry strategy.
     */
-  val timeouts: Timeouts = js.native
+  val timeouts: Timeouts
   
   /**
     * The user agent used. Sent on query parameters.
     */
-  val userAgent: UserAgent = js.native
+  val userAgent: UserAgent
 }
 object TransporterOptions {
   

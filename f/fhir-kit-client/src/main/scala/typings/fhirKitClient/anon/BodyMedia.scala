@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Media
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyMedia extends StObject {
   
-  var body: Media = js.native
+  var body: Media
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Media = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Media
 }
 object BodyMedia {
   
   @scala.inline
-  def apply(body: Media, resourceType: typings.fhirKitClient.fhirKitClientStrings.Media): BodyMedia = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Media): BodyMedia = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "Media")
     __obj.asInstanceOf[BodyMedia]
   }
   

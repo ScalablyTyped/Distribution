@@ -3,16 +3,14 @@ package typings.node.inspectorMod.Debugger
 import typings.node.inspectorMod.Runtime.CallArgument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetReturnValueParameterType extends StObject {
   
   /**
     * New return value.
     */
-  var newValue: CallArgument = js.native
+  var newValue: CallArgument
 }
 object SetReturnValueParameterType {
   

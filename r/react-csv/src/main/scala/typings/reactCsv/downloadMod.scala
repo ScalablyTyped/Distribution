@@ -5,7 +5,6 @@ import typings.reactCsv.commonPropTypesMod.CommonPropTypes
 import typings.reactCsv.commonPropTypesMod.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object downloadMod {
@@ -17,10 +16,11 @@ object downloadMod {
   
   type Download = Component[DownloadPropTypes, js.Object, js.Any]
   
-  @js.native
-  trait DownloadPropTypes extends CommonPropTypes {
+  trait DownloadPropTypes
+    extends StObject
+       with CommonPropTypes {
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object DownloadPropTypes {
     

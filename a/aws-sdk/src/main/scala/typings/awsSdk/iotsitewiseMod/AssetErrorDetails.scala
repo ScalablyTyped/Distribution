@@ -2,26 +2,24 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetErrorDetails extends StObject {
   
   /**
     * The ID of the asset.
     */
-  var assetId: ID = js.native
+  var assetId: ID
   
   /**
     * The error code.
     */
-  var code: AssetErrorCode = js.native
+  var code: AssetErrorCode
   
   /**
     * The error message.
     */
-  var message: AssetErrorMessage = js.native
+  var message: AssetErrorMessage
 }
 object AssetErrorDetails {
   

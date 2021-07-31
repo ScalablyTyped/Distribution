@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolverQueryLogConfigAssociationMod {
@@ -38,6 +37,10 @@ object resolverQueryLogConfigAssociationMod {
   /* static members */
   object ResolverQueryLogConfigAssociation {
     
+    @JSImport("@pulumi/aws/route53/resolverQueryLogConfigAssociation", "ResolverQueryLogConfigAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResolverQueryLogConfigAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,45 +50,39 @@ object resolverQueryLogConfigAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53/resolverQueryLogConfigAssociation", "ResolverQueryLogConfigAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ResolverQueryLogConfigAssociation = js.native
-    @JSImport("@pulumi/aws/route53/resolverQueryLogConfigAssociation", "ResolverQueryLogConfigAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ResolverQueryLogConfigAssociation = js.native
-    @JSImport("@pulumi/aws/route53/resolverQueryLogConfigAssociation", "ResolverQueryLogConfigAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigAssociationState): ResolverQueryLogConfigAssociation = js.native
-    @JSImport("@pulumi/aws/route53/resolverQueryLogConfigAssociation", "ResolverQueryLogConfigAssociation.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfigAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfigAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigAssociationState): ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfigAssociation]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: ResolverQueryLogConfigAssociationState,
       opts: CustomResourceOptions
-    ): ResolverQueryLogConfigAssociation = js.native
+    ): ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfigAssociation]
     
     /**
       * Returns true if the given object is an instance of ResolverQueryLogConfigAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53/resolverQueryLogConfigAssociation", "ResolverQueryLogConfigAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfigAssociation.ResolverQueryLogConfigAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfigAssociation.ResolverQueryLogConfigAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfigAssociation.ResolverQueryLogConfigAssociation */ Boolean]
   }
   
-  @js.native
   trait ResolverQueryLogConfigAssociationArgs extends StObject {
     
     /**
       * The ID of the Route 53 Resolver query logging configuration that you want to associate a VPC with.
       */
-    val resolverQueryLogConfigId: Input[String] = js.native
+    val resolverQueryLogConfigId: Input[String]
     
     /**
       * The ID of a VPC that you want this query logging configuration to log queries for.
       */
-    val resourceId: Input[String] = js.native
+    val resourceId: Input[String]
   }
   object ResolverQueryLogConfigAssociationArgs {
     
@@ -106,18 +103,17 @@ object resolverQueryLogConfigAssociationMod {
     }
   }
   
-  @js.native
   trait ResolverQueryLogConfigAssociationState extends StObject {
     
     /**
       * The ID of the Route 53 Resolver query logging configuration that you want to associate a VPC with.
       */
-    val resolverQueryLogConfigId: js.UndefOr[Input[String]] = js.native
+    val resolverQueryLogConfigId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of a VPC that you want this query logging configuration to log queries for.
       */
-    val resourceId: js.UndefOr[Input[String]] = js.native
+    val resourceId: js.UndefOr[Input[String]] = js.undefined
   }
   object ResolverQueryLogConfigAssociationState {
     

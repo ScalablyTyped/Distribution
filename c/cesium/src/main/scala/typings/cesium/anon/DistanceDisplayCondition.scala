@@ -4,25 +4,23 @@ import typings.cesium.mod.MaterialProperty
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceDisplayCondition extends StObject {
   
-  var distanceDisplayCondition: js.UndefOr[Property] = js.native
+  var distanceDisplayCondition: js.UndefOr[Property] = js.undefined
   
-  var leadTime: js.UndefOr[Property | Double] = js.native
+  var leadTime: js.UndefOr[Property | Double] = js.undefined
   
-  var material: js.UndefOr[MaterialProperty] = js.native
+  var material: js.UndefOr[MaterialProperty] = js.undefined
   
-  var resolution: js.UndefOr[Property | Double] = js.native
+  var resolution: js.UndefOr[Property | Double] = js.undefined
   
-  var show: js.UndefOr[Property | Boolean] = js.native
+  var show: js.UndefOr[Property | Boolean] = js.undefined
   
-  var trailTime: js.UndefOr[Property | Double] = js.native
+  var trailTime: js.UndefOr[Property | Double] = js.undefined
   
-  var width: js.UndefOr[Property | Double] = js.native
+  var width: js.UndefOr[Property | Double] = js.undefined
 }
 object DistanceDisplayCondition {
   

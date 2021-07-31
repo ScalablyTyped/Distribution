@@ -3,27 +3,25 @@ package typings.websocket.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICookie extends StObject {
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
-  var expires: js.UndefOr[Date] = js.native
+  var expires: js.UndefOr[Date] = js.undefined
   
-  var httponly: js.UndefOr[Boolean] = js.native
+  var httponly: js.UndefOr[Boolean] = js.undefined
   
-  var maxage: js.UndefOr[Double] = js.native
+  var maxage: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
-  var value: String = js.native
+  var value: String
 }
 object ICookie {
   

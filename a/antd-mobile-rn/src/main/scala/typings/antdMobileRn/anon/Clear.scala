@@ -4,41 +4,39 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clear extends StObject {
   
-  var clear: Boolean = js.native
+  var clear: Boolean
   
-  var editable: Boolean = js.native
+  var editable: Boolean
   
-  var error: Boolean = js.native
+  var error: Boolean
   
-  var extra: String = js.native
+  var extra: String
   
-  var labelNumber: Double = js.native
+  var labelNumber: Double
   
-  var labelPosition: String = js.native
+  var labelPosition: String
   
-  var last: Boolean = js.native
+  var last: Boolean
   
-  def onBlur(): Unit = js.native
+  def onBlur(): Unit
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  def onErrorClick(): Unit = js.native
+  def onErrorClick(): Unit
   
-  def onExtraClick(): Unit = js.native
+  def onExtraClick(): Unit
   
-  def onFocus(): Unit = js.native
+  def onFocus(): Unit
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]]
   
-  var textAlign: String = js.native
+  var textAlign: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Clear {
   
@@ -56,7 +54,7 @@ object Clear {
     onErrorClick: () => Unit,
     onExtraClick: () => Unit,
     onFocus: () => Unit,
-    styles: StringDictionary[RegisteredStyle[_]],
+    styles: StringDictionary[RegisteredStyle[js.Any]],
     textAlign: String,
     `type`: String
   ): Clear = {
@@ -105,7 +103,7 @@ object Clear {
     def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])

@@ -3,13 +3,11 @@ package typings.jqueryAjaxfile.anon
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Element extends StObject {
   
-  var element: Node = js.native
+  var element: Node
 }
 object Element {
   

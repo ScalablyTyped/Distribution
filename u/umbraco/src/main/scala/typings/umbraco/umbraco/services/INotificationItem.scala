@@ -2,35 +2,33 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Notification Item
   */
-@js.native
 trait INotificationItem extends StObject {
   
   /*Collection of button actions to append (label, func, cssClass)*/
-  var actions: js.Array[IButtonAction] = js.native
+  var actions: js.Array[IButtonAction]
   
   /*Short headline*/
-  var headline: String = js.native
+  var headline: String
   
   /*longer text for the notication, trimmed after 200 characters, which can then be exanded*/
-  var message: String = js.native
+  var message: String
   
   /*if set to true, the notification will not auto- close*/
-  var sticky: Boolean = js.native
+  var sticky: Boolean
   
   /*Notification type, can be: "success", "warning", "error" or "info"*/
-  var `type`: NotificationType = js.native
+  var `type`: NotificationType
   
   /*url to open when notification is clicked*/
-  var url: String = js.native
+  var url: String
   
   /*path to custom view to load into the notification box*/
-  var view: String = js.native
+  var view: String
 }
 object INotificationItem {
   

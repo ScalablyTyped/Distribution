@@ -3,50 +3,48 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the parameters of the conversational query.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2QueryParameters extends StObject {
   
   /**
     * Optional. The collection of contexts to be activated before this query is
     * executed.
     */
-  var contexts: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Context]] = js.native
+  var contexts: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Context]] = js.undefined
   
   /**
     * Optional. The geo location of this conversational query.
     */
-  var geoLocation: js.UndefOr[SchemaGoogleTypeLatLng] = js.native
+  var geoLocation: js.UndefOr[SchemaGoogleTypeLatLng] = js.undefined
   
   /**
     * Optional. This field can be used to pass custom data into the webhook
     * associated with the agent. Arbitrary JSON objects are supported.
     */
-  var payload: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var payload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Optional. Specifies whether to delete all contexts in the current session
     * before the new ones are activated.
     */
-  var resetContexts: js.UndefOr[Boolean] = js.native
+  var resetContexts: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. Configures the type of sentiment analysis to perform. If not
     * provided, sentiment analysis is not performed.
     */
-  var sentimentAnalysisRequestConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2SentimentAnalysisRequestConfig] = js.native
+  var sentimentAnalysisRequestConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2SentimentAnalysisRequestConfig] = js.undefined
   
   /**
     * Optional. Additional session entity types to replace or extend developer
     * entity types with. The entity synonyms apply to all languages and persist
     * for the session of this query.
     */
-  var sessionEntityTypes: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2SessionEntityType]] = js.native
+  var sessionEntityTypes: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2SessionEntityType]] = js.undefined
   
   /**
     * Optional. The time zone of this conversational query from the [time zone
@@ -54,7 +52,7 @@ trait SchemaGoogleCloudDialogflowV2QueryParameters extends StObject {
     * Europe/Paris. If not provided, the time zone specified in agent settings
     * is used.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2QueryParameters {
   

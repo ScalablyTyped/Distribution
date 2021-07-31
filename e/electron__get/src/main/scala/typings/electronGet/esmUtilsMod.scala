@@ -2,49 +2,39 @@ package typings.electronGet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmUtilsMod {
   
-  @JSImport("@electron/get/dist/esm/utils", "ensureIsTruthyString")
+  @JSImport("@electron/get/dist/esm/utils", JSImport.Namespace)
   @js.native
-  def ensureIsTruthyString[T, K /* <: /* keyof T */ String */](obj: T, key: K): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@electron/get/dist/esm/utils", "getHostArch")
-  @js.native
-  def getHostArch(): String = js.native
+  @scala.inline
+  def ensureIsTruthyString[T, K /* <: /* keyof T */ String */](obj: T, key: K): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureIsTruthyString")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@electron/get/dist/esm/utils", "getNodeArch")
-  @js.native
-  def getNodeArch(arch: String): String = js.native
+  @scala.inline
+  def getHostArch(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostArch")().asInstanceOf[String]
   
-  @JSImport("@electron/get/dist/esm/utils", "isOfficialLinuxIA32Download")
-  @js.native
-  def isOfficialLinuxIA32Download(platform: String, arch: String, version: String): Boolean = js.native
-  @JSImport("@electron/get/dist/esm/utils", "isOfficialLinuxIA32Download")
-  @js.native
-  def isOfficialLinuxIA32Download(platform: String, arch: String, version: String, mirrorOptions: js.Object): Boolean = js.native
+  @scala.inline
+  def getNodeArch(arch: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeArch")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@electron/get/dist/esm/utils", "normalizeVersion")
-  @js.native
-  def normalizeVersion(version: String): String = js.native
+  @scala.inline
+  def isOfficialLinuxIA32Download(platform: String, arch: String, version: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOfficialLinuxIA32Download")(platform.asInstanceOf[js.Any], arch.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isOfficialLinuxIA32Download(platform: String, arch: String, version: String, mirrorOptions: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOfficialLinuxIA32Download")(platform.asInstanceOf[js.Any], arch.asInstanceOf[js.Any], version.asInstanceOf[js.Any], mirrorOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@electron/get/dist/esm/utils", "uname")
-  @js.native
-  def uname(): String = js.native
+  @scala.inline
+  def normalizeVersion(version: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVersion")(version.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@electron/get/dist/esm/utils", "withTempDirectory")
-  @js.native
-  def withTempDirectory[T](fn: js.Function1[/* directory */ String, js.Promise[T]]): js.Promise[T] = js.native
+  @scala.inline
+  def uname(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uname")().asInstanceOf[String]
   
-  @JSImport("@electron/get/dist/esm/utils", "withTempDirectoryIn")
-  @js.native
-  def withTempDirectoryIn[T](
-    parentDirectory: js.UndefOr[scala.Nothing],
-    fn: js.Function1[/* directory */ String, js.Promise[T]]
-  ): js.Promise[T] = js.native
-  @JSImport("@electron/get/dist/esm/utils", "withTempDirectoryIn")
-  @js.native
-  def withTempDirectoryIn[T](parentDirectory: String, fn: js.Function1[/* directory */ String, js.Promise[T]]): js.Promise[T] = js.native
+  @scala.inline
+  def withTempDirectory[T](fn: js.Function1[/* directory */ String, js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTempDirectory")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  
+  @scala.inline
+  def withTempDirectoryIn[T](parentDirectory: String, fn: js.Function1[/* directory */ String, js.Promise[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTempDirectoryIn")(parentDirectory.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def withTempDirectoryIn[T](parentDirectory: Unit, fn: js.Function1[/* directory */ String, js.Promise[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTempDirectoryIn")(parentDirectory.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
 }

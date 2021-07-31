@@ -4,19 +4,17 @@ import typings.std.File
 import typings.wordpressMediaUtils.uploadMediaMod.UploadMediaErrorCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code extends StObject {
     
-    var code: UploadMediaErrorCode = js.native
+    var code: UploadMediaErrorCode
     
-    var file: File = js.native
+    var file: File
     
-    var message: String = js.native
+    var message: String
   }
   object Code {
     

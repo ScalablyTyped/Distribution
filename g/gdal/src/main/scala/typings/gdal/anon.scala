@@ -2,17 +2,15 @@ package typings.gdal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait GeoTransform extends StObject {
     
-    var geoTransform: js.Any = js.native
+    var geoTransform: js.Any
     
-    var rasterSize: js.Any = js.native
+    var rasterSize: js.Any
   }
   object GeoTransform {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Unit extends StObject {
     
-    var unit: js.Any = js.native
+    var unit: js.Any
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Unit {
     

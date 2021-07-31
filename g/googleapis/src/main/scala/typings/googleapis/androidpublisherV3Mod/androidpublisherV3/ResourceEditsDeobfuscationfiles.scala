@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Edits$Deobfuscationfiles")
@@ -37,7 +36,7 @@ class ResourceEditsDeobfuscationfiles protected () extends StObject {
     */
   def upload(): GaxiosPromise[SchemaDeobfuscationFilesUploadResponse] = js.native
   def upload(callback: BodyResponseCallback[SchemaDeobfuscationFilesUploadResponse]): Unit = js.native
-  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeobfuscationFilesUploadResponse] = js.native
+  def upload(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDeobfuscationFilesUploadResponse] = js.native
   def upload(params: ParamsResourceEditsDeobfuscationfilesUpload): GaxiosPromise[SchemaDeobfuscationFilesUploadResponse] = js.native
   def upload(
     params: ParamsResourceEditsDeobfuscationfilesUpload,

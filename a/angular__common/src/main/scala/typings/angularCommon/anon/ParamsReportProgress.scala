@@ -7,31 +7,29 @@ import typings.angularCommon.httpHttpMod.HttpHeaders
 import typings.angularCommon.httpHttpMod.HttpParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParamsReportProgress extends StObject {
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
-  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.native
+  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var observe: response = js.native
+  var observe: response
   
-  var params: js.UndefOr[HttpParams | (StringDictionary[String | js.Array[String]])] = js.native
+  var params: js.UndefOr[HttpParams | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var reportProgress: js.UndefOr[Boolean] = js.native
+  var reportProgress: js.UndefOr[Boolean] = js.undefined
   
-  var responseType: arraybuffer = js.native
+  var responseType: arraybuffer
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsReportProgress {
   
   @scala.inline
-  def apply(observe: response, responseType: arraybuffer): ParamsReportProgress = {
-    val __obj = js.Dynamic.literal(observe = observe.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
+  def apply(): ParamsReportProgress = {
+    val __obj = js.Dynamic.literal(observe = "response", responseType = "arraybuffer")
     __obj.asInstanceOf[ParamsReportProgress]
   }
   

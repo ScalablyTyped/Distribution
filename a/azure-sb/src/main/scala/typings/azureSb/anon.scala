@@ -4,27 +4,25 @@ import typings.azureSb.mod.Azure.ServiceBus.DateString
 import typings.azureSb.mod.Azure.ServiceBus.Dictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Author extends StObject {
     
-    var ContentRootElement: String = js.native
+    var ContentRootElement: String
     
-    var author: js.UndefOr[Name] = js.native
+    var author: js.UndefOr[Name] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var link: String = js.native
+    var link: String
     
-    var published: DateString = js.native
+    var published: DateString
     
-    var title: String = js.native
+    var title: String
     
-    var updated: DateString = js.native
+    var updated: DateString
   }
   object Author {
     
@@ -70,16 +68,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Body extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var expiry: js.UndefOr[String] = js.native
+    var expiry: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Body {
     
@@ -118,12 +115,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var Code: String = js.native
+    var Code: String
     
-    var Detail: String = js.native
+    var Detail: String
   }
   object Code {
     
@@ -144,10 +140,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentRootElement extends StObject {
     
-    var ContentRootElement: String = js.native
+    var ContentRootElement: String
   }
   object ContentRootElement {
     
@@ -165,10 +160,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var Error: Code = js.native
+    var Error: Code
   }
   object Error {
     
@@ -186,10 +180,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Etag extends StObject {
     
-    var etag: js.Any = js.native
+    var etag: js.Any
   }
   object Etag {
     
@@ -207,10 +200,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers extends StObject {
     
-    var headers: Dictionary[String] = js.native
+    var headers: Dictionary[String]
   }
   object Headers {
     
@@ -228,10 +220,9 @@ object anon {
     }
   }
   
-  @js.native
   trait HeadersObject extends StObject {
     
-    var headers: js.Object = js.native
+    var headers: js.Object
   }
   object HeadersObject {
     
@@ -249,10 +240,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -270,10 +260,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -291,14 +280,13 @@ object anon {
     }
   }
   
-  @js.native
   trait PushChannel extends StObject {
     
-    var pushChannel: String = js.native
+    var pushChannel: String
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var templates: js.UndefOr[js.Any] = js.native
+    var templates: js.UndefOr[js.Any] = js.undefined
   }
   object PushChannel {
     
@@ -331,10 +319,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SignRequest extends StObject {
     
-    def signRequest(webResource: js.Any, callback: js.Function0[Unit]): Unit = js.native
+    def signRequest(webResource: js.Any, callback: js.Function0[Unit]): Unit
   }
   object SignRequest {
     
@@ -352,11 +339,10 @@ object anon {
     }
   }
   
-  @js.native
   trait _empty extends StObject {
     
     @JSName("_")
-    var _underscore: Id = js.native
+    var _underscore: Id
   }
   object _empty {
     

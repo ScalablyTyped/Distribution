@@ -2,26 +2,24 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /**
     * Absolute path to header image, or `null` to remove image
     */
-  var image: js.UndefOr[String | Null] = js.native
+  var image: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Header title
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Url to make the header text/image a link to this url
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Image {
   

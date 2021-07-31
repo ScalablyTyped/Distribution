@@ -2,31 +2,29 @@ package typings.googleapis.dnsV1beta2Mod.dnsV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOperation extends StObject {
   
-  var dnsKeyContext: js.UndefOr[SchemaOperationDnsKeyContext] = js.native
+  var dnsKeyContext: js.UndefOr[SchemaOperationDnsKeyContext] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dns#operation&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
-  var zoneContext: js.UndefOr[SchemaOperationManagedZoneContext] = js.native
+  var zoneContext: js.UndefOr[SchemaOperationManagedZoneContext] = js.undefined
 }
 object SchemaOperation {
   

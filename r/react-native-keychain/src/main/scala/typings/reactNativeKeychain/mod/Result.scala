@@ -2,15 +2,13 @@ package typings.reactNativeKeychain.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
-  var service: String = js.native
+  var service: String
   
-  var storage: String = js.native
+  var storage: String
 }
 object Result {
   

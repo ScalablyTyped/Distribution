@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolverQueryLogConfigMod {
@@ -62,6 +61,10 @@ object resolverQueryLogConfigMod {
   /* static members */
   object ResolverQueryLogConfig {
     
+    @JSImport("@pulumi/aws/route53/resolverQueryLogConfig", "ResolverQueryLogConfig")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResolverQueryLogConfig resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -71,46 +74,40 @@ object resolverQueryLogConfigMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53/resolverQueryLogConfig", "ResolverQueryLogConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ResolverQueryLogConfig = js.native
-    @JSImport("@pulumi/aws/route53/resolverQueryLogConfig", "ResolverQueryLogConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ResolverQueryLogConfig = js.native
-    @JSImport("@pulumi/aws/route53/resolverQueryLogConfig", "ResolverQueryLogConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigState): ResolverQueryLogConfig = js.native
-    @JSImport("@pulumi/aws/route53/resolverQueryLogConfig", "ResolverQueryLogConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigState, opts: CustomResourceOptions): ResolverQueryLogConfig = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ResolverQueryLogConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResolverQueryLogConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigState): ResolverQueryLogConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigState, opts: CustomResourceOptions): ResolverQueryLogConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfig]
     
     /**
       * Returns true if the given object is an instance of ResolverQueryLogConfig.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53/resolverQueryLogConfig", "ResolverQueryLogConfig.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfig.ResolverQueryLogConfig */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfig.ResolverQueryLogConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfig.ResolverQueryLogConfig */ Boolean]
   }
   
-  @js.native
   trait ResolverQueryLogConfigArgs extends StObject {
     
     /**
       * The ARN of the resource that you want Route 53 Resolver to send query logs.
       * You can send query logs to an S3 bucket, a CloudWatch Logs log group, or a Kinesis Data Firehose delivery stream.
       */
-    val destinationArn: Input[String] = js.native
+    val destinationArn: Input[String]
     
     /**
       * The name of the Route 53 Resolver query logging configuration.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ResolverQueryLogConfigArgs {
     
@@ -140,41 +137,40 @@ object resolverQueryLogConfigMod {
     }
   }
   
-  @js.native
   trait ResolverQueryLogConfigState extends StObject {
     
     /**
       * The ARN (Amazon Resource Name) of the Route 53 Resolver query logging configuration.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the resource that you want Route 53 Resolver to send query logs.
       * You can send query logs to an S3 bucket, a CloudWatch Logs log group, or a Kinesis Data Firehose delivery stream.
       */
-    val destinationArn: js.UndefOr[Input[String]] = js.native
+    val destinationArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Route 53 Resolver query logging configuration.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS account ID of the account that created the query logging configuration.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An indication of whether the query logging configuration is shared with other AWS accounts, or was shared with the current account by another AWS account.
       * Sharing is configured through AWS Resource Access Manager (AWS RAM).
       * Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
       */
-    val shareStatus: js.UndefOr[Input[String]] = js.native
+    val shareStatus: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ResolverQueryLogConfigState {
     

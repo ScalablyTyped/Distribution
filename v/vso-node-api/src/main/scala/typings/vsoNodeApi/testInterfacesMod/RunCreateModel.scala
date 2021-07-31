@@ -3,73 +3,71 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunCreateModel extends StObject {
   
-  var automated: Boolean = js.native
+  var automated: Boolean
   
-  var build: ShallowReference = js.native
+  var build: ShallowReference
   
-  var buildDropLocation: String = js.native
+  var buildDropLocation: String
   
-  var buildFlavor: String = js.native
+  var buildFlavor: String
   
-  var buildPlatform: String = js.native
+  var buildPlatform: String
   
-  var comment: String = js.native
+  var comment: String
   
-  var completeDate: String = js.native
+  var completeDate: String
   
-  var configurationIds: js.Array[Double] = js.native
+  var configurationIds: js.Array[Double]
   
-  var controller: String = js.native
+  var controller: String
   
-  var customTestFields: js.Array[CustomTestField] = js.native
+  var customTestFields: js.Array[CustomTestField]
   
-  var dtlAutEnvironment: ShallowReference = js.native
+  var dtlAutEnvironment: ShallowReference
   
-  var dtlTestEnvironment: ShallowReference = js.native
+  var dtlTestEnvironment: ShallowReference
   
-  var dueDate: String = js.native
+  var dueDate: String
   
-  var environmentDetails: DtlEnvironmentDetails = js.native
+  var environmentDetails: DtlEnvironmentDetails
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var filter: RunFilter = js.native
+  var filter: RunFilter
   
-  var iteration: String = js.native
+  var iteration: String
   
-  var name: String = js.native
+  var name: String
   
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
-  var plan: ShallowReference = js.native
+  var plan: ShallowReference
   
-  var pointIds: js.Array[Double] = js.native
+  var pointIds: js.Array[Double]
   
-  var releaseEnvironmentUri: String = js.native
+  var releaseEnvironmentUri: String
   
-  var releaseUri: String = js.native
+  var releaseUri: String
   
-  var runTimeout: js.Any = js.native
+  var runTimeout: js.Any
   
-  var sourceWorkflow: String = js.native
+  var sourceWorkflow: String
   
-  var startDate: String = js.native
+  var startDate: String
   
-  var state: String = js.native
+  var state: String
   
-  var testConfigurationsMapping: String = js.native
+  var testConfigurationsMapping: String
   
-  var testEnvironmentId: String = js.native
+  var testEnvironmentId: String
   
-  var testSettings: ShallowReference = js.native
+  var testSettings: ShallowReference
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object RunCreateModel {
   

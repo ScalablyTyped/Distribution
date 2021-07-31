@@ -2,14 +2,12 @@ package typings.jaegerClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gauge extends StObject {
   
   // Update the gauge to the value passed in.
-  def update(value: Double): Unit = js.native
+  def update(value: Double): Unit
 }
 object Gauge {
   

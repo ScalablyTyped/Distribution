@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object athena {
@@ -33,6 +32,10 @@ object athena {
   /* static members */
   object Database {
     
+    @JSImport("@pulumi/aws", "athena.Database")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Database resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -42,26 +45,21 @@ object athena {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "athena.Database.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.databaseMod.Database = js.native
-    @JSImport("@pulumi/aws", "athena.Database.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.databaseMod.Database = js.native
-    @JSImport("@pulumi/aws", "athena.Database.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DatabaseState): typings.pulumiAws.databaseMod.Database = js.native
-    @JSImport("@pulumi/aws", "athena.Database.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DatabaseState, opts: CustomResourceOptions): typings.pulumiAws.databaseMod.Database = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.databaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.databaseMod.Database]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.databaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.databaseMod.Database]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DatabaseState): typings.pulumiAws.databaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.databaseMod.Database]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DatabaseState, opts: CustomResourceOptions): typings.pulumiAws.databaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.databaseMod.Database]
     
     /**
       * Returns true if the given object is an instance of Database.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "athena.Database.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/database.Database */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/database.Database */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/athena/database.Database */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "athena.NamedQuery")
@@ -81,6 +79,10 @@ object athena {
   /* static members */
   object NamedQuery {
     
+    @JSImport("@pulumi/aws", "athena.NamedQuery")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NamedQuery resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -90,26 +92,21 @@ object athena {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "athena.NamedQuery.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.namedQueryMod.NamedQuery = js.native
-    @JSImport("@pulumi/aws", "athena.NamedQuery.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.namedQueryMod.NamedQuery = js.native
-    @JSImport("@pulumi/aws", "athena.NamedQuery.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NamedQueryState): typings.pulumiAws.namedQueryMod.NamedQuery = js.native
-    @JSImport("@pulumi/aws", "athena.NamedQuery.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NamedQueryState, opts: CustomResourceOptions): typings.pulumiAws.namedQueryMod.NamedQuery = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.namedQueryMod.NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.namedQueryMod.NamedQuery]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.namedQueryMod.NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.namedQueryMod.NamedQuery]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NamedQueryState): typings.pulumiAws.namedQueryMod.NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.namedQueryMod.NamedQuery]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NamedQueryState, opts: CustomResourceOptions): typings.pulumiAws.namedQueryMod.NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.namedQueryMod.NamedQuery]
     
     /**
       * Returns true if the given object is an instance of NamedQuery.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "athena.NamedQuery.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/namedQuery.NamedQuery */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/namedQuery.NamedQuery */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/athena/namedQuery.NamedQuery */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "athena.Workgroup")
@@ -125,11 +122,15 @@ object athena {
       */
     def this(name: String) = this()
     def this(name: String, args: WorkgroupArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: WorkgroupArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Workgroup {
+    
+    @JSImport("@pulumi/aws", "athena.Workgroup")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Workgroup resource's state with the given name, ID, and optional extra
@@ -140,25 +141,20 @@ object athena {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "athena.Workgroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.workgroupMod.Workgroup = js.native
-    @JSImport("@pulumi/aws", "athena.Workgroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.workgroupMod.Workgroup = js.native
-    @JSImport("@pulumi/aws", "athena.Workgroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkgroupState): typings.pulumiAws.workgroupMod.Workgroup = js.native
-    @JSImport("@pulumi/aws", "athena.Workgroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkgroupState, opts: CustomResourceOptions): typings.pulumiAws.workgroupMod.Workgroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.workgroupMod.Workgroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workgroupMod.Workgroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.workgroupMod.Workgroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workgroupMod.Workgroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkgroupState): typings.pulumiAws.workgroupMod.Workgroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workgroupMod.Workgroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkgroupState, opts: CustomResourceOptions): typings.pulumiAws.workgroupMod.Workgroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workgroupMod.Workgroup]
     
     /**
       * Returns true if the given object is an instance of Workgroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "athena.Workgroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/workgroup.Workgroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/workgroup.Workgroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/athena/workgroup.Workgroup */ Boolean]
   }
 }

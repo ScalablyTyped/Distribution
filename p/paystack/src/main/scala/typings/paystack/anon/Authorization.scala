@@ -3,19 +3,17 @@ package typings.paystack.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authorization extends StObject {
   
-  var authorization: String = js.native
+  var authorization: String
   
-  var customer: String = js.native
+  var customer: String
   
-  var plan: String = js.native
+  var plan: String
   
-  var start_date: js.UndefOr[Date] = js.native
+  var start_date: js.UndefOr[Date] = js.undefined
 }
 object Authorization {
   

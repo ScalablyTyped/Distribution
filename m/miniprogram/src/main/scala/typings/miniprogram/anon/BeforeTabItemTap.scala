@@ -5,31 +5,29 @@ import typings.miniprogram.OnPullDownRefresh
 import typings.miniprogram.OnTabItemTap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeforeTabItemTap extends StObject {
   
-  var beforeTabItemTap: js.UndefOr[EmptyFn] = js.native
+  var beforeTabItemTap: js.UndefOr[EmptyFn] = js.undefined
   
-  var onBack: js.UndefOr[EmptyFn] = js.native
+  var onBack: js.UndefOr[EmptyFn] = js.undefined
   
-  var onKeyboardHeight: js.UndefOr[EmptyFn] = js.native
+  var onKeyboardHeight: js.UndefOr[EmptyFn] = js.undefined
   
-  var onOptionMenuClick: js.UndefOr[EmptyFn] = js.native
+  var onOptionMenuClick: js.UndefOr[EmptyFn] = js.undefined
   
-  var onPopMenuClick: js.UndefOr[EmptyFn] = js.native
+  var onPopMenuClick: js.UndefOr[EmptyFn] = js.undefined
   
-  var onPullDownRefresh: js.UndefOr[OnPullDownRefresh] = js.native
+  var onPullDownRefresh: js.UndefOr[OnPullDownRefresh] = js.undefined
   
-  var onPullIntercept: js.UndefOr[EmptyFn] = js.native
+  var onPullIntercept: js.UndefOr[EmptyFn] = js.undefined
   
-  var onResize: js.UndefOr[js.Function1[/* opts */ SizeWindowHeight, Unit]] = js.native
+  var onResize: js.UndefOr[js.Function1[/* opts */ SizeWindowHeight, Unit]] = js.undefined
   
-  var onTabItemTap: js.UndefOr[OnTabItemTap] = js.native
+  var onTabItemTap: js.UndefOr[OnTabItemTap] = js.undefined
   
-  var onTitleClick: js.UndefOr[EmptyFn] = js.native
+  var onTitleClick: js.UndefOr[EmptyFn] = js.undefined
 }
 object BeforeTabItemTap {
   

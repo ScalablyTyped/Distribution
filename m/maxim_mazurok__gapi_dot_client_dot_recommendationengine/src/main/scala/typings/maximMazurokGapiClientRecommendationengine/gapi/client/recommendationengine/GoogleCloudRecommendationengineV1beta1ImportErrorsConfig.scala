@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1ImportErrorsConfig extends StObject {
   
   /**
     * Google Cloud Storage path for import errors. This must be an empty, existing Cloud Storage bucket. Import errors will be written to a file in this bucket, one per line, as a
     * JSON-encoded `google.rpc.Status` message.
     */
-  var gcsPrefix: js.UndefOr[String] = js.native
+  var gcsPrefix: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1ImportErrorsConfig {
   

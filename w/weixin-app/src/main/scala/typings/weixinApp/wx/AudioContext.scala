@@ -2,35 +2,33 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 媒体-----音频组件控制
 /**
   * audioContext 通过 audioId 跟一个 <audio/> 组件绑定，通过它可以操作对应的 <audio/> 组件。
   */
-@js.native
 trait AudioContext extends StObject {
   
   /**
     * 暂停
     */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /**
     * 播放
     */
-  def play(): Unit = js.native
+  def play(): Unit
   
   /**
     * 跳转到指定位置，单位 s
     */
-  def seek(position: Double): Unit = js.native
+  def seek(position: Double): Unit
   
   /**
     * 音频的地址
     */
-  def setSrc(src: String): Unit = js.native
+  def setSrc(src: String): Unit
 }
 object AudioContext {
   

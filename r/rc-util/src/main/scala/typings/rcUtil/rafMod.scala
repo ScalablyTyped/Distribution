@@ -2,16 +2,15 @@ package typings.rcUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rafMod {
   
   object default {
     
-    @JSImport("rc-util/lib/raf", JSImport.Default)
-    @js.native
-    def apply(callback: js.Function0[Unit]): Double = js.native
+    @scala.inline
+    def apply(callback: js.Function0[Unit]): Double = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
     @JSImport("rc-util/lib/raf", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native

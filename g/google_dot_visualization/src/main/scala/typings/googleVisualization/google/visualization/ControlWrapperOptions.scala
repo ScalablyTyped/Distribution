@@ -2,19 +2,17 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControlWrapperOptions extends StObject {
   
-  var containerId: String = js.native
+  var containerId: String
   
-  var controlType: String = js.native
+  var controlType: String
   
-  var options: js.UndefOr[js.Object] = js.native
+  var options: js.UndefOr[js.Object] = js.undefined
   
-  var state: js.UndefOr[js.Object] = js.native
+  var state: js.UndefOr[js.Object] = js.undefined
 }
 object ControlWrapperOptions {
   

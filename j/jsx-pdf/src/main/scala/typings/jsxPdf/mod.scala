@@ -27,10 +27,13 @@ import typings.pdfmake.interfacesMod.Style
 import typings.pdfmake.interfacesMod.TDocumentDefinitions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("jsx-pdf", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentStack, 'stack'>> */
   object Fragment {
@@ -222,9 +225,8 @@ object mod {
     def unbreakable_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unbreakable")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("jsx-pdf", "renderPdf")
-  @js.native
-  def renderPdf(jsx: Element): TDocumentDefinitions = js.native
+  @scala.inline
+  def renderPdf(jsx: Element): TDocumentDefinitions = ^.asInstanceOf[js.Dynamic].applyDynamic("renderPdf")(jsx.asInstanceOf[js.Any]).asInstanceOf[TDocumentDefinitions]
   
   object global {
     
@@ -239,18 +241,16 @@ object mod {
             Child
           ])
       
-      type Ele[Props] = ElementChildrenAttribute with Props
+      type Ele[Props] = ElementChildrenAttribute & Props
       
       type EleNoChidlren[Props] = Props
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait Element extends StObject
       
-      @js.native
       trait ElementChildrenAttribute extends StObject {
         
-        var children: DynamicChild = js.native
+        var children: DynamicChild
       }
       object ElementChildrenAttribute {
         
@@ -274,40 +274,39 @@ object mod {
         }
       }
       
-      @js.native
       trait IntrinsicElements extends StObject {
         
-        var cell: Ele[Element] = js.native
+        var cell: Ele[Element]
         
-        var column: Elewidthnumberstring = js.native
+        var column: Elewidthnumberstring
         
-        var columns: EleOmitContentColumnscolu = js.native
+        var columns: EleOmitContentColumnscolu
         
-        var content: typings.jsxPdf.anon.Ele = js.native
+        var content: typings.jsxPdf.anon.Ele
         
-        var document: EleOmitTDocumentDefinitio = js.native
+        var document: EleOmitTDocumentDefinitio
         
-        var footer: typings.jsxPdf.anon.Ele = js.native
+        var footer: typings.jsxPdf.anon.Ele
         
-        var header: typings.jsxPdf.anon.Ele = js.native
+        var header: typings.jsxPdf.anon.Ele
         
-        var image: EleNoChidlrenOmitContentI = js.native
+        var image: EleNoChidlrenOmitContentI
         
-        var ol: EleOmitContentOrderedList = js.native
+        var ol: EleOmitContentOrderedList
         
-        var qr: EleNoChidlrenOmitContentQ = js.native
+        var qr: EleNoChidlrenOmitContentQ
         
-        var row: Ele[Element] = js.native
+        var row: Ele[Element]
         
-        var stack: EleOmitContentStackstack = js.native
+        var stack: EleOmitContentStackstack
         
-        var svg: EleNoChidlren[Content] = js.native
+        var svg: EleNoChidlren[Content]
         
-        var table: EleOmitContentTabletableO = js.native
+        var table: EleOmitContentTabletableO
         
-        var text: EleOmitContentTexttext = js.native
+        var text: EleOmitContentTexttext
         
-        var ul: EleOmitContentUnorderedLi = js.native
+        var ul: EleOmitContentUnorderedLi
       }
       object IntrinsicElements {
         

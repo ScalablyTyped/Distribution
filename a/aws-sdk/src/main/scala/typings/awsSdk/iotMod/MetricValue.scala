@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricValue extends StObject {
   
   /**
     * If the comparisonOperator calls for a set of CIDRs, use this to specify that set to be compared with the metric.
     */
-  var cidrs: js.UndefOr[Cidrs] = js.native
+  var cidrs: js.UndefOr[Cidrs] = js.undefined
   
   /**
     * If the comparisonOperator calls for a numeric value, use this to specify that numeric value to be compared with the metric.
     */
-  var count: js.UndefOr[UnsignedLong] = js.native
+  var count: js.UndefOr[UnsignedLong] = js.undefined
   
   /**
     * If the comparisonOperator calls for a set of ports, use this to specify that set to be compared with the metric.
     */
-  var ports: js.UndefOr[Ports] = js.native
+  var ports: js.UndefOr[Ports] = js.undefined
 }
 object MetricValue {
   

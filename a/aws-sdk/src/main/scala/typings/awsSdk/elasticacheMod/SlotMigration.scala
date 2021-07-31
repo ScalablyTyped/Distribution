@@ -2,16 +2,14 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotMigration extends StObject {
   
   /**
     * The percentage of the slot migration that is complete.
     */
-  var ProgressPercentage: js.UndefOr[Double] = js.native
+  var ProgressPercentage: js.UndefOr[Double] = js.undefined
 }
 object SlotMigration {
   

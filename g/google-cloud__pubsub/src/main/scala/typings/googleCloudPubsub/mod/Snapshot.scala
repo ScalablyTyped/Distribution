@@ -2,7 +2,6 @@ package typings.googleCloudPubsub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/pubsub", "Snapshot")
@@ -15,7 +14,10 @@ class Snapshot protected ()
 /* static members */
 object Snapshot {
   
-  @JSImport("@google-cloud/pubsub", "Snapshot.formatName_")
+  @JSImport("@google-cloud/pubsub", "Snapshot")
   @js.native
-  def formatName_(projectId: String, name: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def formatName_(projectId: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(projectId.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
 }

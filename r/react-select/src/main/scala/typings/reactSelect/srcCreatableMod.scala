@@ -13,10 +13,13 @@ import typings.reactSelect.typesMod.OptionsType
 import typings.reactSelect.typesMod.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcCreatableMod {
+  
+  @JSImport("react-select/src/Creatable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-select/src/Creatable", JSImport.Default)
   @js.native
@@ -59,7 +62,7 @@ object srcCreatableMod {
     
     def onChange(newValue: ValueType[OptionType], actionMeta: ActionMeta[OptionType]): Unit = js.native
     
-    var select: Ref[_] = js.native
+    var select: Ref[js.Any] = js.native
   }
   /* static members */
   object Creatable {
@@ -79,28 +82,26 @@ object srcCreatableMod {
   @js.native
   val defaultProps: Props[js.Any] = js.native
   
-  @JSImport("react-select/src/Creatable", "makeCreatableSelect")
-  @js.native
-  def makeCreatableSelect(SelectComponent: ComponentType[_]): Creatable[_] = js.native
+  @scala.inline
+  def makeCreatableSelect(SelectComponent: ComponentType[js.Any]): Creatable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCreatableSelect")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[Creatable[js.Any]]
   
-  @js.native
   trait CreatableProps[OptionType /* <: OptionTypeBase */] extends StObject {
     
     /* Allow options to be created while the `isLoading` prop is true. Useful to
       prevent the "create new ..." option being displayed while async results are
       still being loaded. */
-    var allowCreateWhileLoading: js.UndefOr[Boolean] = js.native
+    var allowCreateWhileLoading: js.UndefOr[Boolean] = js.undefined
     
     /* Sets the position of the createOption element in your options list. Defaults to 'last' */
-    var createOptionPosition: js.UndefOr[first | last] = js.native
+    var createOptionPosition: js.UndefOr[first | last] = js.undefined
     
     /* Gets the label for the "create new ..." option in the menu. Is given the
       current input value. */
-    var formatCreateLabel: js.UndefOr[js.Function1[/* inputValue */ String, ReactNode]] = js.native
+    var formatCreateLabel: js.UndefOr[js.Function1[/* inputValue */ String, ReactNode]] = js.undefined
     
     /* Returns the data for the new option when it is created. Used to display the
       value, and is passed to `onChange`. */
-    var getNewOptionData: js.UndefOr[js.Function2[/* inputValue */ String, /* optionLabel */ ReactNode, OptionType]] = js.native
+    var getNewOptionData: js.UndefOr[js.Function2[/* inputValue */ String, /* optionLabel */ ReactNode, OptionType]] = js.undefined
     
     /* Determines whether the "create new ..." option should be displayed based on
       the current input value, select value and options array. */
@@ -111,12 +112,12 @@ object srcCreatableMod {
           /* options */ OptionsType[OptionType] | GroupedOptionsType[OptionType], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     /* If provided, this will be called with the input value when a new option is
       created, and `onChange` will **not** be called. Use this when you need more
       control over what happens when new options are created. */
-    var onCreateOption: js.UndefOr[js.Function1[/* inputValue */ String, Unit]] = js.native
+    var onCreateOption: js.UndefOr[js.Function1[/* inputValue */ String, Unit]] = js.undefined
   }
   object CreatableProps {
     
@@ -127,7 +128,7 @@ object srcCreatableMod {
     }
     
     @scala.inline
-    implicit class CreatablePropsMutableBuilder[Self <: CreatableProps[_], OptionType /* <: OptionTypeBase */] (val x: Self with CreatableProps[OptionType]) extends AnyVal {
+    implicit class CreatablePropsMutableBuilder[Self <: CreatableProps[?], OptionType /* <: OptionTypeBase */] (val x: Self & CreatableProps[OptionType]) extends AnyVal {
       
       @scala.inline
       def setAllowCreateWhileLoading(value: Boolean): Self = StObject.set(x, "allowCreateWhileLoading", value.asInstanceOf[js.Any])
@@ -169,14 +170,24 @@ object srcCreatableMod {
     }
   }
   
-  type Props[OptionType /* <: OptionTypeBase */] = typings.reactSelect.selectMod.Props[OptionType] with CreatableProps[OptionType]
+  trait Props[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with typings.reactSelect.selectMod.Props[OptionType]
+       with CreatableProps[OptionType]
+  object Props {
+    
+    @scala.inline
+    def apply[OptionType /* <: OptionTypeBase */](): Props[OptionType] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Props[OptionType]]
+    }
+  }
   
-  @js.native
   trait State[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var newOption: js.UndefOr[OptionType] = js.native
+    var newOption: js.UndefOr[OptionType] = js.undefined
     
-    var options: OptionsType[OptionType] = js.native
+    var options: OptionsType[OptionType]
   }
   object State {
     
@@ -187,7 +198,7 @@ object srcCreatableMod {
     }
     
     @scala.inline
-    implicit class StateMutableBuilder[Self <: State[_], OptionType /* <: OptionTypeBase */] (val x: Self with State[OptionType]) extends AnyVal {
+    implicit class StateMutableBuilder[Self <: State[?], OptionType /* <: OptionTypeBase */] (val x: Self & State[OptionType]) extends AnyVal {
       
       @scala.inline
       def setNewOption(value: OptionType): Self = StObject.set(x, "newOption", value.asInstanceOf[js.Any])

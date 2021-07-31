@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountDetail extends StObject {
   
   /**
     * The AWS account ID for the account.
     */
-  var accountId: string = js.native
+  var accountId: string
   
   /**
     * The email address for the account.
     */
-  var email: string = js.native
+  var email: string
 }
 object AccountDetail {
   

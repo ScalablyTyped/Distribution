@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPrincipalPoliciesRequest extends StObject {
   
   /**
     * Specifies the order for results. If true, results are returned in ascending creation order.
     */
-  var ascendingOrder: js.UndefOr[AscendingOrder] = js.native
+  var ascendingOrder: js.UndefOr[AscendingOrder] = js.undefined
   
   /**
     * The marker for the next set of results.
     */
-  var marker: js.UndefOr[Marker] = js.native
+  var marker: js.UndefOr[Marker] = js.undefined
   
   /**
     * The result page size.
     */
-  var pageSize: js.UndefOr[PageSize] = js.native
+  var pageSize: js.UndefOr[PageSize] = js.undefined
   
   /**
     * The principal. Valid principals are CertificateArn (arn:aws:iot:region:accountId:cert/certificateId), thingGroupArn (arn:aws:iot:region:accountId:thinggroup/groupName) and CognitoId (region:id).
     */
-  var principal: Principal = js.native
+  var principal: Principal
 }
 object ListPrincipalPoliciesRequest {
   

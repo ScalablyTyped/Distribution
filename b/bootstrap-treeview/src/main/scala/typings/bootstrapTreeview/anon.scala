@@ -2,21 +2,19 @@ package typings.bootstrapTreeview
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Checked extends StObject {
     
-    var checked: Boolean = js.native
+    var checked: Boolean
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var expanded: Boolean = js.native
+    var expanded: Boolean
     
-    var selected: Boolean = js.native
+    var selected: Boolean
   }
   object Checked {
     

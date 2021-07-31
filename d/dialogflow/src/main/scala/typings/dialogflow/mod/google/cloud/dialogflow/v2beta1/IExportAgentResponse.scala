@@ -3,18 +3,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an ExportAgentResponse. */
-@js.native
 trait IExportAgentResponse extends StObject {
   
   /** ExportAgentResponse agentContent */
-  var agentContent: js.UndefOr[Uint8Array | String | Null] = js.native
+  var agentContent: js.UndefOr[Uint8Array | String | Null] = js.undefined
   
   /** ExportAgentResponse agentUri */
-  var agentUri: js.UndefOr[String | Null] = js.native
+  var agentUri: js.UndefOr[String | Null] = js.undefined
 }
 object IExportAgentResponse {
   

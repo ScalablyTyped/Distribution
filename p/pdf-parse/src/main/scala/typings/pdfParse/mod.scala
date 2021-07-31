@@ -3,26 +3,26 @@ package typings.pdfParse
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pdf-parse", JSImport.Namespace)
-  @js.native
-  def apply(dataBuffer: Buffer): js.Promise[Result] = js.native
-  @JSImport("pdf-parse", JSImport.Namespace)
-  @js.native
-  def apply(dataBuffer: Buffer, options: Options): js.Promise[Result] = js.native
+  @scala.inline
+  def apply(dataBuffer: Buffer): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(dataBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def apply(dataBuffer: Buffer, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(dataBuffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
+  @JSImport("pdf-parse", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var pagerender: js.UndefOr[js.Function1[/* pageData */ js.Any, String]] = js.native
+    var pagerender: js.UndefOr[js.Function1[/* pageData */ js.Any, String]] = js.undefined
     
-    var version: js.UndefOr[Version] = js.native
+    var version: js.UndefOr[Version] = js.undefined
   }
   object Options {
     
@@ -55,20 +55,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var info: js.Any = js.native
+    var info: js.Any
     
-    var metadata: js.Any = js.native
+    var metadata: js.Any
     
-    var numpages: Double = js.native
+    var numpages: Double
     
-    var numrender: Double = js.native
+    var numrender: Double
     
-    var text: String = js.native
+    var text: String
     
-    var version: Version = js.native
+    var version: Version
   }
   object Result {
     

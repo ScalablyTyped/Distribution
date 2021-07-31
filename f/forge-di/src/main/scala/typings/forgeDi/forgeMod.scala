@@ -7,14 +7,15 @@ import typings.forgeDi.inspectorMod.Inspector
 import typings.forgeDi.modeMod.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forgeMod {
   
   @JSImport("forge-di/dist/Forge", JSImport.Default)
   @js.native
-  class default () extends Forge {
+  class default ()
+    extends StObject
+       with Forge {
     def this(config: Config) = this()
   }
   
@@ -26,9 +27,9 @@ object forgeMod {
     var bindings: StringDictionary[js.Array[typings.forgeDi.bindingMod.default]] = js.native
     
     def get[T](name: String): T = js.native
-    def get[T](name: String, hint: js.UndefOr[scala.Nothing], args: Arguments): T = js.native
     def get[T](name: String, hint: js.Any): T = js.native
     def get[T](name: String, hint: js.Any, args: Arguments): T = js.native
+    def get[T](name: String, hint: Unit, args: Arguments): T = js.native
     
     def getAll[T](name: String): js.Array[T] = js.native
     def getAll[T](name: String, args: Arguments): js.Array[T] = js.native
@@ -36,9 +37,9 @@ object forgeMod {
     var getMatchingBindings: js.Any = js.native
     
     def getOne[T](name: String): T = js.native
-    def getOne[T](name: String, hint: js.UndefOr[scala.Nothing], args: Arguments): T = js.native
     def getOne[T](name: String, hint: js.Any): T = js.native
     def getOne[T](name: String, hint: js.Any, args: Arguments): T = js.native
+    def getOne[T](name: String, hint: Unit, args: Arguments): T = js.native
     
     def inspect(): String = js.native
     

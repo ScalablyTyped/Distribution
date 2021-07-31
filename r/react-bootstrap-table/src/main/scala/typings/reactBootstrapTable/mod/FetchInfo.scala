@@ -2,16 +2,14 @@ package typings.reactBootstrapTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FetchInfo extends StObject {
   
   /**
     * Total number of rows that match the current table filter/search properties.
     */
-  var dataTotalSize: Double = js.native
+  var dataTotalSize: Double
 }
 object FetchInfo {
   

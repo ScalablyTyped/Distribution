@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.angularCommon.anon.CVE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localesKeaMod extends Shortcut {

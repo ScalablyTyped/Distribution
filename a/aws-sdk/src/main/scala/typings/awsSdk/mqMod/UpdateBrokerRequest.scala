@@ -2,56 +2,54 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBrokerRequest extends StObject {
   
   /**
     * The authentication strategy used to secure the broker.
     */
-  var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.native
+  var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.undefined
   
   /**
     * Enables automatic upgrades to new minor versions for brokers, as Apache releases the versions. The automatic upgrades occur during the maintenance window of the broker or after a manual broker reboot.
     */
-  var AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.native
+  var AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.undefined
   
   /**
     * The unique ID that Amazon MQ generates for the broker.
     */
-  var BrokerId: string = js.native
+  var BrokerId: string
   
   /**
     * A list of information about the configuration.
     */
-  var Configuration: js.UndefOr[ConfigurationId] = js.native
+  var Configuration: js.UndefOr[ConfigurationId] = js.undefined
   
   /**
     * The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
     */
-  var EngineVersion: js.UndefOr[string] = js.native
+  var EngineVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The host instance type of the broker to upgrade to. For a list of supported instance types, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide//broker.html#broker-instance-types
     */
-  var HostInstanceType: js.UndefOr[string] = js.native
+  var HostInstanceType: js.UndefOr[string] = js.undefined
   
   /**
     * The metadata of the LDAP server used to authenticate and authorize connections to the broker.
     */
-  var LdapServerMetadata: js.UndefOr[LdapServerMetadataInput] = js.native
+  var LdapServerMetadata: js.UndefOr[LdapServerMetadataInput] = js.undefined
   
   /**
     * Enables Amazon CloudWatch logging for brokers.
     */
-  var Logs: js.UndefOr[typings.awsSdk.mqMod.Logs] = js.native
+  var Logs: js.UndefOr[typings.awsSdk.mqMod.Logs] = js.undefined
   
   /**
     * The list of security groups (1 minimum, 5 maximum) that authorizes connections to brokers.
     */
-  var SecurityGroups: js.UndefOr[listOfString] = js.native
+  var SecurityGroups: js.UndefOr[listOfString] = js.undefined
 }
 object UpdateBrokerRequest {
   

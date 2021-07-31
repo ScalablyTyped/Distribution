@@ -4,22 +4,23 @@ import typings.reactNativeWindowsCli.anon.Verbose
 import typings.reactNativeWindowsCli.mod.GenerateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generatorWindowsMod {
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/generator-windows", "copyProjectTemplateAndReplace")
+  @JSImport("@react-native-windows/cli/lib-commonjs/generator-windows", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def copyProjectTemplateAndReplace(
     srcRootPath: String,
     destPath: String,
     newProjectName: String,
     namespace: String,
     options: GenerateOptions
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyProjectTemplateAndReplace")(srcRootPath.asInstanceOf[js.Any], destPath.asInstanceOf[js.Any], newProjectName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/generator-windows", "installDependencies")
-  @js.native
-  def installDependencies(options: Verbose): Unit = js.native
+  @scala.inline
+  def installDependencies(options: Verbose): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installDependencies")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

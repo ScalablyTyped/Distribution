@@ -5,14 +5,15 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("cropperjs", JSImport.Default)
   @js.native
-  class default protected () extends Cropper {
+  class default protected ()
+    extends StObject
+       with Cropper {
     def this(element: HTMLCanvasElement) = this()
     def this(element: HTMLImageElement) = this()
     def this(element: HTMLCanvasElement, options: Options) = this()
@@ -20,14 +21,16 @@ object mod {
   }
   object default {
     
-    /* static member */
-    @JSImport("cropperjs", "default.noConflict")
+    @JSImport("cropperjs", JSImport.Default)
     @js.native
-    def noConflict(): Cropper = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("cropperjs", "default.setDefaults")
-    @js.native
-    def setDefaults(options: Options): Unit = js.native
+    @scala.inline
+    def noConflict(): Cropper = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Cropper]
+    
+    /* static member */
+    @scala.inline
+    def setDefaults(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

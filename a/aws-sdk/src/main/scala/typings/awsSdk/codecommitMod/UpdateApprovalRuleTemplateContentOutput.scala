@@ -2,13 +2,11 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApprovalRuleTemplateContentOutput extends StObject {
   
-  var approvalRuleTemplate: ApprovalRuleTemplate = js.native
+  var approvalRuleTemplate: ApprovalRuleTemplate
 }
 object UpdateApprovalRuleTemplateContentOutput {
   

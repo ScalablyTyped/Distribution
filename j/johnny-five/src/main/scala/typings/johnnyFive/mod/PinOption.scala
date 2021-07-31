@@ -2,17 +2,15 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PinOption extends StObject {
   
-  var id: js.UndefOr[Double | String] = js.native
+  var id: js.UndefOr[Double | String] = js.undefined
   
-  var pin: Double | String = js.native
+  var pin: Double | String
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PinOption {
   

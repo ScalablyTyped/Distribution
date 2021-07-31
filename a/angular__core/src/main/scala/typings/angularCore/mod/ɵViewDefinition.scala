@@ -2,47 +2,111 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ɵViewDefinition extends Definition[ViewDefinitionFactory] {
+trait ɵViewDefinition
+  extends StObject
+     with Definition[ViewDefinitionFactory] {
   
-  var bindingCount: Double = js.native
+  var bindingCount: Double
   
-  var flags: ɵViewFlags = js.native
+  var flags: ɵViewFlags
   
-  def handleEvent(view: ViewData, nodeIndex: Double, eventName: String, event: js.Any): Boolean = js.native
+  def handleEvent(view: ViewData, nodeIndex: Double, eventName: String, event: js.Any): Boolean
   @JSName("handleEvent")
-  var handleEvent_Original: ViewHandleEventFn = js.native
+  var handleEvent_Original: ViewHandleEventFn
   
-  var lastRenderRootNode: NodeDef | Null = js.native
+  var lastRenderRootNode: NodeDef | Null
   
   /** aggregated NodeFlags for all nodes **/
-  var nodeFlags: ɵNodeFlags = js.native
+  var nodeFlags: ɵNodeFlags
   
   /**
     * Binary or of all query ids that are matched by one of the nodes.
     * This includes query ids from templates as well.
     * Used as a bloom filter.
     */
-  var nodeMatchedQueries: Double = js.native
+  var nodeMatchedQueries: Double
   
   /**
     * Order: Depth first.
     * Especially providers are before elements / anchors.
     */
-  var nodes: js.Array[NodeDef] = js.native
+  var nodes: js.Array[NodeDef]
   
-  var outputCount: Double = js.native
+  var outputCount: Double
   
-  var rootNodeFlags: ɵNodeFlags = js.native
+  var rootNodeFlags: ɵNodeFlags
   
-  def updateDirectives(check: NodeCheckFn, view: ViewData): Unit = js.native
+  def updateDirectives(check: NodeCheckFn, view: ViewData): Unit
   @JSName("updateDirectives")
-  var updateDirectives_Original: ViewUpdateFn = js.native
+  var updateDirectives_Original: ViewUpdateFn
   
-  def updateRenderer(check: NodeCheckFn, view: ViewData): Unit = js.native
+  def updateRenderer(check: NodeCheckFn, view: ViewData): Unit
   @JSName("updateRenderer")
-  var updateRenderer_Original: ViewUpdateFn = js.native
+  var updateRenderer_Original: ViewUpdateFn
+}
+object ɵViewDefinition {
+  
+  @scala.inline
+  def apply(
+    bindingCount: Double,
+    flags: ɵViewFlags,
+    handleEvent: (/* view */ ViewData, /* nodeIndex */ Double, /* eventName */ String, /* event */ js.Any) => Boolean,
+    nodeFlags: ɵNodeFlags,
+    nodeMatchedQueries: Double,
+    nodes: js.Array[NodeDef],
+    outputCount: Double,
+    rootNodeFlags: ɵNodeFlags,
+    updateDirectives: (/* check */ NodeCheckFn, /* view */ ViewData) => Unit,
+    updateRenderer: (/* check */ NodeCheckFn, /* view */ ViewData) => Unit
+  ): ɵViewDefinition = {
+    val __obj = js.Dynamic.literal(bindingCount = bindingCount.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], handleEvent = js.Any.fromFunction4(handleEvent), nodeFlags = nodeFlags.asInstanceOf[js.Any], nodeMatchedQueries = nodeMatchedQueries.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], outputCount = outputCount.asInstanceOf[js.Any], rootNodeFlags = rootNodeFlags.asInstanceOf[js.Any], updateDirectives = js.Any.fromFunction2(updateDirectives), updateRenderer = js.Any.fromFunction2(updateRenderer), factory = null, lastRenderRootNode = null)
+    __obj.asInstanceOf[ɵViewDefinition]
+  }
+  
+  @scala.inline
+  implicit class ɵViewDefinitionMutableBuilder[Self <: ɵViewDefinition] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setBindingCount(value: Double): Self = StObject.set(x, "bindingCount", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFlags(value: ɵViewFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHandleEvent(
+      value: (/* view */ ViewData, /* nodeIndex */ Double, /* eventName */ String, /* event */ js.Any) => Boolean
+    ): Self = StObject.set(x, "handleEvent", js.Any.fromFunction4(value))
+    
+    @scala.inline
+    def setLastRenderRootNode(value: NodeDef): Self = StObject.set(x, "lastRenderRootNode", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLastRenderRootNodeNull: Self = StObject.set(x, "lastRenderRootNode", null)
+    
+    @scala.inline
+    def setNodeFlags(value: ɵNodeFlags): Self = StObject.set(x, "nodeFlags", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNodeMatchedQueries(value: Double): Self = StObject.set(x, "nodeMatchedQueries", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNodes(value: js.Array[NodeDef]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNodesVarargs(value: NodeDef*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    
+    @scala.inline
+    def setOutputCount(value: Double): Self = StObject.set(x, "outputCount", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRootNodeFlags(value: ɵNodeFlags): Self = StObject.set(x, "rootNodeFlags", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUpdateDirectives(value: (/* check */ NodeCheckFn, /* view */ ViewData) => Unit): Self = StObject.set(x, "updateDirectives", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setUpdateRenderer(value: (/* check */ NodeCheckFn, /* view */ ViewData) => Unit): Self = StObject.set(x, "updateRenderer", js.Any.fromFunction2(value))
+  }
 }

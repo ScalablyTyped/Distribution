@@ -2,15 +2,13 @@ package typings.jstimezonedetect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Name extends StObject {
     
-    def name(): String = js.native
+    def name(): String
   }
   object Name {
     

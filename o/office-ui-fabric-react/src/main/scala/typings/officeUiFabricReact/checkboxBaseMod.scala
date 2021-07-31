@@ -7,7 +7,6 @@ import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxBaseMod {
@@ -40,6 +39,18 @@ object checkboxBaseMod {
     var _onRenderLabel: js.Any = js.native
     
     var _renderContent: js.Any = js.native
+    
+    /** Gets the current checked state. */
+    /* CompleteClass */
+    var checked: Boolean = js.native
+    
+    /** Sets focus to the checkbox. */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
+    
+    /** Gets the current indeterminate state. */
+    /* CompleteClass */
+    var indeterminate: Boolean = js.native
   }
   /* static members */
   object CheckboxBase {
@@ -54,18 +65,16 @@ object checkboxBaseMod {
     @scala.inline
     def defaultProps_=(x: ICheckboxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("office-ui-fabric-react/lib/components/Checkbox/Checkbox.base", "CheckboxBase.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: ReadonlyICheckboxProps, prevState: ReadonlyICheckboxState): ICheckboxState | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: ReadonlyICheckboxProps, prevState: ReadonlyICheckboxState): ICheckboxState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[ICheckboxState | Null]
   }
   
-  @js.native
   trait ICheckboxState extends StObject {
     
     /** Is true when Uncontrolled control is checked. */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
-    var isIndeterminate: js.UndefOr[Boolean] = js.native
+    var isIndeterminate: js.UndefOr[Boolean] = js.undefined
   }
   object ICheckboxState {
     

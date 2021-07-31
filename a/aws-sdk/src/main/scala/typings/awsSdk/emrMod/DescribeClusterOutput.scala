@@ -2,16 +2,14 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeClusterOutput extends StObject {
   
   /**
     * This output contains the details for the requested cluster.
     */
-  var Cluster: js.UndefOr[typings.awsSdk.emrMod.Cluster] = js.native
+  var Cluster: js.UndefOr[typings.awsSdk.emrMod.Cluster] = js.undefined
 }
 object DescribeClusterOutput {
   

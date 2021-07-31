@@ -4,25 +4,25 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** controls a pop-up menu. */
-@js.native
-trait XPopupMenu extends XMenu {
+trait XPopupMenu
+  extends StObject
+     with XMenu {
   
   /**
     * returns the menu default item.
     * @returns the ID of the default item.
     */
-  var DefaultItem: Double = js.native
+  var DefaultItem: Double
   
   /**
     * sets the state of the item to be checked or unchecked.
     * @param nItemId specifies the menu item identifier.
     * @param bCheck specifies if the item is checked ( `TRUE` ) or unchecked ( `FALSE` ).
     */
-  def checkItem(nItemId: Double, bCheck: Boolean): Unit = js.native
+  def checkItem(nItemId: Double, bCheck: Boolean): Unit
   
   /**
     * ends the execution of the {@link PopupMenu} .
@@ -30,7 +30,7 @@ trait XPopupMenu extends XMenu {
     * {@link com.sun.star.awt.XPopupMenu.execute()} will then return 0.
     * @see com.sun.star.awt.XPopupMenu.execute()
     */
-  def endExecute(): Unit = js.native
+  def endExecute(): Unit
   
   /**
     * executes the popup menu and returns the selected item or `0` , if cancelled.
@@ -39,7 +39,7 @@ trait XPopupMenu extends XMenu {
     * @param Direction the direction in which a popup menu will grow, as specified by one of the {@link PopupMenuDirection} constants.
     * @returns returns the selected item or `0` , if cancelled.
     */
-  def execute(Parent: XWindowPeer, Position: Rectangle, Direction: Double): Double = js.native
+  def execute(Parent: XWindowPeer, Position: Rectangle, Direction: Double): Double
   
   /**
     * retrieves the {@link KeyEvent} for the menu item.
@@ -49,26 +49,26 @@ trait XPopupMenu extends XMenu {
     * @param nItemId specifies the menu item identifier for which the {@link KeyEvent} should be retrieved.
     * @returns the {@link KeyEvent} struct assigned to the requested menu item.
     */
-  def getAcceleratorKeyEvent(nItemId: Double): KeyEvent = js.native
+  def getAcceleratorKeyEvent(nItemId: Double): KeyEvent
   
   /**
     * returns the menu default item.
     * @returns the ID of the default item.
     */
-  def getDefaultItem(): Double = js.native
+  def getDefaultItem(): Double
   
   /**
     * retrieves the image for the menu item.
     * @param nItemId specifies the menu item identifier for which the image should be retrieved.
     * @returns a XGraphic reference to the current image for the requested menu item.
     */
-  def getItemImage(nItemId: Double): XGraphic = js.native
+  def getItemImage(nItemId: Double): XGraphic
   
   /**
     * inserts a separator at the specified position.
     * @param nItemPos specifies the position where the menu separator will be inserted.
     */
-  def insertSeparator(nItemPos: Double): Unit = js.native
+  def insertSeparator(nItemPos: Double): Unit
   
   /**
     * queries if the {@link PopupMenu} is being.
@@ -78,14 +78,14 @@ trait XPopupMenu extends XMenu {
     * @returns `TRUE` if the {@link PopupMenu} is being executed, `FALSE` otherwise.
     * @see XPopupMenu.execute()
     */
-  def isInExecute(): Boolean = js.native
+  def isInExecute(): Boolean
   
   /**
     * returns whether the item is checked or unchecked.
     * @param nItemId specifies the menu item identifier.
     * @returns `TRUE` if the item is checked, `FALSE` otherwise.
     */
-  def isItemChecked(nItemId: Double): Boolean = js.native
+  def isItemChecked(nItemId: Double): Boolean
   
   /**
     * sets the {@link KeyEvent} for the menu item.
@@ -96,13 +96,13 @@ trait XPopupMenu extends XMenu {
     * @param nItemId specifies the menu item identifier for which the {@link KeyEvent} should be set.
     * @param aKeyEvent specifies the {@link KeyEvent} for the menu item.
     */
-  def setAcceleratorKeyEvent(nItemId: Double, aKeyEvent: KeyEvent): Unit = js.native
+  def setAcceleratorKeyEvent(nItemId: Double, aKeyEvent: KeyEvent): Unit
   
   /**
     * sets the menu default item.
     * @param nItemId specifies the menu item identifier.
     */
-  def setDefaultItem(nItemId: Double): Unit = js.native
+  def setDefaultItem(nItemId: Double): Unit
   
   /**
     * sets the image for the menu item.
@@ -110,7 +110,7 @@ trait XPopupMenu extends XMenu {
     * @param xGraphic specifies the image for the menu item.
     * @param bScale if `TRUE` , the image will be scaled to the standard size used internally by the implementation.
     */
-  def setItemImage(nItemId: Double, xGraphic: XGraphic, bScale: Boolean): Unit = js.native
+  def setItemImage(nItemId: Double, xGraphic: XGraphic, bScale: Boolean): Unit
 }
 object XPopupMenu {
   

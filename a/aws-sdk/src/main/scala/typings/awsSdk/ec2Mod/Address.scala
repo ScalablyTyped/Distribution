@@ -2,81 +2,79 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
   /**
     * The ID representing the allocation of the address for use with EC2-VPC.
     */
-  var AllocationId: js.UndefOr[String] = js.native
+  var AllocationId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID representing the association of the address with an instance in a VPC.
     */
-  var AssociationId: js.UndefOr[String] = js.native
+  var AssociationId: js.UndefOr[String] = js.undefined
   
   /**
     * The carrier IP address associated. This option is only available for network interfaces which reside in a subnet in a Wavelength Zone (for example an EC2 instance). 
     */
-  var CarrierIp: js.UndefOr[String] = js.native
+  var CarrierIp: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-owned IP address.
     */
-  var CustomerOwnedIp: js.UndefOr[String] = js.native
+  var CustomerOwnedIp: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the customer-owned address pool.
     */
-  var CustomerOwnedIpv4Pool: js.UndefOr[String] = js.native
+  var CustomerOwnedIpv4Pool: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether this Elastic IP address is for use with instances in EC2-Classic (standard) or instances in a VPC (vpc).
     */
-  var Domain: js.UndefOr[DomainType] = js.native
+  var Domain: js.UndefOr[DomainType] = js.undefined
   
   /**
     * The ID of the instance that the address is associated with (if any).
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the unique set of Availability Zones, Local Zones, or Wavelength Zones from which AWS advertises IP addresses. 
     */
-  var NetworkBorderGroup: js.UndefOr[String] = js.native
+  var NetworkBorderGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.native
+  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the AWS account that owns the network interface.
     */
-  var NetworkInterfaceOwnerId: js.UndefOr[String] = js.native
+  var NetworkInterfaceOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The private IP address associated with the Elastic IP address.
     */
-  var PrivateIpAddress: js.UndefOr[String] = js.native
+  var PrivateIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The Elastic IP address.
     */
-  var PublicIp: js.UndefOr[String] = js.native
+  var PublicIp: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of an address pool.
     */
-  var PublicIpv4Pool: js.UndefOr[String] = js.native
+  var PublicIpv4Pool: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags assigned to the Elastic IP address.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object Address {
   

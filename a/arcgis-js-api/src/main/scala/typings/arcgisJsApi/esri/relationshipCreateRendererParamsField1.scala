@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait relationshipCreateRendererParamsField1 extends Object {
+trait relationshipCreateRendererParamsField1
+  extends StObject
+     with Object {
   
   /**
     * The name of a numeric field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var field: String = js.native
+  var field: String
   
   /**
     * The label used to describe the field or variable in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum bound of values to visualize in the given field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum bound of values to visualize in the given field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of a numeric field used to normalize the given `field`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var normalizationField: js.UndefOr[String] = js.native
+  var normalizationField: js.UndefOr[String] = js.undefined
 }
 object relationshipCreateRendererParamsField1 {
   

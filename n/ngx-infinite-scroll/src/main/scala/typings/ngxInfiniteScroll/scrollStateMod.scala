@@ -2,19 +2,33 @@ package typings.ngxInfiniteScroll
 
 import typings.ngxInfiniteScroll.anon.TotalToScroll
 import typings.ngxInfiniteScroll.modelsMod.IScrollState
+import typings.ngxInfiniteScroll.modelsMod.IScrollerDistance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollStateMod {
   
   @JSImport("ngx-infinite-scroll/src/services/scroll-state", "ScrollState")
   @js.native
-  class ScrollState protected () extends IScrollState {
+  class ScrollState protected ()
+    extends StObject
+       with IScrollState {
     def this(hasTotalToScroll: TotalToScroll) = this()
     
     def isTriggeredScroll(totalToScroll: js.Any, isScrollingDown: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    var lastScrollPosition: Double = js.native
+    
+    /* CompleteClass */
+    var lastTotalToScroll: Double = js.native
+    
+    /* CompleteClass */
+    var totalToScroll: Double = js.native
+    
+    /* CompleteClass */
+    var triggered: IScrollerDistance = js.native
     
     def updateScroll(scrolledUntilNow: Double, totalToScroll: Double): Unit = js.native
     

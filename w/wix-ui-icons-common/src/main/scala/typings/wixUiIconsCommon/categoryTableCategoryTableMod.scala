@@ -6,7 +6,6 @@ import typings.wixUiIconsCommon.storiesTypesMod.CategoryTableRow
 import typings.wixUiIconsCommon.typesMod.IconMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object categoryTableCategoryTableMod extends Shortcut {
@@ -15,16 +14,15 @@ object categoryTableCategoryTableMod extends Shortcut {
   @js.native
   val default: FC[CategoryTableProps] = js.native
   
-  @js.native
   trait CategoryTableProps extends StObject {
     
-    var iconsMetadata: js.Array[IconMetadata] = js.native
+    var iconsMetadata: js.Array[IconMetadata]
     
-    def mapIconToRow(iconMetadata: IconMetadata): CategoryTableRow = js.native
+    def mapIconToRow(iconMetadata: IconMetadata): CategoryTableRow
     
-    var tableHeaderTitles: js.Array[String] = js.native
+    var tableHeaderTitles: js.Array[String]
     
-    var title: String = js.native
+    var title: String
   }
   object CategoryTableProps {
     

@@ -6,31 +6,29 @@ import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.spac
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vueTemplateCompilerMod {
   
-  @js.native
   trait SFCBlockV2 extends StObject {
     
-    var attrs: Record[String, String] = js.native
+    var attrs: Record[String, String]
     
-    var content: String = js.native
+    var content: String
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var module: js.UndefOr[String | Boolean] = js.native
+    var module: js.UndefOr[String | Boolean] = js.undefined
     
-    var scoped: js.UndefOr[Boolean] = js.native
+    var scoped: js.UndefOr[Boolean] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SFCBlockV2 {
     
@@ -91,16 +89,15 @@ object vueTemplateCompilerMod {
     }
   }
   
-  @js.native
   trait SFCDescriptorV2 extends StObject {
     
-    var customBlocks: js.Array[SFCBlockV2] = js.native
+    var customBlocks: js.Array[SFCBlockV2]
     
-    var script: js.UndefOr[SFCBlockV2] = js.native
+    var script: js.UndefOr[SFCBlockV2] = js.undefined
     
-    var styles: js.Array[SFCBlockV2] = js.native
+    var styles: js.Array[SFCBlockV2]
     
-    var template: js.UndefOr[SFCBlockV2] = js.native
+    var template: js.UndefOr[SFCBlockV2] = js.undefined
   }
   object SFCDescriptorV2 {
     
@@ -139,10 +136,9 @@ object vueTemplateCompilerMod {
     }
   }
   
-  @js.native
   trait SFCParserOptionsV2 extends StObject {
     
-    var pad: js.UndefOr[`true` | line | space] = js.native
+    var pad: js.UndefOr[`true` | line | space] = js.undefined
   }
   object SFCParserOptionsV2 {
     

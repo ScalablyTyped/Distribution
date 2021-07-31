@@ -10,14 +10,16 @@ import typings.materialUiCore.mod.PaletteType
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createPaletteMod {
   
-  @JSImport("@material-ui/core/styles/createPalette", JSImport.Default)
+  @JSImport("@material-ui/core/styles/createPalette", JSImport.Namespace)
   @js.native
-  def default(palette: PaletteOptions): Palette = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(palette: PaletteOptions): Palette = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(palette.asInstanceOf[js.Any]).asInstanceOf[Palette]
   
   @JSImport("@material-ui/core/styles/createPalette", "dark")
   @js.native
@@ -28,36 +30,37 @@ object createPaletteMod {
   val light: TypeObject = js.native
   
   /* Inlined std.Partial<@material-ui/core.@material-ui/core.Color> */
-  @js.native
-  trait ColorPartial extends PaletteColorOptions {
+  trait ColorPartial
+    extends StObject
+       with PaletteColorOptions {
     
-    var `100`: js.UndefOr[String] = js.native
+    var `100`: js.UndefOr[String] = js.undefined
     
-    var `200`: js.UndefOr[String] = js.native
+    var `200`: js.UndefOr[String] = js.undefined
     
-    var `300`: js.UndefOr[String] = js.native
+    var `300`: js.UndefOr[String] = js.undefined
     
-    var `400`: js.UndefOr[String] = js.native
+    var `400`: js.UndefOr[String] = js.undefined
     
-    var `50`: js.UndefOr[String] = js.native
+    var `50`: js.UndefOr[String] = js.undefined
     
-    var `500`: js.UndefOr[String] = js.native
+    var `500`: js.UndefOr[String] = js.undefined
     
-    var `600`: js.UndefOr[String] = js.native
+    var `600`: js.UndefOr[String] = js.undefined
     
-    var `700`: js.UndefOr[String] = js.native
+    var `700`: js.UndefOr[String] = js.undefined
     
-    var `800`: js.UndefOr[String] = js.native
+    var `800`: js.UndefOr[String] = js.undefined
     
-    var `900`: js.UndefOr[String] = js.native
+    var `900`: js.UndefOr[String] = js.undefined
     
-    var A100: js.UndefOr[String] = js.native
+    var A100: js.UndefOr[String] = js.undefined
     
-    var A200: js.UndefOr[String] = js.native
+    var A200: js.UndefOr[String] = js.undefined
     
-    var A400: js.UndefOr[String] = js.native
+    var A400: js.UndefOr[String] = js.undefined
     
-    var A700: js.UndefOr[String] = js.native
+    var A700: js.UndefOr[String] = js.undefined
   }
   object ColorPartial {
     
@@ -162,42 +165,32 @@ object createPaletteMod {
     var action: TypeAction = js.native
     
     def augmentColor(color: ColorPartial): Unit = js.native
-    def augmentColor(
-      color: ColorPartial,
-      mainShade: js.UndefOr[scala.Nothing],
-      lightShade: js.UndefOr[scala.Nothing],
-      darkShade: String
-    ): Unit = js.native
-    def augmentColor(
-      color: ColorPartial,
-      mainShade: js.UndefOr[scala.Nothing],
-      lightShade: js.UndefOr[scala.Nothing],
-      darkShade: Double
-    ): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: String, darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: String, darkShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: Double, darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: Double, darkShade: Double): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: String, lightShade: js.UndefOr[scala.Nothing], darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: String, lightShade: js.UndefOr[scala.Nothing], darkShade: Double): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: String, lightShade: String): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: String, lightShade: String, darkShade: String): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: String, lightShade: String, darkShade: Double): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double, darkShade: String): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double, darkShade: Double): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Unit, darkShade: String): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Unit, darkShade: Double): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: js.UndefOr[scala.Nothing], darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: js.UndefOr[scala.Nothing], darkShade: Double): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String, darkShade: String): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String, darkShade: Double): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double, darkShade: String): Unit = js.native
     def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double, darkShade: Double): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Unit, darkShade: String): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Unit, darkShade: Double): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: String): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: String, darkShade: String): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: String, darkShade: Double): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Double): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Double, darkShade: String): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Double, darkShade: Double): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Unit, darkShade: String): Unit = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Unit, darkShade: Double): Unit = js.native
     def augmentColor(color: PaletteColorOptions): Unit = js.native
     
     var background: TypeBackground = js.native
@@ -225,16 +218,15 @@ object createPaletteMod {
     var `type`: PaletteType = js.native
   }
   
-  @js.native
   trait PaletteColor extends StObject {
     
-    var contrastText: String = js.native
+    var contrastText: String
     
-    var dark: String = js.native
+    var dark: String
     
-    var light: String = js.native
+    var light: String
     
-    var main: String = js.native
+    var main: String
   }
   object PaletteColor {
     
@@ -281,34 +273,33 @@ object createPaletteMod {
     }
   }
   
-  @js.native
   trait PaletteOptions extends StObject {
     
-    var action: js.UndefOr[PartialTypeAction] = js.native
+    var action: js.UndefOr[PartialTypeAction] = js.undefined
     
-    var background: js.UndefOr[PartialTypeBackground] = js.native
+    var background: js.UndefOr[PartialTypeBackground] = js.undefined
     
-    var common: js.UndefOr[PartialCommonColors] = js.native
+    var common: js.UndefOr[PartialCommonColors] = js.undefined
     
-    var contrastThreshold: js.UndefOr[Double] = js.native
+    var contrastThreshold: js.UndefOr[Double] = js.undefined
     
-    var divider: js.UndefOr[String] = js.native
+    var divider: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[PaletteColorOptions] = js.native
+    var error: js.UndefOr[PaletteColorOptions] = js.undefined
     
-    var getContrastText: js.UndefOr[js.Function1[/* background */ String, String]] = js.native
+    var getContrastText: js.UndefOr[js.Function1[/* background */ String, String]] = js.undefined
     
-    var grey: js.UndefOr[ColorPartial] = js.native
+    var grey: js.UndefOr[ColorPartial] = js.undefined
     
-    var primary: js.UndefOr[PaletteColorOptions] = js.native
+    var primary: js.UndefOr[PaletteColorOptions] = js.undefined
     
-    var secondary: js.UndefOr[PaletteColorOptions] = js.native
+    var secondary: js.UndefOr[PaletteColorOptions] = js.undefined
     
-    var text: js.UndefOr[PartialTypeText] = js.native
+    var text: js.UndefOr[PartialTypeText] = js.undefined
     
-    var tonalOffset: js.UndefOr[Double] = js.native
+    var tonalOffset: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[PaletteType] = js.native
+    var `type`: js.UndefOr[PaletteType] = js.undefined
   }
   object PaletteOptions {
     
@@ -402,16 +393,15 @@ object createPaletteMod {
   }
   
   /* Inlined {[ P in keyof @material-ui/core.@material-ui/core/styles/createPalette.TypeObject ]:? std.Partial<@material-ui/core.@material-ui/core/styles/createPalette.TypeObject[P]>} */
-  @js.native
   trait PartialTypeObject extends StObject {
     
-    var action: js.UndefOr[PartialTypeAction] = js.native
+    var action: js.UndefOr[PartialTypeAction] = js.undefined
     
-    var background: js.UndefOr[PartialTypeBackground] = js.native
+    var background: js.UndefOr[PartialTypeBackground] = js.undefined
     
-    var divider: js.UndefOr[Partial[TypeDivider]] = js.native
+    var divider: js.UndefOr[Partial[TypeDivider]] = js.undefined
     
-    var text: js.UndefOr[PartialTypeText] = js.native
+    var text: js.UndefOr[PartialTypeText] = js.undefined
   }
   object PartialTypeObject {
     
@@ -450,16 +440,17 @@ object createPaletteMod {
     }
   }
   
-  @js.native
-  trait SimplePaletteColorOptions extends PaletteColorOptions {
+  trait SimplePaletteColorOptions
+    extends StObject
+       with PaletteColorOptions {
     
-    var contrastText: js.UndefOr[String] = js.native
+    var contrastText: js.UndefOr[String] = js.undefined
     
-    var dark: js.UndefOr[String] = js.native
+    var dark: js.UndefOr[String] = js.undefined
     
-    var light: js.UndefOr[String] = js.native
+    var light: js.UndefOr[String] = js.undefined
     
-    var main: String = js.native
+    var main: String
   }
   object SimplePaletteColorOptions {
     
@@ -495,20 +486,19 @@ object createPaletteMod {
     }
   }
   
-  @js.native
   trait TypeAction extends StObject {
     
-    var active: String = js.native
+    var active: String
     
-    var disabled: String = js.native
+    var disabled: String
     
-    var disabledBackground: String = js.native
+    var disabledBackground: String
     
-    var hover: String = js.native
+    var hover: String
     
-    var hoverOpacity: Double = js.native
+    var hoverOpacity: Double
     
-    var selected: String = js.native
+    var selected: String
   }
   object TypeAction {
     
@@ -548,12 +538,11 @@ object createPaletteMod {
     }
   }
   
-  @js.native
   trait TypeBackground extends StObject {
     
-    var default: String = js.native
+    var default: String
     
-    var paper: String = js.native
+    var paper: String
   }
   object TypeBackground {
     
@@ -576,16 +565,15 @@ object createPaletteMod {
   
   type TypeDivider = String
   
-  @js.native
   trait TypeObject extends StObject {
     
-    var action: TypeAction = js.native
+    var action: TypeAction
     
-    var background: TypeBackground = js.native
+    var background: TypeBackground
     
-    var divider: TypeDivider = js.native
+    var divider: TypeDivider
     
-    var text: TypeText = js.native
+    var text: TypeText
   }
   object TypeObject {
     
@@ -612,16 +600,15 @@ object createPaletteMod {
     }
   }
   
-  @js.native
   trait TypeText extends StObject {
     
-    var disabled: String = js.native
+    var disabled: String
     
-    var hint: String = js.native
+    var hint: String
     
-    var primary: String = js.native
+    var primary: String
     
-    var secondary: String = js.native
+    var secondary: String
   }
   object TypeText {
     

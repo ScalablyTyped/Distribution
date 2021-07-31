@@ -2,21 +2,19 @@ package typings.ts3NodejsLibrary.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cfid extends StObject {
   
-  var cfid: Double = js.native
+  var cfid: Double
   
-  var clid: Double = js.native
+  var clid: Double
   
-  var ctid: Double = js.native
+  var ctid: Double
   
-  var reasonid: Double = js.native
+  var reasonid: Double
   
-  var reasonmsg: String = js.native
+  var reasonmsg: String
 }
 object Cfid {
   

@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Class and confidence. */
-@js.native
 trait ClassifiedClass extends StObject {
   
   /** Class label. */
-  var class_name: js.UndefOr[String] = js.native
+  var class_name: js.UndefOr[String] = js.undefined
   
   /** A decimal percentage that represents the confidence that Watson has in this class. Higher values represent higher confidences. */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
 }
 object ClassifiedClass {
   

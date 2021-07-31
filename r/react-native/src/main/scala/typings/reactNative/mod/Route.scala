@@ -4,36 +4,35 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Route
-  extends //anything else
+  extends StObject
+     with //anything else
 /* key */ StringDictionary[js.Any] {
   
   //Commonly found properties
-  var backButtonTitle: js.UndefOr[String] = js.native
+  var backButtonTitle: js.UndefOr[String] = js.undefined
   
-  var component: js.UndefOr[ComponentType[_]] = js.native
+  var component: js.UndefOr[ComponentType[js.Any]] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var onRightButtonPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRightButtonPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var passProps: js.UndefOr[js.Object] = js.native
+  var passProps: js.UndefOr[js.Object] = js.undefined
   
-  var rightButtonTitle: js.UndefOr[String] = js.native
+  var rightButtonTitle: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var wrapperStyle: js.UndefOr[js.Any] = js.native
+  var wrapperStyle: js.UndefOr[js.Any] = js.undefined
 }
 object Route {
   
@@ -53,7 +52,7 @@ object Route {
     def setBackButtonTitleUndefined: Self = StObject.set(x, "backButtonTitle", js.undefined)
     
     @scala.inline
-    def setComponent(value: ComponentType[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)

@@ -5,29 +5,26 @@ import typings.ouibounce.ouibounceBooleans.`false`
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Ouibounce = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Ouibounce]
+  @scala.inline
+  def apply(el: Null, custom_config: OuibounceConfig): Ouibounce = (^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any], custom_config.asInstanceOf[js.Any])).asInstanceOf[Ouibounce]
+  @scala.inline
+  def apply(el: `false`): Ouibounce = ^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any]).asInstanceOf[Ouibounce]
+  @scala.inline
+  def apply(el: `false`, custom_config: OuibounceConfig): Ouibounce = (^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any], custom_config.asInstanceOf[js.Any])).asInstanceOf[Ouibounce]
+  @scala.inline
+  def apply(el: Element): Ouibounce = ^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any]).asInstanceOf[Ouibounce]
+  @scala.inline
+  def apply(el: Element, custom_config: OuibounceConfig): Ouibounce = (^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any], custom_config.asInstanceOf[js.Any])).asInstanceOf[Ouibounce]
+  
   @JSImport("ouibounce", JSImport.Namespace)
   @js.native
-  def apply(): Ouibounce = js.native
-  @JSImport("ouibounce", JSImport.Namespace)
-  @js.native
-  def apply(el: Null, custom_config: OuibounceConfig): Ouibounce = js.native
-  @JSImport("ouibounce", JSImport.Namespace)
-  @js.native
-  def apply(el: `false`): Ouibounce = js.native
-  @JSImport("ouibounce", JSImport.Namespace)
-  @js.native
-  def apply(el: `false`, custom_config: OuibounceConfig): Ouibounce = js.native
-  @JSImport("ouibounce", JSImport.Namespace)
-  @js.native
-  def apply(el: Element): Ouibounce = js.native
-  @JSImport("ouibounce", JSImport.Namespace)
-  @js.native
-  def apply(el: Element, custom_config: OuibounceConfig): Ouibounce = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Ouibounce extends StObject {
@@ -44,7 +41,6 @@ object mod {
     def fire(): Unit = js.native
   }
   
-  @js.native
   trait OuibounceConfig extends StObject {
     
     /**
@@ -58,12 +54,12 @@ object mod {
       * landing pages. If you enable `aggressive`, the modal will fire any
       * time the page is reloaded, for the same user.
       */
-    var aggressive: js.UndefOr[Boolean] = js.native
+    var aggressive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that will run once Ouibounce has been triggered.
       */
-    var callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Ouibounce sets a cookie by default to prevent the modal from
@@ -74,7 +70,7 @@ object mod {
       * blog.example.com and example.com), then set a `cookieDomain` such
       * as .example.com (notice the dot in front).
       */
-    var cookieDomain: js.UndefOr[String] = js.native
+    var cookieDomain: js.UndefOr[String] = js.undefined
     
     /**
       * Ouibounce sets a cookie by default to prevent the modal from
@@ -84,12 +80,12 @@ object mod {
       * will expire at the end of the session, which for most browsers is
       * when the browser is closed entirely.
       */
-    var cookieExpire: js.UndefOr[Double] = js.native
+    var cookieExpire: js.UndefOr[Double] = js.undefined
     
     /**
       * The name for the cookie.
       */
-    var cookieName: js.UndefOr[String] = js.native
+    var cookieName: js.UndefOr[String] = js.undefined
     
     /**
       * By default, Ouibounce will show the modal immediately. You could
@@ -99,7 +95,7 @@ object mod {
       * period" for visitors instead of immediately presenting the modal
       * window.
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Ouibounce fires when the mouse cursor moves close to (or passes)
@@ -109,12 +105,12 @@ object mod {
       *
       * *Defaults to 20.*
       */
-    var sensitivity: js.UndefOr[Double] = js.native
+    var sensitivity: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the cookie should be used sitewide.
       */
-    var sitewide: js.UndefOr[Boolean] = js.native
+    var sitewide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, Ouibounce won't fire in the first second to prevent
@@ -123,7 +119,7 @@ object mod {
       * of time that firing is surpressed for, you can pass in a number
       * of milliseconds to `timer`.
       */
-    var timer: js.UndefOr[Double] = js.native
+    var timer: js.UndefOr[Double] = js.undefined
   }
   object OuibounceConfig {
     

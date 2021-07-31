@@ -12,7 +12,7 @@ Consistent checksum calculation of JSON objects.
 | Keywords           | JSON, checksum, hash |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 106812 |
+| # downloads        | 190232 |
 | # stars            | 1 |
 
 ## Links

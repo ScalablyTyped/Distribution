@@ -2,10 +2,8 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayBuffer extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ArrayBuffer extends StObject {
     * It is the caller's responsibility to keep the buffer alive while the
     * backing store is still being used.
     */
-  def unwrap(): NativePointer = js.native
+  def unwrap(): NativePointer
 }
 object ArrayBuffer {
   

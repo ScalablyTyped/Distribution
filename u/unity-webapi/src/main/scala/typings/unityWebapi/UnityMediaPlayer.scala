@@ -2,31 +2,29 @@ package typings.unityWebapi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnityMediaPlayer extends StObject {
   
-  def getPlaybackstate(response: js.Function): js.Any = js.native
+  def getPlaybackstate(response: js.Function): js.Any
   
-  def onNext(onNextCallback: js.Function): js.Any = js.native
+  def onNext(onNextCallback: js.Function): js.Any
   
-  def onPlayPause(onPlayPauseCallback: js.Function): js.Any = js.native
+  def onPlayPause(onPlayPauseCallback: js.Function): js.Any
   
-  def onPrevious(onPreviousCallback: js.Function): js.Any = js.native
+  def onPrevious(onPreviousCallback: js.Function): js.Any
   
-  def setCanGoNext(cangonext: Boolean): js.Any = js.native
+  def setCanGoNext(cangonext: Boolean): js.Any
   
-  def setCanGoPrev(cangoprev: Boolean): js.Any = js.native
+  def setCanGoPrev(cangoprev: Boolean): js.Any
   
-  def setCanPause(canpause: Boolean): js.Any = js.native
+  def setCanPause(canpause: Boolean): js.Any
   
-  def setCanPlay(canplay: Boolean): js.Any = js.native
+  def setCanPlay(canplay: Boolean): js.Any
   
-  def setPlaybackstate(state: UnityPlaybackState): js.Any = js.native
+  def setPlaybackstate(state: UnityPlaybackState): js.Any
   
-  def setTrack(trackMetadata: UnityTrackMetadata): js.Any = js.native
+  def setTrack(trackMetadata: UnityTrackMetadata): js.Any
 }
 object UnityMediaPlayer {
   

@@ -7,53 +7,51 @@ import typings.cesium.mod.Property
 import typings.cesium.mod.ShadowMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassificationType extends StObject {
   
-  var arcType: js.UndefOr[Property | typings.cesium.mod.ArcType] = js.native
+  var arcType: js.UndefOr[Property | typings.cesium.mod.ArcType] = js.undefined
   
-  var classificationType: js.UndefOr[Property | typings.cesium.mod.ClassificationType] = js.native
+  var classificationType: js.UndefOr[Property | typings.cesium.mod.ClassificationType] = js.undefined
   
-  var closeBottom: js.UndefOr[Boolean] = js.native
+  var closeBottom: js.UndefOr[Boolean] = js.undefined
   
-  var closeTop: js.UndefOr[Boolean] = js.native
+  var closeTop: js.UndefOr[Boolean] = js.undefined
   
-  var distanceDisplayCondition: js.UndefOr[Property] = js.native
+  var distanceDisplayCondition: js.UndefOr[Property] = js.undefined
   
-  var extrudedHeight: js.UndefOr[Property] = js.native
+  var extrudedHeight: js.UndefOr[Property] = js.undefined
   
-  var extrudedHeightReference: js.UndefOr[Property] = js.native
+  var extrudedHeightReference: js.UndefOr[Property] = js.undefined
   
-  var fill: js.UndefOr[Property | Boolean] = js.native
+  var fill: js.UndefOr[Property | Boolean] = js.undefined
   
-  var granularity: js.UndefOr[Property] = js.native
+  var granularity: js.UndefOr[Property] = js.undefined
   
-  var height: js.UndefOr[Property | Double] = js.native
+  var height: js.UndefOr[Property | Double] = js.undefined
   
-  var heightReference: js.UndefOr[Property] = js.native
+  var heightReference: js.UndefOr[Property] = js.undefined
   
-  var hierarchy: js.UndefOr[Property | js.Array[Cartesian3] | typings.cesium.mod.PolygonHierarchy] = js.native
+  var hierarchy: js.UndefOr[Property | js.Array[Cartesian3] | typings.cesium.mod.PolygonHierarchy] = js.undefined
   
-  var material: js.UndefOr[MaterialProperty | typings.cesium.mod.Color] = js.native
+  var material: js.UndefOr[MaterialProperty | typings.cesium.mod.Color] = js.undefined
   
-  var outline: js.UndefOr[Property | Boolean] = js.native
+  var outline: js.UndefOr[Property | Boolean] = js.undefined
   
-  var outlineColor: js.UndefOr[Property | typings.cesium.mod.Color] = js.native
+  var outlineColor: js.UndefOr[Property | typings.cesium.mod.Color] = js.undefined
   
-  var outlineWidth: js.UndefOr[Property | Double] = js.native
+  var outlineWidth: js.UndefOr[Property | Double] = js.undefined
   
-  var perPositionHeight: js.UndefOr[Property] = js.native
+  var perPositionHeight: js.UndefOr[Property] = js.undefined
   
-  var shadows: js.UndefOr[Property | ShadowMode] = js.native
+  var shadows: js.UndefOr[Property | ShadowMode] = js.undefined
   
-  var show: js.UndefOr[Property | Boolean] = js.native
+  var show: js.UndefOr[Property | Boolean] = js.undefined
   
-  var stRotation: js.UndefOr[Property] = js.native
+  var stRotation: js.UndefOr[Property] = js.undefined
   
-  var zIndex: js.UndefOr[ConstantProperty | Double] = js.native
+  var zIndex: js.UndefOr[ConstantProperty | Double] = js.undefined
 }
 object ClassificationType {
   

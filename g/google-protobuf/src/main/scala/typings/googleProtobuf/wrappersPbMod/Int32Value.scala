@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/wrappers_pb", "Int32Value")
@@ -27,13 +26,11 @@ object Int32Value {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("google-protobuf/google/protobuf/wrappers_pb", "Int32Value.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): Int32Value = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): Int32Value = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Int32Value]
   
-  @JSImport("google-protobuf/google/protobuf/wrappers_pb", "Int32Value.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: Int32Value, reader: BinaryReader): Int32Value = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: Int32Value, reader: BinaryReader): Int32Value = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Int32Value]
   
   @JSImport("google-protobuf/google/protobuf/wrappers_pb", "Int32Value.extensions")
   @js.native
@@ -48,18 +45,15 @@ object Int32Value {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/wrappers_pb", "Int32Value.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: Int32Value, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: Int32Value, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/wrappers_pb", "Int32Value.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: Int32Value): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: Int32Value): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var value: Double = js.native
+    var value: Double
   }
   object AsObject {
     

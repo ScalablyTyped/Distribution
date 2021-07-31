@@ -2,74 +2,74 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource in the implementation guide
   */
-@js.native
-trait ImplementationGuidePackageResource extends BackboneElement {
+trait ImplementationGuidePackageResource
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'acronym'.
     */
-  var _acronym: js.UndefOr[Element] = js.native
+  var _acronym: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'example'.
     */
-  var _example: js.UndefOr[Element] = js.native
+  var _example: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'sourceUri'.
     */
-  var _sourceUri: js.UndefOr[Element] = js.native
+  var _sourceUri: js.UndefOr[Element] = js.undefined
   
   /**
     * Short code to identify the resource
     */
-  var acronym: js.UndefOr[String] = js.native
+  var acronym: js.UndefOr[String] = js.undefined
   
   /**
     * Reason why included in guide
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * If not an example, has its normal meaning
     */
-  var example: Boolean = js.native
+  var example: Boolean
   
   /**
     * Resource this is an example of (if applicable)
     */
-  var exampleFor: js.UndefOr[Reference] = js.native
+  var exampleFor: js.UndefOr[Reference] = js.undefined
   
   /**
     * Human Name for the resource
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Location of the resource
     */
-  var sourceReference: js.UndefOr[Reference] = js.native
+  var sourceReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * Location of the resource
     */
-  var sourceUri: js.UndefOr[uri] = js.native
+  var sourceUri: js.UndefOr[uri] = js.undefined
 }
 object ImplementationGuidePackageResource {
   

@@ -2,17 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TodoComment extends StObject {
   
-  var descriptor: TodoCommentDescriptor = js.native
+  var descriptor: TodoCommentDescriptor
   
-  var message: java.lang.String = js.native
+  var message: java.lang.String
   
-  var position: Double = js.native
+  var position: Double
 }
 object TodoComment {
   

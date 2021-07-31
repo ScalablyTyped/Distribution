@@ -9,15 +9,15 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * defines a container of StarBasic script libraries, which is to be made persistent in a sub storage of a document storage.
   * @since OOo 2.3
   */
-@js.native
-trait DocumentScriptLibraryContainer extends XStorageBasedLibraryContainer {
+trait DocumentScriptLibraryContainer
+  extends StObject
+     with XStorageBasedLibraryContainer {
   
   /**
     * creates an instance of the `DocumentScriptLibraryContainer` , belonging to a document
@@ -28,9 +28,9 @@ trait DocumentScriptLibraryContainer extends XStorageBasedLibraryContainer {
     * @param Document The document to which the container should belong to. Must not be `NULL` .
     * @throws com::sun::star::lang::IllegalArgumentException if `Document` does not denote a valid {@link com.sun.star.document.OfficeDocument} .
     */
-  def create(Document: XStorageBasedDocument): Unit = js.native
+  def create(Document: XStorageBasedDocument): Unit
   
-  def createWithURL(URL: String): Unit = js.native
+  def createWithURL(URL: String): Unit
 }
 object DocumentScriptLibraryContainer {
   

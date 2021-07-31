@@ -2,66 +2,64 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamPolicyDetails extends StObject {
   
   /**
     * The number of users, groups, and roles that the policy is attached to.
     */
-  var AttachmentCount: js.UndefOr[Integer] = js.native
+  var AttachmentCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * When the policy was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreateDate: js.UndefOr[NonEmptyString] = js.native
+  var CreateDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the default version of the policy.
     */
-  var DefaultVersionId: js.UndefOr[NonEmptyString] = js.native
+  var DefaultVersionId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A description of the policy.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the policy can be attached to a user, group, or role.
     */
-  var IsAttachable: js.UndefOr[Boolean] = js.native
+  var IsAttachable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The path to the policy.
     */
-  var Path: js.UndefOr[NonEmptyString] = js.native
+  var Path: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The number of users and roles that use the policy to set the permissions boundary.
     */
-  var PermissionsBoundaryUsageCount: js.UndefOr[Integer] = js.native
+  var PermissionsBoundaryUsageCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The unique identifier of the policy.
     */
-  var PolicyId: js.UndefOr[NonEmptyString] = js.native
+  var PolicyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the policy.
     */
-  var PolicyName: js.UndefOr[NonEmptyString] = js.native
+  var PolicyName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * List of versions of the policy.
     */
-  var PolicyVersionList: js.UndefOr[AwsIamPolicyVersionList] = js.native
+  var PolicyVersionList: js.UndefOr[AwsIamPolicyVersionList] = js.undefined
   
   /**
     * When the policy was most recently updated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var UpdateDate: js.UndefOr[NonEmptyString] = js.native
+  var UpdateDate: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsIamPolicyDetails {
   

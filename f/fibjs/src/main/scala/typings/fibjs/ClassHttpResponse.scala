@@ -2,11 +2,12 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassHttpResponse extends ClassHttpMessage {
+trait ClassHttpResponse
+  extends StObject
+     with ClassHttpMessage {
   
   /**
     * 
@@ -27,7 +28,7 @@ trait ClassHttpResponse extends ClassHttpMessage {
     * @readonly
     * @type NArray
     */
-  var cookies: js.Array[_] = js.native
+  var cookies: js.Array[js.Any] = js.native
   
   /**
     * 

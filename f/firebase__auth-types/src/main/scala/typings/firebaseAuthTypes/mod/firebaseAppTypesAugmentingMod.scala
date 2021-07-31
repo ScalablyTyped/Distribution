@@ -3,16 +3,14 @@ package typings.firebaseAuthTypes.mod
 import typings.firebaseAuthTypes.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object firebaseAppTypesAugmentingMod {
   
-  @js.native
   trait FirebaseApp extends StObject {
     
-    var auth: js.UndefOr[js.Function0[FirebaseAuth]] = js.native
+    var auth: js.UndefOr[js.Function0[FirebaseAuth]] = js.undefined
   }
   object FirebaseApp {
     
@@ -33,10 +31,9 @@ object firebaseAppTypesAugmentingMod {
     }
   }
   
-  @js.native
   trait FirebaseNamespace extends StObject {
     
-    var auth: js.UndefOr[Call] = js.native
+    var auth: js.UndefOr[Call] = js.undefined
   }
   object FirebaseNamespace {
     

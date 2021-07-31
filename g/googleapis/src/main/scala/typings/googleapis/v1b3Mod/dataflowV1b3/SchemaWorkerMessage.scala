@@ -3,13 +3,11 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * WorkerMessage provides information to the backend about a worker.
   */
-@js.native
 trait SchemaWorkerMessage extends StObject {
   
   /**
@@ -22,37 +20,37 @@ trait SchemaWorkerMessage extends StObject {
     * of development other strings can be used as tags. LABEL_UNSPECIFIED
     * should not be used here.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The timestamp of the worker_message.
     */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
   
   /**
     * The health of a worker.
     */
-  var workerHealthReport: js.UndefOr[SchemaWorkerHealthReport] = js.native
+  var workerHealthReport: js.UndefOr[SchemaWorkerHealthReport] = js.undefined
   
   /**
     * Record of worker lifecycle events.
     */
-  var workerLifecycleEvent: js.UndefOr[SchemaWorkerLifecycleEvent] = js.native
+  var workerLifecycleEvent: js.UndefOr[SchemaWorkerLifecycleEvent] = js.undefined
   
   /**
     * A worker message code.
     */
-  var workerMessageCode: js.UndefOr[SchemaWorkerMessageCode] = js.native
+  var workerMessageCode: js.UndefOr[SchemaWorkerMessageCode] = js.undefined
   
   /**
     * Resource metrics reported by workers.
     */
-  var workerMetrics: js.UndefOr[SchemaResourceUtilizationReport] = js.native
+  var workerMetrics: js.UndefOr[SchemaResourceUtilizationReport] = js.undefined
   
   /**
     * Shutdown notice by workers.
     */
-  var workerShutdownNotice: js.UndefOr[SchemaWorkerShutdownNotice] = js.native
+  var workerShutdownNotice: js.UndefOr[SchemaWorkerShutdownNotice] = js.undefined
 }
 object SchemaWorkerMessage {
   

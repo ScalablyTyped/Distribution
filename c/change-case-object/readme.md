@@ -12,7 +12,7 @@ Changes the case of all keys of an object
 | Keywords           | camel, object, case, change, snake, param |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 363131 |
+| # downloads        | 465939 |
 | # stars            | 0 |
 
 ## Links

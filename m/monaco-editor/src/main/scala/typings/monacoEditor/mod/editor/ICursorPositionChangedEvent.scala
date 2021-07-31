@@ -3,31 +3,29 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICursorPositionChangedEvent extends StObject {
   
   /**
     * Primary cursor's position.
     */
-  val position: Position = js.native
+  val position: Position
   
   /**
     * Reason.
     */
-  val reason: CursorChangeReason = js.native
+  val reason: CursorChangeReason
   
   /**
     * Secondary cursors' position.
     */
-  val secondaryPositions: js.Array[Position] = js.native
+  val secondaryPositions: js.Array[Position]
   
   /**
     * Source of the call that caused the event.
     */
-  val source: String = js.native
+  val source: String
 }
 object ICursorPositionChangedEvent {
   

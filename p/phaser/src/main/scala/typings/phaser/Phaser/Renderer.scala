@@ -28,7 +28,6 @@ import typings.std.WebGLRenderingContext
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Renderer {
@@ -61,7 +60,7 @@ object Renderer {
         * 
         * This object maps the {@link Phaser.BlendModes} to canvas compositing operations.
         */
-      var blendModes: js.Array[_] = js.native
+      var blendModes: js.Array[js.Any] = js.native
       
       /**
         * The local configuration settings of the CanvasRenderer.
@@ -150,9 +149,9 @@ object Renderer {
         * @param height The new height of the renderer.
         */
       def resize(): Unit = js.native
-      def resize(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
       def resize(width: Double): Unit = js.native
       def resize(width: Double, height: Double): Unit = js.native
+      def resize(width: Unit, height: Double): Unit = js.native
       
       /**
         * Sets the global alpha of the current context.
@@ -188,9 +187,9 @@ object Renderer {
         * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
         */
       def snapshot(callback: SnapshotCallback): this.type = js.native
-      def snapshot(callback: SnapshotCallback, `type`: js.UndefOr[scala.Nothing], encoderOptions: Double): this.type = js.native
       def snapshot(callback: SnapshotCallback, `type`: String): this.type = js.native
       def snapshot(callback: SnapshotCallback, `type`: String, encoderOptions: Double): this.type = js.native
+      def snapshot(callback: SnapshotCallback, `type`: Unit, encoderOptions: Double): this.type = js.native
       
       /**
         * Schedules a snapshot of the given area of the game viewport to be taken after the current frame is rendered.
@@ -217,15 +216,6 @@ object Renderer {
         width: integer,
         height: integer,
         callback: SnapshotCallback,
-        `type`: js.UndefOr[scala.Nothing],
-        encoderOptions: Double
-      ): this.type = js.native
-      def snapshotArea(
-        x: integer,
-        y: integer,
-        width: integer,
-        height: integer,
-        callback: SnapshotCallback,
         `type`: String
       ): this.type = js.native
       def snapshotArea(
@@ -235,6 +225,15 @@ object Renderer {
         height: integer,
         callback: SnapshotCallback,
         `type`: String,
+        encoderOptions: Double
+      ): this.type = js.native
+      def snapshotArea(
+        x: integer,
+        y: integer,
+        width: integer,
+        height: integer,
+        callback: SnapshotCallback,
+        `type`: Unit,
         encoderOptions: Double
       ): this.type = js.native
       
@@ -320,8 +319,9 @@ object Renderer {
         * - vertexCapacity: The amount of vertices that shall be allocated
         * - vertexSize: The size of a single vertex in bytes.
         */
-      @js.native
-      trait BitmapMaskPipeline extends WebGLPipeline {
+      trait BitmapMaskPipeline
+        extends StObject
+           with WebGLPipeline {
         
         /**
           * Binds necessary resources and renders the mask to a separated framebuffer.
@@ -330,7 +330,7 @@ object Renderer {
           * @param maskedObject GameObject masked by the mask GameObject.
           * @param camera The camera rendering the current mask.
           */
-        def beginMask(mask: GameObject, maskedObject: GameObject, camera: Camera): Unit = js.native
+        def beginMask(mask: GameObject, maskedObject: GameObject, camera: Camera): Unit
         
         /**
           * The masked game objects framebuffer is unbound and its texture 
@@ -339,23 +339,23 @@ object Renderer {
           * masking effect is applied.
           * @param mask GameObject used as a mask.
           */
-        def endMask(mask: GameObject): Unit = js.native
+        def endMask(mask: GameObject): Unit
         
         /**
           * Size of the batch.
           */
-        var maxQuads: Double = js.native
+        var maxQuads: Double
         
         /**
           * Dirty flag to check if resolution properties need to be updated on the 
           * masking shader.
           */
-        var resolutionDirty: Boolean = js.native
+        var resolutionDirty: Boolean
         
         /**
           * Float32 view of the array buffer containing the pipeline's vertices.
           */
-        var vertexViewF32: Float32Array = js.native
+        var vertexViewF32: Float32Array
       }
       object BitmapMaskPipeline {
         
@@ -443,7 +443,9 @@ object Renderer {
         * and batching system.
         */
       @js.native
-      trait ForwardDiffuseLightPipeline extends TextureTintPipeline {
+      trait ForwardDiffuseLightPipeline
+        extends StObject
+           with TextureTintPipeline {
         
         /**
           * Generic function for batching a textured quad
@@ -529,41 +531,40 @@ object Renderer {
         * Implements a model view projection matrices.
         * Pipelines can implement this for doing 2D and 3D rendering.
         */
-      @js.native
       trait ModelViewProjection extends StObject {
         
         /**
           * Loads an identity matrix to the model matrix
           */
-        def modelIdentity(): Unit = js.native
+        def modelIdentity(): Unit
         
         /**
           * Model matrix
           */
-        var modelMatrix: Float32Array = js.native
+        var modelMatrix: Float32Array
         
         /**
           * Dirty flag for checking if model matrix needs to be updated on GPU.
           */
-        var modelMatrixDirty: Boolean = js.native
+        var modelMatrixDirty: Boolean
         
         /**
           * Rotates the model matrix in the X axis.
           * @param radians The amount to rotate by.
           */
-        def modelRotateX(radians: Double): this.type = js.native
+        def modelRotateX(radians: Double): this.type
         
         /**
           * Rotates the model matrix in the Y axis.
           * @param radians The amount to rotate by.
           */
-        def modelRotateY(radians: Double): this.type = js.native
+        def modelRotateY(radians: Double): this.type
         
         /**
           * Rotates the model matrix in the Z axis.
           * @param radians The amount to rotate by.
           */
-        def modelRotateZ(radians: Double): this.type = js.native
+        def modelRotateZ(radians: Double): this.type
         
         /**
           * Scale model matrix
@@ -571,7 +572,7 @@ object Renderer {
           * @param y The y component.
           * @param z The z component.
           */
-        def modelScale(x: Double, y: Double, z: Double): this.type = js.native
+        def modelScale(x: Double, y: Double, z: Double): this.type
         
         /**
           * Translate model matrix
@@ -579,22 +580,22 @@ object Renderer {
           * @param y The y component.
           * @param z The z component.
           */
-        def modelTranslate(x: Double, y: Double, z: Double): this.type = js.native
+        def modelTranslate(x: Double, y: Double, z: Double): this.type
         
         /**
           * Initializes MVP matrices with an identity matrix
           */
-        def mvpInit(): Unit = js.native
+        def mvpInit(): Unit
         
         /**
           * If dirty flags are set then the matrices are uploaded to the GPU.
           */
-        def mvpUpdate(): Unit = js.native
+        def mvpUpdate(): Unit
         
         /**
           * Loads identity matrix into the projection matrix.
           */
-        def projIdentity(): this.type = js.native
+        def projIdentity(): this.type
         
         /**
           * Sets up an orthographic projection matrix
@@ -605,7 +606,7 @@ object Renderer {
           * @param near The near value.
           * @param far The far value.
           */
-        def projOrtho(left: Double, right: Double, bottom: Double, top: Double, near: Double, far: Double): this.type = js.native
+        def projOrtho(left: Double, right: Double, bottom: Double, top: Double, near: Double, far: Double): this.type
         
         /**
           * Sets up a perspective projection matrix
@@ -614,62 +615,62 @@ object Renderer {
           * @param near The near value.
           * @param far The far value.
           */
-        def projPersp(fovY: Double, aspectRatio: Double, near: Double, far: Double): this.type = js.native
+        def projPersp(fovY: Double, aspectRatio: Double, near: Double, far: Double): this.type
         
         /**
           * Projection matrix
           */
-        var projectionMatrix: Float32Array = js.native
+        var projectionMatrix: Float32Array
         
         /**
           * Dirty flag for checking if projection matrix needs to be updated on GPU.
           */
-        var projectionMatrixDirty: Boolean = js.native
+        var projectionMatrixDirty: Boolean
         
         /**
           * Loads identity matrix into the view matrix
           */
-        def viewIdentity(): this.type = js.native
+        def viewIdentity(): this.type
         
         /**
           * Copies a 4x4 matrix into the view matrix
           * @param matrix The Matrix2D.
           */
-        def viewLoad(matrix: Float32Array): this.type = js.native
+        def viewLoad(matrix: Float32Array): this.type
         
         /**
           * Loads a 2D view matrix (3x2 matrix) into a 4x4 view matrix
           * @param matrix2D The Matrix2D.
           */
-        def viewLoad2D(matrix2D: Float32Array): this.type = js.native
+        def viewLoad2D(matrix2D: Float32Array): this.type
         
         /**
           * View matrix
           */
-        var viewMatrix: Float32Array = js.native
+        var viewMatrix: Float32Array
         
         /**
           * Dirty flag for checking if view matrix needs to be updated on GPU.
           */
-        var viewMatrixDirty: Boolean = js.native
+        var viewMatrixDirty: Boolean
         
         /**
           * Rotates view matrix in the X axis.
           * @param radians The amount to rotate by.
           */
-        def viewRotateX(radians: Double): this.type = js.native
+        def viewRotateX(radians: Double): this.type
         
         /**
           * Rotates view matrix in the Y axis.
           * @param radians The amount to rotate by.
           */
-        def viewRotateY(radians: Double): this.type = js.native
+        def viewRotateY(radians: Double): this.type
         
         /**
           * Rotates view matrix in the Z axis.
           * @param radians The amount to rotate by.
           */
-        def viewRotateZ(radians: Double): this.type = js.native
+        def viewRotateZ(radians: Double): this.type
         
         /**
           * Scales view matrix
@@ -677,7 +678,7 @@ object Renderer {
           * @param y The y component.
           * @param z The z component.
           */
-        def viewScale(x: Double, y: Double, z: Double): this.type = js.native
+        def viewScale(x: Double, y: Double, z: Double): this.type
         
         /**
           * Translates view matrix
@@ -685,7 +686,7 @@ object Renderer {
           * @param y The y component.
           * @param z The z component.
           */
-        def viewTranslate(x: Double, y: Double, z: Double): this.type = js.native
+        def viewTranslate(x: Double, y: Double, z: Double): this.type
       }
       object ModelViewProjection {
         
@@ -815,7 +816,9 @@ object Renderer {
         * - vertexSize: The size of a single vertex in bytes.
         */
       @js.native
-      trait TextureTintPipeline extends WebGLPipeline {
+      trait TextureTintPipeline
+        extends StObject
+           with WebGLPipeline {
         
         /**
           * Adds the given path to the vertex batch for rendering.
@@ -828,7 +831,7 @@ object Renderer {
           * @param currentMatrix The current transform.
           * @param parentMatrix The parent transform.
           */
-        def batchFillPath(path: js.Array[_], currentMatrix: TransformMatrix, parentMatrix: TransformMatrix): Unit = js.native
+        def batchFillPath(path: js.Array[js.Any], currentMatrix: TransformMatrix, parentMatrix: TransformMatrix): Unit = js.native
         
         /**
           * Pushes a filled rectangle into the vertex batch.
@@ -929,7 +932,7 @@ object Renderer {
           tintBL: Double,
           tintBR: Double,
           tintEffect: Boolean,
-          texture: js.UndefOr[scala.Nothing],
+          texture: Unit,
           unit: integer
         ): Boolean = js.native
         def batchQuad(
@@ -1046,7 +1049,7 @@ object Renderer {
           tintBL: Double,
           tintBR: Double,
           tintEffect: Double,
-          texture: js.UndefOr[scala.Nothing],
+          texture: Unit,
           unit: integer
         ): Boolean = js.native
         def batchQuad(
@@ -1116,7 +1119,7 @@ object Renderer {
           * @param parentMatrix The parent transform.
           */
         def batchStrokePath(
-          path: js.Array[_],
+          path: js.Array[js.Any],
           lineWidth: Double,
           pathOpen: Boolean,
           currentMatrix: TransformMatrix,
@@ -1269,7 +1272,7 @@ object Renderer {
           tintTR: Double,
           tintBL: Double,
           tintEffect: Boolean,
-          texture: js.UndefOr[scala.Nothing],
+          texture: Unit,
           unit: integer
         ): Boolean = js.native
         def batchTri(
@@ -1369,7 +1372,7 @@ object Renderer {
           tintTR: Double,
           tintBL: Double,
           tintEffect: Double,
-          texture: js.UndefOr[scala.Nothing],
+          texture: Unit,
           unit: integer
         ): Boolean = js.native
         def batchTri(
@@ -1411,7 +1414,7 @@ object Renderer {
         /**
           * Collection of batch information
           */
-        var batches: js.Array[_] = js.native
+        var batches: js.Array[js.Any] = js.native
         
         /**
           * Pushes a filled rectangle into the vertex batch.
@@ -1454,7 +1457,7 @@ object Renderer {
           * @param unit Texture unit to which the texture needs to be bound. Default 0.
           */
         def setTexture2D(): TextureTintPipeline = js.native
-        def setTexture2D(texture: js.UndefOr[scala.Nothing], unit: integer): TextureTintPipeline = js.native
+        def setTexture2D(texture: Unit, unit: integer): TextureTintPipeline = js.native
         def setTexture2D(texture: WebGLTexture): TextureTintPipeline = js.native
         def setTexture2D(texture: WebGLTexture, unit: integer): TextureTintPipeline = js.native
         
@@ -1481,12 +1484,14 @@ object Renderer {
         * - vertexSize: The size of a single vertex in bytes.
         */
       @js.native
-      trait TextureTintStripPipeline extends WebGLPipeline {
+      trait TextureTintStripPipeline
+        extends StObject
+           with WebGLPipeline {
         
         /**
           * Collection of batch information
           */
-        var batches: js.Array[_] = js.native
+        var batches: js.Array[js.Any] = js.native
         
         /**
           * Size of the batch.
@@ -1516,7 +1521,7 @@ object Renderer {
           * @param unit Texture unit to which the texture needs to be bound. Default 0.
           */
         def setTexture2D(): TextureTintStripPipeline = js.native
-        def setTexture2D(texture: js.UndefOr[scala.Nothing], unit: integer): TextureTintStripPipeline = js.native
+        def setTexture2D(texture: Unit, unit: integer): TextureTintStripPipeline = js.native
         def setTexture2D(texture: WebGLTexture): TextureTintStripPipeline = js.native
         def setTexture2D(texture: WebGLTexture, unit: integer): TextureTintStripPipeline = js.native
         
@@ -1563,14 +1568,13 @@ object Renderer {
       * Here you can find more information of how to describe an attribute:
       * - https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer
       */
-    @js.native
     trait WebGLPipeline extends StObject {
       
       /**
         * Indicates if the current pipeline is active or not for this frame only.
         * Reset in the onRender method.
         */
-      var active: Boolean = js.native
+      var active: Boolean
       
       /**
         * Adds a description of vertex attribute to the pipeline
@@ -1580,17 +1584,17 @@ object Renderer {
         * @param normalized Is the value normalized to a range
         * @param offset Byte offset to the beginning of the first element in the vertex
         */
-      def addAttribute(name: String, size: integer, `type`: integer, normalized: Boolean, offset: integer): this.type = js.native
+      def addAttribute(name: String, size: integer, `type`: integer, normalized: Boolean, offset: integer): this.type
       
       /**
         * Array of objects that describe the vertex attributes
         */
-      var attributes: js.Object = js.native
+      var attributes: js.Object
       
       /**
         * Binds the pipeline resources, including programs, vertex buffers and binds attributes
         */
-      def bind(): this.type = js.native
+      def bind(): this.type
       
       /**
         * Called when the Game has fully booted and the Renderer has finished setting up.
@@ -1598,84 +1602,84 @@ object Renderer {
         * By this stage all Game level systems are now in place and you can perform any final
         * tasks that the pipeline may need that relied on game systems such as the Texture Manager.
         */
-      def boot(): Unit = js.native
+      def boot(): Unit
       
       /**
         * Uint8 view to the vertex raw buffer. Used for uploading vertex buffer resources
         * to the GPU.
         */
-      var bytes: Uint8Array = js.native
+      var bytes: Uint8Array
       
       /**
         * Removes all object references in this WebGL Pipeline and removes its program from the WebGL context.
         */
-      def destroy(): this.type = js.native
+      def destroy(): this.type
       
       /**
         * Uploads the vertex data and emits a draw call
         * for the current batch of vertices.
         */
-      def flush(): this.type = js.native
+      def flush(): this.type
       
       /**
         * Indicates if the current pipeline is flushing the contents to the GPU.
         * When the variable is set the flush function will be locked.
         */
-      var flushLocked: Boolean = js.native
+      var flushLocked: Boolean
       
       /**
         * The Game which owns this WebGL Pipeline.
         */
-      var game: Game = js.native
+      var game: Game
       
       /**
         * The WebGL context this WebGL Pipeline uses.
         */
-      var gl: WebGLRenderingContext = js.native
+      var gl: WebGLRenderingContext
       
       /**
         * Height of the current viewport
         */
-      var height: Double = js.native
+      var height: Double
       
       /**
         * Name of the Pipeline. Used for identifying
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * Set whenever this WebGL Pipeline is bound to a WebGL Renderer.
         * 
         * This method is called every time the WebGL Pipeline is attempted to be bound, even if it already is the current pipeline.
         */
-      def onBind(): this.type = js.native
+      def onBind(): this.type
       
       /**
         * Called after each frame has been completely rendered and snapshots have been taken.
         */
-      def onPostRender(): this.type = js.native
+      def onPostRender(): this.type
       
       /**
         * Called before each frame is rendered, but after the canvas has been cleared.
         */
-      def onPreRender(): this.type = js.native
+      def onPreRender(): this.type
       
       /**
         * Called before a Scene's Camera is rendered.
         * @param scene The Scene being rendered.
         * @param camera The Scene Camera being rendered with.
         */
-      def onRender(scene: Scene, camera: Camera): this.type = js.native
+      def onRender(scene: Scene, camera: Camera): this.type
       
       /**
         * The handle to a WebGL program
         */
-      var program: WebGLProgram = js.native
+      var program: WebGLProgram
       
       /**
         * The WebGL Renderer which owns this WebGL Pipeline.
         */
-      var renderer: WebGLRenderer = js.native
+      var renderer: WebGLRenderer
       
       /**
         * Resizes the properties used to describe the viewport
@@ -1683,26 +1687,26 @@ object Renderer {
         * @param height The new height of this WebGL Pipeline.
         * @param resolution The resolution this WebGL Pipeline should be resized to.
         */
-      def resize(width: Double, height: Double, resolution: Double): this.type = js.native
+      def resize(width: Double, height: Double, resolution: Double): this.type
       
       /**
         * Used to store the current game resolution
         */
-      var resolution: Double = js.native
+      var resolution: Double
       
       /**
         * Set a uniform value of the current pipeline program.
         * @param name The name of the uniform to look-up and modify.
         * @param x The new value of the `float` uniform.
         */
-      def setFloat1(name: String, x: Double): this.type = js.native
+      def setFloat1(name: String, x: Double): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
         * @param name The name of the uniform to look-up and modify.
         * @param arr The new value to be used for the uniform variable.
         */
-      def setFloat1v(name: String, arr: Float32Array): this.type = js.native
+      def setFloat1v(name: String, arr: Float32Array): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
@@ -1710,14 +1714,14 @@ object Renderer {
         * @param x The new X component of the `vec2` uniform.
         * @param y The new Y component of the `vec2` uniform.
         */
-      def setFloat2(name: String, x: Double, y: Double): this.type = js.native
+      def setFloat2(name: String, x: Double, y: Double): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
         * @param name The name of the uniform to look-up and modify.
         * @param arr The new value to be used for the uniform variable.
         */
-      def setFloat2v(name: String, arr: Float32Array): this.type = js.native
+      def setFloat2v(name: String, arr: Float32Array): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
@@ -1726,14 +1730,14 @@ object Renderer {
         * @param y The new Y component of the `vec3` uniform.
         * @param z The new Z component of the `vec3` uniform.
         */
-      def setFloat3(name: String, x: Double, y: Double, z: Double): this.type = js.native
+      def setFloat3(name: String, x: Double, y: Double, z: Double): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
         * @param name The name of the uniform to look-up and modify.
         * @param arr The new value to be used for the uniform variable.
         */
-      def setFloat3v(name: String, arr: Float32Array): this.type = js.native
+      def setFloat3v(name: String, arr: Float32Array): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
@@ -1743,21 +1747,21 @@ object Renderer {
         * @param z Z component of the uniform
         * @param w W component of the uniform
         */
-      def setFloat4(name: String, x: Double, y: Double, z: Double, w: Double): this.type = js.native
+      def setFloat4(name: String, x: Double, y: Double, z: Double, w: Double): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
         * @param name The name of the uniform to look-up and modify.
         * @param arr The new value to be used for the uniform variable.
         */
-      def setFloat4v(name: String, arr: Float32Array): this.type = js.native
+      def setFloat4v(name: String, arr: Float32Array): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
         * @param name The name of the uniform to look-up and modify.
         * @param x The new value of the `int` uniform.
         */
-      def setInt1(name: String, x: integer): this.type = js.native
+      def setInt1(name: String, x: integer): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
@@ -1765,7 +1769,7 @@ object Renderer {
         * @param x The new X component of the `ivec2` uniform.
         * @param y The new Y component of the `ivec2` uniform.
         */
-      def setInt2(name: String, x: integer, y: integer): this.type = js.native
+      def setInt2(name: String, x: integer, y: integer): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
@@ -1774,7 +1778,7 @@ object Renderer {
         * @param y The new Y component of the `ivec3` uniform.
         * @param z The new Z component of the `ivec3` uniform.
         */
-      def setInt3(name: String, x: integer, y: integer, z: integer): this.type = js.native
+      def setInt3(name: String, x: integer, y: integer, z: integer): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
@@ -1784,7 +1788,7 @@ object Renderer {
         * @param z Z component of the uniform
         * @param w W component of the uniform
         */
-      def setInt4(name: String, x: integer, y: integer, z: integer, w: integer): this.type = js.native
+      def setInt4(name: String, x: integer, y: integer, z: integer, w: integer): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
@@ -1792,7 +1796,7 @@ object Renderer {
         * @param transpose Whether to transpose the matrix. Should be `false`.
         * @param matrix The new values for the `mat2` uniform.
         */
-      def setMatrix2(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+      def setMatrix2(name: String, transpose: Boolean, matrix: Float32Array): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
@@ -1800,7 +1804,7 @@ object Renderer {
         * @param transpose Whether to transpose the matrix. Should be `false`.
         * @param matrix The new values for the `mat3` uniform.
         */
-      def setMatrix3(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+      def setMatrix3(name: String, transpose: Boolean, matrix: Float32Array): this.type
       
       /**
         * Set a uniform value of the current pipeline program.
@@ -1808,57 +1812,57 @@ object Renderer {
         * @param transpose Should the matrix be transpose
         * @param matrix Matrix data
         */
-      def setMatrix4(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+      def setMatrix4(name: String, transpose: Boolean, matrix: Float32Array): this.type
       
       /**
         * Check if the current batch of vertices is full.
         */
-      def shouldFlush(): Boolean = js.native
+      def shouldFlush(): Boolean
       
       /**
         * The primitive topology which the pipeline will use to submit draw calls
         */
-      var topology: integer = js.native
+      var topology: integer
       
       /**
         * The handle to a WebGL vertex buffer object.
         */
-      var vertexBuffer: WebGLBuffer = js.native
+      var vertexBuffer: WebGLBuffer
       
       /**
         * The limit of vertices that the pipeline can hold
         */
-      var vertexCapacity: integer = js.native
+      var vertexCapacity: integer
       
       /**
         * This will store the amount of components of 32 bit length
         */
-      var vertexComponentCount: integer = js.native
+      var vertexComponentCount: integer
       
       /**
         * How many vertices have been fed to the current pipeline.
         */
-      var vertexCount: Double = js.native
+      var vertexCount: Double
       
       /**
         * Raw byte buffer of vertices.
         */
-      var vertexData: ArrayBuffer = js.native
+      var vertexData: ArrayBuffer
       
       /**
         * The size in bytes of the vertex
         */
-      var vertexSize: integer = js.native
+      var vertexSize: integer
       
       /**
         * The canvas which this WebGL Pipeline renders to.
         */
-      var view: HTMLCanvasElement = js.native
+      var view: HTMLCanvasElement
       
       /**
         * Width of the current viewport
         */
-      var width: Double = js.native
+      var width: Double
     }
     object WebGLPipeline {
       
@@ -2097,7 +2101,7 @@ object Renderer {
         * 
         * This array includes the default blend modes as well as any custom blend modes added through {@link #addBlendMode}.
         */
-      var blendModes: js.Array[_] = js.native
+      var blendModes: js.Array[js.Any] = js.native
       
       /**
         * The canvas which this WebGL Renderer draws to.
@@ -2114,28 +2118,13 @@ object Renderer {
         * @param flipY Should the WebGL Texture set `UNPACK_MULTIPLY_FLIP_Y`? Default false.
         */
       def canvasToTexture(srcCanvas: HTMLCanvasElement): WebGLTexture = js.native
-      def canvasToTexture(
-        srcCanvas: HTMLCanvasElement,
-        dstTexture: js.UndefOr[scala.Nothing],
-        noRepeat: js.UndefOr[scala.Nothing],
-        flipY: Boolean
-      ): WebGLTexture = js.native
-      def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: js.UndefOr[scala.Nothing], noRepeat: Boolean): WebGLTexture = js.native
-      def canvasToTexture(
-        srcCanvas: HTMLCanvasElement,
-        dstTexture: js.UndefOr[scala.Nothing],
-        noRepeat: Boolean,
-        flipY: Boolean
-      ): WebGLTexture = js.native
+      def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: Unit, noRepeat: Boolean): WebGLTexture = js.native
+      def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: Unit, noRepeat: Boolean, flipY: Boolean): WebGLTexture = js.native
+      def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: Unit, noRepeat: Unit, flipY: Boolean): WebGLTexture = js.native
       def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: WebGLTexture): WebGLTexture = js.native
-      def canvasToTexture(
-        srcCanvas: HTMLCanvasElement,
-        dstTexture: WebGLTexture,
-        noRepeat: js.UndefOr[scala.Nothing],
-        flipY: Boolean
-      ): WebGLTexture = js.native
       def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: WebGLTexture, noRepeat: Boolean): WebGLTexture = js.native
       def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: WebGLTexture, noRepeat: Boolean, flipY: Boolean): WebGLTexture = js.native
+      def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: WebGLTexture, noRepeat: Unit, flipY: Boolean): WebGLTexture = js.native
       
       /**
         * Flushes the current WebGLPipeline being used and then clears it, along with the
@@ -2148,7 +2137,7 @@ object Renderer {
       /**
         * Stores the supported WebGL texture compression formats.
         */
-      var compression: js.Array[_] = js.native
+      var compression: js.Array[js.Any] = js.native
       
       /**
         * The local configuration settings of this WebGL Renderer.
@@ -2179,9 +2168,9 @@ object Renderer {
         * @param flipY Should the WebGL Texture set `UNPACK_MULTIPLY_FLIP_Y`? Default false.
         */
       def createCanvasTexture(srcCanvas: HTMLCanvasElement): WebGLTexture = js.native
-      def createCanvasTexture(srcCanvas: HTMLCanvasElement, noRepeat: js.UndefOr[scala.Nothing], flipY: Boolean): WebGLTexture = js.native
       def createCanvasTexture(srcCanvas: HTMLCanvasElement, noRepeat: Boolean): WebGLTexture = js.native
       def createCanvasTexture(srcCanvas: HTMLCanvasElement, noRepeat: Boolean, flipY: Boolean): WebGLTexture = js.native
+      def createCanvasTexture(srcCanvas: HTMLCanvasElement, noRepeat: Unit, flipY: Boolean): WebGLTexture = js.native
       
       /**
         * Wrapper for creating WebGLFramebuffer.
@@ -2242,47 +2231,6 @@ object Renderer {
         pixels: js.Object,
         width: integer,
         height: integer,
-        pma: js.UndefOr[scala.Nothing],
-        forceSize: js.UndefOr[scala.Nothing],
-        flipY: Boolean
-      ): WebGLTexture = js.native
-      def createTexture2D(
-        mipLevel: integer,
-        minFilter: integer,
-        magFilter: integer,
-        wrapT: integer,
-        wrapS: integer,
-        format: integer,
-        pixels: js.Object,
-        width: integer,
-        height: integer,
-        pma: js.UndefOr[scala.Nothing],
-        forceSize: Boolean
-      ): WebGLTexture = js.native
-      def createTexture2D(
-        mipLevel: integer,
-        minFilter: integer,
-        magFilter: integer,
-        wrapT: integer,
-        wrapS: integer,
-        format: integer,
-        pixels: js.Object,
-        width: integer,
-        height: integer,
-        pma: js.UndefOr[scala.Nothing],
-        forceSize: Boolean,
-        flipY: Boolean
-      ): WebGLTexture = js.native
-      def createTexture2D(
-        mipLevel: integer,
-        minFilter: integer,
-        magFilter: integer,
-        wrapT: integer,
-        wrapS: integer,
-        format: integer,
-        pixels: js.Object,
-        width: integer,
-        height: integer,
         pma: Boolean
       ): WebGLTexture = js.native
       def createTexture2D(
@@ -2296,20 +2244,6 @@ object Renderer {
         width: integer,
         height: integer,
         pma: Boolean,
-        forceSize: js.UndefOr[scala.Nothing],
-        flipY: Boolean
-      ): WebGLTexture = js.native
-      def createTexture2D(
-        mipLevel: integer,
-        minFilter: integer,
-        magFilter: integer,
-        wrapT: integer,
-        wrapS: integer,
-        format: integer,
-        pixels: js.Object,
-        width: integer,
-        height: integer,
-        pma: Boolean,
         forceSize: Boolean
       ): WebGLTexture = js.native
       def createTexture2D(
@@ -2324,6 +2258,61 @@ object Renderer {
         height: integer,
         pma: Boolean,
         forceSize: Boolean,
+        flipY: Boolean
+      ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: integer,
+        minFilter: integer,
+        magFilter: integer,
+        wrapT: integer,
+        wrapS: integer,
+        format: integer,
+        pixels: js.Object,
+        width: integer,
+        height: integer,
+        pma: Boolean,
+        forceSize: Unit,
+        flipY: Boolean
+      ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: integer,
+        minFilter: integer,
+        magFilter: integer,
+        wrapT: integer,
+        wrapS: integer,
+        format: integer,
+        pixels: js.Object,
+        width: integer,
+        height: integer,
+        pma: Unit,
+        forceSize: Boolean
+      ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: integer,
+        minFilter: integer,
+        magFilter: integer,
+        wrapT: integer,
+        wrapS: integer,
+        format: integer,
+        pixels: js.Object,
+        width: integer,
+        height: integer,
+        pma: Unit,
+        forceSize: Boolean,
+        flipY: Boolean
+      ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: integer,
+        minFilter: integer,
+        magFilter: integer,
+        wrapT: integer,
+        wrapS: integer,
+        format: integer,
+        pixels: js.Object,
+        width: integer,
+        height: integer,
+        pma: Unit,
+        forceSize: Unit,
         flipY: Boolean
       ): WebGLTexture = js.native
       
@@ -2350,9 +2339,9 @@ object Renderer {
         * @param flipY Should the WebGL Texture set `UNPACK_MULTIPLY_FLIP_Y`? Default false.
         */
       def createVideoTexture(srcVideo: HTMLVideoElement): WebGLTexture = js.native
-      def createVideoTexture(srcVideo: HTMLVideoElement, noRepeat: js.UndefOr[scala.Nothing], flipY: Boolean): WebGLTexture = js.native
       def createVideoTexture(srcVideo: HTMLVideoElement, noRepeat: Boolean): WebGLTexture = js.native
       def createVideoTexture(srcVideo: HTMLVideoElement, noRepeat: Boolean, flipY: Boolean): WebGLTexture = js.native
+      def createVideoTexture(srcVideo: HTMLVideoElement, noRepeat: Unit, flipY: Boolean): WebGLTexture = js.native
       
       /**
         * Cached value for the last texture unit that was used
@@ -2407,7 +2396,7 @@ object Renderer {
       /**
         * An array of the last texture handles that were bound to the WebGLRenderingContext
         */
-      var currentTextures: js.Array[_] = js.native
+      var currentTextures: js.Array[js.Any] = js.native
       
       /**
         * The `type` of the Game Object being currently rendered.
@@ -2506,7 +2495,7 @@ object Renderer {
       /**
         * Stores the current WebGL component formats for further use
         */
-      var glFormats: js.Array[_] = js.native
+      var glFormats: js.Array[js.Any] = js.native
       
       /**
         * Internal gl function mapping for uniform look-up.
@@ -2578,7 +2567,7 @@ object Renderer {
       /**
         * Keeps track of any WebGLTexture created with the current WebGLRenderingContext
         */
-      var nativeTextures: js.Array[_] = js.native
+      var nativeTextures: js.Array[js.Any] = js.native
       
       /**
         * Is the `type` of the Game Object being currently rendered different than the
@@ -2700,13 +2689,13 @@ object Renderer {
         * @param resolution The new resolution of the renderer.
         */
       def resize(): this.type = js.native
-      def resize(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], resolution: Double): this.type = js.native
-      def resize(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
-      def resize(width: js.UndefOr[scala.Nothing], height: Double, resolution: Double): this.type = js.native
       def resize(width: Double): this.type = js.native
-      def resize(width: Double, height: js.UndefOr[scala.Nothing], resolution: Double): this.type = js.native
       def resize(width: Double, height: Double): this.type = js.native
       def resize(width: Double, height: Double, resolution: Double): this.type = js.native
+      def resize(width: Double, height: Unit, resolution: Double): this.type = js.native
+      def resize(width: Unit, height: Double): this.type = js.native
+      def resize(width: Unit, height: Double, resolution: Double): this.type = js.native
+      def resize(width: Unit, height: Unit, resolution: Double): this.type = js.native
       
       /**
         * Stack of scissor data
@@ -2968,9 +2957,9 @@ object Renderer {
         * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
         */
       def snapshot(callback: SnapshotCallback): this.type = js.native
-      def snapshot(callback: SnapshotCallback, `type`: js.UndefOr[scala.Nothing], encoderOptions: Double): this.type = js.native
       def snapshot(callback: SnapshotCallback, `type`: String): this.type = js.native
       def snapshot(callback: SnapshotCallback, `type`: String, encoderOptions: Double): this.type = js.native
+      def snapshot(callback: SnapshotCallback, `type`: Unit, encoderOptions: Double): this.type = js.native
       
       /**
         * Schedules a snapshot of the given area of the game viewport to be taken after the current frame is rendered.
@@ -2999,15 +2988,6 @@ object Renderer {
         width: integer,
         height: integer,
         callback: SnapshotCallback,
-        `type`: js.UndefOr[scala.Nothing],
-        encoderOptions: Double
-      ): this.type = js.native
-      def snapshotArea(
-        x: integer,
-        y: integer,
-        width: integer,
-        height: integer,
-        callback: SnapshotCallback,
         `type`: String
       ): this.type = js.native
       def snapshotArea(
@@ -3017,6 +2997,15 @@ object Renderer {
         height: integer,
         callback: SnapshotCallback,
         `type`: String,
+        encoderOptions: Double
+      ): this.type = js.native
+      def snapshotArea(
+        x: integer,
+        y: integer,
+        width: integer,
+        height: integer,
+        callback: SnapshotCallback,
+        `type`: Unit,
         encoderOptions: Double
       ): this.type = js.native
       

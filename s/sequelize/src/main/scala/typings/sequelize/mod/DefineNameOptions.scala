@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see DefineOptions
   */
-@js.native
 trait DefineNameOptions extends StObject {
   
   /**
     * Plural model name
     */
-  var plural: js.UndefOr[String] = js.native
+  var plural: js.UndefOr[String] = js.undefined
   
   /**
     * Singular model name
     */
-  var singular: js.UndefOr[String] = js.native
+  var singular: js.UndefOr[String] = js.undefined
 }
 object DefineNameOptions {
   

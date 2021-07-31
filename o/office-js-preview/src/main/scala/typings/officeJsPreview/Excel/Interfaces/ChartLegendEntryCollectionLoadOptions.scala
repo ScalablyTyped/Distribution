@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait ChartLegendEntryCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait ChartLegendEntryCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait ChartLegendEntryCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var index: js.UndefOr[Boolean] = js.native
+  var index: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait ChartLegendEntryCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait ChartLegendEntryCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait ChartLegendEntryCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait ChartLegendEntryCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
 }
 object ChartLegendEntryCollectionLoadOptions {
   

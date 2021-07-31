@@ -3,10 +3,8 @@ package typings.amazonConnectStreams.connect
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Core extends StObject {
   
   /**
@@ -16,21 +14,21 @@ trait Core extends StObject {
     * @param container The DOM element to place the CCP.
     * @param options The CCP init options.
     */
-  def initCCP(container: HTMLElement, options: InitCCPOptions): Unit = js.native
+  def initCCP(container: HTMLElement, options: InitCCPOptions): Unit
   
   /**
     * Subscribes a callback that executes whenever authorization fails (i.e. access denied).
     *
     * @param callback A callback that will execute whenever access is denied.
     */
-  def onAccessDenied(callback: SuccessFailCallback[js.Array[js.Any]]): Unit = js.native
+  def onAccessDenied(callback: SuccessFailCallback[js.Array[js.Any]]): Unit
   
   /**
     * Subscribes a callback that executes whenever authentication fails (e.g. SAML authentication).
     *
     * @param callback A callback that will execute whenever authentication fails.
     */
-  def onAuthFail(callback: SuccessFailCallback[js.Array[js.Any]]): Unit = js.native
+  def onAuthFail(callback: SuccessFailCallback[js.Array[js.Any]]): Unit
   
   /**
     * Subscribes a callback that executes whenever the currently selected contact on the CCP changes.
@@ -38,13 +36,13 @@ trait Core extends StObject {
     *
     * @param callback A callback that will receive a `ViewContactEvent` object.
     */
-  def onViewContact(callback: ViewContactCallback): Unit = js.native
+  def onViewContact(callback: ViewContactCallback): Unit
   
   /**
     * Terminates Amazon Connect Streams. Removing any subscription methods that have been called.
     * The CCP iframe will not be removed though, so you'll have to manually remove it.
     */
-  def terminate(): Unit = js.native
+  def terminate(): Unit
   
   /**
     * Changes the currently selected contact in the CCP user interface.
@@ -52,7 +50,7 @@ trait Core extends StObject {
     *
     * @param contactId The contact ID.
     */
-  def viewContact(contactId: String): Unit = js.native
+  def viewContact(contactId: String): Unit
 }
 object Core {
   

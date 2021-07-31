@@ -10,9 +10,9 @@ Utilities.
 | ------------------ | :-------------: |
 | Full name          | belter |
 | Keywords           | template |
-| # releases         | 87 |
-| # dependents       | 30 |
-| # downloads        | 1529139 |
+| # releases         | 59 |
+| # dependents       | 32 |
+| # downloads        | 1771850 |
 | # stars            | 0 |
 
 ## Links

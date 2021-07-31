@@ -10,9 +10,9 @@ Web3 module to interact with the Swarm network.
 | ------------------ | :-------------: |
 | Full name          | web3-bzz |
 | Keywords           | - |
-| # releases         | 39 |
+| # releases         | 41 |
 | # dependents       | 18 |
-| # downloads        | 6022851 |
+| # downloads        | 6775863 |
 | # stars            | 0 |
 
 ## Links

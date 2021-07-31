@@ -8,7 +8,6 @@ import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
 import typings.uirouterCore.urlMatcherFactoryMod.ParamFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMatcherMod {
@@ -86,13 +85,13 @@ object urlMatcherMod {
       * @returns The captured parameter values.
       */
     def exec(path: String): RawParams = js.native
-    def exec(path: String, search: js.UndefOr[scala.Nothing], hash: js.UndefOr[scala.Nothing], options: js.Any): RawParams = js.native
-    def exec(path: String, search: js.UndefOr[scala.Nothing], hash: String): RawParams = js.native
-    def exec(path: String, search: js.UndefOr[scala.Nothing], hash: String, options: js.Any): RawParams = js.native
     def exec(path: String, search: js.Any): RawParams = js.native
-    def exec(path: String, search: js.Any, hash: js.UndefOr[scala.Nothing], options: js.Any): RawParams = js.native
     def exec(path: String, search: js.Any, hash: String): RawParams = js.native
     def exec(path: String, search: js.Any, hash: String, options: js.Any): RawParams = js.native
+    def exec(path: String, search: js.Any, hash: Unit, options: js.Any): RawParams = js.native
+    def exec(path: String, search: Unit, hash: String): RawParams = js.native
+    def exec(path: String, search: Unit, hash: String, options: js.Any): RawParams = js.native
+    def exec(path: String, search: Unit, hash: Unit, options: js.Any): RawParams = js.native
     
     /**
       * Given a set of parameter values, creates a URL from this UrlMatcher.
@@ -166,14 +165,12 @@ object urlMatcherMod {
       *
       * The comparison function sorts static segments before dynamic ones.
       */
-    @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher.compare")
-    @js.native
-    def compare(a: UrlMatcher, b: UrlMatcher): Double = js.native
+    @scala.inline
+    def compare(a: UrlMatcher, b: UrlMatcher): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /** @internal */
-    @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher.encodeDashes")
-    @js.native
-    def encodeDashes(str: String): String = js.native
+    @scala.inline
+    def encodeDashes(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDashes")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** @internal */
     @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher.nameValidator")
@@ -183,13 +180,11 @@ object urlMatcherMod {
     def nameValidator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
     
     /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
-    @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher.pathSegmentsAndParams")
-    @js.native
-    def pathSegmentsAndParams(matcher: UrlMatcher): js.Any = js.native
+    @scala.inline
+    def pathSegmentsAndParams(matcher: UrlMatcher): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** @internal Given a matcher, return an array with the matcher's query params */
-    @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher.queryParams")
-    @js.native
-    def queryParams(matcher: UrlMatcher): js.Array[Param] = js.native
+    @scala.inline
+    def queryParams(matcher: UrlMatcher): js.Array[Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Array[Param]]
   }
 }

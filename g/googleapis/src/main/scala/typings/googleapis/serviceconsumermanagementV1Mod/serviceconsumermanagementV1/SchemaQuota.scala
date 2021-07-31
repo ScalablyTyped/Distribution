@@ -2,7 +2,6 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,19 +29,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * library.googleapis.com/write_calls        display_name: Write requests
   * metric_kind: DELTA        value_type: INT64
   */
-@js.native
 trait SchemaQuota extends StObject {
   
   /**
     * List of `QuotaLimit` definitions for the service.
     */
-  var limits: js.UndefOr[js.Array[SchemaQuotaLimit]] = js.native
+  var limits: js.UndefOr[js.Array[SchemaQuotaLimit]] = js.undefined
   
   /**
     * List of `MetricRule` definitions, each one mapping a selected method to
     * one or more metrics.
     */
-  var metricRules: js.UndefOr[js.Array[SchemaMetricRule]] = js.native
+  var metricRules: js.UndefOr[js.Array[SchemaMetricRule]] = js.undefined
 }
 object SchemaQuota {
   

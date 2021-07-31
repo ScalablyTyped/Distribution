@@ -16,7 +16,6 @@ import typings.firmata.firmataNumbers.`0x75`
 import typings.firmata.firmataNumbers.`0x7F`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/firmata/firmata.js/blob/v0.15.0/lib/firmata.js#L449-L464

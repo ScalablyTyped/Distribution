@@ -5,18 +5,18 @@ import typings.unist.mod.Point
 import typings.unist.mod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(value: Node): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(value: Point): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(value: Position): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("unist-util-stringify-position", JSImport.Namespace)
   @js.native
-  def apply(value: Node): String = js.native
-  @JSImport("unist-util-stringify-position", JSImport.Namespace)
-  @js.native
-  def apply(value: Point): String = js.native
-  @JSImport("unist-util-stringify-position", JSImport.Namespace)
-  @js.native
-  def apply(value: Position): String = js.native
+  val ^ : js.Any = js.native
 }

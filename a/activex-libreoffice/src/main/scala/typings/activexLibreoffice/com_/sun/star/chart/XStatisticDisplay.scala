@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,44 +14,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XChartDocument
   * @see StockDiagram
   */
-@js.native
-trait XStatisticDisplay extends XInterface {
+trait XStatisticDisplay
+  extends StObject
+     with XInterface {
   
   /**
     * @returns the properties of the down bars of a stock chart which has {@link StockDiagram.UpDown} set to `TRUE` .  The **DownBar** is the box that is drawn
     * @see ChartArea
     */
-  val DownBar: XPropertySet = js.native
+  val DownBar: XPropertySet
   
   /**
     * @returns the properties of the lines that are drawn between the lowest and highest stock value during a day.
     * @see ChartLine
     */
-  val MinMaxLine: XPropertySet = js.native
+  val MinMaxLine: XPropertySet
   
   /**
     * @returns the properties of the up bars of a stock chart which has {@link StockDiagram.UpDown} set to `TRUE` .  The **UpBar** is the box that is drawn betw
     * @see ChartArea
     */
-  val UpBar: XPropertySet = js.native
+  val UpBar: XPropertySet
   
   /**
     * @returns the properties of the down bars of a stock chart which has {@link StockDiagram.UpDown} set to `TRUE` .  The **DownBar** is the box that is drawn
     * @see ChartArea
     */
-  def getDownBar(): XPropertySet = js.native
+  def getDownBar(): XPropertySet
   
   /**
     * @returns the properties of the lines that are drawn between the lowest and highest stock value during a day.
     * @see ChartLine
     */
-  def getMinMaxLine(): XPropertySet = js.native
+  def getMinMaxLine(): XPropertySet
   
   /**
     * @returns the properties of the up bars of a stock chart which has {@link StockDiagram.UpDown} set to `TRUE` .  The **UpBar** is the box that is drawn betw
     * @see ChartArea
     */
-  def getUpBar(): XPropertySet = js.native
+  def getUpBar(): XPropertySet
 }
 object XStatisticDisplay {
   

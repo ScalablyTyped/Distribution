@@ -2,24 +2,22 @@ package typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGroupItemResource extends StObject {
   
   /**
     * The channel, video, playlist, or asset ID that YouTube uses to uniquely
     * identify the item that is being added to the group.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the type of resource being added to the group.  Valid values
     * for this property are:  * `youtube#channel`  * `youtube#playlist`  *
     * `youtube#video`  * `youtubePartner#asset`
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaGroupItemResource {
   

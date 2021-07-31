@@ -6,7 +6,6 @@ import typings.nodeZendesk.mod.ZendeskCallback
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,16 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Identities {
   
-  @js.native
   trait CreateModel extends StObject {
     
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: IdentityType = js.native
+    var `type`: IdentityType
     
-    var value: String = js.native
+    var value: String
     
-    var verified: js.UndefOr[Boolean] = js.native
+    var verified: js.UndefOr[Boolean] = js.undefined
   }
   object CreateModel {
     
@@ -57,10 +55,9 @@ object Identities {
     }
   }
   
-  @js.native
   trait CreatePayload extends StObject {
     
-    val identity: typings.nodeZendesk.mod.Users.Identities.CreateModel = js.native
+    val identity: typings.nodeZendesk.mod.Users.Identities.CreateModel
   }
   object CreatePayload {
     
@@ -122,16 +119,17 @@ object Identities {
     def sdk: typings.nodeZendesk.nodeZendeskStrings.sdk = "sdk".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.sdk]
   }
   
-  @js.native
-  trait ListPayload extends PaginablePayload {
+  trait ListPayload
+    extends StObject
+       with PaginablePayload {
     
-    val identities: js.Array[typings.nodeZendesk.mod.Users.Identities.ResponseModel] = js.native
+    val identities: js.Array[typings.nodeZendesk.mod.Users.Identities.ResponseModel]
   }
   object ListPayload {
     
     @scala.inline
     def apply(count: Double, identities: js.Array[typings.nodeZendesk.mod.Users.Identities.ResponseModel]): typings.nodeZendesk.mod.Users.Identities.ListPayload = {
-      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], identities = identities.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], identities = identities.asInstanceOf[js.Any], next_page = null, previous_page = null)
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.ListPayload]
     }
     
@@ -154,26 +152,26 @@ object Identities {
     def create(
       userId: ZendeskID,
       identity: typings.nodeZendesk.mod.Users.Identities.CreatePayload,
-      cb: ZendeskCallback[_, _]
+      cb: ZendeskCallback[js.Any, js.Any]
     ): typings.nodeZendesk.mod.Users.Identities.ResponseModel = js.native
     
-    def delete(userId: ZendeskID, identityId: ZendeskID): js.Promise[_] = js.native
+    def delete(userId: ZendeskID, identityId: ZendeskID): js.Promise[js.Any] = js.native
     /** Deleting Identities */
-    def delete(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[_, _]): js.Any = js.native
+    def delete(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
     
     def list(userId: ZendeskID): js.Promise[typings.nodeZendesk.mod.Users.Identities.ListPayload] = js.native
     /** Listing Identities */
-    def list(userId: ZendeskID, cb: ZendeskCallback[_, _]): typings.nodeZendesk.mod.Users.Identities.ListPayload = js.native
+    def list(userId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): typings.nodeZendesk.mod.Users.Identities.ListPayload = js.native
     
     def makePrimary(userId: ZendeskID, identityId: ZendeskID): js.Promise[typings.nodeZendesk.mod.Users.Identities.ListPayload] = js.native
-    def makePrimary(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[_, _]): typings.nodeZendesk.mod.Users.Identities.ListPayload = js.native
+    def makePrimary(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): typings.nodeZendesk.mod.Users.Identities.ListPayload = js.native
     
-    def requestVerification(userId: ZendeskID, identityId: ZendeskID): js.Promise[_] = js.native
-    def requestVerification(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[_, _]): js.Any = js.native
+    def requestVerification(userId: ZendeskID, identityId: ZendeskID): js.Promise[js.Any] = js.native
+    def requestVerification(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
     
     def show(userId: ZendeskID, identityId: ZendeskID): js.Promise[typings.nodeZendesk.mod.Users.Identities.ResponsePayload] = js.native
     /** Viewing Identities */
-    def show(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[_, _]): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = js.native
+    def show(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = js.native
     
     def update(
       userId: ZendeskID,
@@ -185,31 +183,32 @@ object Identities {
       userId: ZendeskID,
       identityId: ZendeskID,
       identity: typings.nodeZendesk.mod.Users.Identities.UpdatePayload,
-      cb: ZendeskCallback[_, _]
+      cb: ZendeskCallback[js.Any, js.Any]
     ): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = js.native
     
     def verify(userId: ZendeskID, identityId: ZendeskID): js.Promise[typings.nodeZendesk.mod.Users.Identities.ResponsePayload] = js.native
-    def verify(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[_, _]): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = js.native
+    def verify(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = js.native
   }
   
-  @js.native
-  trait ResponseModel extends AuditableModel {
+  trait ResponseModel
+    extends StObject
+       with AuditableModel {
     
-    val deliverable_state: DeliverableState = js.native
+    val deliverable_state: DeliverableState
     
-    val primary: Boolean = js.native
+    val primary: Boolean
     
-    val `type`: IdentityType = js.native
+    val `type`: IdentityType
     
-    val undeliverable_count: Double = js.native
+    val undeliverable_count: Double
     
-    val url: String = js.native
+    val url: String
     
-    val user_id: ZendeskID = js.native
+    val user_id: ZendeskID
     
-    val value: String = js.native
+    val value: String
     
-    val verified: Boolean = js.native
+    val verified: Boolean
   }
   object ResponseModel {
     
@@ -226,7 +225,7 @@ object Identities {
       value: String,
       verified: Boolean
     ): typings.nodeZendesk.mod.Users.Identities.ResponseModel = {
-      val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], deliverable_state = deliverable_state.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], undeliverable_count = undeliverable_count.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], deliverable_state = deliverable_state.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], undeliverable_count = undeliverable_count.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], updated_at = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.ResponseModel]
     }
@@ -260,10 +259,9 @@ object Identities {
     }
   }
   
-  @js.native
   trait ResponsePayload extends StObject {
     
-    val identity: typings.nodeZendesk.mod.Users.Identities.ResponseModel = js.native
+    val identity: typings.nodeZendesk.mod.Users.Identities.ResponseModel
   }
   object ResponsePayload {
     
@@ -281,12 +279,11 @@ object Identities {
     }
   }
   
-  @js.native
   trait UpdateModel extends StObject {
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
     
-    var verified: js.UndefOr[Boolean] = js.native
+    var verified: js.UndefOr[Boolean] = js.undefined
   }
   object UpdateModel {
     
@@ -313,10 +310,9 @@ object Identities {
     }
   }
   
-  @js.native
   trait UpdatePayload extends StObject {
     
-    val identity: typings.nodeZendesk.mod.Users.Identities.UpdateModel = js.native
+    val identity: typings.nodeZendesk.mod.Users.Identities.UpdateModel
   }
   object UpdatePayload {
     

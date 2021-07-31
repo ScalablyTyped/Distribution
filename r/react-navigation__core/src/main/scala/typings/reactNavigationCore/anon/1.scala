@@ -2,13 +2,11 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1`[Data] extends StObject {
   
-  val data: js.UndefOr[Data] = js.native
+  val data: js.UndefOr[Data] = js.undefined
 }
 object `1` {
   
@@ -19,7 +17,7 @@ object `1` {
   }
   
   @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`[_], Data] (val x: Self with `1`[Data]) extends AnyVal {
+  implicit class `1MutableBuilder`[Self <: `1`[?], Data] (val x: Self & `1`[Data]) extends AnyVal {
     
     @scala.inline
     def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defsMod {
@@ -16,10 +15,9 @@ object defsMod {
   
   type Defs = Component[DefsProps, js.Object, js.Any]
   
-  @js.native
   trait DefsProps extends StObject {
     
-    var children: js.Array[ReactNode] | ReactNode = js.native
+    var children: js.Array[ReactNode] | ReactNode
   }
   object DefsProps {
     

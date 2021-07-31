@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to convert file system folder tree in to a package. */
-@js.native
-trait XPackageStructureCreator extends XInterface {
+trait XPackageStructureCreator
+  extends StObject
+     with XInterface {
   
   /**
     * converts file system folder tree in to a package.
@@ -18,7 +18,7 @@ trait XPackageStructureCreator extends XInterface {
     * @param xTargetStream the result package will be written into this stream
     * @throws com::sun::star::io::IOException in case any problem on reading/writing appears
     */
-  def convertToPackage(sFolderURL: String, xTargetStream: XOutputStream): Unit = js.native
+  def convertToPackage(sFolderURL: String, xTargetStream: XOutputStream): Unit
 }
 object XPackageStructureCreator {
   

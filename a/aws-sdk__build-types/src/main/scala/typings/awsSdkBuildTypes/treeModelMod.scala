@@ -11,15 +11,13 @@ import typings.std.Blob
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeModelMod {
   
-  @js.native
   trait Documented extends StObject {
     
-    var documentation: String = js.native
+    var documentation: String
   }
   object Documented {
     
@@ -37,10 +35,9 @@ object treeModelMod {
     }
   }
   
-  @js.native
   trait Named extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Named {
     
@@ -58,13 +55,14 @@ object treeModelMod {
     }
   }
   
-  type NamedAndDocumented[T] = Documented with Named with T
+  type NamedAndDocumented[T] = Documented & Named & T
   
-  @js.native
-  trait NormalizedModel extends ApiModel {
+  trait NormalizedModel
+    extends StObject
+       with ApiModel {
     
     @JSName("operations")
-    var operations_NormalizedModel: NormalizedOperationMap = js.native
+    var operations_NormalizedModel: NormalizedOperationMap
   }
   object NormalizedModel {
     
@@ -86,17 +84,18 @@ object treeModelMod {
     }
   }
   
-  @js.native
-  trait NormalizedOperation extends Operation {
+  trait NormalizedOperation
+    extends StObject
+       with Operation {
     
     @JSName("errors")
-    var errors_NormalizedOperation: js.Array[StructureMember] = js.native
+    var errors_NormalizedOperation: js.Array[StructureMember]
     
     @JSName("input")
-    var input_NormalizedOperation: StructureMember = js.native
+    var input_NormalizedOperation: StructureMember
     
     @JSName("output")
-    var output_NormalizedOperation: StructureMember = js.native
+    var output_NormalizedOperation: StructureMember
   }
   object NormalizedOperation {
     
@@ -131,16 +130,16 @@ object treeModelMod {
   
   type NormalizedOperationMap = StringDictionary[NormalizedOperation]
   
-  @js.native
   trait TreeModel
-    extends Documented
+    extends StObject
+       with Documented
        with Named {
     
-    var metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any = js.native
+    var metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any
     
-    var operations: TreeModelOperationMap = js.native
+    var operations: TreeModelOperationMap
     
-    var shapes: TreeModelShapeMap = js.native
+    var shapes: TreeModelShapeMap
   }
   object TreeModel {
     
@@ -173,12 +172,12 @@ object treeModelMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List * / any */ @js.native
-  trait TreeModelList
-    extends Documented
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List * / any */ trait TreeModelList
+    extends StObject
+       with Documented
        with Named {
     
-    var member: TreeModelMember = js.native
+    var member: TreeModelMember
   }
   object TreeModelList {
     
@@ -198,7 +197,8 @@ object treeModelMod {
   
   @js.native
   trait TreeModelMap
-    extends Documented
+    extends StObject
+       with Documented
        with Named
        with Map[
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ js.Any, 
@@ -212,10 +212,9 @@ object treeModelMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in keyof @aws-sdk/build-types.@aws-sdk/build-types/build/TreeModel.Documented ]:? @aws-sdk/build-types.@aws-sdk/build-types/build/TreeModel.Documented[P]}
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Member * / any */ @js.native
-  trait TreeModelMember extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Member * / any */ trait TreeModelMember extends StObject {
     
-    var shape: TreeModelShape = js.native
+    var shape: TreeModelShape
   }
   object TreeModelMember {
     
@@ -234,20 +233,20 @@ object treeModelMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperationModel * / any */ @js.native
-  trait TreeModelOperation
-    extends Documented
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperationModel * / any */ trait TreeModelOperation
+    extends StObject
+       with Documented
        with Named {
     
     var authtype: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportedSignatureVersion */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var errors: js.Array[TreeModelOperationMember] = js.native
+    var errors: js.Array[TreeModelOperationMember]
     
-    var input: TreeModelOperationMember = js.native
+    var input: TreeModelOperationMember
     
-    var output: TreeModelOperationMember = js.native
+    var output: TreeModelOperationMember
   }
   object TreeModelOperation {
     
@@ -290,11 +289,12 @@ object treeModelMod {
   
   type TreeModelOperationMap = StringDictionary[TreeModelOperation]
   
-  @js.native
-  trait TreeModelOperationMember extends TreeModelMember {
+  trait TreeModelOperationMember
+    extends StObject
+       with TreeModelMember {
     
     @JSName("shape")
-    var shape_TreeModelOperationMember: TreeModelStructure = js.native
+    var shape_TreeModelOperationMember: TreeModelStructure
   }
   object TreeModelOperationMember {
     
@@ -320,24 +320,25 @@ object treeModelMod {
   
   @js.native
   trait TreeModelString
-    extends typings.std.String
+    extends StObject
        with Documented
-       with Named {
+       with Named
+       with typings.std.String {
     
-    var enum: js.UndefOr[js.Array[String]] = js.native
+    var `enum`: js.UndefOr[js.Array[String]] = js.native
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Structure * / any */ @js.native
-  trait TreeModelStructure
-    extends Documented
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Structure * / any */ trait TreeModelStructure
+    extends StObject
+       with Documented
        with Named {
     
-    var exception: js.UndefOr[Boolean] = js.native
+    var exception: js.UndefOr[Boolean] = js.undefined
     
-    var members: StringDictionary[TreeModelMember] = js.native
+    var members: StringDictionary[TreeModelMember]
     
-    var topLevel: js.UndefOr[input | output] = js.native
+    var topLevel: js.UndefOr[input | output] = js.undefined
   }
   object TreeModelStructure {
     

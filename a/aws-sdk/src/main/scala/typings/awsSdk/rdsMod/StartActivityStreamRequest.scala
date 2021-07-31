@@ -2,31 +2,29 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartActivityStreamRequest extends StObject {
   
   /**
     * Specifies whether or not the database activity stream is to start as soon as possible, regardless of the maintenance window for the database.
     */
-  var ApplyImmediately: js.UndefOr[BooleanOptional] = js.native
+  var ApplyImmediately: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The AWS KMS key identifier for encrypting messages in the database activity stream. The key identifier can be either a key ID, a key ARN, or a key alias.
     */
-  var KmsKeyId: String = js.native
+  var KmsKeyId: String
   
   /**
     * Specifies the mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously. 
     */
-  var Mode: ActivityStreamMode = js.native
+  var Mode: ActivityStreamMode
   
   /**
     * The Amazon Resource Name (ARN) of the DB cluster, for example arn:aws:rds:us-east-1:12345667890:cluster:das-cluster.
     */
-  var ResourceArn: String = js.native
+  var ResourceArn: String
 }
 object StartActivityStreamRequest {
   

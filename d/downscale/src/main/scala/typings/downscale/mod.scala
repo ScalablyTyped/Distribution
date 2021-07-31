@@ -10,7 +10,6 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,33 +17,32 @@ object mod {
   /**
     * Overloads that automatically type the return value based on the selected options
     */
-  @JSImport("downscale", JSImport.Namespace)
-  @js.native
-  def apply(source: ImageSource, width: Double, height: Double): js.Promise[HTMLCanvasElement] = js.native
-  @JSImport("downscale", JSImport.Namespace)
-  @js.native
-  def apply(source: ImageSource, width: Double, height: Double, options: DownscaleOptionsreturnBlo): js.Promise[Blob] = js.native
-  @JSImport("downscale", JSImport.Namespace)
-  @js.native
-  def apply(source: ImageSource, width: Double, height: Double, options: DownscaleOptionsreturnBloImageType): js.Promise[String] = js.native
-  @JSImport("downscale", JSImport.Namespace)
-  @js.native
-  def apply(source: ImageSource, width: Double, height: Double, options: DownscaleOptionsreturnCan): js.Promise[HTMLCanvasElement] = js.native
+  @scala.inline
+  def apply(source: ImageSource, width: Double, height: Double): js.Promise[HTMLCanvasElement] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLCanvasElement]]
+  @scala.inline
+  def apply(source: ImageSource, width: Double, height: Double, options: DownscaleOptionsreturnBlo): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
+  @scala.inline
+  def apply(source: ImageSource, width: Double, height: Double, options: DownscaleOptionsreturnBloImageType): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(source: ImageSource, width: Double, height: Double, options: DownscaleOptionsreturnCan): js.Promise[HTMLCanvasElement] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLCanvasElement]]
   
+  @JSImport("downscale", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait DownscaleOptions extends StObject {
     
-    var imageType: js.UndefOr[String] = js.native
+    var imageType: js.UndefOr[String] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var returnBlob: js.UndefOr[Boolean] = js.native
+    var returnBlob: js.UndefOr[Boolean] = js.undefined
     
-    var returnCanvas: js.UndefOr[Boolean] = js.native
+    var returnCanvas: js.UndefOr[Boolean] = js.undefined
     
-    var sourceX: js.UndefOr[Double] = js.native
+    var sourceX: js.UndefOr[Double] = js.undefined
     
-    var sourceY: js.UndefOr[Double] = js.native
+    var sourceY: js.UndefOr[Double] = js.undefined
   }
   object DownscaleOptions {
     

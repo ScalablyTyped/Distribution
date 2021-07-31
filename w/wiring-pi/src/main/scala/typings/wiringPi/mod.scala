@@ -3,10 +3,13 @@ package typings.wiringPi
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("wiring-pi", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("wiring-pi", "DAC7678_VREF_MODE_FLEXIBLE_ALWAYS_OFF")
   @js.native
@@ -384,172 +387,130 @@ object mod {
   @js.native
   val WPI_MODE_UNINITIALISED: Double = js.native
   
-  @JSImport("wiring-pi", "analogRead")
-  @js.native
-  def analogRead(pin: Double): Double = js.native
+  @scala.inline
+  def analogRead(pin: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("analogRead")(pin.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "analogWrite")
-  @js.native
-  def analogWrite(pin: Double, value: Double): Unit = js.native
+  @scala.inline
+  def analogWrite(pin: Double, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("analogWrite")(pin.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "dac7678Setup")
-  @js.native
-  def dac7678Setup(pinBase: Double, i2cAddress: Double, vrefMode: Double): Double = js.native
+  @scala.inline
+  def dac7678Setup(pinBase: Double, i2cAddress: Double, vrefMode: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dac7678Setup")(pinBase.asInstanceOf[js.Any], i2cAddress.asInstanceOf[js.Any], vrefMode.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "delay")
-  @js.native
-  def delay(ms: Double): Unit = js.native
+  @scala.inline
+  def delay(ms: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "delayMicroseconds")
-  @js.native
-  def delayMicroseconds(us: Double): Unit = js.native
+  @scala.inline
+  def delayMicroseconds(us: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("delayMicroseconds")(us.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "digitalRead")
-  @js.native
-  def digitalRead(pin: Double): Double = js.native
+  @scala.inline
+  def digitalRead(pin: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("digitalRead")(pin.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "digitalWrite")
-  @js.native
-  def digitalWrite(pin: Double, state: Double): Unit = js.native
+  @scala.inline
+  def digitalWrite(pin: Double, state: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("digitalWrite")(pin.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "digitalWriteByte")
-  @js.native
-  def digitalWriteByte(byte: Double): Unit = js.native
+  @scala.inline
+  def digitalWriteByte(byte: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("digitalWriteByte")(byte.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "drcSerialSetup")
-  @js.native
-  def drcSerialSetup(pinBase: Double, numPins: Double, device: String, baudrate: Double): Double = js.native
+  @scala.inline
+  def drcSerialSetup(pinBase: Double, numPins: Double, device: String, baudrate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("drcSerialSetup")(pinBase.asInstanceOf[js.Any], numPins.asInstanceOf[js.Any], device.asInstanceOf[js.Any], baudrate.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "ds1302clockRead")
-  @js.native
-  def ds1302clockRead(): js.Array[Double] = js.native
+  @scala.inline
+  def ds1302clockRead(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ds1302clockRead")().asInstanceOf[js.Array[Double]]
   
-  @JSImport("wiring-pi", "ds1302clockWrite")
-  @js.native
-  def ds1302clockWrite(clcokData: js.Array[Double]): Unit = js.native
+  @scala.inline
+  def ds1302clockWrite(clcokData: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ds1302clockWrite")(clcokData.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "ds1302ramRead")
-  @js.native
-  def ds1302ramRead(address: Double): Double = js.native
+  @scala.inline
+  def ds1302ramRead(address: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds1302ramRead")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "ds1302ramWrite")
-  @js.native
-  def ds1302ramWrite(address: Double, data: Double): Unit = js.native
+  @scala.inline
+  def ds1302ramWrite(address: Double, data: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ds1302ramWrite")(address.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "ds1302rtcRead")
-  @js.native
-  def ds1302rtcRead(reg: Double): Double = js.native
+  @scala.inline
+  def ds1302rtcRead(reg: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ds1302rtcRead")(reg.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "ds1302rtcWrite")
-  @js.native
-  def ds1302rtcWrite(reg: Double, data: Double): Unit = js.native
+  @scala.inline
+  def ds1302rtcWrite(reg: Double, data: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ds1302rtcWrite")(reg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "ds1302setup")
-  @js.native
-  def ds1302setup(clockPin: Double, dataPin: Double, csPin: Double): Unit = js.native
+  @scala.inline
+  def ds1302setup(clockPin: Double, dataPin: Double, csPin: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ds1302setup")(clockPin.asInstanceOf[js.Any], dataPin.asInstanceOf[js.Any], csPin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "ds1302trickleCharge")
-  @js.native
-  def ds1302trickleCharge(diodes: Double, resistors: Double): Unit = js.native
+  @scala.inline
+  def ds1302trickleCharge(diodes: Double, resistors: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ds1302trickleCharge")(diodes.asInstanceOf[js.Any], resistors.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "gertboardAnalogSetup")
-  @js.native
-  def gertboardAnalogSetup(pinBase: Double): Double = js.native
+  @scala.inline
+  def gertboardAnalogSetup(pinBase: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("gertboardAnalogSetup")(pinBase.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "getAlt")
-  @js.native
-  def getAlt(pin: Double): Double = js.native
+  @scala.inline
+  def getAlt(pin: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlt")(pin.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "gpioClockSet")
-  @js.native
-  def gpioClockSet(pin: Double, frequency: Double): Unit = js.native
+  @scala.inline
+  def gpioClockSet(pin: Double, frequency: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gpioClockSet")(pin.asInstanceOf[js.Any], frequency.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64circle")
-  @js.native
-  def lcd128x64circle(x: Double, y: Double, r: Double, color: Double, filled: Double): Unit = js.native
+  @scala.inline
+  def lcd128x64circle(x: Double, y: Double, r: Double, color: Double, filled: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64circle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], r.asInstanceOf[js.Any], color.asInstanceOf[js.Any], filled.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64clear")
-  @js.native
-  def lcd128x64clear(color: Double): Unit = js.native
+  @scala.inline
+  def lcd128x64clear(color: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64clear")(color.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64ellipse")
-  @js.native
-  def lcd128x64ellipse(cx: Double, cy: Double, xRadius: Double, yRadius: Double, color: Double, filled: Double): Unit = js.native
+  @scala.inline
+  def lcd128x64ellipse(cx: Double, cy: Double, xRadius: Double, yRadius: Double, color: Double, filled: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64ellipse")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], xRadius.asInstanceOf[js.Any], yRadius.asInstanceOf[js.Any], color.asInstanceOf[js.Any], filled.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64getScreenSize")
-  @js.native
-  def lcd128x64getScreenSize(): js.Array[Double] = js.native
+  @scala.inline
+  def lcd128x64getScreenSize(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64getScreenSize")().asInstanceOf[js.Array[Double]]
   
-  @JSImport("wiring-pi", "lcd128x64line")
-  @js.native
-  def lcd128x64line(x0: Double, y0: Double, x1: Double, y1: Double, color: Double): Unit = js.native
+  @scala.inline
+  def lcd128x64line(x0: Double, y0: Double, x1: Double, y1: Double, color: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64line")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64lineTo")
-  @js.native
-  def lcd128x64lineTo(x: Double, y: Double, color: Double): Unit = js.native
+  @scala.inline
+  def lcd128x64lineTo(x: Double, y: Double, color: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64lineTo")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64orientCoordinates")
-  @js.native
-  def lcd128x64orientCoordinates(): js.Array[Double] = js.native
+  @scala.inline
+  def lcd128x64orientCoordinates(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64orientCoordinates")().asInstanceOf[js.Array[Double]]
   
-  @JSImport("wiring-pi", "lcd128x64point")
-  @js.native
-  def lcd128x64point(x: Double, y: Double, color: Double): Unit = js.native
+  @scala.inline
+  def lcd128x64point(x: Double, y: Double, color: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64putchar")
-  @js.native
-  def lcd128x64putchar(x: Double, y: Double, c: Double, bgColor: Double, fgColor: Double): Unit = js.native
+  @scala.inline
+  def lcd128x64putchar(x: Double, y: Double, c: Double, bgColor: Double, fgColor: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64putchar")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], c.asInstanceOf[js.Any], bgColor.asInstanceOf[js.Any], fgColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64puts")
-  @js.native
-  def lcd128x64puts(x: Double, y: Double, data: String, bgColor: Double, fgColor: Double): Unit = js.native
+  @scala.inline
+  def lcd128x64puts(x: Double, y: Double, data: String, bgColor: Double, fgColor: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64puts")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], data.asInstanceOf[js.Any], bgColor.asInstanceOf[js.Any], fgColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64rectangle")
-  @js.native
-  def lcd128x64rectangle(x1: Double, y1: Double, x2: Double, y2: Double, color: Double, filled: Double): Unit = js.native
+  @scala.inline
+  def lcd128x64rectangle(x1: Double, y1: Double, x2: Double, y2: Double, color: Double, filled: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64rectangle")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], color.asInstanceOf[js.Any], filled.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64setOrientation")
-  @js.native
-  def lcd128x64setOrientation(orientation: Double): Unit = js.native
+  @scala.inline
+  def lcd128x64setOrientation(orientation: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64setOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64setOrigin")
-  @js.native
-  def lcd128x64setOrigin(x: Double, y: Double): Unit = js.native
+  @scala.inline
+  def lcd128x64setOrigin(x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64setOrigin")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcd128x64setup")
-  @js.native
-  def lcd128x64setup(): Double = js.native
+  @scala.inline
+  def lcd128x64setup(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64setup")().asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "lcd128x64update")
-  @js.native
-  def lcd128x64update(): Unit = js.native
+  @scala.inline
+  def lcd128x64update(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lcd128x64update")().asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcdCharDef")
-  @js.native
-  def lcdCharDef(fd: Double, index: Double, data: js.Array[Double]): Unit = js.native
+  @scala.inline
+  def lcdCharDef(fd: Double, index: Double, data: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcdCharDef")(fd.asInstanceOf[js.Any], index.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcdClear")
-  @js.native
-  def lcdClear(fd: Double): Unit = js.native
+  @scala.inline
+  def lcdClear(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lcdClear")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcdCursor")
-  @js.native
-  def lcdCursor(fd: Double, state: Double): Unit = js.native
+  @scala.inline
+  def lcdCursor(fd: Double, state: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcdCursor")(fd.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcdCursorBlink")
-  @js.native
-  def lcdCursorBlink(fd: Double, state: Double): Unit = js.native
+  @scala.inline
+  def lcdCursorBlink(fd: Double, state: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcdCursorBlink")(fd.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcdDisplay")
-  @js.native
-  def lcdDisplay(fd: Double, state: Double): Unit = js.native
+  @scala.inline
+  def lcdDisplay(fd: Double, state: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcdDisplay")(fd.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcdHome")
-  @js.native
-  def lcdHome(fd: Double): Unit = js.native
+  @scala.inline
+  def lcdHome(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lcdHome")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "lcdInit")
-  @js.native
+  @scala.inline
   def lcdInit(
     rows: Double,
     cols: Double,
@@ -564,400 +525,304 @@ object mod {
     d5: Double,
     d6: Double,
     d7: Double
-  ): Double = js.native
-  
-  @JSImport("wiring-pi", "lcdPosition")
-  @js.native
-  def lcdPosition(fd: Double, x: Double, y: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "lcdPrintf")
-  @js.native
-  def lcdPrintf(fd: Double, data: String): Unit = js.native
-  
-  @JSImport("wiring-pi", "lcdPutchar")
-  @js.native
-  def lcdPutchar(fd: Double, data: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "lcdPuts")
-  @js.native
-  def lcdPuts(fd: Double, data: String): Unit = js.native
-  
-  @JSImport("wiring-pi", "lcdSendCommand")
-  @js.native
-  def lcdSendCommand(fd: Double, command: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "max31855Setup")
-  @js.native
-  def max31855Setup(pinBase: Double, spiChannel: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "max5322Setup")
-  @js.native
-  def max5322Setup(pinBase: Double, spiChannel: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "maxDetectRead")
-  @js.native
-  def maxDetectRead(pin: Double): js.Array[Double] = js.native
-  
-  @JSImport("wiring-pi", "mcp23008Setup")
-  @js.native
-  def mcp23008Setup(pinBase: Double, i2cAddress: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "mcp23s08Setup")
-  @js.native
-  def mcp23s08Setup(pinBase: Double, spiChannel: Double, devId: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "mcp23s17Setup")
-  @js.native
-  def mcp23s17Setup(pinBase: Double, spiChannel: Double, devId: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "mcp3002Setup")
-  @js.native
-  def mcp3002Setup(pinBase: Double, spiChannel: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "mcp3004Setup")
-  @js.native
-  def mcp3004Setup(pinBase: Double, spiChannel: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "mcp3422Setup")
-  @js.native
-  def mcp3422Setup(pinBase: Double, i2cAddress: Double, sampleRate: Double, gain: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "mcp4802Setup")
-  @js.native
-  def mcp4802Setup(pinBase: Double, spiChannel: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "micros")
-  @js.native
-  def micros(): Double = js.native
-  
-  @JSImport("wiring-pi", "millis")
-  @js.native
-  def millis(): Double = js.native
-  
-  @JSImport("wiring-pi", "mpc23016Setup")
-  @js.native
-  def mpc23016Setup(pinBase: Double, i2cAddress: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "mpc23017Setup")
-  @js.native
-  def mpc23017Setup(pinBase: Double, i2cAddress: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "pca9685Setuo")
-  @js.native
-  def pca9685Setuo(pinBase: Double, i2cAddress: Double, frequency: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "pcf8574Setup")
-  @js.native
-  def pcf8574Setup(pinBase: Double, i2cAddress: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "pcf8591Setup")
-  @js.native
-  def pcf8591Setup(pinBase: Double, i2cAddress: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "physPinToGpio")
-  @js.native
-  def physPinToGpio(pin: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "piBoardId")
-  @js.native
-  def piBoardId(): PiBoardId_ = js.native
-  
-  @JSImport("wiring-pi", "piBoardRev")
-  @js.native
-  def piBoardRev(): Double = js.native
-  
-  @JSImport("wiring-pi", "piFaceSetup")
-  @js.native
-  def piFaceSetup(pinBase: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "piGlow1")
-  @js.native
-  def piGlow1(leg: Double, ring: Double, intensity: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "piGlowLeg")
-  @js.native
-  def piGlowLeg(leg: Double, intensity: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "piGlowRing")
-  @js.native
-  def piGlowRing(ring: Double, intensity: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "piGlowSetup")
-  @js.native
-  def piGlowSetup(clear: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "pinMode")
-  @js.native
-  def pinMode(pin: Double, mode: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "pinModeAlt")
-  @js.native
-  def pinModeAlt(pin: Double, mode: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "pullUpDnControl")
-  @js.native
-  def pullUpDnControl(pin: Double, pud: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "pulseIn")
-  @js.native
-  def pulseIn(pin: Double, state: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "pwmSetClock")
-  @js.native
-  def pwmSetClock(divisor: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "pwmSetMode")
-  @js.native
-  def pwmSetMode(mode: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "pwmSetRange")
-  @js.native
-  def pwmSetRange(range: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "pwmToneWrite")
-  @js.native
-  def pwmToneWrite(pin: Double, frequency: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "pwmWrite")
-  @js.native
-  def pwmWrite(pin: Double, value: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "readNesJoystick")
-  @js.native
-  def readNesJoystick(joystick: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "readRHT03")
-  @js.native
-  def readRHT03(pin: Double): js.Array[Double] = js.native
-  
-  @JSImport("wiring-pi", "serialClose")
-  @js.native
-  def serialClose(fd: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "serialDataAvail")
-  @js.native
-  def serialDataAvail(fd: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "serialFlush")
-  @js.native
-  def serialFlush(fd: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "serialGetchar")
-  @js.native
-  def serialGetchar(fd: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "serialOpen")
-  @js.native
-  def serialOpen(device: String, baudrate: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "serialPrintf")
-  @js.native
-  def serialPrintf(fd: Double, data: String): Unit = js.native
-  
-  @JSImport("wiring-pi", "serialPutChar")
-  @js.native
-  def serialPutChar(fd: Double, character: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "serialPuts")
-  @js.native
-  def serialPuts(fd: Double, data: String): Unit = js.native
-  
-  @JSImport("wiring-pi", "setPadDrive")
-  @js.native
-  def setPadDrive(group: Double, value: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "setup")
-  @js.native
-  def setup(mode: String): Double = js.native
-  
-  @JSImport("wiring-pi", "setupNesJoystick")
-  @js.native
-  def setupNesJoystick(dPin: Double, cPin: Double, lPin: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "shiftIn")
-  @js.native
-  def shiftIn(dPin: Double, cPin: Double, order: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "shiftOut")
-  @js.native
-  def shiftOut(dPin: Double, cPin: Double, order: Double, value: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "sn3218Setup")
-  @js.native
-  def sn3218Setup(pinBase: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "softPwmCreate")
-  @js.native
-  def softPwmCreate(pin: Double, value: Double, range: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "softPwmStop")
-  @js.native
-  def softPwmStop(pin: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "softPwmWrite")
-  @js.native
-  def softPwmWrite(pin: Double, value: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "softServoSetup")
-  @js.native
-  def softServoSetup(p0: Double, p1: Double, p2: Double, p3: Double, p4: Double, p5: Double, p6: Double, p7: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "softServoWrite")
-  @js.native
-  def softServoWrite(pin: Double, value: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "softToneCreate")
-  @js.native
-  def softToneCreate(pin: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "softToneStop")
-  @js.native
-  def softToneStop(pin: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "softToneWrite")
-  @js.native
-  def softToneWrite(pin: Double, frequency: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "sr595Setup")
-  @js.native
-  def sr595Setup(pinBase: Double, numPins: Double, dataPin: Double, clockPin: Double, latchPin: Double): Double = js.native
-  
-  @JSImport("wiring-pi", "tcs34725ClearInterrupt")
-  @js.native
-  def tcs34725ClearInterrupt(id: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "tcs34725Disable")
-  @js.native
-  def tcs34725Disable(id: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "tcs34725Enable")
-  @js.native
-  def tcs34725Enable(id: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "tcs34725GetCorrelatedColorTemperature")
-  @js.native
-  def tcs34725GetCorrelatedColorTemperature(r: Double, g: Double, b: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "tcs34725GetIlluminance")
-  @js.native
-  def tcs34725GetIlluminance(r: Double, g: Double, b: Double): Unit = js.native
-  
-  @JSImport("wiring-pi", "tcs34725ReadHSV")
-  @js.native
-  def tcs34725ReadHSV(id: Double): tcs34725HSV = js.native
-  
-  @JSImport("wiring-pi", "tcs34725ReadRGBC")
-  @js.native
-  def tcs34725ReadRGBC(id: Double): tcs34725RGBC = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lcdInit")(rows.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], bits.asInstanceOf[js.Any], rs.asInstanceOf[js.Any], strb.asInstanceOf[js.Any], d0.asInstanceOf[js.Any], d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any], d3.asInstanceOf[js.Any], d4.asInstanceOf[js.Any], d5.asInstanceOf[js.Any], d6.asInstanceOf[js.Any], d7.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "tcs34725SetInterrupt")
-  @js.native
-  def tcs34725SetInterrupt(id: Double, aien: Double): Unit = js.native
+  @scala.inline
+  def lcdPosition(fd: Double, x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcdPosition")(fd.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "tcs34725SetInterruptLimits")
-  @js.native
-  def tcs34725SetInterruptLimits(id: Double, low: Double, high: Double): Unit = js.native
+  @scala.inline
+  def lcdPrintf(fd: Double, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcdPrintf")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "tcs34725Setup")
-  @js.native
-  def tcs34725Setup(i2cAddress: Double, integrationTime: Double, gain: Double): Double = js.native
+  @scala.inline
+  def lcdPutchar(fd: Double, data: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcdPutchar")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "wiringPiI2CClose")
-  @js.native
-  def wiringPiI2CClose(fd: Double): Unit = js.native
+  @scala.inline
+  def lcdPuts(fd: Double, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcdPuts")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "wiringPiI2CRead")
-  @js.native
-  def wiringPiI2CRead(fd: Double): Double = js.native
+  @scala.inline
+  def lcdSendCommand(fd: Double, command: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lcdSendCommand")(fd.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wiring-pi", "wiringPiI2CReadReg16")
-  @js.native
-  def wiringPiI2CReadReg16(fd: Double, reg: Double): Double = js.native
+  @scala.inline
+  def max31855Setup(pinBase: Double, spiChannel: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("max31855Setup")(pinBase.asInstanceOf[js.Any], spiChannel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiI2CReadReg8")
-  @js.native
-  def wiringPiI2CReadReg8(fd: Double, reg: Double): Double = js.native
+  @scala.inline
+  def max5322Setup(pinBase: Double, spiChannel: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("max5322Setup")(pinBase.asInstanceOf[js.Any], spiChannel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiI2CSetup")
-  @js.native
-  def wiringPiI2CSetup(devId: Double): Double = js.native
+  @scala.inline
+  def maxDetectRead(pin: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("maxDetectRead")(pin.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("wiring-pi", "wiringPiI2CSetupInterface")
-  @js.native
-  def wiringPiI2CSetupInterface(device: String, devId: Double): Double = js.native
+  @scala.inline
+  def mcp23008Setup(pinBase: Double, i2cAddress: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mcp23008Setup")(pinBase.asInstanceOf[js.Any], i2cAddress.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiI2CWrite")
-  @js.native
-  def wiringPiI2CWrite(fd: Double, data: Double): Double = js.native
+  @scala.inline
+  def mcp23s08Setup(pinBase: Double, spiChannel: Double, devId: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mcp23s08Setup")(pinBase.asInstanceOf[js.Any], spiChannel.asInstanceOf[js.Any], devId.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiI2CWriteReg16")
-  @js.native
-  def wiringPiI2CWriteReg16(fd: Double, reg: Double, data: Double): Double = js.native
+  @scala.inline
+  def mcp23s17Setup(pinBase: Double, spiChannel: Double, devId: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mcp23s17Setup")(pinBase.asInstanceOf[js.Any], spiChannel.asInstanceOf[js.Any], devId.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiI2CWriteReg8")
-  @js.native
-  def wiringPiI2CWriteReg8(fd: Double, reg: Double, data: Double): Double = js.native
+  @scala.inline
+  def mcp3002Setup(pinBase: Double, spiChannel: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mcp3002Setup")(pinBase.asInstanceOf[js.Any], spiChannel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiISR")
-  @js.native
-  def wiringPiISR(pin: Double, edgeType: Double, callback: js.Function1[/* delta */ Double, Unit]): Unit = js.native
+  @scala.inline
+  def mcp3004Setup(pinBase: Double, spiChannel: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mcp3004Setup")(pinBase.asInstanceOf[js.Any], spiChannel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiISRCancel")
-  @js.native
-  def wiringPiISRCancel(pin: Double): Unit = js.native
+  @scala.inline
+  def mcp3422Setup(pinBase: Double, i2cAddress: Double, sampleRate: Double, gain: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mcp3422Setup")(pinBase.asInstanceOf[js.Any], i2cAddress.asInstanceOf[js.Any], sampleRate.asInstanceOf[js.Any], gain.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiSPIClose")
-  @js.native
-  def wiringPiSPIClose(fd: Double): Unit = js.native
+  @scala.inline
+  def mcp4802Setup(pinBase: Double, spiChannel: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mcp4802Setup")(pinBase.asInstanceOf[js.Any], spiChannel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiSPIDataRW")
-  @js.native
-  def wiringPiSPIDataRW(channel: Double, data: Buffer): Double = js.native
+  @scala.inline
+  def micros(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("micros")().asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiSPIGetFd")
-  @js.native
-  def wiringPiSPIGetFd(channel: Double): Double = js.native
+  @scala.inline
+  def millis(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("millis")().asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiSPISetup")
-  @js.native
-  def wiringPiSPISetup(channel: Double, speed: Double): Double = js.native
+  @scala.inline
+  def mpc23016Setup(pinBase: Double, i2cAddress: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mpc23016Setup")(pinBase.asInstanceOf[js.Any], i2cAddress.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiSPISetupMode")
-  @js.native
-  def wiringPiSPISetupMode(channel: Double, speed: Double, mode: Double): Double = js.native
+  @scala.inline
+  def mpc23017Setup(pinBase: Double, i2cAddress: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mpc23017Setup")(pinBase.asInstanceOf[js.Any], i2cAddress.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiSetup")
-  @js.native
-  def wiringPiSetup(): Double = js.native
+  @scala.inline
+  def pca9685Setuo(pinBase: Double, i2cAddress: Double, frequency: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pca9685Setuo")(pinBase.asInstanceOf[js.Any], i2cAddress.asInstanceOf[js.Any], frequency.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiSetupGpio")
-  @js.native
-  def wiringPiSetupGpio(): Double = js.native
+  @scala.inline
+  def pcf8574Setup(pinBase: Double, i2cAddress: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pcf8574Setup")(pinBase.asInstanceOf[js.Any], i2cAddress.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiSetupPhys")
-  @js.native
-  def wiringPiSetupPhys(): Double = js.native
+  @scala.inline
+  def pcf8591Setup(pinBase: Double, i2cAddress: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pcf8591Setup")(pinBase.asInstanceOf[js.Any], i2cAddress.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wiringPiSetupSys")
-  @js.native
-  def wiringPiSetupSys(): Double = js.native
+  @scala.inline
+  def physPinToGpio(pin: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("physPinToGpio")(pin.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("wiring-pi", "wpiPinToGpio")
-  @js.native
-  def wpiPinToGpio(pin: Double): Double = js.native
+  @scala.inline
+  def piBoardId(): PiBoardId_ = ^.asInstanceOf[js.Dynamic].applyDynamic("piBoardId")().asInstanceOf[PiBoardId_]
   
-  @js.native
+  @scala.inline
+  def piBoardRev(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("piBoardRev")().asInstanceOf[Double]
+  
+  @scala.inline
+  def piFaceSetup(pinBase: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("piFaceSetup")(pinBase.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def piGlow1(leg: Double, ring: Double, intensity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("piGlow1")(leg.asInstanceOf[js.Any], ring.asInstanceOf[js.Any], intensity.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def piGlowLeg(leg: Double, intensity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("piGlowLeg")(leg.asInstanceOf[js.Any], intensity.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def piGlowRing(ring: Double, intensity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("piGlowRing")(ring.asInstanceOf[js.Any], intensity.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def piGlowSetup(clear: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("piGlowSetup")(clear.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def pinMode(pin: Double, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pinMode")(pin.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def pinModeAlt(pin: Double, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pinModeAlt")(pin.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def pullUpDnControl(pin: Double, pud: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pullUpDnControl")(pin.asInstanceOf[js.Any], pud.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def pulseIn(pin: Double, state: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pulseIn")(pin.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def pwmSetClock(divisor: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pwmSetClock")(divisor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def pwmSetMode(mode: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pwmSetMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def pwmSetRange(range: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pwmSetRange")(range.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def pwmToneWrite(pin: Double, frequency: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pwmToneWrite")(pin.asInstanceOf[js.Any], frequency.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def pwmWrite(pin: Double, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pwmWrite")(pin.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def readNesJoystick(joystick: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readNesJoystick")(joystick.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def readRHT03(pin: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("readRHT03")(pin.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def serialClose(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serialClose")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def serialDataAvail(fd: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("serialDataAvail")(fd.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def serialFlush(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serialFlush")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def serialGetchar(fd: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("serialGetchar")(fd.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def serialOpen(device: String, baudrate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("serialOpen")(device.asInstanceOf[js.Any], baudrate.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def serialPrintf(fd: Double, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serialPrintf")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def serialPutChar(fd: Double, character: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serialPutChar")(fd.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def serialPuts(fd: Double, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serialPuts")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setPadDrive(group: Double, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPadDrive")(group.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setup(mode: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(mode.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def setupNesJoystick(dPin: Double, cPin: Double, lPin: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setupNesJoystick")(dPin.asInstanceOf[js.Any], cPin.asInstanceOf[js.Any], lPin.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def shiftIn(dPin: Double, cPin: Double, order: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftIn")(dPin.asInstanceOf[js.Any], cPin.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def shiftOut(dPin: Double, cPin: Double, order: Double, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftOut")(dPin.asInstanceOf[js.Any], cPin.asInstanceOf[js.Any], order.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def sn3218Setup(pinBase: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sn3218Setup")(pinBase.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def softPwmCreate(pin: Double, value: Double, range: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("softPwmCreate")(pin.asInstanceOf[js.Any], value.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def softPwmStop(pin: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("softPwmStop")(pin.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def softPwmWrite(pin: Double, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("softPwmWrite")(pin.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def softServoSetup(p0: Double, p1: Double, p2: Double, p3: Double, p4: Double, p5: Double, p6: Double, p7: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("softServoSetup")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any], p6.asInstanceOf[js.Any], p7.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def softServoWrite(pin: Double, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("softServoWrite")(pin.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def softToneCreate(pin: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("softToneCreate")(pin.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def softToneStop(pin: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("softToneStop")(pin.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def softToneWrite(pin: Double, frequency: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("softToneWrite")(pin.asInstanceOf[js.Any], frequency.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def sr595Setup(pinBase: Double, numPins: Double, dataPin: Double, clockPin: Double, latchPin: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sr595Setup")(pinBase.asInstanceOf[js.Any], numPins.asInstanceOf[js.Any], dataPin.asInstanceOf[js.Any], clockPin.asInstanceOf[js.Any], latchPin.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def tcs34725ClearInterrupt(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tcs34725ClearInterrupt")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def tcs34725Disable(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tcs34725Disable")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def tcs34725Enable(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tcs34725Enable")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def tcs34725GetCorrelatedColorTemperature(r: Double, g: Double, b: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tcs34725GetCorrelatedColorTemperature")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def tcs34725GetIlluminance(r: Double, g: Double, b: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tcs34725GetIlluminance")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def tcs34725ReadHSV(id: Double): tcs34725HSV = ^.asInstanceOf[js.Dynamic].applyDynamic("tcs34725ReadHSV")(id.asInstanceOf[js.Any]).asInstanceOf[tcs34725HSV]
+  
+  @scala.inline
+  def tcs34725ReadRGBC(id: Double): tcs34725RGBC = ^.asInstanceOf[js.Dynamic].applyDynamic("tcs34725ReadRGBC")(id.asInstanceOf[js.Any]).asInstanceOf[tcs34725RGBC]
+  
+  @scala.inline
+  def tcs34725SetInterrupt(id: Double, aien: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tcs34725SetInterrupt")(id.asInstanceOf[js.Any], aien.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def tcs34725SetInterruptLimits(id: Double, low: Double, high: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tcs34725SetInterruptLimits")(id.asInstanceOf[js.Any], low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def tcs34725Setup(i2cAddress: Double, integrationTime: Double, gain: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tcs34725Setup")(i2cAddress.asInstanceOf[js.Any], integrationTime.asInstanceOf[js.Any], gain.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiI2CClose(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiI2CClose")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def wiringPiI2CRead(fd: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiI2CRead")(fd.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiI2CReadReg16(fd: Double, reg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiI2CReadReg16")(fd.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiI2CReadReg8(fd: Double, reg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiI2CReadReg8")(fd.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiI2CSetup(devId: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiI2CSetup")(devId.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiI2CSetupInterface(device: String, devId: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiI2CSetupInterface")(device.asInstanceOf[js.Any], devId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiI2CWrite(fd: Double, data: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiI2CWrite")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiI2CWriteReg16(fd: Double, reg: Double, data: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiI2CWriteReg16")(fd.asInstanceOf[js.Any], reg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiI2CWriteReg8(fd: Double, reg: Double, data: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiI2CWriteReg8")(fd.asInstanceOf[js.Any], reg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiISR(pin: Double, edgeType: Double, callback: js.Function1[/* delta */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiISR")(pin.asInstanceOf[js.Any], edgeType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def wiringPiISRCancel(pin: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiISRCancel")(pin.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def wiringPiSPIClose(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiSPIClose")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def wiringPiSPIDataRW(channel: Double, data: Buffer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiSPIDataRW")(channel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiSPIGetFd(channel: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiSPIGetFd")(channel.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiSPISetup(channel: Double, speed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiSPISetup")(channel.asInstanceOf[js.Any], speed.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiSPISetupMode(channel: Double, speed: Double, mode: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiSPISetupMode")(channel.asInstanceOf[js.Any], speed.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiSetup(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiSetup")().asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiSetupGpio(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiSetupGpio")().asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiSetupPhys(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiSetupPhys")().asInstanceOf[Double]
+  
+  @scala.inline
+  def wiringPiSetupSys(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("wiringPiSetupSys")().asInstanceOf[Double]
+  
+  @scala.inline
+  def wpiPinToGpio(pin: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("wpiPinToGpio")(pin.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
   trait PiBoardId_ extends StObject {
     
-    var maker: Double = js.native
+    var maker: Double
     
-    var mem: Double = js.native
+    var mem: Double
     
-    var model: Double = js.native
+    var model: Double
     
-    var overvolted: Double = js.native
+    var overvolted: Double
     
-    var rev: Double = js.native
+    var rev: Double
   }
   object PiBoardId_ {
     
@@ -987,14 +852,13 @@ object mod {
     }
   }
   
-  @js.native
   trait tcs34725HSV extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var s: Double = js.native
+    var s: Double
     
-    var v: Double = js.native
+    var v: Double
   }
   object tcs34725HSV {
     
@@ -1018,16 +882,15 @@ object mod {
     }
   }
   
-  @js.native
   trait tcs34725RGBC extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var c: Double = js.native
+    var c: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object tcs34725RGBC {
     

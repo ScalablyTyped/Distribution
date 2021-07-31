@@ -5,18 +5,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditingInfo extends Object {
+trait EditingInfo
+  extends StObject
+     with Object {
   
   /**
     * Indicates the last time the layer was edited.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditingInfo)
     */
-  var lastEditDate: Date = js.native
+  var lastEditDate: Date
 }
 object EditingInfo {
   

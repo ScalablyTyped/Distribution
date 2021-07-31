@@ -32,7 +32,6 @@ import typings.node.streamMod.Transform
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libServeMod {
@@ -190,7 +189,9 @@ object libServeMod {
   
   @JSImport("ionic/lib/serve", "ServeRunner")
   @js.native
-  abstract class ServeRunner[T /* <: ServeOptions */] () extends Runner[T, ServeDetails] {
+  abstract class ServeRunner[T /* <: ServeOptions */] ()
+    extends StObject
+       with Runner[T, ServeDetails] {
     
     def afterServe(options: T, details: ServeDetails): js.Promise[Unit] = js.native
     
@@ -220,6 +221,9 @@ object libServeMod {
     
     def publishDevApp(options: T, details: DevAppDetails): js.Promise[js.UndefOr[String]] = js.native
     
+    /* CompleteClass */
+    override def run(options: T): js.Promise[ServeDetails] = js.native
+    
     def runLab(options: T, serveDetails: ServeDetails): js.Promise[LabServeDetails] = js.native
     
     def scheduleAfterServe(options: T, details: ServeDetails): Unit = js.native
@@ -243,12 +247,11 @@ object libServeMod {
     val script_PkgManagerServeCLI: /* "ionic:serve" */ String = js.native
   }
   
-  @js.native
   trait ServeCLIOptions extends StObject {
     
-    val address: String = js.native
+    val address: String
     
-    val port: Double = js.native
+    val port: Double
   }
   object ServeCLIOptions {
     
@@ -269,23 +272,59 @@ object libServeMod {
     }
   }
   
-  @js.native
   trait ServeRunnerDeps extends StObject {
     
-    val config: IConfig = js.native
+    val config: IConfig
     
-    val flags: IonicEnvironmentFlags = js.native
+    val flags: IonicEnvironmentFlags
     
-    val log: ILogger = js.native
+    val log: ILogger
     
-    val project: IProject = js.native
+    val project: IProject
     
-    def prompt(question: PromptQuestionCheckbox): js.Promise[PromptValueCheckbox] = js.native
-    def prompt(question: PromptQuestionConfirm): js.Promise[PromptValueConfirm] = js.native
-    def prompt(question: PromptQuestionOther): js.Promise[PromptValueOther] = js.native
+    def prompt(question: PromptQuestionCheckbox): js.Promise[PromptValueCheckbox]
+    def prompt(question: PromptQuestionConfirm): js.Promise[PromptValueConfirm]
+    def prompt(question: PromptQuestionOther): js.Promise[PromptValueOther]
     @JSName("prompt")
-    val prompt_Original: PromptModule = js.native
+    val prompt_Original: PromptModule
     
-    val shell: IShell = js.native
+    val shell: IShell
+  }
+  object ServeRunnerDeps {
+    
+    @scala.inline
+    def apply(
+      config: IConfig,
+      flags: IonicEnvironmentFlags,
+      log: ILogger,
+      project: IProject,
+      prompt: PromptModule,
+      shell: IShell
+    ): ServeRunnerDeps = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ServeRunnerDeps]
+    }
+    
+    @scala.inline
+    implicit class ServeRunnerDepsMutableBuilder[Self <: ServeRunnerDeps] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFlags(value: IonicEnvironmentFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+    }
   }
 }

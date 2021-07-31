@@ -13,7 +13,6 @@ import typings.nodemailer.nodemailerStrings.readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relaxedBodyMod {
@@ -27,12 +26,13 @@ object relaxedBodyMod {
     def this(options: Options) = this()
   }
   
-  @js.native
-  trait Options extends TransformOptions {
+  trait Options
+    extends StObject
+       with TransformOptions {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var hashAlgo: js.UndefOr[String] = js.native
+    var hashAlgo: js.UndefOr[String] = js.undefined
   }
   object Options {
     

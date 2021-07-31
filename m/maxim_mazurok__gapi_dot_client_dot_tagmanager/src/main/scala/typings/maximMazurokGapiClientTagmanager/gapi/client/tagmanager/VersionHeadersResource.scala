@@ -5,7 +5,6 @@ import typings.maximMazurokGapiClientTagmanager.anon.Alt
 import typings.maximMazurokGapiClientTagmanager.anon.IncludeDeleted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

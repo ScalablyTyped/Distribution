@@ -4,17 +4,33 @@ import typings.activexExcel.Excel.PivotTable
 import typings.activexExcel.Excel.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetPivotTableTargetRange extends StObject {
   
-  val TargetPivotTable: PivotTable = js.native
+  val TargetPivotTable: PivotTable
   
-  def TargetRange(Address: String): Range = js.native
-  def TargetRange(RowIndex: Double): Range = js.native
-  def TargetRange(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  def TargetRange(Address: String): Range
+  def TargetRange(RowIndex: Double): Range
+  def TargetRange(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("TargetRange")
-  val TargetRange_Original: Range = js.native
+  val TargetRange_Original: Range
+}
+object TargetPivotTableTargetRange {
+  
+  @scala.inline
+  def apply(TargetPivotTable: PivotTable, TargetRange: Range): TargetPivotTableTargetRange = {
+    val __obj = js.Dynamic.literal(TargetPivotTable = TargetPivotTable.asInstanceOf[js.Any], TargetRange = TargetRange.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TargetPivotTableTargetRange]
+  }
+  
+  @scala.inline
+  implicit class TargetPivotTableTargetRangeMutableBuilder[Self <: TargetPivotTableTargetRange] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setTargetPivotTable(value: PivotTable): Self = StObject.set(x, "TargetPivotTable", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTargetRange(value: Range): Self = StObject.set(x, "TargetRange", value.asInstanceOf[js.Any])
+  }
 }

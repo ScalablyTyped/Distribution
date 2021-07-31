@@ -2,29 +2,27 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PokemonEvolution extends StObject {
   
-  var conditions: js.UndefOr[js.Array[String]] = js.native
+  var conditions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var happiness: js.UndefOr[Boolean] = js.native
+  var happiness: js.UndefOr[Boolean] = js.undefined
   
-  var hold_item: js.UndefOr[String] = js.native
+  var hold_item: js.UndefOr[String] = js.undefined
   
-  var item: js.UndefOr[String] = js.native
+  var item: js.UndefOr[String] = js.undefined
   
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
-  var level_up: js.UndefOr[Boolean] = js.native
+  var level_up: js.UndefOr[Boolean] = js.undefined
   
-  var move_learned: js.UndefOr[String] = js.native
+  var move_learned: js.UndefOr[String] = js.undefined
   
-  var to: String = js.native
+  var to: String
   
-  var trade: js.UndefOr[Boolean] = js.native
+  var trade: js.UndefOr[Boolean] = js.undefined
 }
 object PokemonEvolution {
   

@@ -3,7 +3,6 @@ package typings.officeJsPreview.Excel
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@js.native
 trait TaskChanges extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait TaskChanges extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var dueDate: js.UndefOr[Date] = js.native
+  var dueDate: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait TaskChanges extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var emailsToAssign: js.UndefOr[js.Array[String]] = js.native
+  var emailsToAssign: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait TaskChanges extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var emailsToUnassign: js.UndefOr[js.Array[String]] = js.native
+  var emailsToUnassign: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait TaskChanges extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var percentComplete: js.UndefOr[Double] = js.native
+  var percentComplete: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait TaskChanges extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait TaskChanges extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var removeAllPreviousAssignees: js.UndefOr[Boolean] = js.native
+  var removeAllPreviousAssignees: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait TaskChanges extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var startDate: js.UndefOr[Date] = js.native
+  var startDate: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -86,7 +84,7 @@ trait TaskChanges extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object TaskChanges {
   

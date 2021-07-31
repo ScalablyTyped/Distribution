@@ -2,19 +2,18 @@ package typings.vueInbrowserCompilerUtils.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventDescriptor
-  extends DocBlockTags
+  extends StObject
+     with DocBlockTags
      with Descriptor {
   
-  var name: String = js.native
+  var name: String
   
-  var properties: js.UndefOr[js.Array[EventProperty]] = js.native
+  var properties: js.UndefOr[js.Array[EventProperty]] = js.undefined
   
-  var `type`: js.UndefOr[EventType] = js.native
+  var `type`: js.UndefOr[EventType] = js.undefined
 }
 object EventDescriptor {
   

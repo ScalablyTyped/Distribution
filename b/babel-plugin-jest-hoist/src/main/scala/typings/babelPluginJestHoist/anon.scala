@@ -3,17 +3,15 @@ package typings.babelPluginJestHoist
 import typings.babelTypes.mod.Identifier_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DeclareJestObjGetterIdentifier extends StObject {
     
-    def declareJestObjGetterIdentifier(): Identifier_ = js.native
+    def declareJestObjGetterIdentifier(): Identifier_
     
-    var jestObjGetterIdentifier: js.UndefOr[Identifier_] = js.native
+    var jestObjGetterIdentifier: js.UndefOr[Identifier_] = js.undefined
   }
   object DeclareJestObjGetterIdentifier {
     

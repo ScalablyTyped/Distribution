@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object patchBaselineMod {
@@ -27,7 +26,7 @@ object patchBaselineMod {
       */
     def this(name: String) = this()
     def this(name: String, args: PatchBaselineArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: PatchBaselineArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -78,6 +77,10 @@ object patchBaselineMod {
   /* static members */
   object PatchBaseline {
     
+    @JSImport("@pulumi/aws/ssm/patchBaseline", "PatchBaseline")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PatchBaseline resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -87,75 +90,69 @@ object patchBaselineMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ssm/patchBaseline", "PatchBaseline.get")
-    @js.native
-    def get(name: String, id: Input[ID]): PatchBaseline = js.native
-    @JSImport("@pulumi/aws/ssm/patchBaseline", "PatchBaseline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PatchBaseline = js.native
-    @JSImport("@pulumi/aws/ssm/patchBaseline", "PatchBaseline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PatchBaselineState): PatchBaseline = js.native
-    @JSImport("@pulumi/aws/ssm/patchBaseline", "PatchBaseline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PatchBaselineState, opts: CustomResourceOptions): PatchBaseline = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PatchBaselineState): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PatchBaselineState, opts: CustomResourceOptions): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
     
     /**
       * Returns true if the given object is an instance of PatchBaseline.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ssm/patchBaseline", "PatchBaseline.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/patchBaseline.PatchBaseline */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/patchBaseline.PatchBaseline */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/patchBaseline.PatchBaseline */ Boolean]
   }
   
-  @js.native
   trait PatchBaselineArgs extends StObject {
     
     /**
       * A set of rules used to include patches in the baseline. up to 10 approval rules can be specified. Each approvalRule block requires the fields documented below.
       */
-    val approvalRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]]]] = js.native
+    val approvalRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]]]] = js.undefined
     
     /**
       * A list of explicitly approved patches for the baseline.
       */
-    val approvedPatches: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val approvedPatches: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Defines the compliance level for approved patches. This means that if an approved patch is reported as missing, this is the severity of the compliance violation. Valid compliance levels include the following: `CRITICAL`, `HIGH`, `MEDIUM`, `LOW`, `INFORMATIONAL`, `UNSPECIFIED`. The default value is `UNSPECIFIED`.
       */
-    val approvedPatchesComplianceLevel: js.UndefOr[Input[String]] = js.native
+    val approvedPatchesComplianceLevel: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the patch baseline.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A set of global filters used to exclude patches from the baseline. Up to 4 global filters can be specified using Key/Value pairs. Valid Keys are `PRODUCT | CLASSIFICATION | MSRC_SEVERITY | PATCH_ID`.
       */
-    val globalFilters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]]]] = js.native
+    val globalFilters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]]]] = js.undefined
     
     /**
       * The name of the patch baseline.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Defines the operating system the patch baseline applies to. Supported operating systems include `WINDOWS`, `AMAZON_LINUX`, `AMAZON_LINUX_2`, `SUSE`, `UBUNTU`, `CENTOS`, and `REDHAT_ENTERPRISE_LINUX`. The Default value is `WINDOWS`.
       */
-    val operatingSystem: js.UndefOr[Input[String]] = js.native
+    val operatingSystem: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of rejected patches.
       */
-    val rejectedPatches: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val rejectedPatches: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object PatchBaselineArgs {
     
@@ -236,53 +233,52 @@ object patchBaselineMod {
     }
   }
   
-  @js.native
   trait PatchBaselineState extends StObject {
     
     /**
       * A set of rules used to include patches in the baseline. up to 10 approval rules can be specified. Each approvalRule block requires the fields documented below.
       */
-    val approvalRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]]]] = js.native
+    val approvalRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]]]] = js.undefined
     
     /**
       * A list of explicitly approved patches for the baseline.
       */
-    val approvedPatches: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val approvedPatches: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Defines the compliance level for approved patches. This means that if an approved patch is reported as missing, this is the severity of the compliance violation. Valid compliance levels include the following: `CRITICAL`, `HIGH`, `MEDIUM`, `LOW`, `INFORMATIONAL`, `UNSPECIFIED`. The default value is `UNSPECIFIED`.
       */
-    val approvedPatchesComplianceLevel: js.UndefOr[Input[String]] = js.native
+    val approvedPatchesComplianceLevel: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the patch baseline.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A set of global filters used to exclude patches from the baseline. Up to 4 global filters can be specified using Key/Value pairs. Valid Keys are `PRODUCT | CLASSIFICATION | MSRC_SEVERITY | PATCH_ID`.
       */
-    val globalFilters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]]]] = js.native
+    val globalFilters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]]]] = js.undefined
     
     /**
       * The name of the patch baseline.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Defines the operating system the patch baseline applies to. Supported operating systems include `WINDOWS`, `AMAZON_LINUX`, `AMAZON_LINUX_2`, `SUSE`, `UBUNTU`, `CENTOS`, and `REDHAT_ENTERPRISE_LINUX`. The Default value is `WINDOWS`.
       */
-    val operatingSystem: js.UndefOr[Input[String]] = js.native
+    val operatingSystem: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of rejected patches.
       */
-    val rejectedPatches: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val rejectedPatches: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object PatchBaselineState {
     

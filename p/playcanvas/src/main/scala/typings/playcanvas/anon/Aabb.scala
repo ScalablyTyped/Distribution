@@ -4,25 +4,23 @@ import typings.playcanvas.pc.BoundingBox
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aabb extends StObject {
   
-  var aabb: js.UndefOr[BoundingBox] = js.native
+  var aabb: js.UndefOr[BoundingBox] = js.undefined
   
-  var defaultWeight: js.UndefOr[Double] = js.native
+  var defaultWeight: js.UndefOr[Double] = js.undefined
   
-  var deltaNormals: js.UndefOr[ArrayBuffer] = js.native
+  var deltaNormals: js.UndefOr[ArrayBuffer] = js.undefined
   
-  var deltaNormalsType: Double = js.native
+  var deltaNormalsType: Double
   
-  var deltaPositions: ArrayBuffer = js.native
+  var deltaPositions: ArrayBuffer
   
-  var deltaPositionsType: Double = js.native
+  var deltaPositionsType: Double
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Aabb {
   

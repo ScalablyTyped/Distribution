@@ -5,33 +5,31 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpRequestHeaderCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an HTTP request message including headers. */
-@js.native
 trait HttpRequestMessage extends StObject {
   
   /** Closes the HttpRequestMessage instance and releases allocated resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Gets or sets the HTTP content to send to the server on the HttpRequestMessage object. */
-  var content: IHttpContent = js.native
+  var content: IHttpContent
   
   /** Gets the collection of the HTTP request headers associated with the HttpRequestMessage . */
-  var headers: HttpRequestHeaderCollection = js.native
+  var headers: HttpRequestHeaderCollection
   
   /** Gets or sets the HTTP method to be performed on the request URI. */
-  var method: HttpMethod = js.native
+  var method: HttpMethod
   
   /** Gets a set of properties on the HttpRequestMessage instance that are for use by the developer. */
-  var properties: IMap[String, _] = js.native
+  var properties: IMap[String, js.Any]
   
   /** Gets or sets the Uri used for the HttpRequestMessage object. */
-  var requestUri: Uri = js.native
+  var requestUri: Uri
   
   /** Get information about the underlying transport socket used by an HTTP connection. */
-  var transportInformation: HttpTransportInformation = js.native
+  var transportInformation: HttpTransportInformation
 }
 object HttpRequestMessage {
   
@@ -41,7 +39,7 @@ object HttpRequestMessage {
     content: IHttpContent,
     headers: HttpRequestHeaderCollection,
     method: HttpMethod,
-    properties: IMap[String, _],
+    properties: IMap[String, js.Any],
     requestUri: Uri,
     transportInformation: HttpTransportInformation
   ): HttpRequestMessage = {
@@ -65,7 +63,7 @@ object HttpRequestMessage {
     def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: IMap[String, _]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    def setProperties(value: IMap[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRequestUri(value: Uri): Self = StObject.set(x, "requestUri", value.asInstanceOf[js.Any])

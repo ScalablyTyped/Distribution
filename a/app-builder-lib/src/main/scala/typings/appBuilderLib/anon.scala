@@ -6,21 +6,19 @@ import typings.builderUtilRuntime.updateInfoMod.PackageFileInfo
 import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait File extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var lang: String = js.native
+    var lang: String
     
-    var langName: js.Any = js.native
+    var langName: js.Any
     
-    var langWithRegion: String = js.native
+    var langWithRegion: String
   }
   object File {
     
@@ -47,10 +45,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Packages extends StObject {
     
-    var packages: StringDictionary[PackageFileInfo] = js.native
+    var packages: StringDictionary[PackageFileInfo]
   }
   object Packages {
     
@@ -68,18 +65,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Provider extends StObject {
     
-    var provider: PublishProvider = js.native
+    var provider: PublishProvider
     
-    var publishAutoUpdate: js.UndefOr[Boolean] = js.native
+    var publishAutoUpdate: js.UndefOr[Boolean] = js.undefined
     
-    var publisherName: js.UndefOr[js.Array[String] | Null] = js.native
+    var publisherName: js.UndefOr[js.Array[String] | Null] = js.undefined
     
-    var requestHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var requestHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var updaterCacheDirName: String = js.native
+    var updaterCacheDirName: String
   }
   object Provider {
     

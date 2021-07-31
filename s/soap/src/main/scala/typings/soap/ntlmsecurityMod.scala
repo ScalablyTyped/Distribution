@@ -4,14 +4,15 @@ import typings.soap.typesMod.IHeaders
 import typings.soap.typesMod.ISecurity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ntlmsecurityMod {
   
   @JSImport("soap/lib/security/NTLMSecurity", "NTLMSecurity")
   @js.native
-  class NTLMSecurity protected () extends ISecurity {
+  class NTLMSecurity protected ()
+    extends StObject
+       with ISecurity {
     def this(defaults: js.Any) = this()
     
     @JSName("addHeaders")

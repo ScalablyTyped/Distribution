@@ -6,38 +6,36 @@ import typings.awsSdkClientXrayNode.typesFaultStatisticsMod.FaultStatistics
 import typings.awsSdkClientXrayNode.typesFaultStatisticsMod.UnmarshalledFaultStatistics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesServiceStatisticsMod {
   
-  @js.native
   trait ServiceStatistics extends StObject {
     
     /**
       * <p>Information about requests that failed with a 4xx Client Error status code.</p>
       */
-    var ErrorStatistics: js.UndefOr[typings.awsSdkClientXrayNode.typesErrorStatisticsMod.ErrorStatistics] = js.native
+    var ErrorStatistics: js.UndefOr[typings.awsSdkClientXrayNode.typesErrorStatisticsMod.ErrorStatistics] = js.undefined
     
     /**
       * <p>Information about requests that failed with a 5xx Server Error status code.</p>
       */
-    var FaultStatistics: js.UndefOr[typings.awsSdkClientXrayNode.typesFaultStatisticsMod.FaultStatistics] = js.native
+    var FaultStatistics: js.UndefOr[typings.awsSdkClientXrayNode.typesFaultStatisticsMod.FaultStatistics] = js.undefined
     
     /**
       * <p>The number of requests that completed with a 2xx Success status code.</p>
       */
-    var OkCount: js.UndefOr[Double] = js.native
+    var OkCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The total number of completed requests.</p>
       */
-    var TotalCount: js.UndefOr[Double] = js.native
+    var TotalCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The aggregate response time of completed requests.</p>
       */
-    var TotalResponseTime: js.UndefOr[Double] = js.native
+    var TotalResponseTime: js.UndefOr[Double] = js.undefined
   }
   object ServiceStatistics {
     
@@ -82,20 +80,21 @@ object typesServiceStatisticsMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledServiceStatistics extends ServiceStatistics {
+  trait UnmarshalledServiceStatistics
+    extends StObject
+       with ServiceStatistics {
     
     /**
       * <p>Information about requests that failed with a 4xx Client Error status code.</p>
       */
     @JSName("ErrorStatistics")
-    var ErrorStatistics_UnmarshalledServiceStatistics: js.UndefOr[UnmarshalledErrorStatistics] = js.native
+    var ErrorStatistics_UnmarshalledServiceStatistics: js.UndefOr[UnmarshalledErrorStatistics] = js.undefined
     
     /**
       * <p>Information about requests that failed with a 5xx Server Error status code.</p>
       */
     @JSName("FaultStatistics")
-    var FaultStatistics_UnmarshalledServiceStatistics: js.UndefOr[UnmarshalledFaultStatistics] = js.native
+    var FaultStatistics_UnmarshalledServiceStatistics: js.UndefOr[UnmarshalledFaultStatistics] = js.undefined
   }
   object UnmarshalledServiceStatistics {
     

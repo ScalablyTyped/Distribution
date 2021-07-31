@@ -2,23 +2,21 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerConfig extends StObject {
   
-  var host: String = js.native
+  var host: String
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var servers: js.UndefOr[js.Array[ServerConfig]] = js.native
+  var servers: js.UndefOr[js.Array[ServerConfig]] = js.undefined
   
-  var useToken: js.UndefOr[Boolean] = js.native
+  var useToken: js.UndefOr[Boolean] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object ServerConfig {
   

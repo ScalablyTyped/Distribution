@@ -2,41 +2,39 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNotebookInstanceLifecycleConfigOutput extends StObject {
   
   /**
     * A timestamp that tells when the lifecycle configuration was created.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.native
+  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
   
   /**
     * A timestamp that tells when the lifecycle configuration was last modified.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.native
+  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the lifecycle configuration.
     */
-  var NotebookInstanceLifecycleConfigArn: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigArn] = js.native
+  var NotebookInstanceLifecycleConfigArn: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigArn] = js.undefined
   
   /**
     * The name of the lifecycle configuration.
     */
-  var NotebookInstanceLifecycleConfigName: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigName] = js.native
+  var NotebookInstanceLifecycleConfigName: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigName] = js.undefined
   
   /**
     * The shell script that runs only once, when you create a notebook instance.
     */
-  var OnCreate: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.native
+  var OnCreate: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.undefined
   
   /**
     * The shell script that runs every time you start a notebook instance, including when you create the notebook instance.
     */
-  var OnStart: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.native
+  var OnStart: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.undefined
 }
 object DescribeNotebookInstanceLifecycleConfigOutput {
   

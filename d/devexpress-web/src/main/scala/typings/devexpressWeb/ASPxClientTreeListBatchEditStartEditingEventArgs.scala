@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.BatchEditStartEditing event.
   */
-@js.native
-trait ASPxClientTreeListBatchEditStartEditingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientTreeListBatchEditStartEditingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the tree list column that owns a cell that is about to be edited.
     */
-  var focusedColumn: ASPxClientTreeListColumn = js.native
+  var focusedColumn: ASPxClientTreeListColumn
   
   /**
     * Gets the node's key value.
     */
-  var nodeKey: String = js.native
+  var nodeKey: String
   
   /**
     * Gets the value of the processed cell.
     */
-  var nodeValues: js.Any = js.native
+  var nodeValues: js.Any
 }
 object ASPxClientTreeListBatchEditStartEditingEventArgs {
   

@@ -9,61 +9,59 @@ import typings.typedGithubApi.typedGithubApiStrings.open
 import typings.typedGithubApi.userMod.UserSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object issueMod {
   
-  @js.native
   trait Issue extends StObject {
     
-    var assignee: UserSummary | Null = js.native
+    var assignee: UserSummary | Null
     
-    var assignees: js.Array[UserSummary] = js.native
+    var assignees: js.Array[UserSummary]
     
-    var body: String = js.native
+    var body: String
     
-    var closed_at: Date | Null = js.native
+    var closed_at: Date | Null
     
-    var closed_by: UserSummary | Null = js.native
+    var closed_by: UserSummary | Null
     
-    var comments: Double = js.native
+    var comments: Double
     
-    var comments_url: String = js.native
+    var comments_url: String
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var events_url: String = js.native
+    var events_url: String
     
-    var html_url: String = js.native
+    var html_url: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var labels: js.Array[Label] = js.native
+    var labels: js.Array[Label]
     
-    var labels_url: String = js.native
+    var labels_url: String
     
-    var locked: Boolean = js.native
+    var locked: Boolean
     
-    var milestone: Milestone | Null = js.native
+    var milestone: Milestone | Null
     
-    var number: Double = js.native
+    var number: Double
     
-    var pull_request: js.UndefOr[PullRequestExtension] = js.native
+    var pull_request: js.UndefOr[PullRequestExtension] = js.undefined
     
-    var repository: js.UndefOr[Repository] = js.native
+    var repository: js.UndefOr[Repository] = js.undefined
     
-    var repository_url: String = js.native
+    var repository_url: String
     
-    var state: open | closed = js.native
+    var state: open | closed
     
-    var title: String = js.native
+    var title: String
     
-    var updated_at: Date = js.native
+    var updated_at: Date
     
-    var url: String = js.native
+    var url: String
     
-    var user: UserSummary = js.native
+    var user: UserSummary
   }
   object Issue {
     
@@ -88,7 +86,7 @@ object issueMod {
       url: String,
       user: UserSummary
     ): Issue = {
-      val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], assignee = null, closed_at = null, closed_by = null, milestone = null)
       __obj.asInstanceOf[Issue]
     }
     
@@ -193,22 +191,21 @@ object issueMod {
     }
   }
   
-  @js.native
   trait IssueComment extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var html_url: String = js.native
+    var html_url: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var updated_at: Date = js.native
+    var updated_at: Date
     
-    var url: String = js.native
+    var url: String
     
-    var user: UserSummary = js.native
+    var user: UserSummary
   }
   object IssueComment {
     
@@ -252,16 +249,15 @@ object issueMod {
     }
   }
   
-  @js.native
   trait PullRequestExtension extends StObject {
     
-    var diff_url: String = js.native
+    var diff_url: String
     
-    var html_url: String = js.native
+    var html_url: String
     
-    var patch_url: String = js.native
+    var patch_url: String
     
-    var url: String = js.native
+    var url: String
   }
   object PullRequestExtension {
     

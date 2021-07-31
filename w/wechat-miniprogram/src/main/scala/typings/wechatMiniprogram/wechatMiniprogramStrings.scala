@@ -4,7 +4,6 @@ import typings.wechatMiniprogram.DB.DataType
 import typings.wechatMiniprogram.DB.QueueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wechatMiniprogramStrings {
@@ -245,7 +244,9 @@ object wechatMiniprogramStrings {
   def accumulate: accumulate = "accumulate".asInstanceOf[accumulate]
   
   @js.native
-  sealed trait add extends DataType
+  sealed trait add
+    extends StObject
+       with DataType
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   
@@ -415,7 +416,9 @@ object wechatMiniprogramStrings {
   def del: del = "del".asInstanceOf[del]
   
   @js.native
-  sealed trait dequeue extends QueueType
+  sealed trait dequeue
+    extends StObject
+       with QueueType
   @scala.inline
   def dequeue: dequeue = "dequeue".asInstanceOf[dequeue]
   
@@ -510,7 +513,9 @@ object wechatMiniprogramStrings {
   def ended: ended = "ended".asInstanceOf[ended]
   
   @js.native
-  sealed trait enqueue extends QueueType
+  sealed trait enqueue
+    extends StObject
+       with QueueType
   @scala.inline
   def enqueue: enqueue = "enqueue".asInstanceOf[enqueue]
   
@@ -586,7 +591,8 @@ object wechatMiniprogramStrings {
   
   @js.native
   sealed trait init
-    extends DataType
+    extends StObject
+       with DataType
        with QueueType
   @scala.inline
   def init: init = "init".asInstanceOf[init]
@@ -632,7 +638,9 @@ object wechatMiniprogramStrings {
   def light: light = "light".asInstanceOf[light]
   
   @js.native
-  sealed trait limit extends DataType
+  sealed trait limit
+    extends StObject
+       with DataType
   @scala.inline
   def limit: limit = "limit".asInstanceOf[limit]
   
@@ -787,7 +795,9 @@ object wechatMiniprogramStrings {
   def release: release = "release".asInstanceOf[release]
   
   @js.native
-  sealed trait remove extends DataType
+  sealed trait remove
+    extends StObject
+       with DataType
   @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
   
@@ -807,7 +817,9 @@ object wechatMiniprogramStrings {
   def `repeat-y`: `repeat-y` = "repeat-y".asInstanceOf[`repeat-y`]
   
   @js.native
-  sealed trait replace extends DataType
+  sealed trait replace
+    extends StObject
+       with DataType
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   
@@ -963,7 +975,8 @@ object wechatMiniprogramStrings {
   
   @js.native
   sealed trait update
-    extends DataType
+    extends StObject
+       with DataType
        with QueueType
   @scala.inline
   def update: update = "update".asInstanceOf[update]

@@ -29,41 +29,39 @@ import typings.mjmlReact.mjmlReactStrings.xing
 import typings.mjmlReact.mjmlReactStrings.youtube
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlSocialElementProps extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
+  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var borderRadius: js.UndefOr[String | Double] = js.native
+  var borderRadius: js.UndefOr[String | Double] = js.undefined
   
-  var color: js.UndefOr[ColorProperty] = js.native
+  var color: js.UndefOr[ColorProperty] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String | Double] = js.native
+  var fontSize: js.UndefOr[String | Double] = js.undefined
   
-  var iconHeight: js.UndefOr[String] = js.native
+  var iconHeight: js.UndefOr[String] = js.undefined
   
-  var iconSize: js.UndefOr[String] = js.native
+  var iconSize: js.UndefOr[String] = js.undefined
   
-  var lineHeight: js.UndefOr[String | Double] = js.native
+  var lineHeight: js.UndefOr[String | Double] = js.undefined
   
-  var mode: js.UndefOr[vertical | horizontal] = js.native
+  var mode: js.UndefOr[vertical | horizontal] = js.undefined
   
   var name: js.UndefOr[
     facebook | `facebook-noshare` | twitter | `twitter-noshare` | google | `google-noshare` | pinterest | `pinterest-noshare` | linkedin | `linkedin-noshare` | tumblr | `tumblr-noshare` | xing | `xing-noshare` | github | instagram | web | snapchat | youtube | vimeo | medium | soundcloud | dribbble
-  ] = js.native
+  ] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
 }
 object MjmlSocialElementProps {
   

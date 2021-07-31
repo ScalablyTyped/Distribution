@@ -5,10 +5,13 @@ import typings.ol.helperMod.UniformValue
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webglLayerMod {
+  
+  @JSImport("ol/renderer/webgl/Layer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/renderer/webgl/Layer", JSImport.Default)
   @js.native
@@ -24,30 +27,28 @@ object webglLayerMod {
   object WebGLWorkerMessageType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[WebGLWorkerMessageType with String] = js.native
+    def apply(value: String): js.UndefOr[WebGLWorkerMessageType & String] = js.native
     
     @js.native
-    sealed trait GENERATE_BUFFERS extends WebGLWorkerMessageType
-    /* "GENERATE_BUFFERS" */ val GENERATE_BUFFERS: typings.ol.webglLayerMod.WebGLWorkerMessageType.GENERATE_BUFFERS with String = js.native
+    sealed trait GENERATE_BUFFERS
+      extends StObject
+         with WebGLWorkerMessageType
+    /* "GENERATE_BUFFERS" */ val GENERATE_BUFFERS: typings.ol.webglLayerMod.WebGLWorkerMessageType.GENERATE_BUFFERS & String = js.native
   }
   
-  @JSImport("ol/renderer/webgl/Layer", "colorDecodeId")
-  @js.native
-  def colorDecodeId(color: js.Array[Double]): Double = js.native
+  @scala.inline
+  def colorDecodeId(color: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("colorDecodeId")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ol/renderer/webgl/Layer", "colorEncodeId")
-  @js.native
-  def colorEncodeId(id: Double): js.Array[Double] = js.native
-  @JSImport("ol/renderer/webgl/Layer", "colorEncodeId")
-  @js.native
-  def colorEncodeId(id: Double, opt_array: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def colorEncodeId(id: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorEncodeId")(id.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def colorEncodeId(id: Double, opt_array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("colorEncodeId")(id.asInstanceOf[js.Any], opt_array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @js.native
   trait BufferPositions extends StObject {
     
-    var indexPosition: Double = js.native
+    var indexPosition: Double
     
-    var vertexPosition: Double = js.native
+    var vertexPosition: Double
   }
   object BufferPositions {
     
@@ -68,12 +69,11 @@ object webglLayerMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var postProcesses: js.UndefOr[js.Array[PostProcessesOptions]] = js.native
+    var postProcesses: js.UndefOr[js.Array[PostProcessesOptions]] = js.undefined
     
-    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.native
+    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.undefined
   }
   object Options {
     
@@ -103,16 +103,15 @@ object webglLayerMod {
     }
   }
   
-  @js.native
   trait PostProcessesOptions extends StObject {
     
-    var fragmentShader: js.UndefOr[String] = js.native
+    var fragmentShader: js.UndefOr[String] = js.undefined
     
-    var scaleRatio: js.UndefOr[Double] = js.native
+    var scaleRatio: js.UndefOr[Double] = js.undefined
     
-    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.native
+    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.undefined
     
-    var vertexShader: js.UndefOr[String] = js.native
+    var vertexShader: js.UndefOr[String] = js.undefined
   }
   object PostProcessesOptions {
     
@@ -163,18 +162,17 @@ object webglLayerMod {
     var helper: typings.ol.helperMod.default = js.native
   }
   
-  @js.native
   trait WebGLWorkerGenerateBuffersMessage extends StObject {
     
-    var customAttributesCount: js.UndefOr[Double] = js.native
+    var customAttributesCount: js.UndefOr[Double] = js.undefined
     
-    var indexBuffer: js.UndefOr[ArrayBuffer] = js.native
+    var indexBuffer: js.UndefOr[ArrayBuffer] = js.undefined
     
-    var renderInstructions: ArrayBuffer = js.native
+    var renderInstructions: ArrayBuffer
     
-    var `type`: WebGLWorkerMessageType = js.native
+    var `type`: WebGLWorkerMessageType
     
-    var vertexBuffer: js.UndefOr[ArrayBuffer] = js.native
+    var vertexBuffer: js.UndefOr[ArrayBuffer] = js.undefined
   }
   object WebGLWorkerGenerateBuffersMessage {
     

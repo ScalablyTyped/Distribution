@@ -11,56 +11,54 @@ import typings.devextreme.devextremeStrings.phone
 import typings.devextreme.devextremeStrings.tablet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
   /**
     * [descr:Device.android]
     */
-  var android: js.UndefOr[Boolean] = js.native
+  var android: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:Device.deviceType]
     */
-  var deviceType: js.UndefOr[phone | tablet | desktop] = js.native
+  var deviceType: js.UndefOr[phone | tablet | desktop] = js.undefined
   
   /**
     * [descr:Device.generic]
     */
-  var generic: js.UndefOr[Boolean] = js.native
+  var generic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:Device.grade]
     */
-  var grade: js.UndefOr[A | B | C] = js.native
+  var grade: js.UndefOr[A | B | C] = js.undefined
   
   /**
     * [descr:Device.ios]
     */
-  var ios: js.UndefOr[Boolean] = js.native
+  var ios: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:Device.phone]
     */
-  var phone: js.UndefOr[Boolean] = js.native
+  var phone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:Device.platform]
     */
-  var platform: js.UndefOr[android | ios | generic] = js.native
+  var platform: js.UndefOr[android | ios | generic] = js.undefined
   
   /**
     * [descr:Device.tablet]
     */
-  var tablet: js.UndefOr[Boolean] = js.native
+  var tablet: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:Device.version]
     */
-  var version: js.UndefOr[js.Array[Double]] = js.native
+  var version: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object Device {
   

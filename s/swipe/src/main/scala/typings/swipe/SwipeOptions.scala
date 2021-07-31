@@ -3,27 +3,25 @@ package typings.swipe
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwipeOptions extends StObject {
   
-  var auto: js.UndefOr[Double] = js.native
+  var auto: js.UndefOr[Double] = js.undefined
   
-  var callback: js.UndefOr[js.Function2[/* index */ Double, /* elem */ HTMLElement, Unit]] = js.native
+  var callback: js.UndefOr[js.Function2[/* index */ Double, /* elem */ HTMLElement, Unit]] = js.undefined
   
-  var continuous: js.UndefOr[Boolean] = js.native
+  var continuous: js.UndefOr[Boolean] = js.undefined
   
-  var disableScroll: js.UndefOr[Boolean] = js.native
+  var disableScroll: js.UndefOr[Boolean] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
-  var startSlide: js.UndefOr[Double] = js.native
+  var startSlide: js.UndefOr[Double] = js.undefined
   
-  var stopPropagation: js.UndefOr[Boolean] = js.native
+  var stopPropagation: js.UndefOr[Boolean] = js.undefined
   
-  var transitionEnd: js.UndefOr[js.Function2[/* index */ Double, /* elem */ HTMLElement, Unit]] = js.native
+  var transitionEnd: js.UndefOr[js.Function2[/* index */ Double, /* elem */ HTMLElement, Unit]] = js.undefined
 }
 object SwipeOptions {
   

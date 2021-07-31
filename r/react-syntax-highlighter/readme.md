@@ -10,9 +10,9 @@ syntax highlighting component for react with prismjs or highlightjs ast using in
 | ------------------ | :-------------: |
 | Full name          | react-syntax-highlighter |
 | Keywords           | react, syntax, lowlight, highlighting, ast |
-| # releases         | 33 |
-| # dependents       | 357 |
-| # downloads        | 72815707 |
+| # releases         | 41 |
+| # dependents       | 417 |
+| # downloads        | 95701077 |
 | # stars            | 5 |
 
 ## Links

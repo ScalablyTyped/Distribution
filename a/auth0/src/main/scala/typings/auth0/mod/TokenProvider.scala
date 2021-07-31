@@ -2,15 +2,13 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenProvider extends StObject {
   
-  var cacheTTLInSeconds: js.UndefOr[Double] = js.native
+  var cacheTTLInSeconds: js.UndefOr[Double] = js.undefined
   
-  var enableCache: Boolean = js.native
+  var enableCache: Boolean
 }
 object TokenProvider {
   

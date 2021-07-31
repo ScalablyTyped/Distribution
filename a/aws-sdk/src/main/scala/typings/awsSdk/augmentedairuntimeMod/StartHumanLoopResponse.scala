@@ -2,16 +2,14 @@ package typings.awsSdk.augmentedairuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartHumanLoopResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the human loop.
     */
-  var HumanLoopArn: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.HumanLoopArn] = js.native
+  var HumanLoopArn: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.HumanLoopArn] = js.undefined
 }
 object StartHumanLoopResponse {
   

@@ -2,17 +2,15 @@ package typings.nodeDownloaderHelper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Delay extends StObject {
     
-    var delay: Double = js.native
+    var delay: Double
     
-    var maxRetries: Double = js.native
+    var maxRetries: Double
   }
   object Delay {
     

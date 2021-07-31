@@ -2,21 +2,19 @@ package typings.cypressImageSnapshot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Counter extends StObject {
     
-    var counter: Double = js.native
+    var counter: Double
     
-    var currentTestName: String = js.native
+    var currentTestName: String
     
-    var defaultIdentifier: String = js.native
+    var defaultIdentifier: String
     
-    var testPath: String = js.native
+    var testPath: String
   }
   object Counter {
     
@@ -43,16 +41,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Height {
     
@@ -79,12 +76,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IncludeAA extends StObject {
     
-    val includeAA: js.UndefOr[Boolean] = js.native
+    val includeAA: js.UndefOr[Boolean] = js.undefined
     
-    val threshold: js.UndefOr[Double] = js.native
+    val threshold: js.UndefOr[Double] = js.undefined
   }
   object IncludeAA {
     

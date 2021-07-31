@@ -2,24 +2,22 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A tab stop within a paragraph.
   */
-@js.native
 trait SchemaTabStop extends StObject {
   
   /**
     * The alignment of this tab stop. If unset, the value defaults to START.
     */
-  var alignment: js.UndefOr[String] = js.native
+  var alignment: js.UndefOr[String] = js.undefined
   
   /**
     * The offset between this tab stop and the start margin.
     */
-  var offset: js.UndefOr[SchemaDimension] = js.native
+  var offset: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaTabStop {
   

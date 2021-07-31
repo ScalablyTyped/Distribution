@@ -2,19 +2,17 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttChartOptions extends StObject {
   
-  var backgroundColor: js.UndefOr[ChartFill] = js.native
+  var backgroundColor: js.UndefOr[ChartFill] = js.undefined
   
-  var gantt: js.UndefOr[GanttOptions] = js.native
+  var gantt: js.UndefOr[GanttOptions] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object GanttChartOptions {
   

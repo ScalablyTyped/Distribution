@@ -6,38 +6,39 @@ import typings.searchParams.encodeMod.IOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathMod {
   
   @JSImport("path-parser/dist/Path", JSImport.Default)
   @js.native
-  class default[T /* <: Record[String, _] */] protected () extends Path[T] {
+  class default[T /* <: Record[String, js.Any] */] protected () extends Path[T] {
     def this(path: String) = this()
     def this(path: String, options: PathOptions) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("path-parser/dist/Path", "default.createPath")
+    @JSImport("path-parser/dist/Path", JSImport.Default)
     @js.native
-    def createPath[T /* <: Record[String, _] */](path: String): Path[T] = js.native
-    @JSImport("path-parser/dist/Path", "default.createPath")
-    @js.native
-    def createPath[T /* <: Record[String, _] */](path: String, options: PathOptions): Path[T] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createPath[T /* <: Record[String, js.Any] */](path: String): Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[Path[T]]
+    @scala.inline
+    def createPath[T /* <: Record[String, js.Any] */](path: String, options: PathOptions): Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Path[T]]
   }
   
   @JSImport("path-parser/dist/Path", "Path")
   @js.native
-  class Path[T /* <: Record[String, _] */] protected () extends StObject {
+  class Path[T /* <: Record[String, js.Any] */] protected () extends StObject {
     def this(path: String) = this()
     def this(path: String, options: PathOptions) = this()
     
     def build(): String = js.native
     def build(params: T): String = js.native
     def build(params: T, opts: PathBuildOptions): String = js.native
-    def build(params: js.UndefOr[scala.Nothing], opts: PathBuildOptions): String = js.native
+    def build(params: Unit, opts: PathBuildOptions): String = js.native
     
     var getParams: js.Any = js.native
     
@@ -80,20 +81,21 @@ object pathMod {
   /* static members */
   object Path {
     
-    @JSImport("path-parser/dist/Path", "Path.createPath")
+    @JSImport("path-parser/dist/Path", "Path")
     @js.native
-    def createPath[T /* <: Record[String, _] */](path: String): Path[T] = js.native
-    @JSImport("path-parser/dist/Path", "Path.createPath")
-    @js.native
-    def createPath[T /* <: Record[String, _] */](path: String, options: PathOptions): Path[T] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createPath[T /* <: Record[String, js.Any] */](path: String): Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[Path[T]]
+    @scala.inline
+    def createPath[T /* <: Record[String, js.Any] */](path: String, options: PathOptions): Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Path[T]]
   }
   
-  @js.native
   trait InternalPathOptions extends StObject {
     
-    var queryParams: js.UndefOr[IOptions] = js.native
+    var queryParams: js.UndefOr[IOptions] = js.undefined
     
-    var urlParamsEncoding: URLParamsEncodingType = js.native
+    var urlParamsEncoding: URLParamsEncodingType
   }
   object InternalPathOptions {
     
@@ -117,12 +119,13 @@ object pathMod {
     }
   }
   
-  @js.native
-  trait PathBuildOptions extends PathOptions {
+  trait PathBuildOptions
+    extends StObject
+       with PathOptions {
     
-    var ignoreConstraints: js.UndefOr[Boolean] = js.native
+    var ignoreConstraints: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreSearch: js.UndefOr[Boolean] = js.native
+    var ignoreSearch: js.UndefOr[Boolean] = js.undefined
   }
   object PathBuildOptions {
     
@@ -149,14 +152,13 @@ object pathMod {
     }
   }
   
-  @js.native
   trait PathOptions extends StObject {
     
     /**
       * Query parameters buiding and matching options, see
       * https://github.com/troch/search-params#options
       */
-    var queryParams: js.UndefOr[IOptions] = js.native
+    var queryParams: js.UndefOr[IOptions] = js.undefined
     
     /**
       * Specifies the method used to encode URL parameters:
@@ -171,7 +173,7 @@ object pathMod {
       *   - `'none'`: no encoding or decoding is performed
       *   - `'legacy'`: the approach for version 5.x and below (not recoomended)
       */
-    var urlParamsEncoding: js.UndefOr[URLParamsEncodingType] = js.native
+    var urlParamsEncoding: js.UndefOr[URLParamsEncodingType] = js.undefined
   }
   object PathOptions {
     
@@ -198,12 +200,13 @@ object pathMod {
     }
   }
   
-  @js.native
-  trait PathPartialTestOptions extends PathOptions {
+  trait PathPartialTestOptions
+    extends StObject
+       with PathOptions {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var delimited: js.UndefOr[Boolean] = js.native
+    var delimited: js.UndefOr[Boolean] = js.undefined
   }
   object PathPartialTestOptions {
     
@@ -230,12 +233,13 @@ object pathMod {
     }
   }
   
-  @js.native
-  trait PathTestOptions extends PathOptions {
+  trait PathTestOptions
+    extends StObject
+       with PathOptions {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var strictTrailingSlash: js.UndefOr[Boolean] = js.native
+    var strictTrailingSlash: js.UndefOr[Boolean] = js.undefined
   }
   object PathTestOptions {
     
@@ -262,5 +266,5 @@ object pathMod {
     }
   }
   
-  type TestMatch[T /* <: Record[String, _] */] = T | Null
+  type TestMatch[T /* <: Record[String, js.Any] */] = T | Null
 }

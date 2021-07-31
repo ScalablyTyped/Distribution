@@ -2,46 +2,44 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupVersion extends StObject {
   
   /**
     * The ARN of the connector definition version for this group.
     */
-  var ConnectorDefinitionVersionArn: js.UndefOr[string] = js.native
+  var ConnectorDefinitionVersionArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the core definition version for this group.
     */
-  var CoreDefinitionVersionArn: js.UndefOr[string] = js.native
+  var CoreDefinitionVersionArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the device definition version for this group.
     */
-  var DeviceDefinitionVersionArn: js.UndefOr[string] = js.native
+  var DeviceDefinitionVersionArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the function definition version for this group.
     */
-  var FunctionDefinitionVersionArn: js.UndefOr[string] = js.native
+  var FunctionDefinitionVersionArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the logger definition version for this group.
     */
-  var LoggerDefinitionVersionArn: js.UndefOr[string] = js.native
+  var LoggerDefinitionVersionArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the resource definition version for this group.
     */
-  var ResourceDefinitionVersionArn: js.UndefOr[string] = js.native
+  var ResourceDefinitionVersionArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the subscription definition version for this group.
     */
-  var SubscriptionDefinitionVersionArn: js.UndefOr[string] = js.native
+  var SubscriptionDefinitionVersionArn: js.UndefOr[string] = js.undefined
 }
 object GroupVersion {
   

@@ -9,105 +9,105 @@ import typings.crittersWebpackPlugin.mod.Critters.CrittersOptions
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("critters-webpack-plugin", JSImport.Default)
   @js.native
-  class default () extends Plugin {
+  class default ()
+    extends StObject
+       with Plugin {
     def this(options: CrittersOptions) = this()
   }
   
   object Critters {
     
-    @js.native
     trait CrittersOptions extends StObject {
       
       /**
         * Glob for matching other stylesheets to be used while looking for critical CSS
         */
-      var additionalStylesheets: js.UndefOr[js.Array[String]] = js.native
+      var additionalStylesheets: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Compress resulting critical CSS.
         * @default true
         */
-      var compress: js.UndefOr[Boolean] = js.native
+      var compress: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Inline styles from external stylesheets.
         * @default true
         */
-      var external: js.UndefOr[Boolean] = js.native
+      var external: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Shorthand for setting inlineFonts+preloadFonts - Values:
         * - true to inline critical font-face rules and preload the fonts.
         * - false to don"t inline any font-face rules and don"t preload fonts.
         */
-      var fonts: js.UndefOr[Boolean] = js.native
+      var fonts: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Inline critical font-face rules.
         * @default false
         */
-      var inlineFonts: js.UndefOr[Boolean] = js.native
+      var inlineFonts: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Inline external stylesheets smaller than a given size.
         * @default 0
         */
-      var inlineThreshold: js.UndefOr[Double] = js.native
+      var inlineThreshold: js.UndefOr[Double] = js.undefined
       
       /**
         * Controls which keyframes rules are inlined.
         * See {@link KeyFrameStrategy keyframe strategy}
         * @default "critical"
         */
-      var keyframes: js.UndefOr[KeyframeStrategy] = js.native
+      var keyframes: js.UndefOr[KeyframeStrategy] = js.undefined
       
       /**
         * Controls {@link LogLevel log level} of the plugin
         * @default 'info'
         */
-      var logLevel: js.UndefOr[LogLevel] = js.native
+      var logLevel: js.UndefOr[LogLevel] = js.undefined
       
       /**
         * Merged inlined stylesheets into a single <style> tag.
         * @default true
         */
-      var mergeStylesheets: js.UndefOr[Boolean] = js.native
+      var mergeStylesheets: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If the non-critical external stylesheet would be below this size, just inline it.
         * @default 0
         */
-      var minimumExternalSize: js.UndefOr[Double] = js.native
+      var minimumExternalSize: js.UndefOr[Double] = js.undefined
       
       /**
         * Add <noscript> fallback to JS-based strategies
         */
-      var noscriptFallback: js.UndefOr[Boolean] = js.native
+      var noscriptFallback: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The mechanism to use for lazy-loading stylesheets.
         *
         */
-      var preload: js.UndefOr[body | media | swap | js_ | `js-lazy`] = js.native
+      var preload: js.UndefOr[body | media | swap | js_ | `js-lazy`] = js.undefined
       
       /**
         * Preloads critical fonts.
         * @default true
         */
-      var preloadFonts: js.UndefOr[Boolean] = js.native
+      var preloadFonts: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Remove inlined rules from the external stylesheet.
         * @default true
         */
-      var pruneSource: js.UndefOr[Boolean] = js.native
+      var pruneSource: js.UndefOr[Boolean] = js.undefined
     }
     object CrittersOptions {
       

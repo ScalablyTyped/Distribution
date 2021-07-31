@@ -2,16 +2,14 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Equals extends StObject {
   
   @JSName("equals")
-  var equals_FEquals: scala.Double = js.native
+  var equals_FEquals: scala.Double
   
-  var notEquals: scala.Double = js.native
+  var notEquals: scala.Double
 }
 object Equals {
   

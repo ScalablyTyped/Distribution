@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the DownloadBitrateChanged event. */
-@js.native
 trait AdaptiveMediaSourceDownloadBitrateChangedEventArgs extends StObject {
   
   /** Gets a value indicating the new download bitrate for the media source. */
-  var newValue: Double = js.native
+  var newValue: Double
   
   /** Gets a value indicating the previous download bitrate for the media source. */
-  var oldValue: Double = js.native
+  var oldValue: Double
 }
 object AdaptiveMediaSourceDownloadBitrateChangedEventArgs {
   

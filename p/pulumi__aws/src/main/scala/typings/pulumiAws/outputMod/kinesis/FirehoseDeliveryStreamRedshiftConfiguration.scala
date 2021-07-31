@@ -2,71 +2,69 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamRedshiftConfiguration extends StObject {
   
   /**
     * The CloudWatch Logging Options for the delivery stream. More details are given below
     */
-  var cloudwatchLoggingOptions: FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions = js.native
+  var cloudwatchLoggingOptions: FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions
   
   /**
     * The jdbcurl of the redshift cluster.
     */
-  var clusterJdbcurl: String = js.native
+  var clusterJdbcurl: String
   
   /**
     * Copy options for copying the data from the s3 intermediate bucket into redshift, for example to change the default delimiter. For valid values, see the [AWS documentation](http://docs.aws.amazon.com/firehose/latest/APIReference/API_CopyCommand.html)
     */
-  var copyOptions: js.UndefOr[String] = js.native
+  var copyOptions: js.UndefOr[String] = js.undefined
   
   /**
     * The data table columns that will be targeted by the copy command.
     */
-  var dataTableColumns: js.UndefOr[String] = js.native
+  var dataTableColumns: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the table in the redshift cluster that the s3 bucket will copy to.
     */
-  var dataTableName: String = js.native
+  var dataTableName: String
   
   /**
     * The password for the username above.
     */
-  var password: String = js.native
+  var password: String
   
   /**
     * The data processing configuration.  More details are given below.
     */
-  var processingConfiguration: js.UndefOr[FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration] = js.native
+  var processingConfiguration: js.UndefOr[FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration] = js.undefined
   
   /**
     * The length of time during which Firehose retries delivery after a failure, starting from the initial request and including the first attempt. The default value is 3600 seconds (60 minutes). Firehose does not retry if the value of DurationInSeconds is 0 (zero) or if the first delivery attempt takes longer than the current value.
     */
-  var retryDuration: js.UndefOr[Double] = js.native
+  var retryDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * The arn of the role the stream assumes.
     */
-  var roleArn: String = js.native
+  var roleArn: String
   
   /**
     * The configuration for backup in Amazon S3. Required if `s3BackupMode` is `Enabled`. Supports the same fields as `s3Configuration` object.
     */
-  var s3BackupConfiguration: js.UndefOr[FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration] = js.native
+  var s3BackupConfiguration: js.UndefOr[FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration] = js.undefined
   
   /**
     * The Amazon S3 backup mode.  Valid values are `Disabled` and `Enabled`.  Default value is `Disabled`.
     */
-  var s3BackupMode: js.UndefOr[String] = js.native
+  var s3BackupMode: js.UndefOr[String] = js.undefined
   
   /**
     * The username that the firehose delivery stream will assume. It is strongly recommended that the username and password provided is used exclusively for Amazon Kinesis Firehose purposes, and that the permissions for the account are restricted for Amazon Redshift INSERT permissions.
     */
-  var username: String = js.native
+  var username: String
 }
 object FirehoseDeliveryStreamRedshiftConfiguration {
   

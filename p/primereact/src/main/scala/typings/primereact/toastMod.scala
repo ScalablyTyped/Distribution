@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastMod {
@@ -30,20 +29,19 @@ object toastMod {
     def show(message: ToastMessage): Unit = js.native
   }
   
-  @js.native
   trait ToastMessage extends StObject {
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var detail: js.UndefOr[ReactNode] = js.native
+    var detail: js.UndefOr[ReactNode] = js.undefined
     
-    var life: js.UndefOr[Double] = js.native
+    var life: js.UndefOr[Double] = js.undefined
     
-    var severity: js.UndefOr[success | info | warn | error] = js.native
+    var severity: js.UndefOr[success | info | warn | error] = js.undefined
     
-    var sticky: js.UndefOr[Boolean] = js.native
+    var sticky: js.UndefOr[Boolean] = js.undefined
     
-    var summary: js.UndefOr[ReactNode] = js.native
+    var summary: js.UndefOr[ReactNode] = js.undefined
   }
   object ToastMessage {
     
@@ -94,24 +92,23 @@ object toastMod {
     }
   }
   
-  @js.native
   trait ToastProps extends StObject {
     
-    var baseZIndex: js.UndefOr[Double] = js.native
+    var baseZIndex: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* message */ ToastMessage, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* message */ ToastMessage, Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* message */ ToastMessage, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* message */ ToastMessage, Unit]] = js.undefined
     
-    var onRemove: js.UndefOr[js.Function1[/* message */ ToastMessage, Unit]] = js.native
+    var onRemove: js.UndefOr[js.Function1[/* message */ ToastMessage, Unit]] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object ToastProps {
     

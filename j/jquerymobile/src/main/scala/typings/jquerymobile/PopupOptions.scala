@@ -2,29 +2,27 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopupOptions extends StObject {
   
-  var corners: js.UndefOr[Boolean] = js.native
+  var corners: js.UndefOr[Boolean] = js.undefined
   
-  var history: js.UndefOr[Boolean] = js.native
+  var history: js.UndefOr[Boolean] = js.undefined
   
-  var initSelector: js.UndefOr[String] = js.native
+  var initSelector: js.UndefOr[String] = js.undefined
   
-  var overlayTheme: js.UndefOr[String] = js.native
+  var overlayTheme: js.UndefOr[String] = js.undefined
   
-  var positionTo: js.UndefOr[String] = js.native
+  var positionTo: js.UndefOr[String] = js.undefined
   
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var tolerance: js.UndefOr[String] = js.native
+  var tolerance: js.UndefOr[String] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
 }
 object PopupOptions {
   

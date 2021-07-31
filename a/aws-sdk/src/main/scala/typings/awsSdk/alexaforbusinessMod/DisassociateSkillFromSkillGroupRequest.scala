@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateSkillFromSkillGroupRequest extends StObject {
   
   /**
     * The unique identifier of a skill. Required.
     */
-  var SkillGroupArn: js.UndefOr[Arn] = js.native
+  var SkillGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of a skill group to associate to a skill.
     */
-  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId = js.native
+  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId
 }
 object DisassociateSkillFromSkillGroupRequest {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomCodeSigning extends StObject {
   
   /**
     * The certificate chain.
     */
-  var certificateChain: js.UndefOr[CodeSigningCertificateChain] = js.native
+  var certificateChain: js.UndefOr[CodeSigningCertificateChain] = js.undefined
   
   /**
     * The hash algorithm used to code sign the file.
     */
-  var hashAlgorithm: js.UndefOr[HashAlgorithm] = js.native
+  var hashAlgorithm: js.UndefOr[HashAlgorithm] = js.undefined
   
   /**
     * The signature for the file.
     */
-  var signature: js.UndefOr[CodeSigningSignature] = js.native
+  var signature: js.UndefOr[CodeSigningSignature] = js.undefined
   
   /**
     * The signature algorithm used to code sign the file.
     */
-  var signatureAlgorithm: js.UndefOr[SignatureAlgorithm] = js.native
+  var signatureAlgorithm: js.UndefOr[SignatureAlgorithm] = js.undefined
 }
 object CustomCodeSigning {
   

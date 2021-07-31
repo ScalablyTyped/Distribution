@@ -12,7 +12,7 @@ wget in Node, with Promise support
 | Keywords           | download, http, promise, request, wget |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 26774 |
+| # downloads        | 30899 |
 | # stars            | 0 |
 
 ## Links

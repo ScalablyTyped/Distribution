@@ -3,41 +3,41 @@ package typings.qlikEngineapi.EngineAPI
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGenericDerivedFields extends IGeneratedAPI {
+trait IGenericDerivedFields
+  extends StObject
+     with IGeneratedAPI {
   
   /**
     * @returns qField
     */
-  def getDerivedField(qId: String): js.Promise[_] = js.native
+  def getDerivedField(qId: String): js.Promise[js.Any]
   
   /**
     * @returns qData
     */
-  def getDerivedFieldData(): js.Promise[_] = js.native
+  def getDerivedFieldData(): js.Promise[js.Any]
   
   /**
     * @returns qFields
     */
-  def getDerivedFields(): js.Promise[_] = js.native
+  def getDerivedFields(): js.Promise[js.Any]
   
   /**
     * @returns qGroups
     */
-  def getDerivedGroups(): js.Promise[_] = js.native
+  def getDerivedGroups(): js.Promise[js.Any]
   
   /**
     * @returns qInfo
     */
-  def getInfo(): js.Promise[_] = js.native
+  def getInfo(): js.Promise[js.Any]
   
   /**
     * @returns qListData
     */
-  def getListData(): js.Promise[_] = js.native
+  def getListData(): js.Promise[js.Any]
   
   /**
     * Shows the properties of an object.
@@ -45,18 +45,18 @@ trait IGenericDerivedFields extends IGeneratedAPI {
     *
     * @returns - A Promise IGenericDerivedFieldProperties
     */
-  def getProperties(): js.Promise[IGenericDerivedFieldProperties] = js.native
+  def getProperties(): js.Promise[IGenericDerivedFieldProperties]
 }
 object IGenericDerivedFields {
   
   @scala.inline
   def apply(
-    getDerivedField: String => js.Promise[_],
-    getDerivedFieldData: () => js.Promise[_],
-    getDerivedFields: () => js.Promise[_],
-    getDerivedGroups: () => js.Promise[_],
-    getInfo: () => js.Promise[_],
-    getListData: () => js.Promise[_],
+    getDerivedField: String => js.Promise[js.Any],
+    getDerivedFieldData: () => js.Promise[js.Any],
+    getDerivedFields: () => js.Promise[js.Any],
+    getDerivedGroups: () => js.Promise[js.Any],
+    getInfo: () => js.Promise[js.Any],
+    getListData: () => js.Promise[js.Any],
     getProperties: () => js.Promise[IGenericDerivedFieldProperties]
   ): IGenericDerivedFields = {
     val __obj = js.Dynamic.literal(getDerivedField = js.Any.fromFunction1(getDerivedField), getDerivedFieldData = js.Any.fromFunction0(getDerivedFieldData), getDerivedFields = js.Any.fromFunction0(getDerivedFields), getDerivedGroups = js.Any.fromFunction0(getDerivedGroups), getInfo = js.Any.fromFunction0(getInfo), getListData = js.Any.fromFunction0(getListData), getProperties = js.Any.fromFunction0(getProperties))
@@ -67,22 +67,22 @@ object IGenericDerivedFields {
   implicit class IGenericDerivedFieldsMutableBuilder[Self <: IGenericDerivedFields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetDerivedField(value: String => js.Promise[_]): Self = StObject.set(x, "getDerivedField", js.Any.fromFunction1(value))
+    def setGetDerivedField(value: String => js.Promise[js.Any]): Self = StObject.set(x, "getDerivedField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDerivedFieldData(value: () => js.Promise[_]): Self = StObject.set(x, "getDerivedFieldData", js.Any.fromFunction0(value))
+    def setGetDerivedFieldData(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getDerivedFieldData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDerivedFields(value: () => js.Promise[_]): Self = StObject.set(x, "getDerivedFields", js.Any.fromFunction0(value))
+    def setGetDerivedFields(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getDerivedFields", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDerivedGroups(value: () => js.Promise[_]): Self = StObject.set(x, "getDerivedGroups", js.Any.fromFunction0(value))
+    def setGetDerivedGroups(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getDerivedGroups", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInfo(value: () => js.Promise[_]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+    def setGetInfo(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetListData(value: () => js.Promise[_]): Self = StObject.set(x, "getListData", js.Any.fromFunction0(value))
+    def setGetListData(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getListData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetProperties(value: () => js.Promise[IGenericDerivedFieldProperties]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))

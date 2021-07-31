@@ -38,7 +38,6 @@ import typings.std.ImageData
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object default {
@@ -53,9 +52,8 @@ object default {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("konva", "default.Animation._addAnimation")
-    @js.native
-    def addAnimation(anim: js.Any): Unit = js.native
+    @scala.inline
+    def addAnimation(anim: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_addAnimation")(anim.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("konva", "default.Animation.animIdCounter")
     @js.native
@@ -69,9 +67,8 @@ object default {
     @scala.inline
     def animRunning_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animRunning")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva", "default.Animation._animationLoop")
-    @js.native
-    def animationLoop(): Unit = js.native
+    @scala.inline
+    def animationLoop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_animationLoop")().asInstanceOf[Unit]
     
     @JSImport("konva", "default.Animation.animations")
     @js.native
@@ -79,17 +76,14 @@ object default {
     @scala.inline
     def animations_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animations")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva", "default.Animation._handleAnimation")
-    @js.native
-    def handleAnimation(): Unit = js.native
+    @scala.inline
+    def handleAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_handleAnimation")().asInstanceOf[Unit]
     
-    @JSImport("konva", "default.Animation._removeAnimation")
-    @js.native
-    def removeAnimation(anim: js.Any): Unit = js.native
+    @scala.inline
+    def removeAnimation(anim: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_removeAnimation")(anim.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("konva", "default.Animation._runFrames")
-    @js.native
-    def runFrames(): Unit = js.native
+    @scala.inline
+    def runFrames(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_runFrames")().asInstanceOf[Unit]
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -132,17 +126,18 @@ object default {
   
   object Collection {
     
-    @JSImport("konva", "default.Collection._mapMethod")
+    @JSImport("konva", "default.Collection")
     @js.native
-    def mapMethod(methodName: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("konva", "default.Collection.mapMethods")
-    @js.native
-    def mapMethods(constructor: js.Function): Unit = js.native
+    @scala.inline
+    def mapMethod(methodName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_mapMethod")(methodName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("konva", "default.Collection.toCollection")
-    @js.native
-    def toCollection[ChildNode /* <: Node[NodeConfig] */](arr: js.Array[ChildNode]): typings.konva.utilMod.Collection[ChildNode] = js.native
+    @scala.inline
+    def mapMethods(constructor: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mapMethods")(constructor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def toCollection[ChildNode /* <: Node[NodeConfig] */](arr: js.Array[ChildNode]): typings.konva.utilMod.Collection[ChildNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCollection")(arr.asInstanceOf[js.Any]).asInstanceOf[typings.konva.utilMod.Collection[ChildNode]]
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -178,9 +173,8 @@ object default {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("konva", "default.DD._drag")
-    @js.native
-    def drag(evt: js.Any): Unit = js.native
+    @scala.inline
+    def drag(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_drag")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("konva", "default.DD._dragElements")
     @js.native
@@ -189,16 +183,13 @@ object default {
     @scala.inline
     def dragElements_=(x: Map[Double, DragStatus]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_dragElements")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva", "default.DD._endDragAfter")
-    @js.native
-    def endDragAfter(evt: js.Any): Unit = js.native
+    @scala.inline
+    def endDragAfter(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragAfter")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("konva", "default.DD._endDragBefore")
-    @js.native
-    def endDragBefore(): Unit = js.native
-    @JSImport("konva", "default.DD._endDragBefore")
-    @js.native
-    def endDragBefore(evt: js.Any): Unit = js.native
+    @scala.inline
+    def endDragBefore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragBefore")().asInstanceOf[Unit]
+    @scala.inline
+    def endDragBefore(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragBefore")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("konva", "default.DD.isDragging")
     @js.native
@@ -217,69 +208,57 @@ object default {
   
   object Easings {
     
-    @JSImport("konva", "default.Easings.BackEaseIn")
+    @JSImport("konva", "default.Easings")
     @js.native
-    def BackEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("konva", "default.Easings.BackEaseInOut")
-    @js.native
-    def BackEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BackEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.BackEaseOut")
-    @js.native
-    def BackEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BackEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.BounceEaseIn")
-    @js.native
-    def BounceEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BackEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.BounceEaseInOut")
-    @js.native
-    def BounceEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BounceEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.BounceEaseOut")
-    @js.native
-    def BounceEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BounceEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.EaseIn")
-    @js.native
-    def EaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BounceEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.EaseInOut")
-    @js.native
-    def EaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def EaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.EaseOut")
-    @js.native
-    def EaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def EaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.ElasticEaseIn")
-    @js.native
-    def ElasticEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = js.native
+    @scala.inline
+    def EaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.ElasticEaseInOut")
-    @js.native
-    def ElasticEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = js.native
+    @scala.inline
+    def ElasticEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.ElasticEaseOut")
-    @js.native
-    def ElasticEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = js.native
+    @scala.inline
+    def ElasticEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.Linear")
-    @js.native
-    def Linear(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def ElasticEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.StrongEaseIn")
-    @js.native
-    def StrongEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def Linear(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Linear")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.StrongEaseInOut")
-    @js.native
-    def StrongEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def StrongEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Easings.StrongEaseOut")
-    @js.native
-    def StrongEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def StrongEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def StrongEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("konva", "default.Ellipse")
@@ -313,142 +292,126 @@ object default {
     @JSImport("konva", "default.Filters.Blur")
     @js.native
     def Blur: Filter = js.native
-    @JSImport("konva", "default.Filters.Blur")
-    @js.native
-    def Blur(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Blur(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Blur")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Blur_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Blur")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Brighten")
     @js.native
     def Brighten: Filter = js.native
-    @JSImport("konva", "default.Filters.Brighten")
-    @js.native
-    def Brighten(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Brighten(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Brighten")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Brighten_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Brighten")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Contrast")
     @js.native
     def Contrast: Filter = js.native
-    @JSImport("konva", "default.Filters.Contrast")
-    @js.native
-    def Contrast(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Contrast(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Contrast")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Contrast_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Contrast")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Emboss")
     @js.native
     def Emboss: Filter = js.native
-    @JSImport("konva", "default.Filters.Emboss")
-    @js.native
-    def Emboss(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Emboss(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Emboss")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Emboss_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Emboss")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Enhance")
     @js.native
     def Enhance: Filter = js.native
-    @JSImport("konva", "default.Filters.Enhance")
-    @js.native
-    def Enhance(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Enhance(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Enhance")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Enhance_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enhance")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Grayscale")
     @js.native
     def Grayscale: Filter = js.native
-    @JSImport("konva", "default.Filters.Grayscale")
-    @js.native
-    def Grayscale(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Grayscale(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Grayscale")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Grayscale_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Grayscale")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.HSL")
     @js.native
     def HSL: Filter = js.native
-    @JSImport("konva", "default.Filters.HSL")
-    @js.native
-    def HSL(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def HSL(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HSL")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def HSL_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HSL")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.HSV")
     @js.native
     def HSV: Filter = js.native
-    @JSImport("konva", "default.Filters.HSV")
-    @js.native
-    def HSV(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def HSV(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HSV")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def HSV_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HSV")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Invert")
     @js.native
     def Invert: Filter = js.native
-    @JSImport("konva", "default.Filters.Invert")
-    @js.native
-    def Invert(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Invert(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Invert")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Invert_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Invert")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Kaleidoscope")
     @js.native
     def Kaleidoscope: Filter = js.native
-    @JSImport("konva", "default.Filters.Kaleidoscope")
-    @js.native
-    def Kaleidoscope(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Kaleidoscope(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Kaleidoscope")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Kaleidoscope_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Kaleidoscope")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Mask")
     @js.native
     def Mask: Filter = js.native
-    @JSImport("konva", "default.Filters.Mask")
-    @js.native
-    def Mask(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Mask(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Mask")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Mask_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mask")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Noise")
     @js.native
     def Noise: Filter = js.native
-    @JSImport("konva", "default.Filters.Noise")
-    @js.native
-    def Noise(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Noise(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Noise")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Noise_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Noise")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Pixelate")
     @js.native
     def Pixelate: Filter = js.native
-    @JSImport("konva", "default.Filters.Pixelate")
-    @js.native
-    def Pixelate(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Pixelate(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Pixelate")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Pixelate_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pixelate")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Posterize")
     @js.native
     def Posterize: Filter = js.native
-    @JSImport("konva", "default.Filters.Posterize")
-    @js.native
-    def Posterize(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Posterize(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Posterize")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Posterize_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Posterize")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.RGB")
     @js.native
     def RGB: Filter = js.native
-    @JSImport("konva", "default.Filters.RGB")
-    @js.native
-    def RGB(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def RGB(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RGB")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("konva", "default.Filters.RGBA")
     @js.native
     def RGBA: Filter = js.native
-    @JSImport("konva", "default.Filters.RGBA")
-    @js.native
-    def RGBA(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def RGBA(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RGBA")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def RGBA_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RGBA")(x.asInstanceOf[js.Any])
     
@@ -458,27 +421,24 @@ object default {
     @JSImport("konva", "default.Filters.Sepia")
     @js.native
     def Sepia: Filter = js.native
-    @JSImport("konva", "default.Filters.Sepia")
-    @js.native
-    def Sepia(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Sepia(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Sepia")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Sepia_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sepia")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Solarize")
     @js.native
     def Solarize: Filter = js.native
-    @JSImport("konva", "default.Filters.Solarize")
-    @js.native
-    def Solarize(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Solarize(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Solarize")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Solarize_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Solarize")(x.asInstanceOf[js.Any])
     
     @JSImport("konva", "default.Filters.Threshold")
     @js.native
     def Threshold: Filter = js.native
-    @JSImport("konva", "default.Filters.Threshold")
-    @js.native
-    def Threshold(imageData: ImageData): Unit = js.native
+    @scala.inline
+    def Threshold(imageData: ImageData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Threshold")(imageData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def Threshold_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Threshold")(x.asInstanceOf[js.Any])
   }
@@ -495,9 +455,12 @@ object default {
   
   object Image {
     
-    @JSImport("konva", "default.Image.fromURL")
+    @JSImport("konva", "default.Image")
     @js.native
-    def fromURL(url: js.Any, callback: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromURL(url: js.Any, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -546,19 +509,19 @@ object default {
   
   object Node {
     
-    @JSImport("konva", "default.Node.create")
+    @JSImport("konva", "default.Node")
     @js.native
-    def create(data: js.Any): js.Any = js.native
-    @JSImport("konva", "default.Node.create")
-    @js.native
-    def create(data: js.Any, container: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("konva", "default.Node._createNode")
-    @js.native
-    def createNode(obj: js.Any): js.Any = js.native
-    @JSImport("konva", "default.Node._createNode")
-    @js.native
-    def createNode(obj: js.Any, container: js.Any): js.Any = js.native
+    @scala.inline
+    def create(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def create(data: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def createNode(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def createNode(obj: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -570,12 +533,14 @@ object default {
   
   object Path {
     
-    @JSImport("konva", "default.Path.calcLength")
+    @JSImport("konva", "default.Path")
     @js.native
-    def calcLength(x: js.Any, y: js.Any, cmd: js.Any, points: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("konva", "default.Path.convertEndpointToCenterParameterization")
-    @js.native
+    @scala.inline
+    def calcLength(x: js.Any, y: js.Any, cmd: js.Any, points: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("calcLength")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
     def convertEndpointToCenterParameterization(
       x1: js.Any,
       y1: js.Any,
@@ -586,14 +551,12 @@ object default {
       rx: js.Any,
       ry: js.Any,
       psiDeg: js.Any
-    ): js.Array[_] = js.native
+    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertEndpointToCenterParameterization")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], fa.asInstanceOf[js.Any], fs.asInstanceOf[js.Any], rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], psiDeg.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("konva", "default.Path.getLineLength")
-    @js.native
-    def getLineLength(x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any): Double = js.native
+    @scala.inline
+    def getLineLength(x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineLength")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("konva", "default.Path.getPointOnCubicBezier")
-    @js.native
+    @scala.inline
     def getPointOnCubicBezier(
       pct: js.Any,
       P1x: js.Any,
@@ -604,40 +567,25 @@ object default {
       P3y: js.Any,
       P4x: js.Any,
       P4y: js.Any
-    ): X = js.native
+    ): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnCubicBezier")(pct.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], P3x.asInstanceOf[js.Any], P3y.asInstanceOf[js.Any], P4x.asInstanceOf[js.Any], P4y.asInstanceOf[js.Any])).asInstanceOf[X]
     
-    @JSImport("konva", "default.Path.getPointOnEllipticalArc")
-    @js.native
-    def getPointOnEllipticalArc(cx: js.Any, cy: js.Any, rx: js.Any, ry: js.Any, theta: js.Any, psi: js.Any): XY = js.native
+    @scala.inline
+    def getPointOnEllipticalArc(cx: js.Any, cy: js.Any, rx: js.Any, ry: js.Any, theta: js.Any, psi: js.Any): XY = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnEllipticalArc")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], theta.asInstanceOf[js.Any], psi.asInstanceOf[js.Any])).asInstanceOf[XY]
     
-    @JSImport("konva", "default.Path.getPointOnLine")
-    @js.native
-    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any): js.Any = js.native
-    @JSImport("konva", "default.Path.getPointOnLine")
-    @js.native
-    def getPointOnLine(
-      dist: js.Any,
-      P1x: js.Any,
-      P1y: js.Any,
-      P2x: js.Any,
-      P2y: js.Any,
-      fromX: js.UndefOr[scala.Nothing],
-      fromY: js.Any
-    ): js.Any = js.native
-    @JSImport("konva", "default.Path.getPointOnLine")
-    @js.native
-    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any): js.Any = js.native
-    @JSImport("konva", "default.Path.getPointOnLine")
-    @js.native
-    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any, fromY: js.Any): js.Any = js.native
+    @scala.inline
+    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnLine")(dist.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnLine")(dist.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], fromX.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any, fromY: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnLine")(dist.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], fromX.asInstanceOf[js.Any], fromY.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: Unit, fromY: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnLine")(dist.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], fromX.asInstanceOf[js.Any], fromY.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Path.getPointOnQuadraticBezier")
-    @js.native
-    def getPointOnQuadraticBezier(pct: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, P3x: js.Any, P3y: js.Any): X = js.native
+    @scala.inline
+    def getPointOnQuadraticBezier(pct: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, P3x: js.Any, P3y: js.Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnQuadraticBezier")(pct.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], P3x.asInstanceOf[js.Any], P3y.asInstanceOf[js.Any])).asInstanceOf[X]
     
-    @JSImport("konva", "default.Path.parsePathData")
-    @js.native
-    def parsePathData(data: js.Any): js.Array[_] = js.native
+    @scala.inline
+    def parsePathData(data: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -796,201 +744,156 @@ object default {
   
   object Util {
     
-    @JSImport("konva", "default.Util._assign")
+    @JSImport("konva", "default.Util")
     @js.native
-    def assign[T, U](target: T, source: U): T with U = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("konva", "default.Util._capitalize")
-    @js.native
-    def capitalize(str: String): String = js.native
+    @scala.inline
+    def assign[T, U](target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].applyDynamic("_assign")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
     
-    @JSImport("konva", "default.Util.cloneArray")
-    @js.native
-    def cloneArray(arr: js.Array[_]): js.Array[_] = js.native
+    @scala.inline
+    def capitalize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_capitalize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("konva", "default.Util.cloneObject")
-    @js.native
-    def cloneObject[Any](obj: Any): Any = js.native
+    @scala.inline
+    def cloneArray(arr: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("konva", "default.Util.colorToRGBA")
-    @js.native
-    def colorToRGBA(str: String): RGBA = js.native
+    @scala.inline
+    def cloneObject[Any](obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    @JSImport("konva", "default.Util.createCanvasElement")
-    @js.native
-    def createCanvasElement(): HTMLCanvasElement = js.native
+    @scala.inline
+    def colorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("colorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
     
-    @JSImport("konva", "default.Util.createImageElement")
-    @js.native
-    def createImageElement(): HTMLImageElement = js.native
+    @scala.inline
+    def createCanvasElement(): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createCanvasElement")().asInstanceOf[HTMLCanvasElement]
     
-    @JSImport("konva", "default.Util._degToRad")
-    @js.native
-    def degToRad(deg: Double): Double = js.native
+    @scala.inline
+    def createImageElement(): HTMLImageElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createImageElement")().asInstanceOf[HTMLImageElement]
     
-    @JSImport("konva", "default.Util.each")
-    @js.native
-    def each(obj: js.Any, func: js.Any): Unit = js.native
+    @scala.inline
+    def degToRad(deg: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_degToRad")(deg.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("konva", "default.Util.error")
-    @js.native
-    def error(str: String): Unit = js.native
+    @scala.inline
+    def each(obj: js.Any, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("konva", "default.Util._expandPoints")
-    @js.native
-    def expandPoints(p: js.Any, tension: js.Any): js.Array[_] = js.native
+    @scala.inline
+    def error(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("konva", "default.Util.extend")
-    @js.native
-    def extend(child: js.Any, parent: js.Any): Unit = js.native
+    @scala.inline
+    def expandPoints(p: js.Any, tension: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_expandPoints")(p.asInstanceOf[js.Any], tension.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("konva", "default.Util.get")
-    @js.native
-    def get(`val`: js.Any, `def`: js.Any): js.Any = js.native
+    @scala.inline
+    def extend(child: js.Any, parent: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(child.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("konva", "default.Util._getControlPoints")
-    @js.native
-    def getControlPoints(x0: js.Any, y0: js.Any, x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any, t: js.Any): js.Array[_] = js.native
+    @scala.inline
+    def get(`val`: js.Any, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`val`.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Util._getFirstPointerId")
-    @js.native
-    def getFirstPointerId(evt: js.Any): js.Any = js.native
+    @scala.inline
+    def getControlPoints(x0: js.Any, y0: js.Any, x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any, t: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_getControlPoints")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("konva", "default.Util._getProjectionToLine")
-    @js.native
-    def getProjectionToLine(pt: Vector2d, line: js.Any, isClosed: js.Any): Vector2d = js.native
+    @scala.inline
+    def getFirstPointerId(evt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_getFirstPointerId")(evt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Util._getProjectionToSegment")
-    @js.native
-    def getProjectionToSegment(x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any, x3: js.Any, y3: js.Any): js.Array[_] = js.native
+    @scala.inline
+    def getProjectionToLine(pt: Vector2d, line: js.Any, isClosed: js.Any): Vector2d = (^.asInstanceOf[js.Dynamic].applyDynamic("_getProjectionToLine")(pt.asInstanceOf[js.Any], line.asInstanceOf[js.Any], isClosed.asInstanceOf[js.Any])).asInstanceOf[Vector2d]
     
-    @JSImport("konva", "default.Util.getRGB")
-    @js.native
-    def getRGB(color: String): RGB = js.native
+    @scala.inline
+    def getProjectionToSegment(x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any, x3: js.Any, y3: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_getProjectionToSegment")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("konva", "default.Util.getRandomColor")
-    @js.native
-    def getRandomColor(): String = js.native
+    @scala.inline
+    def getRGB(color: String): RGB = ^.asInstanceOf[js.Dynamic].applyDynamic("getRGB")(color.asInstanceOf[js.Any]).asInstanceOf[RGB]
     
-    @JSImport("konva", "default.Util._getRotation")
-    @js.native
-    def getRotation(radians: js.Any): js.Any = js.native
+    @scala.inline
+    def getRandomColor(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomColor")().asInstanceOf[String]
     
-    @JSImport("konva", "default.Util.haveIntersection")
-    @js.native
-    def haveIntersection(r1: IRect, r2: IRect): Boolean = js.native
+    @scala.inline
+    def getRotation(radians: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_getRotation")(radians.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Util._hex3ColorToRGBA")
-    @js.native
-    def hex3ColorToRGBA(str: String): RGBA = js.native
+    @scala.inline
+    def haveIntersection(r1: IRect, r2: IRect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("haveIntersection")(r1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("konva", "default.Util._hex6ColorToRGBA")
-    @js.native
-    def hex6ColorToRGBA(str: String): RGBA = js.native
+    @scala.inline
+    def hex3ColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_hex3ColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
     
-    @JSImport("konva", "default.Util._hexToRgb")
-    @js.native
-    def hexToRgb(hex: String): RGB = js.native
+    @scala.inline
+    def hex6ColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_hex6ColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
     
-    @JSImport("konva", "default.Util._hslColorToRGBA")
-    @js.native
-    def hslColorToRGBA(str: String): RGBA = js.native
+    @scala.inline
+    def hexToRgb(hex: String): RGB = ^.asInstanceOf[js.Dynamic].applyDynamic("_hexToRgb")(hex.asInstanceOf[js.Any]).asInstanceOf[RGB]
     
-    @JSImport("konva", "default.Util._inRange")
-    @js.native
-    def inRange(`val`: js.Any, left: js.Any, right: js.Any): Boolean = js.native
+    @scala.inline
+    def hslColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_hslColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
     
-    @JSImport("konva", "default.Util._isArray")
-    @js.native
-    def isArray(obj: js.Any): /* is std.Array<any> */ Boolean = js.native
+    @scala.inline
+    def inRange(`val`: js.Any, left: js.Any, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_inRange")(`val`.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("konva", "default.Util._isBoolean")
-    @js.native
-    def isBoolean(obj: js.Any): /* is boolean */ Boolean = js.native
+    @scala.inline
+    def isArray(obj: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
     
-    @JSImport("konva", "default.Util._isElement")
-    @js.native
-    def isElement(obj: js.Any): /* is std.Element */ Boolean = js.native
+    @scala.inline
+    def isBoolean(obj: js.Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isBoolean")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
     
-    @JSImport("konva", "default.Util._isFunction")
-    @js.native
-    def isFunction(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isElement(obj: js.Any): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isElement")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
     
-    @JSImport("konva", "default.Util._isInDocument")
-    @js.native
-    def isInDocument(el: js.Any): Boolean = js.native
+    @scala.inline
+    def isFunction(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("konva", "default.Util._isNumber")
-    @js.native
-    def isNumber(obj: js.Any): /* is number */ Boolean = js.native
+    @scala.inline
+    def isInDocument(el: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isInDocument")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("konva", "default.Util.isObject")
-    @js.native
-    def isObject(`val`: js.Any): /* is std.Object */ Boolean = js.native
+    @scala.inline
+    def isNumber(obj: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isNumber")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
     
-    @JSImport("konva", "default.Util._isPlainObject")
-    @js.native
-    def isPlainObject(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isObject(`val`: js.Any): /* is std.Object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Object */ Boolean]
     
-    @JSImport("konva", "default.Util._isString")
-    @js.native
-    def isString(obj: js.Any): /* is string */ Boolean = js.native
+    @scala.inline
+    def isPlainObject(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isPlainObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("konva", "default.Util.isValidSelector")
-    @js.native
-    def isValidSelector(selector: js.Any): Boolean = js.native
+    @scala.inline
+    def isString(obj: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isString")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
     
-    @JSImport("konva", "default.Util._namedColorToRBA")
-    @js.native
-    def namedColorToRBA(str: String): A = js.native
+    @scala.inline
+    def isValidSelector(selector: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("konva", "default.Util._prepareArrayForTween")
-    @js.native
-    def prepareArrayForTween(startArray: js.Any, endArray: js.Any, isClosed: js.Any): js.Array[_] = js.native
+    @scala.inline
+    def namedColorToRBA(str: String): A = ^.asInstanceOf[js.Dynamic].applyDynamic("_namedColorToRBA")(str.asInstanceOf[js.Any]).asInstanceOf[A]
     
-    @JSImport("konva", "default.Util._prepareToStringify")
-    @js.native
-    def prepareToStringify(obj: js.Any): js.Any = js.native
+    @scala.inline
+    def prepareArrayForTween(startArray: js.Any, endArray: js.Any, isClosed: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_prepareArrayForTween")(startArray.asInstanceOf[js.Any], endArray.asInstanceOf[js.Any], isClosed.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("konva", "default.Util._radToDeg")
-    @js.native
-    def radToDeg(rad: Double): Double = js.native
+    @scala.inline
+    def prepareToStringify(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_prepareToStringify")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("konva", "default.Util.requestAnimFrame")
-    @js.native
-    def requestAnimFrame(callback: js.Function): Unit = js.native
+    @scala.inline
+    def radToDeg(rad: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_radToDeg")(rad.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("konva", "default.Util._rgbColorToRGBA")
-    @js.native
-    def rgbColorToRGBA(str: String): RGBA = js.native
+    @scala.inline
+    def requestAnimFrame(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("konva", "default.Util._rgbToHex")
-    @js.native
-    def rgbToHex(r: Double, g: Double, b: Double): String = js.native
+    @scala.inline
+    def rgbColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_rgbColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
     
-    @JSImport("konva", "default.Util._rgbaColorToRGBA")
-    @js.native
-    def rgbaColorToRGBA(str: String): RGBA = js.native
+    @scala.inline
+    def rgbToHex(r: Double, g: Double, b: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_rgbToHex")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("konva", "default.Util._sign")
-    @js.native
-    def sign(number: Double): `1` | `0` | `-1` = js.native
+    @scala.inline
+    def rgbaColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_rgbaColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
     
-    @JSImport("konva", "default.Util._simplifyArray")
-    @js.native
-    def simplifyArray(arr: js.Array[_]): js.Array[_] = js.native
+    @scala.inline
+    def sign(number: Double): `1` | `0` | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("_sign")(number.asInstanceOf[js.Any]).asInstanceOf[`1` | `0` | `-1`]
     
-    @JSImport("konva", "default.Util._urlToImage")
-    @js.native
-    def urlToImage(url: String, callback: js.Function): Unit = js.native
+    @scala.inline
+    def simplifyArray(arr: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_simplifyArray")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("konva", "default.Util.warn")
-    @js.native
-    def warn(str: String): Unit = js.native
+    @scala.inline
+    def `throw`(str: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throw")(str.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
     
-    @JSImport("konva", "default.Util.throw")
-    @js.native
-    def `throw`(str: String): scala.Nothing = js.native
+    @scala.inline
+    def urlToImage(url: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_urlToImage")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def warn(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("konva", "default.Wedge")
@@ -1027,13 +930,11 @@ object default {
   @scala.inline
   def hitOnDragEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hitOnDragEnabled")(x.asInstanceOf[js.Any])
   
-  @JSImport("konva", "default.isDragReady")
-  @js.native
-  def isDragReady(): Boolean = js.native
+  @scala.inline
+  def isDragReady(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragReady")().asInstanceOf[Boolean]
   
-  @JSImport("konva", "default.isDragging")
-  @js.native
-  def isDragging(): Boolean = js.native
+  @scala.inline
+  def isDragging(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragging")().asInstanceOf[Boolean]
   
   @JSImport("konva", "default.pixelRatio")
   @js.native

@@ -2,21 +2,19 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReferenceOptions extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
-  var contextPrefix: js.UndefOr[String] = js.native
+  var contextPrefix: js.UndefOr[String] = js.undefined
   
-  var functions: js.UndefOr[Boolean] = js.native
+  var functions: js.UndefOr[Boolean] = js.undefined
   
-  var separator: js.UndefOr[String] = js.native
+  var separator: js.UndefOr[String] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object ReferenceOptions {
   

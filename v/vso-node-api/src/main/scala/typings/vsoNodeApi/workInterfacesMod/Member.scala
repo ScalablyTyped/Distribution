@@ -2,21 +2,19 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Member extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var id: String = js.native
+  var id: String
   
-  var imageUrl: String = js.native
+  var imageUrl: String
   
-  var uniqueName: String = js.native
+  var uniqueName: String
   
-  var url: String = js.native
+  var url: String
 }
 object Member {
   

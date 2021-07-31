@@ -2,96 +2,94 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBClusterSnapshot extends StObject {
   
   /**
     * Provides the list of Amazon EC2 Availability Zones that instances in the cluster snapshot can be restored in.
     */
-  var AvailabilityZones: js.UndefOr[typings.awsSdk.docdbMod.AvailabilityZones] = js.native
+  var AvailabilityZones: js.UndefOr[typings.awsSdk.docdbMod.AvailabilityZones] = js.undefined
   
   /**
     * Specifies the time when the cluster was created, in Universal Coordinated Time (UTC).
     */
-  var ClusterCreateTime: js.UndefOr[TStamp] = js.native
+  var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Specifies the cluster identifier of the cluster that this cluster snapshot was created from.
     */
-  var DBClusterIdentifier: js.UndefOr[String] = js.native
+  var DBClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the cluster snapshot.
     */
-  var DBClusterSnapshotArn: js.UndefOr[String] = js.native
+  var DBClusterSnapshotArn: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the identifier for the cluster snapshot.
     */
-  var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.native
+  var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the name of the database engine.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the version of the database engine for this cluster snapshot.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted cluster snapshot.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the master user name for the cluster snapshot.
     */
-  var MasterUsername: js.UndefOr[String] = js.native
+  var MasterUsername: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the percentage of the estimated data that has been transferred.
     */
-  var PercentProgress: js.UndefOr[Integer] = js.native
+  var PercentProgress: js.UndefOr[Integer] = js.undefined
   
   /**
     * Specifies the port that the cluster was listening on at the time of the snapshot.
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
   
   /**
     * Provides the time when the snapshot was taken, in UTC.
     */
-  var SnapshotCreateTime: js.UndefOr[TStamp] = js.native
+  var SnapshotCreateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Provides the type of the cluster snapshot.
     */
-  var SnapshotType: js.UndefOr[String] = js.native
+  var SnapshotType: js.UndefOr[String] = js.undefined
   
   /**
     * If the cluster snapshot was copied from a source cluster snapshot, the ARN for the source cluster snapshot; otherwise, a null value.
     */
-  var SourceDBClusterSnapshotArn: js.UndefOr[String] = js.native
+  var SourceDBClusterSnapshotArn: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the status of this cluster snapshot.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the cluster snapshot is encrypted.
     */
-  var StorageEncrypted: js.UndefOr[Boolean] = js.native
+  var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Provides the virtual private cloud (VPC) ID that is associated with the cluster snapshot.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object DBClusterSnapshot {
   

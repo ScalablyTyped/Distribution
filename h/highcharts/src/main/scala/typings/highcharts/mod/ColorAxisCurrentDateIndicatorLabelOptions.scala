@@ -2,36 +2,34 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorAxisCurrentDateIndicatorLabelOptions extends StObject {
   
   /**
     * (Gantt) Horizontal alignment of the label. Can be one of "left", "center"
     * or "right".
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Gantt) Format of the label. This options is passed as the fist argument
     * to dateFormat function.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * (Gantt) Callback JavaScript function to format the label. Useful
     * properties like the value of plot line or the range of plot band (`from`
     * & `to` properties) can be found in `this.options` object.
     */
-  var formatter: js.UndefOr[FormatterCallbackFunction[PlotLineOrBand]] = js.native
+  var formatter: js.UndefOr[FormatterCallbackFunction[PlotLineOrBand]] = js.undefined
   
   /**
     * (Gantt) Rotation of the text label in degrees. Defaults to 0 for
     * horizontal plot lines and 90 for vertical lines.
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) CSS styles for the text label.
@@ -39,12 +37,12 @@ trait ColorAxisCurrentDateIndicatorLabelOptions extends StObject {
     * In styled mode, the labels are styled by the
     * `.highcharts-plot-line-label` class.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Gantt) The text itself. A subset of HTML is supported.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * (Gantt) The text alignment for the label. While `align` determines where
@@ -53,30 +51,30 @@ trait ColorAxisCurrentDateIndicatorLabelOptions extends StObject {
     * values are "left", "center" and "right". Defaults to the same as the
     * `align` option.
     */
-  var textAlign: js.UndefOr[AlignValue] = js.native
+  var textAlign: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Gantt) Whether to use HTML to render the labels.
     */
-  var useHTML: js.UndefOr[Boolean] = js.native
+  var useHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Vertical alignment of the label relative to the plot line. Can be
     * one of "top", "middle" or "bottom".
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   
   /**
     * (Gantt) Horizontal position relative the alignment. Default varies by
     * orientation.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Vertical position of the text baseline relative to the alignment.
     * Default varies by orientation.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object ColorAxisCurrentDateIndicatorLabelOptions {
   

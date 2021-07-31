@@ -4,40 +4,38 @@ import typings.activexOffice.Office.MsoHyperlinkType
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hyperlink extends StObject {
   
-  def AddToFavorites(): Unit = js.native
+  def AddToFavorites(): Unit
   
-  var Address: String = js.native
+  var Address: String
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  def CreateNewDocument(FileName: String, EditNow: MsoTriState, Overwrite: MsoTriState): Unit = js.native
+  def CreateNewDocument(FileName: String, EditNow: MsoTriState, Overwrite: MsoTriState): Unit
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var EmailSubject: String = js.native
+  var EmailSubject: String
   
-  def Follow(): Unit = js.native
+  def Follow(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Hyperlink_typekey")
-  var PowerPointDotHyperlink_typekey: Hyperlink = js.native
+  var PowerPointDotHyperlink_typekey: Hyperlink
   
-  var ScreenTip: String = js.native
+  var ScreenTip: String
   
-  var ShowAndReturn: MsoTriState = js.native
+  var ShowAndReturn: MsoTriState
   
-  var SubAddress: String = js.native
+  var SubAddress: String
   
-  var TextToDisplay: String = js.native
+  var TextToDisplay: String
   
-  val Type: MsoHyperlinkType = js.native
+  val Type: MsoHyperlinkType
 }
 object Hyperlink {
   

@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComboBox extends Widget_ {
+trait ComboBox
+  extends StObject
+     with Widget_ {
   
   /** Adds a new item to the popup list. By default, new item appends to the list as the last item, but you can insert based on the index parameter.
     * @returns {void}
@@ -59,31 +60,36 @@ object ComboBox {
     
     ///The data source is sorting with ascending order.
     @js.native
-    sealed trait Ascending extends SortOrder
+    sealed trait Ascending
+      extends StObject
+         with SortOrder
     
     ///The data source is sorting with descending order.
     @js.native
-    sealed trait Descending extends SortOrder
+    sealed trait Descending
+      extends StObject
+         with SortOrder
     
     ///The data source is not sorting.
     @js.native
-    sealed trait None extends SortOrder
+    sealed trait None
+      extends StObject
+         with SortOrder
   }
   
-  @js.native
   trait ActionBeginEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ComboBox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionBeginEventArgs {
     
@@ -116,24 +122,23 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait ActionCompleteEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -172,24 +177,23 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait ActionFailureEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the error message
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionFailureEventArgs {
     
@@ -228,36 +232,35 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** Li element of the selected item.
       */
-    var Item: js.UndefOr[js.Any] = js.native
+    var Item: js.UndefOr[js.Any] = js.undefined
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Event argument.
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** value of the interaction
       */
-    var isInteracted: js.UndefOr[Boolean] = js.native
+    var isInteracted: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the combobox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Value of the combobox textbox.
       */
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -314,12 +317,11 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait CloseEventArgs extends StObject {
     
     /** Element of the combobox popup list
       */
-    var popup: js.UndefOr[js.Any] = js.native
+    var popup: js.UndefOr[js.Any] = js.undefined
   }
   object CloseEventArgs {
     
@@ -340,20 +342,19 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the combobox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -386,20 +387,19 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait CustomValueSpecifierEventArgs extends StObject {
     
     /** Instance of the combobox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** text of the combobox.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CustomValueSpecifierEventArgs {
     
@@ -432,28 +432,27 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /** Used to group the popup list items.
       * @Default {null}
       */
-    var groupBy: js.UndefOr[String] = js.native
+    var groupBy: js.UndefOr[String] = js.undefined
     
     /** Defines class for the item.
       * @Default {null}
       */
-    var iconCss: js.UndefOr[String] = js.native
+    var iconCss: js.UndefOr[String] = js.undefined
     
     /** Defines the specific field name in the data source to load the popup list with data.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Defines the specific field name which contains unique values for the list items.
       * @Default {null}
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -492,24 +491,23 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait FilteringEventArgs extends StObject {
     
     /** Instance of the combobox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** text of the combobox.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Function used to update the filtering value.
       */
-    var updateData: js.UndefOr[js.Any] = js.native
+    var updateData: js.UndefOr[js.Any] = js.undefined
   }
   object FilteringEventArgs {
     
@@ -548,20 +546,19 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait FocusEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the combobox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FocusEventArgs {
     
@@ -594,187 +591,186 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers before fetching data from the remote server.
       */
-    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.native
+    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.undefined
     
     /** Triggers after data is fetched successfully from the remote server.
       */
-    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.native
+    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Triggers when the data fetch request from the remote server fails.
       */
-    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.native
+    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.undefined
     
     /** Accepts the template and assigns it to the popup list content of the component when the data fetch request from the remote server fails.
       * @Default {The Request Failed}
       */
-    var actionFailureTemplate: js.UndefOr[String] = js.native
+    var actionFailureTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies whether the component allows user defined value which does not exist in data source.
       * @Default {true}
       */
-    var allowCustom: js.UndefOr[Boolean] = js.native
+    var allowCustom: js.UndefOr[Boolean] = js.undefined
     
     /** When allowFiltering is set to true, show the filter bar (search box) of the component. The filter action retrieves matched items through the filtering event based on the
       * characters typed in the search TextBox. If no match is found, the value of the noRecordsTemplate property will be displayed.
       * @Default {false}
       */
-    var allowFiltering: js.UndefOr[Boolean] = js.native
+    var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether suggest a first matched item in input when searching. No action happens when no matches found.
       * @Default {false}
       */
-    var autofill: js.UndefOr[Boolean] = js.native
+    var autofill: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when an item in a popup is selected or when the model value is changed.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers when the popup is closed.
       */
-    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Triggers when ComboBox widget is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets CSS classes to the root element of the component that helps customize the UI styles.
       * @Default {null}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Triggers on set a custom value to this component.
       */
-    var customValueSpecifier: js.UndefOr[js.Function1[/* e */ CustomValueSpecifierEventArgs, Unit]] = js.native
+    var customValueSpecifier: js.UndefOr[js.Function1[/* e */ CustomValueSpecifierEventArgs, Unit]] = js.undefined
     
     /** Accepts the list items either through local or remote service and binds it to the component. It can be an array of JSON objects or an instance of DataManager.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[_]] = js.native
+    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
     
     /** When set to true, enables RTL mode of the component that displays the content in the right-to-left direction.
       * @Default {false}
       */
-    var enableRtl: js.UndefOr[Boolean] = js.native
+    var enableRtl: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies a value that indicates whether the component is enabled or not.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** The fields property maps the columns of the data table and binds the data to the component.
       */
-    var fields: js.UndefOr[Fields] = js.native
+    var fields: js.UndefOr[Fields] = js.undefined
     
     /** Triggers on typing a character in the component.
       */
-    var filtering: js.UndefOr[js.Function1[/* e */ FilteringEventArgs, Unit]] = js.native
+    var filtering: js.UndefOr[js.Function1[/* e */ FilteringEventArgs, Unit]] = js.undefined
     
     /** Triggers when the component is focused.
       */
-    var focus: js.UndefOr[js.Function1[/* e */ FocusEventArgs, Unit]] = js.native
+    var focus: js.UndefOr[js.Function1[/* e */ FocusEventArgs, Unit]] = js.undefined
     
     /** Accepts the template design and assigns it to the footer container of the popup list.
       * @Default {null}
       */
-    var footerTemplate: js.UndefOr[String] = js.native
+    var footerTemplate: js.UndefOr[String] = js.undefined
     
     /** Accepts the template design and assigns it to the group headers present in the popup list.
       * @Default {null}
       */
-    var groupTemplate: js.UndefOr[String] = js.native
+    var groupTemplate: js.UndefOr[String] = js.undefined
     
     /** Accepts the template design and assigns it to the header container of the popup list.
       * @Default {null}
       */
-    var headerTemplate: js.UndefOr[String] = js.native
+    var headerTemplate: js.UndefOr[String] = js.undefined
     
     /** Allows additional HTML attributes such as title, name, etc., and accepts n number of attributes in a key-value pair format.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Gets or sets the index of the selected item in the component.
       * @Default {null}
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Accepts the template design and assigns it to each list item present in the popup.
       * @Default {null}
       */
-    var itemTemplate: js.UndefOr[String] = js.native
+    var itemTemplate: js.UndefOr[String] = js.undefined
     
     /** Overrides the global culture and localization value for this component. Default global culture is 'en-US'.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Accepts the template design and assigns it to popup list of component when no data is available on the component.
       * @Default {No Records Found}
       */
-    var noRecordsTemplate: js.UndefOr[String] = js.native
+    var noRecordsTemplate: js.UndefOr[String] = js.undefined
     
     /** Triggers after the suggestion list is opened.
       */
-    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Accepts the value to be displayed as a watermark text on the component input.
       * @Default {null}
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /** Specifies the height of the popup list.
       * @Default {300px}
       */
-    var popupHeight: js.UndefOr[String | Double] = js.native
+    var popupHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the width of the popup list. By default, the popup width sets based on the width of the component.
       * @Default {100%}
       */
-    var popupWidth: js.UndefOr[String | Double] = js.native
+    var popupWidth: js.UndefOr[String | Double] = js.undefined
     
     /** The query to retrieve the data from the data source.
       * @Default {null}
       */
-    var query: js.UndefOr[Query] = js.native
+    var query: js.UndefOr[Query] = js.undefined
     
     /** When set to true, the user interactions on the component are disabled.
       * @Default {false}
       */
-    var readonly: js.UndefOr[Boolean] = js.native
+    var readonly: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when an item in the popup is selected.
       */
-    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.native
+    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** Specifies whether to show or hide the clear button. When the clear button is clicked, value, text, and index properties are reset to null.
       * @Default {true}
       */
-    var showClearButton: js.UndefOr[Boolean] = js.native
+    var showClearButton: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the sortOrder to sort the data source. The available type of sort orders are
       * @Default {ej.SortOrder.None}
       */
-    var sortOrder: js.UndefOr[SortOrder_ | String] = js.native
+    var sortOrder: js.UndefOr[SortOrder_ | String] = js.undefined
     
     /** Gets or sets the display text of the selected item in the component.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the value of the selected item in the component.
       * @Default {null}
       */
-    var value: js.UndefOr[Double | String] = js.native
+    var value: js.UndefOr[Double | String] = js.undefined
     
     /** Specifies the width of the component. By default, the component width sets based on the width of its parent container. You can also set the width in pixel values.
       * @Default {100%}
       */
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object Model {
     
@@ -860,7 +856,7 @@ object ComboBox {
       def setCustomValueSpecifierUndefined: Self = StObject.set(x, "customValueSpecifier", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Any | js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -1020,12 +1016,11 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait OpenEventArgs extends StObject {
     
     /** Element of the combobox popup list
       */
-    var popup: js.UndefOr[js.Any] = js.native
+    var popup: js.UndefOr[js.Any] = js.undefined
   }
   object OpenEventArgs {
     
@@ -1046,44 +1041,43 @@ object ComboBox {
     }
   }
   
-  @js.native
   trait SelectEventArgs extends StObject {
     
     /** Li element of the selected item.
       */
-    var Item: js.UndefOr[js.Any] = js.native
+    var Item: js.UndefOr[js.Any] = js.undefined
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Event argument.
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** value of the interaction
       */
-    var isInteracted: js.UndefOr[Boolean] = js.native
+    var isInteracted: js.UndefOr[Boolean] = js.undefined
     
     /** Data object of the selected item.
       */
-    var itemData: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var itemData: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Instance of the combobox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Text of the selected item.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Value of the combobox textbox.
       */
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object SelectEventArgs {
     

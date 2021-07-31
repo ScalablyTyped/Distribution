@@ -3,26 +3,24 @@ package typings.googleapis.bloggerV3Mod.bloggerV3
 import typings.googleapis.anon.Count
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPageviews extends StObject {
   
   /**
     * Blog Id
     */
-  var blogId: js.UndefOr[String] = js.native
+  var blogId: js.UndefOr[String] = js.undefined
   
   /**
     * The container of posts in this blog.
     */
-  var counts: js.UndefOr[js.Array[Count]] = js.native
+  var counts: js.UndefOr[js.Array[Count]] = js.undefined
   
   /**
     * The kind of this entry. Always blogger#page_views
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaPageviews {
   

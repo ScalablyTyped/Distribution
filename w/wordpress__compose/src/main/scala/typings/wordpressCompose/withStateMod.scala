@@ -7,20 +7,25 @@ import typings.std.Omit
 import typings.wordpressCompose.wordpressComposeStrings.setState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withStateMod {
   
-  // prettier-ignore
-  @JSImport("@wordpress/compose/higher-order/with-state", JSImport.Default)
+  @JSImport("@wordpress/compose/higher-order/with-state", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  // prettier-ignore
+  @scala.inline
   def default[SP /* <: js.Object */](
     initialState: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof SP ]: SP[k]}
-    */ typings.wordpressCompose.wordpressComposeStrings.default with TopLevel[SP]
+    */ typings.wordpressCompose.wordpressComposeStrings.default & TopLevel[SP]
   ): js.Function1[
-    /* component */ ComponentType[_], 
-    ComponentClass[Omit[_, (/* keyof SP */ String) | setState], SP]
-  ] = js.native
+    /* component */ ComponentType[js.Any], 
+    ComponentClass[Omit[js.Any, (/* keyof SP */ String) | setState], SP]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentClass[Omit[js.Any, (/* keyof SP */ String) | setState], SP]
+  ]]
 }

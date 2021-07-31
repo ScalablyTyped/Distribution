@@ -10,23 +10,23 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DropdownProps extends HTMLAttributes[HTMLDivElement] {
+trait DropdownProps
+  extends StObject
+     with HTMLAttributes[HTMLDivElement] {
   
-  var alignMenu: js.UndefOr[left | right] = js.native
+  var alignMenu: js.UndefOr[left | right] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[ReactNode] = js.native
+  var label: js.UndefOr[ReactNode] = js.undefined
   
-  var onOutsideClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onOutsideClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var variant: js.UndefOr[String] = js.native
+  var variant: js.UndefOr[String] = js.undefined
 }
 object DropdownProps {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoverageByTime extends StObject {
   
   /**
     * The groups of instances that the reservation covered.
     */
-  var Groups: js.UndefOr[ReservationCoverageGroups] = js.native
+  var Groups: js.UndefOr[ReservationCoverageGroups] = js.undefined
   
   /**
     * The period that this coverage was used over.
     */
-  var TimePeriod: js.UndefOr[DateInterval] = js.native
+  var TimePeriod: js.UndefOr[DateInterval] = js.undefined
   
   /**
     * The total reservation coverage, in hours.
     */
-  var Total: js.UndefOr[Coverage] = js.native
+  var Total: js.UndefOr[Coverage] = js.undefined
 }
 object CoverageByTime {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchInferenceJobConfig extends StObject {
   
   /**
     * A string to string map specifying the inference hyperparameters you wish to use for hyperparameter optimization. See customizing-solution-config-hpo.
     */
-  var itemExplorationConfig: js.UndefOr[HyperParameters] = js.native
+  var itemExplorationConfig: js.UndefOr[HyperParameters] = js.undefined
 }
 object BatchInferenceJobConfig {
   

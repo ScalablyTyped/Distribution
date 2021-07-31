@@ -20,10 +20,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.feet_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeightModelInfoProperties extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait HeightModelInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#heightModel)
     */
-  var heightModel: js.UndefOr[`gravity-related-height` | ellipsoidal] = js.native
+  var heightModel: js.UndefOr[`gravity-related-height` | ellipsoidal] = js.undefined
   
   /**
     * The unit of the vertical coordinate system.
@@ -40,14 +38,14 @@ trait HeightModelInfoProperties extends StObject {
     */
   var heightUnit: js.UndefOr[
     meters_ | feet_ | `us-feet` | `clarke-feet` | `clarke-yards` | `clarke-links` | `sears-yards` | `sears-feet` | `sears-chains` | `benoit-1895-b-chains` | `indian-yards` | `indian-1937-yards` | `gold-coast-feet` | `sears-1922-truncated-chains` | `50-kilometers` | `150-kilometers`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The datum realization of the vertical coordinate system.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#vertCRS)
     */
-  var vertCRS: js.UndefOr[String] = js.native
+  var vertCRS: js.UndefOr[String] = js.undefined
 }
 object HeightModelInfoProperties {
   

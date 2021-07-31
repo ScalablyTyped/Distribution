@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDatabaseDdlMetadata extends StObject {
   
   /** Reports the commit timestamps of all statements that have succeeded so far, where `commit_timestamps[i]` is the commit timestamp for the statement `statements[i]`. */
-  var commitTimestamps: js.UndefOr[js.Array[String]] = js.native
+  var commitTimestamps: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The database being modified. */
-  var database: js.UndefOr[String] = js.native
+  var database: js.UndefOr[String] = js.undefined
   
   /** For an update this list contains all the statements. For an individual statement, this list contains only that statement. */
-  var statements: js.UndefOr[js.Array[String]] = js.native
+  var statements: js.UndefOr[js.Array[String]] = js.undefined
 }
 object UpdateDatabaseDdlMetadata {
   

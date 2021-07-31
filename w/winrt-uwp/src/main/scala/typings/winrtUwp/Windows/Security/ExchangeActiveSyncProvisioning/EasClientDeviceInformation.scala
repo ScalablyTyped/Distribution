@@ -2,36 +2,34 @@ package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the app the ability to retrieve device information from the local device. */
-@js.native
 trait EasClientDeviceInformation extends StObject {
   
   /** Returns the friendly name of the local device. */
-  var friendlyName: String = js.native
+  var friendlyName: String
   
   /** Returns the identifier of the local device. */
-  var id: String = js.native
+  var id: String
   
   /** Returns the operating system of the local device. */
-  var operatingSystem: String = js.native
+  var operatingSystem: String
   
   /** Returns the system firmware version of the local device. */
-  var systemFirmwareVersion: String = js.native
+  var systemFirmwareVersion: String
   
   /** Returns the system hardware version of the local device. */
-  var systemHardwareVersion: String = js.native
+  var systemHardwareVersion: String
   
   /** Returns the system manufacturer of the local device. Use this only if the SystemSku is empty. */
-  var systemManufacturer: String = js.native
+  var systemManufacturer: String
   
   /** Returns the system product name of the local device. */
-  var systemProductName: String = js.native
+  var systemProductName: String
   
   /** Returns the system SKU of the local device. */
-  var systemSku: String = js.native
+  var systemSku: String
 }
 object EasClientDeviceInformation {
   

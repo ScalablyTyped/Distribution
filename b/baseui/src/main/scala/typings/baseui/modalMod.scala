@@ -22,19 +22,17 @@ import typings.std.KeyboardEvent
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
   
-  @js.native
   trait CLOSE_SOURCE extends StObject {
     
-    var backdrop: typings.baseui.baseuiStrings.backdrop = js.native
+    var backdrop: typings.baseui.baseuiStrings.backdrop
     
-    var closeButton: typings.baseui.baseuiStrings.closeButton = js.native
+    var closeButton: typings.baseui.baseuiStrings.closeButton
     
-    var escape: escape_ = js.native
+    var escape: escape_
   }
   object CLOSE_SOURCE {
     
@@ -99,7 +97,7 @@ object modalMod {
     
     def getMountNode(): HTMLElement = js.native
     
-    def getRef(component: String): Ref[_] = js.native
+    def getRef(component: String): Ref[js.Any] = js.native
     
     def getSharedProps(): SharedStylePropsArgchildrAnimate = js.native
     
@@ -149,12 +147,11 @@ object modalMod {
   @js.native
   val ModalHeader: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait ROLE extends StObject {
     
-    var alertdialog: typings.baseui.baseuiStrings.alertdialog = js.native
+    var alertdialog: typings.baseui.baseuiStrings.alertdialog
     
-    var dialog: typings.baseui.baseuiStrings.dialog = js.native
+    var dialog: typings.baseui.baseuiStrings.dialog
   }
   object ROLE {
     
@@ -173,14 +170,13 @@ object modalMod {
     }
   }
   
-  @js.native
   trait SIZE extends StObject {
     
-    var default: default_ = js.native
+    var default: default_
     
-    var auto: typings.baseui.baseuiStrings.auto = js.native
+    var auto: typings.baseui.baseuiStrings.auto
     
-    var full: typings.baseui.baseuiStrings.full = js.native
+    var full: typings.baseui.baseuiStrings.full
   }
   object SIZE {
     
@@ -202,14 +198,13 @@ object modalMod {
     }
   }
   
-  @js.native
   trait SIZE_WIDTHS extends StObject {
     
-    var default: `500px` = js.native
+    var default: `500px`
     
-    var auto: typings.baseui.baseuiStrings.auto = js.native
+    var auto: typings.baseui.baseuiStrings.auto
     
-    var full: `100Percentsign` = js.native
+    var full: `100Percentsign`
   }
   object SIZE_WIDTHS {
     
@@ -251,28 +246,27 @@ object modalMod {
   @js.native
   val StyledRoot: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait ModalOverrides extends StObject {
     
     var Backdrop: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Close: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Dialog: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var DialogContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ModalOverrides {
     
@@ -327,34 +321,33 @@ object modalMod {
     }
   }
   
-  @js.native
   trait ModalProps extends StObject {
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var autofocus: js.UndefOr[Boolean] = js.native
+    var autofocus: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var closeable: js.UndefOr[Boolean] = js.native
+    var closeable: js.UndefOr[Boolean] = js.undefined
     
-    var focusLock: js.UndefOr[Boolean] = js.native
+    var focusLock: js.UndefOr[Boolean] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var mountNode: js.UndefOr[HTMLElement] = js.native
+    var mountNode: js.UndefOr[HTMLElement] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* args */ CloseSource, _]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* args */ CloseSource, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[ModalOverrides] = js.native
+    var overrides: js.UndefOr[ModalOverrides] = js.undefined
     
-    var role: js.UndefOr[dialog | alertdialog] = js.native
+    var role: js.UndefOr[dialog | alertdialog] = js.undefined
     
-    var size: js.UndefOr[default_ | full | auto] = js.native
+    var size: js.UndefOr[default_ | full | auto] = js.undefined
     
-    var unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.native
+    var unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.undefined
   }
   object ModalProps {
     
@@ -410,7 +403,7 @@ object modalMod {
       def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
       
       @scala.inline
-      def setOnClose(value: /* args */ CloseSource => _): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      def setOnClose(value: /* args */ CloseSource => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
@@ -441,12 +434,11 @@ object modalMod {
     }
   }
   
-  @js.native
   trait ModalState extends StObject {
     
-    var isVisible: Boolean = js.native
+    var isVisible: Boolean
     
-    var mounted: Boolean = js.native
+    var mounted: Boolean
   }
   object ModalState {
     
@@ -467,31 +459,30 @@ object modalMod {
     }
   }
   
-  @js.native
   trait SharedStylePropsArg extends StObject {
     
     @JSName("$animate")
-    var $animate: js.UndefOr[Boolean] = js.native
+    var $animate: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$closeable")
-    var $closeable: js.UndefOr[Boolean] = js.native
+    var $closeable: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$isOpen")
-    var $isOpen: js.UndefOr[Boolean] = js.native
+    var $isOpen: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$isVisible")
-    var $isVisible: js.UndefOr[Boolean] = js.native
+    var $isVisible: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$role")
-    var $role: js.UndefOr[dialog | alertdialog] = js.native
+    var $role: js.UndefOr[dialog | alertdialog] = js.undefined
     
     @JSName("$size")
-    var $size: js.UndefOr[default_ | full | auto] = js.native
+    var $size: js.UndefOr[default_ | full | auto] = js.undefined
     
     @JSName("$unstable_ModalBackdropScroll")
-    var $unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.native
+    var $unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
   }
   object SharedStylePropsArg {
     

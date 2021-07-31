@@ -6,7 +6,6 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,38 +16,37 @@ object mod extends Shortcut {
   
   type ICSSAttributes = StringDictionary[String | Double]
   
-  @js.native
   trait IVexOptions extends StObject {
     
-    var afterClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var afterOpen: js.UndefOr[js.Function1[/* vexContent */ JQuery[HTMLElement], Unit]] = js.native
+    var afterOpen: js.UndefOr[js.Function1[/* vexContent */ JQuery[HTMLElement], Unit]] = js.undefined
     
-    var appendLocation: js.UndefOr[HTMLElement | JQuery[HTMLElement] | String] = js.native
+    var appendLocation: js.UndefOr[HTMLElement | JQuery[HTMLElement] | String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closeCSS: js.UndefOr[ICSSAttributes] = js.native
+    var closeCSS: js.UndefOr[ICSSAttributes] = js.undefined
     
-    var closeClassName: js.UndefOr[String] = js.native
+    var closeClassName: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var contentCSS: js.UndefOr[ICSSAttributes] = js.native
+    var contentCSS: js.UndefOr[ICSSAttributes] = js.undefined
     
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[ICSSAttributes] = js.native
+    var css: js.UndefOr[ICSSAttributes] = js.undefined
     
-    var escapeButtonCloses: js.UndefOr[Boolean] = js.native
+    var escapeButtonCloses: js.UndefOr[Boolean] = js.undefined
     
-    var overlayCSS: js.UndefOr[ICSSAttributes] = js.native
+    var overlayCSS: js.UndefOr[ICSSAttributes] = js.undefined
     
-    var overlayClassName: js.UndefOr[String] = js.native
+    var overlayClassName: js.UndefOr[String] = js.undefined
     
-    var overlayClosesOnClick: js.UndefOr[Boolean] = js.native
+    var overlayClosesOnClick: js.UndefOr[Boolean] = js.undefined
     
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
   }
   object IVexOptions {
     

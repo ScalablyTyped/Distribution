@@ -9,17 +9,18 @@ import typings.diff2html.typesMod.LineMatchingType
 import typings.diff2html.typesMod.LineType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderUtilsMod {
   
-  @JSImport("diff2html/lib/render-utils", "deconstructLine")
+  @JSImport("diff2html/lib/render-utils", JSImport.Namespace)
   @js.native
-  def deconstructLine(line: String, isCombined: Boolean): DiffLineParts = js.native
-  @JSImport("diff2html/lib/render-utils", "deconstructLine")
-  @js.native
-  def deconstructLine(line: String, isCombined: Boolean, escape: Boolean): DiffLineParts = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def deconstructLine(line: String, isCombined: Boolean): DiffLineParts = (^.asInstanceOf[js.Dynamic].applyDynamic("deconstructLine")(line.asInstanceOf[js.Any], isCombined.asInstanceOf[js.Any])).asInstanceOf[DiffLineParts]
+  @scala.inline
+  def deconstructLine(line: String, isCombined: Boolean, escape: Boolean): DiffLineParts = (^.asInstanceOf[js.Dynamic].applyDynamic("deconstructLine")(line.asInstanceOf[js.Any], isCombined.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[DiffLineParts]
   
   object defaultRenderConfig {
     
@@ -52,32 +53,25 @@ object renderUtilsMod {
     def maxLineLengthHighlight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLineLengthHighlight")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("diff2html/lib/render-utils", "diffHighlight")
-  @js.native
-  def diffHighlight(diffLine1: String, diffLine2: String, isCombined: Boolean): HighlightedLines = js.native
-  @JSImport("diff2html/lib/render-utils", "diffHighlight")
-  @js.native
-  def diffHighlight(diffLine1: String, diffLine2: String, isCombined: Boolean, config: RenderConfig): HighlightedLines = js.native
+  @scala.inline
+  def diffHighlight(diffLine1: String, diffLine2: String, isCombined: Boolean): HighlightedLines = (^.asInstanceOf[js.Dynamic].applyDynamic("diffHighlight")(diffLine1.asInstanceOf[js.Any], diffLine2.asInstanceOf[js.Any], isCombined.asInstanceOf[js.Any])).asInstanceOf[HighlightedLines]
+  @scala.inline
+  def diffHighlight(diffLine1: String, diffLine2: String, isCombined: Boolean, config: RenderConfig): HighlightedLines = (^.asInstanceOf[js.Dynamic].applyDynamic("diffHighlight")(diffLine1.asInstanceOf[js.Any], diffLine2.asInstanceOf[js.Any], isCombined.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[HighlightedLines]
   
-  @JSImport("diff2html/lib/render-utils", "escapeForHtml")
-  @js.native
-  def escapeForHtml(str: String): String = js.native
+  @scala.inline
+  def escapeForHtml(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForHtml")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("diff2html/lib/render-utils", "filenameDiff")
-  @js.native
-  def filenameDiff(file: DiffFileName): String = js.native
+  @scala.inline
+  def filenameDiff(file: DiffFileName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("filenameDiff")(file.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("diff2html/lib/render-utils", "getFileIcon")
-  @js.native
-  def getFileIcon(file: DiffFile): String = js.native
+  @scala.inline
+  def getFileIcon(file: DiffFile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileIcon")(file.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("diff2html/lib/render-utils", "getHtmlId")
-  @js.native
-  def getHtmlId(file: DiffFileName): String = js.native
+  @scala.inline
+  def getHtmlId(file: DiffFileName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHtmlId")(file.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("diff2html/lib/render-utils", "toCSSClass")
-  @js.native
-  def toCSSClass(lineType: LineType): CSSLineClass = js.native
+  @scala.inline
+  def toCSSClass(lineType: LineType): CSSLineClass = ^.asInstanceOf[js.Dynamic].applyDynamic("toCSSClass")(lineType.asInstanceOf[js.Any]).asInstanceOf[CSSLineClass]
   
   /* Rewritten from type alias, can be one of: 
     - typings.diff2html.diff2htmlStrings.`d2h-ins`
@@ -89,12 +83,11 @@ object renderUtilsMod {
   */
   trait CSSLineClass extends StObject
   
-  @js.native
   trait HighlightedLines extends StObject {
     
-    var newLine: Content = js.native
+    var newLine: Content
     
-    var oldLine: Content = js.native
+    var oldLine: Content
   }
   object HighlightedLines {
     
@@ -115,16 +108,15 @@ object renderUtilsMod {
     }
   }
   
-  @js.native
   trait RenderConfig extends StObject {
     
-    var diffStyle: js.UndefOr[DiffStyleType] = js.native
+    var diffStyle: js.UndefOr[DiffStyleType] = js.undefined
     
-    var matchWordsThreshold: js.UndefOr[Double] = js.native
+    var matchWordsThreshold: js.UndefOr[Double] = js.undefined
     
-    var matching: js.UndefOr[LineMatchingType] = js.native
+    var matching: js.UndefOr[LineMatchingType] = js.undefined
     
-    var maxLineLengthHighlight: js.UndefOr[Double] = js.native
+    var maxLineLengthHighlight: js.UndefOr[Double] = js.undefined
   }
   object RenderConfig {
     

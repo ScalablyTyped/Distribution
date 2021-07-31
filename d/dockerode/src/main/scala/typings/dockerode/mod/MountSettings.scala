@@ -5,27 +5,25 @@ import typings.dockerode.anon.Propagation
 import typings.dockerode.anon.SizeBytes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MountSettings extends StObject {
   
-  var BindOptions: js.UndefOr[Propagation] = js.native
+  var BindOptions: js.UndefOr[Propagation] = js.undefined
   
-  var Consistency: js.UndefOr[MountConsistency] = js.native
+  var Consistency: js.UndefOr[MountConsistency] = js.undefined
   
-  var ReadOnly: js.UndefOr[Boolean] = js.native
+  var ReadOnly: js.UndefOr[Boolean] = js.undefined
   
-  var Source: String = js.native
+  var Source: String
   
-  var Target: String = js.native
+  var Target: String
   
-  var TmpfsOptions: js.UndefOr[SizeBytes] = js.native
+  var TmpfsOptions: js.UndefOr[SizeBytes] = js.undefined
   
-  var Type: MountType = js.native
+  var Type: MountType
   
-  var VolumeOptions: js.UndefOr[DriverConfig] = js.native
+  var VolumeOptions: js.UndefOr[DriverConfig] = js.undefined
 }
 object MountSettings {
   

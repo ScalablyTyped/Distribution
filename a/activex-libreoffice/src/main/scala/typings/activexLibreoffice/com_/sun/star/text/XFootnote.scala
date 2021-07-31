@@ -4,30 +4,30 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a footnote within a {@link Text} .
   * @see Footnote
   */
-@js.native
-trait XFootnote extends XTextContent {
+trait XFootnote
+  extends StObject
+     with XTextContent {
   
   /**
     * @returns the label of the footnote.
     * @see XFootnote.setLabel
     */
-  var Label: String = js.native
+  var Label: String
   
   /**
     * @returns the label of the footnote.
     * @see XFootnote.setLabel
     */
-  def getLabel(): String = js.native
+  def getLabel(): String
   
   /** sets the label of the footnote. */
-  def setLabel(aLabel: String): Unit = js.native
+  def setLabel(aLabel: String): Unit
 }
 object XFootnote {
   

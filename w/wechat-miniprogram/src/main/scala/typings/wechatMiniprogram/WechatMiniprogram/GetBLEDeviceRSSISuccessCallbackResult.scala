@@ -2,16 +2,14 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBLEDeviceRSSISuccessCallbackResult extends StObject {
   
   /** 信号强度 */
-  var RSSI: Double = js.native
+  var RSSI: Double
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object GetBLEDeviceRSSISuccessCallbackResult {
   

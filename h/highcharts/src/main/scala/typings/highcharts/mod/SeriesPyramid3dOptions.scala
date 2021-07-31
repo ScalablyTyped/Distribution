@@ -3,74 +3,74 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.pyramid3d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ @js.native
-trait SeriesPyramid3dOptions extends PlotPyramid3dOptions {
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesPyramid3dOptions
+  extends StObject
+     with PlotPyramid3dOptions {
   
   /**
     * Not available
     */
-  var allAreas: js.UndefOr[scala.Nothing] = js.native
+  var allAreas: Unit
   
   /**
     * Not available
     */
-  var boostThreshold: js.UndefOr[scala.Nothing] = js.native
+  var boostThreshold: Unit
   
   /**
     * (Highcharts) The center of the series. By default, it is centered in the
     * middle of the plot area, so it fills the plot area height.
     */
-  var center: js.UndefOr[js.Array[Double | String]] = js.native
+  var center: js.UndefOr[js.Array[Double | String]] = js.undefined
   
   /**
     * Not available
     */
-  var colorAxis: js.UndefOr[scala.Nothing] = js.native
+  var colorAxis: Unit
   
   /**
     * Not available
     */
-  var compare: js.UndefOr[scala.Nothing] = js.native
+  var compare: Unit
   
   /**
     * Not available
     */
-  var compareBase: js.UndefOr[scala.Nothing] = js.native
+  var compareBase: Unit
   
   /**
     * (Highcharts) Polar charts only. Whether to connect the ends of a line
     * series plot across the extremes.
     */
-  var connectEnds: js.UndefOr[Boolean] = js.native
+  var connectEnds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) Whether to connect a graph line across null
     * points, or render a gap between the two points on either side of the
     * null.
     */
-  var connectNulls: js.UndefOr[Boolean] = js.native
+  var connectNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Not available
     */
-  var dataSorting: js.UndefOr[scala.Nothing] = js.native
+  var dataSorting: Unit
   
   /**
     * (Highcharts) The end angle of the pie in degrees where 0 is top and 90 is
     * right. Defaults to `startAngle` plus 360.
     */
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) If the total sum of the pie's values is 0, the series is
     * represented as an empty circle . The `fillColor` option defines the color
     * of that circle. Use pie.borderWidth to set the border thickness.
     */
-  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
@@ -87,7 +87,7 @@ trait SeriesPyramid3dOptions extends PlotPyramid3dOptions {
     * series. In a stock chart, intraday data is available for daytime hours,
     * while gaps will appear in nights and weekends.
     */
-  var gapSize: js.UndefOr[Double] = js.native
+  var gapSize: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Together with gapSize, this option defines where to draw gaps
@@ -101,14 +101,14 @@ trait SeriesPyramid3dOptions extends PlotPyramid3dOptions {
     * values, which on a datetime axis is milliseconds. This also applies to
     * the navigator series that inherits gap options from the base series.
     */
-  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.native
+  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Equivalent to chart.ignoreHiddenSeries, this option tells
@@ -116,38 +116,38 @@ trait SeriesPyramid3dOptions extends PlotPyramid3dOptions {
     *
     * The default value changed from `false` to `true` with Highcharts 3.0.
     */
-  var ignoreHiddenPoint: js.UndefOr[Boolean] = js.native
+  var ignoreHiddenPoint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The index of the series in the
     * chart, affecting the internal index in the `chart.series` array, the
     * visible Z index as well as the order in the legend.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The sequential index of the
     * series in the legend.
     */
-  var legendIndex: js.UndefOr[Double] = js.native
+  var legendIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) Pixel width of the graph line.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The line cap used for line ends and line joins on
     * the graph.
     */
-  var linecap: js.UndefOr[SeriesLinecapValue] = js.native
+  var linecap: js.UndefOr[SeriesLinecapValue] = js.undefined
   
   /**
     * (Highmaps) A map data object containing a `path` definition and
     * optionally additional properties to join in the data as per the `joinBy`
     * option.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.native
+  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
   
   /**
     * (Highcharts) Options for the point markers of line-like series.
@@ -158,26 +158,26 @@ trait SeriesPyramid3dOptions extends PlotPyramid3dOptions {
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
     */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.native
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highcharts) The minimum size for a pie in response to auto margins. The
     * pie will try to shrink to make room for data labels in side the plot
     * area, but only to this size.
     */
-  var minSize: js.UndefOr[Double | String] = js.native
+  var minSize: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) If a point is sliced, moved out from the center, how many
     * pixels should it be moved?.
     */
-  var slicedOffset: js.UndefOr[Double] = js.native
+  var slicedOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) This option allows grouping series in a stacked
@@ -185,32 +185,32 @@ trait SeriesPyramid3dOptions extends PlotPyramid3dOptions {
     * grouped series' stack options match each other after conversion into a
     * string.
     */
-  var stack: js.UndefOr[Double | String] = js.native
+  var stack: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts) The start angle of the pie slices in degrees where 0 is top
     * and 90 right.
     */
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) Whether to apply steps to the line. Possible
     * values are `left`, `center` and `right`.
     */
-  var step: js.UndefOr[OptionsStepValue] = js.native
+  var step: js.UndefOr[OptionsStepValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
     * unknown sources.
     */
-  var `type`: String | pyramid3d = js.native
+  var `type`: String | pyramid3d
   
   /**
     * (Highstock) The parameter allows setting line series type and use OHLC
     * indicators. Data in OHLC format is required.
     */
-  var useOhlcData: js.UndefOr[Boolean] = js.native
+  var useOhlcData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
@@ -218,7 +218,7 @@ trait SeriesPyramid3dOptions extends PlotPyramid3dOptions {
     * either the axis id or the index of the axis in the xAxis array, with 0
     * being the first.
     */
-  var xAxis: js.UndefOr[Double | String] = js.native
+  var xAxis: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock) When using dual or multiple y axes, this number
@@ -226,19 +226,33 @@ trait SeriesPyramid3dOptions extends PlotPyramid3dOptions {
     * either the axis id or the index of the axis in the yAxis array, with 0
     * being the first.
     */
-  var yAxis: js.UndefOr[Double | String] = js.native
+  var yAxis: js.UndefOr[Double | String] = js.undefined
 }
 object SeriesPyramid3dOptions {
   
   @scala.inline
-  def apply(`type`: String | pyramid3d): SeriesPyramid3dOptions = {
-    val __obj = js.Dynamic.literal()
+  def apply(
+    allAreas: Unit,
+    boostThreshold: Unit,
+    colorAxis: Unit,
+    compare: Unit,
+    compareBase: Unit,
+    dataSorting: Unit,
+    `type`: String | pyramid3d
+  ): SeriesPyramid3dOptions = {
+    val __obj = js.Dynamic.literal(allAreas = allAreas.asInstanceOf[js.Any], boostThreshold = boostThreshold.asInstanceOf[js.Any], colorAxis = colorAxis.asInstanceOf[js.Any], compare = compare.asInstanceOf[js.Any], compareBase = compareBase.asInstanceOf[js.Any], dataSorting = dataSorting.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPyramid3dOptions]
   }
   
   @scala.inline
   implicit class SeriesPyramid3dOptionsMutableBuilder[Self <: SeriesPyramid3dOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAllAreas(value: Unit): Self = StObject.set(x, "allAreas", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBoostThreshold(value: Unit): Self = StObject.set(x, "boostThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCenter(value: js.Array[Double | String]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
@@ -248,6 +262,15 @@ object SeriesPyramid3dOptions {
     
     @scala.inline
     def setCenterVarargs(value: (Double | String)*): Self = StObject.set(x, "center", js.Array(value :_*))
+    
+    @scala.inline
+    def setColorAxis(value: Unit): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCompare(value: Unit): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCompareBase(value: Unit): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setConnectEnds(value: Boolean): Self = StObject.set(x, "connectEnds", value.asInstanceOf[js.Any])
@@ -260,6 +283,9 @@ object SeriesPyramid3dOptions {
     
     @scala.inline
     def setConnectNullsUndefined: Self = StObject.set(x, "connectNulls", js.undefined)
+    
+    @scala.inline
+    def setDataSorting(value: Unit): Self = StObject.set(x, "dataSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])

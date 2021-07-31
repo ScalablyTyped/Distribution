@@ -6,42 +6,40 @@ import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the SourceChangeRequested event. */
-@js.native
 trait SourceChangeRequestedEventArgs extends StObject {
   
   /** Gets the name of the album that contains the song in the audio stream. */
-  var album: String = js.native
+  var album: String
   
   /** Gets the author of the content in the media stream. */
-  var author: String = js.native
+  var author: String
   
   /** Gets the date that the content in the media stream was published. */
-  var date: Date = js.native
+  var date: Date
   
   /** Gets the description of the content in the media stream. */
-  var description: String = js.native
+  var description: String
   
   /** Gets the names of the genres that the content in the media stream belongs to. */
-  var genre: String = js.native
+  var genre: String
   
   /** Gets custom property names and values for the content in the media stream. */
-  var properties: IMapView[String, _] = js.native
+  var properties: IMapView[String, js.Any]
   
   /** Gets the rating for the content in the media stream. */
-  var rating: Double = js.native
+  var rating: Double
   
   /** Gets the media stream for the Play To receiver. */
-  var stream: IRandomAccessStreamWithContentType = js.native
+  var stream: IRandomAccessStreamWithContentType
   
   /** Gets the thumbnail image for the content in the media stream. */
-  var thumbnail: IRandomAccessStreamReference = js.native
+  var thumbnail: IRandomAccessStreamReference
   
   /** Gets the title of the content in the media stream. */
-  var title: String = js.native
+  var title: String
 }
 object SourceChangeRequestedEventArgs {
   
@@ -52,7 +50,7 @@ object SourceChangeRequestedEventArgs {
     date: Date,
     description: String,
     genre: String,
-    properties: IMapView[String, _],
+    properties: IMapView[String, js.Any],
     rating: Double,
     stream: IRandomAccessStreamWithContentType,
     thumbnail: IRandomAccessStreamReference,
@@ -81,7 +79,7 @@ object SourceChangeRequestedEventArgs {
     def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: IMapView[String, _]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])

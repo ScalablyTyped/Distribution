@@ -7,7 +7,6 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogDialogMod {
@@ -16,16 +15,15 @@ object dialogDialogMod {
   @js.native
   val Dialog: FC[DialogProps] = js.native
   
-  @js.native
   trait DialogProps extends StObject {
     
-    var `aria-describedby`: String = js.native
+    var `aria-describedby`: String
     
-    var `aria-labelledby`: String = js.native
+    var `aria-labelledby`: String
     
-    var onClose: js.UndefOr[js.Function1[/* e */ MouseEvent | TouchEvent, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* e */ MouseEvent | TouchEvent, Unit]] = js.undefined
     
-    var `type`: error | warning = js.native
+    var `type`: error | warning
   }
   object DialogProps {
     

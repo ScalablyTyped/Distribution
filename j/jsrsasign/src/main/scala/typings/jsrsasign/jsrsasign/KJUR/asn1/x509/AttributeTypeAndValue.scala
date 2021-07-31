@@ -11,7 +11,6 @@ import typings.jsrsasign.jsrsasignStrings.tel
 import typings.jsrsasign.jsrsasignStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see KJUR.asn1.x509.AttributeTypeAndValue
   */
 @js.native
-trait AttributeTypeAndValue extends ASN1Object {
+trait AttributeTypeAndValue
+  extends StObject
+     with ASN1Object {
   
   @JSName("getValueObj")
   def getValueObj_ia5(dsType: ia5, valueStr: String): DERIA5String = js.native

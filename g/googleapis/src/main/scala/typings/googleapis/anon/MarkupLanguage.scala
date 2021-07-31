@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkupLanguage extends StObject {
   
-  var markupLanguage: js.UndefOr[String] = js.native
+  var markupLanguage: js.UndefOr[String] = js.undefined
   
-  var scriptingLanguage: js.UndefOr[String] = js.native
+  var scriptingLanguage: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object MarkupLanguage {
   

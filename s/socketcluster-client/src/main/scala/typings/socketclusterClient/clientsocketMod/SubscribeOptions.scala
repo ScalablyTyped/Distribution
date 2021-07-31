@@ -2,17 +2,15 @@ package typings.socketclusterClient.clientsocketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscribeOptions extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var waitForAuth: js.UndefOr[Boolean] = js.native
+  var waitForAuth: js.UndefOr[Boolean] = js.undefined
 }
 object SubscribeOptions {
   

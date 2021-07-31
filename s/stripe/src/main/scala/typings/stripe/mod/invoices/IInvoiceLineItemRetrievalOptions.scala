@@ -3,33 +3,33 @@ package typings.stripe.mod.invoices
 import typings.stripe.mod.IListOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IInvoiceLineItemRetrievalOptions extends IListOptions {
+trait IInvoiceLineItemRetrievalOptions
+  extends StObject
+     with IListOptions {
   
-  var coupon: js.UndefOr[String] = js.native
+  var coupon: js.UndefOr[String] = js.undefined
   
   /**
     * In the case of upcoming invoices, the customer of the upcoming invoice is required. In other cases it is ignored.
     */
-  var customer: js.UndefOr[String] = js.native
+  var customer: js.UndefOr[String] = js.undefined
   
   /**
     * In the case of upcoming invoices, the subscription of the upcoming invoice is optional. In other cases it is ignored.
     */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
   
-  var subscription_plan: js.UndefOr[String] = js.native
+  var subscription_plan: js.UndefOr[String] = js.undefined
   
-  var subscription_prorate: js.UndefOr[Boolean] = js.native
+  var subscription_prorate: js.UndefOr[Boolean] = js.undefined
   
-  var subscription_proration_date: js.UndefOr[Double] = js.native
+  var subscription_proration_date: js.UndefOr[Double] = js.undefined
   
-  var subscription_quantity: js.UndefOr[Double] = js.native
+  var subscription_quantity: js.UndefOr[Double] = js.undefined
   
-  var subscription_trial_end: js.UndefOr[Double] = js.native
+  var subscription_trial_end: js.UndefOr[Double] = js.undefined
 }
 object IInvoiceLineItemRetrievalOptions {
   

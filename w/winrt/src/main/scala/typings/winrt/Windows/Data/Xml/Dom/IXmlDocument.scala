@@ -2,45 +2,45 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IXmlDocument extends IXmlNode {
+trait IXmlDocument
+  extends StObject
+     with IXmlNode {
   
-  def createAttribute(name: String): XmlAttribute = js.native
+  def createAttribute(name: String): XmlAttribute
   
-  def createAttributeNS(namespaceUri: js.Any, qualifiedName: String): XmlAttribute = js.native
+  def createAttributeNS(namespaceUri: js.Any, qualifiedName: String): XmlAttribute
   
-  def createCDataSection(data: String): XmlCDataSection = js.native
+  def createCDataSection(data: String): XmlCDataSection
   
-  def createComment(data: String): XmlComment = js.native
+  def createComment(data: String): XmlComment
   
-  def createDocumentFragment(): XmlDocumentFragment = js.native
+  def createDocumentFragment(): XmlDocumentFragment
   
-  def createElement(tagName: String): XmlElement = js.native
+  def createElement(tagName: String): XmlElement
   
-  def createElementNS(namespaceUri: js.Any, qualifiedName: String): XmlElement = js.native
+  def createElementNS(namespaceUri: js.Any, qualifiedName: String): XmlElement
   
-  def createEntityReference(name: String): XmlEntityReference = js.native
+  def createEntityReference(name: String): XmlEntityReference
   
-  def createProcessingInstruction(target: String, data: String): XmlProcessingInstruction = js.native
+  def createProcessingInstruction(target: String, data: String): XmlProcessingInstruction
   
-  def createTextNode(data: String): XmlText = js.native
+  def createTextNode(data: String): XmlText
   
-  var doctype: XmlDocumentType = js.native
+  var doctype: XmlDocumentType
   
-  var documentElement: XmlElement = js.native
+  var documentElement: XmlElement
   
-  var documentUri: String = js.native
+  var documentUri: String
   
-  def getElementById(elementId: String): XmlElement = js.native
+  def getElementById(elementId: String): XmlElement
   
-  def getElementsByTagName(tagName: String): XmlNodeList = js.native
+  def getElementsByTagName(tagName: String): XmlNodeList
   
-  var implementation: XmlDomImplementation = js.native
+  var implementation: XmlDomImplementation
   
-  def importNode(node: IXmlNode, deep: Boolean): IXmlNode = js.native
+  def importNode(node: IXmlNode, deep: Boolean): IXmlNode
 }
 object IXmlDocument {
   

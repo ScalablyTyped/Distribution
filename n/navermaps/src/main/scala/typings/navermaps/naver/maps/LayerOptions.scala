@@ -2,17 +2,15 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayerOptions extends StObject {
   
-  var hd: Boolean = js.native
+  var hd: Boolean
   
-  var overlayMap: js.UndefOr[Boolean] = js.native
+  var overlayMap: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object LayerOptions {
   

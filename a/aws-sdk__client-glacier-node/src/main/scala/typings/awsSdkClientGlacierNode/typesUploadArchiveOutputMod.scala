@@ -4,34 +4,34 @@ import typings.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUploadArchiveOutputMod {
   
-  @js.native
-  trait UploadArchiveOutput extends _OutputTypesUnion {
+  trait UploadArchiveOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The ID of the archive. This value is also included as part of the location.</p>
       */
-    var archiveId: js.UndefOr[String] = js.native
+    var archiveId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The checksum of the archive computed by Amazon Glacier.</p>
       */
-    var checksum: js.UndefOr[String] = js.native
+    var checksum: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The relative URI path of the newly added archive resource.</p>
       */
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
   }
   object UploadArchiveOutput {
     

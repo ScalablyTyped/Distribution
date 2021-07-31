@@ -2,7 +2,6 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,24 +48,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     newly signed in user.</dd>
   * </dl>
   */
-@js.native
-trait AuthError extends Error {
+trait AuthError
+  extends StObject
+     with Error {
   
   /**
     * The {@link firebase.auth.AuthCredential} that can be used to resolve the
     * error.
     */
-  var credential: js.UndefOr[AuthCredential] = js.native
+  var credential: js.UndefOr[AuthCredential] = js.undefined
   
   /**
     * The email of the user's account used for sign-in/linking.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number of the user's account used for sign-in/linking.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The tenant ID being used for sign-in/linking. If you use
@@ -74,7 +74,7 @@ trait AuthError extends Error {
     * set the tenant ID on Auth instanace again as the tenant ID is not
     * persisted after redirection.
     */
-  var tenantId: js.UndefOr[String] = js.native
+  var tenantId: js.UndefOr[String] = js.undefined
 }
 object AuthError {
   

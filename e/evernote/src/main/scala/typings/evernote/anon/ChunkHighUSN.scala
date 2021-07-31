@@ -8,39 +8,37 @@ import typings.evernote.mod.Types.Tag
 import typings.evernote.mod.Types.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChunkHighUSN extends StObject {
   
-  var chunkHighUSN: js.UndefOr[Double] = js.native
+  var chunkHighUSN: js.UndefOr[Double] = js.undefined
   
-  var currentTime: js.UndefOr[Timestamp] = js.native
+  var currentTime: js.UndefOr[Timestamp] = js.undefined
   
-  var expungedLinkedNotebooks: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.native
+  var expungedLinkedNotebooks: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.undefined
   
-  var expungedNotebooks: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.native
+  var expungedNotebooks: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.undefined
   
-  var expungedNotes: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.native
+  var expungedNotes: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.undefined
   
-  var expungedSearches: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.native
+  var expungedSearches: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.undefined
   
-  var expungedTags: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.native
+  var expungedTags: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.undefined
   
-  var linkedNotebooks: js.UndefOr[js.Array[LinkedNotebook]] = js.native
+  var linkedNotebooks: js.UndefOr[js.Array[LinkedNotebook]] = js.undefined
   
-  var notebooks: js.UndefOr[js.Array[Notebook]] = js.native
+  var notebooks: js.UndefOr[js.Array[Notebook]] = js.undefined
   
-  var notes: js.UndefOr[js.Array[typings.evernote.mod.Types.Note]] = js.native
+  var notes: js.UndefOr[js.Array[typings.evernote.mod.Types.Note]] = js.undefined
   
-  var resources: js.UndefOr[js.Array[Resource]] = js.native
+  var resources: js.UndefOr[js.Array[Resource]] = js.undefined
   
-  var searches: js.UndefOr[js.Array[SavedSearch]] = js.native
+  var searches: js.UndefOr[js.Array[SavedSearch]] = js.undefined
   
-  var tags: js.UndefOr[js.Array[Tag]] = js.native
+  var tags: js.UndefOr[js.Array[Tag]] = js.undefined
   
-  var updateCount: js.UndefOr[Double] = js.native
+  var updateCount: js.UndefOr[Double] = js.undefined
 }
 object ChunkHighUSN {
   

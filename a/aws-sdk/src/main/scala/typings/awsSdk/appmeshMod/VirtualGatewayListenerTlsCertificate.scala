@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewayListenerTlsCertificate extends StObject {
   
   /**
     * A reference to an object that represents an AWS Certicate Manager (ACM) certificate.
     */
-  var acm: js.UndefOr[VirtualGatewayListenerTlsAcmCertificate] = js.native
+  var acm: js.UndefOr[VirtualGatewayListenerTlsAcmCertificate] = js.undefined
   
   /**
     * A reference to an object that represents a local file certificate.
     */
-  var file: js.UndefOr[VirtualGatewayListenerTlsFileCertificate] = js.native
+  var file: js.UndefOr[VirtualGatewayListenerTlsFileCertificate] = js.undefined
 }
 object VirtualGatewayListenerTlsCertificate {
   

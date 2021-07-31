@@ -2,45 +2,43 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentJobHistoryInfo extends StObject {
   
-  var instanceId: Double = js.native
+  var instanceId: Double
   
-  var jobId: String = js.native
+  var jobId: String
   
-  var jobName: String = js.native
+  var jobName: String
   
-  var message: String = js.native
+  var message: String
   
-  var operatorEmailed: String = js.native
+  var operatorEmailed: String
   
-  var operatorNetsent: String = js.native
+  var operatorNetsent: String
   
-  var operatorPaged: String = js.native
+  var operatorPaged: String
   
-  var retriesAttempted: String = js.native
+  var retriesAttempted: String
   
-  var runDate: String = js.native
+  var runDate: String
   
-  var runDuration: String = js.native
+  var runDuration: String
   
-  var runStatus: Double = js.native
+  var runStatus: Double
   
-  var server: String = js.native
+  var server: String
   
-  var sqlMessageId: String = js.native
+  var sqlMessageId: String
   
-  var sqlSeverity: String = js.native
+  var sqlSeverity: String
   
-  var stepId: String = js.native
+  var stepId: String
   
-  var stepName: String = js.native
+  var stepName: String
   
-  var steps: js.Array[AgentJobStep] = js.native
+  var steps: js.Array[AgentJobStep]
 }
 object AgentJobHistoryInfo {
   

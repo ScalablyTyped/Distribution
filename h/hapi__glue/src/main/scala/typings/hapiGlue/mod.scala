@@ -6,24 +6,24 @@ import typings.hapiHapi.mod.ServerOptions
 import typings.hapiHapi.mod.Server_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@hapi/glue", "compose")
+  @JSImport("@hapi/glue", JSImport.Namespace)
   @js.native
-  def compose(manifest: Manifest): js.Promise[Server_] = js.native
-  @JSImport("@hapi/glue", "compose")
-  @js.native
-  def compose(manifest: Manifest, options: Options): js.Promise[Server_] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def compose(manifest: Manifest): js.Promise[Server_] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Server_]]
+  @scala.inline
+  def compose(manifest: Manifest, options: Options): js.Promise[Server_] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Server_]]
+  
   trait Manifest extends StObject {
     
-    var register: js.UndefOr[Plugins] = js.native
+    var register: js.UndefOr[Plugins] = js.undefined
     
-    var server: ServerOptions = js.native
+    var server: ServerOptions
   }
   object Manifest {
     
@@ -47,18 +47,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     var preConnections: js.UndefOr[
         js.Function2[/* Server */ Server_, /* next */ js.Function1[/* err */ js.Any, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var preRegister: js.UndefOr[
         js.Function2[/* Server */ Server_, /* next */ js.Function1[/* err */ js.Any, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var relativeTo: String = js.native
+    var relativeTo: String
   }
   object Options {
     
@@ -88,19 +87,18 @@ object mod {
     }
   }
   
-  @js.native
   trait PluginObject extends StObject {
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
-    var plugin: String | Plugin[_] = js.native
+    var plugin: String | Plugin[js.Any]
     
-    var routes: js.UndefOr[js.Any] = js.native
+    var routes: js.UndefOr[js.Any] = js.undefined
   }
   object PluginObject {
     
     @scala.inline
-    def apply(plugin: String | Plugin[_]): PluginObject = {
+    def apply(plugin: String | Plugin[js.Any]): PluginObject = {
       val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginObject]
     }
@@ -115,7 +113,7 @@ object mod {
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
       @scala.inline
-      def setPlugin(value: String | Plugin[_]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      def setPlugin(value: String | Plugin[js.Any]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRoutes(value: js.Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])

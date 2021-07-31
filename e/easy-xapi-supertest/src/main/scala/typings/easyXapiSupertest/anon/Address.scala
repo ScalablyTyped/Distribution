@@ -2,17 +2,15 @@ package typings.easyXapiSupertest.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var family: String = js.native
+  var family: String
   
-  var port: Double = js.native
+  var port: Double
 }
 object Address {
   

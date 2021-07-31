@@ -3,24 +3,23 @@ package typings.simperium.mod
 import typings.simperium.simperiumStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemovalChange
-  extends Change[js.Any] {
+  extends StObject
+     with Change[js.Any] {
   
-  var ccid: String = js.native
+  var ccid: String
   
-  var id: String = js.native
+  var id: String
   
-  var o: `-_` = js.native
+  var o: `-_`
 }
 object RemovalChange {
   
   @scala.inline
-  def apply(ccid: String, id: String, o: `-_`): RemovalChange = {
-    val __obj = js.Dynamic.literal(ccid = ccid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], o = o.asInstanceOf[js.Any])
+  def apply(ccid: String, id: String): RemovalChange = {
+    val __obj = js.Dynamic.literal(ccid = ccid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], o = "-")
     __obj.asInstanceOf[RemovalChange]
   }
   

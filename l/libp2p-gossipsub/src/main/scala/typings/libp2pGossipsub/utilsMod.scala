@@ -6,33 +6,29 @@ import typings.libp2pGossipsub.messageMod.RPC
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("libp2p-gossipsub/src/utils", "createGossipRpc")
+  @JSImport("libp2p-gossipsub/src/utils", JSImport.Namespace)
   @js.native
-  def createGossipRpc(): RPC = js.native
-  @JSImport("libp2p-gossipsub/src/utils", "createGossipRpc")
-  @js.native
-  def createGossipRpc(msgs: js.UndefOr[scala.Nothing], control: PartialControlMessage): RPC = js.native
-  @JSImport("libp2p-gossipsub/src/utils", "createGossipRpc")
-  @js.native
-  def createGossipRpc(msgs: js.Array[Message]): RPC = js.native
-  @JSImport("libp2p-gossipsub/src/utils", "createGossipRpc")
-  @js.native
-  def createGossipRpc(msgs: js.Array[Message], control: PartialControlMessage): RPC = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("libp2p-gossipsub/src/utils", "hasGossipProtocol")
-  @js.native
-  def hasGossipProtocol(protocol: String): Boolean = js.native
+  @scala.inline
+  def createGossipRpc(): RPC = ^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")().asInstanceOf[RPC]
+  @scala.inline
+  def createGossipRpc(msgs: js.Array[Message]): RPC = ^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")(msgs.asInstanceOf[js.Any]).asInstanceOf[RPC]
+  @scala.inline
+  def createGossipRpc(msgs: js.Array[Message], control: PartialControlMessage): RPC = (^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")(msgs.asInstanceOf[js.Any], control.asInstanceOf[js.Any])).asInstanceOf[RPC]
+  @scala.inline
+  def createGossipRpc(msgs: Unit, control: PartialControlMessage): RPC = (^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")(msgs.asInstanceOf[js.Any], control.asInstanceOf[js.Any])).asInstanceOf[RPC]
   
-  @JSImport("libp2p-gossipsub/src/utils", "messageIdToString")
-  @js.native
-  def messageIdToString(msgId: Uint8Array): String = js.native
+  @scala.inline
+  def hasGossipProtocol(protocol: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasGossipProtocol")(protocol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("libp2p-gossipsub/src/utils", "shuffle")
-  @js.native
-  def shuffle[T](arr: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def messageIdToString(msgId: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("messageIdToString")(msgId.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def shuffle[T](arr: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

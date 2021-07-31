@@ -4,23 +4,21 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Folder extends StObject {
   
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
-  var createdOn: Date = js.native
+  var createdOn: Date
   
-  var description: String = js.native
+  var description: String
   
-  var lastChangedBy: IdentityRef = js.native
+  var lastChangedBy: IdentityRef
   
-  var lastChangedDate: Date = js.native
+  var lastChangedDate: Date
   
-  var path: String = js.native
+  var path: String
 }
 object Folder {
   

@@ -38,7 +38,6 @@ import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -72,9 +71,8 @@ object NoExpression {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.create")
-  @js.native
-  def create(model: IModel): NoExpression = js.native
+  @scala.inline
+  def create(model: IModel): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -85,9 +83,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInAppServiceCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): NoExpression = js.native
+  @scala.inline
+  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -98,9 +95,8 @@ object NoExpression {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInBasicCodeActionParameterValueUnderArgumentModel")
-  @js.native
-  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): NoExpression = js.native
+  @scala.inline
+  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -111,9 +107,8 @@ object NoExpression {
     *  7.9.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInBasicJavaActionParameterValueUnderArgumentModel")
-  @js.native
-  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): NoExpression = js.native
+  @scala.inline
+  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -124,9 +119,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInBinaryExpressionUnderLeft")
-  @js.native
-  def createInBinaryExpressionUnderLeft(container: BinaryExpression): NoExpression = js.native
+  @scala.inline
+  def createInBinaryExpressionUnderLeft(container: BinaryExpression): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -137,9 +131,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInBinaryExpressionUnderRight")
-  @js.native
-  def createInBinaryExpressionUnderRight(container: BinaryExpression): NoExpression = js.native
+  @scala.inline
+  def createInBinaryExpressionUnderRight(container: BinaryExpression): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -150,9 +143,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInBinaryRequestHandlingUnderExpressionModel")
-  @js.native
-  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): NoExpression = js.native
+  @scala.inline
+  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -163,9 +155,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInChangeListActionUnderValueModel")
-  @js.native
-  def createInChangeListActionUnderValueModel(container: ChangeListAction): NoExpression = js.native
+  @scala.inline
+  def createInChangeListActionUnderValueModel(container: ChangeListAction): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -176,9 +167,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInChangeVariableActionUnderValueModel")
-  @js.native
-  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): NoExpression = js.native
+  @scala.inline
+  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -189,9 +179,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInConditionalSettingsUnderExpressionModel")
-  @js.native
-  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): NoExpression = js.native
+  @scala.inline
+  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -202,9 +191,8 @@ object NoExpression {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInConsumedODataServiceUnderTimeoutModel")
-  @js.native
-  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): NoExpression = js.native
+  @scala.inline
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -215,9 +203,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInCreateVariableActionUnderInitialValueModel")
-  @js.native
-  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): NoExpression = js.native
+  @scala.inline
+  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -228,9 +215,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInCustomRangeUnderLimitExpressionModel")
-  @js.native
-  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): NoExpression = js.native
+  @scala.inline
+  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -241,9 +227,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInCustomRangeUnderOffsetExpressionModel")
-  @js.native
-  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): NoExpression = js.native
+  @scala.inline
+  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -254,9 +239,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInDocumentTemplateParameterMappingUnderArgumentModel")
-  @js.native
-  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): NoExpression = js.native
+  @scala.inline
+  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -267,9 +251,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInEndEventUnderReturnValueModel")
-  @js.native
-  def createInEndEventUnderReturnValueModel(container: EndEvent): NoExpression = js.native
+  @scala.inline
+  def createInEndEventUnderReturnValueModel(container: EndEvent): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -280,9 +263,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInExpressionSplitConditionUnderExpressionModel")
-  @js.native
-  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): NoExpression = js.native
+  @scala.inline
+  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -293,9 +275,8 @@ object NoExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInFormDataPartUnderValueModel")
-  @js.native
-  def createInFormDataPartUnderValueModel(container: FormDataPart): NoExpression = js.native
+  @scala.inline
+  def createInFormDataPartUnderValueModel(container: FormDataPart): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -306,9 +287,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInFunctionCallExpressionUnderArguments")
-  @js.native
-  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): NoExpression = js.native
+  @scala.inline
+  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -319,9 +299,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInGenerateDocumentActionUnderMarginBottomInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): NoExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -332,9 +311,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInGenerateDocumentActionUnderMarginLeftInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): NoExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -345,9 +323,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInGenerateDocumentActionUnderMarginRightInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): NoExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -358,9 +335,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInGenerateDocumentActionUnderMarginTopInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): NoExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -371,9 +347,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInHttpConfigurationUnderCustomLocationModel")
-  @js.native
-  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): NoExpression = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -384,9 +359,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInHttpConfigurationUnderPassword")
-  @js.native
-  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): NoExpression = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -397,9 +371,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInHttpConfigurationUnderUsername")
-  @js.native
-  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): NoExpression = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -410,9 +383,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInHttpHeaderEntryUnderValueModel")
-  @js.native
-  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): NoExpression = js.native
+  @scala.inline
+  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -423,9 +395,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInIfExpressionUnderCondition")
-  @js.native
-  def createInIfExpressionUnderCondition(container: IfExpression): NoExpression = js.native
+  @scala.inline
+  def createInIfExpressionUnderCondition(container: IfExpression): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -436,9 +407,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInIfExpressionUnderIfFalse")
-  @js.native
-  def createInIfExpressionUnderIfFalse(container: IfExpression): NoExpression = js.native
+  @scala.inline
+  def createInIfExpressionUnderIfFalse(container: IfExpression): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -449,9 +419,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInIfExpressionUnderIfTrue")
-  @js.native
-  def createInIfExpressionUnderIfTrue(container: IfExpression): NoExpression = js.native
+  @scala.inline
+  def createInIfExpressionUnderIfTrue(container: IfExpression): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -462,9 +431,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInInspectAttributeUnderExpressionModel")
-  @js.native
-  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): NoExpression = js.native
+  @scala.inline
+  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -475,9 +443,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInLogMessageActionUnderNodeModel")
-  @js.native
-  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): NoExpression = js.native
+  @scala.inline
+  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -488,9 +455,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInMemberChangeUnderValueModel")
-  @js.native
-  def createInMemberChangeUnderValueModel(container: MemberChange): NoExpression = js.native
+  @scala.inline
+  def createInMemberChangeUnderValueModel(container: MemberChange): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -501,9 +467,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInMicroflowCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): NoExpression = js.native
+  @scala.inline
+  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -514,9 +479,8 @@ object NoExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInNanoflowCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): NoExpression = js.native
+  @scala.inline
+  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -527,9 +491,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInParenthesisExpressionUnderExpression")
-  @js.native
-  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): NoExpression = js.native
+  @scala.inline
+  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -540,9 +503,8 @@ object NoExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInProxyConfigurationUnderHostExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): NoExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -553,9 +515,8 @@ object NoExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInProxyConfigurationUnderPasswordExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): NoExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -566,9 +527,8 @@ object NoExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInProxyConfigurationUnderPortExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): NoExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -579,9 +539,8 @@ object NoExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInProxyConfigurationUnderUseConfigurationExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): NoExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -592,9 +551,8 @@ object NoExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInProxyConfigurationUnderUsernameExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): NoExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -605,9 +563,8 @@ object NoExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInRestCallActionUnderTimeOutModel")
-  @js.native
-  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): NoExpression = js.native
+  @scala.inline
+  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -618,9 +575,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInRuleCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): NoExpression = js.native
+  @scala.inline
+  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -631,9 +587,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInTemplateArgumentUnderExpressionModel")
-  @js.native
-  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): NoExpression = js.native
+  @scala.inline
+  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -644,9 +599,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInUnaryExpressionUnderExpression")
-  @js.native
-  def createInUnaryExpressionUnderExpression(container: UnaryExpression): NoExpression = js.native
+  @scala.inline
+  def createInUnaryExpressionUnderExpression(container: UnaryExpression): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -657,9 +611,8 @@ object NoExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInWebServiceCallActionUnderTimeOutModel")
-  @js.native
-  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): NoExpression = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -670,9 +623,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInWebServiceOperationParameterMappingUnderArgumentModel")
-  @js.native
-  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): NoExpression = js.native
+  @scala.inline
+  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
@@ -683,9 +635,8 @@ object NoExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.createInWidgetValidationUnderExpressionModel")
-  @js.native
-  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): NoExpression = js.native
+  @scala.inline
+  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): NoExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[NoExpression]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression.structureTypeName")

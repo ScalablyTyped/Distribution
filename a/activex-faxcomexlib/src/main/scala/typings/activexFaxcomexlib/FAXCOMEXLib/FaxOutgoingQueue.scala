@@ -3,57 +3,55 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxOutgoingQueue Class */
-@js.native
 trait FaxOutgoingQueue extends StObject {
   
   /** How long the failed fax message is kept on the server */
-  var AgeLimit: Double = js.native
+  var AgeLimit: Double
   
   /** Are personal cover pages allowed */
-  var AllowPersonalCoverPages: Boolean = js.native
+  var AllowPersonalCoverPages: Boolean
   
   /** Is the queue blocked */
-  var Blocked: Boolean = js.native
+  var Blocked: Boolean
   
   /** Does the server generate a brand */
-  var Branding: Boolean = js.native
+  var Branding: Boolean
   
   /** End of the discount rate period */
-  var DiscountRateEnd: VarDate = js.native
+  var DiscountRateEnd: VarDate
   
   /** Start of the discount rate period */
-  var DiscountRateStart: VarDate = js.native
+  var DiscountRateStart: VarDate
   
   @JSName("FAXCOMEXLib.FaxOutgoingQueue_typekey")
-  var FAXCOMEXLibDotFaxOutgoingQueue_typekey: FaxOutgoingQueue = js.native
+  var FAXCOMEXLibDotFaxOutgoingQueue_typekey: FaxOutgoingQueue
   
   /** Outgoing job by ID */
-  def GetJob(bstrJobId: String): IFaxOutgoingJob = js.native
+  def GetJob(bstrJobId: String): IFaxOutgoingJob
   
   /** Collection of outgoing jobs */
-  def GetJobs(): FaxOutgoingJobs = js.native
+  def GetJobs(): FaxOutgoingJobs
   
   /** Is the queue paused */
-  var Paused: Boolean = js.native
+  var Paused: Boolean
   
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
   
   /** Number of retries */
-  var Retries: Double = js.native
+  var Retries: Double
   
   /** Retry delay */
-  var RetryDelay: Double = js.native
+  var RetryDelay: Double
   
   /** Save the object */
-  def Save(): Unit = js.native
+  def Save(): Unit
   
   /** Is device Transmitting Station ID used */
-  var UseDeviceTSID: Boolean = js.native
+  var UseDeviceTSID: Boolean
 }
 object FaxOutgoingQueue {
   

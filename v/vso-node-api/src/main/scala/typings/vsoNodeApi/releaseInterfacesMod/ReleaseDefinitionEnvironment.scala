@@ -5,57 +5,55 @@ import typings.vsoNodeApi.distributedTaskCommonInterfacesMod.ProcessParameters
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseDefinitionEnvironment extends StObject {
   
-  var badgeUrl: String = js.native
+  var badgeUrl: String
   
-  var conditions: js.Array[Condition] = js.native
+  var conditions: js.Array[Condition]
   
-  var demands: js.Array[_] = js.native
+  var demands: js.Array[js.Any]
   
-  var deployPhases: js.Array[DeployPhase] = js.native
+  var deployPhases: js.Array[DeployPhase]
   
-  var deployStep: ReleaseDefinitionDeployStep = js.native
+  var deployStep: ReleaseDefinitionDeployStep
   
-  var environmentOptions: EnvironmentOptions = js.native
+  var environmentOptions: EnvironmentOptions
   
-  var executionPolicy: EnvironmentExecutionPolicy = js.native
+  var executionPolicy: EnvironmentExecutionPolicy
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
-  var postDeployApprovals: ReleaseDefinitionApprovals = js.native
+  var postDeployApprovals: ReleaseDefinitionApprovals
   
-  var postDeploymentGates: ReleaseDefinitionGatesStep = js.native
+  var postDeploymentGates: ReleaseDefinitionGatesStep
   
-  var preDeployApprovals: ReleaseDefinitionApprovals = js.native
+  var preDeployApprovals: ReleaseDefinitionApprovals
   
-  var preDeploymentGates: ReleaseDefinitionGatesStep = js.native
+  var preDeploymentGates: ReleaseDefinitionGatesStep
   
-  var processParameters: ProcessParameters = js.native
+  var processParameters: ProcessParameters
   
-  var properties: js.Any = js.native
+  var properties: js.Any
   
-  var queueId: Double = js.native
+  var queueId: Double
   
-  var rank: Double = js.native
+  var rank: Double
   
-  var retentionPolicy: EnvironmentRetentionPolicy = js.native
+  var retentionPolicy: EnvironmentRetentionPolicy
   
-  var runOptions: StringDictionary[String] = js.native
+  var runOptions: StringDictionary[String]
   
-  var schedules: js.Array[ReleaseSchedule] = js.native
+  var schedules: js.Array[ReleaseSchedule]
   
-  var variableGroups: js.Array[Double] = js.native
+  var variableGroups: js.Array[Double]
   
-  var variables: StringDictionary[ConfigurationVariableValue] = js.native
+  var variables: StringDictionary[ConfigurationVariableValue]
 }
 object ReleaseDefinitionEnvironment {
   
@@ -63,7 +61,7 @@ object ReleaseDefinitionEnvironment {
   def apply(
     badgeUrl: String,
     conditions: js.Array[Condition],
-    demands: js.Array[_],
+    demands: js.Array[js.Any],
     deployPhases: js.Array[DeployPhase],
     deployStep: ReleaseDefinitionDeployStep,
     environmentOptions: EnvironmentOptions,
@@ -102,7 +100,7 @@ object ReleaseDefinitionEnvironment {
     def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))

@@ -17,45 +17,43 @@ import typings.mmdbLib.mmdbLibStrings.search_engine_spider
 import typings.mmdbLib.mmdbLibStrings.traveler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TraitsRecord extends StObject {
   
-  val autonomous_system_number: js.UndefOr[Double] = js.native
+  val autonomous_system_number: js.UndefOr[Double] = js.undefined
   
-  val autonomous_system_organization: js.UndefOr[String] = js.native
+  val autonomous_system_organization: js.UndefOr[String] = js.undefined
   
-  val connection_type: js.UndefOr[String] = js.native
+  val connection_type: js.UndefOr[String] = js.undefined
   
-  val domain: js.UndefOr[String] = js.native
+  val domain: js.UndefOr[String] = js.undefined
   
-  var ip_address: js.UndefOr[String] = js.native
+  var ip_address: js.UndefOr[String] = js.undefined
   
-  val is_anonymous: js.UndefOr[Boolean] = js.native
+  val is_anonymous: js.UndefOr[Boolean] = js.undefined
   
-  val is_anonymous_proxy: js.UndefOr[Boolean] = js.native
+  val is_anonymous_proxy: js.UndefOr[Boolean] = js.undefined
   
-  val is_anonymous_vpn: js.UndefOr[Boolean] = js.native
+  val is_anonymous_vpn: js.UndefOr[Boolean] = js.undefined
   
-  val is_hosting_provider: js.UndefOr[Boolean] = js.native
+  val is_hosting_provider: js.UndefOr[Boolean] = js.undefined
   
-  val is_legitimate_proxy: js.UndefOr[Boolean] = js.native
+  val is_legitimate_proxy: js.UndefOr[Boolean] = js.undefined
   
-  val is_public_proxy: js.UndefOr[Boolean] = js.native
+  val is_public_proxy: js.UndefOr[Boolean] = js.undefined
   
-  val is_satellite_provider: js.UndefOr[Boolean] = js.native
+  val is_satellite_provider: js.UndefOr[Boolean] = js.undefined
   
-  val is_tor_exit_node: js.UndefOr[Boolean] = js.native
+  val is_tor_exit_node: js.UndefOr[Boolean] = js.undefined
   
-  val isp: js.UndefOr[String] = js.native
+  val isp: js.UndefOr[String] = js.undefined
   
-  val organization: js.UndefOr[String] = js.native
+  val organization: js.UndefOr[String] = js.undefined
   
   val user_type: js.UndefOr[
     business | cafe | cellular | college | content_delivery_network | dialup | government | hosting | library | military | residential | router | school | search_engine_spider | traveler
-  ] = js.native
+  ] = js.undefined
 }
 object TraitsRecord {
   

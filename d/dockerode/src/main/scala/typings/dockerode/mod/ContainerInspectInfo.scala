@@ -7,57 +7,55 @@ import typings.dockerode.anon.Dead
 import typings.dockerode.anon.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerInspectInfo extends StObject {
   
-  var AppArmorProfile: String = js.native
+  var AppArmorProfile: String
   
-  var Args: js.Array[String] = js.native
+  var Args: js.Array[String]
   
-  var Config: AttachStderr = js.native
+  var Config: AttachStderr
   
-  var Created: String = js.native
+  var Created: String
   
-  var Driver: String = js.native
+  var Driver: String
   
-  var ExecIDs: js.UndefOr[js.Array[String]] = js.native
+  var ExecIDs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var GraphDriver: Data = js.native
+  var GraphDriver: Data
   
-  var HostConfig: typings.dockerode.mod.HostConfig = js.native
+  var HostConfig: typings.dockerode.mod.HostConfig
   
-  var HostnamePath: String = js.native
+  var HostnamePath: String
   
-  var HostsPath: String = js.native
+  var HostsPath: String
   
-  var Id: String = js.native
+  var Id: String
   
-  var Image: String = js.native
+  var Image: String
   
-  var LogPath: String = js.native
+  var LogPath: String
   
-  var MountLabel: String = js.native
+  var MountLabel: String
   
-  var Mounts: js.Array[Mode] = js.native
+  var Mounts: js.Array[Mode]
   
-  var Name: String = js.native
+  var Name: String
   
-  var NetworkSettings: Bridge = js.native
+  var NetworkSettings: Bridge
   
-  var Path: String = js.native
+  var Path: String
   
-  var Platform: String = js.native
+  var Platform: String
   
-  var ProcessLabel: String = js.native
+  var ProcessLabel: String
   
-  var ResolvConfPath: String = js.native
+  var ResolvConfPath: String
   
-  var RestartCount: Double = js.native
+  var RestartCount: Double
   
-  var State: Dead = js.native
+  var State: Dead
 }
 object ContainerInspectInfo {
   

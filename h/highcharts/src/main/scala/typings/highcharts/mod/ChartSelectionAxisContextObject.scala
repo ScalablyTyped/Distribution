@@ -2,26 +2,24 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartSelectionAxisContextObject extends StObject {
   
   /**
     * The selected Axis.
     */
-  var axis: Axis = js.native
+  var axis: Axis
   
   /**
     * The maximum axis value, either automatic or set manually.
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * The minimum axis value, either automatic or set manually.
     */
-  var min: Double = js.native
+  var min: Double
 }
 object ChartSelectionAxisContextObject {
   

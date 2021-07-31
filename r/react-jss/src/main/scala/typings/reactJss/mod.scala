@@ -22,27 +22,38 @@ import typings.theming.mod.UseThemeFactory
 import typings.theming.mod.WithThemeFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-jss", JSImport.Default)
+  @JSImport("react-jss", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default[ClassNames /* <: String | Double | js.Symbol */, S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */](styles: S): js.Function1[
     /* comp */ js.Any, 
     ComponentType[
-      LibraryManagedAttributes[_, (Omit[GetProps[_], classes]) with Partial[WithStylesProps[S]] with InnerRef]
+      LibraryManagedAttributes[js.Any, (Omit[GetProps[js.Any], classes]) & Partial[WithStylesProps[S]] & InnerRef]
     ]
-  ] = js.native
-  @JSImport("react-jss", JSImport.Default)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* comp */ js.Any, 
+    ComponentType[
+      LibraryManagedAttributes[js.Any, (Omit[GetProps[js.Any], classes]) & Partial[WithStylesProps[S]] & InnerRef]
+    ]
+  ]]
+  @scala.inline
   def default[ClassNames /* <: String | Double | js.Symbol */, S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */](styles: S, options: WithStylesOptions): js.Function1[
     /* comp */ js.Any, 
     ComponentType[
-      LibraryManagedAttributes[_, (Omit[GetProps[_], classes]) with Partial[WithStylesProps[S]] with InnerRef]
+      LibraryManagedAttributes[js.Any, (Omit[GetProps[js.Any], classes]) & Partial[WithStylesProps[S]] & InnerRef]
     ]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* comp */ js.Any, 
+    ComponentType[
+      LibraryManagedAttributes[js.Any, (Omit[GetProps[js.Any], classes]) & Partial[WithStylesProps[S]] & InnerRef]
+    ]
+  ]]
   
   @JSImport("react-jss", "JssContext")
   @js.native
@@ -65,22 +76,17 @@ object mod {
   @js.native
   val createGenerateId: CreateGenerateId_ = js.native
   
-  @JSImport("react-jss", "createTheming")
-  @js.native
-  def createTheming[Theme](context: Context[Theme]): Theming[Theme] = js.native
+  @scala.inline
+  def createTheming[Theme](context: Context[Theme]): Theming[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheming")(context.asInstanceOf[js.Any]).asInstanceOf[Theming[Theme]]
   
-  @JSImport("react-jss", "createUseStyles")
-  @js.native
-  def createUseStyles[Theme, C /* <: String */](styles: js.Function1[/* theme */ Theme, Styles[C]]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = js.native
-  @JSImport("react-jss", "createUseStyles")
-  @js.native
-  def createUseStyles[Theme, C /* <: String */](styles: js.Function1[/* theme */ Theme, Styles[C]], options: CreateUseStylesOptions[Theme]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = js.native
-  @JSImport("react-jss", "createUseStyles")
-  @js.native
-  def createUseStyles[Theme, C /* <: String */](styles: Styles[C]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = js.native
-  @JSImport("react-jss", "createUseStyles")
-  @js.native
-  def createUseStyles[Theme, C /* <: String */](styles: Styles[C], options: CreateUseStylesOptions[Theme]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = js.native
+  @scala.inline
+  def createUseStyles[Theme, C /* <: String */](styles: js.Function1[/* theme */ Theme, Styles[C]]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
+  @scala.inline
+  def createUseStyles[Theme, C /* <: String */](styles: js.Function1[/* theme */ Theme, Styles[C]], options: CreateUseStylesOptions[Theme]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
+  @scala.inline
+  def createUseStyles[Theme, C /* <: String */](styles: Styles[C]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
+  @scala.inline
+  def createUseStyles[Theme, C /* <: String */](styles: Styles[C], options: CreateUseStylesOptions[Theme]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
   
   @JSImport("react-jss", "jss")
   @js.native
@@ -94,10 +100,11 @@ object mod {
   @js.native
   val withTheme: WithThemeFactory[typings.theming.mod.DefaultTheme] = js.native
   
-  @js.native
-  trait BaseOptions[Theme] extends StyleSheetFactoryOptions {
+  trait BaseOptions[Theme]
+    extends StObject
+       with StyleSheetFactoryOptions {
     
-    var theming: js.UndefOr[Theming[Theme]] = js.native
+    var theming: js.UndefOr[Theming[Theme]] = js.undefined
   }
   object BaseOptions {
     
@@ -108,7 +115,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BaseOptionsMutableBuilder[Self <: BaseOptions[_], Theme] (val x: Self with BaseOptions[Theme]) extends AnyVal {
+    implicit class BaseOptionsMutableBuilder[Self <: BaseOptions[?], Theme] (val x: Self & BaseOptions[Theme]) extends AnyVal {
       
       @scala.inline
       def setTheming(value: Theming[Theme]): Self = StObject.set(x, "theming", value.asInstanceOf[js.Any])
@@ -118,10 +125,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait CreateUseStylesOptions[Theme] extends BaseOptions[Theme] {
+  trait CreateUseStylesOptions[Theme]
+    extends StObject
+       with BaseOptions[Theme] {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object CreateUseStylesOptions {
     
@@ -132,7 +140,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CreateUseStylesOptionsMutableBuilder[Self <: CreateUseStylesOptions[_], Theme] (val x: Self with CreateUseStylesOptions[Theme]) extends AnyVal {
+    implicit class CreateUseStylesOptionsMutableBuilder[Self <: CreateUseStylesOptions[?], Theme] (val x: Self & CreateUseStylesOptions[Theme]) extends AnyVal {
       
       @scala.inline
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -142,7 +150,6 @@ object mod {
     }
   }
   
-  @js.native
   trait DefaultTheme extends StObject
   
   type GetProps[C] = js.Any
@@ -154,12 +161,13 @@ object mod {
     */
   type WithStyles[S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */] = WithStylesProps[S]
   
-  @js.native
-  trait WithStylesOptions extends BaseOptions[DefaultTheme] {
+  trait WithStylesOptions
+    extends StObject
+       with BaseOptions[DefaultTheme] {
     
-    var injectTheme: js.UndefOr[Boolean] = js.native
+    var injectTheme: js.UndefOr[Boolean] = js.undefined
     
-    var jss: js.UndefOr[Jss] = js.native
+    var jss: js.UndefOr[Jss] = js.undefined
   }
   object WithStylesOptions {
     
@@ -186,10 +194,9 @@ object mod {
     }
   }
   
-  @js.native
   trait WithStylesProps[S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */] extends StObject {
     
-    var classes: Classes[/* keyof S */ String] = js.native
+    var classes: Classes[/* keyof S */ String]
   }
   object WithStylesProps {
     
@@ -200,7 +207,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class WithStylesPropsMutableBuilder[Self <: WithStylesProps[_], S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */] (val x: Self with WithStylesProps[S]) extends AnyVal {
+    implicit class WithStylesPropsMutableBuilder[Self <: WithStylesProps[?], S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */] (val x: Self & WithStylesProps[S]) extends AnyVal {
       
       @scala.inline
       def setClasses(value: Classes[/* keyof S */ String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])

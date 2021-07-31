@@ -2,27 +2,25 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bad extends StObject {
   
-  var bad: scala.Double = js.native
+  var bad: scala.Double
   
-  var blob: scala.Double = js.native
+  var blob: scala.Double
   
-  var commit: scala.Double = js.native
+  var commit: scala.Double
   
-  var ext2: scala.Double = js.native
+  var ext2: scala.Double
   
-  var ofsDelta: scala.Double = js.native
+  var ofsDelta: scala.Double
   
-  var refDelta: scala.Double = js.native
+  var refDelta: scala.Double
   
-  var tag: scala.Double = js.native
+  var tag: scala.Double
   
-  var tree: scala.Double = js.native
+  var tree: scala.Double
 }
 object Bad {
   

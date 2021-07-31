@@ -2,7 +2,6 @@ package typings.sylvester
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -131,7 +130,7 @@ trait Matrix extends StObject {
     *
     * @param {Function} fn The function.
     */
-  def map(fn: js.Function3[/* x */ Double, /* i */ Double, /* j */ Double, _]): Matrix = js.native
+  def map(fn: js.Function3[/* x */ Double, /* i */ Double, /* j */ Double, js.Any]): Matrix = js.native
   
   /**
     * Returns the (absolute) largest element of the matrix.

@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait sizeCreateVisualVariablesParamsLegendOptions extends Object {
+trait sizeCreateVisualVariablesParamsLegendOptions
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to describe the renderer in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var showLegend: js.UndefOr[Boolean] = js.native
+  var showLegend: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The title used to represent the given field or expression in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object sizeCreateVisualVariablesParamsLegendOptions {
   

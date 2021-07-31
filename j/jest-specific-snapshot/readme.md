@@ -10,9 +10,9 @@ Typings are for version 0.5
 | ------------------ | :-------------: |
 | Full name          | jest-specific-snapshot |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 5 |
-| # downloads        | 13411251 |
+| # downloads        | 17331635 |
 | # stars            | 0 |
 
 ## Links

@@ -2,26 +2,24 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineReference extends StObject {
   
   /**
     * The change ID.
     */
-  var changeId: Double = js.native
+  var changeId: Double
   
   /**
     * The ID of the timeline.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The REST URL of the timeline.
     */
-  var url: String = js.native
+  var url: String
 }
 object TimelineReference {
   

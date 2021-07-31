@@ -2,17 +2,15 @@ package typings.hapiHapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Etag extends StObject {
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var modified: js.UndefOr[String] = js.native
+  var modified: js.UndefOr[String] = js.undefined
   
-  var vary: js.UndefOr[Boolean] = js.native
+  var vary: js.UndefOr[Boolean] = js.undefined
 }
 object Etag {
   

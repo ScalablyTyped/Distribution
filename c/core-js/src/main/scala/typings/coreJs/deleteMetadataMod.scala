@@ -2,7 +2,6 @@ package typings.coreJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deleteMetadataMod {
@@ -25,13 +24,14 @@ object deleteMetadataMod {
     * ```
     */
   /* was `typeof core.Reflect.deleteMetadata` */
+  @scala.inline
+  def apply(metadataKey: js.Any, target: Object): Boolean = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   @JSImport("core-js/library/fn/reflect/es7/delete-metadata", JSImport.Namespace)
   @js.native
-  def apply(metadataKey: js.Any, target: Object): Boolean = js.native
-  @JSImport("core-js/library/fn/reflect/es7/delete-metadata", JSImport.Namespace)
-  @js.native
-  def apply(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
-  @JSImport("core-js/library/fn/reflect/es7/delete-metadata", JSImport.Namespace)
-  @js.native
-  def apply(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
+  val ^ : js.Any = js.native
 }

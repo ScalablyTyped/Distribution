@@ -8,7 +8,6 @@ import typings.openfin.viewViewMod.View
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object finMod {
@@ -46,7 +45,7 @@ object finMod {
     
     var Window: typings.openfin.windowWindowMod.default = js.native
     
-    val me: (View | Window | Frame | js.Object) with Identity with EntityTypeHelpers = js.native
+    val me: (View | Window | Frame | js.Object) & Identity & EntityTypeHelpers = js.native
     
     var wire: js.Any = js.native
   }

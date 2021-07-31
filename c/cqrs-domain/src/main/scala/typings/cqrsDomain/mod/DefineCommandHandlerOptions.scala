@@ -2,28 +2,26 @@ package typings.cqrsDomain.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // endregion
 // region defineCommandHandler
-@js.native
 trait DefineCommandHandlerOptions extends StObject {
   
   /**
     * optional, default is file name without extension
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * optional, if not defined it will pass the whole command...
     */
-  var payload: js.UndefOr[String] = js.native
+  var payload: js.UndefOr[String] = js.undefined
   
   /**
     * optional, default 0
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object DefineCommandHandlerOptions {
   

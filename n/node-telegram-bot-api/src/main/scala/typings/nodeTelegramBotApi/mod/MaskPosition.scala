@@ -2,19 +2,17 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaskPosition extends StObject {
   
-  var point: String = js.native
+  var point: String
   
-  var scale: Double = js.native
+  var scale: Double
   
-  var x_shift: Double = js.native
+  var x_shift: Double
   
-  var y_shift: Double = js.native
+  var y_shift: Double
 }
 object MaskPosition {
   

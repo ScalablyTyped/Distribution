@@ -2,19 +2,17 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of a deployment occurrence.
   */
-@js.native
 trait SchemaGrafeasV1beta1DeploymentDetails extends StObject {
   
   /**
     * Required. Deployment history for the resource.
     */
-  var deployment: js.UndefOr[SchemaDeployment] = js.native
+  var deployment: js.UndefOr[SchemaDeployment] = js.undefined
 }
 object SchemaGrafeasV1beta1DeploymentDetails {
   

@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileRenderingEventUIParam extends StObject {
   
   /**
     * Used to get a reference to the tile manager performing rendering.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get a reference to the tile being rendered
     */
-  var tile: js.UndefOr[js.Any] = js.native
+  var tile: js.UndefOr[js.Any] = js.undefined
 }
 object TileRenderingEventUIParam {
   

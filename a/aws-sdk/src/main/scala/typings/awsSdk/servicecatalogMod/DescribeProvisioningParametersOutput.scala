@@ -2,41 +2,39 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProvisioningParametersOutput extends StObject {
   
   /**
     * Information about the constraints used to provision the product.
     */
-  var ConstraintSummaries: js.UndefOr[typings.awsSdk.servicecatalogMod.ConstraintSummaries] = js.native
+  var ConstraintSummaries: js.UndefOr[typings.awsSdk.servicecatalogMod.ConstraintSummaries] = js.undefined
   
   /**
     * The output of the provisioning artifact.
     */
-  var ProvisioningArtifactOutputs: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactOutputs] = js.native
+  var ProvisioningArtifactOutputs: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactOutputs] = js.undefined
   
   /**
     * Information about the parameters used to provision the product.
     */
-  var ProvisioningArtifactParameters: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactParameters] = js.native
+  var ProvisioningArtifactParameters: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactParameters] = js.undefined
   
   /**
     * An object that contains information about preferences, such as regions and accounts, for the provisioning artifact.
     */
-  var ProvisioningArtifactPreferences: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactPreferences] = js.native
+  var ProvisioningArtifactPreferences: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactPreferences] = js.undefined
   
   /**
     * Information about the TagOptions associated with the resource.
     */
-  var TagOptions: js.UndefOr[TagOptionSummaries] = js.native
+  var TagOptions: js.UndefOr[TagOptionSummaries] = js.undefined
   
   /**
     * Any additional metadata specifically related to the provisioning of the product. For example, see the Version field of the CloudFormation template.
     */
-  var UsageInstructions: js.UndefOr[typings.awsSdk.servicecatalogMod.UsageInstructions] = js.native
+  var UsageInstructions: js.UndefOr[typings.awsSdk.servicecatalogMod.UsageInstructions] = js.undefined
 }
 object DescribeProvisioningParametersOutput {
   

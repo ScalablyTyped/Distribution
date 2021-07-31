@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConnectionRequest extends StObject {
   
   /**
     * The ID of the Data Catalog in which the connection resides. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * A ConnectionInput object that redefines the connection in question.
     */
-  var ConnectionInput: typings.awsSdk.glueMod.ConnectionInput = js.native
+  var ConnectionInput: typings.awsSdk.glueMod.ConnectionInput
   
   /**
     * The name of the connection definition to update.
     */
-  var Name: NameString = js.native
+  var Name: NameString
 }
 object UpdateConnectionRequest {
   

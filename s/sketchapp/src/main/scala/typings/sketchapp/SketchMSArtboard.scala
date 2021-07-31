@@ -2,27 +2,25 @@ package typings.sketchapp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSArtboard extends StObject {
   
-  var backgroundColor: SketchMSColor = js.native
+  var backgroundColor: SketchMSColor
   
-  var frame: SketchMSRect = js.native
+  var frame: SketchMSRect
   
-  var hasBackgroundColor: Boolean = js.native
+  var hasBackgroundColor: Boolean
   
-  var horizontalRulerData: js.UndefOr[SketchMSRulerData] = js.native
+  var horizontalRulerData: js.UndefOr[SketchMSRulerData] = js.undefined
   
-  var includeBackgroundColorInExport: js.UndefOr[Boolean] = js.native
+  var includeBackgroundColorInExport: js.UndefOr[Boolean] = js.undefined
   
-  var includeInCloudUpload: js.UndefOr[Boolean] = js.native
+  var includeInCloudUpload: js.UndefOr[Boolean] = js.undefined
   
-  var isFlowHome: js.UndefOr[Boolean] = js.native
+  var isFlowHome: js.UndefOr[Boolean] = js.undefined
   
-  var verticalRulerData: js.UndefOr[SketchMSRulerData] = js.native
+  var verticalRulerData: js.UndefOr[SketchMSRulerData] = js.undefined
 }
 object SketchMSArtboard {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiplexSettingsSummary extends StObject {
   
   /**
     * Transport stream bit rate.
     */
-  var TransportStreamBitrate: js.UndefOr[integerMin1000000Max100000000] = js.native
+  var TransportStreamBitrate: js.UndefOr[integerMin1000000Max100000000] = js.undefined
 }
 object MultiplexSettingsSummary {
   

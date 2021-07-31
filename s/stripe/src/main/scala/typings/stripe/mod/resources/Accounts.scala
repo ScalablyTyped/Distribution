@@ -27,7 +27,6 @@ import typings.stripe.mod.cards.ICard
 import typings.stripe.mod.cards.ICardUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Accounts")
@@ -70,7 +69,7 @@ class Accounts protected () extends StripeResource {
     * Returns a login link object if the call succeeded.
     */
   def createLoginLink(accId: String): js.Promise[ILoginLink] = js.native
-  def createLoginLink(accId: String, options: js.UndefOr[scala.Nothing], response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native
+  def createLoginLink(accId: String, options: Unit, response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native
   def createLoginLink(accId: String, options: ILoginLinkOptions): js.Promise[ILoginLink] = js.native
   def createLoginLink(accId: String, options: ILoginLinkOptions, response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native
   def createLoginLink(accId: String, response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native

@@ -5,18 +5,19 @@ import typings.reactSwipeableViews.mod.SwipeableViewsProps
 import typings.reactSwipeableViewsCore.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-swipeable-views-core", "checkIndexBounds")
+  @JSImport("react-swipeable-views-core", JSImport.Namespace)
   @js.native
-  def checkIndexBounds(props: SwipeableViewsProps): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-swipeable-views-core", "computeIndex")
-  @js.native
-  def computeIndex(params: ComputeIndexParams): Index = js.native
+  @scala.inline
+  def checkIndexBounds(props: SwipeableViewsProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIndexBounds")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def computeIndex(params: ComputeIndexParams): Index = ^.asInstanceOf[js.Dynamic].applyDynamic("computeIndex")(params.asInstanceOf[js.Any]).asInstanceOf[Index]
   
   object constant {
     
@@ -37,28 +38,25 @@ object mod {
     def UNCERTAINTY_THRESHOLD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNCERTAINTY_THRESHOLD")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-swipeable-views-core", "getDisplaySameSlide")
-  @js.native
-  def getDisplaySameSlide(props: SwipeableViewsProps, nextProps: SwipeableViewsProps): Boolean = js.native
+  @scala.inline
+  def getDisplaySameSlide(props: SwipeableViewsProps, nextProps: SwipeableViewsProps): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getDisplaySameSlide")(props.asInstanceOf[js.Any], nextProps.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-swipeable-views-core", "mod")
-  @js.native
-  def mod(n: Double, m: Double): Double = js.native
+  @scala.inline
+  def mod(n: Double, m: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
   trait ComputeIndexParams extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var pageX: Double = js.native
+    var pageX: Double
     
-    var resistance: js.UndefOr[Boolean] = js.native
+    var resistance: js.UndefOr[Boolean] = js.undefined
     
-    var startIndex: Double = js.native
+    var startIndex: Double
     
-    var startX: Double = js.native
+    var startX: Double
     
-    var viewLength: Double = js.native
+    var viewLength: Double
   }
   object ComputeIndexParams {
     

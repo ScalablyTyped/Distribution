@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-operation-logging |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 376 |
+| # downloads        | 276 |
 | # stars            | 0 |
 
 ## Links

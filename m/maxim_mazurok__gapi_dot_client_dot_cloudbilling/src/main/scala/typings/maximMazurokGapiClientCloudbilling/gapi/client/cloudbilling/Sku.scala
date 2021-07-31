@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientCloudbilling.gapi.client.cloudbilling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sku extends StObject {
   
   /** The category hierarchy of this SKU, purely for organizational purpose. */
-  var category: js.UndefOr[Category] = js.native
+  var category: js.UndefOr[Category] = js.undefined
   
   /** A human readable description of the SKU, has a maximum length of 256 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The geographic taxonomy for this sku. */
-  var geoTaxonomy: js.UndefOr[GeoTaxonomy] = js.native
+  var geoTaxonomy: js.UndefOr[GeoTaxonomy] = js.undefined
   
   /** The resource name for the SKU. Example: "services/DA34-426B-A397/skus/AA95-CD31-42FE" */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** A timeline of pricing info for this SKU in chronological order. */
-  var pricingInfo: js.UndefOr[js.Array[PricingInfo]] = js.native
+  var pricingInfo: js.UndefOr[js.Array[PricingInfo]] = js.undefined
   
   /** Identifies the service provider. This is 'Google' for first party services in Google Cloud Platform. */
-  var serviceProviderName: js.UndefOr[String] = js.native
+  var serviceProviderName: js.UndefOr[String] = js.undefined
   
   /** List of service regions this SKU is offered at. Example: "asia-east1" Service regions can be found at https://cloud.google.com/about/locations/ */
-  var serviceRegions: js.UndefOr[js.Array[String]] = js.native
+  var serviceRegions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The identifier for the SKU. Example: "AA95-CD31-42FE" */
-  var skuId: js.UndefOr[String] = js.native
+  var skuId: js.UndefOr[String] = js.undefined
 }
 object Sku {
   

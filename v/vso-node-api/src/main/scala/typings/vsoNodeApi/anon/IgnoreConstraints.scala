@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgnoreConstraints extends StObject {
   
-  var ignoreConstraints: scala.Double = js.native
+  var ignoreConstraints: scala.Double
   
-  var includeAll: scala.Double = js.native
+  var includeAll: scala.Double
   
-  var includeChildren: scala.Double = js.native
+  var includeChildren: scala.Double
   
-  var includeSelf: scala.Double = js.native
+  var includeSelf: scala.Double
   
-  var includeSubTree: scala.Double = js.native
+  var includeSubTree: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
 }
 object IgnoreConstraints {
   

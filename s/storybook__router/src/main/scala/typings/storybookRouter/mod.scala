@@ -14,16 +14,19 @@ import typings.storybookRouter.utilsMod.Query
 import typings.storybookRouter.utilsMod.StoryData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@storybook/router", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object Link {
     
-    @JSImport("@storybook/router", "Link")
-    @js.native
-    def apply(hasToChildrenRest: QueryLinkProps): Element = js.native
+    @scala.inline
+    def apply(hasToChildrenRest: QueryLinkProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasToChildrenRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@storybook/router", "Link")
     @js.native
     val ^ : js.Any = js.native
@@ -37,9 +40,9 @@ object mod {
   
   object Location {
     
-    @JSImport("@storybook/router", "Location")
-    @js.native
-    def apply(hasChildren: QueryLocationProps): Element = js.native
+    @scala.inline
+    def apply(hasChildren: QueryLocationProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@storybook/router", "Location")
     @js.native
     val ^ : js.Any = js.native
@@ -66,9 +69,9 @@ object mod {
   
   object Match {
     
-    @JSImport("@storybook/router", "Match")
-    @js.native
-    def apply(hasChildrenPathStartsWith: QueryMatchProps): Element = js.native
+    @scala.inline
+    def apply(hasChildrenTargetPathStartsWith: QueryMatchProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenTargetPathStartsWith.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@storybook/router", "Match")
     @js.native
     val ^ : js.Any = js.native
@@ -82,9 +85,9 @@ object mod {
   
   object Route {
     
-    @JSImport("@storybook/router", "Route")
-    @js.native
-    def apply(hasPathChildrenStartsWithHideOnly: RouteProps): Element = js.native
+    @scala.inline
+    def apply(hasPathChildrenStartsWithHideOnly: RouteProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasPathChildrenStartsWithHideOnly.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@storybook/router", "Route")
     @js.native
     val ^ : js.Any = js.native
@@ -96,33 +99,26 @@ object mod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/router", "getMatch")
-  @js.native
-  def getMatch(current: String, target: String): Match | Null = js.native
-  @JSImport("@storybook/router", "getMatch")
-  @js.native
-  def getMatch(current: String, target: String, startsWith: js.Any): Match | Null = js.native
+  @scala.inline
+  def getMatch(current: String, target: String): Match | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatch")(current.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Match | Null]
+  @scala.inline
+  def getMatch(current: String, target: String, startsWith: js.Any): Match | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatch")(current.asInstanceOf[js.Any], target.asInstanceOf[js.Any], startsWith.asInstanceOf[js.Any])).asInstanceOf[Match | Null]
   
   @JSImport("@storybook/router", "navigate")
   @js.native
   val navigate: NavigateFn = js.native
   
-  @JSImport("@storybook/router", "parsePath")
-  @js.native
-  def parsePath(): StoryData = js.native
-  @JSImport("@storybook/router", "parsePath")
-  @js.native
-  def parsePath(path: String): StoryData = js.native
+  @scala.inline
+  def parsePath(): StoryData = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")().asInstanceOf[StoryData]
+  @scala.inline
+  def parsePath(path: String): StoryData = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[StoryData]
   
-  @JSImport("@storybook/router", "queryFromLocation")
-  @js.native
-  def queryFromLocation(location: Search): Query = js.native
+  @scala.inline
+  def queryFromLocation(location: Search): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("queryFromLocation")(location.asInstanceOf[js.Any]).asInstanceOf[Query]
   
-  @JSImport("@storybook/router", "queryFromString")
-  @js.native
-  def queryFromString(s: String): Query = js.native
+  @scala.inline
+  def queryFromString(s: String): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("queryFromString")(s.asInstanceOf[js.Any]).asInstanceOf[Query]
   
-  @JSImport("@storybook/router", "stringifyQuery")
-  @js.native
-  def stringifyQuery(query: Query): js.Any = js.native
+  @scala.inline
+  def stringifyQuery(query: Query): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyQuery")(query.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

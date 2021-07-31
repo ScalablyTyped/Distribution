@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** registers listeners for specified events. */
-@js.native
-trait XEventAttacherManager extends XInterface {
+trait XEventAttacherManager
+  extends StObject
+     with XInterface {
   
   /**
     * adds an {@link XScriptListener} that will be notified when an event takes place. For that a {@link ScriptEventDescriptor} is registered at and
@@ -20,7 +20,7 @@ trait XEventAttacherManager extends XInterface {
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     * @see removeScriptListener
     */
-  def addScriptListener(xListener: XScriptListener): Unit = js.native
+  def addScriptListener(xListener: XScriptListener): Unit
   
   /**
     * attaches all the ScriptEvents which are registered for the given index to the given object.
@@ -28,7 +28,7 @@ trait XEventAttacherManager extends XInterface {
     * Exceptions of type {@link com.sun.star.beans.IntrospectionException} and {@link com.sun.star.script.CannotCreateAdapterException} that can be thrown
     * by methods of {@link XEventAttacher} are caught and ignored.
     */
-  def attach(nIndex: Double, xObject: XInterface, aHelper: js.Any): Unit = js.native
+  def attach(nIndex: Double, xObject: XInterface, aHelper: js.Any): Unit
   
   /**
     * detaches all the ScriptEvents from the given object which are registered at this object for the given index.
@@ -36,21 +36,21 @@ trait XEventAttacherManager extends XInterface {
     * Exceptions of type {@link com.sun.star.beans.IntrospectionException} and {@link com.sun.star.script.CannotCreateAdapterException} that can be thrown
     * by methods of {@link XEventAttacher} are caught and ignored.
     */
-  def detach(nIndex: Double, xObject: XInterface): Unit = js.native
+  def detach(nIndex: Double, xObject: XInterface): Unit
   
   /**
     * @param Index an index previously inserted with the method insertEntry.
     * @returns all events registered for the given object index.
     * @throws IllegalArgumentException if Index is not valid.
     */
-  def getScriptEvents(Index: Double): SafeArray[ScriptEventDescriptor] = js.native
+  def getScriptEvents(Index: Double): SafeArray[ScriptEventDescriptor]
   
   /**
     * creates an empty entry at the given position.
     *
     * The index **n** of all entries with `n &gt;= nIndex` will be increased by one.
     */
-  def insertEntry(nIndex: Double): Unit = js.native
+  def insertEntry(nIndex: Double): Unit
   
   /**
     * registers one event for an object identified by its index.
@@ -60,7 +60,7 @@ trait XEventAttacherManager extends XInterface {
     * Exceptions of type {@link com.sun.star.beans.IntrospectionException} and {@link com.sun.star.script.CannotCreateAdapterException} that can be thrown
     * by methods of {@link XEventAttacher} are caught and ignored.
     */
-  def registerScriptEvent(nIndex: Double, aScriptEvent: ScriptEventDescriptor): Unit = js.native
+  def registerScriptEvent(nIndex: Double, aScriptEvent: ScriptEventDescriptor): Unit
   
   /**
     * registers several events for an object identified by its index.
@@ -74,7 +74,7 @@ trait XEventAttacherManager extends XInterface {
     * @see registerScriptEvent
     * @see attach
     */
-  def registerScriptEvents(nIndex: Double, aScriptEvents: SeqEquiv[ScriptEventDescriptor]): Unit = js.native
+  def registerScriptEvents(nIndex: Double, aScriptEvents: SeqEquiv[ScriptEventDescriptor]): Unit
   
   /**
     * removes the entry at the given position.
@@ -83,7 +83,7 @@ trait XEventAttacherManager extends XInterface {
     * detached automatically. (see {@link attach()} ).
     * @see attach
     */
-  def removeEntry(nIndex: Double): Unit = js.native
+  def removeEntry(nIndex: Double): Unit
   
   /**
     * removes a {@link XScriptListener} from the listener list.
@@ -93,7 +93,7 @@ trait XEventAttacherManager extends XInterface {
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     * @see addScriptListener
     */
-  def removeScriptListener(Listener: XScriptListener): Unit = js.native
+  def removeScriptListener(Listener: XScriptListener): Unit
   
   /**
     * revokes the registration of an event.
@@ -105,7 +105,7 @@ trait XEventAttacherManager extends XInterface {
     * by methods of {@link XEventAttacher} are caught and ignored.
     * @see attach
     */
-  def revokeScriptEvent(nIndex: Double, aListenerType: String, aEventMethod: String, aRemoveListenerParam: String): Unit = js.native
+  def revokeScriptEvent(nIndex: Double, aListenerType: String, aEventMethod: String, aRemoveListenerParam: String): Unit
   
   /**
     * revokes all events which are registered for the given index.
@@ -113,7 +113,7 @@ trait XEventAttacherManager extends XInterface {
     * If the events at this index have been attached to any object, they are detached automatically. (see {@link attach()} ).
     * @see attach
     */
-  def revokeScriptEvents(nIndex: Double): Unit = js.native
+  def revokeScriptEvents(nIndex: Double): Unit
 }
 object XEventAttacherManager {
   

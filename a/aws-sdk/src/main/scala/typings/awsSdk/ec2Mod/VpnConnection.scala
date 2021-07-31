@@ -2,71 +2,69 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnConnection extends StObject {
   
   /**
     * The category of the VPN connection. A value of VPN indicates an AWS VPN connection. A value of VPN-Classic indicates an AWS Classic VPN connection.
     */
-  var Category: js.UndefOr[String] = js.native
+  var Category: js.UndefOr[String] = js.undefined
   
   /**
     * The configuration information for the VPN connection's customer gateway (in the native XML format). This element is always present in the CreateVpnConnection response; however, it's present in the DescribeVpnConnections response only if the VPN connection is in the pending or available state.
     */
-  var CustomerGatewayConfiguration: js.UndefOr[String] = js.native
+  var CustomerGatewayConfiguration: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the customer gateway at your end of the VPN connection.
     */
-  var CustomerGatewayId: js.UndefOr[String] = js.native
+  var CustomerGatewayId: js.UndefOr[String] = js.undefined
   
   /**
     * The VPN connection options.
     */
-  var Options: js.UndefOr[VpnConnectionOptions] = js.native
+  var Options: js.UndefOr[VpnConnectionOptions] = js.undefined
   
   /**
     * The static routes associated with the VPN connection.
     */
-  var Routes: js.UndefOr[VpnStaticRouteList] = js.native
+  var Routes: js.UndefOr[VpnStaticRouteList] = js.undefined
   
   /**
     * The current state of the VPN connection.
     */
-  var State: js.UndefOr[VpnState] = js.native
+  var State: js.UndefOr[VpnState] = js.undefined
   
   /**
     * Any tags assigned to the VPN connection.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the transit gateway associated with the VPN connection.
     */
-  var TransitGatewayId: js.UndefOr[String] = js.native
+  var TransitGatewayId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of VPN connection.
     */
-  var Type: js.UndefOr[GatewayType] = js.native
+  var Type: js.UndefOr[GatewayType] = js.undefined
   
   /**
     * Information about the VPN tunnel.
     */
-  var VgwTelemetry: js.UndefOr[VgwTelemetryList] = js.native
+  var VgwTelemetry: js.UndefOr[VgwTelemetryList] = js.undefined
   
   /**
     * The ID of the VPN connection.
     */
-  var VpnConnectionId: js.UndefOr[String] = js.native
+  var VpnConnectionId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the virtual private gateway at the AWS side of the VPN connection.
     */
-  var VpnGatewayId: js.UndefOr[String] = js.native
+  var VpnGatewayId: js.UndefOr[String] = js.undefined
 }
 object VpnConnection {
   

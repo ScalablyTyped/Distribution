@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface that encapsulates the abstract notion of string width.
   * @see XStringAbbreviation
   */
-@js.native
-trait XStringWidth extends XInterface {
+trait XStringWidth
+  extends StObject
+     with XInterface {
   
   /**
     * compute the width of a given string.
@@ -22,7 +22,7 @@ trait XStringWidth extends XInterface {
     * @param aString The string that is to be measured.
     * @returns the string's width.
     */
-  def queryStringWidth(aString: String): Double = js.native
+  def queryStringWidth(aString: String): Double
 }
 object XStringWidth {
   

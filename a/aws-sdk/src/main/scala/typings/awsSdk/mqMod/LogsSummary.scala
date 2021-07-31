@@ -2,36 +2,34 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogsSummary extends StObject {
   
   /**
     * Enables audit logging. Every user management action made using JMX or the ActiveMQ Web Console is logged.
     */
-  var Audit: js.UndefOr[boolean] = js.native
+  var Audit: js.UndefOr[boolean] = js.undefined
   
   /**
     * The location of the CloudWatch Logs log group where audit logs are sent.
     */
-  var AuditLogGroup: js.UndefOr[string] = js.native
+  var AuditLogGroup: js.UndefOr[string] = js.undefined
   
   /**
     * Enables general logging.
     */
-  var General: js.UndefOr[boolean] = js.native
+  var General: js.UndefOr[boolean] = js.undefined
   
   /**
     * The location of the CloudWatch Logs log group where general logs are sent.
     */
-  var GeneralLogGroup: js.UndefOr[string] = js.native
+  var GeneralLogGroup: js.UndefOr[string] = js.undefined
   
   /**
     * The list of information about logs pending to be deployed for the specified broker.
     */
-  var Pending: js.UndefOr[PendingLogs] = js.native
+  var Pending: js.UndefOr[PendingLogs] = js.undefined
 }
 object LogsSummary {
   

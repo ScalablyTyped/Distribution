@@ -11,23 +11,21 @@ import typings.server.optionsMod.DataParserOptions
 import typings.server.serverBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: js.UndefOr[OptionsUrlencoded] = js.native
+    var body: js.UndefOr[OptionsUrlencoded] = js.undefined
     
-    var cookie: js.UndefOr[CookieOptions] = js.native
+    var cookie: js.UndefOr[CookieOptions] = js.undefined
     
-    var data: js.UndefOr[DataParserOptions] = js.native
+    var data: js.UndefOr[DataParserOptions] = js.undefined
     
-    var json: js.UndefOr[OptionsJson] = js.native
+    var json: js.UndefOr[OptionsJson] = js.undefined
     
-    var text: js.UndefOr[OptionsText] = js.native
+    var text: js.UndefOr[OptionsText] = js.undefined
   }
   object Body {
     
@@ -72,10 +70,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Csurf extends StObject {
     
-    var csurf: js.UndefOr[`false` | CsurfOptions] = js.native
+    var csurf: js.UndefOr[`false` | CsurfOptions] = js.undefined
   }
   object Csurf {
     
@@ -96,12 +93,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Level extends StObject {
     
-    var level: LogLevel = js.native
+    var level: LogLevel
     
-    def report(content: String, `type`: LogLevel): Unit = js.native
+    def report(content: String, `type`: LogLevel): Unit
   }
   object Level {
     
@@ -123,39 +119,83 @@ object anon {
   }
   
   /* Inlined {[ key in server.server/typings/common.LogLevel ]: server.server/typings/common.LogFn} */
-  @js.native
   trait keyinLogLevelLogFn extends StObject {
     
-    def alert(template: String, tokens: String*): Unit = js.native
+    def alert(template: String, tokens: String*): Unit
     @JSName("alert")
-    var alert_Original: LogFn = js.native
+    var alert_Original: LogFn
     
-    def critical(template: String, tokens: String*): Unit = js.native
+    def critical(template: String, tokens: String*): Unit
     @JSName("critical")
-    var critical_Original: LogFn = js.native
+    var critical_Original: LogFn
     
-    def debug(template: String, tokens: String*): Unit = js.native
+    def debug(template: String, tokens: String*): Unit
     @JSName("debug")
-    var debug_Original: LogFn = js.native
+    var debug_Original: LogFn
     
-    def emergency(template: String, tokens: String*): Unit = js.native
+    def emergency(template: String, tokens: String*): Unit
     @JSName("emergency")
-    var emergency_Original: LogFn = js.native
+    var emergency_Original: LogFn
     
-    def error(template: String, tokens: String*): Unit = js.native
+    def error(template: String, tokens: String*): Unit
     @JSName("error")
-    var error_Original: LogFn = js.native
+    var error_Original: LogFn
     
-    def info(template: String, tokens: String*): Unit = js.native
+    def info(template: String, tokens: String*): Unit
     @JSName("info")
-    var info_Original: LogFn = js.native
+    var info_Original: LogFn
     
-    def notice(template: String, tokens: String*): Unit = js.native
+    def notice(template: String, tokens: String*): Unit
     @JSName("notice")
-    var notice_Original: LogFn = js.native
+    var notice_Original: LogFn
     
-    def warning(template: String, tokens: String*): Unit = js.native
+    def warning(template: String, tokens: String*): Unit
     @JSName("warning")
-    var warning_Original: LogFn = js.native
+    var warning_Original: LogFn
+  }
+  object keyinLogLevelLogFn {
+    
+    @scala.inline
+    def apply(
+      alert: LogFn,
+      critical: LogFn,
+      debug: LogFn,
+      emergency: LogFn,
+      error: LogFn,
+      info: LogFn,
+      notice: LogFn,
+      warning: LogFn
+    ): keyinLogLevelLogFn = {
+      val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], emergency = emergency.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], notice = notice.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
+      __obj.asInstanceOf[keyinLogLevelLogFn]
+    }
+    
+    @scala.inline
+    implicit class keyinLogLevelLogFnMutableBuilder[Self <: keyinLogLevelLogFn] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAlert(value: LogFn): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCritical(value: LogFn): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDebug(value: LogFn): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEmergency(value: LogFn): Self = StObject.set(x, "emergency", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setError(value: LogFn): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInfo(value: LogFn): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNotice(value: LogFn): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWarning(value: LogFn): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    }
   }
 }

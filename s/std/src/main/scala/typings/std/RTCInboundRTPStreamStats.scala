@@ -2,21 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCInboundRTPStreamStats extends RTCRTPStreamStats {
+trait RTCInboundRTPStreamStats
+  extends StObject
+     with RTCRTPStreamStats {
   
-  var bytesReceived: js.UndefOr[Double] = js.native
+  var bytesReceived: js.UndefOr[Double] = js.undefined
   
-  var fractionLost: js.UndefOr[Double] = js.native
+  var fractionLost: js.UndefOr[Double] = js.undefined
   
-  var jitter: js.UndefOr[Double] = js.native
+  var jitter: js.UndefOr[Double] = js.undefined
   
-  var packetsLost: js.UndefOr[Double] = js.native
+  var packetsLost: js.UndefOr[Double] = js.undefined
   
-  var packetsReceived: js.UndefOr[Double] = js.native
+  var packetsReceived: js.UndefOr[Double] = js.undefined
 }
 object RTCInboundRTPStreamStats {
   

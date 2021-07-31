@@ -2,26 +2,24 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFileSharesOutput extends StObject {
   
   /**
     * An array of information about the file gateway's file shares.
     */
-  var FileShareInfoList: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareInfoList] = js.native
+  var FileShareInfoList: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareInfoList] = js.undefined
   
   /**
     * If the request includes Marker, the response returns that value in this field.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
   
   /**
     * If a value is present, there are more file shares to return. In a subsequent request, use NextMarker as the value for Marker to retrieve the next set of file shares.
     */
-  var NextMarker: js.UndefOr[Marker] = js.native
+  var NextMarker: js.UndefOr[Marker] = js.undefined
 }
 object ListFileSharesOutput {
   

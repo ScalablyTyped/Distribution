@@ -2,25 +2,23 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataRecordConfig extends StObject {
   
-  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var dataFeed: js.UndefOr[String | WebixCallback] = js.native
+  var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object DataRecordConfig {
   
@@ -34,13 +32,10 @@ object DataRecordConfig {
   implicit class DataRecordConfigMutableBuilder[Self <: DataRecordConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataFeed(value: String | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataFeedFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dataFeed", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDataFeedUndefined: Self = StObject.set(x, "dataFeed", js.undefined)

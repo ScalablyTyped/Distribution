@@ -5,16 +5,17 @@ import typings.turistFetch.agentWrapperMod.default
 import typings.turistFetch.typesMod.FetchOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redirectMod {
   
-  @JSImport("@turist/fetch/dist/redirect", "isRedirect")
+  @JSImport("@turist/fetch/dist/redirect", JSImport.Namespace)
   @js.native
-  def isRedirect(v: Double): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@turist/fetch/dist/redirect", "makeRedirectOpts")
-  @js.native
-  def makeRedirectOpts(res: Response, opts: FetchOptions, agentWrapper: default): js.Tuple2[String, FetchOptions] = js.native
+  @scala.inline
+  def isRedirect(v: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def makeRedirectOpts(res: Response, opts: FetchOptions, agentWrapper: default): js.Tuple2[String, FetchOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRedirectOpts")(res.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], agentWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, FetchOptions]]
 }

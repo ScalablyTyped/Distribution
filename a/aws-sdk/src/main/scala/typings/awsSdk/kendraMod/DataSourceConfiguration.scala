@@ -2,46 +2,44 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceConfiguration extends StObject {
   
   /**
     * Provides configuration information for connecting to a Confluence data source.
     */
-  var ConfluenceConfiguration: js.UndefOr[typings.awsSdk.kendraMod.ConfluenceConfiguration] = js.native
+  var ConfluenceConfiguration: js.UndefOr[typings.awsSdk.kendraMod.ConfluenceConfiguration] = js.undefined
   
   /**
     * Provides information necessary to create a data source connector for a database.
     */
-  var DatabaseConfiguration: js.UndefOr[typings.awsSdk.kendraMod.DatabaseConfiguration] = js.native
+  var DatabaseConfiguration: js.UndefOr[typings.awsSdk.kendraMod.DatabaseConfiguration] = js.undefined
   
   /**
     * Provided configuration for data sources that connect to Microsoft OneDrive.
     */
-  var OneDriveConfiguration: js.UndefOr[typings.awsSdk.kendraMod.OneDriveConfiguration] = js.native
+  var OneDriveConfiguration: js.UndefOr[typings.awsSdk.kendraMod.OneDriveConfiguration] = js.undefined
   
   /**
     * Provides information to create a data source connector for a document repository in an Amazon S3 bucket.
     */
-  var S3Configuration: js.UndefOr[S3DataSourceConfiguration] = js.native
+  var S3Configuration: js.UndefOr[S3DataSourceConfiguration] = js.undefined
   
   /**
     * Provides configuration information for data sources that connect to a Salesforce site.
     */
-  var SalesforceConfiguration: js.UndefOr[typings.awsSdk.kendraMod.SalesforceConfiguration] = js.native
+  var SalesforceConfiguration: js.UndefOr[typings.awsSdk.kendraMod.SalesforceConfiguration] = js.undefined
   
   /**
     * Provides configuration for data sources that connect to ServiceNow instances.
     */
-  var ServiceNowConfiguration: js.UndefOr[typings.awsSdk.kendraMod.ServiceNowConfiguration] = js.native
+  var ServiceNowConfiguration: js.UndefOr[typings.awsSdk.kendraMod.ServiceNowConfiguration] = js.undefined
   
   /**
     * Provides information necessary to create a data source connector for a Microsoft SharePoint site.
     */
-  var SharePointConfiguration: js.UndefOr[typings.awsSdk.kendraMod.SharePointConfiguration] = js.native
+  var SharePointConfiguration: js.UndefOr[typings.awsSdk.kendraMod.SharePointConfiguration] = js.undefined
 }
 object DataSourceConfiguration {
   

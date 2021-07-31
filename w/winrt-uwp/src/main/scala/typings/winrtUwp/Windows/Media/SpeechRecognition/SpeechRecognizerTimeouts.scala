@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The timespan that a speech recognizer ignores silence or unrecognizable sounds (babble) and continues listening for speech input. */
-@js.native
 trait SpeechRecognizerTimeouts extends StObject {
   
   /** Gets and sets the length of time that a SpeechRecognizer continues to listen while receiving unrecognizable sounds (babble) before it assumes speech input has ended and finalizes the recognition operation. */
-  var babbleTimeout: Double = js.native
+  var babbleTimeout: Double
   
   /** Gets and sets the length of time, after recognition results have been generated, that a SpeechRecognizer detects silence and assumes speech input has ended. */
-  var endSilenceTimeout: Double = js.native
+  var endSilenceTimeout: Double
   
   /** Gets and sets the length of time, before any recognition results have been generated, that a SpeechRecognizer detects silence and assumes speech input has ended. */
-  var initialSilenceTimeout: Double = js.native
+  var initialSilenceTimeout: Double
 }
 object SpeechRecognizerTimeouts {
   

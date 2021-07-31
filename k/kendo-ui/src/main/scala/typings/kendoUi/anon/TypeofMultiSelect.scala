@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.MultiSelect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofMultiSelect extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): MultiSelect = js.native
+  def extend(proto: js.Object): MultiSelect
   
   /* static member */
-  var fn: MultiSelect = js.native
+  var fn: MultiSelect
 }
 object TypeofMultiSelect {
   

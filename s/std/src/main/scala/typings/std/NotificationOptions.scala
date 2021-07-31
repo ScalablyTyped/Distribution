@@ -2,39 +2,37 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationOptions extends StObject {
   
-  var actions: js.UndefOr[js.Array[NotificationAction]] = js.native
+  var actions: js.UndefOr[js.Array[NotificationAction]] = js.undefined
   
-  var badge: js.UndefOr[java.lang.String] = js.native
+  var badge: js.UndefOr[java.lang.String] = js.undefined
   
-  var body: js.UndefOr[java.lang.String] = js.native
+  var body: js.UndefOr[java.lang.String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dir: js.UndefOr[NotificationDirection] = js.native
+  var dir: js.UndefOr[NotificationDirection] = js.undefined
   
-  var icon: js.UndefOr[java.lang.String] = js.native
+  var icon: js.UndefOr[java.lang.String] = js.undefined
   
-  var image: js.UndefOr[java.lang.String] = js.native
+  var image: js.UndefOr[java.lang.String] = js.undefined
   
-  var lang: js.UndefOr[java.lang.String] = js.native
+  var lang: js.UndefOr[java.lang.String] = js.undefined
   
-  var renotify: js.UndefOr[scala.Boolean] = js.native
+  var renotify: js.UndefOr[scala.Boolean] = js.undefined
   
-  var requireInteraction: js.UndefOr[scala.Boolean] = js.native
+  var requireInteraction: js.UndefOr[scala.Boolean] = js.undefined
   
-  var silent: js.UndefOr[scala.Boolean] = js.native
+  var silent: js.UndefOr[scala.Boolean] = js.undefined
   
-  var tag: js.UndefOr[java.lang.String] = js.native
+  var tag: js.UndefOr[java.lang.String] = js.undefined
   
-  var timestamp: js.UndefOr[Double] = js.native
+  var timestamp: js.UndefOr[Double] = js.undefined
   
-  var vibrate: js.UndefOr[VibratePattern] = js.native
+  var vibrate: js.UndefOr[VibratePattern] = js.undefined
 }
 object NotificationOptions {
   

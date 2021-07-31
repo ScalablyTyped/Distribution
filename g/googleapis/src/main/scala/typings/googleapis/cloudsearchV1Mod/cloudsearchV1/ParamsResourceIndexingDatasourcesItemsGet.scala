@@ -6,35 +6,35 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceIndexingDatasourcesItemsGet extends StandardParameters {
+trait ParamsResourceIndexingDatasourcesItemsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of connector making this call. <br />Format:
     * datasources/{source_id}/connectors/{ID}
     */
-  var connectorName: js.UndefOr[String] = js.native
+  var connectorName: js.UndefOr[String] = js.undefined
   
   /**
     * If set, the request will enable debugging features of Cloud Search. Only
     * turn on this field, if asked by Google to help with debugging.
     */
   @JSName("debugOptions.enableDebugging")
-  var debugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.native
+  var debugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of the item to get info. Format:
     * datasources/{source_id}/items/{item_id}
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceIndexingDatasourcesItemsGet {
   

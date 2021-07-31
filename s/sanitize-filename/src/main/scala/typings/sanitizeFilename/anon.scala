@@ -2,15 +2,13 @@ package typings.sanitizeFilename
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Replacement extends StObject {
     
-    var replacement: js.UndefOr[String | (js.Function1[/* substring */ String, String])] = js.native
+    var replacement: js.UndefOr[String | (js.Function1[/* substring */ String, String])] = js.undefined
   }
   object Replacement {
     

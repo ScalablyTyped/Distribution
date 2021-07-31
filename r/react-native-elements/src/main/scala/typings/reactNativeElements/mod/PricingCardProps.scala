@@ -5,67 +5,65 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PricingCardProps extends StObject {
   
   /**
     * {title, icon, buttonStyle}
     * Button information
     */
-  var button: ButtonInformation = js.native
+  var button: ButtonInformation
   
   /**
     * Color scheme for button & title
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * Outer component styling
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Pricing information
     */
-  var info: js.UndefOr[js.Array[String]] = js.native
+  var info: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * component info text style
     */
-  var infoStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var infoStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Function to be run when button is pressed
     */
-  var onButtonPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onButtonPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Price
     */
-  var price: String = js.native
+  var price: String
   
   /**
     * component pricing text style
     */
-  var pricingStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var pricingStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Title
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * component title style
     */
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Inner wrapper component styling
     */
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object PricingCardProps {
   

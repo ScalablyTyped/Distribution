@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpeedLimitsRequest extends StObject {
   
   /**
@@ -20,14 +18,14 @@ trait SpeedLimitsRequest extends StObject {
     * The following example shows the `placeId` parameter with two place IDs:
     * `placeId=ChIJX12duJAwGQ0Ra0d4Oi4jOGE&placeId=ChIJLQcticc0GQ0RoiNZJVa5GxU`
     */
-  var placeId: String = js.native
+  var placeId: String
   
   /**
     * Whether to return speed limits in kilometers or miles per hour. This can be set to either `KPH` or `MPH`.
     *
     * @default SpeedLimitUnit.KPH
     */
-  var units: js.UndefOr[SpeedLimitUnit] = js.native
+  var units: js.UndefOr[SpeedLimitUnit] = js.undefined
 }
 object SpeedLimitsRequest {
   

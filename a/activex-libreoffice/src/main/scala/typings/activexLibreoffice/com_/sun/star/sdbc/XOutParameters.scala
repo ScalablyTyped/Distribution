@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * form that includes a result parameter and one that does not. If used, the result parameter must be registered as an OUT parameter. The other
   * parameters can be used for input, output, or both. Parameters are referred to sequentially, by number. The first parameter is 1.
   */
-@js.native
-trait XOutParameters extends XInterface {
+trait XOutParameters
+  extends StObject
+     with XInterface {
   
   /**
     * registers the OUT parameter in ordinal position `parameterIndex` to the SDBC type `sqlType` . All OUT parameters must be registered before a stored
@@ -29,7 +29,7 @@ trait XOutParameters extends XInterface {
     * @param scale the scale of the type
     * @throws SQLException if a database access error occurs.
     */
-  def registerNumericOutParameter(parameterIndex: Double, sqlType: Double, scale: Double): Unit = js.native
+  def registerNumericOutParameter(parameterIndex: Double, sqlType: Double, scale: Double): Unit
   
   /**
     * registers the designated output parameter. This version of the method {@link com.sun.star.sdbc.XOutParameters.registerOutParameter()} should be used
@@ -51,7 +51,7 @@ trait XOutParameters extends XInterface {
     * @param typeName the name of the type
     * @throws SQLException if a database access error occurs.
     */
-  def registerOutParameter(parameterIndex: Double, sqlType: Double, typeName: String): Unit = js.native
+  def registerOutParameter(parameterIndex: Double, sqlType: Double, typeName: String): Unit
 }
 object XOutParameters {
   

@@ -5,15 +5,13 @@ import typings.figma.figmaStrings.SCALE
 import typings.figma.figmaStrings.WIDTH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportSettingsConstraints extends StObject {
   
-  val `type`: SCALE | WIDTH | HEIGHT = js.native
+  val `type`: SCALE | WIDTH | HEIGHT
   
-  val value: Double = js.native
+  val value: Double
 }
 object ExportSettingsConstraints {
   

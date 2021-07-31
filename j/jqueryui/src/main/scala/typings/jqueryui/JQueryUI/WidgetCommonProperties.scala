@@ -5,27 +5,25 @@ import typings.std.Document
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WidgetCommonProperties extends StObject {
   
-  var defaultElement: String = js.native
+  var defaultElement: String
   
-  var document: Document = js.native
+  var document: Document
   
-  var element: JQuery = js.native
+  var element: JQuery
   
-  var namespace: String = js.native
+  var namespace: String
   
-  var uuid: String = js.native
+  var uuid: String
   
-  var widgetEventPrefix: String = js.native
+  var widgetEventPrefix: String
   
-  var widgetFullName: String = js.native
+  var widgetFullName: String
   
-  var window: Window = js.native
+  var window: Window
 }
 object WidgetCommonProperties {
   

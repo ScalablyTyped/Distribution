@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxListBox control.
   */
 @js.native
-trait ASPxClientListBox extends ASPxClientListEdit {
+trait ASPxClientListBox
+  extends StObject
+     with ASPxClientListEdit {
   
   /**
     * Adds a new item to the editor, specifying the item's display text, associated value and displayed image, and returns the index of the added item. An integer value that represents the added item's index.
@@ -18,13 +19,13 @@ trait ASPxClientListBox extends ASPxClientListEdit {
     * @param imageUrl A string value specifying the path to the image displayed by the item.
     */
   def AddItem(text: String): Double = js.native
-  def AddItem(text: String, value: js.UndefOr[scala.Nothing], imageUrl: String): Double = js.native
   def AddItem(text: String, value: js.Any): Double = js.native
   def AddItem(text: String, value: js.Any, imageUrl: String): Double = js.native
+  def AddItem(text: String, value: Unit, imageUrl: String): Double = js.native
   def AddItem(text: js.Array[String]): Double = js.native
-  def AddItem(text: js.Array[String], value: js.UndefOr[scala.Nothing], imageUrl: String): Double = js.native
   def AddItem(text: js.Array[String], value: js.Any): Double = js.native
   def AddItem(text: js.Array[String], value: js.Any, imageUrl: String): Double = js.native
+  def AddItem(text: js.Array[String], value: Unit, imageUrl: String): Double = js.native
   
   /**
     * Sets the CSS class for a list box item specified by its index.
@@ -112,7 +113,7 @@ trait ASPxClientListBox extends ASPxClientListEdit {
   /**
     * Returns an array of the list editor's selected items values.
     */
-  def GetSelectedValues(): js.Array[_] = js.native
+  def GetSelectedValues(): js.Array[js.Any] = js.native
   
   /** @deprecated Use the AdjustControl method instead. */
   /**
@@ -127,13 +128,13 @@ trait ASPxClientListBox extends ASPxClientListEdit {
     * @param imageUrl A String value specifying the path to the image displayed by the item.
     */
   def InsertItem(index: Double, text: String): Unit = js.native
-  def InsertItem(index: Double, text: String, value: js.UndefOr[scala.Nothing], imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: String, value: js.Any): Unit = js.native
   def InsertItem(index: Double, text: String, value: js.Any, imageUrl: String): Unit = js.native
+  def InsertItem(index: Double, text: String, value: Unit, imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String]): Unit = js.native
-  def InsertItem(index: Double, text: js.Array[String], value: js.UndefOr[scala.Nothing], imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String], value: js.Any): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String], value: js.Any, imageUrl: String): Unit = js.native
+  def InsertItem(index: Double, text: js.Array[String], value: Unit, imageUrl: String): Unit = js.native
   
   /**
     * Occurs on the client when the editor's item is double clicked.
@@ -214,7 +215,7 @@ trait ASPxClientListBox extends ASPxClientListEdit {
     * Select the items with the specified values within a list box.
     * @param values An array of Object[] objects that represent the item's values.
     */
-  def SelectValues(values: js.Array[_]): Unit = js.native
+  def SelectValues(values: js.Array[js.Any]): Unit = js.native
   
   /**
     * Occurs on the client side after a different item in the list box has been selected (focus has been moved from one item to another).
@@ -290,5 +291,5 @@ trait ASPxClientListBox extends ASPxClientListEdit {
     * Unselects an array of the list box items with the specified values.
     * @param values An array of Object[] objects that represent the values.
     */
-  def UnselectValues(values: js.Array[_]): Unit = js.native
+  def UnselectValues(values: js.Array[js.Any]): Unit = js.native
 }

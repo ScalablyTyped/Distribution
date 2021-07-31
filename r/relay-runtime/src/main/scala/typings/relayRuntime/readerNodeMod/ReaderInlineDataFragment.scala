@@ -4,21 +4,21 @@ import typings.relayRuntime.relayConcreteNodeMod.GeneratedNode
 import typings.relayRuntime.relayRuntimeStrings.InlineDataFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReaderInlineDataFragment extends GeneratedNode {
+trait ReaderInlineDataFragment
+  extends StObject
+     with GeneratedNode {
   
-  val kind: InlineDataFragment = js.native
+  val kind: InlineDataFragment
   
-  val name: String = js.native
+  val name: String
 }
 object ReaderInlineDataFragment {
   
   @scala.inline
-  def apply(kind: InlineDataFragment, name: String): ReaderInlineDataFragment = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(name: String): ReaderInlineDataFragment = {
+    val __obj = js.Dynamic.literal(kind = "InlineDataFragment", name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderInlineDataFragment]
   }
   

@@ -2,21 +2,19 @@ package typings.phaser.Phaser.Types.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MouseInputConfig extends StObject {
   
   /**
     * Whether mouse input events have `preventDefault` called on them.
     */
-  var capture: js.UndefOr[Boolean] = js.native
+  var capture: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Where the Mouse Manager listens for mouse input events. The default is the game canvas.
     */
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
 }
 object MouseInputConfig {
   

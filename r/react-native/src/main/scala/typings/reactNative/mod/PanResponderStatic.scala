@@ -2,10 +2,8 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanResponderStatic extends StObject {
   
   /**
@@ -40,7 +38,7 @@ trait PanResponderStatic extends StObject {
     *  accordingly. (numberActiveTouches) may not be totally accurate unless you
     *  are the responder.
     */
-  def create(config: PanResponderCallbacks): PanResponderInstance = js.native
+  def create(config: PanResponderCallbacks): PanResponderInstance
 }
 object PanResponderStatic {
   

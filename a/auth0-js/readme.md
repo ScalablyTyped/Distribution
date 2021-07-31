@@ -10,9 +10,9 @@ Auth0 headless browser sdk
 | ------------------ | :-------------: |
 | Full name          | auth0-js |
 | Keywords           | auth0, auth, openid, authentication, jwt, browser |
-| # releases         | 22 |
-| # dependents       | 178 |
-| # downloads        | 8614250 |
+| # releases         | 20 |
+| # dependents       | 176 |
+| # downloads        | 8996261 |
 | # stars            | 8 |
 
 ## Links

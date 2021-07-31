@@ -2,46 +2,44 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationPurchaseRecommendation extends StObject {
   
   /**
     * The account scope that AWS recommends that you purchase this instance for. For example, you can purchase this reservation for an entire organization in AWS Organizations.
     */
-  var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.native
+  var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.undefined
   
   /**
     * How many days of previous usage that AWS considers when making this recommendation.
     */
-  var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.native
+  var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.undefined
   
   /**
     * The payment option for the reservation. For example, AllUpfront or NoUpfront.
     */
-  var PaymentOption: js.UndefOr[typings.awsSdk.costexplorerMod.PaymentOption] = js.native
+  var PaymentOption: js.UndefOr[typings.awsSdk.costexplorerMod.PaymentOption] = js.undefined
   
   /**
     * Details about the recommended purchases.
     */
-  var RecommendationDetails: js.UndefOr[ReservationPurchaseRecommendationDetails] = js.native
+  var RecommendationDetails: js.UndefOr[ReservationPurchaseRecommendationDetails] = js.undefined
   
   /**
     * A summary about the recommended purchase.
     */
-  var RecommendationSummary: js.UndefOr[ReservationPurchaseRecommendationSummary] = js.native
+  var RecommendationSummary: js.UndefOr[ReservationPurchaseRecommendationSummary] = js.undefined
   
   /**
     * Hardware specifications for the service that you want recommendations for.
     */
-  var ServiceSpecification: js.UndefOr[typings.awsSdk.costexplorerMod.ServiceSpecification] = js.native
+  var ServiceSpecification: js.UndefOr[typings.awsSdk.costexplorerMod.ServiceSpecification] = js.undefined
   
   /**
     * The term of the reservation that you want recommendations for, in years.
     */
-  var TermInYears: js.UndefOr[typings.awsSdk.costexplorerMod.TermInYears] = js.native
+  var TermInYears: js.UndefOr[typings.awsSdk.costexplorerMod.TermInYears] = js.undefined
 }
 object ReservationPurchaseRecommendation {
   

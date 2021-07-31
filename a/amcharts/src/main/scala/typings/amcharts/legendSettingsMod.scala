@@ -2,76 +2,86 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object legendSettingsMod {
   
   @JSImport("amcharts/LegendSettings", JSImport.Default)
   @js.native
-  class default () extends LegendSettings
-  
-  @js.native
-  trait LegendSettings extends StObject {
+  class default ()
+    extends StObject
+       with LegendSettings {
     
     /**
       * Alignment of legend entries. Possible values are: "left", "right" and "center".
       */
+    /* CompleteClass */
     var align: String = js.native
     
     /**
       * Specifies if each legend entry should take the same space as the longest legend entry.
       */
+    /* CompleteClass */
     var equalWidths: Boolean = js.native
     
     /**
       * Horizontal space between legend item and left/right border.
       */
+    /* CompleteClass */
     var horizontalGap: Double = js.native
     
     /**
       * The text which will be displayed in the legend. Tag [[title]] will be replaced with the title of the graph.
       */
+    /* CompleteClass */
     var labelText: String = js.native
     
     /**
       * Space below the last row of the legend, in pixels.
       */
+    /* CompleteClass */
     var marginBottom: Double = js.native
     
     /**
       * Space above the first row of the legend, in pixels.
       */
+    /* CompleteClass */
     var marginTop: Double = js.native
     
     /**
       * Opacity of marker border.
       */
+    /* CompleteClass */
     var markerBorderAlpha: Double = js.native
     
     /**
       * Marker border color.
       */
+    /* CompleteClass */
     var markerBorderColor: String = js.native
     
     /**
       * Thickness of the legend border.
       */
+    /* CompleteClass */
     var markerBorderThickness: Double = js.native
     
     /**
       * The color of the disabled marker (when the graph is hidden).
       */
+    /* CompleteClass */
     var markerDisabledColor: String = js.native
     
     /**
       * Space between legend marker and legend text, in pixels.
       */
+    /* CompleteClass */
     var markerLabelGap: Double = js.native
     
     /**
       * Size of the legend marker (key).
       */
+    /* CompleteClass */
     var markerSize: Double = js.native
     
     /**
@@ -79,48 +89,57 @@ object legendSettingsMod {
       * Possible values are:
       * "square", "circle", "line", "dashedLine", "triangleUp", "triangleDown", "bubble", "none".
       */
+    /* CompleteClass */
     var markerType: String = js.native
     
     /**
       * Specifies whether legend entries should be placed in reversed order.
       */
+    /* CompleteClass */
     var reversedOrder: Boolean = js.native
     
     /**
       * Legend item text color on roll-over.
       */
+    /* CompleteClass */
     var rollOverColor: String = js.native
     
     /**
       * When you roll-over the legend entry, all other graphs can reduce their opacity,
       * so that the graph you rolled-over would be distinguished. This property specifies the opacity of the graphs.
       */
+    /* CompleteClass */
     var rollOverGraphAlpha: Double = js.native
     
     /**
       * Legend switch color.
       */
+    /* CompleteClass */
     var switchColor: String = js.native
     
     /**
       * Legend switch type (in case the legend is switchable). Possible values are: "x" and "v".
       */
+    /* CompleteClass */
     var switchType: String = js.native
     
     /**
       * Whether showing/hiding of graphs by clicking on the legend marker is enabled or not.
       */
+    /* CompleteClass */
     var switchable: Boolean = js.native
     
     /**
       * Specifies whether the legend text is clickable or not.
       * Clicking on legend text can show/hide value balloons if they are enabled.
       */
+    /* CompleteClass */
     var textClickEnabled: Boolean = js.native
     
     /**
       * Specifies if legend labels should be use same color as corresponding markers.
       */
+    /* CompleteClass */
     var useMarkerColorForLabels: Boolean = js.native
     
     /**
@@ -128,23 +147,162 @@ object legendSettingsMod {
       * at least one dataSet is selected for comparing.
       * You can use tags like [[value]], [[open]], [[high]], [[low]], [[close]], [[percents]], [[description]].
       */
+    /* CompleteClass */
     var valueTextComparing: String = js.native
     
     /**
       * The text which will be displayed in the value portion of the legend.
       * You can use tags like [[value]], [[open]], [[high]], [[low]], [[close]], [[percents]], [[description]].
       */
+    /* CompleteClass */
     var valueTextRegular: String = js.native
     
     /**
       * Width of the value text. Increase this value if your values do not fit in the allocated space.
       */
+    /* CompleteClass */
     var valueWidth: Double = js.native
     
     /**
       * Vertical space between legend items, in pixels.
       */
+    /* CompleteClass */
     var verticalGap: Double = js.native
+  }
+  
+  trait LegendSettings extends StObject {
+    
+    /**
+      * Alignment of legend entries. Possible values are: "left", "right" and "center".
+      */
+    var align: String
+    
+    /**
+      * Specifies if each legend entry should take the same space as the longest legend entry.
+      */
+    var equalWidths: Boolean
+    
+    /**
+      * Horizontal space between legend item and left/right border.
+      */
+    var horizontalGap: Double
+    
+    /**
+      * The text which will be displayed in the legend. Tag [[title]] will be replaced with the title of the graph.
+      */
+    var labelText: String
+    
+    /**
+      * Space below the last row of the legend, in pixels.
+      */
+    var marginBottom: Double
+    
+    /**
+      * Space above the first row of the legend, in pixels.
+      */
+    var marginTop: Double
+    
+    /**
+      * Opacity of marker border.
+      */
+    var markerBorderAlpha: Double
+    
+    /**
+      * Marker border color.
+      */
+    var markerBorderColor: String
+    
+    /**
+      * Thickness of the legend border.
+      */
+    var markerBorderThickness: Double
+    
+    /**
+      * The color of the disabled marker (when the graph is hidden).
+      */
+    var markerDisabledColor: String
+    
+    /**
+      * Space between legend marker and legend text, in pixels.
+      */
+    var markerLabelGap: Double
+    
+    /**
+      * Size of the legend marker (key).
+      */
+    var markerSize: Double
+    
+    /**
+      * Shape of the legend marker (key).
+      * Possible values are:
+      * "square", "circle", "line", "dashedLine", "triangleUp", "triangleDown", "bubble", "none".
+      */
+    var markerType: String
+    
+    /**
+      * Specifies whether legend entries should be placed in reversed order.
+      */
+    var reversedOrder: Boolean
+    
+    /**
+      * Legend item text color on roll-over.
+      */
+    var rollOverColor: String
+    
+    /**
+      * When you roll-over the legend entry, all other graphs can reduce their opacity,
+      * so that the graph you rolled-over would be distinguished. This property specifies the opacity of the graphs.
+      */
+    var rollOverGraphAlpha: Double
+    
+    /**
+      * Legend switch color.
+      */
+    var switchColor: String
+    
+    /**
+      * Legend switch type (in case the legend is switchable). Possible values are: "x" and "v".
+      */
+    var switchType: String
+    
+    /**
+      * Whether showing/hiding of graphs by clicking on the legend marker is enabled or not.
+      */
+    var switchable: Boolean
+    
+    /**
+      * Specifies whether the legend text is clickable or not.
+      * Clicking on legend text can show/hide value balloons if they are enabled.
+      */
+    var textClickEnabled: Boolean
+    
+    /**
+      * Specifies if legend labels should be use same color as corresponding markers.
+      */
+    var useMarkerColorForLabels: Boolean
+    
+    /**
+      * The text which will be displayed in the value portion of the legend when graph is comparable and
+      * at least one dataSet is selected for comparing.
+      * You can use tags like [[value]], [[open]], [[high]], [[low]], [[close]], [[percents]], [[description]].
+      */
+    var valueTextComparing: String
+    
+    /**
+      * The text which will be displayed in the value portion of the legend.
+      * You can use tags like [[value]], [[open]], [[high]], [[low]], [[close]], [[percents]], [[description]].
+      */
+    var valueTextRegular: String
+    
+    /**
+      * Width of the value text. Increase this value if your values do not fit in the allocated space.
+      */
+    var valueWidth: Double
+    
+    /**
+      * Vertical space between legend items, in pixels.
+      */
+    var verticalGap: Double
   }
   object LegendSettings {
     

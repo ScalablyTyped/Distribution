@@ -2,22 +2,20 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableDescriptor extends StObject {
   
   // Inherited from Droppable
-  var droppableId: DroppableId = js.native
+  var droppableId: DroppableId
   
-  var id: DraggableId = js.native
+  var id: DraggableId
   
-  var index: Double = js.native
+  var index: Double
   
   // This is technically redundant but it avoids
   // needing to look up a parent droppable just to get its type
-  var `type`: TypeId = js.native
+  var `type`: TypeId
 }
 object DraggableDescriptor {
   

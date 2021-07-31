@@ -4,11 +4,11 @@ import typings.winrt.Windows.Networking.HostName
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StreamSocketInformation extends IStreamSocketInformation
+trait StreamSocketInformation
+  extends StObject
+     with IStreamSocketInformation
 object StreamSocketInformation {
   
   @scala.inline

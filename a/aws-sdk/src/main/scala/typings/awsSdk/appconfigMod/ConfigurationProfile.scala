@@ -2,46 +2,44 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationProfile extends StObject {
   
   /**
     * The application ID.
     */
-  var ApplicationId: js.UndefOr[Id] = js.native
+  var ApplicationId: js.UndefOr[Id] = js.undefined
   
   /**
     * The configuration profile description.
     */
-  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
     * The configuration profile ID.
     */
-  var Id: js.UndefOr[typings.awsSdk.appconfigMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.appconfigMod.Id] = js.undefined
   
   /**
     * The URI location of the configuration.
     */
-  var LocationUri: js.UndefOr[Uri] = js.native
+  var LocationUri: js.UndefOr[Uri] = js.undefined
   
   /**
     * The name of the configuration profile.
     */
-  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.undefined
   
   /**
     * The ARN of an IAM role with permission to access the configuration at the specified LocationUri.
     */
-  var RetrievalRoleArn: js.UndefOr[RoleArn] = js.native
+  var RetrievalRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * A list of methods for validating the configuration.
     */
-  var Validators: js.UndefOr[ValidatorList] = js.native
+  var Validators: js.UndefOr[ValidatorList] = js.undefined
 }
 object ConfigurationProfile {
   

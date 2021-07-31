@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.UsersListGpgKeysForAuthenticatedRespons
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersUsersListGpgKeysForAuthenticatedEndpoint extends StObject {
   
-  var parameters: UsersListGpgKeysForAuthenticatedEndpoint = js.native
+  var parameters: UsersListGpgKeysForAuthenticatedEndpoint
   
-  var request: UsersListGpgKeysForAuthenticatedRequestOptions = js.native
+  var request: UsersListGpgKeysForAuthenticatedRequestOptions
   
-  var response: OctokitResponse[UsersListGpgKeysForAuthenticatedResponseData] = js.native
+  var response: OctokitResponse[UsersListGpgKeysForAuthenticatedResponseData]
 }
 object ParametersUsersListGpgKeysForAuthenticatedEndpoint {
   

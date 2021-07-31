@@ -2,28 +2,29 @@ package typings.useSubscription
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("use-subscription", "useSubscription")
+  @JSImport("use-subscription", JSImport.Namespace)
   @js.native
-  def useSubscription[T](subscription: Subscription[T]): T = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useSubscription[T](subscription: Subscription[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useSubscription")(subscription.asInstanceOf[js.Any]).asInstanceOf[T]
+  
   trait Subscription[T] extends StObject {
     
     /**
       * (Synchronously) returns the current value of our subscription.
       */
-    def getCurrentValue(): T = js.native
+    def getCurrentValue(): T
     
     /**
       * This function is passed an event handler to attach to the subscription.
       * It must return an unsubscribe function that removes the handler.
       */
-    def subscribe(callback: js.Function0[Unit]): Unsubscribe = js.native
+    def subscribe(callback: js.Function0[Unit]): Unsubscribe
   }
   object Subscription {
     
@@ -34,7 +35,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription[_], T] (val x: Self with Subscription[T]) extends AnyVal {
+    implicit class SubscriptionMutableBuilder[Self <: Subscription[?], T] (val x: Self & Subscription[T]) extends AnyVal {
       
       @scala.inline
       def setGetCurrentValue(value: () => T): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))

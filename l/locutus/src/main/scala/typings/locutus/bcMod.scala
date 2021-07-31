@@ -2,153 +2,110 @@ package typings.locutus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bcMod {
   
-  @JSImport("locutus/php/bc", "bcadd")
+  @JSImport("locutus/php/bc", JSImport.Namespace)
   @js.native
-  def bcadd(): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcadd")
-  @js.native
-  def bcadd(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcadd")
-  @js.native
-  def bcadd(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcadd")
-  @js.native
-  def bcadd(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any, scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcadd")
-  @js.native
-  def bcadd(leftOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcadd")
-  @js.native
-  def bcadd(leftOperand: js.Any, rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcadd")
-  @js.native
-  def bcadd(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcadd")
-  @js.native
-  def bcadd(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("locutus/php/bc", "bccomp")
-  @js.native
-  def bccomp(): js.Any = js.native
-  @JSImport("locutus/php/bc", "bccomp")
-  @js.native
-  def bccomp(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bccomp")
-  @js.native
-  def bccomp(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bccomp")
-  @js.native
-  def bccomp(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any, scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bccomp")
-  @js.native
-  def bccomp(leftOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bccomp")
-  @js.native
-  def bccomp(leftOperand: js.Any, rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bccomp")
-  @js.native
-  def bccomp(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bccomp")
-  @js.native
-  def bccomp(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  @scala.inline
+  def bcadd(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcadd")().asInstanceOf[js.Any]
+  @scala.inline
+  def bcadd(leftOperand: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcadd")(leftOperand.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def bcadd(leftOperand: js.Any, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcadd")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcadd(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcadd")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcadd(leftOperand: js.Any, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcadd")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcadd(leftOperand: Unit, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcadd")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcadd(leftOperand: Unit, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcadd")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcadd(leftOperand: Unit, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcadd")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("locutus/php/bc", "bcdiv")
-  @js.native
-  def bcdiv(): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcdiv")
-  @js.native
-  def bcdiv(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcdiv")
-  @js.native
-  def bcdiv(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcdiv")
-  @js.native
-  def bcdiv(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any, scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcdiv")
-  @js.native
-  def bcdiv(leftOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcdiv")
-  @js.native
-  def bcdiv(leftOperand: js.Any, rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcdiv")
-  @js.native
-  def bcdiv(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcdiv")
-  @js.native
-  def bcdiv(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  @scala.inline
+  def bccomp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bccomp")().asInstanceOf[js.Any]
+  @scala.inline
+  def bccomp(leftOperand: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bccomp")(leftOperand.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def bccomp(leftOperand: js.Any, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bccomp")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bccomp(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bccomp")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bccomp(leftOperand: js.Any, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bccomp")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bccomp(leftOperand: Unit, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bccomp")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bccomp(leftOperand: Unit, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bccomp")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bccomp(leftOperand: Unit, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bccomp")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("locutus/php/bc", "bcmul")
-  @js.native
-  def bcmul(): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcmul")
-  @js.native
-  def bcmul(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcmul")
-  @js.native
-  def bcmul(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcmul")
-  @js.native
-  def bcmul(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any, scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcmul")
-  @js.native
-  def bcmul(leftOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcmul")
-  @js.native
-  def bcmul(leftOperand: js.Any, rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcmul")
-  @js.native
-  def bcmul(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcmul")
-  @js.native
-  def bcmul(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  @scala.inline
+  def bcdiv(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcdiv")().asInstanceOf[js.Any]
+  @scala.inline
+  def bcdiv(leftOperand: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcdiv")(leftOperand.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def bcdiv(leftOperand: js.Any, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcdiv")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcdiv(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcdiv")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcdiv(leftOperand: js.Any, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcdiv")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcdiv(leftOperand: Unit, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcdiv")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcdiv(leftOperand: Unit, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcdiv")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcdiv(leftOperand: Unit, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcdiv")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("locutus/php/bc", "bcround")
-  @js.native
-  def bcround(): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcround")
-  @js.native
-  def bcround(`val`: js.UndefOr[scala.Nothing], precision: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcround")
-  @js.native
-  def bcround(`val`: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcround")
-  @js.native
-  def bcround(`val`: js.Any, precision: js.Any): js.Any = js.native
+  @scala.inline
+  def bcmul(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcmul")().asInstanceOf[js.Any]
+  @scala.inline
+  def bcmul(leftOperand: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcmul")(leftOperand.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def bcmul(leftOperand: js.Any, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcmul")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcmul(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcmul")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcmul(leftOperand: js.Any, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcmul")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcmul(leftOperand: Unit, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcmul")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcmul(leftOperand: Unit, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcmul")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcmul(leftOperand: Unit, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcmul")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("locutus/php/bc", "bcscale")
-  @js.native
-  def bcscale(): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcscale")
-  @js.native
-  def bcscale(scale: js.Any): js.Any = js.native
+  @scala.inline
+  def bcround(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcround")().asInstanceOf[js.Any]
+  @scala.inline
+  def bcround(`val`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcround")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def bcround(`val`: js.Any, precision: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcround")(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcround(`val`: Unit, precision: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcround")(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("locutus/php/bc", "bcsub")
-  @js.native
-  def bcsub(): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcsub")
-  @js.native
-  def bcsub(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcsub")
-  @js.native
-  def bcsub(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcsub")
-  @js.native
-  def bcsub(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any, scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcsub")
-  @js.native
-  def bcsub(leftOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcsub")
-  @js.native
-  def bcsub(leftOperand: js.Any, rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcsub")
-  @js.native
-  def bcsub(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc", "bcsub")
-  @js.native
-  def bcsub(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  @scala.inline
+  def bcscale(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcscale")().asInstanceOf[js.Any]
+  @scala.inline
+  def bcscale(scale: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcscale")(scale.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def bcsub(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcsub")().asInstanceOf[js.Any]
+  @scala.inline
+  def bcsub(leftOperand: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bcsub")(leftOperand.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def bcsub(leftOperand: js.Any, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcsub")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcsub(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcsub")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcsub(leftOperand: js.Any, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcsub")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcsub(leftOperand: Unit, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcsub")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcsub(leftOperand: Unit, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcsub")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bcsub(leftOperand: Unit, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bcsub")(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

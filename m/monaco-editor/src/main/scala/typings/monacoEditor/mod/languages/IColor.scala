@@ -2,31 +2,29 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColor extends StObject {
   
   /**
     * The alpha component in the range [0-1].
     */
-  val alpha: Double = js.native
+  val alpha: Double
   
   /**
     * The blue component in the range [0-1].
     */
-  val blue: Double = js.native
+  val blue: Double
   
   /**
     * The green component in the range [0-1].
     */
-  val green: Double = js.native
+  val green: Double
   
   /**
     * The red component in the range [0-1].
     */
-  val red: Double = js.native
+  val red: Double
 }
 object IColor {
   

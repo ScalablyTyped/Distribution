@@ -2,43 +2,41 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationOutput extends StObject {
   
   /**
     * The ARN of the Kinesis Analytics Application.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The Kinesis Firehose configuration for the destination stream. Conflicts with `kinesisStream`.
     * See Kinesis Firehose below for more details.
     */
-  var kinesisFirehose: js.UndefOr[AnalyticsApplicationOutputKinesisFirehose] = js.native
+  var kinesisFirehose: js.UndefOr[AnalyticsApplicationOutputKinesisFirehose] = js.undefined
   
   /**
     * The Kinesis Stream configuration for the destination stream. Conflicts with `kinesisFirehose`.
     * See Kinesis Stream below for more details.
     */
-  var kinesisStream: js.UndefOr[AnalyticsApplicationOutputKinesisStream] = js.native
+  var kinesisStream: js.UndefOr[AnalyticsApplicationOutputKinesisStream] = js.undefined
   
   /**
     * The Lambda function destination. See Lambda below for more details.
     */
-  var lambda: js.UndefOr[AnalyticsApplicationOutputLambda] = js.native
+  var lambda: js.UndefOr[AnalyticsApplicationOutputLambda] = js.undefined
   
   /**
     * The Name of the in-application stream.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The Schema format of the data written to the destination. See Destination Schema below for more details.
     */
-  var schema: AnalyticsApplicationOutputSchema = js.native
+  var schema: AnalyticsApplicationOutputSchema
 }
 object AnalyticsApplicationOutput {
   

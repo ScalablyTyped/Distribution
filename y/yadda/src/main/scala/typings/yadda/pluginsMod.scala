@@ -2,17 +2,18 @@ package typings.yadda
 
 import typings.yadda.anon.TypeofScenarioLevelPlugin
 import typings.yadda.anon.TypeofStepLevelPlugin
-import typings.yadda.yaddaMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginsMod {
   
-  @JSImport("yadda/lib/plugins", "casper")
+  @JSImport("yadda/lib/plugins", JSImport.Namespace)
   @js.native
-  def casper(yadda: ^, casper: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def casper(yadda: typings.yadda.yaddaMod.^, casper: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("casper")(yadda.asInstanceOf[js.Any], casper.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("yadda/lib/plugins", "jasmine")
   @js.native
@@ -22,12 +23,11 @@ object pluginsMod {
   @js.native
   val mocha: MochaPlugin = js.native
   
-  @js.native
   trait MochaPlugin extends StObject {
     
-    var ScenarioLevelPlugin: TypeofScenarioLevelPlugin = js.native
+    var ScenarioLevelPlugin: TypeofScenarioLevelPlugin
     
-    var StepLevelPlugin: TypeofStepLevelPlugin = js.native
+    var StepLevelPlugin: TypeofStepLevelPlugin
   }
   object MochaPlugin {
     

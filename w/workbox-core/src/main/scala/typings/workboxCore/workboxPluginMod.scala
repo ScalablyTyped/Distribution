@@ -7,25 +7,23 @@ import typings.std.Request
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workboxPluginMod {
   
   type CacheDidUpdateCallback = js.Function1[/* param */ CacheDidUpdateCallbackParam, js.Promise[Unit]]
   
-  @js.native
   trait CacheDidUpdateCallbackParam extends StObject {
     
-    var cacheName: String = js.native
+    var cacheName: String
     
-    var event: js.UndefOr[Event] = js.native
+    var event: js.UndefOr[Event] = js.undefined
     
-    var newResponse: Response = js.native
+    var newResponse: Response
     
-    var oldResponse: js.UndefOr[Response | Null] = js.native
+    var oldResponse: js.UndefOr[Response | Null] = js.undefined
     
-    var request: Request = js.native
+    var request: Request
   }
   object CacheDidUpdateCallbackParam {
     
@@ -66,12 +64,11 @@ object workboxPluginMod {
   
   type CacheKeyWillBeUsedCallback = js.Function1[/* param */ CacheKeyWillBeUsedCallbackParam, js.Promise[Request | String]]
   
-  @js.native
   trait CacheKeyWillBeUsedCallbackParam extends StObject {
     
-    var mode: String = js.native
+    var mode: String
     
-    var request: Request = js.native
+    var request: Request
   }
   object CacheKeyWillBeUsedCallbackParam {
     
@@ -94,16 +91,15 @@ object workboxPluginMod {
   
   type CacheWillUpdateCallback = js.Function1[/* param */ CacheWillUpdateCallbackParamParam, js.Promise[js.UndefOr[Response]]]
   
-  @js.native
   trait CacheWillUpdateCallbackParamParam extends StObject {
     
     var event: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var request: Request = js.native
+    var request: Request
     
-    var response: Response = js.native
+    var response: Response
   }
   object CacheWillUpdateCallbackParamParam {
     
@@ -137,20 +133,19 @@ object workboxPluginMod {
     js.Promise[js.UndefOr[Response]]
   ]
   
-  @js.native
   trait CachedResponseWillBeUsedCallbackParam extends StObject {
     
-    var cacheName: String = js.native
+    var cacheName: String
     
-    var cachedResponse: js.UndefOr[Response] = js.native
+    var cachedResponse: js.UndefOr[Response] = js.undefined
     
     var event: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var matchOptions: js.UndefOr[CacheQueryOptions] = js.native
+    var matchOptions: js.UndefOr[CacheQueryOptions] = js.undefined
     
-    var request: Request = js.native
+    var request: Request
   }
   object CachedResponseWillBeUsedCallbackParam {
     
@@ -193,18 +188,17 @@ object workboxPluginMod {
   
   type FetchDidFailCallback = js.Function1[/* param */ FetchDidFailCallbackParam, js.Promise[Unit]]
   
-  @js.native
   trait FetchDidFailCallbackParam extends StObject {
     
-    var error: Error = js.native
+    var error: Error
     
     var event: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var originalRequest: Request = js.native
+    var originalRequest: Request
     
-    var request: Request = js.native
+    var request: Request
   }
   object FetchDidFailCallbackParam {
     
@@ -238,12 +232,11 @@ object workboxPluginMod {
   
   type FetchDidSucceedCallback = js.Function1[/* param */ FetchDidSucceedCallbackParam, js.Promise[Response]]
   
-  @js.native
   trait FetchDidSucceedCallbackParam extends StObject {
     
-    var request: Request = js.native
+    var request: Request
     
-    var response: Response = js.native
+    var response: Response
   }
   object FetchDidSucceedCallbackParam {
     
@@ -266,10 +259,9 @@ object workboxPluginMod {
   
   type RequestWillFetchCallback = js.Function1[/* param */ RequestWillFetchCallbackParam, js.Promise[js.UndefOr[Request]]]
   
-  @js.native
   trait RequestWillFetchCallbackParam extends StObject {
     
-    var request: Request = js.native
+    var request: Request
   }
   object RequestWillFetchCallbackParam {
     
@@ -287,22 +279,21 @@ object workboxPluginMod {
     }
   }
   
-  @js.native
   trait WorkboxPlugin extends StObject {
     
-    var cacheDidUpdate: js.UndefOr[CacheDidUpdateCallback] = js.native
+    var cacheDidUpdate: js.UndefOr[CacheDidUpdateCallback] = js.undefined
     
-    var cacheKeyWillBeUsed: js.UndefOr[CacheKeyWillBeUsedCallback] = js.native
+    var cacheKeyWillBeUsed: js.UndefOr[CacheKeyWillBeUsedCallback] = js.undefined
     
-    var cacheWillUpdate: js.UndefOr[CacheWillUpdateCallback] = js.native
+    var cacheWillUpdate: js.UndefOr[CacheWillUpdateCallback] = js.undefined
     
-    var cachedResponseWillBeUsed: js.UndefOr[CachedResponseWillBeUsedCallback] = js.native
+    var cachedResponseWillBeUsed: js.UndefOr[CachedResponseWillBeUsedCallback] = js.undefined
     
-    var fetchDidFail: js.UndefOr[FetchDidFailCallback] = js.native
+    var fetchDidFail: js.UndefOr[FetchDidFailCallback] = js.undefined
     
-    var fetchDidSucceed: js.UndefOr[FetchDidSucceedCallback] = js.native
+    var fetchDidSucceed: js.UndefOr[FetchDidSucceedCallback] = js.undefined
     
-    var requestWillFetch: js.UndefOr[RequestWillFetchCallback] = js.native
+    var requestWillFetch: js.UndefOr[RequestWillFetchCallback] = js.undefined
   }
   object WorkboxPlugin {
     

@@ -4,7 +4,6 @@ import typings.eventemitter3.mod.ListenerFn
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventEmitterTypesMod {
@@ -21,39 +20,38 @@ object eventEmitterTypesMod {
     def emitAsync(event: js.Symbol, args: js.Any*): js.Promise[Boolean] | Unit = js.native
     
     def off(event: String): this.type = js.native
-    def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-    def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-    def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
-    def off(event: String, fn: ListenerFn[js.Array[_]]): this.type = js.native
-    def off(event: String, fn: ListenerFn[js.Array[_]], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-    def off(event: String, fn: ListenerFn[js.Array[_]], context: js.Any): this.type = js.native
-    def off(event: String, fn: ListenerFn[js.Array[_]], context: js.Any, once: Boolean): this.type = js.native
+    def off(event: String, fn: Unit, context: js.Any): this.type = js.native
+    def off(event: String, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
+    def off(event: String, fn: ListenerFn[js.Array[js.Any]]): this.type = js.native
+    def off(event: String, fn: ListenerFn[js.Array[js.Any]], context: js.Any): this.type = js.native
+    def off(event: String, fn: ListenerFn[js.Array[js.Any]], context: js.Any, once: Boolean): this.type = js.native
+    def off(event: String, fn: ListenerFn[js.Array[js.Any]], context: Unit, once: Boolean): this.type = js.native
     
-    def on(event: String, fn: ListenerFn[js.Array[_]]): this.type = js.native
-    def on(event: String, fn: ListenerFn[js.Array[_]], context: js.Any): this.type = js.native
+    def on(event: String, fn: ListenerFn[js.Array[js.Any]]): this.type = js.native
+    def on(event: String, fn: ListenerFn[js.Array[js.Any]], context: js.Any): this.type = js.native
   }
   
-  @js.native
   trait IEventEmitterAPI extends StObject {
     
     var off: js.UndefOr[
         js.Function4[
           /* event */ String, 
-          /* fn */ js.UndefOr[ListenerFn[js.Array[_]]], 
+          /* fn */ js.UndefOr[ListenerFn[js.Array[js.Any]]], 
           /* context */ js.UndefOr[js.Any], 
           /* once */ js.UndefOr[Boolean], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     var on: js.UndefOr[
         js.Function3[
           /* event */ String, 
-          /* fn */ ListenerFn[js.Array[_]], 
+          /* fn */ ListenerFn[js.Array[js.Any]], 
           /* context */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IEventEmitterAPI {
     
@@ -68,7 +66,7 @@ object eventEmitterTypesMod {
       
       @scala.inline
       def setOff(
-        value: (/* event */ String, /* fn */ js.UndefOr[ListenerFn[js.Array[_]]], /* context */ js.UndefOr[js.Any], /* once */ js.UndefOr[Boolean]) => IEventEmitterAPI
+        value: (/* event */ String, /* fn */ js.UndefOr[ListenerFn[js.Array[js.Any]]], /* context */ js.UndefOr[js.Any], /* once */ js.UndefOr[Boolean]) => IEventEmitterAPI
       ): Self = StObject.set(x, "off", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -76,7 +74,7 @@ object eventEmitterTypesMod {
       
       @scala.inline
       def setOn(
-        value: (/* event */ String, /* fn */ ListenerFn[js.Array[_]], /* context */ js.UndefOr[js.Any]) => IEventEmitterAPI
+        value: (/* event */ String, /* fn */ ListenerFn[js.Array[js.Any]], /* context */ js.UndefOr[js.Any]) => IEventEmitterAPI
       ): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -86,5 +84,6 @@ object eventEmitterTypesMod {
   
   @js.native
   trait IEventMap
-    extends Array[js.Any]
+    extends StObject
+       with Array[js.Any]
 }

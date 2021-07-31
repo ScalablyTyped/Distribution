@@ -2,16 +2,14 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentMetadata extends StObject {
   
   /**
     * The number of pages that are detected in the document.
     */
-  var Pages: js.UndefOr[UInteger] = js.native
+  var Pages: js.UndefOr[UInteger] = js.undefined
 }
 object DocumentMetadata {
   

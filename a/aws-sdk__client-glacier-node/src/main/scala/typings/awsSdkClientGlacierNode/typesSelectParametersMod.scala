@@ -7,33 +7,31 @@ import typings.awsSdkClientGlacierNode.typesOutputSerializationMod.OutputSeriali
 import typings.awsSdkClientGlacierNode.typesOutputSerializationMod.UnmarshalledOutputSerialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSelectParametersMod {
   
-  @js.native
   trait SelectParameters extends StObject {
     
     /**
       * <p>The expression that is used to select the object.</p>
       */
-    var Expression: js.UndefOr[String] = js.native
+    var Expression: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The type of the provided expression, for example <code>SQL</code>.</p>
       */
-    var ExpressionType: js.UndefOr[SQL | String] = js.native
+    var ExpressionType: js.UndefOr[SQL | String] = js.undefined
     
     /**
       * <p>Describes the serialization format of the object.</p>
       */
-    var InputSerialization: js.UndefOr[typings.awsSdkClientGlacierNode.typesInputSerializationMod.InputSerialization] = js.native
+    var InputSerialization: js.UndefOr[typings.awsSdkClientGlacierNode.typesInputSerializationMod.InputSerialization] = js.undefined
     
     /**
       * <p>Describes how the results of the select job are serialized.</p>
       */
-    var OutputSerialization: js.UndefOr[typings.awsSdkClientGlacierNode.typesOutputSerializationMod.OutputSerialization] = js.native
+    var OutputSerialization: js.UndefOr[typings.awsSdkClientGlacierNode.typesOutputSerializationMod.OutputSerialization] = js.undefined
   }
   object SelectParameters {
     
@@ -72,20 +70,21 @@ object typesSelectParametersMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSelectParameters extends SelectParameters {
+  trait UnmarshalledSelectParameters
+    extends StObject
+       with SelectParameters {
     
     /**
       * <p>Describes the serialization format of the object.</p>
       */
     @JSName("InputSerialization")
-    var InputSerialization_UnmarshalledSelectParameters: js.UndefOr[UnmarshalledInputSerialization] = js.native
+    var InputSerialization_UnmarshalledSelectParameters: js.UndefOr[UnmarshalledInputSerialization] = js.undefined
     
     /**
       * <p>Describes how the results of the select job are serialized.</p>
       */
     @JSName("OutputSerialization")
-    var OutputSerialization_UnmarshalledSelectParameters: js.UndefOr[UnmarshalledOutputSerialization] = js.native
+    var OutputSerialization_UnmarshalledSelectParameters: js.UndefOr[UnmarshalledOutputSerialization] = js.undefined
   }
   object UnmarshalledSelectParameters {
     

@@ -5,19 +5,17 @@ import typings.devextreme.mod.DevExpress.viz.dxTreeMap
 import typings.devextreme.mod.DevExpress.viz.dxTreeMapNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelRoot extends StObject {
   
-  var component: js.UndefOr[dxTreeMap] = js.native
+  var component: js.UndefOr[dxTreeMap] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var root: js.UndefOr[dxTreeMapNode] = js.native
+  var root: js.UndefOr[dxTreeMapNode] = js.undefined
 }
 object ModelRoot {
   

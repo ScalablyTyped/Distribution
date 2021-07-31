@@ -2,113 +2,111 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHsmResponse extends StObject {
   
   /**
     * The Availability Zone that the HSM is in.
     */
-  var AvailabilityZone: js.UndefOr[AZ] = js.native
+  var AvailabilityZone: js.UndefOr[AZ] = js.undefined
   
   /**
     * The identifier of the elastic network interface (ENI) attached to the HSM.
     */
-  var EniId: js.UndefOr[typings.awsSdk.cloudhsmMod.EniId] = js.native
+  var EniId: js.UndefOr[typings.awsSdk.cloudhsmMod.EniId] = js.undefined
   
   /**
     * The IP address assigned to the HSM's ENI.
     */
-  var EniIp: js.UndefOr[IpAddress] = js.native
+  var EniIp: js.UndefOr[IpAddress] = js.undefined
   
   /**
     * The ARN of the HSM.
     */
-  var HsmArn: js.UndefOr[typings.awsSdk.cloudhsmMod.HsmArn] = js.native
+  var HsmArn: js.UndefOr[typings.awsSdk.cloudhsmMod.HsmArn] = js.undefined
   
   /**
     * The HSM model type.
     */
-  var HsmType: js.UndefOr[String] = js.native
+  var HsmType: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the IAM role assigned to the HSM.
     */
-  var IamRoleArn: js.UndefOr[typings.awsSdk.cloudhsmMod.IamRoleArn] = js.native
+  var IamRoleArn: js.UndefOr[typings.awsSdk.cloudhsmMod.IamRoleArn] = js.undefined
   
   /**
     * The list of partitions on the HSM.
     */
-  var Partitions: js.UndefOr[PartitionList] = js.native
+  var Partitions: js.UndefOr[PartitionList] = js.undefined
   
   /**
     * The serial number of the HSM.
     */
-  var SerialNumber: js.UndefOr[HsmSerialNumber] = js.native
+  var SerialNumber: js.UndefOr[HsmSerialNumber] = js.undefined
   
   /**
     * The date and time that the server certificate was last updated.
     */
-  var ServerCertLastUpdated: js.UndefOr[Timestamp] = js.native
+  var ServerCertLastUpdated: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The URI of the certificate server.
     */
-  var ServerCertUri: js.UndefOr[String] = js.native
+  var ServerCertUri: js.UndefOr[String] = js.undefined
   
   /**
     * The HSM software version.
     */
-  var SoftwareVersion: js.UndefOr[String] = js.native
+  var SoftwareVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the SSH key was last updated.
     */
-  var SshKeyLastUpdated: js.UndefOr[Timestamp] = js.native
+  var SshKeyLastUpdated: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The public SSH key.
     */
-  var SshPublicKey: js.UndefOr[SshKey] = js.native
+  var SshPublicKey: js.UndefOr[SshKey] = js.undefined
   
   /**
     * The status of the HSM.
     */
-  var Status: js.UndefOr[HsmStatus] = js.native
+  var Status: js.UndefOr[HsmStatus] = js.undefined
   
   /**
     * Contains additional information about the status of the HSM.
     */
-  var StatusDetails: js.UndefOr[String] = js.native
+  var StatusDetails: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of the subnet that the HSM is in.
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.cloudhsmMod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.cloudhsmMod.SubnetId] = js.undefined
   
   /**
     * The subscription end date.
     */
-  var SubscriptionEndDate: js.UndefOr[Timestamp] = js.native
+  var SubscriptionEndDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The subscription start date.
     */
-  var SubscriptionStartDate: js.UndefOr[Timestamp] = js.native
+  var SubscriptionStartDate: js.UndefOr[Timestamp] = js.undefined
   
-  var SubscriptionType: js.UndefOr[typings.awsSdk.cloudhsmMod.SubscriptionType] = js.native
+  var SubscriptionType: js.UndefOr[typings.awsSdk.cloudhsmMod.SubscriptionType] = js.undefined
   
   /**
     * The name of the HSM vendor.
     */
-  var VendorName: js.UndefOr[String] = js.native
+  var VendorName: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of the VPC that the HSM is in.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.cloudhsmMod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.cloudhsmMod.VpcId] = js.undefined
 }
 object DescribeHsmResponse {
   

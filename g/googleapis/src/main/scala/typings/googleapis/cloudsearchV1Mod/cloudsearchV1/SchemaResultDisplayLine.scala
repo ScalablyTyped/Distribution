@@ -2,16 +2,14 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The collection of fields that make up a displayed line
   */
-@js.native
 trait SchemaResultDisplayLine extends StObject {
   
-  var fields: js.UndefOr[js.Array[SchemaResultDisplayField]] = js.native
+  var fields: js.UndefOr[js.Array[SchemaResultDisplayField]] = js.undefined
 }
 object SchemaResultDisplayLine {
   

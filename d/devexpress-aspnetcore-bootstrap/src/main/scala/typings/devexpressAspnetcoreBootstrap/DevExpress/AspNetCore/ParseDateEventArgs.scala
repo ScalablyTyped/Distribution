@@ -3,17 +3,17 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParseDateEventArgs extends EventArgs {
+trait ParseDateEventArgs
+  extends StObject
+     with EventArgs {
   
-  val date: Date = js.native
+  val date: Date
   
-  val handled: Boolean = js.native
+  val handled: Boolean
   
-  val value: String = js.native
+  val value: String
 }
 object ParseDateEventArgs {
   

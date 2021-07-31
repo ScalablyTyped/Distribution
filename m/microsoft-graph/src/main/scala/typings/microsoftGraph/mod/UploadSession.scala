@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadSession extends StObject {
   
   /**
     * The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration
     * time is reached.
     */
-  var expirationDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var expirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format
@@ -20,10 +18,10 @@ trait UploadSession extends StObject {
     * instead of a collection of ranges, this property always indicates a single value '{start}', the location in the file
     * where the next upload should begin.
     */
-  var nextExpectedRanges: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var nextExpectedRanges: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // The URL endpoint that accepts PUT requests for byte ranges of the file.
-  var uploadUrl: js.UndefOr[NullableOption[String]] = js.native
+  var uploadUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object UploadSession {
   

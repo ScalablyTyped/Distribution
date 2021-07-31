@@ -2,23 +2,21 @@ package typings.assert
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Actual extends StObject {
     
-    var actual: js.UndefOr[js.Any] = js.native
+    var actual: js.UndefOr[js.Any] = js.undefined
     
-    var expected: js.UndefOr[js.Any] = js.native
+    var expected: js.UndefOr[js.Any] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var operator: js.UndefOr[String] = js.native
+    var operator: js.UndefOr[String] = js.undefined
     
-    var stackStartFunction: js.UndefOr[js.Function0[Unit]] = js.native
+    var stackStartFunction: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Actual {
     

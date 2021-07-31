@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionGroupMembership extends StObject {
   
   /**
     * The name of the option group that the instance belongs to.
     */
-  var OptionGroupName: js.UndefOr[String] = js.native
+  var OptionGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the DB instance's option group membership. Valid values are: in-sync, pending-apply, pending-removal, pending-maintenance-apply, pending-maintenance-removal, applying, removing, and failed. 
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object OptionGroupMembership {
   

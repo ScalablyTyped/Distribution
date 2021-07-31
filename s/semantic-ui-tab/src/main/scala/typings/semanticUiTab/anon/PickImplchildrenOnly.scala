@@ -2,14 +2,12 @@ package typings.semanticUiTab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, 'childrenOnly'> */
-@js.native
 trait PickImplchildrenOnly extends StObject {
   
-  var childrenOnly: Boolean = js.native
+  var childrenOnly: Boolean
 }
 object PickImplchildrenOnly {
   

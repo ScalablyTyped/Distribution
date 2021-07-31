@@ -10,7 +10,6 @@ import typings.std.Exclude
 import typings.std.KeyAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -34,14 +33,13 @@ object platformKeys {
     * Analogous to TLS1.1's CertificateRequest.
     * @see{@link http://tools.ietf.org/html/rfc4346#section-7.4.4}
     */
-  @js.native
   trait ClientCertificateRequest extends StObject {
     
     /**
       * List of distinguished names of certificate authorities allowed by the
       * server. Each entry must be a DER-encoded X.509 DistinguishedName.
       */
-    var certificateAuthorities: js.Array[ArrayBuffer] = js.native
+    var certificateAuthorities: js.Array[ArrayBuffer]
     
     /**
       * This field is a list of the types of certificates requested, sorted in
@@ -56,7 +54,7 @@ object platformKeys {
           /* keyof chrome-apps.anon.ECDSASIGN */ RSA_SIGN | ECDSA_SIGN, 
           Exclude[/* keyof chrome-apps.anon.ECDSASIGN */ RSA_SIGN | ECDSA_SIGN, rsaSign | ecdsaSign]
         ]
-      ] = js.native
+      ]
   }
   object ClientCertificateRequest {
     
@@ -106,11 +104,10 @@ object platformKeys {
     }
   }
   
-  @js.native
   trait Match extends StObject {
     
     /** The DER encoding of a X.509 certificate. */
-    var certificate: ArrayBuffer = js.native
+    var certificate: ArrayBuffer
     
     /**
       * @see[KeyAlgorithm]{@link http://www.w3.org/TR/WebCryptoAPI/#key-algorithm-interface}
@@ -119,7 +116,7 @@ object platformKeys {
       * parameters that are inherent to the key of the certificate (e.g. the key
       * length). Other parameters like the hash function used by the sign
       * function are not included. */
-    var keyAlgorithm: KeyAlgorithm = js.native
+    var keyAlgorithm: KeyAlgorithm
   }
   object Match {
     
@@ -140,7 +137,6 @@ object platformKeys {
     }
   }
   
-  @js.native
   trait SelectDetails extends StObject {
     
     /**
@@ -150,17 +146,17 @@ object platformKeys {
       * Entries that the extension doesn't have permission for or which doesn't
       * match the request, are removed.
       */
-    var clientCerts: js.UndefOr[js.Array[ArrayBuffer]] = js.native
+    var clientCerts: js.UndefOr[js.Array[ArrayBuffer]] = js.undefined
     
     /** If true, the filtered list is presented to the user to manually select a
       * certificate and thereby granting the extension access to the
       * certificate(s) and key(s).Only the selected certificate(s) will be
       * returned. If is false, the list is reduced to all certificates that the
       * extension has been granted access to (automatically or manually). */
-    var interactive: Boolean = js.native
+    var interactive: Boolean
     
     /** Only certificates that match this request will be returned. */
-    var request: ClientCertificateRequest = js.native
+    var request: ClientCertificateRequest
   }
   object SelectDetails {
     
@@ -190,17 +186,16 @@ object platformKeys {
     }
   }
   
-  @js.native
   trait VerificationDetails extends StObject {
     
     // The hostname of the server to verify the certificate for, e.g. the server
     // that presented the *serverCertificateChain*.
-    var hostname: String = js.native
+    var hostname: String
     
     // Each chain entry must be the DER encoding of a X.509 certificate, the
     // first entry must be the server certificate and each entry must certify
     // the entry preceding it.
-    var serverCertificateChain: js.Array[ArrayBuffer] = js.native
+    var serverCertificateChain: js.Array[ArrayBuffer]
   }
   object VerificationDetails {
     
@@ -224,7 +219,6 @@ object platformKeys {
     }
   }
   
-  @js.native
   trait VerificationResult extends StObject {
     
     /**
@@ -235,14 +229,14 @@ object platformKeys {
       * revisions of this API, and are not guaranteed to be forwards or backwards
       * compatible.
       */
-    var debug_errors: js.Array[String] = js.native
+    var debug_errors: js.Array[String]
     
     /**
       * The result of the trust verification: true if trust for the given
       * verification details could be established and false if trust is rejected
       * for any reason*
       */
-    var trusted: Boolean = js.native
+    var trusted: Boolean
   }
   object VerificationResult {
     

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.traverson.mod.Traverson.TraversonMethods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,120 +14,119 @@ object mod extends Shortcut {
   
   object Traverson {
     
-    @js.native
     trait Builder extends StObject {
       
-      def addRequestOptions(options: js.Any): Builder = js.native
+      def addRequestOptions(options: js.Any): Builder
       
-      def convertResponseToObject(): Builder = js.native
+      def convertResponseToObject(): Builder
       
-      def convertsResponseToObject(): Boolean = js.native
+      def convertsResponseToObject(): Boolean
       
       def del(
         callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
-      ): InAction = js.native
+      ): InAction
       
       def delete(
         callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
-      ): InAction = js.native
+      ): InAction
       
-      def disableAutoHeaders(): Builder = js.native
+      def disableAutoHeaders(): Builder
       
-      def doesContentNegotiation(): Boolean = js.native
+      def doesContentNegotiation(): Boolean
       
-      def doesPreferEmbeddedResources(): Boolean = js.native
+      def doesPreferEmbeddedResources(): Boolean
       
-      def doesResolveRelative(): Boolean = js.native
+      def doesResolveRelative(): Boolean
       
-      def enableAutoHeaders(): Builder = js.native
+      def enableAutoHeaders(): Builder
       
-      def follow(first_pattern: String, rest_patterns: String*): Builder = js.native
+      def follow(first_pattern: String, rest_patterns: String*): Builder
       
-      def followLocationHeader(): Builder = js.native
+      def followLocationHeader(): Builder
       
-      def from(url: String): Builder = js.native
+      def from(url: String): Builder
       
       def get(
         callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
-      ): InAction = js.native
+      ): InAction
       
-      def getFrom(): String = js.native
+      def getFrom(): String
       
-      def getJsonParser(): js.Any = js.native
+      def getJsonParser(): js.Any
       
-      def getLinkType(): String = js.native
+      def getLinkType(): String
       
-      def getMediaType(): String = js.native
+      def getMediaType(): String
       
-      def getRequestLibrary(): js.Any = js.native
+      def getRequestLibrary(): js.Any
       
-      def getRequestOptions(): js.Any = js.native
+      def getRequestOptions(): js.Any
       
       def getResource(
         callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
-      ): InAction = js.native
+      ): InAction
       
-      def getTemplateParameters(): js.Any = js.native
+      def getTemplateParameters(): js.Any
       
       def getUri(
         callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
-      ): InAction = js.native
+      ): InAction
       
       def getUrl(
         callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
-      ): InAction = js.native
+      ): InAction
       
-      def json(): Builder = js.native
+      def json(): Builder
       
-      def jsonHal(): Builder = js.native
+      def jsonHal(): Builder
       
       // Alias for delete()
-      def linkHeader(): Builder = js.native
+      def linkHeader(): Builder
       
-      def newRequest(): Builder = js.native
+      def newRequest(): Builder
       
-      def parseResponseBodiesWith(parser: js.Any): Builder = js.native
+      def parseResponseBodiesWith(parser: js.Any): Builder
       
       def patch(
         data: js.Any,
         callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
-      ): InAction = js.native
+      ): InAction
       
       // Alias for getUrl()
       def post(
         data: js.Any,
         callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
-      ): InAction = js.native
+      ): InAction
       
-      def preferEmbeddedResources(flag: js.Any): Builder = js.native
+      def preferEmbeddedResources(flag: js.Any): Builder
       
       def put(
         data: js.Any,
         callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
-      ): InAction = js.native
+      ): InAction
       
-      def resolveRelative(flag: js.Any): Builder = js.native
+      def resolveRelative(flag: js.Any): Builder
       
-      def sendRawPayload(flag: js.Any): Builder = js.native
+      def sendRawPayload(flag: js.Any): Builder
       
-      def sendsRawPayload(): Boolean = js.native
+      def sendsRawPayload(): Boolean
       
-      def setMediaType(type_name: String): Builder = js.native
+      def setMediaType(type_name: String): Builder
       
-      def setsAutoHeaders(): Boolean = js.native
+      def setsAutoHeaders(): Boolean
       
-      def useAutoHeaders(flag: js.Any): Builder = js.native
+      def useAutoHeaders(flag: js.Any): Builder
       
-      def useContentNegotiation(): Builder = js.native
+      def useContentNegotiation(): Builder
       
-      def walk(first_pattern: String, rest_patterns: String*): Builder = js.native
+      def walk(first_pattern: String, rest_patterns: String*): Builder
       
-      def withRequestLibrary(request: js.Any): Builder = js.native
+      def withRequestLibrary(request: js.Any): Builder
       
-      def withRequestOptions(options: js.Any): Builder = js.native
+      def withRequestOptions(options: js.Any): Builder
       
       // Alias for follow()
-      def withTemplateParameters(parameters: js.Any): Builder = js.native
+      def withTemplateParameters(parameters: js.Any): Builder
     }
     object Builder {
       
@@ -338,10 +336,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait InAction extends StObject {
       
-      def abort(): Unit = js.native
+      def abort(): Unit
     }
     object InAction {
       
@@ -359,10 +356,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Json extends StObject {
       
-      def parseJson(): js.Any = js.native
+      def parseJson(): js.Any
     }
     object Json {
       
@@ -380,10 +376,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Traversal extends StObject {
       
-      def continue(): Builder = js.native
+      def continue(): Builder
     }
     object Traversal {
       
@@ -401,22 +396,21 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait TraversonMethods extends StObject {
       
-      def errors(): TraversonMethods = js.native
+      def errors(): TraversonMethods
       
-      def from(uri: String): Builder = js.native
+      def from(uri: String): Builder
       
-      def json(): Builder = js.native
+      def json(): Builder
       
-      def jsonHal(): Builder = js.native
+      def jsonHal(): Builder
       
-      def mediaTypes(): TraversonMethods = js.native
+      def mediaTypes(): TraversonMethods
       
-      def newRequest(): Builder = js.native
+      def newRequest(): Builder
       
-      def registerMediaType(name: String, handler: js.Any): TraversonMethods = js.native
+      def registerMediaType(name: String, handler: js.Any): TraversonMethods
     }
     object TraversonMethods {
       

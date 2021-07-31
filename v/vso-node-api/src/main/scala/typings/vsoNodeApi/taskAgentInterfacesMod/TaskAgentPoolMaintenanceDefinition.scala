@@ -2,42 +2,40 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentPoolMaintenanceDefinition extends StObject {
   
   /**
     * Enable maintenance
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Id
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Maintenance job timeout per agent
     */
-  var jobTimeoutInMinutes: Double = js.native
+  var jobTimeoutInMinutes: Double
   
   /**
     * Max percentage of agents within a pool running maintenance job at given time
     */
-  var maxConcurrentAgentsPercentage: Double = js.native
+  var maxConcurrentAgentsPercentage: Double
   
-  var options: TaskAgentPoolMaintenanceOptions = js.native
+  var options: TaskAgentPoolMaintenanceOptions
   
   /**
     * Pool reference for the maintenance definition
     */
-  var pool: TaskAgentPoolReference = js.native
+  var pool: TaskAgentPoolReference
   
-  var retentionPolicy: TaskAgentPoolMaintenanceRetentionPolicy = js.native
+  var retentionPolicy: TaskAgentPoolMaintenanceRetentionPolicy
   
-  var scheduleSetting: TaskAgentPoolMaintenanceSchedule = js.native
+  var scheduleSetting: TaskAgentPoolMaintenanceSchedule
 }
 object TaskAgentPoolMaintenanceDefinition {
   

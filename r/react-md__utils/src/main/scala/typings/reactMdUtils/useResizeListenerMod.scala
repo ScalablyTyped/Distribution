@@ -5,16 +5,17 @@ import typings.std.Event
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useResizeListenerMod {
   
-  @JSImport("@react-md/utils/types/sizing/useResizeListener", "useResizeListener")
+  @JSImport("@react-md/utils/types/sizing/useResizeListener", JSImport.Namespace)
   @js.native
-  def useResizeListener(hasOnResizeOptionsImmediateEnabled: ResizeListenerOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useResizeListener(hasOnResizeOptionsImmediateEnabled: ResizeListenerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeListener")(hasOnResizeOptionsImmediateEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait ResizeListenerOptions extends StObject {
     
     /**
@@ -22,7 +23,7 @@ object useResizeListenerMod {
       * to `true` or `false` to add/remove the event listeners. The event listeners
       * will *always* be removed when the parent component is unmounted though.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the resize event handler should be called immediately once the
@@ -30,17 +31,17 @@ object useResizeListenerMod {
       * `onResize` event immediately client side and can never be invoked server
       * side since it resize on the `window` to dispatch a `UIEvent`.
       */
-    var immediate: js.UndefOr[Boolean] = js.native
+    var immediate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function to call when the app is resized.
       */
-    var onResize: EventListener = js.native
+    var onResize: EventListener
     
     /**
       * Any event listener options to use when attaching the event.
       */
-    var options: js.UndefOr[Boolean | AddEventListenerOptions] = js.native
+    var options: js.UndefOr[Boolean | AddEventListenerOptions] = js.undefined
   }
   object ResizeListenerOptions {
     

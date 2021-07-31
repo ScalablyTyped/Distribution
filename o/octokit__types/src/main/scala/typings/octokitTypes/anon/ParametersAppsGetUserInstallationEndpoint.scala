@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.AppsGetUserInstallationResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersAppsGetUserInstallationEndpoint extends StObject {
   
-  var parameters: AppsGetUserInstallationEndpoint = js.native
+  var parameters: AppsGetUserInstallationEndpoint
   
-  var request: AppsGetUserInstallationRequestOptions = js.native
+  var request: AppsGetUserInstallationRequestOptions
   
-  var response: OctokitResponse[AppsGetUserInstallationResponseData] = js.native
+  var response: OctokitResponse[AppsGetUserInstallationResponseData]
 }
 object ParametersAppsGetUserInstallationEndpoint {
   

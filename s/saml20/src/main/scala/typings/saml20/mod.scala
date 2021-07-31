@@ -3,31 +3,31 @@ package typings.saml20
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("saml20", "parse")
+  @JSImport("saml20", JSImport.Namespace)
   @js.native
-  def parse(rawAssertion: String, cb: ParseCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("saml20", "validate")
-  @js.native
-  def validate(rawAssertion: String, options: ValidationOptions, cb: ParseCallback): Unit = js.native
+  @scala.inline
+  def parse(rawAssertion: String, cb: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(rawAssertion.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def validate(rawAssertion: String, options: ValidationOptions, cb: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(rawAssertion.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type ParseCallback = js.Function3[/* err */ Error | Null, /* profile */ Profile, /* version */ String, Unit]
   
-  @js.native
   trait Profile extends StObject {
     
-    var audience: js.UndefOr[String] = js.native
+    var audience: js.UndefOr[String] = js.undefined
     
-    var claims: js.Any = js.native
+    var claims: js.Any
     
-    var issuer: String = js.native
+    var issuer: String
     
-    var sessionIndex: js.UndefOr[String] = js.native
+    var sessionIndex: js.UndefOr[String] = js.undefined
   }
   object Profile {
     
@@ -80,14 +80,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait ValidationOptionsWithKey extends ValidationOptions {
+  trait ValidationOptionsWithKey
+    extends StObject
+       with ValidationOptions {
     
-    var audience: js.UndefOr[js.Any] = js.native
+    var audience: js.UndefOr[js.Any] = js.undefined
     
-    var bypassExpiration: js.UndefOr[Boolean] = js.native
+    var bypassExpiration: js.UndefOr[Boolean] = js.undefined
     
-    var publicKey: String = js.native
+    var publicKey: String
   }
   object ValidationOptionsWithKey {
     
@@ -117,14 +118,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait ValidationOptionsWithPrint extends ValidationOptions {
+  trait ValidationOptionsWithPrint
+    extends StObject
+       with ValidationOptions {
     
-    var audience: js.UndefOr[js.Any] = js.native
+    var audience: js.UndefOr[js.Any] = js.undefined
     
-    var bypassExpiration: js.UndefOr[Boolean] = js.native
+    var bypassExpiration: js.UndefOr[Boolean] = js.undefined
     
-    var thumbprint: String = js.native
+    var thumbprint: String
   }
   object ValidationOptionsWithPrint {
     

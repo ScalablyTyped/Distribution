@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Properties and contents of each row in a table.
   */
-@js.native
 trait SchemaTableRow extends StObject {
   
   /**
     * Height of a row.
     */
-  var rowHeight: js.UndefOr[SchemaDimension] = js.native
+  var rowHeight: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * Properties and contents of each cell.  Cells that span multiple columns
@@ -22,12 +20,12 @@ trait SchemaTableRow extends StObject {
     * the length of this collection does not always match the number of columns
     * of the entire table.
     */
-  var tableCells: js.UndefOr[js.Array[SchemaTableCell]] = js.native
+  var tableCells: js.UndefOr[js.Array[SchemaTableCell]] = js.undefined
   
   /**
     * Properties of the row.
     */
-  var tableRowProperties: js.UndefOr[SchemaTableRowProperties] = js.native
+  var tableRowProperties: js.UndefOr[SchemaTableRowProperties] = js.undefined
 }
 object SchemaTableRow {
   

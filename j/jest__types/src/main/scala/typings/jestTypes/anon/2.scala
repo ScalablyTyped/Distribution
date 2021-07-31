@@ -5,21 +5,21 @@ import typings.jestTypes.circusMod.TestEntry
 import typings.jestTypes.jestTypesStrings.test_skip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `2` extends AsyncEvent {
+trait `2`
+  extends StObject
+     with AsyncEvent {
   
-  var name: test_skip = js.native
+  var name: test_skip
   
-  var test: TestEntry = js.native
+  var test: TestEntry
 }
 object `2` {
   
   @scala.inline
-  def apply(name: test_skip, test: TestEntry): `2` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+  def apply(test: TestEntry): `2` = {
+    val __obj = js.Dynamic.literal(name = "test_skip", test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[`2`]
   }
   

@@ -3,7 +3,6 @@ package typings.storybookAddonNotes
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object giphyMod {
@@ -20,10 +19,9 @@ object giphyMod {
     def componentDidMount_MGiphy(): Unit = js.native
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var query: String = js.native
+    var query: String
   }
   object Props {
     
@@ -41,16 +39,15 @@ object giphyMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var src: String | Null = js.native
+    var src: String | Null
   }
   object State {
     
     @scala.inline
     def apply(): State = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(src = null)
       __obj.asInstanceOf[State]
     }
     

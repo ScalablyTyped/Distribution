@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.emr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterCoreInstanceFleetLaunchSpecifications extends StObject {
   
   /**
     * Configuration block for on demand instances launch specifications
     */
-  var onDemandSpecifications: js.UndefOr[js.Array[ClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification]] = js.native
+  var onDemandSpecifications: js.UndefOr[js.Array[ClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification]] = js.undefined
   
   /**
     * Configuration block for spot instances launch specifications
     */
-  var spotSpecifications: js.UndefOr[js.Array[ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification]] = js.native
+  var spotSpecifications: js.UndefOr[js.Array[ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification]] = js.undefined
 }
 object ClusterCoreInstanceFleetLaunchSpecifications {
   

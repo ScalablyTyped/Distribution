@@ -2,15 +2,13 @@ package typings.googleCloudStorage.bucketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableLoggingOptions extends StObject {
   
-  var bucket: js.UndefOr[String | Bucket] = js.native
+  var bucket: js.UndefOr[String | Bucket] = js.undefined
   
-  var prefix: String = js.native
+  var prefix: String
 }
 object EnableLoggingOptions {
   

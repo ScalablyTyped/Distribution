@@ -6,103 +6,140 @@ import typings.vexdb.requestObjectsMod.Programs
 import typings.vexdb.requestObjectsMod.Seasons
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vexdbStrings {
   
   @js.native
-  sealed trait `Bridge Battle` extends Seasons
+  sealed trait `Bridge Battle`
+    extends StObject
+       with Seasons
   @scala.inline
   def `Bridge Battle`: `Bridge Battle` = ("Bridge Battle").asInstanceOf[`Bridge Battle`]
   
   @js.native
-  sealed trait `Change Up` extends Seasons
+  sealed trait `Change Up`
+    extends StObject
+       with Seasons
   @scala.inline
   def `Change Up`: `Change Up` = ("Change Up").asInstanceOf[`Change Up`]
   
   @js.native
-  sealed trait `Clean Sweep` extends Seasons
+  sealed trait `Clean Sweep`
+    extends StObject
+       with Seasons
   @scala.inline
   def `Clean Sweep`: `Clean Sweep` = ("Clean Sweep").asInstanceOf[`Clean Sweep`]
   
   @js.native
-  sealed trait Collge extends Grades
+  sealed trait Collge
+    extends StObject
+       with Grades
   @scala.inline
   def Collge: Collge = "Collge".asInstanceOf[Collge]
   
   @js.native
-  sealed trait Elevation extends Seasons
+  sealed trait Elevation
+    extends StObject
+       with Seasons
   @scala.inline
   def Elevation: Elevation = "Elevation".asInstanceOf[Elevation]
   
   @js.native
-  sealed trait Gateway extends Seasons
+  sealed trait Gateway
+    extends StObject
+       with Seasons
   @scala.inline
   def Gateway: Gateway = "Gateway".asInstanceOf[Gateway]
   
   @js.native
-  sealed trait `High School` extends Grades
+  sealed trait `High School`
+    extends StObject
+       with Grades
   @scala.inline
   def `High School`: `High School` = ("High School").asInstanceOf[`High School`]
   
   @js.native
-  sealed trait `In The Zone` extends Seasons
+  sealed trait `In The Zone`
+    extends StObject
+       with Seasons
   @scala.inline
   def `In The Zone`: `In The Zone` = ("In The Zone").asInstanceOf[`In The Zone`]
   
   @js.native
-  sealed trait `Middle School` extends Grades
+  sealed trait `Middle School`
+    extends StObject
+       with Grades
   @scala.inline
   def `Middle School`: `Middle School` = ("Middle School").asInstanceOf[`Middle School`]
   
   @js.native
-  sealed trait `Nothing But Net` extends Seasons
+  sealed trait `Nothing But Net`
+    extends StObject
+       with Seasons
   @scala.inline
   def `Nothing But Net`: `Nothing But Net` = ("Nothing But Net").asInstanceOf[`Nothing But Net`]
   
   @js.native
-  sealed trait `Round Up` extends Seasons
+  sealed trait `Round Up`
+    extends StObject
+       with Seasons
   @scala.inline
   def `Round Up`: `Round Up` = ("Round Up").asInstanceOf[`Round Up`]
   
   @js.native
-  sealed trait `Sack Attack` extends Seasons
+  sealed trait `Sack Attack`
+    extends StObject
+       with Seasons
   @scala.inline
   def `Sack Attack`: `Sack Attack` = ("Sack Attack").asInstanceOf[`Sack Attack`]
   
   @js.native
-  sealed trait Skyrise extends Seasons
+  sealed trait Skyrise
+    extends StObject
+       with Seasons
   @scala.inline
   def Skyrise: Skyrise = "Skyrise".asInstanceOf[Skyrise]
   
   @js.native
-  sealed trait StarStruck extends Seasons
+  sealed trait StarStruck
+    extends StObject
+       with Seasons
   @scala.inline
   def StarStruck: StarStruck = "StarStruck".asInstanceOf[StarStruck]
   
   @js.native
-  sealed trait `Toss Up` extends Seasons
+  sealed trait `Toss Up`
+    extends StObject
+       with Seasons
   @scala.inline
   def `Toss Up`: `Toss Up` = ("Toss Up").asInstanceOf[`Toss Up`]
   
   @js.native
-  sealed trait `Tower Takeover` extends Seasons
+  sealed trait `Tower Takeover`
+    extends StObject
+       with Seasons
   @scala.inline
   def `Tower Takeover`: `Tower Takeover` = ("Tower Takeover").asInstanceOf[`Tower Takeover`]
   
   @js.native
-  sealed trait `Turning Point` extends Seasons
+  sealed trait `Turning Point`
+    extends StObject
+       with Seasons
   @scala.inline
   def `Turning Point`: `Turning Point` = ("Turning Point").asInstanceOf[`Turning Point`]
   
   @js.native
-  sealed trait VEXU extends Programs
+  sealed trait VEXU
+    extends StObject
+       with Programs
   @scala.inline
   def VEXU: VEXU = "VEXU".asInstanceOf[VEXU]
   
   @js.native
-  sealed trait VRC extends Programs
+  sealed trait VRC
+    extends StObject
+       with Programs
   @scala.inline
   def VRC: VRC = "VRC".asInstanceOf[VRC]
   
@@ -117,7 +154,9 @@ object vexdbStrings {
   def attempts: attempts = "attempts".asInstanceOf[attempts]
   
   @js.native
-  sealed trait awards extends Endpoint
+  sealed trait awards
+    extends StObject
+       with Endpoint
   @scala.inline
   def awards: awards = "awards".asInstanceOf[awards]
   
@@ -162,7 +201,9 @@ object vexdbStrings {
   def country: country = "country".asInstanceOf[country]
   
   @js.native
-  sealed trait current extends Seasons
+  sealed trait current
+    extends StObject
+       with Seasons
   @scala.inline
   def current: current = "current".asInstanceOf[current]
   
@@ -182,7 +223,9 @@ object vexdbStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait events extends Endpoint
+  sealed trait events
+    extends StObject
+       with Endpoint
   @scala.inline
   def events: events = "events".asInstanceOf[events]
   
@@ -252,7 +295,9 @@ object vexdbStrings {
   def losses: losses = "losses".asInstanceOf[losses]
   
   @js.native
-  sealed trait matches extends Endpoint
+  sealed trait matches
+    extends StObject
+       with Endpoint
   @scala.inline
   def matches: matches = "matches".asInstanceOf[matches]
   
@@ -307,7 +352,9 @@ object vexdbStrings {
   def rank: rank = "rank".asInstanceOf[rank]
   
   @js.native
-  sealed trait rankings extends Endpoint
+  sealed trait rankings
+    extends StObject
+       with Endpoint
   @scala.inline
   def rankings: rankings = "rankings".asInstanceOf[rankings]
   
@@ -362,12 +409,16 @@ object vexdbStrings {
   def season: season = "season".asInstanceOf[season]
   
   @js.native
-  sealed trait season_rankings extends Endpoint
+  sealed trait season_rankings
+    extends StObject
+       with Endpoint
   @scala.inline
   def season_rankings: season_rankings = "season_rankings".asInstanceOf[season_rankings]
   
   @js.native
-  sealed trait skills extends Endpoint
+  sealed trait skills
+    extends StObject
+       with Endpoint
   @scala.inline
   def skills: skills = "skills".asInstanceOf[skills]
   
@@ -397,7 +448,9 @@ object vexdbStrings {
   def team_name: team_name = "team_name".asInstanceOf[team_name]
   
   @js.native
-  sealed trait teams extends Endpoint
+  sealed trait teams
+    extends StObject
+       with Endpoint
   @scala.inline
   def teams: teams = "teams".asInstanceOf[teams]
   

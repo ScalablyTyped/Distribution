@@ -1,15 +1,17 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- scala.Any because Already inherited
+- scala.AnyRef because Already inherited
 - typings.react.mod.DeprecatedLifecycle because Already inherited
 - typings.react.mod.NewLifecycle because Already inherited
+- js.Any because Already inherited
 - typings.react.mod.ComponentLifecycle because Already inherited
+- js.Object because Already inherited
 - typings.react.mod.Component because Already inherited
 - typings.officeUiFabricReact.personaCoinBaseMod.PersonaCoinBase because Already inherited
 - typings.officeUiFabricReact.personaCoinMod.PersonaCoinBase because Already inherited
@@ -18,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class PersonaCoinBase protected ()
   extends typings.officeUiFabricReact.libPersonaMod.PersonaCoinBase {
-  def this(props: IPersonaCoinProps) = this()
+  def this(props: typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps) = this()
 }
 /* static members */
 object PersonaCoinBase {
@@ -29,7 +31,7 @@ object PersonaCoinBase {
   
   @JSImport("office-ui-fabric-react", "PersonaCoinBase.defaultProps")
   @js.native
-  def defaultProps: IPersonaCoinProps = js.native
+  def defaultProps: typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps = js.native
   @scala.inline
-  def defaultProps_=(x: IPersonaCoinProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps_=(x: typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

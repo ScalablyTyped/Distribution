@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
-@js.native
 trait PlusMapsMapType extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusMapsMapType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var MAPTYPE_NORMAL: js.UndefOr[Double] = js.native
+  var MAPTYPE_NORMAL: js.UndefOr[Double] = js.undefined
   
   /**
     * 卫星视图
@@ -27,7 +25,7 @@ trait PlusMapsMapType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var MAPTYPE_SATELLITE: js.UndefOr[Double] = js.native
+  var MAPTYPE_SATELLITE: js.UndefOr[Double] = js.undefined
 }
 object PlusMapsMapType {
   

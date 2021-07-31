@@ -7,7 +7,6 @@ import typings.officeJs.Word.Interfaces.TableRowCollectionData
 import typings.officeJs.Word.Interfaces.TableRowCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.3]
   */
 @js.native
-trait TableRowCollection extends ClientObject {
+trait TableRowCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -46,7 +47,7 @@ trait TableRowCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): TableRowCollection = js.native
-  def load(options: TableRowCollectionLoadOptions with CollectionLoadOptions): TableRowCollection = js.native
+  def load(options: TableRowCollectionLoadOptions & CollectionLoadOptions): TableRowCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): TableRowCollection = js.native
   def load(propertyNames: String): TableRowCollection = js.native
   def load(propertyNames: js.Array[String]): TableRowCollection = js.native

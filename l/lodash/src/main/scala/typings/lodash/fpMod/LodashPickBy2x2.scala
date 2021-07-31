@@ -5,7 +5,6 @@ import typings.lodash.mod.ValueKeyIteratee
 import typings.lodash.mod.ValueKeyIterateeTypeGuard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

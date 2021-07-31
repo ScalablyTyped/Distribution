@@ -5,7 +5,6 @@ import typings.typeorm.findOperatorTypeMod.FindOperatorType
 import typings.typeorm.objectLiteralMod.ObjectLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/browser", "FindOperator")
@@ -20,19 +19,8 @@ class FindOperator[T] protected ()
     value: typings.typeorm.findOperatorMod.FindOperator[T],
     useParameter: Boolean
   ) = this()
-  def this(
-    `type`: FindOperatorType,
-    value: T,
-    useParameter: js.UndefOr[scala.Nothing],
-    multipleParameters: Boolean
-  ) = this()
   def this(`type`: FindOperatorType, value: T, useParameter: Boolean, multipleParameters: Boolean) = this()
-  def this(
-    `type`: FindOperatorType,
-    value: typings.typeorm.findOperatorMod.FindOperator[T],
-    useParameter: js.UndefOr[scala.Nothing],
-    multipleParameters: Boolean
-  ) = this()
+  def this(`type`: FindOperatorType, value: T, useParameter: Unit, multipleParameters: Boolean) = this()
   def this(
     `type`: FindOperatorType,
     value: typings.typeorm.findOperatorMod.FindOperator[T],
@@ -41,24 +29,9 @@ class FindOperator[T] protected ()
   ) = this()
   def this(
     `type`: FindOperatorType,
-    value: T,
-    useParameter: js.UndefOr[scala.Nothing],
-    multipleParameters: js.UndefOr[scala.Nothing],
-    getSql: SqlGeneratorType
-  ) = this()
-  def this(
-    `type`: FindOperatorType,
-    value: T,
-    useParameter: js.UndefOr[scala.Nothing],
-    multipleParameters: Boolean,
-    getSql: SqlGeneratorType
-  ) = this()
-  def this(
-    `type`: FindOperatorType,
-    value: T,
-    useParameter: Boolean,
-    multipleParameters: js.UndefOr[scala.Nothing],
-    getSql: SqlGeneratorType
+    value: typings.typeorm.findOperatorMod.FindOperator[T],
+    useParameter: Unit,
+    multipleParameters: Boolean
   ) = this()
   def this(
     `type`: FindOperatorType,
@@ -69,23 +42,23 @@ class FindOperator[T] protected ()
   ) = this()
   def this(
     `type`: FindOperatorType,
-    value: typings.typeorm.findOperatorMod.FindOperator[T],
-    useParameter: js.UndefOr[scala.Nothing],
-    multipleParameters: js.UndefOr[scala.Nothing],
+    value: T,
+    useParameter: Boolean,
+    multipleParameters: Unit,
     getSql: SqlGeneratorType
   ) = this()
   def this(
     `type`: FindOperatorType,
-    value: typings.typeorm.findOperatorMod.FindOperator[T],
-    useParameter: js.UndefOr[scala.Nothing],
+    value: T,
+    useParameter: Unit,
     multipleParameters: Boolean,
     getSql: SqlGeneratorType
   ) = this()
   def this(
     `type`: FindOperatorType,
-    value: typings.typeorm.findOperatorMod.FindOperator[T],
-    useParameter: Boolean,
-    multipleParameters: js.UndefOr[scala.Nothing],
+    value: T,
+    useParameter: Unit,
+    multipleParameters: Unit,
     getSql: SqlGeneratorType
   ) = this()
   def this(
@@ -97,58 +70,31 @@ class FindOperator[T] protected ()
   ) = this()
   def this(
     `type`: FindOperatorType,
-    value: T,
-    useParameter: js.UndefOr[scala.Nothing],
-    multipleParameters: js.UndefOr[scala.Nothing],
-    getSql: js.UndefOr[scala.Nothing],
-    objectLiteralParameters: ObjectLiteral
-  ) = this()
-  def this(
-    `type`: FindOperatorType,
-    value: T,
-    useParameter: js.UndefOr[scala.Nothing],
-    multipleParameters: js.UndefOr[scala.Nothing],
-    getSql: SqlGeneratorType,
-    objectLiteralParameters: ObjectLiteral
-  ) = this()
-  def this(
-    `type`: FindOperatorType,
-    value: T,
-    useParameter: js.UndefOr[scala.Nothing],
-    multipleParameters: Boolean,
-    getSql: js.UndefOr[scala.Nothing],
-    objectLiteralParameters: ObjectLiteral
-  ) = this()
-  def this(
-    `type`: FindOperatorType,
-    value: T,
-    useParameter: js.UndefOr[scala.Nothing],
-    multipleParameters: Boolean,
-    getSql: SqlGeneratorType,
-    objectLiteralParameters: ObjectLiteral
-  ) = this()
-  def this(
-    `type`: FindOperatorType,
-    value: T,
+    value: typings.typeorm.findOperatorMod.FindOperator[T],
     useParameter: Boolean,
-    multipleParameters: js.UndefOr[scala.Nothing],
-    getSql: js.UndefOr[scala.Nothing],
-    objectLiteralParameters: ObjectLiteral
+    multipleParameters: Unit,
+    getSql: SqlGeneratorType
   ) = this()
   def this(
     `type`: FindOperatorType,
-    value: T,
-    useParameter: Boolean,
-    multipleParameters: js.UndefOr[scala.Nothing],
-    getSql: SqlGeneratorType,
-    objectLiteralParameters: ObjectLiteral
+    value: typings.typeorm.findOperatorMod.FindOperator[T],
+    useParameter: Unit,
+    multipleParameters: Boolean,
+    getSql: SqlGeneratorType
+  ) = this()
+  def this(
+    `type`: FindOperatorType,
+    value: typings.typeorm.findOperatorMod.FindOperator[T],
+    useParameter: Unit,
+    multipleParameters: Unit,
+    getSql: SqlGeneratorType
   ) = this()
   def this(
     `type`: FindOperatorType,
     value: T,
     useParameter: Boolean,
     multipleParameters: Boolean,
-    getSql: js.UndefOr[scala.Nothing],
+    getSql: Unit,
     objectLiteralParameters: ObjectLiteral
   ) = this()
   def this(
@@ -161,32 +107,64 @@ class FindOperator[T] protected ()
   ) = this()
   def this(
     `type`: FindOperatorType,
-    value: typings.typeorm.findOperatorMod.FindOperator[T],
-    useParameter: js.UndefOr[scala.Nothing],
-    multipleParameters: js.UndefOr[scala.Nothing],
-    getSql: js.UndefOr[scala.Nothing],
+    value: T,
+    useParameter: Boolean,
+    multipleParameters: Unit,
+    getSql: Unit,
     objectLiteralParameters: ObjectLiteral
   ) = this()
   def this(
     `type`: FindOperatorType,
-    value: typings.typeorm.findOperatorMod.FindOperator[T],
-    useParameter: js.UndefOr[scala.Nothing],
-    multipleParameters: js.UndefOr[scala.Nothing],
+    value: T,
+    useParameter: Boolean,
+    multipleParameters: Unit,
+    getSql: SqlGeneratorType,
+    objectLiteralParameters: ObjectLiteral
+  ) = this()
+  def this(
+    `type`: FindOperatorType,
+    value: T,
+    useParameter: Unit,
+    multipleParameters: Boolean,
+    getSql: Unit,
+    objectLiteralParameters: ObjectLiteral
+  ) = this()
+  def this(
+    `type`: FindOperatorType,
+    value: T,
+    useParameter: Unit,
+    multipleParameters: Boolean,
+    getSql: SqlGeneratorType,
+    objectLiteralParameters: ObjectLiteral
+  ) = this()
+  def this(
+    `type`: FindOperatorType,
+    value: T,
+    useParameter: Unit,
+    multipleParameters: Unit,
+    getSql: Unit,
+    objectLiteralParameters: ObjectLiteral
+  ) = this()
+  def this(
+    `type`: FindOperatorType,
+    value: T,
+    useParameter: Unit,
+    multipleParameters: Unit,
     getSql: SqlGeneratorType,
     objectLiteralParameters: ObjectLiteral
   ) = this()
   def this(
     `type`: FindOperatorType,
     value: typings.typeorm.findOperatorMod.FindOperator[T],
-    useParameter: js.UndefOr[scala.Nothing],
+    useParameter: Boolean,
     multipleParameters: Boolean,
-    getSql: js.UndefOr[scala.Nothing],
+    getSql: Unit,
     objectLiteralParameters: ObjectLiteral
   ) = this()
   def this(
     `type`: FindOperatorType,
     value: typings.typeorm.findOperatorMod.FindOperator[T],
-    useParameter: js.UndefOr[scala.Nothing],
+    useParameter: Boolean,
     multipleParameters: Boolean,
     getSql: SqlGeneratorType,
     objectLiteralParameters: ObjectLiteral
@@ -195,31 +173,47 @@ class FindOperator[T] protected ()
     `type`: FindOperatorType,
     value: typings.typeorm.findOperatorMod.FindOperator[T],
     useParameter: Boolean,
-    multipleParameters: js.UndefOr[scala.Nothing],
-    getSql: js.UndefOr[scala.Nothing],
+    multipleParameters: Unit,
+    getSql: Unit,
     objectLiteralParameters: ObjectLiteral
   ) = this()
   def this(
     `type`: FindOperatorType,
     value: typings.typeorm.findOperatorMod.FindOperator[T],
     useParameter: Boolean,
-    multipleParameters: js.UndefOr[scala.Nothing],
+    multipleParameters: Unit,
     getSql: SqlGeneratorType,
     objectLiteralParameters: ObjectLiteral
   ) = this()
   def this(
     `type`: FindOperatorType,
     value: typings.typeorm.findOperatorMod.FindOperator[T],
-    useParameter: Boolean,
+    useParameter: Unit,
     multipleParameters: Boolean,
-    getSql: js.UndefOr[scala.Nothing],
+    getSql: Unit,
     objectLiteralParameters: ObjectLiteral
   ) = this()
   def this(
     `type`: FindOperatorType,
     value: typings.typeorm.findOperatorMod.FindOperator[T],
-    useParameter: Boolean,
+    useParameter: Unit,
     multipleParameters: Boolean,
+    getSql: SqlGeneratorType,
+    objectLiteralParameters: ObjectLiteral
+  ) = this()
+  def this(
+    `type`: FindOperatorType,
+    value: typings.typeorm.findOperatorMod.FindOperator[T],
+    useParameter: Unit,
+    multipleParameters: Unit,
+    getSql: Unit,
+    objectLiteralParameters: ObjectLiteral
+  ) = this()
+  def this(
+    `type`: FindOperatorType,
+    value: typings.typeorm.findOperatorMod.FindOperator[T],
+    useParameter: Unit,
+    multipleParameters: Unit,
     getSql: SqlGeneratorType,
     objectLiteralParameters: ObjectLiteral
   ) = this()

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagemen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlayerScoreResetAllResponse extends StObject {
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesManagement#playerScoreResetAllResponse`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The leaderboard reset results. */
-  var results: js.UndefOr[js.Array[PlayerScoreResetResponse]] = js.native
+  var results: js.UndefOr[js.Array[PlayerScoreResetResponse]] = js.undefined
 }
 object PlayerScoreResetAllResponse {
   

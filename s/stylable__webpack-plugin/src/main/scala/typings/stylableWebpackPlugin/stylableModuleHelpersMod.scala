@@ -9,124 +9,94 @@ import typings.stylableWebpackPlugin.typesMod.CalcResult
 import typings.stylableWebpackPlugin.typesMod.StylableModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableModuleHelpersMod {
   
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "calculateModuleDepthAndShallowStylableDependencies")
+  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", JSImport.Namespace)
   @js.native
-  def calculateModuleDepthAndShallowStylableDependencies(module: StylableModule): CalcResult = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "calculateModuleDepthAndShallowStylableDependencies")
-  @js.native
-  def calculateModuleDepthAndShallowStylableDependencies(
-    module: StylableModule,
-    cssDependencies: js.UndefOr[scala.Nothing],
-    path: js.UndefOr[scala.Nothing],
-    cache: MultiMap[StylableModule, CalcResult]
-  ): CalcResult = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "calculateModuleDepthAndShallowStylableDependencies")
-  @js.native
-  def calculateModuleDepthAndShallowStylableDependencies(module: StylableModule, cssDependencies: js.UndefOr[scala.Nothing], path: js.Array[StylableModule]): CalcResult = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "calculateModuleDepthAndShallowStylableDependencies")
-  @js.native
-  def calculateModuleDepthAndShallowStylableDependencies(
-    module: StylableModule,
-    cssDependencies: js.UndefOr[scala.Nothing],
-    path: js.Array[StylableModule],
-    cache: MultiMap[StylableModule, CalcResult]
-  ): CalcResult = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "calculateModuleDepthAndShallowStylableDependencies")
-  @js.native
-  def calculateModuleDepthAndShallowStylableDependencies(module: StylableModule, cssDependencies: js.Array[StylableModule]): CalcResult = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "calculateModuleDepthAndShallowStylableDependencies")
-  @js.native
-  def calculateModuleDepthAndShallowStylableDependencies(
-    module: StylableModule,
-    cssDependencies: js.Array[StylableModule],
-    path: js.UndefOr[scala.Nothing],
-    cache: MultiMap[StylableModule, CalcResult]
-  ): CalcResult = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "calculateModuleDepthAndShallowStylableDependencies")
-  @js.native
-  def calculateModuleDepthAndShallowStylableDependencies(module: StylableModule, cssDependencies: js.Array[StylableModule], path: js.Array[StylableModule]): CalcResult = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "calculateModuleDepthAndShallowStylableDependencies")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def calculateModuleDepthAndShallowStylableDependencies(module: StylableModule): CalcResult = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateModuleDepthAndShallowStylableDependencies")(module.asInstanceOf[js.Any]).asInstanceOf[CalcResult]
+  @scala.inline
+  def calculateModuleDepthAndShallowStylableDependencies(module: StylableModule, cssDependencies: js.Array[StylableModule]): CalcResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateModuleDepthAndShallowStylableDependencies")(module.asInstanceOf[js.Any], cssDependencies.asInstanceOf[js.Any])).asInstanceOf[CalcResult]
+  @scala.inline
+  def calculateModuleDepthAndShallowStylableDependencies(module: StylableModule, cssDependencies: js.Array[StylableModule], path: js.Array[StylableModule]): CalcResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateModuleDepthAndShallowStylableDependencies")(module.asInstanceOf[js.Any], cssDependencies.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[CalcResult]
+  @scala.inline
   def calculateModuleDepthAndShallowStylableDependencies(
     module: StylableModule,
     cssDependencies: js.Array[StylableModule],
     path: js.Array[StylableModule],
     cache: MultiMap[StylableModule, CalcResult]
-  ): CalcResult = js.native
+  ): CalcResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateModuleDepthAndShallowStylableDependencies")(module.asInstanceOf[js.Any], cssDependencies.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[CalcResult]
+  @scala.inline
+  def calculateModuleDepthAndShallowStylableDependencies(
+    module: StylableModule,
+    cssDependencies: js.Array[StylableModule],
+    path: Unit,
+    cache: MultiMap[StylableModule, CalcResult]
+  ): CalcResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateModuleDepthAndShallowStylableDependencies")(module.asInstanceOf[js.Any], cssDependencies.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[CalcResult]
+  @scala.inline
+  def calculateModuleDepthAndShallowStylableDependencies(module: StylableModule, cssDependencies: Unit, path: js.Array[StylableModule]): CalcResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateModuleDepthAndShallowStylableDependencies")(module.asInstanceOf[js.Any], cssDependencies.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[CalcResult]
+  @scala.inline
+  def calculateModuleDepthAndShallowStylableDependencies(
+    module: StylableModule,
+    cssDependencies: Unit,
+    path: js.Array[StylableModule],
+    cache: MultiMap[StylableModule, CalcResult]
+  ): CalcResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateModuleDepthAndShallowStylableDependencies")(module.asInstanceOf[js.Any], cssDependencies.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[CalcResult]
+  @scala.inline
+  def calculateModuleDepthAndShallowStylableDependencies(
+    module: StylableModule,
+    cssDependencies: Unit,
+    path: Unit,
+    cache: MultiMap[StylableModule, CalcResult]
+  ): CalcResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateModuleDepthAndShallowStylableDependencies")(module.asInstanceOf[js.Any], cssDependencies.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[CalcResult]
   
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "findStylableComponents")
-  @js.native
-  def findStylableComponents(stylableModules: js.Array[StylableModule]): js.Array[LogicModule] = js.native
+  @scala.inline
+  def findStylableComponents(stylableModules: js.Array[StylableModule]): js.Array[LogicModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("findStylableComponents")(stylableModules.asInstanceOf[js.Any]).asInstanceOf[js.Array[LogicModule]]
   
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "getCSSComponentLogicModule")
-  @js.native
-  def getCSSComponentLogicModule(stylableModule: StylableModule): StylableModule = js.native
+  @scala.inline
+  def getCSSComponentLogicModule(stylableModule: StylableModule): StylableModule = ^.asInstanceOf[js.Dynamic].applyDynamic("getCSSComponentLogicModule")(stylableModule.asInstanceOf[js.Any]).asInstanceOf[StylableModule]
   
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "getDeepCSSDependencies")
-  @js.native
-  def getDeepCSSDependencies(m: StylableModule): Set[StylableModule] = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "getDeepCSSDependencies")
-  @js.native
-  def getDeepCSSDependencies(
-    m: StylableModule,
-    onlyUsed: js.UndefOr[scala.Nothing],
-    deps: js.UndefOr[scala.Nothing],
-    origin: StylableModule
-  ): Set[StylableModule] = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "getDeepCSSDependencies")
-  @js.native
-  def getDeepCSSDependencies(m: StylableModule, onlyUsed: js.UndefOr[scala.Nothing], deps: Set[StylableModule]): Set[StylableModule] = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "getDeepCSSDependencies")
-  @js.native
-  def getDeepCSSDependencies(
-    m: StylableModule,
-    onlyUsed: js.UndefOr[scala.Nothing],
-    deps: Set[StylableModule],
-    origin: StylableModule
-  ): Set[StylableModule] = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "getDeepCSSDependencies")
-  @js.native
-  def getDeepCSSDependencies(m: StylableModule, onlyUsed: Boolean): Set[StylableModule] = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "getDeepCSSDependencies")
-  @js.native
-  def getDeepCSSDependencies(m: StylableModule, onlyUsed: Boolean, deps: js.UndefOr[scala.Nothing], origin: StylableModule): Set[StylableModule] = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "getDeepCSSDependencies")
-  @js.native
-  def getDeepCSSDependencies(m: StylableModule, onlyUsed: Boolean, deps: Set[StylableModule]): Set[StylableModule] = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "getDeepCSSDependencies")
-  @js.native
-  def getDeepCSSDependencies(m: StylableModule, onlyUsed: Boolean, deps: Set[StylableModule], origin: StylableModule): Set[StylableModule] = js.native
+  @scala.inline
+  def getDeepCSSDependencies(m: StylableModule): Set[StylableModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepCSSDependencies")(m.asInstanceOf[js.Any]).asInstanceOf[Set[StylableModule]]
+  @scala.inline
+  def getDeepCSSDependencies(m: StylableModule, onlyUsed: Boolean): Set[StylableModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepCSSDependencies")(m.asInstanceOf[js.Any], onlyUsed.asInstanceOf[js.Any])).asInstanceOf[Set[StylableModule]]
+  @scala.inline
+  def getDeepCSSDependencies(m: StylableModule, onlyUsed: Boolean, deps: Unit, origin: StylableModule): Set[StylableModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepCSSDependencies")(m.asInstanceOf[js.Any], onlyUsed.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Set[StylableModule]]
+  @scala.inline
+  def getDeepCSSDependencies(m: StylableModule, onlyUsed: Boolean, deps: Set[StylableModule]): Set[StylableModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepCSSDependencies")(m.asInstanceOf[js.Any], onlyUsed.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Set[StylableModule]]
+  @scala.inline
+  def getDeepCSSDependencies(m: StylableModule, onlyUsed: Boolean, deps: Set[StylableModule], origin: StylableModule): Set[StylableModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepCSSDependencies")(m.asInstanceOf[js.Any], onlyUsed.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Set[StylableModule]]
+  @scala.inline
+  def getDeepCSSDependencies(m: StylableModule, onlyUsed: Unit, deps: Unit, origin: StylableModule): Set[StylableModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepCSSDependencies")(m.asInstanceOf[js.Any], onlyUsed.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Set[StylableModule]]
+  @scala.inline
+  def getDeepCSSDependencies(m: StylableModule, onlyUsed: Unit, deps: Set[StylableModule]): Set[StylableModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepCSSDependencies")(m.asInstanceOf[js.Any], onlyUsed.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Set[StylableModule]]
+  @scala.inline
+  def getDeepCSSDependencies(m: StylableModule, onlyUsed: Unit, deps: Set[StylableModule], origin: StylableModule): Set[StylableModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepCSSDependencies")(m.asInstanceOf[js.Any], onlyUsed.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Set[StylableModule]]
   
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "getStylableModulesFromCompilation")
-  @js.native
+  @scala.inline
   def getStylableModulesFromCompilation(
     compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any
-  ): js.Array[StylableModule] = js.native
+  ): js.Array[StylableModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStylableModulesFromCompilation")(compilation.asInstanceOf[js.Any]).asInstanceOf[js.Array[StylableModule]]
   
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "getStylableModulesFromDependencies")
-  @js.native
-  def getStylableModulesFromDependencies(dependencies: js.Array[Module]): js.Array[StylableModule] = js.native
+  @scala.inline
+  def getStylableModulesFromDependencies(dependencies: js.Array[Module]): js.Array[StylableModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStylableModulesFromDependencies")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Array[StylableModule]]
   
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "renderStaticCSS")
-  @js.native
-  def renderStaticCSS(modules: js.Any, mainTemplate: js.Any, hash: js.Any): js.Array[String] = js.native
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "renderStaticCSS")
-  @js.native
+  @scala.inline
+  def renderStaticCSS(modules: js.Any, mainTemplate: js.Any, hash: js.Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderStaticCSS")(modules.asInstanceOf[js.Any], mainTemplate.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
   def renderStaticCSS(
     modules: js.Any,
     mainTemplate: js.Any,
     hash: js.Any,
     filter: js.Function1[/* item */ js.Any, Boolean]
-  ): js.Array[String] = js.native
+  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderStaticCSS")(modules.asInstanceOf[js.Any], mainTemplate.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@stylable/webpack-plugin/cjs/stylable-module-helpers", "sortedStylableModulesByDepth")
-  @js.native
-  def sortedStylableModulesByDepth(modules: js.Array[StylableModule]): js.Array[StylableModule] = js.native
+  @scala.inline
+  def sortedStylableModulesByDepth(modules: js.Array[StylableModule]): js.Array[StylableModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("sortedStylableModulesByDepth")(modules.asInstanceOf[js.Any]).asInstanceOf[js.Array[StylableModule]]
   
   type MultiMap[K /* <: js.Object */, V] = (Map[K, V]) | (WeakMap[K, V])
 }

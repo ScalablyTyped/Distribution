@@ -2,56 +2,54 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A geographic location that can be associated with a timeline item.
   */
-@js.native
 trait SchemaLocation extends StObject {
   
   /**
     * The accuracy of the location fix in meters.
     */
-  var accuracy: js.UndefOr[Double] = js.native
+  var accuracy: js.UndefOr[Double] = js.undefined
   
   /**
     * The full address of the location.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * The name to be displayed. This may be a business name or a user-defined
     * place, such as &quot;Home&quot;.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the location.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The type of resource. This is always mirror#location.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The latitude, in degrees.
     */
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
   /**
     * The longitude, in degrees.
     */
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
   /**
     * The time at which this location was captured, formatted according to RFC
     * 3339.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaLocation {
   

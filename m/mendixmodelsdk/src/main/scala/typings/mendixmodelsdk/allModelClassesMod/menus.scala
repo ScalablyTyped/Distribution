@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menus {
@@ -41,9 +40,8 @@ object menus {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "menus.MenuDocument.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.menusMod.menus.MenuDocument = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.menusMod.menus.MenuDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuDocument]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "menus.MenuDocument.structureTypeName")
@@ -88,9 +86,8 @@ object menus {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "menus.MenuItem.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.menusMod.menus.MenuItem = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.menusMod.menus.MenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuItem]
     
     /**
       * Creates and returns a new MenuItem instance in the SDK and on the server.
@@ -98,9 +95,8 @@ object menus {
       * of the parent MenuItemContainer element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "menus.MenuItem.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.menusMod.menus.MenuItemContainer): typings.mendixmodelsdk.menusMod.menus.MenuItem = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.menusMod.menus.MenuItemContainer): typings.mendixmodelsdk.menusMod.menus.MenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuItem]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "menus.MenuItem.structureTypeName")
@@ -142,9 +138,8 @@ object menus {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "menus.MenuItemCollection.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.menusMod.menus.MenuItemCollection = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.menusMod.menus.MenuItemCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuItemCollection]
     
     /**
       * Creates and returns a new MenuItemCollection instance in the SDK and on the server.
@@ -152,9 +147,8 @@ object menus {
       * of the parent MenuDocument element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "menus.MenuItemCollection.createInMenuDocumentUnderItemCollection")
-    @js.native
-    def createInMenuDocumentUnderItemCollection(container: typings.mendixmodelsdk.menusMod.menus.MenuDocument): typings.mendixmodelsdk.menusMod.menus.MenuItemCollection = js.native
+    @scala.inline
+    def createInMenuDocumentUnderItemCollection(container: typings.mendixmodelsdk.menusMod.menus.MenuDocument): typings.mendixmodelsdk.menusMod.menus.MenuItemCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuDocumentUnderItemCollection")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuItemCollection]
     
     /**
       * Creates and returns a new MenuItemCollection instance in the SDK and on the server.
@@ -162,9 +156,8 @@ object menus {
       * of the parent navigation.NavigationProfile element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "menus.MenuItemCollection.createInNavigationProfileUnderMenuItemCollection")
-    @js.native
-    def createInNavigationProfileUnderMenuItemCollection(container: NavigationProfile): typings.mendixmodelsdk.menusMod.menus.MenuItemCollection = js.native
+    @scala.inline
+    def createInNavigationProfileUnderMenuItemCollection(container: NavigationProfile): typings.mendixmodelsdk.menusMod.menus.MenuItemCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationProfileUnderMenuItemCollection")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuItemCollection]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "menus.MenuItemCollection.structureTypeName")

@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundPositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait BackgroundPositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVa
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
     */
-  var backgroundPosition: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var backgroundPosition: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BackgroundPositionProps {
   
@@ -25,7 +23,7 @@ object BackgroundPositionProps {
   }
   
   @scala.inline
-  implicit class BackgroundPositionPropsMutableBuilder[Self <: BackgroundPositionProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BackgroundPositionProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BackgroundPositionPropsMutableBuilder[Self <: BackgroundPositionProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BackgroundPositionProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBackgroundPosition(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])

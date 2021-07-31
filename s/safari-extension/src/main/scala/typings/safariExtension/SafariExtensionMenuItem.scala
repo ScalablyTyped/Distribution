@@ -2,11 +2,12 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SafariExtensionMenuItem extends SafariEventTarget {
+trait SafariExtensionMenuItem
+  extends StObject
+     with SafariEventTarget {
   
   var checkedState: Double = js.native
   

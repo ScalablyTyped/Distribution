@@ -2,21 +2,19 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WordNetLookupResults extends StObject {
   
-  var gloss: String = js.native
+  var gloss: String
   
-  var lemma: String = js.native
+  var lemma: String
   
-  var pos: String = js.native
+  var pos: String
   
-  var synonyms: js.Array[String] = js.native
+  var synonyms: js.Array[String]
   
-  var synsetOffset: Double = js.native
+  var synsetOffset: Double
 }
 object WordNetLookupResults {
   

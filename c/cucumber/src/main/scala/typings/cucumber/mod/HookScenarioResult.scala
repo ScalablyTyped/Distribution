@@ -3,17 +3,15 @@ package typings.cucumber.mod
 import typings.cucumber.mod.pickle.Pickle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HookScenarioResult extends StObject {
   
-  var pickle: Pickle = js.native
+  var pickle: Pickle
   
-  var result: ScenarioResult = js.native
+  var result: ScenarioResult
   
-  var sourceLocation: SourceLocation = js.native
+  var sourceLocation: SourceLocation
 }
 object HookScenarioResult {
   

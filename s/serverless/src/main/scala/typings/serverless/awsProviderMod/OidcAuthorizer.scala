@@ -4,37 +4,35 @@ import typings.serverless.anon.Prompt
 import typings.serverless.serverlessStrings.oidc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OidcAuthorizer extends StObject {
   
-  var allowUnauthenticated: js.UndefOr[Boolean] = js.native
+  var allowUnauthenticated: js.UndefOr[Boolean] = js.undefined
   
-  var authorizationEndpoint: String = js.native
+  var authorizationEndpoint: String
   
-  var clientId: String = js.native
+  var clientId: String
   
-  var clientSecret: js.UndefOr[String] = js.native
+  var clientSecret: js.UndefOr[String] = js.undefined
   
-  var issuer: String = js.native
+  var issuer: String
   
-  var requestExtraParams: js.UndefOr[Prompt] = js.native
+  var requestExtraParams: js.UndefOr[Prompt] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var sessionCookieName: js.UndefOr[String] = js.native
+  var sessionCookieName: js.UndefOr[String] = js.undefined
   
-  var sessionTimeout: js.UndefOr[Double | String] = js.native
+  var sessionTimeout: js.UndefOr[Double | String] = js.undefined
   
-  var tokenEndpoint: String = js.native
+  var tokenEndpoint: String
   
-  var `type`: oidc = js.native
+  var `type`: oidc
   
-  var useExistingClientSecret: js.UndefOr[Boolean] = js.native
+  var useExistingClientSecret: js.UndefOr[Boolean] = js.undefined
   
-  var userInfoEndpoint: String = js.native
+  var userInfoEndpoint: String
 }
 object OidcAuthorizer {
   
@@ -44,11 +42,10 @@ object OidcAuthorizer {
     clientId: String,
     issuer: String,
     tokenEndpoint: String,
-    `type`: oidc,
     userInfoEndpoint: String
   ): OidcAuthorizer = {
     val __obj = js.Dynamic.literal(authorizationEndpoint = authorizationEndpoint.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any], tokenEndpoint = tokenEndpoint.asInstanceOf[js.Any], userInfoEndpoint = userInfoEndpoint.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("oidc")
     __obj.asInstanceOf[OidcAuthorizer]
   }
   

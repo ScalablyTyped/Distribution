@@ -2,23 +2,23 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExpectationResult extends Result {
+trait ExpectationResult
+  extends StObject
+     with Result {
   
-  var actual: js.Any = js.native
+  var actual: js.Any
   
-  var expected: js.Any = js.native
+  var expected: js.Any
   
-  var matcherName: String = js.native
+  var matcherName: String
   
-  var message: String = js.native
+  var message: String
   
-  def passed(): Boolean = js.native
+  def passed(): Boolean
   
-  var trace: Trace = js.native
+  var trace: Trace
 }
 object ExpectationResult {
   

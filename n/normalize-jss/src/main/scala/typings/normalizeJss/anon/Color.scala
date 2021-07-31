@@ -2,23 +2,21 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var boxSizing: String = js.native
+  var boxSizing: String
   
-  var color: String = js.native
+  var color: String
   
-  var display: String = js.native
+  var display: String
   
-  var maxWidth: String = js.native
+  var maxWidth: String
   
-  var padding: Double = js.native
+  var padding: Double
   
-  var whiteSpace: String = js.native
+  var whiteSpace: String
 }
 object Color {
   

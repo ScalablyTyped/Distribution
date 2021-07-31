@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxLinkedObjectInfo...
   */
-@js.native
 trait INxLinkedObjectInfo extends StObject {
   
   /**
     * Information about the linked object.
     */
-  var qInfo: INxInfo = js.native
+  var qInfo: INxInfo
   
   /**
     * Identifier of the root object.
@@ -22,7 +20,7 @@ trait INxLinkedObjectInfo extends StObject {
     * If the linked object is an app object, the root identifier is the same than the
     * identifier of the linked object since the linked object is a root object.
     */
-  var qRootId: String = js.native
+  var qRootId: String
 }
 object INxLinkedObjectInfo {
   

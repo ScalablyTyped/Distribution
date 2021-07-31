@@ -3,19 +3,20 @@ package typings.reduxPersistTransformEncrypt
 import typings.reduxPersist.typesMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncMod {
   
-  @JSImport("redux-persist-transform-encrypt/async", JSImport.Default)
+  @JSImport("redux-persist-transform-encrypt/async", JSImport.Namespace)
   @js.native
-  def default[State, Raw](config: AsyncEncryptorConfig): Transform[State, Raw, _, _] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[State, Raw](config: AsyncEncryptorConfig): Transform[State, Raw, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
+  
   trait AsyncEncryptorConfig extends StObject {
     
-    var secretKey: String = js.native
+    var secretKey: String
   }
   object AsyncEncryptorConfig {
     

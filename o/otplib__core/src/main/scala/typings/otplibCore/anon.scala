@@ -3,19 +3,17 @@ package typings.otplibCore
 import typings.otplibCore.utilsMod.SecretKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Counter extends StObject {
     
-    var counter: Double = js.native
+    var counter: Double
     
-    var secret: SecretKey = js.native
+    var secret: SecretKey
     
-    var token: String = js.native
+    var token: String
   }
   object Counter {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Secret extends StObject {
     
-    var secret: SecretKey = js.native
+    var secret: SecretKey
     
-    var token: String = js.native
+    var token: String
   }
   object Secret {
     

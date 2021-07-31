@@ -12,7 +12,7 @@ Simple helper tools for interacting synchronously with user at command line
 | Keywords           | readline, synchronous, prompt, question, wait, block |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 53924 |
+| # downloads        | 63408 |
 | # stars            | 1 |
 
 ## Links

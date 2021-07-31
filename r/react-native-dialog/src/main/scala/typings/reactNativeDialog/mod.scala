@@ -43,7 +43,6 @@ import typings.reactNativeModal.typesMod.Orientation
 import typings.reactNativeModal.typesMod.PresentationStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -54,60 +53,60 @@ object mod {
     @js.native
     class Button protected ()
       extends typings.reactNativeDialog.mod.Dialog.Button {
-      def this(props: ButtonProps with ViewProps with TextProps) = this()
+      def this(props: ButtonProps & ViewProps & TextProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: ButtonProps with ViewProps with TextProps, context: js.Any) = this()
+      def this(props: ButtonProps & ViewProps & TextProps, context: js.Any) = this()
     }
     
     @JSImport("react-native-dialog", "default.Container")
     @js.native
     class Container protected ()
       extends typings.reactNativeDialog.mod.Dialog.Container {
-      def this(props: ContainerProps with ViewProps with reactNativeModalContainerProps) = this()
+      def this(props: ContainerProps & ViewProps & reactNativeModalContainerProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: ContainerProps with ViewProps with reactNativeModalContainerProps, context: js.Any) = this()
+      def this(props: ContainerProps & ViewProps & reactNativeModalContainerProps, context: js.Any) = this()
     }
     
     @JSImport("react-native-dialog", "default.Description")
     @js.native
     class Description protected ()
       extends typings.reactNativeDialog.mod.Dialog.Description {
-      def this(props: DescriptionProps with ViewProps with TextProps) = this()
+      def this(props: DescriptionProps & ViewProps & TextProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: DescriptionProps with ViewProps with TextProps, context: js.Any) = this()
+      def this(props: DescriptionProps & ViewProps & TextProps, context: js.Any) = this()
     }
     
     @JSImport("react-native-dialog", "default.Input")
     @js.native
     class Input[T] protected ()
       extends typings.reactNativeDialog.mod.Dialog.Input[T] {
-      def this(props: InputProps[T] with ViewProps with TextInputProps) = this()
+      def this(props: InputProps[T] & ViewProps & TextInputProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: InputProps[T] with ViewProps with TextInputProps, context: js.Any) = this()
+      def this(props: InputProps[T] & ViewProps & TextInputProps, context: js.Any) = this()
     }
     
     @JSImport("react-native-dialog", "default.Title")
     @js.native
     class Title protected ()
       extends typings.reactNativeDialog.mod.Dialog.Title {
-      def this(props: TitleProps with ViewProps with TextProps) = this()
+      def this(props: TitleProps & ViewProps & TextProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: TitleProps with ViewProps with TextProps, context: js.Any) = this()
+      def this(props: TitleProps & ViewProps & TextProps, context: js.Any) = this()
     }
   }
   
@@ -116,84 +115,83 @@ object mod {
     @JSImport("react-native-dialog", "Dialog.Button")
     @js.native
     class Button protected ()
-      extends PureComponent[ButtonProps with ViewProps with TextProps, js.Object, js.Any] {
-      def this(props: ButtonProps with ViewProps with TextProps) = this()
+      extends PureComponent[ButtonProps & ViewProps & TextProps, js.Object, js.Any] {
+      def this(props: ButtonProps & ViewProps & TextProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: ButtonProps with ViewProps with TextProps, context: js.Any) = this()
+      def this(props: ButtonProps & ViewProps & TextProps, context: js.Any) = this()
     }
     
     @JSImport("react-native-dialog", "Dialog.Container")
     @js.native
     class Container protected ()
-      extends PureComponent[ContainerProps with ViewProps with reactNativeModalContainerProps, js.Object, js.Any] {
-      def this(props: ContainerProps with ViewProps with reactNativeModalContainerProps) = this()
+      extends PureComponent[ContainerProps & ViewProps & reactNativeModalContainerProps, js.Object, js.Any] {
+      def this(props: ContainerProps & ViewProps & reactNativeModalContainerProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: ContainerProps with ViewProps with reactNativeModalContainerProps, context: js.Any) = this()
+      def this(props: ContainerProps & ViewProps & reactNativeModalContainerProps, context: js.Any) = this()
     }
     
     @JSImport("react-native-dialog", "Dialog.Description")
     @js.native
     class Description protected ()
-      extends PureComponent[DescriptionProps with ViewProps with TextProps, js.Object, js.Any] {
-      def this(props: DescriptionProps with ViewProps with TextProps) = this()
+      extends PureComponent[DescriptionProps & ViewProps & TextProps, js.Object, js.Any] {
+      def this(props: DescriptionProps & ViewProps & TextProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: DescriptionProps with ViewProps with TextProps, context: js.Any) = this()
+      def this(props: DescriptionProps & ViewProps & TextProps, context: js.Any) = this()
     }
     
     @JSImport("react-native-dialog", "Dialog.Input")
     @js.native
     class Input[T] protected ()
-      extends PureComponent[InputProps[T] with ViewProps with TextInputProps, js.Object, js.Any] {
-      def this(props: InputProps[T] with ViewProps with TextInputProps) = this()
+      extends PureComponent[InputProps[T] & ViewProps & TextInputProps, js.Object, js.Any] {
+      def this(props: InputProps[T] & ViewProps & TextInputProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: InputProps[T] with ViewProps with TextInputProps, context: js.Any) = this()
+      def this(props: InputProps[T] & ViewProps & TextInputProps, context: js.Any) = this()
     }
     
     @JSImport("react-native-dialog", "Dialog.Title")
     @js.native
     class Title protected ()
-      extends PureComponent[TitleProps with ViewProps with TextProps, js.Object, js.Any] {
-      def this(props: TitleProps with ViewProps with TextProps) = this()
+      extends PureComponent[TitleProps & ViewProps & TextProps, js.Object, js.Any] {
+      def this(props: TitleProps & ViewProps & TextProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: TitleProps with ViewProps with TextProps, context: js.Any) = this()
+      def this(props: TitleProps & ViewProps & TextProps, context: js.Any) = this()
     }
   }
   
-  @js.native
   trait ButtonProps extends StObject {
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
     /**
       * default:
       *      ios     #007ff9
       *      android #169689
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * default: false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    def onPress(): Unit = js.native
+    def onPress(): Unit
   }
   object ButtonProps {
     
@@ -232,25 +230,24 @@ object mod {
     }
   }
   
-  @js.native
   trait ContainerProps extends StObject {
     
-    var blurComponentIOS: js.UndefOr[ReactNode] = js.native
+    var blurComponentIOS: js.UndefOr[ReactNode] = js.undefined
     
-    var buttonSeparatorStyle: js.UndefOr[ViewStyle] = js.native
+    var buttonSeparatorStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var children: js.Array[ReactNode] = js.native
+    var children: js.Array[ReactNode]
     
-    var contentStyle: js.UndefOr[ViewStyle] = js.native
+    var contentStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var footerStyle: js.UndefOr[ViewStyle] = js.native
+    var footerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var headerStyle: js.UndefOr[ViewStyle] = js.native
+    var headerStyle: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * default: false
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object ContainerProps {
     
@@ -307,10 +304,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DescriptionProps extends StObject {
     
-    var children: String = js.native
+    var children: String
   }
   object DescriptionProps {
     
@@ -328,14 +324,13 @@ object mod {
     }
   }
   
-  @js.native
   trait InputProps[T] extends StObject {
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var textInputRef: js.UndefOr[Ref[T]] = js.native
+    var textInputRef: js.UndefOr[Ref[T]] = js.undefined
     
-    var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object InputProps {
     
@@ -346,7 +341,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class InputPropsMutableBuilder[Self <: InputProps[_], T] (val x: Self with InputProps[T]) extends AnyVal {
+    implicit class InputPropsMutableBuilder[Self <: InputProps[?], T] (val x: Self & InputProps[T]) extends AnyVal {
       
       @scala.inline
       def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
@@ -377,10 +372,9 @@ object mod {
     }
   }
   
-  @js.native
   trait TitleProps extends StObject {
     
-    var children: String = js.native
+    var children: String
   }
   object TitleProps {
     
@@ -399,196 +393,195 @@ object mod {
   }
   
   /* Inlined std.Partial<std.Pick<react-native-modal.react-native-modal.ModalProps, std.Exclude<keyof react-native-modal.react-native-modal.ModalProps, 'isVisible'>>> */
-  @js.native
   trait reactNativeModalContainerProps extends StObject {
     
-    var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+    var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
     
-    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
     
-    var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+    var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
     
-    var accessibilityHint: js.UndefOr[String] = js.native
+    var accessibilityHint: js.UndefOr[String] = js.undefined
     
-    var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+    var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
     
-    var accessibilityLabel: js.UndefOr[String] = js.native
+    var accessibilityLabel: js.UndefOr[String] = js.undefined
     
-    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
     
-    var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+    var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
     
-    var accessibilityState: js.UndefOr[AccessibilityState] = js.native
+    var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
     
-    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
     
-    var accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+    var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
     
-    var accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+    var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
     
-    var accessible: js.UndefOr[Boolean] = js.native
+    var accessible: js.UndefOr[Boolean] = js.undefined
     
-    var animationIn: js.UndefOr[Animation | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])] = js.native
+    var animationIn: js.UndefOr[Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])] = js.undefined
     
-    var animationInTiming: js.UndefOr[Double] = js.native
+    var animationInTiming: js.UndefOr[Double] = js.undefined
     
-    var animationOut: js.UndefOr[Animation | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])] = js.native
+    var animationOut: js.UndefOr[Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])] = js.undefined
     
-    var animationOutTiming: js.UndefOr[Double] = js.native
+    var animationOutTiming: js.UndefOr[Double] = js.undefined
     
-    var avoidKeyboard: js.UndefOr[Boolean] = js.native
+    var avoidKeyboard: js.UndefOr[Boolean] = js.undefined
     
-    var backdropColor: js.UndefOr[String] = js.native
+    var backdropColor: js.UndefOr[String] = js.undefined
     
-    var backdropOpacity: js.UndefOr[Double] = js.native
+    var backdropOpacity: js.UndefOr[Double] = js.undefined
     
-    var backdropTransitionInTiming: js.UndefOr[Double] = js.native
+    var backdropTransitionInTiming: js.UndefOr[Double] = js.undefined
     
-    var backdropTransitionOutTiming: js.UndefOr[Double] = js.native
+    var backdropTransitionOutTiming: js.UndefOr[Double] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var collapsable: js.UndefOr[Boolean] = js.native
+    var collapsable: js.UndefOr[Boolean] = js.undefined
     
-    var coverScreen: js.UndefOr[Boolean] = js.native
+    var coverScreen: js.UndefOr[Boolean] = js.undefined
     
-    var customBackdrop: js.UndefOr[ReactNode] = js.native
+    var customBackdrop: js.UndefOr[ReactNode] = js.undefined
     
-    var deviceHeight: js.UndefOr[Double] = js.native
+    var deviceHeight: js.UndefOr[Double] = js.undefined
     
-    var deviceWidth: js.UndefOr[Double] = js.native
+    var deviceWidth: js.UndefOr[Double] = js.undefined
     
-    var focusable: js.UndefOr[Boolean] = js.native
+    var focusable: js.UndefOr[Boolean] = js.undefined
     
-    var hardwareAccelerated: js.UndefOr[Boolean] = js.native
+    var hardwareAccelerated: js.UndefOr[Boolean] = js.undefined
     
-    var hasBackdrop: js.UndefOr[Boolean] = js.native
+    var hasBackdrop: js.UndefOr[Boolean] = js.undefined
     
-    var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+    var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
     
-    var hideModalContentWhileAnimating: js.UndefOr[Boolean] = js.native
+    var hideModalContentWhileAnimating: js.UndefOr[Boolean] = js.undefined
     
-    var hitSlop: js.UndefOr[Insets] = js.native
+    var hitSlop: js.UndefOr[Insets] = js.undefined
     
-    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
     
-    var isTVSelectable: js.UndefOr[Boolean] = js.native
+    var isTVSelectable: js.UndefOr[Boolean] = js.undefined
     
-    var nativeID: js.UndefOr[String] = js.native
+    var nativeID: js.UndefOr[String] = js.undefined
     
-    var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.native
+    var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
     
-    var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+    var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
     
-    var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onBackButtonPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBackButtonPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onBackdropPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBackdropPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+    var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
     
-    var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onModalHide: js.UndefOr[js.Function0[Unit]] = js.native
+    var onModalHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onModalShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onModalShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onModalWillHide: js.UndefOr[js.Function0[Unit]] = js.native
+    var onModalWillHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onModalWillShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onModalWillShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onOrientationChange: js.UndefOr[OnOrientationChange] = js.native
+    var onOrientationChange: js.UndefOr[OnOrientationChange] = js.undefined
     
-    var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onSwipeCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSwipeComplete: js.UndefOr[js.Function1[/* params */ OnSwipeCompleteParams, Unit]] = js.native
+    var onSwipeComplete: js.UndefOr[js.Function1[/* params */ OnSwipeCompleteParams, Unit]] = js.undefined
     
-    var onSwipeMove: js.UndefOr[js.Function1[/* percentageShown */ Double, Unit]] = js.native
+    var onSwipeMove: js.UndefOr[js.Function1[/* percentageShown */ Double, Unit]] = js.undefined
     
-    var onSwipeStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
     
-    var presentationStyle: js.UndefOr[PresentationStyle] = js.native
+    var presentationStyle: js.UndefOr[PresentationStyle] = js.undefined
     
-    var propagateSwipe: js.UndefOr[Boolean] = js.native
+    var propagateSwipe: js.UndefOr[Boolean] = js.undefined
     
-    var removeClippedSubviews: js.UndefOr[Boolean] = js.native
+    var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
     
-    var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.native
+    var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
     
-    var scrollHorizontal: js.UndefOr[Boolean] = js.native
+    var scrollHorizontal: js.UndefOr[Boolean] = js.undefined
     
-    var scrollOffset: js.UndefOr[Double] = js.native
+    var scrollOffset: js.UndefOr[Double] = js.undefined
     
-    var scrollOffsetMax: js.UndefOr[Double] = js.native
+    var scrollOffsetMax: js.UndefOr[Double] = js.undefined
     
-    var scrollTo: js.UndefOr[OrNull[js.Function1[/* e */ _, Unit]]] = js.native
+    var scrollTo: js.UndefOr[OrNull[js.Function1[/* e */ js.Any, Unit]]] = js.undefined
     
-    var shouldRasterizeIOS: js.UndefOr[Boolean] = js.native
+    var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var supportedOrientations: js.UndefOr[js.Array[Orientation]] = js.native
+    var supportedOrientations: js.UndefOr[js.Array[Orientation]] = js.undefined
     
-    var swipeDirection: js.UndefOr[Direction | js.Array[Direction]] = js.native
+    var swipeDirection: js.UndefOr[Direction | js.Array[Direction]] = js.undefined
     
-    var swipeThreshold: js.UndefOr[Double] = js.native
+    var swipeThreshold: js.UndefOr[Double] = js.undefined
     
-    var testID: js.UndefOr[String] = js.native
+    var testID: js.UndefOr[String] = js.undefined
     
-    var tvParallaxMagnification: js.UndefOr[Double] = js.native
+    var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
     
-    var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+    var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
     
-    var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.native
+    var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
     
-    var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.native
+    var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
     
-    var tvParallaxTiltAngle: js.UndefOr[Double] = js.native
+    var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
     
-    var useNativeDriver: js.UndefOr[Boolean] = js.native
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   }
   object reactNativeModalContainerProps {
     
@@ -686,7 +679,7 @@ object mod {
       def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
       
       @scala.inline
-      def setAnimationIn(value: Animation | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
+      def setAnimationIn(value: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnimationInTiming(value: Double): Self = StObject.set(x, "animationInTiming", value.asInstanceOf[js.Any])
@@ -698,7 +691,7 @@ object mod {
       def setAnimationInUndefined: Self = StObject.set(x, "animationIn", js.undefined)
       
       @scala.inline
-      def setAnimationOut(value: Animation | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
+      def setAnimationOut(value: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnimationOutTiming(value: Double): Self = StObject.set(x, "animationOutTiming", value.asInstanceOf[js.Any])
@@ -1094,7 +1087,7 @@ object mod {
       def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
       
       @scala.inline
-      def setScrollTo(value: /* e */ _ => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+      def setScrollTo(value: /* e */ js.Any => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
       
       @scala.inline
       def setScrollToNull: Self = StObject.set(x, "scrollTo", null)

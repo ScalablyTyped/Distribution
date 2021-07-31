@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ToneAnalysis. */
-@js.native
 trait ToneAnalysis extends StObject {
   
   /** An object of type `DocumentAnalysis` that provides the results of the analysis for the full input document. */
-  var document_tone: DocumentAnalysis = js.native
+  var document_tone: DocumentAnalysis
   
   /** An array of `SentenceAnalysis` objects that provides the results of the analysis for the individual sentences of the input content. The service returns results only for the first 100 sentences of the input. The field is omitted if the `sentences` parameter of the request is set to `false`. */
-  var sentences_tone: js.UndefOr[js.Array[SentenceAnalysis]] = js.native
+  var sentences_tone: js.UndefOr[js.Array[SentenceAnalysis]] = js.undefined
 }
 object ToneAnalysis {
   

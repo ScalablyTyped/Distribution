@@ -33,159 +33,157 @@ import typings.vegaTypings.valuesMod.StringValue
 import typings.vegaTypings.valuesMod.TextBaselineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClipHeight extends StObject {
   
-  var aria: js.UndefOr[Boolean] = js.native
+  var aria: js.UndefOr[Boolean] = js.undefined
   
-  var clipHeight: js.UndefOr[Double | SignalRef] = js.native
+  var clipHeight: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var columnPadding: js.UndefOr[Double | SignalRef] = js.native
+  var columnPadding: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var columns: js.UndefOr[Double | SignalRef] = js.native
+  var columns: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var cornerRadius: js.UndefOr[NumberValue] = js.native
+  var cornerRadius: js.UndefOr[NumberValue] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var direction: js.UndefOr[Orientation] = js.native
+  var direction: js.UndefOr[Orientation] = js.undefined
   
-  var encode: js.UndefOr[LegendEncode] = js.native
+  var encode: js.UndefOr[LegendEncode] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var fillColor: js.UndefOr[ColorValue] = js.native
+  var fillColor: js.UndefOr[ColorValue] = js.undefined
   
-  var format: js.UndefOr[String | SignalRef | TimeFormatSpecifier] = js.native
+  var format: js.UndefOr[String | SignalRef | TimeFormatSpecifier] = js.undefined
   
-  var formatType: js.UndefOr[number | time | SignalRef | utc] = js.native
+  var formatType: js.UndefOr[number | time | SignalRef | utc] = js.undefined
   
-  var gradientLength: js.UndefOr[Double | SignalRef] = js.native
+  var gradientLength: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var gradientOpacity: js.UndefOr[NumberValue] = js.native
+  var gradientOpacity: js.UndefOr[NumberValue] = js.undefined
   
-  var gradientStrokeColor: js.UndefOr[ColorValue] = js.native
+  var gradientStrokeColor: js.UndefOr[ColorValue] = js.undefined
   
-  var gradientStrokeWidth: js.UndefOr[NumberValue] = js.native
+  var gradientStrokeWidth: js.UndefOr[NumberValue] = js.undefined
   
-  var gradientThickness: js.UndefOr[Double | SignalRef] = js.native
+  var gradientThickness: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var gridAlign: js.UndefOr[all | none | SignalRef | each] = js.native
+  var gridAlign: js.UndefOr[all | none | SignalRef | each] = js.undefined
   
-  var labelAlign: js.UndefOr[AlignValue] = js.native
+  var labelAlign: js.UndefOr[AlignValue] = js.undefined
   
-  var labelBaseline: js.UndefOr[TextBaselineValue] = js.native
+  var labelBaseline: js.UndefOr[TextBaselineValue] = js.undefined
   
-  var labelColor: js.UndefOr[ColorValue] = js.native
+  var labelColor: js.UndefOr[ColorValue] = js.undefined
   
-  var labelFont: js.UndefOr[StringValue] = js.native
+  var labelFont: js.UndefOr[StringValue] = js.undefined
   
-  var labelFontSize: js.UndefOr[NumberValue] = js.native
+  var labelFontSize: js.UndefOr[NumberValue] = js.undefined
   
-  var labelFontStyle: js.UndefOr[StringValue] = js.native
+  var labelFontStyle: js.UndefOr[StringValue] = js.undefined
   
-  var labelFontWeight: js.UndefOr[FontWeightValue] = js.native
+  var labelFontWeight: js.UndefOr[FontWeightValue] = js.undefined
   
-  var labelLimit: js.UndefOr[NumberValue] = js.native
+  var labelLimit: js.UndefOr[NumberValue] = js.undefined
   
-  var labelOffset: js.UndefOr[NumberValue] = js.native
+  var labelOffset: js.UndefOr[NumberValue] = js.undefined
   
-  var labelOpacity: js.UndefOr[NumberValue] = js.native
+  var labelOpacity: js.UndefOr[NumberValue] = js.undefined
   
-  var labelOverlap: js.UndefOr[Boolean | SignalRef | parity | greedy] = js.native
+  var labelOverlap: js.UndefOr[Boolean | SignalRef | parity | greedy] = js.undefined
   
-  var labelPadding: js.UndefOr[NumberValue] = js.native
+  var labelPadding: js.UndefOr[NumberValue] = js.undefined
   
-  var labelSeparation: js.UndefOr[Double | SignalRef] = js.native
+  var labelSeparation: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var legendX: js.UndefOr[NumberValue] = js.native
+  var legendX: js.UndefOr[NumberValue] = js.undefined
   
-  var legendY: js.UndefOr[NumberValue] = js.native
+  var legendY: js.UndefOr[NumberValue] = js.undefined
   
-  var offset: js.UndefOr[NumberValue] = js.native
+  var offset: js.UndefOr[NumberValue] = js.undefined
   
-  var opacity: js.UndefOr[String] = js.native
+  var opacity: js.UndefOr[String] = js.undefined
   
   var orient: js.UndefOr[
     left | right | none | bottom | top | SignalRef | `top-left` | `top-right` | `bottom-left` | `bottom-right`
-  ] = js.native
+  ] = js.undefined
   
-  var padding: js.UndefOr[NumberValue] = js.native
+  var padding: js.UndefOr[NumberValue] = js.undefined
   
-  var rowPadding: js.UndefOr[Double | SignalRef] = js.native
+  var rowPadding: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var shape: js.UndefOr[String] = js.native
+  var shape: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
-  var strokeColor: js.UndefOr[ColorValue] = js.native
+  var strokeColor: js.UndefOr[ColorValue] = js.undefined
   
-  var strokeDash: js.UndefOr[String] = js.native
+  var strokeDash: js.UndefOr[String] = js.undefined
   
-  var strokeWidth: js.UndefOr[String] = js.native
+  var strokeWidth: js.UndefOr[String] = js.undefined
   
-  var symbolDash: js.UndefOr[DashArrayValue] = js.native
+  var symbolDash: js.UndefOr[DashArrayValue] = js.undefined
   
-  var symbolDashOffset: js.UndefOr[NumberValue] = js.native
+  var symbolDashOffset: js.UndefOr[NumberValue] = js.undefined
   
-  var symbolFillColor: js.UndefOr[ColorValue] = js.native
+  var symbolFillColor: js.UndefOr[ColorValue] = js.undefined
   
-  var symbolLimit: js.UndefOr[NumberValue] = js.native
+  var symbolLimit: js.UndefOr[NumberValue] = js.undefined
   
-  var symbolOffset: js.UndefOr[NumberValue] = js.native
+  var symbolOffset: js.UndefOr[NumberValue] = js.undefined
   
-  var symbolOpacity: js.UndefOr[NumberValue] = js.native
+  var symbolOpacity: js.UndefOr[NumberValue] = js.undefined
   
-  var symbolSize: js.UndefOr[NumberValue] = js.native
+  var symbolSize: js.UndefOr[NumberValue] = js.undefined
   
-  var symbolStrokeColor: js.UndefOr[ColorValue] = js.native
+  var symbolStrokeColor: js.UndefOr[ColorValue] = js.undefined
   
-  var symbolStrokeWidth: js.UndefOr[NumberValue] = js.native
+  var symbolStrokeWidth: js.UndefOr[NumberValue] = js.undefined
   
-  var symbolType: js.UndefOr[StringValue] = js.native
+  var symbolType: js.UndefOr[StringValue] = js.undefined
   
-  var tickCount: js.UndefOr[TickCount] = js.native
+  var tickCount: js.UndefOr[TickCount] = js.undefined
   
-  var tickMinStep: js.UndefOr[Double | SignalRef] = js.native
+  var tickMinStep: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var title: js.UndefOr[String | js.Array[String] | SignalRef] = js.native
+  var title: js.UndefOr[String | js.Array[String] | SignalRef] = js.undefined
   
-  var titleAlign: js.UndefOr[AlignValue] = js.native
+  var titleAlign: js.UndefOr[AlignValue] = js.undefined
   
-  var titleAnchor: js.UndefOr[AnchorValue] = js.native
+  var titleAnchor: js.UndefOr[AnchorValue] = js.undefined
   
-  var titleBaseline: js.UndefOr[TextBaselineValue] = js.native
+  var titleBaseline: js.UndefOr[TextBaselineValue] = js.undefined
   
-  var titleColor: js.UndefOr[ColorValue] = js.native
+  var titleColor: js.UndefOr[ColorValue] = js.undefined
   
-  var titleFont: js.UndefOr[StringValue] = js.native
+  var titleFont: js.UndefOr[StringValue] = js.undefined
   
-  var titleFontSize: js.UndefOr[NumberValue] = js.native
+  var titleFontSize: js.UndefOr[NumberValue] = js.undefined
   
-  var titleFontStyle: js.UndefOr[StringValue] = js.native
+  var titleFontStyle: js.UndefOr[StringValue] = js.undefined
   
-  var titleFontWeight: js.UndefOr[FontWeightValue] = js.native
+  var titleFontWeight: js.UndefOr[FontWeightValue] = js.undefined
   
-  var titleLimit: js.UndefOr[NumberValue] = js.native
+  var titleLimit: js.UndefOr[NumberValue] = js.undefined
   
-  var titleLineHeight: js.UndefOr[NumberValue] = js.native
+  var titleLineHeight: js.UndefOr[NumberValue] = js.undefined
   
-  var titleOpacity: js.UndefOr[NumberValue] = js.native
+  var titleOpacity: js.UndefOr[NumberValue] = js.undefined
   
-  var titleOrient: js.UndefOr[OrientValue] = js.native
+  var titleOrient: js.UndefOr[OrientValue] = js.undefined
   
-  var titlePadding: js.UndefOr[NumberValue] = js.native
+  var titlePadding: js.UndefOr[NumberValue] = js.undefined
   
-  var `type`: js.UndefOr[LegendType] = js.native
+  var `type`: js.UndefOr[LegendType] = js.undefined
   
-  var values: js.UndefOr[js.Array[_] | SignalRef] = js.native
+  var values: js.UndefOr[js.Array[js.Any] | SignalRef] = js.undefined
   
-  var zindex: js.UndefOr[Double] = js.native
+  var zindex: js.UndefOr[Double] = js.undefined
 }
 object ClipHeight {
   
@@ -657,7 +655,7 @@ object ClipHeight {
     def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[_] | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

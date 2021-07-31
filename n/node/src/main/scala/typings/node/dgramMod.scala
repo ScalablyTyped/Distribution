@@ -16,10 +16,13 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dgramMod {
+  
+  @JSImport("dgram", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("dgram", "Socket")
   @js.native
@@ -63,23 +66,23 @@ object dgramMod {
     def bind(callback: js.Function0[Unit]): Unit = js.native
     def bind(options: BindOptions): Unit = js.native
     def bind(options: BindOptions, callback: js.Function0[Unit]): Unit = js.native
-    def bind(port: js.UndefOr[scala.Nothing], address: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-    def bind(port: js.UndefOr[scala.Nothing], address: java.lang.String): Unit = js.native
-    def bind(port: js.UndefOr[scala.Nothing], address: java.lang.String, callback: js.Function0[Unit]): Unit = js.native
-    def bind(port: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
     def bind(port: Double): Unit = js.native
-    def bind(port: Double, address: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
     def bind(port: Double, address: java.lang.String): Unit = js.native
     def bind(port: Double, address: java.lang.String, callback: js.Function0[Unit]): Unit = js.native
+    def bind(port: Double, address: Unit, callback: js.Function0[Unit]): Unit = js.native
     def bind(port: Double, callback: js.Function0[Unit]): Unit = js.native
+    def bind(port: Unit, address: java.lang.String): Unit = js.native
+    def bind(port: Unit, address: java.lang.String, callback: js.Function0[Unit]): Unit = js.native
+    def bind(port: Unit, address: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def bind(port: Unit, callback: js.Function0[Unit]): Unit = js.native
     
     def close(): Unit = js.native
     def close(callback: js.Function0[Unit]): Unit = js.native
     
     def connect(port: Double): Unit = js.native
-    def connect(port: Double, address: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
     def connect(port: Double, address: java.lang.String): Unit = js.native
     def connect(port: Double, address: java.lang.String, callback: js.Function0[Unit]): Unit = js.native
+    def connect(port: Double, address: Unit, callback: js.Function0[Unit]): Unit = js.native
     def connect(port: Double, callback: js.Function0[Unit]): Unit = js.native
     
     def disconnect(): Unit = js.native
@@ -176,45 +179,7 @@ object dgramMod {
       length: Double,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
-    def send(
-      msg: java.lang.String,
-      offset: Double,
-      length: Double,
-      port: js.UndefOr[scala.Nothing],
-      address: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
-    ): Unit = js.native
-    def send(
-      msg: java.lang.String,
-      offset: Double,
-      length: Double,
-      port: js.UndefOr[scala.Nothing],
-      address: java.lang.String
-    ): Unit = js.native
-    def send(
-      msg: java.lang.String,
-      offset: Double,
-      length: Double,
-      port: js.UndefOr[scala.Nothing],
-      address: java.lang.String,
-      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
-    ): Unit = js.native
-    def send(
-      msg: java.lang.String,
-      offset: Double,
-      length: Double,
-      port: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
-    ): Unit = js.native
     def send(msg: java.lang.String, offset: Double, length: Double, port: Double): Unit = js.native
-    def send(
-      msg: java.lang.String,
-      offset: Double,
-      length: Double,
-      port: Double,
-      address: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
-    ): Unit = js.native
     def send(msg: java.lang.String, offset: Double, length: Double, port: Double, address: java.lang.String): Unit = js.native
     def send(
       msg: java.lang.String,
@@ -229,33 +194,41 @@ object dgramMod {
       offset: Double,
       length: Double,
       port: Double,
+      address: Unit,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
     def send(
       msg: java.lang.String,
-      port: js.UndefOr[scala.Nothing],
-      address: js.UndefOr[scala.Nothing],
+      offset: Double,
+      length: Double,
+      port: Double,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
-    def send(msg: java.lang.String, port: js.UndefOr[scala.Nothing], address: java.lang.String): Unit = js.native
+    def send(msg: java.lang.String, offset: Double, length: Double, port: Unit, address: java.lang.String): Unit = js.native
     def send(
       msg: java.lang.String,
-      port: js.UndefOr[scala.Nothing],
+      offset: Double,
+      length: Double,
+      port: Unit,
       address: java.lang.String,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
     def send(
       msg: java.lang.String,
-      port: js.UndefOr[scala.Nothing],
+      offset: Double,
+      length: Double,
+      port: Unit,
+      address: Unit,
+      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
+    ): Unit = js.native
+    def send(
+      msg: java.lang.String,
+      offset: Double,
+      length: Double,
+      port: Unit,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
     def send(msg: java.lang.String, port: Double): Unit = js.native
-    def send(
-      msg: java.lang.String,
-      port: Double,
-      address: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
-    ): Unit = js.native
     def send(msg: java.lang.String, port: Double, address: java.lang.String): Unit = js.native
     def send(
       msg: java.lang.String,
@@ -266,45 +239,69 @@ object dgramMod {
     def send(
       msg: java.lang.String,
       port: Double,
+      address: Unit,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
-    def send(msg: js.Array[_]): Unit = js.native
-    def send(msg: js.Array[_], callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]): Unit = js.native
     def send(
-      msg: js.Array[_],
-      port: js.UndefOr[scala.Nothing],
-      address: js.UndefOr[scala.Nothing],
+      msg: java.lang.String,
+      port: Double,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
-    def send(msg: js.Array[_], port: js.UndefOr[scala.Nothing], address: java.lang.String): Unit = js.native
+    def send(msg: java.lang.String, port: Unit, address: java.lang.String): Unit = js.native
     def send(
-      msg: js.Array[_],
-      port: js.UndefOr[scala.Nothing],
+      msg: java.lang.String,
+      port: Unit,
       address: java.lang.String,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
     def send(
-      msg: js.Array[_],
-      port: js.UndefOr[scala.Nothing],
+      msg: java.lang.String,
+      port: Unit,
+      address: Unit,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
-    def send(msg: js.Array[_], port: Double): Unit = js.native
     def send(
-      msg: js.Array[_],
-      port: Double,
-      address: js.UndefOr[scala.Nothing],
+      msg: java.lang.String,
+      port: Unit,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
-    def send(msg: js.Array[_], port: Double, address: java.lang.String): Unit = js.native
+    def send(msg: js.Array[js.Any]): Unit = js.native
+    def send(msg: js.Array[js.Any], callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]): Unit = js.native
+    def send(msg: js.Array[js.Any], port: Double): Unit = js.native
+    def send(msg: js.Array[js.Any], port: Double, address: java.lang.String): Unit = js.native
     def send(
-      msg: js.Array[_],
+      msg: js.Array[js.Any],
       port: Double,
       address: java.lang.String,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
     def send(
-      msg: js.Array[_],
+      msg: js.Array[js.Any],
       port: Double,
+      address: Unit,
+      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
+    ): Unit = js.native
+    def send(
+      msg: js.Array[js.Any],
+      port: Double,
+      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
+    ): Unit = js.native
+    def send(msg: js.Array[js.Any], port: Unit, address: java.lang.String): Unit = js.native
+    def send(
+      msg: js.Array[js.Any],
+      port: Unit,
+      address: java.lang.String,
+      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
+    ): Unit = js.native
+    def send(
+      msg: js.Array[js.Any],
+      port: Unit,
+      address: Unit,
+      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
+    ): Unit = js.native
+    def send(
+      msg: js.Array[js.Any],
+      port: Unit,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
     def send(msg: Uint8Array): Unit = js.native
@@ -316,45 +313,7 @@ object dgramMod {
       length: Double,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
-    def send(
-      msg: Uint8Array,
-      offset: Double,
-      length: Double,
-      port: js.UndefOr[scala.Nothing],
-      address: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
-    ): Unit = js.native
-    def send(
-      msg: Uint8Array,
-      offset: Double,
-      length: Double,
-      port: js.UndefOr[scala.Nothing],
-      address: java.lang.String
-    ): Unit = js.native
-    def send(
-      msg: Uint8Array,
-      offset: Double,
-      length: Double,
-      port: js.UndefOr[scala.Nothing],
-      address: java.lang.String,
-      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
-    ): Unit = js.native
-    def send(
-      msg: Uint8Array,
-      offset: Double,
-      length: Double,
-      port: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
-    ): Unit = js.native
     def send(msg: Uint8Array, offset: Double, length: Double, port: Double): Unit = js.native
-    def send(
-      msg: Uint8Array,
-      offset: Double,
-      length: Double,
-      port: Double,
-      address: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
-    ): Unit = js.native
     def send(msg: Uint8Array, offset: Double, length: Double, port: Double, address: java.lang.String): Unit = js.native
     def send(
       msg: Uint8Array,
@@ -369,33 +328,41 @@ object dgramMod {
       offset: Double,
       length: Double,
       port: Double,
+      address: Unit,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
     def send(
       msg: Uint8Array,
-      port: js.UndefOr[scala.Nothing],
-      address: js.UndefOr[scala.Nothing],
+      offset: Double,
+      length: Double,
+      port: Double,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
-    def send(msg: Uint8Array, port: js.UndefOr[scala.Nothing], address: java.lang.String): Unit = js.native
+    def send(msg: Uint8Array, offset: Double, length: Double, port: Unit, address: java.lang.String): Unit = js.native
     def send(
       msg: Uint8Array,
-      port: js.UndefOr[scala.Nothing],
+      offset: Double,
+      length: Double,
+      port: Unit,
       address: java.lang.String,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
     def send(
       msg: Uint8Array,
-      port: js.UndefOr[scala.Nothing],
+      offset: Double,
+      length: Double,
+      port: Unit,
+      address: Unit,
+      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
+    ): Unit = js.native
+    def send(
+      msg: Uint8Array,
+      offset: Double,
+      length: Double,
+      port: Unit,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
     def send(msg: Uint8Array, port: Double): Unit = js.native
-    def send(
-      msg: Uint8Array,
-      port: Double,
-      address: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
-    ): Unit = js.native
     def send(msg: Uint8Array, port: Double, address: java.lang.String): Unit = js.native
     def send(
       msg: Uint8Array,
@@ -406,6 +373,30 @@ object dgramMod {
     def send(
       msg: Uint8Array,
       port: Double,
+      address: Unit,
+      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
+    ): Unit = js.native
+    def send(
+      msg: Uint8Array,
+      port: Double,
+      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
+    ): Unit = js.native
+    def send(msg: Uint8Array, port: Unit, address: java.lang.String): Unit = js.native
+    def send(
+      msg: Uint8Array,
+      port: Unit,
+      address: java.lang.String,
+      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
+    ): Unit = js.native
+    def send(
+      msg: Uint8Array,
+      port: Unit,
+      address: Unit,
+      callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
+    ): Unit = js.native
+    def send(
+      msg: Uint8Array,
+      port: Unit,
       callback: js.Function2[/* error */ Error | Null, /* bytes */ Double, Unit]
     ): Unit = js.native
     
@@ -426,29 +417,24 @@ object dgramMod {
     def unref(): this.type = js.native
   }
   
-  @JSImport("dgram", "createSocket")
-  @js.native
-  def createSocket(options: SocketOptions): Socket = js.native
-  @JSImport("dgram", "createSocket")
-  @js.native
-  def createSocket(options: SocketOptions, callback: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): Socket = js.native
-  @JSImport("dgram", "createSocket")
-  @js.native
-  def createSocket(`type`: SocketType): Socket = js.native
-  @JSImport("dgram", "createSocket")
-  @js.native
-  def createSocket(`type`: SocketType, callback: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): Socket = js.native
+  @scala.inline
+  def createSocket(options: SocketOptions): Socket = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(options.asInstanceOf[js.Any]).asInstanceOf[Socket]
+  @scala.inline
+  def createSocket(options: SocketOptions, callback: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  @scala.inline
+  def createSocket(`type`: SocketType): Socket = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any]).asInstanceOf[Socket]
+  @scala.inline
+  def createSocket(`type`: SocketType, callback: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Socket]
   
-  @js.native
   trait BindOptions extends StObject {
     
-    var address: js.UndefOr[java.lang.String] = js.native
+    var address: js.UndefOr[java.lang.String] = js.undefined
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var fd: js.UndefOr[Double] = js.native
+    var fd: js.UndefOr[Double] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object BindOptions {
     
@@ -487,16 +473,15 @@ object dgramMod {
     }
   }
   
-  @js.native
   trait RemoteInfo extends StObject {
     
-    var address: java.lang.String = js.native
+    var address: java.lang.String
     
-    var family: IPv4 | IPv6 = js.native
+    var family: IPv4 | IPv6
     
-    var port: Double = js.native
+    var port: Double
     
-    var size: Double = js.native
+    var size: Double
   }
   object RemoteInfo {
     
@@ -523,13 +508,12 @@ object dgramMod {
     }
   }
   
-  @js.native
   trait SocketOptions extends StObject {
     
     /**
       * @default false
       */
-    var ipv6Only: js.UndefOr[Boolean] = js.native
+    var ipv6Only: js.UndefOr[Boolean] = js.undefined
     
     var lookup: js.UndefOr[
         js.Function3[
@@ -543,15 +527,15 @@ object dgramMod {
           ], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var recvBufferSize: js.UndefOr[Double] = js.native
+    var recvBufferSize: js.UndefOr[Double] = js.undefined
     
-    var reuseAddr: js.UndefOr[Boolean] = js.native
+    var reuseAddr: js.UndefOr[Boolean] = js.undefined
     
-    var sendBufferSize: js.UndefOr[Double] = js.native
+    var sendBufferSize: js.UndefOr[Double] = js.undefined
     
-    var `type`: SocketType = js.native
+    var `type`: SocketType
   }
   object SocketOptions {
     

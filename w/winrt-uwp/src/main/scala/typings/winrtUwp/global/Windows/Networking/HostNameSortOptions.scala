@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Networking
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for how a list of EndpointPair objects is sorted. */
@@ -11,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object HostNameSortOptions extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Networking.HostNameSortOptions with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Networking.HostNameSortOptions & Double] = js.native
   
-  /* 0 */ val none: typings.winrtUwp.Windows.Networking.HostNameSortOptions.none with Double = js.native
+  /* 0 */ val none: typings.winrtUwp.Windows.Networking.HostNameSortOptions.none & Double = js.native
   
-  /* 1 */ val optimizeForLongConnections: typings.winrtUwp.Windows.Networking.HostNameSortOptions.optimizeForLongConnections with Double = js.native
+  /* 1 */ val optimizeForLongConnections: typings.winrtUwp.Windows.Networking.HostNameSortOptions.optimizeForLongConnections & Double = js.native
 }

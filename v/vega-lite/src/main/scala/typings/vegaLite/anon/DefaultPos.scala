@@ -9,23 +9,21 @@ import typings.vegaLite.vegaLiteStrings.zeroOrMax
 import typings.vegaLite.vegaLiteStrings.zeroOrMin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultPos extends StObject {
   
-  var defaultPos: mid | zeroOrMin | zeroOrMax | Null = js.native
+  var defaultPos: mid | zeroOrMin | zeroOrMax | Null
   
-  var isMidPoint: js.UndefOr[Boolean] = js.native
+  var isMidPoint: js.UndefOr[Boolean] = js.undefined
   
-  var vgChannel: js.UndefOr[x | y | xc | yc] = js.native
+  var vgChannel: js.UndefOr[x | y | xc | yc] = js.undefined
 }
 object DefaultPos {
   
   @scala.inline
   def apply(): DefaultPos = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(defaultPos = null)
     __obj.asInstanceOf[DefaultPos]
   }
   

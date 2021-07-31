@@ -14,10 +14,8 @@ import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefini
 import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefinitionRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait _ServerCapabilities[T] extends StObject {
   
   /**
@@ -25,125 +23,125 @@ trait _ServerCapabilities[T] extends StObject {
     * specified if the client states that it supports
     * `codeActionLiteralSupport` in its initial `initialize` request.
     */
-  var codeActionProvider: js.UndefOr[Boolean | CodeActionOptions] = js.native
+  var codeActionProvider: js.UndefOr[Boolean | CodeActionOptions] = js.undefined
   
   /**
     * The server provides code lens.
     */
-  var codeLensProvider: js.UndefOr[CodeLensOptions] = js.native
+  var codeLensProvider: js.UndefOr[CodeLensOptions] = js.undefined
   
   /**
     * The server provides color provider support.
     */
-  var colorProvider: js.UndefOr[Boolean | DocumentColorOptions | DocumentColorRegistrationOptions] = js.native
+  var colorProvider: js.UndefOr[Boolean | DocumentColorOptions | DocumentColorRegistrationOptions] = js.undefined
   
   /**
     * The server provides completion support.
     */
-  var completionProvider: js.UndefOr[CompletionOptions] = js.native
+  var completionProvider: js.UndefOr[CompletionOptions] = js.undefined
   
   /**
     * The server provides Goto Declaration support.
     */
-  var declarationProvider: js.UndefOr[Boolean | DeclarationOptions | DeclarationRegistrationOptions] = js.native
+  var declarationProvider: js.UndefOr[Boolean | DeclarationOptions | DeclarationRegistrationOptions] = js.undefined
   
   /**
     * The server provides goto definition support.
     */
-  var definitionProvider: js.UndefOr[Boolean | DefinitionOptions] = js.native
+  var definitionProvider: js.UndefOr[Boolean | DefinitionOptions] = js.undefined
   
   /**
     * The server provides document formatting.
     */
-  var documentFormattingProvider: js.UndefOr[Boolean | DocumentFormattingOptions] = js.native
+  var documentFormattingProvider: js.UndefOr[Boolean | DocumentFormattingOptions] = js.undefined
   
   /**
     * The server provides document highlight support.
     */
-  var documentHighlightProvider: js.UndefOr[Boolean | DocumentHighlightOptions] = js.native
+  var documentHighlightProvider: js.UndefOr[Boolean | DocumentHighlightOptions] = js.undefined
   
   /**
     * The server provides document link support.
     */
-  var documentLinkProvider: js.UndefOr[DocumentLinkOptions] = js.native
+  var documentLinkProvider: js.UndefOr[DocumentLinkOptions] = js.undefined
   
   /**
     * The server provides document formatting on typing.
     */
-  var documentOnTypeFormattingProvider: js.UndefOr[DocumentOnTypeFormattingOptions] = js.native
+  var documentOnTypeFormattingProvider: js.UndefOr[DocumentOnTypeFormattingOptions] = js.undefined
   
   /**
     * The server provides document range formatting.
     */
-  var documentRangeFormattingProvider: js.UndefOr[Boolean | DocumentRangeFormattingOptions] = js.native
+  var documentRangeFormattingProvider: js.UndefOr[Boolean | DocumentRangeFormattingOptions] = js.undefined
   
   /**
     * The server provides document symbol support.
     */
-  var documentSymbolProvider: js.UndefOr[Boolean | DocumentSymbolOptions] = js.native
+  var documentSymbolProvider: js.UndefOr[Boolean | DocumentSymbolOptions] = js.undefined
   
   /**
     * The server provides execute command support.
     */
-  var executeCommandProvider: js.UndefOr[ExecuteCommandOptions] = js.native
+  var executeCommandProvider: js.UndefOr[ExecuteCommandOptions] = js.undefined
   
   /**
     * Experimental server capabilities.
     */
-  var experimental: js.UndefOr[T] = js.native
+  var experimental: js.UndefOr[T] = js.undefined
   
   /**
     * The server provides folding provider support.
     */
-  var foldingRangeProvider: js.UndefOr[Boolean | FoldingRangeOptions | FoldingRangeRegistrationOptions] = js.native
+  var foldingRangeProvider: js.UndefOr[Boolean | FoldingRangeOptions | FoldingRangeRegistrationOptions] = js.undefined
   
   /**
     * The server provides hover support.
     */
-  var hoverProvider: js.UndefOr[Boolean | HoverOptions] = js.native
+  var hoverProvider: js.UndefOr[Boolean | HoverOptions] = js.undefined
   
   /**
     * The server provides Goto Implementation support.
     */
-  var implementationProvider: js.UndefOr[Boolean | ImplementationOptions | ImplementationRegistrationOptions] = js.native
+  var implementationProvider: js.UndefOr[Boolean | ImplementationOptions | ImplementationRegistrationOptions] = js.undefined
   
   /**
     * The server provides find references support.
     */
-  var referencesProvider: js.UndefOr[Boolean | ReferenceOptions] = js.native
+  var referencesProvider: js.UndefOr[Boolean | ReferenceOptions] = js.undefined
   
   /**
     * The server provides rename support. RenameOptions may only be
     * specified if the client states that it supports
     * `prepareSupport` in its initial `initialize` request.
     */
-  var renameProvider: js.UndefOr[Boolean | RenameOptions] = js.native
+  var renameProvider: js.UndefOr[Boolean | RenameOptions] = js.undefined
   
   /**
     * The server provides selection range support.
     */
-  var selectionRangeProvider: js.UndefOr[Boolean | SelectionRangeOptions | SelectionRangeRegistrationOptions] = js.native
+  var selectionRangeProvider: js.UndefOr[Boolean | SelectionRangeOptions | SelectionRangeRegistrationOptions] = js.undefined
   
   /**
     * The server provides signature help support.
     */
-  var signatureHelpProvider: js.UndefOr[SignatureHelpOptions] = js.native
+  var signatureHelpProvider: js.UndefOr[SignatureHelpOptions] = js.undefined
   
   /**
     * Defines how text documents are synced. Is either a detailed structure defining each notification or
     * for backwards compatibility the TextDocumentSyncKind number.
     */
-  var textDocumentSync: js.UndefOr[TextDocumentSyncOptions | TextDocumentSyncKind] = js.native
+  var textDocumentSync: js.UndefOr[TextDocumentSyncOptions | TextDocumentSyncKind] = js.undefined
   
   /**
     * The server provides Goto Type Definition support.
     */
-  var typeDefinitionProvider: js.UndefOr[Boolean | TypeDefinitionOptions | TypeDefinitionRegistrationOptions] = js.native
+  var typeDefinitionProvider: js.UndefOr[Boolean | TypeDefinitionOptions | TypeDefinitionRegistrationOptions] = js.undefined
   
   /**
     * The server provides workspace symbol support.
     */
-  var workspaceSymbolProvider: js.UndefOr[Boolean | WorkspaceSymbolOptions] = js.native
+  var workspaceSymbolProvider: js.UndefOr[Boolean | WorkspaceSymbolOptions] = js.undefined
 }
 object _ServerCapabilities {
   
@@ -154,7 +152,7 @@ object _ServerCapabilities {
   }
   
   @scala.inline
-  implicit class _ServerCapabilitiesMutableBuilder[Self <: _ServerCapabilities[_], T] (val x: Self with _ServerCapabilities[T]) extends AnyVal {
+  implicit class _ServerCapabilitiesMutableBuilder[Self <: _ServerCapabilities[?], T] (val x: Self & _ServerCapabilities[T]) extends AnyVal {
     
     @scala.inline
     def setCodeActionProvider(value: Boolean | CodeActionOptions): Self = StObject.set(x, "codeActionProvider", value.asInstanceOf[js.Any])

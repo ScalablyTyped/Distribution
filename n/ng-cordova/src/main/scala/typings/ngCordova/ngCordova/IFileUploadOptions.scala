@@ -3,15 +3,15 @@ package typings.ngCordova.ngCordova
 import typings.cordovaPluginFileTransfer.FileUploadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFileUploadOptions extends FileUploadOptions {
+trait IFileUploadOptions
+  extends StObject
+     with FileUploadOptions {
   
-  var encodeURI: js.UndefOr[Boolean] = js.native
+  var encodeURI: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object IFileUploadOptions {
   

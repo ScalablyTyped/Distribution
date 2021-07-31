@@ -3,32 +3,30 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response message for Execution.Execute, which will be contained in the
   * response field of the Operation.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2ExecuteResponse extends StObject {
   
   /**
     * True if the result was served from cache, false if it was executed.
     */
-  var cachedResult: js.UndefOr[Boolean] = js.native
+  var cachedResult: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Freeform informational message with details on the execution of the
     * action that may be displayed to the user upon failure or when requested
     * explicitly.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * The result of the action.
     */
-  var result: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
+  var result: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.undefined
   
   /**
     * An optional list of additional log outputs the server wishes to provide.
@@ -39,7 +37,7 @@ trait SchemaBuildBazelRemoteExecutionV2ExecuteResponse extends StObject {
     * worker&#39;s setup phase. The keys SHOULD be human readable so that a
     * client can display them to a user.
     */
-  var serverLogs: js.UndefOr[StringDictionary[SchemaBuildBazelRemoteExecutionV2LogFile]] = js.native
+  var serverLogs: js.UndefOr[StringDictionary[SchemaBuildBazelRemoteExecutionV2LogFile]] = js.undefined
   
   /**
     * If the status has a code other than `OK`, it indicates that the action
@@ -52,7 +50,7 @@ trait SchemaBuildBazelRemoteExecutionV2ExecuteResponse extends StObject {
     * stderr-related fields if it has any information available, such as the
     * stdout and stderr of a timed-out action.
     */
-  var status: js.UndefOr[SchemaGoogleRpcStatus] = js.native
+  var status: js.UndefOr[SchemaGoogleRpcStatus] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2ExecuteResponse {
   

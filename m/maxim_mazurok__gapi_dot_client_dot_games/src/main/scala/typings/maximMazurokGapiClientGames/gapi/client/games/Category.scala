@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Category extends StObject {
   
   /** The category name. */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /** Experience points earned in this category. */
-  var experiencePoints: js.UndefOr[String] = js.native
+  var experiencePoints: js.UndefOr[String] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#category`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object Category {
   

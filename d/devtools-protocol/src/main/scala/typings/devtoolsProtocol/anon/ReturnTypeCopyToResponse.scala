@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.CopyToRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.CopyToResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeCopyToResponse extends StObject {
   
-  var paramsType: js.Array[CopyToRequest] = js.native
+  var paramsType: js.Array[CopyToRequest]
   
-  var returnType: CopyToResponse = js.native
+  var returnType: CopyToResponse
 }
 object ReturnTypeCopyToResponse {
   

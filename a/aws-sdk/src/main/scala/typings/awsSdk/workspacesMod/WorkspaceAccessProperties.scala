@@ -2,46 +2,44 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceAccessProperties extends StObject {
   
   /**
     * Indicates whether users can use Android devices to access their WorkSpaces.
     */
-  var DeviceTypeAndroid: js.UndefOr[AccessPropertyValue] = js.native
+  var DeviceTypeAndroid: js.UndefOr[AccessPropertyValue] = js.undefined
   
   /**
     * Indicates whether users can use Chromebooks to access their WorkSpaces.
     */
-  var DeviceTypeChromeOs: js.UndefOr[AccessPropertyValue] = js.native
+  var DeviceTypeChromeOs: js.UndefOr[AccessPropertyValue] = js.undefined
   
   /**
     * Indicates whether users can use iOS devices to access their WorkSpaces.
     */
-  var DeviceTypeIos: js.UndefOr[AccessPropertyValue] = js.native
+  var DeviceTypeIos: js.UndefOr[AccessPropertyValue] = js.undefined
   
   /**
     * Indicates whether users can use macOS clients to access their WorkSpaces. To restrict WorkSpaces access to trusted devices (also known as managed devices) with valid certificates, specify a value of TRUST. For more information, see Restrict WorkSpaces Access to Trusted Devices. 
     */
-  var DeviceTypeOsx: js.UndefOr[AccessPropertyValue] = js.native
+  var DeviceTypeOsx: js.UndefOr[AccessPropertyValue] = js.undefined
   
   /**
     * Indicates whether users can access their WorkSpaces through a web browser.
     */
-  var DeviceTypeWeb: js.UndefOr[AccessPropertyValue] = js.native
+  var DeviceTypeWeb: js.UndefOr[AccessPropertyValue] = js.undefined
   
   /**
     * Indicates whether users can use Windows clients to access their WorkSpaces. To restrict WorkSpaces access to trusted devices (also known as managed devices) with valid certificates, specify a value of TRUST. For more information, see Restrict WorkSpaces Access to Trusted Devices. 
     */
-  var DeviceTypeWindows: js.UndefOr[AccessPropertyValue] = js.native
+  var DeviceTypeWindows: js.UndefOr[AccessPropertyValue] = js.undefined
   
   /**
     * Indicates whether users can use zero client devices to access their WorkSpaces.
     */
-  var DeviceTypeZeroClient: js.UndefOr[AccessPropertyValue] = js.native
+  var DeviceTypeZeroClient: js.UndefOr[AccessPropertyValue] = js.undefined
 }
 object WorkspaceAccessProperties {
   

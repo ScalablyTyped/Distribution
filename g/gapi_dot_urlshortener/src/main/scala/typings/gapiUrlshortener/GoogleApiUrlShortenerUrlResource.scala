@@ -3,41 +3,39 @@ package typings.gapiUrlshortener
 import typings.gapiUrlshortener.anon.AllTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiUrlShortenerUrlResource extends StObject {
   
   /**
     * A summary of the click analytics for the short and long URL. Might not be present if not requested or currently unavailable.
     */
-  var analytics: AllTime = js.native
+  var analytics: AllTime
   
   /**
     * Time the short URL was created; ISO 8601 representation using the yyyy-MM-dd'T'HH:mm:ss.SSSZZ format.
     */
-  var created: String = js.native
+  var created: String
   
   /**
     * Short URL
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The fixed string "urlshortener#url".
     */
-  var kind: String = js.native
+  var kind: String
   
   /**
     * Long URL
     */
-  var longUrl: String = js.native
+  var longUrl: String
   
   /**
     * Status of the target URL. Possible values: "OK", "MALWARE", "PHISHING", or "REMOVED".
     */
-  var status: String = js.native
+  var status: String
 }
 object GoogleApiUrlShortenerUrlResource {
   

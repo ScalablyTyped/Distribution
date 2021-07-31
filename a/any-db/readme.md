@@ -12,7 +12,7 @@ Database-agnostic connection pooling, querying, and result sets
 | Keywords           | mysql, postgres, pg, sqlite, sqlite3 |
 | # releases         | 0 |
 | # dependents       | 24 |
-| # downloads        | 86810 |
+| # downloads        | 103910 |
 | # stars            | 8 |
 
 ## Links

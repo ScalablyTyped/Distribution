@@ -2,15 +2,13 @@ package typings.intlMessageformatParser.srcTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberSkeletonToken extends StObject {
   
-  var options: js.Array[String] = js.native
+  var options: js.Array[String]
   
-  var stem: String = js.native
+  var stem: String
 }
 object NumberSkeletonToken {
   

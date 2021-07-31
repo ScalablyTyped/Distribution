@@ -2,7 +2,6 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,13 +11,19 @@ sealed trait TextDirection extends StObject
 object TextDirection extends StObject {
   
   @js.native
-  sealed trait Default extends TextDirection
+  sealed trait Default
+    extends StObject
+       with TextDirection
   
   // 1,
   @js.native
-  sealed trait LeftToRight extends TextDirection
+  sealed trait LeftToRight
+    extends StObject
+       with TextDirection
   
   // 0,
   @js.native
-  sealed trait RightToLeft extends TextDirection
+  sealed trait RightToLeft
+    extends StObject
+       with TextDirection
 }

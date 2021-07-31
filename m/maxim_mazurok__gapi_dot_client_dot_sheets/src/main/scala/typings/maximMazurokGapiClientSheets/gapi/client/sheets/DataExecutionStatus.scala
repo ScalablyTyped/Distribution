@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataExecutionStatus extends StObject {
   
   /** The error code. */
-  var errorCode: js.UndefOr[String] = js.native
+  var errorCode: js.UndefOr[String] = js.undefined
   
   /** The error message, which may be empty. */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /** Gets the time the data last successfully refreshed. */
-  var lastRefreshTime: js.UndefOr[String] = js.native
+  var lastRefreshTime: js.UndefOr[String] = js.undefined
   
   /** The state of the data execution. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object DataExecutionStatus {
   

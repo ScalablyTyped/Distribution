@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.savedFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFeedResponseThumbnailImage extends StObject {
   
-  var image_versions2: SavedFeedResponseImageVersions2 = js.native
+  var image_versions2: SavedFeedResponseImageVersions2
   
-  var preview: Null = js.native
+  var preview: Null
 }
 object SavedFeedResponseThumbnailImage {
   

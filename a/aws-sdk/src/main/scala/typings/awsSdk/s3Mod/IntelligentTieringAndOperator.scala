@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntelligentTieringAndOperator extends StObject {
   
   /**
     * An object key name prefix that identifies the subset of objects to which the configuration applies.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
   /**
     * All of these tags must exist in the object's tag set in order for the configuration to apply.
     */
-  var Tags: js.UndefOr[TagSet] = js.native
+  var Tags: js.UndefOr[TagSet] = js.undefined
 }
 object IntelligentTieringAndOperator {
   

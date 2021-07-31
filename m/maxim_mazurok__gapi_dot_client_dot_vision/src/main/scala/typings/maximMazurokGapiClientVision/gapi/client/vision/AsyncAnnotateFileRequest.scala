@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsyncAnnotateFileRequest extends StObject {
   
   /** Required. Requested features. */
-  var features: js.UndefOr[js.Array[Feature]] = js.native
+  var features: js.UndefOr[js.Array[Feature]] = js.undefined
   
   /** Additional context that may accompany the image(s) in the file. */
-  var imageContext: js.UndefOr[ImageContext] = js.native
+  var imageContext: js.UndefOr[ImageContext] = js.undefined
   
   /** Required. Information about the input file. */
-  var inputConfig: js.UndefOr[InputConfig] = js.native
+  var inputConfig: js.UndefOr[InputConfig] = js.undefined
   
   /** Required. The desired output location and metadata (e.g. format). */
-  var outputConfig: js.UndefOr[OutputConfig] = js.native
+  var outputConfig: js.UndefOr[OutputConfig] = js.undefined
 }
 object AsyncAnnotateFileRequest {
   

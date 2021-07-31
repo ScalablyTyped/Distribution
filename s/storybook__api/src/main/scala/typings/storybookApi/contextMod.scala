@@ -5,12 +5,14 @@ import typings.storybookApi.anon.Api
 import typings.storybookApi.mod.Combo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
   
-  @JSImport("@storybook/api/dist/context", "createContext")
+  @JSImport("@storybook/api/dist/context", JSImport.Namespace)
   @js.native
-  def createContext(hasApiState: Combo): Context[Api] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createContext(hasApiState: Combo): Context[Api] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(hasApiState.asInstanceOf[js.Any]).asInstanceOf[Context[Api]]
 }

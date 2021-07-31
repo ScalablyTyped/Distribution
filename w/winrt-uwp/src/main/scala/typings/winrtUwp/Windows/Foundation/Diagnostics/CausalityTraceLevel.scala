@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object CausalityTraceLevel extends StObject {
   
   /** Tracks operations that are not necessary to construct a causality chain but are interesting for developers. */
   @js.native
-  sealed trait important extends CausalityTraceLevel
+  sealed trait important
+    extends StObject
+       with CausalityTraceLevel
   
   /** Indicates all operations that are necessary to construct a causality chain, including all operations for job creation and completion and work item creation and completion. */
   @js.native
-  sealed trait required extends CausalityTraceLevel
+  sealed trait required
+    extends StObject
+       with CausalityTraceLevel
   
   /** Indicates operations that influence causality but are likely to be less interesting for developers, including actions like registering progress delegates. */
   @js.native
-  sealed trait verbose extends CausalityTraceLevel
+  sealed trait verbose
+    extends StObject
+       with CausalityTraceLevel
 }

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
   */
-@js.native
 trait PlusVideoLivePusherStyles extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var aspect: js.UndefOr[String] = js.native
+  var aspect: js.UndefOr[String] = js.undefined
   
   /**
     * 自动聚集
@@ -27,7 +25,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `auto-focus`: js.UndefOr[Boolean] = js.native
+  var `auto-focus`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否美颜
@@ -36,7 +34,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var beauty: js.UndefOr[Double] = js.native
+  var beauty: js.UndefOr[Double] = js.undefined
   
   /**
     * 开启摄像头
@@ -44,7 +42,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `enable-camera`: js.UndefOr[Boolean] = js.native
+  var `enable-camera`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * LivePusher控件的高度
@@ -55,7 +53,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * LivePusher控件左上角的水平偏移量
@@ -67,7 +65,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var left: js.UndefOr[String] = js.native
+  var left: js.UndefOr[String] = js.undefined
   
   /**
     * 推流视频模式
@@ -75,7 +73,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * 是否静音
@@ -83,7 +81,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var muted: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * LivePusher控件在Webview窗口的布局模式
@@ -94,7 +92,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * LivePusher控件左上角的垂直偏移量
@@ -105,7 +103,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var top: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.undefined
   
   /**
     * 推流地址
@@ -113,7 +111,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * 是否美白
@@ -122,7 +120,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var whiteness: js.UndefOr[Double] = js.native
+  var whiteness: js.UndefOr[Double] = js.undefined
   
   /**
     * LivePusher控件的宽度
@@ -133,7 +131,7 @@ trait PlusVideoLivePusherStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object PlusVideoLivePusherStyles {
   

@@ -5,7 +5,6 @@ import typings.react.mod.ReactInstance
 import typings.reactBootstrap.mod.TransitionCallbacks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayMod {
@@ -17,30 +16,31 @@ object overlayMod {
   
   type Overlay = Component[OverlayProps, js.Object, js.Any]
   
-  @js.native
-  trait OverlayProps extends TransitionCallbacks {
+  trait OverlayProps
+    extends StObject
+       with TransitionCallbacks {
     
     // Optional
-    var animation: js.UndefOr[js.Any] = js.native
+    var animation: js.UndefOr[js.Any] = js.undefined
     
     // TODO: Add more specific type
-    var container: js.UndefOr[js.Any] = js.native
+    var container: js.UndefOr[js.Any] = js.undefined
     
     // TODO: Add more specific type
-    var containerPadding: js.UndefOr[Double] = js.native
+    var containerPadding: js.UndefOr[Double] = js.undefined
     
     // TODO: Add more specific type
-    var onHide: js.UndefOr[js.Function] = js.native
+    var onHide: js.UndefOr[js.Function] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var rootClose: js.UndefOr[Boolean] = js.native
+    var rootClose: js.UndefOr[Boolean] = js.undefined
     
-    var shouldUpdatePosition: js.UndefOr[Boolean] = js.native
+    var shouldUpdatePosition: js.UndefOr[Boolean] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[js.Function | ReactInstance] = js.native
+    var target: js.UndefOr[js.Function | ReactInstance] = js.undefined
   }
   object OverlayProps {
     

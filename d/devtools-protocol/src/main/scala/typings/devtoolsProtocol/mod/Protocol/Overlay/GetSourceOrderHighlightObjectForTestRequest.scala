@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSourceOrderHighlightObjectForTestRequest extends StObject {
   
   /**
     * Id of the node to highlight.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
 }
 object GetSourceOrderHighlightObjectForTestRequest {
   

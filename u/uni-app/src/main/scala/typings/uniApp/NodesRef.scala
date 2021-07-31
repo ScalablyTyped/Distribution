@@ -2,7 +2,6 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,7 +23,7 @@ trait NodesRef extends StObject {
     * 获取节点的相关信息，需要获取的字段在fields中指定
     */
   def fields(): SelectorQuery = js.native
-  def fields(fields: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ NodeInfo, Unit]): SelectorQuery = js.native
+  def fields(fields: Unit, callback: js.Function1[/* result */ NodeInfo, Unit]): SelectorQuery = js.native
   def fields(fields: NodeField): SelectorQuery = js.native
   def fields(fields: NodeField, callback: js.Function1[/* result */ NodeInfo, Unit]): SelectorQuery = js.native
   

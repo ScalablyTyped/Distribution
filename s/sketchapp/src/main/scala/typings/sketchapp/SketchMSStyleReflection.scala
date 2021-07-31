@@ -3,25 +3,23 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.styleReflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSStyleReflection extends StObject {
   
-  var _class: styleReflection = js.native
+  var _class: styleReflection
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var isEnabled: Double = js.native
+  var isEnabled: Double
   
-  var strength: Double = js.native
+  var strength: Double
 }
 object SketchMSStyleReflection {
   
   @scala.inline
-  def apply(_class: styleReflection, distance: Double, isEnabled: Double, strength: Double): SketchMSStyleReflection = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], strength = strength.asInstanceOf[js.Any])
+  def apply(distance: Double, isEnabled: Double, strength: Double): SketchMSStyleReflection = {
+    val __obj = js.Dynamic.literal(_class = "styleReflection", distance = distance.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], strength = strength.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyleReflection]
   }
   

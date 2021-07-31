@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v2", "remotebuildexecution_v2.Resource$V2")
@@ -30,7 +29,7 @@ class ResourceV2 protected () extends StObject {
     */
   def getCapabilities(): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ServerCapabilities] = js.native
   def getCapabilities(callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2ServerCapabilities]): Unit = js.native
-  def getCapabilities(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ServerCapabilities] = js.native
+  def getCapabilities(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ServerCapabilities] = js.native
   def getCapabilities(params: ParamsResourceV2Getcapabilities): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ServerCapabilities] = js.native
   def getCapabilities(
     params: ParamsResourceV2Getcapabilities,

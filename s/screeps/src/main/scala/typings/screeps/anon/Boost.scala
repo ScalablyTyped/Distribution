@@ -3,10 +3,8 @@ package typings.screeps.anon
 import typings.screeps.BodyPartConstant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Boost[T /* <: BodyPartConstant */] extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait Boost[T /* <: BodyPartConstant */] extends StObject {
     */
   var boost: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: keyof screeps.anon.Dictpart[T] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The remaining amount of hit points of this body part.
     */
-  var hits: Double = js.native
+  var hits: Double
   
   /**
     * One of the body part types constants.
     */
-  var `type`: T = js.native
+  var `type`: T
 }
 object Boost {
   
@@ -38,7 +36,7 @@ object Boost {
   }
   
   @scala.inline
-  implicit class BoostMutableBuilder[Self <: Boost[_], T /* <: BodyPartConstant */] (val x: Self with Boost[T]) extends AnyVal {
+  implicit class BoostMutableBuilder[Self <: Boost[?], T /* <: BodyPartConstant */] (val x: Self & Boost[T]) extends AnyVal {
     
     @scala.inline
     def setBoost(

@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a join session request that is used to determine if the request will be accepted and initiate the session connection. */
-@js.native
 trait AllJoynAcceptSessionJoinerEventArgs extends StObject {
   
   /** Called to accept the session connection. */
-  def accept(): Unit = js.native
+  def accept(): Unit
   
   /** Indicates if the app joining the session is on the same network. */
-  var sameNetwork: Boolean = js.native
+  var sameNetwork: Boolean
   
   /** The app joining the session is on the same physical node. */
-  var samePhysicalNode: Boolean = js.native
+  var samePhysicalNode: Boolean
   
   /** The session port being used to connect to the session. */
-  var sessionPort: Double = js.native
+  var sessionPort: Double
   
   /** The traffic type supported during the session. */
-  var trafficType: AllJoynTrafficType = js.native
+  var trafficType: AllJoynTrafficType
   
   /** The unique bus name of the app requesting a session connection. */
-  var uniqueName: String = js.native
+  var uniqueName: String
 }
 object AllJoynAcceptSessionJoinerEventArgs {
   

@@ -19,7 +19,6 @@ import typings.scBroker.scBrokerStrings.warning
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scbrokerMod {
@@ -29,25 +28,25 @@ object scbrokerMod {
   class ^ () extends SCBroker {
     def this(options: Run) = this()
   }
+  @JSImport("sc-broker/scbroker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("sc-broker/scbroker", "create")
-  @js.native
-  def create(): SCBroker = js.native
-  @JSImport("sc-broker/scbroker", "create")
-  @js.native
-  def create(options: Run): SCBroker = js.native
+  @scala.inline
+  def create(): SCBroker = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SCBroker]
+  @scala.inline
+  def create(options: Run): SCBroker = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[SCBroker]
   
   type PublishMiddleware = js.Function1[/* req */ PublishMiddlewareData, Unit]
   
-  @js.native
   trait PublishMiddlewareData extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var command: js.Object = js.native
+    var command: js.Object
     
-    var socket: ComSocket = js.native
+    var socket: ComSocket
   }
   object PublishMiddlewareData {
     
@@ -149,27 +148,27 @@ object scbrokerMod {
     val `type`: broker = js.native
   }
   
-  @js.native
   trait SCBrokerOptions
-    extends /* additionalOptions */ StringDictionary[js.Any] {
+    extends StObject
+       with /* additionalOptions */ StringDictionary[js.Any] {
     
     // An ID to associate with this specific instance of SC
     // this may be useful if you are running an SC app on multiple
     // hosts - You can access the instanceId from the Broker object
     // (inside brokerController) - If you don't provide an instanceId,
     // SC will generate a random one (UUID v4)
-    var instanceId: js.UndefOr[String] = js.native
+    var instanceId: js.UndefOr[String] = js.undefined
     
     // In milliseconds, the timeout for calling res(err, data) when
     // your sendToWorker, sendToBroker or sendToMaster (IPC) call
     // expects an ACK response from the other process
     // (when callback is provided)
-    var ipcAckTimeout: js.UndefOr[Double] = js.native
+    var ipcAckTimeout: js.UndefOr[Double] = js.undefined
     
     // A key which various SC processes will use to interact with
     // scBroker broker processes securely, defaults to a 256 bits
     // cryptographically random hex string
-    var secretKey: js.UndefOr[String] = js.native
+    var secretKey: js.UndefOr[String] = js.undefined
   }
   object SCBrokerOptions {
     
@@ -204,12 +203,11 @@ object scbrokerMod {
   
   type SubscribeMiddleware = js.Function1[/* req */ SubscribeMiddlewareData, Unit]
   
-  @js.native
   trait SubscribeMiddlewareData extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var socket: ComSocket = js.native
+    var socket: ComSocket
   }
   object SubscribeMiddlewareData {
     

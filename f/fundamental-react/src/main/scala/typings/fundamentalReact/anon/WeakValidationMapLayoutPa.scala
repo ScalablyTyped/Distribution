@@ -77,86 +77,84 @@ import typings.react.mod.WheelEventHandler
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/LayoutPanel/LayoutPanel.LayoutPanelHeadProps> */
-@js.native
 trait WeakValidationMapLayoutPa extends StObject {
   
-  var about: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var about: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.native
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.undefined
   
-  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.native
+  var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   
-  var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-colindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-colindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-colspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-colspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-controls`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-controls`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-current`: js.UndefOr[Validator[js.UndefOr[page | step | location | date | time_ | Boolean | Null]]] = js.native
+  var `aria-current`: js.UndefOr[Validator[js.UndefOr[page | step | location | date | time_ | Boolean | Null]]] = js.undefined
   
-  var `aria-describedby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-describedby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-details`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-details`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[Validator[js.UndefOr[none | copy | execute | link_ | move | popup | Null]]] = js.native
+  var `aria-dropeffect`: js.UndefOr[Validator[js.UndefOr[none | copy | execute | link_ | move | popup | Null]]] = js.undefined
   
-  var `aria-errormessage`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-errormessage`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-flowto`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-flowto`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[Validator[js.UndefOr[menu_ | listbox | tree | grid | dialog | Boolean | Null]]] = js.native
+  var `aria-haspopup`: js.UndefOr[Validator[js.UndefOr[menu_ | listbox | tree | grid | dialog | Boolean | Null]]] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-invalid`: js.UndefOr[Validator[js.UndefOr[grammar | spelling | Boolean | Null]]] = js.native
+  var `aria-invalid`: js.UndefOr[Validator[js.UndefOr[grammar | spelling | Boolean | Null]]] = js.undefined
   
-  var `aria-keyshortcuts`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-label`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-label`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-labelledby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-labelledby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-level`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-level`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-live`: js.UndefOr[Validator[js.UndefOr[off | assertive | polite | Null]]] = js.native
+  var `aria-live`: js.UndefOr[Validator[js.UndefOr[off | assertive | polite | Null]]] = js.undefined
   
-  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-orientation`: js.UndefOr[Validator[js.UndefOr[horizontal | vertical | Null]]] = js.native
+  var `aria-orientation`: js.UndefOr[Validator[js.UndefOr[horizontal | vertical | Null]]] = js.undefined
   
-  var `aria-owns`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-owns`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-placeholder`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-placeholder`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-posinset`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-posinset`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-pressed`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.native
+  var `aria-pressed`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
     Validator[
@@ -164,283 +162,283 @@ trait WeakValidationMapLayoutPa extends StObject {
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`) | Null
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-roledescription`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-roledescription`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-rowcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-rowcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-rowindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-rowindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-rowspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-rowspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-setsize`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-setsize`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-sort`: js.UndefOr[Validator[js.UndefOr[none | ascending | descending | other | Null]]] = js.native
+  var `aria-sort`: js.UndefOr[Validator[js.UndefOr[none | ascending | descending | other | Null]]] = js.undefined
   
-  var `aria-valuemax`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuemax`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-valuemin`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuemin`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-valuenow`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuenow`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-valuetext`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-valuetext`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var autoCapitalize: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoCapitalize: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var autoCorrect: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoCorrect: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var autoSave: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoSave: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var color: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var color: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.native
+  var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.undefined
   
-  var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[Html | Null]]] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[Html | Null]]] = js.undefined
   
-  var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.native
+  var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.undefined
   
-  var dir: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var dir: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var draggable: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.native
+  var draggable: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
-  var headingLevel: js.UndefOr[Validator[js.UndefOr[`2` | `3` | `4` | `5` | `6` | Null]]] = js.native
+  var headingLevel: js.UndefOr[Validator[js.UndefOr[`2` | `3` | `4` | `5` | `6` | Null]]] = js.undefined
   
-  var headingStyle: js.UndefOr[Validator[js.UndefOr[`2` | `3` | `4` | `5` | `6` | Null]]] = js.native
+  var headingStyle: js.UndefOr[Validator[js.UndefOr[`2` | `3` | `4` | `5` | `6` | Null]]] = js.undefined
   
-  var hidden: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var hidden: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var inlist: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var inlist: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var inputMode: js.UndefOr[
     Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]]
-  ] = js.native
+  ] = js.undefined
   
-  var is: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var is: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var itemID: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemID: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var itemProp: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemProp: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var itemRef: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemRef: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var itemScope: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var itemScope: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var itemType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var lang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var lang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var onAbort: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onAbort: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onAnimationEnd: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onAnimationEnd: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onAnimationIteration: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onAnimationIteration: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onAnimationStart: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onAnimationStart: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onAuxClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onAuxClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onBeforeInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onBeforeInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onBlur: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onBlur: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onCanPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onCanPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onCanPlayThrough: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onCanPlayThrough: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onChange: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onChange: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onCompositionEnd: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onCompositionEnd: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onCompositionStart: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onCompositionStart: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onCompositionUpdate: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onCompositionUpdate: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onContextMenu: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onContextMenu: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onCopy: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onCopy: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onCut: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onCut: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onDoubleClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onDoubleClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onDrag: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onDrag: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onDragEnd: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onDragEnd: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onDragEnter: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onDragEnter: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onDragExit: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onDragExit: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onDragLeave: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onDragLeave: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onDragOver: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onDragOver: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onDragStart: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onDragStart: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onDrop: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onDrop: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onDurationChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onDurationChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onEmptied: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onEmptied: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onEncrypted: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onEncrypted: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onEnded: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onEnded: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onError: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onError: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onFocus: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onFocus: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onInvalid: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onInvalid: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onKeyDown: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onKeyDown: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onKeyPress: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onKeyPress: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onKeyUp: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onKeyUp: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onLoad: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onLoad: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onLoadStart: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onLoadStart: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onLoadedData: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onLoadedData: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onLoadedMetadata: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onLoadedMetadata: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onMouseDown: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onMouseDown: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onMouseEnter: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onMouseLeave: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onMouseMove: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onMouseMove: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onMouseOut: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onMouseOut: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onMouseOver: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onMouseOver: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onMouseUp: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onMouseUp: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onPaste: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onPaste: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onPause: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onPause: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onPlaying: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onPlaying: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onPointerCancel: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.native
+  var onPointerCancel: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onPointerDown: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.native
+  var onPointerDown: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onPointerEnter: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.native
+  var onPointerEnter: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onPointerLeave: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.native
+  var onPointerLeave: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onPointerMove: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.native
+  var onPointerMove: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onPointerOut: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.native
+  var onPointerOut: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onPointerOver: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.native
+  var onPointerOver: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onPointerUp: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.native
+  var onPointerUp: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onProgress: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onProgress: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onRateChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onRateChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onReset: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onReset: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onScroll: js.UndefOr[Validator[js.UndefOr[Null | UIEventHandler[HTMLDivElement]]]] = js.native
+  var onScroll: js.UndefOr[Validator[js.UndefOr[Null | UIEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onSeeked: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onSeeked: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onSeeking: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onSeeking: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onSelect: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onSelect: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onStalled: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onStalled: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onSubmit: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onSubmit: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.undefined
   
-  var onSuspend: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onSuspend: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onTimeUpdate: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onTimeUpdate: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onTouchCancel: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLDivElement]]]] = js.native
+  var onTouchCancel: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onTouchEnd: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLDivElement]]]] = js.native
+  var onTouchEnd: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onTouchMove: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLDivElement]]]] = js.native
+  var onTouchMove: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onTouchStart: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLDivElement]]]] = js.native
+  var onTouchStart: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onTransitionEnd: js.UndefOr[Validator[js.UndefOr[Null | TransitionEventHandler[HTMLDivElement]]]] = js.native
+  var onTransitionEnd: js.UndefOr[Validator[js.UndefOr[Null | TransitionEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onVolumeChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onVolumeChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onWaiting: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.native
+  var onWaiting: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var onWheel: js.UndefOr[Validator[js.UndefOr[Null | WheelEventHandler[HTMLDivElement]]]] = js.native
+  var onWheel: js.UndefOr[Validator[js.UndefOr[Null | WheelEventHandler[HTMLDivElement]]]] = js.undefined
   
-  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var prefix: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var prefix: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var property: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var property: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var radioGroup: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var radioGroup: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var resource: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var resource: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var results: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var results: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var slot: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var slot: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var spellCheck: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.native
+  var spellCheck: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
-  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.native
+  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
   
-  var suppressContentEditableWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var suppressContentEditableWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var suppressHydrationWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var suppressHydrationWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var tabIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var tabIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var title: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var title: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var translate: js.UndefOr[Validator[js.UndefOr[yes | no | Null]]] = js.native
+  var translate: js.UndefOr[Validator[js.UndefOr[yes | no | Null]]] = js.undefined
   
-  var typeof: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var typeof: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var unselectable: js.UndefOr[Validator[js.UndefOr[on | off | Null]]] = js.native
+  var unselectable: js.UndefOr[Validator[js.UndefOr[on | off | Null]]] = js.undefined
   
-  var vocab: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var vocab: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
 }
 object WeakValidationMapLayoutPa {
   
@@ -868,7 +866,7 @@ object WeakValidationMapLayoutPa {
     def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setInlist(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    def setInlist(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)

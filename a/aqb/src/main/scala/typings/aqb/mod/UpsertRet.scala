@@ -2,13 +2,11 @@ package typings.aqb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpsertRet extends StObject {
   
-  def insert(insertExpr: js.Any): UpsertRetInsertRet = js.native
+  def insert(insertExpr: js.Any): UpsertRetInsertRet
 }
 object UpsertRet {
   

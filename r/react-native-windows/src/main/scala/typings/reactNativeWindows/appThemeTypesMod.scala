@@ -2,7 +2,6 @@ package typings.reactNativeWindows
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appThemeTypesMod {
@@ -21,10 +20,9 @@ object appThemeTypesMod {
     def light: typings.reactNativeWindows.reactNativeWindowsStrings.light = "light".asInstanceOf[typings.reactNativeWindows.reactNativeWindowsStrings.light]
   }
   
-  @js.native
   trait IAppThemeChangedEvent extends StObject {
     
-    var currentTheme: AppThemeTypes = js.native
+    var currentTheme: AppThemeTypes
   }
   object IAppThemeChangedEvent {
     
@@ -42,12 +40,11 @@ object appThemeTypesMod {
     }
   }
   
-  @js.native
   trait IHighContrastChangedEvent extends StObject {
     
-    var highContrastColors: IHighContrastColors = js.native
+    var highContrastColors: IHighContrastColors
     
-    var isHighContrast: Boolean = js.native
+    var isHighContrast: Boolean
   }
   object IHighContrastChangedEvent {
     
@@ -68,24 +65,23 @@ object appThemeTypesMod {
     }
   }
   
-  @js.native
   trait IHighContrastColors extends StObject {
     
-    var ButtonFaceColor: String = js.native
+    var ButtonFaceColor: String
     
-    var ButtonTextColor: String = js.native
+    var ButtonTextColor: String
     
-    var GrayTextColor: String = js.native
+    var GrayTextColor: String
     
-    var HighlightColor: String = js.native
+    var HighlightColor: String
     
-    var HighlightTextColor: String = js.native
+    var HighlightTextColor: String
     
-    var HotlightColor: String = js.native
+    var HotlightColor: String
     
-    var WindowColor: String = js.native
+    var WindowColor: String
     
-    var WindowTextColor: String = js.native
+    var WindowTextColor: String
   }
   object IHighContrastColors {
     

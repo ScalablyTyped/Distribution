@@ -2,31 +2,29 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Location of a single cell within a table.
   */
-@js.native
 trait SchemaTableCellLocation extends StObject {
   
   /**
     * The zero-based column index. For example, the second column in the table
     * has a column index of 1.
     */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The zero-based row index. For example, the second row in the table has a
     * row index of 1.
     */
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The location where the table starts in the document.
     */
-  var tableStartLocation: js.UndefOr[SchemaLocation] = js.native
+  var tableStartLocation: js.UndefOr[SchemaLocation] = js.undefined
 }
 object SchemaTableCellLocation {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPSetSummary extends StObject {
   
   /**
     * The IPSetId for an IPSet. You can use IPSetId in a GetIPSet request to get detailed information about an IPSet.
     */
-  var IPSetId: ResourceId = js.native
+  var IPSetId: ResourceId
   
   /**
     * A friendly name or description of the IPSet. You can't change the name of an IPSet after you create it.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
 }
 object IPSetSummary {
   

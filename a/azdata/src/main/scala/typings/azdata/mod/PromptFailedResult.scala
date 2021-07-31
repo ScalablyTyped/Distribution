@@ -2,16 +2,14 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromptFailedResult extends StObject {
   
   /**
     * Type guard for differentiating user cancelled sign in errors from other errors
     */
-  var canceled: Boolean = js.native
+  var canceled: Boolean
 }
 object PromptFailedResult {
   

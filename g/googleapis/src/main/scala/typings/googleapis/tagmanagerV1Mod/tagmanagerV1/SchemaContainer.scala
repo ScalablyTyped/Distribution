@@ -2,29 +2,27 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Container.
   */
-@js.native
 trait SchemaContainer extends StObject {
   
   /**
     * GTM Account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The Container ID uniquely identifies the GTM Container.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional list of domain names associated with the Container.
     */
-  var domainName: js.UndefOr[js.Array[String]] = js.native
+  var domainName: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of enabled built-in variables. Valid values include: pageUrl,
@@ -34,44 +32,44 @@ trait SchemaContainer extends StObject {
     * newHistoryFragment, oldHistoryFragment, newHistoryState, oldHistoryState,
     * historySource, containerVersion, debugMode, randomNumber, containerId.
     */
-  var enabledBuiltInVariable: js.UndefOr[js.Array[String]] = js.native
+  var enabledBuiltInVariable: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The fingerprint of the GTM Container as computed at storage time. This
     * value is recomputed whenever the account is modified.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Container display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Container Notes.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * Container Public ID.
     */
-  var publicId: js.UndefOr[String] = js.native
+  var publicId: js.UndefOr[String] = js.undefined
   
   /**
     * Container Country ID.
     */
-  var timeZoneCountryId: js.UndefOr[String] = js.native
+  var timeZoneCountryId: js.UndefOr[String] = js.undefined
   
   /**
     * Container Time Zone ID.
     */
-  var timeZoneId: js.UndefOr[String] = js.native
+  var timeZoneId: js.UndefOr[String] = js.undefined
   
   /**
     * List of Usage Contexts for the Container. Valid values include: web,
     * android, ios.
     */
-  var usageContext: js.UndefOr[js.Array[String]] = js.native
+  var usageContext: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaContainer {
   

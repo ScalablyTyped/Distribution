@@ -3,7 +3,6 @@ package typings.downshift.mod
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,27 +24,27 @@ trait Actions[Item] extends StObject {
   def openMenu(cb: Callback): Unit = js.native
   
   def reset(): Unit = js.native
-  def reset(otherStateToSet: js.UndefOr[scala.Nothing], cb: Callback): Unit = js.native
+  def reset(otherStateToSet: Unit, cb: Callback): Unit = js.native
   def reset(otherStateToSet: Partial[StateChangeOptions[Item]]): Unit = js.native
   def reset(otherStateToSet: Partial[StateChangeOptions[Item]], cb: Callback): Unit = js.native
   
   def selectHighlightedItem(): Unit = js.native
-  def selectHighlightedItem(otherStateToSet: js.UndefOr[scala.Nothing], cb: Callback): Unit = js.native
+  def selectHighlightedItem(otherStateToSet: Unit, cb: Callback): Unit = js.native
   def selectHighlightedItem(otherStateToSet: Partial[StateChangeOptions[Item]]): Unit = js.native
   def selectHighlightedItem(otherStateToSet: Partial[StateChangeOptions[Item]], cb: Callback): Unit = js.native
   
   def selectItem(item: Item): Unit = js.native
-  def selectItem(item: Item, otherStateToSet: js.UndefOr[scala.Nothing], cb: Callback): Unit = js.native
+  def selectItem(item: Item, otherStateToSet: Unit, cb: Callback): Unit = js.native
   def selectItem(item: Item, otherStateToSet: Partial[StateChangeOptions[Item]]): Unit = js.native
   def selectItem(item: Item, otherStateToSet: Partial[StateChangeOptions[Item]], cb: Callback): Unit = js.native
   
   def selectItemAtIndex(index: Double): Unit = js.native
-  def selectItemAtIndex(index: Double, otherStateToSet: js.UndefOr[scala.Nothing], cb: Callback): Unit = js.native
+  def selectItemAtIndex(index: Double, otherStateToSet: Unit, cb: Callback): Unit = js.native
   def selectItemAtIndex(index: Double, otherStateToSet: Partial[StateChangeOptions[Item]]): Unit = js.native
   def selectItemAtIndex(index: Double, otherStateToSet: Partial[StateChangeOptions[Item]], cb: Callback): Unit = js.native
   
   def setHighlightedIndex(index: Double): Unit = js.native
-  def setHighlightedIndex(index: Double, otherStateToSet: js.UndefOr[scala.Nothing], cb: Callback): Unit = js.native
+  def setHighlightedIndex(index: Double, otherStateToSet: Unit, cb: Callback): Unit = js.native
   def setHighlightedIndex(index: Double, otherStateToSet: Partial[StateChangeOptions[Item]]): Unit = js.native
   def setHighlightedIndex(index: Double, otherStateToSet: Partial[StateChangeOptions[Item]], cb: Callback): Unit = js.native
   
@@ -57,7 +56,7 @@ trait Actions[Item] extends StObject {
   def setState(stateToSet: Partial[StateChangeOptions[Item]], cb: Callback): Unit = js.native
   
   def toggleMenu(): Unit = js.native
-  def toggleMenu(otherStateToSet: js.UndefOr[scala.Nothing], cb: Callback): Unit = js.native
+  def toggleMenu(otherStateToSet: Unit, cb: Callback): Unit = js.native
   def toggleMenu(otherStateToSet: Partial[StateChangeOptions[Item]]): Unit = js.native
   def toggleMenu(otherStateToSet: Partial[StateChangeOptions[Item]], cb: Callback): Unit = js.native
   

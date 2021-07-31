@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.mobile.ui.DetailButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofDetailButton extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): DetailButton = js.native
+  def extend(proto: js.Object): DetailButton
   
   /* static member */
-  var fn: DetailButton = js.native
+  var fn: DetailButton
 }
 object TypeofDetailButton {
   

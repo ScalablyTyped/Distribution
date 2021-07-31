@@ -5,25 +5,25 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a sequential stream of bytes to be written. */
-@js.native
-trait IOutputStream extends IClosable {
+trait IOutputStream
+  extends StObject
+     with IClosable {
   
   /**
     * Flushes data asynchronously in a sequential stream.
     * @return The stream flush operation.
     */
-  def flushAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def flushAsync(): IPromiseWithIAsyncOperation[Boolean]
   
   /**
     * Writes data asynchronously in a sequential stream.
     * @param buffer A buffer that contains the data to be written.
     * @return The byte writer operation.
     */
-  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double]
 }
 object IOutputStream {
   

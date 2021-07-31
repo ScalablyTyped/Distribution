@@ -10,7 +10,6 @@ import typings.typeorm.anon.`6`
 import typings.typeorm.platformPlatformToolsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/driver/mongodb/typings", "Db")
@@ -37,7 +36,7 @@ class Db protected () extends EventEmitter {
     * @param options Optional.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#addUser
     */
-  def addUser(username: String, password: String): js.Promise[_] = js.native
+  def addUser(username: String, password: String): js.Promise[js.Any] = js.native
   /**
     * Add a user to the database.
     *
@@ -46,8 +45,8 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#addUser
     */
-  def addUser(username: String, password: String, callback: MongoCallback[_]): Unit = js.native
-  def addUser(username: String, password: String, options: DbAddUserOptions): js.Promise[_] = js.native
+  def addUser(username: String, password: String, callback: MongoCallback[js.Any]): Unit = js.native
+  def addUser(username: String, password: String, options: DbAddUserOptions): js.Promise[js.Any] = js.native
   /**
     * Add a user to the database.
     *
@@ -57,7 +56,7 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#addUser
     */
-  def addUser(username: String, password: String, options: DbAddUserOptions, callback: MongoCallback[_]): Unit = js.native
+  def addUser(username: String, password: String, options: DbAddUserOptions, callback: MongoCallback[js.Any]): Unit = js.native
   
   /**
     * Return the Admin db instance.
@@ -73,7 +72,7 @@ class Db protected () extends EventEmitter {
     * @param options Optional.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#authenticate
     */
-  def authenticate(userName: String, password: String): js.Promise[_] = js.native
+  def authenticate(userName: String, password: String): js.Promise[js.Any] = js.native
   /**
     * Authenticate a user against the server.
     *
@@ -82,8 +81,8 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#authenticate
     */
-  def authenticate(userName: String, password: String, callback: MongoCallback[_]): Unit = js.native
-  def authenticate(userName: String, password: String, options: AuthMechanism): js.Promise[_] = js.native
+  def authenticate(userName: String, password: String, callback: MongoCallback[js.Any]): Unit = js.native
+  def authenticate(userName: String, password: String, options: AuthMechanism): js.Promise[js.Any] = js.native
   /**
     * Authenticate a user against the server.
     *
@@ -94,7 +93,7 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#authenticate
     */
-  def authenticate(userName: String, password: String, options: AuthMechanism, callback: MongoCallback[_]): Unit = js.native
+  def authenticate(userName: String, password: String, options: AuthMechanism, callback: MongoCallback[js.Any]): Unit = js.native
   
   /**
     * Current bufferMaxEntries value for the database.
@@ -132,7 +131,7 @@ class Db protected () extends EventEmitter {
     * @param name The collection name we wish to access.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#collection
     */
-  def collection(name: String): Collection[_] = js.native
+  def collection(name: String): Collection[js.Any] = js.native
   /**
     * Fetch a specific collection (containing the actual collection information). If the application does not use strict mode you can
     * can use it without a callback in the following way: var collection = db.collection('mycollection');
@@ -141,7 +140,7 @@ class Db protected () extends EventEmitter {
     * @param callback The collection result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#collection
     */
-  def collection(name: String, callback: MongoCallback[Collection[_]]): Collection[_] = js.native
+  def collection(name: String, callback: MongoCallback[Collection[js.Any]]): Collection[js.Any] = js.native
   /**
     * Fetch a specific collection (containing the actual collection information). If the application does not use strict mode you can
     * can use it without a callback in the following way: var collection = db.collection('mycollection');
@@ -151,21 +150,21 @@ class Db protected () extends EventEmitter {
     * @param callback The collection result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#collection
     */
-  def collection(name: String, options: DbCollectionOptions, callback: MongoCallback[Collection[_]]): Collection[_] = js.native
+  def collection(name: String, options: DbCollectionOptions, callback: MongoCallback[Collection[js.Any]]): Collection[js.Any] = js.native
   
   /**
     * Fetch all collections for the current db.
     *
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#collections
     */
-  def collections(): js.Promise[js.Array[Collection[_]]] = js.native
+  def collections(): js.Promise[js.Array[Collection[js.Any]]] = js.native
   /**
     * Fetch all collections for the current db.
     *
     * @param callback The results callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#collections
     */
-  def collections(callback: MongoCallback[js.Array[Collection[_]]]): Unit = js.native
+  def collections(callback: MongoCallback[js.Array[Collection[js.Any]]]): Unit = js.native
   
   /**
     * Execute a command.
@@ -174,7 +173,7 @@ class Db protected () extends EventEmitter {
     * @param options Optional.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#command
     */
-  def command(command: js.Object): js.Promise[_] = js.native
+  def command(command: js.Object): js.Promise[js.Any] = js.native
   /**
     * Execute a command.
     *
@@ -182,8 +181,8 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#command
     */
-  def command(command: js.Object, callback: MongoCallback[_]): Unit = js.native
-  def command(command: js.Object, options: `6`): js.Promise[_] = js.native
+  def command(command: js.Object, callback: MongoCallback[js.Any]): Unit = js.native
+  def command(command: js.Object, options: `6`): js.Promise[js.Any] = js.native
   /**
     * Execute a command.
     *
@@ -192,7 +191,7 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#command
     */
-  def command(command: js.Object, options: `6`, callback: MongoCallback[_]): Unit = js.native
+  def command(command: js.Object, options: `6`, callback: MongoCallback[js.Any]): Unit = js.native
   
   /**
     * Create a new collection on a server with the specified options. Use this to create capped collections.
@@ -201,7 +200,7 @@ class Db protected () extends EventEmitter {
     * @param options Optional.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#createCollection
     */
-  def createCollection(name: String): js.Promise[Collection[_]] = js.native
+  def createCollection(name: String): js.Promise[Collection[js.Any]] = js.native
   /**
     * Create a new collection on a server with the specified options. Use this to create capped collections.
     *
@@ -209,8 +208,8 @@ class Db protected () extends EventEmitter {
     * @param callback The results callback
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#createCollection
     */
-  def createCollection(name: String, callback: MongoCallback[Collection[_]]): Unit = js.native
-  def createCollection(name: String, options: CollectionCreateOptions): js.Promise[Collection[_]] = js.native
+  def createCollection(name: String, callback: MongoCallback[Collection[js.Any]]): Unit = js.native
+  def createCollection(name: String, options: CollectionCreateOptions): js.Promise[Collection[js.Any]] = js.native
   /**
     * Create a new collection on a server with the specified options. Use this to create capped collections.
     *
@@ -219,7 +218,7 @@ class Db protected () extends EventEmitter {
     * @param callback The results callback
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#createCollection
     */
-  def createCollection(name: String, options: CollectionCreateOptions, callback: MongoCallback[Collection[_]]): Unit = js.native
+  def createCollection(name: String, options: CollectionCreateOptions, callback: MongoCallback[Collection[js.Any]]): Unit = js.native
   
   /**
     * Creates an index on the db and collection collection.
@@ -229,7 +228,7 @@ class Db protected () extends EventEmitter {
     * @param options Optional.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#createIndex
     */
-  def createIndex(name: String, fieldOrSpec: String): js.Promise[_] = js.native
+  def createIndex(name: String, fieldOrSpec: String): js.Promise[js.Any] = js.native
   /**
     * Creates an index on the db and collection collection.
     *
@@ -238,8 +237,8 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#createIndex
     */
-  def createIndex(name: String, fieldOrSpec: String, callback: MongoCallback[_]): Unit = js.native
-  def createIndex(name: String, fieldOrSpec: String, options: MongodbIndexOptions): js.Promise[_] = js.native
+  def createIndex(name: String, fieldOrSpec: String, callback: MongoCallback[js.Any]): Unit = js.native
+  def createIndex(name: String, fieldOrSpec: String, options: MongodbIndexOptions): js.Promise[js.Any] = js.native
   /**
     * Creates an index on the db and collection collection.
     *
@@ -249,11 +248,16 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#createIndex
     */
-  def createIndex(name: String, fieldOrSpec: String, options: MongodbIndexOptions, callback: MongoCallback[_]): Unit = js.native
-  def createIndex(name: String, fieldOrSpec: js.Object): js.Promise[_] = js.native
-  def createIndex(name: String, fieldOrSpec: js.Object, callback: MongoCallback[_]): Unit = js.native
-  def createIndex(name: String, fieldOrSpec: js.Object, options: MongodbIndexOptions): js.Promise[_] = js.native
-  def createIndex(name: String, fieldOrSpec: js.Object, options: MongodbIndexOptions, callback: MongoCallback[_]): Unit = js.native
+  def createIndex(name: String, fieldOrSpec: String, options: MongodbIndexOptions, callback: MongoCallback[js.Any]): Unit = js.native
+  def createIndex(name: String, fieldOrSpec: js.Object): js.Promise[js.Any] = js.native
+  def createIndex(name: String, fieldOrSpec: js.Object, callback: MongoCallback[js.Any]): Unit = js.native
+  def createIndex(name: String, fieldOrSpec: js.Object, options: MongodbIndexOptions): js.Promise[js.Any] = js.native
+  def createIndex(
+    name: String,
+    fieldOrSpec: js.Object,
+    options: MongodbIndexOptions,
+    callback: MongoCallback[js.Any]
+  ): Unit = js.native
   
   /**
     * The name of the database this instance represents.
@@ -303,14 +307,14 @@ class Db protected () extends EventEmitter {
     *
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#dropDatabase
     */
-  def dropDatabase(): js.Promise[_] = js.native
+  def dropDatabase(): js.Promise[js.Any] = js.native
   /**
     * Drop a database, removing it permanently from the server.
     *
     * @param callback The results callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#dropDatabase
     */
-  def dropDatabase(callback: MongoCallback[_]): Unit = js.native
+  def dropDatabase(callback: MongoCallback[js.Any]): Unit = js.native
   
   /**
     * Runs a command on the database as admin.
@@ -319,7 +323,7 @@ class Db protected () extends EventEmitter {
     * @param options Optional.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#executeDbAdminCommand
     */
-  def executeDbAdminCommand(command: js.Object): js.Promise[_] = js.native
+  def executeDbAdminCommand(command: js.Object): js.Promise[js.Any] = js.native
   /**
     * Runs a command on the database as admin.
     *
@@ -327,8 +331,8 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#executeDbAdminCommand
     */
-  def executeDbAdminCommand(command: js.Object, callback: MongoCallback[_]): Unit = js.native
-  def executeDbAdminCommand(command: js.Object, options: ExecuteDbAdminCommandOptions): js.Promise[_] = js.native
+  def executeDbAdminCommand(command: js.Object, callback: MongoCallback[js.Any]): Unit = js.native
+  def executeDbAdminCommand(command: js.Object, options: ExecuteDbAdminCommandOptions): js.Promise[js.Any] = js.native
   /**
     * Runs a command on the database as admin.
     *
@@ -337,7 +341,7 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#executeDbAdminCommand
     */
-  def executeDbAdminCommand(command: js.Object, options: ExecuteDbAdminCommandOptions, callback: MongoCallback[_]): Unit = js.native
+  def executeDbAdminCommand(command: js.Object, options: ExecuteDbAdminCommandOptions, callback: MongoCallback[js.Any]): Unit = js.native
   
   /**
     * Retrieves this collections index info.
@@ -346,7 +350,7 @@ class Db protected () extends EventEmitter {
     * @param options Optional.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#indexInformation
     */
-  def indexInformation(name: String): js.Promise[_] = js.native
+  def indexInformation(name: String): js.Promise[js.Any] = js.native
   /**
     * Retrieves this collections index info.
     *
@@ -354,8 +358,8 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#indexInformation
     */
-  def indexInformation(name: String, callback: MongoCallback[_]): Unit = js.native
-  def indexInformation(name: String, options: IndexInformationOptions): js.Promise[_] = js.native
+  def indexInformation(name: String, callback: MongoCallback[js.Any]): Unit = js.native
+  def indexInformation(name: String, options: IndexInformationOptions): js.Promise[js.Any] = js.native
   /**
     * Retrieves this collections index info.
     *
@@ -364,7 +368,7 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#indexInformation
     */
-  def indexInformation(name: String, options: IndexInformationOptions, callback: MongoCallback[_]): Unit = js.native
+  def indexInformation(name: String, options: IndexInformationOptions, callback: MongoCallback[js.Any]): Unit = js.native
   
   /**
     * Get the list of all collection information for the specified db.
@@ -382,15 +386,15 @@ class Db protected () extends EventEmitter {
     * @param options Optional.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#logout
     */
-  def logout(): js.Promise[_] = js.native
+  def logout(): js.Promise[js.Any] = js.native
   /**
     * Logout user from server, fire off on all connections and remove all auth info.
     *
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#logout
     */
-  def logout(callback: MongoCallback[_]): Unit = js.native
-  def logout(options: DbName): js.Promise[_] = js.native
+  def logout(callback: MongoCallback[js.Any]): Unit = js.native
+  def logout(options: DbName): js.Promise[js.Any] = js.native
   /**
     * Logout user from server, fire off on all connections and remove all auth info.
     *
@@ -398,7 +402,7 @@ class Db protected () extends EventEmitter {
     * @param callback The command result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#logout
     */
-  def logout(options: DbName, callback: MongoCallback[_]): Unit = js.native
+  def logout(options: DbName, callback: MongoCallback[js.Any]): Unit = js.native
   
   /**
     * The current value of the parameter native_parser.
@@ -424,16 +428,16 @@ class Db protected () extends EventEmitter {
     */
   var options: js.Any = js.native
   
-  def removeUser(username: String): js.Promise[_] = js.native
+  def removeUser(username: String): js.Promise[js.Any] = js.native
   /**
     *
     * @param username
     * @param callback
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#removeUser
     */
-  def removeUser(username: String, callback: MongoCallback[_]): Unit = js.native
-  def removeUser(username: String, options: W): js.Promise[_] = js.native
-  def removeUser(username: String, options: W, callback: MongoCallback[_]): Unit = js.native
+  def removeUser(username: String, callback: MongoCallback[js.Any]): Unit = js.native
+  def removeUser(username: String, options: W): js.Promise[js.Any] = js.native
+  def removeUser(username: String, options: W, callback: MongoCallback[js.Any]): Unit = js.native
   
   /**
     * Rename a collection.
@@ -443,7 +447,7 @@ class Db protected () extends EventEmitter {
     * @param options Optional.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#renameCollection
     */
-  def renameCollection(fromCollection: String, toCollection: String): js.Promise[Collection[_]] = js.native
+  def renameCollection(fromCollection: String, toCollection: String): js.Promise[Collection[js.Any]] = js.native
   /**
     * Rename a collection.
     *
@@ -452,8 +456,8 @@ class Db protected () extends EventEmitter {
     * @param callback The results callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#renameCollection
     */
-  def renameCollection(fromCollection: String, toCollection: String, callback: MongoCallback[Collection[_]]): Unit = js.native
-  def renameCollection(fromCollection: String, toCollection: String, options: DropTarget): js.Promise[Collection[_]] = js.native
+  def renameCollection(fromCollection: String, toCollection: String, callback: MongoCallback[Collection[js.Any]]): Unit = js.native
+  def renameCollection(fromCollection: String, toCollection: String, options: DropTarget): js.Promise[Collection[js.Any]] = js.native
   /**
     * Rename a collection.
     *
@@ -467,7 +471,7 @@ class Db protected () extends EventEmitter {
     fromCollection: String,
     toCollection: String,
     options: DropTarget,
-    callback: MongoCallback[Collection[_]]
+    callback: MongoCallback[Collection[js.Any]]
   ): Unit = js.native
   
   /**
@@ -486,15 +490,15 @@ class Db protected () extends EventEmitter {
     * @param options Optional.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#stats
     */
-  def stats(): js.Promise[_] = js.native
+  def stats(): js.Promise[js.Any] = js.native
   /**
     * Get all the db statistics.
     *
     * @param callback The collection result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#stats
     */
-  def stats(callback: MongoCallback[_]): Unit = js.native
-  def stats(options: `1`): js.Promise[_] = js.native
+  def stats(callback: MongoCallback[js.Any]): Unit = js.native
+  def stats(options: `1`): js.Promise[js.Any] = js.native
   /**
     * Get all the db statistics.
     *
@@ -502,7 +506,7 @@ class Db protected () extends EventEmitter {
     * @param callback The collection result callback.
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/Db.html#stats
     */
-  def stats(options: `1`, callback: MongoCallback[_]): Unit = js.native
+  def stats(options: `1`, callback: MongoCallback[js.Any]): Unit = js.native
   
   /**
     * Create a new Change Stream, watching for new changes (insertions, updates, replacements, deletions, and invalidations) in this database. Will ignore all changes to system collections.
@@ -511,9 +515,9 @@ class Db protected () extends EventEmitter {
     * @see http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#watch
     */
   def watch(): ChangeStream = js.native
-  def watch(pipeline: js.UndefOr[scala.Nothing], options: ChangeStreamOptionsstartABatchSize): ChangeStream = js.native
   def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
   def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptionsstartABatchSize): ChangeStream = js.native
+  def watch(pipeline: Unit, options: ChangeStreamOptionsstartABatchSize): ChangeStream = js.native
   
   /**
     * The current write concern values.

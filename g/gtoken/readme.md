@@ -12,7 +12,7 @@ Node.js Google Authentication Service Account Tokens
 | Keywords           | google, service, account, api, token, api, auth |
 | # releases         | 18 |
 | # dependents       | 20 |
-| # downloads        | 155501766 |
+| # downloads        | 168225898 |
 | # stars            | 3 |
 
 ## Links

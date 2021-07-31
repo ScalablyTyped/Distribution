@@ -3,32 +3,31 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.photo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultCachedPhoto
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var photo_file_id: String = js.native
+  var photo_file_id: String
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: photo = js.native
+  var `type`: photo
 }
 object InlineQueryResultCachedPhoto {
   
   @scala.inline
-  def apply(id: String, photo_file_id: String, `type`: photo): InlineQueryResultCachedPhoto = {
+  def apply(id: String, photo_file_id: String): InlineQueryResultCachedPhoto = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], photo_file_id = photo_file_id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("photo")
     __obj.asInstanceOf[InlineQueryResultCachedPhoto]
   }
   

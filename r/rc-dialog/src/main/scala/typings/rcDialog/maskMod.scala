@@ -6,27 +6,28 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maskMod {
   
-  @JSImport("rc-dialog/es/Dialog/Mask", JSImport.Default)
+  @JSImport("rc-dialog/es/Dialog/Mask", JSImport.Namespace)
   @js.native
-  def default(props: MaskProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: MaskProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait MaskProps extends StObject {
     
-    var maskProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
+    var maskProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
     
-    var motionName: js.UndefOr[String] = js.native
+    var motionName: js.UndefOr[String] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object MaskProps {
     

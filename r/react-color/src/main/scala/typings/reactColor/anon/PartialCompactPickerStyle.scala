@@ -3,18 +3,16 @@ package typings.reactColor.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-color.react-color/lib/components/compact/Compact.CompactPickerStylesProps> */
-@js.native
 trait PartialCompactPickerStyle extends StObject {
   
-  var Compact: js.UndefOr[CSSProperties] = js.native
+  var Compact: js.UndefOr[CSSProperties] = js.undefined
   
-  var clear: js.UndefOr[CSSProperties] = js.native
+  var clear: js.UndefOr[CSSProperties] = js.undefined
   
-  var compact: js.UndefOr[CSSProperties] = js.native
+  var compact: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialCompactPickerStyle {
   

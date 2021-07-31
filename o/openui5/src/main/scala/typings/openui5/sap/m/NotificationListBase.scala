@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Priority
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationListBase extends ListItemBase {
+trait NotificationListBase
+  extends StObject
+     with ListItemBase {
   
   /**
     * Returns the sap.m.Image or the sap.ui.core.Control used in the NotificationListBase's author

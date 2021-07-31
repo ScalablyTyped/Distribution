@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Differently to Java, the association between view and interface is fixed and cannot be changed. Otherwise, the AWT messaging would have to be
   * implemented for any window supporting Drag and Drop operations, which would be a performance issue.
   */
-@js.native
-trait XDropTarget extends XInterface {
+trait XDropTarget
+  extends StObject
+     with XInterface {
   
   /**
     * Determine the actions supported by a drop target.
     * @returns The current action or actions supported by this drop target.  By default this will include all drag and drop actions.
     * @see com.sun.star.datatransfer.dnd.DNDConstants
     */
-  var DefaultActions: Double = js.native
+  var DefaultActions: Double
   
   /**
     * Add a DropTargetListener.
@@ -29,32 +29,32 @@ trait XDropTarget extends XInterface {
     * The listener will be queried for the {@link XAutoscroll} interface to see if it supports autoscrolling.
     * @param dtl The listener to add to the notification list.
     */
-  def addDropTargetListener(dtl: XDropTargetListener): Unit = js.native
+  def addDropTargetListener(dtl: XDropTargetListener): Unit
   
   /**
     * Determine the actions supported by a drop target.
     * @returns The current action or actions supported by this drop target.  By default this will include all drag and drop actions.
     * @see com.sun.star.datatransfer.dnd.DNDConstants
     */
-  def getDefaultActions(): Double = js.native
+  def getDefaultActions(): Double
   
   /**
     * Indicates either a drop target object is active or not.
     * @returns A boolean indicating whether or not this drop target object is currently active, that is ready to accept drops.
     */
-  def isActive(): Boolean = js.native
+  def isActive(): Boolean
   
   /**
     * Remove a drop target listener.
     * @param dtl The listener to remove from notification list.
     */
-  def removeDropTargetListener(dtl: XDropTargetListener): Unit = js.native
+  def removeDropTargetListener(dtl: XDropTargetListener): Unit
   
   /**
     * Sets the drop target object active or inactive.
     * @param active A value of `TRUE` sets the drop target object active. A value of `FALSE` sets the drop target object inactive.
     */
-  def setActive(active: Boolean): Unit = js.native
+  def setActive(active: Boolean): Unit
   
   /**
     * Sets the default acceptable actions for this drop target.
@@ -65,7 +65,7 @@ trait XDropTarget extends XInterface {
     * @param actions The actions.
     * @see com.sun.star.datatransfer.dnd.DNDConstants
     */
-  def setDefaultActions(actions: Double): Unit = js.native
+  def setDefaultActions(actions: Double): Unit
 }
 object XDropTarget {
   

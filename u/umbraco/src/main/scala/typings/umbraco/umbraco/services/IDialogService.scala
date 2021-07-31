@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * injects the passed template url into a div to body of the document And renders it,
   * but does also support rendering items in an iframe, incase serverside processing is needed, or its a non-angular page
   */
-@js.native
 trait IDialogService extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait IDialogService extends StObject {
     * @param {Object} dialog the dialog object to close
     * @param {Object} args if specified this object will be sent to any callbacks registered on the dialogs.
     */
-  def close(dialog: IDialog, args: js.Any*): Unit = js.native
+  def close(dialog: IDialog, args: js.Any*): Unit
   
   /**
     * @ngdoc method
@@ -34,10 +32,10 @@ trait IDialogService extends StObject {
     * Closes all dialogs
     * @param {Object} args if specified this object will be sent to any callbacks registered on the dialogs.
     */
-  def closeAll(args: js.Any*): Unit = js.native
+  def closeAll(args: js.Any*): Unit
   
   /** Internal method that closes the dialog properly and cleans up resources */
-  def closeDialog(dialog: IDialog): Unit = js.native
+  def closeDialog(dialog: IDialog): Unit
   
   /**
     * @ngdoc method
@@ -51,9 +49,9 @@ trait IDialogService extends StObject {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def contentPicker(options: IContentPickerOptions): IModal = js.native
+  def contentPicker(options: IContentPickerOptions): IModal
   
-  var dialogs: js.UndefOr[js.Array[_]] = js.native
+  var dialogs: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * @ngdoc method
@@ -62,7 +60,7 @@ trait IDialogService extends StObject {
     * @description
     * Opens a dialog to an embed dialog
     */
-  def embedDialog(options: js.Any): Unit = js.native
+  def embedDialog(options: js.Any): Unit
   
   /**
     * @ngdoc method
@@ -75,7 +73,7 @@ trait IDialogService extends StObject {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def iconPicker(options: IIconPickerOptions): IModal = js.native
+  def iconPicker(options: IIconPickerOptions): IModal
   
   /**
     * @ngdoc method
@@ -88,7 +86,7 @@ trait IDialogService extends StObject {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def linkPicker(options: ILinkPickerOptions): IModal = js.native
+  def linkPicker(options: ILinkPickerOptions): IModal
   
   /**
     * @ngdoc method
@@ -101,7 +99,7 @@ trait IDialogService extends StObject {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def macroPicker(options: IMacroPickerOptions): IModal = js.native
+  def macroPicker(options: IMacroPickerOptions): IModal
   
   /**
     * @ngdoc method
@@ -115,7 +113,7 @@ trait IDialogService extends StObject {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def mediaPicker(options: IMediaPickerOptions): IModal = js.native
+  def mediaPicker(options: IMediaPickerOptions): IModal
   
   /**
     * @ngdoc method
@@ -129,7 +127,7 @@ trait IDialogService extends StObject {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def memberGroupPicker(options: IMemberGroupPickerOptions): IModal = js.native
+  def memberGroupPicker(options: IMemberGroupPickerOptions): IModal
   
   /**
     * @ngdoc method
@@ -143,7 +141,7 @@ trait IDialogService extends StObject {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def memberPicker(options: IMemberPickerOptions): IModal = js.native
+  def memberPicker(options: IMemberPickerOptions): IModal
   
   /**
     * @ngdoc method
@@ -165,10 +163,10 @@ trait IDialogService extends StObject {
     * @param {Bool} options.inline strips the modal from any animation and wrappers, used when you want to inject a dialog into an existing container
     * @returns {Object} modal object
     */
-  def open(options: IDialogRenderingOptions): IModal = js.native
+  def open(options: IDialogRenderingOptions): IModal
   
   /** Internal method that handles opening all dialogs */
-  def openDialog(options: IDialogRenderingOptions): IModal = js.native
+  def openDialog(options: IDialogRenderingOptions): IModal
   
   /**
     * @ngdoc method
@@ -183,10 +181,10 @@ trait IDialogService extends StObject {
     * @param {Object} value value sent to the property editor
     * @returns {Object} modal object
     */
-  def propertyDialog(options: IPropertyDialogOptions): IModal = js.native
+  def propertyDialog(options: IPropertyDialogOptions): IModal
   
   /** Internal method that removes all dialogs */
-  def removeAllDialogs(args: js.Any*): Unit = js.native
+  def removeAllDialogs(args: js.Any*): Unit
   
   /**
     * @ngdoc method
@@ -202,7 +200,7 @@ trait IDialogService extends StObject {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def treePicker(options: ITreePickerOptions): IModal = js.native
+  def treePicker(options: ITreePickerOptions): IModal
   
   /**
     * @ngdoc method
@@ -212,7 +210,7 @@ trait IDialogService extends StObject {
     * @description
     * Opens a dialog to show a custom YSOD
     */
-  def ysodDialog(ysodError: js.Any): Unit = js.native
+  def ysodDialog(ysodError: js.Any): Unit
 }
 object IDialogService {
   
@@ -256,7 +254,7 @@ object IDialogService {
     def setContentPicker(value: IContentPickerOptions => IModal): Self = StObject.set(x, "contentPicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDialogs(value: js.Array[_]): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
+    def setDialogs(value: js.Array[js.Any]): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDialogsUndefined: Self = StObject.set(x, "dialogs", js.undefined)

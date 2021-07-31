@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFooterResponse extends StObject {
   
   /** The ID of the created footer. */
-  var footerId: js.UndefOr[String] = js.native
+  var footerId: js.UndefOr[String] = js.undefined
 }
 object CreateFooterResponse {
   

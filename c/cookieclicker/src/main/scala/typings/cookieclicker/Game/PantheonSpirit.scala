@@ -6,57 +6,55 @@ import typings.cookieclicker.cookieclickerNumbers.`1`
 import typings.cookieclicker.cookieclickerNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PantheonSpirit extends StObject {
   
   /**
     * Additional description which is only shown if the spirit is slotted
     */
-  var activeDescFunc: js.UndefOr[js.Function0[String]] = js.native
+  var activeDescFunc: js.UndefOr[js.Function0[String]] = js.undefined
   
   /**
     * The description of the effects of having the spirit in the first slot in HTML text
     */
-  var desc1: js.UndefOr[String] = js.native
+  var desc1: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the effects of having the spirit in the second slot in HTML text
     */
-  var desc2: js.UndefOr[String] = js.native
+  var desc2: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the effects of having the spirit in the third slot in HTLM text
     */
-  var desc3: js.UndefOr[String] = js.native
+  var desc3: js.UndefOr[String] = js.undefined
   
   /**
     * The text to display after all other descriptions
     */
-  var descAfter: js.UndefOr[String] = js.native
+  var descAfter: js.UndefOr[String] = js.undefined
   
   /**
     * The text to display before all other descriptions
     */
-  var descBefore: js.UndefOr[String] = js.native
+  var descBefore: js.UndefOr[String] = js.undefined
   
-  var icon: Icon = js.native
+  var icon: Icon
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
   /**
     * The flavour text of the spirit
     */
-  var quote: String = js.native
+  var quote: String
   
   /**
     * The current slot the spirit is in
     */
-  var slot: `-1` | `0` | `1` | `2` = js.native
+  var slot: `-1` | `0` | `1` | `2`
 }
 object PantheonSpirit {
   

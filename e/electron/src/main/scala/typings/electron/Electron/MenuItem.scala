@@ -48,45 +48,43 @@ import typings.electron.electronStrings.zoomIn
 import typings.electron.electronStrings.zoomOut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuItem extends StObject {
   
-  var accelerator: js.UndefOr[Accelerator] = js.native
+  var accelerator: js.UndefOr[Accelerator] = js.undefined
   
-  var checked: Boolean = js.native
+  var checked: Boolean
   
-  var click: js.Function = js.native
+  var click: js.Function
   
-  var commandId: Double = js.native
+  var commandId: Double
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var icon: js.UndefOr[NativeImage_ | String] = js.native
+  var icon: js.UndefOr[NativeImage_ | String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var label: String = js.native
+  var label: String
   
-  var menu: Menu = js.native
+  var menu: Menu
   
-  var registerAccelerator: Boolean = js.native
+  var registerAccelerator: Boolean
   
   var role: js.UndefOr[
     undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
-  ] = js.native
+  ] = js.undefined
   
-  var sublabel: String = js.native
+  var sublabel: String
   
-  var submenu: js.UndefOr[Menu] = js.native
+  var submenu: js.UndefOr[Menu] = js.undefined
   
-  var toolTip: String = js.native
+  var toolTip: String
   
-  var `type`: normal | separator | submenu | checkbox | radio = js.native
+  var `type`: normal | separator | submenu | checkbox | radio
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object MenuItem {
   

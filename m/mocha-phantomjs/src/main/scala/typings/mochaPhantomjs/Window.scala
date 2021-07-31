@@ -2,13 +2,11 @@ package typings.mochaPhantomjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  def mochaPhantomJS(): MochaPhantomJsWindowOptions = js.native
+  def mochaPhantomJS(): MochaPhantomJsWindowOptions
 }
 object Window {
   

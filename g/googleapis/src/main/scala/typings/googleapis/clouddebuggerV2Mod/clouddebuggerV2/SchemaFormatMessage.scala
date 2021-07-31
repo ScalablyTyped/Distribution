@@ -2,13 +2,11 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a message with parameters.
   */
-@js.native
 trait SchemaFormatMessage extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaFormatMessage extends StObject {
     * $1 the first time it     is loaded.  Again, $0 is very important.` *
     * `Please pay $$10 to use $0 instead of $1.`
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * Optional parameters to be embedded into the message.
     */
-  var parameters: js.UndefOr[js.Array[String]] = js.native
+  var parameters: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaFormatMessage {
   

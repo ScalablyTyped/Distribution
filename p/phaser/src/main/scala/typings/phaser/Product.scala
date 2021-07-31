@@ -2,41 +2,39 @@ package typings.phaser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Product extends StObject {
   
   /**
     * The product description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A link to the product's associated image.
     */
-  var imageURI: js.UndefOr[String] = js.native
+  var imageURI: js.UndefOr[String] = js.undefined
   
   /**
     * The price of the product.
     */
-  var price: js.UndefOr[String] = js.native
+  var price: js.UndefOr[String] = js.undefined
   
   /**
     * The currency code for the product.
     */
-  var priceCurrencyCode: js.UndefOr[String] = js.native
+  var priceCurrencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * The product's game-specified identifier.
     */
-  var productID: js.UndefOr[String] = js.native
+  var productID: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the product.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Product {
   

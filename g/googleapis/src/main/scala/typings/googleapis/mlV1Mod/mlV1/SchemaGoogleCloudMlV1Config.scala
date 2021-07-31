@@ -2,16 +2,14 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGoogleCloudMlV1Config extends StObject {
   
   /**
     * The service account Cloud ML uses to run on TPU node.
     */
-  var tpuServiceAccount: js.UndefOr[String] = js.native
+  var tpuServiceAccount: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1Config {
   

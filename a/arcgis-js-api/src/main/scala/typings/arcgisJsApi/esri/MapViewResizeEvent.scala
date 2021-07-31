@@ -2,19 +2,17 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapViewResizeEvent extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var oldHeight: Double = js.native
+  var oldHeight: Double
   
-  var oldWidth: Double = js.native
+  var oldWidth: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object MapViewResizeEvent {
   

@@ -2,32 +2,32 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PolygonProperties extends GeometryProperties {
+trait PolygonProperties
+  extends StObject
+     with GeometryProperties {
   
   /**
     * The centroid of the polygon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html#centroid)
     */
-  var centroid: js.UndefOr[PointProperties] = js.native
+  var centroid: js.UndefOr[PointProperties] = js.undefined
   
   /**
     * Checks to see if polygon rings cross each other and indicates if the polygon is self-intersecting, which means the ring of the polygon crosses itself.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html#isSelfIntersecting)
     */
-  var isSelfIntersecting: js.UndefOr[Boolean] = js.native
+  var isSelfIntersecting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of rings.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html#rings)
     */
-  var rings: js.UndefOr[js.Array[js.Array[js.Array[Double]]]] = js.native
+  var rings: js.UndefOr[js.Array[js.Array[js.Array[Double]]]] = js.undefined
 }
 object PolygonProperties {
   

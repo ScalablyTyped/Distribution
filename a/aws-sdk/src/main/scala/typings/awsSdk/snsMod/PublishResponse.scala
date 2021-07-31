@@ -2,21 +2,19 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishResponse extends StObject {
   
   /**
     * Unique identifier assigned to the published message. Length Constraint: Maximum 100 characters
     */
-  var MessageId: js.UndefOr[messageId] = js.native
+  var MessageId: js.UndefOr[messageId] = js.undefined
   
   /**
     * This response element applies only to FIFO (first-in-first-out) topics.  The sequence number is a large, non-consecutive number that Amazon SNS assigns to each message. The length of SequenceNumber is 128 bits. SequenceNumber continues to increase for each MessageGroupId.
     */
-  var SequenceNumber: js.UndefOr[String] = js.native
+  var SequenceNumber: js.UndefOr[String] = js.undefined
 }
 object PublishResponse {
   

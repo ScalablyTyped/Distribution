@@ -2,36 +2,34 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldLevelEncryptionSummary extends StObject {
   
   /**
     * An optional comment about the field-level encryption item.
     */
-  var Comment: js.UndefOr[String] = js.native
+  var Comment: js.UndefOr[String] = js.undefined
   
   /**
     *  A summary of a content type-profile mapping. 
     */
-  var ContentTypeProfileConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.ContentTypeProfileConfig] = js.native
+  var ContentTypeProfileConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.ContentTypeProfileConfig] = js.undefined
   
   /**
     * The unique ID of a field-level encryption item.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The last time that the summary of field-level encryption items was modified.
     */
-  var LastModifiedTime: timestamp = js.native
+  var LastModifiedTime: timestamp
   
   /**
     *  A summary of a query argument-profile mapping. 
     */
-  var QueryArgProfileConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.QueryArgProfileConfig] = js.native
+  var QueryArgProfileConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.QueryArgProfileConfig] = js.undefined
 }
 object FieldLevelEncryptionSummary {
   

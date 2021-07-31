@@ -2,21 +2,21 @@ package typings.googleCloudStorage.fileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateWriteStreamOptions extends CreateResumableUploadOptions {
+trait CreateWriteStreamOptions
+  extends StObject
+     with CreateResumableUploadOptions {
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var gzip: js.UndefOr[String | Boolean] = js.native
+  var gzip: js.UndefOr[String | Boolean] = js.undefined
   
-  var resumable: js.UndefOr[Boolean] = js.native
+  var resumable: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var validation: js.UndefOr[String | Boolean] = js.native
+  var validation: js.UndefOr[String | Boolean] = js.undefined
 }
 object CreateWriteStreamOptions {
   

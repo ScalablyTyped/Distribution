@@ -2,17 +2,31 @@ package typings.pollyjsAdapter
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pollyjsAdapter.anon.Body
-import typings.pollyjsCore.mod.Request
+import typings.std.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@pollyjs/adapter", JSImport.Default)
   @js.native
-  class default () extends Adapter
+  class default ()
+    extends StObject
+       with Adapter {
+    
+    /* CompleteClass */
+    override def connect(): Unit = js.native
+    
+    /* CompleteClass */
+    override def disconnect(): Unit = js.native
+    
+    /* CompleteClass */
+    override val options: StringDictionary[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def passthroughRequest(pollyRequest: Request): js.Promise[Body] = js.native
+  }
   /* static members */
   object default {
     
@@ -25,16 +39,15 @@ object mod {
     val `type`: String = js.native
   }
   
-  @js.native
   trait Adapter extends StObject {
     
-    def connect(): Unit = js.native
+    def connect(): Unit
     
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
-    val options: StringDictionary[js.Any] = js.native
+    val options: StringDictionary[js.Any]
     
-    def passthroughRequest(pollyRequest: Request): js.Promise[Body] = js.native
+    def passthroughRequest(pollyRequest: Request): js.Promise[Body]
   }
   object Adapter {
     

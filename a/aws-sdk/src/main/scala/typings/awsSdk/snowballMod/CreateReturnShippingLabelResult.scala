@@ -2,16 +2,14 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateReturnShippingLabelResult extends StObject {
   
   /**
     * The status information of the task on a Snow device that is being returned to AWS.
     */
-  var Status: js.UndefOr[ShippingLabelStatus] = js.native
+  var Status: js.UndefOr[ShippingLabelStatus] = js.undefined
 }
 object CreateReturnShippingLabelResult {
   

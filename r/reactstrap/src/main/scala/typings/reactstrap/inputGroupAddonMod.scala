@@ -10,7 +10,6 @@ import typings.reactstrap.reactstrapStrings.prepend
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputGroupAddonMod {
@@ -22,16 +21,16 @@ object inputGroupAddonMod {
   
   type InputGroupAddon = Component[InputGroupAddonProps, js.Object, js.Any]
   
-  @js.native
   trait InputGroupAddonProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var addonType: prepend | append = js.native
+    var addonType: prepend | append
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object InputGroupAddonProps {
     
@@ -54,7 +53,7 @@ object inputGroupAddonMod {
       def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

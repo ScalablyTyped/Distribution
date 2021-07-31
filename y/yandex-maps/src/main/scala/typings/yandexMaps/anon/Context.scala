@@ -4,17 +4,15 @@ import typings.yandexMaps.mod.IEventManager
 import typings.yandexMaps.mod.IEventWorkflowController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context extends StObject {
   
-  var context: js.UndefOr[js.Object] = js.native
+  var context: js.UndefOr[js.Object] = js.undefined
   
-  var controllers: js.UndefOr[js.Array[IEventWorkflowController]] = js.native
+  var controllers: js.UndefOr[js.Array[IEventWorkflowController]] = js.undefined
   
-  var parent: js.UndefOr[IEventManager[js.Object]] = js.native
+  var parent: js.UndefOr[IEventManager[js.Object]] = js.undefined
 }
 object Context {
   

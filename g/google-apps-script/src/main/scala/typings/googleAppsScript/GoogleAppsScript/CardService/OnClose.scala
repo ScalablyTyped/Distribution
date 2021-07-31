@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,8 +18,12 @@ sealed trait OnClose extends StObject
 object OnClose extends StObject {
   
   @js.native
-  sealed trait NOTHING extends OnClose
+  sealed trait NOTHING
+    extends StObject
+       with OnClose
   
   @js.native
-  sealed trait RELOAD_ADD_ON extends OnClose
+  sealed trait RELOAD_ADD_ON
+    extends StObject
+       with OnClose
 }

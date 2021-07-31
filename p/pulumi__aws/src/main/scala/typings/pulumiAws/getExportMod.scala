@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getExportMod {
   
-  @JSImport("@pulumi/aws/cloudformation/getExport", "getExport")
+  @JSImport("@pulumi/aws/cloudformation/getExport", JSImport.Namespace)
   @js.native
-  def getExport(args: GetExportArgs): js.Promise[GetExportResult] = js.native
-  @JSImport("@pulumi/aws/cloudformation/getExport", "getExport")
-  @js.native
-  def getExport(args: GetExportArgs, opts: InvokeOptions): js.Promise[GetExportResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getExport(args: GetExportArgs): js.Promise[GetExportResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExport")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetExportResult]]
+  @scala.inline
+  def getExport(args: GetExportArgs, opts: InvokeOptions): js.Promise[GetExportResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getExport")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetExportResult]]
+  
   trait GetExportArgs extends StObject {
     
     /**
       * The name of the export as it appears in the console or from [list-exports](http://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-exports.html)
       */
-    val name: String = js.native
+    val name: String
   }
   object GetExportArgs {
     
@@ -39,25 +39,24 @@ object getExportMod {
     }
   }
   
-  @js.native
   trait GetExportResult extends StObject {
     
     /**
       * The exportingStackId (AWS ARNs) equivalent `ExportingStackId` from [list-exports](http://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-exports.html)
       */
-    val exportingStackId: String = js.native
+    val exportingStackId: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The value from Cloudformation export identified by the export name found from [list-exports](http://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-exports.html)
       */
-    val value: String = js.native
+    val value: String
   }
   object GetExportResult {
     

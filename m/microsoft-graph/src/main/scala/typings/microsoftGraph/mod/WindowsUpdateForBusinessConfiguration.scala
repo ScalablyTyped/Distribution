@@ -2,59 +2,59 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsUpdateForBusinessConfiguration extends DeviceConfiguration {
+trait WindowsUpdateForBusinessConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   /**
     * Automatic update mode. Possible values are: userDefined, notifyDownload, autoInstallAtMaintenanceTime,
     * autoInstallAndRebootAtMaintenanceTime, autoInstallAndRebootAtScheduledTime, autoInstallAndRebootWithoutEndUserControl.
     */
-  var automaticUpdateMode: js.UndefOr[AutomaticUpdateMode] = js.native
+  var automaticUpdateMode: js.UndefOr[AutomaticUpdateMode] = js.undefined
   
   /**
     * Determines which branch devices will receive their updates from. Possible values are: userDefined, all,
     * businessReadyOnly, windowsInsiderBuildFast, windowsInsiderBuildSlow, windowsInsiderBuildRelease.
     */
-  var businessReadyUpdatesOnly: js.UndefOr[WindowsUpdateType] = js.native
+  var businessReadyUpdatesOnly: js.UndefOr[WindowsUpdateType] = js.undefined
   
   /**
     * Delivery Optimization Mode. Possible values are: userDefined, httpOnly, httpWithPeeringNat,
     * httpWithPeeringPrivateGroup, httpWithInternetPeering, simpleDownload, bypassMode.
     */
-  var deliveryOptimizationMode: js.UndefOr[WindowsDeliveryOptimizationMode] = js.native
+  var deliveryOptimizationMode: js.UndefOr[WindowsDeliveryOptimizationMode] = js.undefined
   
   // Exclude Windows update Drivers
-  var driversExcluded: js.UndefOr[Boolean] = js.native
+  var driversExcluded: js.UndefOr[Boolean] = js.undefined
   
   // Defer Feature Updates by these many days
-  var featureUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.native
+  var featureUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.undefined
   
   // Feature Updates Pause Expiry datetime
-  var featureUpdatesPauseExpiryDateTime: js.UndefOr[String] = js.native
+  var featureUpdatesPauseExpiryDateTime: js.UndefOr[String] = js.undefined
   
   // Pause Feature Updates
-  var featureUpdatesPaused: js.UndefOr[Boolean] = js.native
+  var featureUpdatesPaused: js.UndefOr[Boolean] = js.undefined
   
   // Installation schedule
-  var installationSchedule: js.UndefOr[NullableOption[WindowsUpdateInstallScheduleType]] = js.native
+  var installationSchedule: js.UndefOr[NullableOption[WindowsUpdateInstallScheduleType]] = js.undefined
   
   // Allow Microsoft Update Service
-  var microsoftUpdateServiceAllowed: js.UndefOr[Boolean] = js.native
+  var microsoftUpdateServiceAllowed: js.UndefOr[Boolean] = js.undefined
   
   // The pre-release features. Possible values are: userDefined, settingsOnly, settingsAndExperimentations, notAllowed.
-  var prereleaseFeatures: js.UndefOr[PrereleaseFeatures] = js.native
+  var prereleaseFeatures: js.UndefOr[PrereleaseFeatures] = js.undefined
   
   // Defer Quality Updates by these many days
-  var qualityUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.native
+  var qualityUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.undefined
   
   // Quality Updates Pause Expiry datetime
-  var qualityUpdatesPauseExpiryDateTime: js.UndefOr[String] = js.native
+  var qualityUpdatesPauseExpiryDateTime: js.UndefOr[String] = js.undefined
   
   // Pause Quality Updates
-  var qualityUpdatesPaused: js.UndefOr[Boolean] = js.native
+  var qualityUpdatesPaused: js.UndefOr[Boolean] = js.undefined
 }
 object WindowsUpdateForBusinessConfiguration {
   

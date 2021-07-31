@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentityManagerGenerateTokenOptions extends Object {
+trait IdentityManagerGenerateTokenOptions
+  extends StObject
+     with Object {
   
   /**
     * The server URL.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#generateToken)
     */
-  var serverUrl: String = js.native
+  var serverUrl: String
   
   /**
     * Indicates if the server requires SSL.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#generateToken)
     */
-  var ssl: Boolean = js.native
+  var ssl: Boolean
   
   /**
     * The server token.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#generateToken)
     */
-  var token: String = js.native
+  var token: String
 }
 object IdentityManagerGenerateTokenOptions {
   

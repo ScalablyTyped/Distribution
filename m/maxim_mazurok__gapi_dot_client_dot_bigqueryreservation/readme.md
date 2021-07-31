@@ -10,9 +10,9 @@ TypeScript typings for BigQuery Reservation API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.bigqueryreservation |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 902 |
+| # downloads        | 1044 |
 | # stars            | 0 |
 
 ## Links

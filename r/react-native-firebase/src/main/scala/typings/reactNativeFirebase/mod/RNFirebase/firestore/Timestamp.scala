@@ -3,7 +3,6 @@ package typings.reactNativeFirebase.mod.RNFirebase.firestore
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "RNFirebase.firestore.Timestamp")
@@ -23,18 +22,19 @@ class Timestamp protected () extends StObject {
 }
 object Timestamp {
   
-  /* static member */
-  @JSImport("react-native-firebase", "RNFirebase.firestore.Timestamp.fromDate")
+  @JSImport("react-native-firebase", "RNFirebase.firestore.Timestamp")
   @js.native
-  def fromDate(date: Date): Timestamp = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("react-native-firebase", "RNFirebase.firestore.Timestamp.fromMillis")
-  @js.native
-  def fromMillis(milliseconds: Double): Timestamp = js.native
+  @scala.inline
+  def fromDate(date: Date): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
   
   /* static member */
-  @JSImport("react-native-firebase", "RNFirebase.firestore.Timestamp.now")
-  @js.native
-  def now(): Timestamp = js.native
+  @scala.inline
+  def fromMillis(milliseconds: Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  
+  /* static member */
+  @scala.inline
+  def now(): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Timestamp]
 }

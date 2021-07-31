@@ -2,29 +2,27 @@ package typings.antvG2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipItem extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var marker: js.Any = js.native
+  var marker: js.Any
   
-  var name: String = js.native
+  var name: String
   
-  var point: js.Any = js.native
+  var point: js.Any
   
-  var showMarker: Boolean = js.native
+  var showMarker: Boolean
   
-  var title: String = js.native
+  var title: String
   
-  var value: String = js.native
+  var value: String
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object TooltipItem {
   

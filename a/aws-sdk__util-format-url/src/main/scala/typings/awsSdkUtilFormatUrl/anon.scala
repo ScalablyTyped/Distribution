@@ -3,26 +3,24 @@ package typings.awsSdkUtilFormatUrl
 import typings.awsSdkTypes.httpMod.QueryParameterBag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Omit<@aws-sdk/types.@aws-sdk/types.HttpRequest, 'headers' | 'method'> */
-  @js.native
   trait OmitHttpRequestheadersmet extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var path: String = js.native
+    var path: String
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var query: js.UndefOr[QueryParameterBag] = js.native
+    var query: js.UndefOr[QueryParameterBag] = js.undefined
   }
   object OmitHttpRequestheadersmet {
     

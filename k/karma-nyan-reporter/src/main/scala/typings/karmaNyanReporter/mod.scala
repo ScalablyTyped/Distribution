@@ -2,20 +2,18 @@ package typings.karmaNyanReporter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * If you want to suppress the stack trace at the end of the test run you can use the suppressErrorReport option.
       * {@link https://github.com/dgarlitt/karma-nyan-reporter#options}
       */
-    var nyanReporter: js.UndefOr[NyanCatOptions] = js.native
+    var nyanReporter: js.UndefOr[NyanCatOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -36,7 +34,6 @@ object mod {
     }
   }
   
-  @js.native
   trait NyanCatOptions extends StObject {
     
     /**
@@ -44,27 +41,27 @@ object mod {
       * enforced min = 4, enforced max = terminal height - 1
       * @default 4
       */
-    var numberOfRainbowLines: js.UndefOr[Double] = js.native
+    var numberOfRainbowLines: js.UndefOr[Double] = js.undefined
     
     /**
       * Only render the graphic after all tests have finished.
       * This is ideal for using this reporter in a continuous integration environment
       * @default false
       */
-    var renderOnRunCompleteOnly: js.UndefOr[Boolean] = js.native
+    var renderOnRunCompleteOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Suppress the red background on errors in the error
       * report at the end of the test run.
       * @default false
       */
-    var suppressErrorHighlighting: js.UndefOr[Boolean] = js.native
+    var suppressErrorHighlighting: js.UndefOr[Boolean] = js.undefined
     
     /**
       * suppress the error report at the end of the test run
       * @default false
       */
-    var suppressErrorReport: js.UndefOr[Boolean] = js.native
+    var suppressErrorReport: js.UndefOr[Boolean] = js.undefined
   }
   object NyanCatOptions {
     

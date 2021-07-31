@@ -3,73 +3,71 @@ package typings.karmaBrowserstackLauncher
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait BrowserStackOptions extends StObject {
     
     /**  BS access key, you can also use BROWSERSTACK_ACCESS_KEY env variable */
-    var accessKey: String = js.native
+    var accessKey: String
     
     /** the BS worker build name */
-    var build: js.UndefOr[String] = js.native
+    var build: js.UndefOr[String] = js.undefined
     
     /** the browser capture timeout */
-    var captureTimeout: js.UndefOr[Double] = js.native
+    var captureTimeout: js.UndefOr[Double] = js.undefined
     
     /** force traffic through the local BrowserStack tunnel, passes flag through to BrowserStackTunnel */
-    var forcelocal: js.UndefOr[Boolean] = js.native
+    var forcelocal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @alias tunnelIdentifier
       */
-    var localIdentifier: js.UndefOr[String] = js.native
+    var localIdentifier: js.UndefOr[String] = js.undefined
     
     /** the BS worker name  */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** the BS worker project name */
-    var project: js.UndefOr[String] = js.native
+    var project: js.UndefOr[String] = js.undefined
     
     /** the host of your proxy for communicating with BrowserStack REST API and BrowserStackLocal */
-    var proxyHost: js.UndefOr[String] = js.native
+    var proxyHost: js.UndefOr[String] = js.undefined
     
     /** the password used for authentication with your proxy */
-    var proxyPass: js.UndefOr[String] = js.native
+    var proxyPass: js.UndefOr[String] = js.undefined
     
     /** the port of your proxy */
-    var proxyPort: js.UndefOr[Double] = js.native
+    var proxyPort: js.UndefOr[Double] = js.undefined
     
     /** the protocol of your proxy (optional. default: http. valid: http or https) */
-    var proxyProtocol: js.UndefOr[String] = js.native
+    var proxyProtocol: js.UndefOr[String] = js.undefined
     
     /** the username used for authentication with your proxy */
-    var proxyUser: js.UndefOr[String] = js.native
+    var proxyUser: js.UndefOr[String] = js.undefined
     
     /** how many times do you want to retry to capture the browser */
-    var retryLimit: js.UndefOr[Double] = js.native
+    var retryLimit: js.UndefOr[Double] = js.undefined
     
     /** do you wanna establish the BrowserStack tunnel */
-    var startTunnel: js.UndefOr[Boolean] = js.native
+    var startTunnel: js.UndefOr[Boolean] = js.undefined
     
     /** the BS worker timeout */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * in case you want to start the BrowserStack tunnel outside `karma` by setting `startTunnel` to `false`,
       * set the identifier passed to the `-localIdentifier` option here
       */
-    var tunnelIdentifier: js.UndefOr[String] = js.native
+    var tunnelIdentifier: js.UndefOr[String] = js.undefined
     
     /** BS username, you can also use BROWSERSTACK_USERNAME env variable */
-    var username: String = js.native
+    var username: String
     
     /** enable video recording of session on BrowserStack */
-    var video: js.UndefOr[Boolean] = js.native
+    var video: js.UndefOr[Boolean] = js.undefined
   }
   object BrowserStackOptions {
     
@@ -186,13 +184,12 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * {@link https://github.com/karma-runner/karma-browserstack-launcher#global-options}
       */
-    var browserStack: js.UndefOr[BrowserStackOptions] = js.native
+    var browserStack: js.UndefOr[BrowserStackOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -213,43 +210,43 @@ object mod {
     }
   }
   
-  @js.native
   trait CustomLauncher
-    extends /**
+    extends StObject
+       with /**
     * you can also pass through any additional options supported by browserstack. (EG. `url`, `resolution`, etc.)
     * See {@link browserstack.com/automate/capabilities} for a full list of supported options.
     */
   /* option */ StringDictionary[js.Any] {
     
     /** name of the browser */
-    var browser: js.UndefOr[String | Null] = js.native
+    var browser: js.UndefOr[String | Null] = js.undefined
     
     /** version of the browser */
-    var browser_version: js.UndefOr[String | Null] = js.native
+    var browser_version: js.UndefOr[String | Null] = js.undefined
     
     /** the BS worker build name (optional, defaults to global) */
-    var build: js.UndefOr[String] = js.native
+    var build: js.UndefOr[String] = js.undefined
     
     /** name of the device */
-    var device: js.UndefOr[String | Null] = js.native
+    var device: js.UndefOr[String | Null] = js.undefined
     
     /** the BS worker name (optional, defaults to global) */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** which platform */
-    var os: js.UndefOr[String | Null] = js.native
+    var os: js.UndefOr[String | Null] = js.undefined
     
     /** version of the platform */
-    var os_version: js.UndefOr[String | Null] = js.native
+    var os_version: js.UndefOr[String | Null] = js.undefined
     
     /** the BS worker project name (optional, defaults to global) */
-    var project: js.UndefOr[String] = js.native
+    var project: js.UndefOr[String] = js.undefined
     
     /** allows the session to run on a real mobile device instead of an emulator / simulator */
-    var realMobile: js.UndefOr[Boolean] = js.native
+    var realMobile: js.UndefOr[Boolean] = js.undefined
     
     /** allows the session to run on a real mobile device instead of an emulator / simulator */
-    var real_mobile: js.UndefOr[Boolean] = js.native
+    var real_mobile: js.UndefOr[Boolean] = js.undefined
   }
   object CustomLauncher {
     

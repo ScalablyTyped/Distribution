@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1InputConfig extends StObject {
   
   /** BigQuery input source. */
-  var bigQuerySource: js.UndefOr[GoogleCloudRecommendationengineV1beta1BigQuerySource] = js.native
+  var bigQuerySource: js.UndefOr[GoogleCloudRecommendationengineV1beta1BigQuerySource] = js.undefined
   
   /** The Inline source for the input content for Catalog items. */
-  var catalogInlineSource: js.UndefOr[GoogleCloudRecommendationengineV1beta1CatalogInlineSource] = js.native
+  var catalogInlineSource: js.UndefOr[GoogleCloudRecommendationengineV1beta1CatalogInlineSource] = js.undefined
   
   /** Google Cloud Storage location for the input content. */
-  var gcsSource: js.UndefOr[GoogleCloudRecommendationengineV1beta1GcsSource] = js.native
+  var gcsSource: js.UndefOr[GoogleCloudRecommendationengineV1beta1GcsSource] = js.undefined
   
   /** The Inline source for the input content for UserEvents. */
-  var userEventInlineSource: js.UndefOr[GoogleCloudRecommendationengineV1beta1UserEventInlineSource] = js.native
+  var userEventInlineSource: js.UndefOr[GoogleCloudRecommendationengineV1beta1UserEventInlineSource] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1InputConfig {
   

@@ -3,47 +3,47 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HostInfo extends ResponseEntry {
+trait HostInfo
+  extends StObject
+     with ResponseEntry {
   
-  var connectionBandwidthReceivedLastMinuteTotal: Double = js.native
+  var connectionBandwidthReceivedLastMinuteTotal: Double
   
-  var connectionBandwidthReceivedLastSecondTotal: Double = js.native
+  var connectionBandwidthReceivedLastSecondTotal: Double
   
-  var connectionBandwidthSentLastMinuteTotal: Double = js.native
+  var connectionBandwidthSentLastMinuteTotal: Double
   
-  var connectionBandwidthSentLastSecondTotal: Double = js.native
+  var connectionBandwidthSentLastSecondTotal: Double
   
-  var connectionBytesReceivedTotal: Double = js.native
+  var connectionBytesReceivedTotal: Double
   
-  var connectionBytesSentTotal: Double = js.native
+  var connectionBytesSentTotal: Double
   
-  var connectionFiletransferBandwidthReceived: Double = js.native
+  var connectionFiletransferBandwidthReceived: Double
   
-  var connectionFiletransferBandwidthSent: Double = js.native
+  var connectionFiletransferBandwidthSent: Double
   
-  var connectionFiletransferBytesReceivedTotal: Double = js.native
+  var connectionFiletransferBytesReceivedTotal: Double
   
-  var connectionFiletransferBytesSentTotal: Double = js.native
+  var connectionFiletransferBytesSentTotal: Double
   
-  var connectionPacketsReceivedTotal: Double = js.native
+  var connectionPacketsReceivedTotal: Double
   
-  var connectionPacketsSentTotal: Double = js.native
+  var connectionPacketsSentTotal: Double
   
-  var hostTimestampUtc: Double = js.native
+  var hostTimestampUtc: Double
   
-  var instanceUptime: Double = js.native
+  var instanceUptime: Double
   
-  var virtualserversRunningTotal: Double = js.native
+  var virtualserversRunningTotal: Double
   
-  var virtualserversTotalChannelsOnline: Double = js.native
+  var virtualserversTotalChannelsOnline: Double
   
-  var virtualserversTotalClientsOnline: Double = js.native
+  var virtualserversTotalClientsOnline: Double
   
-  var virtualserversTotalMaxclients: Double = js.native
+  var virtualserversTotalMaxclients: Double
 }
 object HostInfo {
   

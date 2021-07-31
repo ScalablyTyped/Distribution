@@ -8,7 +8,6 @@ import typings.vscode.anon.Overwrite
 import typings.vscode.anon.Recursive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -65,16 +64,16 @@ trait FileSystemProvider extends StObject {
     * correct `size` value. Otherwise there may be optimizations in place that will not show
     * the change in an editor for example.
     */
-  def onDidChangeFile(listener: js.Function1[/* e */ js.Array[FileChangeEvent], _]): Disposable = js.native
+  def onDidChangeFile(listener: js.Function1[/* e */ js.Array[FileChangeEvent], js.Any]): Disposable = js.native
+  def onDidChangeFile(listener: js.Function1[/* e */ js.Array[FileChangeEvent], js.Any], thisArgs: js.Any): Disposable = js.native
   def onDidChangeFile(
-    listener: js.Function1[/* e */ js.Array[FileChangeEvent], _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ js.Array[FileChangeEvent], js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
-  def onDidChangeFile(listener: js.Function1[/* e */ js.Array[FileChangeEvent], _], thisArgs: js.Any): Disposable = js.native
   def onDidChangeFile(
-    listener: js.Function1[/* e */ js.Array[FileChangeEvent], _],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ js.Array[FileChangeEvent], js.Any],
+    thisArgs: Unit,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
   

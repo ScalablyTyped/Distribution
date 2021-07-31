@@ -5,21 +5,19 @@ import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.viz.dxPolarChart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArgumentComponent extends StObject {
   
-  var argument: js.UndefOr[typings.std.Date | Double | String] = js.native
+  var argument: js.UndefOr[typings.std.Date | Double | String] = js.undefined
   
-  var component: js.UndefOr[dxPolarChart] = js.native
+  var component: js.UndefOr[dxPolarChart] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object ArgumentComponent {
   

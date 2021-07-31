@@ -3,17 +3,15 @@ package typings.grpc.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyOptions extends StObject {
   
   /**
     * If set, this callback will be invoked after the usual hostname verification
     * has been performed on the peer certificate.
     */
-  var checkServerIdentity: js.UndefOr[CheckServerIdentityCallback] = js.native
+  var checkServerIdentity: js.UndefOr[CheckServerIdentityCallback] = js.undefined
 }
 object VerifyOptions {
   

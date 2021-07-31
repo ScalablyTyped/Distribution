@@ -2,29 +2,27 @@ package typings.jsurl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Url[T] extends StObject {
   
-  var hash: String = js.native
+  var hash: String
   
-  var host: String = js.native
+  var host: String
   
-  var href: String = js.native
+  var href: String
   
-  var pass: String = js.native
+  var pass: String
   
-  var path: String = js.native
+  var path: String
   
-  var port: String = js.native
+  var port: String
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var query: T = js.native
+  var query: T
   
-  var user: String = js.native
+  var user: String
 }
 object Url {
   
@@ -45,7 +43,7 @@ object Url {
   }
   
   @scala.inline
-  implicit class UrlMutableBuilder[Self <: Url[_], T] (val x: Self with Url[T]) extends AnyVal {
+  implicit class UrlMutableBuilder[Self <: Url[?], T] (val x: Self & Url[T]) extends AnyVal {
     
     @scala.inline
     def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])

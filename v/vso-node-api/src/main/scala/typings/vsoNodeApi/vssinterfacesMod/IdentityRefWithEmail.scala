@@ -2,13 +2,13 @@ package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentityRefWithEmail extends IdentityRef {
+trait IdentityRefWithEmail
+  extends StObject
+     with IdentityRef {
   
-  var preferredEmailAddress: String = js.native
+  var preferredEmailAddress: String
 }
 object IdentityRefWithEmail {
   

@@ -5,7 +5,6 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,8 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * //     crlEntryExtensions      Extensions OPTIONAL
   * //                             -- if present, version MUST be v2 }
   */
-@js.native
-trait CRLEntry extends ASN1Object {
+trait CRLEntry
+  extends StObject
+     with ASN1Object {
   
   /**
     * set DERInteger parameter for serial number of revoked certificate
@@ -29,7 +29,7 @@ trait CRLEntry extends ASN1Object {
     * @example
     * entry.setCertSerial({'int': 3});
     */
-  def setCertSerial(intParam: IntegerParam): Unit = js.native
+  def setCertSerial(intParam: IntegerParam): Unit
   
   /**
     * set Time parameter for revocation date
@@ -37,7 +37,7 @@ trait CRLEntry extends ASN1Object {
     * @example
     * entry.setRevocationDate({'str': '130508235959Z'});
     */
-  def setRevocationDate(timeParam: StringParam): Unit = js.native
+  def setRevocationDate(timeParam: StringParam): Unit
 }
 object CRLEntry {
   

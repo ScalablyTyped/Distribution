@@ -2,19 +2,17 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMetadataResult extends StObject {
   
-  var metadataObjects: js.Array[MetadataObject] = js.native
+  var metadataObjects: js.Array[MetadataObject]
   
-  var organizationNamespace: String = js.native
+  var organizationNamespace: String
   
-  var partialSaveAllowed: Boolean = js.native
+  var partialSaveAllowed: Boolean
   
-  var testRequired: Boolean = js.native
+  var testRequired: Boolean
 }
 object DescribeMetadataResult {
   

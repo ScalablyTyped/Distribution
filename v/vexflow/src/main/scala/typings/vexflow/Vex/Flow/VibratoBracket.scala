@@ -4,11 +4,12 @@ import typings.std.Element
 import typings.vexflow.anon.Harsh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VibratoBracket extends Element {
+trait VibratoBracket
+  extends StObject
+     with Element {
   
   def draw(): Unit = js.native
   

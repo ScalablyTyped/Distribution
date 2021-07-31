@@ -6,23 +6,23 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCustomersConfigurationsDelete extends StandardParameters {
+trait ParamsResourceCustomersConfigurationsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The configuration to delete. An API resource name in the format
     * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. If the
     * configuration is applied to any devices, the API call fails.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCustomersConfigurationsDelete {
   

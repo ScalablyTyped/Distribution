@@ -2,13 +2,11 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBatchCreatePerfSamplesResponse extends StObject {
   
-  var perfSamples: js.UndefOr[js.Array[SchemaPerfSample]] = js.native
+  var perfSamples: js.UndefOr[js.Array[SchemaPerfSample]] = js.undefined
 }
 object SchemaBatchCreatePerfSamplesResponse {
   

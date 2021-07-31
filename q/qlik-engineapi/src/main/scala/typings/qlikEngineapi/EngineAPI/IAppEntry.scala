@@ -2,49 +2,47 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AppEntry...
   */
-@js.native
 trait IAppEntry extends StObject {
   
   /**
     * Identifier of the app.
     */
-  var qID: String = js.native
+  var qID: String
   
   /**
     * Last reload time of the app.
     */
-  var qLastReloadTime: String = js.native
+  var qLastReloadTime: String
   
   /**
     * Meta data.
     */
-  var qMeta: INxMeta = js.native
+  var qMeta: INxMeta
   
   /**
     * Path of the app.
     */
-  var qPath: String = js.native
+  var qPath: String
   
   /**
     * Is set to true if the app is read-only.
     */
-  var qReadOnly: Boolean = js.native
+  var qReadOnly: Boolean
   
   /**
     * App thumbnail.
     */
-  var qThumbnail: IStaticContentUrl = js.native
+  var qThumbnail: IStaticContentUrl
   
   /**
     * Title of the app.
     */
-  var qTitle: String = js.native
+  var qTitle: String
 }
 object IAppEntry {
   

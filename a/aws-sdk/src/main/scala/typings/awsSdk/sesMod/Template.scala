@@ -2,31 +2,29 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Template extends StObject {
   
   /**
     * The HTML body of the email.
     */
-  var HtmlPart: js.UndefOr[typings.awsSdk.sesMod.HtmlPart] = js.native
+  var HtmlPart: js.UndefOr[typings.awsSdk.sesMod.HtmlPart] = js.undefined
   
   /**
     * The subject line of the email.
     */
-  var SubjectPart: js.UndefOr[typings.awsSdk.sesMod.SubjectPart] = js.native
+  var SubjectPart: js.UndefOr[typings.awsSdk.sesMod.SubjectPart] = js.undefined
   
   /**
     * The name of the template. You will refer to this name when you send email using the SendTemplatedEmail or SendBulkTemplatedEmail operations.
     */
-  var TemplateName: typings.awsSdk.sesMod.TemplateName = js.native
+  var TemplateName: typings.awsSdk.sesMod.TemplateName
   
   /**
     * The email body that will be visible to recipients whose email clients do not display HTML.
     */
-  var TextPart: js.UndefOr[typings.awsSdk.sesMod.TextPart] = js.native
+  var TextPart: js.UndefOr[typings.awsSdk.sesMod.TextPart] = js.undefined
 }
 object Template {
   

@@ -2,25 +2,23 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Basic details about a video category, such as its localized title.
   */
-@js.native
 trait SchemaVideoAbuseReportReasonSnippet extends StObject {
   
   /**
     * The localized label belonging to this abuse report reason.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The secondary reasons associated with this reason, if any are available.
     * (There might be 0 or more.)
     */
-  var secondaryReasons: js.UndefOr[js.Array[SchemaVideoAbuseReportSecondaryReason]] = js.native
+  var secondaryReasons: js.UndefOr[js.Array[SchemaVideoAbuseReportSecondaryReason]] = js.undefined
 }
 object SchemaVideoAbuseReportReasonSnippet {
   

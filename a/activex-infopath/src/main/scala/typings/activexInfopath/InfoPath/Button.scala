@@ -2,14 +2,12 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Button extends StObject {
   
   @JSName("InfoPath.Button_typekey")
-  var InfoPathDotButton_typekey: Button = js.native
+  var InfoPathDotButton_typekey: Button
 }
 object Button {
   

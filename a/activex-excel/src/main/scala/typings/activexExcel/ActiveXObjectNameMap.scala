@@ -5,20 +5,18 @@ import typings.activexExcel.Excel.Chart
 import typings.activexExcel.Excel.Worksheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("Excel.Application")
-  var ExcelDotApplication: Application = js.native
+  var ExcelDotApplication: Application
   
   @JSName("Excel.Chart")
-  var ExcelDotChart: Chart = js.native
+  var ExcelDotChart: Chart
   
   @JSName("Excel.Sheet")
-  var ExcelDotSheet: Worksheet = js.native
+  var ExcelDotSheet: Worksheet
 }
 object ActiveXObjectNameMap {
   

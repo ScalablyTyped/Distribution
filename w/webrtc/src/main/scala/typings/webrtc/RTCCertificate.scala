@@ -2,16 +2,14 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#dom-rtccertificate
-@js.native
 trait RTCCertificate extends StObject {
   
-  val expires: Double = js.native
+  val expires: Double
   
-  def getAlgorithm(): String = js.native
+  def getAlgorithm(): String
 }
 object RTCCertificate {
   

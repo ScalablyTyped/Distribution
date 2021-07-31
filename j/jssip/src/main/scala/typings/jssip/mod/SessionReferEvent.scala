@@ -2,17 +2,15 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionReferEvent extends StObject {
   
-  def accept(): Unit = js.native
+  def accept(): Unit
   
-  def reject(): Unit = js.native
+  def reject(): Unit
   
-  var request: IncomingRequest = js.native
+  var request: IncomingRequest
 }
 object SessionReferEvent {
   

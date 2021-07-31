@@ -2,37 +2,35 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateCommitCommentEndpoint extends StObject {
   
   /**
     * The contents of the comment.
     */
-  var body: String = js.native
+  var body: String
   
-  var commit_sha: String = js.native
+  var commit_sha: String
   
   /**
     * **Deprecated**. Use **position** parameter instead. Line number in the file to comment on.
     */
-  var line: js.UndefOr[Double | Null] = js.native
+  var line: js.UndefOr[Double | Null] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Relative path of the file to comment on.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Line index in the diff to comment on.
     */
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
 }
 object ReposCreateCommitCommentEndpoint {
   

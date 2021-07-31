@@ -4,7 +4,6 @@ import typings.pulumiPulumi.outputMod.Output_
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
@@ -174,18 +173,17 @@ object configMod {
     def requireSecretObject[T](key: String): Output_[T] = js.native
   }
   
-  @js.native
   trait NumberConfigOptions extends StObject {
     
     /**
       * The maximum number value, inclusive. If the number is greater than this, a ConfigRangeError is thrown.
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum number value, inclusive. If the number is less than this, a ConfigRangeError is thrown.
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object NumberConfigOptions {
     
@@ -212,28 +210,27 @@ object configMod {
     }
   }
   
-  @js.native
   trait StringConfigOptions[K /* <: String */] extends StObject {
     
     /**
       * The legal enum values. If it does not match, a ConfigEnumError is thrown.
       */
-    var allowedValues: js.UndefOr[js.Array[K]] = js.native
+    var allowedValues: js.UndefOr[js.Array[K]] = js.undefined
     
     /**
       * The maximum string length. If the string is longer than this, a ConfigRangeError is thrown.
       */
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum string length. If the string is not this long, a ConfigRangeError is thrown.
       */
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
     /**
       * A regular expression the string must match. If it does not match, a ConfigPatternError is thrown.
       */
-    var pattern: js.UndefOr[String | RegExp] = js.native
+    var pattern: js.UndefOr[String | RegExp] = js.undefined
   }
   object StringConfigOptions {
     
@@ -244,7 +241,7 @@ object configMod {
     }
     
     @scala.inline
-    implicit class StringConfigOptionsMutableBuilder[Self <: StringConfigOptions[_], K /* <: String */] (val x: Self with StringConfigOptions[K]) extends AnyVal {
+    implicit class StringConfigOptionsMutableBuilder[Self <: StringConfigOptions[?], K /* <: String */] (val x: Self & StringConfigOptions[K]) extends AnyVal {
       
       @scala.inline
       def setAllowedValues(value: js.Array[K]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])

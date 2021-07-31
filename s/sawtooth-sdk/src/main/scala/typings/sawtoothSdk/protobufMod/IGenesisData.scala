@@ -2,14 +2,12 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGenesisData extends StObject {
   
   /** GenesisData batches */
-  var batches: js.UndefOr[js.Array[IBatch] | Null] = js.native
+  var batches: js.UndefOr[js.Array[IBatch] | Null] = js.undefined
 }
 object IGenesisData {
   

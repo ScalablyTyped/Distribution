@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICopyright extends StObject {
   
   /** The copyright URL for the GeoData service. */
-  var CopyrightURL: String = js.native
+  var CopyrightURL: String
   
   /** A collection of CopyrightSource objects that give information about the sources of the polygon data that is returned. */
-  var Sources: js.Array[ICopyrightSource] = js.native
+  var Sources: js.Array[ICopyrightSource]
 }
 object ICopyright {
   

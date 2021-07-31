@@ -2,34 +2,32 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoDataOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) An object of additional SVG attributes for
     * the no-data label.
     */
-  var attr: js.UndefOr[SVGAttributes] = js.native
+  var attr: js.UndefOr[SVGAttributes] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The position of the no-data label,
     * relative to the plot area.
     */
-  var position: js.UndefOr[AlignObject | NoDataPositionOptions] = js.native
+  var position: js.UndefOr[AlignObject | NoDataPositionOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) CSS styles for the no-data label.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to insert the label as HTML, or as
     * pseudo-HTML rendered with SVG.
     */
-  var useHTML: js.UndefOr[Boolean] = js.native
+  var useHTML: js.UndefOr[Boolean] = js.undefined
 }
 object NoDataOptions {
   

@@ -14,7 +14,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,7 +31,7 @@ trait Hemera[Request, Response] extends StObject {
     handler: js.ThisFunction1[
       /* this */ Hemera[ServerRequest, ServerResponse], 
       /* request */ ServerPattern, 
-      js.Promise[_]
+      js.Promise[js.Any]
     ]
   ): AddDefinition = js.native
   // add
@@ -51,7 +50,7 @@ trait Hemera[Request, Response] extends StObject {
     handler: js.ThisFunction1[
       /* this */ Hemera[ServerRequest, ServerResponse], 
       /* request */ ServerPattern, 
-      js.Promise[_]
+      js.Promise[js.Any]
     ]
   ): AddDefinition = js.native
   def add(
@@ -277,9 +276,9 @@ trait Hemera[Request, Response] extends StObject {
   def setNotFoundPattern(pattern: String): Unit = js.native
   def setNotFoundPattern(pattern: ServerPattern): Unit = js.native
   
-  def setResponseSchemaCompiler(compilerFunction: js.Function1[/* schema */ js.Object, js.Function | js.Promise[_]]): Hemera[NoContext, NoContext] = js.native
+  def setResponseSchemaCompiler(compilerFunction: js.Function1[/* schema */ js.Object, js.Function | js.Promise[js.Any]]): Hemera[NoContext, NoContext] = js.native
   
-  def setSchemaCompiler(compilerFunction: js.Function1[/* schema */ js.Object, js.Function | js.Promise[_]]): Hemera[NoContext, NoContext] = js.native
+  def setSchemaCompiler(compilerFunction: js.Function1[/* schema */ js.Object, js.Function | js.Promise[js.Any]]): Hemera[NoContext, NoContext] = js.native
   
   def setServerDecoder(encoder: js.Function1[/* message */ String | Buffer, DecoderResult]): Hemera[NoContext, NoContext] = js.native
   

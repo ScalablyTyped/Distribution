@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCloudFrontDistributionCacheBehaviors extends StObject {
   
   /**
     * The cache behaviors for the distribution.
     */
-  var Items: js.UndefOr[AwsCloudFrontDistributionCacheBehaviorsItemList] = js.native
+  var Items: js.UndefOr[AwsCloudFrontDistributionCacheBehaviorsItemList] = js.undefined
 }
 object AwsCloudFrontDistributionCacheBehaviors {
   

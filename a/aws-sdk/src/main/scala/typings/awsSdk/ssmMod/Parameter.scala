@@ -2,56 +2,54 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameter extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the parameter.
     */
-  var ARN: js.UndefOr[String] = js.native
+  var ARN: js.UndefOr[String] = js.undefined
   
   /**
     * The data type of the parameter, such as text or aws:ec2:image. The default is text.
     */
-  var DataType: js.UndefOr[ParameterDataType] = js.native
+  var DataType: js.UndefOr[ParameterDataType] = js.undefined
   
   /**
     * Date the parameter was last changed or updated and the parameter version was created.
     */
-  var LastModifiedDate: js.UndefOr[DateTime] = js.native
+  var LastModifiedDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the parameter.
     */
-  var Name: js.UndefOr[PSParameterName] = js.native
+  var Name: js.UndefOr[PSParameterName] = js.undefined
   
   /**
     * Either the version number or the label used to retrieve the parameter value. Specify selectors by using one of the following formats: parameter_name:version parameter_name:label
     */
-  var Selector: js.UndefOr[PSParameterSelector] = js.native
+  var Selector: js.UndefOr[PSParameterSelector] = js.undefined
   
   /**
     * Applies to parameters that reference information in other AWS services. SourceResult is the raw result or response from the source.
     */
-  var SourceResult: js.UndefOr[String] = js.native
+  var SourceResult: js.UndefOr[String] = js.undefined
   
   /**
     * The type of parameter. Valid values include the following: String, StringList, and SecureString.
     */
-  var Type: js.UndefOr[ParameterType] = js.native
+  var Type: js.UndefOr[ParameterType] = js.undefined
   
   /**
     * The parameter value.
     */
-  var Value: js.UndefOr[PSParameterValue] = js.native
+  var Value: js.UndefOr[PSParameterValue] = js.undefined
   
   /**
     * The parameter version.
     */
-  var Version: js.UndefOr[PSParameterVersion] = js.native
+  var Version: js.UndefOr[PSParameterVersion] = js.undefined
 }
 object Parameter {
   

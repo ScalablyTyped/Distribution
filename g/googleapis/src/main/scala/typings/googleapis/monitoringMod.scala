@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object monitoringMod {
+  
+  @JSImport("googleapis/build/src/apis/monitoring", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -68,9 +71,12 @@ object monitoringMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/monitoring", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/monitoring", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -114,10 +120,9 @@ object monitoringMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/monitoring", "monitoring")
-  @js.native
-  def monitoring(options: Options): Monitoring = js.native
-  @JSImport("googleapis/build/src/apis/monitoring", "monitoring")
-  @js.native
-  def monitoring_v3(version: v3): Monitoring = js.native
+  @scala.inline
+  def monitoring(options: Options): Monitoring = ^.asInstanceOf[js.Dynamic].applyDynamic("monitoring")(options.asInstanceOf[js.Any]).asInstanceOf[Monitoring]
+  
+  @scala.inline
+  def monitoring_v3(version: v3): Monitoring = ^.asInstanceOf[js.Dynamic].applyDynamic("monitoring")(version.asInstanceOf[js.Any]).asInstanceOf[Monitoring]
 }

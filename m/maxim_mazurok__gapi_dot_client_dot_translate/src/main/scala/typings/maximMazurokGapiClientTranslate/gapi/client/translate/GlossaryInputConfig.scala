@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlossaryInputConfig extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait GlossaryInputConfig extends StObject {
     * names. - TMX (`.tmx`): TMX file with parallel data defining source/target term pairs. For equivalent term sets glossaries: - CSV (`.csv`): Multi-column CSV file defining equivalent
     * glossary terms in multiple languages. See documentation for more information - [glossaries](https://cloud.google.com/translate/docs/advanced/glossary).
     */
-  var gcsSource: js.UndefOr[GcsSource] = js.native
+  var gcsSource: js.UndefOr[GcsSource] = js.undefined
 }
 object GlossaryInputConfig {
   

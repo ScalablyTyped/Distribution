@@ -6,7 +6,6 @@ import typings.reactCssModules.reactCssModulesStrings.ignore
 import typings.reactCssModules.reactCssModulesStrings.log
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,10 +26,9 @@ object mod extends Shortcut {
   // Extend your component's Prop interface with this one to get access to `this.props.styles`
   //
   // interface MyComponentProps extends CSSModules.InjectedCSSModuleProps {}
-  @js.native
   trait InjectedCSSModuleProps extends StObject {
     
-    var styles: js.UndefOr[StylesObject] = js.native
+    var styles: js.UndefOr[StylesObject] = js.undefined
   }
   object InjectedCSSModuleProps {
     
@@ -53,12 +51,11 @@ object mod extends Shortcut {
   
   type StylesObject = js.Any
   
-  @js.native
   trait TypeOptions extends StObject {
     
-    var allowMultiple: js.UndefOr[Boolean] = js.native
+    var allowMultiple: js.UndefOr[Boolean] = js.undefined
     
-    var handleNotFoundStyleName: js.UndefOr[`throw` | log | ignore] = js.native
+    var handleNotFoundStyleName: js.UndefOr[`throw` | log | ignore] = js.undefined
   }
   object TypeOptions {
     
@@ -92,10 +89,9 @@ object mod extends Shortcut {
   
   object reactAugmentingMod {
     
-    @js.native
     trait HTMLAttributes[T] extends StObject {
       
-      var styleName: js.UndefOr[String] = js.native
+      var styleName: js.UndefOr[String] = js.undefined
     }
     object HTMLAttributes {
       
@@ -106,7 +102,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[_], T] (val x: Self with HTMLAttributes[T]) extends AnyVal {
+      implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
         
         @scala.inline
         def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
@@ -116,10 +112,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait SVGAttributes[T] extends StObject {
       
-      var styleName: js.UndefOr[String] = js.native
+      var styleName: js.UndefOr[String] = js.undefined
     }
     object SVGAttributes {
       
@@ -130,7 +125,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class SVGAttributesMutableBuilder[Self <: SVGAttributes[_], T] (val x: Self with SVGAttributes[T]) extends AnyVal {
+      implicit class SVGAttributesMutableBuilder[Self <: SVGAttributes[?], T] (val x: Self & SVGAttributes[T]) extends AnyVal {
         
         @scala.inline
         def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])

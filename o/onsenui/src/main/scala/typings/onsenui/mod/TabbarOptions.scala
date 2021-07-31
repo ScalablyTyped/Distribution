@@ -2,31 +2,29 @@ package typings.onsenui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabbarOptions extends StObject {
   
   /**
     * @description Animation name. Available animations are `"fade"`, `"slide"` and `"none"`.
     */
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
   /**
     * @description Specify the animation's duration, delay and timing. E.g. `{duration: 0.2, delay: 0.4, timing: 'ease-in'}`.
     */
-  var animationOptions: js.UndefOr[String] = js.native
+  var animationOptions: js.UndefOr[String] = js.undefined
   
   /**
     *
     */
-  var callback: js.UndefOr[js.Function] = js.native
+  var callback: js.UndefOr[js.Function] = js.undefined
   
   /**
     * @description If true the page will not be changed.
     */
-  var keepPage: js.UndefOr[Boolean] = js.native
+  var keepPage: js.UndefOr[Boolean] = js.undefined
 }
 object TabbarOptions {
   

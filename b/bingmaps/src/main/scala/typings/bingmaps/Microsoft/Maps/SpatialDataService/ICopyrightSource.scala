@@ -2,20 +2,18 @@ package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICopyrightSource extends StObject {
   
   /** The copyright string from the source. */
-  var Copyright: String = js.native
+  var Copyright: String
   
   /** An ID identifying the data provider that supplied the data. */
-  var SourceID: String = js.native
+  var SourceID: String
   
   /** The name of the data provider represented by this Source element. */
-  var SourceName: String = js.native
+  var SourceName: String
 }
 object ICopyrightSource {
   

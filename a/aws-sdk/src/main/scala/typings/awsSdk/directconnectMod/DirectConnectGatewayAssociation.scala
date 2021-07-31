@@ -2,61 +2,59 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectConnectGatewayAssociation extends StObject {
   
   /**
     * The Amazon VPC prefixes to advertise to the Direct Connect gateway.
     */
-  var allowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.native
+  var allowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
   
   /**
     * Information about the associated gateway.
     */
-  var associatedGateway: js.UndefOr[AssociatedGateway] = js.native
+  var associatedGateway: js.UndefOr[AssociatedGateway] = js.undefined
   
   /**
     * The ID of the Direct Connect gateway association.
     */
-  var associationId: js.UndefOr[DirectConnectGatewayAssociationId] = js.native
+  var associationId: js.UndefOr[DirectConnectGatewayAssociationId] = js.undefined
   
   /**
     * The state of the association. The following are the possible values:    associating: The initial state after calling CreateDirectConnectGatewayAssociation.    associated: The Direct Connect gateway and virtual private gateway or transit gateway are successfully associated and ready to pass traffic.    disassociating: The initial state after calling DeleteDirectConnectGatewayAssociation.    disassociated: The virtual private gateway or transit gateway is disassociated from the Direct Connect gateway. Traffic flow between the Direct Connect gateway and virtual private gateway or transit gateway is stopped.  
     */
-  var associationState: js.UndefOr[DirectConnectGatewayAssociationState] = js.native
+  var associationState: js.UndefOr[DirectConnectGatewayAssociationState] = js.undefined
   
   /**
     * The ID of the Direct Connect gateway.
     */
-  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.native
+  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
   
   /**
     * The ID of the AWS account that owns the associated gateway.
     */
-  var directConnectGatewayOwnerAccount: js.UndefOr[OwnerAccount] = js.native
+  var directConnectGatewayOwnerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
     * The error message if the state of an object failed to advance.
     */
-  var stateChangeError: js.UndefOr[StateChangeError] = js.native
+  var stateChangeError: js.UndefOr[StateChangeError] = js.undefined
   
   /**
     * The ID of the virtual private gateway. Applies only to private virtual interfaces.
     */
-  var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.native
+  var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.undefined
   
   /**
     * The ID of the AWS account that owns the virtual private gateway.
     */
-  var virtualGatewayOwnerAccount: js.UndefOr[OwnerAccount] = js.native
+  var virtualGatewayOwnerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
     * The AWS Region where the virtual private gateway is located.
     */
-  var virtualGatewayRegion: js.UndefOr[VirtualGatewayRegion] = js.native
+  var virtualGatewayRegion: js.UndefOr[VirtualGatewayRegion] = js.undefined
 }
 object DirectConnectGatewayAssociation {
   

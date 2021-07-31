@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds and removes POSIX capabilities from running containers.
   */
-@js.native
 trait Capabilities extends StObject {
   
   /**
     * Added capabilities
     */
-  var add: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var add: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * Removed capabilities
     */
-  var drop: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var drop: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
 }
 object Capabilities {
   

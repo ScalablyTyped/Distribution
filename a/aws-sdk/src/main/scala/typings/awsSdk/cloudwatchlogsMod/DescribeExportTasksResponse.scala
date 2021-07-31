@@ -2,18 +2,16 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeExportTasksResponse extends StObject {
   
   /**
     * The export tasks.
     */
-  var exportTasks: js.UndefOr[ExportTasks] = js.native
+  var exportTasks: js.UndefOr[ExportTasks] = js.undefined
   
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeExportTasksResponse {
   

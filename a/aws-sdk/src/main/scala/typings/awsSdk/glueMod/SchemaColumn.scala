@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaColumn extends StObject {
   
   /**
     * The type of data in the column.
     */
-  var DataType: js.UndefOr[ColumnTypeString] = js.native
+  var DataType: js.UndefOr[ColumnTypeString] = js.undefined
   
   /**
     * The name of the column.
     */
-  var Name: js.UndefOr[ColumnNameString] = js.native
+  var Name: js.UndefOr[ColumnNameString] = js.undefined
 }
 object SchemaColumn {
   

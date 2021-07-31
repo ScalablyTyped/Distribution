@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * defines a link.
   * @see XCommandProcessor
   */
-@js.native
 trait Link extends StObject {
   
   /** contains the destination URI of the link. */
-  var Destination: String = js.native
+  var Destination: String
   
   /** contains the source URI of the link. */
-  var Source: String = js.native
+  var Source: String
 }
 object Link {
   

@@ -2,7 +2,6 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,14 +28,14 @@ trait Ndef extends StObject {
     * 取消监听 Ndef 消息
     *
     * 最低基础库： `2.11.2` */
-  def offNdefMessage(callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def offNdefMessage(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [Ndef.onNdefMessage(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/Ndef.onNdefMessage.html)
     *
     * 监听 Ndef 消息
     *
     * 最低基础库： `2.11.2` */
-  def onNdefMessage(callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def onNdefMessage(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [Ndef.setTimeout(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/Ndef.setTimeout.html)
     *

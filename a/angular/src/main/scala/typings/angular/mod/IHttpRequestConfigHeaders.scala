@@ -3,25 +3,24 @@ package typings.angular.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHttpRequestConfigHeaders
-  extends /**
+  extends StObject
+     with /**
   * Indexer which should return ng.INgModelController for most properties but cannot because of "All named properties must be assignable to string indexer type" constraint - see https://github.com/Microsoft/TypeScript/issues/272
   */
 /* name */ StringDictionary[js.Any] {
   
-  var common: js.UndefOr[js.Any] = js.native
+  var common: js.UndefOr[js.Any] = js.undefined
   
-  var get: js.UndefOr[js.Any] = js.native
+  var get: js.UndefOr[js.Any] = js.undefined
   
-  var patch: js.UndefOr[js.Any] = js.native
+  var patch: js.UndefOr[js.Any] = js.undefined
   
-  var post: js.UndefOr[js.Any] = js.native
+  var post: js.UndefOr[js.Any] = js.undefined
   
-  var put: js.UndefOr[js.Any] = js.native
+  var put: js.UndefOr[js.Any] = js.undefined
 }
 object IHttpRequestConfigHeaders {
   

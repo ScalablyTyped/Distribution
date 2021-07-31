@@ -2,15 +2,13 @@ package typings.stylableCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dirname extends StObject {
   
-  def dirname(path: String): String = js.native
+  def dirname(path: String): String
   
-  def relative(from: String, to: String): String = js.native
+  def relative(from: String, to: String): String
 }
 object Dirname {
   

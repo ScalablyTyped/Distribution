@@ -11,26 +11,25 @@ import typings.react.mod.ChangeEvent
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useAutocompleteUseAutocompleteMod {
   
-  @JSImport("@material-ui/lab/useAutocomplete/useAutocomplete", JSImport.Default)
+  @JSImport("@material-ui/lab/useAutocomplete/useAutocomplete", JSImport.Namespace)
   @js.native
-  def default[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](props: UseAutocompleteProps[T, Multiple, DisableClearable, FreeSolo]): AnchorEl[T, Multiple, DisableClearable, FreeSolo] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@material-ui/lab/useAutocomplete/useAutocomplete", "createFilterOptions")
-  @js.native
-  def createFilterOptions[T](): js.Function2[/* options */ js.Array[T], /* state */ FilterOptionsState[T], js.Array[T]] = js.native
-  @JSImport("@material-ui/lab/useAutocomplete/useAutocomplete", "createFilterOptions")
-  @js.native
-  def createFilterOptions[T](config: CreateFilterOptionsConfig[T]): js.Function2[/* options */ js.Array[T], /* state */ FilterOptionsState[T], js.Array[T]] = js.native
+  @scala.inline
+  def default[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](props: UseAutocompleteProps[T, Multiple, DisableClearable, FreeSolo]): AnchorEl[T, Multiple, DisableClearable, FreeSolo] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[AnchorEl[T, Multiple, DisableClearable, FreeSolo]]
   
-  @js.native
+  @scala.inline
+  def createFilterOptions[T](): js.Function2[/* options */ js.Array[T], /* state */ FilterOptionsState[T], js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilterOptions")().asInstanceOf[js.Function2[/* options */ js.Array[T], /* state */ FilterOptionsState[T], js.Array[T]]]
+  @scala.inline
+  def createFilterOptions[T](config: CreateFilterOptionsConfig[T]): js.Function2[/* options */ js.Array[T], /* state */ FilterOptionsState[T], js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilterOptions")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* options */ js.Array[T], /* state */ FilterOptionsState[T], js.Array[T]]]
+  
   trait AutocompleteChangeDetails[T] extends StObject {
     
-    var option: T = js.native
+    var option: T
   }
   object AutocompleteChangeDetails {
     
@@ -41,7 +40,7 @@ object useAutocompleteUseAutocompleteMod {
     }
     
     @scala.inline
-    implicit class AutocompleteChangeDetailsMutableBuilder[Self <: AutocompleteChangeDetails[_], T] (val x: Self with AutocompleteChangeDetails[T]) extends AnyVal {
+    implicit class AutocompleteChangeDetailsMutableBuilder[Self <: AutocompleteChangeDetails[?], T] (val x: Self & AutocompleteChangeDetails[T]) extends AnyVal {
       
       @scala.inline
       def setOption(value: T): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
@@ -134,20 +133,19 @@ object useAutocompleteUseAutocompleteMod {
     def reset: typings.materialUiLab.materialUiLabStrings.reset = "reset".asInstanceOf[typings.materialUiLab.materialUiLabStrings.reset]
   }
   
-  @js.native
   trait CreateFilterOptionsConfig[T] extends StObject {
     
-    var ignoreAccents: js.UndefOr[Boolean] = js.native
+    var ignoreAccents: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreCase: js.UndefOr[Boolean] = js.native
+    var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var matchFrom: js.UndefOr[any | start] = js.native
+    var matchFrom: js.UndefOr[any | start] = js.undefined
     
-    var stringify: js.UndefOr[js.Function1[/* option */ T, String]] = js.native
+    var stringify: js.UndefOr[js.Function1[/* option */ T, String]] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object CreateFilterOptionsConfig {
     
@@ -158,7 +156,7 @@ object useAutocompleteUseAutocompleteMod {
     }
     
     @scala.inline
-    implicit class CreateFilterOptionsConfigMutableBuilder[Self <: CreateFilterOptionsConfig[_], T] (val x: Self with CreateFilterOptionsConfig[T]) extends AnyVal {
+    implicit class CreateFilterOptionsConfigMutableBuilder[Self <: CreateFilterOptionsConfig[?], T] (val x: Self & CreateFilterOptionsConfig[T]) extends AnyVal {
       
       @scala.inline
       def setIgnoreAccents(value: Boolean): Self = StObject.set(x, "ignoreAccents", value.asInstanceOf[js.Any])
@@ -198,12 +196,11 @@ object useAutocompleteUseAutocompleteMod {
     }
   }
   
-  @js.native
   trait FilterOptionsState[T] extends StObject {
     
-    def getOptionLabel(option: T): String = js.native
+    def getOptionLabel(option: T): String
     
-    var inputValue: String = js.native
+    var inputValue: String
   }
   object FilterOptionsState {
     
@@ -214,7 +211,7 @@ object useAutocompleteUseAutocompleteMod {
     }
     
     @scala.inline
-    implicit class FilterOptionsStateMutableBuilder[Self <: FilterOptionsState[_], T] (val x: Self with FilterOptionsState[T]) extends AnyVal {
+    implicit class FilterOptionsStateMutableBuilder[Self <: FilterOptionsState[?], T] (val x: Self & FilterOptionsState[T]) extends AnyVal {
       
       @scala.inline
       def setGetOptionLabel(value: T => String): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
@@ -224,7 +221,6 @@ object useAutocompleteUseAutocompleteMod {
     }
   }
   
-  @js.native
   trait UseAutocompleteProps[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */] extends StObject {
     
     /**
@@ -232,19 +228,19 @@ object useAutocompleteUseAutocompleteMod {
       * known as the completion string, appears inline after the input cursor in the textbox.
       * The inline completion string is visually highlighted and has a selected state.
       */
-    var autoComplete: js.UndefOr[Boolean] = js.native
+    var autoComplete: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, the first option is automatically highlighted.
       */
-    var autoHighlight: js.UndefOr[Boolean] = js.native
+    var autoHighlight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, the selected option becomes the value of the input
       * when the Autocomplete loses focus unless the user chooses
       * a different option or changes the character string in the input.
       */
-    var autoSelect: js.UndefOr[Boolean] = js.native
+    var autoSelect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Control if the input should be blurred when an option is selected:
@@ -254,7 +250,7 @@ object useAutocompleteUseAutocompleteMod {
       * - `touch` the input is blurred after a touch event.
       * - `mouse` the input is blurred after a mouse event.
       */
-    var blurOnSelect: js.UndefOr[touch | mouse | `true` | `false`] = js.native
+    var blurOnSelect: js.UndefOr[touch | mouse | `true` | `false`] = js.undefined
     
     /**
       * If `true`, the input's text will be cleared on blur if no value is selected.
@@ -262,49 +258,49 @@ object useAutocompleteUseAutocompleteMod {
       * Set to `true` if you want to help the user enter a new value.
       * Set to `false` if you want to help the user resume his search.
       */
-    var clearOnBlur: js.UndefOr[Boolean] = js.native
+    var clearOnBlur: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, clear all values when the user presses escape and the popup is closed.
       */
-    var clearOnEscape: js.UndefOr[Boolean] = js.native
+    var clearOnEscape: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The component name that is using this hook. Used for warnings.
       */
-    var componentName: js.UndefOr[String] = js.native
+    var componentName: js.UndefOr[String] = js.undefined
     
     /**
       * If `true`, the popup will ignore the blur event if the input is filled.
       * You can inspect the popup markup with your browser tools.
       * Consider this option when you need to customize the component.
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The default input value. Use when the component is not controlled.
       */
-    var defaultValue: js.UndefOr[Value[T, Multiple, DisableClearable, FreeSolo]] = js.native
+    var defaultValue: js.UndefOr[Value[T, Multiple, DisableClearable, FreeSolo]] = js.undefined
     
     /**
       * If `true`, the input can't be cleared.
       */
-    var disableClearable: js.UndefOr[DisableClearable] = js.native
+    var disableClearable: js.UndefOr[DisableClearable] = js.undefined
     
     /**
       * If `true`, the popup won't close when a value is selected.
       */
-    var disableCloseOnSelect: js.UndefOr[Boolean] = js.native
+    var disableCloseOnSelect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, the list box in the popup will not wrap focus.
       */
-    var disableListWrap: js.UndefOr[Boolean] = js.native
+    var disableListWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, will allow focus on disabled items.
       */
-    var disabledItemsFocusable: js.UndefOr[Boolean] = js.native
+    var disabledItemsFocusable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A filter function that determines the options that are eligible.
@@ -315,17 +311,17 @@ object useAutocompleteUseAutocompleteMod {
       */
     var filterOptions: js.UndefOr[
         js.Function2[/* options */ js.Array[T], /* state */ FilterOptionsState[T], js.Array[T]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If `true`, hide the selected options from the list box.
       */
-    var filterSelectedOptions: js.UndefOr[Boolean] = js.native
+    var filterSelectedOptions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, the Autocomplete is free solo, meaning that the user input is not bound to provided options.
       */
-    var freeSolo: js.UndefOr[FreeSolo] = js.native
+    var freeSolo: js.UndefOr[FreeSolo] = js.undefined
     
     /**
       * Used to determine the disabled state for a given option.
@@ -333,7 +329,7 @@ object useAutocompleteUseAutocompleteMod {
       * @param {T} option The option to test.
       * @returns {boolean}
       */
-    var getOptionDisabled: js.UndefOr[js.Function1[/* option */ T, Boolean]] = js.native
+    var getOptionDisabled: js.UndefOr[js.Function1[/* option */ T, Boolean]] = js.undefined
     
     /**
       * Used to determine the string value for a given option.
@@ -342,7 +338,7 @@ object useAutocompleteUseAutocompleteMod {
       * @param {T} option
       * @returns {string}
       */
-    var getOptionLabel: js.UndefOr[js.Function1[/* option */ T, String]] = js.native
+    var getOptionLabel: js.UndefOr[js.Function1[/* option */ T, String]] = js.undefined
     
     /**
       * Used to determine if an option is selected, considering the current value.
@@ -352,7 +348,7 @@ object useAutocompleteUseAutocompleteMod {
       * @param {T} value The value to test against.
       * @returns {boolean}
       */
-    var getOptionSelected: js.UndefOr[js.Function2[/* option */ T, /* value */ T, Boolean]] = js.native
+    var getOptionSelected: js.UndefOr[js.Function2[/* option */ T, /* value */ T, Boolean]] = js.undefined
     
     /**
       * If provided, the options will be grouped under the returned string.
@@ -361,34 +357,34 @@ object useAutocompleteUseAutocompleteMod {
       * @param {T} options The options to group.
       * @returns {string}
       */
-    var groupBy: js.UndefOr[js.Function1[/* option */ T, String]] = js.native
+    var groupBy: js.UndefOr[js.Function1[/* option */ T, String]] = js.undefined
     
     /**
       * If `true`, the component handles the "Home" and "End" keys when the popup is open.
       * It should move focus to the first option and last option, respectively.
       */
-    var handleHomeEndKeys: js.UndefOr[Boolean] = js.native
+    var handleHomeEndKeys: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This prop is used to help implement the accessibility logic.
       * If you don't provide this prop. It falls back to a randomly generated id.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * If `true`, the highlight can move to the input.
       */
-    var includeInputInList: js.UndefOr[Boolean] = js.native
+    var includeInputInList: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The input value.
       */
-    var inputValue: js.UndefOr[String] = js.native
+    var inputValue: js.UndefOr[String] = js.undefined
     
     /**
       * If `true`, `value` must be an array and the menu will support multiple selections.
       */
-    var multiple: js.UndefOr[Multiple] = js.native
+    var multiple: js.UndefOr[Multiple] = js.undefined
     
     /**
       * Callback fired when the value changes.
@@ -405,7 +401,7 @@ object useAutocompleteUseAutocompleteMod {
           /* details */ js.UndefOr[AutocompleteChangeDetails[T]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback fired when the popup requests to be closed.
@@ -416,7 +412,7 @@ object useAutocompleteUseAutocompleteMod {
       */
     var onClose: js.UndefOr[
         js.Function2[/* event */ ChangeEvent[js.Object], /* reason */ AutocompleteCloseReason, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback fired when the highlight option changes.
@@ -432,7 +428,7 @@ object useAutocompleteUseAutocompleteMod {
           /* reason */ AutocompleteHighlightChangeReason, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback fired when the input value changes.
@@ -448,7 +444,7 @@ object useAutocompleteUseAutocompleteMod {
           /* reason */ AutocompleteInputChangeReason, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback fired when the popup requests to be opened.
@@ -456,28 +452,28 @@ object useAutocompleteUseAutocompleteMod {
       *
       * @param {object} event The event source of the callback.
       */
-    var onOpen: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
     
     /**
       * Control the popup` open state.
       */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, the popup will open on input focus.
       */
-    var openOnFocus: js.UndefOr[Boolean] = js.native
+    var openOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array of options.
       */
-    var options: js.Array[T] = js.native
+    var options: js.Array[T]
     
     /**
       * If `true`, the input's text will be selected on focus.
       * It helps the user clear the selected value.
       */
-    var selectOnFocus: js.UndefOr[Boolean] = js.native
+    var selectOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The value of the autocomplete.
@@ -485,7 +481,7 @@ object useAutocompleteUseAutocompleteMod {
       * The value must have reference equality with the option in order to be selected.
       * You can customize the equality behavior with the `getOptionSelected` prop.
       */
-    var value: js.UndefOr[Value[T, Multiple, DisableClearable, FreeSolo]] = js.native
+    var value: js.UndefOr[Value[T, Multiple, DisableClearable, FreeSolo]] = js.undefined
   }
   object UseAutocompleteProps {
     
@@ -496,7 +492,7 @@ object useAutocompleteUseAutocompleteMod {
     }
     
     @scala.inline
-    implicit class UseAutocompletePropsMutableBuilder[Self <: UseAutocompleteProps[_, _, _, _], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */] (val x: Self with (UseAutocompleteProps[T, Multiple, DisableClearable, FreeSolo])) extends AnyVal {
+    implicit class UseAutocompletePropsMutableBuilder[Self <: UseAutocompleteProps[?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */] (val x: Self & (UseAutocompleteProps[T, Multiple, DisableClearable, FreeSolo])) extends AnyVal {
       
       @scala.inline
       def setAutoComplete(value: Boolean): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])

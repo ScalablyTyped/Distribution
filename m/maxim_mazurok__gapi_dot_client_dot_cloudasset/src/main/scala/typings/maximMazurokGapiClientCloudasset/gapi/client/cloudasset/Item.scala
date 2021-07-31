@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
   /** Software package available to be installed on the VM instance. */
-  var availablePackage: js.UndefOr[SoftwarePackage] = js.native
+  var availablePackage: js.UndefOr[SoftwarePackage] = js.undefined
   
   /** When this inventory item was first detected. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Identifier for this item, unique across items for this VM. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Software package present on the VM instance. */
-  var installedPackage: js.UndefOr[SoftwarePackage] = js.native
+  var installedPackage: js.UndefOr[SoftwarePackage] = js.undefined
   
   /** The origin of this inventory item. */
-  var originType: js.UndefOr[String] = js.native
+  var originType: js.UndefOr[String] = js.undefined
   
   /** The specific type of inventory, correlating to its specific details. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** When this inventory item was last modified. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Item {
   

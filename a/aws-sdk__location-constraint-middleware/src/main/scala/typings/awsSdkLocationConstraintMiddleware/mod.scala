@@ -4,19 +4,20 @@ import typings.awsSdkLocationConstraintMiddleware.anon.LocationConstraint
 import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/location-constraint-middleware", "locationConstraintMiddleware")
+  @JSImport("@aws-sdk/location-constraint-middleware", JSImport.Namespace)
   @js.native
-  def locationConstraintMiddleware[Input /* <: LocationConstraintAwareInput */, Output /* <: js.Object */](regionProvider: Provider[String]): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def locationConstraintMiddleware[Input /* <: LocationConstraintAwareInput */, Output /* <: js.Object */](regionProvider: Provider[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("locationConstraintMiddleware")(regionProvider.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   trait LocationConstraintAwareInput extends StObject {
     
-    var CreateBucketConfiguration: js.UndefOr[LocationConstraint] = js.native
+    var CreateBucketConfiguration: js.UndefOr[LocationConstraint] = js.undefined
   }
   object LocationConstraintAwareInput {
     

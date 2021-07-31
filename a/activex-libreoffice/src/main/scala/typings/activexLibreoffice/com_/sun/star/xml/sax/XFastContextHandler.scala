@@ -4,25 +4,25 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * receives notification of sax document events from a {@link XFastParser} .
   * @see XFastDocumentHandler
   */
-@js.native
-trait XFastContextHandler extends XInterface {
+trait XFastContextHandler
+  extends StObject
+     with XInterface {
   
   /** receives notification of character data. */
-  def characters(aChars: String): Unit = js.native
+  def characters(aChars: String): Unit
   
   /**
     * receives notification of the beginning of a known child element.
     * @param Element contains the integer token from the {@link XFastTokenHandler} registered at the {@link XFastParser} .;  If the element has a namespace th
     * @param Attribs Contains a {@link XFastAttributeList} to access the attributes from the element.
     */
-  def createFastChildContext(Element: Double, Attribs: XFastAttributeList): XFastContextHandler = js.native
+  def createFastChildContext(Element: Double, Attribs: XFastAttributeList): XFastContextHandler
   
   /**
     * receives notification of the beginning of a unknown child element .
@@ -30,26 +30,26 @@ trait XFastContextHandler extends XInterface {
     * @param Name contains the elements local name.
     * @param Attribs Contains a {@link XFastAttributeList} to access the attributes the element.
     */
-  def createUnknownChildContext(Namespace: String, Name: String, Attribs: XFastAttributeList): XFastContextHandler = js.native
+  def createUnknownChildContext(Namespace: String, Name: String, Attribs: XFastAttributeList): XFastContextHandler
   
   /**
     * receives notification of the end of an known element.
     * @see startFastElement
     */
-  def endFastElement(Element: Double): Unit = js.native
+  def endFastElement(Element: Double): Unit
   
   /**
     * receives notification of the end of an known element.
     * @see startUnknownElement
     */
-  def endUnknownElement(Namespace: String, Name: String): Unit = js.native
+  def endUnknownElement(Namespace: String, Name: String): Unit
   
   /**
     * receives notification of the beginning of an element .
     * @param Element contains the integer token from the {@link XFastTokenHandler} registered at the {@link XFastParser} . ;  If the element has a namespace t
     * @param Attribs Contains a {@link XFastAttributeList} to access the attributes from the element.
     */
-  def startFastElement(Element: Double, Attribs: XFastAttributeList): Unit = js.native
+  def startFastElement(Element: Double, Attribs: XFastAttributeList): Unit
   
   /**
     * receives notification of the beginning of an unknown element .
@@ -57,7 +57,7 @@ trait XFastContextHandler extends XInterface {
     * @param Name contains the elements local name.
     * @param Attribs Contains a {@link XFastAttributeList} to access the attributes from the element.
     */
-  def startUnknownElement(Namespace: String, Name: String, Attribs: XFastAttributeList): Unit = js.native
+  def startUnknownElement(Namespace: String, Name: String, Attribs: XFastAttributeList): Unit
 }
 object XFastContextHandler {
   

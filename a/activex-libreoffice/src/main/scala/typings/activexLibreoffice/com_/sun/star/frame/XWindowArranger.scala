@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XWindowArranger extends XInterface {
+trait XWindowArranger
+  extends StObject
+     with XInterface {
   
   /** @deprecated Deprecated */
-  def arrange(nCommand: Double): Unit = js.native
+  def arrange(nCommand: Double): Unit
   
   /** @deprecated Deprecated */
-  def hasArrangeCommand(nCommand: Double): Boolean = js.native
+  def hasArrangeCommand(nCommand: Double): Boolean
 }
 object XWindowArranger {
   

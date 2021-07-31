@@ -2,17 +2,17 @@ package typings.instagramPrivateApi.mediaConfigureStoryOptionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StoryHashtag extends StorySticker {
+trait StoryHashtag
+  extends StObject
+     with StorySticker {
   
-  var is_sticker: Boolean = js.native
+  var is_sticker: Boolean
   
-  var tag_name: String = js.native
+  var tag_name: String
   
-  var use_custom_title: Boolean = js.native
+  var use_custom_title: Boolean
 }
 object StoryHashtag {
   

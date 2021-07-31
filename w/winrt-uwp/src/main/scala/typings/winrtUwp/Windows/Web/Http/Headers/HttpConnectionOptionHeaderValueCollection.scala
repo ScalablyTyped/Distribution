@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsHttpConnectionOptionHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Connection HTTP header on an HTTP request. */
 @js.native
-trait HttpConnectionOptionHeaderValueCollection extends Array[HttpConnectionOptionHeaderValue] {
+trait HttpConnectionOptionHeaderValueCollection
+  extends StObject
+     with Array[HttpConnectionOptionHeaderValue] {
   
   /**
     * Adds a new HttpConnectionOptionHeaderValue item to the end of the collection.

@@ -7,20 +7,20 @@ import typings.dashjs.dashjsStrings.metricUpdated
 import typings.dashjs.dashjsStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MetricEvent extends Event {
+trait MetricEvent
+  extends StObject
+     with Event {
   
-  var mediaType: video | audio | fragmentedText = js.native
+  var mediaType: video | audio | fragmentedText
   
-  var metric: MetricType = js.native
+  var metric: MetricType
   
   @JSName("type")
-  var type_MetricEvent: metricAdded | metricUpdated = js.native
+  var type_MetricEvent: metricAdded | metricUpdated
   
-  var value: js.Object = js.native
+  var value: js.Object
 }
 object MetricEvent {
   

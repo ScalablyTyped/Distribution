@@ -2,13 +2,13 @@ package typings.rcTable.interfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColumnGroupType[RecordType] extends ColumnSharedType[RecordType] {
+trait ColumnGroupType[RecordType]
+  extends StObject
+     with ColumnSharedType[RecordType] {
   
-  var children: ColumnsType[RecordType] = js.native
+  var children: ColumnsType[RecordType]
 }
 object ColumnGroupType {
   
@@ -19,7 +19,7 @@ object ColumnGroupType {
   }
   
   @scala.inline
-  implicit class ColumnGroupTypeMutableBuilder[Self <: ColumnGroupType[_], RecordType] (val x: Self with ColumnGroupType[RecordType]) extends AnyVal {
+  implicit class ColumnGroupTypeMutableBuilder[Self <: ColumnGroupType[?], RecordType] (val x: Self & ColumnGroupType[RecordType]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: ColumnsType[RecordType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

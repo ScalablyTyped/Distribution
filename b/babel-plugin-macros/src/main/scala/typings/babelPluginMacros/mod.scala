@@ -10,38 +10,46 @@ import typings.babelTypes.mod.Node
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(babel: TypeofBabel, options: js.Any): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].apply(babel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
+  
   @JSImport("babel-plugin-macros", JSImport.Namespace)
   @js.native
-  def apply(babel: TypeofBabel, options: js.Any): PluginObj[PluginPass] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("babel-plugin-macros", "MacroError")
   @js.native
-  class MacroError () extends Error
+  class MacroError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
-  @JSImport("babel-plugin-macros", "createMacro")
-  @js.native
-  def createMacro(handler: MacroHandler): js.Any = js.native
-  @JSImport("babel-plugin-macros", "createMacro")
-  @js.native
-  def createMacro(handler: MacroHandler, options: Options): js.Any = js.native
+  @scala.inline
+  def createMacro(handler: MacroHandler): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createMacro")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def createMacro(handler: MacroHandler, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createMacro")(handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type MacroHandler = js.Function1[/* params */ MacroParams, Unit]
   
-  @js.native
   trait MacroParams extends StObject {
     
-    var babel: TypeofBabel = js.native
+    var babel: TypeofBabel
     
-    var config: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var config: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var references: defaultArrayNodePathNodeR = js.native
+    var references: defaultArrayNodePathNodeR
     
-    var state: PluginPass = js.native
+    var state: PluginPass
   }
   object MacroParams {
     
@@ -71,10 +79,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var configName: js.UndefOr[String] = js.native
+    var configName: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -2,48 +2,46 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPosCustomBatchRequestEntry extends StObject {
   
   /**
     * An entry ID, unique within the batch request.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * The inventory to submit. Set this only if the method is inventory.
     */
-  var inventory: js.UndefOr[SchemaPosInventory] = js.native
+  var inventory: js.UndefOr[SchemaPosInventory] = js.undefined
   
   /**
     * The ID of the POS data provider.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The sale information to submit. Set this only if the method is sale.
     */
-  var sale: js.UndefOr[SchemaPosSale] = js.native
+  var sale: js.UndefOr[SchemaPosSale] = js.undefined
   
   /**
     * The store information to submit. Set this only if the method is insert.
     */
-  var store: js.UndefOr[SchemaPosStore] = js.native
+  var store: js.UndefOr[SchemaPosStore] = js.undefined
   
   /**
     * The store code. Set this only if the method is delete or get.
     */
-  var storeCode: js.UndefOr[String] = js.native
+  var storeCode: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the account for which to get/submit data.
     */
-  var targetMerchantId: js.UndefOr[String] = js.native
+  var targetMerchantId: js.UndefOr[String] = js.undefined
 }
 object SchemaPosCustomBatchRequestEntry {
   

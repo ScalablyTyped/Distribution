@@ -2,17 +2,15 @@ package typings.findPackageJson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Email extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Email {
     
@@ -36,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: String = js.native
+    var url: String
   }
   object Type {
     
@@ -63,12 +60,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Url {
     

@@ -2,10 +2,8 @@ package typings.node.fsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RmDirOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait RmDirOptions extends StObject {
     * `true`.
     * @default 0
     */
-  var maxRetries: js.UndefOr[Double] = js.native
+  var maxRetries: js.UndefOr[Double] = js.undefined
   
   /**
     * @deprecated since v14.14.0 In future versions of Node.js,
@@ -29,14 +27,14 @@ trait RmDirOptions extends StObject {
     * operations are retried on failure.
     * @default false
     */
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The amount of time in milliseconds to wait between retries.
     * This option is ignored if the `recursive` option is not `true`.
     * @default 100
     */
-  var retryDelay: js.UndefOr[Double] = js.native
+  var retryDelay: js.UndefOr[Double] = js.undefined
 }
 object RmDirOptions {
   

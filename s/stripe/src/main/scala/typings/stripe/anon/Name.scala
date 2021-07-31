@@ -2,21 +2,19 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
   /**
     * The name of the custom field. This may be up to 30 characters.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The value of the custom field. This may be up to 30 characters.
     */
-  var value: String = js.native
+  var value: String
 }
 object Name {
   

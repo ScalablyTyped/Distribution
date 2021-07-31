@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.mask
 import typings.arcgisJsApi.arcgisJsApiStrings.opaque
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeshMaterial extends Accessor {
+trait MeshMaterial
+  extends StObject
+     with Accessor {
   
   /**
     * Specifies how transparency on the object is handled.

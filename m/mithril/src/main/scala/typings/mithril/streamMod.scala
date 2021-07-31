@@ -3,59 +3,62 @@ package typings.mithril
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object streamMod {
   
-  @JSImport("mithril/stream", JSImport.Namespace)
-  @js.native
-  def apply[T](): Stream[T] = js.native
+  @scala.inline
+  def apply[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Stream[T]]
   // tslint:disable-line no-unnecessary-generics
   /** Creates a stream with an initial value. */
+  @scala.inline
+  def apply[T](value: T): Stream[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+  
   @JSImport("mithril/stream", JSImport.Namespace)
   @js.native
-  def apply[T](value: T): Stream[T] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mithril/stream", "SKIP")
   @js.native
   val SKIP: js.Symbol = js.native
   
-  @JSImport("mithril/stream", "combine")
-  @js.native
-  def combine[T](combiner: js.Function1[/* repeated */ js.Any, T], streams: js.Array[Stream[_]]): Stream[T] = js.native
+  @scala.inline
+  def combine[T](combiner: js.Function1[/* repeated */ js.Any, T], streams: js.Array[Stream[js.Any]]): Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(combiner.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[Stream[T]]
   
-  @JSImport("mithril/stream", "lift")
-  @js.native
-  def lift[S /* <: js.Array[_] */, T](
+  @scala.inline
+  def lift[S /* <: js.Array[js.Any] */, T](
     fn: js.Function1[/* values */ S, T],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param streams because its type {[ I in keyof S ]: Stream<S[I]>} is not an array type */ streams: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}
-    */ typings.mithril.mithrilStrings.lift with TopLevel[S]
-  ): Stream[T] = js.native
+    */ typings.mithril.mithrilStrings.lift & TopLevel[S]
+  ): Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("lift")(fn.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[Stream[T]]
   
-  @JSImport("mithril/stream", "merge")
-  @js.native
-  def merge[S /* <: js.Array[_] */](
+  @scala.inline
+  def merge[S /* <: js.Array[js.Any] */](
     streams: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}
-    */ typings.mithril.mithrilStrings.merge with TopLevel[S]
+    */ typings.mithril.mithrilStrings.merge & TopLevel[S]
   ): Stream[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ I in keyof S ]: S[I]}
-    */ typings.mithril.mithrilStrings.merge with TopLevel[S]
-  ] = js.native
+    */ typings.mithril.mithrilStrings.merge & TopLevel[S]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(streams.asInstanceOf[js.Any]).asInstanceOf[Stream[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ I in keyof S ]: S[I]}
+    */ typings.mithril.mithrilStrings.merge & TopLevel[S]
+  ]]
   
-  @JSImport("mithril/stream", "scan")
-  @js.native
-  def scan[T, U](fn: js.Function2[/* acc */ U, /* value */ T, U], acc: U, stream: Stream[T]): Stream[U] = js.native
+  @scala.inline
+  def scan[T, U](fn: js.Function2[/* acc */ U, /* value */ T, U], acc: U, stream: Stream[T]): Stream[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(fn.asInstanceOf[js.Any], acc.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Stream[U]]
   
-  @JSImport("mithril/stream", "scanMerge")
-  @js.native
-  def scanMerge[U](pairs: js.Array[js.Tuple2[Stream[_], js.Function2[/* acc */ U, /* value */ _, U]]], acc: U): Stream[U] = js.native
-  @JSImport("mithril/stream", "scanMerge")
-  @js.native
-  def scanMerge_TU[T, U](pairs: js.Array[js.Tuple2[Stream[T], js.Function2[/* acc */ U, /* value */ T, U]]], acc: U): Stream[U] = js.native
+  @scala.inline
+  def scanMerge[U](
+    pairs: js.Array[js.Tuple2[Stream[js.Any], js.Function2[/* acc */ U, /* value */ js.Any, U]]],
+    acc: U
+  ): Stream[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanMerge")(pairs.asInstanceOf[js.Any], acc.asInstanceOf[js.Any])).asInstanceOf[Stream[U]]
+  
+  @scala.inline
+  def scanMerge_TU[T, U](pairs: js.Array[js.Tuple2[Stream[T], js.Function2[/* acc */ U, /* value */ T, U]]], acc: U): Stream[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanMerge")(pairs.asInstanceOf[js.Any], acc.asInstanceOf[js.Any])).asInstanceOf[Stream[U]]
   
   // tslint:disable-line unified-signatures
   @js.native
@@ -83,7 +86,7 @@ object streamMod {
     def map[U](
       f: js.Function1[
           /* current */ T, 
-          U | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Stream.SKIP */ _)
+          U | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Stream.SKIP */ js.Any)
         ]
     ): Stream[U] = js.native
     

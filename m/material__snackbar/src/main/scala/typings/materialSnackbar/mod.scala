@@ -4,7 +4,6 @@ import typings.materialSnackbar.anon.PartialMDCSnackbarAdapter
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,7 @@ object mod {
   @js.native
   class MDCSnackbar protected ()
     extends typings.materialSnackbar.componentMod.MDCSnackbar {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialSnackbar.foundationMod.MDCSnackbarFoundation,
@@ -23,9 +22,12 @@ object mod {
   /* static members */
   object MDCSnackbar {
     
-    @JSImport("@material/snackbar", "MDCSnackbar.attachTo")
+    @JSImport("@material/snackbar", "MDCSnackbar")
     @js.native
-    def attachTo(root: Element): typings.materialSnackbar.componentMod.MDCSnackbar = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialSnackbar.componentMod.MDCSnackbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSnackbar.componentMod.MDCSnackbar]
   }
   
   @JSImport("@material/snackbar", "MDCSnackbarFoundation")
@@ -212,6 +214,10 @@ object mod {
   
   object util {
     
+    @JSImport("@material/snackbar", "util")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @license
       * Copyright 2018 Google Inc.
@@ -234,11 +240,9 @@ object mod {
       * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
       * THE SOFTWARE.
       */
-    @JSImport("@material/snackbar", "util.announce")
-    @js.native
-    def announce(ariaEl: Element): Unit = js.native
-    @JSImport("@material/snackbar", "util.announce")
-    @js.native
-    def announce(ariaEl: Element, labelEl: Element): Unit = js.native
+    @scala.inline
+    def announce(ariaEl: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("announce")(ariaEl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def announce(ariaEl: Element, labelEl: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("announce")(ariaEl.asInstanceOf[js.Any], labelEl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

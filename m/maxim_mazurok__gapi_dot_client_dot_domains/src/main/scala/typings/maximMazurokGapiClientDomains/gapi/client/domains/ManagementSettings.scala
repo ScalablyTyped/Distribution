@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagementSettings extends StObject {
   
   /** Output only. The renewal method for this `Registration`. */
-  var renewalMethod: js.UndefOr[String] = js.native
+  var renewalMethod: js.UndefOr[String] = js.undefined
   
   /** Controls whether the domain can be transferred to another registrar. */
-  var transferLockState: js.UndefOr[String] = js.native
+  var transferLockState: js.UndefOr[String] = js.undefined
 }
 object ManagementSettings {
   

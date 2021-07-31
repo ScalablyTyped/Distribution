@@ -3,24 +3,22 @@ package typings.awsSdkClientCognitoIdentityBrowser
 import typings.awsSdkClientCognitoIdentityBrowser.getOpenIdTokenForDeveloperIdentityExceptionsUnionMod.GetOpenIdTokenForDeveloperIdentityExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeveloperUserAlreadyRegisteredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_DeveloperUserAlreadyRegisteredExceptionDetails> * / any */ @js.native
-  trait DeveloperUserAlreadyRegisteredException extends GetOpenIdTokenForDeveloperIdentityExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_DeveloperUserAlreadyRegisteredExceptionDetails> * / any */ trait DeveloperUserAlreadyRegisteredException
+    extends StObject
+       with GetOpenIdTokenForDeveloperIdentityExceptionsUnion {
     
-    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.DeveloperUserAlreadyRegisteredException = js.native
+    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.DeveloperUserAlreadyRegisteredException
   }
   object DeveloperUserAlreadyRegisteredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.DeveloperUserAlreadyRegisteredException
-    ): DeveloperUserAlreadyRegisteredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): DeveloperUserAlreadyRegisteredException = {
+      val __obj = js.Dynamic.literal(name = "DeveloperUserAlreadyRegisteredException")
       __obj.asInstanceOf[DeveloperUserAlreadyRegisteredException]
     }
     
@@ -34,13 +32,12 @@ object typesDeveloperUserAlreadyRegisteredExceptionMod {
     }
   }
   
-  @js.native
   trait DeveloperUserAlreadyRegisteredExceptionDetails extends StObject {
     
     /**
       * <p>This developer user identifier is already registered with Cognito.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object DeveloperUserAlreadyRegisteredExceptionDetails {
     

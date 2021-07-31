@@ -2,20 +2,18 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Calorie extends StObject {
   
   // 菜名，示例：鱼香肉丝。
-  var calorie: Double = js.native
+  var calorie: Double
   
   // 菜品识别结果数组
-  var name: String = js.native
+  var name: String
   
   // 卡路里，每100g的卡路里含量。
-  var probability: Double = js.native
+  var probability: Double
 }
 object Calorie {
   

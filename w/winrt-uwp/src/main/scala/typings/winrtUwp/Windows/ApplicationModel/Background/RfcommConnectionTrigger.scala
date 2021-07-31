@@ -6,27 +6,25 @@ import typings.winrtUwp.Windows.Networking.HostName
 import typings.winrtUwp.Windows.Networking.Sockets.SocketProtectionLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that launches a background task when an RFCOMM inbound or outbound connections are established. */
-@js.native
 trait RfcommConnectionTrigger extends StObject {
   
   /** Gets or sets whether the app wants to handle multiple connections at a time. */
-  var allowMultipleConnections: Boolean = js.native
+  var allowMultipleConnections: Boolean
   
   /** Gets or sets the RfcommInboundConnectionInformation object that describes how the system will advertise and listen for inbound connections on behalf of the app. */
-  var inboundConnection: RfcommInboundConnectionInformation = js.native
+  var inboundConnection: RfcommInboundConnectionInformation
   
   /** Gets or sets the RfcommOutboundConnectionInformation object that describes how the system will create outgoing connections on behalf of the app. */
-  var outboundConnection: RfcommOutboundConnectionInformation = js.native
+  var outboundConnection: RfcommOutboundConnectionInformation
   
   /** Gets or sets the minimum protection level required for connections that are created or accepted on behalf of the app. */
-  var protectionLevel: SocketProtectionLevel = js.native
+  var protectionLevel: SocketProtectionLevel
   
   /** Gets or sets specific remote Bluetooth device the system will connect to, or accept connections from, on behalf of the app. */
-  var remoteHostName: HostName = js.native
+  var remoteHostName: HostName
 }
 object RfcommConnectionTrigger {
   

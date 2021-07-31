@@ -5,19 +5,20 @@ import typings.xstate.mod.StateNode
 import typings.xstate.typesMod.EventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scxmlMod {
   
-  @JSImport("xstate/lib/scxml", "toMachine")
+  @JSImport("xstate/lib/scxml", JSImport.Namespace)
   @js.native
-  def toMachine(xml: String, options: ScxmlToMachineOptions): StateNode[_, _, EventObject, ContextAny] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def toMachine(xml: String, options: ScxmlToMachineOptions): StateNode[js.Any, js.Any, EventObject, ContextAny] = (^.asInstanceOf[js.Dynamic].applyDynamic("toMachine")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StateNode[js.Any, js.Any, EventObject, ContextAny]]
+  
   trait ScxmlToMachineOptions extends StObject {
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
   }
   object ScxmlToMachineOptions {
     

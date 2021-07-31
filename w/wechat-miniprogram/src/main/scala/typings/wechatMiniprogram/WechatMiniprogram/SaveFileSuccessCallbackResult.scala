@@ -2,16 +2,14 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveFileSuccessCallbackResult extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 存储后的文件路径 (本地路径) */
-  var savedFilePath: String = js.native
+  var savedFilePath: String
 }
 object SaveFileSuccessCallbackResult {
   

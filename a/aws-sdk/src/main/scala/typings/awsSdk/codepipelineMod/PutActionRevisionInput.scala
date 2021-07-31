@@ -2,31 +2,29 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutActionRevisionInput extends StObject {
   
   /**
     * The name of the action that processes the revision.
     */
-  var actionName: ActionName = js.native
+  var actionName: ActionName
   
   /**
     * Represents information about the version (or revision) of an action.
     */
-  var actionRevision: ActionRevision = js.native
+  var actionRevision: ActionRevision
   
   /**
     * The name of the pipeline that starts processing the revision to the source.
     */
-  var pipelineName: PipelineName = js.native
+  var pipelineName: PipelineName
   
   /**
     * The name of the stage that contains the action that acts on the revision.
     */
-  var stageName: StageName = js.native
+  var stageName: StageName
 }
 object PutActionRevisionInput {
   

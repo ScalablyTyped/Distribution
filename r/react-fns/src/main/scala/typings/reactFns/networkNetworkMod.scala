@@ -5,7 +5,6 @@ import typings.reactFns.typesMod.SharedRenderProps
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkNetworkMod {
@@ -32,12 +31,11 @@ object networkNetworkMod {
     def handleOnline(): Unit = js.native
   }
   
-  @js.native
   trait NetworkProps extends StObject {
     
-    var offlineAt: js.UndefOr[Date] = js.native
+    var offlineAt: js.UndefOr[Date] = js.undefined
     
-    var online: Boolean = js.native
+    var online: Boolean
   }
   object NetworkProps {
     

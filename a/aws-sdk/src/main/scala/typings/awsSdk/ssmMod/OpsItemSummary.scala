@@ -2,71 +2,69 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpsItemSummary extends StObject {
   
   /**
     * A list of OpsItems by category.
     */
-  var Category: js.UndefOr[OpsItemCategory] = js.native
+  var Category: js.UndefOr[OpsItemCategory] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM entity that created the OpsItem.
     */
-  var CreatedBy: js.UndefOr[String] = js.native
+  var CreatedBy: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the OpsItem was created.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.native
+  var CreatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM entity that created the OpsItem.
     */
-  var LastModifiedBy: js.UndefOr[String] = js.native
+  var LastModifiedBy: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the OpsItem was last updated.
     */
-  var LastModifiedTime: js.UndefOr[DateTime] = js.native
+  var LastModifiedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Operational data is custom data that provides useful reference details about the OpsItem. 
     */
-  var OperationalData: js.UndefOr[OpsItemOperationalData] = js.native
+  var OperationalData: js.UndefOr[OpsItemOperationalData] = js.undefined
   
   /**
     * The ID of the OpsItem.
     */
-  var OpsItemId: js.UndefOr[typings.awsSdk.ssmMod.OpsItemId] = js.native
+  var OpsItemId: js.UndefOr[typings.awsSdk.ssmMod.OpsItemId] = js.undefined
   
   /**
     * The importance of this OpsItem in relation to other OpsItems in the system.
     */
-  var Priority: js.UndefOr[OpsItemPriority] = js.native
+  var Priority: js.UndefOr[OpsItemPriority] = js.undefined
   
   /**
     * A list of OpsItems by severity.
     */
-  var Severity: js.UndefOr[OpsItemSeverity] = js.native
+  var Severity: js.UndefOr[OpsItemSeverity] = js.undefined
   
   /**
     * The impacted AWS resource.
     */
-  var Source: js.UndefOr[OpsItemSource] = js.native
+  var Source: js.UndefOr[OpsItemSource] = js.undefined
   
   /**
     * The OpsItem status. Status can be Open, In Progress, or Resolved.
     */
-  var Status: js.UndefOr[OpsItemStatus] = js.native
+  var Status: js.UndefOr[OpsItemStatus] = js.undefined
   
   /**
     * A short heading that describes the nature of the OpsItem and the impacted resource.
     */
-  var Title: js.UndefOr[OpsItemTitle] = js.native
+  var Title: js.UndefOr[OpsItemTitle] = js.undefined
 }
 object OpsItemSummary {
   

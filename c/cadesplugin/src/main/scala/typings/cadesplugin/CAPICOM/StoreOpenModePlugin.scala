@@ -3,19 +3,17 @@ package typings.cadesplugin.CAPICOM
 import typings.cadesplugin.cadespluginNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoreOpenModePlugin extends StObject {
   
-  val CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED: `2` = js.native
+  val CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED: `2`
 }
 object StoreOpenModePlugin {
   
   @scala.inline
-  def apply(CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED: `2`): StoreOpenModePlugin = {
-    val __obj = js.Dynamic.literal(CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED = CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED.asInstanceOf[js.Any])
+  def apply(): StoreOpenModePlugin = {
+    val __obj = js.Dynamic.literal(CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED = 2)
     __obj.asInstanceOf[StoreOpenModePlugin]
   }
   

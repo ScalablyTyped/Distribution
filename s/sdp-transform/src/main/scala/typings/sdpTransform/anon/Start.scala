@@ -2,15 +2,13 @@ package typings.sdpTransform.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Start extends StObject {
   
-  var start: Double = js.native
+  var start: Double
   
-  var stop: Double = js.native
+  var stop: Double
 }
 object Start {
   

@@ -8,7 +8,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listViewMod {
@@ -42,25 +41,26 @@ object listViewMod {
     var ulv: Refresh = js.native
   }
   
-  @js.native
-  trait ListViewProps[T] extends UltimateListViewProps {
+  trait ListViewProps[T]
+    extends StObject
+       with UltimateListViewProps {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var keyExtractor: js.UndefOr[js.Function2[/* item */ T, /* index */ Double, String]] = js.native
+    var keyExtractor: js.UndefOr[js.Function2[/* item */ T, /* index */ Double, String]] = js.undefined
     
     @JSName("numColumns")
-    var numColumns_ListViewProps: js.UndefOr[Double] = js.native
+    var numColumns_ListViewProps: js.UndefOr[Double] = js.undefined
     
-    def onFetch(currentPage: Double, startFetch: js.Function0[_], abortFetch: js.Function0[Unit]): Unit = js.native
+    def onFetch(currentPage: Double, startFetch: js.Function0[js.Any], abortFetch: js.Function0[Unit]): Unit
     
-    def renderItem(item: T, index: Double, separators: Highlight): ReactElement | Null = js.native
+    def renderItem(item: T, index: Double, separators: Highlight): ReactElement | Null
   }
   object ListViewProps {
     
     @scala.inline
     def apply[T](
-      onFetch: (Double, js.Function0[_], js.Function0[Unit]) => Unit,
+      onFetch: (Double, js.Function0[js.Any], js.Function0[Unit]) => Unit,
       renderItem: (T, Double, Highlight) => ReactElement | Null
     ): ListViewProps[T] = {
       val __obj = js.Dynamic.literal(onFetch = js.Any.fromFunction3(onFetch), renderItem = js.Any.fromFunction3(renderItem))
@@ -68,7 +68,7 @@ object listViewMod {
     }
     
     @scala.inline
-    implicit class ListViewPropsMutableBuilder[Self <: ListViewProps[_], T] (val x: Self with ListViewProps[T]) extends AnyVal {
+    implicit class ListViewPropsMutableBuilder[Self <: ListViewProps[?], T] (val x: Self & ListViewProps[T]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -89,98 +89,96 @@ object listViewMod {
       def setNumColumnsUndefined: Self = StObject.set(x, "numColumns", js.undefined)
       
       @scala.inline
-      def setOnFetch(value: (Double, js.Function0[_], js.Function0[Unit]) => Unit): Self = StObject.set(x, "onFetch", js.Any.fromFunction3(value))
+      def setOnFetch(value: (Double, js.Function0[js.Any], js.Function0[Unit]) => Unit): Self = StObject.set(x, "onFetch", js.Any.fromFunction3(value))
       
       @scala.inline
       def setRenderItem(value: (T, Double, Highlight) => ReactElement | Null): Self = StObject.set(x, "renderItem", js.Any.fromFunction3(value))
     }
   }
   
-  @js.native
   trait ListViewState extends StObject
   
-  @js.native
   trait UltimateListViewProps extends StObject {
     
-    var allLoadedText: js.UndefOr[js.Any] = js.native
+    var allLoadedText: js.UndefOr[js.Any] = js.undefined
     
-    var arrowImageSource: js.UndefOr[js.Any] = js.native
+    var arrowImageSource: js.UndefOr[js.Any] = js.undefined
     
-    var arrowImageStyle: js.UndefOr[js.Any] = js.native
+    var arrowImageStyle: js.UndefOr[js.Any] = js.undefined
     
-    var autoPagination: js.UndefOr[js.Any] = js.native
+    var autoPagination: js.UndefOr[js.Any] = js.undefined
     
-    var customRefreshControl: js.UndefOr[js.Any] = js.native
+    var customRefreshControl: js.UndefOr[js.Any] = js.undefined
     
-    var customRefreshView: js.UndefOr[js.Any] = js.native
+    var customRefreshView: js.UndefOr[js.Any] = js.undefined
     
-    var dateFormat: js.UndefOr[js.Any] = js.native
+    var dateFormat: js.UndefOr[js.Any] = js.undefined
     
-    var dateStyle: js.UndefOr[js.Any] = js.native
+    var dateStyle: js.UndefOr[js.Any] = js.undefined
     
-    var dateTitle: js.UndefOr[js.Any] = js.native
+    var dateTitle: js.UndefOr[js.Any] = js.undefined
     
-    var displayDate: js.UndefOr[js.Any] = js.native
+    var displayDate: js.UndefOr[js.Any] = js.undefined
     
-    var emptyView: js.UndefOr[js.Any] = js.native
+    var emptyView: js.UndefOr[js.Any] = js.undefined
     
-    var enableEmptySections: js.UndefOr[js.Any] = js.native
+    var enableEmptySections: js.UndefOr[js.Any] = js.undefined
     
-    var fetchingSpinnerSize: js.UndefOr[js.Any] = js.native
+    var fetchingSpinnerSize: js.UndefOr[js.Any] = js.undefined
     
-    var firstLoader: js.UndefOr[js.Any] = js.native
+    var firstLoader: js.UndefOr[js.Any] = js.undefined
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    var horizontal: js.UndefOr[js.Any] = js.native
+    var horizontal: js.UndefOr[js.Any] = js.undefined
     
-    var initialNumToRender: js.UndefOr[js.Any] = js.native
+    var initialNumToRender: js.UndefOr[js.Any] = js.undefined
     
-    var numColumns: js.UndefOr[js.Any] = js.native
+    var numColumns: js.UndefOr[js.Any] = js.undefined
     
-    var pagination: js.UndefOr[js.Any] = js.native
+    var pagination: js.UndefOr[js.Any] = js.undefined
     
-    var paginationAllLoadedView: js.UndefOr[js.Any] = js.native
+    var paginationAllLoadedView: js.UndefOr[js.Any] = js.undefined
     
-    var paginationBtnText: js.UndefOr[js.Any] = js.native
+    var paginationBtnText: js.UndefOr[js.Any] = js.undefined
     
-    var paginationFetchingView: js.UndefOr[js.Any] = js.native
+    var paginationFetchingView: js.UndefOr[js.Any] = js.undefined
     
-    var paginationWaitingView: js.UndefOr[js.Any] = js.native
+    var paginationWaitingView: js.UndefOr[js.Any] = js.undefined
     
-    var refreshViewHeight: js.UndefOr[js.Any] = js.native
+    var refreshViewHeight: js.UndefOr[js.Any] = js.undefined
     
-    var refreshViewStyle: js.UndefOr[js.Any] = js.native
+    var refreshViewStyle: js.UndefOr[js.Any] = js.undefined
     
-    var refreshable: js.UndefOr[js.Any] = js.native
+    var refreshable: js.UndefOr[js.Any] = js.undefined
     
-    var refreshableColors: js.UndefOr[js.Any] = js.native
+    var refreshableColors: js.UndefOr[js.Any] = js.undefined
     
-    var refreshableMode: js.UndefOr[js.Any] = js.native
+    var refreshableMode: js.UndefOr[js.Any] = js.undefined
     
-    var refreshableProgressBackgroundColor: js.UndefOr[js.Any] = js.native
+    var refreshableProgressBackgroundColor: js.UndefOr[js.Any] = js.undefined
     
-    var refreshableSize: js.UndefOr[js.Any] = js.native
+    var refreshableSize: js.UndefOr[js.Any] = js.undefined
     
-    var refreshableTintColor: js.UndefOr[js.Any] = js.native
+    var refreshableTintColor: js.UndefOr[js.Any] = js.undefined
     
-    var refreshableTitle: js.UndefOr[js.Any] = js.native
+    var refreshableTitle: js.UndefOr[js.Any] = js.undefined
     
-    var refreshableTitlePull: js.UndefOr[js.Any] = js.native
+    var refreshableTitlePull: js.UndefOr[js.Any] = js.undefined
     
-    var refreshableTitleRefreshing: js.UndefOr[js.Any] = js.native
+    var refreshableTitleRefreshing: js.UndefOr[js.Any] = js.undefined
     
-    var refreshableTitleRelease: js.UndefOr[js.Any] = js.native
+    var refreshableTitleRelease: js.UndefOr[js.Any] = js.undefined
     
-    var scrollEnabled: js.UndefOr[js.Any] = js.native
+    var scrollEnabled: js.UndefOr[js.Any] = js.undefined
     
-    var separator: js.UndefOr[js.Any] = js.native
+    var separator: js.UndefOr[js.Any] = js.undefined
     
-    var spinnerColor: js.UndefOr[js.Any] = js.native
+    var spinnerColor: js.UndefOr[js.Any] = js.undefined
     
-    var waitingSpinnerSize: js.UndefOr[js.Any] = js.native
+    var waitingSpinnerSize: js.UndefOr[js.Any] = js.undefined
     
-    var waitingSpinnerText: js.UndefOr[js.Any] = js.native
+    var waitingSpinnerText: js.UndefOr[js.Any] = js.undefined
   }
   object UltimateListViewProps {
     

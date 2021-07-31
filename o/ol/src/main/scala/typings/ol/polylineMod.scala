@@ -4,10 +4,13 @@ import typings.ol.featureMod.WriteOptions
 import typings.ol.geometryLayoutMod.GeometryLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polylineMod {
+  
+  @JSImport("ol/format/Polyline", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/format/Polyline", JSImport.Default)
   @js.native
@@ -15,60 +18,46 @@ object polylineMod {
     def this(opt_options: Options) = this()
   }
   
-  @JSImport("ol/format/Polyline", "decodeDeltas")
-  @js.native
-  def decodeDeltas(encoded: String, stride: Double): js.Array[Double] = js.native
-  @JSImport("ol/format/Polyline", "decodeDeltas")
-  @js.native
-  def decodeDeltas(encoded: String, stride: Double, opt_factor: Double): js.Array[Double] = js.native
+  @scala.inline
+  def decodeDeltas(encoded: String, stride: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeDeltas")(encoded.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def decodeDeltas(encoded: String, stride: Double, opt_factor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeDeltas")(encoded.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ol/format/Polyline", "decodeFloats")
-  @js.native
-  def decodeFloats(encoded: String): js.Array[Double] = js.native
-  @JSImport("ol/format/Polyline", "decodeFloats")
-  @js.native
-  def decodeFloats(encoded: String, opt_factor: Double): js.Array[Double] = js.native
+  @scala.inline
+  def decodeFloats(encoded: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFloats")(encoded.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def decodeFloats(encoded: String, opt_factor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFloats")(encoded.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ol/format/Polyline", "decodeSignedIntegers")
-  @js.native
-  def decodeSignedIntegers(encoded: String): js.Array[Double] = js.native
+  @scala.inline
+  def decodeSignedIntegers(encoded: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeSignedIntegers")(encoded.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ol/format/Polyline", "decodeUnsignedIntegers")
-  @js.native
-  def decodeUnsignedIntegers(encoded: String): js.Array[Double] = js.native
+  @scala.inline
+  def decodeUnsignedIntegers(encoded: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeUnsignedIntegers")(encoded.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ol/format/Polyline", "encodeDeltas")
-  @js.native
-  def encodeDeltas(numbers: js.Array[Double], stride: Double): String = js.native
-  @JSImport("ol/format/Polyline", "encodeDeltas")
-  @js.native
-  def encodeDeltas(numbers: js.Array[Double], stride: Double, opt_factor: Double): String = js.native
+  @scala.inline
+  def encodeDeltas(numbers: js.Array[Double], stride: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDeltas")(numbers.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encodeDeltas(numbers: js.Array[Double], stride: Double, opt_factor: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDeltas")(numbers.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ol/format/Polyline", "encodeFloats")
-  @js.native
-  def encodeFloats(numbers: js.Array[Double]): String = js.native
-  @JSImport("ol/format/Polyline", "encodeFloats")
-  @js.native
-  def encodeFloats(numbers: js.Array[Double], opt_factor: Double): String = js.native
+  @scala.inline
+  def encodeFloats(numbers: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeFloats")(numbers.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encodeFloats(numbers: js.Array[Double], opt_factor: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeFloats")(numbers.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ol/format/Polyline", "encodeSignedIntegers")
-  @js.native
-  def encodeSignedIntegers(numbers: js.Array[Double]): String = js.native
+  @scala.inline
+  def encodeSignedIntegers(numbers: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeSignedIntegers")(numbers.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ol/format/Polyline", "encodeUnsignedInteger")
-  @js.native
-  def encodeUnsignedInteger(num: Double): String = js.native
+  @scala.inline
+  def encodeUnsignedInteger(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeUnsignedInteger")(num.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ol/format/Polyline", "encodeUnsignedIntegers")
-  @js.native
-  def encodeUnsignedIntegers(numbers: js.Array[Double]): String = js.native
+  @scala.inline
+  def encodeUnsignedIntegers(numbers: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeUnsignedIntegers")(numbers.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait Options extends StObject {
     
-    var factor: js.UndefOr[Double] = js.native
+    var factor: js.UndefOr[Double] = js.undefined
     
-    var geometryLayout: js.UndefOr[GeometryLayout] = js.native
+    var geometryLayout: js.UndefOr[GeometryLayout] = js.undefined
   }
   object Options {
     

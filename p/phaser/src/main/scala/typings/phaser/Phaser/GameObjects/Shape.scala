@@ -14,7 +14,6 @@ import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Shape
-  extends GameObject
+  extends StObject
+     with GameObject
      with AlphaSingle
      with BlendMode
      with ComputedSize
@@ -111,9 +111,9 @@ trait Shape
     * @param alpha The alpha value used when filling this shape, if a fill color is given. Default 1.
     */
   def setFillStyle(): this.type = js.native
-  def setFillStyle(color: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
   def setFillStyle(color: Double): this.type = js.native
   def setFillStyle(color: Double, alpha: Double): this.type = js.native
+  def setFillStyle(color: Unit, alpha: Double): this.type = js.native
   
   /**
     * Sets the stroke color and alpha for this Shape.
@@ -128,13 +128,13 @@ trait Shape
     * @param alpha The alpha value used when stroking this shape, if a stroke color is given. Default 1.
     */
   def setStrokeStyle(): this.type = js.native
-  def setStrokeStyle(lineWidth: js.UndefOr[scala.Nothing], color: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
-  def setStrokeStyle(lineWidth: js.UndefOr[scala.Nothing], color: Double): this.type = js.native
-  def setStrokeStyle(lineWidth: js.UndefOr[scala.Nothing], color: Double, alpha: Double): this.type = js.native
   def setStrokeStyle(lineWidth: Double): this.type = js.native
-  def setStrokeStyle(lineWidth: Double, color: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
   def setStrokeStyle(lineWidth: Double, color: Double): this.type = js.native
   def setStrokeStyle(lineWidth: Double, color: Double, alpha: Double): this.type = js.native
+  def setStrokeStyle(lineWidth: Double, color: Unit, alpha: Double): this.type = js.native
+  def setStrokeStyle(lineWidth: Unit, color: Double): this.type = js.native
+  def setStrokeStyle(lineWidth: Unit, color: Double, alpha: Double): this.type = js.native
+  def setStrokeStyle(lineWidth: Unit, color: Unit, alpha: Double): this.type = js.native
   
   /**
     * The stroke alpha value used by this Shape.

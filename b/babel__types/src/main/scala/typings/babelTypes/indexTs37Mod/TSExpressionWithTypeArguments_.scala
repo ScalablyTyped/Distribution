@@ -3,28 +3,27 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSExpressionWithTypeArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSExpressionWithTypeArguments_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSExpressionWithTypeArguments_
+  extends StObject
+     with BaseNode
+     with TSType {
   
-  var expression: TSEntityName = js.native
+  var expression: TSEntityName
   
-  var typeParameters: TSTypeParameterInstantiation_ | Null = js.native
+  var typeParameters: TSTypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_TSExpressionWithTypeArguments_ : TSExpressionWithTypeArguments = js.native
+  var type_TSExpressionWithTypeArguments_ : TSExpressionWithTypeArguments
 }
 object TSExpressionWithTypeArguments_ {
   
   @scala.inline
-  def apply(expression: TSEntityName, `type`: TSExpressionWithTypeArguments): TSExpressionWithTypeArguments_ = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(expression: TSEntityName): TSExpressionWithTypeArguments_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSExpressionWithTypeArguments")
     __obj.asInstanceOf[TSExpressionWithTypeArguments_]
   }
   

@@ -2,35 +2,35 @@ package typings.angularCompiler.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Component extends Directive {
+trait Component
+  extends StObject
+     with Directive {
   
-  var animations: js.UndefOr[js.Array[_]] = js.native
+  var animations: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.native
+  var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined
   
-  var encapsulation: js.UndefOr[ViewEncapsulation] = js.native
+  var encapsulation: js.UndefOr[ViewEncapsulation] = js.undefined
   
-  var entryComponents: js.UndefOr[js.Array[typings.angularCompiler.coreMod.Type | js.Array[_]]] = js.native
+  var entryComponents: js.UndefOr[js.Array[Type | js.Array[js.Any]]] = js.undefined
   
-  var interpolation: js.UndefOr[js.Tuple2[String, String]] = js.native
+  var interpolation: js.UndefOr[js.Tuple2[String, String]] = js.undefined
   
-  var moduleId: js.UndefOr[String] = js.native
+  var moduleId: js.UndefOr[String] = js.undefined
   
-  var preserveWhitespaces: js.UndefOr[Boolean] = js.native
+  var preserveWhitespaces: js.UndefOr[Boolean] = js.undefined
   
-  var styleUrls: js.UndefOr[js.Array[String]] = js.native
+  var styleUrls: js.UndefOr[js.Array[String]] = js.undefined
   
-  var styles: js.UndefOr[js.Array[String]] = js.native
+  var styles: js.UndefOr[js.Array[String]] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var templateUrl: js.UndefOr[String] = js.native
+  var templateUrl: js.UndefOr[String] = js.undefined
   
-  var viewProviders: js.UndefOr[js.Array[Provider]] = js.native
+  var viewProviders: js.UndefOr[js.Array[Provider]] = js.undefined
 }
 object Component {
   
@@ -44,7 +44,7 @@ object Component {
   implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAnimations(value: js.Array[_]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    def setAnimations(value: js.Array[js.Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
@@ -65,13 +65,13 @@ object Component {
     def setEncapsulationUndefined: Self = StObject.set(x, "encapsulation", js.undefined)
     
     @scala.inline
-    def setEntryComponents(value: js.Array[typings.angularCompiler.coreMod.Type | js.Array[_]]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
+    def setEntryComponents(value: js.Array[Type | js.Array[js.Any]]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEntryComponentsUndefined: Self = StObject.set(x, "entryComponents", js.undefined)
     
     @scala.inline
-    def setEntryComponentsVarargs(value: (typings.angularCompiler.coreMod.Type | js.Array[js.Any])*): Self = StObject.set(x, "entryComponents", js.Array(value :_*))
+    def setEntryComponentsVarargs(value: (Type | js.Array[js.Any])*): Self = StObject.set(x, "entryComponents", js.Array(value :_*))
     
     @scala.inline
     def setInterpolation(value: js.Tuple2[String, String]): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])

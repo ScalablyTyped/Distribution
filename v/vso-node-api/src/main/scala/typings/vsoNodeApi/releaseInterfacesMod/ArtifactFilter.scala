@@ -2,17 +2,15 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactFilter extends StObject {
   
-  var sourceBranch: String = js.native
+  var sourceBranch: String
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
-  var useBuildDefinitionBranch: Boolean = js.native
+  var useBuildDefinitionBranch: Boolean
 }
 object ArtifactFilter {
   

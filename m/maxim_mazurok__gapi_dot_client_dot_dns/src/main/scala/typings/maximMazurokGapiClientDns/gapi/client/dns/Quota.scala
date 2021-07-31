@@ -2,55 +2,53 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Quota extends StObject {
   
   /** Maximum allowed number of DnsKeys per ManagedZone. */
-  var dnsKeysPerManagedZone: js.UndefOr[Double] = js.native
+  var dnsKeysPerManagedZone: js.UndefOr[Double] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Maximum allowed number of managed zones in the project. */
-  var managedZones: js.UndefOr[Double] = js.native
+  var managedZones: js.UndefOr[Double] = js.undefined
   
   /** Maximum allowed number of managed zones which can be attached to a network. */
-  var managedZonesPerNetwork: js.UndefOr[Double] = js.native
+  var managedZonesPerNetwork: js.UndefOr[Double] = js.undefined
   
   /** Maximum allowed number of networks to which a privately scoped zone can be attached. */
-  var networksPerManagedZone: js.UndefOr[Double] = js.native
+  var networksPerManagedZone: js.UndefOr[Double] = js.undefined
   
   /** Maximum allowed number of networks per policy. */
-  var networksPerPolicy: js.UndefOr[Double] = js.native
+  var networksPerPolicy: js.UndefOr[Double] = js.undefined
   
   /** Maximum allowed number of policies per project. */
-  var policies: js.UndefOr[Double] = js.native
+  var policies: js.UndefOr[Double] = js.undefined
   
   /** Maximum allowed number of ResourceRecords per ResourceRecordSet. */
-  var resourceRecordsPerRrset: js.UndefOr[Double] = js.native
+  var resourceRecordsPerRrset: js.UndefOr[Double] = js.undefined
   
   /** Maximum allowed number of ResourceRecordSets to add per ChangesCreateRequest. */
-  var rrsetAdditionsPerChange: js.UndefOr[Double] = js.native
+  var rrsetAdditionsPerChange: js.UndefOr[Double] = js.undefined
   
   /** Maximum allowed number of ResourceRecordSets to delete per ChangesCreateRequest. */
-  var rrsetDeletionsPerChange: js.UndefOr[Double] = js.native
+  var rrsetDeletionsPerChange: js.UndefOr[Double] = js.undefined
   
   /** Maximum allowed number of ResourceRecordSets per zone in the project. */
-  var rrsetsPerManagedZone: js.UndefOr[Double] = js.native
+  var rrsetsPerManagedZone: js.UndefOr[Double] = js.undefined
   
   /** Maximum allowed number of target name servers per managed forwarding zone. */
-  var targetNameServersPerManagedZone: js.UndefOr[Double] = js.native
+  var targetNameServersPerManagedZone: js.UndefOr[Double] = js.undefined
   
   /** Maximum allowed number of alternative target name servers per policy. */
-  var targetNameServersPerPolicy: js.UndefOr[Double] = js.native
+  var targetNameServersPerPolicy: js.UndefOr[Double] = js.undefined
   
   /** Maximum allowed size for total rrdata in one ChangesCreateRequest in bytes. */
-  var totalRrdataSizePerChange: js.UndefOr[Double] = js.native
+  var totalRrdataSizePerChange: js.UndefOr[Double] = js.undefined
   
   /** DNSSEC algorithm and key length types that can be used for DnsKeys. */
-  var whitelistedKeySpecs: js.UndefOr[js.Array[DnsKeySpec]] = js.native
+  var whitelistedKeySpecs: js.UndefOr[js.Array[DnsKeySpec]] = js.undefined
 }
 object Quota {
   

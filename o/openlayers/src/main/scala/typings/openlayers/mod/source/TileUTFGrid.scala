@@ -4,7 +4,6 @@ import typings.openlayers.mod.Coordinate_
 import typings.openlayers.mod.olx.source.TileUTFGridOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,25 +38,25 @@ class TileUTFGrid protected () extends Tile {
     * @template T
     * @api
     */
-  def forDataAtCoordinateAndResolution(coordinate: Coordinate_, resolution: Double, callback: js.Function1[/* d */ js.Any, _]): Unit = js.native
+  def forDataAtCoordinateAndResolution(coordinate: Coordinate_, resolution: Double, callback: js.Function1[/* d */ js.Any, js.Any]): Unit = js.native
   def forDataAtCoordinateAndResolution(
     coordinate: Coordinate_,
     resolution: Double,
-    callback: js.Function1[/* d */ js.Any, _],
-    opt_this: js.UndefOr[scala.Nothing],
-    opt_request: Boolean
-  ): Unit = js.native
-  def forDataAtCoordinateAndResolution(
-    coordinate: Coordinate_,
-    resolution: Double,
-    callback: js.Function1[/* d */ js.Any, _],
+    callback: js.Function1[/* d */ js.Any, js.Any],
     opt_this: js.Any
   ): Unit = js.native
   def forDataAtCoordinateAndResolution(
     coordinate: Coordinate_,
     resolution: Double,
-    callback: js.Function1[/* d */ js.Any, _],
+    callback: js.Function1[/* d */ js.Any, js.Any],
     opt_this: js.Any,
+    opt_request: Boolean
+  ): Unit = js.native
+  def forDataAtCoordinateAndResolution(
+    coordinate: Coordinate_,
+    resolution: Double,
+    callback: js.Function1[/* d */ js.Any, js.Any],
+    opt_this: Unit,
     opt_request: Boolean
   ): Unit = js.native
   

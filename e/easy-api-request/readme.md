@@ -11,7 +11,7 @@ Request wrapper providing cookie and header forwarding
 | Keywords           | request, api, wrap, headers, cookies |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 740 |
+| # downloads        | 932 |
 | # stars            | 0 |
 
 ## Links

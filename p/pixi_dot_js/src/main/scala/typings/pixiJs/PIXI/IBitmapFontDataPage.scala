@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,12 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} id
   * @property {string} file
   */
-@js.native
 trait IBitmapFontDataPage extends StObject {
   
-  var file: String = js.native
+  var file: String
   
-  var id: Double = js.native
+  var id: Double
 }
 object IBitmapFontDataPage {
   

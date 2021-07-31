@@ -13,7 +13,6 @@ import typings.reactNativeVideoPlayer.reactNativeVideoPlayerStrings.none
 import typings.reactNativeVideoPlayer.reactNativeVideoPlayerStrings.stretch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -75,68 +74,67 @@ object mod {
     var wasPlayingBeforeSeek: Boolean = js.native
   }
   
-  @js.native
   trait VideoPlayerProps extends StObject {
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var controlsTimeout: js.UndefOr[Double] = js.native
+    var controlsTimeout: js.UndefOr[Double] = js.undefined
     
-    var customStyles: js.UndefOr[ControlButton] = js.native
+    var customStyles: js.UndefOr[ControlButton] = js.undefined
     
-    var defaultMuted: js.UndefOr[Boolean] = js.native
+    var defaultMuted: js.UndefOr[Boolean] = js.undefined
     
-    var disableControlsAutoHide: js.UndefOr[Boolean] = js.native
+    var disableControlsAutoHide: js.UndefOr[Boolean] = js.undefined
     
-    var disableFullscreen: js.UndefOr[Boolean] = js.native
+    var disableFullscreen: js.UndefOr[Boolean] = js.undefined
     
-    var disableSeek: js.UndefOr[Boolean] = js.native
+    var disableSeek: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var endThumbnail: js.UndefOr[ImageSourcePropType] = js.native
+    var endThumbnail: js.UndefOr[ImageSourcePropType] = js.undefined
     
-    var endWithThumbnail: js.UndefOr[Boolean] = js.native
+    var endWithThumbnail: js.UndefOr[Boolean] = js.undefined
     
-    var fullScreenOnLongPress: js.UndefOr[Boolean] = js.native
+    var fullScreenOnLongPress: js.UndefOr[Boolean] = js.undefined
     
-    var hideControlsOnStart: js.UndefOr[Boolean] = js.native
+    var hideControlsOnStart: js.UndefOr[Boolean] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var muted: js.UndefOr[Boolean] = js.native
+    var muted: js.UndefOr[Boolean] = js.undefined
     
-    var onEnd: js.UndefOr[js.Function1[/* event */ js.Any, _]] = js.native
+    var onEnd: js.UndefOr[js.Function1[/* event */ js.Any, js.Any]] = js.undefined
     
-    var onHideControls: js.UndefOr[js.Function0[_]] = js.native
+    var onHideControls: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function1[/* event */ js.Any, _]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* event */ js.Any, js.Any]] = js.undefined
     
-    var onMutePress: js.UndefOr[js.Function0[_]] = js.native
+    var onMutePress: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onPlayPress: js.UndefOr[js.Function0[_]] = js.native
+    var onPlayPress: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onProgress: js.UndefOr[js.Function1[/* event */ js.Any, _]] = js.native
+    var onProgress: js.UndefOr[js.Function1[/* event */ js.Any, js.Any]] = js.undefined
     
-    var onShowControls: js.UndefOr[js.Function0[_]] = js.native
+    var onShowControls: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onStart: js.UndefOr[js.Function0[_]] = js.native
+    var onStart: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var pauseOnPress: js.UndefOr[Boolean] = js.native
+    var pauseOnPress: js.UndefOr[Boolean] = js.undefined
     
-    var paused: js.UndefOr[Boolean] = js.native
+    var paused: js.UndefOr[Boolean] = js.undefined
     
-    var resizeMode: js.UndefOr[stretch | contain | cover | none] = js.native
+    var resizeMode: js.UndefOr[stretch | contain | cover | none] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var thumbnail: js.UndefOr[ImageSourcePropType] = js.native
+    var thumbnail: js.UndefOr[ImageSourcePropType] = js.undefined
     
-    var video: js.UndefOr[MainVer | Double] = js.native
+    var video: js.UndefOr[MainVer | Double] = js.undefined
     
-    var videoHeight: js.UndefOr[Double] = js.native
+    var videoHeight: js.UndefOr[Double] = js.undefined
     
-    var videoWidth: js.UndefOr[Double] = js.native
+    var videoWidth: js.UndefOr[Double] = js.undefined
   }
   object VideoPlayerProps {
     
@@ -237,49 +235,49 @@ object mod {
       def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
       
       @scala.inline
-      def setOnEnd(value: /* event */ js.Any => _): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      def setOnEnd(value: /* event */ js.Any => js.Any): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
       @scala.inline
-      def setOnHideControls(value: () => _): Self = StObject.set(x, "onHideControls", js.Any.fromFunction0(value))
+      def setOnHideControls(value: () => js.Any): Self = StObject.set(x, "onHideControls", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnHideControlsUndefined: Self = StObject.set(x, "onHideControls", js.undefined)
       
       @scala.inline
-      def setOnLoad(value: /* event */ js.Any => _): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      def setOnLoad(value: /* event */ js.Any => js.Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
       @scala.inline
-      def setOnMutePress(value: () => _): Self = StObject.set(x, "onMutePress", js.Any.fromFunction0(value))
+      def setOnMutePress(value: () => js.Any): Self = StObject.set(x, "onMutePress", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnMutePressUndefined: Self = StObject.set(x, "onMutePress", js.undefined)
       
       @scala.inline
-      def setOnPlayPress(value: () => _): Self = StObject.set(x, "onPlayPress", js.Any.fromFunction0(value))
+      def setOnPlayPress(value: () => js.Any): Self = StObject.set(x, "onPlayPress", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnPlayPressUndefined: Self = StObject.set(x, "onPlayPress", js.undefined)
       
       @scala.inline
-      def setOnProgress(value: /* event */ js.Any => _): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      def setOnProgress(value: /* event */ js.Any => js.Any): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
       @scala.inline
-      def setOnShowControls(value: () => _): Self = StObject.set(x, "onShowControls", js.Any.fromFunction0(value))
+      def setOnShowControls(value: () => js.Any): Self = StObject.set(x, "onShowControls", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnShowControlsUndefined: Self = StObject.set(x, "onShowControls", js.undefined)
       
       @scala.inline
-      def setOnStart(value: () => _): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
+      def setOnStart(value: () => js.Any): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
@@ -340,26 +338,25 @@ object mod {
     }
   }
   
-  @js.native
   trait VideoPlayerState extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var hasEnded: Boolean = js.native
+    var hasEnded: Boolean
     
-    var isControlsVisible: Boolean = js.native
+    var isControlsVisible: Boolean
     
-    var isMuted: Boolean = js.native
+    var isMuted: Boolean
     
-    var isPlaying: Boolean = js.native
+    var isPlaying: Boolean
     
-    var isSeeking: Boolean = js.native
+    var isSeeking: Boolean
     
-    var isStarted: Boolean = js.native
+    var isStarted: Boolean
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object VideoPlayerState {
     

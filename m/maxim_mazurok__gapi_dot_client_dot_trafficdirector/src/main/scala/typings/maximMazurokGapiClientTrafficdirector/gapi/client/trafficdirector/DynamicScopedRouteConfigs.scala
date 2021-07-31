@@ -3,29 +3,27 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamicScopedRouteConfigs extends StObject {
   
   /** The timestamp when the scoped route config set was last updated. */
-  var lastUpdated: js.UndefOr[String] = js.native
+  var lastUpdated: js.UndefOr[String] = js.undefined
   
   /** The name assigned to the scoped route configurations. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The scoped route configurations. */
   var scopedRouteConfigs: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs with TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** This is the per-resource version information. This version is currently taken from the :ref:`version_info ` field at the time that the scoped routes configuration was loaded. */
-  var versionInfo: js.UndefOr[String] = js.native
+  var versionInfo: js.UndefOr[String] = js.undefined
 }
 object DynamicScopedRouteConfigs {
   
@@ -55,7 +53,7 @@ object DynamicScopedRouteConfigs {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "scopedRouteConfigs", value.asInstanceOf[js.Any])
     
@@ -66,7 +64,7 @@ object DynamicScopedRouteConfigs {
     def setScopedRouteConfigsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs with TopLevel[js.Any])*
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs & TopLevel[js.Any])*
     ): Self = StObject.set(x, "scopedRouteConfigs", js.Array(value :_*))
     
     @scala.inline

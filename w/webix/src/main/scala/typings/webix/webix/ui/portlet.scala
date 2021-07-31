@@ -5,11 +5,12 @@ import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait portlet extends baseview {
+trait portlet
+  extends StObject
+     with baseview {
   
   @JSName("$drag")
   def $drag(source: HTMLElement, ev: Event): String = js.native
@@ -22,7 +23,7 @@ trait portlet extends baseview {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_portlet: portletConfig = js.native

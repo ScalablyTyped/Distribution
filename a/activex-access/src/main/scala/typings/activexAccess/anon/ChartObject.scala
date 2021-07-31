@@ -2,15 +2,13 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartObject extends StObject {
   
-  val chartObject: js.Any = js.native
+  val chartObject: js.Any
   
-  val drawObject: js.Any = js.native
+  val drawObject: js.Any
 }
 object ChartObject {
   

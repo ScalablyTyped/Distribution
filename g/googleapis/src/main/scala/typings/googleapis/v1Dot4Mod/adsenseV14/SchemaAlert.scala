@@ -2,44 +2,42 @@ package typings.googleapis.v1Dot4Mod.adsenseV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAlert extends StObject {
   
   /**
     * Unique identifier of this alert. This should be considered an opaque
     * identifier; it is not safe to rely on it being in any particular format.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this alert can be dismissed.
     */
-  var isDismissible: js.UndefOr[Boolean] = js.native
+  var isDismissible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Kind of resource this is, in this case adsense#alert.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The localized alert message.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * Severity of this alert. Possible values: INFO, WARNING, SEVERE.
     */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /**
     * Type of this alert. Possible values: SELF_HOLD, MIGRATED_TO_BILLING3,
     * ADDRESS_PIN_VERIFICATION, PHONE_PIN_VERIFICATION, CORPORATE_ENTITY,
     * GRAYLISTED_PUBLISHER, API_HOLD.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaAlert {
   

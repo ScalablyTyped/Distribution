@@ -2,21 +2,19 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     * Name of the filter. Filter names are case-sensitive.
     */
-  var Name: js.UndefOr[FilterName] = js.native
+  var Name: js.UndefOr[FilterName] = js.undefined
   
   /**
     * Filter values. Filter values are case-sensitive.
     */
-  var Values: js.UndefOr[FilterValues] = js.native
+  var Values: js.UndefOr[FilterValues] = js.undefined
 }
 object Filter {
   

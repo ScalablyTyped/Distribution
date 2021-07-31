@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,7 +36,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait NineSlicePlane extends SimplePlane {
+trait NineSlicePlane
+  extends StObject
+     with SimplePlane {
   
   /**
     * The height of the NineSlicePlane, setting this will actually modify the vertices and UV's of this plane

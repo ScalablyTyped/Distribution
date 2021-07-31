@@ -3,24 +3,26 @@ package typings.jestInCase
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[Opts /* <: Config */](title: String, tester: Tester[Opts], testCases: TestCases[Opts]): Unit = (^.asInstanceOf[js.Dynamic].apply(title.asInstanceOf[js.Any], tester.asInstanceOf[js.Any], testCases.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("jest-in-case", JSImport.Namespace)
   @js.native
-  def apply[Opts /* <: Config */](title: String, tester: Tester[Opts], testCases: TestCases[Opts]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Config
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var only: js.UndefOr[Boolean] = js.native
+    var only: js.UndefOr[Boolean] = js.undefined
     
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     

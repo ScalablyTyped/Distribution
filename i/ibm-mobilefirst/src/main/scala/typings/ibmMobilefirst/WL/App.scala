@@ -2,7 +2,6 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object App {
@@ -16,23 +15,21 @@ object App {
   
   type Callback = js.Function0[Unit]
   
-  @js.native
   trait Data extends StObject
   
-  @js.native
   trait KeepAliveInBackgroundOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var contentTextText: js.UndefOr[String] = js.native
+    var contentTextText: js.UndefOr[String] = js.undefined
     
-    var contentTitle: js.UndefOr[String] = js.native
+    var contentTitle: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var notificationId: js.UndefOr[Double] = js.native
+    var notificationId: js.UndefOr[Double] = js.undefined
     
-    var tickerText: js.UndefOr[String] = js.native
+    var tickerText: js.UndefOr[String] = js.undefined
   }
   object KeepAliveInBackgroundOptions {
     
@@ -83,22 +80,21 @@ object App {
     }
   }
   
-  @js.native
   trait OpenURLOptions extends StObject {
     
-    var directories: js.UndefOr[Double] = js.native
+    var directories: js.UndefOr[Double] = js.undefined
     
-    var location: js.UndefOr[Double] = js.native
+    var location: js.UndefOr[Double] = js.undefined
     
-    var menubar: js.UndefOr[Double] = js.native
+    var menubar: js.UndefOr[Double] = js.undefined
     
-    var resizable: js.UndefOr[Double] = js.native
+    var resizable: js.UndefOr[Double] = js.undefined
     
-    var scrollbars: js.UndefOr[Double] = js.native
+    var scrollbars: js.UndefOr[Double] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var toolbar: js.UndefOr[Double] = js.native
+    var toolbar: js.UndefOr[Double] = js.undefined
   }
   object OpenURLOptions {
     

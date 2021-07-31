@@ -3,14 +3,15 @@ package typings.allureJsCommons
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("allure-js-commons", JSImport.Namespace)
   @js.native
-  class ^ () extends Allure
+  class ^ ()
+    extends StObject
+       with Allure
   
   @JSImport("allure-js-commons", "Attachment")
   @js.native
@@ -76,19 +77,25 @@ object mod {
   object TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TYPE with String] = js.native
+    def apply(value: String): js.UndefOr[TYPE & String] = js.native
     
     @js.native
-    sealed trait HTML extends TYPE
-    /* "html" */ val HTML: typings.allureJsCommons.mod.TYPE.HTML with String = js.native
+    sealed trait HTML
+      extends StObject
+         with TYPE
+    /* "html" */ val HTML: typings.allureJsCommons.mod.TYPE.HTML & String = js.native
     
     @js.native
-    sealed trait MARKDOWN extends TYPE
-    /* "markdown" */ val MARKDOWN: typings.allureJsCommons.mod.TYPE.MARKDOWN with String = js.native
+    sealed trait MARKDOWN
+      extends StObject
+         with TYPE
+    /* "markdown" */ val MARKDOWN: typings.allureJsCommons.mod.TYPE.MARKDOWN & String = js.native
     
     @js.native
-    sealed trait TEXT extends TYPE
-    /* "text" */ val TEXT: typings.allureJsCommons.mod.TYPE.TEXT with String = js.native
+    sealed trait TEXT
+      extends StObject
+         with TYPE
+    /* "text" */ val TEXT: typings.allureJsCommons.mod.TYPE.TEXT & String = js.native
   }
   
   @JSImport("allure-js-commons", "Test")
@@ -119,9 +126,9 @@ object mod {
     def addAttachment(attachmentName: String, buffer: js.Any, `type`: String): Unit = js.native
     
     def endCase(status: Status): Unit = js.native
-    def endCase(status: Status, err: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
     def endCase(status: Status, err: js.Object): Unit = js.native
     def endCase(status: Status, err: js.Object, timestamp: Double): Unit = js.native
+    def endCase(status: Status, err: Unit, timestamp: Double): Unit = js.native
     
     def endStep(status: Status): Unit = js.native
     def endStep(status: Status, timestamp: Double): Unit = js.native
@@ -151,10 +158,9 @@ object mod {
     def startSuite(suiteName: String, timestamp: Double): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var targetDir: String = js.native
+    var targetDir: String
   }
   object Options {
     

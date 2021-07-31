@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The storage itself must disconnect from the medium it is based on to allow restoring. Although the storage will still contain all the data internally,
   * and can be used as a temporary storage usually used.
   */
-@js.native
-trait UseBackupException extends Exception {
+trait UseBackupException
+  extends StObject
+     with Exception {
   
   /** The URL of the temporary file the storage is based on now. */
-  var TemporaryFileURL: String = js.native
+  var TemporaryFileURL: String
 }
 object UseBackupException {
   

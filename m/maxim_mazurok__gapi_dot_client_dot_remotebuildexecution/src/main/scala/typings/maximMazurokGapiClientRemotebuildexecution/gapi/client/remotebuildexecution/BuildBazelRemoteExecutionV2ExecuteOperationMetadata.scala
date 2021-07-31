@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2ExecuteOperationMetadata extends StObject {
   
   /** The digest of the Action being executed. */
-  var actionDigest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.native
+  var actionDigest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /** The current stage of execution. */
-  var stage: js.UndefOr[String] = js.native
+  var stage: js.UndefOr[String] = js.undefined
   
   /** If set, the client can use this name with ByteStream.Read to stream the standard error. */
-  var stderrStreamName: js.UndefOr[String] = js.native
+  var stderrStreamName: js.UndefOr[String] = js.undefined
   
   /** If set, the client can use this name with ByteStream.Read to stream the standard output. */
-  var stdoutStreamName: js.UndefOr[String] = js.native
+  var stdoutStreamName: js.UndefOr[String] = js.undefined
 }
 object BuildBazelRemoteExecutionV2ExecuteOperationMetadata {
   

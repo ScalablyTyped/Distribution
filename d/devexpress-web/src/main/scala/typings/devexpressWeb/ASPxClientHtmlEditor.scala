@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxHtmlEditor control.
   */
 @js.native
-trait ASPxClientHtmlEditor extends ASPxClientControl {
+trait ASPxClientHtmlEditor
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Fires on the client side after the active tab has been changed within a control.
@@ -208,7 +209,7 @@ trait ASPxClientHtmlEditor extends ASPxClientControl {
     * @param html A string value that specifies the HTML code to process.
     * @param placeholders An array of objects that specify the placeholders and values to replace them.
     */
-  def ReplacePlaceholders(html: String, placeholders: js.Array[_]): String = js.native
+  def ReplacePlaceholders(html: String, placeholders: js.Array[js.Any]): String = js.native
   
   /**
     * Restores the selection within the ASPxHtmlEditor.

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,26 +14,42 @@ sealed trait BorderLineStyle extends StObject
 object BorderLineStyle extends StObject {
   
   @js.native
-  sealed trait continuous extends BorderLineStyle
+  sealed trait continuous
+    extends StObject
+       with BorderLineStyle
   
   @js.native
-  sealed trait dash extends BorderLineStyle
+  sealed trait dash
+    extends StObject
+       with BorderLineStyle
   
   @js.native
-  sealed trait dashDot extends BorderLineStyle
+  sealed trait dashDot
+    extends StObject
+       with BorderLineStyle
   
   @js.native
-  sealed trait dashDotDot extends BorderLineStyle
+  sealed trait dashDotDot
+    extends StObject
+       with BorderLineStyle
   
   @js.native
-  sealed trait dot extends BorderLineStyle
+  sealed trait dot
+    extends StObject
+       with BorderLineStyle
   
   @js.native
-  sealed trait double extends BorderLineStyle
+  sealed trait double
+    extends StObject
+       with BorderLineStyle
   
   @js.native
-  sealed trait none extends BorderLineStyle
+  sealed trait none
+    extends StObject
+       with BorderLineStyle
   
   @js.native
-  sealed trait slantDashDot extends BorderLineStyle
+  sealed trait slantDashDot
+    extends StObject
+       with BorderLineStyle
 }

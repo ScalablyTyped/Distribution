@@ -6,7 +6,6 @@ import typings.chromeApps.chrome.mdns.Service
 import typings.chromeApps.chrome.mdns.ServiceTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -22,6 +21,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since Chrome 31
   */
 object mdns {
+  
+  @JSGlobal("chrome.mdns")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The maximum number of service instances that will be
@@ -43,9 +46,8 @@ object mdns {
     * @since Chrome 45.
     * @param callback Callback invoked after ForceDiscovery() has started.
     */
-  @JSGlobal("chrome.mdns.forceDiscovery")
-  @js.native
-  def forceDiscovery(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def forceDiscovery(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceDiscovery")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Event fired to inform clients of the current complete

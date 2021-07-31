@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlValidateDetector[T] extends Generic {
+trait MlValidateDetector[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
 }
 object MlValidateDetector {
   
@@ -19,7 +19,7 @@ object MlValidateDetector {
   }
   
   @scala.inline
-  implicit class MlValidateDetectorMutableBuilder[Self <: MlValidateDetector[_], T] (val x: Self with MlValidateDetector[T]) extends AnyVal {
+  implicit class MlValidateDetectorMutableBuilder[Self <: MlValidateDetector[?], T] (val x: Self & MlValidateDetector[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

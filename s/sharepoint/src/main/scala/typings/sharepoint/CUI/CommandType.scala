@@ -2,7 +2,6 @@ package typings.sharepoint.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,35 +11,57 @@ sealed trait CommandType extends StObject
 object CommandType extends StObject {
   
   @js.native
-  sealed trait general extends CommandType
+  sealed trait general
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait ignoredByMenu extends CommandType
+  sealed trait ignoredByMenu
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait menuClose extends CommandType
+  sealed trait menuClose
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait menuCreation extends CommandType
+  sealed trait menuCreation
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait optionPreview extends CommandType
+  sealed trait optionPreview
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait optionPreviewRevert extends CommandType
+  sealed trait optionPreviewRevert
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait optionSelection extends CommandType
+  sealed trait optionSelection
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait preview extends CommandType
+  sealed trait preview
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait previewRevert extends CommandType
+  sealed trait previewRevert
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait rootEvent extends CommandType
+  sealed trait rootEvent
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait tabSelection extends CommandType
+  sealed trait tabSelection
+    extends StObject
+       with CommandType
 }

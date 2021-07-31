@@ -2,83 +2,81 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Basic details about a video, including title, description, uploader,
   * thumbnails and category.
   */
-@js.native
 trait SchemaVideoSnippet extends StObject {
   
   /**
     * The YouTube video category associated with the video.
     */
-  var categoryId: js.UndefOr[String] = js.native
+  var categoryId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the channel that the video
     * was uploaded to.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * Channel title for the channel that the video belongs to.
     */
-  var channelTitle: js.UndefOr[String] = js.native
+  var channelTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The default_audio_language property specifies the language spoken in the
     * video&#39;s default audio track.
     */
-  var defaultAudioLanguage: js.UndefOr[String] = js.native
+  var defaultAudioLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The language of the videos&#39;s default snippet.
     */
-  var defaultLanguage: js.UndefOr[String] = js.native
+  var defaultLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The video&#39;s description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if the video is an upcoming/active live broadcast. Or it&#39;s
     * &quot;none&quot; if the video is not an upcoming/active live broadcast.
     */
-  var liveBroadcastContent: js.UndefOr[String] = js.native
+  var liveBroadcastContent: js.UndefOr[String] = js.undefined
   
   /**
     * Localized snippet selected with the hl parameter. If no such localization
     * exists, this field is populated with the default snippet. (Read-only)
     */
-  var localized: js.UndefOr[SchemaVideoLocalization] = js.native
+  var localized: js.UndefOr[SchemaVideoLocalization] = js.undefined
   
   /**
     * The date and time that the video was uploaded. The value is specified in
     * ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var publishedAt: js.UndefOr[String] = js.native
+  var publishedAt: js.UndefOr[String] = js.undefined
   
   /**
     * A list of keyword tags associated with the video. Tags may contain
     * spaces.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A map of thumbnail images associated with the video. For each object in
     * the map, the key is the name of the thumbnail image, and the value is an
     * object that contains other information about the thumbnail.
     */
-  var thumbnails: js.UndefOr[SchemaThumbnailDetails] = js.native
+  var thumbnails: js.UndefOr[SchemaThumbnailDetails] = js.undefined
   
   /**
     * The video&#39;s title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoSnippet {
   

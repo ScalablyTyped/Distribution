@@ -7,33 +7,32 @@ import typings.storybookApi.storiesMod.StoryInput
 import typings.storybookTheming.typesMod.ThemeVars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  theme :@storybook/theming.@storybook/theming.ThemeVars | undefined,   refs :@storybook/api.@storybook/api/dist/modules/refs.Refs | undefined,   StoryMapper :@storybook/api.@storybook/api/dist/modules/refs.StoryMapper | undefined, [k: string] : any} & std.Partial<@storybook/api.@storybook/api/dist/modules/layout.UIOptions> */
-@js.native
 trait themeThemeVarsundefinedre
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var StoryMapper: js.UndefOr[typings.storybookApi.refsMod.StoryMapper] = js.native
+  var StoryMapper: js.UndefOr[typings.storybookApi.refsMod.StoryMapper] = js.undefined
   
-  var addonPanelInRight: js.UndefOr[Boolean] = js.native
+  var addonPanelInRight: js.UndefOr[Boolean] = js.undefined
   
-  var goFullScreen: js.UndefOr[Boolean] = js.native
+  var goFullScreen: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var refs: js.UndefOr[Refs] = js.native
+  var refs: js.UndefOr[Refs] = js.undefined
   
-  var selectedPanel: js.UndefOr[String] = js.native
+  var selectedPanel: js.UndefOr[String] = js.undefined
   
-  var showAddonPanel: js.UndefOr[Boolean] = js.native
+  var showAddonPanel: js.UndefOr[Boolean] = js.undefined
   
-  var showStoriesPanel: js.UndefOr[Boolean] = js.native
+  var showStoriesPanel: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[ThemeVars] = js.native
+  var theme: js.UndefOr[ThemeVars] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object themeThemeVarsundefinedre {
   

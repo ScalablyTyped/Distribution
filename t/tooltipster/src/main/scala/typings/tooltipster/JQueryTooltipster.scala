@@ -46,19 +46,17 @@ import typings.tooltipster.tooltipsterStrings.swing
 import typings.tooltipster.tooltipsterStrings.triggerHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryTooltipster {
   
-  @js.native
   trait ITooltipEvent extends StObject {
     
-    var event: JQueryEventObject = js.native
+    var event: JQueryEventObject
     
-    var instance: ITooltipsterInstance = js.native
+    var instance: ITooltipsterInstance
     
-    var origin: HTMLElement = js.native
+    var origin: HTMLElement
   }
   object ITooltipEvent {
     
@@ -83,23 +81,22 @@ object JQueryTooltipster {
   }
   
   /** see http://iamceege.github.io/tooltipster/#positioning */
-  @js.native
   trait ITooltipPosition extends StObject {
     
     /** determines the position of the tooltip and are relative to the viewport */
-    var coord: Left = js.native
+    var coord: Left
     
     /** the offset that will be applied between the origin and the tooltip */
-    var distance: Double = js.native
+    var distance: Double
     
     /** is the side Tooltipster has judged best for your tooltip, according to your requirements */
-    var side: TooltipPositioningSide = js.native
+    var side: TooltipPositioningSide
     
     /**
       * the size that your tooltip will have. It is either the natural size of the tooltip, or a size that has been 
       * set by Tooltipster to fit best on screen according to your requirements
       */
-    var size: Height = js.native
+    var size: Height
     
     /**
       * the location Tooltipster thinks the tooltip should ideally be centered on, and the arrow aiming at. It is 
@@ -109,7 +106,7 @@ object JQueryTooltipster {
       * will change the location the arrow is aiming at but will not change the position of the tooltip itself 
       * (use coord for that).
       */
-    var target: Double = js.native
+    var target: Double
   }
   object ITooltipPosition {
     
@@ -139,23 +136,22 @@ object JQueryTooltipster {
     }
   }
   
-  @js.native
   trait ITooltipStatus extends StObject {
     
     /** if the tooltip has been destroyed */
-    var destroyed: Boolean = js.native
+    var destroyed: Boolean
     
     /** if the tooltip is scheduled for destruction (which means that the tooltip is currently closing and may not be reopened) */
-    var destroying: Boolean = js.native
+    var destroying: Boolean
     
     /** if the tooltip is enabled */
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
     /** if the tooltip is open (either appearing, stable or disappearing) */
-    var open: Boolean = js.native
+    var open: Boolean
     
     /** the state equals one of these four values: */
-    var state: appearing | stable | disappearing | closed = js.native
+    var state: appearing | stable | disappearing | closed
   }
   object ITooltipStatus {
     
@@ -191,14 +187,13 @@ object JQueryTooltipster {
     }
   }
   
-  @js.native
   trait ITooltipsterGeoHelper extends StObject {
     
-    var document: Size = js.native
+    var document: Size
     
-    var origin: FixedLineage = js.native
+    var origin: FixedLineage
     
-    var window: Scroll = js.native
+    var window: Scroll
   }
   object ITooltipsterGeoHelper {
     
@@ -222,25 +217,24 @@ object JQueryTooltipster {
     }
   }
   
-  @js.native
   trait ITooltipsterHelper extends StObject {
     
     /** provided on functionBefore and functionAfter callbacks */
-    var event: js.UndefOr[MouseEvent | TouchEvent | Null] = js.native
+    var event: js.UndefOr[MouseEvent | TouchEvent | Null] = js.undefined
     
     /** provided on position callback */
-    var geo: js.UndefOr[ITooltipsterGeoHelper] = js.native
+    var geo: js.UndefOr[ITooltipsterGeoHelper] = js.undefined
     
     /** provided on position callback */
-    var mode: js.UndefOr[natural | constrained] = js.native
+    var mode: js.UndefOr[natural | constrained] = js.undefined
     
-    var origin: HTMLElement = js.native
+    var origin: HTMLElement
     
     /** provided on functionReady and open callbacks */
-    var tooltip: js.UndefOr[HTMLElement] = js.native
+    var tooltip: js.UndefOr[HTMLElement] = js.undefined
     
     /** provided on position callback */
-    var tooltipClone: js.UndefOr[HTMLElement] = js.native
+    var tooltipClone: js.UndefOr[HTMLElement] = js.undefined
   }
   object ITooltipsterHelper {
     
@@ -293,7 +287,8 @@ object JQueryTooltipster {
   
   @js.native
   trait ITooltipsterInstance
-    extends /**
+    extends StObject
+       with /**
     * Several plugins may have methods of the same name. To resolve the conflict, use the instance object of the 
     * tooltip and specify the full name of the desired plugin in your calls.
     */
@@ -486,9 +481,9 @@ object JQueryTooltipster {
     def apply(options: ITooltipsterOptions): JQuery = js.native
   }
   
-  @js.native
   trait ITooltipsterOptions
-    extends /**
+    extends StObject
+       with /**
     * Several plugins may have methods of the same name. To resolve the conflict, use the instance object of the 
     * tooltip and specify the full name of the desired plugin in your calls.
     */
@@ -498,7 +493,7 @@ object JQueryTooltipster {
       * The minimum version of Internet Explorer to run on. 
       * @default 6
       */
-    var IEmin: js.UndefOr[Double] = js.native
+    var IEmin: js.UndefOr[Double] = js.undefined
     
     /**
       * Determines how the tooltip will animate in and out. In addition to the built-in transitions, 
@@ -506,20 +501,20 @@ object JQueryTooltipster {
       * default to a JavaScript generated, fade animation. 
       * @default 'fade'
       */
-    var animation: js.UndefOr[fade | grow | swing | slide | fall] = js.native
+    var animation: js.UndefOr[fade | grow | swing | slide | fall] = js.undefined
     
     /**
       * Sets the duration of the animation, in milliseconds. If you wish to provide different durations 
       * for the opening and closing animations, provide an array of two different values. 
       * @default 350
       */
-    var animationDuration: js.UndefOr[Double | js.Array[Double]] = js.native
+    var animationDuration: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * Add a "speech bubble" arrow to the tooltip. 
       * @default true
       */
-    var arrow: js.UndefOr[Boolean] = js.native
+    var arrow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set, this will override the content of the tooltip. If you provide something else than a string 
@@ -527,28 +522,28 @@ object JQueryTooltipster {
       * content for display. 
       * @default null
       */
-    var content: js.UndefOr[String | JQuery | js.Any] = js.native
+    var content: js.UndefOr[String | JQuery | js.Any] = js.undefined
     
     /**
       * If the content of the tooltip is provided as a string, it is displayed as plain text by default. 
       * If this content should actually be interpreted as HTML, set this option to true. 
       * @default false
       */
-    var contentAsHTML: js.UndefOr[Boolean] = js.native
+    var contentAsHTML: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you provide a jQuery object to the 'content' option, this sets if it is a clone of this object 
       * that should actually be used. 
       * @default false
       */
-    var contentCloning: js.UndefOr[Boolean] = js.native
+    var contentCloning: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Tooltipster logs hints and notices into the console when you're doing something you ideally shouldn't 
       * be doing. Set to false to disable logging. 
       * @default true
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Upon mouse interaction, this is the delay before the tooltip starts its opening and closing animations 
@@ -556,7 +551,7 @@ object JQueryTooltipster {
       * you may provide an array of two different values. 
       * @default 300
       */
-    var delay: js.UndefOr[Double | js.Array[Double]] = js.native
+    var delay: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * Upon touch interaction, this is the delay before the tooltip starts its opening and closing animations 
@@ -564,27 +559,27 @@ object JQueryTooltipster {
       * you may provide an array of two different values. 
       * @default [300, 500]
       */
-    var delayTouch: js.UndefOr[Double | js.Array[Double]] = js.native
+    var delayTouch: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * The distance between the origin and the tooltip, in pixels. The value may be an integer or an array of 
       * integers (in the usual CSS syntax) if you wish to specify a different distance for each side. 
       * @default 6
       */
-    var distance: js.UndefOr[Double | js.Array[Double]] = js.native
+    var distance: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * A custom function to be fired once the tooltip has been closed and removed from the DOM. 
       * @default null
       */
-    var functionAfter: js.UndefOr[TooltipsterStandardCallbackFunction] = js.native
+    var functionAfter: js.UndefOr[TooltipsterStandardCallbackFunction] = js.undefined
     
     /**
       * A custom function to be fired before the tooltip is opened. This function may prevent the opening if it 
       * returns false. 
       * @default null
       */
-    var functionBefore: js.UndefOr[TooltipsterStandardCallbackFunction] = js.native
+    var functionBefore: js.UndefOr[TooltipsterStandardCallbackFunction] = js.undefined
     
     /**
       * A custom function that does not modify the content but that can format it for display. It gets the two 
@@ -599,13 +594,13 @@ object JQueryTooltipster {
           /* content */ js.Any, 
           String | JQuery
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A custom function to be fired only once at instantiation. 
       * @default null
       */
-    var functionInit: js.UndefOr[TooltipsterStandardCallbackFunction] = js.native
+    var functionInit: js.UndefOr[TooltipsterStandardCallbackFunction] = js.undefined
     
     /**
       * A custom function fired when the tooltip is repositioned. It gives you the ability to slightly or 
@@ -621,13 +616,13 @@ object JQueryTooltipster {
           /* position */ ITooltipPosition, 
           ITooltipPosition
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A custom function to be fired when the tooltip and its contents have been added to the DOM. 
       * @default null
       */
-    var functionReady: js.UndefOr[TooltipsterStandardCallbackFunction] = js.native
+    var functionReady: js.UndefOr[TooltipsterStandardCallbackFunction] = js.undefined
     
     /**
       * Give users the possibility to interact with the content of the tooltip. If you want them to be able to 
@@ -636,45 +631,45 @@ object JQueryTooltipster {
       * starts closing (this lapse of time has its duration set by the 'delay' option). 
       * @default false
       */
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set a maximum width for the tooltip. 
       * @default null (no max width)
       */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Corresponds to the minimum distance to enforce between the center of the arrow and the edges of the 
       * tooltip. Mainly used to create an arrow bigger than those of the default themes. 
       * @default 16
       */
-    var minIntersection: js.UndefOr[Double] = js.native
+    var minIntersection: js.UndefOr[Double] = js.undefined
     
     /**
       * Set a minimum width for the tooltip. 
       * @default 0 (auto width)
       */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Allows you to put several tooltips on a single element (see the multiple section). 
       * @default false
       */
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The names of plugins to be used by Tooltipster. 
       * @default ['sideTip']
       */
-    var plugins: js.UndefOr[js.Array[String]] = js.native
+    var plugins: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Repositions the tooltip if it goes out of the viewport when the user scrolls the page, in order to 
       * keep it visible as long as possible. 
       * @default false
       */
-    var repositionOnScroll: js.UndefOr[Boolean] = js.native
+    var repositionOnScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies if a TITLE attribute should be restored on the HTML element after a call to the 'destroy' 
@@ -684,14 +679,14 @@ object JQueryTooltipster {
       * 
       * @default 'none'
       */
-    var restoration: js.UndefOr[none | previous | current] = js.native
+    var restoration: js.UndefOr[none | previous | current] = js.undefined
     
     /**
       * Sets if the tooltip should self-destruct after a few seconds when its origin is removed from the DOM. 
       * This prevents memory leaks. 
       * @default true
       */
-    var selfDestruction: js.UndefOr[Boolean] = js.native
+    var selfDestruction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the side of the tooltip. The value may one of the following: 'top', 'bottom', 'left', 'right'. 
@@ -699,24 +694,24 @@ object JQueryTooltipster {
       * values is taken into account as order of fallbacks and the absence of a side disables it (see the 
       * sides section). Default: ['top', 'bottom', 'right', 'left']
       */
-    var side: js.UndefOr[TooltipPositioningSide | js.Array[TooltipPositioningSide]] = js.native
+    var side: js.UndefOr[TooltipPositioningSide | js.Array[TooltipPositioningSide]] = js.undefined
     
     /**
       * Set a theme that will override the default tooltip appearance. You may provide an array of strings 
       * to apply several themes at once (see the themes section). 
       * @default: []
       */
-    var theme: js.UndefOr[String | js.Array[String]] = js.native
+    var theme: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * How long (in ms) the tooltip should live before closing. 
       * @default 0 (disabled)
       */
-    var timer: js.UndefOr[Double] = js.native
+    var timer: js.UndefOr[Double] = js.undefined
     
-    var trackOrigin: js.UndefOr[Boolean] = js.native
+    var trackOrigin: js.UndefOr[Boolean] = js.undefined
     
-    var trackTooltip: js.UndefOr[Boolean] = js.native
+    var trackTooltip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets how often the tracker should run (see trackOrigin and trackTooltip), in milliseconds. The tracker 
@@ -724,34 +719,34 @@ object JQueryTooltipster {
       * the tooltip was open, so you shouldn't set too high or too low values unless you need to. 
       * @default 500
       */
-    var trackerInterval: js.UndefOr[Double] = js.native
+    var trackerInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * Set how tooltips should be activated and closed.
       * Possible values: hover, click or custom.
       */
-    var trigger: js.UndefOr[String] = js.native
+    var trigger: js.UndefOr[String] = js.undefined
     
     /**
       * When 'trigger' is set to 'custom', all built-in close triggers are disabled by default. This option 
       * allows you to reactivate the triggers of your choice to create a customized behavior. Only applies 
       * if 'trigger' is set to 'custom'. See http://iamceege.github.io/tooltipster/#triggers.
       */
-    var triggerClose: js.UndefOr[Click] = js.native
+    var triggerClose: js.UndefOr[Click] = js.undefined
     
     /**
       * When 'trigger' is set to 'custom', all built-in open triggers are disabled by default. This option 
       * allows you to reactivate the triggers of your choice to create a customized behavior. Only applies 
       * if 'trigger' is set to 'custom'. See http://iamceege.github.io/tooltipster/#triggers.
       */
-    var triggerOpen: js.UndefOr[Mouseenter] = js.native
+    var triggerOpen: js.UndefOr[Mouseenter] = js.undefined
     
     /**
       * Plays a subtle animation when the content of the tooltip is updated (if the tooltip is open). You 
       * may create custom animations in your CSS files. Set to null to disable the animation. 
       * @default 'rotate'
       */
-    var updateAnimation: js.UndefOr[fade | rotate | scale | Null] = js.native
+    var updateAnimation: js.UndefOr[fade | rotate | scale | Null] = js.undefined
     
     /**
       * Tries to place the tooltip in such a way that it will be entirely visible on screen when it's opened.
@@ -759,13 +754,13 @@ object JQueryTooltipster {
       * set this option to false. 
       * @default true
       */
-    var viewportAware: js.UndefOr[Boolean] = js.native
+    var viewportAware: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the z-index of the tooltip. 
       * @default 9999999
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object ITooltipsterOptions {
     

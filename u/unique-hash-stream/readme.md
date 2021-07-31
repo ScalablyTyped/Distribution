@@ -12,7 +12,7 @@ Remove duplicates from a stream based on a hashing function
 | Keywords           | dedupe, unique, stream, hash |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 1272 |
+| # downloads        | 1461 |
 | # stars            | 0 |
 
 ## Links

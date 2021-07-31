@@ -10,9 +10,9 @@ TypeScript typings for Cloud OS Login API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.oslogin |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 41 |
+| # downloads        | 990 |
 | # stars            | 0 |
 
 ## Links

@@ -32,10 +32,13 @@ import typings.vegaTypings.signalMod.NewSignal
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcConfigMod {
+  
+  @JSImport("vega-lite/build/src/config", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object DEFAULT_COLOR {
     
@@ -236,15 +239,12 @@ object srcConfigMod {
   @js.native
   val DEFAULT_STEP: /* 20 */ Double = js.native
   
-  @JSImport("vega-lite/build/src/config", "colorSignalConfig")
-  @js.native
-  def colorSignalConfig(): Config[ExprRef | SignalRef] = js.native
-  @JSImport("vega-lite/build/src/config", "colorSignalConfig")
-  @js.native
-  def colorSignalConfig(color: Boolean): Config[ExprRef | SignalRef] = js.native
-  @JSImport("vega-lite/build/src/config", "colorSignalConfig")
-  @js.native
-  def colorSignalConfig(color: ColorConfig): Config[ExprRef | SignalRef] = js.native
+  @scala.inline
+  def colorSignalConfig(): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorSignalConfig")().asInstanceOf[Config[ExprRef | SignalRef]]
+  @scala.inline
+  def colorSignalConfig(color: Boolean): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorSignalConfig")(color.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
+  @scala.inline
+  def colorSignalConfig(color: ColorConfig): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorSignalConfig")(color.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
   
   @JSImport("vega-lite/build/src/config", "defaultConfig")
   @js.native
@@ -254,64 +254,53 @@ object srcConfigMod {
   @js.native
   val defaultViewConfig: ViewConfig[SignalRef] = js.native
   
-  @JSImport("vega-lite/build/src/config", "fontConfig")
-  @js.native
-  def fontConfig(font: String): Config[ExprRef | SignalRef] = js.native
+  @scala.inline
+  def fontConfig(font: String): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontConfig")(font.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
   
-  @JSImport("vega-lite/build/src/config", "fontSizeSignalConfig")
-  @js.native
-  def fontSizeSignalConfig(fontSize: Boolean): Config[ExprRef | SignalRef] = js.native
-  @JSImport("vega-lite/build/src/config", "fontSizeSignalConfig")
-  @js.native
-  def fontSizeSignalConfig(fontSize: FontSizeConfig): Config[ExprRef | SignalRef] = js.native
+  @scala.inline
+  def fontSizeSignalConfig(fontSize: Boolean): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontSizeSignalConfig")(fontSize.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
+  @scala.inline
+  def fontSizeSignalConfig(fontSize: FontSizeConfig): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontSizeSignalConfig")(fontSize.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
   
-  @JSImport("vega-lite/build/src/config", "getViewConfigContinuousSize")
-  @js.native
-  def getViewConfigContinuousSize_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double = js.native
-  @JSImport("vega-lite/build/src/config", "getViewConfigContinuousSize")
-  @js.native
-  def getViewConfigContinuousSize_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double = js.native
+  @scala.inline
+  def getViewConfigContinuousSize_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigContinuousSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("vega-lite/build/src/config", "getViewConfigDiscreteSize")
-  @js.native
-  def getViewConfigDiscreteSize_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double | Step = js.native
-  @JSImport("vega-lite/build/src/config", "getViewConfigDiscreteSize")
-  @js.native
-  def getViewConfigDiscreteSize_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double | Step = js.native
+  @scala.inline
+  def getViewConfigContinuousSize_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigContinuousSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("vega-lite/build/src/config", "getViewConfigDiscreteStep")
-  @js.native
-  def getViewConfigDiscreteStep_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double = js.native
-  @JSImport("vega-lite/build/src/config", "getViewConfigDiscreteStep")
-  @js.native
-  def getViewConfigDiscreteStep_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double = js.native
+  @scala.inline
+  def getViewConfigDiscreteSize_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double | Step = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double | Step]
   
-  @JSImport("vega-lite/build/src/config", "initConfig")
-  @js.native
-  def initConfig(): Config[SignalRef] = js.native
-  @JSImport("vega-lite/build/src/config", "initConfig")
-  @js.native
-  def initConfig(specifiedConfig: Config[ExprRef | SignalRef]): Config[SignalRef] = js.native
+  @scala.inline
+  def getViewConfigDiscreteSize_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double | Step = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double | Step]
   
-  @JSImport("vega-lite/build/src/config", "isVgScheme")
-  @js.native
-  def isVgScheme(rangeScheme: js.Array[String]): /* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean = js.native
-  @JSImport("vega-lite/build/src/config", "isVgScheme")
-  @js.native
-  def isVgScheme(rangeScheme: RangeScheme): /* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean = js.native
+  @scala.inline
+  def getViewConfigDiscreteStep_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteStep")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("vega-lite/build/src/config", "stripAndRedirectConfig")
-  @js.native
-  def stripAndRedirectConfig(config: Config[SignalRef]): Config[SignalRef] = js.native
+  @scala.inline
+  def getViewConfigDiscreteStep_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteStep")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def initConfig(): Config[SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[Config[SignalRef]]
+  @scala.inline
+  def initConfig(specifiedConfig: Config[ExprRef | SignalRef]): Config[SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(specifiedConfig.asInstanceOf[js.Any]).asInstanceOf[Config[SignalRef]]
+  
+  @scala.inline
+  def isVgScheme(rangeScheme: js.Array[String]): /* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVgScheme")(rangeScheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean]
+  @scala.inline
+  def isVgScheme(rangeScheme: RangeScheme): /* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVgScheme")(rangeScheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean]
+  
+  @scala.inline
+  def stripAndRedirectConfig(config: Config[SignalRef]): Config[SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripAndRedirectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Config[SignalRef]]
   
   type ColorConfig = Record[String, Color]
   
-  @js.native
   trait Config[ES /* <: ExprRef | SignalRef */]
-    extends CompositeMarkConfigMixins
+    extends StObject
        with TopLevelProperties[ES]
        with VLOnlyConfig[ES]
        with MarkConfigMixins[ES]
+       with CompositeMarkConfigMixins
        with AxisConfigMixins[ES]
        with HeaderConfigMixins[ES]
        with CompositionConfigMixins {
@@ -321,41 +310,41 @@ object srcConfigMod {
       *
       * __Default value:__ `true`.
       */
-    var aria: js.UndefOr[Boolean] = js.native
+    var aria: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Legend configuration, which determines default properties for all [legends](https://vega.github.io/vega-lite/docs/legend.html). For a full list of legend configuration options, please see the [corresponding section of in the legend documentation](https://vega.github.io/vega-lite/docs/legend.html#config).
       */
-    var legend: js.UndefOr[LegendConfig[ES]] = js.native
+    var legend: js.UndefOr[LegendConfig[ES]] = js.undefined
     
     /**
       * A delimiter, such as a newline character, upon which to break text strings into multiple lines. This property provides a global default for text marks, which is overridden by mark or style config settings, and by the lineBreak mark encoding channel. If signal-valued, either string or regular expression (regexp) values are valid.
       */
-    var lineBreak: js.UndefOr[String | ES] = js.native
+    var lineBreak: js.UndefOr[String | ES] = js.undefined
     
     /**
       * Projection configuration, which determines default properties for all [projections](https://vega.github.io/vega-lite/docs/projection.html). For a full list of projection configuration options, please see the [corresponding section of the projection documentation](https://vega.github.io/vega-lite/docs/projection.html#config).
       */
-    var projection: js.UndefOr[ProjectionConfig] = js.native
+    var projection: js.UndefOr[ProjectionConfig] = js.undefined
     
     /**
       * An object hash that defines default range arrays or schemes for using with scales.
       * For a full list of scale range configuration options, please see the [corresponding section of the scale documentation](https://vega.github.io/vega-lite/docs/scale.html#config).
       */
-    var range: js.UndefOr[RangeConfig] = js.native
+    var range: js.UndefOr[RangeConfig] = js.undefined
     
     /**
       * @hidden
       */
-    var signals: js.UndefOr[js.Array[InitSignal | NewSignal]] = js.native
+    var signals: js.UndefOr[js.Array[InitSignal | NewSignal]] = js.undefined
     
     /** An object hash that defines key-value mappings to determine default properties for marks with a given [style](https://vega.github.io/vega-lite/docs/mark.html#mark-def). The keys represent styles names; the values have to be valid [mark configuration objects](https://vega.github.io/vega-lite/docs/mark.html#config). */
-    var style: js.UndefOr[StyleConfigIndex[ES]] = js.native
+    var style: js.UndefOr[StyleConfigIndex[ES]] = js.undefined
     
     /**
       * Title configuration, which determines default properties for all [titles](https://vega.github.io/vega-lite/docs/title.html). For a full list of title configuration options, please see the [corresponding section of the title documentation](https://vega.github.io/vega-lite/docs/title.html#config).
       */
-    var title: js.UndefOr[TitleConfig[ES]] = js.native
+    var title: js.UndefOr[TitleConfig[ES]] = js.undefined
   }
   object Config {
     
@@ -366,7 +355,7 @@ object srcConfigMod {
     }
     
     @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[_], ES /* <: ExprRef | SignalRef */] (val x: Self with Config[ES]) extends AnyVal {
+    implicit class ConfigMutableBuilder[Self <: Config[?], ES /* <: ExprRef | SignalRef */] (val x: Self & Config[ES]) extends AnyVal {
       
       @scala.inline
       def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
@@ -423,9 +412,8 @@ object srcConfigMod {
   
   type FontSizeConfig = Record[String, Double]
   
-  type StyleConfigIndex[ES /* <: ExprRef | SignalRef */] = (Partial[Record[String, AnyMarkConfig[ES] | Axis[ES]]]) with MarkConfigMixins[ES] with Groupsubtitle[ES]
+  type StyleConfigIndex[ES /* <: ExprRef | SignalRef */] = (Partial[Record[String, AnyMarkConfig[ES] | Axis[ES]]]) & MarkConfigMixins[ES] & Groupsubtitle[ES]
   
-  @js.native
   trait VLOnlyConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
     
     /**
@@ -433,7 +421,7 @@ object srcConfigMod {
       *
       * @hidden
       */
-    var color: js.UndefOr[Boolean | ColorConfig] = js.native
+    var color: js.UndefOr[Boolean | ColorConfig] = js.undefined
     
     /**
       * Default axis and legend title for count fields.
@@ -442,12 +430,12 @@ object srcConfigMod {
       *
       * @type {string}
       */
-    var countTitle: js.UndefOr[String] = js.native
+    var countTitle: js.UndefOr[String] = js.undefined
     
     /**
       * Allow the `formatType` property for text marks and guides to accept a custom formatter function [registered as a Vega expression](https://vega.github.io/vega-lite/usage/compile.html#format-type).
       */
-    var customFormatTypes: js.UndefOr[Boolean] = js.native
+    var customFormatTypes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines how Vega-Lite generates title for fields. There are three possible styles:
@@ -455,32 +443,32 @@ object srcConfigMod {
       * - `"function"` - displays function using parentheses and capitalized texts (e.g., "SUM(field)", "YEARMONTH(date)", "BIN(field)").
       * - `"plain"` - displays only the field name without functions (e.g., "field", "date", "field").
       */
-    var fieldTitle: js.UndefOr[verbal | functional | plain] = js.native
+    var fieldTitle: js.UndefOr[verbal | functional | plain] = js.undefined
     
     /**
       * Default font for all text marks, titles, and labels.
       */
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
     /**
       * Default font size signals.
       *
       * @hidden
       */
-    var fontSize: js.UndefOr[Boolean | FontSizeConfig] = js.native
+    var fontSize: js.UndefOr[Boolean | FontSizeConfig] = js.undefined
     
     /**
       * D3 Number format for guide labels and text marks. For example `"s"` for SI units. Use [D3's number format pattern](https://github.com/d3/d3-format#locale_format).
       */
-    var numberFormat: js.UndefOr[String] = js.native
+    var numberFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Scale configuration determines default properties for all [scales](https://vega.github.io/vega-lite/docs/scale.html). For a full list of scale configuration options, please see the [corresponding section of the scale documentation](https://vega.github.io/vega-lite/docs/scale.html#config).
       */
-    var scale: js.UndefOr[ScaleConfig[ES]] = js.native
+    var scale: js.UndefOr[ScaleConfig[ES]] = js.undefined
     
     /** An object hash for defining default properties for each type of selections. */
-    var selection: js.UndefOr[SelectionConfig] = js.native
+    var selection: js.UndefOr[SelectionConfig] = js.undefined
     
     /**
       * Default time format for raw time values (without time units) in text marks, legend labels and header labels.
@@ -488,10 +476,10 @@ object srcConfigMod {
       * __Default value:__ `"%b %d, %Y"`
       * __Note:__ Axes automatically determine the format for each label automatically so this config does not affect axes.
       */
-    var timeFormat: js.UndefOr[String] = js.native
+    var timeFormat: js.UndefOr[String] = js.undefined
     
     /** Default properties for [single view plots](https://vega.github.io/vega-lite/docs/spec.html#single). */
-    var view: js.UndefOr[ViewConfig[ES]] = js.native
+    var view: js.UndefOr[ViewConfig[ES]] = js.undefined
   }
   object VLOnlyConfig {
     
@@ -502,7 +490,7 @@ object srcConfigMod {
     }
     
     @scala.inline
-    implicit class VLOnlyConfigMutableBuilder[Self <: VLOnlyConfig[_], ES /* <: ExprRef | SignalRef */] (val x: Self with VLOnlyConfig[ES]) extends AnyVal {
+    implicit class VLOnlyConfigMutableBuilder[Self <: VLOnlyConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & VLOnlyConfig[ES]) extends AnyVal {
       
       @scala.inline
       def setColor(value: Boolean | ColorConfig): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
@@ -572,27 +560,28 @@ object srcConfigMod {
     }
   }
   
-  @js.native
-  trait ViewConfig[ES /* <: ExprRef | SignalRef */] extends BaseViewBackground[ES] {
+  trait ViewConfig[ES /* <: ExprRef | SignalRef */]
+    extends StObject
+       with BaseViewBackground[ES] {
     
     /**
       * Whether the view should be clipped.
       */
-    var clip: js.UndefOr[Boolean] = js.native
+    var clip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The default height when the plot has a continuous y-field for x or latitude, or has arc marks.
       *
       * __Default value:__ `200`
       */
-    var continuousHeight: js.UndefOr[Double] = js.native
+    var continuousHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The default width when the plot has a continuous field for x or longitude, or has arc marks.
       *
       * __Default value:__ `200`
       */
-    var continuousWidth: js.UndefOr[Double] = js.native
+    var continuousWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The default height when the plot has non arc marks and either a discrete y-field or no y-field.
@@ -600,7 +589,7 @@ object srcConfigMod {
       *
       * __Default value:__ a step size based on `config.view.step`.
       */
-    var discreteHeight: js.UndefOr[Double | Step] = js.native
+    var discreteHeight: js.UndefOr[Double | Step] = js.undefined
     
     /**
       * The default width when the plot has non-arc marks and either a discrete x-field or no x-field.
@@ -608,26 +597,26 @@ object srcConfigMod {
       *
       * __Default value:__ a step size based on `config.view.step`.
       */
-    var discreteWidth: js.UndefOr[Double | Step] = js.native
+    var discreteWidth: js.UndefOr[Double | Step] = js.undefined
     
     /**
       * Default height
       *
       * __Deprecated:__ Since Vega-Lite 4.0. Please use continuousHeight and discreteHeight instead.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Default step size for x-/y- discrete fields.
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * Default width
       *
       * __Deprecated:__ Since Vega-Lite 4.0. Please use continuousWidth and discreteWidth instead.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ViewConfig {
     
@@ -638,7 +627,7 @@ object srcConfigMod {
     }
     
     @scala.inline
-    implicit class ViewConfigMutableBuilder[Self <: ViewConfig[_], ES /* <: ExprRef | SignalRef */] (val x: Self with ViewConfig[ES]) extends AnyVal {
+    implicit class ViewConfigMutableBuilder[Self <: ViewConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ViewConfig[ES]) extends AnyVal {
       
       @scala.inline
       def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])

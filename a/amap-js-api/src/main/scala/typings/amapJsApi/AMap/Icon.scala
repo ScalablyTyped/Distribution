@@ -2,11 +2,12 @@ package typings.amapJsApi.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Icon extends EventEmitter {
+trait Icon
+  extends StObject
+     with EventEmitter {
   
   /**
     * 获取图标图片大小
@@ -21,28 +22,27 @@ trait Icon extends EventEmitter {
 }
 object Icon {
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * 图标的取图地址
       */
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
     /**
       * 图标取图偏移量
       */
-    var imageOffset: js.UndefOr[Pixel] = js.native
+    var imageOffset: js.UndefOr[Pixel] = js.undefined
     
     /**
       * 图标所用图片大小
       */
-    var imageSize: js.UndefOr[SizeValue] = js.native
+    var imageSize: js.UndefOr[SizeValue] = js.undefined
     
     /**
       * 图标尺寸
       */
-    var size: js.UndefOr[SizeValue] = js.native
+    var size: js.UndefOr[SizeValue] = js.undefined
   }
   object Options {
     

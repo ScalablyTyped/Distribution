@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,27 @@ sealed trait LinkedDataTypeState extends StObject
 object LinkedDataTypeState extends StObject {
   
   @js.native
-  sealed trait brokenLinkedData extends LinkedDataTypeState
+  sealed trait brokenLinkedData
+    extends StObject
+       with LinkedDataTypeState
   
   @js.native
-  sealed trait disambiguationNeeded extends LinkedDataTypeState
+  sealed trait disambiguationNeeded
+    extends StObject
+       with LinkedDataTypeState
   
   @js.native
-  sealed trait fetchingData extends LinkedDataTypeState
+  sealed trait fetchingData
+    extends StObject
+       with LinkedDataTypeState
   
   @js.native
-  sealed trait none extends LinkedDataTypeState
+  sealed trait none
+    extends StObject
+       with LinkedDataTypeState
   
   @js.native
-  sealed trait validLinkedData extends LinkedDataTypeState
+  sealed trait validLinkedData
+    extends StObject
+       with LinkedDataTypeState
 }

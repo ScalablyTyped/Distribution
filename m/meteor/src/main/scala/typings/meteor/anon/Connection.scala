@@ -3,15 +3,13 @@ package typings.meteor.anon
 import typings.meteor.Meteor.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connection extends StObject {
   
-  var connection: typings.meteor.Meteor.Connection = js.native
+  var connection: typings.meteor.Meteor.Connection
   
-  var user: User = js.native
+  var user: User
 }
 object Connection {
   

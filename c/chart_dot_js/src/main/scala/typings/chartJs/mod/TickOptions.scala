@@ -3,15 +3,15 @@ package typings.chartJs.mod
 import typings.chartJs.chartJsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TickOptions extends NestedTickOptions {
+trait TickOptions
+  extends StObject
+     with NestedTickOptions {
   
-  var major: js.UndefOr[MajorTickOptions | `false`] = js.native
+  var major: js.UndefOr[MajorTickOptions | `false`] = js.undefined
   
-  var minor: js.UndefOr[NestedTickOptions | `false`] = js.native
+  var minor: js.UndefOr[NestedTickOptions | `false`] = js.undefined
 }
 object TickOptions {
   

@@ -3,26 +3,26 @@ package typings.valiant
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("valiant", "createInterval")
+  @JSImport("valiant", JSImport.Namespace)
   @js.native
-  def createInterval[T](): IntervalConstructor[T] = js.native
-  @JSImport("valiant", "createInterval")
-  @js.native
-  def createInterval[T](compareValues: js.Function2[/* a */ T, /* b */ T, Double]): IntervalConstructor[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createInterval[T](): IntervalConstructor[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterval")().asInstanceOf[IntervalConstructor[T]]
+  @scala.inline
+  def createInterval[T](compareValues: js.Function2[/* a */ T, /* b */ T, Double]): IntervalConstructor[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterval")(compareValues.asInstanceOf[js.Any]).asInstanceOf[IntervalConstructor[T]]
+  
   trait Endpoint[T] extends StObject {
     
-    var finite: Boolean = js.native
+    var finite: Boolean
     
-    var inclusive: Boolean = js.native
+    var inclusive: Boolean
     
-    var value: T = js.native
+    var value: T
   }
   object Endpoint {
     
@@ -33,7 +33,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class EndpointMutableBuilder[Self <: Endpoint[_], T] (val x: Self with Endpoint[T]) extends AnyVal {
+    implicit class EndpointMutableBuilder[Self <: Endpoint[?], T] (val x: Self & Endpoint[T]) extends AnyVal {
       
       @scala.inline
       def setFinite(value: Boolean): Self = StObject.set(x, "finite", value.asInstanceOf[js.Any])
@@ -46,36 +46,35 @@ object mod {
     }
   }
   
-  @js.native
   trait Interval[T] extends StObject {
     
-    var constructor: IntervalConstructor[Double] = js.native
+    var constructor: IntervalConstructor[Double]
     
-    def contains(value: T): Boolean = js.native
+    def contains(value: T): Boolean
     
-    def contiguousWith(interval: Interval[T]): Boolean = js.native
+    def contiguousWith(interval: Interval[T]): Boolean
     
-    var empty: Boolean = js.native
+    var empty: Boolean
     
-    def equalTo(interval: Interval[T]): Boolean = js.native
+    def equalTo(interval: Interval[T]): Boolean
     
-    var from: Endpoint[T] = js.native
+    var from: Endpoint[T]
     
-    def fromComparator(a: Endpoint[T], b: Endpoint[T]): Double = js.native
+    def fromComparator(a: Endpoint[T], b: Endpoint[T]): Double
     
-    def hull(interval: Interval[T]): Interval[T] = js.native
+    def hull(interval: Interval[T]): Interval[T]
     
-    def intersection(interval: Interval[T]): Boolean = js.native
+    def intersection(interval: Interval[T]): Boolean
     
-    def isEmpty(): Boolean = js.native
+    def isEmpty(): Boolean
     
-    def isSubsetOf(interval: Interval[T]): Boolean = js.native
+    def isSubsetOf(interval: Interval[T]): Boolean
     
-    var to: Endpoint[T] = js.native
+    var to: Endpoint[T]
     
-    def toComparator(a: Endpoint[T], b: Endpoint[T]): Double = js.native
+    def toComparator(a: Endpoint[T], b: Endpoint[T]): Double
     
-    def unify(interval: Interval[T]): Interval[T] = js.native
+    def unify(interval: Interval[T]): Interval[T]
   }
   object Interval {
     
@@ -101,7 +100,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class IntervalMutableBuilder[Self <: Interval[_], T] (val x: Self with Interval[T]) extends AnyVal {
+    implicit class IntervalMutableBuilder[Self <: Interval[?], T] (val x: Self & Interval[T]) extends AnyVal {
       
       @scala.inline
       def setConstructor(value: IntervalConstructor[Double]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
@@ -148,7 +147,9 @@ object mod {
   }
   
   @js.native
-  trait IntervalConstructor[T] extends Instantiable2[/* from */ Endpoint[T], /* to */ Endpoint[T], Interval[T]] {
+  trait IntervalConstructor[T]
+    extends StObject
+       with Instantiable2[/* from */ Endpoint[T], /* to */ Endpoint[T], Interval[T]] {
     
     def adjacentEndpoint(endpoint: Endpoint[T]): Endpoint[T] = js.native
     

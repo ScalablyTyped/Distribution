@@ -3,22 +3,20 @@ package typings.relayRuntime.relayStoreTypesMod
 import typings.relayRuntime.normalizationNodeMod.NormalizationSplitOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationLoader extends StObject {
   
   /**
     * Synchronously load an operation, returning either the node or null if it
     * cannot be resolved synchronously.
     */
-  def get(reference: js.Any): js.UndefOr[NormalizationSplitOperation | Null] = js.native
+  def get(reference: js.Any): js.UndefOr[NormalizationSplitOperation | Null]
   
   /**
     * Asynchronously load an operation.
     */
-  def load(reference: js.Any): js.Promise[js.UndefOr[NormalizationSplitOperation | Null]] = js.native
+  def load(reference: js.Any): js.Promise[js.UndefOr[NormalizationSplitOperation | Null]]
 }
 object OperationLoader {
   

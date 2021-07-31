@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Step taken to address
   */
-@js.native
-trait DetectedIssueMitigation extends BackboneElement {
+trait DetectedIssueMitigation
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * What mitigation?
     */
-  var action: CodeableConcept = js.native
+  var action: CodeableConcept
   
   /**
     * Who is committing?
     */
-  var author: js.UndefOr[Reference] = js.native
+  var author: js.UndefOr[Reference] = js.undefined
   
   /**
     * Date committed
     */
-  var date: js.UndefOr[dateTime] = js.native
+  var date: js.UndefOr[dateTime] = js.undefined
 }
 object DetectedIssueMitigation {
   

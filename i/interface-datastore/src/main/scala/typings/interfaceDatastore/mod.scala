@@ -12,7 +12,6 @@ import typings.std.Iterable
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -110,25 +109,24 @@ object mod {
   
   object Errors {
     
-    @JSImport("interface-datastore", "Errors.abortedError")
+    @JSImport("interface-datastore", "Errors")
     @js.native
-    def abortedError(error: Error): ErrCode = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("interface-datastore", "Errors.dbDeleteFailedError")
-    @js.native
-    def dbDeleteFailedError(error: Error): ErrCode = js.native
+    @scala.inline
+    def abortedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("abortedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
     
-    @JSImport("interface-datastore", "Errors.dbOpenFailedError")
-    @js.native
-    def dbOpenFailedError(error: Error): ErrCode = js.native
+    @scala.inline
+    def dbDeleteFailedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("dbDeleteFailedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
     
-    @JSImport("interface-datastore", "Errors.dbWriteFailedError")
-    @js.native
-    def dbWriteFailedError(error: Error): ErrCode = js.native
+    @scala.inline
+    def dbOpenFailedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("dbOpenFailedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
     
-    @JSImport("interface-datastore", "Errors.notFoundError")
-    @js.native
-    def notFoundError(error: Error): ErrCode = js.native
+    @scala.inline
+    def dbWriteFailedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("dbWriteFailedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
+    
+    @scala.inline
+    def notFoundError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("notFoundError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
   }
   
   @JSImport("interface-datastore", "Key")
@@ -293,12 +291,15 @@ object mod {
   /* static members */
   object Key {
     
+    @JSImport("interface-datastore", "Key")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns whether the input is a valid Key.
       */
-    @JSImport("interface-datastore", "Key.isKey")
-    @js.native
-    def isKey(key: js.Any): Boolean = js.native
+    @scala.inline
+    def isKey(key: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns a randomly (uuid) generated key.
@@ -308,9 +309,8 @@ object mod {
       * // => Key('/f98719ea086343f7b71f32ea9d9d521d')
       *
       */
-    @JSImport("interface-datastore", "Key.random")
-    @js.native
-    def random(): Key = js.native
+    @scala.inline
+    def random(): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Key]
     
     /**
       * Constructs a key out of a namespace array.
@@ -321,9 +321,8 @@ object mod {
       * Key.withNamespaces(['one', 'two'])
       * // => Key('/one/two')
       */
-    @JSImport("interface-datastore", "Key.withNamespaces")
-    @js.native
-    def withNamespaces(list: js.Array[String]): Key = js.native
+    @scala.inline
+    def withNamespaces(list: js.Array[String]): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("withNamespaces")(list.asInstanceOf[js.Any]).asInstanceOf[Key]
   }
   
   @JSImport("interface-datastore", "MemoryDatastore")
@@ -335,29 +334,27 @@ object mod {
   
   object utils {
     
-    @JSImport("interface-datastore", "utils.filter")
+    @JSImport("interface-datastore", "utils")
     @js.native
-    def filter[T](iterable: AsyncIterable[T], filterer: js.Function1[/* item */ T, Boolean]): AsyncGenerator[T, _, _] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("interface-datastore", "utils.map")
-    @js.native
-    def map[T, O](iterable: AsyncIterable[T], mapper: js.Function1[/* item */ T, O]): AsyncGenerator[O, _, _] = js.native
+    @scala.inline
+    def filter[T](iterable: AsyncIterable[T], filterer: js.Function1[/* item */ T, Boolean]): AsyncGenerator[T, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(iterable.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, js.Any, js.Any]]
     
-    @JSImport("interface-datastore", "utils.replaceStartWith")
-    @js.native
-    def replaceStartWith(s: String, r: RegExp): String = js.native
+    @scala.inline
+    def map[T, O](iterable: AsyncIterable[T], mapper: js.Function1[/* item */ T, O]): AsyncGenerator[O, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(iterable.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[O, js.Any, js.Any]]
     
-    @JSImport("interface-datastore", "utils.sortAll")
-    @js.native
-    def sortAll[T](iterable: AsyncIterable[T], sorter: js.Function1[/* items */ js.Array[T], js.Array[T]]): AsyncGenerator[T, _, _] = js.native
+    @scala.inline
+    def replaceStartWith(s: String, r: RegExp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStartWith")(s.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("interface-datastore", "utils.take")
-    @js.native
-    def take[T](iterable: AsyncIterable[T], n: Double): AsyncGenerator[T, _, _] = js.native
+    @scala.inline
+    def sortAll[T](iterable: AsyncIterable[T], sorter: js.Function1[/* items */ js.Array[T], js.Array[T]]): AsyncGenerator[T, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortAll")(iterable.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, js.Any, js.Any]]
     
-    @JSImport("interface-datastore", "utils.tmpdir")
-    @js.native
-    def tmpdir(): String = js.native
+    @scala.inline
+    def take[T](iterable: AsyncIterable[T], n: Double): AsyncGenerator[T, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(iterable.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, js.Any, js.Any]]
+    
+    @scala.inline
+    def tmpdir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tmpdir")().asInstanceOf[String]
   }
   
   @js.native
@@ -373,10 +370,11 @@ object mod {
   
   type Datastore[Value] = Adapter[Value]
   
-  @js.native
-  trait ErrCode extends Error {
+  trait ErrCode
+    extends StObject
+       with Error {
     
-    var code: String = js.native
+    var code: String
   }
   object ErrCode {
     
@@ -394,10 +392,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var signal: AbortSignal = js.native
+    var signal: AbortSignal
   }
   object Options {
     
@@ -415,12 +412,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Pair[Value] extends StObject {
     
-    var key: Key = js.native
+    var key: Key
     
-    var value: Value = js.native
+    var value: Value
   }
   object Pair {
     
@@ -431,7 +427,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PairMutableBuilder[Self <: Pair[_], Value] (val x: Self with Pair[Value]) extends AnyVal {
+    implicit class PairMutableBuilder[Self <: Pair[?], Value] (val x: Self & Pair[Value]) extends AnyVal {
       
       @scala.inline
       def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -441,20 +437,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Query[Value] extends StObject {
     
-    var filters: js.UndefOr[js.Array[Filter[Value]]] = js.native
+    var filters: js.UndefOr[js.Array[Filter[Value]]] = js.undefined
     
-    var keysOnly: js.UndefOr[Boolean] = js.native
+    var keysOnly: js.UndefOr[Boolean] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var orders: js.UndefOr[js.Array[Order[Value]]] = js.native
+    var orders: js.UndefOr[js.Array[Order[Value]]] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object Query {
     
@@ -469,7 +464,7 @@ object mod {
     type Order[Value] = js.Function1[/* items */ js.Array[Pair[Value]], js.Array[Pair[Value]]]
     
     @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query[_], Value] (val x: Self with Query[Value]) extends AnyVal {
+    implicit class QueryMutableBuilder[Self <: Query[?], Value] (val x: Self & Query[Value]) extends AnyVal {
       
       @scala.inline
       def setFilters(value: js.Array[Filter[Value]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])

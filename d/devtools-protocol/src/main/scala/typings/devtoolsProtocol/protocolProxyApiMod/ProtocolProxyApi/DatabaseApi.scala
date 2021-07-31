@@ -8,28 +8,26 @@ import typings.devtoolsProtocol.mod.Protocol.Database.GetDatabaseTableNamesReque
 import typings.devtoolsProtocol.mod.Protocol.Database.GetDatabaseTableNamesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseApi extends StObject {
   
   /**
     * Disables database tracking, prevents database events from being sent to the client.
     */
-  def disable(): js.Promise[Unit] = js.native
+  def disable(): js.Promise[Unit]
   
   /**
     * Enables database tracking, database events will now be delivered to the client.
     */
-  def enable(): js.Promise[Unit] = js.native
+  def enable(): js.Promise[Unit]
   
-  def executeSQL(params: ExecuteSQLRequest): js.Promise[ExecuteSQLResponse] = js.native
+  def executeSQL(params: ExecuteSQLRequest): js.Promise[ExecuteSQLResponse]
   
-  def getDatabaseTableNames(params: GetDatabaseTableNamesRequest): js.Promise[GetDatabaseTableNamesResponse] = js.native
+  def getDatabaseTableNames(params: GetDatabaseTableNamesRequest): js.Promise[GetDatabaseTableNamesResponse]
   
   @JSName("on")
-  def on_addDatabase(event: addDatabase, listener: js.Function1[/* params */ AddDatabaseEvent, Unit]): Unit = js.native
+  def on_addDatabase(event: addDatabase, listener: js.Function1[/* params */ AddDatabaseEvent, Unit]): Unit
 }
 object DatabaseApi {
   

@@ -2,11 +2,11 @@ package typings.iso8601Localizer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISO8601Localizer extends localizer
+trait ISO8601Localizer
+  extends StObject
+     with localizer
 object ISO8601Localizer {
   
   @scala.inline

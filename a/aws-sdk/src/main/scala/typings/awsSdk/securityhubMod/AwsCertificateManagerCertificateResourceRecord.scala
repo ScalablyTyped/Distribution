@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCertificateManagerCertificateResourceRecord extends StObject {
   
   /**
     * The name of the resource.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of resource.
     */
-  var Type: js.UndefOr[NonEmptyString] = js.native
+  var Type: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The value of the resource.
     */
-  var Value: js.UndefOr[NonEmptyString] = js.native
+  var Value: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsCertificateManagerCertificateResourceRecord {
   

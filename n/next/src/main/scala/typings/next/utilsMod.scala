@@ -6,27 +6,29 @@ import typings.next.nextBooleans.`false`
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("next/dist/next-server/lib/router/utils", "getRouteMatcher")
+  @JSImport("next/dist/next-server/lib/router/utils", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getRouteMatcher(routeRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]): js.Function1[
     /* pathname */ js.UndefOr[String | Null], 
     `false` | (StringDictionary[String | js.Array[String]])
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteMatcher")(routeRegex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* pathname */ js.UndefOr[String | Null], 
+    `false` | (StringDictionary[String | js.Array[String]])
+  ]]
   
-  @JSImport("next/dist/next-server/lib/router/utils", "getRouteRegex")
-  @js.native
-  def getRouteRegex(normalizedRoute: String): Groups = js.native
+  @scala.inline
+  def getRouteRegex(normalizedRoute: String): Groups = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteRegex")(normalizedRoute.asInstanceOf[js.Any]).asInstanceOf[Groups]
   
-  @JSImport("next/dist/next-server/lib/router/utils", "getSortedRoutes")
-  @js.native
-  def getSortedRoutes(normalizedPages: js.Array[String]): js.Array[String] = js.native
+  @scala.inline
+  def getSortedRoutes(normalizedPages: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSortedRoutes")(normalizedPages.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("next/dist/next-server/lib/router/utils", "isDynamicRoute")
-  @js.native
-  def isDynamicRoute(route: String): Boolean = js.native
+  @scala.inline
+  def isDynamicRoute(route: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicRoute")(route.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

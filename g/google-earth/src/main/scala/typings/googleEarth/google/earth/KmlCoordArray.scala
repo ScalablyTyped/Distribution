@@ -2,71 +2,69 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KmlCoordArray extends StObject {
   
   /**
     * Clears all of the elements in the array
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Returns the coordinates at the given index.
     */
-  def get(index: Double): KmlCoord = js.native
+  def get(index: Double): KmlCoord
   
   /**
     * Specifies the length of the index array.
     */
-  def getLength(): Double = js.native
+  def getLength(): Double
   
   /**
     * Deletes the last element of an array, decrements the array length, and returns the value that is removed.
     */
-  def pop(): KmlCoord = js.native
+  def pop(): KmlCoord
   
   /**
     * Appends one or more new elements to the end of an array and returns the new length of the array.
     */
-  def push(coordOrList: KmlCoord): Unit = js.native
+  def push(coordOrList: KmlCoord): Unit
   
   /**
     * Appends one or more new elements to the end of an array and returns the new length of the array.
     */
-  def pushLatLngAlt(latitude: Double, longitude: Double, altitude: Double): Unit = js.native
+  def pushLatLngAlt(latitude: Double, longitude: Double, altitude: Double): Unit
   
   /**
     * Reverses the order of the elements in the array.
     */
-  def reverse(): Unit = js.native
+  def reverse(): Unit
   
   /**
     * Sets the coordinates at the given index..
     */
-  def set(index: Double, coord: KmlCoord): Unit = js.native
+  def set(index: Double, coord: KmlCoord): Unit
   
   /**
     * Sets the latitude, longitude, and altitude.
     */
-  def setLatLngAlt(index: Double, latitude: Double, longitude: Double, altitude: Double): Unit = js.native
+  def setLatLngAlt(index: Double, latitude: Double, longitude: Double, altitude: Double): Unit
   
   /**
     * Removes and returns the first element of the array.
     */
-  def shift(): KmlCoord = js.native
+  def shift(): KmlCoord
   
   /**
     * Adds an element or elements to the beginning of an array.
     */
-  def unshift(coordOrList: KmlCoord): Double = js.native
+  def unshift(coordOrList: KmlCoord): Double
   
   /**
     * Adds an element or elements to the beginning of an array.
     */
-  def unshiftLatLngAlt(latitude: Double, longitude: Double, altitude: Double): Unit = js.native
+  def unshiftLatLngAlt(latitude: Double, longitude: Double, altitude: Double): Unit
 }
 object KmlCoordArray {
   

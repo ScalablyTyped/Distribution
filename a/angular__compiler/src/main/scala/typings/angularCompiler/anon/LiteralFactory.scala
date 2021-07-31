@@ -2,15 +2,13 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiteralFactory extends StObject {
   
-  var literalFactory: typings.angularCompiler.outputAstMod.Expression = js.native
+  var literalFactory: typings.angularCompiler.outputAstMod.Expression
   
-  var literalFactoryArguments: js.Array[typings.angularCompiler.outputAstMod.Expression] = js.native
+  var literalFactoryArguments: js.Array[typings.angularCompiler.outputAstMod.Expression]
 }
 object LiteralFactory {
   

@@ -4,17 +4,17 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContextChangeEventObject extends EventObject {
+trait ContextChangeEventObject
+  extends StObject
+     with EventObject {
   
   /** Return the name of the application. */
-  var ApplicationName: String = js.native
+  var ApplicationName: String
   
   /** Return the application specific context name. */
-  var ContextName: String = js.native
+  var ContextName: String
 }
 object ContextChangeEventObject {
   

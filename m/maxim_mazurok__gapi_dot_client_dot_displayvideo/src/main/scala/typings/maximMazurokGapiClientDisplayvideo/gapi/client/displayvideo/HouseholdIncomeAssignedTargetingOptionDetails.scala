@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HouseholdIncomeAssignedTargetingOptionDetails extends StObject {
   
   /** Output only. The household income of the audience. */
-  var householdIncome: js.UndefOr[String] = js.native
+  var householdIncome: js.UndefOr[String] = js.undefined
   
   /** Required. The targeting_option_id of a TargetingOption of type `TARGETING_TYPE_HOUSEHOLD_INCOME`. */
-  var targetingOptionId: js.UndefOr[String] = js.native
+  var targetingOptionId: js.UndefOr[String] = js.undefined
 }
 object HouseholdIncomeAssignedTargetingOptionDetails {
   

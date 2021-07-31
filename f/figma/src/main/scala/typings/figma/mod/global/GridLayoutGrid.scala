@@ -3,25 +3,25 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.GRID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridLayoutGrid extends LayoutGrid {
+trait GridLayoutGrid
+  extends StObject
+     with LayoutGrid {
   
-  val color: js.UndefOr[RGBA] = js.native
+  val color: js.UndefOr[RGBA] = js.undefined
   
-  val pattern: GRID = js.native
+  val pattern: GRID
   
-  val sectionSize: Double = js.native
+  val sectionSize: Double
   
-  val visible: js.UndefOr[Boolean] = js.native
+  val visible: js.UndefOr[Boolean] = js.undefined
 }
 object GridLayoutGrid {
   
   @scala.inline
-  def apply(pattern: GRID, sectionSize: Double): GridLayoutGrid = {
-    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any], sectionSize = sectionSize.asInstanceOf[js.Any])
+  def apply(sectionSize: Double): GridLayoutGrid = {
+    val __obj = js.Dynamic.literal(pattern = "GRID", sectionSize = sectionSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridLayoutGrid]
   }
   

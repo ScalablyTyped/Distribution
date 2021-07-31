@@ -3,22 +3,20 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/TableSortLabel.TableSortLabelClassKey>> */
-@js.native
 trait PartialStyleRulesTableSor extends StObject {
   
-  var active: js.UndefOr[CSSProperties] = js.native
+  var active: js.UndefOr[CSSProperties] = js.undefined
   
-  var icon: js.UndefOr[CSSProperties] = js.native
+  var icon: js.UndefOr[CSSProperties] = js.undefined
   
-  var iconDirectionAsc: js.UndefOr[CSSProperties] = js.native
+  var iconDirectionAsc: js.UndefOr[CSSProperties] = js.undefined
   
-  var iconDirectionDesc: js.UndefOr[CSSProperties] = js.native
+  var iconDirectionDesc: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesTableSor {
   

@@ -2,23 +2,21 @@ package typings.swaggerizeExpress.mod.Swagger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfoObject extends StObject {
   
-  var contact: js.UndefOr[ContactObject] = js.native
+  var contact: js.UndefOr[ContactObject] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var license: js.UndefOr[LicenseObject] = js.native
+  var license: js.UndefOr[LicenseObject] = js.undefined
   
-  var termsOfService: js.UndefOr[String] = js.native
+  var termsOfService: js.UndefOr[String] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var version: String = js.native
+  var version: String
 }
 object InfoObject {
   

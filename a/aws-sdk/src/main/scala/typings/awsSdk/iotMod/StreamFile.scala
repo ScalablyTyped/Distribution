@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamFile extends StObject {
   
   /**
     * The file ID.
     */
-  var fileId: js.UndefOr[FileId] = js.native
+  var fileId: js.UndefOr[FileId] = js.undefined
   
   /**
     * The location of the file in S3.
     */
-  var s3Location: js.UndefOr[S3Location] = js.native
+  var s3Location: js.UndefOr[S3Location] = js.undefined
 }
 object StreamFile {
   

@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsHttpContentCodingWithQualityHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Accept-Encoding HTTP header on an HTTP request. */
 @js.native
-trait HttpContentCodingWithQualityHeaderValueCollection extends Array[HttpContentCodingWithQualityHeaderValue] {
+trait HttpContentCodingWithQualityHeaderValueCollection
+  extends StObject
+     with Array[HttpContentCodingWithQualityHeaderValue] {
   
   /**
     * Adds a new HttpContentCodingWithQualityHeaderValue item to the end of the collection.

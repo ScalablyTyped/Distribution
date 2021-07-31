@@ -3,13 +3,11 @@ package typings.reactVirtualized.anon
 import typings.reactVirtualized.esMasonryMod.resetParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reset extends StObject {
   
-  def reset(params: resetParams): Unit = js.native
+  def reset(params: resetParams): Unit
 }
 object Reset {
   

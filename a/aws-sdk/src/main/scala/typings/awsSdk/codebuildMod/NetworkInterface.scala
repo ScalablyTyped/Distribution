@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInterface extends StObject {
   
   /**
     * The ID of the network interface.
     */
-  var networkInterfaceId: js.UndefOr[NonEmptyString] = js.native
+  var networkInterfaceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ID of the subnet.
     */
-  var subnetId: js.UndefOr[NonEmptyString] = js.native
+  var subnetId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object NetworkInterface {
   

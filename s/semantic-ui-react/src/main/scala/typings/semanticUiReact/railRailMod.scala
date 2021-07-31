@@ -16,7 +16,6 @@ import typings.semanticUiReact.semanticUiReactStrings.tiny
 import typings.semanticUiReact.semanticUiReactStrings.very
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object railRailMod extends Shortcut {
@@ -25,9 +24,9 @@ object railRailMod extends Shortcut {
   @js.native
   val default: StatelessComponent[RailProps] = js.native
   
-  @js.native
   trait RailProps
-    extends StrictRailProps
+    extends StObject
+       with StrictRailProps
        with /* key */ StringDictionary[js.Any]
   object RailProps {
     
@@ -38,38 +37,37 @@ object railRailMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictRailProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A rail can appear attached to the main viewport. */
-    var attached: js.UndefOr[Boolean] = js.native
+    var attached: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A rail can appear closer to the main viewport. */
-    var close: js.UndefOr[Boolean | very] = js.native
+    var close: js.UndefOr[Boolean | very] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A rail can create a division between itself and a container. */
-    var dividing: js.UndefOr[Boolean] = js.native
+    var dividing: js.UndefOr[Boolean] = js.undefined
     
     /** A rail can attach itself to the inside of a container. */
-    var internal: js.UndefOr[Boolean] = js.native
+    var internal: js.UndefOr[Boolean] = js.undefined
     
     /** A rail can be presented on the left or right side of a container. */
-    var position: SemanticFLOATS = js.native
+    var position: SemanticFLOATS
     
     /** A rail can have different sizes. */
-    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.native
+    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.undefined
   }
   object StrictRailProps {
     

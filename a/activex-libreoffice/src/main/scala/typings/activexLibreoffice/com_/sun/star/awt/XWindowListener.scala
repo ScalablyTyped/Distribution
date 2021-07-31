@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Component events are provided **only** for notification purposes. Moves and resizes will be handled internally by the window component, so that GUI
   * layout works properly regardless of whether a program registers such a listener or not.
   */
-@js.native
-trait XWindowListener extends XEventListener {
+trait XWindowListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when the window has been hidden. */
-  def windowHidden(e: EventObject): Unit = js.native
+  def windowHidden(e: EventObject): Unit
   
   /** is invoked when the window has been moved. */
-  def windowMoved(e: WindowEvent): Unit = js.native
+  def windowMoved(e: WindowEvent): Unit
   
   /** is invoked when the window has been resized. */
-  def windowResized(e: WindowEvent): Unit = js.native
+  def windowResized(e: WindowEvent): Unit
   
   /** is invoked when the window has been shown. */
-  def windowShown(e: EventObject): Unit = js.native
+  def windowShown(e: EventObject): Unit
 }
 object XWindowListener {
   

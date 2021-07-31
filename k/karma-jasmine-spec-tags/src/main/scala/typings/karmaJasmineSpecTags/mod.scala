@@ -2,7 +2,6 @@ package typings.karmaJasmineSpecTags
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // A plugin for karma-jasmine which helps to filter tests (specs) by tags.
@@ -12,7 +11,6 @@ object mod {
   /**
     * Default values can be configured using client map in Karma configuration
     */
-  @js.native
   trait ClientOptions extends StObject {
     
     /**
@@ -20,20 +18,20 @@ object mod {
       * * If `names` is defined then specs which match to tags will be skipped.
       * * If `names` is not defined then all specs with a tag will be skipped.
       */
-    var skipTags: js.UndefOr[String | js.Array[String] | Boolean] = js.native
+    var skipTags: js.UndefOr[String | js.Array[String] | Boolean] = js.undefined
     
     /**
       * defines a prefix for a tag name
       * @default '#'
       */
-    var tagPrefix: js.UndefOr[String] = js.native
+    var tagPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * defines a comma-separated list of tag names:
       * * if `names` is defined then specs which match to tags will be executed.
       * * If `names` is not defined then all specs with a tag will be executed.
       */
-    var tags: js.UndefOr[String | js.Array[String] | Boolean] = js.native
+    var tags: js.UndefOr[String | js.Array[String] | Boolean] = js.undefined
   }
   object ClientOptions {
     

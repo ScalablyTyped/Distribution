@@ -3,23 +3,21 @@ package typings.reactElemental.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpinnerProps extends StObject {
   
-  val accentColor: js.UndefOr[String] = js.native
+  val accentColor: js.UndefOr[String] = js.undefined
   
-  val duration: js.UndefOr[Double] = js.native
+  val duration: js.UndefOr[Double] = js.undefined
   
-  val ringColor: js.UndefOr[String] = js.native
+  val ringColor: js.UndefOr[String] = js.undefined
   
-  val size: js.UndefOr[SpinnerSize] = js.native
+  val size: js.UndefOr[SpinnerSize] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val thickness: js.UndefOr[Double] = js.native
+  val thickness: js.UndefOr[Double] = js.undefined
 }
 object SpinnerProps {
   

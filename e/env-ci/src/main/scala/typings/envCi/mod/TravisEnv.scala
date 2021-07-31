@@ -1,45 +1,43 @@
 package typings.envCi.mod
 
-import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.`Travis CI`
 import typings.envCi.envCiStrings.travis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TravisEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
   
-  var branch: js.UndefOr[String] = js.native
+  var branch: js.UndefOr[String] = js.undefined
   
-  var build: String = js.native
+  var build: String
   
-  var buildUrl: String = js.native
+  var buildUrl: String
   
-  var commit: String = js.native
+  var commit: String
   
-  var isPr: Boolean = js.native
+  var isPr: Boolean
   
-  var job: String = js.native
+  var job: String
   
-  var jobUrl: String = js.native
+  var jobUrl: String
   
-  var name: `Travis CI` = js.native
+  var name: `Travis CI`
   
-  var pr: js.UndefOr[String] = js.native
+  var pr: js.UndefOr[String] = js.undefined
   
-  var prBranch: String = js.native
+  var prBranch: String
   
-  var root: String = js.native
+  var root: String
   
-  var service: travis = js.native
+  var service: travis
   
-  var slug: String = js.native
+  var slug: String
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object TravisEnv {
   
@@ -48,17 +46,14 @@ object TravisEnv {
     build: String,
     buildUrl: String,
     commit: String,
-    isCi: `true`,
     isPr: Boolean,
     job: String,
     jobUrl: String,
-    name: `Travis CI`,
     prBranch: String,
     root: String,
-    service: travis,
     slug: String
   ): TravisEnv = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], jobUrl = jobUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prBranch = prBranch.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], jobUrl = jobUrl.asInstanceOf[js.Any], name = "Travis CI", prBranch = prBranch.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = "travis", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[TravisEnv]
   }
   

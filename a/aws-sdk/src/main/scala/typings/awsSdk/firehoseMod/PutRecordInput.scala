@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRecordInput extends StObject {
   
   /**
     * The name of the delivery stream.
     */
-  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName = js.native
+  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName
   
   /**
     * The record.
     */
-  var Record: typings.awsSdk.firehoseMod.Record = js.native
+  var Record: typings.awsSdk.firehoseMod.Record
 }
 object PutRecordInput {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypedAttributeValue extends StObject {
   
   /**
     * A binary data value.
     */
-  var BinaryValue: js.UndefOr[BinaryAttributeValue] = js.native
+  var BinaryValue: js.UndefOr[BinaryAttributeValue] = js.undefined
   
   /**
     * A Boolean data value.
     */
-  var BooleanValue: js.UndefOr[BooleanAttributeValue] = js.native
+  var BooleanValue: js.UndefOr[BooleanAttributeValue] = js.undefined
   
   /**
     * A date and time value.
     */
-  var DatetimeValue: js.UndefOr[DatetimeAttributeValue] = js.native
+  var DatetimeValue: js.UndefOr[DatetimeAttributeValue] = js.undefined
   
   /**
     * A number data value.
     */
-  var NumberValue: js.UndefOr[NumberAttributeValue] = js.native
+  var NumberValue: js.UndefOr[NumberAttributeValue] = js.undefined
   
   /**
     * A string data value.
     */
-  var StringValue: js.UndefOr[StringAttributeValue] = js.native
+  var StringValue: js.UndefOr[StringAttributeValue] = js.undefined
 }
 object TypedAttributeValue {
   

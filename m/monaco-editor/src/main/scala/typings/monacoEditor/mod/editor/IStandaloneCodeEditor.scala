@@ -3,11 +3,12 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStandaloneCodeEditor extends ICodeEditor {
+trait IStandaloneCodeEditor
+  extends StObject
+     with ICodeEditor {
   
   def addAction(descriptor: IActionDescriptor): IDisposable = js.native
   

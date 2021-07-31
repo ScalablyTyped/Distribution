@@ -2,17 +2,15 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryRequestSql extends StObject {
   
   // list of named parameters
-  var parameters: js.UndefOr[js.Array[QueryParameter]] = js.native
+  var parameters: js.UndefOr[js.Array[QueryParameter]] = js.undefined
   
   // SQL query as a string
-  var query: String = js.native
+  var query: String
 }
 object QueryRequestSql {
   

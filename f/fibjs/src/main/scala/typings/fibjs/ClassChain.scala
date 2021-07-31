@@ -2,11 +2,12 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassChain extends ClassHandler {
+trait ClassChain
+  extends StObject
+     with ClassHandler {
   
   /**
     * 
@@ -16,7 +17,7 @@ trait ClassChain extends ClassHandler {
     * 
     * 
     */
-  def append(hdlrs: js.Array[_]): Unit = js.native
+  def append(hdlrs: js.Array[js.Any]): Unit = js.native
   /**
     * 
     * @brief 添加处理器

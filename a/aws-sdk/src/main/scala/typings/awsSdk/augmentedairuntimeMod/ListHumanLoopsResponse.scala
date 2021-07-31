@@ -2,21 +2,19 @@ package typings.awsSdk.augmentedairuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHumanLoopsResponse extends StObject {
   
   /**
     * An array of objects that contain information about the human loops.
     */
-  var HumanLoopSummaries: typings.awsSdk.augmentedairuntimeMod.HumanLoopSummaries = js.native
+  var HumanLoopSummaries: typings.awsSdk.augmentedairuntimeMod.HumanLoopSummaries
   
   /**
     * A token to display the next page of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.NextToken] = js.undefined
 }
 object ListHumanLoopsResponse {
   

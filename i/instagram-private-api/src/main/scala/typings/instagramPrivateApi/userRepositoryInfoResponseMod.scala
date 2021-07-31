@@ -2,22 +2,20 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userRepositoryInfoResponseMod {
   
-  @js.native
   trait UserRepositoryInfoResponseBiographyWithEntities extends StObject {
     
-    var entities: js.Array[_] = js.native
+    var entities: js.Array[js.Any]
     
-    var raw_text: String = js.native
+    var raw_text: String
   }
   object UserRepositoryInfoResponseBiographyWithEntities {
     
     @scala.inline
-    def apply(entities: js.Array[_], raw_text: String): UserRepositoryInfoResponseBiographyWithEntities = {
+    def apply(entities: js.Array[js.Any], raw_text: String): UserRepositoryInfoResponseBiographyWithEntities = {
       val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw_text = raw_text.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserRepositoryInfoResponseBiographyWithEntities]
     }
@@ -26,7 +24,7 @@ object userRepositoryInfoResponseMod {
     implicit class UserRepositoryInfoResponseBiographyWithEntitiesMutableBuilder[Self <: UserRepositoryInfoResponseBiographyWithEntities] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEntities(value: js.Array[_]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+      def setEntities(value: js.Array[js.Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
@@ -36,14 +34,13 @@ object userRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait UserRepositoryInfoResponseHdProfilePicUrlInfo extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object UserRepositoryInfoResponseHdProfilePicUrlInfo {
     
@@ -67,14 +64,13 @@ object userRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait UserRepositoryInfoResponseHdProfilePicVersionsItem extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object UserRepositoryInfoResponseHdProfilePicVersionsItem {
     
@@ -98,16 +94,15 @@ object userRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait UserRepositoryInfoResponseNametag extends StObject {
     
-    var emoji: String = js.native
+    var emoji: String
     
-    var gradient: String = js.native
+    var gradient: String
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var selfie_sticker: String = js.native
+    var selfie_sticker: String
   }
   object UserRepositoryInfoResponseNametag {
     
@@ -134,12 +129,11 @@ object userRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait UserRepositoryInfoResponseRootObject extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var user: UserRepositoryInfoResponseUser = js.native
+    var user: UserRepositoryInfoResponseUser
   }
   object UserRepositoryInfoResponseRootObject {
     
@@ -160,140 +154,139 @@ object userRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait UserRepositoryInfoResponseUser extends StObject {
     
-    var account_type: Double = js.native
+    var account_type: Double
     
-    var address_street: js.UndefOr[String] = js.native
+    var address_street: js.UndefOr[String] = js.undefined
     
-    var aggregate_promote_engagement: Boolean = js.native
+    var aggregate_promote_engagement: Boolean
     
-    var allowed_commenter_type: String = js.native
+    var allowed_commenter_type: String
     
-    var auto_expand_chaining: Boolean = js.native
+    var auto_expand_chaining: Boolean
     
-    var besties_count: Double = js.native
+    var besties_count: Double
     
-    var biography: String = js.native
+    var biography: String
     
-    var biography_with_entities: UserRepositoryInfoResponseBiographyWithEntities = js.native
+    var biography_with_entities: UserRepositoryInfoResponseBiographyWithEntities
     
-    var can_be_reported_as_fraud: Boolean = js.native
+    var can_be_reported_as_fraud: Boolean
     
-    var can_be_tagged_as_sponsor: Boolean = js.native
+    var can_be_tagged_as_sponsor: Boolean
     
-    var can_boost_post: Boolean = js.native
+    var can_boost_post: Boolean
     
-    var can_convert_to_business: Boolean = js.native
+    var can_convert_to_business: Boolean
     
-    var can_create_sponsor_tags: Boolean = js.native
+    var can_create_sponsor_tags: Boolean
     
-    var can_follow_hashtag: Boolean = js.native
+    var can_follow_hashtag: Boolean
     
-    var can_link_entities_in_bio: Boolean = js.native
+    var can_link_entities_in_bio: Boolean
     
-    var can_see_organic_insights: Boolean = js.native
+    var can_see_organic_insights: Boolean
     
-    var can_tag_products_from_merchants: Boolean = js.native
+    var can_tag_products_from_merchants: Boolean
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var contact_phone_number: js.UndefOr[String] = js.native
+    var contact_phone_number: js.UndefOr[String] = js.undefined
     
-    var external_url: String = js.native
+    var external_url: String
     
-    var feed_post_reshare_disabled: Boolean = js.native
+    var feed_post_reshare_disabled: Boolean
     
-    var follower_count: Double = js.native
+    var follower_count: Double
     
-    var following_count: Double = js.native
+    var following_count: Double
     
-    var following_tag_count: Double = js.native
+    var following_tag_count: Double
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var geo_media_count: Double = js.native
+    var geo_media_count: Double
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var has_biography_translation: Boolean = js.native
+    var has_biography_translation: Boolean
     
-    var has_chaining: Boolean = js.native
+    var has_chaining: Boolean
     
-    var has_highlight_reels: Boolean = js.native
+    var has_highlight_reels: Boolean
     
-    var has_placed_orders: Boolean = js.native
+    var has_placed_orders: Boolean
     
-    var has_profile_video_feed: Boolean = js.native
+    var has_profile_video_feed: Boolean
     
-    var has_recommend_accounts: Boolean = js.native
+    var has_recommend_accounts: Boolean
     
-    var hd_profile_pic_url_info: UserRepositoryInfoResponseHdProfilePicUrlInfo = js.native
+    var hd_profile_pic_url_info: UserRepositoryInfoResponseHdProfilePicUrlInfo
     
-    var hd_profile_pic_versions: js.Array[UserRepositoryInfoResponseHdProfilePicVersionsItem] = js.native
+    var hd_profile_pic_versions: js.Array[UserRepositoryInfoResponseHdProfilePicVersionsItem]
     
-    var highlight_reshare_disabled: Boolean = js.native
+    var highlight_reshare_disabled: Boolean
     
-    var include_direct_blacklist_status: Boolean = js.native
+    var include_direct_blacklist_status: Boolean
     
-    var is_business: Boolean = js.native
+    var is_business: Boolean
     
-    var is_call_to_action_enabled: Null = js.native
+    var is_call_to_action_enabled: Null
     
-    var is_eligible_to_show_fb_cross_sharing_nux: Boolean = js.native
+    var is_eligible_to_show_fb_cross_sharing_nux: Boolean
     
-    var is_interest_account: Boolean = js.native
+    var is_interest_account: Boolean
     
-    var is_needy: Boolean = js.native
+    var is_needy: Boolean
     
-    var is_potential_business: Boolean = js.native
+    var is_potential_business: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_profile_action_needed: Boolean = js.native
+    var is_profile_action_needed: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var is_video_creator: Boolean = js.native
+    var is_video_creator: Boolean
     
-    var media_count: Double = js.native
+    var media_count: Double
     
-    var nametag: UserRepositoryInfoResponseNametag = js.native
+    var nametag: UserRepositoryInfoResponseNametag
     
-    var page_id_for_new_suma_biz_account: Null = js.native
+    var page_id_for_new_suma_biz_account: Null
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var public_email: js.UndefOr[String] = js.native
+    var public_email: js.UndefOr[String] = js.undefined
     
-    var public_phone_country_code: js.UndefOr[String] = js.native
+    var public_phone_country_code: js.UndefOr[String] = js.undefined
     
-    var recently_bestied_by_count: Double = js.native
+    var recently_bestied_by_count: Double
     
-    var reel_auto_archive: String = js.native
+    var reel_auto_archive: String
     
-    var show_besties_badge: Boolean = js.native
+    var show_besties_badge: Boolean
     
-    var show_business_conversion_icon: Boolean = js.native
+    var show_business_conversion_icon: Boolean
     
-    var show_conversion_edit_entry: Boolean = js.native
+    var show_conversion_edit_entry: Boolean
     
-    var show_insights_terms: Boolean = js.native
+    var show_insights_terms: Boolean
     
-    var total_ar_effects: Double = js.native
+    var total_ar_effects: Double
     
-    var total_igtv_videos: Double = js.native
+    var total_igtv_videos: Double
     
-    var username: String = js.native
+    var username: String
     
-    var usertag_review_enabled: Boolean = js.native
+    var usertag_review_enabled: Boolean
     
-    var usertags_count: Double = js.native
+    var usertags_count: Double
   }
   object UserRepositoryInfoResponseUser {
     

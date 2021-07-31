@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,12 +18,11 @@ object mod extends Shortcut {
   @js.native
   val cptable: CPModule = js.native
   
-  @js.native
   trait CPConv extends StObject {
     
-    var dec: NumberDictionary[String] = js.native
+    var dec: NumberDictionary[String]
     
-    var enc: StringDictionary[Double] = js.native
+    var enc: StringDictionary[Double]
   }
   object CPConv {
     
@@ -49,15 +47,16 @@ object mod extends Shortcut {
   
   type CPIndex = Double | String
   
-  @js.native
-  trait CPModule extends /** Codepage Converters */
+  trait CPModule
+    extends StObject
+       with /** Codepage Converters */
   /* cp */ NumberDictionary[CPConv] {
     
     /** Utility Functions */
-    var utils: CPUtils = js.native
+    var utils: CPUtils
     
     /** Version string */
-    var version: String = js.native
+    var version: String
   }
   object CPModule {
     

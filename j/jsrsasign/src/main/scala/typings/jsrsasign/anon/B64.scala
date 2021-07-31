@@ -2,13 +2,11 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait B64 extends StObject {
   
-  var b64: String = js.native
+  var b64: String
 }
 object B64 {
   

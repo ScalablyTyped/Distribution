@@ -2,25 +2,23 @@ package typings.reactNativeFirebase.mod.RNFirebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneAuthError extends StObject {
   
-  var code: String | Null = js.native
+  var code: String | Null
   
-  var message: String | Null = js.native
+  var message: String | Null
   
-  var stack: String | Null = js.native
+  var stack: String | Null
   
-  var verificationId: String = js.native
+  var verificationId: String
 }
 object PhoneAuthError {
   
   @scala.inline
   def apply(verificationId: String): PhoneAuthError = {
-    val __obj = js.Dynamic.literal(verificationId = verificationId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(verificationId = verificationId.asInstanceOf[js.Any], code = null, message = null, stack = null)
     __obj.asInstanceOf[PhoneAuthError]
   }
   

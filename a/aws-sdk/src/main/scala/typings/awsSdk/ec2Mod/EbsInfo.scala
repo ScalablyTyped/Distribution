@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EbsInfo extends StObject {
   
   /**
     * Describes the optimized EBS performance for the instance type.
     */
-  var EbsOptimizedInfo: js.UndefOr[typings.awsSdk.ec2Mod.EbsOptimizedInfo] = js.native
+  var EbsOptimizedInfo: js.UndefOr[typings.awsSdk.ec2Mod.EbsOptimizedInfo] = js.undefined
   
   /**
     * Indicates whether the instance type is Amazon EBS-optimized. For more information, see Amazon EBS-Optimized Instances in Amazon EC2 User Guide for Linux Instances.
     */
-  var EbsOptimizedSupport: js.UndefOr[typings.awsSdk.ec2Mod.EbsOptimizedSupport] = js.native
+  var EbsOptimizedSupport: js.UndefOr[typings.awsSdk.ec2Mod.EbsOptimizedSupport] = js.undefined
   
   /**
     * Indicates whether Amazon EBS encryption is supported.
     */
-  var EncryptionSupport: js.UndefOr[EbsEncryptionSupport] = js.native
+  var EncryptionSupport: js.UndefOr[EbsEncryptionSupport] = js.undefined
   
   /**
     * Indicates whether non-volatile memory express (NVMe) is supported.
     */
-  var NvmeSupport: js.UndefOr[EbsNvmeSupport] = js.native
+  var NvmeSupport: js.UndefOr[EbsNvmeSupport] = js.undefined
 }
 object EbsInfo {
   

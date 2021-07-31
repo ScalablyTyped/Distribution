@@ -2,31 +2,29 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserRequestItem extends StObject {
   
   /**
     * The Alexa for Business metadata.
     */
-  var AlexaForBusinessMetadata: js.UndefOr[typings.awsSdk.chimeMod.AlexaForBusinessMetadata] = js.native
+  var AlexaForBusinessMetadata: js.UndefOr[typings.awsSdk.chimeMod.AlexaForBusinessMetadata] = js.undefined
   
   /**
     * The user license type.
     */
-  var LicenseType: js.UndefOr[License] = js.native
+  var LicenseType: js.UndefOr[License] = js.undefined
   
   /**
     * The user ID.
     */
-  var UserId: NonEmptyString = js.native
+  var UserId: NonEmptyString
   
   /**
     * The user type.
     */
-  var UserType: js.UndefOr[typings.awsSdk.chimeMod.UserType] = js.native
+  var UserType: js.UndefOr[typings.awsSdk.chimeMod.UserType] = js.undefined
 }
 object UpdateUserRequestItem {
   

@@ -3,7 +3,6 @@ package typings.chayns
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,18 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interfaces
   */
 // chayns.saveAppointment()
-@js.native
 trait SaveAppointmentConfig extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var end: Date = js.native
+  var end: Date
   
-  var location: String = js.native
+  var location: String
   
-  var name: String = js.native
+  var name: String
   
-  var start: Date = js.native
+  var start: Date
 }
 object SaveAppointmentConfig {
   

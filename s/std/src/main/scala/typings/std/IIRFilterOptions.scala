@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IIRFilterOptions extends AudioNodeOptions {
+trait IIRFilterOptions
+  extends StObject
+     with AudioNodeOptions {
   
-  var feedback: js.Array[Double] = js.native
+  var feedback: js.Array[Double]
   
-  var feedforward: js.Array[Double] = js.native
+  var feedforward: js.Array[Double]
 }
 object IIRFilterOptions {
   

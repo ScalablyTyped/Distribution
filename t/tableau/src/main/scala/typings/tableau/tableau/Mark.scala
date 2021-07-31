@@ -2,7 +2,6 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A mark represents a single data point on the visualization.
   * It is independent of the type of visualization (bar, line, pie, etc.).
   */
-@js.native
 trait Mark extends StObject {
   
   /** Gets a collection of field name/value pairs associated with the mark. */
-  def getPairs(): js.Array[Pair] = js.native
+  def getPairs(): js.Array[Pair]
 }
 object Mark {
   

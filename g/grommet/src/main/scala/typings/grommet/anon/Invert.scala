@@ -2,13 +2,11 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invert extends StObject {
   
-  var invert: js.UndefOr[`3`] = js.native
+  var invert: js.UndefOr[`3`] = js.undefined
 }
 object Invert {
   

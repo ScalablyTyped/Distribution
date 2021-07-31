@@ -2,13 +2,11 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrMsg extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object ErrMsg {
   

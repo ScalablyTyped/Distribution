@@ -9,13 +9,11 @@ import typings.queryString.queryStringStrings.none
 import typings.queryString.queryStringStrings.separator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined {  parseBooleans :true} & query-string.query-string.ParseOptions */
-  @js.native
   trait parseBooleanstrueParseOpt extends StObject {
     
     /**
@@ -51,19 +49,19 @@ object anon {
     		//=> {foo: ['1', '2', '3']}
     		```
     	*/
-    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.native
+    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.undefined
     
     /**
     	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
     	@default ,
     	*/
-    val arrayFormatSeparator: js.UndefOr[String] = js.native
+    val arrayFormatSeparator: js.UndefOr[String] = js.undefined
     
     /**
     	Decode the keys and values. URI components are decoded with [`decode-uri-component`](https://github.com/SamVerschueren/decode-uri-component).
     	@default true
     	*/
-    val decode: js.UndefOr[Boolean] = js.native
+    val decode: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Parse the value as a boolean type instead of string type if it's a boolean.
@@ -75,7 +73,7 @@ object anon {
     	//=> {foo: true}
     	```
     	*/
-    var parseBooleans: `true` with js.UndefOr[Boolean] = js.native
+    var parseBooleans: `true` & js.UndefOr[Boolean]
     
     /**
     	Parse the fragment identifier from the URL and add it to result object.
@@ -87,7 +85,7 @@ object anon {
     	//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
     	```
     	*/
-    val parseFragmentIdentifier: js.UndefOr[Boolean] = js.native
+    val parseFragmentIdentifier: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Parse the value as a number type instead of string type if it's a number.
@@ -99,7 +97,7 @@ object anon {
     	//=> {foo: 1}
     	```
     	*/
-    val parseNumbers: js.UndefOr[Boolean] = js.native
+    val parseNumbers: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Supports both `Function` as a custom sorting function or `false` to disable sorting.
@@ -121,12 +119,12 @@ object anon {
     	//=> {a: 'one', c: 'three', b: 'two'}
     	```
     	*/
-    val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.native
+    val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.undefined
   }
   object parseBooleanstrueParseOpt {
     
     @scala.inline
-    def apply(parseBooleans: `true` with js.UndefOr[Boolean]): parseBooleanstrueParseOpt = {
+    def apply(parseBooleans: `true` & js.UndefOr[Boolean]): parseBooleanstrueParseOpt = {
       val __obj = js.Dynamic.literal(parseBooleans = parseBooleans.asInstanceOf[js.Any])
       __obj.asInstanceOf[parseBooleanstrueParseOpt]
     }
@@ -153,7 +151,7 @@ object anon {
       def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
       
       @scala.inline
-      def setParseBooleans(value: `true` with js.UndefOr[Boolean]): Self = StObject.set(x, "parseBooleans", value.asInstanceOf[js.Any])
+      def setParseBooleans(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseBooleans", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParseFragmentIdentifier(value: Boolean): Self = StObject.set(x, "parseFragmentIdentifier", value.asInstanceOf[js.Any])
@@ -179,7 +177,6 @@ object anon {
   }
   
   /* Inlined {  parseBooleans :true,   parseNumbers :true} & query-string.query-string.ParseOptions */
-  @js.native
   trait parseBooleanstrueparseNum extends StObject {
     
     /**
@@ -215,19 +212,19 @@ object anon {
     		//=> {foo: ['1', '2', '3']}
     		```
     	*/
-    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.native
+    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.undefined
     
     /**
     	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
     	@default ,
     	*/
-    val arrayFormatSeparator: js.UndefOr[String] = js.native
+    val arrayFormatSeparator: js.UndefOr[String] = js.undefined
     
     /**
     	Decode the keys and values. URI components are decoded with [`decode-uri-component`](https://github.com/SamVerschueren/decode-uri-component).
     	@default true
     	*/
-    val decode: js.UndefOr[Boolean] = js.native
+    val decode: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Parse the value as a boolean type instead of string type if it's a boolean.
@@ -239,7 +236,7 @@ object anon {
     	//=> {foo: true}
     	```
     	*/
-    var parseBooleans: `true` with js.UndefOr[Boolean] = js.native
+    var parseBooleans: `true` & js.UndefOr[Boolean]
     
     /**
     	Parse the fragment identifier from the URL and add it to result object.
@@ -251,7 +248,7 @@ object anon {
     	//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
     	```
     	*/
-    val parseFragmentIdentifier: js.UndefOr[Boolean] = js.native
+    val parseFragmentIdentifier: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Parse the value as a number type instead of string type if it's a number.
@@ -263,7 +260,7 @@ object anon {
     	//=> {foo: 1}
     	```
     	*/
-    var parseNumbers: `true` with js.UndefOr[Boolean] = js.native
+    var parseNumbers: `true` & js.UndefOr[Boolean]
     
     /**
     	Supports both `Function` as a custom sorting function or `false` to disable sorting.
@@ -285,12 +282,12 @@ object anon {
     	//=> {a: 'one', c: 'three', b: 'two'}
     	```
     	*/
-    val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.native
+    val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.undefined
   }
   object parseBooleanstrueparseNum {
     
     @scala.inline
-    def apply(parseBooleans: `true` with js.UndefOr[Boolean], parseNumbers: `true` with js.UndefOr[Boolean]): parseBooleanstrueparseNum = {
+    def apply(parseBooleans: `true` & js.UndefOr[Boolean], parseNumbers: `true` & js.UndefOr[Boolean]): parseBooleanstrueparseNum = {
       val __obj = js.Dynamic.literal(parseBooleans = parseBooleans.asInstanceOf[js.Any], parseNumbers = parseNumbers.asInstanceOf[js.Any])
       __obj.asInstanceOf[parseBooleanstrueparseNum]
     }
@@ -317,7 +314,7 @@ object anon {
       def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
       
       @scala.inline
-      def setParseBooleans(value: `true` with js.UndefOr[Boolean]): Self = StObject.set(x, "parseBooleans", value.asInstanceOf[js.Any])
+      def setParseBooleans(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseBooleans", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParseFragmentIdentifier(value: Boolean): Self = StObject.set(x, "parseFragmentIdentifier", value.asInstanceOf[js.Any])
@@ -326,7 +323,7 @@ object anon {
       def setParseFragmentIdentifierUndefined: Self = StObject.set(x, "parseFragmentIdentifier", js.undefined)
       
       @scala.inline
-      def setParseNumbers(value: `true` with js.UndefOr[Boolean]): Self = StObject.set(x, "parseNumbers", value.asInstanceOf[js.Any])
+      def setParseNumbers(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseNumbers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSort(value: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
@@ -340,7 +337,6 @@ object anon {
   }
   
   /* Inlined {  parseNumbers :true} & query-string.query-string.ParseOptions */
-  @js.native
   trait parseNumberstrueParseOpti extends StObject {
     
     /**
@@ -376,19 +372,19 @@ object anon {
     		//=> {foo: ['1', '2', '3']}
     		```
     	*/
-    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.native
+    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.undefined
     
     /**
     	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
     	@default ,
     	*/
-    val arrayFormatSeparator: js.UndefOr[String] = js.native
+    val arrayFormatSeparator: js.UndefOr[String] = js.undefined
     
     /**
     	Decode the keys and values. URI components are decoded with [`decode-uri-component`](https://github.com/SamVerschueren/decode-uri-component).
     	@default true
     	*/
-    val decode: js.UndefOr[Boolean] = js.native
+    val decode: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Parse the value as a boolean type instead of string type if it's a boolean.
@@ -400,7 +396,7 @@ object anon {
     	//=> {foo: true}
     	```
     	*/
-    val parseBooleans: js.UndefOr[Boolean] = js.native
+    val parseBooleans: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Parse the fragment identifier from the URL and add it to result object.
@@ -412,7 +408,7 @@ object anon {
     	//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
     	```
     	*/
-    val parseFragmentIdentifier: js.UndefOr[Boolean] = js.native
+    val parseFragmentIdentifier: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Parse the value as a number type instead of string type if it's a number.
@@ -424,7 +420,7 @@ object anon {
     	//=> {foo: 1}
     	```
     	*/
-    var parseNumbers: `true` with js.UndefOr[Boolean] = js.native
+    var parseNumbers: `true` & js.UndefOr[Boolean]
     
     /**
     	Supports both `Function` as a custom sorting function or `false` to disable sorting.
@@ -446,12 +442,12 @@ object anon {
     	//=> {a: 'one', c: 'three', b: 'two'}
     	```
     	*/
-    val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.native
+    val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.undefined
   }
   object parseNumberstrueParseOpti {
     
     @scala.inline
-    def apply(parseNumbers: `true` with js.UndefOr[Boolean]): parseNumberstrueParseOpti = {
+    def apply(parseNumbers: `true` & js.UndefOr[Boolean]): parseNumberstrueParseOpti = {
       val __obj = js.Dynamic.literal(parseNumbers = parseNumbers.asInstanceOf[js.Any])
       __obj.asInstanceOf[parseNumberstrueParseOpti]
     }
@@ -490,7 +486,7 @@ object anon {
       def setParseFragmentIdentifierUndefined: Self = StObject.set(x, "parseFragmentIdentifier", js.undefined)
       
       @scala.inline
-      def setParseNumbers(value: `true` with js.UndefOr[Boolean]): Self = StObject.set(x, "parseNumbers", value.asInstanceOf[js.Any])
+      def setParseNumbers(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseNumbers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSort(value: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])

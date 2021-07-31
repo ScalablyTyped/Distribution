@@ -2,25 +2,23 @@ package typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the progress of the operation. Unit of work is generic and must
   * be interpreted based on where Progress is used.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta2Progress extends StObject {
   
   /**
     * The amount of work completed.
     */
-  var completedWork: js.UndefOr[String] = js.native
+  var completedWork: js.UndefOr[String] = js.undefined
   
   /**
     * The amount of work estimated.
     */
-  var estimatedWork: js.UndefOr[String] = js.native
+  var estimatedWork: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta2Progress {
   

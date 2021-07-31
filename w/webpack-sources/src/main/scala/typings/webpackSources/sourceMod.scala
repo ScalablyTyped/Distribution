@@ -8,7 +8,6 @@ import typings.webpackSources.libMod.MapOptions
 import typings.webpackSources.libMod.SourceAndMapResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceMod {
@@ -19,7 +18,9 @@ object sourceMod {
     */
   @JSImport("webpack-sources/lib/Source", JSImport.Namespace)
   @js.native
-  abstract class ^ () extends Source
+  abstract class ^ ()
+    extends StObject
+       with Source
   
   /**
     * Base class for all sources.

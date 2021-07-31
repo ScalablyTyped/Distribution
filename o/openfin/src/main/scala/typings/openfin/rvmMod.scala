@@ -2,25 +2,23 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rvmMod {
   
-  @js.native
   trait RVMInfo extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var appLogDirectory: String = js.native
+    var appLogDirectory: String
     
-    var path: String = js.native
+    var path: String
     
-    var `start-time`: String = js.native
+    var `start-time`: String
     
-    var version: String = js.native
+    var version: String
     
-    var `working-dir`: String = js.native
+    var `working-dir`: String
   }
   object RVMInfo {
     

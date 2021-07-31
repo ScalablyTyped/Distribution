@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddHeaderAction extends StObject {
   
   /**
     * The name of the header to add. Must be between 1 and 50 characters, inclusive, and consist of alphanumeric (a-z, A-Z, 0-9) characters and dashes only.
     */
-  var HeaderName: typings.awsSdk.sesMod.HeaderName = js.native
+  var HeaderName: typings.awsSdk.sesMod.HeaderName
   
   /**
     * Must be less than 2048 characters, and must not contain newline characters ("\r" or "\n").
     */
-  var HeaderValue: typings.awsSdk.sesMod.HeaderValue = js.native
+  var HeaderValue: typings.awsSdk.sesMod.HeaderValue
 }
 object AddHeaderAction {
   

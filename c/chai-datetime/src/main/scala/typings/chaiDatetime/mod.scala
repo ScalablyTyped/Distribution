@@ -5,7 +5,6 @@ import typings.chai.Chai.ChaiPlugin
 import typings.chaiDatetime.mod.global.Chai.Assertion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -78,26 +77,25 @@ object mod extends Shortcut {
         def withinTime(`val`: Date, expFrom: Date, expTo: Date, msg: String): Unit = js.native
       }
       
-      @js.native
       trait Assertion extends StObject {
         
-        def afterDate(date: Date): Assertion = js.native
+        def afterDate(date: Date): Assertion
         
-        def afterTime(date: Date): Assertion = js.native
+        def afterTime(date: Date): Assertion
         
-        def beforeDate(date: Date): Assertion = js.native
+        def beforeDate(date: Date): Assertion
         
-        def beforeTime(date: Date): Assertion = js.native
+        def beforeTime(date: Date): Assertion
         
-        def closeToTime(date: Date, deltaInSeconds: Double): Assertion = js.native
+        def closeToTime(date: Date, deltaInSeconds: Double): Assertion
         
-        def equalDate(date: Date): Assertion = js.native
+        def equalDate(date: Date): Assertion
         
-        def equalTime(date: Date): Assertion = js.native
+        def equalTime(date: Date): Assertion
         
-        def withinDate(dateFrom: Date, dateTo: Date): Assertion = js.native
+        def withinDate(dateFrom: Date, dateTo: Date): Assertion
         
-        def withinTime(dateFrom: Date, dateTo: Date): Assertion = js.native
+        def withinTime(dateFrom: Date, dateTo: Date): Assertion
       }
       object Assertion {
         
@@ -150,10 +148,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Date extends StObject {
       
-      var should: Assertion = js.native
+      var should: Assertion
     }
     object Date {
       

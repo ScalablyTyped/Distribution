@@ -2,46 +2,44 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PredictorSummary extends StObject {
   
   /**
     * When the model training task was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group that contains the data used to train the predictor.
     */
-  var DatasetGroupArn: js.UndefOr[Arn] = js.native
+  var DatasetGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Initially, the same as CreationTime (status is CREATE_PENDING). Updated when training starts (status changed to CREATE_IN_PROGRESS), and when training is complete (status changed to ACTIVE) or fails (status changed to CREATE_FAILED).
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.native
+  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If an error occurred, an informational message about the error.
     */
-  var Message: js.UndefOr[ErrorMessage] = js.native
+  var Message: js.UndefOr[ErrorMessage] = js.undefined
   
   /**
     * The ARN of the predictor.
     */
-  var PredictorArn: js.UndefOr[Arn] = js.native
+  var PredictorArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the predictor.
     */
-  var PredictorName: js.UndefOr[Name] = js.native
+  var PredictorName: js.UndefOr[Name] = js.undefined
   
   /**
     * The status of the predictor. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     UPDATE_PENDING, UPDATE_IN_PROGRESS, UPDATE_FAILED     The Status of the predictor must be ACTIVE before you can use the predictor to create a forecast. 
     */
-  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
 }
 object PredictorSummary {
   

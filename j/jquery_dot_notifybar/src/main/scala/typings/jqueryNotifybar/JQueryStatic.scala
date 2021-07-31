@@ -3,7 +3,6 @@ package typings.jqueryNotifybar
 import typings.jqueryNotifybar.JQueryNotifyBar.NotifyBarOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

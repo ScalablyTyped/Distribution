@@ -3,20 +3,18 @@ package typings.stripe.mod.charges
 import typings.stripe.stripeStrings.multibanco
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMultibancoPaymentMethodDetails extends StObject {
   
-  var `type`: multibanco = js.native
+  var `type`: multibanco
 }
 object IMultibancoPaymentMethodDetails {
   
   @scala.inline
-  def apply(`type`: multibanco): IMultibancoPaymentMethodDetails = {
+  def apply(): IMultibancoPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("multibanco")
     __obj.asInstanceOf[IMultibancoPaymentMethodDetails]
   }
   

@@ -2,19 +2,17 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactInstanceData extends StObject {
   
-  var accountName: String = js.native
+  var accountName: String
   
-  var authenticationToken: String = js.native
+  var authenticationToken: String
   
-  var tfsUrl: String = js.native
+  var tfsUrl: String
   
-  var version: String = js.native
+  var version: String
 }
 object ArtifactInstanceData {
   

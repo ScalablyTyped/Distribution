@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.backend.XMultiLayerStratum
   * @since OOo 1.1.2
   */
-@js.native
-trait XSingleLayerStratum extends XInterface {
+trait XSingleLayerStratum
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the layer data for a component, if newer than indicated.
@@ -30,7 +30,7 @@ trait XSingleLayerStratum extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the component identifier is invalid or if the timestamp is invalid.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def getLayer(aComponent: String, aTimestamp: String): XLayer = js.native
+  def getLayer(aComponent: String, aTimestamp: String): XLayer
   
   /**
     * retrieves a writable representation of the layer for a component.
@@ -40,7 +40,7 @@ trait XSingleLayerStratum extends XInterface {
     * @throws com::sun::star::lang::NoSupportException if the implementation does not support updates.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def getUpdatableLayer(aComponent: String): XUpdatableLayer = js.native
+  def getUpdatableLayer(aComponent: String): XUpdatableLayer
 }
 object XSingleLayerStratum {
   

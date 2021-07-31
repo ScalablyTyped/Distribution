@@ -2,16 +2,14 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutTraceSegmentsRequest extends StObject {
   
   /**
     * A string containing a JSON document defining one or more segments or subsegments.
     */
-  var TraceSegmentDocuments: TraceSegmentDocumentList = js.native
+  var TraceSegmentDocuments: TraceSegmentDocumentList
 }
 object PutTraceSegmentsRequest {
   

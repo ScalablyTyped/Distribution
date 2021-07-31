@@ -4,25 +4,26 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorListMod {
   
-  @JSImport("antd/lib/form/ErrorList", JSImport.Default)
+  @JSImport("antd/lib/form/ErrorList", JSImport.Namespace)
   @js.native
-  def default(hasErrorsHelpOnDomErrorVisibleChange: ErrorListProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasErrorsHelpOnDomErrorVisibleChange: ErrorListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasErrorsHelpOnDomErrorVisibleChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait ErrorListProps extends StObject {
     
-    var errors: js.UndefOr[js.Array[ReactNode]] = js.native
+    var errors: js.UndefOr[js.Array[ReactNode]] = js.undefined
     
     /** @private Internal usage. Do not use in your production */
-    var help: js.UndefOr[ReactNode] = js.native
+    var help: js.UndefOr[ReactNode] = js.undefined
     
     /** @private Internal usage. Do not use in your production */
-    var onDomErrorVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onDomErrorVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
   }
   object ErrorListProps {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGroupResult extends StObject {
   
   /**
     * The group that was created. Contains the name of the group that was created, the Amazon Resource Name (ARN) of the group that was generated based on the group name, the filter expression, and the insight configuration that was assigned to the group.
     */
-  var Group: js.UndefOr[typings.awsSdk.xrayMod.Group] = js.native
+  var Group: js.UndefOr[typings.awsSdk.xrayMod.Group] = js.undefined
 }
 object CreateGroupResult {
   

@@ -2,7 +2,6 @@ package typings.relayRuntime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayFeatureFlagsMod {
@@ -11,16 +10,15 @@ object relayFeatureFlagsMod {
   @js.native
   val RelayFeatureFlags: FeatureFlags = js.native
   
-  @js.native
   trait FeatureFlags extends StObject {
     
-    var ENABLE_PARTIAL_RENDERING_DEFAULT: Boolean = js.native
+    var ENABLE_PARTIAL_RENDERING_DEFAULT: Boolean
     
-    var ENABLE_RELAY_CONTAINERS_SUSPENSE: Boolean = js.native
+    var ENABLE_RELAY_CONTAINERS_SUSPENSE: Boolean
     
-    var ENABLE_UNIQUE_MUTATION_ROOT: Boolean = js.native
+    var ENABLE_UNIQUE_MUTATION_ROOT: Boolean
     
-    var ENABLE_VARIABLE_CONNECTION_KEY: Boolean = js.native
+    var ENABLE_VARIABLE_CONNECTION_KEY: Boolean
   }
   object FeatureFlags {
     

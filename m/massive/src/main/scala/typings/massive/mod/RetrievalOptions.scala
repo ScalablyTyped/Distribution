@@ -2,23 +2,21 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetrievalOptions extends StObject {
   
-  var exprs: js.UndefOr[AnyObject[String]] = js.native
+  var exprs: js.UndefOr[AnyObject[String]] = js.undefined
   
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var order: js.UndefOr[js.Array[OrderingOptions]] = js.native
+  var order: js.UndefOr[js.Array[OrderingOptions]] = js.undefined
   
-  var pageLength: js.UndefOr[Double] = js.native
+  var pageLength: js.UndefOr[Double] = js.undefined
 }
 object RetrievalOptions {
   

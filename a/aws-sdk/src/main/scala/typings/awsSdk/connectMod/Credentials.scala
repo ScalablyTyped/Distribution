@@ -2,31 +2,29 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Credentials extends StObject {
   
   /**
     * An access token generated for a federated user to access Amazon Connect.
     */
-  var AccessToken: js.UndefOr[SecurityToken] = js.native
+  var AccessToken: js.UndefOr[SecurityToken] = js.undefined
   
   /**
     * A token generated with an expiration time for the session a user is logged in to Amazon Connect.
     */
-  var AccessTokenExpiration: js.UndefOr[timestamp] = js.native
+  var AccessTokenExpiration: js.UndefOr[timestamp] = js.undefined
   
   /**
     * Renews a token generated for a user to access the Amazon Connect instance.
     */
-  var RefreshToken: js.UndefOr[SecurityToken] = js.native
+  var RefreshToken: js.UndefOr[SecurityToken] = js.undefined
   
   /**
     * Renews the expiration timer for a generated token.
     */
-  var RefreshTokenExpiration: js.UndefOr[timestamp] = js.native
+  var RefreshTokenExpiration: js.UndefOr[timestamp] = js.undefined
 }
 object Credentials {
   

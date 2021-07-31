@@ -2,46 +2,44 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostCommentForComparedCommitOutput extends StObject {
   
   /**
     * In the directionality you established, the blob ID of the after blob.
     */
-  var afterBlobId: js.UndefOr[ObjectId] = js.native
+  var afterBlobId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * In the directionality you established, the full commit ID of the after commit.
     */
-  var afterCommitId: js.UndefOr[CommitId] = js.native
+  var afterCommitId: js.UndefOr[CommitId] = js.undefined
   
   /**
     * In the directionality you established, the blob ID of the before blob.
     */
-  var beforeBlobId: js.UndefOr[ObjectId] = js.native
+  var beforeBlobId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * In the directionality you established, the full commit ID of the before commit.
     */
-  var beforeCommitId: js.UndefOr[CommitId] = js.native
+  var beforeCommitId: js.UndefOr[CommitId] = js.undefined
   
   /**
     * The content of the comment you posted.
     */
-  var comment: js.UndefOr[Comment] = js.native
+  var comment: js.UndefOr[Comment] = js.undefined
   
   /**
     * The location of the comment in the comparison between the two commits.
     */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /**
     * The name of the repository where you posted a comment on the comparison between commits.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object PostCommentForComparedCommitOutput {
   

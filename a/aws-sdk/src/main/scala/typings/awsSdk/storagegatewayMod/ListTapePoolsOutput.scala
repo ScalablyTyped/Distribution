@@ -2,21 +2,19 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTapePoolsOutput extends StObject {
   
   /**
     * A string that indicates the position at which to begin the returned list of tape pools. Use the marker in your next request to continue pagination of tape pools. If there are no more tape pools to list, this element does not appear in the response body. 
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
   
   /**
     * An array of PoolInfo objects, where each object describes a single custom tape pool. If there are no custom tape pools, the PoolInfos is an empty array. 
     */
-  var PoolInfos: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolInfos] = js.native
+  var PoolInfos: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolInfos] = js.undefined
 }
 object ListTapePoolsOutput {
   

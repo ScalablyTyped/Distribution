@@ -2,7 +2,6 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,38 +11,62 @@ sealed trait EasRequireEncryptionResult extends StObject
 object EasRequireEncryptionResult extends StObject {
   
   @js.native
-  sealed trait canBeCompliant extends EasRequireEncryptionResult
+  sealed trait canBeCompliant
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait compliant extends EasRequireEncryptionResult
+  sealed trait compliant
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deFixedDataNotSupported extends EasRequireEncryptionResult
+  sealed trait deFixedDataNotSupported
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deHardwareNotCompliant extends EasRequireEncryptionResult
+  sealed trait deHardwareNotCompliant
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deOsVolumeNotProtected extends EasRequireEncryptionResult
+  sealed trait deOsVolumeNotProtected
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deProtectionNotYetEnabled extends EasRequireEncryptionResult
+  sealed trait deProtectionNotYetEnabled
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deProtectionSuspended extends EasRequireEncryptionResult
+  sealed trait deProtectionSuspended
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deWinReNotConfigured extends EasRequireEncryptionResult
+  sealed trait deWinReNotConfigured
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait noFeatureLicense extends EasRequireEncryptionResult
+  sealed trait noFeatureLicense
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait notEvaluated extends EasRequireEncryptionResult
+  sealed trait notEvaluated
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait notProvisionedOnAllVolumes extends EasRequireEncryptionResult
+  sealed trait notProvisionedOnAllVolumes
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait osNotProtected extends EasRequireEncryptionResult
+  sealed trait osNotProtected
+    extends StObject
+       with EasRequireEncryptionResult
 }

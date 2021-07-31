@@ -2,16 +2,14 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Output extends StObject {
   
   /**
     * The name of the DOM property to which the output property is bound.
     */
-  var bindingPropertyName: js.UndefOr[String] = js.native
+  var bindingPropertyName: js.UndefOr[String] = js.undefined
 }
 object Output {
   

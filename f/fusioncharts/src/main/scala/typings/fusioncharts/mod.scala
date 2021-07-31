@@ -6,7 +6,6 @@ import typings.std.Element
 import typings.std.JSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,7 +13,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("fusioncharts", JSImport.Namespace)
   @js.native
-  class ^ protected () extends FusionCharts {
+  class ^ protected ()
+    extends StObject
+       with FusionCharts {
     def this(chartObject: js.Object) = this()
     def this(chartObject: ChartObject) = this()
   }
@@ -48,104 +49,103 @@ object mod extends Shortcut {
     def xmlurl: typings.fusioncharts.fusionchartsStrings.xmlurl = "xmlurl".asInstanceOf[typings.fusioncharts.fusionchartsStrings.xmlurl]
   }
   
-  @js.native
   trait ChartObject extends StObject {
     
-    var baseChartMessageColor: js.UndefOr[String] = js.native
+    var baseChartMessageColor: js.UndefOr[String] = js.undefined
     
-    var baseChartMessageFont: js.UndefOr[String] = js.native
+    var baseChartMessageFont: js.UndefOr[String] = js.undefined
     
-    var baseChartMessageFontSize: js.UndefOr[String] = js.native
+    var baseChartMessageFontSize: js.UndefOr[String] = js.undefined
     
-    var baseChartMessageImageHAlign: js.UndefOr[ImageHAlign] = js.native
+    var baseChartMessageImageHAlign: js.UndefOr[ImageHAlign] = js.undefined
     
-    var containerBackgroundColor: js.UndefOr[String] = js.native
+    var containerBackgroundColor: js.UndefOr[String] = js.undefined
     
-    var containerBackgroundOpacity: js.UndefOr[Double] = js.native
+    var containerBackgroundOpacity: js.UndefOr[Double] = js.undefined
     
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
-    var dataEmptyMessage: js.UndefOr[String] = js.native
+    var dataEmptyMessage: js.UndefOr[String] = js.undefined
     
-    var dataEmptyMessageImageAlpha: js.UndefOr[Double] = js.native
+    var dataEmptyMessageImageAlpha: js.UndefOr[Double] = js.undefined
     
-    var dataEmptyMessageImageHAlign: js.UndefOr[ImageHAlign] = js.native
+    var dataEmptyMessageImageHAlign: js.UndefOr[ImageHAlign] = js.undefined
     
-    var dataEmptyMessageImageScale: js.UndefOr[Double] = js.native
+    var dataEmptyMessageImageScale: js.UndefOr[Double] = js.undefined
     
-    var dataEmptyMessageImageVAlign: js.UndefOr[ImageVAlign] = js.native
+    var dataEmptyMessageImageVAlign: js.UndefOr[ImageVAlign] = js.undefined
     
-    var dataFormat: js.UndefOr[ChartDataFormats] = js.native
+    var dataFormat: js.UndefOr[ChartDataFormats] = js.undefined
     
-    var dataInvalidMessage: js.UndefOr[String] = js.native
+    var dataInvalidMessage: js.UndefOr[String] = js.undefined
     
-    var dataInvalidMessageImageAlpha: js.UndefOr[Double] = js.native
+    var dataInvalidMessageImageAlpha: js.UndefOr[Double] = js.undefined
     
-    var dataInvalidMessageImageHAlign: js.UndefOr[ImageHAlign] = js.native
+    var dataInvalidMessageImageHAlign: js.UndefOr[ImageHAlign] = js.undefined
     
-    var dataInvalidMessageImageScale: js.UndefOr[Double] = js.native
+    var dataInvalidMessageImageScale: js.UndefOr[Double] = js.undefined
     
-    var dataInvalidMessageImageVAlign: js.UndefOr[ImageVAlign] = js.native
+    var dataInvalidMessageImageVAlign: js.UndefOr[ImageVAlign] = js.undefined
     
-    var dataLoadErrorMessage: js.UndefOr[String] = js.native
+    var dataLoadErrorMessage: js.UndefOr[String] = js.undefined
     
-    var dataLoadErrorMessageImageAlpha: js.UndefOr[Double] = js.native
+    var dataLoadErrorMessageImageAlpha: js.UndefOr[Double] = js.undefined
     
-    var dataLoadErrorMessageImageScale: js.UndefOr[Double] = js.native
+    var dataLoadErrorMessageImageScale: js.UndefOr[Double] = js.undefined
     
-    var dataLoadErrorMessageImageVAlign: js.UndefOr[ImageVAlign] = js.native
+    var dataLoadErrorMessageImageVAlign: js.UndefOr[ImageVAlign] = js.undefined
     
-    var dataLoadStartMessage: js.UndefOr[String] = js.native
+    var dataLoadStartMessage: js.UndefOr[String] = js.undefined
     
-    var dataLoadStartMessageImageAlpha: js.UndefOr[Double] = js.native
+    var dataLoadStartMessageImageAlpha: js.UndefOr[Double] = js.undefined
     
-    var dataLoadStartMessageImageHAlign: js.UndefOr[ImageHAlign] = js.native
+    var dataLoadStartMessageImageHAlign: js.UndefOr[ImageHAlign] = js.undefined
     
-    var dataLoadStartMessageImageScale: js.UndefOr[Double] = js.native
+    var dataLoadStartMessageImageScale: js.UndefOr[Double] = js.undefined
     
-    var dataLoadStartMessageImageVAlign: js.UndefOr[ImageVAlign] = js.native
+    var dataLoadStartMessageImageVAlign: js.UndefOr[ImageVAlign] = js.undefined
     
-    var dataSource: js.UndefOr[String | js.Object] = js.native
+    var dataSource: js.UndefOr[String | js.Object] = js.undefined
     
-    var events: js.UndefOr[js.Object] = js.native
+    var events: js.UndefOr[js.Object] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var link: js.UndefOr[js.Object] = js.native
+    var link: js.UndefOr[js.Object] = js.undefined
     
-    var loadMessage: js.UndefOr[String] = js.native
+    var loadMessage: js.UndefOr[String] = js.undefined
     
-    var loadMessageImageAlpha: js.UndefOr[Double] = js.native
+    var loadMessageImageAlpha: js.UndefOr[Double] = js.undefined
     
-    var loadMessageImageHAlign: js.UndefOr[ImageHAlign] = js.native
+    var loadMessageImageHAlign: js.UndefOr[ImageHAlign] = js.undefined
     
-    var loadMessageImageScale: js.UndefOr[Double] = js.native
+    var loadMessageImageScale: js.UndefOr[Double] = js.undefined
     
-    var loadMessageImageVAlign: js.UndefOr[ImageVAlign] = js.native
+    var loadMessageImageVAlign: js.UndefOr[ImageVAlign] = js.undefined
     
-    var renderAt: js.UndefOr[String] = js.native
+    var renderAt: js.UndefOr[String] = js.undefined
     
-    var renderErrorMessage: js.UndefOr[String] = js.native
+    var renderErrorMessage: js.UndefOr[String] = js.undefined
     
-    var renderErrorMessageImageAlpha: js.UndefOr[Double] = js.native
+    var renderErrorMessageImageAlpha: js.UndefOr[Double] = js.undefined
     
-    var renderErrorMessageImageHAlign: js.UndefOr[ImageHAlign] = js.native
+    var renderErrorMessageImageHAlign: js.UndefOr[ImageHAlign] = js.undefined
     
-    var renderErrorMessageImageScale: js.UndefOr[Double] = js.native
+    var renderErrorMessageImageScale: js.UndefOr[Double] = js.undefined
     
-    var renderErrorMessageImageVAlign: js.UndefOr[ImageVAlign] = js.native
+    var renderErrorMessageImageVAlign: js.UndefOr[ImageVAlign] = js.undefined
     
-    var showChartLoadingMessage: js.UndefOr[Boolean] = js.native
+    var showChartLoadingMessage: js.UndefOr[Boolean] = js.undefined
     
-    var showDataLoadingMessage: js.UndefOr[Boolean] = js.native
+    var showDataLoadingMessage: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var typeNotSupportedMessage: js.UndefOr[String] = js.native
+    var typeNotSupportedMessage: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object ChartObject {
     
@@ -452,37 +452,36 @@ object mod extends Shortcut {
   trait Debugger extends StObject {
     
     def enable(state: js.Any): Unit = js.native
-    def enable(state: js.Any, outputTo: js.UndefOr[scala.Nothing], outputFormat: js.Any): Unit = js.native
-    def enable(state: js.Any, outputTo: js.Function1[/* message */ js.Any, _]): Unit = js.native
-    def enable(state: js.Any, outputTo: js.Function1[/* message */ js.Any, _], outputFormat: js.Any): Unit = js.native
+    def enable(state: js.Any, outputTo: js.Function1[/* message */ js.Any, js.Any]): Unit = js.native
+    def enable(state: js.Any, outputTo: js.Function1[/* message */ js.Any, js.Any], outputFormat: js.Any): Unit = js.native
+    def enable(state: js.Any, outputTo: Unit, outputFormat: js.Any): Unit = js.native
     
     def enableFirebugLite(): js.Any = js.native
     
     def outputFormat(format: js.Any): Unit = js.native
     
-    def outputTo(callback: js.Function1[/* message */ js.Any, _]): Unit = js.native
+    def outputTo(callback: js.Function1[/* message */ js.Any, js.Any]): Unit = js.native
   }
   
-  @js.native
   trait EventObject extends StObject {
     
-    var cancelled: Boolean = js.native
+    var cancelled: Boolean
     
-    def detachHandler(): Unit = js.native
+    def detachHandler(): Unit
     
-    var detached: Boolean = js.native
+    var detached: Boolean
     
-    var eventId: Double = js.native
+    var eventId: Double
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
-    var prevented: Boolean = js.native
+    var prevented: Boolean
     
-    var sender: FusionCharts = js.native
+    var sender: FusionCharts
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object EventObject {
     
@@ -537,7 +536,8 @@ object mod extends Shortcut {
   
   @js.native
   trait FusionChartStatic
-    extends Instantiable1[(/* chartObject */ ChartObject) | (/* chartObject */ js.Object), FusionCharts] {
+    extends StObject
+       with Instantiable1[(/* chartObject */ ChartObject) | (/* chartObject */ js.Object), FusionCharts] {
     
     def apply(chartId: String): FusionCharts = js.native
     
@@ -563,16 +563,16 @@ object mod extends Shortcut {
     var debugger: Debugger = js.native
     
     def formatNumber(num: Double): Element = js.native
-    def formatNumber(num: Double, `type`: js.UndefOr[scala.Nothing], config: js.Object): Element = js.native
     def formatNumber(num: Double, `type`: String): Element = js.native
     def formatNumber(num: Double, `type`: String, config: js.Object): Element = js.native
+    def formatNumber(num: Double, `type`: Unit, config: js.Object): Element = js.native
     
     def getCurrentRenderer(): String = js.native
     
     def getObjectReference(elementId: String): Element = js.native
     
-    def ready(callback: js.Function1[/* fusionChartStatic */ js.UndefOr[this.type], _]): FusionChartStatic = js.native
-    def ready(callback: js.Function1[/* fusionChartStatic */ js.UndefOr[this.type], _], context: js.Any): FusionChartStatic = js.native
+    def ready(callback: js.Function1[/* fusionChartStatic */ js.UndefOr[this.type], js.Any]): FusionChartStatic = js.native
+    def ready(callback: js.Function1[/* fusionChartStatic */ js.UndefOr[this.type], js.Any], context: js.Any): FusionChartStatic = js.native
     
     def removeEventListener(
       `type`: String,
@@ -592,9 +592,9 @@ object mod extends Shortcut {
     ): Unit = js.native
     
     def render(): FusionCharts = js.native
-    def render(options: js.UndefOr[scala.Nothing], callback: js.Function0[_]): FusionCharts = js.native
+    def render(options: Unit, callback: js.Function0[js.Any]): FusionCharts = js.native
     def render(options: ChartObject): FusionCharts = js.native
-    def render(options: ChartObject, callback: js.Function0[_]): FusionCharts = js.native
+    def render(options: ChartObject, callback: js.Function0[js.Any]): FusionCharts = js.native
     
     def setCurrentRenderer(name: String): Unit = js.native
     
@@ -630,20 +630,20 @@ object mod extends Shortcut {
     def centerLabel(labelText: String, options: js.Object): Unit = js.native
     
     def chartType(): String = js.native
-    def chartType(value: js.UndefOr[scala.Nothing], options: js.Any): String = js.native
     def chartType(value: String): String = js.native
     def chartType(value: String, options: js.Any): String = js.native
+    def chartType(value: Unit, options: js.Any): String = js.native
     
     def clearChart(): Unit = js.native
     
-    def clone(overrides: js.UndefOr[scala.Nothing], argsOnly: Boolean): js.Any = js.native
     def clone(overrides: js.Object): js.Any = js.native
     def clone(overrides: js.Object, argsOnly: Boolean): js.Any = js.native
+    def clone(overrides: Unit, argsOnly: Boolean): js.Any = js.native
     
     def configure(options: js.Object): Unit = js.native
     
-    def configureLink(param: js.Array[_]): Unit = js.native
-    def configureLink(param: js.Array[_], level: Double): Unit = js.native
+    def configureLink(param: js.Array[js.Any]): Unit = js.native
+    def configureLink(param: js.Array[js.Any], level: Double): Unit = js.native
     def configureLink(param: js.Object): Unit = js.native
     def configureLink(param: js.Object, level: Double): Unit = js.native
     
@@ -716,21 +716,17 @@ object mod extends Shortcut {
     ): Unit = js.native
     
     def render(): FusionCharts = js.native
-    def render(
-      containerElement: js.UndefOr[scala.Nothing],
-      insertMode: js.UndefOr[scala.Nothing],
-      callback: js.Function0[_]
-    ): FusionCharts = js.native
-    def render(containerElement: js.UndefOr[scala.Nothing], insertMode: String): FusionCharts = js.native
-    def render(containerElement: js.UndefOr[scala.Nothing], insertMode: String, callback: js.Function0[_]): FusionCharts = js.native
     def render(containerElement: String): FusionCharts = js.native
-    def render(containerElement: String, insertMode: js.UndefOr[scala.Nothing], callback: js.Function0[_]): FusionCharts = js.native
     def render(containerElement: String, insertMode: String): FusionCharts = js.native
-    def render(containerElement: String, insertMode: String, callback: js.Function0[_]): FusionCharts = js.native
+    def render(containerElement: String, insertMode: String, callback: js.Function0[js.Any]): FusionCharts = js.native
+    def render(containerElement: String, insertMode: Unit, callback: js.Function0[js.Any]): FusionCharts = js.native
+    def render(containerElement: Unit, insertMode: String): FusionCharts = js.native
+    def render(containerElement: Unit, insertMode: String, callback: js.Function0[js.Any]): FusionCharts = js.native
+    def render(containerElement: Unit, insertMode: Unit, callback: js.Function0[js.Any]): FusionCharts = js.native
     def render(containerElement: Element): FusionCharts = js.native
-    def render(containerElement: Element, insertMode: js.UndefOr[scala.Nothing], callback: js.Function0[_]): FusionCharts = js.native
     def render(containerElement: Element, insertMode: String): FusionCharts = js.native
-    def render(containerElement: Element, insertMode: String, callback: js.Function0[_]): FusionCharts = js.native
+    def render(containerElement: Element, insertMode: String, callback: js.Function0[js.Any]): FusionCharts = js.native
+    def render(containerElement: Element, insertMode: Unit, callback: js.Function0[js.Any]): FusionCharts = js.native
     
     def resetChart(): Unit = js.native
     
@@ -774,16 +770,16 @@ object mod extends Shortcut {
     def setZoomMode(yes: Boolean): Unit = js.native
     
     def showChartMessage(text: String): Unit = js.native
-    def showChartMessage(text: String, modal: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
     def showChartMessage(text: String, modal: Boolean): Unit = js.native
     def showChartMessage(text: String, modal: Boolean, cancelable: Boolean): Unit = js.native
+    def showChartMessage(text: String, modal: Unit, cancelable: Boolean): Unit = js.native
     
     def slicePlotItem(index: Double, slice: Boolean): Unit = js.native
     
     def startingAngle(): Unit = js.native
-    def startingAngle(angle: js.UndefOr[scala.Nothing], relative: Boolean): Unit = js.native
     def startingAngle(angle: Double): Unit = js.native
     def startingAngle(angle: Double, relative: Boolean): Unit = js.native
+    def startingAngle(angle: Unit, relative: Boolean): Unit = js.native
     
     def stopUpdate(): Unit = js.native
     

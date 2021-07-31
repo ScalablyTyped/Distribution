@@ -3,19 +3,17 @@ package typings.reactSketchapp.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageProps extends StObject {
   
-  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
   
-  var resizeMode: ResizeMode = js.native
+  var resizeMode: ResizeMode
   
-  var source: js.UndefOr[ImageSource] = js.native
+  var source: js.UndefOr[ImageSource] = js.undefined
   
-  var style: js.UndefOr[Style | StyleReference] = js.native
+  var style: js.UndefOr[Style | StyleReference] = js.undefined
 }
 object ImageProps {
   

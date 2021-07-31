@@ -3,19 +3,17 @@ package typings.atom.anon
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Command extends StObject {
   
   // e.g. 'ctrl-x ctrl-s'
-  var command: js.UndefOr[String] = js.native
+  var command: js.UndefOr[String] = js.undefined
   
-  var keystrokes: js.UndefOr[String] = js.native
+  var keystrokes: js.UndefOr[String] = js.undefined
   
   // e.g. 'editor:backspace'
-  var target: js.UndefOr[Element] = js.native
+  var target: js.UndefOr[Element] = js.undefined
 }
 object Command {
   

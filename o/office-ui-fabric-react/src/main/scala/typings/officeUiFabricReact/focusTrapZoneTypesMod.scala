@@ -6,19 +6,17 @@ import typings.std.HTMLElement
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusTrapZoneTypesMod {
   
-  @js.native
   trait IFocusTrapZone extends StObject {
     
     /**
       * Sets focus to a descendant in the Trap Zone.
       * See firstFocusableSelector and focusPreviouslyFocusedInnerElement for details.
       */
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object IFocusTrapZone {
     
@@ -36,44 +34,45 @@ object focusTrapZoneTypesMod {
     }
   }
   
-  @js.native
-  trait IFocusTrapZoneProps extends HTMLAttributes[HTMLDivElement] {
+  trait IFocusTrapZoneProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Sets the aria-labelledby attribute.
       */
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the IFocusTrapZone interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IFocusTrapZone]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IFocusTrapZone]] = js.undefined
     
     /**
       * Do not put focus onto the first element inside the focus trap zone.
       * @defaultvalue false
       */
-    var disableFirstFocus: js.UndefOr[Boolean] = js.native
+    var disableFirstFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to disable the FocusTrapZone's focus trapping behavior.
       * @defaultvalue false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the element to focus on when exiting the FocusTrapZone.
       * @defaultvalue The `element.target` that triggered the FTZ.
       */
-    var elementToFocusOnDismiss: js.UndefOr[HTMLElement] = js.native
+    var elementToFocusOnDismiss: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * Puts aria-hidden=true on all non-ancestors of the current element, for screen readers.
       * This is an experimental feature that will be graduated to default behavior after testing.
       * This flag will be removed with the next major release.
       */
-    var enableAriaHiddenSiblings: js.UndefOr[Boolean] = js.native
+    var enableAriaHiddenSiblings: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Class name (not actual selector) for first focusable item. Do not append a dot.
@@ -81,13 +80,13 @@ object focusTrapZoneTypesMod {
       * @deprecated Use `firstFocusableTarget`, since it is more generic. `firstFocusableTarget` takes precendence if
       * supplied.
       */
-    var firstFocusableSelector: js.UndefOr[String | js.Function0[String]] = js.native
+    var firstFocusableSelector: js.UndefOr[String | js.Function0[String]] = js.undefined
     
     /**
       * Either a full query selector for the first focusable element, or a function to select the focusable element
       * within the area directly.
       */
-    var firstFocusableTarget: js.UndefOr[String | (js.Function1[/* element */ HTMLElement, HTMLElement | Null])] = js.native
+    var firstFocusableTarget: js.UndefOr[String | (js.Function1[/* element */ HTMLElement, HTMLElement | Null])] = js.undefined
     
     /**
       * Specifies which descendant element to focus when `focus()` is called.
@@ -96,26 +95,26 @@ object focusTrapZoneTypesMod {
       * (or fall back to the first focusable descendant if the trap zone has never been focused).
       * @defaultvalue false
       */
-    var focusPreviouslyFocusedInnerElement: js.UndefOr[Boolean] = js.native
+    var focusPreviouslyFocusedInnerElement: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the focus trap zone should force focus to stay inside of it.
       * @defaultvalue true
       */
-    var forceFocusInsideTrap: js.UndefOr[Boolean] = js.native
+    var forceFocusInsideTrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If false (the default), the trap zone will restore focus to the element which activated it
       * once the trap zone is unmounted or disabled. Set to true to disable this behavior.
       * @defaultvalue false
       */
-    var ignoreExternalFocusing: js.UndefOr[Boolean] = js.native
+    var ignoreExternalFocusing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether clicks are allowed outside this FocusTrapZone.
       * @defaultvalue false
       */
-    var isClickableOutsideFocusTrap: js.UndefOr[Boolean] = js.native
+    var isClickableOutsideFocusTrap: js.UndefOr[Boolean] = js.undefined
   }
   object IFocusTrapZoneProps {
     

@@ -2,19 +2,17 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database instance export request.
   */
-@js.native
 trait SchemaInstancesExportRequest extends StObject {
   
   /**
     * Contains details about the export operation.
     */
-  var exportContext: js.UndefOr[SchemaExportContext] = js.native
+  var exportContext: js.UndefOr[SchemaExportContext] = js.undefined
 }
 object SchemaInstancesExportRequest {
   

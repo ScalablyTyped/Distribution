@@ -27,7 +27,6 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kafkaMod {
@@ -115,9 +114,8 @@ object kafkaMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.ConsumedKafkaService.createIn")
-      @js.native
-      def createIn(container: IFolderBase): ConsumedKafkaService = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): ConsumedKafkaService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ConsumedKafkaService]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.ConsumedKafkaService.structureTypeName")
@@ -174,9 +172,8 @@ object kafkaMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaMappedValue.create")
-      @js.native
-      def create(model: IModel): KafkaMappedValue = js.native
+      @scala.inline
+      def create(model: IModel): KafkaMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[KafkaMappedValue]
       
       /**
         * Creates and returns a new KafkaMappedValue instance in the SDK and on the server.
@@ -187,9 +184,8 @@ object kafkaMod {
         *  8.11.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaMappedValue.createIn")
-      @js.native
-      def createIn(container: Attribute): KafkaMappedValue = js.native
+      @scala.inline
+      def createIn(container: Attribute): KafkaMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[KafkaMappedValue]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaMappedValue.structureTypeName")
@@ -268,9 +264,8 @@ object kafkaMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaRemoteEntitySource.create")
-      @js.native
-      def create(model: IModel): KafkaRemoteEntitySource = js.native
+      @scala.inline
+      def create(model: IModel): KafkaRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[KafkaRemoteEntitySource]
       
       /**
         * Creates and returns a new KafkaRemoteEntitySource instance in the SDK and on the server.
@@ -281,9 +276,8 @@ object kafkaMod {
         *  8.11.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaRemoteEntitySource.createIn")
-      @js.native
-      def createIn(container: Entity): KafkaRemoteEntitySource = js.native
+      @scala.inline
+      def createIn(container: Entity): KafkaRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[KafkaRemoteEntitySource]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaRemoteEntitySource.structureTypeName")
@@ -351,9 +345,8 @@ object kafkaMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaResource.create")
-      @js.native
-      def create(model: IModel): PublishedKafkaResource = js.native
+      @scala.inline
+      def create(model: IModel): PublishedKafkaResource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PublishedKafkaResource]
       
       /**
         * Creates and returns a new PublishedKafkaResource instance in the SDK and on the server.
@@ -364,9 +357,8 @@ object kafkaMod {
         *  8.14.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaResource.createIn")
-      @js.native
-      def createIn(container: PublishedKafkaService): PublishedKafkaResource = js.native
+      @scala.inline
+      def createIn(container: PublishedKafkaService): PublishedKafkaResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedKafkaResource]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaResource.structureTypeName")
@@ -470,9 +462,8 @@ object kafkaMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaService.createIn")
-      @js.native
-      def createIn(container: IFolderBase): PublishedKafkaService = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): PublishedKafkaService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedKafkaService]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaService.structureTypeName")
@@ -500,13 +491,17 @@ object kafkaMod {
       * In version 8.11.0: introduced
       */
     @js.native
-    trait IConsumedKafkaService extends IRemoteEntitySourceDocument
+    trait IConsumedKafkaService
+      extends StObject
+         with IRemoteEntitySourceDocument
     
     /**
       * In version 8.11.0: introduced
       */
     @js.native
-    trait IKafkaMappedValue extends IMappedValue
+    trait IKafkaMappedValue
+      extends StObject
+         with IMappedValue
     
     /**
       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
@@ -516,7 +511,9 @@ object kafkaMod {
       * In version 8.11.0: introduced
       */
     @js.native
-    trait IKafkaRemoteEntitySource extends IMaterializedRemoteEntitySource
+    trait IKafkaRemoteEntitySource
+      extends StObject
+         with IMaterializedRemoteEntitySource
     
     /**
       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
@@ -526,6 +523,8 @@ object kafkaMod {
       * In version 8.14.0: introduced
       */
     @js.native
-    trait IPublishedKafkaService extends IDocument
+    trait IPublishedKafkaService
+      extends StObject
+         with IDocument
   }
 }

@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Namespace type. */
@@ -20,7 +19,9 @@ object `type` {
     * Constructs a new LatLng.
     * @param [properties] Properties to set
     */
-  class LatLng () extends ILatLng {
+  class LatLng ()
+    extends StObject
+       with ILatLng {
     def this(properties: ILatLng) = this()
     
     /** LatLng latitude. */
@@ -39,18 +40,20 @@ object `type` {
   }
   object LatLng {
     
+    @JSImport("dialogflow/protos/protos", "google.type.LatLng")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new LatLng instance using the specified properties.
       * @param [properties] Properties to set
       * @returns LatLng instance
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.create")
-    @js.native
-    def create(): LatLng = js.native
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.create")
-    @js.native
-    def create(properties: ILatLng): LatLng = js.native
+    @scala.inline
+    def create(): LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[LatLng]
+    @scala.inline
+    def create(properties: ILatLng): LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[LatLng]
     
     /**
       * Decodes a LatLng message from the specified reader or buffer.
@@ -61,18 +64,14 @@ object `type` {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.decode")
-    @js.native
-    def decode(reader: Reader): LatLng = js.native
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): LatLng = js.native
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.decode")
-    @js.native
-    def decode(reader: Uint8Array): LatLng = js.native
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): LatLng = js.native
+    @scala.inline
+    def decode(reader: Reader): LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[LatLng]
+    @scala.inline
+    def decode(reader: Reader, length: Double): LatLng = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LatLng]
+    @scala.inline
+    def decode(reader: Uint8Array): LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[LatLng]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): LatLng = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LatLng]
     
     /**
       * Decodes a LatLng message from the specified reader or buffer, length delimited.
@@ -82,12 +81,10 @@ object `type` {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): LatLng = js.native
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): LatLng = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[LatLng]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[LatLng]
     
     /**
       * Encodes the specified LatLng message. Does not implicitly {@link google.type.LatLng.verify|verify} messages.
@@ -96,12 +93,10 @@ object `type` {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.encode")
-    @js.native
-    def encode(message: ILatLng): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.encode")
-    @js.native
-    def encode(message: ILatLng, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: ILatLng): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: ILatLng, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified LatLng message, length delimited. Does not implicitly {@link google.type.LatLng.verify|verify} messages.
@@ -110,12 +105,10 @@ object `type` {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ILatLng): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ILatLng, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: ILatLng): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: ILatLng, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a LatLng message from a plain object. Also converts values to their respective internal types.
@@ -123,9 +116,8 @@ object `type` {
       * @returns LatLng
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): LatLng = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[LatLng]
     
     /**
       * Creates a plain object from a LatLng message. Also converts values to other types if specified.
@@ -134,12 +126,10 @@ object `type` {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.toObject")
-    @js.native
-    def toObject(message: LatLng): StringDictionary[js.Any] = js.native
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.toObject")
-    @js.native
-    def toObject(message: LatLng, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: LatLng): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: LatLng, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a LatLng message.
@@ -147,20 +137,18 @@ object `type` {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.type.LatLng.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Properties of a LatLng. */
-  @js.native
   trait ILatLng extends StObject {
     
     /** LatLng latitude */
-    var latitude: js.UndefOr[Double | Null] = js.native
+    var latitude: js.UndefOr[Double | Null] = js.undefined
     
     /** LatLng longitude */
-    var longitude: js.UndefOr[Double | Null] = js.native
+    var longitude: js.UndefOr[Double | Null] = js.undefined
   }
   object ILatLng {
     

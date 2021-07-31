@@ -5,14 +5,14 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XEmbedPersist2 extends XEmbedPersist {
+trait XEmbedPersist2
+  extends StObject
+     with XEmbedPersist {
   
   /** Checks whether or not the object has created its persistent representation counterpart of its in-memory model. */
-  def isStored(): Boolean = js.native
+  def isStored(): Boolean
 }
 object XEmbedPersist2 {
   

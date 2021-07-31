@@ -4,14 +4,15 @@ import typings.heremaps.H.service.PlacesService.EntryPoint
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Places service implements a low level places RestApi access. Please refer to Restful API documentation for providing parameters and handling response objects.
   */
 @js.native
-trait PlacesService extends AbstractRestService {
+trait PlacesService
+  extends StObject
+     with AbstractRestService {
   
   /**
     * Function triggers places api 'around' entry point. Please refer to documentation for parameter specification and response handling.
@@ -139,22 +140,34 @@ object PlacesService {
   object EntryPoint extends StObject {
     
     @js.native
-    sealed trait AROUND extends EntryPoint
+    sealed trait AROUND
+      extends StObject
+         with EntryPoint
     
     @js.native
-    sealed trait CATEGORIES extends EntryPoint
+    sealed trait CATEGORIES
+      extends StObject
+         with EntryPoint
     
     @js.native
-    sealed trait EXPLORE extends EntryPoint
+    sealed trait EXPLORE
+      extends StObject
+         with EntryPoint
     
     @js.native
-    sealed trait HERE extends EntryPoint
+    sealed trait HERE
+      extends StObject
+         with EntryPoint
     
     @js.native
-    sealed trait SEARCH extends EntryPoint
+    sealed trait SEARCH
+      extends StObject
+         with EntryPoint
     
     @js.native
-    sealed trait SUGGEST extends EntryPoint
+    sealed trait SUGGEST
+      extends StObject
+         with EntryPoint
   }
   
   /**
@@ -162,14 +175,13 @@ object PlacesService {
     * @property path {string=} - the path of the places service, default is 'places/v1'
     * @property baseUrl {H.service.Url=} - an optional base URL if it differs from the platform's default base URL
     */
-  @js.native
   trait Options extends StObject {
     
-    var baseUrl: js.UndefOr[Url] = js.native
+    var baseUrl: js.UndefOr[Url] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var subDomain: js.UndefOr[String] = js.native
+    var subDomain: js.UndefOr[String] = js.undefined
   }
   object Options {
     

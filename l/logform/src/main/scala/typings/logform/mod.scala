@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("logform", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("logform", "Colorizer")
   @js.native
@@ -37,116 +40,91 @@ object mod {
   
   object format {
     
+    @scala.inline
+    def apply(transform: TransformFunction): FormatWrap = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[FormatWrap]
+    
     @JSImport("logform", "format")
     @js.native
-    def apply(transform: TransformFunction): FormatWrap = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("logform", "format.align")
-    @js.native
-    def align(): Format_ = js.native
+    @scala.inline
+    def align(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("align")().asInstanceOf[Format_]
     
-    @JSImport("logform", "format.cli")
-    @js.native
-    def cli(): Format_ = js.native
-    @JSImport("logform", "format.cli")
-    @js.native
-    def cli(opts: CliOptions): Format_ = js.native
+    @scala.inline
+    def cli(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")().asInstanceOf[Format_]
+    @scala.inline
+    def cli(opts: CliOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("logform", "format.colorize")
-    @js.native
-    def colorize(): Colorizer = js.native
-    @JSImport("logform", "format.colorize")
-    @js.native
-    def colorize(opts: ColorizeOptions): Colorizer = js.native
+    @scala.inline
+    def colorize(): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")().asInstanceOf[Colorizer]
+    @scala.inline
+    def colorize(opts: ColorizeOptions): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Colorizer]
     
-    @JSImport("logform", "format.combine")
-    @js.native
-    def combine(formats: Format_ *): Format_ = js.native
+    @scala.inline
+    def combine(formats: Format_ *): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(formats.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("logform", "format.errors")
-    @js.native
-    def errors(): Format_ = js.native
-    @JSImport("logform", "format.errors")
-    @js.native
-    def errors(opts: js.Object): Format_ = js.native
+    @scala.inline
+    def errors(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")().asInstanceOf[Format_]
+    @scala.inline
+    def errors(opts: js.Object): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("logform", "format.json")
-    @js.native
-    def json(): Format_ = js.native
-    @JSImport("logform", "format.json")
-    @js.native
-    def json(opts: JsonOptions): Format_ = js.native
+    @scala.inline
+    def json(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[Format_]
+    @scala.inline
+    def json(opts: JsonOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("logform", "format.label")
-    @js.native
-    def label(): Format_ = js.native
-    @JSImport("logform", "format.label")
-    @js.native
-    def label(opts: LabelOptions): Format_ = js.native
+    @scala.inline
+    def label(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")().asInstanceOf[Format_]
+    @scala.inline
+    def label(opts: LabelOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("logform", "format.logstash")
-    @js.native
-    def logstash(): Format_ = js.native
+    @scala.inline
+    def logstash(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("logstash")().asInstanceOf[Format_]
     
-    @JSImport("logform", "format.metadata")
-    @js.native
-    def metadata(): Format_ = js.native
-    @JSImport("logform", "format.metadata")
-    @js.native
-    def metadata(opts: MetadataOptions): Format_ = js.native
+    @scala.inline
+    def metadata(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")().asInstanceOf[Format_]
+    @scala.inline
+    def metadata(opts: MetadataOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("logform", "format.ms")
-    @js.native
-    def ms(): Format_ = js.native
+    @scala.inline
+    def ms(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")().asInstanceOf[Format_]
     
-    @JSImport("logform", "format.padLevels")
-    @js.native
-    def padLevels(): Format_ = js.native
-    @JSImport("logform", "format.padLevels")
-    @js.native
-    def padLevels(opts: PadLevelsOptions): Format_ = js.native
+    @scala.inline
+    def padLevels(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")().asInstanceOf[Format_]
+    @scala.inline
+    def padLevels(opts: PadLevelsOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("logform", "format.prettyPrint")
-    @js.native
-    def prettyPrint(): Format_ = js.native
-    @JSImport("logform", "format.prettyPrint")
-    @js.native
-    def prettyPrint(opts: PrettyPrintOptions): Format_ = js.native
+    @scala.inline
+    def prettyPrint(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")().asInstanceOf[Format_]
+    @scala.inline
+    def prettyPrint(opts: PrettyPrintOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("logform", "format.printf")
-    @js.native
-    def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): Format_ = js.native
+    @scala.inline
+    def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(templateFunction.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("logform", "format.simple")
-    @js.native
-    def simple(): Format_ = js.native
+    @scala.inline
+    def simple(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")().asInstanceOf[Format_]
     
-    @JSImport("logform", "format.splat")
-    @js.native
-    def splat(): Format_ = js.native
+    @scala.inline
+    def splat(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")().asInstanceOf[Format_]
     
-    @JSImport("logform", "format.timestamp")
-    @js.native
-    def timestamp(): Format_ = js.native
-    @JSImport("logform", "format.timestamp")
-    @js.native
-    def timestamp(opts: TimestampOptions): Format_ = js.native
+    @scala.inline
+    def timestamp(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[Format_]
+    @scala.inline
+    def timestamp(opts: TimestampOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("logform", "format.uncolorize")
-    @js.native
-    def uncolorize(): Format_ = js.native
-    @JSImport("logform", "format.uncolorize")
-    @js.native
-    def uncolorize(opts: UncolorizeOptions): Format_ = js.native
+    @scala.inline
+    def uncolorize(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")().asInstanceOf[Format_]
+    @scala.inline
+    def uncolorize(opts: UncolorizeOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
   }
   
-  @JSImport("logform", "levels")
-  @js.native
-  def levels(config: js.Object): js.Object = js.native
+  @scala.inline
+  def levels(config: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("levels")(config.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @js.native
   trait CliOptions
-    extends ColorizeOptions
+    extends StObject
+       with ColorizeOptions
        with PadLevelsOptions
   object CliOptions {
     
@@ -157,28 +135,27 @@ object mod {
     }
   }
   
-  @js.native
   trait ColorizeOptions extends StObject {
     
     /**
       * If set to `true` the color will be applied to the `message` and `level`.
       */
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An object containing the colors for the log levels. For example: `{ info: 'blue', error: 'red' }`.
       */
-    var colors: js.UndefOr[Record[String, String]] = js.native
+    var colors: js.UndefOr[Record[String, String]] = js.undefined
     
     /**
       * If set to `true` the color will be applied to the `level`.
       */
-    var level: js.UndefOr[Boolean] = js.native
+    var level: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `true` the color will be applied to the `message`.
       */
-    var message: js.UndefOr[Boolean] = js.native
+    var message: js.UndefOr[Boolean] = js.undefined
   }
   object ColorizeOptions {
     
@@ -221,18 +198,19 @@ object mod {
   
   type FormatWrap = js.Function1[/* opts */ js.UndefOr[js.Any], Format_]
   
-  @js.native
   trait JsonOptions extends StObject {
     
     /**
       * A function that influences how the `info` is stringified.
       */
-    var replacer: js.UndefOr[js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _]] = js.native
+    var replacer: js.UndefOr[
+        js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
+      ] = js.undefined
     
     /**
       * The number of white space used to format the json.
       */
-    var space: js.UndefOr[Double] = js.native
+    var space: js.UndefOr[Double] = js.undefined
   }
   object JsonOptions {
     
@@ -246,7 +224,7 @@ object mod {
     implicit class JsonOptionsMutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setReplacer(value: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _]): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
+      def setReplacer(value: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
@@ -259,19 +237,18 @@ object mod {
     }
   }
   
-  @js.native
   trait LabelOptions extends StObject {
     
     /**
       * A label to be added before the message.
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * If set to `true` the `label` will be added to `info.message`. If set to `false` the `label`
       * will be added as `info.label`.
       */
-    var message: js.UndefOr[Boolean] = js.native
+    var message: js.UndefOr[Boolean] = js.undefined
   }
   object LabelOptions {
     
@@ -298,23 +275,22 @@ object mod {
     }
   }
   
-  @js.native
   trait MetadataOptions extends StObject {
     
     /**
       * An array of keys that should not be added to the metadata object.
       */
-    var fillExcept: js.UndefOr[js.Array[String]] = js.native
+    var fillExcept: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An array of keys that will be added to the metadata object.
       */
-    var fillWith: js.UndefOr[js.Array[String]] = js.native
+    var fillWith: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The name of the key used for the metadata object. Defaults to `metadata`.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object MetadataOptions {
     
@@ -353,14 +329,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PadLevelsOptions extends StObject {
     
     /**
       * Log levels. Defaults to `configs.npm.levels` from [triple-beam](https://github.com/winstonjs/triple-beam)
       * module.
       */
-    var levels: js.UndefOr[Record[String, Double]] = js.native
+    var levels: js.UndefOr[Record[String, Double]] = js.undefined
   }
   object PadLevelsOptions {
     
@@ -381,19 +356,18 @@ object mod {
     }
   }
   
-  @js.native
   trait PrettyPrintOptions extends StObject {
     
     /**
       * Colorizes the message if set to `true`. Defaults to `false`.
       */
-    var colorize: js.UndefOr[Boolean] = js.native
+    var colorize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A `number` that specifies the maximum depth of the `info` object being stringified by
       * `util.inspect`. Defaults to `2`.
       */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
   }
   object PrettyPrintOptions {
     
@@ -420,20 +394,19 @@ object mod {
     }
   }
   
-  @js.native
   trait TimestampOptions extends StObject {
     
     /**
       * The name of an alias for the timestamp property, that will be added to the `info` object.
       */
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
     /**
       * Either the format as a string accepted by the [fecha](https://github.com/taylorhakes/fecha)
       * module or a function that returns a formatted date. If no format is provided `new
       * Date().toISOString()` will be used.
       */
-    var format: js.UndefOr[String | js.Function0[String]] = js.native
+    var format: js.UndefOr[String | js.Function0[String]] = js.undefined
   }
   object TimestampOptions {
     
@@ -469,13 +442,13 @@ object mod {
     TransformableInfo | Boolean
   ]
   
-  @js.native
   trait TransformableInfo
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var level: String = js.native
+    var level: String
     
-    var message: String = js.native
+    var message: String
   }
   object TransformableInfo {
     
@@ -496,23 +469,22 @@ object mod {
     }
   }
   
-  @js.native
   trait UncolorizeOptions extends StObject {
     
     /**
       * Disables the uncolorize format for `info.level` if set to `false`.
       */
-    var level: js.UndefOr[Boolean] = js.native
+    var level: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disables the uncolorize format for `info.message` if set to `false`.
       */
-    var message: js.UndefOr[Boolean] = js.native
+    var message: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disables the uncolorize format for `info[MESSAGE]` if set to `false`.
       */
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
   }
   object UncolorizeOptions {
     

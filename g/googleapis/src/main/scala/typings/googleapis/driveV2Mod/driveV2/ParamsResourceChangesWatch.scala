@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceChangesWatch extends StandardParameters {
+trait ParamsResourceChangesWatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Whether changes should include the file resource if the file is still
@@ -23,13 +23,13 @@ trait ParamsResourceChangesWatch extends StandardParameters {
     * removed from the list of changes and there will be no further change
     * entries for this file.
     */
-  var includeCorpusRemovals: js.UndefOr[Boolean] = js.native
+  var includeCorpusRemovals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to include changes indicating that items have been removed from
     * the list of changes, for example by deletion or loss of access.
     */
-  var includeDeleted: js.UndefOr[Boolean] = js.native
+  var includeDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to include changes outside the My Drive hierarchy in the result.
@@ -37,52 +37,52 @@ trait ParamsResourceChangesWatch extends StandardParameters {
     * folder or shared files which have not been added to My Drive will be
     * omitted from the result.
     */
-  var includeSubscribed: js.UndefOr[Boolean] = js.native
+  var includeSubscribed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether Team Drive files or changes should be included in results.
     */
-  var includeTeamDriveItems: js.UndefOr[Boolean] = js.native
+  var includeTeamDriveItems: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of changes to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The token for continuing a previous list request on the next page. This
     * should be set to the value of 'nextPageToken' from the previous response
     * or to the response from the getStartPageToken method.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaChannel] = js.native
+  var requestBody: js.UndefOr[SchemaChannel] = js.undefined
   
   /**
     * A comma-separated list of spaces to query. Supported values are 'drive',
     * 'appDataFolder' and 'photos'.
     */
-  var spaces: js.UndefOr[String] = js.native
+  var spaces: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated - use pageToken instead.
     */
-  var startChangeId: js.UndefOr[String] = js.native
+  var startChangeId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the requesting application supports Team Drives.
     */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Team Drive from which changes will be returned. If specified the
     * change IDs will be reflective of the Team Drive; use the combined Team
     * Drive ID and change ID as an identifier.
     */
-  var teamDriveId: js.UndefOr[String] = js.native
+  var teamDriveId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceChangesWatch {
   

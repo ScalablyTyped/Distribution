@@ -2,89 +2,89 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Calendar extends Entity {
+trait Calendar
+  extends StObject
+     with Entity {
   
   /**
     * Represent the online meeting service providers that can be used to create online meetings in this calendar. Possible
     * values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
     */
-  var allowedOnlineMeetingProviders: js.UndefOr[NullableOption[js.Array[OnlineMeetingProviderType]]] = js.native
+  var allowedOnlineMeetingProviders: js.UndefOr[NullableOption[js.Array[OnlineMeetingProviderType]]] = js.undefined
   
   // The permissions of the users with whom the calendar is shared.
-  var calendarPermissions: js.UndefOr[NullableOption[js.Array[CalendarPermission]]] = js.native
+  var calendarPermissions: js.UndefOr[NullableOption[js.Array[CalendarPermission]]] = js.undefined
   
   // The calendar view for the calendar. Navigation property. Read-only.
-  var calendarView: js.UndefOr[NullableOption[js.Array[Event]]] = js.native
+  var calendarView: js.UndefOr[NullableOption[js.Array[Event]]] = js.undefined
   
   /**
     * True if the user can write to the calendar, false otherwise. This property is true for the user who created the
     * calendar. This property is also true for a user who has been shared a calendar and granted write access.
     */
-  var canEdit: js.UndefOr[NullableOption[Boolean]] = js.native
+  var canEdit: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * True if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can
     * share it.
     */
-  var canShare: js.UndefOr[NullableOption[Boolean]] = js.native
+  var canShare: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // True if the user can read calendar items that have been marked private, false otherwise.
-  var canViewPrivateItems: js.UndefOr[NullableOption[Boolean]] = js.native
+  var canViewPrivateItems: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This
     * allows Exchange to apply changes to the correct version of the object. Read-only.
     */
-  var changeKey: js.UndefOr[NullableOption[String]] = js.native
+  var changeKey: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are:
     * LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7,
     * LightRed=8, MaxColor=9, Auto=-1
     */
-  var color: js.UndefOr[NullableOption[CalendarColor]] = js.native
+  var color: js.UndefOr[NullableOption[CalendarColor]] = js.undefined
   
   /**
     * The default online meeting provider for meetings sent from this calendar. Possible values are: unknown,
     * skypeForBusiness, skypeForConsumer, teamsForBusiness.
     */
-  var defaultOnlineMeetingProvider: js.UndefOr[NullableOption[OnlineMeetingProviderType]] = js.native
+  var defaultOnlineMeetingProvider: js.UndefOr[NullableOption[OnlineMeetingProviderType]] = js.undefined
   
   // The events in the calendar. Navigation property. Read-only.
-  var events: js.UndefOr[NullableOption[js.Array[Event]]] = js.native
+  var events: js.UndefOr[NullableOption[js.Array[Event]]] = js.undefined
   
-  var hexColor: js.UndefOr[NullableOption[String]] = js.native
+  var hexColor: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var isDefaultCalendar: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isDefaultCalendar: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether this user calendar can be deleted from the user mailbox.
-  var isRemovable: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isRemovable: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users'
     * primary calendars support tracking of meeting responses.
     */
-  var isTallyingResponses: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isTallyingResponses: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.
-  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.native
+  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.undefined
   
   // The calendar name.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * If set, this represents the user who created or added the calendar. For a calendar that the user created or added, the
     * owner property is set to the user. For a calendar shared with the user, the owner property is set to the person who
     * shared that calendar with the user.
     */
-  var owner: js.UndefOr[NullableOption[EmailAddress]] = js.native
+  var owner: js.UndefOr[NullableOption[EmailAddress]] = js.undefined
   
   // The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
-  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.native
+  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.undefined
 }
 object Calendar {
   

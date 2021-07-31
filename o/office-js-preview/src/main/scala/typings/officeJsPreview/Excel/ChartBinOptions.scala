@@ -12,7 +12,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.BinWidth
 import typings.officeJsPreview.officeJsPreviewStrings.Category
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait ChartBinOptions extends ClientObject {
+trait ChartBinOptions
+  extends StObject
+     with ClientObject {
   
   /**
     *

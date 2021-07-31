@@ -5,7 +5,6 @@ import typings.famous.mathMod.Quaternion
 import typings.famous.mathMod.Vec3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object physicsMod {
@@ -37,10 +36,10 @@ object physicsMod {
   @js.native
   class Drag () extends Force {
     def this(targets: js.Any) = this()
-    def this(targets: js.Array[_]) = this()
-    def this(targets: js.UndefOr[scala.Nothing], options: IDragOptions) = this()
+    def this(targets: js.Array[js.Any]) = this()
     def this(targets: js.Any, options: IDragOptions) = this()
-    def this(targets: js.Array[_], options: IDragOptions) = this()
+    def this(targets: js.Array[js.Any], options: IDragOptions) = this()
+    def this(targets: Unit, options: IDragOptions) = this()
     
     def init(): Unit = js.native
     
@@ -53,23 +52,25 @@ object physicsMod {
   /* static members */
   object Drag {
     
-    @JSImport("famous/physics", "Drag.LINEAR")
+    @JSImport("famous/physics", "Drag")
     @js.native
-    def LINEAR(v: Double): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("famous/physics", "Drag.QUADRATIC")
-    @js.native
-    def QUADRATIC(v: Double): Double = js.native
+    @scala.inline
+    def LINEAR(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("LINEAR")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def QUADRATIC(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("QUADRATIC")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @JSImport("famous/physics", "Force")
   @js.native
   class Force () extends StObject {
     def this(targets: js.Any) = this()
-    def this(targets: js.Array[_]) = this()
-    def this(targets: js.UndefOr[scala.Nothing], options: IForceOptions) = this()
+    def this(targets: js.Array[js.Any]) = this()
     def this(targets: js.Any, options: IForceOptions) = this()
-    def this(targets: js.Array[_], options: IForceOptions) = this()
+    def this(targets: js.Array[js.Any], options: IForceOptions) = this()
+    def this(targets: Unit, options: IForceOptions) = this()
     
     def addTarget(target: js.Any): Unit = js.native
     
@@ -79,12 +80,12 @@ object physicsMod {
     
     def setOptions(options: js.Any): Unit = js.native
     
-    var targets: js.Array[_] = js.native
+    var targets: js.Array[js.Any] = js.native
     
     def update(): Unit = js.native
-    def update(time: js.UndefOr[scala.Nothing], dt: Double): Unit = js.native
     def update(time: Double): Unit = js.native
     def update(time: Double, dt: Double): Unit = js.native
+    def update(time: Unit, dt: Double): Unit = js.native
   }
   
   @JSImport("famous/physics", "Particle")
@@ -236,19 +237,15 @@ object physicsMod {
   @js.native
   class RotationalSpring () extends Force {
     def this(source: Particle) = this()
-    def this(source: js.UndefOr[scala.Nothing], targets: js.Array[Particle]) = this()
-    def this(source: js.UndefOr[scala.Nothing], targets: Particle) = this()
+    def this(source: Unit, targets: js.Array[Particle]) = this()
+    def this(source: Unit, targets: Particle) = this()
     def this(source: Particle, targets: js.Array[Particle]) = this()
     def this(source: Particle, targets: Particle) = this()
-    def this(
-      source: js.UndefOr[scala.Nothing],
-      targets: js.UndefOr[scala.Nothing],
-      options: IRotationalSpringOptions
-    ) = this()
-    def this(source: js.UndefOr[scala.Nothing], targets: js.Array[Particle], options: IRotationalSpringOptions) = this()
-    def this(source: js.UndefOr[scala.Nothing], targets: Particle, options: IRotationalSpringOptions) = this()
-    def this(source: Particle, targets: js.UndefOr[scala.Nothing], options: IRotationalSpringOptions) = this()
+    def this(source: Unit, targets: js.Array[Particle], options: IRotationalSpringOptions) = this()
+    def this(source: Unit, targets: Unit, options: IRotationalSpringOptions) = this()
+    def this(source: Unit, targets: Particle, options: IRotationalSpringOptions) = this()
     def this(source: Particle, targets: js.Array[Particle], options: IRotationalSpringOptions) = this()
+    def this(source: Particle, targets: Unit, options: IRotationalSpringOptions) = this()
     def this(source: Particle, targets: Particle, options: IRotationalSpringOptions) = this()
     
     var anchor: Vec3 = js.native
@@ -268,15 +265,15 @@ object physicsMod {
   @js.native
   class Spring () extends Force {
     def this(source: Particle) = this()
-    def this(source: js.UndefOr[scala.Nothing], targets: js.Array[Particle]) = this()
-    def this(source: js.UndefOr[scala.Nothing], targets: Particle) = this()
+    def this(source: Unit, targets: js.Array[Particle]) = this()
+    def this(source: Unit, targets: Particle) = this()
     def this(source: Particle, targets: js.Array[Particle]) = this()
     def this(source: Particle, targets: Particle) = this()
-    def this(source: js.UndefOr[scala.Nothing], targets: js.UndefOr[scala.Nothing], options: ISpringOptions) = this()
-    def this(source: js.UndefOr[scala.Nothing], targets: js.Array[Particle], options: ISpringOptions) = this()
-    def this(source: js.UndefOr[scala.Nothing], targets: Particle, options: ISpringOptions) = this()
-    def this(source: Particle, targets: js.UndefOr[scala.Nothing], options: ISpringOptions) = this()
+    def this(source: Unit, targets: js.Array[Particle], options: ISpringOptions) = this()
+    def this(source: Unit, targets: Unit, options: ISpringOptions) = this()
+    def this(source: Unit, targets: Particle, options: ISpringOptions) = this()
     def this(source: Particle, targets: js.Array[Particle], options: ISpringOptions) = this()
+    def this(source: Particle, targets: Unit, options: ISpringOptions) = this()
     def this(source: Particle, targets: Particle, options: ISpringOptions) = this()
     
     var anchor: Vec3 = js.native
@@ -301,13 +298,15 @@ object physicsMod {
   /* static members */
   object Spring {
     
-    @JSImport("famous/physics", "Spring.FENE")
+    @JSImport("famous/physics", "Spring")
     @js.native
-    def FENE(dist: js.Any, rMax: js.Any): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("famous/physics", "Spring.HOOKE")
-    @js.native
-    def HOOKE(dist: js.Any, rMax: js.Any): Double = js.native
+    @scala.inline
+    def FENE(dist: js.Any, rMax: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FENE")(dist.asInstanceOf[js.Any], rMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def HOOKE(dist: js.Any, rMax: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HOOKE")(dist.asInstanceOf[js.Any], rMax.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("famous/physics", "Wall")
@@ -320,14 +319,15 @@ object physicsMod {
     var normal: Vec3 = js.native
   }
   
-  @js.native
-  trait IDragOptions extends IForceOptions {
+  trait IDragOptions
+    extends StObject
+       with IForceOptions {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var strength: js.UndefOr[Double] = js.native
+    var strength: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[js.Function1[/* v */ Double, Double]] = js.native
+    var `type`: js.UndefOr[js.Function1[/* v */ Double, Double]] = js.undefined
   }
   object IDragOptions {
     
@@ -360,10 +360,9 @@ object physicsMod {
     }
   }
   
-  @js.native
   trait IForceOptions extends StObject {
     
-    var targets: js.UndefOr[js.Array[_]] = js.native
+    var targets: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object IForceOptions {
     
@@ -377,7 +376,7 @@ object physicsMod {
     implicit class IForceOptionsMutableBuilder[Self <: IForceOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setTargets(value: js.Array[_]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      def setTargets(value: js.Array[js.Any]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
@@ -387,28 +386,27 @@ object physicsMod {
     }
   }
   
-  @js.native
   trait IParticleOptions extends StObject {
     
-    var collisionGroup: js.UndefOr[Double] = js.native
+    var collisionGroup: js.UndefOr[Double] = js.undefined
     
-    var collisionMask: js.UndefOr[Double] = js.native
+    var collisionMask: js.UndefOr[Double] = js.undefined
     
-    var friction: js.UndefOr[Double] = js.native
+    var friction: js.UndefOr[Double] = js.undefined
     
-    var mass: js.UndefOr[Double] = js.native
+    var mass: js.UndefOr[Double] = js.undefined
     
-    var orientation: js.UndefOr[Quaternion] = js.native
+    var orientation: js.UndefOr[Quaternion] = js.undefined
     
-    var position: js.UndefOr[Vec3] = js.native
+    var position: js.UndefOr[Vec3] = js.undefined
     
-    var restitution: js.UndefOr[Double] = js.native
+    var restitution: js.UndefOr[Double] = js.undefined
     
-    var restrictions: js.UndefOr[Double] = js.native
+    var restrictions: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[js.Array[Double]] = js.native
+    var size: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var velocity: js.UndefOr[Double] = js.native
+    var velocity: js.UndefOr[Double] = js.undefined
   }
   object IParticleOptions {
     
@@ -486,12 +484,11 @@ object physicsMod {
     }
   }
   
-  @js.native
   trait IPhysicsTransform extends StObject {
     
-    var position: js.Array[Double] = js.native
+    var position: js.Array[Double]
     
-    var rotation: js.Array[Double] = js.native
+    var rotation: js.Array[Double]
   }
   object IPhysicsTransform {
     
@@ -518,22 +515,23 @@ object physicsMod {
     }
   }
   
-  @js.native
-  trait IRotationalSpringOptions extends IForceOptions {
+  trait IRotationalSpringOptions
+    extends StObject
+       with IForceOptions {
     
-    var anchor: js.UndefOr[Quaternion] = js.native
+    var anchor: js.UndefOr[Quaternion] = js.undefined
     
-    var damping: js.UndefOr[Double] = js.native
+    var damping: js.UndefOr[Double] = js.undefined
     
-    var dampingRatio: js.UndefOr[Double] = js.native
+    var dampingRatio: js.UndefOr[Double] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var period: js.UndefOr[Double] = js.native
+    var period: js.UndefOr[Double] = js.undefined
     
-    var stiffness: js.UndefOr[Double] = js.native
+    var stiffness: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[js.Function2[/* dist */ js.Any, /* rMax */ js.Any, Double]] = js.native
+    var `type`: js.UndefOr[js.Function2[/* dist */ js.Any, /* rMax */ js.Any, Double]] = js.undefined
   }
   object IRotationalSpringOptions {
     
@@ -590,24 +588,25 @@ object physicsMod {
     }
   }
   
-  @js.native
-  trait ISpringOptions extends IForceOptions {
+  trait ISpringOptions
+    extends StObject
+       with IForceOptions {
     
-    var anchor: js.UndefOr[Vec3] = js.native
+    var anchor: js.UndefOr[Vec3] = js.undefined
     
-    var damping: js.UndefOr[Double] = js.native
+    var damping: js.UndefOr[Double] = js.undefined
     
-    var dampingRatio: js.UndefOr[Double] = js.native
+    var dampingRatio: js.UndefOr[Double] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var period: js.UndefOr[Double] = js.native
+    var period: js.UndefOr[Double] = js.undefined
     
-    var stiffness: js.UndefOr[Double] = js.native
+    var stiffness: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[js.Function2[/* dist */ js.Any, /* rMax */ js.Any, Double]] = js.native
+    var `type`: js.UndefOr[js.Function2[/* dist */ js.Any, /* rMax */ js.Any, Double]] = js.undefined
   }
   object ISpringOptions {
     
@@ -670,10 +669,11 @@ object physicsMod {
     }
   }
   
-  @js.native
-  trait IWallOptions extends IParticleOptions {
+  trait IWallOptions
+    extends StObject
+       with IParticleOptions {
     
-    var direction: js.UndefOr[Double] = js.native
+    var direction: js.UndefOr[Double] = js.undefined
   }
   object IWallOptions {
     

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In general this interface is supported by a {@link TextDocument} .
   */
-@js.native
-trait XDocumentIndexesSupplier extends XInterface {
+trait XDocumentIndexesSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the collection of "DocumentIndexes" currently contained in the object. */
-  val DocumentIndexes: XIndexAccess = js.native
+  val DocumentIndexes: XIndexAccess
   
   /** @returns the collection of "DocumentIndexes" currently contained in the object. */
-  def getDocumentIndexes(): XIndexAccess = js.native
+  def getDocumentIndexes(): XIndexAccess
 }
 object XDocumentIndexesSupplier {
   

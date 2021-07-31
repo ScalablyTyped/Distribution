@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceReference extends StObject {
   
   /** The ID of the device. */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /** The hardware IDs of the device. */
-  var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.native
+  var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.undefined
 }
 object DeviceReference {
   

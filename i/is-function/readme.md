@@ -11,8 +11,8 @@ is that thing a function? Use this module to find out
 | Full name          | is-function |
 | Keywords           | polyfill, is-function, ie6 |
 | # releases         | 2 |
-| # dependents       | 99 |
-| # downloads        | 105495516 |
+| # dependents       | 104 |
+| # downloads        | 134351855 |
 | # stars            | 3 |
 
 ## Links

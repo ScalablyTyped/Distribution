@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHistogramRequest extends StObject {
   
   /**
     * If true, retrieve delta since last call.
     */
-  var delta: js.UndefOr[Boolean] = js.native
+  var delta: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Requested histogram name.
     */
-  var name: String = js.native
+  var name: String
 }
 object GetHistogramRequest {
   

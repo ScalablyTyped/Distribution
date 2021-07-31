@@ -3,7 +3,6 @@ package typings.temp
 import typings.node.fsMod.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,26 +11,20 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("temp", "cleanup")
-  @js.native
-  def cleanup(): Unit = js.native
-  @JSImport("temp", "cleanup")
-  @js.native
-  def cleanup(callback: js.Function2[/* err */ js.Any, /* result */ Stats, Unit]): Unit = js.native
+  @scala.inline
+  def cleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[Unit]
+  @scala.inline
+  def cleanup(callback: js.Function2[/* err */ js.Any, /* result */ Stats, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("temp", "cleanupSync")
-  @js.native
-  def cleanupSync(): Boolean | Stats = js.native
+  @scala.inline
+  def cleanupSync(): Boolean | Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanupSync")().asInstanceOf[Boolean | Stats]
   
-  @JSImport("temp", "createWriteStream")
-  @js.native
-  def createWriteStream(): WriteStream = js.native
-  @JSImport("temp", "createWriteStream")
-  @js.native
-  def createWriteStream(affixes: String): WriteStream = js.native
-  @JSImport("temp", "createWriteStream")
-  @js.native
-  def createWriteStream(affixes: AffixOptions): WriteStream = js.native
+  @scala.inline
+  def createWriteStream(): WriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")().asInstanceOf[WriteStream]
+  @scala.inline
+  def createWriteStream(affixes: String): WriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(affixes.asInstanceOf[js.Any]).asInstanceOf[WriteStream]
+  @scala.inline
+  def createWriteStream(affixes: AffixOptions): WriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(affixes.asInstanceOf[js.Any]).asInstanceOf[WriteStream]
   
   @JSImport("temp", "dir")
   @js.native
@@ -39,104 +32,71 @@ object mod {
   @scala.inline
   def dir_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dir")(x.asInstanceOf[js.Any])
   
-  @JSImport("temp", "mkdir")
-  @js.native
-  def mkdir(): Unit = js.native
-  @JSImport("temp", "mkdir")
-  @js.native
-  def mkdir(
-    affixes: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ js.Any, /* dirPath */ String, Unit]
-  ): Unit = js.native
-  @JSImport("temp", "mkdir")
-  @js.native
-  def mkdir(affixes: String): Unit = js.native
-  @JSImport("temp", "mkdir")
-  @js.native
-  def mkdir(affixes: String, callback: js.Function2[/* err */ js.Any, /* dirPath */ String, Unit]): Unit = js.native
-  @JSImport("temp", "mkdir")
-  @js.native
-  def mkdir(affixes: AffixOptions): Unit = js.native
-  @JSImport("temp", "mkdir")
-  @js.native
-  def mkdir(affixes: AffixOptions, callback: js.Function2[/* err */ js.Any, /* dirPath */ String, Unit]): Unit = js.native
+  @scala.inline
+  def mkdir(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")().asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(affixes: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(affixes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(affixes: String, callback: js.Function2[/* err */ js.Any, /* dirPath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(affixes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(affixes: Unit, callback: js.Function2[/* err */ js.Any, /* dirPath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(affixes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(affixes: AffixOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(affixes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(affixes: AffixOptions, callback: js.Function2[/* err */ js.Any, /* dirPath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(affixes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("temp", "mkdirSync")
-  @js.native
-  def mkdirSync(): String = js.native
-  @JSImport("temp", "mkdirSync")
-  @js.native
-  def mkdirSync(affixes: String): String = js.native
-  @JSImport("temp", "mkdirSync")
-  @js.native
-  def mkdirSync(affixes: AffixOptions): String = js.native
+  @scala.inline
+  def mkdirSync(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")().asInstanceOf[String]
+  @scala.inline
+  def mkdirSync(affixes: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(affixes.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def mkdirSync(affixes: AffixOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(affixes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("temp", "open")
-  @js.native
-  def open(): Unit = js.native
-  @JSImport("temp", "open")
-  @js.native
-  def open(
-    affixes: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ js.Any, /* result */ OpenFile, Unit]
-  ): Unit = js.native
-  @JSImport("temp", "open")
-  @js.native
-  def open(affixes: String): Unit = js.native
-  @JSImport("temp", "open")
-  @js.native
-  def open(affixes: String, callback: js.Function2[/* err */ js.Any, /* result */ OpenFile, Unit]): Unit = js.native
-  @JSImport("temp", "open")
-  @js.native
-  def open(affixes: AffixOptions): Unit = js.native
-  @JSImport("temp", "open")
-  @js.native
-  def open(affixes: AffixOptions, callback: js.Function2[/* err */ js.Any, /* result */ OpenFile, Unit]): Unit = js.native
+  @scala.inline
+  def open(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[Unit]
+  @scala.inline
+  def open(affixes: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(affixes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def open(affixes: String, callback: js.Function2[/* err */ js.Any, /* result */ OpenFile, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(affixes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(affixes: Unit, callback: js.Function2[/* err */ js.Any, /* result */ OpenFile, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(affixes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(affixes: AffixOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(affixes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def open(affixes: AffixOptions, callback: js.Function2[/* err */ js.Any, /* result */ OpenFile, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(affixes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("temp", "openSync")
-  @js.native
-  def openSync(): OpenFile = js.native
-  @JSImport("temp", "openSync")
-  @js.native
-  def openSync(affixes: String): OpenFile = js.native
-  @JSImport("temp", "openSync")
-  @js.native
-  def openSync(affixes: AffixOptions): OpenFile = js.native
+  @scala.inline
+  def openSync(): OpenFile = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")().asInstanceOf[OpenFile]
+  @scala.inline
+  def openSync(affixes: String): OpenFile = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(affixes.asInstanceOf[js.Any]).asInstanceOf[OpenFile]
+  @scala.inline
+  def openSync(affixes: AffixOptions): OpenFile = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(affixes.asInstanceOf[js.Any]).asInstanceOf[OpenFile]
   
-  @JSImport("temp", "path")
-  @js.native
-  def path(): String = js.native
-  @JSImport("temp", "path")
-  @js.native
-  def path(affixes: js.UndefOr[scala.Nothing], defaultPrefix: String): String = js.native
-  @JSImport("temp", "path")
-  @js.native
-  def path(affixes: String): String = js.native
-  @JSImport("temp", "path")
-  @js.native
-  def path(affixes: String, defaultPrefix: String): String = js.native
-  @JSImport("temp", "path")
-  @js.native
-  def path(affixes: AffixOptions): String = js.native
-  @JSImport("temp", "path")
-  @js.native
-  def path(affixes: AffixOptions, defaultPrefix: String): String = js.native
+  @scala.inline
+  def path(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("path")().asInstanceOf[String]
+  @scala.inline
+  def path(affixes: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(affixes.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def path(affixes: String, defaultPrefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("path")(affixes.asInstanceOf[js.Any], defaultPrefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def path(affixes: Unit, defaultPrefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("path")(affixes.asInstanceOf[js.Any], defaultPrefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def path(affixes: AffixOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(affixes.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def path(affixes: AffixOptions, defaultPrefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("path")(affixes.asInstanceOf[js.Any], defaultPrefix.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("temp", "track")
-  @js.native
-  def track(): js.Any = js.native
-  @JSImport("temp", "track")
-  @js.native
-  def track(value: Boolean): js.Any = js.native
+  @scala.inline
+  def track(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("track")().asInstanceOf[js.Any]
+  @scala.inline
+  def track(value: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait AffixOptions extends StObject {
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object AffixOptions {
     
@@ -169,12 +129,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenFile extends StObject {
     
-    var fd: Double = js.native
+    var fd: Double
     
-    var path: String = js.native
+    var path: String
   }
   object OpenFile {
     
@@ -195,12 +154,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
-    var dirs: Double = js.native
+    var dirs: Double
     
-    var files: Double = js.native
+    var files: Double
   }
   object Stats {
     

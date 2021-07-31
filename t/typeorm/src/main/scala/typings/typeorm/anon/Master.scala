@@ -3,21 +3,19 @@ package typings.typeorm.anon
 import typings.typeorm.cockroachConnectionCredentialsOptionsMod.CockroachConnectionCredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Master extends StObject {
   
   /**
     * Master server used by orm to perform writes.
     */
-  val master: CockroachConnectionCredentialsOptions = js.native
+  val master: CockroachConnectionCredentialsOptions
   
   /**
     * List of read-from severs (slaves).
     */
-  val slaves: js.Array[CockroachConnectionCredentialsOptions] = js.native
+  val slaves: js.Array[CockroachConnectionCredentialsOptions]
 }
 object Master {
   

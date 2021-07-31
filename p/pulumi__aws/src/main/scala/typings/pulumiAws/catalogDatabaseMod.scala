@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object catalogDatabaseMod {
@@ -25,7 +24,7 @@ object catalogDatabaseMod {
       */
     def this(name: String) = this()
     def this(name: String, args: CatalogDatabaseArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: CatalogDatabaseArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -61,6 +60,10 @@ object catalogDatabaseMod {
   /* static members */
   object CatalogDatabase {
     
+    @JSImport("@pulumi/aws/glue/catalogDatabase", "CatalogDatabase")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CatalogDatabase resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -70,55 +73,49 @@ object catalogDatabaseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/catalogDatabase", "CatalogDatabase.get")
-    @js.native
-    def get(name: String, id: Input[ID]): CatalogDatabase = js.native
-    @JSImport("@pulumi/aws/glue/catalogDatabase", "CatalogDatabase.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CatalogDatabase = js.native
-    @JSImport("@pulumi/aws/glue/catalogDatabase", "CatalogDatabase.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CatalogDatabaseState): CatalogDatabase = js.native
-    @JSImport("@pulumi/aws/glue/catalogDatabase", "CatalogDatabase.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CatalogDatabaseState, opts: CustomResourceOptions): CatalogDatabase = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CatalogDatabaseState): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CatalogDatabaseState, opts: CustomResourceOptions): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
     
     /**
       * Returns true if the given object is an instance of CatalogDatabase.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/catalogDatabase", "CatalogDatabase.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/catalogDatabase.CatalogDatabase */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/catalogDatabase.CatalogDatabase */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/catalogDatabase.CatalogDatabase */ Boolean]
   }
   
-  @js.native
   trait CatalogDatabaseArgs extends StObject {
     
     /**
       * ID of the Glue Catalog to create the database in. If omitted, this defaults to the AWS Account ID.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the database.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The location of the database (for example, an HDFS path).
       */
-    val locationUri: js.UndefOr[Input[String]] = js.native
+    val locationUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the database.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of key-value pairs that define parameters and properties of the database.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object CatalogDatabaseArgs {
     
@@ -163,38 +160,37 @@ object catalogDatabaseMod {
     }
   }
   
-  @js.native
   trait CatalogDatabaseState extends StObject {
     
     /**
       * The ARN of the Glue Catalog Database.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the Glue Catalog to create the database in. If omitted, this defaults to the AWS Account ID.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the database.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The location of the database (for example, an HDFS path).
       */
-    val locationUri: js.UndefOr[Input[String]] = js.native
+    val locationUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the database.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of key-value pairs that define parameters and properties of the database.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object CatalogDatabaseState {
     

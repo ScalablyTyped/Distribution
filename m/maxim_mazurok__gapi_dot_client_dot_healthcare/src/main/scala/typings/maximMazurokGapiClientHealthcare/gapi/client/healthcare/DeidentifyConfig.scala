@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeidentifyConfig extends StObject {
   
   /** Configures de-id of application/DICOM content. */
-  var dicom: js.UndefOr[DicomConfig] = js.native
+  var dicom: js.UndefOr[DicomConfig] = js.undefined
   
   /** Configures de-id of application/FHIR content. */
-  var fhir: js.UndefOr[FhirConfig] = js.native
+  var fhir: js.UndefOr[FhirConfig] = js.undefined
   
   /** Configures de-identification of image pixels wherever they are found in the source_dataset. */
-  var image: js.UndefOr[ImageConfig] = js.native
+  var image: js.UndefOr[ImageConfig] = js.undefined
   
   /** Configures de-identification of text wherever it is found in the source_dataset. */
-  var text: js.UndefOr[TextConfig] = js.native
+  var text: js.UndefOr[TextConfig] = js.undefined
 }
 object DeidentifyConfig {
   

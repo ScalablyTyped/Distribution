@@ -33,10 +33,13 @@ import typings.typescript.mod.TranspileOutput
 import typings.typescript.mod.WatchOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("ts-node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ts-node", "DEFAULTS")
   @js.native
@@ -60,65 +63,57 @@ object mod {
   @js.native
   val VERSION: js.Any = js.native
   
-  @JSImport("ts-node", "normalizeSlashes")
-  @js.native
-  def normalizeSlashes(value: String): String = js.native
+  @scala.inline
+  def normalizeSlashes(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeSlashes")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ts-node", "parse")
-  @js.native
-  def parse(): js.UndefOr[js.Object] = js.native
-  @JSImport("ts-node", "parse")
-  @js.native
-  def parse(value: String): js.UndefOr[js.Object] = js.native
+  @scala.inline
+  def parse(): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[js.UndefOr[js.Object]]
+  @scala.inline
+  def parse(value: String): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
   
-  @JSImport("ts-node", "register")
-  @js.native
-  def register(): Register_ = js.native
-  @JSImport("ts-node", "register")
-  @js.native
-  def register(opts: Options): Register_ = js.native
+  @scala.inline
+  def register(): Register_ = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Register_]
+  @scala.inline
+  def register(opts: Options): Register_ = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(opts.asInstanceOf[js.Any]).asInstanceOf[Register_]
   
-  @JSImport("ts-node", "split")
-  @js.native
-  def split(): js.UndefOr[js.Array[String]] = js.native
-  @JSImport("ts-node", "split")
-  @js.native
-  def split(value: String): js.UndefOr[js.Array[String]] = js.native
+  @scala.inline
+  def split(): js.UndefOr[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")().asInstanceOf[js.UndefOr[js.Array[String]]]
+  @scala.inline
+  def split(value: String): js.UndefOr[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[String]]]
   
-  @js.native
   trait Options extends StObject {
     
-    var cache: js.UndefOr[Boolean | Null] = js.native
+    var cache: js.UndefOr[Boolean | Null] = js.undefined
     
-    var cacheDirectory: js.UndefOr[String] = js.native
+    var cacheDirectory: js.UndefOr[String] = js.undefined
     
-    var compiler: js.UndefOr[String] = js.native
+    var compiler: js.UndefOr[String] = js.undefined
     
-    var compilerOptions: js.UndefOr[js.Object] = js.native
+    var compilerOptions: js.UndefOr[js.Object] = js.undefined
     
-    var fileExists: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.native
+    var fileExists: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.undefined
     
-    var files: js.UndefOr[Boolean | Null] = js.native
+    var files: js.UndefOr[Boolean | Null] = js.undefined
     
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var ignoreDiagnostics: js.UndefOr[Double | String | (js.Array[Double | String])] = js.native
+    var ignoreDiagnostics: js.UndefOr[Double | String | (js.Array[Double | String])] = js.undefined
     
-    var pretty: js.UndefOr[Boolean | Null] = js.native
+    var pretty: js.UndefOr[Boolean | Null] = js.undefined
     
-    var project: js.UndefOr[String] = js.native
+    var project: js.UndefOr[String] = js.undefined
     
-    var readFile: js.UndefOr[js.Function1[/* path */ String, js.UndefOr[String]]] = js.native
+    var readFile: js.UndefOr[js.Function1[/* path */ String, js.UndefOr[String]]] = js.undefined
     
-    var skipIgnore: js.UndefOr[Boolean | Null] = js.native
+    var skipIgnore: js.UndefOr[Boolean | Null] = js.undefined
     
-    var skipProject: js.UndefOr[Boolean | Null] = js.native
+    var skipProject: js.UndefOr[Boolean | Null] = js.undefined
     
-    var transformers: js.UndefOr[CustomTransformers] = js.native
+    var transformers: js.UndefOr[CustomTransformers] = js.undefined
     
-    var transpileOnly: js.UndefOr[Boolean | Null] = js.native
+    var transpileOnly: js.UndefOr[Boolean | Null] = js.undefined
     
-    var typeCheck: js.UndefOr[Boolean | Null] = js.native
+    var typeCheck: js.UndefOr[Boolean | Null] = js.undefined
   }
   object Options {
     
@@ -273,78 +268,73 @@ object mod {
     var ts: TSCommon = js.native
   }
   
-  @js.native
   trait TSCommon extends StObject {
     
-    var ModuleKind: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ModuleKind */ js.Any = js.native
+    var ModuleKind: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ModuleKind */ js.Any
     
-    var ScriptSnapshot: TypeofScriptSnapshot = js.native
+    var ScriptSnapshot: TypeofScriptSnapshot
     
-    var ScriptTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ScriptTarget */ js.Any = js.native
+    var ScriptTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ScriptTarget */ js.Any
     
-    def createLanguageService(host: LanguageServiceHost): LanguageService = js.native
+    def createLanguageService(host: LanguageServiceHost): LanguageService
+    def createLanguageService(host: LanguageServiceHost, documentRegistry: Unit, syntaxOnlyOrLanguageServiceMode: Boolean): LanguageService
     def createLanguageService(
       host: LanguageServiceHost,
-      documentRegistry: js.UndefOr[scala.Nothing],
-      syntaxOnlyOrLanguageServiceMode: Boolean
-    ): LanguageService = js.native
-    def createLanguageService(
-      host: LanguageServiceHost,
-      documentRegistry: js.UndefOr[scala.Nothing],
+      documentRegistry: Unit,
       syntaxOnlyOrLanguageServiceMode: LanguageServiceMode
-    ): LanguageService = js.native
-    def createLanguageService(host: LanguageServiceHost, documentRegistry: DocumentRegistry): LanguageService = js.native
+    ): LanguageService
+    def createLanguageService(host: LanguageServiceHost, documentRegistry: DocumentRegistry): LanguageService
     def createLanguageService(
       host: LanguageServiceHost,
       documentRegistry: DocumentRegistry,
       syntaxOnlyOrLanguageServiceMode: Boolean
-    ): LanguageService = js.native
+    ): LanguageService
     def createLanguageService(
       host: LanguageServiceHost,
       documentRegistry: DocumentRegistry,
       syntaxOnlyOrLanguageServiceMode: LanguageServiceMode
-    ): LanguageService = js.native
+    ): LanguageService
     @JSName("createLanguageService")
-    var createLanguageService_Original: FnCallHostDocumentRegistrySyntaxOnlyOrLanguageServiceMode = js.native
+    var createLanguageService_Original: FnCallHostDocumentRegistrySyntaxOnlyOrLanguageServiceMode
     
-    def displayPartsToString(): String = js.native
-    def displayPartsToString(displayParts: js.Array[SymbolDisplayPart]): String = js.native
+    def displayPartsToString(): String
+    def displayPartsToString(displayParts: js.Array[SymbolDisplayPart]): String
     @JSName("displayPartsToString")
-    var displayPartsToString_Original: FnCall = js.native
+    var displayPartsToString_Original: FnCall
     
-    def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean]): js.UndefOr[String] = js.native
-    def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean], configName: String): js.UndefOr[String] = js.native
+    def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean]): js.UndefOr[String]
+    def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean], configName: String): js.UndefOr[String]
     @JSName("findConfigFile")
-    var findConfigFile_Original: FnCallSearchPathFileExistsConfigName = js.native
+    var findConfigFile_Original: FnCallSearchPathFileExistsConfigName
     
-    def flattenDiagnosticMessageText(diag: js.UndefOr[scala.Nothing], newLine: String): String = js.native
-    def flattenDiagnosticMessageText(diag: js.UndefOr[scala.Nothing], newLine: String, indent: Double): String = js.native
-    def flattenDiagnosticMessageText(diag: String, newLine: String): String = js.native
-    def flattenDiagnosticMessageText(diag: String, newLine: String, indent: Double): String = js.native
-    def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String): String = js.native
-    def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String, indent: Double): String = js.native
+    def flattenDiagnosticMessageText(diag: String, newLine: String): String
+    def flattenDiagnosticMessageText(diag: String, newLine: String, indent: Double): String
+    def flattenDiagnosticMessageText(diag: Unit, newLine: String): String
+    def flattenDiagnosticMessageText(diag: Unit, newLine: String, indent: Double): String
+    def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String): String
+    def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String, indent: Double): String
     @JSName("flattenDiagnosticMessageText")
-    var flattenDiagnosticMessageText_Original: FnCallDiagNewLineIndent = js.native
+    var flattenDiagnosticMessageText_Original: FnCallDiagNewLineIndent
     
-    def formatDiagnostics(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): String = js.native
+    def formatDiagnostics(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): String
     
-    def formatDiagnosticsWithColorAndContext(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): String = js.native
+    def formatDiagnosticsWithColorAndContext(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): String
     @JSName("formatDiagnosticsWithColorAndContext")
-    var formatDiagnosticsWithColorAndContext_Original: js.Function2[/* diagnostics */ js.Array[Diagnostic], /* host */ FormatDiagnosticsHost, String] = js.native
+    var formatDiagnosticsWithColorAndContext_Original: js.Function2[/* diagnostics */ js.Array[Diagnostic], /* host */ FormatDiagnosticsHost, String]
     
     @JSName("formatDiagnostics")
-    var formatDiagnostics_Original: js.Function2[/* diagnostics */ js.Array[Diagnostic], /* host */ FormatDiagnosticsHost, String] = js.native
+    var formatDiagnostics_Original: js.Function2[/* diagnostics */ js.Array[Diagnostic], /* host */ FormatDiagnosticsHost, String]
     
-    def getDefaultLibFilePath(options: CompilerOptions): String = js.native
+    def getDefaultLibFilePath(options: CompilerOptions): String
     @JSName("getDefaultLibFilePath")
-    var getDefaultLibFilePath_Original: js.Function1[/* options */ CompilerOptions, String] = js.native
+    var getDefaultLibFilePath_Original: js.Function1[/* options */ CompilerOptions, String]
     
-    def getPreEmitDiagnostics(program: Program): js.Array[Diagnostic] = js.native
-    def getPreEmitDiagnostics(program: Program, sourceFile: js.UndefOr[scala.Nothing], cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
-    def getPreEmitDiagnostics(program: Program, sourceFile: SourceFile): js.Array[Diagnostic] = js.native
-    def getPreEmitDiagnostics(program: Program, sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
+    def getPreEmitDiagnostics(program: Program): js.Array[Diagnostic]
+    def getPreEmitDiagnostics(program: Program, sourceFile: Unit, cancellationToken: CancellationToken): js.Array[Diagnostic]
+    def getPreEmitDiagnostics(program: Program, sourceFile: SourceFile): js.Array[Diagnostic]
+    def getPreEmitDiagnostics(program: Program, sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[Diagnostic]
     @JSName("getPreEmitDiagnostics")
-    var getPreEmitDiagnostics_Original: FnCallProgramSourceFileCancellationToken = js.native
+    var getPreEmitDiagnostics_Original: FnCallProgramSourceFileCancellationToken
     
     def parseJsonConfigFileContent(
       json: js.Any,
@@ -356,7 +346,7 @@ object mod {
       extraFileExtensions: js.UndefOr[js.Array[FileExtensionInfo]],
       extendedConfigCache: js.UndefOr[Map[ExtendedConfigCacheEntry]],
       existingWatchOptions: js.UndefOr[WatchOptions]
-    ): ParsedCommandLine = js.native
+    ): ParsedCommandLine
     @JSName("parseJsonConfigFileContent")
     var parseJsonConfigFileContent_Original: js.Function9[
         /* json */ js.Any, 
@@ -369,31 +359,115 @@ object mod {
         /* extendedConfigCache */ js.UndefOr[Map[ExtendedConfigCacheEntry]], 
         /* existingWatchOptions */ js.UndefOr[WatchOptions], 
         ParsedCommandLine
-      ] = js.native
+      ]
     
-    def readConfigFile(fileName: String, readFile: js.Function1[/* path */ String, js.UndefOr[String]]): Config = js.native
+    def readConfigFile(fileName: String, readFile: js.Function1[/* path */ String, js.UndefOr[String]]): Config
     @JSName("readConfigFile")
     var readConfigFile_Original: js.Function2[
         /* fileName */ String, 
         /* readFile */ js.Function1[/* path */ String, js.UndefOr[String]], 
         Config
-      ] = js.native
+      ]
     
-    var sys: System = js.native
+    var sys: System
     
-    def transpileModule(input: String, transpileOptions: TranspileOptions): TranspileOutput = js.native
+    def transpileModule(input: String, transpileOptions: TranspileOptions): TranspileOutput
     @JSName("transpileModule")
-    var transpileModule_Original: js.Function2[/* input */ String, /* transpileOptions */ TranspileOptions, TranspileOutput] = js.native
+    var transpileModule_Original: js.Function2[/* input */ String, /* transpileOptions */ TranspileOptions, TranspileOutput]
     
-    var version: String = js.native
+    var version: String
+  }
+  object TSCommon {
+    
+    @scala.inline
+    def apply(
+      ModuleKind: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ModuleKind */ js.Any,
+      ScriptSnapshot: TypeofScriptSnapshot,
+      ScriptTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ScriptTarget */ js.Any,
+      createLanguageService: FnCallHostDocumentRegistrySyntaxOnlyOrLanguageServiceMode,
+      displayPartsToString: FnCall,
+      findConfigFile: FnCallSearchPathFileExistsConfigName,
+      flattenDiagnosticMessageText: FnCallDiagNewLineIndent,
+      formatDiagnostics: (/* diagnostics */ js.Array[Diagnostic], /* host */ FormatDiagnosticsHost) => String,
+      formatDiagnosticsWithColorAndContext: (/* diagnostics */ js.Array[Diagnostic], /* host */ FormatDiagnosticsHost) => String,
+      getDefaultLibFilePath: /* options */ CompilerOptions => String,
+      getPreEmitDiagnostics: FnCallProgramSourceFileCancellationToken,
+      parseJsonConfigFileContent: (/* json */ js.Any, /* host */ ParseConfigHost, /* basePath */ String, /* existingOptions */ js.UndefOr[CompilerOptions], /* configFileName */ js.UndefOr[String], /* resolutionStack */ js.UndefOr[js.Array[Path]], /* extraFileExtensions */ js.UndefOr[js.Array[FileExtensionInfo]], /* extendedConfigCache */ js.UndefOr[Map[ExtendedConfigCacheEntry]], /* existingWatchOptions */ js.UndefOr[WatchOptions]) => ParsedCommandLine,
+      readConfigFile: (/* fileName */ String, /* readFile */ js.Function1[/* path */ String, js.UndefOr[String]]) => Config,
+      sys: System,
+      transpileModule: (/* input */ String, /* transpileOptions */ TranspileOptions) => TranspileOutput,
+      version: String
+    ): TSCommon = {
+      val __obj = js.Dynamic.literal(ModuleKind = ModuleKind.asInstanceOf[js.Any], ScriptSnapshot = ScriptSnapshot.asInstanceOf[js.Any], ScriptTarget = ScriptTarget.asInstanceOf[js.Any], createLanguageService = createLanguageService.asInstanceOf[js.Any], displayPartsToString = displayPartsToString.asInstanceOf[js.Any], findConfigFile = findConfigFile.asInstanceOf[js.Any], flattenDiagnosticMessageText = flattenDiagnosticMessageText.asInstanceOf[js.Any], formatDiagnostics = js.Any.fromFunction2(formatDiagnostics), formatDiagnosticsWithColorAndContext = js.Any.fromFunction2(formatDiagnosticsWithColorAndContext), getDefaultLibFilePath = js.Any.fromFunction1(getDefaultLibFilePath), getPreEmitDiagnostics = getPreEmitDiagnostics.asInstanceOf[js.Any], parseJsonConfigFileContent = js.Any.fromFunction9(parseJsonConfigFileContent), readConfigFile = js.Any.fromFunction2(readConfigFile), sys = sys.asInstanceOf[js.Any], transpileModule = js.Any.fromFunction2(transpileModule), version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TSCommon]
+    }
+    
+    @scala.inline
+    implicit class TSCommonMutableBuilder[Self <: TSCommon] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCreateLanguageService(value: FnCallHostDocumentRegistrySyntaxOnlyOrLanguageServiceMode): Self = StObject.set(x, "createLanguageService", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDisplayPartsToString(value: FnCall): Self = StObject.set(x, "displayPartsToString", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFindConfigFile(value: FnCallSearchPathFileExistsConfigName): Self = StObject.set(x, "findConfigFile", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFlattenDiagnosticMessageText(value: FnCallDiagNewLineIndent): Self = StObject.set(x, "flattenDiagnosticMessageText", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFormatDiagnostics(value: (/* diagnostics */ js.Array[Diagnostic], /* host */ FormatDiagnosticsHost) => String): Self = StObject.set(x, "formatDiagnostics", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setFormatDiagnosticsWithColorAndContext(value: (/* diagnostics */ js.Array[Diagnostic], /* host */ FormatDiagnosticsHost) => String): Self = StObject.set(x, "formatDiagnosticsWithColorAndContext", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setGetDefaultLibFilePath(value: /* options */ CompilerOptions => String): Self = StObject.set(x, "getDefaultLibFilePath", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGetPreEmitDiagnostics(value: FnCallProgramSourceFileCancellationToken): Self = StObject.set(x, "getPreEmitDiagnostics", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setModuleKind(
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ModuleKind */ js.Any
+      ): Self = StObject.set(x, "ModuleKind", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setParseJsonConfigFileContent(
+        value: (/* json */ js.Any, /* host */ ParseConfigHost, /* basePath */ String, /* existingOptions */ js.UndefOr[CompilerOptions], /* configFileName */ js.UndefOr[String], /* resolutionStack */ js.UndefOr[js.Array[Path]], /* extraFileExtensions */ js.UndefOr[js.Array[FileExtensionInfo]], /* extendedConfigCache */ js.UndefOr[Map[ExtendedConfigCacheEntry]], /* existingWatchOptions */ js.UndefOr[WatchOptions]) => ParsedCommandLine
+      ): Self = StObject.set(x, "parseJsonConfigFileContent", js.Any.fromFunction9(value))
+      
+      @scala.inline
+      def setReadConfigFile(
+        value: (/* fileName */ String, /* readFile */ js.Function1[/* path */ String, js.UndefOr[String]]) => Config
+      ): Self = StObject.set(x, "readConfigFile", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setScriptSnapshot(value: TypeofScriptSnapshot): Self = StObject.set(x, "ScriptSnapshot", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScriptTarget(
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ScriptTarget */ js.Any
+      ): Self = StObject.set(x, "ScriptTarget", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSys(value: System): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTranspileModule(value: (/* input */ String, /* transpileOptions */ TranspileOptions) => TranspileOutput): Self = StObject.set(x, "transpileModule", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait TypeInfo extends StObject {
     
-    var comment: String = js.native
+    var comment: String
     
-    var name: String = js.native
+    var name: String
   }
   object TypeInfo {
     

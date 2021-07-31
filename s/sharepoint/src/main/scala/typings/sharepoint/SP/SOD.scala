@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,7 +25,7 @@ trait SOD extends StObject {
   def loadMultiple(keys: js.Array[String], fn: js.Function0[Unit], bSync: Boolean): Unit = js.native
   
   def notifyEventAndExecuteWaitingJobs(eventName: String): Unit = js.native
-  def notifyEventAndExecuteWaitingJobs(eventName: String, args: js.Array[_]): Unit = js.native
+  def notifyEventAndExecuteWaitingJobs(eventName: String, args: js.Array[js.Any]): Unit = js.native
   
   def notifyScriptLoadedAndExecuteWaitingJobs(scriptFileName: String): Unit = js.native
   

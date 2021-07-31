@@ -2,17 +2,17 @@ package typings.simperium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocalQueueEvent[T] extends SimperiumEvent {
+trait LocalQueueEvent[T]
+  extends StObject
+     with SimperiumEvent {
   
-  def queued(id: EntityId, change: Change[T], queue: js.Array[LocalQueuedChange[T]]): Unit = js.native
+  def queued(id: EntityId, change: Change[T], queue: js.Array[LocalQueuedChange[T]]): Unit
   
-  def send(change: Change[T]): Unit = js.native
+  def send(change: Change[T]): Unit
   
-  def wait(id: EntityId): Unit = js.native
+  def wait(id: EntityId): Unit
 }
 object LocalQueueEvent {
   
@@ -28,7 +28,7 @@ object LocalQueueEvent {
   }
   
   @scala.inline
-  implicit class LocalQueueEventMutableBuilder[Self <: LocalQueueEvent[_], T] (val x: Self with LocalQueueEvent[T]) extends AnyVal {
+  implicit class LocalQueueEventMutableBuilder[Self <: LocalQueueEvent[?], T] (val x: Self & LocalQueueEvent[T]) extends AnyVal {
     
     @scala.inline
     def setQueued(value: (EntityId, Change[T], js.Array[LocalQueuedChange[T]]) => Unit): Self = StObject.set(x, "queued", js.Any.fromFunction3(value))

@@ -2,7 +2,6 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "TargetInstruction")
@@ -57,12 +56,10 @@ object TargetInstruction {
     * @param expression The binding expression.
     * @return The created instruction.
     */
-  @JSImport("aurelia-templating", "TargetInstruction.contentExpression")
-  @js.native
-  def contentExpression(): TargetInstruction = js.native
-  @JSImport("aurelia-templating", "TargetInstruction.contentExpression")
-  @js.native
-  def contentExpression(expression: js.Any): TargetInstruction = js.native
+  @scala.inline
+  def contentExpression(): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("contentExpression")().asInstanceOf[TargetInstruction]
+  @scala.inline
+  def contentExpression(expression: js.Any): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("contentExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
   
   /**
     * Creates an instruction that represents an element with behaviors and bindings.
@@ -74,9 +71,8 @@ object TargetInstruction {
     * @param elementInstruction The element behavior for this element.
     * @return The created instruction.
     */
-  @JSImport("aurelia-templating", "TargetInstruction.letElement")
-  @js.native
-  def letElement(expressions: js.Array[js.Object]): TargetInstruction = js.native
+  @scala.inline
+  def letElement(expressions: js.Array[js.Object]): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("letElement")(expressions.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
   
   /**
     * Creates an instruction that represents content that was lifted out of the DOM and into a ViewFactory.
@@ -84,9 +80,8 @@ object TargetInstruction {
     * @param liftingInstruction The behavior instruction of the lifting behavior.
     * @return The created instruction.
     */
-  @JSImport("aurelia-templating", "TargetInstruction.lifting")
-  @js.native
-  def lifting(parentInjectorId: Double, liftingInstruction: BehaviorInstruction): TargetInstruction = js.native
+  @scala.inline
+  def lifting(parentInjectorId: Double, liftingInstruction: BehaviorInstruction): TargetInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("lifting")(parentInjectorId.asInstanceOf[js.Any], liftingInstruction.asInstanceOf[js.Any])).asInstanceOf[TargetInstruction]
   
   /**
     * An empty array used to represent a target with no binding expressions.
@@ -107,8 +102,7 @@ object TargetInstruction {
     * @param elementInstruction The element behavior for this element.
     * @return The created instruction.
     */
-  @JSImport("aurelia-templating", "TargetInstruction.normal")
-  @js.native
+  @scala.inline
   def normal(
     injectorId: Double,
     parentInjectorId: Double,
@@ -116,16 +110,15 @@ object TargetInstruction {
     behaviorInstructions: js.Array[BehaviorInstruction],
     expressions: js.Array[js.Object],
     elementInstruction: BehaviorInstruction
-  ): TargetInstruction = js.native
+  ): TargetInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("normal")(injectorId.asInstanceOf[js.Any], parentInjectorId.asInstanceOf[js.Any], providers.asInstanceOf[js.Any], behaviorInstructions.asInstanceOf[js.Any], expressions.asInstanceOf[js.Any], elementInstruction.asInstanceOf[js.Any])).asInstanceOf[TargetInstruction]
   
   /**
     * Creates an instruction that represents a shadow dom slot.
     * @param parentInjectorId The id of the parent dependency injection container.
     * @return The created instruction.
     */
-  @JSImport("aurelia-templating", "TargetInstruction.shadowSlot")
-  @js.native
-  def shadowSlot(parentInjectorId: Double): TargetInstruction = js.native
+  @scala.inline
+  def shadowSlot(parentInjectorId: Double): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("shadowSlot")(parentInjectorId.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
   
   /**
     * Creates an instruction that represents the surrogate behaviors and bindings for an element.
@@ -135,12 +128,11 @@ object TargetInstruction {
     * @param values A key/value lookup of attributes to transplant.
     * @return The created instruction.
     */
-  @JSImport("aurelia-templating", "TargetInstruction.surrogate")
-  @js.native
+  @scala.inline
   def surrogate(
     providers: js.Array[js.Function],
     behaviorInstructions: js.Array[BehaviorInstruction],
     expressions: js.Array[js.Object],
     values: js.Object
-  ): TargetInstruction = js.native
+  ): TargetInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("surrogate")(providers.asInstanceOf[js.Any], behaviorInstructions.asInstanceOf[js.Any], expressions.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TargetInstruction]
 }

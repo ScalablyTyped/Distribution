@@ -8,17 +8,16 @@ import typings.aliApp.aliAppNumbers.`4`
 import typings.aliApp.anon.ApFilePaths
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompressImageOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 要压缩的图片地址数组
     */
-  var apFilePaths: js.Array[String] = js.native
+  var apFilePaths: js.Array[String]
   
   /**
     * 压缩级别，支持 0 ~ 4 的整数，默认 4。详见「compressLevel表 说明表」
@@ -31,10 +30,10 @@ trait CompressImageOptions
     * 3 | 不压缩
     * 4 | 根据网络适应
     */
-  var compressLevel: js.UndefOr[`0` | `1` | `2` | `3` | `4`] = js.native
+  var compressLevel: js.UndefOr[`0` | `1` | `2` | `3` | `4`] = js.undefined
   
   @JSName("success")
-  var success_CompressImageOptions: js.UndefOr[js.Function1[/* res */ ApFilePaths, Unit]] = js.native
+  var success_CompressImageOptions: js.UndefOr[js.Function1[/* res */ ApFilePaths, Unit]] = js.undefined
 }
 object CompressImageOptions {
   

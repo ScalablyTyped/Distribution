@@ -2,19 +2,17 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Structured results that are returned as part of search request.
   */
-@js.native
 trait SchemaStructuredResult extends StObject {
   
   /**
     * Representation of a person
     */
-  var person: js.UndefOr[SchemaPerson] = js.native
+  var person: js.UndefOr[SchemaPerson] = js.undefined
 }
 object SchemaStructuredResult {
   

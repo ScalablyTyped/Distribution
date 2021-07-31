@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientSpeech.gapi.client.speech
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WordInfo extends StObject {
   
   /**
     * Time offset relative to the beginning of the audio, and corresponding to the end of the spoken word. This field is only set if `enable_word_time_offsets=true` and only in the top
     * hypothesis. This is an experimental feature and the accuracy of the time offset can vary.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A distinct integer value is assigned for every speaker within the audio. This field specifies which one of those speakers was detected to have spoken this word. Value
     * ranges from '1' to diarization_speaker_count. speaker_tag is set if enable_speaker_diarization = 'true' and only in the top alternative.
     */
-  var speakerTag: js.UndefOr[Double] = js.native
+  var speakerTag: js.UndefOr[Double] = js.undefined
   
   /**
     * Time offset relative to the beginning of the audio, and corresponding to the start of the spoken word. This field is only set if `enable_word_time_offsets=true` and only in the top
     * hypothesis. This is an experimental feature and the accuracy of the time offset can vary.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** The word corresponding to this set of information. */
-  var word: js.UndefOr[String] = js.native
+  var word: js.UndefOr[String] = js.undefined
 }
 object WordInfo {
   

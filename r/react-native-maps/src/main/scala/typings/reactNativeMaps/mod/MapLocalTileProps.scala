@@ -3,17 +3,17 @@ package typings.reactNativeMaps.mod
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapLocalTileProps extends ViewProps {
+trait MapLocalTileProps
+  extends StObject
+     with ViewProps {
   
-  var pathTemplate: String = js.native
+  var pathTemplate: String
   
-  var tileSize: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object MapLocalTileProps {
   

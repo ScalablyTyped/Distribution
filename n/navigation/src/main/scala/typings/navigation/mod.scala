@@ -9,7 +9,6 @@ import typings.std.HTMLAnchorElement
 import typings.std.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -73,7 +72,9 @@ object mod {
     * Initializes a new instance of the HTML5HistoryManager class
     * @param applicationPath The application path
     */
-  class HTML5HistoryManager () extends HistoryManager {
+  class HTML5HistoryManager ()
+    extends StObject
+       with HistoryManager {
     def this(applicationPath: String) = this()
     
     /**
@@ -98,7 +99,9 @@ object mod {
     * @param replaceQueryIdentifier a value indicating whether to use '#'
     * in place of '?'. Set to true for Internet explorer 6 and 7 support
     */
-  class HashHistoryManager () extends HistoryManager {
+  class HashHistoryManager ()
+    extends StObject
+       with HistoryManager {
     def this(replaceQueryIdentifier: Boolean) = this()
     
     /**
@@ -118,7 +121,9 @@ object mod {
   
   @JSImport("navigation", "State")
   @js.native
-  class State () extends StateInfo {
+  class State ()
+    extends StObject
+       with StateInfo {
     
     /**
       * Gets the crumb trail key
@@ -139,6 +144,12 @@ object mod {
       * Gets the formatted default NavigationData for this State
       */
     var formattedDefaults: js.Any = js.native
+    
+    /**
+      * Gets the unique key
+      */
+    /* CompleteClass */
+    var key: String = js.native
     
     /**
       * Called on the current State after navigating to it
@@ -334,8 +345,8 @@ object mod {
   class StateNavigator () extends StObject {
     def this(stateInfos: js.Array[StateInfo]) = this()
     def this(stateInfos: StateNavigator) = this()
-    def this(stateInfos: js.UndefOr[scala.Nothing], historyManager: HistoryManager) = this()
     def this(stateInfos: js.Array[StateInfo], historyManager: HistoryManager) = this()
+    def this(stateInfos: Unit, historyManager: HistoryManager) = this()
     def this(stateInfos: StateNavigator, historyManager: HistoryManager) = this()
     
     /**
@@ -434,72 +445,49 @@ object mod {
       * @param currentContext The current StateContext
       */
     def navigateLink(url: String): Unit = js.native
+    def navigateLink(url: String, historyAction: Unit, history: Boolean): Unit = js.native
     def navigateLink(
       url: String,
-      historyAction: js.UndefOr[scala.Nothing],
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.UndefOr[scala.Nothing],
-      currentContext: StateContext
-    ): Unit = js.native
-    def navigateLink(
-      url: String,
-      historyAction: js.UndefOr[scala.Nothing],
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
-    ): Unit = js.native
-    def navigateLink(
-      url: String,
-      historyAction: js.UndefOr[scala.Nothing],
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
-    ): Unit = js.native
-    def navigateLink(url: String, historyAction: js.UndefOr[scala.Nothing], history: Boolean): Unit = js.native
-    def navigateLink(
-      url: String,
-      historyAction: js.UndefOr[scala.Nothing],
-      history: Boolean,
-      suspendNavigation: js.UndefOr[scala.Nothing],
-      currentContext: StateContext
-    ): Unit = js.native
-    def navigateLink(
-      url: String,
-      historyAction: js.UndefOr[scala.Nothing],
+      historyAction: Unit,
       history: Boolean,
       suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
     ): Unit = js.native
     def navigateLink(
       url: String,
-      historyAction: js.UndefOr[scala.Nothing],
+      historyAction: Unit,
       history: Boolean,
       suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+      currentContext: StateContext
+    ): Unit = js.native
+    def navigateLink(
+      url: String,
+      historyAction: Unit,
+      history: Boolean,
+      suspendNavigation: Unit,
+      currentContext: StateContext
+    ): Unit = js.native
+    def navigateLink(
+      url: String,
+      historyAction: Unit,
+      history: Unit,
+      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
+    ): Unit = js.native
+    def navigateLink(
+      url: String,
+      historyAction: Unit,
+      history: Unit,
+      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+      currentContext: StateContext
+    ): Unit = js.native
+    def navigateLink(
+      url: String,
+      historyAction: Unit,
+      history: Unit,
+      suspendNavigation: Unit,
       currentContext: StateContext
     ): Unit = js.native
     @JSName("navigateLink")
     def navigateLink_add(url: String, historyAction: add): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(
-      url: String,
-      historyAction: add,
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.UndefOr[scala.Nothing],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(
-      url: String,
-      historyAction: add,
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(
-      url: String,
-      historyAction: add,
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
-    ): Unit = js.native
     @JSName("navigateLink")
     def navigateLink_add(url: String, historyAction: add, history: Boolean): Unit = js.native
     @JSName("navigateLink")
@@ -507,14 +495,6 @@ object mod {
       url: String,
       historyAction: add,
       history: Boolean,
-      suspendNavigation: js.UndefOr[scala.Nothing],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(
-      url: String,
-      historyAction: add,
-      history: Boolean,
       suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
     ): Unit = js.native
     @JSName("navigateLink")
@@ -523,33 +503,41 @@ object mod {
       historyAction: add,
       history: Boolean,
       suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+      currentContext: StateContext
+    ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_add(
+      url: String,
+      historyAction: add,
+      history: Boolean,
+      suspendNavigation: Unit,
+      currentContext: StateContext
+    ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_add(
+      url: String,
+      historyAction: add,
+      history: Unit,
+      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
+    ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_add(
+      url: String,
+      historyAction: add,
+      history: Unit,
+      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+      currentContext: StateContext
+    ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_add(
+      url: String,
+      historyAction: add,
+      history: Unit,
+      suspendNavigation: Unit,
       currentContext: StateContext
     ): Unit = js.native
     @JSName("navigateLink")
     def navigateLink_none(url: String, historyAction: none): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(
-      url: String,
-      historyAction: none,
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.UndefOr[scala.Nothing],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(
-      url: String,
-      historyAction: none,
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(
-      url: String,
-      historyAction: none,
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
-    ): Unit = js.native
     @JSName("navigateLink")
     def navigateLink_none(url: String, historyAction: none, history: Boolean): Unit = js.native
     @JSName("navigateLink")
@@ -557,14 +545,6 @@ object mod {
       url: String,
       historyAction: none,
       history: Boolean,
-      suspendNavigation: js.UndefOr[scala.Nothing],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(
-      url: String,
-      historyAction: none,
-      history: Boolean,
       suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
     ): Unit = js.native
     @JSName("navigateLink")
@@ -573,33 +553,41 @@ object mod {
       historyAction: none,
       history: Boolean,
       suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+      currentContext: StateContext
+    ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_none(
+      url: String,
+      historyAction: none,
+      history: Boolean,
+      suspendNavigation: Unit,
+      currentContext: StateContext
+    ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_none(
+      url: String,
+      historyAction: none,
+      history: Unit,
+      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
+    ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_none(
+      url: String,
+      historyAction: none,
+      history: Unit,
+      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+      currentContext: StateContext
+    ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_none(
+      url: String,
+      historyAction: none,
+      history: Unit,
+      suspendNavigation: Unit,
       currentContext: StateContext
     ): Unit = js.native
     @JSName("navigateLink")
     def navigateLink_replace(url: String, historyAction: replace): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(
-      url: String,
-      historyAction: replace,
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.UndefOr[scala.Nothing],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(
-      url: String,
-      historyAction: replace,
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(
-      url: String,
-      historyAction: replace,
-      history: js.UndefOr[scala.Nothing],
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
-    ): Unit = js.native
     @JSName("navigateLink")
     def navigateLink_replace(url: String, historyAction: replace, history: Boolean): Unit = js.native
     @JSName("navigateLink")
@@ -607,14 +595,6 @@ object mod {
       url: String,
       historyAction: replace,
       history: Boolean,
-      suspendNavigation: js.UndefOr[scala.Nothing],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(
-      url: String,
-      historyAction: replace,
-      history: Boolean,
       suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
     ): Unit = js.native
     @JSName("navigateLink")
@@ -625,19 +605,50 @@ object mod {
       suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
       currentContext: StateContext
     ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_replace(
+      url: String,
+      historyAction: replace,
+      history: Boolean,
+      suspendNavigation: Unit,
+      currentContext: StateContext
+    ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_replace(
+      url: String,
+      historyAction: replace,
+      history: Unit,
+      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
+    ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_replace(
+      url: String,
+      historyAction: replace,
+      history: Unit,
+      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+      currentContext: StateContext
+    ): Unit = js.native
+    @JSName("navigateLink")
+    def navigateLink_replace(
+      url: String,
+      historyAction: replace,
+      history: Unit,
+      suspendNavigation: Unit,
+      currentContext: StateContext
+    ): Unit = js.native
     
-    @JSName("navigate")
-    def navigate_add(stateKey: String, navigationData: js.UndefOr[scala.Nothing], historyAction: add): Unit = js.native
     @JSName("navigate")
     def navigate_add(stateKey: String, navigationData: js.Any, historyAction: add): Unit = js.native
     @JSName("navigate")
-    def navigate_none(stateKey: String, navigationData: js.UndefOr[scala.Nothing], historyAction: none): Unit = js.native
+    def navigate_add(stateKey: String, navigationData: Unit, historyAction: add): Unit = js.native
     @JSName("navigate")
     def navigate_none(stateKey: String, navigationData: js.Any, historyAction: none): Unit = js.native
     @JSName("navigate")
-    def navigate_replace(stateKey: String, navigationData: js.UndefOr[scala.Nothing], historyAction: replace): Unit = js.native
+    def navigate_none(stateKey: String, navigationData: Unit, historyAction: none): Unit = js.native
     @JSName("navigate")
     def navigate_replace(stateKey: String, navigationData: js.Any, historyAction: replace): Unit = js.native
+    @JSName("navigate")
+    def navigate_replace(stateKey: String, navigationData: Unit, historyAction: replace): Unit = js.native
     
     /**
       * Unregisters a before navigate event listener
@@ -716,17 +727,17 @@ object mod {
     def refresh(): Unit = js.native
     def refresh(navigationData: js.Any): Unit = js.native
     @JSName("refresh")
-    def refresh_add(navigationData: js.UndefOr[scala.Nothing], historyAction: add): Unit = js.native
-    @JSName("refresh")
     def refresh_add(navigationData: js.Any, historyAction: add): Unit = js.native
     @JSName("refresh")
-    def refresh_none(navigationData: js.UndefOr[scala.Nothing], historyAction: none): Unit = js.native
+    def refresh_add(navigationData: Unit, historyAction: add): Unit = js.native
     @JSName("refresh")
     def refresh_none(navigationData: js.Any, historyAction: none): Unit = js.native
     @JSName("refresh")
-    def refresh_replace(navigationData: js.UndefOr[scala.Nothing], historyAction: replace): Unit = js.native
+    def refresh_none(navigationData: Unit, historyAction: none): Unit = js.native
     @JSName("refresh")
     def refresh_replace(navigationData: js.Any, historyAction: replace): Unit = js.native
+    @JSName("refresh")
+    def refresh_replace(navigationData: Unit, historyAction: replace): Unit = js.native
     
     /**
       * Navigates to the passed in url
@@ -831,9 +842,9 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait StateInfo
-    extends /**
+    extends StObject
+       with /**
     * Gets the additional state attributes
     */
   /* extras */ StringDictionary[js.Any] {
@@ -841,38 +852,38 @@ object mod {
     /**
       * Gets the default NavigationData Types for  this State
       */
-    var defaultTypes: js.UndefOr[js.Any] = js.native
+    var defaultTypes: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Gets the default NavigationData for this State
       */
-    var defaults: js.UndefOr[js.Any] = js.native
+    var defaults: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Gets the unique key
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * Gets the route Url patterns
       */
-    var route: js.UndefOr[String | js.Array[String]] = js.native
+    var route: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Gets the textual description of the state
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * Gets a value that indicates whether to maintain the crumb trail
       */
-    var trackCrumbTrail: js.UndefOr[Boolean | String] = js.native
+    var trackCrumbTrail: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Gets a value that indicates whether NavigationData Types are
       * preserved when navigating
       */
-    var trackTypes: js.UndefOr[Boolean] = js.native
+    var trackTypes: js.UndefOr[Boolean] = js.undefined
   }
   object StateInfo {
     

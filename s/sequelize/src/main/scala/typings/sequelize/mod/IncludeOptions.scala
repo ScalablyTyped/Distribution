@@ -3,76 +3,74 @@ package typings.sequelize.mod
 import typings.sequelize.anon.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Complex include options
   */
-@js.native
 trait IncludeOptions extends StObject {
   
-  var all: js.UndefOr[Boolean | String] = js.native
+  var all: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * The alias of the relation, in case the model you want to eagerly load is aliassed. For `hasOne` /
     * `belongsTo`, this should be the singular name, and for `hasMany`, it should be the plural
     */
-  var as: js.UndefOr[String] = js.native
+  var as: js.UndefOr[String] = js.undefined
   
   /**
     * The association you want to eagerly load. (This can be used instead of providing a model/as pair).
     * You can also use the association alias.
     */
-  var association: js.UndefOr[IncludeAssociation | String] = js.native
+  var association: js.UndefOr[IncludeAssociation | String] = js.undefined
   
   /**
     * A list of attributes to select from the child model
     */
-  var attributes: js.UndefOr[FindOptionsAttributesArray | Exclude] = js.native
+  var attributes: js.UndefOr[FindOptionsAttributesArray | Exclude] = js.undefined
   
   /**
     * Load further nested related models
     */
-  var include: js.UndefOr[js.Array[(Model[_, _, _]) | IncludeOptions]] = js.native
+  var include: js.UndefOr[js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]] = js.undefined
   
   /**
     * The model you want to eagerly load
     */
-  var model: js.UndefOr[Model[_, _, _]] = js.native
+  var model: js.UndefOr[Model[js.Any, js.Any, js.Any]] = js.undefined
   
   /**
     * if true, it will also eager load the relations of the child models, recursively.
     */
-  var nested: js.UndefOr[Boolean] = js.native
+  var nested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, only non-deleted records will be returned. If false, both deleted and non-deleted records will
     * be returned. Only applies if `options.paranoid` is true for the model.
     */
-  var paranoid: js.UndefOr[Boolean] = js.native
+  var paranoid: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, converts to an inner join, which means that the parent model will only be loaded if it has any
     * matching children. True if `include.where` is set, false otherwise.
     */
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, runs a separate query to fetch the associated instances, only supported for hasMany associations
     */
-  var separate: js.UndefOr[Boolean] = js.native
+  var separate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Through Options
     */
-  var through: js.UndefOr[IncludeThroughOptions] = js.native
+  var through: js.UndefOr[IncludeThroughOptions] = js.undefined
   
   /**
     * Where clauses to apply to the child models. Note that this converts the eager load to an inner join,
     * unless you explicitly set `required: false`
     */
-  var where: js.UndefOr[AnyWhereOptions] = js.native
+  var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 object IncludeOptions {
   
@@ -113,7 +111,7 @@ object IncludeOptions {
     def setAttributesVarargs(value: (String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    def setInclude(value: js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
@@ -122,7 +120,7 @@ object IncludeOptions {
     def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setModel(value: Model[_, _, _]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setModelUndefined: Self = StObject.set(x, "model", js.undefined)

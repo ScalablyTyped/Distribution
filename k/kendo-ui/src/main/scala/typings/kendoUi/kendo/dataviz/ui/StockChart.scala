@@ -8,20 +8,21 @@ import typings.kendoUi.kendo.drawing.PDFOptions
 import typings.kendoUi.kendo.ui.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StockChart extends Widget {
+trait StockChart
+  extends StObject
+     with Widget {
   
   var dataSource: DataSource = js.native
   
-  def exportImage(options: js.Any): JQueryPromise[_] = js.native
+  def exportImage(options: js.Any): JQueryPromise[js.Any] = js.native
   
-  def exportPDF(): JQueryPromise[_] = js.native
-  def exportPDF(options: PDFOptions): JQueryPromise[_] = js.native
+  def exportPDF(): JQueryPromise[js.Any] = js.native
+  def exportPDF(options: PDFOptions): JQueryPromise[js.Any] = js.native
   
-  def exportSVG(options: js.Any): JQueryPromise[_] = js.native
+  def exportSVG(options: js.Any): JQueryPromise[js.Any] = js.native
   
   def imageDataURL(): String = js.native
   

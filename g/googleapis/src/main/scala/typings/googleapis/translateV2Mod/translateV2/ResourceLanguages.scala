@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/translate/v2", "translate_v2.Resource$Languages")
@@ -31,7 +30,7 @@ class ResourceLanguages protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaLanguagesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaLanguagesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLanguagesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLanguagesListResponse] = js.native
   def list(params: ParamsResourceLanguagesList): GaxiosPromise[SchemaLanguagesListResponse] = js.native
   def list(params: ParamsResourceLanguagesList, callback: BodyResponseCallback[SchemaLanguagesListResponse]): Unit = js.native
   def list(

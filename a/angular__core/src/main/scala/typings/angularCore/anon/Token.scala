@@ -6,17 +6,15 @@ import typings.angularCore.angularCoreStrings.root
 import typings.angularCore.r3SymbolsMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Token[T] extends StObject {
   
-  def factory(): T = js.native
+  def factory(): T
   
-  var providedIn: js.UndefOr[Type[_] | root | platform | any | Null] = js.native
+  var providedIn: js.UndefOr[Type[js.Any] | root | platform | any | Null] = js.undefined
   
-  var token: js.Any = js.native
+  var token: js.Any
 }
 object Token {
   
@@ -27,13 +25,13 @@ object Token {
   }
   
   @scala.inline
-  implicit class TokenMutableBuilder[Self <: Token[_], T] (val x: Self with Token[T]) extends AnyVal {
+  implicit class TokenMutableBuilder[Self <: Token[?], T] (val x: Self & Token[T]) extends AnyVal {
     
     @scala.inline
     def setFactory(value: () => T): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProvidedIn(value: Type[_] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProvidedInNull: Self = StObject.set(x, "providedIn", null)

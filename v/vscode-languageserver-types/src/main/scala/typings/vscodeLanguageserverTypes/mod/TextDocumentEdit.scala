@@ -2,21 +2,19 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentEdit extends StObject {
   
   /**
     * The edits to be applied.
     */
-  var edits: js.Array[TextEdit] = js.native
+  var edits: js.Array[TextEdit]
   
   /**
     * The text document to change.
     */
-  var textDocument: VersionedTextDocumentIdentifier = js.native
+  var textDocument: VersionedTextDocumentIdentifier
 }
 object TextDocumentEdit {
   
@@ -26,16 +24,18 @@ object TextDocumentEdit {
     __obj.asInstanceOf[TextDocumentEdit]
   }
   
+  @JSImport("vscode-languageserver-types", "TextDocumentEdit")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new `TextDocumentEdit`
     */
-  @JSImport("vscode-languageserver-types", "TextDocumentEdit.create")
-  @js.native
-  def create(textDocument: VersionedTextDocumentIdentifier, edits: js.Array[TextEdit]): TextDocumentEdit = js.native
+  @scala.inline
+  def create(textDocument: VersionedTextDocumentIdentifier, edits: js.Array[TextEdit]): TextDocumentEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(textDocument.asInstanceOf[js.Any], edits.asInstanceOf[js.Any])).asInstanceOf[TextDocumentEdit]
   
-  @JSImport("vscode-languageserver-types", "TextDocumentEdit.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentEdit */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentEdit */ Boolean]
   
   @scala.inline
   implicit class TextDocumentEditMutableBuilder[Self <: TextDocumentEdit] (val x: Self) extends AnyVal {

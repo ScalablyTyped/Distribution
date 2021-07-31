@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,9 +40,8 @@ object DataViewCloseButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewCloseButton.create")
-  @js.native
-  def create(model: IModel): DataViewCloseButton = js.native
+  @scala.inline
+  def create(model: IModel): DataViewCloseButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DataViewCloseButton]
   
   /**
     * Creates and returns a new DataViewCloseButton instance in the SDK and on the server.
@@ -54,9 +52,8 @@ object DataViewCloseButton {
     *  6.0.0 to 6.6.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewCloseButton.createIn")
-  @js.native
-  def createIn(container: ControlBar): DataViewCloseButton = js.native
+  @scala.inline
+  def createIn(container: ControlBar): DataViewCloseButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataViewCloseButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewCloseButton.structureTypeName")

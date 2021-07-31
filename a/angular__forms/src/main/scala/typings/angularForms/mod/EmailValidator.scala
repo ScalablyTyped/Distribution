@@ -2,12 +2,13 @@ package typings.angularForms.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "EmailValidator")
 @js.native
-class EmailValidator () extends Validator {
+class EmailValidator ()
+  extends StObject
+     with Validator {
   
   var _enabled: js.Any = js.native
   
@@ -25,4 +26,16 @@ class EmailValidator () extends Validator {
     */
   @JSName("registerOnValidatorChange")
   def registerOnValidatorChange_MEmailValidator(fn: js.Function0[Unit]): Unit = js.native
+  
+  /**
+    * @description
+    * Method that performs synchronous validation against the provided control.
+    *
+    * @param control The control to validate against.
+    *
+    * @returns A map of validation errors if validation fails,
+    * otherwise null.
+    */
+  /* CompleteClass */
+  override def validate(control: AbstractControl): ValidationErrors | Null = js.native
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteResourcePolicyRequest extends StObject {
   
   /**
     * The name of the policy to be revoked. This parameter is required.
     */
-  var policyName: js.UndefOr[PolicyName] = js.native
+  var policyName: js.UndefOr[PolicyName] = js.undefined
 }
 object DeleteResourcePolicyRequest {
   

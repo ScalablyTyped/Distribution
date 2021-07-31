@@ -3,7 +3,6 @@ package typings.stylableCore
 import typings.postcss.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diagnosticsMod {
@@ -25,16 +24,15 @@ object diagnosticsMod {
     def warn(node: Node, message: String, options: DiagnosticOptions): Unit = js.native
   }
   
-  @js.native
   trait Diagnostic extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var node: Node = js.native
+    var node: Node
     
-    var options: DiagnosticOptions = js.native
+    var options: DiagnosticOptions
     
-    var `type`: DiagnosticType = js.native
+    var `type`: DiagnosticType
   }
   object Diagnostic {
     
@@ -62,10 +60,9 @@ object diagnosticsMod {
     }
   }
   
-  @js.native
   trait DiagnosticOptions extends StObject {
     
-    var word: js.UndefOr[String] = js.native
+    var word: js.UndefOr[String] = js.undefined
   }
   object DiagnosticOptions {
     

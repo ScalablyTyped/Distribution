@@ -7,13 +7,11 @@ import typings.rbx.rbxStrings.block
 import typings.rbx.rbxStrings.flex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
-  var value: block | flex | `inline` | `inline-block` | `inline-flex` = js.native
+  var value: block | flex | `inline` | `inline-block` | `inline-flex`
 }
 object Value {
   

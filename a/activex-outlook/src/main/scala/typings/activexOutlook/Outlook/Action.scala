@@ -2,42 +2,40 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var CopyLike: OlActionCopyLike = js.native
+  var CopyLike: OlActionCopyLike
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  def Execute(): js.Any = js.native
+  def Execute(): js.Any
   
-  var MessageClass: String = js.native
+  var MessageClass: String
   
-  var Name: String = js.native
+  var Name: String
   
   @JSName("Outlook.Action_typekey")
-  var OutlookDotAction_typekey: Action = js.native
+  var OutlookDotAction_typekey: Action
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Prefix: String = js.native
+  var Prefix: String
   
-  var ReplyStyle: OlActionReplyStyle = js.native
+  var ReplyStyle: OlActionReplyStyle
   
-  var ResponseStyle: OlActionResponseStyle = js.native
+  var ResponseStyle: OlActionResponseStyle
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  var ShowOn: OlActionShowOn = js.native
+  var ShowOn: OlActionShowOn
 }
 object Action {
   

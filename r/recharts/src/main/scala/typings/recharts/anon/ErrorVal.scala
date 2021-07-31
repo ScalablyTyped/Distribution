@@ -2,19 +2,17 @@ package typings.recharts.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorVal extends StObject {
   
-  var errorVal: js.Any = js.native
+  var errorVal: js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object ErrorVal {
   

@@ -3,15 +3,16 @@ package typings.fluentuiDomUtilities
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getParentMod {
   
-  @JSImport("@fluentui/dom-utilities/lib/getParent", "getParent")
+  @JSImport("@fluentui/dom-utilities/lib/getParent", JSImport.Namespace)
   @js.native
-  def getParent(child: HTMLElement): HTMLElement | Null = js.native
-  @JSImport("@fluentui/dom-utilities/lib/getParent", "getParent")
-  @js.native
-  def getParent(child: HTMLElement, allowVirtualParents: Boolean): HTMLElement | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getParent(child: HTMLElement): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(child.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+  @scala.inline
+  def getParent(child: HTMLElement, allowVirtualParents: Boolean): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 }

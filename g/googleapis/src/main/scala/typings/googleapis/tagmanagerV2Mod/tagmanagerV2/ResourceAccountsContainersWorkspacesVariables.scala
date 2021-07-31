@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Workspaces$Variables")
@@ -31,7 +30,7 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends StObjec
     */
   def create(): GaxiosPromise[SchemaVariable] = js.native
   def create(callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
   def create(params: ParamsResourceAccountsContainersWorkspacesVariablesCreate): GaxiosPromise[SchemaVariable] = js.native
   def create(
     params: ParamsResourceAccountsContainersWorkspacesVariablesCreate,
@@ -63,7 +62,7 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends StObjec
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersWorkspacesVariablesDelete): GaxiosPromise[Unit] = js.native
   def delete(
     params: ParamsResourceAccountsContainersWorkspacesVariablesDelete,
@@ -95,7 +94,7 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends StObjec
     */
   def get(): GaxiosPromise[SchemaVariable] = js.native
   def get(callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
   def get(params: ParamsResourceAccountsContainersWorkspacesVariablesGet): GaxiosPromise[SchemaVariable] = js.native
   def get(
     params: ParamsResourceAccountsContainersWorkspacesVariablesGet,
@@ -128,7 +127,7 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends StObjec
     */
   def list(): GaxiosPromise[SchemaListVariablesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListVariablesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListVariablesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListVariablesResponse] = js.native
   def list(params: ParamsResourceAccountsContainersWorkspacesVariablesList): GaxiosPromise[SchemaListVariablesResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersWorkspacesVariablesList,
@@ -161,7 +160,7 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends StObjec
     */
   def revert(): GaxiosPromise[SchemaRevertVariableResponse] = js.native
   def revert(callback: BodyResponseCallback[SchemaRevertVariableResponse]): Unit = js.native
-  def revert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRevertVariableResponse] = js.native
+  def revert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRevertVariableResponse] = js.native
   def revert(params: ParamsResourceAccountsContainersWorkspacesVariablesRevert): GaxiosPromise[SchemaRevertVariableResponse] = js.native
   def revert(
     params: ParamsResourceAccountsContainersWorkspacesVariablesRevert,
@@ -195,7 +194,7 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends StObjec
     */
   def update(): GaxiosPromise[SchemaVariable] = js.native
   def update(callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
   def update(params: ParamsResourceAccountsContainersWorkspacesVariablesUpdate): GaxiosPromise[SchemaVariable] = js.native
   def update(
     params: ParamsResourceAccountsContainersWorkspacesVariablesUpdate,

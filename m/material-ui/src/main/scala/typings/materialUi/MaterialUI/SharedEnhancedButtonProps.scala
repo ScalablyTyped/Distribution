@@ -11,55 +11,53 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedEnhancedButtonProps[T] extends StObject {
   
-  var centerRipple: js.UndefOr[Boolean] = js.native
+  var centerRipple: js.UndefOr[Boolean] = js.undefined
   
-  var containerElement: js.UndefOr[ReactNode | String] = js.native
+  var containerElement: js.UndefOr[ReactNode | String] = js.undefined
   
-  var disableFocusRipple: js.UndefOr[Boolean] = js.native
+  var disableFocusRipple: js.UndefOr[Boolean] = js.undefined
   
-  var disableKeyboardFocus: js.UndefOr[Boolean] = js.native
+  var disableKeyboardFocus: js.UndefOr[Boolean] = js.undefined
   
-  var disableTouchRipple: js.UndefOr[Boolean] = js.native
+  var disableTouchRipple: js.UndefOr[Boolean] = js.undefined
   
-  var focusRippleColor: js.UndefOr[String] = js.native
+  var focusRippleColor: js.UndefOr[String] = js.undefined
   
-  var focusRippleOpacity: js.UndefOr[Double] = js.native
+  var focusRippleOpacity: js.UndefOr[Double] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var keyboardFocused: js.UndefOr[Boolean] = js.native
+  var keyboardFocused: js.UndefOr[Boolean] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[js.Object]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
   
   var onKeyboardFocus: js.UndefOr[
     js.Function2[/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var touchRippleColor: js.UndefOr[String] = js.native
+  var touchRippleColor: js.UndefOr[String] = js.undefined
   
-  var touchRippleOpacity: js.UndefOr[Double] = js.native
+  var touchRippleOpacity: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SharedEnhancedButtonProps {
   
@@ -70,7 +68,7 @@ object SharedEnhancedButtonProps {
   }
   
   @scala.inline
-  implicit class SharedEnhancedButtonPropsMutableBuilder[Self <: SharedEnhancedButtonProps[_], T] (val x: Self with SharedEnhancedButtonProps[T]) extends AnyVal {
+  implicit class SharedEnhancedButtonPropsMutableBuilder[Self <: SharedEnhancedButtonProps[?], T] (val x: Self & SharedEnhancedButtonProps[T]) extends AnyVal {
     
     @scala.inline
     def setCenterRipple(value: Boolean): Self = StObject.set(x, "centerRipple", value.asInstanceOf[js.Any])

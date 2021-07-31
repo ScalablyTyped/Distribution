@@ -4,7 +4,6 @@ import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.multiSliderMod.ISliderBaseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderMod {
@@ -36,27 +35,28 @@ object sliderMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ISliderProps extends ISliderBaseProps {
+  trait ISliderProps
+    extends StObject
+       with ISliderBaseProps {
     
     /**
       * Initial value of the slider. This determines the other end of the
       * track fill: from `initialValue` to `value`.
       * @default 0
       */
-    var initialValue: js.UndefOr[Double] = js.native
+    var initialValue: js.UndefOr[Double] = js.undefined
     
     /** Callback invoked when the value changes. */
-    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
     /** Callback invoked when the handle is released. */
-    var onRelease: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onRelease: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
     /**
       * Value of slider.
       * @default 0
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ISliderProps {
     

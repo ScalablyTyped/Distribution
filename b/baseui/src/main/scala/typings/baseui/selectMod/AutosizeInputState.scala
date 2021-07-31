@@ -2,13 +2,11 @@ package typings.baseui.selectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutosizeInputState extends StObject {
   
-  var inputWidth: Double = js.native
+  var inputWidth: Double
 }
 object AutosizeInputState {
   

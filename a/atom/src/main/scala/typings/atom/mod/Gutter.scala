@@ -2,10 +2,8 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gutter extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait Gutter extends StObject {
     *  invalidated, or is destroyed, the decoration will be updated to reflect
     *  the marker's state.
     */
-  def decorateMarker(marker: DisplayMarker, decorationParams: DecorationOptions): Decoration = js.native
+  def decorateMarker(marker: DisplayMarker, decorationParams: DecorationOptions): Decoration
   
   // Gutter Destruction
   /** Destroys the gutter. */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   // Visibility
   /** Hide the gutter. */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /** Determine whether the gutter is visible. */
-  def isVisible(): Boolean = js.native
+  def isVisible(): Boolean
   
   // Event Subscription
   /** Calls your callback when the gutter's visibility changes. */
-  def onDidChangeVisible(callback: js.Function1[/* gutter */ this.type, Unit]): Disposable = js.native
+  def onDidChangeVisible(callback: js.Function1[/* gutter */ this.type, Unit]): Disposable
   
   /** Calls your callback when the gutter is destroyed. */
-  def onDidDestroy(callback: js.Function0[Unit]): Disposable = js.native
+  def onDidDestroy(callback: js.Function0[Unit]): Disposable
   
   /** Show the gutter. */
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object Gutter {
   

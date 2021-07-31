@@ -4,21 +4,19 @@ import typings.react.mod.TransitionEvent
 import typings.react.mod.TransitionEventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableProvidedDraggableProps extends StObject {
   
   // used for shared global styles
-  var `data-rbd-draggable-context-id`: String = js.native
+  var `data-rbd-draggable-context-id`: String
   
-  var `data-rbd-draggable-id`: String = js.native
+  var `data-rbd-draggable-id`: String
   
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[_]] = js.native
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[js.Any]] = js.undefined
   
   // inline style
-  var style: js.UndefOr[DraggingStyle | NotDraggingStyle] = js.native
+  var style: js.UndefOr[DraggingStyle | NotDraggingStyle] = js.undefined
 }
 object DraggableProvidedDraggableProps {
   
@@ -40,7 +38,7 @@ object DraggableProvidedDraggableProps {
     def `setData-rbd-draggable-id`(value: String): Self = StObject.set(x, "data-rbd-draggable-id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTransitionEnd(value: TransitionEvent[_] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+    def setOnTransitionEnd(value: TransitionEvent[js.Any] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)

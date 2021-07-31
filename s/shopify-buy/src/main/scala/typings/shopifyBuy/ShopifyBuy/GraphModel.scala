@@ -2,15 +2,13 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphModel extends StObject {
   
-  var attrs: js.UndefOr[js.Any] = js.native
+  var attrs: js.UndefOr[js.Any] = js.undefined
   
-  var onlineStoreUrl: js.UndefOr[String] = js.native
+  var onlineStoreUrl: js.UndefOr[String] = js.undefined
 }
 object GraphModel {
   

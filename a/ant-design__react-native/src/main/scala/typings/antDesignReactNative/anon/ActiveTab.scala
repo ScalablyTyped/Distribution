@@ -2,29 +2,27 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveTab extends StObject {
   
-  var activeTab: Double = js.native
+  var activeTab: Double
   
-  var animated: Boolean = js.native
+  var animated: Boolean
   
-  var dynamicTabUnderlineWidth: Boolean = js.native
+  var dynamicTabUnderlineWidth: Boolean
   
-  def goToTab(): Unit = js.native
+  def goToTab(): Unit
   
-  var page: Double = js.native
+  var page: Double
   
-  var tabBarActiveTextColor: String = js.native
+  var tabBarActiveTextColor: String
   
-  var tabBarBackgroundColor: String = js.native
+  var tabBarBackgroundColor: String
   
-  var tabBarInactiveTextColor: String = js.native
+  var tabBarInactiveTextColor: String
   
-  var tabs: js.Array[scala.Nothing] = js.native
+  var tabs: js.Array[scala.Nothing]
 }
 object ActiveTab {
   

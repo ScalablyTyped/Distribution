@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeliveryChannelStatus extends StObject {
   
   /**
     * A list that contains the status of the delivery of the configuration history to the specified Amazon S3 bucket.
     */
-  var configHistoryDeliveryInfo: js.UndefOr[ConfigExportDeliveryInfo] = js.native
+  var configHistoryDeliveryInfo: js.UndefOr[ConfigExportDeliveryInfo] = js.undefined
   
   /**
     * A list containing the status of the delivery of the snapshot to the specified Amazon S3 bucket.
     */
-  var configSnapshotDeliveryInfo: js.UndefOr[ConfigExportDeliveryInfo] = js.native
+  var configSnapshotDeliveryInfo: js.UndefOr[ConfigExportDeliveryInfo] = js.undefined
   
   /**
     * A list containing the status of the delivery of the configuration stream notification to the specified Amazon SNS topic.
     */
-  var configStreamDeliveryInfo: js.UndefOr[ConfigStreamDeliveryInfo] = js.native
+  var configStreamDeliveryInfo: js.UndefOr[ConfigStreamDeliveryInfo] = js.undefined
   
   /**
     * The name of the delivery channel.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object DeliveryChannelStatus {
   

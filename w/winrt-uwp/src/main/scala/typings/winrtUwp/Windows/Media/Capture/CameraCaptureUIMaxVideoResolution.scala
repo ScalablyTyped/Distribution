@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object CameraCaptureUIMaxVideoResolution extends StObject {
   
   /** The user can select resolutions up to high definition resolutions. */
   @js.native
-  sealed trait highDefinition extends CameraCaptureUIMaxVideoResolution
+  sealed trait highDefinition
+    extends StObject
+       with CameraCaptureUIMaxVideoResolution
   
   /** The user can select any resolution. */
   @js.native
-  sealed trait highestAvailable extends CameraCaptureUIMaxVideoResolution
+  sealed trait highestAvailable
+    extends StObject
+       with CameraCaptureUIMaxVideoResolution
   
   /** The user can select resolutions up to low definition resolutions. */
   @js.native
-  sealed trait lowDefinition extends CameraCaptureUIMaxVideoResolution
+  sealed trait lowDefinition
+    extends StObject
+       with CameraCaptureUIMaxVideoResolution
   
   /** The user can select resolutions up to standard definition resolutions. */
   @js.native
-  sealed trait standardDefinition extends CameraCaptureUIMaxVideoResolution
+  sealed trait standardDefinition
+    extends StObject
+       with CameraCaptureUIMaxVideoResolution
 }

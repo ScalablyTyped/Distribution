@@ -5,17 +5,15 @@ import typings.googleCloudStorage.anon.StorageClass
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecycleRule extends StObject {
   
-  var action: StorageClass | String = js.native
+  var action: StorageClass | String
   
-  var condition: StringDictionary[Boolean | Date | Double | String] = js.native
+  var condition: StringDictionary[Boolean | Date | Double | String]
   
-  var storageClass: js.UndefOr[String] = js.native
+  var storageClass: js.UndefOr[String] = js.undefined
 }
 object LifecycleRule {
   

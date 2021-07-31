@@ -14,7 +14,6 @@ import typings.node.fsMod.ReadStream
 import typings.node.fsMod.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -303,9 +302,9 @@ trait FSJetpack extends StObject {
   @JSName("readAsync")
   def readAsync_buffer(path: String, returnAs: buffer): js.Promise[js.UndefOr[Buffer]] = js.native
   @JSName("readAsync")
-  def readAsync_json(path: String, returnAs: json): js.Promise[js.UndefOr[_]] = js.native
+  def readAsync_json(path: String, returnAs: json): js.Promise[js.UndefOr[js.Any]] = js.native
   @JSName("readAsync")
-  def readAsync_jsonWithDates(path: String, returnAs: jsonWithDates): js.Promise[js.UndefOr[_]] = js.native
+  def readAsync_jsonWithDates(path: String, returnAs: jsonWithDates): js.Promise[js.UndefOr[js.Any]] = js.native
   @JSName("readAsync")
   def readAsync_utf8(path: String, returnAs: utf8): js.Promise[js.UndefOr[String]] = js.native
   

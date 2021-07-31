@@ -2,7 +2,6 @@ package typings.grammarkdown
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object symbolsMod {
@@ -30,19 +29,25 @@ object symbolsMod {
   object SymbolKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SymbolKind with Double] = js.native
+    def apply(value: Double): js.UndefOr[SymbolKind & Double] = js.native
     
     @js.native
-    sealed trait Parameter extends SymbolKind
-    /* 2 */ val Parameter: typings.grammarkdown.symbolsMod.SymbolKind.Parameter with Double = js.native
+    sealed trait Parameter
+      extends StObject
+         with SymbolKind
+    /* 2 */ val Parameter: typings.grammarkdown.symbolsMod.SymbolKind.Parameter & Double = js.native
     
     @js.native
-    sealed trait Production extends SymbolKind
-    /* 1 */ val Production: typings.grammarkdown.symbolsMod.SymbolKind.Production with Double = js.native
+    sealed trait Production
+      extends StObject
+         with SymbolKind
+    /* 1 */ val Production: typings.grammarkdown.symbolsMod.SymbolKind.Production & Double = js.native
     
     @js.native
-    sealed trait SourceFile extends SymbolKind
-    /* 0 */ val SourceFile: typings.grammarkdown.symbolsMod.SymbolKind.SourceFile with Double = js.native
+    sealed trait SourceFile
+      extends StObject
+         with SymbolKind
+    /* 0 */ val SourceFile: typings.grammarkdown.symbolsMod.SymbolKind.SourceFile & Double = js.native
   }
   
   @JSImport("grammarkdown/dist/symbols", "SymbolTable")

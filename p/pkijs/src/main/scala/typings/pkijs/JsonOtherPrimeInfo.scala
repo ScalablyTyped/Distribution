@@ -2,17 +2,15 @@ package typings.pkijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonOtherPrimeInfo extends StObject {
   
-  var d: String = js.native
+  var d: String
   
-  var r: String = js.native
+  var r: String
   
-  var t: String = js.native
+  var t: String
 }
 object JsonOtherPrimeInfo {
   

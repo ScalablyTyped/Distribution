@@ -17,7 +17,6 @@ import typings.chromeApps.chrome.webViewRequest.SendMessageParams
 import typings.chromeApps.chrome.webViewRequest.SetRequestHeaderParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -39,8 +38,15 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.AddRequestCookie")
   @js.native
   class AddRequestCookie protected ()
-    extends typings.chromeApps.chrome.webViewRequest.AddRequestCookie {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.AddRequestCookie {
     def this(parameters: AddCookie[RequestCookie]) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.AddRequestCookie = js.native
   }
   
   /**
@@ -50,8 +56,15 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.AddResponseCookie")
   @js.native
   class AddResponseCookie protected ()
-    extends typings.chromeApps.chrome.webViewRequest.AddResponseCookie {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.AddResponseCookie {
     def this(parameters: AddCookie[ResponseCookie]) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseCookie = js.native
   }
   
   /**
@@ -63,15 +76,30 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.AddResponseHeader")
   @js.native
   class AddResponseHeader protected ()
-    extends typings.chromeApps.chrome.webViewRequest.AddResponseHeader {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.AddResponseHeader {
     def this(parameters: AddResponseHeaderParams) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseHeader = js.native
   }
   
   /** Declarative event action that cancels a network request. */
   @JSGlobal("chrome.webViewRequest.CancelRequest")
   @js.native
   class CancelRequest ()
-    extends typings.chromeApps.chrome.webViewRequest.CancelRequest
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.CancelRequest {
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.CancelRequest = js.native
+  }
   
   /**
     * Edits one or more cookies of request.
@@ -80,13 +108,20 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.EditRequestCookie")
   @js.native
   class EditRequestCookie protected ()
-    extends typings.chromeApps.chrome.webViewRequest.EditRequestCookie {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.EditRequestCookie {
     /**
       * @param filter
       * @param modification Attributes that shall be overridden in cookies that machted the filter.
       *                     Attributes that are set to an empty string are removed.
       */
     def this(parameters: EditCookieParams[RequestCookie, RequestCookie]) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.EditRequestCookie = js.native
   }
   
   /**
@@ -96,12 +131,19 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.EditResponseCookie")
   @js.native
   class EditResponseCookie protected ()
-    extends typings.chromeApps.chrome.webViewRequest.EditResponseCookie {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.EditResponseCookie {
     /**
       * @param filter Filter for cookies that will be modified.All empty entries are ignored.
       * @param modification
       */
     def this(parameter: EditCookieParams[FilterResponseCookie, ResponseCookie]) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.EditResponseCookie = js.native
   }
   
   /**
@@ -110,8 +152,15 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.IgnoreRules")
   @js.native
   class IgnoreRules protected ()
-    extends typings.chromeApps.chrome.webViewRequest.IgnoreRules {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.IgnoreRules {
     def this(parameters: IgnoreRulesParams) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.IgnoreRules = js.native
   }
   
   /**
@@ -122,29 +171,59 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.RedirectByRegEx")
   @js.native
   class RedirectByRegEx protected ()
-    extends typings.chromeApps.chrome.webViewRequest.RedirectByRegEx {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.RedirectByRegEx {
     def this(parameters: RedirectByRegExParams) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectByRegEx = js.native
   }
   
   /** Declarative event action that redirects a network request.  */
   @JSGlobal("chrome.webViewRequest.RedirectRequest")
   @js.native
   class RedirectRequest protected ()
-    extends typings.chromeApps.chrome.webViewRequest.RedirectRequest {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.RedirectRequest {
     def this(parameters: RedirectRequestParams) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectRequest = js.native
   }
   
   /** Declarative event action that redirects a network request to an empty document. */
   @JSGlobal("chrome.webViewRequest.RedirectToEmptyDocument")
   @js.native
   class RedirectToEmptyDocument ()
-    extends typings.chromeApps.chrome.webViewRequest.RedirectToEmptyDocument
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.RedirectToEmptyDocument {
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToEmptyDocument = js.native
+  }
   
   /** Declarative event action that redirects a network request to a transparent image. */
   @JSGlobal("chrome.webViewRequest.RedirectToTransparentImage")
   @js.native
   class RedirectToTransparentImage ()
-    extends typings.chromeApps.chrome.webViewRequest.RedirectToTransparentImage
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.RedirectToTransparentImage {
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToTransparentImage = js.native
+  }
   
   /**
     * Removes one or more cookies of request.
@@ -153,8 +232,15 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.RemoveRequestCookie")
   @js.native
   class RemoveRequestCookie protected ()
-    extends typings.chromeApps.chrome.webViewRequest.RemoveRequestCookie {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.RemoveRequestCookie {
     def this(parameters: RemoveCookieParams[RequestCookie]) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveRequestCookie = js.native
   }
   
   /**
@@ -166,8 +252,15 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.RemoveRequestHeader")
   @js.native
   class RemoveRequestHeader protected ()
-    extends typings.chromeApps.chrome.webViewRequest.RemoveRequestHeader {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.RemoveRequestHeader {
     def this(parameters: RemoveRequestHeaderParams) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveRequestHeader = js.native
   }
   
   /**
@@ -177,8 +270,15 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.RemoveResponseCookie")
   @js.native
   class RemoveResponseCookie protected ()
-    extends typings.chromeApps.chrome.webViewRequest.RemoveResponseCookie {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.RemoveResponseCookie {
     def this(parameters: RemoveCookieParams[FilterResponseCookie]) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseCookie = js.native
   }
   
   /**
@@ -187,8 +287,15 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.RemoveResponseHeader")
   @js.native
   class RemoveResponseHeader protected ()
-    extends typings.chromeApps.chrome.webViewRequest.RemoveResponseHeader {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.RemoveResponseHeader {
     def this(parameters: RemoveResponseHeaderParams) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseHeader = js.native
   }
   
   /**
@@ -197,8 +304,15 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.RequestMatcher")
   @js.native
   class RequestMatcher ()
-    extends typings.chromeApps.chrome.webViewRequest.RequestMatcher {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.RequestMatcher {
     def this(parameters: RequestMatcherFields) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.RequestMatcher = js.native
   }
   
   /**
@@ -207,8 +321,15 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.SendMessageToExtension")
   @js.native
   class SendMessageToExtension protected ()
-    extends typings.chromeApps.chrome.webViewRequest.SendMessageToExtension {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.SendMessageToExtension {
     def this(parameters: SendMessageParams) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.SendMessageToExtension = js.native
   }
   
   /**
@@ -220,7 +341,14 @@ object webViewRequest {
   @JSGlobal("chrome.webViewRequest.SetRequestHeader")
   @js.native
   class SetRequestHeader protected ()
-    extends typings.chromeApps.chrome.webViewRequest.SetRequestHeader {
+    extends StObject
+       with typings.chromeApps.chrome.webViewRequest.SetRequestHeader {
     def this(parameters: SetRequestHeaderParams) = this()
+    
+    /* CompleteClass */
+    override val instanceType: String = js.native
+    
+    /* CompleteClass */
+    override val typeGuard: typings.chromeApps.chromeAppsStrings.SetRequestHeader = js.native
   }
 }

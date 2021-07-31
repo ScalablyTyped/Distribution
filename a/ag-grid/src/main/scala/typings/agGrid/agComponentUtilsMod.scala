@@ -9,7 +9,6 @@ import typings.agGrid.componentResolverMod.ResolvedComponent
 import typings.agGrid.iComponentMod.IComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object agComponentUtilsMod {
@@ -20,7 +19,7 @@ object agComponentUtilsMod {
     
     def adaptCellRendererFunction(callback: AgGridComponentFunctionInput): InstantiableIComponent = js.native
     
-    def adaptFunction[A /* <: IComponent[_] with B */, B](
+    def adaptFunction[A /* <: IComponent[js.Any] & B */, B](
       propertyName: String,
       hardcodedJsFunction: AgGridComponentFunctionInput,
       `type`: ComponentType,
@@ -29,6 +28,6 @@ object agComponentUtilsMod {
     
     var componentMetadataProvider: js.Any = js.native
     
-    def doesImplementIComponent(candidate: AgGridRegisteredComponentInput[IComponent[_]]): Boolean = js.native
+    def doesImplementIComponent(candidate: AgGridRegisteredComponentInput[IComponent[js.Any]]): Boolean = js.native
   }
 }

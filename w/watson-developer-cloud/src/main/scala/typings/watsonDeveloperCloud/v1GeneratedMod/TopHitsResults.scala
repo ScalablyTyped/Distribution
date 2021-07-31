@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TopHitsResults. */
-@js.native
 trait TopHitsResults extends StObject {
   
   /** Top results returned by the aggregation. */
-  var hits: js.UndefOr[js.Array[QueryResult]] = js.native
+  var hits: js.UndefOr[js.Array[QueryResult]] = js.undefined
   
   /** Number of matching results. */
-  var matching_results: js.UndefOr[Double] = js.native
+  var matching_results: js.UndefOr[Double] = js.undefined
 }
 object TopHitsResults {
   

@@ -10,9 +10,9 @@ React Image is an <img> tag replacement for react, featuring preloader and multi
 | ------------------ | :-------------: |
 | Full name          | react-image |
 | Keywords           | reactjs, img, image, loader, fallback, react image, react-image, react img multi, react-img-multi, react image fallback, react image loader, react image preloader, react images, placeholder, placeholders, react image transition, react image fade, image transition, image fade |
-| # releases         | 201 |
-| # dependents       | 69 |
-| # downloads        | 2190323 |
+| # releases         | 280 |
+| # dependents       | 76 |
+| # downloads        | 2265433 |
 | # stars            | 8 |
 
 ## Links

@@ -3,39 +3,37 @@ package typings.reactNativeNavigation.optionsMod
 import typings.reactNativeNavigation.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsTopBarBackground extends StObject {
   
   /**
     * Enable background blur
     * #### (iOS specific)
     */
-  var blur: js.UndefOr[Boolean] = js.native
+  var blur: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Clip the top bar background to bounds if set to true.
     * #### (iOS specific)
     */
-  var clipToBounds: js.UndefOr[Boolean] = js.native
+  var clipToBounds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Background color of the top bar
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * Set a custom component for the Top Bar background
     */
-  var component: js.UndefOr[Name] = js.native
+  var component: js.UndefOr[Name] = js.undefined
   
   /**
     * Allows the NavBar to be translucent (blurred)
     * #### (iOS specific)
     */
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
 }
 object OptionsTopBarBackground {
   

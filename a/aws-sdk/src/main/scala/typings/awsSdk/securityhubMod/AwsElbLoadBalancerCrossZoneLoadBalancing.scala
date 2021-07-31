@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElbLoadBalancerCrossZoneLoadBalancing extends StObject {
   
   /**
     * Indicates whether cross-zone load balancing is enabled for the load balancer.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
 }
 object AwsElbLoadBalancerCrossZoneLoadBalancing {
   

@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentDimensionFilter extends StObject {
   
   /** Should the match be case sensitive, ignored for `IN_LIST` operator. */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /** Name of the dimension for which the filter is being applied. */
-  var dimensionName: js.UndefOr[String] = js.native
+  var dimensionName: js.UndefOr[String] = js.undefined
   
   /** The list of expressions, only the first element is used for all operators */
-  var expressions: js.UndefOr[js.Array[String]] = js.native
+  var expressions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Maximum comparison values for `BETWEEN` match type. */
-  var maxComparisonValue: js.UndefOr[String] = js.native
+  var maxComparisonValue: js.UndefOr[String] = js.undefined
   
   /** Minimum comparison values for `BETWEEN` match type. */
-  var minComparisonValue: js.UndefOr[String] = js.native
+  var minComparisonValue: js.UndefOr[String] = js.undefined
   
   /** The operator to use to match the dimension with the expressions. */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
 }
 object SegmentDimensionFilter {
   

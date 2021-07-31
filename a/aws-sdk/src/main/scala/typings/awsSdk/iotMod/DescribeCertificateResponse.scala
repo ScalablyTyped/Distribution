@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCertificateResponse extends StObject {
   
   /**
     * The description of the certificate.
     */
-  var certificateDescription: js.UndefOr[CertificateDescription] = js.native
+  var certificateDescription: js.UndefOr[CertificateDescription] = js.undefined
 }
 object DescribeCertificateResponse {
   

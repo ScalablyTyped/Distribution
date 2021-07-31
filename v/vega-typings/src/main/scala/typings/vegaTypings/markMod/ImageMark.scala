@@ -5,23 +5,22 @@ import typings.vegaTypings.encodeMod.ImageEncodeEntry
 import typings.vegaTypings.vegaTypingsStrings.image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageMark
-  extends BaseMark
+  extends StObject
+     with BaseMark
      with Encodable[ImageEncodeEntry]
      with Mark {
   
-  var `type`: image = js.native
+  var `type`: image
 }
 object ImageMark {
   
   @scala.inline
-  def apply(`type`: image): ImageMark = {
+  def apply(): ImageMark = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("image")
     __obj.asInstanceOf[ImageMark]
   }
   

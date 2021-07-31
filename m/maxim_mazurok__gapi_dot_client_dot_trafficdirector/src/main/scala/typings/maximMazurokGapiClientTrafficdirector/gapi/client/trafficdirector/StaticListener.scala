@@ -3,21 +3,19 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaticListener extends StObject {
   
   /** The timestamp when the Listener was last successfully updated. */
-  var lastUpdated: js.UndefOr[String] = js.native
+  var lastUpdated: js.UndefOr[String] = js.undefined
   
   /** The listener config. */
   var listener: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticListener with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticListener & TopLevel[js.Any]
+  ] = js.undefined
 }
 object StaticListener {
   
@@ -40,7 +38,7 @@ object StaticListener {
     def setListener(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticListener with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticListener & TopLevel[js.Any]
     ): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     @scala.inline

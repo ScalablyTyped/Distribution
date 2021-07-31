@@ -2,31 +2,29 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invalidation extends StObject {
   
   /**
     * The date and time the invalidation request was first made. 
     */
-  var CreateTime: timestamp = js.native
+  var CreateTime: timestamp
   
   /**
     * The identifier for the invalidation request. For example: IDFDVBD632BHDS5.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The current invalidation information for the batch request. 
     */
-  var InvalidationBatch: typings.awsSdk.cloudfrontMod.InvalidationBatch = js.native
+  var InvalidationBatch: typings.awsSdk.cloudfrontMod.InvalidationBatch
   
   /**
     * The status of the invalidation request. When the invalidation batch is finished, the status is Completed.
     */
-  var Status: String = js.native
+  var Status: String
 }
 object Invalidation {
   

@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,31 +10,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * publisher profile in Marketplace.  All fields are read only. All string
   * fields are free-form text entered by the publisher unless noted otherwise.
   */
-@js.native
 trait SchemaPublisherProfile extends StObject {
   
   /**
     * Description on the publisher&#39;s audience.
     */
-  var audienceDescription: js.UndefOr[String] = js.native
+  var audienceDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Statement explaining what&#39;s unique about publisher&#39;s business,
     * and why buyers should partner with the publisher.
     */
-  var buyerPitchStatement: js.UndefOr[String] = js.native
+  var buyerPitchStatement: js.UndefOr[String] = js.undefined
   
   /**
     * Contact information for direct reservation deals. This is free text
     * entered by the publisher and may include information like names, phone
     * numbers and email addresses.
     */
-  var directDealsContact: js.UndefOr[String] = js.native
+  var directDealsContact: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the publisher profile.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The list of domains represented in this publisher profile. Empty if this
@@ -43,61 +41,61 @@ trait SchemaPublisherProfile extends StObject {
     * will not contain a string like &quot;photos.google.co.uk/123&quot;, but
     * will instead contain &quot;google.co.uk&quot;.
     */
-  var domains: js.UndefOr[js.Array[String]] = js.native
+  var domains: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * URL to publisher&#39;s Google+ page.
     */
-  var googlePlusUrl: js.UndefOr[String] = js.native
+  var googlePlusUrl: js.UndefOr[String] = js.undefined
   
   /**
     * A Google public URL to the logo for this publisher profile. The logo is
     * stored as a PNG, JPG, or GIF image.
     */
-  var logoUrl: js.UndefOr[String] = js.native
+  var logoUrl: js.UndefOr[String] = js.undefined
   
   /**
     * URL to additional marketing and sales materials.
     */
-  var mediaKitUrl: js.UndefOr[String] = js.native
+  var mediaKitUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Overview of the publisher.
     */
-  var overview: js.UndefOr[String] = js.native
+  var overview: js.UndefOr[String] = js.undefined
   
   /**
     * Contact information for programmatic deals. This is free text entered by
     * the publisher and may include information like names, phone numbers and
     * email addresses.
     */
-  var programmaticDealsContact: js.UndefOr[String] = js.native
+  var programmaticDealsContact: js.UndefOr[String] = js.undefined
   
   /**
     * Unique ID for publisher profile.
     */
-  var publisherProfileId: js.UndefOr[String] = js.native
+  var publisherProfileId: js.UndefOr[String] = js.undefined
   
   /**
     * URL to a publisher rate card.
     */
-  var rateCardInfoUrl: js.UndefOr[String] = js.native
+  var rateCardInfoUrl: js.UndefOr[String] = js.undefined
   
   /**
     * URL to a sample content page.
     */
-  var samplePageUrl: js.UndefOr[String] = js.native
+  var samplePageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Seller of the publisher profile.
     */
-  var seller: js.UndefOr[SchemaSeller] = js.native
+  var seller: js.UndefOr[SchemaSeller] = js.undefined
   
   /**
     * Up to three key metrics and rankings. Max 100 characters each. For
     * example &quot;#1 Mobile News Site for 20 Straight Months&quot;.
     */
-  var topHeadlines: js.UndefOr[js.Array[String]] = js.native
+  var topHeadlines: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaPublisherProfile {
   

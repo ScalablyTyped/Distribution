@@ -3,26 +3,26 @@ package typings.reactNativeElements.mod
 import typings.reactNativeElements.anon.PartialTouchableOpacityPr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchBarIOS extends SearchBarPlatform {
+trait SearchBarIOS
+  extends StObject
+     with SearchBarPlatform {
   
   /**
     * Props passed to cancel button
     */
-  var cancelButtonProps: js.UndefOr[PartialTouchableOpacityPr] = js.native
+  var cancelButtonProps: js.UndefOr[PartialTouchableOpacityPr] = js.undefined
   
   /**
     * title of cancel button on iOS.  Default: 'Cancel'.
     */
-  var cancelButtonTitle: js.UndefOr[String] = js.native
+  var cancelButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * When `true` the cancel button will stay visible after blur events.
     */
-  var showCancel: js.UndefOr[Boolean] = js.native
+  var showCancel: js.UndefOr[Boolean] = js.undefined
 }
 object SearchBarIOS {
   

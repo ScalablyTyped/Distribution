@@ -2,7 +2,6 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,34 +9,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Can be harvested by creeps with a WORK body part.
   * Each harvest operation triggers a cooldown period, which becomes longer and longer over time.
   */
-@js.native
-trait Deposit extends RoomObject {
+trait Deposit
+  extends StObject
+     with RoomObject {
   
   /**
     * The amount of game ticks until the next harvest action is possible.
     */
-  var cooldown: Double = js.native
+  var cooldown: Double
   
   /**
     * The amount of game ticks until the next harvest action is possible.
     */
-  var depositType: DepositConstant = js.native
+  var depositType: DepositConstant
   
   /**
     * A unique object identificator.
     * You can use {@link Game.getObjectById} method to retrieve an object instance by its id.
     */
-  var id: Id[this.type] = js.native
+  var id: Id[this.type]
   
   /**
     * The cooldown of the last harvest operation on this deposit.
     */
-  var lastCooldown: Double = js.native
+  var lastCooldown: Double
   
   /**
     * The amount of game ticks when this deposit will disappear.
     */
-  var ticksToDecay: Double = js.native
+  var ticksToDecay: Double
 }
 object Deposit {
   

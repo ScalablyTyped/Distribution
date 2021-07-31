@@ -306,88 +306,65 @@ import typings.std.Error
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
+    @scala.inline
     def apply(
       parent: js.UndefOr[Node | js.Array[Node] | Null],
       opts: js.UndefOr[TraverseOptions[Node]],
       scope: js.UndefOr[Scope],
       state: js.UndefOr[js.Any],
       parentPath: js.UndefOr[NodePath[Node]]
-    ): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
-    def apply[S](parent: js.UndefOr[Node], opts: TraverseOptions[S], scope: js.UndefOr[scala.Nothing], state: S): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
-    def apply[S](
-      parent: js.UndefOr[Node],
-      opts: TraverseOptions[S],
-      scope: js.UndefOr[scala.Nothing],
-      state: S,
-      parentPath: NodePath[Node]
-    ): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
-    def apply[S](parent: js.UndefOr[Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
-    def apply[S](
-      parent: js.UndefOr[Node],
-      opts: TraverseOptions[S],
-      scope: Scope,
-      state: S,
-      parentPath: NodePath[Node]
-    ): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
-    def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: js.UndefOr[scala.Nothing], state: S): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def apply[S](
       parent: js.Array[Node],
       opts: TraverseOptions[S],
-      scope: js.UndefOr[scala.Nothing],
+      scope: Unit,
       state: S,
       parentPath: NodePath[Node]
-    ): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
-    def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def apply[S](
       parent: js.Array[Node],
       opts: TraverseOptions[S],
       scope: Scope,
       state: S,
       parentPath: NodePath[Node]
-    ): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
-    def apply[S](parent: Null, opts: TraverseOptions[S], scope: js.UndefOr[scala.Nothing], state: S): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
-    def apply[S](
-      parent: Null,
-      opts: TraverseOptions[S],
-      scope: js.UndefOr[scala.Nothing],
-      state: S,
-      parentPath: NodePath[Node]
-    ): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
-    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Scope, state: S): Unit = js.native
-    @JSImport("@babel/traverse", JSImport.Default)
-    @js.native
-    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Unit, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Unit, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Node, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Node, opts: TraverseOptions[S], scope: Unit, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("@babel/traverse", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -395,20 +372,20 @@ object mod {
     @JSImport("@babel/traverse", "default.explode")
     @js.native
     def explode: FnCall = js.native
-    @JSImport("@babel/traverse", "default.explode")
-    @js.native
+    @scala.inline
     def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
-      */ typings.babelTraverse.babelTraverseStrings.explode with TopLevel[js.Any] = js.native
+      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
+      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any]]
     @scala.inline
     def explode_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("explode")(x.asInstanceOf[js.Any])
     
     @JSImport("@babel/traverse", "default.verify")
     @js.native
     def verify: js.Function1[/* visitor */ Visitor[js.Object], Unit] = js.native
-    @JSImport("@babel/traverse", "default.verify")
-    @js.native
-    def verify(visitor: Visitor[js.Object]): Unit = js.native
+    @scala.inline
+    def verify(visitor: Visitor[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(visitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def verify_=(x: js.Function1[/* visitor */ Visitor[js.Object], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verify")(x.asInstanceOf[js.Any])
     
@@ -445,7 +422,22 @@ object mod {
   
   @JSImport("@babel/traverse", "Hub")
   @js.native
-  class Hub () extends HubInterface
+  class Hub ()
+    extends StObject
+       with HubInterface {
+    
+    /* CompleteClass */
+    override def addHelper(name: String): js.Any = js.native
+    
+    /* CompleteClass */
+    override def buildError[E /* <: Error */](node: Node, msg: String, Error: Instantiable1[/* message */ js.UndefOr[String], E]): E = js.native
+    
+    /* CompleteClass */
+    override def getCode(): js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override def getScope(): js.UndefOr[Scope] = js.native
+  }
   
   @JSImport("@babel/traverse", "NodePath")
   @js.native
@@ -456,7 +448,7 @@ object mod {
     def addComment(`type`: String, content: String, line: Boolean): Unit = js.native
     
     /** Give node `comments` of the specified `type`. */
-    def addComments(`type`: String, comments: js.Array[_]): Unit = js.native
+    def addComments(`type`: String, comments: js.Array[js.Any]): Unit = js.native
     
     //#endregion
     //#region ------------------------- assertXXX -------------------------
@@ -2514,11 +2506,16 @@ object mod {
   /* static members */
   object NodePath {
     
-    @JSImport("@babel/traverse", "NodePath.get")
+    @JSImport("@babel/traverse", "NodePath")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def get[C /* <: Node */, K /* <: /* keyof C */ String */](opts: Container[C, K]): NodePath[
         /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
-      ] = js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(opts.asInstanceOf[js.Any]).asInstanceOf[NodePath[
+        /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
+      ]]
   }
   
   @JSImport("@babel/traverse", "Scope")
@@ -2635,9 +2632,9 @@ object mod {
     def removeOwnBinding(name: String): Unit = js.native
     
     def rename(oldName: String): Unit = js.native
-    def rename(oldName: String, newName: js.UndefOr[scala.Nothing], block: Node): Unit = js.native
     def rename(oldName: String, newName: String): Unit = js.native
     def rename(oldName: String, newName: String, block: Node): Unit = js.native
+    def rename(oldName: String, newName: Unit, block: Node): Unit = js.native
     
     def setData(key: String, `val`: js.Any): js.Any = js.native
     
@@ -2645,11 +2642,11 @@ object mod {
     def toArray(node: Node, i: Double): Node = js.native
     
     def traverse(node: js.Array[Node]): Unit = js.native
-    def traverse(node: js.Array[Node], opts: js.UndefOr[scala.Nothing], state: js.Any): Unit = js.native
+    def traverse(node: js.Array[Node], opts: Unit, state: js.Any): Unit = js.native
     def traverse(node: js.Array[Node], opts: TraverseOptions[Node]): Unit = js.native
     def traverse(node: js.Array[Node], opts: TraverseOptions[Node], state: js.Any): Unit = js.native
     def traverse(node: Node): Unit = js.native
-    def traverse(node: Node, opts: js.UndefOr[scala.Nothing], state: js.Any): Unit = js.native
+    def traverse(node: Node, opts: Unit, state: js.Any): Unit = js.native
     def traverse(node: Node, opts: TraverseOptions[Node]): Unit = js.native
     def traverse(node: Node, opts: TraverseOptions[Node], state: js.Any): Unit = js.native
     def traverse[S](node: js.Array[Node], opts: TraverseOptions[S], state: S): Unit = js.native
@@ -2658,6 +2655,10 @@ object mod {
   }
   
   object visitors {
+    
+    @JSImport("@babel/traverse", "visitors")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * `explode()` will take a `Visitor` object with all of the various shorthands
@@ -2673,36 +2674,33 @@ object mod {
       * - Visitors of virtual types are wrapped, so that they are only visited when their dynamic check passes
       * - `enter` and `exit` functions are wrapped in arrays, to ease merging of visitors
       */
-    @JSImport("@babel/traverse", "visitors.explode")
-    @js.native
+    @scala.inline
     def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
-      */ typings.babelTraverse.babelTraverseStrings.explode with TopLevel[js.Any] = js.native
+      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
+      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any]]
     
-    @JSImport("@babel/traverse", "visitors.merge")
-    @js.native
-    def merge[S](visitors: js.Array[Visitor[S]]): Visitor[_] = js.native
-    @JSImport("@babel/traverse", "visitors.merge")
-    @js.native
-    def merge[S](visitors: js.Array[Visitor[S]], states: js.Array[S]): Visitor[_] = js.native
+    @scala.inline
+    def merge[S](visitors: js.Array[Visitor[S]]): Visitor[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(visitors.asInstanceOf[js.Any]).asInstanceOf[Visitor[js.Any]]
+    @scala.inline
+    def merge[S](visitors: js.Array[Visitor[S]], states: js.Array[S]): Visitor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(visitors.asInstanceOf[js.Any], states.asInstanceOf[js.Any])).asInstanceOf[Visitor[js.Any]]
     
-    @JSImport("@babel/traverse", "visitors.verify")
-    @js.native
-    def verify(visitor: Visitor[js.Object]): Unit = js.native
+    @scala.inline
+    def verify(visitor: Visitor[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(visitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   type ArrayKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P] extends std.Array<any>? P : never}[keyof T] */ js.Any
   
-  @js.native
   trait HubInterface extends StObject {
     
-    def addHelper(name: String): js.Any = js.native
+    def addHelper(name: String): js.Any
     
-    def buildError[E /* <: Error */](node: Node, msg: String, Error: Instantiable1[/* message */ js.UndefOr[String], E]): E = js.native
+    def buildError[E /* <: Error */](node: Node, msg: String, Error: Instantiable1[/* message */ js.UndefOr[String], E]): E
     
-    def getCode(): js.UndefOr[String] = js.native
+    def getCode(): js.UndefOr[String]
     
-    def getScope(): js.UndefOr[Scope] = js.native
+    def getScope(): js.UndefOr[Scope]
   }
   object HubInterface {
     
@@ -2736,18 +2734,17 @@ object mod {
   
   type NodePaths[T /* <: Node | js.Array[Node] */] = js.Array[NodePath[T]] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ K in keyof T ]: @babel/traverse.@babel/traverse.NodePath<std.Extract<T[K], @babel/types.@babel/types.Node>>}
-    */ typings.babelTraverse.babelTraverseStrings.NodePaths with TopLevel[T])
+    */ typings.babelTraverse.babelTraverseStrings.NodePaths & TopLevel[T])
   
-  @js.native
   trait TraversalContext extends StObject {
     
-    var opts: js.Any = js.native
+    var opts: js.Any
     
-    var parentPath: NodePath[Node] = js.native
+    var parentPath: NodePath[Node]
     
-    var scope: Scope = js.native
+    var scope: Scope
     
-    var state: js.Any = js.native
+    var state: js.Any
   }
   object TraversalContext {
     
@@ -2774,12 +2771,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait TraverseOptions[S] extends Visitor[S] {
+  trait TraverseOptions[S]
+    extends StObject
+       with Visitor[S] {
     
-    var noScope: js.UndefOr[Boolean] = js.native
+    var noScope: js.UndefOr[Boolean] = js.undefined
     
-    var scope: js.UndefOr[Scope] = js.native
+    var scope: js.UndefOr[Scope] = js.undefined
   }
   object TraverseOptions {
     
@@ -2790,7 +2788,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TraverseOptionsMutableBuilder[Self <: TraverseOptions[_], S] (val x: Self with TraverseOptions[S]) extends AnyVal {
+    implicit class TraverseOptionsMutableBuilder[Self <: TraverseOptions[?], S] (val x: Self & TraverseOptions[S]) extends AnyVal {
       
       @scala.inline
       def setNoScope(value: Boolean): Self = StObject.set(x, "noScope", value.asInstanceOf[js.Any])
@@ -2810,12 +2808,11 @@ object mod {
   
   type VisitNodeFunction[S, P /* <: Node */] = js.ThisFunction2[/* this */ S, /* path */ NodePath[P], /* state */ S, Unit]
   
-  @js.native
   trait VisitNodeObject[S, P /* <: Node */] extends StObject {
     
-    var enter: js.UndefOr[VisitNodeFunction[S, P]] = js.native
+    var enter: js.UndefOr[VisitNodeFunction[S, P]] = js.undefined
     
-    var exit: js.UndefOr[VisitNodeFunction[S, P]] = js.native
+    var exit: js.UndefOr[VisitNodeFunction[S, P]] = js.undefined
   }
   object VisitNodeObject {
     
@@ -2826,7 +2823,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class VisitNodeObjectMutableBuilder[Self <: VisitNodeObject[_, _], S, P /* <: Node */] (val x: Self with (VisitNodeObject[S, P])) extends AnyVal {
+    implicit class VisitNodeObjectMutableBuilder[Self <: VisitNodeObject[?, ?], S, P /* <: Node */] (val x: Self & (VisitNodeObject[S, P])) extends AnyVal {
       
       @scala.inline
       def setEnter(value: VisitNodeFunction[S, P]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
@@ -2843,586 +2840,585 @@ object mod {
   }
   
   /* Inlined @babel/traverse.@babel/traverse.VisitNodeObject<S, @babel/traverse.@babel/traverse.Node> & {[ Type in @babel/traverse.@babel/traverse.Node['type'] ]:? @babel/traverse.@babel/traverse.VisitNode<S, std.Extract<@babel/traverse.@babel/traverse.Node, {  type :Type}>>} & {[ K in keyof @babel/types.@babel/types.Aliases ]:? @babel/traverse.@babel/traverse.VisitNode<S, @babel/types.@babel/types.Aliases[K]>} */
-  @js.native
   trait Visitor[S] extends StObject {
     
-    var AnyTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `64`]]] = js.native
+    var AnyTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `64`]]] = js.undefined
     
-    var ArgumentPlaceholder: js.UndefOr[VisitNode[S, Extract[Node, `232`]]] = js.native
+    var ArgumentPlaceholder: js.UndefOr[VisitNode[S, Extract[Node, `232`]]] = js.undefined
     
-    var ArrayExpression: js.UndefOr[VisitNode[S, Extract[Node, `55`]]] = js.native
+    var ArrayExpression: js.UndefOr[VisitNode[S, Extract[Node, `55`]]] = js.undefined
     
-    var ArrayPattern: js.UndefOr[VisitNode[S, Extract[Node, `112`]]] = js.native
+    var ArrayPattern: js.UndefOr[VisitNode[S, Extract[Node, `112`]]] = js.undefined
     
-    var ArrayTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `84`]]] = js.native
+    var ArrayTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `84`]]] = js.undefined
     
-    var ArrowFunctionExpression: js.UndefOr[VisitNode[S, Extract[Node, `143`]]] = js.native
+    var ArrowFunctionExpression: js.UndefOr[VisitNode[S, Extract[Node, `143`]]] = js.undefined
     
-    var AssignmentExpression: js.UndefOr[VisitNode[S, Extract[Node, `132`]]] = js.native
+    var AssignmentExpression: js.UndefOr[VisitNode[S, Extract[Node, `132`]]] = js.undefined
     
-    var AssignmentPattern: js.UndefOr[VisitNode[S, Extract[Node, `63`]]] = js.native
+    var AssignmentPattern: js.UndefOr[VisitNode[S, Extract[Node, `63`]]] = js.undefined
     
-    var AwaitExpression: js.UndefOr[VisitNode[S, Extract[Node, `110`]]] = js.native
+    var AwaitExpression: js.UndefOr[VisitNode[S, Extract[Node, `110`]]] = js.undefined
     
-    var BigIntLiteral: js.UndefOr[VisitNode[S, Extract[Node, `179`]]] = js.native
+    var BigIntLiteral: js.UndefOr[VisitNode[S, Extract[Node, `179`]]] = js.undefined
     
-    var Binary: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Binary]] = js.native
+    var Binary: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Binary]] = js.undefined
     
-    var BinaryExpression: js.UndefOr[VisitNode[S, Extract[Node, `87`]]] = js.native
+    var BinaryExpression: js.UndefOr[VisitNode[S, Extract[Node, `87`]]] = js.undefined
     
-    var BindExpression: js.UndefOr[VisitNode[S, Extract[Node, `77`]]] = js.native
+    var BindExpression: js.UndefOr[VisitNode[S, Extract[Node, `77`]]] = js.undefined
     
-    var Block: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Block]] = js.native
+    var Block: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Block]] = js.undefined
     
-    var BlockParent: js.UndefOr[VisitNode[S, typings.babelTypes.mod.BlockParent]] = js.native
+    var BlockParent: js.UndefOr[VisitNode[S, typings.babelTypes.mod.BlockParent]] = js.undefined
     
-    var BlockStatement: js.UndefOr[VisitNode[S, Extract[Node, `24`]]] = js.native
+    var BlockStatement: js.UndefOr[VisitNode[S, Extract[Node, `24`]]] = js.undefined
     
-    var BooleanLiteral: js.UndefOr[VisitNode[S, Extract[Node, `129`]]] = js.native
+    var BooleanLiteral: js.UndefOr[VisitNode[S, Extract[Node, `129`]]] = js.undefined
     
-    var BooleanLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `173`]]] = js.native
+    var BooleanLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `173`]]] = js.undefined
     
-    var BooleanTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `178`]]] = js.native
+    var BooleanTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `178`]]] = js.undefined
     
-    var BreakStatement: js.UndefOr[VisitNode[S, Extract[Node, `1`]]] = js.native
+    var BreakStatement: js.UndefOr[VisitNode[S, Extract[Node, `1`]]] = js.undefined
     
-    var CallExpression: js.UndefOr[VisitNode[S, Extract[Node, `46`]]] = js.native
+    var CallExpression: js.UndefOr[VisitNode[S, Extract[Node, `46`]]] = js.undefined
     
-    var CatchClause: js.UndefOr[VisitNode[S, Extract[Node, `171`]]] = js.native
+    var CatchClause: js.UndefOr[VisitNode[S, Extract[Node, `171`]]] = js.undefined
     
-    var Class: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Class]] = js.native
+    var Class: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Class]] = js.undefined
     
-    var ClassBody: js.UndefOr[VisitNode[S, Extract[Node, `225`]]] = js.native
+    var ClassBody: js.UndefOr[VisitNode[S, Extract[Node, `225`]]] = js.undefined
     
-    var ClassDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `106`]]] = js.native
+    var ClassDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `106`]]] = js.undefined
     
-    var ClassExpression: js.UndefOr[VisitNode[S, Extract[Node, Type]]] = js.native
+    var ClassExpression: js.UndefOr[VisitNode[S, Extract[Node, Type]]] = js.undefined
     
-    var ClassImplements: js.UndefOr[VisitNode[S, Extract[Node, `207`]]] = js.native
+    var ClassImplements: js.UndefOr[VisitNode[S, Extract[Node, `207`]]] = js.undefined
     
-    var ClassMethod: js.UndefOr[VisitNode[S, Extract[Node, `184`]]] = js.native
+    var ClassMethod: js.UndefOr[VisitNode[S, Extract[Node, `184`]]] = js.undefined
     
-    var ClassPrivateMethod: js.UndefOr[VisitNode[S, Extract[Node, `228`]]] = js.native
+    var ClassPrivateMethod: js.UndefOr[VisitNode[S, Extract[Node, `228`]]] = js.undefined
     
-    var ClassPrivateProperty: js.UndefOr[VisitNode[S, Extract[Node, `223`]]] = js.native
+    var ClassPrivateProperty: js.UndefOr[VisitNode[S, Extract[Node, `223`]]] = js.undefined
     
-    var ClassProperty: js.UndefOr[VisitNode[S, Extract[Node, `187`]]] = js.native
+    var ClassProperty: js.UndefOr[VisitNode[S, Extract[Node, `187`]]] = js.undefined
     
-    var CompletionStatement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.CompletionStatement]] = js.native
+    var CompletionStatement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.CompletionStatement]] = js.undefined
     
-    var Conditional: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Conditional]] = js.native
+    var Conditional: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Conditional]] = js.undefined
     
-    var ConditionalExpression: js.UndefOr[VisitNode[S, Extract[Node, `165`]]] = js.native
+    var ConditionalExpression: js.UndefOr[VisitNode[S, Extract[Node, `165`]]] = js.undefined
     
-    var ContinueStatement: js.UndefOr[VisitNode[S, Extract[Node, `39`]]] = js.native
+    var ContinueStatement: js.UndefOr[VisitNode[S, Extract[Node, `39`]]] = js.undefined
     
-    var DebuggerStatement: js.UndefOr[VisitNode[S, Extract[Node, `135`]]] = js.native
+    var DebuggerStatement: js.UndefOr[VisitNode[S, Extract[Node, `135`]]] = js.undefined
     
-    var DecimalLiteral: js.UndefOr[VisitNode[S, Extract[Node, `201`]]] = js.native
+    var DecimalLiteral: js.UndefOr[VisitNode[S, Extract[Node, `201`]]] = js.undefined
     
-    var Declaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Declaration]] = js.native
+    var Declaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Declaration]] = js.undefined
     
-    var DeclareClass: js.UndefOr[VisitNode[S, Extract[Node, `235`]]] = js.native
+    var DeclareClass: js.UndefOr[VisitNode[S, Extract[Node, `235`]]] = js.undefined
     
-    var DeclareExportAllDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `107`]]] = js.native
+    var DeclareExportAllDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `107`]]] = js.undefined
     
-    var DeclareExportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `153`]]] = js.native
+    var DeclareExportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `153`]]] = js.undefined
     
-    var DeclareFunction: js.UndefOr[VisitNode[S, Extract[Node, `102`]]] = js.native
+    var DeclareFunction: js.UndefOr[VisitNode[S, Extract[Node, `102`]]] = js.undefined
     
-    var DeclareInterface: js.UndefOr[VisitNode[S, Extract[Node, `156`]]] = js.native
+    var DeclareInterface: js.UndefOr[VisitNode[S, Extract[Node, `156`]]] = js.undefined
     
-    var DeclareModule: js.UndefOr[VisitNode[S, Extract[Node, `34`]]] = js.native
+    var DeclareModule: js.UndefOr[VisitNode[S, Extract[Node, `34`]]] = js.undefined
     
-    var DeclareModuleExports: js.UndefOr[VisitNode[S, Extract[Node, `216`]]] = js.native
+    var DeclareModuleExports: js.UndefOr[VisitNode[S, Extract[Node, `216`]]] = js.undefined
     
-    var DeclareOpaqueType: js.UndefOr[VisitNode[S, Extract[Node, `222`]]] = js.native
+    var DeclareOpaqueType: js.UndefOr[VisitNode[S, Extract[Node, `222`]]] = js.undefined
     
-    var DeclareTypeAlias: js.UndefOr[VisitNode[S, Extract[Node, `162`]]] = js.native
+    var DeclareTypeAlias: js.UndefOr[VisitNode[S, Extract[Node, `162`]]] = js.undefined
     
-    var DeclareVariable: js.UndefOr[VisitNode[S, Extract[Node, `177`]]] = js.native
+    var DeclareVariable: js.UndefOr[VisitNode[S, Extract[Node, `177`]]] = js.undefined
     
-    var DeclaredPredicate: js.UndefOr[VisitNode[S, Extract[Node, `183`]]] = js.native
+    var DeclaredPredicate: js.UndefOr[VisitNode[S, Extract[Node, `183`]]] = js.undefined
     
-    var Decorator: js.UndefOr[VisitNode[S, Extract[Node, `80`]]] = js.native
+    var Decorator: js.UndefOr[VisitNode[S, Extract[Node, `80`]]] = js.undefined
     
-    var Directive: js.UndefOr[VisitNode[S, Extract[Node, `62`]]] = js.native
+    var Directive: js.UndefOr[VisitNode[S, Extract[Node, `62`]]] = js.undefined
     
-    var DirectiveLiteral: js.UndefOr[VisitNode[S, Extract[Node, `140`]]] = js.native
+    var DirectiveLiteral: js.UndefOr[VisitNode[S, Extract[Node, `140`]]] = js.undefined
     
-    var DoExpression: js.UndefOr[VisitNode[S, Extract[Node, `212`]]] = js.native
+    var DoExpression: js.UndefOr[VisitNode[S, Extract[Node, `212`]]] = js.undefined
     
-    var DoWhileStatement: js.UndefOr[VisitNode[S, Extract[Node, `195`]]] = js.native
+    var DoWhileStatement: js.UndefOr[VisitNode[S, Extract[Node, `195`]]] = js.undefined
     
-    var EmptyStatement: js.UndefOr[VisitNode[S, Extract[Node, `105`]]] = js.native
+    var EmptyStatement: js.UndefOr[VisitNode[S, Extract[Node, `105`]]] = js.undefined
     
-    var EmptyTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `139`]]] = js.native
+    var EmptyTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `139`]]] = js.undefined
     
-    var EnumBody: js.UndefOr[VisitNode[S, typings.babelTypes.mod.EnumBody]] = js.native
+    var EnumBody: js.UndefOr[VisitNode[S, typings.babelTypes.mod.EnumBody]] = js.undefined
     
-    var EnumBooleanBody: js.UndefOr[VisitNode[S, Extract[Node, `134`]]] = js.native
+    var EnumBooleanBody: js.UndefOr[VisitNode[S, Extract[Node, `134`]]] = js.undefined
     
-    var EnumBooleanMember: js.UndefOr[VisitNode[S, Extract[Node, `114`]]] = js.native
+    var EnumBooleanMember: js.UndefOr[VisitNode[S, Extract[Node, `114`]]] = js.undefined
     
-    var EnumDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `66`]]] = js.native
+    var EnumDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `66`]]] = js.undefined
     
-    var EnumDefaultedMember: js.UndefOr[VisitNode[S, Extract[Node, `186`]]] = js.native
+    var EnumDefaultedMember: js.UndefOr[VisitNode[S, Extract[Node, `186`]]] = js.undefined
     
-    var EnumMember: js.UndefOr[VisitNode[S, typings.babelTypes.mod.EnumMember]] = js.native
+    var EnumMember: js.UndefOr[VisitNode[S, typings.babelTypes.mod.EnumMember]] = js.undefined
     
-    var EnumNumberBody: js.UndefOr[VisitNode[S, Extract[Node, `233`]]] = js.native
+    var EnumNumberBody: js.UndefOr[VisitNode[S, Extract[Node, `233`]]] = js.undefined
     
-    var EnumNumberMember: js.UndefOr[VisitNode[S, Extract[Node, `200`]]] = js.native
+    var EnumNumberMember: js.UndefOr[VisitNode[S, Extract[Node, `200`]]] = js.undefined
     
-    var EnumStringBody: js.UndefOr[VisitNode[S, Extract[Node, `158`]]] = js.native
+    var EnumStringBody: js.UndefOr[VisitNode[S, Extract[Node, `158`]]] = js.undefined
     
-    var EnumStringMember: js.UndefOr[VisitNode[S, Extract[Node, `4`]]] = js.native
+    var EnumStringMember: js.UndefOr[VisitNode[S, Extract[Node, `4`]]] = js.undefined
     
-    var EnumSymbolBody: js.UndefOr[VisitNode[S, Extract[Node, `193`]]] = js.native
+    var EnumSymbolBody: js.UndefOr[VisitNode[S, Extract[Node, `193`]]] = js.undefined
     
-    var ExistsTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `116`]]] = js.native
+    var ExistsTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `116`]]] = js.undefined
     
-    var ExportAllDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `36`]]] = js.native
+    var ExportAllDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `36`]]] = js.undefined
     
-    var ExportDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ExportDeclaration]] = js.native
+    var ExportDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ExportDeclaration]] = js.undefined
     
-    var ExportDefaultDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `78`]]] = js.native
+    var ExportDefaultDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `78`]]] = js.undefined
     
-    var ExportDefaultSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `3`]]] = js.native
+    var ExportDefaultSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `3`]]] = js.undefined
     
-    var ExportNamedDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `45`]]] = js.native
+    var ExportNamedDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `45`]]] = js.undefined
     
-    var ExportNamespaceSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `174`]]] = js.native
+    var ExportNamespaceSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `174`]]] = js.undefined
     
-    var ExportSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `113`]]] = js.native
+    var ExportSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `113`]]] = js.undefined
     
-    var Expression: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Expression]] = js.native
+    var Expression: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Expression]] = js.undefined
     
-    var ExpressionStatement: js.UndefOr[VisitNode[S, Extract[Node, `61`]]] = js.native
+    var ExpressionStatement: js.UndefOr[VisitNode[S, Extract[Node, `61`]]] = js.undefined
     
-    var ExpressionWrapper: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ExpressionWrapper]] = js.native
+    var ExpressionWrapper: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ExpressionWrapper]] = js.undefined
     
-    var File: js.UndefOr[VisitNode[S, Extract[Node, `27`]]] = js.native
+    var File: js.UndefOr[VisitNode[S, Extract[Node, `27`]]] = js.undefined
     
-    var Flow: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Flow]] = js.native
+    var Flow: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Flow]] = js.undefined
     
-    var FlowBaseAnnotation: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FlowBaseAnnotation]] = js.native
+    var FlowBaseAnnotation: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FlowBaseAnnotation]] = js.undefined
     
-    var FlowDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FlowDeclaration]] = js.native
+    var FlowDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FlowDeclaration]] = js.undefined
     
-    var FlowPredicate: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FlowPredicate]] = js.native
+    var FlowPredicate: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FlowPredicate]] = js.undefined
     
-    var FlowType: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FlowType]] = js.native
+    var FlowType: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FlowType]] = js.undefined
     
-    var For: js.UndefOr[VisitNode[S, typings.babelTypes.mod.For]] = js.native
+    var For: js.UndefOr[VisitNode[S, typings.babelTypes.mod.For]] = js.undefined
     
-    var ForInStatement: js.UndefOr[VisitNode[S, Extract[Node, `16`]]] = js.native
+    var ForInStatement: js.UndefOr[VisitNode[S, Extract[Node, `16`]]] = js.undefined
     
-    var ForOfStatement: js.UndefOr[VisitNode[S, Extract[Node, `161`]]] = js.native
+    var ForOfStatement: js.UndefOr[VisitNode[S, Extract[Node, `161`]]] = js.undefined
     
-    var ForStatement: js.UndefOr[VisitNode[S, Extract[Node, `185`]]] = js.native
+    var ForStatement: js.UndefOr[VisitNode[S, Extract[Node, `185`]]] = js.undefined
     
-    var ForXStatement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ForXStatement]] = js.native
+    var ForXStatement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ForXStatement]] = js.undefined
     
-    var Function: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Function]] = js.native
+    var Function: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Function]] = js.undefined
     
-    var FunctionDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `133`]]] = js.native
+    var FunctionDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `133`]]] = js.undefined
     
-    var FunctionExpression: js.UndefOr[VisitNode[S, Extract[Node, `188`]]] = js.native
+    var FunctionExpression: js.UndefOr[VisitNode[S, Extract[Node, `188`]]] = js.undefined
     
-    var FunctionParent: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FunctionParent]] = js.native
+    var FunctionParent: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FunctionParent]] = js.undefined
     
-    var FunctionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `40`]]] = js.native
+    var FunctionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `40`]]] = js.undefined
     
-    var FunctionTypeParam: js.UndefOr[VisitNode[S, Extract[Node, `221`]]] = js.native
+    var FunctionTypeParam: js.UndefOr[VisitNode[S, Extract[Node, `221`]]] = js.undefined
     
-    var GenericTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `237`]]] = js.native
+    var GenericTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `237`]]] = js.undefined
     
-    var Identifier: js.UndefOr[VisitNode[S, Extract[Node, `97`]]] = js.native
+    var Identifier: js.UndefOr[VisitNode[S, Extract[Node, `97`]]] = js.undefined
     
-    var IfStatement: js.UndefOr[VisitNode[S, Extract[Node, `83`]]] = js.native
+    var IfStatement: js.UndefOr[VisitNode[S, Extract[Node, `83`]]] = js.undefined
     
-    var Immutable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Immutable]] = js.native
+    var Immutable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Immutable]] = js.undefined
     
-    var Import: js.UndefOr[VisitNode[S, Extract[Node, `167`]]] = js.native
+    var Import: js.UndefOr[VisitNode[S, Extract[Node, `167`]]] = js.undefined
     
-    var ImportAttribute: js.UndefOr[VisitNode[S, Extract[Node, `120`]]] = js.native
+    var ImportAttribute: js.UndefOr[VisitNode[S, Extract[Node, `120`]]] = js.undefined
     
-    var ImportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `236`]]] = js.native
+    var ImportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `236`]]] = js.undefined
     
-    var ImportDefaultSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `18`]]] = js.native
+    var ImportDefaultSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `18`]]] = js.undefined
     
-    var ImportNamespaceSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `197`]]] = js.native
+    var ImportNamespaceSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `197`]]] = js.undefined
     
-    var ImportSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `111`]]] = js.native
+    var ImportSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `111`]]] = js.undefined
     
-    var InferredPredicate: js.UndefOr[VisitNode[S, Extract[Node, `131`]]] = js.native
+    var InferredPredicate: js.UndefOr[VisitNode[S, Extract[Node, `131`]]] = js.undefined
     
-    var InterfaceDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `47`]]] = js.native
+    var InterfaceDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `47`]]] = js.undefined
     
-    var InterfaceExtends: js.UndefOr[VisitNode[S, Extract[Node, `136`]]] = js.native
+    var InterfaceExtends: js.UndefOr[VisitNode[S, Extract[Node, `136`]]] = js.undefined
     
-    var InterfaceTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `8`]]] = js.native
+    var InterfaceTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `8`]]] = js.undefined
     
-    var InterpreterDirective: js.UndefOr[VisitNode[S, Extract[Node, `86`]]] = js.native
+    var InterpreterDirective: js.UndefOr[VisitNode[S, Extract[Node, `86`]]] = js.undefined
     
-    var IntersectionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `209`]]] = js.native
+    var IntersectionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `209`]]] = js.undefined
     
-    var JSX: js.UndefOr[VisitNode[S, typings.babelTypes.mod.JSX]] = js.native
+    var JSX: js.UndefOr[VisitNode[S, typings.babelTypes.mod.JSX]] = js.undefined
     
-    var JSXAttribute: js.UndefOr[VisitNode[S, Extract[Node, `100`]]] = js.native
+    var JSXAttribute: js.UndefOr[VisitNode[S, Extract[Node, `100`]]] = js.undefined
     
-    var JSXClosingElement: js.UndefOr[VisitNode[S, Extract[Node, `126`]]] = js.native
+    var JSXClosingElement: js.UndefOr[VisitNode[S, Extract[Node, `126`]]] = js.undefined
     
-    var JSXClosingFragment: js.UndefOr[VisitNode[S, Extract[Node, `206`]]] = js.native
+    var JSXClosingFragment: js.UndefOr[VisitNode[S, Extract[Node, `206`]]] = js.undefined
     
-    var JSXElement: js.UndefOr[VisitNode[S, Extract[Node, `169`]]] = js.native
+    var JSXElement: js.UndefOr[VisitNode[S, Extract[Node, `169`]]] = js.undefined
     
-    var JSXEmptyExpression: js.UndefOr[VisitNode[S, Extract[Node, `122`]]] = js.native
+    var JSXEmptyExpression: js.UndefOr[VisitNode[S, Extract[Node, `122`]]] = js.undefined
     
-    var JSXExpressionContainer: js.UndefOr[VisitNode[S, Extract[Node, `31`]]] = js.native
+    var JSXExpressionContainer: js.UndefOr[VisitNode[S, Extract[Node, `31`]]] = js.undefined
     
-    var JSXFragment: js.UndefOr[VisitNode[S, Extract[Node, `147`]]] = js.native
+    var JSXFragment: js.UndefOr[VisitNode[S, Extract[Node, `147`]]] = js.undefined
     
-    var JSXIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `85`]]] = js.native
+    var JSXIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `85`]]] = js.undefined
     
-    var JSXMemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `192`]]] = js.native
+    var JSXMemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `192`]]] = js.undefined
     
-    var JSXNamespacedName: js.UndefOr[VisitNode[S, Extract[Node, `149`]]] = js.native
+    var JSXNamespacedName: js.UndefOr[VisitNode[S, Extract[Node, `149`]]] = js.undefined
     
-    var JSXOpeningElement: js.UndefOr[VisitNode[S, Extract[Node, `72`]]] = js.native
+    var JSXOpeningElement: js.UndefOr[VisitNode[S, Extract[Node, `72`]]] = js.undefined
     
-    var JSXOpeningFragment: js.UndefOr[VisitNode[S, Extract[Node, `213`]]] = js.native
+    var JSXOpeningFragment: js.UndefOr[VisitNode[S, Extract[Node, `213`]]] = js.undefined
     
-    var JSXSpreadAttribute: js.UndefOr[VisitNode[S, Extract[Node, `48`]]] = js.native
+    var JSXSpreadAttribute: js.UndefOr[VisitNode[S, Extract[Node, `48`]]] = js.undefined
     
-    var JSXSpreadChild: js.UndefOr[VisitNode[S, Extract[Node, `71`]]] = js.native
+    var JSXSpreadChild: js.UndefOr[VisitNode[S, Extract[Node, `71`]]] = js.undefined
     
-    var JSXText: js.UndefOr[VisitNode[S, Extract[Node, `190`]]] = js.native
+    var JSXText: js.UndefOr[VisitNode[S, Extract[Node, `190`]]] = js.undefined
     
-    var LVal: js.UndefOr[VisitNode[S, typings.babelTypes.mod.LVal]] = js.native
+    var LVal: js.UndefOr[VisitNode[S, typings.babelTypes.mod.LVal]] = js.undefined
     
-    var LabeledStatement: js.UndefOr[VisitNode[S, Extract[Node, `35`]]] = js.native
+    var LabeledStatement: js.UndefOr[VisitNode[S, Extract[Node, `35`]]] = js.undefined
     
-    var Literal: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Literal]] = js.native
+    var Literal: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Literal]] = js.undefined
     
-    var LogicalExpression: js.UndefOr[VisitNode[S, Extract[Node, `68`]]] = js.native
+    var LogicalExpression: js.UndefOr[VisitNode[S, Extract[Node, `68`]]] = js.undefined
     
-    var Loop: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Loop]] = js.native
+    var Loop: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Loop]] = js.undefined
     
-    var MemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `59`]]] = js.native
+    var MemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `59`]]] = js.undefined
     
-    var MetaProperty: js.UndefOr[VisitNode[S, Extract[Node, `81`]]] = js.native
+    var MetaProperty: js.UndefOr[VisitNode[S, Extract[Node, `81`]]] = js.undefined
     
-    var Method: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Method]] = js.native
+    var Method: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Method]] = js.undefined
     
-    var MixedTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `56`]]] = js.native
+    var MixedTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `56`]]] = js.undefined
     
-    var ModuleDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ModuleDeclaration]] = js.native
+    var ModuleDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ModuleDeclaration]] = js.undefined
     
-    var ModuleSpecifier: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ModuleSpecifier]] = js.native
+    var ModuleSpecifier: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ModuleSpecifier]] = js.undefined
     
-    var NewExpression: js.UndefOr[VisitNode[S, Extract[Node, `58`]]] = js.native
+    var NewExpression: js.UndefOr[VisitNode[S, Extract[Node, `58`]]] = js.undefined
     
-    var Noop: js.UndefOr[VisitNode[S, Extract[Node, `33`]]] = js.native
+    var Noop: js.UndefOr[VisitNode[S, Extract[Node, `33`]]] = js.undefined
     
-    var NullLiteral: js.UndefOr[VisitNode[S, Extract[Node, `238`]]] = js.native
+    var NullLiteral: js.UndefOr[VisitNode[S, Extract[Node, `238`]]] = js.undefined
     
-    var NullLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `42`]]] = js.native
+    var NullLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `42`]]] = js.undefined
     
-    var NullableTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `96`]]] = js.native
+    var NullableTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `96`]]] = js.undefined
     
-    var NumberLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `152`]]] = js.native
+    var NumberLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `152`]]] = js.undefined
     
-    var NumberTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `159`]]] = js.native
+    var NumberTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `159`]]] = js.undefined
     
-    var NumericLiteral: js.UndefOr[VisitNode[S, Extract[Node, `210`]]] = js.native
+    var NumericLiteral: js.UndefOr[VisitNode[S, Extract[Node, `210`]]] = js.undefined
     
-    var ObjectExpression: js.UndefOr[VisitNode[S, Extract[Node, `121`]]] = js.native
+    var ObjectExpression: js.UndefOr[VisitNode[S, Extract[Node, `121`]]] = js.undefined
     
-    var ObjectMember: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ObjectMember]] = js.native
+    var ObjectMember: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ObjectMember]] = js.undefined
     
-    var ObjectMethod: js.UndefOr[VisitNode[S, Extract[Node, `123`]]] = js.native
+    var ObjectMethod: js.UndefOr[VisitNode[S, Extract[Node, `123`]]] = js.undefined
     
-    var ObjectPattern: js.UndefOr[VisitNode[S, Extract[Node, `217`]]] = js.native
+    var ObjectPattern: js.UndefOr[VisitNode[S, Extract[Node, `217`]]] = js.undefined
     
-    var ObjectProperty: js.UndefOr[VisitNode[S, Extract[Node, `141`]]] = js.native
+    var ObjectProperty: js.UndefOr[VisitNode[S, Extract[Node, `141`]]] = js.undefined
     
-    var ObjectTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `82`]]] = js.native
+    var ObjectTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `82`]]] = js.undefined
     
-    var ObjectTypeCallProperty: js.UndefOr[VisitNode[S, Extract[Node, `12`]]] = js.native
+    var ObjectTypeCallProperty: js.UndefOr[VisitNode[S, Extract[Node, `12`]]] = js.undefined
     
-    var ObjectTypeIndexer: js.UndefOr[VisitNode[S, Extract[Node, `170`]]] = js.native
+    var ObjectTypeIndexer: js.UndefOr[VisitNode[S, Extract[Node, `170`]]] = js.undefined
     
-    var ObjectTypeInternalSlot: js.UndefOr[VisitNode[S, Extract[Node, `226`]]] = js.native
+    var ObjectTypeInternalSlot: js.UndefOr[VisitNode[S, Extract[Node, `226`]]] = js.undefined
     
-    var ObjectTypeProperty: js.UndefOr[VisitNode[S, Extract[Node, `154`]]] = js.native
+    var ObjectTypeProperty: js.UndefOr[VisitNode[S, Extract[Node, `154`]]] = js.undefined
     
-    var ObjectTypeSpreadProperty: js.UndefOr[VisitNode[S, Extract[Node, `79`]]] = js.native
+    var ObjectTypeSpreadProperty: js.UndefOr[VisitNode[S, Extract[Node, `79`]]] = js.undefined
     
-    var OpaqueType: js.UndefOr[VisitNode[S, Extract[Node, `69`]]] = js.native
+    var OpaqueType: js.UndefOr[VisitNode[S, Extract[Node, `69`]]] = js.undefined
     
-    var OptionalCallExpression: js.UndefOr[VisitNode[S, Extract[Node, `44`]]] = js.native
+    var OptionalCallExpression: js.UndefOr[VisitNode[S, Extract[Node, `44`]]] = js.undefined
     
-    var OptionalMemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `26`]]] = js.native
+    var OptionalMemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `26`]]] = js.undefined
     
-    var ParenthesizedExpression: js.UndefOr[VisitNode[S, Extract[Node, `199`]]] = js.native
+    var ParenthesizedExpression: js.UndefOr[VisitNode[S, Extract[Node, `199`]]] = js.undefined
     
-    var Pattern: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Pattern]] = js.native
+    var Pattern: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Pattern]] = js.undefined
     
-    var PatternLike: js.UndefOr[VisitNode[S, typings.babelTypes.mod.PatternLike]] = js.native
+    var PatternLike: js.UndefOr[VisitNode[S, typings.babelTypes.mod.PatternLike]] = js.undefined
     
-    var PipelineBareFunction: js.UndefOr[VisitNode[S, Extract[Node, `157`]]] = js.native
+    var PipelineBareFunction: js.UndefOr[VisitNode[S, Extract[Node, `157`]]] = js.undefined
     
-    var PipelinePrimaryTopicReference: js.UndefOr[VisitNode[S, Extract[Node, `30`]]] = js.native
+    var PipelinePrimaryTopicReference: js.UndefOr[VisitNode[S, Extract[Node, `30`]]] = js.undefined
     
-    var PipelineTopicExpression: js.UndefOr[VisitNode[S, Extract[Node, `103`]]] = js.native
+    var PipelineTopicExpression: js.UndefOr[VisitNode[S, Extract[Node, `103`]]] = js.undefined
     
-    var Placeholder: js.UndefOr[VisitNode[S, Extract[Node, `163`]]] = js.native
+    var Placeholder: js.UndefOr[VisitNode[S, Extract[Node, `163`]]] = js.undefined
     
-    var Private: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Private]] = js.native
+    var Private: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Private]] = js.undefined
     
-    var PrivateName: js.UndefOr[VisitNode[S, Extract[Node, `93`]]] = js.native
+    var PrivateName: js.UndefOr[VisitNode[S, Extract[Node, `93`]]] = js.undefined
     
-    var Program: js.UndefOr[VisitNode[S, Extract[Node, `150`]]] = js.native
+    var Program: js.UndefOr[VisitNode[S, Extract[Node, `150`]]] = js.undefined
     
-    var Property: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Property]] = js.native
+    var Property: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Property]] = js.undefined
     
-    var Pureish: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Pureish]] = js.native
+    var Pureish: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Pureish]] = js.undefined
     
-    var QualifiedTypeIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `73`]]] = js.native
+    var QualifiedTypeIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `73`]]] = js.undefined
     
-    var RecordExpression: js.UndefOr[VisitNode[S, Extract[Node, `60`]]] = js.native
+    var RecordExpression: js.UndefOr[VisitNode[S, Extract[Node, `60`]]] = js.undefined
     
-    var RegExpLiteral: js.UndefOr[VisitNode[S, Extract[Node, `37`]]] = js.native
+    var RegExpLiteral: js.UndefOr[VisitNode[S, Extract[Node, `37`]]] = js.undefined
     
-    var RestElement: js.UndefOr[VisitNode[S, Extract[Node, `25`]]] = js.native
+    var RestElement: js.UndefOr[VisitNode[S, Extract[Node, `25`]]] = js.undefined
     
-    var ReturnStatement: js.UndefOr[VisitNode[S, Extract[Node, `5`]]] = js.native
+    var ReturnStatement: js.UndefOr[VisitNode[S, Extract[Node, `5`]]] = js.undefined
     
-    var Scopable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Scopable]] = js.native
+    var Scopable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Scopable]] = js.undefined
     
-    var SequenceExpression: js.UndefOr[VisitNode[S, Extract[Node, `166`]]] = js.native
+    var SequenceExpression: js.UndefOr[VisitNode[S, Extract[Node, `166`]]] = js.undefined
     
-    var SpreadElement: js.UndefOr[VisitNode[S, Extract[Node, `22`]]] = js.native
+    var SpreadElement: js.UndefOr[VisitNode[S, Extract[Node, `22`]]] = js.undefined
     
-    var Statement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Statement]] = js.native
+    var Statement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Statement]] = js.undefined
     
-    var StaticBlock: js.UndefOr[VisitNode[S, Extract[Node, `108`]]] = js.native
+    var StaticBlock: js.UndefOr[VisitNode[S, Extract[Node, `108`]]] = js.undefined
     
-    var StringLiteral: js.UndefOr[VisitNode[S, Extract[Node, `128`]]] = js.native
+    var StringLiteral: js.UndefOr[VisitNode[S, Extract[Node, `128`]]] = js.undefined
     
-    var StringLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `219`]]] = js.native
+    var StringLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `219`]]] = js.undefined
     
-    var StringTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `2`]]] = js.native
+    var StringTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `2`]]] = js.undefined
     
-    var Super: js.UndefOr[VisitNode[S, Extract[Node, `160`]]] = js.native
+    var Super: js.UndefOr[VisitNode[S, Extract[Node, `160`]]] = js.undefined
     
-    var SwitchCase: js.UndefOr[VisitNode[S, Extract[Node, `53`]]] = js.native
+    var SwitchCase: js.UndefOr[VisitNode[S, Extract[Node, `53`]]] = js.undefined
     
-    var SwitchStatement: js.UndefOr[VisitNode[S, Extract[Node, `43`]]] = js.native
+    var SwitchStatement: js.UndefOr[VisitNode[S, Extract[Node, `43`]]] = js.undefined
     
-    var SymbolTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `49`]]] = js.native
+    var SymbolTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `49`]]] = js.undefined
     
-    var TSAnyKeyword: js.UndefOr[VisitNode[S, Extract[Node, `9`]]] = js.native
+    var TSAnyKeyword: js.UndefOr[VisitNode[S, Extract[Node, `9`]]] = js.undefined
     
-    var TSArrayType: js.UndefOr[VisitNode[S, Extract[Node, `0`]]] = js.native
+    var TSArrayType: js.UndefOr[VisitNode[S, Extract[Node, `0`]]] = js.undefined
     
-    var TSAsExpression: js.UndefOr[VisitNode[S, Extract[Node, `7`]]] = js.native
+    var TSAsExpression: js.UndefOr[VisitNode[S, Extract[Node, `7`]]] = js.undefined
     
-    var TSBaseType: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TSBaseType]] = js.native
+    var TSBaseType: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TSBaseType]] = js.undefined
     
-    var TSBigIntKeyword: js.UndefOr[VisitNode[S, Extract[Node, `52`]]] = js.native
+    var TSBigIntKeyword: js.UndefOr[VisitNode[S, Extract[Node, `52`]]] = js.undefined
     
-    var TSBooleanKeyword: js.UndefOr[VisitNode[S, Extract[Node, `218`]]] = js.native
+    var TSBooleanKeyword: js.UndefOr[VisitNode[S, Extract[Node, `218`]]] = js.undefined
     
-    var TSCallSignatureDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `146`]]] = js.native
+    var TSCallSignatureDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `146`]]] = js.undefined
     
-    var TSConditionalType: js.UndefOr[VisitNode[S, Extract[Node, `17`]]] = js.native
+    var TSConditionalType: js.UndefOr[VisitNode[S, Extract[Node, `17`]]] = js.undefined
     
-    var TSConstructSignatureDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `119`]]] = js.native
+    var TSConstructSignatureDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `119`]]] = js.undefined
     
-    var TSConstructorType: js.UndefOr[VisitNode[S, Extract[Node, `208`]]] = js.native
+    var TSConstructorType: js.UndefOr[VisitNode[S, Extract[Node, `208`]]] = js.undefined
     
-    var TSDeclareFunction: js.UndefOr[VisitNode[S, Extract[Node, `196`]]] = js.native
+    var TSDeclareFunction: js.UndefOr[VisitNode[S, Extract[Node, `196`]]] = js.undefined
     
-    var TSDeclareMethod: js.UndefOr[VisitNode[S, Extract[Node, `75`]]] = js.native
+    var TSDeclareMethod: js.UndefOr[VisitNode[S, Extract[Node, `75`]]] = js.undefined
     
-    var TSEntityName: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TSEntityName]] = js.native
+    var TSEntityName: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TSEntityName]] = js.undefined
     
-    var TSEnumDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `89`]]] = js.native
+    var TSEnumDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `89`]]] = js.undefined
     
-    var TSEnumMember: js.UndefOr[VisitNode[S, Extract[Node, `130`]]] = js.native
+    var TSEnumMember: js.UndefOr[VisitNode[S, Extract[Node, `130`]]] = js.undefined
     
-    var TSExportAssignment: js.UndefOr[VisitNode[S, Extract[Node, `142`]]] = js.native
+    var TSExportAssignment: js.UndefOr[VisitNode[S, Extract[Node, `142`]]] = js.undefined
     
-    var TSExpressionWithTypeArguments: js.UndefOr[VisitNode[S, Extract[Node, `144`]]] = js.native
+    var TSExpressionWithTypeArguments: js.UndefOr[VisitNode[S, Extract[Node, `144`]]] = js.undefined
     
-    var TSExternalModuleReference: js.UndefOr[VisitNode[S, Extract[Node, `118`]]] = js.native
+    var TSExternalModuleReference: js.UndefOr[VisitNode[S, Extract[Node, `118`]]] = js.undefined
     
-    var TSFunctionType: js.UndefOr[VisitNode[S, Extract[Node, `41`]]] = js.native
+    var TSFunctionType: js.UndefOr[VisitNode[S, Extract[Node, `41`]]] = js.undefined
     
-    var TSImportEqualsDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `155`]]] = js.native
+    var TSImportEqualsDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `155`]]] = js.undefined
     
-    var TSImportType: js.UndefOr[VisitNode[S, Extract[Node, `234`]]] = js.native
+    var TSImportType: js.UndefOr[VisitNode[S, Extract[Node, `234`]]] = js.undefined
     
-    var TSIndexSignature: js.UndefOr[VisitNode[S, Extract[Node, `202`]]] = js.native
+    var TSIndexSignature: js.UndefOr[VisitNode[S, Extract[Node, `202`]]] = js.undefined
     
-    var TSIndexedAccessType: js.UndefOr[VisitNode[S, Extract[Node, `28`]]] = js.native
+    var TSIndexedAccessType: js.UndefOr[VisitNode[S, Extract[Node, `28`]]] = js.undefined
     
-    var TSInferType: js.UndefOr[VisitNode[S, Extract[Node, `101`]]] = js.native
+    var TSInferType: js.UndefOr[VisitNode[S, Extract[Node, `101`]]] = js.undefined
     
-    var TSInterfaceBody: js.UndefOr[VisitNode[S, Extract[Node, `6`]]] = js.native
+    var TSInterfaceBody: js.UndefOr[VisitNode[S, Extract[Node, `6`]]] = js.undefined
     
-    var TSInterfaceDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `182`]]] = js.native
+    var TSInterfaceDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `182`]]] = js.undefined
     
-    var TSIntersectionType: js.UndefOr[VisitNode[S, Extract[Node, `231`]]] = js.native
+    var TSIntersectionType: js.UndefOr[VisitNode[S, Extract[Node, `231`]]] = js.undefined
     
-    var TSIntrinsicKeyword: js.UndefOr[VisitNode[S, Extract[Node, `65`]]] = js.native
+    var TSIntrinsicKeyword: js.UndefOr[VisitNode[S, Extract[Node, `65`]]] = js.undefined
     
-    var TSLiteralType: js.UndefOr[VisitNode[S, Extract[Node, `19`]]] = js.native
+    var TSLiteralType: js.UndefOr[VisitNode[S, Extract[Node, `19`]]] = js.undefined
     
-    var TSMappedType: js.UndefOr[VisitNode[S, Extract[Node, `125`]]] = js.native
+    var TSMappedType: js.UndefOr[VisitNode[S, Extract[Node, `125`]]] = js.undefined
     
-    var TSMethodSignature: js.UndefOr[VisitNode[S, Extract[Node, `198`]]] = js.native
+    var TSMethodSignature: js.UndefOr[VisitNode[S, Extract[Node, `198`]]] = js.undefined
     
-    var TSModuleBlock: js.UndefOr[VisitNode[S, Extract[Node, `224`]]] = js.native
+    var TSModuleBlock: js.UndefOr[VisitNode[S, Extract[Node, `224`]]] = js.undefined
     
-    var TSModuleDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `15`]]] = js.native
+    var TSModuleDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `15`]]] = js.undefined
     
-    var TSNamedTupleMember: js.UndefOr[VisitNode[S, Extract[Node, `215`]]] = js.native
+    var TSNamedTupleMember: js.UndefOr[VisitNode[S, Extract[Node, `215`]]] = js.undefined
     
-    var TSNamespaceExportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `88`]]] = js.native
+    var TSNamespaceExportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `88`]]] = js.undefined
     
-    var TSNeverKeyword: js.UndefOr[VisitNode[S, Extract[Node, `230`]]] = js.native
+    var TSNeverKeyword: js.UndefOr[VisitNode[S, Extract[Node, `230`]]] = js.undefined
     
-    var TSNonNullExpression: js.UndefOr[VisitNode[S, Extract[Node, `95`]]] = js.native
+    var TSNonNullExpression: js.UndefOr[VisitNode[S, Extract[Node, `95`]]] = js.undefined
     
-    var TSNullKeyword: js.UndefOr[VisitNode[S, Extract[Node, `32`]]] = js.native
+    var TSNullKeyword: js.UndefOr[VisitNode[S, Extract[Node, `32`]]] = js.undefined
     
-    var TSNumberKeyword: js.UndefOr[VisitNode[S, Extract[Node, `176`]]] = js.native
+    var TSNumberKeyword: js.UndefOr[VisitNode[S, Extract[Node, `176`]]] = js.undefined
     
-    var TSObjectKeyword: js.UndefOr[VisitNode[S, Extract[Node, `211`]]] = js.native
+    var TSObjectKeyword: js.UndefOr[VisitNode[S, Extract[Node, `211`]]] = js.undefined
     
-    var TSOptionalType: js.UndefOr[VisitNode[S, Extract[Node, `180`]]] = js.native
+    var TSOptionalType: js.UndefOr[VisitNode[S, Extract[Node, `180`]]] = js.undefined
     
-    var TSParameterProperty: js.UndefOr[VisitNode[S, Extract[Node, `191`]]] = js.native
+    var TSParameterProperty: js.UndefOr[VisitNode[S, Extract[Node, `191`]]] = js.undefined
     
-    var TSParenthesizedType: js.UndefOr[VisitNode[S, Extract[Node, `220`]]] = js.native
+    var TSParenthesizedType: js.UndefOr[VisitNode[S, Extract[Node, `220`]]] = js.undefined
     
-    var TSPropertySignature: js.UndefOr[VisitNode[S, Extract[Node, `115`]]] = js.native
+    var TSPropertySignature: js.UndefOr[VisitNode[S, Extract[Node, `115`]]] = js.undefined
     
-    var TSQualifiedName: js.UndefOr[VisitNode[S, Extract[Node, `29`]]] = js.native
+    var TSQualifiedName: js.UndefOr[VisitNode[S, Extract[Node, `29`]]] = js.undefined
     
-    var TSRestType: js.UndefOr[VisitNode[S, Extract[Node, `205`]]] = js.native
+    var TSRestType: js.UndefOr[VisitNode[S, Extract[Node, `205`]]] = js.undefined
     
-    var TSStringKeyword: js.UndefOr[VisitNode[S, Extract[Node, `99`]]] = js.native
+    var TSStringKeyword: js.UndefOr[VisitNode[S, Extract[Node, `99`]]] = js.undefined
     
-    var TSSymbolKeyword: js.UndefOr[VisitNode[S, Extract[Node, `124`]]] = js.native
+    var TSSymbolKeyword: js.UndefOr[VisitNode[S, Extract[Node, `124`]]] = js.undefined
     
-    var TSThisType: js.UndefOr[VisitNode[S, Extract[Node, `203`]]] = js.native
+    var TSThisType: js.UndefOr[VisitNode[S, Extract[Node, `203`]]] = js.undefined
     
-    var TSTupleType: js.UndefOr[VisitNode[S, Extract[Node, `194`]]] = js.native
+    var TSTupleType: js.UndefOr[VisitNode[S, Extract[Node, `194`]]] = js.undefined
     
-    var TSType: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TSType]] = js.native
+    var TSType: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TSType]] = js.undefined
     
-    var TSTypeAliasDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `90`]]] = js.native
+    var TSTypeAliasDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `90`]]] = js.undefined
     
-    var TSTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `109`]]] = js.native
+    var TSTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `109`]]] = js.undefined
     
-    var TSTypeAssertion: js.UndefOr[VisitNode[S, Extract[Node, `229`]]] = js.native
+    var TSTypeAssertion: js.UndefOr[VisitNode[S, Extract[Node, `229`]]] = js.undefined
     
-    var TSTypeElement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TSTypeElement]] = js.native
+    var TSTypeElement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TSTypeElement]] = js.undefined
     
-    var TSTypeLiteral: js.UndefOr[VisitNode[S, Extract[Node, `151`]]] = js.native
+    var TSTypeLiteral: js.UndefOr[VisitNode[S, Extract[Node, `151`]]] = js.undefined
     
-    var TSTypeOperator: js.UndefOr[VisitNode[S, Extract[Node, `51`]]] = js.native
+    var TSTypeOperator: js.UndefOr[VisitNode[S, Extract[Node, `51`]]] = js.undefined
     
-    var TSTypeParameter: js.UndefOr[VisitNode[S, Extract[Node, `92`]]] = js.native
+    var TSTypeParameter: js.UndefOr[VisitNode[S, Extract[Node, `92`]]] = js.undefined
     
-    var TSTypeParameterDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `20`]]] = js.native
+    var TSTypeParameterDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `20`]]] = js.undefined
     
-    var TSTypeParameterInstantiation: js.UndefOr[VisitNode[S, Extract[Node, `74`]]] = js.native
+    var TSTypeParameterInstantiation: js.UndefOr[VisitNode[S, Extract[Node, `74`]]] = js.undefined
     
-    var TSTypePredicate: js.UndefOr[VisitNode[S, Extract[Node, `181`]]] = js.native
+    var TSTypePredicate: js.UndefOr[VisitNode[S, Extract[Node, `181`]]] = js.undefined
     
-    var TSTypeQuery: js.UndefOr[VisitNode[S, Extract[Node, `117`]]] = js.native
+    var TSTypeQuery: js.UndefOr[VisitNode[S, Extract[Node, `117`]]] = js.undefined
     
-    var TSTypeReference: js.UndefOr[VisitNode[S, Extract[Node, `240`]]] = js.native
+    var TSTypeReference: js.UndefOr[VisitNode[S, Extract[Node, `240`]]] = js.undefined
     
-    var TSUndefinedKeyword: js.UndefOr[VisitNode[S, Extract[Node, `164`]]] = js.native
+    var TSUndefinedKeyword: js.UndefOr[VisitNode[S, Extract[Node, `164`]]] = js.undefined
     
-    var TSUnionType: js.UndefOr[VisitNode[S, Extract[Node, `91`]]] = js.native
+    var TSUnionType: js.UndefOr[VisitNode[S, Extract[Node, `91`]]] = js.undefined
     
-    var TSUnknownKeyword: js.UndefOr[VisitNode[S, Extract[Node, `54`]]] = js.native
+    var TSUnknownKeyword: js.UndefOr[VisitNode[S, Extract[Node, `54`]]] = js.undefined
     
-    var TSVoidKeyword: js.UndefOr[VisitNode[S, Extract[Node, `57`]]] = js.native
+    var TSVoidKeyword: js.UndefOr[VisitNode[S, Extract[Node, `57`]]] = js.undefined
     
-    var TaggedTemplateExpression: js.UndefOr[VisitNode[S, Extract[Node, `70`]]] = js.native
+    var TaggedTemplateExpression: js.UndefOr[VisitNode[S, Extract[Node, `70`]]] = js.undefined
     
-    var TemplateElement: js.UndefOr[VisitNode[S, Extract[Node, `189`]]] = js.native
+    var TemplateElement: js.UndefOr[VisitNode[S, Extract[Node, `189`]]] = js.undefined
     
-    var TemplateLiteral: js.UndefOr[VisitNode[S, Extract[Node, `76`]]] = js.native
+    var TemplateLiteral: js.UndefOr[VisitNode[S, Extract[Node, `76`]]] = js.undefined
     
-    var Terminatorless: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Terminatorless]] = js.native
+    var Terminatorless: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Terminatorless]] = js.undefined
     
-    var ThisExpression: js.UndefOr[VisitNode[S, Extract[Node, `227`]]] = js.native
+    var ThisExpression: js.UndefOr[VisitNode[S, Extract[Node, `227`]]] = js.undefined
     
-    var ThisTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `50`]]] = js.native
+    var ThisTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `50`]]] = js.undefined
     
-    var ThrowStatement: js.UndefOr[VisitNode[S, Extract[Node, `137`]]] = js.native
+    var ThrowStatement: js.UndefOr[VisitNode[S, Extract[Node, `137`]]] = js.undefined
     
-    var TryStatement: js.UndefOr[VisitNode[S, Extract[Node, `23`]]] = js.native
+    var TryStatement: js.UndefOr[VisitNode[S, Extract[Node, `23`]]] = js.undefined
     
-    var TupleExpression: js.UndefOr[VisitNode[S, Extract[Node, `204`]]] = js.native
+    var TupleExpression: js.UndefOr[VisitNode[S, Extract[Node, `204`]]] = js.undefined
     
-    var TupleTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `13`]]] = js.native
+    var TupleTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `13`]]] = js.undefined
     
-    var TypeAlias: js.UndefOr[VisitNode[S, Extract[Node, `175`]]] = js.native
+    var TypeAlias: js.UndefOr[VisitNode[S, Extract[Node, `175`]]] = js.undefined
     
-    var TypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `21`]]] = js.native
+    var TypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `21`]]] = js.undefined
     
-    var TypeCastExpression: js.UndefOr[VisitNode[S, Extract[Node, `10`]]] = js.native
+    var TypeCastExpression: js.UndefOr[VisitNode[S, Extract[Node, `10`]]] = js.undefined
     
-    var TypeParameter: js.UndefOr[VisitNode[S, Extract[Node, `168`]]] = js.native
+    var TypeParameter: js.UndefOr[VisitNode[S, Extract[Node, `168`]]] = js.undefined
     
-    var TypeParameterDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `14`]]] = js.native
+    var TypeParameterDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `14`]]] = js.undefined
     
-    var TypeParameterInstantiation: js.UndefOr[VisitNode[S, Extract[Node, `239`]]] = js.native
+    var TypeParameterInstantiation: js.UndefOr[VisitNode[S, Extract[Node, `239`]]] = js.undefined
     
-    var TypeofTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `145`]]] = js.native
+    var TypeofTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `145`]]] = js.undefined
     
-    var UnaryExpression: js.UndefOr[VisitNode[S, Extract[Node, `172`]]] = js.native
+    var UnaryExpression: js.UndefOr[VisitNode[S, Extract[Node, `172`]]] = js.undefined
     
-    var UnaryLike: js.UndefOr[VisitNode[S, typings.babelTypes.mod.UnaryLike]] = js.native
+    var UnaryLike: js.UndefOr[VisitNode[S, typings.babelTypes.mod.UnaryLike]] = js.undefined
     
-    var UnionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `214`]]] = js.native
+    var UnionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `214`]]] = js.undefined
     
-    var UpdateExpression: js.UndefOr[VisitNode[S, Extract[Node, `98`]]] = js.native
+    var UpdateExpression: js.UndefOr[VisitNode[S, Extract[Node, `98`]]] = js.undefined
     
-    var UserWhitespacable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.UserWhitespacable]] = js.native
+    var UserWhitespacable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.UserWhitespacable]] = js.undefined
     
-    var V8IntrinsicIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `138`]]] = js.native
+    var V8IntrinsicIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `138`]]] = js.undefined
     
-    var VariableDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `67`]]] = js.native
+    var VariableDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `67`]]] = js.undefined
     
-    var VariableDeclarator: js.UndefOr[VisitNode[S, Extract[Node, `127`]]] = js.native
+    var VariableDeclarator: js.UndefOr[VisitNode[S, Extract[Node, `127`]]] = js.undefined
     
-    var Variance: js.UndefOr[VisitNode[S, Extract[Node, `148`]]] = js.native
+    var Variance: js.UndefOr[VisitNode[S, Extract[Node, `148`]]] = js.undefined
     
-    var VoidTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `104`]]] = js.native
+    var VoidTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `104`]]] = js.undefined
     
-    var While: js.UndefOr[VisitNode[S, typings.babelTypes.mod.While]] = js.native
+    var While: js.UndefOr[VisitNode[S, typings.babelTypes.mod.While]] = js.undefined
     
-    var WhileStatement: js.UndefOr[VisitNode[S, Extract[Node, `38`]]] = js.native
+    var WhileStatement: js.UndefOr[VisitNode[S, Extract[Node, `38`]]] = js.undefined
     
-    var WithStatement: js.UndefOr[VisitNode[S, Extract[Node, `94`]]] = js.native
+    var WithStatement: js.UndefOr[VisitNode[S, Extract[Node, `94`]]] = js.undefined
     
-    var YieldExpression: js.UndefOr[VisitNode[S, Extract[Node, `11`]]] = js.native
+    var YieldExpression: js.UndefOr[VisitNode[S, Extract[Node, `11`]]] = js.undefined
     
-    var enter: js.UndefOr[VisitNodeFunction[S, Node]] = js.native
+    var enter: js.UndefOr[VisitNodeFunction[S, Node]] = js.undefined
     
-    var exit: js.UndefOr[VisitNodeFunction[S, Node]] = js.native
+    var exit: js.UndefOr[VisitNodeFunction[S, Node]] = js.undefined
   }
   object Visitor {
     
@@ -3433,7 +3429,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class VisitorMutableBuilder[Self <: Visitor[_], S] (val x: Self with Visitor[S]) extends AnyVal {
+    implicit class VisitorMutableBuilder[Self <: Visitor[?], S] (val x: Self & Visitor[S]) extends AnyVal {
       
       @scala.inline
       def setAnyTypeAnnotation(value: VisitNode[S, Extract[Node, `64`]]): Self = StObject.set(x, "AnyTypeAnnotation", value.asInstanceOf[js.Any])

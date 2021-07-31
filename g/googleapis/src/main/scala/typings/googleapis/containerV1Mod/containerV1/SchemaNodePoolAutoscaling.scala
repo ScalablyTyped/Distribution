@@ -2,32 +2,30 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NodePoolAutoscaling contains information required by cluster autoscaler to
   * adjust the size of the node pool to the current cluster usage.
   */
-@js.native
 trait SchemaNodePoolAutoscaling extends StObject {
   
   /**
     * Is autoscaling enabled for this node pool.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of nodes in the NodePool. Must be &gt;= min_node_count.
     * There has to enough quota to scale up the cluster.
     */
-  var maxNodeCount: js.UndefOr[Double] = js.native
+  var maxNodeCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of nodes in the NodePool. Must be &gt;= 1 and &lt;=
     * max_node_count.
     */
-  var minNodeCount: js.UndefOr[Double] = js.native
+  var minNodeCount: js.UndefOr[Double] = js.undefined
 }
 object SchemaNodePoolAutoscaling {
   

@@ -9,33 +9,31 @@ import typings.reactCalendarTimeline.reactCalendarTimelineStrings.right
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineItemBase[DateType] extends StObject {
   
-  var canChangeGroup: js.UndefOr[Boolean] = js.native
+  var canChangeGroup: js.UndefOr[Boolean] = js.undefined
   
-  var canMove: js.UndefOr[Boolean] = js.native
+  var canMove: js.UndefOr[Boolean] = js.undefined
   
-  var canResize: js.UndefOr[Boolean | left | right | both] = js.native
+  var canResize: js.UndefOr[Boolean | left | right | both] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var end_time: DateType = js.native
+  var end_time: DateType
   
-  var group: Id = js.native
+  var group: Id
   
-  var id: Id = js.native
+  var id: Id
   
-  var itemProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
+  var itemProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
   
-  var start_time: DateType = js.native
+  var start_time: DateType
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var title: js.UndefOr[ReactNode] = js.native
+  var title: js.UndefOr[ReactNode] = js.undefined
 }
 object TimelineItemBase {
   
@@ -46,7 +44,7 @@ object TimelineItemBase {
   }
   
   @scala.inline
-  implicit class TimelineItemBaseMutableBuilder[Self <: TimelineItemBase[_], DateType] (val x: Self with TimelineItemBase[DateType]) extends AnyVal {
+  implicit class TimelineItemBaseMutableBuilder[Self <: TimelineItemBase[?], DateType] (val x: Self & TimelineItemBase[DateType]) extends AnyVal {
     
     @scala.inline
     def setCanChangeGroup(value: Boolean): Self = StObject.set(x, "canChangeGroup", value.asInstanceOf[js.Any])

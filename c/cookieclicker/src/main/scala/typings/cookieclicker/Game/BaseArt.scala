@@ -3,35 +3,35 @@ package typings.cookieclicker.Game
 import typings.cookieclicker.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseArt extends Art {
+trait BaseArt
+  extends StObject
+     with Art {
   
-  var base: String = js.native
+  var base: String
   
   var bg: js.UndefOr[
     String | (js.Function2[/* building */ GameObject, /* ctx */ CanvasRenderingContext2D, Unit])
-  ] = js.native
+  ] = js.undefined
   
-  var frames: js.UndefOr[Double] = js.native
+  var frames: js.UndefOr[Double] = js.undefined
   
-  var h: js.UndefOr[Double] = js.native
+  var h: js.UndefOr[Double] = js.undefined
   
-  var pic: js.UndefOr[String | (js.Function2[/* building */ GameObject, /* i */ Double, String])] = js.native
+  var pic: js.UndefOr[String | (js.Function2[/* building */ GameObject, /* i */ Double, String])] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var w: js.UndefOr[Double] = js.native
+  var w: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var xV: js.UndefOr[Double] = js.native
+  var xV: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
-  var yV: js.UndefOr[Double] = js.native
+  var yV: js.UndefOr[Double] = js.undefined
 }
 object BaseArt {
   

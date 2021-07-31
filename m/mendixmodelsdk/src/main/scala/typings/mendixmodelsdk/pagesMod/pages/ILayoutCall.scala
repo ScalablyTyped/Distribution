@@ -4,14 +4,15 @@ import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.elementsMod.IElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.17.0: added public
   */
 @js.native
-trait ILayoutCall extends IElement {
+trait ILayoutCall
+  extends StObject
+     with IElement {
   
   val containerAsLayout: ILayout = js.native
   

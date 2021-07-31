@@ -11,7 +11,6 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,20 +20,16 @@ object mod extends Shortcut {
   @js.native
   class ^ () extends Duplexify {
     def this(writable: Writable) = this()
-    def this(writable: js.UndefOr[scala.Nothing], readable: Readable) = this()
+    def this(writable: Unit, readable: Readable) = this()
     def this(writable: Writable, readable: Readable) = this()
-    def this(
-      writable: js.UndefOr[scala.Nothing],
-      readable: js.UndefOr[scala.Nothing],
-      streamOptions: DuplexOptions
-    ) = this()
-    def this(writable: js.UndefOr[scala.Nothing], readable: Readable, streamOptions: DuplexOptions) = this()
-    def this(writable: Writable, readable: js.UndefOr[scala.Nothing], streamOptions: DuplexOptions) = this()
+    def this(writable: Unit, readable: Unit, streamOptions: DuplexOptions) = this()
+    def this(writable: Unit, readable: Readable, streamOptions: DuplexOptions) = this()
+    def this(writable: Writable, readable: Unit, streamOptions: DuplexOptions) = this()
     def this(writable: Writable, readable: Readable, streamOptions: DuplexOptions) = this()
   }
   @JSImport("duplexify", JSImport.Namespace)
   @js.native
-  val ^ : DuplexifyConstructor = js.native
+  val ^ : js.Object & DuplexifyConstructor = js.native
   
   @js.native
   trait Duplexify extends Duplex {
@@ -46,45 +41,42 @@ object mod extends Shortcut {
   
   @js.native
   trait DuplexifyConstructor
-    extends Instantiable0[Duplexify]
+    extends StObject
+       with Instantiable0[Duplexify]
        with Instantiable1[/* writable */ Writable, Duplexify]
-       with Instantiable2[js.UndefOr[/* writable */ Writable], /* readable */ Readable, Duplexify]
+       with Instantiable2[
+          (/* writable */ Unit) | (/* writable */ Writable), 
+          /* readable */ Readable, 
+          Duplexify
+        ]
        with Instantiable3[
-          js.UndefOr[/* writable */ Writable], 
-          js.UndefOr[/* readable */ Readable], 
+          (/* writable */ Unit) | (/* writable */ Writable), 
+          (/* readable */ Readable) | (/* readable */ Unit), 
           /* streamOptions */ DuplexOptions, 
           Duplexify
         ] {
     
     def apply(): Duplexify = js.native
-    def apply(
-      writable: js.UndefOr[scala.Nothing],
-      readable: js.UndefOr[scala.Nothing],
-      streamOptions: DuplexOptions
-    ): Duplexify = js.native
-    def apply(writable: js.UndefOr[scala.Nothing], readable: Readable): Duplexify = js.native
-    def apply(writable: js.UndefOr[scala.Nothing], readable: Readable, streamOptions: DuplexOptions): Duplexify = js.native
+    def apply(writable: Unit, readable: Unit, streamOptions: DuplexOptions): Duplexify = js.native
+    def apply(writable: Unit, readable: Readable): Duplexify = js.native
+    def apply(writable: Unit, readable: Readable, streamOptions: DuplexOptions): Duplexify = js.native
     def apply(writable: Writable): Duplexify = js.native
-    def apply(writable: Writable, readable: js.UndefOr[scala.Nothing], streamOptions: DuplexOptions): Duplexify = js.native
+    def apply(writable: Writable, readable: Unit, streamOptions: DuplexOptions): Duplexify = js.native
     def apply(writable: Writable, readable: Readable): Duplexify = js.native
     def apply(writable: Writable, readable: Readable, streamOptions: DuplexOptions): Duplexify = js.native
     
     def obj(): Duplexify = js.native
-    def obj(
-      writable: js.UndefOr[scala.Nothing],
-      readable: js.UndefOr[scala.Nothing],
-      streamOptions: DuplexOptions
-    ): Duplexify = js.native
-    def obj(writable: js.UndefOr[scala.Nothing], readable: Readable): Duplexify = js.native
-    def obj(writable: js.UndefOr[scala.Nothing], readable: Readable, streamOptions: DuplexOptions): Duplexify = js.native
+    def obj(writable: Unit, readable: Unit, streamOptions: DuplexOptions): Duplexify = js.native
+    def obj(writable: Unit, readable: Readable): Duplexify = js.native
+    def obj(writable: Unit, readable: Readable, streamOptions: DuplexOptions): Duplexify = js.native
     def obj(writable: Writable): Duplexify = js.native
-    def obj(writable: Writable, readable: js.UndefOr[scala.Nothing], streamOptions: DuplexOptions): Duplexify = js.native
+    def obj(writable: Writable, readable: Unit, streamOptions: DuplexOptions): Duplexify = js.native
     def obj(writable: Writable, readable: Readable): Duplexify = js.native
     def obj(writable: Writable, readable: Readable, streamOptions: DuplexOptions): Duplexify = js.native
   }
   
-  type _To = DuplexifyConstructor
+  type _To = js.Object & DuplexifyConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: DuplexifyConstructor = ^
+  override def _to: js.Object & DuplexifyConstructor = ^
 }

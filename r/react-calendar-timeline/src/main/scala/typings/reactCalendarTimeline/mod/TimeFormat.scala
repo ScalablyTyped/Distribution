@@ -2,19 +2,17 @@ package typings.reactCalendarTimeline.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeFormat extends StObject {
   
-  var long: String = js.native
+  var long: String
   
-  var medium: String = js.native
+  var medium: String
   
-  var mediumLong: String = js.native
+  var mediumLong: String
   
-  var short: String = js.native
+  var short: String
 }
 object TimeFormat {
   

@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object manufacturersMod {
+  
+  @JSImport("googleapis/build/src/apis/manufacturers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object manufacturersMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/manufacturers", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/manufacturers", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object manufacturersMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/manufacturers", "manufacturers")
-  @js.native
-  def manufacturers(options: Options): Manufacturers = js.native
-  @JSImport("googleapis/build/src/apis/manufacturers", "manufacturers")
-  @js.native
-  def manufacturers_v1(version: v1): Manufacturers = js.native
+  @scala.inline
+  def manufacturers(options: Options): Manufacturers = ^.asInstanceOf[js.Dynamic].applyDynamic("manufacturers")(options.asInstanceOf[js.Any]).asInstanceOf[Manufacturers]
+  
+  @scala.inline
+  def manufacturers_v1(version: v1): Manufacturers = ^.asInstanceOf[js.Dynamic].applyDynamic("manufacturers")(version.asInstanceOf[js.Any]).asInstanceOf[Manufacturers]
 }

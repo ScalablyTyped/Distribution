@@ -3,29 +3,27 @@ package typings.powerappsComponentFramework.ComponentFramework
 import typings.powerappsComponentFramework.anon.Guid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object that encapsulates an Entity Reference as a plain object suitable for storing in the state tree
   */
-@js.native
 trait EntityReference extends StObject {
   
   /**
     * The entity logical name. Read-only.
     */
-  var etn: js.UndefOr[String] = js.native
+  var etn: js.UndefOr[String] = js.undefined
   
   /**
     * The record id. Read-only.
     */
-  var id: Guid = js.native
+  var id: Guid
   
   /**
     * The name of the entity reference. Read-only.
     */
-  var name: String = js.native
+  var name: String
 }
 object EntityReference {
   

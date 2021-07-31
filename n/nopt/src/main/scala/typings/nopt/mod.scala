@@ -4,51 +4,35 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nopt.anon.Cooked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("nopt", JSImport.Namespace)
-  @js.native
-  def apply(types: FlagTypeMap): OptionsParsed = js.native
-  @JSImport("nopt", JSImport.Namespace)
-  @js.native
-  def apply(
-    types: FlagTypeMap,
-    shorthands: js.UndefOr[scala.Nothing],
-    args: js.UndefOr[scala.Nothing],
-    slice: Double
-  ): OptionsParsed = js.native
-  @JSImport("nopt", JSImport.Namespace)
-  @js.native
-  def apply(types: FlagTypeMap, shorthands: js.UndefOr[scala.Nothing], args: js.Array[String]): OptionsParsed = js.native
-  @JSImport("nopt", JSImport.Namespace)
-  @js.native
-  def apply(types: FlagTypeMap, shorthands: js.UndefOr[scala.Nothing], args: js.Array[String], slice: Double): OptionsParsed = js.native
-  @JSImport("nopt", JSImport.Namespace)
-  @js.native
-  def apply(types: FlagTypeMap, shorthands: ShortFlags): OptionsParsed = js.native
-  @JSImport("nopt", JSImport.Namespace)
-  @js.native
-  def apply(types: FlagTypeMap, shorthands: ShortFlags, args: js.UndefOr[scala.Nothing], slice: Double): OptionsParsed = js.native
-  @JSImport("nopt", JSImport.Namespace)
-  @js.native
-  def apply(types: FlagTypeMap, shorthands: ShortFlags, args: js.Array[String]): OptionsParsed = js.native
-  @JSImport("nopt", JSImport.Namespace)
-  @js.native
-  def apply(types: FlagTypeMap, shorthands: ShortFlags, args: js.Array[String], slice: Double): OptionsParsed = js.native
+  @scala.inline
+  def apply(types: FlagTypeMap): OptionsParsed = ^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any]).asInstanceOf[OptionsParsed]
+  @scala.inline
+  def apply(types: FlagTypeMap, shorthands: Unit, args: js.Array[String]): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  @scala.inline
+  def apply(types: FlagTypeMap, shorthands: Unit, args: js.Array[String], slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  @scala.inline
+  def apply(types: FlagTypeMap, shorthands: Unit, args: Unit, slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  @scala.inline
+  def apply(types: FlagTypeMap, shorthands: ShortFlags): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  @scala.inline
+  def apply(types: FlagTypeMap, shorthands: ShortFlags, args: js.Array[String]): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  @scala.inline
+  def apply(types: FlagTypeMap, shorthands: ShortFlags, args: js.Array[String], slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  @scala.inline
+  def apply(types: FlagTypeMap, shorthands: ShortFlags, args: Unit, slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
   
   @JSImport("nopt", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("nopt", "clean")
-  @js.native
-  def clean(data: CommandData, types: FlagTypeMap): String = js.native
-  @JSImport("nopt", "clean")
-  @js.native
-  def clean(data: CommandData, types: FlagTypeMap, typeDefs: TypeDefs_): String = js.native
+  @scala.inline
+  def clean(data: CommandData, types: FlagTypeMap): String = (^.asInstanceOf[js.Dynamic].applyDynamic("clean")(data.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def clean(data: CommandData, types: FlagTypeMap, typeDefs: TypeDefs_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("clean")(data.asInstanceOf[js.Any], types.asInstanceOf[js.Any], typeDefs.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("nopt", "typeDefs")
   @js.native
@@ -60,11 +44,11 @@ object mod {
   
   type FlagTypeMap = StringDictionary[js.Object]
   
-  @js.native
   trait OptionsParsed
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
-    var argv: Cooked = js.native
+    var argv: Cooked
   }
   object OptionsParsed {
     
@@ -86,12 +70,11 @@ object mod {
   
   type TypeDefs_ = StringDictionary[TypeInfo]
   
-  @js.native
   trait TypeInfo extends StObject {
     
-    var `type`: js.Object = js.native
+    var `type`: js.Object
     
-    def validate(data: CommandData, k: String, `val`: String): Boolean = js.native
+    def validate(data: CommandData, k: String, `val`: String): Boolean
   }
   object TypeInfo {
     

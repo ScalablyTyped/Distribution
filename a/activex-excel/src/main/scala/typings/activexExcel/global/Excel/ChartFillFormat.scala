@@ -2,10 +2,10 @@ package typings.activexExcel.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Excel.ChartFillFormat")
 @js.native
 class ChartFillFormat protected ()
-  extends typings.activexExcel.Excel.ChartFillFormat
+  extends StObject
+     with typings.activexExcel.Excel.ChartFillFormat

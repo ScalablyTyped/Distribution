@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLoggingConfigurationRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the web ACL for which you want to get the LoggingConfiguration.
     */
-  var ResourceArn: typings.awsSdk.wafv2Mod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.wafv2Mod.ResourceArn
 }
 object GetLoggingConfigurationRequest {
   

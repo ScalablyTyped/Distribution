@@ -4,15 +4,15 @@ import typings.react.mod.HTMLAttributes
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClearButtonProps extends HTMLAttributes[button] {
+trait ClearButtonProps
+  extends StObject
+     with HTMLAttributes[button] {
   
-  var bsSize: js.UndefOr[TypeaheadBsSizes] = js.native
+  var bsSize: js.UndefOr[TypeaheadBsSizes] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object ClearButtonProps {
   

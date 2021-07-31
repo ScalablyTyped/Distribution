@@ -4,13 +4,11 @@ import typings.openlayers.mod.Feature
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GPXOptions extends StObject {
   
-  var readExtensions: js.UndefOr[js.Function2[/* feature */ Feature, /* node */ Node, _]] = js.native
+  var readExtensions: js.UndefOr[js.Function2[/* feature */ Feature, /* node */ Node, js.Any]] = js.undefined
 }
 object GPXOptions {
   
@@ -24,7 +22,7 @@ object GPXOptions {
   implicit class GPXOptionsMutableBuilder[Self <: GPXOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setReadExtensions(value: (/* feature */ Feature, /* node */ Node) => _): Self = StObject.set(x, "readExtensions", js.Any.fromFunction2(value))
+    def setReadExtensions(value: (/* feature */ Feature, /* node */ Node) => js.Any): Self = StObject.set(x, "readExtensions", js.Any.fromFunction2(value))
     
     @scala.inline
     def setReadExtensionsUndefined: Self = StObject.set(x, "readExtensions", js.undefined)

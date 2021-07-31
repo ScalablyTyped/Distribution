@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object delegationSetMod {
@@ -24,7 +23,7 @@ object delegationSetMod {
       */
     def this(name: String) = this()
     def this(name: String, args: DelegationSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: DelegationSetArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -42,6 +41,10 @@ object delegationSetMod {
   /* static members */
   object DelegationSet {
     
+    @JSImport("@pulumi/aws/route53/delegationSet", "DelegationSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DelegationSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -51,36 +54,30 @@ object delegationSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53/delegationSet", "DelegationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DelegationSet = js.native
-    @JSImport("@pulumi/aws/route53/delegationSet", "DelegationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DelegationSet = js.native
-    @JSImport("@pulumi/aws/route53/delegationSet", "DelegationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DelegationSetState): DelegationSet = js.native
-    @JSImport("@pulumi/aws/route53/delegationSet", "DelegationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DelegationSetState, opts: CustomResourceOptions): DelegationSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DelegationSetState): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DelegationSetState, opts: CustomResourceOptions): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
     
     /**
       * Returns true if the given object is an instance of DelegationSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53/delegationSet", "DelegationSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean]
   }
   
-  @js.native
   trait DelegationSetArgs extends StObject {
     
     /**
       * This is a reference name used in Caller Reference
       * (helpful for identifying single delegation set amongst others)
       */
-    val referenceName: js.UndefOr[Input[String]] = js.native
+    val referenceName: js.UndefOr[Input[String]] = js.undefined
   }
   object DelegationSetArgs {
     
@@ -101,20 +98,19 @@ object delegationSetMod {
     }
   }
   
-  @js.native
   trait DelegationSetState extends StObject {
     
     /**
       * A list of authoritative name servers for the hosted zone
       * (effectively a list of NS records).
       */
-    val nameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val nameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * This is a reference name used in Caller Reference
       * (helpful for identifying single delegation set amongst others)
       */
-    val referenceName: js.UndefOr[Input[String]] = js.native
+    val referenceName: js.UndefOr[Input[String]] = js.undefined
   }
   object DelegationSetState {
     

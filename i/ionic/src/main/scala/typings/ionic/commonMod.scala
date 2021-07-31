@@ -2,23 +2,24 @@ package typings.ionic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
   
-  @JSImport("ionic/lib/project/common", "findOpenIonicPorts")
+  @JSImport("ionic/lib/project/common", JSImport.Namespace)
   @js.native
-  def findOpenIonicPorts(address: String, ports: Ports): js.Promise[Ports] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def findOpenIonicPorts(address: String, ports: Ports): js.Promise[Ports] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOpenIonicPorts")(address.asInstanceOf[js.Any], ports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Ports]]
+  
   trait Ports extends StObject {
     
-    var livereloadPort: Double = js.native
+    var livereloadPort: Double
     
-    var notificationPort: Double = js.native
+    var notificationPort: Double
     
-    var port: Double = js.native
+    var port: Double
   }
   object Ports {
     

@@ -15,1000 +15,998 @@ import typings.googleAnalytics.googleAnalyticsStrings.social
 import typings.googleAnalytics.googleAnalyticsStrings.timing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object UniversalAnalytics {
   
   // https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference
-  @js.native
   trait FieldsObject extends StObject {
     
-    var affiliation: js.UndefOr[String] = js.native
+    var affiliation: js.UndefOr[String] = js.undefined
     
-    var allowAnchor: js.UndefOr[Boolean] = js.native
+    var allowAnchor: js.UndefOr[Boolean] = js.undefined
     
-    var allowLinker: js.UndefOr[Boolean] = js.native
+    var allowLinker: js.UndefOr[Boolean] = js.undefined
     
-    var alwaysSendReferrer: js.UndefOr[Boolean] = js.native
+    var alwaysSendReferrer: js.UndefOr[Boolean] = js.undefined
     
-    var anonymizeIp: js.UndefOr[Boolean] = js.native
+    var anonymizeIp: js.UndefOr[Boolean] = js.undefined
     
-    var appId: js.UndefOr[String] = js.native
+    var appId: js.UndefOr[String] = js.undefined
     
-    var appInstallerId: js.UndefOr[String] = js.native
+    var appInstallerId: js.UndefOr[String] = js.undefined
     
-    var appName: js.UndefOr[String] = js.native
+    var appName: js.UndefOr[String] = js.undefined
     
-    var appVersion: js.UndefOr[String] = js.native
+    var appVersion: js.UndefOr[String] = js.undefined
     
-    var brand: js.UndefOr[String] = js.native
+    var brand: js.UndefOr[String] = js.undefined
     
-    var campaignContent: js.UndefOr[String] = js.native
+    var campaignContent: js.UndefOr[String] = js.undefined
     
-    var campaignId: js.UndefOr[String] = js.native
+    var campaignId: js.UndefOr[String] = js.undefined
     
-    var campaignKeyword: js.UndefOr[String] = js.native
+    var campaignKeyword: js.UndefOr[String] = js.undefined
     
-    var campaignMedium: js.UndefOr[String] = js.native
+    var campaignMedium: js.UndefOr[String] = js.undefined
     
-    var campaignName: js.UndefOr[String] = js.native
+    var campaignName: js.UndefOr[String] = js.undefined
     
-    var campaignSource: js.UndefOr[String] = js.native
+    var campaignSource: js.UndefOr[String] = js.undefined
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    var contentGroup1: js.UndefOr[String] = js.native
+    var contentGroup1: js.UndefOr[String] = js.undefined
     
-    var contentGroup10: js.UndefOr[String] = js.native
+    var contentGroup10: js.UndefOr[String] = js.undefined
     
-    var contentGroup2: js.UndefOr[String] = js.native
+    var contentGroup2: js.UndefOr[String] = js.undefined
     
-    var contentGroup3: js.UndefOr[String] = js.native
+    var contentGroup3: js.UndefOr[String] = js.undefined
     
-    var contentGroup4: js.UndefOr[String] = js.native
+    var contentGroup4: js.UndefOr[String] = js.undefined
     
-    var contentGroup5: js.UndefOr[String] = js.native
+    var contentGroup5: js.UndefOr[String] = js.undefined
     
-    var contentGroup6: js.UndefOr[String] = js.native
+    var contentGroup6: js.UndefOr[String] = js.undefined
     
-    var contentGroup7: js.UndefOr[String] = js.native
+    var contentGroup7: js.UndefOr[String] = js.undefined
     
-    var contentGroup8: js.UndefOr[String] = js.native
+    var contentGroup8: js.UndefOr[String] = js.undefined
     
-    var contentGroup9: js.UndefOr[String] = js.native
+    var contentGroup9: js.UndefOr[String] = js.undefined
     
-    var cookieDomain: js.UndefOr[String] = js.native
+    var cookieDomain: js.UndefOr[String] = js.undefined
     
-    var cookieExpires: js.UndefOr[Double] = js.native
+    var cookieExpires: js.UndefOr[Double] = js.undefined
     
-    var cookieName: js.UndefOr[String] = js.native
+    var cookieName: js.UndefOr[String] = js.undefined
     
-    var cookiePath: js.UndefOr[String] = js.native
+    var cookiePath: js.UndefOr[String] = js.undefined
     
-    var coupon: js.UndefOr[String] = js.native
+    var coupon: js.UndefOr[String] = js.undefined
     
-    var creative: js.UndefOr[String] = js.native
+    var creative: js.UndefOr[String] = js.undefined
     
-    var currencyCode: js.UndefOr[String] = js.native
+    var currencyCode: js.UndefOr[String] = js.undefined
     
-    var dataSource: js.UndefOr[String] = js.native
+    var dataSource: js.UndefOr[String] = js.undefined
     
-    var dimension1: js.UndefOr[String] = js.native
+    var dimension1: js.UndefOr[String] = js.undefined
     
-    var dimension10: js.UndefOr[String] = js.native
+    var dimension10: js.UndefOr[String] = js.undefined
     
-    var dimension100: js.UndefOr[String] = js.native
+    var dimension100: js.UndefOr[String] = js.undefined
     
-    var dimension101: js.UndefOr[String] = js.native
+    var dimension101: js.UndefOr[String] = js.undefined
     
-    var dimension102: js.UndefOr[String] = js.native
+    var dimension102: js.UndefOr[String] = js.undefined
     
-    var dimension103: js.UndefOr[String] = js.native
+    var dimension103: js.UndefOr[String] = js.undefined
     
-    var dimension104: js.UndefOr[String] = js.native
+    var dimension104: js.UndefOr[String] = js.undefined
     
-    var dimension105: js.UndefOr[String] = js.native
+    var dimension105: js.UndefOr[String] = js.undefined
     
-    var dimension106: js.UndefOr[String] = js.native
+    var dimension106: js.UndefOr[String] = js.undefined
     
-    var dimension107: js.UndefOr[String] = js.native
+    var dimension107: js.UndefOr[String] = js.undefined
     
-    var dimension108: js.UndefOr[String] = js.native
+    var dimension108: js.UndefOr[String] = js.undefined
     
-    var dimension109: js.UndefOr[String] = js.native
+    var dimension109: js.UndefOr[String] = js.undefined
     
-    var dimension11: js.UndefOr[String] = js.native
+    var dimension11: js.UndefOr[String] = js.undefined
     
-    var dimension110: js.UndefOr[String] = js.native
+    var dimension110: js.UndefOr[String] = js.undefined
     
-    var dimension111: js.UndefOr[String] = js.native
+    var dimension111: js.UndefOr[String] = js.undefined
     
-    var dimension112: js.UndefOr[String] = js.native
+    var dimension112: js.UndefOr[String] = js.undefined
     
-    var dimension113: js.UndefOr[String] = js.native
+    var dimension113: js.UndefOr[String] = js.undefined
     
-    var dimension114: js.UndefOr[String] = js.native
+    var dimension114: js.UndefOr[String] = js.undefined
     
-    var dimension115: js.UndefOr[String] = js.native
+    var dimension115: js.UndefOr[String] = js.undefined
     
-    var dimension116: js.UndefOr[String] = js.native
+    var dimension116: js.UndefOr[String] = js.undefined
     
-    var dimension117: js.UndefOr[String] = js.native
+    var dimension117: js.UndefOr[String] = js.undefined
     
-    var dimension118: js.UndefOr[String] = js.native
+    var dimension118: js.UndefOr[String] = js.undefined
     
-    var dimension119: js.UndefOr[String] = js.native
+    var dimension119: js.UndefOr[String] = js.undefined
     
-    var dimension12: js.UndefOr[String] = js.native
+    var dimension12: js.UndefOr[String] = js.undefined
     
-    var dimension120: js.UndefOr[String] = js.native
+    var dimension120: js.UndefOr[String] = js.undefined
     
-    var dimension121: js.UndefOr[String] = js.native
+    var dimension121: js.UndefOr[String] = js.undefined
     
-    var dimension122: js.UndefOr[String] = js.native
+    var dimension122: js.UndefOr[String] = js.undefined
     
-    var dimension123: js.UndefOr[String] = js.native
+    var dimension123: js.UndefOr[String] = js.undefined
     
-    var dimension124: js.UndefOr[String] = js.native
+    var dimension124: js.UndefOr[String] = js.undefined
     
-    var dimension125: js.UndefOr[String] = js.native
+    var dimension125: js.UndefOr[String] = js.undefined
     
-    var dimension126: js.UndefOr[String] = js.native
+    var dimension126: js.UndefOr[String] = js.undefined
     
-    var dimension127: js.UndefOr[String] = js.native
+    var dimension127: js.UndefOr[String] = js.undefined
     
-    var dimension128: js.UndefOr[String] = js.native
+    var dimension128: js.UndefOr[String] = js.undefined
     
-    var dimension129: js.UndefOr[String] = js.native
+    var dimension129: js.UndefOr[String] = js.undefined
     
-    var dimension13: js.UndefOr[String] = js.native
+    var dimension13: js.UndefOr[String] = js.undefined
     
-    var dimension130: js.UndefOr[String] = js.native
+    var dimension130: js.UndefOr[String] = js.undefined
     
-    var dimension131: js.UndefOr[String] = js.native
+    var dimension131: js.UndefOr[String] = js.undefined
     
-    var dimension132: js.UndefOr[String] = js.native
+    var dimension132: js.UndefOr[String] = js.undefined
     
-    var dimension133: js.UndefOr[String] = js.native
+    var dimension133: js.UndefOr[String] = js.undefined
     
-    var dimension134: js.UndefOr[String] = js.native
+    var dimension134: js.UndefOr[String] = js.undefined
     
-    var dimension135: js.UndefOr[String] = js.native
+    var dimension135: js.UndefOr[String] = js.undefined
     
-    var dimension136: js.UndefOr[String] = js.native
+    var dimension136: js.UndefOr[String] = js.undefined
     
-    var dimension137: js.UndefOr[String] = js.native
+    var dimension137: js.UndefOr[String] = js.undefined
     
-    var dimension138: js.UndefOr[String] = js.native
+    var dimension138: js.UndefOr[String] = js.undefined
     
-    var dimension139: js.UndefOr[String] = js.native
+    var dimension139: js.UndefOr[String] = js.undefined
     
-    var dimension14: js.UndefOr[String] = js.native
+    var dimension14: js.UndefOr[String] = js.undefined
     
-    var dimension140: js.UndefOr[String] = js.native
+    var dimension140: js.UndefOr[String] = js.undefined
     
-    var dimension141: js.UndefOr[String] = js.native
+    var dimension141: js.UndefOr[String] = js.undefined
     
-    var dimension142: js.UndefOr[String] = js.native
+    var dimension142: js.UndefOr[String] = js.undefined
     
-    var dimension143: js.UndefOr[String] = js.native
+    var dimension143: js.UndefOr[String] = js.undefined
     
-    var dimension144: js.UndefOr[String] = js.native
+    var dimension144: js.UndefOr[String] = js.undefined
     
-    var dimension145: js.UndefOr[String] = js.native
+    var dimension145: js.UndefOr[String] = js.undefined
     
-    var dimension146: js.UndefOr[String] = js.native
+    var dimension146: js.UndefOr[String] = js.undefined
     
-    var dimension147: js.UndefOr[String] = js.native
+    var dimension147: js.UndefOr[String] = js.undefined
     
-    var dimension148: js.UndefOr[String] = js.native
+    var dimension148: js.UndefOr[String] = js.undefined
     
-    var dimension149: js.UndefOr[String] = js.native
+    var dimension149: js.UndefOr[String] = js.undefined
     
-    var dimension15: js.UndefOr[String] = js.native
+    var dimension15: js.UndefOr[String] = js.undefined
     
-    var dimension150: js.UndefOr[String] = js.native
+    var dimension150: js.UndefOr[String] = js.undefined
     
-    var dimension151: js.UndefOr[String] = js.native
+    var dimension151: js.UndefOr[String] = js.undefined
     
-    var dimension152: js.UndefOr[String] = js.native
+    var dimension152: js.UndefOr[String] = js.undefined
     
-    var dimension153: js.UndefOr[String] = js.native
+    var dimension153: js.UndefOr[String] = js.undefined
     
-    var dimension154: js.UndefOr[String] = js.native
+    var dimension154: js.UndefOr[String] = js.undefined
     
-    var dimension155: js.UndefOr[String] = js.native
+    var dimension155: js.UndefOr[String] = js.undefined
     
-    var dimension156: js.UndefOr[String] = js.native
+    var dimension156: js.UndefOr[String] = js.undefined
     
-    var dimension157: js.UndefOr[String] = js.native
+    var dimension157: js.UndefOr[String] = js.undefined
     
-    var dimension158: js.UndefOr[String] = js.native
+    var dimension158: js.UndefOr[String] = js.undefined
     
-    var dimension159: js.UndefOr[String] = js.native
+    var dimension159: js.UndefOr[String] = js.undefined
     
-    var dimension16: js.UndefOr[String] = js.native
+    var dimension16: js.UndefOr[String] = js.undefined
     
-    var dimension160: js.UndefOr[String] = js.native
+    var dimension160: js.UndefOr[String] = js.undefined
     
-    var dimension161: js.UndefOr[String] = js.native
+    var dimension161: js.UndefOr[String] = js.undefined
     
-    var dimension162: js.UndefOr[String] = js.native
+    var dimension162: js.UndefOr[String] = js.undefined
     
-    var dimension163: js.UndefOr[String] = js.native
+    var dimension163: js.UndefOr[String] = js.undefined
     
-    var dimension164: js.UndefOr[String] = js.native
+    var dimension164: js.UndefOr[String] = js.undefined
     
-    var dimension165: js.UndefOr[String] = js.native
+    var dimension165: js.UndefOr[String] = js.undefined
     
-    var dimension166: js.UndefOr[String] = js.native
+    var dimension166: js.UndefOr[String] = js.undefined
     
-    var dimension167: js.UndefOr[String] = js.native
+    var dimension167: js.UndefOr[String] = js.undefined
     
-    var dimension168: js.UndefOr[String] = js.native
+    var dimension168: js.UndefOr[String] = js.undefined
     
-    var dimension169: js.UndefOr[String] = js.native
+    var dimension169: js.UndefOr[String] = js.undefined
     
-    var dimension17: js.UndefOr[String] = js.native
+    var dimension17: js.UndefOr[String] = js.undefined
     
-    var dimension170: js.UndefOr[String] = js.native
+    var dimension170: js.UndefOr[String] = js.undefined
     
-    var dimension171: js.UndefOr[String] = js.native
+    var dimension171: js.UndefOr[String] = js.undefined
     
-    var dimension172: js.UndefOr[String] = js.native
+    var dimension172: js.UndefOr[String] = js.undefined
     
-    var dimension173: js.UndefOr[String] = js.native
+    var dimension173: js.UndefOr[String] = js.undefined
     
-    var dimension174: js.UndefOr[String] = js.native
+    var dimension174: js.UndefOr[String] = js.undefined
     
-    var dimension175: js.UndefOr[String] = js.native
+    var dimension175: js.UndefOr[String] = js.undefined
     
-    var dimension176: js.UndefOr[String] = js.native
+    var dimension176: js.UndefOr[String] = js.undefined
     
-    var dimension177: js.UndefOr[String] = js.native
+    var dimension177: js.UndefOr[String] = js.undefined
     
-    var dimension178: js.UndefOr[String] = js.native
+    var dimension178: js.UndefOr[String] = js.undefined
     
-    var dimension179: js.UndefOr[String] = js.native
+    var dimension179: js.UndefOr[String] = js.undefined
     
-    var dimension18: js.UndefOr[String] = js.native
+    var dimension18: js.UndefOr[String] = js.undefined
     
-    var dimension180: js.UndefOr[String] = js.native
+    var dimension180: js.UndefOr[String] = js.undefined
     
-    var dimension181: js.UndefOr[String] = js.native
+    var dimension181: js.UndefOr[String] = js.undefined
     
-    var dimension182: js.UndefOr[String] = js.native
+    var dimension182: js.UndefOr[String] = js.undefined
     
-    var dimension183: js.UndefOr[String] = js.native
+    var dimension183: js.UndefOr[String] = js.undefined
     
-    var dimension184: js.UndefOr[String] = js.native
+    var dimension184: js.UndefOr[String] = js.undefined
     
-    var dimension185: js.UndefOr[String] = js.native
+    var dimension185: js.UndefOr[String] = js.undefined
     
-    var dimension186: js.UndefOr[String] = js.native
+    var dimension186: js.UndefOr[String] = js.undefined
     
-    var dimension187: js.UndefOr[String] = js.native
+    var dimension187: js.UndefOr[String] = js.undefined
     
-    var dimension188: js.UndefOr[String] = js.native
+    var dimension188: js.UndefOr[String] = js.undefined
     
-    var dimension189: js.UndefOr[String] = js.native
+    var dimension189: js.UndefOr[String] = js.undefined
     
-    var dimension19: js.UndefOr[String] = js.native
+    var dimension19: js.UndefOr[String] = js.undefined
     
-    var dimension190: js.UndefOr[String] = js.native
+    var dimension190: js.UndefOr[String] = js.undefined
     
-    var dimension191: js.UndefOr[String] = js.native
+    var dimension191: js.UndefOr[String] = js.undefined
     
-    var dimension192: js.UndefOr[String] = js.native
+    var dimension192: js.UndefOr[String] = js.undefined
     
-    var dimension193: js.UndefOr[String] = js.native
+    var dimension193: js.UndefOr[String] = js.undefined
     
-    var dimension194: js.UndefOr[String] = js.native
+    var dimension194: js.UndefOr[String] = js.undefined
     
-    var dimension195: js.UndefOr[String] = js.native
+    var dimension195: js.UndefOr[String] = js.undefined
     
-    var dimension196: js.UndefOr[String] = js.native
+    var dimension196: js.UndefOr[String] = js.undefined
     
-    var dimension197: js.UndefOr[String] = js.native
+    var dimension197: js.UndefOr[String] = js.undefined
     
-    var dimension198: js.UndefOr[String] = js.native
+    var dimension198: js.UndefOr[String] = js.undefined
     
-    var dimension199: js.UndefOr[String] = js.native
+    var dimension199: js.UndefOr[String] = js.undefined
     
-    var dimension2: js.UndefOr[String] = js.native
+    var dimension2: js.UndefOr[String] = js.undefined
     
-    var dimension20: js.UndefOr[String] = js.native
+    var dimension20: js.UndefOr[String] = js.undefined
     
-    var dimension200: js.UndefOr[String] = js.native
+    var dimension200: js.UndefOr[String] = js.undefined
     
-    var dimension21: js.UndefOr[String] = js.native
+    var dimension21: js.UndefOr[String] = js.undefined
     
-    var dimension22: js.UndefOr[String] = js.native
+    var dimension22: js.UndefOr[String] = js.undefined
     
-    var dimension23: js.UndefOr[String] = js.native
+    var dimension23: js.UndefOr[String] = js.undefined
     
-    var dimension24: js.UndefOr[String] = js.native
+    var dimension24: js.UndefOr[String] = js.undefined
     
-    var dimension25: js.UndefOr[String] = js.native
+    var dimension25: js.UndefOr[String] = js.undefined
     
-    var dimension26: js.UndefOr[String] = js.native
+    var dimension26: js.UndefOr[String] = js.undefined
     
-    var dimension27: js.UndefOr[String] = js.native
+    var dimension27: js.UndefOr[String] = js.undefined
     
-    var dimension28: js.UndefOr[String] = js.native
+    var dimension28: js.UndefOr[String] = js.undefined
     
-    var dimension29: js.UndefOr[String] = js.native
+    var dimension29: js.UndefOr[String] = js.undefined
     
-    var dimension3: js.UndefOr[String] = js.native
+    var dimension3: js.UndefOr[String] = js.undefined
     
-    var dimension30: js.UndefOr[String] = js.native
+    var dimension30: js.UndefOr[String] = js.undefined
     
-    var dimension31: js.UndefOr[String] = js.native
+    var dimension31: js.UndefOr[String] = js.undefined
     
-    var dimension32: js.UndefOr[String] = js.native
+    var dimension32: js.UndefOr[String] = js.undefined
     
-    var dimension33: js.UndefOr[String] = js.native
+    var dimension33: js.UndefOr[String] = js.undefined
     
-    var dimension34: js.UndefOr[String] = js.native
+    var dimension34: js.UndefOr[String] = js.undefined
     
-    var dimension35: js.UndefOr[String] = js.native
+    var dimension35: js.UndefOr[String] = js.undefined
     
-    var dimension36: js.UndefOr[String] = js.native
+    var dimension36: js.UndefOr[String] = js.undefined
     
-    var dimension37: js.UndefOr[String] = js.native
+    var dimension37: js.UndefOr[String] = js.undefined
     
-    var dimension38: js.UndefOr[String] = js.native
+    var dimension38: js.UndefOr[String] = js.undefined
     
-    var dimension39: js.UndefOr[String] = js.native
+    var dimension39: js.UndefOr[String] = js.undefined
     
-    var dimension4: js.UndefOr[String] = js.native
+    var dimension4: js.UndefOr[String] = js.undefined
     
-    var dimension40: js.UndefOr[String] = js.native
+    var dimension40: js.UndefOr[String] = js.undefined
     
-    var dimension41: js.UndefOr[String] = js.native
+    var dimension41: js.UndefOr[String] = js.undefined
     
-    var dimension42: js.UndefOr[String] = js.native
+    var dimension42: js.UndefOr[String] = js.undefined
     
-    var dimension43: js.UndefOr[String] = js.native
+    var dimension43: js.UndefOr[String] = js.undefined
     
-    var dimension44: js.UndefOr[String] = js.native
+    var dimension44: js.UndefOr[String] = js.undefined
     
-    var dimension45: js.UndefOr[String] = js.native
+    var dimension45: js.UndefOr[String] = js.undefined
     
-    var dimension46: js.UndefOr[String] = js.native
+    var dimension46: js.UndefOr[String] = js.undefined
     
-    var dimension47: js.UndefOr[String] = js.native
+    var dimension47: js.UndefOr[String] = js.undefined
     
-    var dimension48: js.UndefOr[String] = js.native
+    var dimension48: js.UndefOr[String] = js.undefined
     
-    var dimension49: js.UndefOr[String] = js.native
+    var dimension49: js.UndefOr[String] = js.undefined
     
-    var dimension5: js.UndefOr[String] = js.native
+    var dimension5: js.UndefOr[String] = js.undefined
     
-    var dimension50: js.UndefOr[String] = js.native
+    var dimension50: js.UndefOr[String] = js.undefined
     
-    var dimension51: js.UndefOr[String] = js.native
+    var dimension51: js.UndefOr[String] = js.undefined
     
-    var dimension52: js.UndefOr[String] = js.native
+    var dimension52: js.UndefOr[String] = js.undefined
     
-    var dimension53: js.UndefOr[String] = js.native
+    var dimension53: js.UndefOr[String] = js.undefined
     
-    var dimension54: js.UndefOr[String] = js.native
+    var dimension54: js.UndefOr[String] = js.undefined
     
-    var dimension55: js.UndefOr[String] = js.native
+    var dimension55: js.UndefOr[String] = js.undefined
     
-    var dimension56: js.UndefOr[String] = js.native
+    var dimension56: js.UndefOr[String] = js.undefined
     
-    var dimension57: js.UndefOr[String] = js.native
+    var dimension57: js.UndefOr[String] = js.undefined
     
-    var dimension58: js.UndefOr[String] = js.native
+    var dimension58: js.UndefOr[String] = js.undefined
     
-    var dimension59: js.UndefOr[String] = js.native
+    var dimension59: js.UndefOr[String] = js.undefined
     
-    var dimension6: js.UndefOr[String] = js.native
+    var dimension6: js.UndefOr[String] = js.undefined
     
-    var dimension60: js.UndefOr[String] = js.native
+    var dimension60: js.UndefOr[String] = js.undefined
     
-    var dimension61: js.UndefOr[String] = js.native
+    var dimension61: js.UndefOr[String] = js.undefined
     
-    var dimension62: js.UndefOr[String] = js.native
+    var dimension62: js.UndefOr[String] = js.undefined
     
-    var dimension63: js.UndefOr[String] = js.native
+    var dimension63: js.UndefOr[String] = js.undefined
     
-    var dimension64: js.UndefOr[String] = js.native
+    var dimension64: js.UndefOr[String] = js.undefined
     
-    var dimension65: js.UndefOr[String] = js.native
+    var dimension65: js.UndefOr[String] = js.undefined
     
-    var dimension66: js.UndefOr[String] = js.native
+    var dimension66: js.UndefOr[String] = js.undefined
     
-    var dimension67: js.UndefOr[String] = js.native
+    var dimension67: js.UndefOr[String] = js.undefined
     
-    var dimension68: js.UndefOr[String] = js.native
+    var dimension68: js.UndefOr[String] = js.undefined
     
-    var dimension69: js.UndefOr[String] = js.native
+    var dimension69: js.UndefOr[String] = js.undefined
     
-    var dimension7: js.UndefOr[String] = js.native
+    var dimension7: js.UndefOr[String] = js.undefined
     
-    var dimension70: js.UndefOr[String] = js.native
+    var dimension70: js.UndefOr[String] = js.undefined
     
-    var dimension71: js.UndefOr[String] = js.native
+    var dimension71: js.UndefOr[String] = js.undefined
     
-    var dimension72: js.UndefOr[String] = js.native
+    var dimension72: js.UndefOr[String] = js.undefined
     
-    var dimension73: js.UndefOr[String] = js.native
+    var dimension73: js.UndefOr[String] = js.undefined
     
-    var dimension74: js.UndefOr[String] = js.native
+    var dimension74: js.UndefOr[String] = js.undefined
     
-    var dimension75: js.UndefOr[String] = js.native
+    var dimension75: js.UndefOr[String] = js.undefined
     
-    var dimension76: js.UndefOr[String] = js.native
+    var dimension76: js.UndefOr[String] = js.undefined
     
-    var dimension77: js.UndefOr[String] = js.native
+    var dimension77: js.UndefOr[String] = js.undefined
     
-    var dimension78: js.UndefOr[String] = js.native
+    var dimension78: js.UndefOr[String] = js.undefined
     
-    var dimension79: js.UndefOr[String] = js.native
+    var dimension79: js.UndefOr[String] = js.undefined
     
-    var dimension8: js.UndefOr[String] = js.native
+    var dimension8: js.UndefOr[String] = js.undefined
     
-    var dimension80: js.UndefOr[String] = js.native
+    var dimension80: js.UndefOr[String] = js.undefined
     
-    var dimension81: js.UndefOr[String] = js.native
+    var dimension81: js.UndefOr[String] = js.undefined
     
-    var dimension82: js.UndefOr[String] = js.native
+    var dimension82: js.UndefOr[String] = js.undefined
     
-    var dimension83: js.UndefOr[String] = js.native
+    var dimension83: js.UndefOr[String] = js.undefined
     
-    var dimension84: js.UndefOr[String] = js.native
+    var dimension84: js.UndefOr[String] = js.undefined
     
-    var dimension85: js.UndefOr[String] = js.native
+    var dimension85: js.UndefOr[String] = js.undefined
     
-    var dimension86: js.UndefOr[String] = js.native
+    var dimension86: js.UndefOr[String] = js.undefined
     
-    var dimension87: js.UndefOr[String] = js.native
+    var dimension87: js.UndefOr[String] = js.undefined
     
-    var dimension88: js.UndefOr[String] = js.native
+    var dimension88: js.UndefOr[String] = js.undefined
     
-    var dimension89: js.UndefOr[String] = js.native
+    var dimension89: js.UndefOr[String] = js.undefined
     
-    var dimension9: js.UndefOr[String] = js.native
+    var dimension9: js.UndefOr[String] = js.undefined
     
-    var dimension90: js.UndefOr[String] = js.native
+    var dimension90: js.UndefOr[String] = js.undefined
     
-    var dimension91: js.UndefOr[String] = js.native
+    var dimension91: js.UndefOr[String] = js.undefined
     
-    var dimension92: js.UndefOr[String] = js.native
+    var dimension92: js.UndefOr[String] = js.undefined
     
-    var dimension93: js.UndefOr[String] = js.native
+    var dimension93: js.UndefOr[String] = js.undefined
     
-    var dimension94: js.UndefOr[String] = js.native
+    var dimension94: js.UndefOr[String] = js.undefined
     
-    var dimension95: js.UndefOr[String] = js.native
+    var dimension95: js.UndefOr[String] = js.undefined
     
-    var dimension96: js.UndefOr[String] = js.native
+    var dimension96: js.UndefOr[String] = js.undefined
     
-    var dimension97: js.UndefOr[String] = js.native
+    var dimension97: js.UndefOr[String] = js.undefined
     
-    var dimension98: js.UndefOr[String] = js.native
+    var dimension98: js.UndefOr[String] = js.undefined
     
-    var dimension99: js.UndefOr[String] = js.native
+    var dimension99: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var eventAction: js.UndefOr[String] = js.native
+    var eventAction: js.UndefOr[String] = js.undefined
     
-    var eventCategory: js.UndefOr[String] = js.native
+    var eventCategory: js.UndefOr[String] = js.undefined
     
-    var eventLabel: js.UndefOr[String] = js.native
+    var eventLabel: js.UndefOr[String] = js.undefined
     
-    var eventValue: js.UndefOr[Double] = js.native
+    var eventValue: js.UndefOr[Double] = js.undefined
     
-    var exDescription: js.UndefOr[String] = js.native
+    var exDescription: js.UndefOr[String] = js.undefined
     
-    var exFatal: js.UndefOr[Boolean] = js.native
+    var exFatal: js.UndefOr[Boolean] = js.undefined
     
-    var expId: js.UndefOr[String] = js.native
+    var expId: js.UndefOr[String] = js.undefined
     
-    var expVar: js.UndefOr[String] = js.native
+    var expVar: js.UndefOr[String] = js.undefined
     
-    var flashVersion: js.UndefOr[String] = js.native
+    var flashVersion: js.UndefOr[String] = js.undefined
     
-    var forceSSL: js.UndefOr[Boolean] = js.native
+    var forceSSL: js.UndefOr[Boolean] = js.undefined
     
-    var hitCallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var hitCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hitType: js.UndefOr[HitType] = js.native
+    var hitType: js.UndefOr[HitType] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var javaEnabled: js.UndefOr[Boolean] = js.native
+    var javaEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var legacyCookieDomain: js.UndefOr[String] = js.native
+    var legacyCookieDomain: js.UndefOr[String] = js.undefined
     
-    var legacyHistoryImport: js.UndefOr[Boolean] = js.native
+    var legacyHistoryImport: js.UndefOr[Boolean] = js.undefined
     
-    var linkid: js.UndefOr[String] = js.native
+    var linkid: js.UndefOr[String] = js.undefined
     
-    var list: js.UndefOr[String] = js.native
+    var list: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var metric1: js.UndefOr[String | Double] = js.native
+    var metric1: js.UndefOr[String | Double] = js.undefined
     
-    var metric10: js.UndefOr[String | Double] = js.native
+    var metric10: js.UndefOr[String | Double] = js.undefined
     
-    var metric100: js.UndefOr[String | Double] = js.native
+    var metric100: js.UndefOr[String | Double] = js.undefined
     
-    var metric101: js.UndefOr[String | Double] = js.native
+    var metric101: js.UndefOr[String | Double] = js.undefined
     
-    var metric102: js.UndefOr[String | Double] = js.native
+    var metric102: js.UndefOr[String | Double] = js.undefined
     
-    var metric103: js.UndefOr[String | Double] = js.native
+    var metric103: js.UndefOr[String | Double] = js.undefined
     
-    var metric104: js.UndefOr[String | Double] = js.native
+    var metric104: js.UndefOr[String | Double] = js.undefined
     
-    var metric105: js.UndefOr[String | Double] = js.native
+    var metric105: js.UndefOr[String | Double] = js.undefined
     
-    var metric106: js.UndefOr[String | Double] = js.native
+    var metric106: js.UndefOr[String | Double] = js.undefined
     
-    var metric107: js.UndefOr[String | Double] = js.native
+    var metric107: js.UndefOr[String | Double] = js.undefined
     
-    var metric108: js.UndefOr[String | Double] = js.native
+    var metric108: js.UndefOr[String | Double] = js.undefined
     
-    var metric109: js.UndefOr[String | Double] = js.native
+    var metric109: js.UndefOr[String | Double] = js.undefined
     
-    var metric11: js.UndefOr[String | Double] = js.native
+    var metric11: js.UndefOr[String | Double] = js.undefined
     
-    var metric110: js.UndefOr[String | Double] = js.native
+    var metric110: js.UndefOr[String | Double] = js.undefined
     
-    var metric111: js.UndefOr[String | Double] = js.native
+    var metric111: js.UndefOr[String | Double] = js.undefined
     
-    var metric112: js.UndefOr[String | Double] = js.native
+    var metric112: js.UndefOr[String | Double] = js.undefined
     
-    var metric113: js.UndefOr[String | Double] = js.native
+    var metric113: js.UndefOr[String | Double] = js.undefined
     
-    var metric114: js.UndefOr[String | Double] = js.native
+    var metric114: js.UndefOr[String | Double] = js.undefined
     
-    var metric115: js.UndefOr[String | Double] = js.native
+    var metric115: js.UndefOr[String | Double] = js.undefined
     
-    var metric116: js.UndefOr[String | Double] = js.native
+    var metric116: js.UndefOr[String | Double] = js.undefined
     
-    var metric117: js.UndefOr[String | Double] = js.native
+    var metric117: js.UndefOr[String | Double] = js.undefined
     
-    var metric118: js.UndefOr[String | Double] = js.native
+    var metric118: js.UndefOr[String | Double] = js.undefined
     
-    var metric119: js.UndefOr[String | Double] = js.native
+    var metric119: js.UndefOr[String | Double] = js.undefined
     
-    var metric12: js.UndefOr[String | Double] = js.native
+    var metric12: js.UndefOr[String | Double] = js.undefined
     
-    var metric120: js.UndefOr[String | Double] = js.native
+    var metric120: js.UndefOr[String | Double] = js.undefined
     
-    var metric121: js.UndefOr[String | Double] = js.native
+    var metric121: js.UndefOr[String | Double] = js.undefined
     
-    var metric122: js.UndefOr[String | Double] = js.native
+    var metric122: js.UndefOr[String | Double] = js.undefined
     
-    var metric123: js.UndefOr[String | Double] = js.native
+    var metric123: js.UndefOr[String | Double] = js.undefined
     
-    var metric124: js.UndefOr[String | Double] = js.native
+    var metric124: js.UndefOr[String | Double] = js.undefined
     
-    var metric125: js.UndefOr[String | Double] = js.native
+    var metric125: js.UndefOr[String | Double] = js.undefined
     
-    var metric126: js.UndefOr[String | Double] = js.native
+    var metric126: js.UndefOr[String | Double] = js.undefined
     
-    var metric127: js.UndefOr[String | Double] = js.native
+    var metric127: js.UndefOr[String | Double] = js.undefined
     
-    var metric128: js.UndefOr[String | Double] = js.native
+    var metric128: js.UndefOr[String | Double] = js.undefined
     
-    var metric129: js.UndefOr[String | Double] = js.native
+    var metric129: js.UndefOr[String | Double] = js.undefined
     
-    var metric13: js.UndefOr[String | Double] = js.native
+    var metric13: js.UndefOr[String | Double] = js.undefined
     
-    var metric130: js.UndefOr[String | Double] = js.native
+    var metric130: js.UndefOr[String | Double] = js.undefined
     
-    var metric131: js.UndefOr[String | Double] = js.native
+    var metric131: js.UndefOr[String | Double] = js.undefined
     
-    var metric132: js.UndefOr[String | Double] = js.native
+    var metric132: js.UndefOr[String | Double] = js.undefined
     
-    var metric133: js.UndefOr[String | Double] = js.native
+    var metric133: js.UndefOr[String | Double] = js.undefined
     
-    var metric134: js.UndefOr[String | Double] = js.native
+    var metric134: js.UndefOr[String | Double] = js.undefined
     
-    var metric135: js.UndefOr[String | Double] = js.native
+    var metric135: js.UndefOr[String | Double] = js.undefined
     
-    var metric136: js.UndefOr[String | Double] = js.native
+    var metric136: js.UndefOr[String | Double] = js.undefined
     
-    var metric137: js.UndefOr[String | Double] = js.native
+    var metric137: js.UndefOr[String | Double] = js.undefined
     
-    var metric138: js.UndefOr[String | Double] = js.native
+    var metric138: js.UndefOr[String | Double] = js.undefined
     
-    var metric139: js.UndefOr[String | Double] = js.native
+    var metric139: js.UndefOr[String | Double] = js.undefined
     
-    var metric14: js.UndefOr[String | Double] = js.native
+    var metric14: js.UndefOr[String | Double] = js.undefined
     
-    var metric140: js.UndefOr[String | Double] = js.native
+    var metric140: js.UndefOr[String | Double] = js.undefined
     
-    var metric141: js.UndefOr[String | Double] = js.native
+    var metric141: js.UndefOr[String | Double] = js.undefined
     
-    var metric142: js.UndefOr[String | Double] = js.native
+    var metric142: js.UndefOr[String | Double] = js.undefined
     
-    var metric143: js.UndefOr[String | Double] = js.native
+    var metric143: js.UndefOr[String | Double] = js.undefined
     
-    var metric144: js.UndefOr[String | Double] = js.native
+    var metric144: js.UndefOr[String | Double] = js.undefined
     
-    var metric145: js.UndefOr[String | Double] = js.native
+    var metric145: js.UndefOr[String | Double] = js.undefined
     
-    var metric146: js.UndefOr[String | Double] = js.native
+    var metric146: js.UndefOr[String | Double] = js.undefined
     
-    var metric147: js.UndefOr[String | Double] = js.native
+    var metric147: js.UndefOr[String | Double] = js.undefined
     
-    var metric148: js.UndefOr[String | Double] = js.native
+    var metric148: js.UndefOr[String | Double] = js.undefined
     
-    var metric149: js.UndefOr[String | Double] = js.native
+    var metric149: js.UndefOr[String | Double] = js.undefined
     
-    var metric15: js.UndefOr[String | Double] = js.native
+    var metric15: js.UndefOr[String | Double] = js.undefined
     
-    var metric150: js.UndefOr[String | Double] = js.native
+    var metric150: js.UndefOr[String | Double] = js.undefined
     
-    var metric151: js.UndefOr[String | Double] = js.native
+    var metric151: js.UndefOr[String | Double] = js.undefined
     
-    var metric152: js.UndefOr[String | Double] = js.native
+    var metric152: js.UndefOr[String | Double] = js.undefined
     
-    var metric153: js.UndefOr[String | Double] = js.native
+    var metric153: js.UndefOr[String | Double] = js.undefined
     
-    var metric154: js.UndefOr[String | Double] = js.native
+    var metric154: js.UndefOr[String | Double] = js.undefined
     
-    var metric155: js.UndefOr[String | Double] = js.native
+    var metric155: js.UndefOr[String | Double] = js.undefined
     
-    var metric156: js.UndefOr[String | Double] = js.native
+    var metric156: js.UndefOr[String | Double] = js.undefined
     
-    var metric157: js.UndefOr[String | Double] = js.native
+    var metric157: js.UndefOr[String | Double] = js.undefined
     
-    var metric158: js.UndefOr[String | Double] = js.native
+    var metric158: js.UndefOr[String | Double] = js.undefined
     
-    var metric159: js.UndefOr[String | Double] = js.native
+    var metric159: js.UndefOr[String | Double] = js.undefined
     
-    var metric16: js.UndefOr[String | Double] = js.native
+    var metric16: js.UndefOr[String | Double] = js.undefined
     
-    var metric160: js.UndefOr[String | Double] = js.native
+    var metric160: js.UndefOr[String | Double] = js.undefined
     
-    var metric161: js.UndefOr[String | Double] = js.native
+    var metric161: js.UndefOr[String | Double] = js.undefined
     
-    var metric162: js.UndefOr[String | Double] = js.native
+    var metric162: js.UndefOr[String | Double] = js.undefined
     
-    var metric163: js.UndefOr[String | Double] = js.native
+    var metric163: js.UndefOr[String | Double] = js.undefined
     
-    var metric164: js.UndefOr[String | Double] = js.native
+    var metric164: js.UndefOr[String | Double] = js.undefined
     
-    var metric165: js.UndefOr[String | Double] = js.native
+    var metric165: js.UndefOr[String | Double] = js.undefined
     
-    var metric166: js.UndefOr[String | Double] = js.native
+    var metric166: js.UndefOr[String | Double] = js.undefined
     
-    var metric167: js.UndefOr[String | Double] = js.native
+    var metric167: js.UndefOr[String | Double] = js.undefined
     
-    var metric168: js.UndefOr[String | Double] = js.native
+    var metric168: js.UndefOr[String | Double] = js.undefined
     
-    var metric169: js.UndefOr[String | Double] = js.native
+    var metric169: js.UndefOr[String | Double] = js.undefined
     
-    var metric17: js.UndefOr[String | Double] = js.native
+    var metric17: js.UndefOr[String | Double] = js.undefined
     
-    var metric170: js.UndefOr[String | Double] = js.native
+    var metric170: js.UndefOr[String | Double] = js.undefined
     
-    var metric171: js.UndefOr[String | Double] = js.native
+    var metric171: js.UndefOr[String | Double] = js.undefined
     
-    var metric172: js.UndefOr[String | Double] = js.native
+    var metric172: js.UndefOr[String | Double] = js.undefined
     
-    var metric173: js.UndefOr[String | Double] = js.native
+    var metric173: js.UndefOr[String | Double] = js.undefined
     
-    var metric174: js.UndefOr[String | Double] = js.native
+    var metric174: js.UndefOr[String | Double] = js.undefined
     
-    var metric175: js.UndefOr[String | Double] = js.native
+    var metric175: js.UndefOr[String | Double] = js.undefined
     
-    var metric176: js.UndefOr[String | Double] = js.native
+    var metric176: js.UndefOr[String | Double] = js.undefined
     
-    var metric177: js.UndefOr[String | Double] = js.native
+    var metric177: js.UndefOr[String | Double] = js.undefined
     
-    var metric178: js.UndefOr[String | Double] = js.native
+    var metric178: js.UndefOr[String | Double] = js.undefined
     
-    var metric179: js.UndefOr[String | Double] = js.native
+    var metric179: js.UndefOr[String | Double] = js.undefined
     
-    var metric18: js.UndefOr[String | Double] = js.native
+    var metric18: js.UndefOr[String | Double] = js.undefined
     
-    var metric180: js.UndefOr[String | Double] = js.native
+    var metric180: js.UndefOr[String | Double] = js.undefined
     
-    var metric181: js.UndefOr[String | Double] = js.native
+    var metric181: js.UndefOr[String | Double] = js.undefined
     
-    var metric182: js.UndefOr[String | Double] = js.native
+    var metric182: js.UndefOr[String | Double] = js.undefined
     
-    var metric183: js.UndefOr[String | Double] = js.native
+    var metric183: js.UndefOr[String | Double] = js.undefined
     
-    var metric184: js.UndefOr[String | Double] = js.native
+    var metric184: js.UndefOr[String | Double] = js.undefined
     
-    var metric185: js.UndefOr[String | Double] = js.native
+    var metric185: js.UndefOr[String | Double] = js.undefined
     
-    var metric186: js.UndefOr[String | Double] = js.native
+    var metric186: js.UndefOr[String | Double] = js.undefined
     
-    var metric187: js.UndefOr[String | Double] = js.native
+    var metric187: js.UndefOr[String | Double] = js.undefined
     
-    var metric188: js.UndefOr[String | Double] = js.native
+    var metric188: js.UndefOr[String | Double] = js.undefined
     
-    var metric189: js.UndefOr[String | Double] = js.native
+    var metric189: js.UndefOr[String | Double] = js.undefined
     
-    var metric19: js.UndefOr[String | Double] = js.native
+    var metric19: js.UndefOr[String | Double] = js.undefined
     
-    var metric190: js.UndefOr[String | Double] = js.native
+    var metric190: js.UndefOr[String | Double] = js.undefined
     
-    var metric191: js.UndefOr[String | Double] = js.native
+    var metric191: js.UndefOr[String | Double] = js.undefined
     
-    var metric192: js.UndefOr[String | Double] = js.native
+    var metric192: js.UndefOr[String | Double] = js.undefined
     
-    var metric193: js.UndefOr[String | Double] = js.native
+    var metric193: js.UndefOr[String | Double] = js.undefined
     
-    var metric194: js.UndefOr[String | Double] = js.native
+    var metric194: js.UndefOr[String | Double] = js.undefined
     
-    var metric195: js.UndefOr[String | Double] = js.native
+    var metric195: js.UndefOr[String | Double] = js.undefined
     
-    var metric196: js.UndefOr[String | Double] = js.native
+    var metric196: js.UndefOr[String | Double] = js.undefined
     
-    var metric197: js.UndefOr[String | Double] = js.native
+    var metric197: js.UndefOr[String | Double] = js.undefined
     
-    var metric198: js.UndefOr[String | Double] = js.native
+    var metric198: js.UndefOr[String | Double] = js.undefined
     
-    var metric199: js.UndefOr[String | Double] = js.native
+    var metric199: js.UndefOr[String | Double] = js.undefined
     
-    var metric2: js.UndefOr[String | Double] = js.native
+    var metric2: js.UndefOr[String | Double] = js.undefined
     
-    var metric20: js.UndefOr[String | Double] = js.native
+    var metric20: js.UndefOr[String | Double] = js.undefined
     
-    var metric200: js.UndefOr[String | Double] = js.native
+    var metric200: js.UndefOr[String | Double] = js.undefined
     
-    var metric21: js.UndefOr[String | Double] = js.native
+    var metric21: js.UndefOr[String | Double] = js.undefined
     
-    var metric22: js.UndefOr[String | Double] = js.native
+    var metric22: js.UndefOr[String | Double] = js.undefined
     
-    var metric23: js.UndefOr[String | Double] = js.native
+    var metric23: js.UndefOr[String | Double] = js.undefined
     
-    var metric24: js.UndefOr[String | Double] = js.native
+    var metric24: js.UndefOr[String | Double] = js.undefined
     
-    var metric25: js.UndefOr[String | Double] = js.native
+    var metric25: js.UndefOr[String | Double] = js.undefined
     
-    var metric26: js.UndefOr[String | Double] = js.native
+    var metric26: js.UndefOr[String | Double] = js.undefined
     
-    var metric27: js.UndefOr[String | Double] = js.native
+    var metric27: js.UndefOr[String | Double] = js.undefined
     
-    var metric28: js.UndefOr[String | Double] = js.native
+    var metric28: js.UndefOr[String | Double] = js.undefined
     
-    var metric29: js.UndefOr[String | Double] = js.native
+    var metric29: js.UndefOr[String | Double] = js.undefined
     
-    var metric3: js.UndefOr[String | Double] = js.native
+    var metric3: js.UndefOr[String | Double] = js.undefined
     
-    var metric30: js.UndefOr[String | Double] = js.native
+    var metric30: js.UndefOr[String | Double] = js.undefined
     
-    var metric31: js.UndefOr[String | Double] = js.native
+    var metric31: js.UndefOr[String | Double] = js.undefined
     
-    var metric32: js.UndefOr[String | Double] = js.native
+    var metric32: js.UndefOr[String | Double] = js.undefined
     
-    var metric33: js.UndefOr[String | Double] = js.native
+    var metric33: js.UndefOr[String | Double] = js.undefined
     
-    var metric34: js.UndefOr[String | Double] = js.native
+    var metric34: js.UndefOr[String | Double] = js.undefined
     
-    var metric35: js.UndefOr[String | Double] = js.native
+    var metric35: js.UndefOr[String | Double] = js.undefined
     
-    var metric36: js.UndefOr[String | Double] = js.native
+    var metric36: js.UndefOr[String | Double] = js.undefined
     
-    var metric37: js.UndefOr[String | Double] = js.native
+    var metric37: js.UndefOr[String | Double] = js.undefined
     
-    var metric38: js.UndefOr[String | Double] = js.native
+    var metric38: js.UndefOr[String | Double] = js.undefined
     
-    var metric39: js.UndefOr[String | Double] = js.native
+    var metric39: js.UndefOr[String | Double] = js.undefined
     
-    var metric4: js.UndefOr[String | Double] = js.native
+    var metric4: js.UndefOr[String | Double] = js.undefined
     
-    var metric40: js.UndefOr[String | Double] = js.native
+    var metric40: js.UndefOr[String | Double] = js.undefined
     
-    var metric41: js.UndefOr[String | Double] = js.native
+    var metric41: js.UndefOr[String | Double] = js.undefined
     
-    var metric42: js.UndefOr[String | Double] = js.native
+    var metric42: js.UndefOr[String | Double] = js.undefined
     
-    var metric43: js.UndefOr[String | Double] = js.native
+    var metric43: js.UndefOr[String | Double] = js.undefined
     
-    var metric44: js.UndefOr[String | Double] = js.native
+    var metric44: js.UndefOr[String | Double] = js.undefined
     
-    var metric45: js.UndefOr[String | Double] = js.native
+    var metric45: js.UndefOr[String | Double] = js.undefined
     
-    var metric46: js.UndefOr[String | Double] = js.native
+    var metric46: js.UndefOr[String | Double] = js.undefined
     
-    var metric47: js.UndefOr[String | Double] = js.native
+    var metric47: js.UndefOr[String | Double] = js.undefined
     
-    var metric48: js.UndefOr[String | Double] = js.native
+    var metric48: js.UndefOr[String | Double] = js.undefined
     
-    var metric49: js.UndefOr[String | Double] = js.native
+    var metric49: js.UndefOr[String | Double] = js.undefined
     
-    var metric5: js.UndefOr[String | Double] = js.native
+    var metric5: js.UndefOr[String | Double] = js.undefined
     
-    var metric50: js.UndefOr[String | Double] = js.native
+    var metric50: js.UndefOr[String | Double] = js.undefined
     
-    var metric51: js.UndefOr[String | Double] = js.native
+    var metric51: js.UndefOr[String | Double] = js.undefined
     
-    var metric52: js.UndefOr[String | Double] = js.native
+    var metric52: js.UndefOr[String | Double] = js.undefined
     
-    var metric53: js.UndefOr[String | Double] = js.native
+    var metric53: js.UndefOr[String | Double] = js.undefined
     
-    var metric54: js.UndefOr[String | Double] = js.native
+    var metric54: js.UndefOr[String | Double] = js.undefined
     
-    var metric55: js.UndefOr[String | Double] = js.native
+    var metric55: js.UndefOr[String | Double] = js.undefined
     
-    var metric56: js.UndefOr[String | Double] = js.native
+    var metric56: js.UndefOr[String | Double] = js.undefined
     
-    var metric57: js.UndefOr[String | Double] = js.native
+    var metric57: js.UndefOr[String | Double] = js.undefined
     
-    var metric58: js.UndefOr[String | Double] = js.native
+    var metric58: js.UndefOr[String | Double] = js.undefined
     
-    var metric59: js.UndefOr[String | Double] = js.native
+    var metric59: js.UndefOr[String | Double] = js.undefined
     
-    var metric6: js.UndefOr[String | Double] = js.native
+    var metric6: js.UndefOr[String | Double] = js.undefined
     
-    var metric60: js.UndefOr[String | Double] = js.native
+    var metric60: js.UndefOr[String | Double] = js.undefined
     
-    var metric61: js.UndefOr[String | Double] = js.native
+    var metric61: js.UndefOr[String | Double] = js.undefined
     
-    var metric62: js.UndefOr[String | Double] = js.native
+    var metric62: js.UndefOr[String | Double] = js.undefined
     
-    var metric63: js.UndefOr[String | Double] = js.native
+    var metric63: js.UndefOr[String | Double] = js.undefined
     
-    var metric64: js.UndefOr[String | Double] = js.native
+    var metric64: js.UndefOr[String | Double] = js.undefined
     
-    var metric65: js.UndefOr[String | Double] = js.native
+    var metric65: js.UndefOr[String | Double] = js.undefined
     
-    var metric66: js.UndefOr[String | Double] = js.native
+    var metric66: js.UndefOr[String | Double] = js.undefined
     
-    var metric67: js.UndefOr[String | Double] = js.native
+    var metric67: js.UndefOr[String | Double] = js.undefined
     
-    var metric68: js.UndefOr[String | Double] = js.native
+    var metric68: js.UndefOr[String | Double] = js.undefined
     
-    var metric69: js.UndefOr[String | Double] = js.native
+    var metric69: js.UndefOr[String | Double] = js.undefined
     
-    var metric7: js.UndefOr[String | Double] = js.native
+    var metric7: js.UndefOr[String | Double] = js.undefined
     
-    var metric70: js.UndefOr[String | Double] = js.native
+    var metric70: js.UndefOr[String | Double] = js.undefined
     
-    var metric71: js.UndefOr[String | Double] = js.native
+    var metric71: js.UndefOr[String | Double] = js.undefined
     
-    var metric72: js.UndefOr[String | Double] = js.native
+    var metric72: js.UndefOr[String | Double] = js.undefined
     
-    var metric73: js.UndefOr[String | Double] = js.native
+    var metric73: js.UndefOr[String | Double] = js.undefined
     
-    var metric74: js.UndefOr[String | Double] = js.native
+    var metric74: js.UndefOr[String | Double] = js.undefined
     
-    var metric75: js.UndefOr[String | Double] = js.native
+    var metric75: js.UndefOr[String | Double] = js.undefined
     
-    var metric76: js.UndefOr[String | Double] = js.native
+    var metric76: js.UndefOr[String | Double] = js.undefined
     
-    var metric77: js.UndefOr[String | Double] = js.native
+    var metric77: js.UndefOr[String | Double] = js.undefined
     
-    var metric78: js.UndefOr[String | Double] = js.native
+    var metric78: js.UndefOr[String | Double] = js.undefined
     
-    var metric79: js.UndefOr[String | Double] = js.native
+    var metric79: js.UndefOr[String | Double] = js.undefined
     
-    var metric8: js.UndefOr[String | Double] = js.native
+    var metric8: js.UndefOr[String | Double] = js.undefined
     
-    var metric80: js.UndefOr[String | Double] = js.native
+    var metric80: js.UndefOr[String | Double] = js.undefined
     
-    var metric81: js.UndefOr[String | Double] = js.native
+    var metric81: js.UndefOr[String | Double] = js.undefined
     
-    var metric82: js.UndefOr[String | Double] = js.native
+    var metric82: js.UndefOr[String | Double] = js.undefined
     
-    var metric83: js.UndefOr[String | Double] = js.native
+    var metric83: js.UndefOr[String | Double] = js.undefined
     
-    var metric84: js.UndefOr[String | Double] = js.native
+    var metric84: js.UndefOr[String | Double] = js.undefined
     
-    var metric85: js.UndefOr[String | Double] = js.native
+    var metric85: js.UndefOr[String | Double] = js.undefined
     
-    var metric86: js.UndefOr[String | Double] = js.native
+    var metric86: js.UndefOr[String | Double] = js.undefined
     
-    var metric87: js.UndefOr[String | Double] = js.native
+    var metric87: js.UndefOr[String | Double] = js.undefined
     
-    var metric88: js.UndefOr[String | Double] = js.native
+    var metric88: js.UndefOr[String | Double] = js.undefined
     
-    var metric89: js.UndefOr[String | Double] = js.native
+    var metric89: js.UndefOr[String | Double] = js.undefined
     
-    var metric9: js.UndefOr[String | Double] = js.native
+    var metric9: js.UndefOr[String | Double] = js.undefined
     
-    var metric90: js.UndefOr[String | Double] = js.native
+    var metric90: js.UndefOr[String | Double] = js.undefined
     
-    var metric91: js.UndefOr[String | Double] = js.native
+    var metric91: js.UndefOr[String | Double] = js.undefined
     
-    var metric92: js.UndefOr[String | Double] = js.native
+    var metric92: js.UndefOr[String | Double] = js.undefined
     
-    var metric93: js.UndefOr[String | Double] = js.native
+    var metric93: js.UndefOr[String | Double] = js.undefined
     
-    var metric94: js.UndefOr[String | Double] = js.native
+    var metric94: js.UndefOr[String | Double] = js.undefined
     
-    var metric95: js.UndefOr[String | Double] = js.native
+    var metric95: js.UndefOr[String | Double] = js.undefined
     
-    var metric96: js.UndefOr[String | Double] = js.native
+    var metric96: js.UndefOr[String | Double] = js.undefined
     
-    var metric97: js.UndefOr[String | Double] = js.native
+    var metric97: js.UndefOr[String | Double] = js.undefined
     
-    var metric98: js.UndefOr[String | Double] = js.native
+    var metric98: js.UndefOr[String | Double] = js.undefined
     
-    var metric99: js.UndefOr[String | Double] = js.native
+    var metric99: js.UndefOr[String | Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nonInteraction: js.UndefOr[Boolean] = js.native
+    var nonInteraction: js.UndefOr[Boolean] = js.undefined
     
-    var option: js.UndefOr[String] = js.native
+    var option: js.UndefOr[String] = js.undefined
     
-    var page: js.UndefOr[String] = js.native
+    var page: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[Double | String] = js.native
+    var position: js.UndefOr[Double | String] = js.undefined
     
-    var price: js.UndefOr[String] = js.native
+    var price: js.UndefOr[String] = js.undefined
     
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
     
-    var queueTime: js.UndefOr[Double] = js.native
+    var queueTime: js.UndefOr[Double] = js.undefined
     
-    var referrer: js.UndefOr[String] = js.native
+    var referrer: js.UndefOr[String] = js.undefined
     
-    var revenue: js.UndefOr[String] = js.native
+    var revenue: js.UndefOr[String] = js.undefined
     
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
     
-    var screenColors: js.UndefOr[String] = js.native
+    var screenColors: js.UndefOr[String] = js.undefined
     
-    var screenName: js.UndefOr[String] = js.native
+    var screenName: js.UndefOr[String] = js.undefined
     
-    var screenResolution: js.UndefOr[String] = js.native
+    var screenResolution: js.UndefOr[String] = js.undefined
     
-    var sessionControl: js.UndefOr[String] = js.native
+    var sessionControl: js.UndefOr[String] = js.undefined
     
-    var shipping: js.UndefOr[String] = js.native
+    var shipping: js.UndefOr[String] = js.undefined
     
-    var siteSpeedSampleRate: js.UndefOr[Double] = js.native
+    var siteSpeedSampleRate: js.UndefOr[Double] = js.undefined
     
-    var socialAction: js.UndefOr[String] = js.native
+    var socialAction: js.UndefOr[String] = js.undefined
     
-    var socialNetwork: js.UndefOr[String] = js.native
+    var socialNetwork: js.UndefOr[String] = js.undefined
     
-    var socialTarget: js.UndefOr[String] = js.native
+    var socialTarget: js.UndefOr[String] = js.undefined
     
-    var some: js.UndefOr[String] = js.native
+    var some: js.UndefOr[String] = js.undefined
     
-    var step: js.UndefOr[Boolean | Double] = js.native
+    var step: js.UndefOr[Boolean | Double] = js.undefined
     
-    var storage: js.UndefOr[String] = js.native
+    var storage: js.UndefOr[String] = js.undefined
     
-    var storeGac: js.UndefOr[Boolean] = js.native
+    var storeGac: js.UndefOr[Boolean] = js.undefined
     
-    var tax: js.UndefOr[String] = js.native
+    var tax: js.UndefOr[String] = js.undefined
     
-    var timingCategory: js.UndefOr[String] = js.native
+    var timingCategory: js.UndefOr[String] = js.undefined
     
-    var timingLabel: js.UndefOr[String] = js.native
+    var timingLabel: js.UndefOr[String] = js.undefined
     
-    var timingValue: js.UndefOr[Double] = js.native
+    var timingValue: js.UndefOr[Double] = js.undefined
     
-    var timingVar: js.UndefOr[String] = js.native
+    var timingVar: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var transport: js.UndefOr[String] = js.native
+    var transport: js.UndefOr[String] = js.undefined
     
-    var useBeacon: js.UndefOr[Boolean] = js.native
+    var useBeacon: js.UndefOr[Boolean] = js.undefined
     
-    var userId: js.UndefOr[String] = js.native
+    var userId: js.UndefOr[String] = js.undefined
     
-    var variant: js.UndefOr[String] = js.native
+    var variant: js.UndefOr[String] = js.undefined
     
-    var viewportSize: js.UndefOr[String] = js.native
+    var viewportSize: js.UndefOr[String] = js.undefined
   }
   object FieldsObject {
     
@@ -4029,8 +4027,8 @@ object UniversalAnalytics {
     def set(fieldName: String, fieldValue: js.Any): Unit = js.native
     def set(fieldName: String, fieldValue: js.Any, temporary: Boolean): Unit = js.native
     def set(fields: js.Object): Unit = js.native
-    def set(fields: js.Object, fieldValue: js.UndefOr[scala.Nothing], temporary: Boolean): Unit = js.native
     def set(fields: js.Object, fieldValue: Null, temporary: Boolean): Unit = js.native
+    def set(fields: js.Object, fieldValue: Unit, temporary: Boolean): Unit = js.native
   }
   
   @js.native
@@ -4051,29 +4049,7 @@ object UniversalAnalytics {
     def apply(command: String, fields: js.Any*): Unit = js.native
     def apply(command: String, hitType: HitType, fields: js.Any*): Unit = js.native
     def apply(command: create, trackingId: String): Unit = js.native
-    def apply(
-      command: create,
-      trackingId: String,
-      cookieDomain: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      fieldsObject: FieldsObject
-    ): Unit = js.native
-    def apply(command: create, trackingId: String, cookieDomain: js.UndefOr[scala.Nothing], name: String): Unit = js.native
-    def apply(
-      command: create,
-      trackingId: String,
-      cookieDomain: js.UndefOr[scala.Nothing],
-      name: String,
-      fieldsObject: FieldsObject
-    ): Unit = js.native
     def apply(command: create, trackingId: String, cookieDomain: String): Unit = js.native
-    def apply(
-      command: create,
-      trackingId: String,
-      cookieDomain: String,
-      name: js.UndefOr[scala.Nothing],
-      fieldsObject: FieldsObject
-    ): Unit = js.native
     def apply(command: create, trackingId: String, cookieDomain: String, name: String): Unit = js.native
     def apply(
       command: create,
@@ -4082,6 +4058,10 @@ object UniversalAnalytics {
       name: String,
       fieldsObject: FieldsObject
     ): Unit = js.native
+    def apply(command: create, trackingId: String, cookieDomain: String, name: Unit, fieldsObject: FieldsObject): Unit = js.native
+    def apply(command: create, trackingId: String, cookieDomain: Unit, name: String): Unit = js.native
+    def apply(command: create, trackingId: String, cookieDomain: Unit, name: String, fieldsObject: FieldsObject): Unit = js.native
+    def apply(command: create, trackingId: String, cookieDomain: Unit, name: Unit, fieldsObject: FieldsObject): Unit = js.native
     def apply(
       command: provide,
       pluginName: String,
@@ -4097,32 +4077,6 @@ object UniversalAnalytics {
     def apply(command: send, fieldsObject: FieldsObject): Unit = js.native
     def apply(command: send, fieldsObject: EventCategory): Unit = js.native
     def apply(command: send, hitType: event, eventCategory: String, eventAction: String): Unit = js.native
-    def apply(
-      command: send,
-      hitType: event,
-      eventCategory: String,
-      eventAction: String,
-      eventLabel: js.UndefOr[scala.Nothing],
-      eventValue: js.UndefOr[scala.Nothing],
-      fieldsObject: FieldsObject
-    ): Unit = js.native
-    def apply(
-      command: send,
-      hitType: event,
-      eventCategory: String,
-      eventAction: String,
-      eventLabel: js.UndefOr[scala.Nothing],
-      eventValue: Double
-    ): Unit = js.native
-    def apply(
-      command: send,
-      hitType: event,
-      eventCategory: String,
-      eventAction: String,
-      eventLabel: js.UndefOr[scala.Nothing],
-      eventValue: Double,
-      fieldsObject: FieldsObject
-    ): Unit = js.native
     def apply(command: send, hitType: event, eventCategory: String, eventAction: String, eventLabel: String): Unit = js.native
     def apply(
       command: send,
@@ -4130,15 +4084,6 @@ object UniversalAnalytics {
       eventCategory: String,
       eventAction: String,
       eventLabel: String,
-      eventValue: js.UndefOr[scala.Nothing],
-      fieldsObject: FieldsObject
-    ): Unit = js.native
-    def apply(
-      command: send,
-      hitType: event,
-      eventCategory: String,
-      eventAction: String,
-      eventLabel: String,
       eventValue: Double
     ): Unit = js.native
     def apply(
@@ -4148,6 +4093,41 @@ object UniversalAnalytics {
       eventAction: String,
       eventLabel: String,
       eventValue: Double,
+      fieldsObject: FieldsObject
+    ): Unit = js.native
+    def apply(
+      command: send,
+      hitType: event,
+      eventCategory: String,
+      eventAction: String,
+      eventLabel: String,
+      eventValue: Unit,
+      fieldsObject: FieldsObject
+    ): Unit = js.native
+    def apply(
+      command: send,
+      hitType: event,
+      eventCategory: String,
+      eventAction: String,
+      eventLabel: Unit,
+      eventValue: Double
+    ): Unit = js.native
+    def apply(
+      command: send,
+      hitType: event,
+      eventCategory: String,
+      eventAction: String,
+      eventLabel: Unit,
+      eventValue: Double,
+      fieldsObject: FieldsObject
+    ): Unit = js.native
+    def apply(
+      command: send,
+      hitType: event,
+      eventCategory: String,
+      eventAction: String,
+      eventLabel: Unit,
+      eventValue: Unit,
       fieldsObject: FieldsObject
     ): Unit = js.native
     def apply(command: send, hitType: event, fieldsObject: EventAction): Unit = js.native
@@ -4176,7 +4156,7 @@ object UniversalAnalytics {
     
     var l: Double = js.native
     
-    var q: js.Array[_] = js.native
+    var q: js.Array[js.Any] = js.native
     
     def remove(name: String): Unit = js.native
   }

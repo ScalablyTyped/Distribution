@@ -2,20 +2,18 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageType extends StObject {
   
-  var StorageSubTypeName: js.UndefOr[typings.awsSdk.esMod.StorageSubTypeName] = js.native
+  var StorageSubTypeName: js.UndefOr[typings.awsSdk.esMod.StorageSubTypeName] = js.undefined
   
   /**
     * List of limits that are applicable for given storage type. 
     */
-  var StorageTypeLimits: js.UndefOr[StorageTypeLimitList] = js.native
+  var StorageTypeLimits: js.UndefOr[StorageTypeLimitList] = js.undefined
   
-  var StorageTypeName: js.UndefOr[typings.awsSdk.esMod.StorageTypeName] = js.native
+  var StorageTypeName: js.UndefOr[typings.awsSdk.esMod.StorageTypeName] = js.undefined
 }
 object StorageType {
   

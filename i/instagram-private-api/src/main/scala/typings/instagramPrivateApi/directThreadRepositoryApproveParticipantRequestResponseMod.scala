@@ -2,21 +2,19 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directThreadRepositoryApproveParticipantRequestResponseMod {
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem extends StObject {
     
-    var estimated_scans_sizes: js.Array[Double] = js.native
+    var estimated_scans_sizes: js.Array[Double]
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem {
     
@@ -46,15 +44,14 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags extends StObject {
     
-    var in: js.Array[_] = js.native
+    var in: js.Array[js.Any]
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags {
     
     @scala.inline
-    def apply(in: js.Array[_]): DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags = {
+    def apply(in: js.Array[js.Any]): DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags = {
       val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags]
     }
@@ -63,29 +60,28 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     implicit class DirectThreadRepositoryApproveParticipantRequestResponseFbUserTagsMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setIn(value: js.Array[_]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      def setIn(value: js.Array[js.Any]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInVarargs(value: js.Any*): Self = StObject.set(x, "in", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatus extends StObject {
     
-    var blocking: Boolean = js.native
+    var blocking: Boolean
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_restricted: Boolean = js.native
+    var is_restricted: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatus {
     
@@ -129,10 +125,9 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2 extends StObject {
     
-    var candidates: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem] = js.native
+    var candidates: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem]
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2 {
     
@@ -153,28 +148,27 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseInviter extends StObject {
     
-    var allowed_commenter_type: String = js.native
+    var allowed_commenter_type: String
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: String = js.native
+    var reel_auto_archive: String
     
-    var username: String = js.native
+    var username: String
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseInviter {
     
@@ -230,18 +224,17 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseItemsItem extends StObject {
     
-    var item_id: String = js.native
+    var item_id: String
     
-    var item_type: String = js.native
+    var item_type: String
     
-    var story_share: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare = js.native
+    var story_share: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare
     
-    var timestamp: String = js.native
+    var timestamp: String
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseItemsItem {
     
@@ -277,18 +270,17 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItem extends StObject {
     
-    var item_id: String = js.native
+    var item_id: String
     
-    var item_type: String = js.native
+    var item_type: String
     
-    var story_share: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare = js.native
+    var story_share: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare
     
-    var timestamp: String = js.native
+    var timestamp: String
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItem {
     
@@ -324,75 +316,73 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseLastSeenAt extends StObject
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseMedia extends StObject {
     
-    var can_view_more_preview_comments: Boolean = js.native
+    var can_view_more_preview_comments: Boolean
     
-    var can_viewer_save: Boolean = js.native
+    var can_viewer_save: Boolean
     
-    var caption: Null = js.native
+    var caption: Null
     
-    var caption_is_edited: Boolean = js.native
+    var caption_is_edited: Boolean
     
-    var caption_position: Double = js.native
+    var caption_position: Double
     
-    var client_cache_key: String = js.native
+    var client_cache_key: String
     
-    var code: String = js.native
+    var code: String
     
-    var comment_count: Double = js.native
+    var comment_count: Double
     
-    var comment_likes_enabled: Boolean = js.native
+    var comment_likes_enabled: Boolean
     
-    var comment_threading_enabled: Boolean = js.native
+    var comment_threading_enabled: Boolean
     
-    var device_timestamp: Double = js.native
+    var device_timestamp: Double
     
-    var expiring_at: Double = js.native
+    var expiring_at: Double
     
-    var fb_user_tags: DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags = js.native
+    var fb_user_tags: DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags
     
-    var filter_type: Double = js.native
+    var filter_type: Double
     
-    var has_liked: Boolean = js.native
+    var has_liked: Boolean
     
-    var has_more_comments: Boolean = js.native
+    var has_more_comments: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var image_versions2: DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2 = js.native
+    var image_versions2: DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2
     
-    var is_reel_media: Boolean = js.native
+    var is_reel_media: Boolean
     
-    var like_count: Double = js.native
+    var like_count: Double
     
-    var likers: js.Array[_] = js.native
+    var likers: js.Array[js.Any]
     
-    var max_num_visible_preview_comments: Double = js.native
+    var max_num_visible_preview_comments: Double
     
-    var media_type: Double = js.native
+    var media_type: Double
     
-    var organic_tracking_token: String = js.native
+    var organic_tracking_token: String
     
-    var original_height: Double = js.native
+    var original_height: Double
     
-    var original_width: Double = js.native
+    var original_width: Double
     
-    var photo_of_you: Boolean = js.native
+    var photo_of_you: Boolean
     
-    var pk: String = js.native
+    var pk: String
     
-    var preview_comments: js.Array[_] = js.native
+    var preview_comments: js.Array[js.Any]
     
-    var taken_at: Double = js.native
+    var taken_at: Double
     
-    var timezone_offset: Double = js.native
+    var timezone_offset: Double
     
-    var user: DirectThreadRepositoryApproveParticipantRequestResponseUser = js.native
+    var user: DirectThreadRepositoryApproveParticipantRequestResponseUser
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseMedia {
     
@@ -418,7 +408,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       image_versions2: DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2,
       is_reel_media: Boolean,
       like_count: Double,
-      likers: js.Array[_],
+      likers: js.Array[js.Any],
       max_num_visible_preview_comments: Double,
       media_type: Double,
       organic_tracking_token: String,
@@ -426,7 +416,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       original_width: Double,
       photo_of_you: Boolean,
       pk: String,
-      preview_comments: js.Array[_],
+      preview_comments: js.Array[js.Any],
       taken_at: Double,
       timezone_offset: Double,
       user: DirectThreadRepositoryApproveParticipantRequestResponseUser
@@ -499,7 +489,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       def setLike_count(value: Double): Self = StObject.set(x, "like_count", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLikers(value: js.Array[_]): Self = StObject.set(x, "likers", value.asInstanceOf[js.Any])
+      def setLikers(value: js.Array[js.Any]): Self = StObject.set(x, "likers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLikersVarargs(value: js.Any*): Self = StObject.set(x, "likers", js.Array(value :_*))
@@ -526,7 +516,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPreview_comments(value: js.Array[_]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
+      def setPreview_comments(value: js.Array[js.Any]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreview_commentsVarargs(value: js.Any*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
@@ -542,12 +532,11 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseRootObject extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var thread: DirectThreadRepositoryApproveParticipantRequestResponseThread = js.native
+    var thread: DirectThreadRepositoryApproveParticipantRequestResponseThread
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseRootObject {
     
@@ -568,20 +557,19 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseStoryShare extends StObject {
     
-    var is_reel_persisted: Boolean = js.native
+    var is_reel_persisted: Boolean
     
-    var media: DirectThreadRepositoryApproveParticipantRequestResponseMedia = js.native
+    var media: DirectThreadRepositoryApproveParticipantRequestResponseMedia
     
-    var reel_id: Double = js.native
+    var reel_id: Double
     
-    var reel_type: String = js.native
+    var reel_type: String
     
-    var story_share_type: String = js.native
+    var story_share_type: String
     
-    var text: Null = js.native
+    var text: Null
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseStoryShare {
     
@@ -621,78 +609,77 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseThread extends StObject {
     
-    var admin_user_ids: js.Array[Double] = js.native
+    var admin_user_ids: js.Array[Double]
     
-    var approval_required_for_new_members: Boolean = js.native
+    var approval_required_for_new_members: Boolean
     
-    var archived: Boolean = js.native
+    var archived: Boolean
     
-    var business_thread_folder: Double = js.native
+    var business_thread_folder: Double
     
-    var canonical: Boolean = js.native
+    var canonical: Boolean
     
-    var folder: Double = js.native
+    var folder: Double
     
-    var has_newer: Boolean = js.native
+    var has_newer: Boolean
     
-    var has_older: Boolean = js.native
+    var has_older: Boolean
     
-    var input_mode: Double = js.native
+    var input_mode: Double
     
-    var inviter: DirectThreadRepositoryApproveParticipantRequestResponseInviter = js.native
+    var inviter: DirectThreadRepositoryApproveParticipantRequestResponseInviter
     
-    var is_group: Boolean = js.native
+    var is_group: Boolean
     
-    var is_pin: Boolean = js.native
+    var is_pin: Boolean
     
-    var items: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseItemsItem] = js.native
+    var items: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseItemsItem]
     
-    var last_activity_at: String = js.native
+    var last_activity_at: String
     
-    var last_permanent_item: DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItem = js.native
+    var last_permanent_item: DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItem
     
-    var last_seen_at: DirectThreadRepositoryApproveParticipantRequestResponseLastSeenAt = js.native
+    var last_seen_at: DirectThreadRepositoryApproveParticipantRequestResponseLastSeenAt
     
-    var left_users: js.Array[_] = js.native
+    var left_users: js.Array[js.Any]
     
-    var mentions_muted: Boolean = js.native
+    var mentions_muted: Boolean
     
-    var muted: Boolean = js.native
+    var muted: Boolean
     
-    var named: Boolean = js.native
+    var named: Boolean
     
-    var newest_cursor: String = js.native
+    var newest_cursor: String
     
-    var next_cursor: String = js.native
+    var next_cursor: String
     
-    var oldest_cursor: String = js.native
+    var oldest_cursor: String
     
-    var pending: Boolean = js.native
+    var pending: Boolean
     
-    var pending_score: String = js.native
+    var pending_score: String
     
-    var prev_cursor: String = js.native
+    var prev_cursor: String
     
-    var read_state: Double = js.native
+    var read_state: Double
     
-    var thread_id: String = js.native
+    var thread_id: String
     
-    var thread_title: String = js.native
+    var thread_title: String
     
-    var thread_type: String = js.native
+    var thread_type: String
     
-    var thread_v2_id: String = js.native
+    var thread_v2_id: String
     
-    var users: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseUsersItem] = js.native
+    var users: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseUsersItem]
     
-    var valued_request: Boolean = js.native
+    var valued_request: Boolean
     
-    var vc_muted: Boolean = js.native
+    var vc_muted: Boolean
     
-    var viewer_id: Double = js.native
+    var viewer_id: Double
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseThread {
     
@@ -714,7 +701,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       last_activity_at: String,
       last_permanent_item: DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItem,
       last_seen_at: DirectThreadRepositoryApproveParticipantRequestResponseLastSeenAt,
-      left_users: js.Array[_],
+      left_users: js.Array[js.Any],
       mentions_muted: Boolean,
       muted: Boolean,
       named: Boolean,
@@ -796,7 +783,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       def setLast_seen_at(value: DirectThreadRepositoryApproveParticipantRequestResponseLastSeenAt): Self = StObject.set(x, "last_seen_at", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLeft_users(value: js.Array[_]): Self = StObject.set(x, "left_users", value.asInstanceOf[js.Any])
+      def setLeft_users(value: js.Array[js.Any]): Self = StObject.set(x, "left_users", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLeft_usersVarargs(value: js.Any*): Self = StObject.set(x, "left_users", js.Array(value :_*))
@@ -860,34 +847,33 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseUser extends StObject {
     
-    var allowed_commenter_type: String = js.native
+    var allowed_commenter_type: String
     
-    var can_boost_post: Boolean = js.native
+    var can_boost_post: Boolean
     
-    var can_see_organic_insights: Boolean = js.native
+    var can_see_organic_insights: Boolean
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_unpublished: Boolean = js.native
+    var is_unpublished: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: String = js.native
+    var reel_auto_archive: String
     
-    var show_insights_terms: Boolean = js.native
+    var show_insights_terms: Boolean
     
-    var username: String = js.native
+    var username: String
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseUser {
     
@@ -955,30 +941,29 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryApproveParticipantRequestResponseUsersItem extends StObject {
     
-    var friendship_status: DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatus = js.native
+    var friendship_status: DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatus
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_directapp_installed: Boolean = js.native
+    var is_directapp_installed: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_using_unified_inbox_for_direct: Boolean = js.native
+    var is_using_unified_inbox_for_direct: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseUsersItem {
     

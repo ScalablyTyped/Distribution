@@ -4,14 +4,15 @@ import typings.nodemailer.mailerMod.Options
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mailMessageMod {
   
   @JSImport("nodemailer/lib/mailer/mail-message", JSImport.Namespace)
   @js.native
-  class ^ protected () extends MailMessage {
+  class ^ protected ()
+    extends StObject
+       with MailMessage {
     def this(mailer: typings.nodemailer.mailerMod.^, data: Options) = this()
   }
   
@@ -29,25 +30,25 @@ object mailMessageMod {
     def resolveAll(callback: js.Function2[/* err */ js.UndefOr[Error | Null], /* data */ js.UndefOr[Options], Unit]): Unit = js.native
     
     def resolveContent(
-      data: js.Array[_],
+      data: js.Array[js.Any],
       key: String,
-      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], _]
-    ): js.Promise[_] = js.native
+      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], js.Any]
+    ): js.Promise[js.Any] = js.native
     def resolveContent(
-      data: js.Array[_],
+      data: js.Array[js.Any],
       key: Double,
-      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], _]
-    ): js.Promise[_] = js.native
+      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], js.Any]
+    ): js.Promise[js.Any] = js.native
     def resolveContent(
       data: js.Object,
       key: String,
-      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], _]
-    ): js.Promise[_] = js.native
+      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], js.Any]
+    ): js.Promise[js.Any] = js.native
     def resolveContent(
       data: js.Object,
       key: Double,
-      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], _]
-    ): js.Promise[_] = js.native
+      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], js.Any]
+    ): js.Promise[js.Any] = js.native
     
     def setListHeaders(): Unit = js.native
     

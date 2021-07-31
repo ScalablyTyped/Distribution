@@ -1,11 +1,8 @@
-package typings.vexflow.Vex
+package typings.vexflow.Vex.Flow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Flow {
-  
-  type RepeatNote = typings.vexflow.Vex.Flow.GlyphNote
-}
+
+type RepeatNote = typings.vexflow.Vex.Flow.GlyphNote

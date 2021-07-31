@@ -14,27 +14,28 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usePaginationMod {
   
-  @JSImport("@material-ui/lab/Pagination/usePagination", JSImport.Default)
+  @JSImport("@material-ui/lab/Pagination/usePagination", JSImport.Namespace)
   @js.native
-  def default(props: UsePaginationProps): UsePaginationResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: UsePaginationProps): UsePaginationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[UsePaginationResult]
+  
   trait UsePaginationItem extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var onClick: ReactEventHandler[Element] = js.native
+    var onClick: ReactEventHandler[Element]
     
-    var page: Double = js.native
+    var page: Double
     
-    var selected: Boolean = js.native
+    var selected: Boolean
     
-    var `type`: page | first | last | next | previous | `start-ellipsis` | `end-ellipsis` = js.native
+    var `type`: page | first | last | next | previous | `start-ellipsis` | `end-ellipsis`
   }
   object UsePaginationItem {
     
@@ -71,49 +72,48 @@ object usePaginationMod {
     }
   }
   
-  @js.native
   trait UsePaginationProps extends StObject {
     
     /**
       * Number of always visible pages at the beginning and end.
       * @default 1
       */
-    var boundaryCount: js.UndefOr[Double] = js.native
+    var boundaryCount: js.UndefOr[Double] = js.undefined
     
     /**
       * The name of the component where this hook is used.
       */
-    var componentName: js.UndefOr[String] = js.native
+    var componentName: js.UndefOr[String] = js.undefined
     
     /**
       * The total number of pages.
       * @default 1
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * The page selected by default when the component is uncontrolled.
       * @default 1
       */
-    var defaultPage: js.UndefOr[Double] = js.native
+    var defaultPage: js.UndefOr[Double] = js.undefined
     
     /**
       * If `true`, the pagination component will be disabled.
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, hide the next-page button.
       * @default false
       */
-    var hideNextButton: js.UndefOr[Boolean] = js.native
+    var hideNextButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, hide the previous-page button.
       * @default false
       */
-    var hidePrevButton: js.UndefOr[Boolean] = js.native
+    var hidePrevButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback fired when the page is changed.
@@ -121,30 +121,30 @@ object usePaginationMod {
       * @param {object} event The event source of the callback.
       * @param {number} page The page selected.
       */
-    var onChange: js.UndefOr[js.Function2[/* event */ ChangeEvent[_], /* page */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* event */ ChangeEvent[js.Any], /* page */ Double, Unit]] = js.undefined
     
     /**
       * The current page.
       */
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
     /**
       * If `true`, show the first-page button.
       * @default false
       */
-    var showFirstButton: js.UndefOr[Boolean] = js.native
+    var showFirstButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, show the last-page button.
       * @default false
       */
-    var showLastButton: js.UndefOr[Boolean] = js.native
+    var showLastButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of always visible pages before and after the current page.
       * @default 1
       */
-    var siblingCount: js.UndefOr[Double] = js.native
+    var siblingCount: js.UndefOr[Double] = js.undefined
   }
   object UsePaginationProps {
     
@@ -200,7 +200,7 @@ object usePaginationMod {
       def setHidePrevButtonUndefined: Self = StObject.set(x, "hidePrevButton", js.undefined)
       
       @scala.inline
-      def setOnChange(value: (/* event */ ChangeEvent[_], /* page */ Double) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      def setOnChange(value: (/* event */ ChangeEvent[js.Any], /* page */ Double) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -231,10 +231,9 @@ object usePaginationMod {
     }
   }
   
-  @js.native
   trait UsePaginationResult extends StObject {
     
-    var items: js.Array[UsePaginationItem] = js.native
+    var items: js.Array[UsePaginationItem]
   }
   object UsePaginationResult {
     

@@ -4,25 +4,25 @@ import typings.pulumiAws.outputMod.secretsmanager.GetSecretRotationRotationRule
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSecretRotationMod {
   
-  @JSImport("@pulumi/aws/secretsmanager/getSecretRotation", "getSecretRotation")
+  @JSImport("@pulumi/aws/secretsmanager/getSecretRotation", JSImport.Namespace)
   @js.native
-  def getSecretRotation(args: GetSecretRotationArgs): js.Promise[GetSecretRotationResult] = js.native
-  @JSImport("@pulumi/aws/secretsmanager/getSecretRotation", "getSecretRotation")
-  @js.native
-  def getSecretRotation(args: GetSecretRotationArgs, opts: InvokeOptions): js.Promise[GetSecretRotationResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSecretRotation(args: GetSecretRotationArgs): js.Promise[GetSecretRotationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecretRotation")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretRotationResult]]
+  @scala.inline
+  def getSecretRotation(args: GetSecretRotationArgs, opts: InvokeOptions): js.Promise[GetSecretRotationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecretRotation")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretRotationResult]]
+  
   trait GetSecretRotationArgs extends StObject {
     
     /**
       * Specifies the secret containing the version that you want to retrieve. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret.
       */
-    val secretId: String = js.native
+    val secretId: String
   }
   object GetSecretRotationArgs {
     
@@ -40,30 +40,29 @@ object getSecretRotationMod {
     }
   }
   
-  @js.native
   trait GetSecretRotationResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ARN of the secret.
       */
-    val rotationEnabled: Boolean = js.native
+    val rotationEnabled: Boolean
     
     /**
       * The decrypted part of the protected secret information that was originally provided as a string.
       */
-    val rotationLambdaArn: String = js.native
+    val rotationLambdaArn: String
     
     /**
       * The decrypted part of the protected secret information that was originally provided as a binary. Base64 encoded.
       */
-    val rotationRules: js.Array[GetSecretRotationRotationRule] = js.native
+    val rotationRules: js.Array[GetSecretRotationRotationRule]
     
-    val secretId: String = js.native
+    val secretId: String
   }
   object GetSecretRotationResult {
     

@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X509CertificateDetails extends StObject {
   
   /** The time the certificate becomes invalid. */
-  var expiryTime: js.UndefOr[String] = js.native
+  var expiryTime: js.UndefOr[String] = js.undefined
   
   /** The entity that signed the certificate. */
-  var issuer: js.UndefOr[String] = js.native
+  var issuer: js.UndefOr[String] = js.undefined
   
   /** The type of public key in the certificate. */
-  var publicKeyType: js.UndefOr[String] = js.native
+  var publicKeyType: js.UndefOr[String] = js.undefined
   
   /** The algorithm used to sign the certificate. */
-  var signatureAlgorithm: js.UndefOr[String] = js.native
+  var signatureAlgorithm: js.UndefOr[String] = js.undefined
   
   /** The time the certificate becomes valid. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** The entity the certificate and public key belong to. */
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
 }
 object X509CertificateDetails {
   

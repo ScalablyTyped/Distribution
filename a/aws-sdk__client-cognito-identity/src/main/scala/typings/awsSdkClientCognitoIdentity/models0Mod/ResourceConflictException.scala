@@ -6,40 +6,38 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceConflictException
-  extends SmithyException
+  extends StObject
+     with SmithyException
      with MetadataBearer {
   
   @JSName("$fault")
-  var $fault_ResourceConflictException: client = js.native
+  var $fault_ResourceConflictException: client
   
   /**
     * <p>The message returned by a ResourceConflictException.</p>
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   @JSName("name")
-  var name_ResourceConflictException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.ResourceConflictException = js.native
+  var name_ResourceConflictException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.ResourceConflictException
 }
 object ResourceConflictException {
   
   @scala.inline
-  def apply(
-    $fault: client,
-    $metadata: ResponseMetadata,
-    name: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.ResourceConflictException
-  ): ResourceConflictException = {
-    val __obj = js.Dynamic.literal($fault = $fault.asInstanceOf[js.Any], $metadata = $metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply($metadata: ResponseMetadata): ResourceConflictException = {
+    val __obj = js.Dynamic.literal($fault = "client", $metadata = $metadata.asInstanceOf[js.Any], name = "ResourceConflictException")
     __obj.asInstanceOf[ResourceConflictException]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ResourceConflictException.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ResourceConflictException")
   @js.native
-  def filterSensitiveLog(obj: ResourceConflictException): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: ResourceConflictException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class ResourceConflictExceptionMutableBuilder[Self <: ResourceConflictException] (val x: Self) extends AnyVal {

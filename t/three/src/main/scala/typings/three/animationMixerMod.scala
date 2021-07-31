@@ -8,7 +8,6 @@ import typings.three.eventDispatcherMod.EventDispatcher
 import typings.three.object3DMod.Object3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animationMixerMod {
@@ -20,7 +19,7 @@ object animationMixerMod {
     def this(root: Object3D) = this()
     
     def clipAction(clip: AnimationClip): AnimationAction = js.native
-    def clipAction(clip: AnimationClip, root: js.UndefOr[scala.Nothing], blendMode: AnimationBlendMode): AnimationAction = js.native
+    def clipAction(clip: AnimationClip, root: Unit, blendMode: AnimationBlendMode): AnimationAction = js.native
     def clipAction(clip: AnimationClip, root: AnimationObjectGroup): AnimationAction = js.native
     def clipAction(clip: AnimationClip, root: AnimationObjectGroup, blendMode: AnimationBlendMode): AnimationAction = js.native
     def clipAction(clip: AnimationClip, root: Object3D): AnimationAction = js.native

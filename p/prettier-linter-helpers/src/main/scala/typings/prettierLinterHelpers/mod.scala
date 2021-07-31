@@ -5,29 +5,30 @@ import typings.prettierLinterHelpers.prettierLinterHelpersStrings.insert
 import typings.prettierLinterHelpers.prettierLinterHelpersStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("prettier-linter-helpers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("prettier-linter-helpers", "generateDifferences")
   @js.native
   val generateDifferences: GenerateDifferences_ = js.native
   
-  @JSImport("prettier-linter-helpers", "showInvisibles")
-  @js.native
-  def showInvisibles(str: String): String = js.native
+  @scala.inline
+  def showInvisibles(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("showInvisibles")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait Difference extends StObject {
     
-    var deleteText: js.UndefOr[String] = js.native
+    var deleteText: js.UndefOr[String] = js.undefined
     
-    var insertText: js.UndefOr[String] = js.native
+    var insertText: js.UndefOr[String] = js.undefined
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var operation: insert | delete | replace = js.native
+    var operation: insert | delete | replace
   }
   object Difference {
     

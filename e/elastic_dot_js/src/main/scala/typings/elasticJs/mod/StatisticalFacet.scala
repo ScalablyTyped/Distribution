@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "StatisticalFacet")
 @js.native
-class StatisticalFacet protected () extends Facet {
+class StatisticalFacet protected ()
+  extends StObject
+     with Facet {
   /*
     A facet which returns statistical information about a numeric field
     */
@@ -36,7 +37,7 @@ class StatisticalFacet protected () extends Facet {
   /*
     Aggregate statistical info across a set of fields.
     */
-  def fields(aFieldName: js.Array[_]): StatisticalFacet = js.native
+  def fields(aFieldName: js.Array[js.Any]): StatisticalFacet = js.native
   
   /*
     Computes values across the entire index

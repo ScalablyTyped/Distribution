@@ -3,21 +3,19 @@ package typings.mobservable
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
-  @js.native
   trait IArrayChange[T] extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var `object`: IObservableArray[T] = js.native
+    var `object`: IObservableArray[T]
     
-    var oldValue: T = js.native
+    var oldValue: T
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object IArrayChange {
     
@@ -30,7 +28,7 @@ object interfacesMod {
     }
     
     @scala.inline
-    implicit class IArrayChangeMutableBuilder[Self <: IArrayChange[_], T] (val x: Self with IArrayChange[T]) extends AnyVal {
+    implicit class IArrayChangeMutableBuilder[Self <: IArrayChange[?], T] (val x: Self & IArrayChange[T]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -46,18 +44,17 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IArraySplice[T] extends StObject {
     
-    var addedCount: Double = js.native
+    var addedCount: Double
     
-    var index: Double = js.native
+    var index: Double
     
-    var `object`: IObservableArray[T] = js.native
+    var `object`: IObservableArray[T]
     
-    var removed: js.Array[T] = js.native
+    var removed: js.Array[T]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object IArraySplice {
     
@@ -76,7 +73,7 @@ object interfacesMod {
     }
     
     @scala.inline
-    implicit class IArraySpliceMutableBuilder[Self <: IArraySplice[_], T] (val x: Self with IArraySplice[T]) extends AnyVal {
+    implicit class IArraySpliceMutableBuilder[Self <: IArraySplice[?], T] (val x: Self & IArraySplice[T]) extends AnyVal {
       
       @scala.inline
       def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
@@ -100,12 +97,11 @@ object interfacesMod {
   
   type IContextInfo = IContextInfoStruct | String
   
-  @js.native
   trait IContextInfoStruct extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var `object`: js.Object = js.native
+    var `object`: js.Object
   }
   object IContextInfoStruct {
     
@@ -127,16 +123,15 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IDependencyTree extends StObject {
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var dependencies: js.UndefOr[js.Array[IDependencyTree]] = js.native
+    var dependencies: js.UndefOr[js.Array[IDependencyTree]] = js.undefined
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
   }
   object IDependencyTree {
     
@@ -169,16 +164,15 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IObjectChange[T, R] extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var `object`: R = js.native
+    var `object`: R
     
-    var oldValue: js.UndefOr[T] = js.native
+    var oldValue: js.UndefOr[T] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object IObjectChange {
     
@@ -191,7 +185,7 @@ object interfacesMod {
     }
     
     @scala.inline
-    implicit class IObjectChangeMutableBuilder[Self <: IObjectChange[_, _], T, R] (val x: Self with (IObjectChange[T, R])) extends AnyVal {
+    implicit class IObjectChangeMutableBuilder[Self <: IObjectChange[?, ?], T, R] (val x: Self & (IObjectChange[T, R])) extends AnyVal {
       
       @scala.inline
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -219,19 +213,20 @@ object interfacesMod {
   
   @js.native
   trait IObservableArray[T]
-    extends Array[T]
-       with IObservable {
+    extends StObject
+       with IObservable
+       with Array[T] {
     
     def clear(): js.Array[T] = js.native
     
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ IObservableArray[T], Boolean],
-      thisArg: js.UndefOr[scala.Nothing],
+      thisArg: js.Any,
       fromIndex: Double
     ): T = js.native
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ IObservableArray[T], Boolean],
-      thisArg: js.Any,
+      thisArg: Unit,
       fromIndex: Double
     ): T = js.native
     
@@ -242,13 +237,15 @@ object interfacesMod {
     def replace(newItems: js.Array[T]): js.Array[T] = js.native
     
     def spliceWithArray(index: Double): js.Array[T] = js.native
-    def spliceWithArray(index: Double, deleteCount: js.UndefOr[scala.Nothing], newItems: js.Array[T]): js.Array[T] = js.native
     def spliceWithArray(index: Double, deleteCount: Double): js.Array[T] = js.native
     def spliceWithArray(index: Double, deleteCount: Double, newItems: js.Array[T]): js.Array[T] = js.native
+    def spliceWithArray(index: Double, deleteCount: Unit, newItems: js.Array[T]): js.Array[T] = js.native
   }
   
   @js.native
-  trait IObservableValue[T] extends IObservable {
+  trait IObservableValue[T]
+    extends StObject
+       with IObservable {
     
     def apply(): T = js.native
     def apply(value: T): Unit = js.native
@@ -257,18 +254,17 @@ object interfacesMod {
     def observe(callback: js.Function2[/* newValue */ T, /* oldValue */ T, Unit], fireImmediately: Boolean): Lambda = js.native
   }
   
-  @js.native
   trait IObserverTree extends StObject {
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var id: Double = js.native
+    var id: Double
     
-    var listeners: js.UndefOr[Double] = js.native
+    var listeners: js.UndefOr[Double] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var observers: js.UndefOr[js.Array[IObserverTree]] = js.native
+    var observers: js.UndefOr[js.Array[IObserverTree]] = js.undefined
   }
   object IObserverTree {
     
@@ -307,20 +303,19 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait ITransitionEvent extends StObject {
     
-    var changed: Boolean = js.native
+    var changed: Boolean
     
-    var context: js.Object = js.native
+    var context: js.Object
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var newValue: String = js.native
+    var newValue: String
     
-    var state: String = js.native
+    var state: String
   }
   object ITransitionEvent {
     

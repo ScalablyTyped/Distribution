@@ -2,15 +2,13 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockedUser extends StObject {
   
-  var blocked_id: Double = js.native
+  var blocked_id: Double
   
-  var blocked_url: String = js.native
+  var blocked_url: String
 }
 object BlockedUser {
   

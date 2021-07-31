@@ -2,12 +2,13 @@ package typings.joi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.joi.mod._Schema because Already inherited */ @js.native
-trait LinkSchema extends AnySchema {
+trait LinkSchema
+  extends StObject
+     with AnySchema {
   
   /**
     * Same as `any.concat()` but the schema is merged after the link is resolved which allows merging with schemas of the same type as the resolved link.

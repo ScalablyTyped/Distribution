@@ -2,7 +2,6 @@ package typings.web3Bzz
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,8 +13,8 @@ object mod {
     
     val currentProvider: js.Any = js.native
     
-    def download(bzzHash: String): js.Promise[_] = js.native
-    def download(bzzHash: String, localPath: String): js.Promise[_] = js.native
+    def download(bzzHash: String): js.Promise[js.Any] = js.native
+    def download(bzzHash: String, localPath: String): js.Promise[js.Any] = js.native
     
     val givenProvider: js.Any = js.native
     
@@ -33,19 +32,22 @@ object mod {
     val givenProvider: js.Any = js.native
   }
   
-  @js.native
   trait Pick extends StObject {
     
-    def data(): js.Promise[_] = js.native
+    def data(): js.Promise[js.Any]
     
-    def directory(): js.Promise[_] = js.native
+    def directory(): js.Promise[js.Any]
     
-    def file(): js.Promise[_] = js.native
+    def file(): js.Promise[js.Any]
   }
   object Pick {
     
     @scala.inline
-    def apply(data: () => js.Promise[_], directory: () => js.Promise[_], file: () => js.Promise[_]): Pick = {
+    def apply(
+      data: () => js.Promise[js.Any],
+      directory: () => js.Promise[js.Any],
+      file: () => js.Promise[js.Any]
+    ): Pick = {
       val __obj = js.Dynamic.literal(data = js.Any.fromFunction0(data), directory = js.Any.fromFunction0(directory), file = js.Any.fromFunction0(file))
       __obj.asInstanceOf[Pick]
     }
@@ -54,13 +56,13 @@ object mod {
     implicit class PickMutableBuilder[Self <: Pick] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: () => js.Promise[_]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      def setData(value: () => js.Promise[js.Any]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setDirectory(value: () => js.Promise[_]): Self = StObject.set(x, "directory", js.Any.fromFunction0(value))
+      def setDirectory(value: () => js.Promise[js.Any]): Self = StObject.set(x, "directory", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setFile(value: () => js.Promise[_]): Self = StObject.set(x, "file", js.Any.fromFunction0(value))
+      def setFile(value: () => js.Promise[js.Any]): Self = StObject.set(x, "file", js.Any.fromFunction0(value))
     }
   }
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetProxySessionRequest extends StObject {
   
   /**
     * The proxy session ID.
     */
-  var ProxySessionId: NonEmptyString128 = js.native
+  var ProxySessionId: NonEmptyString128
   
   /**
     * The Amazon Chime voice connector ID.
     */
-  var VoiceConnectorId: NonEmptyString128 = js.native
+  var VoiceConnectorId: NonEmptyString128
 }
 object GetProxySessionRequest {
   

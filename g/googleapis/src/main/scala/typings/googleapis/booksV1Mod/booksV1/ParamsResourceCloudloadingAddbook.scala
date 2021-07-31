@@ -6,37 +6,37 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCloudloadingAddbook extends StandardParameters {
+trait ParamsResourceCloudloadingAddbook
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A drive document id. The upload_client_token must not be set.
     */
-  var drive_document_id: js.UndefOr[String] = js.native
+  var drive_document_id: js.UndefOr[String] = js.undefined
   
   /**
     * The document MIME type. It can be set only if the drive_document_id is
     * set.
     */
-  var mime_type: js.UndefOr[String] = js.native
+  var mime_type: js.UndefOr[String] = js.undefined
   
   /**
     * The document name. It can be set only if the drive_document_id is set.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
     */
-  var upload_client_token: js.UndefOr[String] = js.native
+  var upload_client_token: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCloudloadingAddbook {
   

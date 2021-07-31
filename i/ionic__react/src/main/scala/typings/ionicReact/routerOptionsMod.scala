@@ -2,17 +2,15 @@ package typings.ionicReact
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerOptionsMod {
   
-  @js.native
   trait RouterOptions extends StObject {
     
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
-    var unmount: js.UndefOr[Boolean] = js.native
+    var unmount: js.UndefOr[Boolean] = js.undefined
   }
   object RouterOptions {
     

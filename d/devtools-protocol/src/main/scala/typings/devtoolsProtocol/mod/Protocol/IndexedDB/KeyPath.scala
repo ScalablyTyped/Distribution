@@ -5,26 +5,24 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.array
 import typings.devtoolsProtocol.devtoolsProtocolStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyPath extends StObject {
   
   /**
     * Array value.
     */
-  var array: js.UndefOr[js.Array[String]] = js.native
+  var array: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * String value.
     */
-  var string: js.UndefOr[String] = js.native
+  var string: js.UndefOr[String] = js.undefined
   
   /**
     * Key path type. (KeyPathType enum)
     */
-  var `type`: `null` | string | array = js.native
+  var `type`: `null` | string | array
 }
 object KeyPath {
   

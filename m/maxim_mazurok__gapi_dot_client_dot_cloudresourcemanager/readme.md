@@ -4,15 +4,15 @@
 Typings are for version 2.0.20201116
 
 ## Library description:
-TypeScript typings for Cloud Resource Manager API v2
+TypeScript typings for Cloud Resource Manager API v3
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudresourcemanager |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 79 |
+| # downloads        | 1172 |
 | # stars            | 0 |
 
 ## Links

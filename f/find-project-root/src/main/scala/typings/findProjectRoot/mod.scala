@@ -2,30 +2,30 @@ package typings.findProjectRoot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("find-project-root", JSImport.Namespace)
-  @js.native
-  def apply(path: String): Null | String = js.native
-  @JSImport("find-project-root", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: Options): Null | String = js.native
+  @scala.inline
+  def apply(path: String): Null | String = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Null | String]
+  @scala.inline
+  def apply(path: String, options: Options): Null | String = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | String]
   
+  @JSImport("find-project-root", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * markers that it will search for
       */
-    var markers: js.UndefOr[js.Array[String]] = js.native
+    var markers: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * total number of levels the algorithm can traverse
       */
-    var maxDepth: js.UndefOr[Double] = js.native
+    var maxDepth: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

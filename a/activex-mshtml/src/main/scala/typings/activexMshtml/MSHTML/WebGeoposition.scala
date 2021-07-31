@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebGeoposition extends StObject {
   
   @JSName("MSHTML.WebGeoposition_typekey")
-  var MSHTMLDotWebGeoposition_typekey: WebGeoposition = js.native
+  var MSHTMLDotWebGeoposition_typekey: WebGeoposition
   
-  val coords: IWebGeocoordinates = js.native
+  val coords: IWebGeocoordinates
   
-  val timeStamp: Double = js.native
+  val timeStamp: Double
 }
 object WebGeoposition {
   

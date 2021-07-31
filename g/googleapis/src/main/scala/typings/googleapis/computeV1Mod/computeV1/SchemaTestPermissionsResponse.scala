@@ -2,17 +2,15 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTestPermissionsResponse extends StObject {
   
   /**
     * A subset of `TestPermissionsRequest.permissions` that the caller is
     * allowed.
     */
-  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTestPermissionsResponse {
   

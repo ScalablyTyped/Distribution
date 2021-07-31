@@ -2,13 +2,11 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The VerifyNotificationChannel request.
   */
-@js.native
 trait SchemaVerifyNotificationChannelRequest extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaVerifyNotificationChannelRequest extends StObject {
     * one is only guaranteed that the code is valid UTF-8; one should not make
     * any assumptions regarding the structure or format of the code).
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
 }
 object SchemaVerifyNotificationChannelRequest {
   

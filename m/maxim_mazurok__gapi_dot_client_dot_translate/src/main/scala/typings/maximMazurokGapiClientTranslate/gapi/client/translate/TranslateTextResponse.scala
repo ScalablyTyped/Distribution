@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslateTextResponse extends StObject {
   
   /** Text translation responses if a glossary is provided in the request. This can be the same as `translations` if no terms apply. This field has the same length as `contents`. */
-  var glossaryTranslations: js.UndefOr[js.Array[Translation]] = js.native
+  var glossaryTranslations: js.UndefOr[js.Array[Translation]] = js.undefined
   
   /** Text translation responses with no glossary applied. This field has the same length as `contents`. */
-  var translations: js.UndefOr[js.Array[Translation]] = js.native
+  var translations: js.UndefOr[js.Array[Translation]] = js.undefined
 }
 object TranslateTextResponse {
   

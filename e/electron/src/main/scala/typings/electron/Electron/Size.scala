@@ -2,16 +2,14 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Size extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/size
-  var height: Double = js.native
+  var height: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object Size {
   

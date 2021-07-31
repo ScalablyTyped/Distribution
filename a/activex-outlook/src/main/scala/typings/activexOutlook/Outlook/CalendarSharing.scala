@@ -3,42 +3,40 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarSharing extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  var CalendarDetail: OlCalendarDetail = js.native
+  var CalendarDetail: OlCalendarDetail
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var EndDate: VarDate = js.native
+  var EndDate: VarDate
   
-  val Folder: typings.activexOutlook.Outlook.Folder = js.native
+  val Folder: typings.activexOutlook.Outlook.Folder
   
-  def ForwardAsICal(MailFormat: OlCalendarMailFormat): MailItem = js.native
+  def ForwardAsICal(MailFormat: OlCalendarMailFormat): MailItem
   
-  var IncludeAttachments: Boolean = js.native
+  var IncludeAttachments: Boolean
   
-  var IncludePrivateDetails: Boolean = js.native
+  var IncludePrivateDetails: Boolean
   
-  var IncludeWholeCalendar: Boolean = js.native
+  var IncludeWholeCalendar: Boolean
   
   @JSName("Outlook.CalendarSharing_typekey")
-  var OutlookDotCalendarSharing_typekey: CalendarSharing = js.native
+  var OutlookDotCalendarSharing_typekey: CalendarSharing
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RestrictToWorkingHours: Boolean = js.native
+  var RestrictToWorkingHours: Boolean
   
-  def SaveAsICal(Path: String): Unit = js.native
+  def SaveAsICal(Path: String): Unit
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  var StartDate: VarDate = js.native
+  var StartDate: VarDate
 }
 object CalendarSharing {
   

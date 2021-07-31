@@ -4,27 +4,25 @@ import typings.reactNative.reactNativeStrings.fade
 import typings.reactNative.reactNativeStrings.slide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusBarPropsIOS extends StObject {
   
   /**
     * Sets the color of the status bar text.
     */
-  var barStyle: js.UndefOr[StatusBarStyle] = js.native
+  var barStyle: js.UndefOr[StatusBarStyle] = js.undefined
   
   /**
     * If the network activity indicator should be visible.
     */
-  var networkActivityIndicatorVisible: js.UndefOr[Boolean] = js.native
+  var networkActivityIndicatorVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The transition effect when showing and hiding the status bar using
     * the hidden prop. Defaults to 'fade'.
     */
-  var showHideTransition: js.UndefOr[fade | slide] = js.native
+  var showHideTransition: js.UndefOr[fade | slide] = js.undefined
 }
 object StatusBarPropsIOS {
   

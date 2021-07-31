@@ -3,19 +3,19 @@ package typings.instagramPrivateApi
 import typings.instagramPrivateApi.statusResponseMod.StatusResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locationRepositorySearchResponseMod {
   
-  @js.native
-  trait LocationRepositorySearchResponseRootObject extends StatusResponse {
+  trait LocationRepositorySearchResponseRootObject
+    extends StObject
+       with StatusResponse {
     
-    var rank_token: String = js.native
+    var rank_token: String
     
-    var request_id: String = js.native
+    var request_id: String
     
-    var venues: js.Array[LocationRepositorySearchResponseVenuesItem] = js.native
+    var venues: js.Array[LocationRepositorySearchResponseVenuesItem]
   }
   object LocationRepositorySearchResponseRootObject {
     
@@ -47,22 +47,21 @@ object locationRepositorySearchResponseMod {
     }
   }
   
-  @js.native
   trait LocationRepositorySearchResponseVenuesItem extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var external_id: String = js.native
+    var external_id: String
     
-    var external_id_source: String = js.native
+    var external_id_source: String
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: Double = js.native
+    var lng: Double
     
-    var minimum_age: Double = js.native
+    var minimum_age: Double
     
-    var name: String = js.native
+    var name: String
   }
   object LocationRepositorySearchResponseVenuesItem {
     

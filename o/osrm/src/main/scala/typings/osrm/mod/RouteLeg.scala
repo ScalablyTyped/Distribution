@@ -2,7 +2,6 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * https://github.com/Project-OSRM/osrm-backend/blob/master/docs/http.md#routeleg-object
   */
-@js.native
 trait RouteLeg extends StObject {
   
   /**
@@ -18,36 +16,36 @@ trait RouteLeg extends StObject {
     * - true: An Annotation object containing node ids, durations distances and
     * - false: weights undefined
     */
-  var annotation: Annotation = js.native
+  var annotation: Annotation
   
   /**
     * The distance traveled by this route leg, in float meters.
     */
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * The estimated travel time, in float number of seconds.
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Depends on the steps parameter.
     * - true: array of RouteStep objects describing the turn-by-turn instructions
     * - false: empty array
     */
-  var steps: js.Array[RouteStep] = js.native
+  var steps: js.Array[RouteStep]
   
   /**
     * Summary of the route taken as string. Depends on the summary parameter:
     * - true: Names of the two major roads used. Can be empty if route is too short.
     * - false: empty string
     */
-  var summary: String = js.native
+  var summary: String
   
   /**
     * The calculated weight of the route leg.
     */
-  var weight: Double = js.native
+  var weight: Double
 }
 object RouteLeg {
   

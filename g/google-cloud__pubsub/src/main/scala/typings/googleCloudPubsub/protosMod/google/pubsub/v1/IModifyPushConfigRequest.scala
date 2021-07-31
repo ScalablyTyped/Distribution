@@ -2,18 +2,16 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ModifyPushConfigRequest. */
-@js.native
 trait IModifyPushConfigRequest extends StObject {
   
   /** ModifyPushConfigRequest pushConfig */
-  var pushConfig: js.UndefOr[IPushConfig | Null] = js.native
+  var pushConfig: js.UndefOr[IPushConfig | Null] = js.undefined
   
   /** ModifyPushConfigRequest subscription */
-  var subscription: js.UndefOr[String | Null] = js.native
+  var subscription: js.UndefOr[String | Null] = js.undefined
 }
 object IModifyPushConfigRequest {
   

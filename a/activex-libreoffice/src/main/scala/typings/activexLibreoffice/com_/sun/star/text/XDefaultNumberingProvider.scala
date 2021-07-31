@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.lang.Locale
   * @version 1.0
   */
-@js.native
-trait XDefaultNumberingProvider extends XInterface {
+trait XDefaultNumberingProvider
+  extends StObject
+     with XInterface {
   
   /**
     * provides access to outline numberings according to a given {@link com.sun.star.lang.Locale} .
@@ -28,7 +28,7 @@ trait XDefaultNumberingProvider extends XInterface {
     * @see com.sun.star.text.NumberingLevel
     * @see com.sun.star.lang.Locale
     */
-  def getDefaultContinuousNumberingLevels(aLocale: Locale): SafeArray[PropertyValues] = js.native
+  def getDefaultContinuousNumberingLevels(aLocale: Locale): SafeArray[PropertyValues]
   
   /**
     * provides access to outline numberings according to a given {@link com.sun.star.lang.Locale} .
@@ -36,7 +36,7 @@ trait XDefaultNumberingProvider extends XInterface {
     * Outline numberings usually consist of levels with different settings.
     * @see com.sun.star.text.NumberingLevel
     */
-  def getDefaultOutlineNumberings(aLocale: Locale): SafeArray[XIndexAccess] = js.native
+  def getDefaultOutlineNumberings(aLocale: Locale): SafeArray[XIndexAccess]
 }
 object XDefaultNumberingProvider {
   

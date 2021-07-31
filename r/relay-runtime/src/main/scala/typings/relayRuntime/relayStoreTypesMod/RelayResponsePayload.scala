@@ -3,23 +3,21 @@ package typings.relayRuntime.relayStoreTypesMod
 import typings.relayRuntime.relayNetworkTypesMod.PayloadError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelayResponsePayload extends StObject {
   
-  val errors: js.UndefOr[js.Array[PayloadError] | Null] = js.native
+  val errors: js.UndefOr[js.Array[PayloadError] | Null] = js.undefined
   
-  val fieldPayloads: js.UndefOr[js.Array[HandleFieldPayload] | Null] = js.native
+  val fieldPayloads: js.UndefOr[js.Array[HandleFieldPayload] | Null] = js.undefined
   
-  val incrementalPlaceholders: js.UndefOr[js.Array[IncrementalDataPlaceholder] | Null] = js.native
+  val incrementalPlaceholders: js.UndefOr[js.Array[IncrementalDataPlaceholder] | Null] = js.undefined
   
-  val isFinal: Boolean = js.native
+  val isFinal: Boolean
   
-  val moduleImportPayloads: js.UndefOr[js.Array[ModuleImportPayload] | Null] = js.native
+  val moduleImportPayloads: js.UndefOr[js.Array[ModuleImportPayload] | Null] = js.undefined
   
-  val source: MutableRecordSource = js.native
+  val source: MutableRecordSource
 }
 object RelayResponsePayload {
   

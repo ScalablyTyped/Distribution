@@ -2,12 +2,12 @@ package typings.kendoUi.kendo.dataviz.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Layout
-  extends typings.kendoUi.kendo.drawing.Group {
+  extends StObject
+     with typings.kendoUi.kendo.drawing.Group {
   
   @JSName("options")
   var options_Layout: LayoutOptions = js.native

@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The stack or layer's Amazon Resource Number (ARN).
     */
-  var ResourceArn: typings.awsSdk.opsworksMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.opsworksMod.ResourceArn
   
   /**
     * A list of the keys of tags to be removed from a stack or layer.
     */
-  var TagKeys: typings.awsSdk.opsworksMod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.opsworksMod.TagKeys
 }
 object UntagResourceRequest {
   

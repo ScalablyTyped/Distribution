@@ -5,7 +5,6 @@ import typings.scChannel.scChannelStrings.subscribed
 import typings.scChannel.scChannelStrings.unsubscribed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -53,7 +52,7 @@ object mod {
     
     def publish(channelName: String, data: js.Any): js.Any = js.native
     
-    def subscribe(channelName: String): SCChannel[_] = js.native
+    def subscribe(channelName: String): SCChannel[js.Any] = js.native
     
     def unsubscribe(channelName: String): Unit = js.native
   }

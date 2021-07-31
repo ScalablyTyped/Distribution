@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeRangeFilter extends StObject {
   
   /**
     * The end time of the time range filter
     */
-  var EndTime: js.UndefOr[TStamp] = js.native
+  var EndTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The start time of the time range filter
     */
-  var StartTime: js.UndefOr[TStamp] = js.native
+  var StartTime: js.UndefOr[TStamp] = js.undefined
 }
 object TimeRangeFilter {
   

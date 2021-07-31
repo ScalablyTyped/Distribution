@@ -2,25 +2,23 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchAssertion[T, U] extends StObject {
   
-  var api: NightwatchAPI = js.native
+  var api: NightwatchAPI
   
-  def command(callback: js.Function1[/* result */ U, Unit]): this.type = js.native
+  def command(callback: js.Function1[/* result */ U, Unit]): this.type
   
-  var expected: js.Function0[T] | T = js.native
+  var expected: js.Function0[T] | T
   
-  var failure: js.UndefOr[js.Function1[/* result */ U, Boolean]] = js.native
+  var failure: js.UndefOr[js.Function1[/* result */ U, Boolean]] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  def pass(value: T): js.Any = js.native
+  def pass(value: T): js.Any
   
-  def value(result: U): T = js.native
+  def value(result: U): T
 }
 object NightwatchAssertion {
   
@@ -38,7 +36,7 @@ object NightwatchAssertion {
   }
   
   @scala.inline
-  implicit class NightwatchAssertionMutableBuilder[Self <: NightwatchAssertion[_, _], T, U] (val x: Self with (NightwatchAssertion[T, U])) extends AnyVal {
+  implicit class NightwatchAssertionMutableBuilder[Self <: NightwatchAssertion[?, ?], T, U] (val x: Self & (NightwatchAssertion[T, U])) extends AnyVal {
     
     @scala.inline
     def setApi(value: NightwatchAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])

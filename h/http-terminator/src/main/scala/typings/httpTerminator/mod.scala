@@ -3,22 +3,23 @@ package typings.httpTerminator
 import typings.node.httpMod.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("http-terminator", "createHttpTerminator")
+  @JSImport("http-terminator", JSImport.Namespace)
   @js.native
-  def createHttpTerminator(config: HttpTerminatorConfig): HttpTerminator = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createHttpTerminator(config: HttpTerminatorConfig): HttpTerminator = ^.asInstanceOf[js.Dynamic].applyDynamic("createHttpTerminator")(config.asInstanceOf[js.Any]).asInstanceOf[HttpTerminator]
+  
   trait HttpTerminator extends StObject {
     
     /**
       * Terminates the HTTP server.
       */
-    def terminate(): js.Promise[Unit] = js.native
+    def terminate(): js.Promise[Unit]
   }
   object HttpTerminator {
     
@@ -36,19 +37,18 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpTerminatorConfig extends StObject {
     
     /**
       * Number of milliseconds to allow for the active sockets to complete
       * serving the response (default: 5000).
       */
-    var gracefulTerminationTimeout: js.UndefOr[Double] = js.native
+    var gracefulTerminationTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Intsance of http.Server or https.Server.
       */
-    var server: Server | typings.node.httpsMod.Server = js.native
+    var server: Server | typings.node.httpsMod.Server
   }
   object HttpTerminatorConfig {
     

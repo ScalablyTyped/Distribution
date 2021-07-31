@@ -3,7 +3,6 @@ package typings.ansiColors
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -154,9 +153,8 @@ object mod {
   @js.native
   val magentaBright: StyleFunction = js.native
   
-  @JSImport("ansi-colors", "ok")
-  @js.native
-  def ok(args: String*): String = js.native
+  @scala.inline
+  def ok(args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ansi-colors", "red")
   @js.native
@@ -174,13 +172,11 @@ object mod {
   @js.native
   val strikethrough: StyleFunction = js.native
   
-  @JSImport("ansi-colors", "strip")
-  @js.native
-  def strip(s: String): String = js.native
+  @scala.inline
+  def strip(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ansi-colors", "stripColor")
-  @js.native
-  def stripColor(s: String): String = js.native
+  @scala.inline
+  def stripColor(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripColor")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ansi-colors", "styles")
   @js.native
@@ -194,9 +190,8 @@ object mod {
   @js.native
   val underline: StyleFunction = js.native
   
-  @JSImport("ansi-colors", "unstyle")
-  @js.native
-  def unstyle(s: String): String = js.native
+  @scala.inline
+  def unstyle(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unstyle")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ansi-colors", "visible")
   @js.native
@@ -220,14 +215,13 @@ object mod {
   @js.native
   val yellowBright: StyleFunction = js.native
   
-  @js.native
   trait StyleArrayProperties extends StObject {
     
-    var close: String = js.native
+    var close: String
     
-    var closeRe: String = js.native
+    var closeRe: String
     
-    var open: String = js.native
+    var open: String
   }
   object StyleArrayProperties {
     
@@ -254,104 +248,105 @@ object mod {
   type StyleArrayStructure = js.Tuple2[Double, Double]
   
   @js.native
-  trait StyleFunction extends StylesType[StyleFunction] {
+  trait StyleFunction
+    extends StObject
+       with StylesType[StyleFunction] {
     
     def apply(s: String): String = js.native
   }
   
-  type StyleType = StyleArrayStructure with StyleArrayProperties
+  type StyleType = StyleArrayStructure & StyleArrayProperties
   
-  @js.native
   trait StylesType[T] extends StObject {
     
     // background colors
-    var bgBlack: T = js.native
+    var bgBlack: T
     
     // bright background colors
-    var bgBlackBright: T = js.native
+    var bgBlackBright: T
     
-    var bgBlue: T = js.native
+    var bgBlue: T
     
-    var bgBlueBright: T = js.native
+    var bgBlueBright: T
     
-    var bgCyan: T = js.native
+    var bgCyan: T
     
-    var bgCyanBright: T = js.native
+    var bgCyanBright: T
     
-    var bgGreen: T = js.native
+    var bgGreen: T
     
-    var bgGreenBright: T = js.native
+    var bgGreenBright: T
     
-    var bgMagenta: T = js.native
+    var bgMagenta: T
     
-    var bgMagentaBright: T = js.native
+    var bgMagentaBright: T
     
-    var bgRed: T = js.native
+    var bgRed: T
     
-    var bgRedBright: T = js.native
+    var bgRedBright: T
     
-    var bgWhite: T = js.native
+    var bgWhite: T
     
-    var bgWhiteBright: T = js.native
+    var bgWhiteBright: T
     
-    var bgYellow: T = js.native
+    var bgYellow: T
     
-    var bgYellowBright: T = js.native
+    var bgYellowBright: T
     
     // colors
-    var black: T = js.native
+    var black: T
     
     // bright colors
-    var blackBright: T = js.native
+    var blackBright: T
     
-    var blue: T = js.native
+    var blue: T
     
-    var blueBright: T = js.native
+    var blueBright: T
     
-    var bold: T = js.native
+    var bold: T
     
-    var cyan: T = js.native
+    var cyan: T
     
-    var cyanBright: T = js.native
+    var cyanBright: T
     
-    var dim: T = js.native
+    var dim: T
     
-    var gray: T = js.native
+    var gray: T
     
-    var green: T = js.native
+    var green: T
     
-    var greenBright: T = js.native
+    var greenBright: T
     
-    var grey: T = js.native
+    var grey: T
     
-    var hidden: T = js.native
+    var hidden: T
     
-    var inverse: T = js.native
+    var inverse: T
     
-    var italic: T = js.native
+    var italic: T
     
-    var magenta: T = js.native
+    var magenta: T
     
-    var magentaBright: T = js.native
+    var magentaBright: T
     
-    var red: T = js.native
+    var red: T
     
-    var redBright: T = js.native
+    var redBright: T
     
     // modifiers
-    var reset: T = js.native
+    var reset: T
     
-    var strikethrough: T = js.native
+    var strikethrough: T
     
-    var underline: T = js.native
+    var underline: T
     
-    var white: T = js.native
+    var white: T
     
-    var whiteBright: T = js.native
+    var whiteBright: T
     
-    var yellow: T = js.native
+    var yellow: T
     
-    var yellowBright: T = js.native
+    var yellowBright: T
   }
   object StylesType {
     
@@ -405,7 +400,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class StylesTypeMutableBuilder[Self <: StylesType[_], T] (val x: Self with StylesType[T]) extends AnyVal {
+    implicit class StylesTypeMutableBuilder[Self <: StylesType[?], T] (val x: Self & StylesType[T]) extends AnyVal {
       
       @scala.inline
       def setBgBlack(value: T): Self = StObject.set(x, "bgBlack", value.asInstanceOf[js.Any])
@@ -535,24 +530,23 @@ object mod {
     }
   }
   
-  @js.native
   trait SymbolsType extends StObject {
     
-    var check: String = js.native
+    var check: String
     
-    var cross: String = js.native
+    var cross: String
     
-    var info: String = js.native
+    var info: String
     
-    var line: String = js.native
+    var line: String
     
-    var pointer: String = js.native
+    var pointer: String
     
-    var pointerSmall: String = js.native
+    var pointerSmall: String
     
-    var question: String = js.native
+    var question: String
     
-    var warning: String = js.native
+    var warning: String
   }
   object SymbolsType {
     

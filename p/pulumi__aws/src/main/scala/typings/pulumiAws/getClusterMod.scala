@@ -4,30 +4,30 @@ import typings.pulumiAws.outputMod.cloudhsmv2.GetClusterClusterCertificates
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getClusterMod {
   
-  @JSImport("@pulumi/aws/cloudhsmv2/getCluster", "getCluster")
+  @JSImport("@pulumi/aws/cloudhsmv2/getCluster", JSImport.Namespace)
   @js.native
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  @JSImport("@pulumi/aws/cloudhsmv2/getCluster", "getCluster")
-  @js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  @scala.inline
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
+  
   trait GetClusterArgs extends StObject {
     
     /**
       * The id of Cloud HSM v2 cluster.
       */
-    val clusterId: String = js.native
+    val clusterId: String
     
     /**
       * The state of the cluster to be found.
       */
-    val clusterState: js.UndefOr[String] = js.native
+    val clusterState: js.UndefOr[String] = js.undefined
   }
   object GetClusterArgs {
     
@@ -51,7 +51,6 @@ object getClusterMod {
     }
   }
   
-  @js.native
   trait GetClusterResult extends StObject {
     
     /**
@@ -63,31 +62,31 @@ object getClusterMod {
       * * `cluster_certificates.0.manufacturer_hardware_certificate` - The HSM hardware certificate issued (signed) by the hardware manufacturer.
       * The number of available cluster certificates may vary depending on state of the cluster.
       */
-    val clusterCertificates: GetClusterClusterCertificates = js.native
+    val clusterCertificates: GetClusterClusterCertificates
     
-    val clusterId: String = js.native
+    val clusterId: String
     
-    val clusterState: String = js.native
+    val clusterState: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ID of the security group associated with the CloudHSM cluster.
       */
-    val securityGroupId: String = js.native
+    val securityGroupId: String
     
     /**
       * The IDs of subnets in which cluster operates.
       */
-    val subnetIds: js.Array[String] = js.native
+    val subnetIds: js.Array[String]
     
     /**
       * The id of the VPC that the CloudHSM cluster resides in.
       */
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetClusterResult {
     

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see theMacroExpander
   * @since OOo 1.1.2
   */
-@js.native
 trait BootstrapMacroExpander
-  extends MacroExpander
+  extends StObject
+     with MacroExpander
      with XInitialization
 object BootstrapMacroExpander {
   
@@ -32,7 +31,7 @@ object BootstrapMacroExpander {
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
     expandMacros: String => String,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit

@@ -3,7 +3,6 @@ package typings.azureSb
 import typings.azureSb.mod.Azure.ServiceBus.CreateRuleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ruleresultMod {
@@ -14,12 +13,11 @@ object ruleresultMod {
       
       object Results {
         
-        @js.native
         trait RuleResult extends StObject {
           
-          def parse(xml: js.Object): js.Object | js.Array[js.Object] = js.native
+          def parse(xml: js.Object): js.Object | js.Array[js.Object]
           
-          def serialize(rule: CreateRuleOptions): String = js.native
+          def serialize(rule: CreateRuleOptions): String
         }
         object RuleResult {
           

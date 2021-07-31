@@ -12,7 +12,7 @@ Join paths and globs.
 | Keywords           | array, glob, glob join, globbing, multiple, negative glob, path, path join, patterns, wildcard |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 63807263 |
+| # downloads        | 78200346 |
 | # stars            | 0 |
 
 ## Links

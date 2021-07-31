@@ -4,14 +4,12 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // interfaces for jQuery.fn.__plugin
-@js.native
 trait IFnNewInstance extends StObject {
   
-  def createInstance(el: HTMLElement, options: js.Any, pluginName: String): JQuery[HTMLElement] = js.native
+  def createInstance(el: HTMLElement, options: js.Any, pluginName: String): JQuery[HTMLElement]
 }
 object IFnNewInstance {
   

@@ -2,20 +2,18 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for `ListDeviceConfigVersions`.
   */
-@js.native
 trait SchemaListDeviceConfigVersionsResponse extends StObject {
   
   /**
     * The device configuration for the last few versions. Versions are listed
     * in decreasing order, starting from the most recent one.
     */
-  var deviceConfigs: js.UndefOr[js.Array[SchemaDeviceConfig]] = js.native
+  var deviceConfigs: js.UndefOr[js.Array[SchemaDeviceConfig]] = js.undefined
 }
 object SchemaListDeviceConfigVersionsResponse {
   

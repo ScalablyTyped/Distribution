@@ -2,21 +2,19 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SingleAssignmentDisposable extends StObject {
   
   /** Performs the task of cleaning up resources. */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
-  def getDisposable(): IDisposable = js.native
+  def getDisposable(): IDisposable
   
   /** Is this value disposed. */
-  var isDisposed: Boolean = js.native
+  var isDisposed: Boolean
   
-  def setDisposable(value: IDisposable): Unit = js.native
+  def setDisposable(value: IDisposable): Unit
 }
 object SingleAssignmentDisposable {
   

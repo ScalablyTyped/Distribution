@@ -2,11 +2,9 @@ package typings.activexLibreoffice.com_.sun.star.xml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** store the type and value of an XML attribute inside a XNameContainer */
-@js.native
 trait AttributeData extends StObject {
   
   /**
@@ -14,17 +12,17 @@ trait AttributeData extends StObject {
     *
     * This string can be empty if you are not using namespaces.
     */
-  var Namespace: String = js.native
+  var Namespace: String
   
   /**
     * the type of this XML attribute.
     *
     * For non validating parsers this must be CDATA.
     */
-  var Type: String = js.native
+  var Type: String
   
   /** the string value of this XML attribute. */
-  var Value: String = js.native
+  var Value: String
 }
 object AttributeData {
   

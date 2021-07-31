@@ -5,34 +5,34 @@ import typings.awsSdkClientXrayNode.typesTraceMod.UnmarshalledTrace
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBatchGetTracesOutputMod {
   
-  @js.native
-  trait BatchGetTracesOutput extends OutputTypesUnion {
+  trait BatchGetTracesOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Pagination token. Not used.</p>
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Full traces for the specified requests.</p>
       */
-    var Traces: js.UndefOr[js.Array[UnmarshalledTrace]] = js.native
+    var Traces: js.UndefOr[js.Array[UnmarshalledTrace]] = js.undefined
     
     /**
       * <p>Trace IDs of requests that haven't been processed.</p>
       */
-    var UnprocessedTraceIds: js.UndefOr[js.Array[String]] = js.native
+    var UnprocessedTraceIds: js.UndefOr[js.Array[String]] = js.undefined
   }
   object BatchGetTracesOutput {
     

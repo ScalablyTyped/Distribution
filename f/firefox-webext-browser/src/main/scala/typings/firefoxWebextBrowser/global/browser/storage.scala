@@ -7,7 +7,6 @@ import typings.firefoxWebextBrowser.browser.storage.StorageAreaSync
 import typings.firefoxWebextBrowser.browser.storage.StorageChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

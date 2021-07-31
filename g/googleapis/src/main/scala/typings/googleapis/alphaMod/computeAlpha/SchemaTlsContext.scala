@@ -2,26 +2,24 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The TLS settings for the client or server.
   */
-@js.native
 trait SchemaTlsContext extends StObject {
   
   /**
     * Defines the mechanism to obtain the client or server certificate.
     */
-  var certificateContext: js.UndefOr[SchemaTlsCertificateContext] = js.native
+  var certificateContext: js.UndefOr[SchemaTlsCertificateContext] = js.undefined
   
   /**
     * Defines the mechanism to obtain the Certificate Authority certificate to
     * validate the client/server certificate. If omitted, the proxy will not
     * validate the server or client certificate.
     */
-  var validationContext: js.UndefOr[SchemaTlsValidationContext] = js.native
+  var validationContext: js.UndefOr[SchemaTlsValidationContext] = js.undefined
 }
 object SchemaTlsContext {
   

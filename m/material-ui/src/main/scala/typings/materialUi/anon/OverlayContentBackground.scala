@@ -2,19 +2,17 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverlayContentBackground extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var overlayContentBackground: js.UndefOr[String] = js.native
+  var overlayContentBackground: js.UndefOr[String] = js.undefined
   
-  var subtitleColor: js.UndefOr[String] = js.native
+  var subtitleColor: js.UndefOr[String] = js.undefined
   
-  var titleColor: js.UndefOr[String] = js.native
+  var titleColor: js.UndefOr[String] = js.undefined
 }
 object OverlayContentBackground {
   

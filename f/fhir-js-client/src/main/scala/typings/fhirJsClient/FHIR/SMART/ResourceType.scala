@@ -2,16 +2,14 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used to specify the type of Resource which needs to be considered for the API call
   */
-@js.native
 trait ResourceType extends StObject {
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object ResourceType {
   

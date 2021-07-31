@@ -3,22 +3,20 @@ package typings.googleapis.computeV1Mod.computeV1
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAddressesScopedList extends StObject {
   
   /**
     * [Output Only] A list of addresses contained in this scope.
     */
-  var addresses: js.UndefOr[js.Array[SchemaAddress]] = js.native
+  var addresses: js.UndefOr[js.Array[SchemaAddress]] = js.undefined
   
   /**
     * [Output Only] Informational warning which replaces the list of addresses
     * when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaAddressesScopedList {
   

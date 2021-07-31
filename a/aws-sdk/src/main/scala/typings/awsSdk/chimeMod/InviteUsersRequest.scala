@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InviteUsersRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: NonEmptyString = js.native
+  var AccountId: NonEmptyString
   
   /**
     * The user email addresses to which to send the email invitation.
     */
-  var UserEmailList: typings.awsSdk.chimeMod.UserEmailList = js.native
+  var UserEmailList: typings.awsSdk.chimeMod.UserEmailList
   
   /**
     * The user type.
     */
-  var UserType: js.UndefOr[typings.awsSdk.chimeMod.UserType] = js.native
+  var UserType: js.UndefOr[typings.awsSdk.chimeMod.UserType] = js.undefined
 }
 object InviteUsersRequest {
   

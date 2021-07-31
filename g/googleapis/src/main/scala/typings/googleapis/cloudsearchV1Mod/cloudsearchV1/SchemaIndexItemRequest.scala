@@ -2,34 +2,32 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaIndexItemRequest extends StObject {
   
   /**
     * Name of connector making this call. &lt;br /&gt;Format:
     * datasources/{source_id}/connectors/{ID}
     */
-  var connectorName: js.UndefOr[String] = js.native
+  var connectorName: js.UndefOr[String] = js.undefined
   
   /**
     * Common debug options.
     */
-  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.native
+  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.undefined
   
-  var indexItemOptions: js.UndefOr[SchemaIndexItemOptions] = js.native
+  var indexItemOptions: js.UndefOr[SchemaIndexItemOptions] = js.undefined
   
   /**
     * Name of the item.  Format: datasources/{source_id}/items/{item_id}
     */
-  var item: js.UndefOr[SchemaItem] = js.native
+  var item: js.UndefOr[SchemaItem] = js.undefined
   
   /**
     * Required. The RequestMode for this request.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
 }
 object SchemaIndexItemRequest {
   

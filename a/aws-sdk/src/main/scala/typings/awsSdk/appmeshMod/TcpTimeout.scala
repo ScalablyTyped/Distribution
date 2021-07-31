@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TcpTimeout extends StObject {
   
   /**
     * An object that represents an idle timeout. An idle timeout bounds the amount of time that a connection may be idle. The default value is none.
     */
-  var idle: js.UndefOr[Duration] = js.native
+  var idle: js.UndefOr[Duration] = js.undefined
 }
 object TcpTimeout {
   

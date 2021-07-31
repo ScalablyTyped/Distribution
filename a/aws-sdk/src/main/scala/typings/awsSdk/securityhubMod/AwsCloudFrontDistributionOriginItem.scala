@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCloudFrontDistributionOriginItem extends StObject {
   
   /**
     * Amazon S3 origins: The DNS name of the Amazon S3 bucket from which you want CloudFront to get objects for this origin.
     */
-  var DomainName: js.UndefOr[NonEmptyString] = js.native
+  var DomainName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A unique identifier for the origin or origin group.
     */
-  var Id: js.UndefOr[NonEmptyString] = js.native
+  var Id: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * An optional element that causes CloudFront to request your content from a directory in your Amazon S3 bucket or your custom origin.
     */
-  var OriginPath: js.UndefOr[NonEmptyString] = js.native
+  var OriginPath: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * An origin that is an S3 bucket that is not configured with static website hosting.
     */
-  var S3OriginConfig: js.UndefOr[AwsCloudFrontDistributionOriginS3OriginConfig] = js.native
+  var S3OriginConfig: js.UndefOr[AwsCloudFrontDistributionOriginS3OriginConfig] = js.undefined
 }
 object AwsCloudFrontDistributionOriginItem {
   

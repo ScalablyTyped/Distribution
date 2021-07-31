@@ -9,32 +9,28 @@ import typings.node.streamMod.Writable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FfmpegCommand]
+  @scala.inline
+  def apply(input: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
+  @scala.inline
+  def apply(input: String, options: FfmpegCommandOptions): FfmpegCommand = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FfmpegCommand]
+  @scala.inline
+  def apply(input: Unit, options: FfmpegCommandOptions): FfmpegCommand = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FfmpegCommand]
+  @scala.inline
+  def apply(input: Readable): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
+  @scala.inline
+  def apply(input: Readable, options: FfmpegCommandOptions): FfmpegCommand = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FfmpegCommand]
+  @scala.inline
+  def apply(options: FfmpegCommandOptions): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
+  
   @JSImport("fluent-ffmpeg", JSImport.Namespace)
   @js.native
-  def apply(): FfmpegCommand = js.native
-  @JSImport("fluent-ffmpeg", JSImport.Namespace)
-  @js.native
-  def apply(input: js.UndefOr[scala.Nothing], options: FfmpegCommandOptions): FfmpegCommand = js.native
-  @JSImport("fluent-ffmpeg", JSImport.Namespace)
-  @js.native
-  def apply(input: String): FfmpegCommand = js.native
-  @JSImport("fluent-ffmpeg", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: FfmpegCommandOptions): FfmpegCommand = js.native
-  @JSImport("fluent-ffmpeg", JSImport.Namespace)
-  @js.native
-  def apply(input: Readable): FfmpegCommand = js.native
-  @JSImport("fluent-ffmpeg", JSImport.Namespace)
-  @js.native
-  def apply(input: Readable, options: FfmpegCommandOptions): FfmpegCommand = js.native
-  @JSImport("fluent-ffmpeg", JSImport.Namespace)
-  @js.native
-  def apply(options: FfmpegCommandOptions): FfmpegCommand = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("fluent-ffmpeg", "FfmpegCommand")
   @js.native
@@ -42,8 +38,8 @@ object mod {
     def this(input: String) = this()
     def this(input: Readable) = this()
     def this(options: FfmpegCommandOptions) = this()
-    def this(input: js.UndefOr[scala.Nothing], options: FfmpegCommandOptions) = this()
     def this(input: String, options: FfmpegCommandOptions) = this()
+    def this(input: Unit, options: FfmpegCommandOptions) = this()
     def this(input: Readable, options: FfmpegCommandOptions) = this()
     
     def FPS(fps: Double): FfmpegCommand = js.native
@@ -83,24 +79,24 @@ object mod {
     def addOutputOptions(options: js.Array[String]): FfmpegCommand = js.native
     
     def applyAutoPad(): FfmpegCommand = js.native
-    def applyAutoPad(pad: js.UndefOr[scala.Nothing], color: String): FfmpegCommand = js.native
     def applyAutoPad(pad: Boolean): FfmpegCommand = js.native
     def applyAutoPad(pad: Boolean, color: String): FfmpegCommand = js.native
+    def applyAutoPad(pad: Unit, color: String): FfmpegCommand = js.native
     
     def applyAutoPadding(): FfmpegCommand = js.native
-    def applyAutoPadding(pad: js.UndefOr[scala.Nothing], color: String): FfmpegCommand = js.native
     def applyAutoPadding(pad: Boolean): FfmpegCommand = js.native
     def applyAutoPadding(pad: Boolean, color: String): FfmpegCommand = js.native
+    def applyAutoPadding(pad: Unit, color: String): FfmpegCommand = js.native
     
     def applyAutopad(): FfmpegCommand = js.native
-    def applyAutopad(pad: js.UndefOr[scala.Nothing], color: String): FfmpegCommand = js.native
     def applyAutopad(pad: Boolean): FfmpegCommand = js.native
     def applyAutopad(pad: Boolean, color: String): FfmpegCommand = js.native
+    def applyAutopad(pad: Unit, color: String): FfmpegCommand = js.native
     
     def applyAutopadding(): FfmpegCommand = js.native
-    def applyAutopadding(pad: js.UndefOr[scala.Nothing], color: String): FfmpegCommand = js.native
     def applyAutopadding(pad: Boolean): FfmpegCommand = js.native
     def applyAutopadding(pad: Boolean, color: String): FfmpegCommand = js.native
+    def applyAutopadding(pad: Unit, color: String): FfmpegCommand = js.native
     
     def aspect(aspect: String): FfmpegCommand = js.native
     def aspect(aspect: Double): FfmpegCommand = js.native
@@ -126,14 +122,14 @@ object mod {
     def audioQuality(quality: Double): FfmpegCommand = js.native
     
     def autoPad(): FfmpegCommand = js.native
-    def autoPad(pad: js.UndefOr[scala.Nothing], color: String): FfmpegCommand = js.native
     def autoPad(pad: Boolean): FfmpegCommand = js.native
     def autoPad(pad: Boolean, color: String): FfmpegCommand = js.native
+    def autoPad(pad: Unit, color: String): FfmpegCommand = js.native
     
     def autopad(): FfmpegCommand = js.native
-    def autopad(pad: js.UndefOr[scala.Nothing], color: String): FfmpegCommand = js.native
     def autopad(pad: Boolean): FfmpegCommand = js.native
     def autopad(pad: Boolean, color: String): FfmpegCommand = js.native
+    def autopad(pad: Unit, color: String): FfmpegCommand = js.native
     
     def availableCodecs(callback: CodecsCallback): Unit = js.native
     
@@ -276,7 +272,7 @@ object mod {
     def outputOptions(options: js.Array[String]): FfmpegCommand = js.native
     
     def pipe(): Writable | PassThrough = js.native
-    def pipe(stream: js.UndefOr[scala.Nothing], options: End): Writable | PassThrough = js.native
+    def pipe(stream: Unit, options: End): Writable | PassThrough = js.native
     def pipe(stream: Writable): Writable | PassThrough = js.native
     def pipe(stream: Writable, options: End): Writable | PassThrough = js.native
     
@@ -402,24 +398,24 @@ object mod {
     def withAudioQuality(quality: Double): FfmpegCommand = js.native
     
     def withAutoPad(): FfmpegCommand = js.native
-    def withAutoPad(pad: js.UndefOr[scala.Nothing], color: String): FfmpegCommand = js.native
     def withAutoPad(pad: Boolean): FfmpegCommand = js.native
     def withAutoPad(pad: Boolean, color: String): FfmpegCommand = js.native
+    def withAutoPad(pad: Unit, color: String): FfmpegCommand = js.native
     
     def withAutoPadding(): FfmpegCommand = js.native
-    def withAutoPadding(pad: js.UndefOr[scala.Nothing], color: String): FfmpegCommand = js.native
     def withAutoPadding(pad: Boolean): FfmpegCommand = js.native
     def withAutoPadding(pad: Boolean, color: String): FfmpegCommand = js.native
+    def withAutoPadding(pad: Unit, color: String): FfmpegCommand = js.native
     
     def withAutopad(): FfmpegCommand = js.native
-    def withAutopad(pad: js.UndefOr[scala.Nothing], color: String): FfmpegCommand = js.native
     def withAutopad(pad: Boolean): FfmpegCommand = js.native
     def withAutopad(pad: Boolean, color: String): FfmpegCommand = js.native
+    def withAutopad(pad: Unit, color: String): FfmpegCommand = js.native
     
     def withAutopadding(): FfmpegCommand = js.native
-    def withAutopadding(pad: js.UndefOr[scala.Nothing], color: String): FfmpegCommand = js.native
     def withAutopadding(pad: Boolean): FfmpegCommand = js.native
     def withAutopadding(pad: Boolean, color: String): FfmpegCommand = js.native
+    def withAutopadding(pad: Unit, color: String): FfmpegCommand = js.native
     
     def withDuration(duration: String): FfmpegCommand = js.native
     def withDuration(duration: Double): FfmpegCommand = js.native
@@ -495,84 +491,68 @@ object mod {
     def writeToStream(stream: Writable, options: End): Writable = js.native
   }
   
-  @JSImport("fluent-ffmpeg", "availableCodecs")
-  @js.native
-  def availableCodecs(callback: CodecsCallback): Unit = js.native
+  @scala.inline
+  def availableCodecs(callback: CodecsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableCodecs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fluent-ffmpeg", "availableEncoders")
-  @js.native
-  def availableEncoders(callback: EncodersCallback): Unit = js.native
+  @scala.inline
+  def availableEncoders(callback: EncodersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableEncoders")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fluent-ffmpeg", "availableFilters")
-  @js.native
-  def availableFilters(callback: FiltersCallback): Unit = js.native
+  @scala.inline
+  def availableFilters(callback: FiltersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableFilters")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fluent-ffmpeg", "availableFormats")
-  @js.native
-  def availableFormats(callback: FormatsCallback): Unit = js.native
+  @scala.inline
+  def availableFormats(callback: FormatsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableFormats")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fluent-ffmpeg", "ffprobe")
-  @js.native
-  def ffprobe(file: String, callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]): Unit = js.native
-  @JSImport("fluent-ffmpeg", "ffprobe")
-  @js.native
+  @scala.inline
+  def ffprobe(file: String, callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def ffprobe(
     file: String,
     index: Double,
     callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], index.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   // tslint:disable-line unified-signatures
-  @JSImport("fluent-ffmpeg", "ffprobe")
-  @js.native
+  @scala.inline
   def ffprobe(
     file: String,
     index: Double,
     options: js.Array[String],
     callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
-  ): Unit = js.native
-  @JSImport("fluent-ffmpeg", "ffprobe")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], index.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def ffprobe(
     file: String,
     options: js.Array[String],
     callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fluent-ffmpeg", "getAvailableCodecs")
-  @js.native
-  def getAvailableCodecs(callback: CodecsCallback): Unit = js.native
+  @scala.inline
+  def getAvailableCodecs(callback: CodecsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableCodecs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fluent-ffmpeg", "getAvailableEncoders")
-  @js.native
-  def getAvailableEncoders(callback: EncodersCallback): Unit = js.native
+  @scala.inline
+  def getAvailableEncoders(callback: EncodersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableEncoders")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fluent-ffmpeg", "getAvailableFilters")
-  @js.native
-  def getAvailableFilters(callback: FiltersCallback): Unit = js.native
+  @scala.inline
+  def getAvailableFilters(callback: FiltersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableFilters")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fluent-ffmpeg", "getAvailableFormats")
-  @js.native
-  def getAvailableFormats(callback: FormatsCallback): Unit = js.native
+  @scala.inline
+  def getAvailableFormats(callback: FormatsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableFormats")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // static methods
-  @JSImport("fluent-ffmpeg", "setFfmpegPath")
-  @js.native
-  def setFfmpegPath(path: String): FfmpegCommand = js.native
+  @scala.inline
+  def setFfmpegPath(path: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].applyDynamic("setFfmpegPath")(path.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
   
-  @JSImport("fluent-ffmpeg", "setFfprobePath")
-  @js.native
-  def setFfprobePath(path: String): FfmpegCommand = js.native
+  @scala.inline
+  def setFfprobePath(path: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].applyDynamic("setFfprobePath")(path.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
   
-  @JSImport("fluent-ffmpeg", "setFlvtoolPath")
-  @js.native
-  def setFlvtoolPath(path: String): FfmpegCommand = js.native
+  @scala.inline
+  def setFlvtoolPath(path: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlvtoolPath")(path.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
   
-  @js.native
   trait AudioVideoFilter extends StObject {
     
-    var filter: String = js.native
+    var filter: String
     
-    var options: String | js.Array[String] | js.Object = js.native
+    var options: String | js.Array[String] | js.Object
   }
   object AudioVideoFilter {
     
@@ -596,28 +576,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Codec extends StObject {
     
-    var canDecode: Boolean = js.native
+    var canDecode: Boolean
     
-    var canEncode: Boolean = js.native
+    var canEncode: Boolean
     
-    var description: String = js.native
+    var description: String
     
-    var directRendering: js.UndefOr[Boolean] = js.native
+    var directRendering: js.UndefOr[Boolean] = js.undefined
     
-    var drawHorizBand: js.UndefOr[Boolean] = js.native
+    var drawHorizBand: js.UndefOr[Boolean] = js.undefined
     
-    var intraFrameOnly: js.UndefOr[Boolean] = js.native
+    var intraFrameOnly: js.UndefOr[Boolean] = js.undefined
     
-    var isLossless: js.UndefOr[Boolean] = js.native
+    var isLossless: js.UndefOr[Boolean] = js.undefined
     
-    var isLossy: js.UndefOr[Boolean] = js.native
+    var isLossy: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var weirdFrameTruncation: js.UndefOr[Boolean] = js.native
+    var weirdFrameTruncation: js.UndefOr[Boolean] = js.undefined
   }
   object Codec {
     
@@ -685,22 +664,21 @@ object mod {
   
   type CodecsCallback = js.Function2[/* err */ Error, /* codecs */ Codecs, Unit]
   
-  @js.native
   trait Encoder extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var directRendering: Boolean = js.native
+    var directRendering: Boolean
     
-    var drawHorizBand: Boolean = js.native
+    var drawHorizBand: Boolean
     
-    var experimental: Boolean = js.native
+    var experimental: Boolean
     
-    var frameMT: Boolean = js.native
+    var frameMT: Boolean
     
-    var sliceMT: Boolean = js.native
+    var sliceMT: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Encoder {
     
@@ -749,16 +727,15 @@ object mod {
   
   type EncodersCallback = js.Function2[/* err */ Error, /* encoders */ Encoders, Unit]
   
-  @js.native
   trait FfmpegCommandLogger extends StObject {
     
-    def debug(data: js.Any*): Unit = js.native
+    def debug(data: js.Any*): Unit
     
-    def error(data: js.Any*): Unit = js.native
+    def error(data: js.Any*): Unit
     
-    def info(data: js.Any*): Unit = js.native
+    def info(data: js.Any*): Unit
     
-    def warn(data: js.Any*): Unit = js.native
+    def warn(data: js.Any*): Unit
   }
   object FfmpegCommandLogger {
     
@@ -790,26 +767,25 @@ object mod {
     }
   }
   
-  @js.native
   trait FfmpegCommandOptions extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var logger: js.UndefOr[FfmpegCommandLogger] = js.native
+    var logger: js.UndefOr[FfmpegCommandLogger] = js.undefined
     
-    var niceness: js.UndefOr[Double] = js.native
+    var niceness: js.UndefOr[Double] = js.undefined
     
-    var preset: js.UndefOr[String] = js.native
+    var preset: js.UndefOr[String] = js.undefined
     
-    var presets: js.UndefOr[String] = js.native
+    var presets: js.UndefOr[String] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var source: js.UndefOr[String | Readable] = js.native
+    var source: js.UndefOr[String | Readable] = js.undefined
     
-    var stdoutLines: js.UndefOr[Double] = js.native
+    var stdoutLines: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object FfmpegCommandOptions {
     
@@ -878,19 +854,18 @@ object mod {
     }
   }
   
-  @js.native
   trait FfprobeData extends StObject {
     
-    var chapters: js.Array[_] = js.native
+    var chapters: js.Array[js.Any]
     
-    var format: FfprobeFormat = js.native
+    var format: FfprobeFormat
     
-    var streams: js.Array[FfprobeStream] = js.native
+    var streams: js.Array[FfprobeStream]
   }
   object FfprobeData {
     
     @scala.inline
-    def apply(chapters: js.Array[_], format: FfprobeFormat, streams: js.Array[FfprobeStream]): FfprobeData = {
+    def apply(chapters: js.Array[js.Any], format: FfprobeFormat, streams: js.Array[FfprobeStream]): FfprobeData = {
       val __obj = js.Dynamic.literal(chapters = chapters.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], streams = streams.asInstanceOf[js.Any])
       __obj.asInstanceOf[FfprobeData]
     }
@@ -899,7 +874,7 @@ object mod {
     implicit class FfprobeDataMutableBuilder[Self <: FfprobeData] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChapters(value: js.Array[_]): Self = StObject.set(x, "chapters", value.asInstanceOf[js.Any])
+      def setChapters(value: js.Array[js.Any]): Self = StObject.set(x, "chapters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChaptersVarargs(value: js.Any*): Self = StObject.set(x, "chapters", js.Array(value :_*))
@@ -915,31 +890,31 @@ object mod {
     }
   }
   
-  @js.native
   trait FfprobeFormat
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var bit_rate: js.UndefOr[Double] = js.native
+    var bit_rate: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var format_long_name: js.UndefOr[String] = js.native
+    var format_long_name: js.UndefOr[String] = js.undefined
     
-    var format_name: js.UndefOr[String] = js.native
+    var format_name: js.UndefOr[String] = js.undefined
     
-    var nb_programs: js.UndefOr[Double] = js.native
+    var nb_programs: js.UndefOr[Double] = js.undefined
     
-    var nb_streams: js.UndefOr[Double] = js.native
+    var nb_streams: js.UndefOr[Double] = js.undefined
     
-    var probe_score: js.UndefOr[Double] = js.native
+    var probe_score: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var start_time: js.UndefOr[Double] = js.native
+    var start_time: js.UndefOr[Double] = js.undefined
     
-    var tags: js.UndefOr[js.Array[_]] = js.native
+    var tags: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object FfprobeFormat {
     
@@ -1013,7 +988,7 @@ object mod {
       def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
       
       @scala.inline
-      def setTags(value: js.Array[_]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
@@ -1023,99 +998,99 @@ object mod {
     }
   }
   
-  @js.native
   trait FfprobeStream
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var avg_frame_rate: js.UndefOr[String] = js.native
+    var avg_frame_rate: js.UndefOr[String] = js.undefined
     
-    var bit_rate: js.UndefOr[String] = js.native
+    var bit_rate: js.UndefOr[String] = js.undefined
     
-    var bits_per_raw_sample: js.UndefOr[String] = js.native
+    var bits_per_raw_sample: js.UndefOr[String] = js.undefined
     
-    var bits_per_sample: js.UndefOr[Double] = js.native
+    var bits_per_sample: js.UndefOr[Double] = js.undefined
     
-    var channel_layout: js.UndefOr[String] = js.native
+    var channel_layout: js.UndefOr[String] = js.undefined
     
-    var channels: js.UndefOr[Double] = js.native
+    var channels: js.UndefOr[Double] = js.undefined
     
-    var chroma_location: js.UndefOr[String] = js.native
+    var chroma_location: js.UndefOr[String] = js.undefined
     
-    var codec_long_name: js.UndefOr[String] = js.native
+    var codec_long_name: js.UndefOr[String] = js.undefined
     
-    var codec_name: js.UndefOr[String] = js.native
+    var codec_name: js.UndefOr[String] = js.undefined
     
-    var codec_tag: js.UndefOr[String] = js.native
+    var codec_tag: js.UndefOr[String] = js.undefined
     
-    var codec_tag_string: js.UndefOr[String] = js.native
+    var codec_tag_string: js.UndefOr[String] = js.undefined
     
-    var codec_time_base: js.UndefOr[String] = js.native
+    var codec_time_base: js.UndefOr[String] = js.undefined
     
-    var codec_type: js.UndefOr[String] = js.native
+    var codec_type: js.UndefOr[String] = js.undefined
     
-    var coded_height: js.UndefOr[Double] = js.native
+    var coded_height: js.UndefOr[Double] = js.undefined
     
-    var coded_width: js.UndefOr[Double] = js.native
+    var coded_width: js.UndefOr[Double] = js.undefined
     
-    var color_primaries: js.UndefOr[String] = js.native
+    var color_primaries: js.UndefOr[String] = js.undefined
     
-    var color_range: js.UndefOr[String] = js.native
+    var color_range: js.UndefOr[String] = js.undefined
     
-    var color_space: js.UndefOr[String] = js.native
+    var color_space: js.UndefOr[String] = js.undefined
     
-    var color_transfer: js.UndefOr[String] = js.native
+    var color_transfer: js.UndefOr[String] = js.undefined
     
-    var display_aspect_ratio: js.UndefOr[String] = js.native
+    var display_aspect_ratio: js.UndefOr[String] = js.undefined
     
-    var disposition: js.UndefOr[FfprobeStreamDisposition] = js.native
+    var disposition: js.UndefOr[FfprobeStreamDisposition] = js.undefined
     
-    var duration: js.UndefOr[String] = js.native
+    var duration: js.UndefOr[String] = js.undefined
     
-    var duration_ts: js.UndefOr[String] = js.native
+    var duration_ts: js.UndefOr[String] = js.undefined
     
-    var field_order: js.UndefOr[String] = js.native
+    var field_order: js.UndefOr[String] = js.undefined
     
-    var has_b_frames: js.UndefOr[Double] = js.native
+    var has_b_frames: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var max_bit_rate: js.UndefOr[String] = js.native
+    var max_bit_rate: js.UndefOr[String] = js.undefined
     
-    var nb_frames: js.UndefOr[String] = js.native
+    var nb_frames: js.UndefOr[String] = js.undefined
     
-    var nb_read_frames: js.UndefOr[String] = js.native
+    var nb_read_frames: js.UndefOr[String] = js.undefined
     
-    var nb_read_packets: js.UndefOr[String] = js.native
+    var nb_read_packets: js.UndefOr[String] = js.undefined
     
-    var pix_fmt: js.UndefOr[String] = js.native
+    var pix_fmt: js.UndefOr[String] = js.undefined
     
-    var profile: js.UndefOr[Double] = js.native
+    var profile: js.UndefOr[Double] = js.undefined
     
-    var r_frame_rate: js.UndefOr[String] = js.native
+    var r_frame_rate: js.UndefOr[String] = js.undefined
     
-    var refs: js.UndefOr[Double] = js.native
+    var refs: js.UndefOr[Double] = js.undefined
     
-    var sample_aspect_ratio: js.UndefOr[String] = js.native
+    var sample_aspect_ratio: js.UndefOr[String] = js.undefined
     
-    var sample_fmt: js.UndefOr[String] = js.native
+    var sample_fmt: js.UndefOr[String] = js.undefined
     
-    var sample_rate: js.UndefOr[Double] = js.native
+    var sample_rate: js.UndefOr[Double] = js.undefined
     
-    var start_pts: js.UndefOr[Double] = js.native
+    var start_pts: js.UndefOr[Double] = js.undefined
     
-    var start_time: js.UndefOr[Double] = js.native
+    var start_time: js.UndefOr[Double] = js.undefined
     
-    var time_base: js.UndefOr[String] = js.native
+    var time_base: js.UndefOr[String] = js.undefined
     
-    var timecode: js.UndefOr[String] = js.native
+    var timecode: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object FfprobeStream {
     
@@ -1397,33 +1372,33 @@ object mod {
     }
   }
   
-  @js.native
   trait FfprobeStreamDisposition
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var default: js.UndefOr[Double] = js.native
+    var default: js.UndefOr[Double] = js.undefined
     
-    var attached_pic: js.UndefOr[Double] = js.native
+    var attached_pic: js.UndefOr[Double] = js.undefined
     
-    var clean_effects: js.UndefOr[Double] = js.native
+    var clean_effects: js.UndefOr[Double] = js.undefined
     
-    var comment: js.UndefOr[Double] = js.native
+    var comment: js.UndefOr[Double] = js.undefined
     
-    var dub: js.UndefOr[Double] = js.native
+    var dub: js.UndefOr[Double] = js.undefined
     
-    var forced: js.UndefOr[Double] = js.native
+    var forced: js.UndefOr[Double] = js.undefined
     
-    var hearing_impaired: js.UndefOr[Double] = js.native
+    var hearing_impaired: js.UndefOr[Double] = js.undefined
     
-    var karaoke: js.UndefOr[Double] = js.native
+    var karaoke: js.UndefOr[Double] = js.undefined
     
-    var lyrics: js.UndefOr[Double] = js.native
+    var lyrics: js.UndefOr[Double] = js.undefined
     
-    var original: js.UndefOr[Double] = js.native
+    var original: js.UndefOr[Double] = js.undefined
     
-    var timed_thumbnails: js.UndefOr[Double] = js.native
+    var timed_thumbnails: js.UndefOr[Double] = js.undefined
     
-    var visual_impaired: js.UndefOr[Double] = js.native
+    var visual_impaired: js.UndefOr[Double] = js.undefined
   }
   object FfprobeStreamDisposition {
     
@@ -1510,18 +1485,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Filter extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var input: String = js.native
+    var input: String
     
-    var multipleInputs: Boolean = js.native
+    var multipleInputs: Boolean
     
-    var multipleOutputs: Boolean = js.native
+    var multipleOutputs: Boolean
     
-    var output: String = js.native
+    var output: String
   }
   object Filter {
     
@@ -1557,16 +1531,15 @@ object mod {
     }
   }
   
-  @js.native
   trait FilterSpecification extends StObject {
     
-    var filter: String = js.native
+    var filter: String
     
-    var inputs: js.UndefOr[String | js.Array[String]] = js.native
+    var inputs: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var options: js.UndefOr[js.Any | String | js.Array[_]] = js.native
+    var options: js.UndefOr[js.Any | String | js.Array[js.Any]] = js.undefined
     
-    var outputs: js.UndefOr[String | js.Array[String]] = js.native
+    var outputs: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object FilterSpecification {
     
@@ -1592,7 +1565,7 @@ object mod {
       def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
       
       @scala.inline
-      def setOptions(value: js.Any | String | js.Array[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      def setOptions(value: js.Any | String | js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
@@ -1615,14 +1588,13 @@ object mod {
   
   type FiltersCallback = js.Function2[/* err */ Error, /* filters */ Filters, Unit]
   
-  @js.native
   trait Format extends StObject {
     
-    var canDemux: Boolean = js.native
+    var canDemux: Boolean
     
-    var canMux: Boolean = js.native
+    var canMux: Boolean
     
-    var description: String = js.native
+    var description: String
   }
   object Format {
     
@@ -1652,22 +1624,21 @@ object mod {
   
   type GetPreset = js.Function1[/* command */ FfmpegCommand, String]
   
-  @js.native
   trait ScreenshotsConfig extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var fastSeek: js.UndefOr[Boolean] = js.native
+    var fastSeek: js.UndefOr[Boolean] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var folder: js.UndefOr[String] = js.native
+    var folder: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var timemarks: js.UndefOr[js.Array[Double | String]] = js.native
+    var timemarks: js.UndefOr[js.Array[Double | String]] = js.undefined
     
-    var timestamps: js.UndefOr[js.Array[Double | String]] = js.native
+    var timestamps: js.UndefOr[js.Array[Double | String]] = js.undefined
   }
   object ScreenshotsConfig {
     

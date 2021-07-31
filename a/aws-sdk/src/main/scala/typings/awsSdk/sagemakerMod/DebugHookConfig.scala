@@ -2,31 +2,29 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugHookConfig extends StObject {
   
   /**
     * Configuration information for tensor collections.
     */
-  var CollectionConfigurations: js.UndefOr[typings.awsSdk.sagemakerMod.CollectionConfigurations] = js.native
+  var CollectionConfigurations: js.UndefOr[typings.awsSdk.sagemakerMod.CollectionConfigurations] = js.undefined
   
   /**
     * Configuration information for the debug hook parameters.
     */
-  var HookParameters: js.UndefOr[typings.awsSdk.sagemakerMod.HookParameters] = js.native
+  var HookParameters: js.UndefOr[typings.awsSdk.sagemakerMod.HookParameters] = js.undefined
   
   /**
     * Path to local storage location for tensors. Defaults to /opt/ml/output/tensors/.
     */
-  var LocalPath: js.UndefOr[DirectoryPath] = js.native
+  var LocalPath: js.UndefOr[DirectoryPath] = js.undefined
   
   /**
     * Path to Amazon S3 storage location for tensors.
     */
-  var S3OutputPath: S3Uri = js.native
+  var S3OutputPath: S3Uri
 }
 object DebugHookConfig {
   

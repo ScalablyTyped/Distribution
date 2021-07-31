@@ -4,21 +4,19 @@ import typings.vexflow.anon.AccidentalNote
 import typings.vexflow.anon.Change
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyManager extends StObject {
   
-  def getAccidental(key: String): AccidentalNote = js.native
+  def getAccidental(key: String): AccidentalNote
   
-  def getKey(): String = js.native
+  def getKey(): String
   
-  def reset(): KeyManager = js.native
+  def reset(): KeyManager
   
-  def selectNote(note: String): Change = js.native
+  def selectNote(note: String): Change
   
-  def setKey(key: String): KeyManager = js.native
+  def setKey(key: String): KeyManager
 }
 object KeyManager {
   

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridCellMergingColumnSetting
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,13 +16,13 @@ trait IgGridCellMergingColumnSetting
     * Column index. This is a required property in every column setting if columnKey is not set.
     *
     */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Column key. This is a required property in every column setting if columnIndex is not set.
     *
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Defines when merging should be applied.
@@ -34,7 +33,7 @@ trait IgGridCellMergingColumnSetting
     * "always" The column will always be merged
     * "never" No merging will be applied
     */
-  var mergeOn: js.UndefOr[String] = js.native
+  var mergeOn: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the rules merging is based on.
@@ -44,7 +43,7 @@ trait IgGridCellMergingColumnSetting
     * "duplicate" Duplicate values in the column will be merged together.
     * "null" Merging will be applied for each subsequent null value after a non-null value.
     */
-  var mergeStrategy: js.UndefOr[String | js.Function] = js.native
+  var mergeStrategy: js.UndefOr[String | js.Function] = js.undefined
 }
 object IgGridCellMergingColumnSetting {
   

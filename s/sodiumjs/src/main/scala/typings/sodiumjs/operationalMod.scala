@@ -4,7 +4,6 @@ import typings.sodiumjs.cellMod.Cell
 import typings.sodiumjs.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operationalMod {
@@ -15,13 +14,16 @@ object operationalMod {
   /* static members */
   object Operational {
     
+    @JSImport("sodiumjs/dist/typings/sodium/Operational", "Operational")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Push each event onto a new transaction guaranteed to come before the next externally
       * initiated transaction. Same as {@link split(Stream)} but it works on a single value.
       */
-    @JSImport("sodiumjs/dist/typings/sodium/Operational", "Operational.defer")
-    @js.native
-    def defer[A](s: Stream[A]): Stream[A] = js.native
+    @scala.inline
+    def defer[A](s: Stream[A]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(s.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
     
     /**
       * Push each event in the list onto a newly created transaction guaranteed
@@ -30,9 +32,8 @@ object operationalMod {
       * new transaction, so the resulting stream's events could be simultaneous with
       * events output by split() or {@link defer(Stream)} invoked elsewhere in the code.
       */
-    @JSImport("sodiumjs/dist/typings/sodium/Operational", "Operational.split")
-    @js.native
-    def split[A](s: Stream[js.Array[A]]): Stream[A] = js.native
+    @scala.inline
+    def split[A](s: Stream[js.Array[A]]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(s.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
     
     /**
       * A stream that gives the updates/steps for a {@link Cell}.
@@ -42,9 +43,8 @@ object operationalMod {
       * The rule with this primitive is that you should only use it in functions
       * that do not allow the caller to detect the cell updates.
       */
-    @JSImport("sodiumjs/dist/typings/sodium/Operational", "Operational.updates")
-    @js.native
-    def updates[A](c: Cell[A]): Stream[A] = js.native
+    @scala.inline
+    def updates[A](c: Cell[A]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("updates")(c.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
     
     /**
       * A stream that is guaranteed to fire once in the transaction where value() is invoked, giving
@@ -56,8 +56,7 @@ object operationalMod {
       * The rule with this primitive is that you should only use it in functions
       * that do not allow the caller to detect the cell updates.
       */
-    @JSImport("sodiumjs/dist/typings/sodium/Operational", "Operational.value")
-    @js.native
-    def value[A](c: Cell[A]): Stream[A] = js.native
+    @scala.inline
+    def value[A](c: Cell[A]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(c.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
   }
 }

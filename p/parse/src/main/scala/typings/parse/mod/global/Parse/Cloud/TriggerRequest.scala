@@ -5,29 +5,27 @@ import typings.parse.mod.global.Parse.Object
 import typings.parse.mod.global.Parse.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriggerRequest extends StObject {
   
-  var headers: js.Any = js.native
+  var headers: js.Any
   
-  var installationId: js.UndefOr[String] = js.native
+  var installationId: js.UndefOr[String] = js.undefined
   
-  var ip: String = js.native
+  var ip: String
   
-  var log: js.Any = js.native
+  var log: js.Any
   
-  var master: js.UndefOr[Boolean] = js.native
+  var master: js.UndefOr[Boolean] = js.undefined
   
-  var `object`: Object[Attributes] = js.native
+  var `object`: Object[Attributes]
   
-  var original: js.UndefOr[Object[Attributes]] = js.native
+  var original: js.UndefOr[Object[Attributes]] = js.undefined
   
-  var triggerName: String = js.native
+  var triggerName: String
   
-  var user: js.UndefOr[User[Attributes]] = js.native
+  var user: js.UndefOr[User[Attributes]] = js.undefined
 }
 object TriggerRequest {
   

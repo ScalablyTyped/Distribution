@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListServiceSpecificCredentialsResponse extends StObject {
   
   /**
     * A list of structures that each contain details about a service-specific credential.
     */
-  var ServiceSpecificCredentials: js.UndefOr[ServiceSpecificCredentialsListType] = js.native
+  var ServiceSpecificCredentials: js.UndefOr[ServiceSpecificCredentialsListType] = js.undefined
 }
 object ListServiceSpecificCredentialsResponse {
   

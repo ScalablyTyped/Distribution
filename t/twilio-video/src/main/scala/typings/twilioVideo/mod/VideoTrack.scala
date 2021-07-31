@@ -8,7 +8,6 @@ import typings.twilioVideo.mod.VideoTrack.Dimensions
 import typings.twilioVideo.twilioVideoStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-video", "VideoTrack")
@@ -41,18 +40,17 @@ class VideoTrack () extends Track {
 }
 object VideoTrack {
   
-  @js.native
   trait Dimensions extends StObject {
     
-    var height: Double | Null = js.native
+    var height: Double | Null
     
-    var width: Double | Null = js.native
+    var width: Double | Null
   }
   object Dimensions {
     
     @scala.inline
     def apply(): Dimensions = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(height = null, width = null)
       __obj.asInstanceOf[Dimensions]
     }
     

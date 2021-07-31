@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PseudoBigInt extends StObject {
   
-  var base10Value: java.lang.String = js.native
+  var base10Value: java.lang.String
   
-  var negative: Boolean = js.native
+  var negative: Boolean
 }
 object PseudoBigInt {
   

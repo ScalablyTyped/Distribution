@@ -3,10 +3,8 @@ package typings.recurlyRecurlyJs.anon
 import typings.recurlyRecurlyJs.elementsMod.CommonElementStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invalid extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait Invalid extends StObject {
     *
     * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#styling-the-individual-card-elements|Styling the invididual card elements}
     */
-  var invalid: js.UndefOr[CommonElementStyle] = js.native
+  var invalid: js.UndefOr[CommonElementStyle] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding}
     */
-  var padding: js.UndefOr[String] = js.native
+  var padding: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[Color] = js.native
+  var placeholder: js.UndefOr[Color] = js.undefined
 }
 object Invalid {
   

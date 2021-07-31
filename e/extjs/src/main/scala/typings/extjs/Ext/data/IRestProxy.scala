@@ -3,17 +3,17 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.data.proxy.IAjax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IRestProxy extends IAjax {
+trait IRestProxy
+  extends StObject
+     with IAjax {
   
   /** [Config Option] (Boolean) */
-  var appendId: js.UndefOr[Boolean] = js.native
+  var appendId: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
 }
 object IRestProxy {
   

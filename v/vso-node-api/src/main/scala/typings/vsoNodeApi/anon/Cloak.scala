@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cloak extends StObject {
   
-  var cloak: scala.Double = js.native
+  var cloak: scala.Double
   
-  var map: scala.Double = js.native
+  var map: scala.Double
 }
 object Cloak {
   

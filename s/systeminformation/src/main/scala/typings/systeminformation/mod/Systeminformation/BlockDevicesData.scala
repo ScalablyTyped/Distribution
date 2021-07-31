@@ -2,37 +2,35 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockDevicesData extends StObject {
   
-  var fstype: String = js.native
+  var fstype: String
   
-  var identifier: String = js.native
+  var identifier: String
   
-  var label: String = js.native
+  var label: String
   
-  var model: String = js.native
+  var model: String
   
-  var mount: String = js.native
+  var mount: String
   
-  var name: String = js.native
+  var name: String
   
-  var physical: String = js.native
+  var physical: String
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var removable: Boolean = js.native
+  var removable: Boolean
   
-  var serial: String = js.native
+  var serial: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object BlockDevicesData {
   

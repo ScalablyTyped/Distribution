@@ -5,69 +5,67 @@ import typings.wegameApi.anon.Width
 import typings.wegameApi.wx.types.AdStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * banner 广告组件。banner 广告组件是一个原生组件，层级比上屏 Canvas 高，会覆盖在上屏 Canvas 上。banner 广告组件默认是隐藏的，需要调用 BannerAd.show() 将其显示。banner 广告会根据开发者设置的宽度进行等比缩放，缩放后的尺寸将通过 BannerAd.onResize() 事件中提供。
   */
-@js.native
 trait BannerAd extends StObject {
   
   /**
     * 广告单元 id
     */
-  var adUnitId: String = js.native
+  var adUnitId: String
   
   /**
     * 销毁 banner 广告
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * 隐藏 banner 广告
     */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /**
     * 取消监听banner 广告错误事件
     */
-  def offError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
+  def offError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit
   
   /**
     * 取消监听banner 广告加载事件
     */
-  def offLoad(callback: js.Function0[Unit]): Unit = js.native
+  def offLoad(callback: js.Function0[Unit]): Unit
   
   /**
     * 取消监听隐藏 banner 广告缩放
     */
-  def offResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
+  def offResize(callback: js.Function1[/* res */ Width, Unit]): Unit
   
   /**
     * 监听banner 广告错误事件
     */
-  def onError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
+  def onError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit
   
   /**
     * 监听banner 广告加载事件
     */
-  def onLoad(callback: js.Function0[Unit]): Unit = js.native
+  def onLoad(callback: js.Function0[Unit]): Unit
   
   /**
     * 监听 banner 广告缩放
     */
-  def onResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
+  def onResize(callback: js.Function1[/* res */ Width, Unit]): Unit
   
   /**
     * 显示 banner 广告。
     */
-  def show(): js.Promise[Unit] = js.native
+  def show(): js.Promise[Unit]
   
   /**
     * banner 广告组件的样式。style 上的属性的值仅为开发者设置的值，banner 广告会根据开发者设置的宽度进行等比缩放，缩放后的真实尺寸需要通过 BannerAd.onResize() 事件获得。
     */
-  var style: AdStyle = js.native
+  var style: AdStyle
 }
 object BannerAd {
   

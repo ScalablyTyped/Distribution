@@ -2,15 +2,23 @@ package typings.appBuilderLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timerMod {
   
+  @JSImport("app-builder-lib/out/util/timer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("app-builder-lib/out/util/timer", "DevTimer")
   @js.native
-  class DevTimer protected () extends Timer {
+  class DevTimer protected ()
+    extends StObject
+       with Timer {
     def this(label: String) = this()
+    
+    /* CompleteClass */
+    override def end(): Unit = js.native
     
     def endAndGet(): String = js.native
     
@@ -19,14 +27,12 @@ object timerMod {
     var start: js.Any = js.native
   }
   
-  @JSImport("app-builder-lib/out/util/timer", "time")
-  @js.native
-  def time(label: String): Timer = js.native
+  @scala.inline
+  def time(label: String): Timer = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any]).asInstanceOf[Timer]
   
-  @js.native
   trait Timer extends StObject {
     
-    def end(): Unit = js.native
+    def end(): Unit
   }
   object Timer {
     

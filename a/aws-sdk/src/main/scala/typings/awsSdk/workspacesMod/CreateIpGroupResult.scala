@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIpGroupResult extends StObject {
   
   /**
     * The identifier of the group.
     */
-  var GroupId: js.UndefOr[IpGroupId] = js.native
+  var GroupId: js.UndefOr[IpGroupId] = js.undefined
 }
 object CreateIpGroupResult {
   

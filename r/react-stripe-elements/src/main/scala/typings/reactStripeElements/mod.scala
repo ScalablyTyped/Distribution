@@ -25,10 +25,13 @@ import typings.stripeV3.stripe.paymentRequest.StripePaymentRequest
 import typings.stripeV3.stripe.paymentRequest.StripePaymentRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-stripe-elements", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-stripe-elements", "CardCVCElement")
   @js.native
@@ -161,34 +164,32 @@ object mod {
     def this(props: StripeProviderProps, context: js.Any) = this()
   }
   
-  @JSImport("react-stripe-elements", "injectStripe")
-  @js.native
-  def injectStripe[P /* <: js.Object */](WrappedComponent: ComponentType[P with InjectedStripeProps]): ComponentType[P] = js.native
-  @JSImport("react-stripe-elements", "injectStripe")
-  @js.native
-  def injectStripe[P /* <: js.Object */](WrappedComponent: ComponentType[P with InjectedStripeProps], componentOptions: InjectOptions): ComponentType[P] = js.native
+  @scala.inline
+  def injectStripe[P /* <: js.Object */](WrappedComponent: ComponentType[P & InjectedStripeProps]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("injectStripe")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
+  @scala.inline
+  def injectStripe[P /* <: js.Object */](WrappedComponent: ComponentType[P & InjectedStripeProps], componentOptions: InjectOptions): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("injectStripe")(WrappedComponent.asInstanceOf[js.Any], componentOptions.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
   
   object ReactStripeElements {
     
     type ElementChangeResponse = typings.stripeV3.stripe.elements.ElementChangeResponse
     
-    @js.native
     trait ElementProps
-      extends typings.stripeV3.stripe.elements.ElementsOptions {
+      extends StObject
+         with typings.stripeV3.stripe.elements.ElementsOptions {
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var elementRef: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.native
+      var elementRef: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var onBlur: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.native
+      var onBlur: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.undefined
       
-      var onChange: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.native
+      var onChange: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.undefined
       
-      var onFocus: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.native
+      var onFocus: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.undefined
       
-      var onReady: js.UndefOr[js.Function1[/* el */ HTMLStripeElement, Unit]] = js.native
+      var onReady: js.UndefOr[js.Function1[/* el */ HTMLStripeElement, Unit]] = js.undefined
     }
     object ElementProps {
       
@@ -249,10 +250,9 @@ object mod {
     
     type HTMLStripeElement = Element
     
-    @js.native
     trait InjectOptions extends StObject {
       
-      var withRef: js.UndefOr[Boolean] = js.native
+      var withRef: js.UndefOr[Boolean] = js.undefined
     }
     object InjectOptions {
       
@@ -273,18 +273,17 @@ object mod {
       }
     }
     
-    @js.native
     trait InjectedStripeProps extends StObject {
       
-      var elements: typings.stripeV3.stripe.elements.Elements | Null = js.native
+      var elements: typings.stripeV3.stripe.elements.Elements | Null
       
-      var stripe: StripeProps | Null = js.native
+      var stripe: StripeProps | Null
     }
     object InjectedStripeProps {
       
       @scala.inline
       def apply(): InjectedStripeProps = {
-        val __obj = js.Dynamic.literal()
+        val __obj = js.Dynamic.literal(elements = null, stripe = null)
         __obj.asInstanceOf[InjectedStripeProps]
       }
       
@@ -305,10 +304,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait PaymentRequestButtonElementProps extends ElementProps {
+    trait PaymentRequestButtonElementProps
+      extends StObject
+         with ElementProps {
       
-      var onClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+      var onClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
     }
     object PaymentRequestButtonElementProps {
       
@@ -418,10 +418,9 @@ object mod {
           ] = js.native
     }
     
-    @js.native
     trait StripeProviderOptions extends StObject {
       
-      var stripeAccount: js.UndefOr[String] = js.native
+      var stripeAccount: js.UndefOr[String] = js.undefined
     }
     object StripeProviderOptions {
       
@@ -451,7 +450,7 @@ object mod {
       
       @scala.inline
       def apiKeyneverundefinedstrip(): typings.reactStripeElements.anon.apiKeyneverundefinedstrip = {
-        val __obj = js.Dynamic.literal()
+        val __obj = js.Dynamic.literal(stripe = null)
         __obj.asInstanceOf[typings.reactStripeElements.anon.apiKeyneverundefinedstrip]
       }
       
@@ -462,27 +461,11 @@ object mod {
       }
     }
     
-    /* Inlined stripe-v3.stripe.TokenOptions & {  type :react-stripe-elements.react-stripe-elements.ReactStripeElements.TokenType | undefined} */
-    @js.native
-    trait TokenOptions extends StObject {
+    trait TokenOptions
+      extends StObject
+         with typings.stripeV3.stripe.TokenOptions {
       
-      var address_city: js.UndefOr[String] = js.native
-      
-      var address_country: js.UndefOr[String] = js.native
-      
-      var address_line1: js.UndefOr[String] = js.native
-      
-      var address_line2: js.UndefOr[String] = js.native
-      
-      var address_state: js.UndefOr[String] = js.native
-      
-      var address_zip: js.UndefOr[String] = js.native
-      
-      var currency: js.UndefOr[String] = js.native
-      
-      var name: js.UndefOr[String] = js.native
-      
-      var `type`: js.UndefOr[TokenType] = js.native
+      var `type`: js.UndefOr[TokenType] = js.undefined
     }
     object TokenOptions {
       
@@ -494,54 +477,6 @@ object mod {
       
       @scala.inline
       implicit class TokenOptionsMutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
-        
-        @scala.inline
-        def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setAddress_cityUndefined: Self = StObject.set(x, "address_city", js.undefined)
-        
-        @scala.inline
-        def setAddress_country(value: String): Self = StObject.set(x, "address_country", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setAddress_countryUndefined: Self = StObject.set(x, "address_country", js.undefined)
-        
-        @scala.inline
-        def setAddress_line1(value: String): Self = StObject.set(x, "address_line1", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setAddress_line1Undefined: Self = StObject.set(x, "address_line1", js.undefined)
-        
-        @scala.inline
-        def setAddress_line2(value: String): Self = StObject.set(x, "address_line2", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setAddress_line2Undefined: Self = StObject.set(x, "address_line2", js.undefined)
-        
-        @scala.inline
-        def setAddress_state(value: String): Self = StObject.set(x, "address_state", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setAddress_stateUndefined: Self = StObject.set(x, "address_state", js.undefined)
-        
-        @scala.inline
-        def setAddress_zip(value: String): Self = StObject.set(x, "address_zip", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setAddress_zipUndefined: Self = StObject.set(x, "address_zip", js.undefined)
-        
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
-        
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
         @scala.inline
         def setType(value: TokenType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

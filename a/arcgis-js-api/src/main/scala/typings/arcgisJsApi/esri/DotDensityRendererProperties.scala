@@ -2,74 +2,74 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DotDensityRendererProperties extends RendererProperties {
+trait DotDensityRendererProperties
+  extends StObject
+     with RendererProperties {
   
   /**
     * Defines the variable(s) used to visualize density.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes)
     */
-  var attributes: js.UndefOr[js.Array[AttributeColorInfoProperties]] = js.native
+  var attributes: js.UndefOr[js.Array[AttributeColorInfoProperties]] = js.undefined
   
   /**
     * The color used to shade the polygon fill behind the dots.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#backgroundColor)
     */
-  var backgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var backgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * Only applicable when two or more [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes) are specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotBlendingEnabled)
     */
-  var dotBlendingEnabled: js.UndefOr[Boolean] = js.native
+  var dotBlendingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the initial dot value used for visualizing density.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotValue)
     */
-  var dotValue: js.UndefOr[Double] = js.native
+  var dotValue: js.UndefOr[Double] = js.undefined
   
   /**
     * An object providing options for configuring the renderer in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#legendOptions)
     */
-  var legendOptions: js.UndefOr[DotDensityRendererLegendOptions] = js.native
+  var legendOptions: js.UndefOr[DotDensityRendererLegendOptions] = js.undefined
   
   /**
     * The outline of the polygon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#outline)
     */
-  var outline: js.UndefOr[SimpleLineSymbolProperties] = js.native
+  var outline: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
     * When defined, the renderer will recalculate the dot value linearly based on the change in the view's scale using the [calculateDotValue()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#calculateDotValue) method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale)
     */
-  var referenceScale: js.UndefOr[Double] = js.native
+  var referenceScale: js.UndefOr[Double] = js.undefined
   
   /**
     * When set to a consistent value, dot placements will be preserved for the same scale given all parameters are the same in the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#seed)
     */
-  var seed: js.UndefOr[Double] = js.native
+  var seed: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of [Size Visual Variable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) objects.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#visualVariables)
     */
-  var visualVariables: js.UndefOr[js.Array[VisualVariableProperties]] = js.native
+  var visualVariables: js.UndefOr[js.Array[VisualVariableProperties]] = js.undefined
 }
 object DotDensityRendererProperties {
   

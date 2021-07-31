@@ -2,16 +2,14 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRoutersPreviewResponse extends StObject {
   
   /**
     * Preview of given router.
     */
-  var resource: js.UndefOr[SchemaRouter] = js.native
+  var resource: js.UndefOr[SchemaRouter] = js.undefined
 }
 object SchemaRoutersPreviewResponse {
   

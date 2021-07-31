@@ -2,10 +2,13 @@ package typings.safeTimers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("safe-timers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("safe-timers", "Interval")
   @js.native
@@ -27,39 +30,34 @@ object mod {
     def clear(): Unit = js.native
   }
   
-  @JSImport("safe-timers", "clearInterval")
-  @js.native
-  def clearInterval(interval: Interval): Unit = js.native
+  @scala.inline
+  def clearInterval(interval: Interval): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("safe-timers", "clearTimeout")
-  @js.native
-  def clearTimeout(timeout: Timeout): Unit = js.native
+  @scala.inline
+  def clearTimeout(timeout: Timeout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timeout.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("safe-timers", "maxInterval")
   @js.native
   val maxInterval: Double = js.native
   
-  @JSImport("safe-timers", "setInterval")
-  @js.native
-  def setInterval[T /* <: js.Array[_] */](
+  @scala.inline
+  def setInterval[T /* <: js.Array[js.Any] */](
     callback: js.Function1[/* args */ T, Unit],
     interval: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
-  ): Interval = js.native
+  ): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(callback.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Interval]
   
-  @JSImport("safe-timers", "setTimeout")
-  @js.native
-  def setTimeout[T /* <: js.Array[_] */](
+  @scala.inline
+  def setTimeout[T /* <: js.Array[js.Any] */](
     callback: js.Function1[/* args */ T, Unit],
     interval: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
-  ): Timeout = js.native
+  ): Timeout = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Timeout]
   
-  @JSImport("safe-timers", "setTimeoutAt")
-  @js.native
-  def setTimeoutAt[T /* <: js.Array[_] */](
+  @scala.inline
+  def setTimeoutAt[T /* <: js.Array[js.Any] */](
     callback: js.Function1[/* args */ T, Unit],
     timestamp: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
-  ): Timeout = js.native
+  ): Timeout = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeoutAt")(callback.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Timeout]
 }

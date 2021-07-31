@@ -2,15 +2,19 @@ package typings.winrtUwp.global.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the information about access to a device. */
 @JSGlobal("Windows.Devices.Enumeration.DeviceAccessInformation")
 @js.native
 abstract class DeviceAccessInformation ()
-  extends typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation
+  extends StObject
+     with typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation
 object DeviceAccessInformation {
+  
+  @JSGlobal("Windows.Devices.Enumeration.DeviceAccessInformation")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Initializes a DeviceAccessInformation object based on a given DeviceClass .
@@ -18,9 +22,8 @@ object DeviceAccessInformation {
     * @return The DeviceAccessInformation object for the given DeviceClass .
     */
   /* static member */
-  @JSGlobal("Windows.Devices.Enumeration.DeviceAccessInformation.createFromDeviceClass")
-  @js.native
-  def createFromDeviceClass(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = js.native
+  @scala.inline
+  def createFromDeviceClass(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromDeviceClass")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation]
   
   /**
     * Initializes a DeviceAccessInformation object based on a device class id.
@@ -28,9 +31,8 @@ object DeviceAccessInformation {
     * @return The DeviceAccessInformation object for the given device class id.
     */
   /* static member */
-  @JSGlobal("Windows.Devices.Enumeration.DeviceAccessInformation.createFromDeviceClassId")
-  @js.native
-  def createFromDeviceClassId(deviceClassId: String): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = js.native
+  @scala.inline
+  def createFromDeviceClassId(deviceClassId: String): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromDeviceClassId")(deviceClassId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation]
   
   /**
     * Initializes a DeviceAccessInformation object based on a device id.
@@ -38,7 +40,6 @@ object DeviceAccessInformation {
     * @return The DeviceAccessInformation object for the given device id.
     */
   /* static member */
-  @JSGlobal("Windows.Devices.Enumeration.DeviceAccessInformation.createFromId")
-  @js.native
-  def createFromId(deviceId: String): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = js.native
+  @scala.inline
+  def createFromId(deviceId: String): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation]
 }

@@ -2,34 +2,36 @@ package typings.jwkToPem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jwk-to-pem", JSImport.Namespace)
-  @js.native
-  def apply(jwk: JWK): String = js.native
-  @JSImport("jwk-to-pem", JSImport.Namespace)
-  @js.native
-  def apply(jwk: JWK, opts: Options): String = js.native
+  @scala.inline
+  def apply(jwk: JWK): String = ^.asInstanceOf[js.Dynamic].apply(jwk.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(jwk: JWK, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(jwk.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("jwk-to-pem", JSImport.Namespace)
   @js.native
-  trait EC extends JWK {
+  val ^ : js.Any = js.native
+  
+  trait EC
+    extends StObject
+       with JWK {
     
-    var crv: String = js.native
+    var crv: String
     
-    var kty: typings.jwkToPem.jwkToPemStrings.EC = js.native
+    var kty: typings.jwkToPem.jwkToPemStrings.EC
     
-    var x: String = js.native
+    var x: String
     
-    var y: String = js.native
+    var y: String
   }
   object EC {
     
     @scala.inline
-    def apply(crv: String, kty: typings.jwkToPem.jwkToPemStrings.EC, x: String, y: String): EC = {
-      val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    def apply(crv: String, x: String, y: String): EC = {
+      val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = "EC", x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[EC]
     }
     
@@ -50,24 +52,25 @@ object mod {
     }
   }
   
-  @js.native
-  trait ECPrivate extends JWK {
+  trait ECPrivate
+    extends StObject
+       with JWK {
     
-    var crv: String = js.native
+    var crv: String
     
-    var d: String = js.native
+    var d: String
     
-    var kty: typings.jwkToPem.jwkToPemStrings.EC = js.native
+    var kty: typings.jwkToPem.jwkToPemStrings.EC
     
-    var x: js.UndefOr[String] = js.native
+    var x: js.UndefOr[String] = js.undefined
     
-    var y: js.UndefOr[String] = js.native
+    var y: js.UndefOr[String] = js.undefined
   }
   object ECPrivate {
     
     @scala.inline
-    def apply(crv: String, d: String, kty: typings.jwkToPem.jwkToPemStrings.EC): ECPrivate = {
-      val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any])
+    def apply(crv: String, d: String): ECPrivate = {
+      val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], kty = "EC")
       __obj.asInstanceOf[ECPrivate]
     }
     
@@ -106,28 +109,27 @@ object mod {
   object JWK {
     
     @scala.inline
-    def EC(crv: String, kty: typings.jwkToPem.jwkToPemStrings.EC, x: String, y: String): typings.jwkToPem.mod.EC = {
-      val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    def EC(crv: String, x: String, y: String): typings.jwkToPem.mod.EC = {
+      val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = "EC", x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jwkToPem.mod.EC]
     }
     
     @scala.inline
-    def ECPrivate(crv: String, d: String, kty: typings.jwkToPem.jwkToPemStrings.EC): typings.jwkToPem.mod.ECPrivate = {
-      val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any])
+    def ECPrivate(crv: String, d: String): typings.jwkToPem.mod.ECPrivate = {
+      val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], kty = "EC")
       __obj.asInstanceOf[typings.jwkToPem.mod.ECPrivate]
     }
     
     @scala.inline
-    def RSA(e: String, kty: typings.jwkToPem.jwkToPemStrings.RSA, n: String): typings.jwkToPem.mod.RSA = {
-      val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
+    def RSA(e: String, n: String): typings.jwkToPem.mod.RSA = {
+      val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], kty = "RSA", n = n.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jwkToPem.mod.RSA]
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var `private`: Boolean = js.native
+    var `private`: Boolean
   }
   object Options {
     
@@ -146,32 +148,33 @@ object mod {
     }
   }
   
-  @js.native
-  trait RSA extends JWK {
+  trait RSA
+    extends StObject
+       with JWK {
     
-    var d: js.UndefOr[String] = js.native
+    var d: js.UndefOr[String] = js.undefined
     
-    var dp: js.UndefOr[String] = js.native
+    var dp: js.UndefOr[String] = js.undefined
     
-    var dq: js.UndefOr[String] = js.native
+    var dq: js.UndefOr[String] = js.undefined
     
-    var e: String = js.native
+    var e: String
     
-    var kty: typings.jwkToPem.jwkToPemStrings.RSA = js.native
+    var kty: typings.jwkToPem.jwkToPemStrings.RSA
     
-    var n: String = js.native
+    var n: String
     
-    var p: js.UndefOr[String] = js.native
+    var p: js.UndefOr[String] = js.undefined
     
-    var q: js.UndefOr[String] = js.native
+    var q: js.UndefOr[String] = js.undefined
     
-    var qi: js.UndefOr[String] = js.native
+    var qi: js.UndefOr[String] = js.undefined
   }
   object RSA {
     
     @scala.inline
-    def apply(e: String, kty: typings.jwkToPem.jwkToPemStrings.RSA, n: String): RSA = {
-      val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
+    def apply(e: String, n: String): RSA = {
+      val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], kty = "RSA", n = n.asInstanceOf[js.Any])
       __obj.asInstanceOf[RSA]
     }
     

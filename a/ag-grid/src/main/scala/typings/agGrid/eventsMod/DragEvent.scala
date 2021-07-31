@@ -4,11 +4,11 @@ import typings.agGrid.columnApiMod.ColumnApi
 import typings.agGrid.gridApiMod.GridApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DragEvent extends AgGridEvent
+trait DragEvent
+  extends StObject
+     with AgGridEvent
 object DragEvent {
   
   @scala.inline

@@ -2,19 +2,17 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterSelect extends StObject {
   
-  var enterSelect: js.UndefOr[String] = js.native
+  var enterSelect: js.UndefOr[String] = js.undefined
   
-  var suggestionIsOpen: js.UndefOr[String] = js.native
+  var suggestionIsOpen: js.UndefOr[String] = js.undefined
   
-  var suggestionsCount: js.UndefOr[String] = js.native
+  var suggestionsCount: js.UndefOr[String] = js.undefined
   
-  var suggestionsExist: js.UndefOr[String] = js.native
+  var suggestionsExist: js.UndefOr[String] = js.undefined
 }
 object EnterSelect {
   

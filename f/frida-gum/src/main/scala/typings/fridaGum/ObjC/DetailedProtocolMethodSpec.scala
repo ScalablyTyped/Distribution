@@ -2,21 +2,21 @@ package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DetailedProtocolMethodSpec extends ProtocolMethodSpec {
+trait DetailedProtocolMethodSpec
+  extends StObject
+     with ProtocolMethodSpec {
   
   /**
     * Whether this method is required or optional. Default is required.
     */
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Method signature.
     */
-  var types: String = js.native
+  var types: String
 }
 object DetailedProtocolMethodSpec {
   

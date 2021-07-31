@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationalDatabaseHardware extends StObject {
   
   /**
     * The number of vCPUs for the database.
     */
-  var cpuCount: js.UndefOr[integer] = js.native
+  var cpuCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The size of the disk for the database.
     */
-  var diskSizeInGb: js.UndefOr[integer] = js.native
+  var diskSizeInGb: js.UndefOr[integer] = js.undefined
   
   /**
     * The amount of RAM in GB for the database.
     */
-  var ramSizeInGb: js.UndefOr[float] = js.native
+  var ramSizeInGb: js.UndefOr[float] = js.undefined
 }
 object RelationalDatabaseHardware {
   

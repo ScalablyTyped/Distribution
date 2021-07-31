@@ -2,13 +2,11 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevisionedDocument extends StObject {
   
-  var _rev: String = js.native
+  var _rev: String
 }
 object RevisionedDocument {
   

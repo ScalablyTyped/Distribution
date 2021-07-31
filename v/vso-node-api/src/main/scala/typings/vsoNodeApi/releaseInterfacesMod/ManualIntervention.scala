@@ -4,76 +4,74 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManualIntervention extends StObject {
   
   /**
     * Gets or sets the identity who should approve.
     */
-  var approver: IdentityRef = js.native
+  var approver: IdentityRef
   
   /**
     * Gets or sets comments for approval.
     */
-  var comments: String = js.native
+  var comments: String
   
   /**
     * Gets date on which it got created.
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * Gets the unique identifier for manual intervention.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Gets or sets instructions for approval.
     */
-  var instructions: String = js.native
+  var instructions: String
   
   /**
     * Gets date on which it got modified.
     */
-  var modifiedOn: Date = js.native
+  var modifiedOn: Date
   
   /**
     * Gets or sets the name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets releaseReference for manual intervention.
     */
-  var release: ReleaseShallowReference = js.native
+  var release: ReleaseShallowReference
   
   /**
     * Gets releaseDefinitionReference for manual intervention.
     */
-  var releaseDefinition: ReleaseDefinitionShallowReference = js.native
+  var releaseDefinition: ReleaseDefinitionShallowReference
   
   /**
     * Gets releaseEnvironmentReference for manual intervention.
     */
-  var releaseEnvironment: ReleaseEnvironmentShallowReference = js.native
+  var releaseEnvironment: ReleaseEnvironmentShallowReference
   
   /**
     * Gets or sets the status of the manual intervention.
     */
-  var status: ManualInterventionStatus = js.native
+  var status: ManualInterventionStatus
   
   /**
     * Get task instance identifier.
     */
-  var taskInstanceId: String = js.native
+  var taskInstanceId: String
   
   /**
     * Gets url to access the manual intervention.
     */
-  var url: String = js.native
+  var url: String
 }
 object ManualIntervention {
   

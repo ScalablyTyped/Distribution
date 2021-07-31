@@ -2,21 +2,19 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccessPointsResponse extends StObject {
   
   /**
     * An array of access point descriptions.
     */
-  var AccessPoints: js.UndefOr[AccessPointDescriptions] = js.native
+  var AccessPoints: js.UndefOr[AccessPointDescriptions] = js.undefined
   
   /**
     * Present if there are more access points than returned in the response. You can use the NextMarker in the subsequent request to fetch the additional descriptions.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object DescribeAccessPointsResponse {
   

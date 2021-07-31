@@ -2,7 +2,6 @@ package typings.angularCore.r3SymbolsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,11 +40,11 @@ trait Injector extends StObject {
   def get[T](token: AbstractType[T]): T = js.native
   def get[T](token: AbstractType[T], notFoundValue: T): T = js.native
   def get[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = js.native
-  def get[T](token: AbstractType[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
+  def get[T](token: AbstractType[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
   def get[T](token: InjectionToken[T]): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: T): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
-  def get[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
+  def get[T](token: InjectionToken[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
   /**
     * Retrieves an instance from the injector based on the provided token.
     * @returns The instance from the injector if defined, otherwise the `notFoundValue`.
@@ -54,5 +53,5 @@ trait Injector extends StObject {
   def get[T](token: Type[T]): T = js.native
   def get[T](token: Type[T], notFoundValue: T): T = js.native
   def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = js.native
-  def get[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
+  def get[T](token: Type[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
 }

@@ -2,17 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Sitelink
-  extends isAdGroupChild
+  extends StObject
      with AdWordsEntity
      with hasMobilePreferred
      with hasSchedules
      with hasStartAndEndDate
-     with hasStats {
+     with hasStats
+     with isAdGroupChild {
   
   def clearDescription1(): Unit = js.native
   

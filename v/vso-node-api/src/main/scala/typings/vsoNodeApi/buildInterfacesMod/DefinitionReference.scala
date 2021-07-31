@@ -4,61 +4,59 @@ import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefinitionReference extends StObject {
   
   /**
     * The date the definition was created.
     */
-  var createdDate: Date = js.native
+  var createdDate: Date
   
   /**
     * The ID of the referenced definition.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * The name of the referenced definition.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The folder path of the definition.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * A reference to the project.
     */
-  var project: TeamProjectReference = js.native
+  var project: TeamProjectReference
   
   /**
     * A value that indicates whether builds can be queued against this definition.
     */
-  var queueStatus: DefinitionQueueStatus = js.native
+  var queueStatus: DefinitionQueueStatus
   
   /**
     * The definition revision number.
     */
-  var revision: Double = js.native
+  var revision: Double
   
   /**
     * The type of the definition.
     */
-  var `type`: DefinitionType = js.native
+  var `type`: DefinitionType
   
   /**
     * The definition's URI.
     */
-  var uri: String = js.native
+  var uri: String
   
   /**
     * The REST URL of the definition.
     */
-  var url: String = js.native
+  var url: String
 }
 object DefinitionReference {
   

@@ -3,29 +3,27 @@ package typings.scrollmagic.mod
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControllerInfo extends StObject {
   
-  var container: Element | Null = js.native
+  var container: Element | Null
   
-  var isDocument: Boolean = js.native
+  var isDocument: Boolean
   
-  var scrollDirection: String = js.native
+  var scrollDirection: String
   
-  var scrollPos: Double = js.native
+  var scrollPos: Double
   
-  var size: Double = js.native
+  var size: Double
   
-  var vertical: Boolean = js.native
+  var vertical: Boolean
 }
 object ControllerInfo {
   
   @scala.inline
   def apply(isDocument: Boolean, scrollDirection: String, scrollPos: Double, size: Double, vertical: Boolean): ControllerInfo = {
-    val __obj = js.Dynamic.literal(isDocument = isDocument.asInstanceOf[js.Any], scrollDirection = scrollDirection.asInstanceOf[js.Any], scrollPos = scrollPos.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isDocument = isDocument.asInstanceOf[js.Any], scrollDirection = scrollDirection.asInstanceOf[js.Any], scrollPos = scrollPos.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any], container = null)
     __obj.asInstanceOf[ControllerInfo]
   }
   

@@ -17,44 +17,46 @@ import typings.rScript.rScriptStrings.string
 import typings.rScript.rScriptStrings.values
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(scriptPath: String): R = ^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any]).asInstanceOf[R]
+  
   @JSImport("r-script", JSImport.Namespace)
   @js.native
-  def apply(scriptPath: String): R = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var Date: js.UndefOr[ISO8601 | epoch] = js.native
+    var Date: js.UndefOr[ISO8601 | epoch] = js.undefined
     
-    var POSIXt: js.UndefOr[string | ISO8601 | epoch | mongo] = js.native
+    var POSIXt: js.UndefOr[string | ISO8601 | epoch | mongo] = js.undefined
     
-    var auto_unbox: js.UndefOr[Boolean] = js.native
+    var auto_unbox: js.UndefOr[Boolean] = js.undefined
     
-    var complex: js.UndefOr[string | list] = js.native
+    var complex: js.UndefOr[string | list] = js.undefined
     
-    var dataframe: js.UndefOr[rows | colums | values] = js.native
+    var dataframe: js.UndefOr[rows | colums | values] = js.undefined
     
-    var digits: js.UndefOr[Double] = js.native
+    var digits: js.UndefOr[Double] = js.undefined
     
-    var factor: js.UndefOr[string | integer] = js.native
+    var factor: js.UndefOr[string | integer] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var matrix: js.UndefOr[rowmajor | columnmajor] = js.native
+    var matrix: js.UndefOr[rowmajor | columnmajor] = js.undefined
     
-    var na: js.UndefOr[`null` | string] = js.native
+    var na: js.UndefOr[`null` | string] = js.undefined
     
-    var `null`: js.UndefOr[list | typings.rScript.rScriptStrings.`null`] = js.native
+    var `null`: js.UndefOr[list | typings.rScript.rScriptStrings.`null`] = js.undefined
     
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
     
-    var raw: js.UndefOr[base64 | hex | mongo] = js.native
+    var raw: js.UndefOr[base64 | hex | mongo] = js.undefined
   }
   object Options {
     

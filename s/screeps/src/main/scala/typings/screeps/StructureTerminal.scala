@@ -2,7 +2,6 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait StructureTerminal
-  extends OwnedStructure[STRUCTURE_TERMINAL]
+  extends StObject
+     with OwnedStructure[STRUCTURE_TERMINAL]
      with AnyOwnedStructure
      with AnyStoreStructure
      with ConcreteStructure[js.Any] {

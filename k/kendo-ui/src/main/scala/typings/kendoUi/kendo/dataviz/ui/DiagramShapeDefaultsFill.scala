@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramShapeDefaultsFill extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var gradient: js.UndefOr[DiagramShapeDefaultsFillGradient] = js.native
+  var gradient: js.UndefOr[DiagramShapeDefaultsFillGradient] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
 }
 object DiagramShapeDefaultsFill {
   

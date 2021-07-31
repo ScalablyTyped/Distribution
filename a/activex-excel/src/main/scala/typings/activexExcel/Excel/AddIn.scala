@@ -2,44 +2,42 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddIn extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Author: String = js.native
+  val Author: String
   
-  val CLSID: String = js.native
+  val CLSID: String
   
-  val Comments: String = js.native
+  val Comments: String
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.AddIn_typekey")
-  var ExcelDotAddIn_typekey: AddIn = js.native
+  var ExcelDotAddIn_typekey: AddIn
   
-  val FullName: String = js.native
+  val FullName: String
   
-  var Installed: Boolean = js.native
+  var Installed: Boolean
   
-  val IsOpen: Boolean = js.native
+  val IsOpen: Boolean
   
-  val Keywords: String = js.native
+  val Keywords: String
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Path: String = js.native
+  val Path: String
   
-  val Subject: String = js.native
+  val Subject: String
   
-  val Title: String = js.native
+  val Title: String
   
-  val progID: String = js.native
+  val progID: String
 }
 object AddIn {
   

@@ -10,9 +10,9 @@ JSS plugin for TC39 Observables support
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-rule-value-observable |
 | Keywords           | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js, observable, reactive, rxjs |
-| # releases         | 39 |
+| # releases         | 30 |
 | # dependents       | 1 |
-| # downloads        | 2522347 |
+| # downloads        | 2972577 |
 | # stars            | 0 |
 
 ## Links

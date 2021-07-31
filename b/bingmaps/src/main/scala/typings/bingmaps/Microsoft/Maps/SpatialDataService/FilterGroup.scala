@@ -2,11 +2,11 @@ package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FilterGroup extends IFilter
+trait FilterGroup
+  extends StObject
+     with IFilter
 object FilterGroup {
   
   @scala.inline

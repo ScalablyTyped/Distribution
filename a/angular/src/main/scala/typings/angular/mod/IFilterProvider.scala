@@ -2,7 +2,6 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see https://docs.angularjs.org/api/ng/provider/$filterProvider
   */
 @js.native
-trait IFilterProvider extends IServiceProvider {
+trait IFilterProvider
+  extends StObject
+     with IServiceProvider {
   
   /**
     * register(name);

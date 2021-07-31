@@ -2,7 +2,6 @@ package typings.mersenneTwister
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,48 +12,91 @@ object mod {
     * constructs mt with a number
     * @params seed
     */
-  class ^ () extends MersenneTwister {
+  class ^ ()
+    extends StObject
+       with MersenneTwister {
     def this(seed: js.Array[Double]) = this()
     def this(seed: Double) = this()
+    
+    /**
+      * initializes mt with a number
+      */
+    /* CompleteClass */
+    override def init_seed(seed: Double): Unit = js.native
+    
+    /**
+      * generates a random number on [0,1)-real-interval
+      */
+    /* CompleteClass */
+    override def random(): Double = js.native
+    
+    /**
+      * generates a random number on (0,1)-real-interval
+      */
+    /* CompleteClass */
+    override def random_excl(): Double = js.native
+    
+    /**
+      * generates a random number on [0,1]-real-interval
+      */
+    /* CompleteClass */
+    override def random_incl(): Double = js.native
+    
+    /**
+      * generates a random number on [0,0xffffffff]-interval
+      */
+    /* CompleteClass */
+    override def random_int(): Double = js.native
+    
+    /**
+      * generates a random number on [0,0x7fffffff]-interval
+      */
+    /* CompleteClass */
+    override def random_int31(): Double = js.native
+    
+    /**
+      * generates a random number on [0,1) with 53-bit resolution
+      */
+    /* CompleteClass */
+    override def random_long(): Double = js.native
   }
   
-  @js.native
   trait MersenneTwister extends StObject {
     
     /**
       * initializes mt with a number
       */
-    def init_seed(seed: Double): Unit = js.native
+    def init_seed(seed: Double): Unit
     
     /**
       * generates a random number on [0,1)-real-interval
       */
-    def random(): Double = js.native
+    def random(): Double
     
     /**
       * generates a random number on (0,1)-real-interval
       */
-    def random_excl(): Double = js.native
+    def random_excl(): Double
     
     /**
       * generates a random number on [0,1]-real-interval
       */
-    def random_incl(): Double = js.native
+    def random_incl(): Double
     
     /**
       * generates a random number on [0,0xffffffff]-interval
       */
-    def random_int(): Double = js.native
+    def random_int(): Double
     
     /**
       * generates a random number on [0,0x7fffffff]-interval
       */
-    def random_int31(): Double = js.native
+    def random_int31(): Double
     
     /**
       * generates a random number on [0,1) with 53-bit resolution
       */
-    def random_long(): Double = js.native
+    def random_long(): Double
   }
   object MersenneTwister {
     

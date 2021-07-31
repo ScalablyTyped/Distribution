@@ -3,25 +3,25 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.`x11-req`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait X11ChannelRequest extends ChannelRequest {
+trait X11ChannelRequest
+  extends StObject
+     with ChannelRequest {
   
-  var cookie: String = js.native
+  var cookie: String
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var recipient: Double = js.native
+  var recipient: Double
   
-  var request: `x11-req` = js.native
+  var request: `x11-req`
   
-  var screen: Double = js.native
+  var screen: Double
   
-  var single: Boolean = js.native
+  var single: Boolean
   
-  var wantReply: Boolean = js.native
+  var wantReply: Boolean
 }
 object X11ChannelRequest {
   
@@ -30,12 +30,11 @@ object X11ChannelRequest {
     cookie: String,
     protocol: String,
     recipient: Double,
-    request: `x11-req`,
     screen: Double,
     single: Boolean,
     wantReply: Boolean
   ): X11ChannelRequest = {
-    val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = "x11-req", screen = screen.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
     __obj.asInstanceOf[X11ChannelRequest]
   }
   

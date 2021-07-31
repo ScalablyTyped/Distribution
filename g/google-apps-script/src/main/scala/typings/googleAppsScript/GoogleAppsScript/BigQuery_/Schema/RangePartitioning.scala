@@ -2,15 +2,13 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangePartitioning extends StObject {
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var range: js.UndefOr[RangePartitioningRange] = js.native
+  var range: js.UndefOr[RangePartitioningRange] = js.undefined
 }
 object RangePartitioning {
   

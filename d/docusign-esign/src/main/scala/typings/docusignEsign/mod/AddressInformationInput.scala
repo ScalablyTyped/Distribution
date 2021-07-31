@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressInformationInput extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait AddressInformationInput extends StObject {
     * **Note:** If country is US (United States), `stateOrProvince` codes are validated. Otherwise, `stateOrProvince` is treated as a non-validated string used to specify a state,
     * province, or region.
     */
-  var addressInformation: js.UndefOr[/* Contains address information. */ AddressInformation] = js.native
+  var addressInformation: js.UndefOr[/* Contains address information. */ AddressInformation] = js.undefined
   
   /**
     * Specifies the display level for the recipient. Valid values are:
@@ -26,12 +24,12 @@ trait AddressInformationInput extends StObject {
     * * `Editable`
     * * `DoNotDisplay`
     */
-  var displayLevelCode: js.UndefOr[String] = js.native
+  var displayLevelCode: js.UndefOr[String] = js.undefined
   
   /**
     * A Boolean value that specifies whether the information must be returned in the response.
     */
-  var receiveInResponse: js.UndefOr[String] = js.native
+  var receiveInResponse: js.UndefOr[String] = js.undefined
 }
 object AddressInformationInput {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessedUpdateAction extends StObject {
   
   /**
     * The ID of the cache cluster
     */
-  var CacheClusterId: js.UndefOr[String] = js.native
+  var CacheClusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the replication group
     */
-  var ReplicationGroupId: js.UndefOr[String] = js.native
+  var ReplicationGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID of the service update
     */
-  var ServiceUpdateName: js.UndefOr[String] = js.native
+  var ServiceUpdateName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the update action on the Redis cluster
     */
-  var UpdateActionStatus: js.UndefOr[typings.awsSdk.elasticacheMod.UpdateActionStatus] = js.native
+  var UpdateActionStatus: js.UndefOr[typings.awsSdk.elasticacheMod.UpdateActionStatus] = js.undefined
 }
 object ProcessedUpdateAction {
   

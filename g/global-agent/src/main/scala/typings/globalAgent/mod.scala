@@ -2,30 +2,29 @@ package typings.globalAgent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("global-agent", "bootstrap")
+  @JSImport("global-agent", JSImport.Namespace)
   @js.native
-  def bootstrap(): Boolean = js.native
-  @JSImport("global-agent", "bootstrap")
-  @js.native
-  def bootstrap(configurationInput: ProxyAgentConfigurationInputType): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("global-agent", "createGlobalProxyAgent")
-  @js.native
-  def createGlobalProxyAgent(configurationInput: ProxyAgentConfigurationInputType): ProxyAgentConfigurationType = js.native
+  @scala.inline
+  def bootstrap(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")().asInstanceOf[Boolean]
+  @scala.inline
+  def bootstrap(configurationInput: ProxyAgentConfigurationInputType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(configurationInput.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def createGlobalProxyAgent(configurationInput: ProxyAgentConfigurationInputType): ProxyAgentConfigurationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobalProxyAgent")(configurationInput.asInstanceOf[js.Any]).asInstanceOf[ProxyAgentConfigurationType]
+  
   trait ProxyAgentConfigurationInputType extends StObject {
     
-    var environmentVariableNamespace: js.UndefOr[String] = js.native
+    var environmentVariableNamespace: js.UndefOr[String] = js.undefined
     
-    var forceGlobalAgent: js.UndefOr[Boolean] = js.native
+    var forceGlobalAgent: js.UndefOr[Boolean] = js.undefined
     
-    var socketConnectionTimeout: js.UndefOr[Double] = js.native
+    var socketConnectionTimeout: js.UndefOr[Double] = js.undefined
   }
   object ProxyAgentConfigurationInputType {
     
@@ -58,20 +57,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ProxyAgentConfigurationType extends StObject {
     
-    val HTTPS_PROXY: String | Null = js.native
+    val HTTPS_PROXY: String | Null
     
-    val HTTP_PROXY: String | Null = js.native
+    val HTTP_PROXY: String | Null
     
-    val NO_PROXY: String | Null = js.native
+    val NO_PROXY: String | Null
   }
   object ProxyAgentConfigurationType {
     
     @scala.inline
     def apply(): ProxyAgentConfigurationType = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(HTTPS_PROXY = null, HTTP_PROXY = null, NO_PROXY = null)
       __obj.asInstanceOf[ProxyAgentConfigurationType]
     }
     

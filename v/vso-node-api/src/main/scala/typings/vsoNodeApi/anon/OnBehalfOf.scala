@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBehalfOf extends StObject {
   
-  var onBehalfOf: scala.Double = js.native
+  var onBehalfOf: scala.Double
   
-  var revalidateApproverIdentity: scala.Double = js.native
+  var revalidateApproverIdentity: scala.Double
 }
 object OnBehalfOf {
   

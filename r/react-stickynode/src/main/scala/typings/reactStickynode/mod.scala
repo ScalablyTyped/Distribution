@@ -7,7 +7,6 @@ import typings.reactStickynode.mod.StatusCode.STATUS_ORIGINAL
 import typings.reactStickynode.mod.StatusCode.STATUS_RELEASED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -49,24 +48,30 @@ object mod {
   object StatusCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[StatusCode with Double] = js.native
+    def apply(value: Double): js.UndefOr[StatusCode & Double] = js.native
     
     @js.native
-    sealed trait STATUS_FIXED extends StatusCode
-    /* 2 */ val STATUS_FIXED: typings.reactStickynode.mod.StatusCode.STATUS_FIXED with Double = js.native
+    sealed trait STATUS_FIXED
+      extends StObject
+         with StatusCode
+    /* 2 */ val STATUS_FIXED: typings.reactStickynode.mod.StatusCode.STATUS_FIXED & Double = js.native
     
     /** The default status, located at the original position. */
     @js.native
-    sealed trait STATUS_ORIGINAL extends StatusCode
-    /* 0 */ val STATUS_ORIGINAL: typings.reactStickynode.mod.StatusCode.STATUS_ORIGINAL with Double = js.native
+    sealed trait STATUS_ORIGINAL
+      extends StObject
+         with StatusCode
+    /* 0 */ val STATUS_ORIGINAL: typings.reactStickynode.mod.StatusCode.STATUS_ORIGINAL & Double = js.native
     
     /**
       * The released status, located at somewhere on document, but not
       * default one.
       */
     @js.native
-    sealed trait STATUS_RELEASED extends StatusCode
-    /* 1 */ val STATUS_RELEASED: typings.reactStickynode.mod.StatusCode.STATUS_RELEASED with Double = js.native
+    sealed trait STATUS_RELEASED
+      extends StObject
+         with StatusCode
+    /* 1 */ val STATUS_RELEASED: typings.reactStickynode.mod.StatusCode.STATUS_RELEASED & Double = js.native
   }
   
   /* static member */
@@ -76,14 +81,13 @@ object mod {
   @scala.inline
   def defaultProps_=(x: Props): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Props extends StObject {
     
     /**
       * Class name to be applied to the element when the sticky state is
       * active ('active' by default).
       */
-    var activeClass: js.UndefOr[String] = js.native
+    var activeClass: js.UndefOr[String] = js.undefined
     
     /**
       * The offset from the top of document which release state will be
@@ -91,44 +95,44 @@ object mod {
       * selector to a target (via `querySelector()`), the offset will be the
       * bottom of the target.
       */
-    var bottomBoundary: js.UndefOr[Double | String] = js.native
+    var bottomBoundary: js.UndefOr[Double | String] = js.undefined
     
-    var children: ReactNode | (js.Function1[/* status */ Status, ReactNode]) = js.native
+    var children: ReactNode | (js.Function1[/* status */ Status, ReactNode])
     
     /**
       * Class name to be applied to the element independent of the
       * sticky state.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Enable the use of CSS3 transforms (`true` by default). */
-    var enableTransforms: js.UndefOr[Boolean] = js.native
+    var enableTransforms: js.UndefOr[Boolean] = js.undefined
     
     /** The switch to enable or disable Sticky (true by default ). */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Class name to be applied to the inner element ('' by default).
       */
-    var innerClass: js.UndefOr[String] = js.native
+    var innerClass: js.UndefOr[String] = js.undefined
     
     /** z-index of the sticky */
-    var innerZ: js.UndefOr[Double | String] = js.native
+    var innerZ: js.UndefOr[Double | String] = js.undefined
     
     /** Callback for when the sticky state changes. */
-    var onStateChange: js.UndefOr[js.Function1[/* status */ Status, Unit]] = js.native
+    var onStateChange: js.UndefOr[js.Function1[/* status */ Status, Unit]] = js.undefined
     
     /**
       * Class name to be applied to the element when the sticky state is
       * released ('released' by default).
       */
-    var releasedClass: js.UndefOr[String] = js.native
+    var releasedClass: js.UndefOr[String] = js.undefined
     
     /**
       * Callback to indicate when the sticky plugin should freeze position
       * and ignore scroll/resize events.
       */
-    var shouldFreeze: js.UndefOr[js.Function0[Boolean]] = js.native
+    var shouldFreeze: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /**
       * The offset from the top of window where the top of the element will
@@ -136,7 +140,7 @@ object mod {
       * to a target (via `querySelector()`), the offset will be the height of
       * the target.
       */
-    var top: js.UndefOr[Double | String] = js.native
+    var top: js.UndefOr[Double | String] = js.undefined
   }
   object Props {
     
@@ -226,10 +230,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Status extends StObject {
     
-    var status: StatusCode = js.native
+    var status: StatusCode
   }
   object Status {
     

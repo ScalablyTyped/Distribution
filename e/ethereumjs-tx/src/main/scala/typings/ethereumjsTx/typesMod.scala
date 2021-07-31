@@ -4,20 +4,20 @@ import typings.ethereumjsCommon.mod.default
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type BufferLike = Buffer | TransformableToBuffer | PrefixedHexString | Double
   
-  @js.native
-  trait FakeTxData extends TxData {
+  trait FakeTxData
+    extends StObject
+       with TxData {
     
     /**
       * The sender of the Tx.
       */
-    var from: js.UndefOr[BufferLike] = js.native
+    var from: js.UndefOr[BufferLike] = js.undefined
   }
   object FakeTxData {
     
@@ -40,23 +40,22 @@ object typesMod {
   
   type PrefixedHexString = String
   
-  @js.native
   trait TransactionOptions extends StObject {
     
     /**
       * The chain of the transaction, default: 'mainnet'
       */
-    var chain: js.UndefOr[Double | String] = js.native
+    var chain: js.UndefOr[Double | String] = js.undefined
     
     /**
       * A Common object defining the chain and the hardfork a transaction belongs to.
       */
-    var common: js.UndefOr[default] = js.native
+    var common: js.UndefOr[default] = js.undefined
     
     /**
       * The hardfork of the transaction, default: 'petersburg'
       */
-    var hardfork: js.UndefOr[String] = js.native
+    var hardfork: js.UndefOr[String] = js.undefined
   }
   object TransactionOptions {
     
@@ -89,10 +88,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TransformableToBuffer extends StObject {
     
-    def toBuffer(): Buffer = js.native
+    def toBuffer(): Buffer
   }
   object TransformableToBuffer {
     
@@ -110,53 +108,52 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TxData extends StObject {
     
     /**
       * This will contain the data of the message or the init of a contract
       */
-    var data: js.UndefOr[BufferLike] = js.native
+    var data: js.UndefOr[BufferLike] = js.undefined
     
     /**
       * The transaction's gas limit.
       */
-    var gasLimit: js.UndefOr[BufferLike] = js.native
+    var gasLimit: js.UndefOr[BufferLike] = js.undefined
     
     /**
       * The transaction's gas price.
       */
-    var gasPrice: js.UndefOr[BufferLike] = js.native
+    var gasPrice: js.UndefOr[BufferLike] = js.undefined
     
     /**
       * The transaction's nonce.
       */
-    var nonce: js.UndefOr[BufferLike] = js.native
+    var nonce: js.UndefOr[BufferLike] = js.undefined
     
     /**
       * EC signature parameter.
       */
-    var r: js.UndefOr[BufferLike] = js.native
+    var r: js.UndefOr[BufferLike] = js.undefined
     
     /**
       * EC signature parameter.
       */
-    var s: js.UndefOr[BufferLike] = js.native
+    var s: js.UndefOr[BufferLike] = js.undefined
     
     /**
       * The transaction's the address is sent to.
       */
-    var to: js.UndefOr[BufferLike] = js.native
+    var to: js.UndefOr[BufferLike] = js.undefined
     
     /**
       * EC recovery ID.
       */
-    var v: js.UndefOr[BufferLike] = js.native
+    var v: js.UndefOr[BufferLike] = js.undefined
     
     /**
       * The amount of Ether sent.
       */
-    var value: js.UndefOr[BufferLike] = js.native
+    var value: js.UndefOr[BufferLike] = js.undefined
   }
   object TxData {
     

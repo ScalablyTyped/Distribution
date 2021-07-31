@@ -2,21 +2,20 @@ package typings.locutus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayKeyExistsMod {
   
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(key: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(key: js.Any, search: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], search.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(key: Unit, search: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], search.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   @JSImport("locutus/php/array/array_key_exists", JSImport.Namespace)
   @js.native
-  def apply(): js.Any = js.native
-  @JSImport("locutus/php/array/array_key_exists", JSImport.Namespace)
-  @js.native
-  def apply(key: js.UndefOr[scala.Nothing], search: js.Any): js.Any = js.native
-  @JSImport("locutus/php/array/array_key_exists", JSImport.Namespace)
-  @js.native
-  def apply(key: js.Any): js.Any = js.native
-  @JSImport("locutus/php/array/array_key_exists", JSImport.Namespace)
-  @js.native
-  def apply(key: js.Any, search: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
 }

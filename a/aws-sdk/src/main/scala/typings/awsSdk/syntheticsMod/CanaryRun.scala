@@ -2,36 +2,34 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanaryRun extends StObject {
   
   /**
     * The location where the canary stored artifacts from the run. Artifacts include the log file, screenshots, and HAR files.
     */
-  var ArtifactS3Location: js.UndefOr[String] = js.native
+  var ArtifactS3Location: js.UndefOr[String] = js.undefined
   
   /**
     * A unique ID that identifies this canary run.
     */
-  var Id: js.UndefOr[UUID] = js.native
+  var Id: js.UndefOr[UUID] = js.undefined
   
   /**
     * The name of the canary.
     */
-  var Name: js.UndefOr[CanaryName] = js.native
+  var Name: js.UndefOr[CanaryName] = js.undefined
   
   /**
     * The status of this run.
     */
-  var Status: js.UndefOr[CanaryRunStatus] = js.native
+  var Status: js.UndefOr[CanaryRunStatus] = js.undefined
   
   /**
     * A structure that contains the start and end times of this run.
     */
-  var Timeline: js.UndefOr[CanaryRunTimeline] = js.native
+  var Timeline: js.UndefOr[CanaryRunTimeline] = js.undefined
 }
 object CanaryRun {
   

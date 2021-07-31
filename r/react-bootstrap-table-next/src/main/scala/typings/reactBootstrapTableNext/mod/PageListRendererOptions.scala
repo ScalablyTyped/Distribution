@@ -3,21 +3,19 @@ package typings.reactBootstrapTableNext.mod
 import typings.reactBootstrapTableNext.anon.Active
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageListRendererOptions extends StObject {
   
   /**
     * call it when you need to change page
     */
-  def onPageChange(page: Double, sizePerPage: Double): Unit = js.native
+  def onPageChange(page: Double, sizePerPage: Double): Unit
   
   /**
     * current page
     */
-  var pages: js.Array[Active] = js.native
+  var pages: js.Array[Active]
 }
 object PageListRendererOptions {
   

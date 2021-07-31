@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportExportConfig extends StObject {
   
   /**
     *  The export configuration type. Valid values are:     S3: The report results are exported to an S3 bucket.     NO_EXPORT: The report results are not exported.   
     */
-  var exportConfigType: js.UndefOr[ReportExportConfigType] = js.native
+  var exportConfigType: js.UndefOr[ReportExportConfigType] = js.undefined
   
   /**
     *  A S3ReportExportConfig object that contains information about the S3 bucket where the run of a report is exported. 
     */
-  var s3Destination: js.UndefOr[S3ReportExportConfig] = js.native
+  var s3Destination: js.UndefOr[S3ReportExportConfig] = js.undefined
 }
 object ReportExportConfig {
   

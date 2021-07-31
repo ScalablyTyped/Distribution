@@ -2,14 +2,12 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'filterRemoteData'> */
-@js.native
 trait PickImplfilterRemoteData extends StObject {
   
-  var filterRemoteData: Boolean = js.native
+  var filterRemoteData: Boolean
 }
 object PickImplfilterRemoteData {
   

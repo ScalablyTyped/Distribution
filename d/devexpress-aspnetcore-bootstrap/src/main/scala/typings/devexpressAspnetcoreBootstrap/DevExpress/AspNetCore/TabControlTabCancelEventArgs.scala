@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabControlTabCancelEventArgs extends ProcessingModeCancelEventArgs {
+trait TabControlTabCancelEventArgs
+  extends StObject
+     with ProcessingModeCancelEventArgs {
   
-  var reloadContentOnCallback: Boolean = js.native
+  var reloadContentOnCallback: Boolean
   
-  val tab: BootstrapTab = js.native
+  val tab: BootstrapTab
 }
 object TabControlTabCancelEventArgs {
   

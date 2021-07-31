@@ -2,32 +2,27 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
 trait Conditional
-  extends Expression
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with Expression {
   
-  var falseExpression: ASTNode = js.native
+  var falseExpression: ASTNode
   
-  var trueExpression: ASTNode = js.native
+  var trueExpression: ASTNode
   
   @JSName("type")
-  var type_Conditional: typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional = js.native
+  var type_Conditional: typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional
 }
 object Conditional {
   
   @scala.inline
-  def apply(
-    falseExpression: ASTNode,
-    trueExpression: ASTNode,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional
-  ): Conditional = {
+  def apply(falseExpression: ASTNode, trueExpression: ASTNode): Conditional = {
     val __obj = js.Dynamic.literal(falseExpression = falseExpression.asInstanceOf[js.Any], trueExpression = trueExpression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Conditional")
     __obj.asInstanceOf[Conditional]
   }
   

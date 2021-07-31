@@ -2,19 +2,17 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the CrosshairElement class.
   */
-@js.native
 trait ASPxClientCrosshairElement extends StObject {
   
   /**
     * Gets a series that a crosshair element hovers over when implementing a custom draw.
     */
-  var Series: ASPxClientSeries = js.native
+  var Series: ASPxClientSeries
 }
 object ASPxClientCrosshairElement {
   

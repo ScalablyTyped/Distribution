@@ -2,23 +2,21 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IShadow extends StObject {
   
-  var blur: Double = js.native
+  var blur: Double
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var color: String = js.native
+  var color: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var width: Double = js.native
+  var width: Double
 }
 object IShadow {
   

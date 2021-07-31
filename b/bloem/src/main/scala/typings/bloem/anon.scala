@@ -2,19 +2,17 @@ package typings.bloem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Initialcapacity extends StObject {
     
-    var initial_capacity: js.UndefOr[Double] = js.native
+    var initial_capacity: js.UndefOr[Double] = js.undefined
     
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
     
-    var scaling: js.UndefOr[Double] = js.native
+    var scaling: js.UndefOr[Double] = js.undefined
   }
   object Initialcapacity {
     

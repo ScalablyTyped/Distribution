@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentStateChange extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the attachment.
     */
-  var attachmentArn: String = js.native
+  var attachmentArn: String
   
   /**
     * The status of the attachment.
     */
-  var status: String = js.native
+  var status: String
 }
 object AttachmentStateChange {
   

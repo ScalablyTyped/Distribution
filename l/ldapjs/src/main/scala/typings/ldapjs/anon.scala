@@ -6,21 +6,19 @@ import typings.ldapjs.mod.Control
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Any extends StObject {
     
-    var any: js.UndefOr[js.Array[String]] = js.native
+    var any: js.UndefOr[js.Array[String]] = js.undefined
     
-    var attribute: String = js.native
+    var attribute: String
     
-    var `final`: js.UndefOr[String] = js.native
+    var `final`: js.UndefOr[String] = js.undefined
     
-    var initial: String = js.native
+    var initial: String
   }
   object Any {
     
@@ -56,12 +54,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Attribute extends StObject {
     
-    var attribute: String = js.native
+    var attribute: String
     
-    var value: String | Buffer = js.native
+    var value: String | Buffer
   }
   object Attribute {
     
@@ -82,10 +79,9 @@ object anon {
     }
   }
   
-  @js.native
   trait AttributeString extends StObject {
     
-    var attribute: String = js.native
+    var attribute: String
   }
   object AttributeString {
     
@@ -103,16 +99,15 @@ object anon {
     }
   }
   
-  @js.native
   trait DnAttributes extends StObject {
     
-    var dnAttributes: js.UndefOr[Boolean] = js.native
+    var dnAttributes: js.UndefOr[Boolean] = js.undefined
     
-    var matchType: js.UndefOr[String] = js.native
+    var matchType: js.UndefOr[String] = js.undefined
     
-    var rule: js.UndefOr[String] = js.native
+    var rule: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object DnAttributes {
     
@@ -148,14 +143,13 @@ object anon {
     }
   }
   
-  @js.native
   trait FailAfter extends StObject {
     
-    var failAfter: js.UndefOr[Double] = js.native
+    var failAfter: js.UndefOr[Double] = js.undefined
     
-    var initialDelay: js.UndefOr[Double] = js.native
+    var initialDelay: js.UndefOr[Double] = js.undefined
     
-    var maxDelay: js.UndefOr[Double] = js.native
+    var maxDelay: js.UndefOr[Double] = js.undefined
   }
   object FailAfter {
     
@@ -188,10 +182,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Filter extends StObject {
     
-    var filter: typings.ldapjs.mod.Filter = js.native
+    var filter: typings.ldapjs.mod.Filter
   }
   object Filter {
     
@@ -209,10 +202,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Filters extends StObject {
     
-    var filters: js.Array[typings.ldapjs.mod.Filter] = js.native
+    var filters: js.Array[typings.ldapjs.mod.Filter]
   }
   object Filters {
     
@@ -234,19 +226,19 @@ object anon {
   }
   
   /* Inlined ldapjs.ldapjs.LDAPMessageJsonObject & {  objectName :string,   attributes :std.Array<ldapjs.ldapjs.AttributeJson>} */
-  @js.native
   trait LDAPMessageJsonObjectobje
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
-    var attributes: js.Array[AttributeJson] = js.native
+    var attributes: js.Array[AttributeJson]
     
-    var controls: js.Array[Control] = js.native
+    var controls: js.Array[Control]
     
-    var messageID: Double = js.native
+    var messageID: Double
     
-    var objectName: String = js.native
+    var objectName: String
     
-    var protocolOp: js.UndefOr[String] = js.native
+    var protocolOp: js.UndefOr[String] = js.undefined
   }
   object LDAPMessageJsonObjectobje {
     
@@ -290,12 +282,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PagePause extends StObject {
     
-    var pagePause: js.UndefOr[Boolean] = js.native
+    var pagePause: js.UndefOr[Boolean] = js.undefined
     
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
   }
   object PagePause {
     
@@ -322,12 +313,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var attribute: String = js.native
+    var attribute: String
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     

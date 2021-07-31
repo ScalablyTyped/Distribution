@@ -2,15 +2,13 @@ package typings.asynciterator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoStart extends StObject {
     
-    var autoStart: js.UndefOr[Boolean] = js.native
+    var autoStart: js.UndefOr[Boolean] = js.undefined
   }
   object AutoStart {
     
@@ -31,14 +29,13 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object End {
     
@@ -71,12 +68,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxBufferSize extends StObject {
     
-    var autoStart: js.UndefOr[Boolean] = js.native
+    var autoStart: js.UndefOr[Boolean] = js.undefined
     
-    var maxBufferSize: js.UndefOr[Double] = js.native
+    var maxBufferSize: js.UndefOr[Double] = js.undefined
   }
   object MaxBufferSize {
     

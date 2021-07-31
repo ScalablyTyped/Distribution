@@ -13,39 +13,39 @@ import typings.activexLibreoffice.com_.sun.star.util.Date
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of an annotation text field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait Annotation extends TextField_ {
+trait Annotation
+  extends StObject
+     with TextField_ {
   
   /** contains the name of the author of the annotation. */
-  var Author: String = js.native
+  var Author: String
   
   /** contains the annotation's content */
-  var Content: String = js.native
+  var Content: String
   
   /** contains the creation date. */
-  var Date: typings.activexLibreoffice.com_.sun.star.util.Date = js.native
+  var Date: typings.activexLibreoffice.com_.sun.star.util.Date
   
   /** contains the creation date. */
-  var DateTimeValue: typings.activexLibreoffice.com_.sun.star.util.DateTime = js.native
+  var DateTimeValue: typings.activexLibreoffice.com_.sun.star.util.DateTime
   
   /**
     * contains the initials of the author of the annotation.
     * @since LibreOffice 4.0
     */
-  var Initials: String = js.native
+  var Initials: String
   
   /**
     * contains the name of the annotation.
     * @since LibreOffice 4.0
     */
-  var Name: String = js.native
+  var Name: String
 }
 object Annotation {
   

@@ -2,12 +2,14 @@ package typings.bindings
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(mod: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(mod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   @JSImport("bindings", JSImport.Namespace)
   @js.native
-  def apply(mod: String): js.Any = js.native
+  val ^ : js.Any = js.native
 }

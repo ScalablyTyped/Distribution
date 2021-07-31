@@ -4,13 +4,11 @@ import typings.chance.chanceNumbers.`4`
 import typings.chance.chanceNumbers.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Version extends StObject {
   
-  var version: `4` | `5` = js.native
+  var version: `4` | `5`
 }
 object Version {
   

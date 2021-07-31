@@ -2,27 +2,25 @@ package typings.bootstrapToggle
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapToggleOptions extends StObject {
   
-  var height: js.UndefOr[Double | String | Null] = js.native
+  var height: js.UndefOr[Double | String | Null] = js.undefined
   
-  var off: js.UndefOr[String] = js.native
+  var off: js.UndefOr[String] = js.undefined
   
-  var offstyle: js.UndefOr[String] = js.native
+  var offstyle: js.UndefOr[String] = js.undefined
   
-  var on: js.UndefOr[String] = js.native
+  var on: js.UndefOr[String] = js.undefined
   
-  var onstyle: js.UndefOr[String] = js.native
+  var onstyle: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double | String | Null] = js.native
+  var width: js.UndefOr[Double | String | Null] = js.undefined
 }
 object BootstrapToggleOptions {
   

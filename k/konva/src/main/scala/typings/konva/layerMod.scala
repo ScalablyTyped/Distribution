@@ -16,7 +16,6 @@ import typings.konva.typesMod.GetSet
 import typings.konva.typesMod.Vector2d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerMod {
@@ -96,12 +95,13 @@ object layerMod {
     def toggleHitCanvas(): Unit = js.native
   }
   
-  @js.native
-  trait LayerConfig extends ContainerConfig {
+  trait LayerConfig
+    extends StObject
+       with ContainerConfig {
     
-    var hitGraphEnabled: js.UndefOr[Boolean] = js.native
+    var hitGraphEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var imageSmoothingEnabled: js.UndefOr[Boolean] = js.native
+    var imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object LayerConfig {
     

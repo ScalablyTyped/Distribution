@@ -2,13 +2,13 @@ package typings.reactNativeCalendars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomMarking extends Marking {
+trait CustomMarking
+  extends StObject
+     with Marking {
   
-  var customStyles: MarkedDateCustomStyles = js.native
+  var customStyles: MarkedDateCustomStyles
 }
 object CustomMarking {
   

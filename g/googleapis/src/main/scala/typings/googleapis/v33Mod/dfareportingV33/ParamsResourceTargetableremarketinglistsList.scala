@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTargetableremarketinglistsList extends StandardParameters {
+trait ParamsResourceTargetableremarketinglistsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Select only active or only inactive targetable remarketing lists.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only targetable remarketing lists targetable by these advertisers.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Allows searching for objects by name or ID. Wildcards (*) are allowed.
@@ -41,27 +41,27 @@ trait ParamsResourceTargetableremarketinglistsList extends StandardParameters {
     * search string of "remarketing list" will match objects with name "my
     * remarketing list", "remarketing list 2015", or simply "remarketing list".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the nextPageToken from the previous result page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Field by which to sort the list.
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * Order of sorted results.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTargetableremarketinglistsList {
   

@@ -2,45 +2,44 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMPictureStroke
-  extends CIMStroke
+  extends StObject
+     with CIMStroke
      with CIMSymbolLayerType {
   
   /**
     * The color substitutions for the picture.
     */
-  var colorSubstitutions: js.UndefOr[js.Array[CIMColorSubstitution]] = js.native
+  var colorSubstitutions: js.UndefOr[js.Array[CIMColorSubstitution]] = js.undefined
   
   /**
     * How the image is resampled.
     */
   var textureFilter: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextureFilter * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The color that is applied as a tint to the image. The color is applied to the whole image. When the tint is set to white the image appears with its native colors.
     */
-  var tintColor: js.UndefOr[js.Array[Double]] = js.native
+  var tintColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")
-  var type_CIMPictureStroke: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureStroke = js.native
+  var type_CIMPictureStroke: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureStroke
   
   /**
     * The image that is used in the symbol layer. Typically a base64 encoded image.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object CIMPictureStroke {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureStroke): CIMPictureStroke = {
+  def apply(): CIMPictureStroke = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMPictureStroke")
     __obj.asInstanceOf[CIMPictureStroke]
   }
   

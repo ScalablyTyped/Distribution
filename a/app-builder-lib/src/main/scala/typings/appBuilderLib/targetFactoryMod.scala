@@ -7,10 +7,13 @@ import typings.builderUtil.archMod.Arch
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object targetFactoryMod {
+  
+  @JSImport("app-builder-lib/out/targets/targetFactory", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("app-builder-lib/out/targets/targetFactory", "NoOpTarget")
   @js.native
@@ -24,20 +27,17 @@ object targetFactoryMod {
     def outDir_MNoOpTarget: String = js.native
   }
   
-  @JSImport("app-builder-lib/out/targets/targetFactory", "computeArchToTargetNamesMap")
-  @js.native
-  def computeArchToTargetNamesMap(raw: Map[Arch, js.Array[String]], platformPackager: PlatformPackager[_], platform: Platform): Map[Arch, js.Array[String]] = js.native
+  @scala.inline
+  def computeArchToTargetNamesMap(raw: Map[Arch, js.Array[String]], platformPackager: PlatformPackager[js.Any], platform: Platform): Map[Arch, js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeArchToTargetNamesMap")(raw.asInstanceOf[js.Any], platformPackager.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Map[Arch, js.Array[String]]]
   
-  @JSImport("app-builder-lib/out/targets/targetFactory", "createCommonTarget")
-  @js.native
-  def createCommonTarget(target: String, outDir: String, packager: PlatformPackager[_]): Target = js.native
+  @scala.inline
+  def createCommonTarget(target: String, outDir: String, packager: PlatformPackager[js.Any]): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("createCommonTarget")(target.asInstanceOf[js.Any], outDir.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[Target]
   
-  @JSImport("app-builder-lib/out/targets/targetFactory", "createTargets")
-  @js.native
+  @scala.inline
   def createTargets(
     nameToTarget: Map[String, Target],
     rawList: js.Array[String],
     outDir: String,
-    packager: PlatformPackager[_]
-  ): js.Array[Target] = js.native
+    packager: PlatformPackager[js.Any]
+  ): js.Array[Target] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(nameToTarget.asInstanceOf[js.Any], rawList.asInstanceOf[js.Any], outDir.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Array[Target]]
 }

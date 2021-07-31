@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to provide the details about a call that was just blocked. */
-@js.native
 trait PhoneCallBlockedTriggerDetails extends StObject {
   
   /** Gets the reason why a phone call was blocked. */
-  var callBlockedReason: PhoneCallBlockedReason = js.native
+  var callBlockedReason: PhoneCallBlockedReason
   
   /** Gets the ID of the phone call that was just blocked. */
-  var lineId: String = js.native
+  var lineId: String
   
   /** Gets the phone number of the blocked call. */
-  var phoneNumber: String = js.native
+  var phoneNumber: String
 }
 object PhoneCallBlockedTriggerDetails {
   

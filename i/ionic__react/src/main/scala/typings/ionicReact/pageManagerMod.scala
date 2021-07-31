@@ -10,7 +10,6 @@ import typings.react.mod.RefObject
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pageManagerMod {
@@ -49,14 +48,13 @@ object pageManagerMod {
     def ionViewWillLeaveHandler(): Unit = js.native
   }
   
-  @js.native
   trait PageManagerProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var forwardedRef: js.UndefOr[RefObject[HTMLDivElement]] = js.native
+    var forwardedRef: js.UndefOr[RefObject[HTMLDivElement]] = js.undefined
     
-    var routeInfo: js.UndefOr[RouteInfo[_]] = js.native
+    var routeInfo: js.UndefOr[RouteInfo[js.Any]] = js.undefined
   }
   object PageManagerProps {
     
@@ -82,7 +80,7 @@ object pageManagerMod {
       def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
       
       @scala.inline
-      def setRouteInfo(value: RouteInfo[_]): Self = StObject.set(x, "routeInfo", value.asInstanceOf[js.Any])
+      def setRouteInfo(value: RouteInfo[js.Any]): Self = StObject.set(x, "routeInfo", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRouteInfoUndefined: Self = StObject.set(x, "routeInfo", js.undefined)

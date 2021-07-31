@@ -6,58 +6,57 @@ import typings.wordpressBlocks.mod.Block
 import typings.wordpressBlocks.mod.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serializerMod {
   
-  @JSImport("@wordpress/blocks/api/serializer", "getBlockContent")
+  @JSImport("@wordpress/blocks/api/serializer", JSImport.Namespace)
   @js.native
-  def getBlockContent(block: BlockInstance[StringDictionary[_]]): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/blocks/api/serializer", "getBlockDefaultClassName")
-  @js.native
-  def getBlockDefaultClassName(blockName: String): String = js.native
+  @scala.inline
+  def getBlockContent(block: BlockInstance[StringDictionary[js.Any]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockContent")(block.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/blocks/api/serializer", "getBlockMenuDefaultClassName")
-  @js.native
-  def getBlockMenuDefaultClassName(blockName: String): String = js.native
+  @scala.inline
+  def getBlockDefaultClassName(blockName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockDefaultClassName")(blockName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/blocks/api/serializer", "getSaveContent")
-  @js.native
-  def getSaveContent[T](blockTypeOrName: String, attributes: T): String = js.native
-  @JSImport("@wordpress/blocks/api/serializer", "getSaveContent")
-  @js.native
-  def getSaveContent[T](blockTypeOrName: String, attributes: T, innerBlocks: js.Array[BlockInstance[StringDictionary[_]]]): String = js.native
-  @JSImport("@wordpress/blocks/api/serializer", "getSaveContent")
-  @js.native
-  def getSaveContent[T](blockTypeOrName: Block[T], attributes: T): String = js.native
-  @JSImport("@wordpress/blocks/api/serializer", "getSaveContent")
-  @js.native
+  @scala.inline
+  def getBlockMenuDefaultClassName(blockName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockMenuDefaultClassName")(blockName.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def getSaveContent[T](blockTypeOrName: String, attributes: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSaveContent[T](
+    blockTypeOrName: String,
+    attributes: T,
+    innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSaveContent[T](blockTypeOrName: Block[T], attributes: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def getSaveContent[T](
     blockTypeOrName: Block[T],
     attributes: T,
-    innerBlocks: js.Array[BlockInstance[StringDictionary[_]]]
-  ): String = js.native
+    innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@wordpress/blocks/api/serializer", "getSaveElement")
-  @js.native
-  def getSaveElement[T](blockTypeOrName: String, attributes: T): ReactChild = js.native
-  @JSImport("@wordpress/blocks/api/serializer", "getSaveElement")
-  @js.native
-  def getSaveElement[T](blockTypeOrName: String, attributes: T, innerBlocks: js.Array[BlockInstance[StringDictionary[_]]]): ReactChild = js.native
-  @JSImport("@wordpress/blocks/api/serializer", "getSaveElement")
-  @js.native
-  def getSaveElement[T](blockTypeOrName: Block[T], attributes: T): ReactChild = js.native
-  @JSImport("@wordpress/blocks/api/serializer", "getSaveElement")
-  @js.native
+  @scala.inline
+  def getSaveElement[T](blockTypeOrName: String, attributes: T): ReactChild = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[ReactChild]
+  @scala.inline
+  def getSaveElement[T](
+    blockTypeOrName: String,
+    attributes: T,
+    innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]]
+  ): ReactChild = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[ReactChild]
+  @scala.inline
+  def getSaveElement[T](blockTypeOrName: Block[T], attributes: T): ReactChild = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[ReactChild]
+  @scala.inline
   def getSaveElement[T](
     blockTypeOrName: Block[T],
     attributes: T,
-    innerBlocks: js.Array[BlockInstance[StringDictionary[_]]]
-  ): ReactChild = js.native
+    innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]]
+  ): ReactChild = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[ReactChild]
   
-  @JSImport("@wordpress/blocks/api/serializer", "serialize")
-  @js.native
-  def serialize(blocks: js.Array[BlockInstance[StringDictionary[_]]]): String = js.native
+  @scala.inline
+  def serialize(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(blocks.asInstanceOf[js.Any]).asInstanceOf[String]
 }

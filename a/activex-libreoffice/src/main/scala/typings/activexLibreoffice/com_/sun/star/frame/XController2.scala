@@ -8,15 +8,15 @@ import typings.activexLibreoffice.com_.sun.star.ui.XSidebarProvider
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * extends the {@link XController} interface
   * @since OOo 3.0
   */
-@js.native
-trait XController2 extends XController {
+trait XController2
+  extends StObject
+     with XController {
   
   /**
     * denotes the "root window" of the controller.
@@ -24,7 +24,7 @@ trait XController2 extends XController {
     * If the controller is plugged into a frame, this window acts as the frame's `ComponentWindow` .
     * @see XFrame
     */
-  var ComponentWindow: XWindow = js.native
+  var ComponentWindow: XWindow
   
   /**
     * denotes the arguments used to create the instance.
@@ -32,13 +32,13 @@ trait XController2 extends XController {
     * Usually, controllers are created via {@link XModel2.createViewController()} , where the caller can pass not only a controller name, but also arguments
     * parameterizing the to-be-created instance. Those arguments used at creation time can subsequently be retrieved using the `CreationArguments` member.
     */
-  var CreationArguments: SafeArray[PropertyValue] = js.native
+  var CreationArguments: SafeArray[PropertyValue]
   
   /**
     * get the sidebar if exists
     * @since LibreOffice 5.1
     */
-  val Sidebar: XSidebarProvider = js.native
+  val Sidebar: XSidebarProvider
   
   /**
     * specifies the view name of the controller.
@@ -46,13 +46,13 @@ trait XController2 extends XController {
     * A view name is a logical name, which can be used to create views of the same type. The name is meaningful only in conjunction with {@link
     * XModel2.createViewController()}if it's passed there, a view/controller pair of the same type will be created.
     */
-  var ViewControllerName: String = js.native
+  var ViewControllerName: String
   
   /**
     * get the sidebar if exists
     * @since LibreOffice 5.1
     */
-  def getSidebar(): XSidebarProvider = js.native
+  def getSidebar(): XSidebarProvider
 }
 object XController2 {
   

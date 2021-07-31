@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [x] - The x value. If x is an array of length 2, the array will be used to populate all components.
   * @param [y] - The y value.
   */
-@js.native
 trait Vec2 extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait Vec2 extends StObject {
     * @param rhs - The vector to add to the specified vector.
     * @returns Self for chaining.
     */
-  def add(rhs: Vec2): Vec2 = js.native
+  def add(rhs: Vec2): Vec2
   
   /**
     * Adds two 2-dimensional vectors together and returns the result.
@@ -45,7 +43,7 @@ trait Vec2 extends StObject {
     * @param rhs - The second vector operand for the addition.
     * @returns Self for chaining.
     */
-  def add2(lhs: Vec2, rhs: Vec2): Vec2 = js.native
+  def add2(lhs: Vec2, rhs: Vec2): Vec2
   
   /**
     * Copied the contents of a source 2-dimensional vector to a destination 2-dimensional vector.
@@ -59,7 +57,7 @@ trait Vec2 extends StObject {
     * @param rhs - A vector to copy to the specified vector.
     * @returns Self for chaining.
     */
-  def copy(rhs: Vec2): Vec2 = js.native
+  def copy(rhs: Vec2): Vec2
   
   /**
     * Returns the distance between the two specified 2-dimensional vectors.
@@ -71,7 +69,7 @@ trait Vec2 extends StObject {
     * @param rhs - The second 2-dimensional vector to test.
     * @returns The distance between the two vectors.
     */
-  def distance(rhs: Vec2): Double = js.native
+  def distance(rhs: Vec2): Double
   
   /**
     * Returns the result of a dot product operation performed on the two specified 2-dimensional vectors.
@@ -83,7 +81,7 @@ trait Vec2 extends StObject {
     * @param rhs - The second 2-dimensional vector operand of the dot product.
     * @returns The result of the dot product operation.
     */
-  def dot(rhs: Vec2): Double = js.native
+  def dot(rhs: Vec2): Double
   
   /**
     * Reports whether two vectors are equal.
@@ -94,7 +92,7 @@ trait Vec2 extends StObject {
     * @param rhs - The vector to compare to the specified vector.
     * @returns True if the vectors are equal and false otherwise.
     */
-  def equals(rhs: Vec2): Boolean = js.native
+  def equals(rhs: Vec2): Boolean
   
   /**
     * Returns the magnitude of the specified 2-dimensional vector.
@@ -105,7 +103,7 @@ trait Vec2 extends StObject {
     console.log("The length of the vector is: " + len);
     * @returns The magnitude of the specified 2-dimensional vector.
     */
-  def length(): Double = js.native
+  def length(): Double
   
   /**
     * Returns the magnitude squared of the specified 2-dimensional vector.
@@ -116,7 +114,7 @@ trait Vec2 extends StObject {
     console.log("The length squared of the vector is: " + len);
     * @returns The magnitude of the specified 2-dimensional vector.
     */
-  def lengthSq(): Double = js.native
+  def lengthSq(): Double
   
   /**
     * Returns the result of a linear interpolation between two specified 2-dimensional vectors.
@@ -135,7 +133,7 @@ trait Vec2 extends StObject {
     a ray extrapolated from this line.
     * @returns Self for chaining.
     */
-  def lerp(lhs: Vec2, rhs: Vec2, alpha: Double): Vec2 = js.native
+  def lerp(lhs: Vec2, rhs: Vec2, alpha: Double): Vec2
   
   /**
     * Multiplies a 2-dimensional vector to another in place.
@@ -150,7 +148,7 @@ trait Vec2 extends StObject {
     * @param rhs - The 2-dimensional vector used as the second multiplicand of the operation.
     * @returns Self for chaining.
     */
-  def mul(rhs: Vec2): Vec2 = js.native
+  def mul(rhs: Vec2): Vec2
   
   /**
     * Returns the result of multiplying the specified 2-dimensional vectors together.
@@ -167,7 +165,7 @@ trait Vec2 extends StObject {
     * @param rhs - The 2-dimensional vector used as the second multiplicand of the operation.
     * @returns Self for chaining.
     */
-  def mul2(lhs: Vec2, rhs: Vec2): Vec2 = js.native
+  def mul2(lhs: Vec2, rhs: Vec2): Vec2
   
   /**
     * Returns this 2-dimensional vector converted to a unit vector in place.
@@ -181,7 +179,7 @@ trait Vec2 extends StObject {
     console.log("The result of the vector normalization is: " + v.toString());
     * @returns Self for chaining.
     */
-  def normalize(): Vec2 = js.native
+  def normalize(): Vec2
   
   /**
     * Scales each component of the specified 2-dimensional vector by the supplied
@@ -200,7 +198,7 @@ trait Vec2 extends StObject {
     * @param scalar - The value by which each vector component is multiplied.
     * @returns Self for chaining.
     */
-  def scale(scalar: Double): Vec2 = js.native
+  def scale(scalar: Double): Vec2
   
   /**
     * Sets the specified 2-dimensional vector to the supplied numerical values.
@@ -214,7 +212,7 @@ trait Vec2 extends StObject {
     * @param y - The value to set on the second component of the vector.
     * @returns Self for chaining.
     */
-  def set(x: Double, y: Double): Vec2 = js.native
+  def set(x: Double, y: Double): Vec2
   
   /**
     * Subtracts a 2-dimensional vector from another in place.
@@ -229,7 +227,7 @@ trait Vec2 extends StObject {
     * @param rhs - The vector to add to the specified vector.
     * @returns Self for chaining.
     */
-  def sub(rhs: Vec2): Vec2 = js.native
+  def sub(rhs: Vec2): Vec2
   
   /**
     * Subtracts two 2-dimensional vectors from one another and returns the result.
@@ -246,7 +244,7 @@ trait Vec2 extends StObject {
     * @param rhs - The second vector operand for the addition.
     * @returns Self for chaining.
     */
-  def sub2(lhs: Vec2, rhs: Vec2): Vec2 = js.native
+  def sub2(lhs: Vec2, rhs: Vec2): Vec2
   
   /**
     * The first element of the vector.
@@ -259,7 +257,7 @@ trait Vec2 extends StObject {
     // Set x
     vec.x = 0;
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The second element of the vector.
@@ -272,7 +270,7 @@ trait Vec2 extends StObject {
     // Set y
     vec.y = 0;
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Vec2 {
   

@@ -35,15 +35,14 @@ import typings.awsSdkClientGlacierNode.uploadArchiveExceptionsUnionMod.UploadArc
 import typings.awsSdkClientGlacierNode.uploadMultipartPartExceptionsUnionMod.UploadMultipartPartExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMissingParameterValueExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_MissingParameterValueExceptionDetails> * / any */ @js.native
-  trait MissingParameterValueException
-    extends AbortMultipartUploadExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_MissingParameterValueExceptionDetails> * / any */ trait MissingParameterValueException
+    extends StObject
+       with AbortMultipartUploadExceptionsUnion
        with AbortVaultLockExceptionsUnion
        with AddTagsToVaultExceptionsUnion
        with CompleteMultipartUploadExceptionsUnion
@@ -77,15 +76,13 @@ object typesMissingParameterValueExceptionMod {
        with UploadArchiveExceptionsUnion
        with UploadMultipartPartExceptionsUnion {
     
-    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.MissingParameterValueException = js.native
+    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.MissingParameterValueException
   }
   object MissingParameterValueException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.MissingParameterValueException
-    ): MissingParameterValueException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): MissingParameterValueException = {
+      val __obj = js.Dynamic.literal(name = "MissingParameterValueException")
       __obj.asInstanceOf[MissingParameterValueException]
     }
     
@@ -99,23 +96,22 @@ object typesMissingParameterValueExceptionMod {
     }
   }
   
-  @js.native
   trait MissingParameterValueExceptionDetails extends StObject {
     
     /**
       * <p>400 Bad Request</p>
       */
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Returned if no authentication data is found for the request.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Client.</p>
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MissingParameterValueExceptionDetails {
     

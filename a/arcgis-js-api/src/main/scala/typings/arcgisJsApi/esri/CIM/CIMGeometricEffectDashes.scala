@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectDashes
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
@@ -15,39 +14,39 @@ trait CIMGeometricEffectDashes
     */
   var controlPointEnding: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineDashEnding * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Where the pattern should end relative to the ending point of the geometry. Negative numbers indicate a shift to the left and positive numbers a shift to the right. This property is only applied if the LineDashEnding is set to Custom.
     */
-  var customEndingOffset: js.UndefOr[Double] = js.native
+  var customEndingOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance for each dash and gap. There can be multiple dash and gap values to form a complex pattern.
     */
-  var dashTemplate: js.UndefOr[js.Array[Double]] = js.native
+  var dashTemplate: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The setting which determines how the strokes with dash patterns and other patterns (pictures, placement effects) are handled at the end points of the line geometry's segments.
     */
   var lineDashEnding: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineDashEnding * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The position where the pattern should begin relative to the starting point of the geometry. It shifts the entire pattern along the line the specified distance. Negative values indicate a shift to the left and positive numbers a shift to the right. This property is only applied if LineDashEnding is set to NoConstraint or Custom.
     */
-  var offsetAlongLine: js.UndefOr[Double] = js.native
+  var offsetAlongLine: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectDashes: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDashes = js.native
+  var type_CIMGeometricEffectDashes: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDashes
 }
 object CIMGeometricEffectDashes {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDashes): CIMGeometricEffectDashes = {
+  def apply(): CIMGeometricEffectDashes = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectDashes")
     __obj.asInstanceOf[CIMGeometricEffectDashes]
   }
   

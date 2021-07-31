@@ -2,21 +2,19 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTableRequest extends StObject {
   
   /**
     * The name of the Timestream database.
     */
-  var DatabaseName: ResourceName = js.native
+  var DatabaseName: ResourceName
   
   /**
     * The name of the Timestream table.
     */
-  var TableName: ResourceName = js.native
+  var TableName: ResourceName
 }
 object DescribeTableRequest {
   

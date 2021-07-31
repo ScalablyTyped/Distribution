@@ -2,13 +2,13 @@ package typings.esquery.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultiSelectorAtom extends SubjectSelectorAtom {
+trait MultiSelectorAtom
+  extends StObject
+     with SubjectSelectorAtom {
   
-  var selectors: js.Array[SubjectSelector] = js.native
+  var selectors: js.Array[SubjectSelector]
 }
 object MultiSelectorAtom {
   

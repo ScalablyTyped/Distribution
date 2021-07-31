@@ -2,17 +2,15 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationResetActionPayload extends StObject {
   
-  var actions: js.Array[NavigationNavigateAction] = js.native
+  var actions: js.Array[NavigationNavigateAction]
   
-  var index: Double = js.native
+  var index: Double
   
-  var key: js.UndefOr[String | Null] = js.native
+  var key: js.UndefOr[String | Null] = js.undefined
 }
 object NavigationResetActionPayload {
   

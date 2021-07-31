@@ -2,13 +2,11 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExplodeEffect extends StObject {
   
-  var pieces: js.UndefOr[Double] = js.native
+  var pieces: js.UndefOr[Double] = js.undefined
 }
 object ExplodeEffect {
   

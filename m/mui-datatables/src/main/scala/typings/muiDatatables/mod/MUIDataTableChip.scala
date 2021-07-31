@@ -2,17 +2,15 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableChip extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[ChipColor] = js.native
+  var color: js.UndefOr[ChipColor] = js.undefined
   
-  var variant: js.UndefOr[ChipVariant] = js.native
+  var variant: js.UndefOr[ChipVariant] = js.undefined
 }
 object MUIDataTableChip {
   

@@ -3,37 +3,35 @@ package typings.watsonDeveloperCloud.mod
 import typings.watsonDeveloperCloud.mod.CreateValueConstants.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createValue` operation. */
-@js.native
 trait CreateValueParams extends StObject {
   
   /** The name of the entity. */
-  var entity: String = js.native
+  var entity: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** Any metadata related to the entity value. */
-  var metadata: js.UndefOr[js.Object] = js.native
+  var metadata: js.UndefOr[js.Object] = js.undefined
   
   /** An array of patterns for the entity value. A value can specify either synonyms or patterns (depending on the value type), but not both. A pattern is a regular expression no longer than 512 characters. For more information about how to specify a pattern, see the [documentation](https://cloud.ibm.com/docs/services/assistant/entities.html#entities-create-dictionary-based). */
-  var patterns: js.UndefOr[js.Array[String]] = js.native
+  var patterns: js.UndefOr[js.Array[String]] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** An array of synonyms for the entity value. A value can specify either synonyms or patterns (depending on the value type), but not both. A synonym must conform to the following resrictions: - It cannot contain carriage return, newline, or tab characters. - It cannot consist of only whitespace characters. - It must be no longer than 64 characters. */
-  var synonyms: js.UndefOr[js.Array[String]] = js.native
+  var synonyms: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The text of the entity value. This string must conform to the following restrictions: - It cannot contain carriage return, newline, or tab characters. - It cannot consist of only whitespace characters. - It must be no longer than 64 characters. */
-  var value: String = js.native
+  var value: String
   
   /** Specifies the type of entity value. */
-  var value_type: js.UndefOr[ValueType | String] = js.native
+  var value_type: js.UndefOr[ValueType | String] = js.undefined
   
   /** Unique identifier of the workspace. */
-  var workspace_id: String = js.native
+  var workspace_id: String
 }
 object CreateValueParams {
   

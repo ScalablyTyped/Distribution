@@ -8,14 +8,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxMod {
   
   @JSImport("@ionic/core/dist/types/components/checkbox/checkbox", "Checkbox")
   @js.native
-  class Checkbox () extends ComponentInterface {
+  class Checkbox ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * If `true`, the checkbox is selected.

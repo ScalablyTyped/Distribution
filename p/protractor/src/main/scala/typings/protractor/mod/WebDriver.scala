@@ -3,7 +3,6 @@ package typings.protractor.mod
 import typings.seleniumWebdriver.httpMod.Executor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "WebDriver")
@@ -22,6 +21,10 @@ class WebDriver protected ()
 }
 /* static members */
 object WebDriver {
+  
+  @JSImport("protractor", "WebDriver")
+  @js.native
+  val ^ : js.Any = js.native
   
   // endregion
   // region StaticMethods
@@ -84,7 +87,6 @@ object WebDriver {
   // This method's arguments are untyped so that its overloads can have correct
   // types. Typescript doesn't allow static methods to be overridden with
   // incompatible signatures.
-  @JSImport("protractor", "WebDriver.createSession")
-  @js.native
-  def createSession(var_args: js.Any*): typings.seleniumWebdriver.mod.WebDriver = js.native
+  @scala.inline
+  def createSession(var_args: js.Any*): typings.seleniumWebdriver.mod.WebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(var_args.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.mod.WebDriver]
 }

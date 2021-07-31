@@ -11,8 +11,8 @@ HTML-to-Markdown converter
 | Full name          | to-markdown |
 | Keywords           | markdown |
 | # releases         | 0 |
-| # dependents       | 109 |
-| # downloads        | 2837025 |
+| # dependents       | 111 |
+| # downloads        | 2861479 |
 | # stars            | 11 |
 
 ## Links

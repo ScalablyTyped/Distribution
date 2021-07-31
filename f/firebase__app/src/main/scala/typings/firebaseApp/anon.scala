@@ -2,15 +2,13 @@ package typings.firebaseApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AppName extends StObject {
     
-    var appName: String = js.native
+    var appName: String
   }
   object AppName {
     

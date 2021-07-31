@@ -9,7 +9,6 @@ import typings.consul.mod.Acl.ListOptions
 import typings.consul.mod.Acl.UpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -112,10 +111,11 @@ trait Acl extends StObject {
 }
 object Acl {
   
-  @js.native
-  trait CloneOptions extends CommonOptions {
+  trait CloneOptions
+    extends StObject
+       with CommonOptions {
     
-    var id: String = js.native
+    var id: String
   }
   object CloneOptions {
     
@@ -133,14 +133,15 @@ object Acl {
     }
   }
   
-  @js.native
-  trait CreateOptions extends CommonOptions {
+  trait CreateOptions
+    extends StObject
+       with CommonOptions {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var rules: js.UndefOr[String] = js.native
+    var rules: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateOptions {
     
@@ -173,10 +174,11 @@ object Acl {
     }
   }
   
-  @js.native
-  trait DestroyOptions extends CommonOptions {
+  trait DestroyOptions
+    extends StObject
+       with CommonOptions {
     
-    var id: String = js.native
+    var id: String
   }
   object DestroyOptions {
     
@@ -196,10 +198,11 @@ object Acl {
   
   type GetOptions = InfoOptions
   
-  @js.native
-  trait InfoOptions extends CommonOptions {
+  trait InfoOptions
+    extends StObject
+       with CommonOptions {
     
-    var id: String = js.native
+    var id: String
   }
   object InfoOptions {
     
@@ -219,16 +222,17 @@ object Acl {
   
   type ListOptions = CommonOptions
   
-  @js.native
-  trait UpdateOptions extends CommonOptions {
+  trait UpdateOptions
+    extends StObject
+       with CommonOptions {
     
-    var id: String = js.native
+    var id: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var rules: js.UndefOr[String] = js.native
+    var rules: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object UpdateOptions {
     

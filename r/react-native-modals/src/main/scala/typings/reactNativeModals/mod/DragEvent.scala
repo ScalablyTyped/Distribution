@@ -4,23 +4,21 @@ import typings.reactNativeModals.anon.Height
 import typings.reactNativeModals.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragEvent extends StObject {
   
-  var axis: X = js.native
+  var axis: X
   
-  var layout: Height = js.native
+  var layout: Height
   
-  var swipeDirection: String | Null = js.native
+  var swipeDirection: String | Null
 }
 object DragEvent {
   
   @scala.inline
   def apply(axis: X, layout: Height): DragEvent = {
-    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], swipeDirection = null)
     __obj.asInstanceOf[DragEvent]
   }
   

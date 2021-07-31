@@ -2,26 +2,24 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApplicationStatesRequest extends StObject {
   
   /**
     * The configurationIds from the Application Discovery Service that uniquely identifies your applications.
     */
-  var ApplicationIds: js.UndefOr[typings.awsSdk.migrationhubMod.ApplicationIds] = js.native
+  var ApplicationIds: js.UndefOr[typings.awsSdk.migrationhubMod.ApplicationIds] = js.undefined
   
   /**
     * Maximum number of results to be returned per page.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.migrationhubMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.migrationhubMod.MaxResults] = js.undefined
   
   /**
     * If a NextToken was returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in NextToken.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object ListApplicationStatesRequest {
   

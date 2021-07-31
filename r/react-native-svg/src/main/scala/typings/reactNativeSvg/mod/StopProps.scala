@@ -2,17 +2,15 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopProps extends StObject {
   
-  var offset: js.UndefOr[NumberProp] = js.native
+  var offset: js.UndefOr[NumberProp] = js.undefined
   
-  var stopColor: js.UndefOr[Color] = js.native
+  var stopColor: js.UndefOr[Color] = js.undefined
   
-  var stopOpacity: js.UndefOr[NumberProp] = js.native
+  var stopOpacity: js.UndefOr[NumberProp] = js.undefined
 }
 object StopProps {
   

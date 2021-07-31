@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioNodeOptions extends StObject {
   
-  var channelCount: js.UndefOr[Double] = js.native
+  var channelCount: js.UndefOr[Double] = js.undefined
   
-  var channelCountMode: js.UndefOr[ChannelCountMode] = js.native
+  var channelCountMode: js.UndefOr[ChannelCountMode] = js.undefined
   
-  var channelInterpretation: js.UndefOr[ChannelInterpretation] = js.native
+  var channelInterpretation: js.UndefOr[ChannelInterpretation] = js.undefined
 }
 object AudioNodeOptions {
   

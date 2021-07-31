@@ -3,17 +3,15 @@ package typings.cesium.anon
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutlineWidth extends StObject {
   
-  var color: js.UndefOr[Property] = js.native
+  var color: js.UndefOr[Property] = js.undefined
   
-  var outlineColor: js.UndefOr[Property] = js.native
+  var outlineColor: js.UndefOr[Property] = js.undefined
   
-  var outlineWidth: js.UndefOr[Property] = js.native
+  var outlineWidth: js.UndefOr[Property] = js.undefined
 }
 object OutlineWidth {
   

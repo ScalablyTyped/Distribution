@@ -2,86 +2,84 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushNotificationTemplateResponse extends StObject {
   
   /**
     * The message template that's used for the ADM (Amazon Device Messaging) channel. This message template overrides the default template for push notification channels (DefaultPushNotificationTemplate).
     */
-  var ADM: js.UndefOr[AndroidPushNotificationTemplate] = js.native
+  var ADM: js.UndefOr[AndroidPushNotificationTemplate] = js.undefined
   
   /**
     * The message template that's used for the APNs (Apple Push Notification service) channel. This message template overrides the default template for push notification channels (DefaultPushNotificationTemplate).
     */
-  var APNS: js.UndefOr[APNSPushNotificationTemplate] = js.native
+  var APNS: js.UndefOr[APNSPushNotificationTemplate] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the message template.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The message template that's used for the Baidu (Baidu Cloud Push) channel. This message template overrides the default template for push notification channels (DefaultPushNotificationTemplate).
     */
-  var Baidu: js.UndefOr[AndroidPushNotificationTemplate] = js.native
+  var Baidu: js.UndefOr[AndroidPushNotificationTemplate] = js.undefined
   
   /**
     * The date, in ISO 8601 format, when the message template was created.
     */
-  var CreationDate: string = js.native
+  var CreationDate: string
   
   /**
     * The default message template that's used for push notification channels.
     */
-  var Default: js.UndefOr[DefaultPushNotificationTemplate] = js.native
+  var Default: js.UndefOr[DefaultPushNotificationTemplate] = js.undefined
   
   /**
     * The JSON object that specifies the default values that are used for message variables in the message template. This object is a set of key-value pairs. Each key defines a message variable in the template. The corresponding value defines the default value for that variable.
     */
-  var DefaultSubstitutions: js.UndefOr[string] = js.native
+  var DefaultSubstitutions: js.UndefOr[string] = js.undefined
   
   /**
     * The message template that's used for the GCM channel, which is used to send notifications through the Firebase Cloud Messaging (FCM), formerly Google Cloud Messaging (GCM), service. This message template overrides the default template for push notification channels (DefaultPushNotificationTemplate).
     */
-  var GCM: js.UndefOr[AndroidPushNotificationTemplate] = js.native
+  var GCM: js.UndefOr[AndroidPushNotificationTemplate] = js.undefined
   
   /**
     * The date, in ISO 8601 format, when the message template was last modified.
     */
-  var LastModifiedDate: string = js.native
+  var LastModifiedDate: string
   
   /**
     * The unique identifier for the recommender model that's used by the message template.
     */
-  var RecommenderId: js.UndefOr[string] = js.native
+  var RecommenderId: js.UndefOr[string] = js.undefined
   
   /**
     * The custom description of the message template.
     */
-  var TemplateDescription: js.UndefOr[string] = js.native
+  var TemplateDescription: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the message template.
     */
-  var TemplateName: string = js.native
+  var TemplateName: string
   
   /**
     * The type of channel that the message template is designed for. For a push notification template, this value is PUSH.
     */
-  var TemplateType: typings.awsSdk.pinpointMod.TemplateType = js.native
+  var TemplateType: typings.awsSdk.pinpointMod.TemplateType
   
   /**
     * The unique identifier, as an integer, for the active version of the message template, or the version of the template that you specified by using the version parameter in your request.
     */
-  var Version: js.UndefOr[string] = js.native
+  var Version: js.UndefOr[string] = js.undefined
   
   /**
     * A string-to-string map of key-value pairs that identifies the tags that are associated with the message template. Each tag consists of a required tag key and an associated tag value.
     */
-  var tags: js.UndefOr[MapOfString] = js.native
+  var tags: js.UndefOr[MapOfString] = js.undefined
 }
 object PushNotificationTemplateResponse {
   

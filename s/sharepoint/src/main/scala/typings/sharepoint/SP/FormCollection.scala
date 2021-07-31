@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormCollection extends ClientObjectCollection[Form] {
+trait FormCollection
+  extends StObject
+     with ClientObjectCollection[Form] {
   
   def getById(id: Guid): Form = js.native
   

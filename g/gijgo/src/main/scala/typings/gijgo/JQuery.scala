@@ -22,7 +22,6 @@ import typings.gijgo.Types.Tree
 import typings.gijgo.Types.TreeSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,9 +39,9 @@ trait JQuery extends StObject {
   
   def editor(settings: EditorSettings): Editor = js.native
   
-  def grid(settings: GridSettings[_]): Grid[_, _] = js.native
+  def grid(settings: GridSettings[js.Any]): Grid[js.Any, js.Any] = js.native
   @JSName("grid")
-  def grid_Entity[Entity](settings: GridSettings[Entity]): Grid[Entity, _] = js.native
+  def grid_Entity[Entity](settings: GridSettings[Entity]): Grid[Entity, js.Any] = js.native
   @JSName("grid")
   def grid_EntityParams[Entity, Params](settings: GridSettings[Entity]): Grid[Entity, Params] = js.native
   

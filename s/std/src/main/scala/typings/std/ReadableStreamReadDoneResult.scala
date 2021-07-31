@@ -3,26 +3,26 @@ package typings.std
 import typings.std.stdBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReadableStreamReadDoneResult[T] extends ReadableStreamReadResult[T] {
+trait ReadableStreamReadDoneResult[T]
+  extends StObject
+     with ReadableStreamReadResult[T] {
   
-  var done: `true` = js.native
+  var done: `true`
   
-  var value: js.UndefOr[T] = js.native
+  var value: js.UndefOr[T] = js.undefined
 }
 object ReadableStreamReadDoneResult {
   
   @scala.inline
-  def apply[T](done: `true`): ReadableStreamReadDoneResult[T] = {
-    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
+  def apply[T](): ReadableStreamReadDoneResult[T] = {
+    val __obj = js.Dynamic.literal(done = true)
     __obj.asInstanceOf[ReadableStreamReadDoneResult[T]]
   }
   
   @scala.inline
-  implicit class ReadableStreamReadDoneResultMutableBuilder[Self <: ReadableStreamReadDoneResult[_], T] (val x: Self with ReadableStreamReadDoneResult[T]) extends AnyVal {
+  implicit class ReadableStreamReadDoneResultMutableBuilder[Self <: ReadableStreamReadDoneResult[?], T] (val x: Self & ReadableStreamReadDoneResult[T]) extends AnyVal {
     
     @scala.inline
     def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])

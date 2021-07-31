@@ -8,7 +8,6 @@ import typings.node.httpMod.Agent
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -58,42 +57,52 @@ object mod {
   object CollectionFormatEnum extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[CollectionFormatEnum with String] = js.native
+    def apply(value: String): js.UndefOr[CollectionFormatEnum & String] = js.native
     
     /**
       * Comma-separated values. Value: <code>csv</code>
       */
     @js.native
-    sealed trait CSV extends CollectionFormatEnum
-    /* "," */ val CSV: typings.cloudmersiveVirusApiClient.mod.CollectionFormatEnum.CSV with String = js.native
+    sealed trait CSV
+      extends StObject
+         with CollectionFormatEnum
+    /* "," */ val CSV: typings.cloudmersiveVirusApiClient.mod.CollectionFormatEnum.CSV & String = js.native
     
     /**
       * Native array. Value: <code>multi</code>
       */
     @js.native
-    sealed trait MULTI extends CollectionFormatEnum
-    /* "multi" */ val MULTI: typings.cloudmersiveVirusApiClient.mod.CollectionFormatEnum.MULTI with String = js.native
+    sealed trait MULTI
+      extends StObject
+         with CollectionFormatEnum
+    /* "multi" */ val MULTI: typings.cloudmersiveVirusApiClient.mod.CollectionFormatEnum.MULTI & String = js.native
     
     /**
       * Pipe(|)-separated values. Value: <code>pipes</code>
       */
     @js.native
-    sealed trait PIPES extends CollectionFormatEnum
-    /* "|" */ val PIPES: typings.cloudmersiveVirusApiClient.mod.CollectionFormatEnum.PIPES with String = js.native
+    sealed trait PIPES
+      extends StObject
+         with CollectionFormatEnum
+    /* "|" */ val PIPES: typings.cloudmersiveVirusApiClient.mod.CollectionFormatEnum.PIPES & String = js.native
     
     /**
       * Space-separated values. Value: <code>ssv</code>
       */
     @js.native
-    sealed trait SSV extends CollectionFormatEnum
-    /* " " */ val SSV: typings.cloudmersiveVirusApiClient.mod.CollectionFormatEnum.SSV with String = js.native
+    sealed trait SSV
+      extends StObject
+         with CollectionFormatEnum
+    /* " " */ val SSV: typings.cloudmersiveVirusApiClient.mod.CollectionFormatEnum.SSV & String = js.native
     
     /**
       * Tab-separated values. Value: <code>tsv</code>
       */
     @js.native
-    sealed trait TSV extends CollectionFormatEnum
-    /* "\t" */ val TSV: typings.cloudmersiveVirusApiClient.mod.CollectionFormatEnum.TSV with String = js.native
+    sealed trait TSV
+      extends StObject
+         with CollectionFormatEnum
+    /* "\t" */ val TSV: typings.cloudmersiveVirusApiClient.mod.CollectionFormatEnum.TSV & String = js.native
   }
   
   @JSImport("cloudmersive-virus-api-client", "ScanApi")
@@ -116,7 +125,7 @@ object mod {
       */
     def scanFile(
       inputFile: Buffer,
-      callback: js.Function3[/* error */ js.Any, /* data */ VirusScanResult, /* response */ js.Any, _]
+      callback: js.Function3[/* error */ js.Any, /* data */ VirusScanResult, /* response */ js.Any, js.Any]
     ): js.Any = js.native
     
     /**
@@ -158,7 +167,7 @@ object mod {
     def scanFileAdvanced(
       inputFile: Buffer,
       opts: ScanFileAdvancedOptions,
-      callback: js.Function3[/* error */ js.Any, /* data */ VirusScanAdvancedResult, /* response */ js.Any, _]
+      callback: js.Function3[/* error */ js.Any, /* data */ VirusScanAdvancedResult, /* response */ js.Any, js.Any]
     ): js.Any = js.native
     /**
       * Advanced Scan a file for viruses
@@ -225,7 +234,7 @@ object mod {
       */
     def scanWebsite(
       input: WebsiteScanRequest,
-      callback: js.Function3[/* error */ js.Any, /* data */ WebsiteScanResult, /* response */ js.Any, _]
+      callback: js.Function3[/* error */ js.Any, /* data */ WebsiteScanResult, /* response */ js.Any, js.Any]
     ): js.Any = js.native
     /**
       * Scan a website for malicious content and threats
@@ -239,20 +248,19 @@ object mod {
     var scanWebsite_Original: ScanWebsite = js.native
   }
   
-  @js.native
   trait VirusFound extends StObject {
     
     /**
       * @param FileName string
       * Name of the file containing the virus
       */
-    var FileName: String = js.native
+    var FileName: String
     
     /**
       * @param VirusName string
       * Name of the virus that was found
       */
-    var VirusName: String = js.native
+    var VirusName: String
   }
   object VirusFound {
     
@@ -271,22 +279,23 @@ object mod {
     }
   }
   
-  @js.native
-  trait VirusScanAdvancedResult extends VirusScanResult {
+  trait VirusScanAdvancedResult
+    extends StObject
+       with VirusScanResult {
     
     /**
       * @param ContainsExecutable boolean
       * True if the scan contained an executable (application code),
       * which can be a significant risk factor
       */
-    var ContainsExecutable: Boolean = js.native
+    var ContainsExecutable: Boolean
     
     /**
       * @param ContainsInvalidFile boolean
       * True if the scan contained an invalid file (such as a PDF that is not a valid PDF,
       * Word Document that is not a valid Word Document, etc.), which can be a significant risk facto
       */
-    var ContainsInvalidFile: Boolean = js.native
+    var ContainsInvalidFile: Boolean
     
     /**
       * @param ContainsRestrictedFileFormat boolean
@@ -294,14 +303,14 @@ object mod {
       * restrictFileTypes parameter, false otherwise;
       * if restrictFileTypes is not set, this will always be false
       */
-    var ContainsRestrictedFileFormat: Boolean = js.native
+    var ContainsRestrictedFileFormat: Boolean
     
     /**
       * @param ContainsScript boolean
       * True if the scan contained a script (such as a PHP script, Python script, etc.) which can
       * be a significant risk factor
       */
-    var ContainsScript: Boolean = js.native
+    var ContainsScript: Boolean
     
     /**
       * @param VerifiedFileFormat string
@@ -309,7 +318,7 @@ object mod {
       *  of the file. Null indicates that the file format is not supported for contents verification.
       *  If a Virus or Malware is found, this field will always be set to Null.
       */
-    var VerifiedFileFormat: String = js.native
+    var VerifiedFileFormat: String
   }
   object VirusScanAdvancedResult {
     
@@ -337,20 +346,19 @@ object mod {
     }
   }
   
-  @js.native
   trait VirusScanResult extends StObject {
     
     /**
       * @param CleanResult boolean
       * True if the scan contained no viruses, false otherwise
       */
-    var CleanResult: Boolean = js.native
+    var CleanResult: Boolean
     
     /**
       * @param FoundViruses null | IVirusFound
       * Array of viruses found, if any
       */
-    var FoundViruses: Null | js.Array[VirusFound] = js.native
+    var FoundViruses: Null | js.Array[VirusFound]
   }
   object VirusScanResult {
     
@@ -375,14 +383,13 @@ object mod {
     }
   }
   
-  @js.native
   trait WebsiteScanRequest extends StObject {
     
     /**
       * @param Url string
       * URL of the website to scan; should begin with http:// or https://
       */
-    var Url: String = js.native
+    var Url: String
   }
   object WebsiteScanRequest {
     
@@ -398,8 +405,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait WebsiteScanResult extends VirusScanResult {
+  trait WebsiteScanResult
+    extends StObject
+       with VirusScanResult {
     
     /**
       * @param WebsiteHttpResponseCode number (int32)
@@ -408,13 +416,13 @@ object mod {
       * response, while a 400 or 500 series code would represent an error returned from the
       * remote server for the provided URL.
       */
-    var WebsiteHttpResponseCode: Double = js.native
+    var WebsiteHttpResponseCode: Double
     
     /**
       * @param WebsiteThreatType None, Malware, Phishing, ForcedDownload, UnableToConnect
       * Type of threat returned; can be None, Malware, ForcedDownload or Phishing
       */
-    var WebsiteThreatType: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType = js.native
+    var WebsiteThreatType: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType
   }
   object WebsiteScanResult {
     
@@ -440,49 +448,58 @@ object mod {
   object WebsiteThreatType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[WebsiteThreatType with String] = js.native
+    def apply(value: String): js.UndefOr[WebsiteThreatType & String] = js.native
     
     @js.native
-    sealed trait ForcedDownload extends WebsiteThreatType
-    /* "ForcedDownload" */ val ForcedDownload: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType.ForcedDownload with String = js.native
+    sealed trait ForcedDownload
+      extends StObject
+         with WebsiteThreatType
+    /* "ForcedDownload" */ val ForcedDownload: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType.ForcedDownload & String = js.native
     
     @js.native
-    sealed trait Malware extends WebsiteThreatType
-    /* "Malware" */ val Malware: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType.Malware with String = js.native
+    sealed trait Malware
+      extends StObject
+         with WebsiteThreatType
+    /* "Malware" */ val Malware: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType.Malware & String = js.native
     
     @js.native
-    sealed trait None extends WebsiteThreatType
-    /* "None" */ val None: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType.None with String = js.native
+    sealed trait None
+      extends StObject
+         with WebsiteThreatType
+    /* "None" */ val None: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType.None & String = js.native
     
     @js.native
-    sealed trait Phising extends WebsiteThreatType
-    /* "Phishing" */ val Phising: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType.Phising with String = js.native
+    sealed trait Phising
+      extends StObject
+         with WebsiteThreatType
+    /* "Phishing" */ val Phising: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType.Phising & String = js.native
     
     @js.native
-    sealed trait UnableToConnect extends WebsiteThreatType
-    /* "UnableToConnect" */ val UnableToConnect: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType.UnableToConnect with String = js.native
+    sealed trait UnableToConnect
+      extends StObject
+         with WebsiteThreatType
+    /* "UnableToConnect" */ val UnableToConnect: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType.UnableToConnect & String = js.native
   }
   
-  @js.native
   trait ApiInstance extends StObject {
     
     /**
       * @param agent http.Agent - Used to save and return cookies in a node.js (
       * non-browser) setting, if this.enableCookies is set to true.
       */
-    var agent: Agent = js.native
+    var agent: Agent
     
     /**
       * @param authentications object - The authentication methods to be included for all API calls.
       */
-    var authentications: Apikey = js.native
+    var authentications: Apikey
     
     /**
       * @param basePath string - The base URL against which to resolve every API
       * call's (relative) path.
       * default https://api.cloudmersive.com
       */
-    var basePath: String = js.native
+    var basePath: String
     
     /**
       * If set to false an additional timestamp parameter is added to all API GET calls to
@@ -491,31 +508,31 @@ object mod {
       * all API GET calls to prevent browser caching
       * default true
       */
-    var cache: Boolean = js.native
+    var cache: Boolean
     
     /**
       * @param defaultHeaders string[] - The default HTTP headers to be included for all API calls.
       * default {}
       */
-    var defaultHeaders: js.Array[String] = js.native
+    var defaultHeaders: js.Array[String]
     
     /**
       * @param enableCookies boolean - If set to true, the client will save the cookies
       * from each server response, and return them in the next request.
       * default false
       */
-    var enableCookies: Boolean = js.native
+    var enableCookies: Boolean
     
     /**
       * @param requestAgent null | http.Agent - Allow user to override superagent agent
       */
-    var requestAgent: Null | Agent = js.native
+    var requestAgent: Null | Agent
     
     /**
       * @param timeout number - The default HTTP timeout for all API calls.
       * default 60000
       */
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object ApiInstance {
     
@@ -529,7 +546,7 @@ object mod {
       enableCookies: Boolean,
       timeout: Double
     ): ApiInstance = {
-      val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], authentications = authentications.asInstanceOf[js.Any], basePath = basePath.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], defaultHeaders = defaultHeaders.asInstanceOf[js.Any], enableCookies = enableCookies.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], authentications = authentications.asInstanceOf[js.Any], basePath = basePath.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], defaultHeaders = defaultHeaders.asInstanceOf[js.Any], enableCookies = enableCookies.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], requestAgent = null)
       __obj.asInstanceOf[ApiInstance]
     }
     
@@ -568,28 +585,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ApiInstanceAuthentications extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var in: header = js.native
+    var in: header
     
-    var name: typings.cloudmersiveVirusApiClient.cloudmersiveVirusApiClientStrings.Apikey = js.native
+    var name: typings.cloudmersiveVirusApiClient.cloudmersiveVirusApiClientStrings.Apikey
     
-    var `type`: apiKey_ = js.native
+    var `type`: apiKey_
   }
   object ApiInstanceAuthentications {
     
     @scala.inline
-    def apply(
-      apiKey: String,
-      in: header,
-      name: typings.cloudmersiveVirusApiClient.cloudmersiveVirusApiClientStrings.Apikey,
-      `type`: apiKey_
-    ): ApiInstanceAuthentications = {
-      val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(apiKey: String): ApiInstanceAuthentications = {
+      val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], in = "header", name = "Apikey")
+      __obj.updateDynamic("type")("apiKey")
       __obj.asInstanceOf[ApiInstanceAuthentications]
     }
     
@@ -623,7 +634,6 @@ object mod {
     js.Any
   ]
   
-  @js.native
   trait ScanFileAdvancedOptions extends StObject {
     
     /**
@@ -631,7 +641,7 @@ object mod {
       * Set to false to block executable files (program code) from being allowed in the input file.
       * Default is false (recommended).
       */
-    var allowExecutables: Boolean = js.native
+    var allowExecutables: Boolean
     
     /**
       * @param allowInvalidFiles boolean
@@ -639,7 +649,7 @@ object mod {
       * or a Word Document that is not a valid Word Document.
       * Default is false (recommended).
       */
-    var allowInvalidFiles: Boolean = js.native
+    var allowInvalidFiles: Boolean
     
     /**
       * @param allowScripts boolean
@@ -648,7 +658,7 @@ object mod {
       * file types.
       * Default is false (recommended).
       */
-    var allowScripts: Boolean = js.native
+    var allowScripts: Boolean
     
     /**
       * @param restrictFileTypes string
@@ -659,7 +669,7 @@ object mod {
       * Set restrictFileTypes parameter to null or empty string to disable;
       * default is disabled.
       */
-    var restrictFileTypes: String = js.native
+    var restrictFileTypes: String
   }
   object ScanFileAdvancedOptions {
     

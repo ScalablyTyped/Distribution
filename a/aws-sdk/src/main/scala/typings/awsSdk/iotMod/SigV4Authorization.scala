@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigV4Authorization extends StObject {
   
   /**
     * The ARN of the signing role.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
   
   /**
     * The service name to use while signing with Sig V4.
     */
-  var serviceName: ServiceName = js.native
+  var serviceName: ServiceName
   
   /**
     * The signing region.
     */
-  var signingRegion: SigningRegion = js.native
+  var signingRegion: SigningRegion
 }
 object SigV4Authorization {
   

@@ -3,25 +3,23 @@ package typings.playcanvas.anon
 import typings.playcanvas.pc.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoResolve extends StObject {
   
-  var autoResolve: js.UndefOr[Boolean] = js.native
+  var autoResolve: js.UndefOr[Boolean] = js.undefined
   
-  var colorBuffer: js.UndefOr[Texture] = js.native
+  var colorBuffer: js.UndefOr[Texture] = js.undefined
   
-  var depth: js.UndefOr[Boolean] = js.native
+  var depth: js.UndefOr[Boolean] = js.undefined
   
-  var depthBuffer: js.UndefOr[Texture] = js.native
+  var depthBuffer: js.UndefOr[Texture] = js.undefined
   
-  var face: js.UndefOr[Double] = js.native
+  var face: js.UndefOr[Double] = js.undefined
   
-  var samples: js.UndefOr[Double] = js.native
+  var samples: js.UndefOr[Double] = js.undefined
   
-  var stencil: js.UndefOr[Boolean] = js.native
+  var stencil: js.UndefOr[Boolean] = js.undefined
 }
 object AutoResolve {
   

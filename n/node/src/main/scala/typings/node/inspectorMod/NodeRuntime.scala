@@ -2,15 +2,13 @@ package typings.node.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NodeRuntime {
   
-  @js.native
   trait NotifyWhenWaitingForDisconnectParameterType extends StObject {
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
   }
   object NotifyWhenWaitingForDisconnectParameterType {
     

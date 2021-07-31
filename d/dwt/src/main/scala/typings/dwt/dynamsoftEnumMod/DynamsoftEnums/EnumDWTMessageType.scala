@@ -2,7 +2,6 @@ package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,25 +15,35 @@ sealed trait EnumDWTMessageType extends StObject
 object EnumDWTMessageType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTMessageType with Double] = js.native
+  def apply(value: Double): js.UndefOr[EnumDWTMessageType & Double] = js.native
   
   @js.native
-  sealed trait TWQC_GET extends EnumDWTMessageType
-  /* 1 */ val TWQC_GET: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTMessageType.TWQC_GET with Double = js.native
+  sealed trait TWQC_GET
+    extends StObject
+       with EnumDWTMessageType
+  /* 1 */ val TWQC_GET: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTMessageType.TWQC_GET & Double = js.native
   
   @js.native
-  sealed trait TWQC_GETCURRENT extends EnumDWTMessageType
-  /* 8 */ val TWQC_GETCURRENT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTMessageType.TWQC_GETCURRENT with Double = js.native
+  sealed trait TWQC_GETCURRENT
+    extends StObject
+       with EnumDWTMessageType
+  /* 8 */ val TWQC_GETCURRENT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTMessageType.TWQC_GETCURRENT & Double = js.native
   
   @js.native
-  sealed trait TWQC_GETDEFAULT extends EnumDWTMessageType
-  /* 4 */ val TWQC_GETDEFAULT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTMessageType.TWQC_GETDEFAULT with Double = js.native
+  sealed trait TWQC_GETDEFAULT
+    extends StObject
+       with EnumDWTMessageType
+  /* 4 */ val TWQC_GETDEFAULT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTMessageType.TWQC_GETDEFAULT & Double = js.native
   
   @js.native
-  sealed trait TWQC_RESET extends EnumDWTMessageType
-  /* 16 */ val TWQC_RESET: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTMessageType.TWQC_RESET with Double = js.native
+  sealed trait TWQC_RESET
+    extends StObject
+       with EnumDWTMessageType
+  /* 16 */ val TWQC_RESET: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTMessageType.TWQC_RESET & Double = js.native
   
   @js.native
-  sealed trait TWQC_SET extends EnumDWTMessageType
-  /* 2 */ val TWQC_SET: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTMessageType.TWQC_SET with Double = js.native
+  sealed trait TWQC_SET
+    extends StObject
+       with EnumDWTMessageType
+  /* 2 */ val TWQC_SET: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTMessageType.TWQC_SET & Double = js.native
 }

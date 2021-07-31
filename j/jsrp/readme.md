@@ -10,9 +10,9 @@ JavaScript SRP implementation
 | ------------------ | :-------------: |
 | Full name          | jsrp |
 | Keywords           | srp |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 5627 |
+| # downloads        | 6659 |
 | # stars            | 0 |
 
 ## Links

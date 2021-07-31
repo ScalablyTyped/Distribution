@@ -3,27 +3,25 @@ package typings.ckeditor.CKEDITOR
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait eventInfo extends StObject {
   
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var editor: typings.ckeditor.CKEDITOR.editor = js.native
+  var editor: typings.ckeditor.CKEDITOR.editor
   
-  var listenerData: js.Any = js.native
+  var listenerData: js.Any
   
-  var name: String = js.native
+  var name: String
   
-  def removeListener(): Unit = js.native
+  def removeListener(): Unit
   
-  var sender: StringDictionary[js.Any] = js.native
+  var sender: StringDictionary[js.Any]
   
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object eventInfo {
   

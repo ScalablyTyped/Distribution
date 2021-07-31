@@ -8,11 +8,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.click
 import typings.arcgisJsApi.arcgisJsApiStrings.freehand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SegmentDrawAction extends DrawAction {
+trait SegmentDrawAction
+  extends StObject
+     with DrawAction {
   
   /**
     * Completes drawing the polygon geometry and fires the [draw-complete](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#event-draw-complete) event.

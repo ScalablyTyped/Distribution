@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntentFilter extends StObject {
   
   /** The android:name value of the tag. */
-  var actionNames: js.UndefOr[js.Array[String]] = js.native
+  var actionNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The android:name value of the tag. */
-  var categoryNames: js.UndefOr[js.Array[String]] = js.native
+  var categoryNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The android:mimeType value of the tag. */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
 }
 object IntentFilter {
   

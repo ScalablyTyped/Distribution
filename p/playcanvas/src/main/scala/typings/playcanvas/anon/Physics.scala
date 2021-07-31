@@ -2,15 +2,13 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Physics extends StObject {
   
-  var physics: Gravity = js.native
+  var physics: Gravity
   
-  var render: Exposure = js.native
+  var render: Exposure
 }
 object Physics {
   

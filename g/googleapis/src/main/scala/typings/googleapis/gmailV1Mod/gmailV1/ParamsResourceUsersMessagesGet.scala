@@ -6,37 +6,37 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersMessagesGet extends StandardParameters {
+trait ParamsResourceUsersMessagesGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The format to return the message in.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the message to retrieve.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * When given and format is METADATA, only include headers specified.
     */
-  var metadataHeaders: js.UndefOr[js.Array[String]] = js.native
+  var metadataHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The user's email address. The special value me can be used to indicate
     * the authenticated user.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersMessagesGet {
   

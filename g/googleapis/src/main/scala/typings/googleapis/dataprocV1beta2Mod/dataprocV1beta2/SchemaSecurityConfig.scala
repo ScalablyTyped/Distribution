@@ -2,19 +2,17 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Security related configuration, including encryption, Kerberos, etc.
   */
-@js.native
 trait SchemaSecurityConfig extends StObject {
   
   /**
     * Kerberos related configuration.
     */
-  var kerberosConfig: js.UndefOr[SchemaKerberosConfig] = js.native
+  var kerberosConfig: js.UndefOr[SchemaKerberosConfig] = js.undefined
 }
 object SchemaSecurityConfig {
   

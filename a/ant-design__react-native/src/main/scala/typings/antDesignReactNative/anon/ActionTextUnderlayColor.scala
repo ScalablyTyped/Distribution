@@ -3,19 +3,17 @@ package typings.antDesignReactNative.anon
 import typings.reactNative.mod.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionTextUnderlayColor extends StObject {
   
-  var WrapComponent: View = js.native
+  var WrapComponent: View
   
-  var actionTextActiveOpacity: Double = js.native
+  var actionTextActiveOpacity: Double
   
-  var actionTextUnderlayColor: String = js.native
+  var actionTextUnderlayColor: String
   
-  var triggerType: String = js.native
+  var triggerType: String
 }
 object ActionTextUnderlayColor {
   

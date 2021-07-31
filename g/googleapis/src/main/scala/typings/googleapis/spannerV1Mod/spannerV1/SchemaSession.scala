@@ -3,25 +3,23 @@ package typings.googleapis.spannerV1Mod.spannerV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A session in the Cloud Spanner API.
   */
-@js.native
 trait SchemaSession extends StObject {
   
   /**
     * Output only. The approximate timestamp when the session is last used. It
     * is typically earlier than the actual last use time.
     */
-  var approximateLastUseTime: js.UndefOr[String] = js.native
+  var approximateLastUseTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The timestamp when the session is created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The labels for the session.   * Label keys must be between 1 and 63
@@ -32,13 +30,13 @@ trait SchemaSession extends StObject {
     * associated with a given session.  See https://goo.gl/xmQnxf for more
     * information on and examples of labels.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The name of the session. This is always system-assigned; values provided
     * when creating a session are ignored.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaSession {
   

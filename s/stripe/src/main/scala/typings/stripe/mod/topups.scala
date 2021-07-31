@@ -9,97 +9,97 @@ import typings.stripe.stripeStrings.succeeded
 import typings.stripe.stripeStrings.topup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topups {
   
   type IAmountFilter = String | Gt
   
-  @js.native
-  trait ITopup extends IResourceObject {
+  trait ITopup
+    extends StObject
+       with IResourceObject {
     
     /**
       * Amount transferred
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * ID of the balance transaction that describes the impact of this top-up on your account balance.
       * May not be specified depending on status of top-up.
       */
-    var balance_transaction: String | Null = js.native
+    var balance_transaction: String | Null
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO currency code, in lowercase. Must be a supported currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * An arbitrary string attached to the object. Often useful for displaying to users.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * Date the funds are expected to arrive in your Stripe account for payouts. This factors in delays
       * like weekends or bank holidays. May not be specified depending on status of top-up.
       */
-    var expected_availability_date: Double = js.native
+    var expected_availability_date: Double
     
     /**
       * Error code explaining reason for top-up failure if available
       */
-    var failure_code: String | Null = js.native
+    var failure_code: String | Null
     
     /**
       * Message to user further explaining reason for top-up failure if available.
       */
-    var failure_message: String | Null = js.native
+    var failure_message: String | Null
     
     /**
       * Has the value true if the object exists in live mode or the value false if the object exists
       * in test mode.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing
       * additional information about the object in a structured format.
       */
-    var metaData: IMetadata = js.native
+    var metaData: IMetadata
     
     /**
       * Value is "topup"
       */
     @JSName("object")
-    var object_ITopup: topup = js.native
+    var object_ITopup: topup
     
     /**
       * For most Stripe users, the source of every top-up is a bank account. This hash is then the
       * source object describing that bank account.
       */
-    var source: ISource = js.native
+    var source: ISource
     
     /**
       * Extra information about a top-up. This will appear on your source’s bank statement.
       * It must contain at least one letter.
       */
-    var statement_descriptor: String | Null = js.native
+    var statement_descriptor: String | Null
     
     /**
       * Status of topup
       */
-    var status: canceled | failed | pending | reversed | succeeded = js.native
+    var status: canceled | failed | pending | reversed | succeeded
     
     /**
       * A string that identifies this top-up as part of a group.
       */
-    var transfer_group: String | Null = js.native
+    var transfer_group: String | Null
   }
   object ITopup {
     
@@ -113,12 +113,11 @@ object topups {
       id: String,
       livemode: Boolean,
       metaData: IMetadata,
-      `object`: topup,
       source: ISource,
       status: canceled | failed | pending | reversed | succeeded
     ): ITopup = {
-      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], expected_availability_date = expected_availability_date.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metaData = metaData.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], expected_availability_date = expected_availability_date.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metaData = metaData.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], balance_transaction = null, failure_code = null, failure_message = null, statement_descriptor = null, transfer_group = null)
+      __obj.updateDynamic("object")("topup")
       __obj.asInstanceOf[ITopup]
     }
     
@@ -187,40 +186,41 @@ object topups {
     }
   }
   
-  @js.native
-  trait ITopupCreationOptions extends IDataOptionsWithMetadata {
+  trait ITopupCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * A positive integer representing how much to transfer.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Three-letter ISO currency code, in lowercase. Must be a supported currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * An arbitrary string attached to the object. Often useful for displaying to users.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of a source to transfer funds from. For most users, this should be left unspecified
       * which will use the bank account that was set up in the dashboard for the specified currency.
       * In test mode, this can be a test bank token (see https://stripe.com/docs/connect/testing#testing-top-ups).
       */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
     /**
       * Extra information about a top-up for the source’s bank statement. Limited to 15 ASCII characters.
       */
-    var statement_descriptor: js.UndefOr[String] = js.native
+    var statement_descriptor: js.UndefOr[String] = js.undefined
     
     /**
       * A string that identifies this top-up as part of a group.
       */
-    var transfer_group: js.UndefOr[String] = js.native
+    var transfer_group: js.UndefOr[String] = js.undefined
   }
   object ITopupCreationOptions {
     
@@ -265,13 +265,14 @@ object topups {
     }
   }
   
-  @js.native
-  trait ITopupUpdateOptions extends IDataOptionsWithMetadata {
+  trait ITopupUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * An arbitrary string attached to the object. Often useful for displaying to users.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
   }
   object ITopupUpdateOptions {
     
@@ -292,19 +293,20 @@ object topups {
     }
   }
   
-  @js.native
-  trait ITopupsListOptions extends IListOptionsCreated {
+  trait ITopupsListOptions
+    extends StObject
+       with IListOptionsCreated {
     
     /**
       * A filter on the list based on the object amount field. The value can be a string with
       * an integer amount, or it can be a dictionary.
       */
-    var amount: js.UndefOr[IAmountFilter] = js.native
+    var amount: js.UndefOr[IAmountFilter] = js.undefined
     
     /**
       * Only return top-ups that have the given status.
       */
-    var status: js.UndefOr[canceled | failed | pending | succeeded] = js.native
+    var status: js.UndefOr[canceled | failed | pending | succeeded] = js.undefined
   }
   object ITopupsListOptions {
     

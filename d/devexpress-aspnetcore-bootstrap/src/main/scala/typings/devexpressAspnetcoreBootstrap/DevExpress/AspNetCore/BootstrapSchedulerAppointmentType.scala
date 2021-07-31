@@ -2,7 +2,6 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait BootstrapSchedulerAppointmentType extends StObject
 object BootstrapSchedulerAppointmentType extends StObject {
   
   @js.native
-  sealed trait ChangedOccurrence extends BootstrapSchedulerAppointmentType
+  sealed trait ChangedOccurrence
+    extends StObject
+       with BootstrapSchedulerAppointmentType
   
   @js.native
-  sealed trait DeletedOccurrence extends BootstrapSchedulerAppointmentType
+  sealed trait DeletedOccurrence
+    extends StObject
+       with BootstrapSchedulerAppointmentType
   
   @js.native
-  sealed trait Normal extends BootstrapSchedulerAppointmentType
+  sealed trait Normal
+    extends StObject
+       with BootstrapSchedulerAppointmentType
   
   @js.native
-  sealed trait Occurrence extends BootstrapSchedulerAppointmentType
+  sealed trait Occurrence
+    extends StObject
+       with BootstrapSchedulerAppointmentType
   
   @js.native
-  sealed trait Pattern extends BootstrapSchedulerAppointmentType
+  sealed trait Pattern
+    extends StObject
+       with BootstrapSchedulerAppointmentType
 }

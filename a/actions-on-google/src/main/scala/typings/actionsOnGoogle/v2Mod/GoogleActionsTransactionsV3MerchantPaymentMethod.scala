@@ -2,34 +2,32 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3MerchantPaymentMethod extends StObject {
   
   /**
     * Required. Display info of this payment method.
     */
-  var paymentMethodDisplayInfo: js.UndefOr[GoogleActionsTransactionsV3PaymentMethodDisplayInfo] = js.native
+  var paymentMethodDisplayInfo: js.UndefOr[GoogleActionsTransactionsV3PaymentMethodDisplayInfo] = js.undefined
   
   /**
     * Optional. The group / profile name that the payment method belongs to.
     */
-  var paymentMethodGroup: js.UndefOr[String] = js.native
+  var paymentMethodGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Id of the payment method passed from merchant / action.
     * Note this id is should be unique if multiple payment methods are sent from
     * Merchant/Action.
     */
-  var paymentMethodId: js.UndefOr[String] = js.native
+  var paymentMethodId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Status of the payment method.
     * If not present, the payment method is assumed to be in OK status.
     */
-  var paymentMethodStatus: js.UndefOr[GoogleActionsTransactionsV3PaymentMethodStatus] = js.native
+  var paymentMethodStatus: js.UndefOr[GoogleActionsTransactionsV3PaymentMethodStatus] = js.undefined
 }
 object GoogleActionsTransactionsV3MerchantPaymentMethod {
   

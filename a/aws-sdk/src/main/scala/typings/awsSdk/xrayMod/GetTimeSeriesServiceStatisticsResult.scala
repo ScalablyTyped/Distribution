@@ -2,26 +2,24 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTimeSeriesServiceStatisticsResult extends StObject {
   
   /**
     * A flag indicating whether or not a group's filter expression has been consistent, or if a returned aggregation might show statistics from an older version of the group's filter expression.
     */
-  var ContainsOldGroupVersions: js.UndefOr[Boolean] = js.native
+  var ContainsOldGroupVersions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Pagination token.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The collection of statistics.
     */
-  var TimeSeriesServiceStatistics: js.UndefOr[TimeSeriesServiceStatisticsList] = js.native
+  var TimeSeriesServiceStatistics: js.UndefOr[TimeSeriesServiceStatisticsList] = js.undefined
 }
 object GetTimeSeriesServiceStatisticsResult {
   

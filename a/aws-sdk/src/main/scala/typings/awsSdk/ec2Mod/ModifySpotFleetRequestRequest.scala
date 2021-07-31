@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifySpotFleetRequestRequest extends StObject {
   
   /**
     * Indicates whether running Spot Instances should be terminated if the target capacity of the Spot Fleet request is decreased below the current size of the Spot Fleet.
     */
-  var ExcessCapacityTerminationPolicy: js.UndefOr[typings.awsSdk.ec2Mod.ExcessCapacityTerminationPolicy] = js.native
+  var ExcessCapacityTerminationPolicy: js.UndefOr[typings.awsSdk.ec2Mod.ExcessCapacityTerminationPolicy] = js.undefined
   
   /**
     * The launch template and overrides. You can only use this parameter if you specified a launch template (LaunchTemplateConfigs) in your Spot Fleet request. If you specified LaunchSpecifications in your Spot Fleet request, then omit this parameter.
     */
-  var LaunchTemplateConfigs: js.UndefOr[LaunchTemplateConfigList] = js.native
+  var LaunchTemplateConfigs: js.UndefOr[LaunchTemplateConfigList] = js.undefined
   
   /**
     * The number of On-Demand Instances in the fleet.
     */
-  var OnDemandTargetCapacity: js.UndefOr[Integer] = js.native
+  var OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the Spot Fleet request.
     */
-  var SpotFleetRequestId: typings.awsSdk.ec2Mod.SpotFleetRequestId = js.native
+  var SpotFleetRequestId: typings.awsSdk.ec2Mod.SpotFleetRequestId
   
   /**
     * The size of the fleet.
     */
-  var TargetCapacity: js.UndefOr[Integer] = js.native
+  var TargetCapacity: js.UndefOr[Integer] = js.undefined
 }
 object ModifySpotFleetRequestRequest {
   

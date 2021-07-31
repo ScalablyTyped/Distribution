@@ -54,10 +54,13 @@ import typings.styledComponents.styledComponentsMod.FlattenSimpleInterpolation
 import typings.styledComponents.styledComponentsMod.ThemedStyledProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
+  
+  @JSImport("grommet/themes/base", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined grommet.grommet/utils.DeepReadonly<grommet.grommet/themes/base.ThemeType> */
   object base {
@@ -229,33 +232,28 @@ object baseMod {
     val worldMap: js.UndefOr[Continent | DeepReadonly[js.UndefOr[Continent]]] = js.native
   }
   
-  @JSImport("grommet/themes/base", "generate")
-  @js.native
-  def generate(): DeepReadonlyThemeType = js.native
-  @JSImport("grommet/themes/base", "generate")
-  @js.native
-  def generate(baseSpacing: js.UndefOr[scala.Nothing], scale: Double): DeepReadonlyThemeType = js.native
-  @JSImport("grommet/themes/base", "generate")
-  @js.native
-  def generate(baseSpacing: Double): DeepReadonlyThemeType = js.native
-  @JSImport("grommet/themes/base", "generate")
-  @js.native
-  def generate(baseSpacing: Double, scale: Double): DeepReadonlyThemeType = js.native
+  @scala.inline
+  def generate(): DeepReadonlyThemeType = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[DeepReadonlyThemeType]
+  @scala.inline
+  def generate(baseSpacing: Double): DeepReadonlyThemeType = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any]).asInstanceOf[DeepReadonlyThemeType]
+  @scala.inline
+  def generate(baseSpacing: Double, scale: Double): DeepReadonlyThemeType = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[DeepReadonlyThemeType]
+  @scala.inline
+  def generate(baseSpacing: Unit, scale: Double): DeepReadonlyThemeType = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[DeepReadonlyThemeType]
   
-  @js.native
   trait ButtonKindType extends StObject {
     
-    var background: js.UndefOr[BackgroundType] = js.native
+    var background: js.UndefOr[BackgroundType] = js.undefined
     
-    var border: js.UndefOr[ColorWidth | Boolean] = js.native
+    var border: js.UndefOr[ColorWidth | Boolean] = js.undefined
     
-    var color: js.UndefOr[ColorType] = js.native
+    var color: js.UndefOr[ColorType] = js.undefined
     
-    var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+    var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
     
-    var font: js.UndefOr[`10`] = js.native
+    var font: js.UndefOr[`10`] = js.undefined
     
-    var padding: js.UndefOr[HorizontalVertical] = js.native
+    var padding: js.UndefOr[HorizontalVertical] = js.undefined
   }
   object ButtonKindType {
     
@@ -287,10 +285,10 @@ object baseMod {
       def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
       @scala.inline
-      def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+      def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+      def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
       
       @scala.inline
       def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
@@ -309,101 +307,101 @@ object baseMod {
     }
   }
   
-  /* Inlined {  active :grommet.grommet/utils.ColorType | undefined,   black :grommet.grommet/utils.ColorType | undefined,   border :grommet.grommet/utils.ColorType | undefined,   brand :grommet.grommet/utils.ColorType | undefined,   control :grommet.grommet/utils.ColorType | undefined,   focus :grommet.grommet/utils.ColorType | undefined,   placeholder :grommet.grommet/utils.ColorType | undefined,   selected :grommet.grommet/utils.ColorType | undefined,   text :grommet.grommet/utils.ColorType | undefined,   icon :grommet.grommet/utils.ColorType | undefined,   white :grommet.grommet/utils.ColorType | undefined} & {  accent-1 :grommet.grommet/utils.ColorType | undefined,   accent-2 :grommet.grommet/utils.ColorType | undefined,   accent-3 :grommet.grommet/utils.ColorType | undefined,   accent-4 :grommet.grommet/utils.ColorType | undefined,   background-back :grommet.grommet/utils.ColorType | undefined,   background-contrast :grommet.grommet/utils.ColorType | undefined,   background-front :grommet.grommet/utils.ColorType | undefined,   neutral-1 :grommet.grommet/utils.ColorType | undefined,   neutral-2 :grommet.grommet/utils.ColorType | undefined,   neutral-3 :grommet.grommet/utils.ColorType | undefined,   neutral-4 :grommet.grommet/utils.ColorType | undefined,   dark-1 :grommet.grommet/utils.ColorType | undefined,   dark-2 :grommet.grommet/utils.ColorType | undefined,   dark-3 :grommet.grommet/utils.ColorType | undefined,   dark-4 :grommet.grommet/utils.ColorType | undefined,   dark-5 :grommet.grommet/utils.ColorType | undefined,   dark-6 :grommet.grommet/utils.ColorType | undefined,   light-1 :grommet.grommet/utils.ColorType | undefined,   light-2 :grommet.grommet/utils.ColorType | undefined,   light-3 :grommet.grommet/utils.ColorType | undefined,   light-4 :grommet.grommet/utils.ColorType | undefined,   light-5 :grommet.grommet/utils.ColorType | undefined,   light-6 :grommet.grommet/utils.ColorType | undefined,   status-critical :grommet.grommet/utils.ColorType | undefined,   status-error :grommet.grommet/utils.ColorType | undefined,   status-warning :grommet.grommet/utils.ColorType | undefined,   status-ok :grommet.grommet/utils.ColorType | undefined,   status-unknown :grommet.grommet/utils.ColorType | undefined,   status-disabled :grommet.grommet/utils.ColorType | undefined,   graph-0 :grommet.grommet/utils.ColorType | undefined,   graph-1 :grommet.grommet/utils.ColorType | undefined,   graph-2 :grommet.grommet/utils.ColorType | undefined,   graph-3 :grommet.grommet/utils.ColorType | undefined,   graph-4 :grommet.grommet/utils.ColorType | undefined,   graph-5 :grommet.grommet/utils.ColorType | undefined, [x: string] : grommet.grommet/utils.ColorType} */
-  @js.native
-  trait Colors extends /* x */ StringDictionary[ColorType] {
+  trait Colors
+    extends StObject
+       with /* x */ StringDictionary[ColorType] {
     
-    var `accent-1`: js.UndefOr[ColorType] = js.native
+    var `accent-1`: js.UndefOr[ColorType] = js.undefined
     
-    var `accent-2`: js.UndefOr[ColorType] = js.native
+    var `accent-2`: js.UndefOr[ColorType] = js.undefined
     
-    var `accent-3`: js.UndefOr[ColorType] = js.native
+    var `accent-3`: js.UndefOr[ColorType] = js.undefined
     
-    var `accent-4`: js.UndefOr[ColorType] = js.native
+    var `accent-4`: js.UndefOr[ColorType] = js.undefined
     
-    var active: js.UndefOr[ColorType] = js.native
+    var active: js.UndefOr[ColorType] = js.undefined
     
-    var `background-back`: js.UndefOr[ColorType] = js.native
+    var `background-back`: js.UndefOr[ColorType] = js.undefined
     
-    var `background-contrast`: js.UndefOr[ColorType] = js.native
+    var `background-contrast`: js.UndefOr[ColorType] = js.undefined
     
-    var `background-front`: js.UndefOr[ColorType] = js.native
+    var `background-front`: js.UndefOr[ColorType] = js.undefined
     
-    var black: js.UndefOr[ColorType] = js.native
+    var black: js.UndefOr[ColorType] = js.undefined
     
-    var border: js.UndefOr[ColorType] = js.native
+    var border: js.UndefOr[ColorType] = js.undefined
     
-    var brand: js.UndefOr[ColorType] = js.native
+    var brand: js.UndefOr[ColorType] = js.undefined
     
-    var control: js.UndefOr[ColorType] = js.native
+    var control: js.UndefOr[ColorType] = js.undefined
     
-    var `dark-1`: js.UndefOr[ColorType] = js.native
+    var `dark-1`: js.UndefOr[ColorType] = js.undefined
     
-    var `dark-2`: js.UndefOr[ColorType] = js.native
+    var `dark-2`: js.UndefOr[ColorType] = js.undefined
     
-    var `dark-3`: js.UndefOr[ColorType] = js.native
+    var `dark-3`: js.UndefOr[ColorType] = js.undefined
     
-    var `dark-4`: js.UndefOr[ColorType] = js.native
+    var `dark-4`: js.UndefOr[ColorType] = js.undefined
     
-    var `dark-5`: js.UndefOr[ColorType] = js.native
+    var `dark-5`: js.UndefOr[ColorType] = js.undefined
     
-    var `dark-6`: js.UndefOr[ColorType] = js.native
+    var `dark-6`: js.UndefOr[ColorType] = js.undefined
     
-    var focus: js.UndefOr[ColorType] = js.native
+    var focus: js.UndefOr[ColorType] = js.undefined
     
-    var `graph-0`: js.UndefOr[ColorType] = js.native
+    var `graph-0`: js.UndefOr[ColorType] = js.undefined
     
-    var `graph-1`: js.UndefOr[ColorType] = js.native
+    var `graph-1`: js.UndefOr[ColorType] = js.undefined
     
-    var `graph-2`: js.UndefOr[ColorType] = js.native
+    var `graph-2`: js.UndefOr[ColorType] = js.undefined
     
-    var `graph-3`: js.UndefOr[ColorType] = js.native
+    var `graph-3`: js.UndefOr[ColorType] = js.undefined
     
-    var `graph-4`: js.UndefOr[ColorType] = js.native
+    var `graph-4`: js.UndefOr[ColorType] = js.undefined
     
-    var `graph-5`: js.UndefOr[ColorType] = js.native
+    var `graph-5`: js.UndefOr[ColorType] = js.undefined
     
-    var icon: js.UndefOr[ColorType] = js.native
+    var icon: js.UndefOr[ColorType] = js.undefined
     
-    var `light-1`: js.UndefOr[ColorType] = js.native
+    var `light-1`: js.UndefOr[ColorType] = js.undefined
     
-    var `light-2`: js.UndefOr[ColorType] = js.native
+    var `light-2`: js.UndefOr[ColorType] = js.undefined
     
-    var `light-3`: js.UndefOr[ColorType] = js.native
+    var `light-3`: js.UndefOr[ColorType] = js.undefined
     
-    var `light-4`: js.UndefOr[ColorType] = js.native
+    var `light-4`: js.UndefOr[ColorType] = js.undefined
     
-    var `light-5`: js.UndefOr[ColorType] = js.native
+    var `light-5`: js.UndefOr[ColorType] = js.undefined
     
-    var `light-6`: js.UndefOr[ColorType] = js.native
+    var `light-6`: js.UndefOr[ColorType] = js.undefined
     
-    var `neutral-1`: js.UndefOr[ColorType] = js.native
+    var `neutral-1`: js.UndefOr[ColorType] = js.undefined
     
-    var `neutral-2`: js.UndefOr[ColorType] = js.native
+    var `neutral-2`: js.UndefOr[ColorType] = js.undefined
     
-    var `neutral-3`: js.UndefOr[ColorType] = js.native
+    var `neutral-3`: js.UndefOr[ColorType] = js.undefined
     
-    var `neutral-4`: js.UndefOr[ColorType] = js.native
+    var `neutral-4`: js.UndefOr[ColorType] = js.undefined
     
-    var placeholder: js.UndefOr[ColorType] = js.native
+    var placeholder: js.UndefOr[ColorType] = js.undefined
     
-    var selected: js.UndefOr[ColorType] = js.native
+    var selected: js.UndefOr[ColorType] = js.undefined
     
-    var `status-critical`: js.UndefOr[ColorType] = js.native
+    var `status-critical`: js.UndefOr[ColorType] = js.undefined
     
-    var `status-disabled`: js.UndefOr[ColorType] = js.native
+    var `status-disabled`: js.UndefOr[ColorType] = js.undefined
     
-    var `status-error`: js.UndefOr[ColorType] = js.native
+    var `status-error`: js.UndefOr[ColorType] = js.undefined
     
-    var `status-ok`: js.UndefOr[ColorType] = js.native
+    var `status-ok`: js.UndefOr[ColorType] = js.undefined
     
-    var `status-unknown`: js.UndefOr[ColorType] = js.native
+    var `status-unknown`: js.UndefOr[ColorType] = js.undefined
     
-    var `status-warning`: js.UndefOr[ColorType] = js.native
+    var `status-warning`: js.UndefOr[ColorType] = js.undefined
     
-    var text: js.UndefOr[ColorType] = js.native
+    var text: js.UndefOr[ColorType] = js.undefined
     
-    var white: js.UndefOr[ColorType] = js.native
+    var white: js.UndefOr[ColorType] = js.undefined
   }
   object Colors {
     
@@ -723,90 +721,89 @@ object baseMod {
     */
   type ExtendValue[TProps] = String | FlattenSimpleInterpolation | FlattenInterpolation[ExtendProps[TProps]]
   
-  @js.native
   trait ThemeType extends StObject {
     
-    var accordion: js.UndefOr[Panel] = js.native
+    var accordion: js.UndefOr[Panel] = js.undefined
     
-    var anchor: js.UndefOr[FontWeightHover] = js.native
+    var anchor: js.UndefOr[FontWeightHover] = js.undefined
     
-    var avatar: js.UndefOr[SizeText] = js.native
+    var avatar: js.UndefOr[SizeText] = js.undefined
     
-    var box: js.UndefOr[ResponsiveBreakpoint] = js.native
+    var box: js.UndefOr[ResponsiveBreakpoint] = js.undefined
     
-    var button: js.UndefOr[Default] = js.native
+    var button: js.UndefOr[Default] = js.undefined
     
-    var calendar: js.UndefOr[Day] = js.native
+    var calendar: js.UndefOr[Day] = js.undefined
     
-    var card: js.UndefOr[BodyContainer] = js.native
+    var card: js.UndefOr[BodyContainer] = js.undefined
     
-    var carousel: js.UndefOr[AnimationDisabled] = js.native
+    var carousel: js.UndefOr[AnimationDisabled] = js.undefined
     
-    var chart: js.UndefOr[ColorExtend] = js.native
+    var chart: js.UndefOr[ColorExtend] = js.undefined
     
-    var checkBox: js.UndefOr[Toggle] = js.native
+    var checkBox: js.UndefOr[Toggle] = js.undefined
     
-    var clock: js.UndefOr[Analog] = js.native
+    var clock: js.UndefOr[Analog] = js.undefined
     
-    var collapsible: js.UndefOr[Baseline] = js.native
+    var collapsible: js.UndefOr[Baseline] = js.undefined
     
-    var dataTable: js.UndefOr[GroupEnd] = js.native
+    var dataTable: js.UndefOr[GroupEnd] = js.undefined
     
-    var dateInput: js.UndefOr[`13`] = js.native
+    var dateInput: js.UndefOr[`13`] = js.undefined
     
-    var diagram: js.UndefOr[Line] = js.native
+    var diagram: js.UndefOr[Line] = js.undefined
     
-    var drop: js.UndefOr[MaxHeight] = js.native
+    var drop: js.UndefOr[MaxHeight] = js.undefined
     
-    var formField: js.UndefOr[Content] = js.native
+    var formField: js.UndefOr[Content] = js.undefined
     
-    var global: js.UndefOr[Animation] = js.native
+    var global: js.UndefOr[Animation] = js.undefined
     
-    var grommet: js.UndefOr[`14`] = js.native
+    var grommet: js.UndefOr[`14`] = js.undefined
     
-    var heading: js.UndefOr[Extend] = js.native
+    var heading: js.UndefOr[Extend] = js.undefined
     
-    var icon: js.UndefOr[`25`] = js.native
+    var icon: js.UndefOr[`25`] = js.undefined
     
-    var layer: js.UndefOr[Overlay] = js.native
+    var layer: js.UndefOr[Overlay] = js.undefined
     
-    var list: js.UndefOr[Item] = js.native
+    var list: js.UndefOr[Item] = js.undefined
     
-    var maskedInput: js.UndefOr[`22`] = js.native
+    var maskedInput: js.UndefOr[`22`] = js.undefined
     
-    var menu: js.UndefOr[Icons] = js.native
+    var menu: js.UndefOr[Icons] = js.undefined
     
-    var meter: js.UndefOr[typings.grommet.anon.Colors] = js.native
+    var meter: js.UndefOr[typings.grommet.anon.Colors] = js.undefined
     
-    var paragraph: js.UndefOr[Xlarge] = js.native
+    var paragraph: js.UndefOr[Xlarge] = js.undefined
     
-    var radioButton: js.UndefOr[Check] = js.native
+    var radioButton: js.UndefOr[Check] = js.undefined
     
-    var radioButtonGroup: js.UndefOr[Container] = js.native
+    var radioButtonGroup: js.UndefOr[Container] = js.undefined
     
-    var rangeInput: js.UndefOr[Thumb] = js.native
+    var rangeInput: js.UndefOr[Thumb] = js.undefined
     
-    var rangeSelector: js.UndefOr[Edge] = js.native
+    var rangeSelector: js.UndefOr[Edge] = js.undefined
     
-    var select: js.UndefOr[Control] = js.native
+    var select: js.UndefOr[Control] = js.undefined
     
-    var skipLinks: js.UndefOr[Position] = js.native
+    var skipLinks: js.UndefOr[Position] = js.undefined
     
-    var tab: js.UndefOr[Hover] = js.native
+    var tab: js.UndefOr[Hover] = js.undefined
     
-    var table: js.UndefOr[Footer] = js.native
+    var table: js.UndefOr[Footer] = js.undefined
     
-    var tabs: js.UndefOr[Header] = js.native
+    var tabs: js.UndefOr[Header] = js.undefined
     
-    var text: js.UndefOr[Xsmall] = js.native
+    var text: js.UndefOr[Xsmall] = js.undefined
     
-    var textArea: js.UndefOr[DisabledExtend] = js.native
+    var textArea: js.UndefOr[DisabledExtend] = js.undefined
     
-    var textInput: js.UndefOr[DisabledExtend] = js.native
+    var textInput: js.UndefOr[DisabledExtend] = js.undefined
     
-    var video: js.UndefOr[Captions] = js.native
+    var video: js.UndefOr[Captions] = js.undefined
     
-    var worldMap: js.UndefOr[Continent] = js.native
+    var worldMap: js.UndefOr[Continent] = js.undefined
   }
   object ThemeType {
     

@@ -9,40 +9,38 @@ import typings.layuiSrc.layuiSrcStrings.skip
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageOptions extends StObject {
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var curr: js.UndefOr[Double] = js.native
+  var curr: js.UndefOr[Double] = js.undefined
   
   // id选择器 不加#
-  var elem: js.UndefOr[String | HTMLElement] = js.native
+  var elem: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var first: js.UndefOr[String] = js.native
+  var first: js.UndefOr[String] = js.undefined
   
-  var groups: js.UndefOr[Double] = js.native
+  var groups: js.UndefOr[Double] = js.undefined
   
-  var hash: js.UndefOr[String | Boolean] = js.native
+  var hash: js.UndefOr[String | Boolean] = js.undefined
   
-  var jump: js.UndefOr[js.Function2[/* obj */ this.type, /* first */ Boolean, Unit]] = js.native
+  var jump: js.UndefOr[js.Function2[/* obj */ this.type, /* first */ Boolean, Unit]] = js.undefined
   
-  var last: js.UndefOr[String] = js.native
+  var last: js.UndefOr[String] = js.undefined
   
-  var layout: js.UndefOr[js.Array[count | prev | page | next | limit | skip]] = js.native
+  var layout: js.UndefOr[js.Array[count | prev | page | next | limit | skip]] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var limits: js.UndefOr[js.Array[Double]] = js.native
+  var limits: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var prev: js.UndefOr[String] = js.native
+  var prev: js.UndefOr[String] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object PageOptions {
   

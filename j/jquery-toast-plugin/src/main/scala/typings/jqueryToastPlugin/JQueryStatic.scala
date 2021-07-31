@@ -2,13 +2,11 @@ package typings.jqueryToastPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  def toast(options: toastOptions): Unit = js.native
+  def toast(options: toastOptions): Unit
 }
 object JQueryStatic {
   

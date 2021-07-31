@@ -2,13 +2,11 @@ package typings.webglExt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OESElementIndexUint extends StObject {
   
-  val __OESElementIndexUint: Unit = js.native
+  val __OESElementIndexUint: Unit
 }
 object OESElementIndexUint {
   

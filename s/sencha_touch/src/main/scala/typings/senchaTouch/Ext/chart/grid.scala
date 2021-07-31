@@ -5,15 +5,15 @@ import typings.senchaTouch.Ext.draw.sprite.IPath
 import typings.senchaTouch.Ext.draw.sprite.ISprite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object grid {
   
   type ICircularGrid = ICircle
   
-  @js.native
-  trait IHorizontalGrid extends ISprite {
+  trait IHorizontalGrid
+    extends StObject
+       with ISprite {
     
     /** [Method] Render method
       * @param surface Object
@@ -27,9 +27,9 @@ object grid {
           /* surface */ js.UndefOr[js.Any], 
           /* ctx */ js.UndefOr[js.Any], 
           /* clipRegion */ js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IHorizontalGrid {
     
@@ -44,7 +44,7 @@ object grid {
       
       @scala.inline
       def setRender(
-        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => _
+        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -52,21 +52,22 @@ object grid {
     }
   }
   
-  @js.native
-  trait IRadialGrid extends IPath {
+  trait IRadialGrid
+    extends StObject
+       with IPath {
     
     /** [Method] Render method
       * @returns * returns false to stop rendering in this frame. All the sprite haven't been rendered will have their dirty flag untouched.
       */
     @JSName("render")
-    var render_IRadialGrid: js.UndefOr[js.Function0[_]] = js.native
+    var render_IRadialGrid: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Update the path
       * @param path Object
       * @param attr Object
       */
     @JSName("updatePath")
-    var updatePath_IRadialGrid: js.UndefOr[js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], Unit]] = js.native
+    var updatePath_IRadialGrid: js.UndefOr[js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IRadialGrid {
     
@@ -80,7 +81,7 @@ object grid {
     implicit class IRadialGridMutableBuilder[Self <: IRadialGrid] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRender(value: () => _): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -93,8 +94,9 @@ object grid {
     }
   }
   
-  @js.native
-  trait IVerticalGrid extends ISprite {
+  trait IVerticalGrid
+    extends StObject
+       with ISprite {
     
     /** [Method] Render method
       * @param surface Object
@@ -108,9 +110,9 @@ object grid {
           /* surface */ js.UndefOr[js.Any], 
           /* ctx */ js.UndefOr[js.Any], 
           /* clipRegion */ js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IVerticalGrid {
     
@@ -125,7 +127,7 @@ object grid {
       
       @scala.inline
       def setRender(
-        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => _
+        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
       @scala.inline

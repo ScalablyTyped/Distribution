@@ -2,18 +2,16 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'x' | 'y' | 'dy'> */
-@js.native
 trait LRNBackpropInputs extends StObject {
   
-  var dy: js.UndefOr[js.Any] = js.native
+  var dy: js.UndefOr[js.Any] = js.undefined
   
-  var x: js.UndefOr[js.Any] = js.native
+  var x: js.UndefOr[js.Any] = js.undefined
   
-  var y: js.UndefOr[js.Any] = js.native
+  var y: js.UndefOr[js.Any] = js.undefined
 }
 object LRNBackpropInputs {
   

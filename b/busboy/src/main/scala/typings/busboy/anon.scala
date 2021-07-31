@@ -2,27 +2,25 @@ package typings.busboy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FieldNameSize extends StObject {
     
-    var fieldNameSize: js.UndefOr[Double] = js.native
+    var fieldNameSize: js.UndefOr[Double] = js.undefined
     
-    var fieldSize: js.UndefOr[Double] = js.native
+    var fieldSize: js.UndefOr[Double] = js.undefined
     
-    var fields: js.UndefOr[Double] = js.native
+    var fields: js.UndefOr[Double] = js.undefined
     
-    var fileSize: js.UndefOr[Double] = js.native
+    var fileSize: js.UndefOr[Double] = js.undefined
     
-    var files: js.UndefOr[Double] = js.native
+    var files: js.UndefOr[Double] = js.undefined
     
-    var headerPairs: js.UndefOr[Double] = js.native
+    var headerPairs: js.UndefOr[Double] = js.undefined
     
-    var parts: js.UndefOr[Double] = js.native
+    var parts: js.UndefOr[Double] = js.undefined
   }
   object FieldNameSize {
     

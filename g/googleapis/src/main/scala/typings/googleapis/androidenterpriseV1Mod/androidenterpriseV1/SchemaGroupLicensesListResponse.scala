@@ -2,25 +2,23 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The grouplicense resources for the enterprise.
   */
-@js.native
 trait SchemaGroupLicensesListResponse extends StObject {
   
   /**
     * A group license for a product approved for use in the enterprise.
     */
-  var groupLicense: js.UndefOr[js.Array[SchemaGroupLicense]] = js.native
+  var groupLicense: js.UndefOr[js.Array[SchemaGroupLicense]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#groupLicensesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaGroupLicensesListResponse {
   

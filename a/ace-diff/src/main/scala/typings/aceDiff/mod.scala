@@ -7,29 +7,44 @@ import typings.aceDiff.anon.Left
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ace-diff", JSImport.Namespace)
   @js.native
-  class ^ protected () extends AceDiff {
+  class ^ protected ()
+    extends StObject
+       with AceDiff {
     def this(opts: AceDiffConstructorOpts) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def diff(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getEditors(): Left = js.native
+    
+    /* CompleteClass */
+    override def getNumDiffs(): Double = js.native
+    
+    /* CompleteClass */
+    override def setOptions(options: AceDiffOpts): Unit = js.native
   }
   
-  @js.native
   trait AceDiff extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def diff(): Unit = js.native
+    def diff(): Unit
     
-    def getEditors(): Left = js.native
+    def getEditors(): Left
     
-    def getNumDiffs(): Double = js.native
+    def getNumDiffs(): Double
     
-    def setOptions(options: AceDiffOpts): Unit = js.native
+    def setOptions(options: AceDiffOpts): Unit
   }
   object AceDiff {
     
@@ -65,16 +80,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait AceDiffConstructorOpts extends AceDiffOpts {
+  trait AceDiffConstructorOpts
+    extends StObject
+       with AceDiffOpts {
     
-    var element: String | HTMLElement = js.native
+    var element: String | HTMLElement
     
     @JSName("left")
-    var left_AceDiffConstructorOpts: AceDiffLROpts = js.native
+    var left_AceDiffConstructorOpts: AceDiffLROpts
     
     @JSName("right")
-    var right_AceDiffConstructorOpts: AceDiffLROpts = js.native
+    var right_AceDiffConstructorOpts: AceDiffLROpts
   }
   object AceDiffConstructorOpts {
     
@@ -98,18 +114,17 @@ object mod {
     }
   }
   
-  @js.native
   trait AceDiffLROpts extends StObject {
     
-    var content: js.UndefOr[String | Null] = js.native
+    var content: js.UndefOr[String | Null] = js.undefined
     
-    var copyLinkEnabled: js.UndefOr[Boolean] = js.native
+    var copyLinkEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
   }
   object AceDiffLROpts {
     
@@ -157,26 +172,25 @@ object mod {
     }
   }
   
-  @js.native
   trait AceDiffOpts extends StObject {
     
-    var classes: js.UndefOr[Connector] = js.native
+    var classes: js.UndefOr[Connector] = js.undefined
     
-    var diffGranularity: js.UndefOr[specific | broad] = js.native
+    var diffGranularity: js.UndefOr[specific | broad] = js.undefined
     
-    var left: js.UndefOr[AceDiffLROpts] = js.native
+    var left: js.UndefOr[AceDiffLROpts] = js.undefined
     
-    var maxDiffs: js.UndefOr[Double] = js.native
+    var maxDiffs: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var right: js.UndefOr[AceDiffLROpts] = js.native
+    var right: js.UndefOr[AceDiffLROpts] = js.undefined
     
-    var showConnectors: js.UndefOr[Boolean] = js.native
+    var showConnectors: js.UndefOr[Boolean] = js.undefined
     
-    var showDiffs: js.UndefOr[Boolean] = js.native
+    var showDiffs: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
   }
   object AceDiffOpts {
     

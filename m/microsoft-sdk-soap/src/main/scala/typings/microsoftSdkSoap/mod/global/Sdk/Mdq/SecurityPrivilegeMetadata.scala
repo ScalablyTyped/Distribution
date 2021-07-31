@@ -11,31 +11,29 @@ import typings.microsoftSdkSoap.microsoftSdkSoapStrings.Share
 import typings.microsoftSdkSoap.microsoftSdkSoapStrings.Write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityPrivilegeMetadata extends StObject {
   
-  var CanBeBasic: Boolean = js.native
+  var CanBeBasic: Boolean
   
-  var CanBeDeep: Boolean = js.native
+  var CanBeDeep: Boolean
   
-  var CanBeEntityReference: Boolean = js.native
+  var CanBeEntityReference: Boolean
   
-  var CanBeGlobal: Boolean = js.native
+  var CanBeGlobal: Boolean
   
-  var CanBeLocal: Boolean = js.native
+  var CanBeLocal: Boolean
   
-  var CanBeParentEntityReference: Boolean = js.native
+  var CanBeParentEntityReference: Boolean
   
-  var ExtensionData: Boolean = js.native
+  var ExtensionData: Boolean
   
-  var Name: String = js.native
+  var Name: String
   
-  var PrivilegeId: String = js.native
+  var PrivilegeId: String
   
-  var PrivilegeType: Append | AppendTo | Assign | Create | Delete | None | Read | Share | Write = js.native
+  var PrivilegeType: Append | AppendTo | Assign | Create | Delete | None | Read | Share | Write
 }
 object SecurityPrivilegeMetadata {
   

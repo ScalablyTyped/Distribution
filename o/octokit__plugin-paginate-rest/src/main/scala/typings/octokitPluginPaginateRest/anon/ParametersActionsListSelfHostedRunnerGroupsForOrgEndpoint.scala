@@ -5,22 +5,20 @@ import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnerGroupsForOrg
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint extends StObject {
   
-  var parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint = js.native
+  var parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint
   
-  var response: OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] with `2` = js.native
+  var response: OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] & `2`
 }
 object ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint {
   
   @scala.inline
   def apply(
     parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint,
-    response: OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] with `2`
+    response: OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] & `2`
   ): ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint]
@@ -33,6 +31,6 @@ object ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint {
     def setParameters(value: ActionsListSelfHostedRunnerGroupsForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] with `2`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] & `2`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

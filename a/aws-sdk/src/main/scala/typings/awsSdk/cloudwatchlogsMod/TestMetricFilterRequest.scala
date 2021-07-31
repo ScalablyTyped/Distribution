@@ -2,18 +2,16 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestMetricFilterRequest extends StObject {
   
-  var filterPattern: FilterPattern = js.native
+  var filterPattern: FilterPattern
   
   /**
     * The log event messages to test.
     */
-  var logEventMessages: TestEventMessages = js.native
+  var logEventMessages: TestEventMessages
 }
 object TestMetricFilterRequest {
   

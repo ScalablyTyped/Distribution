@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTransitGatewayResult extends StObject {
   
   /**
     * Information about the deleted transit gateway.
     */
-  var TransitGateway: js.UndefOr[typings.awsSdk.ec2Mod.TransitGateway] = js.native
+  var TransitGateway: js.UndefOr[typings.awsSdk.ec2Mod.TransitGateway] = js.undefined
 }
 object DeleteTransitGatewayResult {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Notification")
@@ -32,7 +31,7 @@ class ResourceNotification protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaNotification] = js.native
   def get(callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
   def get(params: ParamsResourceNotificationGet): GaxiosPromise[SchemaNotification] = js.native
   def get(params: ParamsResourceNotificationGet, callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
   def get(

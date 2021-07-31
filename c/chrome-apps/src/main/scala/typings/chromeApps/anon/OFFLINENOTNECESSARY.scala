@@ -5,23 +5,21 @@ import typings.chromeApps.chromeAppsStrings.SAVE_FOR_OFFLINE
 import typings.chromeApps.chromeAppsStrings.SHARE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OFFLINENOTNECESSARY extends StObject {
   
-  var OFFLINE_NOT_NECESSARY: typings.chromeApps.chromeAppsStrings.OFFLINE_NOT_NECESSARY = js.native
+  var OFFLINE_NOT_NECESSARY: typings.chromeApps.chromeAppsStrings.OFFLINE_NOT_NECESSARY
   
-  var SAVE_FOR_OFFLINE: typings.chromeApps.chromeAppsStrings.SAVE_FOR_OFFLINE = js.native
+  var SAVE_FOR_OFFLINE: typings.chromeApps.chromeAppsStrings.SAVE_FOR_OFFLINE
   
-  var SHARE: typings.chromeApps.chromeAppsStrings.SHARE = js.native
+  var SHARE: typings.chromeApps.chromeAppsStrings.SHARE
 }
 object OFFLINENOTNECESSARY {
   
   @scala.inline
-  def apply(OFFLINE_NOT_NECESSARY: OFFLINE_NOT_NECESSARY, SAVE_FOR_OFFLINE: SAVE_FOR_OFFLINE, SHARE: SHARE): OFFLINENOTNECESSARY = {
-    val __obj = js.Dynamic.literal(OFFLINE_NOT_NECESSARY = OFFLINE_NOT_NECESSARY.asInstanceOf[js.Any], SAVE_FOR_OFFLINE = SAVE_FOR_OFFLINE.asInstanceOf[js.Any], SHARE = SHARE.asInstanceOf[js.Any])
+  def apply(): OFFLINENOTNECESSARY = {
+    val __obj = js.Dynamic.literal(OFFLINE_NOT_NECESSARY = "OFFLINE_NOT_NECESSARY", SAVE_FOR_OFFLINE = "SAVE_FOR_OFFLINE", SHARE = "SHARE")
     __obj.asInstanceOf[OFFLINENOTNECESSARY]
   }
   

@@ -2,10 +2,8 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectIdentity extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ObjectIdentity extends StObject {
     * other Azure AD organization, this will be the domain of the federated organization, for example contoso.com.Supports
     * $filter. 512 character limit.
     */
-  var issuer: js.UndefOr[NullableOption[String]] = js.native
+  var issuer: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must
@@ -23,7 +21,7 @@ trait ObjectIdentity extends StObject {
     * emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must be a valid local part of
     * an email addressSupports $filter. 512 character limit.
     */
-  var issuerAssignedId: js.UndefOr[NullableOption[String]] = js.native
+  var issuerAssignedId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies the user sign-in types in your directory, such as emailAddress, userName or federated. Here, federated
@@ -31,7 +29,7 @@ trait ObjectIdentity extends StObject {
     * validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can
     * also be set to any custom string.
     */
-  var signInType: js.UndefOr[NullableOption[String]] = js.native
+  var signInType: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ObjectIdentity {
   

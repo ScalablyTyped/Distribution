@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoubleVerifyAppStarRating extends StObject {
   
   /** Avoid bidding on apps with insufficient star ratings. */
-  var avoidInsufficientStarRating: js.UndefOr[Boolean] = js.native
+  var avoidInsufficientStarRating: js.UndefOr[Boolean] = js.undefined
   
   /** Avoid bidding on apps with the star ratings. */
-  var avoidedStarRating: js.UndefOr[String] = js.native
+  var avoidedStarRating: js.UndefOr[String] = js.undefined
 }
 object DoubleVerifyAppStarRating {
   

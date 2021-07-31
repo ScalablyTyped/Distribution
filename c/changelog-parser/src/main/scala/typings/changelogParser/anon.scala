@@ -2,18 +2,16 @@ package typings.changelogParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<changelog-parser.changelog-parser.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var filePath: js.UndefOr[String] = js.native
+    var filePath: js.UndefOr[String] = js.undefined
     
-    var removeMarkdown: js.UndefOr[Boolean] = js.native
+    var removeMarkdown: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptions {
     

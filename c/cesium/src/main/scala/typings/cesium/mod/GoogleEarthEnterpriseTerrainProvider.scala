@@ -5,7 +5,6 @@ import typings.std.Request
 import typings.std.Uint16Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "GoogleEarthEnterpriseTerrainProvider")
@@ -17,7 +16,7 @@ class GoogleEarthEnterpriseTerrainProvider protected () extends StObject {
   
   var credit: Credit = js.native
   
-  var errorEvent: Event[js.Array[_]] = js.native
+  var errorEvent: Event[js.Array[js.Any]] = js.native
   
   def getLevelMaximumGeometricError(level: Double): Double = js.native
   
@@ -43,14 +42,12 @@ object GoogleEarthEnterpriseTerrainProvider {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "GoogleEarthEnterpriseTerrainProvider.getEstimatedLevelZeroGeometricErrorForAHeightmap")
-  @js.native
-  def getEstimatedLevelZeroGeometricErrorForAHeightmap(ellipsoid: Ellipsoid, tileImageWidth: Double, numberOfTilesAtLevelZero: Double): Double = js.native
+  @scala.inline
+  def getEstimatedLevelZeroGeometricErrorForAHeightmap(ellipsoid: Ellipsoid, tileImageWidth: Double, numberOfTilesAtLevelZero: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getEstimatedLevelZeroGeometricErrorForAHeightmap")(ellipsoid.asInstanceOf[js.Any], tileImageWidth.asInstanceOf[js.Any], numberOfTilesAtLevelZero.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "GoogleEarthEnterpriseTerrainProvider.getRegularGridIndices")
-  @js.native
-  def getRegularGridIndices(width: Double, height: Double): Uint16Array = js.native
+  @scala.inline
+  def getRegularGridIndices(width: Double, height: Double): Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegularGridIndices")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
   
   /* static member */
   @JSImport("cesium", "GoogleEarthEnterpriseTerrainProvider.heightmapTerrainQuality")

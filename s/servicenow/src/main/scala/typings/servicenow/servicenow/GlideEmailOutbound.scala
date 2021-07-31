@@ -2,23 +2,21 @@ package typings.servicenow.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideEmailOutbound extends StObject {
   
-  def addAddress(`type`: String, address: String, displayName: String): Unit = js.native
+  def addAddress(`type`: String, address: String, displayName: String): Unit
   
-  def getSubject(): String = js.native
+  def getSubject(): String
   
-  def setBody(bodyText: String): Unit = js.native
+  def setBody(bodyText: String): Unit
   
-  def setFrom(address: String): Unit = js.native
+  def setFrom(address: String): Unit
   
-  def setReplyTo(address: String): Unit = js.native
+  def setReplyTo(address: String): Unit
   
-  def setSubject(subject: String): Unit = js.native
+  def setSubject(subject: String): Unit
 }
 object GlideEmailOutbound {
   

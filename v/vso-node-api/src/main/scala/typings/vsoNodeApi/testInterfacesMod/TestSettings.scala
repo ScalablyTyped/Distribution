@@ -2,46 +2,44 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestSettings extends StObject {
   
   /**
     * Area path required to create test settings
     */
-  var areaPath: String = js.native
+  var areaPath: String
   
   /**
     * Description of the test settings. Used in create test settings.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Indicates if the tests settings is public or private.Used in create test settings.
     */
-  var isPublic: Boolean = js.native
+  var isPublic: Boolean
   
   /**
     * Xml string of machine roles. Used in create test settings.
     */
-  var machineRoles: String = js.native
+  var machineRoles: String
   
   /**
     * Test settings content.
     */
-  var testSettingsContent: String = js.native
+  var testSettingsContent: String
   
   /**
     * Test settings id.
     */
-  var testSettingsId: Double = js.native
+  var testSettingsId: Double
   
   /**
     * Test settings name.
     */
-  var testSettingsName: String = js.native
+  var testSettingsName: String
 }
 object TestSettings {
   

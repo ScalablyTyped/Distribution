@@ -5,31 +5,29 @@ import typings.arcgisJsApi.arcgisJsApiStrings.mouse
 import typings.arcgisJsApi.arcgisJsApiStrings.touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapViewPointerUpEvent extends StObject {
   
-  var button: Double = js.native
+  var button: Double
   
-  var buttons: Double = js.native
+  var buttons: Double
   
-  var native: js.Any = js.native
+  var native: js.Any
   
-  var pointerId: Double = js.native
+  var pointerId: Double
   
-  var pointerType: mouse | touch = js.native
+  var pointerType: mouse | touch
   
-  var stopPropagation: js.Function = js.native
+  var stopPropagation: js.Function
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var `type`: `pointer-up` = js.native
+  var `type`: `pointer-up`
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object MapViewPointerUpEvent {
   
@@ -42,12 +40,11 @@ object MapViewPointerUpEvent {
     pointerType: mouse | touch,
     stopPropagation: js.Function,
     timestamp: Double,
-    `type`: `pointer-up`,
     x: Double,
     y: Double
   ): MapViewPointerUpEvent = {
     val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pointer-up")
     __obj.asInstanceOf[MapViewPointerUpEvent]
   }
   

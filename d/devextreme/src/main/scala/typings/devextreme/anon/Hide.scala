@@ -3,15 +3,13 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.animationConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hide extends StObject {
   
-  var hide: js.UndefOr[animationConfig] = js.native
+  var hide: js.UndefOr[animationConfig] = js.undefined
   
-  var show: js.UndefOr[animationConfig] = js.native
+  var show: js.UndefOr[animationConfig] = js.undefined
 }
 object Hide {
   

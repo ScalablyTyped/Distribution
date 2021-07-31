@@ -2,13 +2,11 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthSetting extends StObject {
   
-  var authSetting: typings.baiduApp.swan.AuthSetting = js.native
+  var authSetting: typings.baiduApp.swan.AuthSetting
 }
 object AuthSetting {
   

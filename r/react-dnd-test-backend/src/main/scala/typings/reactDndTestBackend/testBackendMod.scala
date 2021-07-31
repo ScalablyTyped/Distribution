@@ -8,14 +8,15 @@ import typings.dndCore.interfacesMod.Identifier
 import typings.dndCore.interfacesMod.Unsubscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testBackendMod {
   
   @JSImport("react-dnd-test-backend/lib/TestBackend", "TestBackendImpl")
   @js.native
-  class TestBackendImpl protected () extends ITestBackend {
+  class TestBackendImpl protected ()
+    extends StObject
+       with ITestBackend {
     def this(manager: DragDropManager) = this()
     
     var actions: js.Any = js.native
@@ -34,7 +35,9 @@ object testBackendMod {
   }
   
   @js.native
-  trait ITestBackend extends Backend {
+  trait ITestBackend
+    extends StObject
+       with Backend {
     
     var didCallSetup: Boolean = js.native
     

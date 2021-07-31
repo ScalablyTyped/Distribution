@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaJobConfigurationTableCopy extends StObject {
   
   /**
@@ -16,27 +14,27 @@ trait SchemaJobConfigurationTableCopy extends StObject {
     * result. The default value is CREATE_IF_NEEDED. Creation, truncation and
     * append actions occur as one atomic update upon job completion.
     */
-  var createDisposition: js.UndefOr[String] = js.native
+  var createDisposition: js.UndefOr[String] = js.undefined
   
   /**
     * Custom encryption configuration (e.g., Cloud KMS keys).
     */
-  var destinationEncryptionConfiguration: js.UndefOr[SchemaEncryptionConfiguration] = js.native
+  var destinationEncryptionConfiguration: js.UndefOr[SchemaEncryptionConfiguration] = js.undefined
   
   /**
     * [Required] The destination table
     */
-  var destinationTable: js.UndefOr[SchemaTableReference] = js.native
+  var destinationTable: js.UndefOr[SchemaTableReference] = js.undefined
   
   /**
     * [Pick one] Source table to copy.
     */
-  var sourceTable: js.UndefOr[SchemaTableReference] = js.native
+  var sourceTable: js.UndefOr[SchemaTableReference] = js.undefined
   
   /**
     * [Pick one] Source tables to copy.
     */
-  var sourceTables: js.UndefOr[js.Array[SchemaTableReference]] = js.native
+  var sourceTables: js.UndefOr[js.Array[SchemaTableReference]] = js.undefined
   
   /**
     * [Optional] Specifies the action that occurs if the destination table
@@ -49,7 +47,7 @@ trait SchemaJobConfigurationTableCopy extends StObject {
     * is able to complete the job successfully. Creation, truncation and append
     * actions occur as one atomic update upon job completion.
     */
-  var writeDisposition: js.UndefOr[String] = js.native
+  var writeDisposition: js.UndefOr[String] = js.undefined
 }
 object SchemaJobConfigurationTableCopy {
   

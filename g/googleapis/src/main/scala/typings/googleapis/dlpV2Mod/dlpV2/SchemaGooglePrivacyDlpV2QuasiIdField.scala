@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A quasi-identifier column has a custom_tag, used to know which column in
   * the data corresponds to which column in the statistical model.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2QuasiIdField extends StObject {
   
-  var customTag: js.UndefOr[String] = js.native
+  var customTag: js.UndefOr[String] = js.undefined
   
-  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2QuasiIdField {
   

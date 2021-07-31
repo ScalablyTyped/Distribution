@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForDeliveryStreamOutput extends StObject {
   
   /**
     * If this is true in the response, more tags are available. To list the remaining tags, set ExclusiveStartTagKey to the key of the last tag returned and call ListTagsForDeliveryStream again.
     */
-  var HasMoreTags: BooleanObject = js.native
+  var HasMoreTags: BooleanObject
   
   /**
     * A list of tags associated with DeliveryStreamName, starting with the first tag after ExclusiveStartTagKey and up to the specified Limit.
     */
-  var Tags: ListTagsForDeliveryStreamOutputTagList = js.native
+  var Tags: ListTagsForDeliveryStreamOutputTagList
 }
 object ListTagsForDeliveryStreamOutput {
   

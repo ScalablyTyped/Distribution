@@ -22,7 +22,6 @@ import typings.reactPlotlyJs.anon.ReadonlySliderEndEvent
 import typings.reactPlotlyJs.anon.ReadonlySliderStartEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,20 +31,19 @@ object mod {
   class default ()
     extends PureComponent[PlotParams, js.Object, js.Any]
   
-  @js.native
   trait Figure extends StObject {
     
-    var data: js.Array[Data] = js.native
+    var data: js.Array[Data]
     
-    var frames: js.Array[Frame] | Null = js.native
+    var frames: js.Array[Frame] | Null
     
-    var layout: PartialLayout = js.native
+    var layout: PartialLayout
   }
   object Figure {
     
     @scala.inline
     def apply(data: js.Array[Data], layout: PartialLayout): Figure = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], frames = null)
       __obj.asInstanceOf[Figure]
     }
     
@@ -74,65 +72,64 @@ object mod {
   
   type Plot = PureComponent[PlotParams, js.Object, js.Any]
   
-  @js.native
   trait PlotParams extends StObject {
     
     /**
       * applied to the <div> into which the plot is rendered
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var config: js.UndefOr[PartialConfig] = js.native
+    var config: js.UndefOr[PartialConfig] = js.undefined
     
-    var data: js.Array[Data] = js.native
+    var data: js.Array[Data]
     
     /**
       * Assign the graph div to window.gd for debugging
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * id assigned to the <div> into which the plot is rendered.
       */
-    var divId: js.UndefOr[String] = js.native
+    var divId: js.UndefOr[String] = js.undefined
     
-    var frames: js.UndefOr[js.Array[Frame]] = js.native
+    var frames: js.UndefOr[js.Array[Frame]] = js.undefined
     
-    var layout: PartialLayout = js.native
+    var layout: PartialLayout
     
-    var onAfterExport: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAfterExport: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onAfterPlot: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAfterPlot: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onAnimated: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAnimated: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onAnimatingFrame: js.UndefOr[js.Function1[/* event */ ReadonlyFrameAnimationEve, Unit]] = js.native
+    var onAnimatingFrame: js.UndefOr[js.Function1[/* event */ ReadonlyFrameAnimationEve, Unit]] = js.undefined
     
-    var onAnimationInterrupted: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAnimationInterrupted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onAutoSize: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAutoSize: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onBeforeExport: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBeforeExport: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onButtonClicked: js.UndefOr[js.Function1[/* event */ ButtonClickEvent, Unit]] = js.native
+    var onButtonClicked: js.UndefOr[js.Function1[/* event */ ButtonClickEvent, Unit]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Unit]] = js.undefined
     
-    var onClickAnnotation: js.UndefOr[js.Function1[/* event */ ReadonlyClickAnnotationEv, Unit]] = js.native
+    var onClickAnnotation: js.UndefOr[js.Function1[/* event */ ReadonlyClickAnnotationEv, Unit]] = js.undefined
     
-    var onDeselect: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDeselect: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDoubleClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback executed when a plotly.js API method rejects
       * @param err Error
       */
-    var onError: js.UndefOr[js.Function1[/* err */ ReadonlyError, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* err */ ReadonlyError, Unit]] = js.undefined
     
-    var onFramework: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFramework: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onHover: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Unit]] = js.native
+    var onHover: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Unit]] = js.undefined
     
     /**
       * Callback executed after plot is initialized.
@@ -141,11 +138,11 @@ object mod {
       */
     var onInitialized: js.UndefOr[
         js.Function2[/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onLegendClick: js.UndefOr[js.Function1[/* event */ ReadonlyLegendClickEvent, Boolean]] = js.native
+    var onLegendClick: js.UndefOr[js.Function1[/* event */ ReadonlyLegendClickEvent, Boolean]] = js.undefined
     
-    var onLegendDoubleClick: js.UndefOr[js.Function1[/* event */ ReadonlyLegendClickEvent, Boolean]] = js.native
+    var onLegendDoubleClick: js.UndefOr[js.Function1[/* event */ ReadonlyLegendClickEvent, Boolean]] = js.undefined
     
     /**
       * Callback executed when component unmounts, before Plotly.purge strips the graphDiv of all private attributes.
@@ -154,29 +151,29 @@ object mod {
       */
     var onPurge: js.UndefOr[
         js.Function2[/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onRedraw: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRedraw: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onRelayout: js.UndefOr[js.Function1[/* event */ ReadonlyPlotRelayoutEvent, Unit]] = js.native
+    var onRelayout: js.UndefOr[js.Function1[/* event */ ReadonlyPlotRelayoutEvent, Unit]] = js.undefined
     
-    var onRestyle: js.UndefOr[js.Function1[/* event */ PlotRestyleEvent, Unit]] = js.native
+    var onRestyle: js.UndefOr[js.Function1[/* event */ PlotRestyleEvent, Unit]] = js.undefined
     
-    var onSelected: js.UndefOr[js.Function1[/* event */ ReadonlyPlotSelectionEven, Unit]] = js.native
+    var onSelected: js.UndefOr[js.Function1[/* event */ ReadonlyPlotSelectionEven, Unit]] = js.undefined
     
-    var onSelecting: js.UndefOr[js.Function1[/* event */ ReadonlyPlotSelectionEven, Unit]] = js.native
+    var onSelecting: js.UndefOr[js.Function1[/* event */ ReadonlyPlotSelectionEven, Unit]] = js.undefined
     
-    var onSliderChange: js.UndefOr[js.Function1[/* event */ ReadonlySliderChangeEvent, Unit]] = js.native
+    var onSliderChange: js.UndefOr[js.Function1[/* event */ ReadonlySliderChangeEvent, Unit]] = js.undefined
     
-    var onSliderEnd: js.UndefOr[js.Function1[/* event */ ReadonlySliderEndEvent, Unit]] = js.native
+    var onSliderEnd: js.UndefOr[js.Function1[/* event */ ReadonlySliderEndEvent, Unit]] = js.undefined
     
-    var onSliderStart: js.UndefOr[js.Function1[/* event */ ReadonlySliderStartEvent, Unit]] = js.native
+    var onSliderStart: js.UndefOr[js.Function1[/* event */ ReadonlySliderStartEvent, Unit]] = js.undefined
     
-    var onTransitionInterrupted: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTransitionInterrupted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onTransitioning: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTransitioning: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onUnhover: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Unit]] = js.native
+    var onUnhover: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Unit]] = js.undefined
     
     /**
       * Callback executed when when a plot is updated due to new data or layout, or when user interacts with a plot.
@@ -185,22 +182,22 @@ object mod {
       */
     var onUpdate: js.UndefOr[
         js.Function2[/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * When provided, causes the plot to update only when the revision is incremented.
       */
-    var revision: js.UndefOr[Double] = js.native
+    var revision: js.UndefOr[Double] = js.undefined
     
     /**
       * used to style the <div> into which the plot is rendered
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * When true, adds a call to Plotly.Plot.resize() as a window.resize event handler
       */
-    var useResizeHandler: js.UndefOr[Boolean] = js.native
+    var useResizeHandler: js.UndefOr[Boolean] = js.undefined
   }
   object PlotParams {
     

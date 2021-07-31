@@ -2,23 +2,21 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginInfo extends StObject {
   
-  var Config: PluginConfig = js.native
+  var Config: PluginConfig
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var Name: String = js.native
+  var Name: String
   
-  var PluginReference: js.UndefOr[String] = js.native
+  var PluginReference: js.UndefOr[String] = js.undefined
   
-  var Settings: PluginSettings = js.native
+  var Settings: PluginSettings
 }
 object PluginInfo {
   

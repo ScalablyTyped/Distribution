@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** used to receive notifications from an {@link XDynamicResultSet} . */
-@js.native
-trait XDynamicResultSetListener extends XEventListener {
+trait XDynamicResultSetListener
+  extends StObject
+     with XEventListener {
   
   /**
     * A method used to propagate changes of a result set.
@@ -27,7 +27,7 @@ trait XDynamicResultSetListener extends XEventListener {
     * return immediately is while it disposes its broadcaster or while it is removing itself as listener (otherwise you deadlock)!!!
     * @param Changes the changes to notify.
     */
-  def notify(Changes: ListEvent): Unit = js.native
+  def notify(Changes: ListEvent): Unit
 }
 object XDynamicResultSetListener {
   

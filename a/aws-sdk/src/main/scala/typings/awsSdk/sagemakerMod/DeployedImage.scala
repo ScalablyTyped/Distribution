@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeployedImage extends StObject {
   
   /**
     * The date and time when the image path for the model resolved to the ResolvedImage 
     */
-  var ResolutionTime: js.UndefOr[Timestamp] = js.native
+  var ResolutionTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The specific digest path of the image hosted in this ProductionVariant.
     */
-  var ResolvedImage: js.UndefOr[ContainerImage] = js.native
+  var ResolvedImage: js.UndefOr[ContainerImage] = js.undefined
   
   /**
     * The image path you specified when you created the model.
     */
-  var SpecifiedImage: js.UndefOr[ContainerImage] = js.native
+  var SpecifiedImage: js.UndefOr[ContainerImage] = js.undefined
 }
 object DeployedImage {
   

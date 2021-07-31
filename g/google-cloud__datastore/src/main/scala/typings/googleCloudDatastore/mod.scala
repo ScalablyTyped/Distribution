@@ -16,7 +16,6 @@ import typings.googleCloudDatastore.queryMod.NoMoreResults
 import typings.googleCloudDatastore.transactionMod.DatastoreTransaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -126,18 +125,17 @@ object mod {
     def transaction(): DatastoreTransaction = js.native
   }
   
-  @js.native
   trait InitOptions extends StObject {
     
-    var apiEndpoint: js.UndefOr[String] = js.native
+    var apiEndpoint: js.UndefOr[String] = js.undefined
     
-    var credentials: js.UndefOr[js.Object] = js.native
+    var credentials: js.UndefOr[js.Object] = js.undefined
     
-    var keyFilename: js.UndefOr[String] = js.native
+    var keyFilename: js.UndefOr[String] = js.undefined
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
-    var projectId: js.UndefOr[String] = js.native
+    var projectId: js.UndefOr[String] = js.undefined
   }
   object InitOptions {
     

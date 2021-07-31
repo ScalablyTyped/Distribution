@@ -10,7 +10,6 @@ import typings.maximMazurokGapiClientBillingbudgets.anon.Key
 import typings.maximMazurokGapiClientBillingbudgets.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -19,10 +18,9 @@ object gapi {
     
     object billingbudgets {
       
-      @js.native
       trait BillingAccountsResource extends StObject {
         
-        var budgets: BudgetsResource = js.native
+        var budgets: BudgetsResource
       }
       object BillingAccountsResource {
         
@@ -73,29 +71,28 @@ object gapi {
         def patch(request: Name, body: GoogleCloudBillingBudgetsV1Budget): Request[GoogleCloudBillingBudgetsV1Budget] = js.native
       }
       
-      @js.native
       trait GoogleCloudBillingBudgetsV1Budget extends StObject {
         
         /** Required. Budgeted amount. */
-        var amount: js.UndefOr[GoogleCloudBillingBudgetsV1BudgetAmount] = js.native
+        var amount: js.UndefOr[GoogleCloudBillingBudgetsV1BudgetAmount] = js.undefined
         
         /** Optional. Filters that define which resources are used to compute the actual spend against the budget. */
-        var budgetFilter: js.UndefOr[GoogleCloudBillingBudgetsV1Filter] = js.native
+        var budgetFilter: js.UndefOr[GoogleCloudBillingBudgetsV1Filter] = js.undefined
         
         /** User data for display name in UI. The name must be less than or equal to 60 characters. */
-        var displayName: js.UndefOr[String] = js.native
+        var displayName: js.UndefOr[String] = js.undefined
         
         /** Optional. Etag to validate that the object is unchanged for a read-modify-write operation. An empty etag will cause an update to overwrite other changes. */
-        var etag: js.UndefOr[String] = js.native
+        var etag: js.UndefOr[String] = js.undefined
         
         /** Output only. Resource name of the budget. The resource name implies the scope of a budget. Values are of the form `billingAccounts/{billingAccountId}/budgets/{budgetId}`. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** Optional. Rules to apply to notifications sent based on budget spend and thresholds. */
-        var notificationsRule: js.UndefOr[GoogleCloudBillingBudgetsV1NotificationsRule] = js.native
+        var notificationsRule: js.UndefOr[GoogleCloudBillingBudgetsV1NotificationsRule] = js.undefined
         
         /** Optional. Rules that trigger alerts (notifications of thresholds being crossed) when spend exceeds the specified percentages of the budget. */
-        var thresholdRules: js.UndefOr[js.Array[GoogleCloudBillingBudgetsV1ThresholdRule]] = js.native
+        var thresholdRules: js.UndefOr[js.Array[GoogleCloudBillingBudgetsV1ThresholdRule]] = js.undefined
       }
       object GoogleCloudBillingBudgetsV1Budget {
         
@@ -155,14 +152,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleCloudBillingBudgetsV1BudgetAmount extends StObject {
         
         /** Use the last period's actual spend as the budget for the present period. */
-        var lastPeriodAmount: js.UndefOr[js.Any] = js.native
+        var lastPeriodAmount: js.UndefOr[js.Any] = js.undefined
         
         /** A specified amount to use as the budget. `currency_code` is optional. If specified, it must match the currency of the billing account. The `currency_code` is provided on output. */
-        var specifiedAmount: js.UndefOr[GoogleTypeMoney] = js.native
+        var specifiedAmount: js.UndefOr[GoogleTypeMoney] = js.undefined
       }
       object GoogleCloudBillingBudgetsV1BudgetAmount {
         
@@ -189,7 +185,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleCloudBillingBudgetsV1Filter extends StObject {
         
         /**
@@ -197,10 +192,10 @@ object gapi {
           * calculations. If Filter.credit_types_treatment is **not** INCLUDE_SPECIFIED_CREDITS, this field must be empty. See [a list of acceptable credit type
           * values](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-tables#credits-type).
           */
-        var creditTypes: js.UndefOr[js.Array[String]] = js.native
+        var creditTypes: js.UndefOr[js.Array[String]] = js.undefined
         
         /** Optional. If not set, default behavior is `INCLUDE_ALL_CREDITS`. */
-        var creditTypesTreatment: js.UndefOr[String] = js.native
+        var creditTypesTreatment: js.UndefOr[String] = js.undefined
         
         /**
           * Optional. A single label and value pair specifying that usage from only this set of labeled resources should be included in the budget. Currently, multiple entries or multiple
@@ -209,27 +204,27 @@ object gapi {
         var labels: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: std.Array<any>}
-          */ typings.maximMazurokGapiClientBillingbudgets.maximMazurokGapiClientBillingbudgetsStrings.GoogleCloudBillingBudgetsV1Filter with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientBillingbudgets.maximMazurokGapiClientBillingbudgetsStrings.GoogleCloudBillingBudgetsV1Filter & TopLevel[js.Any]
+              ] = js.undefined
         
         /**
           * Optional. A set of projects of the form `projects/{project}`, specifying that usage from only this set of projects should be included in the budget. If omitted, the report will
           * include all usage for the billing account, regardless of which project the usage occurred on. Only zero or one project can be specified currently.
           */
-        var projects: js.UndefOr[js.Array[String]] = js.native
+        var projects: js.UndefOr[js.Array[String]] = js.undefined
         
         /**
           * Optional. A set of services of the form `services/{service_id}`, specifying that usage from only this set of services should be included in the budget. If omitted, the report will
           * include usage for all the services. The service names are available through the Catalog API: https://cloud.google.com/billing/v1/how-tos/catalog-api.
           */
-        var services: js.UndefOr[js.Array[String]] = js.native
+        var services: js.UndefOr[js.Array[String]] = js.undefined
         
         /**
           * Optional. A set of subaccounts of the form `billingAccounts/{account_id}`, specifying that usage from only this set of subaccounts should be included in the budget. If a subaccount
           * is set to the name of the parent account, usage from the parent account will be included. If the field is omitted, the report will include usage from the parent account and all
           * subaccounts, if they exist.
           */
-        var subaccounts: js.UndefOr[js.Array[String]] = js.native
+        var subaccounts: js.UndefOr[js.Array[String]] = js.undefined
       }
       object GoogleCloudBillingBudgetsV1Filter {
         
@@ -261,7 +256,7 @@ object gapi {
           def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: std.Array<any>}
-            */ typings.maximMazurokGapiClientBillingbudgets.maximMazurokGapiClientBillingbudgetsStrings.GoogleCloudBillingBudgetsV1Filter with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientBillingbudgets.maximMazurokGapiClientBillingbudgetsStrings.GoogleCloudBillingBudgetsV1Filter & TopLevel[js.Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -297,17 +292,15 @@ object gapi {
       }
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait GoogleCloudBillingBudgetsV1LastPeriodAmount extends StObject
       
-      @js.native
       trait GoogleCloudBillingBudgetsV1ListBudgetsResponse extends StObject {
         
         /** List of the budgets owned by the requested billing account. */
-        var budgets: js.UndefOr[js.Array[GoogleCloudBillingBudgetsV1Budget]] = js.native
+        var budgets: js.UndefOr[js.Array[GoogleCloudBillingBudgetsV1Budget]] = js.undefined
         
         /** If not empty, indicates that there may be more budgets that match the request; this value should be passed in a new `ListBudgetsRequest`. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object GoogleCloudBillingBudgetsV1ListBudgetsResponse {
         
@@ -337,21 +330,20 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleCloudBillingBudgetsV1NotificationsRule extends StObject {
         
         /**
           * Optional. When set to true, disables default notifications sent when a threshold is exceeded. Default notifications are sent to those with Billing Account Administrator and Billing
           * Account User IAM roles for the target account.
           */
-        var disableDefaultIamRecipients: js.UndefOr[Boolean] = js.native
+        var disableDefaultIamRecipients: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Optional. Targets to send notifications to when a threshold is exceeded. This is in addition to default recipients who have billing account IAM roles. The value is the full REST
           * resource name of a monitoring notification channel with the form `projects/{project_id}/notificationChannels/{channel_id}`. A maximum of 5 channels are allowed. See
           * https://cloud.google.com/billing/docs/how-to/budgets-notification-recipients for more details.
           */
-        var monitoringNotificationChannels: js.UndefOr[js.Array[String]] = js.native
+        var monitoringNotificationChannels: js.UndefOr[js.Array[String]] = js.undefined
         
         /**
           * Optional. The name of the Pub/Sub topic where budget related messages will be published, in the form `projects/{project_id}/topics/{topic_id}`. Updates are sent at regular intervals
@@ -359,13 +351,13 @@ object gapi {
           * expected to have `pubsub.topics.setIamPolicy` permission on the topic when it's set for a budget, otherwise, the API call will fail with PERMISSION_DENIED. See
           * https://cloud.google.com/billing/docs/how-to/budgets-programmatic-notifications for more details on Pub/Sub roles and permissions.
           */
-        var pubsubTopic: js.UndefOr[String] = js.native
+        var pubsubTopic: js.UndefOr[String] = js.undefined
         
         /**
           * Optional. The schema version of the notification sent to `pubsub_topic`. Only "1.0" is accepted. It represents the JSON schema as defined in
           * https://cloud.google.com/billing/docs/how-to/budgets-programmatic-notifications#notification_format
           */
-        var schemaVersion: js.UndefOr[String] = js.native
+        var schemaVersion: js.UndefOr[String] = js.undefined
       }
       object GoogleCloudBillingBudgetsV1NotificationsRule {
         
@@ -407,14 +399,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleCloudBillingBudgetsV1ThresholdRule extends StObject {
         
         /** Optional. The type of basis used to determine if spend has passed the threshold. Behavior defaults to CURRENT_SPEND if not set. */
-        var spendBasis: js.UndefOr[String] = js.native
+        var spendBasis: js.UndefOr[String] = js.undefined
         
         /** Required. Send an alert when this threshold is exceeded. This is a 1.0-based percentage, so 0.5 = 50%. Validation: non-negative number. */
-        var thresholdPercent: js.UndefOr[Double] = js.native
+        var thresholdPercent: js.UndefOr[Double] = js.undefined
       }
       object GoogleCloudBillingBudgetsV1ThresholdRule {
         
@@ -442,24 +433,22 @@ object gapi {
       }
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait GoogleProtobufEmpty extends StObject
       
-      @js.native
       trait GoogleTypeMoney extends StObject {
         
         /** The three-letter currency code defined in ISO 4217. */
-        var currencyCode: js.UndefOr[String] = js.native
+        var currencyCode: js.UndefOr[String] = js.undefined
         
         /**
           * Number of nano (10^-9) units of the amount. The value must be between -999,999,999 and +999,999,999 inclusive. If `units` is positive, `nanos` must be positive or zero. If `units`
           * is zero, `nanos` can be positive, zero, or negative. If `units` is negative, `nanos` must be negative or zero. For example $-1.75 is represented as `units`=-1 and
           * `nanos`=-750,000,000.
           */
-        var nanos: js.UndefOr[Double] = js.native
+        var nanos: js.UndefOr[Double] = js.undefined
         
         /** The whole units of the amount. For example if `currencyCode` is `"USD"`, then 1 unit is one US dollar. */
-        var units: js.UndefOr[String] = js.native
+        var units: js.UndefOr[String] = js.undefined
       }
       object GoogleTypeMoney {
         

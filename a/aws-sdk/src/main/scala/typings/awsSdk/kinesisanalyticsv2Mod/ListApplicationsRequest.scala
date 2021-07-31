@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApplicationsRequest extends StObject {
   
   /**
     * The maximum number of applications to list.
     */
-  var Limit: js.UndefOr[ListApplicationsInputLimit] = js.native
+  var Limit: js.UndefOr[ListApplicationsInputLimit] = js.undefined
   
   /**
     * If a previous command returned a pagination token, pass it into this value to retrieve the next set of results. For more information about pagination, see Using the AWS Command Line Interface's Pagination Options.
     */
-  var NextToken: js.UndefOr[ApplicationName] = js.native
+  var NextToken: js.UndefOr[ApplicationName] = js.undefined
 }
 object ListApplicationsRequest {
   

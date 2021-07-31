@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new table.
   */
-@js.native
 trait SchemaCreateTableRequest extends StObject {
   
   /**
     * Number of columns in the table.
     */
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
   /**
     * The element properties for the table.  The table will be created at the
@@ -23,7 +21,7 @@ trait SchemaCreateTableRequest extends StObject {
     * 1 and no shear components. If no transform is provided, the table will be
     * centered on the page.
     */
-  var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.native
+  var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.undefined
   
   /**
     * A user-supplied object ID.  If you specify an ID, it must be unique among
@@ -34,12 +32,12 @@ trait SchemaCreateTableRequest extends StObject {
     * must not be less than 5 or greater than 50.  If you don&#39;t specify an
     * ID, a unique one is generated.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * Number of rows in the table.
     */
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
 }
 object SchemaCreateTableRequest {
   

@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPubsub.anon.FnCall
 import typings.googleCloudPubsub.iamMod.IAM
 import typings.googleCloudPubsub.leaseManagerMod.FlowControlOptions
-import typings.googleCloudPubsub.messageQueuesMod.BatchOptions
-import typings.googleCloudPubsub.messageStreamMod.MessageStreamOptions
 import typings.googleCloudPubsub.protosMod.google.protobuf.IDuration
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IDeadLetterPolicy
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IExpirationPolicy
@@ -30,17 +28,12 @@ import typings.googleCloudPubsub.snapshotMod.SeekResponse
 import typings.googleCloudPubsub.snapshotMod.Snapshot
 import typings.googleCloudPubsub.subscriberMod.SubscriberOptions
 import typings.googleCloudPubsub.topicMod.Topic
-import typings.googleGax.bundleExecutorMod.BundleOptions
-import typings.googleGax.gaxMod.BackoffSettings
 import typings.googleGax.gaxMod.CallOptions
-import typings.googleGax.gaxMod.RetryOptions
-import typings.googleGax.gaxMod.RetryRequestOptions
 import typings.node.eventsMod.EventEmitter
 import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionMod {
@@ -187,14 +180,17 @@ object subscriptionMod {
   /* static members */
   object Subscription {
     
+    @JSImport("@google-cloud/pubsub/build/src/subscription", "Subscription")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /*!
       * Formats Subscription metadata.
       *
       * @private
       */
-    @JSImport("@google-cloud/pubsub/build/src/subscription", "Subscription.formatMetadata_")
-    @js.native
-    def formatMetadata_(metadata: SubscriptionMetadata): ISubscription = js.native
+    @scala.inline
+    def formatMetadata_(metadata: SubscriptionMetadata): ISubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMetadata_")(metadata.asInstanceOf[js.Any]).asInstanceOf[ISubscription]
     
     /*!
       * Format the name of a subscription. A subscription's full name is in the
@@ -202,50 +198,48 @@ object subscriptionMod {
       *
       * @private
       */
-    @JSImport("@google-cloud/pubsub/build/src/subscription", "Subscription.formatName_")
-    @js.native
-    def formatName_(projectId: String, name: String): String = js.native
+    @scala.inline
+    def formatName_(projectId: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(projectId.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   type CreateSubscriptionCallback = SubscriptionCallback
   
   /* Inlined @google-cloud/pubsub.@google-cloud/pubsub/build/src/subscription.SubscriptionMetadata & {  gaxOpts :google-gax.google-gax.CallOptions | undefined,   flowControl :@google-cloud/pubsub.@google-cloud/pubsub/build/src/lease-manager.FlowControlOptions | undefined} */
-  @js.native
   trait CreateSubscriptionOptions extends StObject {
     
-    var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.native
+    var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
     
-    var deadLetterPolicy: js.UndefOr[IDeadLetterPolicy | Null] = js.native
+    var deadLetterPolicy: js.UndefOr[IDeadLetterPolicy | Null] = js.undefined
     
-    var detached: js.UndefOr[Boolean | Null] = js.native
+    var detached: js.UndefOr[Boolean | Null] = js.undefined
     
-    var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.native
+    var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.undefined
     
-    var expirationPolicy: js.UndefOr[IExpirationPolicy | Null] = js.native
+    var expirationPolicy: js.UndefOr[IExpirationPolicy | Null] = js.undefined
     
-    var filter: js.UndefOr[String | Null] = js.native
+    var filter: js.UndefOr[String | Null] = js.undefined
     
-    var flowControl: js.UndefOr[FlowControlOptions] = js.native
+    var flowControl: js.UndefOr[FlowControlOptions] = js.undefined
     
-    var gaxOpts: js.UndefOr[CallOptions] = js.native
+    var gaxOpts: js.UndefOr[CallOptions] = js.undefined
     
-    var labels: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
     
-    var messageRetentionDuration: js.UndefOr[IDuration | Double] = js.native
+    var messageRetentionDuration: js.UndefOr[IDuration | Double] = js.undefined
     
-    var name: js.UndefOr[String | Null] = js.native
+    var name: js.UndefOr[String | Null] = js.undefined
     
-    var oidcToken: js.UndefOr[OidcToken] = js.native
+    var oidcToken: js.UndefOr[OidcToken] = js.undefined
     
-    var pushConfig: js.UndefOr[IPushConfig | Null] = js.native
+    var pushConfig: js.UndefOr[IPushConfig | Null] = js.undefined
     
-    var pushEndpoint: js.UndefOr[String] = js.native
+    var pushEndpoint: js.UndefOr[String] = js.undefined
     
-    var retainAckedMessages: js.UndefOr[Boolean | Null] = js.native
+    var retainAckedMessages: js.UndefOr[Boolean | Null] = js.undefined
     
-    var retryPolicy: js.UndefOr[IRetryPolicy | Null] = js.native
+    var retryPolicy: js.UndefOr[IRetryPolicy | Null] = js.undefined
     
-    var topic: js.UndefOr[String | Null] = js.native
+    var topic: js.UndefOr[String | Null] = js.undefined
   }
   object CreateSubscriptionOptions {
     
@@ -410,37 +404,11 @@ object subscriptionMod {
   
   type GetSubscriptionMetadataResponse = MetadataResponse
   
-  /* Inlined google-gax.google-gax.CallOptions & {  autoCreate :boolean | undefined} */
-  @js.native
-  trait GetSubscriptionOptions extends StObject {
+  trait GetSubscriptionOptions
+    extends StObject
+       with CallOptions {
     
-    var apiName: js.UndefOr[String] = js.native
-    
-    var autoCreate: js.UndefOr[Boolean] = js.native
-    
-    var autoPaginate: js.UndefOr[Boolean] = js.native
-    
-    var bundleOptions: js.UndefOr[BundleOptions | Null] = js.native
-    
-    var isBundling: js.UndefOr[Boolean] = js.native
-    
-    var longrunning: js.UndefOr[BackoffSettings] = js.native
-    
-    var maxResults: js.UndefOr[Double] = js.native
-    
-    var maxRetries: js.UndefOr[Double] = js.native
-    
-    var otherArgs: js.UndefOr[StringDictionary[js.Any]] = js.native
-    
-    var pageSize: js.UndefOr[Double] = js.native
-    
-    var pageToken: js.UndefOr[String] = js.native
-    
-    var retry: js.UndefOr[RetryOptions | Null] = js.native
-    
-    var retryRequestOptions: js.UndefOr[RetryRequestOptions] = js.native
-    
-    var timeout: js.UndefOr[Double] = js.native
+    var autoCreate: js.UndefOr[Boolean] = js.undefined
   }
   object GetSubscriptionOptions {
     
@@ -454,94 +422,10 @@ object subscriptionMod {
     implicit class GetSubscriptionOptionsMutableBuilder[Self <: GetSubscriptionOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setApiNameUndefined: Self = StObject.set(x, "apiName", js.undefined)
-      
-      @scala.inline
       def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
-      
-      @scala.inline
-      def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
-      
-      @scala.inline
-      def setBundleOptions(value: BundleOptions): Self = StObject.set(x, "bundleOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBundleOptionsNull: Self = StObject.set(x, "bundleOptions", null)
-      
-      @scala.inline
-      def setBundleOptionsUndefined: Self = StObject.set(x, "bundleOptions", js.undefined)
-      
-      @scala.inline
-      def setIsBundling(value: Boolean): Self = StObject.set(x, "isBundling", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIsBundlingUndefined: Self = StObject.set(x, "isBundling", js.undefined)
-      
-      @scala.inline
-      def setLongrunning(value: BackoffSettings): Self = StObject.set(x, "longrunning", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLongrunningUndefined: Self = StObject.set(x, "longrunning", js.undefined)
-      
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
-      
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
-      
-      @scala.inline
-      def setOtherArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "otherArgs", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOtherArgsUndefined: Self = StObject.set(x, "otherArgs", js.undefined)
-      
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
-      
-      @scala.inline
-      def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
-      
-      @scala.inline
-      def setRetry(value: RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRetryNull: Self = StObject.set(x, "retry", null)
-      
-      @scala.inline
-      def setRetryRequestOptions(value: RetryRequestOptions): Self = StObject.set(x, "retryRequestOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRetryRequestOptionsUndefined: Self = StObject.set(x, "retryRequestOptions", js.undefined)
-      
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
-      
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -564,38 +448,37 @@ object subscriptionMod {
   type SubscriptionCloseCallback = js.Function1[/* err */ js.UndefOr[Error], Unit]
   
   /* Inlined {  messageRetentionDuration :@google-cloud/pubsub.@google-cloud/pubsub/build/protos/protos.google.protobuf.IDuration | number | undefined,   pushEndpoint :string | undefined,   oidcToken :@google-cloud/pubsub.@google-cloud/pubsub/build/src/subscription.OidcToken | undefined} & @google-cloud/pubsub.@google-cloud/pubsub/build/src/pubsub.Omit<@google-cloud/pubsub.@google-cloud/pubsub/build/protos/protos.google.pubsub.v1.ISubscription, 'messageRetentionDuration'> */
-  @js.native
   trait SubscriptionMetadata extends StObject {
     
-    var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.native
+    var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
     
-    var deadLetterPolicy: js.UndefOr[IDeadLetterPolicy | Null] = js.native
+    var deadLetterPolicy: js.UndefOr[IDeadLetterPolicy | Null] = js.undefined
     
-    var detached: js.UndefOr[Boolean | Null] = js.native
+    var detached: js.UndefOr[Boolean | Null] = js.undefined
     
-    var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.native
+    var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.undefined
     
-    var expirationPolicy: js.UndefOr[IExpirationPolicy | Null] = js.native
+    var expirationPolicy: js.UndefOr[IExpirationPolicy | Null] = js.undefined
     
-    var filter: js.UndefOr[String | Null] = js.native
+    var filter: js.UndefOr[String | Null] = js.undefined
     
-    var labels: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
     
-    var messageRetentionDuration: js.UndefOr[IDuration | Double] = js.native
+    var messageRetentionDuration: js.UndefOr[IDuration | Double] = js.undefined
     
-    var name: js.UndefOr[String | Null] = js.native
+    var name: js.UndefOr[String | Null] = js.undefined
     
-    var oidcToken: js.UndefOr[OidcToken] = js.native
+    var oidcToken: js.UndefOr[OidcToken] = js.undefined
     
-    var pushConfig: js.UndefOr[IPushConfig | Null] = js.native
+    var pushConfig: js.UndefOr[IPushConfig | Null] = js.undefined
     
-    var pushEndpoint: js.UndefOr[String] = js.native
+    var pushEndpoint: js.UndefOr[String] = js.undefined
     
-    var retainAckedMessages: js.UndefOr[Boolean | Null] = js.native
+    var retainAckedMessages: js.UndefOr[Boolean | Null] = js.undefined
     
-    var retryPolicy: js.UndefOr[IRetryPolicy | Null] = js.native
+    var retryPolicy: js.UndefOr[IRetryPolicy | Null] = js.undefined
     
-    var topic: js.UndefOr[String | Null] = js.native
+    var topic: js.UndefOr[String | Null] = js.undefined
   }
   object SubscriptionMetadata {
     
@@ -736,21 +619,11 @@ object subscriptionMod {
     }
   }
   
-  /* Inlined @google-cloud/pubsub.@google-cloud/pubsub/build/src/subscriber.SubscriberOptions & {  topic :@google-cloud/pubsub.@google-cloud/pubsub/build/src/topic.Topic | undefined} */
-  @js.native
-  trait SubscriptionOptions extends StObject {
+  trait SubscriptionOptions
+    extends StObject
+       with SubscriberOptions {
     
-    var ackDeadline: js.UndefOr[Double] = js.native
-    
-    var batching: js.UndefOr[BatchOptions] = js.native
-    
-    var enableOpenTelemetryTracing: js.UndefOr[Boolean] = js.native
-    
-    var flowControl: js.UndefOr[FlowControlOptions] = js.native
-    
-    var streamingOptions: js.UndefOr[MessageStreamOptions] = js.native
-    
-    var topic: js.UndefOr[Topic] = js.native
+    var topic: js.UndefOr[Topic] = js.undefined
   }
   object SubscriptionOptions {
     
@@ -762,36 +635,6 @@ object subscriptionMod {
     
     @scala.inline
     implicit class SubscriptionOptionsMutableBuilder[Self <: SubscriptionOptions] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setAckDeadline(value: Double): Self = StObject.set(x, "ackDeadline", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAckDeadlineUndefined: Self = StObject.set(x, "ackDeadline", js.undefined)
-      
-      @scala.inline
-      def setBatching(value: BatchOptions): Self = StObject.set(x, "batching", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBatchingUndefined: Self = StObject.set(x, "batching", js.undefined)
-      
-      @scala.inline
-      def setEnableOpenTelemetryTracing(value: Boolean): Self = StObject.set(x, "enableOpenTelemetryTracing", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setEnableOpenTelemetryTracingUndefined: Self = StObject.set(x, "enableOpenTelemetryTracing", js.undefined)
-      
-      @scala.inline
-      def setFlowControl(value: FlowControlOptions): Self = StObject.set(x, "flowControl", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFlowControlUndefined: Self = StObject.set(x, "flowControl", js.undefined)
-      
-      @scala.inline
-      def setStreamingOptions(value: MessageStreamOptions): Self = StObject.set(x, "streamingOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStreamingOptionsUndefined: Self = StObject.set(x, "streamingOptions", js.undefined)
       
       @scala.inline
       def setTopic(value: Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])

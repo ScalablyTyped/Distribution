@@ -2,27 +2,25 @@ package typings.pusherChatkitClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userMod {
   
-  @js.native
   trait PusherUser extends StObject {
     
-    var avatarURL: js.UndefOr[String] = js.native
+    var avatarURL: js.UndefOr[String] = js.undefined
     
-    var createdAt: String = js.native
+    var createdAt: String
     
-    var customData: js.UndefOr[js.Any] = js.native
+    var customData: js.UndefOr[js.Any] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var presence: PusherUserPresence = js.native
+    var presence: PusherUserPresence
     
-    var updatedAt: String = js.native
+    var updatedAt: String
   }
   object PusherUser {
     

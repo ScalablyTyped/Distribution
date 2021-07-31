@@ -2,19 +2,17 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterOperation extends StObject {
   
-  var field: js.UndefOr[this.type] = js.native
+  var field: js.UndefOr[this.type] = js.undefined
   
-  var filterOperation: js.UndefOr[String] = js.native
+  var filterOperation: js.UndefOr[String] = js.undefined
   
-  var setValue: js.UndefOr[js.Function] = js.native
+  var setValue: js.UndefOr[js.Function] = js.undefined
   
-  var value: js.UndefOr[String | Double | typings.std.Date] = js.native
+  var value: js.UndefOr[String | Double | typings.std.Date] = js.undefined
 }
 object FilterOperation {
   

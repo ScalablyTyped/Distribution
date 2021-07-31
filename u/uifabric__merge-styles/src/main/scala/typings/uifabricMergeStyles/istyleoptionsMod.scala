@@ -2,17 +2,15 @@ package typings.uifabricMergeStyles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object istyleoptionsMod {
   
-  @js.native
   trait IStyleOptions extends StObject {
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var specificityMultiplier: js.UndefOr[Double] = js.native
+    var specificityMultiplier: js.UndefOr[Double] = js.undefined
   }
   object IStyleOptions {
     

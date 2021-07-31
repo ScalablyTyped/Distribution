@@ -22,7 +22,6 @@ import typings.request.requestStrings.socket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -35,9 +34,9 @@ trait Request
   var agent: `false` | Agent | typings.node.httpsMod.Agent = js.native
   
   def auth(username: String, password: String): Request = js.native
-  def auth(username: String, password: String, sendImmediately: js.UndefOr[scala.Nothing], bearer: String): Request = js.native
   def auth(username: String, password: String, sendImmediately: Boolean): Request = js.native
   def auth(username: String, password: String, sendImmediately: Boolean, bearer: String): Request = js.native
+  def auth(username: String, password: String, sendImmediately: Unit, bearer: String): Request = js.native
   
   def aws(opts: AWSOptions): Request = js.native
   def aws(opts: AWSOptions, now: Boolean): Request = js.native
@@ -67,9 +66,9 @@ trait Request
   def end(chunk: String, cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: Buffer): Unit = js.native
   def end(chunk: Buffer, cb: js.Function0[Unit]): Unit = js.native
-  def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: String): Unit = js.native
   def end(str: String, encoding: String, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: String, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
   
   var explicitMethod: js.UndefOr[`true`] = js.native
   
@@ -193,11 +192,7 @@ trait Request
   def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
   def write(buffer: Buffer): Boolean = js.native
   def write(buffer: Buffer, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
-  def write(
-    str: String,
-    encoding: js.UndefOr[scala.Nothing],
-    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Boolean = js.native
   def write(str: String, encoding: String): Boolean = js.native
   def write(str: String, encoding: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  def write(str: String, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
 }

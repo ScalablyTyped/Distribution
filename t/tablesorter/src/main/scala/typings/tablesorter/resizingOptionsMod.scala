@@ -2,43 +2,41 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizingOptionsMod {
   
-  @js.native
   trait ResizingOptions extends StObject {
     
     /**
       * A value indicating whether column widths are saved locally.
       */
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether the last column should have a resize-handle.
       */
-    var resizable_addLastColumn: js.UndefOr[Boolean] = js.native
+    var resizable_addLastColumn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether the user can resize the columns inside the footer.
       */
-    var resizable_includeFooter: js.UndefOr[Boolean] = js.native
+    var resizable_includeFooter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether always the last column should shrink when resizing.
       */
-    var resizable_targetLast: js.UndefOr[Boolean] = js.native
+    var resizable_targetLast: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of milliseconds to wait before raising the `mousemove`-event.
       */
-    var resizable_throttle: js.UndefOr[Boolean | Double] = js.native
+    var resizable_throttle: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * The initial widths of the columns.
       */
-    var resizable_widths: js.UndefOr[js.Array[String]] = js.native
+    var resizable_widths: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ResizingOptions {
     

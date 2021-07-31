@@ -3,22 +3,22 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.hardbreak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait HardbreakToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait HardbreakToken
+  extends StObject
+     with TagToken {
   
   @JSName("type")
-  var type_HardbreakToken: hardbreak = js.native
+  var type_HardbreakToken: hardbreak
 }
 object HardbreakToken {
   
   @scala.inline
-  def apply(level: Double, `type`: hardbreak): HardbreakToken = {
+  def apply(level: Double): HardbreakToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("hardbreak")
     __obj.asInstanceOf[HardbreakToken]
   }
   

@@ -3,24 +3,23 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`19`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalExpression
-  extends JSChildNode
-     with Node2 {
+  extends StObject
+     with Node2
+     with JSChildNode {
   
-  var alternate: JSChildNode = js.native
+  var alternate: JSChildNode
   
-  var consequent: JSChildNode = js.native
+  var consequent: JSChildNode
   
-  var newline: Boolean = js.native
+  var newline: Boolean
   
-  var test: JSChildNode = js.native
+  var test: JSChildNode
   
   @JSName("type")
-  var type_ConditionalExpression: `19` = js.native
+  var type_ConditionalExpression: `19`
 }
 object ConditionalExpression {
   
@@ -30,11 +29,10 @@ object ConditionalExpression {
     consequent: JSChildNode,
     loc: SourceLocation,
     newline: Boolean,
-    test: JSChildNode,
-    `type`: `19`
+    test: JSChildNode
   ): ConditionalExpression = {
     val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], newline = newline.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(19)
     __obj.asInstanceOf[ConditionalExpression]
   }
   

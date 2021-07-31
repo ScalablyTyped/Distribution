@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayPrefixListAttachment extends StObject {
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: js.UndefOr[String] = js.native
+  var ResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The resource type. Note that the tgw-peering resource type has been deprecated.
     */
-  var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.native
+  var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.undefined
   
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayAttachmentId] = js.native
+  var TransitGatewayAttachmentId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayAttachmentId] = js.undefined
 }
 object TransitGatewayPrefixListAttachment {
   

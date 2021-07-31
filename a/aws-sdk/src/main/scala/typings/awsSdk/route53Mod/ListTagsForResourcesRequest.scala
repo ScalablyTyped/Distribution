@@ -2,21 +2,19 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourcesRequest extends StObject {
   
   /**
     * A complex type that contains the ResourceId element for each resource for which you want to get a list of tags.
     */
-  var ResourceIds: TagResourceIdList = js.native
+  var ResourceIds: TagResourceIdList
   
   /**
     * The type of the resources.   The resource type for health checks is healthcheck.   The resource type for hosted zones is hostedzone.  
     */
-  var ResourceType: TagResourceType = js.native
+  var ResourceType: TagResourceType
 }
 object ListTagsForResourcesRequest {
   

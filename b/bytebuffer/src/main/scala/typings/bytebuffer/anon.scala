@@ -3,17 +3,15 @@ package typings.bytebuffer
 import typings.long.mod.Long
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Length extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var string: String = js.native
+    var string: String
   }
   object Length {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait LengthValue extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var value: Long = js.native
+    var value: Long
   }
   object LengthValue {
     
@@ -60,12 +57,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var value: Double = js.native
+    var value: Double
   }
   object Value {
     

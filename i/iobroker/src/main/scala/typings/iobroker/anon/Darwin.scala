@@ -2,20 +2,18 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Darwin extends StObject {
   
   /** For OSX */
-  var darwin: js.Array[String] = js.native
+  var darwin: js.Array[String]
   
   /** For Linux */
-  var linux: js.Array[String] = js.native
+  var linux: js.Array[String]
   
   /** For Windows */
-  var win32: js.Array[String] = js.native
+  var win32: js.Array[String]
 }
 object Darwin {
   

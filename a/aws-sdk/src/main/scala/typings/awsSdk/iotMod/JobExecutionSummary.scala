@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobExecutionSummary extends StObject {
   
   /**
     * A string (consisting of the digits "0" through "9") which identifies this particular job execution on this particular device. It can be used later in commands which return or update job execution information.
     */
-  var executionNumber: js.UndefOr[ExecutionNumber] = js.native
+  var executionNumber: js.UndefOr[ExecutionNumber] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job execution was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.native
+  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job execution was queued.
     */
-  var queuedAt: js.UndefOr[DateType] = js.native
+  var queuedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job execution started.
     */
-  var startedAt: js.UndefOr[DateType] = js.native
+  var startedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The status of the job execution.
     */
-  var status: js.UndefOr[JobExecutionStatus] = js.native
+  var status: js.UndefOr[JobExecutionStatus] = js.undefined
 }
 object JobExecutionSummary {
   

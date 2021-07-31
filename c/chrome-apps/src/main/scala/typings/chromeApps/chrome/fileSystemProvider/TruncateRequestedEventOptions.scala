@@ -5,14 +5,14 @@ import typings.chromeApps.chrome.fileSystemProvider.internal.FilePathRequestedEv
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TruncateRequestedEventOptions extends FilePathRequestedEventOptions {
+trait TruncateRequestedEventOptions
+  extends StObject
+     with FilePathRequestedEventOptions {
   
   /** Number of bytes to be retained after the operation completes. */
-  var length: double = js.native
+  var length: double
 }
 object TruncateRequestedEventOptions {
   

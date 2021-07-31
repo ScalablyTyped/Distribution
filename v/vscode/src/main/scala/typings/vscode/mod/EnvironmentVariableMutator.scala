@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentVariableMutator extends StObject {
   
   /**
     * The type of mutation that will occur to the variable.
     */
-  val `type`: EnvironmentVariableMutatorType = js.native
+  val `type`: EnvironmentVariableMutatorType
   
   /**
     * The value to use for the variable.
     */
-  val value: String = js.native
+  val value: String
 }
 object EnvironmentVariableMutator {
   

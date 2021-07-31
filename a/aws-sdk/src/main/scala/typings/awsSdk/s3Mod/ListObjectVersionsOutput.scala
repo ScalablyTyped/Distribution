@@ -2,76 +2,74 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListObjectVersionsOutput extends StObject {
   
   /**
     * All of the keys rolled up into a common prefix count as a single return when calculating the number of returns.
     */
-  var CommonPrefixes: js.UndefOr[CommonPrefixList] = js.native
+  var CommonPrefixes: js.UndefOr[CommonPrefixList] = js.undefined
   
   /**
     * Container for an object that is a delete marker.
     */
-  var DeleteMarkers: js.UndefOr[typings.awsSdk.s3Mod.DeleteMarkers] = js.native
+  var DeleteMarkers: js.UndefOr[typings.awsSdk.s3Mod.DeleteMarkers] = js.undefined
   
   /**
     * The delimiter grouping the included keys. A delimiter is a character that you specify to group keys. All keys that contain the same string between the prefix and the first occurrence of the delimiter are grouped under a single result element in CommonPrefixes. These groups are counted as one result against the max-keys limitation. These keys are not returned elsewhere in the response.
     */
-  var Delimiter: js.UndefOr[typings.awsSdk.s3Mod.Delimiter] = js.native
+  var Delimiter: js.UndefOr[typings.awsSdk.s3Mod.Delimiter] = js.undefined
   
   /**
     *  Encoding type used by Amazon S3 to encode object key names in the XML response. If you specify encoding-type request parameter, Amazon S3 includes this element in the response, and returns encoded key name values in the following response elements:  KeyMarker, NextKeyMarker, Prefix, Key, and Delimiter.
     */
-  var EncodingType: js.UndefOr[typings.awsSdk.s3Mod.EncodingType] = js.native
+  var EncodingType: js.UndefOr[typings.awsSdk.s3Mod.EncodingType] = js.undefined
   
   /**
     * A flag that indicates whether Amazon S3 returned all of the results that satisfied the search criteria. If your results were truncated, you can make a follow-up paginated request using the NextKeyMarker and NextVersionIdMarker response parameters as a starting place in another request to return the rest of the results.
     */
-  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.native
+  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.undefined
   
   /**
     * Marks the last key returned in a truncated response.
     */
-  var KeyMarker: js.UndefOr[typings.awsSdk.s3Mod.KeyMarker] = js.native
+  var KeyMarker: js.UndefOr[typings.awsSdk.s3Mod.KeyMarker] = js.undefined
   
   /**
     * Specifies the maximum number of objects to return.
     */
-  var MaxKeys: js.UndefOr[typings.awsSdk.s3Mod.MaxKeys] = js.native
+  var MaxKeys: js.UndefOr[typings.awsSdk.s3Mod.MaxKeys] = js.undefined
   
   /**
     * The bucket name.
     */
-  var Name: js.UndefOr[BucketName] = js.native
+  var Name: js.UndefOr[BucketName] = js.undefined
   
   /**
     * When the number of responses exceeds the value of MaxKeys, NextKeyMarker specifies the first key not returned that satisfies the search criteria. Use this value for the key-marker request parameter in a subsequent request.
     */
-  var NextKeyMarker: js.UndefOr[typings.awsSdk.s3Mod.NextKeyMarker] = js.native
+  var NextKeyMarker: js.UndefOr[typings.awsSdk.s3Mod.NextKeyMarker] = js.undefined
   
   /**
     * When the number of responses exceeds the value of MaxKeys, NextVersionIdMarker specifies the first object version not returned that satisfies the search criteria. Use this value for the version-id-marker request parameter in a subsequent request.
     */
-  var NextVersionIdMarker: js.UndefOr[typings.awsSdk.s3Mod.NextVersionIdMarker] = js.native
+  var NextVersionIdMarker: js.UndefOr[typings.awsSdk.s3Mod.NextVersionIdMarker] = js.undefined
   
   /**
     * Selects objects that start with the value supplied by this parameter.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
   /**
     * Marks the last version of the key returned in a truncated response.
     */
-  var VersionIdMarker: js.UndefOr[typings.awsSdk.s3Mod.VersionIdMarker] = js.native
+  var VersionIdMarker: js.UndefOr[typings.awsSdk.s3Mod.VersionIdMarker] = js.undefined
   
   /**
     * Container for version information.
     */
-  var Versions: js.UndefOr[ObjectVersionList] = js.native
+  var Versions: js.UndefOr[ObjectVersionList] = js.undefined
 }
 object ListObjectVersionsOutput {
   

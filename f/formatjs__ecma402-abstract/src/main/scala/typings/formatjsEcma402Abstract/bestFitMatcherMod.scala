@@ -4,16 +4,18 @@ import typings.formatjsEcma402Abstract.coreMod.LookupMatcherResult
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bestFitMatcherMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/BestFitMatcher", "BestFitMatcher")
+  @JSImport("@formatjs/ecma402-abstract/lib/BestFitMatcher", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def BestFitMatcher(
     availableLocales: Set[String],
     requestedLocales: js.Array[String],
     getDefaultLocale: js.Function0[String]
-  ): LookupMatcherResult = js.native
+  ): LookupMatcherResult = (^.asInstanceOf[js.Dynamic].applyDynamic("BestFitMatcher")(availableLocales.asInstanceOf[js.Any], requestedLocales.asInstanceOf[js.Any], getDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[LookupMatcherResult]
 }

@@ -2,13 +2,13 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetChannelMembersParameters extends UUIDMembersParameters {
+trait GetChannelMembersParameters
+  extends StObject
+     with UUIDMembersParameters {
   
-  var channel: String = js.native
+  var channel: String
 }
 object GetChannelMembersParameters {
   

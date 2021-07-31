@@ -2,23 +2,21 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Channel extends StObject {
   
-  var Description: String = js.native
+  var Description: String
   
-  var LastModified: String = js.native
+  var LastModified: String
   
-  var Name: String = js.native
+  var Name: String
   
-  var PlayUrls: js.Array[String] = js.native
+  var PlayUrls: js.Array[String]
   
-  var PublishUrls: js.Array[String] = js.native
+  var PublishUrls: js.Array[String]
   
-  var Status: String = js.native
+  var Status: String
 }
 object Channel {
   

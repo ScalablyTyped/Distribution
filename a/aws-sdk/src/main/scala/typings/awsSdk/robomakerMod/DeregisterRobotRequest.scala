@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterRobotRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the fleet.
     */
-  var fleet: Arn = js.native
+  var fleet: Arn
   
   /**
     * The Amazon Resource Name (ARN) of the robot.
     */
-  var robot: Arn = js.native
+  var robot: Arn
 }
 object DeregisterRobotRequest {
   

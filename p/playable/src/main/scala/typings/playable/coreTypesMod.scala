@@ -3,15 +3,13 @@ package typings.playable
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreTypesMod {
   
-  @js.native
   trait IStylable[TStyles] extends StObject {
     
-    var styleNames: TStyles = js.native
+    var styleNames: TStyles
   }
   object IStylable {
     
@@ -22,7 +20,7 @@ object coreTypesMod {
     }
     
     @scala.inline
-    implicit class IStylableMutableBuilder[Self <: IStylable[_], TStyles] (val x: Self with IStylable[TStyles]) extends AnyVal {
+    implicit class IStylableMutableBuilder[Self <: IStylable[?], TStyles] (val x: Self & IStylable[TStyles]) extends AnyVal {
       
       @scala.inline
       def setStyleNames(value: TStyles): Self = StObject.set(x, "styleNames", value.asInstanceOf[js.Any])

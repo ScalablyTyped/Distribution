@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartThingRegistrationTaskResponse extends StObject {
   
   /**
     * The bulk thing provisioning task ID.
     */
-  var taskId: js.UndefOr[TaskId] = js.native
+  var taskId: js.UndefOr[TaskId] = js.undefined
 }
 object StartThingRegistrationTaskResponse {
   

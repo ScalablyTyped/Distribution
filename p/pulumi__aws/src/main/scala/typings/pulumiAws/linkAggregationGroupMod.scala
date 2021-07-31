@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkAggregationGroupMod {
@@ -67,6 +66,10 @@ object linkAggregationGroupMod {
   /* static members */
   object LinkAggregationGroup {
     
+    @JSImport("@pulumi/aws/directconnect/linkAggregationGroup", "LinkAggregationGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LinkAggregationGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -76,55 +79,49 @@ object linkAggregationGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect/linkAggregationGroup", "LinkAggregationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LinkAggregationGroup = js.native
-    @JSImport("@pulumi/aws/directconnect/linkAggregationGroup", "LinkAggregationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LinkAggregationGroup = js.native
-    @JSImport("@pulumi/aws/directconnect/linkAggregationGroup", "LinkAggregationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LinkAggregationGroupState): LinkAggregationGroup = js.native
-    @JSImport("@pulumi/aws/directconnect/linkAggregationGroup", "LinkAggregationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LinkAggregationGroupState, opts: CustomResourceOptions): LinkAggregationGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LinkAggregationGroupState): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LinkAggregationGroupState, opts: CustomResourceOptions): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
     
     /**
       * Returns true if the given object is an instance of LinkAggregationGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect/linkAggregationGroup", "LinkAggregationGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ Boolean]
   }
   
-  @js.native
   trait LinkAggregationGroupArgs extends StObject {
     
     /**
       * The bandwidth of the individual physical connections bundled by the LAG. Valid values: 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps and 10Gbps. Case sensitive.
       */
-    val connectionsBandwidth: Input[String] = js.native
+    val connectionsBandwidth: Input[String]
     
     /**
       * A boolean that indicates all connections associated with the LAG should be deleted so that the LAG can be destroyed without error. These objects are *not* recoverable.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The AWS Direct Connect location in which the LAG should be allocated. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html) for the list of AWS Direct Connect locations. Use `locationCode`.
       */
-    val location: Input[String] = js.native
+    val location: Input[String]
     
     /**
       * The name of the LAG.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object LinkAggregationGroupArgs {
     
@@ -163,46 +160,45 @@ object linkAggregationGroupMod {
     }
   }
   
-  @js.native
   trait LinkAggregationGroupState extends StObject {
     
     /**
       * The ARN of the LAG.
       * * `jumboFrameCapable` -Indicates whether jumbo frames (9001 MTU) are supported.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The bandwidth of the individual physical connections bundled by the LAG. Valid values: 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps and 10Gbps. Case sensitive.
       */
-    val connectionsBandwidth: js.UndefOr[Input[String]] = js.native
+    val connectionsBandwidth: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean that indicates all connections associated with the LAG should be deleted so that the LAG can be destroyed without error. These objects are *not* recoverable.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Indicates whether the LAG supports a secondary BGP peer in the same address family (IPv4/IPv6).
       */
-    val hasLogicalRedundancy: js.UndefOr[Input[String]] = js.native
+    val hasLogicalRedundancy: js.UndefOr[Input[String]] = js.undefined
     
-    val jumboFrameCapable: js.UndefOr[Input[Boolean]] = js.native
+    val jumboFrameCapable: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The AWS Direct Connect location in which the LAG should be allocated. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html) for the list of AWS Direct Connect locations. Use `locationCode`.
       */
-    val location: js.UndefOr[Input[String]] = js.native
+    val location: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the LAG.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object LinkAggregationGroupState {
     

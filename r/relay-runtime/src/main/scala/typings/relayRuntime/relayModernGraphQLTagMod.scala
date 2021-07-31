@@ -11,50 +11,43 @@ import typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
 import typings.relayRuntime.relayConcreteNodeMod.RequestParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayModernGraphQLTagMod {
   
-  @JSImport("relay-runtime/lib/query/RelayModernGraphQLTag", "getFragment")
+  @JSImport("relay-runtime/lib/query/RelayModernGraphQLTag", JSImport.Namespace)
   @js.native
-  def getFragment(taggedNode: GraphQLTaggedNode): ReaderFragment = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("relay-runtime/lib/query/RelayModernGraphQLTag", "getInlineDataFragment")
-  @js.native
-  def getInlineDataFragment(taggedNode: GraphQLTaggedNode): ReaderInlineDataFragment = js.native
+  @scala.inline
+  def getFragment(taggedNode: GraphQLTaggedNode): ReaderFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("getFragment")(taggedNode.asInstanceOf[js.Any]).asInstanceOf[ReaderFragment]
   
-  @JSImport("relay-runtime/lib/query/RelayModernGraphQLTag", "getNode")
-  @js.native
-  def getNode(taggedNode: js.Any): js.Any = js.native
+  @scala.inline
+  def getInlineDataFragment(taggedNode: GraphQLTaggedNode): ReaderInlineDataFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("getInlineDataFragment")(taggedNode.asInstanceOf[js.Any]).asInstanceOf[ReaderInlineDataFragment]
   
-  @JSImport("relay-runtime/lib/query/RelayModernGraphQLTag", "getPaginationFragment")
-  @js.native
-  def getPaginationFragment(taggedNode: GraphQLTaggedNode): ReaderPaginationFragment | Null = js.native
+  @scala.inline
+  def getNode(taggedNode: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getNode")(taggedNode.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("relay-runtime/lib/query/RelayModernGraphQLTag", "getRefetchableFragment")
-  @js.native
-  def getRefetchableFragment(taggedNode: GraphQLTaggedNode): ReaderRefetchableFragment | Null = js.native
+  @scala.inline
+  def getPaginationFragment(taggedNode: GraphQLTaggedNode): ReaderPaginationFragment | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPaginationFragment")(taggedNode.asInstanceOf[js.Any]).asInstanceOf[ReaderPaginationFragment | Null]
   
-  @JSImport("relay-runtime/lib/query/RelayModernGraphQLTag", "getRequest")
-  @js.native
-  def getRequest(taggedNode: GraphQLTaggedNode): ConcreteRequest = js.native
+  @scala.inline
+  def getRefetchableFragment(taggedNode: GraphQLTaggedNode): ReaderRefetchableFragment | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRefetchableFragment")(taggedNode.asInstanceOf[js.Any]).asInstanceOf[ReaderRefetchableFragment | Null]
   
-  @JSImport("relay-runtime/lib/query/RelayModernGraphQLTag", "graphql")
-  @js.native
-  def graphql(strings: js.Any): GraphQLTaggedNode = js.native
+  @scala.inline
+  def getRequest(taggedNode: GraphQLTaggedNode): ConcreteRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequest")(taggedNode.asInstanceOf[js.Any]).asInstanceOf[ConcreteRequest]
   
-  @JSImport("relay-runtime/lib/query/RelayModernGraphQLTag", "isFragment")
-  @js.native
-  def isFragment(node: GraphQLTaggedNode): Boolean = js.native
+  @scala.inline
+  def graphql(strings: js.Any): GraphQLTaggedNode = ^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(strings.asInstanceOf[js.Any]).asInstanceOf[GraphQLTaggedNode]
   
-  @JSImport("relay-runtime/lib/query/RelayModernGraphQLTag", "isInlineDataFragment")
-  @js.native
-  def isInlineDataFragment(node: GraphQLTaggedNode): Boolean = js.native
+  @scala.inline
+  def isFragment(node: GraphQLTaggedNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("relay-runtime/lib/query/RelayModernGraphQLTag", "isRequest")
-  @js.native
-  def isRequest(node: GraphQLTaggedNode): Boolean = js.native
+  @scala.inline
+  def isInlineDataFragment(node: GraphQLTaggedNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInlineDataFragment")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isRequest(node: GraphQLTaggedNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequest")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.relayRuntime.readerNodeMod.ReaderFragment

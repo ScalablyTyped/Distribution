@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoarchivedmediaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimestampRange extends StObject {
   
   /**
     * The ending timestamp in the range of timestamps for which to return fragments.
     */
-  var EndTimestamp: Timestamp = js.native
+  var EndTimestamp: Timestamp
   
   /**
     * The starting timestamp in the range of timestamps for which to return fragments.
     */
-  var StartTimestamp: Timestamp = js.native
+  var StartTimestamp: Timestamp
 }
 object TimestampRange {
   

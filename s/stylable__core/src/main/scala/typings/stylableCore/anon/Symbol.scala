@@ -4,15 +4,13 @@ import typings.stylableCore.stylableMetaMod.StylableSymbol
 import typings.stylableCore.stylableProcessorMod.StylableMeta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Symbol extends StObject {
   
-  var meta: StylableMeta = js.native
+  var meta: StylableMeta
   
-  var symbol: StylableSymbol = js.native
+  var symbol: StylableSymbol
 }
 object Symbol {
   

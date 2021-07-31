@@ -15,25 +15,23 @@ import typings.openlayers.mod.source.State
 import typings.openlayers.mod.tilegrid.TileGrid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorTileOptions extends StObject {
   
-  var attributions: js.UndefOr[AttributionLike] = js.native
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
   
-  var cacheSize: js.UndefOr[Double] = js.native
+  var cacheSize: js.UndefOr[Double] = js.undefined
   
-  var format: js.UndefOr[Feature] = js.native
+  var format: js.UndefOr[Feature] = js.undefined
   
-  var logo: js.UndefOr[String | LogoOptions] = js.native
+  var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var overlaps: js.UndefOr[Boolean] = js.native
+  var overlaps: js.UndefOr[Boolean] = js.undefined
   
-  var projection: ProjectionLike = js.native
+  var projection: ProjectionLike
   
-  var state: js.UndefOr[State] = js.native
+  var state: js.UndefOr[State] = js.undefined
   
   var tileClass: js.UndefOr[
     js.Function6[
@@ -43,21 +41,21 @@ trait VectorTileOptions extends StObject {
       /* s */ String, 
       /* feature */ Feature, 
       /* type */ TileLoadFunctionType, 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var tileGrid: js.UndefOr[TileGrid] = js.native
+  var tileGrid: js.UndefOr[TileGrid] = js.undefined
   
-  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.native
+  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.undefined
   
-  var tileUrlFunction: js.UndefOr[TileUrlFunctionType] = js.native
+  var tileUrlFunction: js.UndefOr[TileUrlFunctionType] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var urls: js.UndefOr[js.Array[String]] = js.native
+  var urls: js.UndefOr[js.Array[String]] = js.undefined
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object VectorTileOptions {
   
@@ -117,7 +115,7 @@ object VectorTileOptions {
     
     @scala.inline
     def setTileClass(
-      value: (/* n */ VectorTile, /* coords */ TileCoord, /* state */ typings.openlayers.mod.Tile.State, /* s */ String, /* feature */ Feature, /* type */ TileLoadFunctionType) => _
+      value: (/* n */ VectorTile, /* coords */ TileCoord, /* state */ typings.openlayers.mod.Tile.State, /* s */ String, /* feature */ Feature, /* type */ TileLoadFunctionType) => js.Any
     ): Self = StObject.set(x, "tileClass", js.Any.fromFunction6(value))
     
     @scala.inline

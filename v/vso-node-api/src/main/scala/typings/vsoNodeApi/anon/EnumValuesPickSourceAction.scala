@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesPickSourceAction extends StObject {
   
-  var enumValues: PickSourceAction = js.native
+  var enumValues: PickSourceAction
 }
 object EnumValuesPickSourceAction {
   

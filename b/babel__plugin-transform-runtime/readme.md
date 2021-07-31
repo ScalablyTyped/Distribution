@@ -10,13 +10,13 @@ Externalise references to helpers and builtins, automatically polyfilling your c
 | ------------------ | :-------------: |
 | Full name          | @babel/plugin-transform-runtime |
 | Keywords           | babel-plugin |
-| # releases         | 23 |
-| # dependents       | 2200 |
-| # downloads        | 295358692 |
+| # releases         | 34 |
+| # dependents       | 2682 |
+| # downloads        | 391212695 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/babel/babel#readme)
+- [Homepage](https://babel.dev/docs/en/next/babel-plugin-transform-runtime)
 - [Bugs](https://github.com/babel/babel/issues)
 - [Repository](https://github.com/babel/babel)
 - [Npm](https://www.npmjs.com/package/%40babel%2Fplugin-transform-runtime)

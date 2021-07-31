@@ -3,26 +3,25 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ExportDefaultSpecifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ExportDefaultSpecifier_
-  extends ModuleSpecifier
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ExportDefaultSpecifier_
+  extends StObject
+     with BaseNode
+     with ModuleSpecifier {
   
-  var exported: Identifier_ = js.native
+  var exported: Identifier_
   
   @JSName("type")
-  var type_ExportDefaultSpecifier_ : ExportDefaultSpecifier = js.native
+  var type_ExportDefaultSpecifier_ : ExportDefaultSpecifier
 }
 object ExportDefaultSpecifier_ {
   
   @scala.inline
-  def apply(exported: Identifier_, `type`: ExportDefaultSpecifier): ExportDefaultSpecifier_ = {
-    val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(exported: Identifier_): ExportDefaultSpecifier_ = {
+    val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ExportDefaultSpecifier")
     __obj.asInstanceOf[ExportDefaultSpecifier_]
   }
   

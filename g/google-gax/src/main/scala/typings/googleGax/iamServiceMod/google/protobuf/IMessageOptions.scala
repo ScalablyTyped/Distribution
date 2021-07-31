@@ -3,31 +3,29 @@ package typings.googleGax.iamServiceMod.google.protobuf
 import typings.googleGax.iamServiceMod.google.api.IResourceDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a MessageOptions. */
-@js.native
 trait IMessageOptions extends StObject {
   
   /** MessageOptions .google.api.resource */
   @JSName(".google.api.resource")
-  var DotgoogleDotapiDotresource: js.UndefOr[IResourceDescriptor | Null] = js.native
+  var DotgoogleDotapiDotresource: js.UndefOr[IResourceDescriptor | Null] = js.undefined
   
   /** MessageOptions deprecated */
-  var deprecated: js.UndefOr[Boolean | Null] = js.native
+  var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   
   /** MessageOptions mapEntry */
-  var mapEntry: js.UndefOr[Boolean | Null] = js.native
+  var mapEntry: js.UndefOr[Boolean | Null] = js.undefined
   
   /** MessageOptions messageSetWireFormat */
-  var messageSetWireFormat: js.UndefOr[Boolean | Null] = js.native
+  var messageSetWireFormat: js.UndefOr[Boolean | Null] = js.undefined
   
   /** MessageOptions noStandardDescriptorAccessor */
-  var noStandardDescriptorAccessor: js.UndefOr[Boolean | Null] = js.native
+  var noStandardDescriptorAccessor: js.UndefOr[Boolean | Null] = js.undefined
   
   /** MessageOptions uninterpretedOption */
-  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.native
+  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
 }
 object IMessageOptions {
   

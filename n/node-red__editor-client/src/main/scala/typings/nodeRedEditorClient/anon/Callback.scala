@@ -2,10 +2,8 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callback extends StObject {
   
   var callback: js.UndefOr[
@@ -13,9 +11,9 @@ trait Callback extends StObject {
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @node-red/editor-client.@node-red/editor-client.HistoryEvent */ /* ev */ js.Object, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var dirty: js.UndefOr[Boolean] = js.native
+  var dirty: js.UndefOr[Boolean] = js.undefined
 }
 object Callback {
   

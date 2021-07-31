@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scaleInMod {
@@ -19,16 +18,17 @@ object scaleInMod {
   trait ScaleIn
     extends Component[ScaleInProps, js.Object, js.Any]
   
-  @js.native
-  trait ScaleInProps extends Props[ScaleIn] {
+  trait ScaleInProps
+    extends StObject
+       with Props[ScaleIn] {
     
-    var childStyle: js.UndefOr[CSSProperties] = js.native
+    var childStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var enterDelay: js.UndefOr[Double] = js.native
+    var enterDelay: js.UndefOr[Double] = js.undefined
     
-    var maxScale: js.UndefOr[Double] = js.native
+    var maxScale: js.UndefOr[Double] = js.undefined
     
-    var minScale: js.UndefOr[Double] = js.native
+    var minScale: js.UndefOr[Double] = js.undefined
   }
   object ScaleInProps {
     

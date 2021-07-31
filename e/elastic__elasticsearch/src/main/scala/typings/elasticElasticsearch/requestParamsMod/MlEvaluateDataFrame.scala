@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlEvaluateDataFrame[T] extends Generic {
+trait MlEvaluateDataFrame[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
 }
 object MlEvaluateDataFrame {
   
@@ -19,7 +19,7 @@ object MlEvaluateDataFrame {
   }
   
   @scala.inline
-  implicit class MlEvaluateDataFrameMutableBuilder[Self <: MlEvaluateDataFrame[_], T] (val x: Self with MlEvaluateDataFrame[T]) extends AnyVal {
+  implicit class MlEvaluateDataFrameMutableBuilder[Self <: MlEvaluateDataFrame[?], T] (val x: Self & MlEvaluateDataFrame[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -2,19 +2,17 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitParallaxOptions extends StObject {
   
-  var easing: js.UndefOr[Double] = js.native
+  var easing: js.UndefOr[Double] = js.undefined
   
-  var media: js.UndefOr[Double | String] = js.native
+  var media: js.UndefOr[Double | String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var viewport: js.UndefOr[Double] = js.native
+  var viewport: js.UndefOr[Double] = js.undefined
 }
 object UIkitParallaxOptions {
   

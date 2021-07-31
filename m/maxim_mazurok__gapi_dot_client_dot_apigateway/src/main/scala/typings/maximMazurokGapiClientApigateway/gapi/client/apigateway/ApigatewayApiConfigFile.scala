@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientApigateway.gapi.client.apigateway
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApigatewayApiConfigFile extends StObject {
   
   /** The bytes that constitute the file. */
-  var contents: js.UndefOr[String] = js.native
+  var contents: js.UndefOr[String] = js.undefined
   
   /** The file path (full or relative path). This is typically the path of the file when it is uploaded. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object ApigatewayApiConfigFile {
   

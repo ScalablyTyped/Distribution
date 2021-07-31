@@ -3,17 +3,15 @@ package typings.reactNative.mod
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppConfig extends StObject {
   
-  var appKey: String = js.native
+  var appKey: String
   
-  var component: js.UndefOr[ComponentProvider] = js.native
+  var component: js.UndefOr[ComponentProvider] = js.undefined
   
-  var run: js.UndefOr[Runnable] = js.native
+  var run: js.UndefOr[Runnable] = js.undefined
 }
 object AppConfig {
   

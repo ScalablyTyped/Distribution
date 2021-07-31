@@ -8,7 +8,6 @@ import typings.std.Element
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,7 +22,7 @@ trait JQuery extends StObject {
   def addClass(className: String): this.type = js.native
   
   def after(content1: String, content2: js.Any*): this.type = js.native
-  def after(content1: js.Array[_], content2: js.Any*): this.type = js.native
+  def after(content1: js.Array[js.Any], content2: js.Any*): this.type = js.native
   /**
     * Insert content, specified by the parameter, after each element in the set of matched elements.
     *
@@ -44,7 +43,7 @@ trait JQuery extends StObject {
   def after(func: js.Function2[/* index */ Double, /* html */ String, String | Element | this.type]): this.type = js.native
   
   def append(content1: String, content2: js.Any*): this.type = js.native
-  def append(content1: js.Array[_], content2: js.Any*): this.type = js.native
+  def append(content1: js.Array[js.Any], content2: js.Any*): this.type = js.native
   /**
     * Insert content, specified by the parameter, to the end of each element in the set of matched elements.
     *
@@ -97,7 +96,7 @@ trait JQuery extends StObject {
     * @param handler A function to execute each time the event is triggered.
     * @see {@link https://api.jquery.com/bind/#bind-eventType-eventData-handler}
     */
-  def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): this.type = js.native
+  def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): this.type = js.native
   /**
     * Attach a handler to an event for the elements.
     *
@@ -121,9 +120,9 @@ trait JQuery extends StObject {
     */
   def children(): this.type = js.native
   
-  def clone(withDataAndEvents: js.UndefOr[scala.Nothing], deepWithDataAndEvents: Boolean): this.type = js.native
   def clone(withDataAndEvents: Boolean): this.type = js.native
   def clone(withDataAndEvents: Boolean, deepWithDataAndEvents: Boolean): this.type = js.native
+  def clone(withDataAndEvents: Unit, deepWithDataAndEvents: Boolean): this.type = js.native
   
   /**
     * Get the children of each element in the set of matched elements, including text and comment nodes.
@@ -312,7 +311,7 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     * @see {@link https://api.jquery.com/off/#off-events-selector-handler}
     */
-  def off(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): this.type = js.native
+  def off(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): this.type = js.native
   /**
     * Remove an event handler.
     *
@@ -322,15 +321,15 @@ trait JQuery extends StObject {
     */
   def off(
     events: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
-  ): this.type = js.native
-  def off(
-    events: String,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): this.type = js.native
   def off(events: String, selector: String): this.type = js.native
-  def off(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): this.type = js.native
+  def off(
+    events: String,
+    selector: String,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): this.type = js.native
+  def off(events: String, selector: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): this.type = js.native
   /**
     * Remove an event handler.
     *
@@ -352,7 +351,7 @@ trait JQuery extends StObject {
   def on(
     events: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -363,7 +362,7 @@ trait JQuery extends StObject {
     */
   def on(
     events: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -378,7 +377,7 @@ trait JQuery extends StObject {
     events: String,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -391,7 +390,7 @@ trait JQuery extends StObject {
   def on(
     events: String,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -402,24 +401,24 @@ trait JQuery extends StObject {
     * @see {@link https://api.jquery.com/on/#on-events-selector-data}
     */
   def on(
-    events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]]
+    events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]]
   ): this.type = js.native
   def on(
-    events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]],
+    events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]],
     data: js.Any
   ): this.type = js.native
   def on(
-    events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]],
-    selector: js.UndefOr[scala.Nothing],
-    data: js.Any
-  ): this.type = js.native
-  def on(
-    events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]],
+    events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]],
     selector: String
   ): this.type = js.native
   def on(
-    events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]],
+    events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]],
     selector: String,
+    data: js.Any
+  ): this.type = js.native
+  def on(
+    events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]],
+    selector: Unit,
     data: js.Any
   ): this.type = js.native
   
@@ -431,7 +430,11 @@ trait JQuery extends StObject {
     * @param handler A function to execute at the time the event is triggered.
     * @see {@link https://api.jquery.com/one/#one-events-data-handler}
     */
-  def one(events: String, data: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): this.type = js.native
+  def one(
+    events: String,
+    data: js.Object,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -439,7 +442,7 @@ trait JQuery extends StObject {
     * @param handler A function to execute at the time the event is triggered.
     * @see {@link https://api.jquery.com/one/#one-events-data-handler}
     */
-  def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): this.type = js.native
+  def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -453,7 +456,7 @@ trait JQuery extends StObject {
     events: String,
     selector: String,
     data: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -463,7 +466,11 @@ trait JQuery extends StObject {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     * @see {@link https://api.jquery.com/one/#one-events-selector-data-handler}
     */
-  def one(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): this.type = js.native
+  def one(
+    events: String,
+    selector: String,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -474,9 +481,9 @@ trait JQuery extends StObject {
     */
   def one(events: StringDictionary[js.Any]): this.type = js.native
   def one(events: StringDictionary[js.Any], data: js.Any): this.type = js.native
-  def one(events: StringDictionary[js.Any], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
   def one(events: StringDictionary[js.Any], selector: String): this.type = js.native
   def one(events: StringDictionary[js.Any], selector: String, data: js.Any): this.type = js.native
+  def one(events: StringDictionary[js.Any], selector: Unit, data: js.Any): this.type = js.native
   
   /**
     * Get the parent of each element in the current set of matched elements, optionally filtered by a selector.
@@ -486,7 +493,7 @@ trait JQuery extends StObject {
   def parent(): this.type = js.native
   
   def prepend(content1: String, content2: js.Any*): this.type = js.native
-  def prepend(content1: js.Array[_], content2: js.Any*): this.type = js.native
+  def prepend(content1: js.Array[js.Any], content2: js.Any*): this.type = js.native
   /**
     * Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
     *
@@ -527,7 +534,10 @@ trait JQuery extends StObject {
     * @param func A function returning the value to set. Receives the index position of the element in the set and the old property value as arguments. Within the function, the keyword this refers to the current element.
     * @see {@link https://api.jquery.com/prop/#prop-propertyName-function}
     */
-  def prop(propertyName: String, func: js.Function2[/* index */ Double, /* oldPropertyValue */ js.Any, _]): this.type = js.native
+  def prop(
+    propertyName: String,
+    func: js.Function2[/* index */ Double, /* oldPropertyValue */ js.Any, js.Any]
+  ): this.type = js.native
   /**
     * Set one or more properties for the set of matched elements.
     *
@@ -545,7 +555,7 @@ trait JQuery extends StObject {
     * @param handler A function to execute after the DOM is ready.
     * @see {@link https://api.jquery.com/ready/}
     */
-  def ready(handler: js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], _]): this.type = js.native
+  def ready(handler: js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], js.Any]): this.type = js.native
   
   /**
     * Remove the set of matched elements from the DOM.
@@ -601,7 +611,7 @@ trait JQuery extends StObject {
     */
   def replaceWith(func: js.Function0[Element | this.type]): this.type = js.native
   def replaceWith(newContent: String): this.type = js.native
-  def replaceWith(newContent: js.Array[_]): this.type = js.native
+  def replaceWith(newContent: js.Array[js.Any]): this.type = js.native
   /**
     * Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed.
     *
@@ -686,10 +696,6 @@ trait JQuery extends StObject {
     * @see {@link https://api.jquery.com/unbind/#unbind-eventType-handler}
     */
   def unbind(): this.type = js.native
-  def unbind(
-    eventType: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
-  ): this.type = js.native
   def unbind(eventType: String): this.type = js.native
   /**
     * Remove a previously-attached event handler from the elements.
@@ -699,7 +705,8 @@ trait JQuery extends StObject {
     * @see {@link https://api.jquery.com/unbind/#unbind-eventType-false}
     */
   def unbind(eventType: String, fls: Boolean): this.type = js.native
-  def unbind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): this.type = js.native
+  def unbind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): this.type = js.native
+  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): this.type = js.native
   /**
     * Remove a previously-attached event handler from the elements.
     *

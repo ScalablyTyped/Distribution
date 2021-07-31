@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Links to the FHIR specification
   */
-@js.native
-trait TestScriptMetadataLink extends BackboneElement {
+trait TestScriptMetadataLink
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.native
+  var _url: js.UndefOr[Element] = js.undefined
   
   /**
     * Short description
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * URL to the specification
     */
-  var url: uri = js.native
+  var url: uri
 }
 object TestScriptMetadataLink {
   

@@ -2,15 +2,13 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateItemDataRelationships extends StObject {
   
-  var parent: js.UndefOr[CreateStorageDataRelationshipsTarget] = js.native
+  var parent: js.UndefOr[CreateStorageDataRelationshipsTarget] = js.undefined
   
-  var tip: js.UndefOr[CreateItemDataRelationshipsTip] = js.native
+  var tip: js.UndefOr[CreateItemDataRelationshipsTip] = js.undefined
 }
 object CreateItemDataRelationships {
   

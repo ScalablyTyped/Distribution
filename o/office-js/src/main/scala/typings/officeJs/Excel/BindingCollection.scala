@@ -9,7 +9,6 @@ import typings.officeJs.OfficeExtension.LoadOption
 import typings.officeJs.officeJsStrings.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait BindingCollection extends ClientObject {
+trait BindingCollection
+  extends StObject
+     with ClientObject {
   
   def add(range: String, bindingType: BindingType, id: String): Binding = js.native
   /**
@@ -164,7 +165,7 @@ trait BindingCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): BindingCollection = js.native
-  def load(options: BindingCollectionLoadOptions with CollectionLoadOptions): BindingCollection = js.native
+  def load(options: BindingCollectionLoadOptions & CollectionLoadOptions): BindingCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): BindingCollection = js.native
   def load(propertyNames: String): BindingCollection = js.native
   def load(propertyNames: js.Array[String]): BindingCollection = js.native

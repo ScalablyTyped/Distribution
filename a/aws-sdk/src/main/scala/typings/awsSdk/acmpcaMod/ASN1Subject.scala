@@ -2,81 +2,79 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASN1Subject extends StObject {
   
   /**
     * Fully qualified domain name (FQDN) associated with the certificate subject.
     */
-  var CommonName: js.UndefOr[String64] = js.native
+  var CommonName: js.UndefOr[String64] = js.undefined
   
   /**
     * Two-digit code that specifies the country in which the certificate subject located.
     */
-  var Country: js.UndefOr[CountryCodeString] = js.native
+  var Country: js.UndefOr[CountryCodeString] = js.undefined
   
   /**
     * Disambiguating information for the certificate subject.
     */
-  var DistinguishedNameQualifier: js.UndefOr[ASN1PrintableString64] = js.native
+  var DistinguishedNameQualifier: js.UndefOr[ASN1PrintableString64] = js.undefined
   
   /**
     * Typically a qualifier appended to the name of an individual. Examples include Jr. for junior, Sr. for senior, and III for third.
     */
-  var GenerationQualifier: js.UndefOr[String3] = js.native
+  var GenerationQualifier: js.UndefOr[String3] = js.undefined
   
   /**
     * First name.
     */
-  var GivenName: js.UndefOr[String16] = js.native
+  var GivenName: js.UndefOr[String16] = js.undefined
   
   /**
     * Concatenation that typically contains the first letter of the GivenName, the first letter of the middle name if one exists, and the first letter of the SurName.
     */
-  var Initials: js.UndefOr[String5] = js.native
+  var Initials: js.UndefOr[String5] = js.undefined
   
   /**
     * The locality (such as a city or town) in which the certificate subject is located.
     */
-  var Locality: js.UndefOr[String128] = js.native
+  var Locality: js.UndefOr[String128] = js.undefined
   
   /**
     * Legal name of the organization with which the certificate subject is affiliated. 
     */
-  var Organization: js.UndefOr[String64] = js.native
+  var Organization: js.UndefOr[String64] = js.undefined
   
   /**
     * A subdivision or unit of the organization (such as sales or finance) with which the certificate subject is affiliated.
     */
-  var OrganizationalUnit: js.UndefOr[String64] = js.native
+  var OrganizationalUnit: js.UndefOr[String64] = js.undefined
   
   /**
     * Typically a shortened version of a longer GivenName. For example, Jonathan is often shortened to John. Elizabeth is often shortened to Beth, Liz, or Eliza.
     */
-  var Pseudonym: js.UndefOr[String128] = js.native
+  var Pseudonym: js.UndefOr[String128] = js.undefined
   
   /**
     * The certificate serial number.
     */
-  var SerialNumber: js.UndefOr[ASN1PrintableString64] = js.native
+  var SerialNumber: js.UndefOr[ASN1PrintableString64] = js.undefined
   
   /**
     * State in which the subject of the certificate is located.
     */
-  var State: js.UndefOr[String128] = js.native
+  var State: js.UndefOr[String128] = js.undefined
   
   /**
     * Family name. In the US and the UK, for example, the surname of an individual is ordered last. In Asian cultures the surname is typically ordered first.
     */
-  var Surname: js.UndefOr[String40] = js.native
+  var Surname: js.UndefOr[String40] = js.undefined
   
   /**
     * A title such as Mr. or Ms., which is pre-pended to the name to refer formally to the certificate subject.
     */
-  var Title: js.UndefOr[String64] = js.native
+  var Title: js.UndefOr[String64] = js.undefined
 }
 object ASN1Subject {
   

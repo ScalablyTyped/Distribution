@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeActivationsResult extends StObject {
   
   /**
     * A list of activations for your AWS account.
     */
-  var ActivationList: js.UndefOr[typings.awsSdk.ssmMod.ActivationList] = js.native
+  var ActivationList: js.UndefOr[typings.awsSdk.ssmMod.ActivationList] = js.undefined
   
   /**
     * The token for the next set of items to return. Use this token to get the next set of results. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object DescribeActivationsResult {
   

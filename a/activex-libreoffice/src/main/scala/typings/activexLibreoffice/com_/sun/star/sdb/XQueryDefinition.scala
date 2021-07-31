@@ -12,13 +12,12 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XContentEventListener
 import typings.activexLibreoffice.com_.sun.star.ucb.XContentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
 trait XQueryDefinition
-  extends XPropertySet
+  extends StObject
+     with XPropertySet
      with XContent
      with XComponent
 object XQueryDefinition {

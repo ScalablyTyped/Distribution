@@ -3,47 +3,46 @@ package typings.extjs.Ext
 import typings.extjs.Ext.util.IComponentDragger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object window {
   
-  @js.native
   trait IMessageBox
-    extends typings.extjs.Ext.window.IWindow {
+    extends StObject
+       with typings.extjs.Ext.window.IWindow {
     
     /** [Property] (Number) */
-    var CANCEL: js.UndefOr[Double] = js.native
+    var CANCEL: js.UndefOr[Double] = js.undefined
     
     /** [Property] (String) */
-    var ERROR: js.UndefOr[java.lang.String] = js.native
+    var ERROR: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (String) */
-    var INFO: js.UndefOr[java.lang.String] = js.native
+    var INFO: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Number) */
-    var NO: js.UndefOr[Double] = js.native
+    var NO: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var OK: js.UndefOr[Double] = js.native
+    var OK: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var OKCANCEL: js.UndefOr[Double] = js.native
+    var OKCANCEL: js.UndefOr[Double] = js.undefined
     
     /** [Property] (String) */
-    var QUESTION: js.UndefOr[java.lang.String] = js.native
+    var QUESTION: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (String) */
-    var WARNING: js.UndefOr[java.lang.String] = js.native
+    var WARNING: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Number) */
-    var YES: js.UndefOr[Double] = js.native
+    var YES: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var YESNO: js.UndefOr[Double] = js.native
+    var YESNO: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var YESNOCANCEL: js.UndefOr[Double] = js.native
+    var YESNOCANCEL: js.UndefOr[Double] = js.undefined
     
     /** [Method] Displays a standard read only message box with an OK button comparable to the basic JavaScript alert prompt
       * @param title String The title bar text
@@ -60,10 +59,10 @@ object window {
           /* scope */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Property] (Object) */
-    var buttonText: js.UndefOr[js.Any] = js.native
+    var buttonText: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Displays a confirmation message box with Yes and No buttons comparable to JavaScript s confirm
       * @param title String The title bar text
@@ -80,22 +79,22 @@ object window {
           /* scope */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Property] (Number) */
-    var defaultTextHeight: js.UndefOr[Double] = js.native
+    var defaultTextHeight: js.UndefOr[Double] = js.undefined
     
     /** [Method] Hides this Component setting it to invisible using the configured hideMode
       * @returns Ext.Component this
       */
     @JSName("hide")
-    var hide_IMessageBox: js.UndefOr[js.Function0[IComponent]] = js.native
+    var hide_IMessageBox: js.UndefOr[js.Function0[IComponent]] = js.undefined
     
     /** [Property] (Number) */
-    var minProgressWidth: js.UndefOr[Double] = js.native
+    var minProgressWidth: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var minPromptWidth: js.UndefOr[Double] = js.native
+    var minPromptWidth: js.UndefOr[Double] = js.undefined
     
     /** [Method] Displays a message box with a progress bar
       * @param title String The title bar text
@@ -110,7 +109,7 @@ object window {
           /* progressText */ js.UndefOr[java.lang.String], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Displays a message box with OK and Cancel buttons prompting the user to enter some text comparable to JavaScript s p
       * @param title String The title bar text
@@ -131,7 +130,7 @@ object window {
           /* value */ js.UndefOr[java.lang.String], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Adds the specified icon to the dialog
       * @param icon String A CSS classname specifying the icon's background image url, or empty string to clear the icon
@@ -147,14 +146,14 @@ object window {
           /* height */ js.UndefOr[Double], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Displays a new message box or reinitializes an existing message box based on the config options passed in
       * @param config Object The following config options are supported:
       * @returns Ext.window.MessageBox this
       */
     @JSName("show")
-    var show_IMessageBox: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], this.type]] = js.native
+    var show_IMessageBox: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Updates a progress style message box s text and progress bar
       * @param value Number Any number between 0 and 1 (e.g., .5)
@@ -169,7 +168,7 @@ object window {
           /* msg */ js.UndefOr[java.lang.String], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Displays a message box with an infinitely auto updating progress bar
       * @param msg String The message box body text
@@ -185,7 +184,7 @@ object window {
           /* config */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IMessageBox {
     
@@ -358,92 +357,98 @@ object window {
     }
   }
   
-  @js.native
   trait IWindow
-    extends typings.extjs.Ext.panel.IPanel {
+    extends StObject
+       with typings.extjs.Ext.panel.IPanel {
     
     /** [Method] Invoked after the Panel is Collapsed  */
     @JSName("afterCollapse")
-    var afterCollapse_IWindow: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterCollapse_IWindow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Invoked after the Panel is Expanded  */
     @JSName("afterExpand")
-    var afterExpand_IWindow: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterExpand_IWindow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String/Ext.Element) */
-    var animateTarget: js.UndefOr[js.Any] = js.native
+    var animateTarget: js.UndefOr[js.Any] = js.undefined
+    
+    /** [Method] Applies the state to the object
+      * @param state Object
+      */
+    @JSName("applyState")
+    var applyState_IWindow: js.UndefOr[js.Function1[/* state */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
     @JSName("autoRender")
-    var autoRender_IWindow: js.UndefOr[Boolean] = js.native
+    var autoRender_IWindow: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Ext.util.ComponentDragger) */
     @JSName("dd")
-    var dd_IWindow: js.UndefOr[IComponentDragger] = js.native
+    var dd_IWindow: js.UndefOr[IComponentDragger] = js.undefined
     
     /** [Config Option] (String/Number/Ext.Component) */
-    var defaultFocus: js.UndefOr[js.Any] = js.native
+    var defaultFocus: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var expandOnShow: js.UndefOr[Boolean] = js.native
+    var expandOnShow: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Gets the configured default focus item  */
-    var getDefaultFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var getDefaultFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean/Function) */
-    var ghost: js.UndefOr[js.Any] = js.native
+    var ghost: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var hideShadowOnDeactivate: js.UndefOr[Boolean] = js.native
+    var hideShadowOnDeactivate: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Boolean) */
-    var isWindow: js.UndefOr[Boolean] = js.native
+    var isWindow: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var maximizable: js.UndefOr[Boolean] = js.native
+    var maximizable: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Fits the window within its current container and automatically replaces the maximize tool button with the restore
       * @param animate Boolean true to animate this Window to full size.
       * @returns Ext.window.Window this
       */
-    var maximize: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], this.type]] = js.native
+    var maximize: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], this.type]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var maximized: js.UndefOr[Boolean] = js.native
+    var maximized: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var minimizable: js.UndefOr[Boolean] = js.native
+    var minimizable: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Placeholder method for minimizing the window
       * @returns Ext.window.Window this
       */
-    var minimize: js.UndefOr[js.Function0[this.type]] = js.native
+    var minimize: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var modal: js.UndefOr[Boolean] = js.native
+    var modal: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Function) */
-    var onEsc: js.UndefOr[js.Any] = js.native
+    var onEsc: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Restores a maximized window back to its original size and position prior to being maximized and also replaces the re
       * @param animate Object
       * @returns Ext.window.Window this
       */
-    var restore: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.native
+    var restore: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] A shortcut method for toggling between maximize and restore based on the current maximized state of the window
       * @returns Ext.window.Window this
       */
-    var toggleMaximize: js.UndefOr[js.Function0[this.type]] = js.native
+    var toggleMaximize: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Config Option] (Number) */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object IWindow {
     
@@ -473,6 +478,12 @@ object window {
       
       @scala.inline
       def setAnimateTargetUndefined: Self = StObject.set(x, "animateTarget", js.undefined)
+      
+      @scala.inline
+      def setApplyState(value: /* state */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setApplyStateUndefined: Self = StObject.set(x, "applyState", js.undefined)
       
       @scala.inline
       def setAutoRender(value: Boolean): Self = StObject.set(x, "autoRender", value.asInstanceOf[js.Any])

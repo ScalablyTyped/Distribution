@@ -2,24 +2,22 @@ package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response containing existing `BuildTriggers`.
   */
-@js.native
 trait SchemaListBuildTriggersResponse extends StObject {
   
   /**
     * Token to receive the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * `BuildTriggers` for the project, sorted by `create_time` descending.
     */
-  var triggers: js.UndefOr[js.Array[SchemaBuildTrigger]] = js.native
+  var triggers: js.UndefOr[js.Array[SchemaBuildTrigger]] = js.undefined
 }
 object SchemaListBuildTriggersResponse {
   

@@ -14,7 +14,6 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.toastInterfaceMod.ToastButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastMod {
@@ -22,7 +21,8 @@ object toastMod {
   @JSImport("@ionic/core/dist/types/components/toast/toast", "Toast")
   @js.native
   class Toast ()
-    extends ComponentInterface
+    extends StObject
+       with ComponentInterface
        with OverlayInterface {
     
     var buttonClick: js.Any = js.native

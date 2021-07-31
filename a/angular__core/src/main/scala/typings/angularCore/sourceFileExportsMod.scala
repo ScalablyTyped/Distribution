@@ -6,23 +6,24 @@ import typings.typescript.mod.Symbol
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceFileExportsMod {
   
-  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/decorator_rewrite/source_file_exports", "getExportSymbolsOfFile")
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/decorator_rewrite/source_file_exports", JSImport.Namespace)
   @js.native
-  def getExportSymbolsOfFile(sf: SourceFile, typeChecker: TypeChecker): js.Array[ResolvedExport] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getExportSymbolsOfFile(sf: SourceFile, typeChecker: TypeChecker): js.Array[ResolvedExport] = (^.asInstanceOf[js.Dynamic].applyDynamic("getExportSymbolsOfFile")(sf.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[js.Array[ResolvedExport]]
+  
   trait ResolvedExport extends StObject {
     
-    var exportName: String = js.native
+    var exportName: String
     
-    var identifier: Identifier = js.native
+    var identifier: Identifier
     
-    var symbol: Symbol = js.native
+    var symbol: Symbol
   }
   object ResolvedExport {
     

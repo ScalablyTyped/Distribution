@@ -2,25 +2,23 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Active extends StObject {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var every: js.UndefOr[Double] = js.native
+  var every: js.UndefOr[Double] = js.undefined
   
-  var expirationDate: js.UndefOr[String] = js.native
+  var expirationDate: js.UndefOr[String] = js.undefined
   
-  var repeats: js.UndefOr[String] = js.native
+  var repeats: js.UndefOr[String] = js.undefined
   
-  var repeatsOnWeekDays: js.UndefOr[js.Array[String]] = js.native
+  var repeatsOnWeekDays: js.UndefOr[js.Array[String]] = js.undefined
   
-  var runsOnDayOfMonth: js.UndefOr[String] = js.native
+  var runsOnDayOfMonth: js.UndefOr[String] = js.undefined
   
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
 }
 object Active {
   

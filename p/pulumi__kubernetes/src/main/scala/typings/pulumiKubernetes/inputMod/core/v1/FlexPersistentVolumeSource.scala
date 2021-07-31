@@ -4,39 +4,37 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FlexPersistentVolumeSource represents a generic persistent volume resource that is provisioned/attached using an exec based plugin.
   */
-@js.native
 trait FlexPersistentVolumeSource extends StObject {
   
   /**
     * Driver is the name of the driver to use for this volume.
     */
-  var driver: Input[String] = js.native
+  var driver: Input[String]
   
   /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
     */
-  var fsType: js.UndefOr[Input[String]] = js.native
+  var fsType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Optional: Extra command options if any.
     */
-  var options: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var options: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Optional: SecretRef is reference to the secret object containing sensitive information to pass to the plugin scripts. This may be empty if no secret object is specified. If the secret object contains more than one secret, all secrets are passed to the plugin scripts.
     */
-  var secretRef: js.UndefOr[Input[SecretReference]] = js.native
+  var secretRef: js.UndefOr[Input[SecretReference]] = js.undefined
 }
 object FlexPersistentVolumeSource {
   

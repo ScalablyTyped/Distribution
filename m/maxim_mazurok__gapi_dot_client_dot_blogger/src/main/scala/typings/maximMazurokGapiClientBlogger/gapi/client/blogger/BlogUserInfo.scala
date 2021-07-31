@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBlogger.gapi.client.blogger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlogUserInfo extends StObject {
   
   /** The Blog resource. */
-  var blog: js.UndefOr[Blog] = js.native
+  var blog: js.UndefOr[Blog] = js.undefined
   
   /** Information about a User for the Blog. */
-  var blog_user_info: js.UndefOr[BlogPerUserInfo] = js.native
+  var blog_user_info: js.UndefOr[BlogPerUserInfo] = js.undefined
   
   /** The kind of this entity. Always blogger#blogUserInfo. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object BlogUserInfo {
   

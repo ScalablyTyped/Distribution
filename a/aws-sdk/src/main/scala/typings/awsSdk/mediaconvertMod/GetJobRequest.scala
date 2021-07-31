@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobRequest extends StObject {
   
   /**
     * the job ID of the job.
     */
-  var Id: string = js.native
+  var Id: string
 }
 object GetJobRequest {
   

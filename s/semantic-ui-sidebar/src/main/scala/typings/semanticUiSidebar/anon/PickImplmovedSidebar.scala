@@ -2,14 +2,12 @@ package typings.semanticUiSidebar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.Sidebar.ErrorSettings._Impl, 'movedSidebar'> */
-@js.native
 trait PickImplmovedSidebar extends StObject {
   
-  var movedSidebar: String = js.native
+  var movedSidebar: String
 }
 object PickImplmovedSidebar {
   

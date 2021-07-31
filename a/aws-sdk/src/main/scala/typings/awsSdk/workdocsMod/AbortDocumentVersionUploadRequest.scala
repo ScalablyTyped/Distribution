@@ -2,26 +2,24 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbortDocumentVersionUploadRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The ID of the document.
     */
-  var DocumentId: ResourceIdType = js.native
+  var DocumentId: ResourceIdType
   
   /**
     * The ID of the version.
     */
-  var VersionId: DocumentVersionIdType = js.native
+  var VersionId: DocumentVersionIdType
 }
 object AbortDocumentVersionUploadRequest {
   

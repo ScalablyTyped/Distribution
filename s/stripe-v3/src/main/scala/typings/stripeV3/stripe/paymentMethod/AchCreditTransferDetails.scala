@@ -2,19 +2,17 @@ package typings.stripeV3.stripe.paymentMethod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AchCreditTransferDetails extends StObject {
   
-  var account_number: String = js.native
+  var account_number: String
   
-  var bank_name: String = js.native
+  var bank_name: String
   
-  var routing_number: String = js.native
+  var routing_number: String
   
-  var swift_coode: String = js.native
+  var swift_coode: String
 }
 object AchCreditTransferDetails {
   

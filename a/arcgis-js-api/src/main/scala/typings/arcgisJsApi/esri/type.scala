@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html)
   */
-@js.native
 trait `type` extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait `type` extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createPCClassRenderer)
     */
-  def createPCClassRenderer(params: typeCreatePCClassRendererParams): js.Promise[PCClassRendererResult] = js.native
+  def createPCClassRenderer(params: typeCreatePCClassRendererParams): js.Promise[PCClassRendererResult]
   
   /**
     * Generates a [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html) that may be applied directly to a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) that supports renderers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  def createRenderer(params: typeCreateRendererParams): js.Promise[typeRendererResult] = js.native
+  def createRenderer(params: typeCreateRendererParams): js.Promise[typeRendererResult]
 }
 object `type` {
   

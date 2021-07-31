@@ -10,9 +10,9 @@ InfiniteLoader component inspired by react-virtualized but for use with react-wi
 | ------------------ | :-------------: |
 | Full name          | react-window-infinite-loader |
 | Keywords           | react, reactjs, virtual, window, windowed, list, scrolling, infinite, virtualized, table, grid, spreadsheet |
-| # releases         | 8 |
-| # dependents       | 22 |
-| # downloads        | 4059933 |
+| # releases         | 3 |
+| # dependents       | 35 |
+| # downloads        | 4950001 |
 | # stars            | 0 |
 
 ## Links

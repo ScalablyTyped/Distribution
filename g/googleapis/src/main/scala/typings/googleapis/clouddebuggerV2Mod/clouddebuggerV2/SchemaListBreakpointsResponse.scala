@@ -2,13 +2,11 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for listing breakpoints.
   */
-@js.native
 trait SchemaListBreakpointsResponse extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaListBreakpointsResponse extends StObject {
     * `evaluated_expressions` and `variable_table` are cleared on each
     * breakpoint regardless of its status.
     */
-  var breakpoints: js.UndefOr[js.Array[SchemaBreakpoint]] = js.native
+  var breakpoints: js.UndefOr[js.Array[SchemaBreakpoint]] = js.undefined
   
   /**
     * A wait token that can be used in the next call to `list` (REST) or
     * `ListBreakpoints` (RPC) to block until the list of breakpoints has
     * changes.
     */
-  var nextWaitToken: js.UndefOr[String] = js.native
+  var nextWaitToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListBreakpointsResponse {
   

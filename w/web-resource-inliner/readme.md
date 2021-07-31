@@ -12,7 +12,7 @@ Inlines img, script and link tags into the same file.
 | Keywords           | inline, js, css, scripts, stylesheets, html, datauri |
 | # releases         | 7 |
 | # dependents       | 9 |
-| # downloads        | 14293904 |
+| # downloads        | 16815151 |
 | # stars            | 0 |
 
 ## Links

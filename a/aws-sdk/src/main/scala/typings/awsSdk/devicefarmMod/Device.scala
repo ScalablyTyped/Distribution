@@ -2,116 +2,114 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
   /**
     * The device's ARN.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.native
+  var arn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * Indicates how likely a device is available for a test run. Currently available in the ListDevices and GetDevice API methods.
     */
-  var availability: js.UndefOr[DeviceAvailability] = js.native
+  var availability: js.UndefOr[DeviceAvailability] = js.undefined
   
   /**
     * The device's carrier.
     */
-  var carrier: js.UndefOr[String] = js.native
+  var carrier: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the device's CPU.
     */
-  var cpu: js.UndefOr[CPU] = js.native
+  var cpu: js.UndefOr[CPU] = js.undefined
   
   /**
     * The name of the fleet to which this device belongs.
     */
-  var fleetName: js.UndefOr[String] = js.native
+  var fleetName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of fleet to which this device belongs. Possible values are PRIVATE and PUBLIC.
     */
-  var fleetType: js.UndefOr[String] = js.native
+  var fleetType: js.UndefOr[String] = js.undefined
   
   /**
     * The device's form factor. Allowed values include:   PHONE   TABLET  
     */
-  var formFactor: js.UndefOr[DeviceFormFactor] = js.native
+  var formFactor: js.UndefOr[DeviceFormFactor] = js.undefined
   
   /**
     * The device's heap size, expressed in bytes.
     */
-  var heapSize: js.UndefOr[Long] = js.native
+  var heapSize: js.UndefOr[Long] = js.undefined
   
   /**
     * The device's image name.
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * The instances that belong to this device.
     */
-  var instances: js.UndefOr[DeviceInstances] = js.native
+  var instances: js.UndefOr[DeviceInstances] = js.undefined
   
   /**
     * The device's manufacturer name.
     */
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /**
     * The device's total memory size, expressed in bytes.
     */
-  var memory: js.UndefOr[Long] = js.native
+  var memory: js.UndefOr[Long] = js.undefined
   
   /**
     * The device's model name.
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * The device's model ID.
     */
-  var modelId: js.UndefOr[String] = js.native
+  var modelId: js.UndefOr[String] = js.undefined
   
   /**
     * The device's display name.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The device's operating system type.
     */
-  var os: js.UndefOr[String] = js.native
+  var os: js.UndefOr[String] = js.undefined
   
   /**
     * The device's platform. Allowed values include:   ANDROID   IOS  
     */
-  var platform: js.UndefOr[DevicePlatform] = js.native
+  var platform: js.UndefOr[DevicePlatform] = js.undefined
   
   /**
     * The device's radio.
     */
-  var radio: js.UndefOr[String] = js.native
+  var radio: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether remote access has been enabled for the specified device.
     */
-  var remoteAccessEnabled: js.UndefOr[Boolean] = js.native
+  var remoteAccessEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This flag is set to true if remote debugging is enabled for the device. Remote debugging is no longer supported.
     */
-  var remoteDebugEnabled: js.UndefOr[Boolean] = js.native
+  var remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The resolution of the device.
     */
-  var resolution: js.UndefOr[Resolution] = js.native
+  var resolution: js.UndefOr[Resolution] = js.undefined
 }
 object Device {
   

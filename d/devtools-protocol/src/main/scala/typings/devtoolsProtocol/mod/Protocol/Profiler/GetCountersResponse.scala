@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCountersResponse extends StObject {
   
   /**
     * Collected counters information.
     */
-  var result: js.Array[CounterInfo] = js.native
+  var result: js.Array[CounterInfo]
 }
 object GetCountersResponse {
   

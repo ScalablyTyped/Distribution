@@ -9,7 +9,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object switchMod extends Shortcut {
@@ -19,7 +18,9 @@ object switchMod extends Shortcut {
   val default: CompoundedComponent = js.native
   
   @js.native
-  trait CompoundedComponent extends ForwardRefExoticComponent[SwitchProps with RefAttributes[HTMLElement]] {
+  trait CompoundedComponent
+    extends StObject
+       with ForwardRefExoticComponent[SwitchProps & RefAttributes[HTMLElement]] {
     
     var __ANT_SWITCH: Boolean = js.native
   }
@@ -28,36 +29,35 @@ object switchMod extends Shortcut {
   
   type SwitchClickEventHandler = SwitchChangeEventHandler
   
-  @js.native
   trait SwitchProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var checkedChildren: js.UndefOr[ReactNode] = js.native
+    var checkedChildren: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[SwitchChangeEventHandler] = js.native
+    var onChange: js.UndefOr[SwitchChangeEventHandler] = js.undefined
     
-    var onClick: js.UndefOr[SwitchClickEventHandler] = js.native
+    var onClick: js.UndefOr[SwitchClickEventHandler] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[SwitchSize] = js.native
+    var size: js.UndefOr[SwitchSize] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var unCheckedChildren: js.UndefOr[ReactNode] = js.native
+    var unCheckedChildren: js.UndefOr[ReactNode] = js.undefined
   }
   object SwitchProps {
     

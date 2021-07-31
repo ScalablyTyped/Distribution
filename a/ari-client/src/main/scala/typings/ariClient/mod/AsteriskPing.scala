@@ -2,26 +2,24 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsteriskPing extends StObject {
   
   /**
     * Asterisk id info.
     */
-  var asterisk_id: String = js.native
+  var asterisk_id: String
   
   /**
     * Always string value is pong.
     */
-  var ping: String = js.native
+  var ping: String
   
   /**
     * The timestamp string of request received time.
     */
-  var timestamp: String = js.native
+  var timestamp: String
 }
 object AsteriskPing {
   

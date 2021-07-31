@@ -7,43 +7,44 @@ import typings.vueComponentCompilerUtils.typesMod.VueTemplateCompiler
 import typings.vueComponentCompilerUtils.typesMod.VueTemplateCompilerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compileTemplateMod {
   
-  @JSImport("@vue/component-compiler-utils/dist/compileTemplate", "compileTemplate")
+  @JSImport("@vue/component-compiler-utils/dist/compileTemplate", JSImport.Namespace)
   @js.native
-  def compileTemplate(options: TemplateCompileOptions): TemplateCompileResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def compileTemplate(options: TemplateCompileOptions): TemplateCompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("compileTemplate")(options.asInstanceOf[js.Any]).asInstanceOf[TemplateCompileResult]
+  
   trait TemplateCompileOptions extends StObject {
     
-    var compiler: VueTemplateCompiler = js.native
+    var compiler: VueTemplateCompiler
     
-    var compilerOptions: js.UndefOr[VueTemplateCompilerOptions] = js.native
+    var compilerOptions: js.UndefOr[VueTemplateCompilerOptions] = js.undefined
     
-    var filename: String = js.native
+    var filename: String
     
-    var isFunctional: js.UndefOr[Boolean] = js.native
+    var isFunctional: js.UndefOr[Boolean] = js.undefined
     
-    var isProduction: js.UndefOr[Boolean] = js.native
+    var isProduction: js.UndefOr[Boolean] = js.undefined
     
-    var optimizeSSR: js.UndefOr[Boolean] = js.native
+    var optimizeSSR: js.UndefOr[Boolean] = js.undefined
     
-    var preprocessLang: js.UndefOr[String] = js.native
+    var preprocessLang: js.UndefOr[String] = js.undefined
     
-    var preprocessOptions: js.UndefOr[js.Any] = js.native
+    var preprocessOptions: js.UndefOr[js.Any] = js.undefined
     
-    var prettify: js.UndefOr[Boolean] = js.native
+    var prettify: js.UndefOr[Boolean] = js.undefined
     
-    var source: String = js.native
+    var source: String
     
-    var transformAssetUrls: js.UndefOr[AssetURLOptions | Boolean] = js.native
+    var transformAssetUrls: js.UndefOr[AssetURLOptions | Boolean] = js.undefined
     
-    var transformAssetUrlsOptions: js.UndefOr[TransformAssetUrlsOptions] = js.native
+    var transformAssetUrlsOptions: js.UndefOr[TransformAssetUrlsOptions] = js.undefined
     
-    var transpileOptions: js.UndefOr[js.Any] = js.native
+    var transpileOptions: js.UndefOr[js.Any] = js.undefined
   }
   object TemplateCompileOptions {
     
@@ -127,18 +128,17 @@ object compileTemplateMod {
     }
   }
   
-  @js.native
   trait TemplateCompileResult extends StObject {
     
-    var ast: js.UndefOr[js.Object] = js.native
+    var ast: js.UndefOr[js.Object] = js.undefined
     
-    var code: String = js.native
+    var code: String
     
-    var errors: js.Array[String | ErrorWithRange] = js.native
+    var errors: js.Array[String | ErrorWithRange]
     
-    var source: String = js.native
+    var source: String
     
-    var tips: js.Array[String | ErrorWithRange] = js.native
+    var tips: js.Array[String | ErrorWithRange]
   }
   object TemplateCompileResult {
     

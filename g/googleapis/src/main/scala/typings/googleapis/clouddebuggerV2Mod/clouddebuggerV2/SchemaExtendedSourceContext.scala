@@ -3,25 +3,23 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An ExtendedSourceContext is a SourceContext combined with additional
   * details describing the context.
   */
-@js.native
 trait SchemaExtendedSourceContext extends StObject {
   
   /**
     * Any source context.
     */
-  var context: js.UndefOr[SchemaSourceContext] = js.native
+  var context: js.UndefOr[SchemaSourceContext] = js.undefined
   
   /**
     * Labels with user defined metadata.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaExtendedSourceContext {
   

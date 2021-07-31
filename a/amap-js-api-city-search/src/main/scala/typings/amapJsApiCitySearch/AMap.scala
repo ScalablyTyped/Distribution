@@ -10,7 +10,6 @@ import typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.error
 import typings.amapJsApiCitySearch.anon.Info
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
@@ -19,7 +18,9 @@ object AMap {
     * 根据IP返回对应城市信息
     */
   @js.native
-  trait CitySearch extends EventEmitter {
+  trait CitySearch
+    extends StObject
+       with EventEmitter {
     
     /**
       * 根据输入IP地址返回对应城市信息
@@ -39,12 +40,11 @@ object AMap {
   }
   object CitySearch {
     
-    @js.native
     trait EventMap extends StObject {
       
-      var complete: Event_[typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.complete, SearchResult] = js.native
+      var complete: Event_[typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.complete, SearchResult]
       
-      var error: Event_[typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.error, Info] = js.native
+      var error: Event_[typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.error, Info]
     }
     object EventMap {
       
@@ -65,45 +65,44 @@ object AMap {
       }
     }
     
-    @js.native
     trait SearchResult extends StObject {
       
       /**
         * 地区编号
         */
-      var adcode: String = js.native
+      var adcode: String
       
       /**
         * 城市范围
         */
-      var bounds: Bounds = js.native
+      var bounds: Bounds
       
       /**
         * 城市名称
         */
-      var city: String = js.native
+      var city: String
       
       /**
         * 成功信息
         */
-      var info: String = js.native
+      var info: String
       
       /**
         * 查询信息码
         */
-      var infocode: String = js.native
+      var infocode: String
       
       /**
         * 省份
         */
-      var province: String = js.native
+      var province: String
       
-      var rectangle: String = js.native
+      var rectangle: String
       
       /**
         * 查询状态
         */
-      var status: String = js.native
+      var status: String
     }
     object SearchResult {
       

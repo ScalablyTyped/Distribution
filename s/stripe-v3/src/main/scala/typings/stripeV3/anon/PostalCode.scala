@@ -2,13 +2,11 @@ package typings.stripeV3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostalCode extends StObject {
   
-  var postalCode: String | Double = js.native
+  var postalCode: String | Double
 }
 object PostalCode {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserDefinedFunctionRequest extends StObject {
   
   /**
     * The ID of the Data Catalog in which to create the function. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the catalog database in which to create the function.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * A FunctionInput object that defines the function to create in the Data Catalog.
     */
-  var FunctionInput: UserDefinedFunctionInput = js.native
+  var FunctionInput: UserDefinedFunctionInput
 }
 object CreateUserDefinedFunctionRequest {
   

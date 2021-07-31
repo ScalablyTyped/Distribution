@@ -2,20 +2,19 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSExpressionWithTypeArguments
-  extends Node
+  extends StObject
+     with Node
      with TSType {
   
-  var expression: TSEntityName = js.native
+  var expression: TSEntityName
   
-  var typeParameters: TypeParameterInstantiation_ | Null = js.native
+  var typeParameters: TypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_TSExpressionWithTypeArguments: typings.babelTypes.babelTypesStrings.TSExpressionWithTypeArguments = js.native
+  var type_TSExpressionWithTypeArguments: typings.babelTypes.babelTypesStrings.TSExpressionWithTypeArguments
 }
 object TSExpressionWithTypeArguments {
   

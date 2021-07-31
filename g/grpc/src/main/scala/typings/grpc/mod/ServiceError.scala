@@ -3,26 +3,26 @@ package typings.grpc.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServiceError extends Error {
+trait ServiceError
+  extends StObject
+     with Error {
   
   /**
     * The error code, a key of {@link grpc.status} that is not `grpc.status.OK`
     */
-  var code: js.UndefOr[status] = js.native
+  var code: js.UndefOr[status] = js.undefined
   
   /**
     * Original status details string
     */
-  var details: js.UndefOr[String] = js.native
+  var details: js.UndefOr[String] = js.undefined
   
   /**
     * Trailing metadata sent with the status, if applicable
     */
-  var metadata: js.UndefOr[Metadata] = js.native
+  var metadata: js.UndefOr[Metadata] = js.undefined
 }
 object ServiceError {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImagesUploadResponse extends StObject {
   
   /** The uploaded image. */
-  var image: js.UndefOr[Image] = js.native
+  var image: js.UndefOr[Image] = js.undefined
 }
 object ImagesUploadResponse {
   

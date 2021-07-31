@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Define overloaded variants for when  generating code
   */
-@js.native
-trait OperationDefinitionOverload extends BackboneElement {
+trait OperationDefinitionOverload
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'comment'.
     */
-  var _comment: js.UndefOr[Element] = js.native
+  var _comment: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'parameterName'.
     */
-  var _parameterName: js.UndefOr[js.Array[Element]] = js.native
+  var _parameterName: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Comments to go on overload
     */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Name of parameter to include in overload
     */
-  var parameterName: js.UndefOr[js.Array[String]] = js.native
+  var parameterName: js.UndefOr[js.Array[String]] = js.undefined
 }
 object OperationDefinitionOverload {
   

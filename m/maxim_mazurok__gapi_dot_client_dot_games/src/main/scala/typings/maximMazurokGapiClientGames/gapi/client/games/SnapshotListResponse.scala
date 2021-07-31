@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotListResponse extends StObject {
   
   /** The snapshots. */
-  var items: js.UndefOr[js.Array[Snapshot]] = js.native
+  var items: js.UndefOr[js.Array[Snapshot]] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#snapshotListResponse`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Token corresponding to the next page of results. If there are no more results, the token is omitted. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SnapshotListResponse {
   

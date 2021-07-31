@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchContactsResponse extends StObject {
   
   /**
     * The contacts that meet the specified set of filter criteria, in sort order.
     */
-  var Contacts: js.UndefOr[ContactDataList] = js.native
+  var Contacts: js.UndefOr[ContactDataList] = js.undefined
   
   /**
     * The token returned to indicate that there is more data available.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
   
   /**
     * The total number of contacts returned.
     */
-  var TotalCount: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TotalCount] = js.native
+  var TotalCount: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TotalCount] = js.undefined
 }
 object SearchContactsResponse {
   

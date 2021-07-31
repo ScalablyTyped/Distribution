@@ -11,7 +11,6 @@ import typings.protooServer.protooServerStrings.request
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -65,14 +64,13 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait ConnectionRequestInfo extends StObject {
     
-    var origin: String = js.native
+    var origin: String
     
-    var request: IncomingMessage = js.native
+    var request: IncomingMessage
     
-    var socket: Socket = js.native
+    var socket: Socket
   }
   object ConnectionRequestInfo {
     
@@ -96,7 +94,7 @@ object mod {
     }
   }
   
-  type ConnectionRequestRejectFn = (js.Function2[/* code */ Double, /* reason */ String, Unit]) with (js.Function1[/* error */ Error, Unit])
+  type ConnectionRequestRejectFn = (js.Function2[/* code */ Double, /* reason */ String, Unit]) & (js.Function1[/* error */ Error, Unit])
   
   type EmptyCb = js.Function0[Unit]
   
@@ -127,26 +125,25 @@ object mod {
     def request(method: String, data: js.Any): js.Promise[ProotooResponse] = js.native
   }
   
-  @js.native
   trait ProotooResponse extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var errorCode: js.UndefOr[Double] = js.native
+    var errorCode: js.UndefOr[Double] = js.undefined
     
-    var errorReason: js.UndefOr[String] = js.native
+    var errorReason: js.UndefOr[String] = js.undefined
     
-    var id: Double = js.native
+    var id: Double
     
-    var ok: Boolean = js.native
+    var ok: Boolean
     
-    var response: `true` = js.native
+    var response: `true`
   }
   object ProotooResponse {
     
     @scala.inline
-    def apply(id: Double, ok: Boolean, response: `true`): ProotooResponse = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    def apply(id: Double, ok: Boolean): ProotooResponse = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], response = true)
       __obj.asInstanceOf[ProotooResponse]
     }
     
@@ -182,20 +179,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ProtooNotification extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var method: String = js.native
+    var method: String
     
-    var notification: `true` = js.native
+    var notification: `true`
   }
   object ProtooNotification {
     
     @scala.inline
-    def apply(data: js.Any, method: String, notification: `true`): ProtooNotification = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any])
+    def apply(data: js.Any, method: String): ProtooNotification = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], notification = true)
       __obj.asInstanceOf[ProtooNotification]
     }
     
@@ -213,22 +209,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ProtooRequest extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var id: Double = js.native
+    var id: Double
     
-    var method: String = js.native
+    var method: String
     
-    var request: `true` = js.native
+    var request: `true`
   }
   object ProtooRequest {
     
     @scala.inline
-    def apply(data: js.Any, id: Double, method: String, request: `true`): ProtooRequest = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    def apply(data: js.Any, id: Double, method: String): ProtooRequest = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = true)
       __obj.asInstanceOf[ProtooRequest]
     }
     
@@ -249,41 +244,40 @@ object mod {
     }
   }
   
-  type RejectFn = (js.Function1[/* errorCode */ js.UndefOr[Error], Unit]) with (js.Function2[/* errorCode */ Double, /* errorReason */ Error | String, Unit])
+  type RejectFn = (js.Function1[/* errorCode */ js.UndefOr[Error], Unit]) & (js.Function2[/* errorCode */ Double, /* errorReason */ Error | String, Unit])
   
   type RequestCb = js.Function3[/* request */ ProtooRequest, /* accept */ AcceptFn, /* reject */ RejectFn, Unit]
   
   /* Inlined std.Pick<websocket.websocket.IServerConfig, std.Exclude<keyof websocket.websocket.IServerConfig, 'httpServer'>> */
-  @js.native
   trait WebSocketServerOptions extends StObject {
     
-    var assembleFragments: js.UndefOr[Boolean] = js.native
+    var assembleFragments: js.UndefOr[Boolean] = js.undefined
     
-    var autoAcceptConnections: js.UndefOr[Boolean] = js.native
+    var autoAcceptConnections: js.UndefOr[Boolean] = js.undefined
     
-    var closeTimeout: js.UndefOr[Double] = js.native
+    var closeTimeout: js.UndefOr[Double] = js.undefined
     
-    var disableNagleAlgorithm: js.UndefOr[Boolean] = js.native
+    var disableNagleAlgorithm: js.UndefOr[Boolean] = js.undefined
     
-    var dropConnectionOnKeepaliveTimeout: js.UndefOr[Boolean] = js.native
+    var dropConnectionOnKeepaliveTimeout: js.UndefOr[Boolean] = js.undefined
     
-    var fragmentOutgoingMessages: js.UndefOr[Boolean] = js.native
+    var fragmentOutgoingMessages: js.UndefOr[Boolean] = js.undefined
     
-    var fragmentationThreshold: js.UndefOr[Double] = js.native
+    var fragmentationThreshold: js.UndefOr[Double] = js.undefined
     
-    var ignoreXForwardedFor: js.UndefOr[Boolean] = js.native
+    var ignoreXForwardedFor: js.UndefOr[Boolean] = js.undefined
     
-    var keepalive: js.UndefOr[Boolean] = js.native
+    var keepalive: js.UndefOr[Boolean] = js.undefined
     
-    var keepaliveGracePeriod: js.UndefOr[Double] = js.native
+    var keepaliveGracePeriod: js.UndefOr[Double] = js.undefined
     
-    var keepaliveInterval: js.UndefOr[Double] = js.native
+    var keepaliveInterval: js.UndefOr[Double] = js.undefined
     
-    var maxReceivedFrameSize: js.UndefOr[Double] = js.native
+    var maxReceivedFrameSize: js.UndefOr[Double] = js.undefined
     
-    var maxReceivedMessageSize: js.UndefOr[Double] = js.native
+    var maxReceivedMessageSize: js.UndefOr[Double] = js.undefined
     
-    var useNativeKeepalive: js.UndefOr[Boolean] = js.native
+    var useNativeKeepalive: js.UndefOr[Boolean] = js.undefined
   }
   object WebSocketServerOptions {
     
@@ -382,14 +376,13 @@ object mod {
     }
   }
   
-  @js.native
   trait WebSocketTransport extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    var closed: Boolean = js.native
+    var closed: Boolean
     
-    def send(message: js.Any): js.Promise[Unit] = js.native
+    def send(message: js.Any): js.Promise[Unit]
   }
   object WebSocketTransport {
     

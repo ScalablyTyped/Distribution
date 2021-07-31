@@ -10,10 +10,10 @@ Serves a webpack app. Updates the browser on changes.
 | ------------------ | :-------------: |
 | Full name          | webpack-dev-server |
 | Keywords           | - |
-| # releases         | 31 |
-| # dependents       | 7222 |
-| # downloads        | 322380856 |
-| # stars            | 130 |
+| # releases         | 27 |
+| # dependents       | 7684 |
+| # downloads        | 365398087 |
+| # stars            | 131 |
 
 ## Links
 - [Homepage](https://github.com/webpack/webpack-dev-server#readme)

@@ -5,25 +5,23 @@ import typings.nextServer.routerMod.Subscription
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait App extends StObject {
   
-  var App: ComponentType[js.Object] = js.native
+  var App: ComponentType[js.Object]
   
-  var Component: ComponentType[js.Object] = js.native
+  var Component: ComponentType[js.Object]
   
-  var err: js.UndefOr[typings.std.Error] = js.native
+  var err: js.UndefOr[typings.std.Error] = js.undefined
   
-  var initialProps: js.Any = js.native
+  var initialProps: js.Any
   
-  var pageLoader: js.Any = js.native
+  var pageLoader: js.Any
   
-  var subscription: Subscription = js.native
+  var subscription: Subscription
   
-  def wrapApp(App: ComponentType[js.Object]): js.Any = js.native
+  def wrapApp(App: ComponentType[js.Object]): js.Any
 }
 object App {
   

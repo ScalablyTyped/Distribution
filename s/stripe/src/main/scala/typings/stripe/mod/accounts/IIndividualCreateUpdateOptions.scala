@@ -2,11 +2,11 @@ package typings.stripe.mod.accounts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IIndividualCreateUpdateOptions extends IIndividualShared {
+trait IIndividualCreateUpdateOptions
+  extends StObject
+     with IIndividualShared {
   
   /**
     * The government-issued ID number of the individual, as appropriate for the representative’s country.
@@ -14,13 +14,13 @@ trait IIndividualCreateUpdateOptions extends IIndividualShared {
     * Instead of the number itself, you can also provide a PII token created with Stripe.js.
     * This can be unset by updating the value to null and then saving.
     */
-  var id_number: js.UndefOr[String] = js.native
+  var id_number: js.UndefOr[String] = js.undefined
   
   /**
     * The last four digits of the individual’s Social Security Number (U.S. only).
     * This can be unset by updating the value to null and then saving.
     */
-  var ssn_last_4: js.UndefOr[String] = js.native
+  var ssn_last_4: js.UndefOr[String] = js.undefined
 }
 object IIndividualCreateUpdateOptions {
   

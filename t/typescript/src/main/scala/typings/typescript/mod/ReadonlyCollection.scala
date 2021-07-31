@@ -2,18 +2,16 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Common read methods for ES6 Map/Set. */
-@js.native
 trait ReadonlyCollection[K] extends StObject {
   
-  def has(key: K): Boolean = js.native
+  def has(key: K): Boolean
   
-  def keys(): Iterator[K] = js.native
+  def keys(): Iterator[K]
   
-  val size: Double = js.native
+  val size: Double
 }
 object ReadonlyCollection {
   
@@ -24,7 +22,7 @@ object ReadonlyCollection {
   }
   
   @scala.inline
-  implicit class ReadonlyCollectionMutableBuilder[Self <: ReadonlyCollection[_], K] (val x: Self with ReadonlyCollection[K]) extends AnyVal {
+  implicit class ReadonlyCollectionMutableBuilder[Self <: ReadonlyCollection[?], K] (val x: Self & ReadonlyCollection[K]) extends AnyVal {
     
     @scala.inline
     def setHas(value: K => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))

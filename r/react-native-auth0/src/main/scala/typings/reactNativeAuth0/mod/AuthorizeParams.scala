@@ -2,25 +2,23 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizeParams extends StObject {
   
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
-  var connection: js.UndefOr[String] = js.native
+  var connection: js.UndefOr[String] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object AuthorizeParams {
   

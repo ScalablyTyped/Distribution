@@ -2,15 +2,13 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Maximized extends StObject {
   
-  var maximized: Boolean = js.native
+  var maximized: Boolean
   
-  var originalEvent: typings.std.Event = js.native
+  var originalEvent: typings.std.Event
 }
 object Maximized {
   

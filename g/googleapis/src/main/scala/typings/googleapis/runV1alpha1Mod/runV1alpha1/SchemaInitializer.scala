@@ -2,19 +2,17 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initializer is information about an initializer that has not yet completed.
   */
-@js.native
 trait SchemaInitializer extends StObject {
   
   /**
     * name of the process that is responsible for initializing this object.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaInitializer {
   

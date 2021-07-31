@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,8 +45,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * underlying graphics subsystem.
   * @since OOo 2.0
   */
-@js.native
-trait XCanvas extends XInterface {
+trait XCanvas
+  extends StObject
+     with XInterface {
   
   /**
     * Request the associated graphic device for this canvas.
@@ -56,14 +56,14 @@ trait XCanvas extends XInterface {
     * This includes device resolution, color space, or bitmap formats.
     * @returns the associated {@link XGraphicDevice} .
     */
-  val Device: XGraphicDevice = js.native
+  val Device: XGraphicDevice
   
   /**
     * Clear the whole canvas area.
     *
     * This method clears the whole canvas area to the device default color (e.g. white for a printer, transparent for an {@link XCustomSprite} ).
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Create a suitable font for the specified font description.
@@ -73,7 +73,7 @@ trait XCanvas extends XInterface {
     * @returns the requested font, or an invalid reference, if the request failed.
     * @throws com::sun::star::lang::IllegalArgumentException if one of the parameters is not within the allowed range.
     */
-  def createFont(aFontRequest: FontRequest, aExtraFontProperties: SeqEquiv[PropertyValue], aFontMatrix: Matrix2D): XCanvasFont = js.native
+  def createFont(aFontRequest: FontRequest, aExtraFontProperties: SeqEquiv[PropertyValue], aFontMatrix: Matrix2D): XCanvasFont
   
   /**
     * Draw a cubic Bezier curve in device resolution width (i.e. one device pixel wide).
@@ -88,7 +88,7 @@ trait XCanvas extends XInterface {
     aEndPoint: RealPoint2D,
     aViewState: ViewState,
     aRenderState: RenderState
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Render the given bitmap.
@@ -102,7 +102,7 @@ trait XCanvas extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if one of the view and render state parameters are outside the specified range.
     * @throws VolatileContentDestroyedException if a texture bitmap was volatile, and the content was destroyed before the rendering could take place.
     */
-  def drawBitmap(xBitmap: XBitmap, aViewState: ViewState, aRenderState: RenderState): XCachedPrimitive = js.native
+  def drawBitmap(xBitmap: XBitmap, aViewState: ViewState, aRenderState: RenderState): XCachedPrimitive
   
   /**
     * Render the given bitmap, with a global color modulation.
@@ -117,7 +117,7 @@ trait XCanvas extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if one of the view and render state parameters are outside the specified range.
     * @throws VolatileContentDestroyedException if a texture bitmap was volatile, and the content was destroyed before the rendering could take place.
     */
-  def drawBitmapModulated(xBitmap: XBitmap, aViewState: ViewState, aRenderState: RenderState): XCachedPrimitive = js.native
+  def drawBitmapModulated(xBitmap: XBitmap, aViewState: ViewState, aRenderState: RenderState): XCachedPrimitive
   
   /**
     * Draw a line in device resolution width (i.e. one device pixel wide).
@@ -127,7 +127,7 @@ trait XCanvas extends XInterface {
     * @param aRenderState The render state to be used when drawing this line.
     * @throws com::sun::star::lang::IllegalArgumentException if one of the view and render state parameters are outside the specified range.
     */
-  def drawLine(aStartPoint: RealPoint2D, aEndPoint: RealPoint2D, aViewState: ViewState, aRenderState: RenderState): Unit = js.native
+  def drawLine(aStartPoint: RealPoint2D, aEndPoint: RealPoint2D, aViewState: ViewState, aRenderState: RenderState): Unit
   
   /**
     * Draw a point in device resolution on the device.
@@ -136,7 +136,7 @@ trait XCanvas extends XInterface {
     * @param aRenderState The render state to be used when drawing this point.
     * @throws com::sun::star::lang::IllegalArgumentException if one of the view and render state parameters are outside the specified range.
     */
-  def drawPoint(aPoint: RealPoint2D, aViewState: ViewState, aRenderState: RenderState): Unit = js.native
+  def drawPoint(aPoint: RealPoint2D, aViewState: ViewState, aRenderState: RenderState): Unit
   
   /**
     * Draw a poly-polygon in device resolution line width (i.e. the lines are one device pixel wide).
@@ -146,7 +146,7 @@ trait XCanvas extends XInterface {
     * @returns a handle to the cached rendering output.
     * @throws com::sun::star::lang::IllegalArgumentException if one of the view and render state parameters are outside the specified range.
     */
-  def drawPolyPolygon(xPolyPolygon: XPolyPolygon2D, aViewState: ViewState, aRenderState: RenderState): XCachedPrimitive = js.native
+  def drawPolyPolygon(xPolyPolygon: XPolyPolygon2D, aViewState: ViewState, aRenderState: RenderState): XCachedPrimitive
   
   /**
     * Draw the text given by the substring of the specified string with the given font.
@@ -167,7 +167,7 @@ trait XCanvas extends XInterface {
     aViewState: ViewState,
     aRenderState: RenderState,
     nTextDirection: Double
-  ): XCachedPrimitive = js.native
+  ): XCachedPrimitive
   
   /**
     * Draw the formatted text given by the text layout.
@@ -181,7 +181,7 @@ trait XCanvas extends XInterface {
     * @returns a handle to the cached rendering output.
     * @throws com::sun::star::lang::IllegalArgumentException if one of the view and render state parameters are outside the specified range.
     */
-  def drawTextLayout(xLayoutetText: XTextLayout, aViewState: ViewState, aRenderState: RenderState): XCachedPrimitive = js.native
+  def drawTextLayout(xLayoutetText: XTextLayout, aViewState: ViewState, aRenderState: RenderState): XCachedPrimitive
   
   /**
     * Fill the given poly-polygon.
@@ -193,7 +193,7 @@ trait XCanvas extends XInterface {
     * @returns a handle to the cached rendering output.
     * @throws com::sun::star::lang::IllegalArgumentException if one of the view and render state parameters are outside the specified range.
     */
-  def fillPolyPolygon(xPolyPolygon: XPolyPolygon2D, aViewState: ViewState, aRenderState: RenderState): XCachedPrimitive = js.native
+  def fillPolyPolygon(xPolyPolygon: XPolyPolygon2D, aViewState: ViewState, aRenderState: RenderState): XCachedPrimitive
   
   /**
     * Fill the given poly-polygon with a mapped texture.
@@ -215,7 +215,7 @@ trait XCanvas extends XInterface {
     aRenderState: RenderState,
     xTextures: SeqEquiv[Texture],
     xMapping: XMapping2D
-  ): XCachedPrimitive = js.native
+  ): XCachedPrimitive
   
   /**
     * Fill the given poly-polygon with a texture.
@@ -234,7 +234,7 @@ trait XCanvas extends XInterface {
     aViewState: ViewState,
     aRenderState: RenderState,
     xTextures: SeqEquiv[Texture]
-  ): XCachedPrimitive = js.native
+  ): XCachedPrimitive
   
   /**
     * Request the associated graphic device for this canvas.
@@ -243,7 +243,7 @@ trait XCanvas extends XInterface {
     * This includes device resolution, color space, or bitmap formats.
     * @returns the associated {@link XGraphicDevice} .
     */
-  def getDevice(): XGraphicDevice = js.native
+  def getDevice(): XGraphicDevice
   
   /**
     * Query font information, specific to this canvas.
@@ -252,7 +252,7 @@ trait XCanvas extends XInterface {
     * @returns the list of fonts matching the filter set.
     * @throws com::sun::star::lang::IllegalArgumentException if one of the font properties are invalid or not recognized, or if one of the {@link FontInfo} mem
     */
-  def queryAvailableFonts(aFilter: FontInfo, aFontProperties: SeqEquiv[PropertyValue]): SafeArray[FontInfo] = js.native
+  def queryAvailableFonts(aFilter: FontInfo, aFontProperties: SeqEquiv[PropertyValue]): SafeArray[FontInfo]
   
   /**
     * Query the polygonal representation of the stroke outlines, as it would be generated by the strokePolyPolygon methods.
@@ -270,7 +270,7 @@ trait XCanvas extends XInterface {
     aViewState: ViewState,
     aRenderState: RenderState,
     aStrokeAttributes: StrokeAttributes
-  ): XPolyPolygon2D = js.native
+  ): XPolyPolygon2D
   
   /**
     * Stroke each polygon of the provided poly-polygon with the specified stroke attributes.
@@ -289,7 +289,7 @@ trait XCanvas extends XInterface {
     aViewState: ViewState,
     aRenderState: RenderState,
     aStrokeAttributes: StrokeAttributes
-  ): XCachedPrimitive = js.native
+  ): XCachedPrimitive
   
   /**
     * Stroke each polygon of the provided poly-polygon with the specified stroke attributes, fill the stroked outline with the specified texture graphics,
@@ -314,7 +314,7 @@ trait XCanvas extends XInterface {
     aTextures: SeqEquiv[Texture],
     xMapping: XMapping2D,
     aStrokeAttributes: StrokeAttributes
-  ): XCachedPrimitive = js.native
+  ): XCachedPrimitive
   
   /**
     * Stroke each polygon of the provided poly-polygon with the specified stroke attributes, fill the stroked outline with the specified texture graphics.
@@ -336,7 +336,7 @@ trait XCanvas extends XInterface {
     aRenderState: RenderState,
     aTextures: SeqEquiv[Texture],
     aStrokeAttributes: StrokeAttributes
-  ): XCachedPrimitive = js.native
+  ): XCachedPrimitive
 }
 object XCanvas {
   

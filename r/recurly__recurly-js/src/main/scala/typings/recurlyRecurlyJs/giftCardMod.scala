@@ -3,7 +3,6 @@ package typings.recurlyRecurlyJs
 import typings.recurlyRecurlyJs.errorMod.RecurlyError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object giftCardMod {
@@ -12,10 +11,9 @@ object giftCardMod {
   
   type GiftCard = js.Function2[/* giftCardOptions */ GiftCardOptions, /* done */ Done, Unit]
   
-  @js.native
   trait GiftCardOptions extends StObject {
     
-    var code: String = js.native
+    var code: String
   }
   object GiftCardOptions {
     
@@ -33,12 +31,11 @@ object giftCardMod {
     }
   }
   
-  @js.native
   trait GiftCardResult extends StObject {
     
-    var currency: String = js.native
+    var currency: String
     
-    var unit_amount: Double = js.native
+    var unit_amount: Double
   }
   object GiftCardResult {
     

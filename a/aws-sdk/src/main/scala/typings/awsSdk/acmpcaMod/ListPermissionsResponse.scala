@@ -2,21 +2,19 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPermissionsResponse extends StObject {
   
   /**
     * When the list is truncated, this value is present and should be used for the NextToken parameter in a subsequent pagination request. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.acmpcaMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.acmpcaMod.NextToken] = js.undefined
   
   /**
     * Summary information about each permission assigned by the specified private CA, including the action enabled, the policy provided, and the time of creation.
     */
-  var Permissions: js.UndefOr[PermissionList] = js.native
+  var Permissions: js.UndefOr[PermissionList] = js.undefined
 }
 object ListPermissionsResponse {
   

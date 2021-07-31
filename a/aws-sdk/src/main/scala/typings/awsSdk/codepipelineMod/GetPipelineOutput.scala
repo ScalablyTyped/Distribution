@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPipelineOutput extends StObject {
   
   /**
     * Represents the pipeline metadata information returned as part of the output of a GetPipeline action.
     */
-  var metadata: js.UndefOr[PipelineMetadata] = js.native
+  var metadata: js.UndefOr[PipelineMetadata] = js.undefined
   
   /**
     * Represents the structure of actions and stages to be performed in the pipeline. 
     */
-  var pipeline: js.UndefOr[PipelineDeclaration] = js.native
+  var pipeline: js.UndefOr[PipelineDeclaration] = js.undefined
 }
 object GetPipelineOutput {
   

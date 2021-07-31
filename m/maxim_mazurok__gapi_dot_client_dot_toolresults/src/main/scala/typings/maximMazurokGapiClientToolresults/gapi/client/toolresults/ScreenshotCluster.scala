@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreenshotCluster extends StObject {
   
   /** A string that describes the activity of every screen in the cluster. */
-  var activity: js.UndefOr[String] = js.native
+  var activity: js.UndefOr[String] = js.undefined
   
   /** A unique identifier for the cluster. @OutputOnly */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /**
     * A singular screen that represents the cluster as a whole. This screen will act as the "cover" of the entire cluster. When users look at the clusters, only the key screen from each
     * cluster will be shown. Which screen is the key screen is determined by the ClusteringAlgorithm
     */
-  var keyScreen: js.UndefOr[Screen] = js.native
+  var keyScreen: js.UndefOr[Screen] = js.undefined
   
   /** Full list of screens. */
-  var screens: js.UndefOr[js.Array[Screen]] = js.native
+  var screens: js.UndefOr[js.Array[Screen]] = js.undefined
 }
 object ScreenshotCluster {
   

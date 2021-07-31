@@ -2,19 +2,17 @@ package typings.reactNativeFs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadProgressCallbackResult extends StObject {
   
-  var jobId: Double = js.native
+  var jobId: Double
   
   // The upload job ID, required if one wishes to cancel the upload. See `stopUpload`.
-  var totalBytesExpectedToSend: Double = js.native
+  var totalBytesExpectedToSend: Double
   
   // The total number of bytes that will be sent to the server
-  var totalBytesSent: Double = js.native
+  var totalBytesSent: Double
 }
 object UploadProgressCallbackResult {
   

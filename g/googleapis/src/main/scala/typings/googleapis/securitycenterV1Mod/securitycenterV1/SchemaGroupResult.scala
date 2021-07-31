@@ -3,24 +3,22 @@ package typings.googleapis.securitycenterV1Mod.securitycenterV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result containing the properties and count of a groupBy request.
   */
-@js.native
 trait SchemaGroupResult extends StObject {
   
   /**
     * Total count of resources for the given properties.
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * Properties matching the groupBy fields in the request.
     */
-  var properties: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaGroupResult {
   

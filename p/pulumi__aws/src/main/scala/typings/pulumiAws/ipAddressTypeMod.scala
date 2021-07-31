@@ -3,7 +3,6 @@ package typings.pulumiAws
 import typings.pulumiAws.enumsAlbMod.IpAddressType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ipAddressTypeMod {

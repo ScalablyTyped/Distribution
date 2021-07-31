@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.batchGetRepositoriesExceptionsUnionMod.BatchGetRepositoriesExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMaximumRepositoryNamesExceededExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_MaximumRepositoryNamesExceededExceptionDetails> * / any */ @js.native
-  trait MaximumRepositoryNamesExceededException extends BatchGetRepositoriesExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_MaximumRepositoryNamesExceededExceptionDetails> * / any */ trait MaximumRepositoryNamesExceededException
+    extends StObject
+       with BatchGetRepositoriesExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumRepositoryNamesExceededException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumRepositoryNamesExceededException
   }
   object MaximumRepositoryNamesExceededException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumRepositoryNamesExceededException
-    ): MaximumRepositoryNamesExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): MaximumRepositoryNamesExceededException = {
+      val __obj = js.Dynamic.literal(name = "MaximumRepositoryNamesExceededException")
       __obj.asInstanceOf[MaximumRepositoryNamesExceededException]
     }
     
@@ -34,6 +32,5 @@ object typesMaximumRepositoryNamesExceededExceptionMod {
     }
   }
   
-  @js.native
   trait MaximumRepositoryNamesExceededExceptionDetails extends StObject
 }

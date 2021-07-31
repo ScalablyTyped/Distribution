@@ -2,12 +2,11 @@ package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuccessFailureOptions
-  extends SuccessOption
+  extends StObject
+     with SuccessOption
      with ErrorOption
 object SuccessFailureOptions {
   

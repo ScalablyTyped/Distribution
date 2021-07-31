@@ -2,33 +2,31 @@ package typings.instagramPrivateApi.reelsMediaFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsMediaFeedResponseQuizSticker extends StObject {
   
-  var correct_answer: Double = js.native
+  var correct_answer: Double
   
-  var end_background_color: String = js.native
+  var end_background_color: String
   
-  var finished: Boolean = js.native
+  var finished: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var question: String = js.native
+  var question: String
   
-  var quiz_id: Double = js.native
+  var quiz_id: Double
   
-  var start_background_color: String = js.native
+  var start_background_color: String
   
-  var tallies: js.Array[ReelsMediaFeedResponseTalliesItem] = js.native
+  var tallies: js.Array[ReelsMediaFeedResponseTalliesItem]
   
-  var text_color: String = js.native
+  var text_color: String
   
-  var viewer_answer: js.UndefOr[Double] = js.native
+  var viewer_answer: js.UndefOr[Double] = js.undefined
   
-  var viewer_can_answer: Boolean = js.native
+  var viewer_can_answer: Boolean
 }
 object ReelsMediaFeedResponseQuizSticker {
   

@@ -6,37 +6,37 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUserprofilesGuardiansList extends StandardParameters {
+trait ParamsResourceUserprofilesGuardiansList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Filter results by the email address that the original invitation was sent
     * to, resulting in this guardian link. This filter can only be used by
     * domain administrators.
     */
-  var invitedEmailAddress: js.UndefOr[String] = js.native
+  var invitedEmailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of items to return. Zero or unspecified indicates that the
     * server may assign a maximum.  The server may return fewer than the
     * specified number of results.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * nextPageToken value returned from a previous list call, indicating that
     * the subsequent page of results should be returned.  The list request must
     * be otherwise identical to the one that resulted in this token.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Filter results by the student who the guardian is linked to. The
@@ -46,7 +46,7 @@ trait ParamsResourceUserprofilesGuardiansList extends StandardParameters {
     * that results should be returned for   all students that the requesting
     * user has access to view.
     */
-  var studentId: js.UndefOr[String] = js.native
+  var studentId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUserprofilesGuardiansList {
   

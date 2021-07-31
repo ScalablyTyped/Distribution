@@ -10,9 +10,9 @@ A collection of implementation for ECMAScript abstract operations
 | ------------------ | :-------------: |
 | Full name          | @formatjs/ecma402-abstract |
 | Keywords           | intl, i18n, relative, javascript, es, abstract, ecma402, ecma262, format |
-| # releases         | 7 |
-| # dependents       | 10 |
-| # downloads        | 515508 |
+| # releases         | 21 |
+| # dependents       | 11 |
+| # downloads        | 8585173 |
 | # stars            | 0 |
 
 ## Links

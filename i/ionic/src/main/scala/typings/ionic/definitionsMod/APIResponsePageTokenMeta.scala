@@ -2,15 +2,15 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait APIResponsePageTokenMeta extends APIResponseMeta {
+trait APIResponsePageTokenMeta
+  extends StObject
+     with APIResponseMeta {
   
-  var next_page_token: js.UndefOr[String] = js.native
+  var next_page_token: js.UndefOr[String] = js.undefined
   
-  var prev_page_token: js.UndefOr[String] = js.native
+  var prev_page_token: js.UndefOr[String] = js.undefined
 }
 object APIResponsePageTokenMeta {
   

@@ -2,33 +2,31 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStickyOptions extends StObject {
   
-  var anchor: js.UndefOr[String] = js.native
+  var anchor: js.UndefOr[String] = js.undefined
   
-  var btmAnchor: js.UndefOr[String] = js.native
+  var btmAnchor: js.UndefOr[String] = js.undefined
   
-  var checkEvery: js.UndefOr[Double] = js.native
+  var checkEvery: js.UndefOr[Double] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var containerClass: js.UndefOr[String] = js.native
+  var containerClass: js.UndefOr[String] = js.undefined
   
-  var marginBottom: js.UndefOr[Double] = js.native
+  var marginBottom: js.UndefOr[Double] = js.undefined
   
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
-  var stickTo: js.UndefOr[String] = js.native
+  var stickTo: js.UndefOr[String] = js.undefined
   
-  var stickyClass: js.UndefOr[String] = js.native
+  var stickyClass: js.UndefOr[String] = js.undefined
   
-  var stickyOn: js.UndefOr[String] = js.native
+  var stickyOn: js.UndefOr[String] = js.undefined
   
-  var topAnchor: js.UndefOr[String] = js.native
+  var topAnchor: js.UndefOr[String] = js.undefined
 }
 object IStickyOptions {
   

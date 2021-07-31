@@ -2,15 +2,13 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckboxProps extends StObject {
   
-  var listPrefixCls: String = js.native
+  var listPrefixCls: String
   
-  var prefixCls: String = js.native
+  var prefixCls: String
 }
 object CheckboxProps {
   

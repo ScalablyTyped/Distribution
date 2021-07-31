@@ -2,31 +2,29 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceConnectionStatus extends StObject {
   
   /**
     * The connection state of the WorkSpace. The connection state is unknown if the WorkSpace is stopped.
     */
-  var ConnectionState: js.UndefOr[typings.awsSdk.workspacesMod.ConnectionState] = js.native
+  var ConnectionState: js.UndefOr[typings.awsSdk.workspacesMod.ConnectionState] = js.undefined
   
   /**
     * The timestamp of the connection status check.
     */
-  var ConnectionStateCheckTimestamp: js.UndefOr[Timestamp] = js.native
+  var ConnectionStateCheckTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The timestamp of the last known user connection.
     */
-  var LastKnownUserConnectionTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastKnownUserConnectionTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The identifier of the WorkSpace.
     */
-  var WorkspaceId: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceId] = js.native
+  var WorkspaceId: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceId] = js.undefined
 }
 object WorkspaceConnectionStatus {
   

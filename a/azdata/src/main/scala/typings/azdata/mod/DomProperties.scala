@@ -2,16 +2,16 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DomProperties extends ComponentProperties {
+trait DomProperties
+  extends StObject
+     with ComponentProperties {
   
   /**
     * Contents of the DOM component.
     */
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
 }
 object DomProperties {
   

@@ -4,21 +4,21 @@ import typings.azureSb.mod.Azure.ServiceBus.Dictionary
 import typings.azureSb.mod.Azure.ServiceBus.ListNotificationHubsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wnsserviceMod {
   
   @JSImport("azure-sb/lib/wnsservice", JSImport.Namespace)
   @js.native
-  class ^ protected () extends WnsService {
+  class ^ protected ()
+    extends StObject
+       with WnsService {
     def this(service: typings.azureSb.notificationhubserviceMod.^) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var headers: Dictionary[String] = js.native
+    var headers: Dictionary[String]
   }
   object Options {
     
@@ -37,36 +37,35 @@ object wnsserviceMod {
   }
   
   /* Inlined std.Partial<{  text1 :string,   text2 :string,   text3 :string,   text4 :string,   image1src :string,   image1alt :string,   image2src :string,   image2alt :string,   image3src :string,   image3alt :string,   image4src :string,   image4alt :string,   lang :string,   type :string}> */
-  @js.native
   trait Payload extends StObject {
     
-    var image1alt: js.UndefOr[String] = js.native
+    var image1alt: js.UndefOr[String] = js.undefined
     
-    var image1src: js.UndefOr[String] = js.native
+    var image1src: js.UndefOr[String] = js.undefined
     
-    var image2alt: js.UndefOr[String] = js.native
+    var image2alt: js.UndefOr[String] = js.undefined
     
-    var image2src: js.UndefOr[String] = js.native
+    var image2src: js.UndefOr[String] = js.undefined
     
-    var image3alt: js.UndefOr[String] = js.native
+    var image3alt: js.UndefOr[String] = js.undefined
     
-    var image3src: js.UndefOr[String] = js.native
+    var image3src: js.UndefOr[String] = js.undefined
     
-    var image4alt: js.UndefOr[String] = js.native
+    var image4alt: js.UndefOr[String] = js.undefined
     
-    var image4src: js.UndefOr[String] = js.native
+    var image4src: js.UndefOr[String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var text1: js.UndefOr[String] = js.native
+    var text1: js.UndefOr[String] = js.undefined
     
-    var text2: js.UndefOr[String] = js.native
+    var text2: js.UndefOr[String] = js.undefined
     
-    var text3: js.UndefOr[String] = js.native
+    var text3: js.UndefOr[String] = js.undefined
     
-    var text4: js.UndefOr[String] = js.native
+    var text4: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Payload {
     

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cluster extends StObject {
   
   /** Centroid id. */
-  var centroidId: js.UndefOr[String] = js.native
+  var centroidId: js.UndefOr[String] = js.undefined
   
   /** Count of training data rows that were assigned to this cluster. */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /** Values of highly variant features for this cluster. */
-  var featureValues: js.UndefOr[js.Array[FeatureValue]] = js.native
+  var featureValues: js.UndefOr[js.Array[FeatureValue]] = js.undefined
 }
 object Cluster {
   

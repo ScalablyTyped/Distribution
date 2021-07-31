@@ -5,7 +5,6 @@ import typings.webpack.anon.Include
 import typings.webpack.webpackBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceMapDevToolPluginMod {
@@ -14,83 +13,82 @@ object sourceMapDevToolPluginMod {
   
   type Rules = js.Array[Rule] | Rule
   
-  @js.native
   trait SourceMapDevToolPluginOptions extends StObject {
     
     /**
     	 * Appends the given value to the original asset. Usually the #sourceMappingURL comment. [url] is replaced with a URL to the source map file. false disables the appending
     	 */
-    var append: js.UndefOr[`false` | Null | String] = js.native
+    var append: js.UndefOr[`false` | Null | String] = js.undefined
     
     /**
     	 * Indicates whether column mappings should be used (defaults to true)
     	 */
-    var columns: js.UndefOr[Boolean] = js.native
+    var columns: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Exclude modules that match the given value from source map generation
     	 */
-    var exclude: js.UndefOr[Rules] = js.native
+    var exclude: js.UndefOr[Rules] = js.undefined
     
     /**
     	 * Generator string or function to create identifiers of modules for the 'sources' array in the SourceMap used only if 'moduleFilenameTemplate' would result in a conflict
     	 */
-    var fallbackModuleFilenameTemplate: js.UndefOr[js.Function | String] = js.native
+    var fallbackModuleFilenameTemplate: js.UndefOr[js.Function | String] = js.undefined
     
     /**
     	 * Path prefix to which the [file] placeholder is relative to
     	 */
-    var fileContext: js.UndefOr[String] = js.native
+    var fileContext: js.UndefOr[String] = js.undefined
     
     /**
     	 * Defines the output filename of the SourceMap (will be inlined if no value is provided)
     	 */
-    var filename: js.UndefOr[`false` | Null | String] = js.native
+    var filename: js.UndefOr[`false` | Null | String] = js.undefined
     
     /**
     	 * Include source maps for module paths that match the given value
     	 */
-    var include: js.UndefOr[Rules] = js.native
+    var include: js.UndefOr[Rules] = js.undefined
     
     /**
     	 * (deprecated) try to map original files line to line to generated files
     	 */
-    var lineToLine: js.UndefOr[Boolean | Include] = js.native
+    var lineToLine: js.UndefOr[Boolean | Include] = js.undefined
     
     /**
     	 * Indicates whether SourceMaps from loaders should be used (defaults to true)
     	 */
-    var module: js.UndefOr[Boolean] = js.native
+    var module: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Generator string or function to create identifiers of modules for the 'sources' array in the SourceMap
     	 */
-    var moduleFilenameTemplate: js.UndefOr[js.Function | String] = js.native
+    var moduleFilenameTemplate: js.UndefOr[js.Function | String] = js.undefined
     
     /**
     	 * Namespace prefix to allow multiple webpack roots in the devtools
     	 */
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
     /**
     	 * Omit the 'sourceContents' array from the SourceMap
     	 */
-    var noSources: js.UndefOr[Boolean] = js.native
+    var noSources: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Provide a custom public path for the SourceMapping comment
     	 */
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
     
     /**
     	 * Provide a custom value for the 'sourceRoot' property in the SourceMap
     	 */
-    var sourceRoot: js.UndefOr[String] = js.native
+    var sourceRoot: js.UndefOr[String] = js.undefined
     
     /**
     	 * Include source maps for modules based on their extension (defaults to .js and .css)
     	 */
-    var test: js.UndefOr[Rules] = js.native
+    var test: js.UndefOr[Rules] = js.undefined
   }
   object SourceMapDevToolPluginOptions {
     

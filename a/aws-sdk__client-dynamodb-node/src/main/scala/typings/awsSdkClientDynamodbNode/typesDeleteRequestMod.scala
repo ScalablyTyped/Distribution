@@ -6,18 +6,16 @@ import typings.awsSdkClientDynamodbNode.typesAttributeValueMod.UnmarshalledAttri
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteRequestMod {
   
-  @js.native
   trait DeleteRequest extends StObject {
     
     /**
       * <p>A map of attribute name to attribute values, representing the primary key of the item to delete. All of the table's primary key attributes must be specified, and their data types must match those of the table's key schema.</p>
       */
-    var Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]) = js.native
+    var Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])
   }
   object DeleteRequest {
     
@@ -35,14 +33,15 @@ object typesDeleteRequestMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledDeleteRequest extends DeleteRequest {
+  trait UnmarshalledDeleteRequest
+    extends StObject
+       with DeleteRequest {
     
     /**
       * <p>A map of attribute name to attribute values, representing the primary key of the item to delete. All of the table's primary key attributes must be specified, and their data types must match those of the table's key schema.</p>
       */
     @JSName("Key")
-    var Key_UnmarshalledDeleteRequest: StringDictionary[UnmarshalledAttributeValue] = js.native
+    var Key_UnmarshalledDeleteRequest: StringDictionary[UnmarshalledAttributeValue]
   }
   object UnmarshalledDeleteRequest {
     

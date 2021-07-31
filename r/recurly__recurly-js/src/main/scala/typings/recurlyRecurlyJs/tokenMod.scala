@@ -6,7 +6,6 @@ import typings.recurlyRecurlyJs.errorMod.RecurlyError
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenMod {
@@ -22,16 +21,28 @@ object tokenMod {
   
   type HostedFieldToken = js.Function2[/* form */ HTMLFormElement | CustomerData, /* second */ TokenHandler, Unit]
   
-  type Token = HostedFieldToken with ElementsToken
+  @js.native
+  trait Token
+    extends HostedFieldToken
+       with ElementsToken {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* form */ HTMLFormElement | CustomerData, arg2: /* second */ TokenHandler): Unit = js.native
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* elements */ ElementsInstance,
+      arg2: /* second */ HTMLFormElement | CustomerData,
+      arg3: /* third */ TokenHandler
+    ): Unit = js.native
+  }
   
   type TokenHandler = js.Function2[/* error */ RecurlyError | Null, /* token */ TokenPayload, Unit]
   
-  @js.native
   trait TokenPayload extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object TokenPayload {
     

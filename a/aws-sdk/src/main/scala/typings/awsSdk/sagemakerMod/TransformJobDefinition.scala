@@ -2,46 +2,44 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformJobDefinition extends StObject {
   
   /**
     * A string that determines the number of records included in a single mini-batch.  SingleRecord means only one record is used per mini-batch. MultiRecord means a mini-batch is set to contain as many records that can fit within the MaxPayloadInMB limit.
     */
-  var BatchStrategy: js.UndefOr[typings.awsSdk.sagemakerMod.BatchStrategy] = js.native
+  var BatchStrategy: js.UndefOr[typings.awsSdk.sagemakerMod.BatchStrategy] = js.undefined
   
   /**
     * The environment variables to set in the Docker container. We support up to 16 key and values entries in the map.
     */
-  var Environment: js.UndefOr[TransformEnvironmentMap] = js.native
+  var Environment: js.UndefOr[TransformEnvironmentMap] = js.undefined
   
   /**
     * The maximum number of parallel requests that can be sent to each instance in a transform job. The default value is 1.
     */
-  var MaxConcurrentTransforms: js.UndefOr[typings.awsSdk.sagemakerMod.MaxConcurrentTransforms] = js.native
+  var MaxConcurrentTransforms: js.UndefOr[typings.awsSdk.sagemakerMod.MaxConcurrentTransforms] = js.undefined
   
   /**
     * The maximum payload size allowed, in MB. A payload is the data portion of a record (without metadata).
     */
-  var MaxPayloadInMB: js.UndefOr[typings.awsSdk.sagemakerMod.MaxPayloadInMB] = js.native
+  var MaxPayloadInMB: js.UndefOr[typings.awsSdk.sagemakerMod.MaxPayloadInMB] = js.undefined
   
   /**
     * A description of the input source and the way the transform job consumes it.
     */
-  var TransformInput: typings.awsSdk.sagemakerMod.TransformInput = js.native
+  var TransformInput: typings.awsSdk.sagemakerMod.TransformInput
   
   /**
     * Identifies the Amazon S3 location where you want Amazon SageMaker to save the results from the transform job.
     */
-  var TransformOutput: typings.awsSdk.sagemakerMod.TransformOutput = js.native
+  var TransformOutput: typings.awsSdk.sagemakerMod.TransformOutput
   
   /**
     * Identifies the ML compute instances for the transform job.
     */
-  var TransformResources: typings.awsSdk.sagemakerMod.TransformResources = js.native
+  var TransformResources: typings.awsSdk.sagemakerMod.TransformResources
 }
 object TransformJobDefinition {
   

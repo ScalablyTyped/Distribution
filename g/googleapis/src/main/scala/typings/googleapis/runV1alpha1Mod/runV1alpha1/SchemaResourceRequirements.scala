@@ -3,13 +3,11 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ResourceRequirements describes the compute resource requirements.
   */
-@js.native
 trait SchemaResourceRequirements extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaResourceRequirements extends StObject {
     * values of the map is string form of the &#39;quantity&#39; k8s type:
     * https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go
     */
-  var limits: js.UndefOr[StringDictionary[String]] = js.native
+  var limits: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Limits describes the maximum amount of compute resources allowed. This is
@@ -25,7 +23,7 @@ trait SchemaResourceRequirements extends StObject {
     * Quantity&gt; limits field. This is done to become compliant with k8s
     * style API. This field is deprecated in favor of limits field.
     */
-  var limitsInMap: js.UndefOr[StringDictionary[SchemaQuantity]] = js.native
+  var limitsInMap: js.UndefOr[StringDictionary[SchemaQuantity]] = js.undefined
   
   /**
     * Requests describes the minimum amount of compute resources required. If
@@ -34,7 +32,7 @@ trait SchemaResourceRequirements extends StObject {
     * values of the map is string form of the &#39;quantity&#39; k8s type:
     * https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go
     */
-  var requests: js.UndefOr[StringDictionary[String]] = js.native
+  var requests: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Requests describes the minimum amount of compute resources required. If
@@ -44,7 +42,7 @@ trait SchemaResourceRequirements extends StObject {
     * Quantity&gt; requests field. This is done to become compliant with k8s
     * style API. This field is deprecated in favor of requests field.
     */
-  var requestsInMap: js.UndefOr[StringDictionary[SchemaQuantity]] = js.native
+  var requestsInMap: js.UndefOr[StringDictionary[SchemaQuantity]] = js.undefined
 }
 object SchemaResourceRequirements {
   

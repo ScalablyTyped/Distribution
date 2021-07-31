@@ -2,15 +2,13 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragPositions extends StObject {
   
-  var client: ClientPositions = js.native
+  var client: ClientPositions
   
-  var page: PagePositions = js.native
+  var page: PagePositions
 }
 object DragPositions {
   

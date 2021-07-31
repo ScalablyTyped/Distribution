@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,25 +13,37 @@ object WiFiDirectServiceSessionErrorStatus extends StObject {
   
   /** The L2 connection was disassociated unexpectedly. */
   @js.native
-  sealed trait disassociated extends WiFiDirectServiceSessionErrorStatus
+  sealed trait disassociated
+    extends StObject
+       with WiFiDirectServiceSessionErrorStatus
   
   /** The session was closed from the local side of the session. */
   @js.native
-  sealed trait localClose extends WiFiDirectServiceSessionErrorStatus
+  sealed trait localClose
+    extends StObject
+       with WiFiDirectServiceSessionErrorStatus
   
   /** Session timed out due to no response from the remote side of the session. */
   @js.native
-  sealed trait noResponseFromRemote extends WiFiDirectServiceSessionErrorStatus
+  sealed trait noResponseFromRemote
+    extends StObject
+       with WiFiDirectServiceSessionErrorStatus
   
   /** Session status is OK. */
   @js.native
-  sealed trait ok extends WiFiDirectServiceSessionErrorStatus
+  sealed trait ok
+    extends StObject
+       with WiFiDirectServiceSessionErrorStatus
   
   /** The session was closed from the remote side of the session. */
   @js.native
-  sealed trait remoteClose extends WiFiDirectServiceSessionErrorStatus
+  sealed trait remoteClose
+    extends StObject
+       with WiFiDirectServiceSessionErrorStatus
   
   /** A general system failure has occurred. */
   @js.native
-  sealed trait systemFailure extends WiFiDirectServiceSessionErrorStatus
+  sealed trait systemFailure
+    extends StObject
+       with WiFiDirectServiceSessionErrorStatus
 }

@@ -4,7 +4,6 @@ import typings.cliSpinners.mod.SpinnerName
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,7 +15,6 @@ object mod {
   
   type Spinner = Component[SpinnerProps, js.Object, js.Any]
   
-  @js.native
   trait SpinnerProps extends StObject {
     
     /**
@@ -24,7 +22,7 @@ object mod {
       *
       * @default 'dot'
       */
-    var `type`: js.UndefOr[SpinnerName] = js.native
+    var `type`: js.UndefOr[SpinnerName] = js.undefined
   }
   object SpinnerProps {
     

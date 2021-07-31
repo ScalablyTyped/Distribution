@@ -11,7 +11,6 @@ import typings.webicon.svgIconSetMod.SvgIconSet
 import typings.webicon.urlConfigMod.UrlConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publicApiMod {
@@ -101,9 +100,9 @@ object publicApiMod {
       * @param options
       * Additional options for the icon.
       */
-    def icon(id: String, urlConfig: UrlConfig[js.UndefOr[scala.Nothing]]): this.type = js.native
-    def icon(id: String, urlConfig: UrlConfig[js.UndefOr[scala.Nothing]], options: ImageIcon): this.type = js.native
-    def icon(id: String, urlConfig: UrlConfig[js.UndefOr[scala.Nothing]], options: SvgIcon): this.type = js.native
+    def icon(id: String, urlConfig: UrlConfig[Unit]): this.type = js.native
+    def icon(id: String, urlConfig: UrlConfig[Unit], options: ImageIcon): this.type = js.native
+    def icon(id: String, urlConfig: UrlConfig[Unit], options: SvgIcon): this.type = js.native
     
     /**
       * An alias of the `svgSet`-method.
@@ -174,8 +173,8 @@ object publicApiMod {
       * @param options
       * Additional options for the icon-set.
       */
-    def svgSet(id: String, urlConfig: UrlConfig[js.UndefOr[js.Array[String]]]): this.type = js.native
+    def svgSet(id: String, urlConfig: UrlConfig[js.Array[String] | Unit]): this.type = js.native
     def svgSet(id: String, urlConfig: UrlConfig[js.Array[String]], options: SvgCumulativeIconSet): this.type = js.native
-    def svgSet(id: String, urlConfig: UrlConfig[js.UndefOr[scala.Nothing]], options: SvgIconSet): this.type = js.native
+    def svgSet(id: String, urlConfig: UrlConfig[Unit], options: SvgIconSet): this.type = js.native
   }
 }

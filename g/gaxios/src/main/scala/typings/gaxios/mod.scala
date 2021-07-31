@@ -4,10 +4,13 @@ import typings.gaxios.commonMod.GaxiosOptions
 import typings.gaxios.commonMod.GaxiosResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("gaxios", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gaxios", "Gaxios")
   @js.native
@@ -31,7 +34,6 @@ object mod {
   @js.native
   val instance: typings.gaxios.gaxiosMod.Gaxios = js.native
   
-  @JSImport("gaxios", "request")
-  @js.native
-  def request[T](opts: GaxiosOptions): js.Promise[GaxiosResponse[T]] = js.native
+  @scala.inline
+  def request[T](opts: GaxiosOptions): js.Promise[GaxiosResponse[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GaxiosResponse[T]]]
 }

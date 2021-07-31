@@ -4,13 +4,13 @@ import typings.awsSdkClientCognitoIdentityBrowser.inputTypesUnionMod.InputTypesU
 import typings.awsSdkTypes.abortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesLookupDeveloperIdentityInputMod {
   
-  @js.native
-  trait LookupDeveloperIdentityInput extends InputTypesUnion {
+  trait LookupDeveloperIdentityInput
+    extends StObject
+       with InputTypesUnion {
     
     /**
       * An object that may be queried to determine if the underlying operation has been aborted.
@@ -18,7 +18,7 @@ object typesLookupDeveloperIdentityInputMod {
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
       */
     @JSName("$abortSignal")
-    var $abortSignal: js.UndefOr[AbortSignal] = js.native
+    var $abortSignal: js.UndefOr[AbortSignal] = js.undefined
     
     /**
       * Per-request HTTP configuration options. If set, any options specified will override the corresponding HTTP option set on the client for this command.
@@ -26,38 +26,38 @@ object typesLookupDeveloperIdentityInputMod {
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The maximum number of times this operation should be retried. If set, this value will override the `maxRetries` configuration set on the client for this command.
       */
     @JSName("$maxRetries")
-    var $maxRetries: js.UndefOr[Double] = js.native
+    var $maxRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>A unique ID used by your backend authentication process to identify a user. Typically, a developer identity provider would issue many developer user identifiers, in keeping with the number of users.</p>
       */
-    var DeveloperUserIdentifier: js.UndefOr[String] = js.native
+    var DeveloperUserIdentifier: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A unique identifier in the format REGION:GUID.</p>
       */
-    var IdentityId: js.UndefOr[String] = js.native
+    var IdentityId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>An identity pool ID in the format REGION:GUID.</p>
       */
-    var IdentityPoolId: String = js.native
+    var IdentityPoolId: String
     
     /**
       * <p>The maximum number of identities to return.</p>
       */
-    var MaxResults: js.UndefOr[Double] = js.native
+    var MaxResults: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>A pagination token. The first call you make will have <code>NextToken</code> set to null. After that the service will return <code>NextToken</code> values as needed. For example, let's say you make a request with <code>MaxResults</code> set to 10, and there are 20 matches in the database. The service will return a pagination token as a part of the response. This token can be used to call the API again and get results starting from the 11th match.</p>
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   object LookupDeveloperIdentityInput {
     

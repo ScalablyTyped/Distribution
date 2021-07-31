@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutAppInstanceRetentionSettingsResponse extends StObject {
   
   /**
     * The time in days to retain data. Data type: number.
     */
-  var AppInstanceRetentionSettings: js.UndefOr[typings.awsSdk.chimeMod.AppInstanceRetentionSettings] = js.native
+  var AppInstanceRetentionSettings: js.UndefOr[typings.awsSdk.chimeMod.AppInstanceRetentionSettings] = js.undefined
   
   /**
     * The time at which the API deletes data.
     */
-  var InitiateDeletionTimestamp: js.UndefOr[Timestamp] = js.native
+  var InitiateDeletionTimestamp: js.UndefOr[Timestamp] = js.undefined
 }
 object PutAppInstanceRetentionSettingsResponse {
   

@@ -2,7 +2,6 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "ODatabaseTransaction")
@@ -22,7 +21,7 @@ class ODatabaseTransaction () extends StObject {
     * Commit the transaction.
     * @return The results of the transaction.
     */
-  def commit(changes: js.Any): js.Promise[_] = js.native
+  def commit(changes: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * Rollbacks the transaction.

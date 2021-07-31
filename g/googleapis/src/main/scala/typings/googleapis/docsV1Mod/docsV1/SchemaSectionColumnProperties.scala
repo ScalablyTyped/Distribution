@@ -2,24 +2,22 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Properties that apply to a section&#39;s column.
   */
-@js.native
 trait SchemaSectionColumnProperties extends StObject {
   
   /**
     * The padding at the end of the column.
     */
-  var paddingEnd: js.UndefOr[SchemaDimension] = js.native
+  var paddingEnd: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The width of the column.
     */
-  var width: js.UndefOr[SchemaDimension] = js.native
+  var width: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaSectionColumnProperties {
   

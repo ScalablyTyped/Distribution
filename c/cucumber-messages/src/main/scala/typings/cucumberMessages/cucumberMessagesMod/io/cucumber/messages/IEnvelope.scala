@@ -2,90 +2,88 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an Envelope. */
-@js.native
 trait IEnvelope extends StObject {
   
   /** Envelope attachment */
-  var attachment: js.UndefOr[IAttachment | Null] = js.native
+  var attachment: js.UndefOr[IAttachment | Null] = js.undefined
   
   /** Envelope commandActionComplete */
-  var commandActionComplete: js.UndefOr[ICommandActionComplete | Null] = js.native
+  var commandActionComplete: js.UndefOr[ICommandActionComplete | Null] = js.undefined
   
   /** Envelope commandError */
-  var commandError: js.UndefOr[String | Null] = js.native
+  var commandError: js.UndefOr[String | Null] = js.undefined
   
   /** Envelope commandGenerateSnippet */
-  var commandGenerateSnippet: js.UndefOr[ICommandGenerateSnippet | Null] = js.native
+  var commandGenerateSnippet: js.UndefOr[ICommandGenerateSnippet | Null] = js.undefined
   
   /** Envelope commandInitializeTestCase */
-  var commandInitializeTestCase: js.UndefOr[ICommandInitializeTestCase | Null] = js.native
+  var commandInitializeTestCase: js.UndefOr[ICommandInitializeTestCase | Null] = js.undefined
   
   /** Envelope commandRunAfterTestCaseHook */
-  var commandRunAfterTestCaseHook: js.UndefOr[ICommandRunAfterTestCaseHook | Null] = js.native
+  var commandRunAfterTestCaseHook: js.UndefOr[ICommandRunAfterTestCaseHook | Null] = js.undefined
   
   /** Envelope commandRunAfterTestRunHooks */
-  var commandRunAfterTestRunHooks: js.UndefOr[ICommandRunAfterTestRunHooks | Null] = js.native
+  var commandRunAfterTestRunHooks: js.UndefOr[ICommandRunAfterTestRunHooks | Null] = js.undefined
   
   /** Envelope commandRunBeforeTestCaseHook */
-  var commandRunBeforeTestCaseHook: js.UndefOr[ICommandRunBeforeTestCaseHook | Null] = js.native
+  var commandRunBeforeTestCaseHook: js.UndefOr[ICommandRunBeforeTestCaseHook | Null] = js.undefined
   
   /** Envelope commandRunBeforeTestRunHooks */
-  var commandRunBeforeTestRunHooks: js.UndefOr[ICommandRunBeforeTestRunHooks | Null] = js.native
+  var commandRunBeforeTestRunHooks: js.UndefOr[ICommandRunBeforeTestRunHooks | Null] = js.undefined
   
   /** Envelope commandRunTestStep */
-  var commandRunTestStep: js.UndefOr[ICommandRunTestStep | Null] = js.native
+  var commandRunTestStep: js.UndefOr[ICommandRunTestStep | Null] = js.undefined
   
   /** Envelope commandStart */
-  var commandStart: js.UndefOr[ICommandStart | Null] = js.native
+  var commandStart: js.UndefOr[ICommandStart | Null] = js.undefined
   
   /** Envelope gherkinDocument */
-  var gherkinDocument: js.UndefOr[IGherkinDocument | Null] = js.native
+  var gherkinDocument: js.UndefOr[IGherkinDocument | Null] = js.undefined
   
   /** Envelope hook */
-  var hook: js.UndefOr[IHook | Null] = js.native
+  var hook: js.UndefOr[IHook | Null] = js.undefined
   
   /** Envelope pickle */
-  var pickle: js.UndefOr[IPickle | Null] = js.native
+  var pickle: js.UndefOr[IPickle | Null] = js.undefined
   
   /** Envelope pickleAccepted */
-  var pickleAccepted: js.UndefOr[IPickleAccepted | Null] = js.native
+  var pickleAccepted: js.UndefOr[IPickleAccepted | Null] = js.undefined
   
   /** Envelope pickleRejected */
-  var pickleRejected: js.UndefOr[IPickleRejected | Null] = js.native
+  var pickleRejected: js.UndefOr[IPickleRejected | Null] = js.undefined
   
   /** Envelope source */
-  var source: js.UndefOr[ISource | Null] = js.native
+  var source: js.UndefOr[ISource | Null] = js.undefined
   
   /** Envelope stepDefinition */
-  var stepDefinition: js.UndefOr[IStepDefinition | Null] = js.native
+  var stepDefinition: js.UndefOr[IStepDefinition | Null] = js.undefined
   
   /** Envelope testCase */
-  var testCase: js.UndefOr[ITestCase | Null] = js.native
+  var testCase: js.UndefOr[ITestCase | Null] = js.undefined
   
   /** Envelope testCaseFinished */
-  var testCaseFinished: js.UndefOr[ITestCaseFinished | Null] = js.native
+  var testCaseFinished: js.UndefOr[ITestCaseFinished | Null] = js.undefined
   
   /** Envelope testCasePrepared */
-  var testCasePrepared: js.UndefOr[ITestCasePrepared | Null] = js.native
+  var testCasePrepared: js.UndefOr[ITestCasePrepared | Null] = js.undefined
   
   /** Envelope testCaseStarted */
-  var testCaseStarted: js.UndefOr[ITestCaseStarted | Null] = js.native
+  var testCaseStarted: js.UndefOr[ITestCaseStarted | Null] = js.undefined
   
   /** Envelope testRunFinished */
-  var testRunFinished: js.UndefOr[ITestRunFinished | Null] = js.native
+  var testRunFinished: js.UndefOr[ITestRunFinished | Null] = js.undefined
   
   /** Envelope testRunStarted */
-  var testRunStarted: js.UndefOr[ITestRunStarted | Null] = js.native
+  var testRunStarted: js.UndefOr[ITestRunStarted | Null] = js.undefined
   
   /** Envelope testStepFinished */
-  var testStepFinished: js.UndefOr[ITestStepFinished | Null] = js.native
+  var testStepFinished: js.UndefOr[ITestStepFinished | Null] = js.undefined
   
   /** Envelope testStepStarted */
-  var testStepStarted: js.UndefOr[ITestStepStarted | Null] = js.native
+  var testStepStarted: js.UndefOr[ITestStepStarted | Null] = js.undefined
 }
 object IEnvelope {
   

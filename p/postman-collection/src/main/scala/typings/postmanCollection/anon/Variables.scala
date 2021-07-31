@@ -3,13 +3,11 @@ package typings.postmanCollection.anon
 import typings.postmanCollection.mod.VariableList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Variables extends StObject {
   
-  var variables: VariableList = js.native
+  var variables: VariableList
 }
 object Variables {
   

@@ -2,37 +2,35 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a request to update an achievement.
   */
-@js.native
 trait SchemaAchievementUpdateRequest extends StObject {
   
   /**
     * The achievement this update is being applied to.
     */
-  var achievementId: js.UndefOr[String] = js.native
+  var achievementId: js.UndefOr[String] = js.undefined
   
   /**
     * The payload if an update of type INCREMENT was requested for the
     * achievement.
     */
-  var incrementPayload: js.UndefOr[SchemaGamesAchievementIncrement] = js.native
+  var incrementPayload: js.UndefOr[SchemaGamesAchievementIncrement] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#achievementUpdateRequest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The payload if an update of type SET_STEPS_AT_LEAST was requested for the
     * achievement.
     */
-  var setStepsAtLeastPayload: js.UndefOr[SchemaGamesAchievementSetStepsAtLeast] = js.native
+  var setStepsAtLeastPayload: js.UndefOr[SchemaGamesAchievementSetStepsAtLeast] = js.undefined
   
   /**
     * The type of update being applied. Possible values are:   -
@@ -41,7 +39,7 @@ trait SchemaAchievementUpdateRequest extends StObject {
     * incremented.  - &quot;SET_STEPS_AT_LEAST&quot; - Achievement progress is
     * set to at least the passed value.
     */
-  var updateType: js.UndefOr[String] = js.native
+  var updateType: js.UndefOr[String] = js.undefined
 }
 object SchemaAchievementUpdateRequest {
   

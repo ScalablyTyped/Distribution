@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckTypeForAllData extends StObject {
   
-  var checkTypeForAllData: js.UndefOr[Boolean] = js.native
+  var checkTypeForAllData: js.UndefOr[Boolean] = js.undefined
   
-  var convertToAxisDataType: js.UndefOr[Boolean] = js.native
+  var convertToAxisDataType: js.UndefOr[Boolean] = js.undefined
   
-  var sortingMethod: js.UndefOr[Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.native
+  var sortingMethod: js.UndefOr[Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.undefined
 }
 object CheckTypeForAllData {
   

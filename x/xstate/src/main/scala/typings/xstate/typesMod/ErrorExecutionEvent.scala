@@ -3,18 +3,18 @@ package typings.xstate.typesMod
 import typings.xstate.typesMod.ActionTypes.ErrorExecution
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ErrorExecutionEvent extends EventObject {
+trait ErrorExecutionEvent
+  extends StObject
+     with EventObject {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var src: String = js.native
+  var src: String
   
   @JSName("type")
-  var type_ErrorExecutionEvent: ErrorExecution = js.native
+  var type_ErrorExecutionEvent: ErrorExecution
 }
 object ErrorExecutionEvent {
   

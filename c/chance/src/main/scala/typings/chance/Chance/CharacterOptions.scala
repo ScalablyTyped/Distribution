@@ -4,21 +4,19 @@ import typings.chance.chanceStrings.lower
 import typings.chance.chanceStrings.upper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CharacterOptions extends StObject {
   
-  var alpha: Boolean = js.native
+  var alpha: Boolean
   
-  var casing: upper | lower = js.native
+  var casing: upper | lower
   
-  var numeric: Boolean = js.native
+  var numeric: Boolean
   
-  var pool: String = js.native
+  var pool: String
   
-  var symbols: Boolean = js.native
+  var symbols: Boolean
 }
 object CharacterOptions {
   

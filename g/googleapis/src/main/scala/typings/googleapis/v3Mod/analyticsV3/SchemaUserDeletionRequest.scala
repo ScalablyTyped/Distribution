@@ -3,40 +3,38 @@ package typings.googleapis.v3Mod.analyticsV3
 import typings.googleapis.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a user deletion request resource.
   */
-@js.native
 trait SchemaUserDeletionRequest extends StObject {
   
   /**
     * This marks the point in time for which all user data before should be
     * deleted
     */
-  var deletionRequestTime: js.UndefOr[String] = js.native
+  var deletionRequestTime: js.UndefOr[String] = js.undefined
   
   /**
     * Firebase Project Id
     */
-  var firebaseProjectId: js.UndefOr[String] = js.native
+  var firebaseProjectId: js.UndefOr[String] = js.undefined
   
   /**
     * User ID.
     */
-  var id: js.UndefOr[Type] = js.native
+  var id: js.UndefOr[Type] = js.undefined
   
   /**
     * Value is &quot;analytics#userDeletionRequest&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Web property ID of the form UA-XXXXX-YY.
     */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
 }
 object SchemaUserDeletionRequest {
   

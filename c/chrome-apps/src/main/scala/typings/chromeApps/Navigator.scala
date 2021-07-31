@@ -3,10 +3,8 @@ package typings.chromeApps
 import typings.std.Geolocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Navigator extends StObject {
     * use the proposed HTML5 geolocation API without prompting the user for permission.
     * @see Permissions: 'geolocation'
     */
-  val geolocation: Geolocation = js.native
+  val geolocation: Geolocation
 }
 object Navigator {
   

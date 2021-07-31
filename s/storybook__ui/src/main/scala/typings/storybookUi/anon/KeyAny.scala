@@ -2,13 +2,11 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyAny extends StObject {
   
-  var key: js.Any = js.native
+  var key: js.Any
 }
 object KeyAny {
   

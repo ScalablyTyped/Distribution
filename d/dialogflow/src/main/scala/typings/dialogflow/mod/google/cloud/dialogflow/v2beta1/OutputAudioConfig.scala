@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an OutputAudioConfig. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new OutputAudioConfig.
   * @param [properties] Properties to set
   */
-class OutputAudioConfig () extends IOutputAudioConfig {
+class OutputAudioConfig ()
+  extends StObject
+     with IOutputAudioConfig {
   def this(properties: IOutputAudioConfig) = this()
   
   /** OutputAudioConfig audioEncoding. */
@@ -36,18 +37,20 @@ class OutputAudioConfig () extends IOutputAudioConfig {
 }
 object OutputAudioConfig {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new OutputAudioConfig instance using the specified properties.
     * @param [properties] Properties to set
     * @returns OutputAudioConfig instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.create")
-  @js.native
-  def create(): OutputAudioConfig = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.create")
-  @js.native
-  def create(properties: IOutputAudioConfig): OutputAudioConfig = js.native
+  @scala.inline
+  def create(): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OutputAudioConfig]
+  @scala.inline
+  def create(properties: IOutputAudioConfig): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
   
   /**
     * Decodes an OutputAudioConfig message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object OutputAudioConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.decode")
-  @js.native
-  def decode(reader: Reader): OutputAudioConfig = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): OutputAudioConfig = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array): OutputAudioConfig = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): OutputAudioConfig = js.native
+  @scala.inline
+  def decode(reader: Reader): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
+  @scala.inline
+  def decode(reader: Reader, length: Double): OutputAudioConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OutputAudioConfig]
+  @scala.inline
+  def decode(reader: Uint8Array): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): OutputAudioConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OutputAudioConfig]
   
   /**
     * Decodes an OutputAudioConfig message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object OutputAudioConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): OutputAudioConfig = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): OutputAudioConfig = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
   
   /**
     * Encodes the specified OutputAudioConfig message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.OutputAudioConfig.verify|verify} messages.
@@ -93,12 +90,10 @@ object OutputAudioConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.encode")
-  @js.native
-  def encode(message: IOutputAudioConfig): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.encode")
-  @js.native
-  def encode(message: IOutputAudioConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IOutputAudioConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IOutputAudioConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified OutputAudioConfig message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.OutputAudioConfig.verify|verify} messages.
@@ -107,12 +102,10 @@ object OutputAudioConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IOutputAudioConfig): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IOutputAudioConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IOutputAudioConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IOutputAudioConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an OutputAudioConfig message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object OutputAudioConfig {
     * @returns OutputAudioConfig
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): OutputAudioConfig = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
   
   /**
     * Creates a plain object from an OutputAudioConfig message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object OutputAudioConfig {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.toObject")
-  @js.native
-  def toObject(message: OutputAudioConfig): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.toObject")
-  @js.native
-  def toObject(message: OutputAudioConfig, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: OutputAudioConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: OutputAudioConfig, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an OutputAudioConfig message.
@@ -144,7 +134,6 @@ object OutputAudioConfig {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.OutputAudioConfig.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

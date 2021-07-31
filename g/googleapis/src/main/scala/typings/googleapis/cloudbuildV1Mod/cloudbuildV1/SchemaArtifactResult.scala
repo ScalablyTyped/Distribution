@@ -2,27 +2,25 @@ package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An artifact that was uploaded during a build. This is a single record in
   * the artifact manifest JSON file.
   */
-@js.native
 trait SchemaArtifactResult extends StObject {
   
   /**
     * The file hash of the artifact.
     */
-  var fileHash: js.UndefOr[js.Array[SchemaFileHashes]] = js.native
+  var fileHash: js.UndefOr[js.Array[SchemaFileHashes]] = js.undefined
   
   /**
     * The path of an artifact in a Google Cloud Storage bucket, with the
     * generation number. For example,
     * `gs://mybucket/path/to/output.jar#generation`.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
 }
 object SchemaArtifactResult {
   

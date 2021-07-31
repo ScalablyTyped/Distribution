@@ -2,71 +2,69 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddOrUpdateProjectPermissionsInOrg extends StObject {
   
-  var addOrUpdateMembershipForUserInOrg: `1038` = js.native
+  var addOrUpdateMembershipForUserInOrg: `1038`
   
-  var addOrUpdateProjectPermissionsInOrg: `1039` = js.native
+  var addOrUpdateProjectPermissionsInOrg: `1039`
   
-  var addOrUpdateRepoPermissionsInOrg: `1040` = js.native
+  var addOrUpdateRepoPermissionsInOrg: `1040`
   
-  var checkPermissionsForProjectInOrg: `1041` = js.native
+  var checkPermissionsForProjectInOrg: `1041`
   
-  var checkPermissionsForRepoInOrg: `1042` = js.native
+  var checkPermissionsForRepoInOrg: `1042`
   
-  var create: `1043` = js.native
+  var create: `1043`
   
-  var createDiscussionCommentInOrg: `1044` = js.native
+  var createDiscussionCommentInOrg: `1044`
   
-  var createDiscussionInOrg: `1045` = js.native
+  var createDiscussionInOrg: `1045`
   
-  var deleteDiscussionCommentInOrg: `1046` = js.native
+  var deleteDiscussionCommentInOrg: `1046`
   
-  var deleteDiscussionInOrg: `1047` = js.native
+  var deleteDiscussionInOrg: `1047`
   
-  var deleteInOrg: `1048` = js.native
+  var deleteInOrg: `1048`
   
-  var getByName: `1049` = js.native
+  var getByName: `1049`
   
-  var getDiscussionCommentInOrg: `1050` = js.native
+  var getDiscussionCommentInOrg: `1050`
   
-  var getDiscussionInOrg: `1051` = js.native
+  var getDiscussionInOrg: `1051`
   
-  var getMembershipForUserInOrg: `1052` = js.native
+  var getMembershipForUserInOrg: `1052`
   
-  var list: `1053` = js.native
+  var list: `1053`
   
-  var listChildInOrg: `1054` = js.native
+  var listChildInOrg: `1054`
   
-  var listDiscussionCommentsInOrg: `1055` = js.native
+  var listDiscussionCommentsInOrg: `1055`
   
-  var listDiscussionsInOrg: `1056` = js.native
+  var listDiscussionsInOrg: `1056`
   
-  var listForAuthenticatedUser: `1057` = js.native
+  var listForAuthenticatedUser: `1057`
   
-  var listMembersInOrg: `1058` = js.native
+  var listMembersInOrg: `1058`
   
-  var listPendingInvitationsInOrg: `1059` = js.native
+  var listPendingInvitationsInOrg: `1059`
   
-  var listProjectsInOrg: `1060` = js.native
+  var listProjectsInOrg: `1060`
   
-  var listReposInOrg: `1061` = js.native
+  var listReposInOrg: `1061`
   
-  var removeMembershipForUserInOrg: `1062` = js.native
+  var removeMembershipForUserInOrg: `1062`
   
-  var removeProjectInOrg: `1063` = js.native
+  var removeProjectInOrg: `1063`
   
-  var removeRepoInOrg: `1064` = js.native
+  var removeRepoInOrg: `1064`
   
-  var updateDiscussionCommentInOrg: `1065` = js.native
+  var updateDiscussionCommentInOrg: `1065`
   
-  var updateDiscussionInOrg: `1066` = js.native
+  var updateDiscussionInOrg: `1066`
   
-  var updateInOrg: `1067` = js.native
+  var updateInOrg: `1067`
 }
 object AddOrUpdateProjectPermissionsInOrg {
   

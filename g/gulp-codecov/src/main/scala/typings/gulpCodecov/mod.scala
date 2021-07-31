@@ -3,58 +3,58 @@ package typings.gulpCodecov
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-codecov", JSImport.Namespace)
-  @js.native
-  def apply(): Transform = js.native
-  @JSImport("gulp-codecov", JSImport.Namespace)
-  @js.native
-  def apply(options: CodecovOptions): Transform = js.native
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(options: CodecovOptions): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
+  @JSImport("gulp-codecov", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CodecovOptions extends StObject {
     
-    var branch: js.UndefOr[String] = js.native
+    var branch: js.UndefOr[String] = js.undefined
     
-    var build: js.UndefOr[String] = js.native
+    var build: js.UndefOr[String] = js.undefined
     
-    var clear: js.UndefOr[Boolean] = js.native
+    var clear: js.UndefOr[Boolean] = js.undefined
     
-    var commit: js.UndefOr[String] = js.native
+    var commit: js.UndefOr[String] = js.undefined
     
-    var disable: js.UndefOr[String] = js.native
+    var disable: js.UndefOr[String] = js.undefined
     
-    var dump: js.UndefOr[Boolean] = js.native
+    var dump: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var `gcov-args`: js.UndefOr[String] = js.native
+    var `gcov-args`: js.UndefOr[String] = js.undefined
     
-    var `gcov-exec`: js.UndefOr[String] = js.native
+    var `gcov-exec`: js.UndefOr[String] = js.undefined
     
-    var `gcov-glob`: js.UndefOr[String] = js.native
+    var `gcov-glob`: js.UndefOr[String] = js.undefined
     
-    var `gcov-root`: js.UndefOr[String] = js.native
+    var `gcov-root`: js.UndefOr[String] = js.undefined
     
-    var pipe: js.UndefOr[Boolean] = js.native
+    var pipe: js.UndefOr[Boolean] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var slug: js.UndefOr[String] = js.native
+    var slug: js.UndefOr[String] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var yml: js.UndefOr[String] = js.native
+    var yml: js.UndefOr[String] = js.undefined
   }
   object CodecovOptions {
     

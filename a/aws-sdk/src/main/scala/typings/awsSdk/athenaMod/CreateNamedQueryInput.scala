@@ -2,41 +2,39 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNamedQueryInput extends StObject {
   
   /**
     * A unique case-sensitive string used to ensure the request to create the query is idempotent (executes only once). If another CreateNamedQuery request is received, the same response is returned and another query is not created. If a parameter has changed, for example, the QueryString, an error is returned.  This token is listed as not required because AWS SDKs (for example the AWS SDK for Java) auto-generate the token for users. If you are not using the AWS SDK or the AWS CLI, you must provide this token or the action will fail. 
     */
-  var ClientRequestToken: js.UndefOr[IdempotencyToken] = js.native
+  var ClientRequestToken: js.UndefOr[IdempotencyToken] = js.undefined
   
   /**
     * The database to which the query belongs.
     */
-  var Database: DatabaseString = js.native
+  var Database: DatabaseString
   
   /**
     * The query description.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The query name.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The contents of the query with all query statements.
     */
-  var QueryString: typings.awsSdk.athenaMod.QueryString = js.native
+  var QueryString: typings.awsSdk.athenaMod.QueryString
   
   /**
     * The name of the workgroup in which the named query is being created.
     */
-  var WorkGroup: js.UndefOr[WorkGroupName] = js.native
+  var WorkGroup: js.UndefOr[WorkGroupName] = js.undefined
 }
 object CreateNamedQueryInput {
   

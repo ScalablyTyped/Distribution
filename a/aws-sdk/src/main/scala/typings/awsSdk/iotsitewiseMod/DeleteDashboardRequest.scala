@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDashboardRequest extends StObject {
   
   /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
     * The ID of the dashboard to delete.
     */
-  var dashboardId: ID = js.native
+  var dashboardId: ID
 }
 object DeleteDashboardRequest {
   

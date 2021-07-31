@@ -3,17 +3,15 @@ package typings.ngCordova.ngCordova
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDeviceMotionService extends StObject {
   
-  def clearWatch(watchId: Double): Unit = js.native
+  def clearWatch(watchId: Double): Unit
   
-  def getCurrentAcceleration(): IPromise[IDeviceMotionAcceleration] = js.native
+  def getCurrentAcceleration(): IPromise[IDeviceMotionAcceleration]
   
-  def watchAcceleration(options: IDeviceMotionAccelerometerOptions): IDeviceMotionWatchPromise = js.native
+  def watchAcceleration(options: IDeviceMotionAccelerometerOptions): IDeviceMotionWatchPromise
 }
 object IDeviceMotionService {
   

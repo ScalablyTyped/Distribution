@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDomainResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the domain.
     */
-  var DomainArn: js.UndefOr[typings.awsSdk.sagemakerMod.DomainArn] = js.native
+  var DomainArn: js.UndefOr[typings.awsSdk.sagemakerMod.DomainArn] = js.undefined
 }
 object UpdateDomainResponse {
   

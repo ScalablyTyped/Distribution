@@ -2,14 +2,12 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DistrictSearch extends StObject {
   
   def search(keywords: String): Unit = js.native
-  def search(keywords: String, callback: js.UndefOr[scala.Nothing], opts: DistrictSearchOptions): Unit = js.native
   def search(
     keywords: String,
     callback: js.Function2[/* status */ String, /* result */ String | DistrictSearchResult, Unit]
@@ -19,6 +17,7 @@ trait DistrictSearch extends StObject {
     callback: js.Function2[/* status */ String, /* result */ String | DistrictSearchResult, Unit],
     opts: DistrictSearchOptions
   ): Unit = js.native
+  def search(keywords: String, callback: Unit, opts: DistrictSearchOptions): Unit = js.native
   
   def setLevel(level: String): Unit = js.native
   

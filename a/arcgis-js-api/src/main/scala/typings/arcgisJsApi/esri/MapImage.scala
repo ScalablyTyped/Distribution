@@ -6,12 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.jpg
 import typings.arcgisJsApi.arcgisJsApiStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MapImage
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

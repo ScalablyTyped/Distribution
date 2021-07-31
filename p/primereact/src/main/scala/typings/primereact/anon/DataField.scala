@@ -2,15 +2,13 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataField extends StObject {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var field: String = js.native
+  var field: String
 }
 object DataField {
   

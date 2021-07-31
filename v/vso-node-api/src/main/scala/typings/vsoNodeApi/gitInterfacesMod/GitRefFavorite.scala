@@ -2,25 +2,23 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitRefFavorite extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
-  var id: Double = js.native
+  var id: Double
   
-  var identityId: String = js.native
+  var identityId: String
   
-  var name: String = js.native
+  var name: String
   
-  var repositoryId: String = js.native
+  var repositoryId: String
   
-  var `type`: RefFavoriteType = js.native
+  var `type`: RefFavoriteType
   
-  var url: String = js.native
+  var url: String
 }
 object GitRefFavorite {
   

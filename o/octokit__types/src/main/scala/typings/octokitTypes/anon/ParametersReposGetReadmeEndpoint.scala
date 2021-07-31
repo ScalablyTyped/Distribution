@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetReadmeResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetReadmeEndpoint extends StObject {
   
-  var parameters: ReposGetReadmeEndpoint = js.native
+  var parameters: ReposGetReadmeEndpoint
   
-  var request: ReposGetReadmeRequestOptions = js.native
+  var request: ReposGetReadmeRequestOptions
   
-  var response: OctokitResponse[ReposGetReadmeResponseData] = js.native
+  var response: OctokitResponse[ReposGetReadmeResponseData]
 }
 object ParametersReposGetReadmeEndpoint {
   

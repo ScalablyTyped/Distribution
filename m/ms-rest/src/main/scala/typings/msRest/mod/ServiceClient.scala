@@ -3,7 +3,6 @@ package typings.msRest.mod
 import typings.msRest.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest", "ServiceClient")
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class ServiceClient () extends StObject {
   def this(credentials: ServiceClientCredentials) = this()
-  def this(credentials: js.UndefOr[scala.Nothing], options: ServiceClientOptions) = this()
+  def this(credentials: Unit, options: ServiceClientOptions) = this()
   def this(credentials: ServiceClientCredentials, options: ServiceClientOptions) = this()
   
   /**

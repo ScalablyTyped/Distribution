@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3VerticalsReservationStaffFacilitator extends StObject {
   
   /**
     * Performer's images.
     */
-  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
   
   /**
     * The staff facilitator's name. Ex. \"John Smith\"
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsOrdersV3VerticalsReservationStaffFacilitator {
   

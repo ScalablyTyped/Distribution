@@ -4,7 +4,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -14,15 +13,16 @@ object typesMod {
   type MDCSnackbarAnnouncerFactory = js.Function0[MDCSnackbarAnnouncer]
   
   @js.native
-  trait MDCSnackbarCloseEvent extends Event {
+  trait MDCSnackbarCloseEvent
+    extends StObject
+       with Event {
     
     val detail: MDCSnackbarCloseEventDetail = js.native
   }
   
-  @js.native
   trait MDCSnackbarCloseEventDetail extends StObject {
     
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
   }
   object MDCSnackbarCloseEventDetail {
     

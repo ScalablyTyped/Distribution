@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTestGridProjectsRequest extends StObject {
   
   /**
     * Return no more than this number of results.
     */
-  var maxResult: js.UndefOr[MaxPageSize] = js.native
+  var maxResult: js.UndefOr[MaxPageSize] = js.undefined
   
   /**
     * From a response, used to continue a paginated listing. 
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListTestGridProjectsRequest {
   

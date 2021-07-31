@@ -2,47 +2,45 @@ package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsTrayFeedResponseTrayItem extends StObject {
   
-  var can_reply: Boolean = js.native
+  var can_reply: Boolean
   
-  var can_reshare: Boolean = js.native
+  var can_reshare: Boolean
   
-  var expiring_at: Double = js.native
+  var expiring_at: Double
   
-  var has_besties_media: Boolean = js.native
+  var has_besties_media: Boolean
   
-  var has_pride_media: Boolean = js.native
+  var has_pride_media: Boolean
   
-  var hide_from_feed_unit: js.UndefOr[Boolean] = js.native
+  var hide_from_feed_unit: js.UndefOr[Boolean] = js.undefined
   
-  var id: Double = js.native
+  var id: Double
   
-  var items: js.UndefOr[js.Array[ReelsTrayFeedResponseItemsItem]] = js.native
+  var items: js.UndefOr[js.Array[ReelsTrayFeedResponseItemsItem]] = js.undefined
   
-  var latest_reel_media: Double = js.native
+  var latest_reel_media: Double
   
-  var media_count: Double = js.native
+  var media_count: Double
   
-  var media_ids: js.Array[String] = js.native
+  var media_ids: js.Array[String]
   
-  var muted: Boolean = js.native
+  var muted: Boolean
   
-  var prefetch_count: Double = js.native
+  var prefetch_count: Double
   
-  var ranked_position: Double = js.native
+  var ranked_position: Double
   
-  var reel_type: String = js.native
+  var reel_type: String
   
-  var seen: Double = js.native
+  var seen: Double
   
-  var seen_ranked_position: Double = js.native
+  var seen_ranked_position: Double
   
-  var user: ReelsTrayFeedResponseUser = js.native
+  var user: ReelsTrayFeedResponseUser
 }
 object ReelsTrayFeedResponseTrayItem {
   

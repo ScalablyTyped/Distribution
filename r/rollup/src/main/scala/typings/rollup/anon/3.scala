@@ -4,19 +4,19 @@ import typings.rollup.mod.RollupWatcherEvent
 import typings.rollup.rollupStrings.END
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `3` extends RollupWatcherEvent {
+trait `3`
+  extends StObject
+     with RollupWatcherEvent {
   
-  var code: END = js.native
+  var code: END
 }
 object `3` {
   
   @scala.inline
-  def apply(code: END): `3` = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+  def apply(): `3` = {
+    val __obj = js.Dynamic.literal(code = "END")
     __obj.asInstanceOf[`3`]
   }
   

@@ -11,7 +11,7 @@ Shockwave Flash Player component for React
 | Keywords           | react, react-component, component, swf, shockwave, flash, player, object, embed |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 36295 |
+| # downloads        | 34787 |
 | # stars            | 0 |
 
 ## Links

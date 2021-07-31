@@ -13,35 +13,31 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-sortable-hoc", "SortableContainer")
+  @JSImport("react-sortable-hoc", JSImport.Namespace)
   @js.native
-  def SortableContainer[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P with SortableContainerProps, ComponentState] = js.native
-  @JSImport("react-sortable-hoc", "SortableContainer")
-  @js.native
-  def SortableContainer[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P with SortableContainerProps, ComponentState] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-sortable-hoc", "SortableElement")
-  @js.native
-  def SortableElement[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P with SortableElementProps, ComponentState] = js.native
-  @JSImport("react-sortable-hoc", "SortableElement")
-  @js.native
-  def SortableElement[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P with SortableElementProps, ComponentState] = js.native
+  @scala.inline
+  def SortableContainer[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P & SortableContainerProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableContainer")(wrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & SortableContainerProps, ComponentState]]
+  @scala.inline
+  def SortableContainer[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P & SortableContainerProps, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("SortableContainer")(wrappedComponent.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[P & SortableContainerProps, ComponentState]]
   
-  @JSImport("react-sortable-hoc", "SortableHandle")
-  @js.native
-  def SortableHandle[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P, ComponentState] = js.native
-  @JSImport("react-sortable-hoc", "SortableHandle")
-  @js.native
-  def SortableHandle[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P, ComponentState] = js.native
+  @scala.inline
+  def SortableElement[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P & SortableElementProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableElement")(wrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & SortableElementProps, ComponentState]]
+  @scala.inline
+  def SortableElement[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P & SortableElementProps, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("SortableElement")(wrappedComponent.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[P & SortableElementProps, ComponentState]]
   
-  @JSImport("react-sortable-hoc", "arrayMove")
-  @js.native
-  def arrayMove[T](collection: js.Array[T], previousIndex: Double, newIndex: Double): js.Array[T] = js.native
+  @scala.inline
+  def SortableHandle[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableHandle")(wrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
+  @scala.inline
+  def SortableHandle[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("SortableHandle")(wrappedComponent.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[P, ComponentState]]
+  
+  @scala.inline
+  def arrayMove[T](collection: js.Array[T], previousIndex: Double, newIndex: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMove")(collection.asInstanceOf[js.Any], previousIndex.asInstanceOf[js.Any], newIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactSortableHoc.reactSortableHocStrings.x
@@ -61,10 +57,9 @@ object mod {
     def y: typings.reactSortableHoc.reactSortableHocStrings.y = "y".asInstanceOf[typings.reactSortableHoc.reactSortableHocStrings.y]
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var withRef: Boolean = js.native
+    var withRef: Boolean
   }
   object Config {
     
@@ -84,12 +79,11 @@ object mod {
   
   type ContainerGetter = js.Function1[/* element */ ReactElement, HTMLElement | js.Promise[HTMLElement]]
   
-  @js.native
   trait Dimensions extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Dimensions {
     
@@ -114,18 +108,17 @@ object mod {
   
   type Offset = Double | String
   
-  @js.native
   trait SortEnd extends StObject {
     
-    var collection: Offset = js.native
+    var collection: Offset
     
-    var isKeySorting: Boolean = js.native
+    var isKeySorting: Boolean
     
-    var newIndex: Double = js.native
+    var newIndex: Double
     
-    var nodes: js.Array[HTMLElement] = js.native
+    var nodes: js.Array[HTMLElement]
     
-    var oldIndex: Double = js.native
+    var oldIndex: Double
   }
   object SortEnd {
     
@@ -168,26 +161,25 @@ object mod {
   
   type SortEvent = (MouseEvent[js.Any, NativeMouseEvent]) | TouchEvent[js.Any]
   
-  type SortEventWithTag = SortEvent with Target
+  type SortEventWithTag = SortEvent & Target
   
   type SortMoveHandler = js.Function1[/* event */ SortEvent, Unit]
   
-  @js.native
   trait SortOver extends StObject {
     
-    var collection: Offset = js.native
+    var collection: Offset
     
-    var helper: HTMLElement = js.native
+    var helper: HTMLElement
     
-    var index: Double = js.native
+    var index: Double
     
-    var isKeySorting: Boolean = js.native
+    var isKeySorting: Boolean
     
-    var newIndex: Double = js.native
+    var newIndex: Double
     
-    var nodes: js.Array[HTMLElement] = js.native
+    var nodes: js.Array[HTMLElement]
     
-    var oldIndex: Double = js.native
+    var oldIndex: Double
   }
   object SortOver {
     
@@ -236,20 +228,19 @@ object mod {
   
   type SortOverHandler = js.Function2[/* sort */ SortOver, /* event */ SortEvent, Unit]
   
-  @js.native
   trait SortStart extends StObject {
     
-    var collection: Offset = js.native
+    var collection: Offset
     
-    var helper: HTMLElement = js.native
+    var helper: HTMLElement
     
-    var index: Double = js.native
+    var index: Double
     
-    var isKeySorting: Boolean = js.native
+    var isKeySorting: Boolean
     
-    var node: Element = js.native
+    var node: Element
     
-    var nodes: js.Array[HTMLElement] = js.native
+    var nodes: js.Array[HTMLElement]
   }
   object SortStart {
     
@@ -294,54 +285,53 @@ object mod {
   
   type SortStartHandler = js.Function2[/* sort */ SortStart, /* event */ SortEvent, Unit]
   
-  @js.native
   trait SortableContainerProps extends StObject {
     
-    var axis: js.UndefOr[Axis] = js.native
+    var axis: js.UndefOr[Axis] = js.undefined
     
-    var distance: js.UndefOr[Double] = js.native
+    var distance: js.UndefOr[Double] = js.undefined
     
-    var getContainer: js.UndefOr[ContainerGetter] = js.native
+    var getContainer: js.UndefOr[ContainerGetter] = js.undefined
     
-    var getHelperDimensions: js.UndefOr[js.Function1[/* sort */ SortStart, Dimensions]] = js.native
+    var getHelperDimensions: js.UndefOr[js.Function1[/* sort */ SortStart, Dimensions]] = js.undefined
     
-    var helperClass: js.UndefOr[String] = js.native
+    var helperClass: js.UndefOr[String] = js.undefined
     
-    var helperContainer: js.UndefOr[HTMLElement | HelperContainerGetter] = js.native
+    var helperContainer: js.UndefOr[HTMLElement | HelperContainerGetter] = js.undefined
     
-    var hideSortableGhost: js.UndefOr[Boolean] = js.native
+    var hideSortableGhost: js.UndefOr[Boolean] = js.undefined
     
-    var keyCodes: js.UndefOr[Cancel] = js.native
+    var keyCodes: js.UndefOr[Cancel] = js.undefined
     
-    var keyboardSortingTransitionDuration: js.UndefOr[Double] = js.native
+    var keyboardSortingTransitionDuration: js.UndefOr[Double] = js.undefined
     
-    var lockAxis: js.UndefOr[Axis] = js.native
+    var lockAxis: js.UndefOr[Axis] = js.undefined
     
-    var lockOffset: js.UndefOr[Offset | (js.Tuple2[Offset, Offset])] = js.native
+    var lockOffset: js.UndefOr[Offset | (js.Tuple2[Offset, Offset])] = js.undefined
     
-    var lockToContainerEdges: js.UndefOr[Boolean] = js.native
+    var lockToContainerEdges: js.UndefOr[Boolean] = js.undefined
     
-    var onSortEnd: js.UndefOr[SortEndHandler] = js.native
+    var onSortEnd: js.UndefOr[SortEndHandler] = js.undefined
     
-    var onSortMove: js.UndefOr[SortMoveHandler] = js.native
+    var onSortMove: js.UndefOr[SortMoveHandler] = js.undefined
     
-    var onSortOver: js.UndefOr[SortOverHandler] = js.native
+    var onSortOver: js.UndefOr[SortOverHandler] = js.undefined
     
-    var onSortStart: js.UndefOr[SortStartHandler] = js.native
+    var onSortStart: js.UndefOr[SortStartHandler] = js.undefined
     
-    var pressDelay: js.UndefOr[Double] = js.native
+    var pressDelay: js.UndefOr[Double] = js.undefined
     
-    var pressThreshold: js.UndefOr[Double] = js.native
+    var pressThreshold: js.UndefOr[Double] = js.undefined
     
-    var shouldCancelStart: js.UndefOr[js.Function1[/* event */ SortEvent | SortEventWithTag, Boolean]] = js.native
+    var shouldCancelStart: js.UndefOr[js.Function1[/* event */ SortEvent | SortEventWithTag, Boolean]] = js.undefined
     
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
     
-    var updateBeforeSortStart: js.UndefOr[SortStartHandler] = js.native
+    var updateBeforeSortStart: js.UndefOr[SortStartHandler] = js.undefined
     
-    var useDragHandle: js.UndefOr[Boolean] = js.native
+    var useDragHandle: js.UndefOr[Boolean] = js.undefined
     
-    var useWindowAsScrollContainer: js.UndefOr[Boolean] = js.native
+    var useWindowAsScrollContainer: js.UndefOr[Boolean] = js.undefined
   }
   object SortableContainerProps {
     
@@ -497,14 +487,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SortableElementProps extends StObject {
     
-    var collection: js.UndefOr[Offset] = js.native
+    var collection: js.UndefOr[Offset] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
   }
   object SortableElementProps {
     

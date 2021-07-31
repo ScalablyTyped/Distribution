@@ -4,19 +4,17 @@ import typings.atom.mod.FocusableHTMLElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoFocus[T] extends StObject {
   
-  var autoFocus: js.UndefOr[Boolean | FocusableHTMLElement] = js.native
+  var autoFocus: js.UndefOr[Boolean | FocusableHTMLElement] = js.undefined
   
-  var item: T = js.native
+  var item: T
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object AutoFocus {
   
@@ -27,7 +25,7 @@ object AutoFocus {
   }
   
   @scala.inline
-  implicit class AutoFocusMutableBuilder[Self <: AutoFocus[_], T] (val x: Self with AutoFocus[T]) extends AnyVal {
+  implicit class AutoFocusMutableBuilder[Self <: AutoFocus[?], T] (val x: Self & AutoFocus[T]) extends AnyVal {
     
     @scala.inline
     def setAutoFocus(value: Boolean | FocusableHTMLElement): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])

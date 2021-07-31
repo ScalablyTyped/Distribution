@@ -5,21 +5,19 @@ import typings.seleniumWebdriver.chromeMod.ServiceBuilder
 import typings.seleniumWebdriver.remoteMod.DriverService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofchrome extends StObject {
   
-  var Driver: TypeofDriverInstantiable = js.native
+  var Driver: TypeofDriverInstantiable
   
-  var Options: TypeofOptions = js.native
+  var Options: TypeofOptions
   
-  var ServiceBuilder: Instantiable0[typings.seleniumWebdriver.chromeMod.ServiceBuilder] = js.native
+  var ServiceBuilder: Instantiable0[typings.seleniumWebdriver.chromeMod.ServiceBuilder]
   
-  def getDefaultService(): DriverService = js.native
+  def getDefaultService(): DriverService
   
-  def setDefaultService(service: DriverService): Unit = js.native
+  def setDefaultService(service: DriverService): Unit
 }
 object Typeofchrome {
   

@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightTypesResource extends StObject {
   
-  var insights: InsightsResource = js.native
+  var insights: InsightsResource
 }
 object InsightTypesResource {
   

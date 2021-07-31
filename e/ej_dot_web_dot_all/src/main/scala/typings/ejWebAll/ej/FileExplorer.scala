@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileExplorer extends Widget_ {
+trait FileExplorer
+  extends StObject
+     with Widget_ {
   
   /** Refresh the size of FileExplorer control.
     * @returns {void}
@@ -69,35 +70,40 @@ object FileExplorer {
     
     ///Supports to display files in grid view
     @js.native
-    sealed trait Grid extends layoutType
+    sealed trait Grid
+      extends StObject
+         with layoutType
     
     ///Supports to display files as large icons
     @js.native
-    sealed trait LargeIcons extends layoutType
+    sealed trait LargeIcons
+      extends StObject
+         with layoutType
     
     ///Supports to display files in tile view
     @js.native
-    sealed trait Tile extends layoutType
+    sealed trait Tile
+      extends StObject
+         with layoutType
   }
   
-  @js.native
   trait BeforeAjaxRequestEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the AJAX request data
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeAjaxRequestEventArgs {
     
@@ -136,32 +142,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait BeforeDownloadEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the downloaded file names.
       */
-    var files: js.UndefOr[js.Array[String]] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the path of currently opened item.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeDownloadEventArgs {
     
@@ -215,32 +220,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait BeforeGetImageEventArgs extends StObject {
     
     /** enable or disable the image compress option.
       */
-    var canCompress: js.UndefOr[Boolean] = js.native
+    var canCompress: js.UndefOr[Boolean] = js.undefined
     
     /** set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the expected image size.
       */
-    var size: js.UndefOr[js.Any] = js.native
+    var size: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeGetImageEventArgs {
     
@@ -291,32 +295,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait BeforeOpenEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the opened item type.
       */
-    var itemType: js.UndefOr[String] = js.native
+    var itemType: js.UndefOr[String] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the path of currently opened item.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeOpenEventArgs {
     
@@ -367,20 +370,19 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait BeforeUploadDialogOpenEventArgs extends StObject {
     
     /** returns Selected FileList objects
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeUploadDialogOpenEventArgs {
     
@@ -413,32 +415,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait BeforeUploadEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the path of currently opened item.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the upload item details.
       */
-    var uploadItemDetails: js.UndefOr[js.Any] = js.native
+    var uploadItemDetails: js.UndefOr[js.Any] = js.undefined
   }
   object BeforeUploadEventArgs {
     
@@ -489,28 +490,27 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait BeforeUploadSendEventArgs extends StObject {
     
     /** if the event is cancelled; otherwise, false
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** selected FileList Object
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the upload model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** XHR-AJAX Object for reference
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object BeforeUploadSendEventArgs {
     
@@ -555,19 +555,18 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait ContextMenuSettings extends StObject {
     
     /** The customMenuFields property is used to define custom functionality for custom ContextMenu item's which are defined in items property.
       * @Default {[]}
       */
-    var customMenuFields: js.UndefOr[js.Array[_]] = js.native
+    var customMenuFields: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** The items property is used to configure and group the required ContextMenu items in FileExplorer control.
       * @Default {{% highlight javascript %}{navbar: [NewFolder, Upload, |, Delete, Rename, |, Cut, Copy, Paste, |, Getinfo],cwd: [Refresh, Paste,|, SortBy, |, NewFolder, Upload, |,
       * Getinfo],files: [Open, Download, |, Upload, |, Delete, Rename, |, Cut, Copy, Paste, |, OpenFolderLocation, Getinfo]}{% endhighlight %}}
       */
-    var items: js.UndefOr[js.Any] = js.native
+    var items: js.UndefOr[js.Any] = js.undefined
   }
   object ContextMenuSettings {
     
@@ -581,7 +580,7 @@ object FileExplorer {
     implicit class ContextMenuSettingsMutableBuilder[Self <: ContextMenuSettings] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCustomMenuFields(value: js.Array[_]): Self = StObject.set(x, "customMenuFields", value.asInstanceOf[js.Any])
+      def setCustomMenuFields(value: js.Array[js.Any]): Self = StObject.set(x, "customMenuFields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomMenuFieldsUndefined: Self = StObject.set(x, "customMenuFields", js.undefined)
@@ -597,32 +596,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait CopyEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of copied file/folder.
       */
-    var name: js.UndefOr[js.Array[String]] = js.native
+    var name: js.UndefOr[js.Array[String]] = js.undefined
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the source path.
       */
-    var sourcePath: js.UndefOr[String] = js.native
+    var sourcePath: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CopyEventArgs {
     
@@ -676,20 +674,19 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -722,28 +719,27 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait CreateFolderEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the AJAX response data
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the selected item details
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateFolderEventArgs {
     
@@ -788,32 +784,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait CutEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of moved file or folder.
       */
-    var name: js.UndefOr[js.Array[String]] = js.native
+    var name: js.UndefOr[js.Array[String]] = js.undefined
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the source path.
       */
-    var sourcePath: js.UndefOr[String] = js.native
+    var sourcePath: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CutEventArgs {
     
@@ -867,20 +862,19 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -913,32 +907,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait DragEventArgs extends StObject {
     
     /** set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of target element.
       */
-    var targetElementName: js.UndefOr[String] = js.native
+    var targetElementName: js.UndefOr[String] = js.undefined
     
     /** returns the path of target element.
       */
-    var targetPath: js.UndefOr[String] = js.native
+    var targetPath: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragEventArgs {
     
@@ -989,32 +982,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait DragStartEventArgs extends StObject {
     
     /** set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the dragging file details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the dragging element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the path of dragging element.
       */
-    var targetPath: js.UndefOr[String] = js.native
+    var targetPath: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragStartEventArgs {
     
@@ -1065,40 +1057,39 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait DragStopEventArgs extends StObject {
     
     /** set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the action, which is performed after dropping the files (upload/ move).
       */
-    var dropAction: js.UndefOr[String] = js.native
+    var dropAction: js.UndefOr[String] = js.undefined
     
     /** returns the dragging file details
       */
-    var fileInfo: js.UndefOr[js.Any] = js.native
+    var fileInfo: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of target element
       */
-    var targetElementName: js.UndefOr[String] = js.native
+    var targetElementName: js.UndefOr[String] = js.undefined
     
     /** returns the path of target element.
       */
-    var targetPath: js.UndefOr[String] = js.native
+    var targetPath: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragStopEventArgs {
     
@@ -1161,40 +1152,39 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait DropEventArgs extends StObject {
     
     /** set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the action, which is performed after dropping the files (upload/ move).
       */
-    var dropAction: js.UndefOr[String] = js.native
+    var dropAction: js.UndefOr[String] = js.undefined
     
     /** returns the dragging element details.
       */
-    var fileInfo: js.UndefOr[js.Any] = js.native
+    var fileInfo: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of target folder.
       */
-    var targetFolder: js.UndefOr[String] = js.native
+    var targetFolder: js.UndefOr[String] = js.undefined
     
     /** returns the path of target folder.
       */
-    var targetPath: js.UndefOr[String] = js.native
+    var targetPath: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DropEventArgs {
     
@@ -1257,23 +1247,22 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait FilterSettings extends StObject {
     
     /** It allows to search the text given in search Textbox in every keyup event. When this property was set as false, searching will works only on Enter key and searchbar blur.
       * @Default {true}
       */
-    var allowSearchOnTyping: js.UndefOr[Boolean] = js.native
+    var allowSearchOnTyping: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables to perform the filter operation with case sensitive.
       * @Default {false}
       */
-    var caseSensitiveSearch: js.UndefOr[Boolean] = js.native
+    var caseSensitiveSearch: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the search filter type. There are several filter types available such as &quot;startswith&quot;, &quot;contains&quot;, &quot;endswith&quot;. See filterType.
       * @Default {ej.FileExplorer.filterType.Contains}
       */
-    var filterType: js.UndefOr[FilterType_ | String] = js.native
+    var filterType: js.UndefOr[FilterType_ | String] = js.undefined
   }
   object FilterSettings {
     
@@ -1306,36 +1295,35 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait GetImageEventArgs extends StObject {
     
     /** returns the action type, which specifies thumbnail preview or opening image.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** loaded image element
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** original arguments of image load or error event
       */
-    var originalArgs: js.UndefOr[js.Any] = js.native
+    var originalArgs: js.UndefOr[js.Any] = js.undefined
     
     /** loaded image path.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object GetImageEventArgs {
     
@@ -1392,24 +1380,23 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait GridSettings extends StObject {
     
     /** Allows to Resize the width of the columns by simply click and move the particular column header line.
       * @Default {true}
       */
-    var allowResizing: js.UndefOr[Boolean] = js.native
+    var allowResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the dynamic sorting behavior on grid data. Sorting can be done through clicking on particular column header.
       * @Default {true}
       */
-    var allowSorting: js.UndefOr[Boolean] = js.native
+    var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to render the grid with specified columns. You can use this property same as the column property in Grid control.
       * @Default {[{ field: name, headerText: Name, width: 30% }, { field: dateModified, headerText: Date Modified, width: 30% }, { field: type, headerText: Type, width: 15% }, { field:
       * size, headerText: Size, width: 12%, textAlign: right, headerTextAlign: left }]}
       */
-    var columns: js.UndefOr[js.Array[_]] = js.native
+    var columns: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object GridSettings {
     
@@ -1435,7 +1422,7 @@ object FileExplorer {
       def setAllowSortingUndefined: Self = StObject.set(x, "allowSorting", js.undefined)
       
       @scala.inline
-      def setColumns(value: js.Array[_]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
@@ -1445,40 +1432,39 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait KeydownEventArgs extends StObject {
     
     /** returns altKey value.
       */
-    var altKey: js.UndefOr[Boolean] = js.native
+    var altKey: js.UndefOr[Boolean] = js.undefined
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns ctrlKey value.
       */
-    var ctrlKey: js.UndefOr[Boolean] = js.native
+    var ctrlKey: js.UndefOr[Boolean] = js.undefined
     
     /** returns the downed key keyCode value
       */
-    var keyCode: js.UndefOr[Double] = js.native
+    var keyCode: js.UndefOr[Double] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the event object.
       */
-    var originalArgs: js.UndefOr[js.Any] = js.native
+    var originalArgs: js.UndefOr[js.Any] = js.undefined
     
     /** returns shiftKey value.
       */
-    var shiftKey: js.UndefOr[Boolean] = js.native
+    var shiftKey: js.UndefOr[Boolean] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object KeydownEventArgs {
     
@@ -1541,28 +1527,27 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait LayoutChangeEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** return true when we change the layout via interaction, else false.
       */
-    var isInteraction: js.UndefOr[Boolean] = js.native
+    var isInteraction: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current view type.
       */
-    var layoutType: js.UndefOr[String] = js.native
+    var layoutType: js.UndefOr[String] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LayoutChangeEventArgs {
     
@@ -1607,40 +1592,39 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait MenuBeforeOpenEventArgs extends StObject {
     
     /** set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the name of ContextMenu items group.
       */
-    var contextMenu: js.UndefOr[String] = js.native
+    var contextMenu: js.UndefOr[String] = js.undefined
     
     /** returns the dataSource of ContextMenu.
       */
-    var dataSource: js.UndefOr[js.Array[_]] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the element of ContextMenu.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event of ContextMenu.
       */
-    var events: js.UndefOr[js.Any] = js.native
+    var events: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MenuBeforeOpenEventArgs {
     
@@ -1666,7 +1650,7 @@ object FileExplorer {
       def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -1706,48 +1690,47 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait MenuClickEventArgs extends StObject {
     
     /** returns the ID of clicked ContextMenu item.
       */
-    var ID: js.UndefOr[String] = js.native
+    var ID: js.UndefOr[String] = js.undefined
     
     /** set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the name of ContextMenu items group.
       */
-    var contextMenu: js.UndefOr[String] = js.native
+    var contextMenu: js.UndefOr[String] = js.undefined
     
     /** returns the element of clicked ContextMenu item.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event of ContextMenu.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the parent element ID of clicked ContextMenu item.
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** returns the parent element text of clicked ContextMenu item.
       */
-    var parentText: js.UndefOr[String] = js.native
+    var parentText: js.UndefOr[String] = js.undefined
     
     /** returns the text of clicked ContextMenu item.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MenuClickEventArgs {
     
@@ -1822,32 +1805,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait MenuOpenEventArgs extends StObject {
     
     /** set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the name of ContextMenu items group.
       */
-    var contextMenu: js.UndefOr[String] = js.native
+    var contextMenu: js.UndefOr[String] = js.undefined
     
     /** returns the element of ContextMenu.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MenuOpenEventArgs {
     
@@ -1898,337 +1880,336 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Sets the URL of server side AJAX handling method that handles file operation like Read, Remove, Rename, Create, Upload, Download, Copy and Move in FileExplorer.
       */
-    var ajaxAction: js.UndefOr[String] = js.native
+    var ajaxAction: js.UndefOr[String] = js.undefined
     
     /** Specifies the data type of server side AJAX handling method.
       * @Default {json}
       */
-    var ajaxDataType: js.UndefOr[String] = js.native
+    var ajaxDataType: js.UndefOr[String] = js.undefined
     
     /** By using ajaxSettings property, you can customize the AJAX configurations. Normally you can customize the following option in AJAX handling data, URL, type, async, contentType,
       * dataType and success. For upload, download and getImage API, you can only customize URL.
       * @Default {{ read: {}, createFolder: {}, remove: {}, rename: {}, paste: {}, getDetails: {}, download: {}, upload: {}, getImage: {}, search: {}}}
       */
-    var ajaxSettings: js.UndefOr[js.Any] = js.native
+    var ajaxSettings: js.UndefOr[js.Any] = js.undefined
     
     /** The FileExplorer allows to move the files from one folder to another folder of FileExplorer by using drag and drop option. Also it supports to upload a file by dragging it from
       * windows explorer to the necessary folder of ejFileExplorer.
       * @Default {true}
       */
-    var allowDragAndDrop: js.UndefOr[Boolean] = js.native
+    var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable keyboard support for FileExplorer actions.
       * @Default {true}
       */
-    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
+    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** The FileExplorer allows to select multiple files by enabling the allowMultiSelection property. You can perform multi selection by pressing the Ctrl key or Shift key.
       * @Default {true}
       */
-    var allowMultiSelection: js.UndefOr[Boolean] = js.native
+    var allowMultiSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Fires before the AJAX request is performed.
       */
-    var beforeAjaxRequest: js.UndefOr[js.Function1[/* e */ BeforeAjaxRequestEventArgs, Unit]] = js.native
+    var beforeAjaxRequest: js.UndefOr[js.Function1[/* e */ BeforeAjaxRequestEventArgs, Unit]] = js.undefined
     
     /** Fires before downloading the files.
       */
-    var beforeDownload: js.UndefOr[js.Function1[/* e */ BeforeDownloadEventArgs, Unit]] = js.native
+    var beforeDownload: js.UndefOr[js.Function1[/* e */ BeforeDownloadEventArgs, Unit]] = js.undefined
     
     /** Fires before getting a requested image from server. Also this event will be triggered when you have enabled thumbnail image compression option in FileExplorer.Using this event,
       * you can customize the image compression size.
       */
-    var beforeGetImage: js.UndefOr[js.Function1[/* e */ BeforeGetImageEventArgs, Unit]] = js.native
+    var beforeGetImage: js.UndefOr[js.Function1[/* e */ BeforeGetImageEventArgs, Unit]] = js.undefined
     
     /** Fires before files or folders open.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.native
+    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Fires before uploading the files.
       */
-    var beforeUpload: js.UndefOr[js.Function1[/* e */ BeforeUploadEventArgs, Unit]] = js.native
+    var beforeUpload: js.UndefOr[js.Function1[/* e */ BeforeUploadEventArgs, Unit]] = js.undefined
     
     /** Fires before opening the upload dialog.
       */
-    var beforeUploadDialogOpen: js.UndefOr[js.Function1[/* e */ BeforeUploadDialogOpenEventArgs, Unit]] = js.native
+    var beforeUploadDialogOpen: js.UndefOr[js.Function1[/* e */ BeforeUploadDialogOpenEventArgs, Unit]] = js.undefined
     
     /** Event is fired before the upload progress is started.
       */
-    var beforeUploadSend: js.UndefOr[js.Function1[/* e */ BeforeUploadSendEventArgs, Unit]] = js.native
+    var beforeUploadSend: js.UndefOr[js.Function1[/* e */ BeforeUploadSendEventArgs, Unit]] = js.undefined
     
     /** By using the contextMenuSettings property, you can customize the ContextMenu in the FileExplorer control.
       */
-    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.native
+    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.undefined
     
     /** Fires when file or folder is copied successfully.
       */
-    var copy: js.UndefOr[js.Function1[/* e */ CopyEventArgs, Unit]] = js.native
+    var copy: js.UndefOr[js.Function1[/* e */ CopyEventArgs, Unit]] = js.undefined
     
     /** Fires when FileExplorer control was created
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Fires when new folder is created successfully in file system.
       */
-    var createFolder: js.UndefOr[js.Function1[/* e */ CreateFolderEventArgs, Unit]] = js.native
+    var createFolder: js.UndefOr[js.Function1[/* e */ CreateFolderEventArgs, Unit]] = js.undefined
     
     /** Sets the root class for FileExplorer theme. This cssClass API allows to use custom skinning option for File Explorer control. By defining the root class by using this API, you
       * have to include this root class in CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires when file or folder is cut successfully.
       */
-    var cut: js.UndefOr[js.Function1[/* e */ CutEventArgs, Unit]] = js.native
+    var cut: js.UndefOr[js.Function1[/* e */ CutEventArgs, Unit]] = js.undefined
     
     /** Fires when the FileExplorer is destroyed successfully.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Fires when the files or directory is dragging over on the FileExplorer.
       */
-    var drag: js.UndefOr[js.Function1[/* e */ DragEventArgs, Unit]] = js.native
+    var drag: js.UndefOr[js.Function1[/* e */ DragEventArgs, Unit]] = js.undefined
     
     /** Fires when the files or directory has been started to drag over on the FileExplorer
       */
-    var dragStart: js.UndefOr[js.Function1[/* e */ DragStartEventArgs, Unit]] = js.native
+    var dragStart: js.UndefOr[js.Function1[/* e */ DragStartEventArgs, Unit]] = js.undefined
     
     /** Fires when the files or directory has been stopped to drag over on FileExplorer
       */
-    var dragStop: js.UndefOr[js.Function1[/* e */ DragStopEventArgs, Unit]] = js.native
+    var dragStop: js.UndefOr[js.Function1[/* e */ DragStopEventArgs, Unit]] = js.undefined
     
     /** Fires when the files or directory is dropped to the target folder of FileExplorer
       */
-    var drop: js.UndefOr[js.Function1[/* e */ DropEventArgs, Unit]] = js.native
+    var drop: js.UndefOr[js.Function1[/* e */ DropEventArgs, Unit]] = js.undefined
     
     /** Specify the enablePersistence to FileExplorer to save the current model value in browser cookies for state maintains.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the Right to Left alignment support in FileExplorer control.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the resize support in FileExplorer control.
       * @Default {false}
       */
-    var enableResize: js.UndefOr[Boolean] = js.native
+    var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the thumbnail image compression option in FileExplorer control. By enabling this option, you can reduce the thumbnail image size while loading.
       * @Default {false}
       */
-    var enableThumbnailCompress: js.UndefOr[Boolean] = js.native
+    var enableThumbnailCompress: js.UndefOr[Boolean] = js.undefined
     
     /** Allows specified type of files only to display in FileExplorer control.
       * @Default {* . *}
       */
-    var fileTypes: js.UndefOr[String] = js.native
+    var fileTypes: js.UndefOr[String] = js.undefined
     
     /** By using filterSettings property, you can customize the search functionality of the search bar in FileExplorer control.
       */
-    var filterSettings: js.UndefOr[FilterSettings] = js.native
+    var filterSettings: js.UndefOr[FilterSettings] = js.undefined
     
     /** Fires after loading the requested image from server. Using this event, you can get the details of loaded image.
       */
-    var getImage: js.UndefOr[js.Function1[/* e */ GetImageEventArgs, Unit]] = js.native
+    var getImage: js.UndefOr[js.Function1[/* e */ GetImageEventArgs, Unit]] = js.undefined
     
     /** By using the gridSettings property, you can customize the grid behavior in the FileExplorer control.
       */
-    var gridSettings: js.UndefOr[GridSettings] = js.native
+    var gridSettings: js.UndefOr[GridSettings] = js.undefined
     
     /** Specifies the height of FileExplorer control.
       * @Default {400}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Enables or disables the responsive support for FileExplorer control during the window resizing time.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when keydown in FileExplorer control.
       */
-    var keydown: js.UndefOr[js.Function1[/* e */ KeydownEventArgs, Unit]] = js.native
+    var keydown: js.UndefOr[js.Function1[/* e */ KeydownEventArgs, Unit]] = js.undefined
     
     /** Sets the file view type. There are three view types available such as Grid, Tile and Large icons. See layoutType.
       * @Default {ej.FileExplorer.layoutType.Grid}
       */
-    var layout: js.UndefOr[layoutType | String] = js.native
+    var layout: js.UndefOr[layoutType | String] = js.undefined
     
     /** Fires when the file view type is changed.
       */
-    var layoutChange: js.UndefOr[js.Function1[/* e */ LayoutChangeEventArgs, Unit]] = js.native
+    var layoutChange: js.UndefOr[js.Function1[/* e */ LayoutChangeEventArgs, Unit]] = js.undefined
     
     /** Sets the culture in FileExplorer.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the maximum height of FileExplorer control.
       * @Default {null}
       */
-    var maxHeight: js.UndefOr[String | Double] = js.native
+    var maxHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the maximum width of FileExplorer control.
       * @Default {null}
       */
-    var maxWidth: js.UndefOr[String | Double] = js.native
+    var maxWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Fires when before the ContextMenu opening.
       */
-    var menuBeforeOpen: js.UndefOr[js.Function1[/* e */ MenuBeforeOpenEventArgs, Unit]] = js.native
+    var menuBeforeOpen: js.UndefOr[js.Function1[/* e */ MenuBeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Fires when click the ContextMenu item.
       */
-    var menuClick: js.UndefOr[js.Function1[/* e */ MenuClickEventArgs, Unit]] = js.native
+    var menuClick: js.UndefOr[js.Function1[/* e */ MenuClickEventArgs, Unit]] = js.undefined
     
     /** Fires when ContextMenu is successfully opened.
       */
-    var menuOpen: js.UndefOr[js.Function1[/* e */ MenuOpenEventArgs, Unit]] = js.native
+    var menuOpen: js.UndefOr[js.Function1[/* e */ MenuOpenEventArgs, Unit]] = js.undefined
     
     /** Sets the minimum height of FileExplorer control.
       * @Default {250px}
       */
-    var minHeight: js.UndefOr[String | Double] = js.native
+    var minHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the minimum width of FileExplorer control.
       * @Default {400px}
       */
-    var minWidth: js.UndefOr[String | Double] = js.native
+    var minWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Fires when files are successfully opened.
       */
-    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Fires when a file or folder is pasted successfully.
       */
-    var paste: js.UndefOr[js.Function1[/* e */ PasteEventArgs, Unit]] = js.native
+    var paste: js.UndefOr[js.Function1[/* e */ PasteEventArgs, Unit]] = js.undefined
     
     /** The property path denotes the filesystem path that are to be explored. The path for the filesystem can be physical path or relative path, but it has to be relevant to where the
       * Web API is hosted.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** Fires when file or folder is deleted successfully.
       */
-    var remove: js.UndefOr[js.Function1[/* e */ RemoveEventArgs, Unit]] = js.native
+    var remove: js.UndefOr[js.Function1[/* e */ RemoveEventArgs, Unit]] = js.undefined
     
     /** Fires when resizing is performed for FileExplorer.
       */
-    var resize: js.UndefOr[js.Function1[/* e */ ResizeEventArgs, Unit]] = js.native
+    var resize: js.UndefOr[js.Function1[/* e */ ResizeEventArgs, Unit]] = js.undefined
     
     /** Fires when resizing is started for FileExplorer.
       */
-    var resizeStart: js.UndefOr[js.Function1[/* e */ ResizeStartEventArgs, Unit]] = js.native
+    var resizeStart: js.UndefOr[js.Function1[/* e */ ResizeStartEventArgs, Unit]] = js.undefined
     
     /** Fires this event when the resizing is stopped for FileExplorer.
       */
-    var resizeStop: js.UndefOr[js.Function1[/* e */ ResizeStopEventArgs, Unit]] = js.native
+    var resizeStop: js.UndefOr[js.Function1[/* e */ ResizeStopEventArgs, Unit]] = js.undefined
     
     /** Sets the alias name of root folder name in FileExplorer. It is used to replace the actual root folder name in FileExplorer.
       */
-    var rootFolderName: js.UndefOr[String] = js.native
+    var rootFolderName: js.UndefOr[String] = js.undefined
     
     /** Fires when the items from grid view or tile view of FileExplorer control is selected.
       */
-    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.native
+    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** The selectedFolder is used to select the specified folder of FileExplorer control.
       */
-    var selectedFolder: js.UndefOr[String] = js.native
+    var selectedFolder: js.UndefOr[String] = js.undefined
     
     /** The selectedItems is used to select the specified items (file, folder) of FileExplorer control.
       */
-    var selectedItems: js.UndefOr[String | js.Array[_]] = js.native
+    var selectedItems: js.UndefOr[String | js.Array[js.Any]] = js.undefined
     
     /** Enables or disables the checkbox option in FileExplorer control.
       * @Default {true}
       */
-    var showCheckbox: js.UndefOr[Boolean] = js.native
+    var showCheckbox: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the context menu option in FileExplorer control.
       * @Default {true}
       */
-    var showContextMenu: js.UndefOr[Boolean] = js.native
+    var showContextMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the footer in FileExplorer control. The footer element displays the details of the current selected files and folders. And also the footer having the switcher
       * to change the layout view.
       * @Default {true}
       */
-    var showFooter: js.UndefOr[Boolean] = js.native
+    var showFooter: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the navigation pane in FileExplorer control. The navigation pane contains a tree view element that displays all the folders from the filesystem in a
       * hierarchical manner. This is useful to a quick navigation of any folder in the filesystem.
       * @Default {true}
       */
-    var showNavigationPane: js.UndefOr[Boolean] = js.native
+    var showNavigationPane: js.UndefOr[Boolean] = js.undefined
     
     /** FileExplorer control is displayed with rounded corner when this property is set to true.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** FileExplorer control is rendered with thumbnail preview of images in Tile and LargeIcons layout when this property set to true.
       * @Default {true}
       */
-    var showThumbnail: js.UndefOr[Boolean] = js.native
+    var showThumbnail: js.UndefOr[Boolean] = js.undefined
     
     /** Shows or disables the toolbar in FileExplorer control.
       * @Default {true}
       */
-    var showToolbar: js.UndefOr[Boolean] = js.native
+    var showToolbar: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered when refresh the template column elements in the grid view of FileExplorer control.
       */
-    var templateRefresh: js.UndefOr[js.Function1[/* e */ TemplateRefreshEventArgs, Unit]] = js.native
+    var templateRefresh: js.UndefOr[js.Function1[/* e */ TemplateRefreshEventArgs, Unit]] = js.undefined
     
     /** The tools property is used to configure and group required toolbar items in FileExplorer control.
       * @Default {{ creation: [NewFolder], navigation: [Back, Forward, Upward], addressBar: [Addressbar], editing: [Refresh, Upload, Delete, Rename, Download], copyPaste: [Cut, Copy,
       * Paste], getProperties: [Details], searchBar: [Searchbar], layout: [Layout], sortBy: [SortBy]}}
       */
-    var tools: js.UndefOr[js.Any] = js.native
+    var tools: js.UndefOr[js.Any] = js.undefined
     
     /** The toolsList property is used to arrange the toolbar items in the FileExplorer control.
       * @Default {[layout, creation, navigation, addressBar, editing, copyPaste, sortBy, getProperties, searchBar]}
       */
-    var toolsList: js.UndefOr[js.Array[_]] = js.native
+    var toolsList: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Fires when the items from grid view or tile view or large icons view of FileExplorer control is unselected.
       */
-    var unselect: js.UndefOr[js.Function1[/* e */ UnselectEventArgs, Unit]] = js.native
+    var unselect: js.UndefOr[js.Function1[/* e */ UnselectEventArgs, Unit]] = js.undefined
     
     /** Event is fired when the file upload progress gets completed.
       */
-    var uploadComplete: js.UndefOr[js.Function1[/* e */ UploadCompleteEventArgs, Unit]] = js.native
+    var uploadComplete: js.UndefOr[js.Function1[/* e */ UploadCompleteEventArgs, Unit]] = js.undefined
     
     /** Event is fired when the file upload fails due to some error.
       */
-    var uploadError: js.UndefOr[js.Function1[/* e */ UploadErrorEventArgs, Unit]] = js.native
+    var uploadError: js.UndefOr[js.Function1[/* e */ UploadErrorEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates whether to customize the upload behavior in the FileExplorer.
       */
-    var uploadSettings: js.UndefOr[UploadSettings] = js.native
+    var uploadSettings: js.UndefOr[UploadSettings] = js.undefined
     
     /** Event is fired when the file upload progress gets succeeded.
       */
-    var uploadSuccess: js.UndefOr[js.Function1[/* e */ UploadSuccessEventArgs, Unit]] = js.native
+    var uploadSuccess: js.UndefOr[js.Function1[/* e */ UploadSuccessEventArgs, Unit]] = js.undefined
     
     /** Specifies the virtual item count for virtual support.
       * @Default {0}
       */
-    var virtualItemCount: js.UndefOr[Double] = js.native
+    var virtualItemCount: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of FileExplorer control.
       * @Default {850}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -2572,7 +2553,7 @@ object FileExplorer {
       def setSelectedFolderUndefined: Self = StObject.set(x, "selectedFolder", js.undefined)
       
       @scala.inline
-      def setSelectedItems(value: String | js.Array[_]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      def setSelectedItems(value: String | js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
@@ -2632,7 +2613,7 @@ object FileExplorer {
       def setTools(value: js.Any): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setToolsList(value: js.Array[_]): Self = StObject.set(x, "toolsList", value.asInstanceOf[js.Any])
+      def setToolsList(value: js.Array[js.Any]): Self = StObject.set(x, "toolsList", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setToolsListUndefined: Self = StObject.set(x, "toolsList", js.undefined)
@@ -2687,32 +2668,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait OpenEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the opened item type.
       */
-    var itemType: js.UndefOr[String] = js.native
+    var itemType: js.UndefOr[String] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the path of currently opened item.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OpenEventArgs {
     
@@ -2763,36 +2743,35 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait PasteEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of moved/copied file or folder.
       */
-    var name: js.UndefOr[js.Array[String]] = js.native
+    var name: js.UndefOr[js.Array[String]] = js.undefined
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the target folder item details.
       */
-    var targetFolder: js.UndefOr[js.Any] = js.native
+    var targetFolder: js.UndefOr[js.Any] = js.undefined
     
     /** returns the target path.
       */
-    var targetPath: js.UndefOr[String] = js.native
+    var targetPath: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PasteEventArgs {
     
@@ -2852,36 +2831,35 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait RemoveEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the AJAX response data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the names of deleted items.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** returns the path of deleted item.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** returns the removed item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RemoveEventArgs {
     
@@ -2938,24 +2916,23 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait ResizeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the mouse move event args.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ResizeEventArgs {
     
@@ -2994,24 +2971,23 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait ResizeStartEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the mouse down event args.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ResizeStartEventArgs {
     
@@ -3050,24 +3026,23 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait ResizeStopEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the mouse leave event args.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ResizeStopEventArgs {
     
@@ -3106,32 +3081,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait SelectEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of selected items.
       */
-    var name: js.UndefOr[js.Array[String]] = js.native
+    var name: js.UndefOr[js.Array[String]] = js.undefined
     
     /** returns the path of selected items.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** returns the selected item details
       */
-    var selectedItems: js.UndefOr[js.Any] = js.native
+    var selectedItems: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SelectEventArgs {
     
@@ -3185,36 +3159,35 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait TemplateRefreshEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the cell object.
       */
-    var cell: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var cell: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the column object.
       */
-    var column: js.UndefOr[js.Any] = js.native
+    var column: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the current row data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the grid model of FileExplorer.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the current row index.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TemplateRefreshEventArgs {
     
@@ -3271,40 +3244,39 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait UnselectEventArgs extends StObject {
     
     /** Returns the FileExplorer model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of unselected item.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Returns the name of unselected items.
       */
-    var names: js.UndefOr[js.Array[String]] = js.native
+    var names: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Returns the type of unselected item.
       */
-    var nodeType: js.UndefOr[String] = js.native
+    var nodeType: js.UndefOr[String] = js.undefined
     
     /** Returns the path of unselected item.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the unselected item details.
       */
-    var unselectedItem: js.UndefOr[js.Any] = js.native
+    var unselectedItem: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the unselected items details.
       */
-    var unselectedItems: js.UndefOr[js.Array[_]] = js.native
+    var unselectedItems: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object UnselectEventArgs {
     
@@ -3363,7 +3335,7 @@ object FileExplorer {
       def setUnselectedItemUndefined: Self = StObject.set(x, "unselectedItem", js.undefined)
       
       @scala.inline
-      def setUnselectedItems(value: js.Array[_]): Self = StObject.set(x, "unselectedItems", value.asInstanceOf[js.Any])
+      def setUnselectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "unselectedItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUnselectedItemsUndefined: Self = StObject.set(x, "unselectedItems", js.undefined)
@@ -3373,40 +3345,39 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait UploadCompleteEventArgs extends StObject {
     
     /** AJAX event argument for reference
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** details about the error information
       */
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
     /** uploaded file list
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Upload model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** response from the server
       */
-    var responseText: js.UndefOr[String] = js.native
+    var responseText: js.UndefOr[String] = js.undefined
     
     /** successfully uploaded files list
       */
-    var success: js.UndefOr[js.Any] = js.native
+    var success: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** XHR-AJAX Object for reference
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object UploadCompleteEventArgs {
     
@@ -3469,24 +3440,23 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait UploadErrorEventArgs extends StObject {
     
     /** error event action details
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** details about the error information
       */
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
     /** returns the details of the uploaded files
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object UploadErrorEventArgs {
     
@@ -3525,38 +3495,37 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait UploadSettings extends StObject {
     
     /** Enables or disables the multiple files upload. When it is enabled, you can upload multiple files at a time and when disabled, you can upload only one file at a time.
       * @Default {true}
       */
-    var allowMultipleFile: js.UndefOr[Boolean] = js.native
+    var allowMultipleFile: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the auto upload option while uploading files in FileExplorer control.
       * @Default {false}
       */
-    var autoUpload: js.UndefOr[Boolean] = js.native
+    var autoUpload: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the actions for upload dialog during initialization.
       * @Default {{ modal:false, closeOnComplete:false, content:null, drag:true }}
       */
-    var dialogAction: js.UndefOr[js.Any] = js.native
+    var dialogAction: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the position at which the upload dialog is displayed using X and Y values. X: Sets the left position value for dialog. Y: Sets the top position value for dialog.
       * @Default {null}
       */
-    var dialogPosition: js.UndefOr[js.Any] = js.native
+    var dialogPosition: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the maximum file size allowed to upload. It accepts the value in bytes.
       * @Default {31457280}
       */
-    var maxFileSize: js.UndefOr[Double] = js.native
+    var maxFileSize: js.UndefOr[Double] = js.undefined
     
     /** Specifies the file details which are to be displayed when selected for upload by setting the showFileDetails to true.
       * @Default {true}
       */
-    var showFileDetails: js.UndefOr[Boolean] = js.native
+    var showFileDetails: js.UndefOr[Boolean] = js.undefined
   }
   object UploadSettings {
     
@@ -3607,32 +3576,31 @@ object FileExplorer {
     }
   }
   
-  @js.native
   trait UploadSuccessEventArgs extends StObject {
     
     /** AJAX event argument for reference
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** uploaded file list
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Upload model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** response from the server
       */
-    var responseText: js.UndefOr[String] = js.native
+    var responseText: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** XHR-AJAX Object for reference
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object UploadSuccessEventArgs {
     

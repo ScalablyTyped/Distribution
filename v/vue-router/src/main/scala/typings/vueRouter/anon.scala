@@ -7,19 +7,19 @@ import typings.vueRouter.routerMod.Route
 import typings.vueRouter.routerMod._PositionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Behavior extends _PositionResult {
+  trait Behavior
+    extends StObject
+       with _PositionResult {
     
-    var behavior: js.UndefOr[ScrollBehavior] = js.native
+    var behavior: js.UndefOr[ScrollBehavior] = js.undefined
     
-    var offset: js.UndefOr[Position] = js.native
+    var offset: js.UndefOr[Position] = js.undefined
     
-    var selector: String = js.native
+    var selector: String
   }
   object Behavior {
     
@@ -49,19 +49,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Href extends StObject {
     
-    var href: String = js.native
+    var href: String
     
-    var location: Location = js.native
+    var location: Location
     
     // backwards compat
-    var normalizedTo: Location = js.native
+    var normalizedTo: Location
     
-    var resolved: Route = js.native
+    var resolved: Route
     
-    var route: Route = js.native
+    var route: Route
   }
   object Href {
     

@@ -2,33 +2,31 @@ package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows for direction finding, geocoding, elevation sampling and the creation of static map
   * images.
   */
-@js.native
 trait Maps extends StObject {
   
-  var DirectionFinder: DirectionFinderEnums = js.native
+  var DirectionFinder: DirectionFinderEnums
   
-  var StaticMap: StaticMapEnums = js.native
+  var StaticMap: StaticMapEnums
   
-  def decodePolyline(polyline: String): js.Array[Double] = js.native
+  def decodePolyline(polyline: String): js.Array[Double]
   
-  def encodePolyline(points: js.Array[Double]): String = js.native
+  def encodePolyline(points: js.Array[Double]): String
   
-  def newDirectionFinder(): DirectionFinder = js.native
+  def newDirectionFinder(): DirectionFinder
   
-  def newElevationSampler(): ElevationSampler = js.native
+  def newElevationSampler(): ElevationSampler
   
-  def newGeocoder(): Geocoder = js.native
+  def newGeocoder(): Geocoder
   
-  def newStaticMap(): StaticMap = js.native
+  def newStaticMap(): StaticMap
   
-  def setAuthentication(clientId: String, signingKey: String): Unit = js.native
+  def setAuthentication(clientId: String, signingKey: String): Unit
 }
 object Maps {
   

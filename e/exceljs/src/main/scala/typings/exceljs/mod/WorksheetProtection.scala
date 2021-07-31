@@ -2,41 +2,39 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorksheetProtection extends StObject {
   
-  var autoFilter: Boolean = js.native
+  var autoFilter: Boolean
   
-  var deleteColumns: Boolean = js.native
+  var deleteColumns: Boolean
   
-  var deleteRows: Boolean = js.native
+  var deleteRows: Boolean
   
-  var formatCells: Boolean = js.native
+  var formatCells: Boolean
   
-  var formatColumns: Boolean = js.native
+  var formatColumns: Boolean
   
-  var formatRows: Boolean = js.native
+  var formatRows: Boolean
   
-  var insertColumns: Boolean = js.native
+  var insertColumns: Boolean
   
-  var insertHyperlinks: Boolean = js.native
+  var insertHyperlinks: Boolean
   
-  var insertRows: Boolean = js.native
+  var insertRows: Boolean
   
-  var objects: Boolean = js.native
+  var objects: Boolean
   
-  var pivotTables: Boolean = js.native
+  var pivotTables: Boolean
   
-  var scenarios: Boolean = js.native
+  var scenarios: Boolean
   
-  var selectLockedCells: Boolean = js.native
+  var selectLockedCells: Boolean
   
-  var selectUnlockedCells: Boolean = js.native
+  var selectUnlockedCells: Boolean
   
-  var sort: Boolean = js.native
+  var sort: Boolean
 }
 object WorksheetProtection {
   

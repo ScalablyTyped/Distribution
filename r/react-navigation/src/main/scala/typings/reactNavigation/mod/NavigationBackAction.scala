@@ -3,23 +3,22 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashBACK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationBackAction
-  extends NavigationStackAction
+  extends StObject
      with NavigationBackActionPayload
+     with NavigationStackAction
      with NavigationTabAction {
   
-  var `type`: NavigationSlashBACK = js.native
+  var `type`: NavigationSlashBACK
 }
 object NavigationBackAction {
   
   @scala.inline
-  def apply(`type`: NavigationSlashBACK): NavigationBackAction = {
+  def apply(): NavigationBackAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/BACK")
     __obj.asInstanceOf[NavigationBackAction]
   }
   

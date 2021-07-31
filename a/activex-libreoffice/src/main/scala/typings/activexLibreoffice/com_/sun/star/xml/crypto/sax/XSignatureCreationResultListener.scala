@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xml.crypto.SecurityOperationStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to receive the result information of a signature creation.
   */
-@js.native
-trait XSignatureCreationResultListener extends XInterface {
+trait XSignatureCreationResultListener
+  extends StObject
+     with XInterface {
   
   /**
     * Notifies the signature creation result.
     * @param securityId the security id of the signature
     * @param creationResult the result information
     */
-  def signatureCreated(securityId: Double, creationResult: SecurityOperationStatus): Unit = js.native
+  def signatureCreated(securityId: Double, creationResult: SecurityOperationStatus): Unit
 }
 object XSignatureCreationResultListener {
   

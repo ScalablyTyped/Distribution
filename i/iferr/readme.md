@@ -11,8 +11,8 @@ Higher-order functions for easier error handling
 | Full name          | iferr |
 | Keywords           | error, errors |
 | # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 381160123 |
+| # dependents       | 92 |
+| # downloads        | 469460372 |
 | # stars            | 1 |
 
 ## Links

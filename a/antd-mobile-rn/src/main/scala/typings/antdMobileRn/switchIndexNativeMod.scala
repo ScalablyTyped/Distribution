@@ -6,19 +6,22 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object switchIndexNativeMod {
   
-  @JSImport("antd-mobile-rn/lib/switch/index.native", JSImport.Default)
+  @JSImport("antd-mobile-rn/lib/switch/index.native", JSImport.Namespace)
   @js.native
-  def default(props: AntmSwitchProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait AntmSwitchProps extends SwitchPropsType {
+  @scala.inline
+  def default(props: AntmSwitchProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  trait AntmSwitchProps
+    extends StObject
+       with SwitchPropsType {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object AntmSwitchProps {
     

@@ -5,7 +5,6 @@ import typings.pThrottle.anon.Abort
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,13 +26,12 @@ object mod {
   	}
   	```
   	*/
-  @JSImport("p-throttle", JSImport.Namespace)
-  @js.native
-  def apply[Arguments /* <: js.Array[_] */, Return](
+  @scala.inline
+  def apply[Arguments /* <: js.Array[js.Any] */, Return](
     fn: js.Function1[/* arguments */ Arguments, js.Thenable[Return] | Return],
     limit: Double,
     interval: Double
-  ): ThrottledFunction[Arguments, Return] = js.native
+  ): ThrottledFunction[Arguments, Return] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[ThrottledFunction[Arguments, Return]]
   
   @JSImport("p-throttle", JSImport.Namespace)
   @js.native
@@ -55,7 +53,19 @@ object mod {
   /**
   	Abort pending execution. All unresolved promised are rejected with a `AbortError` error.
   	*/
-  class AbortErrorCls () extends AbortErrorClass
+  class AbortErrorCls ()
+    extends StObject
+       with AbortErrorClass {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    override val name_AbortErrorClass: typings.pThrottle.pThrottleStrings.AbortError = js.native
+  }
   
   @scala.inline
   def AbortError_=(x: Instantiable0[AbortErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AbortError")(x.asInstanceOf[js.Any])
@@ -63,17 +73,18 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pThrottle */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait AbortErrorClass extends Error {
+  trait AbortErrorClass
+    extends StObject
+       with Error {
     
     @JSName("name")
-    val name_AbortErrorClass: typings.pThrottle.pThrottleStrings.AbortError = js.native
+    val name_AbortErrorClass: typings.pThrottle.pThrottleStrings.AbortError
   }
   object AbortErrorClass {
     
     @scala.inline
-    def apply(message: String, name: typings.pThrottle.pThrottleStrings.AbortError): AbortErrorClass = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(message: String): AbortErrorClass = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "AbortError")
       __obj.asInstanceOf[AbortErrorClass]
     }
     
@@ -85,5 +96,5 @@ object mod {
     }
   }
   
-  type ThrottledFunction[Arguments /* <: js.Array[_] */, Return] = (js.Function1[/* arguments */ Arguments, js.Promise[Return]]) with Abort
+  type ThrottledFunction[Arguments /* <: js.Array[js.Any] */, Return] = (js.Function1[/* arguments */ Arguments, js.Promise[Return]]) & Abort
 }

@@ -2,10 +2,8 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListMessagesResponse extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait SchemaListMessagesResponse extends StObject {
     * a threadId. Additional message details can be fetched using the
     * messages.get method.
     */
-  var messages: js.UndefOr[js.Array[SchemaMessage]] = js.native
+  var messages: js.UndefOr[js.Array[SchemaMessage]] = js.undefined
   
   /**
     * Token to retrieve the next page of results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Estimated total number of results.
     */
-  var resultSizeEstimate: js.UndefOr[Double] = js.native
+  var resultSizeEstimate: js.UndefOr[Double] = js.undefined
 }
 object SchemaListMessagesResponse {
   

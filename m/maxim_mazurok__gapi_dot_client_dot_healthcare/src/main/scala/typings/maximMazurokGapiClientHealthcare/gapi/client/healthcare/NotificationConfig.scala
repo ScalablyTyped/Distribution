@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationConfig extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait NotificationConfig extends StObject {
     * be published to Cloud Pub/Sub, errors are logged to Cloud Logging (see [Viewing logs](/healthcare/docs/how-tos/logging)). If the number of errors exceeds a certain rate, some aren't
     * submitted. Note that not all operations trigger notifications, see [Configuring Pub/Sub notifications](https://cloud.google.com/healthcare/docs/how-tos/pubsub) for specific details.
     */
-  var pubsubTopic: js.UndefOr[String] = js.native
+  var pubsubTopic: js.UndefOr[String] = js.undefined
 }
 object NotificationConfig {
   

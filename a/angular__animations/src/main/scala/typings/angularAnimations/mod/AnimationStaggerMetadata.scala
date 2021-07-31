@@ -2,21 +2,21 @@ package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationStaggerMetadata extends AnimationMetadata {
+trait AnimationStaggerMetadata
+  extends StObject
+     with AnimationMetadata {
   
   /**
     * One or more animation steps.
     */
-  var animation: AnimationMetadata | js.Array[AnimationMetadata] = js.native
+  var animation: AnimationMetadata | js.Array[AnimationMetadata]
   
   /**
     * The timing data for the steps.
     */
-  var timings: String | Double = js.native
+  var timings: String | Double
 }
 object AnimationStaggerMetadata {
   

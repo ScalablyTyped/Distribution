@@ -2,28 +2,28 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlLineString extends KmlExtrudableGeometry {
+trait KmlLineString
+  extends StObject
+     with KmlExtrudableGeometry {
   
   /**
     * Returns the altitudeOffset, or 0 if not set.
     */
-  def getAltitudeOffset(): Double = js.native
+  def getAltitudeOffset(): Double
   
   /**
     * Two or more coordinate tuples, each consisting of floating point values for longitude, latitude, and altitude.
     * The altitude component is optional.
     */
-  def getCoordinates(): KmlCoordArray = js.native
+  def getCoordinates(): KmlCoordArray
   
   /**
     * Added to the altitude values for all points on the line string.
     * Adjusts the altitude of the feature as a whole, without the need to update each coordinate set.
     */
-  def setAltitudeOffset(altitudeOffset: Double): Unit = js.native
+  def setAltitudeOffset(altitudeOffset: Double): Unit
 }
 object KmlLineString {
   

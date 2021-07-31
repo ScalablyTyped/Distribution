@@ -2,13 +2,11 @@ package typings.uirouterCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultValue extends StObject {
   
-  var defaultValue: js.Any = js.native
+  var defaultValue: js.Any
 }
 object DefaultValue {
   

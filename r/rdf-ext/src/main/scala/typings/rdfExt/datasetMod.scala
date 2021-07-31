@@ -7,13 +7,14 @@ import typings.rdfJs.mod.Quad
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datasetMod {
   
   @js.native
-  trait DatasetExt extends DatasetIndexed[QuadExt, Quad] {
+  trait DatasetExt
+    extends StObject
+       with DatasetIndexed[QuadExt, Quad] {
     
     def equals(other: this.type): Boolean = js.native
     

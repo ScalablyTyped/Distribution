@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateThemePermissionsRequest extends StObject {
   
   /**
     * The ID of the AWS account that contains the theme.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * A list of resource permissions to be granted for the theme.
     */
-  var GrantPermissions: js.UndefOr[UpdateResourcePermissionList] = js.native
+  var GrantPermissions: js.UndefOr[UpdateResourcePermissionList] = js.undefined
   
   /**
     * A list of resource permissions to be revoked from the theme.
     */
-  var RevokePermissions: js.UndefOr[UpdateResourcePermissionList] = js.native
+  var RevokePermissions: js.UndefOr[UpdateResourcePermissionList] = js.undefined
   
   /**
     * The ID for the theme.
     */
-  var ThemeId: RestrictiveResourceId = js.native
+  var ThemeId: RestrictiveResourceId
 }
 object UpdateThemePermissionsRequest {
   

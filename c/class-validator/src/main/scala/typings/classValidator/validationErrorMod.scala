@@ -3,7 +3,6 @@ package typings.classValidator
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationErrorMod {
@@ -36,17 +35,13 @@ object validationErrorMod {
       */
     var target: js.UndefOr[js.Object] = js.native
     
-    def toString(
-      shouldDecorate: js.UndefOr[scala.Nothing],
-      hasParent: js.UndefOr[scala.Nothing],
-      parentPath: String
-    ): String = js.native
-    def toString(shouldDecorate: js.UndefOr[scala.Nothing], hasParent: Boolean): String = js.native
-    def toString(shouldDecorate: js.UndefOr[scala.Nothing], hasParent: Boolean, parentPath: String): String = js.native
     def toString(shouldDecorate: Boolean): String = js.native
-    def toString(shouldDecorate: Boolean, hasParent: js.UndefOr[scala.Nothing], parentPath: String): String = js.native
     def toString(shouldDecorate: Boolean, hasParent: Boolean): String = js.native
     def toString(shouldDecorate: Boolean, hasParent: Boolean, parentPath: String): String = js.native
+    def toString(shouldDecorate: Boolean, hasParent: Unit, parentPath: String): String = js.native
+    def toString(shouldDecorate: Unit, hasParent: Boolean): String = js.native
+    def toString(shouldDecorate: Unit, hasParent: Boolean, parentPath: String): String = js.native
+    def toString(shouldDecorate: Unit, hasParent: Unit, parentPath: String): String = js.native
     
     /**
       * Value that haven't pass a validation.

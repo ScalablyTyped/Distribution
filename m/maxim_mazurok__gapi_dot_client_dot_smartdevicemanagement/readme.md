@@ -10,9 +10,9 @@ TypeScript typings for Smart Device Management API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.smartdevicemanagement |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 43 |
+| # downloads        | 1012 |
 | # stars            | 0 |
 
 ## Links

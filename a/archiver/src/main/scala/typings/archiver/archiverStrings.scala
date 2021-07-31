@@ -3,7 +3,6 @@ package typings.archiver
 import typings.archiver.mod.Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object archiverStrings {
@@ -54,7 +53,9 @@ object archiverStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait tar extends Format
+  sealed trait tar
+    extends StObject
+       with Format
   @scala.inline
   def tar: tar = "tar".asInstanceOf[tar]
   
@@ -69,7 +70,9 @@ object archiverStrings {
   def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait zip extends Format
+  sealed trait zip
+    extends StObject
+       with Format
   @scala.inline
   def zip: zip = "zip".asInstanceOf[zip]
 }

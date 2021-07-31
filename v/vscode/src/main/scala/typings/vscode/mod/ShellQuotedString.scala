@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShellQuotedString extends StObject {
   
   /**
     * The quoting style to use.
     */
-  var quoting: ShellQuoting = js.native
+  var quoting: ShellQuoting
   
   /**
     * The actual string value.
     */
-  var value: String = js.native
+  var value: String
 }
 object ShellQuotedString {
   

@@ -2,34 +2,32 @@ package typings.xregexp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A match to a defined value name during a recursive match.
   */
-@js.native
 trait MatchRecursiveValueNameMatch extends StObject {
   
   /**
     * The end index of the string portion.
     */
-  var end: Double = js.native
+  var end: Double
   
   /**
     * The value name as specified in the `XRegExp.MatchRecursiveOptions`
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The start index of the string portion.
     */
-  var start: Double = js.native
+  var start: Double
   
   /**
     * The portion of the string that corresponds to the value name,
     */
-  var value: String = js.native
+  var value: String
 }
 object MatchRecursiveValueNameMatch {
   

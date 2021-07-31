@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsJobExecutionsRolloutConfig extends StObject {
   
   /**
     * The rate of increase for a job rollout. This parameter allows you to define an exponential rate increase for a job rollout.
     */
-  var exponentialRate: js.UndefOr[AwsJobExponentialRolloutRate] = js.native
+  var exponentialRate: js.UndefOr[AwsJobExponentialRolloutRate] = js.undefined
   
   /**
     * The maximum number of OTA update job executions started per minute.
     */
-  var maximumPerMinute: js.UndefOr[MaximumPerMinute] = js.native
+  var maximumPerMinute: js.UndefOr[MaximumPerMinute] = js.undefined
 }
 object AwsJobExecutionsRolloutConfig {
   

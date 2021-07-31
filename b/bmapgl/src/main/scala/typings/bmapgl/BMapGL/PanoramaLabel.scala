@@ -3,41 +3,39 @@ package typings.bmapgl.BMapGL
 import typings.bmapgl.anon.Target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanoramaLabel extends StObject {
   
-  def addEventListener(event: String, handler: Callback): Unit = js.native
+  def addEventListener(event: String, handler: Callback): Unit
   
-  def getAltitude(): Double = js.native
+  def getAltitude(): Double
   
-  def getContent(): String = js.native
+  def getContent(): String
   
-  def getPosition(): Point = js.native
+  def getPosition(): Point
   
-  def getPov(): PanoramaPov = js.native
+  def getPov(): PanoramaPov
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def onclick(event: Target): Unit = js.native
+  def onclick(event: Target): Unit
   
-  def onmouseout(event: Target): Unit = js.native
+  def onmouseout(event: Target): Unit
   
-  def onmouseover(event: Target): Unit = js.native
+  def onmouseover(event: Target): Unit
   
-  def onremove(event: Target): Unit = js.native
+  def onremove(event: Target): Unit
   
-  def removeEventListener(event: String, handler: Callback): Unit = js.native
+  def removeEventListener(event: String, handler: Callback): Unit
   
-  def setAltitude(altitude: Double): Unit = js.native
+  def setAltitude(altitude: Double): Unit
   
-  def setContent(content: String): Unit = js.native
+  def setContent(content: String): Unit
   
-  def setPosition(position: Point): Unit = js.native
+  def setPosition(position: Point): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object PanoramaLabel {
   

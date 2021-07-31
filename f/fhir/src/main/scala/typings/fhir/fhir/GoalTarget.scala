@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Target outcome for the goal
   */
-@js.native
-trait GoalTarget extends BackboneElement {
+trait GoalTarget
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'dueDate'.
     */
-  var _dueDate: js.UndefOr[Element] = js.native
+  var _dueDate: js.UndefOr[Element] = js.undefined
   
   /**
     * The target value to be achieved
     */
-  var detailCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var detailCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * The target value to be achieved
     */
-  var detailQuantity: js.UndefOr[Quantity] = js.native
+  var detailQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * The target value to be achieved
     */
-  var detailRange: js.UndefOr[Range] = js.native
+  var detailRange: js.UndefOr[Range] = js.undefined
   
   /**
     * Reach goal on or before
     */
-  var dueDate: js.UndefOr[date] = js.native
+  var dueDate: js.UndefOr[date] = js.undefined
   
   /**
     * Reach goal on or before
     */
-  var dueDuration: js.UndefOr[Duration] = js.native
+  var dueDuration: js.UndefOr[Duration] = js.undefined
   
   /**
     * The parameter whose value is being tracked
     */
-  var measure: js.UndefOr[CodeableConcept] = js.native
+  var measure: js.UndefOr[CodeableConcept] = js.undefined
 }
 object GoalTarget {
   

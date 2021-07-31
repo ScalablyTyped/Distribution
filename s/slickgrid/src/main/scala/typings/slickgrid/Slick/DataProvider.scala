@@ -2,28 +2,26 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataProvider[T /* <: SlickData */] extends StObject {
   
   /**
     * Returns the item at a given index.
     * @param index
     */
-  def getItem(index: Double): T = js.native
+  def getItem(index: Double): T
   
   /**
     * Returns the metadata for the item at a given index (optional).
     * @param index
     */
-  var getItemMetadata: js.UndefOr[js.Function1[/* index */ Double, RowMetadata[T]]] = js.native
+  var getItemMetadata: js.UndefOr[js.Function1[/* index */ Double, RowMetadata[T]]] = js.undefined
   
   /**
     * Returns the number of data items in the set.
     */
-  def getLength(): Double = js.native
+  def getLength(): Double
 }
 object DataProvider {
   
@@ -34,7 +32,7 @@ object DataProvider {
   }
   
   @scala.inline
-  implicit class DataProviderMutableBuilder[Self <: DataProvider[_], T /* <: SlickData */] (val x: Self with DataProvider[T]) extends AnyVal {
+  implicit class DataProviderMutableBuilder[Self <: DataProvider[?], T /* <: SlickData */] (val x: Self & DataProvider[T]) extends AnyVal {
     
     @scala.inline
     def setGetItem(value: Double => T): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))

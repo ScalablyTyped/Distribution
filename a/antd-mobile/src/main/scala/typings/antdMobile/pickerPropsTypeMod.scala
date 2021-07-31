@@ -5,19 +5,17 @@ import typings.rmcCascader.cascaderTypesMod.CascaderValue
 import typings.rmcPicker.popupPickerTypesMod.IPopupPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerPropsTypeMod {
   
-  @js.native
   trait PickerData extends StObject {
     
-    var children: js.UndefOr[js.Array[PickerData]] = js.native
+    var children: js.UndefOr[js.Array[PickerData]] = js.undefined
     
-    var label: ReactNode = js.native
+    var label: ReactNode
     
-    var value: String | Double = js.native
+    var value: String | Double
   }
   object PickerData {
     
@@ -50,29 +48,30 @@ object pickerPropsTypeMod {
     }
   }
   
-  @js.native
-  trait PickerPropsType extends IPopupPickerProps {
+  trait PickerPropsType
+    extends StObject
+       with IPopupPickerProps {
     
-    var cascade: js.UndefOr[Boolean] = js.native
+    var cascade: js.UndefOr[Boolean] = js.undefined
     
-    var cols: js.UndefOr[Double] = js.native
+    var cols: js.UndefOr[Double] = js.undefined
     
-    var data: js.Array[js.Array[PickerData] | PickerData] = js.native
+    var data: js.Array[js.Array[PickerData] | PickerData]
     
-    var extra: js.UndefOr[String] = js.native
+    var extra: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[js.Function1[/* values */ js.Array[ReactNode], String | js.Array[ReactNode]]] = js.native
+    var format: js.UndefOr[js.Function1[/* values */ js.Array[ReactNode], String | js.Array[ReactNode]]] = js.undefined
     
-    var indicatorStyle: js.UndefOr[js.Any] = js.native
+    var indicatorStyle: js.UndefOr[js.Any] = js.undefined
     
-    var itemStyle: js.UndefOr[js.Any] = js.native
+    var itemStyle: js.UndefOr[js.Any] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[CascaderValue], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[CascaderValue], Unit]] = js.undefined
     
-    var onPickerChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.native
+    var onPickerChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.undefined
     
     @JSName("value")
-    var value_PickerPropsType: js.UndefOr[js.Array[String | Double]] = js.native
+    var value_PickerPropsType: js.UndefOr[js.Array[String | Double]] = js.undefined
   }
   object PickerPropsType {
     

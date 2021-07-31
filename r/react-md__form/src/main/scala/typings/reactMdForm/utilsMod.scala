@@ -5,36 +5,34 @@ import typings.react.mod.ReactNode
 import typings.reactMdList.getListItemHeightMod.SimpleListItemProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("@react-md/form/types/select/utils", "defaultIsOptionDisabled")
+  @JSImport("@react-md/form/types/select/utils", JSImport.Namespace)
   @js.native
-  def defaultIsOptionDisabled(option: ListboxOption): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-md/form/types/select/utils", "getDisplayLabel")
-  @js.native
-  def getDisplayLabel(option: ListboxOption, labelKey: String, includeLeft: Boolean): ReactNode = js.native
+  @scala.inline
+  def defaultIsOptionDisabled(option: ListboxOption): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIsOptionDisabled")(option.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@react-md/form/types/select/utils", "getOptionId")
-  @js.native
-  def getOptionId(baseId: String, index: Double): String = js.native
+  @scala.inline
+  def getDisplayLabel(option: ListboxOption, labelKey: String, includeLeft: Boolean): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayLabel")(option.asInstanceOf[js.Any], labelKey.asInstanceOf[js.Any], includeLeft.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @JSImport("@react-md/form/types/select/utils", "getOptionLabel")
-  @js.native
-  def getOptionLabel(option: ListboxOption, labelKey: String): ReactNode = js.native
+  @scala.inline
+  def getOptionId(baseId: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionId")(baseId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@react-md/form/types/select/utils", "isListboxOptionProps")
-  @js.native
-  def isListboxOptionProps(option: ListboxOption): /* is @react-md/form.@react-md/form/types/select/utils.ListboxOptionProps */ Boolean = js.native
+  @scala.inline
+  def getOptionLabel(option: ListboxOption, labelKey: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionLabel")(option.asInstanceOf[js.Any], labelKey.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def isListboxOptionProps(option: ListboxOption): /* is @react-md/form.@react-md/form/types/select/utils.ListboxOptionProps */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isListboxOptionProps")(option.asInstanceOf[js.Any]).asInstanceOf[/* is @react-md/form.@react-md/form/types/select/utils.ListboxOptionProps */ Boolean]
   
   type ListboxOption = ListboxOptionProps | String | Double | Null
   
-  @js.native
   trait ListboxOptionProps
-    extends SimpleListItemProps
+    extends StObject
+       with SimpleListItemProps
        with /* labelKey */ StringDictionary[ReactNode]
   object ListboxOptionProps {
     

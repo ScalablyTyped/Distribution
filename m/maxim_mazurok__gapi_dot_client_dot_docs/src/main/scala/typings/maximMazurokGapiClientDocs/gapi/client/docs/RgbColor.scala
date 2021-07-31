@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RgbColor extends StObject {
   
   /** The blue component of the color, from 0.0 to 1.0. */
-  var blue: js.UndefOr[Double] = js.native
+  var blue: js.UndefOr[Double] = js.undefined
   
   /** The green component of the color, from 0.0 to 1.0. */
-  var green: js.UndefOr[Double] = js.native
+  var green: js.UndefOr[Double] = js.undefined
   
   /** The red component of the color, from 0.0 to 1.0. */
-  var red: js.UndefOr[Double] = js.native
+  var red: js.UndefOr[Double] = js.undefined
 }
 object RgbColor {
   

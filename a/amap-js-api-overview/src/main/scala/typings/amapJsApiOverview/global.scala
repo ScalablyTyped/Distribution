@@ -4,7 +4,6 @@ import typings.amapJsApi.AMap.TileLayer
 import typings.amapJsApiOverview.AMap.OverView.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,7 +16,8 @@ object global {
     @JSGlobal("AMap.OverView")
     @js.native
     class OverView[L /* <: TileLayer */] ()
-      extends typings.amapJsApiOverview.AMap.OverView[L] {
+      extends StObject
+         with typings.amapJsApiOverview.AMap.OverView[L] {
       def this(options: Options[L]) = this()
     }
   }

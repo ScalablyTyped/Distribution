@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverProtocol.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeNotifications extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait ChangeNotifications extends StObject {
     * side. The ID can be used to unregister for these events
     * using the `client/unregisterCapability` request.
     */
-  var changeNotifications: js.UndefOr[String | Boolean] = js.native
+  var changeNotifications: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * The Server has support for workspace folders
     */
-  var supported: js.UndefOr[Boolean] = js.native
+  var supported: js.UndefOr[Boolean] = js.undefined
 }
 object ChangeNotifications {
   

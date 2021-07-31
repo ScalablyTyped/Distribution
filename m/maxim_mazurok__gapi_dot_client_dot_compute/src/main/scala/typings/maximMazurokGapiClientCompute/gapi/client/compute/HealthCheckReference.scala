@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HealthCheckReference extends StObject {
   
-  var healthCheck: js.UndefOr[String] = js.native
+  var healthCheck: js.UndefOr[String] = js.undefined
 }
 object HealthCheckReference {
   

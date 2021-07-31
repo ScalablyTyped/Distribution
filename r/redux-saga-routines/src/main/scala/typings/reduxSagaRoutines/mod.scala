@@ -16,154 +16,91 @@ import typings.reduxForm.reduxFormMod.FormSubmitHandler
 import typings.reduxSagaRoutines.anon.FAILURE_
 import typings.reduxSagaRoutines.anon.FULFILL
 import typings.reduxSagaRoutines.anon.Failure
+import typings.reduxSagaRoutines.anon.RoutineActionCreatorFunct
 import typings.reduxSagaRoutines.anon.keyinRoutineStagesstring
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("redux-saga-routines", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("redux-saga-routines", "ROUTINE_PROMISE_ACTION")
   @js.native
   val ROUTINE_PROMISE_ACTION: String = js.native
   
-  @JSImport("redux-saga-routines", "bindPromiseCreators")
-  @js.native
-  def bindPromiseCreators(promiseCreators: NumberDictionary[PromiseCreator[js.Object]], dispatch: Dispatch[AnyAction]): NumberDictionary[BoundPromiseCreator[js.Object]] = js.native
-  @JSImport("redux-saga-routines", "bindPromiseCreators")
-  @js.native
-  def bindPromiseCreators(promiseCreators: StringDictionary[PromiseCreator[js.Object]], dispatch: Dispatch[AnyAction]): StringDictionary[BoundPromiseCreator[js.Object]] = js.native
-  @JSImport("redux-saga-routines", "bindPromiseCreators")
-  @js.native
-  def bindPromiseCreators[TPayload](promiseCreator: PromiseCreator[TPayload], dispatch: Dispatch[AnyAction]): BoundPromiseCreator[TPayload] = js.native
+  @scala.inline
+  def bindPromiseCreators(promiseCreators: NumberDictionary[PromiseCreator[js.Object]], dispatch: Dispatch[AnyAction]): NumberDictionary[BoundPromiseCreator[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindPromiseCreators")(promiseCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[NumberDictionary[BoundPromiseCreator[js.Object]]]
+  @scala.inline
+  def bindPromiseCreators(promiseCreators: StringDictionary[PromiseCreator[js.Object]], dispatch: Dispatch[AnyAction]): StringDictionary[BoundPromiseCreator[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindPromiseCreators")(promiseCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[BoundPromiseCreator[js.Object]]]
+  @scala.inline
+  def bindPromiseCreators[TPayload](promiseCreator: PromiseCreator[TPayload], dispatch: Dispatch[AnyAction]): BoundPromiseCreator[TPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindPromiseCreators")(promiseCreator.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[BoundPromiseCreator[TPayload]]
   
-  @JSImport("redux-saga-routines", "bindRoutineToReduxForm")
-  @js.native
+  @scala.inline
   def bindRoutineToReduxForm[TFormData, TProps](
     routine: Routine[
       ActionFunction1[
         ReduxFormPayload[TFormData, TProps], 
-        (Action[ReduxFormPayload[TFormData, TProps]]) | (ActionMeta[ReduxFormPayload[TFormData, TProps], _])
+        (Action[ReduxFormPayload[TFormData, TProps]]) | (ActionMeta[ReduxFormPayload[TFormData, TProps], js.Any])
       ], 
-      ActionCreatorFunction[_, _], 
-      ActionCreatorFunction[_, _], 
-      ActionCreatorFunction[_, _], 
-      ActionCreatorFunction[_, _]
+      ActionCreatorFunction[js.Any, js.Any], 
+      ActionCreatorFunction[js.Any, js.Any], 
+      ActionCreatorFunction[js.Any, js.Any], 
+      ActionCreatorFunction[js.Any, js.Any]
     ]
-  ): FormSubmitHandler[TFormData, TProps, String] = js.native
-  @JSImport("redux-saga-routines", "bindRoutineToReduxForm")
-  @js.native
+  ): FormSubmitHandler[TFormData, TProps, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindRoutineToReduxForm")(routine.asInstanceOf[js.Any]).asInstanceOf[FormSubmitHandler[TFormData, TProps, String]]
+  @scala.inline
   def bindRoutineToReduxForm[TFormData, TProps](
     routine: Routine[
       ActionFunction1[
         ReduxFormPayload[TFormData, TProps], 
-        (Action[ReduxFormPayload[TFormData, TProps]]) | (ActionMeta[ReduxFormPayload[TFormData, TProps], _])
+        (Action[ReduxFormPayload[TFormData, TProps]]) | (ActionMeta[ReduxFormPayload[TFormData, TProps], js.Any])
       ], 
-      ActionCreatorFunction[_, _], 
-      ActionCreatorFunction[_, _], 
-      ActionCreatorFunction[_, _], 
-      ActionCreatorFunction[_, _]
+      ActionCreatorFunction[js.Any, js.Any], 
+      ActionCreatorFunction[js.Any, js.Any], 
+      ActionCreatorFunction[js.Any, js.Any], 
+      ActionCreatorFunction[js.Any, js.Any]
     ],
     noSuccessPayload: Boolean
-  ): FormSubmitHandler[TFormData, TProps, String] = js.native
+  ): FormSubmitHandler[TFormData, TProps, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindRoutineToReduxForm")(routine.asInstanceOf[js.Any], noSuccessPayload.asInstanceOf[js.Any])).asInstanceOf[FormSubmitHandler[TFormData, TProps, String]]
   
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
-  def createRoutine[Payload](typePrefix: String): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Payload], Action[js.UndefOr[Payload]]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
-  def createRoutine[Meta](
-    typePrefix: String,
-    payloadCreator: js.UndefOr[scala.Nothing],
-    metaCreator: ActionFunctionAny[Meta]
-  ): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[_], ActionMeta[_, Meta]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
-  def createRoutine[Meta](typePrefix: String, payloadCreator: Null, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[_], ActionMeta[_, Meta]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
-  def createRoutine[Payload](typePrefix: String, payloadCreator: ActionFunction0[Payload]): UnifiedRoutine[ActionFunction0[Action[Payload]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
-  def createRoutine[Payload, Arg1](typePrefix: String, payloadCreator: ActionFunction1[Arg1, Payload]): UnifiedRoutine[ActionFunction1[Arg1, Action[Payload]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
+  @scala.inline
+  def createRoutine[Payload](typePrefix: String): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Payload], Action[js.UndefOr[Payload]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any]).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Payload], Action[js.UndefOr[Payload]]]]]
+  @scala.inline
+  def createRoutine[Meta](typePrefix: String, payloadCreator: Null, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]]]
+  @scala.inline
+  def createRoutine[Meta](typePrefix: String, payloadCreator: Unit, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]]]
+  @scala.inline
+  def createRoutine[Payload](typePrefix: String, payloadCreator: ActionFunction0[Payload]): UnifiedRoutine[ActionFunction0[Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction0[Action[Payload]]]]
+  @scala.inline
+  def createRoutine[Payload, Arg1](typePrefix: String, payloadCreator: ActionFunction1[Arg1, Payload]): UnifiedRoutine[ActionFunction1[Arg1, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction1[Arg1, Action[Payload]]]]
+  @scala.inline
   def createRoutine[Payload, Meta](
     typePrefix: String,
     payloadCreator: ActionFunctionAny[Payload],
     metaCreator: ActionFunctionAny[Meta]
-  ): UnifiedRoutine[ActionFunctionAny[ActionMeta[Payload, Meta]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
-  def createRoutine[Payload, Arg1, Arg2](typePrefix: String, payloadCreator: ActionFunction2[Arg1, Arg2, Payload]): UnifiedRoutine[ActionFunction2[Arg1, Arg2, Action[Payload]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
+  ): UnifiedRoutine[ActionFunctionAny[ActionMeta[Payload, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunctionAny[ActionMeta[Payload, Meta]]]]
+  @scala.inline
+  def createRoutine[Payload, Meta, Arg1](
+    typePrefix: String,
+    payloadCreator: ActionFunction1[Arg1, Payload],
+    metaCreator: ActionFunction1[Arg1, Meta]
+  ): UnifiedRoutine[ActionFunction1[Arg1, ActionMeta[Payload, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction1[Arg1, ActionMeta[Payload, Meta]]]]
+  @scala.inline
+  def createRoutine[Payload, Arg1, Arg2](typePrefix: String, payloadCreator: ActionFunction2[Arg1, Arg2, Payload]): UnifiedRoutine[ActionFunction2[Arg1, Arg2, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction2[Arg1, Arg2, Action[Payload]]]]
+  @scala.inline
   def createRoutine[Payload, Meta, Arg1, Arg2](
     typePrefix: String,
     payloadCreator: ActionFunction2[Arg1, Arg2, Payload],
     metaCreator: ActionFunction2[Arg1, Arg2, Meta]
-  ): UnifiedRoutine[ActionFunction2[Arg1, Arg2, ActionMeta[Payload, Meta]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
-  def createRoutine[Payload, Arg1, Arg2, Arg3](typePrefix: String, payloadCreator: ActionFunction3[Arg1, Arg2, Arg3, Payload]): UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, Action[Payload]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
-  def createRoutine[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
-    typePrefix: String,
-    payloadCreator: js.UndefOr[scala.Nothing],
-    metaCreator: FULFILL[
-      TTriggerMetaCreator, 
-      TRequestMetaCreator, 
-      TSuccessMetaCreator, 
-      TFailureMetaCreator, 
-      TFulfillMetaCreator
-    ]
-  ): Routine[
-    ResolveActionCreatorByMeta[
-      TTriggerMetaCreator, 
-      ResolveFunctionReturnType[TTriggerMetaCreator], 
-      ResolveFunctionArg1Type[TTriggerMetaCreator], 
-      ResolveFunctionArg2Type[TTriggerMetaCreator], 
-      ResolveFunctionArg3Type[TTriggerMetaCreator], 
-      ResolveFunctionArg4Type[TTriggerMetaCreator]
-    ], 
-    ResolveActionCreatorByMeta[
-      TRequestMetaCreator, 
-      ResolveFunctionReturnType[TRequestMetaCreator], 
-      ResolveFunctionArg1Type[TRequestMetaCreator], 
-      ResolveFunctionArg2Type[TRequestMetaCreator], 
-      ResolveFunctionArg3Type[TRequestMetaCreator], 
-      ResolveFunctionArg4Type[TRequestMetaCreator]
-    ], 
-    ResolveActionCreatorByMeta[
-      TSuccessMetaCreator, 
-      ResolveFunctionReturnType[TSuccessMetaCreator], 
-      ResolveFunctionArg1Type[TSuccessMetaCreator], 
-      ResolveFunctionArg2Type[TSuccessMetaCreator], 
-      ResolveFunctionArg3Type[TSuccessMetaCreator], 
-      ResolveFunctionArg4Type[TSuccessMetaCreator]
-    ], 
-    ResolveActionCreatorByMeta[
-      TFailureMetaCreator, 
-      ResolveFunctionReturnType[TFailureMetaCreator], 
-      ResolveFunctionArg1Type[TFailureMetaCreator], 
-      ResolveFunctionArg2Type[TFailureMetaCreator], 
-      ResolveFunctionArg3Type[TFailureMetaCreator], 
-      ResolveFunctionArg4Type[TFailureMetaCreator]
-    ], 
-    ResolveActionCreatorByMeta[
-      TFulfillMetaCreator, 
-      ResolveFunctionReturnType[TFulfillMetaCreator], 
-      ResolveFunctionArg1Type[TFulfillMetaCreator], 
-      ResolveFunctionArg2Type[TFulfillMetaCreator], 
-      ResolveFunctionArg3Type[TFulfillMetaCreator], 
-      ResolveFunctionArg4Type[TFulfillMetaCreator]
-    ]
-  ] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
+  ): UnifiedRoutine[ActionFunction2[Arg1, Arg2, ActionMeta[Payload, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction2[Arg1, Arg2, ActionMeta[Payload, Meta]]]]
+  @scala.inline
+  def createRoutine[Payload, Arg1, Arg2, Arg3](typePrefix: String, payloadCreator: ActionFunction3[Arg1, Arg2, Arg3, Payload]): UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, Action[Payload]]]]
+  @scala.inline
   def createRoutine[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
     typePrefix: String,
     payloadCreator: Null,
@@ -215,19 +152,151 @@ object mod {
       ResolveFunctionArg3Type[TFulfillMetaCreator], 
       ResolveFunctionArg4Type[TFulfillMetaCreator]
     ]
-  ] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[Routine[
+    ResolveActionCreatorByMeta[
+      TTriggerMetaCreator, 
+      ResolveFunctionReturnType[TTriggerMetaCreator], 
+      ResolveFunctionArg1Type[TTriggerMetaCreator], 
+      ResolveFunctionArg2Type[TTriggerMetaCreator], 
+      ResolveFunctionArg3Type[TTriggerMetaCreator], 
+      ResolveFunctionArg4Type[TTriggerMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TRequestMetaCreator, 
+      ResolveFunctionReturnType[TRequestMetaCreator], 
+      ResolveFunctionArg1Type[TRequestMetaCreator], 
+      ResolveFunctionArg2Type[TRequestMetaCreator], 
+      ResolveFunctionArg3Type[TRequestMetaCreator], 
+      ResolveFunctionArg4Type[TRequestMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TSuccessMetaCreator, 
+      ResolveFunctionReturnType[TSuccessMetaCreator], 
+      ResolveFunctionArg1Type[TSuccessMetaCreator], 
+      ResolveFunctionArg2Type[TSuccessMetaCreator], 
+      ResolveFunctionArg3Type[TSuccessMetaCreator], 
+      ResolveFunctionArg4Type[TSuccessMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TFailureMetaCreator, 
+      ResolveFunctionReturnType[TFailureMetaCreator], 
+      ResolveFunctionArg1Type[TFailureMetaCreator], 
+      ResolveFunctionArg2Type[TFailureMetaCreator], 
+      ResolveFunctionArg3Type[TFailureMetaCreator], 
+      ResolveFunctionArg4Type[TFailureMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TFulfillMetaCreator, 
+      ResolveFunctionReturnType[TFulfillMetaCreator], 
+      ResolveFunctionArg1Type[TFulfillMetaCreator], 
+      ResolveFunctionArg2Type[TFulfillMetaCreator], 
+      ResolveFunctionArg3Type[TFulfillMetaCreator], 
+      ResolveFunctionArg4Type[TFulfillMetaCreator]
+    ]
+  ]]
+  @scala.inline
+  def createRoutine[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
+    typePrefix: String,
+    payloadCreator: Unit,
+    metaCreator: FULFILL[
+      TTriggerMetaCreator, 
+      TRequestMetaCreator, 
+      TSuccessMetaCreator, 
+      TFailureMetaCreator, 
+      TFulfillMetaCreator
+    ]
+  ): Routine[
+    ResolveActionCreatorByMeta[
+      TTriggerMetaCreator, 
+      ResolveFunctionReturnType[TTriggerMetaCreator], 
+      ResolveFunctionArg1Type[TTriggerMetaCreator], 
+      ResolveFunctionArg2Type[TTriggerMetaCreator], 
+      ResolveFunctionArg3Type[TTriggerMetaCreator], 
+      ResolveFunctionArg4Type[TTriggerMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TRequestMetaCreator, 
+      ResolveFunctionReturnType[TRequestMetaCreator], 
+      ResolveFunctionArg1Type[TRequestMetaCreator], 
+      ResolveFunctionArg2Type[TRequestMetaCreator], 
+      ResolveFunctionArg3Type[TRequestMetaCreator], 
+      ResolveFunctionArg4Type[TRequestMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TSuccessMetaCreator, 
+      ResolveFunctionReturnType[TSuccessMetaCreator], 
+      ResolveFunctionArg1Type[TSuccessMetaCreator], 
+      ResolveFunctionArg2Type[TSuccessMetaCreator], 
+      ResolveFunctionArg3Type[TSuccessMetaCreator], 
+      ResolveFunctionArg4Type[TSuccessMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TFailureMetaCreator, 
+      ResolveFunctionReturnType[TFailureMetaCreator], 
+      ResolveFunctionArg1Type[TFailureMetaCreator], 
+      ResolveFunctionArg2Type[TFailureMetaCreator], 
+      ResolveFunctionArg3Type[TFailureMetaCreator], 
+      ResolveFunctionArg4Type[TFailureMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TFulfillMetaCreator, 
+      ResolveFunctionReturnType[TFulfillMetaCreator], 
+      ResolveFunctionArg1Type[TFulfillMetaCreator], 
+      ResolveFunctionArg2Type[TFulfillMetaCreator], 
+      ResolveFunctionArg3Type[TFulfillMetaCreator], 
+      ResolveFunctionArg4Type[TFulfillMetaCreator]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[Routine[
+    ResolveActionCreatorByMeta[
+      TTriggerMetaCreator, 
+      ResolveFunctionReturnType[TTriggerMetaCreator], 
+      ResolveFunctionArg1Type[TTriggerMetaCreator], 
+      ResolveFunctionArg2Type[TTriggerMetaCreator], 
+      ResolveFunctionArg3Type[TTriggerMetaCreator], 
+      ResolveFunctionArg4Type[TTriggerMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TRequestMetaCreator, 
+      ResolveFunctionReturnType[TRequestMetaCreator], 
+      ResolveFunctionArg1Type[TRequestMetaCreator], 
+      ResolveFunctionArg2Type[TRequestMetaCreator], 
+      ResolveFunctionArg3Type[TRequestMetaCreator], 
+      ResolveFunctionArg4Type[TRequestMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TSuccessMetaCreator, 
+      ResolveFunctionReturnType[TSuccessMetaCreator], 
+      ResolveFunctionArg1Type[TSuccessMetaCreator], 
+      ResolveFunctionArg2Type[TSuccessMetaCreator], 
+      ResolveFunctionArg3Type[TSuccessMetaCreator], 
+      ResolveFunctionArg4Type[TSuccessMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TFailureMetaCreator, 
+      ResolveFunctionReturnType[TFailureMetaCreator], 
+      ResolveFunctionArg1Type[TFailureMetaCreator], 
+      ResolveFunctionArg2Type[TFailureMetaCreator], 
+      ResolveFunctionArg3Type[TFailureMetaCreator], 
+      ResolveFunctionArg4Type[TFailureMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TFulfillMetaCreator, 
+      ResolveFunctionReturnType[TFulfillMetaCreator], 
+      ResolveFunctionArg1Type[TFulfillMetaCreator], 
+      ResolveFunctionArg2Type[TFulfillMetaCreator], 
+      ResolveFunctionArg3Type[TFulfillMetaCreator], 
+      ResolveFunctionArg4Type[TFulfillMetaCreator]
+    ]
+  ]]
+  @scala.inline
   def createRoutine[Payload, Meta, Arg1, Arg2, Arg3](
     typePrefix: String,
     payloadCreator: ActionFunction3[Arg1, Arg2, Arg3, Payload],
     metaCreator: ActionFunction3[Arg1, Arg2, Arg3, Meta]
-  ): UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, ActionMeta[Payload, Meta]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
-  def createRoutine[Payload, Arg1, Arg2, Arg3, Arg4](typePrefix: String, payloadCreator: ActionFunction4[Arg1, Arg2, Arg3, Arg4, Payload]): UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, Action[Payload]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
+  ): UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, ActionMeta[Payload, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, ActionMeta[Payload, Meta]]]]
+  @scala.inline
+  def createRoutine[Payload, Arg1, Arg2, Arg3, Arg4](typePrefix: String, payloadCreator: ActionFunction4[Arg1, Arg2, Arg3, Arg4, Payload]): UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, Action[Payload]]]]
+  @scala.inline
   def createRoutine[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator](
     typePrefix: String,
     payloadCreator: FAILURE_[
@@ -278,16 +347,55 @@ object mod {
       ResolveFunctionArg3Type[TFulfillPayloadCreator], 
       ResolveFunctionArg4Type[TFulfillPayloadCreator]
     ]
-  ] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[Routine[
+    ResolveActionCreatorByPayload[
+      TTriggerPayloadCreator, 
+      ResolveFunctionReturnType[TTriggerPayloadCreator], 
+      ResolveFunctionArg1Type[TTriggerPayloadCreator], 
+      ResolveFunctionArg2Type[TTriggerPayloadCreator], 
+      ResolveFunctionArg3Type[TTriggerPayloadCreator], 
+      ResolveFunctionArg4Type[TTriggerPayloadCreator]
+    ], 
+    ResolveActionCreatorByPayload[
+      TRequestPayloadCreator, 
+      ResolveFunctionReturnType[TRequestPayloadCreator], 
+      ResolveFunctionArg1Type[TRequestPayloadCreator], 
+      ResolveFunctionArg2Type[TRequestPayloadCreator], 
+      ResolveFunctionArg3Type[TRequestPayloadCreator], 
+      ResolveFunctionArg4Type[TRequestPayloadCreator]
+    ], 
+    ResolveActionCreatorByPayload[
+      TSuccessPayloadCreator, 
+      ResolveFunctionReturnType[TSuccessPayloadCreator], 
+      ResolveFunctionArg1Type[TSuccessPayloadCreator], 
+      ResolveFunctionArg2Type[TSuccessPayloadCreator], 
+      ResolveFunctionArg3Type[TSuccessPayloadCreator], 
+      ResolveFunctionArg4Type[TSuccessPayloadCreator]
+    ], 
+    ResolveActionCreatorByPayload[
+      TFailurePayloadCreator, 
+      ResolveFunctionReturnType[TFailurePayloadCreator], 
+      ResolveFunctionArg1Type[TFailurePayloadCreator], 
+      ResolveFunctionArg2Type[TFailurePayloadCreator], 
+      ResolveFunctionArg3Type[TFailurePayloadCreator], 
+      ResolveFunctionArg4Type[TFailurePayloadCreator]
+    ], 
+    ResolveActionCreatorByPayload[
+      TFulfillPayloadCreator, 
+      ResolveFunctionReturnType[TFulfillPayloadCreator], 
+      ResolveFunctionArg1Type[TFulfillPayloadCreator], 
+      ResolveFunctionArg2Type[TFulfillPayloadCreator], 
+      ResolveFunctionArg3Type[TFulfillPayloadCreator], 
+      ResolveFunctionArg4Type[TFulfillPayloadCreator]
+    ]
+  ]]
+  @scala.inline
   def createRoutine[Payload, Meta, Arg1, Arg2, Arg3, Arg4](
     typePrefix: String,
     payloadCreator: ActionFunction4[Arg1, Arg2, Arg3, Arg4, Payload],
     metaCreator: ActionFunction4[Arg1, Arg2, Arg3, Arg4, Meta]
-  ): UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, ActionMeta[Payload, Meta]]] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
+  ): UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, ActionMeta[Payload, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, ActionMeta[Payload, Meta]]]]
+  @scala.inline
   def createRoutine[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator, TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
     typePrefix: String,
     payloadCreator: FAILURE_[
@@ -355,30 +463,64 @@ object mod {
       ResolveFunctionArg3Type[TFulfillPayloadCreator], 
       ResolveFunctionArg4Type[TFulfillPayloadCreator]
     ]
-  ] = js.native
-  @JSImport("redux-saga-routines", "createRoutine")
-  @js.native
-  def createRoutine_PayloadMetaArg1[Payload, Meta, Arg1](
-    typePrefix: String,
-    payloadCreator: ActionFunction1[Arg1, Payload],
-    metaCreator: ActionFunction1[Arg1, Meta]
-  ): UnifiedRoutine[ActionFunction1[Arg1, ActionMeta[Payload, Meta]]] = js.native
-  
-  @JSImport("redux-saga-routines", "promisifyRoutine")
-  @js.native
-  def promisifyRoutine(
-    routine: Routine[
-      ActionCreatorFunction[_, _], 
-      ActionCreatorFunction[_, _], 
-      ActionCreatorFunction[_, _], 
-      ActionCreatorFunction[_, _], 
-      ActionCreatorFunction[_, _]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[Routine[
+    ResolveActionCreatorByPayloadMeta[
+      TTriggerPayloadCreator, 
+      TTriggerMetaCreator, 
+      ResolveFunctionReturnType[TTriggerPayloadCreator], 
+      ResolveFunctionReturnType[TTriggerMetaCreator], 
+      ResolveFunctionArg1Type[TTriggerPayloadCreator], 
+      ResolveFunctionArg2Type[TTriggerPayloadCreator], 
+      ResolveFunctionArg3Type[TTriggerPayloadCreator], 
+      ResolveFunctionArg4Type[TTriggerPayloadCreator]
+    ], 
+    ResolveActionCreatorByPayloadMeta[
+      TRequestPayloadCreator, 
+      TRequestMetaCreator, 
+      ResolveFunctionReturnType[TRequestPayloadCreator], 
+      ResolveFunctionReturnType[TRequestMetaCreator], 
+      ResolveFunctionArg1Type[TRequestPayloadCreator], 
+      ResolveFunctionArg2Type[TRequestPayloadCreator], 
+      ResolveFunctionArg3Type[TRequestPayloadCreator], 
+      ResolveFunctionArg4Type[TRequestPayloadCreator]
+    ], 
+    ResolveActionCreatorByPayloadMeta[
+      TSuccessPayloadCreator, 
+      TSuccessMetaCreator, 
+      ResolveFunctionReturnType[TSuccessPayloadCreator], 
+      ResolveFunctionReturnType[TSuccessMetaCreator], 
+      ResolveFunctionArg1Type[TSuccessPayloadCreator], 
+      ResolveFunctionArg2Type[TSuccessPayloadCreator], 
+      ResolveFunctionArg3Type[TSuccessPayloadCreator], 
+      ResolveFunctionArg4Type[TSuccessPayloadCreator]
+    ], 
+    ResolveActionCreatorByPayloadMeta[
+      TFailurePayloadCreator, 
+      TFailureMetaCreator, 
+      ResolveFunctionReturnType[TFailurePayloadCreator], 
+      ResolveFunctionReturnType[TFailureMetaCreator], 
+      ResolveFunctionArg1Type[TFailurePayloadCreator], 
+      ResolveFunctionArg2Type[TFailurePayloadCreator], 
+      ResolveFunctionArg3Type[TFailurePayloadCreator], 
+      ResolveFunctionArg4Type[TFailurePayloadCreator]
+    ], 
+    ResolveActionCreatorByPayloadMeta[
+      TFulfillPayloadCreator, 
+      TFulfillMetaCreator, 
+      ResolveFunctionReturnType[TFulfillPayloadCreator], 
+      ResolveFunctionReturnType[TFulfillMetaCreator], 
+      ResolveFunctionArg1Type[TFulfillPayloadCreator], 
+      ResolveFunctionArg2Type[TFulfillPayloadCreator], 
+      ResolveFunctionArg3Type[TFulfillPayloadCreator], 
+      ResolveFunctionArg4Type[TFulfillPayloadCreator]
     ]
-  ): PromiseCreator[js.Object] = js.native
+  ]]
   
-  @JSImport("redux-saga-routines", "routinePromiseWatcherSaga")
-  @js.native
-  def routinePromiseWatcherSaga(): IterableIterator[_] = js.native
+  @scala.inline
+  def promisifyRoutine(routine: RoutineActionCreatorFunct): PromiseCreator[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyRoutine")(routine.asInstanceOf[js.Any]).asInstanceOf[PromiseCreator[js.Object]]
+  
+  @scala.inline
+  def routinePromiseWatcherSaga(): IterableIterator[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("routinePromiseWatcherSaga")().asInstanceOf[IterableIterator[js.Any]]
   
   type ActionCreatorFunction[Payload, Meta] = ActionFunctionAny[Action[Payload] | (ActionMeta[Payload, Meta])]
   
@@ -386,12 +528,11 @@ object mod {
   
   type PromiseCreator[TPayload] = js.Function2[/* payload */ TPayload, /* dispatch */ Dispatch[AnyAction], js.Thenable[js.Any]]
   
-  @js.native
   trait ReduxFormPayload[TFormData, TProps] extends StObject {
     
-    var props: TProps = js.native
+    var props: TProps
     
-    var values: TFormData = js.native
+    var values: TFormData
   }
   object ReduxFormPayload {
     
@@ -402,7 +543,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ReduxFormPayloadMutableBuilder[Self <: ReduxFormPayload[_, _], TFormData, TProps] (val x: Self with (ReduxFormPayload[TFormData, TProps])) extends AnyVal {
+    implicit class ReduxFormPayloadMutableBuilder[Self <: ReduxFormPayload[?, ?], TFormData, TProps] (val x: Self & (ReduxFormPayload[TFormData, TProps])) extends AnyVal {
       
       @scala.inline
       def setProps(value: TProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
@@ -418,17 +559,17 @@ object mod {
   
   type ResolveActionCreatorByPayloadMeta[TPayloadCreator, TMetaCreator, TPayload, TMeta, TArg1, TArg2, TArg3, TArg4] = (ActionFunctionAny[ActionMeta[TPayload, TMeta]]) | (ActionFunction4[TArg1, TArg2, TArg3, TArg4, ActionMeta[TPayload, TMeta]]) | (ActionFunction3[TArg1, TArg2, TArg3, ActionMeta[TPayload, TMeta]]) | (ActionFunction2[TArg1, TArg2, ActionMeta[TPayload, TMeta]]) | (ActionFunction1[TArg1, ActionMeta[TPayload, TMeta]]) | (ActionFunction0[ActionMeta[TPayload, TMeta]])
   
-  type ResolveFunctionArg1Type[TFunction] = js.UndefOr[scala.Nothing]
+  type ResolveFunctionArg1Type[TFunction] = Unit
   
-  type ResolveFunctionArg2Type[TFunction] = js.UndefOr[scala.Nothing]
+  type ResolveFunctionArg2Type[TFunction] = Unit
   
-  type ResolveFunctionArg3Type[TFunction] = js.UndefOr[scala.Nothing]
+  type ResolveFunctionArg3Type[TFunction] = Unit
   
-  type ResolveFunctionArg4Type[TFunction] = js.UndefOr[scala.Nothing]
+  type ResolveFunctionArg4Type[TFunction] = Unit
   
-  type ResolveFunctionReturnType[TFunction] = js.UndefOr[scala.Nothing]
+  type ResolveFunctionReturnType[TFunction] = Unit
   
-  type Routine[TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] = TTriggerActionCreator with keyinRoutineStagesstring with (Failure[
+  type Routine[TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] = TTriggerActionCreator & keyinRoutineStagesstring & (Failure[
     TTriggerActionCreator, 
     TRequestActionCreator, 
     TSuccessActionCreator, 

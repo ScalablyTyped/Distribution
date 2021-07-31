@@ -12,7 +12,7 @@ Voucher Code Generator
 | Keywords           | voucher, coupon, discount, gift, card, code, generator |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 253779 |
+| # downloads        | 291428 |
 | # stars            | 6 |
 
 ## Links

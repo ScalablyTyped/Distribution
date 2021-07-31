@@ -11,14 +11,16 @@ import typings.typescript.mod.SyntaxKind
 import typings.typescript.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsMod {
   
-  @JSImport("typedoc/dist/lib/converter/components", "Component")
+  @JSImport("typedoc/dist/lib/converter/components", JSImport.Namespace)
   @js.native
-  def Component(options: ComponentOptions): ClassDecorator = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
   @JSImport("typedoc/dist/lib/converter/components", "ConverterComponent")
   @js.native

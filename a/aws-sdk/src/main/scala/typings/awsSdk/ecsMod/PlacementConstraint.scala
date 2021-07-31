@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacementConstraint extends StObject {
   
   /**
     * A cluster query language expression to apply to the constraint. You cannot specify an expression if the constraint type is distinctInstance. For more information, see Cluster Query Language in the Amazon Elastic Container Service Developer Guide.
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * The type of constraint. Use distinctInstance to ensure that each task in a particular group is running on a different container instance. Use memberOf to restrict the selection to a group of valid candidates.
     */
-  var `type`: js.UndefOr[PlacementConstraintType] = js.native
+  var `type`: js.UndefOr[PlacementConstraintType] = js.undefined
 }
 object PlacementConstraint {
   

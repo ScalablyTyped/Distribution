@@ -16,11 +16,9 @@ import typings.officeJs.officeJsStrings.Triangle
 import typings.officeJs.officeJsStrings.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartPoint.toJSON()`. */
-@js.native
 trait ChartPointData extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait ChartPointData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var dataLabel: js.UndefOr[ChartDataLabelData] = js.native
+  var dataLabel: js.UndefOr[ChartDataLabelData] = js.undefined
   
   /**
     *
@@ -37,7 +35,7 @@ trait ChartPointData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[ChartPointFormatData] = js.native
+  var format: js.UndefOr[ChartPointFormatData] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait ChartPointData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var hasDataLabel: js.UndefOr[Boolean] = js.native
+  var hasDataLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -53,7 +51,7 @@ trait ChartPointData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var markerBackgroundColor: js.UndefOr[String] = js.native
+  var markerBackgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -61,7 +59,7 @@ trait ChartPointData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var markerForegroundColor: js.UndefOr[String] = js.native
+  var markerForegroundColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait ChartPointData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var markerSize: js.UndefOr[Double] = js.native
+  var markerSize: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait ChartPointData extends StObject {
     */
   var markerStyle: js.UndefOr[
     ChartMarkerStyle | Invalid | Automatic | None | Square | Diamond | Triangle | X | Star | Dot | Dash | Circle | Plus | Picture
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -87,7 +85,7 @@ trait ChartPointData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object ChartPointData {
   

@@ -3,13 +3,13 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SignatureHelpResult extends IDisposable {
+trait SignatureHelpResult
+  extends StObject
+     with IDisposable {
   
-  var value: SignatureHelp = js.native
+  var value: SignatureHelp
 }
 object SignatureHelpResult {
   

@@ -5,14 +5,15 @@ import typings.std.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("babel-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
@@ -20,14 +21,15 @@ object mod {
   
   type Matcher = RegExp | String | (js.Array[RegExp | String])
   
-  @js.native
-  trait Options extends TransformOptions {
+  trait Options
+    extends StObject
+       with TransformOptions {
     
-    var exclude: js.UndefOr[Matcher] = js.native
+    var exclude: js.UndefOr[Matcher] = js.undefined
     
-    var include: js.UndefOr[Matcher] = js.native
+    var include: js.UndefOr[Matcher] = js.undefined
     
-    var test: js.UndefOr[Matcher] = js.native
+    var test: js.UndefOr[Matcher] = js.undefined
   }
   object Options {
     

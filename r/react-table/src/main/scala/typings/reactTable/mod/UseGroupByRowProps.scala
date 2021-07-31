@@ -3,29 +3,27 @@ package typings.reactTable.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseGroupByRowProps[D /* <: js.Object */] extends StObject {
   
-  var depth: Double = js.native
+  var depth: Double
   
-  var groupByID: IdType[D] = js.native
+  var groupByID: IdType[D]
   
-  var groupByVal: String = js.native
+  var groupByVal: String
   
-  var id: String = js.native
+  var id: String
   
-  var index: Double = js.native
+  var index: Double
   
-  var isGrouped: Boolean = js.native
+  var isGrouped: Boolean
   
-  var leafRows: js.Array[Row[D]] = js.native
+  var leafRows: js.Array[Row[D]]
   
-  var subRows: js.Array[Row[D]] = js.native
+  var subRows: js.Array[Row[D]]
   
-  var values: Record[IdType[D], AggregatedValue] = js.native
+  var values: Record[IdType[D], AggregatedValue]
 }
 object UseGroupByRowProps {
   
@@ -46,7 +44,7 @@ object UseGroupByRowProps {
   }
   
   @scala.inline
-  implicit class UseGroupByRowPropsMutableBuilder[Self <: UseGroupByRowProps[_], D /* <: js.Object */] (val x: Self with UseGroupByRowProps[D]) extends AnyVal {
+  implicit class UseGroupByRowPropsMutableBuilder[Self <: UseGroupByRowProps[?], D /* <: js.Object */] (val x: Self & UseGroupByRowProps[D]) extends AnyVal {
     
     @scala.inline
     def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])

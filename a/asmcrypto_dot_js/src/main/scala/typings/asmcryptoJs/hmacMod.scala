@@ -7,10 +7,13 @@ import typings.asmcryptoJs.sha512AsmMod.sha512result
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hmacMod {
+  
+  @JSImport("asmcrypto.js/dist_es8/hmac/hmac", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("asmcrypto.js/dist_es8/hmac/hmac", "Hmac")
   @js.native
@@ -37,7 +40,6 @@ object hmacMod {
     var verify: Uint8Array | Null = js.native
   }
   
-  @JSImport("asmcrypto.js/dist_es8/hmac/hmac", "_hmac_key")
-  @js.native
-  def hmacKey(hash: Hash[sha1result | sha256result | sha512result], password: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def hmacKey(hash: Hash[sha1result | sha256result | sha512result], password: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("_hmac_key")(hash.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
 }

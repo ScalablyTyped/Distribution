@@ -1,33 +1,31 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`7`
+import typings.octokitTypes.anon.`0`
+import typings.octokitTypes.octokitTypesStrings.inertia
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  card_id :number,   note :string | undefined,   archived :boolean | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'inertia'> */
-@js.native
-trait ProjectsUpdateCardEndpoint extends StObject {
+trait ProjectsUpdateCardEndpoint
+  extends StObject
+     with RequiredPreview[inertia] {
   
   /**
     * Use `true` to archive a project card. Specify `false` if you need to restore a previously archived project card.
     */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
-  var card_id: Double = js.native
-  
-  var mediaType: `7` = js.native
+  var card_id: Double
   
   /**
     * The card's note content. Only valid for cards without another type of content, so this cannot be specified if the card already has a `content_id` and `content_type`.
     */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
 }
 object ProjectsUpdateCardEndpoint {
   
   @scala.inline
-  def apply(card_id: Double, mediaType: `7`): ProjectsUpdateCardEndpoint = {
+  def apply(card_id: Double, mediaType: `0`[inertia]): ProjectsUpdateCardEndpoint = {
     val __obj = js.Dynamic.literal(card_id = card_id.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsUpdateCardEndpoint]
   }
@@ -43,9 +41,6 @@ object ProjectsUpdateCardEndpoint {
     
     @scala.inline
     def setCard_id(value: Double): Self = StObject.set(x, "card_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `7`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])

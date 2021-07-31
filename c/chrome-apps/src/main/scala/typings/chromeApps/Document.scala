@@ -4,7 +4,6 @@ import typings.chromeApps.chromeAppsStrings.appview
 import typings.chromeApps.chromeAppsStrings.webview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,41 +29,21 @@ trait Document extends StObject {
     * ❗ document.open is not available in packaged apps. ❗
     */
   def open(): Document = js.native
-  def open(
-    url: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    features: js.UndefOr[scala.Nothing],
-    replace: Boolean
-  ): Document = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], features: String): Document = js.native
-  def open(
-    url: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    features: String,
-    replace: Boolean
-  ): Document = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: String): Document = js.native
-  def open(
-    url: js.UndefOr[scala.Nothing],
-    name: String,
-    features: js.UndefOr[scala.Nothing],
-    replace: Boolean
-  ): Document = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: String, features: String): Document = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: String, features: String, replace: Boolean): Document = js.native
   def open(url: String): Document = js.native
-  def open(
-    url: String,
-    name: js.UndefOr[scala.Nothing],
-    features: js.UndefOr[scala.Nothing],
-    replace: Boolean
-  ): Document = js.native
-  def open(url: String, name: js.UndefOr[scala.Nothing], features: String): Document = js.native
-  def open(url: String, name: js.UndefOr[scala.Nothing], features: String, replace: Boolean): Document = js.native
   def open(url: String, name: String): Document = js.native
-  def open(url: String, name: String, features: js.UndefOr[scala.Nothing], replace: Boolean): Document = js.native
   def open(url: String, name: String, features: String): Document = js.native
   def open(url: String, name: String, features: String, replace: Boolean): Document = js.native
+  def open(url: String, name: String, features: Unit, replace: Boolean): Document = js.native
+  def open(url: String, name: Unit, features: String): Document = js.native
+  def open(url: String, name: Unit, features: String, replace: Boolean): Document = js.native
+  def open(url: String, name: Unit, features: Unit, replace: Boolean): Document = js.native
+  def open(url: Unit, name: String): Document = js.native
+  def open(url: Unit, name: String, features: String): Document = js.native
+  def open(url: Unit, name: String, features: String, replace: Boolean): Document = js.native
+  def open(url: Unit, name: String, features: Unit, replace: Boolean): Document = js.native
+  def open(url: Unit, name: Unit, features: String): Document = js.native
+  def open(url: Unit, name: Unit, features: String, replace: Boolean): Document = js.native
+  def open(url: Unit, name: Unit, features: Unit, replace: Boolean): Document = js.native
   
   /**
     * ❗ document.write is not available in packaged apps. ❗

@@ -2,21 +2,19 @@ package typings.awsSdk.acmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCertificatesResponse extends StObject {
   
   /**
     * A list of ACM certificates.
     */
-  var CertificateSummaryList: js.UndefOr[typings.awsSdk.acmMod.CertificateSummaryList] = js.native
+  var CertificateSummaryList: js.UndefOr[typings.awsSdk.acmMod.CertificateSummaryList] = js.undefined
   
   /**
     * When the list is truncated, this value is present and contains the value to use for the NextToken parameter in a subsequent pagination request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.acmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.acmMod.NextToken] = js.undefined
 }
 object ListCertificatesResponse {
   

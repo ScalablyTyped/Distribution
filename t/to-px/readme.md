@@ -10,9 +10,9 @@ Convert any CSS unit to logical pixels ("px")
 | ------------------ | :-------------: |
 | Full name          | to-px |
 | Keywords           | css, px, em, ex, line, height, ch, rem, vh, vw, vmin, vmax, unit, conversion, scale, factor |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 3132937 |
+| # releases         | 0 |
+| # dependents       | 21 |
+| # downloads        | 4344422 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,275 +11,457 @@ sealed trait CharacterCodes extends StObject
 object CharacterCodes extends StObject {
   
   @js.native
-  sealed trait $ extends CharacterCodes
+  sealed trait $
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait A extends CharacterCodes
+  sealed trait A
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait E extends CharacterCodes
+  sealed trait E
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait F extends CharacterCodes
+  sealed trait F
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait X extends CharacterCodes
+  sealed trait X
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait Z extends CharacterCodes
+  sealed trait Z
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait _0 extends CharacterCodes
+  sealed trait _0
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait _7 extends CharacterCodes
+  sealed trait _7
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait _9 extends CharacterCodes
+  sealed trait _9
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait _underscore extends CharacterCodes
+  sealed trait _underscore
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait a extends CharacterCodes
+  sealed trait a
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait ampersand extends CharacterCodes
+  sealed trait ampersand
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait asterisk extends CharacterCodes
+  sealed trait asterisk
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait at extends CharacterCodes
+  sealed trait at
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait b extends CharacterCodes
+  sealed trait b
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait backslash extends CharacterCodes
+  sealed trait backslash
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait backspace extends CharacterCodes
+  sealed trait backspace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait bar extends CharacterCodes
+  sealed trait bar
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait byteOrderMark extends CharacterCodes
+  sealed trait byteOrderMark
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait c extends CharacterCodes
+  sealed trait c
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait caret extends CharacterCodes
+  sealed trait caret
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait carriageReturn extends CharacterCodes
+  sealed trait carriageReturn
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait closeBrace extends CharacterCodes
+  sealed trait closeBrace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait closeBracket extends CharacterCodes
+  sealed trait closeBracket
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait closeParen extends CharacterCodes
+  sealed trait closeParen
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait colon extends CharacterCodes
+  sealed trait colon
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait comma extends CharacterCodes
+  sealed trait comma
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait d extends CharacterCodes
+  sealed trait d
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait dot extends CharacterCodes
+  sealed trait dot
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait doubleQuote extends CharacterCodes
+  sealed trait doubleQuote
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait e extends CharacterCodes
+  sealed trait e
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait emQuad extends CharacterCodes
+  sealed trait emQuad
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait emSpace extends CharacterCodes
+  sealed trait emSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait enQuad extends CharacterCodes
+  sealed trait enQuad
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait enSpace extends CharacterCodes
+  sealed trait enSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait equals extends CharacterCodes
+  sealed trait equals
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait exclamation extends CharacterCodes
+  sealed trait exclamation
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait f extends CharacterCodes
+  sealed trait f
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait figureSpace extends CharacterCodes
+  sealed trait figureSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait formFeed extends CharacterCodes
+  sealed trait formFeed
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait fourPerEmSpace extends CharacterCodes
+  sealed trait fourPerEmSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait g extends CharacterCodes
+  sealed trait g
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait greaterThan extends CharacterCodes
+  sealed trait greaterThan
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait h extends CharacterCodes
+  sealed trait h
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait hairSpace extends CharacterCodes
+  sealed trait hairSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait i extends CharacterCodes
+  sealed trait i
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait ideographicSpace extends CharacterCodes
+  sealed trait ideographicSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait k extends CharacterCodes
+  sealed trait k
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait l extends CharacterCodes
+  sealed trait l
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait lessThan extends CharacterCodes
+  sealed trait lessThan
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait lineFeed extends CharacterCodes
+  sealed trait lineFeed
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait lineSeparator extends CharacterCodes
+  sealed trait lineSeparator
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait m extends CharacterCodes
+  sealed trait m
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait maxAsciiCharacter extends CharacterCodes
+  sealed trait maxAsciiCharacter
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait minus extends CharacterCodes
+  sealed trait minus
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait n extends CharacterCodes
+  sealed trait n
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait narrowNoBreakSpace extends CharacterCodes
+  sealed trait narrowNoBreakSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait nextLine extends CharacterCodes
+  sealed trait nextLine
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait nonBreakingSpace extends CharacterCodes
+  sealed trait nonBreakingSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait nullCharacter extends CharacterCodes
+  sealed trait nullCharacter
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait o extends CharacterCodes
+  sealed trait o
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait openBrace extends CharacterCodes
+  sealed trait openBrace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait openBracket extends CharacterCodes
+  sealed trait openBracket
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait openParen extends CharacterCodes
+  sealed trait openParen
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait p extends CharacterCodes
+  sealed trait p
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait paragraphSeparator extends CharacterCodes
+  sealed trait paragraphSeparator
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait percent extends CharacterCodes
+  sealed trait percent
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait plus extends CharacterCodes
+  sealed trait plus
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait punctuationSpace extends CharacterCodes
+  sealed trait punctuationSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait q extends CharacterCodes
+  sealed trait q
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait question extends CharacterCodes
+  sealed trait question
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait r extends CharacterCodes
+  sealed trait r
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait s extends CharacterCodes
+  sealed trait s
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait semicolon extends CharacterCodes
+  sealed trait semicolon
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait singleQuote extends CharacterCodes
+  sealed trait singleQuote
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait sixPerEmSpace extends CharacterCodes
+  sealed trait sixPerEmSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait slash extends CharacterCodes
+  sealed trait slash
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait space extends CharacterCodes
+  sealed trait space
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait t extends CharacterCodes
+  sealed trait t
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait tab extends CharacterCodes
+  sealed trait tab
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait thinSpace extends CharacterCodes
+  sealed trait thinSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait threePerEmSpace extends CharacterCodes
+  sealed trait threePerEmSpace
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait tilde extends CharacterCodes
+  sealed trait tilde
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait u extends CharacterCodes
+  sealed trait u
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait v extends CharacterCodes
+  sealed trait v
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait verticalTab extends CharacterCodes
+  sealed trait verticalTab
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait w extends CharacterCodes
+  sealed trait w
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait x extends CharacterCodes
+  sealed trait x
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait y extends CharacterCodes
+  sealed trait y
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait z extends CharacterCodes
+  sealed trait z
+    extends StObject
+       with CharacterCodes
   
   @js.native
-  sealed trait zeroWidthSpace extends CharacterCodes
+  sealed trait zeroWidthSpace
+    extends StObject
+       with CharacterCodes
 }

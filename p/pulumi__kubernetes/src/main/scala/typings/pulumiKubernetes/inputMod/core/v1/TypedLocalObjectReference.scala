@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TypedLocalObjectReference contains enough information to let you locate the typed referenced object inside the same namespace.
   */
-@js.native
 trait TypedLocalObjectReference extends StObject {
   
   /**
     * APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.
     */
-  var apiGroup: js.UndefOr[Input[String]] = js.native
+  var apiGroup: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Kind is the type of resource being referenced
     */
-  var kind: Input[String] = js.native
+  var kind: Input[String]
   
   /**
     * Name is the name of resource being referenced
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
 }
 object TypedLocalObjectReference {
   

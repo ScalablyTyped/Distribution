@@ -8,7 +8,6 @@ import typings.node.httpsMod.Agent
 import typings.std.Symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,26 +34,25 @@ object mod {
   
   type AgentKeepAlive = HttpAgent
   
-  @js.native
   trait AgentStatus extends StObject {
     
-    var closeSocketCount: Double = js.native
+    var closeSocketCount: Double
     
-    var createSocketCount: Double = js.native
+    var createSocketCount: Double
     
-    var createSocketErrorCount: Double = js.native
+    var createSocketErrorCount: Double
     
-    var errorSocketCount: Double = js.native
+    var errorSocketCount: Double
     
-    var freeSockets: PlainObject = js.native
+    var freeSockets: PlainObject
     
-    var requestCount: Double = js.native
+    var requestCount: Double
     
-    var requests: PlainObject = js.native
+    var requests: PlainObject
     
-    var sockets: PlainObject = js.native
+    var sockets: PlainObject
     
-    var timeoutSocketCount: Double = js.native
+    var timeoutSocketCount: Double
   }
   object AgentStatus {
     
@@ -106,18 +104,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CommonHttpOption extends StObject {
     
-    var freeSocketKeepAliveTimeout: js.UndefOr[Double] = js.native
+    var freeSocketKeepAliveTimeout: js.UndefOr[Double] = js.undefined
     
-    var freeSocketTimeout: js.UndefOr[Double] = js.native
+    var freeSocketTimeout: js.UndefOr[Double] = js.undefined
     
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
-    var socketActiveTTL: js.UndefOr[Double] = js.native
+    var socketActiveTTL: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object CommonHttpOption {
     
@@ -162,24 +159,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Constants_ extends StObject {
     
-    var CREATE_HTTPS_CONNECTION: Symbol = js.native
+    var CREATE_HTTPS_CONNECTION: Symbol
     
-    var CREATE_ID: Symbol = js.native
+    var CREATE_ID: Symbol
     
-    var CURRENT_ID: Symbol = js.native
+    var CURRENT_ID: Symbol
     
-    var INIT_SOCKET: Symbol = js.native
+    var INIT_SOCKET: Symbol
     
-    var SOCKET_CREATED_TIME: Symbol = js.native
+    var SOCKET_CREATED_TIME: Symbol
     
-    var SOCKET_NAME: Symbol = js.native
+    var SOCKET_NAME: Symbol
     
-    var SOCKET_REQUEST_COUNT: Symbol = js.native
+    var SOCKET_REQUEST_COUNT: Symbol
     
-    var SOCKET_REQUEST_FINISHED_COUNT: Symbol = js.native
+    var SOCKET_REQUEST_FINISHED_COUNT: Symbol
   }
   object Constants_ {
     
@@ -239,14 +235,15 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.agentkeepalive.mod.CommonHttpOption because var conflicts: keepAlive, timeout. Inlined freeSocketTimeout, freeSocketKeepAliveTimeout, socketActiveTTL */ @js.native
-  trait HttpOptions extends AgentOptions {
+  - typings.agentkeepalive.mod.CommonHttpOption because var conflicts: keepAlive, timeout. Inlined freeSocketTimeout, freeSocketKeepAliveTimeout, socketActiveTTL */ trait HttpOptions
+    extends StObject
+       with AgentOptions {
     
-    var freeSocketKeepAliveTimeout: js.UndefOr[Double] = js.native
+    var freeSocketKeepAliveTimeout: js.UndefOr[Double] = js.undefined
     
-    var freeSocketTimeout: js.UndefOr[Double] = js.native
+    var freeSocketTimeout: js.UndefOr[Double] = js.undefined
     
-    var socketActiveTTL: js.UndefOr[Double] = js.native
+    var socketActiveTTL: js.UndefOr[Double] = js.undefined
   }
   object HttpOptions {
     
@@ -280,15 +277,15 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.agentkeepalive.mod.CommonHttpOption because var conflicts: keepAlive, timeout. Inlined freeSocketTimeout, freeSocketKeepAliveTimeout, socketActiveTTL */ @js.native
-  trait HttpsOptions
-    extends typings.node.httpsMod.AgentOptions {
+  - typings.agentkeepalive.mod.CommonHttpOption because var conflicts: keepAlive, timeout. Inlined freeSocketTimeout, freeSocketKeepAliveTimeout, socketActiveTTL */ trait HttpsOptions
+    extends StObject
+       with typings.node.httpsMod.AgentOptions {
     
-    var freeSocketKeepAliveTimeout: js.UndefOr[Double] = js.native
+    var freeSocketKeepAliveTimeout: js.UndefOr[Double] = js.undefined
     
-    var freeSocketTimeout: js.UndefOr[Double] = js.native
+    var freeSocketTimeout: js.UndefOr[Double] = js.undefined
     
-    var socketActiveTTL: js.UndefOr[Double] = js.native
+    var socketActiveTTL: js.UndefOr[Double] = js.undefined
   }
   object HttpsOptions {
     

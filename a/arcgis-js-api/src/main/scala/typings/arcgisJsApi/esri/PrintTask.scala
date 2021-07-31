@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.async
 import typings.arcgisJsApi.arcgisJsApiStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrintTask extends Task {
+trait PrintTask
+  extends StObject
+     with Task {
   
   /**
     * Sends a request to the print service to create a printable static image of the map using the options specified in the [PrintParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintParameters.html).

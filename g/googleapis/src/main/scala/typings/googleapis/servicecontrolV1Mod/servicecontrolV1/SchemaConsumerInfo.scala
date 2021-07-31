@@ -2,13 +2,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `ConsumerInfo` provides information about the consumer.
   */
-@js.native
 trait SchemaConsumerInfo extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaConsumerInfo extends StObject {
     * number or organization number e.g. 1234567890. A value of 0 indicates no
     * consumer number is found.
     */
-  var consumerNumber: js.UndefOr[String] = js.native
+  var consumerNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The Google cloud project number, e.g. 1234567890. A value of 0 indicates
@@ -24,9 +22,9 @@ trait SchemaConsumerInfo extends StObject {
     * support flexible consumer id. New code should not depend on this field
     * anymore.
     */
-  var projectNumber: js.UndefOr[String] = js.native
+  var projectNumber: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaConsumerInfo {
   

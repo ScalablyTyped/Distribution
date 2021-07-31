@@ -3,23 +3,23 @@ package typings.baidumapWebSdk.BMap
 import typings.baidumapWebSdk.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointCollection extends Overlay {
+trait PointCollection
+  extends StObject
+     with Overlay {
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def onclick(event: Type): Unit = js.native
+  def onclick(event: Type): Unit
   
-  def onmouseout(event: Type): Unit = js.native
+  def onmouseout(event: Type): Unit
   
-  def onmouseover(event: Type): Unit = js.native
+  def onmouseover(event: Type): Unit
   
-  def setPoints(points: js.Array[Point]): Unit = js.native
+  def setPoints(points: js.Array[Point]): Unit
   
-  def setStyles(styles: PointCollectionOption): Unit = js.native
+  def setStyles(styles: PointCollectionOption): Unit
 }
 object PointCollection {
   

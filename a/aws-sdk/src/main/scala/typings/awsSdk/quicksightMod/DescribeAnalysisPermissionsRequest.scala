@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAnalysisPermissionsRequest extends StObject {
   
   /**
     * The ID of the analysis whose permissions you're describing. The ID is part of the analysis URL.
     */
-  var AnalysisId: RestrictiveResourceId = js.native
+  var AnalysisId: RestrictiveResourceId
   
   /**
     * The ID of the AWS account that contains the analysis whose permissions you're describing. You must be using the AWS account that the analysis is in.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
 }
 object DescribeAnalysisPermissionsRequest {
   

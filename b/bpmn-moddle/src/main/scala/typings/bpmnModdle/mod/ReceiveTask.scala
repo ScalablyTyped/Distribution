@@ -2,19 +2,19 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReceiveTask extends Task {
+trait ReceiveTask
+  extends StObject
+     with Task {
   
-  var implementation: String = js.native
+  var implementation: String
   
-  var instantiate: Boolean = js.native
+  var instantiate: Boolean
   
-  var messageRef: Message = js.native
+  var messageRef: Message
   
-  var operationRef: Operation = js.native
+  var operationRef: Operation
 }
 object ReceiveTask {
   

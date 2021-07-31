@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows notification when a new volatile function result is available.
   * @see com.sun.star.sheet.XVolatileResult
   */
-@js.native
-trait XResultListener extends XEventListener {
+trait XResultListener
+  extends StObject
+     with XEventListener {
   
   /** is called when a new value is available. */
-  def modified(aEvent: ResultEvent): Unit = js.native
+  def modified(aEvent: ResultEvent): Unit
 }
 object XResultListener {
   

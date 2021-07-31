@@ -3,13 +3,11 @@ package typings.googleapis.binaryauthorizationV1beta1Mod.binaryauthorizationV1be
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A policy for container image binary authorization.
   */
-@js.native
 trait SchemaPolicy extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaPolicy extends StObject {
     * Google or third-party infrastructure images from Binary Authorization
     * policies.
     */
-  var admissionWhitelistPatterns: js.UndefOr[js.Array[SchemaAdmissionWhitelistPattern]] = js.native
+  var admissionWhitelistPatterns: js.UndefOr[js.Array[SchemaAdmissionWhitelistPattern]] = js.undefined
   
   /**
     * Optional. Per-cluster admission rules. Cluster spec format:
@@ -27,19 +25,19 @@ trait SchemaPolicy extends StObject {
     * region (e.g. us-central1). For `clusterId` syntax restrictions see
     * https://cloud.google.com/container-engine/reference/rest/v1/projects.zones.clusters.
     */
-  var clusterAdmissionRules: js.UndefOr[StringDictionary[SchemaAdmissionRule]] = js.native
+  var clusterAdmissionRules: js.UndefOr[StringDictionary[SchemaAdmissionRule]] = js.undefined
   
   /**
     * Required. Default admission rule for a cluster without a per-cluster,
     * per- kubernetes-service-account, or per-istio-service-identity admission
     * rule.
     */
-  var defaultAdmissionRule: js.UndefOr[SchemaAdmissionRule] = js.native
+  var defaultAdmissionRule: js.UndefOr[SchemaAdmissionRule] = js.undefined
   
   /**
     * Optional. A descriptive comment.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Controls the evaluation of a Google-maintained global admission
@@ -47,18 +45,18 @@ trait SchemaPolicy extends StObject {
     * policy will be subject to the project admission policy. This setting has
     * no effect when specified inside a global admission policy.
     */
-  var globalPolicyEvaluationMode: js.UndefOr[String] = js.native
+  var globalPolicyEvaluationMode: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The resource name, in the format `projects/x/policy`. There
     * is at most one policy per project.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time when the policy was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaPolicy {
   

@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AttachedVolume describes a volume attached to a node
   */
-@js.native
 trait AttachedVolume extends StObject {
   
   /**
     * DevicePath represents the device path where the volume should be available
     */
-  var devicePath: String = js.native
+  var devicePath: String
   
   /**
     * Name of the attached volume
     */
-  var name: String = js.native
+  var name: String
 }
 object AttachedVolume {
   

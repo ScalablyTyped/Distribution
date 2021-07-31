@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.WebUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages delayed suspension for an app. GetDeferral */
-@js.native
 trait SuspendingDeferral extends StObject {
   
   /** Notifies the system that the app has saved its data and is ready to be suspended. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object SuspendingDeferral {
   

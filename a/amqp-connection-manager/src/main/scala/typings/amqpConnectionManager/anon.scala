@@ -15,17 +15,15 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Connection extends StObject {
     
-    var connection: typings.amqplib.mod.Connection = js.native
+    var connection: typings.amqplib.mod.Connection
     
-    var url: String = js.native
+    var url: String
   }
   object Connection {
     
@@ -47,14 +45,13 @@ object anon {
   }
   
   /* Inlined node.tls.ConnectionOptions & {  noDelay :boolean | undefined,   timeout :number | undefined,   keepAlive :boolean | undefined,   keepAliveDelay :number | undefined,   clientProperties :any | undefined,   credentials :{  mechanism :string,   username :string,   password :string, response (): node.Buffer} | undefined} */
-  @js.native
   trait ConnectionOptionsnoDelayb extends StObject {
     
     /**
       * An array of strings or a Buffer naming possible ALPN protocols.
       * (Protocols should be ordered by their priority.)
       */
-    var ALPNProtocols: js.UndefOr[(js.Array[String | Uint8Array]) | Uint8Array] = js.native
+    var ALPNProtocols: js.UndefOr[(js.Array[String | Uint8Array]) | Uint8Array] = js.undefined
     
     /**
       * SNICallback(servername, cb) <Function> A function that will be
@@ -71,14 +68,14 @@ object anon {
           /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Optionally override the trusted CA certificates. Default is to trust
       * the well-known CAs curated by Mozilla. Mozilla's CAs are completely
       * replaced when CAs are explicitly specified using this option.
       */
-    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
     /**
       *  Cert chains in PEM format. One cert chain should be provided per
@@ -91,10 +88,10 @@ object anon {
       *  intermediate certificates are not provided, the peer will not be
       *  able to validate the certificate, and the handshake will fail.
       */
-    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
     // Establish secure connection on a given socket rather than creating a new socket
-    var checkServerIdentity: js.UndefOr[js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]] = js.native
+    var checkServerIdentity: js.UndefOr[js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]] = js.undefined
     
     /**
       * Cipher suite specification, replacing the default. For more
@@ -102,21 +99,21 @@ object anon {
       * ciphers can be obtained via tls.getCiphers(). Cipher names must be
       * uppercased in order for OpenSSL to accept them.
       */
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
     /**
       * Name of an OpenSSL engine which can provide the client certificate.
       */
-    var clientCertEngine: js.UndefOr[String] = js.native
+    var clientCertEngine: js.UndefOr[String] = js.undefined
     
-    var clientProperties: js.UndefOr[js.Any] = js.native
+    var clientProperties: js.UndefOr[js.Any] = js.undefined
     
-    var credentials: js.UndefOr[Mechanism] = js.native
+    var credentials: js.UndefOr[Mechanism] = js.undefined
     
     /**
       * PEM formatted CRLs (Certificate Revocation Lists).
       */
-    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
     /**
       * Diffie Hellman parameters, required for Perfect Forward Secrecy. Use
@@ -126,7 +123,7 @@ object anon {
       * stronger security. If omitted or invalid, the parameters are
       * silently discarded and DHE ciphers will not be available.
       */
-    var dhparam: js.UndefOr[String | Buffer] = js.native
+    var dhparam: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * A string describing a named curve or a colon separated list of curve
@@ -137,27 +134,27 @@ object anon {
       * name and description of each available elliptic curve. Default:
       * tls.DEFAULT_ECDH_CURVE.
       */
-    var ecdhCurve: js.UndefOr[String] = js.native
+    var ecdhCurve: js.UndefOr[String] = js.undefined
     
     /**
       * When enabled, TLS packet trace information is written to `stderr`. This can be
       * used to debug TLS connection problems.
       * @default false
       */
-    var enableTrace: js.UndefOr[Boolean] = js.native
+    var enableTrace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Attempt to use the server's cipher suite preferences instead of the
       * client's. When true, causes SSL_OP_CIPHER_SERVER_PREFERENCE to be
       * set in secureOptions
       */
-    var honorCipherOrder: js.UndefOr[Boolean] = js.native
+    var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
-    var keepAliveDelay: js.UndefOr[Double] = js.native
+    var keepAliveDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Private keys in PEM format. PEM allows the option of private keys
@@ -169,9 +166,9 @@ object anon {
       * object.passphrase is optional. Encrypted keys will be decrypted with
       * object.passphrase if provided, or options.passphrase if it is not.
       */
-    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.native
+    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.undefined
     
-    var lookup: js.UndefOr[LookupFunction] = js.native
+    var lookup: js.UndefOr[LookupFunction] = js.undefined
     
     /**
       * Optionally set the maximum TLS version to allow. One
@@ -181,9 +178,9 @@ object anon {
       * `--tls-max-v1.2` sets the default to `'TLSv1.2'`. Using `--tls-max-v1.3` sets the default to
       * `'TLSv1.3'`. If multiple of the options are provided, the highest maximum is used.
       */
-    var maxVersion: js.UndefOr[SecureVersion] = js.native
+    var maxVersion: js.UndefOr[SecureVersion] = js.undefined
     
-    var minDHSize: js.UndefOr[Double] = js.native
+    var minDHSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Optionally set the minimum TLS version to allow. One
@@ -195,16 +192,16 @@ object anon {
       * `'TLSv1.1'`. Using `--tls-min-v1.3` sets the default to
       * 'TLSv1.3'. If multiple of the options are provided, the lowest minimum is used.
       */
-    var minVersion: js.UndefOr[SecureVersion] = js.native
+    var minVersion: js.UndefOr[SecureVersion] = js.undefined
     
-    var noDelay: js.UndefOr[Boolean] = js.native
+    var noDelay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shared passphrase used for a single private key and/or a PFX.
       */
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * PFX or PKCS12 encoded private key and certificate chain. pfx is an
@@ -216,22 +213,22 @@ object anon {
       * object.passphrase is optional. Encrypted PFX will be decrypted with
       * object.passphrase if provided, or options.passphrase if it is not.
       */
-    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.native
+    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * Name of an OpenSSL engine to get private key from. Should be used
       * together with privateKeyIdentifier.
       */
-    var privateKeyEngine: js.UndefOr[String] = js.native
+    var privateKeyEngine: js.UndefOr[String] = js.undefined
     
     /**
       * Identifier of a private key managed by an OpenSSL engine. Should be
       * used together with privateKeyEngine. Should not be set together with
       * key, because both options define a private key in different ways.
       */
-    var privateKeyIdentifier: js.UndefOr[String] = js.native
+    var privateKeyIdentifier: js.UndefOr[String] = js.undefined
     
     /**
       * When negotiating TLS-PSK (pre-shared keys), this function is called
@@ -250,7 +247,7 @@ object anon {
       * compatible with the selected cipher's digest.
       * `identity` must use UTF-8 encoding.
       */
-    var pskCallback: js.UndefOr[js.Function1[/* hint */ String | Null, PSKCallbackNegotation | Null]] = js.native
+    var pskCallback: js.UndefOr[js.Function1[/* hint */ String | Null, PSKCallbackNegotation | Null]] = js.undefined
     
     /**
       * If true the server will reject any connection which is not
@@ -258,26 +255,26 @@ object anon {
       * effect if requestCert is true.
       * @default true
       */
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true the server will request a certificate from clients that
       * connect and attempt to verify that certificate. Defaults to
       * false.
       */
-    var requestCert: js.UndefOr[Boolean] = js.native
+    var requestCert: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional TLS context object from tls.createSecureContext()
       */
-    var secureContext: js.UndefOr[SecureContext] = js.native
+    var secureContext: js.UndefOr[SecureContext] = js.undefined
     
     /**
       * Optionally affect the OpenSSL protocol behavior, which is not
       * usually necessary. This should be used carefully if at all! Value is
       * a numeric bitmask of the SSL_OP_* options from OpenSSL Options
       */
-    var secureOptions: js.UndefOr[Double] = js.native
+    var secureOptions: js.UndefOr[Double] = js.undefined
     
     // Value is a numeric bitmask of the `SSL_OP_*` options
     /**
@@ -291,25 +288,25 @@ object anon {
       * TLS versions less than 1.2, but it may be required for
       * interoperability. Default: none, see minVersion.
       */
-    var secureProtocol: js.UndefOr[String] = js.native
+    var secureProtocol: js.UndefOr[String] = js.undefined
     
-    var servername: js.UndefOr[String] = js.native
+    var servername: js.UndefOr[String] = js.undefined
     
     // SNI TLS Extension
-    var session: js.UndefOr[Buffer] = js.native
+    var session: js.UndefOr[Buffer] = js.undefined
     
     /**
       * Opaque identifier used by servers to ensure session state is not
       * shared between applications. Unused by clients.
       */
-    var sessionIdContext: js.UndefOr[String] = js.native
+    var sessionIdContext: js.UndefOr[String] = js.undefined
     
     /**
       * The number of seconds after which a TLS session created by the
       * server will no longer be resumable. See Session Resumption for more
       * information. Default: 300.
       */
-    var sessionTimeout: js.UndefOr[Double] = js.native
+    var sessionTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       *  Colon-separated list of supported signature algorithms. The list
@@ -317,18 +314,18 @@ object anon {
       *  algorithms (RSA-PSS, ECDSA etc.), combination of both (e.g
       *  'RSA+SHA384') or TLS v1.3 scheme names (e.g. rsa_pss_pss_sha512).
       */
-    var sigalgs: js.UndefOr[String] = js.native
+    var sigalgs: js.UndefOr[String] = js.undefined
     
     // Creates unix socket connection to path. If this option is specified, `host` and `port` are ignored.
-    var socket: js.UndefOr[Socket] = js.native
+    var socket: js.UndefOr[Socket] = js.undefined
     
     /**
       * 48-bytes of cryptographically strong pseudo-random data.
       * See Session Resumption for more information.
       */
-    var ticketKeys: js.UndefOr[Buffer] = js.native
+    var ticketKeys: js.UndefOr[Buffer] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ConnectionOptionsnoDelayb {
     
@@ -623,10 +620,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Err extends StObject {
     
-    var err: Error = js.native
+    var err: Error
   }
   object Err {
     
@@ -644,16 +640,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Mechanism extends StObject {
     
-    var mechanism: String = js.native
+    var mechanism: String
     
-    var password: String = js.native
+    var password: String
     
-    def response(): Buffer = js.native
+    def response(): Buffer
     
-    var username: String = js.native
+    var username: String
   }
   object Mechanism {
     
@@ -680,10 +675,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     

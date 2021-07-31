@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object WiFiDirectServiceStatus extends StObject {
   
   /** The service is available. */
   @js.native
-  sealed trait available extends WiFiDirectServiceStatus
+  sealed trait available
+    extends StObject
+       with WiFiDirectServiceStatus
   
   /** The service is not currently accepting connections. */
   @js.native
-  sealed trait busy extends WiFiDirectServiceStatus
+  sealed trait busy
+    extends StObject
+       with WiFiDirectServiceStatus
   
   /** The service is returning service-defined custom status values. Get the status value from the WiFiDirectServiceAdvertiser.CustomServiceStatusCode property. */
   @js.native
-  sealed trait custom extends WiFiDirectServiceStatus
+  sealed trait custom
+    extends StObject
+       with WiFiDirectServiceStatus
 }

@@ -2,13 +2,11 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delta extends StObject {
   
-  var delta: Double = js.native
+  var delta: Double
 }
 object Delta {
   

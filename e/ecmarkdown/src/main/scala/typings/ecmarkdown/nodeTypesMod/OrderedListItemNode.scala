@@ -3,27 +3,27 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.`ordered-list-item`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OrderedListItemNode extends Node {
+trait OrderedListItemNode
+  extends StObject
+     with Node {
   
-  var contents: js.Array[FragmentNode] = js.native
+  var contents: js.Array[FragmentNode]
   
-  var id: String | Null = js.native
+  var id: String | Null
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: `ordered-list-item` = js.native
+  var name: `ordered-list-item`
   
-  var sublist: ListNode | Null = js.native
+  var sublist: ListNode | Null
 }
 object OrderedListItemNode {
   
   @scala.inline
-  def apply(contents: js.Array[FragmentNode], location: LocationRange, name: `ordered-list-item`): OrderedListItemNode = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(contents: js.Array[FragmentNode], location: LocationRange): OrderedListItemNode = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "ordered-list-item", id = null, sublist = null)
     __obj.asInstanceOf[OrderedListItemNode]
   }
   

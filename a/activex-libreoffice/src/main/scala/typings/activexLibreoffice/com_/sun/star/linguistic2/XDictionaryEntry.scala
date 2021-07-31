@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,11 +19,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.XDictionary
   * @see com.sun.star.uno.XInterface
   */
-@js.native
-trait XDictionaryEntry extends XInterface {
+trait XDictionaryEntry
+  extends StObject
+     with XInterface {
   
   /** @returns the word defining this entry. */
-  val DictionaryWord: String = js.native
+  val DictionaryWord: String
   
   /**
     * is the suggested replacement text for negative words.
@@ -32,10 +32,10 @@ trait XDictionaryEntry extends XInterface {
     * It is undefined if the entry is not negative.
     * @returns the replacement text for a negative entry. An empty string indicates that no replacement text is provided.
     */
-  val ReplacementText: String = js.native
+  val ReplacementText: String
   
   /** @returns the word defining this entry. */
-  def getDictionaryWord(): String = js.native
+  def getDictionaryWord(): String
   
   /**
     * is the suggested replacement text for negative words.
@@ -43,10 +43,10 @@ trait XDictionaryEntry extends XInterface {
     * It is undefined if the entry is not negative.
     * @returns the replacement text for a negative entry. An empty string indicates that no replacement text is provided.
     */
-  def getReplacementText(): String = js.native
+  def getReplacementText(): String
   
   /** @returns `TRUE` if the word (entry) is a negative one and should not be used, `FALSE` otherwise. */
-  def isNegative(): Boolean = js.native
+  def isNegative(): Boolean
 }
 object XDictionaryEntry {
   

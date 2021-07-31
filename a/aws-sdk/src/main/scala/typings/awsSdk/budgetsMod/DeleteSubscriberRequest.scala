@@ -2,31 +2,29 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSubscriberRequest extends StObject {
   
   /**
     * The accountId that is associated with the budget whose subscriber you want to delete.
     */
-  var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.budgetsMod.AccountId
   
   /**
     * The name of the budget whose subscriber you want to delete.
     */
-  var BudgetName: typings.awsSdk.budgetsMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.budgetsMod.BudgetName
   
   /**
     * The notification whose subscriber you want to delete.
     */
-  var Notification: typings.awsSdk.budgetsMod.Notification = js.native
+  var Notification: typings.awsSdk.budgetsMod.Notification
   
   /**
     * The subscriber that you want to delete.
     */
-  var Subscriber: typings.awsSdk.budgetsMod.Subscriber = js.native
+  var Subscriber: typings.awsSdk.budgetsMod.Subscriber
 }
 object DeleteSubscriberRequest {
   

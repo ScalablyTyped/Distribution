@@ -2,16 +2,14 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubnetMapping extends StObject {
   
   /**
     * The unique identifier for the subnet. 
     */
-  var SubnetId: CollectionMemberString = js.native
+  var SubnetId: CollectionMemberString
 }
 object SubnetMapping {
   

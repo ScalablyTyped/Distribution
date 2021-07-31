@@ -2,13 +2,11 @@ package typings.winrt.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPlaybackRateChangeRequestedEventArgs extends StObject {
   
-  var rate: Double = js.native
+  var rate: Double
 }
 object IPlaybackRateChangeRequestedEventArgs {
   

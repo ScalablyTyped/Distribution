@@ -6,16 +6,14 @@ import typings.jimpGif.jimpGifStrings.imageSlashgif
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Imagegif extends StObject {
     
     @JSName("image/gif")
-    var imageSlashgif: js.Array[String] = js.native
+    var imageSlashgif: js.Array[String]
   }
   object Imagegif {
     
@@ -37,25 +35,39 @@ object anon {
     }
   }
   
-  @js.native
   trait ImagegifDecoderFn extends StObject {
     
     @JSName("image/gif")
-    def imageSlashgif(data: Buffer): Bitmap = js.native
+    def imageSlashgif(data: Buffer): Bitmap
     @JSName("image/gif")
-    var imageSlashgif_Original: DecoderFn = js.native
+    var imageSlashgif_Original: DecoderFn
+  }
+  object ImagegifDecoderFn {
+    
+    @scala.inline
+    def apply(imageSlashgif: /* data */ Buffer => Bitmap): ImagegifDecoderFn = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("image/gif")(js.Any.fromFunction1(imageSlashgif))
+      __obj.asInstanceOf[ImagegifDecoderFn]
+    }
+    
+    @scala.inline
+    implicit class ImagegifDecoderFnMutableBuilder[Self <: ImagegifDecoderFn] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setImageSlashgif(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/gif", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait MIMEGIF extends StObject {
     
-    var MIME_GIF: imageSlashgif = js.native
+    var MIME_GIF: imageSlashgif
   }
   object MIMEGIF {
     
     @scala.inline
-    def apply(MIME_GIF: imageSlashgif): MIMEGIF = {
-      val __obj = js.Dynamic.literal(MIME_GIF = MIME_GIF.asInstanceOf[js.Any])
+    def apply(): MIMEGIF = {
+      val __obj = js.Dynamic.literal(MIME_GIF = "image/gif")
       __obj.asInstanceOf[MIMEGIF]
     }
     

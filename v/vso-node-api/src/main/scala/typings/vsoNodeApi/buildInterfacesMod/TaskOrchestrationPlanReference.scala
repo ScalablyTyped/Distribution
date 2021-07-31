@@ -2,21 +2,19 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskOrchestrationPlanReference extends StObject {
   
   /**
     * The type of the plan.
     */
-  var orchestrationType: Double = js.native
+  var orchestrationType: Double
   
   /**
     * The ID of the plan.
     */
-  var planId: String = js.native
+  var planId: String
 }
 object TaskOrchestrationPlanReference {
   

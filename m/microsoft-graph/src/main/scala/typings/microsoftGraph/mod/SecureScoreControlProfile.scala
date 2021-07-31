@@ -2,63 +2,63 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecureScoreControlProfile extends Entity {
+trait SecureScoreControlProfile
+  extends StObject
+     with Entity {
   
   // Control action type (Config, Review, Behavior).
-  var actionType: js.UndefOr[NullableOption[String]] = js.native
+  var actionType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // URL to where the control can be actioned.
-  var actionUrl: js.UndefOr[NullableOption[String]] = js.native
+  var actionUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // GUID string for tenant ID.
-  var azureTenantId: js.UndefOr[String] = js.native
+  var azureTenantId: js.UndefOr[String] = js.undefined
   
-  var complianceInformation: js.UndefOr[NullableOption[js.Array[ComplianceInformation]]] = js.native
+  var complianceInformation: js.UndefOr[NullableOption[js.Array[ComplianceInformation]]] = js.undefined
   
   // Control action category (Identity, Data, Device, Apps, Infrastructure).
-  var controlCategory: js.UndefOr[NullableOption[String]] = js.native
+  var controlCategory: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var controlStateUpdates: js.UndefOr[NullableOption[js.Array[SecureScoreControlStateUpdate]]] = js.native
+  var controlStateUpdates: js.UndefOr[NullableOption[js.Array[SecureScoreControlStateUpdate]]] = js.undefined
   
   // Flag to indicate if a control is depreciated.
-  var deprecated: js.UndefOr[NullableOption[Boolean]] = js.native
+  var deprecated: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Resource cost of implemmentating control (low, moderate, high).
-  var implementationCost: js.UndefOr[NullableOption[String]] = js.native
+  var implementationCost: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Time at which the control profile entity was last modified. The Timestamp type represents date and time
-  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // max attainable score for the control.
-  var maxScore: js.UndefOr[NullableOption[Double]] = js.native
+  var maxScore: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Microsoft's stack ranking of control.
-  var rank: js.UndefOr[NullableOption[Double]] = js.native
+  var rank: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Description of what the control will help remediate.
-  var remediation: js.UndefOr[NullableOption[String]] = js.native
+  var remediation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Description of the impact on users of the remediation.
-  var remediationImpact: js.UndefOr[NullableOption[String]] = js.native
+  var remediationImpact: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Service that owns the control (Exchange, Sharepoint, Azure AD).
-  var service: js.UndefOr[NullableOption[String]] = js.native
+  var service: js.UndefOr[NullableOption[String]] = js.undefined
   
   // List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,
-  var threats: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var threats: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  var tier: js.UndefOr[NullableOption[String]] = js.native
+  var tier: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Title of the control.
-  var title: js.UndefOr[NullableOption[String]] = js.native
+  var title: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var userImpact: js.UndefOr[NullableOption[String]] = js.native
+  var userImpact: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var vendorInformation: js.UndefOr[NullableOption[SecurityVendorInformation]] = js.native
+  var vendorInformation: js.UndefOr[NullableOption[SecurityVendorInformation]] = js.undefined
 }
 object SecureScoreControlProfile {
   

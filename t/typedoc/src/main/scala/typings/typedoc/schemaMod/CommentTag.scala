@@ -2,19 +2,18 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.CommentTag, 'text'> */
-@js.native
 trait CommentTag
-  extends __ModelToObject[js.Any] {
+  extends StObject
+     with __ModelToObject[js.Any] {
   
-  var param: js.UndefOr[String] = js.native
+  var param: js.UndefOr[String] = js.undefined
   
-  var tag: String = js.native
+  var tag: String
   
-  var text: ModelToObject[String] | String = js.native
+  var text: ModelToObject[String] | String
 }
 object CommentTag {
   

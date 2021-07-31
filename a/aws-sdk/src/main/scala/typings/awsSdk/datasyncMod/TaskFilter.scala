@@ -2,26 +2,24 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskFilter extends StObject {
   
   /**
     * The name of the filter being used. Each API call supports a list of filters that are available for it. For example, LocationId for ListTasks.
     */
-  var Name: TaskFilterName = js.native
+  var Name: TaskFilterName
   
   /**
     * The operator that is used to compare filter values (for example, Equals or Contains). For more about API filtering operators, see query-resources.
     */
-  var Operator: typings.awsSdk.datasyncMod.Operator = js.native
+  var Operator: typings.awsSdk.datasyncMod.Operator
   
   /**
     * The values that you want to filter for. For example, you might want to display only tasks for a specific destination location.
     */
-  var Values: FilterValues = js.native
+  var Values: FilterValues
 }
 object TaskFilter {
   

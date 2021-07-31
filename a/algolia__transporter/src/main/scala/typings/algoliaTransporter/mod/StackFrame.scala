@@ -3,31 +3,29 @@ package typings.algoliaTransporter.mod
 import typings.algoliaRequesterCommon.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackFrame extends StObject {
   
   /**
     * The host associated with the `request` and the `response`.
     */
-  val host: StatelessHost = js.native
+  val host: StatelessHost
   
   /**
     * The request made.
     */
-  val request: typings.algoliaRequesterCommon.mod.Request = js.native
+  val request: typings.algoliaRequesterCommon.mod.Request
   
   /**
     * The received response.
     */
-  val response: Response = js.native
+  val response: Response
   
   /**
     * The number of tries left.
     */
-  val triesLeft: Double = js.native
+  val triesLeft: Double
 }
 object StackFrame {
   

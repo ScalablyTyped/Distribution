@@ -5,19 +5,17 @@ import typings.node.httpMod.ServerResponse
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RewriteRules extends StObject {
   
   var fn: js.UndefOr[
     js.Function3[/* req */ IncomingMessage, /* res */ ServerResponse, /* match */ String, String]
-  ] = js.native
+  ] = js.undefined
   
-  var `match`: RegExp = js.native
+  var `match`: RegExp
   
-  var replace: js.UndefOr[String] = js.native
+  var replace: js.UndefOr[String] = js.undefined
 }
 object RewriteRules {
   

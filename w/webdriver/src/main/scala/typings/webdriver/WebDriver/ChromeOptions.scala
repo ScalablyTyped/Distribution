@@ -2,152 +2,181 @@ package typings.webdriver.WebDriver
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.webdriver.anon.BufferUsageReportingInterval
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChromeOptions extends js.Object {
+trait ChromeOptions extends StObject {
+  
   /**
     * List of command-line arguments to use when starting Chrome. Arguments with an
     * associated value should be separated by a '=' sign (e.g., `['start-maximized', 'user-data-dir=/tmp/temp_profile']`).
     * See here for a list of Chrome arguments.
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * Path to the Chrome executable to use (on Mac OS X, this should be the actual binary,
     * not just the app. e.g., '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')
     */
-  var binary: js.UndefOr[String] = js.native
+  var binary: js.UndefOr[String] = js.undefined
+  
   /**
     * An address of a Chrome debugger server to connect to, in the form of `<hostname/ip:port>`,
     * e.g. '127.0.0.1:38947'
     */
-  var debuggerAddress: js.UndefOr[String] = js.native
+  var debuggerAddress: js.UndefOr[String] = js.undefined
+  
   /**
     * If false, Chrome will be quit when ChromeDriver is killed, regardless of whether
     * the session is quit. If true, Chrome will only be quit if the session is quit
     * (or closed). Note, if true, and the session is not quit, ChromeDriver cannot clean
     * up the temporary user data directory that the running Chrome instance is using.
     */
-  var detach: js.UndefOr[Boolean] = js.native
+  var detach: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * List of Chrome command line switches to exclude that ChromeDriver by default passes
     * when starting Chrome.  Do not prefix switches with --.
     */
-  var excludeSwitches: js.UndefOr[js.Array[String]] = js.native
+  var excludeSwitches: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * A list of Chrome extensions to install on startup. Each item in the list should
     * be a base-64 encoded packed Chrome extension (.crx)
     */
-  var extensions: js.UndefOr[js.Array[String]] = js.native
+  var extensions: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * A dictionary with each entry consisting of the name of the preference and its value.
     * These preferences are applied to the Local State file in the user data folder.
     */
-  var localState: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var localState: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  
   /**
     * Directory to store Chrome minidumps . (Supported only on Linux.)
     */
-  var minidumpPath: js.UndefOr[String] = js.native
+  var minidumpPath: js.UndefOr[String] = js.undefined
+  
   /**
     * 	A dictionary with either a value for “deviceName,” or values for “deviceMetrics” and
     * “userAgent.” Refer to Mobile Emulation for more information.
     */
-  var mobileEmulation: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var mobileEmulation: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  
   /**
     * An optional dictionary that specifies performance logging preferences. See
     * [Chromedriver docs](http://chromedriver.chromium.org/capabilities) for
     * more information.
     */
-  var perfLoggingPrefs: js.UndefOr[BufferUsageReportingInterval] = js.native
+  var perfLoggingPrefs: js.UndefOr[BufferUsageReportingInterval] = js.undefined
+  
   /**
     * A dictionary with each entry consisting of the name of the preference and its value.
     * These preferences are only applied to the user profile in use. See the 'Preferences'
     * file in Chrome's user data directory for examples.
     */
-  var prefs: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.native
+  var prefs: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.undefined
+  
   /**
     * A list of window types that will appear in the list of window handles. For access
     * to <webview> elements, include "webview" in this list.
     */
-  var windowTypes: js.UndefOr[js.Array[String]] = js.native
+  var windowTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object ChromeOptions {
+  
   @scala.inline
   def apply(): ChromeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChromeOptions]
   }
-  @scala.inline
-  implicit class ChromeOptionsOps[Self <: ChromeOptions] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
-    @scala.inline
-    def setBinary(value: String): Self = this.set("binary", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
-    @scala.inline
-    def setDebuggerAddress(value: String): Self = this.set("debuggerAddress", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteDebuggerAddress: Self = this.set("debuggerAddress", js.undefined)
-    @scala.inline
-    def setDetach(value: Boolean): Self = this.set("detach", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteDetach: Self = this.set("detach", js.undefined)
-    @scala.inline
-    def setExcludeSwitchesVarargs(value: String*): Self = this.set("excludeSwitches", js.Array(value :_*))
-    @scala.inline
-    def setExcludeSwitches(value: js.Array[String]): Self = this.set("excludeSwitches", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteExcludeSwitches: Self = this.set("excludeSwitches", js.undefined)
-    @scala.inline
-    def setExtensionsVarargs(value: String*): Self = this.set("extensions", js.Array(value :_*))
-    @scala.inline
-    def setExtensions(value: js.Array[String]): Self = this.set("extensions", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
-    @scala.inline
-    def setLocalState(value: StringDictionary[js.Any]): Self = this.set("localState", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteLocalState: Self = this.set("localState", js.undefined)
-    @scala.inline
-    def setMinidumpPath(value: String): Self = this.set("minidumpPath", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteMinidumpPath: Self = this.set("minidumpPath", js.undefined)
-    @scala.inline
-    def setMobileEmulation(value: StringDictionary[js.Any]): Self = this.set("mobileEmulation", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteMobileEmulation: Self = this.set("mobileEmulation", js.undefined)
-    @scala.inline
-    def setPerfLoggingPrefs(value: BufferUsageReportingInterval): Self = this.set("perfLoggingPrefs", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deletePerfLoggingPrefs: Self = this.set("perfLoggingPrefs", js.undefined)
-    @scala.inline
-    def setPrefs(value: StringDictionary[String | Double | Boolean]): Self = this.set("prefs", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deletePrefs: Self = this.set("prefs", js.undefined)
-    @scala.inline
-    def setWindowTypesVarargs(value: String*): Self = this.set("windowTypes", js.Array(value :_*))
-    @scala.inline
-    def setWindowTypes(value: js.Array[String]): Self = this.set("windowTypes", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteWindowTypes: Self = this.set("windowTypes", js.undefined)
-  }
   
+  @scala.inline
+  implicit class ChromeOptionsMutableBuilder[Self <: ChromeOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    
+    @scala.inline
+    def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    
+    @scala.inline
+    def setDebuggerAddress(value: String): Self = StObject.set(x, "debuggerAddress", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDebuggerAddressUndefined: Self = StObject.set(x, "debuggerAddress", js.undefined)
+    
+    @scala.inline
+    def setDetach(value: Boolean): Self = StObject.set(x, "detach", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDetachUndefined: Self = StObject.set(x, "detach", js.undefined)
+    
+    @scala.inline
+    def setExcludeSwitches(value: js.Array[String]): Self = StObject.set(x, "excludeSwitches", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setExcludeSwitchesUndefined: Self = StObject.set(x, "excludeSwitches", js.undefined)
+    
+    @scala.inline
+    def setExcludeSwitchesVarargs(value: String*): Self = StObject.set(x, "excludeSwitches", js.Array(value :_*))
+    
+    @scala.inline
+    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    
+    @scala.inline
+    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    
+    @scala.inline
+    def setLocalState(value: StringDictionary[js.Any]): Self = StObject.set(x, "localState", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocalStateUndefined: Self = StObject.set(x, "localState", js.undefined)
+    
+    @scala.inline
+    def setMinidumpPath(value: String): Self = StObject.set(x, "minidumpPath", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMinidumpPathUndefined: Self = StObject.set(x, "minidumpPath", js.undefined)
+    
+    @scala.inline
+    def setMobileEmulation(value: StringDictionary[js.Any]): Self = StObject.set(x, "mobileEmulation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMobileEmulationUndefined: Self = StObject.set(x, "mobileEmulation", js.undefined)
+    
+    @scala.inline
+    def setPerfLoggingPrefs(value: BufferUsageReportingInterval): Self = StObject.set(x, "perfLoggingPrefs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPerfLoggingPrefsUndefined: Self = StObject.set(x, "perfLoggingPrefs", js.undefined)
+    
+    @scala.inline
+    def setPrefs(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
+    
+    @scala.inline
+    def setWindowTypes(value: js.Array[String]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
+    
+    @scala.inline
+    def setWindowTypesVarargs(value: String*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
+  }
 }
-

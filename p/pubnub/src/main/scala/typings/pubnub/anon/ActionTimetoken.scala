@@ -2,15 +2,13 @@ package typings.pubnub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionTimetoken extends StObject {
   
-  var actionTimetoken: String | Double = js.native
+  var actionTimetoken: String | Double
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object ActionTimetoken {
   

@@ -2,20 +2,21 @@ package typings.ignore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("ignore", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new ignore manager.
     */
-  @JSImport("ignore", JSImport.Default)
-  @js.native
-  def default(): Ignore = js.native
-  @JSImport("ignore", JSImport.Default)
-  @js.native
-  def default(options: Options): Ignore = js.native
+  @scala.inline
+  def default(): Ignore = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Ignore]
+  @scala.inline
+  def default(options: Options): Ignore = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Ignore]
   
   @js.native
   trait Ignore extends StObject {
@@ -56,10 +57,9 @@ object mod {
     def ignores(pathname: String): Boolean = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var ignorecase: js.UndefOr[Boolean] = js.native
+    var ignorecase: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

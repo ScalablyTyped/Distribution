@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,11 +26,17 @@ sealed trait FeedbackType extends StObject
 object FeedbackType extends StObject {
   
   @js.native
-  sealed trait CORRECT extends FeedbackType
+  sealed trait CORRECT
+    extends StObject
+       with FeedbackType
   
   @js.native
-  sealed trait GENERAL extends FeedbackType
+  sealed trait GENERAL
+    extends StObject
+       with FeedbackType
   
   @js.native
-  sealed trait INCORRECT extends FeedbackType
+  sealed trait INCORRECT
+    extends StObject
+       with FeedbackType
 }

@@ -2,7 +2,6 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usingObservableMod {
@@ -15,16 +14,19 @@ object usingObservableMod {
   /* static members */
   object UsingObservable {
     
-    @JSImport("rxjs/observable/UsingObservable", "UsingObservable.create")
+    @JSImport("rxjs/observable/UsingObservable", "UsingObservable")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def create[T](
       resourceFactory: js.Function0[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Unsubscribable */ _) | Unit
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Unsubscribable */ js.Any) | Unit
         ],
       observableFactory: js.Function1[
           /* resource */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Unsubscribable */ js.Any) | Unit, 
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ _) | Unit
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ js.Any) | Unit
         ]
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(resourceFactory.asInstanceOf[js.Any], observableFactory.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

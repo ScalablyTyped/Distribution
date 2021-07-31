@@ -2,25 +2,23 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Theme extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var bodyBorder: String = js.native
+  var bodyBorder: String
   
-  var bodyContent: String = js.native
+  var bodyContent: String
   
-  var bodyContentBorder: String = js.native
+  var bodyContentBorder: String
   
-  var header: String = js.native
+  var header: String
   
-  var headerBorder: String = js.native
+  var headerBorder: String
   
-  var label: String = js.native
+  var label: String
 }
 object Theme {
   

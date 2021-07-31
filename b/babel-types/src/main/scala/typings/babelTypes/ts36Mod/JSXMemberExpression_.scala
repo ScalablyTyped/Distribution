@@ -3,21 +3,20 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.JSXMemberExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXMemberExpression_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with JSX {
   
-  var `object`: JSXMemberExpression_ | JSXIdentifier_ = js.native
+  var `object`: JSXMemberExpression_ | JSXIdentifier_
   
-  var property: JSXIdentifier_ = js.native
+  var property: JSXIdentifier_
   
   @JSName("type")
-  var type_JSXMemberExpression_ : JSXMemberExpression = js.native
+  var type_JSXMemberExpression_ : JSXMemberExpression
 }
 object JSXMemberExpression_ {
   
@@ -27,12 +26,11 @@ object JSXMemberExpression_ {
     loc: SourceLocation,
     `object`: JSXMemberExpression_ | JSXIdentifier_,
     property: JSXIdentifier_,
-    start: Double,
-    `type`: JSXMemberExpression
+    start: Double
   ): JSXMemberExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXMemberExpression")
     __obj.asInstanceOf[JSXMemberExpression_]
   }
   

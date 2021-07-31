@@ -4,13 +4,13 @@ import typings.agGrid.columnApiMod.ColumnApi
 import typings.agGrid.gridApiMod.GridApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlashCellsEvent extends AgGridEvent {
+trait FlashCellsEvent
+  extends StObject
+     with AgGridEvent {
   
-  var cells: js.Any = js.native
+  var cells: js.Any
 }
 object FlashCellsEvent {
   

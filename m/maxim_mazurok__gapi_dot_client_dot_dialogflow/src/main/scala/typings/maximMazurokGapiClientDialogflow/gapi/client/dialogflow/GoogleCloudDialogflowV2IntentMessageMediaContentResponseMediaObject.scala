@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject extends StObject {
   
   /** Required. Url where the media is stored. */
-  var contentUrl: js.UndefOr[String] = js.native
+  var contentUrl: js.UndefOr[String] = js.undefined
   
   /** Optional. Description of media card. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Optional. Icon to display above media content. */
-  var icon: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.native
+  var icon: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.undefined
   
   /** Optional. Image to display above media content. */
-  var largeImage: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.native
+  var largeImage: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.undefined
   
   /** Required. Name of media card. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject {
   

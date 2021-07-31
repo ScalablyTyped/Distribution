@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2SecurityGroupPrefixListId extends StObject {
   
   /**
     * The ID of the prefix.
     */
-  var PrefixListId: js.UndefOr[NonEmptyString] = js.native
+  var PrefixListId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsEc2SecurityGroupPrefixListId {
   

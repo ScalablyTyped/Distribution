@@ -2,17 +2,15 @@ package typings.reactWeui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveIcon extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var icon: Boolean = js.native
+  var icon: Boolean
   
-  var label: String = js.native
+  var label: String
 }
 object ActiveIcon {
   

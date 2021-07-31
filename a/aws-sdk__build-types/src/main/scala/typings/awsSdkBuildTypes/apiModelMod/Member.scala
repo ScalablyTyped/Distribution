@@ -2,21 +2,19 @@ package typings.awsSdkBuildTypes.apiModelMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Member extends StObject {
   
-  var documentation: js.UndefOr[java.lang.String] = js.native
+  var documentation: js.UndefOr[java.lang.String] = js.undefined
   
-  var flattened: js.UndefOr[scala.Boolean] = js.native
+  var flattened: js.UndefOr[scala.Boolean] = js.undefined
   
-  var locationName: js.UndefOr[java.lang.String] = js.native
+  var locationName: js.UndefOr[java.lang.String] = js.undefined
   
-  var shape: java.lang.String = js.native
+  var shape: java.lang.String
   
-  var xmlAttribute: js.UndefOr[scala.Boolean] = js.native
+  var xmlAttribute: js.UndefOr[scala.Boolean] = js.undefined
 }
 object Member {
   

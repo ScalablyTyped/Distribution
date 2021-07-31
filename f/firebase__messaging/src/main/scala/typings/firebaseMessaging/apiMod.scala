@@ -7,27 +7,26 @@ import typings.firebaseMessaging.tokenDetailsMod.SubscriptionOptions
 import typings.firebaseMessaging.tokenDetailsMod.TokenDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiMod {
   
-  @JSImport("@firebase/messaging/dist/core/api", "requestDeleteToken")
+  @JSImport("@firebase/messaging/dist/core/api", JSImport.Namespace)
   @js.native
-  def requestDeleteToken(firebaseDependencies: FirebaseInternalDependencies, token: String): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/messaging/dist/core/api", "requestGetToken")
-  @js.native
-  def requestGetToken(firebaseDependencies: FirebaseInternalDependencies, subscriptionOptions: SubscriptionOptions): js.Promise[String] = js.native
+  @scala.inline
+  def requestDeleteToken(firebaseDependencies: FirebaseInternalDependencies, token: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestDeleteToken")(firebaseDependencies.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@firebase/messaging/dist/core/api", "requestUpdateToken")
-  @js.native
-  def requestUpdateToken(firebaseDependencies: FirebaseInternalDependencies, tokenDetails: TokenDetails): js.Promise[String] = js.native
+  @scala.inline
+  def requestGetToken(firebaseDependencies: FirebaseInternalDependencies, subscriptionOptions: SubscriptionOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestGetToken")(firebaseDependencies.asInstanceOf[js.Any], subscriptionOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @js.native
+  @scala.inline
+  def requestUpdateToken(firebaseDependencies: FirebaseInternalDependencies, tokenDetails: TokenDetails): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestUpdateToken")(firebaseDependencies.asInstanceOf[js.Any], tokenDetails.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
   trait ApiRequestBody extends StObject {
     
-    var web: ApplicationPubKey = js.native
+    var web: ApplicationPubKey
   }
   object ApiRequestBody {
     
@@ -45,12 +44,11 @@ object apiMod {
     }
   }
   
-  @js.native
   trait ApiResponse extends StObject {
     
-    var error: js.UndefOr[Message] = js.native
+    var error: js.UndefOr[Message] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object ApiResponse {
     

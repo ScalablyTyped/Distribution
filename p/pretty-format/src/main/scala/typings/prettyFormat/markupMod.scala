@@ -6,47 +6,44 @@ import typings.prettyFormat.typesMod.Refs
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object markupMod {
   
-  @JSImport("pretty-format/build/plugins/lib/markup", "printChildren")
+  @JSImport("pretty-format/build/plugins/lib/markup", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def printChildren(
-    children: js.Array[_],
+    children: js.Array[js.Any],
     config: Config,
     indentation: String,
     depth: Double,
     refs: Refs,
     printer: Printer
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printChildren")(children.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("pretty-format/build/plugins/lib/markup", "printComment")
-  @js.native
-  def printComment(comment: String, config: Config): String = js.native
+  @scala.inline
+  def printComment(comment: String, config: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printComment")(comment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("pretty-format/build/plugins/lib/markup", "printElement")
-  @js.native
-  def printElement(`type`: String, printedProps: String, printedChildren: String, config: Config, indentation: String): String = js.native
+  @scala.inline
+  def printElement(`type`: String, printedProps: String, printedChildren: String, config: Config, indentation: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printElement")(`type`.asInstanceOf[js.Any], printedProps.asInstanceOf[js.Any], printedChildren.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("pretty-format/build/plugins/lib/markup", "printElementAsLeaf")
-  @js.native
-  def printElementAsLeaf(`type`: String, config: Config): String = js.native
+  @scala.inline
+  def printElementAsLeaf(`type`: String, config: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printElementAsLeaf")(`type`.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("pretty-format/build/plugins/lib/markup", "printProps")
-  @js.native
+  @scala.inline
   def printProps(
     keys: js.Array[String],
-    props: Record[String, _],
+    props: Record[String, js.Any],
     config: Config,
     indentation: String,
     depth: Double,
     refs: Refs,
     printer: Printer
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printProps")(keys.asInstanceOf[js.Any], props.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("pretty-format/build/plugins/lib/markup", "printText")
-  @js.native
-  def printText(text: String, config: Config): String = js.native
+  @scala.inline
+  def printText(text: String, config: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printText")(text.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -2,17 +2,15 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3 extends StObject {
   
-  var Bucket: js.UndefOr[string] = js.native
+  var Bucket: js.UndefOr[string] = js.undefined
   
-  var Enabled: boolean = js.native
+  var Enabled: boolean
   
-  var Prefix: js.UndefOr[string] = js.native
+  var Prefix: js.UndefOr[string] = js.undefined
 }
 object S3 {
   

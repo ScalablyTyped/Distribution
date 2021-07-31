@@ -4,17 +4,15 @@ import typings.monacoEditor.mod.IRange
 import typings.monacoEditor.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILink extends StObject {
   
-  var range: IRange = js.native
+  var range: IRange
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[Uri | String] = js.native
+  var url: js.UndefOr[Uri | String] = js.undefined
 }
 object ILink {
   

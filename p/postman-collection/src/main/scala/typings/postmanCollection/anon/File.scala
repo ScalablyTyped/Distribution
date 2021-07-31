@@ -2,19 +2,17 @@ package typings.postmanCollection.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
-  var file: String = js.native
+  var file: String
   
-  var formdata: String = js.native
+  var formdata: String
   
-  var raw: String = js.native
+  var raw: String
   
-  var urlencoded: String = js.native
+  var urlencoded: String
 }
 object File {
   

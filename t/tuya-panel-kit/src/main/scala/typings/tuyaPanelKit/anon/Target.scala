@@ -3,30 +3,28 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.tuyaPanelKitStrings.RESET
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Target extends StObject {
   
   var payload: js.UndefOr[
     Readonlykeystringindexnum | PartialStateReadonlykeyst | PickReadonlykeystringinde
-  ] = js.native
+  ] = js.undefined
   
   // tslint:disable-next-line no-redundant-undefined
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   // tslint:disable-next-line no-redundant-undefined
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: RESET = js.native
+  var `type`: RESET
 }
 object Target {
   
   @scala.inline
-  def apply(`type`: RESET): Target = {
+  def apply(): Target = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RESET")
     __obj.asInstanceOf[Target]
   }
   

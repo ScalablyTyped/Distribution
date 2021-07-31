@@ -10,9 +10,9 @@ Support import, export, and JSX in markdown
 | ------------------ | :-------------: |
 | Full name          | remark-mdx |
 | Keywords           | mdx, markdown, react, jsx, remark, mdxast |
-| # releases         | 98 |
+| # releases         | 104 |
 | # dependents       | 28 |
-| # downloads        | 28633170 |
+| # downloads        | 44386079 |
 | # stars            | 0 |
 
 ## Links

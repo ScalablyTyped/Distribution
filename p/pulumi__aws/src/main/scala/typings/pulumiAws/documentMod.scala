@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentMod {
@@ -133,6 +132,10 @@ object documentMod {
   /* static members */
   object Document {
     
+    @JSImport("@pulumi/aws/ssm/document", "Document")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Document resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -142,70 +145,64 @@ object documentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ssm/document", "Document.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Document = js.native
-    @JSImport("@pulumi/aws/ssm/document", "Document.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Document = js.native
-    @JSImport("@pulumi/aws/ssm/document", "Document.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DocumentState): Document = js.native
-    @JSImport("@pulumi/aws/ssm/document", "Document.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DocumentState, opts: CustomResourceOptions): Document = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Document]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Document]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DocumentState): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Document]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DocumentState, opts: CustomResourceOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Document]
     
     /**
       * Returns true if the given object is an instance of Document.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ssm/document", "Document.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/document.Document */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/document.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/document.Document */ Boolean]
   }
   
-  @js.native
   trait DocumentArgs extends StObject {
     
     /**
       * One or more configuration blocks describing attachments sources to a version of a document. Defined below.
       */
-    val attachmentsSources: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]]]] = js.native
+    val attachmentsSources: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]]]] = js.undefined
     
     /**
       * The JSON or YAML content of the document.
       */
-    val content: Input[String] = js.native
+    val content: Input[String]
     
     /**
       * The format of the document. Valid document types include: `JSON` and `YAML`
       */
-    val documentFormat: js.UndefOr[Input[String]] = js.native
+    val documentFormat: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the document. Valid document types include: `Automation`, `Command`, `Package`, `Policy`, and `Session`
       */
-    val documentType: Input[String] = js.native
+    val documentType: Input[String]
     
     /**
       * The name of the document.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Additional Permissions to attach to the document. See Permissions below for details.
       */
-    val permissions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val permissions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the object.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS Resource Types Reference (http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
       */
-    val targetType: js.UndefOr[Input[String]] = js.native
+    val targetType: js.UndefOr[Input[String]] = js.undefined
   }
   object DocumentArgs {
     
@@ -265,110 +262,109 @@ object documentMod {
     }
   }
   
-  @js.native
   trait DocumentState extends StObject {
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more configuration blocks describing attachments sources to a version of a document. Defined below.
       */
-    val attachmentsSources: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]]]] = js.native
+    val attachmentsSources: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]]]] = js.undefined
     
     /**
       * The JSON or YAML content of the document.
       */
-    val content: js.UndefOr[Input[String]] = js.native
+    val content: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The date the document was created.
       */
-    val createdDate: js.UndefOr[Input[String]] = js.native
+    val createdDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The default version of the document.
       */
-    val defaultVersion: js.UndefOr[Input[String]] = js.native
+    val defaultVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the document.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The format of the document. Valid document types include: `JSON` and `YAML`
       */
-    val documentFormat: js.UndefOr[Input[String]] = js.native
+    val documentFormat: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the document. Valid document types include: `Automation`, `Command`, `Package`, `Policy`, and `Session`
       */
-    val documentType: js.UndefOr[Input[String]] = js.native
+    val documentType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The document version.
       */
-    val documentVersion: js.UndefOr[Input[String]] = js.native
+    val documentVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The sha1 or sha256 of the document content
       */
-    val hash: js.UndefOr[Input[String]] = js.native
+    val hash: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * "Sha1" "Sha256". The hashing algorithm used when hashing the content.
       */
-    val hashType: js.UndefOr[Input[String]] = js.native
+    val hashType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The latest version of the document.
       */
-    val latestVersion: js.UndefOr[Input[String]] = js.native
+    val latestVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the document.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS user account of the person who created the document.
       */
-    val owner: js.UndefOr[Input[String]] = js.native
+    val owner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The parameters that are available to this document.
       */
-    val parameters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentParameter]]]] = js.native
+    val parameters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentParameter]]]] = js.undefined
     
     /**
       * Additional Permissions to attach to the document. See Permissions below for details.
       */
-    val permissions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val permissions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A list of OS platforms compatible with this SSM document, either "Windows" or "Linux".
       */
-    val platformTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val platformTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The schema version of the document.
       */
-    val schemaVersion: js.UndefOr[Input[String]] = js.native
+    val schemaVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * "Creating", "Active" or "Deleting". The current status of the document.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the object.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS Resource Types Reference (http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
       */
-    val targetType: js.UndefOr[Input[String]] = js.native
+    val targetType: js.UndefOr[Input[String]] = js.undefined
   }
   object DocumentState {
     

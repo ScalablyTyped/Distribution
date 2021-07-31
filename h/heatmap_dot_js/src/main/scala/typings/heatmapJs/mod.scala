@@ -7,10 +7,13 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("heatmap.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("heatmap.js", "Heatmap")
   @js.native
@@ -145,9 +148,8 @@ object mod {
     def setDataMin(number: Double): this.type = js.native
   }
   
-  @JSImport("heatmap.js", "create")
-  @js.native
-  def create[V /* <: String */, X /* <: String */, Y /* <: String */](configObject: HeatmapConfiguration[V, X, Y]): Heatmap[V, X, Y] = js.native
+  @scala.inline
+  def create[V /* <: String */, X /* <: String */, Y /* <: String */](configObject: HeatmapConfiguration[V, X, Y]): Heatmap[V, X, Y] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(configObject.asInstanceOf[js.Any]).asInstanceOf[Heatmap[V, X, Y]]
   
   object global {
     
@@ -188,79 +190,77 @@ object mod {
     }
   }
   
-  @JSImport("heatmap.js", "register")
-  @js.native
-  def register(pluginKey: String, plugin: js.Any): Unit = js.native
+  @scala.inline
+  def register(pluginKey: String, plugin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(pluginKey.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait BaseHeatmapConfiguration[V /* <: String */] extends StObject {
     
     /**
       * A background color string in form of hexcode, color name, or rgb(a)
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * The blur factor that will be applied to all datapoints. The higher the
       * blur factor is, the smoother the gradients will be
       * Default value: 0.85
       */
-    var blur: js.UndefOr[Double] = js.native
+    var blur: js.UndefOr[Double] = js.undefined
     
     /**
       * An object that represents the gradient.
       * Syntax: {[key: number in range [0,1]]: color}
       */
-    var gradient: js.UndefOr[StringDictionary[String]] = js.native
+    var gradient: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The maximal opacity the highest value in the heatmap will have. (will be
       * overridden if opacity set)
       * Default value: 0.6
       */
-    var maxOpacity: js.UndefOr[Double] = js.native
+    var maxOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum opacity the lowest value in the heatmap will have (will be
       * overridden if opacity set)
       */
-    var minOpacity: js.UndefOr[Double] = js.native
+    var minOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * Pass a callback to receive extrema change updates. Useful for DOM
       * legends.
       */
-    var onExtremaChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExtremaChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A global opacity for the whole heatmap. This overrides maxOpacity and
       * minOpacity if set
       * Default value: 0.6
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * The radius each datapoint will have (if not specified on the datapoint
       * itself)
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /**
       * Scales the radius based on map zoom.
       */
-    var scaleRadius: js.UndefOr[Boolean] = js.native
+    var scaleRadius: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicate whether the heatmap should use a global extrema or a local
       * extrema (the maximum and minimum of the currently displayed viewport)
       */
-    var useLocalExtrema: js.UndefOr[Boolean] = js.native
+    var useLocalExtrema: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The property name of the value/weight in a datapoint
       * Default value: 'value'
       */
-    var valueField: js.UndefOr[V] = js.native
+    var valueField: js.UndefOr[V] = js.undefined
   }
   object BaseHeatmapConfiguration {
     
@@ -271,7 +271,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BaseHeatmapConfigurationMutableBuilder[Self <: BaseHeatmapConfiguration[_], V /* <: String */] (val x: Self with BaseHeatmapConfiguration[V]) extends AnyVal {
+    implicit class BaseHeatmapConfigurationMutableBuilder[Self <: BaseHeatmapConfiguration[?], V /* <: String */] (val x: Self & BaseHeatmapConfiguration[V]) extends AnyVal {
       
       @scala.inline
       def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
@@ -341,16 +341,15 @@ object mod {
     }
   }
   
-  @js.native
   trait DataCircle extends StObject {
     
-    var radius: Double = js.native
+    var radius: Double
     
-    var value: Double = js.native
+    var value: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object DataCircle {
     
@@ -379,26 +378,27 @@ object mod {
   
   type DataPoint[V /* <: String */, X /* <: String */, Y /* <: String */] = Record[V | X | Y, Double]
   
-  @js.native
-  trait HeatmapConfiguration[V /* <: String */, X /* <: String */, Y /* <: String */] extends BaseHeatmapConfiguration[V] {
+  trait HeatmapConfiguration[V /* <: String */, X /* <: String */, Y /* <: String */]
+    extends StObject
+       with BaseHeatmapConfiguration[V] {
     
     /**
       * A DOM node where the heatmap canvas should be appended (heatmap will adapt to
       * the node's size)
       */
-    var container: HTMLElement = js.native
+    var container: HTMLElement
     
     /**
       * The property name of your x coordinate in a datapoint
       * Default value: 'x'
       */
-    var xField: js.UndefOr[X] = js.native
+    var xField: js.UndefOr[X] = js.undefined
     
     /**
       * The property name of your y coordinate in a datapoint
       * Default value: 'y'
       */
-    var yField: js.UndefOr[Y] = js.native
+    var yField: js.UndefOr[Y] = js.undefined
   }
   object HeatmapConfiguration {
     
@@ -409,7 +409,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HeatmapConfigurationMutableBuilder[Self <: HeatmapConfiguration[_, _, _], V /* <: String */, X /* <: String */, Y /* <: String */] (val x: Self with (HeatmapConfiguration[V, X, Y])) extends AnyVal {
+    implicit class HeatmapConfigurationMutableBuilder[Self <: HeatmapConfiguration[?, ?, ?], V /* <: String */, X /* <: String */, Y /* <: String */] (val x: Self & (HeatmapConfiguration[V, X, Y])) extends AnyVal {
       
       @scala.inline
       def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
@@ -428,23 +428,22 @@ object mod {
     }
   }
   
-  @js.native
   trait HeatmapData[T] extends StObject {
     
     /**
       * An array of data points
       */
-    var data: js.Array[T] = js.native
+    var data: js.Array[T]
     
     /**
       * Max value of the valueField
       */
-    var max: Double = js.native
+    var max: Double
     
     /**
       * Min value of the valueField
       */
-    var min: Double = js.native
+    var min: Double
   }
   object HeatmapData {
     
@@ -455,7 +454,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HeatmapDataMutableBuilder[Self <: HeatmapData[_], T] (val x: Self with HeatmapData[T]) extends AnyVal {
+    implicit class HeatmapDataMutableBuilder[Self <: HeatmapData[?], T] (val x: Self & HeatmapData[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -471,20 +470,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait HeatmapOverlayConfiguration[V /* <: String */, TLat /* <: String */, TLong /* <: String */] extends BaseHeatmapConfiguration[V] {
+  trait HeatmapOverlayConfiguration[V /* <: String */, TLat /* <: String */, TLong /* <: String */]
+    extends StObject
+       with BaseHeatmapConfiguration[V] {
     
     /**
       * The property name of your latitude coordinate in a datapoint
       * Default value: 'x'
       */
-    var latField: js.UndefOr[TLat] = js.native
+    var latField: js.UndefOr[TLat] = js.undefined
     
     /**
       * The property name of your longitude coordinate in a datapoint
       * Default value: 'y'
       */
-    var lngField: js.UndefOr[TLong] = js.native
+    var lngField: js.UndefOr[TLong] = js.undefined
   }
   object HeatmapOverlayConfiguration {
     
@@ -495,7 +495,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HeatmapOverlayConfigurationMutableBuilder[Self <: HeatmapOverlayConfiguration[_, _, _], V /* <: String */, TLat /* <: String */, TLong /* <: String */] (val x: Self with (HeatmapOverlayConfiguration[V, TLat, TLong])) extends AnyVal {
+    implicit class HeatmapOverlayConfigurationMutableBuilder[Self <: HeatmapOverlayConfiguration[?, ?, ?], V /* <: String */, TLat /* <: String */, TLong /* <: String */] (val x: Self & (HeatmapOverlayConfiguration[V, TLat, TLong])) extends AnyVal {
       
       @scala.inline
       def setLatField(value: TLat): Self = StObject.set(x, "latField", value.asInstanceOf[js.Any])

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudresourcemanager.gapi.client.cloudreso
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FolderOperationError extends StObject {
   
   /** The type of operation error experienced. */
-  var errorMessageId: js.UndefOr[String] = js.native
+  var errorMessageId: js.UndefOr[String] = js.undefined
 }
 object FolderOperationError {
   

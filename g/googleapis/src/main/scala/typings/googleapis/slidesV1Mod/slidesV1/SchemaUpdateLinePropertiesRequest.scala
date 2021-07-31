@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updates the properties of a Line.
   */
-@js.native
 trait SchemaUpdateLinePropertiesRequest extends StObject {
   
   /**
@@ -20,17 +18,17 @@ trait SchemaUpdateLinePropertiesRequest extends StObject {
     * default value, include its field name in the field mask but leave the
     * field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The line properties to update.
     */
-  var lineProperties: js.UndefOr[SchemaLineProperties] = js.native
+  var lineProperties: js.UndefOr[SchemaLineProperties] = js.undefined
   
   /**
     * The object ID of the line the update is applied to.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateLinePropertiesRequest {
   

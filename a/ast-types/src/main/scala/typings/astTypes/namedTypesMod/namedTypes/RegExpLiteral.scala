@@ -11,31 +11,30 @@ import typings.astTypes.typesMod.Type
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Literal, 'type' | 'value'> */
-@js.native
 trait RegExpLiteral
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with ExpressionKind
      with LiteralKind
      with NodeKind
      with PrintableKind {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var flags: String = js.native
+  var flags: String
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var pattern: String = js.native
+  var pattern: String
   
-  var regex: js.UndefOr[Flags | Null] = js.native
+  var regex: js.UndefOr[Flags | Null] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.RegExpLiteral = js.native
+  var `type`: typings.astTypes.astTypesStrings.RegExpLiteral
   
-  var value: js.UndefOr[RegExp] = js.native
+  var value: js.UndefOr[RegExp] = js.undefined
 }
 object RegExpLiteral {
   

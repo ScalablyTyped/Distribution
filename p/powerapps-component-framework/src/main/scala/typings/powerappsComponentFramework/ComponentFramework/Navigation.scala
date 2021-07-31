@@ -14,7 +14,6 @@ import typings.powerappsComponentFramework.ComponentFramework.NavigationApi.Open
 import typings.powerappsComponentFramework.ComponentFramework.NavigationApi.OpenWebResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -81,7 +80,7 @@ trait Navigation extends StObject {
     * @param data Data to be passed into the data parameter.
     */
   def openWebResource(name: String): Unit = js.native
-  def openWebResource(name: String, options: js.UndefOr[scala.Nothing], data: String): Unit = js.native
+  def openWebResource(name: String, options: Unit, data: String): Unit = js.native
   def openWebResource(name: String, options: OpenWebResourceOptions): Unit = js.native
   def openWebResource(name: String, options: OpenWebResourceOptions, data: String): Unit = js.native
 }

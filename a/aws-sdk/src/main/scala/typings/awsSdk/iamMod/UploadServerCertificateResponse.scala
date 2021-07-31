@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadServerCertificateResponse extends StObject {
   
   /**
     * The meta information of the uploaded server certificate without its certificate body, certificate chain, and private key.
     */
-  var ServerCertificateMetadata: js.UndefOr[typings.awsSdk.iamMod.ServerCertificateMetadata] = js.native
+  var ServerCertificateMetadata: js.UndefOr[typings.awsSdk.iamMod.ServerCertificateMetadata] = js.undefined
 }
 object UploadServerCertificateResponse {
   

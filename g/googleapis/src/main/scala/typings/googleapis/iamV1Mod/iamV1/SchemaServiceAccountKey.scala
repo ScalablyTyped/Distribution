@@ -2,7 +2,6 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,19 +18,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * latest keys.  Public keys for all service accounts are also published at
   * the OAuth2 Service Account API.
   */
-@js.native
 trait SchemaServiceAccountKey extends StObject {
   
   /**
     * Specifies the algorithm (and possibly key size) for the key.
     */
-  var keyAlgorithm: js.UndefOr[String] = js.native
+  var keyAlgorithm: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the service account key in the following format
     * `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}/keys/{key}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The private key data. Only provided in `CreateServiceAccountKey`
@@ -42,7 +40,7 @@ trait SchemaServiceAccountKey extends StObject {
     * href=&quot;/sdk/gcloud/reference/auth/activate-service-account&quot;&gt;gcloud
     * auth activate-service-account&lt;/a&gt;.
     */
-  var privateKeyData: js.UndefOr[String] = js.native
+  var privateKeyData: js.UndefOr[String] = js.undefined
   
   /**
     * The output format for the private key. Only provided in
@@ -50,22 +48,22 @@ trait SchemaServiceAccountKey extends StObject {
     * `ListServiceAccountKey` responses.  Google never exposes system-managed
     * private keys, and never retains user-managed private keys.
     */
-  var privateKeyType: js.UndefOr[String] = js.native
+  var privateKeyType: js.UndefOr[String] = js.undefined
   
   /**
     * The public key data. Only provided in `GetServiceAccountKey` responses.
     */
-  var publicKeyData: js.UndefOr[String] = js.native
+  var publicKeyData: js.UndefOr[String] = js.undefined
   
   /**
     * The key can be used after this timestamp.
     */
-  var validAfterTime: js.UndefOr[String] = js.native
+  var validAfterTime: js.UndefOr[String] = js.undefined
   
   /**
     * The key can be used before this timestamp.
     */
-  var validBeforeTime: js.UndefOr[String] = js.native
+  var validBeforeTime: js.UndefOr[String] = js.undefined
 }
 object SchemaServiceAccountKey {
   

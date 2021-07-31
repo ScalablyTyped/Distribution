@@ -4,15 +4,15 @@ import typings.react.mod.LiHTMLAttributes
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DropdownItemProps extends LiHTMLAttributes[HTMLLIElement] {
+trait DropdownItemProps
+  extends StObject
+     with LiHTMLAttributes[HTMLLIElement] {
   
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object DropdownItemProps {
   

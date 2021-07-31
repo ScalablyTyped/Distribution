@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CropPropertiesSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to angle. */
-  var angleSuggested: js.UndefOr[Boolean] = js.native
+  var angleSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to offset_bottom. */
-  var offsetBottomSuggested: js.UndefOr[Boolean] = js.native
+  var offsetBottomSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to offset_left. */
-  var offsetLeftSuggested: js.UndefOr[Boolean] = js.native
+  var offsetLeftSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to offset_right. */
-  var offsetRightSuggested: js.UndefOr[Boolean] = js.native
+  var offsetRightSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to offset_top. */
-  var offsetTopSuggested: js.UndefOr[Boolean] = js.native
+  var offsetTopSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object CropPropertiesSuggestionState {
   

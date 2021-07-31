@@ -9,7 +9,6 @@ import typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus")
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientBatchStatus.
   * @param [properties] Properties to set
   */
-class ClientBatchStatus () extends IClientBatchStatus {
+class ClientBatchStatus ()
+  extends StObject
+     with IClientBatchStatus {
   def this(properties: IClientBatchStatus) = this()
   
   /** ClientBatchStatus batchId. */
@@ -42,6 +43,10 @@ class ClientBatchStatus () extends IClientBatchStatus {
 /* static members */
 object ClientBatchStatus {
   
+  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents an InvalidTransaction. */
   @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction")
   @js.native
@@ -49,7 +54,9 @@ object ClientBatchStatus {
     * Constructs a new InvalidTransaction.
     * @param [properties] Properties to set
     */
-  class InvalidTransaction () extends IInvalidTransaction {
+  class InvalidTransaction ()
+    extends StObject
+       with IInvalidTransaction {
     def this(properties: IInvalidTransaction) = this()
     
     /** InvalidTransaction extendedData. */
@@ -72,18 +79,20 @@ object ClientBatchStatus {
   }
   object InvalidTransaction {
     
+    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new InvalidTransaction instance using the specified properties.
       * @param [properties] Properties to set
       * @returns InvalidTransaction instance
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.create")
-    @js.native
-    def create(): InvalidTransaction = js.native
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.create")
-    @js.native
-    def create(properties: IInvalidTransaction): InvalidTransaction = js.native
+    @scala.inline
+    def create(): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[InvalidTransaction]
+    @scala.inline
+    def create(properties: IInvalidTransaction): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
     
     /**
       * Decodes an InvalidTransaction message from the specified reader or buffer.
@@ -94,18 +103,14 @@ object ClientBatchStatus {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.decode")
-    @js.native
-    def decode(reader: Reader): InvalidTransaction = js.native
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): InvalidTransaction = js.native
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.decode")
-    @js.native
-    def decode(reader: Uint8Array): InvalidTransaction = js.native
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): InvalidTransaction = js.native
+    @scala.inline
+    def decode(reader: Reader): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
+    @scala.inline
+    def decode(reader: Reader, length: Double): InvalidTransaction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[InvalidTransaction]
+    @scala.inline
+    def decode(reader: Uint8Array): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): InvalidTransaction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[InvalidTransaction]
     
     /**
       * Decodes an InvalidTransaction message from the specified reader or buffer, length delimited.
@@ -115,12 +120,10 @@ object ClientBatchStatus {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): InvalidTransaction = js.native
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): InvalidTransaction = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
     
     /**
       * Encodes the specified InvalidTransaction message. Does not implicitly {@link ClientBatchStatus.InvalidTransaction.verify|verify} messages.
@@ -129,12 +132,10 @@ object ClientBatchStatus {
       * @returns Writer
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.encode")
-    @js.native
-    def encode(message: IInvalidTransaction): Writer = js.native
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.encode")
-    @js.native
-    def encode(message: IInvalidTransaction, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IInvalidTransaction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IInvalidTransaction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified InvalidTransaction message, length delimited. Does not implicitly {@link ClientBatchStatus.InvalidTransaction.verify|verify} messages.
@@ -143,12 +144,10 @@ object ClientBatchStatus {
       * @returns Writer
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IInvalidTransaction): Writer = js.native
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IInvalidTransaction, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IInvalidTransaction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IInvalidTransaction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an InvalidTransaction message from a plain object. Also converts values to their respective internal types.
@@ -156,9 +155,8 @@ object ClientBatchStatus {
       * @returns InvalidTransaction
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): InvalidTransaction = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
     
     /**
       * Creates a plain object from an InvalidTransaction message. Also converts values to other types if specified.
@@ -167,12 +165,10 @@ object ClientBatchStatus {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.toObject")
-    @js.native
-    def toObject(message: InvalidTransaction): StringDictionary[js.Any] = js.native
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.toObject")
-    @js.native
-    def toObject(message: InvalidTransaction, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: InvalidTransaction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: InvalidTransaction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an InvalidTransaction message.
@@ -180,9 +176,8 @@ object ClientBatchStatus {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.InvalidTransaction.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   @js.native
@@ -193,27 +188,37 @@ object ClientBatchStatus {
   object Status extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Status with Double] = js.native
+    def apply(value: Double): js.UndefOr[Status & Double] = js.native
     
     @js.native
-    sealed trait COMMITTED extends Status
-    /* 1 */ val COMMITTED: typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status.COMMITTED with Double = js.native
+    sealed trait COMMITTED
+      extends StObject
+         with Status
+    /* 1 */ val COMMITTED: typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status.COMMITTED & Double = js.native
     
     @js.native
-    sealed trait INVALID extends Status
-    /* 2 */ val INVALID: typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status.INVALID with Double = js.native
+    sealed trait INVALID
+      extends StObject
+         with Status
+    /* 2 */ val INVALID: typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status.INVALID & Double = js.native
     
     @js.native
-    sealed trait PENDING extends Status
-    /* 3 */ val PENDING: typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status.PENDING with Double = js.native
+    sealed trait PENDING
+      extends StObject
+         with Status
+    /* 3 */ val PENDING: typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status.PENDING & Double = js.native
     
     @js.native
-    sealed trait STATUS_UNSET extends Status
-    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status.STATUS_UNSET with Double = js.native
+    sealed trait STATUS_UNSET
+      extends StObject
+         with Status
+    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status.STATUS_UNSET & Double = js.native
     
     @js.native
-    sealed trait UNKNOWN extends Status
-    /* 4 */ val UNKNOWN: typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status.UNKNOWN with Double = js.native
+    sealed trait UNKNOWN
+      extends StObject
+         with Status
+    /* 4 */ val UNKNOWN: typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status.UNKNOWN & Double = js.native
   }
   
   /**
@@ -221,12 +226,10 @@ object ClientBatchStatus {
     * @param [properties] Properties to set
     * @returns ClientBatchStatus instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.create")
-  @js.native
-  def create(): ClientBatchStatus = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.create")
-  @js.native
-  def create(properties: IClientBatchStatus): ClientBatchStatus = js.native
+  @scala.inline
+  def create(): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientBatchStatus]
+  @scala.inline
+  def create(properties: IClientBatchStatus): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
   
   /**
     * Decodes a ClientBatchStatus message from the specified reader or buffer.
@@ -236,18 +239,14 @@ object ClientBatchStatus {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.decode")
-  @js.native
-  def decode(reader: Reader): ClientBatchStatus = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ClientBatchStatus = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.decode")
-  @js.native
-  def decode(reader: Uint8Array): ClientBatchStatus = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ClientBatchStatus = js.native
+  @scala.inline
+  def decode(reader: Reader): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ClientBatchStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientBatchStatus]
+  @scala.inline
+  def decode(reader: Uint8Array): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ClientBatchStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientBatchStatus]
   
   /**
     * Decodes a ClientBatchStatus message from the specified reader or buffer, length delimited.
@@ -256,12 +255,10 @@ object ClientBatchStatus {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ClientBatchStatus = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ClientBatchStatus = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
   
   /**
     * Encodes the specified ClientBatchStatus message. Does not implicitly {@link ClientBatchStatus.verify|verify} messages.
@@ -269,12 +266,10 @@ object ClientBatchStatus {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.encode")
-  @js.native
-  def encode(message: IClientBatchStatus): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.encode")
-  @js.native
-  def encode(message: IClientBatchStatus, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IClientBatchStatus): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IClientBatchStatus, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ClientBatchStatus message, length delimited. Does not implicitly {@link ClientBatchStatus.verify|verify} messages.
@@ -282,21 +277,18 @@ object ClientBatchStatus {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientBatchStatus): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientBatchStatus, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IClientBatchStatus): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IClientBatchStatus, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ClientBatchStatus message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientBatchStatus
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ClientBatchStatus = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
   
   /**
     * Creates a plain object from a ClientBatchStatus message. Also converts values to other types if specified.
@@ -304,34 +296,30 @@ object ClientBatchStatus {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.toObject")
-  @js.native
-  def toObject(message: ClientBatchStatus): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.toObject")
-  @js.native
-  def toObject(message: ClientBatchStatus, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ClientBatchStatus): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ClientBatchStatus, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ClientBatchStatus message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatus.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an InvalidTransaction. */
-  @js.native
   trait IInvalidTransaction extends StObject {
     
     /** InvalidTransaction extendedData */
-    var extendedData: js.UndefOr[Uint8Array | Null] = js.native
+    var extendedData: js.UndefOr[Uint8Array | Null] = js.undefined
     
     /** InvalidTransaction message */
-    var message: js.UndefOr[String | Null] = js.native
+    var message: js.UndefOr[String | Null] = js.undefined
     
     /** InvalidTransaction transactionId */
-    var transactionId: js.UndefOr[String | Null] = js.native
+    var transactionId: js.UndefOr[String | Null] = js.undefined
   }
   object IInvalidTransaction {
     

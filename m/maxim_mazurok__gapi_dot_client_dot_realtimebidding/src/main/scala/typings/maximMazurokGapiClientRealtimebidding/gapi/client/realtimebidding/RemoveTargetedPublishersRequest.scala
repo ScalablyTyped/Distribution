@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTargetedPublishersRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait RemoveTargetedPublishersRequest extends StObject {
     * PretargetingConfig.publisherTargeting.values. Publishers are identified by their publisher ID from ads.txt / app-ads.txt. See https://iabtechlab.com/ads-txt/ and
     * https://iabtechlab.com/app-ads-txt/ for more details.
     */
-  var publisherIds: js.UndefOr[js.Array[String]] = js.native
+  var publisherIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RemoveTargetedPublishersRequest {
   

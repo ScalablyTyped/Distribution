@@ -7,7 +7,6 @@ import typings.plottable.componentMod.Component
 import typings.plottable.datasetMod.Dataset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
@@ -18,12 +17,11 @@ object interfacesMod {
   
   type AttributeToProjector = StringDictionary[Projector]
   
-  @js.native
   trait Bounds extends StObject {
     
-    var bottomRight: Point = js.native
+    var bottomRight: Point
     
-    var topLeft: Point = js.native
+    var topLeft: Point
   }
   object Bounds {
     
@@ -46,29 +44,34 @@ object interfacesMod {
   
   type IAccessor[T] = js.Function3[/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset, T]
   
-  @js.native
   trait IEntity[C /* <: Component */] extends StObject {
     
-    var bounds: IEntityBounds = js.native
+    var bounds: IEntityBounds
     
-    var component: C = js.native
+    var component: C
     
-    var datum: js.Any = js.native
+    var datum: js.Any
     
-    var position: Point = js.native
+    var position: Point
     
-    var selection: SimpleSelection[_] = js.native
+    var selection: SimpleSelection[js.Any]
   }
   object IEntity {
     
     @scala.inline
-    def apply[C /* <: Component */](bounds: IEntityBounds, component: C, datum: js.Any, position: Point, selection: SimpleSelection[_]): IEntity[C] = {
+    def apply[C /* <: Component */](
+      bounds: IEntityBounds,
+      component: C,
+      datum: js.Any,
+      position: Point,
+      selection: SimpleSelection[js.Any]
+    ): IEntity[C] = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEntity[C]]
     }
     
     @scala.inline
-    implicit class IEntityMutableBuilder[Self <: IEntity[_], C /* <: Component */] (val x: Self with IEntity[C]) extends AnyVal {
+    implicit class IEntityMutableBuilder[Self <: IEntity[?], C /* <: Component */] (val x: Self & IEntity[C]) extends AnyVal {
       
       @scala.inline
       def setBounds(value: IEntityBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
@@ -83,20 +86,19 @@ object interfacesMod {
       def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSelection(value: SimpleSelection[_]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      def setSelection(value: SimpleSelection[js.Any]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IEntityBounds extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object IEntityBounds {
     
@@ -125,12 +127,11 @@ object interfacesMod {
   
   type IRangeProjector[T] = js.Function4[/* value */ T, /* datum */ js.Any, /* index */ Double, /* dataset */ Dataset, T]
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     
@@ -153,12 +154,11 @@ object interfacesMod {
   
   type Projector = js.Function3[/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset, js.Any]
   
-  @js.native
   trait Range extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
   }
   object Range {
     
@@ -181,12 +181,11 @@ object interfacesMod {
   
   type SimpleSelection[Datum] = Selection_[BaseType, Datum | js.Object, js.Any, js.Any]
   
-  @js.native
   trait SpaceRequest extends StObject {
     
-    var minHeight: Double = js.native
+    var minHeight: Double
     
-    var minWidth: Double = js.native
+    var minWidth: Double
   }
   object SpaceRequest {
     

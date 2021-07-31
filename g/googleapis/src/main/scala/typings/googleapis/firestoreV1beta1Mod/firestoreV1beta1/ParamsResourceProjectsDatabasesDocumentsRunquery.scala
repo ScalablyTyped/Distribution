@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsDatabasesDocumentsRunquery extends StandardParameters {
+trait ParamsResourceProjectsDatabasesDocumentsRunquery
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The parent resource name. In the format:
@@ -24,12 +24,12 @@ trait ParamsResourceProjectsDatabasesDocumentsRunquery extends StandardParameter
     * For example: `projects/my-project/databases/my-database/documents` or
     * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaRunQueryRequest] = js.native
+  var requestBody: js.UndefOr[SchemaRunQueryRequest] = js.undefined
 }
 object ParamsResourceProjectsDatabasesDocumentsRunquery {
   

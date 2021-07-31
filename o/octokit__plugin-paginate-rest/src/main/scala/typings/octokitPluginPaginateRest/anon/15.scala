@@ -3,13 +3,11 @@ package typings.octokitPluginPaginateRest.anon
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `15` extends StObject {
   
-  var data: js.Array[Avatarurl] = js.native
+  var data: js.Array[Avatarurl]
 }
 object `15` {
   

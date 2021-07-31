@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendWorkerMessagesRequest extends StObject {
   
   /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains the job. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** The WorkerMessages to send. */
-  var workerMessages: js.UndefOr[js.Array[WorkerMessage]] = js.native
+  var workerMessages: js.UndefOr[js.Array[WorkerMessage]] = js.undefined
 }
 object SendWorkerMessagesRequest {
   

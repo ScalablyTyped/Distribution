@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePeopleConnectionsList extends StandardParameters {
+trait ParamsResourcePeopleConnectionsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The number of connections to include in the response. Valid values are
     * between 1 and 2000, inclusive. Defaults to 100.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The token of the page to be returned.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * **Required.** A field mask to restrict which fields on each person are
@@ -38,7 +38,7 @@ trait ParamsResourcePeopleConnectionsList extends StandardParameters {
     * relations * relationshipInterests * relationshipStatuses * residences *
     * sipAddresses * skills * taglines * urls * userDefined
     */
-  var personFields: js.UndefOr[String] = js.native
+  var personFields: js.UndefOr[String] = js.undefined
   
   /**
     * **Required.** Comma-separated list of person fields to be included in the
@@ -46,7 +46,7 @@ trait ParamsResourcePeopleConnectionsList extends StandardParameters {
     * `person.names` or `person.photos`.
     */
   @JSName("requestMask.includeField")
-  var requestMaskDotincludeField: js.UndefOr[String] = js.native
+  var requestMaskDotincludeField: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the response should include a sync token, which can be used to
@@ -54,25 +54,25 @@ trait ParamsResourcePeopleConnectionsList extends StandardParameters {
     * the `sync_token` param instead. Initial sync requests that specify
     * `request_sync_token` have an additional rate limit.
     */
-  var requestSyncToken: js.UndefOr[Boolean] = js.native
+  var requestSyncToken: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The resource name to return connections for. Only `people/me` is valid.
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The order in which the connections should be sorted. Defaults to
     * `LAST_MODIFIED_ASCENDING`.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
     * A sync token returned by a previous call to `people.connections.list`.
     * Only resources changed since the sync token was created will be returned.
     * Sync requests that specify `sync_token` have an additional rate limit.
     */
-  var syncToken: js.UndefOr[String] = js.native
+  var syncToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePeopleConnectionsList {
   

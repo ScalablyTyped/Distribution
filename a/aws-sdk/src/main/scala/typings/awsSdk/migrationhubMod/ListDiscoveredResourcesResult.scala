@@ -2,21 +2,19 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDiscoveredResourcesResult extends StObject {
   
   /**
     * Returned list of discovered resources associated with the given MigrationTask.
     */
-  var DiscoveredResourceList: js.UndefOr[typings.awsSdk.migrationhubMod.DiscoveredResourceList] = js.native
+  var DiscoveredResourceList: js.UndefOr[typings.awsSdk.migrationhubMod.DiscoveredResourceList] = js.undefined
   
   /**
     * If there are more discovered resources than the max result, return the next token to be passed to the next call as a bookmark of where to start from.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object ListDiscoveredResourcesResult {
   

@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Workspace settings related to the disambiguation feature. **Note:** This feature is available only to Premium users. */
-@js.native
 trait WorkspaceSystemSettingsDisambiguation extends StObject {
   
   /** Whether the disambiguation feature is enabled for the workspace. */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /** The user-facing label for the option users can select if none of the suggested options is correct. If no value is specified for this property, this option does not appear. */
-  var none_of_the_above_prompt: js.UndefOr[String] = js.native
+  var none_of_the_above_prompt: js.UndefOr[String] = js.undefined
   
   /** The text of the introductory prompt that accompanies disambiguation options presented to the user. */
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
   /** The sensitivity of the disambiguation feature to intent detection conflicts. Set to **high** if you want the disambiguation feature to be triggered more often. This can be useful for testing or demonstration purposes. */
-  var sensitivity: js.UndefOr[String] = js.native
+  var sensitivity: js.UndefOr[String] = js.undefined
 }
 object WorkspaceSystemSettingsDisambiguation {
   

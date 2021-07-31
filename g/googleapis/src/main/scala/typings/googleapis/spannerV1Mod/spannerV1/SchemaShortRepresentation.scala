@@ -3,20 +3,18 @@ package typings.googleapis.spannerV1Mod.spannerV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Condensed representation of a node and its subtree. Only present for
   * `SCALAR` PlanNode(s).
   */
-@js.native
 trait SchemaShortRepresentation extends StObject {
   
   /**
     * A string representation of the expression subtree rooted at this node.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A mapping of (subquery variable name) -&gt; (subquery node id) for cases
@@ -25,7 +23,7 @@ trait SchemaShortRepresentation extends StObject {
     * referenced `SCALAR` subquery may not necessarily be a direct child of
     * this node.
     */
-  var subqueries: js.UndefOr[StringDictionary[Double]] = js.native
+  var subqueries: js.UndefOr[StringDictionary[Double]] = js.undefined
 }
 object SchemaShortRepresentation {
   

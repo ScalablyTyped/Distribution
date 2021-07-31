@@ -2,51 +2,49 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignedCertificateTimestamp extends StObject {
   
   /**
     * Hash algorithm.
     */
-  var hashAlgorithm: String = js.native
+  var hashAlgorithm: String
   
   /**
     * Log name / description.
     */
-  var logDescription: String = js.native
+  var logDescription: String
   
   /**
     * Log ID.
     */
-  var logId: String = js.native
+  var logId: String
   
   /**
     * Origin.
     */
-  var origin: String = js.native
+  var origin: String
   
   /**
     * Signature algorithm.
     */
-  var signatureAlgorithm: String = js.native
+  var signatureAlgorithm: String
   
   /**
     * Signature data.
     */
-  var signatureData: String = js.native
+  var signatureData: String
   
   /**
     * Validation status.
     */
-  var status: String = js.native
+  var status: String
   
   /**
     * Issuance date.
     */
-  var timestamp: TimeSinceEpoch = js.native
+  var timestamp: TimeSinceEpoch
 }
 object SignedCertificateTimestamp {
   

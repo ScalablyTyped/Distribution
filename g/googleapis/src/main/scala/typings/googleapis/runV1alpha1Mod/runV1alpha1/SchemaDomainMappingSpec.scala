@@ -2,19 +2,17 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The desired state of the Domain Mapping.
   */
-@js.native
 trait SchemaDomainMappingSpec extends StObject {
   
   /**
     * The mode of the certificate.
     */
-  var certificateMode: js.UndefOr[String] = js.native
+  var certificateMode: js.UndefOr[String] = js.undefined
   
   /**
     * If set, the mapping will override any mapping set before this spec was
@@ -22,13 +20,13 @@ trait SchemaDomainMappingSpec extends StObject {
     * error warning about a potential conflict and only set it once the
     * respective UI has given such a warning.
     */
-  var forceOverride: js.UndefOr[Boolean] = js.native
+  var forceOverride: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the Knative Route that this DomainMapping applies to. The
     * route must exist.
     */
-  var routeName: js.UndefOr[String] = js.native
+  var routeName: js.UndefOr[String] = js.undefined
 }
 object SchemaDomainMappingSpec {
   

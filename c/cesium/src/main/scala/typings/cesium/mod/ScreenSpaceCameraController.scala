@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ScreenSpaceCameraController")
@@ -36,7 +35,7 @@ class ScreenSpaceCameraController protected () extends StObject {
   
   def isDestroyed(): Boolean = js.native
   
-  var lookEventTypes: CameraEventType | js.Array[_] = js.native
+  var lookEventTypes: CameraEventType | js.Array[js.Any] = js.native
   
   var maximumMovementRatio: Double = js.native
   
@@ -50,11 +49,11 @@ class ScreenSpaceCameraController protected () extends StObject {
   
   var minimumZoomDistance: Double = js.native
   
-  var rotateEventTypes: CameraEventType | js.Array[_] = js.native
+  var rotateEventTypes: CameraEventType | js.Array[js.Any] = js.native
   
-  var tiltEventTypes: CameraEventType | js.Array[_] = js.native
+  var tiltEventTypes: CameraEventType | js.Array[js.Any] = js.native
   
-  var translateEventTypes: CameraEventType | js.Array[_] = js.native
+  var translateEventTypes: CameraEventType | js.Array[js.Any] = js.native
   
-  var zoomEventTypes: CameraEventType | js.Array[_] = js.native
+  var zoomEventTypes: CameraEventType | js.Array[js.Any] = js.native
 }

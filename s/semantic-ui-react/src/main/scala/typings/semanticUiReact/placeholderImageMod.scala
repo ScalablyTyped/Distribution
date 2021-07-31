@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object placeholderImageMod extends Shortcut {
@@ -16,9 +15,9 @@ object placeholderImageMod extends Shortcut {
   
   type PlaceholderImageComponent = StatelessComponent[PlaceholderImageProps]
   
-  @js.native
   trait PlaceholderImageProps
-    extends StrictPlaceholderImageProps
+    extends StObject
+       with StrictPlaceholderImageProps
        with /* key */ StringDictionary[js.Any]
   object PlaceholderImageProps {
     
@@ -29,20 +28,19 @@ object placeholderImageMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictPlaceholderImageProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** An image can modify size correctly with responsive styles. */
-    var rectangular: js.UndefOr[Boolean] = js.native
+    var rectangular: js.UndefOr[Boolean] = js.undefined
     
     /** An image can modify size correctly with responsive styles. */
-    var square: js.UndefOr[Boolean] = js.native
+    var square: js.UndefOr[Boolean] = js.undefined
   }
   object StrictPlaceholderImageProps {
     

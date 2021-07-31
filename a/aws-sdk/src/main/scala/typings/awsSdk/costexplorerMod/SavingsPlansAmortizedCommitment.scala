@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlansAmortizedCommitment extends StObject {
   
   /**
     * The amortized amount of your Savings Plans commitment that was purchased with either a Partial or a NoUpfront.
     */
-  var AmortizedRecurringCommitment: js.UndefOr[GenericString] = js.native
+  var AmortizedRecurringCommitment: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The amortized amount of your Savings Plans commitment that was purchased with an Upfront or PartialUpfront Savings Plans.
     */
-  var AmortizedUpfrontCommitment: js.UndefOr[GenericString] = js.native
+  var AmortizedUpfrontCommitment: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The total amortized amount of your Savings Plans commitment, regardless of your Savings Plans purchase method. 
     */
-  var TotalAmortizedCommitment: js.UndefOr[GenericString] = js.native
+  var TotalAmortizedCommitment: js.UndefOr[GenericString] = js.undefined
 }
 object SavingsPlansAmortizedCommitment {
   

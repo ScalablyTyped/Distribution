@@ -2,51 +2,49 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLicenseConfigurationRequest extends StObject {
   
   /**
     * Description of the license configuration.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Number of licenses managed by the license configuration.
     */
-  var LicenseCount: js.UndefOr[BoxLong] = js.native
+  var LicenseCount: js.UndefOr[BoxLong] = js.undefined
   
   /**
     * Indicates whether hard or soft license enforcement is used. Exceeding a hard limit blocks the launch of new instances.
     */
-  var LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.native
+  var LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.undefined
   
   /**
     * Dimension used to track the license inventory.
     */
-  var LicenseCountingType: typings.awsSdk.licensemanagerMod.LicenseCountingType = js.native
+  var LicenseCountingType: typings.awsSdk.licensemanagerMod.LicenseCountingType
   
   /**
     * License rules. The syntax is #name=value (for example, #allowedTenancy=EC2-DedicatedHost). The available rules vary by dimension, as follows.    Cores dimension: allowedTenancy | licenseAffinityToHost | maximumCores | minimumCores     Instances dimension: allowedTenancy | maximumCores | minimumCores | maximumSockets | minimumSockets | maximumVcpus | minimumVcpus     Sockets dimension: allowedTenancy | licenseAffinityToHost | maximumSockets | minimumSockets     vCPUs dimension: allowedTenancy | honorVcpuOptimization | maximumVcpus | minimumVcpus    The unit for licenseAffinityToHost is days and the range is 1 to 180. The possible values for allowedTenancy are EC2-Default, EC2-DedicatedHost, and EC2-DedicatedInstance. The possible values for honorVcpuOptimization are True and False.
     */
-  var LicenseRules: js.UndefOr[StringList] = js.native
+  var LicenseRules: js.UndefOr[StringList] = js.undefined
   
   /**
     * Name of the license configuration.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * Product information.
     */
-  var ProductInformationList: js.UndefOr[typings.awsSdk.licensemanagerMod.ProductInformationList] = js.native
+  var ProductInformationList: js.UndefOr[typings.awsSdk.licensemanagerMod.ProductInformationList] = js.undefined
   
   /**
     * Tags to add to the license configuration.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateLicenseConfigurationRequest {
   

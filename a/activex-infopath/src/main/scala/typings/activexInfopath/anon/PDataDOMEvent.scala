@@ -3,13 +3,11 @@ package typings.activexInfopath.anon
 import typings.activexInfopath.InfoPath.DataDOMEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDataDOMEvent extends StObject {
   
-  val pDataDOMEvent: DataDOMEventObject = js.native
+  val pDataDOMEvent: DataDOMEventObject
 }
 object PDataDOMEvent {
   

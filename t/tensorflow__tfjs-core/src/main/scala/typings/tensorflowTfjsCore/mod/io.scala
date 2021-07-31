@@ -19,25 +19,24 @@ import typings.tensorflowTfjsCore.typesMod.WeightsManifestConfig
 import typings.tensorflowTfjsCore.typesMod.WeightsManifestEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object io {
   
-  @JSImport("@tensorflow/tfjs-core", "io.browserFiles")
+  @JSImport("@tensorflow/tfjs-core", "io")
   @js.native
-  def browserFiles(files: js.Array[File]): IOHandler = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core", "io.browserHTTPRequest")
-  @js.native
-  def browserHTTPRequest(path: String): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.browserHTTPRequest")
-  @js.native
-  def browserHTTPRequest(path: String, loadOptions: LoadOptions): IOHandler = js.native
+  @scala.inline
+  def browserFiles(files: js.Array[File]): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserFiles")(files.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
   
-  @JSImport("@tensorflow/tfjs-core", "io.concatenateArrayBuffers")
-  @js.native
-  def concatenateArrayBuffers(buffers: js.Array[ArrayBuffer]): ArrayBuffer = js.native
+  @scala.inline
+  def browserHTTPRequest(path: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserHTTPRequest")(path.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  @scala.inline
+  def browserHTTPRequest(path: String, loadOptions: LoadOptions): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("browserHTTPRequest")(path.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  
+  @scala.inline
+  def concatenateArrayBuffers(buffers: js.Array[ArrayBuffer]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateArrayBuffers")(buffers.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
   /**
     * Copy a model from one URL to another.
@@ -86,154 +85,117 @@ object io {
     *   ignoreCI: true
     * }
     */
-  @JSImport("@tensorflow/tfjs-core", "io.copyModel")
-  @js.native
-  def copyModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = js.native
+  @scala.inline
+  def copyModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyModel")(sourceURL.asInstanceOf[js.Any], destURL.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ModelArtifactsInfo]]
   
-  @JSImport("@tensorflow/tfjs-core", "io.decodeWeights")
-  @js.native
-  def decodeWeights(buffer: ArrayBuffer, specs: js.Array[WeightsManifestEntry]): NamedTensorMap = js.native
+  @scala.inline
+  def decodeWeights(buffer: ArrayBuffer, specs: js.Array[WeightsManifestEntry]): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeWeights")(buffer.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   
-  @JSImport("@tensorflow/tfjs-core", "io.encodeWeights")
-  @js.native
-  def encodeWeights(tensors: js.Array[NamedTensor]): js.Promise[Data] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.encodeWeights")
-  @js.native
-  def encodeWeights(tensors: js.Array[NamedTensor], group: WeightGroup): js.Promise[Data] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.encodeWeights")
-  @js.native
-  def encodeWeights(tensors: NamedTensorMap): js.Promise[Data] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.encodeWeights")
-  @js.native
-  def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Data] = js.native
+  @scala.inline
+  def encodeWeights(tensors: js.Array[NamedTensor]): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
+  @scala.inline
+  def encodeWeights(tensors: js.Array[NamedTensor], group: WeightGroup): js.Promise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Data]]
+  @scala.inline
+  def encodeWeights(tensors: NamedTensorMap): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
+  @scala.inline
+  def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Data]]
   
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
-  def fromMemory(modelArtifacts: js.Object): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
-  def fromMemory(
-    modelArtifacts: js.Object,
-    weightSpecs: js.UndefOr[scala.Nothing],
-    weightData: js.UndefOr[scala.Nothing],
-    trainingConfig: TrainingConfig
-  ): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
-  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.UndefOr[scala.Nothing], weightData: ArrayBuffer): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
-  def fromMemory(
-    modelArtifacts: js.Object,
-    weightSpecs: js.UndefOr[scala.Nothing],
-    weightData: ArrayBuffer,
-    trainingConfig: TrainingConfig
-  ): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
-  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
+  @scala.inline
+  def fromMemory(modelArtifacts: js.Object): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  @scala.inline
+  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
   def fromMemory(
     modelArtifacts: js.Object,
     weightSpecs: js.Array[WeightsManifestEntry],
-    weightData: js.UndefOr[scala.Nothing],
+    weightData: Unit,
     trainingConfig: TrainingConfig
-  ): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
-  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
+  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
   def fromMemory(
     modelArtifacts: js.Object,
     weightSpecs: js.Array[WeightsManifestEntry],
     weightData: ArrayBuffer,
     trainingConfig: TrainingConfig
-  ): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
-  def fromMemory(modelArtifacts: ModelArtifacts): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
+  def fromMemory(modelArtifacts: js.Object, weightSpecs: Unit, weightData: Unit, trainingConfig: TrainingConfig): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
+  def fromMemory(modelArtifacts: js.Object, weightSpecs: Unit, weightData: ArrayBuffer): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
   def fromMemory(
-    modelArtifacts: ModelArtifacts,
-    weightSpecs: js.UndefOr[scala.Nothing],
-    weightData: js.UndefOr[scala.Nothing],
-    trainingConfig: TrainingConfig
-  ): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
-  def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: js.UndefOr[scala.Nothing], weightData: ArrayBuffer): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
-  def fromMemory(
-    modelArtifacts: ModelArtifacts,
-    weightSpecs: js.UndefOr[scala.Nothing],
+    modelArtifacts: js.Object,
+    weightSpecs: Unit,
     weightData: ArrayBuffer,
     trainingConfig: TrainingConfig
-  ): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
-  def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
+  def fromMemory(modelArtifacts: ModelArtifacts): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  @scala.inline
+  def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
   def fromMemory(
     modelArtifacts: ModelArtifacts,
     weightSpecs: js.Array[WeightsManifestEntry],
-    weightData: js.UndefOr[scala.Nothing],
+    weightData: Unit,
     trainingConfig: TrainingConfig
-  ): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
   def fromMemory(
     modelArtifacts: ModelArtifacts,
     weightSpecs: js.Array[WeightsManifestEntry],
     weightData: ArrayBuffer
-  ): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.fromMemory")
-  @js.native
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
   def fromMemory(
     modelArtifacts: ModelArtifacts,
     weightSpecs: js.Array[WeightsManifestEntry],
     weightData: ArrayBuffer,
     trainingConfig: TrainingConfig
-  ): IOHandler = js.native
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
+  def fromMemory(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: Unit,
+    weightData: Unit,
+    trainingConfig: TrainingConfig
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
+  def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: Unit, weightData: ArrayBuffer): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  @scala.inline
+  def fromMemory(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: Unit,
+    weightData: ArrayBuffer,
+    trainingConfig: TrainingConfig
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   
-  @JSImport("@tensorflow/tfjs-core", "io.getLoadHandlers")
-  @js.native
-  def getLoadHandlers(url: String): js.Array[IOHandler] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.getLoadHandlers")
-  @js.native
-  def getLoadHandlers(url: String, loadOptions: LoadOptions): js.Array[IOHandler] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.getLoadHandlers")
-  @js.native
-  def getLoadHandlers(url: js.Array[String]): js.Array[IOHandler] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.getLoadHandlers")
-  @js.native
-  def getLoadHandlers(url: js.Array[String], loadOptions: LoadOptions): js.Array[IOHandler] = js.native
+  @scala.inline
+  def getLoadHandlers(url: String): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
+  @scala.inline
+  def getLoadHandlers(url: String, loadOptions: LoadOptions): js.Array[IOHandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[IOHandler]]
+  @scala.inline
+  def getLoadHandlers(url: js.Array[String]): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
+  @scala.inline
+  def getLoadHandlers(url: js.Array[String], loadOptions: LoadOptions): js.Array[IOHandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[IOHandler]]
   
-  @JSImport("@tensorflow/tfjs-core", "io.getModelArtifactsInfoForJSON")
-  @js.native
-  def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): ModelArtifactsInfo = js.native
+  @scala.inline
+  def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): ModelArtifactsInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsInfoForJSON")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[ModelArtifactsInfo]
   
-  @JSImport("@tensorflow/tfjs-core", "io.getSaveHandlers")
-  @js.native
-  def getSaveHandlers(url: String): js.Array[IOHandler] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.getSaveHandlers")
-  @js.native
-  def getSaveHandlers(url: js.Array[String]): js.Array[IOHandler] = js.native
+  @scala.inline
+  def getSaveHandlers(url: String): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSaveHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
+  @scala.inline
+  def getSaveHandlers(url: js.Array[String]): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSaveHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
   
-  @JSImport("@tensorflow/tfjs-core", "io.http")
-  @js.native
-  def http(path: String): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.http")
-  @js.native
-  def http(path: String, loadOptions: LoadOptions): IOHandler = js.native
+  @scala.inline
+  def http(path: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("http")(path.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  @scala.inline
+  def http(path: String, loadOptions: LoadOptions): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("http")(path.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   
-  @JSImport("@tensorflow/tfjs-core", "io.isHTTPScheme")
-  @js.native
-  def isHTTPScheme(url: String): Boolean = js.native
+  @scala.inline
+  def isHTTPScheme(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTTPScheme")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * List all models stored in registered storage mediums.
@@ -270,58 +232,40 @@ object io {
     *   ignoreCI: true
     * }
     */
-  @JSImport("@tensorflow/tfjs-core", "io.listModels")
-  @js.native
-  def listModels(): js.Promise[StringDictionary[ModelArtifactsInfo]] = js.native
+  @scala.inline
+  def listModels(): js.Promise[StringDictionary[ModelArtifactsInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listModels")().asInstanceOf[js.Promise[StringDictionary[ModelArtifactsInfo]]]
   
-  @JSImport("@tensorflow/tfjs-core", "io.loadWeights")
-  @js.native
-  def loadWeights(manifest: WeightsManifestConfig): js.Promise[NamedTensorMap] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.loadWeights")
-  @js.native
-  def loadWeights(
-    manifest: WeightsManifestConfig,
-    filePathPrefix: js.UndefOr[scala.Nothing],
-    weightNames: js.UndefOr[scala.Nothing],
-    requestInit: RequestInit
-  ): js.Promise[NamedTensorMap] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.loadWeights")
-  @js.native
-  def loadWeights(
-    manifest: WeightsManifestConfig,
-    filePathPrefix: js.UndefOr[scala.Nothing],
-    weightNames: js.Array[String]
-  ): js.Promise[NamedTensorMap] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.loadWeights")
-  @js.native
-  def loadWeights(
-    manifest: WeightsManifestConfig,
-    filePathPrefix: js.UndefOr[scala.Nothing],
-    weightNames: js.Array[String],
-    requestInit: RequestInit
-  ): js.Promise[NamedTensorMap] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.loadWeights")
-  @js.native
-  def loadWeights(manifest: WeightsManifestConfig, filePathPrefix: String): js.Promise[NamedTensorMap] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.loadWeights")
-  @js.native
-  def loadWeights(
-    manifest: WeightsManifestConfig,
-    filePathPrefix: String,
-    weightNames: js.UndefOr[scala.Nothing],
-    requestInit: RequestInit
-  ): js.Promise[NamedTensorMap] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.loadWeights")
-  @js.native
-  def loadWeights(manifest: WeightsManifestConfig, filePathPrefix: String, weightNames: js.Array[String]): js.Promise[NamedTensorMap] = js.native
-  @JSImport("@tensorflow/tfjs-core", "io.loadWeights")
-  @js.native
+  @scala.inline
+  def loadWeights(manifest: WeightsManifestConfig): js.Promise[NamedTensorMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadWeights")(manifest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NamedTensorMap]]
+  @scala.inline
+  def loadWeights(manifest: WeightsManifestConfig, filePathPrefix: String): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadWeights")(manifest.asInstanceOf[js.Any], filePathPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
+  @scala.inline
+  def loadWeights(manifest: WeightsManifestConfig, filePathPrefix: String, weightNames: js.Array[String]): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadWeights")(manifest.asInstanceOf[js.Any], filePathPrefix.asInstanceOf[js.Any], weightNames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
+  @scala.inline
   def loadWeights(
     manifest: WeightsManifestConfig,
     filePathPrefix: String,
     weightNames: js.Array[String],
     requestInit: RequestInit
-  ): js.Promise[NamedTensorMap] = js.native
+  ): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadWeights")(manifest.asInstanceOf[js.Any], filePathPrefix.asInstanceOf[js.Any], weightNames.asInstanceOf[js.Any], requestInit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
+  @scala.inline
+  def loadWeights(
+    manifest: WeightsManifestConfig,
+    filePathPrefix: String,
+    weightNames: Unit,
+    requestInit: RequestInit
+  ): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadWeights")(manifest.asInstanceOf[js.Any], filePathPrefix.asInstanceOf[js.Any], weightNames.asInstanceOf[js.Any], requestInit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
+  @scala.inline
+  def loadWeights(manifest: WeightsManifestConfig, filePathPrefix: Unit, weightNames: js.Array[String]): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadWeights")(manifest.asInstanceOf[js.Any], filePathPrefix.asInstanceOf[js.Any], weightNames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
+  @scala.inline
+  def loadWeights(
+    manifest: WeightsManifestConfig,
+    filePathPrefix: Unit,
+    weightNames: js.Array[String],
+    requestInit: RequestInit
+  ): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadWeights")(manifest.asInstanceOf[js.Any], filePathPrefix.asInstanceOf[js.Any], weightNames.asInstanceOf[js.Any], requestInit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
+  @scala.inline
+  def loadWeights(manifest: WeightsManifestConfig, filePathPrefix: Unit, weightNames: Unit, requestInit: RequestInit): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadWeights")(manifest.asInstanceOf[js.Any], filePathPrefix.asInstanceOf[js.Any], weightNames.asInstanceOf[js.Any], requestInit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
   
   /**
     * Move a model from one URL to another.
@@ -369,17 +313,14 @@ object io {
     *   ignoreCI: true
     * }
     */
-  @JSImport("@tensorflow/tfjs-core", "io.moveModel")
-  @js.native
-  def moveModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = js.native
+  @scala.inline
+  def moveModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveModel")(sourceURL.asInstanceOf[js.Any], destURL.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ModelArtifactsInfo]]
   
-  @JSImport("@tensorflow/tfjs-core", "io.registerLoadRouter")
-  @js.native
-  def registerLoadRouter(loudRouter: IORouter): Unit = js.native
+  @scala.inline
+  def registerLoadRouter(loudRouter: IORouter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadRouter")(loudRouter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core", "io.registerSaveRouter")
-  @js.native
-  def registerSaveRouter(loudRouter: IORouter): Unit = js.native
+  @scala.inline
+  def registerSaveRouter(loudRouter: IORouter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSaveRouter")(loudRouter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Remove a model specified by URL from a reigstered storage medium.
@@ -414,12 +355,10 @@ object io {
     *   ignoreCI: true
     * }
     */
-  @JSImport("@tensorflow/tfjs-core", "io.removeModel")
-  @js.native
-  def removeModel(url: String): js.Promise[ModelArtifactsInfo] = js.native
+  @scala.inline
+  def removeModel(url: String): js.Promise[ModelArtifactsInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeModel")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ModelArtifactsInfo]]
   
-  @JSImport("@tensorflow/tfjs-core", "io.weightsLoaderFactory")
-  @js.native
+  @scala.inline
   def weightsLoaderFactory(
     fetchWeightsFunction: js.Function1[/* fetchUrls */ js.Array[String], js.Promise[js.Array[ArrayBuffer]]]
   ): js.Function3[
@@ -427,9 +366,13 @@ object io {
     /* filePathPrefix */ js.UndefOr[String], 
     /* weightNames */ js.UndefOr[js.Array[String]], 
     js.Promise[NamedTensorMap]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("weightsLoaderFactory")(fetchWeightsFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* manifest */ WeightsManifestConfig, 
+    /* filePathPrefix */ js.UndefOr[String], 
+    /* weightNames */ js.UndefOr[js.Array[String]], 
+    js.Promise[NamedTensorMap]
+  ]]
   
-  @JSImport("@tensorflow/tfjs-core", "io.withSaveHandler")
-  @js.native
-  def withSaveHandler(saveHandler: js.Function1[/* artifacts */ ModelArtifacts, js.Promise[SaveResult]]): IOHandler = js.native
+  @scala.inline
+  def withSaveHandler(saveHandler: js.Function1[/* artifacts */ ModelArtifacts, js.Promise[SaveResult]]): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("withSaveHandler")(saveHandler.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
 }

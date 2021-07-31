@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchFirebaseAppsResponse extends StObject {
   
   /** One page of results from a call to `SearchFirebaseApps`. */
-  var apps: js.UndefOr[js.Array[FirebaseAppInfo]] = js.native
+  var apps: js.UndefOr[js.Array[FirebaseAppInfo]] = js.undefined
   
   /**
     * If the result list is too large to fit in a single response, then a token is returned. This token can be used in a subsequent calls to `SearchFirebaseApps` to find the next group of
     * Apps. Page tokens are short-lived and should not be persisted.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SearchFirebaseAppsResponse {
   

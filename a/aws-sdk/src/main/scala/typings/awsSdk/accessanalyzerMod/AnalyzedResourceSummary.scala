@@ -2,26 +2,24 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyzedResourceSummary extends StObject {
   
   /**
     * The ARN of the analyzed resource.
     */
-  var resourceArn: ResourceArn = js.native
+  var resourceArn: ResourceArn
   
   /**
     * The AWS account ID that owns the resource.
     */
-  var resourceOwnerAccount: String = js.native
+  var resourceOwnerAccount: String
   
   /**
     * The type of resource that was analyzed.
     */
-  var resourceType: ResourceType = js.native
+  var resourceType: ResourceType
 }
 object AnalyzedResourceSummary {
   

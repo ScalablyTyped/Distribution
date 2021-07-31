@@ -2,62 +2,60 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRouterStatusBgpPeerStatus extends StObject {
   
   /**
     * Routes that were advertised to the remote BGP peer
     */
-  var advertisedRoutes: js.UndefOr[js.Array[SchemaRoute]] = js.native
+  var advertisedRoutes: js.UndefOr[js.Array[SchemaRoute]] = js.undefined
   
   /**
     * IP address of the local BGP interface.
     */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the VPN tunnel that this BGP peer controls.
     */
-  var linkedVpnTunnel: js.UndefOr[String] = js.native
+  var linkedVpnTunnel: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this BGP peer. Unique within the Routers resource.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Number of routes learned from the remote BGP Peer.
     */
-  var numLearnedRoutes: js.UndefOr[Double] = js.native
+  var numLearnedRoutes: js.UndefOr[Double] = js.undefined
   
   /**
     * IP address of the remote BGP interface.
     */
-  var peerIpAddress: js.UndefOr[String] = js.native
+  var peerIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * BGP state as specified in RFC1771.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the BGP peer: {UP, DOWN}
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Time this session has been up. Format: 14 years, 51 weeks, 6 days, 23
     * hours, 59 minutes, 59 seconds
     */
-  var uptime: js.UndefOr[String] = js.native
+  var uptime: js.UndefOr[String] = js.undefined
   
   /**
     * Time this session has been up, in seconds. Format: 145
     */
-  var uptimeSeconds: js.UndefOr[String] = js.native
+  var uptimeSeconds: js.UndefOr[String] = js.undefined
 }
 object SchemaRouterStatusBgpPeerStatus {
   

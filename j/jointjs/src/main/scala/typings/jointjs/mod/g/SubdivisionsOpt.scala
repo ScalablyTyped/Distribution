@@ -2,13 +2,13 @@ package typings.jointjs.mod.g
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SubdivisionsOpt extends PrecisionOpt {
+trait SubdivisionsOpt
+  extends StObject
+     with PrecisionOpt {
   
-  var subdivisions: js.UndefOr[js.Array[Curve]] = js.native
+  var subdivisions: js.UndefOr[js.Array[Curve]] = js.undefined
 }
 object SubdivisionsOpt {
   

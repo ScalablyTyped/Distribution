@@ -2,15 +2,13 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResizeNearestNeighborAttrs extends StObject {
   
-  var alignCorners: Boolean = js.native
+  var alignCorners: Boolean
   
-  var size: js.Tuple2[Double, Double] = js.native
+  var size: js.Tuple2[Double, Double]
 }
 object ResizeNearestNeighborAttrs {
   

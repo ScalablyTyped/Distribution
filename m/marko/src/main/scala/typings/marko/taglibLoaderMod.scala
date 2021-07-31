@@ -1,13 +1,15 @@
 package typings.marko
 
-import typings.marko.tagMod.^
 import typings.marko.taglibMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taglibLoaderMod {
+  
+  @JSImport("marko/src/compiler/taglib-loader", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("marko/src/compiler/taglib-loader", "Taglib")
   @js.native
@@ -15,23 +17,18 @@ object taglibLoaderMod {
     def this(filePath: String) = this()
   }
   
-  @JSImport("marko/src/compiler/taglib-loader", "clearCache")
-  @js.native
-  def clearCache(): Unit = js.native
+  @scala.inline
+  def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
   
-  @JSImport("marko/src/compiler/taglib-loader", "createTaglib")
-  @js.native
-  def createTaglib(filePath: String): Taglib = js.native
+  @scala.inline
+  def createTaglib(filePath: String): Taglib = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaglib")(filePath.asInstanceOf[js.Any]).asInstanceOf[Taglib]
   
-  @JSImport("marko/src/compiler/taglib-loader", "loadTag")
-  @js.native
-  def loadTag(tagProps: js.Any, filePath: String): ^ = js.native
+  @scala.inline
+  def loadTag(tagProps: js.Any, filePath: String): typings.marko.tagMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTag")(tagProps.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[typings.marko.tagMod.^]
   
-  @JSImport("marko/src/compiler/taglib-loader", "loadTaglibFromFile")
-  @js.native
-  def loadTaglibFromFile(filePath: String): Taglib = js.native
+  @scala.inline
+  def loadTaglibFromFile(filePath: String): Taglib = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTaglibFromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[Taglib]
   
-  @JSImport("marko/src/compiler/taglib-loader", "loadTaglibFromProps")
-  @js.native
-  def loadTaglibFromProps(taglib: Taglib, taglibProps: js.Any): Taglib = js.native
+  @scala.inline
+  def loadTaglibFromProps(taglib: Taglib, taglibProps: js.Any): Taglib = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTaglibFromProps")(taglib.asInstanceOf[js.Any], taglibProps.asInstanceOf[js.Any])).asInstanceOf[Taglib]
 }

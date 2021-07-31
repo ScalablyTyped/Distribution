@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeshSpec extends StObject {
   
   /**
     * The egress filter rules for the service mesh.
     */
-  var egressFilter: js.UndefOr[MeshSpecEgressFilter] = js.native
+  var egressFilter: js.UndefOr[MeshSpecEgressFilter] = js.undefined
 }
 object MeshSpec {
   

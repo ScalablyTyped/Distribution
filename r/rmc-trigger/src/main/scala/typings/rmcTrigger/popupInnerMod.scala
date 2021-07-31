@@ -3,7 +3,6 @@ package typings.rmcTrigger
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupInnerMod {
@@ -12,18 +11,17 @@ object popupInnerMod {
   @js.native
   class default () extends PopupInner
   
-  @js.native
   trait IPopupInnerProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var hiddenClassName: js.UndefOr[String] = js.native
+    var hiddenClassName: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object IPopupInnerProps {
     

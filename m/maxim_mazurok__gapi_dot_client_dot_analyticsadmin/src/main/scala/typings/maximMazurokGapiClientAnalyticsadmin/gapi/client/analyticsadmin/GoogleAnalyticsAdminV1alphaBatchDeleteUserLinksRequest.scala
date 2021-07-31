@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest extends StObject {
   
   /** Required. The requests specifying the user links to update. A maximum of 1000 user links can be updated in a batch. */
-  var requests: js.UndefOr[js.Array[GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest]] = js.native
+  var requests: js.UndefOr[js.Array[GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest]] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest {
   

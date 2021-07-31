@@ -18,43 +18,41 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.worker_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Console {
   
-  @js.native
   trait ConsoleMessage extends StObject {
     
     /**
       * Column number in the resource that generated this message (1-based).
       */
-    var column: js.UndefOr[integer] = js.native
+    var column: js.UndefOr[integer] = js.undefined
     
     /**
       * Message severity. (ConsoleMessageLevel enum)
       */
-    var level: log | warning | error | debug | info = js.native
+    var level: log | warning | error | debug | info
     
     /**
       * Line number in the resource that generated this message (1-based).
       */
-    var line: js.UndefOr[integer] = js.native
+    var line: js.UndefOr[integer] = js.undefined
     
     /**
       * Message source. (ConsoleMessageSource enum)
       */
-    var source: xml | javascript_ | network | `console-api` | storage | appcache | rendering | security | other_ | deprecation | worker_ = js.native
+    var source: xml | javascript_ | network | `console-api` | storage | appcache | rendering | security | other_ | deprecation | worker_
     
     /**
       * Message text.
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * URL of the message origin.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ConsoleMessage {
     
@@ -178,13 +176,12 @@ object Console {
     def XML: xml = "xml".asInstanceOf[xml]
   }
   
-  @js.native
   trait MessageAddedEvent extends StObject {
     
     /**
       * Console message that has been added.
       */
-    var message: ConsoleMessage = js.native
+    var message: ConsoleMessage
   }
   object MessageAddedEvent {
     

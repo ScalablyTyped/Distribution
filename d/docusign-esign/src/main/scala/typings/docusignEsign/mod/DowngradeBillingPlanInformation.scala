@@ -2,20 +2,18 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DowngradeBillingPlanInformation extends StObject {
   
-  var downgradeEventType: js.UndefOr[String] = js.native
+  var downgradeEventType: js.UndefOr[String] = js.undefined
   
   /**
     * An object used to identify the features and attributes of the account being created.
     */
   var planInformation: js.UndefOr[
     /* An object used to identify the features and attributes of the account being created. */ PlanInformation
-  ] = js.native
+  ] = js.undefined
 }
 object DowngradeBillingPlanInformation {
   

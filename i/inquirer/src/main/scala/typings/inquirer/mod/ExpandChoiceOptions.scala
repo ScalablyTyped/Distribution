@@ -2,7 +2,6 @@ package typings.inquirer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait ExpandChoiceOptions[T /* <: Answers */] extends ChoiceOptions[T] {
+trait ExpandChoiceOptions[T /* <: Answers */]
+  extends StObject
+     with ChoiceOptions[T] {
   
   /**
     * The key to press for selecting the choice.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
 }
 object ExpandChoiceOptions {
   
@@ -28,7 +28,7 @@ object ExpandChoiceOptions {
   }
   
   @scala.inline
-  implicit class ExpandChoiceOptionsMutableBuilder[Self <: ExpandChoiceOptions[_], T /* <: Answers */] (val x: Self with ExpandChoiceOptions[T]) extends AnyVal {
+  implicit class ExpandChoiceOptionsMutableBuilder[Self <: ExpandChoiceOptions[?], T /* <: Answers */] (val x: Self & ExpandChoiceOptions[T]) extends AnyVal {
     
     @scala.inline
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

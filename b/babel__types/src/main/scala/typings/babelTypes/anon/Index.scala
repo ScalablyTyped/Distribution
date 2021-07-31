@@ -3,17 +3,15 @@ package typings.babelTypes.anon
 import typings.babelTypes.indexTs37Mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Index extends StObject {
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var node: Node = js.native
+  var node: Node
 }
 object Index {
   

@@ -2,7 +2,6 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Shape")
@@ -25,13 +24,13 @@ class Shape () extends StObject {
   var collisionResponse: Boolean = js.native
   
   def computeAABB(): Unit = js.native
-  def computeAABB(out: js.UndefOr[scala.Nothing], position: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
-  def computeAABB(out: js.UndefOr[scala.Nothing], position: js.Tuple2[Double, Double]): Unit = js.native
-  def computeAABB(out: js.UndefOr[scala.Nothing], position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
+  def computeAABB(out: Unit, position: js.Tuple2[Double, Double]): Unit = js.native
+  def computeAABB(out: Unit, position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
+  def computeAABB(out: Unit, position: Unit, angle: Double): Unit = js.native
   def computeAABB(out: AABB): Unit = js.native
-  def computeAABB(out: AABB, position: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
   def computeAABB(out: AABB, position: js.Tuple2[Double, Double]): Unit = js.native
   def computeAABB(out: AABB, position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
+  def computeAABB(out: AABB, position: Unit, angle: Double): Unit = js.native
   
   def computeMomentOfInertia(): Double = js.native
   def computeMomentOfInertia(mass: Double): Double = js.native
@@ -43,45 +42,21 @@ class Shape () extends StObject {
   var position: js.Tuple2[Double, Double] = js.native
   
   def raycast(): Unit = js.native
-  def raycast(
-    result: js.UndefOr[scala.Nothing],
-    ray: js.UndefOr[scala.Nothing],
-    position: js.UndefOr[scala.Nothing],
-    angle: Double
-  ): Unit = js.native
-  def raycast(
-    result: js.UndefOr[scala.Nothing],
-    ray: js.UndefOr[scala.Nothing],
-    position: js.Tuple2[Double, Double]
-  ): Unit = js.native
-  def raycast(
-    result: js.UndefOr[scala.Nothing],
-    ray: js.UndefOr[scala.Nothing],
-    position: js.Tuple2[Double, Double],
-    angle: Double
-  ): Unit = js.native
-  def raycast(result: js.UndefOr[scala.Nothing], ray: Ray): Unit = js.native
-  def raycast(result: js.UndefOr[scala.Nothing], ray: Ray, position: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
-  def raycast(result: js.UndefOr[scala.Nothing], ray: Ray, position: js.Tuple2[Double, Double]): Unit = js.native
-  def raycast(result: js.UndefOr[scala.Nothing], ray: Ray, position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
+  def raycast(result: Unit, ray: Unit, position: js.Tuple2[Double, Double]): Unit = js.native
+  def raycast(result: Unit, ray: Unit, position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
+  def raycast(result: Unit, ray: Unit, position: Unit, angle: Double): Unit = js.native
+  def raycast(result: Unit, ray: Ray): Unit = js.native
+  def raycast(result: Unit, ray: Ray, position: js.Tuple2[Double, Double]): Unit = js.native
+  def raycast(result: Unit, ray: Ray, position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
+  def raycast(result: Unit, ray: Ray, position: Unit, angle: Double): Unit = js.native
   def raycast(result: RaycastResult): Unit = js.native
-  def raycast(
-    result: RaycastResult,
-    ray: js.UndefOr[scala.Nothing],
-    position: js.UndefOr[scala.Nothing],
-    angle: Double
-  ): Unit = js.native
-  def raycast(result: RaycastResult, ray: js.UndefOr[scala.Nothing], position: js.Tuple2[Double, Double]): Unit = js.native
-  def raycast(
-    result: RaycastResult,
-    ray: js.UndefOr[scala.Nothing],
-    position: js.Tuple2[Double, Double],
-    angle: Double
-  ): Unit = js.native
+  def raycast(result: RaycastResult, ray: Unit, position: js.Tuple2[Double, Double]): Unit = js.native
+  def raycast(result: RaycastResult, ray: Unit, position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
+  def raycast(result: RaycastResult, ray: Unit, position: Unit, angle: Double): Unit = js.native
   def raycast(result: RaycastResult, ray: Ray): Unit = js.native
-  def raycast(result: RaycastResult, ray: Ray, position: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
   def raycast(result: RaycastResult, ray: Ray, position: js.Tuple2[Double, Double]): Unit = js.native
   def raycast(result: RaycastResult, ray: Ray, position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
+  def raycast(result: RaycastResult, ray: Ray, position: Unit, angle: Double): Unit = js.native
   
   var sensor: Boolean = js.native
   

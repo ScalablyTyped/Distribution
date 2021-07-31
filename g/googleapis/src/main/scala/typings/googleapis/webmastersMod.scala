@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webmastersMod {
+  
+  @JSImport("googleapis/build/src/apis/webmasters", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -68,9 +71,12 @@ object webmastersMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/webmasters", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/webmasters", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -114,10 +120,9 @@ object webmastersMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/webmasters", "webmasters")
-  @js.native
-  def webmasters(options: Options): Webmasters = js.native
-  @JSImport("googleapis/build/src/apis/webmasters", "webmasters")
-  @js.native
-  def webmasters_v3(version: v3): Webmasters = js.native
+  @scala.inline
+  def webmasters(options: Options): Webmasters = ^.asInstanceOf[js.Dynamic].applyDynamic("webmasters")(options.asInstanceOf[js.Any]).asInstanceOf[Webmasters]
+  
+  @scala.inline
+  def webmasters_v3(version: v3): Webmasters = ^.asInstanceOf[js.Dynamic].applyDynamic("webmasters")(version.asInstanceOf[js.Any]).asInstanceOf[Webmasters]
 }

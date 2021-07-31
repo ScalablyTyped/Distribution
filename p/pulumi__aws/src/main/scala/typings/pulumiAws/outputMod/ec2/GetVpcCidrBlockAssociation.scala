@@ -2,27 +2,25 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVpcCidrBlockAssociation extends StObject {
   
   /**
     * The association ID for the the IPv4 CIDR block.
     */
-  var associationId: String = js.native
+  var associationId: String
   
   /**
     * The cidr block of the desired VPC.
     */
-  var cidrBlock: String = js.native
+  var cidrBlock: String
   
   /**
     * The current state of the desired VPC.
     * Can be either `"pending"` or `"available"`.
     */
-  var state: String = js.native
+  var state: String
 }
 object GetVpcCidrBlockAssociation {
   

@@ -3,13 +3,14 @@ package typings.sharepoint.SP
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Workflow {
   
   @js.native
-  trait WorkflowAssociation extends ClientObject {
+  trait WorkflowAssociation
+    extends StObject
+       with ClientObject {
     
     def deleteObject(): Unit = js.native
     
@@ -71,7 +72,9 @@ object Workflow {
   }
   
   @js.native
-  trait WorkflowAssociationCollection extends ClientObjectCollection[WorkflowAssociation] {
+  trait WorkflowAssociationCollection
+    extends StObject
+       with ClientObjectCollection[WorkflowAssociation] {
     
     def add(parameters: WorkflowAssociationCreationInformation): WorkflowAssociation = js.native
     
@@ -84,32 +87,33 @@ object Workflow {
     def itemAt(index: Double): WorkflowAssociation = js.native
   }
   
-  @js.native
-  trait WorkflowAssociationCreationInformation extends ClientValueObject {
+  trait WorkflowAssociationCreationInformation
+    extends StObject
+       with ClientValueObject {
     
-    def get_contentTypeAssociationHistoryListName(): String = js.native
+    def get_contentTypeAssociationHistoryListName(): String
     
-    def get_contentTypeAssociationTaskListName(): String = js.native
+    def get_contentTypeAssociationTaskListName(): String
     
-    def get_historyList(): List[_] = js.native
+    def get_historyList(): List[js.Any]
     
-    def get_name(): String = js.native
+    def get_name(): String
     
-    def get_taskList(): List[_] = js.native
+    def get_taskList(): List[js.Any]
     
-    def get_template(): WorkflowTemplate = js.native
+    def get_template(): WorkflowTemplate
     
-    def set_contentTypeAssociationHistoryListName(value: String): Unit = js.native
+    def set_contentTypeAssociationHistoryListName(value: String): Unit
     
-    def set_contentTypeAssociationTaskListName(value: String): Unit = js.native
+    def set_contentTypeAssociationTaskListName(value: String): Unit
     
-    def set_historyList(value: List[_]): Unit = js.native
+    def set_historyList(value: List[js.Any]): Unit
     
-    def set_name(value: String): Unit = js.native
+    def set_name(value: String): Unit
     
-    def set_taskList(value: List[_]): Unit = js.native
+    def set_taskList(value: List[js.Any]): Unit
     
-    def set_template(value: WorkflowTemplate): Unit = js.native
+    def set_template(value: WorkflowTemplate): Unit
   }
   object WorkflowAssociationCreationInformation {
     
@@ -120,16 +124,16 @@ object Workflow {
       fromJson: js.Any => Unit,
       get_contentTypeAssociationHistoryListName: () => String,
       get_contentTypeAssociationTaskListName: () => String,
-      get_historyList: () => List[_],
+      get_historyList: () => List[js.Any],
       get_name: () => String,
-      get_taskList: () => List[_],
+      get_taskList: () => List[js.Any],
       get_template: () => WorkflowTemplate,
       get_typeId: () => String,
       set_contentTypeAssociationHistoryListName: String => Unit,
       set_contentTypeAssociationTaskListName: String => Unit,
-      set_historyList: List[_] => Unit,
+      set_historyList: List[js.Any] => Unit,
       set_name: String => Unit,
-      set_taskList: List[_] => Unit,
+      set_taskList: List[js.Any] => Unit,
       set_template: WorkflowTemplate => Unit,
       writeToXml: (XmlWriter, SerializationContext) => Unit
     ): WorkflowAssociationCreationInformation = {
@@ -147,13 +151,13 @@ object Workflow {
       def setGet_contentTypeAssociationTaskListName(value: () => String): Self = StObject.set(x, "get_contentTypeAssociationTaskListName", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setGet_historyList(value: () => List[_]): Self = StObject.set(x, "get_historyList", js.Any.fromFunction0(value))
+      def setGet_historyList(value: () => List[js.Any]): Self = StObject.set(x, "get_historyList", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setGet_taskList(value: () => List[_]): Self = StObject.set(x, "get_taskList", js.Any.fromFunction0(value))
+      def setGet_taskList(value: () => List[js.Any]): Self = StObject.set(x, "get_taskList", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGet_template(value: () => WorkflowTemplate): Self = StObject.set(x, "get_template", js.Any.fromFunction0(value))
@@ -165,13 +169,13 @@ object Workflow {
       def setSet_contentTypeAssociationTaskListName(value: String => Unit): Self = StObject.set(x, "set_contentTypeAssociationTaskListName", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setSet_historyList(value: List[_] => Unit): Self = StObject.set(x, "set_historyList", js.Any.fromFunction1(value))
+      def setSet_historyList(value: List[js.Any] => Unit): Self = StObject.set(x, "set_historyList", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setSet_taskList(value: List[_] => Unit): Self = StObject.set(x, "set_taskList", js.Any.fromFunction1(value))
+      def setSet_taskList(value: List[js.Any] => Unit): Self = StObject.set(x, "set_taskList", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSet_template(value: WorkflowTemplate => Unit): Self = StObject.set(x, "set_template", js.Any.fromFunction1(value))
@@ -179,7 +183,9 @@ object Workflow {
   }
   
   @js.native
-  trait WorkflowTemplate extends ClientObject {
+  trait WorkflowTemplate
+    extends StObject
+       with ClientObject {
     
     def get_allowManual(): Boolean = js.native
     
@@ -201,7 +207,9 @@ object Workflow {
   }
   
   @js.native
-  trait WorkflowTemplateCollection extends ClientObjectCollection[WorkflowTemplate] {
+  trait WorkflowTemplateCollection
+    extends StObject
+       with ClientObjectCollection[WorkflowTemplate] {
     
     def getById(templateId: Guid): WorkflowTemplate = js.native
     

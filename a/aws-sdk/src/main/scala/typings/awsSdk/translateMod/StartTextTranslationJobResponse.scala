@@ -2,21 +2,19 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartTextTranslationJobResponse extends StObject {
   
   /**
     * The identifier generated for the job. To get the status of a job, use this ID with the DescribeTextTranslationJob operation.
     */
-  var JobId: js.UndefOr[typings.awsSdk.translateMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.translateMod.JobId] = js.undefined
   
   /**
     * The status of the job. Possible values include:    SUBMITTED - The job has been received and is queued for processing.    IN_PROGRESS - Amazon Translate is processing the job.    COMPLETED - The job was successfully completed and the output is available.    COMPLETED_WITH_ERROR - The job was completed with errors. The errors can be analyzed in the job's output.    FAILED - The job did not complete. To get details, use the DescribeTextTranslationJob operation.    STOP_REQUESTED - The user who started the job has requested that it be stopped.    STOPPED - The job has been stopped.  
     */
-  var JobStatus: js.UndefOr[typings.awsSdk.translateMod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.translateMod.JobStatus] = js.undefined
 }
 object StartTextTranslationJobResponse {
   

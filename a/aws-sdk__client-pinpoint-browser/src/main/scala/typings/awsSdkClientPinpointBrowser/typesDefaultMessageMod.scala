@@ -4,25 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDefaultMessageMod {
   
-  @js.native
   trait DefaultMessage extends StObject {
     
     /**
       * The message body of the notification, the email body or the text message.
       */
-    var Body: js.UndefOr[String] = js.native
+    var Body: js.UndefOr[String] = js.undefined
     
     /**
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     var Substitutions: js.UndefOr[
         (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
-      ] = js.native
+      ] = js.undefined
   }
   object DefaultMessage {
     
@@ -51,14 +49,15 @@ object typesDefaultMessageMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledDefaultMessage extends DefaultMessage {
+  trait UnmarshalledDefaultMessage
+    extends StObject
+       with DefaultMessage {
     
     /**
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     @JSName("Substitutions")
-    var Substitutions_UnmarshalledDefaultMessage: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var Substitutions_UnmarshalledDefaultMessage: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   }
   object UnmarshalledDefaultMessage {
     

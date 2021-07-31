@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuiltinIntentMetadata extends StObject {
   
   /**
     * A unique identifier for the built-in intent. To find the signature for an intent, see Standard Built-in Intents in the Alexa Skills Kit.
     */
-  var signature: js.UndefOr[BuiltinIntentSignature] = js.native
+  var signature: js.UndefOr[BuiltinIntentSignature] = js.undefined
   
   /**
     * A list of identifiers for the locales that the intent supports.
     */
-  var supportedLocales: js.UndefOr[LocaleList] = js.native
+  var supportedLocales: js.UndefOr[LocaleList] = js.undefined
 }
 object BuiltinIntentMetadata {
   

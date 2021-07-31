@@ -6,18 +6,18 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specialized interface for a 2D poly-polygon containing only straight line segments.
   * @since OOo 2.0
   */
-@js.native
-trait XLinePolyPolygon2D extends XPolyPolygon2D {
+trait XLinePolyPolygon2D
+  extends StObject
+     with XPolyPolygon2D {
   
   /** Get a single point from the poly-polygon */
-  def getPoint(nPolygonIndex: Double, nPointIndex: Double): RealPoint2D = js.native
+  def getPoint(nPolygonIndex: Double, nPointIndex: Double): RealPoint2D
   
   /**
     * Query subset of this poly-polygon, starting at the given polygon and the given point within that polygon, and containing the specified number of
@@ -27,10 +27,10 @@ trait XLinePolyPolygon2D extends XPolyPolygon2D {
     * @param nPointIndex The index of the point within the first polygon (that with the index number nPolygonIndex) to start extraction with. Set to 0 to star
     * @param nNumberOfPoints The number of points in the last polygon of the extraction sequence, to be extracted. Set to -1 to extract all points from the la
     */
-  def getPoints(nPolygonIndex: Double, nNumberOfPolygons: Double, nPointIndex: Double, nNumberOfPoints: Double): SafeArray[SafeArray[RealPoint2D]] = js.native
+  def getPoints(nPolygonIndex: Double, nNumberOfPolygons: Double, nPointIndex: Double, nNumberOfPoints: Double): SafeArray[SafeArray[RealPoint2D]]
   
   /** Set a single point on the poly-polygon. The remaining points of the poly-polygon will not be changed by this method. */
-  def setPoint(point: RealPoint2D, nPolygonIndex: Double, nPointIndex: Double): Unit = js.native
+  def setPoint(point: RealPoint2D, nPolygonIndex: Double, nPointIndex: Double): Unit
   
   /**
     * Set the specified sequence of points to the poly-polygon.
@@ -40,7 +40,7 @@ trait XLinePolyPolygon2D extends XPolyPolygon2D {
     * @param nPolygonIndex The index of the polygon to start point insertion with. This index must be in the range [0,numPolygons], and the insertion will tak
     * @throws com::sun::star::lang::IndexOutOfBoundsException if one of the given values exceed the permissible range.
     */
-  def setPoints(points: SeqEquiv[SeqEquiv[RealPoint2D]], nPolygonIndex: Double): Unit = js.native
+  def setPoints(points: SeqEquiv[SeqEquiv[RealPoint2D]], nPolygonIndex: Double): Unit
 }
 object XLinePolyPolygon2D {
   

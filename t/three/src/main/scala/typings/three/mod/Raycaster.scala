@@ -2,7 +2,6 @@ package typings.three.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Raycaster")
@@ -17,57 +16,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Raycaster ()
   extends typings.three.raycasterMod.Raycaster {
   def this(origin: typings.three.vector3Mod.Vector3) = this()
-  def this(origin: js.UndefOr[scala.Nothing], direction: typings.three.vector3Mod.Vector3) = this()
+  def this(origin: Unit, direction: typings.three.vector3Mod.Vector3) = this()
   def this(origin: typings.three.vector3Mod.Vector3, direction: typings.three.vector3Mod.Vector3) = this()
-  def this(origin: js.UndefOr[scala.Nothing], direction: js.UndefOr[scala.Nothing], near: Double) = this()
-  def this(origin: js.UndefOr[scala.Nothing], direction: typings.three.vector3Mod.Vector3, near: Double) = this()
-  def this(origin: typings.three.vector3Mod.Vector3, direction: js.UndefOr[scala.Nothing], near: Double) = this()
+  def this(origin: Unit, direction: Unit, near: Double) = this()
+  def this(origin: Unit, direction: typings.three.vector3Mod.Vector3, near: Double) = this()
+  def this(origin: typings.three.vector3Mod.Vector3, direction: Unit, near: Double) = this()
   def this(
     origin: typings.three.vector3Mod.Vector3,
     direction: typings.three.vector3Mod.Vector3,
     near: Double
   ) = this()
-  def this(
-    origin: js.UndefOr[scala.Nothing],
-    direction: js.UndefOr[scala.Nothing],
-    near: js.UndefOr[scala.Nothing],
-    far: Double
-  ) = this()
-  def this(origin: js.UndefOr[scala.Nothing], direction: js.UndefOr[scala.Nothing], near: Double, far: Double) = this()
-  def this(
-    origin: js.UndefOr[scala.Nothing],
-    direction: typings.three.vector3Mod.Vector3,
-    near: js.UndefOr[scala.Nothing],
-    far: Double
-  ) = this()
-  def this(
-    origin: js.UndefOr[scala.Nothing],
-    direction: typings.three.vector3Mod.Vector3,
-    near: Double,
-    far: Double
-  ) = this()
-  def this(
-    origin: typings.three.vector3Mod.Vector3,
-    direction: js.UndefOr[scala.Nothing],
-    near: js.UndefOr[scala.Nothing],
-    far: Double
-  ) = this()
-  def this(
-    origin: typings.three.vector3Mod.Vector3,
-    direction: js.UndefOr[scala.Nothing],
-    near: Double,
-    far: Double
-  ) = this()
-  def this(
-    origin: typings.three.vector3Mod.Vector3,
-    direction: typings.three.vector3Mod.Vector3,
-    near: js.UndefOr[scala.Nothing],
-    far: Double
-  ) = this()
+  def this(origin: Unit, direction: Unit, near: Double, far: Double) = this()
+  def this(origin: Unit, direction: Unit, near: Unit, far: Double) = this()
+  def this(origin: Unit, direction: typings.three.vector3Mod.Vector3, near: Double, far: Double) = this()
+  def this(origin: Unit, direction: typings.three.vector3Mod.Vector3, near: Unit, far: Double) = this()
+  def this(origin: typings.three.vector3Mod.Vector3, direction: Unit, near: Double, far: Double) = this()
+  def this(origin: typings.three.vector3Mod.Vector3, direction: Unit, near: Unit, far: Double) = this()
   def this(
     origin: typings.three.vector3Mod.Vector3,
     direction: typings.three.vector3Mod.Vector3,
     near: Double,
+    far: Double
+  ) = this()
+  def this(
+    origin: typings.three.vector3Mod.Vector3,
+    direction: typings.three.vector3Mod.Vector3,
+    near: Unit,
     far: Double
   ) = this()
 }

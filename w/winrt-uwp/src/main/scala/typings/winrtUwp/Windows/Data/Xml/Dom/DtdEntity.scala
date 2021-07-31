@@ -2,11 +2,9 @@ package typings.winrtUwp.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a parsed or unparsed entity in the XML document. */
-@js.native
 trait DtdEntity extends StObject {
   
   /**
@@ -14,38 +12,38 @@ trait DtdEntity extends StObject {
     * @param newChild The new child node to be appended to the end of the list of children of this node.
     * @return The new child node successfully appended to the list. If null, no object is created.
     */
-  def appendChild(newChild: IXmlNode): IXmlNode = js.native
+  def appendChild(newChild: IXmlNode): IXmlNode
   
   /** Gets the list of attributes of this node. */
-  var attributes: XmlNamedNodeMap = js.native
+  var attributes: XmlNamedNodeMap
   
   /** Gets a list of children in the current node. */
-  var childNodes: XmlNodeList = js.native
+  var childNodes: XmlNodeList
   
   /**
     * Clones a new node.
     * @param deep A flag that indicates whether to recursively clone all nodes that are descendants of this node. If true, this method creates a clone of the complete tree below this node. If false, this method clones this node and its attributes only.
     * @return The newly created clone node.
     */
-  def cloneNode(deep: Boolean): IXmlNode = js.native
+  def cloneNode(deep: Boolean): IXmlNode
   
   /** Gets the first child node. */
-  var firstChild: IXmlNode = js.native
+  var firstChild: IXmlNode
   
   /**
     * Returns the XML representation of the node and all its descendants.
     * @return The XML representation of the node and all its descendants.
     */
-  def getXml(): String = js.native
+  def getXml(): String
   
   /**
     * Determines whether a node has children.
     * @return True if this node has children; otherwise false.
     */
-  def hasChildNodes(): Boolean = js.native
+  def hasChildNodes(): Boolean
   
   /** Gets the text from inside the XML. */
-  var innerText: String = js.native
+  var innerText: String
   
   /**
     * Inserts a child node to the left of the specified node, or at the end of the child node list.
@@ -53,56 +51,56 @@ trait DtdEntity extends StObject {
     * @param referenceChild The reference node. The node specified is where the newChild node is to be inserted to the left as the preceding sibling in the child list. The node passed here must be a either a child node of the current node or null. If the value is null, the newChild node is inserted at the end of the child list. If the referenceChild node is not a child of the current node, an error is returned.
     * @return On success, the child node that was inserted. If null, no object is created.
     */
-  def insertBefore(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
+  def insertBefore(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode
   
   /** Gets the last child node. */
-  var lastChild: IXmlNode = js.native
+  var lastChild: IXmlNode
   
   /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
-  var localName: js.Any = js.native
+  var localName: js.Any
   
   /** Returns the Uniform Resource Identifier (URI) for the namespace. */
-  var namespaceUri: js.Any = js.native
+  var namespaceUri: js.Any
   
   /** Gets the next sibling of the node in the parent's child list. */
-  var nextSibling: IXmlNode = js.native
+  var nextSibling: IXmlNode
   
   /** Returns the qualified name for attribute, document type, element, entity, or notation nodes. Returns a fixed string for all other node types. */
-  var nodeName: String = js.native
+  var nodeName: String
   
   /** Gets the XML Document Object Model (DOM) node type, which determines valid values and whether the node can have child nodes. */
-  var nodeType: NodeType = js.native
+  var nodeType: NodeType
   
   /** Gets or sets the text associated with the node. This value is always NULL. */
-  var nodeValue: js.Any = js.native
+  var nodeValue: js.Any
   
   /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
-  def normalize(): Unit = js.native
+  def normalize(): Unit
   
   /** Gets the notation name. */
-  var notationName: js.Any = js.native
+  var notationName: js.Any
   
   /** Returns the root of the document that contains the node. */
-  var ownerDocument: XmlDocument = js.native
+  var ownerDocument: XmlDocument
   
   /** Gets the parent node of the node instance. */
-  var parentNode: IXmlNode = js.native
+  var parentNode: IXmlNode
   
   /** Returns the namespace prefix. */
-  var prefix: js.Any = js.native
+  var prefix: js.Any
   
   /** Gets the previous sibling of the node in the parent's child list. */
-  var previousSibling: IXmlNode = js.native
+  var previousSibling: IXmlNode
   
   /** Gets the public identifier associated with the entity. */
-  var publicId: js.Any = js.native
+  var publicId: js.Any
   
   /**
     * Removes the specified child node from the list of children and returns it.
     * @param childNode The child node to be removed from the list of children of this node.
     * @return The removed child node. If null, the childNode object is not removed.
     */
-  def removeChild(childNode: IXmlNode): IXmlNode = js.native
+  def removeChild(childNode: IXmlNode): IXmlNode
   
   /**
     * Replaces the specified old child node with the supplied new child node.
@@ -110,14 +108,14 @@ trait DtdEntity extends StObject {
     * @param referenceChild The old child that is to be replaced by the new child.
     * @return The old child that is replaced. If null, no object is created.
     */
-  def replaceChild(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
+  def replaceChild(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode
   
   /**
     * Applies the specified pattern-matching operation to this node's context and returns the list of matching nodes as an XmlNodeList .
     * @param xpath Specifies an XPath expression.
     * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, this method returns an empty collection.
     */
-  def selectNodes(xpath: String): XmlNodeList = js.native
+  def selectNodes(xpath: String): XmlNodeList
   
   /**
     * Applies the specified pattern-matching operation to this node's context and returns the list of matching nodes as an XmlNodeList .
@@ -125,14 +123,14 @@ trait DtdEntity extends StObject {
     * @param namespaces Contains a string that specifies the namespaces to use in XPath expressions when it is necessary to define new namespaces externally. Namespaces are defined in the XML style, as a space-separated list of namespace declaration attributes. You can use this property to set the default namespace as well.
     * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
     */
-  def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList = js.native
+  def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList
   
   /**
     * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
     * @param xpath Specifies an XPath expression.
     * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, the method returns a null value.
     */
-  def selectSingleNode(xpath: String): IXmlNode = js.native
+  def selectSingleNode(xpath: String): IXmlNode
   
   /**
     * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -140,10 +138,10 @@ trait DtdEntity extends StObject {
     * @param namespaces Contains a string that specifies the namespaces to use in XPath expressions when it is necessary to define new namespaces externally. Namespaces are defined in the XML style, as a space-separated list of namespace declaration attributes. You can use this property to set the default namespace as well.
     * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
     */
-  def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+  def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode
   
   /** Gets the system identifier associated with the entity. */
-  var systemId: js.Any = js.native
+  var systemId: js.Any
 }
 object DtdEntity {
   

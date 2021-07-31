@@ -2,51 +2,49 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobData extends StObject {
   
   /**
     * Represents information about an action configuration.
     */
-  var actionConfiguration: js.UndefOr[ActionConfiguration] = js.native
+  var actionConfiguration: js.UndefOr[ActionConfiguration] = js.undefined
   
   /**
     * Represents information about an action type.
     */
-  var actionTypeId: js.UndefOr[ActionTypeId] = js.native
+  var actionTypeId: js.UndefOr[ActionTypeId] = js.undefined
   
   /**
     * Represents an AWS session credentials object. These credentials are temporary credentials that are issued by AWS Secure Token Service (STS). They can be used to access input and output artifacts in the S3 bucket used to store artifacts for the pipeline in AWS CodePipeline.
     */
-  var artifactCredentials: js.UndefOr[AWSSessionCredentials] = js.native
+  var artifactCredentials: js.UndefOr[AWSSessionCredentials] = js.undefined
   
   /**
     * A system-generated token, such as a AWS CodeDeploy deployment ID, required by a job to continue the job asynchronously.
     */
-  var continuationToken: js.UndefOr[ContinuationToken] = js.native
+  var continuationToken: js.UndefOr[ContinuationToken] = js.undefined
   
   /**
     * Represents information about the key used to encrypt data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. 
     */
-  var encryptionKey: js.UndefOr[EncryptionKey] = js.native
+  var encryptionKey: js.UndefOr[EncryptionKey] = js.undefined
   
   /**
     * The artifact supplied to the job.
     */
-  var inputArtifacts: js.UndefOr[ArtifactList] = js.native
+  var inputArtifacts: js.UndefOr[ArtifactList] = js.undefined
   
   /**
     * The output of the job.
     */
-  var outputArtifacts: js.UndefOr[ArtifactList] = js.native
+  var outputArtifacts: js.UndefOr[ArtifactList] = js.undefined
   
   /**
     * Represents information about a pipeline to a job worker.  Includes pipelineArn and pipelineExecutionId for custom jobs. 
     */
-  var pipelineContext: js.UndefOr[PipelineContext] = js.native
+  var pipelineContext: js.UndefOr[PipelineContext] = js.undefined
 }
 object JobData {
   

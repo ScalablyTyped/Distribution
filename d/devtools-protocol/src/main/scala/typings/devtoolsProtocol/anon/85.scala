@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetNavigatorOverridesRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `85` extends StObject {
   
-  var paramsType: js.Array[SetNavigatorOverridesRequest] = js.native
+  var paramsType: js.Array[SetNavigatorOverridesRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `85` {
   

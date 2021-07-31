@@ -2,21 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioParamDescriptor extends StObject {
   
-  var automationRate: js.UndefOr[AutomationRate] = js.native
+  var automationRate: js.UndefOr[AutomationRate] = js.undefined
   
-  var defaultValue: js.UndefOr[Double] = js.native
+  var defaultValue: js.UndefOr[Double] = js.undefined
   
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
 }
 object AudioParamDescriptor {
   

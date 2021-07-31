@@ -1,0 +1,17 @@
+package typings.awsSdkClientKmsBrowser.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait RevokeGrantInput
+  extends StObject
+     with typings.awsSdkClientKmsBrowser.typesRevokeGrantInputMod.RevokeGrantInput
+object RevokeGrantInput {
+  
+  @scala.inline
+  def apply(GrantId: String, KeyId: String): RevokeGrantInput = {
+    val __obj = js.Dynamic.literal(GrantId = GrantId.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RevokeGrantInput]
+  }
+}

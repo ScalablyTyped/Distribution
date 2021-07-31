@@ -2,38 +2,36 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 10. "Get All at once" - functions
-@js.native
 trait StaticData extends StObject {
   
-  var baseboard: BaseboardData = js.native
+  var baseboard: BaseboardData
   
-  var bios: BiosData = js.native
+  var bios: BiosData
   
-  var chassis: ChassisData = js.native
+  var chassis: ChassisData
   
-  var cpu: CpuWithFlagsData = js.native
+  var cpu: CpuWithFlagsData
   
-  var diskLayout: js.Array[DiskLayoutData] = js.native
+  var diskLayout: js.Array[DiskLayoutData]
   
-  var graphics: GraphicsData = js.native
+  var graphics: GraphicsData
   
-  var memLayout: js.Array[MemLayoutData] = js.native
+  var memLayout: js.Array[MemLayoutData]
   
-  var net: js.Array[NetworkInterfacesData] = js.native
+  var net: js.Array[NetworkInterfacesData]
   
-  var os: OsData = js.native
+  var os: OsData
   
-  var system: SystemData = js.native
+  var system: SystemData
   
-  var uuid: UuidData = js.native
+  var uuid: UuidData
   
-  var version: String = js.native
+  var version: String
   
-  var versions: VersionData = js.native
+  var versions: VersionData
 }
 object StaticData {
   

@@ -3,7 +3,6 @@ package typings.dbus
 import typings.dbus.mod.busType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dbusStrings {
@@ -14,12 +13,16 @@ object dbusStrings {
   def PickMatching: PickMatching = "PickMatching".asInstanceOf[PickMatching]
   
   @js.native
-  sealed trait session extends busType
+  sealed trait session
+    extends StObject
+       with busType
   @scala.inline
   def session: session = "session".asInstanceOf[session]
   
   @js.native
-  sealed trait system extends busType
+  sealed trait system
+    extends StObject
+       with busType
   @scala.inline
   def system: system = "system".asInstanceOf[system]
 }

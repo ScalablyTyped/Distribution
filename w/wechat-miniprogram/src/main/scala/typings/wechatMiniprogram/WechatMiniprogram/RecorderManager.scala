@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecorderManager extends StObject {
   
   /** [RecorderManager.onError(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.onError.html)
     *
     * 监听录音错误事件 */
   def onError(/** 录音错误事件的回调函数 */
-  callback: UDPSocketOnErrorCallback): Unit = js.native
+  callback: UDPSocketOnErrorCallback): Unit
   
   /** [RecorderManager.onFrameRecorded(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.onFrameRecorded.html)
     *
     * 监听已录制完指定帧大小的文件事件。如果设置了 frameSize，则会回调此事件。 */
   def onFrameRecorded(/** 已录制完指定帧大小的文件事件的回调函数 */
-  callback: OnFrameRecordedCallback): Unit = js.native
+  callback: OnFrameRecordedCallback): Unit
   
   /** [RecorderManager.onInterruptionBegin(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.onInterruptionBegin.html)
     *
@@ -26,7 +24,7 @@ trait RecorderManager extends StObject {
     *
     * 最低基础库： `2.3.0` */
   def onInterruptionBegin(/** 录音因为受到系统占用而被中断开始事件的回调函数 */
-  callback: OnInterruptionBeginCallback): Unit = js.native
+  callback: OnInterruptionBeginCallback): Unit
   
   /** [RecorderManager.onInterruptionEnd(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.onInterruptionEnd.html)
     *
@@ -34,41 +32,41 @@ trait RecorderManager extends StObject {
     *
     * 最低基础库： `2.3.0` */
   def onInterruptionEnd(/** 录音中断结束事件的回调函数 */
-  callback: OnInterruptionEndCallback): Unit = js.native
+  callback: OnInterruptionEndCallback): Unit
   
   /** [RecorderManager.onPause(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.onPause.html)
     *
     * 监听录音暂停事件 */
   def onPause(/** 录音暂停事件的回调函数 */
-  callback: OnPauseCallback): Unit = js.native
+  callback: OnPauseCallback): Unit
   
   /** [RecorderManager.onResume(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.onResume.html)
     *
     * 监听录音继续事件 */
   def onResume(/** 录音继续事件的回调函数 */
-  callback: OnResumeCallback): Unit = js.native
+  callback: OnResumeCallback): Unit
   
   /** [RecorderManager.onStart(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.onStart.html)
     *
     * 监听录音开始事件 */
   def onStart(/** 录音开始事件的回调函数 */
-  callback: OnStartCallback): Unit = js.native
+  callback: OnStartCallback): Unit
   
   /** [RecorderManager.onStop(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.onStop.html)
     *
     * 监听录音结束事件 */
   def onStop(/** 录音结束事件的回调函数 */
-  callback: RecorderManagerOnStopCallback): Unit = js.native
+  callback: RecorderManagerOnStopCallback): Unit
   
   /** [RecorderManager.pause()](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.pause.html)
     *
     * 暂停录音 */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /** [RecorderManager.resume()](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.resume.html)
     *
     * 继续录音 */
-  def resume(): Unit = js.native
+  def resume(): Unit
   
   /** [RecorderManager.start(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.start.html)
     *
@@ -90,12 +88,12 @@ trait RecorderManager extends StObject {
     * | 32000  | 48000 ~ 192000 |
     * | 44100  | 64000 ~ 320000 |
     * | 48000  | 64000 ~ 320000 | */
-  def start(option: RecorderManagerStartOption): Unit = js.native
+  def start(option: RecorderManagerStartOption): Unit
   
   /** [RecorderManager.stop()](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.stop.html)
     *
     * 停止录音 */
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object RecorderManager {
   

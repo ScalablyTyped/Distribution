@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Optimization {
@@ -19,25 +18,39 @@ object Optimization {
   object Status extends StObject {
     
     @js.native
-    sealed trait ABNORMAL extends Status
+    sealed trait ABNORMAL
+      extends StObject
+         with Status
     
     @js.native
-    sealed trait FEASIBLE extends Status
+    sealed trait FEASIBLE
+      extends StObject
+         with Status
     
     @js.native
-    sealed trait INFEASIBLE extends Status
+    sealed trait INFEASIBLE
+      extends StObject
+         with Status
     
     @js.native
-    sealed trait MODEL_INVALID extends Status
+    sealed trait MODEL_INVALID
+      extends StObject
+         with Status
     
     @js.native
-    sealed trait NOT_SOLVED extends Status
+    sealed trait NOT_SOLVED
+      extends StObject
+         with Status
     
     @js.native
-    sealed trait OPTIMAL extends Status
+    sealed trait OPTIMAL
+      extends StObject
+         with Status
     
     @js.native
-    sealed trait UNBOUNDED extends Status
+    sealed trait UNBOUNDED
+      extends StObject
+         with Status
   }
   
   @js.native
@@ -50,10 +63,14 @@ object Optimization {
   object VariableType extends StObject {
     
     @js.native
-    sealed trait CONTINUOUS extends VariableType
+    sealed trait CONTINUOUS
+      extends StObject
+         with VariableType
     
     @js.native
-    sealed trait INTEGER extends VariableType
+    sealed trait INTEGER
+      extends StObject
+         with VariableType
   }
   
   /**
@@ -75,10 +92,9 @@ object Optimization {
     *     // 0 <= 2 * x <= 5
     *     constraint.setCoefficient('x', 2);
     */
-  @js.native
   trait LinearOptimizationConstraint extends StObject {
     
-    def setCoefficient(variableName: String, coefficient: Double): LinearOptimizationConstraint = js.native
+    def setCoefficient(variableName: String, coefficient: Double): LinearOptimizationConstraint
   }
   object LinearOptimizationConstraint {
     
@@ -240,14 +256,13 @@ object Optimization {
     *       Logger.log('Value of y: ' + solution.getVariableValue('y'));
     *     }
     */
-  @js.native
   trait LinearOptimizationService extends StObject {
     
-    var Status: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ js.Any = js.native
+    var Status: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ js.Any
     
-    var VariableType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ js.Any = js.native
+    var VariableType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ js.Any
     
-    def createEngine(): LinearOptimizationEngine = js.native
+    def createEngine(): LinearOptimizationEngine
   }
   object LinearOptimizationService {
     
@@ -329,16 +344,15 @@ object Optimization {
     *       Logger.log('Value of y: ' + solution.getVariableValue('y'));
     *     }
     */
-  @js.native
   trait LinearOptimizationSolution extends StObject {
     
-    def getObjectiveValue(): Double = js.native
+    def getObjectiveValue(): Double
     
-    def getStatus(): Status = js.native
+    def getStatus(): Status
     
-    def getVariableValue(variableName: String): Double = js.native
+    def getVariableValue(variableName: String): Double
     
-    def isValid(): Boolean = js.native
+    def isValid(): Boolean
   }
   object LinearOptimizationSolution {
     

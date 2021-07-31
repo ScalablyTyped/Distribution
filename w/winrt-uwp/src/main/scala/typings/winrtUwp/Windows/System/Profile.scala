@@ -3,25 +3,22 @@ package typings.winrtUwp.Windows.System
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables apps to get information about the system. */
 object Profile {
   
   /** Provides information about the device for profiling purposes. */
-  @js.native
   trait AnalyticsInfo extends StObject
   
   /** Provides version information about the device family. */
-  @js.native
   trait AnalyticsVersionInfo extends StObject {
     
     /** Gets the device family. */
-    var deviceFamily: String = js.native
+    var deviceFamily: String
     
     /** Gets the version within the device family. */
-    var deviceFamilyVersion: String = js.native
+    var deviceFamilyVersion: String
   }
   object AnalyticsVersionInfo {
     
@@ -43,21 +40,19 @@ object Profile {
   }
   
   /** Provides the ability to obtain a hardware identifier that represents the current hardware. */
-  @js.native
   trait HardwareIdentification extends StObject
   
   /** Represents a token that contains a hardware based identification that is sufficiently unique. */
-  @js.native
   trait HardwareToken extends StObject {
     
     /** Gets the certificate that is used to sign the Id and is used to help verify the authenticity of the Id. */
-    var certificate: IBuffer = js.native
+    var certificate: IBuffer
     
     /** Gets the hardware identifier that identifies the device. */
-    var id: IBuffer = js.native
+    var id: IBuffer
     
     /** Gets the digital signature of hardware Id that helps verify the authenticity of returned Id. */
-    var signature: IBuffer = js.native
+    var signature: IBuffer
   }
   object HardwareToken {
     
@@ -82,21 +77,17 @@ object Profile {
   }
   
   /** Identifies the string keys that might exist within the RetailInfo.Properties map of retail-demo relevant property values. */
-  @js.native
   trait KnownRetailInfoProperties extends StObject
   
-  @js.native
   trait PlatformDiagnosticsAndUsageDataSettings extends StObject
   
   /** A utility class that supports one method, IsDemoModeEnabled , and one property, Properties . Call IsDemoModeEnabled to determine whether the device where the app is running has specifically enabled its retail demo mode. */
-  @js.native
   trait RetailInfo extends StObject
   
   /** Provides info for hardware developers and OEMs. */
   object SystemManufacturers {
     
     /** Enables access to properties from the SMBIOS for the system. */
-    @js.native
     trait SmbiosInformation extends StObject
   }
 }

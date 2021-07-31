@@ -2,73 +2,71 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tape extends StObject {
   
-  var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
+  var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.undefined
   
   /**
     * The date that the tape enters a custom tape pool.
     */
-  var PoolEntryDate: js.UndefOr[Time] = js.native
+  var PoolEntryDate: js.UndefOr[Time] = js.undefined
   
   /**
     * The ID of the pool that contains tapes that will be archived. The tapes in this pool are archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool. Valid Values: GLACIER | DEEP_ARCHIVE 
     */
-  var PoolId: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolId] = js.native
+  var PoolId: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolId] = js.undefined
   
   /**
     * For archiving virtual tapes, indicates how much data remains to be uploaded before archiving is complete. Range: 0 (not started) to 100 (complete).
     */
-  var Progress: js.UndefOr[DoubleObject] = js.native
+  var Progress: js.UndefOr[DoubleObject] = js.undefined
   
   /**
     * The date that the tape is first archived with tape retention lock enabled.
     */
-  var RetentionStartDate: js.UndefOr[Time] = js.native
+  var RetentionStartDate: js.UndefOr[Time] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the virtual tape.
     */
-  var TapeARN: js.UndefOr[typings.awsSdk.storagegatewayMod.TapeARN] = js.native
+  var TapeARN: js.UndefOr[typings.awsSdk.storagegatewayMod.TapeARN] = js.undefined
   
   /**
     * The barcode that identifies a specific virtual tape.
     */
-  var TapeBarcode: js.UndefOr[typings.awsSdk.storagegatewayMod.TapeBarcode] = js.native
+  var TapeBarcode: js.UndefOr[typings.awsSdk.storagegatewayMod.TapeBarcode] = js.undefined
   
   /**
     * The date the virtual tape was created.
     */
-  var TapeCreatedDate: js.UndefOr[Time] = js.native
+  var TapeCreatedDate: js.UndefOr[Time] = js.undefined
   
   /**
     * The size, in bytes, of the virtual tape capacity.
     */
-  var TapeSizeInBytes: js.UndefOr[TapeSize] = js.native
+  var TapeSizeInBytes: js.UndefOr[TapeSize] = js.undefined
   
   /**
     * The current state of the virtual tape.
     */
-  var TapeStatus: js.UndefOr[typings.awsSdk.storagegatewayMod.TapeStatus] = js.native
+  var TapeStatus: js.UndefOr[typings.awsSdk.storagegatewayMod.TapeStatus] = js.undefined
   
   /**
     * The size, in bytes, of data stored on the virtual tape.  This value is not available for tapes created prior to May 13, 2015. 
     */
-  var TapeUsedInBytes: js.UndefOr[TapeUsage] = js.native
+  var TapeUsedInBytes: js.UndefOr[TapeUsage] = js.undefined
   
   /**
     * The virtual tape library (VTL) device that the virtual tape is associated with.
     */
-  var VTLDevice: js.UndefOr[VTLDeviceARN] = js.native
+  var VTLDevice: js.UndefOr[VTLDeviceARN] = js.undefined
   
   /**
     * If the tape is archived as write-once-read-many (WORM), this value is true.
     */
-  var Worm: js.UndefOr[scala.Boolean] = js.native
+  var Worm: js.UndefOr[scala.Boolean] = js.undefined
 }
 object Tape {
   

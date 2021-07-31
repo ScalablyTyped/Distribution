@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "PlatformRef")
@@ -35,15 +34,9 @@ class PlatformRef () extends StObject {
     * ```
     *
     */
-  def bootstrapModule[M](moduleType: typings.angularCore.mod.Type[M]): js.Promise[NgModuleRef[M]] = js.native
-  def bootstrapModule[M](
-    moduleType: typings.angularCore.mod.Type[M],
-    compilerOptions: CompilerOptions with BootstrapOptions
-  ): js.Promise[NgModuleRef[M]] = js.native
-  def bootstrapModule[M](
-    moduleType: typings.angularCore.mod.Type[M],
-    compilerOptions: js.Array[CompilerOptions with BootstrapOptions]
-  ): js.Promise[NgModuleRef[M]] = js.native
+  def bootstrapModule[M](moduleType: Type[M]): js.Promise[NgModuleRef[M]] = js.native
+  def bootstrapModule[M](moduleType: Type[M], compilerOptions: CompilerOptions & BootstrapOptions): js.Promise[NgModuleRef[M]] = js.native
+  def bootstrapModule[M](moduleType: Type[M], compilerOptions: js.Array[CompilerOptions & BootstrapOptions]): js.Promise[NgModuleRef[M]] = js.native
   
   /**
     * Creates an instance of an `@NgModule` for the given platform for offline compilation.

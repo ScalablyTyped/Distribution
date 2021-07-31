@@ -7,32 +7,30 @@ import typings.blueprintjsIcons.iconNameMod.IconName
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/icon/icon.IIconProps> */
-@js.native
 trait PartialIIconProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var htmlTitle: js.UndefOr[String] = js.native
+  var htmlTitle: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[IconName | MaybeElement] = js.native
+  var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
   
-  var iconSize: js.UndefOr[Double] = js.native
+  var iconSize: js.UndefOr[Double] = js.undefined
   
-  var intent: js.UndefOr[Intent] = js.native
+  var intent: js.UndefOr[Intent] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
   var tagName: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var title: js.UndefOr[String | `false` | Null] = js.native
+  var title: js.UndefOr[String | `false` | Null] = js.undefined
 }
 object PartialIIconProps {
   

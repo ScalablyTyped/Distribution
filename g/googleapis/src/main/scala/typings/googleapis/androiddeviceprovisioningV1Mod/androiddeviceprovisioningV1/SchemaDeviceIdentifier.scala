@@ -2,7 +2,6 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * understand requirements on identifier sets, read
   * [Identifiers](/zero-touch/guides/identifiers).
   */
-@js.native
 trait SchemaDeviceIdentifier extends StObject {
   
   /**
     * The device’s IMEI number. Validated on input.
     */
-  var imei: js.UndefOr[String] = js.native
+  var imei: js.UndefOr[String] = js.undefined
   
   /**
     * The device manufacturer’s name. Matches the device&#39;s built-in value
@@ -24,25 +22,25 @@ trait SchemaDeviceIdentifier extends StObject {
     * in
     * [manufacturers](/zero-touch/resources/manufacturer-names#manufacturers-names).
     */
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /**
     * The device’s MEID number.
     */
-  var meid: js.UndefOr[String] = js.native
+  var meid: js.UndefOr[String] = js.undefined
   
   /**
     * The device model&#39;s name. Matches the device&#39;s built-in value
     * returned from `android.os.Build.MODEL`. Allowed values are listed in
     * [models](/zero-touch/resources/manufacturer-names#model-names).
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * The manufacturer&#39;s serial number for the device. This value might not
     * be unique across different device models.
     */
-  var serialNumber: js.UndefOr[String] = js.native
+  var serialNumber: js.UndefOr[String] = js.undefined
 }
 object SchemaDeviceIdentifier {
   

@@ -14,7 +14,6 @@ import typings.typesettable.writerMod.IPenFactory
 import typings.typesettable.writerMod.ITransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextsMod {
@@ -25,8 +24,8 @@ object contextsMod {
     extends typings.typesettable.canvasMod.CanvasContext {
     def this(ctx: CanvasRenderingContext2D) = this()
     def this(ctx: CanvasRenderingContext2D, lineHeight: Double) = this()
-    def this(ctx: CanvasRenderingContext2D, lineHeight: js.UndefOr[scala.Nothing], style: ICanvasFontStyle) = this()
     def this(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle) = this()
+    def this(ctx: CanvasRenderingContext2D, lineHeight: Unit, style: ICanvasFontStyle) = this()
   }
   
   @JSImport("typesettable/build/src/contexts", "HtmlContext")
@@ -41,8 +40,8 @@ object contextsMod {
       */
     def this(element: HTMLElement) = this()
     def this(element: HTMLElement, className: String) = this()
-    def this(element: HTMLElement, className: js.UndefOr[scala.Nothing], addTitle: Boolean) = this()
     def this(element: HTMLElement, className: String, addTitle: Boolean) = this()
+    def this(element: HTMLElement, className: Unit, addTitle: Boolean) = this()
   }
   
   @JSImport("typesettable/build/src/contexts", "HtmlUtils")
@@ -52,12 +51,15 @@ object contextsMod {
   /* static members */
   object HtmlUtils {
     
+    @JSImport("typesettable/build/src/contexts", "HtmlUtils")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Adds the variadic classnames to the Element
       */
-    @JSImport("typesettable/build/src/contexts", "HtmlUtils.addClasses")
-    @js.native
-    def addClasses(element: Element, classNames: String*): Unit = js.native
+    @scala.inline
+    def addClasses(element: Element, classNames: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(element.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Appends an HTML element with the specified tag name to the provided element.
@@ -65,23 +67,20 @@ object contextsMod {
       *
       * Returns the new element.
       */
-    @JSImport("typesettable/build/src/contexts", "HtmlUtils.append")
-    @js.native
-    def append(element: Element, tagName: String, classNames: String*): HTMLElement = js.native
+    @scala.inline
+    def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * Creates and returns a new HTMLElement with the attached classnames.
       */
-    @JSImport("typesettable/build/src/contexts", "HtmlUtils.create")
-    @js.native
-    def create(tagName: String, classNames: String*): HTMLElement = js.native
+    @scala.inline
+    def create(tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * Returns the width/height of HTMLElement's bounding box
       */
-    @JSImport("typesettable/build/src/contexts", "HtmlUtils.getDimensions")
-    @js.native
-    def getDimensions(element: HTMLElement): IDimensions = js.native
+    @scala.inline
+    def getDimensions(element: HTMLElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
   }
   
   @JSImport("typesettable/build/src/contexts", "SvgContext")
@@ -90,8 +89,8 @@ object contextsMod {
     extends typings.typesettable.svgMod.SvgContext {
     def this(element: SVGElement) = this()
     def this(element: SVGElement, className: String) = this()
-    def this(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean) = this()
     def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()
+    def this(element: SVGElement, className: Unit, addTitleElement: Boolean) = this()
   }
   /* static members */
   object SvgContext {
@@ -130,44 +129,80 @@ object contextsMod {
       *
       * Returns the new element.
       */
-    @JSImport("typesettable/build/src/contexts", "SvgUtils.append")
-    @js.native
-    def append(element: Element, tagName: String, classNames: String*): SVGElement = js.native
+    @scala.inline
+    def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
     
     /**
       * Creates and returns a new SVGElement with the attached classnames.
       */
-    @JSImport("typesettable/build/src/contexts", "SvgUtils.create")
-    @js.native
-    def create(tagName: String, classNames: String*): SVGElement = js.native
+    @scala.inline
+    def create(tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
     
     /**
       * Returns the width/height of svg element's bounding box
       */
-    @JSImport("typesettable/build/src/contexts", "SvgUtils.getDimensions")
-    @js.native
-    def getDimensions(element: SVGGraphicsElement): IDimensions = js.native
+    @scala.inline
+    def getDimensions(element: SVGGraphicsElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
   }
   
-  @js.native
   trait IPenFactoryContext[T] extends StObject {
     
-    def createPen(text: String, transform: ITransform): IPen = js.native
-    def createPen(text: String, transform: ITransform, container: T): IPen = js.native
+    def createPen(text: String, transform: ITransform): IPen
+    def createPen(text: String, transform: ITransform, container: T): IPen
     @JSName("createPen")
-    var createPen_Original: IPenFactory[T] = js.native
+    var createPen_Original: IPenFactory[T]
+  }
+  object IPenFactoryContext {
+    
+    @scala.inline
+    def apply[T](createPen: (/* text */ String, /* transform */ ITransform, /* container */ js.UndefOr[T]) => IPen): IPenFactoryContext[T] = {
+      val __obj = js.Dynamic.literal(createPen = js.Any.fromFunction3(createPen))
+      __obj.asInstanceOf[IPenFactoryContext[T]]
+    }
+    
+    @scala.inline
+    implicit class IPenFactoryContextMutableBuilder[Self <: IPenFactoryContext[?], T] (val x: Self & IPenFactoryContext[T]) extends AnyVal {
+      
+      @scala.inline
+      def setCreatePen(value: (/* text */ String, /* transform */ ITransform, /* container */ js.UndefOr[T]) => IPen): Self = StObject.set(x, "createPen", js.Any.fromFunction3(value))
+    }
   }
   
-  @js.native
   trait IRulerFactoryContext extends StObject {
     
-    def createRuler(): IRuler = js.native
+    def createRuler(): IRuler
     @JSName("createRuler")
-    var createRuler_Original: IRulerFactory = js.native
+    var createRuler_Original: IRulerFactory
+  }
+  object IRulerFactoryContext {
+    
+    @scala.inline
+    def apply(createRuler: () => IRuler): IRulerFactoryContext = {
+      val __obj = js.Dynamic.literal(createRuler = js.Any.fromFunction0(createRuler))
+      __obj.asInstanceOf[IRulerFactoryContext]
+    }
+    
+    @scala.inline
+    implicit class IRulerFactoryContextMutableBuilder[Self <: IRulerFactoryContext] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCreateRuler(value: () => IRuler): Self = StObject.set(x, "createRuler", js.Any.fromFunction0(value))
+    }
   }
   
-  @js.native
   trait ITypesetterContext[T]
-    extends IPenFactoryContext[T]
+    extends StObject
+       with IPenFactoryContext[T]
        with IRulerFactoryContext
+  object ITypesetterContext {
+    
+    @scala.inline
+    def apply[T](
+      createPen: (/* text */ String, /* transform */ ITransform, /* container */ js.UndefOr[T]) => IPen,
+      createRuler: () => IRuler
+    ): ITypesetterContext[T] = {
+      val __obj = js.Dynamic.literal(createPen = js.Any.fromFunction3(createPen), createRuler = js.Any.fromFunction0(createRuler))
+      __obj.asInstanceOf[ITypesetterContext[T]]
+    }
+  }
 }

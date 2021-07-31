@@ -9,27 +9,25 @@ import typings.playable.themeTypesMod.IThemeService
 import typings.playable.tooltipTypesMod.ITooltipService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiveStateEngine extends StObject {
   
-  var engine: IPlaybackEngine = js.native
+  var engine: IPlaybackEngine
   
-  var eventEmitter: IEventEmitter = js.native
+  var eventEmitter: IEventEmitter
   
-  var liveStateEngine: js.Any = js.native
+  var liveStateEngine: js.Any
   
-  var previewFullSize: IPreviewFullSize = js.native
+  var previewFullSize: IPreviewFullSize
   
-  var previewThumbnail: IPreviewThumbnail = js.native
+  var previewThumbnail: IPreviewThumbnail
   
-  var textMap: ITextMap = js.native
+  var textMap: ITextMap
   
-  var theme: IThemeService = js.native
+  var theme: IThemeService
   
-  var tooltipService: ITooltipService = js.native
+  var tooltipService: ITooltipService
 }
 object LiveStateEngine {
   

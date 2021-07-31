@@ -5,10 +5,13 @@ import typings.baconjs.typesMod.EventSink
 import typings.baconjs.typesMod.Unsub
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceMod {
+  
+  @JSImport("baconjs/types/internal/source", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("baconjs/types/internal/source", "BufferingSource")
   @js.native
@@ -63,21 +66,17 @@ object sourceMod {
     var sync: Boolean = js.native
   }
   
-  @JSImport("baconjs/types/internal/source", "fromObservable")
-  @js.native
-  def fromObservable[V](s: default[V]): Source[V, V] = js.native
-  @JSImport("baconjs/types/internal/source", "fromObservable")
-  @js.native
-  def fromObservable[V](s: Source[V, V]): Source[V, V] = js.native
+  @scala.inline
+  def fromObservable[V](s: default[V]): Source[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(s.asInstanceOf[js.Any]).asInstanceOf[Source[V, V]]
+  @scala.inline
+  def fromObservable[V](s: Source[V, V]): Source[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(s.asInstanceOf[js.Any]).asInstanceOf[Source[V, V]]
   
-  @JSImport("baconjs/types/internal/source", "isTrigger")
-  @js.native
-  def isTrigger(s: js.Any): Boolean = js.native
+  @scala.inline
+  def isTrigger(s: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTrigger")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait Event[V] extends StObject {
     
-    var value: V = js.native
+    var value: V
   }
   object Event {
     
@@ -88,7 +87,7 @@ object sourceMod {
     }
     
     @scala.inline
-    implicit class EventMutableBuilder[Self <: Event[_], V] (val x: Self with Event[V]) extends AnyVal {
+    implicit class EventMutableBuilder[Self <: Event[?], V] (val x: Self & Event[V]) extends AnyVal {
       
       @scala.inline
       def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])

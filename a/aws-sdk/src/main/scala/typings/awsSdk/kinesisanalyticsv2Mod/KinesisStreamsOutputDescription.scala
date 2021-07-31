@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisStreamsOutputDescription extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Kinesis data stream.
     */
-  var ResourceARN: typings.awsSdk.kinesisanalyticsv2Mod.ResourceARN = js.native
+  var ResourceARN: typings.awsSdk.kinesisanalyticsv2Mod.ResourceARN
   
   /**
     * The ARN of the IAM role that Kinesis Data Analytics can assume to access the stream.  Provided for backward compatibility. Applications that are created with the current API version have an application-level service execution role rather than a resource-level role. 
     */
-  var RoleARN: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.RoleARN] = js.native
+  var RoleARN: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.RoleARN] = js.undefined
 }
 object KinesisStreamsOutputDescription {
   

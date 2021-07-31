@@ -1,6 +1,5 @@
 package typings.expressWinston
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.ErrorRequestHandler
 import typings.express.mod.Handler
 import typings.express.mod.Request_
@@ -11,13 +10,10 @@ import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.expressWinston.anon.Body
 import typings.logform.mod.Format_
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
 import typings.std.Error
 import typings.winston.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -50,13 +46,11 @@ object mod {
   @scala.inline
   def defaultResponseFilter_=(x: ResponseFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResponseFilter")(x.asInstanceOf[js.Any])
   
-  @JSImport("express-winston", "defaultSkip")
-  @js.native
-  def defaultSkip(): Boolean = js.native
+  @scala.inline
+  def defaultSkip(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSkip")().asInstanceOf[Boolean]
   
-  @JSImport("express-winston", "errorLogger")
-  @js.native
-  def errorLogger(options: ErrorLoggerOptions): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def errorLogger(options: ErrorLoggerOptions): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorLogger")(options.asInstanceOf[js.Any]).asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-winston", "ignoredRoutes")
   @js.native
@@ -64,9 +58,8 @@ object mod {
   @scala.inline
   def ignoredRoutes_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ignoredRoutes")(x.asInstanceOf[js.Any])
   
-  @JSImport("express-winston", "logger")
-  @js.native
-  def logger(options: LoggerOptions): Handler = js.native
+  @scala.inline
+  def logger(options: LoggerOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("logger")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   @JSImport("express-winston", "requestWhitelist")
   @js.native
@@ -80,38 +73,37 @@ object mod {
   @scala.inline
   def responseWhitelist_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("responseWhitelist")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait BaseErrorLoggerOptions extends StObject {
     
-    var baseMeta: js.UndefOr[js.Object] = js.native
+    var baseMeta: js.UndefOr[js.Object] = js.undefined
     
-    var blacklistedMetaFields: js.UndefOr[js.Array[String]] = js.native
+    var blacklistedMetaFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var dynamicMeta: js.UndefOr[DynamicMetaFunction] = js.native
+    var dynamicMeta: js.UndefOr[DynamicMetaFunction] = js.undefined
     
-    var exceptionToMeta: js.UndefOr[ExceptionToMetaFunction] = js.native
+    var exceptionToMeta: js.UndefOr[ExceptionToMetaFunction] = js.undefined
     
-    var format: js.UndefOr[Format_] = js.native
+    var format: js.UndefOr[Format_] = js.undefined
     
-    var headerBlacklist: js.UndefOr[js.Array[String]] = js.native
+    var headerBlacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var level: js.UndefOr[String | DynamicLevelFunction] = js.native
+    var level: js.UndefOr[String | DynamicLevelFunction] = js.undefined
     
-    var meta: js.UndefOr[Boolean] = js.native
+    var meta: js.UndefOr[Boolean] = js.undefined
     
-    var metaField: js.UndefOr[String] = js.native
+    var metaField: js.UndefOr[String] = js.undefined
     
-    var msg: js.UndefOr[MessageTemplate] = js.native
+    var msg: js.UndefOr[MessageTemplate] = js.undefined
     
-    var requestField: js.UndefOr[String] = js.native
+    var requestField: js.UndefOr[String] = js.undefined
     
-    var requestFilter: js.UndefOr[RequestFilter] = js.native
+    var requestFilter: js.UndefOr[RequestFilter] = js.undefined
     
-    var requestWhitelist: js.UndefOr[js.Array[String]] = js.native
+    var requestWhitelist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var responseField: js.UndefOr[String] = js.native
+    var responseField: js.UndefOr[String] = js.undefined
     
-    var skip: js.UndefOr[ErrorRouteFilter] = js.native
+    var skip: js.UndefOr[ErrorRouteFilter] = js.undefined
   }
   object BaseErrorLoggerOptions {
     
@@ -239,52 +231,51 @@ object mod {
     }
   }
   
-  @js.native
   trait BaseLoggerOptions extends StObject {
     
-    var baseMeta: js.UndefOr[js.Object] = js.native
+    var baseMeta: js.UndefOr[js.Object] = js.undefined
     
-    var bodyBlacklist: js.UndefOr[js.Array[String]] = js.native
+    var bodyBlacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var bodyWhitelist: js.UndefOr[js.Array[String]] = js.native
+    var bodyWhitelist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var colorize: js.UndefOr[Boolean] = js.native
+    var colorize: js.UndefOr[Boolean] = js.undefined
     
-    var dynamicMeta: js.UndefOr[DynamicMetaFunction] = js.native
+    var dynamicMeta: js.UndefOr[DynamicMetaFunction] = js.undefined
     
-    var expressFormat: js.UndefOr[Boolean] = js.native
+    var expressFormat: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[Format_] = js.native
+    var format: js.UndefOr[Format_] = js.undefined
     
-    var headerBlacklist: js.UndefOr[js.Array[String]] = js.native
+    var headerBlacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignoreRoute: js.UndefOr[RouteFilter] = js.native
+    var ignoreRoute: js.UndefOr[RouteFilter] = js.undefined
     
-    var ignoredRoutes: js.UndefOr[js.Array[String]] = js.native
+    var ignoredRoutes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var level: js.UndefOr[String | DynamicLevelFunction] = js.native
+    var level: js.UndefOr[String | DynamicLevelFunction] = js.undefined
     
-    var meta: js.UndefOr[Boolean] = js.native
+    var meta: js.UndefOr[Boolean] = js.undefined
     
-    var metaField: js.UndefOr[String] = js.native
+    var metaField: js.UndefOr[String] = js.undefined
     
-    var msg: js.UndefOr[MessageTemplate] = js.native
+    var msg: js.UndefOr[MessageTemplate] = js.undefined
     
-    var requestField: js.UndefOr[String] = js.native
+    var requestField: js.UndefOr[String] = js.undefined
     
-    var requestFilter: js.UndefOr[RequestFilter] = js.native
+    var requestFilter: js.UndefOr[RequestFilter] = js.undefined
     
-    var requestWhitelist: js.UndefOr[js.Array[String]] = js.native
+    var requestWhitelist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var responseField: js.UndefOr[String] = js.native
+    var responseField: js.UndefOr[String] = js.undefined
     
-    var responseFilter: js.UndefOr[ResponseFilter] = js.native
+    var responseFilter: js.UndefOr[ResponseFilter] = js.undefined
     
-    var responseWhitelist: js.UndefOr[js.Array[String]] = js.native
+    var responseWhitelist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var skip: js.UndefOr[RouteFilter] = js.native
+    var skip: js.UndefOr[RouteFilter] = js.undefined
     
-    var statusLevels: js.UndefOr[Boolean | StatusLevels] = js.native
+    var statusLevels: js.UndefOr[Boolean | StatusLevels] = js.undefined
   }
   object BaseLoggerOptions {
     
@@ -499,12 +490,12 @@ object mod {
     }
   }
   
-  @js.native
   trait ErrorLoggerOptionsWithTransports
-    extends BaseErrorLoggerOptions
+    extends StObject
+       with BaseErrorLoggerOptions
        with ErrorLoggerOptions {
     
-    var transports: js.Array[typings.winstonTransport.mod.^] = js.native
+    var transports: js.Array[typings.winstonTransport.mod.^]
   }
   object ErrorLoggerOptionsWithTransports {
     
@@ -525,12 +516,12 @@ object mod {
     }
   }
   
-  @js.native
   trait ErrorLoggerOptionsWithWinstonInstance
-    extends BaseErrorLoggerOptions
+    extends StObject
+       with BaseErrorLoggerOptions
        with ErrorLoggerOptions {
     
-    var winstonInstance: Logger = js.native
+    var winstonInstance: Logger
   }
   object ErrorLoggerOptionsWithWinstonInstance {
     
@@ -564,21 +555,33 @@ object mod {
     var _routeWhitelists: Body = js.native
   }
   
-  @js.native
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @js.native
   trait FilterRequest
     extends Request[ParamsDictionary, js.Any, js.Any, Query]
-       with /* other */ StringDictionary[js.Any] {
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-  }
   
-  @js.native
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @js.native
   trait FilterResponse
     extends Response[js.Any, Double]
-       with /* other */ StringDictionary[js.Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.expressWinston.mod.LoggerOptionsWithTransports
@@ -600,12 +603,12 @@ object mod {
     }
   }
   
-  @js.native
   trait LoggerOptionsWithTransports
-    extends BaseLoggerOptions
+    extends StObject
+       with BaseLoggerOptions
        with LoggerOptions {
     
-    var transports: js.Array[typings.winstonTransport.mod.^] = js.native
+    var transports: js.Array[typings.winstonTransport.mod.^]
   }
   object LoggerOptionsWithTransports {
     
@@ -626,12 +629,12 @@ object mod {
     }
   }
   
-  @js.native
   trait LoggerOptionsWithWinstonInstance
-    extends BaseLoggerOptions
+    extends StObject
+       with BaseLoggerOptions
        with LoggerOptions {
     
-    var winstonInstance: Logger = js.native
+    var winstonInstance: Logger
   }
   object LoggerOptionsWithWinstonInstance {
     
@@ -665,14 +668,13 @@ object mod {
     Boolean
   ]
   
-  @js.native
   trait StatusLevels extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var success: js.UndefOr[String] = js.native
+    var success: js.UndefOr[String] = js.undefined
     
-    var warn: js.UndefOr[String] = js.native
+    var warn: js.UndefOr[String] = js.undefined
   }
   object StatusLevels {
     

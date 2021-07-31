@@ -3,33 +3,31 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A JDBC ParameterMetaData. For documentation of this class, see
   * java.sql.ParameterMetaData.
   */
-@js.native
 trait JdbcParameterMetaData extends StObject {
   
-  def getParameterClassName(param: Integer): String = js.native
+  def getParameterClassName(param: Integer): String
   
-  def getParameterCount(): Integer = js.native
+  def getParameterCount(): Integer
   
-  def getParameterMode(param: Integer): Integer = js.native
+  def getParameterMode(param: Integer): Integer
   
-  def getParameterType(param: Integer): Integer = js.native
+  def getParameterType(param: Integer): Integer
   
-  def getParameterTypeName(param: Integer): String = js.native
+  def getParameterTypeName(param: Integer): String
   
-  def getPrecision(param: Integer): Integer = js.native
+  def getPrecision(param: Integer): Integer
   
-  def getScale(param: Integer): Integer = js.native
+  def getScale(param: Integer): Integer
   
-  def isNullable(param: Integer): Integer = js.native
+  def isNullable(param: Integer): Integer
   
-  def isSigned(param: Integer): Boolean = js.native
+  def isSigned(param: Integer): Boolean
 }
 object JdbcParameterMetaData {
   

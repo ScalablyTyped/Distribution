@@ -2,31 +2,29 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableNetworkEmulationOptions extends StObject {
   
   /**
     * Download rate in Bps. Defaults to 0 which will disable download throttling.
     */
-  var downloadThroughput: js.UndefOr[Double] = js.native
+  var downloadThroughput: js.UndefOr[Double] = js.undefined
   
   /**
     * RTT in ms. Defaults to 0 which will disable latency throttling.
     */
-  var latency: js.UndefOr[Double] = js.native
+  var latency: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to emulate network outage. Defaults to false.
     */
-  var offline: js.UndefOr[Boolean] = js.native
+  var offline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Upload rate in Bps. Defaults to 0 which will disable upload throttling.
     */
-  var uploadThroughput: js.UndefOr[Double] = js.native
+  var uploadThroughput: js.UndefOr[Double] = js.undefined
 }
 object EnableNetworkEmulationOptions {
   

@@ -2,18 +2,16 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRetentionPolicyRequest extends StObject {
   
   /**
     * The name of the log group.
     */
-  var logGroupName: LogGroupName = js.native
+  var logGroupName: LogGroupName
   
-  var retentionInDays: Days = js.native
+  var retentionInDays: Days
 }
 object PutRetentionPolicyRequest {
   

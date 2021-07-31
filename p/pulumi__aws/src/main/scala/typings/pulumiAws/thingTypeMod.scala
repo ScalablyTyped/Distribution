@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thingTypeMod {
@@ -25,7 +24,7 @@ object thingTypeMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ThingTypeArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ThingTypeArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -51,6 +50,10 @@ object thingTypeMod {
   /* static members */
   object ThingType {
     
+    @JSImport("@pulumi/aws/iot/thingType", "ThingType")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ThingType resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -60,45 +63,39 @@ object thingTypeMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iot/thingType", "ThingType.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ThingType = js.native
-    @JSImport("@pulumi/aws/iot/thingType", "ThingType.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ThingType = js.native
-    @JSImport("@pulumi/aws/iot/thingType", "ThingType.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ThingTypeState): ThingType = js.native
-    @JSImport("@pulumi/aws/iot/thingType", "ThingType.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ThingTypeState, opts: CustomResourceOptions): ThingType = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ThingType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ThingType]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ThingType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThingType]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ThingTypeState): ThingType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ThingType]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ThingTypeState, opts: CustomResourceOptions): ThingType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThingType]
     
     /**
       * Returns true if the given object is an instance of ThingType.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iot/thingType", "ThingType.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/thingType.ThingType */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/thingType.ThingType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/thingType.ThingType */ Boolean]
   }
   
-  @js.native
   trait ThingTypeArgs extends StObject {
     
     /**
       * Whether the thing type is deprecated. If true, no new things could be associated with this type.
       */
-    val deprecated: js.UndefOr[Input[Boolean]] = js.native
+    val deprecated: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the thing type.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * , Configuration block that can contain the following properties of the thing type:
       */
-    val properties: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.ThingTypeProperties]] = js.native
+    val properties: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.ThingTypeProperties]] = js.undefined
   }
   object ThingTypeArgs {
     
@@ -131,28 +128,27 @@ object thingTypeMod {
     }
   }
   
-  @js.native
   trait ThingTypeState extends StObject {
     
     /**
       * The ARN of the created AWS IoT Thing Type.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the thing type is deprecated. If true, no new things could be associated with this type.
       */
-    val deprecated: js.UndefOr[Input[Boolean]] = js.native
+    val deprecated: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the thing type.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * , Configuration block that can contain the following properties of the thing type:
       */
-    val properties: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.ThingTypeProperties]] = js.native
+    val properties: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.ThingTypeProperties]] = js.undefined
   }
   object ThingTypeState {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateVocabularyRequest extends StObject {
   
   /**
     * The language code of the vocabulary entries.
     */
-  var LanguageCode: typings.awsSdk.transcribeserviceMod.LanguageCode = js.native
+  var LanguageCode: typings.awsSdk.transcribeserviceMod.LanguageCode
   
   /**
     * An array of strings that contains the vocabulary entries. 
     */
-  var Phrases: js.UndefOr[typings.awsSdk.transcribeserviceMod.Phrases] = js.native
+  var Phrases: js.UndefOr[typings.awsSdk.transcribeserviceMod.Phrases] = js.undefined
   
   /**
     * The S3 location of the text file that contains the definition of the custom vocabulary. The URI must be in the same region as the API endpoint that you are calling. The general form is  For more information about S3 object names, see Object Keys in the Amazon S3 Developer Guide. For more information about custom vocabularies, see Custom Vocabularies.
     */
-  var VocabularyFileUri: js.UndefOr[Uri] = js.native
+  var VocabularyFileUri: js.UndefOr[Uri] = js.undefined
   
   /**
     * The name of the vocabulary. The name must be unique within an AWS account. The name is case sensitive. If you try to create a vocabulary with the same name as a previous vocabulary you will receive a ConflictException error.
     */
-  var VocabularyName: typings.awsSdk.transcribeserviceMod.VocabularyName = js.native
+  var VocabularyName: typings.awsSdk.transcribeserviceMod.VocabularyName
 }
 object CreateVocabularyRequest {
   

@@ -2,19 +2,17 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionStatisticUpdate extends StObject {
   
-  var extensionName: String = js.native
+  var extensionName: String
   
-  var operation: ExtensionStatisticOperation = js.native
+  var operation: ExtensionStatisticOperation
   
-  var publisherName: String = js.native
+  var publisherName: String
   
-  var statistic: ExtensionStatistic = js.native
+  var statistic: ExtensionStatistic
 }
 object ExtensionStatisticUpdate {
   

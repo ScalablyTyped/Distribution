@@ -3,36 +3,34 @@ package typings.xrm.Xrm
 import typings.xrm.XrmEnum.ClientFormFactor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the client context.
   */
-@js.native
 trait ClientContext extends StObject {
   
   /**
     * Returns a value to indicate which client the script is executing in.
     * @returns The client, as either "Web", "Outlook", or "Mobile"
     */
-  def getClient(): Client = js.native
+  def getClient(): Client
   
   /**
     * Gets client's current state.
     * @returns The client state, as either "Online" or "Offline"
     */
-  def getClientState(): ClientState = js.native
+  def getClientState(): ClientState
   
   /**
     * Use this method to get information about the kind of device the user is using.
     */
-  def getFormFactor(): ClientFormFactor = js.native
+  def getFormFactor(): ClientFormFactor
   
   /**
     * Returns information whether the server is online or offline.
     */
-  def isOffline(): Boolean = js.native
+  def isOffline(): Boolean
 }
 object ClientContext {
   

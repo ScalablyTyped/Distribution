@@ -2,15 +2,13 @@ package typings.materialTooltip
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ShowTooltipOptions extends StObject {
     
-    val hideFromScreenreader: Boolean = js.native
+    val hideFromScreenreader: Boolean
   }
   object ShowTooltipOptions {
     

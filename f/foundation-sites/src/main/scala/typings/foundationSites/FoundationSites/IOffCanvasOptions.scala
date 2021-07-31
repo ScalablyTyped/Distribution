@@ -2,29 +2,27 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOffCanvasOptions extends StObject {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var forceTop: js.UndefOr[Boolean] = js.native
+  var forceTop: js.UndefOr[Boolean] = js.undefined
   
-  var isRevealed: js.UndefOr[Boolean] = js.native
+  var isRevealed: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var revealClass: js.UndefOr[String] = js.native
+  var revealClass: js.UndefOr[String] = js.undefined
   
-  var revealOn: js.UndefOr[String] = js.native
+  var revealOn: js.UndefOr[String] = js.undefined
   
-  var transitionTime: js.UndefOr[Double] = js.native
+  var transitionTime: js.UndefOr[Double] = js.undefined
   
-  var trapFocus: js.UndefOr[Boolean] = js.native
+  var trapFocus: js.UndefOr[Boolean] = js.undefined
 }
 object IOffCanvasOptions {
   

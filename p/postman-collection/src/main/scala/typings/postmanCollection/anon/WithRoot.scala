@@ -2,13 +2,11 @@ package typings.postmanCollection.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WithRoot extends StObject {
   
-  var withRoot: Boolean = js.native
+  var withRoot: Boolean
 }
 object WithRoot {
   

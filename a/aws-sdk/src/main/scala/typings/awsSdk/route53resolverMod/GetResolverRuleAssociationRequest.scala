@@ -2,16 +2,14 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResolverRuleAssociationRequest extends StObject {
   
   /**
     * The ID of the Resolver rule association that you want to get information about.
     */
-  var ResolverRuleAssociationId: ResourceId = js.native
+  var ResolverRuleAssociationId: ResourceId
 }
 object GetResolverRuleAssociationRequest {
   

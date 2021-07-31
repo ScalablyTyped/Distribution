@@ -5,12 +5,10 @@ import typings.sassLoader.interfacesMod.LoaderOptions.Callback
 import typings.sassLoader.interfacesMod.LoaderOptions.SassOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
-  @js.native
   trait LoaderOptions extends StObject {
     
     /**
@@ -160,7 +158,7 @@ object interfacesMod {
       * };
       * ```
       */
-    var implementation: js.UndefOr[js.Any] = js.native
+    var implementation: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Prepends `Sass`/`SCSS` code before the actual entry file. In this case, the
@@ -235,7 +233,7 @@ object interfacesMod {
       * @default
       * undefined
       */
-    var prependData: js.UndefOr[String | Callback[String]] = js.native
+    var prependData: js.UndefOr[String | Callback[String]] = js.undefined
     
     /**
       * Options for [Node Sass](https://github.com/sass/node-sass) or [Dart Sass](http://sass-lang.com/dart-sass)
@@ -329,7 +327,7 @@ object interfacesMod {
       * };
       * ```
       */
-    var sassOptions: js.UndefOr[SassOptions | Callback[SassOptions]] = js.native
+    var sassOptions: js.UndefOr[SassOptions | Callback[SassOptions]] = js.undefined
     
     /**
       * Enables/Disables generation of source maps.
@@ -375,7 +373,7 @@ object interfacesMod {
       * @defaults
       * Depends on the `compiler.devtool` value.
       */
-    var sourceMap: js.UndefOr[Boolean] = js.native
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables/Disables the default Webpack importer.
@@ -411,7 +409,7 @@ object interfacesMod {
       * @default
       * true
       */
-    var webpackImporter: js.UndefOr[Boolean] = js.native
+    var webpackImporter: js.UndefOr[Boolean] = js.undefined
   }
   object LoaderOptions {
     

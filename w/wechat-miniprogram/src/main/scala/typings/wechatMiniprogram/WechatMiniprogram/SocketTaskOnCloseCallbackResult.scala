@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketTaskOnCloseCallbackResult extends StObject {
   
   /** 一个数字值表示关闭连接的状态号，表示连接被关闭的原因。 */
-  var code: Double = js.native
+  var code: Double
   
   /** 一个可读的字符串，表示连接被关闭的原因。 */
-  var reason: String = js.native
+  var reason: String
 }
 object SocketTaskOnCloseCallbackResult {
   

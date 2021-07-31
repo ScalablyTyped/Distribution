@@ -2,23 +2,21 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alg extends StObject {
   
-  var alg: js.UndefOr[String] = js.native
+  var alg: js.UndefOr[String] = js.undefined
   
-  var e: js.UndefOr[String] = js.native
+  var e: js.UndefOr[String] = js.undefined
   
-  var kid: js.UndefOr[String] = js.native
+  var kid: js.UndefOr[String] = js.undefined
   
-  var kty: js.UndefOr[String] = js.native
+  var kty: js.UndefOr[String] = js.undefined
   
-  var n: js.UndefOr[String] = js.native
+  var n: js.UndefOr[String] = js.undefined
   
-  var use: js.UndefOr[String] = js.native
+  var use: js.UndefOr[String] = js.undefined
 }
 object Alg {
   

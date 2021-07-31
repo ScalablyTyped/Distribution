@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.SmartCards
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object SmartCardReaderKind extends StObject {
   
   /** This value is never returned. */
   @js.native
-  sealed trait any extends SmartCardReaderKind
+  sealed trait any
+    extends StObject
+       with SmartCardReaderKind
   
   /** A generic smart card reader. */
   @js.native
-  sealed trait generic extends SmartCardReaderKind
+  sealed trait generic
+    extends StObject
+       with SmartCardReaderKind
   
   /** A near field communication (NFC) smart card reader. */
   @js.native
-  sealed trait nfc extends SmartCardReaderKind
+  sealed trait nfc
+    extends StObject
+       with SmartCardReaderKind
   
   /** A Trusted Platform Module (TPM) virtual smart card reader. */
   @js.native
-  sealed trait tpm extends SmartCardReaderKind
+  sealed trait tpm
+    extends StObject
+       with SmartCardReaderKind
   
   /** A Universal Integrated Circuit Card (UICC) smart card reader. */
   @js.native
-  sealed trait uicc extends SmartCardReaderKind
+  sealed trait uicc
+    extends StObject
+       with SmartCardReaderKind
 }

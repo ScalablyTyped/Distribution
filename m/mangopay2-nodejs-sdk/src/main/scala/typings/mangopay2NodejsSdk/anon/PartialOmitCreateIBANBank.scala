@@ -3,18 +3,16 @@ package typings.mangopay2NodejsSdk.anon
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.Omit<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.bankingAlias.CreateIBANBankingAlias, 'CreditedUserId'>> */
-@js.native
 trait PartialOmitCreateIBANBank extends StObject {
   
-  var Country: js.UndefOr[CountryISO] = js.native
+  var Country: js.UndefOr[CountryISO] = js.undefined
   
-  var OwnerName: js.UndefOr[String] = js.native
+  var OwnerName: js.UndefOr[String] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
 }
 object PartialOmitCreateIBANBank {
   

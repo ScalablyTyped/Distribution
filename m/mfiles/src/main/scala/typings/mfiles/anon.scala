@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Finally extends StObject {
     
-    var Finally: js.UndefOr[js.Function0[Unit]] = js.native
+    var Finally: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var OnError: js.UndefOr[
         js.Function3[/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var OnSuccess: js.UndefOr[
         js.Function2[/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object Finally {
     
@@ -51,16 +49,15 @@ object anon {
     }
   }
   
-  @js.native
   trait FinallyOnError extends StObject {
     
-    var Finally: js.UndefOr[js.Function0[Unit]] = js.native
+    var Finally: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var OnError: js.UndefOr[
         js.Function3[/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var OnSuccess: js.UndefOr[js.Function1[/* objectVersions */ IObjectVersions, Unit]] = js.native
+    var OnSuccess: js.UndefOr[js.Function1[/* objectVersions */ IObjectVersions, Unit]] = js.undefined
   }
   object FinallyOnError {
     
@@ -93,16 +90,15 @@ object anon {
     }
   }
   
-  @js.native
   trait OnError extends StObject {
     
-    var Finally: js.UndefOr[js.Function0[Unit]] = js.native
+    var Finally: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var OnError: js.UndefOr[
         js.Function3[/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var OnSuccess: js.UndefOr[js.Function0[Unit]] = js.native
+    var OnSuccess: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object OnError {
     
@@ -135,16 +131,15 @@ object anon {
     }
   }
   
-  @js.native
   trait OnSuccess extends StObject {
     
-    var Finally: js.UndefOr[js.Function0[Unit]] = js.native
+    var Finally: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var OnError: js.UndefOr[
         js.Function3[/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var OnSuccess: js.UndefOr[js.Function1[/* objectVersion */ IObjectVersion, Unit]] = js.native
+    var OnSuccess: js.UndefOr[js.Function1[/* objectVersion */ IObjectVersion, Unit]] = js.undefined
   }
   object OnSuccess {
     

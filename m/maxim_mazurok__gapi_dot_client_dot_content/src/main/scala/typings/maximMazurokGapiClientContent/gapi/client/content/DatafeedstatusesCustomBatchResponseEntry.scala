@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatafeedstatusesCustomBatchResponseEntry extends StObject {
   
   /** The ID of the request entry this entry responds to. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** The requested data feed status. Defined if and only if the request was successful. */
-  var datafeedStatus: js.UndefOr[DatafeedStatus] = js.native
+  var datafeedStatus: js.UndefOr[DatafeedStatus] = js.undefined
   
   /** A list of errors defined if and only if the request failed. */
-  var errors: js.UndefOr[Errors] = js.native
+  var errors: js.UndefOr[Errors] = js.undefined
 }
 object DatafeedstatusesCustomBatchResponseEntry {
   

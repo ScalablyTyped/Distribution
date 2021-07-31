@@ -2,32 +2,30 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Criterion extends StObject {
   
   /**
     * A "contains" operator to match for the filter used to create the rule.
     */
-  var contains: js.UndefOr[ValueList] = js.native
+  var contains: js.UndefOr[ValueList] = js.undefined
   
   /**
     * An "equals" operator to match for the filter used to create the rule.
     */
   @JSName("eq")
-  var eq_FCriterion: js.UndefOr[ValueList] = js.native
+  var eq_FCriterion: js.UndefOr[ValueList] = js.undefined
   
   /**
     * An "exists" operator to match for the filter used to create the rule. 
     */
-  var exists: js.UndefOr[Boolean] = js.native
+  var exists: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A "not equals" operator to match for the filter used to create the rule.
     */
-  var neq: js.UndefOr[ValueList] = js.native
+  var neq: js.UndefOr[ValueList] = js.undefined
 }
 object Criterion {
   

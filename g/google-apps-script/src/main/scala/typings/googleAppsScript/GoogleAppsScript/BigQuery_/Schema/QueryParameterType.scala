@@ -2,17 +2,15 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryParameterType extends StObject {
   
-  var arrayType: js.UndefOr[QueryParameterType] = js.native
+  var arrayType: js.UndefOr[QueryParameterType] = js.undefined
   
-  var structTypes: js.UndefOr[js.Array[QueryParameterTypeStructTypes]] = js.native
+  var structTypes: js.UndefOr[js.Array[QueryParameterTypeStructTypes]] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object QueryParameterType {
   

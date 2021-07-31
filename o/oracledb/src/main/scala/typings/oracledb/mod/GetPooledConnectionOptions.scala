@@ -2,23 +2,21 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used with pool.getConnection().
   */
-@js.native
 trait GetPooledConnectionOptions extends StObject {
   
   /** Password of the specified user. */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /** Optionally set the connection tag. */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
   /** Database user to retrieve the connection for. */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object GetPooledConnectionOptions {
   

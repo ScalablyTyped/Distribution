@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLogGroupMod {
   
-  @JSImport("@pulumi/aws/cloudwatch/getLogGroup", "getLogGroup")
+  @JSImport("@pulumi/aws/cloudwatch/getLogGroup", JSImport.Namespace)
   @js.native
-  def getLogGroup(args: GetLogGroupArgs): js.Promise[GetLogGroupResult] = js.native
-  @JSImport("@pulumi/aws/cloudwatch/getLogGroup", "getLogGroup")
-  @js.native
-  def getLogGroup(args: GetLogGroupArgs, opts: InvokeOptions): js.Promise[GetLogGroupResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLogGroup(args: GetLogGroupArgs): js.Promise[GetLogGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLogGroupResult]]
+  @scala.inline
+  def getLogGroup(args: GetLogGroupArgs, opts: InvokeOptions): js.Promise[GetLogGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLogGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLogGroupResult]]
+  
   trait GetLogGroupArgs extends StObject {
     
     /**
       * The name of the Cloudwatch log group
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetLogGroupArgs {
     
@@ -51,40 +51,39 @@ object getLogGroupMod {
     }
   }
   
-  @js.native
   trait GetLogGroupResult extends StObject {
     
     /**
       * The ARN of the Cloudwatch log group
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The creation time of the log group, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
       */
-    val creationTime: Double = js.native
+    val creationTime: Double
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ARN of the KMS Key to use when encrypting log data.
       */
-    val kmsKeyId: String = js.native
+    val kmsKeyId: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The number of days log events retained in the specified log group.
       */
-    val retentionInDays: Double = js.native
+    val retentionInDays: Double
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetLogGroupResult {
     

@@ -8,36 +8,27 @@ import typings.glaze.glazeStrings.`0 4px 6px -1px rgbaLeftparenthesis0Comma0Comm
 import typings.glaze.glazeStrings.`inset 0 2px 4px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inner extends StObject {
   
-  val inner: `inset 0 2px 4px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis` = js.native
+  val inner: `inset 0 2px 4px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`
   
-  val lg: `0 10px 15px -3px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 4px 6px -2px rgbaLeftparenthesis0Comma0Comma0CommaDot05Rightparenthesis` = js.native
+  val lg: `0 10px 15px -3px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 4px 6px -2px rgbaLeftparenthesis0Comma0Comma0CommaDot05Rightparenthesis`
   
-  val md: `0 4px 6px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 2px 4px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis` = js.native
+  val md: `0 4px 6px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 2px 4px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`
   
-  val outline: `0 0 0 3px rgbaLeftparenthesis66Comma153Comma225CommaDot5Rightparenthesis` = js.native
+  val outline: `0 0 0 3px rgbaLeftparenthesis66Comma153Comma225CommaDot5Rightparenthesis`
   
-  val sm: `0 1px 3px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 1px 2px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis` = js.native
+  val sm: `0 1px 3px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 1px 2px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`
   
-  val xl: `0 20px 25px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 10px 10px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot04Rightparenthesis` = js.native
+  val xl: `0 20px 25px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 10px 10px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot04Rightparenthesis`
 }
 object Inner {
   
   @scala.inline
-  def apply(
-    inner: `inset 0 2px 4px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`,
-    lg: `0 10px 15px -3px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 4px 6px -2px rgbaLeftparenthesis0Comma0Comma0CommaDot05Rightparenthesis`,
-    md: `0 4px 6px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 2px 4px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`,
-    outline: `0 0 0 3px rgbaLeftparenthesis66Comma153Comma225CommaDot5Rightparenthesis`,
-    sm: `0 1px 3px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 1px 2px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`,
-    xl: `0 20px 25px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 10px 10px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot04Rightparenthesis`
-  ): Inner = {
-    val __obj = js.Dynamic.literal(inner = inner.asInstanceOf[js.Any], lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any], xl = xl.asInstanceOf[js.Any])
+  def apply(): Inner = {
+    val __obj = js.Dynamic.literal(inner = "inset 0 2px 4px 0 rgba(0,0,0,.06)", lg = "0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)", md = "0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)", outline = "0 0 0 3px rgba(66,153,225,.5)", sm = "0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)", xl = "0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04)")
     __obj.asInstanceOf[Inner]
   }
   

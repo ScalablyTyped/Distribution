@@ -3,33 +3,31 @@ package typings.extjs.Ext.dd
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDragDropElement extends StObject {
   
   /** [Method] Returns the X position of an html element
     * @param el HTMLElement the element for which to get the position
     * @returns Number the X coordinate
     */
-  var getPosX: js.UndefOr[js.Function1[/* el */ js.UndefOr[HTMLElement], Double]] = js.native
+  var getPosX: js.UndefOr[js.Function1[/* el */ js.UndefOr[HTMLElement], Double]] = js.undefined
   
   /** [Method] Returns the Y position of an html element
     * @param el HTMLElement the element for which to get the position
     * @returns Number the Y coordinate
     */
-  var getPosY: js.UndefOr[js.Function1[/* el */ js.UndefOr[HTMLElement], Double]] = js.native
+  var getPosY: js.UndefOr[js.Function1[/* el */ js.UndefOr[HTMLElement], Double]] = js.undefined
   
   /** [Method] Gets the scrollLeft
     * @returns Number the document's scrollTop
     */
-  var getScrollLeft: js.UndefOr[js.Function0[Double]] = js.native
+  var getScrollLeft: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Gets the scrollTop
     * @returns Number the document's scrollTop
     */
-  var getScrollTop: js.UndefOr[js.Function0[Double]] = js.native
+  var getScrollTop: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the specified element style property
     * @param el HTMLElement the element
@@ -38,12 +36,12 @@ trait IDragDropElement extends StObject {
     */
   var getStyle: js.UndefOr[
     js.Function2[/* el */ js.UndefOr[HTMLElement], /* styleProp */ js.UndefOr[String], String]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Recursively searches the immediate parent and all child nodes for the handle element in order to determine wheter or
     * @param node HTMLElement the html element to inspect
     */
-  var handleWasClicked: js.UndefOr[js.Function1[/* node */ js.UndefOr[HTMLElement], Unit]] = js.native
+  var handleWasClicked: js.UndefOr[js.Function1[/* node */ js.UndefOr[HTMLElement], Unit]] = js.undefined
   
   /** [Method] Sets the x y position of an element to the location of the target element
     * @param moveEl HTMLElement The element to move
@@ -51,14 +49,14 @@ trait IDragDropElement extends StObject {
     */
   var moveToEl: js.UndefOr[
     js.Function2[/* moveEl */ js.UndefOr[HTMLElement], /* targetEl */ js.UndefOr[HTMLElement], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Numeric array sort function
     * @param a Number
     * @param b Number
     * @returns Number positive, negative or 0
     */
-  var numericSort: js.UndefOr[js.Function2[/* a */ js.UndefOr[Double], /* b */ js.UndefOr[Double], Double]] = js.native
+  var numericSort: js.UndefOr[js.Function2[/* a */ js.UndefOr[Double], /* b */ js.UndefOr[Double], Double]] = js.undefined
   
   /** [Method] Swap two nodes
     * @param n1 HTMLElement the first node to swap
@@ -66,7 +64,7 @@ trait IDragDropElement extends StObject {
     */
   var swapNode: js.UndefOr[
     js.Function2[/* n1 */ js.UndefOr[HTMLElement], /* n2 */ js.UndefOr[HTMLElement], Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object IDragDropElement {
   

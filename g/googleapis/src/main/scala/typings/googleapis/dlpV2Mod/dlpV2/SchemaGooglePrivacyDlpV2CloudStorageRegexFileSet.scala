@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,13 +29,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * include all files directly under `gs://mybucket/directory/`, without
   * matching across `/`
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet extends StObject {
   
   /**
     * The name of a Cloud Storage bucket. Required.
     */
-  var bucketName: js.UndefOr[String] = js.native
+  var bucketName: js.UndefOr[String] = js.undefined
   
   /**
     * A list of regular expressions matching file paths to exclude. All files
@@ -45,7 +43,7 @@ trait SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet extends StObject {
     * [syntax](https://github.com/google/re2/wiki/Syntax); a guide can be found
     * under the google/re2 repository on GitHub.
     */
-  var excludeRegex: js.UndefOr[js.Array[String]] = js.native
+  var excludeRegex: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of regular expressions matching file paths to include. All files
@@ -56,7 +54,7 @@ trait SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet extends StObject {
     * expressions use RE2 [syntax](https://github.com/google/re2/wiki/Syntax);
     * a guide can be found under the google/re2 repository on GitHub.
     */
-  var includeRegex: js.UndefOr[js.Array[String]] = js.native
+  var includeRegex: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet {
   

@@ -2,19 +2,17 @@ package typings.dateFns.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[js.Array[String]] = js.native
+  var format: js.UndefOr[js.Array[String]] = js.undefined
   
-  var locale: js.UndefOr[typings.dateFns.Locale] = js.native
+  var locale: js.UndefOr[typings.dateFns.Locale] = js.undefined
   
-  var zero: js.UndefOr[Boolean] = js.native
+  var zero: js.UndefOr[Boolean] = js.undefined
 }
 object Format {
   

@@ -2,13 +2,11 @@ package typings.webglExt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebGLUniformLocation extends StObject {
   
-  val __WebGLUniformLocation: Unit = js.native
+  val __WebGLUniformLocation: Unit
 }
 object WebGLUniformLocation {
   

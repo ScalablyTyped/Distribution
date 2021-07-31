@@ -2,17 +2,15 @@ package typings.parameter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateError extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var message: String = js.native
+  var message: String
 }
 object ValidateError {
   

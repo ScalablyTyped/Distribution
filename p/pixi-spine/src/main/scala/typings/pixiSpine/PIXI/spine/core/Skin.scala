@@ -2,37 +2,35 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Skin extends StObject {
   
-  def addSkin(skin: Skin): Unit = js.native
+  def addSkin(skin: Skin): Unit
   
-  def attachAll(skeleton: Skeleton, oldSkin: Skin): Unit = js.native
+  def attachAll(skeleton: Skeleton, oldSkin: Skin): Unit
   
-  var attachments: js.Array[Map[Attachment]] = js.native
+  var attachments: js.Array[Map[Attachment]]
   
-  var bones: js.Array[BoneData] = js.native
+  var bones: js.Array[BoneData]
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  var constraints: js.Array[ConstraintData] = js.native
+  var constraints: js.Array[ConstraintData]
   
-  def copySkin(skin: Skin): Unit = js.native
+  def copySkin(skin: Skin): Unit
   
-  def getAttachment(slotIndex: Double, name: String): Attachment = js.native
+  def getAttachment(slotIndex: Double, name: String): Attachment
   
-  def getAttachments(): js.Array[SkinEntry] = js.native
+  def getAttachments(): js.Array[SkinEntry]
   
-  def getAttachmentsForSlot(slotIndex: Double, attachments: js.Array[SkinEntry]): Unit = js.native
+  def getAttachmentsForSlot(slotIndex: Double, attachments: js.Array[SkinEntry]): Unit
   
-  var name: String = js.native
+  var name: String
   
-  def removeAttachment(slotIndex: Double, name: String): Unit = js.native
+  def removeAttachment(slotIndex: Double, name: String): Unit
   
-  def setAttachment(slotIndex: Double, name: String, attachment: Attachment): Unit = js.native
+  def setAttachment(slotIndex: Double, name: String, attachment: Attachment): Unit
 }
 object Skin {
   

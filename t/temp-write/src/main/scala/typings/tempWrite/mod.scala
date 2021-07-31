@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,24 +30,22 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(fileContent: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(fileContent: String, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(fileContent: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(fileContent: Buffer, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(fileContent: ReadableStream): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(fileContent: ReadableStream, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
   @JSImport("temp-write", JSImport.Namespace)
   @js.native
-  def apply(fileContent: String): js.Promise[String] = js.native
-  @JSImport("temp-write", JSImport.Namespace)
-  @js.native
-  def apply(fileContent: String, filePath: String): js.Promise[String] = js.native
-  @JSImport("temp-write", JSImport.Namespace)
-  @js.native
-  def apply(fileContent: Buffer): js.Promise[String] = js.native
-  @JSImport("temp-write", JSImport.Namespace)
-  @js.native
-  def apply(fileContent: Buffer, filePath: String): js.Promise[String] = js.native
-  @JSImport("temp-write", JSImport.Namespace)
-  @js.native
-  def apply(fileContent: ReadableStream): js.Promise[String] = js.native
-  @JSImport("temp-write", JSImport.Namespace)
-  @js.native
-  def apply(fileContent: ReadableStream, filePath: String): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Synchronously write string/buffer/stream to a random temp file.
@@ -69,16 +66,12 @@ object mod {
   	//=> '/var/folders/_1/tk89k8215ts0rg0kmb096nj80000gn/T/4049f192-43e7-43b2-98d9-094e6760861b/rainbow/cake/pony.png'
   	```
   	*/
-  @JSImport("temp-write", "sync")
-  @js.native
-  def sync(fileContent: String): String = js.native
-  @JSImport("temp-write", "sync")
-  @js.native
-  def sync(fileContent: String, filePath: String): String = js.native
-  @JSImport("temp-write", "sync")
-  @js.native
-  def sync(fileContent: Buffer): String = js.native
-  @JSImport("temp-write", "sync")
-  @js.native
-  def sync(fileContent: Buffer, filePath: String): String = js.native
+  @scala.inline
+  def sync(fileContent: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def sync(fileContent: String, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sync(fileContent: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def sync(fileContent: Buffer, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
 }

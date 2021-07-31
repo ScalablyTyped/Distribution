@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListImportJobsResponse extends StObject {
   
   /** The list of ImportJobs. */
-  var importJobs: js.UndefOr[js.Array[ImportJob]] = js.native
+  var importJobs: js.UndefOr[js.Array[ImportJob]] = js.undefined
   
   /** A token to retrieve next page of results. Pass this value in ListImportJobsRequest.page_token to retrieve the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The total number of ImportJobs that matched the query. */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object ListImportJobsResponse {
   

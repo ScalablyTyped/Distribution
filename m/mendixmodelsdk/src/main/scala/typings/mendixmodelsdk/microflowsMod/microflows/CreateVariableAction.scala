@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -75,9 +74,8 @@ object CreateVariableAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CreateVariableAction.create")
-  @js.native
-  def create(model: IModel): CreateVariableAction = js.native
+  @scala.inline
+  def create(model: IModel): CreateVariableAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CreateVariableAction]
   
   /**
     * Creates and returns a new CreateVariableAction instance in the SDK and on the server.
@@ -85,9 +83,8 @@ object CreateVariableAction {
     * of the parent ActionActivity element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CreateVariableAction.createIn")
-  @js.native
-  def createIn(container: ActionActivity): CreateVariableAction = js.native
+  @scala.inline
+  def createIn(container: ActionActivity): CreateVariableAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[CreateVariableAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CreateVariableAction.structureTypeName")

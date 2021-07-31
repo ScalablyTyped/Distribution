@@ -3,30 +3,30 @@ package typings.dockerFileParser
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("docker-file-parser", "parse")
+  @JSImport("docker-file-parser", JSImport.Namespace)
   @js.native
-  def parse(contents: String): js.Array[CommandEntry] = js.native
-  @JSImport("docker-file-parser", "parse")
-  @js.native
-  def parse(contents: String, options: ParseOptions): js.Array[CommandEntry] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def parse(contents: String): js.Array[CommandEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(contents.asInstanceOf[js.Any]).asInstanceOf[js.Array[CommandEntry]]
+  @scala.inline
+  def parse(contents: String, options: ParseOptions): js.Array[CommandEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(contents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[CommandEntry]]
+  
   trait CommandEntry extends StObject {
     
-    var args: String | js.Array[String] | StringDictionary[String] = js.native
+    var args: String | js.Array[String] | StringDictionary[String]
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var lineno: Double = js.native
+    var lineno: Double
     
-    var name: String = js.native
+    var name: String
     
-    var raw: String = js.native
+    var raw: String
   }
   object CommandEntry {
     
@@ -67,10 +67,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var includeComments: Boolean = js.native
+    var includeComments: Boolean
   }
   object ParseOptions {
     

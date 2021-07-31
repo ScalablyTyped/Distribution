@@ -10,9 +10,9 @@ Template-based docx report creation
 | ------------------ | :-------------: |
 | Full name          | docx-templates |
 | Keywords           | docx, office, word, ms-word, report, template |
-| # releases         | 19 |
-| # dependents       | 2 |
-| # downloads        | 120849 |
+| # releases         | 15 |
+| # dependents       | 3 |
+| # downloads        | 146680 |
 | # stars            | 1 |
 
 ## Links

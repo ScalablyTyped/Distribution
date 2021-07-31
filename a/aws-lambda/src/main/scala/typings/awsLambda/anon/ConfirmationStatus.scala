@@ -7,19 +7,17 @@ import typings.awsLambda.awsLambdaStrings.None
 import typings.awsLambda.lexMod.LexSlotDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmationStatus extends StObject {
   
-  var confirmationStatus: None | Confirmed_ | Denied = js.native
+  var confirmationStatus: None | Confirmed_ | Denied
   
-  var name: String = js.native
+  var name: String
   
-  var slotDetails: LexSlotDetails = js.native
+  var slotDetails: LexSlotDetails
   
-  var slots: StringDictionary[String | Null] = js.native
+  var slots: StringDictionary[String | Null]
 }
 object ConfirmationStatus {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteScheduleRequest extends StObject {
   
   /**
     * Id of the channel whose schedule is being deleted.
     */
-  var ChannelId: string = js.native
+  var ChannelId: string
 }
 object DeleteScheduleRequest {
   

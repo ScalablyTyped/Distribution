@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlServerDatabaseDetails extends StObject {
   
   /** The version of SQL Server with which the database is to be made compatible */
-  var compatibilityLevel: js.UndefOr[Double] = js.native
+  var compatibilityLevel: js.UndefOr[Double] = js.undefined
   
   /** The recovery model of a SQL Server database */
-  var recoveryModel: js.UndefOr[String] = js.native
+  var recoveryModel: js.UndefOr[String] = js.undefined
 }
 object SqlServerDatabaseDetails {
   

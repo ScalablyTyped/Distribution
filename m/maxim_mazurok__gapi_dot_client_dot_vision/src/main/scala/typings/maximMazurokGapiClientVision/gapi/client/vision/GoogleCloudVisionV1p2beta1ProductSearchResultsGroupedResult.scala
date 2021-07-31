@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResult extends StObject {
   
   /** The bounding polygon around the product detected in the query image. */
-  var boundingPoly: js.UndefOr[GoogleCloudVisionV1p2beta1BoundingPoly] = js.native
+  var boundingPoly: js.UndefOr[GoogleCloudVisionV1p2beta1BoundingPoly] = js.undefined
   
   /** List of generic predictions for the object in the bounding box. */
-  var objectAnnotations: js.UndefOr[js.Array[GoogleCloudVisionV1p2beta1ProductSearchResultsObjectAnnotation]] = js.native
+  var objectAnnotations: js.UndefOr[js.Array[GoogleCloudVisionV1p2beta1ProductSearchResultsObjectAnnotation]] = js.undefined
   
   /** List of results, one for each product match. */
-  var results: js.UndefOr[js.Array[GoogleCloudVisionV1p2beta1ProductSearchResultsResult]] = js.native
+  var results: js.UndefOr[js.Array[GoogleCloudVisionV1p2beta1ProductSearchResultsResult]] = js.undefined
 }
 object GoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResult {
   

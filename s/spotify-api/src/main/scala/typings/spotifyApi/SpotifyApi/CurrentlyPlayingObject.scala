@@ -2,29 +2,27 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentlyPlayingObject extends StObject {
   
-  var context: ContextObject | Null = js.native
+  var context: ContextObject | Null
   
-  var device: UserDevice = js.native
+  var device: UserDevice
   
-  var is_playing: Boolean = js.native
+  var is_playing: Boolean
   
-  var item: TrackObjectFull | Null = js.native
+  var item: TrackObjectFull | Null
   
-  var progress_ms: Double | Null = js.native
+  var progress_ms: Double | Null
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object CurrentlyPlayingObject {
   
   @scala.inline
   def apply(device: UserDevice, is_playing: Boolean, timestamp: Double): CurrentlyPlayingObject = {
-    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], is_playing = is_playing.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], is_playing = is_playing.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], context = null, item = null, progress_ms = null)
     __obj.asInstanceOf[CurrentlyPlayingObject]
   }
   

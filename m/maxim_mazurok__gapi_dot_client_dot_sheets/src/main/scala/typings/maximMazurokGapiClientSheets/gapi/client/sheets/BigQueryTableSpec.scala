@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BigQueryTableSpec extends StObject {
   
   /** The BigQuery dataset id. */
-  var datasetId: js.UndefOr[String] = js.native
+  var datasetId: js.UndefOr[String] = js.undefined
   
   /** The BigQuery table id. */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
   
   /** The ID of a BigQuery project the table belongs to. If not specified, the project_id is assumed. */
-  var tableProjectId: js.UndefOr[String] = js.native
+  var tableProjectId: js.UndefOr[String] = js.undefined
 }
 object BigQueryTableSpec {
   

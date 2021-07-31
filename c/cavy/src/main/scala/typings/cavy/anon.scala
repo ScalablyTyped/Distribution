@@ -3,15 +3,13 @@ package typings.cavy
 import typings.cavy.mod.TestHookGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait GenerateTestHook extends StObject {
     
-    var generateTestHook: TestHookGenerator = js.native
+    var generateTestHook: TestHookGenerator
   }
   object GenerateTestHook {
     

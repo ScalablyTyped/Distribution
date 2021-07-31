@@ -4,31 +4,29 @@ import typings.openlayers.mod.Size
 import typings.openlayers.mod.olx.animation.AnimateCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object view {
   
-  @js.native
   trait FitOptions extends StObject {
     
-    var callback: js.UndefOr[AnimateCallback] = js.native
+    var callback: js.UndefOr[AnimateCallback] = js.undefined
     
-    var constrainResolution: js.UndefOr[Boolean] = js.native
+    var constrainResolution: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var nearest: js.UndefOr[Boolean] = js.native
+    var nearest: js.UndefOr[Boolean] = js.undefined
     
-    var padding: js.UndefOr[js.Array[Double]] = js.native
+    var padding: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
   }
   object FitOptions {
     

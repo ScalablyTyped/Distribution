@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a BatchDeleteEntitiesRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new BatchDeleteEntitiesRequest.
   * @param [properties] Properties to set
   */
-class BatchDeleteEntitiesRequest () extends IBatchDeleteEntitiesRequest {
+class BatchDeleteEntitiesRequest ()
+  extends StObject
+     with IBatchDeleteEntitiesRequest {
   def this(properties: IBatchDeleteEntitiesRequest) = this()
   
   /** BatchDeleteEntitiesRequest entityValues. */
@@ -40,18 +41,20 @@ class BatchDeleteEntitiesRequest () extends IBatchDeleteEntitiesRequest {
 }
 object BatchDeleteEntitiesRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new BatchDeleteEntitiesRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns BatchDeleteEntitiesRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.create")
-  @js.native
-  def create(): BatchDeleteEntitiesRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.create")
-  @js.native
-  def create(properties: IBatchDeleteEntitiesRequest): BatchDeleteEntitiesRequest = js.native
+  @scala.inline
+  def create(): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BatchDeleteEntitiesRequest]
+  @scala.inline
+  def create(properties: IBatchDeleteEntitiesRequest): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
   
   /**
     * Decodes a BatchDeleteEntitiesRequest message from the specified reader or buffer.
@@ -62,18 +65,14 @@ object BatchDeleteEntitiesRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.decode")
-  @js.native
-  def decode(reader: Reader): BatchDeleteEntitiesRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): BatchDeleteEntitiesRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): BatchDeleteEntitiesRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): BatchDeleteEntitiesRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): BatchDeleteEntitiesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchDeleteEntitiesRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): BatchDeleteEntitiesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchDeleteEntitiesRequest]
   
   /**
     * Decodes a BatchDeleteEntitiesRequest message from the specified reader or buffer, length delimited.
@@ -83,12 +82,10 @@ object BatchDeleteEntitiesRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): BatchDeleteEntitiesRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): BatchDeleteEntitiesRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
   
   /**
     * Encodes the specified BatchDeleteEntitiesRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.verify|verify} messages.
@@ -97,12 +94,10 @@ object BatchDeleteEntitiesRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.encode")
-  @js.native
-  def encode(message: IBatchDeleteEntitiesRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.encode")
-  @js.native
-  def encode(message: IBatchDeleteEntitiesRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IBatchDeleteEntitiesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IBatchDeleteEntitiesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified BatchDeleteEntitiesRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.verify|verify} messages.
@@ -111,12 +106,10 @@ object BatchDeleteEntitiesRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IBatchDeleteEntitiesRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IBatchDeleteEntitiesRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IBatchDeleteEntitiesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IBatchDeleteEntitiesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a BatchDeleteEntitiesRequest message from a plain object. Also converts values to their respective internal types.
@@ -124,9 +117,8 @@ object BatchDeleteEntitiesRequest {
     * @returns BatchDeleteEntitiesRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): BatchDeleteEntitiesRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
   
   /**
     * Creates a plain object from a BatchDeleteEntitiesRequest message. Also converts values to other types if specified.
@@ -135,12 +127,10 @@ object BatchDeleteEntitiesRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.toObject")
-  @js.native
-  def toObject(message: BatchDeleteEntitiesRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.toObject")
-  @js.native
-  def toObject(message: BatchDeleteEntitiesRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: BatchDeleteEntitiesRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: BatchDeleteEntitiesRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a BatchDeleteEntitiesRequest message.
@@ -148,7 +138,6 @@ object BatchDeleteEntitiesRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

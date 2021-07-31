@@ -3,41 +3,41 @@ package typings.baconjs
 import typings.baconjs.observableMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object describeMod {
   
-  @JSImport("baconjs/types/describe", JSImport.Default)
+  @JSImport("baconjs/types/describe", JSImport.Namespace)
   @js.native
-  def default(context: js.Any, method: String, args: js.Any*): Desc = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(context: js.Any, method: String, args: js.Any*): Desc = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(context.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Desc]
   
   @JSImport("baconjs/types/describe", "Desc")
   @js.native
   class Desc protected () extends StObject {
     def this(context: js.Any, method: String) = this()
-    def this(context: js.Any, method: String, args: js.Array[_]) = this()
+    def this(context: js.Any, method: String, args: js.Array[js.Any]) = this()
     
     /** @hidden */
     var _isDesc: Boolean = js.native
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any] = js.native
     
     /** @hidden */
-    var cachedDeps: js.UndefOr[js.Array[default[_]]] = js.native
+    var cachedDeps: js.UndefOr[js.Array[default[js.Any]]] = js.native
     
     var context: js.Any = js.native
     
-    def deps(): js.Array[default[_]] = js.native
+    def deps(): js.Array[default[js.Any]] = js.native
     
     var method: js.UndefOr[String] = js.native
   }
   
-  @JSImport("baconjs/types/describe", "describe")
-  @js.native
-  def describe(context: js.Any, method: String, args: js.Any*): Desc = js.native
+  @scala.inline
+  def describe(context: js.Any, method: String, args: js.Any*): Desc = (^.asInstanceOf[js.Dynamic].applyDynamic("describe")(context.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Desc]
   
-  @JSImport("baconjs/types/describe", "findDeps")
-  @js.native
-  def findDeps(x: js.Any): js.Array[default[_]] = js.native
+  @scala.inline
+  def findDeps(x: js.Any): js.Array[default[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findDeps")(x.asInstanceOf[js.Any]).asInstanceOf[js.Array[default[js.Any]]]
 }

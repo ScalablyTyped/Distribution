@@ -3,10 +3,8 @@ package typings.googleMaps.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceMatrixRequest extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait DistanceMatrixRequest extends StObject {
     * You can specify either `departure_time` or `arrival_time`, but not both.
     * Note that `arrival_time` must be specified as an integer.
     */
-  var arrival_time: js.UndefOr[Date | Double] = js.native
+  var arrival_time: js.UndefOr[Date | Double] = js.undefined
   
   /**
     * Introduces restrictions to the route. Valid values are specified in the Restrictions section of this document.
     * Only one restriction can be specified.
     */
-  var avoid: js.UndefOr[js.Array[TravelRestriction]] = js.native
+  var avoid: js.UndefOr[js.Array[TravelRestriction]] = js.undefined
   
   /**
     * The desired time of departure. You can specify the time as an integer in seconds since midnight, January 1, 1970 UTC.
@@ -40,13 +38,13 @@ trait DistanceMatrixRequest extends StObject {
     *    **Note:** Distance Matrix requests specifying `departure_time` when `mode=driving` are limited
     *    to a maximum of 100 elements per request. The number of origins times the number of destinations defines the number of elements.
     */
-  var departure_time: js.UndefOr[Date | Double] = js.native
+  var departure_time: js.UndefOr[Date | Double] = js.undefined
   
   /**
     * One or more locations to use as the finishing point for calculating travel distance and time.
     * The options for the destinations parameter are the same as for the origins parameter, described above.
     */
-  var destinations: js.Array[LatLng] = js.native
+  var destinations: js.Array[LatLng]
   
   /**
     * The language in which to return results.
@@ -62,7 +60,7 @@ trait DistanceMatrixRequest extends StObject {
     *    such as the abbreviations for street types, or synonyms that may be valid in one language but not in another.
     *    For example, utca and tér are synonyms for street in Hungarian.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the mode of transport to use when calculating distance.
@@ -70,7 +68,7 @@ trait DistanceMatrixRequest extends StObject {
     *
     * @default TravelMode.driving
     */
-  var mode: js.UndefOr[TravelMode] = js.native
+  var mode: js.UndefOr[TravelMode] = js.undefined
   
   /**
     * The starting point for calculating travel distance and time.
@@ -101,7 +99,7 @@ trait DistanceMatrixRequest extends StObject {
     *     - You can also include multiple encoded polylines, separated by the pipe character (`|`).
     *       For example: `origins=enc:wc~oAwquwMdlTxiKtqLyiK:|enc:c~vnAamswMvlTor@tjGi}L:|enc:udymA{~bxM:`
     */
-  var origins: js.Array[LatLng] = js.native
+  var origins: js.Array[LatLng]
   
   /**
     * The region code, specified as a [ccTLD](https://en.wikipedia.org/wiki/CcTLD) (country code top-level domain) two-character value.
@@ -109,7 +107,7 @@ trait DistanceMatrixRequest extends StObject {
     * This parameter will only influence, not fully restrict, results from the geocoder.
     * If more relevant results exist outside of the specified region, they may be included.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the assumptions to use when calculating time in traffic.
@@ -121,20 +119,20 @@ trait DistanceMatrixRequest extends StObject {
     *
     * @default TrafficModel.best_guess
     */
-  var traffic_model: js.UndefOr[TrafficModel] = js.native
+  var traffic_model: js.UndefOr[TrafficModel] = js.undefined
   
   /** Specifies one or more preferred modes of transit. This parameter may only be specified for requests where the `mode` is `transit`. */
-  var transit_mode: js.UndefOr[js.Array[TransitMode]] = js.native
+  var transit_mode: js.UndefOr[js.Array[TransitMode]] = js.undefined
   
   /**
     * Specifies preferences for transit requests. Using this parameter, you can bias the options returned,
     * rather than accepting the default best route chosen by the API.
     * This parameter may only be specified for requests where the `mode` is `transit`.
     */
-  var transit_routing_preference: js.UndefOr[TransitRoutingPreference] = js.native
+  var transit_routing_preference: js.UndefOr[TransitRoutingPreference] = js.undefined
   
   /** Specifies the unit system to use when expressing distance as text. */
-  var units: js.UndefOr[UnitSystem] = js.native
+  var units: js.UndefOr[UnitSystem] = js.undefined
 }
 object DistanceMatrixRequest {
   

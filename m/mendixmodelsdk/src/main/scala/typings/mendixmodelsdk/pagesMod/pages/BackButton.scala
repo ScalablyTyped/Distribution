@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,9 +41,8 @@ object BackButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.create")
-  @js.native
-  def create(model: IModel): BackButton = js.native
+  @scala.inline
+  def create(model: IModel): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -55,9 +53,8 @@ object BackButton {
     *  6.7.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): BackButton = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -68,9 +65,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): BackButton = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -81,9 +77,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): BackButton = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -94,9 +89,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): BackButton = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -107,9 +101,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): BackButton = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -120,9 +113,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): BackButton = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -133,9 +125,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): BackButton = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -146,9 +137,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): BackButton = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -159,9 +149,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): BackButton = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -172,9 +161,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): BackButton = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -185,9 +173,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): BackButton = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -198,9 +185,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): BackButton = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -211,9 +197,8 @@ object BackButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): BackButton = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -224,9 +209,8 @@ object BackButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): BackButton = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -237,9 +221,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): BackButton = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -250,9 +233,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): BackButton = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -263,9 +245,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): BackButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -276,9 +257,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): BackButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -289,9 +269,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): BackButton = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -302,9 +281,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): BackButton = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -315,9 +293,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): BackButton = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -328,9 +305,8 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): BackButton = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.structureTypeName")

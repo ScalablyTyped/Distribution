@@ -5,36 +5,34 @@ import typings.hlsParser.hlsParserStrings.VOD
 import typings.hlsParser.mod.types.Segment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined hls-parser.hls-parser.types.BasePlaylistConstructorProperties & {  targetDuration :number,   mediaSequenceBase :number | undefined,   discontinuitySequenceBase :number | undefined,   endlist :boolean | undefined,   playlistType :'EVENT' | 'VOD' | undefined,   isIFrame :boolean | undefined,   segments :std.Array<hls-parser.hls-parser.types.Segment> | undefined,   source :string | undefined} */
-@js.native
 trait BasePlaylistConstructorPrDiscontinuitySequenceBase extends StObject {
   
-  var discontinuitySequenceBase: js.UndefOr[Double] = js.native
+  var discontinuitySequenceBase: js.UndefOr[Double] = js.undefined
   
-  var endlist: js.UndefOr[Boolean] = js.native
+  var endlist: js.UndefOr[Boolean] = js.undefined
   
-  var independentSegments: js.UndefOr[Boolean] = js.native
+  var independentSegments: js.UndefOr[Boolean] = js.undefined
   
-  var isIFrame: js.UndefOr[Boolean] = js.native
+  var isIFrame: js.UndefOr[Boolean] = js.undefined
   
-  var mediaSequenceBase: js.UndefOr[Double] = js.native
+  var mediaSequenceBase: js.UndefOr[Double] = js.undefined
   
-  var playlistType: js.UndefOr[EVENT | VOD] = js.native
+  var playlistType: js.UndefOr[EVENT | VOD] = js.undefined
   
-  var segments: js.UndefOr[js.Array[Segment]] = js.native
+  var segments: js.UndefOr[js.Array[Segment]] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[Offset] = js.native
+  var start: js.UndefOr[Offset] = js.undefined
   
-  var targetDuration: Double = js.native
+  var targetDuration: Double
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object BasePlaylistConstructorPrDiscontinuitySequenceBase {
   

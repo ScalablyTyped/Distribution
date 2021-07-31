@@ -3,12 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`vector-tile`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VectorTileLayer
-  extends Layer
+  extends StObject
+     with Layer
      with ScaleRangeLayer
      with BlendLayer {
   
@@ -59,10 +59,10 @@ trait VectorTileLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#loadStyle)
     */
-  def loadStyle(style: String): js.Promise[_] = js.native
-  def loadStyle(style: String, options: VectorTileLayerLoadStyleOptions): js.Promise[_] = js.native
-  def loadStyle(style: js.Any): js.Promise[_] = js.native
-  def loadStyle(style: js.Any, options: VectorTileLayerLoadStyleOptions): js.Promise[_] = js.native
+  def loadStyle(style: String): js.Promise[js.Any] = js.native
+  def loadStyle(style: String, options: VectorTileLayerLoadStyleOptions): js.Promise[js.Any] = js.native
+  def loadStyle(style: js.Any): js.Promise[js.Any] = js.native
+  def loadStyle(style: js.Any, options: VectorTileLayerLoadStyleOptions): js.Promise[js.Any] = js.native
   
   /**
     * The portal item from which the layer is loaded.

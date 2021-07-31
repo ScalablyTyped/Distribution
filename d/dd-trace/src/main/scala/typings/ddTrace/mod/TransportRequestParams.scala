@@ -2,22 +2,20 @@ package typings.ddTrace.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
-@js.native
 trait TransportRequestParams extends StObject {
   
-  var body: js.UndefOr[anyObject] = js.native
+  var body: js.UndefOr[anyObject] = js.undefined
   
-  var bulkBody: js.UndefOr[anyObject] = js.native
+  var bulkBody: js.UndefOr[anyObject] = js.undefined
   
-  var method: String = js.native
+  var method: String
   
-  var path: String = js.native
+  var path: String
   
-  var querystring: js.UndefOr[anyObject] = js.native
+  var querystring: js.UndefOr[anyObject] = js.undefined
 }
 object TransportRequestParams {
   

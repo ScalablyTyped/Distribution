@@ -4,7 +4,6 @@ import typings.postmark.anon.Bounce
 import typings.postmark.messageSupportingTypesMod.Header
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webhookMod {
@@ -13,110 +12,40 @@ object webhookMod {
   @js.native
   class CreateWebhookRequest () extends UpdateWebhookRequest {
     def this(url: String) = this()
-    def this(url: js.UndefOr[scala.Nothing], triggers: WebhookRequestTriggers) = this()
     def this(url: String, triggers: WebhookRequestTriggers) = this()
-    def this(url: js.UndefOr[scala.Nothing], triggers: js.UndefOr[scala.Nothing], httpAuth: HttpAuth) = this()
-    def this(url: js.UndefOr[scala.Nothing], triggers: WebhookRequestTriggers, httpAuth: HttpAuth) = this()
-    def this(url: String, triggers: js.UndefOr[scala.Nothing], httpAuth: HttpAuth) = this()
+    def this(url: Unit, triggers: WebhookRequestTriggers) = this()
+    def this(url: String, triggers: Unit, httpAuth: HttpAuth) = this()
     def this(url: String, triggers: WebhookRequestTriggers, httpAuth: HttpAuth) = this()
-    def this(
-      url: js.UndefOr[scala.Nothing],
-      triggers: js.UndefOr[scala.Nothing],
-      httpAuth: js.UndefOr[scala.Nothing],
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: js.UndefOr[scala.Nothing],
-      triggers: js.UndefOr[scala.Nothing],
-      httpAuth: HttpAuth,
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: js.UndefOr[scala.Nothing],
-      triggers: WebhookRequestTriggers,
-      httpAuth: js.UndefOr[scala.Nothing],
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: js.UndefOr[scala.Nothing],
-      triggers: WebhookRequestTriggers,
-      httpAuth: HttpAuth,
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: String,
-      triggers: js.UndefOr[scala.Nothing],
-      httpAuth: js.UndefOr[scala.Nothing],
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: String,
-      triggers: js.UndefOr[scala.Nothing],
-      httpAuth: HttpAuth,
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: String,
-      triggers: WebhookRequestTriggers,
-      httpAuth: js.UndefOr[scala.Nothing],
-      httpHeaders: js.Array[Header]
-    ) = this()
+    def this(url: Unit, triggers: Unit, httpAuth: HttpAuth) = this()
+    def this(url: Unit, triggers: WebhookRequestTriggers, httpAuth: HttpAuth) = this()
+    def this(url: String, triggers: Unit, httpAuth: Unit, httpHeaders: js.Array[Header]) = this()
+    def this(url: String, triggers: Unit, httpAuth: HttpAuth, httpHeaders: js.Array[Header]) = this()
+    def this(url: String, triggers: WebhookRequestTriggers, httpAuth: Unit, httpHeaders: js.Array[Header]) = this()
     def this(url: String, triggers: WebhookRequestTriggers, httpAuth: HttpAuth, httpHeaders: js.Array[Header]) = this()
+    def this(url: Unit, triggers: Unit, httpAuth: Unit, httpHeaders: js.Array[Header]) = this()
+    def this(url: Unit, triggers: Unit, httpAuth: HttpAuth, httpHeaders: js.Array[Header]) = this()
+    def this(url: Unit, triggers: WebhookRequestTriggers, httpAuth: Unit, httpHeaders: js.Array[Header]) = this()
+    def this(url: Unit, triggers: WebhookRequestTriggers, httpAuth: HttpAuth, httpHeaders: js.Array[Header]) = this()
   }
   
   @JSImport("postmark/dist/client/models/webhooks/Webhook", "UpdateWebhookRequest")
   @js.native
   class UpdateWebhookRequest () extends StObject {
     def this(url: String) = this()
-    def this(url: js.UndefOr[scala.Nothing], triggers: WebhookRequestTriggers) = this()
     def this(url: String, triggers: WebhookRequestTriggers) = this()
-    def this(url: js.UndefOr[scala.Nothing], triggers: js.UndefOr[scala.Nothing], httpAuth: HttpAuth) = this()
-    def this(url: js.UndefOr[scala.Nothing], triggers: WebhookRequestTriggers, httpAuth: HttpAuth) = this()
-    def this(url: String, triggers: js.UndefOr[scala.Nothing], httpAuth: HttpAuth) = this()
+    def this(url: Unit, triggers: WebhookRequestTriggers) = this()
+    def this(url: String, triggers: Unit, httpAuth: HttpAuth) = this()
     def this(url: String, triggers: WebhookRequestTriggers, httpAuth: HttpAuth) = this()
-    def this(
-      url: js.UndefOr[scala.Nothing],
-      triggers: js.UndefOr[scala.Nothing],
-      httpAuth: js.UndefOr[scala.Nothing],
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: js.UndefOr[scala.Nothing],
-      triggers: js.UndefOr[scala.Nothing],
-      httpAuth: HttpAuth,
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: js.UndefOr[scala.Nothing],
-      triggers: WebhookRequestTriggers,
-      httpAuth: js.UndefOr[scala.Nothing],
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: js.UndefOr[scala.Nothing],
-      triggers: WebhookRequestTriggers,
-      httpAuth: HttpAuth,
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: String,
-      triggers: js.UndefOr[scala.Nothing],
-      httpAuth: js.UndefOr[scala.Nothing],
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: String,
-      triggers: js.UndefOr[scala.Nothing],
-      httpAuth: HttpAuth,
-      httpHeaders: js.Array[Header]
-    ) = this()
-    def this(
-      url: String,
-      triggers: WebhookRequestTriggers,
-      httpAuth: js.UndefOr[scala.Nothing],
-      httpHeaders: js.Array[Header]
-    ) = this()
+    def this(url: Unit, triggers: Unit, httpAuth: HttpAuth) = this()
+    def this(url: Unit, triggers: WebhookRequestTriggers, httpAuth: HttpAuth) = this()
+    def this(url: String, triggers: Unit, httpAuth: Unit, httpHeaders: js.Array[Header]) = this()
+    def this(url: String, triggers: Unit, httpAuth: HttpAuth, httpHeaders: js.Array[Header]) = this()
+    def this(url: String, triggers: WebhookRequestTriggers, httpAuth: Unit, httpHeaders: js.Array[Header]) = this()
     def this(url: String, triggers: WebhookRequestTriggers, httpAuth: HttpAuth, httpHeaders: js.Array[Header]) = this()
+    def this(url: Unit, triggers: Unit, httpAuth: Unit, httpHeaders: js.Array[Header]) = this()
+    def this(url: Unit, triggers: Unit, httpAuth: HttpAuth, httpHeaders: js.Array[Header]) = this()
+    def this(url: Unit, triggers: WebhookRequestTriggers, httpAuth: Unit, httpHeaders: js.Array[Header]) = this()
+    def this(url: Unit, triggers: WebhookRequestTriggers, httpAuth: HttpAuth, httpHeaders: js.Array[Header]) = this()
     
     var HttpAuth: js.UndefOr[typings.postmark.webhookMod.HttpAuth] = js.native
     
@@ -127,10 +56,11 @@ object webhookMod {
     var Url: js.UndefOr[String] = js.native
   }
   
-  @js.native
-  trait BounceWebhookTrigger extends WebhookTrigger {
+  trait BounceWebhookTrigger
+    extends StObject
+       with WebhookTrigger {
     
-    var IncludeContent: js.UndefOr[Boolean] = js.native
+    var IncludeContent: js.UndefOr[Boolean] = js.undefined
   }
   object BounceWebhookTrigger {
     
@@ -151,12 +81,11 @@ object webhookMod {
     }
   }
   
-  @js.native
   trait HttpAuth extends StObject {
     
-    var Password: String = js.native
+    var Password: String
     
-    var Username: String = js.native
+    var Username: String
   }
   object HttpAuth {
     
@@ -177,10 +106,11 @@ object webhookMod {
     }
   }
   
-  @js.native
-  trait OpenWebhookTrigger extends WebhookTrigger {
+  trait OpenWebhookTrigger
+    extends StObject
+       with WebhookTrigger {
     
-    var PostFirstOpenOnly: js.UndefOr[Boolean] = js.native
+    var PostFirstOpenOnly: js.UndefOr[Boolean] = js.undefined
   }
   object OpenWebhookTrigger {
     
@@ -201,10 +131,11 @@ object webhookMod {
     }
   }
   
-  @js.native
-  trait SpamWebhookTrigger extends WebhookTrigger {
+  trait SpamWebhookTrigger
+    extends StObject
+       with WebhookTrigger {
     
-    var IncludeContent: js.UndefOr[Boolean] = js.native
+    var IncludeContent: js.UndefOr[Boolean] = js.undefined
   }
   object SpamWebhookTrigger {
     
@@ -225,20 +156,19 @@ object webhookMod {
     }
   }
   
-  @js.native
   trait Webhook extends StObject {
     
-    var HttpAuth: js.UndefOr[typings.postmark.webhookMod.HttpAuth] = js.native
+    var HttpAuth: js.UndefOr[typings.postmark.webhookMod.HttpAuth] = js.undefined
     
-    var HttpHeaders: js.UndefOr[js.Array[Header]] = js.native
+    var HttpHeaders: js.UndefOr[js.Array[Header]] = js.undefined
     
-    var ID: Double = js.native
+    var ID: Double
     
-    var MessageStream: String = js.native
+    var MessageStream: String
     
-    var Triggers: Bounce = js.native
+    var Triggers: Bounce
     
-    var Url: String = js.native
+    var Url: String
   }
   object Webhook {
     
@@ -280,18 +210,17 @@ object webhookMod {
     }
   }
   
-  @js.native
   trait WebhookRequestTriggers extends StObject {
     
-    var Bounce: js.UndefOr[BounceWebhookTrigger] = js.native
+    var Bounce: js.UndefOr[BounceWebhookTrigger] = js.undefined
     
-    var Click: js.UndefOr[WebhookTrigger] = js.native
+    var Click: js.UndefOr[WebhookTrigger] = js.undefined
     
-    var Delivery: js.UndefOr[WebhookTrigger] = js.native
+    var Delivery: js.UndefOr[WebhookTrigger] = js.undefined
     
-    var Open: js.UndefOr[OpenWebhookTrigger] = js.native
+    var Open: js.UndefOr[OpenWebhookTrigger] = js.undefined
     
-    var SpamComplaint: js.UndefOr[SpamWebhookTrigger] = js.native
+    var SpamComplaint: js.UndefOr[SpamWebhookTrigger] = js.undefined
   }
   object WebhookRequestTriggers {
     
@@ -336,10 +265,9 @@ object webhookMod {
     }
   }
   
-  @js.native
   trait WebhookTrigger extends StObject {
     
-    var Enabled: Boolean = js.native
+    var Enabled: Boolean
   }
   object WebhookTrigger {
     

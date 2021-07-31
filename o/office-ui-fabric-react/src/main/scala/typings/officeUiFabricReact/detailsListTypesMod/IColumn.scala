@@ -12,48 +12,46 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColumn extends StObject {
   
   /**
     * Accessible label for the column. The column name will still be used as the primary label,
     * but this text (if specified) will be read after the column name.
     */
-  var ariaLabel: js.UndefOr[String] = js.native
+  var ariaLabel: js.UndefOr[String] = js.undefined
   
   /** Internal only value. */
-  var calculatedWidth: js.UndefOr[Double] = js.native
+  var calculatedWidth: js.UndefOr[Double] = js.undefined
   
   /** Class name to apply to the column cell within each row. */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Defines how the column's header should render.
     * @defaultvalue ColumnActionsMode.clickable
     */
-  var columnActionsMode: js.UndefOr[ColumnActionsMode] = js.native
+  var columnActionsMode: js.UndefOr[ColumnActionsMode] = js.undefined
   
   /**
     * Internal only value.
     * Remembers the actual width of the column in any case.
     * `calculatedWidth` is only saved when it's defined by user, not for justified calculations.
     */
-  var currentWidth: js.UndefOr[Double] = js.native
+  var currentWidth: js.UndefOr[Double] = js.undefined
   
   /** Arbitrary data passthrough which can be used by the caller. */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The field to pull the text value from for the column.
     * Can be unset if a custom `onRender` method is provided.
     */
-  var fieldName: js.UndefOr[String] = js.native
+  var fieldName: js.UndefOr[String] = js.undefined
   
   /** Accessible label for the status of this column when filtered. */
-  var filterAriaLabel: js.UndefOr[String] = js.native
+  var filterAriaLabel: js.UndefOr[String] = js.undefined
   
   /** Custom override for the parent list's `getCellValueKey`. */
   var getValueKey: js.UndefOr[
@@ -63,78 +61,78 @@ trait IColumn extends StObject {
       /* column */ js.UndefOr[this.type], 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Accessible label for the status of this column when grouped. */
-  var groupAriaLabel: js.UndefOr[String] = js.native
+  var groupAriaLabel: js.UndefOr[String] = js.undefined
   
   /** Class name to apply to the column header cell. */
-  var headerClassName: js.UndefOr[String] = js.native
+  var headerClassName: js.UndefOr[String] = js.undefined
   
   /** Class name for the icon within the header. */
-  var iconClassName: js.UndefOr[String] = js.native
+  var iconClassName: js.UndefOr[String] = js.undefined
   
   /** Custom icon to use in the column header. */
-  var iconName: js.UndefOr[String] = js.native
+  var iconName: js.UndefOr[String] = js.undefined
   
   /**
     * If true, allow the column to be collapsed when rendered in justified layout.
     * @deprecated Use `isCollapsible`
     */
-  var isCollapsable: js.UndefOr[Boolean] = js.native
+  var isCollapsable: js.UndefOr[Boolean] = js.undefined
   
   /** If true, allow the column to be collapsed when rendered in justified layout. */
-  var isCollapsible: js.UndefOr[Boolean] = js.native
+  var isCollapsible: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the list is filtered by this column. If true, shows a filter icon next to this column's name. */
-  var isFiltered: js.UndefOr[Boolean] = js.native
+  var isFiltered: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the list is grouped by this column. If true, shows a grouped icon next to this column's name. */
-  var isGrouped: js.UndefOr[Boolean] = js.native
+  var isGrouped: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether only the icon should be displayed in the column header.
     * If true, the column name and dropdown chevron will not be displayed.
     */
-  var isIconOnly: js.UndefOr[Boolean] = js.native
+  var isIconOnly: js.UndefOr[Boolean] = js.undefined
   
   /** Whether a dropdown menu is open so that the appropriate ARIA attributes are rendered. */
-  var isMenuOpen: js.UndefOr[Boolean] = js.native
+  var isMenuOpen: js.UndefOr[Boolean] = js.undefined
   
   /** Determines if the column can render multi-line text. */
-  var isMultiline: js.UndefOr[Boolean] = js.native
+  var isMultiline: js.UndefOr[Boolean] = js.undefined
   
   /** If true, add additional LTR padding-right to column and cells. */
-  var isPadded: js.UndefOr[Boolean] = js.native
+  var isPadded: js.UndefOr[Boolean] = js.undefined
   
   /** Determines if the column can be resized. */
-  var isResizable: js.UndefOr[Boolean] = js.native
+  var isResizable: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the column is a header for the given row. There should be only one column with this set to true. */
-  var isRowHeader: js.UndefOr[Boolean] = js.native
+  var isRowHeader: js.UndefOr[Boolean] = js.undefined
   
   /** Determines if the column is currently sorted. Renders a sort arrow in the column header. */
-  var isSorted: js.UndefOr[Boolean] = js.native
+  var isSorted: js.UndefOr[Boolean] = js.undefined
   
   /** Determines if the sort arrow is pointed down (descending) or up. */
-  var isSortedDescending: js.UndefOr[Boolean] = js.native
+  var isSortedDescending: js.UndefOr[Boolean] = js.undefined
   
   /** A unique key for identifying the column. */
-  var key: String = js.native
+  var key: String
   
   /** Maximum width for the column, if stretching is allowed in justified scenarios. */
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
   /** Minimum width for the column. */
-  var minWidth: Double = js.native
+  var minWidth: Double
   
   /** Name to render on the column header. */
-  var name: String = js.native
+  var name: String
   
   /** Callback for when the user clicks on the column header. */
   var onColumnClick: js.UndefOr[
     js.Function2[/* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* column */ this.type, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** Callback for when the user opens the column header context menu. */
   var onColumnContextMenu: js.UndefOr[
@@ -143,7 +141,7 @@ trait IColumn extends StObject {
       /* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Callback for when the column is resized (`width` is the current width).
@@ -151,7 +149,7 @@ trait IColumn extends StObject {
     * Prefer this over `DetailsList`'s `onColumnResize` if you require the `IColumn` to report its width
     * after every resize event. Consider debouncing the callback if resize events occur frequently.
     */
-  var onColumnResize: js.UndefOr[js.Function1[/* width */ js.UndefOr[Double], Unit]] = js.native
+  var onColumnResize: js.UndefOr[js.Function1[/* width */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** Custom renderer for cell content, instead of the default text rendering. */
   var onRender: js.UndefOr[
@@ -159,27 +157,27 @@ trait IColumn extends StObject {
       /* item */ js.UndefOr[js.Any], 
       /* index */ js.UndefOr[Double], 
       /* column */ js.UndefOr[this.type], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Custom renderer for column header divider. */
-  var onRenderDivider: js.UndefOr[IRenderFunction[IDetailsColumnProps]] = js.native
+  var onRenderDivider: js.UndefOr[IRenderFunction[IDetailsColumnProps]] = js.undefined
   
   /**
     * Accessible label for indicating that the list is sorted by this column in ascending order.
     * This will be read after the main column header label.
     */
-  var sortAscendingAriaLabel: js.UndefOr[String] = js.native
+  var sortAscendingAriaLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Accessible label for indicating that the list is sorted by this column in descending order.
     * This will be read after the main column header label.
     */
-  var sortDescendingAriaLabel: js.UndefOr[String] = js.native
+  var sortDescendingAriaLabel: js.UndefOr[String] = js.undefined
   
   /** Custom overrides to the themed or default styles. */
-  var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsColumnStyleProps, IDetailsColumnStyles]] = js.native
+  var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsColumnStyleProps, IDetailsColumnStyles]] = js.undefined
 }
 object IColumn {
   
@@ -381,7 +379,7 @@ object IColumn {
     
     @scala.inline
     def setOnRender(
-      value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => _
+      value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => js.Any
     ): Self = StObject.set(x, "onRender", js.Any.fromFunction3(value))
     
     @scala.inline

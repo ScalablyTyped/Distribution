@@ -5,7 +5,6 @@ import typings.rxjs.asyncSchedulerMod.AsyncScheduler
 import typings.rxjs.typesMod.SchedulerAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncActionMod {
@@ -39,9 +38,9 @@ object asyncActionMod {
     /* protected */ def recycleAsyncId(scheduler: AsyncScheduler, id: js.Any, delay: Double): js.Any = js.native
     
     /* protected */ def requestAsyncId(scheduler: AsyncScheduler): js.Any = js.native
-    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: js.Any): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: js.Any, delay: Double): js.Any = js.native
+    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: Unit, delay: Double): js.Any = js.native
     
     var scheduler: AsyncScheduler = js.native
     

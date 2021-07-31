@@ -2,31 +2,29 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePortfolioShareInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The AWS account ID.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.servicecatalogMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.servicecatalogMod.AccountId] = js.undefined
   
   /**
     * The organization node to whom you are going to stop sharing.
     */
-  var OrganizationNode: js.UndefOr[typings.awsSdk.servicecatalogMod.OrganizationNode] = js.native
+  var OrganizationNode: js.UndefOr[typings.awsSdk.servicecatalogMod.OrganizationNode] = js.undefined
   
   /**
     * The portfolio identifier.
     */
-  var PortfolioId: Id = js.native
+  var PortfolioId: Id
 }
 object DeletePortfolioShareInput {
   

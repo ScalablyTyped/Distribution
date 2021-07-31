@@ -6,13 +6,13 @@ import typings.openfin.openfinStrings.closing
 import typings.openfin.openfinStrings.hide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowHiddenEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WindowHiddenEvent[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var reason: closing | hide | `hide-on-close` = js.native
+  var reason: closing | hide | `hide-on-close`
 }
 object WindowHiddenEvent {
   
@@ -24,7 +24,7 @@ object WindowHiddenEvent {
   }
   
   @scala.inline
-  implicit class WindowHiddenEventMutableBuilder[Self <: WindowHiddenEvent[_, _], Topic, Type] (val x: Self with (WindowHiddenEvent[Topic, Type])) extends AnyVal {
+  implicit class WindowHiddenEventMutableBuilder[Self <: WindowHiddenEvent[?, ?], Topic, Type] (val x: Self & (WindowHiddenEvent[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setReason(value: closing | hide | `hide-on-close`): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])

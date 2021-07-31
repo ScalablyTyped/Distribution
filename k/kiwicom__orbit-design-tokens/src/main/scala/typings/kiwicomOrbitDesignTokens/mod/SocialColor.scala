@@ -2,17 +2,15 @@ package typings.kiwicomOrbitDesignTokens.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocialColor extends StObject {
   
-  var facebook: String = js.native
+  var facebook: String
   
-  var facebookActive: String = js.native
+  var facebookActive: String
   
-  var facebookHover: String = js.native
+  var facebookHover: String
 }
 object SocialColor {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Links extends StObject {
   
   /** The number of dropped links after the maximum size was enforced. If this value is 0, then no links were dropped. */
-  var droppedLinksCount: js.UndefOr[Double] = js.native
+  var droppedLinksCount: js.UndefOr[Double] = js.undefined
   
   /** A collection of links. */
-  var link: js.UndefOr[js.Array[Link]] = js.native
+  var link: js.UndefOr[js.Array[Link]] = js.undefined
 }
 object Links {
   

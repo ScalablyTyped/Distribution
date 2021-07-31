@@ -2,24 +2,23 @@ package typings.seen.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Matrices {
   
-  @JSImport("seen", "Matrices.flipX")
+  @JSImport("seen", "Matrices")
   @js.native
-  def flipX(): Matrix = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("seen", "Matrices.flipY")
-  @js.native
-  def flipY(): Matrix = js.native
+  @scala.inline
+  def flipX(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipX")().asInstanceOf[Matrix]
   
-  @JSImport("seen", "Matrices.flipZ")
-  @js.native
-  def flipZ(): Matrix = js.native
+  @scala.inline
+  def flipY(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipY")().asInstanceOf[Matrix]
   
-  @JSImport("seen", "Matrices.identity")
-  @js.native
-  def identity(): Matrix = js.native
+  @scala.inline
+  def flipZ(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipZ")().asInstanceOf[Matrix]
+  
+  @scala.inline
+  def identity(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")().asInstanceOf[Matrix]
 }

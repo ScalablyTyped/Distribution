@@ -2,15 +2,13 @@ package typings.prettier.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CursorResult extends StObject {
   
-  var cursorOffset: Double = js.native
+  var cursorOffset: Double
   
-  var formatted: String = js.native
+  var formatted: String
 }
 object CursorResult {
   

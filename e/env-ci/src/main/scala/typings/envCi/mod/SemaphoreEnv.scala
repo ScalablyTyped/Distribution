@@ -1,52 +1,41 @@
 package typings.envCi.mod
 
-import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.Semaphore
 import typings.envCi.envCiStrings.semaphore_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemaphoreEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
   
-  var branch: js.UndefOr[String] = js.native
+  var branch: js.UndefOr[String] = js.undefined
   
-  var build: String = js.native
+  var build: String
   
-  var commit: String = js.native
+  var commit: String
   
-  var isPr: Boolean = js.native
+  var isPr: Boolean
   
-  var name: Semaphore = js.native
+  var name: Semaphore
   
-  var pr: js.UndefOr[String] = js.native
+  var pr: js.UndefOr[String] = js.undefined
   
-  var prBranch: js.UndefOr[String] = js.native
+  var prBranch: js.UndefOr[String] = js.undefined
   
-  var root: String = js.native
+  var root: String
   
-  var service: semaphore_ = js.native
+  var service: semaphore_
   
-  var slug: String = js.native
+  var slug: String
 }
 object SemaphoreEnv {
   
   @scala.inline
-  def apply(
-    build: String,
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    name: Semaphore,
-    root: String,
-    service: semaphore_,
-    slug: String
-  ): SemaphoreEnv = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+  def apply(build: String, commit: String, isPr: Boolean, root: String, slug: String): SemaphoreEnv = {
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], name = "Semaphore", root = root.asInstanceOf[js.Any], service = "semaphore", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemaphoreEnv]
   }
   

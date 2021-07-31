@@ -5,22 +5,27 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object CardIOModule {
     
-    @JSImport("react-native-awesome-card-io", "CardIOModule.scanCard")
+    @JSImport("react-native-awesome-card-io", "CardIOModule")
     @js.native
-    def scanCard(): js.Promise[CardDetails] = js.native
-    @JSImport("react-native-awesome-card-io", "CardIOModule.scanCard")
-    @js.native
-    def scanCard(config: CardIOModuleProps): js.Promise[CardDetails] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def scanCard(): js.Promise[CardDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanCard")().asInstanceOf[js.Promise[CardDetails]]
+    @scala.inline
+    def scanCard(config: CardIOModuleProps): js.Promise[CardDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanCard")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CardDetails]]
   }
   
   object CardIOUtilities {
+    
+    @JSImport("react-native-awesome-card-io", "CardIOUtilities")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("react-native-awesome-card-io", "CardIOUtilities.CAN_READ_CARD_WITH_CAMERA")
     @js.native
@@ -31,9 +36,8 @@ object mod {
     val DETECTION_MODE: CardIODetectionMode = js.native
     
     /**  iOS only - prepares card.io to launch faster. */
-    @JSImport("react-native-awesome-card-io", "CardIOUtilities.preload")
-    @js.native
-    def preload(): Unit = js.native
+    @scala.inline
+    def preload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preload")().asInstanceOf[Unit]
   }
   
   @JSImport("react-native-awesome-card-io", "CardIOView")
@@ -48,35 +52,34 @@ object mod {
     def this(props: CardIOViewProps, context: js.Any) = this()
   }
   
-  @js.native
   trait CardDetails extends StObject {
     
     /**  Card number. */
-    var cardNumber: String = js.native
+    var cardNumber: String
     
     /**  Localized card type. */
-    var cardType: String = js.native
+    var cardType: String
     
     /**  Card holder name. */
-    var cardholderName: String = js.native
+    var cardholderName: String
     
     /**  Security code. */
-    var cvv: String = js.native
+    var cvv: String
     
     /**  Expiry month with january as 1 (may be 0 if expiry information was not requested). */
-    var expiryMonth: Double = js.native
+    var expiryMonth: Double
     
     /**  Expiry year (may be 0 if expiry information was not requested). */
-    var expiryYear: Double = js.native
+    var expiryYear: Double
     
     /**  Postal code. Format is country dependent. */
-    var postalCode: String = js.native
+    var postalCode: String
     
     /**  Card number with all but the last four digits obfuscated. */
-    var redactedCardNumber: String = js.native
+    var redactedCardNumber: String
     
     /**  - Was the card number scanned (as opposed to entered manually)? */
-    var scanned: js.UndefOr[Boolean] = js.native
+    var scanned: js.UndefOr[Boolean] = js.undefined
   }
   object CardDetails {
     
@@ -130,36 +133,35 @@ object mod {
     }
   }
   
-  @js.native
   trait CardIOCommonProps extends StObject {
     
     /**  true - By default, in camera view the card guide and the buttons always rotate to match the device's orientation. */
-    var allowFreelyRotatingCardGuide: js.UndefOr[Boolean] = js.native
+    var allowFreelyRotatingCardGuide: js.UndefOr[Boolean] = js.undefined
     
     /**  iOS only */
     /**  false - Set the detection mode. (iOS) */
-    var detectionMode: js.UndefOr[CardIODetectionMode] = js.native
+    var detectionMode: js.UndefOr[CardIODetectionMode] = js.undefined
     
     /**  Alter the card guide (bracket) color. Opaque colors recommended.. */
-    var guideColor: js.UndefOr[String | Double] = js.native
+    var guideColor: js.UndefOr[String | Double] = js.undefined
     
     /**  false - Hide the PayPal or card.io logo in the scan view.. */
-    var hideCardIOLogo: js.UndefOr[Boolean] = js.native
+    var hideCardIOLogo: js.UndefOr[Boolean] = js.undefined
     
     /**  The preferred language for all strings appearing in the user interface. */
-    var languageOrLocale: js.UndefOr[String] = js.native
+    var languageOrLocale: js.UndefOr[String] = js.undefined
     
     /**  true - Set to false if you don't want the camera to try to scan the card expiration.. */
-    var scanExpiry: js.UndefOr[Boolean] = js.native
+    var scanExpiry: js.UndefOr[Boolean] = js.undefined
     
     /**  - Set the scan instruction text. If nil, use the default text.. */
-    var scanInstructions: js.UndefOr[String] = js.native
+    var scanInstructions: js.UndefOr[String] = js.undefined
     
     /**  0.1 - How long card.io will display an image of the card with the computed card number superimposed after a successful scan. */
-    var scannedImageDuration: js.UndefOr[Double] = js.native
+    var scannedImageDuration: js.UndefOr[Double] = js.undefined
     
     /**  false - Set to true to show the card.io logo over the camera view instead of the PayPal logo.. */
-    var useCardIOLogo: js.UndefOr[Boolean] = js.native
+    var useCardIOLogo: js.UndefOr[Boolean] = js.undefined
   }
   object CardIOCommonProps {
     
@@ -246,49 +248,50 @@ object mod {
     def IMAGE_AND_NUMBER: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE_AND_NUMBER = "IMAGE_AND_NUMBER".asInstanceOf[typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE_AND_NUMBER]
   }
   
-  @js.native
-  trait CardIOModuleProps extends CardIOCommonProps {
+  trait CardIOModuleProps
+    extends StObject
+       with CardIOCommonProps {
     
     /**  iOS Only */
     /**  false - Disable the blur of the screen when the app is backgrounded. */
-    var disableBlurWhenBackgrounding: js.UndefOr[Boolean] = js.native
+    var disableBlurWhenBackgrounding: js.UndefOr[Boolean] = js.undefined
     
     /**  false - If true, the status bar's style will be kept as whatever your app has set it to. */
-    var keepStatusBarStyle: js.UndefOr[Boolean] = js.native
+    var keepStatusBarStyle: js.UndefOr[Boolean] = js.undefined
     
     /**  Android Only */
     /**  false If set, the card will not be scanned with the camera. */
-    var noCamera: js.UndefOr[Boolean] = js.native
+    var noCamera: js.UndefOr[Boolean] = js.undefined
     
     /**  true - Set to false if you don't need to collect the CVV from the user. */
-    var requireCVV: js.UndefOr[Boolean] = js.native
+    var requireCVV: js.UndefOr[Boolean] = js.undefined
     
     /**  false - Set to true if you need to collect the cardholder name. */
-    var requireCardholderName: js.UndefOr[Boolean] = js.native
+    var requireCardholderName: js.UndefOr[Boolean] = js.undefined
     
     /**  true - Set to false if you don't need to collect the card expiration. */
-    var requireExpiry: js.UndefOr[Boolean] = js.native
+    var requireExpiry: js.UndefOr[Boolean] = js.undefined
     
     /**  false - Set to false if you need to collect the billing postal code. */
-    var requirePostalCode: js.UndefOr[Boolean] = js.native
+    var requirePostalCode: js.UndefOr[Boolean] = js.undefined
     
     /**  false - Set to true if the postal code should only collect numeric input. */
-    var restrictPostalCodeToNumericOnly: js.UndefOr[Boolean] = js.native
+    var restrictPostalCodeToNumericOnly: js.UndefOr[Boolean] = js.undefined
     
     /**  false - If true, don't have the user confirm the scanned card, just return the results immediately. */
-    var suppressConfirmation: js.UndefOr[Boolean] = js.native
+    var suppressConfirmation: js.UndefOr[Boolean] = js.undefined
     
     /**  false - Set to true to prevent card.io from showing its "Enter Manually" button. */
-    var suppressManualEntry: js.UndefOr[Boolean] = js.native
+    var suppressManualEntry: js.UndefOr[Boolean] = js.undefined
     
     /**  false - If true, instead of displaying the image of the scanned card, present the manual entry screen with the scanned card number prefilled. */
-    var suppressScannedCardImage: js.UndefOr[Boolean] = js.native
+    var suppressScannedCardImage: js.UndefOr[Boolean] = js.undefined
     
     /**  -1 Privacy feature. How many of the Card number digits NOT to blur on the resulting image. Setting it to 4 will blur all digits except the last four. */
-    var unblurDigits: js.UndefOr[Double] = js.native
+    var unblurDigits: js.UndefOr[Double] = js.undefined
     
     /**   Default false; Use the PayPal icon in the ActionBar. */
-    var usePaypalActionbarIcon: js.UndefOr[Boolean] = js.native
+    var usePaypalActionbarIcon: js.UndefOr[Boolean] = js.undefined
   }
   object CardIOModuleProps {
     
@@ -381,14 +384,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait CardIOViewProps extends CardIOCommonProps {
+  trait CardIOViewProps
+    extends StObject
+       with CardIOCommonProps {
     
     /**  This function will be called when the CardIOView completes its work and returns a CreditCard. */
-    def didScanCard(card: CardDetails): Unit = js.native
+    def didScanCard(card: CardDetails): Unit
     
     /**  Style props of CardIOViewProps */
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object CardIOViewProps {
     

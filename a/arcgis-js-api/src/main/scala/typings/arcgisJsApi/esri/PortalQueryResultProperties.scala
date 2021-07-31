@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortalQueryResultProperties extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait PortalQueryResultProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#nextQueryParams)
     */
-  var nextQueryParams: js.UndefOr[PortalQueryParamsProperties] = js.native
+  var nextQueryParams: js.UndefOr[PortalQueryParamsProperties] = js.undefined
   
   /**
     * The query parameters for the first set of results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#queryParams)
     */
-  var queryParams: js.UndefOr[PortalQueryParamsProperties] = js.native
+  var queryParams: js.UndefOr[PortalQueryParamsProperties] = js.undefined
   
   /**
     * An array of result item objects.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#results)
     */
-  var results: js.UndefOr[js.Array[_]] = js.native
+  var results: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The total number of results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#total)
     */
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object PortalQueryResultProperties {
   
@@ -60,7 +58,7 @@ object PortalQueryResultProperties {
     def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     
     @scala.inline
-    def setResults(value: js.Array[_]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    def setResults(value: js.Array[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)

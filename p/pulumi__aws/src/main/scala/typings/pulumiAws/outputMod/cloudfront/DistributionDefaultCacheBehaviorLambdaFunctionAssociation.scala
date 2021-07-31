@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.cloudfront
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionDefaultCacheBehaviorLambdaFunctionAssociation extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait DistributionDefaultCacheBehaviorLambdaFunctionAssociation extends StObject
     * Valid values: `viewer-request`, `origin-request`, `viewer-response`,
     * `origin-response`
     */
-  var eventType: String = js.native
+  var eventType: String
   
   /**
     * When set to true it exposes the request body to the lambda function. Defaults to false. Valid values: `true`, `false`.
     */
-  var includeBody: js.UndefOr[Boolean] = js.native
+  var includeBody: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ARN of the Lambda function.
     */
-  var lambdaArn: String = js.native
+  var lambdaArn: String
 }
 object DistributionDefaultCacheBehaviorLambdaFunctionAssociation {
   

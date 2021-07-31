@@ -4,37 +4,35 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlazyOptions extends StObject {
   
-  var breakpoints: js.UndefOr[js.Array[Breakpoint]] = js.native
+  var breakpoints: js.UndefOr[js.Array[Breakpoint]] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[js.Function2[/* ele */ Element | HTMLElement, /* msg */ String, Unit]] = js.native
+  var error: js.UndefOr[js.Function2[/* ele */ Element | HTMLElement, /* msg */ String, Unit]] = js.undefined
   
-  var errorClass: js.UndefOr[String] = js.native
+  var errorClass: js.UndefOr[String] = js.undefined
   
-  var loadInvisible: js.UndefOr[Boolean] = js.native
+  var loadInvisible: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var saveViewportOffsetDelay: js.UndefOr[Double] = js.native
+  var saveViewportOffsetDelay: js.UndefOr[Double] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
-  var separator: js.UndefOr[String] = js.native
+  var separator: js.UndefOr[String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* ele */ Element | HTMLElement, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* ele */ Element | HTMLElement, Unit]] = js.undefined
   
-  var successClass: js.UndefOr[String] = js.native
+  var successClass: js.UndefOr[String] = js.undefined
   
-  var validateDelay: js.UndefOr[Double] = js.native
+  var validateDelay: js.UndefOr[Double] = js.undefined
 }
 object BlazyOptions {
   

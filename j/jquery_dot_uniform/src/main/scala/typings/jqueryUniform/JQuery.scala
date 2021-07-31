@@ -2,14 +2,27 @@ package typings.jqueryUniform
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def uniform(): JQuery = js.native
-  def uniform(options: UniformOptions): JQuery = js.native
+  def uniform(): JQuery
+  def uniform(options: UniformOptions): JQuery
   @JSName("uniform")
-  var uniform_Original: Uniform = js.native
+  var uniform_Original: Uniform
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(uniform: Uniform): JQuery = {
+    val __obj = js.Dynamic.literal(uniform = uniform.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setUniform(value: Uniform): Self = StObject.set(x, "uniform", value.asInstanceOf[js.Any])
+  }
 }

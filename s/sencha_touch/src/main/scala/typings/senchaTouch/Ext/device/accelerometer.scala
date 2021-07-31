@@ -3,26 +3,26 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accelerometer {
   
-  @js.native
-  trait IAbstract extends IBase {
+  trait IAbstract
+    extends StObject
+       with IBase {
     
     /** [Config Option] (Number) */
-    var frequency: js.UndefOr[Double] = js.native
+    var frequency: js.UndefOr[Double] = js.undefined
     
     /** [Method] Returns the value of frequency
       * @returns Number
       */
-    var getFrequency: js.UndefOr[js.Function0[Double]] = js.native
+    var getFrequency: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Sets the value of frequency
       * @param frequency Number The new value.
       */
-    var setFrequency: js.UndefOr[js.Function1[/* frequency */ js.UndefOr[Double], Unit]] = js.native
+    var setFrequency: js.UndefOr[js.Function1[/* frequency */ js.UndefOr[Double], Unit]] = js.undefined
   }
   object IAbstract {
     

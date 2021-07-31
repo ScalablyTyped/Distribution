@@ -2,7 +2,6 @@ package typings.getRes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,16 +11,18 @@ object mod {
     *
     * @returns An array with the details of ten most popular screen resolutions
     */
+  @scala.inline
+  def apply(): js.Promise[js.Array[Resolution]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[Resolution]]]
+  
   @JSImport("get-res", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[js.Array[Resolution]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Resolution extends StObject {
     
-    var item: String = js.native
+    var item: String
     
-    var percent: String = js.native
+    var percent: String
   }
   object Resolution {
     

@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a web provider token response. */
-@js.native
 trait WebProviderTokenResponse extends StObject {
   
   /** Gets the response from the provider to the client. */
-  var clientResponse: WebTokenResponse = js.native
+  var clientResponse: WebTokenResponse
 }
 object WebProviderTokenResponse {
   

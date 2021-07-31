@@ -2,16 +2,14 @@ package typings.reactAriaModal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Pick<react-aria-modal.react-aria-modal.AriaModalProps, 'titleId'> */
-  @js.native
   trait PickAriaModalPropstitleId extends StObject {
     
-    var titleId: js.UndefOr[String] = js.native
+    var titleId: js.UndefOr[String] = js.undefined
   }
   object PickAriaModalPropstitleId {
     
@@ -33,10 +31,9 @@ object anon {
   }
   
   /* Inlined std.Pick<react-aria-modal.react-aria-modal.AriaModalProps, 'titleText'> */
-  @js.native
   trait PickAriaModalPropstitleTe extends StObject {
     
-    var titleText: js.UndefOr[String] = js.native
+    var titleText: js.UndefOr[String] = js.undefined
   }
   object PickAriaModalPropstitleTe {
     

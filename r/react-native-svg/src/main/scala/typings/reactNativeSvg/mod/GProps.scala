@@ -2,13 +2,13 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GProps extends CommonPathProps {
+trait GProps
+  extends StObject
+     with CommonPathProps {
   
-  var opacity: js.UndefOr[NumberProp] = js.native
+  var opacity: js.UndefOr[NumberProp] = js.undefined
 }
 object GProps {
   

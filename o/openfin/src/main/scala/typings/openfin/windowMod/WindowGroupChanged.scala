@@ -11,27 +11,27 @@ import typings.openfin.openfinStrings.source
 import typings.openfin.openfinStrings.target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowGroupChanged[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WindowGroupChanged[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var memberOf: source | target | nothing = js.native
+  var memberOf: source | target | nothing
   
-  var reason: leave | join | merge | disband = js.native
+  var reason: leave | join | merge | disband
   
-  var sourceGroup: js.Array[AppUuid] = js.native
+  var sourceGroup: js.Array[AppUuid]
   
-  var sourceWindowAppUuid: String = js.native
+  var sourceWindowAppUuid: String
   
-  var sourceWindowName: String = js.native
+  var sourceWindowName: String
   
-  var targetGroup: js.Array[AppUuid] = js.native
+  var targetGroup: js.Array[AppUuid]
   
-  var targetWindowAppUuid: String = js.native
+  var targetWindowAppUuid: String
   
-  var targetWindowName: String = js.native
+  var targetWindowName: String
 }
 object WindowGroupChanged {
   
@@ -56,7 +56,7 @@ object WindowGroupChanged {
   }
   
   @scala.inline
-  implicit class WindowGroupChangedMutableBuilder[Self <: WindowGroupChanged[_, _], Topic, Type] (val x: Self with (WindowGroupChanged[Topic, Type])) extends AnyVal {
+  implicit class WindowGroupChangedMutableBuilder[Self <: WindowGroupChanged[?, ?], Topic, Type] (val x: Self & (WindowGroupChanged[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setMemberOf(value: source | target | nothing): Self = StObject.set(x, "memberOf", value.asInstanceOf[js.Any])

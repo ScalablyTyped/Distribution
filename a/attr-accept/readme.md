@@ -10,9 +10,9 @@ JavaScript implementation of the "accept" attribute for HTML5 <input type="file"
 | ------------------ | :-------------: |
 | Full name          | attr-accept |
 | Keywords           | html5, input, tag, attribute, attr, accept, file |
-| # releases         | 4 |
-| # dependents       | 59 |
-| # downloads        | 39403608 |
+| # releases         | 6 |
+| # dependents       | 67 |
+| # downloads        | 49174983 |
 | # stars            | 0 |
 
 ## Links

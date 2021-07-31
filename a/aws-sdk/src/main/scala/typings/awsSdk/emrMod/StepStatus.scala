@@ -2,31 +2,29 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepStatus extends StObject {
   
   /**
     * The details for the step failure including reason, message, and log file path where the root cause was identified.
     */
-  var FailureDetails: js.UndefOr[typings.awsSdk.emrMod.FailureDetails] = js.native
+  var FailureDetails: js.UndefOr[typings.awsSdk.emrMod.FailureDetails] = js.undefined
   
   /**
     * The execution state of the cluster step.
     */
-  var State: js.UndefOr[StepState] = js.native
+  var State: js.UndefOr[StepState] = js.undefined
   
   /**
     * The reason for the step execution status change.
     */
-  var StateChangeReason: js.UndefOr[StepStateChangeReason] = js.native
+  var StateChangeReason: js.UndefOr[StepStateChangeReason] = js.undefined
   
   /**
     * The timeline of the cluster step status over time.
     */
-  var Timeline: js.UndefOr[StepTimeline] = js.native
+  var Timeline: js.UndefOr[StepTimeline] = js.undefined
 }
 object StepStatus {
   

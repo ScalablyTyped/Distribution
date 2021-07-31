@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInstanceExportTaskResult extends StObject {
   
   /**
     * Information about the instance export task.
     */
-  var ExportTask: js.UndefOr[typings.awsSdk.ec2Mod.ExportTask] = js.native
+  var ExportTask: js.UndefOr[typings.awsSdk.ec2Mod.ExportTask] = js.undefined
 }
 object CreateInstanceExportTaskResult {
   

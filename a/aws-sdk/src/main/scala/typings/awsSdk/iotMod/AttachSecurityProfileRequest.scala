@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachSecurityProfileRequest extends StObject {
   
   /**
     * The security profile that is attached.
     */
-  var securityProfileName: SecurityProfileName = js.native
+  var securityProfileName: SecurityProfileName
   
   /**
     * The ARN of the target (thing group) to which the security profile is attached.
     */
-  var securityProfileTargetArn: SecurityProfileTargetArn = js.native
+  var securityProfileTargetArn: SecurityProfileTargetArn
 }
 object AttachSecurityProfileRequest {
   

@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetPageScaleFactorRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `86` extends StObject {
   
-  var paramsType: js.Array[SetPageScaleFactorRequest] = js.native
+  var paramsType: js.Array[SetPageScaleFactorRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `86` {
   

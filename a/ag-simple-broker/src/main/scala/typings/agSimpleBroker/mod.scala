@@ -11,7 +11,6 @@ import typings.agSimpleBroker.anon.Id
 import typings.writableConsumableStream.consumerMod.ConsumerStats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,7 +26,7 @@ object mod {
        with Client {
     def this(broker: AGSimpleBroker) = this()
     
-    def channel(channelName: String): typings.agChannel.mod.^[_] = js.native
+    def channel(channelName: String): typings.agChannel.mod.^[js.Any] = js.native
     
     def closeAllChannelListeners(): Unit = js.native
     
@@ -35,8 +34,19 @@ object mod {
     
     def closeAllChannels(): Unit = js.native
     
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def closeAllListeners(): Unit = js.native
+    
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def closeListener(eventName: String): Unit = js.native
+    
     def destroy(): Unit = js.native
     
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def emit(eventName: String, data: js.Any): Unit = js.native
     @JSName("emit")
     def emit_subscribe(eventName: subscribe, data: SubscribeData): Unit = js.native
     @JSName("emit")
@@ -52,11 +62,43 @@ object mod {
     
     def getAllChannelsBackpressure(): Double = js.native
     
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def getAllListenersBackpressure(): Double = js.native
+    
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def getAllListenersConsumerStatsList(): js.Array[ConsumerStats] = js.native
+    
     def getBackpressure(): Double = js.native
+    
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def getListenerBackpressure(eventName: String): Double = js.native
+    
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def getListenerConsumerBackpressure(consumerId: Double): Double = js.native
+    
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def getListenerConsumerStats(consumerId: Double): ConsumerStats = js.native
+    
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def getListenerConsumerStatsList(eventName: String): js.Array[ConsumerStats] = js.native
     
     def hasAnyChannelListenerConsumer(consumerId: Double): Boolean = js.native
     
     def hasAnyChannelOutputConsumer(consumerId: Double): Boolean = js.native
+    
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def hasAnyListenerConsumer(consumerId: Double): Boolean = js.native
+    
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def hasListenerConsumer(eventName: String, consumerId: Double): Boolean = js.native
     
     var id: String = js.native
     
@@ -66,6 +108,21 @@ object mod {
     
     def killAllChannels(): Unit = js.native
     
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def killAllListeners(): Unit = js.native
+    
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def killListener(eventName: String): Unit = js.native
+    
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def killListenerConsumer(consumerId: Double): Unit = js.native
+    
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def listener(eventName: String): typings.consumableStream.mod.^[js.Any] = js.native
     @JSName("listener")
     def listener_subscribe(eventName: subscribe): typings.consumableStream.mod.^[SubscribeData] = js.native
     @JSName("listener")
@@ -131,12 +188,11 @@ object mod {
     def unsubscribeSocket(client: Id, channelName: String): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait PublishData extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var date: js.Any = js.native
+    var date: js.Any
   }
   object PublishData {
     
@@ -157,10 +213,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SubscribeData extends StObject {
     
-    var channel: String = js.native
+    var channel: String
   }
   object SubscribeData {
     
@@ -178,10 +233,9 @@ object mod {
     }
   }
   
-  @js.native
   trait UnsubscribeData extends StObject {
     
-    var channel: String = js.native
+    var channel: String
   }
   object UnsubscribeData {
     

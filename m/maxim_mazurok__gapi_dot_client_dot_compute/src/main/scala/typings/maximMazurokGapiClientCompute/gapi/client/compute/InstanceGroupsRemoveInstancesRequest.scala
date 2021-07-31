@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupsRemoveInstancesRequest extends StObject {
   
   /** The list of instances to remove from the instance group. */
-  var instances: js.UndefOr[js.Array[InstanceReference]] = js.native
+  var instances: js.UndefOr[js.Array[InstanceReference]] = js.undefined
 }
 object InstanceGroupsRemoveInstancesRequest {
   

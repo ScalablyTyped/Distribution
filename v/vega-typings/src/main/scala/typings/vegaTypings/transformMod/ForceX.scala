@@ -4,23 +4,23 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.x
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForceX extends Force {
+trait ForceX
+  extends StObject
+     with Force {
   
-  var force: x = js.native
+  var force: x
   
-  var strength: js.UndefOr[Double | SignalRef] = js.native
+  var strength: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var x: js.UndefOr[FieldRef] = js.native
+  var x: js.UndefOr[FieldRef] = js.undefined
 }
 object ForceX {
   
   @scala.inline
-  def apply(force: x): ForceX = {
-    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
+  def apply(): ForceX = {
+    val __obj = js.Dynamic.literal(force = "x")
     __obj.asInstanceOf[ForceX]
   }
   

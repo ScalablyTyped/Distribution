@@ -7,70 +7,70 @@ import typings.stripe.mod.charges.ICharge
 import typings.stripe.mod.resources.ApplicationFeeRefunds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applicationFees {
   
-  @js.native
-  trait IApplicationFee extends IResourceObject {
+  trait IApplicationFee
+    extends StObject
+       with IResourceObject {
     
     /**
       * ID of the Stripe account this fee was taken from. [Expandable]
       */
-    var account: String | IAccount = js.native
+    var account: String | IAccount
     
     /**
       * Amount earned, in cents/pence.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Positive integer or zero
       */
-    var amount_refunded: Double = js.native
+    var amount_refunded: Double
     
     /**
       * ID of the Connect Application that earned the fee. [Expandable]
       */
-    var application: String | IApplication = js.native
+    var application: String | IApplication
     
     /**
       * Balance transaction that describes the impact of this collected application
       * fee on your account balance (not including refunds). [Expandable]
       */
-    var balance_transaction: String | IBalanceTransaction = js.native
+    var balance_transaction: String | IBalanceTransaction
     
     /**
       * ID of the charge that the application fee was taken from. [Expandable]
       */
-    var charge: String | ICharge = js.native
+    var charge: String | ICharge
     
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO code representing the currency of the charge.
       */
-    var currency: String = js.native
+    var currency: String
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * ID of the corresponding charge on the platform account, if this fee was the
       * result of a charge using the destination parameter. [Expandable]
       */
-    var originating_transaction: String = js.native
+    var originating_transaction: String
     
     /**
       * Whether or not the fee has been fully refunded. If the fee is only partially
       * refunded, this attribute will still be false.
       */
-    var refunded: Boolean = js.native
+    var refunded: Boolean
     
     /**
       * A list of refunds that have been applied to the fee.
       */
-    var refunds: IApplicationFeeRefunds = js.native
+    var refunds: IApplicationFeeRefunds
   }
   object IApplicationFee {
     
@@ -137,13 +137,14 @@ object applicationFees {
     }
   }
   
-  @js.native
-  trait IApplicationFeeListOptions extends IListOptionsCreated {
+  trait IApplicationFeeListOptions
+    extends StObject
+       with IListOptionsCreated {
     
     /**
       * Only return application fees for the charge specified by this charge ID.
       */
-    var charge: String = js.native
+    var charge: String
   }
   object IApplicationFeeListOptions {
     
@@ -161,36 +162,37 @@ object applicationFees {
     }
   }
   
-  @js.native
-  trait IApplicationFeeRefund extends IResourceObject {
+  trait IApplicationFeeRefund
+    extends StObject
+       with IResourceObject {
     
     /**
       * Amount, in cents/pence.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Balance transaction that describes the impact on your account balance.
       */
-    var balance_transaction: String | IBalanceTransaction = js.native
+    var balance_transaction: String | IBalanceTransaction
     
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO code representing the currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * ID of the application fee that was refunded.
       */
-    var fee: String | IApplicationFee = js.native
+    var fee: String | IApplicationFee
     
     /**
       * A set of key/value pairs that you can attach to the object. It can be useful
       * for storing additional information in a structured format.
       */
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
   }
   object IApplicationFeeRefund {
     
@@ -233,8 +235,9 @@ object applicationFees {
     }
   }
   
-  @js.native
-  trait IApplicationFeeRefundCreationOptions extends IDataOptionsWithMetadata {
+  trait IApplicationFeeRefundCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * A positive integer in pence representing how much of this fee to refund.
@@ -242,7 +245,7 @@ object applicationFees {
       *
       * default is entire application fee
       */
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
   }
   object IApplicationFeeRefundCreationOptions {
     

@@ -2,48 +2,46 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGMatrix extends StObject {
   
   @JSName("MSHTML.SVGMatrix_typekey")
-  var MSHTMLDotSVGMatrix_typekey: SVGMatrix = js.native
+  var MSHTMLDotSVGMatrix_typekey: SVGMatrix
   
-  var a: Double = js.native
+  var a: Double
   
-  var b: Double = js.native
+  var b: Double
   
-  var c: Double = js.native
+  var c: Double
   
-  var d: Double = js.native
+  var d: Double
   
-  var e: Double = js.native
+  var e: Double
   
-  var f: Double = js.native
+  var f: Double
   
-  def flipX(): SVGMatrix = js.native
+  def flipX(): SVGMatrix
   
-  def flipY(): SVGMatrix = js.native
+  def flipY(): SVGMatrix
   
-  def inverse(): SVGMatrix = js.native
+  def inverse(): SVGMatrix
   
-  def multiply(secondMatrix: SVGMatrix): SVGMatrix = js.native
+  def multiply(secondMatrix: SVGMatrix): SVGMatrix
   
-  def rotate(angle: Double): SVGMatrix = js.native
+  def rotate(angle: Double): SVGMatrix
   
-  def rotateFromVector(x: Double, y: Double): SVGMatrix = js.native
+  def rotateFromVector(x: Double, y: Double): SVGMatrix
   
-  def scale(scaleFactor: Double): SVGMatrix = js.native
+  def scale(scaleFactor: Double): SVGMatrix
   
-  def scaleNonUniform(scaleFactorX: Double, scaleFactorY: Double): SVGMatrix = js.native
+  def scaleNonUniform(scaleFactorX: Double, scaleFactorY: Double): SVGMatrix
   
-  def skewX(angle: Double): SVGMatrix = js.native
+  def skewX(angle: Double): SVGMatrix
   
-  def skewY(angle: Double): SVGMatrix = js.native
+  def skewY(angle: Double): SVGMatrix
   
-  def translate(x: Double, y: Double): SVGMatrix = js.native
+  def translate(x: Double, y: Double): SVGMatrix
 }
 object SVGMatrix {
   

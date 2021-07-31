@@ -2,16 +2,14 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogConfiguration extends StObject {
   
   /**
     * Indicates whether logging is enabled.
     */
-  var Enabled: js.UndefOr[typings.awsSdk.managedblockchainMod.Enabled] = js.native
+  var Enabled: js.UndefOr[typings.awsSdk.managedblockchainMod.Enabled] = js.undefined
 }
 object LogConfiguration {
   

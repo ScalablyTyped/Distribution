@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FreeBusyCalendar extends StObject {
   
   /** List of time ranges during which this calendar should be regarded as busy. */
-  var busy: js.UndefOr[js.Array[TimePeriod]] = js.native
+  var busy: js.UndefOr[js.Array[TimePeriod]] = js.undefined
   
   /** Optional error(s) (if computation for the calendar failed). */
-  var errors: js.UndefOr[js.Array[Error]] = js.native
+  var errors: js.UndefOr[js.Array[Error]] = js.undefined
 }
 object FreeBusyCalendar {
   

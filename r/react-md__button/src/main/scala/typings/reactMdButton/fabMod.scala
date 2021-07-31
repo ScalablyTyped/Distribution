@@ -6,14 +6,13 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fabMod {
   
   @JSImport("@react-md/button/types/FAB", "FAB")
   @js.native
-  val FAB: ForwardRefExoticComponent[FABProps with RefAttributes[HTMLSpanElement]] = js.native
+  val FAB: ForwardRefExoticComponent[FABProps & RefAttributes[HTMLSpanElement]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - scala.Null
@@ -24,14 +23,15 @@ object fabMod {
   */
   type FABPosition = _FABPosition | Null
   
-  @js.native
-  trait FABProps extends HTMLAttributes[HTMLSpanElement] {
+  trait FABProps
+    extends StObject
+       with HTMLAttributes[HTMLSpanElement] {
     
     /**
       * The position within the viewport to display the button as a floating action
       * button.
       */
-    var position: js.UndefOr[FABPosition] = js.native
+    var position: js.UndefOr[FABPosition] = js.undefined
   }
   object FABProps {
     

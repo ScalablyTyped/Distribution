@@ -10,7 +10,6 @@ import typings.node.fsMod.Stats
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -49,9 +48,9 @@ trait BrowserSyncInstance extends StObject {
     * depending on your use-case.
     */
   def init(): BrowserSyncInstance = js.native
-  def init(config: js.UndefOr[scala.Nothing], callback: js.Function2[/* err */ Error, /* bs */ this.type, _]): BrowserSyncInstance = js.native
+  def init(config: Unit, callback: js.Function2[/* err */ Error, /* bs */ this.type, js.Any]): BrowserSyncInstance = js.native
   def init(config: Options): BrowserSyncInstance = js.native
-  def init(config: Options, callback: js.Function2[/* err */ Error, /* bs */ this.type, _]): BrowserSyncInstance = js.native
+  def init(config: Options, callback: js.Function2[/* err */ Error, /* bs */ this.type, js.Any]): BrowserSyncInstance = js.native
   
   /** the name of this instance of browser-sync */
   var name: String = js.native
@@ -121,19 +120,19 @@ trait BrowserSyncInstance extends StObject {
     * @param {any} cb A callback function that will return any errors.
     */
   def use(module: Plugin): Unit = js.native
-  def use(module: Plugin, options: js.UndefOr[scala.Nothing], cb: js.Any): Unit = js.native
   def use(module: Plugin, options: js.Object): Unit = js.native
   def use(module: Plugin, options: js.Object, cb: js.Any): Unit = js.native
+  def use(module: Plugin, options: Unit, cb: js.Any): Unit = js.native
   
   /**
     * Stand alone file-watcher. Use this along with Browsersync to create your own, minimal build system
     */
   def watch(patterns: String): EventEmitter = js.native
+  def watch(patterns: String, opts: Unit, fn: js.Function2[/* event */ String, /* file */ Stats, js.Any]): EventEmitter = js.native
+  def watch(patterns: String, opts: WatchOptions): EventEmitter = js.native
   def watch(
     patterns: String,
-    opts: js.UndefOr[scala.Nothing],
-    fn: js.Function2[/* event */ String, /* file */ Stats, _]
+    opts: WatchOptions,
+    fn: js.Function2[/* event */ String, /* file */ Stats, js.Any]
   ): EventEmitter = js.native
-  def watch(patterns: String, opts: WatchOptions): EventEmitter = js.native
-  def watch(patterns: String, opts: WatchOptions, fn: js.Function2[/* event */ String, /* file */ Stats, _]): EventEmitter = js.native
 }

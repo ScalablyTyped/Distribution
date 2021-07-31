@@ -11,18 +11,18 @@ import typings.std.Iterable
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/model/node
 @JSImport("@ckeditor/ckeditor5-engine", "model.Node")
 @js.native
 class Node ()
-  extends Item
+  extends StObject
+     with Item
      with _NodeSet
      with _SchemaContextDefinition {
-  def this(attrs: js.Array[js.Tuple2[String, _]]) = this()
-  def this(attrs: Map[String, _]) = this()
+  def this(attrs: js.Array[js.Tuple2[String, js.Any]]) = this()
+  def this(attrs: Map[String, js.Any]) = this()
   
   val document: Document | Null = js.native
   
@@ -34,7 +34,7 @@ class Node ()
   
   def getAttributeKeys(): Iterable[String] = js.native
   
-  def getAttributes(): Iterable[_] = js.native
+  def getAttributes(): Iterable[js.Any] = js.native
   
   def getCommonAncestor(node: Node): Element | DocumentFragment | Null = js.native
   def getCommonAncestor(node: Node, options: IncludeSelfBoolean): Element | DocumentFragment | Null = js.native

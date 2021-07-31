@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.rest.mod.Interceptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathPrefixMod extends Shortcut {
@@ -13,10 +12,9 @@ object pathPrefixMod extends Shortcut {
   @js.native
   val ^ : Interceptor[Config] = js.native
   
-  @js.native
   trait Config extends StObject {
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object Config {
     

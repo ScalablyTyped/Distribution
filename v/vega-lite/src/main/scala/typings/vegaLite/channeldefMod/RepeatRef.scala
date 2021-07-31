@@ -6,13 +6,11 @@ import typings.vegaLite.vegaLiteStrings.repeat
 import typings.vegaLite.vegaLiteStrings.row
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepeatRef extends StObject {
   
-  var repeat: row | column | typings.vegaLite.vegaLiteStrings.repeat | layer = js.native
+  var repeat: row | column | typings.vegaLite.vegaLiteStrings.repeat | layer
 }
 object RepeatRef {
   

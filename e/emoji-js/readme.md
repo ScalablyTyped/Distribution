@@ -11,8 +11,8 @@ A JS Emoji conversion library
 | Full name          | emoji-js |
 | Keywords           | emoji, emoticon, mobile, browser |
 | # releases         | 2 |
-| # dependents       | 74 |
-| # downloads        | 549452 |
+| # dependents       | 88 |
+| # downloads        | 660847 |
 | # stars            | 0 |
 
 ## Links

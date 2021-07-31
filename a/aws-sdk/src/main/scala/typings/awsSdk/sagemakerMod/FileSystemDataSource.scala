@@ -2,31 +2,29 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSystemDataSource extends StObject {
   
   /**
     * The full path to the directory to associate with the channel.
     */
-  var DirectoryPath: typings.awsSdk.sagemakerMod.DirectoryPath = js.native
+  var DirectoryPath: typings.awsSdk.sagemakerMod.DirectoryPath
   
   /**
     * The access mode of the mount of the directory associated with the channel. A directory can be mounted either in ro (read-only) or rw (read-write) mode.
     */
-  var FileSystemAccessMode: typings.awsSdk.sagemakerMod.FileSystemAccessMode = js.native
+  var FileSystemAccessMode: typings.awsSdk.sagemakerMod.FileSystemAccessMode
   
   /**
     * The file system id.
     */
-  var FileSystemId: typings.awsSdk.sagemakerMod.FileSystemId = js.native
+  var FileSystemId: typings.awsSdk.sagemakerMod.FileSystemId
   
   /**
     * The file system type. 
     */
-  var FileSystemType: typings.awsSdk.sagemakerMod.FileSystemType = js.native
+  var FileSystemType: typings.awsSdk.sagemakerMod.FileSystemType
 }
 object FileSystemDataSource {
   

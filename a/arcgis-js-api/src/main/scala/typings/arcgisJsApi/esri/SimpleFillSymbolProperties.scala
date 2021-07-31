@@ -10,11 +10,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.solid
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleFillSymbolProperties extends FillSymbolProperties {
+trait SimpleFillSymbolProperties
+  extends StObject
+     with FillSymbolProperties {
   
   /**
     * The fill style.
@@ -23,7 +23,7 @@ trait SimpleFillSymbolProperties extends FillSymbolProperties {
     */
   var style: js.UndefOr[
     `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none | solid | vertical
-  ] = js.native
+  ] = js.undefined
 }
 object SimpleFillSymbolProperties {
   

@@ -2,32 +2,30 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object was created.
   */
-@js.native
 trait SchemaCreate extends StObject {
   
   /**
     * If present, indicates the object was created by copying an existing Drive
     * object.
     */
-  var copy: js.UndefOr[SchemaCopy] = js.native
+  var copy: js.UndefOr[SchemaCopy] = js.undefined
   
   /**
     * If present, indicates the object was newly created (e.g. as a blank
     * document), not derived from a Drive object or external object.
     */
-  var `new`: js.UndefOr[SchemaNew] = js.native
+  var `new`: js.UndefOr[SchemaNew] = js.undefined
   
   /**
     * If present, indicates the object originated externally and was uploaded
     * to Drive.
     */
-  var upload: js.UndefOr[SchemaUpload] = js.native
+  var upload: js.UndefOr[SchemaUpload] = js.undefined
 }
 object SchemaCreate {
   

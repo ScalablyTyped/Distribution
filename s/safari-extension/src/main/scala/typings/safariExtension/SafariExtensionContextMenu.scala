@@ -2,7 +2,6 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,7 +22,7 @@ trait SafariExtensionContextMenu extends StObject {
     * Returns a list of the context menu items from this extension.
     * Only menu items from your extension are returned.
     */
-  var contextMenuItems: js.Array[_] = js.native
+  var contextMenuItems: js.Array[js.Any] = js.native
   
   /**
     * Inserts a menu item at a specific index in the contextual menu.

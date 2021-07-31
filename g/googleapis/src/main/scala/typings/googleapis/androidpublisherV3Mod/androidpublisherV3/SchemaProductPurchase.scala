@@ -2,50 +2,48 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A ProductPurchase resource indicates the status of a user&#39;s inapp
   * product purchase.
   */
-@js.native
 trait SchemaProductPurchase extends StObject {
   
   /**
     * The consumption state of the inapp product. Possible values are:   - Yet
     * to be consumed  - Consumed
     */
-  var consumptionState: js.UndefOr[Double] = js.native
+  var consumptionState: js.UndefOr[Double] = js.undefined
   
   /**
     * A developer-specified string that contains supplemental information about
     * an order.
     */
-  var developerPayload: js.UndefOr[String] = js.native
+  var developerPayload: js.UndefOr[String] = js.undefined
   
   /**
     * This kind represents an inappPurchase object in the androidpublisher
     * service.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The order id associated with the purchase of the inapp product.
     */
-  var orderId: js.UndefOr[String] = js.native
+  var orderId: js.UndefOr[String] = js.undefined
   
   /**
     * The purchase state of the order. Possible values are:   - Purchased  -
     * Canceled
     */
-  var purchaseState: js.UndefOr[Double] = js.native
+  var purchaseState: js.UndefOr[Double] = js.undefined
   
   /**
     * The time the product was purchased, in milliseconds since the epoch (Jan
     * 1, 1970).
     */
-  var purchaseTimeMillis: js.UndefOr[String] = js.native
+  var purchaseTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The type of purchase of the inapp product. This field is only set if this
@@ -54,7 +52,7 @@ trait SchemaProductPurchase extends StObject {
     * Promo (i.e. purchased using a promo code)  - Rewarded (i.e. from watching
     * a video ad instead of paying)
     */
-  var purchaseType: js.UndefOr[Double] = js.native
+  var purchaseType: js.UndefOr[Double] = js.undefined
 }
 object SchemaProductPurchase {
   

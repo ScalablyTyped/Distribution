@@ -2,21 +2,19 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeFabricAttributes extends StObject {
   
   /**
     * The endpoint that identifies the peer node for all services except peer channel-based event services.
     */
-  var PeerEndpoint: js.UndefOr[String] = js.native
+  var PeerEndpoint: js.UndefOr[String] = js.undefined
   
   /**
     * The endpoint that identifies the peer node for peer channel-based event services.
     */
-  var PeerEventEndpoint: js.UndefOr[String] = js.native
+  var PeerEventEndpoint: js.UndefOr[String] = js.undefined
 }
 object NodeFabricAttributes {
   

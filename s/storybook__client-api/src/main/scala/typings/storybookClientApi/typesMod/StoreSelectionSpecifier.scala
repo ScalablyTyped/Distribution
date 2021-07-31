@@ -3,15 +3,13 @@ package typings.storybookClientApi.typesMod
 import typings.storybookAddons.typesMod.ViewMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoreSelectionSpecifier extends StObject {
   
-  var storySpecifier: StorySpecifier = js.native
+  var storySpecifier: StorySpecifier
   
-  var viewMode: ViewMode = js.native
+  var viewMode: ViewMode
 }
 object StoreSelectionSpecifier {
   

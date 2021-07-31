@@ -2,25 +2,23 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait APIResponseErrorError extends StObject {
   
-  var details: js.UndefOr[js.Array[APIResponseErrorDetails]] = js.native
+  var details: js.UndefOr[js.Array[APIResponseErrorDetails]] = js.undefined
   
-  var link: String | Null = js.native
+  var link: String | Null
   
-  var message: String = js.native
+  var message: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object APIResponseErrorError {
   
   @scala.inline
   def apply(message: String, `type`: String): APIResponseErrorError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], link = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIResponseErrorError]
   }

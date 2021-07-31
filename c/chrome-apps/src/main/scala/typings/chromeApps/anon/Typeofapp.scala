@@ -3,10 +3,8 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.app.ChromeAppWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofapp extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Typeofapp extends StObject {
     * @internal
     * @private
     */
-  val _State: FULLSCREEN = js.native
+  val _State: FULLSCREEN
   
   // #endregion
   // #region chrome.app.*
@@ -28,9 +26,9 @@ trait Typeofapp extends StObject {
     * The app runtime manages app installation, controls the event page,
     * and can shut down the app at anytime.
     */
-  val runtime: Typeofruntime = js.native
+  val runtime: Typeofruntime
   
-  val window: ChromeAppWindow = js.native
+  val window: ChromeAppWindow
 }
 object Typeofapp {
   

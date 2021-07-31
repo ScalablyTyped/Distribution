@@ -4,11 +4,12 @@ import typings.ariClient.anon.FormatLang
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sound extends Resource {
+trait Sound
+  extends StObject
+     with Resource {
   
   /**
     * The formats and languages in which this sound is available.

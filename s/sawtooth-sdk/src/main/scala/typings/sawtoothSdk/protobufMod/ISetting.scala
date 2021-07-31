@@ -3,14 +3,12 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.Setting.IEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISetting extends StObject {
   
   /** Setting entries */
-  var entries: js.UndefOr[js.Array[IEntry] | Null] = js.native
+  var entries: js.UndefOr[js.Array[IEntry] | Null] = js.undefined
 }
 object ISetting {
   

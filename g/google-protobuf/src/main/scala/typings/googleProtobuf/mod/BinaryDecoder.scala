@@ -3,16 +3,18 @@ package typings.googleProtobuf.mod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf", "BinaryDecoder")
 @js.native
 class BinaryDecoder () extends StObject {
   def this(bytes: ByteSource) = this()
-  def this(bytes: js.UndefOr[ByteSource], start: Double) = this()
-  def this(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double) = this()
-  def this(bytes: js.UndefOr[ByteSource], start: Double, length: Double) = this()
+  def this(bytes: Unit, start: Double) = this()
+  def this(bytes: ByteSource, start: Double) = this()
+  def this(bytes: Unit, start: Double, length: Double) = this()
+  def this(bytes: Unit, start: Unit, length: Double) = this()
+  def this(bytes: ByteSource, start: Double, length: Double) = this()
+  def this(bytes: ByteSource, start: Unit, length: Double) = this()
   
   def advance(count: Double): Unit = js.native
   
@@ -95,9 +97,9 @@ class BinaryDecoder () extends StObject {
   def reset(): Unit = js.native
   
   def setBlock(data: ByteSource): Unit = js.native
-  def setBlock(data: ByteSource, start: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
   def setBlock(data: ByteSource, start: Double): Unit = js.native
   def setBlock(data: ByteSource, start: Double, length: Double): Unit = js.native
+  def setBlock(data: ByteSource, start: Unit, length: Double): Unit = js.native
   
   def setCursor(cursor: Double): Unit = js.native
   
@@ -110,19 +112,24 @@ class BinaryDecoder () extends StObject {
 /* static members */
 object BinaryDecoder {
   
-  @JSImport("google-protobuf", "BinaryDecoder.alloc")
+  @JSImport("google-protobuf", "BinaryDecoder")
   @js.native
-  def alloc(): BinaryDecoder = js.native
-  @JSImport("google-protobuf", "BinaryDecoder.alloc")
-  @js.native
-  def alloc(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double): BinaryDecoder = js.native
-  @JSImport("google-protobuf", "BinaryDecoder.alloc")
-  @js.native
-  def alloc(bytes: js.UndefOr[ByteSource], start: Double): BinaryDecoder = js.native
-  @JSImport("google-protobuf", "BinaryDecoder.alloc")
-  @js.native
-  def alloc(bytes: js.UndefOr[ByteSource], start: Double, length: Double): BinaryDecoder = js.native
-  @JSImport("google-protobuf", "BinaryDecoder.alloc")
-  @js.native
-  def alloc(bytes: ByteSource): BinaryDecoder = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def alloc(): BinaryDecoder = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")().asInstanceOf[BinaryDecoder]
+  @scala.inline
+  def alloc(bytes: Unit, start: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
+  @scala.inline
+  def alloc(bytes: Unit, start: Double, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
+  @scala.inline
+  def alloc(bytes: Unit, start: Unit, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
+  @scala.inline
+  def alloc(bytes: ByteSource): BinaryDecoder = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any]).asInstanceOf[BinaryDecoder]
+  @scala.inline
+  def alloc(bytes: ByteSource, start: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
+  @scala.inline
+  def alloc(bytes: ByteSource, start: Double, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
+  @scala.inline
+  def alloc(bytes: ByteSource, start: Unit, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
 }

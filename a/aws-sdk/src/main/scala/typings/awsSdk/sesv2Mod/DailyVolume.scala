@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DailyVolume extends StObject {
   
   /**
     * An object that contains inbox placement metrics for a specified day in the analysis period, broken out by the recipient's email provider.
     */
-  var DomainIspPlacements: js.UndefOr[typings.awsSdk.sesv2Mod.DomainIspPlacements] = js.native
+  var DomainIspPlacements: js.UndefOr[typings.awsSdk.sesv2Mod.DomainIspPlacements] = js.undefined
   
   /**
     * The date that the DailyVolume metrics apply to, in Unix time.
     */
-  var StartDate: js.UndefOr[Timestamp] = js.native
+  var StartDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * An object that contains inbox placement metrics for a specific day in the analysis period.
     */
-  var VolumeStatistics: js.UndefOr[typings.awsSdk.sesv2Mod.VolumeStatistics] = js.native
+  var VolumeStatistics: js.UndefOr[typings.awsSdk.sesv2Mod.VolumeStatistics] = js.undefined
 }
 object DailyVolume {
   

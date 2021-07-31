@@ -2,46 +2,44 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchComplianceData extends StObject {
   
   /**
     * The IDs of one or more Common Vulnerabilities and Exposure (CVE) issues that are resolved by the patch.
     */
-  var CVEIds: js.UndefOr[PatchCVEIds] = js.native
+  var CVEIds: js.UndefOr[PatchCVEIds] = js.undefined
   
   /**
     * The classification of the patch (for example, SecurityUpdates, Updates, CriticalUpdates).
     */
-  var Classification: PatchClassification = js.native
+  var Classification: PatchClassification
   
   /**
     * The date/time the patch was installed on the instance. Note that not all operating systems provide this level of information.
     */
-  var InstalledTime: DateTime = js.native
+  var InstalledTime: DateTime
   
   /**
     * The operating system-specific ID of the patch.
     */
-  var KBId: PatchKbNumber = js.native
+  var KBId: PatchKbNumber
   
   /**
     * The severity of the patch (for example, Critical, Important, Moderate).
     */
-  var Severity: PatchSeverity = js.native
+  var Severity: PatchSeverity
   
   /**
     * The state of the patch on the instance, such as INSTALLED or FAILED. For descriptions of each patch state, see About patch compliance in the AWS Systems Manager User Guide.
     */
-  var State: PatchComplianceDataState = js.native
+  var State: PatchComplianceDataState
   
   /**
     * The title of the patch.
     */
-  var Title: PatchTitle = js.native
+  var Title: PatchTitle
 }
 object PatchComplianceData {
   

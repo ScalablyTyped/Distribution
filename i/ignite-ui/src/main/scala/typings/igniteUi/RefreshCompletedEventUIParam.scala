@@ -2,16 +2,14 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefreshCompletedEventUIParam extends StObject {
   
   /**
     * Used to get reference to chart object.
     */
-  var chart: js.UndefOr[js.Any] = js.native
+  var chart: js.UndefOr[js.Any] = js.undefined
 }
 object RefreshCompletedEventUIParam {
   

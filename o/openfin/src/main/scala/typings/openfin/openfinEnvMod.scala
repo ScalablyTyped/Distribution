@@ -7,27 +7,66 @@ import typings.openfin.wireMod.NewConnectConfig
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object openfinEnvMod {
   
   @JSImport("openfin/_v2/environment/openfin-env", JSImport.Default)
   @js.native
-  class default () extends OpenFinEnvironment
-  
-  @js.native
-  trait OpenFinEnvironment extends Environment {
+  class default ()
+    extends StObject
+       with OpenFinEnvironment {
     
+    /* CompleteClass */
+    override def createChildWindow(options: js.Any): js.Promise[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def getCurrentEntityIdentity(): Identity = js.native
+    
+    /* CompleteClass */
+    override def getCurrentEntityType(): EntityType = js.native
+    
+    /* CompleteClass */
+    override def getNextMessageId(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def getRandomId(): String = js.native
+    
+    /* CompleteClass */
+    override def getWebWindow(identity: Identity): Window = js.native
+    
+    /* CompleteClass */
+    override def isWindowExists(uuid: String, name: String): Boolean = js.native
+    
+    /* CompleteClass */
+    override def raiseEvent(eventName: String, eventArgs: js.Any): Unit = js.native
+    
+    /* CompleteClass */
     var raiseEventAsync: js.Any = js.native
     
+    /* CompleteClass */
     var resolveUrl: js.Any = js.native
+    
+    /* CompleteClass */
+    override def retrievePort(config: NewConnectConfig): js.Promise[Double] = js.native
+    
+    /* CompleteClass */
+    override def writeToken(path: String, token: String): js.Promise[String] = js.native
+  }
+  
+  trait OpenFinEnvironment
+    extends StObject
+       with Environment {
+    
+    var raiseEventAsync: js.Any
+    
+    var resolveUrl: js.Any
   }
   object OpenFinEnvironment {
     
     @scala.inline
     def apply(
-      createChildWindow: js.Any => js.Promise[_],
+      createChildWindow: js.Any => js.Promise[js.Any],
       getCurrentEntityIdentity: () => Identity,
       getCurrentEntityType: () => EntityType,
       getNextMessageId: () => js.Any,

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceRestriction extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait DataSourceRestriction extends StObject {
     * then the resulting expressions are joined disjunctively. The maximum number of elements is 20. NOTE: Suggest API supports only few filters at the moment: "objecttype", "type" and
     * "mimetype". For now, schema specific filters cannot be used to filter suggestions.
     */
-  var filterOptions: js.UndefOr[js.Array[FilterOptions]] = js.native
+  var filterOptions: js.UndefOr[js.Array[FilterOptions]] = js.undefined
   
   /** The source of restriction. */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
 }
 object DataSourceRestriction {
   

@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficMirrorFilterRuleDestinationPortRange extends StObject {
   
   /**
     * Starting port of the range
     */
-  var fromPort: js.UndefOr[Double] = js.native
+  var fromPort: js.UndefOr[Double] = js.undefined
   
   /**
     * Ending port of the range
     */
-  var toPort: js.UndefOr[Double] = js.native
+  var toPort: js.UndefOr[Double] = js.undefined
 }
 object TrafficMirrorFilterRuleDestinationPortRange {
   

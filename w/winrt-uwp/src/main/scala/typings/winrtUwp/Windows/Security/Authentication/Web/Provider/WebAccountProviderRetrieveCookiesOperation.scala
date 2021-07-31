@@ -6,36 +6,34 @@ import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderErro
 import typings.winrtUwp.Windows.Web.Http.HttpCookie
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a retrieve cookies operation made by a web account provider. */
-@js.native
 trait WebAccountProviderRetrieveCookiesOperation extends StObject {
   
   /** Gets the app callback Uri. */
-  var applicationCallbackUri: Uri = js.native
+  var applicationCallbackUri: Uri
   
   /** Gets the context of the retrieve cookies operation. */
-  var context: Uri = js.native
+  var context: Uri
   
   /** Gets the cookies. */
-  var cookies: IVector[HttpCookie] = js.native
+  var cookies: IVector[HttpCookie]
   
   /** Gets the kind of web account provider operation. */
-  var kind: WebAccountProviderOperationKind = js.native
+  var kind: WebAccountProviderOperationKind
   
   /** Informs the activating app that the operation completed successfully. */
-  def reportCompleted(): Unit = js.native
+  def reportCompleted(): Unit
   
   /**
     * Informs the activating app that the operation encountered an error.
     * @param value The type of error encountered.
     */
-  def reportError(value: WebProviderError): Unit = js.native
+  def reportError(value: WebProviderError): Unit
   
   /** Gets or sets the Uri to retrieve cookies from. */
-  var uri: Uri = js.native
+  var uri: Uri
 }
 object WebAccountProviderRetrieveCookiesOperation {
   

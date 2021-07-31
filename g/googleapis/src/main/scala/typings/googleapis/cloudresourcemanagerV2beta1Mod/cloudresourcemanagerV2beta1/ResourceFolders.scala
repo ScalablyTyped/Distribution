@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudresourcemanager/v2beta1", "cloudresourcemanager_v2beta1.Resource$Folders")
@@ -48,7 +47,7 @@ class ResourceFolders protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceFoldersCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceFoldersCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
@@ -82,7 +81,7 @@ class ResourceFolders protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaFolder] = js.native
   def delete(callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
   def delete(params: ParamsResourceFoldersDelete): GaxiosPromise[SchemaFolder] = js.native
   def delete(params: ParamsResourceFoldersDelete, callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
   def delete(
@@ -114,7 +113,7 @@ class ResourceFolders protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaFolder] = js.native
   def get(callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
   def get(params: ParamsResourceFoldersGet): GaxiosPromise[SchemaFolder] = js.native
   def get(params: ParamsResourceFoldersGet, callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
   def get(
@@ -148,7 +147,7 @@ class ResourceFolders protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceFoldersGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceFoldersGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -185,7 +184,7 @@ class ResourceFolders protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListFoldersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFoldersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFoldersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListFoldersResponse] = js.native
   def list(params: ParamsResourceFoldersList): GaxiosPromise[SchemaListFoldersResponse] = js.native
   def list(params: ParamsResourceFoldersList, callback: BodyResponseCallback[SchemaListFoldersResponse]): Unit = js.native
   def list(
@@ -227,7 +226,7 @@ class ResourceFolders protected () extends StObject {
     */
   def move(): GaxiosPromise[SchemaOperation] = js.native
   def move(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def move(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def move(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def move(params: ParamsResourceFoldersMove): GaxiosPromise[SchemaOperation] = js.native
   def move(params: ParamsResourceFoldersMove, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def move(
@@ -268,7 +267,7 @@ class ResourceFolders protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaFolder] = js.native
   def patch(callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
   def patch(params: ParamsResourceFoldersPatch): GaxiosPromise[SchemaFolder] = js.native
   def patch(params: ParamsResourceFoldersPatch, callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
   def patch(
@@ -301,7 +300,7 @@ class ResourceFolders protected () extends StObject {
     */
   def search(): GaxiosPromise[SchemaSearchFoldersResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchFoldersResponse]): Unit = js.native
-  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchFoldersResponse] = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSearchFoldersResponse] = js.native
   def search(params: ParamsResourceFoldersSearch): GaxiosPromise[SchemaSearchFoldersResponse] = js.native
   def search(params: ParamsResourceFoldersSearch, callback: BodyResponseCallback[SchemaSearchFoldersResponse]): Unit = js.native
   def search(
@@ -335,7 +334,7 @@ class ResourceFolders protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceFoldersSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceFoldersSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -368,7 +367,7 @@ class ResourceFolders protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceFoldersTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceFoldersTestiampermissions,
@@ -407,7 +406,7 @@ class ResourceFolders protected () extends StObject {
     */
   def undelete(): GaxiosPromise[SchemaFolder] = js.native
   def undelete(callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
-  def undelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
+  def undelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
   def undelete(params: ParamsResourceFoldersUndelete): GaxiosPromise[SchemaFolder] = js.native
   def undelete(params: ParamsResourceFoldersUndelete, callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
   def undelete(

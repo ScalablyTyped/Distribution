@@ -2,7 +2,6 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,9 +25,9 @@ trait CEventObj extends StObject {
   var bookmarks_Original: IHTMLBookmarkCollection = js.native
   
   def boundElements(): js.Any = js.native
-  def boundElements(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def boundElements(name: js.Any): js.Any = js.native
   def boundElements(name: js.Any, index: js.Any): js.Any = js.native
+  def boundElements(name: Unit, index: js.Any): js.Any = js.native
   @JSName("boundElements")
   var boundElements_Original: IHTMLElementCollection = js.native
   

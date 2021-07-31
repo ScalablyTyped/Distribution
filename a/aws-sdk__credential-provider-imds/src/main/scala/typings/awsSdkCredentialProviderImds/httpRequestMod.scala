@@ -4,12 +4,14 @@ import typings.node.Buffer
 import typings.node.httpMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpRequestMod {
   
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/httpRequest", "httpRequest")
+  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/httpRequest", JSImport.Namespace)
   @js.native
-  def httpRequest(options: RequestOptions): js.Promise[Buffer] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def httpRequest(options: RequestOptions): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
 }

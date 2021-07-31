@@ -2,51 +2,49 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateThemeRequest extends StObject {
   
   /**
     * The ID of the AWS account where you want to store the new theme. 
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID of the theme that a custom theme will inherit from. All themes inherit from one of the starting themes defined by Amazon QuickSight. For a list of the starting themes, use ListThemes or choose Themes from within a QuickSight analysis. 
     */
-  var BaseThemeId: RestrictiveResourceId = js.native
+  var BaseThemeId: RestrictiveResourceId
   
   /**
     * The theme configuration, which contains the theme display properties.
     */
-  var Configuration: ThemeConfiguration = js.native
+  var Configuration: ThemeConfiguration
   
   /**
     * A display name for the theme.
     */
-  var Name: ThemeName = js.native
+  var Name: ThemeName
   
   /**
     * A valid grouping of resource permissions to apply to the new theme. 
     */
-  var Permissions: js.UndefOr[ResourcePermissionList] = js.native
+  var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
     * A map of the key-value pairs for the resource tag or tags that you want to add to the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * An ID for the theme that you want to create. The theme ID is unique per AWS Region in each AWS account.
     */
-  var ThemeId: RestrictiveResourceId = js.native
+  var ThemeId: RestrictiveResourceId
   
   /**
     * A description of the first version of the theme that you're creating. Every time UpdateTheme is called, a new version is created. Each version of the theme has a description of the version in the VersionDescription field.
     */
-  var VersionDescription: js.UndefOr[typings.awsSdk.quicksightMod.VersionDescription] = js.native
+  var VersionDescription: js.UndefOr[typings.awsSdk.quicksightMod.VersionDescription] = js.undefined
 }
 object CreateThemeRequest {
   

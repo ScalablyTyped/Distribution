@@ -2,24 +2,22 @@ package typings.reactBootstrapTypeahead.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadProps<any>, 'align' | 'dropup' | 'flip' | 'onMenuHide' | 'onMenuShow' | 'onMenuToggle'> */
-@js.native
 trait OverlayTypeaheadProps extends StObject {
   
-  var align: js.UndefOr[TypeaheadAlign] = js.native
+  var align: js.UndefOr[TypeaheadAlign] = js.undefined
   
-  var dropup: js.UndefOr[Boolean] = js.native
+  var dropup: js.UndefOr[Boolean] = js.undefined
   
-  var flip: js.UndefOr[Boolean] = js.native
+  var flip: js.UndefOr[Boolean] = js.undefined
   
-  var onMenuHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMenuHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onMenuShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMenuShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onMenuToggle: js.UndefOr[js.Function1[/* show */ Boolean, Unit]] = js.native
+  var onMenuToggle: js.UndefOr[js.Function1[/* show */ Boolean, Unit]] = js.undefined
 }
 object OverlayTypeaheadProps {
   

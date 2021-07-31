@@ -24,10 +24,8 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`8`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ACCESSIBILITYFOCUSZOOM extends StObject {
   
   /**
@@ -36,7 +34,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long OFF = 0;
     * unsigned long ON = 1;
     */
-  var ACCESSIBILITY_FOCUS_ZOOM: `12` = js.native
+  var ACCESSIBILITY_FOCUS_ZOOM: `12`
   
   /**
     * High Contrast menu value
@@ -44,7 +42,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long OFF = 0;
     * unsigned long ON = 1;
     */
-  var ACCESSIBILITY_HIGH_CONTRAST: `13` = js.native
+  var ACCESSIBILITY_HIGH_CONTRAST: `13`
   
   /**
     * voice guide speed
@@ -55,7 +53,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * DOMString VOICEGUIDE_SPEED_SLOW = "SLOW";
     * DOMString VOICEGUIDE_SPEED_VERY_SLOW  = "VERY_SLOW";
     */
-  var ACCESSIBILITY_VOICE_GUIDE_SPEED: `20` = js.native
+  var ACCESSIBILITY_VOICE_GUIDE_SPEED: `20`
   
   /**
     * Caption text background color
@@ -70,7 +68,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_COLOR_MAGENTA = 7;
     * unsigned long CAPTION_COLOR_CYAN = 8;
     */
-  var CAPTION_BG_COLOR_KEY: `6` = js.native
+  var CAPTION_BG_COLOR_KEY: `6`
   
   /**
     * Caption text background opacity
@@ -83,7 +81,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_OPACITY_HIGHLY_TRANSLUCENT = 5;
     * unsigned long CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT = 6;
     */
-  var CAPTION_BG_OPACITY_KEY: `7` = js.native
+  var CAPTION_BG_OPACITY_KEY: `7`
   
   /**
     * Caption text edge color
@@ -98,7 +96,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_COLOR_MAGENTA = 7;
     * unsigned long CAPTION_COLOR_CYAN = 8;
     */
-  var CAPTION_EDGE_COLOR_KEY: `9` = js.native
+  var CAPTION_EDGE_COLOR_KEY: `9`
   
   /**
     * Caption text edge type
@@ -109,7 +107,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_EDGE_UNIFORM = 3;
     * unsigned long CAPTION_EDGE_DROP_SHADOWED = 4;
     */
-  var CAPTION_EDGE_TYPE_KEY: `8` = js.native
+  var CAPTION_EDGE_TYPE_KEY: `8`
   
   /**
     * Caption text foreground color
@@ -124,7 +122,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_COLOR_MAGENTA = 7;
     * unsigned long CAPTION_COLOR_CYAN = 8;
     */
-  var CAPTION_FG_COLOR_KEY: `4` = js.native
+  var CAPTION_FG_COLOR_KEY: `4`
   
   /**
     * Caption text foreground opacity
@@ -137,7 +135,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_OPACITY_HIGHLY_TRANSLUCENT = 5;
     * unsigned long CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT = 6;
     */
-  var CAPTION_FG_OPACITY_KEY: `5` = js.native
+  var CAPTION_FG_OPACITY_KEY: `5`
   
   /**
     * expected value TvInfoMenuValue
@@ -147,7 +145,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_SIZE_LARGE = 3;
     * unsigned long CAPTION_SIZE_EXTRA_LARGE = 4;
     */
-  var CAPTION_FONT_SIZE_KEY: `2` = js.native
+  var CAPTION_FONT_SIZE_KEY: `2`
   
   /**
     * Caption font style. Default: Style 6
@@ -161,7 +159,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_FONT_STYLE5 = 6;
     * unsigned long CAPTION_FONT_STYLE6 = 7;
     */
-  var CAPTION_FONT_STYLE_KEY: `3` = js.native
+  var CAPTION_FONT_STYLE_KEY: `3`
   
   /**
     * Caption mode. Default: Service 6
@@ -182,7 +180,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_MODE_TEXT3 = 13;
     * unsigned long CAPTION_MODE_TEXT4 = 14;
     */
-  var CAPTION_MODE_KEY: `1` = js.native
+  var CAPTION_MODE_KEY: `1`
   
   /**
     * Caption On/Off
@@ -190,7 +188,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_OFF = 0;
     * unsigned long CAPTION_ON = 1;
     */
-  var CAPTION_ONOFF_KEY: `0` = js.native
+  var CAPTION_ONOFF_KEY: `0`
   
   /**
     * caption style
@@ -199,7 +197,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_STYLE_BOLD = 1;
     * unsigned long CAPTION_STYLE_ITALIC = 2;
     */
-  var CAPTION_STYLE_KEY: `21` = js.native
+  var CAPTION_STYLE_KEY: `21`
   
   /**
     * Caption text window color
@@ -214,7 +212,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_COLOR_MAGENTA = 7;
     * unsigned long CAPTION_COLOR_CYAN = 8;
     */
-  var CAPTION_WINDOW_COLOR_KEY: `10` = js.native
+  var CAPTION_WINDOW_COLOR_KEY: `10`
   
   /**
     * Caption text window opacity
@@ -227,7 +225,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_OPACITY_HIGHLY_TRANSLUCENT = 5;
     * unsigned long CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT = 6;
     */
-  var CAPTION_WINDOW_OPACITY_KEY: `11` = js.native
+  var CAPTION_WINDOW_OPACITY_KEY: `11`
   
   /**
     * Primary Audio Language
@@ -319,7 +317,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * DOMString AUDIO_LANGUAGE_CODE_ZUL = "ZUL";
     * Only the values that can be set in the menu can be set to webapi
     */
-  var PRIMARY_AUDIO_LANGUAGE_KEY: `18` = js.native
+  var PRIMARY_AUDIO_LANGUAGE_KEY: `18`
   
   /**
     * Secondary Audio Language
@@ -411,7 +409,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * DOMString AUDIO_LANGUAGE_CODE_ZUL = "ZUL";
     * Only the values that can be set in the menu can be set to webapi
     */
-  var SECONDARY_AUDIO_LANGUAGE_KEY: `19` = js.native
+  var SECONDARY_AUDIO_LANGUAGE_KEY: `19`
   
   /**
     * Channel-bound apps ticker menu value
@@ -420,7 +418,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * @since 2.3
     * @note `deprecated` 3.0
     */
-  var SMARTHUB_CHANNEL_BOUND_APPS_TICKER: `14` = js.native
+  var SMARTHUB_CHANNEL_BOUND_APPS_TICKER: `14`
   
   /**
     * Subtitle mode
@@ -428,7 +426,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long SUBTITLE_NORMAL = 0;
     * unsigned long SUBTITLE_HEARING_IMMPEARED = 1;
     */
-  var SUBTITLE_MODE_KEY: `17` = js.native
+  var SUBTITLE_MODE_KEY: `17`
   
   /**
     * Subtitles On/Off
@@ -436,7 +434,7 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long OFF = 0;
     * unsigned long ON = 1;
     */
-  var SUBTITLE_ONOFF_KEY: `16` = js.native
+  var SUBTITLE_ONOFF_KEY: `16`
   
   /**
     * Voice guide menu value
@@ -444,36 +442,13 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long OFF = 0;
     * unsigned long ON = 1;
     */
-  var VOICE_GUIDE_KEY: `15` = js.native
+  var VOICE_GUIDE_KEY: `15`
 }
 object ACCESSIBILITYFOCUSZOOM {
   
   @scala.inline
-  def apply(
-    ACCESSIBILITY_FOCUS_ZOOM: `12`,
-    ACCESSIBILITY_HIGH_CONTRAST: `13`,
-    ACCESSIBILITY_VOICE_GUIDE_SPEED: `20`,
-    CAPTION_BG_COLOR_KEY: `6`,
-    CAPTION_BG_OPACITY_KEY: `7`,
-    CAPTION_EDGE_COLOR_KEY: `9`,
-    CAPTION_EDGE_TYPE_KEY: `8`,
-    CAPTION_FG_COLOR_KEY: `4`,
-    CAPTION_FG_OPACITY_KEY: `5`,
-    CAPTION_FONT_SIZE_KEY: `2`,
-    CAPTION_FONT_STYLE_KEY: `3`,
-    CAPTION_MODE_KEY: `1`,
-    CAPTION_ONOFF_KEY: `0`,
-    CAPTION_STYLE_KEY: `21`,
-    CAPTION_WINDOW_COLOR_KEY: `10`,
-    CAPTION_WINDOW_OPACITY_KEY: `11`,
-    PRIMARY_AUDIO_LANGUAGE_KEY: `18`,
-    SECONDARY_AUDIO_LANGUAGE_KEY: `19`,
-    SMARTHUB_CHANNEL_BOUND_APPS_TICKER: `14`,
-    SUBTITLE_MODE_KEY: `17`,
-    SUBTITLE_ONOFF_KEY: `16`,
-    VOICE_GUIDE_KEY: `15`
-  ): ACCESSIBILITYFOCUSZOOM = {
-    val __obj = js.Dynamic.literal(ACCESSIBILITY_FOCUS_ZOOM = ACCESSIBILITY_FOCUS_ZOOM.asInstanceOf[js.Any], ACCESSIBILITY_HIGH_CONTRAST = ACCESSIBILITY_HIGH_CONTRAST.asInstanceOf[js.Any], ACCESSIBILITY_VOICE_GUIDE_SPEED = ACCESSIBILITY_VOICE_GUIDE_SPEED.asInstanceOf[js.Any], CAPTION_BG_COLOR_KEY = CAPTION_BG_COLOR_KEY.asInstanceOf[js.Any], CAPTION_BG_OPACITY_KEY = CAPTION_BG_OPACITY_KEY.asInstanceOf[js.Any], CAPTION_EDGE_COLOR_KEY = CAPTION_EDGE_COLOR_KEY.asInstanceOf[js.Any], CAPTION_EDGE_TYPE_KEY = CAPTION_EDGE_TYPE_KEY.asInstanceOf[js.Any], CAPTION_FG_COLOR_KEY = CAPTION_FG_COLOR_KEY.asInstanceOf[js.Any], CAPTION_FG_OPACITY_KEY = CAPTION_FG_OPACITY_KEY.asInstanceOf[js.Any], CAPTION_FONT_SIZE_KEY = CAPTION_FONT_SIZE_KEY.asInstanceOf[js.Any], CAPTION_FONT_STYLE_KEY = CAPTION_FONT_STYLE_KEY.asInstanceOf[js.Any], CAPTION_MODE_KEY = CAPTION_MODE_KEY.asInstanceOf[js.Any], CAPTION_ONOFF_KEY = CAPTION_ONOFF_KEY.asInstanceOf[js.Any], CAPTION_STYLE_KEY = CAPTION_STYLE_KEY.asInstanceOf[js.Any], CAPTION_WINDOW_COLOR_KEY = CAPTION_WINDOW_COLOR_KEY.asInstanceOf[js.Any], CAPTION_WINDOW_OPACITY_KEY = CAPTION_WINDOW_OPACITY_KEY.asInstanceOf[js.Any], PRIMARY_AUDIO_LANGUAGE_KEY = PRIMARY_AUDIO_LANGUAGE_KEY.asInstanceOf[js.Any], SECONDARY_AUDIO_LANGUAGE_KEY = SECONDARY_AUDIO_LANGUAGE_KEY.asInstanceOf[js.Any], SMARTHUB_CHANNEL_BOUND_APPS_TICKER = SMARTHUB_CHANNEL_BOUND_APPS_TICKER.asInstanceOf[js.Any], SUBTITLE_MODE_KEY = SUBTITLE_MODE_KEY.asInstanceOf[js.Any], SUBTITLE_ONOFF_KEY = SUBTITLE_ONOFF_KEY.asInstanceOf[js.Any], VOICE_GUIDE_KEY = VOICE_GUIDE_KEY.asInstanceOf[js.Any])
+  def apply(): ACCESSIBILITYFOCUSZOOM = {
+    val __obj = js.Dynamic.literal(ACCESSIBILITY_FOCUS_ZOOM = 12, ACCESSIBILITY_HIGH_CONTRAST = 13, ACCESSIBILITY_VOICE_GUIDE_SPEED = 20, CAPTION_BG_COLOR_KEY = 6, CAPTION_BG_OPACITY_KEY = 7, CAPTION_EDGE_COLOR_KEY = 9, CAPTION_EDGE_TYPE_KEY = 8, CAPTION_FG_COLOR_KEY = 4, CAPTION_FG_OPACITY_KEY = 5, CAPTION_FONT_SIZE_KEY = 2, CAPTION_FONT_STYLE_KEY = 3, CAPTION_MODE_KEY = 1, CAPTION_ONOFF_KEY = 0, CAPTION_STYLE_KEY = 21, CAPTION_WINDOW_COLOR_KEY = 10, CAPTION_WINDOW_OPACITY_KEY = 11, PRIMARY_AUDIO_LANGUAGE_KEY = 18, SECONDARY_AUDIO_LANGUAGE_KEY = 19, SMARTHUB_CHANNEL_BOUND_APPS_TICKER = 14, SUBTITLE_MODE_KEY = 17, SUBTITLE_ONOFF_KEY = 16, VOICE_GUIDE_KEY = 15)
     __obj.asInstanceOf[ACCESSIBILITYFOCUSZOOM]
   }
   

@@ -2,16 +2,16 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents schema for a DateTime field in list form or in list view in grid mode */
-@js.native
-trait FieldSchemaInFormGeolocation extends FieldSchemaInForm {
+trait FieldSchemaInFormGeolocation
+  extends StObject
+     with FieldSchemaInForm {
   
-  var BingMapsKey: String = js.native
+  var BingMapsKey: String
   
-  var IsBingMapBlockedInCurrentRegion: Boolean = js.native
+  var IsBingMapBlockedInCurrentRegion: Boolean
 }
 object FieldSchemaInFormGeolocation {
   

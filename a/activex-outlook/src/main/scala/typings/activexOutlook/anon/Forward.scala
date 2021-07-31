@@ -2,15 +2,13 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Forward extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val Forward: js.Any = js.native
+  val Forward: js.Any
 }
 object Forward {
   

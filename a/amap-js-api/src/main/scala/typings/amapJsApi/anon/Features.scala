@@ -4,19 +4,19 @@ import typings.amapJsApi.AMap.GeoJSON.GeoJSONObject
 import typings.amapJsApi.amapJsApiStrings.FeatureCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Features extends GeoJSONObject {
+trait Features
+  extends StObject
+     with GeoJSONObject {
   
   var features: js.Array[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.GeoJSONObject */ js.Object
-  ] = js.native
+  ]
   
-  var properties: js.Any = js.native
+  var properties: js.Any
   
-  var `type`: FeatureCollection = js.native
+  var `type`: FeatureCollection
 }
 object Features {
   
@@ -25,11 +25,10 @@ object Features {
     features: js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.GeoJSONObject */ js.Object
     ],
-    properties: js.Any,
-    `type`: FeatureCollection
+    properties: js.Any
   ): Features = {
     val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FeatureCollection")
     __obj.asInstanceOf[Features]
   }
   

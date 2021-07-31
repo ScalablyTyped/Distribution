@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a FileDescriptorSet. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new FileDescriptorSet.
   * @param [properties] Properties to set
   */
-class FileDescriptorSet () extends IFileDescriptorSet {
+class FileDescriptorSet ()
+  extends StObject
+     with IFileDescriptorSet {
   def this(properties: IFileDescriptorSet) = this()
   
   /** FileDescriptorSet file. */
@@ -32,18 +33,20 @@ class FileDescriptorSet () extends IFileDescriptorSet {
 }
 object FileDescriptorSet {
   
+  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new FileDescriptorSet instance using the specified properties.
     * @param [properties] Properties to set
     * @returns FileDescriptorSet instance
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.create")
-  @js.native
-  def create(): FileDescriptorSet = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.create")
-  @js.native
-  def create(properties: IFileDescriptorSet): FileDescriptorSet = js.native
+  @scala.inline
+  def create(): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FileDescriptorSet]
+  @scala.inline
+  def create(properties: IFileDescriptorSet): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
   
   /**
     * Decodes a FileDescriptorSet message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object FileDescriptorSet {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.decode")
-  @js.native
-  def decode(reader: Reader): FileDescriptorSet = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): FileDescriptorSet = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.decode")
-  @js.native
-  def decode(reader: Uint8Array): FileDescriptorSet = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): FileDescriptorSet = js.native
+  @scala.inline
+  def decode(reader: Reader): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
+  @scala.inline
+  def decode(reader: Reader, length: Double): FileDescriptorSet = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FileDescriptorSet]
+  @scala.inline
+  def decode(reader: Uint8Array): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): FileDescriptorSet = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FileDescriptorSet]
   
   /**
     * Decodes a FileDescriptorSet message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object FileDescriptorSet {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): FileDescriptorSet = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): FileDescriptorSet = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
   
   /**
     * Encodes the specified FileDescriptorSet message. Does not implicitly {@link google.protobuf.FileDescriptorSet.verify|verify} messages.
@@ -89,12 +86,10 @@ object FileDescriptorSet {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.encode")
-  @js.native
-  def encode(message: IFileDescriptorSet): Writer = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.encode")
-  @js.native
-  def encode(message: IFileDescriptorSet, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IFileDescriptorSet): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IFileDescriptorSet, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified FileDescriptorSet message, length delimited. Does not implicitly {@link google.protobuf.FileDescriptorSet.verify|verify} messages.
@@ -103,12 +98,10 @@ object FileDescriptorSet {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFileDescriptorSet): Writer = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFileDescriptorSet, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IFileDescriptorSet): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IFileDescriptorSet, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a FileDescriptorSet message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object FileDescriptorSet {
     * @returns FileDescriptorSet
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): FileDescriptorSet = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
   
   /**
     * Creates a plain object from a FileDescriptorSet message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object FileDescriptorSet {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.toObject")
-  @js.native
-  def toObject(message: FileDescriptorSet): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.toObject")
-  @js.native
-  def toObject(message: FileDescriptorSet, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: FileDescriptorSet): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: FileDescriptorSet, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a FileDescriptorSet message.
@@ -140,7 +130,6 @@ object FileDescriptorSet {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.FileDescriptorSet.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

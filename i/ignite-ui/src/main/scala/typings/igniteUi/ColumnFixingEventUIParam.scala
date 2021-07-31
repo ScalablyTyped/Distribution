@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnFixingEventUIParam extends StObject {
   
   /**
     * Gets the columnKey or the columnIndex.
     */
-  var columnIdentifier: js.UndefOr[js.Any] = js.native
+  var columnIdentifier: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets whether the header cell has children(use this argument ONLY when multi-column-headers are enabled).
     */
-  var isGroupHeader: js.UndefOr[Boolean] = js.native
+  var isGroupHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets a reference to the widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ColumnFixingEventUIParam {
   

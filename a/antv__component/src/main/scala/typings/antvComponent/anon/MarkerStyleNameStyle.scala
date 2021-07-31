@@ -2,15 +2,13 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkerStyleNameStyle extends StObject {
   
-  var markerStyle: OpacityNumber = js.native
+  var markerStyle: OpacityNumber
   
-  var nameStyle: FillString = js.native
+  var nameStyle: FillString
 }
 object MarkerStyleNameStyle {
   

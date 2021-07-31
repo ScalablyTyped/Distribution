@@ -2,131 +2,129 @@ package typings.ionicCore.componentsMod.Components
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonCol extends StObject {
   
   /**
     * The amount to offset the column, in terms of how many columns it should shift to the end of the total available.
     */
-  var offset: js.UndefOr[String] = js.native
+  var offset: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to offset the column for lg screens, in terms of how many columns it should shift to the end of the total available.
     */
-  var offsetLg: js.UndefOr[String] = js.native
+  var offsetLg: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to offset the column for md screens, in terms of how many columns it should shift to the end of the total available.
     */
-  var offsetMd: js.UndefOr[String] = js.native
+  var offsetMd: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to offset the column for sm screens, in terms of how many columns it should shift to the end of the total available.
     */
-  var offsetSm: js.UndefOr[String] = js.native
+  var offsetSm: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to offset the column for xl screens, in terms of how many columns it should shift to the end of the total available.
     */
-  var offsetXl: js.UndefOr[String] = js.native
+  var offsetXl: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to offset the column for xs screens, in terms of how many columns it should shift to the end of the total available.
     */
-  var offsetXs: js.UndefOr[String] = js.native
+  var offsetXs: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to pull the column, in terms of how many columns it should shift to the start of the total available.
     */
-  var pull: js.UndefOr[String] = js.native
+  var pull: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to pull the column for lg screens, in terms of how many columns it should shift to the start of the total available.
     */
-  var pullLg: js.UndefOr[String] = js.native
+  var pullLg: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to pull the column for md screens, in terms of how many columns it should shift to the start of the total available.
     */
-  var pullMd: js.UndefOr[String] = js.native
+  var pullMd: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to pull the column for sm screens, in terms of how many columns it should shift to the start of the total available.
     */
-  var pullSm: js.UndefOr[String] = js.native
+  var pullSm: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to pull the column for xl screens, in terms of how many columns it should shift to the start of the total available.
     */
-  var pullXl: js.UndefOr[String] = js.native
+  var pullXl: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to pull the column for xs screens, in terms of how many columns it should shift to the start of the total available.
     */
-  var pullXs: js.UndefOr[String] = js.native
+  var pullXs: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to push the column, in terms of how many columns it should shift to the end of the total available.
     */
-  var push: js.UndefOr[String] = js.native
+  var push: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to push the column for lg screens, in terms of how many columns it should shift to the end of the total available.
     */
-  var pushLg: js.UndefOr[String] = js.native
+  var pushLg: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to push the column for md screens, in terms of how many columns it should shift to the end of the total available.
     */
-  var pushMd: js.UndefOr[String] = js.native
+  var pushMd: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to push the column for sm screens, in terms of how many columns it should shift to the end of the total available.
     */
-  var pushSm: js.UndefOr[String] = js.native
+  var pushSm: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to push the column for xl screens, in terms of how many columns it should shift to the end of the total available.
     */
-  var pushXl: js.UndefOr[String] = js.native
+  var pushXl: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to push the column for xs screens, in terms of how many columns it should shift to the end of the total available.
     */
-  var pushXs: js.UndefOr[String] = js.native
+  var pushXs: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the column, in terms of how many columns it should take up out of the total available. If `"auto"` is passed, the column will be the size of its content.
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the column for lg screens, in terms of how many columns it should take up out of the total available. If `"auto"` is passed, the column will be the size of its content.
     */
-  var sizeLg: js.UndefOr[String] = js.native
+  var sizeLg: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the column for md screens, in terms of how many columns it should take up out of the total available. If `"auto"` is passed, the column will be the size of its content.
     */
-  var sizeMd: js.UndefOr[String] = js.native
+  var sizeMd: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the column for sm screens, in terms of how many columns it should take up out of the total available. If `"auto"` is passed, the column will be the size of its content.
     */
-  var sizeSm: js.UndefOr[String] = js.native
+  var sizeSm: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the column for xl screens, in terms of how many columns it should take up out of the total available. If `"auto"` is passed, the column will be the size of its content.
     */
-  var sizeXl: js.UndefOr[String] = js.native
+  var sizeXl: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the column for xs screens, in terms of how many columns it should take up out of the total available. If `"auto"` is passed, the column will be the size of its content.
     */
-  var sizeXs: js.UndefOr[String] = js.native
+  var sizeXs: js.UndefOr[String] = js.undefined
 }
 object IonCol {
   

@@ -8,52 +8,50 @@ import typings.react.mod.WheelEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XYPlotProps extends StObject {
   
-  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
+  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   // default: ''
-  var dontCheckIfEmpty: js.UndefOr[Boolean] = js.native
+  var dontCheckIfEmpty: js.UndefOr[Boolean] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var margin: js.UndefOr[Margin | Double] = js.native
+  var margin: js.UndefOr[Margin | Double] = js.undefined
   
-  var onClick: js.UndefOr[RVMouseEventHandler] = js.native
+  var onClick: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onDoubleClick: js.UndefOr[RVMouseEventHandler] = js.native
+  var onDoubleClick: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onMouseDown: js.UndefOr[RVMouseEventHandler] = js.native
+  var onMouseDown: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onMouseEnter: js.UndefOr[RVMouseEventHandler] = js.native
+  var onMouseEnter: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onMouseLeave: js.UndefOr[RVMouseEventHandler] = js.native
+  var onMouseLeave: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onMouseMove: js.UndefOr[RVMouseEventHandler] = js.native
+  var onMouseMove: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onMouseUp: js.UndefOr[RVMouseEventHandler] = js.native
+  var onMouseUp: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onTouchCancel: js.UndefOr[RVTouchEventHandler] = js.native
+  var onTouchCancel: js.UndefOr[RVTouchEventHandler] = js.undefined
   
-  var onTouchEnd: js.UndefOr[RVTouchEventHandler] = js.native
+  var onTouchEnd: js.UndefOr[RVTouchEventHandler] = js.undefined
   
-  var onTouchMove: js.UndefOr[RVTouchEventHandler] = js.native
+  var onTouchMove: js.UndefOr[RVTouchEventHandler] = js.undefined
   
-  var onTouchStart: js.UndefOr[RVTouchEventHandler] = js.native
+  var onTouchStart: js.UndefOr[RVTouchEventHandler] = js.undefined
   
-  var onWheel: js.UndefOr[RVWheelEventHandler] = js.native
+  var onWheel: js.UndefOr[RVWheelEventHandler] = js.undefined
   
-  var stackBy: js.UndefOr[StackDirections] = js.native
+  var stackBy: js.UndefOr[StackDirections] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object XYPlotProps {
   

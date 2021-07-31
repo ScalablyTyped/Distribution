@@ -1,9 +1,9 @@
 package typings.openui5.global.sap.m
 
+import typings.openui5.sap.ui.base.Metadata
 import typings.openui5.sap.ui.core.UIComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routing {
@@ -11,7 +11,8 @@ object routing {
   @JSGlobal("sap.m.routing.RouteMatchedHandler")
   @js.native
   class RouteMatchedHandler protected ()
-    extends typings.openui5.sap.m.routing.RouteMatchedHandler {
+    extends StObject
+       with typings.openui5.sap.m.routing.RouteMatchedHandler {
     /**
       * Instantiates a RouteMatchedHandler.
       * @param router A router that creates views</br>
@@ -19,12 +20,42 @@ object routing {
       * true. If set to false it will just navigate without closing dialogs.
       */
     def this(router: typings.openui5.sap.m.routing.Router, closeDialogs: Boolean) = this()
+    
+    /**
+      * Removes the routeMatchedHandler from the Router
+      * @returns for chaining
+      */
+    /* CompleteClass */
+    override def destroy(): typings.openui5.sap.m.routing.RouteMatchedHandler = js.native
+    
+    /**
+      * Gets if a navigation should close dialogs
+      * @returns a flag indication if dialogs will be closed
+      */
+    /* CompleteClass */
+    override def getCloseDialogs(): Boolean = js.native
+    
+    /**
+      * Returns a metadata object for class sap.m.routing.RouteMatchedHandler.
+      * @returns Metadata object describing this class
+      */
+    /* CompleteClass */
+    override def getMetadata(): Metadata = js.native
+    
+    /**
+      * Sets if a navigation should close dialogs
+      * @param bCloseDialogs close dialogs if true
+      * @returns for chaining
+      */
+    /* CompleteClass */
+    override def setCloseDialogs(bCloseDialogs: Boolean): typings.openui5.sap.m.routing.RouteMatchedHandler = js.native
   }
   
   @JSGlobal("sap.m.routing.Router")
   @js.native
   class Router protected ()
-    extends typings.openui5.sap.m.routing.Router {
+    extends StObject
+       with typings.openui5.sap.m.routing.Router {
     /**
       * Instantiates a SAPUI5 mobile Router see {@link sap.ui.core.routing.Router} for the constructor
       * argumentsThe difference to the {@link sap.ui.core.routing.Router} are the properties viewLevel,
@@ -67,42 +98,28 @@ object routing {
       *  controlId: "app",             controlAggregation: "pages"         }    })</code></pre>
       */
     def this(oRoutes: js.Any) = this()
-    def this(oRoutes: js.Array[_]) = this()
+    def this(oRoutes: js.Array[js.Any]) = this()
     def this(oRoutes: js.Any, oConfig: js.Any) = this()
-    def this(oRoutes: js.Array[_], oConfig: js.Any) = this()
-    def this(oRoutes: js.Any, oConfig: js.UndefOr[scala.Nothing], oOwner: UIComponent) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: js.Any) = this()
     def this(oRoutes: js.Any, oConfig: js.Any, oOwner: UIComponent) = this()
-    def this(oRoutes: js.Array[_], oConfig: js.UndefOr[scala.Nothing], oOwner: UIComponent) = this()
-    def this(oRoutes: js.Array[_], oConfig: js.Any, oOwner: UIComponent) = this()
-    def this(
-      oRoutes: js.Any,
-      oConfig: js.UndefOr[scala.Nothing],
-      oOwner: js.UndefOr[scala.Nothing],
-      oTargetsConfig: js.Any
-    ) = this()
-    def this(oRoutes: js.Any, oConfig: js.UndefOr[scala.Nothing], oOwner: UIComponent, oTargetsConfig: js.Any) = this()
-    def this(oRoutes: js.Any, oConfig: js.Any, oOwner: js.UndefOr[scala.Nothing], oTargetsConfig: js.Any) = this()
+    def this(oRoutes: js.Any, oConfig: Unit, oOwner: UIComponent) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: js.Any, oOwner: UIComponent) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: Unit, oOwner: UIComponent) = this()
+    def this(oRoutes: js.Any, oConfig: js.Any, oOwner: Unit, oTargetsConfig: js.Any) = this()
     def this(oRoutes: js.Any, oConfig: js.Any, oOwner: UIComponent, oTargetsConfig: js.Any) = this()
-    def this(
-      oRoutes: js.Array[_],
-      oConfig: js.UndefOr[scala.Nothing],
-      oOwner: js.UndefOr[scala.Nothing],
-      oTargetsConfig: js.Any
-    ) = this()
-    def this(
-      oRoutes: js.Array[_],
-      oConfig: js.UndefOr[scala.Nothing],
-      oOwner: UIComponent,
-      oTargetsConfig: js.Any
-    ) = this()
-    def this(oRoutes: js.Array[_], oConfig: js.Any, oOwner: js.UndefOr[scala.Nothing], oTargetsConfig: js.Any) = this()
-    def this(oRoutes: js.Array[_], oConfig: js.Any, oOwner: UIComponent, oTargetsConfig: js.Any) = this()
+    def this(oRoutes: js.Any, oConfig: Unit, oOwner: Unit, oTargetsConfig: js.Any) = this()
+    def this(oRoutes: js.Any, oConfig: Unit, oOwner: UIComponent, oTargetsConfig: js.Any) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: js.Any, oOwner: Unit, oTargetsConfig: js.Any) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: js.Any, oOwner: UIComponent, oTargetsConfig: js.Any) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: Unit, oOwner: Unit, oTargetsConfig: js.Any) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: Unit, oOwner: UIComponent, oTargetsConfig: js.Any) = this()
   }
   
   @JSGlobal("sap.m.routing.TargetHandler")
   @js.native
   class TargetHandler protected ()
-    extends typings.openui5.sap.m.routing.TargetHandler {
+    extends StObject
+       with typings.openui5.sap.m.routing.TargetHandler {
     /**
       * Instantiates a TargetHandler, a class used for closing dialogs and showing transitions in
       * NavContainers when targets are displayed.<br/><b>You should not create an own instance of this
@@ -113,12 +130,35 @@ object routing {
       * true. If set to false it will just navigate without closing dialogs.
       */
     def this(closeDialogs: Boolean) = this()
+    
+    /**
+      * Gets if a navigation should close dialogs
+      * @returns a flag indication if dialogs will be closed
+      */
+    /* CompleteClass */
+    override def getCloseDialogs(): Boolean = js.native
+    
+    /**
+      * Returns a metadata object for class sap.m.routing.TargetHandler.
+      * @returns Metadata object describing this class
+      */
+    /* CompleteClass */
+    override def getMetadata(): Metadata = js.native
+    
+    /**
+      * Sets if a navigation should close dialogs
+      * @param bCloseDialogs close dialogs if true
+      * @returns for chaining
+      */
+    /* CompleteClass */
+    override def setCloseDialogs(bCloseDialogs: Boolean): typings.openui5.sap.m.routing.TargetHandler = js.native
   }
   
   @JSGlobal("sap.m.routing.Targets")
   @js.native
   class Targets protected ()
-    extends typings.openui5.sap.m.routing.Targets {
+    extends StObject
+       with typings.openui5.sap.m.routing.Targets {
     /**
       * Provides a convenient way for placing views into the correct containers of your application.The
       * mobile extension of Targets also handles the triggering of page navigation when the target control

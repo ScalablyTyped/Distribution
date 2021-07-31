@@ -2,13 +2,11 @@ package typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for `TestIamPermissions` method.
   */
-@js.native
 trait SchemaTestIamPermissionsRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaTestIamPermissionsRequest extends StObject {
     * For more information see [IAM
     * Overview](https://cloud.google.com/iam/docs/overview#permissions).
     */
-  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTestIamPermissionsRequest {
   

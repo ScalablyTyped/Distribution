@@ -3,21 +3,19 @@ package typings.sentryTypes
 import typings.sentryTypes.packageMod.Package
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sdkinfoMod {
   
-  @js.native
   trait SdkInfo extends StObject {
     
-    var integrations: js.UndefOr[js.Array[String]] = js.native
+    var integrations: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var packages: js.UndefOr[js.Array[Package]] = js.native
+    var packages: js.UndefOr[js.Array[Package]] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object SdkInfo {
     

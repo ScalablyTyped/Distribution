@@ -2,35 +2,35 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Links records for 'same' item
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Linkage extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Linkage
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'active'.
     */
-  var _active: js.UndefOr[Element] = js.native
+  var _active: js.UndefOr[Element] = js.undefined
   
   /**
     * Whether this linkage assertion is active or not
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Who is responsible for linkages
     */
-  var author: js.UndefOr[Reference] = js.native
+  var author: js.UndefOr[Reference] = js.undefined
   
   /**
     * Item to be linked
     */
-  var item: js.Array[LinkageItem] = js.native
+  var item: js.Array[LinkageItem]
 }
 object Linkage {
   

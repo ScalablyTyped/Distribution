@@ -5,13 +5,11 @@ import typings.wepy.wepyStrings.fingerPrint
 import typings.wepy.wepyStrings.speech
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckAuthMode extends StObject {
   
-  var checkAuthMode: fingerPrint | facial | speech = js.native
+  var checkAuthMode: fingerPrint | facial | speech
 }
 object CheckAuthMode {
   

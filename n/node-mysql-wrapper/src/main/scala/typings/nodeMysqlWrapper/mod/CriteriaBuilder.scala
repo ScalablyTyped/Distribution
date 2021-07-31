@@ -2,7 +2,6 @@ package typings.nodeMysqlWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "CriteriaBuilder")
@@ -11,12 +10,8 @@ class CriteriaBuilder[T] protected () extends StObject {
   def this(primaryTable: Table[T]) = this()
   def this(primaryTable: Table[T], tablePropertyName: String) = this()
   //to arxiko apo to Table.ts 9a benei
-  def this(primaryTable: Table[T], tableName: String, parentBuilder: CriteriaBuilder[_]) = this()
-  def this(
-    primaryTable: Table[T],
-    tablePropertyName: js.UndefOr[scala.Nothing],
-    parentBuilder: CriteriaBuilder[_]
-  ) = this()
+  def this(primaryTable: Table[T], tableName: String, parentBuilder: CriteriaBuilder[js.Any]) = this()
+  def this(primaryTable: Table[T], tablePropertyName: Unit, parentBuilder: CriteriaBuilder[js.Any]) = this()
   
   def at(tableNameProperty: String): CriteriaBuilder[T] = js.native
   
@@ -48,7 +43,7 @@ class CriteriaBuilder[T] protected () extends StObject {
   
   def parent(): CriteriaBuilder[T] = js.native
   
-  var parentBuilder: CriteriaBuilder[_] = js.native
+  var parentBuilder: CriteriaBuilder[js.Any] = js.native
   
   var primaryTable: Table[T] = js.native
   
@@ -58,8 +53,11 @@ class CriteriaBuilder[T] protected () extends StObject {
 }
 object CriteriaBuilder {
   
-  /* static member */
-  @JSImport("node-mysql-wrapper", "CriteriaBuilder.from")
+  @JSImport("node-mysql-wrapper", "CriteriaBuilder")
   @js.native
-  def from[T](table: Table[T]): CriteriaBuilder[T] = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def from[T](table: Table[T]): CriteriaBuilder[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(table.asInstanceOf[js.Any]).asInstanceOf[CriteriaBuilder[T]]
 }

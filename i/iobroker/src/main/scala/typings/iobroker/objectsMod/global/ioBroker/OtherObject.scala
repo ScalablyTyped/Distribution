@@ -7,19 +7,18 @@ import typings.iobroker.iobrokerStrings.info
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OtherObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   @JSName("common")
-  var common_OtherObject: OtherCommon = js.native
+  var common_OtherObject: OtherCommon
   
   @JSName("type")
-  var type_OtherObject: adapter | config | info | chart = js.native
+  var type_OtherObject: adapter | config | info | chart
 }
 object OtherObject {
   
@@ -27,7 +26,7 @@ object OtherObject {
   def apply(
     _id: String,
     common: OtherCommon,
-    native: Record[String, _],
+    native: Record[String, js.Any],
     `type`: adapter | config | info | chart
   ): OtherObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])

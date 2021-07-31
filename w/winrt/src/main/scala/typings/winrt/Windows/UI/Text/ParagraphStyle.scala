@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,38 +11,62 @@ sealed trait ParagraphStyle extends StObject
 object ParagraphStyle extends StObject {
   
   @js.native
-  sealed trait heading1 extends ParagraphStyle
+  sealed trait heading1
+    extends StObject
+       with ParagraphStyle
   
   @js.native
-  sealed trait heading2 extends ParagraphStyle
+  sealed trait heading2
+    extends StObject
+       with ParagraphStyle
   
   @js.native
-  sealed trait heading3 extends ParagraphStyle
+  sealed trait heading3
+    extends StObject
+       with ParagraphStyle
   
   @js.native
-  sealed trait heading4 extends ParagraphStyle
+  sealed trait heading4
+    extends StObject
+       with ParagraphStyle
   
   @js.native
-  sealed trait heading5 extends ParagraphStyle
+  sealed trait heading5
+    extends StObject
+       with ParagraphStyle
   
   @js.native
-  sealed trait heading6 extends ParagraphStyle
+  sealed trait heading6
+    extends StObject
+       with ParagraphStyle
   
   @js.native
-  sealed trait heading7 extends ParagraphStyle
+  sealed trait heading7
+    extends StObject
+       with ParagraphStyle
   
   @js.native
-  sealed trait heading8 extends ParagraphStyle
+  sealed trait heading8
+    extends StObject
+       with ParagraphStyle
   
   @js.native
-  sealed trait heading9 extends ParagraphStyle
+  sealed trait heading9
+    extends StObject
+       with ParagraphStyle
   
   @js.native
-  sealed trait none extends ParagraphStyle
+  sealed trait none
+    extends StObject
+       with ParagraphStyle
   
   @js.native
-  sealed trait normal extends ParagraphStyle
+  sealed trait normal
+    extends StObject
+       with ParagraphStyle
   
   @js.native
-  sealed trait undefined extends ParagraphStyle
+  sealed trait undefined
+    extends StObject
+       with ParagraphStyle
 }

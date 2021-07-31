@@ -22,43 +22,41 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.weakmap
 import typings.devtoolsProtocol.devtoolsProtocolStrings.weakset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectPreview extends StObject {
   
   /**
     * String representation of the object.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * List of the entries. Specified for `map` and `set` subtype values only.
     */
-  var entries: js.UndefOr[js.Array[EntryPreview]] = js.native
+  var entries: js.UndefOr[js.Array[EntryPreview]] = js.undefined
   
   /**
     * True iff some of the properties or entries of the original object did not fit.
     */
-  var overflow: Boolean = js.native
+  var overflow: Boolean
   
   /**
     * List of the properties.
     */
-  var properties: js.Array[PropertyPreview] = js.native
+  var properties: js.Array[PropertyPreview]
   
   /**
     * Object subtype hint. Specified for `object` type values only. (ObjectPreviewSubtype enum)
     */
   var subtype: js.UndefOr[
     array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Object type. (ObjectPreviewType enum)
     */
-  var `type`: `object` | function | undefined | string | number | boolean | symbol | bigint = js.native
+  var `type`: `object` | function | undefined | string | number | boolean | symbol | bigint
 }
 object ObjectPreview {
   

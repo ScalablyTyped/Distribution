@@ -2,7 +2,6 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,25 +11,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * location is not available, the instance will be located as close as
   * possible within the region. Only one location may be specified.
   */
-@js.native
 trait SchemaLocationPreference extends StObject {
   
   /**
     * The AppEngine application to follow, it must be in the same region as the
     * Cloud SQL instance.
     */
-  var followGaeApplication: js.UndefOr[String] = js.native
+  var followGaeApplication: js.UndefOr[String] = js.undefined
   
   /**
     * This is always sql#locationPreference.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The preferred Compute Engine zone (e.g. us-central1-a, us-central1-b,
     * etc.).
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaLocationPreference {
   

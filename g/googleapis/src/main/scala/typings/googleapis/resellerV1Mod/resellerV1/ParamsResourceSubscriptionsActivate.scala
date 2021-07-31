@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSubscriptionsActivate extends StandardParameters {
+trait ParamsResourceSubscriptionsActivate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Either the customer's primary domain name or the customer's unique
@@ -23,7 +23,7 @@ trait ParamsResourceSubscriptionsActivate extends StandardParameters {
     * customerId as a key for persistent data. If the domain name for a
     * customerId is changed, the Google system automatically updates.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * This is a required property. The subscriptionId is the subscription
@@ -32,7 +32,7 @@ trait ParamsResourceSubscriptionsActivate extends StandardParameters {
     * as a key for persistent data. And the subscriptionId can be found using
     * the retrieve all reseller subscriptions method.
     */
-  var subscriptionId: js.UndefOr[String] = js.native
+  var subscriptionId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSubscriptionsActivate {
   

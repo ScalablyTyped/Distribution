@@ -15,7 +15,6 @@ import typings.makerJs.MakerJs.exporter.svgUnitConversion
 import typings.pdfkit.PDFKit.PDFDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exporter {
@@ -31,7 +30,8 @@ object exporter {
   @JSGlobal("MakerJs.exporter.Exporter")
   @js.native
   class Exporter protected ()
-    extends typings.makerJs.MakerJs.exporter.Exporter {
+    extends StObject
+       with typings.makerJs.MakerJs.exporter.Exporter {
     /**
       * @param map Object containing properties: property name is the type of path, e.g. "line", "circle"; property value
       * is a function to render a path. Function parameters are path and point.
@@ -42,31 +42,13 @@ object exporter {
     def this(map: IPathOriginFunctionMap, fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint]) = this()
     def this(
       map: IPathOriginFunctionMap,
-      fixPoint: js.UndefOr[scala.Nothing],
-      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath]
-    ) = this()
-    def this(
-      map: IPathOriginFunctionMap,
       fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
       fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath]
     ) = this()
     def this(
       map: IPathOriginFunctionMap,
-      fixPoint: js.UndefOr[scala.Nothing],
-      fixPath: js.UndefOr[scala.Nothing],
-      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit]
-    ) = this()
-    def this(
-      map: IPathOriginFunctionMap,
-      fixPoint: js.UndefOr[scala.Nothing],
-      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
-      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit]
-    ) = this()
-    def this(
-      map: IPathOriginFunctionMap,
-      fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
-      fixPath: js.UndefOr[scala.Nothing],
-      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit]
+      fixPoint: Unit,
+      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath]
     ) = this()
     def this(
       map: IPathOriginFunctionMap,
@@ -76,52 +58,21 @@ object exporter {
     ) = this()
     def this(
       map: IPathOriginFunctionMap,
-      fixPoint: js.UndefOr[scala.Nothing],
-      fixPath: js.UndefOr[scala.Nothing],
-      beginModel: js.UndefOr[scala.Nothing],
-      endModel: js.Function1[/* modelContext */ IModel, Unit]
-    ) = this()
-    def this(
-      map: IPathOriginFunctionMap,
-      fixPoint: js.UndefOr[scala.Nothing],
-      fixPath: js.UndefOr[scala.Nothing],
-      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit],
-      endModel: js.Function1[/* modelContext */ IModel, Unit]
-    ) = this()
-    def this(
-      map: IPathOriginFunctionMap,
-      fixPoint: js.UndefOr[scala.Nothing],
-      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
-      beginModel: js.UndefOr[scala.Nothing],
-      endModel: js.Function1[/* modelContext */ IModel, Unit]
-    ) = this()
-    def this(
-      map: IPathOriginFunctionMap,
-      fixPoint: js.UndefOr[scala.Nothing],
-      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
-      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit],
-      endModel: js.Function1[/* modelContext */ IModel, Unit]
-    ) = this()
-    def this(
-      map: IPathOriginFunctionMap,
       fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
-      fixPath: js.UndefOr[scala.Nothing],
-      beginModel: js.UndefOr[scala.Nothing],
-      endModel: js.Function1[/* modelContext */ IModel, Unit]
+      fixPath: Unit,
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit]
     ) = this()
     def this(
       map: IPathOriginFunctionMap,
-      fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
-      fixPath: js.UndefOr[scala.Nothing],
-      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit],
-      endModel: js.Function1[/* modelContext */ IModel, Unit]
-    ) = this()
-    def this(
-      map: IPathOriginFunctionMap,
-      fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
+      fixPoint: Unit,
       fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
-      beginModel: js.UndefOr[scala.Nothing],
-      endModel: js.Function1[/* modelContext */ IModel, Unit]
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: Unit,
+      fixPath: Unit,
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit]
     ) = this()
     def this(
       map: IPathOriginFunctionMap,
@@ -130,6 +81,97 @@ object exporter {
       beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit],
       endModel: js.Function1[/* modelContext */ IModel, Unit]
     ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
+      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
+      beginModel: Unit,
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
+      fixPath: Unit,
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit],
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
+      fixPath: Unit,
+      beginModel: Unit,
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: Unit,
+      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit],
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: Unit,
+      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
+      beginModel: Unit,
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: Unit,
+      fixPath: Unit,
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit],
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: Unit,
+      fixPath: Unit,
+      beginModel: Unit,
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    
+    /* CompleteClass */
+    var beginModel: js.Any = js.native
+    
+    /* CompleteClass */
+    var endModel: js.Any = js.native
+    
+    /**
+      * Export an object.
+      *
+      * @param item The object to export. May be a path, an array of paths, a model, or an array of models.
+      * @param offset The offset position of the object.
+      */
+    /* CompleteClass */
+    override def exportItem(itemId: String, itemToExport: js.Any, origin: IPoint): Unit = js.native
+    
+    /**
+      * Export a model.
+      *
+      * @param modelToExport The model to export.
+      * @param offset The offset position of the model.
+      */
+    /* CompleteClass */
+    override def exportModel(modelId: String, modelToExport: IModel, offset: IPoint): Unit = js.native
+    
+    /**
+      * Export a path.
+      *
+      * @param pathToExport The path to export.
+      * @param offset The offset position of the path.
+      */
+    /* CompleteClass */
+    override def exportPath(id: String, pathToExport: IPath, offset: IPoint, layer: String): Unit = js.native
+    
+    /* CompleteClass */
+    var fixPath: js.Any = js.native
+    
+    /* CompleteClass */
+    var fixPoint: js.Any = js.native
+    
+    /* CompleteClass */
+    var map: js.Any = js.native
   }
   
   /**
@@ -139,15 +181,58 @@ object exporter {
   @JSGlobal("MakerJs.exporter.XmlTag")
   @js.native
   class XmlTag protected ()
-    extends typings.makerJs.MakerJs.exporter.XmlTag {
+    extends StObject
+       with typings.makerJs.MakerJs.exporter.XmlTag {
     /**
       * @param name Name of the XML tag.
       * @param attrs Optional attributes for the tag.
       */
     def this(name: String) = this()
     def this(name: String, attrs: IXmlTagAttrs) = this()
+    
+    /* CompleteClass */
+    var attrs: IXmlTagAttrs = js.native
+    
+    /**
+      * Get the closing tag.
+      */
+    /* CompleteClass */
+    override def getClosingTag(): String = js.native
+    
+    /**
+      * Get the inner text.
+      */
+    /* CompleteClass */
+    override def getInnerText(): String = js.native
+    
+    /**
+      * Get the opening tag.
+      *
+      * @param selfClose Flag to determine if opening tag should be self closing.
+      */
+    /* CompleteClass */
+    override def getOpeningTag(selfClose: Boolean): String = js.native
+    
+    /**
+      * Text between the opening and closing tags.
+      */
+    /* CompleteClass */
+    var innerText: String = js.native
+    
+    /**
+      * Boolean to indicate that the innerText has been escaped.
+      */
+    /* CompleteClass */
+    var innerTextEscaped: Boolean = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   object XmlTag {
+    
+    @JSGlobal("MakerJs.exporter.XmlTag")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Escapes certain characters within a string so that it can appear in a tag or its attribute.
@@ -155,24 +240,21 @@ object exporter {
       * @returns Escaped string.
       */
     /* static member */
-    @JSGlobal("MakerJs.exporter.XmlTag.escapeString")
-    @js.native
-    def escapeString(value: String): String = js.native
+    @scala.inline
+    def escapeString(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /**
     * Convert a chain to SVG path data.
     */
-  @JSGlobal("MakerJs.exporter.chainToSVGPathData")
-  @js.native
-  def chainToSVGPathData(chain: IChain, offset: IPoint): String = js.native
+  @scala.inline
+  def chainToSVGPathData(chain: IChain, offset: IPoint): String = (^.asInstanceOf[js.Dynamic].applyDynamic("chainToSVGPathData")(chain.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Convert a path to SVG path data.
     */
-  @JSGlobal("MakerJs.exporter.pathToSVGPathData")
-  @js.native
-  def pathToSVGPathData(pathToExport: IPath, offset: IPoint, offset2: IPoint): String = js.native
+  @scala.inline
+  def pathToSVGPathData(pathToExport: IPath, offset: IPoint, offset2: IPoint): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToSVGPathData")(pathToExport.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], offset2.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Map of MakerJs unit system to SVG unit system
@@ -183,43 +265,31 @@ object exporter {
   @scala.inline
   def svgUnit_=(x: svgUnitConversion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("svgUnit")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("MakerJs.exporter.toDXF")
-  @js.native
-  def toDXF(modelToExport: IModel): String = js.native
-  @JSGlobal("MakerJs.exporter.toDXF")
-  @js.native
-  def toDXF(modelToExport: IModel, options: IDXFRenderOptions): String = js.native
-  @JSGlobal("MakerJs.exporter.toDXF")
-  @js.native
-  def toDXF(pathToExport: IPath): String = js.native
-  @JSGlobal("MakerJs.exporter.toDXF")
-  @js.native
-  def toDXF(pathToExport: IPath, options: IDXFRenderOptions): String = js.native
-  @JSGlobal("MakerJs.exporter.toDXF")
-  @js.native
-  def toDXF(pathsToExport: js.Array[IPath]): String = js.native
-  @JSGlobal("MakerJs.exporter.toDXF")
-  @js.native
-  def toDXF(pathsToExport: js.Array[IPath], options: IDXFRenderOptions): String = js.native
+  @scala.inline
+  def toDXF(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toDXF(modelToExport: IModel, options: IDXFRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toDXF(pathToExport: IPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toDXF(pathToExport: IPath, options: IDXFRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toDXF(pathsToExport: js.Array[IPath]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathsToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toDXF(pathsToExport: js.Array[IPath], options: IDXFRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathsToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("MakerJs.exporter.toOpenJsCad")
-  @js.native
-  def toOpenJsCad(modelToExport: IModel): String = js.native
-  @JSGlobal("MakerJs.exporter.toOpenJsCad")
-  @js.native
-  def toOpenJsCad(modelToExport: IModel, options: IOpenJsCadOptions): String = js.native
-  @JSGlobal("MakerJs.exporter.toOpenJsCad")
-  @js.native
-  def toOpenJsCad(pathToExport: IPath): String = js.native
-  @JSGlobal("MakerJs.exporter.toOpenJsCad")
-  @js.native
-  def toOpenJsCad(pathToExport: IPath, options: IOpenJsCadOptions): String = js.native
-  @JSGlobal("MakerJs.exporter.toOpenJsCad")
-  @js.native
-  def toOpenJsCad(pathsToExport: js.Array[IPath]): String = js.native
-  @JSGlobal("MakerJs.exporter.toOpenJsCad")
-  @js.native
-  def toOpenJsCad(pathsToExport: js.Array[IPath], options: IOpenJsCadOptions): String = js.native
+  @scala.inline
+  def toOpenJsCad(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toOpenJsCad(modelToExport: IModel, options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toOpenJsCad(pathToExport: IPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toOpenJsCad(pathToExport: IPath, options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toOpenJsCad(pathsToExport: js.Array[IPath]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathsToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toOpenJsCad(pathsToExport: js.Array[IPath], options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathsToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Injects drawing into a PDFKit document.
@@ -228,12 +298,10 @@ object exporter {
     * @param options Export options object.
     * @returns String of PDF file contents.
     */
-  @JSGlobal("MakerJs.exporter.toPDF")
-  @js.native
-  def toPDF(doc: PDFDocument, modelToExport: IModel): Unit = js.native
-  @JSGlobal("MakerJs.exporter.toPDF")
-  @js.native
-  def toPDF(doc: PDFDocument, modelToExport: IModel, options: IPDFRenderOptions): Unit = js.native
+  @scala.inline
+  def toPDF(doc: PDFDocument, modelToExport: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(doc.asInstanceOf[js.Any], modelToExport.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toPDF(doc: PDFDocument, modelToExport: IModel, options: IPDFRenderOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(doc.asInstanceOf[js.Any], modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Executes a JavaScript string with the OpenJsCad engine - converts 2D to 3D.
@@ -244,31 +312,23 @@ object exporter {
     * @param options.resolution Size of facets.
     * @returns String of STL format of 3D object.
     */
-  @JSGlobal("MakerJs.exporter.toSTL")
-  @js.native
-  def toSTL(modelToExport: IModel): String = js.native
-  @JSGlobal("MakerJs.exporter.toSTL")
-  @js.native
-  def toSTL(modelToExport: IModel, options: IOpenJsCadOptions): String = js.native
+  @scala.inline
+  def toSTL(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSTL")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toSTL(modelToExport: IModel, options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSTL")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("MakerJs.exporter.toSVG")
-  @js.native
-  def toSVG(modelToExport: IModel): String = js.native
-  @JSGlobal("MakerJs.exporter.toSVG")
-  @js.native
-  def toSVG(modelToExport: IModel, options: ISVGRenderOptions): String = js.native
-  @JSGlobal("MakerJs.exporter.toSVG")
-  @js.native
-  def toSVG(pathToExport: IPath): String = js.native
-  @JSGlobal("MakerJs.exporter.toSVG")
-  @js.native
-  def toSVG(pathToExport: IPath, options: ISVGRenderOptions): String = js.native
-  @JSGlobal("MakerJs.exporter.toSVG")
-  @js.native
-  def toSVG(pathsToExport: js.Array[IPath]): String = js.native
-  @JSGlobal("MakerJs.exporter.toSVG")
-  @js.native
-  def toSVG(pathsToExport: js.Array[IPath], options: ISVGRenderOptions): String = js.native
+  @scala.inline
+  def toSVG(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toSVG(modelToExport: IModel, options: ISVGRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toSVG(pathToExport: IPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toSVG(pathToExport: IPath, options: ISVGRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toSVG(pathsToExport: js.Array[IPath]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathsToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toSVG(pathsToExport: js.Array[IPath], options: ISVGRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathsToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Convert a model to SVG path data.
@@ -278,24 +338,19 @@ object exporter {
     * @param origin Optional reference origin.
     * @returns String of SVG path data (if byLayers is false) or an object map of path data by layer .
     */
-  @JSGlobal("MakerJs.exporter.toSVGPathData")
-  @js.native
-  def toSVGPathData(modelToExport: IModel): IPathDataByLayerMap | String = js.native
-  @JSGlobal("MakerJs.exporter.toSVGPathData")
-  @js.native
-  def toSVGPathData(modelToExport: IModel, byLayers: js.UndefOr[scala.Nothing], origin: IPoint): IPathDataByLayerMap | String = js.native
-  @JSGlobal("MakerJs.exporter.toSVGPathData")
-  @js.native
-  def toSVGPathData(modelToExport: IModel, byLayers: Boolean): IPathDataByLayerMap | String = js.native
-  @JSGlobal("MakerJs.exporter.toSVGPathData")
-  @js.native
-  def toSVGPathData(modelToExport: IModel, byLayers: Boolean, origin: IPoint): IPathDataByLayerMap | String = js.native
+  @scala.inline
+  def toSVGPathData(modelToExport: IModel): IPathDataByLayerMap | String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[IPathDataByLayerMap | String]
+  @scala.inline
+  def toSVGPathData(modelToExport: IModel, byLayers: Boolean): IPathDataByLayerMap | String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any], byLayers.asInstanceOf[js.Any])).asInstanceOf[IPathDataByLayerMap | String]
+  @scala.inline
+  def toSVGPathData(modelToExport: IModel, byLayers: Boolean, origin: IPoint): IPathDataByLayerMap | String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any], byLayers.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IPathDataByLayerMap | String]
+  @scala.inline
+  def toSVGPathData(modelToExport: IModel, byLayers: Unit, origin: IPoint): IPathDataByLayerMap | String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any], byLayers.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IPathDataByLayerMap | String]
   
   /**
     * Try to get the unit system from a model
     * @private
     */
-  @JSGlobal("MakerJs.exporter.tryGetModelUnits")
-  @js.native
-  def tryGetModelUnits(itemToExport: js.Any): String = js.native
+  @scala.inline
+  def tryGetModelUnits(itemToExport: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tryGetModelUnits")(itemToExport.asInstanceOf[js.Any]).asInstanceOf[String]
 }

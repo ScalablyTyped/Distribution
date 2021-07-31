@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lbTargetGroupAttachmentMod {
@@ -48,6 +47,10 @@ object lbTargetGroupAttachmentMod {
   /* static members */
   object TargetGroupAttachment {
     
+    @JSImport("@pulumi/aws/lb/targetGroupAttachment", "TargetGroupAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TargetGroupAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,50 +60,44 @@ object lbTargetGroupAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lb/targetGroupAttachment", "TargetGroupAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TargetGroupAttachment = js.native
-    @JSImport("@pulumi/aws/lb/targetGroupAttachment", "TargetGroupAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TargetGroupAttachment = js.native
-    @JSImport("@pulumi/aws/lb/targetGroupAttachment", "TargetGroupAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TargetGroupAttachmentState): TargetGroupAttachment = js.native
-    @JSImport("@pulumi/aws/lb/targetGroupAttachment", "TargetGroupAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TargetGroupAttachmentState, opts: CustomResourceOptions): TargetGroupAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TargetGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TargetGroupAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TargetGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TargetGroupAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TargetGroupAttachmentState): TargetGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TargetGroupAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TargetGroupAttachmentState, opts: CustomResourceOptions): TargetGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TargetGroupAttachment]
     
     /**
       * Returns true if the given object is an instance of TargetGroupAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lb/targetGroupAttachment", "TargetGroupAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lb/targetGroupAttachment.TargetGroupAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lb/targetGroupAttachment.TargetGroupAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lb/targetGroupAttachment.TargetGroupAttachment */ Boolean]
   }
   
-  @js.native
   trait TargetGroupAttachmentArgs extends StObject {
     
     /**
       * The Availability Zone where the IP address of the target is to be registered. If the private ip address is outside of the VPC scope, this value must be set to 'all'.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port on which targets receive traffic.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN of the target group with which to register targets
       */
-    val targetGroupArn: Input[String] = js.native
+    val targetGroupArn: Input[String]
     
     /**
       * The ID of the target. This is the Instance ID for an instance, or the container ID for an ECS container. If the target type is ip, specify an IP address. If the target type is lambda, specify the arn of lambda.
       */
-    val targetId: Input[String] = js.native
+    val targetId: Input[String]
   }
   object TargetGroupAttachmentArgs {
     
@@ -133,28 +130,27 @@ object lbTargetGroupAttachmentMod {
     }
   }
   
-  @js.native
   trait TargetGroupAttachmentState extends StObject {
     
     /**
       * The Availability Zone where the IP address of the target is to be registered. If the private ip address is outside of the VPC scope, this value must be set to 'all'.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port on which targets receive traffic.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN of the target group with which to register targets
       */
-    val targetGroupArn: js.UndefOr[Input[String]] = js.native
+    val targetGroupArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the target. This is the Instance ID for an instance, or the container ID for an ECS container. If the target type is ip, specify an IP address. If the target type is lambda, specify the arn of lambda.
       */
-    val targetId: js.UndefOr[Input[String]] = js.native
+    val targetId: js.UndefOr[Input[String]] = js.undefined
   }
   object TargetGroupAttachmentState {
     

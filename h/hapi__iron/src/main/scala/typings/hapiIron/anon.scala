@@ -4,17 +4,15 @@ import typings.hapiIron.mod.Key
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Encrypted extends StObject {
     
-    var encrypted: Buffer = js.native
+    var encrypted: Buffer
     
-    var key: Key = js.native
+    var key: Key
   }
   object Encrypted {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IvBits extends StObject {
     
-    var ivBits: Double = js.native
+    var ivBits: Double
     
-    var keyBits: Double = js.native
+    var keyBits: Double
   }
   object IvBits {
     
@@ -61,10 +58,9 @@ object anon {
     }
   }
   
-  @js.native
   trait KeyBits extends StObject {
     
-    var keyBits: Double = js.native
+    var keyBits: Double
   }
   object KeyBits {
     

@@ -2,17 +2,15 @@ package typings.knockoutTransformations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dispose[TResult] extends StObject {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
-    var mappedValue: TResult = js.native
+    var mappedValue: TResult
   }
   object Dispose {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DisposeMutableBuilder[Self <: Dispose[_], TResult] (val x: Self with Dispose[TResult]) extends AnyVal {
+    implicit class DisposeMutableBuilder[Self <: Dispose[?], TResult] (val x: Self & Dispose[TResult]) extends AnyVal {
       
       @scala.inline
       def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))

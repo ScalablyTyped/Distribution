@@ -2,19 +2,17 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnZoomChangeZoomChangeInfo extends StObject {
   
-  var newZoomFactor: Double = js.native
+  var newZoomFactor: Double
   
-  var oldZoomFactor: Double = js.native
+  var oldZoomFactor: Double
   
-  var tabId: Double = js.native
+  var tabId: Double
   
-  var zoomSettings: ZoomSettings = js.native
+  var zoomSettings: ZoomSettings
 }
 object OnZoomChangeZoomChangeInfo {
   

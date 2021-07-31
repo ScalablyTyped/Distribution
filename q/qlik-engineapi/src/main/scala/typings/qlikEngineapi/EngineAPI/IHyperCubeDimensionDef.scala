@@ -2,14 +2,14 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IHyperCubeDimensionDef extends INxDimension {
+trait IHyperCubeDimensionDef
+  extends StObject
+     with INxDimension {
   
   @JSName("qDef")
-  var qDef_IHyperCubeDimensionDef: IHyperCubeDimensionqDef = js.native
+  var qDef_IHyperCubeDimensionDef: IHyperCubeDimensionqDef
 }
 object IHyperCubeDimensionDef {
   

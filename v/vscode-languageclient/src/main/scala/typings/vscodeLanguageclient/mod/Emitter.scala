@@ -3,7 +3,6 @@ package typings.vscodeLanguageclient.mod
 import typings.vscodeJsonrpc.eventsMod.EmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient", "Emitter")

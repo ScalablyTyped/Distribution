@@ -6,19 +6,46 @@ import typings.playable.tooltipTypesMod.ITooltipService
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipReferenceMod {
   
   @JSImport("playable/dist/src/modules/ui/core/tooltip/tooltip-reference", JSImport.Default)
   @js.native
-  class default protected () extends TooltipReference {
+  class default protected ()
+    extends StObject
+       with TooltipReference {
     def this(reference: HTMLElement, tooltipService: ITooltipService, options: ITooltipReferenceOptions) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def disable(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enable(): Unit = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isDisabled: Boolean = js.native
+    
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /* CompleteClass */
+    override def setText(text: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
   }
   
   @js.native
-  trait TooltipReference extends ITooltipReference {
+  trait TooltipReference
+    extends StObject
+       with ITooltipReference {
     
     @JSName("_$reference")
     var _$reference: js.Any = js.native

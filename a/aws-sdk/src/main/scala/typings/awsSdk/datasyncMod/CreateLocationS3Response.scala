@@ -2,16 +2,14 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLocationS3Response extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the source Amazon S3 bucket location that is created.
     */
-  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.native
+  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
 }
 object CreateLocationS3Response {
   

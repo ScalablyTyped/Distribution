@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraContext extends StObject {
   
   /** [[CameraFrameListener](https://developers.weixin.qq.com/miniprogram/dev/api/media/camera/CameraFrameListener.html) CameraContext.onCameraFrame(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/camera/CameraContext.onCameraFrame.html)
@@ -29,29 +27,29 @@ trait CameraContext extends StObject {
   *
   * 最低基础库： `2.7.0` */
   def onCameraFrame(/** 回调函数 */
-  callback: OnCameraFrameCallback): CameraFrameListener = js.native
+  callback: OnCameraFrameCallback): CameraFrameListener
   
   /** [CameraContext.setZoom(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/camera/CameraContext.setZoom.html)
     *
     * 设置缩放级别
     *
     * 最低基础库： `2.10.0` */
-  def setZoom(option: SetZoomOption): Unit = js.native
+  def setZoom(option: SetZoomOption): Unit
   
   /** [CameraContext.startRecord(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/camera/CameraContext.startRecord.html)
     *
     * 开始录像 */
-  def startRecord(option: CameraContextStartRecordOption): Unit = js.native
+  def startRecord(option: CameraContextStartRecordOption): Unit
   
   /** [CameraContext.stopRecord(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/camera/CameraContext.stopRecord.html)
     *
     * 结束录像 */
-  def stopRecord(option: CameraContextStopRecordOption): Unit = js.native
+  def stopRecord(option: CameraContextStopRecordOption): Unit
   
   /** [CameraContext.takePhoto(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/camera/CameraContext.takePhoto.html)
     *
     * 拍摄照片 */
-  def takePhoto(option: TakePhotoOption): Unit = js.native
+  def takePhoto(option: TakePhotoOption): Unit
 }
 object CameraContext {
   

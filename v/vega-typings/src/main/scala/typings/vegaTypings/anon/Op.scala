@@ -5,17 +5,17 @@ import typings.vegaTypings.scaleMod.SortOrder
 import typings.vegaTypings.scaleMod._SortField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Op extends _SortField {
+trait Op
+  extends StObject
+     with _SortField {
   
-  var field: js.UndefOr[ScaleField] = js.native
+  var field: js.UndefOr[ScaleField] = js.undefined
   
-  var op: ScaleField = js.native
+  var op: ScaleField
   
-  var order: js.UndefOr[SortOrder] = js.native
+  var order: js.UndefOr[SortOrder] = js.undefined
 }
 object Op {
   

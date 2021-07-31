@@ -7,39 +7,38 @@ import typings.typeorm.sapSapConnectionCredentialsOptionsMod.SapConnectionCreden
 import typings.typeorm.typeormStrings.sap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sapSapConnectionOptionsMod {
   
-  @js.native
   trait SapConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with SapConnectionCredentialsOptions
        with ConnectionOptions {
     
     /**
       * Pool options.
       */
-    val pool: js.UndefOr[CheckInterval] = js.native
+    val pool: js.UndefOr[CheckInterval] = js.undefined
     
     /**
       * Database schema.
       */
-    val schema: js.UndefOr[String] = js.native
+    val schema: js.UndefOr[String] = js.undefined
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_SapConnectionOptions: sap = js.native
+    val type_SapConnectionOptions: sap
   }
   object SapConnectionOptions {
     
     @scala.inline
-    def apply(`type`: sap): SapConnectionOptions = {
+    def apply(): SapConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("sap")
       __obj.asInstanceOf[SapConnectionOptions]
     }
     

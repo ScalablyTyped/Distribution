@@ -5,23 +5,23 @@ import typings.officeUiFabricReact.anon.PartialIKeytipProps
 import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keytipConfigMod {
   
-  @JSImport("office-ui-fabric-react/lib/utilities/keytips/KeytipConfig", "buildKeytipConfigMap")
+  @JSImport("office-ui-fabric-react/lib/utilities/keytips/KeytipConfig", JSImport.Namespace)
   @js.native
-  def buildKeytipConfigMap(config: IKeytipConfig): IKeytipConfigMap = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("office-ui-fabric-react/lib/utilities/keytips/KeytipConfig", "constructKeytip")
-  @js.native
-  def constructKeytip(configMap: IKeytipConfigMap, parentSequence: js.Array[String], keytip: IKeytipConfigItem): Unit = js.native
+  @scala.inline
+  def buildKeytipConfigMap(config: IKeytipConfig): IKeytipConfigMap = ^.asInstanceOf[js.Dynamic].applyDynamic("buildKeytipConfigMap")(config.asInstanceOf[js.Any]).asInstanceOf[IKeytipConfigMap]
   
-  @js.native
+  @scala.inline
+  def constructKeytip(configMap: IKeytipConfigMap, parentSequence: js.Array[String], keytip: IKeytipConfigItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("constructKeytip")(configMap.asInstanceOf[js.Any], parentSequence.asInstanceOf[js.Any], keytip.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait IKeytipConfig extends StObject {
     
-    var keytips: js.Array[IKeytipConfigItem] = js.native
+    var keytips: js.Array[IKeytipConfigItem]
   }
   object IKeytipConfig {
     
@@ -42,34 +42,33 @@ object keytipConfigMod {
     }
   }
   
-  @js.native
   trait IKeytipConfigItem extends StObject {
     
     /**
       * Children keytips of this keytip
       */
-    var children: js.UndefOr[js.Array[IKeytipConfigItem]] = js.native
+    var children: js.UndefOr[js.Array[IKeytipConfigItem]] = js.undefined
     
     /**
       * Content for the keytip
       */
-    var content: String = js.native
+    var content: String
     
     /**
       * Identifier for the keytip, to be used to access in the configMap
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Optional props in IKeytipProps
       */
-    var optionalProps: js.UndefOr[PartialIKeytipProps] = js.native
+    var optionalProps: js.UndefOr[PartialIKeytipProps] = js.undefined
     
     /**
       * Key Sequence for this keytip only
       * If sequence is not defined it will be derived from the content string
       */
-    var sequence: js.UndefOr[String] = js.native
+    var sequence: js.UndefOr[String] = js.undefined
   }
   object IKeytipConfigItem {
     

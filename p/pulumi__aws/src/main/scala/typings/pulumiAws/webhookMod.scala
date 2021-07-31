@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webhookMod {
@@ -59,6 +58,10 @@ object webhookMod {
   /* static members */
   object Webhook {
     
+    @JSImport("@pulumi/aws/codebuild/webhook", "Webhook")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Webhook resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,45 +71,39 @@ object webhookMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codebuild/webhook", "Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Webhook = js.native
-    @JSImport("@pulumi/aws/codebuild/webhook", "Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Webhook = js.native
-    @JSImport("@pulumi/aws/codebuild/webhook", "Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebhookState): Webhook = js.native
-    @JSImport("@pulumi/aws/codebuild/webhook", "Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebhookState, opts: CustomResourceOptions): Webhook = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebhookState): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebhookState, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
     
     /**
       * Returns true if the given object is an instance of Webhook.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codebuild/webhook", "Webhook.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/webhook.Webhook */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/webhook.Webhook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codebuild/webhook.Webhook */ Boolean]
   }
   
-  @js.native
   trait WebhookArgs extends StObject {
     
     /**
       * A regular expression used to determine which branches get built. Default is all branches are built. It is recommended to use `filterGroup` over `branchFilter`.
       */
-    val branchFilter: js.UndefOr[Input[String]] = js.native
+    val branchFilter: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information about the webhook's trigger. Filter group blocks are documented below.
       */
-    val filterGroups: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]]]] = js.native
+    val filterGroups: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]]]] = js.undefined
     
     /**
       * The name of the build project.
       */
-    val projectName: Input[String] = js.native
+    val projectName: Input[String]
   }
   object WebhookArgs {
     
@@ -139,38 +136,37 @@ object webhookMod {
     }
   }
   
-  @js.native
   trait WebhookState extends StObject {
     
     /**
       * A regular expression used to determine which branches get built. Default is all branches are built. It is recommended to use `filterGroup` over `branchFilter`.
       */
-    val branchFilter: js.UndefOr[Input[String]] = js.native
+    val branchFilter: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information about the webhook's trigger. Filter group blocks are documented below.
       */
-    val filterGroups: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]]]] = js.native
+    val filterGroups: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]]]] = js.undefined
     
     /**
       * The CodeBuild endpoint where webhook events are sent.
       */
-    val payloadUrl: js.UndefOr[Input[String]] = js.native
+    val payloadUrl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the build project.
       */
-    val projectName: js.UndefOr[Input[String]] = js.native
+    val projectName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The secret token of the associated repository. Not returned by the CodeBuild API for all source types.
       */
-    val secret: js.UndefOr[Input[String]] = js.native
+    val secret: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URL to the webhook.
       */
-    val url: js.UndefOr[Input[String]] = js.native
+    val url: js.UndefOr[Input[String]] = js.undefined
   }
   object WebhookState {
     

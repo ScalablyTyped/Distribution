@@ -3,35 +3,36 @@ package typings.bitwise
 import typings.bitwise.bitwiseTypesMod.Bit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bitwiseMod {
   
+  @JSImport("bitwise/integer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
     
-    @JSImport("bitwise/integer", "default.getBit")
+    @JSImport("bitwise/integer", JSImport.Default)
     @js.native
-    def getBit(int32: Double, position: Double): Bit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitwise/integer", "default.setBit")
-    @js.native
-    def setBit(int32: Double, position: Double, value: Bit): Bit = js.native
+    @scala.inline
+    def getBit(int32: Double, position: Double): Bit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBit")(int32.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Bit]
     
-    @JSImport("bitwise/integer", "default.toggleBit")
-    @js.native
-    def toggleBit(int32: Double, position: Double): Double = js.native
+    @scala.inline
+    def setBit(int32: Double, position: Double, value: Bit): Bit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBit")(int32.asInstanceOf[js.Any], position.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Bit]
+    
+    @scala.inline
+    def toggleBit(int32: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleBit")(int32.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
-  @JSImport("bitwise/integer", "getBit")
-  @js.native
-  def getBit(int32: Double, position: Double): Bit = js.native
+  @scala.inline
+  def getBit(int32: Double, position: Double): Bit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBit")(int32.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Bit]
   
-  @JSImport("bitwise/integer", "setBit")
-  @js.native
-  def setBit(int32: Double, position: Double, value: Bit): Bit = js.native
+  @scala.inline
+  def setBit(int32: Double, position: Double, value: Bit): Bit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBit")(int32.asInstanceOf[js.Any], position.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Bit]
   
-  @JSImport("bitwise/integer", "toggleBit")
-  @js.native
-  def toggleBit(int32: Double, position: Double): Double = js.native
+  @scala.inline
+  def toggleBit(int32: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleBit")(int32.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

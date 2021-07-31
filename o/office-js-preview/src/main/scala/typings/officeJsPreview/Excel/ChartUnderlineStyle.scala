@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait ChartUnderlineStyle extends StObject
 object ChartUnderlineStyle extends StObject {
   
   @js.native
-  sealed trait none extends ChartUnderlineStyle
+  sealed trait none
+    extends StObject
+       with ChartUnderlineStyle
   
   @js.native
-  sealed trait single extends ChartUnderlineStyle
+  sealed trait single
+    extends StObject
+       with ChartUnderlineStyle
 }

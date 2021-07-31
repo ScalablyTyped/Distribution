@@ -8,15 +8,15 @@ import typings.backblazeB2.backblazeB2Strings.stream
 import typings.backblazeB2.backblazeB2Strings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DownlaodFileByNameOpts extends DownloadFileOpts {
+trait DownlaodFileByNameOpts
+  extends StObject
+     with DownloadFileOpts {
   
-  var bucketName: String = js.native
+  var bucketName: String
   
-  var fileName: String = js.native
+  var fileName: String
 }
 object DownlaodFileByNameOpts {
   

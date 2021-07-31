@@ -2,10 +2,8 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFJSUtilStatic extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait PDFJSUtilStatic extends StObject {
     * means normalization to (BL,TR) ordering. For systems with origin in the
     * top-left, this means (TL,BR) ordering.
     **/
-  def normalizeRect(rect: js.Array[Double]): js.Array[Double] = js.native
+  def normalizeRect(rect: js.Array[Double]): js.Array[Double]
 }
 object PDFJSUtilStatic {
   

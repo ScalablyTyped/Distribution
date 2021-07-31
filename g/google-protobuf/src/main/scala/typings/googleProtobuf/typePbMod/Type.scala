@@ -10,7 +10,6 @@ import typings.googleProtobuf.sourceContextPbMod.SourceContext
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/type_pb", "Type")
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Type () extends Message {
   
   def addFields(): Field = js.native
-  def addFields(value: js.UndefOr[scala.Nothing], index: Double): Field = js.native
+  def addFields(value: Unit, index: Double): Field = js.native
   def addFields(value: Field): Field = js.native
   def addFields(value: Field, index: Double): Field = js.native
   
@@ -26,7 +25,7 @@ class Type () extends Message {
   def addOneofs(value: String, index: Double): String = js.native
   
   def addOptions(): Option = js.native
-  def addOptions(value: js.UndefOr[scala.Nothing], index: Double): Option = js.native
+  def addOptions(value: Unit, index: Double): Option = js.native
   def addOptions(value: Option): Option = js.native
   def addOptions(value: Option, index: Double): Option = js.native
   
@@ -72,13 +71,11 @@ object Type {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Type.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): Type = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Type]
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Type.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: Type, reader: BinaryReader): Type = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: Type, reader: BinaryReader): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Type]
   
   @JSImport("google-protobuf/google/protobuf/type_pb", "Type.extensions")
   @js.native
@@ -93,28 +90,25 @@ object Type {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Type.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: Type, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: Type, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Type.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: Type): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: Type): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var fieldsList: js.Array[typings.googleProtobuf.typePbMod.Field.AsObject] = js.native
+    var fieldsList: js.Array[typings.googleProtobuf.typePbMod.Field.AsObject]
     
-    var name: String = js.native
+    var name: String
     
-    var oneofsList: js.Array[String] = js.native
+    var oneofsList: js.Array[String]
     
-    var optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject] = js.native
+    var optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]
     
-    var sourceContext: js.UndefOr[typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject] = js.native
+    var sourceContext: js.UndefOr[typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject] = js.undefined
     
-    var syntax: Syntax = js.native
+    var syntax: Syntax
   }
   object AsObject {
     

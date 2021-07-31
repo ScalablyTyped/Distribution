@@ -2,17 +2,15 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conflicttarget extends StObject {
   
-  var columns: js.UndefOr[js.Array[String]] = js.native
+  var columns: js.UndefOr[js.Array[String]] = js.undefined
   
-  var conflict_target: js.UndefOr[String | js.Array[String]] = js.native
+  var conflict_target: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var overwrite: js.UndefOr[js.Array[String]] = js.native
+  var overwrite: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Conflicttarget {
   

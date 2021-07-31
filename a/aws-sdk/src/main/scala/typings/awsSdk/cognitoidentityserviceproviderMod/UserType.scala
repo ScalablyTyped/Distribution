@@ -2,46 +2,44 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserType extends StObject {
   
   /**
     * A container with information about the user type attributes.
     */
-  var Attributes: js.UndefOr[AttributeListType] = js.native
+  var Attributes: js.UndefOr[AttributeListType] = js.undefined
   
   /**
     * Specifies whether the user is enabled.
     */
-  var Enabled: js.UndefOr[BooleanType] = js.native
+  var Enabled: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * The MFA options for the user.
     */
-  var MFAOptions: js.UndefOr[MFAOptionListType] = js.native
+  var MFAOptions: js.UndefOr[MFAOptionListType] = js.undefined
   
   /**
     * The creation date of the user.
     */
-  var UserCreateDate: js.UndefOr[DateType] = js.native
+  var UserCreateDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The last modified date of the user.
     */
-  var UserLastModifiedDate: js.UndefOr[DateType] = js.native
+  var UserLastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The user status. Can be one of the following:   UNCONFIRMED - User has been created but not confirmed.   CONFIRMED - User has been confirmed.   ARCHIVED - User is no longer active.   COMPROMISED - User is disabled due to a potential security threat.   UNKNOWN - User status is not known.   RESET_REQUIRED - User is confirmed, but the user must request a code and reset his or her password before he or she can sign in.   FORCE_CHANGE_PASSWORD - The user is confirmed and the user can sign in using a temporary password, but on first sign-in, the user must change his or her password to a new value before doing anything else.   
     */
-  var UserStatus: js.UndefOr[UserStatusType] = js.native
+  var UserStatus: js.UndefOr[UserStatusType] = js.undefined
   
   /**
     * The user name of the user you wish to describe.
     */
-  var Username: js.UndefOr[UsernameType] = js.native
+  var Username: js.UndefOr[UsernameType] = js.undefined
 }
 object UserType {
   

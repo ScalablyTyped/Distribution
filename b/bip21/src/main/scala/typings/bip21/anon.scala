@@ -2,17 +2,15 @@ package typings.bip21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
   }
   object Address {
     

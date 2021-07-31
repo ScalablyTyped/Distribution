@@ -4,19 +4,19 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies an interface for a {@link FilePicker} */
-@js.native
-trait XFilePicker extends XExecutableDialog {
+trait XFilePicker
+  extends StObject
+     with XExecutableDialog {
   
   /**
     * Returns the directory that the file dialog is currently showing or was last showing before closing the dialog with Ok. If the user did cancel the
     * dialog, the returned value is undefined.
     * @returns The directory in URL format, must conform to [Rfc1738]{@link url="http://www.w3.org/Addressing/rfc1738.txt"} .
     */
-  var DisplayDirectory: String = js.native
+  var DisplayDirectory: String
   
   /**
     * Returns a sequence of the selected files including path information in URL format, conforming to [Rfc1738]{@link
@@ -32,14 +32,14 @@ trait XFilePicker extends XExecutableDialog {
     * @deprecated Deprecateduse com::sun::star::ui::dialogs::XFilePicker2::getSelectedFiles instead
     * @returns The complete path of the file or directory currently selected in URL format. This always returns only the first entry of the sequence. ;   **Note
     */
-  val Files: SafeArray[String] = js.native
+  val Files: SafeArray[String]
   
   /**
     * Returns the directory that the file dialog is currently showing or was last showing before closing the dialog with Ok. If the user did cancel the
     * dialog, the returned value is undefined.
     * @returns The directory in URL format, must conform to [Rfc1738]{@link url="http://www.w3.org/Addressing/rfc1738.txt"} .
     */
-  def getDisplayDirectory(): String = js.native
+  def getDisplayDirectory(): String
   
   /**
     * Returns a sequence of the selected files including path information in URL format, conforming to [Rfc1738]{@link
@@ -55,20 +55,20 @@ trait XFilePicker extends XExecutableDialog {
     * @deprecated Deprecateduse com::sun::star::ui::dialogs::XFilePicker2::getSelectedFiles instead
     * @returns The complete path of the file or directory currently selected in URL format. This always returns only the first entry of the sequence. ;   **Note
     */
-  def getFiles(): SafeArray[String] = js.native
+  def getFiles(): SafeArray[String]
   
   /**
     * Sets the default string that appears in the file name box of a {@link FilePicker} .
     * @param aName  Specifies the default file name, displayed when the {@link FilePicker} is shown. The implementation may accept any string, and does not ha
     */
-  def setDefaultName(aName: String): Unit = js.native
+  def setDefaultName(aName: String): Unit
   
   /**
     * Sets the directory that the file dialog initially displays.
     * @param aDirectory Specifies the initial directory in URL format. The given URL must conform to [Rfc1738]{@link url="http://www.w3.org/Addressing/rfc1738
     * @throws com::sun::star::lang::IllegalArgumentException if the URL is invalid (doesn't conform to [Rfc1738]{@link url="http://www.w3.org/Addressing/rfc173
     */
-  def setDisplayDirectory(aDirectory: String): Unit = js.native
+  def setDisplayDirectory(aDirectory: String): Unit
   
   /**
     * Enable/disable multi-selection mode
@@ -76,7 +76,7 @@ trait XFilePicker extends XExecutableDialog {
     * If the multi-selection mode is enabled, multiple files may be selected by the user else only one file selection at a time is possible
     * @param bMode  A value of `TRUE` enables the multi-selection mode.  A value of `FALSE` disables the multi-selection mode, this is the default.
     */
-  def setMultiSelectionMode(bMode: Boolean): Unit = js.native
+  def setMultiSelectionMode(bMode: Boolean): Unit
 }
 object XFilePicker {
   

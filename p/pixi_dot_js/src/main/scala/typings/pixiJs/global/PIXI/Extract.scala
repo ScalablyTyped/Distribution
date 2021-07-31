@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,6 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.Extract")
 @js.native
 class Extract protected ()
-  extends typings.pixiJs.PIXI.Extract {
+  extends StObject
+     with typings.pixiJs.PIXI.Extract {
   def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
 }

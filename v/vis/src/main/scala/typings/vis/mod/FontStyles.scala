@@ -2,21 +2,19 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontStyles extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var face: js.UndefOr[String] = js.native
+  var face: js.UndefOr[String] = js.undefined
   
-  var mod: js.UndefOr[String] = js.native
+  var mod: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var vadjust: js.UndefOr[Double] = js.native
+  var vadjust: js.UndefOr[Double] = js.undefined
 }
 object FontStyles {
   

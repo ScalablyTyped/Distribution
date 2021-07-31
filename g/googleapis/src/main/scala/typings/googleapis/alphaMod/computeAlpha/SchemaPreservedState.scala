@@ -3,25 +3,23 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Preserved state for a given instance.
   */
-@js.native
 trait SchemaPreservedState extends StObject {
   
   /**
     * Preserved disks defined for this instance. This map is keyed with the
     * device names of the disks.
     */
-  var disks: js.UndefOr[StringDictionary[SchemaPreservedStatePreservedDisk]] = js.native
+  var disks: js.UndefOr[StringDictionary[SchemaPreservedStatePreservedDisk]] = js.undefined
   
   /**
     * Preserved metadata defined for this instance.
     */
-  var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaPreservedState {
   

@@ -2,25 +2,23 @@ package typings.knockback.Knockback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Statistics extends StObject {
   
-  def addModelEvent(event: String): js.Any = js.native
+  def addModelEvent(event: String): js.Any
   
-  def clear(): js.Any = js.native
+  def clear(): js.Any
   
-  def modelEventsStatsString(): js.Any = js.native
+  def modelEventsStatsString(): js.Any
   
-  def register(key: String, obj: js.Any): js.Any = js.native
+  def register(key: String, obj: js.Any): js.Any
   
-  def registeredCount(`type`: js.Any): Double = js.native
+  def registeredCount(`type`: js.Any): Double
   
-  def registeredStatsString(success_message: String): String = js.native
+  def registeredStatsString(success_message: String): String
   
-  def unregister(key: String, obj: js.Any): js.Any = js.native
+  def unregister(key: String, obj: js.Any): js.Any
 }
 object Statistics {
   

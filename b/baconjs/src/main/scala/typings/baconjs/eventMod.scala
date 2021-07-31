@@ -2,10 +2,13 @@ package typings.baconjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventMod {
+  
+  @JSImport("baconjs/types/event", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("baconjs/types/event", JSImport.Default)
   @js.native
@@ -103,46 +106,35 @@ object eventMod {
     var value: V = js.native
   }
   
-  @JSImport("baconjs/types/event", "endEvent")
-  @js.native
-  def endEvent(): End = js.native
+  @scala.inline
+  def endEvent(): End = ^.asInstanceOf[js.Dynamic].applyDynamic("endEvent")().asInstanceOf[End]
   
-  @JSImport("baconjs/types/event", "hasValue")
-  @js.native
-  def hasValue[V](e: Event[V]): /* is baconjs.baconjs/types/event.Value<V> */ Boolean = js.native
+  @scala.inline
+  def hasValue[V](e: Event[V]): /* is baconjs.baconjs/types/event.Value<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Value<V> */ Boolean]
   
-  @JSImport("baconjs/types/event", "initialEvent")
-  @js.native
-  def initialEvent[V](value: V): Initial[V] = js.native
+  @scala.inline
+  def initialEvent[V](value: V): Initial[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("initialEvent")(value.asInstanceOf[js.Any]).asInstanceOf[Initial[V]]
   
-  @JSImport("baconjs/types/event", "isEnd")
-  @js.native
-  def isEnd[V](e: Event[V]): /* is baconjs.baconjs/types/event.End */ Boolean = js.native
+  @scala.inline
+  def isEnd[V](e: Event[V]): /* is baconjs.baconjs/types/event.End */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnd")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.End */ Boolean]
   
-  @JSImport("baconjs/types/event", "isError")
-  @js.native
-  def isError[V](e: Event[V]): /* is baconjs.baconjs/types/event.Error */ Boolean = js.native
+  @scala.inline
+  def isError[V](e: Event[V]): /* is baconjs.baconjs/types/event.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Error */ Boolean]
   
-  @JSImport("baconjs/types/event", "isEvent")
-  @js.native
-  def isEvent[V](e: js.Any): /* is baconjs.baconjs/types/event.Event<V> */ Boolean = js.native
+  @scala.inline
+  def isEvent[V](e: js.Any): /* is baconjs.baconjs/types/event.Event<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEvent")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Event<V> */ Boolean]
   
-  @JSImport("baconjs/types/event", "isInitial")
-  @js.native
-  def isInitial[V](e: Event[V]): /* is baconjs.baconjs/types/event.Initial<V> */ Boolean = js.native
+  @scala.inline
+  def isInitial[V](e: Event[V]): /* is baconjs.baconjs/types/event.Initial<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInitial")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Initial<V> */ Boolean]
   
-  @JSImport("baconjs/types/event", "isNext")
-  @js.native
-  def isNext[V](e: Event[V]): /* is baconjs.baconjs/types/event.Next<V> */ Boolean = js.native
+  @scala.inline
+  def isNext[V](e: Event[V]): /* is baconjs.baconjs/types/event.Next<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNext")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Next<V> */ Boolean]
   
-  @JSImport("baconjs/types/event", "nextEvent")
-  @js.native
-  def nextEvent[V](value: V): Next[V] = js.native
+  @scala.inline
+  def nextEvent[V](value: V): Next[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextEvent")(value.asInstanceOf[js.Any]).asInstanceOf[Next[V]]
   
-  @JSImport("baconjs/types/event", "toEvent")
-  @js.native
-  def toEvent[V](x: V): Event[V] = js.native
-  @JSImport("baconjs/types/event", "toEvent")
-  @js.native
-  def toEvent[V](x: Event[V]): Event[V] = js.native
+  @scala.inline
+  def toEvent[V](x: V): Event[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("toEvent")(x.asInstanceOf[js.Any]).asInstanceOf[Event[V]]
+  @scala.inline
+  def toEvent[V](x: Event[V]): Event[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("toEvent")(x.asInstanceOf[js.Any]).asInstanceOf[Event[V]]
 }

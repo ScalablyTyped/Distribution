@@ -2,24 +2,22 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLPopup extends StObject {
   
-  def Hide(): Unit = js.native
+  def Hide(): Unit
   
   @JSName("MSHTML.HTMLPopup_typekey")
-  var MSHTMLDotHTMLPopup_typekey: HTMLPopup = js.native
+  var MSHTMLDotHTMLPopup_typekey: HTMLPopup
   
-  def Show(x: Double, y: Double, w: Double, h: Double, pElement: js.Any): Unit = js.native
+  def Show(x: Double, y: Double, w: Double, h: Double, pElement: js.Any): Unit
   
-  val constructor: js.Any = js.native
+  val constructor: js.Any
   
-  val document: IHTMLDocument = js.native
+  val document: IHTMLDocument
   
-  val isOpen: Boolean = js.native
+  val isOpen: Boolean
 }
 object HTMLPopup {
   

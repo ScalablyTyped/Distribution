@@ -4,7 +4,6 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,7 +36,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Phaser.GameObjects.DynamicBitmapText")
 @js.native
 class DynamicBitmapText protected ()
-  extends typings.phaser.Phaser.GameObjects.DynamicBitmapText {
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.DynamicBitmapText {
   /**
     * 
     * @param scene The Scene to which this Game Object belongs. It can only belong to one Scene at any given time.
@@ -51,46 +51,11 @@ class DynamicBitmapText protected ()
   def this(scene: Scene, x: Double, y: Double, font: String) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: String) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String]) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: js.UndefOr[scala.Nothing], size: Double) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String], size: Double) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: js.UndefOr[scala.Nothing],
-    size: js.UndefOr[scala.Nothing],
-    align: integer
-  ) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: js.UndefOr[scala.Nothing],
-    size: Double,
-    align: integer
-  ) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: String,
-    size: js.UndefOr[scala.Nothing],
-    align: integer
-  ) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Double) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double, align: integer) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: js.Array[String],
-    size: js.UndefOr[scala.Nothing],
-    align: integer
-  ) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Unit, align: integer) = this()
   def this(
     scene: Scene,
     x: Double,
@@ -100,4 +65,61 @@ class DynamicBitmapText protected ()
     size: Double,
     align: integer
   ) = this()
+  def this(
+    scene: Scene,
+    x: Double,
+    y: Double,
+    font: String,
+    text: js.Array[String],
+    size: Unit,
+    align: integer
+  ) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Double, align: integer) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Unit, align: integer) = this()
+  
+  /**
+    * The depth of this Game Object within the Scene.
+    * 
+    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
+    * of Game Objects, without actually moving their position in the display list.
+    * 
+    * The default depth is zero. A Game Object with a higher depth
+    * value will always render in front of one with a lower value.
+    * 
+    * Setting the depth will queue a depth sort event within the Scene.
+    */
+  /* CompleteClass */
+  var depth: Double = js.native
+  
+  /**
+    * The depth of this Game Object within the Scene.
+    * 
+    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
+    * of Game Objects, without actually moving their position in the display list.
+    * 
+    * The default depth is zero. A Game Object with a higher depth
+    * value will always render in front of one with a lower value.
+    * 
+    * Setting the depth will queue a depth sort event within the Scene.
+    * @param value The depth of this Game Object.
+    */
+  /* CompleteClass */
+  override def setDepth(value: integer): this.type = js.native
+  
+  /**
+    * Sets the visibility of this Game Object.
+    * 
+    * An invisible Game Object will skip rendering, but will still process update logic.
+    * @param value The visible state of the Game Object.
+    */
+  /* CompleteClass */
+  override def setVisible(value: Boolean): this.type = js.native
+  
+  /**
+    * The visible state of the Game Object.
+    * 
+    * An invisible Game Object will skip rendering, but will still process update logic.
+    */
+  /* CompleteClass */
+  var visible: Boolean = js.native
 }

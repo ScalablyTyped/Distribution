@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse extends StObject {
   
   /** Streaming annotation results. */
-  var annotationResults: js.UndefOr[GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults] = js.native
+  var annotationResults: js.UndefOr[GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults] = js.undefined
   
   /**
     * Google Cloud Storage URI that stores annotation results of one streaming session in JSON format. It is the annotation_result_storage_directory from the request followed by
     * '/cloud_project_number-session_id'.
     */
-  var annotationResultsUri: js.UndefOr[String] = js.native
+  var annotationResultsUri: js.UndefOr[String] = js.undefined
   
   /** If set, returns a google.rpc.Status message that specifies the error for the operation. */
-  var error: js.UndefOr[GoogleRpcStatus] = js.native
+  var error: js.UndefOr[GoogleRpcStatus] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse {
   

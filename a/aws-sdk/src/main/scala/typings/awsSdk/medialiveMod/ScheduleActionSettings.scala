@@ -2,61 +2,59 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleActionSettings extends StObject {
   
   /**
     * Action to insert HLS ID3 segment tagging
     */
-  var HlsId3SegmentTaggingSettings: js.UndefOr[HlsId3SegmentTaggingScheduleActionSettings] = js.native
+  var HlsId3SegmentTaggingSettings: js.UndefOr[HlsId3SegmentTaggingScheduleActionSettings] = js.undefined
   
   /**
     * Action to insert HLS metadata
     */
-  var HlsTimedMetadataSettings: js.UndefOr[HlsTimedMetadataScheduleActionSettings] = js.native
+  var HlsTimedMetadataSettings: js.UndefOr[HlsTimedMetadataScheduleActionSettings] = js.undefined
   
   /**
     * Action to prepare an input for a future immediate input switch
     */
-  var InputPrepareSettings: js.UndefOr[InputPrepareScheduleActionSettings] = js.native
+  var InputPrepareSettings: js.UndefOr[InputPrepareScheduleActionSettings] = js.undefined
   
   /**
     * Action to switch the input
     */
-  var InputSwitchSettings: js.UndefOr[InputSwitchScheduleActionSettings] = js.native
+  var InputSwitchSettings: js.UndefOr[InputSwitchScheduleActionSettings] = js.undefined
   
   /**
     * Action to pause or unpause one or both channel pipelines
     */
-  var PauseStateSettings: js.UndefOr[PauseStateScheduleActionSettings] = js.native
+  var PauseStateSettings: js.UndefOr[PauseStateScheduleActionSettings] = js.undefined
   
   /**
     * Action to insert SCTE-35 return_to_network message
     */
-  var Scte35ReturnToNetworkSettings: js.UndefOr[Scte35ReturnToNetworkScheduleActionSettings] = js.native
+  var Scte35ReturnToNetworkSettings: js.UndefOr[Scte35ReturnToNetworkScheduleActionSettings] = js.undefined
   
   /**
     * Action to insert SCTE-35 splice_insert message
     */
-  var Scte35SpliceInsertSettings: js.UndefOr[Scte35SpliceInsertScheduleActionSettings] = js.native
+  var Scte35SpliceInsertSettings: js.UndefOr[Scte35SpliceInsertScheduleActionSettings] = js.undefined
   
   /**
     * Action to insert SCTE-35 time_signal message
     */
-  var Scte35TimeSignalSettings: js.UndefOr[Scte35TimeSignalScheduleActionSettings] = js.native
+  var Scte35TimeSignalSettings: js.UndefOr[Scte35TimeSignalScheduleActionSettings] = js.undefined
   
   /**
     * Action to activate a static image overlay
     */
-  var StaticImageActivateSettings: js.UndefOr[StaticImageActivateScheduleActionSettings] = js.native
+  var StaticImageActivateSettings: js.UndefOr[StaticImageActivateScheduleActionSettings] = js.undefined
   
   /**
     * Action to deactivate a static image overlay
     */
-  var StaticImageDeactivateSettings: js.UndefOr[StaticImageDeactivateScheduleActionSettings] = js.native
+  var StaticImageDeactivateSettings: js.UndefOr[StaticImageDeactivateScheduleActionSettings] = js.undefined
 }
 object ScheduleActionSettings {
   

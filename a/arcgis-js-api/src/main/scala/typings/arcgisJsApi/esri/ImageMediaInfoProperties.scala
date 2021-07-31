@@ -2,25 +2,25 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageMediaInfoProperties extends MediaInfoProperties {
+trait ImageMediaInfoProperties
+  extends StObject
+     with MediaInfoProperties {
   
   /**
     * Refresh interval of the layer in minutes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#refreshInterval)
     */
-  var refreshInterval: js.UndefOr[Double] = js.native
+  var refreshInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the value format of the image media element and how the images should be retrieved.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#value)
     */
-  var value: js.UndefOr[ImageMediaInfoValueProperties] = js.native
+  var value: js.UndefOr[ImageMediaInfoValueProperties] = js.undefined
 }
 object ImageMediaInfoProperties {
   

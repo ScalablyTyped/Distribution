@@ -4,37 +4,32 @@ import typings.std.TypedPropertyDescriptor
 import typings.uifabricUtilities.anon.Configurable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoizeMod {
   
-  @JSImport("@uifabric/utilities/lib/memoize", "createMemoizer")
+  @JSImport("@uifabric/utilities/lib/memoize", JSImport.Namespace)
   @js.native
-  def createMemoizer[F /* <: js.Function1[/* input */ js.Any, _] */](getValue: F): F = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uifabric/utilities/lib/memoize", "memoize")
-  @js.native
-  def memoize[T /* <: js.Function */](target: js.Any, key: String, descriptor: TypedPropertyDescriptor[T]): Configurable[T] = js.native
+  @scala.inline
+  def createMemoizer[F /* <: js.Function1[/* input */ js.Any, js.Any] */](getValue: F): F = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoizer")(getValue.asInstanceOf[js.Any]).asInstanceOf[F]
   
-  @JSImport("@uifabric/utilities/lib/memoize", "memoizeFunction")
-  @js.native
-  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T): T = js.native
-  @JSImport("@uifabric/utilities/lib/memoize", "memoizeFunction")
-  @js.native
-  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: js.UndefOr[scala.Nothing], ignoreNullOrUndefinedResult: Boolean): T = js.native
-  @JSImport("@uifabric/utilities/lib/memoize", "memoizeFunction")
-  @js.native
-  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: Double): T = js.native
-  @JSImport("@uifabric/utilities/lib/memoize", "memoizeFunction")
-  @js.native
-  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: Double, ignoreNullOrUndefinedResult: Boolean): T = js.native
+  @scala.inline
+  def memoize[T /* <: js.Function */](target: js.Any, key: String, descriptor: TypedPropertyDescriptor[T]): Configurable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Configurable[T]]
   
-  @JSImport("@uifabric/utilities/lib/memoize", "resetMemoizations")
-  @js.native
-  def resetMemoizations(): Unit = js.native
+  @scala.inline
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: Double, ignoreNullOrUndefinedResult: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any], ignoreNullOrUndefinedResult.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: Unit, ignoreNullOrUndefinedResult: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any], ignoreNullOrUndefinedResult.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@uifabric/utilities/lib/memoize", "setMemoizeWeakMap")
-  @js.native
-  def setMemoizeWeakMap(weakMap: js.Any): Unit = js.native
+  @scala.inline
+  def resetMemoizations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetMemoizations")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def setMemoizeWeakMap(weakMap: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMemoizeWeakMap")(weakMap.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

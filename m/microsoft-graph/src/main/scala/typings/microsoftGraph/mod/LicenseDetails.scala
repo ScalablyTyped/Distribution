@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LicenseDetails extends Entity {
+trait LicenseDetails
+  extends StObject
+     with Entity {
   
   // Information about the service plans assigned with the license. Read-only, Not nullable
-  var servicePlans: js.UndefOr[js.Array[ServicePlanInfo]] = js.native
+  var servicePlans: js.UndefOr[js.Array[ServicePlanInfo]] = js.undefined
   
   /**
     * Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object.
     * Read-only
     */
-  var skuId: js.UndefOr[NullableOption[String]] = js.native
+  var skuId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
     * Read-only
     */
-  var skuPartNumber: js.UndefOr[NullableOption[String]] = js.native
+  var skuPartNumber: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object LicenseDetails {
   

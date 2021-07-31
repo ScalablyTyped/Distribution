@@ -2,41 +2,39 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCompilationJobRequest extends StObject {
   
   /**
     * A name for the model compilation job. The name must be unique within the AWS Region and within your AWS account. 
     */
-  var CompilationJobName: EntityName = js.native
+  var CompilationJobName: EntityName
   
   /**
     * Provides information about the location of input model artifacts, the name and shape of the expected data inputs, and the framework in which the model was trained.
     */
-  var InputConfig: typings.awsSdk.sagemakerMod.InputConfig = js.native
+  var InputConfig: typings.awsSdk.sagemakerMod.InputConfig
   
   /**
     * Provides information about the output location for the compiled model and the target device the model runs on.
     */
-  var OutputConfig: typings.awsSdk.sagemakerMod.OutputConfig = js.native
+  var OutputConfig: typings.awsSdk.sagemakerMod.OutputConfig
   
   /**
     * The Amazon Resource Name (ARN) of an IAM role that enables Amazon SageMaker to perform tasks on your behalf.  During model compilation, Amazon SageMaker needs your permission to:   Read input data from an S3 bucket   Write model artifacts to an S3 bucket   Write logs to Amazon CloudWatch Logs   Publish metrics to Amazon CloudWatch   You grant permissions for all of these tasks to an IAM role. To pass this role to Amazon SageMaker, the caller of this API must have the iam:PassRole permission. For more information, see Amazon SageMaker Roles. 
     */
-  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
   
   /**
     * Specifies a limit to how long a model compilation job can run. When the job reaches the time limit, Amazon SageMaker ends the compilation job. Use this API to cap model training costs.
     */
-  var StoppingCondition: typings.awsSdk.sagemakerMod.StoppingCondition = js.native
+  var StoppingCondition: typings.awsSdk.sagemakerMod.StoppingCondition
   
   /**
     * An array of key-value pairs that you want to use to organize and track your AWS resource costs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide. 
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateCompilationJobRequest {
   

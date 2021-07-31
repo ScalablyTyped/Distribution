@@ -11,8 +11,8 @@ Node.js credstash implementation
 | Full name          | nodecredstash |
 | Keywords           | credstash, kms, aws, node.js |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 424988 |
+| # dependents       | 11 |
+| # downloads        | 568057 |
 | # stars            | 1 |
 
 ## Links

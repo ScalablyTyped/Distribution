@@ -5,26 +5,26 @@ import typings.rcPicker.interfaceMod.CustomFormat
 import typings.rcPicker.interfaceMod.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useValueTextsMod {
   
-  @JSImport("rc-picker/es/hooks/useValueTexts", JSImport.Default)
+  @JSImport("rc-picker/es/hooks/useValueTexts", JSImport.Namespace)
   @js.native
-  def default[DateType](value: DateType, hasFormatListGenerateConfigLocale: ValueTextConfig[DateType]): js.Tuple2[js.Array[String], String] = js.native
-  @JSImport("rc-picker/es/hooks/useValueTexts", JSImport.Default)
-  @js.native
-  def default[DateType](value: Null, hasFormatListGenerateConfigLocale: ValueTextConfig[DateType]): js.Tuple2[js.Array[String], String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[DateType](value: DateType, hasFormatListGenerateConfigLocale: ValueTextConfig[DateType]): js.Tuple2[js.Array[String], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], hasFormatListGenerateConfigLocale.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[String], String]]
+  @scala.inline
+  def default[DateType](value: Null, hasFormatListGenerateConfigLocale: ValueTextConfig[DateType]): js.Tuple2[js.Array[String], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], hasFormatListGenerateConfigLocale.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[String], String]]
+  
   trait ValueTextConfig[DateType] extends StObject {
     
-    var formatList: js.Array[String | CustomFormat[DateType]] = js.native
+    var formatList: js.Array[String | CustomFormat[DateType]]
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    var locale: Locale = js.native
+    var locale: Locale
   }
   object ValueTextConfig {
     
@@ -39,7 +39,7 @@ object useValueTextsMod {
     }
     
     @scala.inline
-    implicit class ValueTextConfigMutableBuilder[Self <: ValueTextConfig[_], DateType] (val x: Self with ValueTextConfig[DateType]) extends AnyVal {
+    implicit class ValueTextConfigMutableBuilder[Self <: ValueTextConfig[?], DateType] (val x: Self & ValueTextConfig[DateType]) extends AnyVal {
       
       @scala.inline
       def setFormatList(value: js.Array[String | CustomFormat[DateType]]): Self = StObject.set(x, "formatList", value.asInstanceOf[js.Any])

@@ -11,8 +11,8 @@ React utility to merge refs.
 | Full name          | react-merge-refs |
 | Keywords           | react, utility, ref |
 | # releases         | 4 |
-| # dependents       | 26 |
-| # downloads        | 449839 |
+| # dependents       | 81 |
+| # downloads        | 1563124 |
 | # stars            | 0 |
 
 ## Links

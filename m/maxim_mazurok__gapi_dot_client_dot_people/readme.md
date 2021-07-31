@@ -10,9 +10,9 @@ TypeScript typings for People API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.people |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 41 |
 | # dependents       | 1 |
-| # downloads        | 159 |
+| # downloads        | 4851 |
 | # stars            | 0 |
 
 ## Links

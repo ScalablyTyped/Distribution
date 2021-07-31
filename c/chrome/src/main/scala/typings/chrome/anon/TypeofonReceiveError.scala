@@ -3,15 +3,13 @@ package typings.chrome.anon
 import typings.chrome.chrome.serial.onReceiveError.OnReceiveErrorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofonReceiveError extends StObject {
   
-  val OnReceiveErrorEnum: Break = js.native
+  val OnReceiveErrorEnum: Break
   
-  def addListener(callback: js.Function1[/* info */ OnReceiveErrorInfo, Unit]): Unit = js.native
+  def addListener(callback: js.Function1[/* info */ OnReceiveErrorInfo, Unit]): Unit
 }
 object TypeofonReceiveError {
   

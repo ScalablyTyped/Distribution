@@ -2,17 +2,15 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identity extends StObject {
   
-  var identity: typings.openfin.identityMod.Identity = js.native
+  var identity: typings.openfin.identityMod.Identity
   
-  var response: String = js.native
+  var response: String
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object Identity {
   

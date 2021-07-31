@@ -2,20 +2,18 @@ package typings.semanticUiCheckbox.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-checkbox.SemanticUI.Checkbox.ClassNameSettings._Impl, keyof semantic-ui-checkbox.SemanticUI.Checkbox.ClassNameSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplChecked extends StObject {
   
-  var checked: js.UndefOr[String] = js.native
+  var checked: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var radio: js.UndefOr[String] = js.native
+  var radio: js.UndefOr[String] = js.undefined
   
-  var readOnly: js.UndefOr[String] = js.native
+  var readOnly: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplChecked {
   

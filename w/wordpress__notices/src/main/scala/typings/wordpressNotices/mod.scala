@@ -7,7 +7,6 @@ import typings.wordpressNotices.wordpressNoticesStrings.default
 import typings.wordpressNotices.wordpressNoticesStrings.snackbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,13 +14,15 @@ object mod {
   /* augmented module */
   object wordpressDataAugmentingMod {
     
-    @JSImport("@wordpress/data", "dispatch")
+    @JSImport("@wordpress/data", JSImport.Namespace)
     @js.native
-    def dispatch_corenotices(key: coreSlashnotices): TypeofimportedActions = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/data", "select")
-    @js.native
-    def select_corenotices(key: coreSlashnotices): TypeofimportedSelectors = js.native
+    @scala.inline
+    def dispatch_corenotices(key: coreSlashnotices): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
+    
+    @scala.inline
+    def select_corenotices(key: coreSlashnotices): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -44,12 +45,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait CallbackAction extends Action {
+  trait CallbackAction
+    extends StObject
+       with Action {
     
-    def callback(): Unit = js.native
+    def callback(): Unit
     
-    var label: String = js.native
+    var label: String
   }
   object CallbackAction {
     
@@ -70,18 +72,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Notice extends StObject {
     
-    var actions: js.Array[Action] = js.native
+    var actions: js.Array[Action]
     
-    var content: String = js.native
+    var content: String
     
-    var id: String = js.native
+    var id: String
     
-    var isDismissible: Boolean = js.native
+    var isDismissible: Boolean
     
-    var status: Status = js.native
+    var status: Status
   }
   object Notice {
     
@@ -114,42 +115,41 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * User actions to be presented with notice.
       */
-    var actions: js.Array[Action] = js.native
+    var actions: js.Array[Action]
     
     /**
       * Context under which to group notice.
       * @defaultValue `'global'`
       */
-    var context: String = js.native
+    var context: String
     
     /**
       * Identifier for notice. Automatically assigned if not specified.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Whether the notice can be dismissed by user.
       * @defaultValue `true`
       */
-    var isDismissible: Boolean = js.native
+    var isDismissible: Boolean
     
     /**
       * Whether the notice content should be announced to screen readers.
       * @defaultValue `true`
       */
-    var speak: Boolean = js.native
+    var speak: Boolean
     
     /**
       * The type of notice.
       * @defaultValue `'default'`
       */
-    var `type`: default | snackbar = js.native
+    var `type`: default | snackbar
   }
   object Options {
     
@@ -215,12 +215,13 @@ object mod {
     def warning: typings.wordpressNotices.wordpressNoticesStrings.warning = "warning".asInstanceOf[typings.wordpressNotices.wordpressNoticesStrings.warning]
   }
   
-  @js.native
-  trait URLAction extends Action {
+  trait URLAction
+    extends StObject
+       with Action {
     
-    var label: String = js.native
+    var label: String
     
-    var url: String = js.native
+    var url: String
   }
   object URLAction {
     

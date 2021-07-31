@@ -5,45 +5,43 @@ import typings.jqueryContextmenu.anon.Hide
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryContextMenuOptions extends StObject {
   
-  var animation: js.UndefOr[Duration] = js.native
+  var animation: js.UndefOr[Duration] = js.undefined
   
-  var appendTo: js.UndefOr[String] = js.native
+  var appendTo: js.UndefOr[String] = js.undefined
   
-  var autoHide: js.UndefOr[Boolean] = js.native
+  var autoHide: js.UndefOr[Boolean] = js.undefined
   
-  var build: js.UndefOr[js.Function2[/* triggerElement */ JQuery, /* e */ Event, _]] = js.native
+  var build: js.UndefOr[js.Function2[/* triggerElement */ JQuery, /* e */ Event, js.Any]] = js.undefined
   
-  var callback: js.UndefOr[js.Function2[/* key */ js.Any, /* options */ js.Any, _]] = js.native
+  var callback: js.UndefOr[js.Function2[/* key */ js.Any, /* options */ js.Any, js.Any]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var determinePosition: js.UndefOr[js.Function1[/* menu */ JQuery, Unit]] = js.native
+  var determinePosition: js.UndefOr[js.Function1[/* menu */ JQuery, Unit]] = js.undefined
   
-  var events: js.UndefOr[Hide] = js.native
+  var events: js.UndefOr[Hide] = js.undefined
   
-  var itemClickEvent: js.UndefOr[String] = js.native
+  var itemClickEvent: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Any] = js.native
+  var items: js.UndefOr[js.Any] = js.undefined
   
-  var position: js.UndefOr[js.Function3[/* opt */ JQuery, /* x */ Double, /* y */ Double, Unit]] = js.native
+  var position: js.UndefOr[js.Function3[/* opt */ JQuery, /* x */ Double, /* y */ Double, Unit]] = js.undefined
   
-  var positionSubmenu: js.UndefOr[js.Function1[/* menu */ JQuery, Unit]] = js.native
+  var positionSubmenu: js.UndefOr[js.Function1[/* menu */ JQuery, Unit]] = js.undefined
   
-  var reposition: js.UndefOr[Boolean] = js.native
+  var reposition: js.UndefOr[Boolean] = js.undefined
   
-  var selector: String = js.native
+  var selector: String
   
-  var trigger: js.UndefOr[String] = js.native
+  var trigger: js.UndefOr[String] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object JQueryContextMenuOptions {
   
@@ -75,13 +73,13 @@ object JQueryContextMenuOptions {
     def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
     @scala.inline
-    def setBuild(value: (/* triggerElement */ JQuery, /* e */ Event) => _): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
+    def setBuild(value: (/* triggerElement */ JQuery, /* e */ Event) => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
     
     @scala.inline
     def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
     @scala.inline
-    def setCallback(value: (/* key */ js.Any, /* options */ js.Any) => _): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    def setCallback(value: (/* key */ js.Any, /* options */ js.Any) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     @scala.inline
     def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)

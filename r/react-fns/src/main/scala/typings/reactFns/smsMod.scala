@@ -5,7 +5,6 @@ import typings.react.mod.SFC
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object smsMod {
@@ -14,12 +13,13 @@ object smsMod {
   @js.native
   val Sms: SFC[SmsProps] = js.native
   
-  @js.native
-  trait SmsProps extends HTMLAttributes[HTMLAnchorElement] {
+  trait SmsProps
+    extends StObject
+       with HTMLAttributes[HTMLAnchorElement] {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var phone: String = js.native
+    var phone: String
   }
   object SmsProps {
     

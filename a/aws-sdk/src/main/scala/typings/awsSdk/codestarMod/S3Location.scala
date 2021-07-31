@@ -2,21 +2,19 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Location extends StObject {
   
   /**
     * The Amazon S3 object key where the source code files provided with the project request are stored.
     */
-  var bucketKey: js.UndefOr[BucketKey] = js.native
+  var bucketKey: js.UndefOr[BucketKey] = js.undefined
   
   /**
     * The Amazon S3 bucket name where the source code files provided with the project request are stored.
     */
-  var bucketName: js.UndefOr[BucketName] = js.native
+  var bucketName: js.UndefOr[BucketName] = js.undefined
 }
 object S3Location {
   

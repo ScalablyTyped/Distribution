@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseReservedElasticsearchInstanceOfferingResponse extends StObject {
   
   /**
     * The customer-specified identifier used to track this reservation.
     */
-  var ReservationName: js.UndefOr[ReservationToken] = js.native
+  var ReservationName: js.UndefOr[ReservationToken] = js.undefined
   
   /**
     * Details of the reserved Elasticsearch instance which was purchased.
     */
-  var ReservedElasticsearchInstanceId: js.UndefOr[GUID] = js.native
+  var ReservedElasticsearchInstanceId: js.UndefOr[GUID] = js.undefined
 }
 object PurchaseReservedElasticsearchInstanceOfferingResponse {
   

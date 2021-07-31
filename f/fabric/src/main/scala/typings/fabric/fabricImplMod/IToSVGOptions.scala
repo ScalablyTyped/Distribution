@@ -2,36 +2,34 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IToSVGOptions extends StObject {
   
   /**
     * Encoding of SVG output
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * desired height of svg with or without units
     */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * If true xml tag is not included
     */
-  var suppressPreamble: js.UndefOr[Boolean] = js.native
+  var suppressPreamble: js.UndefOr[Boolean] = js.undefined
   
   /**
     * SVG viewbox object
     */
-  var viewBox: js.UndefOr[IViewBox] = js.native
+  var viewBox: js.UndefOr[IViewBox] = js.undefined
   
   /**
     * desired width of svg with or without units
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object IToSVGOptions {
   

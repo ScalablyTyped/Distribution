@@ -6,17 +6,16 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChipProps
-  extends HTMLProps[js.Any] {
+  extends StObject
+     with HTMLProps[js.Any] {
   
   @JSName("onClick")
-  var onClick_ChipProps: js.UndefOr[MouseEventHandler[Chip]] = js.native
+  var onClick_ChipProps: js.UndefOr[MouseEventHandler[Chip]] = js.undefined
   
-  var onClose: js.UndefOr[MouseEventHandler[Chip]] = js.native
+  var onClose: js.UndefOr[MouseEventHandler[Chip]] = js.undefined
 }
 object ChipProps {
   

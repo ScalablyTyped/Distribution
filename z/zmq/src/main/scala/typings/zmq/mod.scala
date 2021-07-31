@@ -3,7 +3,6 @@ package typings.zmq
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,9 @@ object mod {
   
   @JSImport("zmq", "Socket")
   @js.native
-  class Socket () extends EventEmitter {
+  class Socket ()
+    extends StObject
+       with EventEmitter {
     
     // Socket Options
     var _fd: js.Any = js.native
@@ -134,8 +135,8 @@ object mod {
       * @param msg The message
       * @param flags Message flags
       */
-    def send(msg: js.Array[_]): Socket = js.native
-    def send(msg: js.Array[_], flags: Double): Socket = js.native
+    def send(msg: js.Array[js.Any]): Socket = js.native
+    def send(msg: js.Array[js.Any], flags: Double): Socket = js.native
     /**
       * Send the given `msg`.
       *
@@ -215,47 +216,45 @@ object mod {
   @scala.inline
   def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait EventEmitter extends StObject
   
-  @js.native
   trait SocketOptions extends StObject {
     
-    var _fd: Double = js.native
+    var _fd: Double
     
-    var _ioevents: Double = js.native
+    var _ioevents: Double
     
-    var _receiveMore: Double = js.native
+    var _receiveMore: Double
     
-    var _subscribe: Double = js.native
+    var _subscribe: Double
     
-    var _unsubscribe: Double = js.native
+    var _unsubscribe: Double
     
-    var affinity: Double = js.native
+    var affinity: Double
     
-    var backlog: Double = js.native
+    var backlog: Double
     
-    var hwm: Double = js.native
+    var hwm: Double
     
-    var identity: Double = js.native
+    var identity: Double
     
-    var last_endpoint: Double = js.native
+    var last_endpoint: Double
     
-    var linger: Double = js.native
+    var linger: Double
     
-    var mcast_loop: Double = js.native
+    var mcast_loop: Double
     
-    var rate: Double = js.native
+    var rate: Double
     
-    var rcvbuf: Double = js.native
+    var rcvbuf: Double
     
-    var reconnect_ivl: Double = js.native
+    var reconnect_ivl: Double
     
-    var recovery_ivl: Double = js.native
+    var recovery_ivl: Double
     
-    var sndbuf: Double = js.native
+    var sndbuf: Double
     
-    var swap: Double = js.native
+    var swap: Double
   }
   object SocketOptions {
     
@@ -343,34 +342,33 @@ object mod {
     }
   }
   
-  @js.native
   trait SocketTypes extends StObject {
     
-    var dealer: Double = js.native
+    var dealer: Double
     
-    var pair: Double = js.native
+    var pair: Double
     
-    var pub: Double = js.native
+    var pub: Double
     
-    var pull: Double = js.native
+    var pull: Double
     
-    var push: Double = js.native
+    var push: Double
     
-    var rep: Double = js.native
+    var rep: Double
     
-    var req: Double = js.native
+    var req: Double
     
-    var router: Double = js.native
+    var router: Double
     
-    var sub: Double = js.native
+    var sub: Double
     
-    var xpub: Double = js.native
+    var xpub: Double
     
-    var xrep: Double = js.native
+    var xrep: Double
     
-    var xreq: Double = js.native
+    var xreq: Double
     
-    var xsub: Double = js.native
+    var xsub: Double
   }
   object SocketTypes {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCloudFrontDistributionLogging extends StObject {
   
   /**
     * The Amazon S3 bucket to store the access logs in.
     */
-  var Bucket: js.UndefOr[NonEmptyString] = js.native
+  var Bucket: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * With this field, you can enable or disable the selected distribution.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether you want CloudFront to include cookies in access logs.
     */
-  var IncludeCookies: js.UndefOr[Boolean] = js.native
+  var IncludeCookies: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional string that you want CloudFront to use as a prefix to the access log filenames for this distribution.
     */
-  var Prefix: js.UndefOr[NonEmptyString] = js.native
+  var Prefix: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsCloudFrontDistributionLogging {
   

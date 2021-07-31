@@ -2,48 +2,41 @@ package typings.phoneformatJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("phoneformat.js", "cleanPhone")
+  @JSImport("phoneformat.js", JSImport.Namespace)
   @js.native
-  def cleanPhone(phoneNumber: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("phoneformat.js", "countryCodeToName")
-  @js.native
-  def countryCodeToName(countryCode: String): String = js.native
+  @scala.inline
+  def cleanPhone(phoneNumber: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanPhone")(phoneNumber.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("phoneformat.js", "countryForE164Number")
-  @js.native
-  def countryForE164Number(phoneNumber: String): String = js.native
+  @scala.inline
+  def countryCodeToName(countryCode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("countryCodeToName")(countryCode.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("phoneformat.js", "exampleLandlineNumber")
-  @js.native
-  def exampleLandlineNumber(countryCode: String): String = js.native
+  @scala.inline
+  def countryForE164Number(phoneNumber: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("countryForE164Number")(phoneNumber.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("phoneformat.js", "exampleMobileNumber")
-  @js.native
-  def exampleMobileNumber(countryCode: String): String = js.native
+  @scala.inline
+  def exampleLandlineNumber(countryCode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("exampleLandlineNumber")(countryCode.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("phoneformat.js", "formatE164")
-  @js.native
-  def formatE164(countryCode: String, phoneNumber: String): String = js.native
+  @scala.inline
+  def exampleMobileNumber(countryCode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("exampleMobileNumber")(countryCode.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("phoneformat.js", "formatInternational")
-  @js.native
-  def formatInternational(countryCode: String, phoneNumber: String): String = js.native
+  @scala.inline
+  def formatE164(countryCode: String, phoneNumber: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatE164")(countryCode.asInstanceOf[js.Any], phoneNumber.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("phoneformat.js", "formatLocal")
-  @js.native
-  def formatLocal(countryCode: String, phoneNumber: String): String = js.native
+  @scala.inline
+  def formatInternational(countryCode: String, phoneNumber: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatInternational")(countryCode.asInstanceOf[js.Any], phoneNumber.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("phoneformat.js", "formatNumberForMobileDialing")
-  @js.native
-  def formatNumberForMobileDialing(countryCode: String, phoneNumber: String): String = js.native
+  @scala.inline
+  def formatLocal(countryCode: String, phoneNumber: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLocal")(countryCode.asInstanceOf[js.Any], phoneNumber.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("phoneformat.js", "isValidNumber")
-  @js.native
-  def isValidNumber(phoneNumber: String, countryCode: String): Boolean = js.native
+  @scala.inline
+  def formatNumberForMobileDialing(countryCode: String, phoneNumber: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberForMobileDialing")(countryCode.asInstanceOf[js.Any], phoneNumber.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def isValidNumber(phoneNumber: String, countryCode: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumber")(phoneNumber.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

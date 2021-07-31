@@ -3,16 +3,14 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DidCloseTextDocumentParams extends StObject {
   
   /**
     * The document that was closed.
     */
-  var textDocument: TextDocumentIdentifier = js.native
+  var textDocument: TextDocumentIdentifier
 }
 object DidCloseTextDocumentParams {
   

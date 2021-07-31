@@ -2,13 +2,11 @@ package typings.reactReconciler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefObject extends StObject {
   
-  var current: js.Any = js.native
+  var current: js.Any
 }
 object RefObject {
   

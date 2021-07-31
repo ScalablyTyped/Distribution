@@ -11,59 +11,57 @@ import typings.reactMapGl.reactMapGlStrings.tms
 import typings.reactMapGl.reactMapGlStrings.xyz
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceProps extends StObject {
   
-  var attribution: js.UndefOr[String] = js.native
+  var attribution: js.UndefOr[String] = js.undefined
   
-  var bounds: js.UndefOr[js.Array[Double]] = js.native
+  var bounds: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var buffer: js.UndefOr[Double] = js.native
+  var buffer: js.UndefOr[Double] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var cluster: js.UndefOr[Boolean] = js.native
+  var cluster: js.UndefOr[Boolean] = js.undefined
   
-  var clusterMaxZoom: js.UndefOr[Double] = js.native
+  var clusterMaxZoom: js.UndefOr[Double] = js.undefined
   
-  var clusterProperties: js.UndefOr[js.Object] = js.native
+  var clusterProperties: js.UndefOr[js.Object] = js.undefined
   
-  var clusterRadius: js.UndefOr[Double] = js.native
+  var clusterRadius: js.UndefOr[Double] = js.undefined
   
-  var coordinates: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var coordinates: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
   var data: js.UndefOr[
     (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String
-  ] = js.native
+  ] = js.undefined
   
-  var encoding: js.UndefOr[terrarium | mapbox] = js.native
+  var encoding: js.UndefOr[terrarium | mapbox] = js.undefined
   
-  var generateId: js.UndefOr[Boolean] = js.native
+  var generateId: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var lineMetrics: js.UndefOr[Boolean] = js.native
+  var lineMetrics: js.UndefOr[Boolean] = js.undefined
   
-  var maxzoom: js.UndefOr[Double] = js.native
+  var maxzoom: js.UndefOr[Double] = js.undefined
   
-  var minzoom: js.UndefOr[Double] = js.native
+  var minzoom: js.UndefOr[Double] = js.undefined
   
-  var scheme: js.UndefOr[xyz | tms] = js.native
+  var scheme: js.UndefOr[xyz | tms] = js.undefined
   
-  var tileSize: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.undefined
   
-  var tiles: js.UndefOr[js.Array[String]] = js.native
+  var tiles: js.UndefOr[js.Array[String]] = js.undefined
   
-  var tolerance: js.UndefOr[Double] = js.native
+  var tolerance: js.UndefOr[Double] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var urls: js.UndefOr[js.Array[String]] = js.native
+  var urls: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SourceProps {
   

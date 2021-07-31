@@ -2,17 +2,15 @@ package typings.minappEnv.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Database extends StObject {
   
-  var database: js.UndefOr[String] = js.native
+  var database: js.UndefOr[String] = js.undefined
   
-  var functions: js.UndefOr[String] = js.native
+  var functions: js.UndefOr[String] = js.undefined
   
-  var storage: js.UndefOr[String] = js.native
+  var storage: js.UndefOr[String] = js.undefined
 }
 object Database {
   

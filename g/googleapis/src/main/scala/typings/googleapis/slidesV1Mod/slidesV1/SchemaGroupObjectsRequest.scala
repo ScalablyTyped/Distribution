@@ -2,14 +2,12 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Groups objects to create an object group. For example, groups PageElements
   * to create a Group on the same page as all the children.
   */
-@js.native
 trait SchemaGroupObjectsRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGroupObjectsRequest extends StObject {
     * are not already in another group. Some page elements, such as videos,
     * tables and placeholder shapes cannot be grouped.
     */
-  var childrenObjectIds: js.UndefOr[js.Array[String]] = js.native
+  var childrenObjectIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A user-supplied object ID for the group to be created.  If you specify an
@@ -30,7 +28,7 @@ trait SchemaGroupObjectsRequest extends StObject {
     * greater than 50.  If you don&#39;t specify an ID, a unique one is
     * generated.
     */
-  var groupObjectId: js.UndefOr[String] = js.native
+  var groupObjectId: js.UndefOr[String] = js.undefined
 }
 object SchemaGroupObjectsRequest {
   

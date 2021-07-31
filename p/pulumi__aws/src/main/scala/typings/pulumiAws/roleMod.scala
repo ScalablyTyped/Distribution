@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object roleMod {
@@ -91,6 +90,10 @@ object roleMod {
   /* static members */
   object Role {
     
+    @JSImport("@pulumi/aws/iam/role", "Role")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Role resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -100,76 +103,70 @@ object roleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/role", "Role.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Role = js.native
-    @JSImport("@pulumi/aws/iam/role", "Role.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Role = js.native
-    @JSImport("@pulumi/aws/iam/role", "Role.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RoleState): Role = js.native
-    @JSImport("@pulumi/aws/iam/role", "Role.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RoleState, opts: CustomResourceOptions): Role = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Role]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Role]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RoleState): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Role]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RoleState, opts: CustomResourceOptions): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Role]
     
     /**
       * Returns true if the given object is an instance of Role.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/role", "Role.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/role.Role */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/role.Role */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/role.Role */ Boolean]
   }
   
-  @js.native
   trait RoleArgs extends StObject {
     
     /**
       * The policy that grants an entity permission to assume the role.
       */
-    val assumeRolePolicy: Input[String | PolicyDocument] = js.native
+    val assumeRolePolicy: Input[String | PolicyDocument]
     
     /**
       * The description of the role.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies to force detaching any policies the role has before destroying it. Defaults to `false`.
       */
-    val forceDetachPolicies: js.UndefOr[Input[Boolean]] = js.native
+    val forceDetachPolicies: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The maximum session duration (in seconds) that you want to set for the specified role. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 1 hour to 12 hours.
       */
-    val maxSessionDuration: js.UndefOr[Input[Double]] = js.native
+    val maxSessionDuration: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of the role. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The path to the role.
       * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the policy that is used to set the permissions boundary for the role.
       */
-    val permissionsBoundary: js.UndefOr[Input[String]] = js.native
+    val permissionsBoundary: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of tags for the IAM role
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RoleArgs {
     
@@ -235,69 +232,68 @@ object roleMod {
     }
   }
   
-  @js.native
   trait RoleState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the role.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The policy that grants an entity permission to assume the role.
       */
-    val assumeRolePolicy: js.UndefOr[Input[String | PolicyDocument]] = js.native
+    val assumeRolePolicy: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
     
     /**
       * The creation date of the IAM role.
       */
-    val createDate: js.UndefOr[Input[String]] = js.native
+    val createDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the role.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies to force detaching any policies the role has before destroying it. Defaults to `false`.
       */
-    val forceDetachPolicies: js.UndefOr[Input[Boolean]] = js.native
+    val forceDetachPolicies: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The maximum session duration (in seconds) that you want to set for the specified role. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 1 hour to 12 hours.
       */
-    val maxSessionDuration: js.UndefOr[Input[Double]] = js.native
+    val maxSessionDuration: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of the role. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The path to the role.
       * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the policy that is used to set the permissions boundary for the role.
       */
-    val permissionsBoundary: js.UndefOr[Input[String]] = js.native
+    val permissionsBoundary: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of tags for the IAM role
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The stable and unique string identifying the role.
       */
-    val uniqueId: js.UndefOr[Input[String]] = js.native
+    val uniqueId: js.UndefOr[Input[String]] = js.undefined
   }
   object RoleState {
     

@@ -3,27 +3,25 @@ package typings.vsoNodeApi.buildInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildDefinitionTemplate32 extends StObject {
   
-  var canDelete: Boolean = js.native
+  var canDelete: Boolean
   
-  var category: String = js.native
+  var category: String
   
-  var description: String = js.native
+  var description: String
   
-  var iconTaskId: String = js.native
+  var iconTaskId: String
   
-  var icons: StringDictionary[String] = js.native
+  var icons: StringDictionary[String]
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var template: BuildDefinition32 = js.native
+  var template: BuildDefinition32
 }
 object BuildDefinitionTemplate32 {
   

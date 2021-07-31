@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextRetrievalMode extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Duplicate: TextRetrievalMode = js.native
+  val Duplicate: TextRetrievalMode
   
-  var IncludeFieldCodes: Boolean = js.native
+  var IncludeFieldCodes: Boolean
   
-  var IncludeHiddenText: Boolean = js.native
+  var IncludeHiddenText: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var ViewType: WdViewType = js.native
+  var ViewType: WdViewType
   
   @JSName("Word.TextRetrievalMode_typekey")
-  var WordDotTextRetrievalMode_typekey: TextRetrievalMode = js.native
+  var WordDotTextRetrievalMode_typekey: TextRetrievalMode
 }
 object TextRetrievalMode {
   

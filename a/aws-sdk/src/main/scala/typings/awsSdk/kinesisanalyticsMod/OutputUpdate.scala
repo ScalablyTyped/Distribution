@@ -2,41 +2,39 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputUpdate extends StObject {
   
   /**
     * Describes the data format when records are written to the destination. For more information, see Configuring Application Output.
     */
-  var DestinationSchemaUpdate: js.UndefOr[DestinationSchema] = js.native
+  var DestinationSchemaUpdate: js.UndefOr[DestinationSchema] = js.undefined
   
   /**
     * Describes an Amazon Kinesis Firehose delivery stream as the destination for the output.
     */
-  var KinesisFirehoseOutputUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisFirehoseOutputUpdate] = js.native
+  var KinesisFirehoseOutputUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisFirehoseOutputUpdate] = js.undefined
   
   /**
     * Describes an Amazon Kinesis stream as the destination for the output.
     */
-  var KinesisStreamsOutputUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisStreamsOutputUpdate] = js.native
+  var KinesisStreamsOutputUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisStreamsOutputUpdate] = js.undefined
   
   /**
     * Describes an AWS Lambda function as the destination for the output.
     */
-  var LambdaOutputUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.LambdaOutputUpdate] = js.native
+  var LambdaOutputUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.LambdaOutputUpdate] = js.undefined
   
   /**
     * If you want to specify a different in-application stream for this output configuration, use this field to specify the new in-application stream name.
     */
-  var NameUpdate: js.UndefOr[InAppStreamName] = js.native
+  var NameUpdate: js.UndefOr[InAppStreamName] = js.undefined
   
   /**
     * Identifies the specific output configuration that you want to update.
     */
-  var OutputId: Id = js.native
+  var OutputId: Id
 }
 object OutputUpdate {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateReleaseRequest extends StObject {
   
   /** `Release` to update. */
-  var release: js.UndefOr[Release] = js.native
+  var release: js.UndefOr[Release] = js.undefined
   
   /** Specifies which fields to update. */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object UpdateReleaseRequest {
   

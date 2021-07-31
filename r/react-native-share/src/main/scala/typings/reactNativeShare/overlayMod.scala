@@ -7,7 +7,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayMod {
@@ -26,14 +25,13 @@ object overlayMod {
     def onAnimatedEnd(): Unit = js.native
   }
   
-  @js.native
   trait OverlayProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    def onCancel(): Unit = js.native
+    def onCancel(): Unit
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object OverlayProps {
     
@@ -60,12 +58,11 @@ object overlayMod {
     }
   }
   
-  @js.native
   trait OverlayState extends StObject {
     
-    var fadeAnim: Value = js.native
+    var fadeAnim: Value
     
-    var overlayStyle: StyleProp[ViewProps] = js.native
+    var overlayStyle: StyleProp[ViewProps]
   }
   object OverlayState {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3SourceProperties extends StObject {
   
   /**
     *  The Amazon S3 bucket name where the source files are stored. 
     */
-  var bucketName: BucketName = js.native
+  var bucketName: BucketName
   
   /**
     *  The object key for the Amazon S3 bucket in which the source files are stored. 
     */
-  var bucketPrefix: js.UndefOr[BucketPrefix] = js.native
+  var bucketPrefix: js.UndefOr[BucketPrefix] = js.undefined
 }
 object S3SourceProperties {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,26 +18,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Generally objects that implement this interface also implement {@link XProperty} .
   */
-@js.native
-trait XPropertyWithState extends XInterface {
+trait XPropertyWithState
+  extends StObject
+     with XInterface {
   
   /**
     * @returns an object representing the default state of this object (as a property).  If no default exists, is not known or is void, then the return value is
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  val DefaultAsProperty: XInterface = js.native
+  val DefaultAsProperty: XInterface
   
   /** @returns the state of this as a property. */
-  val StateAsProperty: PropertyState = js.native
+  val StateAsProperty: PropertyState
   
   /**
     * @returns an object representing the default state of this object (as a property).  If no default exists, is not known or is void, then the return value is
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getDefaultAsProperty(): XInterface = js.native
+  def getDefaultAsProperty(): XInterface
   
   /** @returns the state of this as a property. */
-  def getStateAsProperty(): PropertyState = js.native
+  def getStateAsProperty(): PropertyState
   
   /**
     * sets this to its default value.
@@ -47,7 +47,7 @@ trait XPropertyWithState extends XInterface {
     * is a constrained property, the vetoable event is fired before the property value changes.
     * @@throws com::sun::star::lang::WrappedTargetException    if the implementation has an internal reason for the exception.      In this case the original ex
     */
-  def setToDefaultAsProperty(): Unit = js.native
+  def setToDefaultAsProperty(): Unit
 }
 object XPropertyWithState {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentVersion extends StObject {
   
   /**
     * The configuration manager.
     */
-  var ConfigurationManager: js.UndefOr[StackConfigurationManager] = js.native
+  var ConfigurationManager: js.UndefOr[StackConfigurationManager] = js.undefined
   
   /**
     * The agent version.
     */
-  var Version: js.UndefOr[String] = js.native
+  var Version: js.UndefOr[String] = js.undefined
 }
 object AgentVersion {
   

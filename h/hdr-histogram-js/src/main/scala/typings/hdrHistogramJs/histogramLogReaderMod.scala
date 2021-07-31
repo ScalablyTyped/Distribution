@@ -5,10 +5,13 @@ import typings.hdrHistogramJs.abstractHistogramMod.HistogramConstructor
 import typings.hdrHistogramJs.anon.HistogramConstr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object histogramLogReaderMod {
+  
+  @JSImport("hdr-histogram-js/HistogramLogReader", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A histogram log reader.
@@ -53,14 +56,15 @@ object histogramLogReaderMod {
     */
   @JSImport("hdr-histogram-js/HistogramLogReader", JSImport.Default)
   @js.native
-  class default protected () extends HistogramLogReader {
+  class default protected ()
+    extends StObject
+       with HistogramLogReader {
     def this(logContent: String) = this()
     def this(logContent: String, options: HistogramConstr) = this()
   }
   
-  @JSImport("hdr-histogram-js/HistogramLogReader", "listTags")
-  @js.native
-  def listTags(content: String): js.Array[String] = js.native
+  @scala.inline
+  def listTags(content: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTags")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /**
     * A histogram log reader.
@@ -122,9 +126,9 @@ object histogramLogReaderMod {
       * @return a DecodedInterval, or a null if no appropriate interval found
       */
     def nextIntervalHistogram(): AbstractHistogram | Null = js.native
-    def nextIntervalHistogram(rangeStartTimeSec: js.UndefOr[scala.Nothing], rangeEndTimeSec: Double): AbstractHistogram | Null = js.native
     def nextIntervalHistogram(rangeStartTimeSec: Double): AbstractHistogram | Null = js.native
     def nextIntervalHistogram(rangeStartTimeSec: Double, rangeEndTimeSec: Double): AbstractHistogram | Null = js.native
+    def nextIntervalHistogram(rangeStartTimeSec: Unit, rangeEndTimeSec: Double): AbstractHistogram | Null = js.native
     
     var parseBaseTimeFromLine: js.Any = js.native
     

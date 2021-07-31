@@ -2,19 +2,24 @@ package typings.mdurl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("mdurl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object decode {
+    
+    @scala.inline
+    def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def apply(input: String, exclude: String): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], exclude.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("mdurl", "decode")
     @js.native
-    def apply(input: String): String = js.native
-    @JSImport("mdurl", "decode")
-    @js.native
-    def apply(input: String, exclude: String): String = js.native
+    val ^ : js.Any = js.native
     
     @JSImport("mdurl", "decode.componentChars")
     @js.native
@@ -27,18 +32,18 @@ object mod {
   
   object encode {
     
+    @scala.inline
+    def apply(str: String): String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def apply(str: String, exclude: String): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], exclude.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(str: String, exclude: String, keepEscaped: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], exclude.asInstanceOf[js.Any], keepEscaped.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(str: String, exclude: Unit, keepEscaped: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], exclude.asInstanceOf[js.Any], keepEscaped.asInstanceOf[js.Any])).asInstanceOf[String]
+    
     @JSImport("mdurl", "encode")
     @js.native
-    def apply(str: String): String = js.native
-    @JSImport("mdurl", "encode")
-    @js.native
-    def apply(str: String, exclude: js.UndefOr[scala.Nothing], keepEscaped: Boolean): String = js.native
-    @JSImport("mdurl", "encode")
-    @js.native
-    def apply(str: String, exclude: String): String = js.native
-    @JSImport("mdurl", "encode")
-    @js.native
-    def apply(str: String, exclude: String, keepEscaped: Boolean): String = js.native
+    val ^ : js.Any = js.native
     
     @JSImport("mdurl", "encode.componentChars")
     @js.native
@@ -49,35 +54,31 @@ object mod {
     val defaultChars: String = js.native
   }
   
-  @JSImport("mdurl", "format")
-  @js.native
-  def format(url: Url): String = js.native
+  @scala.inline
+  def format(url: Url): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mdurl", "parse")
-  @js.native
-  def parse(input: String): Url = js.native
-  @JSImport("mdurl", "parse")
-  @js.native
-  def parse(input: String, slashesDenoteHost: Boolean): Url = js.native
+  @scala.inline
+  def parse(input: String): Url = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Url]
+  @scala.inline
+  def parse(input: String, slashesDenoteHost: Boolean): Url = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[Url]
   
-  @js.native
   trait Url extends StObject {
     
-    var auth: String = js.native
+    var auth: String
     
-    var hash: String = js.native
+    var hash: String
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var port: String = js.native
+    var port: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var search: String = js.native
+    var search: String
     
-    var slashes: String = js.native
+    var slashes: String
   }
   object Url {
     

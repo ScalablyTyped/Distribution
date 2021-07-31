@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServingContext extends StObject {
   
   /** Matches all contexts. */
-  var all: js.UndefOr[String] = js.native
+  var all: js.UndefOr[String] = js.undefined
   
   /** Matches impressions for a particular app type. */
-  var appType: js.UndefOr[AppContext] = js.native
+  var appType: js.UndefOr[AppContext] = js.undefined
   
   /** Matches impressions for a particular auction type. */
-  var auctionType: js.UndefOr[AuctionContext] = js.native
+  var auctionType: js.UndefOr[AuctionContext] = js.undefined
   
   /** Matches impressions coming from users *or* publishers in a specific location. */
-  var location: js.UndefOr[LocationContext] = js.native
+  var location: js.UndefOr[LocationContext] = js.undefined
   
   /** Matches impressions coming from a particular platform. */
-  var platform: js.UndefOr[PlatformContext] = js.native
+  var platform: js.UndefOr[PlatformContext] = js.undefined
   
   /** Matches impressions for a particular security type. */
-  var securityType: js.UndefOr[SecurityContext] = js.native
+  var securityType: js.UndefOr[SecurityContext] = js.undefined
 }
 object ServingContext {
   

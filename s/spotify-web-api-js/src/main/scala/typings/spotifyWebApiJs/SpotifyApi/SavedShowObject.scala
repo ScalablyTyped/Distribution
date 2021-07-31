@@ -2,19 +2,17 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Saved Show Object
   * [](https://developer.spotify.com/documentation/web-api/reference/object-model/#saved-show-object)
   */
-@js.native
 trait SavedShowObject extends StObject {
   
-  var added_at: String = js.native
+  var added_at: String
   
-  var album: ShowObjectFull = js.native
+  var album: ShowObjectFull
 }
 object SavedShowObject {
   

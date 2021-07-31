@@ -5,30 +5,38 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("frappe-gantt", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Gantt {
+  class ^ protected ()
+    extends StObject
+       with Gantt {
     def this(wrapper: String, tasks: js.Array[Task]) = this()
     def this(wrapper: HTMLElement, tasks: js.Array[Task]) = this()
     def this(wrapper: SVGElement, tasks: js.Array[Task]) = this()
     def this(wrapper: String, tasks: js.Array[Task], options: Options) = this()
     def this(wrapper: HTMLElement, tasks: js.Array[Task], options: Options) = this()
     def this(wrapper: SVGElement, tasks: js.Array[Task], options: Options) = this()
+    
+    /* CompleteClass */
+    override def change_view_mode(mode: viewMode): Unit = js.native
+    
+    /* CompleteClass */
+    override def refresh(tasks: js.Array[Task]): Unit = js.native
   }
   
-  @js.native
-  trait EnrichedTask extends Task {
+  trait EnrichedTask
+    extends StObject
+       with Task {
     
-    var _end: Date = js.native
+    var _end: Date
     
-    var _index: Double = js.native
+    var _index: Double
     
-    var _start: Date = js.native
+    var _start: Date
   }
   object EnrichedTask {
     
@@ -62,12 +70,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Gantt extends StObject {
     
-    def change_view_mode(mode: viewMode): Unit = js.native
+    def change_view_mode(mode: viewMode): Unit
     
-    def refresh(tasks: js.Array[Task]): Unit = js.native
+    def refresh(tasks: js.Array[Task]): Unit
   }
   object Gantt {
     
@@ -88,40 +95,39 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var arrow_curve: js.UndefOr[Double] = js.native
+    var arrow_curve: js.UndefOr[Double] = js.undefined
     
-    var bar_corner_radius: js.UndefOr[Double] = js.native
+    var bar_corner_radius: js.UndefOr[Double] = js.undefined
     
-    var bar_height: js.UndefOr[Double] = js.native
+    var bar_height: js.UndefOr[Double] = js.undefined
     
-    var column_width: js.UndefOr[Double] = js.native
+    var column_width: js.UndefOr[Double] = js.undefined
     
-    var custom_popup_html: js.UndefOr[String | (js.Function1[/* task */ EnrichedTask, String])] = js.native
+    var custom_popup_html: js.UndefOr[String | (js.Function1[/* task */ EnrichedTask, String])] = js.undefined
     
-    var date_format: js.UndefOr[String] = js.native
+    var date_format: js.UndefOr[String] = js.undefined
     
-    var header_height: js.UndefOr[Double] = js.native
+    var header_height: js.UndefOr[Double] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var on_click: js.UndefOr[js.Function1[/* task */ EnrichedTask, Unit]] = js.native
+    var on_click: js.UndefOr[js.Function1[/* task */ EnrichedTask, Unit]] = js.undefined
     
-    var on_date_change: js.UndefOr[js.Function3[/* task */ EnrichedTask, /* start */ Date, /* end */ Date, Unit]] = js.native
+    var on_date_change: js.UndefOr[js.Function3[/* task */ EnrichedTask, /* start */ Date, /* end */ Date, Unit]] = js.undefined
     
-    var on_progress_change: js.UndefOr[js.Function2[/* task */ EnrichedTask, /* progress */ Double, Unit]] = js.native
+    var on_progress_change: js.UndefOr[js.Function2[/* task */ EnrichedTask, /* progress */ Double, Unit]] = js.undefined
     
-    var on_view_change: js.UndefOr[js.Function1[/* mode */ viewMode, Unit]] = js.native
+    var on_view_change: js.UndefOr[js.Function1[/* mode */ viewMode, Unit]] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var view_mode: js.UndefOr[viewMode] = js.native
+    var view_mode: js.UndefOr[viewMode] = js.undefined
     
-    var view_modes: js.UndefOr[js.Array[viewMode]] = js.native
+    var view_modes: js.UndefOr[js.Array[viewMode]] = js.undefined
   }
   object Options {
     
@@ -238,22 +244,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Task extends StObject {
     
-    var custom_class: js.UndefOr[String] = js.native
+    var custom_class: js.UndefOr[String] = js.undefined
     
-    var dependencies: String = js.native
+    var dependencies: String
     
-    var end: String = js.native
+    var end: String
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var start: String = js.native
+    var start: String
   }
   object Task {
     

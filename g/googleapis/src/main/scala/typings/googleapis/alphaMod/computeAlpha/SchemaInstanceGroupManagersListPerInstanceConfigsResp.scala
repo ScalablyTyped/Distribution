@@ -3,16 +3,14 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagersListPerInstanceConfigsResp extends StObject {
   
   /**
     * [Output Only] The list of PerInstanceConfig.
     */
-  var items: js.UndefOr[js.Array[SchemaPerInstanceConfig]] = js.native
+  var items: js.UndefOr[js.Array[SchemaPerInstanceConfig]] = js.undefined
   
   /**
     * [Output Only] This token allows you to get the next page of results for
@@ -21,12 +19,12 @@ trait SchemaInstanceGroupManagersListPerInstanceConfigsResp extends StObject {
     * next list request. Subsequent list requests will have their own
     * nextPageToken to continue paging through the results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Informational warning message.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaInstanceGroupManagersListPerInstanceConfigsResp {
   

@@ -2,21 +2,21 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DecorationStyleEnumValues extends EmbindEnum {
+trait DecorationStyleEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Dashed: DecorationStyle = js.native
+  var Dashed: DecorationStyle
   
-  var Dotted: DecorationStyle = js.native
+  var Dotted: DecorationStyle
   
-  var Double: DecorationStyle = js.native
+  var Double: DecorationStyle
   
-  var Solid: DecorationStyle = js.native
+  var Solid: DecorationStyle
   
-  var Wavy: DecorationStyle = js.native
+  var Wavy: DecorationStyle
 }
 object DecorationStyleEnumValues {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateLabelsPayload extends StObject {
   
   /**
     * Kubernetes labels to be added or updated.
     */
-  var addOrUpdateLabels: js.UndefOr[labelsMap] = js.native
+  var addOrUpdateLabels: js.UndefOr[labelsMap] = js.undefined
   
   /**
     * Kubernetes labels to be removed.
     */
-  var removeLabels: js.UndefOr[labelsKeyList] = js.native
+  var removeLabels: js.UndefOr[labelsKeyList] = js.undefined
 }
 object UpdateLabelsPayload {
   

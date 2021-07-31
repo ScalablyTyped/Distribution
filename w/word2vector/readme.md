@@ -12,7 +12,7 @@ a word2vector interface for nodejs
 | Keywords           | word2vector, word2vec, word, vec, machine learning, chinese, deep-learning, 向量, vector, 文字, 機器學習 |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 2699 |
+| # downloads        | 2648 |
 | # stars            | 0 |
 
 ## Links

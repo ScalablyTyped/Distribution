@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 用以操作 Redis 的 List 对象，创建方法：,```JavaScript,var db = require("db");,var rdb = new db.openRedis("redis-server");,var list = rdb.getList("test");,```
   */
 @js.native
-trait ClassRedisList extends ClassObject {
+trait ClassRedisList
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -80,7 +81,7 @@ trait ClassRedisList extends ClassObject {
     * 
     * 
     */
-  def push(values: js.Array[_]): Double = js.native
+  def push(values: js.Array[js.Any]): Double = js.native
   
   /**
     * 
@@ -91,7 +92,7 @@ trait ClassRedisList extends ClassObject {
     * 
     * 
     */
-  def range(start: Double, stop: Double): js.Array[_] = js.native
+  def range(start: Double, stop: Double): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -130,7 +131,7 @@ trait ClassRedisList extends ClassObject {
     * 
     * 
     */
-  def rpush(values: js.Array[_]): Double = js.native
+  def rpush(values: js.Array[js.Any]): Double = js.native
   
   /**
     * 

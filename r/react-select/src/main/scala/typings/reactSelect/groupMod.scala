@@ -1,6 +1,5 @@
 package typings.reactSelect
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
@@ -8,10 +7,13 @@ import typings.reactSelect.typesMod.CommonProps
 import typings.reactSelect.typesMod.OptionTypeBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object groupMod extends Shortcut {
+object groupMod {
+  
+  @JSImport("react-select/src/components/Group", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-select/src/components/Group", JSImport.Default)
   @js.native
@@ -25,33 +27,30 @@ object groupMod extends Shortcut {
   @js.native
   val GroupHeading: ComponentType[js.Any] = js.native
   
-  @JSImport("react-select/src/components/Group", "groupCSS")
-  @js.native
-  def groupCSS(): CSSProperties = js.native
+  @scala.inline
+  def groupCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCSS")().asInstanceOf[CSSProperties]
   
-  @JSImport("react-select/src/components/Group", "groupHeadingCSS")
-  @js.native
-  def groupHeadingCSS(): CSSProperties = js.native
+  @scala.inline
+  def groupHeadingCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("groupHeadingCSS")().asInstanceOf[CSSProperties]
   
-  @js.native
   trait ComponentProps extends StObject {
     
     /** Component to wrap the label, recieves headingProps. */
-    var Heading: ComponentType[_] = js.native
+    var Heading: ComponentType[js.Any]
     
     /** The children to be rendered. */
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /** Props to pass to Heading. */
-    var headingProps: js.Any = js.native
+    var headingProps: js.Any
     
     /** Label to be displayed in the heading component. */
-    var label: ReactNode = js.native
+    var label: ReactNode
   }
   object ComponentProps {
     
     @scala.inline
-    def apply(Heading: ComponentType[_], headingProps: js.Any): ComponentProps = {
+    def apply(Heading: ComponentType[js.Any], headingProps: js.Any): ComponentProps = {
       val __obj = js.Dynamic.literal(Heading = Heading.asInstanceOf[js.Any], headingProps = headingProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentProps]
     }
@@ -66,7 +65,7 @@ object groupMod extends Shortcut {
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       @scala.inline
-      def setHeading(value: ComponentType[_]): Self = StObject.set(x, "Heading", value.asInstanceOf[js.Any])
+      def setHeading(value: ComponentType[js.Any]): Self = StObject.set(x, "Heading", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadingProps(value: js.Any): Self = StObject.set(x, "headingProps", value.asInstanceOf[js.Any])
@@ -79,10 +78,9 @@ object groupMod extends Shortcut {
     }
   }
   
-  type GroupProps[OptionType /* <: OptionTypeBase */] = CommonProps[OptionType] with ComponentProps
-  
-  type _To = ComponentType[GroupProps[js.Any]]
-  
-  /* This means you don't have to write `default`, but can instead just say `groupMod.foo` */
-  override def _to: ComponentType[GroupProps[js.Any]] = default
+  @js.native
+  trait GroupProps[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with CommonProps[OptionType]
+       with ComponentProps
 }

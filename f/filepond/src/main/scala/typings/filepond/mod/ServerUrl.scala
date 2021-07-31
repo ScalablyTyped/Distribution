@@ -8,39 +8,37 @@ import typings.filepond.filepondStrings.PUT
 import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerUrl extends StObject {
   
-  var headers: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.native
+  var headers: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.undefined
   
-  var method: js.UndefOr[GET | POST | PUT | DELETE] = js.native
+  var method: js.UndefOr[GET | POST | PUT | DELETE] = js.undefined
   
   /**
     * Called with the formdata object right before it is sent,
     * return extended formdata object to make changes.
     */
-  var ondata: js.UndefOr[js.Function1[/* data */ FormData, FormData]] = js.native
+  var ondata: js.UndefOr[js.Function1[/* data */ FormData, FormData]] = js.undefined
   
   /**
     * Called when server error is received, receives the response
     * body, useful to select the relevant error data.
     */
-  var onerror: js.UndefOr[js.Function1[/* responseBody */ js.Any, _]] = js.native
+  var onerror: js.UndefOr[js.Function1[/* responseBody */ js.Any, js.Any]] = js.undefined
   
   /**
     * Called when server response is received, useful for getting
     * the unique file id from the server response.
     */
-  var onload: js.UndefOr[js.Function1[/* response */ js.Any, Double | String]] = js.native
+  var onload: js.UndefOr[js.Function1[/* response */ js.Any, Double | String]] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object ServerUrl {
   
@@ -72,7 +70,7 @@ object ServerUrl {
     def setOndataUndefined: Self = StObject.set(x, "ondata", js.undefined)
     
     @scala.inline
-    def setOnerror(value: /* responseBody */ js.Any => _): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+    def setOnerror(value: /* responseBody */ js.Any => js.Any): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)

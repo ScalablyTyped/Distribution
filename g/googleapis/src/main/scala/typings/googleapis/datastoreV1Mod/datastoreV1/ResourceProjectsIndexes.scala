@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/datastore/v1", "datastore_v1.Resource$Projects$Indexes")
@@ -31,7 +30,7 @@ class ResourceProjectsIndexes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGoogleDatastoreAdminV1Index] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleDatastoreAdminV1Index]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleDatastoreAdminV1Index] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleDatastoreAdminV1Index] = js.native
   def get(params: ParamsResourceProjectsIndexesGet): GaxiosPromise[SchemaGoogleDatastoreAdminV1Index] = js.native
   def get(
     params: ParamsResourceProjectsIndexesGet,
@@ -68,7 +67,7 @@ class ResourceProjectsIndexes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoogleDatastoreAdminV1ListIndexesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleDatastoreAdminV1ListIndexesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleDatastoreAdminV1ListIndexesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleDatastoreAdminV1ListIndexesResponse] = js.native
   def list(params: ParamsResourceProjectsIndexesList): GaxiosPromise[SchemaGoogleDatastoreAdminV1ListIndexesResponse] = js.native
   def list(
     params: ParamsResourceProjectsIndexesList,

@@ -3,23 +3,23 @@ package typings.ssh2Streams.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HostbasedAuthMethodData extends _AuthMethodData {
+trait HostbasedAuthMethodData
+  extends StObject
+     with _AuthMethodData {
   
-  var blob: js.UndefOr[Buffer] = js.native
+  var blob: js.UndefOr[Buffer] = js.undefined
   
-  var key: Buffer = js.native
+  var key: Buffer
   
-  var keyAlgo: String = js.native
+  var keyAlgo: String
   
-  var localHostname: String = js.native
+  var localHostname: String
   
-  var localUsername: String = js.native
+  var localUsername: String
   
-  var signature: js.UndefOr[Buffer] = js.native
+  var signature: js.UndefOr[Buffer] = js.undefined
 }
 object HostbasedAuthMethodData {
   

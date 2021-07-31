@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TermsAndConditionsAcceptanceStatus extends Entity {
+trait TermsAndConditionsAcceptanceStatus
+  extends StObject
+     with Entity {
   
   // DateTime when the terms were last accepted by the user.
-  var acceptedDateTime: js.UndefOr[String] = js.native
+  var acceptedDateTime: js.UndefOr[String] = js.undefined
   
   // Most recent version number of the T&amp;C accepted by the user.
-  var acceptedVersion: js.UndefOr[Double] = js.native
+  var acceptedVersion: js.UndefOr[Double] = js.undefined
   
   // Navigation link to the terms and conditions that are assigned.
-  var termsAndConditions: js.UndefOr[NullableOption[TermsAndConditions]] = js.native
+  var termsAndConditions: js.UndefOr[NullableOption[TermsAndConditions]] = js.undefined
   
   // Display name of the user whose acceptance the entity represents.
-  var userDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var userDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The userPrincipalName of the User that accepted the term.
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TermsAndConditionsAcceptanceStatus {
   

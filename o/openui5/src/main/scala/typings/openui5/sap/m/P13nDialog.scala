@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait P13nDialog extends Dialog {
+trait P13nDialog
+  extends StObject
+     with Dialog {
   
   /**
     * Adds some panel to the aggregation <code>panels</code>.

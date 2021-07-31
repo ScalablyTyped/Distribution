@@ -5,230 +5,180 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T](iterable: Iterable[T]): WuIterable[T] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[WuIterable[T]]
+  
   @JSImport("wu", JSImport.Namespace)
   @js.native
-  def apply[T](iterable: Iterable[T]): WuIterable[T] = js.native
+  val ^ : js.Any = js.native
   
   // also copied to WuIterable
-  @JSImport("wu", "asyncEach")
-  @js.native
-  def asyncEach(fn: Consumer[_]): Unit = js.native
-  @JSImport("wu", "asyncEach")
-  @js.native
-  def asyncEach(fn: Consumer[_], maxBlock: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
-  @JSImport("wu", "asyncEach")
-  @js.native
-  def asyncEach(fn: Consumer[_], maxBlock: Double): Unit = js.native
-  @JSImport("wu", "asyncEach")
-  @js.native
-  def asyncEach(fn: Consumer[_], maxBlock: Double, timeout: Double): Unit = js.native
+  @scala.inline
+  def asyncEach(fn: Consumer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncEach")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def asyncEach(fn: Consumer[js.Any], maxBlock: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncEach")(fn.asInstanceOf[js.Any], maxBlock.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def asyncEach(fn: Consumer[js.Any], maxBlock: Double, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncEach")(fn.asInstanceOf[js.Any], maxBlock.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def asyncEach(fn: Consumer[js.Any], maxBlock: Unit, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncEach")(fn.asInstanceOf[js.Any], maxBlock.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // only static
-  @JSImport("wu", "chain")
-  @js.native
-  def chain[T](iters: Iterable[T]*): WuIterable[T] = js.native
+  @scala.inline
+  def chain[T](iters: Iterable[T]*): WuIterable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(iters.asInstanceOf[js.Any]).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "chunk")
-  @js.native
-  def chunk[T](n: Double, iter: Iterable[T]): WuIterable[js.Array[T]] = js.native
+  @scala.inline
+  def chunk[T](n: Double, iter: Iterable[T]): WuIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk")(n.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[js.Array[T]]]
   
-  @JSImport("wu", "concatMap")
-  @js.native
-  def concatMap[T, U](fn: js.Function1[/* t */ T, Iterable[U]], iter: Iterable[T]): WuIterable[U] = js.native
+  @scala.inline
+  def concatMap[T, U](fn: js.Function1[/* t */ T, Iterable[U]], iter: Iterable[T]): WuIterable[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatMap")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[U]]
   
-  @JSImport("wu", "count")
-  @js.native
-  def count(): WuIterable[Double] = js.native
-  @JSImport("wu", "count")
-  @js.native
-  def count(start: js.UndefOr[scala.Nothing], step: Double): WuIterable[Double] = js.native
-  @JSImport("wu", "count")
-  @js.native
-  def count(start: Double): WuIterable[Double] = js.native
-  @JSImport("wu", "count")
-  @js.native
-  def count(start: Double, step: Double): WuIterable[Double] = js.native
+  @scala.inline
+  def count(): WuIterable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[WuIterable[Double]]
+  @scala.inline
+  def count(start: Double): WuIterable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(start.asInstanceOf[js.Any]).asInstanceOf[WuIterable[Double]]
+  @scala.inline
+  def count(start: Double, step: Double): WuIterable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(start.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[WuIterable[Double]]
+  @scala.inline
+  def count(start: Unit, step: Double): WuIterable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(start.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[WuIterable[Double]]
   
-  @JSImport("wu", "curryable")
-  @js.native
-  def curryable(fun: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
-  @JSImport("wu", "curryable")
-  @js.native
-  def curryable(fun: js.Function1[/* repeated */ js.Any, _], expected: Double): js.Any = js.native
+  @scala.inline
+  def curryable(fun: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("curryable")(fun.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def curryable(fun: js.Function1[/* repeated */ js.Any, js.Any], expected: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("curryable")(fun.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("wu", "cycle")
-  @js.native
-  def cycle[T](iter: Iterable[T]): WuIterable[T] = js.native
+  @scala.inline
+  def cycle[T](iter: Iterable[T]): WuIterable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("cycle")(iter.asInstanceOf[js.Any]).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "drop")
-  @js.native
-  def drop[T](n: Double, iter: Iterable[T]): WuIterable[T] = js.native
+  @scala.inline
+  def drop[T](n: Double, iter: Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("drop")(n.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "dropWhile")
-  @js.native
-  def dropWhile[T](fn: Filter_[T], iter: Iterable[T]): WuIterable[T] = js.native
+  @scala.inline
+  def dropWhile[T](fn: Filter_[T], iter: Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("dropWhile")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "entries")
-  @js.native
-  def entries[T](obj: StringDictionary[T]): WuIterable[js.Tuple2[String, T]] = js.native
+  @scala.inline
+  def entries[T](obj: StringDictionary[T]): WuIterable[js.Tuple2[String, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[WuIterable[js.Tuple2[String, T]]]
   
-  @JSImport("wu", "enumerate")
-  @js.native
-  def enumerate[T](iter: Iterable[T]): WuIterable[js.Tuple2[T, Double]] = js.native
+  @scala.inline
+  def enumerate[T](iter: Iterable[T]): WuIterable[js.Tuple2[T, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(iter.asInstanceOf[js.Any]).asInstanceOf[WuIterable[js.Tuple2[T, Double]]]
   
-  @JSImport("wu", "every")
-  @js.native
-  def every[T](fn: Filter_[T], iter: Iterable[T]): Boolean = js.native
+  @scala.inline
+  def every[T](fn: Filter_[T], iter: Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("wu", "filter")
-  @js.native
-  def filter[T](fn: Filter_[T], iter: Iterable[T]): WuIterable[T] = js.native
-  @JSImport("wu", "filter")
-  @js.native
-  def filter_TS_T[T, S /* <: T */](fn: TypeGuardFilter[T, S], iter: Iterable[T]): WuIterable[S] = js.native
+  @scala.inline
+  def filter[T](fn: Filter_[T], iter: Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "find")
-  @js.native
-  def find[T](fn: Filter_[T], iter: Iterable[T]): js.UndefOr[T] = js.native
-  @JSImport("wu", "find")
-  @js.native
-  def find_TS_T[T, S /* <: T */](fn: TypeGuardFilter[T, S], iter: Iterable[T]): js.UndefOr[S] = js.native
+  @scala.inline
+  def filter_TS_T[T, S /* <: T */](fn: TypeGuardFilter[T, S], iter: Iterable[T]): WuIterable[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[S]]
   
-  @JSImport("wu", "flatten")
-  @js.native
-  def flatten(iter: Iterable[_]): WuIterable[_] = js.native
-  @JSImport("wu", "flatten")
-  @js.native
-  def flatten(shallow: Boolean, iter: Iterable[_]): WuIterable[_] = js.native
+  @scala.inline
+  def find[T](fn: Filter_[T], iter: Iterable[T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("wu", "forEach")
-  @js.native
-  def forEach[T](fn: Consumer[T], iter: Iterable[T]): Unit = js.native
+  @scala.inline
+  def find_TS_T[T, S /* <: T */](fn: TypeGuardFilter[T, S], iter: Iterable[T]): js.UndefOr[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[S]]
   
-  @JSImport("wu", "has")
-  @js.native
-  def has[T](t: T, iter: Iterable[T]): Boolean = js.native
+  @scala.inline
+  def flatten(iter: Iterable[js.Any]): WuIterable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(iter.asInstanceOf[js.Any]).asInstanceOf[WuIterable[js.Any]]
+  @scala.inline
+  def flatten(shallow: Boolean, iter: Iterable[js.Any]): WuIterable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(shallow.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[js.Any]]
+  
+  @scala.inline
+  def forEach[T](fn: Consumer[T], iter: Iterable[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def has[T](t: T, iter: Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(t.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   // invoke<T, U>(name:string, ...t:T[], iter: Iterable<(t:T)=>U>): WuIterable<U>;
   @JSImport("wu", "invoke")
   @js.native
   val invoke: js.Any = js.native
   
-  @JSImport("wu", "keys")
-  @js.native
-  def keys(obj: StringDictionary[js.Any]): WuIterable[String] = js.native
+  @scala.inline
+  def keys(obj: StringDictionary[js.Any]): WuIterable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[WuIterable[String]]
   
-  @JSImport("wu", "map")
-  @js.native
-  def map[T, U](fn: js.Function1[/* t */ T, U], iter: Iterable[T]): WuIterable[U] = js.native
+  @scala.inline
+  def map[T, U](fn: js.Function1[/* t */ T, U], iter: Iterable[T]): WuIterable[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[U]]
   
   // pluck<T>(attribute:string, iter: Iterable<{[attribute]: T}>): WuIterable<T>;
-  @JSImport("wu", "pluck")
-  @js.native
-  def pluck(attribute: String, iter: Iterable[_]): WuIterable[_] = js.native
+  @scala.inline
+  def pluck(attribute: String, iter: Iterable[js.Any]): WuIterable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pluck")(attribute.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[js.Any]]
   
-  @JSImport("wu", "reduce")
-  @js.native
-  def reduce[T](fn: js.Function2[/* a */ T, /* b */ T, T], initial: T, iter: Iterable[T]): T = js.native
-  @JSImport("wu", "reduce")
-  @js.native
-  def reduce[T](fn: js.Function2[/* a */ T, /* b */ T, T], iter: Iterable[T]): T = js.native
-  @JSImport("wu", "reduce")
-  @js.native
-  def reduce_TU_U[T, U](fn: js.Function2[/* a */ U, /* b */ T, U], initial: U, iter: Iterable[T]): U = js.native
-  @JSImport("wu", "reduce")
-  @js.native
-  def reduce_TU_U[T, U](fn: js.Function2[/* a */ U, /* b */ T, U], iter: Iterable[T]): U = js.native
+  @scala.inline
+  def reduce[T](fn: js.Function2[/* a */ T, /* b */ T, T], initial: T, iter: Iterable[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(fn.asInstanceOf[js.Any], initial.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def reduce[T](fn: js.Function2[/* a */ T, /* b */ T, T], iter: Iterable[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("wu", "reductions")
-  @js.native
-  def reductions[T](fn: js.Function2[/* a */ T, /* b */ T, T], initial: T, iter: Iterable[T]): WuIterable[T] = js.native
-  @JSImport("wu", "reductions")
-  @js.native
-  def reductions[T](fn: js.Function2[/* a */ T, /* b */ T, T], iter: Iterable[T]): WuIterable[T] = js.native
-  @JSImport("wu", "reductions")
-  @js.native
-  def reductions_TU[T, U](fn: js.Function2[/* a */ U, /* b */ T, U], initial: U, iter: Iterable[T]): WuIterable[U] = js.native
-  @JSImport("wu", "reductions")
-  @js.native
-  def reductions_TU[T, U](fn: js.Function2[/* a */ U, /* b */ T, U], iter: Iterable[T]): WuIterable[U] = js.native
+  @scala.inline
+  def reduce_TU_U[T, U](fn: js.Function2[/* a */ U, /* b */ T, U], initial: U, iter: Iterable[T]): U = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(fn.asInstanceOf[js.Any], initial.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[U]
+  @scala.inline
+  def reduce_TU_U[T, U](fn: js.Function2[/* a */ U, /* b */ T, U], iter: Iterable[T]): U = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[U]
   
-  @JSImport("wu", "reject")
-  @js.native
-  def reject[T](fn: Filter_[T], iter: Iterable[T]): WuIterable[T] = js.native
+  @scala.inline
+  def reductions[T](fn: js.Function2[/* a */ T, /* b */ T, T], initial: T, iter: Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("reductions")(fn.asInstanceOf[js.Any], initial.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
+  @scala.inline
+  def reductions[T](fn: js.Function2[/* a */ T, /* b */ T, T], iter: Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("reductions")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "repeat")
-  @js.native
-  def repeat[T](obj: T): WuIterable[T] = js.native
-  @JSImport("wu", "repeat")
-  @js.native
-  def repeat[T](obj: T, times: Double): WuIterable[T] = js.native
+  @scala.inline
+  def reductions_TU[T, U](fn: js.Function2[/* a */ U, /* b */ T, U], initial: U, iter: Iterable[T]): WuIterable[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("reductions")(fn.asInstanceOf[js.Any], initial.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[U]]
+  @scala.inline
+  def reductions_TU[T, U](fn: js.Function2[/* a */ U, /* b */ T, U], iter: Iterable[T]): WuIterable[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("reductions")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[U]]
   
-  @JSImport("wu", "slice")
-  @js.native
-  def slice[T](iter: Iterable[T]): WuIterable[T] = js.native
-  @JSImport("wu", "slice")
-  @js.native
-  def slice[T](start: Double, iter: Iterable[T]): WuIterable[T] = js.native
-  @JSImport("wu", "slice")
-  @js.native
-  def slice[T](start: Double, stop: Double, iter: Iterable[T]): WuIterable[T] = js.native
+  @scala.inline
+  def reject[T](fn: Filter_[T], iter: Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("reject")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "some")
-  @js.native
-  def some[T](fn: Filter_[T], iter: Iterable[T]): Boolean = js.native
+  @scala.inline
+  def repeat[T](obj: T): WuIterable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(obj.asInstanceOf[js.Any]).asInstanceOf[WuIterable[T]]
+  @scala.inline
+  def repeat[T](obj: T, times: Double): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(obj.asInstanceOf[js.Any], times.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "spreadMap")
-  @js.native
-  def spreadMap[T](fn: js.Function1[/* repeated */ js.Any, T], iter: Iterable[js.Array[_]]): WuIterable[T] = js.native
+  @scala.inline
+  def slice[T](iter: Iterable[T]): WuIterable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(iter.asInstanceOf[js.Any]).asInstanceOf[WuIterable[T]]
+  @scala.inline
+  def slice[T](start: Double, iter: Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(start.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
+  @scala.inline
+  def slice[T](start: Double, stop: Double, iter: Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "take")
-  @js.native
-  def take[T](n: Double, iter: Iterable[T]): WuIterable[T] = js.native
+  @scala.inline
+  def some[T](fn: Filter_[T], iter: Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("wu", "takeWhile")
-  @js.native
-  def takeWhile[T](fn: Filter_[T], iter: Iterable[T]): WuIterable[T] = js.native
+  @scala.inline
+  def spreadMap[T](fn: js.Function1[/* repeated */ js.Any, T], iter: Iterable[js.Array[js.Any]]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("spreadMap")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "tap")
-  @js.native
-  def tap[T](fn: Consumer[T], iter: Iterable[T]): WuIterable[T] = js.native
+  @scala.inline
+  def take[T](n: Double, iter: Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(n.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "tee")
-  @js.native
-  def tee[T](iter: Iterable[T]): js.Array[WuIterable[T]] = js.native
-  @JSImport("wu", "tee")
-  @js.native
-  def tee[T](n: Double, iter: Iterable[T]): js.Array[WuIterable[T]] = js.native
+  @scala.inline
+  def takeWhile[T](fn: Filter_[T], iter: Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("takeWhile")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "toArray")
-  @js.native
-  def toArray[T](iter: Iterable[T]): js.Array[T] = js.native
+  @scala.inline
+  def tap[T](fn: Consumer[T], iter: Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "unique")
-  @js.native
-  def unique[T](iter: Iterable[T]): WuIterable[T] = js.native
+  @scala.inline
+  def tee[T](iter: Iterable[T]): js.Array[WuIterable[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tee")(iter.asInstanceOf[js.Any]).asInstanceOf[js.Array[WuIterable[T]]]
+  @scala.inline
+  def tee[T](n: Double, iter: Iterable[T]): js.Array[WuIterable[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tee")(n.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.Array[WuIterable[T]]]
+  
+  @scala.inline
+  def toArray[T](iter: Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(iter.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  
+  @scala.inline
+  def unique[T](iter: Iterable[T]): WuIterable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(iter.asInstanceOf[js.Any]).asInstanceOf[WuIterable[T]]
   
   @JSImport("wu", "unzip")
   @js.native
   val unzip: js.Any = js.native
   
-  @JSImport("wu", "values")
-  @js.native
-  def values[T](obj: StringDictionary[T]): WuIterable[T] = js.native
+  @scala.inline
+  def values[T](obj: StringDictionary[T]): WuIterable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[WuIterable[T]]
   
-  @JSImport("wu", "zip")
-  @js.native
-  def zip[T, U](iter2: Iterable[T], iter: Iterable[U]): WuIterable[js.Tuple2[T, U]] = js.native
+  @scala.inline
+  def zip[T, U](iter2: Iterable[T], iter: Iterable[U]): WuIterable[js.Tuple2[T, U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(iter2.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[js.Tuple2[T, U]]]
   
-  @JSImport("wu", "zipLongest")
-  @js.native
-  def zipLongest[T, U](iter2: Iterable[T], iter: Iterable[U]): WuIterable[js.Tuple2[T, U]] = js.native
+  @scala.inline
+  def zipLongest[T, U](iter2: Iterable[T], iter: Iterable[U]): WuIterable[js.Tuple2[T, U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("zipLongest")(iter2.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[js.Tuple2[T, U]]]
   
   @JSImport("wu", "zipWith")
   @js.native
@@ -241,16 +191,18 @@ object mod {
   type TypeGuardFilter[T, S /* <: T */] = js.Function1[/* t */ T, /* is S */ Boolean]
   
   @js.native
-  trait WuIterable[T] extends IterableIterator[T] {
+  trait WuIterable[T]
+    extends StObject
+       with IterableIterator[T] {
     
     // generated from section "copied to WuIterable" above via
     // sed -r 's/(, )?iter: Iterable<\w+>//' |
     // sed -r 's/^(\s+\w+)<T>/\1/' |
     // sed -r 's/^(\s+\w+)<T, /\1</'
-    def asyncEach(fn: Consumer[_]): js.Any = js.native
-    def asyncEach(fn: Consumer[_], maxBlock: js.UndefOr[scala.Nothing], timeout: Double): js.Any = js.native
-    def asyncEach(fn: Consumer[_], maxBlock: Double): js.Any = js.native
-    def asyncEach(fn: Consumer[_], maxBlock: Double, timeout: Double): js.Any = js.native
+    def asyncEach(fn: Consumer[js.Any]): js.Any = js.native
+    def asyncEach(fn: Consumer[js.Any], maxBlock: Double): js.Any = js.native
+    def asyncEach(fn: Consumer[js.Any], maxBlock: Double, timeout: Double): js.Any = js.native
+    def asyncEach(fn: Consumer[js.Any], maxBlock: Unit, timeout: Double): js.Any = js.native
     
     def chunk(n: Double): WuIterable[js.Array[T]] = js.native
     
@@ -274,8 +226,8 @@ object mod {
     @JSName("find")
     def find_S_T[S /* <: T */](fn: TypeGuardFilter[T, S]): js.UndefOr[S] = js.native
     
-    def flatten(): WuIterable[_] = js.native
-    def flatten(shallow: Boolean): WuIterable[_] = js.native
+    def flatten(): WuIterable[js.Any] = js.native
+    def flatten(shallow: Boolean): WuIterable[js.Any] = js.native
     
     def forEach(fn: Consumer[T]): Unit = js.native
     
@@ -287,7 +239,7 @@ object mod {
     def map[U](fn: js.Function1[/* t */ T, U]): WuIterable[U] = js.native
     
     // pluck<T>(attribute:string, iter: Iterable<{[attribute]: T}>): WuIterable<T>;
-    def pluck(attribute: String): WuIterable[_] = js.native
+    def pluck(attribute: String): WuIterable[js.Any] = js.native
     
     def reduce(fn: js.Function2[/* a */ T, /* b */ T, T]): T = js.native
     def reduce(fn: js.Function2[/* a */ T, /* b */ T, T], initial: T): T = js.native
@@ -306,13 +258,13 @@ object mod {
     def reject(fn: Filter_[T]): WuIterable[T] = js.native
     
     def slice(): WuIterable[T] = js.native
-    def slice(start: js.UndefOr[scala.Nothing], stop: Double): WuIterable[T] = js.native
     def slice(start: Double): WuIterable[T] = js.native
     def slice(start: Double, stop: Double): WuIterable[T] = js.native
+    def slice(start: Unit, stop: Double): WuIterable[T] = js.native
     
     def some(fn: Filter_[T]): Boolean = js.native
     
-    def spreadMap(fn: js.Function1[/* repeated */ js.Any, T], iter: Iterable[js.Array[_]]): WuIterable[T] = js.native
+    def spreadMap(fn: js.Function1[/* repeated */ js.Any, T], iter: Iterable[js.Array[js.Any]]): WuIterable[T] = js.native
     
     def take(n: Double): WuIterable[T] = js.native
     

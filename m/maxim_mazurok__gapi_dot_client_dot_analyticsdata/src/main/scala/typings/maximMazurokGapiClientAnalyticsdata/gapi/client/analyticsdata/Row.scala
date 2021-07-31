@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Row extends StObject {
   
   /** List of requested dimension values. In a PivotReport, dimension_values are only listed for dimensions included in a pivot. */
-  var dimensionValues: js.UndefOr[js.Array[DimensionValue]] = js.native
+  var dimensionValues: js.UndefOr[js.Array[DimensionValue]] = js.undefined
   
   /** List of requested visible metric values. */
-  var metricValues: js.UndefOr[js.Array[MetricValue]] = js.native
+  var metricValues: js.UndefOr[js.Array[MetricValue]] = js.undefined
 }
 object Row {
   

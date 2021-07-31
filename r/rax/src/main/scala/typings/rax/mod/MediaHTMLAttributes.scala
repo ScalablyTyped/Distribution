@@ -2,31 +2,31 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaHTMLAttributes[T] extends HTMLAttributes[T] {
+trait MediaHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  var controls: js.UndefOr[Boolean] = js.native
+  var controls: js.UndefOr[Boolean] = js.undefined
   
-  var controlsList: js.UndefOr[String] = js.native
+  var controlsList: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var mediaGroup: js.UndefOr[String] = js.native
+  var mediaGroup: js.UndefOr[String] = js.undefined
   
-  var muted: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.undefined
   
-  var playsinline: js.UndefOr[Boolean] = js.native
+  var playsinline: js.UndefOr[Boolean] = js.undefined
   
-  var preload: js.UndefOr[String] = js.native
+  var preload: js.UndefOr[String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
 }
 object MediaHTMLAttributes {
   
@@ -37,7 +37,7 @@ object MediaHTMLAttributes {
   }
   
   @scala.inline
-  implicit class MediaHTMLAttributesMutableBuilder[Self <: MediaHTMLAttributes[_], T] (val x: Self with MediaHTMLAttributes[T]) extends AnyVal {
+  implicit class MediaHTMLAttributesMutableBuilder[Self <: MediaHTMLAttributes[?], T] (val x: Self & MediaHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])

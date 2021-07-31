@@ -2,14 +2,16 @@ package typings.asynciterator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskschedulerMod {
   
-  @JSImport("asynciterator/dist/taskscheduler", JSImport.Default)
+  @JSImport("asynciterator/dist/taskscheduler", JSImport.Namespace)
   @js.native
-  def default(): TaskScheduler = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): TaskScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[TaskScheduler]
   
   type Task = js.Function0[Unit]
   

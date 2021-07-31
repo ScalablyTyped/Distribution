@@ -2,21 +2,19 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateTrustDialogOptions extends StObject {
   
   /**
     * The certificate to trust/import.
     */
-  var certificate: Certificate = js.native
+  var certificate: Certificate
   
   /**
     * The message to display to the user.
     */
-  var message: String = js.native
+  var message: String
 }
 object CertificateTrustDialogOptions {
   

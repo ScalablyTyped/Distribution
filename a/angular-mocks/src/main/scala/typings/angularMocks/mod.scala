@@ -21,7 +21,6 @@ import typings.std.Node
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,30 +42,22 @@ object mod {
       * @param eventData An optional object which contains additional event data used when creating the
       *     event.
       */
-    @JSGlobal("browserTrigger")
-    @js.native
-    def browserTrigger(element: JQuery): Unit = js.native
-    @JSGlobal("browserTrigger")
-    @js.native
-    def browserTrigger(element: JQuery, eventType: js.UndefOr[scala.Nothing], eventData: IBrowserTriggerEventData): Unit = js.native
-    @JSGlobal("browserTrigger")
-    @js.native
-    def browserTrigger(element: JQuery, eventType: String): Unit = js.native
-    @JSGlobal("browserTrigger")
-    @js.native
-    def browserTrigger(element: JQuery, eventType: String, eventData: IBrowserTriggerEventData): Unit = js.native
-    @JSGlobal("browserTrigger")
-    @js.native
-    def browserTrigger(element: Element): Unit = js.native
-    @JSGlobal("browserTrigger")
-    @js.native
-    def browserTrigger(element: Element, eventType: js.UndefOr[scala.Nothing], eventData: IBrowserTriggerEventData): Unit = js.native
-    @JSGlobal("browserTrigger")
-    @js.native
-    def browserTrigger(element: Element, eventType: String): Unit = js.native
-    @JSGlobal("browserTrigger")
-    @js.native
-    def browserTrigger(element: Element, eventType: String, eventData: IBrowserTriggerEventData): Unit = js.native
+    @scala.inline
+    def browserTrigger(element: JQuery): Unit = js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def browserTrigger(element: JQuery, eventType: String): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def browserTrigger(element: JQuery, eventType: String, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def browserTrigger(element: JQuery, eventType: Unit, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def browserTrigger(element: Element): Unit = js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def browserTrigger(element: Element, eventType: String): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def browserTrigger(element: Element, eventType: String, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def browserTrigger(element: Element, eventType: Unit, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("inject")
     @js.native
@@ -83,10 +74,9 @@ object mod {
     // AngularStatic
     // We reopen it to add the MockStatic definition
     ///////////////////////////////////////////////////////////////////////////
-    @js.native
     trait IAngularStatic extends StObject {
       
-      var mock: IMockStatic = js.native
+      var mock: IMockStatic
     }
     object IAngularStatic {
       
@@ -133,10 +123,11 @@ object mod {
     // see https://docs.angularjs.org/api/ngMock/service/$exceptionHandler
     // see https://docs.angularjs.org/api/ngMock/provider/$exceptionHandlerProvider
     ///////////////////////////////////////////////////////////////////////////
-    @js.native
-    trait IExceptionHandlerProvider extends IServiceProvider {
+    trait IExceptionHandlerProvider
+      extends StObject
+         with IServiceProvider {
       
-      def mode(mode: String): Unit = js.native
+      def mode(mode: String): Unit
     }
     object IExceptionHandlerProvider {
       
@@ -194,17 +185,12 @@ object mod {
         * @param keys Array of keys to assign to regex matches in the request url.
         */
       def expectDELETE(url: String): IRequestHandler = js.native
-      def expectDELETE(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def expectDELETE(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def expectDELETE(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def expectDELETE(url: String, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def expectDELETE(url: String, headers: IHttpHeaders): IRequestHandler = js.native
       def expectDELETE(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def expectDELETE(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
-      def expectDELETE(
-        url: js.Function1[/* url */ String, Boolean],
-        headers: js.UndefOr[scala.Nothing],
-        keys: js.Array[String]
-      ): IRequestHandler = js.native
       def expectDELETE(
         url: js.Function1[/* url */ String, Boolean],
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -214,12 +200,13 @@ object mod {
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean],
         keys: js.Array[String]
       ): IRequestHandler = js.native
+      def expectDELETE(url: js.Function1[/* url */ String, Boolean], headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def expectDELETE(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
       def expectDELETE(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def expectDELETE(url: RegExp): IRequestHandler = js.native
-      def expectDELETE(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def expectDELETE(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def expectDELETE(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def expectDELETE(url: RegExp, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def expectDELETE(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
       def expectDELETE(url: RegExp, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       
@@ -232,17 +219,12 @@ object mod {
         * @param keys Array of keys to assign to regex matches in the request url.
         */
       def expectGET(url: String): IRequestHandler = js.native
-      def expectGET(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def expectGET(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def expectGET(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def expectGET(url: String, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def expectGET(url: String, headers: IHttpHeaders): IRequestHandler = js.native
       def expectGET(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def expectGET(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
-      def expectGET(
-        url: js.Function1[/* url */ String, Boolean],
-        headers: js.UndefOr[scala.Nothing],
-        keys: js.Array[String]
-      ): IRequestHandler = js.native
       def expectGET(
         url: js.Function1[/* url */ String, Boolean],
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -252,12 +234,13 @@ object mod {
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean],
         keys: js.Array[String]
       ): IRequestHandler = js.native
+      def expectGET(url: js.Function1[/* url */ String, Boolean], headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def expectGET(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
       def expectGET(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def expectGET(url: RegExp): IRequestHandler = js.native
-      def expectGET(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def expectGET(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def expectGET(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def expectGET(url: RegExp, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def expectGET(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
       def expectGET(url: RegExp, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       
@@ -270,17 +253,12 @@ object mod {
         * @param keys Array of keys to assign to regex matches in the request url.
         */
       def expectHEAD(url: String): IRequestHandler = js.native
-      def expectHEAD(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def expectHEAD(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def expectHEAD(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def expectHEAD(url: String, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def expectHEAD(url: String, headers: IHttpHeaders): IRequestHandler = js.native
       def expectHEAD(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def expectHEAD(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
-      def expectHEAD(
-        url: js.Function1[/* url */ String, Boolean],
-        headers: js.UndefOr[scala.Nothing],
-        keys: js.Array[String]
-      ): IRequestHandler = js.native
       def expectHEAD(
         url: js.Function1[/* url */ String, Boolean],
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -290,12 +268,13 @@ object mod {
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean],
         keys: js.Array[String]
       ): IRequestHandler = js.native
+      def expectHEAD(url: js.Function1[/* url */ String, Boolean], headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def expectHEAD(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
       def expectHEAD(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def expectHEAD(url: RegExp): IRequestHandler = js.native
-      def expectHEAD(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def expectHEAD(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def expectHEAD(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def expectHEAD(url: RegExp, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def expectHEAD(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
       def expectHEAD(url: RegExp, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       
@@ -385,9 +364,9 @@ object mod {
         * @param skip Number of pending requests to skip. For example, a value of 5 would skip the first 5 pending requests and start flushing from the 6th onwards. _(default: 0)_
         */
       def flush(): Unit = js.native
-      def flush(count: js.UndefOr[scala.Nothing], skip: Double): Unit = js.native
       def flush(count: Double): Unit = js.native
       def flush(count: Double, skip: Double): Unit = js.native
+      def flush(count: Unit, skip: Double): Unit = js.native
       
       /**
         * Resets all request expectations, but preserves all backend definitions.
@@ -433,17 +412,12 @@ object mod {
         * @param keys Array of keys to assign to regex matches in the request url.
         */
       def whenDELETE(url: String): IRequestHandler = js.native
-      def whenDELETE(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def whenDELETE(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def whenDELETE(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def whenDELETE(url: String, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def whenDELETE(url: String, headers: IHttpHeaders): IRequestHandler = js.native
       def whenDELETE(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def whenDELETE(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
-      def whenDELETE(
-        url: js.Function1[/* url */ String, Boolean],
-        headers: js.UndefOr[scala.Nothing],
-        keys: js.Array[String]
-      ): IRequestHandler = js.native
       def whenDELETE(
         url: js.Function1[/* url */ String, Boolean],
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -453,12 +427,13 @@ object mod {
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean],
         keys: js.Array[String]
       ): IRequestHandler = js.native
+      def whenDELETE(url: js.Function1[/* url */ String, Boolean], headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def whenDELETE(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
       def whenDELETE(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def whenDELETE(url: RegExp): IRequestHandler = js.native
-      def whenDELETE(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def whenDELETE(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def whenDELETE(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def whenDELETE(url: RegExp, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def whenDELETE(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
       def whenDELETE(url: RegExp, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       
@@ -471,17 +446,12 @@ object mod {
         * @param keys Array of keys to assign to regex matches in the request url.
         */
       def whenGET(url: String): IRequestHandler = js.native
-      def whenGET(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def whenGET(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def whenGET(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def whenGET(url: String, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def whenGET(url: String, headers: IHttpHeaders): IRequestHandler = js.native
       def whenGET(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def whenGET(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
-      def whenGET(
-        url: js.Function1[/* url */ String, Boolean],
-        headers: js.UndefOr[scala.Nothing],
-        keys: js.Array[String]
-      ): IRequestHandler = js.native
       def whenGET(
         url: js.Function1[/* url */ String, Boolean],
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -491,12 +461,13 @@ object mod {
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean],
         keys: js.Array[String]
       ): IRequestHandler = js.native
+      def whenGET(url: js.Function1[/* url */ String, Boolean], headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def whenGET(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
       def whenGET(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def whenGET(url: RegExp): IRequestHandler = js.native
-      def whenGET(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def whenGET(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def whenGET(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def whenGET(url: RegExp, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def whenGET(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
       def whenGET(url: RegExp, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       
@@ -508,17 +479,12 @@ object mod {
         * @param keys Array of keys to assign to regex matches in the request url.
         */
       def whenHEAD(url: String): IRequestHandler = js.native
-      def whenHEAD(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def whenHEAD(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def whenHEAD(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def whenHEAD(url: String, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def whenHEAD(url: String, headers: IHttpHeaders): IRequestHandler = js.native
       def whenHEAD(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def whenHEAD(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
-      def whenHEAD(
-        url: js.Function1[/* url */ String, Boolean],
-        headers: js.UndefOr[scala.Nothing],
-        keys: js.Array[String]
-      ): IRequestHandler = js.native
       def whenHEAD(
         url: js.Function1[/* url */ String, Boolean],
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -528,12 +494,13 @@ object mod {
         headers: js.Function1[/* headers */ IHttpHeaders, Boolean],
         keys: js.Array[String]
       ): IRequestHandler = js.native
+      def whenHEAD(url: js.Function1[/* url */ String, Boolean], headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def whenHEAD(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
       def whenHEAD(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       def whenHEAD(url: RegExp): IRequestHandler = js.native
-      def whenHEAD(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
       def whenHEAD(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
       def whenHEAD(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
+      def whenHEAD(url: RegExp, headers: Unit, keys: js.Array[String]): IRequestHandler = js.native
       def whenHEAD(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
       def whenHEAD(url: RegExp, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
       
@@ -617,7 +584,7 @@ object mod {
     @js.native
     trait IInjectStatic extends StObject {
       
-      def apply(fns: (Injectable[js.Function1[/* repeated */ _, Unit]])*): js.Any = js.native
+      def apply(fns: (Injectable[js.Function1[/* repeated */ js.Any, Unit]])*): js.Any = js.native
       
       // void | (() => void);
       def strictDi(): js.Any = js.native
@@ -629,7 +596,6 @@ object mod {
     // see https://docs.angularjs.org/api/ngMock/service/$interval
     // Augments the original service
     ///////////////////////////////////////////////////////////////////////////
-    @js.native
     trait IIntervalService extends StObject {
       
       /**
@@ -638,7 +604,7 @@ object mod {
         * @param millis - The maximum timeout amount to flush up until.
         * @return The amount of time moved forward.
         */
-      def flush(millis: Double): Double = js.native
+      def flush(millis: Double): Double
     }
     object IIntervalService {
       
@@ -656,10 +622,9 @@ object mod {
       }
     }
     
-    @js.native
     trait ILogCall extends StObject {
       
-      var logs: js.Array[String] = js.native
+      var logs: js.Array[String]
     }
     object ILogCall {
       
@@ -685,12 +650,11 @@ object mod {
     // see https://docs.angularjs.org/api/ngMock/service/$log
     // Augments the original service
     ///////////////////////////////////////////////////////////////////////////
-    @js.native
     trait ILogService extends StObject {
       
-      def assertEmpty(): Unit = js.native
+      def assertEmpty(): Unit
       
-      def reset(): Unit = js.native
+      def reset(): Unit
     }
     object ILogService {
       
@@ -721,7 +685,7 @@ object mod {
       // see https://docs.angularjs.org/api/ngMock/function/angular.mock.dump
       def dump(obj: js.Any): String = js.native
       
-      def inject(fns: (Injectable[js.Function1[/* repeated */ _, Unit]])*): js.Any = js.native
+      def inject(fns: (Injectable[js.Function1[/* repeated */ js.Any, Unit]])*): js.Any = js.native
       @JSName("inject")
       var inject_Original: IInjectStatic = js.native
       
@@ -788,21 +752,20 @@ object mod {
     ///////////////////////////////////////////////////////////////////////////
     object animate {
       
-      @js.native
       trait IAnimateService extends StObject {
         
         /**
           * This method will close all pending animations (both Javascript and CSS) and it will also flush any remaining
           * animation frames and/or callbacks.
           */
-        def closeAndFlush(): Unit = js.native
+        def closeAndFlush(): Unit
         
         /**
           * This method is used to flush the pending callbacks and animation frames to either start
           * an animation or conclude an animation. Note that this will not actually close an
           * actively running animation (see `closeAndFlush()`} for that).
           */
-        def flush(): Unit = js.native
+        def flush(): Unit
       }
       object IAnimateService {
         
@@ -829,76 +792,75 @@ object mod {
       /**
         * Contains additional event data used by the `browserTrigger` function when creating an event.
         */
-      @js.native
       trait IBrowserTriggerEventData extends StObject {
         
         /**
           * [Event.bubbles](https://developer.mozilla.org/docs/Web/API/Event/bubbles).
           * Not applicable to all events.
           */
-        var bubbles: js.UndefOr[Boolean] = js.native
+        var bubbles: js.UndefOr[Boolean] = js.undefined
         
         /**
           * [Event.cancelable](https://developer.mozilla.org/docs/Web/API/Event/cancelable).
           * Not applicable to all events.
           */
-        var cancelable: js.UndefOr[Boolean] = js.native
+        var cancelable: js.UndefOr[Boolean] = js.undefined
         
         /**
           * [charCode](https://developer.mozilla.org/docs/Web/API/KeyboardEvent/charcode)
           * for keyboard events (keydown, keypress, and keyup).
           */
-        var charcode: js.UndefOr[Double] = js.native
+        var charcode: js.UndefOr[Double] = js.undefined
         
         /**
           * [data](https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent/data) for
           * [CompositionEvents](https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent).
           */
-        var data: js.UndefOr[String] = js.native
+        var data: js.UndefOr[String] = js.undefined
         
         /**
           * The elapsedTime for
           * [TransitionEvent](https://developer.mozilla.org/docs/Web/API/TransitionEvent)
           * and [AnimationEvent](https://developer.mozilla.org/docs/Web/API/AnimationEvent).
           */
-        var elapsedTime: js.UndefOr[Double] = js.native
+        var elapsedTime: js.UndefOr[Double] = js.undefined
         
         /**
           * [keyCode](https://developer.mozilla.org/docs/Web/API/KeyboardEvent/keycode)
           * for keyboard events (keydown, keypress, and keyup).
           */
-        var keycode: js.UndefOr[Double] = js.native
+        var keycode: js.UndefOr[Double] = js.undefined
         
         /**
           * An array of possible modifier keys (ctrl, alt, shift, meta) for
           * [MouseEvent](https://developer.mozilla.org/docs/Web/API/MouseEvent) and
           * keyboard events (keydown, keypress, and keyup).
           */
-        var keys: js.UndefOr[js.Array[ctrl | alt | shift | meta]] = js.native
+        var keys: js.UndefOr[js.Array[ctrl | alt | shift | meta]] = js.undefined
         
         /**
           * The [relatedTarget](https://developer.mozilla.org/docs/Web/API/MouseEvent/relatedTarget)
           * for [MouseEvent](https://developer.mozilla.org/docs/Web/API/MouseEvent).
           */
-        var relatedTarget: js.UndefOr[Node] = js.native
+        var relatedTarget: js.UndefOr[Node] = js.undefined
         
         /**
           * [which](https://developer.mozilla.org/docs/Web/API/KeyboardEvent/which)
           * for keyboard events (keydown, keypress, and keyup).
           */
-        var which: js.UndefOr[Double] = js.native
+        var which: js.UndefOr[Double] = js.undefined
         
         /**
           * x-coordinates for [MouseEvent](https://developer.mozilla.org/docs/Web/API/MouseEvent)
           * and [TouchEvent](https://developer.mozilla.org/docs/Web/API/TouchEvent).
           */
-        var x: js.UndefOr[Double] = js.native
+        var x: js.UndefOr[Double] = js.undefined
         
         /**
           * y-coordinates for [MouseEvent](https://developer.mozilla.org/docs/Web/API/MouseEvent)
           * and [TouchEvent](https://developer.mozilla.org/docs/Web/API/TouchEvent).
           */
-        var y: js.UndefOr[Double] = js.native
+        var y: js.UndefOr[Double] = js.undefined
       }
       object IBrowserTriggerEventData {
         
@@ -1003,11 +965,11 @@ object mod {
           * @param responseText Response text to add to the response.
           */
         def respond(data: String): IRequestHandler = js.native
-        def respond(data: String, headers: js.UndefOr[scala.Nothing], responseText: String): IRequestHandler = js.native
+        def respond(data: String, headers: Unit, responseText: String): IRequestHandler = js.native
         def respond(data: String, headers: IHttpHeaders): IRequestHandler = js.native
         def respond(data: String, headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
         def respond(data: js.Object): IRequestHandler = js.native
-        def respond(data: js.Object, headers: js.UndefOr[scala.Nothing], responseText: String): IRequestHandler = js.native
+        def respond(data: js.Object, headers: Unit, responseText: String): IRequestHandler = js.native
         def respond(data: js.Object, headers: IHttpHeaders): IRequestHandler = js.native
         def respond(data: js.Object, headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
         /**
@@ -1036,22 +998,17 @@ object mod {
           * @param responseText Response text to add to the response.
           */
         def respond(status: Double): IRequestHandler = js.native
-        def respond(
-          status: Double,
-          data: js.UndefOr[scala.Nothing],
-          headers: js.UndefOr[scala.Nothing],
-          responseText: String
-        ): IRequestHandler = js.native
-        def respond(status: Double, data: js.UndefOr[scala.Nothing], headers: IHttpHeaders): IRequestHandler = js.native
-        def respond(status: Double, data: js.UndefOr[scala.Nothing], headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
         def respond(status: Double, data: String): IRequestHandler = js.native
-        def respond(status: Double, data: String, headers: js.UndefOr[scala.Nothing], responseText: String): IRequestHandler = js.native
+        def respond(status: Double, data: String, headers: Unit, responseText: String): IRequestHandler = js.native
         def respond(status: Double, data: String, headers: IHttpHeaders): IRequestHandler = js.native
         def respond(status: Double, data: String, headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
         def respond(status: Double, data: js.Object): IRequestHandler = js.native
-        def respond(status: Double, data: js.Object, headers: js.UndefOr[scala.Nothing], responseText: String): IRequestHandler = js.native
+        def respond(status: Double, data: js.Object, headers: Unit, responseText: String): IRequestHandler = js.native
         def respond(status: Double, data: js.Object, headers: IHttpHeaders): IRequestHandler = js.native
         def respond(status: Double, data: js.Object, headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
+        def respond(status: Double, data: Unit, headers: Unit, responseText: String): IRequestHandler = js.native
+        def respond(status: Double, data: Unit, headers: IHttpHeaders): IRequestHandler = js.native
+        def respond(status: Double, data: Unit, headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
       }
     }
   }

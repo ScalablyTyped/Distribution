@@ -6,7 +6,6 @@ import typings.reactMotion.mod.PlainStyle
 import typings.reactMotion.mod.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,20 +23,19 @@ object mod {
   }
   
   /* Inlined parent std.Partial<react-motion.react-motion.MotionProps> */
-  @js.native
   trait ReactMotionLoopProps extends StObject {
     
-    var children: js.UndefOr[js.Function1[/* interpolatedStyle */ PlainStyle, ReactElement]] = js.native
+    var children: js.UndefOr[js.Function1[/* interpolatedStyle */ PlainStyle, ReactElement]] = js.undefined
     
-    var defaultStyle: js.UndefOr[PlainStyle] = js.native
+    var defaultStyle: js.UndefOr[PlainStyle] = js.undefined
     
-    var onRest: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRest: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var style: js.UndefOr[Style] = js.native
+    var style: js.UndefOr[Style] = js.undefined
     
-    var styleFrom: Style = js.native
+    var styleFrom: Style
     
-    var styleTo: Style = js.native
+    var styleTo: Style
   }
   object ReactMotionLoopProps {
     

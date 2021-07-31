@@ -2,23 +2,21 @@ package typings.simperium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GhostStore[T] extends StObject {
   
-  def eachGhost(iterator: js.Function1[/* ghost */ Ghost[T], Unit]): Unit = js.native
+  def eachGhost(iterator: js.Function1[/* ghost */ Ghost[T], Unit]): Unit
   
-  def get(entityId: EntityId): js.Promise[Ghost[T]] = js.native
+  def get(entityId: EntityId): js.Promise[Ghost[T]]
   
-  def getChangeVersion(): js.Promise[ChangeVersion] = js.native
+  def getChangeVersion(): js.Promise[ChangeVersion]
   
-  def put(entityId: EntityId, version: Double, data: T): js.Promise[Ghost[T]] = js.native
+  def put(entityId: EntityId, version: Double, data: T): js.Promise[Ghost[T]]
   
-  def remove(entityId: EntityId): js.Promise[Ghost[T]] = js.native
+  def remove(entityId: EntityId): js.Promise[Ghost[T]]
   
-  def setChangeVersion(version: ChangeVersion): js.Promise[Unit] = js.native
+  def setChangeVersion(version: ChangeVersion): js.Promise[Unit]
 }
 object GhostStore {
   
@@ -36,7 +34,7 @@ object GhostStore {
   }
   
   @scala.inline
-  implicit class GhostStoreMutableBuilder[Self <: GhostStore[_], T] (val x: Self with GhostStore[T]) extends AnyVal {
+  implicit class GhostStoreMutableBuilder[Self <: GhostStore[?], T] (val x: Self & GhostStore[T]) extends AnyVal {
     
     @scala.inline
     def setEachGhost(value: js.Function1[/* ghost */ Ghost[T], Unit] => Unit): Self = StObject.set(x, "eachGhost", js.Any.fromFunction1(value))

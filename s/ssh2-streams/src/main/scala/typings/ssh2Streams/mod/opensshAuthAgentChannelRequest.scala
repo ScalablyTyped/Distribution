@@ -3,21 +3,19 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.`auth-agent-req@opensshDotcom`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait opensshAuthAgentChannelRequest extends StObject {
   
-  var recipient: Double = js.native
+  var recipient: Double
   
-  var request: `auth-agent-req@opensshDotcom` = js.native
+  var request: `auth-agent-req@opensshDotcom`
 }
 object opensshAuthAgentChannelRequest {
   
   @scala.inline
-  def apply(recipient: Double, request: `auth-agent-req@opensshDotcom`): opensshAuthAgentChannelRequest = {
-    val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+  def apply(recipient: Double): opensshAuthAgentChannelRequest = {
+    val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = "auth-agent-req@openssh.com")
     __obj.asInstanceOf[opensshAuthAgentChannelRequest]
   }
   

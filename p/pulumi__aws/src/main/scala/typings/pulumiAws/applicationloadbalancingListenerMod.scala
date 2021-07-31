@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applicationloadbalancingListenerMod {
@@ -65,6 +64,10 @@ object applicationloadbalancingListenerMod {
   /* static members */
   object Listener {
     
+    @JSImport("@pulumi/aws/applicationloadbalancing/listener", "Listener")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Listener resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -74,62 +77,56 @@ object applicationloadbalancingListenerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/applicationloadbalancing/listener", "Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Listener = js.native
-    @JSImport("@pulumi/aws/applicationloadbalancing/listener", "Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Listener = js.native
-    @JSImport("@pulumi/aws/applicationloadbalancing/listener", "Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerState): Listener = js.native
-    @JSImport("@pulumi/aws/applicationloadbalancing/listener", "Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): Listener = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerState): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
     
     /**
       * Returns true if the given object is an instance of Listener.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/applicationloadbalancing/listener", "Listener.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/applicationloadbalancing/listener.Listener */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/applicationloadbalancing/listener.Listener */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/applicationloadbalancing/listener.Listener */ Boolean]
   }
   
-  @js.native
   trait ListenerArgs extends StObject {
     
     /**
       * The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the `aws.lb.ListenerCertificate` resource.
       */
-    val certificateArn: js.UndefOr[Input[String]] = js.native
+    val certificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An Action block. Action blocks are documented below.
       */
     val defaultActions: Input[
         js.Array[Input[typings.pulumiAws.inputMod.applicationloadbalancing.ListenerDefaultAction]]
-      ] = js.native
+      ]
     
     /**
       * The ARN of the load balancer.
       */
-    val loadBalancerArn: Input[String] = js.native
+    val loadBalancerArn: Input[String]
     
     /**
       * The port on which the load balancer is listening.
       */
-    val port: Input[Double] = js.native
+    val port: Input[Double]
     
     /**
       * The protocol for connections from clients to the load balancer. Valid values are `TCP`, `TLS`, `UDP`, `TCP_UDP`, `HTTP` and `HTTPS`. Defaults to `HTTP`.
       */
-    val protocol: js.UndefOr[Input[String]] = js.native
+    val protocol: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the SSL Policy for the listener. Required if `protocol` is `HTTPS` or `TLS`.
       */
-    val sslPolicy: js.UndefOr[Input[String]] = js.native
+    val sslPolicy: js.UndefOr[Input[String]] = js.undefined
   }
   object ListenerArgs {
     
@@ -184,18 +181,17 @@ object applicationloadbalancingListenerMod {
     }
   }
   
-  @js.native
   trait ListenerState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the target group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the `aws.lb.ListenerCertificate` resource.
       */
-    val certificateArn: js.UndefOr[Input[String]] = js.native
+    val certificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An Action block. Action blocks are documented below.
@@ -204,27 +200,27 @@ object applicationloadbalancingListenerMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.applicationloadbalancing.ListenerDefaultAction]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The ARN of the load balancer.
       */
-    val loadBalancerArn: js.UndefOr[Input[String]] = js.native
+    val loadBalancerArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port on which the load balancer is listening.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The protocol for connections from clients to the load balancer. Valid values are `TCP`, `TLS`, `UDP`, `TCP_UDP`, `HTTP` and `HTTPS`. Defaults to `HTTP`.
       */
-    val protocol: js.UndefOr[Input[String]] = js.native
+    val protocol: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the SSL Policy for the listener. Required if `protocol` is `HTTPS` or `TLS`.
       */
-    val sslPolicy: js.UndefOr[Input[String]] = js.native
+    val sslPolicy: js.UndefOr[Input[String]] = js.undefined
   }
   object ListenerState {
     

@@ -6,22 +6,22 @@ import typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateGridTypesMod {
   
-  @js.native
-  trait IAvailableDateOptions extends IRestrictedDatesOptions {
+  trait IAvailableDateOptions
+    extends StObject
+       with IRestrictedDatesOptions {
     
     /** Direction of search (`1` - search in future / `-1` search in past) */
-    var direction: Double = js.native
+    var direction: Double
     
     /** Date from which we start the search */
-    var initialDate: Date = js.native
+    var initialDate: Date
     
     /** Ideal available date */
-    var targetDate: Date = js.native
+    var targetDate: Date
   }
   object IAvailableDateOptions {
     
@@ -45,52 +45,53 @@ object dateGridTypesMod {
     }
   }
   
-  @js.native
-  trait IDatepickerOptions extends IRestrictedDatesOptions {
+  trait IDatepickerOptions
+    extends StObject
+       with IRestrictedDatesOptions {
     
     /**
       * The date range type indicating how  many days should be selected as the user
       * selects days
       */
-    var dateRangeType: DateRangeType = js.native
+    var dateRangeType: DateRangeType
     
     /**
       * The number of days to select while dateRangeType === DateRangeType.Day. Used in order to have multi-day
       * views.
       */
-    var daysToSelectInDayView: js.UndefOr[Double] = js.native
+    var daysToSelectInDayView: js.UndefOr[Double] = js.undefined
     
     /**
       * The first day of the week for your locale.
       */
-    var firstDayOfWeek: DayOfWeek = js.native
+    var firstDayOfWeek: DayOfWeek
     
     /**
       * Defines when the first week of the year should start, FirstWeekOfYear.FirstDay,
       * FirstWeekOfYear.FirstFullWeek or FirstWeekOfYear.FirstFourDayWeek are the possible values
       */
-    var firstWeekOfYear: FirstWeekOfYear = js.native
+    var firstWeekOfYear: FirstWeekOfYear
     
     /**
       * Which days in the generated grid should be marked.
       */
-    var markedDays: js.UndefOr[js.Array[Date]] = js.native
+    var markedDays: js.UndefOr[js.Array[Date]] = js.undefined
     
     /**
       * Whether the calendar should show the week number (weeks 1 to 53) before each week row
       */
-    var showWeekNumbers: js.UndefOr[Boolean] = js.native
+    var showWeekNumbers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Value of today. If null, current time in client machine will be used.
       */
-    var today: js.UndefOr[Date] = js.native
+    var today: js.UndefOr[Date] = js.undefined
     
     /**
       * The days that are selectable when `dateRangeType` is WorkWeek.
       * If `dateRangeType` is not WorkWeek this property does nothing.
       */
-    var workWeekDays: js.UndefOr[js.Array[DayOfWeek]] = js.native
+    var workWeekDays: js.UndefOr[js.Array[DayOfWeek]] = js.undefined
   }
   object IDatepickerOptions {
     
@@ -150,32 +151,31 @@ object dateGridTypesMod {
     }
   }
   
-  @js.native
   trait IDay extends StObject {
     
     /** `Date.getDate()` value of current date */
-    var date: String = js.native
+    var date: String
     
     /** Is current date within restriction boundaries */
-    var isInBounds: Boolean = js.native
+    var isInBounds: Boolean
     
     /** Is current date is in the same month as "today" date */
-    var isInMonth: Boolean = js.native
+    var isInMonth: Boolean
     
     /** Is current date marked */
-    var isMarked: Boolean = js.native
+    var isMarked: Boolean
     
     /** Is current date is selected */
-    var isSelected: Boolean = js.native
+    var isSelected: Boolean
     
     /** Is current date is "today" date */
-    var isToday: Boolean = js.native
+    var isToday: Boolean
     
     /** `Date.toString()` value of current date */
-    var key: String = js.native
+    var key: String
     
     /** `Date` object of current date */
-    var originalDate: Date = js.native
+    var originalDate: Date
   }
   object IDay {
     
@@ -223,24 +223,25 @@ object dateGridTypesMod {
     }
   }
   
-  @js.native
-  trait IDayGridOptions extends IDatepickerOptions {
+  trait IDayGridOptions
+    extends StObject
+       with IDatepickerOptions {
     
     /**
       * The currently navigated date
       */
-    var navigatedDate: Date = js.native
+    var navigatedDate: Date
     
     /**
       * The currently selected date
       */
-    var selectedDate: Date = js.native
+    var selectedDate: Date
     
     /**
       * How many weeks to show by default. If not provided, will show enough weeks to display the current
       * month, between 4 and 6 depending
       */
-    var weeksToShow: js.UndefOr[Double] = js.native
+    var weeksToShow: js.UndefOr[Double] = js.undefined
   }
   object IDayGridOptions {
     
@@ -273,23 +274,22 @@ object dateGridTypesMod {
     }
   }
   
-  @js.native
   trait IRestrictedDatesOptions extends StObject {
     
     /**
       * If set the Calendar will not allow navigation to or selection of a date later than this value.
       */
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
     /**
       * If set the Calendar will not allow navigation to or selection of a date earlier than this value.
       */
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
     /**
       * If set the Calendar will not allow selection of dates in this array.
       */
-    var restrictedDates: js.UndefOr[js.Array[Date]] = js.native
+    var restrictedDates: js.UndefOr[js.Array[Date]] = js.undefined
   }
   object IRestrictedDatesOptions {
     

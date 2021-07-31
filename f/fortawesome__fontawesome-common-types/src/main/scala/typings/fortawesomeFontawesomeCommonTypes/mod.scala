@@ -3,13 +3,13 @@ package typings.fortawesomeFontawesomeCommonTypes
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
-  trait IconDefinition extends IconLookup {
+  trait IconDefinition
+    extends StObject
+       with IconLookup {
     
     var icon: js.Tuple5[
         Double, 
@@ -21,7 +21,7 @@ object mod {
     String, 
         // unicode
     IconPathData
-      ] = js.native
+      ]
   }
   object IconDefinition {
     
@@ -45,13 +45,12 @@ object mod {
     }
   }
   
-  @js.native
   trait IconLookup extends StObject {
     
     // IconName is defined in the code that will be generated at build time and bundled with this file.
-    var iconName: IconName = js.native
+    var iconName: IconName
     
-    var prefix: IconPrefix = js.native
+    var prefix: IconPrefix
   }
   object IconLookup {
     

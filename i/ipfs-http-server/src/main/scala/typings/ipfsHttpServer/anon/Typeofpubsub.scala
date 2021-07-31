@@ -2,17 +2,15 @@ package typings.ipfsHttpServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofpubsub extends StObject {
   
-  val cancel: Typeofcancel = js.native
+  val cancel: Typeofcancel
   
-  val state: Typeofstate = js.native
+  val state: Typeofstate
   
-  val subs: Typeofsubs = js.native
+  val subs: Typeofsubs
 }
 object Typeofpubsub {
   

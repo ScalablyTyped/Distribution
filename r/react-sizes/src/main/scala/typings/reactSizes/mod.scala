@@ -3,25 +3,25 @@ package typings.reactSizes
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-sizes", JSImport.Default)
+  @JSImport("react-sizes", JSImport.Namespace)
   @js.native
-  def default[SP /* <: js.Object */, P /* <: SP */](mapSizesToProps: js.Function1[/* sizes */ Sizes, SP]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-sizes", "WithSizes")
-  @js.native
-  def WithSizes[SP /* <: js.Object */, P /* <: SP */](mapSizesToProps: js.Function1[/* sizes */ Sizes, SP]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = js.native
+  @scala.inline
+  def default[SP /* <: js.Object */, P /* <: SP */](mapSizesToProps: js.Function1[/* sizes */ Sizes, SP]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(mapSizesToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], ComponentType[P]]]
   
-  @js.native
+  @scala.inline
+  def WithSizes[SP /* <: js.Object */, P /* <: SP */](mapSizesToProps: js.Function1[/* sizes */ Sizes, SP]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("WithSizes")(mapSizesToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], ComponentType[P]]]
+  
   trait Sizes extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Sizes {
     

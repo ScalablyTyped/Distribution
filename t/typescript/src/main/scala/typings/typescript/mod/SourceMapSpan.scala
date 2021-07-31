@@ -2,29 +2,27 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceMapSpan extends StObject {
   
   /** Column number in the .js file. */
-  var emittedColumn: Double = js.native
+  var emittedColumn: Double
   
   /** Line number in the .js file. */
-  var emittedLine: Double = js.native
+  var emittedLine: Double
   
   /** Optional name (index into names array) associated with this span. */
-  var nameIndex: js.UndefOr[Double] = js.native
+  var nameIndex: js.UndefOr[Double] = js.undefined
   
   /** Column number in the .ts file. */
-  var sourceColumn: Double = js.native
+  var sourceColumn: Double
   
   /** .ts file (index into sources array) associated with this span */
-  var sourceIndex: Double = js.native
+  var sourceIndex: Double
   
   /** Line number in the .ts file. */
-  var sourceLine: Double = js.native
+  var sourceLine: Double
 }
 object SourceMapSpan {
   

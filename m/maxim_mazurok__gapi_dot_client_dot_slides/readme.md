@@ -10,9 +10,9 @@ TypeScript typings for Google Slides API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.slides |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 53 |
+| # releases         | 14 |
+| # dependents       | 1 |
+| # downloads        | 1316 |
 | # stars            | 0 |
 
 ## Links

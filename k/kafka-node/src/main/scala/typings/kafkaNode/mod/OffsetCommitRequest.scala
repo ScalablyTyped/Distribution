@@ -2,19 +2,17 @@ package typings.kafkaNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OffsetCommitRequest extends StObject {
   
-  var metadata: js.UndefOr[String] = js.native
+  var metadata: js.UndefOr[String] = js.undefined
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var partition: js.UndefOr[Double] = js.native
+  var partition: js.UndefOr[Double] = js.undefined
   
-  var topic: String = js.native
+  var topic: String
 }
 object OffsetCommitRequest {
   

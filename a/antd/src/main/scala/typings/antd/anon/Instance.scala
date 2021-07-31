@@ -3,15 +3,13 @@ package typings.antd.anon
 import typings.rcNotification.notificationMod.NotificationInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance extends StObject {
   
-  var instance: NotificationInstance = js.native
+  var instance: NotificationInstance
   
-  var prefixCls: String = js.native
+  var prefixCls: String
 }
 object Instance {
   

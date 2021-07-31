@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/alertcenter/v1beta1", "alertcenter_v1beta1.Resource$Alerts")
@@ -35,7 +34,7 @@ class ResourceAlerts protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceAlertsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceAlertsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -68,7 +67,7 @@ class ResourceAlerts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAlert] = js.native
   def get(callback: BodyResponseCallback[SchemaAlert]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAlert] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAlert] = js.native
   def get(params: ParamsResourceAlertsGet): GaxiosPromise[SchemaAlert] = js.native
   def get(params: ParamsResourceAlertsGet, callback: BodyResponseCallback[SchemaAlert]): Unit = js.native
   def get(
@@ -101,7 +100,7 @@ class ResourceAlerts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListAlertsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAlertsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAlertsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAlertsResponse] = js.native
   def list(params: ParamsResourceAlertsList): GaxiosPromise[SchemaListAlertsResponse] = js.native
   def list(params: ParamsResourceAlertsList, callback: BodyResponseCallback[SchemaListAlertsResponse]): Unit = js.native
   def list(
@@ -136,7 +135,7 @@ class ResourceAlerts protected () extends StObject {
     */
   def undelete(): GaxiosPromise[SchemaAlert] = js.native
   def undelete(callback: BodyResponseCallback[SchemaAlert]): Unit = js.native
-  def undelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAlert] = js.native
+  def undelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAlert] = js.native
   def undelete(params: ParamsResourceAlertsUndelete): GaxiosPromise[SchemaAlert] = js.native
   def undelete(params: ParamsResourceAlertsUndelete, callback: BodyResponseCallback[SchemaAlert]): Unit = js.native
   def undelete(

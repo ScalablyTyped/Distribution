@@ -2,28 +2,26 @@ package typings.reactVirtualized.esTableMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiSortReturn extends StObject {
   
   /**
     * Sort property to be passed to the `Table` component.
     * This function updates `sortBy` and `sortDirection` values.
     */
-  def sort(params: SortParams): Unit = js.native
+  def sort(params: SortParams): Unit
   
   /**
     * Specifies the fields currently responsible for sorting data,
     * In order of importance.
     */
-  var sortBy: js.Array[String] = js.native
+  var sortBy: js.Array[String]
   
   /**
     * Specifies the direction a specific field is being sorted in.
     */
-  var sortDirection: SortDirectionMap = js.native
+  var sortDirection: SortDirectionMap
 }
 object MultiSortReturn {
   

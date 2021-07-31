@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDatastoreAdminV1ExportEntitiesMetadata extends StObject {
   
   /** Metadata common to all Datastore Admin operations. */
-  var common: js.UndefOr[GoogleDatastoreAdminV1CommonMetadata] = js.native
+  var common: js.UndefOr[GoogleDatastoreAdminV1CommonMetadata] = js.undefined
   
   /** Description of which entities are being exported. */
-  var entityFilter: js.UndefOr[GoogleDatastoreAdminV1EntityFilter] = js.native
+  var entityFilter: js.UndefOr[GoogleDatastoreAdminV1EntityFilter] = js.undefined
   
   /**
     * Location for the export metadata and data files. This will be the same value as the google.datastore.admin.v1.ExportEntitiesRequest.output_url_prefix field. The final output
     * location is provided in google.datastore.admin.v1.ExportEntitiesResponse.output_url.
     */
-  var outputUrlPrefix: js.UndefOr[String] = js.native
+  var outputUrlPrefix: js.UndefOr[String] = js.undefined
   
   /** An estimate of the number of bytes processed. */
-  var progressBytes: js.UndefOr[GoogleDatastoreAdminV1Progress] = js.native
+  var progressBytes: js.UndefOr[GoogleDatastoreAdminV1Progress] = js.undefined
   
   /** An estimate of the number of entities processed. */
-  var progressEntities: js.UndefOr[GoogleDatastoreAdminV1Progress] = js.native
+  var progressEntities: js.UndefOr[GoogleDatastoreAdminV1Progress] = js.undefined
 }
 object GoogleDatastoreAdminV1ExportEntitiesMetadata {
   

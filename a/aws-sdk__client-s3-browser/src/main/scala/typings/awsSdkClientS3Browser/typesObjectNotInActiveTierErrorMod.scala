@@ -2,22 +2,20 @@ package typings.awsSdkClientS3Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesObjectNotInActiveTierErrorMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ObjectNotInActiveTierErrorDetails> * / any */ @js.native
-  trait ObjectNotInActiveTierError extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ObjectNotInActiveTierErrorDetails> * / any */ trait ObjectNotInActiveTierError extends StObject {
     
-    var name: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.ObjectNotInActiveTierError = js.native
+    var name: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.ObjectNotInActiveTierError
   }
   object ObjectNotInActiveTierError {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.ObjectNotInActiveTierError): ObjectNotInActiveTierError = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ObjectNotInActiveTierError = {
+      val __obj = js.Dynamic.literal(name = "ObjectNotInActiveTierError")
       __obj.asInstanceOf[ObjectNotInActiveTierError]
     }
     
@@ -29,6 +27,5 @@ object typesObjectNotInActiveTierErrorMod {
     }
   }
   
-  @js.native
   trait ObjectNotInActiveTierErrorDetails extends StObject
 }

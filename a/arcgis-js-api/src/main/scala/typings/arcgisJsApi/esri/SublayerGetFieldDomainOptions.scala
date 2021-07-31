@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SublayerGetFieldDomainOptions extends Object {
+trait SublayerGetFieldDomainOptions
+  extends StObject
+     with Object {
   
   /**
     * The feature to which the [Domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html) is assigned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#getFieldDomain)
     */
-  var feature: Graphic = js.native
+  var feature: Graphic
 }
 object SublayerGetFieldDomainOptions {
   

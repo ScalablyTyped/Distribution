@@ -3,27 +3,25 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 import typings.dialogflow.mod.google.protobuf.IFieldMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a BatchUpdateEntityTypesRequest. */
-@js.native
 trait IBatchUpdateEntityTypesRequest extends StObject {
   
   /** BatchUpdateEntityTypesRequest entityTypeBatchInline */
-  var entityTypeBatchInline: js.UndefOr[IEntityTypeBatch | Null] = js.native
+  var entityTypeBatchInline: js.UndefOr[IEntityTypeBatch | Null] = js.undefined
   
   /** BatchUpdateEntityTypesRequest entityTypeBatchUri */
-  var entityTypeBatchUri: js.UndefOr[String | Null] = js.native
+  var entityTypeBatchUri: js.UndefOr[String | Null] = js.undefined
   
   /** BatchUpdateEntityTypesRequest languageCode */
-  var languageCode: js.UndefOr[String | Null] = js.native
+  var languageCode: js.UndefOr[String | Null] = js.undefined
   
   /** BatchUpdateEntityTypesRequest parent */
-  var parent: js.UndefOr[String | Null] = js.native
+  var parent: js.UndefOr[String | Null] = js.undefined
   
   /** BatchUpdateEntityTypesRequest updateMask */
-  var updateMask: js.UndefOr[IFieldMask | Null] = js.native
+  var updateMask: js.UndefOr[IFieldMask | Null] = js.undefined
 }
 object IBatchUpdateEntityTypesRequest {
   

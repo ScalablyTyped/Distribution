@@ -7,7 +7,6 @@ import typings.nodeSass.mod.Options
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,16 +15,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : Sass = js.native
   
-  @js.native
-  trait GulpSassOptions extends SassOptions {
+  trait GulpSassOptions
+    extends StObject
+       with SassOptions {
     
-    var errLogToConsole: js.UndefOr[Boolean] = js.native
+    var errLogToConsole: js.UndefOr[Boolean] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* err */ Error, _]] = js.native
+    var onError: js.UndefOr[js.Function1[/* err */ Error, js.Any]] = js.undefined
     
-    var onSuccess: js.UndefOr[js.Function1[/* css */ String, _]] = js.native
+    var onSuccess: js.UndefOr[js.Function1[/* css */ String, js.Any]] = js.undefined
     
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
   }
   object GulpSassOptions {
     
@@ -45,13 +45,13 @@ object mod extends Shortcut {
       def setErrLogToConsoleUndefined: Self = StObject.set(x, "errLogToConsole", js.undefined)
       
       @scala.inline
-      def setOnError(value: /* err */ Error => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      def setOnError(value: /* err */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
       @scala.inline
-      def setOnSuccess(value: /* css */ String => _): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+      def setOnSuccess(value: /* css */ String => js.Any): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
@@ -77,14 +77,15 @@ object mod extends Shortcut {
     def sync(options: GulpSassOptions): ReadWriteStream = js.native
   }
   
-  @js.native
-  trait SassOptions extends Options {
+  trait SassOptions
+    extends StObject
+       with Options {
     
-    var error: js.UndefOr[js.Function1[/* err */ Error, _]] = js.native
+    var error: js.UndefOr[js.Function1[/* err */ Error, js.Any]] = js.undefined
     
-    var imagePaths: js.UndefOr[js.Array[String]] = js.native
+    var imagePaths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var success: js.UndefOr[js.Function1[/* results */ SassResults, _]] = js.native
+    var success: js.UndefOr[js.Function1[/* results */ SassResults, js.Any]] = js.undefined
   }
   object SassOptions {
     
@@ -98,7 +99,7 @@ object mod extends Shortcut {
     implicit class SassOptionsMutableBuilder[Self <: SassOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setError(value: /* err */ Error => _): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      def setError(value: /* err */ Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       @scala.inline
       def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
@@ -113,21 +114,20 @@ object mod extends Shortcut {
       def setImagePathsVarargs(value: String*): Self = StObject.set(x, "imagePaths", js.Array(value :_*))
       
       @scala.inline
-      def setSuccess(value: /* results */ SassResults => _): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      def setSuccess(value: /* results */ SassResults => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
   
-  @js.native
   trait SassResults extends StObject {
     
-    var css: String = js.native
+    var css: String
     
-    var map: String = js.native
+    var map: String
     
-    var stats: Duration = js.native
+    var stats: Duration
   }
   object SassResults {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProfilingGroupResponse extends StObject {
   
   /**
     *  The returned  ProfilingGroupDescription  object that contains information about the created profiling group. 
     */
-  var profilingGroup: ProfilingGroupDescription = js.native
+  var profilingGroup: ProfilingGroupDescription
 }
 object CreateProfilingGroupResponse {
   

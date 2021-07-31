@@ -2,15 +2,13 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelKey extends StObject {
   
-  var labelKey: String = js.native
+  var labelKey: String
   
-  var valueKey: String = js.native
+  var valueKey: String
 }
 object LabelKey {
   

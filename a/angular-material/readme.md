@@ -10,9 +10,9 @@ This repository publishes the AngularJS Material v1.x library and localized inst
 | ------------------ | :-------------: |
 | Full name          | angular-material |
 | Keywords           | angularjs, material, browser, client-side, material design, component library, components |
-| # releases         | 20 |
-| # dependents       | 179 |
-| # downloads        | 2347959 |
+| # releases         | 21 |
+| # dependents       | 181 |
+| # downloads        | 2274531 |
 | # stars            | 45 |
 
 ## Links

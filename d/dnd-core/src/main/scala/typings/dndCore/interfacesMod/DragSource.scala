@@ -2,19 +2,17 @@ package typings.dndCore.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragSource extends StObject {
   
-  def beginDrag(monitor: DragDropMonitor, targetId: Identifier): Unit = js.native
+  def beginDrag(monitor: DragDropMonitor, targetId: Identifier): Unit
   
-  def canDrag(monitor: DragDropMonitor, targetId: Identifier): Boolean = js.native
+  def canDrag(monitor: DragDropMonitor, targetId: Identifier): Boolean
   
-  def endDrag(monitor: DragDropMonitor, targetId: Identifier): Unit = js.native
+  def endDrag(monitor: DragDropMonitor, targetId: Identifier): Unit
   
-  def isDragging(monitor: DragDropMonitor, targetId: Identifier): Boolean = js.native
+  def isDragging(monitor: DragDropMonitor, targetId: Identifier): Boolean
 }
 object DragSource {
   

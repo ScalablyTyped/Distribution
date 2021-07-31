@@ -2,13 +2,11 @@ package typings.reactNativeWebrtc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaSources extends StObject {
   
-  var sourceId: String = js.native
+  var sourceId: String
 }
 object MediaSources {
   

@@ -7,7 +7,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.storageDotk8sDotioSlashv
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1alpha1 {
@@ -17,33 +16,32 @@ object v1alpha1 {
     *
     * VolumeAttachment objects are non-namespaced.
     */
-  @js.native
   trait VolumeAttachment extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    var apiVersion: js.UndefOr[Input[storageDotk8sDotioSlashv1alpha1]] = js.native
+    var apiVersion: js.UndefOr[Input[storageDotk8sDotioSlashv1alpha1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.VolumeAttachment]] = js.native
+    var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.VolumeAttachment]] = js.undefined
     
     /**
       * Standard object metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+    var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
     
     /**
       * Specification of the desired attach/detach volume behavior. Populated by the Kubernetes system.
       */
-    var spec: Input[VolumeAttachmentSpec] = js.native
+    var spec: Input[VolumeAttachmentSpec]
     
     /**
       * Status of the VolumeAttachment request. Populated by the entity completing the attach or detach operation, i.e. the external-attacher.
       */
-    var status: js.UndefOr[Input[VolumeAttachmentStatus]] = js.native
+    var status: js.UndefOr[Input[VolumeAttachmentStatus]] = js.undefined
   }
   object VolumeAttachment {
     
@@ -88,18 +86,17 @@ object v1alpha1 {
   /**
     * VolumeAttachmentSource represents a volume that should be attached. Right now only PersistenVolumes can be attached via external attacher, in future we may allow also inline volumes in pods. Exactly one member can be set.
     */
-  @js.native
   trait VolumeAttachmentSource extends StObject {
     
     /**
       * inlineVolumeSpec contains all the information necessary to attach a persistent volume defined by a pod's inline VolumeSource. This field is populated only for the CSIMigration feature. It contains translated fields from a pod's inline VolumeSource to a PersistentVolumeSpec. This field is alpha-level and is only honored by servers that enabled the CSIMigration feature.
       */
-    var inlineVolumeSpec: js.UndefOr[Input[PersistentVolumeSpec]] = js.native
+    var inlineVolumeSpec: js.UndefOr[Input[PersistentVolumeSpec]] = js.undefined
     
     /**
       * Name of the persistent volume to attach.
       */
-    var persistentVolumeName: js.UndefOr[Input[String]] = js.native
+    var persistentVolumeName: js.UndefOr[Input[String]] = js.undefined
   }
   object VolumeAttachmentSource {
     
@@ -129,23 +126,22 @@ object v1alpha1 {
   /**
     * VolumeAttachmentSpec is the specification of a VolumeAttachment request.
     */
-  @js.native
   trait VolumeAttachmentSpec extends StObject {
     
     /**
       * Attacher indicates the name of the volume driver that MUST handle this request. This is the name returned by GetPluginName().
       */
-    var attacher: Input[String] = js.native
+    var attacher: Input[String]
     
     /**
       * The node that the volume should be attached to.
       */
-    var nodeName: Input[String] = js.native
+    var nodeName: Input[String]
     
     /**
       * Source represents the volume that should be attached.
       */
-    var source: Input[VolumeAttachmentSource] = js.native
+    var source: Input[VolumeAttachmentSource]
   }
   object VolumeAttachmentSpec {
     
@@ -172,28 +168,27 @@ object v1alpha1 {
   /**
     * VolumeAttachmentStatus is the status of a VolumeAttachment request.
     */
-  @js.native
   trait VolumeAttachmentStatus extends StObject {
     
     /**
       * The last error encountered during attach operation, if any. This field must only be set by the entity completing the attach operation, i.e. the external-attacher.
       */
-    var attachError: js.UndefOr[Input[VolumeError]] = js.native
+    var attachError: js.UndefOr[Input[VolumeError]] = js.undefined
     
     /**
       * Indicates the volume is successfully attached. This field must only be set by the entity completing the attach operation, i.e. the external-attacher.
       */
-    var attached: Input[Boolean] = js.native
+    var attached: Input[Boolean]
     
     /**
       * Upon successful attach, this field is populated with any information returned by the attach operation that must be passed into subsequent WaitForAttach or Mount calls. This field must only be set by the entity completing the attach operation, i.e. the external-attacher.
       */
-    var attachmentMetadata: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    var attachmentMetadata: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The last error encountered during detach operation, if any. This field must only be set by the entity completing the detach operation, i.e. the external-attacher.
       */
-    var detachError: js.UndefOr[Input[VolumeError]] = js.native
+    var detachError: js.UndefOr[Input[VolumeError]] = js.undefined
   }
   object VolumeAttachmentStatus {
     
@@ -232,18 +227,17 @@ object v1alpha1 {
   /**
     * VolumeError captures an error encountered during a volume operation.
     */
-  @js.native
   trait VolumeError extends StObject {
     
     /**
       * String detailing the error encountered during Attach or Detach operation. This string maybe logged, so it should not contain sensitive information.
       */
-    var message: js.UndefOr[Input[String]] = js.native
+    var message: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Time the error was encountered.
       */
-    var time: js.UndefOr[Input[String]] = js.native
+    var time: js.UndefOr[Input[String]] = js.undefined
   }
   object VolumeError {
     

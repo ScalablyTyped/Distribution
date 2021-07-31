@@ -2,27 +2,25 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsCreateOrUpdateRepoSecretEndpoint extends StObject {
   
   /**
     * Value for your secret, encrypted with [LibSodium](https://libsodium.gitbook.io/doc/bindings_for_other_languages) using the public key retrieved from the [Get a repository public key](https://developer.github.com/v3/actions/secrets/#get-a-repository-public-key) endpoint.
     */
-  var encrypted_value: js.UndefOr[String] = js.native
+  var encrypted_value: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the key you used to encrypt the secret.
     */
-  var key_id: js.UndefOr[String] = js.native
+  var key_id: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
-  var secret_name: String = js.native
+  var secret_name: String
 }
 object ActionsCreateOrUpdateRepoSecretEndpoint {
   

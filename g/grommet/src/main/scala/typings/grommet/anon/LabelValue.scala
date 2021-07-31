@@ -3,15 +3,13 @@ package typings.grommet.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelValue extends StObject {
   
-  var label: js.UndefOr[ReactNode] = js.native
+  var label: js.UndefOr[ReactNode] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object LabelValue {
   

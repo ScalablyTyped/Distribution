@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddHeldAccountResult extends StObject {
   
   /** If present, this account was successfully created. */
-  var account: js.UndefOr[HeldAccount] = js.native
+  var account: js.UndefOr[HeldAccount] = js.undefined
   
   /** This represents the success status. If failed, check message. */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object AddHeldAccountResult {
   

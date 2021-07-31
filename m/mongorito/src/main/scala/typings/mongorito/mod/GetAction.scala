@@ -3,15 +3,15 @@ package typings.mongorito.mod
 import typings.mongorito.mod.ActionTypes.GET
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetAction extends Action {
+trait GetAction
+  extends StObject
+     with Action {
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var `type`: GET = js.native
+  var `type`: GET
 }
 object GetAction {
   

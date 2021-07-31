@@ -2,31 +2,29 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resource extends StObject {
   
   /**
     * The IAM access key details (IAM user information) of a user that engaged in the activity that prompted GuardDuty to generate a finding.
     */
-  var AccessKeyDetails: js.UndefOr[typings.awsSdk.guarddutyMod.AccessKeyDetails] = js.native
+  var AccessKeyDetails: js.UndefOr[typings.awsSdk.guarddutyMod.AccessKeyDetails] = js.undefined
   
   /**
     * The information about the EC2 instance associated with the activity that prompted GuardDuty to generate a finding.
     */
-  var InstanceDetails: js.UndefOr[typings.awsSdk.guarddutyMod.InstanceDetails] = js.native
+  var InstanceDetails: js.UndefOr[typings.awsSdk.guarddutyMod.InstanceDetails] = js.undefined
   
   /**
     * The type of AWS resource.
     */
-  var ResourceType: js.UndefOr[String] = js.native
+  var ResourceType: js.UndefOr[String] = js.undefined
   
   /**
     * Contains information on the S3 bucket.
     */
-  var S3BucketDetails: js.UndefOr[typings.awsSdk.guarddutyMod.S3BucketDetails] = js.native
+  var S3BucketDetails: js.UndefOr[typings.awsSdk.guarddutyMod.S3BucketDetails] = js.undefined
 }
 object Resource {
   

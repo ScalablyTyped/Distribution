@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeleteUserFromSharedAppleDeviceActionResult extends DeviceActionResult {
+trait DeleteUserFromSharedAppleDeviceActionResult
+  extends StObject
+     with DeviceActionResult {
   
   // User principal name of the user to be deleted
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DeleteUserFromSharedAppleDeviceActionResult {
   

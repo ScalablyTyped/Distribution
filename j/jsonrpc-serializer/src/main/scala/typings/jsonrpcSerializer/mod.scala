@@ -4,18 +4,19 @@ import typings.jsonrpcSerializer.mod.err.JsonRpcError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jsonrpc-serializer", "deserialize")
+  @JSImport("jsonrpc-serializer", JSImport.Namespace)
   @js.native
-  def deserialize(msg: String): DeserializeObject_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jsonrpc-serializer", "deserializeObject")
-  @js.native
-  def deserializeObject(msg: PayloadObject): DeserializeObject_ = js.native
+  @scala.inline
+  def deserialize(msg: String): DeserializeObject_ = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(msg.asInstanceOf[js.Any]).asInstanceOf[DeserializeObject_]
+  
+  @scala.inline
+  def deserializeObject(msg: PayloadObject): DeserializeObject_ = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeObject")(msg.asInstanceOf[js.Any]).asInstanceOf[DeserializeObject_]
   
   object err {
     
@@ -40,12 +41,21 @@ object mod {
     // };
     @JSImport("jsonrpc-serializer", "err.JsonRpcError")
     @js.native
-    class JsonRpcError protected () extends SerializerError {
+    class JsonRpcError protected ()
+      extends StObject
+         with SerializerError {
       def this(msg: String, args: js.Any*) = this()
       
+      /* CompleteClass */
+      var code: Double = js.native
       @JSName("code")
       var code_JsonRpcError: Double | ErrorCode = js.native
       
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
       @JSName("name")
       var name_JsonRpcError: String | ErrorName = js.native
       
@@ -124,80 +134,59 @@ object mod {
     }
   }
   
-  @JSImport("jsonrpc-serializer", "error")
-  @js.native
-  def error(id: String, error: JsonRpcError): String = js.native
-  @JSImport("jsonrpc-serializer", "error")
-  @js.native
-  def error(id: Double, error: JsonRpcError): String = js.native
+  @scala.inline
+  def error(id: String, error: JsonRpcError): String = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(id.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def error(id: Double, error: JsonRpcError): String = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(id.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jsonrpc-serializer", "errorObject")
-  @js.native
-  def errorObject(id: String, error: SerializerError): PayloadObject = js.native
-  @JSImport("jsonrpc-serializer", "errorObject")
-  @js.native
-  def errorObject(id: Double, error: SerializerError): PayloadObject = js.native
+  @scala.inline
+  def errorObject(id: String, error: SerializerError): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("errorObject")(id.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
+  @scala.inline
+  def errorObject(id: Double, error: SerializerError): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("errorObject")(id.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
   
-  @JSImport("jsonrpc-serializer", "notification")
-  @js.native
-  def notification(method: String): String = js.native
-  @JSImport("jsonrpc-serializer", "notification")
-  @js.native
-  def notification(method: String, params: js.Any): String = js.native
+  @scala.inline
+  def notification(method: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("notification")(method.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def notification(method: String, params: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jsonrpc-serializer", "notificationObject")
-  @js.native
-  def notificationObject(method: String): PayloadObject = js.native
-  @JSImport("jsonrpc-serializer", "notificationObject")
-  @js.native
-  def notificationObject(method: String, params: js.Any): PayloadObject = js.native
+  @scala.inline
+  def notificationObject(method: String): PayloadObject = ^.asInstanceOf[js.Dynamic].applyDynamic("notificationObject")(method.asInstanceOf[js.Any]).asInstanceOf[PayloadObject]
+  @scala.inline
+  def notificationObject(method: String, params: js.Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("notificationObject")(method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
   
-  @JSImport("jsonrpc-serializer", "request")
-  @js.native
-  def request(id: String, method: String): String = js.native
-  @JSImport("jsonrpc-serializer", "request")
-  @js.native
-  def request(id: String, method: String, params: js.Any): String = js.native
-  @JSImport("jsonrpc-serializer", "request")
-  @js.native
-  def request(id: Double, method: String): String = js.native
-  @JSImport("jsonrpc-serializer", "request")
-  @js.native
-  def request(id: Double, method: String, params: js.Any): String = js.native
+  @scala.inline
+  def request(id: String, method: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def request(id: String, method: String, params: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def request(id: Double, method: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def request(id: Double, method: String, params: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jsonrpc-serializer", "requestObject")
-  @js.native
-  def requestObject(id: String, method: String): PayloadObject = js.native
-  @JSImport("jsonrpc-serializer", "requestObject")
-  @js.native
-  def requestObject(id: String, method: String, params: js.Any): PayloadObject = js.native
-  @JSImport("jsonrpc-serializer", "requestObject")
-  @js.native
-  def requestObject(id: Double, method: String): PayloadObject = js.native
-  @JSImport("jsonrpc-serializer", "requestObject")
-  @js.native
-  def requestObject(id: Double, method: String, params: js.Any): PayloadObject = js.native
+  @scala.inline
+  def requestObject(id: String, method: String): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("requestObject")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
+  @scala.inline
+  def requestObject(id: String, method: String, params: js.Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("requestObject")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
+  @scala.inline
+  def requestObject(id: Double, method: String): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("requestObject")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
+  @scala.inline
+  def requestObject(id: Double, method: String, params: js.Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("requestObject")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
   
-  @JSImport("jsonrpc-serializer", "success")
-  @js.native
-  def success(id: String, result: js.Any): String = js.native
-  @JSImport("jsonrpc-serializer", "success")
-  @js.native
-  def success(id: Double, result: js.Any): String = js.native
+  @scala.inline
+  def success(id: String, result: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def success(id: Double, result: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jsonrpc-serializer", "successObject")
-  @js.native
-  def successObject(id: String, result: js.Any): PayloadObject = js.native
-  @JSImport("jsonrpc-serializer", "successObject")
-  @js.native
-  def successObject(id: Double, result: js.Any): PayloadObject = js.native
+  @scala.inline
+  def successObject(id: String, result: js.Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("successObject")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
+  @scala.inline
+  def successObject(id: Double, result: js.Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("successObject")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
   
-  @js.native
   trait DeserializeObject_ extends StObject {
     
-    var payload: RequestPayloadObject | NotificationPayloadObject | SuccessPayloadObject | ErrorPayloadObject = js.native
+    var payload: RequestPayloadObject | NotificationPayloadObject | SuccessPayloadObject | ErrorPayloadObject
     
-    var `type`: PayloadType = js.native
+    var `type`: PayloadType
   }
   object DeserializeObject_ {
     
@@ -224,14 +213,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait ErrorPayloadObject extends PayloadObject {
+  trait ErrorPayloadObject
+    extends StObject
+       with PayloadObject {
     
     @JSName("error")
-    var error_ErrorPayloadObject: SerializerError = js.native
+    var error_ErrorPayloadObject: SerializerError
     
     @JSName("id")
-    var id_ErrorPayloadObject: String | Double = js.native
+    var id_ErrorPayloadObject: String | Double
   }
   object ErrorPayloadObject {
     
@@ -252,11 +242,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait NotificationPayloadObject extends PayloadObject {
+  trait NotificationPayloadObject
+    extends StObject
+       with PayloadObject {
     
     @JSName("method")
-    var method_NotificationPayloadObject: String = js.native
+    var method_NotificationPayloadObject: String
   }
   object NotificationPayloadObject {
     
@@ -274,18 +265,17 @@ object mod {
     }
   }
   
-  @js.native
   trait PayloadObject extends StObject {
     
-    var error: js.UndefOr[SerializerError] = js.native
+    var error: js.UndefOr[SerializerError] = js.undefined
     
-    var id: js.UndefOr[String | Double] = js.native
+    var id: js.UndefOr[String | Double] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
-    var result: js.UndefOr[js.Any] = js.native
+    var result: js.UndefOr[js.Any] = js.undefined
   }
   object PayloadObject {
     
@@ -352,14 +342,15 @@ object mod {
     def success: typings.jsonrpcSerializer.jsonrpcSerializerStrings.success = "success".asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerStrings.success]
   }
   
-  @js.native
-  trait RequestPayloadObject extends PayloadObject {
+  trait RequestPayloadObject
+    extends StObject
+       with PayloadObject {
     
     @JSName("id")
-    var id_RequestPayloadObject: String = js.native
+    var id_RequestPayloadObject: String
     
     @JSName("method")
-    var method_RequestPayloadObject: String = js.native
+    var method_RequestPayloadObject: String
   }
   object RequestPayloadObject {
     
@@ -380,12 +371,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait SerializerError extends Error {
+  trait SerializerError
+    extends StObject
+       with Error {
     
-    var code: Double = js.native
+    var code: Double
     
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object SerializerError {
     
@@ -402,7 +394,7 @@ object mod {
       def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -412,11 +404,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait SuccessPayloadObject extends PayloadObject {
+  trait SuccessPayloadObject
+    extends StObject
+       with PayloadObject {
     
     @JSName("id")
-    var id_SuccessPayloadObject: String | Double = js.native
+    var id_SuccessPayloadObject: String | Double
   }
   object SuccessPayloadObject {
     

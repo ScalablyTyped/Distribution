@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxFileManager control.
   */
 @js.native
-trait ASPxClientFileManager extends ASPxClientControl {
+trait ASPxClientFileManager
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs when a callback for server-side processing is initiated.
@@ -128,9 +129,9 @@ trait ASPxClientFileManager extends ASPxClientControl {
     * @param skipRootFolder true to skip the root folder; otherwise, false.
     */
   def GetCurrentFolderPath(): String = js.native
-  def GetCurrentFolderPath(separator: js.UndefOr[scala.Nothing], skipRootFolder: Boolean): String = js.native
   def GetCurrentFolderPath(separator: String): String = js.native
   def GetCurrentFolderPath(separator: String, skipRootFolder: Boolean): String = js.native
+  def GetCurrentFolderPath(separator: Unit, skipRootFolder: Boolean): String = js.native
   
   /**
     * Returns a list of files that are loaded on the current page.

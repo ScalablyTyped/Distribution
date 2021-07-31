@@ -3,41 +3,39 @@ package typings.xlsx.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Properties extends StObject {
   
   /** Summary tab "Author" */
-  var Author: js.UndefOr[String] = js.native
+  var Author: js.UndefOr[String] = js.undefined
   
   /** Summary tab "Category" */
-  var Category: js.UndefOr[String] = js.native
+  var Category: js.UndefOr[String] = js.undefined
   
   /** Summary tab "Comments" */
-  var Comments: js.UndefOr[String] = js.native
+  var Comments: js.UndefOr[String] = js.undefined
   
   /** Summary tab "Company" */
-  var Company: js.UndefOr[String] = js.native
+  var Company: js.UndefOr[String] = js.undefined
   
   /** Statistics tab "Created" */
-  var CreatedDate: js.UndefOr[Date] = js.native
+  var CreatedDate: js.UndefOr[Date] = js.undefined
   
   /** Summary tab "Keywords" */
-  var Keywords: js.UndefOr[String] = js.native
+  var Keywords: js.UndefOr[String] = js.undefined
   
   /** Statistics tab "Last saved by" */
-  var LastAuthor: js.UndefOr[String] = js.native
+  var LastAuthor: js.UndefOr[String] = js.undefined
   
   /** Summary tab "Manager" */
-  var Manager: js.UndefOr[String] = js.native
+  var Manager: js.UndefOr[String] = js.undefined
   
   /** Summary tab "Subject" */
-  var Subject: js.UndefOr[String] = js.native
+  var Subject: js.UndefOr[String] = js.undefined
   
   /** Summary tab "Title" */
-  var Title: js.UndefOr[String] = js.native
+  var Title: js.UndefOr[String] = js.undefined
 }
 object Properties {
   

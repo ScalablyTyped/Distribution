@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAggregateComplianceByConfigRulesRequest extends StObject {
   
   /**
     * The name of the configuration aggregator.
     */
-  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName = js.native
+  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName
   
   /**
     * Filters the results by ConfigRuleComplianceFilters object. 
     */
-  var Filters: js.UndefOr[ConfigRuleComplianceFilters] = js.native
+  var Filters: js.UndefOr[ConfigRuleComplianceFilters] = js.undefined
   
   /**
     * The maximum number of evaluation results returned on each page. The default is maximum. If you specify 0, AWS Config uses the default.
     */
-  var Limit: js.UndefOr[GroupByAPILimit] = js.native
+  var Limit: js.UndefOr[GroupByAPILimit] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
 }
 object DescribeAggregateComplianceByConfigRulesRequest {
   

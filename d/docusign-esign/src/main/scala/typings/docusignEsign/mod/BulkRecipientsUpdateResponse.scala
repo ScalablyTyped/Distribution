@@ -2,13 +2,11 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkRecipientsUpdateResponse extends StObject {
   
-  var signer: js.UndefOr[Signer] = js.native
+  var signer: js.UndefOr[Signer] = js.undefined
 }
 object BulkRecipientsUpdateResponse {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudresourcemanager.gapi.client.cloudreso
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditLogConfig extends StObject {
   
   /** Specifies the identities that do not cause logging for this type of permission. Follows the same format of Binding.members. */
-  var exemptedMembers: js.UndefOr[js.Array[String]] = js.native
+  var exemptedMembers: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The log type that this config enables. */
-  var logType: js.UndefOr[String] = js.native
+  var logType: js.UndefOr[String] = js.undefined
 }
 object AuditLogConfig {
   

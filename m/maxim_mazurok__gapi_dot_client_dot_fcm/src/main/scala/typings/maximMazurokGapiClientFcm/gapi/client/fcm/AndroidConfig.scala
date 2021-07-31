@@ -3,42 +3,40 @@ package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidConfig extends StObject {
   
   /**
     * An identifier of a group of messages that can be collapsed, so that only the last message gets sent when delivery can be resumed. A maximum of 4 different collapse keys is allowed
     * at any given time.
     */
-  var collapseKey: js.UndefOr[String] = js.native
+  var collapseKey: js.UndefOr[String] = js.undefined
   
   /** Arbitrary key/value payload. If present, it will override google.firebase.fcm.v1.Message.data. */
   var data: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.AndroidConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.AndroidConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * If set to true, messages will be allowed to be delivered to the app while the device is in direct boot mode. See [Support Direct Boot
     * mode](https://developer.android.com/training/articles/direct-boot).
     */
-  var directBootOk: js.UndefOr[Boolean] = js.native
+  var directBootOk: js.UndefOr[Boolean] = js.undefined
   
   /** Options for features provided by the FCM SDK for Android. */
-  var fcmOptions: js.UndefOr[AndroidFcmOptions] = js.native
+  var fcmOptions: js.UndefOr[AndroidFcmOptions] = js.undefined
   
   /** Notification to send to android devices. */
-  var notification: js.UndefOr[AndroidNotification] = js.native
+  var notification: js.UndefOr[AndroidNotification] = js.undefined
   
   /** Message priority. Can take "normal" and "high" values. For more information, see [Setting the priority of a message](https://goo.gl/GjONJv). */
-  var priority: js.UndefOr[String] = js.native
+  var priority: js.UndefOr[String] = js.undefined
   
   /** Package name of the application where the registration token must match in order to receive the message. */
-  var restrictedPackageName: js.UndefOr[String] = js.native
+  var restrictedPackageName: js.UndefOr[String] = js.undefined
   
   /**
     * How long (in seconds) the message should be kept in FCM storage if the device is offline. The maximum time to live supported is 4 weeks, and the default value is 4 weeks if not set.
@@ -46,7 +44,7 @@ trait AndroidConfig extends StObject {
     * (indicating seconds) and is preceded by the number of seconds, with nanoseconds expressed as fractional seconds. For example, 3 seconds with 0 nanoseconds should be encoded in JSON
     * format as "3s", while 3 seconds and 1 nanosecond should be expressed in JSON format as "3.000000001s". The ttl will be rounded down to the nearest second.
     */
-  var ttl: js.UndefOr[String] = js.native
+  var ttl: js.UndefOr[String] = js.undefined
 }
 object AndroidConfig {
   
@@ -69,7 +67,7 @@ object AndroidConfig {
     def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.AndroidConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.AndroidConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline

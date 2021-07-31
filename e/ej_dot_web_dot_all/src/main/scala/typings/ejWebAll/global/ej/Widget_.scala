@@ -2,13 +2,13 @@ package typings.ejWebAll.global.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.Widget")
 @js.native
 class Widget_ protected ()
-  extends typings.ejWebAll.ej.Widget_ {
+  extends StObject
+     with typings.ejWebAll.ej.Widget_ {
   def this(pluginName: String, className: String, proto: js.Any) = this()
 }
 object Widget_ {
@@ -18,9 +18,8 @@ object Widget_ {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("ej.Widget.extend")
-  @js.native
-  def extend(widget: typings.ejWebAll.ej.Widget_): js.Any = js.native
+  @scala.inline
+  def extend(widget: typings.ejWebAll.ej.Widget_): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(widget.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
   @JSGlobal("ej.Widget.fn")

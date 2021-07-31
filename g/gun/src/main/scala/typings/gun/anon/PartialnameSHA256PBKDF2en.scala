@@ -7,24 +7,22 @@ import typings.gun.gunStrings.base32
 import typings.gun.gunStrings.base64
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  name :'SHA-256' | 'PBKDF2',   encode :'base64' | 'base32' | 'base16',   iterations :number,   salt :any,   hash :string,   length :any}> */
-@js.native
 trait PartialnameSHA256PBKDF2en extends StObject {
   
-  var encode: js.UndefOr[base64 | base32 | base16] = js.native
+  var encode: js.UndefOr[base64 | base32 | base16] = js.undefined
   
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
-  var iterations: js.UndefOr[Double] = js.native
+  var iterations: js.UndefOr[Double] = js.undefined
   
-  var length: js.UndefOr[js.Any] = js.native
+  var length: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[`SHA-256` | PBKDF2] = js.native
+  var name: js.UndefOr[`SHA-256` | PBKDF2] = js.undefined
   
-  var salt: js.UndefOr[js.Any] = js.native
+  var salt: js.UndefOr[js.Any] = js.undefined
 }
 object PartialnameSHA256PBKDF2en {
   

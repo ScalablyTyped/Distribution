@@ -2,16 +2,14 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlatColorPickerMessages extends StObject {
   
   @JSName("apply")
-  var apply: js.UndefOr[String] = js.native
+  var apply: js.UndefOr[String] = js.undefined
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
 }
 object FlatColorPickerMessages {
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an event that a Windows Runtime app can trigger to initiate a long-running operation with a device or sensor. */
@@ -10,4 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** Constructor for DeviceUseTrigger . Takes no parameters. */
 class DeviceUseTrigger ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Background.DeviceUseTrigger
+  extends StObject
+     with typings.winrtUwp.Windows.ApplicationModel.Background.DeviceUseTrigger

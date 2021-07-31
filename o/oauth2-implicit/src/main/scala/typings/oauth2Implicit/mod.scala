@@ -3,54 +3,53 @@ package typings.oauth2Implicit
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("oauth2-implicit", "finish")
+  @JSImport("oauth2-implicit", JSImport.Namespace)
   @js.native
-  def finish(): js.UndefOr[AuthResult | Null] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("oauth2-implicit", "parseCredentials")
-  @js.native
-  def parseCredentials(hashString: String): AuthParams = js.native
+  @scala.inline
+  def finish(): js.UndefOr[AuthResult | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("finish")().asInstanceOf[js.UndefOr[AuthResult | Null]]
+  
+  @scala.inline
+  def parseCredentials(hashString: String): AuthParams = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCredentials")(hashString.asInstanceOf[js.Any]).asInstanceOf[AuthParams]
   
   object run {
     
+    @scala.inline
+    def apply(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
     @JSImport("oauth2-implicit", "run")
     @js.native
-    def apply(options: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("oauth2-implicit", "run.finish")
-    @js.native
-    def finish(): js.UndefOr[AuthResult | Null] = js.native
+    @scala.inline
+    def finish(): js.UndefOr[AuthResult | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("finish")().asInstanceOf[js.UndefOr[AuthResult | Null]]
     
-    @JSImport("oauth2-implicit", "run.parseCredentials")
-    @js.native
-    def parseCredentials(hashString: String): AuthParams = js.native
+    @scala.inline
+    def parseCredentials(hashString: String): AuthParams = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCredentials")(hashString.asInstanceOf[js.Any]).asInstanceOf[AuthParams]
     
-    @JSImport("oauth2-implicit", "run.start")
-    @js.native
-    def start(options: AuthParams): Unit = js.native
+    @scala.inline
+    def start(options: AuthParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("oauth2-implicit", "start")
-  @js.native
-  def start(options: AuthParams): Unit = js.native
+  @scala.inline
+  def start(options: AuthParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait AuthParams extends StObject {
     
-    var auth_uri: String = js.native
+    var auth_uri: String
     
-    var client_id: String = js.native
+    var client_id: String
     
-    var redirect_uri: String = js.native
+    var redirect_uri: String
     
-    var scope: js.UndefOr[js.Array[String]] = js.native
+    var scope: js.UndefOr[js.Array[String]] = js.undefined
     
-    var state: AuthState = js.native
+    var state: AuthState
   }
   object AuthParams {
     
@@ -86,12 +85,11 @@ object mod {
     }
   }
   
-  @js.native
   trait AuthResult extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var state: AuthState = js.native
+    var state: AuthState
   }
   object AuthResult {
     
@@ -112,11 +110,11 @@ object mod {
     }
   }
   
-  @js.native
   trait AuthState
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var originalUrl: String = js.native
+    var originalUrl: String
   }
   object AuthState {
     

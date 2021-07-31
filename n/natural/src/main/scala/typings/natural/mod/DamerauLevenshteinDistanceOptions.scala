@@ -2,29 +2,27 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DamerauLevenshteinDistanceOptions extends StObject {
   
   /** @default 1 */
-  var deletion_cost: js.UndefOr[Double] = js.native
+  var deletion_cost: js.UndefOr[Double] = js.undefined
   
   /** @default 1 */
-  var insertion_cost: js.UndefOr[Double] = js.native
+  var insertion_cost: js.UndefOr[Double] = js.undefined
   
   /** @default false */
-  var restricted: js.UndefOr[Boolean] = js.native
+  var restricted: js.UndefOr[Boolean] = js.undefined
   
   /** @default false */
-  var search: js.UndefOr[Boolean] = js.native
+  var search: js.UndefOr[Boolean] = js.undefined
   
   /** @default 1 */
-  var substitution_cost: js.UndefOr[Double] = js.native
+  var substitution_cost: js.UndefOr[Double] = js.undefined
   
   /** @default 1 */
-  var transposition_cost: js.UndefOr[Double] = js.native
+  var transposition_cost: js.UndefOr[Double] = js.undefined
 }
 object DamerauLevenshteinDistanceOptions {
   

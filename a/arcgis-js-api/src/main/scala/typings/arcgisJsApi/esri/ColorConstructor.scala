@@ -3,12 +3,12 @@ package typings.arcgisJsApi.esri
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColorConstructor
-  extends Instantiable1[
+  extends StObject
+     with Instantiable1[
       (/* color */ js.Any) | (/* color */ js.Array[Double]) | (/* color */ String), 
       Color_
     ] {

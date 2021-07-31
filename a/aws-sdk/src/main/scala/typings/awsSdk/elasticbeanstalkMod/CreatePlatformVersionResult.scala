@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePlatformVersionResult extends StObject {
   
   /**
     * The builder used to create the custom platform.
     */
-  var Builder: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Builder] = js.native
+  var Builder: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Builder] = js.undefined
   
   /**
     * Detailed information about the new version of the custom platform.
     */
-  var PlatformSummary: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformSummary] = js.native
+  var PlatformSummary: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformSummary] = js.undefined
 }
 object CreatePlatformVersionResult {
   

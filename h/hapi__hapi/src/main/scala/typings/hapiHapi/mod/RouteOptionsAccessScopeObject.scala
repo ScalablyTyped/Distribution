@@ -2,13 +2,13 @@ package typings.hapiHapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RouteOptionsAccessScopeObject extends _RouteOptionsAccessObject {
+trait RouteOptionsAccessScopeObject
+  extends StObject
+     with _RouteOptionsAccessObject {
   
-  var scope: RouteOptionsAccessScope = js.native
+  var scope: RouteOptionsAccessScope
 }
 object RouteOptionsAccessScopeObject {
   

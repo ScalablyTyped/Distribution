@@ -7,53 +7,49 @@ import typings.tensorflowTfjsConverter.typesMod.NamedTensorsMap
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelAnalysisMod {
   
-  @JSImport("@tensorflow/tfjs-converter/dist/executor/model_analysis", "getExecutionSubgraph")
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/model_analysis", JSImport.Namespace)
   @js.native
-  def getExecutionSubgraph(inputs: NamedTensorMap, outputs: js.Array[Node], weightMap: NamedTensorsMap): ExecutionInfo = js.native
-  @JSImport("@tensorflow/tfjs-converter/dist/executor/model_analysis", "getExecutionSubgraph")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getExecutionSubgraph(inputs: NamedTensorMap, outputs: js.Array[Node], weightMap: NamedTensorsMap): ExecutionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getExecutionSubgraph")(inputs.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any], weightMap.asInstanceOf[js.Any])).asInstanceOf[ExecutionInfo]
+  @scala.inline
   def getExecutionSubgraph(
     inputs: NamedTensorMap,
     outputs: js.Array[Node],
     weightMap: NamedTensorsMap,
     initNodes: js.Array[Node]
-  ): ExecutionInfo = js.native
+  ): ExecutionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getExecutionSubgraph")(inputs.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any], weightMap.asInstanceOf[js.Any], initNodes.asInstanceOf[js.Any])).asInstanceOf[ExecutionInfo]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/executor/model_analysis", "getNodesInTopologicalOrder")
-  @js.native
-  def getNodesInTopologicalOrder(graph: Graph, weightMap: NamedTensorsMap, executionInfo: ExecutionInfo): js.Array[Node] = js.native
+  @scala.inline
+  def getNodesInTopologicalOrder(graph: Graph, weightMap: NamedTensorsMap, executionInfo: ExecutionInfo): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNodesInTopologicalOrder")(graph.asInstanceOf[js.Any], weightMap.asInstanceOf[js.Any], executionInfo.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/executor/model_analysis", "isControlFlow")
-  @js.native
-  def isControlFlow(node: Node): Boolean = js.native
+  @scala.inline
+  def isControlFlow(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isControlFlow")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/executor/model_analysis", "isDynamicShape")
-  @js.native
-  def isDynamicShape(node: Node): Boolean = js.native
+  @scala.inline
+  def isDynamicShape(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicShape")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-converter/dist/executor/model_analysis", "isHashTable")
-  @js.native
-  def isHashTable(node: Node): Boolean = js.native
+  @scala.inline
+  def isHashTable(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHashTable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait ExecutionInfo extends StObject {
     
-    var dynamicNode: Node = js.native
+    var dynamicNode: Node
     
-    var inputs: NamedTensorMap = js.native
+    var inputs: NamedTensorMap
     
-    var missingInputs: js.Array[String] = js.native
+    var missingInputs: js.Array[String]
     
-    var outputs: js.Array[Node] = js.native
+    var outputs: js.Array[Node]
     
-    var syncInputs: js.Array[String] = js.native
+    var syncInputs: js.Array[String]
     
-    var usedNodes: Set[String] = js.native
+    var usedNodes: Set[String]
   }
   object ExecutionInfo {
     

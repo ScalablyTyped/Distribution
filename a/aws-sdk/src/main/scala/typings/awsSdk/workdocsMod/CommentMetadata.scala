@@ -2,36 +2,34 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentMetadata extends StObject {
   
   /**
     * The ID of the comment.
     */
-  var CommentId: js.UndefOr[CommentIdType] = js.native
+  var CommentId: js.UndefOr[CommentIdType] = js.undefined
   
   /**
     * The status of the comment.
     */
-  var CommentStatus: js.UndefOr[CommentStatusType] = js.native
+  var CommentStatus: js.UndefOr[CommentStatusType] = js.undefined
   
   /**
     * The user who made the comment.
     */
-  var Contributor: js.UndefOr[User] = js.native
+  var Contributor: js.UndefOr[User] = js.undefined
   
   /**
     * The timestamp that the comment was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.native
+  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The ID of the user being replied to.
     */
-  var RecipientId: js.UndefOr[IdType] = js.native
+  var RecipientId: js.UndefOr[IdType] = js.undefined
 }
 object CommentMetadata {
   

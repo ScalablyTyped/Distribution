@@ -8,10 +8,13 @@ import typings.officeUiFabricReact.resizeGroupTypesMod.IResizeGroupProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libResizeGroupMod {
+  
+  @JSImport("office-ui-fabric-react/lib/ResizeGroup", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/ResizeGroup", "MeasuredContext")
   @js.native
@@ -43,21 +46,18 @@ object libResizeGroupMod {
   object ResizeGroupDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection & Double] = js.native
     
-    /* 0 */ val horizontal: typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.horizontal with Double = js.native
+    /* 0 */ val horizontal: typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.horizontal & Double = js.native
     
-    /* 1 */ val vertical: typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.vertical with Double = js.native
+    /* 1 */ val vertical: typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.vertical & Double = js.native
   }
   
-  @JSImport("office-ui-fabric-react/lib/ResizeGroup", "getMeasurementCache")
-  @js.native
-  def getMeasurementCache(): AddMeasurementToCache = js.native
+  @scala.inline
+  def getMeasurementCache(): AddMeasurementToCache = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeasurementCache")().asInstanceOf[AddMeasurementToCache]
   
-  @JSImport("office-ui-fabric-react/lib/ResizeGroup", "getNextResizeGroupStateProvider")
-  @js.native
-  def getNextResizeGroupStateProvider(): GetInitialResizeGroupState = js.native
-  @JSImport("office-ui-fabric-react/lib/ResizeGroup", "getNextResizeGroupStateProvider")
-  @js.native
-  def getNextResizeGroupStateProvider(measurementCache: AddMeasurementToCache): GetInitialResizeGroupState = js.native
+  @scala.inline
+  def getNextResizeGroupStateProvider(): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")().asInstanceOf[GetInitialResizeGroupState]
+  @scala.inline
+  def getNextResizeGroupStateProvider(measurementCache: AddMeasurementToCache): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")(measurementCache.asInstanceOf[js.Any]).asInstanceOf[GetInitialResizeGroupState]
 }

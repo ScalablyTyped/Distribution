@@ -2,15 +2,13 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowDisabling extends StObject {
   
-  var allowDisabling: Boolean = js.native
+  var allowDisabling: Boolean
   
-  var includeDefault: js.UndefOr[Boolean] = js.native
+  var includeDefault: js.UndefOr[Boolean] = js.undefined
 }
 object AllowDisabling {
   

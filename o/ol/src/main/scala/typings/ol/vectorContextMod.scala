@@ -5,14 +5,15 @@ import typings.ol.canvasMod.DeclutterGroups
 import typings.ol.olFeatureMod.FeatureLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vectorContextMod {
   
   @JSImport("ol/render/VectorContext", JSImport.Default)
   @js.native
-  class default () extends VectorContext
+  class default ()
+    extends StObject
+       with VectorContext
   
   @js.native
   trait VectorContext extends StObject {

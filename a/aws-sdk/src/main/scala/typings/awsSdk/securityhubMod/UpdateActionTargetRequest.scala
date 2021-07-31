@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateActionTargetRequest extends StObject {
   
   /**
     * The ARN of the custom action target to update.
     */
-  var ActionTargetArn: NonEmptyString = js.native
+  var ActionTargetArn: NonEmptyString
   
   /**
     * The updated description for the custom action target.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The updated name of the custom action target.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
 }
 object UpdateActionTargetRequest {
   

@@ -5,86 +5,72 @@ import typings.std.NodeListOf
 import typings.vanillaMasker.anon.MaskAlphaNum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(el: Element): MaskAlphaNum = ^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any]).asInstanceOf[MaskAlphaNum]
+  @scala.inline
+  def apply(el: NodeListOf[Element]): MaskAlphaNum = ^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any]).asInstanceOf[MaskAlphaNum]
+  
   @JSImport("vanilla-masker", JSImport.Namespace)
   @js.native
-  def apply(el: Element): MaskAlphaNum = js.native
-  @JSImport("vanilla-masker", JSImport.Namespace)
-  @js.native
-  def apply(el: NodeListOf[Element]): MaskAlphaNum = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vanilla-masker", "toAlphaNumeric")
-  @js.native
-  def toAlphaNumeric(value: String): String = js.native
-  @JSImport("vanilla-masker", "toAlphaNumeric")
-  @js.native
-  def toAlphaNumeric(value: Double): String = js.native
+  @scala.inline
+  def toAlphaNumeric(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAlphaNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toAlphaNumeric(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAlphaNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vanilla-masker", "toMoney")
-  @js.native
-  def toMoney(value: String): String = js.native
-  @JSImport("vanilla-masker", "toMoney")
-  @js.native
-  def toMoney(value: String, options: MoneyOptions): String = js.native
-  @JSImport("vanilla-masker", "toMoney")
-  @js.native
-  def toMoney(value: Double): String = js.native
-  @JSImport("vanilla-masker", "toMoney")
-  @js.native
-  def toMoney(value: Double, options: MoneyOptions): String = js.native
+  @scala.inline
+  def toMoney(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toMoney")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toMoney(value: String, options: MoneyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toMoney")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toMoney(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toMoney")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toMoney(value: Double, options: MoneyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toMoney")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("vanilla-masker", "toNumber")
-  @js.native
-  def toNumber(value: String): String = js.native
-  @JSImport("vanilla-masker", "toNumber")
-  @js.native
-  def toNumber(value: Double): String = js.native
+  @scala.inline
+  def toNumber(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toNumber(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vanilla-masker", "toPattern")
-  @js.native
-  def toPattern(value: String): String = js.native
-  @JSImport("vanilla-masker", "toPattern")
-  @js.native
-  def toPattern(value: String, options: String): String = js.native
-  @JSImport("vanilla-masker", "toPattern")
-  @js.native
-  def toPattern(value: String, options: PatternOptions): String = js.native
-  @JSImport("vanilla-masker", "toPattern")
-  @js.native
-  def toPattern(value: Double): String = js.native
-  @JSImport("vanilla-masker", "toPattern")
-  @js.native
-  def toPattern(value: Double, options: String): String = js.native
-  @JSImport("vanilla-masker", "toPattern")
-  @js.native
-  def toPattern(value: Double, options: PatternOptions): String = js.native
+  @scala.inline
+  def toPattern(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toPattern")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toPattern(value: String, options: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toPattern")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toPattern(value: String, options: PatternOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toPattern")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toPattern(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toPattern")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toPattern(value: Double, options: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toPattern")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toPattern(value: Double, options: PatternOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toPattern")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait MoneyOptions extends StObject {
     
     // Number delimiter -> "12.345.678"
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     // Decimal precision -> "90"
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
     // Decimal separator -> ",90"
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
     // Money unit -> "12.345.678,90 R$"
-    var suffixUnit: js.UndefOr[String] = js.native
+    var suffixUnit: js.UndefOr[String] = js.undefined
     
     // Money unit -> "R$ 12.345.678,90"
-    var unit: js.UndefOr[String] = js.native
+    var unit: js.UndefOr[String] = js.undefined
     
     // Force type only number instead decimal,
     // masking decimals with ",00"
     // Zero cents -> "R$ 1.234.567.890,00"
-    var zeroCents: js.UndefOr[Boolean] = js.native
+    var zeroCents: js.UndefOr[Boolean] = js.undefined
   }
   object MoneyOptions {
     
@@ -135,14 +121,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PatternOptions extends StObject {
     
     // Pattern to mask value against.
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
     // Placeholder option to represent remaining characters to be entered
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
   }
   object PatternOptions {
     

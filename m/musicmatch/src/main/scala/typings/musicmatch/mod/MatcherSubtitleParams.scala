@@ -2,15 +2,15 @@ package typings.musicmatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MatcherSubtitleParams extends MatcherLyricsParams {
+trait MatcherSubtitleParams
+  extends StObject
+     with MatcherLyricsParams {
   
-  var f_subtitle_length: js.UndefOr[Double] = js.native
+  var f_subtitle_length: js.UndefOr[Double] = js.undefined
   
-  var f_subtitle_length_max_deviation: js.UndefOr[Double] = js.native
+  var f_subtitle_length_max_deviation: js.UndefOr[Double] = js.undefined
 }
 object MatcherSubtitleParams {
   

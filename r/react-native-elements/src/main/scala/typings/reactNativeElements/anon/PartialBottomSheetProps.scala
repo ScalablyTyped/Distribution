@@ -3,16 +3,14 @@ package typings.reactNativeElements.anon
 import typings.reactNative.mod.ModalProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.BottomSheetProps> */
-@js.native
 trait PartialBottomSheetProps extends StObject {
   
-  var isVisible: js.UndefOr[Boolean] = js.native
+  var isVisible: js.UndefOr[Boolean] = js.undefined
   
-  var modalProps: js.UndefOr[ModalProps] = js.native
+  var modalProps: js.UndefOr[ModalProps] = js.undefined
 }
 object PartialBottomSheetProps {
   

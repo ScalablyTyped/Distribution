@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGeoLocationResponse extends StObject {
   
   /**
     * A complex type that contains the codes and full continent, country, and subdivision names for the specified geolocation code.
     */
-  var GeoLocationDetails: typings.awsSdk.route53Mod.GeoLocationDetails = js.native
+  var GeoLocationDetails: typings.awsSdk.route53Mod.GeoLocationDetails
 }
 object GetGeoLocationResponse {
   

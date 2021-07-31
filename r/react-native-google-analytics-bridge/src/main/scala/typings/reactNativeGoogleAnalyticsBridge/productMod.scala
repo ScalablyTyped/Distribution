@@ -2,7 +2,6 @@ package typings.reactNativeGoogleAnalyticsBridge
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object productMod {
@@ -14,59 +13,74 @@ object productMod {
   object ProductActionEnum extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ProductActionEnum with Double] = js.native
+    def apply(value: Double): js.UndefOr[ProductActionEnum & Double] = js.native
     
     @js.native
-    sealed trait Add extends ProductActionEnum
-    /* 3 */ val Add: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Add with Double = js.native
+    sealed trait Add
+      extends StObject
+         with ProductActionEnum
+    /* 3 */ val Add: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Add & Double = js.native
     
     @js.native
-    sealed trait Checkout extends ProductActionEnum
-    /* 5 */ val Checkout: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Checkout with Double = js.native
+    sealed trait Checkout
+      extends StObject
+         with ProductActionEnum
+    /* 5 */ val Checkout: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Checkout & Double = js.native
     
     @js.native
-    sealed trait CheckoutOption extends ProductActionEnum
-    /* 6 */ val CheckoutOption: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.CheckoutOption with Double = js.native
+    sealed trait CheckoutOption
+      extends StObject
+         with ProductActionEnum
+    /* 6 */ val CheckoutOption: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.CheckoutOption & Double = js.native
     
     @js.native
-    sealed trait Click extends ProductActionEnum
-    /* 2 */ val Click: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Click with Double = js.native
+    sealed trait Click
+      extends StObject
+         with ProductActionEnum
+    /* 2 */ val Click: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Click & Double = js.native
     
     @js.native
-    sealed trait Detail extends ProductActionEnum
-    /* 1 */ val Detail: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Detail with Double = js.native
+    sealed trait Detail
+      extends StObject
+         with ProductActionEnum
+    /* 1 */ val Detail: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Detail & Double = js.native
     
     @js.native
-    sealed trait Purchase extends ProductActionEnum
-    /* 7 */ val Purchase: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Purchase with Double = js.native
+    sealed trait Purchase
+      extends StObject
+         with ProductActionEnum
+    /* 7 */ val Purchase: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Purchase & Double = js.native
     
     @js.native
-    sealed trait Refund extends ProductActionEnum
-    /* 8 */ val Refund: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Refund with Double = js.native
+    sealed trait Refund
+      extends StObject
+         with ProductActionEnum
+    /* 8 */ val Refund: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Refund & Double = js.native
     
     @js.native
-    sealed trait Remove extends ProductActionEnum
-    /* 4 */ val Remove: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Remove with Double = js.native
+    sealed trait Remove
+      extends StObject
+         with ProductActionEnum
+    /* 4 */ val Remove: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Remove & Double = js.native
   }
   
-  @js.native
   trait Product extends StObject {
     
-    var brand: js.UndefOr[String] = js.native
+    var brand: js.UndefOr[String] = js.undefined
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var couponCode: js.UndefOr[String] = js.native
+    var couponCode: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var price: js.UndefOr[Double] = js.native
+    var price: js.UndefOr[Double] = js.undefined
     
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
     
-    var variant: js.UndefOr[String] = js.native
+    var variant: js.UndefOr[String] = js.undefined
   }
   object Product {
     
@@ -123,20 +137,19 @@ object productMod {
     }
   }
   
-  @js.native
   trait ProductAction extends StObject {
     
-    var action: ProductActionEnum = js.native
+    var action: ProductActionEnum
     
-    var checkoutOption: js.UndefOr[String] = js.native
+    var checkoutOption: js.UndefOr[String] = js.undefined
     
-    var checkoutStep: js.UndefOr[Double] = js.native
+    var checkoutStep: js.UndefOr[Double] = js.undefined
     
-    var productActionList: js.UndefOr[String] = js.native
+    var productActionList: js.UndefOr[String] = js.undefined
     
-    var productListSource: js.UndefOr[String] = js.native
+    var productListSource: js.UndefOr[String] = js.undefined
     
-    var transaction: js.UndefOr[Transaction] = js.native
+    var transaction: js.UndefOr[Transaction] = js.undefined
   }
   object ProductAction {
     
@@ -184,20 +197,19 @@ object productMod {
     }
   }
   
-  @js.native
   trait Transaction extends StObject {
     
-    var affiliation: js.UndefOr[String] = js.native
+    var affiliation: js.UndefOr[String] = js.undefined
     
-    var couponCode: js.UndefOr[String] = js.native
+    var couponCode: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var revenue: js.UndefOr[Double] = js.native
+    var revenue: js.UndefOr[Double] = js.undefined
     
-    var shipping: js.UndefOr[Double] = js.native
+    var shipping: js.UndefOr[Double] = js.undefined
     
-    var tax: js.UndefOr[Double] = js.native
+    var tax: js.UndefOr[Double] = js.undefined
   }
   object Transaction {
     

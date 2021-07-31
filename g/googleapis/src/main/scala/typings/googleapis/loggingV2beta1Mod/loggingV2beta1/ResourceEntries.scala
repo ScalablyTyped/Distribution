@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/logging/v2beta1", "logging_v2beta1.Resource$Entries")
@@ -99,7 +98,7 @@ class ResourceEntries protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListLogEntriesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLogEntriesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListLogEntriesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListLogEntriesResponse] = js.native
   def list(params: ParamsResourceEntriesList): GaxiosPromise[SchemaListLogEntriesResponse] = js.native
   def list(params: ParamsResourceEntriesList, callback: BodyResponseCallback[SchemaListLogEntriesResponse]): Unit = js.native
   def list(
@@ -187,7 +186,7 @@ class ResourceEntries protected () extends StObject {
     */
   def write(): GaxiosPromise[SchemaWriteLogEntriesResponse] = js.native
   def write(callback: BodyResponseCallback[SchemaWriteLogEntriesResponse]): Unit = js.native
-  def write(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWriteLogEntriesResponse] = js.native
+  def write(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWriteLogEntriesResponse] = js.native
   def write(params: ParamsResourceEntriesWrite): GaxiosPromise[SchemaWriteLogEntriesResponse] = js.native
   def write(params: ParamsResourceEntriesWrite, callback: BodyResponseCallback[SchemaWriteLogEntriesResponse]): Unit = js.native
   def write(

@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsVerticalLineTypePointsOptions extends StObject {
   
-  var controlPoint: js.UndefOr[Double] = js.native
+  var controlPoint: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The x position of the point.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The y position of the point.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsVerticalLineTypePointsOptions {
   

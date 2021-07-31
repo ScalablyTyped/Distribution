@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "Lightmapper")
 @js.native
 class Lightmapper protected ()
-  extends typings.playcanvas.pc.Lightmapper {
+  extends StObject
+     with typings.playcanvas.pc.Lightmapper {
   def this(
     device: typings.playcanvas.pc.GraphicsDevice,
     root: typings.playcanvas.pc.Entity,

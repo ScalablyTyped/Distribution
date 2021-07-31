@@ -2,36 +2,34 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscribedWorkteam extends StObject {
   
   /**
     * Marketplace product listing ID.
     */
-  var ListingId: js.UndefOr[String] = js.native
+  var ListingId: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the vendor from the Amazon Marketplace.
     */
-  var MarketplaceDescription: js.UndefOr[String200] = js.native
+  var MarketplaceDescription: js.UndefOr[String200] = js.undefined
   
   /**
     * The title of the service provided by the vendor in the Amazon Marketplace.
     */
-  var MarketplaceTitle: js.UndefOr[String200] = js.native
+  var MarketplaceTitle: js.UndefOr[String200] = js.undefined
   
   /**
     * The name of the vendor in the Amazon Marketplace.
     */
-  var SellerName: js.UndefOr[String] = js.native
+  var SellerName: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the vendor that you have subscribed.
     */
-  var WorkteamArn: typings.awsSdk.sagemakerMod.WorkteamArn = js.native
+  var WorkteamArn: typings.awsSdk.sagemakerMod.WorkteamArn
 }
 object SubscribedWorkteam {
   

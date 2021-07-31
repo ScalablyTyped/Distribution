@@ -2,36 +2,34 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityScheduledEventDetails extends StObject {
   
   /**
     * The maximum allowed duration between two heartbeats for the activity task.
     */
-  var heartbeatInSeconds: js.UndefOr[TimeoutInSeconds] = js.native
+  var heartbeatInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
   
   /**
     * The JSON data input to the activity task. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
     */
-  var input: js.UndefOr[SensitiveData] = js.native
+  var input: js.UndefOr[SensitiveData] = js.undefined
   
   /**
     * Contains details about the input for an execution history event.
     */
-  var inputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.native
+  var inputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the scheduled activity.
     */
-  var resource: Arn = js.native
+  var resource: Arn
   
   /**
     * The maximum allowed duration of the activity task.
     */
-  var timeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.native
+  var timeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
 }
 object ActivityScheduledEventDetails {
   

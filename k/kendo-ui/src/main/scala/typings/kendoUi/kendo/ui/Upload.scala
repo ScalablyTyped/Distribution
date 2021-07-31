@@ -3,11 +3,12 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Upload extends Widget {
+trait Upload
+  extends StObject
+     with Widget {
   
   def clearAllFiles(): Unit = js.native
   

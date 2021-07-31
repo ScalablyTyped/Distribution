@@ -2,15 +2,15 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MarkSeriesProps extends AbstractSeriesProps[MarkSeriesPoint] {
+trait MarkSeriesProps
+  extends StObject
+     with AbstractSeriesProps[MarkSeriesPoint] {
   
-  var getNull: js.UndefOr[RVGetNull[MarkSeriesPoint]] = js.native
+  var getNull: js.UndefOr[RVGetNull[MarkSeriesPoint]] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object MarkSeriesProps {
   

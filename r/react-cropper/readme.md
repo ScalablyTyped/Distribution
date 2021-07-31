@@ -10,9 +10,9 @@ Cropper as React Component
 | ------------------ | :-------------: |
 | Full name          | react-cropper |
 | Keywords           | react, react-component, cropper, image, cropperjs |
-| # releases         | 9 |
-| # dependents       | 85 |
-| # downloads        | 2207078 |
+| # releases         | 13 |
+| # dependents       | 101 |
+| # downloads        | 2805621 |
 | # stars            | 3 |
 
 ## Links

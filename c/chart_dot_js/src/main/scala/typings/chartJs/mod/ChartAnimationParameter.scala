@@ -2,15 +2,13 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartAnimationParameter extends StObject {
   
-  var animationObject: js.UndefOr[js.Any] = js.native
+  var animationObject: js.UndefOr[js.Any] = js.undefined
   
-  var chartInstance: js.UndefOr[js.Any] = js.native
+  var chartInstance: js.UndefOr[js.Any] = js.undefined
 }
 object ChartAnimationParameter {
   

@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersDatasourcesDatasetsGet extends StandardParameters {
+trait ParamsResourceUsersDatasourcesDatasetsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The data stream ID of the data source that created the dataset.
     */
-  var dataSourceId: js.UndefOr[String] = js.native
+  var dataSourceId: js.UndefOr[String] = js.undefined
   
   /**
     * Dataset identifier that is a composite of the minimum data point start
@@ -28,14 +28,14 @@ trait ParamsResourceUsersDatasourcesDatasetsGet extends StandardParameters {
     * epoch. The ID is formatted like: "startTime-endTime" where startTime and
     * endTime are 64 bit integers.
     */
-  var datasetId: js.UndefOr[String] = js.native
+  var datasetId: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, no more than this many data points will be included in the
     * dataset. If there are more data points in the dataset, nextPageToken will
     * be set in the dataset response.
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * The continuation token, which is used to page through large datasets. To
@@ -44,13 +44,13 @@ trait ParamsResourceUsersDatasourcesDatasetsGet extends StandardParameters {
     * a partial dataset with data point end timestamps that are strictly
     * smaller than those in the previous partial response.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Retrieve a dataset for the person identified. Use me to indicate the
     * authenticated user. Only me is supported at this time.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersDatasourcesDatasetsGet {
   

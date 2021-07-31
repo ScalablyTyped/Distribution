@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mirrorHorizontalMod extends Shortcut {
@@ -15,10 +14,11 @@ object mirrorHorizontalMod extends Shortcut {
   @js.native
   val default: SFC[MirrorHorizontalProps] = js.native
   
-  @js.native
-  trait MirrorHorizontalProps extends SVGAttributes[SVGElement] {
+  trait MirrorHorizontalProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object MirrorHorizontalProps {
     

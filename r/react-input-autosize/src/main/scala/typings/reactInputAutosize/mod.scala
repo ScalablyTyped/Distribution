@@ -7,7 +7,6 @@ import typings.react.mod.InputHTMLAttributes
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,26 +24,26 @@ object mod {
     def getInput(): HTMLInputElement = js.native
   }
   
-  @js.native
   trait AutosizeInputProps
-    extends InputHTMLAttributes[HTMLInputElement]
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement]
        with ClassAttributes[HTMLInputElement] {
     
-    var extraWidth: js.UndefOr[String | Double] = js.native
+    var extraWidth: js.UndefOr[String | Double] = js.undefined
     
-    var injectStyles: js.UndefOr[Boolean] = js.native
+    var injectStyles: js.UndefOr[Boolean] = js.undefined
     
-    var inputClassName: js.UndefOr[String] = js.native
+    var inputClassName: js.UndefOr[String] = js.undefined
     
-    var inputRef: js.UndefOr[js.Function1[/* instance */ HTMLInputElement | Null, Unit]] = js.native
+    var inputRef: js.UndefOr[js.Function1[/* instance */ HTMLInputElement | Null, Unit]] = js.undefined
     
-    var inputStyle: js.UndefOr[CSSProperties] = js.native
+    var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var minWidth: js.UndefOr[String | Double] = js.native
+    var minWidth: js.UndefOr[String | Double] = js.undefined
     
-    var onAutosize: js.UndefOr[js.Function1[/* inputWidth */ String | Double, Unit]] = js.native
+    var onAutosize: js.UndefOr[js.Function1[/* inputWidth */ String | Double, Unit]] = js.undefined
     
-    var placeholderIsMinWidth: js.UndefOr[Boolean] = js.native
+    var placeholderIsMinWidth: js.UndefOr[Boolean] = js.undefined
   }
   object AutosizeInputProps {
     

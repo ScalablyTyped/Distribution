@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoscalingConfig extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait AutoscalingConfig extends StObject {
     * https://www.googleapis.com/compute/v1/projects/[project_id]/locations/[dataproc_region]/autoscalingPolicies/[policy_id]
     * projects/[project_id]/locations/[dataproc_region]/autoscalingPolicies/[policy_id]Note that the policy must be in the same project and Dataproc region.
     */
-  var policyUri: js.UndefOr[String] = js.native
+  var policyUri: js.UndefOr[String] = js.undefined
 }
 object AutoscalingConfig {
   

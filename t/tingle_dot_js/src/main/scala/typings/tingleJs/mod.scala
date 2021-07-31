@@ -6,7 +6,6 @@ import typings.std.MouseEvent
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,16 +16,16 @@ object mod {
     def this(options: Options) = this()
     
     def addFooterBtn(label: String): HTMLButtonElement = js.native
-    def addFooterBtn(
-      label: String,
-      cssClass: js.UndefOr[scala.Nothing],
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]
-    ): HTMLButtonElement = js.native
     def addFooterBtn(label: String, cssClass: String): HTMLButtonElement = js.native
     def addFooterBtn(
       label: String,
       cssClass: String,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]
+    ): HTMLButtonElement = js.native
+    def addFooterBtn(
+      label: String,
+      cssClass: Unit,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]
     ): HTMLButtonElement = js.native
     
     def checkOverflow(): Unit = js.native
@@ -53,26 +52,25 @@ object mod {
     def setStickyFooter(sticky: Boolean): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var beforeClose: js.UndefOr[js.ThisFunction0[/* this */ modal, js.UndefOr[Boolean]]] = js.native
+    var beforeClose: js.UndefOr[js.ThisFunction0[/* this */ modal, js.UndefOr[Boolean]]] = js.undefined
     
-    var beforeOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var closeLabel: js.UndefOr[String] = js.native
+    var closeLabel: js.UndefOr[String] = js.undefined
     
-    var closeMethods: js.UndefOr[js.Array[String]] = js.native
+    var closeMethods: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cssClass: js.UndefOr[js.Array[String]] = js.native
+    var cssClass: js.UndefOr[js.Array[String]] = js.undefined
     
-    var footer: js.UndefOr[Boolean] = js.native
+    var footer: js.UndefOr[Boolean] = js.undefined
     
-    var onClose: js.UndefOr[js.ThisFunction0[/* this */ modal, Unit]] = js.native
+    var onClose: js.UndefOr[js.ThisFunction0[/* this */ modal, Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.ThisFunction0[/* this */ modal, Unit]] = js.native
+    var onOpen: js.UndefOr[js.ThisFunction0[/* this */ modal, Unit]] = js.undefined
     
-    var stickyFooter: js.UndefOr[Boolean] = js.native
+    var stickyFooter: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

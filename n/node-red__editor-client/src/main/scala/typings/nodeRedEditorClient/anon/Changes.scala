@@ -3,39 +3,37 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.delete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Changes extends StObject {
   
-  var changes: js.UndefOr[js.Array[js.Object]] = js.native
+  var changes: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var createdLinks: js.UndefOr[js.Array[js.Object]] = js.native
+  var createdLinks: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var groups: js.UndefOr[js.Array[js.Object]] = js.native
+  var groups: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var links: js.UndefOr[js.Array[js.Object]] = js.native
+  var links: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var nodes: js.UndefOr[js.Array[js.Object]] = js.native
+  var nodes: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var subflow: js.UndefOr[js.Object] = js.native
+  var subflow: js.UndefOr[js.Object] = js.undefined
   
-  var subflowInputs: js.UndefOr[js.Array[js.Object]] = js.native
+  var subflowInputs: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var subflowOutputs: js.UndefOr[js.Array[js.Object]] = js.native
+  var subflowOutputs: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var subflows: js.UndefOr[js.Array[js.Object]] = js.native
+  var subflows: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var t: delete = js.native
+  var t: delete
   
-  var workspaces: js.UndefOr[js.Array[js.Object]] = js.native
+  var workspaces: js.UndefOr[js.Array[js.Object]] = js.undefined
 }
 object Changes {
   
   @scala.inline
-  def apply(t: delete): Changes = {
-    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
+  def apply(): Changes = {
+    val __obj = js.Dynamic.literal(t = "delete")
     __obj.asInstanceOf[Changes]
   }
   

@@ -2,32 +2,30 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Switch/Switch.SwitchClassKey>> */
-@js.native
 trait PartialClassNameMapSwitch extends StObject {
   
-  var bar: js.UndefOr[String] = js.native
+  var bar: js.UndefOr[String] = js.undefined
   
-  var checked: js.UndefOr[String] = js.native
+  var checked: js.UndefOr[String] = js.undefined
   
-  var colorPrimary: js.UndefOr[String] = js.native
+  var colorPrimary: js.UndefOr[String] = js.undefined
   
-  var colorSecondary: js.UndefOr[String] = js.native
+  var colorSecondary: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var iconChecked: js.UndefOr[String] = js.native
+  var iconChecked: js.UndefOr[String] = js.undefined
   
-  var input: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var switchBase: js.UndefOr[String] = js.native
+  var switchBase: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapSwitch {
   

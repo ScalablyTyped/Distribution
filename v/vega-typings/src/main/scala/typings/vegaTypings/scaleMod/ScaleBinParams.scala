@@ -3,23 +3,23 @@ package typings.vegaTypings.scaleMod
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScaleBinParams extends _ScaleBins {
+trait ScaleBinParams
+  extends StObject
+     with _ScaleBins {
   
   /**
     * The starting (lowest-valued) bin boundary.
     *
     * __Default value:__ The lowest value of the scale domain will be used.
     */
-  var start: js.UndefOr[Double | SignalRef] = js.native
+  var start: js.UndefOr[Double | SignalRef] = js.undefined
   
   /**
     * The step size defining the bin interval width.
     */
-  var step: Double | SignalRef = js.native
+  var step: Double | SignalRef
   
   /**
     * The stopping (highest-valued) bin boundary.
@@ -27,7 +27,7 @@ trait ScaleBinParams extends _ScaleBins {
     * __Default value:__ The highest value of the scale domain will be used.
     *
     */
-  var stop: js.UndefOr[Double | SignalRef] = js.native
+  var stop: js.UndefOr[Double | SignalRef] = js.undefined
 }
 object ScaleBinParams {
   

@@ -2,15 +2,13 @@ package typings.reactSketchapp.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchAssetCollection extends StObject {
   
-  def colors(): js.Array[MSColor] = js.native
+  def colors(): js.Array[MSColor]
   
-  def gradients(): js.Array[MSGradient] = js.native
+  def gradients(): js.Array[MSGradient]
 }
 object SketchAssetCollection {
   

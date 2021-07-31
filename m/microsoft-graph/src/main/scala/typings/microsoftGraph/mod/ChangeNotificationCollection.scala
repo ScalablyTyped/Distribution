@@ -2,10 +2,8 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeNotificationCollection extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait ChangeNotificationCollection extends StObject {
     * in the value array. Keep in mind that notifications can contain a mix of items for various apps and tenants that
     * subscribed using the same notification URL. Only provided for change notifications with resource data Optional.
     */
-  var validationTokens: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var validationTokens: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // The set of notifications being sent to the notification URL. Required.
-  var value: js.UndefOr[js.Array[ChangeNotification]] = js.native
+  var value: js.UndefOr[js.Array[ChangeNotification]] = js.undefined
 }
 object ChangeNotificationCollection {
   

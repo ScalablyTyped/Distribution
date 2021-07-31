@@ -6,16 +6,16 @@ import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerOp
 import typings.sipJs.sessionOptionsMod.SessionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inviterOptionsMod {
   
-  @js.native
-  trait InviterOptions extends SessionOptions {
+  trait InviterOptions
+    extends StObject
+       with SessionOptions {
     
     /** If true, an anonymous call. */
-    var anonymous: js.UndefOr[Boolean] = js.native
+    var anonymous: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the first answer to the local offer is immediately utilized for media.
@@ -23,34 +23,34 @@ object inviterOptionsMod {
       * Has no effect if `inviteWithoutSdp` is true.
       * Default is false.
       */
-    var earlyMedia: js.UndefOr[Boolean] = js.native
+    var earlyMedia: js.UndefOr[Boolean] = js.undefined
     
     /** Array of extra headers added to the INVITE. */
-    var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+    var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
     /** If true, send INVITE without SDP. Default is false. */
-    var inviteWithoutSdp: js.UndefOr[Boolean] = js.native
+    var inviteWithoutSdp: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated TODO: provide alternative. */
-    var params: js.UndefOr[FromDisplayName] = js.native
+    var params: js.UndefOr[FromDisplayName] = js.undefined
     
     /** @deprecated TODO: provide alternative. */
-    var renderbody: js.UndefOr[String] = js.native
+    var renderbody: js.UndefOr[String] = js.undefined
     
     /** @deprecated TODO: provide alternative. */
-    var rendertype: js.UndefOr[String] = js.native
+    var rendertype: js.UndefOr[String] = js.undefined
     
     /** Modifiers to pass to SessionDescriptionHandler during the initial INVITE transaction. */
-    var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.native
+    var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.undefined
     
     /** Modifiers to pass to SessionDescriptionHandler during re-INVITE transactions. */
-    var sessionDescriptionHandlerModifiersReInvite: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.native
+    var sessionDescriptionHandlerModifiersReInvite: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.undefined
     
     /** Options to pass to SessionDescriptionHandler during the initial INVITE transaction. */
-    var sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.native
+    var sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.undefined
     
     /** Options to pass to SessionDescriptionHandler during re-INVITE transactions. */
-    var sessionDescriptionHandlerOptionsReInvite: js.UndefOr[SessionDescriptionHandlerOptions] = js.native
+    var sessionDescriptionHandlerOptionsReInvite: js.UndefOr[SessionDescriptionHandlerOptions] = js.undefined
   }
   object InviterOptions {
     

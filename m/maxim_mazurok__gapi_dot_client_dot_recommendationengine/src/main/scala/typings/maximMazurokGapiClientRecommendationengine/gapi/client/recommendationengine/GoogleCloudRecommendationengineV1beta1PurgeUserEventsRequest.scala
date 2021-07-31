@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest extends StObject {
   
   /**
@@ -15,10 +13,10 @@ trait GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest extends StObj
     * "2012-04-23T18:30:43.511Z"` * Deleting specific eventType in time range: `eventTime > "2012-04-23T18:25:43.511Z" eventType = "detail-page-view"` * Deleting all events for a specific
     * visitor: `visitorId = "visitor1024"` The filtering fields are assumed to have an implicit AND.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /** Optional. The default value is false. Override this flag to true to actually perform the purge. If the field is not set to true, a sampling of events to be deleted will be returned. */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest {
   

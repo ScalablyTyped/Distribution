@@ -3,7 +3,6 @@ package typings.pDoWhilst
 import typings.pDoWhilst.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,12 +25,11 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-do-whilst", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[ValueType](
     action: js.Function0[ValueType | js.Thenable[ValueType]],
     condition: js.Function1[/* value */ ValueType, Boolean]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(action.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("p-do-whilst", JSImport.Namespace)
   @js.native
@@ -70,12 +68,11 @@ object mod {
   // 	condition: (value: ValueType) => boolean
   // ): Promise<void>;
   // export = pDoWhilst;
-  @JSImport("p-do-whilst", "default")
-  @js.native
+  @scala.inline
   def default[ValueType](
     action: js.Function0[ValueType | js.Thenable[ValueType]],
     condition: js.Function1[/* value */ ValueType, Boolean]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(action.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

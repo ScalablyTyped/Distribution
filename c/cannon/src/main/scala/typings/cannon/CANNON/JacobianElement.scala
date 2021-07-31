@@ -2,19 +2,17 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JacobianElement extends StObject {
   
-  def multiplyElement(element: JacobianElement): Double = js.native
+  def multiplyElement(element: JacobianElement): Double
   
-  def multiplyVectors(spacial: Vec3, rotational: Vec3): Double = js.native
+  def multiplyVectors(spacial: Vec3, rotational: Vec3): Double
   
-  var rotational: Vec3 = js.native
+  var rotational: Vec3
   
-  var spatial: Vec3 = js.native
+  var spatial: Vec3
 }
 object JacobianElement {
   

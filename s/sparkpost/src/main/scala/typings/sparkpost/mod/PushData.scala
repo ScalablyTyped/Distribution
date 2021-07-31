@@ -2,17 +2,15 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushData extends StObject {
   
   /** payload for APNs messages */
-  var apns: js.UndefOr[js.Any] = js.native
+  var apns: js.UndefOr[js.Any] = js.undefined
   
   /** payload for GCM messages */
-  var gcm: js.UndefOr[js.Any] = js.native
+  var gcm: js.UndefOr[js.Any] = js.undefined
 }
 object PushData {
   

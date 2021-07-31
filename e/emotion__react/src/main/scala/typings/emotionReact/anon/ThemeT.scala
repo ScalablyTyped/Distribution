@@ -2,13 +2,11 @@ package typings.emotionReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeT[T] extends StObject {
   
-  var theme: T = js.native
+  var theme: T
 }
 object ThemeT {
   
@@ -19,7 +17,7 @@ object ThemeT {
   }
   
   @scala.inline
-  implicit class ThemeTMutableBuilder[Self <: ThemeT[_], T] (val x: Self with ThemeT[T]) extends AnyVal {
+  implicit class ThemeTMutableBuilder[Self <: ThemeT[?], T] (val x: Self & ThemeT[T]) extends AnyVal {
     
     @scala.inline
     def setTheme(value: T): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])

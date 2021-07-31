@@ -6,7 +6,6 @@ import typings.uirouterAngularjs.interfaceMod.Ng1StateDeclaration
 import typings.uirouterCore.commonCommonMod.Obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -51,21 +50,16 @@ object anon {
       * @param parent a promise for a "parent resolve"
       */
     def resolve(invocables: StringDictionary[js.Function]): js.Promise[Obj] = js.native
-    def resolve(
-      invocables: StringDictionary[js.Function],
-      locals: js.UndefOr[scala.Nothing],
-      parent: js.Promise[_]
-    ): js.Promise[Obj] = js.native
     def resolve(invocables: StringDictionary[js.Function], locals: js.Object): js.Promise[Obj] = js.native
-    def resolve(invocables: StringDictionary[js.Function], locals: js.Object, parent: js.Promise[_]): js.Promise[Obj] = js.native
+    def resolve(invocables: StringDictionary[js.Function], locals: js.Object, parent: js.Promise[js.Any]): js.Promise[Obj] = js.native
+    def resolve(invocables: StringDictionary[js.Function], locals: Unit, parent: js.Promise[js.Any]): js.Promise[Obj] = js.native
   }
   
-  @js.native
   trait Component extends StObject {
     
-    var component: js.UndefOr[String] = js.native
+    var component: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object Component {
     
@@ -93,12 +87,13 @@ object anon {
   }
   
   @js.native
-  trait Instantiable extends Instantiable0[Ng1StateDeclaration]
+  trait Instantiable
+    extends StObject
+       with Instantiable0[Ng1StateDeclaration]
   
-  @js.native
   trait Resolve extends StObject {
     
-    def resolve(): js.Any = js.native
+    def resolve(): js.Any
   }
   object Resolve {
     

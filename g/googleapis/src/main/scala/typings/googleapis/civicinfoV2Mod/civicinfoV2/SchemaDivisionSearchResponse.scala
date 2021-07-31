@@ -2,22 +2,20 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of a division search query.
   */
-@js.native
 trait SchemaDivisionSearchResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;civicinfo#divisionSearchResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var results: js.UndefOr[js.Array[SchemaDivisionSearchResult]] = js.native
+  var results: js.UndefOr[js.Array[SchemaDivisionSearchResult]] = js.undefined
 }
 object SchemaDivisionSearchResponse {
   

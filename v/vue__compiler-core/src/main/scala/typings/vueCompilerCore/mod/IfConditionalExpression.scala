@@ -1,19 +1,18 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`19`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IfConditionalExpression extends ConditionalExpression {
+trait IfConditionalExpression
+  extends StObject
+     with ConditionalExpression {
   
   @JSName("alternate")
-  var alternate_IfConditionalExpression: BlockCodegenNode | IfConditionalExpression = js.native
+  var alternate_IfConditionalExpression: BlockCodegenNode | IfConditionalExpression
   
   @JSName("consequent")
-  var consequent_IfConditionalExpression: BlockCodegenNode = js.native
+  var consequent_IfConditionalExpression: BlockCodegenNode
 }
 object IfConditionalExpression {
   
@@ -23,11 +22,10 @@ object IfConditionalExpression {
     consequent: BlockCodegenNode,
     loc: SourceLocation,
     newline: Boolean,
-    test: JSChildNode,
-    `type`: `19`
+    test: JSChildNode
   ): IfConditionalExpression = {
     val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], newline = newline.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(19)
     __obj.asInstanceOf[IfConditionalExpression]
   }
   

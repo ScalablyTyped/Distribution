@@ -2,422 +2,420 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Calloutextension extends StObject {
   
   /**
     * Sets the transparency of the object. Requires that background-color be set. 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the first color of a 2 color background gradient of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow"
     * | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-1`: js.UndefOr[String] = js.native
+  var `background-color-1`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the second color of a 2 color background gradient of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow"
     *  | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-2`: js.UndefOr[String] = js.native
+  var `background-color-2`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the direction/s on which the background image is being "stretched". "x" | "y" | "xy"
     */
-  var `background-fit`: js.UndefOr[String] = js.native
+  var `background-fit`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a background image for the object. Value can be a local file or a web image's location. "image.png" | ...
     */
-  var `background-image`: js.UndefOr[String] = js.native
+  var `background-image`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the position of the background when the background-repeat value is no-repeat. "0 0" | "50 100" | "80% 60%" | ...
     */
-  var `background-position`: js.UndefOr[String] = js.native
+  var `background-position`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the repeating mode for the background image. "no-repeat" | "repeat" | "repeat-x" | "repeat-y"
     */
-  var `background-repeat`: js.UndefOr[String] = js.native
+  var `background-repeat`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets whether the text is displayed with bold characters or not in the subtitle. true | false | 1 | 0
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the object's bottom border style. Defaults to black when color is not set properly. "2px solid #f00" | ...
     */
-  var `border-bottom`: js.UndefOr[String] = js.native
+  var `border-bottom`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border color of the object, applicable on closed shapes. Requires border width. See also line-color for closed shapes. "n
     * one" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.native
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's left border style. Operates like border-bottom. "2px solid #f00" | ...
     */
-  var `border-left`: js.UndefOr[String] = js.native
+  var `border-left`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's border radius, for rounded corners. The higher the value, the more rounded the corners appear. 4 | "6px" | "6px
     * 10px 3px 5px" | "-10px" | ...
     */
-  var `border-radius`: js.UndefOr[js.Any] = js.native
+  var `border-radius`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom-left border radius, for rounded corners. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-bottom-left`: js.UndefOr[js.Any] = js.native
+  var `border-radius-bottom-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom-right border radius, for rounded corners. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-bottom-right`: js.UndefOr[js.Any] = js.native
+  var `border-radius-bottom-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top-left border radius, for rounded corners. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-top-left`: js.UndefOr[js.Any] = js.native
+  var `border-radius-top-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top-right border radius, for rounded corners. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-top-right`: js.UndefOr[js.Any] = js.native
+  var `border-radius-top-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right border style. Operates like border-bottom. "2px solid #f00" | ...
     */
-  var `border-right`: js.UndefOr[String] = js.native
+  var `border-right`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's top border style. Operates like border-bottom. "2px solid #f00" | ...
     */
-  var `border-top`: js.UndefOr[String] = js.native
+  var `border-top`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border width of the object, applicable on closed shapes. See also line-width for closed shapes. If no border-color is set
     * , will display in black. 4 | "6px" | ...
     */
-  var `border-width`: js.UndefOr[js.Any] = js.native
+  var `border-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets whether or not the object will have a callout arrow. true | false | 1 | 0
     */
-  var callout: js.UndefOr[Boolean] = js.native
+  var callout: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the length for extension line off the tip of the callout arrow. Requires border-width. 4 | "6px" | ...
     */
-  var `callout-extension`: js.UndefOr[js.Any] = js.native
+  var `callout-extension`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the height of the object's callout arrow. 4 | "6px" | ...
     */
-  var `callout-height`: js.UndefOr[js.Any] = js.native
+  var `callout-height`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets a location for the point of the tip of the callout arrow. Uses XY coordinates. [200, 50] | ...
     */
-  var `callout-hook`: js.UndefOr[js.Any] = js.native
+  var `callout-hook`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the offset for the origin of the callout arrow. Uses positive or negative values to move the arrow right/left/up/down. 4 | "6
     * px" | ...
     */
-  var `callout-offset`: js.UndefOr[js.Any] = js.native
+  var `callout-offset`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets which edge will be the location for the object's callout arrow. "top" | "right" | "bottom" | "left"
     */
-  var `callout-position`: js.UndefOr[String] = js.native
+  var `callout-position`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the width of the object's callout arrow. 4 | "6px" | ...
     */
-  var `callout-width`: js.UndefOr[js.Any] = js.native
+  var `callout-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Cuts off extra text. Use with width. true | false | 1 | 0
     */
-  var `clip-text`: js.UndefOr[Boolean] = js.native
+  var `clip-text`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the color of the text in the subtitle. Similar with font-color. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow"
     * | "rgb(100, 15, 15)" | ...
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the angle of the axis along which the linear fill is drawn. -45 | 115 | ...
     */
-  var `fill-angle`: js.UndefOr[Double] = js.native
+  var `fill-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets an X offset to apply to the fill. 4 | "6px" | ...
     */
-  var `fill-offset-x`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an Y offset to apply to the fill. 4 | "6px" | ...
     */
-  var `fill-offset-y`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the fill type. "linear" | "radial"
     */
-  var `fill-type`: js.UndefOr[String] = js.native
+  var `fill-type`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the rotation angle of the subtitle text. Similar with angle. -45 | 115 | ...
     */
-  var `font-angle`: js.UndefOr[Double] = js.native
+  var `font-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the color of the subtitle text. Similar with color. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100,
     * 15, 15)" | ...
     */
-  var `font-color`: js.UndefOr[String] = js.native
+  var `font-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font family of the subtitle text. "Arial" | "Tahoma,Verdana" | ...
     */
-  var `font-family`: js.UndefOr[String] = js.native
+  var `font-family`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font size of the subtitle text. 4 | "6px" | ...
     */
-  var `font-size`: js.UndefOr[js.Any] = js.native
+  var `font-size`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the font style of the subtitle text. Similar with italic. "none" | "italic" | "oblique"
     */
-  var `font-style`: js.UndefOr[String] = js.native
+  var `font-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font weight of the subtitle text. Similar with bold. "normal" | "bold"
     */
-  var `font-weight`: js.UndefOr[String] = js.native
+  var `font-weight`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a set of colors for a complex background gradient consisting of 2 or more colors. To be used with gradient-stops. "#f00 #0f0
     * #00f" | ...
     */
-  var `gradient-colors`: js.UndefOr[String] = js.native
+  var `gradient-colors`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the gradient stops for a complex background gradient consisting of 2 or more colors. To be used with gradient-colors. "0.1 0.
     * 5 0.9" | ...
     */
-  var `gradient-stops`: js.UndefOr[String] = js.native
+  var `gradient-stops`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's height. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var height: js.UndefOr[js.Any] = js.native
+  var height: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets whether the text of the subtitle is displayed with italic characters or not. Similar with font-weight. true | false | 1 | 0
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the item id of the map on which the object/shape is being added. "itemid" | ...
     */
-  var item: js.UndefOr[String] = js.native
+  var item: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the map id of the map on which the object/shape is being added. "mapid" | ...
     */
-  var map: js.UndefOr[String] = js.native
+  var map: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's margin/s by positioning it within the specified area. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var margin: js.UndefOr[js.Any] = js.native
+  var margin: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom margin. 4 | "6px" | ...
     */
-  var `margin-bottom`: js.UndefOr[js.Any] = js.native
+  var `margin-bottom`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's left margin. 4 | "6px" | ...
     */
-  var `margin-left`: js.UndefOr[js.Any] = js.native
+  var `margin-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's left margin. 4 | "6px" | ...
     */
-  var `margin-right`: js.UndefOr[js.Any] = js.native
+  var `margin-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's margin from the top of the chart. 4 | "6px" | ...
     */
-  var `margin-top`: js.UndefOr[js.Any] = js.native
+  var `margin-top`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the maximum number of characters displayed in the text label of the subtitle. If value is smaller than the length of the text
     * , the original text will be trimmed and '...' will be appended at the end. 5 | 10 | ...
     */
-  var `max-chars`: js.UndefOr[Double] = js.native
+  var `max-chars`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the maximum width of the text box. If text is longer than the max-width value, it will overlap the box or will wrap if wrap-t
     * ext is set to true. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var `max-width`: js.UndefOr[js.Any] = js.native
+  var `max-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an X offset to apply when positioning the object/shape. 4 | "6px" | ...
     */
-  var `offset-x`: js.UndefOr[js.Any] = js.native
+  var `offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets a Y offset to apply when positioning the object/shape. 4 | "6px" | ...
     */
-  var `offset-y`: js.UndefOr[js.Any] = js.native
+  var `offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's padding around the text of the subtitle. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom padding around the text of the subtitle. 4 | "6px" | ...
     */
-  var `padding-bottom`: js.UndefOr[js.Any] = js.native
+  var `padding-bottom`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's left padding around the text of the subtitle. 4 | "6px" | ...
     */
-  var `padding-left`: js.UndefOr[js.Any] = js.native
+  var `padding-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right padding around the text of the subtitle. 4 | "6px" | ...
     */
-  var `padding-right`: js.UndefOr[js.Any] = js.native
+  var `padding-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top padding around the text of the subtitle. 4 | "6px" | ...
     */
-  var `padding-top`: js.UndefOr[js.Any] = js.native
+  var `padding-top`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's position relative to it's container. Similar results can be obtained by setting marginand margin-... attributes.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * Renders text right-to-left. Default value is false. true | false | 1 | 0
     */
   @JSName("rtl (right-to-left)")
-  var `rtl Leftparenthesisright-to-leftRightparenthesis`: js.UndefOr[Boolean] = js.native
+  var `rtl Leftparenthesisright-to-leftRightparenthesis`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets whether the object's shadow is visible or not. Has limited effect on HTML5 implementation. true | false | 1 | 0
     */
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the transparency of the shadow of the object. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and
     * 1.0 being completely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var `shadow-alpha`: js.UndefOr[Double] = js.native
+  var `shadow-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the angle of the shadow underneath the object. -45 | 115 | ...
     */
-  var `shadow-angle`: js.UndefOr[Double] = js.native
+  var `shadow-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the blur effect size for the shadow of the object. Has limited effect on HTML5 implementation. 4 | "6px" | ...
     */
-  var `shadow-blur`: js.UndefOr[js.Any] = js.native
+  var `shadow-blur`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the color of the shadow of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ..
     * .
     */
-  var `shadow-color`: js.UndefOr[String] = js.native
+  var `shadow-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the distance between the shadow and the object. 4 | "6px" | ...
     */
-  var `shadow-distance`: js.UndefOr[js.Any] = js.native
+  var `shadow-distance`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the text content of the object of the subtitle. Defaults to gray when font-color is not set. "Some Text" | ...
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the text's horizontal alignment relative to the box of the subtitle. "left" | "center" | "right"
     */
-  var `text-align`: js.UndefOr[String] = js.native
+  var `text-align`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the transparency of the subtitle text. 0.3 | 0.9 | ...
     */
-  var `text-alpha`: js.UndefOr[Double] = js.native
+  var `text-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the text decoration for the subtitle text. Similar with underline. "none" | "underline"
     */
-  var `text-decoration`: js.UndefOr[String] = js.native
+  var `text-decoration`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets whether the text of the subtitle is displayed with underlined characters or not. true | false | 1 | 0
     */
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the text's vertical alignment relative to the subtitle object's box . "top" | "middle" | "bottom"
     */
-  var `vertical-align`: js.UndefOr[String] = js.native
+  var `vertical-align`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the visibility of the object. true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the object's width. May truncate text. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var width: js.UndefOr[js.Any] = js.native
+  var width: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Forces wrapping of the text inside a confined box width. Requires a setting for width. Without text wrap, text will be truncated.
     * true | false | 1 | 0
     */
-  var `wrap-text`: js.UndefOr[Boolean] = js.native
+  var `wrap-text`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the X position of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var x: js.UndefOr[js.Any] = js.native
+  var x: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the Y position of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var y: js.UndefOr[js.Any] = js.native
+  var y: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the z position of the object. Objects with higher z indexes will appear "above" those with lower z index values. 5 | 10 | ...
     */
-  var `z-index`: js.UndefOr[Double] = js.native
+  var `z-index`: js.UndefOr[Double] = js.undefined
 }
 object Calloutextension {
   

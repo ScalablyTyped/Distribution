@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceGetMetadataResponse extends StObject {
   
   /** The computed metadata. */
-  var metadata: js.UndefOr[SourceMetadata] = js.native
+  var metadata: js.UndefOr[SourceMetadata] = js.undefined
 }
 object SourceGetMetadataResponse {
   

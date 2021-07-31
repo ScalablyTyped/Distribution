@@ -2,21 +2,19 @@ package typings.awsSdk.elasticinferenceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyValuePair extends StObject {
   
   /**
     *  The throughput value of the Elastic Inference Accelerator type. It can assume the following values: TFLOPS16bit: the throughput expressed in 16bit TeraFLOPS. TFLOPS32bit: the throughput expressed in 32bit TeraFLOPS. 
     */
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
   
   /**
     *  The throughput value of the Elastic Inference Accelerator type. 
     */
-  var value: js.UndefOr[Value] = js.native
+  var value: js.UndefOr[Value] = js.undefined
 }
 object KeyValuePair {
   

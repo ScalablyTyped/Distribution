@@ -22,78 +22,47 @@ import typings.popperJs.mod.Position
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
   
   @JSImport("bootstrap/js/dist/popover", JSImport.Default)
   @js.native
-  class default protected () extends Popover {
+  class default protected ()
+    extends StObject
+       with Popover {
     def this(element: Element) = this()
     def this(element: Element, options: PartialOptionsAnimation) = this()
-  }
-  object default {
-    
-    @JSImport("bootstrap/js/dist/popover", "default.Events")
-    @js.native
-    object Events extends StObject {
-      
-      @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.popoverMod.Popover.Events with String] = js.native
-      
-      /* "hidden.bs.popover" */ val hidden: typings.bootstrap.popoverMod.Popover.Events.hidden with String = js.native
-      
-      /* "hide.bs.popover" */ val hide: typings.bootstrap.popoverMod.Popover.Events.hide with String = js.native
-      
-      /* "inserted.bs.popover" */ val inserted: typings.bootstrap.popoverMod.Popover.Events.inserted with String = js.native
-      
-      /* "show.bs.popover" */ val show: typings.bootstrap.popoverMod.Popover.Events.show with String = js.native
-      
-      /* "shown.bs.popover" */ val shown: typings.bootstrap.popoverMod.Popover.Events.shown with String = js.native
-    }
-    
-    /**
-      * Static method which allows you to get the popover instance associated
-      * with a DOM element
-      */
-    /* static member */
-    @JSImport("bootstrap/js/dist/popover", "default.getInstance")
-    @js.native
-    def getInstance(element: Element): Popover = js.native
-    @JSImport("bootstrap/js/dist/popover", "default.getInstance")
-    @js.native
-    def getInstance(element: Element, options: PartialOptionsAnimation): Popover = js.native
-  }
-  
-  @js.native
-  trait Popover extends StObject {
     
     /**
       * Removes the ability for an element’s popover to be shown. The popover
       * will only be able to be shown if it is re-enabled.
       */
-    def disable(): Unit = js.native
+    /* CompleteClass */
+    override def disable(): Unit = js.native
     
     /**
       * Hides and destroys an element’s popover. Popovers that use delegation
       * (which are created using the selector option) cannot be individually
       * destroyed on descendant trigger elements.
       */
-    def dispose(): Unit = js.native
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Gives an element’s popover the ability to be shown. Popovers are
       * enabled by default.
       */
-    def enable(): Unit = js.native
+    /* CompleteClass */
+    override def enable(): Unit = js.native
     
     /**
       * Hides an element’s popover. Returns to the caller before the popover
       * has actually been hidden (i.e. before the hidden.bs.popover event
       * occurs). This is considered a “manual” triggering of the popover.
       */
-    def hide(): Unit = js.native
+    /* CompleteClass */
+    override def hide(): Unit = js.native
     
     /**
       * Reveals an element’s popover. Returns to the caller before the
@@ -102,7 +71,8 @@ object popoverMod {
       * popover. Popovers whose title and content are both zero-length are
       * never displayed.
       */
-    def show(): Unit = js.native
+    /* CompleteClass */
+    override def show(): Unit = js.native
     
     /**
       * Toggles an element’s popover. Returns to the caller before the
@@ -110,17 +80,110 @@ object popoverMod {
       * shown.bs.popover or hidden.bs.popover event occurs). This is
       * considered a “manual” triggering of the popover.
       */
-    def toggle(): Unit = js.native
+    /* CompleteClass */
+    override def toggle(): Unit = js.native
     
     /**
       * Toggles the ability for an element’s popover to be shown or hidden.
       */
-    def toggleEnable(): Unit = js.native
+    /* CompleteClass */
+    override def toggleEnable(): Unit = js.native
     
     /**
       * Updates the position of an element’s popover.
       */
-    def update(): Unit = js.native
+    /* CompleteClass */
+    override def update(): Unit = js.native
+  }
+  object default {
+    
+    @JSImport("bootstrap/js/dist/popover", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("bootstrap/js/dist/popover", "default.Events")
+    @js.native
+    object Events extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[typings.bootstrap.popoverMod.Popover.Events & String] = js.native
+      
+      /* "hidden.bs.popover" */ val hidden: typings.bootstrap.popoverMod.Popover.Events.hidden & String = js.native
+      
+      /* "hide.bs.popover" */ val hide: typings.bootstrap.popoverMod.Popover.Events.hide & String = js.native
+      
+      /* "inserted.bs.popover" */ val inserted: typings.bootstrap.popoverMod.Popover.Events.inserted & String = js.native
+      
+      /* "show.bs.popover" */ val show: typings.bootstrap.popoverMod.Popover.Events.show & String = js.native
+      
+      /* "shown.bs.popover" */ val shown: typings.bootstrap.popoverMod.Popover.Events.shown & String = js.native
+    }
+    
+    /**
+      * Static method which allows you to get the popover instance associated
+      * with a DOM element
+      */
+    /* static member */
+    @scala.inline
+    def getInstance(element: Element): Popover = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Popover]
+    @scala.inline
+    def getInstance(element: Element, options: PartialOptionsAnimation): Popover = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Popover]
+  }
+  
+  trait Popover extends StObject {
+    
+    /**
+      * Removes the ability for an element’s popover to be shown. The popover
+      * will only be able to be shown if it is re-enabled.
+      */
+    def disable(): Unit
+    
+    /**
+      * Hides and destroys an element’s popover. Popovers that use delegation
+      * (which are created using the selector option) cannot be individually
+      * destroyed on descendant trigger elements.
+      */
+    def dispose(): Unit
+    
+    /**
+      * Gives an element’s popover the ability to be shown. Popovers are
+      * enabled by default.
+      */
+    def enable(): Unit
+    
+    /**
+      * Hides an element’s popover. Returns to the caller before the popover
+      * has actually been hidden (i.e. before the hidden.bs.popover event
+      * occurs). This is considered a “manual” triggering of the popover.
+      */
+    def hide(): Unit
+    
+    /**
+      * Reveals an element’s popover. Returns to the caller before the
+      * popover has actually been shown (i.e. before the shown.bs.popover
+      * event occurs). This is considered a “manual” triggering of the
+      * popover. Popovers whose title and content are both zero-length are
+      * never displayed.
+      */
+    def show(): Unit
+    
+    /**
+      * Toggles an element’s popover. Returns to the caller before the
+      * popover has actually been shown or hidden (i.e. before the
+      * shown.bs.popover or hidden.bs.popover event occurs). This is
+      * considered a “manual” triggering of the popover.
+      */
+    def toggle(): Unit
+    
+    /**
+      * Toggles the ability for an element’s popover to be shown or hidden.
+      */
+    def toggleEnable(): Unit
+    
+    /**
+      * Updates the position of an element’s popover.
+      */
+    def update(): Unit
   }
   object Popover {
     
@@ -150,37 +213,46 @@ object popoverMod {
         * the user (will wait for CSS transitions to complete).
         */
       @js.native
-      sealed trait hidden extends Events
+      sealed trait hidden
+        extends StObject
+           with Events
       
       /**
         * This event is fired immediately when the hide instance method has
         * been called.
         */
       @js.native
-      sealed trait hide extends Events
+      sealed trait hide
+        extends StObject
+           with Events
       
       /**
         * This event is fired after the show.bs.popover event when the popover
         * template has been added to the DOM.
         */
       @js.native
-      sealed trait inserted extends Events
+      sealed trait inserted
+        extends StObject
+           with Events
       
       /**
         * This event fires immediately when the show instance method is called.
         */
       @js.native
-      sealed trait show extends Events
+      sealed trait show
+        extends StObject
+           with Events
       
       /**
         * This event is fired when the popover has been made visible to the
         * user (will wait for CSS transitions to complete).
         */
       @js.native
-      sealed trait shown extends Events
+      sealed trait shown
+        extends StObject
+           with Events
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -188,7 +260,7 @@ object popoverMod {
         *
         * @default true
         */
-      var animation: Boolean = js.native
+      var animation: Boolean
       
       /**
         * Overflow constraint boundary of the popover. Accepts the values of
@@ -198,7 +270,7 @@ object popoverMod {
         * @see {@link https://popper.js.org/docs/v1/#modifiers..preventOverflow.boundariesElement}
         * @default 'scrollParent'
         */
-      var boundary: viewport | window | scrollParent | Element = js.native
+      var boundary: viewport | window | scrollParent | Element
       
       /**
         * Appends the popover to a specific element. Example: container:
@@ -209,7 +281,7 @@ object popoverMod {
         *
         * @default false
         */
-      var container: String | Element | `false` = js.native
+      var container: String | Element | `false`
       
       /**
         * Default content value if data-content attribute isn't present.
@@ -219,7 +291,7 @@ object popoverMod {
         *
         * @default ''
         */
-      var content: String | Element | js.Function0[Unit] = js.native
+      var content: String | Element | js.Function0[Unit]
       
       /**
         * Delay showing and hiding the popover (ms) - does not apply to manual
@@ -229,7 +301,7 @@ object popoverMod {
         *
         * @default 0
         */
-      var delay: Double | Hide = js.native
+      var delay: Double | Hide
       
       /**
         * Allow to specify which position Popper will use on fallback.
@@ -237,7 +309,7 @@ object popoverMod {
         * @see {@link https://popper.js.org/docs/v1/#modifiers..flip.behavior}
         * @default 'flip'
         */
-      var fallbackPlacement: Behavior | js.Array[Position] = js.native
+      var fallbackPlacement: Behavior | js.Array[Position]
       
       /**
         * Insert HTML into the popover. If false, innerText property will be
@@ -246,7 +318,7 @@ object popoverMod {
         *
         * @default false
         */
-      var html: Boolean = js.native
+      var html: Boolean
       
       /**
         * Offset of the popover relative to its target.
@@ -254,7 +326,7 @@ object popoverMod {
         * @see {@link https://popper.js.org/docs/v1/#modifiers..offset.offset}
         * @default 0
         */
-      var offset: Double | String = js.native
+      var offset: Double | String
       
       /**
         * How to position the popover - auto | top | bottom | left | right.
@@ -267,7 +339,7 @@ object popoverMod {
         *
         * @default 'right'
         */
-      var placement: auto | top | bottom | left | right | js.Function0[Unit] = js.native
+      var placement: auto | top | bottom | left | right | js.Function0[Unit]
       
       /**
         * To change Bootstrap's default Popper.js config
@@ -275,7 +347,7 @@ object popoverMod {
         * @see {@link https://popper.js.org/docs/v1/#Popper.Defaults}
         * @default null
         */
-      var popperConfig: PopperOptions | Null = js.native
+      var popperConfig: PopperOptions | Null
       
       /**
         * Enable or disable the sanitization. If activated 'template',
@@ -283,7 +355,7 @@ object popoverMod {
         *
         * @default true
         */
-      var sanitize: Boolean = js.native
+      var sanitize: Boolean
       
       /**
         * Here you can supply your own sanitize function. This can be useful if
@@ -291,7 +363,7 @@ object popoverMod {
         *
         * @default null
         */
-      def sanitizeFn(): Unit | Null = js.native
+      def sanitizeFn(): Unit | Null
       
       /**
         * If a selector is provided, popover objects will be delegated to the
@@ -300,7 +372,7 @@ object popoverMod {
         *
         * @default false
         */
-      var selector: String | `false` = js.native
+      var selector: String | `false`
       
       /**
         * Base HTML to use when creating the popover.
@@ -315,7 +387,7 @@ object popoverMod {
         *
         * @default '<div class="popover" role="tooltip"><div class="popover-arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
         */
-      var template: String = js.native
+      var template: String
       
       /**
         * Default title value if title attribute isn't present.
@@ -325,7 +397,7 @@ object popoverMod {
         *
         * @default ''
         */
-      var title: String | Element | js.Function0[Unit] = js.native
+      var title: String | Element | js.Function0[Unit]
       
       /**
         * How popover is triggered - click | hover | focus | manual. You may
@@ -334,14 +406,14 @@ object popoverMod {
         *
         * @default 'click'
         */
-      var trigger: click | hover | focus | manual = js.native
+      var trigger: click | hover | focus | manual
       
       /**
         * Object which contains allowed attributes and tags
         *
         * @see {@link https://v5.getbootstrap.com/docs/5.0/getting-started/javascript/#sanitizer}
         */
-      var whiteList: RecordkeyofHTMLElementTag = js.native
+      var whiteList: RecordkeyofHTMLElementTag
     }
     object Options {
       
@@ -364,7 +436,7 @@ object popoverMod {
         trigger: click | hover | focus | manual,
         whiteList: RecordkeyofHTMLElementTag
       ): Options = {
-        val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], fallbackPlacement = fallbackPlacement.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], sanitize = sanitize.asInstanceOf[js.Any], sanitizeFn = js.Any.fromFunction0(sanitizeFn), selector = selector.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], fallbackPlacement = fallbackPlacement.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], sanitize = sanitize.asInstanceOf[js.Any], sanitizeFn = js.Any.fromFunction0(sanitizeFn), selector = selector.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any], popperConfig = null)
         __obj.asInstanceOf[Options]
       }
       

@@ -2,16 +2,17 @@ package typings.mobx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isobservableMod {
   
-  @JSImport("mobx/lib/api/isobservable", "isObservable")
+  @JSImport("mobx/lib/api/isobservable", JSImport.Namespace)
   @js.native
-  def isObservable(value: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/api/isobservable", "isObservableProp")
-  @js.native
-  def isObservableProp(value: js.Any, propName: String): Boolean = js.native
+  @scala.inline
+  def isObservable(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isObservableProp(value: js.Any, propName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObservableProp")(value.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

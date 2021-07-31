@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderReportTransaction extends StObject {
   
   /** The disbursement amount. */
-  var disbursementAmount: js.UndefOr[Price] = js.native
+  var disbursementAmount: js.UndefOr[Price] = js.undefined
   
   /** The date the disbursement was created, in ISO 8601 format. */
-  var disbursementCreationDate: js.UndefOr[String] = js.native
+  var disbursementCreationDate: js.UndefOr[String] = js.undefined
   
   /** The date the disbursement was initiated, in ISO 8601 format. */
-  var disbursementDate: js.UndefOr[String] = js.native
+  var disbursementDate: js.UndefOr[String] = js.undefined
   
   /** The ID of the disbursement. */
-  var disbursementId: js.UndefOr[String] = js.native
+  var disbursementId: js.UndefOr[String] = js.undefined
   
   /** The ID of the managing account. */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /** Merchant-provided ID of the order. */
-  var merchantOrderId: js.UndefOr[String] = js.native
+  var merchantOrderId: js.UndefOr[String] = js.undefined
   
   /** The ID of the order. */
-  var orderId: js.UndefOr[String] = js.native
+  var orderId: js.UndefOr[String] = js.undefined
   
   /** Total amount for the items. */
-  var productAmount: js.UndefOr[ProductAmount] = js.native
+  var productAmount: js.UndefOr[ProductAmount] = js.undefined
   
   /** The date of the transaction, in ISO 8601 format. */
-  var transactionDate: js.UndefOr[String] = js.native
+  var transactionDate: js.UndefOr[String] = js.undefined
 }
 object OrderReportTransaction {
   

@@ -2,59 +2,57 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RendererFormattedStrings extends StObject {
   
   /** The tooltip text on an expandable chevron icon. */
-  var auditGroupExpandTooltip: js.UndefOr[String] = js.native
+  var auditGroupExpandTooltip: js.UndefOr[String] = js.undefined
   
   /** The label for the initial request in a critical request chain. */
-  var crcInitialNavigation: js.UndefOr[String] = js.native
+  var crcInitialNavigation: js.UndefOr[String] = js.undefined
   
   /** The label for values shown in the summary of critical request chains. */
-  var crcLongestDurationLabel: js.UndefOr[String] = js.native
+  var crcLongestDurationLabel: js.UndefOr[String] = js.undefined
   
   /** The label shown next to an audit or metric that has had an error. */
-  var errorLabel: js.UndefOr[String] = js.native
+  var errorLabel: js.UndefOr[String] = js.undefined
   
   /** The error string shown next to an erroring audit. */
-  var errorMissingAuditInfo: js.UndefOr[String] = js.native
+  var errorMissingAuditInfo: js.UndefOr[String] = js.undefined
   
   /** The title of the lab data performance category. */
-  var labDataTitle: js.UndefOr[String] = js.native
+  var labDataTitle: js.UndefOr[String] = js.undefined
   
   /** The disclaimer shown under performance explaning that the network can vary. */
-  var lsPerformanceCategoryDescription: js.UndefOr[String] = js.native
+  var lsPerformanceCategoryDescription: js.UndefOr[String] = js.undefined
   
   /** The heading shown above a list of audits that were not computerd in the run. */
-  var manualAuditsGroupTitle: js.UndefOr[String] = js.native
+  var manualAuditsGroupTitle: js.UndefOr[String] = js.undefined
   
   /** The heading shown above a list of audits that do not apply to a page. */
-  var notApplicableAuditsGroupTitle: js.UndefOr[String] = js.native
+  var notApplicableAuditsGroupTitle: js.UndefOr[String] = js.undefined
   
   /** The heading for the estimated page load savings opportunity of an audit. */
-  var opportunityResourceColumnLabel: js.UndefOr[String] = js.native
+  var opportunityResourceColumnLabel: js.UndefOr[String] = js.undefined
   
   /** The heading for the estimated page load savings of opportunity audits. */
-  var opportunitySavingsColumnLabel: js.UndefOr[String] = js.native
+  var opportunitySavingsColumnLabel: js.UndefOr[String] = js.undefined
   
   /** The heading that is shown above a list of audits that are passing. */
-  var passedAuditsGroupTitle: js.UndefOr[String] = js.native
+  var passedAuditsGroupTitle: js.UndefOr[String] = js.undefined
   
   /** The label that explains the score gauges scale (0-49, 50-89, 90-100). */
-  var scorescaleLabel: js.UndefOr[String] = js.native
+  var scorescaleLabel: js.UndefOr[String] = js.undefined
   
   /** The label shown preceding important warnings that may have invalidated an entire report. */
-  var toplevelWarningsMessage: js.UndefOr[String] = js.native
+  var toplevelWarningsMessage: js.UndefOr[String] = js.undefined
   
   /** The disclaimer shown below a performance metric value. */
-  var varianceDisclaimer: js.UndefOr[String] = js.native
+  var varianceDisclaimer: js.UndefOr[String] = js.undefined
   
   /** The label shown above a bulleted list of warnings. */
-  var warningHeader: js.UndefOr[String] = js.native
+  var warningHeader: js.UndefOr[String] = js.undefined
 }
 object RendererFormattedStrings {
   

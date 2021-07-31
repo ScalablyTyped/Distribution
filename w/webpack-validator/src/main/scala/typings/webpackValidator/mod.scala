@@ -2,7 +2,6 @@ package typings.webpackValidator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,29 +9,30 @@ object mod {
   /**
     * Validate your webpack configs with joi
     */
-  @JSImport("webpack-validator", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-  ): js.Any = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   /**
     * Validate your webpack configs with joi
     */
-  @JSImport("webpack-validator", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any,
     options: ValidationOptions
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
+  @JSImport("webpack-validator", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ValidationOptions extends StObject {
     
-    var `loader-enforce-include-or-exclude`: js.UndefOr[Boolean] = js.native
+    var `loader-enforce-include-or-exclude`: js.UndefOr[Boolean] = js.undefined
     
-    var `loader-prefer-include`: js.UndefOr[Boolean] = js.native
+    var `loader-prefer-include`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-root-files-node-modules-nameclash`: js.UndefOr[Boolean] = js.native
+    var `no-root-files-node-modules-nameclash`: js.UndefOr[Boolean] = js.undefined
   }
   object ValidationOptions {
     

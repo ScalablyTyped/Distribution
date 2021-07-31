@@ -3,32 +3,30 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaySettings extends StObject {
   
-  var ActionVerb: String = js.native
+  var ActionVerb: String
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var HideWhileNotPlaying: MsoTriState = js.native
+  var HideWhileNotPlaying: MsoTriState
   
-  var LoopUntilStopped: MsoTriState = js.native
+  var LoopUntilStopped: MsoTriState
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PauseAnimation: MsoTriState = js.native
+  var PauseAnimation: MsoTriState
   
-  var PlayOnEntry: MsoTriState = js.native
+  var PlayOnEntry: MsoTriState
   
   @JSName("PowerPoint.PlaySettings_typekey")
-  var PowerPointDotPlaySettings_typekey: PlaySettings = js.native
+  var PowerPointDotPlaySettings_typekey: PlaySettings
   
-  var RewindMovie: MsoTriState = js.native
+  var RewindMovie: MsoTriState
   
-  var StopAfterSlides: Double = js.native
+  var StopAfterSlides: Double
 }
 object PlaySettings {
   

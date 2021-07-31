@@ -3,32 +3,30 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Common audit log format for Google Cloud Platform API operations.
   */
-@js.native
 trait SchemaAuditLog extends StObject {
   
   /**
     * Authentication information.
     */
-  var authenticationInfo: js.UndefOr[SchemaAuthenticationInfo] = js.native
+  var authenticationInfo: js.UndefOr[SchemaAuthenticationInfo] = js.undefined
   
   /**
     * Authorization information. If there are multiple resources or permissions
     * involved, then there is one AuthorizationInfo element for each {resource,
     * permission} tuple.
     */
-  var authorizationInfo: js.UndefOr[js.Array[SchemaAuthorizationInfo]] = js.native
+  var authorizationInfo: js.UndefOr[js.Array[SchemaAuthorizationInfo]] = js.undefined
   
   /**
     * Other service-specific data about the request, response, and other
     * information associated with the current audited event.
     */
-  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The name of the service method or operation. For API calls, this should
@@ -36,13 +34,13 @@ trait SchemaAuditLog extends StObject {
     * &quot;google.datastore.v1.Datastore.RunQuery&quot;
     * &quot;google.logging.v1.LoggingService.DeleteLog&quot;
     */
-  var methodName: js.UndefOr[String] = js.native
+  var methodName: js.UndefOr[String] = js.undefined
   
   /**
     * The number of items returned from a List or Query API method, if
     * applicable.
     */
-  var numResponseItems: js.UndefOr[String] = js.native
+  var numResponseItems: js.UndefOr[String] = js.undefined
   
   /**
     * The operation request. This may not include all request parameters, such
@@ -51,17 +49,17 @@ trait SchemaAuditLog extends StObject {
     * file contents. When the JSON object represented here has a proto
     * equivalent, the proto name will be indicated in the `@type` property.
     */
-  var request: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var request: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Metadata about the operation.
     */
-  var requestMetadata: js.UndefOr[SchemaRequestMetadata] = js.native
+  var requestMetadata: js.UndefOr[SchemaRequestMetadata] = js.undefined
   
   /**
     * The resource location information.
     */
-  var resourceLocation: js.UndefOr[SchemaResourceLocation] = js.native
+  var resourceLocation: js.UndefOr[SchemaResourceLocation] = js.undefined
   
   /**
     * The resource or collection that is the target of the operation. The name
@@ -69,7 +67,7 @@ trait SchemaAuditLog extends StObject {
     * &quot;shelves/SHELF_ID/books&quot;
     * &quot;shelves/SHELF_ID/books/BOOK_ID&quot;
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The resource&#39;s original state before mutation. Present only for
@@ -79,7 +77,7 @@ trait SchemaAuditLog extends StObject {
     * `service_data` fields. When the JSON object represented here has a proto
     * equivalent, the proto name will be indicated in the `@type` property.
     */
-  var resourceOriginalState: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var resourceOriginalState: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The operation response. This may not include all response elements, such
@@ -88,24 +86,24 @@ trait SchemaAuditLog extends StObject {
     * file contents. When the JSON object represented here has a proto
     * equivalent, the proto name will be indicated in the `@type` property.
     */
-  var response: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var response: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Deprecated, use `metadata` field instead. Other service-specific data
     * about the request, response, and other activities.
     */
-  var serviceData: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var serviceData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The name of the API service performing the operation. For example,
     * `&quot;datastore.googleapis.com&quot;`.
     */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the overall operation.
     */
-  var status: js.UndefOr[SchemaStatus] = js.native
+  var status: js.UndefOr[SchemaStatus] = js.undefined
 }
 object SchemaAuditLog {
   

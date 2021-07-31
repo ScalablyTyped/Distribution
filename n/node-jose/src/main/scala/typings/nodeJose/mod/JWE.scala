@@ -6,58 +6,53 @@ import typings.nodeJose.mod.JWK.Key
 import typings.nodeJose.mod.JWK.KeyStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JWE {
   
-  @JSImport("node-jose", "JWE.createDecrypt")
+  @JSImport("node-jose", "JWE")
   @js.native
-  def createDecrypt(key: Key): Decryptor = js.native
-  @JSImport("node-jose", "JWE.createDecrypt")
-  @js.native
-  def createDecrypt(key: KeyStore): Decryptor = js.native
-  @JSImport("node-jose", "JWE.createDecrypt")
-  @js.native
-  def createDecrypt(key: KeyStore, opts: js.Any): Decryptor = js.native
-  @JSImport("node-jose", "JWE.createDecrypt")
-  @js.native
-  def createDecrypt(key: Key, opts: js.Any): Decryptor = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-jose", "JWE.createEncrypt")
-  @js.native
-  def createEncrypt(keys: js.Array[Key]): Encryptor = js.native
-  @JSImport("node-jose", "JWE.createEncrypt")
-  @js.native
-  def createEncrypt(keys: Key): Encryptor = js.native
-  @JSImport("node-jose", "JWE.createEncrypt")
-  @js.native
-  def createEncrypt(options: ContentAlg, key: Key): Encryptor = js.native
+  @scala.inline
+  def createDecrypt(key: Key): Decryptor = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecrypt")(key.asInstanceOf[js.Any]).asInstanceOf[Decryptor]
+  @scala.inline
+  def createDecrypt(key: KeyStore): Decryptor = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecrypt")(key.asInstanceOf[js.Any]).asInstanceOf[Decryptor]
+  @scala.inline
+  def createDecrypt(key: KeyStore, opts: js.Any): Decryptor = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecrypt")(key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Decryptor]
+  @scala.inline
+  def createDecrypt(key: Key, opts: js.Any): Decryptor = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecrypt")(key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Decryptor]
   
-  @js.native
+  @scala.inline
+  def createEncrypt(keys: js.Array[Key]): Encryptor = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncrypt")(keys.asInstanceOf[js.Any]).asInstanceOf[Encryptor]
+  @scala.inline
+  def createEncrypt(keys: Key): Encryptor = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncrypt")(keys.asInstanceOf[js.Any]).asInstanceOf[Encryptor]
+  @scala.inline
+  def createEncrypt(options: ContentAlg, key: Key): Encryptor = (^.asInstanceOf[js.Dynamic].applyDynamic("createEncrypt")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Encryptor]
+  
   trait DecryptResult extends StObject {
     
-    var header: js.Object = js.native
+    var header: js.Object
     
     /**
       * Key used to decrypt
       */
-    var key: Key = js.native
+    var key: Key
     
     /**
       * Buffer of the decrypted content
       */
-    var payload: Buffer = js.native
+    var payload: Buffer
     
     /**
       * the decrypted content (alternate)
       */
-    var plaintext: Buffer = js.native
+    var plaintext: Buffer
     
     /**
       * an array of the member names from the "protected" member
       */
-    var `protected`: js.Array[String] = js.native
+    var `protected`: js.Array[String]
   }
   object DecryptResult {
     
@@ -91,10 +86,9 @@ object JWE {
     }
   }
   
-  @js.native
   trait Decryptor extends StObject {
     
-    def decrypt(input: String): js.Promise[DecryptResult] = js.native
+    def decrypt(input: String): js.Promise[DecryptResult]
   }
   object Decryptor {
     
@@ -112,12 +106,11 @@ object JWE {
     }
   }
   
-  @js.native
   trait Encryptor extends StObject {
     
-    def `final`(): js.Promise[String] = js.native
+    def `final`(): js.Promise[String]
     
-    def update(input: js.Any): this.type = js.native
+    def update(input: js.Any): this.type
   }
   object Encryptor {
     

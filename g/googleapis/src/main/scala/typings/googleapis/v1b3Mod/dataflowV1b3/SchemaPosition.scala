@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,40 +9,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * either the end position, a key (used with ordered collections), a byte
   * offset, or a record index.
   */
-@js.native
 trait SchemaPosition extends StObject {
   
   /**
     * Position is a byte offset.
     */
-  var byteOffset: js.UndefOr[String] = js.native
+  var byteOffset: js.UndefOr[String] = js.undefined
   
   /**
     * CloudPosition is a concat position.
     */
-  var concatPosition: js.UndefOr[SchemaConcatPosition] = js.native
+  var concatPosition: js.UndefOr[SchemaConcatPosition] = js.undefined
   
   /**
     * Position is past all other positions. Also useful for the end position of
     * an unbounded range.
     */
-  var end: js.UndefOr[Boolean] = js.native
+  var end: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Position is a string key, ordered lexicographically.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Position is a record index.
     */
-  var recordIndex: js.UndefOr[String] = js.native
+  var recordIndex: js.UndefOr[String] = js.undefined
   
   /**
     * CloudPosition is a base64 encoded BatchShufflePosition (with FIXED
     * sharding).
     */
-  var shufflePosition: js.UndefOr[String] = js.native
+  var shufflePosition: js.UndefOr[String] = js.undefined
 }
 object SchemaPosition {
   

@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -64,8 +63,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.Entity")
 @js.native
 class Entity ()
-  extends typings.playcanvas.pc.Entity {
+  extends StObject
+     with typings.playcanvas.pc.Entity {
   def this(name: String) = this()
-  def this(name: js.UndefOr[scala.Nothing], app: typings.playcanvas.pc.Application) = this()
   def this(name: String, app: typings.playcanvas.pc.Application) = this()
+  def this(name: Unit, app: typings.playcanvas.pc.Application) = this()
 }

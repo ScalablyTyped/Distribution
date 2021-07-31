@@ -2,31 +2,29 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The main response class which holds the reports from the Reporting API
   * `batchGet` call.
   */
-@js.native
 trait SchemaGetReportsResponse extends StObject {
   
   /**
     * The amount of resource quota tokens deducted to execute the query.
     * Includes all responses.
     */
-  var queryCost: js.UndefOr[Double] = js.native
+  var queryCost: js.UndefOr[Double] = js.undefined
   
   /**
     * Responses corresponding to each of the request.
     */
-  var reports: js.UndefOr[js.Array[SchemaReport]] = js.native
+  var reports: js.UndefOr[js.Array[SchemaReport]] = js.undefined
   
   /**
     * The amount of resource quota remaining for the property.
     */
-  var resourceQuotasRemaining: js.UndefOr[SchemaResourceQuotasRemaining] = js.native
+  var resourceQuotasRemaining: js.UndefOr[SchemaResourceQuotasRemaining] = js.undefined
 }
 object SchemaGetReportsResponse {
   

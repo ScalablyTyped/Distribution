@@ -2,17 +2,15 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeolocationResponse extends StObject {
   
   /** The accuracy of the estimated location, in meters. This represents the radius of a circle around the given location. */
-  var accuracy: Double = js.native
+  var accuracy: Double
   
   /** The user's estimated latitude and longitude, in degrees. Contains one `lat` and one `lng` subfield. */
-  var location: LatLngLiteral = js.native
+  var location: LatLngLiteral
 }
 object GeolocationResponse {
   

@@ -10,15 +10,14 @@ import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import typings.winrt.Windows.Storage.Streams.InputStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageItemThumbnail
-  extends IRandomAccessStreamWithContentType
+  extends StObject
+     with IRandomAccessStreamWithContentType
      with IThumbnailProperties {
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object StorageItemThumbnail {
   

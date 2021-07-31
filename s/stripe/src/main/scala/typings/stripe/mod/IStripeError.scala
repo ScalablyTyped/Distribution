@@ -2,7 +2,6 @@ package typings.stripe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 404 - Not Found                    The requested item doesn't exist.
   * 500, 502, 503, 504 - Server Errors Something went wrong on Stripe's end.
   */
-@js.native
 trait IStripeError extends StObject {
   
   /**
@@ -42,19 +40,19 @@ trait IStripeError extends StObject {
     *                             quickly. Please let us know if you're consistently running
     *                             into this error.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * A human-readable message giving more details about the error. For card errors, these messages can
     * be shown to your users.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * The parameter the error relates to if the error is parameter-specific. You can use this to display a
     * message near the correct form field, for example.
     */
-  var param: js.UndefOr[String] = js.native
+  var param: js.UndefOr[String] = js.undefined
   
   /**
     * The type of error returned. Can be invalid_request_error, api_error, or card_error.
@@ -68,7 +66,7 @@ trait IStripeError extends StObject {
     * card_error            Card errors are the most common type of error you should expect to handle. They result
     *                       when the user enters a card that can't be charged for some reason.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object IStripeError {
   

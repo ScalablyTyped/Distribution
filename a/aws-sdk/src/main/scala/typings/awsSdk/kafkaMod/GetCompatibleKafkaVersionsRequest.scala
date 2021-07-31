@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCompatibleKafkaVersionsRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GetCompatibleKafkaVersionsRequest extends StObject {
     The Amazon Resource Name (ARN) of the cluster check.
     
     */
-  var ClusterArn: js.UndefOr[string] = js.native
+  var ClusterArn: js.UndefOr[string] = js.undefined
 }
 object GetCompatibleKafkaVersionsRequest {
   

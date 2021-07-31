@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPresetsResponse extends StObject {
   
   /**
     * Use this string to request the next batch of presets.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * List of presets
     */
-  var Presets: js.UndefOr[listOfPreset] = js.native
+  var Presets: js.UndefOr[listOfPreset] = js.undefined
 }
 object ListPresetsResponse {
   

@@ -2,13 +2,11 @@ package typings.googleapis.v1betaMod.accesscontextmanagerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A restriction on the OS type and version of devices making requests.
   */
-@js.native
 trait SchemaOsConstraint extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaOsConstraint extends StObject {
     * satisfies the constraint. Format: `&quot;major.minor.patch&quot;`.
     * Examples: `&quot;10.5.301&quot;`, `&quot;9.2.1&quot;`.
     */
-  var minimumVersion: js.UndefOr[String] = js.native
+  var minimumVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The allowed OS type.
     */
-  var osType: js.UndefOr[String] = js.native
+  var osType: js.UndefOr[String] = js.undefined
   
   /**
     * Only allows requests from devices with a verified Chrome OS.
@@ -29,7 +27,7 @@ trait SchemaOsConstraint extends StObject {
     * enterprise-managed, conformant to Dasher domain policies, and the caller
     * has permission to call the API targeted by the request.
     */
-  var requireVerifiedChromeOs: js.UndefOr[Boolean] = js.native
+  var requireVerifiedChromeOs: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaOsConstraint {
   

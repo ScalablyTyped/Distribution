@@ -1,11 +1,9 @@
 package typings.ipfsCoreUtils
 
-import typings.cids.mod.^
 import typings.ipfsCoreUtils.anon.Cid
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toCidAndPathMod {
@@ -14,13 +12,14 @@ object toCidAndPathMod {
     * @param {string|Uint8Array|CID} string
     * @returns {{cid:CID, path?:string}}
     */
+  @scala.inline
+  def apply(string: String): Cid = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Cid]
+  @scala.inline
+  def apply(string: typings.cids.mod.^): Cid = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Cid]
+  @scala.inline
+  def apply(string: Uint8Array): Cid = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Cid]
+  
   @JSImport("ipfs-core-utils/dist/src/to-cid-and-path", JSImport.Namespace)
   @js.native
-  def apply(string: String): Cid = js.native
-  @JSImport("ipfs-core-utils/dist/src/to-cid-and-path", JSImport.Namespace)
-  @js.native
-  def apply(string: ^): Cid = js.native
-  @JSImport("ipfs-core-utils/dist/src/to-cid-and-path", JSImport.Namespace)
-  @js.native
-  def apply(string: Uint8Array): Cid = js.native
+  val ^ : js.Any = js.native
 }

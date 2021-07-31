@@ -3,35 +3,33 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.kendoUi.kendo.data.HierarchicalDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeMapOptions extends StObject {
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var colorField: js.UndefOr[String] = js.native
+  var colorField: js.UndefOr[String] = js.undefined
   
-  var colors: js.UndefOr[js.Any] = js.native
+  var colors: js.UndefOr[js.Any] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ TreeMapDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ TreeMapDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
   
-  var itemCreated: js.UndefOr[js.Function1[/* e */ TreeMapItemCreatedEvent, Unit]] = js.native
+  var itemCreated: js.UndefOr[js.Function1[/* e */ TreeMapItemCreatedEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var textField: js.UndefOr[String] = js.native
+  var textField: js.UndefOr[String] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var valueField: js.UndefOr[String] = js.native
+  var valueField: js.UndefOr[String] = js.undefined
 }
 object TreeMapOptions {
   

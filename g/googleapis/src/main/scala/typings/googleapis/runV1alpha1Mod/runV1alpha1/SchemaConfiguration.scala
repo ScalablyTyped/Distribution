@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,35 +12,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * status, as is the &quot;latest ready&quot; revision&#39;s name. See also:
   * https://github.com/knative/serving/blob/master/docs/spec/overview.md#configuration
   */
-@js.native
 trait SchemaConfiguration extends StObject {
   
   /**
     * The API version for this call such as &quot;v1alpha1&quot;.
     */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of resource, in this case always &quot;Configuration&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata associated with this Configuration, including name, namespace,
     * labels, and annotations.
     */
-  var metadata: js.UndefOr[SchemaObjectMeta] = js.native
+  var metadata: js.UndefOr[SchemaObjectMeta] = js.undefined
   
   /**
     * Spec holds the desired state of the Configuration (from the client).
     */
-  var spec: js.UndefOr[SchemaConfigurationSpec] = js.native
+  var spec: js.UndefOr[SchemaConfigurationSpec] = js.undefined
   
   /**
     * Status communicates the observed state of the Configuration (from the
     * controller).
     */
-  var status: js.UndefOr[SchemaConfigurationStatus] = js.native
+  var status: js.UndefOr[SchemaConfigurationStatus] = js.undefined
 }
 object SchemaConfiguration {
   

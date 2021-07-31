@@ -3,21 +3,19 @@ package typings.restangular
 import typings.angular.mod.IRequestShortcutConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Element extends StObject {
     
-    var element: js.Any = js.native
+    var element: js.Any
     
-    var headers: js.Any = js.native
+    var headers: js.Any
     
-    var httpConfig: IRequestShortcutConfig = js.native
+    var httpConfig: IRequestShortcutConfig
     
-    var params: js.Any = js.native
+    var params: js.Any
   }
   object Element {
     
@@ -44,14 +42,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Method extends StObject {
     
-    var method: String = js.native
+    var method: String
     
-    var params: js.Any = js.native
+    var params: js.Any
     
-    var url: String = js.native
+    var url: String
   }
   object Method {
     

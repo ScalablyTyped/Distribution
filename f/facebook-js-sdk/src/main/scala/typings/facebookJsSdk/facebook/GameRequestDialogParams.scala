@@ -9,39 +9,39 @@ import typings.facebookJsSdk.facebookJsSdkStrings.send
 import typings.facebookJsSdk.facebookJsSdkStrings.turn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GameRequestDialogParams extends DialogParams {
+trait GameRequestDialogParams
+  extends StObject
+     with DialogParams {
   
-  var action_type: js.UndefOr[send | askfor | turn] = js.native
+  var action_type: js.UndefOr[send | askfor | turn] = js.undefined
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var exclude_ids: js.UndefOr[js.Array[String]] = js.native
+  var exclude_ids: js.UndefOr[js.Array[String]] = js.undefined
   
-  var filters: js.UndefOr[app_users | app_non_users | js.Array[Name]] = js.native
+  var filters: js.UndefOr[app_users | app_non_users | js.Array[Name]] = js.undefined
   
-  var max_recipients: js.UndefOr[Double] = js.native
+  var max_recipients: js.UndefOr[Double] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var method: apprequests = js.native
+  var method: apprequests
   
-  var object_id: js.UndefOr[String] = js.native
+  var object_id: js.UndefOr[String] = js.undefined
   
-  var suggestions: js.UndefOr[js.Array[String]] = js.native
+  var suggestions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var to: js.UndefOr[String | Double] = js.native
+  var to: js.UndefOr[String | Double] = js.undefined
 }
 object GameRequestDialogParams {
   
   @scala.inline
-  def apply(message: String, method: apprequests): GameRequestDialogParams = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+  def apply(message: String): GameRequestDialogParams = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = "apprequests")
     __obj.asInstanceOf[GameRequestDialogParams]
   }
   

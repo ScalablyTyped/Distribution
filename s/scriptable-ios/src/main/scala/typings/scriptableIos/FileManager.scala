@@ -4,7 +4,6 @@ import typings.scriptableIos.FileManager.AllFileBookmarks
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -421,12 +420,11 @@ trait FileManager extends StObject {
 }
 object FileManager {
   
-  @js.native
   trait AllFileBookmarks extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var source: String = js.native
+    var source: String
   }
   object AllFileBookmarks {
     

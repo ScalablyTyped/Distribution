@@ -5,36 +5,34 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/score/peer-score-params.PeerScoreParams> */
-@js.native
 trait PartialPeerScoreParams extends StObject {
   
-  var IPColocationFactorThreshold: js.UndefOr[Double] = js.native
+  var IPColocationFactorThreshold: js.UndefOr[Double] = js.undefined
   
-  var IPColocationFactorWeight: js.UndefOr[Double] = js.native
+  var IPColocationFactorWeight: js.UndefOr[Double] = js.undefined
   
-  var IPColocationFactorWhitelist: js.UndefOr[Set[String]] = js.native
+  var IPColocationFactorWhitelist: js.UndefOr[Set[String]] = js.undefined
   
-  var appSpecificScore: js.UndefOr[js.Function1[/* p */ String, Double]] = js.native
+  var appSpecificScore: js.UndefOr[js.Function1[/* p */ String, Double]] = js.undefined
   
-  var appSpecificWeight: js.UndefOr[Double] = js.native
+  var appSpecificWeight: js.UndefOr[Double] = js.undefined
   
-  var behaviourPenaltyDecay: js.UndefOr[Double] = js.native
+  var behaviourPenaltyDecay: js.UndefOr[Double] = js.undefined
   
-  var behaviourPenaltyWeight: js.UndefOr[Double] = js.native
+  var behaviourPenaltyWeight: js.UndefOr[Double] = js.undefined
   
-  var decayInterval: js.UndefOr[Double] = js.native
+  var decayInterval: js.UndefOr[Double] = js.undefined
   
-  var decayToZero: js.UndefOr[Double] = js.native
+  var decayToZero: js.UndefOr[Double] = js.undefined
   
-  var retainScore: js.UndefOr[Double] = js.native
+  var retainScore: js.UndefOr[Double] = js.undefined
   
-  var topicScoreCap: js.UndefOr[Double] = js.native
+  var topicScoreCap: js.UndefOr[Double] = js.undefined
   
-  var topics: js.UndefOr[Record[String, TopicScoreParams]] = js.native
+  var topics: js.UndefOr[Record[String, TopicScoreParams]] = js.undefined
 }
 object PartialPeerScoreParams {
   

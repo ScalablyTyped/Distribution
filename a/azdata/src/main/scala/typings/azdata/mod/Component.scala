@@ -5,11 +5,12 @@ import typings.vscode.Thenable
 import typings.vscode.mod.Disposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Component extends ComponentProperties {
+trait Component
+  extends StObject
+     with ComponentProperties {
   
   /**
     * Focuses the component.
@@ -21,14 +22,14 @@ trait Component extends ComponentProperties {
   /**
     * Event fired to notify that the component's validity has changed
     */
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: js.Any): Disposable = js.native
   def onValidityChanged(
-    listener: js.Function1[/* e */ Boolean, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ Boolean, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Updates the specified CSS Styles and notifies the UI

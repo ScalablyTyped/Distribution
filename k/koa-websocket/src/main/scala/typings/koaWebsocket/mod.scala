@@ -3,33 +3,35 @@ package typings.koaWebsocket
 import typings.koa.mod.Context
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
-import typings.koa.mod.^
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpsMod.ServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[StateT, CustomT](app: typings.koa.mod.^[StateT, CustomT]): App[StateT, CustomT] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[App[StateT, CustomT]]
+  @scala.inline
+  def apply[StateT, CustomT](app: typings.koa.mod.^[StateT, CustomT], wsOptions: Unit, httpsOptions: ServerOptions): App[StateT, CustomT] = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], wsOptions.asInstanceOf[js.Any], httpsOptions.asInstanceOf[js.Any])).asInstanceOf[App[StateT, CustomT]]
+  @scala.inline
+  def apply[StateT, CustomT](app: typings.koa.mod.^[StateT, CustomT], wsOptions: typings.ws.mod.ServerOptions): App[StateT, CustomT] = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], wsOptions.asInstanceOf[js.Any])).asInstanceOf[App[StateT, CustomT]]
+  @scala.inline
+  def apply[StateT, CustomT](
+    app: typings.koa.mod.^[StateT, CustomT],
+    wsOptions: typings.ws.mod.ServerOptions,
+    httpsOptions: ServerOptions
+  ): App[StateT, CustomT] = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], wsOptions.asInstanceOf[js.Any], httpsOptions.asInstanceOf[js.Any])).asInstanceOf[App[StateT, CustomT]]
+  
   @JSImport("koa-websocket", JSImport.Namespace)
   @js.native
-  def apply[StateT, CustomT](app: ^[StateT, CustomT]): App[StateT, CustomT] = js.native
-  @JSImport("koa-websocket", JSImport.Namespace)
-  @js.native
-  def apply[StateT, CustomT](app: ^[StateT, CustomT], wsOptions: js.UndefOr[scala.Nothing], httpsOptions: ServerOptions): App[StateT, CustomT] = js.native
-  @JSImport("koa-websocket", JSImport.Namespace)
-  @js.native
-  def apply[StateT, CustomT](app: ^[StateT, CustomT], wsOptions: typings.ws.mod.ServerOptions): App[StateT, CustomT] = js.native
-  @JSImport("koa-websocket", JSImport.Namespace)
-  @js.native
-  def apply[StateT, CustomT](app: ^[StateT, CustomT], wsOptions: typings.ws.mod.ServerOptions, httpsOptions: ServerOptions): App[StateT, CustomT] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("koa-websocket", "Server")
   @js.native
   class Server[StateT, CustomT] protected () extends StObject {
-    def this(app: ^[StateT, CustomT]) = this()
+    def this(app: typings.koa.mod.^[StateT, CustomT]) = this()
     
     var app: App[DefaultState, DefaultContext] = js.native
     
@@ -45,7 +47,8 @@ object mod {
   }
   
   @js.native
-  trait App[StateT, CustomT] extends ^[StateT, CustomT] {
+  trait App[StateT, CustomT]
+    extends typings.koa.mod.^[StateT, CustomT] {
     
     var ws: Server[StateT, CustomT] = js.native
   }
@@ -53,7 +56,9 @@ object mod {
   type Middleware[StateT, CustomT] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<MiddlewareContext<StateT> & CustomT> */ js.Any
   
   @js.native
-  trait MiddlewareContext[StateT] extends Context {
+  trait MiddlewareContext[StateT]
+    extends StObject
+       with Context {
     
     // Limitation: Declaration merging cannot overwrap existing properties.
     // That's why this property is here, not in the merged declaration above.
@@ -67,12 +72,11 @@ object mod {
   /* augmented module */
   object koaAugmentingMod {
     
-    @js.native
     trait Context extends StObject {
       
-      var path: String = js.native
+      var path: String
       
-      var websocket: typings.ws.mod.^ = js.native
+      var websocket: typings.ws.mod.^
     }
     object Context {
       

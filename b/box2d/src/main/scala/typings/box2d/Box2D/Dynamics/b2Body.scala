@@ -9,7 +9,6 @@ import typings.box2d.Box2D.Dynamics.Controllers.b2ControllerEdge
 import typings.box2d.Box2D.Dynamics.Joints.b2JointEdge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

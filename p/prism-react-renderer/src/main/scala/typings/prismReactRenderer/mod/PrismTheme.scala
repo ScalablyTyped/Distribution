@@ -3,15 +3,13 @@ package typings.prismReactRenderer.mod
 import typings.prismReactRenderer.anon.Languages
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrismTheme extends StObject {
   
-  var plain: PrismThemeEntry = js.native
+  var plain: PrismThemeEntry
   
-  var styles: js.Array[Languages] = js.native
+  var styles: js.Array[Languages]
 }
 object PrismTheme {
   

@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkStyle extends StObject {
   
-  val sheet: CSSStyleSheet | Null = js.native
+  val sheet: CSSStyleSheet | Null
 }
 object LinkStyle {
   
   @scala.inline
   def apply(): LinkStyle = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(sheet = null)
     __obj.asInstanceOf[LinkStyle]
   }
   

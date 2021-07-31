@@ -2,26 +2,24 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProductAmount extends StObject {
   
   /**
     * The pre-tax or post-tax price depending on the location of the order.
     */
-  var priceAmount: js.UndefOr[SchemaPrice] = js.native
+  var priceAmount: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Remitted tax value.
     */
-  var remittedTaxAmount: js.UndefOr[SchemaPrice] = js.native
+  var remittedTaxAmount: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Tax value.
     */
-  var taxAmount: js.UndefOr[SchemaPrice] = js.native
+  var taxAmount: js.UndefOr[SchemaPrice] = js.undefined
 }
 object SchemaProductAmount {
   

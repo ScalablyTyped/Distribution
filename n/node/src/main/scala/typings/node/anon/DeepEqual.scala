@@ -13,7 +13,6 @@ import typings.std.Error
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -104,5 +103,5 @@ trait DeepEqual extends StObject {
   var strict_Original: (Omit[
     /* import warning: importer.ImportType#apply Failed type conversion: typeof assert */ js.Any, 
     equal | notEqual | deepEqual | notDeepEqual | ok | strictEqual | deepStrictEqual | ifError | strict
-  ]) with Call = js.native
+  ]) & Call = js.native
 }

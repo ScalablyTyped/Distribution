@@ -3,25 +3,23 @@ package typings.elasticsearch.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndicesRolloverResponse extends StObject {
   
-  var acknowledged: Boolean = js.native
+  var acknowledged: Boolean
   
-  var conditions: StringDictionary[Boolean] = js.native
+  var conditions: StringDictionary[Boolean]
   
-  var dry_run: Boolean = js.native
+  var dry_run: Boolean
   
-  var new_index: String = js.native
+  var new_index: String
   
-  var old_index: String = js.native
+  var old_index: String
   
-  var rolled_over: Boolean = js.native
+  var rolled_over: Boolean
   
-  var shards_acknowledged: Boolean = js.native
+  var shards_acknowledged: Boolean
 }
 object IndicesRolloverResponse {
   

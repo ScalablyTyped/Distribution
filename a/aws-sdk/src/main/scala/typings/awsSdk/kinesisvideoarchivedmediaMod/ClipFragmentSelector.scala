@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoarchivedmediaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClipFragmentSelector extends StObject {
   
   /**
     * The origin of the timestamps to use (Server or Producer).
     */
-  var FragmentSelectorType: ClipFragmentSelectorType = js.native
+  var FragmentSelectorType: ClipFragmentSelectorType
   
   /**
     * The range of timestamps to return.
     */
-  var TimestampRange: ClipTimestampRange = js.native
+  var TimestampRange: ClipTimestampRange
 }
 object ClipFragmentSelector {
   

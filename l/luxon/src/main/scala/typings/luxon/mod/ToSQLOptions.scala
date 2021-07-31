@@ -2,15 +2,13 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToSQLOptions extends StObject {
   
-  var includeOffset: js.UndefOr[Boolean] = js.native
+  var includeOffset: js.UndefOr[Boolean] = js.undefined
   
-  var includeZone: js.UndefOr[Boolean] = js.native
+  var includeZone: js.UndefOr[Boolean] = js.undefined
 }
 object ToSQLOptions {
   

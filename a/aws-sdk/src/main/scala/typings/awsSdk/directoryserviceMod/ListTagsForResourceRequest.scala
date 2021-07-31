@@ -2,26 +2,24 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * Reserved for future use.
     */
-  var Limit: js.UndefOr[typings.awsSdk.directoryserviceMod.Limit] = js.native
+  var Limit: js.UndefOr[typings.awsSdk.directoryserviceMod.Limit] = js.undefined
   
   /**
     * Reserved for future use.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
   
   /**
     * Identifier (ID) of the directory for which you want to retrieve tags.
     */
-  var ResourceId: typings.awsSdk.directoryserviceMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.directoryserviceMod.ResourceId
 }
 object ListTagsForResourceRequest {
   

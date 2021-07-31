@@ -10,9 +10,9 @@ Authentication for Next.js
 | ------------------ | :-------------: |
 | Full name          | next-auth |
 | Keywords           | - |
-| # releases         | 127 |
-| # dependents       | 2 |
-| # downloads        | 83544 |
+| # releases         | 188 |
+| # dependents       | 6 |
+| # downloads        | 426434 |
 | # stars            | 2 |
 
 ## Links

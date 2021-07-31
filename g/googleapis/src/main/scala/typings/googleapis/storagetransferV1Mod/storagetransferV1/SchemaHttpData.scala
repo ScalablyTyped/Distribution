@@ -2,7 +2,6 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,7 +33,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [ObjectConditions](#ObjectConditions) have no effect when filtering objects
   * to transfer.
   */
-@js.native
 trait SchemaHttpData extends StObject {
   
   /**
@@ -42,7 +40,7 @@ trait SchemaHttpData extends StObject {
     * file must allow public access.  Currently, only URLs with HTTP and HTTPS
     * schemes are supported. Required.
     */
-  var listUrl: js.UndefOr[String] = js.native
+  var listUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaHttpData {
   

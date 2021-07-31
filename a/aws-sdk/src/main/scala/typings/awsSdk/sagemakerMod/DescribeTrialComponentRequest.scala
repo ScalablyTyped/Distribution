@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTrialComponentRequest extends StObject {
   
   /**
     * The name of the trial component to describe.
     */
-  var TrialComponentName: ExperimentEntityName = js.native
+  var TrialComponentName: ExperimentEntityName
 }
 object DescribeTrialComponentRequest {
   

@@ -31,7 +31,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`92`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`93`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataType {

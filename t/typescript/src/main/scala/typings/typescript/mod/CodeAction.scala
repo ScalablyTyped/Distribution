@@ -2,23 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeAction extends StObject {
   
   /** Text changes to apply to each file as part of the code action */
-  var changes: js.Array[FileTextChanges] = js.native
+  var changes: js.Array[FileTextChanges]
   
   /**
     * If the user accepts the code fix, the editor should send the action back in a `applyAction` request.
     * This allows the language service to have side effects (e.g. installing dependencies) upon a code fix.
     */
-  var commands: js.UndefOr[js.Array[CodeActionCommand]] = js.native
+  var commands: js.UndefOr[js.Array[CodeActionCommand]] = js.undefined
   
   /** Description of the code action to display in the UI of the editor */
-  var description: java.lang.String = js.native
+  var description: java.lang.String
 }
 object CodeAction {
   

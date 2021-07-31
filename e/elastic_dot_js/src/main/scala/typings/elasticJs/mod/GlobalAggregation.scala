@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "GlobalAggregation")
 @js.native
-class GlobalAggregation protected () extends Aggregation {
+class GlobalAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Defines a single bucket of all the documents within the search context.
     */

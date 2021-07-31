@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceTransportReadOptionsData extends StObject {
   
-  var filter: js.UndefOr[DataSourceFilters] = js.native
+  var filter: js.UndefOr[DataSourceFilters] = js.undefined
   
-  var group: js.UndefOr[js.Array[DataSourceGroupItem]] = js.native
+  var group: js.UndefOr[js.Array[DataSourceGroupItem]] = js.undefined
   
-  var skip: js.UndefOr[Double] = js.native
+  var skip: js.UndefOr[Double] = js.undefined
   
-  var sort: js.UndefOr[js.Array[DataSourceSortItem]] = js.native
+  var sort: js.UndefOr[js.Array[DataSourceSortItem]] = js.undefined
   
-  var take: js.UndefOr[Double] = js.native
+  var take: js.UndefOr[Double] = js.undefined
 }
 object DataSourceTransportReadOptionsData {
   

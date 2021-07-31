@@ -5,140 +5,152 @@ import typings.extjs.Ext.form.field.IBase
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IText extends IBase {
+trait IText
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Boolean) */
-  var allowBlank: js.UndefOr[Boolean] = js.native
+  var allowBlank: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var allowOnlyWhitespace: js.UndefOr[Boolean] = js.native
+  var allowOnlyWhitespace: js.UndefOr[Boolean] = js.undefined
+  
+  /** [Method] Applies the state to the object
+    * @param state Object
+    */
+  @JSName("applyState")
+  var applyState_IText: js.UndefOr[js.Function1[/* state */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Automatically grows the field to accomodate the width of the text up to the maximum field width allowed  */
-  var autoSize: js.UndefOr[js.Function0[Unit]] = js.native
+  var autoSize: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] private */
   @JSName("beforeFocus")
-  var beforeFocus_IText: js.UndefOr[js.Function0[Unit]] = js.native
+  var beforeFocus_IText: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var blankText: js.UndefOr[String] = js.native
+  var blankText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var disableKeyFilter: js.UndefOr[Boolean] = js.native
+  var disableKeyFilter: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var emptyCls: js.UndefOr[String] = js.native
+  var emptyCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var emptyText: js.UndefOr[String] = js.native
+  var emptyText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var enableKeyEvents: js.UndefOr[Boolean] = js.native
+  var enableKeyEvents: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var enforceMaxLength: js.UndefOr[Boolean] = js.native
+  var enforceMaxLength: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Validates a value according to the field s validation rules and returns an array of errors for any failing validations
     * @param value Object The value to validate. The processed raw value will be used if nothing is passed.
     * @returns String[] Array of any validation errors
     */
   @JSName("getErrors")
-  var getErrors_IText: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Array]] = js.native
+  var getErrors_IText: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Array]] = js.undefined
   
   /** [Method] Returns the raw String value of the field without performing any normalization conversion or validation
     * @returns String The raw String value of the field
     */
   @JSName("getRawValue")
-  var getRawValue_IText: js.UndefOr[js.Function0[String]] = js.native
+  var getRawValue_IText: js.UndefOr[js.Function0[String]] = js.undefined
+  
+  /** [Method] The supplied default state gathering method for the AbstractComponent class
+    * @returns Object
+    */
+  @JSName("getState")
+  var getState_IText: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var grow: js.UndefOr[Boolean] = js.native
+  var grow: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var growAppend: js.UndefOr[String] = js.native
+  var growAppend: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var growMax: js.UndefOr[Double] = js.native
+  var growMax: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var growMin: js.UndefOr[Double] = js.native
+  var growMin: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (RegExp) */
-  var maskRe: js.UndefOr[RegExp] = js.native
+  var maskRe: js.UndefOr[RegExp] = js.undefined
   
   /** [Config Option] (Number) */
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var maxLengthText: js.UndefOr[String] = js.native
+  var maxLengthText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var minLengthText: js.UndefOr[String] = js.native
+  var minLengthText: js.UndefOr[String] = js.undefined
   
   /** [Method] private */
   @JSName("postBlur")
-  var postBlur_IText: js.UndefOr[js.Function0[Unit]] = js.native
+  var postBlur_IText: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Performs any necessary manipulation of a raw String value to prepare it for conversion and or validation
     * @param value String The unprocessed string value
     * @returns String The processed string value
     */
   @JSName("processRawValue")
-  var processRawValue_IText: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], String]] = js.native
+  var processRawValue_IText: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], String]] = js.undefined
   
   /** [Config Option] (RegExp) */
-  var regex: js.UndefOr[RegExp] = js.native
+  var regex: js.UndefOr[RegExp] = js.undefined
   
   /** [Config Option] (String) */
-  var regexText: js.UndefOr[String] = js.native
+  var regexText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var requiredCls: js.UndefOr[String] = js.native
+  var requiredCls: js.UndefOr[String] = js.undefined
   
   /** [Method] Resets the current field value to the originally loaded value and clears any validation messages  */
   @JSName("reset")
-  var reset_IText: js.UndefOr[js.Function0[Unit]] = js.native
+  var reset_IText: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var selectOnFocus: js.UndefOr[Boolean] = js.native
+  var selectOnFocus: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Selects text in this field
     * @param start Number The index where the selection should start
     * @param end Number The index where the selection should end (defaults to the text length)
     */
-  var selectText: js.UndefOr[js.Function2[/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double], Unit]] = js.native
+  var selectText: js.UndefOr[js.Function2[/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets a data value into the field and runs the change detection and validation
     * @param value Object The value to set
     * @returns any this
     */
   @JSName("setValue")
-  var setValue_IText: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.native
+  var setValue_IText: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Config Option] (Number) */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (RegExp) */
-  var stripCharsRe: js.UndefOr[RegExp] = js.native
+  var stripCharsRe: js.UndefOr[RegExp] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var validateBlank: js.UndefOr[Boolean] = js.native
+  var validateBlank: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var validator: js.UndefOr[js.Any] = js.native
+  var validator: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var vtype: js.UndefOr[String] = js.native
+  var vtype: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var vtypeText: js.UndefOr[String] = js.native
+  var vtypeText: js.UndefOr[String] = js.undefined
 }
 object IText {
   
@@ -162,6 +174,12 @@ object IText {
     
     @scala.inline
     def setAllowOnlyWhitespaceUndefined: Self = StObject.set(x, "allowOnlyWhitespace", js.undefined)
+    
+    @scala.inline
+    def setApplyState(value: /* state */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setApplyStateUndefined: Self = StObject.set(x, "applyState", js.undefined)
     
     @scala.inline
     def setAutoSize(value: () => Unit): Self = StObject.set(x, "autoSize", js.Any.fromFunction0(value))
@@ -222,6 +240,12 @@ object IText {
     
     @scala.inline
     def setGetRawValueUndefined: Self = StObject.set(x, "getRawValue", js.undefined)
+    
+    @scala.inline
+    def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
     
     @scala.inline
     def setGrow(value: Boolean): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
@@ -326,7 +350,7 @@ object IText {
     def setSelectTextUndefined: Self = StObject.set(x, "selectText", js.undefined)
     
     @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    def setSetValue(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)

@@ -3,14 +3,14 @@ package typings.tableau.tableau
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region Error Classes
-@js.native
-trait TableauException extends Error {
+trait TableauException
+  extends StObject
+     with Error {
   
-  var tableauSoftwareErrorCode: ErrorCode = js.native
+  var tableauSoftwareErrorCode: ErrorCode
 }
 object TableauException {
   

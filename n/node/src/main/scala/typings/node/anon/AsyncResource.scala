@@ -2,13 +2,11 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsyncResource extends StObject {
   
-  var asyncResource: typings.node.asyncHooksMod.AsyncResource = js.native
+  var asyncResource: typings.node.asyncHooksMod.AsyncResource
 }
 object AsyncResource {
   

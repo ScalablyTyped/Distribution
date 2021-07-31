@@ -2,21 +2,19 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAttribute extends StObject {
   
   /**
     * The name of the dataset field.
     */
-  var AttributeName: js.UndefOr[Name] = js.native
+  var AttributeName: js.UndefOr[Name] = js.undefined
   
   /**
     * The data type of the field.
     */
-  var AttributeType: js.UndefOr[typings.awsSdk.forecastserviceMod.AttributeType] = js.native
+  var AttributeType: js.UndefOr[typings.awsSdk.forecastserviceMod.AttributeType] = js.undefined
 }
 object SchemaAttribute {
   

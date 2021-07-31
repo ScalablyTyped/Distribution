@@ -10,9 +10,9 @@ React Native Calendar Components
 | ------------------ | :-------------: |
 | Full name          | react-native-calendars |
 | Keywords           | - |
-| # releases         | 383 |
-| # dependents       | 39 |
-| # downloads        | 1886906 |
+| # releases         | 1230 |
+| # dependents       | 41 |
+| # downloads        | 2149005 |
 | # stars            | 5 |
 
 ## Links

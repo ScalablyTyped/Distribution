@@ -3,19 +3,17 @@ package typings.microsoftLiveConnect.Microsoft.Live
 import typings.microsoftLiveConnect.anon.Files
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Returned from a successful file picker operation.
   */
-@js.native
 trait IFilePickerResult extends StObject {
   
   /**
     * Contains data concerning the user's picked files.
     */
-  var data: Files = js.native
+  var data: Files
 }
 object IFilePickerResult {
   

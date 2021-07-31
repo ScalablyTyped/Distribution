@@ -2,17 +2,15 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationChange extends StObject {
   
   /** The type of the change which happened to the entry. */
-  var changeType: String = js.native
+  var changeType: String
   
   /** The path of the changed entry. */
-  var entryPath: String = js.native
+  var entryPath: String
 }
 object NotificationChange {
   

@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail X509Crl 对象属于 crypto 模块，创建：,```JavaScript,var k = new crypto.X509Crl();,```
   */
 @js.native
-trait ClassX509Crl extends ClassObject {
+trait ClassX509Crl
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -30,7 +31,7 @@ trait ClassX509Crl extends ClassObject {
     * 
     * 
     */
-  def dump(): js.Array[_] = js.native
+  def dump(): js.Array[js.Any] = js.native
   
   /**
     * 

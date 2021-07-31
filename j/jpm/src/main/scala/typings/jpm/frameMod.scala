@@ -3,7 +3,6 @@ package typings.jpm
 import typings.jpm.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object frameMod {
   
-  @JSImport("sdk/ui/frame", "Frame")
+  @JSImport("sdk/ui/frame", JSImport.Namespace)
   @js.native
-  def Frame(options: Name): typings.jpm.FFAddonSDK.Frame = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Frame(options: Name): typings.jpm.FFAddonSDK.Frame = ^.asInstanceOf[js.Dynamic].applyDynamic("Frame")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jpm.FFAddonSDK.Frame]
 }

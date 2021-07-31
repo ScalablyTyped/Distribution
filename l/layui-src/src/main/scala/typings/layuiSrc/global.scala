@@ -20,7 +20,6 @@ import typings.layuiSrc.layui.Upload
 import typings.layuiSrc.layui.Util
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -44,12 +43,10 @@ object global {
     @scala.inline
     def carousel_=(x: Carousel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carousel")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("layui.code")
-    @js.native
-    def code(): Unit = js.native
-    @JSGlobal("layui.code")
-    @js.native
-    def code(option: CodeOption): Unit = js.native
+    @scala.inline
+    def code(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("code")().asInstanceOf[Unit]
+    @scala.inline
+    def code(option: CodeOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("code")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("layui.colorpicker")
     @js.native
@@ -123,9 +120,8 @@ object global {
     @scala.inline
     def table_=(x: Table): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("table")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("layui.tree")
-    @js.native
-    def tree(option: TreeOption): Unit = js.native
+    @scala.inline
+    def tree(option: TreeOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tree")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("layui.upload")
     @js.native
@@ -133,12 +129,10 @@ object global {
     @scala.inline
     def upload_=(x: Upload): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("upload")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("layui.use")
-    @js.native
-    def use(mods: String, callback: js.Function1[/* args */ js.Any, _]): js.Any = js.native
-    @JSGlobal("layui.use")
-    @js.native
-    def use(mods: js.Array[String], callback: js.Function1[/* args */ js.Any, _]): js.Any = js.native
+    @scala.inline
+    def use(mods: String, callback: js.Function1[/* args */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(mods.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def use(mods: js.Array[String], callback: js.Function1[/* args */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(mods.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSGlobal("layui.util")
     @js.native

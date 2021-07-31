@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsStorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a collection of storage files that the user has selected by using a file picker. */
 @js.native
-trait FilePickerSelectedFilesArray extends Array[StorageFile] {
+trait FilePickerSelectedFilesArray
+  extends StObject
+     with Array[StorageFile] {
   
   /**
     * Retrieves an iterator that iterates through the collection of StorageFile objects that represent selected files.

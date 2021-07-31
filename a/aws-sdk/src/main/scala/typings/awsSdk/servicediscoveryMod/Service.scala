@@ -2,66 +2,64 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Service extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that AWS Cloud Map assigns to the service when you create it.
     */
-  var Arn: js.UndefOr[typings.awsSdk.servicediscoveryMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.servicediscoveryMod.Arn] = js.undefined
   
   /**
     * The date and time that the service was created, in Unix format and Coordinated Universal Time (UTC). The value of CreateDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreateDate: js.UndefOr[Timestamp] = js.native
+  var CreateDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A unique string that identifies the request and that allows failed requests to be retried without the risk of executing the operation twice. CreatorRequestId can be any unique string, for example, a date/time stamp.
     */
-  var CreatorRequestId: js.UndefOr[ResourceId] = js.native
+  var CreatorRequestId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The description of the service.
     */
-  var Description: js.UndefOr[ResourceDescription] = js.native
+  var Description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
     * A complex type that contains information about the Route 53 DNS records that you want AWS Cloud Map to create when you register an instance.
     */
-  var DnsConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.DnsConfig] = js.native
+  var DnsConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.DnsConfig] = js.undefined
   
   /**
     *  Public DNS and HTTP namespaces only. A complex type that contains settings for an optional health check. If you specify settings for a health check, AWS Cloud Map associates the health check with the records that you specify in DnsConfig. For information about the charges for health checks, see Amazon Route 53 Pricing.
     */
-  var HealthCheckConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckConfig] = js.native
+  var HealthCheckConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckConfig] = js.undefined
   
   /**
     * A complex type that contains information about an optional custom health check.  If you specify a health check configuration, you can specify either HealthCheckCustomConfig or HealthCheckConfig but not both. 
     */
-  var HealthCheckCustomConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckCustomConfig] = js.native
+  var HealthCheckCustomConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckCustomConfig] = js.undefined
   
   /**
     * The ID that AWS Cloud Map assigned to the service when you created it.
     */
-  var Id: js.UndefOr[ResourceId] = js.native
+  var Id: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The number of instances that are currently associated with the service. Instances that were previously associated with the service but that have been deleted are not included in the count. The count might not reflect pending registrations and deregistrations.
     */
-  var InstanceCount: js.UndefOr[ResourceCount] = js.native
+  var InstanceCount: js.UndefOr[ResourceCount] = js.undefined
   
   /**
     * The name of the service.
     */
-  var Name: js.UndefOr[ServiceName] = js.native
+  var Name: js.UndefOr[ServiceName] = js.undefined
   
   /**
     * The ID of the namespace that was used to create the service.
     */
-  var NamespaceId: js.UndefOr[ResourceId] = js.native
+  var NamespaceId: js.UndefOr[ResourceId] = js.undefined
 }
 object Service {
   

@@ -2,13 +2,11 @@ package typings.webglExt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OESTextureHalfFloatLinear extends StObject {
   
-  val __OES_texture_half_float_linear: Unit = js.native
+  val __OES_texture_half_float_linear: Unit
 }
 object OESTextureHalfFloatLinear {
   

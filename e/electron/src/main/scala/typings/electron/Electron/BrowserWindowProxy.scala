@@ -2,34 +2,32 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrowserWindowProxy extends StObject {
   
   // Docs: https://electronjs.org/docs/api/browser-window-proxy
   /**
     * Removes focus from the child window.
     */
-  def blur(): Unit = js.native
+  def blur(): Unit
   
   /**
     * Forcefully closes the child window without calling its unload event.
     */
-  def close(): Unit = js.native
+  def close(): Unit
   
-  var closed: Boolean = js.native
+  var closed: Boolean
   
   /**
     * Evaluates the code in the child window.
     */
-  def eval(code: String): Unit = js.native
+  def eval(code: String): Unit
   
   /**
     * Focuses the child window (brings the window to front).
     */
-  def focus(): Unit = js.native
+  def focus(): Unit
   
   /**
     * Sends a message to the child window with the specified origin or `*` for no
@@ -38,12 +36,12 @@ trait BrowserWindowProxy extends StObject {
     * In addition to these methods, the child window implements `window.opener` object
     * with no properties and a single method.
     */
-  def postMessage(message: js.Any, targetOrigin: String): Unit = js.native
+  def postMessage(message: js.Any, targetOrigin: String): Unit
   
   /**
     * Invokes the print dialog on the child window.
     */
-  def print(): Unit = js.native
+  def print(): Unit
 }
 object BrowserWindowProxy {
   

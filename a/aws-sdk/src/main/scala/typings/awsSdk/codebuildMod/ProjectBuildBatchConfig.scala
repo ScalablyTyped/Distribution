@@ -2,31 +2,29 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectBuildBatchConfig extends StObject {
   
   /**
     * Specifies if the build artifacts for the batch build should be combined into a single artifact location.
     */
-  var combineArtifacts: js.UndefOr[WrapperBoolean] = js.native
+  var combineArtifacts: js.UndefOr[WrapperBoolean] = js.undefined
   
   /**
     * A BatchRestrictions object that specifies the restrictions for the batch build.
     */
-  var restrictions: js.UndefOr[BatchRestrictions] = js.native
+  var restrictions: js.UndefOr[BatchRestrictions] = js.undefined
   
   /**
     * Specifies the service role ARN for the batch build project.
     */
-  var serviceRole: js.UndefOr[NonEmptyString] = js.native
+  var serviceRole: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Specifies the maximum amount of time, in minutes, that the batch build must be completed in.
     */
-  var timeoutInMins: js.UndefOr[WrapperInt] = js.native
+  var timeoutInMins: js.UndefOr[WrapperInt] = js.undefined
 }
 object ProjectBuildBatchConfig {
   

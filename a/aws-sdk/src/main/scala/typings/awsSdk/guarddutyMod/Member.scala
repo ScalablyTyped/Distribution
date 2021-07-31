@@ -2,46 +2,44 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Member extends StObject {
   
   /**
     * The ID of the member account.
     */
-  var AccountId: typings.awsSdk.guarddutyMod.AccountId = js.native
+  var AccountId: typings.awsSdk.guarddutyMod.AccountId
   
   /**
     * The detector ID of the member account.
     */
-  var DetectorId: js.UndefOr[typings.awsSdk.guarddutyMod.DetectorId] = js.native
+  var DetectorId: js.UndefOr[typings.awsSdk.guarddutyMod.DetectorId] = js.undefined
   
   /**
     * The email address of the member account.
     */
-  var Email: typings.awsSdk.guarddutyMod.Email = js.native
+  var Email: typings.awsSdk.guarddutyMod.Email
   
   /**
     * The timestamp when the invitation was sent.
     */
-  var InvitedAt: js.UndefOr[String] = js.native
+  var InvitedAt: js.UndefOr[String] = js.undefined
   
   /**
     * The master account ID.
     */
-  var MasterId: String = js.native
+  var MasterId: String
   
   /**
     * The status of the relationship between the member and the master.
     */
-  var RelationshipStatus: String = js.native
+  var RelationshipStatus: String
   
   /**
     * The last-updated timestamp of the member.
     */
-  var UpdatedAt: String = js.native
+  var UpdatedAt: String
 }
 object Member {
   

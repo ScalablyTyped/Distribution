@@ -3,25 +3,23 @@ package typings.atom.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowLoadSettings extends StObject {
   
-  val appVersion: String = js.native
+  val appVersion: String
   
-  val atomHome: String = js.native
+  val atomHome: String
   
-  val devMode: Boolean = js.native
+  val devMode: Boolean
   
-  val env: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+  val env: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   
-  val profileStartup: js.UndefOr[Boolean] = js.native
+  val profileStartup: js.UndefOr[Boolean] = js.undefined
   
-  val resourcePath: String = js.native
+  val resourcePath: String
   
-  val safeMode: Boolean = js.native
+  val safeMode: Boolean
 }
 object WindowLoadSettings {
   

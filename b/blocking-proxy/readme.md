@@ -12,7 +12,7 @@ WebDriver Proxy for testing rich clients. It block certain calls until Angular i
 | Keywords           | test, testing, webdriver, webdriverjs, selenium |
 | # releases         | 1 |
 | # dependents       | 13 |
-| # downloads        | 53255963 |
+| # downloads        | 58437096 |
 | # stars            | 0 |
 
 ## Links

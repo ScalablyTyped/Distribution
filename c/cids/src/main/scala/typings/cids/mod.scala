@@ -5,14 +5,15 @@ import typings.std.Record
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("cids", JSImport.Namespace)
   @js.native
-  class ^ protected () extends CID {
+  class ^ protected ()
+    extends StObject
+       with CID {
     def this(cid: String) = this()
     def this(cid: CID) = this()
     def this(cid: Uint8Array) = this()
@@ -58,9 +59,8 @@ object mod {
   def codecs_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("codecs")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("cids", "isCID")
-  @js.native
-  def isCID(mixed: js.Any): /* is cids.cids.CID */ Boolean = js.native
+  @scala.inline
+  def isCID(mixed: js.Any): /* is cids.cids.CID */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCID")(mixed.asInstanceOf[js.Any]).asInstanceOf[/* is cids.cids.CID */ Boolean]
   
   /**
     * Test if the given input is a valid CID object.
@@ -69,9 +69,8 @@ object mod {
     * @param other The other CID.
     */
   /* static member */
-  @JSImport("cids", "validateCID")
-  @js.native
-  def validateCID(other: js.Any): Unit = js.native
+  @scala.inline
+  def validateCID(other: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateCID")(other.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait CID extends StObject {

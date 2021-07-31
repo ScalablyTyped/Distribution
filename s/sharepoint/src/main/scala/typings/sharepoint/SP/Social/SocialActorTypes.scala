@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,24 +12,38 @@ sealed trait SocialActorTypes extends StObject
 object SocialActorTypes extends StObject {
   
   @js.native
-  sealed trait all extends SocialActorTypes
+  sealed trait all
+    extends StObject
+       with SocialActorTypes
   
   @js.native
-  sealed trait documents extends SocialActorTypes
+  sealed trait documents
+    extends StObject
+       with SocialActorTypes
   
   /** The set excludes documents and sites that do not have feeds. */
   @js.native
-  sealed trait excludeContentWithoutFeeds extends SocialActorTypes
+  sealed trait excludeContentWithoutFeeds
+    extends StObject
+       with SocialActorTypes
   
   @js.native
-  sealed trait none extends SocialActorTypes
+  sealed trait none
+    extends StObject
+       with SocialActorTypes
   
   @js.native
-  sealed trait sites extends SocialActorTypes
+  sealed trait sites
+    extends StObject
+       with SocialActorTypes
   
   @js.native
-  sealed trait tags extends SocialActorTypes
+  sealed trait tags
+    extends StObject
+       with SocialActorTypes
   
   @js.native
-  sealed trait users extends SocialActorTypes
+  sealed trait users
+    extends StObject
+       with SocialActorTypes
 }

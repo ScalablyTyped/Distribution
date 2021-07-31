@@ -3,28 +3,28 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.SOLID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SolidPaint extends Paint {
+trait SolidPaint
+  extends StObject
+     with Paint {
   
-  val blendMode: js.UndefOr[BlendMode] = js.native
+  val blendMode: js.UndefOr[BlendMode] = js.undefined
   
-  val color: RGB = js.native
+  val color: RGB
   
-  val opacity: js.UndefOr[Double] = js.native
+  val opacity: js.UndefOr[Double] = js.undefined
   
-  val `type`: SOLID = js.native
+  val `type`: SOLID
   
-  val visible: js.UndefOr[Boolean] = js.native
+  val visible: js.UndefOr[Boolean] = js.undefined
 }
 object SolidPaint {
   
   @scala.inline
-  def apply(color: RGB, `type`: SOLID): SolidPaint = {
+  def apply(color: RGB): SolidPaint = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SOLID")
     __obj.asInstanceOf[SolidPaint]
   }
   

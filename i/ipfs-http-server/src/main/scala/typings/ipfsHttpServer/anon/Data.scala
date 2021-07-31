@@ -3,13 +3,11 @@ package typings.ipfsHttpServer.anon
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: Buffer = js.native
+  var data: Buffer
 }
 object Data {
   

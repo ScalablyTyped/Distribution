@@ -9,7 +9,6 @@ import typings.std.Date
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendarCalendarMod {
@@ -26,146 +25,145 @@ object calendarCalendarMod {
     def this(props: CalendarProps, context: js.Any) = this()
   }
   
-  @js.native
   trait CalendarProps extends StObject {
     
-    var appendTo: js.UndefOr[js.Any] = js.native
+    var appendTo: js.UndefOr[js.Any] = js.undefined
     
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
-    var autoZIndex: js.UndefOr[Boolean] = js.native
+    var autoZIndex: js.UndefOr[Boolean] = js.undefined
     
-    var baseZIndex: js.UndefOr[Double] = js.native
+    var baseZIndex: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearButtonClassName: js.UndefOr[String] = js.native
+    var clearButtonClassName: js.UndefOr[String] = js.undefined
     
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
-    var dateTemplate: js.UndefOr[js.Function1[/* dateMeta */ DateMetaData, ReactNode]] = js.native
+    var dateTemplate: js.UndefOr[js.Function1[/* dateMeta */ DateMetaData, ReactNode]] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var disabledDates: js.UndefOr[js.Array[Date]] = js.native
+    var disabledDates: js.UndefOr[js.Array[Date]] = js.undefined
     
-    var disabledDays: js.UndefOr[js.Array[Double]] = js.native
+    var disabledDays: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var footerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.native
+    var footerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.undefined
     
-    var headerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.native
+    var headerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.undefined
     
-    var hideOnDateTimeSelect: js.UndefOr[Boolean] = js.native
+    var hideOnDateTimeSelect: js.UndefOr[Boolean] = js.undefined
     
-    var hourFormat: js.UndefOr[String] = js.native
+    var hourFormat: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var inputClassName: js.UndefOr[String] = js.native
+    var inputClassName: js.UndefOr[String] = js.undefined
     
-    var inputId: js.UndefOr[String] = js.native
+    var inputId: js.UndefOr[String] = js.undefined
     
-    var inputStyle: js.UndefOr[js.Object] = js.native
+    var inputStyle: js.UndefOr[js.Object] = js.undefined
     
-    var keepInvalid: js.UndefOr[Boolean] = js.native
+    var keepInvalid: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[LocaleSettings] = js.native
+    var locale: js.UndefOr[LocaleSettings] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var maxDateCount: js.UndefOr[Double] = js.native
+    var maxDateCount: js.UndefOr[Double] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var monthNavigator: js.UndefOr[Boolean] = js.native
+    var monthNavigator: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var numberOfMonths: js.UndefOr[Double] = js.native
+    var numberOfMonths: js.UndefOr[Double] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ OriginalEventTarget, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ OriginalEventTarget, Unit]] = js.undefined
     
-    var onClearButtonClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onClearButtonClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onInput: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onInput: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* e */ OriginalEventValue, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* e */ OriginalEventValue, Unit]] = js.undefined
     
-    var onTodayButtonClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onTodayButtonClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onViewDateChange: js.UndefOr[js.Function1[/* e */ OriginalEventValue, Unit]] = js.native
+    var onViewDateChange: js.UndefOr[js.Function1[/* e */ OriginalEventValue, Unit]] = js.undefined
     
-    var panelClassName: js.UndefOr[String] = js.native
+    var panelClassName: js.UndefOr[String] = js.undefined
     
-    var panelStyle: js.UndefOr[js.Object] = js.native
+    var panelStyle: js.UndefOr[js.Object] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var readOnlyInput: js.UndefOr[Boolean] = js.native
+    var readOnlyInput: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var selectOtherMonths: js.UndefOr[Boolean] = js.native
+    var selectOtherMonths: js.UndefOr[Boolean] = js.undefined
     
-    var selectionMode: js.UndefOr[String] = js.native
+    var selectionMode: js.UndefOr[String] = js.undefined
     
-    var shortYearCutoff: js.UndefOr[String] = js.native
+    var shortYearCutoff: js.UndefOr[String] = js.undefined
     
-    var showButtonBar: js.UndefOr[Boolean] = js.native
+    var showButtonBar: js.UndefOr[Boolean] = js.undefined
     
-    var showIcon: js.UndefOr[Boolean] = js.native
+    var showIcon: js.UndefOr[Boolean] = js.undefined
     
-    var showMillisec: js.UndefOr[Boolean] = js.native
+    var showMillisec: js.UndefOr[Boolean] = js.undefined
     
-    var showOnFocus: js.UndefOr[Boolean] = js.native
+    var showOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var showOtherMonths: js.UndefOr[Boolean] = js.native
+    var showOtherMonths: js.UndefOr[Boolean] = js.undefined
     
-    var showSeconds: js.UndefOr[Boolean] = js.native
+    var showSeconds: js.UndefOr[Boolean] = js.undefined
     
-    var showTime: js.UndefOr[Boolean] = js.native
+    var showTime: js.UndefOr[Boolean] = js.undefined
     
-    var showWeek: js.UndefOr[Boolean] = js.native
+    var showWeek: js.UndefOr[Boolean] = js.undefined
     
-    var stepHour: js.UndefOr[Double] = js.native
+    var stepHour: js.UndefOr[Double] = js.undefined
     
-    var stepMillisec: js.UndefOr[Double] = js.native
+    var stepMillisec: js.UndefOr[Double] = js.undefined
     
-    var stepMinute: js.UndefOr[Double] = js.native
+    var stepMinute: js.UndefOr[Double] = js.undefined
     
-    var stepSecond: js.UndefOr[Double] = js.native
+    var stepSecond: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabIndex: js.UndefOr[String] = js.native
+    var tabIndex: js.UndefOr[String] = js.undefined
     
-    var timeOnly: js.UndefOr[Boolean] = js.native
+    var timeOnly: js.UndefOr[Boolean] = js.undefined
     
-    var todayButtonClassName: js.UndefOr[String] = js.native
+    var todayButtonClassName: js.UndefOr[String] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
-    var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+    var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
-    var touchUI: js.UndefOr[Boolean] = js.native
+    var touchUI: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[Date | js.Array[Date]] = js.native
+    var value: js.UndefOr[Date | js.Array[Date]] = js.undefined
     
-    var view: js.UndefOr[String] = js.native
+    var view: js.UndefOr[String] = js.undefined
     
-    var viewDate: js.UndefOr[Date] = js.native
+    var viewDate: js.UndefOr[Date] = js.undefined
     
-    var yearNavigator: js.UndefOr[Boolean] = js.native
+    var yearNavigator: js.UndefOr[Boolean] = js.undefined
     
-    var yearRange: js.UndefOr[String] = js.native
+    var yearRange: js.UndefOr[String] = js.undefined
   }
   object CalendarProps {
     
@@ -603,20 +601,19 @@ object calendarCalendarMod {
     }
   }
   
-  @js.native
   trait DateMetaData extends StObject {
     
-    var day: Double = js.native
+    var day: Double
     
-    var month: Double = js.native
+    var month: Double
     
-    var otherMonth: Boolean = js.native
+    var otherMonth: Boolean
     
-    var selectable: Boolean = js.native
+    var selectable: Boolean
     
-    var today: Boolean = js.native
+    var today: Boolean
     
-    var year: Double = js.native
+    var year: Double
   }
   object DateMetaData {
     
@@ -649,24 +646,23 @@ object calendarCalendarMod {
     }
   }
   
-  @js.native
   trait LocaleSettings extends StObject {
     
-    var clear: String = js.native
+    var clear: String
     
-    var dayNames: js.Array[String] = js.native
+    var dayNames: js.Array[String]
     
-    var dayNamesMin: js.Array[String] = js.native
+    var dayNamesMin: js.Array[String]
     
-    var dayNamesShort: js.Array[String] = js.native
+    var dayNamesShort: js.Array[String]
     
-    var firstDayOfWeek: js.UndefOr[Double] = js.native
+    var firstDayOfWeek: js.UndefOr[Double] = js.undefined
     
-    var monthNames: js.Array[String] = js.native
+    var monthNames: js.Array[String]
     
-    var monthNamesShort: js.Array[String] = js.native
+    var monthNamesShort: js.Array[String]
     
-    var today: String = js.native
+    var today: String
   }
   object LocaleSettings {
     

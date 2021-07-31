@@ -5,21 +5,21 @@ import typings.wordpressComponents.autocompleteMod.Autocomplete._OptionCompletio
 import typings.wordpressComponents.wordpressComponentsStrings.`insert-at-caret`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Action extends _OptionCompletion {
+trait Action
+  extends StObject
+     with _OptionCompletion {
   
-  var action: `insert-at-caret` = js.native
+  var action: `insert-at-caret`
   
-  var value: ReactNode = js.native
+  var value: ReactNode
 }
 object Action {
   
   @scala.inline
-  def apply(action: `insert-at-caret`): Action = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+  def apply(): Action = {
+    val __obj = js.Dynamic.literal(action = "insert-at-caret")
     __obj.asInstanceOf[Action]
   }
   

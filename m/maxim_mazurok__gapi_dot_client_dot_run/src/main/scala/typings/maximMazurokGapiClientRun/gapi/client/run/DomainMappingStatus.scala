@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainMappingStatus extends StObject {
   
   /** Array of observed DomainMappingConditions, indicating the current state of the DomainMapping. */
-  var conditions: js.UndefOr[js.Array[GoogleCloudRunV1Condition]] = js.native
+  var conditions: js.UndefOr[js.Array[GoogleCloudRunV1Condition]] = js.undefined
   
   /** The name of the route that the mapping currently points to. */
-  var mappedRouteName: js.UndefOr[String] = js.native
+  var mappedRouteName: js.UndefOr[String] = js.undefined
   
   /**
     * ObservedGeneration is the 'Generation' of the DomainMapping that was last processed by the controller. Clients polling for completed reconciliation should poll until
     * observedGeneration = metadata.generation and the Ready condition's status is True or False.
     */
-  var observedGeneration: js.UndefOr[Double] = js.native
+  var observedGeneration: js.UndefOr[Double] = js.undefined
   
   /**
     * The resource records required to configure this domain mapping. These records must be added to the domain's DNS configuration in order to serve the application via this domain
     * mapping.
     */
-  var resourceRecords: js.UndefOr[js.Array[ResourceRecord]] = js.native
+  var resourceRecords: js.UndefOr[js.Array[ResourceRecord]] = js.undefined
   
   /** Cloud Run fully managed: not supported Cloud Run on GKE: supported Holds the URL that will serve the traffic of the DomainMapping. +optional */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object DomainMappingStatus {
   

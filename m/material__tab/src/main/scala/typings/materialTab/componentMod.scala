@@ -9,7 +9,6 @@ import typings.std.ClientRect
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -18,7 +17,7 @@ object componentMod {
   - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/tab/component", "MDCTab")
   @js.native
   class MDCTab protected () extends MDCComponent[MDCTabFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCTabFoundation, args: js.Any*) = this()
     
     /**
@@ -56,7 +55,7 @@ object componentMod {
     var id: String = js.native
     
     def initialize(): Unit = js.native
-    def initialize(rippleFactory: js.UndefOr[scala.Nothing], tabIndicatorFactory: MDCTabIndicatorFactory): Unit = js.native
+    def initialize(rippleFactory: Unit, tabIndicatorFactory: MDCTabIndicatorFactory): Unit = js.native
     def initialize(rippleFactory: MDCRippleFactory): Unit = js.native
     def initialize(rippleFactory: MDCRippleFactory, tabIndicatorFactory: MDCTabIndicatorFactory): Unit = js.native
     
@@ -65,9 +64,12 @@ object componentMod {
   /* static members */
   object MDCTab {
     
-    @JSImport("@material/tab/component", "MDCTab.attachTo")
+    @JSImport("@material/tab/component", "MDCTab")
     @js.native
-    def attachTo(root: Element): MDCTab = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTab]
   }
   
   type MDCTabFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCTabFoundation], MDCTab]

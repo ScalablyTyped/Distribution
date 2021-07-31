@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes content from the document.
   */
-@js.native
 trait SchemaDeleteContentRangeRequest extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait SchemaDeleteContentRangeRequest extends StObject {
     * or cells of a table. Deleting the content within   a table cell is
     * allowed.
     */
-  var range: js.UndefOr[SchemaRange] = js.native
+  var range: js.UndefOr[SchemaRange] = js.undefined
 }
 object SchemaDeleteContentRangeRequest {
   

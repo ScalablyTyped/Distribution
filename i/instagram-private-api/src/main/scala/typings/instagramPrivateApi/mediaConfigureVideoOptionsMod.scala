@@ -8,29 +8,29 @@ import typings.instagramPrivateApi.mediaConfigureOptionsMod.MediaLocation
 import typings.instagramPrivateApi.postingOptionsMod.PostingUsertags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaConfigureVideoOptionsMod {
   
-  @js.native
-  trait MediaConfigureTimelineVideoOptions extends MediaConfigureVideoOptions {
+  trait MediaConfigureTimelineVideoOptions
+    extends StObject
+       with MediaConfigureVideoOptions {
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var date_time_original: js.UndefOr[String] = js.native
+    var date_time_original: js.UndefOr[String] = js.undefined
     
-    var device_id: js.UndefOr[String] = js.native
+    var device_id: js.UndefOr[String] = js.undefined
     
-    var filter_type: js.UndefOr[String] = js.native
+    var filter_type: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[MediaLocation | String] = js.native
+    var location: js.UndefOr[MediaLocation | String] = js.undefined
     
-    var source_type: js.UndefOr[`4`] = js.native
+    var source_type: js.UndefOr[`4`] = js.undefined
     
-    var timezone_offset: js.UndefOr[String] = js.native
+    var timezone_offset: js.UndefOr[String] = js.undefined
     
-    var usertags: js.UndefOr[PostingUsertags | String] = js.native
+    var usertags: js.UndefOr[PostingUsertags | String] = js.undefined
   }
   object MediaConfigureTimelineVideoOptions {
     
@@ -93,32 +93,31 @@ object mediaConfigureVideoOptionsMod {
     }
   }
   
-  @js.native
   trait MediaConfigureVideoOptions extends StObject {
     
-    var audio_muted: js.UndefOr[Boolean] = js.native
+    var audio_muted: js.UndefOr[Boolean] = js.undefined
     
-    var clips: js.UndefOr[js.Array[Length]] = js.native
+    var clips: js.UndefOr[js.Array[Length]] = js.undefined
     
-    var geotag_enabled: js.UndefOr[`1` | `0`] = js.native
+    var geotag_enabled: js.UndefOr[`1` | `0`] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var length: Double = js.native
+    var length: Double
     
-    var media_latitude: js.UndefOr[String] = js.native
+    var media_latitude: js.UndefOr[String] = js.undefined
     
-    var media_longitude: js.UndefOr[String] = js.native
+    var media_longitude: js.UndefOr[String] = js.undefined
     
-    var poster_frame_index: js.UndefOr[Double] = js.native
+    var poster_frame_index: js.UndefOr[Double] = js.undefined
     
-    var posting_latitude: js.UndefOr[String] = js.native
+    var posting_latitude: js.UndefOr[String] = js.undefined
     
-    var posting_longitude: js.UndefOr[String] = js.native
+    var posting_longitude: js.UndefOr[String] = js.undefined
     
-    var upload_id: String = js.native
+    var upload_id: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object MediaConfigureVideoOptions {
     

@@ -9,7 +9,6 @@ import typings.reactMdUtils.reactMdUtilsStrings.auto
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridMod {
@@ -24,10 +23,11 @@ object gridMod {
   
   @JSImport("@react-md/utils/types/layout/Grid", "Grid")
   @js.native
-  val Grid: ForwardRefExoticComponent[GridProps with RefAttributes[HTMLDivElement]] = js.native
+  val Grid: ForwardRefExoticComponent[GridProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait GridProps extends HTMLAttributes[HTMLDivElement] {
+  trait GridProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Boolean if the `children` should have the grid `style` and `className`
@@ -39,7 +39,7 @@ object gridMod {
       *
       * @since 2.3.0
       */
-    var cloneStyles: js.UndefOr[Boolean] = js.native
+    var cloneStyles: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the `children` should be updated to be wrapped in the `GridCell`
@@ -48,19 +48,19 @@ object gridMod {
       * `Grid` and `GridCell` components to create a grid.
       */
     @JSName("clone")
-    var clone_FGridProps: js.UndefOr[Boolean] = js.native
+    var clone_FGridProps: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional number of columns to apply for all media types. Providing one
       * of the media-spcific column props will override this value for those
       * breakpoints still.
       */
-    var columns: js.UndefOr[Double] = js.native
+    var columns: js.UndefOr[Double] = js.undefined
     
     /**
       * An optional number of columns to display for desktop screens.
       */
-    var desktopColumns: js.UndefOr[Double] = js.native
+    var desktopColumns: js.UndefOr[Double] = js.undefined
     
     /**
       * This will override the default grid cell's gutter value (the space between
@@ -72,12 +72,12 @@ object gridMod {
       * - `1em`
       * - `5%`
       */
-    var gutter: js.UndefOr[String] = js.native
+    var gutter: js.UndefOr[String] = js.undefined
     
     /**
       * An optional number of columns to display for large desktop screens.
       */
-    var largeDesktopColumns: js.UndefOr[Double] = js.native
+    var largeDesktopColumns: js.UndefOr[Double] = js.undefined
     
     /**
       * This prop allows you to generate your grid with a dynamic amount of columns
@@ -94,30 +94,30 @@ object gridMod {
       *
       * @see https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
       */
-    var minCellWidth: js.UndefOr[`min-content` | `max-content` | auto | String] = js.native
+    var minCellWidth: js.UndefOr[`min-content` | `max-content` | auto | String] = js.undefined
     
     /**
       * This is really just a pass-through of the `style` prop that allows you to
       * quickly update the base padding for the grid.
       */
-    var padding: js.UndefOr[Double | String] = js.native
+    var padding: js.UndefOr[Double | String] = js.undefined
     
     /**
       * An optional number of columns to display for phones.
       */
-    var phoneColumns: js.UndefOr[Double] = js.native
+    var phoneColumns: js.UndefOr[Double] = js.undefined
     
     /**
       * An optional number of columns to display for tablets.
       */
-    var tabletColumns: js.UndefOr[Double] = js.native
+    var tabletColumns: js.UndefOr[Double] = js.undefined
     
     /**
       * Boolean if the `children` should be updated to be wrapped in the `GridCell`
       * component.  This is really just a convenience prop so you don't always need
       * to import both the `Grid` and `GridCell` components to create a grid/
       */
-    var wrapOnly: js.UndefOr[Boolean] = js.native
+    var wrapOnly: js.UndefOr[Boolean] = js.undefined
   }
   object GridProps {
     

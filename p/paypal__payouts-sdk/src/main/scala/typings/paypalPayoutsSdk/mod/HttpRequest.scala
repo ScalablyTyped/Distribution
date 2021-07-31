@@ -3,15 +3,13 @@ package typings.paypalPayoutsSdk.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpRequest extends StObject {
   
-  var body: js.UndefOr[StringDictionary[String]] = js.native
+  var body: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var headers: PaypalHeader = js.native
+  var headers: PaypalHeader
 }
 object HttpRequest {
   

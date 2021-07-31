@@ -6,58 +6,46 @@ import typings.reactAsync.reactAsyncStrings.pending
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishedAt[T] extends StObject {
   
-  var data: js.UndefOr[T] = js.native
+  var data: js.UndefOr[T] = js.undefined
   
-  var error: js.UndefOr[typings.std.Error] = js.native
+  var error: js.UndefOr[typings.std.Error] = js.undefined
   
-  var finishedAt: js.UndefOr[scala.Nothing] = js.native
+  var finishedAt: Unit
   
-  var isFulfilled: `false` = js.native
+  var isFulfilled: `false`
   
-  var isInitial: `false` = js.native
+  var isInitial: `false`
   
-  var isLoading: `true` = js.native
+  var isLoading: `true`
   
-  var isPending: `true` = js.native
+  var isPending: `true`
   
-  var isRejected: `false` = js.native
+  var isRejected: `false`
   
-  var isResolved: `false` = js.native
+  var isResolved: `false`
   
-  var isSettled: `false` = js.native
+  var isSettled: `false`
   
-  var startedAt: Date = js.native
+  var startedAt: Date
   
-  var status: pending = js.native
+  var status: pending
   
-  var value: js.UndefOr[T | typings.std.Error] = js.native
+  var value: js.UndefOr[T | typings.std.Error] = js.undefined
 }
 object FinishedAt {
   
   @scala.inline
-  def apply[T](
-    isFulfilled: `false`,
-    isInitial: `false`,
-    isLoading: `true`,
-    isPending: `true`,
-    isRejected: `false`,
-    isResolved: `false`,
-    isSettled: `false`,
-    startedAt: Date,
-    status: pending
-  ): FinishedAt[T] = {
-    val __obj = js.Dynamic.literal(isFulfilled = isFulfilled.asInstanceOf[js.Any], isInitial = isInitial.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], isPending = isPending.asInstanceOf[js.Any], isRejected = isRejected.asInstanceOf[js.Any], isResolved = isResolved.asInstanceOf[js.Any], isSettled = isSettled.asInstanceOf[js.Any], startedAt = startedAt.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+  def apply[T](finishedAt: Unit, startedAt: Date): FinishedAt[T] = {
+    val __obj = js.Dynamic.literal(finishedAt = finishedAt.asInstanceOf[js.Any], isFulfilled = false, isInitial = false, isLoading = true, isPending = true, isRejected = false, isResolved = false, isSettled = false, startedAt = startedAt.asInstanceOf[js.Any], status = "pending")
     __obj.asInstanceOf[FinishedAt[T]]
   }
   
   @scala.inline
-  implicit class FinishedAtMutableBuilder[Self <: FinishedAt[_], T] (val x: Self with FinishedAt[T]) extends AnyVal {
+  implicit class FinishedAtMutableBuilder[Self <: FinishedAt[?], T] (val x: Self & FinishedAt[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -70,6 +58,9 @@ object FinishedAt {
     
     @scala.inline
     def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    @scala.inline
+    def setFinishedAt(value: Unit): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIsFulfilled(value: `false`): Self = StObject.set(x, "isFulfilled", value.asInstanceOf[js.Any])

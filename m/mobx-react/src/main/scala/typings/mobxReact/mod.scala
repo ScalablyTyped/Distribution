@@ -14,10 +14,13 @@ import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("mobx-react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mobx-react", "MobXProviderContext")
   @js.native
@@ -33,9 +36,8 @@ object mod {
     @js.native
     def arrayOrObservableArray: Requireable[js.Any] = js.native
     
-    @JSImport("mobx-react", "PropTypes.arrayOrObservableArrayOf")
-    @js.native
-    def arrayOrObservableArrayOf(typeChecker: Validator[_]): Requireable[_] = js.native
+    @scala.inline
+    def arrayOrObservableArrayOf(typeChecker: Validator[js.Any]): Requireable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOrObservableArrayOf")(typeChecker.asInstanceOf[js.Any]).asInstanceOf[Requireable[js.Any]]
     
     @scala.inline
     def arrayOrObservableArray_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayOrObservableArray")(x.asInstanceOf[js.Any])
@@ -50,9 +52,8 @@ object mod {
     @js.native
     def observableArray: Requireable[js.Any] = js.native
     
-    @JSImport("mobx-react", "PropTypes.observableArrayOf")
-    @js.native
-    def observableArrayOf(typeChecker: Validator[_]): Requireable[_] = js.native
+    @scala.inline
+    def observableArrayOf(typeChecker: Validator[js.Any]): Requireable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("observableArrayOf")(typeChecker.asInstanceOf[js.Any]).asInstanceOf[Requireable[js.Any]]
     
     @scala.inline
     def observableArray_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("observableArray")(x.asInstanceOf[js.Any])
@@ -72,9 +73,9 @@ object mod {
   
   object Provider {
     
-    @JSImport("mobx-react", "Provider")
-    @js.native
-    def apply(props: ProviderProps): Element = js.native
+    @scala.inline
+    def apply(props: ProviderProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("mobx-react", "Provider")
     @js.native
     val ^ : js.Any = js.native
@@ -86,65 +87,62 @@ object mod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mobx-react", "disposeOnUnmount")
-  @js.native
-  def disposeOnUnmount(target: Component[_, _, _], propertyKey: PropertyKey): Unit = js.native
-  @JSImport("mobx-react", "disposeOnUnmount")
-  @js.native
-  def disposeOnUnmount[TF /* <: Disposer | js.Array[Disposer] */](target: Component[_, _, _], fn: TF): TF = js.native
+  @scala.inline
+  def disposeOnUnmount(target: Component[js.Any, js.Any, js.Any], propertyKey: PropertyKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeOnUnmount")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mobx-react", "enableStaticRendering")
-  @js.native
-  def enableStaticRendering(enable: Boolean): Unit = js.native
+  @scala.inline
+  def disposeOnUnmount_TF_UnionDisposerArrayDisposer_TF[TF /* <: Disposer | js.Array[Disposer] */](target: Component[js.Any, js.Any, js.Any], fn: TF): TF = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeOnUnmount")(target.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TF]
   
-  @JSImport("mobx-react", "inject")
-  @js.native
-  def inject(stores: String*): js.Function1[/* target */ IReactComponent[_], IReactComponent[_] with IWrappedComponent[_]] = js.native
-  @JSImport("mobx-react", "inject")
-  @js.native
-  def inject[S, P, I, C](fn: IStoresToProps[S, P, I, C]): js.Function1[/* target */ IReactComponent[_], IReactComponent[_] with IWrappedComponent[P]] = js.native
+  @scala.inline
+  def enableStaticRendering(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableStaticRendering")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx-react", "isUsingStaticRendering")
-  @js.native
-  def isUsingStaticRendering(): Boolean = js.native
+  @scala.inline
+  def inject(stores: String*): js.Function1[
+    /* target */ IReactComponent[js.Any], 
+    IReactComponent[js.Any] & IWrappedComponent[js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(stores.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* target */ IReactComponent[js.Any], 
+    IReactComponent[js.Any] & IWrappedComponent[js.Any]
+  ]]
+  @scala.inline
+  def inject[S, P, I, C](fn: IStoresToProps[S, P, I, C]): js.Function1[
+    /* target */ IReactComponent[js.Any], 
+    IReactComponent[js.Any] & IWrappedComponent[P]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* target */ IReactComponent[js.Any], 
+    IReactComponent[js.Any] & IWrappedComponent[P]
+  ]]
   
-  @JSImport("mobx-react", "observer")
-  @js.native
-  def observer[T /* <: IReactComponent[_] */](component: T): T = js.native
+  @scala.inline
+  def isUsingStaticRendering(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUsingStaticRendering")().asInstanceOf[Boolean]
   
-  @JSImport("mobx-react", "observerBatching")
-  @js.native
-  def observerBatching(reactionScheduler: js.Any): Unit = js.native
+  @scala.inline
+  def observer[T /* <: IReactComponent[js.Any] */](component: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(component.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("mobx-react", "useAsObservableSource")
-  @js.native
-  def useAsObservableSource[TSource](current: TSource): TSource = js.native
+  @scala.inline
+  def observerBatching(reactionScheduler: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("observerBatching")(reactionScheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx-react", "useLocalObservable")
-  @js.native
-  def useLocalObservable[TStore /* <: Record[String, _] */](initializer: js.Function0[TStore]): TStore = js.native
-  @JSImport("mobx-react", "useLocalObservable")
-  @js.native
-  def useLocalObservable[TStore /* <: Record[String, _] */](
+  @scala.inline
+  def useAsObservableSource[TSource](current: TSource): TSource = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsObservableSource")(current.asInstanceOf[js.Any]).asInstanceOf[TSource]
+  
+  @scala.inline
+  def useLocalObservable[TStore /* <: Record[String, js.Any] */](initializer: js.Function0[TStore]): TStore = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalObservable")(initializer.asInstanceOf[js.Any]).asInstanceOf[TStore]
+  @scala.inline
+  def useLocalObservable[TStore /* <: Record[String, js.Any] */](
     initializer: js.Function0[TStore],
     annotations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnnotationsMap<TStore, never> */ js.Any
-  ): TStore = js.native
+  ): TStore = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalObservable")(initializer.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any])).asInstanceOf[TStore]
   
-  @JSImport("mobx-react", "useLocalStore")
-  @js.native
-  def useLocalStore[TStore /* <: Record[String, _] */](initializer: js.Function0[TStore]): TStore = js.native
-  @JSImport("mobx-react", "useLocalStore")
-  @js.native
-  def useLocalStore[TStore /* <: Record[String, _] */, TSource /* <: js.Object */](initializer: js.Function1[/* source */ TSource, TStore], current: TSource): TStore = js.native
+  @scala.inline
+  def useLocalStore[TStore /* <: Record[String, js.Any] */](initializer: js.Function0[TStore]): TStore = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalStore")(initializer.asInstanceOf[js.Any]).asInstanceOf[TStore]
+  @scala.inline
+  def useLocalStore[TStore /* <: Record[String, js.Any] */, TSource /* <: js.Object */](initializer: js.Function1[/* source */ TSource, TStore], current: TSource): TStore = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalStore")(initializer.asInstanceOf[js.Any], current.asInstanceOf[js.Any])).asInstanceOf[TStore]
   
-  @JSImport("mobx-react", "useObserver")
-  @js.native
-  def useObserver[T](fn: js.Function0[T]): T = js.native
-  @JSImport("mobx-react", "useObserver")
-  @js.native
-  def useObserver[T](fn: js.Function0[T], baseComponentName: String): T = js.native
+  @scala.inline
+  def useObserver[T](fn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useObserver")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def useObserver[T](fn: js.Function0[T], baseComponentName: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useObserver")(fn.asInstanceOf[js.Any], baseComponentName.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("mobx-react", "useStaticRendering")
-  @js.native
-  def useStaticRendering(enable: Boolean): Unit = js.native
+  @scala.inline
+  def useStaticRendering(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useStaticRendering")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

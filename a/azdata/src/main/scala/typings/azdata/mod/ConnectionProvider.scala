@@ -3,33 +3,33 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConnectionProvider extends DataProvider {
+trait ConnectionProvider
+  extends StObject
+     with DataProvider {
   
-  var buildConnectionInfo: js.UndefOr[js.Function1[/* connectionString */ String, Thenable[ConnectionInfo]]] = js.native
+  var buildConnectionInfo: js.UndefOr[js.Function1[/* connectionString */ String, Thenable[ConnectionInfo]]] = js.undefined
   
-  def cancelConnect(connectionUri: String): Thenable[Boolean] = js.native
+  def cancelConnect(connectionUri: String): Thenable[Boolean]
   
-  def changeDatabase(connectionUri: String, newDatabase: String): Thenable[Boolean] = js.native
+  def changeDatabase(connectionUri: String, newDatabase: String): Thenable[Boolean]
   
-  def connect(connectionUri: String, connectionInfo: ConnectionInfo): Thenable[Boolean] = js.native
+  def connect(connectionUri: String, connectionInfo: ConnectionInfo): Thenable[Boolean]
   
-  def disconnect(connectionUri: String): Thenable[Boolean] = js.native
+  def disconnect(connectionUri: String): Thenable[Boolean]
   
-  def getConnectionString(connectionUri: String, includePassword: Boolean): Thenable[String] = js.native
+  def getConnectionString(connectionUri: String, includePassword: Boolean): Thenable[String]
   
-  def listDatabases(connectionUri: String): Thenable[ListDatabasesResult] = js.native
+  def listDatabases(connectionUri: String): Thenable[ListDatabasesResult]
   
-  def rebuildIntelliSenseCache(connectionUri: String): Thenable[Unit] = js.native
+  def rebuildIntelliSenseCache(connectionUri: String): Thenable[Unit]
   
-  def registerOnConnectionChanged(handler: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, _]): Unit = js.native
+  def registerOnConnectionChanged(handler: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, js.Any]): Unit
   
-  def registerOnConnectionComplete(handler: js.Function1[/* connSummary */ ConnectionInfoSummary, _]): Unit = js.native
+  def registerOnConnectionComplete(handler: js.Function1[/* connSummary */ ConnectionInfoSummary, js.Any]): Unit
   
-  def registerOnIntelliSenseCacheComplete(handler: js.Function1[/* connectionUri */ String, _]): Unit = js.native
+  def registerOnIntelliSenseCacheComplete(handler: js.Function1[/* connectionUri */ String, js.Any]): Unit
 }
 object ConnectionProvider {
   
@@ -43,9 +43,9 @@ object ConnectionProvider {
     listDatabases: String => Thenable[ListDatabasesResult],
     providerId: String,
     rebuildIntelliSenseCache: String => Thenable[Unit],
-    registerOnConnectionChanged: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, _] => Unit,
-    registerOnConnectionComplete: js.Function1[/* connSummary */ ConnectionInfoSummary, _] => Unit,
-    registerOnIntelliSenseCacheComplete: js.Function1[/* connectionUri */ String, _] => Unit
+    registerOnConnectionChanged: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, js.Any] => Unit,
+    registerOnConnectionComplete: js.Function1[/* connSummary */ ConnectionInfoSummary, js.Any] => Unit,
+    registerOnIntelliSenseCacheComplete: js.Function1[/* connectionUri */ String, js.Any] => Unit
   ): ConnectionProvider = {
     val __obj = js.Dynamic.literal(cancelConnect = js.Any.fromFunction1(cancelConnect), changeDatabase = js.Any.fromFunction2(changeDatabase), connect = js.Any.fromFunction2(connect), disconnect = js.Any.fromFunction1(disconnect), getConnectionString = js.Any.fromFunction2(getConnectionString), listDatabases = js.Any.fromFunction1(listDatabases), providerId = providerId.asInstanceOf[js.Any], rebuildIntelliSenseCache = js.Any.fromFunction1(rebuildIntelliSenseCache), registerOnConnectionChanged = js.Any.fromFunction1(registerOnConnectionChanged), registerOnConnectionComplete = js.Any.fromFunction1(registerOnConnectionComplete), registerOnIntelliSenseCacheComplete = js.Any.fromFunction1(registerOnIntelliSenseCacheComplete))
     __obj.asInstanceOf[ConnectionProvider]
@@ -82,12 +82,12 @@ object ConnectionProvider {
     def setRebuildIntelliSenseCache(value: String => Thenable[Unit]): Self = StObject.set(x, "rebuildIntelliSenseCache", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterOnConnectionChanged(value: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, _] => Unit): Self = StObject.set(x, "registerOnConnectionChanged", js.Any.fromFunction1(value))
+    def setRegisterOnConnectionChanged(value: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnConnectionChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterOnConnectionComplete(value: js.Function1[/* connSummary */ ConnectionInfoSummary, _] => Unit): Self = StObject.set(x, "registerOnConnectionComplete", js.Any.fromFunction1(value))
+    def setRegisterOnConnectionComplete(value: js.Function1[/* connSummary */ ConnectionInfoSummary, js.Any] => Unit): Self = StObject.set(x, "registerOnConnectionComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterOnIntelliSenseCacheComplete(value: js.Function1[/* connectionUri */ String, _] => Unit): Self = StObject.set(x, "registerOnIntelliSenseCacheComplete", js.Any.fromFunction1(value))
+    def setRegisterOnIntelliSenseCacheComplete(value: js.Function1[/* connectionUri */ String, js.Any] => Unit): Self = StObject.set(x, "registerOnIntelliSenseCacheComplete", js.Any.fromFunction1(value))
   }
 }

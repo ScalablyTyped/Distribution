@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Explanation extends StObject {
   
   /** A text explaining why this volume is recommended. */
-  var explanation: js.UndefOr[String] = js.native
+  var explanation: js.UndefOr[String] = js.undefined
 }
 object Explanation {
   

@@ -2,31 +2,29 @@ package typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of `CallFunction` method.
   */
-@js.native
 trait SchemaCallFunctionResponse extends StObject {
   
   /**
     * Either system or user-function generated error. Set if execution was not
     * successful.
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     * Execution id of function invocation.
     */
-  var executionId: js.UndefOr[String] = js.native
+  var executionId: js.UndefOr[String] = js.undefined
   
   /**
     * Result populated for successful execution of synchronous function. Will
     * not be populated if function does not return a result through context.
     */
-  var result: js.UndefOr[String] = js.native
+  var result: js.UndefOr[String] = js.undefined
 }
 object SchemaCallFunctionResponse {
   

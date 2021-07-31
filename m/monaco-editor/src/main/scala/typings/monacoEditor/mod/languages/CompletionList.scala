@@ -2,17 +2,15 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionList extends StObject {
   
-  var dispose: js.UndefOr[js.Function0[Unit]] = js.native
+  var dispose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var incomplete: js.UndefOr[Boolean] = js.native
+  var incomplete: js.UndefOr[Boolean] = js.undefined
   
-  var suggestions: js.Array[CompletionItem] = js.native
+  var suggestions: js.Array[CompletionItem]
 }
 object CompletionList {
   

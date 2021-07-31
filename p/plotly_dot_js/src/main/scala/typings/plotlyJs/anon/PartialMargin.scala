@@ -2,22 +2,20 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Margin> */
-@js.native
 trait PartialMargin extends StObject {
   
-  var b: js.UndefOr[Double] = js.native
+  var b: js.UndefOr[Double] = js.undefined
   
-  var l: js.UndefOr[Double] = js.native
+  var l: js.UndefOr[Double] = js.undefined
   
-  var pad: js.UndefOr[Double] = js.native
+  var pad: js.UndefOr[Double] = js.undefined
   
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
   
-  var t: js.UndefOr[Double] = js.native
+  var t: js.UndefOr[Double] = js.undefined
 }
 object PartialMargin {
   

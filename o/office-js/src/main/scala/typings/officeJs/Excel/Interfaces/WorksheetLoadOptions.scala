@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.1]
   */
-@js.native
 trait WorksheetLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.native
+  var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var charts: js.UndefOr[ChartCollectionLoadOptions] = js.native
+  var charts: js.UndefOr[ChartCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var enableCalculation: js.UndefOr[Boolean] = js.native
+  var enableCalculation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var pageLayout: js.UndefOr[PageLayoutLoadOptions] = js.native
+  var pageLayout: js.UndefOr[PageLayoutLoadOptions] = js.undefined
   
   /**
     *
@@ -76,7 +74,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var position: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -84,7 +82,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var protection: js.UndefOr[WorksheetProtectionLoadOptions] = js.native
+  var protection: js.UndefOr[WorksheetProtectionLoadOptions] = js.undefined
   
   /**
     *
@@ -92,7 +90,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showGridlines: js.UndefOr[Boolean] = js.native
+  var showGridlines: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -100,7 +98,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showHeadings: js.UndefOr[Boolean] = js.native
+  var showHeadings: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -108,7 +106,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var standardHeight: js.UndefOr[Boolean] = js.native
+  var standardHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -117,7 +115,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var standardWidth: js.UndefOr[Boolean] = js.native
+  var standardWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -127,7 +125,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var tabColor: js.UndefOr[Boolean] = js.native
+  var tabColor: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -135,7 +133,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var tables: js.UndefOr[TableCollectionLoadOptions] = js.native
+  var tables: js.UndefOr[TableCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -143,7 +141,7 @@ trait WorksheetLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
     */
-  var visibility: js.UndefOr[Boolean] = js.native
+  var visibility: js.UndefOr[Boolean] = js.undefined
 }
 object WorksheetLoadOptions {
   

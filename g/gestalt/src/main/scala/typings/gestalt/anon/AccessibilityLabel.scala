@@ -2,15 +2,13 @@ package typings.gestalt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessibilityLabel extends StObject {
   
-  var accessibilityLabel: String = js.native
+  var accessibilityLabel: String
   
-  def onDismiss(): Unit = js.native
+  def onDismiss(): Unit
 }
 object AccessibilityLabel {
   

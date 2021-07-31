@@ -2,101 +2,99 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlan extends StObject {
   
   /**
     * The hourly commitment, in USD.
     */
-  var commitment: js.UndefOr[Amount] = js.native
+  var commitment: js.UndefOr[Amount] = js.undefined
   
   /**
     * The currency.
     */
-  var currency: js.UndefOr[CurrencyCode] = js.native
+  var currency: js.UndefOr[CurrencyCode] = js.undefined
   
   /**
     * The description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The EC2 instance family.
     */
-  var ec2InstanceFamily: js.UndefOr[EC2InstanceFamily] = js.native
+  var ec2InstanceFamily: js.UndefOr[EC2InstanceFamily] = js.undefined
   
   /**
     * The end time.
     */
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the offering.
     */
-  var offeringId: js.UndefOr[SavingsPlanOfferingId] = js.native
+  var offeringId: js.UndefOr[SavingsPlanOfferingId] = js.undefined
   
   /**
     * The payment option.
     */
-  var paymentOption: js.UndefOr[SavingsPlanPaymentOption] = js.native
+  var paymentOption: js.UndefOr[SavingsPlanPaymentOption] = js.undefined
   
   /**
     * The product types.
     */
-  var productTypes: js.UndefOr[SavingsPlanProductTypeList] = js.native
+  var productTypes: js.UndefOr[SavingsPlanProductTypeList] = js.undefined
   
   /**
     * The recurring payment amount.
     */
-  var recurringPaymentAmount: js.UndefOr[Amount] = js.native
+  var recurringPaymentAmount: js.UndefOr[Amount] = js.undefined
   
   /**
     * The AWS Region.
     */
-  var region: js.UndefOr[Region] = js.native
+  var region: js.UndefOr[Region] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Savings Plan.
     */
-  var savingsPlanArn: js.UndefOr[SavingsPlanArn] = js.native
+  var savingsPlanArn: js.UndefOr[SavingsPlanArn] = js.undefined
   
   /**
     * The ID of the Savings Plan.
     */
-  var savingsPlanId: js.UndefOr[SavingsPlanId] = js.native
+  var savingsPlanId: js.UndefOr[SavingsPlanId] = js.undefined
   
   /**
     * The plan type.
     */
-  var savingsPlanType: js.UndefOr[SavingsPlanType] = js.native
+  var savingsPlanType: js.UndefOr[SavingsPlanType] = js.undefined
   
   /**
     * The start time.
     */
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
   
   /**
     * The state.
     */
-  var state: js.UndefOr[SavingsPlanState] = js.native
+  var state: js.UndefOr[SavingsPlanState] = js.undefined
   
   /**
     * One or more tags.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The duration of the term, in seconds.
     */
-  var termDurationInSeconds: js.UndefOr[TermDurationInSeconds] = js.native
+  var termDurationInSeconds: js.UndefOr[TermDurationInSeconds] = js.undefined
   
   /**
     * The up-front payment amount.
     */
-  var upfrontPaymentAmount: js.UndefOr[Amount] = js.native
+  var upfrontPaymentAmount: js.UndefOr[Amount] = js.undefined
 }
 object SavingsPlan {
   

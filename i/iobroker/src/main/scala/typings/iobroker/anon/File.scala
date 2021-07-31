@@ -3,15 +3,13 @@ package typings.iobroker.anon
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
-  var file: String | Buffer = js.native
+  var file: String | Buffer
   
-  var mimeType: String = js.native
+  var mimeType: String
 }
 object File {
   

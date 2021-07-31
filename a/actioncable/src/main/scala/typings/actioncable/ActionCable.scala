@@ -3,23 +3,21 @@ package typings.actioncable
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ActionCable {
   
-  @js.native
   trait Cable extends StObject {
     
-    def connect(): Unit = js.native
+    def connect(): Unit
     
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
-    def ensureActiveConnection(): Unit = js.native
+    def ensureActiveConnection(): Unit
     
-    def send(data: js.Any): Unit = js.native
+    def send(data: js.Any): Unit
     
-    var subscriptions: Subscriptions = js.native
+    var subscriptions: Subscriptions
   }
   object Cable {
     
@@ -55,14 +53,13 @@ object ActionCable {
     }
   }
   
-  @js.native
   trait Channel extends StObject {
     
-    def perform(action: String, data: js.Object): Unit = js.native
+    def perform(action: String, data: js.Object): Unit
     
-    def send(data: js.Any): Boolean = js.native
+    def send(data: js.Any): Boolean
     
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object Channel {
     
@@ -86,11 +83,11 @@ object ActionCable {
     }
   }
   
-  @js.native
   trait ChannelNameWithParams
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var channel: String = js.native
+    var channel: String
   }
   object ChannelNameWithParams {
     
@@ -108,15 +105,15 @@ object ActionCable {
     }
   }
   
-  @js.native
   trait CreateMixin
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var connected: js.UndefOr[js.Function0[Unit]] = js.native
+    var connected: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var disconnected: js.UndefOr[js.Function0[Unit]] = js.native
+    var disconnected: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var received: js.UndefOr[js.Function1[/* obj */ js.Any, Unit]] = js.native
+    var received: js.UndefOr[js.Function1[/* obj */ js.Any, Unit]] = js.undefined
   }
   object CreateMixin {
     

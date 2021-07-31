@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgColorPickerSplitButton
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -20,7 +19,7 @@ trait IgColorPickerSplitButton
     *             Function takes arguments evt and ui.
     * Use ui.item to get a reference the igSplitButton element.
     */
-  var click: js.UndefOr[ClickEvent] = js.native
+  var click: js.UndefOr[ClickEvent] = js.undefined
   
   /**
     * Event fired after the button is collapsed.
@@ -28,7 +27,7 @@ trait IgColorPickerSplitButton
     *             Function takes arguments evt and ui.
     * Use ui.owner to get a reference the igSplitButton.
     */
-  var collapsed: js.UndefOr[CollapsedEvent] = js.native
+  var collapsed: js.UndefOr[CollapsedEvent] = js.undefined
   
   /**
     * Event fired before a button item is collapsed.
@@ -36,19 +35,19 @@ trait IgColorPickerSplitButton
     *             Function takes arguments evt and ui.
     * Use ui.owner to get a reference the igSplitButton.
     */
-  var collapsing: js.UndefOr[CollapsingEvent] = js.native
+  var collapsing: js.UndefOr[CollapsingEvent] = js.undefined
   
   /**
     * Gets/sets the button default color value.
     *
     */
-  var defaultColor: js.UndefOr[String] = js.native
+  var defaultColor: js.UndefOr[String] = js.undefined
   
   /**
     * Default button item name.
     *
     */
-  var defaultItemName: js.UndefOr[String] = js.native
+  var defaultItemName: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after the button is expanded.
@@ -56,7 +55,7 @@ trait IgColorPickerSplitButton
     *             Function takes arguments evt and ui.
     * Use ui.owner to get a reference the igSplitButton.
     */
-  var expanded: js.UndefOr[ExpandedEvent] = js.native
+  var expanded: js.UndefOr[ExpandedEvent] = js.undefined
   
   /**
     * Event fired before a button item is expanded.
@@ -64,25 +63,25 @@ trait IgColorPickerSplitButton
     *             Function takes arguments evt and ui.
     * Use ui.owner to get a reference the igSplitButton.
     */
-  var expanding: js.UndefOr[ExpandingEvent] = js.native
+  var expanding: js.UndefOr[ExpandingEvent] = js.undefined
   
   /**
     * If this option is set to true, the igColorPickerSplitButton will be rendered with an icon.
     *
     */
-  var hasDefaultIcon: js.UndefOr[Boolean] = js.native
+  var hasDefaultIcon: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Button items.
     *
     */
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Specifies whether the default button will be switched when another button is selected.
     *
     */
-  var swapDefaultEnabled: js.UndefOr[Boolean] = js.native
+  var swapDefaultEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object IgColorPickerSplitButton {
   
@@ -144,7 +143,7 @@ object IgColorPickerSplitButton {
     def setHasDefaultIconUndefined: Self = StObject.set(x, "hasDefaultIcon", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

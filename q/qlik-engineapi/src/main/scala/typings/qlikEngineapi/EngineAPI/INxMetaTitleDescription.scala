@@ -2,24 +2,24 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxMetaTitleDescription width extend NxMeta
   */
-@js.native
-trait INxMetaTitleDescription extends INxMeta {
+trait INxMetaTitleDescription
+  extends StObject
+     with INxMeta {
   
   /**
     * Set a description.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Set a title.
     */
-  var title: String = js.native
+  var title: String
 }
 object INxMetaTitleDescription {
   

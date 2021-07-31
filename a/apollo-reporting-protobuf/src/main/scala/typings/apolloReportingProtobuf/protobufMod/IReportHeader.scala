@@ -2,32 +2,30 @@ package typings.apolloReportingProtobuf.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IReportHeader extends StObject {
   
   /** ReportHeader agentVersion */
-  var agentVersion: js.UndefOr[String | Null] = js.native
+  var agentVersion: js.UndefOr[String | Null] = js.undefined
   
   /** ReportHeader executableSchemaId */
-  var executableSchemaId: js.UndefOr[String | Null] = js.native
+  var executableSchemaId: js.UndefOr[String | Null] = js.undefined
   
   /** ReportHeader hostname */
-  var hostname: js.UndefOr[String | Null] = js.native
+  var hostname: js.UndefOr[String | Null] = js.undefined
   
   /** ReportHeader runtimeVersion */
-  var runtimeVersion: js.UndefOr[String | Null] = js.native
+  var runtimeVersion: js.UndefOr[String | Null] = js.undefined
   
   /** ReportHeader schemaTag */
-  var schemaTag: js.UndefOr[String | Null] = js.native
+  var schemaTag: js.UndefOr[String | Null] = js.undefined
   
   /** ReportHeader serviceVersion */
-  var serviceVersion: js.UndefOr[String | Null] = js.native
+  var serviceVersion: js.UndefOr[String | Null] = js.undefined
   
   /** ReportHeader uname */
-  var uname: js.UndefOr[String | Null] = js.native
+  var uname: js.UndefOr[String | Null] = js.undefined
 }
 object IReportHeader {
   

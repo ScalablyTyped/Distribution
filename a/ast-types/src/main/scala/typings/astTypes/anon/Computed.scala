@@ -12,29 +12,27 @@ import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Computed extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var computed: js.UndefOr[Boolean] = js.native
+  var computed: js.UndefOr[Boolean] = js.undefined
   
-  var decorators: js.UndefOr[js.Array[DecoratorKind] | Null] = js.native
+  var decorators: js.UndefOr[js.Array[DecoratorKind] | Null] = js.undefined
   
-  var key: LiteralKind | IdentifierKind | ExpressionKind = js.native
+  var key: LiteralKind | IdentifierKind | ExpressionKind
   
-  var kind: init | get | set = js.native
+  var kind: init | get | set
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var method: js.UndefOr[Boolean] = js.native
+  var method: js.UndefOr[Boolean] = js.undefined
   
-  var shorthand: js.UndefOr[Boolean] = js.native
+  var shorthand: js.UndefOr[Boolean] = js.undefined
   
-  var value: ExpressionKind | PatternKind = js.native
+  var value: ExpressionKind | PatternKind
 }
 object Computed {
   

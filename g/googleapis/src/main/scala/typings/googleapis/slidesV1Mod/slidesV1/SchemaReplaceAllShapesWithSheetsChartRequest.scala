@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,25 +11,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * at least one of the spreadsheets.readonly, spreadsheets, drive.readonly, or
   * drive OAuth scopes.
   */
-@js.native
 trait SchemaReplaceAllShapesWithSheetsChartRequest extends StObject {
   
   /**
     * The ID of the specific chart in the Google Sheets spreadsheet.
     */
-  var chartId: js.UndefOr[Double] = js.native
+  var chartId: js.UndefOr[Double] = js.undefined
   
   /**
     * The criteria that the shapes must match in order to be replaced. The
     * request will replace all of the shapes that contain the given text.
     */
-  var containsText: js.UndefOr[SchemaSubstringMatchCriteria] = js.native
+  var containsText: js.UndefOr[SchemaSubstringMatchCriteria] = js.undefined
   
   /**
     * The mode with which the chart is linked to the source spreadsheet. When
     * not specified, the chart will be an image that is not linked.
     */
-  var linkingMode: js.UndefOr[String] = js.native
+  var linkingMode: js.UndefOr[String] = js.undefined
   
   /**
     * If non-empty, limits the matches to page elements only on the given
@@ -38,12 +36,12 @@ trait SchemaReplaceAllShapesWithSheetsChartRequest extends StObject {
     * notes page or a notes master, or if a page with that object ID
     * doesn&#39;t exist in the presentation.
     */
-  var pageObjectIds: js.UndefOr[js.Array[String]] = js.native
+  var pageObjectIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The ID of the Google Sheets spreadsheet that contains the chart.
     */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
 }
 object SchemaReplaceAllShapesWithSheetsChartRequest {
   

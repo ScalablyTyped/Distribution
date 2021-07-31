@@ -2,17 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxClientSideParametersModel extends StObject {
   
-  def serializeParameters(): Unit = js.native
+  def serializeParameters(): Unit
   
-  def submit(): Unit = js.native
+  def submit(): Unit
   
-  var tabInfo: ASPxClientDocumentPreviewTab = js.native
+  var tabInfo: ASPxClientDocumentPreviewTab
 }
 object ASPxClientSideParametersModel {
   

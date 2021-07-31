@@ -4,13 +4,13 @@ import typings.std.HTMLElement
 import typings.tableau.tableau.VizCreateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("tableau.Viz")
 @js.native
 class Viz protected ()
-  extends typings.tableau.tableau.Viz {
+  extends StObject
+     with typings.tableau.tableau.Viz {
   /**
     * Creates a new Tableau Viz inside of the given HTML container, which is typically a <div> element.
     * Each option as well as the options parameter is optional.

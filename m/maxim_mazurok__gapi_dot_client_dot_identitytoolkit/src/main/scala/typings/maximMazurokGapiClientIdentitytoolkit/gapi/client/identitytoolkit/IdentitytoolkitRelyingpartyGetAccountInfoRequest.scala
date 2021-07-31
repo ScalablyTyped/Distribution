@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitytoolkitRelyingpartyGetAccountInfoRequest extends StObject {
   
   /** GCP project number of the requesting delegated app. Currently only intended for Firebase V1 migration. */
-  var delegatedProjectNumber: js.UndefOr[String] = js.native
+  var delegatedProjectNumber: js.UndefOr[String] = js.undefined
   
   /** The list of emails of the users to inquiry. */
-  var email: js.UndefOr[js.Array[String]] = js.native
+  var email: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The GITKit token of the authenticated user. */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /** The list of local ID's of the users to inquiry. */
-  var localId: js.UndefOr[js.Array[String]] = js.native
+  var localId: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Privileged caller can query users by specified phone number. */
-  var phoneNumber: js.UndefOr[js.Array[String]] = js.native
+  var phoneNumber: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IdentitytoolkitRelyingpartyGetAccountInfoRequest {
   

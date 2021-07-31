@@ -5,24 +5,24 @@ import typings.amapJsApi.amapJsApiStrings.poly
 import typings.amapJsApi.amapJsApiStrings.rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MarkerShape {
   
-  @js.native
-  trait CircleOptions extends Options {
+  trait CircleOptions
+    extends StObject
+       with Options {
     
-    var coords: js.Tuple3[Double, Double, Double] = js.native
+    var coords: js.Tuple3[Double, Double, Double]
     
-    var `type`: circle = js.native
+    var `type`: circle
   }
   object CircleOptions {
     
     @scala.inline
-    def apply(coords: js.Tuple3[Double, Double, Double], `type`: circle): CircleOptions = {
+    def apply(coords: js.Tuple3[Double, Double, Double]): CircleOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("circle")
       __obj.asInstanceOf[CircleOptions]
     }
     
@@ -46,40 +46,41 @@ object MarkerShape {
   object Options {
     
     @scala.inline
-    def CircleOptions(coords: js.Tuple3[Double, Double, Double], `type`: circle): typings.amapJsApi.AMap.MarkerShape.CircleOptions = {
+    def CircleOptions(coords: js.Tuple3[Double, Double, Double]): typings.amapJsApi.AMap.MarkerShape.CircleOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("circle")
       __obj.asInstanceOf[typings.amapJsApi.AMap.MarkerShape.CircleOptions]
     }
     
     @scala.inline
-    def PolyOptions(coords: js.Array[Double], `type`: poly): typings.amapJsApi.AMap.MarkerShape.PolyOptions = {
+    def PolyOptions(coords: js.Array[Double]): typings.amapJsApi.AMap.MarkerShape.PolyOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("poly")
       __obj.asInstanceOf[typings.amapJsApi.AMap.MarkerShape.PolyOptions]
     }
     
     @scala.inline
-    def RectOptions(coords: js.Tuple4[Double, Double, Double, Double], `type`: rect): typings.amapJsApi.AMap.MarkerShape.RectOptions = {
+    def RectOptions(coords: js.Tuple4[Double, Double, Double, Double]): typings.amapJsApi.AMap.MarkerShape.RectOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("rect")
       __obj.asInstanceOf[typings.amapJsApi.AMap.MarkerShape.RectOptions]
     }
   }
   
-  @js.native
-  trait PolyOptions extends Options {
+  trait PolyOptions
+    extends StObject
+       with Options {
     
-    var coords: js.Array[Double] = js.native
+    var coords: js.Array[Double]
     
-    var `type`: poly = js.native
+    var `type`: poly
   }
   object PolyOptions {
     
     @scala.inline
-    def apply(coords: js.Array[Double], `type`: poly): PolyOptions = {
+    def apply(coords: js.Array[Double]): PolyOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("poly")
       __obj.asInstanceOf[PolyOptions]
     }
     
@@ -97,19 +98,20 @@ object MarkerShape {
     }
   }
   
-  @js.native
-  trait RectOptions extends Options {
+  trait RectOptions
+    extends StObject
+       with Options {
     
-    var coords: js.Tuple4[Double, Double, Double, Double] = js.native
+    var coords: js.Tuple4[Double, Double, Double, Double]
     
-    var `type`: rect = js.native
+    var `type`: rect
   }
   object RectOptions {
     
     @scala.inline
-    def apply(coords: js.Tuple4[Double, Double, Double, Double], `type`: rect): RectOptions = {
+    def apply(coords: js.Tuple4[Double, Double, Double, Double]): RectOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("rect")
       __obj.asInstanceOf[RectOptions]
     }
     

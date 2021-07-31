@@ -2,17 +2,15 @@ package typings.ava.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetaInterface extends StObject {
   
   /** Path to the test file being executed. */
-  var file: String = js.native
+  var file: String
   
   /** Directory where snapshots are stored. */
-  var snapshotDirectory: String = js.native
+  var snapshotDirectory: String
 }
 object MetaInterface {
   

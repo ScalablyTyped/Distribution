@@ -3,7 +3,6 @@ package typings.googleCloudTextToSpeech.srcMod
 import typings.googleGax.clientInterfaceMod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* was `typeof v1.TextToSpeechClient` */

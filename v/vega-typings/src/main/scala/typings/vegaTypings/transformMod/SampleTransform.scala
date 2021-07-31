@@ -4,22 +4,22 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.sample
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SampleTransform extends _Transforms {
+trait SampleTransform
+  extends StObject
+     with _Transforms {
   
-  var size: Double | SignalRef = js.native
+  var size: Double | SignalRef
   
-  var `type`: sample = js.native
+  var `type`: sample
 }
 object SampleTransform {
   
   @scala.inline
-  def apply(size: Double | SignalRef, `type`: sample): SampleTransform = {
+  def apply(size: Double | SignalRef): SampleTransform = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sample")
     __obj.asInstanceOf[SampleTransform]
   }
   

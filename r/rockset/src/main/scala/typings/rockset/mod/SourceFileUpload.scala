@@ -2,20 +2,18 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceFileUpload extends StObject {
   
   // name of the file
-  var file_name: String = js.native
+  var file_name: String
   
   // size of the file in bytes
-  var file_size: Double = js.native
+  var file_size: Double
   
   // time of file upload
-  var file_upload_time: String = js.native
+  var file_upload_time: String
 }
 object SourceFileUpload {
   

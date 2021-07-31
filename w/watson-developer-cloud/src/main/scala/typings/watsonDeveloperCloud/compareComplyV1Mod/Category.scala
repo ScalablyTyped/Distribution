@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information defining an element's subject matter. */
-@js.native
 trait Category extends StObject {
   
   /** The category of the associated element. */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /** One or more hashed values that you can send to IBM to provide feedback or receive support. */
-  var provenance_ids: js.UndefOr[js.Array[String]] = js.native
+  var provenance_ids: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Category {
   

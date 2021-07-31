@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * receives a description of a configuration schema as a sequence of events.
   * @since OOo 1.1.2
   */
-@js.native
-trait XSchemaHandler extends XInterface {
+trait XSchemaHandler
+  extends StObject
+     with XInterface {
   
   /**
     * receives notification that the current group has a child node that is an instance of a specified template.
@@ -21,7 +21,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group node in progress currentlyif there already is a node with t
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addInstance(aName: String, aTemplate: TemplateIdentifier): Unit = js.native
+  def addInstance(aName: String, aTemplate: TemplateIdentifier): Unit
   
   /**
     * receives notification that the current set can contain items that are instances of a specified template.
@@ -29,7 +29,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a set node in progress currentlyif the template is not foundif the
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addItemType(aItemType: TemplateIdentifier): Unit = js.native
+  def addItemType(aItemType: TemplateIdentifier): Unit
   
   /**
     * receives notification that a property is added to the current node.
@@ -42,7 +42,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group or extensible node in progress currentlyif a property with
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addProperty(aName: String, aAttributes: Double, aType: `type`): Unit = js.native
+  def addProperty(aName: String, aAttributes: Double, aType: `type`): Unit
   
   /**
     * receives notification that a property having a default value is added to the current node.
@@ -53,7 +53,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group or extensible node in progress currentlyif a property with
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addPropertyWithDefault(aName: String, aAttributes: Double, aDefaultValue: js.Any): Unit = js.native
+  def addPropertyWithDefault(aName: String, aAttributes: Double, aDefaultValue: js.Any): Unit
   
   /**
     * receives notification that a component description is complete.
@@ -62,7 +62,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if invalid data is detected in the componentif there is a unfinished subnode in pr
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endComponent(): Unit = js.native
+  def endComponent(): Unit
   
   /**
     * receives notification that a node description is complete.
@@ -71,7 +71,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if the name is not a the name of the node in progressif invalid data is detected i
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endNode(): Unit = js.native
+  def endNode(): Unit
   
   /**
     * receives notification that the current schema description is complete.
@@ -80,7 +80,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if invalid data is detected in the schemaif there is a unfinished component or tem
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endSchema(): Unit = js.native
+  def endSchema(): Unit
   
   /**
     * receives notification that a template description is complete.
@@ -89,7 +89,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if invalid data is detected in the templateif there is a unfinished subnode in pro
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endTemplate(): Unit = js.native
+  def endTemplate(): Unit
   
   /**
     * receives notification that the schema depends on templates from a different component.
@@ -97,7 +97,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there is a unfinished component or template in progressif no schema is started
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def importComponent(aName: String): Unit = js.native
+  def importComponent(aName: String): Unit
   
   /**
     * receives notification that a component description is started.
@@ -107,7 +107,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there is a unfinished component or template in progressif no schema is started
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def startComponent(aName: String): Unit = js.native
+  def startComponent(aName: String): Unit
   
   /**
     * receives notification that a group description is started.
@@ -119,7 +119,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group node in progress currentlyif there already is a node with t
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def startGroup(aName: String, aAttributes: Double): Unit = js.native
+  def startGroup(aName: String, aAttributes: Double): Unit
   
   /**
     * receives notification that a template description is started for a group.
@@ -131,7 +131,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there is a unfinished component or template in progressif no schema is started
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def startGroupTemplate(aTemplate: TemplateIdentifier, aAttributes: Double): Unit = js.native
+  def startGroupTemplate(aTemplate: TemplateIdentifier, aAttributes: Double): Unit
   
   /**
     * receives notification that a schema description is started.
@@ -140,7 +140,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if a schema is already started (and has not been ended).
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def startSchema(): Unit = js.native
+  def startSchema(): Unit
   
   /**
     * receives notification that a set description is started.
@@ -153,7 +153,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group node in progress currentlyif there already is a node with t
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def startSet(aName: String, aAttributes: Double, aItemType: TemplateIdentifier): Unit = js.native
+  def startSet(aName: String, aAttributes: Double, aItemType: TemplateIdentifier): Unit
   
   /**
     * receives notification that a template description is started for a set.
@@ -166,7 +166,7 @@ trait XSchemaHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there is a unfinished component or template in progressif no schema is started
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def startSetTemplate(aTemplate: TemplateIdentifier, aAttributes: Double, aItemType: TemplateIdentifier): Unit = js.native
+  def startSetTemplate(aTemplate: TemplateIdentifier, aAttributes: Double, aItemType: TemplateIdentifier): Unit
 }
 object XSchemaHandler {
   

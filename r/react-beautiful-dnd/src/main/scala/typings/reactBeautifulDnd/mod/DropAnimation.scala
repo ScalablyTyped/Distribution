@@ -2,21 +2,19 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropAnimation extends StObject {
   
-  var curve: String = js.native
+  var curve: String
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var moveTo: Position = js.native
+  var moveTo: Position
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
 }
 object DropAnimation {
   

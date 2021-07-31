@@ -10,9 +10,9 @@ Convert a C expression to an array of postfix terms
 | ------------------ | :-------------: |
 | Full name          | @tannin/postfix |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 734775 |
+| # downloads        | 1018250 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.webix.webix
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,7 +13,7 @@ trait TreeStateCheckbox extends StObject {
   
   def checkItem(id: String): Unit = js.native
   
-  def getChecked(): js.Array[_] = js.native
+  def getChecked(): js.Array[js.Any] = js.native
   
   def isChecked(id: String): Boolean = js.native
   def isChecked(id: Double): Boolean = js.native

@@ -3,27 +3,28 @@ package typings.gulpRename
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-rename", JSImport.Namespace)
-  @js.native
-  def apply(callback: js.Function1[/* path */ ParsedPath, _]): ReadWriteStream = js.native
-  @JSImport("gulp-rename", JSImport.Namespace)
-  @js.native
-  def apply(name: String): ReadWriteStream = js.native
-  @JSImport("gulp-rename", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): ReadWriteStream = js.native
+  @scala.inline
+  def apply(callback: js.Function1[/* path */ ParsedPath, js.Any]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(name: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-rename", JSImport.Namespace)
   @js.native
-  trait Options extends ParsedPath {
+  val ^ : js.Any = js.native
+  
+  trait Options
+    extends StObject
+       with ParsedPath {
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -50,14 +51,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedPath extends StObject {
     
-    var basename: js.UndefOr[String] = js.native
+    var basename: js.UndefOr[String] = js.undefined
     
-    var dirname: js.UndefOr[String] = js.native
+    var dirname: js.UndefOr[String] = js.undefined
     
-    var extname: js.UndefOr[String] = js.native
+    var extname: js.UndefOr[String] = js.undefined
   }
   object ParsedPath {
     

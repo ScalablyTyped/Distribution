@@ -2,27 +2,25 @@ package typings.jsrsasign.jsrsasign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ECPointFp extends StObject {
   
-  var curve: ECFieldElementFp = js.native
+  var curve: ECFieldElementFp
   
-  var x: ECFieldElementFp = js.native
+  var x: ECFieldElementFp
   
-  var y: ECFieldElementFp = js.native
+  var y: ECFieldElementFp
   
-  var z: BigInteger = js.native
+  var z: BigInteger
   
-  var zinv: BigInteger | Null = js.native
+  var zinv: BigInteger | Null
 }
 object ECPointFp {
   
   @scala.inline
   def apply(curve: ECFieldElementFp, x: ECFieldElementFp, y: ECFieldElementFp, z: BigInteger): ECPointFp = {
-    val __obj = js.Dynamic.literal(curve = curve.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(curve = curve.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], zinv = null)
     __obj.asInstanceOf[ECPointFp]
   }
   

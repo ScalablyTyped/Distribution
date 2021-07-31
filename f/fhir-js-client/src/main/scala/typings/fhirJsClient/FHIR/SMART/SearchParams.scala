@@ -2,19 +2,19 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FHIR Search parameter : The parameter used to by the FHIR api methods to perform search on a particular resource.
   */
-@js.native
-trait SearchParams extends CommonQueryFilters {
+trait SearchParams
+  extends StObject
+     with CommonQueryFilters {
   
   /**
     * The patient id. If provided, will make the search query patient specific by adding the patien query parameter
     */
-  var patient: js.UndefOr[String] = js.native
+  var patient: js.UndefOr[String] = js.undefined
   
   /**
     * The Search filter query object
@@ -41,12 +41,12 @@ trait SearchParams extends CommonQueryFilters {
     * {'subject.name': {$exact: 'maud'}}
     * //=> subject.name:exact=maud
     */
-  var query: js.UndefOr[js.Any] = js.native
+  var query: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The name of the resource type on which the query is performed
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object SearchParams {
   

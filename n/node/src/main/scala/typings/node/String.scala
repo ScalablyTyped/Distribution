@@ -2,24 +2,22 @@ package typings.node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Node.js ESNEXT support
-@js.native
 trait String extends StObject {
   
   /** Returns a copy with trailing whitespace removed. */
-  def trimEnd(): java.lang.String = js.native
+  def trimEnd(): java.lang.String
   
   /** Removes whitespace from the left end of a string. */
-  def trimLeft(): java.lang.String = js.native
+  def trimLeft(): java.lang.String
   
   /** Removes whitespace from the right end of a string. */
-  def trimRight(): java.lang.String = js.native
+  def trimRight(): java.lang.String
   
   /** Returns a copy with leading whitespace removed. */
-  def trimStart(): java.lang.String = js.native
+  def trimStart(): java.lang.String
 }
 object String {
   

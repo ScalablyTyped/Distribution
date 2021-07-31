@@ -7,12 +7,11 @@ import typings.webpack.webpackStrings.empty
 import typings.webpack.webpackStrings.mock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeOptions
-  extends /**
+  extends StObject
+     with /**
 	 * Include a polyfill for the node.js module
 	 */
 /* k */ StringDictionary[`false` | `true` | mock | empty] {
@@ -20,32 +19,32 @@ trait NodeOptions
   /**
   	 * Include a polyfill for the 'Buffer' variable
   	 */
-  var Buffer: js.UndefOr[`false` | `true` | mock] = js.native
+  var Buffer: js.UndefOr[`false` | `true` | mock] = js.undefined
   
   /**
   	 * Include a polyfill for the '__dirname' variable
   	 */
-  var __dirname: js.UndefOr[`false` | `true` | mock] = js.native
+  var __dirname: js.UndefOr[`false` | `true` | mock] = js.undefined
   
   /**
   	 * Include a polyfill for the '__filename' variable
   	 */
-  var __filename: js.UndefOr[`false` | `true` | mock] = js.native
+  var __filename: js.UndefOr[`false` | `true` | mock] = js.undefined
   
   /**
   	 * Include a polyfill for the 'console' variable
   	 */
-  var console: js.UndefOr[`false` | `true` | mock] = js.native
+  var console: js.UndefOr[`false` | `true` | mock] = js.undefined
   
   /**
   	 * Include a polyfill for the 'global' variable
   	 */
-  var global: js.UndefOr[Boolean] = js.native
+  var global: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Include a polyfill for the 'process' variable
   	 */
-  var process: js.UndefOr[`false` | `true` | mock] = js.native
+  var process: js.UndefOr[`false` | `true` | mock] = js.undefined
 }
 object NodeOptions {
   

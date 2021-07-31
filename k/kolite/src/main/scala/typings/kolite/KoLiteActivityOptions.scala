@@ -2,30 +2,28 @@ package typings.kolite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Activity /////////////////////////////////////////////
-@js.native
 trait KoLiteActivityOptions extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[js.Any] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var segments: js.UndefOr[Double] = js.native
+  var segments: js.UndefOr[Double] = js.undefined
   
-  var space: js.UndefOr[Double] = js.native
+  var space: js.UndefOr[Double] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
-  var valign: js.UndefOr[String] = js.native
+  var valign: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object KoLiteActivityOptions {
   

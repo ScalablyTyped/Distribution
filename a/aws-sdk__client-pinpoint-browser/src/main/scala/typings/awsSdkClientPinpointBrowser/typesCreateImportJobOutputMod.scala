@@ -5,24 +5,24 @@ import typings.awsSdkClientPinpointBrowser.typesImportJobResponseMod.Unmarshalle
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCreateImportJobOutputMod {
   
-  @js.native
-  trait CreateImportJobOutput extends OutputTypesUnion {
+  trait CreateImportJobOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * Import job response.
       */
-    var ImportJobResponse: UnmarshalledImportJobResponse = js.native
+    var ImportJobResponse: UnmarshalledImportJobResponse
   }
   object CreateImportJobOutput {
     

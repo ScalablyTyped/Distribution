@@ -10,9 +10,9 @@ SNTP Client
 | ------------------ | :-------------: |
 | Full name          | @hapi/sntp |
 | Keywords           | sntp, ntp, time |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 507546 |
+| # downloads        | 599201 |
 | # stars            | 0 |
 
 ## Links

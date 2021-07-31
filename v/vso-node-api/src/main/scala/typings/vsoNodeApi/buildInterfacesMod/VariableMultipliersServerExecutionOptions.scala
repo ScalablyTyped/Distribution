@@ -2,23 +2,23 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VariableMultipliersServerExecutionOptions extends ServerTargetExecutionOptions {
+trait VariableMultipliersServerExecutionOptions
+  extends StObject
+     with ServerTargetExecutionOptions {
   
   /**
     * Indicates whether failure of one job should prevent the phase from running in other jobs.
     */
-  var continueOnError: Boolean = js.native
+  var continueOnError: Boolean
   
   /**
     * The maximum number of server jobs to run in parallel.
     */
-  var maxConcurrency: Double = js.native
+  var maxConcurrency: Double
   
-  var multipliers: js.Array[String] = js.native
+  var multipliers: js.Array[String]
 }
 object VariableMultipliersServerExecutionOptions {
   

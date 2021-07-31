@@ -2,7 +2,6 @@ package typings.hypertextApplicationLanguage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Hal {
@@ -12,24 +11,23 @@ object Hal {
     *
     * https://tools.ietf.org/html/draft-kelly-json-hal-06#section-5
     */
-  @js.native
   trait Link extends StObject {
     
-    var deprecation: js.UndefOr[String] = js.native
+    var deprecation: js.UndefOr[String] = js.undefined
     
-    var href: String = js.native
+    var href: String
     
-    var hreflang: js.UndefOr[String] = js.native
+    var hreflang: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var profile: js.UndefOr[String] = js.native
+    var profile: js.UndefOr[String] = js.undefined
     
-    var templated: js.UndefOr[Boolean] = js.native
+    var templated: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Link {
     

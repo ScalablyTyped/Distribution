@@ -16,21 +16,19 @@ import typings.std.Selection
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dom {
   
-  @js.native
   trait bookmark extends StObject {
     
-    var collapsed: Boolean = js.native
+    var collapsed: Boolean
     
-    var endNode: node | String = js.native
+    var endNode: node | String
     
-    var serializable: Boolean = js.native
+    var serializable: Boolean
     
-    var startNode: node | String = js.native
+    var startNode: node | String
   }
   object bookmark {
     
@@ -57,22 +55,21 @@ object dom {
     }
   }
   
-  @js.native
   trait bookmark2 extends StObject {
     
-    var collapsed: Boolean = js.native
+    var collapsed: Boolean
     
-    var end: js.Array[Double] = js.native
+    var end: js.Array[Double]
     
-    var endOffset: Double = js.native
+    var endOffset: Double
     
-    var is2: Boolean = js.native
+    var is2: Boolean
     
-    var normalized: Boolean = js.native
+    var normalized: Boolean
     
-    var start: js.Array[Double] = js.native
+    var start: js.Array[Double]
     
-    var startOffset: Double = js.native
+    var startOffset: Double
   }
   object bookmark2 {
     
@@ -123,13 +120,17 @@ object dom {
   }
   
   @js.native
-  trait comment extends node {
+  trait comment
+    extends StObject
+       with node {
     
     def getOuterHtml(): String = js.native
   }
   
   @js.native
-  trait document extends domObject {
+  trait document
+    extends StObject
+       with domObject {
     
     @JSName("$")
     val $_document: Document = js.native
@@ -153,8 +154,8 @@ object dom {
     
     def getBody(): element = js.native
     
-    def getByAddress(address: js.Array[_]): node = js.native
-    def getByAddress(address: js.Array[_], normalized: Boolean): node = js.native
+    def getByAddress(address: js.Array[js.Any]): node = js.native
+    def getByAddress(address: js.Array[js.Any], normalized: Boolean): node = js.native
     
     def getById(elementId: String): element = js.native
     
@@ -174,14 +175,17 @@ object dom {
   }
   
   @js.native
-  trait documentFragment extends node {
+  trait documentFragment
+    extends StObject
+       with node {
     
     def insertAfterNode(node: node): Unit = js.native
   }
   
   @js.native
   trait domObject
-    extends typings.ckeditor.CKEDITOR.event {
+    extends StObject
+       with typings.ckeditor.CKEDITOR.event {
     
     @JSName("$")
     val $: js.Any = js.native
@@ -202,7 +206,9 @@ object dom {
   }
   
   @js.native
-  trait element extends node {
+  trait element
+    extends StObject
+       with node {
     
     @JSName("$")
     val $_element: HTMLElement = js.native
@@ -241,23 +247,19 @@ object dom {
     def focus(defer: Boolean): Unit = js.native
     
     def focusNext(): Unit = js.native
-    def focusNext(ignoreChildren: js.UndefOr[scala.Nothing], indexToUse: Double): Unit = js.native
     def focusNext(ignoreChildren: Boolean): Unit = js.native
     def focusNext(ignoreChildren: Boolean, indexToUse: Double): Unit = js.native
+    def focusNext(ignoreChildren: Unit, indexToUse: Double): Unit = js.native
     
     def focusPrevious(): Unit = js.native
-    def focusPrevious(ignoreChildren: js.UndefOr[scala.Nothing], indexToUse: Double): Unit = js.native
     def focusPrevious(ignoreChildren: Boolean): Unit = js.native
     def focusPrevious(ignoreChildren: Boolean, indexToUse: Double): Unit = js.native
+    def focusPrevious(ignoreChildren: Unit, indexToUse: Double): Unit = js.native
     
     def forEach(callback: js.Function1[/* node */ node, Unit]): Unit = js.native
-    def forEach(
-      callback: js.Function1[/* node */ node, Unit],
-      `type`: js.UndefOr[scala.Nothing],
-      skipRoot: Boolean
-    ): Unit = js.native
     def forEach(callback: js.Function1[/* node */ node, Unit], `type`: Double): Unit = js.native
     def forEach(callback: js.Function1[/* node */ node, Unit], `type`: Double, skipRoot: Boolean): Unit = js.native
+    def forEach(callback: js.Function1[/* node */ node, Unit], `type`: Unit, skipRoot: Boolean): Unit = js.native
     
     def getAttribute(name: String): String = js.native
     
@@ -373,9 +375,9 @@ object dom {
     def setSize(`type`: String, size: Double, isBorderBox: Boolean): Unit = js.native
     
     def setState(state: Double): Unit = js.native
-    def setState(state: Double, base: js.UndefOr[scala.Nothing], useAria: Boolean): Unit = js.native
     def setState(state: Double, base: String): Unit = js.native
     def setState(state: Double, base: String, useAria: Boolean): Unit = js.native
+    def setState(state: Double, base: Unit, useAria: Boolean): Unit = js.native
     
     def setStyle(name: String, value: String): element = js.native
     
@@ -400,29 +402,25 @@ object dom {
     def compare(otherPath: elementPath): Boolean = js.native
     
     def contains(query: String): element = js.native
-    def contains(query: String, excludeRoot: js.UndefOr[scala.Nothing], fromTop: Boolean): element = js.native
     def contains(query: String, excludeRoot: Boolean): element = js.native
     def contains(query: String, excludeRoot: Boolean, fromTop: Boolean): element = js.native
+    def contains(query: String, excludeRoot: Unit, fromTop: Boolean): element = js.native
     def contains(query: js.Array[String]): element = js.native
-    def contains(query: js.Array[String], excludeRoot: js.UndefOr[scala.Nothing], fromTop: Boolean): element = js.native
     def contains(query: js.Array[String], excludeRoot: Boolean): element = js.native
     def contains(query: js.Array[String], excludeRoot: Boolean, fromTop: Boolean): element = js.native
+    def contains(query: js.Array[String], excludeRoot: Unit, fromTop: Boolean): element = js.native
     def contains(query: js.Function1[/* element */ element, Boolean]): element = js.native
-    def contains(
-      query: js.Function1[/* element */ element, Boolean],
-      excludeRoot: js.UndefOr[scala.Nothing],
-      fromTop: Boolean
-    ): element = js.native
     def contains(query: js.Function1[/* element */ element, Boolean], excludeRoot: Boolean): element = js.native
     def contains(query: js.Function1[/* element */ element, Boolean], excludeRoot: Boolean, fromTop: Boolean): element = js.native
+    def contains(query: js.Function1[/* element */ element, Boolean], excludeRoot: Unit, fromTop: Boolean): element = js.native
     def contains(query: StringDictionary[js.Any]): element = js.native
-    def contains(query: StringDictionary[js.Any], excludeRoot: js.UndefOr[scala.Nothing], fromTop: Boolean): element = js.native
     def contains(query: StringDictionary[js.Any], excludeRoot: Boolean): element = js.native
     def contains(query: StringDictionary[js.Any], excludeRoot: Boolean, fromTop: Boolean): element = js.native
+    def contains(query: StringDictionary[js.Any], excludeRoot: Unit, fromTop: Boolean): element = js.native
     def contains(query: element): element = js.native
-    def contains(query: element, excludeRoot: js.UndefOr[scala.Nothing], fromTop: Boolean): element = js.native
     def contains(query: element, excludeRoot: Boolean): element = js.native
     def contains(query: element, excludeRoot: Boolean, fromTop: Boolean): element = js.native
+    def contains(query: element, excludeRoot: Unit, fromTop: Boolean): element = js.native
     
     def direction(): ltr | rtl = js.native
     
@@ -452,39 +450,12 @@ object dom {
     def on(
       eventName: String,
       listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
-      scopeObj: js.UndefOr[scala.Nothing],
-      listenerData: js.UndefOr[scala.Nothing],
-      priority: Double
-    ): RemoveListener = js.native
-    def on(
-      eventName: String,
-      listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
-      scopeObj: js.UndefOr[scala.Nothing],
-      listenerData: js.Any
-    ): RemoveListener = js.native
-    def on(
-      eventName: String,
-      listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
-      scopeObj: js.UndefOr[scala.Nothing],
-      listenerData: js.Any,
-      priority: Double
-    ): RemoveListener = js.native
-    def on(
-      eventName: String,
-      listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
       scopeObj: js.Any
     ): RemoveListener = js.native
     def on(
       eventName: String,
       listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
       scopeObj: js.Any,
-      listenerData: js.UndefOr[scala.Nothing],
-      priority: Double
-    ): RemoveListener = js.native
-    def on(
-      eventName: String,
-      listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
-      scopeObj: js.Any,
       listenerData: js.Any
     ): RemoveListener = js.native
     def on(
@@ -492,6 +463,33 @@ object dom {
       listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
       scopeObj: js.Any,
       listenerData: js.Any,
+      priority: Double
+    ): RemoveListener = js.native
+    def on(
+      eventName: String,
+      listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
+      scopeObj: js.Any,
+      listenerData: Unit,
+      priority: Double
+    ): RemoveListener = js.native
+    def on(
+      eventName: String,
+      listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
+      scopeObj: Unit,
+      listenerData: js.Any
+    ): RemoveListener = js.native
+    def on(
+      eventName: String,
+      listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
+      scopeObj: Unit,
+      listenerData: js.Any,
+      priority: Double
+    ): RemoveListener = js.native
+    def on(
+      eventName: String,
+      listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
+      scopeObj: Unit,
+      listenerData: Unit,
       priority: Double
     ): RemoveListener = js.native
     
@@ -521,7 +519,9 @@ object dom {
   }
   
   @js.native
-  trait node extends domObject {
+  trait node
+    extends StObject
+       with domObject {
     
     def appendTo(element: element): element = js.native
     
@@ -544,29 +544,17 @@ object dom {
     def getNext(evaluator: js.Function1[/* node */ this.type, Boolean]): node = js.native
     
     def getNextSourceNode(): node = js.native
-    def getNextSourceNode(
-      startFromSibling: js.UndefOr[scala.Nothing],
-      nodeType: js.UndefOr[scala.Nothing],
-      guard: js.Function1[/* node */ this.type, Boolean]
-    ): node = js.native
-    def getNextSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: js.UndefOr[scala.Nothing], guard: node): node = js.native
-    def getNextSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: Double): node = js.native
-    def getNextSourceNode(
-      startFromSibling: js.UndefOr[scala.Nothing],
-      nodeType: Double,
-      guard: js.Function1[/* node */ this.type, Boolean]
-    ): node = js.native
-    def getNextSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: Double, guard: node): node = js.native
     def getNextSourceNode(startFromSibling: Boolean): node = js.native
-    def getNextSourceNode(
-      startFromSibling: Boolean,
-      nodeType: js.UndefOr[scala.Nothing],
-      guard: js.Function1[/* node */ this.type, Boolean]
-    ): node = js.native
-    def getNextSourceNode(startFromSibling: Boolean, nodeType: js.UndefOr[scala.Nothing], guard: node): node = js.native
     def getNextSourceNode(startFromSibling: Boolean, nodeType: Double): node = js.native
     def getNextSourceNode(startFromSibling: Boolean, nodeType: Double, guard: js.Function1[/* node */ this.type, Boolean]): node = js.native
     def getNextSourceNode(startFromSibling: Boolean, nodeType: Double, guard: node): node = js.native
+    def getNextSourceNode(startFromSibling: Boolean, nodeType: Unit, guard: js.Function1[/* node */ this.type, Boolean]): node = js.native
+    def getNextSourceNode(startFromSibling: Boolean, nodeType: Unit, guard: node): node = js.native
+    def getNextSourceNode(startFromSibling: Unit, nodeType: Double): node = js.native
+    def getNextSourceNode(startFromSibling: Unit, nodeType: Double, guard: js.Function1[/* node */ this.type, Boolean]): node = js.native
+    def getNextSourceNode(startFromSibling: Unit, nodeType: Double, guard: node): node = js.native
+    def getNextSourceNode(startFromSibling: Unit, nodeType: Unit, guard: js.Function1[/* node */ this.type, Boolean]): node = js.native
+    def getNextSourceNode(startFromSibling: Unit, nodeType: Unit, guard: node): node = js.native
     
     def getParent(): element = js.native
     def getParent(allowFragmentParent: Boolean): element = js.native
@@ -580,29 +568,17 @@ object dom {
     def getPrevious(evaluator: js.Function1[/* node */ this.type, Boolean]): node = js.native
     
     def getPreviousSourceNode(): node = js.native
-    def getPreviousSourceNode(
-      startFromSibling: js.UndefOr[scala.Nothing],
-      nodeType: js.UndefOr[scala.Nothing],
-      guard: js.Function1[/* node */ this.type, Boolean]
-    ): node = js.native
-    def getPreviousSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: js.UndefOr[scala.Nothing], guard: node): node = js.native
-    def getPreviousSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: Double): node = js.native
-    def getPreviousSourceNode(
-      startFromSibling: js.UndefOr[scala.Nothing],
-      nodeType: Double,
-      guard: js.Function1[/* node */ this.type, Boolean]
-    ): node = js.native
-    def getPreviousSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: Double, guard: node): node = js.native
     def getPreviousSourceNode(startFromSibling: Boolean): node = js.native
-    def getPreviousSourceNode(
-      startFromSibling: Boolean,
-      nodeType: js.UndefOr[scala.Nothing],
-      guard: js.Function1[/* node */ this.type, Boolean]
-    ): node = js.native
-    def getPreviousSourceNode(startFromSibling: Boolean, nodeType: js.UndefOr[scala.Nothing], guard: node): node = js.native
     def getPreviousSourceNode(startFromSibling: Boolean, nodeType: Double): node = js.native
     def getPreviousSourceNode(startFromSibling: Boolean, nodeType: Double, guard: js.Function1[/* node */ this.type, Boolean]): node = js.native
     def getPreviousSourceNode(startFromSibling: Boolean, nodeType: Double, guard: node): node = js.native
+    def getPreviousSourceNode(startFromSibling: Boolean, nodeType: Unit, guard: js.Function1[/* node */ this.type, Boolean]): node = js.native
+    def getPreviousSourceNode(startFromSibling: Boolean, nodeType: Unit, guard: node): node = js.native
+    def getPreviousSourceNode(startFromSibling: Unit, nodeType: Double): node = js.native
+    def getPreviousSourceNode(startFromSibling: Unit, nodeType: Double, guard: js.Function1[/* node */ this.type, Boolean]): node = js.native
+    def getPreviousSourceNode(startFromSibling: Unit, nodeType: Double, guard: node): node = js.native
+    def getPreviousSourceNode(startFromSibling: Unit, nodeType: Unit, guard: js.Function1[/* node */ this.type, Boolean]): node = js.native
+    def getPreviousSourceNode(startFromSibling: Unit, nodeType: Unit, guard: node): node = js.native
     
     def hasAscendant(name: String, includeSelf: Boolean): Boolean = js.native
     
@@ -632,14 +608,13 @@ object dom {
     var `type`: Double = js.native
   }
   
-  @js.native
   trait nodeList extends StObject {
     
-    def count(): Double = js.native
+    def count(): Double
     
-    def getItem(index: Double): node = js.native
+    def getItem(index: Double): node
     
-    def toArray(): js.Array[node] = js.native
+    def toArray(): js.Array[node]
   }
   object nodeList {
     
@@ -663,12 +638,11 @@ object dom {
     }
   }
   
-  @js.native
   trait position extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object position {
     
@@ -732,37 +706,25 @@ object dom {
     def enlarge(unit: Double, excludeBrs: Boolean): Unit = js.native
     
     def extractContents(): documentFragment = js.native
-    def extractContents(mergeThen: js.UndefOr[scala.Nothing], cloneId: Boolean): documentFragment = js.native
     def extractContents(mergeThen: Boolean): documentFragment = js.native
     def extractContents(mergeThen: Boolean, cloneId: Boolean): documentFragment = js.native
+    def extractContents(mergeThen: Unit, cloneId: Boolean): documentFragment = js.native
     
     def fixBlock(isStart: Boolean, blockTag: String): element = js.native
     
     def getBoundaryNodes(): EndNode = js.native
     
     def getCommonAncestor(): element = js.native
-    def getCommonAncestor(includeSelf: js.UndefOr[scala.Nothing], ignoreTextNode: Boolean): element = js.native
     def getCommonAncestor(includeSelf: Boolean): element = js.native
     def getCommonAncestor(includeSelf: Boolean, ignoreTextNode: Boolean): element = js.native
+    def getCommonAncestor(includeSelf: Unit, ignoreTextNode: Boolean): element = js.native
     
     def getEnclosedNode(): node = js.native
     
     def getNextEditableNode(): element | text = js.native
     
     def getNextNode(): element = js.native
-    def getNextNode(evaluator: js.UndefOr[scala.Nothing], guard: js.UndefOr[scala.Nothing], boundary: element): element = js.native
-    def getNextNode(evaluator: js.UndefOr[scala.Nothing], guard: js.Function1[/* element */ element, Boolean]): element = js.native
-    def getNextNode(
-      evaluator: js.UndefOr[scala.Nothing],
-      guard: js.Function1[/* element */ element, Boolean],
-      boundary: element
-    ): element = js.native
     def getNextNode(evaluator: js.Function1[/* element */ element, Boolean]): element = js.native
-    def getNextNode(
-      evaluator: js.Function1[/* element */ element, Boolean],
-      guard: js.UndefOr[scala.Nothing],
-      boundary: element
-    ): element = js.native
     def getNextNode(
       evaluator: js.Function1[/* element */ element, Boolean],
       guard: js.Function1[/* element */ element, Boolean]
@@ -772,23 +734,15 @@ object dom {
       guard: js.Function1[/* element */ element, Boolean],
       boundary: element
     ): element = js.native
+    def getNextNode(evaluator: js.Function1[/* element */ element, Boolean], guard: Unit, boundary: element): element = js.native
+    def getNextNode(evaluator: Unit, guard: js.Function1[/* element */ element, Boolean]): element = js.native
+    def getNextNode(evaluator: Unit, guard: js.Function1[/* element */ element, Boolean], boundary: element): element = js.native
+    def getNextNode(evaluator: Unit, guard: Unit, boundary: element): element = js.native
     
     def getPreviousEditableNode(): element | text = js.native
     
     def getPreviousNode(): element = js.native
-    def getPreviousNode(evaluator: js.UndefOr[scala.Nothing], guard: js.UndefOr[scala.Nothing], boundary: element): element = js.native
-    def getPreviousNode(evaluator: js.UndefOr[scala.Nothing], guard: js.Function1[/* element */ element, Boolean]): element = js.native
-    def getPreviousNode(
-      evaluator: js.UndefOr[scala.Nothing],
-      guard: js.Function1[/* element */ element, Boolean],
-      boundary: element
-    ): element = js.native
     def getPreviousNode(evaluator: js.Function1[/* element */ element, Boolean]): element = js.native
-    def getPreviousNode(
-      evaluator: js.Function1[/* element */ element, Boolean],
-      guard: js.UndefOr[scala.Nothing],
-      boundary: element
-    ): element = js.native
     def getPreviousNode(
       evaluator: js.Function1[/* element */ element, Boolean],
       guard: js.Function1[/* element */ element, Boolean]
@@ -798,6 +752,10 @@ object dom {
       guard: js.Function1[/* element */ element, Boolean],
       boundary: element
     ): element = js.native
+    def getPreviousNode(evaluator: js.Function1[/* element */ element, Boolean], guard: Unit, boundary: element): element = js.native
+    def getPreviousNode(evaluator: Unit, guard: js.Function1[/* element */ element, Boolean]): element = js.native
+    def getPreviousNode(evaluator: Unit, guard: js.Function1[/* element */ element, Boolean], boundary: element): element = js.native
+    def getPreviousNode(evaluator: Unit, guard: Unit, boundary: element): element = js.native
     
     def getTouchedEndNode(): node = js.native
     
@@ -809,7 +767,7 @@ object dom {
     def moveToBookmark(bookmark: bookmark2): Unit = js.native
     
     def moveToClosestEditablePosition(): Boolean = js.native
-    def moveToClosestEditablePosition(element: js.UndefOr[scala.Nothing], isMoveForward: Boolean): Boolean = js.native
+    def moveToClosestEditablePosition(element: Unit, isMoveForward: Boolean): Boolean = js.native
     def moveToClosestEditablePosition(element: element): Boolean = js.native
     def moveToClosestEditablePosition(element: element, isMoveForward: Boolean): Boolean = js.native
     
@@ -854,11 +812,11 @@ object dom {
     def setStartBefore(node: node): Unit = js.native
     
     def shrink(mode: Double): Unit = js.native
-    def shrink(mode: Double, selectContents: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
-    def shrink(mode: Double, selectContents: js.UndefOr[scala.Nothing], options: shrinkOptions): Unit = js.native
     def shrink(mode: Double, selectContents: Boolean): Unit = js.native
     def shrink(mode: Double, selectContents: Boolean, options: Boolean): Unit = js.native
     def shrink(mode: Double, selectContents: Boolean, options: shrinkOptions): Unit = js.native
+    def shrink(mode: Double, selectContents: Unit, options: Boolean): Unit = js.native
+    def shrink(mode: Double, selectContents: Unit, options: shrinkOptions): Unit = js.native
     
     def splitBlock(): Unit = js.native
     def splitBlock(cloneId: Boolean): Unit = js.native
@@ -873,9 +831,9 @@ object dom {
     def startPath(): elementPath = js.native
     
     def trim(): Unit = js.native
-    def trim(ignoreStart: js.UndefOr[scala.Nothing], ignoreEnd: Boolean): Unit = js.native
     def trim(ignoreStart: Boolean): Unit = js.native
     def trim(ignoreStart: Boolean, ignoreEnd: Boolean): Unit = js.native
+    def trim(ignoreStart: Unit, ignoreEnd: Boolean): Unit = js.native
   }
   
   @js.native
@@ -961,12 +919,11 @@ object dom {
     def unlock(restore: Boolean): Unit = js.native
   }
   
-  @js.native
   trait shrinkOptions extends StObject {
     
-    var shrinkOnBlockBoundary: js.UndefOr[Boolean] = js.native
+    var shrinkOnBlockBoundary: js.UndefOr[Boolean] = js.undefined
     
-    var skipBogus: js.UndefOr[Boolean] = js.native
+    var skipBogus: js.UndefOr[Boolean] = js.undefined
   }
   object shrinkOptions {
     
@@ -994,7 +951,9 @@ object dom {
   }
   
   @js.native
-  trait text extends node {
+  trait text
+    extends StObject
+       with node {
     
     @JSName("$")
     val $_text: Text = js.native
@@ -1036,12 +995,11 @@ object dom {
     def reset(): Unit = js.native
   }
   
-  @js.native
   trait widthAndHeight extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object widthAndHeight {
     
@@ -1063,7 +1021,9 @@ object dom {
   }
   
   @js.native
-  trait window extends domObject {
+  trait window
+    extends StObject
+       with domObject {
     
     def focus(): Unit = js.native
     

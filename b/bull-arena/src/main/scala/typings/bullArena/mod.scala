@@ -14,17 +14,18 @@ import typings.expressServeStaticCore.mod.Query
 import typings.redis.mod.ClientOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: MiddlewareOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: MiddlewareOptions, listenOptions: MiddlewareListenOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], listenOptions.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("bull-arena", JSImport.Namespace)
   @js.native
-  def apply(options: MiddlewareOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("bull-arena", JSImport.Namespace)
-  @js.native
-  def apply(options: MiddlewareOptions, listenOptions: MiddlewareListenOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   object BullArena {
     
@@ -55,18 +56,17 @@ object mod {
       }
     }
     
-    @js.native
     trait MiddlewareListenOptions extends StObject {
       
-      var basePath: js.UndefOr[String] = js.native
+      var basePath: js.UndefOr[String] = js.undefined
       
-      var disableListen: js.UndefOr[Boolean] = js.native
+      var disableListen: js.UndefOr[Boolean] = js.undefined
       
-      var host: js.UndefOr[String] = js.native
+      var host: js.UndefOr[String] = js.undefined
       
-      var port: js.UndefOr[Double] = js.native
+      var port: js.UndefOr[Double] = js.undefined
       
-      var useCdn: js.UndefOr[Boolean] = js.native
+      var useCdn: js.UndefOr[Boolean] = js.undefined
     }
     object MiddlewareListenOptions {
       
@@ -111,21 +111,20 @@ object mod {
       }
     }
     
-    @js.native
     trait MiddlewareOptions extends StObject {
       
-      var Bee: js.UndefOr[QueueConstructor] = js.native
+      var Bee: js.UndefOr[QueueConstructor] = js.undefined
       
-      var Bull: js.UndefOr[QueueConstructor] = js.native
+      var Bull: js.UndefOr[QueueConstructor] = js.undefined
       
-      var BullMQ: js.UndefOr[QueueConstructor] = js.native
+      var BullMQ: js.UndefOr[QueueConstructor] = js.undefined
       
-      var queues: js.Array[QueueOptions with ConnectionOptions] = js.native
+      var queues: js.Array[QueueOptions & ConnectionOptions]
     }
     object MiddlewareOptions {
       
       @scala.inline
-      def apply(queues: js.Array[QueueOptions with ConnectionOptions]): MiddlewareOptions = {
+      def apply(queues: js.Array[QueueOptions & ConnectionOptions]): MiddlewareOptions = {
         val __obj = js.Dynamic.literal(queues = queues.asInstanceOf[js.Any])
         __obj.asInstanceOf[MiddlewareOptions]
       }
@@ -152,23 +151,24 @@ object mod {
         def setBullUndefined: Self = StObject.set(x, "Bull", js.undefined)
         
         @scala.inline
-        def setQueues(value: js.Array[QueueOptions with ConnectionOptions]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
+        def setQueues(value: js.Array[QueueOptions & ConnectionOptions]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setQueuesVarargs(value: (QueueOptions with ConnectionOptions)*): Self = StObject.set(x, "queues", js.Array(value :_*))
+        def setQueuesVarargs(value: (QueueOptions & ConnectionOptions)*): Self = StObject.set(x, "queues", js.Array(value :_*))
       }
     }
     
-    @js.native
-    trait PortHostConnectionOptions extends ConnectionOptions {
+    trait PortHostConnectionOptions
+      extends StObject
+         with ConnectionOptions {
       
-      var db: js.UndefOr[String] = js.native
+      var db: js.UndefOr[String] = js.undefined
       
-      var host: String = js.native
+      var host: String
       
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
-      var port: js.UndefOr[Double] = js.native
+      var port: js.UndefOr[Double] = js.undefined
     }
     object PortHostConnectionOptions {
       
@@ -204,19 +204,18 @@ object mod {
       }
     }
     
-    @js.native
     trait Queue extends StObject {
       
       // Interface of Queue is much larger and
       // inconsistent between different packages.
       // We are using an example method here
       // that is consistent across all providers.
-      def getJob(jobId: String): js.Promise[_] = js.native
+      def getJob(jobId: String): js.Promise[js.Any]
     }
     object Queue {
       
       @scala.inline
-      def apply(getJob: String => js.Promise[_]): Queue = {
+      def apply(getJob: String => js.Promise[js.Any]): Queue = {
         val __obj = js.Dynamic.literal(getJob = js.Any.fromFunction1(getJob))
         __obj.asInstanceOf[Queue]
       }
@@ -225,25 +224,25 @@ object mod {
       implicit class QueueMutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setGetJob(value: String => js.Promise[_]): Self = StObject.set(x, "getJob", js.Any.fromFunction1(value))
+        def setGetJob(value: String => js.Promise[js.Any]): Self = StObject.set(x, "getJob", js.Any.fromFunction1(value))
       }
     }
     
     @js.native
     trait QueueConstructor
-      extends Instantiable1[/* queueName */ String, Queue]
+      extends StObject
+         with Instantiable1[/* queueName */ String, Queue]
          with Instantiable2[/* queueName */ String, /* opts */ QueueOptions, Queue]
     
-    @js.native
     trait QueueOptions extends StObject {
       
-      var hostId: js.UndefOr[String] = js.native
+      var hostId: js.UndefOr[String] = js.undefined
       
-      var name: String = js.native
+      var name: String
       
-      var prefix: js.UndefOr[bull | bq | String] = js.native
+      var prefix: js.UndefOr[bull | bq | String] = js.undefined
       
-      var `type`: js.UndefOr[bull | bee | bullmq | String] = js.native
+      var `type`: js.UndefOr[bull | bee | bullmq | String] = js.undefined
     }
     object QueueOptions {
       
@@ -279,10 +278,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait RedisClientConnectionOptions extends ConnectionOptions {
+    trait RedisClientConnectionOptions
+      extends StObject
+         with ConnectionOptions {
       
-      var redis: ClientOpts = js.native
+      var redis: ClientOpts
     }
     object RedisClientConnectionOptions {
       
@@ -300,10 +300,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait RedisUrlConnectionOptions extends ConnectionOptions {
+    trait RedisUrlConnectionOptions
+      extends StObject
+         with ConnectionOptions {
       
-      var url: String = js.native
+      var url: String
     }
     object RedisUrlConnectionOptions {
       

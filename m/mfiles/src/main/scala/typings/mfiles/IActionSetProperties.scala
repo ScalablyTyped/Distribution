@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IActionSetProperties extends StObject {
   
-  def Clone(): IActionSetProperties = js.native
+  def Clone(): IActionSetProperties
   
-  var Properties: IDefaultProperties = js.native
+  var Properties: IDefaultProperties
 }
 object IActionSetProperties {
   

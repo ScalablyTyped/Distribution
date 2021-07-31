@@ -3,15 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetCollaboratorPermissionLevelResponseData extends StObject {
   
-  var permission: String = js.native
+  var permission: String
   
-  var user: Avatarurl = js.native
+  var user: Avatarurl
 }
 object ReposGetCollaboratorPermissionLevelResponseData {
   

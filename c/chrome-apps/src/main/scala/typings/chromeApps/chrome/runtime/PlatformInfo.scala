@@ -26,14 +26,12 @@ import typings.chromeApps.chromeAppsStrings.win_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object containing information about the current platform.
   * @since Chrome 36.
   */
-@js.native
 trait PlatformInfo extends StObject {
   
   /**
@@ -47,7 +45,7 @@ trait PlatformInfo extends StObject {
       /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
       mips64_ | arm_ | `x86-64` | `x86-32` | mips_
     ]
-  ] = js.native
+  ]
   
   /**
     * The native client architecture. This may be different from arch on some platforms.
@@ -60,7 +58,7 @@ trait PlatformInfo extends StObject {
       /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
       mips64_ | arm_ | `x86-64` | `x86-32` | mips_
     ]
-  ] = js.native
+  ]
   
   /**
     * The operating system chrome is running on.
@@ -73,7 +71,7 @@ trait PlatformInfo extends StObject {
       /* keyof chrome-apps.anon.ANDROID */ typings.chromeApps.chromeAppsStrings.ANDROID | CROS | LINUX | MAC | OPENBSD | WIN, 
       linux_ | openbsd_ | android_ | win_ | cros_ | mac_
     ]
-  ] = js.native
+  ]
 }
 object PlatformInfo {
   

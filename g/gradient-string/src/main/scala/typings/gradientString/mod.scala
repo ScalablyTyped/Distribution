@@ -3,17 +3,18 @@ package typings.gradientString
 import typings.tinycolor2.mod.ColorInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(colors: (ColorInput | PositionedColorInput)*): Gradient = ^.asInstanceOf[js.Dynamic].apply(colors.asInstanceOf[js.Any]).asInstanceOf[Gradient]
+  @scala.inline
+  def apply(colors: js.Array[ColorInput | PositionedColorInput]): Gradient = ^.asInstanceOf[js.Dynamic].apply(colors.asInstanceOf[js.Any]).asInstanceOf[Gradient]
+  
   @JSImport("gradient-string", JSImport.Namespace)
   @js.native
-  def apply(colors: (ColorInput | PositionedColorInput)*): Gradient = js.native
-  @JSImport("gradient-string", JSImport.Namespace)
-  @js.native
-  def apply(colors: js.Array[ColorInput | PositionedColorInput]): Gradient = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gradient-string", "atlas")
   @js.native
@@ -71,22 +72,21 @@ object mod {
   trait Gradient extends StObject {
     
     def apply(): String = js.native
-    def apply(message: js.UndefOr[scala.Nothing], opt: Options): String = js.native
     def apply(message: String): String = js.native
     def apply(message: String, opt: Options): String = js.native
+    def apply(message: Unit, opt: Options): String = js.native
     
     def multiline(): String = js.native
-    def multiline(message: js.UndefOr[scala.Nothing], opt: Options): String = js.native
     def multiline(message: String): String = js.native
     def multiline(message: String, opt: Options): String = js.native
+    def multiline(message: Unit, opt: Options): String = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var hsvSpin: js.UndefOr[String] = js.native
+    var hsvSpin: js.UndefOr[String] = js.undefined
     
-    var interpolation: js.UndefOr[String] = js.native
+    var interpolation: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -113,12 +113,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PositionedColorInput extends StObject {
     
-    var color: ColorInput = js.native
+    var color: ColorInput
     
-    var pos: Double = js.native
+    var pos: Double
   }
   object PositionedColorInput {
     

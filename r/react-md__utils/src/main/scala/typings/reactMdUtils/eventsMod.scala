@@ -11,10 +11,13 @@ import typings.std.TouchEvent
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
+  
+  @JSImport("@react-md/utils/types/events", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object PassiveEvents {
     
@@ -28,17 +31,14 @@ object eventsMod {
     @scala.inline
     def isSupported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSupported")(x.asInstanceOf[js.Any])
     
-    @JSImport("@react-md/utils/types/events", "PassiveEvents.update")
-    @js.native
-    def update(): Boolean = js.native
+    @scala.inline
+    def update(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("update")().asInstanceOf[Boolean]
   }
   
-  @JSImport("@react-md/utils/types/events", "ScrollListener")
-  @js.native
-  def ScrollListener(props: ScrollListenerProps): Null = js.native
+  @scala.inline
+  def ScrollListener(props: ScrollListenerProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ScrollListener")(props.asInstanceOf[js.Any]).asInstanceOf[Null]
   
-  @JSImport("@react-md/utils/types/events", "addTouchEvent")
-  @js.native
+  @scala.inline
   def addTouchEvent(
     /**
     * The element to add the touch event to.
@@ -52,34 +52,8 @@ object eventsMod {
     * The touch event callback function to use.
     */
   callback: js.Function1[/* e */ TouchEvent, Unit]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "addTouchEvent")
-  @js.native
-  def addTouchEvent(
-    /**
-    * The element to add the touch event to.
-    */
-  el: HTMLElement,
-    /**
-    * One of the touch types to modify.
-    */
-  eventType: TouchTypes,
-    /**
-    * The touch event callback function to use.
-    */
-  callback: js.Function1[/* e */ TouchEvent, Unit],
-    /**
-    * Boolean if the event should be captured if the browser does not support
-    * passive events.
-    */
-  capture: js.UndefOr[scala.Nothing],
-    /**
-    * Any additional options to provide to the passive event.
-    */
-  options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "addTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def addTouchEvent(
     /**
     * The element to add the touch event to.
@@ -98,9 +72,8 @@ object eventsMod {
     * passive events.
     */
   capture: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "addTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def addTouchEvent(
     /**
     * The element to add the touch event to.
@@ -123,9 +96,32 @@ object eventsMod {
     * Any additional options to provide to the passive event.
     */
   options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "addTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addTouchEvent(
+    /**
+    * The element to add the touch event to.
+    */
+  el: HTMLElement,
+    /**
+    * One of the touch types to modify.
+    */
+  eventType: TouchTypes,
+    /**
+    * The touch event callback function to use.
+    */
+  callback: js.Function1[/* e */ TouchEvent, Unit],
+    /**
+    * Boolean if the event should be captured if the browser does not support
+    * passive events.
+    */
+  capture: Unit,
+    /**
+    * Any additional options to provide to the passive event.
+    */
+  options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def addTouchEvent(
     /**
     * The element to add the touch event to.
@@ -139,34 +135,8 @@ object eventsMod {
     * The touch event callback function to use.
     */
   callback: js.Function1[/* e */ TouchEvent, Unit]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "addTouchEvent")
-  @js.native
-  def addTouchEvent(
-    /**
-    * The element to add the touch event to.
-    */
-  el: Window,
-    /**
-    * One of the touch types to modify.
-    */
-  eventType: TouchTypes,
-    /**
-    * The touch event callback function to use.
-    */
-  callback: js.Function1[/* e */ TouchEvent, Unit],
-    /**
-    * Boolean if the event should be captured if the browser does not support
-    * passive events.
-    */
-  capture: js.UndefOr[scala.Nothing],
-    /**
-    * Any additional options to provide to the passive event.
-    */
-  options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "addTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def addTouchEvent(
     /**
     * The element to add the touch event to.
@@ -185,9 +155,8 @@ object eventsMod {
     * passive events.
     */
   capture: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "addTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def addTouchEvent(
     /**
     * The element to add the touch event to.
@@ -210,52 +179,68 @@ object eventsMod {
     * Any additional options to provide to the passive event.
     */
   options: AddEventListenerOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addTouchEvent(
+    /**
+    * The element to add the touch event to.
+    */
+  el: Window,
+    /**
+    * One of the touch types to modify.
+    */
+  eventType: TouchTypes,
+    /**
+    * The touch event callback function to use.
+    */
+  callback: js.Function1[/* e */ TouchEvent, Unit],
+    /**
+    * Boolean if the event should be captured if the browser does not support
+    * passive events.
+    */
+  capture: Unit,
+    /**
+    * Any additional options to provide to the passive event.
+    */
+  options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@react-md/utils/types/events", "delegateEvent")
-  @js.native
-  def delegateEvent(eventType: String): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events", "delegateEvent")
-  @js.native
+  @scala.inline
+  def delegateEvent(eventType: String): DelegatedEventHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any]).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: Unit, throttle: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: Unit, throttle: Boolean, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: Unit, throttle: Boolean, options: AddEventListenerOptions): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: Unit, throttle: Unit, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: Unit, throttle: Unit, options: AddEventListenerOptions): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget, throttle: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget, throttle: Boolean, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
   def delegateEvent(
     eventType: String,
-    eventTarget: js.UndefOr[DelegatedEventTarget],
-    throttle: js.UndefOr[scala.Nothing],
-    options: Boolean
-  ): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events", "delegateEvent")
-  @js.native
-  def delegateEvent(
-    eventType: String,
-    eventTarget: js.UndefOr[DelegatedEventTarget],
-    throttle: js.UndefOr[scala.Nothing],
-    options: AddEventListenerOptions
-  ): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events", "delegateEvent")
-  @js.native
-  def delegateEvent(eventType: String, eventTarget: js.UndefOr[DelegatedEventTarget], throttle: Boolean): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events", "delegateEvent")
-  @js.native
-  def delegateEvent(
-    eventType: String,
-    eventTarget: js.UndefOr[DelegatedEventTarget],
-    throttle: Boolean,
-    options: Boolean
-  ): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events", "delegateEvent")
-  @js.native
-  def delegateEvent(
-    eventType: String,
-    eventTarget: js.UndefOr[DelegatedEventTarget],
+    eventTarget: DelegatedEventTarget,
     throttle: Boolean,
     options: AddEventListenerOptions
-  ): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events", "delegateEvent")
-  @js.native
-  def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget): DelegatedEventHandler = js.native
+  ): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget, throttle: Unit, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(
+    eventType: String,
+    eventTarget: DelegatedEventTarget,
+    throttle: Unit,
+    options: AddEventListenerOptions
+  ): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
   
-  @JSImport("@react-md/utils/types/events", "removeTouchEvent")
-  @js.native
+  @scala.inline
   def removeTouchEvent(
     el: HTMLElement,
     eventType: TouchTypes,
@@ -263,28 +248,8 @@ object eventsMod {
     * The touch event callback function to use.
     */
   callback: js.Function1[/* e */ TouchEvent, Unit]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "removeTouchEvent")
-  @js.native
-  def removeTouchEvent(
-    el: HTMLElement,
-    eventType: TouchTypes,
-    /**
-    * The touch event callback function to use.
-    */
-  callback: js.Function1[/* e */ TouchEvent, Unit],
-    /**
-    * Boolean if the event should be captured if the browser does not support
-    * passive events.
-    */
-  capture: js.UndefOr[scala.Nothing],
-    /**
-    * Any additional options to provide to the passive event.
-    */
-  options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "removeTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def removeTouchEvent(
     el: HTMLElement,
     eventType: TouchTypes,
@@ -297,9 +262,8 @@ object eventsMod {
     * passive events.
     */
   capture: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "removeTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def removeTouchEvent(
     el: HTMLElement,
     eventType: TouchTypes,
@@ -316,21 +280,10 @@ object eventsMod {
     * Any additional options to provide to the passive event.
     */
   options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "removeTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def removeTouchEvent(
-    el: Window,
-    eventType: TouchTypes,
-    /**
-    * The touch event callback function to use.
-    */
-  callback: js.Function1[/* e */ TouchEvent, Unit]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "removeTouchEvent")
-  @js.native
-  def removeTouchEvent(
-    el: Window,
+    el: HTMLElement,
     eventType: TouchTypes,
     /**
     * The touch event callback function to use.
@@ -340,14 +293,22 @@ object eventsMod {
     * Boolean if the event should be captured if the browser does not support
     * passive events.
     */
-  capture: js.UndefOr[scala.Nothing],
+  capture: Unit,
     /**
     * Any additional options to provide to the passive event.
     */
   options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "removeTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeTouchEvent(
+    el: Window,
+    eventType: TouchTypes,
+    /**
+    * The touch event callback function to use.
+    */
+  callback: js.Function1[/* e */ TouchEvent, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def removeTouchEvent(
     el: Window,
     eventType: TouchTypes,
@@ -360,9 +321,8 @@ object eventsMod {
     * passive events.
     */
   capture: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "removeTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def removeTouchEvent(
     el: Window,
     eventType: TouchTypes,
@@ -379,10 +339,27 @@ object eventsMod {
     * Any additional options to provide to the passive event.
     */
   options: AddEventListenerOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeTouchEvent(
+    el: Window,
+    eventType: TouchTypes,
+    /**
+    * The touch event callback function to use.
+    */
+  callback: js.Function1[/* e */ TouchEvent, Unit],
+    /**
+    * Boolean if the event should be captured if the browser does not support
+    * passive events.
+    */
+  capture: Unit,
+    /**
+    * Any additional options to provide to the passive event.
+    */
+  options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@react-md/utils/types/events", "setTouchEvent")
-  @js.native
+  @scala.inline
   def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
@@ -400,38 +377,8 @@ object eventsMod {
     * The touch event callback function to use.
     */
   callback: js.Function1[/* e */ TouchEvent, Unit]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "setTouchEvent")
-  @js.native
-  def setTouchEvent(
-    /**
-    * Boolean if the event should be added or removed.
-    */
-  add: Boolean,
-    /**
-    * The element to add the touch event to.
-    */
-  el: HTMLElement,
-    /**
-    * One of the touch types to modify.
-    */
-  eventType: TouchTypes,
-    /**
-    * The touch event callback function to use.
-    */
-  callback: js.Function1[/* e */ TouchEvent, Unit],
-    /**
-    * Boolean if the event should be captured if the browser does not support
-    * passive events.
-    */
-  capture: js.UndefOr[scala.Nothing],
-    /**
-    * Any additional options to provide to the passive event.
-    */
-  options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "setTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
@@ -454,9 +401,8 @@ object eventsMod {
     * passive events.
     */
   capture: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "setTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
@@ -483,9 +429,36 @@ object eventsMod {
     * Any additional options to provide to the passive event.
     */
   options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "setTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setTouchEvent(
+    /**
+    * Boolean if the event should be added or removed.
+    */
+  add: Boolean,
+    /**
+    * The element to add the touch event to.
+    */
+  el: HTMLElement,
+    /**
+    * One of the touch types to modify.
+    */
+  eventType: TouchTypes,
+    /**
+    * The touch event callback function to use.
+    */
+  callback: js.Function1[/* e */ TouchEvent, Unit],
+    /**
+    * Boolean if the event should be captured if the browser does not support
+    * passive events.
+    */
+  capture: Unit,
+    /**
+    * Any additional options to provide to the passive event.
+    */
+  options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
@@ -503,38 +476,8 @@ object eventsMod {
     * The touch event callback function to use.
     */
   callback: js.Function1[/* e */ TouchEvent, Unit]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "setTouchEvent")
-  @js.native
-  def setTouchEvent(
-    /**
-    * Boolean if the event should be added or removed.
-    */
-  add: Boolean,
-    /**
-    * The element to add the touch event to.
-    */
-  el: Window,
-    /**
-    * One of the touch types to modify.
-    */
-  eventType: TouchTypes,
-    /**
-    * The touch event callback function to use.
-    */
-  callback: js.Function1[/* e */ TouchEvent, Unit],
-    /**
-    * Boolean if the event should be captured if the browser does not support
-    * passive events.
-    */
-  capture: js.UndefOr[scala.Nothing],
-    /**
-    * Any additional options to provide to the passive event.
-    */
-  options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "setTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
@@ -557,9 +500,8 @@ object eventsMod {
     * passive events.
     */
   capture: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/events", "setTouchEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
@@ -586,9 +528,36 @@ object eventsMod {
     * Any additional options to provide to the passive event.
     */
   options: AddEventListenerOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setTouchEvent(
+    /**
+    * Boolean if the event should be added or removed.
+    */
+  add: Boolean,
+    /**
+    * The element to add the touch event to.
+    */
+  el: Window,
+    /**
+    * One of the touch types to modify.
+    */
+  eventType: TouchTypes,
+    /**
+    * The touch event callback function to use.
+    */
+  callback: js.Function1[/* e */ TouchEvent, Unit],
+    /**
+    * Boolean if the event should be captured if the browser does not support
+    * passive events.
+    */
+  capture: Unit,
+    /**
+    * Any additional options to provide to the passive event.
+    */
+  options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@react-md/utils/types/events", "useScrollListener")
-  @js.native
-  def useScrollListener[E /* <: HTMLElement */](hasEnabledOnScrollElementOptions: Options[E]): Unit = js.native
+  @scala.inline
+  def useScrollListener[E /* <: HTMLElement */](hasEnabledOnScrollElementOptions: Options[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollListener")(hasEnabledOnScrollElementOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

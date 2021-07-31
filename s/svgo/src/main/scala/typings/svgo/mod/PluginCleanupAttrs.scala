@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginCleanupAttrs extends PluginConfig {
+trait PluginCleanupAttrs
+  extends StObject
+     with PluginConfig {
   
-  var cleanupAttrs: Boolean | js.Object = js.native
+  var cleanupAttrs: Boolean | js.Object
 }
 object PluginCleanupAttrs {
   

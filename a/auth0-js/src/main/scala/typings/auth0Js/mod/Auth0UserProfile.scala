@@ -2,47 +2,45 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0UserProfile extends StObject {
   
-  var app_metadata: js.UndefOr[js.Any] = js.native
+  var app_metadata: js.UndefOr[js.Any] = js.undefined
   
-  var clientID: String = js.native
+  var clientID: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var email_verified: js.UndefOr[Boolean] = js.native
+  var email_verified: js.UndefOr[Boolean] = js.undefined
   
-  var family_name: js.UndefOr[String] = js.native
+  var family_name: js.UndefOr[String] = js.undefined
   
-  var gender: js.UndefOr[String] = js.native
+  var gender: js.UndefOr[String] = js.undefined
   
-  var given_name: js.UndefOr[String] = js.native
+  var given_name: js.UndefOr[String] = js.undefined
   
-  var identities: js.Array[Auth0Identity] = js.native
+  var identities: js.Array[Auth0Identity]
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var nickname: String = js.native
+  var nickname: String
   
-  var picture: String = js.native
+  var picture: String
   
-  var sub: String = js.native
+  var sub: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var user_id: String = js.native
+  var user_id: String
   
-  var user_metadata: js.UndefOr[js.Any] = js.native
+  var user_metadata: js.UndefOr[js.Any] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object Auth0UserProfile {
   

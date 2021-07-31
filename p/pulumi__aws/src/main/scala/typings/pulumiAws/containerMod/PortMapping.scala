@@ -2,17 +2,15 @@ package typings.pulumiAws.containerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortMapping extends StObject {
   
-  var containerPort: js.UndefOr[Double] = js.native
+  var containerPort: js.UndefOr[Double] = js.undefined
   
-  var hostPort: js.UndefOr[Double] = js.native
+  var hostPort: js.UndefOr[Double] = js.undefined
   
-  var protocol: js.UndefOr[Protocol] = js.native
+  var protocol: js.UndefOr[Protocol] = js.undefined
 }
 object PortMapping {
   

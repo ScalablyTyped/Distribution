@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMonitoringSubscriptionRequest extends StObject {
   
   /**
     * The ID of the distribution that you are enabling metrics for.
     */
-  var DistributionId: String = js.native
+  var DistributionId: String
   
   /**
     * A monitoring subscription. This structure contains information about whether additional CloudWatch metrics are enabled for a given CloudFront distribution.
     */
-  var MonitoringSubscription: typings.awsSdk.cloudfrontMod.MonitoringSubscription = js.native
+  var MonitoringSubscription: typings.awsSdk.cloudfrontMod.MonitoringSubscription
 }
 object CreateMonitoringSubscriptionRequest {
   

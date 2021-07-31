@@ -3,26 +3,25 @@ package typings.jest.mod.jest
 import typings.jest.jestStrings.`throw`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the result of a single call to a mock function with a thrown error.
   */
-@js.native
 trait MockResultThrow
-  extends MockResult[js.Any] {
+  extends StObject
+     with MockResult[js.Any] {
   
-  var `type`: `throw` = js.native
+  var `type`: `throw`
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object MockResultThrow {
   
   @scala.inline
-  def apply(`type`: `throw`, value: js.Any): MockResultThrow = {
+  def apply(value: js.Any): MockResultThrow = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("throw")
     __obj.asInstanceOf[MockResultThrow]
   }
   

@@ -3,608 +3,461 @@ package typings.ndarrayOps
 import typings.ndarray.mod.ndarray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ndarray-ops", "abs")
+  @JSImport("ndarray-ops", JSImport.Namespace)
   @js.native
-  def abs(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ndarray-ops", "abseq")
-  @js.native
-  def abseq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def abs(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("abs")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "acos")
-  @js.native
-  def acos(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def abseq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("abseq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "acoseq")
-  @js.native
-  def acoseq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def acos(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("acos")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "add")
-  @js.native
-  def add(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def acoseq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("acoseq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "addeq")
-  @js.native
-  def addeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def add(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "adds")
-  @js.native
-  def adds(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def addeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "addseq")
-  @js.native
-  def addseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def adds(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("adds")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "all")
-  @js.native
-  def all(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def addseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "and")
-  @js.native
-  def and(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def all(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "andeq")
-  @js.native
-  def andeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def and(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "ands")
-  @js.native
-  def ands(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def andeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("andeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "andseq")
-  @js.native
-  def andseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def ands(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ands")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "any")
-  @js.native
-  def any(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def andseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("andseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "argmax")
-  @js.native
-  def argmax(index: Double, array: ndarray[Double], shape: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def any(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "argmin")
-  @js.native
-  def argmin(index: Double, array: ndarray[Double], shape: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def argmax(index: Double, array: ndarray[Double], shape: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("argmax")(index.asInstanceOf[js.Any], array.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "asin")
-  @js.native
-  def asin(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def argmin(index: Double, array: ndarray[Double], shape: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("argmin")(index.asInstanceOf[js.Any], array.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "asineq")
-  @js.native
-  def asineq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def asin(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("asin")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "assign")
-  @js.native
-  def assign(array: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def asineq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("asineq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "assigns")
-  @js.native
-  def assigns(array: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def assign(array: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(array.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "atan")
-  @js.native
-  def atan(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def assigns(array: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("assigns")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "atan2")
-  @js.native
-  def atan2(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def atan(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("atan")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "atan2eq")
-  @js.native
-  def atan2eq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def atan2(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "atan2op")
-  @js.native
-  def atan2op(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def atan2eq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2eq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "atan2opeq")
-  @js.native
-  def atan2opeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def atan2op(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2op")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "atan2ops")
-  @js.native
-  def atan2ops(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def atan2opeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2opeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "atan2opseq")
-  @js.native
-  def atan2opseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def atan2ops(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2ops")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "atan2s")
-  @js.native
-  def atan2s(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def atan2opseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2opseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "atan2seq")
-  @js.native
-  def atan2seq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def atan2s(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2s")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "ataneq")
-  @js.native
-  def ataneq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def atan2seq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2seq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "band")
-  @js.native
-  def band(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def ataneq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ataneq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "bandeq")
-  @js.native
-  def bandeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def band(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("band")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "bands")
-  @js.native
-  def bands(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def bandeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("bandeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "bandseq")
-  @js.native
-  def bandseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def bands(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("bands")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "bnot")
-  @js.native
-  def bnot(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def bandseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("bandseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "bnoteq")
-  @js.native
-  def bnoteq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def bnot(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("bnot")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "bor")
-  @js.native
-  def bor(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def bnoteq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("bnoteq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "boreq")
-  @js.native
-  def boreq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def bor(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("bor")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "bors")
-  @js.native
-  def bors(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def boreq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boreq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "borseq")
-  @js.native
-  def borseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def bors(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("bors")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "bxor")
-  @js.native
-  def bxor(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def borseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("borseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "bxoreq")
-  @js.native
-  def bxoreq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def bxor(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("bxor")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "bxors")
-  @js.native
-  def bxors(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def bxoreq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("bxoreq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "bxorseq")
-  @js.native
-  def bxorseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def bxors(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("bxors")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "ceil")
-  @js.native
-  def ceil(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def bxorseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("bxorseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "ceileq")
-  @js.native
-  def ceileq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def ceil(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "cos")
-  @js.native
-  def cos(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def ceileq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ceileq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "coseq")
-  @js.native
-  def coseq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def cos(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("cos")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "div")
-  @js.native
-  def div(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def coseq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("coseq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "diveq")
-  @js.native
-  def diveq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def div(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "divs")
-  @js.native
-  def divs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def diveq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("diveq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "divseq")
-  @js.native
-  def divseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def divs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("divs")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "eq")
-  @js.native
-  def eq_(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def divseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("divseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "eqeq")
-  @js.native
-  def eqeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def eq_(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "eqs")
-  @js.native
-  def eqs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def eqeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eqeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "eqseq")
-  @js.native
-  def eqseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def eqs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("eqs")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "equals")
-  @js.native
-  def equals_(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def eqseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eqseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "exp")
-  @js.native
-  def exp(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def equals_(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "expeq")
-  @js.native
-  def expeq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def exp(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("exp")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "floor")
-  @js.native
-  def floor(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def expeq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("expeq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "flooreq")
-  @js.native
-  def flooreq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def floor(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("floor")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "geq")
-  @js.native
-  def geq(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def flooreq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("flooreq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "geqeq")
-  @js.native
-  def geqeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def geq(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("geq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "geqs")
-  @js.native
-  def geqs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def geqeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geqeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "geqseq")
-  @js.native
-  def geqseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def geqs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("geqs")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "gt")
-  @js.native
-  def gt(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def geqseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geqseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "gteq")
-  @js.native
-  def gteq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def gt(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "gts")
-  @js.native
-  def gts(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def gteq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gteq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "gtseq")
-  @js.native
-  def gtseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def gts(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("gts")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "inf")
-  @js.native
-  def inf(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def gtseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "leq")
-  @js.native
-  def leq(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def inf(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inf")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "leqeq")
-  @js.native
-  def leqeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def leq(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("leq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "leqs")
-  @js.native
-  def leqs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def leqeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("leqeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "leqseq")
-  @js.native
-  def leqseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def leqs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("leqs")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "log")
-  @js.native
-  def log(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def leqseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("leqseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "logeq")
-  @js.native
-  def logeq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def log(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "lshift")
-  @js.native
-  def lshift(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def logeq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("logeq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "lshifteq")
-  @js.native
-  def lshifteq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def lshift(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("lshift")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "lshifts")
-  @js.native
-  def lshifts(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def lshifteq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lshifteq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "lshiftseq")
-  @js.native
-  def lshiftseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def lshifts(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("lshifts")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "lt")
-  @js.native
-  def lt(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def lshiftseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lshiftseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "lteq")
-  @js.native
-  def lteq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def lt(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "lts")
-  @js.native
-  def lts(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def lteq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lteq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "ltseq")
-  @js.native
-  def ltseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def lts(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("lts")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "max")
-  @js.native
-  def max(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def ltseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "maxeq")
-  @js.native
-  def maxeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def max(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "maxs")
-  @js.native
-  def maxs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def maxeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("maxeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "maxseq")
-  @js.native
-  def maxseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def maxs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxs")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "min")
-  @js.native
-  def min(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def maxseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("maxseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "mineq")
-  @js.native
-  def mineq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def min(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "mins")
-  @js.native
-  def mins(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def mineq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("mineq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "minseq")
-  @js.native
-  def minseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def mins(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("mins")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "mod")
-  @js.native
-  def mod(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def minseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("minseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "modeq")
-  @js.native
-  def modeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def mod(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "mods")
-  @js.native
-  def mods(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def modeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("modeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "modseq")
-  @js.native
-  def modseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def mods(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("mods")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "mul")
-  @js.native
-  def mul(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def modseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("modseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "muleq")
-  @js.native
-  def muleq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def mul(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "muls")
-  @js.native
-  def muls(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def muleq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("muleq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "mulseq")
-  @js.native
-  def mulseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def muls(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("muls")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "neg")
-  @js.native
-  def neg(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def mulseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("mulseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "negeq")
-  @js.native
-  def negeq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def neg(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("neg")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "neq")
-  @js.native
-  def neq(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def negeq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("negeq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "neqeq")
-  @js.native
-  def neqeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def neq(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "neqs")
-  @js.native
-  def neqs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def neqeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neqeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "neqseq")
-  @js.native
-  def neqseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def neqs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("neqs")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "norm1")
-  @js.native
-  def norm1(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def neqseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neqseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "norm2")
-  @js.native
-  def norm2(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def norm1(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("norm1")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "norm2squared")
-  @js.native
-  def norm2squared(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def norm2(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("norm2")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "norminf")
-  @js.native
-  def norminf(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def norm2squared(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("norm2squared")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "not")
-  @js.native
-  def not(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def norminf(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("norminf")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "noteq")
-  @js.native
-  def noteq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def not(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("not")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "or")
-  @js.native
-  def or(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def noteq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("noteq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "oreq")
-  @js.native
-  def oreq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def or(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "ors")
-  @js.native
-  def ors(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def oreq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("oreq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "orseq")
-  @js.native
-  def orseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def ors(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ors")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "pow")
-  @js.native
-  def pow(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def orseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("orseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "poweq")
-  @js.native
-  def poweq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def pow(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "powop")
-  @js.native
-  def powop(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def poweq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("poweq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "powopeq")
-  @js.native
-  def powopeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def powop(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("powop")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "powops")
-  @js.native
-  def powops(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def powopeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("powopeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "powopseq")
-  @js.native
-  def powopseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def powops(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("powops")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "pows")
-  @js.native
-  def pows(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def powopseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("powopseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "powseq")
-  @js.native
-  def powseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def pows(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pows")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "prod")
-  @js.native
-  def prod(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def powseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("powseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "random")
-  @js.native
-  def random(array: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def prod(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("prod")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "recip")
-  @js.native
-  def recip(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def random(array: ndarray[Double]): ndarray[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(array.asInstanceOf[js.Any]).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "recipeq")
-  @js.native
-  def recipeq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def recip(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("recip")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "round")
-  @js.native
-  def round(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def recipeq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("recipeq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "roundeq")
-  @js.native
-  def roundeq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def round(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("round")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "rrshift")
-  @js.native
-  def rrshift(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def roundeq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("roundeq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "rrshifteq")
-  @js.native
-  def rrshifteq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def rrshift(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rrshift")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "rrshifts")
-  @js.native
-  def rrshifts(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def rrshifteq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rrshifteq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "rrshiftseq")
-  @js.native
-  def rrshiftseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def rrshifts(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rrshifts")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "rshift")
-  @js.native
-  def rshift(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def rrshiftseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rrshiftseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "rshifteq")
-  @js.native
-  def rshifteq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def rshift(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rshift")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "rshifts")
-  @js.native
-  def rshifts(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def rshifteq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rshifteq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "rshiftseq")
-  @js.native
-  def rshiftseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def rshifts(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rshifts")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "sin")
-  @js.native
-  def sin(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def rshiftseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rshiftseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "sineq")
-  @js.native
-  def sineq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def sin(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("sin")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "sqrt")
-  @js.native
-  def sqrt(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def sineq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("sineq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "sqrteq")
-  @js.native
-  def sqrteq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def sqrt(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "sub")
-  @js.native
-  def sub(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def sqrteq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrteq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "subeq")
-  @js.native
-  def subeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def sub(array1: ndarray[Double], array2: ndarray[Double], array3: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], array3.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "subs")
-  @js.native
-  def subs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = js.native
+  @scala.inline
+  def subeq(array1: ndarray[Double], array2: ndarray[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subeq")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "subseq")
-  @js.native
-  def subseq(array: ndarray[Double], scalar: Double): Boolean = js.native
+  @scala.inline
+  def subs(array1: ndarray[Double], array2: ndarray[Double], scalar: Double): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("subs")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-ops", "sum")
-  @js.native
-  def sum(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def subseq(array: ndarray[Double], scalar: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subseq")(array.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "sup")
-  @js.native
-  def sup(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def sum(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "tan")
-  @js.native
-  def tan(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = js.native
+  @scala.inline
+  def sup(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("sup")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ndarray-ops", "taneq")
-  @js.native
-  def taneq(array: ndarray[Double]): Boolean = js.native
+  @scala.inline
+  def tan(array1: ndarray[Double], array2: ndarray[Double]): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("tan")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
+  
+  @scala.inline
+  def taneq(array: ndarray[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("taneq")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

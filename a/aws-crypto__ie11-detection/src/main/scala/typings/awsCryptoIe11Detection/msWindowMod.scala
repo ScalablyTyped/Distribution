@@ -1,25 +1,29 @@
 package typings.awsCryptoIe11Detection
 
 import typings.awsCryptoIe11Detection.msSubtleCryptoMod.MsSubtleCrypto
+import typings.std.AddEventListenerOptions
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.Uint8Array
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object msWindowMod {
   
-  @JSImport("@aws-crypto/ie11-detection/build/MsWindow", "isMsWindow")
+  @JSImport("@aws-crypto/ie11-detection/build/MsWindow", JSImport.Namespace)
   @js.native
-  def isMsWindow(window: Window): /* is @aws-crypto/ie11-detection.@aws-crypto/ie11-detection/build/MsWindow.MsWindow */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def isMsWindow(window: Window): /* is @aws-crypto/ie11-detection.@aws-crypto/ie11-detection/build/MsWindow.MsWindow */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMsWindow")(window.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-crypto/ie11-detection.@aws-crypto/ie11-detection/build/MsWindow.MsWindow */ Boolean]
+  
   trait MsCrypto extends StObject {
     
-    def getRandomValues(toFill: Uint8Array): Unit = js.native
+    def getRandomValues(toFill: Uint8Array): Unit
     
-    var subtle: MsSubtleCrypto = js.native
+    var subtle: MsSubtleCrypto
   }
   object MsCrypto {
     
@@ -41,10 +45,32 @@ object msWindowMod {
   }
   
   @js.native
-  trait MsWindow extends Window {
+  trait MsWindow
+    extends StObject
+       with Window {
     
     var MSInputMethodContext: js.Any = js.native
     
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    
     var msCrypto: MsCrypto = js.native
+    
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
 }

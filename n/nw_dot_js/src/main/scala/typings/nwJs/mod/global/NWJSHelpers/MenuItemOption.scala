@@ -6,64 +6,62 @@ import typings.nwJs.nwJsStrings.normal
 import typings.nwJs.nwJsStrings.separator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for MenuItem.
   */
-@js.native
 trait MenuItemOption extends StObject {
   
   /**
     * {boolean} (Optional) Whether the checkbox is checked or not. It"s set to false by default.
     */
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * {Function} (Optional) The callback function when item is triggered by mouse click or keyboard shortcut
     */
-  var click: js.UndefOr[js.Function] = js.native
+  var click: js.UndefOr[js.Function] = js.undefined
   
   /**
     * {boolean} (Optional) Whether the item is enabled or disabled. It"s set to true by default.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * {string} (Optional) Icon for normal item or checkbox
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * {string} (Optional) The key of the shortcut
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * {string} (Optional) Label for normal item or checkbox
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * {string} (Optional) The modifiers of the shortcut
     */
-  var modifiers: js.UndefOr[String] = js.native
+  var modifiers: js.UndefOr[String] = js.undefined
   
   /**
     * {nw.Menu} (Optional) A submenu
     */
-  var submenu: js.UndefOr[Menu] = js.native
+  var submenu: js.UndefOr[Menu] = js.undefined
   
   /**
     * {string} (Optional) Tooltip for normal item or checkbox
     */
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
   
   /**
     * {string} (Optional) The type of the item. Three types are accepted: normal, checkbox, separator
     */
-  var `type`: js.UndefOr[String | normal | checkbox | separator] = js.native
+  var `type`: js.UndefOr[String | normal | checkbox | separator] = js.undefined
 }
 object MenuItemOption {
   

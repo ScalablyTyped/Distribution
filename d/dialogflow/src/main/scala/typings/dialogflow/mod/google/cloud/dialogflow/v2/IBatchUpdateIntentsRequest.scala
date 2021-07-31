@@ -3,32 +3,30 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 import typings.dialogflow.mod.google.protobuf.IFieldMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a BatchUpdateIntentsRequest. */
-@js.native
 trait IBatchUpdateIntentsRequest extends StObject {
   
   /** BatchUpdateIntentsRequest intentBatchInline */
-  var intentBatchInline: js.UndefOr[IIntentBatch | Null] = js.native
+  var intentBatchInline: js.UndefOr[IIntentBatch | Null] = js.undefined
   
   /** BatchUpdateIntentsRequest intentBatchUri */
-  var intentBatchUri: js.UndefOr[String | Null] = js.native
+  var intentBatchUri: js.UndefOr[String | Null] = js.undefined
   
   /** BatchUpdateIntentsRequest intentView */
   var intentView: js.UndefOr[
     IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** BatchUpdateIntentsRequest languageCode */
-  var languageCode: js.UndefOr[String | Null] = js.native
+  var languageCode: js.UndefOr[String | Null] = js.undefined
   
   /** BatchUpdateIntentsRequest parent */
-  var parent: js.UndefOr[String | Null] = js.native
+  var parent: js.UndefOr[String | Null] = js.undefined
   
   /** BatchUpdateIntentsRequest updateMask */
-  var updateMask: js.UndefOr[IFieldMask | Null] = js.native
+  var updateMask: js.UndefOr[IFieldMask | Null] = js.undefined
 }
 object IBatchUpdateIntentsRequest {
   

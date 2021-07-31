@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationEnvironmentProperties extends StObject {
   
   /**
     * Describes the execution property groups.
     */
-  var propertyGroups: js.Array[ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup] = js.native
+  var propertyGroups: js.Array[ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup]
 }
 object ApplicationApplicationConfigurationEnvironmentProperties {
   

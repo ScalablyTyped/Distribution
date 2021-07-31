@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlDeleteModelSnapshot extends Generic {
+trait MlDeleteModelSnapshot
+  extends StObject
+     with Generic {
   
-  var job_id: String = js.native
+  var job_id: String
   
-  var snapshot_id: String = js.native
+  var snapshot_id: String
 }
 object MlDeleteModelSnapshot {
   

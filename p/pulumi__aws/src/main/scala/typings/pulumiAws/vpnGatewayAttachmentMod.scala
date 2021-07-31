@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpnGatewayAttachmentMod {
@@ -38,6 +37,10 @@ object vpnGatewayAttachmentMod {
   /* static members */
   object VpnGatewayAttachment {
     
+    @JSImport("@pulumi/aws/ec2/vpnGatewayAttachment", "VpnGatewayAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpnGatewayAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object vpnGatewayAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpnGatewayAttachment", "VpnGatewayAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpnGatewayAttachment = js.native
-    @JSImport("@pulumi/aws/ec2/vpnGatewayAttachment", "VpnGatewayAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpnGatewayAttachment = js.native
-    @JSImport("@pulumi/aws/ec2/vpnGatewayAttachment", "VpnGatewayAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpnGatewayAttachmentState): VpnGatewayAttachment = js.native
-    @JSImport("@pulumi/aws/ec2/vpnGatewayAttachment", "VpnGatewayAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpnGatewayAttachmentState, opts: CustomResourceOptions): VpnGatewayAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpnGatewayAttachmentState): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpnGatewayAttachmentState, opts: CustomResourceOptions): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
     
     /**
       * Returns true if the given object is an instance of VpnGatewayAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpnGatewayAttachment", "VpnGatewayAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayAttachment.VpnGatewayAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayAttachment.VpnGatewayAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayAttachment.VpnGatewayAttachment */ Boolean]
   }
   
-  @js.native
   trait VpnGatewayAttachmentArgs extends StObject {
     
     /**
       * The ID of the VPC.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
     
     /**
       * The ID of the Virtual Private Gateway.
       */
-    val vpnGatewayId: Input[String] = js.native
+    val vpnGatewayId: Input[String]
   }
   object VpnGatewayAttachmentArgs {
     
@@ -101,18 +98,17 @@ object vpnGatewayAttachmentMod {
     }
   }
   
-  @js.native
   trait VpnGatewayAttachmentState extends StObject {
     
     /**
       * The ID of the VPC.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Virtual Private Gateway.
       */
-    val vpnGatewayId: js.UndefOr[Input[String]] = js.native
+    val vpnGatewayId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpnGatewayAttachmentState {
     

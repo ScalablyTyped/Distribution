@@ -2,16 +2,14 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainNameRequest extends StObject {
   
   /**
     * [Required] The name of the DomainName resource.
     */
-  var domainName: String = js.native
+  var domainName: String
 }
 object GetDomainNameRequest {
   

@@ -2,18 +2,16 @@ package typings.awsSdkClientDynamodbBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCreateReplicaActionMod {
   
-  @js.native
   trait CreateReplicaAction extends StObject {
     
     /**
       * <p>The region of the replica to be added.</p>
       */
-    var RegionName: String = js.native
+    var RegionName: String
   }
   object CreateReplicaAction {
     

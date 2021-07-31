@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,53 +13,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * All values are in pixels within this device.
   */
-@js.native
-trait XFont extends XInterface {
+trait XFont
+  extends StObject
+     with XInterface {
   
   /**
     * returns the description of the font.
     *
     * The unit of measurement is pixels for the device.
     */
-  val FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
+  val FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor
   
   /** returns additional information about the font. */
-  val FontMetric: SimpleFontMetric = js.native
+  val FontMetric: SimpleFontMetric
   
   /**
     * returns the width of the specified character.
     * @returns the character width measured in pixels for the device.
     */
-  def getCharWidth(c: String): Double = js.native
+  def getCharWidth(c: String): Double
   
   /**
     * returns the widths of the specified characters.
     * @returns a sequence of the widths of subsequent characters for this font.
     */
-  def getCharWidths(nFirst: String, nLast: String): SafeArray[Double] = js.native
+  def getCharWidths(nFirst: String, nLast: String): SafeArray[Double]
   
   /**
     * returns the description of the font.
     *
     * The unit of measurement is pixels for the device.
     */
-  def getFontDescriptor(): typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
+  def getFontDescriptor(): typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor
   
   /** returns additional information about the font. */
-  def getFontMetric(): SimpleFontMetric = js.native
+  def getFontMetric(): SimpleFontMetric
   
   /** queries the kerning pair table. */
   def getKernPairs(
     Chars1: js.Array[SeqEquiv[String]],
     Chars2: js.Array[SeqEquiv[String]],
     Kerns: js.Array[SeqEquiv[Double]]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * returns the string width.
     * @returns the width of the specified string of characters measured in pixels for the device.
     */
-  def getStringWidth(str: String): Double = js.native
+  def getStringWidth(str: String): Double
   
   /**
     * returns the string and the character widths.
@@ -68,7 +68,7 @@ trait XFont extends XInterface {
     * @param aDXArray receives the width of every single character measured in pixels for the device.
     * @returns the width of the specified string of characters measured in pixels for the device.
     */
-  def getStringWidthArray(str: String, aDXArray: js.Array[SeqEquiv[Double]]): Double = js.native
+  def getStringWidthArray(str: String, aDXArray: js.Array[SeqEquiv[Double]]): Double
 }
 object XFont {
   

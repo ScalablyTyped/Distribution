@@ -5,32 +5,32 @@ import typings.rechoir.rechoirBooleans.`true`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rechoir", "prepare")
+  @JSImport("rechoir", JSImport.Namespace)
   @js.native
-  def prepare(config: Extensions_, filepath: String): `true` | js.Array[Attempt] = js.native
-  @JSImport("rechoir", "prepare")
-  @js.native
-  def prepare(config: Extensions_, filepath: String, requireFrom: String): `true` | js.Array[Attempt] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def prepare(config: Extensions_, filepath: String): `true` | js.Array[Attempt] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepare")(config.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[`true` | js.Array[Attempt]]
+  @scala.inline
+  def prepare(config: Extensions_, filepath: String, requireFrom: String): `true` | js.Array[Attempt] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepare")(config.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any], requireFrom.asInstanceOf[js.Any])).asInstanceOf[`true` | js.Array[Attempt]]
+  
   trait Attempt extends StObject {
     
-    var error: Error | Null = js.native
+    var error: Error | Null
     
-    var module: js.Any = js.native
+    var module: js.Any
     
-    var moduleName: String = js.native
+    var moduleName: String
   }
   object Attempt {
     
     @scala.inline
     def apply(module: js.Any, moduleName: String): Attempt = {
-      val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], moduleName = moduleName.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], moduleName = moduleName.asInstanceOf[js.Any], error = null)
       __obj.asInstanceOf[Attempt]
     }
     

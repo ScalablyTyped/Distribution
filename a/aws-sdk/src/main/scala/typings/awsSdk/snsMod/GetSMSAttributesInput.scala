@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSMSAttributesInput extends StObject {
   
   /**
     * A list of the individual attribute names, such as MonthlySpendLimit, for which you want values. For all attribute names, see SetSMSAttributes. If you don't use this parameter, Amazon SNS returns all SMS attributes.
     */
-  var attributes: js.UndefOr[ListString] = js.native
+  var attributes: js.UndefOr[ListString] = js.undefined
 }
 object GetSMSAttributesInput {
   

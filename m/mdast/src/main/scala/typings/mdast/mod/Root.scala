@@ -4,21 +4,21 @@ import typings.mdast.mdastStrings.root
 import typings.unist.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Root extends Parent {
+trait Root
+  extends StObject
+     with Parent {
   
   @JSName("type")
-  var type_Root: root = js.native
+  var type_Root: root
 }
 object Root {
   
   @scala.inline
-  def apply(children: js.Array[Node], `type`: root): Root = {
+  def apply(children: js.Array[Node]): Root = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("root")
     __obj.asInstanceOf[Root]
   }
   

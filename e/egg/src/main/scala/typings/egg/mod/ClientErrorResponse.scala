@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientErrorResponse extends StObject {
   
-  var body: String | Buffer = js.native
+  var body: String | Buffer
   
-  var headers: StringDictionary[String] = js.native
+  var headers: StringDictionary[String]
   
-  var status: Double = js.native
+  var status: Double
 }
 object ClientErrorResponse {
   

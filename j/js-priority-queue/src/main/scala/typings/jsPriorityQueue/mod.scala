@@ -3,54 +3,184 @@ package typings.jsPriorityQueue
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("js-priority-queue", JSImport.Namespace)
   @js.native
-  class ^[T] () extends AbstractPriorityQueue[T]
-  
-  @JSImport("js-priority-queue", "ArrayStrategy")
-  @js.native
-  class ArrayStrategy[T] () extends AbstractPriorityQueue[T]
-  
-  @JSImport("js-priority-queue", "BHeapStrategy")
-  @js.native
-  class BHeapStrategy[T] () extends AbstractPriorityQueue[T]
-  
-  @JSImport("js-priority-queue", "BinaryHeapStrategy")
-  @js.native
-  class BinaryHeapStrategy[T] () extends AbstractPriorityQueue[T]
-  
-  @js.native
-  trait AbstractPriorityQueue[T] extends StObject {
+  class ^[T] ()
+    extends StObject
+       with AbstractPriorityQueue[T] {
     
     /**
       * Removes all values from the queue
       */
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
     
     /**
       * Returns the smallest item in the queue and removes it from the queue
       */
-    def dequeue(): T = js.native
+    /* CompleteClass */
+    override def dequeue(): T = js.native
     
     /**
       * Returns the number of elements in the queue
       */
+    /* CompleteClass */
     var length: Double = js.native
     
     /**
       * Returns the smallest item in the queue and leaves the queue unchanged
       */
-    def peek(): T = js.native
+    /* CompleteClass */
+    override def peek(): T = js.native
     
     /**
       * Inserts a new value in the queue
       */
-    def queue(value: T): Unit = js.native
+    /* CompleteClass */
+    override def queue(value: T): Unit = js.native
+  }
+  
+  @JSImport("js-priority-queue", "ArrayStrategy")
+  @js.native
+  class ArrayStrategy[T] ()
+    extends StObject
+       with AbstractPriorityQueue[T] {
+    
+    /**
+      * Removes all values from the queue
+      */
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /**
+      * Returns the smallest item in the queue and removes it from the queue
+      */
+    /* CompleteClass */
+    override def dequeue(): T = js.native
+    
+    /**
+      * Returns the number of elements in the queue
+      */
+    /* CompleteClass */
+    var length: Double = js.native
+    
+    /**
+      * Returns the smallest item in the queue and leaves the queue unchanged
+      */
+    /* CompleteClass */
+    override def peek(): T = js.native
+    
+    /**
+      * Inserts a new value in the queue
+      */
+    /* CompleteClass */
+    override def queue(value: T): Unit = js.native
+  }
+  
+  @JSImport("js-priority-queue", "BHeapStrategy")
+  @js.native
+  class BHeapStrategy[T] ()
+    extends StObject
+       with AbstractPriorityQueue[T] {
+    
+    /**
+      * Removes all values from the queue
+      */
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /**
+      * Returns the smallest item in the queue and removes it from the queue
+      */
+    /* CompleteClass */
+    override def dequeue(): T = js.native
+    
+    /**
+      * Returns the number of elements in the queue
+      */
+    /* CompleteClass */
+    var length: Double = js.native
+    
+    /**
+      * Returns the smallest item in the queue and leaves the queue unchanged
+      */
+    /* CompleteClass */
+    override def peek(): T = js.native
+    
+    /**
+      * Inserts a new value in the queue
+      */
+    /* CompleteClass */
+    override def queue(value: T): Unit = js.native
+  }
+  
+  @JSImport("js-priority-queue", "BinaryHeapStrategy")
+  @js.native
+  class BinaryHeapStrategy[T] ()
+    extends StObject
+       with AbstractPriorityQueue[T] {
+    
+    /**
+      * Removes all values from the queue
+      */
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /**
+      * Returns the smallest item in the queue and removes it from the queue
+      */
+    /* CompleteClass */
+    override def dequeue(): T = js.native
+    
+    /**
+      * Returns the number of elements in the queue
+      */
+    /* CompleteClass */
+    var length: Double = js.native
+    
+    /**
+      * Returns the smallest item in the queue and leaves the queue unchanged
+      */
+    /* CompleteClass */
+    override def peek(): T = js.native
+    
+    /**
+      * Inserts a new value in the queue
+      */
+    /* CompleteClass */
+    override def queue(value: T): Unit = js.native
+  }
+  
+  trait AbstractPriorityQueue[T] extends StObject {
+    
+    /**
+      * Removes all values from the queue
+      */
+    def clear(): Unit
+    
+    /**
+      * Returns the smallest item in the queue and removes it from the queue
+      */
+    def dequeue(): T
+    
+    /**
+      * Returns the number of elements in the queue
+      */
+    var length: Double
+    
+    /**
+      * Returns the smallest item in the queue and leaves the queue unchanged
+      */
+    def peek(): T
+    
+    /**
+      * Inserts a new value in the queue
+      */
+    def queue(value: T): Unit
   }
   object AbstractPriorityQueue {
     
@@ -61,7 +191,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AbstractPriorityQueueMutableBuilder[Self <: AbstractPriorityQueue[_], T] (val x: Self with AbstractPriorityQueue[T]) extends AnyVal {
+    implicit class AbstractPriorityQueueMutableBuilder[Self <: AbstractPriorityQueue[?], T] (val x: Self & AbstractPriorityQueue[T]) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
@@ -82,19 +212,18 @@ object mod {
   
   type PriorityQueue[T] = AbstractPriorityQueue[T]
   
-  @js.native
   trait PriorityQueueOptions[T] extends StObject {
     
     /**
       * This is the argument we would pass to Array.prototype.sort
       */
-    var comparator: js.UndefOr[js.Function2[/* a */ T, /* b */ T, Double]] = js.native
+    var comparator: js.UndefOr[js.Function2[/* a */ T, /* b */ T, Double]] = js.undefined
     
     /**
       * You can also pass initial values, in any order.
       * With lots of values, it's faster to load them all at once than one at a time.
       */
-    var initialValues: js.UndefOr[js.Array[T]] = js.native
+    var initialValues: js.UndefOr[js.Array[T]] = js.undefined
     
     /**
       * According to JsPerf, the fastest strategy for most cases is BinaryHeapStrategy.
@@ -108,7 +237,7 @@ object mod {
           ], 
           AbstractPriorityQueue[js.Object]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PriorityQueueOptions {
     
@@ -119,7 +248,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PriorityQueueOptionsMutableBuilder[Self <: PriorityQueueOptions[_], T] (val x: Self with PriorityQueueOptions[T]) extends AnyVal {
+    implicit class PriorityQueueOptionsMutableBuilder[Self <: PriorityQueueOptions[?], T] (val x: Self & PriorityQueueOptions[T]) extends AnyVal {
       
       @scala.inline
       def setComparator(value: (/* a */ T, /* b */ T) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))

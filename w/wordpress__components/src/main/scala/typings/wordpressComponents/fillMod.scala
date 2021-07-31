@@ -5,31 +5,32 @@ import typings.react.mod.ReactPortal
 import typings.wordpressComponents.fillMod.Fill.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fillMod {
   
   object default {
     
+    @scala.inline
+    def apply(props: Props): ReactPortal = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactPortal]
+    
     @JSImport("@wordpress/components/slot-fill/fill", JSImport.Default)
     @js.native
-    def apply(props: Props): ReactPortal = js.native
+    val ^ : js.Any = js.native
   }
   
   object Fill {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[ReactNode] = js.native
+      var children: js.UndefOr[ReactNode] = js.undefined
       
       /**
         * Both `Slot` and `Fill` accept a `name` string prop, where a `Slot`
         * with a given `name` will render the `children` of any associated
         * `Fill`s.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Props {
       

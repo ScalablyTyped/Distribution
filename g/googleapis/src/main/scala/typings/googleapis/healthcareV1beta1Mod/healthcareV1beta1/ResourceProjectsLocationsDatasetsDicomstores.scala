@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1beta1", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Dicomstores")
@@ -32,7 +31,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def create(): GaxiosPromise[SchemaDicomStore] = js.native
   def create(callback: BodyResponseCallback[SchemaDicomStore]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDicomStore] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDicomStore] = js.native
   def create(params: ParamsResourceProjectsLocationsDatasetsDicomstoresCreate): GaxiosPromise[SchemaDicomStore] = js.native
   def create(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresCreate,
@@ -65,7 +64,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDelete,
@@ -97,21 +96,21 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     * @param {callback} callback The callback that handles the response.
     * @return {object} Request object
     */
-  def export(): GaxiosPromise[SchemaOperation] = js.native
-  def export(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def export(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
-  def export(params: ParamsResourceProjectsLocationsDatasetsDicomstoresExport): GaxiosPromise[SchemaOperation] = js.native
-  def export(
+  def `export`(): GaxiosPromise[SchemaOperation] = js.native
+  def `export`(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def `export`(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def `export`(params: ParamsResourceProjectsLocationsDatasetsDicomstoresExport): GaxiosPromise[SchemaOperation] = js.native
+  def `export`(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresExport,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  def export(
+  def `export`(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresExport,
     options: BodyResponseCallback[SchemaOperation],
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  def export(params: ParamsResourceProjectsLocationsDatasetsDicomstoresExport, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
-  def export(
+  def `export`(params: ParamsResourceProjectsLocationsDatasetsDicomstoresExport, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def `export`(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresExport,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
@@ -131,7 +130,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def get(): GaxiosPromise[SchemaDicomStore] = js.native
   def get(callback: BodyResponseCallback[SchemaDicomStore]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDicomStore] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDicomStore] = js.native
   def get(params: ParamsResourceProjectsLocationsDatasetsDicomstoresGet): GaxiosPromise[SchemaDicomStore] = js.native
   def get(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresGet,
@@ -164,7 +163,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsLocationsDatasetsDicomstoresGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresGetiampolicy,
@@ -201,7 +200,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def `import`(): GaxiosPromise[SchemaOperation] = js.native
   def `import`(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def `import`(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def `import`(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def `import`(params: ParamsResourceProjectsLocationsDatasetsDicomstoresImport): GaxiosPromise[SchemaOperation] = js.native
   def `import`(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresImport,
@@ -236,7 +235,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def list(): GaxiosPromise[SchemaListDicomStoresResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDicomStoresResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDicomStoresResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDicomStoresResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsDatasetsDicomstoresList): GaxiosPromise[SchemaListDicomStoresResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresList,
@@ -270,7 +269,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def patch(): GaxiosPromise[SchemaDicomStore] = js.native
   def patch(callback: BodyResponseCallback[SchemaDicomStore]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDicomStore] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDicomStore] = js.native
   def patch(params: ParamsResourceProjectsLocationsDatasetsDicomstoresPatch): GaxiosPromise[SchemaDicomStore] = js.native
   def patch(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresPatch,
@@ -305,7 +304,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def searchForInstances(): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForInstances(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def searchForInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def searchForInstances(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForInstances(params: ParamsResourceProjectsLocationsDatasetsDicomstoresSearchforinstances): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForInstances(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresSearchforinstances,
@@ -342,7 +341,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def searchForSeries(): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForSeries(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def searchForSeries(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def searchForSeries(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForSeries(params: ParamsResourceProjectsLocationsDatasetsDicomstoresSearchforseries): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForSeries(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresSearchforseries,
@@ -377,7 +376,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def searchForStudies(): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForStudies(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def searchForStudies(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def searchForStudies(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForStudies(params: ParamsResourceProjectsLocationsDatasetsDicomstoresSearchforstudies): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForStudies(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresSearchforstudies,
@@ -411,7 +410,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsLocationsDatasetsDicomstoresSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresSetiampolicy,
@@ -447,7 +446,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def storeInstances(): GaxiosPromise[SchemaHttpBody] = js.native
   def storeInstances(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def storeInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def storeInstances(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def storeInstances(params: ParamsResourceProjectsLocationsDatasetsDicomstoresStoreinstances): GaxiosPromise[SchemaHttpBody] = js.native
   def storeInstances(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresStoreinstances,
@@ -487,7 +486,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends StObject
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsLocationsDatasetsDicomstoresTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresTestiampermissions,

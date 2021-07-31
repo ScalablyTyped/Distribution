@@ -2,27 +2,25 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGSuitePrincipal extends StObject {
   
   /**
     * This principal represents all users of the G Suite domain of the
     * customer.
     */
-  var gsuiteDomain: js.UndefOr[Boolean] = js.native
+  var gsuiteDomain: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This principal references a G Suite group account
     */
-  var gsuiteGroupEmail: js.UndefOr[String] = js.native
+  var gsuiteGroupEmail: js.UndefOr[String] = js.undefined
   
   /**
     * This principal references a G Suite user account
     */
-  var gsuiteUserEmail: js.UndefOr[String] = js.native
+  var gsuiteUserEmail: js.UndefOr[String] = js.undefined
 }
 object SchemaGSuitePrincipal {
   

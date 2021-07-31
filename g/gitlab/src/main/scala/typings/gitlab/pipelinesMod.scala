@@ -10,7 +10,6 @@ import typings.gitlab.requestHelperMod.Sudo
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pipelinesMod {
@@ -61,22 +60,21 @@ object pipelinesMod {
     def showJobs(projectId: Double, pipelineId: Double, options: scopeJobScopeSudo): js.Promise[GetResponse] = js.native
   }
   
-  @js.native
   trait PipelineSchema extends StObject {
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var id: Double = js.native
+    var id: Double
     
-    var ref: String = js.native
+    var ref: String
     
-    var sha: String = js.native
+    var sha: String
     
-    var status: String = js.native
+    var status: String
     
-    var updated_at: Date = js.native
+    var updated_at: Date
     
-    var web_url: String = js.native
+    var web_url: String
   }
   object PipelineSchema {
     

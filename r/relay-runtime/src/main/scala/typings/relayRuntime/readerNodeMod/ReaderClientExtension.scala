@@ -2,16 +2,16 @@ package typings.relayRuntime.readerNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReaderClientExtension extends ReaderSelection {
+trait ReaderClientExtension
+  extends StObject
+     with ReaderSelection {
   
-  val kind: String = js.native
+  val kind: String
   
   // 'ClientExtension';
-  val selections: js.Array[ReaderSelection] = js.native
+  val selections: js.Array[ReaderSelection]
 }
 object ReaderClientExtension {
   

@@ -5,7 +5,6 @@ import typings.std.EventTarget
 import typings.std.ProgressEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to disk using progress events and event handler attributes.
   */
 @js.native
-trait FileSaver extends EventTarget {
+trait FileSaver
+  extends StObject
+     with EventTarget {
   
   /** Terminate file operation */
   def abort(): Unit = js.native

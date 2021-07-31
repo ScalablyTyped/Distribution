@@ -3,15 +3,13 @@ package typings.activexWord.anon
 import typings.activexWord.Word.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sel extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val Sel: Selection = js.native
+  val Sel: Selection
 }
 object Sel {
   

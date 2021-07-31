@@ -4,17 +4,15 @@ import typings.reactNativeWebrtc.reactNativeWebrtcStrings.environment
 import typings.reactNativeWebrtc.reactNativeWebrtcStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaTrackConstraints extends StObject {
   
-  var facingMode: user | environment = js.native
+  var facingMode: user | environment
   
-  var mandatory: MandatoryMedia = js.native
+  var mandatory: MandatoryMedia
   
-  var optional: js.Array[MediaSources] = js.native
+  var optional: js.Array[MediaSources]
 }
 object MediaTrackConstraints {
   

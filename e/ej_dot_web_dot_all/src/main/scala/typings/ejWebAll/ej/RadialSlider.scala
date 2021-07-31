@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadialSlider extends Widget_ {
+trait RadialSlider
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -25,28 +26,27 @@ trait RadialSlider extends Widget_ {
 }
 object RadialSlider {
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Radialslider model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the initial value of Radial slider
       */
-    var oldValue: js.UndefOr[Double] = js.native
+    var oldValue: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the current value of the Radial slider
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -91,20 +91,19 @@ object RadialSlider {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Radialslider model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -137,111 +136,110 @@ object RadialSlider {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** To show the RadialSlider in initial render.
       * @Default {false}
       */
-    var autoOpen: js.UndefOr[Boolean] = js.native
+    var autoOpen: js.UndefOr[Boolean] = js.undefined
     
     /** Event triggers when the change occurs.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Event triggers when the radial slider is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root class for RadialSlider theme. This cssClass API helps to use custom skinning option for RadialSlider control. By defining the root class using this API, we need to
       * include this root class in CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** To enable Animation for Radial Slider.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Enable/Disable the Roundoff property of RadialSlider
       * @Default {true}
       */
-    var enableRoundOff: js.UndefOr[Boolean] = js.native
+    var enableRoundOff: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the endAngle value for radial slider circle.
       * @Default {360}
       */
-    var endAngle: js.UndefOr[Double] = js.native
+    var endAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the inline for label show or not on given radius.
       * @Default {false}
       */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies innerCircleImageClass, using this property we can give images for center radial circle through CSS classes.
       * @Default {null}
       */
-    var innerCircleImageClass: js.UndefOr[String] = js.native
+    var innerCircleImageClass: js.UndefOr[String] = js.undefined
     
     /** Specifies the file name of center circle icon
       * @Default {null}
       */
-    var innerCircleImageUrl: js.UndefOr[String] = js.native
+    var innerCircleImageUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies the Space between the radial slider element and the label.
       * @Default {30}
       */
-    var labelSpace: js.UndefOr[Double] = js.native
+    var labelSpace: js.UndefOr[Double] = js.undefined
     
     /** Change the Radial Slider ticks value based on the given culture.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Event triggers when the mouse pointer is dragged over the radial slider.
       */
-    var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.native
+    var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.undefined
     
     /** Specifies the radius of radial slider
       * @Default {200}
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /** To show the RadialSlider inner circle.
       * @Default {true}
       */
-    var showInnerCircle: js.UndefOr[Boolean] = js.native
+    var showInnerCircle: js.UndefOr[Boolean] = js.undefined
     
     /** Event triggers when the Radial slider slides.
       */
-    var slide: js.UndefOr[js.Function1[/* e */ SlideEventArgs, Unit]] = js.native
+    var slide: js.UndefOr[js.Function1[/* e */ SlideEventArgs, Unit]] = js.undefined
     
     /** Event triggers when the radial slider starts.
       */
-    var start: js.UndefOr[js.Function1[/* e */ StartEventArgs, Unit]] = js.native
+    var start: js.UndefOr[js.Function1[/* e */ StartEventArgs, Unit]] = js.undefined
     
     /** Specifies the endAngle value for radial slider circle.
       * @Default {0}
       */
-    var startAngle: js.UndefOr[Double] = js.native
+    var startAngle: js.UndefOr[Double] = js.undefined
     
     /** Event triggers when the radial slider stops.
       */
-    var stop: js.UndefOr[js.Function1[/* e */ StopEventArgs, Unit]] = js.native
+    var stop: js.UndefOr[js.Function1[/* e */ StopEventArgs, Unit]] = js.undefined
     
     /** Specifies the  strokeWidth for customize the needle, outer circle and inner circle.
       * @Default {2}
       */
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the ticks value of radial slider
       */
-    var ticks: js.UndefOr[js.Array[_]] = js.native
+    var ticks: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the value of radial slider
       * @Default {10}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -375,7 +373,7 @@ object RadialSlider {
       def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
       @scala.inline
-      def setTicks(value: js.Array[_]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+      def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
@@ -391,28 +389,27 @@ object RadialSlider {
     }
   }
   
-  @js.native
   trait MouseoverEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Radialslider model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the value selected
       */
-    var selectedValue: js.UndefOr[Double] = js.native
+    var selectedValue: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the current value selected in Radial slider
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object MouseoverEventArgs {
     
@@ -457,28 +454,27 @@ object RadialSlider {
     }
   }
   
-  @js.native
   trait SlideEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Radialslider model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the value selected in Radial slider
       */
-    var selectedValue: js.UndefOr[Double] = js.native
+    var selectedValue: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the currently selected value
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object SlideEventArgs {
     
@@ -523,24 +519,23 @@ object RadialSlider {
     }
   }
   
-  @js.native
   trait StartEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Radialslider model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the current value selected in Radial slider
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object StartEventArgs {
     
@@ -579,24 +574,23 @@ object RadialSlider {
     }
   }
   
-  @js.native
   trait StopEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Radialslider model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the current value selected in Radial slider
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object StopEventArgs {
     

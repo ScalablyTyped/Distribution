@@ -2,15 +2,13 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppointmentData extends StObject {
   
-  var appointmentData: js.UndefOr[js.Any] = js.native
+  var appointmentData: js.UndefOr[js.Any] = js.undefined
   
-  var targetedAppointmentData: js.UndefOr[js.Any] = js.native
+  var targetedAppointmentData: js.UndefOr[js.Any] = js.undefined
 }
 object AppointmentData {
   

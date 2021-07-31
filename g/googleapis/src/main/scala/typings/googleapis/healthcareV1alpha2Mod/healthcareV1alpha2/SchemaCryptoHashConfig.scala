@@ -2,7 +2,6 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * hashed output (for example,
   * `L7k0BHmF1ha5U3NfGykjro4xWi1MPVQPjhMAZbSV9mM=`).
   */
-@js.native
 trait SchemaCryptoHashConfig extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaCryptoHashConfig extends StObject {
     * key. A default key is generated for each DeidentifyDataset operation and
     * is used wherever crypto_key is not specified.
     */
-  var cryptoKey: js.UndefOr[String] = js.native
+  var cryptoKey: js.UndefOr[String] = js.undefined
 }
 object SchemaCryptoHashConfig {
   

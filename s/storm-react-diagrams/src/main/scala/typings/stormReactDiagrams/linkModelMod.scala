@@ -9,7 +9,6 @@ import typings.stormReactDiagrams.pointModelMod.PointModel
 import typings.stormReactDiagrams.portModelMod.PortModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkModelMod {
@@ -18,8 +17,8 @@ object linkModelMod {
   @js.native
   class LinkModel[T /* <: LinkModelListener */] () extends BaseModel[DiagramModel, T] {
     def this(linkType: String) = this()
-    def this(linkType: js.UndefOr[scala.Nothing], id: String) = this()
     def this(linkType: String, id: String) = this()
+    def this(linkType: Unit, id: String) = this()
     
     def addLabel(label: LabelModel): Unit = js.native
     
@@ -29,9 +28,9 @@ object linkModelMod {
     def doClone(lookupTable: js.Object, clone: js.Any): Unit = js.native
     
     def generatePoint(): PointModel = js.native
-    def generatePoint(x: js.UndefOr[scala.Nothing], y: Double): PointModel = js.native
     def generatePoint(x: Double): PointModel = js.native
     def generatePoint(x: Double, y: Double): PointModel = js.native
+    def generatePoint(x: Unit, y: Double): PointModel = js.native
     
     def getFirstPoint(): PointModel = js.native
     
@@ -78,12 +77,13 @@ object linkModelMod {
     var targetPort: PortModel | Null = js.native
   }
   
-  @js.native
-  trait LinkModelListener extends BaseModelListener {
+  trait LinkModelListener
+    extends StObject
+       with BaseModelListener {
     
-    var sourcePortChanged: js.UndefOr[js.Function1[/* event */ BaseEventLinkModelLinkMod, Unit]] = js.native
+    var sourcePortChanged: js.UndefOr[js.Function1[/* event */ BaseEventLinkModelLinkMod, Unit]] = js.undefined
     
-    var targetPortChanged: js.UndefOr[js.Function1[/* event */ BaseEventLinkModelLinkMod, Unit]] = js.native
+    var targetPortChanged: js.UndefOr[js.Function1[/* event */ BaseEventLinkModelLinkMod, Unit]] = js.undefined
   }
   object LinkModelListener {
     

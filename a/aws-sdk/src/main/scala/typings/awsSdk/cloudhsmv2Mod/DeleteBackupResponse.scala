@@ -2,16 +2,14 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBackupResponse extends StObject {
   
   /**
     * Information on the Backup object deleted.
     */
-  var Backup: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Backup] = js.native
+  var Backup: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Backup] = js.undefined
 }
 object DeleteBackupResponse {
   

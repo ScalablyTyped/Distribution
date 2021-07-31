@@ -5,16 +5,16 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // -----------------------------------
-@js.native
-trait Field extends Widget {
+trait Field
+  extends StObject
+     with Widget {
   
-  var placeholder: String = js.native
+  var placeholder: String
   
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object Field {
   

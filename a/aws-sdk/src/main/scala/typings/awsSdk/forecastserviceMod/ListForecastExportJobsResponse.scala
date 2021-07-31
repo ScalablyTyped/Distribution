@@ -2,21 +2,19 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListForecastExportJobsResponse extends StObject {
   
   /**
     * An array of objects that summarize each export job's properties.
     */
-  var ForecastExportJobs: js.UndefOr[typings.awsSdk.forecastserviceMod.ForecastExportJobs] = js.native
+  var ForecastExportJobs: js.UndefOr[typings.awsSdk.forecastserviceMod.ForecastExportJobs] = js.undefined
   
   /**
     * If the response is truncated, Amazon Forecast returns this token. To retrieve the next set of results, use the token in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.forecastserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.forecastserviceMod.NextToken] = js.undefined
 }
 object ListForecastExportJobsResponse {
   

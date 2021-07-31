@@ -4,7 +4,6 @@ import typings.html5plus.html5plusStrings.default
 import typings.html5plus.html5plusStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
   */
-@js.native
 trait PlusBarcodeBarcodeOptions extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait PlusBarcodeBarcodeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var conserve: js.UndefOr[Boolean] = js.native
+  var conserve: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 保存扫码成功时图片保存路径
@@ -31,7 +29,7 @@ trait PlusBarcodeBarcodeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
   /**
     * 扫码成功时播放的提示音
@@ -44,7 +42,7 @@ trait PlusBarcodeBarcodeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var sound: js.UndefOr[none | default] = js.native
+  var sound: js.UndefOr[none | default] = js.undefined
   
   /**
     * 扫码成功时是否需要震动提醒
@@ -53,7 +51,7 @@ trait PlusBarcodeBarcodeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var vibrate: js.UndefOr[Boolean] = js.native
+  var vibrate: js.UndefOr[Boolean] = js.undefined
 }
 object PlusBarcodeBarcodeOptions {
   

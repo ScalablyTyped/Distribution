@@ -3,54 +3,52 @@ package typings.ts3NodejsLibrary.anon
 import typings.ts3NodejsLibrary.enumMod.Codec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ts3-nodejs-library.ts3-nodejs-library/lib/types/ResponseTypes.ChannelEntry> */
-@js.native
 trait PartialChannelEntry extends StObject {
   
-  var channelBannerGfxUrl: js.UndefOr[String] = js.native
+  var channelBannerGfxUrl: js.UndefOr[String] = js.undefined
   
-  var channelBannerMode: js.UndefOr[Double] = js.native
+  var channelBannerMode: js.UndefOr[Double] = js.undefined
   
-  var channelCodec: js.UndefOr[Codec] = js.native
+  var channelCodec: js.UndefOr[Codec] = js.undefined
   
-  var channelCodecQuality: js.UndefOr[Double] = js.native
+  var channelCodecQuality: js.UndefOr[Double] = js.undefined
   
-  var channelFlagDefault: js.UndefOr[Boolean] = js.native
+  var channelFlagDefault: js.UndefOr[Boolean] = js.undefined
   
-  var channelFlagPassword: js.UndefOr[Boolean] = js.native
+  var channelFlagPassword: js.UndefOr[Boolean] = js.undefined
   
-  var channelFlagPermanent: js.UndefOr[Boolean] = js.native
+  var channelFlagPermanent: js.UndefOr[Boolean] = js.undefined
   
-  var channelFlagSemiPermanent: js.UndefOr[Boolean] = js.native
+  var channelFlagSemiPermanent: js.UndefOr[Boolean] = js.undefined
   
-  var channelIconId: js.UndefOr[String] = js.native
+  var channelIconId: js.UndefOr[String] = js.undefined
   
-  var channelMaxclients: js.UndefOr[Double] = js.native
+  var channelMaxclients: js.UndefOr[Double] = js.undefined
   
-  var channelMaxfamilyclients: js.UndefOr[Double] = js.native
+  var channelMaxfamilyclients: js.UndefOr[Double] = js.undefined
   
-  var channelName: js.UndefOr[String] = js.native
+  var channelName: js.UndefOr[String] = js.undefined
   
-  var channelNeededSubscribePower: js.UndefOr[Double] = js.native
+  var channelNeededSubscribePower: js.UndefOr[Double] = js.undefined
   
-  var channelNeededTalkPower: js.UndefOr[Double] = js.native
+  var channelNeededTalkPower: js.UndefOr[Double] = js.undefined
   
-  var channelOrder: js.UndefOr[Double] = js.native
+  var channelOrder: js.UndefOr[Double] = js.undefined
   
-  var channelTopic: js.UndefOr[String] = js.native
+  var channelTopic: js.UndefOr[String] = js.undefined
   
-  var cid: js.UndefOr[String] = js.native
+  var cid: js.UndefOr[String] = js.undefined
   
-  var pid: js.UndefOr[String] = js.native
+  var pid: js.UndefOr[String] = js.undefined
   
-  var secondsEmpty: js.UndefOr[Double] = js.native
+  var secondsEmpty: js.UndefOr[Double] = js.undefined
   
-  var totalClients: js.UndefOr[Double] = js.native
+  var totalClients: js.UndefOr[Double] = js.undefined
   
-  var totalClientsFamily: js.UndefOr[Double] = js.native
+  var totalClientsFamily: js.UndefOr[Double] = js.undefined
 }
 object PartialChannelEntry {
   

@@ -7,21 +7,19 @@ import typings.awsSdk.s3Mod.RecordsEvent
 import typings.awsSdk.s3Mod.StatsEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cont extends StObject {
   
-  var Cont: js.UndefOr[ContinuationEvent] = js.native
+  var Cont: js.UndefOr[ContinuationEvent] = js.undefined
   
-  var End: js.UndefOr[EndEvent] = js.native
+  var End: js.UndefOr[EndEvent] = js.undefined
   
-  var Progress: js.UndefOr[ProgressEvent] = js.native
+  var Progress: js.UndefOr[ProgressEvent] = js.undefined
   
-  var Records: js.UndefOr[RecordsEvent] = js.native
+  var Records: js.UndefOr[RecordsEvent] = js.undefined
   
-  var Stats: js.UndefOr[StatsEvent] = js.native
+  var Stats: js.UndefOr[StatsEvent] = js.undefined
 }
 object Cont {
   

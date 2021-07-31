@@ -2,7 +2,6 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * rearrange the information in the table for certain reports by pivoting your
   * data on a second dimension.
   */
-@js.native
 trait SchemaPivot extends StObject {
   
   /**
@@ -23,26 +21,26 @@ trait SchemaPivot extends StObject {
     * or &quot;Firefox&quot;, then only those two browsers would show up as
     * columns.
     */
-  var dimensionFilterClauses: js.UndefOr[js.Array[SchemaDimensionFilterClause]] = js.native
+  var dimensionFilterClauses: js.UndefOr[js.Array[SchemaDimensionFilterClause]] = js.undefined
   
   /**
     * A list of dimensions to show as pivot columns. A Pivot can have a maximum
     * of 4 dimensions. Pivot dimensions are part of the restriction on the
     * total number of dimensions allowed in the request.
     */
-  var dimensions: js.UndefOr[js.Array[SchemaDimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[SchemaDimension]] = js.undefined
   
   /**
     * Specifies the maximum number of groups to return. The default value is
     * 10, also the maximum value is 1,000.
     */
-  var maxGroupCount: js.UndefOr[Double] = js.native
+  var maxGroupCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The pivot metrics. Pivot metrics are part of the restriction on total
     * number of metrics allowed in the request.
     */
-  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.native
+  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.undefined
   
   /**
     * If k metrics were requested, then the response will contain some
@@ -58,7 +56,7 @@ trait SchemaPivot extends StObject {
     * Firefox, IE.  The following let you choose which of the groups of k
     * columns are included in the response.
     */
-  var startGroup: js.UndefOr[Double] = js.native
+  var startGroup: js.UndefOr[Double] = js.undefined
 }
 object SchemaPivot {
   

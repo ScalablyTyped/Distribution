@@ -2,31 +2,29 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Edits extends StObject {
   
-  var annotationPosition: Boolean = js.native
+  var annotationPosition: Boolean
   
-  var annotationTail: Boolean = js.native
+  var annotationTail: Boolean
   
-  var annotationText: Boolean = js.native
+  var annotationText: Boolean
   
-  var axisTitleText: Boolean = js.native
+  var axisTitleText: Boolean
   
-  var colorbarPosition: Boolean = js.native
+  var colorbarPosition: Boolean
   
-  var colorbarTitleText: Boolean = js.native
+  var colorbarTitleText: Boolean
   
-  var legendPosition: Boolean = js.native
+  var legendPosition: Boolean
   
-  var legendText: Boolean = js.native
+  var legendText: Boolean
   
-  var shapePosition: Boolean = js.native
+  var shapePosition: Boolean
   
-  var titleText: Boolean = js.native
+  var titleText: Boolean
 }
 object Edits {
   

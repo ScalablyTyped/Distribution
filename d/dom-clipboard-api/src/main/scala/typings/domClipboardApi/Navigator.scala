@@ -2,13 +2,11 @@ package typings.domClipboardApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
-  val clipboard: Clipboard = js.native
+  val clipboard: Clipboard
 }
 object Navigator {
   

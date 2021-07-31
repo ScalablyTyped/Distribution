@@ -1,21 +1,24 @@
 package typings.reactLeaflet.mod
 
-import typings.leaflet.mod.Control_.LayersOptions
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactLeaflet.mod.MapControlProps because var conflicts: position. Inlined leaflet */ @js.native
-trait LayersControlProps
-  extends LayersOptions
+- typings.leaflet.mod.ControlOptions because Already inherited
+- typings.leaflet.mod.Control_.LayersOptions because var conflicts: position. Inlined hideSingleBase, autoZIndex, collapsed */ trait LayersControlProps
+  extends StObject
+     with MapControlProps
      with LayersControlEvents {
   
-  var children: Children = js.native
+  var autoZIndex: js.UndefOr[Boolean] = js.undefined
   
-  var leaflet: js.UndefOr[LeafletContext] = js.native
+  var children: Children
+  
+  var collapsed: js.UndefOr[Boolean] = js.undefined
+  
+  var hideSingleBase: js.UndefOr[Boolean] = js.undefined
 }
 object LayersControlProps {
   
@@ -29,6 +32,12 @@ object LayersControlProps {
   implicit class LayersControlPropsMutableBuilder[Self <: LayersControlProps] (val x: Self) extends AnyVal {
     
     @scala.inline
+    def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAutoZIndexUndefined: Self = StObject.set(x, "autoZIndex", js.undefined)
+    
+    @scala.inline
     def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -38,9 +47,15 @@ object LayersControlProps {
     def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
+    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
+    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    
+    @scala.inline
+    def setHideSingleBase(value: Boolean): Self = StObject.set(x, "hideSingleBase", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHideSingleBaseUndefined: Self = StObject.set(x, "hideSingleBase", js.undefined)
   }
 }

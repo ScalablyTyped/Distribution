@@ -3,15 +3,13 @@ package typings.stripeV3.stripe
 import typings.stripeV3.stripe.setupIntents.SetupIntent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetupIntentResponse extends StObject {
   
-  var error: js.UndefOr[Error] = js.native
+  var error: js.UndefOr[Error] = js.undefined
   
-  var setupIntent: js.UndefOr[SetupIntent] = js.native
+  var setupIntent: js.UndefOr[SetupIntent] = js.undefined
 }
 object SetupIntentResponse {
   

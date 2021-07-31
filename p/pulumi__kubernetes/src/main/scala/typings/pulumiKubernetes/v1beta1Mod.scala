@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1beta1Mod {
@@ -27,11 +26,15 @@ object v1beta1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: MutatingWebhookConfigurationArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: MutatingWebhookConfigurationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object MutatingWebhookConfiguration {
+    
+    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "MutatingWebhookConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing MutatingWebhookConfiguration resource's state with the given name, ID, and optional extra
@@ -41,20 +44,17 @@ object v1beta1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "MutatingWebhookConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.mutatingWebhookConfigurationMod.MutatingWebhookConfiguration = js.native
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "MutatingWebhookConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.mutatingWebhookConfigurationMod.MutatingWebhookConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.mutatingWebhookConfigurationMod.MutatingWebhookConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.mutatingWebhookConfigurationMod.MutatingWebhookConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.mutatingWebhookConfigurationMod.MutatingWebhookConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.mutatingWebhookConfigurationMod.MutatingWebhookConfiguration]
     
     /**
       * Returns true if the given object is an instance of MutatingWebhookConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "MutatingWebhookConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/mutatingWebhookConfiguration.MutatingWebhookConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/mutatingWebhookConfiguration.MutatingWebhookConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/mutatingWebhookConfiguration.MutatingWebhookConfiguration */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "MutatingWebhookConfigurationList")
@@ -70,11 +70,15 @@ object v1beta1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: MutatingWebhookConfigurationListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: MutatingWebhookConfigurationListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object MutatingWebhookConfigurationList {
+    
+    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "MutatingWebhookConfigurationList")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing MutatingWebhookConfigurationList resource's state with the given name, ID, and optional extra
@@ -84,20 +88,17 @@ object v1beta1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "MutatingWebhookConfigurationList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.mutatingWebhookConfigurationListMod.MutatingWebhookConfigurationList = js.native
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "MutatingWebhookConfigurationList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.mutatingWebhookConfigurationListMod.MutatingWebhookConfigurationList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.mutatingWebhookConfigurationListMod.MutatingWebhookConfigurationList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.mutatingWebhookConfigurationListMod.MutatingWebhookConfigurationList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.mutatingWebhookConfigurationListMod.MutatingWebhookConfigurationList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.mutatingWebhookConfigurationListMod.MutatingWebhookConfigurationList]
     
     /**
       * Returns true if the given object is an instance of MutatingWebhookConfigurationList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "MutatingWebhookConfigurationList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/mutatingWebhookConfigurationList.MutatingWebhookConfigurationList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/mutatingWebhookConfigurationList.MutatingWebhookConfigurationList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/mutatingWebhookConfigurationList.MutatingWebhookConfigurationList */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "ValidatingWebhookConfiguration")
@@ -113,11 +114,15 @@ object v1beta1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: ValidatingWebhookConfigurationArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ValidatingWebhookConfigurationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object ValidatingWebhookConfiguration {
+    
+    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "ValidatingWebhookConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing ValidatingWebhookConfiguration resource's state with the given name, ID, and optional extra
@@ -127,20 +132,17 @@ object v1beta1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "ValidatingWebhookConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.validatingWebhookConfigurationMod.ValidatingWebhookConfiguration = js.native
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "ValidatingWebhookConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.validatingWebhookConfigurationMod.ValidatingWebhookConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.validatingWebhookConfigurationMod.ValidatingWebhookConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.validatingWebhookConfigurationMod.ValidatingWebhookConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.validatingWebhookConfigurationMod.ValidatingWebhookConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.validatingWebhookConfigurationMod.ValidatingWebhookConfiguration]
     
     /**
       * Returns true if the given object is an instance of ValidatingWebhookConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "ValidatingWebhookConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/validatingWebhookConfiguration.ValidatingWebhookConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/validatingWebhookConfiguration.ValidatingWebhookConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/validatingWebhookConfiguration.ValidatingWebhookConfiguration */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "ValidatingWebhookConfigurationList")
@@ -156,11 +158,15 @@ object v1beta1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: ValidatingWebhookConfigurationListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ValidatingWebhookConfigurationListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object ValidatingWebhookConfigurationList {
+    
+    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "ValidatingWebhookConfigurationList")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing ValidatingWebhookConfigurationList resource's state with the given name, ID, and optional extra
@@ -170,19 +176,16 @@ object v1beta1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "ValidatingWebhookConfigurationList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.validatingWebhookConfigurationListMod.ValidatingWebhookConfigurationList = js.native
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "ValidatingWebhookConfigurationList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.validatingWebhookConfigurationListMod.ValidatingWebhookConfigurationList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.validatingWebhookConfigurationListMod.ValidatingWebhookConfigurationList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.validatingWebhookConfigurationListMod.ValidatingWebhookConfigurationList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.validatingWebhookConfigurationListMod.ValidatingWebhookConfigurationList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.validatingWebhookConfigurationListMod.ValidatingWebhookConfigurationList]
     
     /**
       * Returns true if the given object is an instance of ValidatingWebhookConfigurationList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/admissionregistration/v1beta1", "ValidatingWebhookConfigurationList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/validatingWebhookConfigurationList.ValidatingWebhookConfigurationList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/validatingWebhookConfigurationList.ValidatingWebhookConfigurationList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1beta1/validatingWebhookConfigurationList.ValidatingWebhookConfigurationList */ Boolean]
   }
 }

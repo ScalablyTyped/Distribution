@@ -3,33 +3,31 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the settings for the automatic reply functionality of an email account. */
-@js.native
 trait EmailMailboxAutoReplySettings extends StObject {
   
   /** Represents the end time for the automated reply period. */
-  var endTime: Date = js.native
+  var endTime: Date
   
   /** Gets the automatic reply message intended for an email message from an internal sender. */
-  var internalReply: EmailMailboxAutoReply = js.native
+  var internalReply: EmailMailboxAutoReply
   
   /** Gets a Boolean value indicating whether automatic replies are enabled. */
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
   /** Gets the automatic reply message intended for an email message from a known external sender. */
-  var knownExternalReply: EmailMailboxAutoReply = js.native
+  var knownExternalReply: EmailMailboxAutoReply
   
   /** Gets or sets whether the automated response email message is encoded as HTML or plain text. */
-  var responseKind: EmailMailboxAutoReplyMessageResponseKind = js.native
+  var responseKind: EmailMailboxAutoReplyMessageResponseKind
   
   /** Represents the start time for the automated reply period. */
-  var startTime: Date = js.native
+  var startTime: Date
   
   /** Gets the automatic reply message intended for an email message from an unknown external sender. */
-  var unknownExternalReply: EmailMailboxAutoReply = js.native
+  var unknownExternalReply: EmailMailboxAutoReply
 }
 object EmailMailboxAutoReplySettings {
   

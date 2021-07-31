@@ -3,27 +3,25 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindow extends StObject {
   
   /** DailyMaintenanceWindow specifies a daily maintenance operation window. */
-  var dailyMaintenanceWindow: js.UndefOr[DailyMaintenanceWindow] = js.native
+  var dailyMaintenanceWindow: js.UndefOr[DailyMaintenanceWindow] = js.undefined
   
   /** Exceptions to maintenance window. Non-emergency maintenance should not occur in these windows. */
   var maintenanceExclusions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.container.gapi.client.container.TimeWindow}
-    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.MaintenanceWindow with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.MaintenanceWindow & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * RecurringWindow specifies some number of recurring time periods for maintenance to occur. The time windows may be overlapping. If no maintenance windows are set, maintenance can
     * occur at any time.
     */
-  var recurringWindow: js.UndefOr[RecurringTimeWindow] = js.native
+  var recurringWindow: js.UndefOr[RecurringTimeWindow] = js.undefined
 }
 object MaintenanceWindow {
   
@@ -46,7 +44,7 @@ object MaintenanceWindow {
     def setMaintenanceExclusions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.container.gapi.client.container.TimeWindow}
-      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.MaintenanceWindow with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.MaintenanceWindow & TopLevel[js.Any]
     ): Self = StObject.set(x, "maintenanceExclusions", value.asInstanceOf[js.Any])
     
     @scala.inline

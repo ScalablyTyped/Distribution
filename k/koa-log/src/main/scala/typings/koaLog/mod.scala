@@ -7,54 +7,51 @@ import typings.koa.mod.Middleware
 import typings.koa.mod.ParameterizedContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(`type`: String): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("koa-log", JSImport.Namespace)
   @js.native
-  def apply(`type`: String): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
   
   object morgan {
     
-    @JSImport("koa-log", "morgan.cookie")
+    @JSImport("koa-log", "morgan")
     @js.native
-    def cookie(ctx: BaseContext, key: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("koa-log", "morgan.date")
-    @js.native
-    def date(ctx: BaseContext, format: String): String = js.native
+    @scala.inline
+    def cookie(ctx: BaseContext, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(ctx.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("koa-log", "morgan.format")
-    @js.native
-    def format(name: String): String = js.native
+    @scala.inline
+    def date(ctx: BaseContext, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(ctx.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("koa-log", "morgan.length")
-    @js.native
-    def length(ctx: BaseContext): js.UndefOr[Double] = js.native
+    @scala.inline
+    def format(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("koa-log", "morgan.method")
-    @js.native
-    def method(ctx: BaseContext): String = js.native
+    @scala.inline
+    def length(ctx: BaseContext): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("length")(ctx.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
     
-    @JSImport("koa-log", "morgan.referrer")
-    @js.native
-    def referrer(ctx: BaseContext): String = js.native
+    @scala.inline
+    def method(ctx: BaseContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(ctx.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("koa-log", "morgan.status")
-    @js.native
-    def status(ctx: BaseContext): Double = js.native
+    @scala.inline
+    def referrer(ctx: BaseContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("referrer")(ctx.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("koa-log", "morgan.token")
-    @js.native
+    @scala.inline
+    def status(ctx: BaseContext): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("status")(ctx.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
     def token(
       name: String,
       fn: js.Function1[/* ctx */ ParameterizedContext[DefaultState, DefaultContext], String]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("token")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("koa-log", "morgan.url")
-    @js.native
-    def url(ctx: BaseContext): String = js.native
+    @scala.inline
+    def url(ctx: BaseContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(ctx.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

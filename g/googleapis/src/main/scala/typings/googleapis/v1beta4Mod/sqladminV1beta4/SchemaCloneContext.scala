@@ -2,13 +2,11 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database instance clone context.
   */
-@js.native
 trait SchemaCloneContext extends StObject {
   
   /**
@@ -16,22 +14,22 @@ trait SchemaCloneContext extends StObject {
     * the source instance should be cloned. If not specified, the source
     * instance is cloned up to the most recent binary log coordinates.
     */
-  var binLogCoordinates: js.UndefOr[SchemaBinLogCoordinates] = js.native
+  var binLogCoordinates: js.UndefOr[SchemaBinLogCoordinates] = js.undefined
   
   /**
     * Name of the Cloud SQL instance to be created as a clone.
     */
-  var destinationInstanceName: js.UndefOr[String] = js.native
+  var destinationInstanceName: js.UndefOr[String] = js.undefined
   
   /**
     * This is always sql#cloneContext.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for future use.
     */
-  var pitrTimestampMs: js.UndefOr[String] = js.native
+  var pitrTimestampMs: js.UndefOr[String] = js.undefined
 }
 object SchemaCloneContext {
   

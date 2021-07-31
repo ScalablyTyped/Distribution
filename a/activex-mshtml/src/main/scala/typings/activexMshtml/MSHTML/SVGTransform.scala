@@ -2,32 +2,30 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGTransform extends StObject {
   
   @JSName("MSHTML.SVGTransform_typekey")
-  var MSHTMLDotSVGTransform_typekey: SVGTransform = js.native
+  var MSHTMLDotSVGTransform_typekey: SVGTransform
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var matrix: SVGMatrix = js.native
+  var matrix: SVGMatrix
   
-  def setMatrix(matrix: SVGMatrix): Unit = js.native
+  def setMatrix(matrix: SVGMatrix): Unit
   
-  def setRotate(angle: Double, cx: Double, cy: Double): Unit = js.native
+  def setRotate(angle: Double, cx: Double, cy: Double): Unit
   
-  def setScale(sx: Double, sy: Double): Unit = js.native
+  def setScale(sx: Double, sy: Double): Unit
   
-  def setSkewX(angle: Double): Unit = js.native
+  def setSkewX(angle: Double): Unit
   
-  def setSkewY(angle: Double): Unit = js.native
+  def setSkewY(angle: Double): Unit
   
-  def setTranslate(tx: Double, ty: Double): Unit = js.native
+  def setTranslate(tx: Double, ty: Double): Unit
   
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object SVGTransform {
   

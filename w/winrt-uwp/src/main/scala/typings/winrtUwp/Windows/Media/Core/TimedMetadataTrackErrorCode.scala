@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object TimedMetadataTrackErrorCode extends StObject {
   
   /** The error was related to the format of the timed metadata track data. */
   @js.native
-  sealed trait dataFormatError extends TimedMetadataTrackErrorCode
+  sealed trait dataFormatError
+    extends StObject
+       with TimedMetadataTrackErrorCode
   
   /** The error occurred internal to the system. */
   @js.native
-  sealed trait internalError extends TimedMetadataTrackErrorCode
+  sealed trait internalError
+    extends StObject
+       with TimedMetadataTrackErrorCode
   
   /** A network error occurred. */
   @js.native
-  sealed trait networkError extends TimedMetadataTrackErrorCode
+  sealed trait networkError
+    extends StObject
+       with TimedMetadataTrackErrorCode
   
   /** No error code. */
   @js.native
-  sealed trait none extends TimedMetadataTrackErrorCode
+  sealed trait none
+    extends StObject
+       with TimedMetadataTrackErrorCode
 }

@@ -2,15 +2,13 @@ package typings.netKeepalive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fd extends StObject {
     
-    var _fd: Double = js.native
+    var _fd: Double
   }
   object Fd {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Handle extends StObject {
     
-    var _handle: Fd = js.native
+    var _handle: Fd
   }
   object Handle {
     

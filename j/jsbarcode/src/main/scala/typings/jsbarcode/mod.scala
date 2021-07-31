@@ -5,7 +5,6 @@ import typings.std.HTMLImageElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,77 +16,71 @@ object mod {
     * @param barcodeText Text to be rendered.
     * @param barcodeOptions Options used for rendering.
     */
-  @JSImport("jsbarcode", JSImport.Namespace)
-  @js.native
-  def apply(svg: String, barcodeText: String): Unit = js.native
-  @JSImport("jsbarcode", JSImport.Namespace)
-  @js.native
-  def apply(svg: String, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = js.native
-  @JSImport("jsbarcode", JSImport.Namespace)
-  @js.native
-  def apply(svg: HTMLCanvasElement, barcodeText: String): Unit = js.native
-  @JSImport("jsbarcode", JSImport.Namespace)
-  @js.native
-  def apply(svg: HTMLCanvasElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = js.native
-  @JSImport("jsbarcode", JSImport.Namespace)
-  @js.native
-  def apply(svg: HTMLImageElement, barcodeText: String): Unit = js.native
-  @JSImport("jsbarcode", JSImport.Namespace)
-  @js.native
-  def apply(svg: HTMLImageElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = js.native
-  @JSImport("jsbarcode", JSImport.Namespace)
-  @js.native
-  def apply(svg: SVGElement, barcodeText: String): Unit = js.native
-  @JSImport("jsbarcode", JSImport.Namespace)
-  @js.native
-  def apply(svg: SVGElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = js.native
+  @scala.inline
+  def apply(svg: String, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(svg: String, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(svg: HTMLCanvasElement, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(svg: HTMLCanvasElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(svg: HTMLImageElement, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(svg: HTMLImageElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(svg: SVGElement, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(svg: SVGElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsbarcode", "getModule")
+  @JSImport("jsbarcode", JSImport.Namespace)
   @js.native
-  def getModule(name: String): js.Function0[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getModule(name: String): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModule")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  
   trait JsBarcodeOptions extends StObject {
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var displayValue: js.UndefOr[Boolean] = js.native
+    var displayValue: js.UndefOr[Boolean] = js.undefined
     
-    var flat: js.UndefOr[Boolean] = js.native
+    var flat: js.UndefOr[Boolean] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var fontOptions: js.UndefOr[String] = js.native
+    var fontOptions: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var format: String = js.native
+    var format: String
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var lineColor: js.UndefOr[String] = js.native
+    var lineColor: js.UndefOr[String] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
-    var marginBottom: js.UndefOr[Double] = js.native
+    var marginBottom: js.UndefOr[Double] = js.undefined
     
-    var marginLeft: js.UndefOr[Double] = js.native
+    var marginLeft: js.UndefOr[Double] = js.undefined
     
-    var marginRight: js.UndefOr[Double] = js.native
+    var marginRight: js.UndefOr[Double] = js.undefined
     
-    var marginTop: js.UndefOr[Double] = js.native
+    var marginTop: js.UndefOr[Double] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
-    var textMargin: js.UndefOr[Double] = js.native
+    var textMargin: js.UndefOr[Double] = js.undefined
     
-    var textPosition: js.UndefOr[String] = js.native
+    var textPosition: js.UndefOr[String] = js.undefined
     
-    var valid: js.UndefOr[js.Function1[/* valid */ Boolean, Unit]] = js.native
+    var valid: js.UndefOr[js.Function1[/* valid */ Boolean, Unit]] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object JsBarcodeOptions {
     

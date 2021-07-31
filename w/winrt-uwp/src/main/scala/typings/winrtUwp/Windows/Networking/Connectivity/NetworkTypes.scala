@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object NetworkTypes extends StObject {
   
   /** Internet. */
   @js.native
-  sealed trait internet extends NetworkTypes
+  sealed trait internet
+    extends StObject
+       with NetworkTypes
   
   /** No network. */
   @js.native
-  sealed trait none extends NetworkTypes
+  sealed trait none
+    extends StObject
+       with NetworkTypes
   
   /** Private network. */
   @js.native
-  sealed trait privateNetwork extends NetworkTypes
+  sealed trait privateNetwork
+    extends StObject
+       with NetworkTypes
 }

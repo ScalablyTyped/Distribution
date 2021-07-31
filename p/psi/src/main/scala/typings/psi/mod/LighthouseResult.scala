@@ -3,39 +3,37 @@ package typings.psi.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LighthouseResult extends StObject {
   
-  var audits: StringDictionary[Audit] = js.native
+  var audits: StringDictionary[Audit]
   
-  var categories: StringDictionary[Category] = js.native
+  var categories: StringDictionary[Category]
   
-  var categoryGroups: StringDictionary[CategoryGroup] = js.native
+  var categoryGroups: StringDictionary[CategoryGroup]
   
-  var configSettings: ConfigSettings = js.native
+  var configSettings: ConfigSettings
   
-  var environment: Environment = js.native
+  var environment: Environment
   
-  var fetchTime: String = js.native
+  var fetchTime: String
   
-  var finalUrl: String = js.native
+  var finalUrl: String
   
-  var i18n: I18N = js.native
+  var i18n: I18N
   
-  var lighthouseVersion: String = js.native
+  var lighthouseVersion: String
   
-  var requestedUrl: String = js.native
+  var requestedUrl: String
   
-  var runWarnings: js.Array[String] = js.native
+  var runWarnings: js.Array[String]
   
-  var runtimeError: RuntimeError = js.native
+  var runtimeError: RuntimeError
   
-  var timing: Timing = js.native
+  var timing: Timing
   
-  var userAgent: String = js.native
+  var userAgent: String
 }
 object LighthouseResult {
   

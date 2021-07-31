@@ -2,11 +2,11 @@ package typings.winrt.Windows.Data.Json
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JsonValue extends IJsonValue
+trait JsonValue
+  extends StObject
+     with IJsonValue
 object JsonValue {
   
   @scala.inline

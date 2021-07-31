@@ -3,7 +3,6 @@ package typings.reactNativeWindows
 import typings.reactNative.mod.NativeSyntheticEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyboardExtPropsMod {
@@ -15,23 +14,31 @@ object keyboardExtPropsMod {
   object EventPhase extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EventPhase with Double] = js.native
+    def apply(value: Double): js.UndefOr[EventPhase & Double] = js.native
     
     @js.native
-    sealed trait AtTarget extends EventPhase
-    /* 2 */ val AtTarget: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.AtTarget with Double = js.native
+    sealed trait AtTarget
+      extends StObject
+         with EventPhase
+    /* 2 */ val AtTarget: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.AtTarget & Double = js.native
     
     @js.native
-    sealed trait Bubbling extends EventPhase
-    /* 3 */ val Bubbling: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.Bubbling with Double = js.native
+    sealed trait Bubbling
+      extends StObject
+         with EventPhase
+    /* 3 */ val Bubbling: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.Bubbling & Double = js.native
     
     @js.native
-    sealed trait Capturing extends EventPhase
-    /* 1 */ val Capturing: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.Capturing with Double = js.native
+    sealed trait Capturing
+      extends StObject
+         with EventPhase
+    /* 1 */ val Capturing: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.Capturing & Double = js.native
     
     @js.native
-    sealed trait None extends EventPhase
-    /* 0 */ val None: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.None with Double = js.native
+    sealed trait None
+      extends StObject
+         with EventPhase
+    /* 0 */ val None: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.None & Double = js.native
   }
   
   @js.native
@@ -41,31 +48,34 @@ object keyboardExtPropsMod {
   object HandledEventPhase extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[HandledEventPhase with Double] = js.native
+    def apply(value: Double): js.UndefOr[HandledEventPhase & Double] = js.native
     
     @js.native
-    sealed trait Bubbling extends HandledEventPhase
-    /* 3 */ val Bubbling: typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase.Bubbling with Double = js.native
+    sealed trait Bubbling
+      extends StObject
+         with HandledEventPhase
+    /* 3 */ val Bubbling: typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase.Bubbling & Double = js.native
     
     @js.native
-    sealed trait Capturing extends HandledEventPhase
-    /* 1 */ val Capturing: typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase.Capturing with Double = js.native
+    sealed trait Capturing
+      extends StObject
+         with HandledEventPhase
+    /* 1 */ val Capturing: typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase.Capturing & Double = js.native
   }
   
-  @js.native
   trait IHandledKeyboardEvent extends StObject {
     
-    var altKey: js.UndefOr[Boolean] = js.native
+    var altKey: js.UndefOr[Boolean] = js.undefined
     
-    var code: String = js.native
+    var code: String
     
-    var ctrlKey: js.UndefOr[Boolean] = js.native
+    var ctrlKey: js.UndefOr[Boolean] = js.undefined
     
-    var handledEventPhase: js.UndefOr[HandledEventPhase] = js.native
+    var handledEventPhase: js.UndefOr[HandledEventPhase] = js.undefined
     
-    var metaKey: js.UndefOr[Boolean] = js.native
+    var metaKey: js.UndefOr[Boolean] = js.undefined
     
-    var shiftKey: js.UndefOr[Boolean] = js.native
+    var shiftKey: js.UndefOr[Boolean] = js.undefined
   }
   object IHandledKeyboardEvent {
     
@@ -115,20 +125,19 @@ object keyboardExtPropsMod {
   
   type IKeyboardEvent = NativeSyntheticEvent[INativeKeyboardEvent]
   
-  @js.native
   trait IKeyboardProps extends StObject {
     
-    var keyDownEvents: js.UndefOr[js.Array[IHandledKeyboardEvent]] = js.native
+    var keyDownEvents: js.UndefOr[js.Array[IHandledKeyboardEvent]] = js.undefined
     
-    var keyUpEvents: js.UndefOr[js.Array[IHandledKeyboardEvent]] = js.native
+    var keyUpEvents: js.UndefOr[js.Array[IHandledKeyboardEvent]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* args */ IKeyboardEvent, Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* args */ IKeyboardEvent, Unit]] = js.undefined
     
-    var onKeyDownCapture: js.UndefOr[js.Function1[/* args */ IKeyboardEvent, Unit]] = js.native
+    var onKeyDownCapture: js.UndefOr[js.Function1[/* args */ IKeyboardEvent, Unit]] = js.undefined
     
-    var onKeyUp: js.UndefOr[js.Function1[/* args */ IKeyboardEvent, Unit]] = js.native
+    var onKeyUp: js.UndefOr[js.Function1[/* args */ IKeyboardEvent, Unit]] = js.undefined
     
-    var onKeyUpCapture: js.UndefOr[js.Function1[/* args */ IKeyboardEvent, Unit]] = js.native
+    var onKeyUpCapture: js.UndefOr[js.Function1[/* args */ IKeyboardEvent, Unit]] = js.undefined
   }
   object IKeyboardProps {
     
@@ -185,22 +194,21 @@ object keyboardExtPropsMod {
     }
   }
   
-  @js.native
   trait INativeKeyboardEvent extends StObject {
     
-    var altKey: Boolean = js.native
+    var altKey: Boolean
     
-    var code: String = js.native
+    var code: String
     
-    var ctrlKey: Boolean = js.native
+    var ctrlKey: Boolean
     
-    var eventPhase: EventPhase = js.native
+    var eventPhase: EventPhase
     
-    var key: String = js.native
+    var key: String
     
-    var metaKey: Boolean = js.native
+    var metaKey: Boolean
     
-    var shiftKey: Boolean = js.native
+    var shiftKey: Boolean
   }
   object INativeKeyboardEvent {
     

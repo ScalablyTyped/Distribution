@@ -2,13 +2,11 @@ package typings.winrt.Windows.Devices.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMouseDeviceStatics extends StObject {
   
-  def getForCurrentView(): MouseDevice = js.native
+  def getForCurrentView(): MouseDevice
 }
 object IMouseDeviceStatics {
   

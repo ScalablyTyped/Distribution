@@ -3,7 +3,6 @@ package typings.apolloProtobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "Method")
@@ -57,6 +56,10 @@ class Method protected () extends ReflectionObject {
 /* static members */
 object Method {
   
+  @JSImport("@apollo/protobufjs", "Method")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Constructs a method from a method descriptor.
     * @param name Method name
@@ -64,7 +67,6 @@ object Method {
     * @returns Created method
     * @throws {TypeError} If arguments are invalid
     */
-  @JSImport("@apollo/protobufjs", "Method.fromJSON")
-  @js.native
-  def fromJSON(name: String, json: IMethod): Method = js.native
+  @scala.inline
+  def fromJSON(name: String, json: IMethod): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Method]
 }

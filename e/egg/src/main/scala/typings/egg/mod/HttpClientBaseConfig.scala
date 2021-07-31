@@ -2,29 +2,27 @@ package typings.egg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpClientBaseConfig extends StObject {
   
   /** Free socket after keepalive timeout */
-  var freeSocketKeepAliveTimeout: js.UndefOr[Double] = js.native
+  var freeSocketKeepAliveTimeout: js.UndefOr[Double] = js.undefined
   
   /** Free socket after request timeout */
-  var freeSocketTimeout: js.UndefOr[Double] = js.native
+  var freeSocketTimeout: js.UndefOr[Double] = js.undefined
   
   /** Whether use http keepalive */
-  var keepAlive: js.UndefOr[Boolean] = js.native
+  var keepAlive: js.UndefOr[Boolean] = js.undefined
   
   /** The maximum number of sockets that will be left open in the free state */
-  var maxFreeSockets: js.UndefOr[Double] = js.native
+  var maxFreeSockets: js.UndefOr[Double] = js.undefined
   
   /** Determines how many concurrent sockets the agent can have open per origin */
-  var maxSockets: js.UndefOr[Double] = js.native
+  var maxSockets: js.UndefOr[Double] = js.undefined
   
   /** Request timeout */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object HttpClientBaseConfig {
   

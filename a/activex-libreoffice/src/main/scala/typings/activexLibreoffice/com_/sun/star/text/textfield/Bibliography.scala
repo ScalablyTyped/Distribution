@@ -14,18 +14,18 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a bibliography text field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait Bibliography extends DependentTextField {
+trait Bibliography
+  extends StObject
+     with DependentTextField {
   
   /** contains the bibliography fields of the text field. */
-  var Fields: SafeArray[PropertyValue] = js.native
+  var Fields: SafeArray[PropertyValue]
 }
 object Bibliography {
   

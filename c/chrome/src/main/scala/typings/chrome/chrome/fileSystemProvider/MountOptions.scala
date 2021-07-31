@@ -2,34 +2,32 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MountOptions extends StObject {
   
   /** A human-readable name for the file system. */
-  var displayName: String = js.native
+  var displayName: String
   
   /** The string indentifier of the file system. Must be unique per each extension. */
-  var fileSystemId: String = js.native
+  var fileSystemId: String
   
   /**
     * Optional.
     * The maximum number of files that can be opened at once. If not specified, or 0, then not limited.
     * @since Since Chrome 41.
     */
-  var openedFilesLimit: js.UndefOr[Double] = js.native
+  var openedFilesLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.
     * Whether the file system supports the tag field for observed directories.
     * @since Since Chrome 45. Warning: this is the current Beta channel.
     */
-  var supportsNotifyTag: js.UndefOr[Boolean] = js.native
+  var supportsNotifyTag: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. Whether the file system supports operations which may change contents of the file system (such as creating, deleting or writing to files).  */
-  var writable: js.UndefOr[Boolean] = js.native
+  var writable: js.UndefOr[Boolean] = js.undefined
 }
 object MountOptions {
   

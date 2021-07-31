@@ -5,33 +5,31 @@ import typings.highlightJs.HLJSApi
 import typings.highlightJs.Language
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Auto extends StObject {
     
     /**
       * Whether to automatically detect language if not specified.
       */
-    var auto: js.UndefOr[Boolean] = js.native
+    var auto: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to add the `hljs` class to raw code blocks (not fenced blocks).
       */
-    var code: js.UndefOr[Boolean] = js.native
+    var code: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to highlight inline code.
       */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Register other languages which are not included in the standard pack.
       */
-    var register: js.UndefOr[StringDictionary[js.Function1[/* hljs */ js.UndefOr[HLJSApi], Language]]] = js.native
+    var register: js.UndefOr[StringDictionary[js.Function1[/* hljs */ js.UndefOr[HLJSApi], Language]]] = js.undefined
   }
   object Auto {
     

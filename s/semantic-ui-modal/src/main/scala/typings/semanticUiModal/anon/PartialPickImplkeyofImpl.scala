@@ -8,66 +8,64 @@ import typings.semanticUiModal.SemanticUI.Modal.SelectorSettings
 import typings.semanticUiModal.semanticUiModalBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-modal.SemanticUI.ModalSettings._Impl, keyof semantic-ui-modal.SemanticUI.ModalSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var allowMultiple: js.UndefOr[Boolean] = js.native
+  var allowMultiple: js.UndefOr[Boolean] = js.undefined
   
-  var autofocus: js.UndefOr[Boolean] = js.native
+  var autofocus: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var closable: js.UndefOr[Boolean] = js.native
+  var closable: js.UndefOr[Boolean] = js.undefined
   
-  var context: js.UndefOr[String | JQuery] = js.native
+  var context: js.UndefOr[String | JQuery] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var detachable: js.UndefOr[Boolean] = js.native
+  var detachable: js.UndefOr[Boolean] = js.undefined
   
-  var dimmerSettings: js.UndefOr[DimmerSettings] = js.native
+  var dimmerSettings: js.UndefOr[DimmerSettings] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var keyboardShortcuts: js.UndefOr[Boolean] = js.native
+  var keyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var observeChanges: js.UndefOr[Boolean] = js.native
+  var observeChanges: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var onApprove: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]] = js.native
+  var onApprove: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]] = js.undefined
   
-  var onDeny: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]] = js.native
+  var onDeny: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]] = js.undefined
   
-  var onHidden: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onHidden: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onHide: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]] = js.native
+  var onHide: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onShow: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onVisible: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onVisible: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var queue: js.UndefOr[Boolean] = js.native
+  var queue: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   

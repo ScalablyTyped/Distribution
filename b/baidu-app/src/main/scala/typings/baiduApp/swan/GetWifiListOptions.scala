@@ -2,14 +2,12 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWifiListOptions extends StObject {
   
   /** Wi-Fi 列表数据 */
-  var wifiList: js.Array[WiFi] = js.native
+  var wifiList: js.Array[WiFi]
 }
 object GetWifiListOptions {
   

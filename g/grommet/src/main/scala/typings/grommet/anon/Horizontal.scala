@@ -6,15 +6,13 @@ import typings.grommet.grommetStrings.scroll
 import typings.grommet.grommetStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Horizontal extends StObject {
   
-  var horizontal: js.UndefOr[auto | hidden | scroll | visible] = js.native
+  var horizontal: js.UndefOr[auto | hidden | scroll | visible] = js.undefined
   
-  var vertical: js.UndefOr[auto | hidden | scroll | visible] = js.native
+  var vertical: js.UndefOr[auto | hidden | scroll | visible] = js.undefined
 }
 object Horizontal {
   

@@ -2,23 +2,22 @@ package typings.promiseTheWorld
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queueMod {
   
+  @scala.inline
+  def apply(): Queue = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Queue]
+  @scala.inline
+  def apply(maxPending: Double): Queue = ^.asInstanceOf[js.Dynamic].apply(maxPending.asInstanceOf[js.Any]).asInstanceOf[Queue]
+  @scala.inline
+  def apply(maxPending: Double, maxQueued: Double): Queue = (^.asInstanceOf[js.Dynamic].apply(maxPending.asInstanceOf[js.Any], maxQueued.asInstanceOf[js.Any])).asInstanceOf[Queue]
+  @scala.inline
+  def apply(maxPending: Unit, maxQueued: Double): Queue = (^.asInstanceOf[js.Dynamic].apply(maxPending.asInstanceOf[js.Any], maxQueued.asInstanceOf[js.Any])).asInstanceOf[Queue]
+  
   @JSImport("promise-the-world/queue", JSImport.Namespace)
   @js.native
-  def apply(): Queue = js.native
-  @JSImport("promise-the-world/queue", JSImport.Namespace)
-  @js.native
-  def apply(maxPending: js.UndefOr[scala.Nothing], maxQueued: Double): Queue = js.native
-  @JSImport("promise-the-world/queue", JSImport.Namespace)
-  @js.native
-  def apply(maxPending: Double): Queue = js.native
-  @JSImport("promise-the-world/queue", JSImport.Namespace)
-  @js.native
-  def apply(maxPending: Double, maxQueued: Double): Queue = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("promise-the-world/queue", "Queue")
   @js.native

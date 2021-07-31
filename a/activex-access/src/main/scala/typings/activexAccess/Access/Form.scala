@@ -3,7 +3,6 @@ package typings.activexAccess.Access
 import typings.activexDao.DAO.Recordset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -241,9 +240,9 @@ trait Form extends StObject {
     * @param Down [Down=0]
     */
   def GoToPage(PageNumber: Double): Unit = js.native
-  def GoToPage(PageNumber: Double, Right: js.UndefOr[scala.Nothing], Down: Double): Unit = js.native
   def GoToPage(PageNumber: Double, Right: Double): Unit = js.native
   def GoToPage(PageNumber: Double, Right: Double, Down: Double): Unit = js.native
+  def GoToPage(PageNumber: Double, Right: Unit, Down: Double): Unit = js.native
   
   var GridX: Double = js.native
   
@@ -294,13 +293,13 @@ trait Form extends StObject {
   var MouseWheelMacro: String = js.native
   
   def Move(Left: Double): Unit = js.native
-  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: js.UndefOr[scala.Nothing], Height: Double): Unit = js.native
-  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Unit = js.native
-  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double, Height: Double): Unit = js.native
   def Move(Left: Double, Top: Double): Unit = js.native
-  def Move(Left: Double, Top: Double, Width: js.UndefOr[scala.Nothing], Height: Double): Unit = js.native
   def Move(Left: Double, Top: Double, Width: Double): Unit = js.native
   def Move(Left: Double, Top: Double, Width: Double, Height: Double): Unit = js.native
+  def Move(Left: Double, Top: Double, Width: Unit, Height: Double): Unit = js.native
+  def Move(Left: Double, Top: Unit, Width: Double): Unit = js.native
+  def Move(Left: Double, Top: Unit, Width: Double, Height: Double): Unit = js.native
+  def Move(Left: Double, Top: Unit, Width: Unit, Height: Double): Unit = js.native
   
   var Moveable: Boolean = js.native
   

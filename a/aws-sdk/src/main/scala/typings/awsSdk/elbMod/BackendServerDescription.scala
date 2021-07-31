@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackendServerDescription extends StObject {
   
   /**
     * The port on which the EC2 instance is listening.
     */
-  var InstancePort: js.UndefOr[typings.awsSdk.elbMod.InstancePort] = js.native
+  var InstancePort: js.UndefOr[typings.awsSdk.elbMod.InstancePort] = js.undefined
   
   /**
     * The names of the policies enabled for the EC2 instance.
     */
-  var PolicyNames: js.UndefOr[typings.awsSdk.elbMod.PolicyNames] = js.native
+  var PolicyNames: js.UndefOr[typings.awsSdk.elbMod.PolicyNames] = js.undefined
 }
 object BackendServerDescription {
   

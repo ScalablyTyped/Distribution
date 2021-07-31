@@ -5,48 +5,48 @@ import typings.iobroker.anon.langinLanguagesstringsmar
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StateCommon extends ObjectCommon {
+trait StateCommon
+  extends StObject
+     with ObjectCommon {
   
   /** Configures this state as an alias for another state */
-  var alias: js.UndefOr[Read] = js.native
+  var alias: js.UndefOr[Read] = js.undefined
   
   /** Custom settings for this state */
-  var custom: js.UndefOr[Record[String, _]] = js.native
+  var custom: js.UndefOr[Record[String, js.Any]] = js.undefined
   
   /** the default value */
-  var `def`: js.UndefOr[js.Any] = js.native
+  var `def`: js.UndefOr[js.Any] = js.undefined
   
   /** the default status of the ack flag */
-  var defAck: js.UndefOr[Boolean] = js.native
+  var defAck: js.UndefOr[Boolean] = js.undefined
   
   /** description of this state */
-  var desc: js.UndefOr[StringOrTranslated] = js.native
+  var desc: js.UndefOr[StringOrTranslated] = js.undefined
   
   /** attached history information */
-  var history: js.UndefOr[js.Any] = js.native
+  var history: js.UndefOr[js.Any] = js.undefined
   
   /** maximum value */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /** minimum value */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /** if this state is readable */
-  var read: Boolean = js.native
+  var read: Boolean
   
   /** role of the state (used in user interfaces to indicate which widget to choose) */
   @JSName("role")
-  var role_StateCommon: String = js.native
+  var role_StateCommon: String
   
   /**
     * Settings for IOT adapters and how the state should be named in e.g. Alexa.
     * The string "ignore" is a special case, causing the state to be ignored.
     */
-  var smartName: js.UndefOr[String | langinLanguagesstringsmar] = js.native
+  var smartName: js.UndefOr[String | langinLanguagesstringsmar] = js.undefined
   
   /**
     * Dictionary of possible values for this state in the form
@@ -60,22 +60,22 @@ trait StateCommon extends ObjectCommon {
     * In old ioBroker versions, this could also be a string of the form
     * "val1:text1;val2:text2" (now deprecated)
     */
-  var states: js.UndefOr[(Record[String, String]) | String] = js.native
+  var states: js.UndefOr[(Record[String, String]) | String] = js.undefined
   
   /** allowed interval for numeric values */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
   /** Type of this state. See https://github.com/ioBroker/ioBroker/blob/master/doc/SCHEMA.md#state-commonrole for a detailed description */
-  var `type`: js.UndefOr[CommonType] = js.native
+  var `type`: js.UndefOr[CommonType] = js.undefined
   
   /** unit of the value */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
   /** ID of a helper state indicating if the handler of this state is working */
-  var workingID: js.UndefOr[String] = js.native
+  var workingID: js.UndefOr[String] = js.undefined
   
   /** if this state is writable */
-  var write: Boolean = js.native
+  var write: Boolean
 }
 object StateCommon {
   
@@ -95,7 +95,7 @@ object StateCommon {
     def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def setCustom(value: Record[String, _]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    def setCustom(value: Record[String, js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)

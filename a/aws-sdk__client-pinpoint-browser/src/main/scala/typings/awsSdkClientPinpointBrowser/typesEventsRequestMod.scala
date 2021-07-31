@@ -6,18 +6,16 @@ import typings.awsSdkClientPinpointBrowser.typesEventsBatchMod.UnmarshalledEvent
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEventsRequestMod {
   
-  @js.native
   trait EventsRequest extends StObject {
     
     /**
       * A batch of events to process. Each BatchItem consists of an endpoint ID as the key, and an EventsBatch object as the value.
       */
-    var BatchItem: js.UndefOr[StringDictionary[EventsBatch] | (Iterable[js.Tuple2[String, EventsBatch]])] = js.native
+    var BatchItem: js.UndefOr[StringDictionary[EventsBatch] | (Iterable[js.Tuple2[String, EventsBatch]])] = js.undefined
   }
   object EventsRequest {
     
@@ -38,14 +36,15 @@ object typesEventsRequestMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEventsRequest extends EventsRequest {
+  trait UnmarshalledEventsRequest
+    extends StObject
+       with EventsRequest {
     
     /**
       * A batch of events to process. Each BatchItem consists of an endpoint ID as the key, and an EventsBatch object as the value.
       */
     @JSName("BatchItem")
-    var BatchItem_UnmarshalledEventsRequest: js.UndefOr[StringDictionary[UnmarshalledEventsBatch]] = js.native
+    var BatchItem_UnmarshalledEventsRequest: js.UndefOr[StringDictionary[UnmarshalledEventsBatch]] = js.undefined
   }
   object UnmarshalledEventsRequest {
     

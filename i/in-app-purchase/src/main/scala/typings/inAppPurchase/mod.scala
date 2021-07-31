@@ -5,10 +5,13 @@ import typings.inAppPurchase.anon.Data
 import typings.inAppPurchase.anon.IgnoreCanceled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("in-app-purchase", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("in-app-purchase", "AMAZON")
   @js.native
@@ -38,152 +41,131 @@ object mod {
   @js.native
   val WINDOWS: /* "windows" */ String = js.native
   
-  @JSImport("in-app-purchase", "config")
-  @js.native
-  def config(params: Config_): Unit = js.native
+  @scala.inline
+  def config(params: Config_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("in-app-purchase", "getPurchaseData")
-  @js.native
-  def getPurchaseData(): js.Array[PurchasedItem] | Null = js.native
-  @JSImport("in-app-purchase", "getPurchaseData")
-  @js.native
-  def getPurchaseData(purchaseData: js.UndefOr[scala.Nothing], options: IgnoreCanceled): js.Array[PurchasedItem] | Null = js.native
-  @JSImport("in-app-purchase", "getPurchaseData")
-  @js.native
-  def getPurchaseData(purchaseData: ValidationResponse): js.Array[PurchasedItem] | Null = js.native
-  @JSImport("in-app-purchase", "getPurchaseData")
-  @js.native
-  def getPurchaseData(purchaseData: ValidationResponse, options: IgnoreCanceled): js.Array[PurchasedItem] | Null = js.native
+  @scala.inline
+  def getPurchaseData(): js.Array[PurchasedItem] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPurchaseData")().asInstanceOf[js.Array[PurchasedItem] | Null]
+  @scala.inline
+  def getPurchaseData(purchaseData: Unit, options: IgnoreCanceled): js.Array[PurchasedItem] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPurchaseData")(purchaseData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[PurchasedItem] | Null]
+  @scala.inline
+  def getPurchaseData(purchaseData: ValidationResponse): js.Array[PurchasedItem] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPurchaseData")(purchaseData.asInstanceOf[js.Any]).asInstanceOf[js.Array[PurchasedItem] | Null]
+  @scala.inline
+  def getPurchaseData(purchaseData: ValidationResponse, options: IgnoreCanceled): js.Array[PurchasedItem] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPurchaseData")(purchaseData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[PurchasedItem] | Null]
   
-  @JSImport("in-app-purchase", "getService")
-  @js.native
-  def getService(receipt: Receipt): Service = js.native
+  @scala.inline
+  def getService(receipt: Receipt): Service = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(receipt.asInstanceOf[js.Any]).asInstanceOf[Service]
   
-  @JSImport("in-app-purchase", "isCanceled")
-  @js.native
-  def isCanceled(item: PurchasedItem): Boolean = js.native
+  @scala.inline
+  def isCanceled(item: PurchasedItem): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCanceled")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("in-app-purchase", "isExpired")
-  @js.native
-  def isExpired(item: PurchasedItem): Boolean = js.native
+  @scala.inline
+  def isExpired(item: PurchasedItem): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpired")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("in-app-purchase", "isValidated")
-  @js.native
-  def isValidated(response: ValidationResponse): Boolean = js.native
+  @scala.inline
+  def isValidated(response: ValidationResponse): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidated")(response.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("in-app-purchase", "refreshGoogleToken")
-  @js.native
-  def refreshGoogleToken(): js.Promise[Unit] = js.native
-  @JSImport("in-app-purchase", "refreshGoogleToken")
-  @js.native
-  def refreshGoogleToken(callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def refreshGoogleToken(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshGoogleToken")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def refreshGoogleToken(callback: js.Function1[/* err */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshGoogleToken")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("in-app-purchase", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
-  @JSImport("in-app-purchase", "setup")
-  @js.native
-  def setup(): js.Promise[Unit] = js.native
-  @JSImport("in-app-purchase", "setup")
-  @js.native
-  def setup(callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def setup(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def setup(callback: js.Function1[/* err */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("in-app-purchase", "validate")
-  @js.native
-  def validate(receipt: Receipt): js.Promise[ValidationResponse] = js.native
-  @JSImport("in-app-purchase", "validate")
-  @js.native
-  def validate(receipt: Receipt, callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, Unit]): Unit = js.native
-  @JSImport("in-app-purchase", "validate")
-  @js.native
+  @scala.inline
+  def validate(receipt: Receipt): js.Promise[ValidationResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(receipt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ValidationResponse]]
+  @scala.inline
+  def validate(receipt: Receipt, callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(receipt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def validate(
     service: Service,
     receipt: Receipt,
     callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(service.asInstanceOf[js.Any], receipt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("in-app-purchase", "validateOnce")
-  @js.native
-  def validateOnce(receipt: Receipt, secretOrPubKey: js.Any): js.Promise[ValidationResponse] = js.native
-  @JSImport("in-app-purchase", "validateOnce")
-  @js.native
+  @scala.inline
+  def validateOnce(receipt: Receipt, secretOrPubKey: js.Any): js.Promise[ValidationResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOnce")(receipt.asInstanceOf[js.Any], secretOrPubKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValidationResponse]]
+  @scala.inline
   def validateOnce(
     receipt: Receipt,
     secretOrPubKey: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, Unit]
-  ): Unit = js.native
-  @JSImport("in-app-purchase", "validateOnce")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOnce")(receipt.asInstanceOf[js.Any], secretOrPubKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def validateOnce(
     service: Service,
     secretOrPubKey: js.Any,
     receipt: Receipt,
     callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOnce")(service.asInstanceOf[js.Any], secretOrPubKey.asInstanceOf[js.Any], receipt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type AmazonReceipt = js.Object | String
   
   type AppleReceipt = String
   
-  @js.native
   trait Config_ extends StObject {
     
     /* Configurations for Amazon Store */
-    var amazonAPIVersion: js.UndefOr[Double] = js.native
+    var amazonAPIVersion: js.UndefOr[Double] = js.undefined
     
     /* Configurations for Apple */
     // if you want to exclude old transaction, set this to true. Default is false
-    var appleExcludeOldTransactions: js.UndefOr[Boolean] = js.native
+    var appleExcludeOldTransactions: js.UndefOr[Boolean] = js.undefined
     
     // this comes from iTunes Connect (You need this to valiate subscriptions)
-    var applePassword: js.UndefOr[String] = js.native
+    var applePassword: js.UndefOr[String] = js.undefined
     
     /* Configurations for Facebook (Payments Lite) */
-    var facebookAppId: js.UndefOr[String] = js.native
+    var facebookAppId: js.UndefOr[String] = js.undefined
     
-    var facebookAppSecret: js.UndefOr[String] = js.native
-    
-    // optional, for Google Play subscriptions
-    var googleAccToken: js.UndefOr[String] = js.native
+    var facebookAppSecret: js.UndefOr[String] = js.undefined
     
     // optional, for Google Play subscriptions
-    var googleClientID: js.UndefOr[String] = js.native
+    var googleAccToken: js.UndefOr[String] = js.undefined
     
     // optional, for Google Play subscriptions
-    var googleClientSecret: js.UndefOr[String] = js.native
+    var googleClientID: js.UndefOr[String] = js.undefined
+    
+    // optional, for Google Play subscriptions
+    var googleClientSecret: js.UndefOr[String] = js.undefined
     
     /* Configurations for Google Play */
     // this is the path to the directory containing iap-sanbox/iap-live files
-    var googlePublicKeyPath: js.UndefOr[String] = js.native
+    var googlePublicKeyPath: js.UndefOr[String] = js.undefined
     
     // this is the google iap-live public key string
-    var googlePublicKeyStrLive: js.UndefOr[String] = js.native
+    var googlePublicKeyStrLive: js.UndefOr[String] = js.undefined
     
     // this is the google iap-sandbox public key string
-    var googlePublicKeyStrSandBox: js.UndefOr[String] = js.native
+    var googlePublicKeyStrSandBox: js.UndefOr[String] = js.undefined
     
     // optional, for Google Play subscritions
-    var googleRefToken: js.UndefOr[String] = js.native
+    var googleRefToken: js.UndefOr[String] = js.undefined
     
     // optional, for Google Play subscriptions
-    var googleRefreshToken: js.UndefOr[String] = js.native
+    var googleRefreshToken: js.UndefOr[String] = js.undefined
     
     // Configurations for Google Service Account validation: You can validate with just packageName, productId, and purchaseToken
-    var googleServiceAccount: js.UndefOr[ClientEmail] = js.native
+    var googleServiceAccount: js.UndefOr[ClientEmail] = js.undefined
     
     /* Configurations for Roku */
     // this comes from Roku Developer Dashboard
-    var rokuApiKey: js.UndefOr[String] = js.native
+    var rokuApiKey: js.UndefOr[String] = js.undefined
     
-    var secret: js.UndefOr[String] = js.native
+    var secret: js.UndefOr[String] = js.undefined
     
     /* Configurations all platforms */
     // For Apple and Googl Play to force Sandbox validation only
-    var test: js.UndefOr[Boolean] = js.native
+    var test: js.UndefOr[Boolean] = js.undefined
     
     // Output debug logs to stdout stream
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Config_ {
     
@@ -310,40 +292,39 @@ object mod {
   
   type GoogleReceipt = Data | String
   
-  @js.native
   trait PurchasedItem extends StObject {
     
     // only Apple
-    var appItemId: js.UndefOr[String] = js.native
+    var appItemId: js.UndefOr[String] = js.undefined
     
-    var bundleId: js.UndefOr[String] = js.native
+    var bundleId: js.UndefOr[String] = js.undefined
     
     // only Apple
-    var cancellationDate: js.UndefOr[Double] = js.native
+    var cancellationDate: js.UndefOr[Double] = js.undefined
     
     // only Apple/Google
     // iTunes, windows and amazon subscription only
     // Google subscriptions only with google play store api info
-    var expirationDate: js.UndefOr[Double | String] = js.native
+    var expirationDate: js.UndefOr[Double | String] = js.undefined
     
-    var isTrial: js.UndefOr[Boolean] = js.native
+    var isTrial: js.UndefOr[Boolean] = js.undefined
     
-    var orderId: js.UndefOr[String] = js.native
+    var orderId: js.UndefOr[String] = js.undefined
     
-    var originalPurchaseDate: js.UndefOr[String] = js.native
+    var originalPurchaseDate: js.UndefOr[String] = js.undefined
     
     // only Google
-    var originalTransactionId: js.UndefOr[String] = js.native
+    var originalTransactionId: js.UndefOr[String] = js.undefined
     
-    var productId: String = js.native
-    
-    // only Apple
-    var purchaseDate: Double | String = js.native
-    
-    var quantity: Double = js.native
+    var productId: String
     
     // only Apple
-    var transactionId: String = js.native
+    var purchaseDate: Double | String
+    
+    var quantity: Double
+    
+    // only Apple
+    var transactionId: String
   }
   object PurchasedItem {
     
@@ -426,12 +407,11 @@ object mod {
   
   type UnityReceipt = js.Object | String
   
-  @js.native
   trait ValidationResponse extends StObject {
     
-    var service: Service = js.native
+    var service: Service
     
-    var status: Double = js.native
+    var status: Double
   }
   object ValidationResponse {
     

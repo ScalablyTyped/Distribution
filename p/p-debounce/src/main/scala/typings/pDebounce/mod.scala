@@ -2,7 +2,6 @@ package typings.pDebounce
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,19 +24,17 @@ object mod {
   	//=> 3
   	```
   	*/
-  @JSImport("p-debounce", JSImport.Namespace)
-  @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType] | ReturnType],
     wait: Double
-  ): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = js.native
-  @JSImport("p-debounce", JSImport.Namespace)
-  @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](
+  ): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]]]
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType] | ReturnType],
     wait: Double,
     options: Options
-  ): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = js.native
+  ): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]]]
   
   @JSImport("p-debounce", JSImport.Namespace)
   @js.native
@@ -56,14 +53,13 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pDebounce */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Call the `fn` on the [leading edge of the timeout](https://css-tricks.com/debouncing-throttling-explained-examples/#article-header-id-1). Meaning immediately, instead of waiting for `wait` milliseconds.
     		@default false
     		*/
-    val leading: js.UndefOr[Boolean] = js.native
+    val leading: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

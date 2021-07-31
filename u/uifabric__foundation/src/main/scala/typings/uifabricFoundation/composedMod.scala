@@ -13,29 +13,29 @@ import typings.uifabricFoundation.libIslotsMod.ValidProps
 import typings.uifabricMergeStyles.istylesetMod.IStyleSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object composedMod {
   
-  @JSImport("@uifabric/foundation/lib/next/composed", "composed")
+  @JSImport("@uifabric/foundation/lib/next/composed", JSImport.Namespace)
   @js.native
-  def composed[TComponentProps /* <: ValidProps with ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TComponentSlots, TStatics](
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def composed[TComponentProps /* <: ValidProps & ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TComponentSlots, TStatics](
     baseComponent: FunctionComponent[js.Object],
     options: IRecompositionComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]
-  ): (IFoundationComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]) with TStatics = js.native
-  @JSImport("@uifabric/foundation/lib/next/composed", "composed")
-  @js.native
-  def composed[TComponentProps /* <: ValidProps with ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TComponentSlots, TStatics](
+  ): (IFoundationComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]) & TStatics = (^.asInstanceOf[js.Dynamic].applyDynamic("composed")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(IFoundationComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]) & TStatics]
+  @scala.inline
+  def composed[TComponentProps /* <: ValidProps & ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TComponentSlots, TStatics](
     options: IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]
-  ): (IFoundationComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]) with TStatics = js.native
+  ): (IFoundationComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]) & TStatics = ^.asInstanceOf[js.Dynamic].applyDynamic("composed")(options.asInstanceOf[js.Any]).asInstanceOf[(IFoundationComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]) & TStatics]
   
-  @JSImport("@uifabric/foundation/lib/next/composed", "resolveSlots")
-  @js.native
+  @scala.inline
   def resolveSlots[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TComponentSlots](
-    slots: js.UndefOr[
-      (IPartialSlotComponent[TComponentProps, TComponentSlots]) | (ISlotComponent[TComponentProps, TComponentSlots])
-    ],
+    slots: (IPartialSlotComponent[TComponentProps, TComponentSlots]) | (ISlotComponent[TComponentProps, TComponentSlots]),
     data: TComponentProps
-  ): ISlotDefinition[Required[TComponentSlots]] = js.native
+  ): ISlotDefinition[Required[TComponentSlots]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSlots")(slots.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ISlotDefinition[Required[TComponentSlots]]]
+  @scala.inline
+  def resolveSlots[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TComponentSlots](slots: Unit, data: TComponentProps): ISlotDefinition[Required[TComponentSlots]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSlots")(slots.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ISlotDefinition[Required[TComponentSlots]]]
 }

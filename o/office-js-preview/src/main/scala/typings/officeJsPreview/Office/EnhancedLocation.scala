@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,7 +31,7 @@ trait EnhancedLocation extends StObject {
   def addAsync(locationIdentifiers: js.Array[LocationIdentifier]): Unit = js.native
   def addAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addAsync(locationIdentifiers: js.Array[LocationIdentifier], options: AsyncContextOptions): Unit = js.native
@@ -60,7 +59,7 @@ trait EnhancedLocation extends StObject {
     */
   def getAsync(): Unit = js.native
   def getAsync(
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[LocationDetails]], Unit]
   ): Unit = js.native
   def getAsync(options: AsyncContextOptions): Unit = js.native
@@ -91,7 +90,7 @@ trait EnhancedLocation extends StObject {
   def removeAsync(locationIdentifiers: js.Array[LocationIdentifier]): Unit = js.native
   def removeAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeAsync(locationIdentifiers: js.Array[LocationIdentifier], options: AsyncContextOptions): Unit = js.native

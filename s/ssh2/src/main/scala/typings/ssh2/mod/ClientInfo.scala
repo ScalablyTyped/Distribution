@@ -3,17 +3,15 @@ package typings.ssh2.mod
 import typings.ssh2Streams.mod.Header
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientInfo extends StObject {
   
   /** Information about the client. */
-  var header: Header = js.native
+  var header: Header
   
   /** The remote address of the connection. */
-  var ip: String = js.native
+  var ip: String
 }
 object ClientInfo {
   

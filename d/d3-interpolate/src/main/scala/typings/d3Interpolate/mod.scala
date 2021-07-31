@@ -16,182 +16,129 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-interpolate", "interpolate")
+  @JSImport("d3-interpolate", JSImport.Namespace)
   @js.native
-  def interpolate(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Any, b: Boolean): js.Function1[/* t */ Double, Boolean] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Any, b: Null): js.Function1[/* t */ Double, Null] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: Double, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: ToString, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: ValueOf, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = js.native
-  @JSImport("d3-interpolate", "interpolate")
-  @js.native
-  def interpolate[U /* <: js.Array[_] */](a: js.Array[_], b: U): js.Function1[/* t */ Double, U] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
-  @JSImport("d3-interpolate", "interpolateArray")
-  @js.native
-  def interpolateArray[A /* <: js.Array[_] */](a: js.Array[_], b: A): ArrayInterpolator[A] = js.native
+  @scala.inline
+  def interpolate(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolate(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolate(a: js.Any, b: Boolean): js.Function1[/* t */ Double, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Boolean]]
+  @scala.inline
+  def interpolate(a: js.Any, b: Null): js.Function1[/* t */ Double, Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Null]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+  @scala.inline
+  def interpolate(a: Double, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolate(a: Double, b: ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolate(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolate(a: ToString, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolate(a: ValueOf, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolate(a: ValueOf, b: ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+  @scala.inline
+  def interpolate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Date]]
+  @scala.inline
+  def interpolate[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
+  @scala.inline
+  def interpolate[U /* <: js.Array[js.Any] */](a: js.Array[js.Any], b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
   
-  @JSImport("d3-interpolate", "interpolateBasis")
-  @js.native
-  def interpolateBasis(splineNodes: js.Array[Double]): js.Function1[/* t */ Double, Double] = js.native
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+  @scala.inline
+  def interpolateArray[A /* <: js.Array[js.Any] */](a: js.Array[js.Any], b: A): ArrayInterpolator[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ArrayInterpolator[A]]
   
-  @JSImport("d3-interpolate", "interpolateBasisClosed")
-  @js.native
-  def interpolateBasisClosed(splineNodes: js.Array[Double]): js.Function1[/* t */ Double, Double] = js.native
+  @scala.inline
+  def interpolateBasis(splineNodes: js.Array[Double]): js.Function1[/* t */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBasis")(splineNodes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  
+  @scala.inline
+  def interpolateBasisClosed(splineNodes: js.Array[Double]): js.Function1[/* t */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBasisClosed")(splineNodes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, Double]]
   
   @JSImport("d3-interpolate", "interpolateCubehelix")
   @js.native
@@ -201,247 +148,180 @@ object mod {
   @js.native
   val interpolateCubehelixLong: ColorGammaInterpolationFactory = js.native
   
-  @JSImport("d3-interpolate", "interpolateDate")
-  @js.native
-  def interpolateDate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = js.native
+  @scala.inline
+  def interpolateDate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateDate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Date]]
   
-  @JSImport("d3-interpolate", "interpolateDiscrete")
-  @js.native
-  def interpolateDiscrete[T](values: js.Array[T]): js.Function1[/* t */ Double, T] = js.native
+  @scala.inline
+  def interpolateDiscrete[T](values: js.Array[T]): js.Function1[/* t */ Double, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateDiscrete")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, T]]
   
-  @JSImport("d3-interpolate", "interpolateHcl")
-  @js.native
-  def interpolateHcl(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHcl")
-  @js.native
-  def interpolateHcl(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHcl")
-  @js.native
-  def interpolateHcl(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHcl")
-  @js.native
-  def interpolateHcl(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateHcl(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHcl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHcl(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHcl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHcl(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHcl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHcl(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHcl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("d3-interpolate", "interpolateHclLong")
-  @js.native
-  def interpolateHclLong(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHclLong")
-  @js.native
-  def interpolateHclLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHclLong")
-  @js.native
-  def interpolateHclLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHclLong")
-  @js.native
-  def interpolateHclLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateHclLong(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHclLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHclLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHclLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHclLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHclLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHclLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHclLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("d3-interpolate", "interpolateHsl")
-  @js.native
-  def interpolateHsl(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHsl")
-  @js.native
-  def interpolateHsl(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHsl")
-  @js.native
-  def interpolateHsl(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHsl")
-  @js.native
-  def interpolateHsl(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateHsl(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsl(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsl(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsl(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("d3-interpolate", "interpolateHslLong")
-  @js.native
-  def interpolateHslLong(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHslLong")
-  @js.native
-  def interpolateHslLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHslLong")
-  @js.native
-  def interpolateHslLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateHslLong")
-  @js.native
-  def interpolateHslLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateHslLong(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHslLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHslLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHslLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHslLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHslLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHslLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHslLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("d3-interpolate", "interpolateHue")
-  @js.native
-  def interpolateHue(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
+  @scala.inline
+  def interpolateHue(a: Double, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHue")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
   
-  @JSImport("d3-interpolate", "interpolateLab")
-  @js.native
-  def interpolateLab(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateLab")
-  @js.native
-  def interpolateLab(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateLab")
-  @js.native
-  def interpolateLab(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateLab")
-  @js.native
-  def interpolateLab(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateLab(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateLab")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateLab(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateLab")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateLab(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateLab")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateLab(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateLab")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("d3-interpolate", "interpolateNumber")
-  @js.native
-  def interpolateNumber(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("d3-interpolate", "interpolateNumber")
-  @js.native
-  def interpolateNumber(a: Double, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("d3-interpolate", "interpolateNumber")
-  @js.native
-  def interpolateNumber(a: ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("d3-interpolate", "interpolateNumber")
-  @js.native
-  def interpolateNumber(a: ValueOf, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
+  @scala.inline
+  def interpolateNumber(a: Double, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumber")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateNumber(a: Double, b: ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumber")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateNumber(a: ValueOf, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumber")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateNumber(a: ValueOf, b: ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumber")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
   
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("d3-interpolate", "interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Array[Double]]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Array[Double]]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
   
-  @JSImport("d3-interpolate", "interpolateObject")
-  @js.native
-  def interpolateObject[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = js.native
+  @scala.inline
+  def interpolateObject[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateObject")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
   
   @JSImport("d3-interpolate", "interpolateRgb")
   @js.native
   val interpolateRgb: ColorGammaInterpolationFactory = js.native
   
-  @JSImport("d3-interpolate", "interpolateRgbBasis")
-  @js.native
-  def interpolateRgbBasis(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateRgbBasis(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRgbBasis")(colors.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("d3-interpolate", "interpolateRgbBasisClosed")
-  @js.native
-  def interpolateRgbBasisClosed(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateRgbBasisClosed(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRgbBasisClosed")(colors.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("d3-interpolate", "interpolateRound")
-  @js.native
-  def interpolateRound(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("d3-interpolate", "interpolateRound")
-  @js.native
-  def interpolateRound(a: Double, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("d3-interpolate", "interpolateRound")
-  @js.native
-  def interpolateRound(a: ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("d3-interpolate", "interpolateRound")
-  @js.native
-  def interpolateRound(a: ValueOf, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
+  @scala.inline
+  def interpolateRound(a: Double, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRound")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateRound(a: Double, b: ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRound")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateRound(a: ValueOf, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRound")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateRound(a: ValueOf, b: ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRound")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
   
-  @JSImport("d3-interpolate", "interpolateString")
-  @js.native
-  def interpolateString(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateString")
-  @js.native
-  def interpolateString(a: String, b: ToString): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateString")
-  @js.native
-  def interpolateString(a: ToString, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate", "interpolateString")
-  @js.native
-  def interpolateString(a: ToString, b: ToString): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateString(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateString")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateString(a: String, b: ToString): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateString")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateString(a: ToString, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateString")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateString(a: ToString, b: ToString): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateString")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("d3-interpolate", "interpolateTransformCss")
-  @js.native
-  def interpolateTransformCss(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateTransformCss(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateTransformCss")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("d3-interpolate", "interpolateTransformSvg")
-  @js.native
-  def interpolateTransformSvg(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateTransformSvg(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateTransformSvg")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("d3-interpolate", "interpolateZoom")
-  @js.native
-  def interpolateZoom(a: ZoomView, b: ZoomView): ZoomInterpolator = js.native
+  @scala.inline
+  def interpolateZoom(a: ZoomView, b: ZoomView): ZoomInterpolator = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateZoom")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ZoomInterpolator]
   
-  @JSImport("d3-interpolate", "piecewise")
-  @js.native
+  @scala.inline
   def piecewise(
     interpolate: js.Function2[/* a */ ZoomView, /* b */ ZoomView, ZoomInterpolator],
     values: js.Array[ZoomView]
-  ): ZoomInterpolator = js.native
-  @JSImport("d3-interpolate", "piecewise")
-  @js.native
-  def piecewise(values: js.Array[ZoomView]): ZoomInterpolator = js.native
-  @JSImport("d3-interpolate", "piecewise")
-  @js.native
-  def piecewise_A_ArrayWildcard_ArrayInterpolator[A /* <: js.Array[_] */](
-    interpolate: js.Function2[/* a */ js.Array[_], /* b */ A, ArrayInterpolator[A]],
+  ): ZoomInterpolator = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ZoomInterpolator]
+  @scala.inline
+  def piecewise(values: js.Array[ZoomView]): ZoomInterpolator = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[ZoomInterpolator]
+  
+  @scala.inline
+  def piecewise_A_ArrayAny_ArrayInterpolator[A /* <: js.Array[js.Any] */](
+    interpolate: js.Function2[/* a */ js.Array[js.Any], /* b */ A, ArrayInterpolator[A]],
     values: js.Array[A]
-  ): ArrayInterpolator[A] = js.native
-  @JSImport("d3-interpolate", "piecewise")
-  @js.native
-  def piecewise_A_ArrayWildcard_ArrayInterpolator[A /* <: js.Array[_] */](values: js.Array[A]): ArrayInterpolator[A] = js.native
-  @JSImport("d3-interpolate", "piecewise")
-  @js.native
-  def piecewise_TDataInterpolator_Function1[TData, Interpolator](interpolate: js.Function2[/* a */ TData, /* b */ TData, Interpolator], values: js.Array[TData]): js.Function1[/* t */ Double, _] = js.native
-  @JSImport("d3-interpolate", "piecewise")
-  @js.native
-  def piecewise_TData_Function1[TData](values: js.Array[TData]): js.Function1[/* t */ Double, _] = js.native
+  ): ArrayInterpolator[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ArrayInterpolator[A]]
+  @scala.inline
+  def piecewise_A_ArrayAny_ArrayInterpolator[A /* <: js.Array[js.Any] */](values: js.Array[A]): ArrayInterpolator[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[ArrayInterpolator[A]]
   
-  @JSImport("d3-interpolate", "quantize")
-  @js.native
-  def quantize[T](interpolator: js.Function1[/* t */ Double, T], n: Double): js.Array[T] = js.native
+  @scala.inline
+  def piecewise_TDataInterpolator_Function1[TData, Interpolator](interpolate: js.Function2[/* a */ TData, /* b */ TData, Interpolator], values: js.Array[TData]): js.Function1[/* t */ Double, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Any]]
   
-  type ArrayInterpolator[A /* <: js.Array[_] */] = js.Function1[/* t */ Double, A]
+  @scala.inline
+  def piecewise_TData_Function1[TData](values: js.Array[TData]): js.Function1[/* t */ Double, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, js.Any]]
+  
+  @scala.inline
+  def quantize[T](interpolator: js.Function1[/* t */ Double, T], n: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quantize")(interpolator.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  type ArrayInterpolator[A /* <: js.Array[js.Any] */] = js.Function1[/* t */ Double, A]
   
   @js.native
   trait ColorGammaInterpolationFactory

@@ -3,16 +3,15 @@ package typings.massive.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecomposeOptions
-  extends /* foreignTable */ StringDictionary[DecomposeOptions | js.Any] {
+  extends StObject
+     with /* foreignTable */ StringDictionary[DecomposeOptions | js.Any] {
   
-  var columns: js.UndefOr[js.Array[String] | AnyObject[String]] = js.native
+  var columns: js.UndefOr[js.Array[String] | AnyObject[String]] = js.undefined
   
-  var pk: String = js.native
+  var pk: String
 }
 object DecomposeOptions {
   

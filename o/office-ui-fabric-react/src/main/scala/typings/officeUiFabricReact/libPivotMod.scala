@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.pivotTypesMod.IPivotProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libPivotMod {
@@ -33,11 +32,11 @@ object libPivotMod {
   object PivotLinkFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat & Double] = js.native
     
-    /* 0 */ val links: typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat.links with Double = js.native
+    /* 0 */ val links: typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat.links & Double = js.native
     
-    /* 1 */ val tabs: typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat.tabs with Double = js.native
+    /* 1 */ val tabs: typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat.tabs & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Pivot", "PivotLinkSize")
@@ -45,10 +44,10 @@ object libPivotMod {
   object PivotLinkSize extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize & Double] = js.native
     
-    /* 1 */ val large: typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize.large with Double = js.native
+    /* 1 */ val large: typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize.large & Double = js.native
     
-    /* 0 */ val normal: typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize.normal with Double = js.native
+    /* 0 */ val normal: typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize.normal & Double = js.native
   }
 }

@@ -3,13 +3,14 @@ package typings.quill
 import typings.quill.mod.Sources
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object quillStrings {
   
   @js.native
-  sealed trait api extends Sources
+  sealed trait api
+    extends StObject
+       with Sources
   @scala.inline
   def api: api = "api".asInstanceOf[api]
   
@@ -24,7 +25,9 @@ object quillStrings {
   def `selection-change`: `selection-change` = "selection-change".asInstanceOf[`selection-change`]
   
   @js.native
-  sealed trait silent extends Sources
+  sealed trait silent
+    extends StObject
+       with Sources
   @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
   
@@ -34,7 +37,9 @@ object quillStrings {
   def `text-change`: `text-change` = "text-change".asInstanceOf[`text-change`]
   
   @js.native
-  sealed trait user extends Sources
+  sealed trait user
+    extends StObject
+       with Sources
   @scala.inline
   def user: user = "user".asInstanceOf[user]
 }

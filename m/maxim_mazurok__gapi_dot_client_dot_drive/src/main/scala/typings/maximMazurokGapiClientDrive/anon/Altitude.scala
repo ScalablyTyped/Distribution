@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Altitude extends StObject {
   
   /** The altitude stored in the image. */
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
   /** The latitude stored in the image. */
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
   /** The longitude stored in the image. */
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
 }
 object Altitude {
   

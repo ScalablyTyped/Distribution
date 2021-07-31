@@ -10,12 +10,15 @@ Provides a function for detecting if an argument is an ArrayBuffer
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/is-array-buffer |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 13 |
-| # downloads        | 4779715 |
+| # releases         | 24 |
+| # dependents       | 4 |
+| # downloads        | 10137175 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/is-array-buffer)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fis-array-buffer)
     
 

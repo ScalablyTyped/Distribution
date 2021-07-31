@@ -10,7 +10,6 @@ import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.wmsservertypeMod.WMSServerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageWMSMod {
@@ -43,9 +42,9 @@ object imageWMSMod {
       * undefined if the GetLegendGraphic URL cannot be constructed.
       */
     def getLegendUrl(): js.UndefOr[String] = js.native
-    def getLegendUrl(resolution: js.UndefOr[scala.Nothing], params: js.Any): js.UndefOr[String] = js.native
     def getLegendUrl(resolution: Double): js.UndefOr[String] = js.native
     def getLegendUrl(resolution: Double, params: js.Any): js.UndefOr[String] = js.native
+    def getLegendUrl(resolution: Unit, params: js.Any): js.UndefOr[String] = js.native
     
     /**
       * Get the user-provided params, i.e. those passed to the constructor through
@@ -75,30 +74,29 @@ object imageWMSMod {
     def updateParams(params: js.Any): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var hidpi: js.UndefOr[Boolean] = js.native
+    var hidpi: js.UndefOr[Boolean] = js.undefined
     
-    var imageLoadFunction: js.UndefOr[LoadFunction] = js.native
+    var imageLoadFunction: js.UndefOr[LoadFunction] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.native
+    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var params: StringDictionary[js.Any] = js.native
+    var params: StringDictionary[js.Any]
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
     
-    var resolutions: js.UndefOr[js.Array[Double]] = js.native
+    var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var serverType: js.UndefOr[WMSServerType | String] = js.native
+    var serverType: js.UndefOr[WMSServerType | String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Options {
     

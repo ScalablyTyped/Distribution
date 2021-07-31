@@ -4,15 +4,13 @@ import typings.activexExcel.Excel.Chart
 import typings.activexExcel.Excel.Workbook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ch extends StObject {
   
-  val Ch: Chart = js.native
+  val Ch: Chart
   
-  val Wb: Workbook = js.native
+  val Wb: Workbook
 }
 object Ch {
   

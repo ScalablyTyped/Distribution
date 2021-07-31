@@ -3,26 +3,24 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  key :string,   index :number,   routeNames :std.Array<string>,   history :std.Array<unknown> | undefined,   routes :std.Array<std.Readonly<{  key :string,   name :string}> & std.Readonly<{  params :object | undefined}> & {  state :std.Readonly<any> | tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.PartialState<std.Readonly<any>> | undefined}>,   type :string,   stale :false}> */
-@js.native
 trait Readonlykeystringindexnum extends StObject {
   
-  val history: js.UndefOr[js.Array[_]] = js.native
+  val history: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  val index: Double = js.native
+  val index: Double
   
-  val key: String = js.native
+  val key: String
   
-  val routeNames: js.Array[String] = js.native
+  val routeNames: js.Array[String]
   
-  val routes: js.Array[Readonlykeystringnamestri] = js.native
+  val routes: js.Array[Readonlykeystringnamestri]
   
-  val stale: `false` = js.native
+  val stale: `false`
   
-  val `type`: String = js.native
+  val `type`: String
 }
 object Readonlykeystringindexnum {
   
@@ -32,10 +30,9 @@ object Readonlykeystringindexnum {
     key: String,
     routeNames: js.Array[String],
     routes: js.Array[Readonlykeystringnamestri],
-    stale: `false`,
     `type`: String
   ): Readonlykeystringindexnum = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = stale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlykeystringindexnum]
   }
@@ -44,7 +41,7 @@ object Readonlykeystringindexnum {
   implicit class ReadonlykeystringindexnumMutableBuilder[Self <: Readonlykeystringindexnum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)

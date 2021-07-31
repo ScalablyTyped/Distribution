@@ -4,29 +4,27 @@ import typings.leafletGeosearch.anon.AdminDistrict
 import typings.leafletGeosearch.anon.BingProviderResultPointca
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BingProviderResultRaw extends StObject {
   
-  var __type: String = js.native
+  var __type: String
   
-  var address: AdminDistrict = js.native
+  var address: AdminDistrict
   
-  var bbox: js.Tuple4[Double, Double, Double, Double] = js.native
+  var bbox: js.Tuple4[Double, Double, Double, Double]
   
-  var confidence: String = js.native
+  var confidence: String
   
-  var entityType: String = js.native
+  var entityType: String
   
-  var geocodePoints: js.Array[BingProviderResultPointca] = js.native
+  var geocodePoints: js.Array[BingProviderResultPointca]
   
-  var matchCodes: js.Array[String] = js.native
+  var matchCodes: js.Array[String]
   
-  var name: String = js.native
+  var name: String
   
-  var point: BingProviderResultPoint = js.native
+  var point: BingProviderResultPoint
 }
 object BingProviderResultRaw {
   

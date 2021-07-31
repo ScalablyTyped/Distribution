@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,13 @@ object theme {
   
   /* theme types */
   /** Info provided in the onUpdated listener. */
-  @js.native
   trait ThemeUpdateInfo extends StObject {
     
     /** The new theme after update */
-    var theme: js.Object = js.native
+    var theme: js.Object
     
     /** The id of the window the theme has been applied to */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object ThemeUpdateInfo {
     

@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side counterpart of the TreeView extension.
   */
-@js.native
-trait MVCxClientTreeView extends ASPxClientTreeView {
+trait MVCxClientTreeView
+  extends StObject
+     with ASPxClientTreeView {
   
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
   @JSName("BeginCallback")
-  var BeginCallback_MVCxClientTreeView: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientTreeView]] = js.native
+  var BeginCallback_MVCxClientTreeView: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientTreeView]]
 }
 object MVCxClientTreeView {
   

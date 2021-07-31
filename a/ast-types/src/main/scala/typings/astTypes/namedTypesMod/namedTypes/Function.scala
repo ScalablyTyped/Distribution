@@ -9,13 +9,16 @@ import typings.astTypes.kindsMod.TSTypeAnnotationKind
 import typings.astTypes.kindsMod.TSTypeParameterDeclarationKind
 import typings.astTypes.kindsMod.TypeAnnotationKind
 import typings.astTypes.kindsMod.TypeParameterDeclarationKind
+import typings.astTypes.namedTypesMod.namedTypes.^
+import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Function extends Node {
+trait Function
+  extends StObject
+     with Node {
   
   var async: js.UndefOr[Boolean] = js.native
   
@@ -38,4 +41,9 @@ trait Function extends Node {
   var returnType: js.UndefOr[TypeAnnotationKind | TSTypeAnnotationKind | Null] = js.native
   
   var typeParameters: js.UndefOr[TypeParameterDeclarationKind | TSTypeParameterDeclarationKind | Null] = js.native
+}
+object Function {
+  
+  @scala.inline
+  def apply: Type[Function] = ^.asInstanceOf[js.Dynamic].selectDynamic("Function").asInstanceOf[Type[Function]]
 }

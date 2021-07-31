@@ -2,14 +2,12 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to a request to list Cloud Dataflow jobs.  This may be a partial
   * response, depending on the page size in the ListJobsRequest.
   */
-@js.native
 trait SchemaListJobsResponse extends StObject {
   
   /**
@@ -17,17 +15,17 @@ trait SchemaListJobsResponse extends StObject {
     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
     * failed to respond.
     */
-  var failedLocation: js.UndefOr[js.Array[SchemaFailedLocation]] = js.native
+  var failedLocation: js.UndefOr[js.Array[SchemaFailedLocation]] = js.undefined
   
   /**
     * A subset of the requested job information.
     */
-  var jobs: js.UndefOr[js.Array[SchemaJob]] = js.native
+  var jobs: js.UndefOr[js.Array[SchemaJob]] = js.undefined
   
   /**
     * Set if there may be more results than fit in this response.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListJobsResponse {
   

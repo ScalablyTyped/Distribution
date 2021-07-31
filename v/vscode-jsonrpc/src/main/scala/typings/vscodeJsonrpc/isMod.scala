@@ -2,36 +2,32 @@ package typings.vscodeJsonrpc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isMod {
   
-  @JSImport("vscode-jsonrpc/lib/is", "array")
+  @JSImport("vscode-jsonrpc/lib/is", JSImport.Namespace)
   @js.native
-  def array[T](value: js.Any): /* is std.Array<T> */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vscode-jsonrpc/lib/is", "boolean")
-  @js.native
-  def boolean(value: js.Any): /* is boolean */ Boolean = js.native
+  @scala.inline
+  def array[T](value: js.Any): /* is std.Array<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<T> */ Boolean]
   
-  @JSImport("vscode-jsonrpc/lib/is", "error")
-  @js.native
-  def error(value: js.Any): /* is std.Error */ Boolean = js.native
+  @scala.inline
+  def boolean(value: js.Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(value.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
   
-  @JSImport("vscode-jsonrpc/lib/is", "func")
-  @js.native
-  def func(value: js.Any): /* is std.Function */ Boolean = js.native
+  @scala.inline
+  def error(value: js.Any): /* is std.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Error */ Boolean]
   
-  @JSImport("vscode-jsonrpc/lib/is", "number")
-  @js.native
-  def number(value: js.Any): /* is number */ Boolean = js.native
+  @scala.inline
+  def func(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  @JSImport("vscode-jsonrpc/lib/is", "string")
-  @js.native
-  def string(value: js.Any): /* is string */ Boolean = js.native
+  @scala.inline
+  def number(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
   
-  @JSImport("vscode-jsonrpc/lib/is", "stringArray")
-  @js.native
-  def stringArray(value: js.Any): /* is std.Array<string> */ Boolean = js.native
+  @scala.inline
+  def string(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  
+  @scala.inline
+  def stringArray(value: js.Any): /* is std.Array<string> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stringArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<string> */ Boolean]
 }

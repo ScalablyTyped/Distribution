@@ -6,18 +6,19 @@ import typings.rxjs.mod.Observable_
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("listr", JSImport.Namespace)
   @js.native
-  class ^[Ctx] () extends Listr[Ctx] {
+  class ^[Ctx] ()
+    extends StObject
+       with Listr[Ctx] {
     def this(options: ListrOptions[Ctx]) = this()
     def this(tasks: js.Array[ListrTask[Ctx]]) = this()
-    def this(tasks: js.UndefOr[scala.Nothing], options: ListrOptions[Ctx]) = this()
     def this(tasks: js.Array[ListrTask[Ctx]], options: ListrOptions[Ctx]) = this()
+    def this(tasks: Unit, options: ListrOptions[Ctx]) = this()
   }
   
   @js.native
@@ -38,10 +39,11 @@ object mod {
   
   type ListrContext = js.Any
   
-  @js.native
-  trait ListrError[Ctx] extends Error {
+  trait ListrError[Ctx]
+    extends StObject
+       with Error {
     
-    var context: Ctx = js.native
+    var context: Ctx
   }
   object ListrError {
     
@@ -52,19 +54,18 @@ object mod {
     }
     
     @scala.inline
-    implicit class ListrErrorMutableBuilder[Self <: ListrError[_], Ctx] (val x: Self with ListrError[Ctx]) extends AnyVal {
+    implicit class ListrErrorMutableBuilder[Self <: ListrError[?], Ctx] (val x: Self & ListrError[Ctx]) extends AnyVal {
       
       @scala.inline
       def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ListrEvent extends StObject {
     
-    var data: js.UndefOr[String | Boolean] = js.native
+    var data: js.UndefOr[String | Boolean] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ListrEvent {
     
@@ -89,16 +90,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ListrOptions[Ctx] extends StObject {
     
-    var concurrent: js.UndefOr[Boolean | Double] = js.native
+    var concurrent: js.UndefOr[Boolean | Double] = js.undefined
     
-    var exitOnError: js.UndefOr[Boolean] = js.native
+    var exitOnError: js.UndefOr[Boolean] = js.undefined
     
-    var nonTTYRenderer: js.UndefOr[ListrRendererValue[Ctx]] = js.native
+    var nonTTYRenderer: js.UndefOr[ListrRendererValue[Ctx]] = js.undefined
     
-    var renderer: js.UndefOr[ListrRendererValue[Ctx]] = js.native
+    var renderer: js.UndefOr[ListrRendererValue[Ctx]] = js.undefined
   }
   object ListrOptions {
     
@@ -109,7 +109,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ListrOptionsMutableBuilder[Self <: ListrOptions[_], Ctx] (val x: Self with ListrOptions[Ctx]) extends AnyVal {
+    implicit class ListrOptionsMutableBuilder[Self <: ListrOptions[?], Ctx] (val x: Self & ListrOptions[Ctx]) extends AnyVal {
       
       @scala.inline
       def setConcurrent(value: Boolean | Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
@@ -137,12 +137,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ListrRenderer extends StObject {
     
-    def end(err: Error): Unit = js.native
+    def end(err: Error): Unit
     
-    def render(): Unit = js.native
+    def render(): Unit
   }
   object ListrRenderer {
     
@@ -165,12 +164,13 @@ object mod {
   
   @js.native
   trait ListrRendererClass[Ctx]
-    extends ListrRendererValue[Ctx]
+    extends StObject
        with Instantiable2[
           /* tasks */ js.Array[ListrTaskObject[Ctx]], 
           /* options */ ListrOptions[Ctx], 
           ListrRenderer
-        ] {
+        ]
+       with ListrRendererValue[Ctx] {
     
     var nonTTY: Boolean = js.native
   }
@@ -183,18 +183,17 @@ object mod {
   */
   trait ListrRendererValue[Ctx] extends StObject
   
-  @js.native
   trait ListrTask[Ctx] extends StObject {
     
     var enabled: js.UndefOr[
         js.Function1[/* ctx */ Ctx, Boolean | js.Promise[Boolean] | Observable_[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
-    var skip: js.UndefOr[js.Function1[/* ctx */ Ctx, Unit | Boolean | String | js.Promise[Boolean]]] = js.native
+    var skip: js.UndefOr[js.Function1[/* ctx */ Ctx, Unit | Boolean | String | js.Promise[Boolean]]] = js.undefined
     
-    def task(ctx: Ctx, task: ListrTaskWrapper[Ctx]): Unit | ListrTaskResult[Ctx] = js.native
+    def task(ctx: Ctx, task: ListrTaskWrapper[Ctx]): Unit | ListrTaskResult[Ctx]
     
-    var title: String = js.native
+    var title: String
   }
   object ListrTask {
     
@@ -205,7 +204,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ListrTaskMutableBuilder[Self <: ListrTask[_], Ctx] (val x: Self with ListrTask[Ctx]) extends AnyVal {
+    implicit class ListrTaskMutableBuilder[Self <: ListrTask[?], Ctx] (val x: Self & ListrTask[Ctx]) extends AnyVal {
       
       @scala.inline
       def setEnabled(value: /* ctx */ Ctx => Boolean | js.Promise[Boolean] | Observable_[Boolean]): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))

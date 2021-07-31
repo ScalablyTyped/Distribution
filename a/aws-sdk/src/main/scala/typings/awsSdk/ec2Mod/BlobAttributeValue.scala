@@ -2,13 +2,11 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlobAttributeValue extends StObject {
   
-  var Value: js.UndefOr[_Blob] = js.native
+  var Value: js.UndefOr[_Blob] = js.undefined
 }
 object BlobAttributeValue {
   

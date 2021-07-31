@@ -3,7 +3,6 @@ package typings.reactNativeShareMenu
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,12 +11,11 @@ object mod extends Shortcut {
   @js.native
   val default: ShareMenu = js.native
   
-  @js.native
   trait ShareMenu extends StObject {
     
-    def clearSharedText(): Unit = js.native
+    def clearSharedText(): Unit
     
-    def getSharedText(callback: js.Function1[/* text */ String, Unit]): Unit = js.native
+    def getSharedText(callback: js.Function1[/* text */ String, Unit]): Unit
   }
   object ShareMenu {
     

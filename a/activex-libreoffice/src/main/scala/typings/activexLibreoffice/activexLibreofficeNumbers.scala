@@ -193,14 +193,14 @@ import typings.activexLibreoffice.com_.sun.star.xml.dom.events.PhaseType
 import typings.activexLibreoffice.com_.sun.star.xml.xpath.XPathObjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `-1`
-    extends Constants
+    extends StObject
+       with Constants
        with typings.activexLibreoffice.com_.sun.star.beans.MethodConcept.Constants
        with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -217,13 +217,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `-128`
-    extends typings.activexLibreoffice.com_.sun.star.datatransfer.dnd.DNDConstants.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.datatransfer.dnd.DNDConstants.Constants
   @scala.inline
   def `-128`: `-128` = -128.asInstanceOf[`-128`]
   
   @js.native
   sealed trait `-2`
-    extends typings.activexLibreoffice.com_.sun.star.embed.EmbedVerbs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.embed.EmbedVerbs.Constants
        with typings.activexLibreoffice.com_.sun.star.chart.ChartSymbolType.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
@@ -231,19 +233,23 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `-2147483648`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
   @scala.inline
   def `-2147483648`: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
   
   @js.native
-  sealed trait `-256` extends TransliterationModules
+  sealed trait `-256`
+    extends StObject
+       with TransliterationModules
   @scala.inline
   def `-256`: `-256` = -256.asInstanceOf[`-256`]
   
   @js.native
   sealed trait `-3`
-    extends typings.activexLibreoffice.com_.sun.star.embed.EmbedVerbs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.embed.EmbedVerbs.Constants
        with typings.activexLibreoffice.com_.sun.star.chart.ChartSymbolType.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
@@ -251,34 +257,39 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `-4`
-    extends typings.activexLibreoffice.com_.sun.star.embed.EmbedVerbs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.embed.EmbedVerbs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
   def `-4`: `-4` = -4.asInstanceOf[`-4`]
   
   @js.native
   sealed trait `-5`
-    extends typings.activexLibreoffice.com_.sun.star.embed.EmbedVerbs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.embed.EmbedVerbs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
   def `-5`: `-5` = -5.asInstanceOf[`-5`]
   
   @js.native
   sealed trait `-6`
-    extends typings.activexLibreoffice.com_.sun.star.embed.EmbedVerbs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.embed.EmbedVerbs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
   def `-6`: `-6` = -6.asInstanceOf[`-6`]
   
   @js.native
   sealed trait `-7`
-    extends typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
   def `-7`: `-7` = -7.asInstanceOf[`-7`]
   
   @js.native
   sealed trait `0`
-    extends AdjustmentType
+    extends StObject
+       with AdjustmentType
        with Alignment
        with AnchorBindingMode
        with AnimationEffect
@@ -717,14 +728,16 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `0.000000`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.FontWeight.Constants
   @scala.inline
   def `0.000000`: `0.000000` = 0.000000.asInstanceOf[`0.000000`]
   
   @js.native
   sealed trait `1`
-    extends AdjustmentType
+    extends StObject
+       with AdjustmentType
        with Alignment
        with AnchorBindingMode
        with AnimationEffect
@@ -1247,7 +1260,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `10`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with ClickAction
        with typings.activexLibreoffice.com_.sun.star.sdb.SQLFilterOperator.Constants
        with typings.activexLibreoffice.com_.sun.star.script.FailReason.Constants
@@ -1335,7 +1349,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `100`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
@@ -1345,14 +1360,16 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `100.000000`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.FontWeight.Constants
   @scala.inline
   def `100.000000`: `100.000000` = 100.000000.asInstanceOf[`100.000000`]
   
   @js.native
   sealed trait `1000`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
        with typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.FetchDirection.Constants
@@ -1361,13 +1378,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1000000`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
   @scala.inline
   def `1000000`: `1000000` = 1000000.asInstanceOf[`1000000`]
   
   @js.native
   sealed trait `1001`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
        with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.FetchDirection.Constants
@@ -1376,7 +1395,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1002`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
        with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.FetchDirection.Constants
@@ -1385,7 +1405,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1003`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
        with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.ResultSetType.Constants
@@ -1394,7 +1415,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1004`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.ResultSetType.Constants
   @scala.inline
@@ -1402,7 +1424,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1005`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.ResultSetType.Constants
   @scala.inline
@@ -1410,14 +1433,16 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1006`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1006`: `1006` = 1006.asInstanceOf[`1006`]
   
   @js.native
   sealed trait `1007`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.ResultSetConcurrency.Constants
   @scala.inline
@@ -1425,7 +1450,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1008`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.application.DatabaseObjectContainer.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.ResultSetConcurrency.Constants
   @scala.inline
@@ -1433,13 +1459,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1009`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1009`: `1009` = 1009.asInstanceOf[`1009`]
   
   @js.native
   sealed trait `101`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ControlActions.Constants
@@ -1448,49 +1476,57 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1010`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1010`: `1010` = 1010.asInstanceOf[`1010`]
   
   @js.native
   sealed trait `101010256`
-    extends typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
   @scala.inline
   def `101010256`: `101010256` = 101010256.asInstanceOf[`101010256`]
   
   @js.native
   sealed trait `1011`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1011`: `1011` = 1011.asInstanceOf[`1011`]
   
   @js.native
   sealed trait `1012`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1012`: `1012` = 1012.asInstanceOf[`1012`]
   
   @js.native
   sealed trait `1013`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1013`: `1013` = 1013.asInstanceOf[`1013`]
   
   @js.native
   sealed trait `1014`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1014`: `1014` = 1014.asInstanceOf[`1014`]
   
   @js.native
   sealed trait `1015`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1015`: `1015` = 1015.asInstanceOf[`1015`]
   
   @js.native
   sealed trait `102`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
@@ -1498,7 +1534,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1024`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.KeyGroup.Constants
        with typings.activexLibreoffice.com_.sun.star.security.CertificateValidity.Constants
@@ -1515,37 +1552,43 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1025`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1025`: `1025` = 1025.asInstanceOf[`1025`]
   
   @js.native
   sealed trait `1026`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1026`: `1026` = 1026.asInstanceOf[`1026`]
   
   @js.native
   sealed trait `1027`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1027`: `1027` = 1027.asInstanceOf[`1027`]
   
   @js.native
   sealed trait `1028`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1028`: `1028` = 1028.asInstanceOf[`1028`]
   
   @js.native
   sealed trait `1029`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1029`: `1029` = 1029.asInstanceOf[`1029`]
   
   @js.native
   sealed trait `103`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
@@ -1553,19 +1596,22 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1030`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1030`: `1030` = 1030.asInstanceOf[`1030`]
   
   @js.native
   sealed trait `1031`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1031`: `1031` = 1031.asInstanceOf[`1031`]
   
   @js.native
   sealed trait `104`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
@@ -1573,7 +1619,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1048576`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
        with typings.activexLibreoffice.com_.sun.star.util.SearchFlags.Constants
        with TransliterationModules
@@ -1583,7 +1630,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `105`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
@@ -1591,7 +1639,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `106`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
@@ -1599,7 +1648,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `107`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
@@ -1607,7 +1657,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1073741824`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.i18n.KParseTokens.Constants
        with typings.activexLibreoffice.com_.sun.star.i18n.KParseType.Constants
        with typings.activexLibreoffice.com_.sun.star.i18n.TransliterationModulesExtra.Constants
@@ -1616,7 +1667,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `108`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
@@ -1624,7 +1676,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `109`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
@@ -1632,7 +1685,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `11`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with ClickAction
        with typings.activexLibreoffice.com_.sun.star.awt.FontUnderline.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.Command.Constants
@@ -1714,7 +1768,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `110`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
@@ -1722,160 +1777,186 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `110.000000`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.FontWeight.Constants
   @scala.inline
   def `110.000000`: `110.000000` = 110.000000.asInstanceOf[`110.000000`]
   
   @js.native
   sealed trait `1100`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1100`: `1100` = 1100.asInstanceOf[`1100`]
   
   @js.native
   sealed trait `1101`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1101`: `1101` = 1101.asInstanceOf[`1101`]
   
   @js.native
   sealed trait `1102`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1102`: `1102` = 1102.asInstanceOf[`1102`]
   
   @js.native
   sealed trait `1103`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1103`: `1103` = 1103.asInstanceOf[`1103`]
   
   @js.native
   sealed trait `1104`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1104`: `1104` = 1104.asInstanceOf[`1104`]
   
   @js.native
   sealed trait `1105`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1105`: `1105` = 1105.asInstanceOf[`1105`]
   
   @js.native
   sealed trait `1106`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1106`: `1106` = 1106.asInstanceOf[`1106`]
   
   @js.native
   sealed trait `1107`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1107`: `1107` = 1107.asInstanceOf[`1107`]
   
   @js.native
   sealed trait `1108`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1108`: `1108` = 1108.asInstanceOf[`1108`]
   
   @js.native
   sealed trait `1109`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1109`: `1109` = 1109.asInstanceOf[`1109`]
   
   @js.native
   sealed trait `111`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `111`: `111` = 111.asInstanceOf[`111`]
   
   @js.native
   sealed trait `1110`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1110`: `1110` = 1110.asInstanceOf[`1110`]
   
   @js.native
   sealed trait `1111`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
   def `1111`: `1111` = 1111.asInstanceOf[`1111`]
   
   @js.native
   sealed trait `1112`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1112`: `1112` = 1112.asInstanceOf[`1112`]
   
   @js.native
   sealed trait `1113`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1113`: `1113` = 1113.asInstanceOf[`1113`]
   
   @js.native
   sealed trait `1114`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1114`: `1114` = 1114.asInstanceOf[`1114`]
   
   @js.native
   sealed trait `112`
-    extends typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `112`: `112` = 112.asInstanceOf[`112`]
   
   @js.native
   sealed trait `113`
-    extends typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `113`: `113` = 113.asInstanceOf[`113`]
   
   @js.native
   sealed trait `114`
-    extends typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `114`: `114` = 114.asInstanceOf[`114`]
   
   @js.native
   sealed trait `115`
-    extends typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `115`: `115` = 115.asInstanceOf[`115`]
   
   @js.native
   sealed trait `116`
-    extends typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `116`: `116` = 116.asInstanceOf[`116`]
   
   @js.native
   sealed trait `117`
-    extends typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `117`: `117` = 117.asInstanceOf[`117`]
   
   @js.native
   sealed trait `118`
-    extends typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `118`: `118` = 118.asInstanceOf[`118`]
   
   @js.native
   sealed trait `119`
-    extends typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `119`: `119` = 119.asInstanceOf[`119`]
   
   @js.native
   sealed trait `12`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with ClickAction
        with typings.activexLibreoffice.com_.sun.star.awt.FontUnderline.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.Command.Constants
@@ -1949,841 +2030,981 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1200`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1200`: `1200` = 1200.asInstanceOf[`1200`]
   
   @js.native
   sealed trait `1201`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1201`: `1201` = 1201.asInstanceOf[`1201`]
   
   @js.native
   sealed trait `1202`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1202`: `1202` = 1202.asInstanceOf[`1202`]
   
   @js.native
   sealed trait `1203`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1203`: `1203` = 1203.asInstanceOf[`1203`]
   
   @js.native
   sealed trait `1204`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1204`: `1204` = 1204.asInstanceOf[`1204`]
   
   @js.native
   sealed trait `1205`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1205`: `1205` = 1205.asInstanceOf[`1205`]
   
   @js.native
   sealed trait `1206`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1206`: `1206` = 1206.asInstanceOf[`1206`]
   
   @js.native
   sealed trait `1207`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1207`: `1207` = 1207.asInstanceOf[`1207`]
   
   @js.native
   sealed trait `1208`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1208`: `1208` = 1208.asInstanceOf[`1208`]
   
   @js.native
   sealed trait `1209`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1209`: `1209` = 1209.asInstanceOf[`1209`]
   
   @js.native
   sealed trait `1210`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1210`: `1210` = 1210.asInstanceOf[`1210`]
   
   @js.native
   sealed trait `1211`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1211`: `1211` = 1211.asInstanceOf[`1211`]
   
   @js.native
   sealed trait `1212`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1212`: `1212` = 1212.asInstanceOf[`1212`]
   
   @js.native
   sealed trait `1213`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1213`: `1213` = 1213.asInstanceOf[`1213`]
   
   @js.native
   sealed trait `1214`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1214`: `1214` = 1214.asInstanceOf[`1214`]
   
   @js.native
   sealed trait `1215`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1215`: `1215` = 1215.asInstanceOf[`1215`]
   
   @js.native
   sealed trait `1216`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1216`: `1216` = 1216.asInstanceOf[`1216`]
   
   @js.native
   sealed trait `1217`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1217`: `1217` = 1217.asInstanceOf[`1217`]
   
   @js.native
   sealed trait `1218`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1218`: `1218` = 1218.asInstanceOf[`1218`]
   
   @js.native
   sealed trait `1219`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1219`: `1219` = 1219.asInstanceOf[`1219`]
   
   @js.native
   sealed trait `1220`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1220`: `1220` = 1220.asInstanceOf[`1220`]
   
   @js.native
   sealed trait `1221`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1221`: `1221` = 1221.asInstanceOf[`1221`]
   
   @js.native
   sealed trait `1222`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1222`: `1222` = 1222.asInstanceOf[`1222`]
   
   @js.native
   sealed trait `1223`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1223`: `1223` = 1223.asInstanceOf[`1223`]
   
   @js.native
   sealed trait `1224`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1224`: `1224` = 1224.asInstanceOf[`1224`]
   
   @js.native
   sealed trait `1225`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1225`: `1225` = 1225.asInstanceOf[`1225`]
   
   @js.native
   sealed trait `1226`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1226`: `1226` = 1226.asInstanceOf[`1226`]
   
   @js.native
   sealed trait `1227`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1227`: `1227` = 1227.asInstanceOf[`1227`]
   
   @js.native
   sealed trait `1228`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1228`: `1228` = 1228.asInstanceOf[`1228`]
   
   @js.native
   sealed trait `122880`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122880`: `122880` = 122880.asInstanceOf[`122880`]
   
   @js.native
   sealed trait `122881`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122881`: `122881` = 122881.asInstanceOf[`122881`]
   
   @js.native
   sealed trait `122882`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122882`: `122882` = 122882.asInstanceOf[`122882`]
   
   @js.native
   sealed trait `122883`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122883`: `122883` = 122883.asInstanceOf[`122883`]
   
   @js.native
   sealed trait `122884`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122884`: `122884` = 122884.asInstanceOf[`122884`]
   
   @js.native
   sealed trait `122885`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122885`: `122885` = 122885.asInstanceOf[`122885`]
   
   @js.native
   sealed trait `122886`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122886`: `122886` = 122886.asInstanceOf[`122886`]
   
   @js.native
   sealed trait `122887`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122887`: `122887` = 122887.asInstanceOf[`122887`]
   
   @js.native
   sealed trait `122888`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122888`: `122888` = 122888.asInstanceOf[`122888`]
   
   @js.native
   sealed trait `122889`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122889`: `122889` = 122889.asInstanceOf[`122889`]
   
   @js.native
   sealed trait `122890`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122890`: `122890` = 122890.asInstanceOf[`122890`]
   
   @js.native
   sealed trait `122891`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122891`: `122891` = 122891.asInstanceOf[`122891`]
   
   @js.native
   sealed trait `122892`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122892`: `122892` = 122892.asInstanceOf[`122892`]
   
   @js.native
   sealed trait `122893`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122893`: `122893` = 122893.asInstanceOf[`122893`]
   
   @js.native
   sealed trait `122894`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122894`: `122894` = 122894.asInstanceOf[`122894`]
   
   @js.native
   sealed trait `122895`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122895`: `122895` = 122895.asInstanceOf[`122895`]
   
   @js.native
   sealed trait `122896`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122896`: `122896` = 122896.asInstanceOf[`122896`]
   
   @js.native
   sealed trait `122897`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122897`: `122897` = 122897.asInstanceOf[`122897`]
   
   @js.native
   sealed trait `122898`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122898`: `122898` = 122898.asInstanceOf[`122898`]
   
   @js.native
   sealed trait `122899`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122899`: `122899` = 122899.asInstanceOf[`122899`]
   
   @js.native
   sealed trait `1229`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1229`: `1229` = 1229.asInstanceOf[`1229`]
   
   @js.native
   sealed trait `122900`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122900`: `122900` = 122900.asInstanceOf[`122900`]
   
   @js.native
   sealed trait `122901`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122901`: `122901` = 122901.asInstanceOf[`122901`]
   
   @js.native
   sealed trait `122902`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122902`: `122902` = 122902.asInstanceOf[`122902`]
   
   @js.native
   sealed trait `122903`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122903`: `122903` = 122903.asInstanceOf[`122903`]
   
   @js.native
   sealed trait `122904`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122904`: `122904` = 122904.asInstanceOf[`122904`]
   
   @js.native
   sealed trait `122905`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122905`: `122905` = 122905.asInstanceOf[`122905`]
   
   @js.native
   sealed trait `122906`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122906`: `122906` = 122906.asInstanceOf[`122906`]
   
   @js.native
   sealed trait `122907`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122907`: `122907` = 122907.asInstanceOf[`122907`]
   
   @js.native
   sealed trait `122908`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122908`: `122908` = 122908.asInstanceOf[`122908`]
   
   @js.native
   sealed trait `122909`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122909`: `122909` = 122909.asInstanceOf[`122909`]
   
   @js.native
   sealed trait `122910`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122910`: `122910` = 122910.asInstanceOf[`122910`]
   
   @js.native
   sealed trait `122911`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122911`: `122911` = 122911.asInstanceOf[`122911`]
   
   @js.native
   sealed trait `122912`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122912`: `122912` = 122912.asInstanceOf[`122912`]
   
   @js.native
   sealed trait `122913`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122913`: `122913` = 122913.asInstanceOf[`122913`]
   
   @js.native
   sealed trait `122914`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122914`: `122914` = 122914.asInstanceOf[`122914`]
   
   @js.native
   sealed trait `122915`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122915`: `122915` = 122915.asInstanceOf[`122915`]
   
   @js.native
   sealed trait `122916`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122916`: `122916` = 122916.asInstanceOf[`122916`]
   
   @js.native
   sealed trait `122917`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122917`: `122917` = 122917.asInstanceOf[`122917`]
   
   @js.native
   sealed trait `122918`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122918`: `122918` = 122918.asInstanceOf[`122918`]
   
   @js.native
   sealed trait `122919`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122919`: `122919` = 122919.asInstanceOf[`122919`]
   
   @js.native
   sealed trait `122920`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122920`: `122920` = 122920.asInstanceOf[`122920`]
   
   @js.native
   sealed trait `122921`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122921`: `122921` = 122921.asInstanceOf[`122921`]
   
   @js.native
   sealed trait `122922`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122922`: `122922` = 122922.asInstanceOf[`122922`]
   
   @js.native
   sealed trait `122923`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122923`: `122923` = 122923.asInstanceOf[`122923`]
   
   @js.native
   sealed trait `122924`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122924`: `122924` = 122924.asInstanceOf[`122924`]
   
   @js.native
   sealed trait `122925`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122925`: `122925` = 122925.asInstanceOf[`122925`]
   
   @js.native
   sealed trait `122926`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122926`: `122926` = 122926.asInstanceOf[`122926`]
   
   @js.native
   sealed trait `122927`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122927`: `122927` = 122927.asInstanceOf[`122927`]
   
   @js.native
   sealed trait `122928`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122928`: `122928` = 122928.asInstanceOf[`122928`]
   
   @js.native
   sealed trait `122929`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122929`: `122929` = 122929.asInstanceOf[`122929`]
   
   @js.native
   sealed trait `122930`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122930`: `122930` = 122930.asInstanceOf[`122930`]
   
   @js.native
   sealed trait `122931`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122931`: `122931` = 122931.asInstanceOf[`122931`]
   
   @js.native
   sealed trait `122932`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122932`: `122932` = 122932.asInstanceOf[`122932`]
   
   @js.native
   sealed trait `122933`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122933`: `122933` = 122933.asInstanceOf[`122933`]
   
   @js.native
   sealed trait `122934`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122934`: `122934` = 122934.asInstanceOf[`122934`]
   
   @js.native
   sealed trait `122935`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122935`: `122935` = 122935.asInstanceOf[`122935`]
   
   @js.native
   sealed trait `122936`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122936`: `122936` = 122936.asInstanceOf[`122936`]
   
   @js.native
   sealed trait `122937`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122937`: `122937` = 122937.asInstanceOf[`122937`]
   
   @js.native
   sealed trait `122938`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122938`: `122938` = 122938.asInstanceOf[`122938`]
   
   @js.native
   sealed trait `122939`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122939`: `122939` = 122939.asInstanceOf[`122939`]
   
   @js.native
   sealed trait `122940`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122940`: `122940` = 122940.asInstanceOf[`122940`]
   
   @js.native
   sealed trait `122941`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122941`: `122941` = 122941.asInstanceOf[`122941`]
   
   @js.native
   sealed trait `122942`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122942`: `122942` = 122942.asInstanceOf[`122942`]
   
   @js.native
   sealed trait `122943`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122943`: `122943` = 122943.asInstanceOf[`122943`]
   
   @js.native
   sealed trait `122944`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122944`: `122944` = 122944.asInstanceOf[`122944`]
   
   @js.native
   sealed trait `122945`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122945`: `122945` = 122945.asInstanceOf[`122945`]
   
   @js.native
   sealed trait `122946`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122946`: `122946` = 122946.asInstanceOf[`122946`]
   
   @js.native
   sealed trait `122947`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122947`: `122947` = 122947.asInstanceOf[`122947`]
   
   @js.native
   sealed trait `122948`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122948`: `122948` = 122948.asInstanceOf[`122948`]
   
   @js.native
   sealed trait `122949`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122949`: `122949` = 122949.asInstanceOf[`122949`]
   
   @js.native
   sealed trait `122950`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122950`: `122950` = 122950.asInstanceOf[`122950`]
   
   @js.native
   sealed trait `122951`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122951`: `122951` = 122951.asInstanceOf[`122951`]
   
   @js.native
   sealed trait `122952`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122952`: `122952` = 122952.asInstanceOf[`122952`]
   
   @js.native
   sealed trait `122953`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122953`: `122953` = 122953.asInstanceOf[`122953`]
   
   @js.native
   sealed trait `122954`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122954`: `122954` = 122954.asInstanceOf[`122954`]
   
   @js.native
   sealed trait `122955`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122955`: `122955` = 122955.asInstanceOf[`122955`]
   
   @js.native
   sealed trait `122956`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122956`: `122956` = 122956.asInstanceOf[`122956`]
   
   @js.native
   sealed trait `122957`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122957`: `122957` = 122957.asInstanceOf[`122957`]
   
   @js.native
   sealed trait `122958`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122958`: `122958` = 122958.asInstanceOf[`122958`]
   
   @js.native
   sealed trait `122959`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122959`: `122959` = 122959.asInstanceOf[`122959`]
   
   @js.native
   sealed trait `122960`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122960`: `122960` = 122960.asInstanceOf[`122960`]
   
   @js.native
   sealed trait `122961`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122961`: `122961` = 122961.asInstanceOf[`122961`]
   
   @js.native
   sealed trait `122962`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122962`: `122962` = 122962.asInstanceOf[`122962`]
   
   @js.native
   sealed trait `122963`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122963`: `122963` = 122963.asInstanceOf[`122963`]
   
   @js.native
   sealed trait `122964`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122964`: `122964` = 122964.asInstanceOf[`122964`]
   
   @js.native
   sealed trait `122965`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122965`: `122965` = 122965.asInstanceOf[`122965`]
   
   @js.native
   sealed trait `122966`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122966`: `122966` = 122966.asInstanceOf[`122966`]
   
   @js.native
   sealed trait `122967`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122967`: `122967` = 122967.asInstanceOf[`122967`]
   
   @js.native
   sealed trait `122968`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122968`: `122968` = 122968.asInstanceOf[`122968`]
   
   @js.native
   sealed trait `122969`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122969`: `122969` = 122969.asInstanceOf[`122969`]
   
   @js.native
   sealed trait `122970`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122970`: `122970` = 122970.asInstanceOf[`122970`]
   
   @js.native
   sealed trait `122971`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122971`: `122971` = 122971.asInstanceOf[`122971`]
   
   @js.native
   sealed trait `122972`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122972`: `122972` = 122972.asInstanceOf[`122972`]
   
   @js.native
   sealed trait `122973`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122973`: `122973` = 122973.asInstanceOf[`122973`]
   
   @js.native
   sealed trait `122974`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122974`: `122974` = 122974.asInstanceOf[`122974`]
   
   @js.native
   sealed trait `122975`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122975`: `122975` = 122975.asInstanceOf[`122975`]
   
   @js.native
   sealed trait `122976`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122976`: `122976` = 122976.asInstanceOf[`122976`]
   
   @js.native
   sealed trait `122977`
-    extends typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ucb.Error.Constants
   @scala.inline
   def `122977`: `122977` = 122977.asInstanceOf[`122977`]
   
   @js.native
   sealed trait `1230`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1230`: `1230` = 1230.asInstanceOf[`1230`]
   
   @js.native
   sealed trait `1231`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1231`: `1231` = 1231.asInstanceOf[`1231`]
   
   @js.native
   sealed trait `1232`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1232`: `1232` = 1232.asInstanceOf[`1232`]
   
   @js.native
   sealed trait `1233`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1233`: `1233` = 1233.asInstanceOf[`1233`]
   
   @js.native
   sealed trait `1234`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1234`: `1234` = 1234.asInstanceOf[`1234`]
   
   @js.native
   sealed trait `1235`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1235`: `1235` = 1235.asInstanceOf[`1235`]
   
   @js.native
   sealed trait `1236`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1236`: `1236` = 1236.asInstanceOf[`1236`]
   
   @js.native
   sealed trait `1237`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1237`: `1237` = 1237.asInstanceOf[`1237`]
   
   @js.native
   sealed trait `1238`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1238`: `1238` = 1238.asInstanceOf[`1238`]
   
   @js.native
   sealed trait `1239`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1239`: `1239` = 1239.asInstanceOf[`1239`]
   
   @js.native
   sealed trait `1240`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `1240`: `1240` = 1240.asInstanceOf[`1240`]
   
   @js.native
   sealed trait `128`
-    extends typings.activexLibreoffice.com_.sun.star.beans.PropertyAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.beans.PropertyAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.WindowAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.linguistic2.DictionaryListEventFlags.Constants
        with typings.activexLibreoffice.com_.sun.star.security.CertificateValidity.Constants
@@ -2801,128 +3022,149 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1280`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.KeyGroup.Constants
   @scala.inline
   def `1280`: `1280` = 1280.asInstanceOf[`1280`]
   
   @js.native
   sealed trait `1281`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1281`: `1281` = 1281.asInstanceOf[`1281`]
   
   @js.native
   sealed trait `1282`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1282`: `1282` = 1282.asInstanceOf[`1282`]
   
   @js.native
   sealed trait `1283`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1283`: `1283` = 1283.asInstanceOf[`1283`]
   
   @js.native
   sealed trait `1284`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1284`: `1284` = 1284.asInstanceOf[`1284`]
   
   @js.native
   sealed trait `1285`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1285`: `1285` = 1285.asInstanceOf[`1285`]
   
   @js.native
   sealed trait `1286`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1286`: `1286` = 1286.asInstanceOf[`1286`]
   
   @js.native
   sealed trait `1287`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1287`: `1287` = 1287.asInstanceOf[`1287`]
   
   @js.native
   sealed trait `1288`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1288`: `1288` = 1288.asInstanceOf[`1288`]
   
   @js.native
   sealed trait `1289`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1289`: `1289` = 1289.asInstanceOf[`1289`]
   
   @js.native
   sealed trait `1290`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1290`: `1290` = 1290.asInstanceOf[`1290`]
   
   @js.native
   sealed trait `1291`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1291`: `1291` = 1291.asInstanceOf[`1291`]
   
   @js.native
   sealed trait `1292`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1292`: `1292` = 1292.asInstanceOf[`1292`]
   
   @js.native
   sealed trait `1293`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1293`: `1293` = 1293.asInstanceOf[`1293`]
   
   @js.native
   sealed trait `1294`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1294`: `1294` = 1294.asInstanceOf[`1294`]
   
   @js.native
   sealed trait `1295`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1295`: `1295` = 1295.asInstanceOf[`1295`]
   
   @js.native
   sealed trait `1296`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1296`: `1296` = 1296.asInstanceOf[`1296`]
   
   @js.native
   sealed trait `1297`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1297`: `1297` = 1297.asInstanceOf[`1297`]
   
   @js.native
   sealed trait `1298`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1298`: `1298` = 1298.asInstanceOf[`1298`]
   
   @js.native
   sealed trait `1299`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1299`: `1299` = 1299.asInstanceOf[`1299`]
   
   @js.native
   sealed trait `13`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with ClickAction
        with typings.activexLibreoffice.com_.sun.star.awt.FontUnderline.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.Command.Constants
@@ -2984,73 +3226,85 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1300`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1300`: `1300` = 1300.asInstanceOf[`1300`]
   
   @js.native
   sealed trait `1301`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1301`: `1301` = 1301.asInstanceOf[`1301`]
   
   @js.native
   sealed trait `1302`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1302`: `1302` = 1302.asInstanceOf[`1302`]
   
   @js.native
   sealed trait `1303`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1303`: `1303` = 1303.asInstanceOf[`1303`]
   
   @js.native
   sealed trait `1304`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1304`: `1304` = 1304.asInstanceOf[`1304`]
   
   @js.native
   sealed trait `1305`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1305`: `1305` = 1305.asInstanceOf[`1305`]
   
   @js.native
   sealed trait `1306`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1306`: `1306` = 1306.asInstanceOf[`1306`]
   
   @js.native
   sealed trait `1307`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1307`: `1307` = 1307.asInstanceOf[`1307`]
   
   @js.native
   sealed trait `1308`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1308`: `1308` = 1308.asInstanceOf[`1308`]
   
   @js.native
   sealed trait `1309`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1309`: `1309` = 1309.asInstanceOf[`1309`]
   
   @js.native
   sealed trait `1310`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1310`: `1310` = 1310.asInstanceOf[`1310`]
   
   @js.native
   sealed trait `131072`
-    extends typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
        with typings.activexLibreoffice.com_.sun.star.security.CertificateValidity.Constants
        with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
        with typings.activexLibreoffice.com_.sun.star.i18n.KParseTokens.Constants
@@ -3061,55 +3315,64 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `1311`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1311`: `1311` = 1311.asInstanceOf[`1311`]
   
   @js.native
   sealed trait `1312`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1312`: `1312` = 1312.asInstanceOf[`1312`]
   
   @js.native
   sealed trait `1313`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1313`: `1313` = 1313.asInstanceOf[`1313`]
   
   @js.native
   sealed trait `1314`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1314`: `1314` = 1314.asInstanceOf[`1314`]
   
   @js.native
   sealed trait `1315`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1315`: `1315` = 1315.asInstanceOf[`1315`]
   
   @js.native
   sealed trait `1316`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1316`: `1316` = 1316.asInstanceOf[`1316`]
   
   @js.native
   sealed trait `1317`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1317`: `1317` = 1317.asInstanceOf[`1317`]
   
   @js.native
   sealed trait `1318`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1318`: `1318` = 1318.asInstanceOf[`1318`]
   
   @js.native
   sealed trait `134217728`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with TransliterationModules
        with TransliterationModulesNew
   @scala.inline
@@ -3117,13 +3380,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `134695760`
-    extends typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
   @scala.inline
   def `134695760`: `134695760` = 134695760.asInstanceOf[`134695760`]
   
   @js.native
   sealed trait `14`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.FontUnderline.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.Command.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.KeyFunction.Constants
@@ -3179,7 +3444,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `15`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.FontUnderline.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.KeyFunction.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
@@ -3228,194 +3494,226 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `150.000000`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.FontWeight.Constants
   @scala.inline
   def `150.000000`: `150.000000` = 150.000000.asInstanceOf[`150.000000`]
   
   @js.native
   sealed trait `1536`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1536`: `1536` = 1536.asInstanceOf[`1536`]
   
   @js.native
   sealed trait `1537`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1537`: `1537` = 1537.asInstanceOf[`1537`]
   
   @js.native
   sealed trait `1538`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1538`: `1538` = 1538.asInstanceOf[`1538`]
   
   @js.native
   sealed trait `1539`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1539`: `1539` = 1539.asInstanceOf[`1539`]
   
   @js.native
   sealed trait `1540`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1540`: `1540` = 1540.asInstanceOf[`1540`]
   
   @js.native
   sealed trait `1541`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1541`: `1541` = 1541.asInstanceOf[`1541`]
   
   @js.native
   sealed trait `1542`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1542`: `1542` = 1542.asInstanceOf[`1542`]
   
   @js.native
   sealed trait `1543`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1543`: `1543` = 1543.asInstanceOf[`1543`]
   
   @js.native
   sealed trait `1544`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1544`: `1544` = 1544.asInstanceOf[`1544`]
   
   @js.native
   sealed trait `1545`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1545`: `1545` = 1545.asInstanceOf[`1545`]
   
   @js.native
   sealed trait `1546`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1546`: `1546` = 1546.asInstanceOf[`1546`]
   
   @js.native
   sealed trait `1547`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1547`: `1547` = 1547.asInstanceOf[`1547`]
   
   @js.native
   sealed trait `1548`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1548`: `1548` = 1548.asInstanceOf[`1548`]
   
   @js.native
   sealed trait `1549`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1549`: `1549` = 1549.asInstanceOf[`1549`]
   
   @js.native
   sealed trait `1550`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1550`: `1550` = 1550.asInstanceOf[`1550`]
   
   @js.native
   sealed trait `1551`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1551`: `1551` = 1551.asInstanceOf[`1551`]
   
   @js.native
   sealed trait `1552`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1552`: `1552` = 1552.asInstanceOf[`1552`]
   
   @js.native
   sealed trait `1553`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1553`: `1553` = 1553.asInstanceOf[`1553`]
   
   @js.native
   sealed trait `1554`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1554`: `1554` = 1554.asInstanceOf[`1554`]
   
   @js.native
   sealed trait `1555`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1555`: `1555` = 1555.asInstanceOf[`1555`]
   
   @js.native
   sealed trait `1556`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1556`: `1556` = 1556.asInstanceOf[`1556`]
   
   @js.native
   sealed trait `1557`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1557`: `1557` = 1557.asInstanceOf[`1557`]
   
   @js.native
   sealed trait `1558`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1558`: `1558` = 1558.asInstanceOf[`1558`]
   
   @js.native
   sealed trait `1559`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1559`: `1559` = 1559.asInstanceOf[`1559`]
   
   @js.native
   sealed trait `1560`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1560`: `1560` = 1560.asInstanceOf[`1560`]
   
   @js.native
   sealed trait `1561`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1561`: `1561` = 1561.asInstanceOf[`1561`]
   
   @js.native
   sealed trait `1562`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1562`: `1562` = 1562.asInstanceOf[`1562`]
   
   @js.native
   sealed trait `1563`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1563`: `1563` = 1563.asInstanceOf[`1563`]
   
   @js.native
   sealed trait `1564`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1564`: `1564` = 1564.asInstanceOf[`1564`]
   
   @js.native
   sealed trait `1565`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `1565`: `1565` = 1565.asInstanceOf[`1565`]
   
   @js.native
   sealed trait `16`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.beans.PropertyAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.beans.MethodConcept.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.WindowAttribute.Constants
@@ -3486,7 +3784,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `16384`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.InvalidateStyle.Constants
        with typings.activexLibreoffice.com_.sun.star.security.CertificateValidity.Constants
        with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
@@ -3498,7 +3797,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `16777216`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with TransliterationModules
        with TransliterationModulesNew
   @scala.inline
@@ -3506,7 +3806,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `17`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.FontUnderline.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.KeyFunction.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
@@ -3548,14 +3849,16 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `175.000000`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.FontWeight.Constants
   @scala.inline
   def `175.000000`: `175.000000` = 175.000000.asInstanceOf[`175.000000`]
   
   @js.native
   sealed trait `18`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.FontUnderline.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.KeyFunction.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
@@ -3594,7 +3897,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `19`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.sheet.ConditionFormatOperator.Constants
@@ -3627,13 +3931,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `196608`
-    extends typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
   @scala.inline
   def `196608`: `196608` = 196608.asInstanceOf[`196608`]
   
   @js.native
   sealed trait `2`
-    extends AdjustmentType
+    extends StObject
+       with AdjustmentType
        with Alignment
        with AnimationEffect
        with AnimationSpeed
@@ -4118,7 +4424,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `20`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -4151,42 +4458,48 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `200`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
        with typings.activexLibreoffice.com_.sun.star.i18n.TransliterationModulesExtra.Constants
   @scala.inline
   def `200`: `200` = 200.asInstanceOf[`200`]
   
   @js.native
   sealed trait `200.000000`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.FontWeight.Constants
   @scala.inline
   def `200.000000`: `200.000000` = 200.000000.asInstanceOf[`200.000000`]
   
   @js.native
   sealed trait `2000`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
   def `2000`: `2000` = 2000.asInstanceOf[`2000`]
   
   @js.native
   sealed trait `2001`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
   def `2001`: `2001` = 2001.asInstanceOf[`2001`]
   
   @js.native
   sealed trait `2002`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
   def `2002`: `2002` = 2002.asInstanceOf[`2002`]
   
   @js.native
   sealed trait `2003`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
@@ -4194,7 +4507,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `2004`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
@@ -4202,7 +4516,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `2005`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
@@ -4210,7 +4525,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `2006`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
@@ -4218,51 +4534,59 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `2007`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `2007`: `2007` = 2007.asInstanceOf[`2007`]
   
   @js.native
   sealed trait `2008`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `2008`: `2008` = 2008.asInstanceOf[`2008`]
   
   @js.native
   sealed trait `2009`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
   @scala.inline
   def `2009`: `2009` = 2009.asInstanceOf[`2009`]
   
   @js.native
   sealed trait `201`
-    extends typings.activexLibreoffice.com_.sun.star.i18n.TransliterationModulesExtra.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.i18n.TransliterationModulesExtra.Constants
   @scala.inline
   def `201`: `201` = 201.asInstanceOf[`201`]
   
   @js.native
   sealed trait `2010`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
   @scala.inline
   def `2010`: `2010` = 2010.asInstanceOf[`2010`]
   
   @js.native
   sealed trait `2011`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
   @scala.inline
   def `2011`: `2011` = 2011.asInstanceOf[`2011`]
   
   @js.native
   sealed trait `202`
-    extends typings.activexLibreoffice.com_.sun.star.i18n.TransliterationModulesExtra.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.i18n.TransliterationModulesExtra.Constants
   @scala.inline
   def `202`: `202` = 202.asInstanceOf[`202`]
   
   @js.native
   sealed trait `2048`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
        with typings.activexLibreoffice.com_.sun.star.util.NumberFormat.Constants
        with typings.activexLibreoffice.com_.sun.star.util.SearchFlags.Constants
@@ -4275,25 +4599,29 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `207`
-    extends typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
   def `207`: `207` = 207.asInstanceOf[`207`]
   
   @js.native
   sealed trait `208`
-    extends typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
   def `208`: `208` = 208.asInstanceOf[`208`]
   
   @js.native
   sealed trait `209`
-    extends typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
   def `209`: `209` = 209.asInstanceOf[`209`]
   
   @js.native
   sealed trait `2097152`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
        with TransliterationModules
        with TransliterationModulesNew
@@ -4302,7 +4630,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `21`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.sheet.ConditionFormatOperator.Constants
@@ -4333,78 +4662,90 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `210`
-    extends typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.ui.dialogs.ExtendedFilePickerElementIds.Constants
   @scala.inline
   def `210`: `210` = 210.asInstanceOf[`210`]
   
   @js.native
   sealed trait `2100`
-    extends typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `2100`: `2100` = 2100.asInstanceOf[`2100`]
   
   @js.native
   sealed trait `2101`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `2101`: `2101` = 2101.asInstanceOf[`2101`]
   
   @js.native
   sealed trait `2102`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `2102`: `2102` = 2102.asInstanceOf[`2102`]
   
   @js.native
   sealed trait `2103`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `2103`: `2103` = 2103.asInstanceOf[`2103`]
   
   @js.native
   sealed trait `2104`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
        with typings.activexLibreoffice.com_.sun.star.rdf.URIs.Constants
   @scala.inline
   def `2104`: `2104` = 2104.asInstanceOf[`2104`]
   
   @js.native
   sealed trait `2105`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
   @scala.inline
   def `2105`: `2105` = 2105.asInstanceOf[`2105`]
   
   @js.native
   sealed trait `2106`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
   @scala.inline
   def `2106`: `2106` = 2106.asInstanceOf[`2106`]
   
   @js.native
   sealed trait `2107`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
   @scala.inline
   def `2107`: `2107` = 2107.asInstanceOf[`2107`]
   
   @js.native
   sealed trait `2108`
-    extends typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.script.vba.VBAEventId.Constants
   @scala.inline
   def `2108`: `2108` = 2108.asInstanceOf[`2108`]
   
   @js.native
   sealed trait `2147483647`
-    extends typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
        with typings.activexLibreoffice.com_.sun.star.sheet.FormulaMapGroup.Constants
   @scala.inline
   def `2147483647`: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
   @js.native
   sealed trait `22`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -4434,7 +4775,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `23`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.sheet.ConditionFormatOperator.Constants
@@ -4462,7 +4804,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `24`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -4490,7 +4833,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `25`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.text.BibliographyDataField.Constants
@@ -4516,7 +4860,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `255`
-    extends typings.activexLibreoffice.com_.sun.star.inspection.PropertyLineElement.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.inspection.PropertyLineElement.Constants
        with typings.activexLibreoffice.com_.sun.star.configuration.backend.SchemaAttribute.Constants
        with TransliterationModules
   @scala.inline
@@ -4524,7 +4869,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `256`
-    extends typings.activexLibreoffice.com_.sun.star.beans.PropertyAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.beans.PropertyAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.WindowAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
@@ -4545,25 +4891,29 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `257`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `257`: `257` = 257.asInstanceOf[`257`]
   
   @js.native
   sealed trait `258`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `258`: `258` = 258.asInstanceOf[`258`]
   
   @js.native
   sealed trait `259`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `259`: `259` = 259.asInstanceOf[`259`]
   
   @js.native
   sealed trait `26`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -4588,25 +4938,29 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `260`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `260`: `260` = 260.asInstanceOf[`260`]
   
   @js.native
   sealed trait `261`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `261`: `261` = 261.asInstanceOf[`261`]
   
   @js.native
   sealed trait `262`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `262`: `262` = 262.asInstanceOf[`262`]
   
   @js.native
   sealed trait `262144`
-    extends typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
        with typings.activexLibreoffice.com_.sun.star.i18n.KParseTokens.Constants
@@ -4617,25 +4971,29 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `263`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `263`: `263` = 263.asInstanceOf[`263`]
   
   @js.native
   sealed trait `264`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `264`: `264` = 264.asInstanceOf[`264`]
   
   @js.native
   sealed trait `265`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `265`: `265` = 265.asInstanceOf[`265`]
   
   @js.native
   sealed trait `268435456`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.i18n.KParseTokens.Constants
        with TransliterationModules
        with TransliterationModulesNew
@@ -4644,7 +5002,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `27`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.text.BibliographyDataField.Constants
@@ -4669,7 +5028,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `28`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -4694,7 +5054,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `29`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.text.BibliographyDataField.Constants
@@ -4718,7 +5079,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `3`
-    extends Alignment
+    extends StObject
+       with Alignment
        with AnimationEffect
        with Arrangement
        with Border
@@ -5044,7 +5406,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `30`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -5068,38 +5431,44 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `300`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
        with typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
   @scala.inline
   def `300`: `300` = 300.asInstanceOf[`300`]
   
   @js.native
   sealed trait `301`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
   @scala.inline
   def `301`: `301` = 301.asInstanceOf[`301`]
   
   @js.native
   sealed trait `302`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
   @scala.inline
   def `302`: `302` = 302.asInstanceOf[`302`]
   
   @js.native
   sealed trait `303`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
   @scala.inline
   def `303`: `303` = 303.asInstanceOf[`303`]
   
   @js.native
   sealed trait `304`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
   @scala.inline
   def `304`: `304` = 304.asInstanceOf[`304`]
   
   @js.native
   sealed trait `31`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionType.Constants
@@ -5119,7 +5488,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `32`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.beans.PropertyAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.beans.MethodConcept.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.WindowAttribute.Constants
@@ -5160,19 +5530,22 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `32512`
-    extends typings.activexLibreoffice.com_.sun.star.configuration.backend.NodeAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.configuration.backend.NodeAttribute.Constants
   @scala.inline
   def `32512`: `32512` = 32512.asInstanceOf[`32512`]
   
   @js.native
   sealed trait `32767`
-    extends typings.activexLibreoffice.com_.sun.star.table.BorderLineStyle.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.table.BorderLineStyle.Constants
   @scala.inline
   def `32767`: `32767` = 32767.asInstanceOf[`32767`]
   
   @js.native
   sealed trait `32768`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
        with typings.activexLibreoffice.com_.sun.star.i18n.KParseTokens.Constants
        with TransliterationModules
@@ -5182,13 +5555,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `327680`
-    extends typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
   @scala.inline
   def `327680`: `327680` = 327680.asInstanceOf[`327680`]
   
   @js.native
   sealed trait `33`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionType.Constants
@@ -5207,7 +5582,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `33554432`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with TransliterationModules
        with TransliterationModulesNew
   @scala.inline
@@ -5215,13 +5591,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `33639248`
-    extends typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
   @scala.inline
   def `33639248`: `33639248` = 33639248.asInstanceOf[`33639248`]
   
   @js.native
   sealed trait `34`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -5241,7 +5619,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `35`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionType.Constants
@@ -5260,7 +5639,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `36`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -5279,7 +5659,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `37`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionType.Constants
@@ -5297,7 +5678,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `38`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -5316,13 +5698,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `3840`
-    extends typings.activexLibreoffice.com_.sun.star.awt.KeyGroup.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.KeyGroup.Constants
   @scala.inline
   def `3840`: `3840` = 3840.asInstanceOf[`3840`]
   
   @js.native
   sealed trait `39`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionType.Constants
@@ -5340,13 +5724,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `393216`
-    extends typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
   @scala.inline
   def `393216`: `393216` = 393216.asInstanceOf[`393216`]
   
   @js.native
   sealed trait `4`
-    extends Alignment
+    extends StObject
+       with Alignment
        with AnimationEffect
        with BreakType
        with CellDeleteMode
@@ -5624,7 +6010,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `40`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionType.Constants
@@ -5642,13 +6029,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `400`
-    extends typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
   @scala.inline
   def `400`: `400` = 400.asInstanceOf[`400`]
   
   @js.native
   sealed trait `4096`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontEmphasisMark.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontEmphasisMark.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.Command.Constants
        with typings.activexLibreoffice.com_.sun.star.security.CertificateValidity.Constants
@@ -5663,7 +6052,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `41`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionType.Constants
@@ -5681,7 +6071,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `4194304`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with TransliterationModules
        with TransliterationModulesNew
   @scala.inline
@@ -5689,7 +6080,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `42`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -5707,7 +6099,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `43`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionType.Constants
@@ -5724,7 +6117,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `44`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
@@ -5740,7 +6134,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `45`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
@@ -5755,7 +6150,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `46`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
@@ -5771,7 +6167,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `47`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
@@ -5786,7 +6183,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `48`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
@@ -5801,7 +6199,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `49`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
@@ -5816,7 +6215,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `5`
-    extends Alignment
+    extends StObject
+       with Alignment
        with AnimationEffect
        with BreakType
        with CellHoriJustify
@@ -5985,7 +6385,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `50`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
@@ -5999,21 +6400,24 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `50.000000`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.FontWeight.Constants
   @scala.inline
   def `50.000000`: `50.000000` = 50.000000.asInstanceOf[`50.000000`]
   
   @js.native
   sealed trait `500`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
        with typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
   @scala.inline
   def `500`: `500` = 500.asInstanceOf[`500`]
   
   @js.native
   sealed trait `51`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.drawing.ShadingPattern.Constants
@@ -6026,7 +6430,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `512`
-    extends typings.activexLibreoffice.com_.sun.star.awt.WindowAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.WindowAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.KeyGroup.Constants
@@ -6044,49 +6449,57 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `513`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `513`: `513` = 513.asInstanceOf[`513`]
   
   @js.native
   sealed trait `514`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `514`: `514` = 514.asInstanceOf[`514`]
   
   @js.native
   sealed trait `515`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `515`: `515` = 515.asInstanceOf[`515`]
   
   @js.native
   sealed trait `516`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `516`: `516` = 516.asInstanceOf[`516`]
   
   @js.native
   sealed trait `517`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `517`: `517` = 517.asInstanceOf[`517`]
   
   @js.native
   sealed trait `518`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `518`: `518` = 518.asInstanceOf[`518`]
   
   @js.native
   sealed trait `519`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `519`: `519` = 519.asInstanceOf[`519`]
   
   @js.native
   sealed trait `52`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
@@ -6100,37 +6513,43 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `520`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `520`: `520` = 520.asInstanceOf[`520`]
   
   @js.native
   sealed trait `521`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `521`: `521` = 521.asInstanceOf[`521`]
   
   @js.native
   sealed trait `522`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `522`: `522` = 522.asInstanceOf[`522`]
   
   @js.native
   sealed trait `523`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `523`: `523` = 523.asInstanceOf[`523`]
   
   @js.native
   sealed trait `524`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `524`: `524` = 524.asInstanceOf[`524`]
   
   @js.native
   sealed trait `524288`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
        with typings.activexLibreoffice.com_.sun.star.i18n.KParseTokens.Constants
        with TransliterationModules
@@ -6140,37 +6559,43 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `525`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `525`: `525` = 525.asInstanceOf[`525`]
   
   @js.native
   sealed trait `526`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `526`: `526` = 526.asInstanceOf[`526`]
   
   @js.native
   sealed trait `527`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `527`: `527` = 527.asInstanceOf[`527`]
   
   @js.native
   sealed trait `528`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `528`: `528` = 528.asInstanceOf[`528`]
   
   @js.native
   sealed trait `529`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `529`: `529` = 529.asInstanceOf[`529`]
   
   @js.native
   sealed trait `53`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.drawing.ShadingPattern.Constants
@@ -6183,49 +6608,57 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `530`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `530`: `530` = 530.asInstanceOf[`530`]
   
   @js.native
   sealed trait `531`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `531`: `531` = 531.asInstanceOf[`531`]
   
   @js.native
   sealed trait `532`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `532`: `532` = 532.asInstanceOf[`532`]
   
   @js.native
   sealed trait `533`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `533`: `533` = 533.asInstanceOf[`533`]
   
   @js.native
   sealed trait `534`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `534`: `534` = 534.asInstanceOf[`534`]
   
   @js.native
   sealed trait `535`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `535`: `535` = 535.asInstanceOf[`535`]
   
   @js.native
   sealed trait `536`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `536`: `536` = 536.asInstanceOf[`536`]
   
   @js.native
   sealed trait `536870912`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.i18n.KParseTokens.Constants
        with TransliterationModules
        with TransliterationModulesNew
@@ -6234,13 +6667,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `537`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `537`: `537` = 537.asInstanceOf[`537`]
   
   @js.native
   sealed trait `54`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
@@ -6254,7 +6689,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `55`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.style.NumberingType.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
@@ -6269,13 +6705,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `550`
-    extends typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.sdb.ErrorCondition.Constants
   @scala.inline
   def `550`: `550` = 550.asInstanceOf[`550`]
   
   @js.native
   sealed trait `56`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.drawing.ShadingPattern.Constants
@@ -6288,7 +6726,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `57`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.drawing.ShadingPattern.Constants
@@ -6299,7 +6738,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `58`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.drawing.ShadingPattern.Constants
@@ -6310,7 +6750,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `59`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.drawing.ShadingPattern.Constants
@@ -6322,7 +6763,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `6`
-    extends Alignment
+    extends StObject
+       with Alignment
        with AnimationEffect
        with BreakType
        with ClickAction
@@ -6464,7 +6906,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `60`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.drawing.ShadingPattern.Constants
@@ -6476,14 +6919,16 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `60.000000`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.FontWeight.Constants
   @scala.inline
   def `60.000000`: `60.000000` = 60.000000.asInstanceOf[`60.000000`]
   
   @js.native
   sealed trait `61`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.drawing.ShadingPattern.Constants
@@ -6495,7 +6940,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `62`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
@@ -6506,7 +6952,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `63`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
@@ -6517,7 +6964,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `64`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.beans.PropertyAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.WindowAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
@@ -6546,7 +6994,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `65`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
@@ -6557,13 +7006,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `65535`
-    extends typings.activexLibreoffice.com_.sun.star.drawing.ShadingPattern.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.drawing.ShadingPattern.Constants
   @scala.inline
   def `65535`: `65535` = 65535.asInstanceOf[`65535`]
   
   @js.native
   sealed trait `65536`
-    extends typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.MessageBoxButtons.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.security.CertificateValidity.Constants
        with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
@@ -6577,7 +7028,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `66`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
@@ -6587,7 +7039,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `67`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
@@ -6597,7 +7050,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `67108864`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with TransliterationModules
        with TransliterationModulesNew
   @scala.inline
@@ -6605,13 +7059,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `67324752`
-    extends typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.packages.zip.ZipConstants.Constants
   @scala.inline
   def `67324752`: `67324752` = 67324752.asInstanceOf[`67324752`]
   
   @js.native
   sealed trait `68`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
@@ -6621,7 +7077,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `69`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
@@ -6631,7 +7088,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `7`
-    extends Alignment
+    extends StObject
+       with Alignment
        with AnimationEffect
        with ClickAction
        with ConditionOperator
@@ -6759,7 +7217,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `70`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
@@ -6769,13 +7228,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `700`
-    extends typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
   @scala.inline
   def `700`: `700` = 700.asInstanceOf[`700`]
   
   @js.native
   sealed trait `71`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.awt.SystemPointer.Constants
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
@@ -6785,7 +7246,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `72`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -6794,7 +7256,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `73`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -6803,7 +7266,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `74`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -6812,7 +7276,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `75`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -6821,14 +7286,16 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `75.000000`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.FontWeight.Constants
   @scala.inline
   def `75.000000`: `75.000000` = 75.000000.asInstanceOf[`75.000000`]
   
   @js.native
   sealed trait `76`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -6837,20 +7304,23 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `768`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.KeyGroup.Constants
   @scala.inline
   def `768`: `768` = 768.asInstanceOf[`768`]
   
   @js.native
   sealed trait `769`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `769`: `769` = 769.asInstanceOf[`769`]
   
   @js.native
   sealed trait `77`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -6859,67 +7329,78 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `770`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `770`: `770` = 770.asInstanceOf[`770`]
   
   @js.native
   sealed trait `771`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `771`: `771` = 771.asInstanceOf[`771`]
   
   @js.native
   sealed trait `772`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `772`: `772` = 772.asInstanceOf[`772`]
   
   @js.native
   sealed trait `773`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `773`: `773` = 773.asInstanceOf[`773`]
   
   @js.native
   sealed trait `774`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `774`: `774` = 774.asInstanceOf[`774`]
   
   @js.native
   sealed trait `775`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `775`: `775` = 775.asInstanceOf[`775`]
   
   @js.native
   sealed trait `776`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `776`: `776` = 776.asInstanceOf[`776`]
   
   @js.native
   sealed trait `777`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `777`: `777` = 777.asInstanceOf[`777`]
   
   @js.native
   sealed trait `778`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `778`: `778` = 778.asInstanceOf[`778`]
   
   @js.native
   sealed trait `779`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `779`: `779` = 779.asInstanceOf[`779`]
   
   @js.native
   sealed trait `78`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -6928,67 +7409,78 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `780`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `780`: `780` = 780.asInstanceOf[`780`]
   
   @js.native
   sealed trait `781`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `781`: `781` = 781.asInstanceOf[`781`]
   
   @js.native
   sealed trait `782`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `782`: `782` = 782.asInstanceOf[`782`]
   
   @js.native
   sealed trait `783`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `783`: `783` = 783.asInstanceOf[`783`]
   
   @js.native
   sealed trait `784`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `784`: `784` = 784.asInstanceOf[`784`]
   
   @js.native
   sealed trait `785`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `785`: `785` = 785.asInstanceOf[`785`]
   
   @js.native
   sealed trait `786`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `786`: `786` = 786.asInstanceOf[`786`]
   
   @js.native
   sealed trait `787`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `787`: `787` = 787.asInstanceOf[`787`]
   
   @js.native
   sealed trait `788`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `788`: `788` = 788.asInstanceOf[`788`]
   
   @js.native
   sealed trait `789`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `789`: `789` = 789.asInstanceOf[`789`]
   
   @js.native
   sealed trait `79`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -6997,31 +7489,36 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `790`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `790`: `790` = 790.asInstanceOf[`790`]
   
   @js.native
   sealed trait `791`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `791`: `791` = 791.asInstanceOf[`791`]
   
   @js.native
   sealed trait `792`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `792`: `792` = 792.asInstanceOf[`792`]
   
   @js.native
   sealed trait `793`
-    extends typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.Key.Constants
   @scala.inline
   def `793`: `793` = 793.asInstanceOf[`793`]
   
   @js.native
   sealed trait `8`
-    extends Alignment
+    extends StObject
+       with Alignment
        with AnimationEffect
        with ClickAction
        with ConditionOperator
@@ -7167,7 +7664,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `80`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -7176,13 +7674,15 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `800`
-    extends typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
   @scala.inline
   def `800`: `800` = 800.asInstanceOf[`800`]
   
   @js.native
   sealed trait `81`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -7191,7 +7691,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `8192`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontEmphasisMark.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontEmphasisMark.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with typings.activexLibreoffice.com_.sun.star.security.CertificateValidity.Constants
        with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
@@ -7203,7 +7704,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `82`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -7212,7 +7714,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `83`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -7221,7 +7724,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `8388608`
-    extends typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.VclWindowPeerAttribute.Constants
        with TransliterationModules
        with TransliterationModulesNew
   @scala.inline
@@ -7229,7 +7733,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `84`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -7238,7 +7743,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `85`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleRole.Constants
        with UnicodeScript
@@ -7247,7 +7753,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `86`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with UnicodeScript
   @scala.inline
@@ -7255,7 +7762,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `87`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with UnicodeScript
   @scala.inline
@@ -7263,21 +7771,24 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `88`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `88`: `88` = 88.asInstanceOf[`88`]
   
   @js.native
   sealed trait `89`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `89`: `89` = 89.asInstanceOf[`89`]
   
   @js.native
   sealed trait `9`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with ClickAction
        with ConditionOperator
        with typings.activexLibreoffice.com_.sun.star.sdb.SQLFilterOperator.Constants
@@ -7374,27 +7885,31 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `90`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `90`: `90` = 90.asInstanceOf[`90`]
   
   @js.native
   sealed trait `90.000000`
-    extends typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.awt.FontWidth.Constants
        with typings.activexLibreoffice.com_.sun.star.awt.FontWeight.Constants
   @scala.inline
   def `90.000000`: `90.000000` = 90.000000.asInstanceOf[`90.000000`]
   
   @js.native
   sealed trait `900`
-    extends typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.logging.LogLevel.Constants
   @scala.inline
   def `900`: `900` = 900.asInstanceOf[`900`]
   
   @js.native
   sealed trait `91`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
@@ -7402,7 +7917,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `92`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
@@ -7410,7 +7926,8 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `93`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
        with typings.activexLibreoffice.com_.sun.star.sdbc.DataType.Constants
   @scala.inline
@@ -7418,61 +7935,70 @@ object activexLibreofficeNumbers {
   
   @js.native
   sealed trait `94`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `94`: `94` = 94.asInstanceOf[`94`]
   
   @js.native
   sealed trait `95`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `95`: `95` = 95.asInstanceOf[`95`]
   
   @js.native
   sealed trait `96`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `96`: `96` = 96.asInstanceOf[`96`]
   
   @js.native
   sealed trait `97`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `97`: `97` = 97.asInstanceOf[`97`]
   
   @js.native
   sealed trait `98`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `98`: `98` = 98.asInstanceOf[`98`]
   
   @js.native
   sealed trait `99`
-    extends AnimationEffect
+    extends StObject
+       with AnimationEffect
        with typings.activexLibreoffice.com_.sun.star.animations.TransitionSubType.Constants
   @scala.inline
   def `99`: `99` = 99.asInstanceOf[`99`]
   
   @js.native
   sealed trait _17179869184
-    extends typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
   @scala.inline
   def _17179869184: _17179869184 = 17179869184.0.asInstanceOf[_17179869184]
   
   @js.native
   sealed trait _4294967296
-    extends typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
   @scala.inline
   def _4294967296: _4294967296 = 4294967296.0.asInstanceOf[_4294967296]
   
   @js.native
   sealed trait _8589934592
-    extends typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
+    extends StObject
+       with typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
   @scala.inline
   def _8589934592: _8589934592 = 8589934592.0.asInstanceOf[_8589934592]
 }

@@ -11,8 +11,8 @@ Get an array of all files in a directory and subdirectories.
 | Full name          | recursive-readdir |
 | Keywords           | directory, lister |
 | # releases         | 1 |
-| # dependents       | 1386 |
-| # downloads        | 167938776 |
+| # dependents       | 1431 |
+| # downloads        | 205584844 |
 | # stars            | 34 |
 
 ## Links

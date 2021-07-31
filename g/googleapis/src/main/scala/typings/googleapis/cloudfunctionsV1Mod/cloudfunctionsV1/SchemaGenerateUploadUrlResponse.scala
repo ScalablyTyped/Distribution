@@ -2,13 +2,11 @@ package typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of `GenerateSourceUploadUrl` method.
   */
-@js.native
 trait SchemaGenerateUploadUrlResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaGenerateUploadUrlResponse extends StObject {
     * function source code upload. The uploaded file should be a zip archive
     * which contains a function.
     */
-  var uploadUrl: js.UndefOr[String] = js.native
+  var uploadUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaGenerateUploadUrlResponse {
   

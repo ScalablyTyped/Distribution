@@ -2,20 +2,18 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a homogeneous matrix by four homogeneous lines. */
-@js.native
 trait HomogenMatrix4 extends StObject {
   
-  var Line1: HomogenMatrixLine4 = js.native
+  var Line1: HomogenMatrixLine4
   
-  var Line2: HomogenMatrixLine4 = js.native
+  var Line2: HomogenMatrixLine4
   
-  var Line3: HomogenMatrixLine4 = js.native
+  var Line3: HomogenMatrixLine4
   
-  var Line4: HomogenMatrixLine4 = js.native
+  var Line4: HomogenMatrixLine4
 }
 object HomogenMatrix4 {
   

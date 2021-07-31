@@ -3,17 +3,15 @@ package typings.winrt.Windows.Globalization
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IApplicationLanguagesStatics extends StObject {
   
-  var languages: IVectorView[String] = js.native
+  var languages: IVectorView[String]
   
-  var manifestLanguages: IVectorView[String] = js.native
+  var manifestLanguages: IVectorView[String]
   
-  var primaryLanguageOverride: String = js.native
+  var primaryLanguageOverride: String
 }
 object IApplicationLanguagesStatics {
   

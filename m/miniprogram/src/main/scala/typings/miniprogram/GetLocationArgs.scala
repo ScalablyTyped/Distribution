@@ -3,22 +3,22 @@ package typings.miniprogram
 import typings.miniprogram.anon.Accuracy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetLocationArgs extends AsyncCallback[Accuracy] {
+trait GetLocationArgs
+  extends StObject
+     with AsyncCallback[Accuracy] {
   
   /**
     * longitude and latitude location cache expiry time in seconds.
     * Default is 30s. Use of cache can speed up location process. Re-location is done upon cache expiry.
     */
-  var catchTimeout: js.UndefOr[Double] = js.native
+  var catchTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * 0: default, get the longitude and latitude.
     */
-  var `type`: js.UndefOr[Double] = js.native
+  var `type`: js.UndefOr[Double] = js.undefined
 }
 object GetLocationArgs {
   

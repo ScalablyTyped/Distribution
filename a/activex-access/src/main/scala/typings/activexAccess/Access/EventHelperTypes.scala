@@ -9,35 +9,33 @@ import typings.activexAccess.activexAccessStrings.flags
 import typings.activexAccess.activexAccessStrings.pDisp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EventHelperTypes {
   
   type WebBrowserControlBeforeNavigate2ArgNames = js.Tuple7[pDisp, URL, flags, TargetFrameName, PostData, Headers, Cancel]
   
-  @js.native
   trait WebBrowserControlBeforeNavigate2Parameter extends StObject {
     
-    var Cancel: Boolean = js.native
+    var Cancel: Boolean
     
-    val Headers: js.Any = js.native
+    val Headers: js.Any
     
-    val PostData: js.Any = js.native
+    val PostData: js.Any
     
-    val TargetFrameName: String | Null = js.native
+    val TargetFrameName: String | Null
     
-    val URL: String = js.native
+    val URL: String
     
-    val flags: Double = js.native
+    val flags: Double
     
-    val pDisp: js.Any = js.native
+    val pDisp: js.Any
   }
   object WebBrowserControlBeforeNavigate2Parameter {
     
     @scala.inline
     def apply(Cancel: Boolean, Headers: js.Any, PostData: js.Any, URL: String, flags: Double, pDisp: js.Any): WebBrowserControlBeforeNavigate2Parameter = {
-      val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any], TargetFrameName = null)
       __obj.asInstanceOf[WebBrowserControlBeforeNavigate2Parameter]
     }
     

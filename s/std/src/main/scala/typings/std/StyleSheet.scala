@@ -2,32 +2,30 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A single style sheet. CSS style sheets will further implement the more specialized CSSStyleSheet interface. */
-@js.native
 trait StyleSheet extends StObject {
   
-  var disabled: scala.Boolean = js.native
+  var disabled: scala.Boolean
   
-  val href: java.lang.String | Null = js.native
+  val href: java.lang.String | Null
   
-  val media: MediaList = js.native
+  val media: MediaList
   
-  val ownerNode: Element | ProcessingInstruction | Null = js.native
+  val ownerNode: Element | ProcessingInstruction | Null
   
-  val parentStyleSheet: CSSStyleSheet | Null = js.native
+  val parentStyleSheet: CSSStyleSheet | Null
   
-  val title: java.lang.String | Null = js.native
+  val title: java.lang.String | Null
   
-  val `type`: java.lang.String = js.native
+  val `type`: java.lang.String
 }
 object StyleSheet {
   
   @scala.inline
   def apply(disabled: scala.Boolean, media: MediaList, `type`: java.lang.String): StyleSheet = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], href = null, ownerNode = null, parentStyleSheet = null, title = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleSheet]
   }

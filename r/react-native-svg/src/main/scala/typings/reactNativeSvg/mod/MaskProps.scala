@@ -2,27 +2,27 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MaskProps extends CommonPathProps {
+trait MaskProps
+  extends StObject
+     with CommonPathProps {
   
-  var height: js.UndefOr[NumberProp] = js.native
+  var height: js.UndefOr[NumberProp] = js.undefined
   
-  var maskContentUnits: js.UndefOr[TMaskUnits] = js.native
+  var maskContentUnits: js.UndefOr[TMaskUnits] = js.undefined
   
-  var maskTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.native
+  var maskTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined
   
-  var maskUnits: js.UndefOr[TMaskUnits] = js.native
+  var maskUnits: js.UndefOr[TMaskUnits] = js.undefined
   
-  var width: js.UndefOr[NumberProp] = js.native
+  var width: js.UndefOr[NumberProp] = js.undefined
   
   @JSName("x")
-  var x_MaskProps: js.UndefOr[NumberProp] = js.native
+  var x_MaskProps: js.UndefOr[NumberProp] = js.undefined
   
   @JSName("y")
-  var y_MaskProps: js.UndefOr[NumberProp] = js.native
+  var y_MaskProps: js.UndefOr[NumberProp] = js.undefined
 }
 object MaskProps {
   

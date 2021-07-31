@@ -10,9 +10,9 @@ Node.js test runner that lets you develop with confidence.
 | ------------------ | :-------------: |
 | Full name          | ava |
 | Keywords           | 🦄, test, runner, testing, ava, concurrent, parallel, fast, tdd, cli-app, cli, jest, mocha, tape, tap, qunit, jasmine, babel, assert, assertion, promise, promises, async, function, await, generator, generators, yield, observable, observables, unit, snapshot, expect, typescript |
-| # releases         | 41 |
-| # dependents       | 305 |
-| # downloads        | 9696029 |
+| # releases         | 42 |
+| # dependents       | 314 |
+| # downloads        | 10164964 |
 | # stars            | 102 |
 
 ## Links

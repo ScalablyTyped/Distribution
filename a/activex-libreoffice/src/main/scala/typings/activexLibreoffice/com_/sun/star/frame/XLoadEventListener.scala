@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used to receive callbacks from an asynchronous frame loader.
   * @see XFrameLoader
   */
-@js.native
-trait XLoadEventListener extends XEventListener {
+trait XLoadEventListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called when a frame load is canceled or failed.
     * @param Loader the source of this event
     */
-  def loadCancelled(Loader: XFrameLoader): Unit = js.native
+  def loadCancelled(Loader: XFrameLoader): Unit
   
   /**
     * is called when a new component is loaded into a frame successfully.
     * @param Loader the source of this event
     */
-  def loadFinished(Loader: XFrameLoader): Unit = js.native
+  def loadFinished(Loader: XFrameLoader): Unit
 }
 object XLoadEventListener {
   

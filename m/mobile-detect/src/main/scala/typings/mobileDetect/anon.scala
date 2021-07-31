@@ -5,19 +5,17 @@ import typings.mobileDetect.mod.MobileDetectRules
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FullPattern extends StObject {
     
-    var fullPattern: RegExp = js.native
+    var fullPattern: RegExp
     
-    var shortPattern: RegExp = js.native
+    var shortPattern: RegExp
     
-    var tabletPattern: RegExp = js.native
+    var tabletPattern: RegExp
   }
   object FullPattern {
     
@@ -41,20 +39,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Oss extends StObject {
     
-    var oss: MobileDetectRules = js.native
+    var oss: MobileDetectRules
     
-    var phones: MobileDetectRules = js.native
+    var phones: MobileDetectRules
     
-    var props: MobileDetectComplexRules = js.native
+    var props: MobileDetectComplexRules
     
-    var tablets: MobileDetectRules = js.native
+    var tablets: MobileDetectRules
     
-    var uas: MobileDetectRules = js.native
+    var uas: MobileDetectRules
     
-    var utils: MobileDetectRules = js.native
+    var utils: MobileDetectRules
   }
   object Oss {
     

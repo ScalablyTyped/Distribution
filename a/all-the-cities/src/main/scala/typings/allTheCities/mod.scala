@@ -22,7 +22,6 @@ import typings.allTheCities.allTheCitiesStrings.STLMT
 import typings.allTheCities.anon.Coordinates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -31,24 +30,23 @@ object mod extends Shortcut {
   @js.native
   val ^ : js.Array[AllTheCitiesCity] = js.native
   
-  @js.native
   trait AllTheCitiesCity extends StObject {
     
-    var adminCode: String = js.native
+    var adminCode: String
     
-    var altName: String = js.native
+    var altName: String
     
-    var cityId: Double = js.native
+    var cityId: Double
     
-    var country: String = js.native
+    var country: String
     
-    var featureCode: PPL | PPLA | PPLC | PPLA2 | PPLW | PPLA3 | PPLX | PPLA4 | PPLL | PPLS | PPLQ | PPLF | PPLG | PPLH | PPLCH | PPLA5 | PPLR | STLMT = js.native
+    var featureCode: PPL | PPLA | PPLC | PPLA2 | PPLW | PPLA3 | PPLX | PPLA4 | PPLL | PPLS | PPLQ | PPLF | PPLG | PPLH | PPLCH | PPLA5 | PPLR | STLMT
     
-    var loc: Coordinates = js.native
+    var loc: Coordinates
     
-    var name: String = js.native
+    var name: String
     
-    var population: Double = js.native
+    var population: Double
   }
   object AllTheCitiesCity {
     

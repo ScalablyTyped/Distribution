@@ -5,15 +5,13 @@ import typings.grommet.grommetStrings.strong
 import typings.grommet.grommetStrings.weak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorOpacity extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.native
+  var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.undefined
 }
 object ColorOpacity {
   

@@ -3,7 +3,6 @@ package typings.ethereumjsVm
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bloomMod {
@@ -13,37 +12,68 @@ object bloomMod {
   /**
     * Represents a Bloom filter.
     */
-  class default () extends Bloom {
+  class default ()
+    extends StObject
+       with Bloom {
     def this(bitvector: Buffer) = this()
-  }
-  
-  @js.native
-  trait Bloom extends StObject {
     
     /**
       * Adds an element to a bit vector of a 64 byte bloom filter.
       * @param e - The element to add
       */
-    def add(e: Buffer): Unit = js.native
+    /* CompleteClass */
+    override def add(e: Buffer): Unit = js.native
     
+    /* CompleteClass */
     var bitvector: Buffer = js.native
     
     /**
       * Checks if an element is in the bloom.
       * @param e - The element to check
       */
-    def check(e: Buffer): Boolean = js.native
+    /* CompleteClass */
+    override def check(e: Buffer): Boolean = js.native
     
     /**
       * Checks if multiple topics are in a bloom.
       * @returns `true` if every topic is in the bloom
       */
-    def multiCheck(topics: js.Array[Buffer]): Boolean = js.native
+    /* CompleteClass */
+    override def multiCheck(topics: js.Array[Buffer]): Boolean = js.native
     
     /**
       * Bitwise or blooms together.
       */
-    def or(bloom: Bloom): Unit = js.native
+    /* CompleteClass */
+    override def or(bloom: Bloom): Unit = js.native
+  }
+  
+  trait Bloom extends StObject {
+    
+    /**
+      * Adds an element to a bit vector of a 64 byte bloom filter.
+      * @param e - The element to add
+      */
+    def add(e: Buffer): Unit
+    
+    var bitvector: Buffer
+    
+    /**
+      * Checks if an element is in the bloom.
+      * @param e - The element to check
+      */
+    def check(e: Buffer): Boolean
+    
+    /**
+      * Checks if multiple topics are in a bloom.
+      * @returns `true` if every topic is in the bloom
+      */
+    def multiCheck(topics: js.Array[Buffer]): Boolean
+    
+    /**
+      * Bitwise or blooms together.
+      */
+    def or(bloom: Bloom): Unit
   }
   object Bloom {
     

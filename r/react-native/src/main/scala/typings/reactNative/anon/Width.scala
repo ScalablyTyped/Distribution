@@ -2,21 +2,19 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Width extends StObject {
   
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Width {
   

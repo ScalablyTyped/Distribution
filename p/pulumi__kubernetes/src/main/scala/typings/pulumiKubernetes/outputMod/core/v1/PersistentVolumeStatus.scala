@@ -2,29 +2,27 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PersistentVolumeStatus is the current status of a persistent volume.
   */
-@js.native
 trait PersistentVolumeStatus extends StObject {
   
   /**
     * A human-readable message indicating details about why the volume is in this state.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Phase indicates if a volume is available, bound to a claim, or released by a claim. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#phase
     */
-  var phase: String = js.native
+  var phase: String
   
   /**
     * Reason is a brief CamelCase string that describes any failure and is meant for machine parsing and tidy display in the CLI.
     */
-  var reason: String = js.native
+  var reason: String
 }
 object PersistentVolumeStatus {
   

@@ -10,9 +10,9 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/color-util |
 | Keywords           | util, antv, g |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 388364 |
+| # releases         | 8 |
+| # dependents       | 4 |
+| # downloads        | 678596 |
 | # stars            | 0 |
 
 ## Links

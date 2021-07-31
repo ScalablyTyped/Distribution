@@ -2,15 +2,13 @@ package typings.msRest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlParameterValue extends StObject {
   
-  var skipUrlEncoding: Boolean = js.native
+  var skipUrlEncoding: Boolean
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object UrlParameterValue {
   

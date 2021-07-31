@@ -3,15 +3,13 @@ package typings.reactNativeMaterialUi.anon
 import typings.reactNativeMaterialUi.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var container: js.UndefOr[ViewStyle] = js.native
+  var container: js.UndefOr[ViewStyle] = js.undefined
   
-  var content: js.UndefOr[ViewStyle] = js.native
+  var content: js.UndefOr[ViewStyle] = js.undefined
 }
 object Content {
   

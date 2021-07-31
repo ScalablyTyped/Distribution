@@ -3,7 +3,6 @@ package typings.mondaySdkJs
 import typings.mondaySdkJs.mod.SubscribableEvents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mondaySdkJsStrings {
@@ -19,7 +18,9 @@ object mondaySdkJsStrings {
   def confirm: confirm = "confirm".asInstanceOf[confirm]
   
   @js.native
-  sealed trait context extends SubscribableEvents
+  sealed trait context
+    extends StObject
+       with SubscribableEvents
   @scala.inline
   def context: context = "context".asInstanceOf[context]
   
@@ -29,7 +30,9 @@ object mondaySdkJsStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait events extends SubscribableEvents
+  sealed trait events
+    extends StObject
+       with SubscribableEvents
   @scala.inline
   def events: events = "events".asInstanceOf[events]
   
@@ -39,7 +42,9 @@ object mondaySdkJsStrings {
   def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait itemIds extends SubscribableEvents
+  sealed trait itemIds
+    extends StObject
+       with SubscribableEvents
   @scala.inline
   def itemIds: itemIds = "itemIds".asInstanceOf[itemIds]
   
@@ -59,7 +64,9 @@ object mondaySdkJsStrings {
   def sessionToken: sessionToken = "sessionToken".asInstanceOf[sessionToken]
   
   @js.native
-  sealed trait settings extends SubscribableEvents
+  sealed trait settings
+    extends StObject
+       with SubscribableEvents
   @scala.inline
   def settings: settings = "settings".asInstanceOf[settings]
   

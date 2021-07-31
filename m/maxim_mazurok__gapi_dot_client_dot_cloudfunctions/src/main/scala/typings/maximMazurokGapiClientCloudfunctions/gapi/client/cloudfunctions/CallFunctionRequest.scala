@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallFunctionRequest extends StObject {
   
   /** Required. Input to be passed to the function. */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
 }
 object CallFunctionRequest {
   

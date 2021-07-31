@@ -2,40 +2,38 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The definition of a property within an object.
   */
-@js.native
 trait SchemaPropertyDefinition extends StObject {
   
-  var booleanPropertyOptions: js.UndefOr[SchemaBooleanPropertyOptions] = js.native
+  var booleanPropertyOptions: js.UndefOr[SchemaBooleanPropertyOptions] = js.undefined
   
-  var datePropertyOptions: js.UndefOr[SchemaDatePropertyOptions] = js.native
+  var datePropertyOptions: js.UndefOr[SchemaDatePropertyOptions] = js.undefined
   
   /**
     * Options that determine how the property is displayed in the Cloud Search
     * results page if it is specified to be displayed in the object&#39;s
     * display options .
     */
-  var displayOptions: js.UndefOr[SchemaPropertyDisplayOptions] = js.native
+  var displayOptions: js.UndefOr[SchemaPropertyDisplayOptions] = js.undefined
   
-  var doublePropertyOptions: js.UndefOr[SchemaDoublePropertyOptions] = js.native
+  var doublePropertyOptions: js.UndefOr[SchemaDoublePropertyOptions] = js.undefined
   
-  var enumPropertyOptions: js.UndefOr[SchemaEnumPropertyOptions] = js.native
+  var enumPropertyOptions: js.UndefOr[SchemaEnumPropertyOptions] = js.undefined
   
-  var htmlPropertyOptions: js.UndefOr[SchemaHtmlPropertyOptions] = js.native
+  var htmlPropertyOptions: js.UndefOr[SchemaHtmlPropertyOptions] = js.undefined
   
-  var integerPropertyOptions: js.UndefOr[SchemaIntegerPropertyOptions] = js.native
+  var integerPropertyOptions: js.UndefOr[SchemaIntegerPropertyOptions] = js.undefined
   
   /**
     * Indicates that the property can be used for generating facets. Cannot be
     * true for properties whose type is object. IsReturnable must be true to
     * set this option. Only supported for Boolean, Enum, and Text properties.
     */
-  var isFacetable: js.UndefOr[Boolean] = js.native
+  var isFacetable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that multiple values are allowed for the property. For example,
@@ -44,7 +42,7 @@ trait SchemaPropertyDefinition extends StObject {
     * properties that contain more than one value will cause the indexing
     * request for that item to be rejected.
     */
-  var isRepeatable: js.UndefOr[Boolean] = js.native
+  var isRepeatable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that the property identifies data that should be returned in
@@ -55,7 +53,7 @@ trait SchemaPropertyDefinition extends StObject {
     * here only if the field is needed for search results. Cannot be true for
     * properties whose type is an object.
     */
-  var isReturnable: js.UndefOr[Boolean] = js.native
+  var isReturnable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that the property can be used for sorting. Cannot be true for
@@ -64,7 +62,7 @@ trait SchemaPropertyDefinition extends StObject {
     * option. Only supported for Boolean, Date, Double, Integer, and Timestamp
     * properties.
     */
-  var isSortable: js.UndefOr[Boolean] = js.native
+  var isSortable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the property. Item indexing requests sent to the Indexing API
@@ -77,13 +75,13 @@ trait SchemaPropertyDefinition extends StObject {
     * contain letters (A-Z, a-z) or numbers (0-9). The maximum length is 256
     * characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var objectPropertyOptions: js.UndefOr[SchemaObjectPropertyOptions] = js.native
+  var objectPropertyOptions: js.UndefOr[SchemaObjectPropertyOptions] = js.undefined
   
-  var textPropertyOptions: js.UndefOr[SchemaTextPropertyOptions] = js.native
+  var textPropertyOptions: js.UndefOr[SchemaTextPropertyOptions] = js.undefined
   
-  var timestampPropertyOptions: js.UndefOr[SchemaTimestampPropertyOptions] = js.native
+  var timestampPropertyOptions: js.UndefOr[SchemaTimestampPropertyOptions] = js.undefined
 }
 object SchemaPropertyDefinition {
   

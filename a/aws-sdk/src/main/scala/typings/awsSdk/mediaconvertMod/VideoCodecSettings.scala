@@ -2,66 +2,64 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoCodecSettings extends StObject {
   
   /**
     * Required when you set Codec, under VideoDescription>CodecSettings to the value AV1.
     */
-  var Av1Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Av1Settings] = js.native
+  var Av1Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Av1Settings] = js.undefined
   
   /**
     * Required when you set your output video codec to AVC-Intra. For more information about the AVC-I settings, see the relevant specification. For detailed information about SD and HD in AVC-I, see https://ieeexplore.ieee.org/document/7290936.
     */
-  var AvcIntraSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AvcIntraSettings] = js.native
+  var AvcIntraSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AvcIntraSettings] = js.undefined
   
   /**
     * Specifies the video codec. This must be equal to one of the enum values defined by the object  VideoCodec.
     */
-  var Codec: js.UndefOr[VideoCodec] = js.native
+  var Codec: js.UndefOr[VideoCodec] = js.undefined
   
   /**
     * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value FRAME_CAPTURE.
     */
-  var FrameCaptureSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.FrameCaptureSettings] = js.native
+  var FrameCaptureSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.FrameCaptureSettings] = js.undefined
   
   /**
     * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value H_264.
     */
-  var H264Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.H264Settings] = js.native
+  var H264Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.H264Settings] = js.undefined
   
   /**
     * Settings for H265 codec
     */
-  var H265Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.H265Settings] = js.native
+  var H265Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.H265Settings] = js.undefined
   
   /**
     * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value MPEG2.
     */
-  var Mpeg2Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Mpeg2Settings] = js.native
+  var Mpeg2Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Mpeg2Settings] = js.undefined
   
   /**
     * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value PRORES.
     */
-  var ProresSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.ProresSettings] = js.native
+  var ProresSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.ProresSettings] = js.undefined
   
   /**
     * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value VC3
     */
-  var Vc3Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Vc3Settings] = js.native
+  var Vc3Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Vc3Settings] = js.undefined
   
   /**
     * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value VP8.
     */
-  var Vp8Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Vp8Settings] = js.native
+  var Vp8Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Vp8Settings] = js.undefined
   
   /**
     * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value VP9.
     */
-  var Vp9Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Vp9Settings] = js.native
+  var Vp9Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Vp9Settings] = js.undefined
 }
 object VideoCodecSettings {
   

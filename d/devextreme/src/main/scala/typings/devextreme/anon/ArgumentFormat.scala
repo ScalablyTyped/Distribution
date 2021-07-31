@@ -11,37 +11,35 @@ import typings.devextreme.devextremeStrings.outside
 import typings.devextreme.mod.DevExpress.ui.format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArgumentFormat extends StObject {
   
-  var argumentFormat: js.UndefOr[format] = js.native
+  var argumentFormat: js.UndefOr[format] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[ColorDashStyle] = js.native
+  var border: js.UndefOr[ColorDashStyle] = js.undefined
   
-  var connector: js.UndefOr[ColorVisible] = js.native
+  var connector: js.UndefOr[ColorVisible] = js.undefined
   
-  var customizeText: js.UndefOr[js.Function1[/* pointInfo */ js.Any, String]] = js.native
+  var customizeText: js.UndefOr[js.Function1[/* pointInfo */ js.Any, String]] = js.undefined
   
-  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.native
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   
-  var position: js.UndefOr[columns | inside | outside] = js.native
+  var position: js.UndefOr[columns | inside | outside] = js.undefined
   
-  var radialOffset: js.UndefOr[Double] = js.native
+  var radialOffset: js.UndefOr[Double] = js.undefined
   
-  var rotationAngle: js.UndefOr[Double] = js.native
+  var rotationAngle: js.UndefOr[Double] = js.undefined
   
-  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.native
+  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var wordWrap: js.UndefOr[normal | breakWord | none] = js.native
+  var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
 }
 object ArgumentFormat {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetThreatIntelSetRequest extends StObject {
   
   /**
     * The unique ID of the detector that the threatIntelSet is associated with.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The unique ID of the threatIntelSet that you want to get.
     */
-  var ThreatIntelSetId: String = js.native
+  var ThreatIntelSetId: String
 }
 object GetThreatIntelSetRequest {
   

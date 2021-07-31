@@ -5,7 +5,6 @@ import typings.storybookApi.anon.Headline
 import typings.storybookApi.mod.ModuleFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationsMod {
@@ -14,18 +13,17 @@ object notificationsMod {
   @js.native
   val init: ModuleFn = js.native
   
-  @js.native
   trait Notification extends StObject {
     
-    var content: Headline = js.native
+    var content: Headline
     
-    var icon: js.UndefOr[Color] = js.native
+    var icon: js.UndefOr[Color] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var link: String = js.native
+    var link: String
     
-    var onClear: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Notification {
     
@@ -61,12 +59,11 @@ object notificationsMod {
     }
   }
   
-  @js.native
   trait SubAPI extends StObject {
     
-    def addNotification(notification: Notification): Unit = js.native
+    def addNotification(notification: Notification): Unit
     
-    def clearNotification(id: String): Unit = js.native
+    def clearNotification(id: String): Unit
   }
   object SubAPI {
     
@@ -87,10 +84,9 @@ object notificationsMod {
     }
   }
   
-  @js.native
   trait SubState extends StObject {
     
-    var notifications: js.Array[Notification] = js.native
+    var notifications: js.Array[Notification]
   }
   object SubState {
     

@@ -2,61 +2,59 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMLTaskRunResponse extends StObject {
   
   /**
     * The date and time when this task run was completed.
     */
-  var CompletedOn: js.UndefOr[Timestamp] = js.native
+  var CompletedOn: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The error strings that are associated with the task run.
     */
-  var ErrorString: js.UndefOr[GenericString] = js.native
+  var ErrorString: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The amount of time (in seconds) that the task run consumed resources.
     */
-  var ExecutionTime: js.UndefOr[typings.awsSdk.glueMod.ExecutionTime] = js.native
+  var ExecutionTime: js.UndefOr[typings.awsSdk.glueMod.ExecutionTime] = js.undefined
   
   /**
     * The date and time when this task run was last modified.
     */
-  var LastModifiedOn: js.UndefOr[Timestamp] = js.native
+  var LastModifiedOn: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The names of the log groups that are associated with the task run.
     */
-  var LogGroupName: js.UndefOr[GenericString] = js.native
+  var LogGroupName: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The list of properties that are associated with the task run.
     */
-  var Properties: js.UndefOr[TaskRunProperties] = js.native
+  var Properties: js.UndefOr[TaskRunProperties] = js.undefined
   
   /**
     * The date and time when this task run started.
     */
-  var StartedOn: js.UndefOr[Timestamp] = js.native
+  var StartedOn: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The status for this task run.
     */
-  var Status: js.UndefOr[TaskStatusType] = js.native
+  var Status: js.UndefOr[TaskStatusType] = js.undefined
   
   /**
     * The unique run identifier associated with this run.
     */
-  var TaskRunId: js.UndefOr[HashString] = js.native
+  var TaskRunId: js.UndefOr[HashString] = js.undefined
   
   /**
     * The unique identifier of the task run.
     */
-  var TransformId: js.UndefOr[HashString] = js.native
+  var TransformId: js.UndefOr[HashString] = js.undefined
 }
 object GetMLTaskRunResponse {
   

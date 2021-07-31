@@ -6,14 +6,15 @@ import typings.json2csv.json2csvbaseMod.json2csv.NormalizedFieldInfo
 import typings.json2csv.json2csvbaseMod.json2csv.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object json2csvbaseMod {
   
   @JSImport("json2csv/JSON2CSVBase", JSImport.Default)
   @js.native
-  abstract class default[T] () extends JSON2CSVBase[T] {
+  abstract class default[T] ()
+    extends StObject
+       with JSON2CSVBase[T] {
     def this(opts: Options[T]) = this()
   }
   
@@ -81,14 +82,13 @@ object json2csvbaseMod {
   
   object json2csv {
     
-    @js.native
     trait FieldInfo[T] extends StObject {
       
-      var default: js.UndefOr[String] = js.native
+      var default: js.UndefOr[String] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var value: String | FieldValueCallback[T] = js.native
+      var value: String | FieldValueCallback[T]
     }
     object FieldInfo {
       
@@ -99,7 +99,7 @@ object json2csvbaseMod {
       }
       
       @scala.inline
-      implicit class FieldInfoMutableBuilder[Self <: FieldInfo[_], T] (val x: Self with FieldInfo[T]) extends AnyVal {
+      implicit class FieldInfoMutableBuilder[Self <: FieldInfo[?], T] (val x: Self & FieldInfo[T]) extends AnyVal {
         
         @scala.inline
         def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
@@ -126,12 +126,11 @@ object json2csvbaseMod {
     
     type FieldValueCallback[T] = FieldValueCallbackWithoutField[T] | FieldValueCallbackWithField[T]
     
-    @js.native
     trait FieldValueCallbackInfo extends StObject {
       
-      var default: js.UndefOr[String] = js.native
+      var default: js.UndefOr[String] = js.undefined
       
-      var label: String = js.native
+      var label: String
     }
     object FieldValueCallbackInfo {
       
@@ -159,12 +158,11 @@ object json2csvbaseMod {
     
     type FieldValueCallbackWithoutField[T] = js.Function1[/* row */ T, js.Any]
     
-    @js.native
     trait NormalizedFieldInfo[T] extends StObject {
       
-      var label: String = js.native
+      var label: String
       
-      var value: FieldValueCallback[T] = js.native
+      var value: FieldValueCallback[T]
     }
     object NormalizedFieldInfo {
       
@@ -175,7 +173,7 @@ object json2csvbaseMod {
       }
       
       @scala.inline
-      implicit class NormalizedFieldInfoMutableBuilder[Self <: NormalizedFieldInfo[_], T] (val x: Self with NormalizedFieldInfo[T]) extends AnyVal {
+      implicit class NormalizedFieldInfoMutableBuilder[Self <: NormalizedFieldInfo[?], T] (val x: Self & NormalizedFieldInfo[T]) extends AnyVal {
         
         @scala.inline
         def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
@@ -191,32 +189,31 @@ object json2csvbaseMod {
       }
     }
     
-    @js.native
     trait Options[T] extends StObject {
       
-      var defaultValue: js.UndefOr[String] = js.native
+      var defaultValue: js.UndefOr[String] = js.undefined
       
-      var delimiter: js.UndefOr[String] = js.native
+      var delimiter: js.UndefOr[String] = js.undefined
       
-      var eol: js.UndefOr[String] = js.native
+      var eol: js.UndefOr[String] = js.undefined
       
-      var escapedQuote: js.UndefOr[String] = js.native
+      var escapedQuote: js.UndefOr[String] = js.undefined
       
-      var excelStrings: js.UndefOr[Boolean] = js.native
+      var excelStrings: js.UndefOr[Boolean] = js.undefined
       
-      var fields: js.UndefOr[js.Array[String | FieldInfo[T]]] = js.native
+      var fields: js.UndefOr[js.Array[String | FieldInfo[T]]] = js.undefined
       
-      var header: js.UndefOr[Boolean] = js.native
+      var header: js.UndefOr[Boolean] = js.undefined
       
-      var includeEmptyRows: js.UndefOr[Boolean] = js.native
+      var includeEmptyRows: js.UndefOr[Boolean] = js.undefined
       
-      var ndjson: js.UndefOr[Boolean] = js.native
+      var ndjson: js.UndefOr[Boolean] = js.undefined
       
-      var quote: js.UndefOr[String] = js.native
+      var quote: js.UndefOr[String] = js.undefined
       
-      var transforms: js.UndefOr[js.Array[Json2CsvTransform[_, _]]] = js.native
+      var transforms: js.UndefOr[js.Array[Json2CsvTransform[js.Any, js.Any]]] = js.undefined
       
-      var withBOM: js.UndefOr[Boolean] = js.native
+      var withBOM: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -227,7 +224,7 @@ object json2csvbaseMod {
       }
       
       @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options[_], T] (val x: Self with Options[T]) extends AnyVal {
+      implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
         
         @scala.inline
         def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
@@ -293,7 +290,7 @@ object json2csvbaseMod {
         def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
         
         @scala.inline
-        def setTransforms(value: js.Array[Json2CsvTransform[_, _]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+        def setTransforms(value: js.Array[Json2CsvTransform[js.Any, js.Any]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)

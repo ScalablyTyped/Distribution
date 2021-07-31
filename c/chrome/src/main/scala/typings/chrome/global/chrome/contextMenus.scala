@@ -5,7 +5,6 @@ import typings.chrome.chrome.contextMenus.MenuClickedEvent
 import typings.chrome.chrome.contextMenus.UpdateProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -28,12 +27,10 @@ object contextMenus {
   @scala.inline
   def ACTION_MENU_TOP_LEVEL_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTION_MENU_TOP_LEVEL_LIMIT")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.contextMenus.create")
-  @js.native
-  def create(createProperties: CreateProperties): Unit = js.native
-  @JSGlobal("chrome.contextMenus.create")
-  @js.native
-  def create(createProperties: CreateProperties, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def create(createProperties: CreateProperties): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def create(createProperties: CreateProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.contextMenus.onClicked")
   @js.native
@@ -41,36 +38,26 @@ object contextMenus {
   @scala.inline
   def onClicked_=(x: MenuClickedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClicked")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.contextMenus.remove")
-  @js.native
-  def remove(menuItemId: String): Unit = js.native
-  @JSGlobal("chrome.contextMenus.remove")
-  @js.native
-  def remove(menuItemId: String, callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.contextMenus.remove")
-  @js.native
-  def remove(menuItemId: Double): Unit = js.native
-  @JSGlobal("chrome.contextMenus.remove")
-  @js.native
-  def remove(menuItemId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def remove(menuItemId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(menuItemId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def remove(menuItemId: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(menuItemId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def remove(menuItemId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(menuItemId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def remove(menuItemId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(menuItemId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.contextMenus.removeAll")
-  @js.native
-  def removeAll(): Unit = js.native
-  @JSGlobal("chrome.contextMenus.removeAll")
-  @js.native
-  def removeAll(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def removeAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Unit]
+  @scala.inline
+  def removeAll(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.contextMenus.update")
-  @js.native
-  def update(id: String, updateProperties: UpdateProperties): Unit = js.native
-  @JSGlobal("chrome.contextMenus.update")
-  @js.native
-  def update(id: String, updateProperties: UpdateProperties, callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.contextMenus.update")
-  @js.native
-  def update(id: Double, updateProperties: UpdateProperties): Unit = js.native
-  @JSGlobal("chrome.contextMenus.update")
-  @js.native
-  def update(id: Double, updateProperties: UpdateProperties, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def update(id: String, updateProperties: UpdateProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(id: String, updateProperties: UpdateProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(id: Double, updateProperties: UpdateProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(id: Double, updateProperties: UpdateProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

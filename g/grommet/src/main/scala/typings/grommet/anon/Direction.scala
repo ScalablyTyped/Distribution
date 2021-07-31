@@ -4,17 +4,15 @@ import typings.grommet.grommetStrings.asc
 import typings.grommet.grommetStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction extends StObject {
   
-  var direction: asc | desc = js.native
+  var direction: asc | desc
   
-  var external: js.UndefOr[Boolean] = js.native
+  var external: js.UndefOr[Boolean] = js.undefined
   
-  var property: String = js.native
+  var property: String
 }
 object Direction {
   

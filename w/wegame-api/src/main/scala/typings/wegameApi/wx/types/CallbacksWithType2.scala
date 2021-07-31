@@ -2,17 +2,15 @@ package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallbacksWithType2[T, F] extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* res */ F, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ F, Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ T, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ T, Unit]] = js.undefined
 }
 object CallbacksWithType2 {
   
@@ -23,7 +21,7 @@ object CallbacksWithType2 {
   }
   
   @scala.inline
-  implicit class CallbacksWithType2MutableBuilder[Self <: CallbacksWithType2[_, _], T, F] (val x: Self with (CallbacksWithType2[T, F])) extends AnyVal {
+  implicit class CallbacksWithType2MutableBuilder[Self <: CallbacksWithType2[?, ?], T, F] (val x: Self & (CallbacksWithType2[T, F])) extends AnyVal {
     
     @scala.inline
     def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))

@@ -2,15 +2,13 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionBeforeEvent[T] extends StObject {
   
-  var item: T = js.native
+  var item: T
   
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
 }
 object CollectionBeforeEvent {
   
@@ -21,7 +19,7 @@ object CollectionBeforeEvent {
   }
   
   @scala.inline
-  implicit class CollectionBeforeEventMutableBuilder[Self <: CollectionBeforeEvent[_], T] (val x: Self with CollectionBeforeEvent[T]) extends AnyVal {
+  implicit class CollectionBeforeEventMutableBuilder[Self <: CollectionBeforeEvent[?], T] (val x: Self & CollectionBeforeEvent[T]) extends AnyVal {
     
     @scala.inline
     def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])

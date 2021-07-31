@@ -2,19 +2,19 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesPutAliasParams extends GenericParams {
+trait IndicesPutAliasParams
+  extends StObject
+     with GenericParams {
   
-  var index: js.UndefOr[NameList] = js.native
+  var index: js.UndefOr[NameList] = js.undefined
   
-  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var name: NameList = js.native
+  var name: NameList
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
 }
 object IndicesPutAliasParams {
   

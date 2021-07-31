@@ -2,15 +2,13 @@ package typings.es6Shim
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IteratorResult[T] extends StObject {
   
-  var done: Boolean = js.native
+  var done: Boolean
   
-  var value: js.UndefOr[T] = js.native
+  var value: js.UndefOr[T] = js.undefined
 }
 object IteratorResult {
   
@@ -21,7 +19,7 @@ object IteratorResult {
   }
   
   @scala.inline
-  implicit class IteratorResultMutableBuilder[Self <: IteratorResult[_], T] (val x: Self with IteratorResult[T]) extends AnyVal {
+  implicit class IteratorResultMutableBuilder[Self <: IteratorResult[?], T] (val x: Self & IteratorResult[T]) extends AnyVal {
     
     @scala.inline
     def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])

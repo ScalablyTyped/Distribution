@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisionedBandwidth extends StObject {
   
   /**
     * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
     */
-  var ProvisionTime: js.UndefOr[DateTime] = js.native
+  var ProvisionTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
     */
-  var Provisioned: js.UndefOr[String] = js.native
+  var Provisioned: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
     */
-  var RequestTime: js.UndefOr[DateTime] = js.native
+  var RequestTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
     */
-  var Requested: js.UndefOr[String] = js.native
+  var Requested: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object ProvisionedBandwidth {
   

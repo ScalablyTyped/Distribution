@@ -2,25 +2,23 @@ package typings.operationRetrier
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Initial extends StObject {
     
-    var initial: js.UndefOr[Double] = js.native
+    var initial: js.UndefOr[Double] = js.undefined
     
-    var max: Double = js.native
+    var max: Double
     
-    var maxAttemptsCount: js.UndefOr[Double] = js.native
+    var maxAttemptsCount: js.UndefOr[Double] = js.undefined
     
-    var maxAttemptsTime: js.UndefOr[Double] = js.native
+    var maxAttemptsTime: js.UndefOr[Double] = js.undefined
     
-    var min: Double = js.native
+    var min: Double
     
-    var randomness: js.UndefOr[Double] = js.native
+    var randomness: js.UndefOr[Double] = js.undefined
   }
   object Initial {
     

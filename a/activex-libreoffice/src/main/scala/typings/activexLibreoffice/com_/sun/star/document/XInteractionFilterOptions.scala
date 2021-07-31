@@ -7,33 +7,33 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A continuation to return filter options from interaction helper.
   * @since OOo 1.1.2
   */
-@js.native
-trait XInteractionFilterOptions extends XInteractionContinuation {
+trait XInteractionFilterOptions
+  extends StObject
+     with XInteractionContinuation {
   
   /**
     * Get results from the continuation.
     * @returns the stored list of properties containing filter options.
     */
-  var FilterOptions: SafeArray[PropertyValue] = js.native
+  var FilterOptions: SafeArray[PropertyValue]
   
   /**
     * Get results from the continuation.
     * @returns the stored list of properties containing filter options.
     */
-  def getFilterOptions(): SafeArray[PropertyValue] = js.native
+  def getFilterOptions(): SafeArray[PropertyValue]
   
   /**
     * Store results to the continuation.
     * @param rProperties the list of properties containing filter options.
     */
-  def setFilterOptions(rProperties: SeqEquiv[PropertyValue]): Unit = js.native
+  def setFilterOptions(rProperties: SeqEquiv[PropertyValue]): Unit
 }
 object XInteractionFilterOptions {
   

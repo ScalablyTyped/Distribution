@@ -2,13 +2,13 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FontProps extends FontObject {
+trait FontProps
+  extends StObject
+     with FontObject {
   
-  var font: js.UndefOr[FontObject] = js.native
+  var font: js.UndefOr[FontObject] = js.undefined
 }
 object FontProps {
   

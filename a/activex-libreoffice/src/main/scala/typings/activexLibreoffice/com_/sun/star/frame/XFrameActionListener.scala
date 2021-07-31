@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XFrame.addFrameActionListener()
   * @see XFrame.removeFrameActionListener()
   */
-@js.native
-trait XFrameActionListener extends XEventListener {
+trait XFrameActionListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called whenever any action occurs to a component within a frame.
     * @param Action describes the detected frame action for which the listener can react
     */
-  def frameAction(Action: FrameActionEvent): Unit = js.native
+  def frameAction(Action: FrameActionEvent): Unit
 }
 object XFrameActionListener {
   

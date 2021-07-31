@@ -2,31 +2,29 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single interpolation point on a gradient conditional format. These pin
   * the gradient color scale according to the color, type and value chosen.
   */
-@js.native
 trait SchemaInterpolationPoint extends StObject {
   
   /**
     * The color this interpolation point should use.
     */
-  var color: js.UndefOr[SchemaColor] = js.native
+  var color: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * How the value should be interpreted.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The value this interpolation point uses.  May be a formula. Unused if
     * type is MIN or MAX.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaInterpolationPoint {
   

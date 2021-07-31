@@ -10,14 +10,12 @@ import typings.sparkpost.sparkpostStrings.non_transactional
 import typings.sparkpost.sparkpostStrings.transactional
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSupressionListEntry extends StObject {
   
   /** Short explanation of the suppression */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the recipient requested to not receive any non-transactional messages
@@ -25,13 +23,13 @@ trait CreateSupressionListEntry extends StObject {
     *
     * @deprecated Available, but deprecated in favor of type
     */
-  var non_transactional: js.UndefOr[Boolean] = js.native
+  var non_transactional: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Email address to be suppressed
     *
     */
-  var recipient: String = js.native
+  var recipient: String
   
   /**
     * Source responsible for inserting the list entry
@@ -40,7 +38,7 @@ trait CreateSupressionListEntry extends StObject {
     */
   val source: js.UndefOr[
     (`Spam Complaint`) | (`List Unsubscribe`) | (`Bounce Rule`) | (`Unsubscribe Link`) | (`Manually Added`) | Compliance
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Whether the recipient requested to not receive any non-transactional messages
@@ -48,13 +46,13 @@ trait CreateSupressionListEntry extends StObject {
     *
     * @deprecated Available, but deprecated in favor of type
     */
-  var transactional: js.UndefOr[Boolean] = js.native
+  var transactional: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Type of suppression record
     *
     */
-  var `type`: js.UndefOr[transactional | non_transactional] = js.native
+  var `type`: js.UndefOr[transactional | non_transactional] = js.undefined
 }
 object CreateSupressionListEntry {
   

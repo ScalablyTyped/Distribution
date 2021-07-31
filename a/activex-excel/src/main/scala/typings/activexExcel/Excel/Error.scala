@@ -2,24 +2,22 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.Error_typekey")
-  var ExcelDotError_typekey: Error = js.native
+  var ExcelDotError_typekey: Error
   
-  var Ignore: Boolean = js.native
+  var Ignore: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Value: Boolean = js.native
+  val Value: Boolean
 }
 object Error {
   

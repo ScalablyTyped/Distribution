@@ -2,15 +2,13 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTokenPagination extends StObject {
   
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var previousPageToken: js.UndefOr[String] = js.native
+  var previousPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaTokenPagination {
   

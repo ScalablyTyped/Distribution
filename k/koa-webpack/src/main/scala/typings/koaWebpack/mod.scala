@@ -4,27 +4,27 @@ import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import typings.koaWebpack.anon.Close
-import typings.memoryFs.mod.^
 import typings.webpackDevMiddleware.mod.WebpackDevMiddleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware]]
+  @scala.inline
+  def apply(options: Options): js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware]]
+  
   @JSImport("koa-webpack", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[(Middleware[DefaultState, DefaultContext]) with CombinedWebpackMiddleware] = js.native
-  @JSImport("koa-webpack", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[(Middleware[DefaultState, DefaultContext]) with CombinedWebpackMiddleware] = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait CombinedWebpackMiddleware extends StObject {
     
     def close(): Unit = js.native
-    def close(callback: js.Function0[_]): Unit = js.native
+    def close(callback: js.Function0[js.Any]): Unit = js.native
     
     var devMiddleware: WebpackDevMiddleware = js.native
     
@@ -34,20 +34,19 @@ object mod {
     var hotClient: Close = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     var compiler: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var config: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var devMiddleware: js.UndefOr[typings.webpackDevMiddleware.mod.Options] = js.native
+    var devMiddleware: js.UndefOr[typings.webpackDevMiddleware.mod.Options] = js.undefined
     
-    var hotClient: js.UndefOr[typings.webpackHotClient.mod.Options | Boolean] = js.native
+    var hotClient: js.UndefOr[typings.webpackHotClient.mod.Options | Boolean] = js.undefined
   }
   object Options {
     
@@ -93,12 +92,11 @@ object mod {
   /* augmented module */
   object koaAugmentingMod {
     
-    @js.native
     trait DefaultState extends StObject {
       
-      var fs: js.UndefOr[^] = js.native
+      var fs: js.UndefOr[typings.memoryFs.mod.^] = js.undefined
       
-      var stats: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any = js.native
+      var stats: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any
     }
     object DefaultState {
       
@@ -114,7 +112,7 @@ object mod {
       implicit class DefaultStateMutableBuilder[Self <: typings.koaWebpack.mod.koaAugmentingMod.DefaultState] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setFs(value: ^): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+        def setFs(value: typings.memoryFs.mod.^): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)

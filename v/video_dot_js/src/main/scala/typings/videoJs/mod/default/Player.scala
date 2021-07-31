@@ -5,7 +5,6 @@ import typings.videoJs.mod.VideoJsPlayer
 import typings.videoJs.mod.videojs.PlayerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Player {
@@ -13,7 +12,9 @@ object Player {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("video.js", "default.Player")
   @js.native
-  class ^ protected () extends VideoJsPlayer {
+  class ^ protected ()
+    extends StObject
+       with VideoJsPlayer {
     /**
       * An instance of the `Player` class is created when any of the Video.js setup methods
       * are used to initialize a video.
@@ -26,6 +27,10 @@ object Player {
     def this(player: typings.videoJs.mod.videojs.Player, options: PlayerOptions) = this()
   }
   
+  @JSImport("video.js", "default.Player")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Gets tag settings
     *
@@ -35,7 +40,6 @@ object Player {
     * @return An object containing all of the settings
     *         for a player tag
     */
-  @JSImport("video.js", "default.Player.getTagSettings")
-  @js.native
-  def getTagSettings(tag: Element): js.Any = js.native
+  @scala.inline
+  def getTagSettings(tag: Element): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTagSettings")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

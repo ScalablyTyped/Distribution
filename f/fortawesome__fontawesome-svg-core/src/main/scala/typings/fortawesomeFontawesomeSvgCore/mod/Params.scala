@@ -2,21 +2,19 @@ package typings.fortawesomeFontawesomeSvgCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Params extends StObject {
   
-  var attributes: js.UndefOr[Attributes] = js.native
+  var attributes: js.UndefOr[Attributes] = js.undefined
   
-  var classes: js.UndefOr[String | js.Array[String]] = js.native
+  var classes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var styles: js.UndefOr[Styles] = js.native
+  var styles: js.UndefOr[Styles] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleId: js.UndefOr[String] = js.native
+  var titleId: js.UndefOr[String] = js.undefined
 }
 object Params {
   

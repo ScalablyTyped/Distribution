@@ -8,18 +8,21 @@ import typings.swiper.mod.SwiperOptions
 import typings.swiper.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swiperEsmMod {
   
   @JSImport("swiper/js/swiper.esm", "A11y")
   @js.native
-  class A11y () extends SwiperModule
+  class A11y ()
+    extends StObject
+       with SwiperModule
   
   @JSImport("swiper/js/swiper.esm", "Autoplay")
   @js.native
-  class Autoplay () extends SwiperModule {
+  class Autoplay ()
+    extends StObject
+       with SwiperModule {
     
     // Properties
     /**
@@ -41,7 +44,9 @@ object swiperEsmMod {
   
   @JSImport("swiper/js/swiper.esm", "Controller")
   @js.native
-  class Controller () extends SwiperModule {
+  class Controller ()
+    extends StObject
+       with SwiperModule {
     
     /**
       * Pass here another Swiper instance or array with Swiper instances that should be controlled
@@ -52,31 +57,45 @@ object swiperEsmMod {
   
   @JSImport("swiper/js/swiper.esm", "EffectCoverflow")
   @js.native
-  class EffectCoverflow () extends SwiperModule
+  class EffectCoverflow ()
+    extends StObject
+       with SwiperModule
   
   @JSImport("swiper/js/swiper.esm", "EffectCube")
   @js.native
-  class EffectCube () extends SwiperModule
+  class EffectCube ()
+    extends StObject
+       with SwiperModule
   
   @JSImport("swiper/js/swiper.esm", "EffectFade")
   @js.native
-  class EffectFade () extends SwiperModule
+  class EffectFade ()
+    extends StObject
+       with SwiperModule
   
   @JSImport("swiper/js/swiper.esm", "EffectFlip")
   @js.native
-  class EffectFlip () extends SwiperModule
+  class EffectFlip ()
+    extends StObject
+       with SwiperModule
   
   @JSImport("swiper/js/swiper.esm", "HashNavigation")
   @js.native
-  class HashNavigation () extends SwiperModule
+  class HashNavigation ()
+    extends StObject
+       with SwiperModule
   
   @JSImport("swiper/js/swiper.esm", "History")
   @js.native
-  class History () extends SwiperModule
+  class History ()
+    extends StObject
+       with SwiperModule
   
   @JSImport("swiper/js/swiper.esm", "Keyboard")
   @js.native
-  class Keyboard () extends SwiperModule {
+  class Keyboard ()
+    extends StObject
+       with SwiperModule {
     
     /**
       * Disable keyboard control
@@ -97,7 +116,9 @@ object swiperEsmMod {
   
   @JSImport("swiper/js/swiper.esm", "Lazy")
   @js.native
-  class Lazy () extends SwiperModule {
+  class Lazy ()
+    extends StObject
+       with SwiperModule {
     
     /**
       * Load/update lazy images based on current slider state (position)
@@ -113,7 +134,9 @@ object swiperEsmMod {
   
   @JSImport("swiper/js/swiper.esm", "Mousewheel")
   @js.native
-  class Mousewheel () extends SwiperModule {
+  class Mousewheel ()
+    extends StObject
+       with SwiperModule {
     
     /**
       * Disable mousewheel control
@@ -134,7 +157,9 @@ object swiperEsmMod {
   
   @JSImport("swiper/js/swiper.esm", "Navigation")
   @js.native
-  class Navigation () extends SwiperModule {
+  class Navigation ()
+    extends StObject
+       with SwiperModule {
     
     /**
       * HTMLElement of "next" navigation button
@@ -154,7 +179,9 @@ object swiperEsmMod {
   
   @JSImport("swiper/js/swiper.esm", "Pagination")
   @js.native
-  class Pagination () extends SwiperModule {
+  class Pagination ()
+    extends StObject
+       with SwiperModule {
     
     /**
       * Dom7 array-like collection of pagination bullets
@@ -181,11 +208,15 @@ object swiperEsmMod {
   
   @JSImport("swiper/js/swiper.esm", "Parallax")
   @js.native
-  class Parallax () extends SwiperModule
+  class Parallax ()
+    extends StObject
+       with SwiperModule
   
   @JSImport("swiper/js/swiper.esm", "Scrollbar")
   @js.native
-  class Scrollbar () extends SwiperModule {
+  class Scrollbar ()
+    extends StObject
+       with SwiperModule {
     
     /**
       * HTMLElement of Scrollbar draggable handler element
@@ -220,17 +251,22 @@ object swiperEsmMod {
   /* static members */
   object Swiper {
     
+    @JSImport("swiper/js/swiper.esm", "Swiper")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Installs modules on Swiper in runtime.
       */
-    @JSImport("swiper/js/swiper.esm", "Swiper.use")
-    @js.native
-    def use(modules: js.Array[SwiperModule]): Unit = js.native
+    @scala.inline
+    def use(modules: js.Array[SwiperModule]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(modules.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("swiper/js/swiper.esm", "Virtual")
   @js.native
-  class Virtual () extends SwiperModule {
+  class Virtual ()
+    extends StObject
+       with SwiperModule {
     
     def appendSlide(slide: String): Unit = js.native
     /*
@@ -276,7 +312,7 @@ object swiperEsmMod {
     /**
       * Array with slide items passed by virtual.slides parameter
       */
-    var slides: js.Array[_] = js.native
+    var slides: js.Array[js.Any] = js.native
     
     /**
       * Index of last rendered slide
@@ -291,7 +327,9 @@ object swiperEsmMod {
   
   @JSImport("swiper/js/swiper.esm", "Zoom")
   @js.native
-  class Zoom () extends SwiperModule {
+  class Zoom ()
+    extends StObject
+       with SwiperModule {
     
     /**
       * Disable zoom module

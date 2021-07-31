@@ -5,7 +5,6 @@ import typings.three.shapeMod.Shape
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shapePathMod {
@@ -37,7 +36,7 @@ object shapePathMod {
     /**
     	 * @default []
     	 */
-    var subPaths: js.Array[_] = js.native
+    var subPaths: js.Array[js.Any] = js.native
     
     def toShapes(isCCW: Boolean): js.Array[Shape] = js.native
     def toShapes(isCCW: Boolean, noHoles: Boolean): js.Array[Shape] = js.native

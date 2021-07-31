@@ -2,43 +2,41 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDataSourceRequest extends StObject {
   
-  var Configuration: js.UndefOr[DataSourceConfiguration] = js.native
+  var Configuration: js.UndefOr[DataSourceConfiguration] = js.undefined
   
   /**
     * The new description for the data source.
     */
-  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.undefined
   
   /**
     * The unique identifier of the data source to update.
     */
-  var Id: DataSourceId = js.native
+  var Id: DataSourceId
   
   /**
     * The identifier of the index that contains the data source to update.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
   
   /**
     * The name of the data source to update. The name of the data source can't be updated. To rename a data source you must delete the data source and re-create it.
     */
-  var Name: js.UndefOr[DataSourceName] = js.native
+  var Name: js.UndefOr[DataSourceName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the new role to use when the data source is accessing resources on your behalf.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.undefined
   
   /**
     * The new update schedule for the data source.
     */
-  var Schedule: js.UndefOr[ScanSchedule] = js.native
+  var Schedule: js.UndefOr[ScanSchedule] = js.undefined
 }
 object UpdateDataSourceRequest {
   

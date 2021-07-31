@@ -2,29 +2,27 @@ package typings.got.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GotTimings extends StObject {
   
-  var connect: Double = js.native
+  var connect: Double
   
-  var end: Double = js.native
+  var end: Double
   
-  var error: Double = js.native
+  var error: Double
   
-  var lookup: Double = js.native
+  var lookup: Double
   
-  var phases: GotTimingsPhases = js.native
+  var phases: GotTimingsPhases
   
-  var response: Double = js.native
+  var response: Double
   
-  var socket: Double = js.native
+  var socket: Double
   
-  var start: Double = js.native
+  var start: Double
   
-  var upload: Double = js.native
+  var upload: Double
 }
 object GotTimings {
   

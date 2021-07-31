@@ -2,22 +2,20 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToRelativeCalendarOptions extends StObject {
   
   /** The DateTime to use as the basis to which this time is compared. Defaults to now. */
-  var base: js.UndefOr[DateTime] = js.native
+  var base: js.UndefOr[DateTime] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /** The Intl system may choose not to honor this. */
-  var numberingSystem: js.UndefOr[NumberingSystem] = js.native
+  var numberingSystem: js.UndefOr[NumberingSystem] = js.undefined
   
   /** If omitted, the method will pick the unit. */
-  var unit: js.UndefOr[ToRelativeUnit] = js.native
+  var unit: js.UndefOr[ToRelativeUnit] = js.undefined
 }
 object ToRelativeCalendarOptions {
   

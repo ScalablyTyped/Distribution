@@ -4,21 +4,19 @@ import typings.sourceMap.mod.RawSourceMap
 import typings.vueCompilerCore.mod.CompilerError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFCTemplateCompileResults extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var errors: js.Array[String | CompilerError] = js.native
+  var errors: js.Array[String | CompilerError]
   
-  var map: js.UndefOr[RawSourceMap] = js.native
+  var map: js.UndefOr[RawSourceMap] = js.undefined
   
-  var source: String = js.native
+  var source: String
   
-  var tips: js.Array[String] = js.native
+  var tips: js.Array[String]
 }
 object SFCTemplateCompileResults {
   

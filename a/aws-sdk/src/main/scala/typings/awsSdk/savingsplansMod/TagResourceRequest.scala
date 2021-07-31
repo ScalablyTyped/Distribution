@@ -2,21 +2,19 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var resourceArn: SavingsPlanArn = js.native
+  var resourceArn: SavingsPlanArn
   
   /**
     * One or more tags. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
     */
-  var tags: TagMap = js.native
+  var tags: TagMap
 }
 object TagResourceRequest {
   

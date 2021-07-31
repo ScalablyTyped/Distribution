@@ -2,25 +2,23 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Mobile Carrier List Response
   */
-@js.native
 trait SchemaMobileCarriersListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#mobileCarriersListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile carrier collection.
     */
-  var mobileCarriers: js.UndefOr[js.Array[SchemaMobileCarrier]] = js.native
+  var mobileCarriers: js.UndefOr[js.Array[SchemaMobileCarrier]] = js.undefined
 }
 object SchemaMobileCarriersListResponse {
   

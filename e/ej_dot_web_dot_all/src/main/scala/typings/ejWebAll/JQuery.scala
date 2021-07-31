@@ -175,7 +175,6 @@ import typings.ejWebAll.ejWebAllStrings.ejUploadbox
 import typings.ejWebAll.ejWebAllStrings.ejWaitingPopup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -357,603 +356,603 @@ trait JQuery extends StObject {
   
   def ejAccordion(): JQuery = js.native
   def ejAccordion(memberName: js.Any): js.Any = js.native
-  def ejAccordion(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejAccordion(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejAccordion(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejAccordion(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejAccordion(options: Model): JQuery = js.native
   
   def ejAutocomplete(): JQuery = js.native
   def ejAutocomplete(memberName: js.Any): js.Any = js.native
-  def ejAutocomplete(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejAutocomplete(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejAutocomplete(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejAutocomplete(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejAutocomplete(options: Model): JQuery = js.native
   
   def ejBarcode(): JQuery = js.native
   def ejBarcode(memberName: js.Any): js.Any = js.native
-  def ejBarcode(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejBarcode(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejBarcode(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejBarcode(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejBarcode(options: Model): JQuery = js.native
   
   def ejBulletGraph(): JQuery = js.native
   def ejBulletGraph(memberName: js.Any): js.Any = js.native
-  def ejBulletGraph(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejBulletGraph(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejBulletGraph(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejBulletGraph(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejBulletGraph(options: Model): JQuery = js.native
   
   def ejButton(): JQuery = js.native
   def ejButton(memberName: js.Any): js.Any = js.native
-  def ejButton(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejButton(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejButton(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejButton(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejButton(options: Model): JQuery = js.native
   
   def ejCaptcha(): JQuery = js.native
   def ejCaptcha(memberName: js.Any): js.Any = js.native
-  def ejCaptcha(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejCaptcha(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejCaptcha(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejCaptcha(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejCaptcha(options: Model): JQuery = js.native
   
   def ejChart(): JQuery = js.native
   def ejChart(memberName: js.Any): js.Any = js.native
-  def ejChart(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejChart(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejChart(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejChart(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejChart(options: Model): JQuery = js.native
   
   def ejCheckBox(): JQuery = js.native
   def ejCheckBox(memberName: js.Any): js.Any = js.native
-  def ejCheckBox(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejCheckBox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejCheckBox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejCheckBox(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejCheckBox(options: Model): JQuery = js.native
   
   def ejCircularGauge(): JQuery = js.native
   def ejCircularGauge(memberName: js.Any): js.Any = js.native
-  def ejCircularGauge(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejCircularGauge(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejCircularGauge(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejCircularGauge(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejCircularGauge(options: Model): JQuery = js.native
   
   def ejColorPicker(): JQuery = js.native
   def ejColorPicker(memberName: js.Any): js.Any = js.native
-  def ejColorPicker(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejColorPicker(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejColorPicker(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejColorPicker(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejColorPicker(options: Model): JQuery = js.native
   
   def ejComboBox(): JQuery = js.native
   def ejComboBox(memberName: js.Any): js.Any = js.native
-  def ejComboBox(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejComboBox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejComboBox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejComboBox(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejComboBox(options: Model): JQuery = js.native
   
   def ejCurrencyTextbox(): JQuery = js.native
   def ejCurrencyTextbox(memberName: js.Any): js.Any = js.native
-  def ejCurrencyTextbox(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejCurrencyTextbox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejCurrencyTextbox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejCurrencyTextbox(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejCurrencyTextbox(options: Model): JQuery = js.native
   
   def ejDatePicker(): JQuery = js.native
   def ejDatePicker(memberName: js.Any): js.Any = js.native
-  def ejDatePicker(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejDatePicker(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDatePicker(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejDatePicker(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejDatePicker(options: Model): JQuery = js.native
   
   def ejDateRangePicker(): JQuery = js.native
   def ejDateRangePicker(memberName: js.Any): js.Any = js.native
-  def ejDateRangePicker(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejDateRangePicker(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDateRangePicker(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejDateRangePicker(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejDateRangePicker(options: Model): JQuery = js.native
   
   def ejDateTimePicker(): JQuery = js.native
   def ejDateTimePicker(memberName: js.Any): js.Any = js.native
-  def ejDateTimePicker(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejDateTimePicker(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDateTimePicker(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejDateTimePicker(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejDateTimePicker(options: Model): JQuery = js.native
   
   def ejDiagram(): JQuery = js.native
   def ejDiagram(memberName: js.Any): js.Any = js.native
-  def ejDiagram(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejDiagram(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDiagram(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejDiagram(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejDiagram(options: Model): JQuery = js.native
   
   def ejDialog(): JQuery = js.native
   def ejDialog(memberName: js.Any): js.Any = js.native
-  def ejDialog(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejDialog(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDialog(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejDialog(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejDialog(options: Model): JQuery = js.native
   
   def ejDigitalGauge(): JQuery = js.native
   def ejDigitalGauge(memberName: js.Any): js.Any = js.native
-  def ejDigitalGauge(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejDigitalGauge(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDigitalGauge(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejDigitalGauge(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejDigitalGauge(options: Model): JQuery = js.native
   
   def ejDocumentEditor(): JQuery = js.native
   def ejDocumentEditor(memberName: js.Any): js.Any = js.native
-  def ejDocumentEditor(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejDocumentEditor(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDocumentEditor(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejDocumentEditor(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejDocumentEditor(options: Model): JQuery = js.native
   
   def ejDraggable(): JQuery = js.native
   def ejDraggable(memberName: js.Any): js.Any = js.native
-  def ejDraggable(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejDraggable(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDraggable(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejDraggable(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejDraggable(options: Model): JQuery = js.native
   
   def ejDropDownList(): JQuery = js.native
   def ejDropDownList(memberName: js.Any): js.Any = js.native
-  def ejDropDownList(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejDropDownList(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDropDownList(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejDropDownList(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejDropDownList(options: Model): JQuery = js.native
   
   def ejDropDownTree(): JQuery = js.native
   def ejDropDownTree(memberName: js.Any): js.Any = js.native
-  def ejDropDownTree(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejDropDownTree(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDropDownTree(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejDropDownTree(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejDropDownTree(options: Model): JQuery = js.native
   
   def ejDroppable(): JQuery = js.native
   def ejDroppable(memberName: js.Any): js.Any = js.native
-  def ejDroppable(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejDroppable(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDroppable(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejDroppable(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejDroppable(options: Model): JQuery = js.native
   
   def ejFileExplorer(): JQuery = js.native
   def ejFileExplorer(memberName: js.Any): js.Any = js.native
-  def ejFileExplorer(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejFileExplorer(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejFileExplorer(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejFileExplorer(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejFileExplorer(options: Model): JQuery = js.native
   
   def ejGantt(): JQuery = js.native
   def ejGantt(memberName: js.Any): js.Any = js.native
-  def ejGantt(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejGantt(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejGantt(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejGantt(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejGantt(options: Model): JQuery = js.native
   
   def ejGrid(): JQuery = js.native
   def ejGrid(memberName: js.Any): js.Any = js.native
-  def ejGrid(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejGrid(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejGrid(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejGrid(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejGrid(options: Model): JQuery = js.native
   
   def ejGroupButton(): JQuery = js.native
   def ejGroupButton(memberName: js.Any): js.Any = js.native
-  def ejGroupButton(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejGroupButton(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejGroupButton(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejGroupButton(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejGroupButton(options: Model): JQuery = js.native
   
   def ejHeatMap(): JQuery = js.native
   def ejHeatMap(memberName: js.Any): js.Any = js.native
-  def ejHeatMap(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejHeatMap(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejHeatMap(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejHeatMap(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejHeatMap(options: Model): JQuery = js.native
   
   def ejHeatMapLegend(): JQuery = js.native
   def ejHeatMapLegend(memberName: js.Any): js.Any = js.native
-  def ejHeatMapLegend(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejHeatMapLegend(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejHeatMapLegend(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejHeatMapLegend(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejHeatMapLegend(options: Model): JQuery = js.native
   
   def ejKanban(): JQuery = js.native
   def ejKanban(memberName: js.Any): js.Any = js.native
-  def ejKanban(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejKanban(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejKanban(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejKanban(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejKanban(options: Model): JQuery = js.native
   
   def ejLinearGauge(): JQuery = js.native
   def ejLinearGauge(memberName: js.Any): js.Any = js.native
-  def ejLinearGauge(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejLinearGauge(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejLinearGauge(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejLinearGauge(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejLinearGauge(options: Model): JQuery = js.native
   
   def ejListBox(): JQuery = js.native
   def ejListBox(memberName: js.Any): js.Any = js.native
-  def ejListBox(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejListBox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejListBox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejListBox(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejListBox(options: Model): JQuery = js.native
   
   def ejListView(): JQuery = js.native
   def ejListView(memberName: js.Any): js.Any = js.native
-  def ejListView(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejListView(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejListView(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejListView(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejListView(options: Model): JQuery = js.native
   
   def ejMap(): JQuery = js.native
   def ejMap(memberName: js.Any): js.Any = js.native
-  def ejMap(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejMap(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejMap(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejMap(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejMap(options: Model): JQuery = js.native
   
   def ejMaskEdit(): JQuery = js.native
   def ejMaskEdit(memberName: js.Any): js.Any = js.native
-  def ejMaskEdit(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejMaskEdit(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejMaskEdit(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejMaskEdit(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejMaskEdit(options: Model): JQuery = js.native
   
   def ejMenu(): JQuery = js.native
   def ejMenu(memberName: js.Any): js.Any = js.native
-  def ejMenu(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejMenu(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejMenu(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejMenu(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejMenu(options: Model): JQuery = js.native
   
   def ejNavigationDrawer(): JQuery = js.native
   def ejNavigationDrawer(memberName: js.Any): js.Any = js.native
-  def ejNavigationDrawer(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejNavigationDrawer(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejNavigationDrawer(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejNavigationDrawer(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejNavigationDrawer(options: Model): JQuery = js.native
   
   def ejNumericTextbox(): JQuery = js.native
   def ejNumericTextbox(memberName: js.Any): js.Any = js.native
-  def ejNumericTextbox(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejNumericTextbox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejNumericTextbox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejNumericTextbox(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejNumericTextbox(options: Model): JQuery = js.native
   
   def ejOverview(): JQuery = js.native
   def ejOverview(memberName: js.Any): js.Any = js.native
-  def ejOverview(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejOverview(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejOverview(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejOverview(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejOverview(options: Model): JQuery = js.native
   
   def ejPager(): JQuery = js.native
   def ejPager(memberName: js.Any): js.Any = js.native
-  def ejPager(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejPager(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPager(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejPager(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejPager(options: Model): JQuery = js.native
   
   def ejPdfViewer(): JQuery = js.native
   def ejPdfViewer(memberName: js.Any): js.Any = js.native
-  def ejPdfViewer(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejPdfViewer(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPdfViewer(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejPdfViewer(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejPdfViewer(options: Model): JQuery = js.native
   
   def ejPercentageTextbox(): JQuery = js.native
   def ejPercentageTextbox(memberName: js.Any): js.Any = js.native
-  def ejPercentageTextbox(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejPercentageTextbox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPercentageTextbox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejPercentageTextbox(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejPercentageTextbox(options: Model): JQuery = js.native
   
   def ejPivotChart(): JQuery = js.native
   def ejPivotChart(memberName: js.Any): js.Any = js.native
-  def ejPivotChart(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejPivotChart(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotChart(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejPivotChart(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejPivotChart(options: Model): JQuery = js.native
   
   def ejPivotClient(): JQuery = js.native
   def ejPivotClient(memberName: js.Any): js.Any = js.native
-  def ejPivotClient(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejPivotClient(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotClient(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejPivotClient(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejPivotClient(options: Model): JQuery = js.native
   
   def ejPivotGauge(): JQuery = js.native
   def ejPivotGauge(memberName: js.Any): js.Any = js.native
-  def ejPivotGauge(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejPivotGauge(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotGauge(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejPivotGauge(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejPivotGauge(options: Model): JQuery = js.native
   
   def ejPivotGrid(): JQuery = js.native
   def ejPivotGrid(memberName: js.Any): js.Any = js.native
-  def ejPivotGrid(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejPivotGrid(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotGrid(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejPivotGrid(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejPivotGrid(options: Model): JQuery = js.native
   
   def ejPivotPager(): JQuery = js.native
   def ejPivotPager(memberName: js.Any): js.Any = js.native
-  def ejPivotPager(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejPivotPager(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotPager(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejPivotPager(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejPivotPager(options: Model): JQuery = js.native
   
   def ejPivotSchemaDesigner(): JQuery = js.native
   def ejPivotSchemaDesigner(memberName: js.Any): js.Any = js.native
-  def ejPivotSchemaDesigner(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejPivotSchemaDesigner(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotSchemaDesigner(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejPivotSchemaDesigner(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejPivotSchemaDesigner(options: Model): JQuery = js.native
   
   def ejPivotTreeMap(): JQuery = js.native
   def ejPivotTreeMap(memberName: js.Any): js.Any = js.native
-  def ejPivotTreeMap(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejPivotTreeMap(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotTreeMap(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejPivotTreeMap(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejPivotTreeMap(options: Model): JQuery = js.native
   
   def ejPrint(): JQuery = js.native
   def ejPrint(memberName: js.Any): js.Any = js.native
-  def ejPrint(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejPrint(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPrint(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejPrint(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejPrint(options: Model): JQuery = js.native
   
   def ejProgressBar(): JQuery = js.native
   def ejProgressBar(memberName: js.Any): js.Any = js.native
-  def ejProgressBar(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejProgressBar(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejProgressBar(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejProgressBar(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejProgressBar(options: Model): JQuery = js.native
   
   def ejRTE(): JQuery = js.native
   def ejRTE(memberName: js.Any): js.Any = js.native
-  def ejRTE(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejRTE(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRTE(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejRTE(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejRTE(options: Model): JQuery = js.native
   
   def ejRadialMenu(): JQuery = js.native
   def ejRadialMenu(memberName: js.Any): js.Any = js.native
-  def ejRadialMenu(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejRadialMenu(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRadialMenu(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejRadialMenu(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejRadialMenu(options: Model): JQuery = js.native
   
   def ejRadialSlider(): JQuery = js.native
   def ejRadialSlider(memberName: js.Any): js.Any = js.native
-  def ejRadialSlider(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejRadialSlider(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRadialSlider(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejRadialSlider(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejRadialSlider(options: Model): JQuery = js.native
   
   def ejRadioButton(): JQuery = js.native
   def ejRadioButton(memberName: js.Any): js.Any = js.native
-  def ejRadioButton(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejRadioButton(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRadioButton(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejRadioButton(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejRadioButton(options: Model): JQuery = js.native
   
   def ejRangeNavigator(): JQuery = js.native
   def ejRangeNavigator(memberName: js.Any): js.Any = js.native
-  def ejRangeNavigator(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejRangeNavigator(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRangeNavigator(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejRangeNavigator(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejRangeNavigator(options: Model): JQuery = js.native
   
   def ejRating(): JQuery = js.native
   def ejRating(memberName: js.Any): js.Any = js.native
-  def ejRating(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejRating(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRating(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejRating(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejRating(options: Model): JQuery = js.native
   
   def ejRecurrenceEditor(): JQuery = js.native
   def ejRecurrenceEditor(memberName: js.Any): js.Any = js.native
-  def ejRecurrenceEditor(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejRecurrenceEditor(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRecurrenceEditor(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejRecurrenceEditor(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejRecurrenceEditor(options: Model): JQuery = js.native
   
   def ejReportDesigner(): JQuery = js.native
   def ejReportDesigner(memberName: js.Any): js.Any = js.native
-  def ejReportDesigner(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejReportDesigner(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejReportDesigner(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejReportDesigner(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejReportDesigner(options: Model): JQuery = js.native
   
   def ejReportViewer(): JQuery = js.native
   def ejReportViewer(memberName: js.Any): js.Any = js.native
-  def ejReportViewer(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejReportViewer(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejReportViewer(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejReportViewer(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejReportViewer(options: Model): JQuery = js.native
   
   def ejResizable(): JQuery = js.native
   def ejResizable(memberName: js.Any): js.Any = js.native
-  def ejResizable(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejResizable(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejResizable(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejResizable(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejResizable(options: Model): JQuery = js.native
   
   def ejRibbon(): JQuery = js.native
   def ejRibbon(memberName: js.Any): js.Any = js.native
-  def ejRibbon(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejRibbon(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRibbon(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejRibbon(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejRibbon(options: Model): JQuery = js.native
   
   def ejRotator(): JQuery = js.native
   def ejRotator(memberName: js.Any): js.Any = js.native
-  def ejRotator(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejRotator(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRotator(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejRotator(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejRotator(options: Model): JQuery = js.native
   
   def ejSchedule(): JQuery = js.native
   def ejSchedule(memberName: js.Any): js.Any = js.native
-  def ejSchedule(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejSchedule(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSchedule(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejSchedule(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejSchedule(options: Model): JQuery = js.native
   
   def ejScroller(): JQuery = js.native
   def ejScroller(memberName: js.Any): js.Any = js.native
-  def ejScroller(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejScroller(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejScroller(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejScroller(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejScroller(options: Model): JQuery = js.native
   
   def ejSignature(): JQuery = js.native
   def ejSignature(memberName: js.Any): js.Any = js.native
-  def ejSignature(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejSignature(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSignature(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejSignature(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejSignature(options: Model): JQuery = js.native
   
   def ejSlider(): JQuery = js.native
   def ejSlider(memberName: js.Any): js.Any = js.native
-  def ejSlider(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejSlider(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSlider(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejSlider(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejSlider(options: Model): JQuery = js.native
   
   def ejSparkline(): JQuery = js.native
   def ejSparkline(memberName: js.Any): js.Any = js.native
-  def ejSparkline(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejSparkline(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSparkline(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejSparkline(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejSparkline(options: typings.ejWebAll.ej.Sparkline.Model): JQuery = js.native
   
   def ejSpellCheck(): JQuery = js.native
   def ejSpellCheck(memberName: js.Any): js.Any = js.native
-  def ejSpellCheck(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejSpellCheck(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSpellCheck(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejSpellCheck(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejSpellCheck(options: Model): JQuery = js.native
   
   def ejSplitButton(): JQuery = js.native
   def ejSplitButton(memberName: js.Any): js.Any = js.native
-  def ejSplitButton(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejSplitButton(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSplitButton(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejSplitButton(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejSplitButton(options: Model): JQuery = js.native
   
   def ejSplitter(): JQuery = js.native
   def ejSplitter(memberName: js.Any): js.Any = js.native
-  def ejSplitter(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejSplitter(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSplitter(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejSplitter(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejSplitter(options: Model): JQuery = js.native
   
   def ejSpreadsheet(): JQuery = js.native
   def ejSpreadsheet(memberName: js.Any): js.Any = js.native
-  def ejSpreadsheet(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejSpreadsheet(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSpreadsheet(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejSpreadsheet(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejSpreadsheet(options: Model): JQuery = js.native
   
   def ejSunburstChart(): JQuery = js.native
   def ejSunburstChart(memberName: js.Any): js.Any = js.native
-  def ejSunburstChart(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejSunburstChart(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSunburstChart(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejSunburstChart(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejSunburstChart(options: typings.ejWebAll.ej.SunburstChart.Model): JQuery = js.native
   
   def ejSymbolPalette(): JQuery = js.native
   def ejSymbolPalette(memberName: js.Any): js.Any = js.native
-  def ejSymbolPalette(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejSymbolPalette(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSymbolPalette(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejSymbolPalette(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejSymbolPalette(options: Model): JQuery = js.native
   
   def ejTab(): JQuery = js.native
   def ejTab(memberName: js.Any): js.Any = js.native
-  def ejTab(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejTab(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTab(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejTab(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejTab(options: Model): JQuery = js.native
   
   def ejTagCloud(): JQuery = js.native
   def ejTagCloud(memberName: js.Any): js.Any = js.native
-  def ejTagCloud(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejTagCloud(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTagCloud(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejTagCloud(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejTagCloud(options: Model): JQuery = js.native
   
   def ejTile(): JQuery = js.native
   def ejTile(memberName: js.Any): js.Any = js.native
-  def ejTile(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejTile(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTile(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejTile(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejTile(options: Model): JQuery = js.native
   
   def ejTimePicker(): JQuery = js.native
   def ejTimePicker(memberName: js.Any): js.Any = js.native
-  def ejTimePicker(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejTimePicker(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTimePicker(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejTimePicker(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejTimePicker(options: Model): JQuery = js.native
   
   def ejToggleButton(): JQuery = js.native
   def ejToggleButton(memberName: js.Any): js.Any = js.native
-  def ejToggleButton(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejToggleButton(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejToggleButton(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejToggleButton(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejToggleButton(options: Model): JQuery = js.native
   
   def ejToolbar(): JQuery = js.native
   def ejToolbar(memberName: js.Any): js.Any = js.native
-  def ejToolbar(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejToolbar(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejToolbar(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejToolbar(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejToolbar(options: Model): JQuery = js.native
   
   def ejTooltip(): JQuery = js.native
   def ejTooltip(memberName: js.Any): js.Any = js.native
-  def ejTooltip(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejTooltip(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTooltip(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejTooltip(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejTooltip(options: Model): JQuery = js.native
   
   def ejTreeGrid(): JQuery = js.native
   def ejTreeGrid(memberName: js.Any): js.Any = js.native
-  def ejTreeGrid(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejTreeGrid(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTreeGrid(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejTreeGrid(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejTreeGrid(options: Model): JQuery = js.native
   
   def ejTreeMap(): JQuery = js.native
   def ejTreeMap(memberName: js.Any): js.Any = js.native
-  def ejTreeMap(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejTreeMap(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTreeMap(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejTreeMap(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejTreeMap(options: Model): JQuery = js.native
   
   def ejTreeView(): JQuery = js.native
   def ejTreeView(memberName: js.Any): js.Any = js.native
-  def ejTreeView(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejTreeView(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTreeView(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejTreeView(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejTreeView(options: Model): JQuery = js.native
   
   def ejUploadbox(): JQuery = js.native
   def ejUploadbox(memberName: js.Any): js.Any = js.native
-  def ejUploadbox(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejUploadbox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejUploadbox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejUploadbox(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejUploadbox(options: Model): JQuery = js.native
   
   def ejWaitingPopup(): JQuery = js.native
   def ejWaitingPopup(memberName: js.Any): js.Any = js.native
-  def ejWaitingPopup(memberName: js.Any, value: js.UndefOr[scala.Nothing], param: js.Any): js.Any = js.native
   def ejWaitingPopup(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejWaitingPopup(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
+  def ejWaitingPopup(memberName: js.Any, value: Unit, param: js.Any): js.Any = js.native
   def ejWaitingPopup(options: Model): JQuery = js.native
 }

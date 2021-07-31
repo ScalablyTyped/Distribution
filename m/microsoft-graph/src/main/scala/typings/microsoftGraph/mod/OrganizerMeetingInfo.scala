@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OrganizerMeetingInfo extends MeetingInfo {
+trait OrganizerMeetingInfo
+  extends StObject
+     with MeetingInfo {
   
   // The organizer Azure Active Directory identity.
-  var organizer: js.UndefOr[IdentitySet] = js.native
+  var organizer: js.UndefOr[IdentitySet] = js.undefined
 }
 object OrganizerMeetingInfo {
   

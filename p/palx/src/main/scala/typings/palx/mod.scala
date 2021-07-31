@@ -3,51 +3,52 @@ package typings.palx
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("palx", JSImport.Namespace)
-  @js.native
-  def apply(hex: String): PalxPalette = js.native
-  @JSImport("palx", JSImport.Namespace)
-  @js.native
-  def apply(hex: String, options: js.Object): PalxPalette = js.native
+  @scala.inline
+  def apply(hex: String): PalxPalette = ^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any]).asInstanceOf[PalxPalette]
+  @scala.inline
+  def apply(hex: String, options: js.Object): PalxPalette = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PalxPalette]
   
+  @JSImport("palx", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait PalxPalette
-    extends /* name */ StringDictionary[String | js.Array[String]] {
+    extends StObject
+       with /* name */ StringDictionary[String | js.Array[String]] {
     
-    var base: String = js.native
+    var base: String
     
-    var black: String = js.native
+    var black: String
     
-    var blue: js.Array[String] = js.native
+    var blue: js.Array[String]
     
-    var cyan: js.Array[String] = js.native
+    var cyan: js.Array[String]
     
-    var fuschia: js.Array[String] = js.native
+    var fuschia: js.Array[String]
     
-    var gray: js.Array[String] = js.native
+    var gray: js.Array[String]
     
-    var green: js.Array[String] = js.native
+    var green: js.Array[String]
     
-    var indigo: js.Array[String] = js.native
+    var indigo: js.Array[String]
     
-    var lime: js.Array[String] = js.native
+    var lime: js.Array[String]
     
-    var orange: js.Array[String] = js.native
+    var orange: js.Array[String]
     
-    var pink: js.Array[String] = js.native
+    var pink: js.Array[String]
     
-    var red: js.Array[String] = js.native
+    var red: js.Array[String]
     
-    var teal: js.Array[String] = js.native
+    var teal: js.Array[String]
     
-    var violet: js.Array[String] = js.native
+    var violet: js.Array[String]
     
-    var yellow: js.Array[String] = js.native
+    var yellow: js.Array[String]
   }
   object PalxPalette {
     

@@ -2,19 +2,17 @@ package typings.minecraftScriptingTypesServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is used to send a chat message from the server to the players. The event data is the message being sent as a string. Special formatting is supported the same way it would be if a player was sending the message.
   */
-@js.native
 trait IDisplayChatParameters extends StObject {
   
   /**
     * The chat message that will be displayed
     */
-  var message: String = js.native
+  var message: String
 }
 object IDisplayChatParameters {
   

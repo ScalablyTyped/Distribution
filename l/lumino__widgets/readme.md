@@ -10,9 +10,9 @@ Lumino Widgets
 | ------------------ | :-------------: |
 | Full name          | @lumino/widgets |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 202 |
-| # downloads        | 541279 |
+| # releases         | 28 |
+| # dependents       | 309 |
+| # downloads        | 1283349 |
 | # stars            | 0 |
 
 ## Links

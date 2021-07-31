@@ -2,17 +2,15 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * For use with `Date`, `Timestamp`, and `TimeOfDay`, extract or preserve a
   * portion of the value.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2TimePartConfig extends StObject {
   
-  var partToExtract: js.UndefOr[String] = js.native
+  var partToExtract: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2TimePartConfig {
   

@@ -2,50 +2,48 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaseSensitive extends StObject {
   
   /** Indicates if the filter expressions are case sensitive. */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /** Expression to extract from field A. */
-  var extractA: js.UndefOr[String] = js.native
+  var extractA: js.UndefOr[String] = js.undefined
   
   /** Expression to extract from field B. */
-  var extractB: js.UndefOr[String] = js.native
+  var extractB: js.UndefOr[String] = js.undefined
   
   /** Field A. */
-  var fieldA: js.UndefOr[String] = js.native
+  var fieldA: js.UndefOr[String] = js.undefined
   
   /** The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION. */
-  var fieldAIndex: js.UndefOr[Double] = js.native
+  var fieldAIndex: js.UndefOr[Double] = js.undefined
   
   /** Indicates if field A is required to match. */
-  var fieldARequired: js.UndefOr[Boolean] = js.native
+  var fieldARequired: js.UndefOr[Boolean] = js.undefined
   
   /** Field B. */
-  var fieldB: js.UndefOr[String] = js.native
+  var fieldB: js.UndefOr[String] = js.undefined
   
   /** The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION. */
-  var fieldBIndex: js.UndefOr[Double] = js.native
+  var fieldBIndex: js.UndefOr[Double] = js.undefined
   
   /** Indicates if field B is required to match. */
-  var fieldBRequired: js.UndefOr[Boolean] = js.native
+  var fieldBRequired: js.UndefOr[Boolean] = js.undefined
   
   /** Expression used to construct the output value. */
-  var outputConstructor: js.UndefOr[String] = js.native
+  var outputConstructor: js.UndefOr[String] = js.undefined
   
   /** Output field. */
-  var outputToField: js.UndefOr[String] = js.native
+  var outputToField: js.UndefOr[String] = js.undefined
   
   /** The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION. */
-  var outputToFieldIndex: js.UndefOr[Double] = js.native
+  var outputToFieldIndex: js.UndefOr[Double] = js.undefined
   
   /** Indicates if the existing value of the output field, if any, should be overridden by the output expression. */
-  var overrideOutputField: js.UndefOr[Boolean] = js.native
+  var overrideOutputField: js.UndefOr[Boolean] = js.undefined
 }
 object CaseSensitive {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactWriteItem extends StObject {
   
   /**
     * A request to perform a check item operation.
     */
-  var ConditionCheck: js.UndefOr[typings.awsSdk.dynamodbMod.ConditionCheck] = js.native
+  var ConditionCheck: js.UndefOr[typings.awsSdk.dynamodbMod.ConditionCheck] = js.undefined
   
   /**
     * A request to perform a DeleteItem operation.
     */
-  var Delete: js.UndefOr[typings.awsSdk.dynamodbMod.Delete] = js.native
+  var Delete: js.UndefOr[typings.awsSdk.dynamodbMod.Delete] = js.undefined
   
   /**
     * A request to perform a PutItem operation.
     */
-  var Put: js.UndefOr[typings.awsSdk.dynamodbMod.Put] = js.native
+  var Put: js.UndefOr[typings.awsSdk.dynamodbMod.Put] = js.undefined
   
   /**
     * A request to perform an UpdateItem operation.
     */
-  var Update: js.UndefOr[typings.awsSdk.dynamodbMod.Update] = js.native
+  var Update: js.UndefOr[typings.awsSdk.dynamodbMod.Update] = js.undefined
 }
 object TransactWriteItem {
   

@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryRelationsArgument. */
-@js.native
 trait QueryRelationsArgument extends StObject {
   
   /** Array of query entities. */
-  var entities: js.UndefOr[js.Array[QueryEntitiesEntity]] = js.native
+  var entities: js.UndefOr[js.Array[QueryEntitiesEntity]] = js.undefined
 }
 object QueryRelationsArgument {
   

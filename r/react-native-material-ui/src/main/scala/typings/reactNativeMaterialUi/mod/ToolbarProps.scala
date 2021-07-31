@@ -3,33 +3,31 @@ package typings.reactNativeMaterialUi.mod
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarProps extends StObject {
   
-  var centerElement: js.UndefOr[Element | String] = js.native
+  var centerElement: js.UndefOr[Element | String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var isSearchActive: js.UndefOr[Boolean] = js.native
+  var isSearchActive: js.UndefOr[Boolean] = js.undefined
   
-  var leftElement: js.UndefOr[Element | String] = js.native
+  var leftElement: js.UndefOr[Element | String] = js.undefined
   
-  var onLeftElementPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLeftElementPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onRightElementPress: js.UndefOr[js.Function1[/* e */ RightElementPressEvent, Unit]] = js.native
+  var onRightElementPress: js.UndefOr[js.Function1[/* e */ RightElementPressEvent, Unit]] = js.undefined
   
-  var rightElement: js.UndefOr[Element | String | js.Array[String] | ToolBarRightElement] = js.native
+  var rightElement: js.UndefOr[Element | String | js.Array[String] | ToolBarRightElement] = js.undefined
   
-  var searchable: js.UndefOr[Searchable] = js.native
+  var searchable: js.UndefOr[Searchable] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[ToolbarStyle] = js.native
+  var style: js.UndefOr[ToolbarStyle] = js.undefined
 }
 object ToolbarProps {
   

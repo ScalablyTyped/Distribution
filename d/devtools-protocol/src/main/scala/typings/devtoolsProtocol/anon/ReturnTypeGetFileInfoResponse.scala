@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetFileInfoRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetFileInfoResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetFileInfoResponse extends StObject {
   
-  var paramsType: js.Array[GetFileInfoRequest] = js.native
+  var paramsType: js.Array[GetFileInfoRequest]
   
-  var returnType: GetFileInfoResponse = js.native
+  var returnType: GetFileInfoResponse
 }
 object ReturnTypeGetFileInfoResponse {
   

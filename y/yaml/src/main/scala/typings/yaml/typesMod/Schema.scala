@@ -12,7 +12,6 @@ import typings.yaml.typesMod.Schema.Tag
 import typings.yaml.yamlBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yaml/types", "Schema")
@@ -31,18 +30,13 @@ class Schema protected () extends StObject {
     *   this requires the corresponding tag to be available in this schema.
     */
   def createNode(value: js.Any): Node = js.native
-  def createNode(
-    value: js.Any,
-    wrapScalars: js.UndefOr[scala.Nothing],
-    tag: js.UndefOr[scala.Nothing],
-    ctx: CreateNodeContext
-  ): Node = js.native
-  def createNode(value: js.Any, wrapScalars: js.UndefOr[scala.Nothing], tag: String): Node = js.native
-  def createNode(value: js.Any, wrapScalars: js.UndefOr[scala.Nothing], tag: String, ctx: CreateNodeContext): Node = js.native
   def createNode(value: js.Any, wrapScalars: Boolean): Node = js.native
-  def createNode(value: js.Any, wrapScalars: Boolean, tag: js.UndefOr[scala.Nothing], ctx: CreateNodeContext): Node = js.native
   def createNode(value: js.Any, wrapScalars: Boolean, tag: String): Node = js.native
   def createNode(value: js.Any, wrapScalars: Boolean, tag: String, ctx: CreateNodeContext): Node = js.native
+  def createNode(value: js.Any, wrapScalars: Boolean, tag: Unit, ctx: CreateNodeContext): Node = js.native
+  def createNode(value: js.Any, wrapScalars: Unit, tag: String): Node = js.native
+  def createNode(value: js.Any, wrapScalars: Unit, tag: String, ctx: CreateNodeContext): Node = js.native
+  def createNode(value: js.Any, wrapScalars: Unit, tag: Unit, ctx: CreateNodeContext): Node = js.native
   
   /**
     * Convert a key and a value into a `Pair` using this schema, recursively
@@ -81,7 +75,6 @@ object Schema {
   @scala.inline
   def defaultTags_=(x: MAP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTags")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait BaseTag extends StObject {
     
     /**
@@ -94,28 +87,28 @@ object Schema {
           /* ctx */ CreateNodeContext, 
           YAMLMap | YAMLSeq | Scalar
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If a tag has multiple forms that should be parsed and/or stringified differently, use `format` to identify them.
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * Used by `YAML.createNode` to detect your data type, e.g. using `typeof` or
       * `instanceof`.
       */
-    def identify(value: js.Any): Boolean = js.native
+    def identify(value: js.Any): Boolean
     
     /**
       * The `Node` child class that implements this tag. Required for collections and tags that have overlapping JS representations.
       */
-    var nodeClass: js.UndefOr[Instantiable0[js.Any]] = js.native
+    var nodeClass: js.UndefOr[Instantiable0[js.Any]] = js.undefined
     
     /**
       * Used by some tags to configure their stringification, where applicable.
       */
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Optional function stringifying the AST node in the current context. If your
@@ -137,14 +130,14 @@ object Schema {
           /* onChompKeep */ js.UndefOr[js.Function0[Unit]], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The identifier for your data type, with which its stringified form will be
       * prefixed. Should either be a !-prefixed local `!tag`, or a fully qualified
       * `tag:domain,date:foo`.
       */
-    var tag: String = js.native
+    var tag: String
   }
   object BaseTag {
     
@@ -199,11 +192,11 @@ object Schema {
     }
   }
   
-  @js.native
   trait CreateNodeContext
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var wrapScalars: js.UndefOr[Boolean] = js.native
+    var wrapScalars: js.UndefOr[Boolean] = js.undefined
   }
   object CreateNodeContext {
     
@@ -224,22 +217,22 @@ object Schema {
     }
   }
   
-  @js.native
   trait CustomTag
-    extends BaseTag
+    extends StObject
+       with BaseTag
        with Tag {
     
     /**
       * A JavaScript class that should be matched to this tag, e.g. `Date` for `!!timestamp`.
       * @deprecated Use `Tag.identify` instead
       */
-    var `class`: js.UndefOr[Instantiable0[js.Any]] = js.native
+    var `class`: js.UndefOr[Instantiable0[js.Any]] = js.undefined
     
     /**
       * Turns a CST node into an AST node. If returning a non-`Node` value, the
       * output will be wrapped as a `Scalar`.
       */
-    def resolve(doc: Document, cstNode: typings.yaml.parseCstMod.CST.Node): Node | js.Any = js.native
+    def resolve(doc: Document, cstNode: typings.yaml.parseCstMod.CST.Node): Node | js.Any
   }
   object CustomTag {
     
@@ -267,9 +260,9 @@ object Schema {
     }
   }
   
-  @js.native
   trait DefaultTag
-    extends BaseTag
+    extends StObject
+       with BaseTag
        with Tag {
     
     /**
@@ -277,12 +270,12 @@ object Schema {
       * an explicit tag. For most cases, it's unlikely that you'll actually want to
       * use this, even if you first think you do.
       */
-    var default: `true` = js.native
+    var default: `true`
     
     /**
       * Alternative form used by default tags; called with `test` match results.
       */
-    def resolve(`match`: String*): Node | js.Any = js.native
+    def resolve(`match`: String*): Node | js.Any
     
     /**
       * Together with `default` allows for values to be stringified without an
@@ -290,19 +283,18 @@ object Schema {
       * unlikely that you'll actually want to use these, even if you first think
       * you do.
       */
-    var test: RegExp = js.native
+    var test: RegExp
   }
   object DefaultTag {
     
     @scala.inline
     def apply(
-      default: `true`,
       identify: js.Any => Boolean,
       resolve: /* repeated */ String => Node | js.Any,
       tag: String,
       test: RegExp
     ): DefaultTag = {
-      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], identify = js.Any.fromFunction1(identify), resolve = js.Any.fromFunction1(resolve), tag = tag.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(default = true, identify = js.Any.fromFunction1(identify), resolve = js.Any.fromFunction1(resolve), tag = tag.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultTag]
     }
     
@@ -342,7 +334,6 @@ object Schema {
     def `yaml-1Dot1`: typings.yaml.yamlStrings.`yaml-1Dot1` = "yaml-1.1".asInstanceOf[typings.yaml.yamlStrings.`yaml-1Dot1`]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -351,35 +342,35 @@ object Schema {
       */
     var customTags: js.UndefOr[
         (js.Array[TagId | Tag]) | (js.Function1[/* tags */ js.Array[Tag], js.Array[Tag]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Enable support for `<<` merge keys.
       *
       * Default: `false` for YAML 1.2, `true` for earlier versions
       */
-    var merge: js.UndefOr[Boolean] = js.native
+    var merge: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The base schema to use.
       *
       * Default: `"core"` for YAML 1.2, `"yaml-1.1"` for earlier versions
       */
-    var schema: js.UndefOr[Name] = js.native
+    var schema: js.UndefOr[Name] = js.undefined
     
     /**
       * When stringifying, sort map entries. If `true`, sort by comparing key values with `<`.
       *
       * Default: `false`
       */
-    var sortMapEntries: js.UndefOr[Boolean | (js.Function2[/* a */ Pair, /* b */ Pair, Double])] = js.native
+    var sortMapEntries: js.UndefOr[Boolean | (js.Function2[/* a */ Pair, /* b */ Pair, Double])] = js.undefined
     
     /**
       * @deprecated Use `customTags` instead.
       */
     var tags: js.UndefOr[
         (js.Array[TagId | Tag]) | (js.Function1[/* tags */ js.Array[Tag], js.Array[Tag]])
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -439,19 +430,19 @@ object Schema {
     }
   }
   
-  @js.native
   trait StringifyContext
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var forceBlockIndent: js.UndefOr[Boolean] = js.native
+    var forceBlockIndent: js.UndefOr[Boolean] = js.undefined
     
-    var implicitKey: js.UndefOr[Boolean] = js.native
+    var implicitKey: js.UndefOr[Boolean] = js.undefined
     
-    var inFlow: js.UndefOr[Boolean] = js.native
+    var inFlow: js.UndefOr[Boolean] = js.undefined
     
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
-    var indentAtStart: js.UndefOr[Double] = js.native
+    var indentAtStart: js.UndefOr[Double] = js.undefined
   }
   object StringifyContext {
     
@@ -515,13 +506,12 @@ object Schema {
     
     @scala.inline
     def DefaultTag(
-      default: `true`,
       identify: js.Any => Boolean,
       resolve: /* repeated */ String => Node | js.Any,
       tag: String,
       test: RegExp
     ): typings.yaml.typesMod.Schema.DefaultTag = {
-      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], identify = js.Any.fromFunction1(identify), resolve = js.Any.fromFunction1(resolve), tag = tag.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(default = true, identify = js.Any.fromFunction1(identify), resolve = js.Any.fromFunction1(resolve), tag = tag.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.yaml.typesMod.Schema.DefaultTag]
     }
   }

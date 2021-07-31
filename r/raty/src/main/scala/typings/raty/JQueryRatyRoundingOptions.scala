@@ -2,17 +2,15 @@ package typings.raty
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryRatyRoundingOptions extends StObject {
   
-  var down: Double = js.native
+  var down: Double
   
-  var full: Double = js.native
+  var full: Double
   
-  var up: Double = js.native
+  var up: Double
 }
 object JQueryRatyRoundingOptions {
   

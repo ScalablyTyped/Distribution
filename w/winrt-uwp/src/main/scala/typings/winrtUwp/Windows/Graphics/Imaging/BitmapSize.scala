@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the size of a bitmap, in pixels. */
-@js.native
 trait BitmapSize extends StObject {
   
   /** The height of a bitmap, in pixels. */
-  var height: Double = js.native
+  var height: Double
   
   /** The width of a bitmap, in pixels. */
-  var width: Double = js.native
+  var width: Double
 }
 object BitmapSize {
   

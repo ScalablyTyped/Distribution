@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringDestination extends StObject {
   
   /** Types of the metrics to report to this monitoring destination. Each type must be defined in Service.metrics section. */
-  var metrics: js.UndefOr[js.Array[String]] = js.native
+  var metrics: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The monitored resource type. The type must be defined in Service.monitored_resources section. */
-  var monitoredResource: js.UndefOr[String] = js.native
+  var monitoredResource: js.UndefOr[String] = js.undefined
 }
 object MonitoringDestination {
   

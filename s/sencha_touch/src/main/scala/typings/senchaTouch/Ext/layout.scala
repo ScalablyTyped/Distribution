@@ -3,13 +3,13 @@ package typings.senchaTouch.Ext
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layout {
   
-  @js.native
-  trait IAbstract extends IObservable {
+  trait IAbstract
+    extends StObject
+       with IObservable {
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -19,7 +19,7 @@ object layout {
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
   }
   object IAbstract {
     
@@ -40,26 +40,27 @@ object layout {
     }
   }
   
-  @js.native
-  trait IBox extends IDefault {
+  trait IBox
+    extends StObject
+       with IDefault {
     
     /** [Config Option] (String) */
-    var align: js.UndefOr[java.lang.String] = js.native
+    var align: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Returns the value of align
       * @returns String
       */
-    var getAlign: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getAlign: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of orient
       * @returns String
       */
-    var getOrient: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getOrient: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of pack
       * @returns String
       */
-    var getPack: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getPack: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method]
       * @param item Object
@@ -68,25 +69,25 @@ object layout {
     @JSName("onItemInnerStateChange")
     var onItemInnerStateChange_IBox: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var pack: js.UndefOr[java.lang.String] = js.native
+    var pack: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Sets the value of align
       * @param align String The new value.
       */
-    var setAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of orient
       * @param orient String The new value.
       */
-    var setOrient: js.UndefOr[js.Function1[/* orient */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setOrient: js.UndefOr[js.Function1[/* orient */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of pack
       * @param pack String The new value.
       */
-    var setPack: js.UndefOr[js.Function1[/* pack */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setPack: js.UndefOr[js.Function1[/* pack */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   }
   object IBox {
     
@@ -155,8 +156,9 @@ object layout {
     }
   }
   
-  @js.native
-  trait ICard extends IDefault {
+  trait ICard
+    extends StObject
+       with IDefault {
     
     /** [Method]
       * @param item Object
@@ -171,7 +173,7 @@ object layout {
           /* destroying */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ICard {
     
@@ -194,16 +196,17 @@ object layout {
     }
   }
   
-  @js.native
-  trait IDefault extends IAbstract {
+  trait IDefault
+    extends StObject
+       with IAbstract {
     
     /** [Config Option] (Ext.fx.layout.Card) */
-    var animation: js.UndefOr[typings.senchaTouch.Ext.fx.layout.ICard] = js.native
+    var animation: js.UndefOr[typings.senchaTouch.Ext.fx.layout.ICard] = js.undefined
     
     /** [Method] Returns the value of animation
       * @returns Ext.fx.layout.Card
       */
-    var getAnimation: js.UndefOr[js.Function0[typings.senchaTouch.Ext.fx.layout.ICard]] = js.native
+    var getAnimation: js.UndefOr[js.Function0[typings.senchaTouch.Ext.fx.layout.ICard]] = js.undefined
     
     /** [Method]
       * @param item Ext.Component
@@ -217,14 +220,14 @@ object layout {
           /* destroying */ js.UndefOr[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of animation
       * @param animation Ext.fx.layout.Card The new value.
       */
     var setAnimation: js.UndefOr[
         js.Function1[/* animation */ js.UndefOr[typings.senchaTouch.Ext.fx.layout.ICard], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object IDefault {
     
@@ -265,8 +268,9 @@ object layout {
     }
   }
   
-  @js.native
-  trait IFit extends IDefault {
+  trait IFit
+    extends StObject
+       with IDefault {
     
     /** [Method]
       * @param item Object
@@ -275,7 +279,7 @@ object layout {
     @JSName("onItemInnerStateChange")
     var onItemInnerStateChange_IFit: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object IFit {
     
@@ -296,8 +300,9 @@ object layout {
     }
   }
   
-  @js.native
-  trait IFlexBox extends IBox {
+  trait IFlexBox
+    extends StObject
+       with IBox {
     
     /** [Method] Sets the flex of an item in this box layout
       * @param item Ext.Component The item of this layout which you want to update the flex of.
@@ -305,7 +310,7 @@ object layout {
       */
     var setItemFlex: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[IComponent], /* flex */ js.UndefOr[Double], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object IFlexBox {
     
@@ -326,13 +331,14 @@ object layout {
     }
   }
   
-  @js.native
-  trait IFloat extends IDefault {
+  trait IFloat
+    extends StObject
+       with IDefault {
     
     /** [Method] Returns the value of direction
       * @returns String
       */
-    var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method]
       * @param item Object
@@ -341,12 +347,12 @@ object layout {
     @JSName("onItemInnerStateChange")
     var onItemInnerStateChange_IFloat: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of direction
       * @param direction String The new value.
       */
-    var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   }
   object IFloat {
     
@@ -381,8 +387,9 @@ object layout {
   
   type IHBox = IFlexBox
   
-  @js.native
-  trait IVBox extends IFlexBox
+  trait IVBox
+    extends StObject
+       with IFlexBox
   object IVBox {
     
     @scala.inline
@@ -394,68 +401,69 @@ object layout {
   
   object wrapper {
     
-    @js.native
-    trait IBoxDock extends IBase {
+    trait IBoxDock
+      extends StObject
+         with IBase {
       
       /** [Method] Returns the value of bodyElement
         * @returns Object
         */
-      var getBodyElement: js.UndefOr[js.Function0[_]] = js.native
+      var getBodyElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of container
         * @returns Object
         */
-      var getContainer: js.UndefOr[js.Function0[_]] = js.native
+      var getContainer: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of direction
         * @returns String
         */
-      var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.native
+      var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
       
       /** [Method] Returns the value of element
         * @returns Object
         */
-      var getElement: js.UndefOr[js.Function0[_]] = js.native
+      var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of innerWrapper
         * @returns Object
         */
-      var getInnerWrapper: js.UndefOr[js.Function0[_]] = js.native
+      var getInnerWrapper: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of sizeState
         * @returns Boolean
         */
-      var getSizeState: js.UndefOr[js.Function0[Boolean]] = js.native
+      var getSizeState: js.UndefOr[js.Function0[Boolean]] = js.undefined
       
       /** [Method] Sets the value of bodyElement
         * @param bodyElement Object The new value.
         */
-      var setBodyElement: js.UndefOr[js.Function1[/* bodyElement */ js.UndefOr[js.Any], Unit]] = js.native
+      var setBodyElement: js.UndefOr[js.Function1[/* bodyElement */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of container
         * @param container Object The new value.
         */
-      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[js.Any], Unit]] = js.native
+      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of direction
         * @param direction String The new value.
         */
-      var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.native
+      var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
       
       /** [Method] Sets the value of element
         * @param element Object The new value.
         */
-      var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.native
+      var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of innerWrapper
         * @param innerWrapper Object The new value.
         */
-      var setInnerWrapper: js.UndefOr[js.Function1[/* innerWrapper */ js.UndefOr[js.Any], Unit]] = js.native
+      var setInnerWrapper: js.UndefOr[js.Function1[/* innerWrapper */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of sizeState
         * @param sizeState Boolean The new value.
         */
-      var setSizeState: js.UndefOr[js.Function1[/* sizeState */ js.UndefOr[Boolean], Unit]] = js.native
+      var setSizeState: js.UndefOr[js.Function1[/* sizeState */ js.UndefOr[Boolean], Unit]] = js.undefined
     }
     object IBoxDock {
       
@@ -469,13 +477,13 @@ object layout {
       implicit class IBoxDockMutableBuilder[Self <: IBoxDock] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setGetBodyElement(value: () => _): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
+        def setGetBodyElement(value: () => js.Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetBodyElementUndefined: Self = StObject.set(x, "getBodyElement", js.undefined)
         
         @scala.inline
-        def setGetContainer(value: () => _): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+        def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
@@ -487,13 +495,13 @@ object layout {
         def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
         
         @scala.inline
-        def setGetElement(value: () => _): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+        def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
         
         @scala.inline
-        def setGetInnerWrapper(value: () => _): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
+        def setGetInnerWrapper(value: () => js.Any): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetInnerWrapperUndefined: Self = StObject.set(x, "getInnerWrapper", js.undefined)
@@ -542,68 +550,69 @@ object layout {
       }
     }
     
-    @js.native
-    trait IDock extends IBase {
+    trait IDock
+      extends StObject
+         with IBase {
       
       /** [Method] Returns the value of bodyElement
         * @returns Object
         */
-      var getBodyElement: js.UndefOr[js.Function0[_]] = js.native
+      var getBodyElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of container
         * @returns Object
         */
-      var getContainer: js.UndefOr[js.Function0[_]] = js.native
+      var getContainer: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of direction
         * @returns String
         */
-      var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.native
+      var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
       
       /** [Method] Returns the value of element
         * @returns Object
         */
-      var getElement: js.UndefOr[js.Function0[_]] = js.native
+      var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of innerWrapper
         * @returns Object
         */
-      var getInnerWrapper: js.UndefOr[js.Function0[_]] = js.native
+      var getInnerWrapper: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of sizeState
         * @returns Boolean
         */
-      var getSizeState: js.UndefOr[js.Function0[Boolean]] = js.native
+      var getSizeState: js.UndefOr[js.Function0[Boolean]] = js.undefined
       
       /** [Method] Sets the value of bodyElement
         * @param bodyElement Object The new value.
         */
-      var setBodyElement: js.UndefOr[js.Function1[/* bodyElement */ js.UndefOr[js.Any], Unit]] = js.native
+      var setBodyElement: js.UndefOr[js.Function1[/* bodyElement */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of container
         * @param container Object The new value.
         */
-      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[js.Any], Unit]] = js.native
+      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of direction
         * @param direction String The new value.
         */
-      var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.native
+      var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
       
       /** [Method] Sets the value of element
         * @param element Object The new value.
         */
-      var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.native
+      var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of innerWrapper
         * @param innerWrapper Object The new value.
         */
-      var setInnerWrapper: js.UndefOr[js.Function1[/* innerWrapper */ js.UndefOr[js.Any], Unit]] = js.native
+      var setInnerWrapper: js.UndefOr[js.Function1[/* innerWrapper */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of sizeState
         * @param sizeState Boolean The new value.
         */
-      var setSizeState: js.UndefOr[js.Function1[/* sizeState */ js.UndefOr[Boolean], Unit]] = js.native
+      var setSizeState: js.UndefOr[js.Function1[/* sizeState */ js.UndefOr[Boolean], Unit]] = js.undefined
     }
     object IDock {
       
@@ -617,13 +626,13 @@ object layout {
       implicit class IDockMutableBuilder[Self <: IDock] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setGetBodyElement(value: () => _): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
+        def setGetBodyElement(value: () => js.Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetBodyElementUndefined: Self = StObject.set(x, "getBodyElement", js.undefined)
         
         @scala.inline
-        def setGetContainer(value: () => _): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+        def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
@@ -635,13 +644,13 @@ object layout {
         def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
         
         @scala.inline
-        def setGetElement(value: () => _): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+        def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
         
         @scala.inline
-        def setGetInnerWrapper(value: () => _): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
+        def setGetInnerWrapper(value: () => js.Any): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetInnerWrapperUndefined: Self = StObject.set(x, "getInnerWrapper", js.undefined)
@@ -690,28 +699,29 @@ object layout {
       }
     }
     
-    @js.native
-    trait IInner extends IBase {
+    trait IInner
+      extends StObject
+         with IBase {
       
       /** [Method] Returns the value of container
         * @returns Object
         */
-      var getContainer: js.UndefOr[js.Function0[_]] = js.native
+      var getContainer: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of sizeState
         * @returns Object
         */
-      var getSizeState: js.UndefOr[js.Function0[_]] = js.native
+      var getSizeState: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Sets the value of container
         * @param container Object The new value.
         */
-      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[js.Any], Unit]] = js.native
+      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of sizeState
         * @param sizeState Object The new value.
         */
-      var setSizeState: js.UndefOr[js.Function1[/* sizeState */ js.UndefOr[js.Any], Unit]] = js.native
+      var setSizeState: js.UndefOr[js.Function1[/* sizeState */ js.UndefOr[js.Any], Unit]] = js.undefined
     }
     object IInner {
       
@@ -725,13 +735,13 @@ object layout {
       implicit class IInnerMutableBuilder[Self <: IInner] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setGetContainer(value: () => _): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+        def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
         
         @scala.inline
-        def setGetSizeState(value: () => _): Self = StObject.set(x, "getSizeState", js.Any.fromFunction0(value))
+        def setGetSizeState(value: () => js.Any): Self = StObject.set(x, "getSizeState", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetSizeStateUndefined: Self = StObject.set(x, "getSizeState", js.undefined)

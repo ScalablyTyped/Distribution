@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Zones")
@@ -88,7 +87,7 @@ class ResourceZones protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaZone] = js.native
   def get(callback: BodyResponseCallback[SchemaZone]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaZone] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaZone] = js.native
   def get(params: ParamsResourceZonesGet): GaxiosPromise[SchemaZone] = js.native
   def get(params: ParamsResourceZonesGet, callback: BodyResponseCallback[SchemaZone]): Unit = js.native
   def get(
@@ -184,7 +183,7 @@ class ResourceZones protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaZoneList] = js.native
   def list(callback: BodyResponseCallback[SchemaZoneList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaZoneList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaZoneList] = js.native
   def list(params: ParamsResourceZonesList): GaxiosPromise[SchemaZoneList] = js.native
   def list(params: ParamsResourceZonesList, callback: BodyResponseCallback[SchemaZoneList]): Unit = js.native
   def list(

@@ -1,18 +1,20 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "BufferDataTable")
 @js.native
 class BufferDataTable ()
   extends typings.wonderJs.bufferDataTableMod.BufferDataTable
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "BufferDataTable")
-@js.native
-object BufferDataTable extends js.Object {
-  def getGeometryDataName(`type`: typings.wonderJs.ebufferdatatypeMod.EBufferDataType): String = js.native
+object BufferDataTable {
+  
+  @JSImport("wonder.js/dist/es2015", "BufferDataTable")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getGeometryDataName(`type`: typings.wonderJs.ebufferdatatypeMod.EBufferDataType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeometryDataName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

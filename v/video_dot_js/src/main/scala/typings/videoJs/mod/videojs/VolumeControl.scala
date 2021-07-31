@@ -3,14 +3,15 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The component for controlling the volume level
   */
 @js.native
-trait VolumeControl extends Component {
+trait VolumeControl
+  extends StObject
+     with Component {
   
   /**
     * Handle `mousedown` or `touchstart` events on the `VolumeControl`.

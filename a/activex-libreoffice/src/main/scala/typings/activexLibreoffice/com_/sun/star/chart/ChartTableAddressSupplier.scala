@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.chart
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The cell addresses are in the format of the application that contains this chart.
   */
-@js.native
 trait ChartTableAddressSupplier extends StObject {
   
   /**
@@ -19,19 +17,19 @@ trait ChartTableAddressSupplier extends StObject {
     *
     * Note: Each value of a data series belongs exactly to one category.
     */
-  var CategoriesRangeAddress: String = js.native
+  var CategoriesRangeAddress: String
   
   /** contains the address to the main title. */
-  var MainTitleAddress: String = js.native
+  var MainTitleAddress: String
   
   /**
     * contains the addresses to the elements of a series. This sequence should contain one element for each series in the chart.
     * @see ChartSeriesAddress
     */
-  var SeriesAddresses: SafeArray[ChartSeriesAddress] = js.native
+  var SeriesAddresses: SafeArray[ChartSeriesAddress]
   
   /** contains the address to the sub title. */
-  var SubTitleAddress: String = js.native
+  var SubTitleAddress: String
 }
 object ChartTableAddressSupplier {
   

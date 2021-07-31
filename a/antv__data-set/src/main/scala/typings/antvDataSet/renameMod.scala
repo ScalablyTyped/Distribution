@@ -3,15 +3,13 @@ package typings.antvDataSet
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renameMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var map: js.UndefOr[Record[String, String]] = js.native
+    var map: js.UndefOr[Record[String, String]] = js.undefined
   }
   object Options {
     

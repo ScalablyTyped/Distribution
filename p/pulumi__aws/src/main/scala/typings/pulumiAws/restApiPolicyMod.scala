@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object restApiPolicyMod {
@@ -35,6 +34,10 @@ object restApiPolicyMod {
   /* static members */
   object RestApiPolicy {
     
+    @JSImport("@pulumi/aws/apigateway/restApiPolicy", "RestApiPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RestApiPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -44,37 +47,31 @@ object restApiPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/restApiPolicy", "RestApiPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RestApiPolicy = js.native
-    @JSImport("@pulumi/aws/apigateway/restApiPolicy", "RestApiPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RestApiPolicy = js.native
-    @JSImport("@pulumi/aws/apigateway/restApiPolicy", "RestApiPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RestApiPolicyState): RestApiPolicy = js.native
-    @JSImport("@pulumi/aws/apigateway/restApiPolicy", "RestApiPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RestApiPolicyState, opts: CustomResourceOptions): RestApiPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RestApiPolicyState): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RestApiPolicyState, opts: CustomResourceOptions): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
     
     /**
       * Returns true if the given object is an instance of RestApiPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/restApiPolicy", "RestApiPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/restApiPolicy.RestApiPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/restApiPolicy.RestApiPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/restApiPolicy.RestApiPolicy */ Boolean]
   }
   
-  @js.native
   trait RestApiPolicyArgs extends StObject {
     
-    val policy: Input[String] = js.native
+    val policy: Input[String]
     
     /**
       * The ID of the REST API.
       */
-    val restApiId: Input[String] = js.native
+    val restApiId: Input[String]
   }
   object RestApiPolicyArgs {
     
@@ -95,15 +92,14 @@ object restApiPolicyMod {
     }
   }
   
-  @js.native
   trait RestApiPolicyState extends StObject {
     
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the REST API.
       */
-    val restApiId: js.UndefOr[Input[String]] = js.native
+    val restApiId: js.UndefOr[Input[String]] = js.undefined
   }
   object RestApiPolicyState {
     

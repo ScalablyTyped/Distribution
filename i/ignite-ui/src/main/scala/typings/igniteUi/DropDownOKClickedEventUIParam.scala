@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropDownOKClickedEventUIParam extends StObject {
   
   /**
     * Gets the column key for which OK button is clicked.
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets data for summary methods. Format of event data is {type: "min", active: false};
     */
-  var eventData: js.UndefOr[js.Any] = js.native
+  var eventData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the igGridSummaries widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object DropDownOKClickedEventUIParam {
   

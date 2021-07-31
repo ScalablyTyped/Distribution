@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1beta2VideoAnnotationProgress extends StObject {
   
   /** Specifies which feature is being tracked if the request contains more than one feature. */
-  var feature: js.UndefOr[String] = js.native
+  var feature: js.UndefOr[String] = js.undefined
   
   /** Video file location in [Cloud Storage](https://cloud.google.com/storage/). */
-  var inputUri: js.UndefOr[String] = js.native
+  var inputUri: js.UndefOr[String] = js.undefined
   
   /** Approximate percentage processed thus far. Guaranteed to be 100 when fully processed. */
-  var progressPercent: js.UndefOr[Double] = js.native
+  var progressPercent: js.UndefOr[Double] = js.undefined
   
   /** Specifies which segment is being tracked if the request contains more than one segment. */
-  var segment: js.UndefOr[GoogleCloudVideointelligenceV1beta2VideoSegment] = js.native
+  var segment: js.UndefOr[GoogleCloudVideointelligenceV1beta2VideoSegment] = js.undefined
   
   /** Time when the request was received. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Time of the most recent update. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1beta2VideoAnnotationProgress {
   

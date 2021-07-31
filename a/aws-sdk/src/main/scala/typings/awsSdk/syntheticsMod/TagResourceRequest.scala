@@ -2,21 +2,19 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The ARN of the canary that you're adding tags to. The ARN format of a canary is arn:aws:synthetics:Region:account-id:canary:canary-name .
     */
-  var ResourceArn: CanaryArn = js.native
+  var ResourceArn: CanaryArn
   
   /**
     * The list of key-value pairs to associate with the canary.
     */
-  var Tags: TagMap = js.native
+  var Tags: TagMap
 }
 object TagResourceRequest {
   

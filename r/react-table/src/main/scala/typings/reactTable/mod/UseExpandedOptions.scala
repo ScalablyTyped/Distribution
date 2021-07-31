@@ -2,20 +2,18 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  manualExpandedKey :react-table.react-table.IdType<D>,   paginateExpandedRows :boolean,   expandSubRows :boolean,   autoResetExpanded :boolean | undefined}> */
-@js.native
 trait UseExpandedOptions[D /* <: js.Object */] extends StObject {
   
-  var autoResetExpanded: js.UndefOr[Boolean] = js.native
+  var autoResetExpanded: js.UndefOr[Boolean] = js.undefined
   
-  var expandSubRows: js.UndefOr[Boolean] = js.native
+  var expandSubRows: js.UndefOr[Boolean] = js.undefined
   
-  var manualExpandedKey: js.UndefOr[IdType[D]] = js.native
+  var manualExpandedKey: js.UndefOr[IdType[D]] = js.undefined
   
-  var paginateExpandedRows: js.UndefOr[Boolean] = js.native
+  var paginateExpandedRows: js.UndefOr[Boolean] = js.undefined
 }
 object UseExpandedOptions {
   
@@ -26,7 +24,7 @@ object UseExpandedOptions {
   }
   
   @scala.inline
-  implicit class UseExpandedOptionsMutableBuilder[Self <: UseExpandedOptions[_], D /* <: js.Object */] (val x: Self with UseExpandedOptions[D]) extends AnyVal {
+  implicit class UseExpandedOptionsMutableBuilder[Self <: UseExpandedOptions[?], D /* <: js.Object */] (val x: Self & UseExpandedOptions[D]) extends AnyVal {
     
     @scala.inline
     def setAutoResetExpanded(value: Boolean): Self = StObject.set(x, "autoResetExpanded", value.asInstanceOf[js.Any])

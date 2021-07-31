@@ -3,28 +3,26 @@ package typings.activexOffice.Office
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPermission extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var ExpirationDate: VarDate = js.native
+  var ExpirationDate: VarDate
   
   @JSName("Office.UserPermission_typekey")
-  var OfficeDotUserPermission_typekey: UserPermission = js.native
+  var OfficeDotUserPermission_typekey: UserPermission
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Permission: Double = js.native
+  var Permission: Double
   
-  def Remove(): Unit = js.native
+  def Remove(): Unit
   
-  val UserId: String = js.native
+  val UserId: String
 }
 object UserPermission {
   

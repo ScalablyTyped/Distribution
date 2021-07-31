@@ -8,7 +8,6 @@ import typings.node.fsMod.StatOptions
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -22,16 +21,15 @@ object anon {
   }
   
   /* Inlined std.Partial<@nodelib/fs.stat.@nodelib/fs.stat/out/adapters/fs.FileSystemAdapter> */
-  @js.native
   trait PartialFileSystemAdapter extends StObject {
     
-    var lstat: js.UndefOr[Typeoflstat] = js.native
+    var lstat: js.UndefOr[Typeoflstat] = js.undefined
     
-    var lstatSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.native
+    var lstatSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.undefined
     
-    var stat: js.UndefOr[Typeofstat] = js.native
+    var stat: js.UndefOr[Typeofstat] = js.undefined
     
-    var statSync: js.UndefOr[FnCall] = js.native
+    var statSync: js.UndefOr[FnCall] = js.undefined
   }
   object PartialFileSystemAdapter {
     

@@ -4,7 +4,6 @@ import typings.linkifyjs.mod.Options
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMod {
@@ -16,12 +15,11 @@ object reactMod {
   
   type Linkify = Component[LinkifyProps, js.Object, js.Any]
   
-  @js.native
   trait LinkifyProps extends StObject {
     
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
-    var tagName: js.UndefOr[String] = js.native
+    var tagName: js.UndefOr[String] = js.undefined
   }
   object LinkifyProps {
     

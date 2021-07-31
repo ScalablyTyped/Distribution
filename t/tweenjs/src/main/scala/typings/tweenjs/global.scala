@@ -5,7 +5,6 @@ import typings.tweenjs.createjs.TimelineProps
 import typings.tweenjs.createjs.TweenProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -15,180 +14,148 @@ object global {
     @JSGlobal("createjs.AbstractTween")
     @js.native
     class AbstractTween ()
-      extends typings.tweenjs.createjs.AbstractTween {
+      extends StObject
+         with typings.tweenjs.createjs.AbstractTween {
       def this(props: TweenProps) = this()
     }
     
     @JSGlobal("createjs.Ease")
     @js.native
     class Ease ()
-      extends typings.tweenjs.createjs.Ease
+      extends StObject
+         with typings.tweenjs.createjs.Ease
     /* static members */
     object Ease {
       
+      @JSGlobal("createjs.Ease")
+      @js.native
+      val ^ : js.Any = js.native
+      
       // methods
-      @JSGlobal("createjs.Ease.backIn")
-      @js.native
-      def backIn(amount: Double): Double = js.native
+      @scala.inline
+      def backIn(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("backIn")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.backInOut")
-      @js.native
-      def backInOut(amount: Double): Double = js.native
+      @scala.inline
+      def backInOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("backInOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.backOut")
-      @js.native
-      def backOut(amount: Double): Double = js.native
+      @scala.inline
+      def backOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("backOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.bounceIn")
-      @js.native
-      def bounceIn(amount: Double): Double = js.native
+      @scala.inline
+      def bounceIn(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bounceIn")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.bounceInOut")
-      @js.native
-      def bounceInOut(amount: Double): Double = js.native
+      @scala.inline
+      def bounceInOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bounceInOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.bounceOut")
-      @js.native
-      def bounceOut(amount: Double): Double = js.native
+      @scala.inline
+      def bounceOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bounceOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.circIn")
-      @js.native
-      def circIn(amount: Double): Double = js.native
+      @scala.inline
+      def circIn(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("circIn")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.circInOut")
-      @js.native
-      def circInOut(amount: Double): Double = js.native
+      @scala.inline
+      def circInOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("circInOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.circOut")
-      @js.native
-      def circOut(amount: Double): Double = js.native
+      @scala.inline
+      def circOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("circOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.cubicIn")
-      @js.native
-      def cubicIn(amount: Double): Double = js.native
+      @scala.inline
+      def cubicIn(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cubicIn")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.cubicInOut")
-      @js.native
-      def cubicInOut(amount: Double): Double = js.native
+      @scala.inline
+      def cubicInOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cubicInOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.cubicOut")
-      @js.native
-      def cubicOut(amount: Double): Double = js.native
+      @scala.inline
+      def cubicOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cubicOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.elasticIn")
-      @js.native
-      def elasticIn(amount: Double): Double = js.native
+      @scala.inline
+      def elasticIn(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elasticIn")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.elasticInOut")
-      @js.native
-      def elasticInOut(amount: Double): Double = js.native
+      @scala.inline
+      def elasticInOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elasticInOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.elasticOut")
-      @js.native
-      def elasticOut(amount: Double): Double = js.native
+      @scala.inline
+      def elasticOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elasticOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.get")
-      @js.native
-      def get(amount: Double): js.Function1[/* amount */ Double, Double] = js.native
+      @scala.inline
+      def get(amount: Double): js.Function1[/* amount */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* amount */ Double, Double]]
       
-      @JSGlobal("createjs.Ease.getBackIn")
-      @js.native
-      def getBackIn(amount: Double): js.Function1[/* amount */ Double, Double] = js.native
+      @scala.inline
+      def getBackIn(amount: Double): js.Function1[/* amount */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackIn")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* amount */ Double, Double]]
       
-      @JSGlobal("createjs.Ease.getBackInOut")
-      @js.native
-      def getBackInOut(amount: Double): js.Function1[/* amount */ Double, Double] = js.native
+      @scala.inline
+      def getBackInOut(amount: Double): js.Function1[/* amount */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackInOut")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* amount */ Double, Double]]
       
-      @JSGlobal("createjs.Ease.getBackOut")
-      @js.native
-      def getBackOut(amount: Double): js.Function1[/* amount */ Double, Double] = js.native
+      @scala.inline
+      def getBackOut(amount: Double): js.Function1[/* amount */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackOut")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* amount */ Double, Double]]
       
-      @JSGlobal("createjs.Ease.getElasticIn")
-      @js.native
-      def getElasticIn(amplitude: Double, period: Double): js.Function1[/* amount */ Double, Double] = js.native
+      @scala.inline
+      def getElasticIn(amplitude: Double, period: Double): js.Function1[/* amount */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIn")(amplitude.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* amount */ Double, Double]]
       
-      @JSGlobal("createjs.Ease.getElasticInOut")
-      @js.native
-      def getElasticInOut(amplitude: Double, period: Double): js.Function1[/* amount */ Double, Double] = js.native
+      @scala.inline
+      def getElasticInOut(amplitude: Double, period: Double): js.Function1[/* amount */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElasticInOut")(amplitude.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* amount */ Double, Double]]
       
-      @JSGlobal("createjs.Ease.getElasticOut")
-      @js.native
-      def getElasticOut(amplitude: Double, period: Double): js.Function1[/* amount */ Double, Double] = js.native
+      @scala.inline
+      def getElasticOut(amplitude: Double, period: Double): js.Function1[/* amount */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElasticOut")(amplitude.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* amount */ Double, Double]]
       
-      @JSGlobal("createjs.Ease.getPowIn")
-      @js.native
-      def getPowIn(pow: Double): js.Function1[/* amount */ Double, Double] = js.native
+      @scala.inline
+      def getPowIn(pow: Double): js.Function1[/* amount */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPowIn")(pow.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* amount */ Double, Double]]
       
-      @JSGlobal("createjs.Ease.getPowInOut")
-      @js.native
-      def getPowInOut(pow: Double): js.Function1[/* amount */ Double, Double] = js.native
+      @scala.inline
+      def getPowInOut(pow: Double): js.Function1[/* amount */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPowInOut")(pow.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* amount */ Double, Double]]
       
-      @JSGlobal("createjs.Ease.getPowOut")
-      @js.native
-      def getPowOut(pow: Double): js.Function1[/* amount */ Double, Double] = js.native
+      @scala.inline
+      def getPowOut(pow: Double): js.Function1[/* amount */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPowOut")(pow.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* amount */ Double, Double]]
       
-      @JSGlobal("createjs.Ease.linear")
-      @js.native
-      def linear(amount: Double): Double = js.native
+      @scala.inline
+      def linear(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("linear")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.none")
-      @js.native
-      def none(amount: Double): Double = js.native
+      @scala.inline
+      def none(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("none")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       // same as linear
-      @JSGlobal("createjs.Ease.quadIn")
-      @js.native
-      def quadIn(amount: Double): Double = js.native
+      @scala.inline
+      def quadIn(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quadIn")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.quadInOut")
-      @js.native
-      def quadInOut(amount: Double): Double = js.native
+      @scala.inline
+      def quadInOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quadInOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.quadOut")
-      @js.native
-      def quadOut(amount: Double): Double = js.native
+      @scala.inline
+      def quadOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quadOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.quartIn")
-      @js.native
-      def quartIn(amount: Double): Double = js.native
+      @scala.inline
+      def quartIn(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quartIn")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.quartInOut")
-      @js.native
-      def quartInOut(amount: Double): Double = js.native
+      @scala.inline
+      def quartInOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quartInOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.quartOut")
-      @js.native
-      def quartOut(amount: Double): Double = js.native
+      @scala.inline
+      def quartOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quartOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.quintIn")
-      @js.native
-      def quintIn(amount: Double): Double = js.native
+      @scala.inline
+      def quintIn(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quintIn")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.quintInOut")
-      @js.native
-      def quintInOut(amount: Double): Double = js.native
+      @scala.inline
+      def quintInOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quintInOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.quintOut")
-      @js.native
-      def quintOut(amount: Double): Double = js.native
+      @scala.inline
+      def quintOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quintOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.sineIn")
-      @js.native
-      def sineIn(amount: Double): Double = js.native
+      @scala.inline
+      def sineIn(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sineIn")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.sineInOut")
-      @js.native
-      def sineInOut(amount: Double): Double = js.native
+      @scala.inline
+      def sineInOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sineInOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("createjs.Ease.sineOut")
-      @js.native
-      def sineOut(amount: Double): Double = js.native
+      @scala.inline
+      def sineOut(amount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sineOut")(amount.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     @JSGlobal("createjs.MotionGuidePlugin")
     @js.native
     class MotionGuidePlugin ()
-      extends typings.tweenjs.createjs.MotionGuidePlugin
+      extends StObject
+         with typings.tweenjs.createjs.MotionGuidePlugin
     /* static members */
     object MotionGuidePlugin {
       
@@ -202,8 +169,7 @@ object global {
       @scala.inline
       def ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ID")(x.asInstanceOf[js.Any])
       
-      @JSGlobal("createjs.MotionGuidePlugin.change")
-      @js.native
+      @scala.inline
       def change(
         tween: typings.tweenjs.createjs.Tween,
         step: typings.tweenjs.createjs.TweenStep,
@@ -211,20 +177,17 @@ object global {
         value: js.Any,
         ratio: Double,
         end: Boolean
-      ): Unit = js.native
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(tween.asInstanceOf[js.Any], step.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("createjs.MotionGuidePlugin.debug")
-      @js.native
-      def debug(guideData: js.Any, ctx: js.Any, higlight: js.Array[Double]): Unit = js.native
+      @scala.inline
+      def debug(guideData: js.Any, ctx: js.Any, higlight: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(guideData.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], higlight.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("createjs.MotionGuidePlugin.init")
-      @js.native
-      def init(tween: typings.tweenjs.createjs.Tween, prop: String, value: js.Any): Unit = js.native
+      @scala.inline
+      def init(tween: typings.tweenjs.createjs.Tween, prop: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(tween.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       //methods
-      @JSGlobal("createjs.MotionGuidePlugin.install")
-      @js.native
-      def install(): js.Object = js.native
+      @scala.inline
+      def install(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[js.Object]
       
       //properties
       @JSGlobal("createjs.MotionGuidePlugin.priority")
@@ -233,22 +196,23 @@ object global {
       @scala.inline
       def priority_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("priority")(x.asInstanceOf[js.Any])
       
-      @JSGlobal("createjs.MotionGuidePlugin.step")
-      @js.native
-      def step(tween: typings.tweenjs.createjs.Tween, step: typings.tweenjs.createjs.TweenStep, props: TweenProps): Unit = js.native
+      @scala.inline
+      def step(tween: typings.tweenjs.createjs.Tween, step: typings.tweenjs.createjs.TweenStep, props: TweenProps): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("step")(tween.asInstanceOf[js.Any], step.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     @JSGlobal("createjs.Timeline")
     @js.native
     class Timeline ()
-      extends typings.tweenjs.createjs.Timeline {
+      extends StObject
+         with typings.tweenjs.createjs.Timeline {
       def this(props: TimelineProps) = this()
     }
     
     @JSGlobal("createjs.Tween")
     @js.native
     class Tween protected ()
-      extends typings.tweenjs.createjs.Tween {
+      extends StObject
+         with typings.tweenjs.createjs.Tween {
       def this(target: js.Any) = this()
       def this(target: js.Any, props: TweenProps) = this()
     }
@@ -266,51 +230,67 @@ object global {
       def IGNORE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORE")(x.asInstanceOf[js.Any])
       
       // methods
-      @JSGlobal("createjs.Tween.get")
-      @js.native
-      def get(target: js.Any): typings.tweenjs.createjs.Tween = js.native
-      @JSGlobal("createjs.Tween.get")
-      @js.native
-      def get(target: js.Any, props: TweenProps): typings.tweenjs.createjs.Tween = js.native
+      @scala.inline
+      def get(target: js.Any): typings.tweenjs.createjs.Tween = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any]).asInstanceOf[typings.tweenjs.createjs.Tween]
+      @scala.inline
+      def get(target: js.Any, props: TweenProps): typings.tweenjs.createjs.Tween = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.tweenjs.createjs.Tween]
       
-      @JSGlobal("createjs.Tween.handleEvent")
-      @js.native
-      def handleEvent(e: Event): Unit = js.native
+      @scala.inline
+      def handleEvent(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("createjs.Tween.hasActiveTweens")
-      @js.native
-      def hasActiveTweens(target: js.Any): Boolean = js.native
+      @scala.inline
+      def hasActiveTweens(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasActiveTweens")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("createjs.Tween.removeAllTweens")
-      @js.native
-      def removeAllTweens(): Unit = js.native
+      @scala.inline
+      def removeAllTweens(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllTweens")().asInstanceOf[Unit]
       
-      @JSGlobal("createjs.Tween.removeTweens")
-      @js.native
-      def removeTweens(target: js.Any): Unit = js.native
+      @scala.inline
+      def removeTweens(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTweens")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("createjs.Tween.tick")
-      @js.native
-      def tick(delta: Double, paused: Boolean): Unit = js.native
+      @scala.inline
+      def tick(delta: Double, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tick")(delta.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     @JSGlobal("createjs.TweenAction")
     @js.native
     class TweenAction protected ()
-      extends typings.tweenjs.createjs.TweenAction {
+      extends StObject
+         with typings.tweenjs.createjs.TweenAction {
       def this(
         prev: typings.tweenjs.createjs.TweenAction,
         t: Double,
         scope: js.Any,
         funct: js.Function,
-        params: js.Array[_]
+        params: js.Array[js.Any]
       ) = this()
+      
+      /* CompleteClass */
+      var d: Double = js.native
+      
+      /* CompleteClass */
+      var funct: js.Function = js.native
+      
+      /* CompleteClass */
+      var next: typings.tweenjs.createjs.TweenAction = js.native
+      
+      /* CompleteClass */
+      var params: js.Array[js.Any] = js.native
+      
+      /* CompleteClass */
+      var prev: typings.tweenjs.createjs.TweenAction = js.native
+      
+      /* CompleteClass */
+      var scope: js.Any = js.native
+      
+      /* CompleteClass */
+      var t: Double = js.native
     }
     
     @JSGlobal("createjs.TweenJS")
     @js.native
     class TweenJS ()
-      extends typings.tweenjs.createjs.TweenJS
+      extends StObject
+         with typings.tweenjs.createjs.TweenJS
     /* static members */
     object TweenJS {
       
@@ -335,7 +315,8 @@ object global {
     @JSGlobal("createjs.TweenStep")
     @js.native
     class TweenStep protected ()
-      extends typings.tweenjs.createjs.TweenStep {
+      extends StObject
+         with typings.tweenjs.createjs.TweenStep {
       def this(
         prev: typings.tweenjs.createjs.TweenStep,
         t: Double,
@@ -344,6 +325,30 @@ object global {
         ease: js.Function,
         passive: Boolean
       ) = this()
+      
+      /* CompleteClass */
+      var d: Double = js.native
+      
+      /* CompleteClass */
+      var ease: js.Function = js.native
+      
+      /* CompleteClass */
+      var index: Double = js.native
+      
+      /* CompleteClass */
+      var next: typings.tweenjs.createjs.TweenStep = js.native
+      
+      /* CompleteClass */
+      var passive: Boolean = js.native
+      
+      /* CompleteClass */
+      var prev: typings.tweenjs.createjs.TweenStep = js.native
+      
+      /* CompleteClass */
+      var props: TweenProps = js.native
+      
+      /* CompleteClass */
+      var t: Double = js.native
     }
   }
 }

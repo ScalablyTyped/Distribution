@@ -2,56 +2,54 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainAssociation extends StObject {
   
   /**
     *  Sets branch patterns for automatic subdomain creation. 
     */
-  var autoSubDomainCreationPatterns: js.UndefOr[AutoSubDomainCreationPatterns] = js.native
+  var autoSubDomainCreationPatterns: js.UndefOr[AutoSubDomainCreationPatterns] = js.undefined
   
   /**
     *  The required AWS Identity and Access Management (IAM) service role for the Amazon Resource Name (ARN) for automatically creating subdomains. 
     */
-  var autoSubDomainIAMRole: js.UndefOr[AutoSubDomainIAMRole] = js.native
+  var autoSubDomainIAMRole: js.UndefOr[AutoSubDomainIAMRole] = js.undefined
   
   /**
     *  The DNS record for certificate verification. 
     */
-  var certificateVerificationDNSRecord: js.UndefOr[CertificateVerificationDNSRecord] = js.native
+  var certificateVerificationDNSRecord: js.UndefOr[CertificateVerificationDNSRecord] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) for the domain association. 
     */
-  var domainAssociationArn: DomainAssociationArn = js.native
+  var domainAssociationArn: DomainAssociationArn
   
   /**
     *  The name of the domain. 
     */
-  var domainName: DomainName = js.native
+  var domainName: DomainName
   
   /**
     *  The current status of the domain association. 
     */
-  var domainStatus: DomainStatus = js.native
+  var domainStatus: DomainStatus
   
   /**
     *  Enables the automated creation of subdomains for branches. 
     */
-  var enableAutoSubDomain: EnableAutoSubDomain = js.native
+  var enableAutoSubDomain: EnableAutoSubDomain
   
   /**
     *  The reason for the current status of the domain association. 
     */
-  var statusReason: StatusReason = js.native
+  var statusReason: StatusReason
   
   /**
     *  The subdomains for the domain association. 
     */
-  var subDomains: SubDomains = js.native
+  var subDomains: SubDomains
 }
 object DomainAssociation {
   

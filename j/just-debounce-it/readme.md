@@ -11,8 +11,8 @@ return a debounced function
 | Full name          | just-debounce-it |
 | Keywords           | function, debounce, no-dependencies, just |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 1076801 |
+| # dependents       | 18 |
+| # downloads        | 1076763 |
 | # stars            | 0 |
 
 ## Links

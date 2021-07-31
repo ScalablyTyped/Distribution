@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSearchSuggestionsRequest extends StObject {
   
   /**
     * The name of the Amazon SageMaker resource to search for.
     */
-  var Resource: ResourceType = js.native
+  var Resource: ResourceType
   
   /**
     * Limits the property names that are included in the response.
     */
-  var SuggestionQuery: js.UndefOr[typings.awsSdk.sagemakerMod.SuggestionQuery] = js.native
+  var SuggestionQuery: js.UndefOr[typings.awsSdk.sagemakerMod.SuggestionQuery] = js.undefined
 }
 object GetSearchSuggestionsRequest {
   

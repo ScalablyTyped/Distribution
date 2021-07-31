@@ -2,21 +2,19 @@ package typings.awsSdk.qldbsessionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FetchPageRequest extends StObject {
   
   /**
     * Specifies the next page token of the page to be fetched.
     */
-  var NextPageToken: PageToken = js.native
+  var NextPageToken: PageToken
   
   /**
     * Specifies the transaction ID of the page to be fetched.
     */
-  var TransactionId: typings.awsSdk.qldbsessionMod.TransactionId = js.native
+  var TransactionId: typings.awsSdk.qldbsessionMod.TransactionId
 }
 object FetchPageRequest {
   

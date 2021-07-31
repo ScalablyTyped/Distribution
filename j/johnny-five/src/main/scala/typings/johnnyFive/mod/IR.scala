@@ -5,7 +5,6 @@ import typings.johnnyFive.johnnyFiveStrings.data
 import typings.johnnyFive.johnnyFiveStrings.line
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object IR {
@@ -37,14 +36,13 @@ object IR {
     }
   }
   
-  @js.native
   trait ArrayOption extends StObject {
     
-    var emitter: Double | String = js.native
+    var emitter: Double | String
     
-    var freq: js.UndefOr[Double] = js.native
+    var freq: js.UndefOr[Double] = js.undefined
     
-    var pins: js.Array[Double | String] = js.native
+    var pins: js.Array[Double | String]
   }
   object ArrayOption {
     
@@ -74,12 +72,11 @@ object IR {
     }
   }
   
-  @js.native
   trait LoadCalibrationOption extends StObject {
     
-    var max: js.Array[Double] = js.native
+    var max: js.Array[Double]
     
-    var min: js.Array[Double] = js.native
+    var min: js.Array[Double]
   }
   object LoadCalibrationOption {
     

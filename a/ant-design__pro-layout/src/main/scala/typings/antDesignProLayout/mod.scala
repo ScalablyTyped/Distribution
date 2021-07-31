@@ -1,6 +1,5 @@
 package typings.antDesignProLayout
 
-import org.scalablytyped.runtime.Shortcut
 import typings.antDesignProLayout.anon.Breadcrumb
 import typings.antDesignProLayout.anon.Locale
 import typings.antDesignProLayout.anon.Tip
@@ -20,10 +19,13 @@ import typings.react.mod.Context
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("@ant-design/pro-layout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * 🌃 Powerful and easy to use beautiful layout
@@ -93,68 +95,53 @@ object mod extends Shortcut {
   @js.native
   val TopNavHeader: FC[TopNavHeaderProps] = js.native
   
-  @JSImport("@ant-design/pro-layout", "getMenuData")
-  @js.native
-  def getMenuData(routes: js.Array[Route]): Breadcrumb = js.native
-  @JSImport("@ant-design/pro-layout", "getMenuData")
-  @js.native
+  @scala.inline
+  def getMenuData(routes: js.Array[Route]): Breadcrumb = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any]).asInstanceOf[Breadcrumb]
+  @scala.inline
   def getMenuData(
     routes: js.Array[Route],
-    menu: js.UndefOr[scala.Nothing],
-    formatMessage: js.UndefOr[scala.Nothing],
-    menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): Breadcrumb = js.native
-  @JSImport("@ant-design/pro-layout", "getMenuData")
-  @js.native
-  def getMenuData(
-    routes: js.Array[Route],
-    menu: js.UndefOr[scala.Nothing],
+    menu: Unit,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String]
-  ): Breadcrumb = js.native
-  @JSImport("@ant-design/pro-layout", "getMenuData")
-  @js.native
+  ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
+  @scala.inline
   def getMenuData(
     routes: js.Array[Route],
-    menu: js.UndefOr[scala.Nothing],
+    menu: Unit,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): Breadcrumb = js.native
-  @JSImport("@ant-design/pro-layout", "getMenuData")
-  @js.native
-  def getMenuData(routes: js.Array[Route], menu: Locale): Breadcrumb = js.native
-  @JSImport("@ant-design/pro-layout", "getMenuData")
-  @js.native
+  ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], menuDataRender.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
+  @scala.inline
   def getMenuData(
     routes: js.Array[Route],
-    menu: Locale,
-    formatMessage: js.UndefOr[scala.Nothing],
+    menu: Unit,
+    formatMessage: Unit,
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): Breadcrumb = js.native
-  @JSImport("@ant-design/pro-layout", "getMenuData")
-  @js.native
+  ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], menuDataRender.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
+  @scala.inline
+  def getMenuData(routes: js.Array[Route], menu: Locale): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
+  @scala.inline
   def getMenuData(
     routes: js.Array[Route],
     menu: Locale,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String]
-  ): Breadcrumb = js.native
-  @JSImport("@ant-design/pro-layout", "getMenuData")
-  @js.native
+  ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
+  @scala.inline
   def getMenuData(
     routes: js.Array[Route],
     menu: Locale,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): Breadcrumb = js.native
+  ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], menuDataRender.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
+  @scala.inline
+  def getMenuData(
+    routes: js.Array[Route],
+    menu: Locale,
+    formatMessage: Unit,
+    menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
+  ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], menuDataRender.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
   
-  @JSImport("@ant-design/pro-layout", "getPageTitle")
-  @js.native
-  def getPageTitle(props: GetPageTitleProps): String = js.native
-  @JSImport("@ant-design/pro-layout", "getPageTitle")
-  @js.native
-  def getPageTitle(props: GetPageTitleProps, ignoreTile: Boolean): String = js.native
-  
-  type _To = FC[BasicLayoutProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: FC[BasicLayoutProps] = default
+  @scala.inline
+  def getPageTitle(props: GetPageTitleProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPageTitle")(props.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getPageTitle(props: GetPageTitleProps, ignoreTile: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPageTitle")(props.asInstanceOf[js.Any], ignoreTile.asInstanceOf[js.Any])).asInstanceOf[String]
 }

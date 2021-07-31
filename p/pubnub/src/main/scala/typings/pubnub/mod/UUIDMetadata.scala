@@ -2,23 +2,21 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent pubnub.pubnub.v2ObjectParam<Custom> */
 /* Inlined parent std.Partial<pubnub.pubnub.UUIDMetadataFields> */
-@js.native
 trait UUIDMetadata[Custom /* <: ObjectCustom */] extends StObject {
   
-  var custom: js.UndefOr[Custom] = js.native
+  var custom: js.UndefOr[Custom] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var externalId: js.UndefOr[String] = js.native
+  var externalId: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var profileUrl: js.UndefOr[String] = js.native
+  var profileUrl: js.UndefOr[String] = js.undefined
 }
 object UUIDMetadata {
   
@@ -29,7 +27,7 @@ object UUIDMetadata {
   }
   
   @scala.inline
-  implicit class UUIDMetadataMutableBuilder[Self <: UUIDMetadata[_], Custom /* <: ObjectCustom */] (val x: Self with UUIDMetadata[Custom]) extends AnyVal {
+  implicit class UUIDMetadataMutableBuilder[Self <: UUIDMetadata[?], Custom /* <: ObjectCustom */] (val x: Self & UUIDMetadata[Custom]) extends AnyVal {
     
     @scala.inline
     def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])

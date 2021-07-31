@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetGroupPairInfo extends StObject {
   
   /**
     *  The path used by a load balancer to route production traffic when an Amazon ECS deployment is complete. 
     */
-  var prodTrafficRoute: js.UndefOr[TrafficRoute] = js.native
+  var prodTrafficRoute: js.UndefOr[TrafficRoute] = js.undefined
   
   /**
     *  One pair of target groups. One is associated with the original task set. The second is associated with the task set that serves traffic after the deployment is complete. 
     */
-  var targetGroups: js.UndefOr[TargetGroupInfoList] = js.native
+  var targetGroups: js.UndefOr[TargetGroupInfoList] = js.undefined
   
   /**
     *  An optional path used by a load balancer to route test traffic after an Amazon ECS deployment. Validation can occur while test traffic is served during a deployment. 
     */
-  var testTrafficRoute: js.UndefOr[TrafficRoute] = js.native
+  var testTrafficRoute: js.UndefOr[TrafficRoute] = js.undefined
 }
 object TargetGroupPairInfo {
   

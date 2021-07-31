@@ -3,7 +3,6 @@ package typings.imageminWebp
 import typings.imagemin.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,19 +10,22 @@ object mod {
   /**
     * WebP imagemin plugin
     */
-  @JSImport("imagemin-webp", JSImport.Namespace)
-  @js.native
-  def apply(): Plugin = js.native
-  @JSImport("imagemin-webp", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Plugin = js.native
+  @scala.inline
+  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  @scala.inline
+  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
+  @JSImport("imagemin-webp", JSImport.Namespace)
   @js.native
-  trait Crop extends Resize {
+  val ^ : js.Any = js.native
+  
+  trait Crop
+    extends StObject
+       with Resize {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Crop {
     
@@ -70,41 +72,40 @@ object mod {
     def xmp: typings.imageminWebp.imageminWebpStrings.xmp = "xmp".asInstanceOf[typings.imageminWebp.imageminWebpStrings.xmp]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Set transparency-compression quality between 0 and 100.
       * @default 100
       */
-    var alphaQuality: js.UndefOr[Double] = js.native
+    var alphaQuality: js.UndefOr[Double] = js.undefined
     
     /**
       * Adjust filter strength automatically.
       * @default false
       */
-    var autoFilter: js.UndefOr[Boolean] = js.native
+    var autoFilter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Crop the image.
       */
-    var crop: js.UndefOr[Crop] = js.native
+    var crop: js.UndefOr[Crop] = js.undefined
     
     /**
       * Set deblocking filter strength between 0 (off) and 100.
       */
-    var filter: js.UndefOr[Double] = js.native
+    var filter: js.UndefOr[Double] = js.undefined
     
     /**
       * Encode images losslessly.
       * @default false
       */
-    var lossless: js.UndefOr[Boolean] = js.native
+    var lossless: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A list of metadata to copy from the input to the output if present.
       */
-    var metadata: js.UndefOr[Metadata | js.Array[Metadata]] = js.native
+    var metadata: js.UndefOr[Metadata | js.Array[Metadata]] = js.undefined
     
     /**
       * Specify the compression method to use,
@@ -113,7 +114,7 @@ object mod {
       * and the compressed file size and quality.
       * @default 4
       */
-    var method: js.UndefOr[Double] = js.native
+    var method: js.UndefOr[Double] = js.undefined
     
     /**
       * Encode losslessly with an additional lossy pre-processing step,
@@ -121,41 +122,41 @@ object mod {
       * 0 (maximum pre-processing) and 100 (same as lossless).
       * @default 100
       */
-    var nearLossless: js.UndefOr[Double] = js.native
+    var nearLossless: js.UndefOr[Double] = js.undefined
     
     /**
       * Preset setting.
       * @default default
       */
-    var preset: js.UndefOr[Preset] = js.native
+    var preset: js.UndefOr[Preset] = js.undefined
     
     /**
       * Set quality factor between 0 and 100.
       * @default 75
       */
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
     /**
       * Resize the image. Happens after crop.
       */
-    var resize: js.UndefOr[Resize] = js.native
+    var resize: js.UndefOr[Resize] = js.undefined
     
     /**
       * Set filter sharpness between 0 (sharpest) and 7 (least sharp).
       * @default 0
       */
-    var sharpness: js.UndefOr[Double] = js.native
+    var sharpness: js.UndefOr[Double] = js.undefined
     
     /**
       * Set target size in bytes.
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * Set the amplitude of spatial noise shaping between 0 and 100.
       * @default 80
       */
-    var sns: js.UndefOr[Double] = js.native
+    var sns: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -287,12 +288,11 @@ object mod {
     def text: typings.imageminWebp.imageminWebpStrings.text = "text".asInstanceOf[typings.imageminWebp.imageminWebpStrings.text]
   }
   
-  @js.native
   trait Resize extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Resize {
     

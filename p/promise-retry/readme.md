@@ -10,9 +10,9 @@ Retries a function that returns a promise, leveraging the power of the retry mod
 | ------------------ | :-------------: |
 | Full name          | promise-retry |
 | Keywords           | retry, promise, backoff, repeat, replay |
-| # releases         | 2 |
-| # dependents       | 266 |
-| # downloads        | 116151131 |
+| # releases         | 3 |
+| # dependents       | 292 |
+| # downloads        | 144033907 |
 | # stars            | 18 |
 
 ## Links

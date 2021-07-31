@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
@@ -27,7 +26,7 @@ class Model () extends StObject {
     * @param {Array<*>} arr an Array that is the value of some Panel's Panel.itemArray.
     * @param {*} val the new value to be pushed onto the array.
     */
-  def addArrayItem(arr: js.Array[_], `val`: js.Any): Unit = js.native
+  def addArrayItem(arr: js.Array[js.Any], `val`: js.Any): Unit = js.native
   
   /**
     * Register an event handler that is called when there is a ChangedEvent for a modification of the Diagram, a Layer, or a GraphObject.
@@ -159,7 +158,7 @@ class Model () extends StObject {
     * @param {number} idx the zero-based array index where the new value will be inserted; use -1 to push the new value on the end of the array.
     * @param {*} val the new value to be inserted into the array.
     */
-  def insertArrayItem(arr: js.Array[_], idx: Double, `val`: js.Any): Unit = js.native
+  def insertArrayItem(arr: js.Array[js.Any], idx: Double, `val`: js.Any): Unit = js.native
   
   /**Gets or sets whether this model may be modified, such as adding nodes; by default this value is false.*/
   var isReadOnly: Boolean = js.native
@@ -215,15 +214,6 @@ class Model () extends StObject {
     obj: js.Object,
     oldval: js.Any,
     newval: js.Any,
-    oldparam: js.UndefOr[scala.Nothing],
-    newparam: js.Any
-  ): Unit = js.native
-  def raiseChangedEvent(
-    change: EnumValue,
-    propertyname: PropertyAccessor,
-    obj: js.Object,
-    oldval: js.Any,
-    newval: js.Any,
     oldparam: js.Any
   ): Unit = js.native
   def raiseChangedEvent(
@@ -233,6 +223,15 @@ class Model () extends StObject {
     oldval: js.Any,
     newval: js.Any,
     oldparam: js.Any,
+    newparam: js.Any
+  ): Unit = js.native
+  def raiseChangedEvent(
+    change: EnumValue,
+    propertyname: PropertyAccessor,
+    obj: js.Object,
+    oldval: js.Any,
+    newval: js.Any,
+    oldparam: Unit,
     newparam: js.Any
   ): Unit = js.native
   
@@ -249,14 +248,6 @@ class Model () extends StObject {
     * @param {*=} newparam an optional value additionally describing the new value.
     */
   def raiseDataChanged(data: js.Object, propertyname: PropertyAccessor, oldval: js.Any, newval: js.Any): Unit = js.native
-  def raiseDataChanged(
-    data: js.Object,
-    propertyname: PropertyAccessor,
-    oldval: js.Any,
-    newval: js.Any,
-    oldparam: js.UndefOr[scala.Nothing],
-    newparam: js.Any
-  ): Unit = js.native
   def raiseDataChanged(data: js.Object, propertyname: PropertyAccessor, oldval: js.Any, newval: js.Any, oldparam: js.Any): Unit = js.native
   def raiseDataChanged(
     data: js.Object,
@@ -264,6 +255,14 @@ class Model () extends StObject {
     oldval: js.Any,
     newval: js.Any,
     oldparam: js.Any,
+    newparam: js.Any
+  ): Unit = js.native
+  def raiseDataChanged(
+    data: js.Object,
+    propertyname: PropertyAccessor,
+    oldval: js.Any,
+    newval: js.Any,
+    oldparam: Unit,
     newparam: js.Any
   ): Unit = js.native
   
@@ -279,8 +278,8 @@ class Model () extends StObject {
     * @param {number=} idx the zero-based array index of the data item to be removed from the array;
     *   if not supplied it will remove the last item of the array.
     */
-  def removeArrayItem(arr: js.Array[_]): Unit = js.native
-  def removeArrayItem(arr: js.Array[_], idx: Double): Unit = js.native
+  def removeArrayItem(arr: js.Array[js.Any]): Unit = js.native
+  def removeArrayItem(arr: js.Array[js.Any], idx: Double): Unit = js.native
   
   /**
     * Unregister an event handler listener.
@@ -424,6 +423,10 @@ class Model () extends StObject {
 }
 object Model {
   
+  @JSImport("go", "Model")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * This static function parses a string in JSON format and constructs, initializes, and returns a model.
     * Note that properties with values that are functions are not written out by .toJson,
@@ -433,16 +436,12 @@ object Model {
     * @param {model=} model an optional model to be modified; if not supplied, it constructs and returns a new model whose name is specified by the "class" property.
     */
   /* static member */
-  @JSImport("go", "Model.fromJson")
-  @js.native
-  def fromJson(s: String): Model = js.native
-  @JSImport("go", "Model.fromJson")
-  @js.native
-  def fromJson(s: String, model: Model): Model = js.native
-  @JSImport("go", "Model.fromJson")
-  @js.native
-  def fromJson(s: js.Object): Model = js.native
-  @JSImport("go", "Model.fromJson")
-  @js.native
-  def fromJson(s: js.Object, model: Model): Model = js.native
+  @scala.inline
+  def fromJson(s: String): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any]).asInstanceOf[Model]
+  @scala.inline
+  def fromJson(s: String, model: Model): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Model]
+  @scala.inline
+  def fromJson(s: js.Object): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any]).asInstanceOf[Model]
+  @scala.inline
+  def fromJson(s: js.Object, model: Model): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Model]
 }

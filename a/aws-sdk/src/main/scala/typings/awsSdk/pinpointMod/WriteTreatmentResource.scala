@@ -2,46 +2,44 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteTreatmentResource extends StObject {
   
   /**
     * The delivery configuration settings for sending the treatment through a custom channel. This object is required if the MessageConfiguration object for the treatment specifies a CustomMessage object.
     */
-  var CustomDeliveryConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.CustomDeliveryConfiguration] = js.native
+  var CustomDeliveryConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.CustomDeliveryConfiguration] = js.undefined
   
   /**
     * The message configuration settings for the treatment.
     */
-  var MessageConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.MessageConfiguration] = js.native
+  var MessageConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.MessageConfiguration] = js.undefined
   
   /**
     * The schedule settings for the treatment.
     */
-  var Schedule: js.UndefOr[typings.awsSdk.pinpointMod.Schedule] = js.native
+  var Schedule: js.UndefOr[typings.awsSdk.pinpointMod.Schedule] = js.undefined
   
   /**
     * The allocated percentage of users (segment members) to send the treatment to.
     */
-  var SizePercent: integer = js.native
+  var SizePercent: integer
   
   /**
     * The message template to use for the treatment.
     */
-  var TemplateConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.TemplateConfiguration] = js.native
+  var TemplateConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.TemplateConfiguration] = js.undefined
   
   /**
     * A custom description of the treatment.
     */
-  var TreatmentDescription: js.UndefOr[string] = js.native
+  var TreatmentDescription: js.UndefOr[string] = js.undefined
   
   /**
     * A custom name for the treatment.
     */
-  var TreatmentName: js.UndefOr[string] = js.native
+  var TreatmentName: js.UndefOr[string] = js.undefined
 }
 object WriteTreatmentResource {
   

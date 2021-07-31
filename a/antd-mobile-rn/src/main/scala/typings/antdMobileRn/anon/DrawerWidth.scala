@@ -2,17 +2,15 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawerWidth extends StObject {
   
-  var drawerWidth: Double = js.native
+  var drawerWidth: Double
   
-  var open: Boolean = js.native
+  var open: Boolean
   
-  var position: String = js.native
+  var position: String
 }
 object DrawerWidth {
   

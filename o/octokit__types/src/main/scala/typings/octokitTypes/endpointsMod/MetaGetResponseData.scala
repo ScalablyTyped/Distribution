@@ -3,27 +3,25 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.MD5DSA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetaGetResponseData extends StObject {
   
-  var api: js.Array[String] = js.native
+  var api: js.Array[String]
   
-  var git: js.Array[String] = js.native
+  var git: js.Array[String]
   
-  var hooks: js.Array[String] = js.native
+  var hooks: js.Array[String]
   
-  var importer: js.Array[String] = js.native
+  var importer: js.Array[String]
   
-  var pages: js.Array[String] = js.native
+  var pages: js.Array[String]
   
-  var ssh_key_fingerprints: MD5DSA = js.native
+  var ssh_key_fingerprints: MD5DSA
   
-  var verifiable_password_authentication: Boolean = js.native
+  var verifiable_password_authentication: Boolean
   
-  var web: js.Array[String] = js.native
+  var web: js.Array[String]
 }
 object MetaGetResponseData {
   

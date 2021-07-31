@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,9 +32,9 @@ trait Picker extends StObject {
     * @returns An array of mesh instances that are in the selection.
     */
   def getSelection(x: Double, y: Double): js.Array[MeshInstance] = js.native
-  def getSelection(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): js.Array[MeshInstance] = js.native
   def getSelection(x: Double, y: Double, width: Double): js.Array[MeshInstance] = js.native
   def getSelection(x: Double, y: Double, width: Double, height: Double): js.Array[MeshInstance] = js.native
+  def getSelection(x: Double, y: Double, width: Unit, height: Double): js.Array[MeshInstance] = js.native
   
   /**
     * Height of the pick buffer in pixels (read-only).

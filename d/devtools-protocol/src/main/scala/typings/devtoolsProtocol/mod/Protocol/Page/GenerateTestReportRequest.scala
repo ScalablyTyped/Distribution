@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateTestReportRequest extends StObject {
   
   /**
     * Specifies the endpoint group to deliver the report to.
     */
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
   /**
     * Message to be displayed in the report.
     */
-  var message: String = js.native
+  var message: String
 }
 object GenerateTestReportRequest {
   

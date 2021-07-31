@@ -6,87 +6,84 @@ import typings.gulpModernizr.gulpModernizrBooleans.`false`
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-modernizr", JSImport.Namespace)
-  @js.native
-  def apply(): Transform = js.native
-  @JSImport("gulp-modernizr", JSImport.Namespace)
-  @js.native
-  def apply(file: js.UndefOr[scala.Nothing], parames: Params): Transform = js.native
-  @JSImport("gulp-modernizr", JSImport.Namespace)
-  @js.native
-  def apply(file: String): Transform = js.native
-  @JSImport("gulp-modernizr", JSImport.Namespace)
-  @js.native
-  def apply(file: String, parames: Params): Transform = js.native
-  @JSImport("gulp-modernizr", JSImport.Namespace)
-  @js.native
-  def apply(parames: Params): Transform = js.native
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(file: String): Transform = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  @scala.inline
+  def apply(file: String, parames: Params): Transform = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], parames.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(file: Unit, parames: Params): Transform = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], parames.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(parames: Params): Transform = ^.asInstanceOf[js.Dynamic].apply(parames.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
+  @JSImport("gulp-modernizr", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Params extends StObject {
     
     /**
       * Avoid unnecessary builds (see Caching section below)
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, will crawl your project for references to Modernizr tests
       * Set to false to disable
       */
-    var crawl: js.UndefOr[Boolean] = js.native
+    var crawl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Have custom Modernizr tests? Add them here.
       */
-    var customTests: js.UndefOr[js.Array[String]] = js.native
+    var customTests: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Path to save out the built file
       */
-    var dest: js.UndefOr[String | `false`] = js.native
+    var dest: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * Path to the build you're using for development.
       */
-    var devFile: js.UndefOr[String | `false`] = js.native
+    var devFile: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * Useful for excluding any tests that this tool will match
       * e.g. you use .notification class for notification elements,
       * but don’t want the test for Notification API
       */
-    var excludeTests: js.UndefOr[js.Array[String]] = js.native
+    var excludeTests: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * By default, this task will crawl all *.js, *.css, *.scss files.
       */
-    var files: js.UndefOr[Src] = js.native
+    var files: js.UndefOr[Src] = js.undefined
     
     /**
       * Based on default settings on http://modernizr.com/download/
       */
-    var options: js.UndefOr[ClassPrefix] = js.native
+    var options: js.UndefOr[ClassPrefix] = js.undefined
     
     /**
       * Define any tests you want to explicitly include
       */
-    var tests: js.UndefOr[js.Array[String]] = js.native
+    var tests: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * By default, source is uglified before saving
       */
-    var uglify: js.UndefOr[Boolean] = js.native
+    var uglify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true to pass in buffers via the "files" parameter below
       */
-    var useBuffers: js.UndefOr[Boolean] = js.native
+    var useBuffers: js.UndefOr[Boolean] = js.undefined
   }
   object Params {
     

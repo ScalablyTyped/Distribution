@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListComplianceSummariesResult extends StObject {
   
   /**
     * A list of compliant and non-compliant summary counts based on compliance types. For example, this call returns State Manager associations, patches, or custom compliance types according to the filter criteria that you specified.
     */
-  var ComplianceSummaryItems: js.UndefOr[ComplianceSummaryItemList] = js.native
+  var ComplianceSummaryItems: js.UndefOr[ComplianceSummaryItemList] = js.undefined
   
   /**
     * The token for the next set of items to return. Use this token to get the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object ListComplianceSummariesResult {
   

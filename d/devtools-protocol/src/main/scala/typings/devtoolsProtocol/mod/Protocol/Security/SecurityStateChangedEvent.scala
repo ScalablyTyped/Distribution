@@ -2,37 +2,35 @@ package typings.devtoolsProtocol.mod.Protocol.Security
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityStateChangedEvent extends StObject {
   
   /**
     * List of explanations for the security state. If the overall security state is `insecure` or
     * `warning`, at least one corresponding explanation should be included.
     */
-  var explanations: js.Array[SecurityStateExplanation] = js.native
+  var explanations: js.Array[SecurityStateExplanation]
   
   /**
     * Information about insecure content on the page.
     */
-  var insecureContentStatus: InsecureContentStatus = js.native
+  var insecureContentStatus: InsecureContentStatus
   
   /**
     * True if the page was loaded over cryptographic transport such as HTTPS.
     */
-  var schemeIsCryptographic: Boolean = js.native
+  var schemeIsCryptographic: Boolean
   
   /**
     * Security state.
     */
-  var securityState: SecurityState = js.native
+  var securityState: SecurityState
   
   /**
     * Overrides user-visible description of the state.
     */
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
 }
 object SecurityStateChangedEvent {
   

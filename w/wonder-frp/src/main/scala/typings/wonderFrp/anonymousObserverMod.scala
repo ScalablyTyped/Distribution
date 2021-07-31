@@ -1,21 +1,27 @@
 package typings.wonderFrp
 
+import typings.wonderFrp.iobserverMod.IObserver
 import typings.wonderFrp.observerMod.Observer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/observer/AnonymousObserver", JSImport.Namespace)
-@js.native
-object anonymousObserverMod extends js.Object {
-  @js.native
-  class AnonymousObserver () extends Observer
+object anonymousObserverMod {
   
-  /* static members */
+  @JSImport("wonder-frp/dist/commonjs/observer/AnonymousObserver", "AnonymousObserver")
   @js.native
-  object AnonymousObserver extends js.Object {
-    def create(onNext: js.Function, onError: js.Function, onCompleted: js.Function): AnonymousObserver = js.native
+  class AnonymousObserver protected () extends Observer {
+    def this(observer: IObserver) = this()
+    def this(onNext: js.Function, onError: js.Function, onCompleted: js.Function) = this()
   }
-  
+  /* static members */
+  object AnonymousObserver {
+    
+    @JSImport("wonder-frp/dist/commonjs/observer/AnonymousObserver", "AnonymousObserver")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(onNext: js.Function, onError: js.Function, onCompleted: js.Function): AnonymousObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompleted.asInstanceOf[js.Any])).asInstanceOf[AnonymousObserver]
+  }
 }
-

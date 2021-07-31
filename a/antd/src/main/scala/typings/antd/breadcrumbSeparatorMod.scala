@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbSeparatorMod extends Shortcut {
@@ -15,7 +14,8 @@ object breadcrumbSeparatorMod extends Shortcut {
   
   @js.native
   trait BreadcrumbSeparatorInterface
-    extends FunctionComponent[js.Object] {
+    extends StObject
+       with FunctionComponent[js.Object] {
     
     var __ANT_BREADCRUMB_SEPARATOR: Boolean = js.native
   }

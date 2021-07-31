@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/chat/v1", "chat_v1.Resource$Spaces$Members")
@@ -30,7 +29,7 @@ class ResourceSpacesMembers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaMembership] = js.native
   def get(callback: BodyResponseCallback[SchemaMembership]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMembership] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMembership] = js.native
   def get(params: ParamsResourceSpacesMembersGet): GaxiosPromise[SchemaMembership] = js.native
   def get(params: ParamsResourceSpacesMembersGet, callback: BodyResponseCallback[SchemaMembership]): Unit = js.native
   def get(
@@ -61,7 +60,7 @@ class ResourceSpacesMembers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListMembershipsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListMembershipsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListMembershipsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListMembershipsResponse] = js.native
   def list(params: ParamsResourceSpacesMembersList): GaxiosPromise[SchemaListMembershipsResponse] = js.native
   def list(
     params: ParamsResourceSpacesMembersList,

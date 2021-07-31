@@ -3,15 +3,13 @@ package typings.atlassianConnectJs.anon
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Body extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var xhr: XMLHttpRequest = js.native
+  var xhr: XMLHttpRequest
 }
 object Body {
   

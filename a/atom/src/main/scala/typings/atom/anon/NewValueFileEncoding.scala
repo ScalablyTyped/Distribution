@@ -3,15 +3,13 @@ package typings.atom.anon
 import typings.atom.mod.FileEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewValueFileEncoding extends StObject {
   
-  var newValue: FileEncoding = js.native
+  var newValue: FileEncoding
   
-  var oldValue: js.UndefOr[FileEncoding] = js.native
+  var oldValue: js.UndefOr[FileEncoding] = js.undefined
 }
 object NewValueFileEncoding {
   

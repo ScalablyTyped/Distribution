@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceRevisionsUpdate extends StandardParameters {
+trait ParamsResourceRevisionsUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the file.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaRevision] = js.native
+  var requestBody: js.UndefOr[SchemaRevision] = js.undefined
   
   /**
     * The ID of the revision.
     */
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceRevisionsUpdate {
   

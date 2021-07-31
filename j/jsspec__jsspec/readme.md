@@ -10,9 +10,9 @@ JSSpec - contextualised test runner for javascript
 | ------------------ | :-------------: |
 | Full name          | @jsspec/jsspec |
 | Keywords           | spec, test, jsspec |
-| # releases         | 25 |
+| # releases         | 27 |
 | # dependents       | 0 |
-| # downloads        | 1906 |
+| # downloads        | 2205 |
 | # stars            | 0 |
 
 ## Links

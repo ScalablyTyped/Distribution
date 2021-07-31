@@ -2,13 +2,11 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RatingLabel extends StObject {
   
-  var template: String | js.Function = js.native
+  var template: String | js.Function
 }
 object RatingLabel {
   

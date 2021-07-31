@@ -6,63 +6,61 @@ import typings.soundmanager2.soundmanager2Booleans.`true`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object soundmanager {
   
-  @js.native
   trait DefaultOptions extends StObject {
     
-    var autoLoad: js.UndefOr[Boolean] = js.native
+    var autoLoad: js.UndefOr[Boolean] = js.undefined
     
-    var autoPlay: js.UndefOr[Boolean] = js.native
+    var autoPlay: js.UndefOr[Boolean] = js.undefined
     
-    var from: js.UndefOr[Double | Null] = js.native
+    var from: js.UndefOr[Double | Null] = js.undefined
     
-    var loops: js.UndefOr[Double] = js.native
+    var loops: js.UndefOr[Double] = js.undefined
     
-    var multiShot: js.UndefOr[Boolean] = js.native
+    var multiShot: js.UndefOr[Boolean] = js.undefined
     
-    var multiShotEvents: js.UndefOr[Boolean] = js.native
+    var multiShotEvents: js.UndefOr[Boolean] = js.undefined
     
-    var onerror: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onerror: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onfinish: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onfinish: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onid3: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onid3: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onload: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onload: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onpause: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onpause: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onplay: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onplay: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onposition: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onposition: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onresume: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onresume: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onstop: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onstop: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var pan: js.UndefOr[Double] = js.native
+    var pan: js.UndefOr[Double] = js.undefined
     
-    var playbackRate: js.UndefOr[Double] = js.native
+    var playbackRate: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[Double | Null] = js.native
+    var position: js.UndefOr[Double | Null] = js.undefined
     
-    var stream: js.UndefOr[Boolean] = js.native
+    var stream: js.UndefOr[Boolean] = js.undefined
     
-    var to: js.UndefOr[Double | Null] = js.native
+    var to: js.UndefOr[Double | Null] = js.undefined
     
-    var `type`: js.UndefOr[String | Null] = js.native
+    var `type`: js.UndefOr[String | Null] = js.undefined
     
-    var usePolicyFile: js.UndefOr[Boolean] = js.native
+    var usePolicyFile: js.UndefOr[Boolean] = js.undefined
     
-    var volume: js.UndefOr[Double] = js.native
+    var volume: js.UndefOr[Double] = js.undefined
     
-    var whileloading: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var whileloading: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var whileplaying: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var whileplaying: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
   }
   object DefaultOptions {
     
@@ -272,22 +270,21 @@ object soundmanager {
     }
   }
   
-  @js.native
   trait Flash9Options extends StObject {
     
-    var isMovieStar: js.UndefOr[`true` | Null] = js.native
+    var isMovieStar: js.UndefOr[`true` | Null] = js.undefined
     
-    var onbufferchange: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onbufferchange: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var ondataerror: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var ondataerror: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onfailure: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onfailure: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var useEQData: js.UndefOr[Boolean] = js.native
+    var useEQData: js.UndefOr[Boolean] = js.undefined
     
-    var usePeakData: js.UndefOr[Boolean] = js.native
+    var usePeakData: js.UndefOr[Boolean] = js.undefined
     
-    var useWaveformData: js.UndefOr[Boolean] = js.native
+    var useWaveformData: js.UndefOr[Boolean] = js.undefined
   }
   object Flash9Options {
     
@@ -356,16 +353,15 @@ object soundmanager {
     }
   }
   
-  @js.native
   trait MovieStarOptions extends StObject {
     
-    var bufferTime: js.UndefOr[Double] = js.native
+    var bufferTime: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double | Null] = js.native
+    var duration: js.UndefOr[Double | Null] = js.undefined
     
-    var onconnect: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onconnect: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var serverURL: js.UndefOr[String | Null] = js.native
+    var serverURL: js.UndefOr[String | Null] = js.undefined
   }
   object MovieStarOptions {
     
@@ -413,12 +409,11 @@ object soundmanager {
     }
   }
   
-  @js.native
   trait PeekData extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
   }
   object PeekData {
     
@@ -510,9 +505,9 @@ object soundmanager {
     var peekData: PeekData = js.native
     
     def play(): SMSound = js.native
-    def play(id: js.UndefOr[scala.Nothing], options: DefaultOptions): SMSound = js.native
     def play(id: String): SMSound = js.native
     def play(id: String, options: DefaultOptions): SMSound = js.native
+    def play(id: Unit, options: DefaultOptions): SMSound = js.native
     
     var playState: Double = js.native
     
@@ -562,7 +557,9 @@ object soundmanager {
   }
   
   @js.native
-  trait SoundManager extends SoundManagerProps {
+  trait SoundManager
+    extends StObject
+       with SoundManagerProps {
     
     var audioFormats: js.UndefOr[StringDictionary[SoundManagerAudioFormat]] = js.native
     
@@ -601,11 +598,11 @@ object soundmanager {
     def pauseAll(): Unit = js.native
     
     def play(): SMSound = js.native
-    def play(id: js.UndefOr[scala.Nothing], options: DefaultOptions): SMSound = js.native
-    def play(id: js.UndefOr[scala.Nothing], options: Flash9Options): SMSound = js.native
     def play(id: String): SMSound = js.native
     def play(id: String, options: DefaultOptions): SMSound = js.native
     def play(id: String, options: Flash9Options): SMSound = js.native
+    def play(id: Unit, options: DefaultOptions): SMSound = js.native
+    def play(id: Unit, options: Flash9Options): SMSound = js.native
     
     def reboot(): Unit = js.native
     
@@ -644,14 +641,13 @@ object soundmanager {
     def unmute(id: String): SMSound = js.native
   }
   
-  @js.native
   trait SoundManagerAudioFormat extends StObject {
     
-    var related: js.UndefOr[js.Array[String]] = js.native
+    var related: js.UndefOr[js.Array[String]] = js.undefined
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var `type`: js.Array[String] = js.native
+    var `type`: js.Array[String]
   }
   object SoundManagerAudioFormat {
     
@@ -685,55 +681,54 @@ object soundmanager {
     }
   }
   
-  @js.native
   trait SoundManagerProps extends StObject {
     
-    var allowScriptAccess: js.UndefOr[ScriptAccess] = js.native
+    var allowScriptAccess: js.UndefOr[ScriptAccess] = js.undefined
     
-    var altURL: js.UndefOr[String] = js.native
+    var altURL: js.UndefOr[String] = js.undefined
     
-    var bgColor: js.UndefOr[String] = js.native
+    var bgColor: js.UndefOr[String] = js.undefined
     
-    var consoleOnly: js.UndefOr[Boolean] = js.native
+    var consoleOnly: js.UndefOr[Boolean] = js.undefined
     
-    var debugFlash: js.UndefOr[Boolean] = js.native
+    var debugFlash: js.UndefOr[Boolean] = js.undefined
     
-    var debugMode: js.UndefOr[Boolean] = js.native
+    var debugMode: js.UndefOr[Boolean] = js.undefined
     
-    var defaultOptions: js.UndefOr[DefaultOptions] = js.native
+    var defaultOptions: js.UndefOr[DefaultOptions] = js.undefined
     
     /**
       * Some properties are dynamic, determined at initialisation or later
       * during runtime, and should be treated as read-only.
       */
-    val features: js.UndefOr[js.Object] = js.native
+    val features: js.UndefOr[js.Object] = js.undefined
     
-    var flash9Options: js.UndefOr[Flash9Options] = js.native
+    var flash9Options: js.UndefOr[Flash9Options] = js.undefined
     
     // html5PollingInterval: number;
     // html5Test: string;
-    var flashLoadTimeout: js.UndefOr[Double] = js.native
+    var flashLoadTimeout: js.UndefOr[Double] = js.undefined
     
-    var flashVersion: js.UndefOr[Double] = js.native
+    var flashVersion: js.UndefOr[Double] = js.undefined
     
     // flashPollingInterval: number;
-    var forceUseGlobalHTML5Audio: js.UndefOr[Boolean] = js.native
+    var forceUseGlobalHTML5Audio: js.UndefOr[Boolean] = js.undefined
     
-    val html5Only: js.UndefOr[Boolean] = js.native
+    val html5Only: js.UndefOr[Boolean] = js.undefined
     
-    var idPrefix: js.UndefOr[String] = js.native
+    var idPrefix: js.UndefOr[String] = js.undefined
     
-    var ignoreMobileRestrications: js.UndefOr[Boolean] = js.native
+    var ignoreMobileRestrications: js.UndefOr[Boolean] = js.undefined
     
-    var movieStarOptions: js.UndefOr[MovieStarOptions] = js.native
+    var movieStarOptions: js.UndefOr[MovieStarOptions] = js.undefined
     
-    var noSWFCache: js.UndefOr[Boolean] = js.native
+    var noSWFCache: js.UndefOr[Boolean] = js.undefined
     
-    var onready: js.UndefOr[js.Function0[Unit]] = js.native
+    var onready: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var ontimeout: js.UndefOr[js.Function0[Unit]] = js.native
+    var ontimeout: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var preferFlash: js.UndefOr[Boolean] = js.native
+    var preferFlash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The directory where SM2 can find the flash movies (soundmanager2.swf,
@@ -741,21 +736,21 @@ object soundmanager {
       * append the correct SWF file name, depending on flashVersion and
       * debugMode settings.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var useAltURL: js.UndefOr[Boolean] = js.native
+    var useAltURL: js.UndefOr[Boolean] = js.undefined
     
-    var useConsole: js.UndefOr[Boolean] = js.native
+    var useConsole: js.UndefOr[Boolean] = js.undefined
     
-    var useFlashBlock: js.UndefOr[Boolean] = js.native
+    var useFlashBlock: js.UndefOr[Boolean] = js.undefined
     
-    var useHTML5Audio: js.UndefOr[Boolean] = js.native
+    var useHTML5Audio: js.UndefOr[Boolean] = js.undefined
     
-    var useHighPerformance: js.UndefOr[Boolean] = js.native
+    var useHighPerformance: js.UndefOr[Boolean] = js.undefined
     
-    var waitForWindowLoad: js.UndefOr[`false`] = js.native
+    var waitForWindowLoad: js.UndefOr[`false`] = js.undefined
     
-    var wmode: js.UndefOr[String | Null] = js.native
+    var wmode: js.UndefOr[String | Null] = js.undefined
   }
   object SoundManagerProps {
     
@@ -941,12 +936,13 @@ object soundmanager {
     }
   }
   
-  @js.native
-  trait SoundProperties extends DefaultOptions {
+  trait SoundProperties
+    extends StObject
+       with DefaultOptions {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object SoundProperties {
     

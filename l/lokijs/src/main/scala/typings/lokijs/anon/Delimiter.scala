@@ -4,19 +4,19 @@ import typings.lokijs.DeserializeOptions
 import typings.lokijs.lokijsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Delimiter extends DeserializeOptions {
+trait Delimiter
+  extends StObject
+     with DeserializeOptions {
   
-  var delimited: js.UndefOr[`true`] = js.native
+  var delimited: js.UndefOr[`true`] = js.undefined
   
-  var delimiter: String = js.native
+  var delimiter: String
   
-  var partition: js.UndefOr[Double] = js.native
+  var partition: js.UndefOr[Double] = js.undefined
   
-  var partitioned: js.UndefOr[Boolean] = js.native
+  var partitioned: js.UndefOr[Boolean] = js.undefined
 }
 object Delimiter {
   

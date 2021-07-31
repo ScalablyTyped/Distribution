@@ -2,61 +2,59 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowModalOptions extends StObject {
   
   /**
     * 取消按钮的文字颜色，默认为"#000000"
     */
-  var cancelColor: js.UndefOr[String] = js.native
+  var cancelColor: js.UndefOr[String] = js.undefined
   
   /**
     * 取消按钮的文字，默认为"取消"
     */
-  var cancelText: js.UndefOr[String] = js.native
+  var cancelText: js.UndefOr[String] = js.undefined
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 确定按钮的文字颜色，默认为"#3CC51F"
     */
-  var confirmColor: js.UndefOr[String] = js.native
+  var confirmColor: js.UndefOr[String] = js.undefined
   
   /**
     * 确定按钮的文字，默认为"确定"
     */
-  var confirmText: js.UndefOr[String] = js.native
+  var confirmText: js.UndefOr[String] = js.undefined
   
   /**
     * 提示的内容
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 是否显示取消按钮，默认为 true
     */
-  var showCancel: js.UndefOr[Boolean] = js.native
+  var showCancel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 接口调用成功的回调函数
     */
-  var success: js.UndefOr[js.Function1[/* result */ ShowModalRes, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* result */ ShowModalRes, Unit]] = js.undefined
   
   /**
     * 提示的标题
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ShowModalOptions {
   

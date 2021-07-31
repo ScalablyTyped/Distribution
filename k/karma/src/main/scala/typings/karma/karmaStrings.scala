@@ -4,23 +4,28 @@ import typings.karma.mod.AutomatedBrowsers
 import typings.karma.mod.FilePatternTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object karmaStrings {
   
   @js.native
-  sealed trait Chrome extends AutomatedBrowsers
+  sealed trait Chrome
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def Chrome: Chrome = "Chrome".asInstanceOf[Chrome]
   
   @js.native
-  sealed trait ChromeCanary extends AutomatedBrowsers
+  sealed trait ChromeCanary
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def ChromeCanary: ChromeCanary = "ChromeCanary".asInstanceOf[ChromeCanary]
   
   @js.native
-  sealed trait ChromeHeadless extends AutomatedBrowsers
+  sealed trait ChromeHeadless
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def ChromeHeadless: ChromeHeadless = "ChromeHeadless".asInstanceOf[ChromeHeadless]
   
@@ -35,47 +40,65 @@ object karmaStrings {
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
-  sealed trait Firefox extends AutomatedBrowsers
+  sealed trait Firefox
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def Firefox: Firefox = "Firefox".asInstanceOf[Firefox]
   
   @js.native
-  sealed trait FirefoxAurora extends AutomatedBrowsers
+  sealed trait FirefoxAurora
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def FirefoxAurora: FirefoxAurora = "FirefoxAurora".asInstanceOf[FirefoxAurora]
   
   @js.native
-  sealed trait FirefoxAuroraHeadless extends AutomatedBrowsers
+  sealed trait FirefoxAuroraHeadless
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def FirefoxAuroraHeadless: FirefoxAuroraHeadless = "FirefoxAuroraHeadless".asInstanceOf[FirefoxAuroraHeadless]
   
   @js.native
-  sealed trait FirefoxDeveloper extends AutomatedBrowsers
+  sealed trait FirefoxDeveloper
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def FirefoxDeveloper: FirefoxDeveloper = "FirefoxDeveloper".asInstanceOf[FirefoxDeveloper]
   
   @js.native
-  sealed trait FirefoxDeveloperHeadless extends AutomatedBrowsers
+  sealed trait FirefoxDeveloperHeadless
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def FirefoxDeveloperHeadless: FirefoxDeveloperHeadless = "FirefoxDeveloperHeadless".asInstanceOf[FirefoxDeveloperHeadless]
   
   @js.native
-  sealed trait FirefoxHeadless extends AutomatedBrowsers
+  sealed trait FirefoxHeadless
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def FirefoxHeadless: FirefoxHeadless = "FirefoxHeadless".asInstanceOf[FirefoxHeadless]
   
   @js.native
-  sealed trait FirefoxNightly extends AutomatedBrowsers
+  sealed trait FirefoxNightly
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def FirefoxNightly: FirefoxNightly = "FirefoxNightly".asInstanceOf[FirefoxNightly]
   
   @js.native
-  sealed trait FirefoxNightlyHeadless extends AutomatedBrowsers
+  sealed trait FirefoxNightlyHeadless
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def FirefoxNightlyHeadless: FirefoxNightlyHeadless = "FirefoxNightlyHeadless".asInstanceOf[FirefoxNightlyHeadless]
   
   @js.native
-  sealed trait IE extends AutomatedBrowsers
+  sealed trait IE
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def IE: IE = "IE".asInstanceOf[IE]
   
@@ -95,17 +118,23 @@ object karmaStrings {
   def OFF: OFF = "OFF".asInstanceOf[OFF]
   
   @js.native
-  sealed trait Opera extends AutomatedBrowsers
+  sealed trait Opera
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def Opera: Opera = "Opera".asInstanceOf[Opera]
   
   @js.native
-  sealed trait PhantomJS extends AutomatedBrowsers
+  sealed trait PhantomJS
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def PhantomJS: PhantomJS = "PhantomJS".asInstanceOf[PhantomJS]
   
   @js.native
-  sealed trait Safari extends AutomatedBrowsers
+  sealed trait Safari
+    extends StObject
+       with AutomatedBrowsers
   @scala.inline
   def Safari: Safari = "Safari".asInstanceOf[Safari]
   
@@ -115,12 +144,16 @@ object karmaStrings {
   def WARN: WARN = "WARN".asInstanceOf[WARN]
   
   @js.native
-  sealed trait css extends FilePatternTypes
+  sealed trait css
+    extends StObject
+       with FilePatternTypes
   @scala.inline
   def css: css = "css".asInstanceOf[css]
   
   @js.native
-  sealed trait dart extends FilePatternTypes
+  sealed trait dart
+    extends StObject
+       with FilePatternTypes
   @scala.inline
   def dart: dart = "dart".asInstanceOf[dart]
   
@@ -130,7 +163,9 @@ object karmaStrings {
   def debug_ : debug_ = "debug".asInstanceOf[debug_]
   
   @js.native
-  sealed trait dom extends FilePatternTypes
+  sealed trait dom
+    extends StObject
+       with FilePatternTypes
   @scala.inline
   def dom: dom = "dom".asInstanceOf[dom]
   
@@ -145,7 +180,9 @@ object karmaStrings {
   def factory: factory = "factory".asInstanceOf[factory]
   
   @js.native
-  sealed trait html extends FilePatternTypes
+  sealed trait html
+    extends StObject
+       with FilePatternTypes
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   
@@ -155,7 +192,9 @@ object karmaStrings {
   def info_ : info_ = "info".asInstanceOf[info_]
   
   @js.native
-  sealed trait js_ extends FilePatternTypes
+  sealed trait js_
+    extends StObject
+       with FilePatternTypes
   @scala.inline
   def js_ : js_ = "js".asInstanceOf[js_]
   
@@ -165,7 +204,9 @@ object karmaStrings {
   def log_ : log_ = "log".asInstanceOf[log_]
   
   @js.native
-  sealed trait module extends FilePatternTypes
+  sealed trait module
+    extends StObject
+       with FilePatternTypes
   @scala.inline
   def module: module = "module".asInstanceOf[module]
   

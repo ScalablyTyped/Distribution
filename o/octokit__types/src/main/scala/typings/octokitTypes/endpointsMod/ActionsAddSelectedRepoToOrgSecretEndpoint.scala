@@ -2,18 +2,16 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsAddSelectedRepoToOrgSecretEndpoint extends StObject {
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
-  var repository_id: Double = js.native
+  var repository_id: Double
   
-  var secret_name: String = js.native
+  var secret_name: String
 }
 object ActionsAddSelectedRepoToOrgSecretEndpoint {
   

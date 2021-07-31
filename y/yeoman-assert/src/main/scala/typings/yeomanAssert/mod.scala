@@ -4,17 +4,18 @@ import typings.assert.anon.Actual
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(value: js.Any): /* asserts value */ Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[/* asserts value */ Boolean]
+  @scala.inline
+  def apply(value: js.Any, message: String): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
+  
   @JSImport("yeoman-assert", JSImport.Namespace)
   @js.native
-  def apply(value: js.Any): /* asserts value */ Boolean = js.native
-  @JSImport("yeoman-assert", JSImport.Namespace)
-  @js.native
-  def apply(value: js.Any, message: String): /* asserts value */ Boolean = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("yeoman-assert", "AssertionError")
   @js.native
@@ -28,21 +29,23 @@ object mod {
     * @param filename
     * @param content An object of key/values the file should contains
     */
-  @JSImport("yeoman-assert", "JSONFileContent")
-  @js.native
-  def JSONFileContent_(filename: String, content: js.Object): Unit = js.native
+  @scala.inline
+  def JSONFileContent_(filename: String, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("JSONFileContent")(filename.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* augmented module */
   object assertAugmentingMod {
+    
+    @JSImport("assert", JSImport.Namespace)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Assert a JSON file contains the provided keys
       * @param filename
       * @param content An object of key/values the file should contains
       */
-    @JSImport("assert", "JSONFileContent")
-    @js.native
-    def JSONFileContent_(filename: String, content: js.Object): Unit = js.native
+    @scala.inline
+    def JSONFileContent_(filename: String, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("JSONFileContent")(filename.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Assert that a file's content is the same as the given string
@@ -54,9 +57,8 @@ object mod {
       *   'const greeting = "Hello";\nexport default { greeting }'
       * );
       */
-    @JSImport("assert", "equalsFileContent")
-    @js.native
-    def equalsFileContent(file: String, expectedContent: String): Unit = js.native
+    @scala.inline
+    def equalsFileContent(file: String, expectedContent: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsFileContent")(file.asInstanceOf[js.Any], expectedContent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Assert that each file in an array of file-string pairs equals its corresponding string
       * @param pairs an array of arrays, where each subarray is a [String, String] pair
@@ -66,9 +68,8 @@ object mod {
       *   ['user.js', 'export default {\n  name: 'Coleman',\n  age: 0\n}']
       * ]);
       */
-    @JSImport("assert", "equalsFileContent")
-    @js.native
-    def equalsFileContent(pairs: js.Array[js.Tuple2[String, String]]): Unit = js.native
+    @scala.inline
+    def equalsFileContent(pairs: js.Array[js.Tuple2[String, String]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsFileContent")(pairs.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Assert that a file exists or that each files in the array exists
@@ -77,9 +78,8 @@ object mod {
       * assert.file('templates/user.hbs');
       * assert.noFile(['templates/user.hbs', 'templates/user/edit.hbs']);
       */
-    @JSImport("assert", "file")
-    @js.native
-    def file(path: String | js.Array[String]): Unit = js.native
+    @scala.inline
+    def file(path: String | js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Assert that a file's content matches a regex or string
@@ -89,9 +89,8 @@ object mod {
       * assert.fileContent('models/user.js', /App\.User = DS\.Model\.extend/);
       * assert.fileContent('models/user.js', 'App.User = DS.Model.extend');
       */
-    @JSImport("assert", "fileContent")
-    @js.native
-    def fileContent(file: String | js.Array[String], reg: String | RegExp): Unit = js.native
+    @scala.inline
+    def fileContent(file: String | js.Array[String], reg: String | RegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fileContent")(file.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Assert that each file in an array of file-regex pairs matches its corresponding regex
       * @param pairs an array of arrays, where each subarray is a [String, RegExp] pair
@@ -102,25 +101,22 @@ object mod {
       * ]
       * assert.fileContent(arg);
       */
-    @JSImport("assert", "fileContent")
-    @js.native
-    def fileContent(pairs: js.Array[js.Tuple2[String, RegExp]]): Unit = js.native
+    @scala.inline
+    def fileContent(pairs: js.Array[js.Tuple2[String, RegExp]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fileContent")(pairs.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Assert an Object implements an interface
       * @param subject subject implementing the façade
       * @param methods a façace, hash or array of keys to be implemented
       */
-    @JSImport("assert", "implement")
-    @js.native
-    def implement(subject: js.Object, methods: js.Object | js.Array[String]): Unit = js.native
+    @scala.inline
+    def implement(subject: js.Object, methods: js.Object | js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("implement")(subject.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @see JSONFileContent
       */
-    @JSImport("assert", "jsonFileContent")
-    @js.native
-    def jsonFileContent(filename: String, content: js.Object): Unit = js.native
+    @scala.inline
+    def jsonFileContent(filename: String, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonFileContent")(filename.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Assert that a file doesn't exist
@@ -129,9 +125,8 @@ object mod {
       * assert.noFile('templates/user.hbs');
       * assert.noFile(['templates/user.hbs', 'templates/user/edit.hbs']);
       */
-    @JSImport("assert", "noFile")
-    @js.native
-    def noFile(file: String | js.Array[String]): Unit = js.native
+    @scala.inline
+    def noFile(file: String | js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noFile")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Assert that a file's content does not match a regex / string
@@ -141,9 +136,8 @@ object mod {
       * assert.noFileContent('models/user.js', /App\.User = DS\.Model\.extend/);
       * assert.noFileContent('models/user.js', 'App.User = DS.Model.extend');
       */
-    @JSImport("assert", "noFileContent")
-    @js.native
-    def noFileContent(file: String | js.Array[String], reg: RegExp | String): Unit = js.native
+    @scala.inline
+    def noFileContent(file: String | js.Array[String], reg: RegExp | String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noFileContent")(file.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Assert that each file in an array of file-regex pairs does not match its corresponding regex
       * @param pairs an array of arrays, where each subarray is a [String, RegExp] pair
@@ -153,52 +147,46 @@ object mod {
       * ]
       * assert.noFileContent(arg);
       */
-    @JSImport("assert", "noFileContent")
-    @js.native
-    def noFileContent(pairs: js.Array[js.Tuple2[String, RegExp]]): Unit = js.native
+    @scala.inline
+    def noFileContent(pairs: js.Array[js.Tuple2[String, RegExp]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noFileContent")(pairs.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Assert a JSON file does not contain the provided keys
       * @param filename
       * @param content An object of key/values the file should not contain
       */
-    @JSImport("assert", "noJSONFileContent")
-    @js.native
-    def noJSONFileContent_(filename: String, content: js.Object): Unit = js.native
+    @scala.inline
+    def noJSONFileContent_(filename: String, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noJSONFileContent")(filename.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @see noJSONFileContent
       */
-    @JSImport("assert", "noJsonFileContent")
-    @js.native
-    def noJsonFileContent(filename: String, content: js.Object): Unit = js.native
+    @scala.inline
+    def noJsonFileContent(filename: String, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noJsonFileContent")(filename.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Assert an object does not contain the provided keys
       * @param obj Object that should not match the given pattern
       * @param content An object of key/values the object should not contain
       */
-    @JSImport("assert", "noObjectContent")
-    @js.native
-    def noObjectContent(obj: js.Object, content: js.Object): Unit = js.native
+    @scala.inline
+    def noObjectContent(obj: js.Object, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noObjectContent")(obj.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Assert an Object doesn't implements any method of an interface
       * @param subject subject not implementing the methods
       * @param methods hash or array of method names to be implemented
       */
-    @JSImport("assert", "notImplement")
-    @js.native
-    def notImplement(subject: js.Object, methods: js.Object | js.Array[String]): Unit = js.native
+    @scala.inline
+    def notImplement(subject: js.Object, methods: js.Object | js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notImplement")(subject.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Assert an object contains the provided keys
       * @param obj Object that should match the given pattern
       * @param content An object of key/values the object should contains
       */
-    @JSImport("assert", "objectContent")
-    @js.native
-    def objectContent(obj: js.Object, content: js.Object): Unit = js.native
+    @scala.inline
+    def objectContent(obj: js.Object, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectContent")(obj.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Assert that two strings are equal after standardization of newlines
@@ -207,58 +195,43 @@ object mod {
       * @example
       * assert.textEqual('I have a yellow cat', 'I have a yellow cat');
       */
-    @JSImport("assert", "textEqual")
-    @js.native
-    def textEqual(value: String, expected: String): Unit = js.native
+    @scala.inline
+    def textEqual(value: String, expected: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("textEqual")(value.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /** @deprecated Use `deepStrictEqual` instead */
-  @JSImport("yeoman-assert", "deepEqual")
-  @js.native
-  def deepEqual(actual: js.Any, expected: js.Any): Unit = js.native
-  @JSImport("yeoman-assert", "deepEqual")
-  @js.native
-  def deepEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def deepEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def deepEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yeoman-assert", "deepStrictEqual")
-  @js.native
-  def deepStrictEqual[T](actual: js.Any, expected: T): /* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = js.native
-  @JSImport("yeoman-assert", "deepStrictEqual")
-  @js.native
-  def deepStrictEqual[T](actual: js.Any, expected: T, message: String): /* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = js.native
+  @scala.inline
+  def deepStrictEqual[T](actual: js.Any, expected: T): /* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[/* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  @scala.inline
+  def deepStrictEqual[T](actual: js.Any, expected: T, message: String): /* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
   
-  @JSImport("yeoman-assert", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Function0[Unit]): Unit = js.native
-  @JSImport("yeoman-assert", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Function0[Unit], error: js.Function0[Unit]): Unit = js.native
-  @JSImport("yeoman-assert", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Function0[Unit], error: js.Function0[Unit], message: String): Unit = js.native
-  @JSImport("yeoman-assert", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Function0[Unit], error: js.Function1[/* err */ js.Any, Boolean]): Unit = js.native
-  @JSImport("yeoman-assert", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Function0[Unit], error: js.Function1[/* err */ js.Any, Boolean], message: String): Unit = js.native
-  @JSImport("yeoman-assert", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Function0[Unit], error: RegExp): Unit = js.native
-  @JSImport("yeoman-assert", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Function0[Unit], error: RegExp, message: String): Unit = js.native
-  @JSImport("yeoman-assert", "doesNotThrow")
-  @js.native
-  def doesNotThrow(block: js.Function0[Unit], message: String): Unit = js.native
+  @scala.inline
+  def doesNotThrow(block: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def doesNotThrow(block: js.Function0[Unit], error: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def doesNotThrow(block: js.Function0[Unit], error: js.Function0[Unit], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def doesNotThrow(block: js.Function0[Unit], error: js.Function1[/* err */ js.Any, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def doesNotThrow(block: js.Function0[Unit], error: js.Function1[/* err */ js.Any, Boolean], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def doesNotThrow(block: js.Function0[Unit], error: RegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def doesNotThrow(block: js.Function0[Unit], error: RegExp, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def doesNotThrow(block: js.Function0[Unit], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** @deprecated Use `strictEqual` instead */
-  @JSImport("yeoman-assert", "equal")
-  @js.native
-  def equal(actual: js.Any, expected: js.Any): Unit = js.native
-  @JSImport("yeoman-assert", "equal")
-  @js.native
-  def equal(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def equal(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def equal(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Assert that a file's content is the same as the given string
@@ -270,9 +243,8 @@ object mod {
     *   'const greeting = "Hello";\nexport default { greeting }'
     * );
     */
-  @JSImport("yeoman-assert", "equalsFileContent")
-  @js.native
-  def equalsFileContent(file: String, expectedContent: String): Unit = js.native
+  @scala.inline
+  def equalsFileContent(file: String, expectedContent: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsFileContent")(file.asInstanceOf[js.Any], expectedContent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Assert that each file in an array of file-string pairs equals its corresponding string
     * @param pairs an array of arrays, where each subarray is a [String, String] pair
@@ -282,78 +254,41 @@ object mod {
     *   ['user.js', 'export default {\n  name: 'Coleman',\n  age: 0\n}']
     * ]);
     */
-  @JSImport("yeoman-assert", "equalsFileContent")
-  @js.native
-  def equalsFileContent(pairs: js.Array[js.Tuple2[String, String]]): Unit = js.native
+  @scala.inline
+  def equalsFileContent(pairs: js.Array[js.Tuple2[String, String]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsFileContent")(pairs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(
-    actual: js.UndefOr[scala.Nothing],
-    expected: js.UndefOr[scala.Nothing],
-    message: js.UndefOr[scala.Nothing],
-    operator: String
-  ): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(actual: js.UndefOr[scala.Nothing], expected: js.UndefOr[scala.Nothing], message: String): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(
-    actual: js.UndefOr[scala.Nothing],
-    expected: js.UndefOr[scala.Nothing],
-    message: String,
-    operator: String
-  ): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(
-    actual: js.UndefOr[scala.Nothing],
-    expected: js.Any,
-    message: js.UndefOr[scala.Nothing],
-    operator: String
-  ): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any, message: String): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any, message: String, operator: String): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(actual: js.Any): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(
-    actual: js.Any,
-    expected: js.UndefOr[scala.Nothing],
-    message: js.UndefOr[scala.Nothing],
-    operator: String
-  ): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(actual: js.Any, expected: js.UndefOr[scala.Nothing], message: String): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(actual: js.Any, expected: js.UndefOr[scala.Nothing], message: String, operator: String): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(actual: js.Any, expected: js.Any): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(actual: js.Any, expected: js.Any, message: js.UndefOr[scala.Nothing], operator: String): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(actual: js.Any, expected: js.Any, message: String): scala.Nothing = js.native
-  @JSImport("yeoman-assert", "fail")
-  @js.native
-  def fail(actual: js.Any, expected: js.Any, message: String, operator: String): scala.Nothing = js.native
+  @scala.inline
+  def fail(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: js.Any): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: js.Any, expected: js.Any): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: js.Any, expected: js.Any, message: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: js.Any, expected: js.Any, message: String, operator: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: js.Any, expected: js.Any, message: Unit, operator: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: js.Any, expected: Unit, message: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: js.Any, expected: Unit, message: String, operator: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: js.Any, expected: Unit, message: Unit, operator: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: Unit, expected: js.Any): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: Unit, expected: js.Any, message: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: Unit, expected: js.Any, message: String, operator: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: Unit, expected: js.Any, message: Unit, operator: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: Unit, expected: Unit, message: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: Unit, expected: Unit, message: String, operator: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(actual: Unit, expected: Unit, message: Unit, operator: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
   
   /**
     * Assert that a file exists or that each files in the array exists
@@ -362,12 +297,10 @@ object mod {
     * assert.file('templates/user.hbs');
     * assert.noFile(['templates/user.hbs', 'templates/user/edit.hbs']);
     */
-  @JSImport("yeoman-assert", "file")
-  @js.native
-  def file(path: String): Unit = js.native
-  @JSImport("yeoman-assert", "file")
-  @js.native
-  def file(path: js.Array[String]): Unit = js.native
+  @scala.inline
+  def file(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def file(path: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Assert that a file's content matches a regex or string
@@ -377,18 +310,14 @@ object mod {
     * assert.fileContent('models/user.js', /App\.User = DS\.Model\.extend/);
     * assert.fileContent('models/user.js', 'App.User = DS.Model.extend');
     */
-  @JSImport("yeoman-assert", "fileContent")
-  @js.native
-  def fileContent(file: String, reg: String): Unit = js.native
-  @JSImport("yeoman-assert", "fileContent")
-  @js.native
-  def fileContent(file: String, reg: RegExp): Unit = js.native
-  @JSImport("yeoman-assert", "fileContent")
-  @js.native
-  def fileContent(file: js.Array[String], reg: String): Unit = js.native
-  @JSImport("yeoman-assert", "fileContent")
-  @js.native
-  def fileContent(file: js.Array[String], reg: RegExp): Unit = js.native
+  @scala.inline
+  def fileContent(file: String, reg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fileContent")(file.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fileContent(file: String, reg: RegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fileContent")(file.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fileContent(file: js.Array[String], reg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fileContent")(file.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fileContent(file: js.Array[String], reg: RegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fileContent")(file.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Assert that each file in an array of file-regex pairs matches its corresponding regex
     * @param pairs an array of arrays, where each subarray is a [String, RegExp] pair
@@ -399,34 +328,31 @@ object mod {
     * ]
     * assert.fileContent(arg);
     */
-  @JSImport("yeoman-assert", "fileContent")
-  @js.native
-  def fileContent(pairs: js.Array[js.Tuple2[String, RegExp]]): Unit = js.native
+  @scala.inline
+  def fileContent(pairs: js.Array[js.Tuple2[String, RegExp]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fileContent")(pairs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("yeoman-assert", "ifError")
-  @js.native
+  @scala.inline
   def ifError(value: js.Any): js.UndefOr[
     /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray())*/ Boolean
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifError")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
+    /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray())*/ Boolean
+  ]]
   
-  @JSImport("yeoman-assert", "implement")
-  @js.native
-  def implement(subject: js.Object, methods: js.Array[String]): Unit = js.native
+  @scala.inline
+  def implement(subject: js.Object, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("implement")(subject.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Assert an Object implements an interface
     * @param subject subject implementing the façade
     * @param methods a façace, hash or array of keys to be implemented
     */
-  @JSImport("yeoman-assert", "implement")
-  @js.native
-  def implement(subject: js.Object, methods: js.Object): Unit = js.native
+  @scala.inline
+  def implement(subject: js.Object, methods: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("implement")(subject.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @see JSONFileContent
     */
-  @JSImport("yeoman-assert", "jsonFileContent")
-  @js.native
-  def jsonFileContent(filename: String, content: js.Object): Unit = js.native
+  @scala.inline
+  def jsonFileContent(filename: String, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonFileContent")(filename.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Assert that a file doesn't exist
@@ -435,16 +361,13 @@ object mod {
     * assert.noFile('templates/user.hbs');
     * assert.noFile(['templates/user.hbs', 'templates/user/edit.hbs']);
     */
-  @JSImport("yeoman-assert", "noFile")
-  @js.native
-  def noFile(file: String): Unit = js.native
-  @JSImport("yeoman-assert", "noFile")
-  @js.native
-  def noFile(file: js.Array[String]): Unit = js.native
+  @scala.inline
+  def noFile(file: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noFile")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def noFile(file: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noFile")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("yeoman-assert", "noFileContent")
-  @js.native
-  def noFileContent(file: String, reg: String): Unit = js.native
+  @scala.inline
+  def noFileContent(file: String, reg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noFileContent")(file.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Assert that a file's content does not match a regex / string
     * @param file path to a file
@@ -453,15 +376,12 @@ object mod {
     * assert.noFileContent('models/user.js', /App\.User = DS\.Model\.extend/);
     * assert.noFileContent('models/user.js', 'App.User = DS.Model.extend');
     */
-  @JSImport("yeoman-assert", "noFileContent")
-  @js.native
-  def noFileContent(file: String, reg: RegExp): Unit = js.native
-  @JSImport("yeoman-assert", "noFileContent")
-  @js.native
-  def noFileContent(file: js.Array[String], reg: String): Unit = js.native
-  @JSImport("yeoman-assert", "noFileContent")
-  @js.native
-  def noFileContent(file: js.Array[String], reg: RegExp): Unit = js.native
+  @scala.inline
+  def noFileContent(file: String, reg: RegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noFileContent")(file.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def noFileContent(file: js.Array[String], reg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noFileContent")(file.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def noFileContent(file: js.Array[String], reg: RegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noFileContent")(file.asInstanceOf[js.Any], reg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Assert that each file in an array of file-regex pairs does not match its corresponding regex
     * @param pairs an array of arrays, where each subarray is a [String, RegExp] pair
@@ -471,103 +391,84 @@ object mod {
     * ]
     * assert.noFileContent(arg);
     */
-  @JSImport("yeoman-assert", "noFileContent")
-  @js.native
-  def noFileContent(pairs: js.Array[js.Tuple2[String, RegExp]]): Unit = js.native
+  @scala.inline
+  def noFileContent(pairs: js.Array[js.Tuple2[String, RegExp]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noFileContent")(pairs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Assert a JSON file does not contain the provided keys
     * @param filename
     * @param content An object of key/values the file should not contain
     */
-  @JSImport("yeoman-assert", "noJSONFileContent")
-  @js.native
-  def noJSONFileContent_(filename: String, content: js.Object): Unit = js.native
+  @scala.inline
+  def noJSONFileContent_(filename: String, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noJSONFileContent")(filename.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @see noJSONFileContent
     */
-  @JSImport("yeoman-assert", "noJsonFileContent")
-  @js.native
-  def noJsonFileContent(filename: String, content: js.Object): Unit = js.native
+  @scala.inline
+  def noJsonFileContent(filename: String, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noJsonFileContent")(filename.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Assert an object does not contain the provided keys
     * @param obj Object that should not match the given pattern
     * @param content An object of key/values the object should not contain
     */
-  @JSImport("yeoman-assert", "noObjectContent")
-  @js.native
-  def noObjectContent(obj: js.Object, content: js.Object): Unit = js.native
+  @scala.inline
+  def noObjectContent(obj: js.Object, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noObjectContent")(obj.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** @deprecated Use `notDeepStrictEqual` instead */
-  @JSImport("yeoman-assert", "notDeepEqual")
-  @js.native
-  def notDeepEqual(actual: js.Any, expected: js.Any): Unit = js.native
-  @JSImport("yeoman-assert", "notDeepEqual")
-  @js.native
-  def notDeepEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def notDeepEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def notDeepEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yeoman-assert", "notDeepStrictEqual")
-  @js.native
-  def notDeepStrictEqual(actual: js.Any, expected: js.Any): Unit = js.native
-  @JSImport("yeoman-assert", "notDeepStrictEqual")
-  @js.native
-  def notDeepStrictEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def notDeepStrictEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def notDeepStrictEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** @deprecated Use `notStrictEqual` instead */
-  @JSImport("yeoman-assert", "notEqual")
-  @js.native
-  def notEqual(actual: js.Any, expected: js.Any): Unit = js.native
-  @JSImport("yeoman-assert", "notEqual")
-  @js.native
-  def notEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def notEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def notEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yeoman-assert", "notImplement")
-  @js.native
-  def notImplement(subject: js.Object, methods: js.Array[String]): Unit = js.native
+  @scala.inline
+  def notImplement(subject: js.Object, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notImplement")(subject.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Assert an Object doesn't implements any method of an interface
     * @param subject subject not implementing the methods
     * @param methods hash or array of method names to be implemented
     */
-  @JSImport("yeoman-assert", "notImplement")
-  @js.native
-  def notImplement(subject: js.Object, methods: js.Object): Unit = js.native
+  @scala.inline
+  def notImplement(subject: js.Object, methods: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notImplement")(subject.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yeoman-assert", "notStrictEqual")
-  @js.native
-  def notStrictEqual(actual: js.Any, expected: js.Any): Unit = js.native
-  @JSImport("yeoman-assert", "notStrictEqual")
-  @js.native
-  def notStrictEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def notStrictEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def notStrictEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Assert an object contains the provided keys
     * @param obj Object that should match the given pattern
     * @param content An object of key/values the object should contains
     */
-  @JSImport("yeoman-assert", "objectContent")
-  @js.native
-  def objectContent(obj: js.Object, content: js.Object): Unit = js.native
+  @scala.inline
+  def objectContent(obj: js.Object, content: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectContent")(obj.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yeoman-assert", "ok")
-  @js.native
-  def ok(value: js.Any): /* asserts value */ Boolean = js.native
-  @JSImport("yeoman-assert", "ok")
-  @js.native
-  def ok(value: js.Any, message: String): /* asserts value */ Boolean = js.native
+  @scala.inline
+  def ok(value: js.Any): /* asserts value */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(value.asInstanceOf[js.Any]).asInstanceOf[/* asserts value */ Boolean]
+  @scala.inline
+  def ok(value: js.Any, message: String): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ok")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
   
   @JSImport("yeoman-assert", "strict")
   @js.native
   val strict: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assert */ js.Any = js.native
   
-  @JSImport("yeoman-assert", "strictEqual")
-  @js.native
-  def strictEqual[T](actual: js.Any, expected: T): /* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = js.native
-  @JSImport("yeoman-assert", "strictEqual")
-  @js.native
-  def strictEqual[T](actual: js.Any, expected: T, message: String): /* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = js.native
+  @scala.inline
+  def strictEqual[T](actual: js.Any, expected: T): /* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[/* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  @scala.inline
+  def strictEqual[T](actual: js.Any, expected: T, message: String): /* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts actual is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
   
   /**
     * Assert that two strings are equal after standardization of newlines
@@ -576,32 +477,23 @@ object mod {
     * @example
     * assert.textEqual('I have a yellow cat', 'I have a yellow cat');
     */
-  @JSImport("yeoman-assert", "textEqual")
-  @js.native
-  def textEqual(value: String, expected: String): Unit = js.native
+  @scala.inline
+  def textEqual(value: String, expected: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("textEqual")(value.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yeoman-assert", "throws")
-  @js.native
-  def throws(block: js.Function0[Unit]): Unit = js.native
-  @JSImport("yeoman-assert", "throws")
-  @js.native
-  def throws(block: js.Function0[Unit], error: js.Function0[Unit]): Unit = js.native
-  @JSImport("yeoman-assert", "throws")
-  @js.native
-  def throws(block: js.Function0[Unit], error: js.Function0[Unit], message: String): Unit = js.native
-  @JSImport("yeoman-assert", "throws")
-  @js.native
-  def throws(block: js.Function0[Unit], error: js.Function1[/* err */ js.Any, Boolean]): Unit = js.native
-  @JSImport("yeoman-assert", "throws")
-  @js.native
-  def throws(block: js.Function0[Unit], error: js.Function1[/* err */ js.Any, Boolean], message: String): Unit = js.native
-  @JSImport("yeoman-assert", "throws")
-  @js.native
-  def throws(block: js.Function0[Unit], error: RegExp): Unit = js.native
-  @JSImport("yeoman-assert", "throws")
-  @js.native
-  def throws(block: js.Function0[Unit], error: RegExp, message: String): Unit = js.native
-  @JSImport("yeoman-assert", "throws")
-  @js.native
-  def throws(block: js.Function0[Unit], message: String): Unit = js.native
+  @scala.inline
+  def throws(block: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def throws(block: js.Function0[Unit], error: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def throws(block: js.Function0[Unit], error: js.Function0[Unit], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def throws(block: js.Function0[Unit], error: js.Function1[/* err */ js.Any, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def throws(block: js.Function0[Unit], error: js.Function1[/* err */ js.Any, Boolean], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def throws(block: js.Function0[Unit], error: RegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def throws(block: js.Function0[Unit], error: RegExp, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def throws(block: js.Function0[Unit], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

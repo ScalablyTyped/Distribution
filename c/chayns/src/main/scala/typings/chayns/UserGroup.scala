@@ -2,7 +2,6 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interfaces
   */
 // chayns.env.user.groups
-@js.native
 trait UserGroup extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var isActive: js.UndefOr[Boolean] = js.native
+  var isActive: js.UndefOr[Boolean] = js.undefined
   
-  var isSystemGroup: js.UndefOr[Boolean] = js.native
+  var isSystemGroup: js.UndefOr[Boolean] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var showName: js.UndefOr[String] = js.native
+  var showName: js.UndefOr[String] = js.undefined
 }
 object UserGroup {
   

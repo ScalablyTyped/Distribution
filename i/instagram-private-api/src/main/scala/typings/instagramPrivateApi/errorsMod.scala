@@ -10,7 +10,6 @@ import typings.instagramPrivateApi.uploadRepositoryVideoResponseMod.UploadReposi
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
@@ -66,7 +65,7 @@ object errorsMod {
   @js.native
   class IgInactiveUserError protected ()
     extends typings.instagramPrivateApi.igInactiveUserErrorMod.IgInactiveUserError {
-    def this(response: IgResponse[_]) = this()
+    def this(response: IgResponse[js.Any]) = this()
   }
   
   @JSImport("instagram-private-api/dist/errors", "IgLoginBadPasswordError")
@@ -115,7 +114,7 @@ object errorsMod {
   @js.native
   class IgNotFoundError protected ()
     extends typings.instagramPrivateApi.igNotFoundErrorMod.IgNotFoundError {
-    def this(response: IgResponse[_]) = this()
+    def this(response: IgResponse[js.Any]) = this()
   }
   
   @JSImport("instagram-private-api/dist/errors", "IgParseError")
@@ -129,7 +128,7 @@ object errorsMod {
   @js.native
   class IgPrivateUserError protected ()
     extends typings.instagramPrivateApi.igPrivateUserErrorMod.IgPrivateUserError {
-    def this(response: IgResponse[_]) = this()
+    def this(response: IgResponse[js.Any]) = this()
   }
   
   @JSImport("instagram-private-api/dist/errors", "IgRequestsLimitError")
@@ -148,7 +147,7 @@ object errorsMod {
   @js.native
   class IgSentryBlockError protected ()
     extends typings.instagramPrivateApi.igSentryBlockErrorMod.IgSentryBlockError {
-    def this(response: IgResponse[_]) = this()
+    def this(response: IgResponse[js.Any]) = this()
   }
   
   @JSImport("instagram-private-api/dist/errors", "IgUploadVideoError")

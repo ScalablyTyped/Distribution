@@ -4,17 +4,15 @@ import typings.yaml.utilMod.LinePos
 import typings.yaml.utilMod.YAMLSyntaxError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait End extends StObject {
     
-    var end: LinePos = js.native
+    var end: LinePos
     
-    var start: LinePos = js.native
+    var start: LinePos
   }
   object End {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Errors extends StObject {
     
-    var errors: js.Array[YAMLSyntaxError] = js.native
+    var errors: js.Array[YAMLSyntaxError]
     
-    var str: String = js.native
+    var str: String
   }
   object Errors {
     
@@ -64,12 +61,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Handle extends StObject {
     
-    var handle: String = js.native
+    var handle: String
     
-    var suffix: String = js.native
+    var suffix: String
   }
   object Handle {
     
@@ -90,7 +86,6 @@ object anon {
     }
   }
   
-  @js.native
   trait JsonEncoding extends StObject {
     
     /**
@@ -98,14 +93,14 @@ object anon {
       *
       * Default: `false`
       */
-    var jsonEncoding: Boolean = js.native
+    var jsonEncoding: Boolean
     
     /**
       * Minimum length to use multiple lines to represent the value.
       *
       * Default: `40`
       */
-    var minMultiLineLength: Double = js.native
+    var minMultiLineLength: Double
   }
   object JsonEncoding {
     
@@ -126,7 +121,6 @@ object anon {
     }
   }
   
-  @js.native
   trait LineWidth extends StObject {
     
     /**
@@ -134,14 +128,14 @@ object anon {
       *
       * Default: `80`
       */
-    var lineWidth: Double = js.native
+    var lineWidth: Double
     
     /**
       * Minimum width for highly-indented content.
       *
       * Default: `20`
       */
-    var minContentWidth: Double = js.native
+    var minContentWidth: Double
   }
   object LineWidth {
     
@@ -162,17 +156,16 @@ object anon {
     }
   }
   
-  @js.native
   trait MAP extends StObject {
     
     /** Default: `'tag:yaml.org,2002:map'` */
-    var MAP: String = js.native
+    var MAP: String
     
     /** Default: `'tag:yaml.org,2002:seq'` */
-    var SEQ: String = js.native
+    var SEQ: String
     
     /** Default: `'tag:yaml.org,2002:str'` */
-    var STR: String = js.native
+    var STR: String
   }
   object MAP {
     
@@ -196,10 +189,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Verbatim extends StObject {
     
-    var verbatim: String = js.native
+    var verbatim: String
   }
   object Verbatim {
     

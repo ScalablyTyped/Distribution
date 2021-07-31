@@ -51,7 +51,6 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownContainerMod {
@@ -101,22 +100,21 @@ object dropdownContainerMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait DropdownContainerModifierProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var align: js.UndefOr[right] = js.native
+    var align: js.UndefOr[right] = js.undefined
     
-    var as: js.UndefOr[ReactType[_]] = js.native
+    var as: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var hoverable: js.UndefOr[Boolean] = js.native
+    var hoverable: js.UndefOr[Boolean] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[HTMLElement | SVGElement | ComponentType[js.Object]]] = js.native
+    var innerRef: js.UndefOr[Ref[HTMLElement | SVGElement | ComponentType[js.Object]]] = js.undefined
     
-    var managed: js.UndefOr[Boolean] = js.native
+    var managed: js.UndefOr[Boolean] = js.undefined
     
-    var up: js.UndefOr[Boolean] = js.native
+    var up: js.UndefOr[Boolean] = js.undefined
   }
   object DropdownContainerModifierProps {
     
@@ -142,7 +140,7 @@ object dropdownContainerMod {
       def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
       @scala.inline
-      def setAs(value: ReactType[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
@@ -180,96 +178,95 @@ object dropdownContainerMod {
   }
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps & rbx.rbx/components/dropdown/dropdown-container.DropdownContainerModifierProps */
-  @js.native
   trait DropdownContainerProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var align: js.UndefOr[right] = js.native
+    var align: js.UndefOr[right] = js.undefined
     
-    var as: js.UndefOr[ReactType[_]] = js.native
+    var as: js.UndefOr[ReactType[js.Any]] = js.undefined
     
     var backgroundColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var badge: js.UndefOr[Double | String] = js.native
+    var badge: js.UndefOr[Double | String] = js.undefined
     
     var badgeColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var badgeOutlined: js.UndefOr[Boolean] = js.native
+    var badgeOutlined: js.UndefOr[Boolean] = js.undefined
     
-    var badgeRounded: js.UndefOr[Boolean] = js.native
+    var badgeRounded: js.UndefOr[Boolean] = js.undefined
     
-    var badgeSize: js.UndefOr[small | medium | large] = js.native
+    var badgeSize: js.UndefOr[small | medium | large] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearfix: js.UndefOr[Boolean] = js.native
+    var clearfix: js.UndefOr[Boolean] = js.undefined
     
-    var clipped: js.UndefOr[Boolean] = js.native
+    var clipped: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var hoverable: js.UndefOr[Boolean] = js.native
+    var hoverable: js.UndefOr[Boolean] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[HTMLElement | SVGElement | ComponentType[js.Object]]] = js.native
+    var innerRef: js.UndefOr[Ref[HTMLElement | SVGElement | ComponentType[js.Object]]] = js.undefined
     
-    var invisible: js.UndefOr[Boolean] = js.native
+    var invisible: js.UndefOr[Boolean] = js.undefined
     
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
-    var managed: js.UndefOr[Boolean] = js.native
+    var managed: js.UndefOr[Boolean] = js.undefined
     
-    var marginless: js.UndefOr[Boolean] = js.native
+    var marginless: js.UndefOr[Boolean] = js.undefined
     
-    var overlay: js.UndefOr[Boolean] = js.native
+    var overlay: js.UndefOr[Boolean] = js.undefined
     
-    var paddingless: js.UndefOr[Boolean] = js.native
+    var paddingless: js.UndefOr[Boolean] = js.undefined
     
-    var pull: js.UndefOr[left | right] = js.native
+    var pull: js.UndefOr[left | right] = js.undefined
     
-    var radiusless: js.UndefOr[Boolean] = js.native
+    var radiusless: js.UndefOr[Boolean] = js.undefined
     
-    var relative: js.UndefOr[Boolean] = js.native
+    var relative: js.UndefOr[Boolean] = js.undefined
     
-    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.native
+    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.undefined
     
-    var shadowless: js.UndefOr[Boolean] = js.native
+    var shadowless: js.UndefOr[Boolean] = js.undefined
     
-    var srOnly: js.UndefOr[Boolean] = js.native
+    var srOnly: js.UndefOr[Boolean] = js.undefined
     
-    var textAlign: js.UndefOr[centered | justified | left | right] = js.native
+    var textAlign: js.UndefOr[centered | justified | left | right] = js.undefined
     
     var textColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.native
+    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.undefined
     
-    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.native
+    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.undefined
     
-    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.native
+    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.undefined
     
-    var tooltip: js.UndefOr[Double | String] = js.native
+    var tooltip: js.UndefOr[Double | String] = js.undefined
     
-    var tooltipActive: js.UndefOr[Boolean] = js.native
+    var tooltipActive: js.UndefOr[Boolean] = js.undefined
     
     var tooltipColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var tooltipMultiline: js.UndefOr[Boolean] = js.native
+    var tooltipMultiline: js.UndefOr[Boolean] = js.undefined
     
-    var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.native
+    var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.native
+    var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.undefined
     
-    var unselectable: js.UndefOr[Boolean] = js.native
+    var unselectable: js.UndefOr[Boolean] = js.undefined
     
-    var up: js.UndefOr[Boolean] = js.native
+    var up: js.UndefOr[Boolean] = js.undefined
   }
   object DropdownContainerProps {
     
@@ -295,7 +292,7 @@ object dropdownContainerMod {
       def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
       @scala.inline
-      def setAs(value: ReactType[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
@@ -534,10 +531,9 @@ object dropdownContainerMod {
     }
   }
   
-  @js.native
   trait DropdownContainerState extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
   }
   object DropdownContainerState {
     
@@ -556,16 +552,15 @@ object dropdownContainerMod {
   }
   
   /* Inlined rbx.rbx/types.Prefer<rbx.rbx/components/dropdown/dropdown-container.DropdownVariablesOverrides, rbx.rbx/components/dropdown/dropdown-container.DropdownVariablesDefaults> */
-  @js.native
   trait DropdownVariables extends StObject {
     
-    var alignments: right = js.native
+    var alignments: right
   }
   object DropdownVariables {
     
     @scala.inline
-    def apply(alignments: right): DropdownVariables = {
-      val __obj = js.Dynamic.literal(alignments = alignments.asInstanceOf[js.Any])
+    def apply(): DropdownVariables = {
+      val __obj = js.Dynamic.literal(alignments = "right")
       __obj.asInstanceOf[DropdownVariables]
     }
     
@@ -577,16 +572,15 @@ object dropdownContainerMod {
     }
   }
   
-  @js.native
   trait DropdownVariablesDefaults extends StObject {
     
-    var alignments: right = js.native
+    var alignments: right
   }
   object DropdownVariablesDefaults {
     
     @scala.inline
-    def apply(alignments: right): DropdownVariablesDefaults = {
-      val __obj = js.Dynamic.literal(alignments = alignments.asInstanceOf[js.Any])
+    def apply(): DropdownVariablesDefaults = {
+      val __obj = js.Dynamic.literal(alignments = "right")
       __obj.asInstanceOf[DropdownVariablesDefaults]
     }
     
@@ -598,6 +592,5 @@ object dropdownContainerMod {
     }
   }
   
-  @js.native
   trait DropdownVariablesOverrides extends StObject
 }

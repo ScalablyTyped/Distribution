@@ -5,7 +5,6 @@ import typings.hermesProfileTransformer.phasesMod.EventsPhase.FLOW_EVENTS_START
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.FLOW_EVENTS_STEP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hermesProfileTransformer.eventInterfacesMod.FlowEventStep
   - typings.hermesProfileTransformer.eventInterfacesMod.FlowEventEnd
 */
-trait FlowEvent extends Event
+trait FlowEvent
+  extends StObject
+     with Event
 object FlowEvent {
   
   @scala.inline

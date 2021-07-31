@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies a filter manager interface for a {@link FilePicker} */
-@js.native
-trait XFilterManager extends XInterface {
+trait XFilterManager
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the currently selected filter.
     * @returns The name of the selected filter or an empty string if there is no filter or no filter is currently selected.
     */
-  var CurrentFilter: String = js.native
+  var CurrentFilter: String
   
   /**
     * Adds a filter identified by a title.
@@ -23,20 +23,20 @@ trait XFilterManager extends XInterface {
     * @param aFilter Specifies the extensions of the filter. Multiple filters should be semicolon separated. The semicolon may not be used as character in a f
     * @throws com::sun::star::lang::IllegalArgumentException If a filter with the specified title already exists.
     */
-  def appendFilter(aTitle: String, aFilter: String): Unit = js.native
+  def appendFilter(aTitle: String, aFilter: String): Unit
   
   /**
     * Returns the currently selected filter.
     * @returns The name of the selected filter or an empty string if there is no filter or no filter is currently selected.
     */
-  def getCurrentFilter(): String = js.native
+  def getCurrentFilter(): String
   
   /**
     * Sets the current filter.
     * @param aTitle Specifies the name of the filter to be set.
     * @throws com::sun::star::lang::IllegalArgumentException If the specified filter was not found.
     */
-  def setCurrentFilter(aTitle: String): Unit = js.native
+  def setCurrentFilter(aTitle: String): Unit
 }
 object XFilterManager {
   

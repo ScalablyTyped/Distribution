@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartMonitoringScheduleRequest extends StObject {
   
   /**
     * The name of the schedule to start.
     */
-  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName = js.native
+  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName
 }
 object StartMonitoringScheduleRequest {
   

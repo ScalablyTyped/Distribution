@@ -16,7 +16,6 @@ import typings.uirouterCore.uirouterCoreStrings.unknown
 import typings.uirouterCore.uirouterCoreStrings.url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionInterfaceMod {
@@ -28,27 +27,37 @@ object transitionInterfaceMod {
   object TransitionHookPhase extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TransitionHookPhase with Double] = js.native
+    def apply(value: Double): js.UndefOr[TransitionHookPhase & Double] = js.native
     
     @js.native
-    sealed trait BEFORE extends TransitionHookPhase
-    /* 1 */ val BEFORE: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.BEFORE with Double = js.native
+    sealed trait BEFORE
+      extends StObject
+         with TransitionHookPhase
+    /* 1 */ val BEFORE: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.BEFORE & Double = js.native
     
     @js.native
-    sealed trait CREATE extends TransitionHookPhase
-    /* 0 */ val CREATE: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.CREATE with Double = js.native
+    sealed trait CREATE
+      extends StObject
+         with TransitionHookPhase
+    /* 0 */ val CREATE: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.CREATE & Double = js.native
     
     @js.native
-    sealed trait ERROR extends TransitionHookPhase
-    /* 4 */ val ERROR: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with TransitionHookPhase
+    /* 4 */ val ERROR: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.ERROR & Double = js.native
     
     @js.native
-    sealed trait RUN extends TransitionHookPhase
-    /* 2 */ val RUN: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.RUN with Double = js.native
+    sealed trait RUN
+      extends StObject
+         with TransitionHookPhase
+    /* 2 */ val RUN: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.RUN & Double = js.native
     
     @js.native
-    sealed trait SUCCESS extends TransitionHookPhase
-    /* 3 */ val SUCCESS: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.SUCCESS with Double = js.native
+    sealed trait SUCCESS
+      extends StObject
+         with TransitionHookPhase
+    /* 3 */ val SUCCESS: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.SUCCESS & Double = js.native
   }
   
   @js.native
@@ -58,37 +67,41 @@ object transitionInterfaceMod {
   object TransitionHookScope extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TransitionHookScope with Double] = js.native
+    def apply(value: Double): js.UndefOr[TransitionHookScope & Double] = js.native
     
     @js.native
-    sealed trait STATE extends TransitionHookScope
-    /* 1 */ val STATE: typings.uirouterCore.transitionInterfaceMod.TransitionHookScope.STATE with Double = js.native
+    sealed trait STATE
+      extends StObject
+         with TransitionHookScope
+    /* 1 */ val STATE: typings.uirouterCore.transitionInterfaceMod.TransitionHookScope.STATE & Double = js.native
     
     @js.native
-    sealed trait TRANSITION extends TransitionHookScope
-    /* 0 */ val TRANSITION: typings.uirouterCore.transitionInterfaceMod.TransitionHookScope.TRANSITION with Double = js.native
+    sealed trait TRANSITION
+      extends StObject
+         with TransitionHookScope
+    /* 0 */ val TRANSITION: typings.uirouterCore.transitionInterfaceMod.TransitionHookScope.TRANSITION & Double = js.native
   }
   
   type HookFn = TransitionHookFn | TransitionStateHookFn | TransitionCreateHookFn
   
-  @js.native
   trait HookMatchCriteria
-    extends /* key */ StringDictionary[js.UndefOr[HookMatchCriterion]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[HookMatchCriterion]] {
     
     /** A [[HookMatchCriterion]] to match any state that would be entering */
-    var entering: js.UndefOr[HookMatchCriterion] = js.native
+    var entering: js.UndefOr[HookMatchCriterion] = js.undefined
     
     /** A [[HookMatchCriterion]] to match any state that would be exiting */
-    var exiting: js.UndefOr[HookMatchCriterion] = js.native
+    var exiting: js.UndefOr[HookMatchCriterion] = js.undefined
     
     /** A [[HookMatchCriterion]] to match the original (from) state */
-    var from: js.UndefOr[HookMatchCriterion] = js.native
+    var from: js.UndefOr[HookMatchCriterion] = js.undefined
     
     /** A [[HookMatchCriterion]] to match any state that would be retained */
-    var retained: js.UndefOr[HookMatchCriterion] = js.native
+    var retained: js.UndefOr[HookMatchCriterion] = js.undefined
     
     /** A [[HookMatchCriterion]] to match the destination state */
-    var to: js.UndefOr[HookMatchCriterion] = js.native
+    var to: js.UndefOr[HookMatchCriterion] = js.undefined
   }
   object HookMatchCriteria {
     
@@ -150,19 +163,18 @@ object transitionInterfaceMod {
   
   type HookMatchCriterion = String | IStateMatch | Boolean
   
-  @js.native
   trait HookRegOptions extends StObject {
     
     /**
       * Specifies what `this` is bound to during hook invocation.
       */
-    var bind: js.UndefOr[js.Any] = js.native
+    var bind: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Limits the number of times that the hook will be invoked.
       * Once the hook has been invoked this many times, it is automatically deregistered.
       */
-    var invokeLimit: js.UndefOr[Double] = js.native
+    var invokeLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets the priority of the registered hook
@@ -172,7 +184,7 @@ object transitionInterfaceMod {
       *
       * The default hook priority is 0
       */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
   }
   object HookRegOptions {
     
@@ -654,19 +666,19 @@ object transitionInterfaceMod {
     def onSuccess(matchCriteria: HookMatchCriteria, callback: TransitionHookFn, options: HookRegOptions): js.Function = js.native
   }
   
-  @js.native
   trait IMatchingNodes
-    extends /* key */ StringDictionary[js.Array[PathNode]] {
+    extends StObject
+       with /* key */ StringDictionary[js.Array[PathNode]] {
     
-    var entering: js.Array[PathNode] = js.native
+    var entering: js.Array[PathNode]
     
-    var exiting: js.Array[PathNode] = js.native
+    var exiting: js.Array[PathNode]
     
-    var from: js.Array[PathNode] = js.native
+    var from: js.Array[PathNode]
     
-    var retained: js.Array[PathNode] = js.native
+    var retained: js.Array[PathNode]
     
-    var to: js.Array[PathNode] = js.native
+    var to: js.Array[PathNode]
   }
   object IMatchingNodes {
     
@@ -719,12 +731,11 @@ object transitionInterfaceMod {
   
   type IStateMatch = PredicateBinary[StateObject, Transition]
   
-  @js.native
   trait PathType extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var scope: TransitionHookScope = js.native
+    var scope: TransitionHookScope
   }
   object PathType {
     
@@ -745,18 +756,19 @@ object transitionInterfaceMod {
     }
   }
   
-  @js.native
-  trait PathTypes extends /* key */ StringDictionary[PathType] {
+  trait PathTypes
+    extends StObject
+       with /* key */ StringDictionary[PathType] {
     
-    var entering: PathType = js.native
+    var entering: PathType
     
-    var exiting: PathType = js.native
+    var exiting: PathType
     
-    var from: PathType = js.native
+    var from: PathType
     
-    var retained: PathType = js.native
+    var retained: PathType
     
-    var to: PathType = js.native
+    var to: PathType
   }
   object PathTypes {
     
@@ -792,22 +804,21 @@ object transitionInterfaceMod {
   
   type TransitionHookFn = js.Function1[/* transition */ Transition, HookResult]
   
-  @js.native
   trait TransitionHookOptions extends StObject {
     
-    var bind: js.UndefOr[js.Any] = js.native
+    var bind: js.UndefOr[js.Any] = js.undefined
     
-    var current: js.UndefOr[js.Function0[Transition]] = js.native
+    var current: js.UndefOr[js.Function0[Transition]] = js.undefined
     
-    var hookType: js.UndefOr[String] = js.native
+    var hookType: js.UndefOr[String] = js.undefined
     
-    var stateHook: js.UndefOr[Boolean] = js.native
+    var stateHook: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
-    var traceData: js.UndefOr[js.Any] = js.native
+    var traceData: js.UndefOr[js.Any] = js.undefined
     
-    var transition: js.UndefOr[Transition] = js.native
+    var transition: js.UndefOr[Transition] = js.undefined
   }
   object TransitionHookOptions {
     
@@ -864,16 +875,15 @@ object transitionInterfaceMod {
     }
   }
   
-  @js.native
   trait TransitionOptions extends StObject {
     
     /** @internal */
-    var current: js.UndefOr[js.Function0[Transition]] = js.native
+    var current: js.UndefOr[js.Function0[Transition]] = js.undefined
     
     /**
       * You can define your own Transition Options inside this property and use them, e.g., from a Transition Hook
       */
-    var custom: js.UndefOr[js.Any] = js.native
+    var custom: js.UndefOr[js.Any] = js.undefined
     
     /**
       * This option sets whether or not the transition's parameter values should be inherited from
@@ -884,7 +894,7 @@ object transitionInterfaceMod {
       *
       * @default `false`
       */
-    var inherit: js.UndefOr[Boolean] = js.native
+    var inherit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This option changes how the Transition interacts with the browser's location bar (URL).
@@ -895,24 +905,24 @@ object transitionInterfaceMod {
       *
       * @default `true`
       */
-    var location: js.UndefOr[Boolean | replace] = js.native
+    var location: js.UndefOr[Boolean | replace] = js.undefined
     
     /**
       * @deprecated
       */
     @JSName("notify")
-    var notify_FTransitionOptions: js.UndefOr[Boolean] = js.native
+    var notify_FTransitionOptions: js.UndefOr[Boolean] = js.undefined
     
     /** @internal
       * If this transition is a redirect, this property should be the original Transition (which was redirected to this one)
       */
-    var redirectedFrom: js.UndefOr[Transition] = js.native
+    var redirectedFrom: js.UndefOr[Transition] = js.undefined
     
     /**
       * When transitioning to relative path (e.g '`^`'), this option defines which state to be relative from.
       * @default `$state.current`
       */
-    var relative: js.UndefOr[String | StateDeclaration | StateObject] = js.native
+    var relative: js.UndefOr[String | StateDeclaration | StateObject] = js.undefined
     
     /**
       * This option may be used to force states which are currently active to reload.
@@ -934,13 +944,13 @@ object transitionInterfaceMod {
       *
       * @default `false`
       */
-    var reload: js.UndefOr[Boolean | String | StateDeclaration | StateObject] = js.native
+    var reload: js.UndefOr[Boolean | String | StateDeclaration | StateObject] = js.undefined
     
     /** @internal */
-    var reloadState: js.UndefOr[StateObject] = js.native
+    var reloadState: js.UndefOr[StateObject] = js.undefined
     
     /** @internal */
-    var source: js.UndefOr[sref | url | redirect | otherwise | unknown] = js.native
+    var source: js.UndefOr[sref | url | redirect | otherwise | unknown] = js.undefined
     
     /**
       * This option may be used to cancel the active transition (if one is active) in favour of the this one.
@@ -953,7 +963,7 @@ object transitionInterfaceMod {
       *
       * @default `true`
       */
-    var supercede: js.UndefOr[Boolean] = js.native
+    var supercede: js.UndefOr[Boolean] = js.undefined
   }
   object TransitionOptions {
     
@@ -1036,9 +1046,9 @@ object transitionInterfaceMod {
   
   type TransitionStateHookFn = js.Function2[/* transition */ Transition, /* state */ StateDeclaration, HookResult]
   
-  @js.native
   trait TreeChanges
-    extends /** @nodoc */
+    extends StObject
+       with /** @nodoc */
   /* key */ StringDictionary[js.UndefOr[js.Array[PathNode]]] {
     
     /**
@@ -1051,7 +1061,7 @@ object transitionInterfaceMod {
       * Note that a state that is reloaded (due to parameter values changing, or `reload: true`) may be in both the
       * `exiting` and `entering` paths.
       */
-    var entering: js.Array[PathNode] = js.native
+    var entering: js.Array[PathNode]
     
     /**
       * The path of previously active nodes that the transition is exiting.
@@ -1061,10 +1071,10 @@ object transitionInterfaceMod {
       * Note that a state that is being reloaded (due to parameter values changing, or `reload: true`) may be in both the
       * `exiting` and `entering` paths.
       */
-    var exiting: js.Array[PathNode] = js.native
+    var exiting: js.Array[PathNode]
     
     /** The path of nodes in the state tree that the transition is coming *from* */
-    var from: js.Array[PathNode] = js.native
+    var from: js.Array[PathNode]
     
     /**
       * The path of active nodes that the transition is retaining.
@@ -1072,7 +1082,7 @@ object transitionInterfaceMod {
       * These nodes are neither exited, nor entered.
       * Before and after the transition is successful, these nodes are active.
       */
-    var retained: js.Array[PathNode] = js.native
+    var retained: js.Array[PathNode]
     
     /**
       * The path of active nodes that the transition is retaining with updated "to params" applied.
@@ -1082,10 +1092,10 @@ object transitionInterfaceMod {
       *
       * This is a shallow copy of [[retained]], but with new (dynamic) parameter values from [[to]] applied.
       */
-    var retainedWithToParams: js.Array[PathNode] = js.native
+    var retainedWithToParams: js.Array[PathNode]
     
     /** The path of nodes in the state tree that the transition is going *to* */
-    var to: js.Array[PathNode] = js.native
+    var to: js.Array[PathNode]
   }
   object TreeChanges {
     

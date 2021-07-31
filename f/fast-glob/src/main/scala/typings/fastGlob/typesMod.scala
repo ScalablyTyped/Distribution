@@ -1,12 +1,11 @@
 package typings.fastGlob
 
-import typings.nodelibFsWalk.anon.PartialFileSystemAdapter
+import typings.nodelibFsWalk.settingsMod.Options
 import typings.nodelibFsWalk.typesMod.Errno
 import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -27,24 +26,23 @@ object typesMod {
   
   type FileSystemAdapter = typings.nodelibFsScandir.fsMod.FileSystemAdapter
   
-  @js.native
   trait MicromatchOptions extends StObject {
     
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
-    var matchBase: js.UndefOr[Boolean] = js.native
+    var matchBase: js.UndefOr[Boolean] = js.undefined
     
-    var nobrace: js.UndefOr[Boolean] = js.native
+    var nobrace: js.UndefOr[Boolean] = js.undefined
     
-    var nocase: js.UndefOr[Boolean] = js.native
+    var nocase: js.UndefOr[Boolean] = js.undefined
     
-    var noext: js.UndefOr[Boolean] = js.native
+    var noext: js.UndefOr[Boolean] = js.undefined
     
-    var noglobstar: js.UndefOr[Boolean] = js.native
+    var noglobstar: js.UndefOr[Boolean] = js.undefined
     
-    var posix: js.UndefOr[Boolean] = js.native
+    var posix: js.UndefOr[Boolean] = js.undefined
     
-    var strictSlashes: js.UndefOr[Boolean] = js.native
+    var strictSlashes: js.UndefOr[Boolean] = js.undefined
   }
   object MicromatchOptions {
     
@@ -113,36 +111,68 @@ object typesMod {
   
   type PatternsGroup = Record[String, js.Array[Pattern]]
   
-  /* Inlined @nodelib/fs.walk.@nodelib/fs.walk.Options & {transform (entry : fast-glob.fast-glob/out/types.Entry): fast-glob.fast-glob/out/types.EntryItem,   deepFilter :fast-glob.fast-glob/out/types.DeepFilterFunction,   entryFilter :fast-glob.fast-glob/out/types.EntryFilterFunction,   errorFilter :fast-glob.fast-glob/out/types.ErrorFilterFunction,   fs :fast-glob.fast-glob/out/types.FileSystemAdapter,   stats :boolean} */
-  @js.native
-  trait ReaderOptions extends StObject {
+  trait ReaderOptions
+    extends StObject
+       with Options {
     
-    var basePath: js.UndefOr[String] = js.native
-    
-    var concurrency: js.UndefOr[Double] = js.native
-    
-    def deepFilter(value: typings.nodelibFsWalk.typesMod.Entry): Boolean = js.native
     @JSName("deepFilter")
-    var deepFilter_Original: js.UndefOr[typings.nodelibFsWalk.settingsMod.DeepFilterFunction] with DeepFilterFunction = js.native
+    def deepFilter_MReaderOptions(value: typings.nodelibFsWalk.typesMod.Entry): Boolean
+    @JSName("deepFilter")
+    var deepFilter_Original: DeepFilterFunction
     
-    def entryFilter(value: typings.nodelibFsWalk.typesMod.Entry): Boolean = js.native
     @JSName("entryFilter")
-    var entryFilter_Original: js.UndefOr[typings.nodelibFsWalk.settingsMod.EntryFilterFunction] with EntryFilterFunction = js.native
+    def entryFilter_MReaderOptions(value: typings.nodelibFsWalk.typesMod.Entry): Boolean
+    @JSName("entryFilter")
+    var entryFilter_Original: EntryFilterFunction
     
-    def errorFilter(value: Errno): Boolean = js.native
     @JSName("errorFilter")
-    var errorFilter_Original: js.UndefOr[typings.nodelibFsWalk.settingsMod.ErrorFilterFunction] with ErrorFilterFunction = js.native
+    def errorFilter_MReaderOptions(value: Errno): Boolean
+    @JSName("errorFilter")
+    var errorFilter_Original: ErrorFilterFunction
     
-    var followSymbolicLinks: js.UndefOr[Boolean] = js.native
+    @JSName("fs")
+    var fs_ReaderOptions: FileSystemAdapter
     
-    var fs: js.UndefOr[PartialFileSystemAdapter] with FileSystemAdapter = js.native
+    @JSName("stats")
+    var stats_ReaderOptions: Boolean
     
-    var pathSegmentSeparator: js.UndefOr[String] = js.native
+    def transform(entry: Entry): EntryItem
+  }
+  object ReaderOptions {
     
-    var stats: js.UndefOr[Boolean] with Boolean = js.native
+    @scala.inline
+    def apply(
+      deepFilter: typings.nodelibFsWalk.typesMod.Entry => Boolean,
+      entryFilter: typings.nodelibFsWalk.typesMod.Entry => Boolean,
+      errorFilter: Errno => Boolean,
+      fs: FileSystemAdapter,
+      stats: Boolean,
+      transform: Entry => EntryItem
+    ): ReaderOptions = {
+      val __obj = js.Dynamic.literal(deepFilter = js.Any.fromFunction1(deepFilter), entryFilter = js.Any.fromFunction1(entryFilter), errorFilter = js.Any.fromFunction1(errorFilter), fs = fs.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform))
+      __obj.asInstanceOf[ReaderOptions]
+    }
     
-    var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.native
-    
-    def transform(entry: Entry): EntryItem = js.native
+    @scala.inline
+    implicit class ReaderOptionsMutableBuilder[Self <: ReaderOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDeepFilter(value: typings.nodelibFsWalk.typesMod.Entry => Boolean): Self = StObject.set(x, "deepFilter", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setEntryFilter(value: typings.nodelibFsWalk.typesMod.Entry => Boolean): Self = StObject.set(x, "entryFilter", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setErrorFilter(value: Errno => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setFs(value: FileSystemAdapter): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTransform(value: Entry => EntryItem): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    }
   }
 }

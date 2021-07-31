@@ -9,7 +9,6 @@ import typings.nodeIsbn.nodeIsbnStrings.BOOK
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,34 +24,33 @@ object mod extends Shortcut {
   
   object isbn {
     
-    @js.native
     trait Book extends StObject {
       
-      var authors: js.Array[String] = js.native
+      var authors: js.Array[String]
       
-      var categories: js.Array[String] = js.native
+      var categories: js.Array[String]
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var imageLinks: js.UndefOr[SmallThumbnail] = js.native
+      var imageLinks: js.UndefOr[SmallThumbnail] = js.undefined
       
-      var industryIdentifiers: js.Array[String] = js.native
+      var industryIdentifiers: js.Array[String]
       
-      var infoLink: String = js.native
+      var infoLink: String
       
-      var language: BookLanguage = js.native
+      var language: BookLanguage
       
-      var pageCount: js.UndefOr[Double] = js.native
+      var pageCount: js.UndefOr[Double] = js.undefined
       
-      var previewLink: String = js.native
+      var previewLink: String
       
-      var printType: BOOK = js.native
+      var printType: BOOK
       
-      var publishedDate: String = js.native
+      var publishedDate: String
       
-      var publisher: String = js.native
+      var publisher: String
       
-      var title: String = js.native
+      var title: String
     }
     object Book {
       
@@ -64,12 +62,11 @@ object mod extends Shortcut {
         infoLink: String,
         language: BookLanguage,
         previewLink: String,
-        printType: BOOK,
         publishedDate: String,
         publisher: String,
         title: String
       ): Book = {
-        val __obj = js.Dynamic.literal(authors = authors.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], industryIdentifiers = industryIdentifiers.asInstanceOf[js.Any], infoLink = infoLink.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], previewLink = previewLink.asInstanceOf[js.Any], printType = printType.asInstanceOf[js.Any], publishedDate = publishedDate.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(authors = authors.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], industryIdentifiers = industryIdentifiers.asInstanceOf[js.Any], infoLink = infoLink.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], previewLink = previewLink.asInstanceOf[js.Any], printType = "BOOK", publishedDate = publishedDate.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[Book]
       }
       

@@ -3,36 +3,37 @@ package typings.jsSpec
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("js.spec", "assert")
+  @JSImport("js.spec", JSImport.Namespace)
   @js.native
-  def assert(spec: SpecInput, value: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("js.spec", "conform")
-  @js.native
-  def conform(spec: SpecInput, value: js.Any): js.Any = js.native
+  @scala.inline
+  def assert(spec: SpecInput, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("js.spec", "explain")
-  @js.native
-  def explain(spec: SpecInput, value: js.Any): Unit = js.native
+  @scala.inline
+  def conform(spec: SpecInput, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("conform")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("js.spec", "explainData")
-  @js.native
-  def explainData(spec: SpecInput, value: js.Any): js.Array[Problem] = js.native
+  @scala.inline
+  def explain(spec: SpecInput, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("explain")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("js.spec", "explainStr")
-  @js.native
-  def explainStr(spec: SpecInput, value: js.Any): String = js.native
+  @scala.inline
+  def explainData(spec: SpecInput, value: js.Any): js.Array[Problem] = (^.asInstanceOf[js.Dynamic].applyDynamic("explainData")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Problem]]
   
-  @JSImport("js.spec", "problemStr")
-  @js.native
-  def problemStr(problem: Problem): String = js.native
+  @scala.inline
+  def explainStr(spec: SpecInput, value: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("explainStr")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def problemStr(problem: Problem): String = ^.asInstanceOf[js.Dynamic].applyDynamic("problemStr")(problem.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object spec {
+    
+    @JSImport("js.spec", "spec")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Data must conform to every provided spec.
@@ -40,9 +41,8 @@ object mod {
       * @param specs the array of specs that must all match
       * @returns the constructed Spec
       */
-    @JSImport("js.spec", "spec.and")
-    @js.native
-    def and(name: String, specs: SpecInput*): Spec_ = js.native
+    @scala.inline
+    def and(name: String, specs: SpecInput*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(name.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is an Array.
@@ -82,12 +82,10 @@ object mod {
       * @param spec the spec to apply to values in the collection
       * @param options symbol.count or symbol.minCount / symbol.maxCount
       */
-    @JSImport("js.spec", "spec.collection")
-    @js.native
-    def collection(name: String, spec: SpecInput): Spec_ = js.native
-    @JSImport("js.spec", "spec.collection")
-    @js.native
-    def collection(name: String, spec: SpecInput, options: StringDictionary[Double]): Spec_ = js.native
+    @scala.inline
+    def collection(name: String, spec: SpecInput): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    @scala.inline
+    def collection(name: String, spec: SpecInput, options: StringDictionary[Double]): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is a Date.
@@ -139,9 +137,8 @@ object mod {
       * @param shape the shape map with keys and associated specs
       * @returns the constructed spec
       */
-    @JSImport("js.spec", "spec.map")
-    @js.native
-    def map(name: String, shape: js.Object): Spec_ = js.native
+    @scala.inline
+    def map(name: String, shape: js.Object): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is a number smaller than zero.
@@ -163,9 +160,8 @@ object mod {
       * @param spec the spec to apply if a value is non-nil
       * @returns the constructed spec
       */
-    @JSImport("js.spec", "spec.nilable")
-    @js.native
-    def nilable(name: String, spec: SpecInput): Spec_ = js.native
+    @scala.inline
+    def nilable(name: String, spec: SpecInput): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("nilable")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is a number (can be double or integer).
@@ -182,6 +178,13 @@ object mod {
     val obj: PredFn = js.native
     
     /**
+      * Returns true if data is a plain object.
+      */
+    @JSImport("js.spec", "spec.object")
+    @js.native
+    val `object`: PredFn = js.native
+    
+    /**
       * Returns true if data is an odd number.
       */
     @JSImport("js.spec", "spec.odd")
@@ -194,9 +197,8 @@ object mod {
       * @param values the emum of values
       * @returns the constructed spec
       */
-    @JSImport("js.spec", "spec.oneOf")
-    @js.native
-    def oneOf(name: String, values: js.Any*): Spec_ = js.native
+    @scala.inline
+    def oneOf(name: String, values: js.Any*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(name.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Data must conform to at least one provided spec. The order in which they are validated is not defined.
@@ -205,9 +207,8 @@ object mod {
       * @param alts map of alternative keys with their respective SpecInputs
       * @returns the constructed Spec
       */
-    @JSImport("js.spec", "spec.or")
-    @js.native
-    def or(name: String, alts: StringDictionary[SpecInput]): Spec_ = js.native
+    @scala.inline
+    def or(name: String, alts: StringDictionary[SpecInput]): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(name.asInstanceOf[js.Any], alts.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is a number greater than zero.
@@ -222,9 +223,8 @@ object mod {
       * @param predicate the predicate function
       * @returns the constructed spec
       */
-    @JSImport("js.spec", "spec.predicate")
-    @js.native
-    def predicate(name: String, predicate: PredFn): Spec_ = js.native
+    @scala.inline
+    def predicate(name: String, predicate: PredFn): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("predicate")(name.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is a Set.
@@ -267,9 +267,8 @@ object mod {
       * @param specs the specs to test the value array
       * @returns the constructed spec
       */
-    @JSImport("js.spec", "spec.tuple")
-    @js.native
-    def tuple(name: String, specs: SpecInput*): Spec_ = js.native
+    @scala.inline
+    def tuple(name: String, specs: SpecInput*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(name.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is the number zero.
@@ -278,13 +277,6 @@ object mod {
     @JSImport("js.spec", "spec.zero")
     @js.native
     val zero: PredFn = js.native
-    
-    /**
-      * Returns true if data is a plain object.
-      */
-    @JSImport("js.spec", "spec.object")
-    @js.native
-    val `object`: PredFn = js.native
   }
   
   object symbol {
@@ -325,34 +317,32 @@ object mod {
     val optional: js.Symbol = js.native
   }
   
-  @JSImport("js.spec", "valid")
-  @js.native
-  def valid(spec: SpecInput, value: js.Any): Boolean = js.native
+  @scala.inline
+  def valid(spec: SpecInput, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type PredFn = js.Function1[/* value */ js.Any, Boolean]
   
-  @js.native
   trait Problem extends StObject {
     
     /**
       * The path to the value.
       */
-    val path: js.Array[String] = js.native
+    val path: js.Array[String]
     
     /**
       * A predicate function to test new values for conformance.
       */
-    def predicate(value: js.Any): Boolean = js.native
+    def predicate(value: js.Any): Boolean
     
     /**
       * The value associated with the problem.
       */
-    val value: js.Any = js.native
+    val value: js.Any
     
     /**
       * Path to the Spec that applies.
       */
-    val via: js.Array[String] = js.native
+    val via: js.Array[String]
   }
   object Problem {
     
@@ -387,7 +377,6 @@ object mod {
   
   type SpecInput = PredFn | Spec_
   
-  @js.native
   trait Spec_ extends StObject {
     
     /**
@@ -395,7 +384,7 @@ object mod {
       * @param value the value to test for conformance
       * @returns if the value does not conform to the spec, or the value if it does.
       */
-    def conform(value: js.Any): js.Any = js.native
+    def conform(value: js.Any): js.Any
     
     /**
       * Explain why a value does not conform to this spec.
@@ -404,17 +393,17 @@ object mod {
       * @param value the value to examine
       * @returns list of problems or null if none
       */
-    def explain(path: js.Array[String], via: js.Array[String], value: js.Any): js.Array[Problem] = js.native
+    def explain(path: js.Array[String], via: js.Array[String], value: js.Any): js.Array[Problem]
     
     /**
       * The name of the spec, displayed in explain() results.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Data necessary to check values for conformity.
       */
-    val options: js.Object = js.native
+    val options: js.Object
   }
   object Spec_ {
     

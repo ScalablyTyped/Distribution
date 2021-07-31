@@ -2,15 +2,13 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunDetails extends StObject {
   
-  var failedExpectations: js.Array[ExpectationResult] = js.native
+  var failedExpectations: js.Array[ExpectationResult]
   
-  var order: Order = js.native
+  var order: Order
 }
 object RunDetails {
   

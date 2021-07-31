@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecurringCharge extends StObject {
   
   /**
     * The monetary amount of the recurring charge.
     */
-  var RecurringChargeAmount: js.UndefOr[Double] = js.native
+  var RecurringChargeAmount: js.UndefOr[Double] = js.undefined
   
   /**
     * The frequency of the recurring charge.
     */
-  var RecurringChargeFrequency: js.UndefOr[String] = js.native
+  var RecurringChargeFrequency: js.UndefOr[String] = js.undefined
 }
 object RecurringCharge {
   

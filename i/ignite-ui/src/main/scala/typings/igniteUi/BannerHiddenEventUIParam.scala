@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BannerHiddenEventUIParam extends StObject {
   
   /**
     * Get the banner object from the banners array.
     */
-  var banner: js.UndefOr[js.Any] = js.native
+  var banner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Get the banner html element in the DOM.
     */
-  var bannerElement: js.UndefOr[js.Any] = js.native
+  var bannerElement: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Get the banner index in the banners array.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
 }
 object BannerHiddenEventUIParam {
   

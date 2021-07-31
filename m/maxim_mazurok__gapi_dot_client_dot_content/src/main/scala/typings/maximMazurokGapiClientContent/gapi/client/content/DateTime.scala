@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateTime extends StObject {
   
   /** Required. Day of month. Must be from 1 to 31 and valid for the year and month. */
-  var day: js.UndefOr[Double] = js.native
+  var day: js.UndefOr[Double] = js.undefined
   
   /** Required. Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time. */
-  var hours: js.UndefOr[Double] = js.native
+  var hours: js.UndefOr[Double] = js.undefined
   
   /** Required. Minutes of hour of day. Must be from 0 to 59. */
-  var minutes: js.UndefOr[Double] = js.native
+  var minutes: js.UndefOr[Double] = js.undefined
   
   /** Required. Month of year. Must be from 1 to 12. */
-  var month: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.undefined
   
   /** Required. Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999. */
-  var nanos: js.UndefOr[Double] = js.native
+  var nanos: js.UndefOr[Double] = js.undefined
   
   /** Required. Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds. */
-  var seconds: js.UndefOr[Double] = js.native
+  var seconds: js.UndefOr[Double] = js.undefined
   
   /** Time zone. */
-  var timeZone: js.UndefOr[TimeZone] = js.native
+  var timeZone: js.UndefOr[TimeZone] = js.undefined
   
   /** UTC offset. Must be whole seconds, between -18 hours and +18 hours. For example, a UTC offset of -4:00 would be represented as { seconds: -14400 }. */
-  var utcOffset: js.UndefOr[String] = js.native
+  var utcOffset: js.UndefOr[String] = js.undefined
   
   /** Optional. Year of date. Must be from 1 to 9999, or 0 if specifying a datetime without a year. */
-  var year: js.UndefOr[Double] = js.native
+  var year: js.UndefOr[Double] = js.undefined
 }
 object DateTime {
   

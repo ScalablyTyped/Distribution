@@ -2,27 +2,25 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IServerScheduledJobManagementOperations extends StObject {
   
-  def AddScheduledJob(ScheduledJob: IScheduledJob): Double = js.native
+  def AddScheduledJob(ScheduledJob: IScheduledJob): Double
   
-  def CancelScheduledJob(ID: Double): Unit = js.native
+  def CancelScheduledJob(ID: Double): Unit
   
-  def GetScheduledJob(ID: Double): IScheduledJob = js.native
+  def GetScheduledJob(ID: Double): IScheduledJob
   
-  def GetScheduledJobRunInfo(ID: Double): IScheduledJobRunInfo = js.native
+  def GetScheduledJobRunInfo(ID: Double): IScheduledJobRunInfo
   
-  def GetScheduledJobs(): IScheduledJobs = js.native
+  def GetScheduledJobs(): IScheduledJobs
   
-  def ModifyScheduledJob(ScheduledJob: IScheduledJob): Unit = js.native
+  def ModifyScheduledJob(ScheduledJob: IScheduledJob): Unit
   
-  def RemoveScheduledJob(ID: Double): Unit = js.native
+  def RemoveScheduledJob(ID: Double): Unit
   
-  def StartScheduledJob(ID: Double): Unit = js.native
+  def StartScheduledJob(ID: Double): Unit
 }
 object IServerScheduledJobManagementOperations {
   

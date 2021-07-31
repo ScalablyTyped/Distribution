@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the info about a significant other for a contact. */
-@js.native
 trait ContactSignificantOther extends StObject {
   
   /** Gets and sets the description of a significant other for a contact. The maximum string length for the description is 512 characters. */
-  var description: String = js.native
+  var description: String
   
   /** Gets and sets the name of a significant other for a contact. The maximum string length for the name is 256 characters. */
-  var name: String = js.native
+  var name: String
   
   /** Gets or puts a value that indicates the nature of the relationship, such as spouse, partner, sibling, parent and so on. */
-  var relationship: ContactRelationship = js.native
+  var relationship: ContactRelationship
 }
 object ContactSignificantOther {
   

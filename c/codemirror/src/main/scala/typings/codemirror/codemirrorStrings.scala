@@ -5,7 +5,6 @@ import typings.codemirror.mod.DOMEvent
 import typings.codemirror.mod.InputStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codemirrorStrings {
@@ -166,17 +165,23 @@ object codemirrorStrings {
   def completions: completions = "completions".asInstanceOf[completions]
   
   @js.native
-  sealed trait contenteditable extends InputStyle
+  sealed trait contenteditable
+    extends StObject
+       with InputStyle
   @scala.inline
   def contenteditable: contenteditable = "contenteditable".asInstanceOf[contenteditable]
   
   @js.native
-  sealed trait contextmenu extends DOMEvent
+  sealed trait contextmenu
+    extends StObject
+       with DOMEvent
   @scala.inline
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
-  sealed trait copy extends DOMEvent
+  sealed trait copy
+    extends StObject
+       with DOMEvent
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   
@@ -211,12 +216,16 @@ object codemirrorStrings {
   def cursorScrollMargin: cursorScrollMargin = "cursorScrollMargin".asInstanceOf[cursorScrollMargin]
   
   @js.native
-  sealed trait cut extends DOMEvent
+  sealed trait cut
+    extends StObject
+       with DOMEvent
   @scala.inline
   def cut: cut = "cut".asInstanceOf[cut]
   
   @js.native
-  sealed trait dblclick extends DOMEvent
+  sealed trait dblclick
+    extends StObject
+       with DOMEvent
   @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   
@@ -231,7 +240,9 @@ object codemirrorStrings {
   def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait div extends CoordsMode
+  sealed trait div
+    extends StObject
+       with CoordsMode
   @scala.inline
   def div: div = "div".asInstanceOf[div]
   
@@ -256,7 +267,9 @@ object codemirrorStrings {
   def dragend: dragend = "dragend".asInstanceOf[dragend]
   
   @js.native
-  sealed trait dragenter extends DOMEvent
+  sealed trait dragenter
+    extends StObject
+       with DOMEvent
   @scala.inline
   def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
   
@@ -266,22 +279,30 @@ object codemirrorStrings {
   def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
   
   @js.native
-  sealed trait dragleave extends DOMEvent
+  sealed trait dragleave
+    extends StObject
+       with DOMEvent
   @scala.inline
   def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
   
   @js.native
-  sealed trait dragover extends DOMEvent
+  sealed trait dragover
+    extends StObject
+       with DOMEvent
   @scala.inline
   def dragover: dragover = "dragover".asInstanceOf[dragover]
   
   @js.native
-  sealed trait dragstart extends DOMEvent
+  sealed trait dragstart
+    extends StObject
+       with DOMEvent
   @scala.inline
   def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
   
   @js.native
-  sealed trait drop extends DOMEvent
+  sealed trait drop
+    extends StObject
+       with DOMEvent
   @scala.inline
   def drop: drop = "drop".asInstanceOf[drop]
   
@@ -451,17 +472,23 @@ object codemirrorStrings {
   def keyMap: keyMap = "keyMap".asInstanceOf[keyMap]
   
   @js.native
-  sealed trait keydown extends DOMEvent
+  sealed trait keydown
+    extends StObject
+       with DOMEvent
   @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]
   
   @js.native
-  sealed trait keypress extends DOMEvent
+  sealed trait keypress
+    extends StObject
+       with DOMEvent
   @scala.inline
   def keypress: keypress = "keypress".asInstanceOf[keypress]
   
   @js.native
-  sealed trait keyup extends DOMEvent
+  sealed trait keyup
+    extends StObject
+       with DOMEvent
   @scala.inline
   def keyup: keyup = "keyup".asInstanceOf[keyup]
   
@@ -511,7 +538,9 @@ object codemirrorStrings {
   def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   
   @js.native
-  sealed trait local extends CoordsMode
+  sealed trait local
+    extends StObject
+       with CoordsMode
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   
@@ -541,7 +570,9 @@ object codemirrorStrings {
   def mode: mode = "mode".asInstanceOf[mode]
   
   @js.native
-  sealed trait mousedown extends DOMEvent
+  sealed trait mousedown
+    extends StObject
+       with DOMEvent
   @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   
@@ -596,12 +627,16 @@ object codemirrorStrings {
   def overwriteToggle: overwriteToggle = "overwriteToggle".asInstanceOf[overwriteToggle]
   
   @js.native
-  sealed trait page extends CoordsMode
+  sealed trait page
+    extends StObject
+       with CoordsMode
   @scala.inline
   def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait paste extends DOMEvent
+  sealed trait paste
+    extends StObject
+       with DOMEvent
   @scala.inline
   def paste: paste = "paste".asInstanceOf[paste]
   
@@ -856,7 +891,9 @@ object codemirrorStrings {
   def tabindex: tabindex = "tabindex".asInstanceOf[tabindex]
   
   @js.native
-  sealed trait textarea extends InputStyle
+  sealed trait textarea
+    extends StObject
+       with InputStyle
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   
@@ -896,7 +933,9 @@ object codemirrorStrings {
   def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
   
   @js.native
-  sealed trait touchstart extends DOMEvent
+  sealed trait touchstart
+    extends StObject
+       with DOMEvent
   @scala.inline
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   
@@ -971,7 +1010,9 @@ object codemirrorStrings {
   def wheel: wheel = "wheel".asInstanceOf[wheel]
   
   @js.native
-  sealed trait window extends CoordsMode
+  sealed trait window
+    extends StObject
+       with CoordsMode
   @scala.inline
   def window: window = "window".asInstanceOf[window]
   

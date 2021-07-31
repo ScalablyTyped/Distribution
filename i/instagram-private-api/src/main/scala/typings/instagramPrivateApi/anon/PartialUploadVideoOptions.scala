@@ -2,42 +2,40 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<instagram-private-api.instagram-private-api/dist/types/upload.video.options.UploadVideoOptions> */
-@js.native
 trait PartialUploadVideoOptions extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var forAlbum: js.UndefOr[Boolean] = js.native
+  var forAlbum: js.UndefOr[Boolean] = js.undefined
   
-  var forDirectStory: js.UndefOr[Boolean] = js.native
+  var forDirectStory: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var isDirect: js.UndefOr[Boolean] = js.native
+  var isDirect: js.UndefOr[Boolean] = js.undefined
   
-  var isDirectVoice: js.UndefOr[Boolean] = js.native
+  var isDirectVoice: js.UndefOr[Boolean] = js.undefined
   
-  var isIgtvVideo: js.UndefOr[Boolean] = js.native
+  var isIgtvVideo: js.UndefOr[Boolean] = js.undefined
   
-  var isSidecar: js.UndefOr[Boolean] = js.native
+  var isSidecar: js.UndefOr[Boolean] = js.undefined
   
-  var mediaType: js.UndefOr[String] = js.native
+  var mediaType: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var uploadId: js.UndefOr[String] = js.native
+  var uploadId: js.UndefOr[String] = js.undefined
   
-  var uploadName: js.UndefOr[String] = js.native
+  var uploadName: js.UndefOr[String] = js.undefined
   
-  var video: js.UndefOr[typings.node.Buffer] = js.native
+  var video: js.UndefOr[typings.node.Buffer] = js.undefined
   
-  var waterfallId: js.UndefOr[String] = js.native
+  var waterfallId: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PartialUploadVideoOptions {
   

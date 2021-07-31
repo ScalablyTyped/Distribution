@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldMetadata extends StObject {
   
   /** True if the field is the primary field; false if the field is a secondary field. */
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
   /** The source of the field. */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
   
   /**
     * Output only. True if the field is verified; false if the field is unverified. A verified field is typically a name, email address, phone number, or website that has been confirmed
     * to be owned by the person.
     */
-  var verified: js.UndefOr[Boolean] = js.native
+  var verified: js.UndefOr[Boolean] = js.undefined
 }
 object FieldMetadata {
   

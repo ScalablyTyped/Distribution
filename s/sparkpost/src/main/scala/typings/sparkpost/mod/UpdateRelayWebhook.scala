@@ -2,23 +2,21 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRelayWebhook extends StObject {
   
   /** Authentication token to present in the X-MessageSystems-Webhook-Token header of POST requests to target */
-  var auth_token: js.UndefOr[String] = js.native
+  var auth_token: js.UndefOr[String] = js.undefined
   
   /** Restrict which inbound messages will be relayed to the target */
-  var `match`: js.UndefOr[Match] = js.native
+  var `match`: js.UndefOr[Match] = js.undefined
   
   /** User-friendly name  no  example: Inbound Customer Replies */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** URL of the target to which to POST relay batches */
-  var target: String = js.native
+  var target: String
 }
 object UpdateRelayWebhook {
   

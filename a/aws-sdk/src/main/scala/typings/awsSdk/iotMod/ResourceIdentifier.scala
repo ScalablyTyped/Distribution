@@ -2,51 +2,49 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceIdentifier extends StObject {
   
   /**
     * The account with which the resource is associated.
     */
-  var account: js.UndefOr[AwsAccountId] = js.native
+  var account: js.UndefOr[AwsAccountId] = js.undefined
   
   /**
     * The ID of the CA certificate used to authorize the certificate.
     */
-  var caCertificateId: js.UndefOr[CertificateId] = js.native
+  var caCertificateId: js.UndefOr[CertificateId] = js.undefined
   
   /**
     * The client ID.
     */
-  var clientId: js.UndefOr[ClientId] = js.native
+  var clientId: js.UndefOr[ClientId] = js.undefined
   
   /**
     * The ID of the Amazon Cognito identity pool.
     */
-  var cognitoIdentityPoolId: js.UndefOr[CognitoIdentityPoolId] = js.native
+  var cognitoIdentityPoolId: js.UndefOr[CognitoIdentityPoolId] = js.undefined
   
   /**
     * The ID of the certificate attached to the resource.
     */
-  var deviceCertificateId: js.UndefOr[CertificateId] = js.native
+  var deviceCertificateId: js.UndefOr[CertificateId] = js.undefined
   
   /**
     * The ARN of the IAM role that has overly permissive actions.
     */
-  var iamRoleArn: js.UndefOr[RoleArn] = js.native
+  var iamRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The version of the policy associated with the resource.
     */
-  var policyVersionIdentifier: js.UndefOr[PolicyVersionIdentifier] = js.native
+  var policyVersionIdentifier: js.UndefOr[PolicyVersionIdentifier] = js.undefined
   
   /**
     * The ARN of the role alias that has overly permissive actions.
     */
-  var roleAliasArn: js.UndefOr[RoleAliasArn] = js.native
+  var roleAliasArn: js.UndefOr[RoleAliasArn] = js.undefined
 }
 object ResourceIdentifier {
   

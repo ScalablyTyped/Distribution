@@ -5,17 +5,17 @@ import typings.react.mod.global.JSX.Element
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDetailsGroupRenderProps extends IGroupRenderProps {
+trait IDetailsGroupRenderProps
+  extends StObject
+     with IGroupRenderProps {
   
   @JSName("onRenderFooter")
-  var onRenderFooter_IDetailsGroupRenderProps: js.UndefOr[IRenderFunction[IDetailsGroupDividerProps]] = js.native
+  var onRenderFooter_IDetailsGroupRenderProps: js.UndefOr[IRenderFunction[IDetailsGroupDividerProps]] = js.undefined
   
   @JSName("onRenderHeader")
-  var onRenderHeader_IDetailsGroupRenderProps: js.UndefOr[IRenderFunction[IDetailsGroupDividerProps]] = js.native
+  var onRenderHeader_IDetailsGroupRenderProps: js.UndefOr[IRenderFunction[IDetailsGroupDividerProps]] = js.undefined
 }
 object IDetailsGroupRenderProps {
   

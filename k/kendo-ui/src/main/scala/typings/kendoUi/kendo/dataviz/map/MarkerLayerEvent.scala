@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.dataviz.map
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkerLayerEvent extends StObject {
   
-  def isDefaultPrevented(): Boolean = js.native
+  def isDefaultPrevented(): Boolean
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var sender: MarkerLayer = js.native
+  var sender: MarkerLayer
 }
 object MarkerLayerEvent {
   

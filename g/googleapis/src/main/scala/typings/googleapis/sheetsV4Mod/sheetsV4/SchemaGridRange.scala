@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,33 +20,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * start index equals the end index, then the range is empty. Empty ranges are
   * typically not meaningful and are usually rendered in the UI as `#REF!`.
   */
-@js.native
 trait SchemaGridRange extends StObject {
   
   /**
     * The end column (exclusive) of the range, or not set if unbounded.
     */
-  var endColumnIndex: js.UndefOr[Double] = js.native
+  var endColumnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The end row (exclusive) of the range, or not set if unbounded.
     */
-  var endRowIndex: js.UndefOr[Double] = js.native
+  var endRowIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The sheet this range is on.
     */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
   
   /**
     * The start column (inclusive) of the range, or not set if unbounded.
     */
-  var startColumnIndex: js.UndefOr[Double] = js.native
+  var startColumnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The start row (inclusive) of the range, or not set if unbounded.
     */
-  var startRowIndex: js.UndefOr[Double] = js.native
+  var startRowIndex: js.UndefOr[Double] = js.undefined
 }
 object SchemaGridRange {
   

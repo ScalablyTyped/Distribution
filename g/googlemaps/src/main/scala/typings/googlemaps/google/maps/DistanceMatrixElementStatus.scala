@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,19 +20,25 @@ object DistanceMatrixElementStatus extends StObject {
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixElementStatus.NOT_FOUND Maps JavaScript API}
     */
   @js.native
-  sealed trait NOT_FOUND extends DistanceMatrixElementStatus
+  sealed trait NOT_FOUND
+    extends StObject
+       with DistanceMatrixElementStatus
   
   /**
     * The response contains a valid result.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixElementStatus.OK Maps JavaScript API}
     */
   @js.native
-  sealed trait OK extends DistanceMatrixElementStatus
+  sealed trait OK
+    extends StObject
+       with DistanceMatrixElementStatus
   
   /**
     * No route could be found between the origin and destination.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixElementStatus.ZERO_RESULTS Maps JavaScript API}
     */
   @js.native
-  sealed trait ZERO_RESULTS extends DistanceMatrixElementStatus
+  sealed trait ZERO_RESULTS
+    extends StObject
+       with DistanceMatrixElementStatus
 }

@@ -2,26 +2,24 @@ package typings.activexLibreoffice.com_.sun.star.chart2.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightedRange extends StObject {
   
   /**
     * If the highlighted range is visually highlighted and this member is `TRUE` , the range given in {@link RangeRepresentation} may be included in a
     * merged range rectangle spanning a bigger range.
     */
-  var AllowMerginigWithOtherRanges: Boolean = js.native
+  var AllowMerginigWithOtherRanges: Boolean
   
   /** Only take the cell at position Index out of the given Range. If this value is -1 take the whole sequence. */
-  var Index: Double = js.native
+  var Index: Double
   
   /** Use this color for marking the range. This color may be ignored and replaced by a better fitting color, if it would be otherwise not well visible. */
-  var PreferredColor: Double = js.native
+  var PreferredColor: Double
   
   /** The range representation string of the highlighted range. */
-  var RangeRepresentation: String = js.native
+  var RangeRepresentation: String
 }
 object HighlightedRange {
   

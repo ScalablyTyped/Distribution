@@ -2,20 +2,18 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellularProviderProperties extends StObject {
   
   /** Cellular network ID as a simple concatenation of the network's MCC (Mobile Country Code) and MNC (Mobile Network Code). */
-  var Code: String = js.native
+  var Code: String
   
   /** The two-letter country code. */
-  var Country: js.UndefOr[String] = js.native
+  var Country: js.UndefOr[String] = js.undefined
   
   /** The operator name. */
-  var Name: String = js.native
+  var Name: String
 }
 object CellularProviderProperties {
   

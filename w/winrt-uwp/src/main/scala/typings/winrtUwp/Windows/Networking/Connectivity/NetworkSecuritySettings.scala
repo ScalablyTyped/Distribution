@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the current network security settings. */
-@js.native
 trait NetworkSecuritySettings extends StObject {
   
   /** Retrieves the type of authentication used by the network. */
-  var networkAuthenticationType: NetworkAuthenticationType = js.native
+  var networkAuthenticationType: NetworkAuthenticationType
   
   /** Retrieves the type of encryption used by the network. */
-  var networkEncryptionType: NetworkEncryptionType = js.native
+  var networkEncryptionType: NetworkEncryptionType
 }
 object NetworkSecuritySettings {
   

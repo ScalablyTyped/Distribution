@@ -3,14 +3,14 @@ package typings.awsSdkTypes.middlewareMod
 import typings.awsSdkTypes.awsSdkTypesStrings.initialize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InitializeHandlerOptions extends HandlerOptions {
+trait InitializeHandlerOptions
+  extends StObject
+     with HandlerOptions {
   
   @JSName("step")
-  var step_InitializeHandlerOptions: js.UndefOr[initialize] = js.native
+  var step_InitializeHandlerOptions: js.UndefOr[initialize] = js.undefined
 }
 object InitializeHandlerOptions {
   

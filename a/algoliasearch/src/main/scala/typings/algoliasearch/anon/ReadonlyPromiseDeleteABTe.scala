@@ -3,18 +3,16 @@ package typings.algoliasearch.anon
 import typings.algoliaClientAnalytics.mod.DeleteABTestResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Promise<@algolia/client-analytics.@algolia/client-analytics.DeleteABTestResponse>> */
-@js.native
 trait ReadonlyPromiseDeleteABTe extends StObject {
   
-  def `catch`[TResult](): js.Promise[DeleteABTestResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[DeleteABTestResponse | TResult]
   
-  def `finally`(): js.Promise[DeleteABTestResponse] = js.native
+  def `finally`(): js.Promise[DeleteABTestResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyPromiseDeleteABTe {
   

@@ -21,7 +21,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.RightToLeft
 import typings.officeJsPreview.officeJsPreviewStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,7 +30,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.7]
   */
 @js.native
-trait Style extends ClientObject {
+trait Style
+  extends StObject
+     with ClientObject {
   
   /**
     *

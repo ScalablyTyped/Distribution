@@ -5,11 +5,9 @@ import typings.officeJs.officeJsStrings.Automatic
 import typings.officeJs.officeJsStrings.Custom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartPlotArea object, for use in `chartPlotArea.set({ ... })`. */
-@js.native
 trait ChartPlotAreaUpdateData extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait ChartPlotAreaUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var format: js.UndefOr[ChartPlotAreaFormatUpdateData] = js.native
+  var format: js.UndefOr[ChartPlotAreaFormatUpdateData] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait ChartPlotAreaUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait ChartPlotAreaUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var insideHeight: js.UndefOr[Double] = js.native
+  var insideHeight: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait ChartPlotAreaUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var insideLeft: js.UndefOr[Double] = js.native
+  var insideLeft: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait ChartPlotAreaUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var insideTop: js.UndefOr[Double] = js.native
+  var insideTop: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait ChartPlotAreaUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var insideWidth: js.UndefOr[Double] = js.native
+  var insideWidth: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait ChartPlotAreaUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait ChartPlotAreaUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var position: js.UndefOr[ChartPlotAreaPosition | Automatic | Custom] = js.native
+  var position: js.UndefOr[ChartPlotAreaPosition | Automatic | Custom] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait ChartPlotAreaUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait ChartPlotAreaUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartPlotAreaUpdateData {
   

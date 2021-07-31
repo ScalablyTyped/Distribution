@@ -2,7 +2,6 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait VerbosityLevel extends StObject
 object VerbosityLevel extends StObject {
   
   @js.native
-  sealed trait ERRORS extends VerbosityLevel
+  sealed trait ERRORS
+    extends StObject
+       with VerbosityLevel
   
   @js.native
-  sealed trait INFOS extends VerbosityLevel
+  sealed trait INFOS
+    extends StObject
+       with VerbosityLevel
   
   @js.native
-  sealed trait WARNINGS extends VerbosityLevel
+  sealed trait WARNINGS
+    extends StObject
+       with VerbosityLevel
 }

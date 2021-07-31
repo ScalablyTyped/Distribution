@@ -2,24 +2,22 @@ package typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for updating a finding&#39;s state.
   */
-@js.native
 trait SchemaSetFindingStateRequest extends StObject {
   
   /**
     * The time at which the updated state takes effect.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * The desired State of the finding.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaSetFindingStateRequest {
   

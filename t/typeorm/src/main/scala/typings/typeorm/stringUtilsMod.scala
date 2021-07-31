@@ -2,51 +2,43 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringUtilsMod {
   
-  @JSImport("typeorm/browser/util/StringUtils", "abbreviate")
+  @JSImport("typeorm/browser/util/StringUtils", JSImport.Namespace)
   @js.native
-  def abbreviate(str: String): String = js.native
-  @JSImport("typeorm/browser/util/StringUtils", "abbreviate")
-  @js.native
-  def abbreviate(str: String, abbrLettersCount: Double): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("typeorm/browser/util/StringUtils", "camelCase")
-  @js.native
-  def camelCase(str: String): String = js.native
-  @JSImport("typeorm/browser/util/StringUtils", "camelCase")
-  @js.native
-  def camelCase(str: String, firstCapital: Boolean): String = js.native
+  @scala.inline
+  def abbreviate(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("abbreviate")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def abbreviate(str: String, abbrLettersCount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("abbreviate")(str.asInstanceOf[js.Any], abbrLettersCount.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("typeorm/browser/util/StringUtils", "hash")
-  @js.native
-  def hash(input: String): String = js.native
-  @JSImport("typeorm/browser/util/StringUtils", "hash")
-  @js.native
-  def hash(input: String, options: IHashOptions): String = js.native
+  @scala.inline
+  def camelCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def camelCase(str: String, firstCapital: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(str.asInstanceOf[js.Any], firstCapital.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("typeorm/browser/util/StringUtils", "shorten")
-  @js.native
-  def shorten(input: String): String = js.native
-  @JSImport("typeorm/browser/util/StringUtils", "shorten")
-  @js.native
-  def shorten(input: String, options: IShortenOptions): String = js.native
+  @scala.inline
+  def hash(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hash(input: String, options: IHashOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("typeorm/browser/util/StringUtils", "snakeCase")
-  @js.native
-  def snakeCase(str: String): String = js.native
+  @scala.inline
+  def shorten(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shorten")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def shorten(input: String, options: IShortenOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("shorten")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("typeorm/browser/util/StringUtils", "titleCase")
-  @js.native
-  def titleCase(str: String): String = js.native
+  @scala.inline
+  def snakeCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("snakeCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def titleCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titleCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait IHashOptions extends StObject {
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
   }
   object IHashOptions {
     
@@ -67,17 +59,16 @@ object stringUtilsMod {
     }
   }
   
-  @js.native
   trait IShortenOptions extends StObject {
     
     /** Maximum length of any "segment" */
-    var segmentLength: js.UndefOr[Double] = js.native
+    var segmentLength: js.UndefOr[Double] = js.undefined
     
     /** String used to split "segments" of the alias/column name */
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
     /** Length of any "term" in a "segment"; "OrderItem" is a segment, "Order" and "Items" are terms */
-    var termLength: js.UndefOr[Double] = js.native
+    var termLength: js.UndefOr[Double] = js.undefined
   }
   object IShortenOptions {
     

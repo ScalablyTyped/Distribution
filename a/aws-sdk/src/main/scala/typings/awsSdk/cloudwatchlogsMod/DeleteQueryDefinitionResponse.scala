@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteQueryDefinitionResponse extends StObject {
   
   /**
     * A value of TRUE indicates that the operation succeeded. FALSE indicates that the operation failed.
     */
-  var success: js.UndefOr[Success] = js.native
+  var success: js.UndefOr[Success] = js.undefined
 }
 object DeleteQueryDefinitionResponse {
   

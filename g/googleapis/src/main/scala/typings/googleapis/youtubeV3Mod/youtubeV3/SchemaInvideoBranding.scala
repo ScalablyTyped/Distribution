@@ -2,21 +2,19 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInvideoBranding extends StObject {
   
-  var imageBytes: js.UndefOr[String] = js.native
+  var imageBytes: js.UndefOr[String] = js.undefined
   
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[SchemaInvideoPosition] = js.native
+  var position: js.UndefOr[SchemaInvideoPosition] = js.undefined
   
-  var targetChannelId: js.UndefOr[String] = js.native
+  var targetChannelId: js.UndefOr[String] = js.undefined
   
-  var timing: js.UndefOr[SchemaInvideoTiming] = js.native
+  var timing: js.UndefOr[SchemaInvideoTiming] = js.undefined
 }
 object SchemaInvideoBranding {
   

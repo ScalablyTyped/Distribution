@@ -2,22 +2,20 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParseHashOptions extends StObject {
   
   /** indicates that you want to allow IdP-Initiated flows. See {@link https://auth0.com/docs/protocols/saml/idp-initiated-sso#lock-auth0-js} */
-  var __enableIdPInitiatedLogin: js.UndefOr[Boolean] = js.native
+  var __enableIdPInitiatedLogin: js.UndefOr[Boolean] = js.undefined
   
-  var _idTokenVerification: js.UndefOr[Boolean] = js.native
+  var _idTokenVerification: js.UndefOr[Boolean] = js.undefined
   
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object ParseHashOptions {
   

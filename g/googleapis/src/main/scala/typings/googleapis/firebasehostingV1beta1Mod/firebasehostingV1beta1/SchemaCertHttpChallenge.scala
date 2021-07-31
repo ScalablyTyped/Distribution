@@ -2,26 +2,24 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an HTTP certificate challenge.
   */
-@js.native
 trait SchemaCertHttpChallenge extends StObject {
   
   /**
     * The URL path on which to serve the specified token to satisfy the
     * certificate challenge.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The token to serve at the specified URL path to satisfy the certificate
     * challenge.
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object SchemaCertHttpChallenge {
   

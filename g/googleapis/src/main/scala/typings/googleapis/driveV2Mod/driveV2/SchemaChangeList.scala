@@ -2,46 +2,44 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of changes for a user.
   */
-@js.native
 trait SchemaChangeList extends StObject {
   
   /**
     * The ETag of the list.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The list of changes. If nextPageToken is populated, then this list may be
     * incomplete and an additional page of results should be fetched.
     */
-  var items: js.UndefOr[js.Array[SchemaChange]] = js.native
+  var items: js.UndefOr[js.Array[SchemaChange]] = js.undefined
   
   /**
     * This is always drive#changeList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The current largest change ID.
     */
-  var largestChangeId: js.UndefOr[String] = js.native
+  var largestChangeId: js.UndefOr[String] = js.undefined
   
   /**
     * The starting page token for future changes. This will be present only if
     * the end of the current changes list has been reached.
     */
-  var newStartPageToken: js.UndefOr[String] = js.native
+  var newStartPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A link to the next page of changes.
     */
-  var nextLink: js.UndefOr[String] = js.native
+  var nextLink: js.UndefOr[String] = js.undefined
   
   /**
     * The page token for the next page of changes. This will be absent if the
@@ -49,12 +47,12 @@ trait SchemaChangeList extends StObject {
     * any reason, it should be discarded, and pagination should be restarted
     * from the first page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A link back to this list.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaChangeList {
   

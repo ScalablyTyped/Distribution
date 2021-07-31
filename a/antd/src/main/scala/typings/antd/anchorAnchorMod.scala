@@ -17,7 +17,6 @@ import typings.std.HTMLSpanElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anchorAnchorMod {
@@ -34,9 +33,9 @@ object anchorAnchorMod {
     
     @JSImport("antd/lib/anchor/Anchor", "default.Link")
     @js.native
-    def Link: Instantiable0[typings.antd.anchorLinkMod.default] with TypeofAnchorLink = js.native
+    def Link: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink = js.native
     @scala.inline
-    def Link_=(x: Instantiable0[typings.antd.anchorLinkMod.default] with TypeofAnchorLink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
+    def Link_=(x: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/anchor/Anchor", "default.contextType")
     @js.native
@@ -70,9 +69,9 @@ object anchorAnchorMod {
     def getContainer(): js.Any = js.native
     
     def getCurrentAnchor(): String = js.native
-    def getCurrentAnchor(offsetTop: js.UndefOr[scala.Nothing], bounds: Double): String = js.native
     def getCurrentAnchor(offsetTop: Double): String = js.native
     def getCurrentAnchor(offsetTop: Double, bounds: Double): String = js.native
+    def getCurrentAnchor(offsetTop: Unit, bounds: Double): String = js.native
     
     def handleScroll(): Unit = js.native
     
@@ -106,20 +105,21 @@ object anchorAnchorMod {
   
   type AnchorContainer = HTMLElement | Window
   
-  @js.native
-  trait AnchorDefaultProps extends AnchorProps {
+  trait AnchorDefaultProps
+    extends StObject
+       with AnchorProps {
     
     @JSName("affix")
-    var affix_AnchorDefaultProps: Boolean = js.native
+    var affix_AnchorDefaultProps: Boolean
     
     @JSName("getContainer")
-    def getContainer_MAnchorDefaultProps(): AnchorContainer = js.native
+    def getContainer_MAnchorDefaultProps(): AnchorContainer
     
     @JSName("prefixCls")
-    var prefixCls_AnchorDefaultProps: String = js.native
+    var prefixCls_AnchorDefaultProps: String
     
     @JSName("showInkInFixed")
-    var showInkInFixed_AnchorDefaultProps: Boolean = js.native
+    var showInkInFixed_AnchorDefaultProps: Boolean
   }
   object AnchorDefaultProps {
     
@@ -146,39 +146,38 @@ object anchorAnchorMod {
     }
   }
   
-  @js.native
   trait AnchorProps extends StObject {
     
-    var affix: js.UndefOr[Boolean] = js.native
+    var affix: js.UndefOr[Boolean] = js.undefined
     
-    var bounds: js.UndefOr[Double] = js.native
+    var bounds: js.UndefOr[Double] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var getContainer: js.UndefOr[js.Function0[AnchorContainer]] = js.native
+    var getContainer: js.UndefOr[js.Function0[AnchorContainer]] = js.undefined
     
     /** Return customize highlight anchor */
-    var getCurrentAnchor: js.UndefOr[js.Function0[String]] = js.native
+    var getCurrentAnchor: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var offsetTop: js.UndefOr[Double] = js.native
+    var offsetTop: js.UndefOr[Double] = js.undefined
     
     /** Listening event when scrolling change active link */
-    var onChange: js.UndefOr[js.Function1[/* currentActiveLink */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* currentActiveLink */ String, Unit]] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function2[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* link */ Href, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var showInkInFixed: js.UndefOr[Boolean] = js.native
+    var showInkInFixed: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /** Scroll to target offset value, if none, it's offsetTop prop value or 0. */
-    var targetOffset: js.UndefOr[Double] = js.native
+    var targetOffset: js.UndefOr[Double] = js.undefined
   }
   object AnchorProps {
     
@@ -271,16 +270,15 @@ object anchorAnchorMod {
     }
   }
   
-  @js.native
   trait AnchorState extends StObject {
     
-    var activeLink: Null | String = js.native
+    var activeLink: Null | String
   }
   object AnchorState {
     
     @scala.inline
     def apply(): AnchorState = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(activeLink = null)
       __obj.asInstanceOf[AnchorState]
     }
     
@@ -295,26 +293,25 @@ object anchorAnchorMod {
     }
   }
   
-  @js.native
   trait AntAnchor extends StObject {
     
-    var activeLink: String | Null = js.native
+    var activeLink: String | Null
     
     var onClick: js.UndefOr[
         js.Function2[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* link */ Href, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    def registerLink(link: String): Unit = js.native
+    def registerLink(link: String): Unit
     
-    def scrollTo(link: String): Unit = js.native
+    def scrollTo(link: String): Unit
     
-    def unregisterLink(link: String): Unit = js.native
+    def unregisterLink(link: String): Unit
   }
   object AntAnchor {
     
     @scala.inline
     def apply(registerLink: String => Unit, scrollTo: String => Unit, unregisterLink: String => Unit): AntAnchor = {
-      val __obj = js.Dynamic.literal(registerLink = js.Any.fromFunction1(registerLink), scrollTo = js.Any.fromFunction1(scrollTo), unregisterLink = js.Any.fromFunction1(unregisterLink))
+      val __obj = js.Dynamic.literal(registerLink = js.Any.fromFunction1(registerLink), scrollTo = js.Any.fromFunction1(scrollTo), unregisterLink = js.Any.fromFunction1(unregisterLink), activeLink = null)
       __obj.asInstanceOf[AntAnchor]
     }
     

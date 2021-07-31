@@ -5,21 +5,21 @@ import typings.vegaTypings.scaleMod._UnionSortField
 import typings.vegaTypings.vegaTypingsStrings.count
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpOrder extends _UnionSortField {
+trait OpOrder
+  extends StObject
+     with _UnionSortField {
   
-  var op: count = js.native
+  var op: count
   
-  var order: js.UndefOr[SortOrder] = js.native
+  var order: js.UndefOr[SortOrder] = js.undefined
 }
 object OpOrder {
   
   @scala.inline
-  def apply(op: count): OpOrder = {
-    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any])
+  def apply(): OpOrder = {
+    val __obj = js.Dynamic.literal(op = "count")
     __obj.asInstanceOf[OpOrder]
   }
   

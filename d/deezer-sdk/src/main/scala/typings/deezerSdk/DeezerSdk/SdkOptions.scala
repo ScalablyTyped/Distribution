@@ -3,13 +3,11 @@ package typings.deezerSdk.DeezerSdk
 import typings.deezerSdk.anon.Accesstoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/ready | DZ.ready}
   */
-@js.native
 trait SdkOptions extends StObject {
   
   /**
@@ -17,9 +15,9 @@ trait SdkOptions extends StObject {
     * {@link https://developers.deezer.com/sdk/javascript/ready | DZ.ready} also documents the
     * property current_track, but the author of this comment was not able no retrieve it.
     */
-  val player: PlayerState = js.native
+  val player: PlayerState
   
-  val token: Accesstoken = js.native
+  val token: Accesstoken
 }
 object SdkOptions {
   

@@ -6,13 +6,14 @@ import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.model.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object util {
   
   @js.native
-  trait Export extends Control {
+  trait Export
+    extends StObject
+       with Control {
     
     /**
       * Adds some column to the aggregation <code>columns</code>.
@@ -72,7 +73,7 @@ object util {
       * standard methods 'then' and 'catch'!</b></p>
       * @returns Promise object
       */
-    def generate(): JQueryPromise[_] = js.native
+    def generate(): JQueryPromise[js.Any] = js.native
     
     /**
       * Gets content of aggregation <code>columns</code>.Columns for the Export.
@@ -169,7 +170,7 @@ object util {
       * @param sFileName file name, defaults to 'data'
       * @returns Promise object
       */
-    def saveFile(sFileName: String): JQueryPromise[_] = js.native
+    def saveFile(sFileName: String): JQueryPromise[js.Any] = js.native
     
     /**
       * Sets the aggregated <code>exportType</code>.
@@ -192,7 +193,9 @@ object util {
   }
   
   @js.native
-  trait ExportCell extends Element {
+  trait ExportCell
+    extends StObject
+       with Element {
     
     /**
       * Gets current value of property <code>content</code>.Cell content.
@@ -210,7 +213,9 @@ object util {
   }
   
   @js.native
-  trait ExportColumn extends ManagedObject {
+  trait ExportColumn
+    extends StObject
+       with ManagedObject {
     
     /**
       * Destroys the template in the aggregation <code>template</code>.
@@ -246,7 +251,9 @@ object util {
   }
   
   @js.native
-  trait ExportRow extends ManagedObject {
+  trait ExportRow
+    extends StObject
+       with ManagedObject {
     
     /**
       * Adds some cell to the aggregation <code>cells</code>.
@@ -303,7 +310,9 @@ object util {
   }
   
   @js.native
-  trait ExportType extends ManagedObject {
+  trait ExportType
+    extends StObject
+       with ManagedObject {
     
     /**
       * Handles the generation process of the file.<br>
@@ -392,7 +401,9 @@ object util {
   }
   
   @js.native
-  trait ExportTypeCSV extends ExportType {
+  trait ExportTypeCSV
+    extends StObject
+       with ExportType {
     
     /**
       * Gets current value of property <code>separatorChar</code>.Separator char.Value needs to be exactly
@@ -411,7 +422,9 @@ object util {
   }
   
   @js.native
-  trait MockServer extends ManagedObject {
+  trait MockServer
+    extends StObject
+       with ManagedObject {
     
     /**
       * Enum for the method.
@@ -463,13 +476,13 @@ object util {
       * @param sEntitySetName EntitySet name
       * @returns data model of the given EntitySet
       */
-    def getEntitySetData(sEntitySetName: js.Any): js.Array[_] = js.native
+    def getEntitySetData(sEntitySetName: js.Any): js.Array[js.Any] = js.native
     
     /**
       * Getter for property <code>requests</code>.Default value is <code>[]</code>
       * @returns the value of property <code>rootUri</code>
       */
-    def getRequests(): js.Array[_] = js.native
+    def getRequests(): js.Array[js.Any] = js.native
     
     /**
       * Getter for property <code>rootUri</code>.Default value is empty/<code>undefined</code>
@@ -507,7 +520,7 @@ object util {
       * the file is set for response header</li></ul>
       * @param requests new value for property <code>requests</code>
       */
-    def setRequests(requests: js.Array[_]): Unit = js.native
+    def setRequests(requests: js.Array[js.Any]): Unit = js.native
     
     /**
       * Setter for property <code>rootUri</code>. All request path URI are prefixed with this root URI if
@@ -637,27 +650,41 @@ object util {
   object serializer {
     
     @js.native
-    trait HTMLViewSerializer extends EventProvider
+    trait HTMLViewSerializer
+      extends StObject
+         with EventProvider
     
     @js.native
-    trait Serializer extends EventProvider
+    trait Serializer
+      extends StObject
+         with EventProvider
     
     @js.native
-    trait ViewSerializer extends EventProvider
+    trait ViewSerializer
+      extends StObject
+         with EventProvider
     
     @js.native
-    trait XMLViewSerializer extends EventProvider
+    trait XMLViewSerializer
+      extends StObject
+         with EventProvider
     
     object delegate {
       
       @js.native
-      trait Delegate extends EventProvider
+      trait Delegate
+        extends StObject
+           with EventProvider
       
       @js.native
-      trait HTML extends Delegate
+      trait HTML
+        extends StObject
+           with Delegate
       
       @js.native
-      trait XML extends Delegate
+      trait XML
+        extends StObject
+           with Delegate
     }
   }
 }

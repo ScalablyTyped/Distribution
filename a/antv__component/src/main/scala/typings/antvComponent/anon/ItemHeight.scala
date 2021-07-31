@@ -2,75 +2,73 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemHeight extends StObject {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var animateOption: Appear = js.native
+  var animateOption: Appear
   
-  var background: js.Any = js.native
+  var background: js.Any
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var container: js.Any = js.native
+  var container: js.Any
   
-  var defaultCfg: ItemBackground = js.native
+  var defaultCfg: ItemBackground
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var group: js.Any = js.native
+  var group: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var isInit: Boolean = js.native
+  var isInit: Boolean
   
-  var isRegister: Boolean = js.native
+  var isRegister: Boolean
   
-  var isUpdating: Boolean = js.native
+  var isUpdating: Boolean
   
-  var itemHeight: js.Any = js.native
+  var itemHeight: js.Any
   
-  var itemMarginBottom: Double = js.native
+  var itemMarginBottom: Double
   
-  var itemSpacing: Double = js.native
+  var itemSpacing: Double
   
-  var itemValue: js.Any = js.native
+  var itemValue: js.Any
   
-  var itemWidth: js.Any = js.native
+  var itemWidth: js.Any
   
-  var items: js.Array[_] = js.native
+  var items: js.Array[js.Any]
   
-  var layout: String = js.native
+  var layout: String
   
-  var locationType: String = js.native
+  var locationType: String
   
-  var maxHeight: js.Any = js.native
+  var maxHeight: js.Any
   
-  var maxItemWidth: js.Any = js.native
+  var maxItemWidth: js.Any
   
-  var maxWidth: js.Any = js.native
+  var maxWidth: js.Any
   
-  var name: String = js.native
+  var name: String
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var title: js.Any = js.native
+  var title: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAutoRender: Boolean = js.native
+  var updateAutoRender: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object ItemHeight {
   
@@ -93,7 +91,7 @@ object ItemHeight {
     itemSpacing: Double,
     itemValue: js.Any,
     itemWidth: js.Any,
-    items: js.Array[_],
+    items: js.Array[js.Any],
     layout: String,
     locationType: String,
     maxHeight: js.Any,
@@ -169,7 +167,7 @@ object ItemHeight {
     def setItemWidth(value: js.Any): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))

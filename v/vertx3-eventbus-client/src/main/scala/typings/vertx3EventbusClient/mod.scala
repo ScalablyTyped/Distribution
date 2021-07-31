@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,13 +13,15 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("vertx3-eventbus-client", JSImport.Namespace)
   @js.native
-  class ^ protected () extends EventBus {
+  class ^ protected ()
+    extends StObject
+       with EventBus {
     def this(url: String) = this()
     def this(url: String, options: js.Any) = this()
   }
   @JSImport("vertx3-eventbus-client", JSImport.Namespace)
   @js.native
-  val ^ : EventBusStatic = js.native
+  val ^ : js.Object & EventBusStatic = js.native
   
   @js.native
   trait EventBus extends StObject {
@@ -43,44 +44,44 @@ object mod extends Shortcut {
     def publish(address: String, message: js.Any, headers: js.Any): js.Any = js.native
     
     def registerHandler(address: String): js.Any = js.native
-    def registerHandler(
-      address: String,
-      headers: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error, /* message */ js.Any, _]
-    ): js.Any = js.native
     def registerHandler(address: String, headers: js.Object): js.Any = js.native
     def registerHandler(
       address: String,
       headers: js.Object,
-      callback: js.Function2[/* error */ Error, /* message */ js.Any, _]
+      callback: js.Function2[/* error */ Error, /* message */ js.Any, js.Any]
+    ): js.Any = js.native
+    def registerHandler(
+      address: String,
+      headers: Unit,
+      callback: js.Function2[/* error */ Error, /* message */ js.Any, js.Any]
     ): js.Any = js.native
     
     def send(address: String, message: js.Any): js.Any = js.native
-    def send(
-      address: String,
-      message: js.Any,
-      headers: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error, /* message */ js.Any, _]
-    ): js.Any = js.native
     def send(address: String, message: js.Any, headers: js.Object): js.Any = js.native
     def send(
       address: String,
       message: js.Any,
       headers: js.Object,
-      callback: js.Function2[/* error */ Error, /* message */ js.Any, _]
+      callback: js.Function2[/* error */ Error, /* message */ js.Any, js.Any]
+    ): js.Any = js.native
+    def send(
+      address: String,
+      message: js.Any,
+      headers: Unit,
+      callback: js.Function2[/* error */ Error, /* message */ js.Any, js.Any]
     ): js.Any = js.native
     
     def unregisterHandler(address: String): js.Any = js.native
-    def unregisterHandler(
-      address: String,
-      headers: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error, /* message */ js.Any, _]
-    ): js.Any = js.native
     def unregisterHandler(address: String, headers: js.Object): js.Any = js.native
     def unregisterHandler(
       address: String,
       headers: js.Object,
-      callback: js.Function2[/* error */ Error, /* message */ js.Any, _]
+      callback: js.Function2[/* error */ Error, /* message */ js.Any, js.Any]
+    ): js.Any = js.native
+    def unregisterHandler(
+      address: String,
+      headers: Unit,
+      callback: js.Function2[/* error */ Error, /* message */ js.Any, js.Any]
     ): js.Any = js.native
     
     var url: String = js.native
@@ -88,11 +89,12 @@ object mod extends Shortcut {
   
   @js.native
   trait EventBusStatic
-    extends Instantiable1[/* url */ String, EventBus]
+    extends StObject
+       with Instantiable1[/* url */ String, EventBus]
        with Instantiable2[/* url */ String, /* options */ js.Any, EventBus]
   
-  type _To = EventBusStatic
+  type _To = js.Object & EventBusStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: EventBusStatic = ^
+  override def _to: js.Object & EventBusStatic = ^
 }

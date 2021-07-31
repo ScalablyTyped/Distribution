@@ -5,17 +5,15 @@ import typings.p2.mod.FrictionEquation
 import typings.p2.mod.Shape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: typings.p2.mod.Body = js.native
+    var body: typings.p2.mod.Body
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Body {
     
@@ -37,20 +35,19 @@ object anon {
     }
   }
   
-  @js.native
   trait BodyA extends StObject {
     
-    var bodyA: typings.p2.mod.Body = js.native
+    var bodyA: typings.p2.mod.Body
     
-    var bodyB: typings.p2.mod.Body = js.native
+    var bodyB: typings.p2.mod.Body
     
-    var contactEquation: ContactEquation = js.native
+    var contactEquation: ContactEquation
     
-    var shapeA: Shape = js.native
+    var shapeA: Shape
     
-    var shapeB: Shape = js.native
+    var shapeB: Shape
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object BodyA {
     
@@ -91,20 +88,19 @@ object anon {
     }
   }
   
-  @js.native
   trait BodyB extends StObject {
     
-    var bodyA: typings.p2.mod.Body = js.native
+    var bodyA: typings.p2.mod.Body
     
-    var bodyB: typings.p2.mod.Body = js.native
+    var bodyB: typings.p2.mod.Body
     
-    var contactEquations: js.Array[ContactEquation] = js.native
+    var contactEquations: js.Array[ContactEquation]
     
-    var shapeA: Shape = js.native
+    var shapeA: Shape
     
-    var shapeB: Shape = js.native
+    var shapeB: Shape
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object BodyB {
     
@@ -148,14 +144,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ContactEquations extends StObject {
     
-    var contactEquations: js.Array[ContactEquation] = js.native
+    var contactEquations: js.Array[ContactEquation]
     
-    var frictionEquations: js.Array[FrictionEquation] = js.native
+    var frictionEquations: js.Array[FrictionEquation]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ContactEquations {
     
@@ -190,14 +185,13 @@ object anon {
     }
   }
   
-  @js.native
   trait OptimalDecomp extends StObject {
     
-    var optimalDecomp: js.UndefOr[Boolean] = js.native
+    var optimalDecomp: js.UndefOr[Boolean] = js.undefined
     
-    var removeCollinearPoints: js.UndefOr[Boolean | Double] = js.native
+    var removeCollinearPoints: js.UndefOr[Boolean | Double] = js.undefined
     
-    var skipSimpleCheck: js.UndefOr[Boolean] = js.native
+    var skipSimpleCheck: js.UndefOr[Boolean] = js.undefined
   }
   object OptimalDecomp {
     
@@ -230,12 +224,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Pairs extends StObject {
     
-    var pairs: js.Array[typings.p2.mod.Body] = js.native
+    var pairs: js.Array[typings.p2.mod.Body]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Pairs {
     
@@ -260,12 +253,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Relaxation extends StObject {
     
-    var relaxation: js.UndefOr[Double] = js.native
+    var relaxation: js.UndefOr[Double] = js.undefined
     
-    var stiffness: js.UndefOr[Double] = js.native
+    var stiffness: js.UndefOr[Double] = js.undefined
   }
   object Relaxation {
     
@@ -292,18 +284,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ShapeA extends StObject {
     
-    var bodyA: typings.p2.mod.Body = js.native
+    var bodyA: typings.p2.mod.Body
     
-    var bodyB: typings.p2.mod.Body = js.native
+    var bodyB: typings.p2.mod.Body
     
-    var shapeA: Shape = js.native
+    var shapeA: Shape
     
-    var shapeB: Shape = js.native
+    var shapeB: Shape
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ShapeA {
     
@@ -340,12 +331,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Spring extends StObject {
     
-    var spring: typings.p2.mod.Spring = js.native
+    var spring: typings.p2.mod.Spring
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Spring {
     
@@ -367,10 +357,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Type {
     

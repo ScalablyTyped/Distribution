@@ -13,7 +13,6 @@ import typings.glidejsGlide.glidejsGlideStrings.rtr
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,14 +20,16 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@glidejs/glide", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Static {
+  class ^ protected ()
+    extends StObject
+       with Static {
     // tslint:disable-next-line:no-misused-new
     def this(selector: String) = this()
     def this(selector: String, options: Options) = this()
   }
   @JSImport("@glidejs/glide", JSImport.Namespace)
   @js.native
-  val ^ : Static = js.native
+  val ^ : js.Object & Static = js.native
   
   /**
     * The component is a simple function that returns an object. Each component
@@ -123,7 +124,6 @@ object mod extends Shortcut {
     def update: typings.glidejsGlide.glidejsGlideStrings.update = "update".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.update]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -131,82 +131,82 @@ object mod extends Shortcut {
       *
       * @default 400
       */
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Easing function for the animation
       *
       * @default 'cubic-bezier(0.165, 0.840, 0.440, 1.000)
       */
-    var animationTimingFunc: js.UndefOr[String] = js.native
+    var animationTimingFunc: js.UndefOr[String] = js.undefined
     
     /**
       * Change slides after a specified interval
       *
       * @default false
       */
-    var autoplay: js.UndefOr[`false` | Double] = js.native
+    var autoplay: js.UndefOr[`false` | Double] = js.undefined
     
     /**
       * Stop running perView number of slides from the end
       *
       * @default false
       */
-    var bound: js.UndefOr[Boolean] = js.native
+    var bound: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Collection of options applied at specified media breakpoints
       *
       * @default {}
       */
-    var breakpoints: js.UndefOr[Record[Double, Options]] = js.native
+    var breakpoints: js.UndefOr[Record[Double, Options]] = js.undefined
     
     /**
       * Collection of used HTML classes
       */
-    var classes: js.UndefOr[ActiveNav] = js.native
+    var classes: js.UndefOr[ActiveNav] = js.undefined
     
     /**
       * Moving direction mode
       *
       * @default 'ltr'
       */
-    var direction: js.UndefOr[ltr | rtr] = js.native
+    var direction: js.UndefOr[ltr | rtr] = js.undefined
     
     /**
       * Minimal mousedrag distance needed to change the slide
       *
       * @default 120
       */
-    var dragThreshold: js.UndefOr[Double | `false`] = js.native
+    var dragThreshold: js.UndefOr[Double | `false`] = js.undefined
     
     /**
       * Focus currently active slide at a specified position
       *
       * @default 0
       */
-    var focusAt: js.UndefOr[Double | String] = js.native
+    var focusAt: js.UndefOr[Double | String] = js.undefined
     
     /**
       * A size of the space between slides
       *
       * @default 10
       */
-    var gap: js.UndefOr[Double] = js.native
+    var gap: js.UndefOr[Double] = js.undefined
     
     /**
       * Stop autoplay on mouseover
       *
       * @default true
       */
-    var hoverpause: js.UndefOr[Boolean] = js.native
+    var hoverpause: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Change slides with keyboard arrows
       *
       * @default true
       */
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The value of the future viewports which have to be visible in the
@@ -214,77 +214,77 @@ object mod extends Shortcut {
       *
       * @default 0
       */
-    var peek: js.UndefOr[Double | After] = js.native
+    var peek: js.UndefOr[Double | After] = js.undefined
     
     /**
       * A maximum number of slides moved per single swipe or drag
       *
       * @default false
       */
-    var perTouch: js.UndefOr[Double | `false`] = js.native
+    var perTouch: js.UndefOr[Double | `false`] = js.undefined
     
     /**
       * A number of visible slides
       *
       * @default 1
       */
-    var perView: js.UndefOr[Double] = js.native
+    var perView: js.UndefOr[Double] = js.undefined
     
     /**
       * Allow looping the slider type
       *
       * @default true
       */
-    var rewind: js.UndefOr[Boolean] = js.native
+    var rewind: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Duration of the rewinding animation
       *
       * @default 800
       */
-    var rewindDuration: js.UndefOr[Double] = js.native
+    var rewindDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Start at specific slide number
       *
       * @default 0
       */
-    var startAt: js.UndefOr[Double] = js.native
+    var startAt: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimal swipe distance needed to change the slide
       *
       * @default 80
       */
-    var swipeThreshold: js.UndefOr[Double | `false`] = js.native
+    var swipeThreshold: js.UndefOr[Double | `false`] = js.undefined
     
     /**
       * Throttle costly events
       *
       * @default 25
       */
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
     
     /**
       * Angle required to activate slides moving
       *
       * @default 45
       */
-    var touchAngle: js.UndefOr[Double] = js.native
+    var touchAngle: js.UndefOr[Double] = js.undefined
     
     /**
       * Alternate moving distance ratio of swiping and dragging
       *
       * @default 0.5
       */
-    var touchRatio: js.UndefOr[Double] = js.native
+    var touchRatio: js.UndefOr[Double] = js.undefined
     
     /**
       * Type of the movement
       *
       * @default 'slider'
       */
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
   }
   object Options {
     
@@ -516,7 +516,8 @@ object mod extends Shortcut {
   
   @js.native
   trait Static
-    extends // tslint:disable-next-line:no-misused-new
+    extends StObject
+       with // tslint:disable-next-line:no-misused-new
   Instantiable1[/* selector */ String, Static]
        with Instantiable2[/* selector */ String, /* options */ Options, Static] {
     
@@ -557,8 +558,8 @@ object mod extends Shortcut {
   
   trait _Pattern extends StObject
   
-  type _To = Static
+  type _To = js.Object & Static
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Static = ^
+  override def _to: js.Object & Static = ^
 }

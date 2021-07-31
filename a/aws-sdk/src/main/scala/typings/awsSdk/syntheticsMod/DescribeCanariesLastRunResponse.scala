@@ -2,21 +2,19 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCanariesLastRunResponse extends StObject {
   
   /**
     * An array that contains the information from the most recent run of each canary.
     */
-  var CanariesLastRun: js.UndefOr[typings.awsSdk.syntheticsMod.CanariesLastRun] = js.native
+  var CanariesLastRun: js.UndefOr[typings.awsSdk.syntheticsMod.CanariesLastRun] = js.undefined
   
   /**
     * A token that indicates that there is more data available. You can use this token in a subsequent DescribeCanariesLastRun operation to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object DescribeCanariesLastRunResponse {
   

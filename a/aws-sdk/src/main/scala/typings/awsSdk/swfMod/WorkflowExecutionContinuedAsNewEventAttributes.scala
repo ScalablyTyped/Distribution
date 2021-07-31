@@ -2,66 +2,64 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowExecutionContinuedAsNewEventAttributes extends StObject {
   
   /**
     * The policy to use for the child workflow executions of the new execution if it is terminated by calling the TerminateWorkflowExecution action explicitly or due to an expired timeout. The supported child policies are:    TERMINATE – The child executions are terminated.    REQUEST_CANCEL – A request to cancel is attempted for each child execution by recording a WorkflowExecutionCancelRequested event in its history. It is up to the decider to take appropriate actions when it receives an execution history with this event.    ABANDON – No action is taken. The child executions continue to run.  
     */
-  var childPolicy: ChildPolicy = js.native
+  var childPolicy: ChildPolicy
   
   /**
     * The ID of the DecisionTaskCompleted event corresponding to the decision task that resulted in the ContinueAsNewWorkflowExecution decision that started this execution. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var decisionTaskCompletedEventId: EventId = js.native
+  var decisionTaskCompletedEventId: EventId
   
   /**
     * The total duration allowed for the new workflow execution. The duration is specified in seconds, an integer greater than or equal to 0. You can use NONE to specify unlimited duration.
     */
-  var executionStartToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.native
+  var executionStartToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.undefined
   
   /**
     * The input provided to the new workflow execution.
     */
-  var input: js.UndefOr[Data] = js.native
+  var input: js.UndefOr[Data] = js.undefined
   
   /**
     * The IAM role to attach to the new (continued) workflow execution.
     */
-  var lambdaRole: js.UndefOr[Arn] = js.native
+  var lambdaRole: js.UndefOr[Arn] = js.undefined
   
   /**
     * The runId of the new workflow execution.
     */
-  var newExecutionRunId: WorkflowRunId = js.native
+  var newExecutionRunId: WorkflowRunId
   
   /**
     * The list of tags associated with the new workflow execution.
     */
-  var tagList: js.UndefOr[TagList] = js.native
+  var tagList: js.UndefOr[TagList] = js.undefined
   
   /**
     * The task list to use for the decisions of the new (continued) workflow execution.
     */
-  var taskList: TaskList = js.native
+  var taskList: TaskList
   
   /**
     * The priority of the task to use for the decisions of the new (continued) workflow execution.
     */
-  var taskPriority: js.UndefOr[TaskPriority] = js.native
+  var taskPriority: js.UndefOr[TaskPriority] = js.undefined
   
   /**
     * The maximum duration of decision tasks for the new workflow execution. The duration is specified in seconds, an integer greater than or equal to 0. You can use NONE to specify unlimited duration.
     */
-  var taskStartToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.native
+  var taskStartToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.undefined
   
   /**
     * The workflow type of this execution.
     */
-  var workflowType: WorkflowType = js.native
+  var workflowType: WorkflowType
 }
 object WorkflowExecutionContinuedAsNewEventAttributes {
   

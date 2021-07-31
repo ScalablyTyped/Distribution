@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteNotificationSubscriptionRequest extends StObject {
   
   /**
     * The ID of the organization.
     */
-  var OrganizationId: IdType = js.native
+  var OrganizationId: IdType
   
   /**
     * The ID of the subscription.
     */
-  var SubscriptionId: IdType = js.native
+  var SubscriptionId: IdType
 }
 object DeleteNotificationSubscriptionRequest {
   

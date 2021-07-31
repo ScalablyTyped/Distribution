@@ -2,15 +2,13 @@ package typings.mailgunJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteResponse extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var message: String = js.native
+  var message: String
 }
 object DeleteResponse {
   

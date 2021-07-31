@@ -3,15 +3,13 @@ package typings.w3cWebUsb
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait USBIsochronousInTransferResult extends StObject {
   
-  val data: js.UndefOr[DataView] = js.native
+  val data: js.UndefOr[DataView] = js.undefined
   
-  val packets: js.Array[USBIsochronousInTransferPacket] = js.native
+  val packets: js.Array[USBIsochronousInTransferPacket]
 }
 object USBIsochronousInTransferResult {
   

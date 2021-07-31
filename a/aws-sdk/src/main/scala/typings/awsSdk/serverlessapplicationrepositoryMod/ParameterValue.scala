@@ -2,22 +2,20 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterValue extends StObject {
   
   /**
     * The key associated with the parameter. If you don't specify a key and value for a particular parameter, AWS CloudFormation
     uses the default value that is specified in your template.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * The input value associated with the parameter.
     */
-  var Value: string = js.native
+  var Value: string
 }
 object ParameterValue {
   

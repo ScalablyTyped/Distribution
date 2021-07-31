@@ -3,22 +3,20 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaReservationsScopedList extends StObject {
   
   /**
     * A list of reservations contained in this scope.
     */
-  var reservations: js.UndefOr[js.Array[SchemaReservation]] = js.native
+  var reservations: js.UndefOr[js.Array[SchemaReservation]] = js.undefined
   
   /**
     * Informational warning which replaces the list of reservations when the
     * list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaReservationsScopedList {
   

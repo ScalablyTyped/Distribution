@@ -2,17 +2,17 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateResourceServer extends ResourceServer {
+trait CreateResourceServer
+  extends StObject
+     with ResourceServer {
   
   /**
     * The identifier of the client.
     */
   @JSName("identifier")
-  var identifier_CreateResourceServer: String = js.native
+  var identifier_CreateResourceServer: String
 }
 object CreateResourceServer {
   

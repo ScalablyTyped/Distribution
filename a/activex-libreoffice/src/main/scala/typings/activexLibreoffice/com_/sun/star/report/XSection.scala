@@ -17,7 +17,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,35 +27,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XReportDefinition
   * @see XGroup
   */
-@js.native
 trait XSection
-  extends XShapes
+  extends StObject
      with XChild
      with XContainer
+     with XShapes
      with XEnumerationAccess
      with XPropertySet
      with XComponent {
   
   /** Defines the back ground color of the section. */
-  var BackColor: Color = js.native
+  var BackColor: Color
   
   /** determines if the back ground color is set to transparent. */
-  var BackTransparent: Boolean = js.native
+  var BackTransparent: Boolean
   
   /**
     * Specifies that elements with dynamic state will be expanded vertically when then content of the element is larger than it's container. If this
     * property is disabled the content will be truncated when its size is larger than the container.
     */
-  var CanGrow: Boolean = js.native
+  var CanGrow: Boolean
   
   /** Represents ... */
-  var CanShrink: Boolean = js.native
+  var CanShrink: Boolean
   
   /**
     * Defines the expression which is executed before printing the section. If the return value of the expression is `TRUE` then the section will be
     * printed.
     */
-  var ConditionalPrintExpression: String = js.native
+  var ConditionalPrintExpression: String
   
   /**
     * Specifies whether the section is printed on a separate page.
@@ -64,23 +63,23 @@ trait XSection
     * Not valid for page header or page footer.
     * @see ForceNewPage
     */
-  var ForceNewPage: Double = js.native
+  var ForceNewPage: Double
   
   /** Specifies the parent of the section if it is a group header or group footer. */
-  var Group: XGroup = js.native
+  var Group: XGroup
   
   /** Defines the height of the section. */
-  var Height: Double = js.native
+  var Height: Double
   
   /**
     * Specifies that the section is printed on one page.
     *
     * Not valid for page header or page footer.
     */
-  var KeepTogether: Boolean = js.native
+  var KeepTogether: Boolean
   
   /** Defines the name of the section. */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * Specifies whether the section is printed in a new row or column within a multi column report.
@@ -88,16 +87,16 @@ trait XSection
     * Not valid for page header or page footer.
     * @see ForceNewPage
     */
-  var NewRowOrCol: Double = js.native
+  var NewRowOrCol: Double
   
   /** Defines that the group header should be repeated on the next page when a group spans more than one page. It only applies to group headers. */
-  var RepeatSection: Boolean = js.native
+  var RepeatSection: Boolean
   
   /** Specifies the parent of the section if it is a page header or page footer. */
-  var ReportDefinition: XReportDefinition = js.native
+  var ReportDefinition: XReportDefinition
   
   /** Defines if the section should be visible in report. */
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object XSection {
   

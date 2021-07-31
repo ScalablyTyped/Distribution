@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Policies covered by this consent
   */
-@js.native
-trait ConsentPolicy extends BackboneElement {
+trait ConsentPolicy
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'authority'.
     */
-  var _authority: js.UndefOr[Element] = js.native
+  var _authority: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'uri'.
     */
-  var _uri: js.UndefOr[Element] = js.native
+  var _uri: js.UndefOr[Element] = js.undefined
   
   /**
     * Enforcement source for policy
     */
-  var authority: js.UndefOr[uri] = js.native
+  var authority: js.UndefOr[uri] = js.undefined
   
   /**
     * Specific policy covered by this consent
     */
-  var uri: js.UndefOr[typings.fhir.fhir.uri] = js.native
+  var uri: js.UndefOr[typings.fhir.fhir.uri] = js.undefined
 }
 object ConsentPolicy {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveLayerVersionPermissionRequest extends StObject {
   
   /**
     * The name or Amazon Resource Name (ARN) of the layer.
     */
-  var LayerName: typings.awsSdk.lambdaMod.LayerName = js.native
+  var LayerName: typings.awsSdk.lambdaMod.LayerName
   
   /**
     * Only update the policy if the revision ID matches the ID specified. Use this option to avoid modifying a policy that has changed since you last read it.
     */
-  var RevisionId: js.UndefOr[String] = js.native
+  var RevisionId: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier that was specified when the statement was added.
     */
-  var StatementId: typings.awsSdk.lambdaMod.StatementId = js.native
+  var StatementId: typings.awsSdk.lambdaMod.StatementId
   
   /**
     * The version number.
     */
-  var VersionNumber: LayerVersionNumber = js.native
+  var VersionNumber: LayerVersionNumber
 }
 object RemoveLayerVersionPermissionRequest {
   

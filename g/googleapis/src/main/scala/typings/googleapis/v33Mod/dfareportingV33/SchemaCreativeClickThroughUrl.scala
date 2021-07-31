@@ -2,13 +2,11 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Click-through URL
   */
-@js.native
 trait SchemaCreativeClickThroughUrl extends StObject {
   
   /**
@@ -18,18 +16,18 @@ trait SchemaCreativeClickThroughUrl extends StObject {
     * to this field. - Otherwise, the customClickThroughUrl is assigned to this
     * field.
     */
-  var computedClickThroughUrl: js.UndefOr[String] = js.native
+  var computedClickThroughUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Custom click-through URL. Applicable if the landingPageId field is left
     * unset.
     */
-  var customClickThroughUrl: js.UndefOr[String] = js.native
+  var customClickThroughUrl: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the landing page for the click-through URL.
     */
-  var landingPageId: js.UndefOr[String] = js.native
+  var landingPageId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeClickThroughUrl {
   

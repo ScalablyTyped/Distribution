@@ -2,12 +2,12 @@ package typings.winrt.global.Windows.Security.Cryptography
 
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
+import typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages
 import typings.winrt.Windows.Security.Cryptography.Certificates.ExportOption
 import typings.winrt.Windows.Security.Cryptography.Certificates.InstallOptions
 import typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Certificates {
@@ -15,16 +15,19 @@ object Certificates {
   @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager")
   @js.native
   class CertificateEnrollmentManager ()
-    extends typings.winrt.Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager
   /* static members */
   object CertificateEnrollmentManager {
     
-    @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager.createRequestAsync")
+    @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager")
     @js.native
-    def createRequestAsync(request: typings.winrt.Windows.Security.Cryptography.Certificates.CertificateRequestProperties): IAsyncOperation[String] = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager.importPfxDataAsync")
-    @js.native
+    @scala.inline
+    def createRequestAsync(request: typings.winrt.Windows.Security.Cryptography.Certificates.CertificateRequestProperties): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequestAsync")(request.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
+    
+    @scala.inline
     def importPfxDataAsync(
       pfxData: String,
       password: String,
@@ -32,17 +35,45 @@ object Certificates {
       keyProtectionLevel: KeyProtectionLevel,
       installOption: InstallOptions,
       friendlyName: String
-    ): IAsyncAction = js.native
+    ): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("importPfxDataAsync")(pfxData.asInstanceOf[js.Any], password.asInstanceOf[js.Any], exportable.asInstanceOf[js.Any], keyProtectionLevel.asInstanceOf[js.Any], installOption.asInstanceOf[js.Any], friendlyName.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
     
-    @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager.installCertificateAsync")
-    @js.native
-    def installCertificateAsync(certificate: String, installOption: InstallOptions): IAsyncAction = js.native
+    @scala.inline
+    def installCertificateAsync(certificate: String, installOption: InstallOptions): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("installCertificateAsync")(certificate.asInstanceOf[js.Any], installOption.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateRequestProperties")
   @js.native
   class CertificateRequestProperties ()
-    extends typings.winrt.Windows.Security.Cryptography.Certificates.CertificateRequestProperties
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Certificates.CertificateRequestProperties {
+    
+    /* CompleteClass */
+    var exportable: ExportOption = js.native
+    
+    /* CompleteClass */
+    var friendlyName: String = js.native
+    
+    /* CompleteClass */
+    var hashAlgorithmName: String = js.native
+    
+    /* CompleteClass */
+    var keyAlgorithmName: String = js.native
+    
+    /* CompleteClass */
+    var keyProtectionLevel: KeyProtectionLevel = js.native
+    
+    /* CompleteClass */
+    var keySize: Double = js.native
+    
+    /* CompleteClass */
+    var keyStorageProviderName: String = js.native
+    
+    /* CompleteClass */
+    var keyUsages: EnrollKeyUsages = js.native
+    
+    /* CompleteClass */
+    var subject: String = js.native
+  }
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.EnrollKeyUsages")
   @js.native
@@ -50,18 +81,18 @@ object Certificates {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages with Double
+        typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages & Double
       ] = js.native
     
-    /* 4 */ val all: typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.all with Double = js.native
+    /* 4 */ val all: typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.all & Double = js.native
     
-    /* 1 */ val decryption: typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.decryption with Double = js.native
+    /* 1 */ val decryption: typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.decryption & Double = js.native
     
-    /* 3 */ val keyAgreement: typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.keyAgreement with Double = js.native
+    /* 3 */ val keyAgreement: typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.keyAgreement & Double = js.native
     
-    /* 0 */ val none: typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.none with Double = js.native
+    /* 0 */ val none: typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.none & Double = js.native
     
-    /* 2 */ val signing: typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.signing with Double = js.native
+    /* 2 */ val signing: typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.signing & Double = js.native
   }
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.ExportOption")
@@ -69,13 +100,11 @@ object Certificates {
   object ExportOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.winrt.Windows.Security.Cryptography.Certificates.ExportOption with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Security.Cryptography.Certificates.ExportOption & Double] = js.native
     
-    /* 1 */ val exportable: typings.winrt.Windows.Security.Cryptography.Certificates.ExportOption.exportable with Double = js.native
+    /* 1 */ val exportable: typings.winrt.Windows.Security.Cryptography.Certificates.ExportOption.exportable & Double = js.native
     
-    /* 0 */ val notExportable: typings.winrt.Windows.Security.Cryptography.Certificates.ExportOption.notExportable with Double = js.native
+    /* 0 */ val notExportable: typings.winrt.Windows.Security.Cryptography.Certificates.ExportOption.notExportable & Double = js.native
   }
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.InstallOptions")
@@ -83,19 +112,18 @@ object Certificates {
   object InstallOptions extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.winrt.Windows.Security.Cryptography.Certificates.InstallOptions with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Security.Cryptography.Certificates.InstallOptions & Double] = js.native
     
-    /* 1 */ val deleteExpired: typings.winrt.Windows.Security.Cryptography.Certificates.InstallOptions.deleteExpired with Double = js.native
+    /* 1 */ val deleteExpired: typings.winrt.Windows.Security.Cryptography.Certificates.InstallOptions.deleteExpired & Double = js.native
     
-    /* 0 */ val none: typings.winrt.Windows.Security.Cryptography.Certificates.InstallOptions.none with Double = js.native
+    /* 0 */ val none: typings.winrt.Windows.Security.Cryptography.Certificates.InstallOptions.none & Double = js.native
   }
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames")
   @js.native
   class KeyAlgorithmNames ()
-    extends typings.winrt.Windows.Security.Cryptography.Certificates.KeyAlgorithmNames
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Certificates.KeyAlgorithmNames
   /* static members */
   object KeyAlgorithmNames {
     
@@ -158,14 +186,14 @@ object Certificates {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel with Double
+        typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel & Double
       ] = js.native
     
-    /* 1 */ val consentOnly: typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentOnly with Double = js.native
+    /* 1 */ val consentOnly: typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentOnly & Double = js.native
     
-    /* 2 */ val consentWithPassword: typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentWithPassword with Double = js.native
+    /* 2 */ val consentWithPassword: typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentWithPassword & Double = js.native
     
-    /* 0 */ val noConsent: typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.noConsent with Double = js.native
+    /* 0 */ val noConsent: typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.noConsent & Double = js.native
   }
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.KeySize")
@@ -173,19 +201,20 @@ object Certificates {
   object KeySize extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Security.Cryptography.Certificates.KeySize with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Security.Cryptography.Certificates.KeySize & Double] = js.native
     
-    /* 0 */ val invalid: typings.winrt.Windows.Security.Cryptography.Certificates.KeySize.invalid with Double = js.native
+    /* 0 */ val invalid: typings.winrt.Windows.Security.Cryptography.Certificates.KeySize.invalid & Double = js.native
     
-    /* 1 */ val rsa2048: typings.winrt.Windows.Security.Cryptography.Certificates.KeySize.rsa2048 with Double = js.native
+    /* 1 */ val rsa2048: typings.winrt.Windows.Security.Cryptography.Certificates.KeySize.rsa2048 & Double = js.native
     
-    /* 2 */ val rsa4096: typings.winrt.Windows.Security.Cryptography.Certificates.KeySize.rsa4096 with Double = js.native
+    /* 2 */ val rsa4096: typings.winrt.Windows.Security.Cryptography.Certificates.KeySize.rsa4096 & Double = js.native
   }
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames")
   @js.native
   class KeyStorageProviderNames ()
-    extends typings.winrt.Windows.Security.Cryptography.Certificates.KeyStorageProviderNames
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Certificates.KeyStorageProviderNames
   /* static members */
   object KeyStorageProviderNames {
     

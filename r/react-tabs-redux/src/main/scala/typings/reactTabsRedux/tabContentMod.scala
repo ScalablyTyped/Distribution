@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabContentMod {
@@ -21,26 +20,25 @@ object tabContentMod {
     def this(props: TabContentProps, context: js.Any) = this()
   }
   
-  @js.native
   trait TabContentProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableInlineStyles: js.UndefOr[Boolean] = js.native
+    var disableInlineStyles: js.UndefOr[Boolean] = js.undefined
     
-    var `for`: String | Double = js.native
+    var `for`: String | Double
     
-    var isVisible: js.UndefOr[Boolean] = js.native
+    var isVisible: js.UndefOr[Boolean] = js.undefined
     
-    var renderActiveTabContentOnly: js.UndefOr[Boolean] = js.native
+    var renderActiveTabContentOnly: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var visibleClassName: js.UndefOr[String] = js.native
+    var visibleClassName: js.UndefOr[String] = js.undefined
     
-    var visibleStyle: js.UndefOr[js.Object] = js.native
+    var visibleStyle: js.UndefOr[js.Object] = js.undefined
   }
   object TabContentProps {
     

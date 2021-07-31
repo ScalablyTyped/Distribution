@@ -10,9 +10,9 @@ jsreport extension embedding static assets like fonts or helpers into the templa
 | ------------------ | :-------------: |
 | Full name          | jsreport-assets |
 | Keywords           | jsreport, assets |
-| # releases         | 14 |
-| # dependents       | 4 |
-| # downloads        | 173288 |
+| # releases         | 13 |
+| # dependents       | 5 |
+| # downloads        | 179047 |
 | # stars            | 0 |
 
 ## Links

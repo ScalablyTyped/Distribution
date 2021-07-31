@@ -2,36 +2,34 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomizedLoadMetricSpecification extends StObject {
   
   /**
     * The dimensions of the metric. Conditional: If you published your metric with dimensions, you must specify the same dimensions in your customized load metric specification.
     */
-  var Dimensions: js.UndefOr[MetricDimensions] = js.native
+  var Dimensions: js.UndefOr[MetricDimensions] = js.undefined
   
   /**
     * The name of the metric.
     */
-  var MetricName: typings.awsSdk.autoscalingplansMod.MetricName = js.native
+  var MetricName: typings.awsSdk.autoscalingplansMod.MetricName
   
   /**
     * The namespace of the metric.
     */
-  var Namespace: MetricNamespace = js.native
+  var Namespace: MetricNamespace
   
   /**
     * The statistic of the metric. Currently, the value must always be Sum. 
     */
-  var Statistic: MetricStatistic = js.native
+  var Statistic: MetricStatistic
   
   /**
     * The unit of the metric.
     */
-  var Unit: js.UndefOr[MetricUnit] = js.native
+  var Unit: js.UndefOr[MetricUnit] = js.undefined
 }
 object CustomizedLoadMetricSpecification {
   

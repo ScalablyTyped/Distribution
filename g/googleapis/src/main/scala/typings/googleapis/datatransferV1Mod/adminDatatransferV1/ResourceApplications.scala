@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/datatransfer_v1", "admin_datatransfer_v1.Resource$Applications")
@@ -31,7 +30,7 @@ class ResourceApplications protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaApplication] = js.native
   def get(callback: BodyResponseCallback[SchemaApplication]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApplication] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaApplication] = js.native
   def get(params: ParamsResourceApplicationsGet): GaxiosPromise[SchemaApplication] = js.native
   def get(params: ParamsResourceApplicationsGet, callback: BodyResponseCallback[SchemaApplication]): Unit = js.native
   def get(
@@ -62,7 +61,7 @@ class ResourceApplications protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaApplicationsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaApplicationsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApplicationsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaApplicationsListResponse] = js.native
   def list(params: ParamsResourceApplicationsList): GaxiosPromise[SchemaApplicationsListResponse] = js.native
   def list(
     params: ParamsResourceApplicationsList,

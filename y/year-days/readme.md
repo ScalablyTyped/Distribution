@@ -12,7 +12,7 @@ Get the number of days in a year
 | Keywords           | year, days, date, number, count |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 728 |
+| # downloads        | 510 |
 | # stars            | 0 |
 
 ## Links

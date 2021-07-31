@@ -2,17 +2,15 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWindowBoundsResponse extends StObject {
   
   /**
     * Bounds information of the window. When window state is 'minimized', the restored window
     * position and size are returned.
     */
-  var bounds: Bounds = js.native
+  var bounds: Bounds
 }
 object GetWindowBoundsResponse {
   

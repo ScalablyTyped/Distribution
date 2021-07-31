@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEmailContent extends StObject {
   
   /**
     * The template to use for the bulk email message.
     */
-  var Template: js.UndefOr[typings.awsSdk.sesv2Mod.Template] = js.native
+  var Template: js.UndefOr[typings.awsSdk.sesv2Mod.Template] = js.undefined
 }
 object BulkEmailContent {
   

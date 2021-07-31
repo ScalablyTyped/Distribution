@@ -2,11 +2,12 @@ package typings.canvasjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartAxisX extends ChartAxisXOptions {
+trait ChartAxisX
+  extends StObject
+     with ChartAxisXOptions {
   
   /**
     * Adds a new element of given type to the specified array. For example, it can be used to add new stripLine to stripLines array.
@@ -16,14 +17,9 @@ trait ChartAxisX extends ChartAxisXOptions {
     * @param updateChart When true, Updates the chart automatically after setting the value. Defaults to true.
     */
   def addTo(propertyName: String, options: ChartStripLinesOptions): Unit = js.native
-  def addTo(
-    propertyName: String,
-    options: ChartStripLinesOptions,
-    index: js.UndefOr[scala.Nothing],
-    updateChart: Boolean
-  ): Unit = js.native
   def addTo(propertyName: String, options: ChartStripLinesOptions, index: Double): Unit = js.native
   def addTo(propertyName: String, options: ChartStripLinesOptions, index: Double, updateChart: Boolean): Unit = js.native
+  def addTo(propertyName: String, options: ChartStripLinesOptions, index: Unit, updateChart: Boolean): Unit = js.native
   
   /**
     * Return the value along Axis for given pixel coordinate.

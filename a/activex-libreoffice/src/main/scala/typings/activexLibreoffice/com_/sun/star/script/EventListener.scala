@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventListener extends StObject {
   
-  var AddListenerParam: String = js.native
+  var AddListenerParam: String
   
-  var AllListener: XAllListener = js.native
+  var AllListener: XAllListener
   
-  var EventMethod: String = js.native
+  var EventMethod: String
   
-  var Helper: js.Any = js.native
+  var Helper: js.Any
   
-  var ListenerType: String = js.native
+  var ListenerType: String
 }
 object EventListener {
   

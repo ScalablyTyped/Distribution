@@ -2,27 +2,25 @@ package typings.googleapis.dnsV2beta1Mod.dnsV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaResourceRecordSet extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dns#resourceRecordSet&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var rrdatas: js.UndefOr[js.Array[String]] = js.native
+  var rrdatas: js.UndefOr[js.Array[String]] = js.undefined
   
-  var signatureRrdatas: js.UndefOr[js.Array[String]] = js.native
+  var signatureRrdatas: js.UndefOr[js.Array[String]] = js.undefined
   
-  var ttl: js.UndefOr[Double] = js.native
+  var ttl: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaResourceRecordSet {
   

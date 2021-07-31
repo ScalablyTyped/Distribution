@@ -7,7 +7,6 @@ import typings.ts3NodejsLibrary.permissionMod.Permission.PermSid
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object permissionMod {
@@ -84,18 +83,20 @@ object permissionMod {
   /* static members */
   object Permission {
     
-    @JSImport("ts3-nodejs-library/lib/util/Permission", "Permission.getDefaults")
+    @JSImport("ts3-nodejs-library/lib/util/Permission", "Permission")
     @js.native
-    def getDefaults(perm: PartialPermType): PartialPermType = js.native
+    val ^ : js.Any = js.native
     
-    @js.native
+    @scala.inline
+    def getDefaults(perm: PartialPermType): PartialPermType = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaults")(perm.asInstanceOf[js.Any]).asInstanceOf[PartialPermType]
+    
     trait BasePermission extends StObject {
       
-      var negate: js.UndefOr[Boolean] = js.native
+      var negate: js.UndefOr[Boolean] = js.undefined
       
-      var permvalue: Double = js.native
+      var permvalue: Double
       
-      var skip: js.UndefOr[Boolean] = js.native
+      var skip: js.UndefOr[Boolean] = js.undefined
     }
     object BasePermission {
       
@@ -125,18 +126,17 @@ object permissionMod {
       }
     }
     
-    @js.native
     trait IConfig[T] extends StObject {
       
-      var allowSkipNegate: js.UndefOr[Boolean] = js.native
+      var allowSkipNegate: js.UndefOr[Boolean] = js.undefined
       
-      var context: T = js.native
+      var context: T
       
-      var remove: String = js.native
+      var remove: String
       
-      var teamspeak: TeamSpeak = js.native
+      var teamspeak: TeamSpeak
       
-      var update: String = js.native
+      var update: String
     }
     object IConfig {
       
@@ -147,7 +147,7 @@ object permissionMod {
       }
       
       @scala.inline
-      implicit class IConfigMutableBuilder[Self <: IConfig[_], T] (val x: Self with IConfig[T]) extends AnyVal {
+      implicit class IConfigMutableBuilder[Self <: IConfig[?], T] (val x: Self & IConfig[T]) extends AnyVal {
         
         @scala.inline
         def setAllowSkipNegate(value: Boolean): Self = StObject.set(x, "allowSkipNegate", value.asInstanceOf[js.Any])
@@ -169,10 +169,11 @@ object permissionMod {
       }
     }
     
-    @js.native
-    trait PermId extends BasePermission {
+    trait PermId
+      extends StObject
+         with BasePermission {
       
-      var permid: Double = js.native
+      var permid: Double
     }
     object PermId {
       
@@ -190,10 +191,11 @@ object permissionMod {
       }
     }
     
-    @js.native
-    trait PermSid extends BasePermission {
+    trait PermSid
+      extends StObject
+         with BasePermission {
       
-      var permsid: String = js.native
+      var permsid: String
     }
     object PermSid {
       
@@ -211,16 +213,15 @@ object permissionMod {
       }
     }
     
-    @js.native
     trait PermType extends StObject {
       
-      var permname: String | Double = js.native
+      var permname: String | Double
       
-      var permnegated: js.UndefOr[Boolean] = js.native
+      var permnegated: js.UndefOr[Boolean] = js.undefined
       
-      var permskip: js.UndefOr[Boolean] = js.native
+      var permskip: js.UndefOr[Boolean] = js.undefined
       
-      var permvalue: Double = js.native
+      var permvalue: Double
     }
     object PermType {
       

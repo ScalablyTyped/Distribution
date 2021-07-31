@@ -2,26 +2,24 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRecipeRequest extends StObject {
   
   /**
     * A description of the recipe.
     */
-  var Description: js.UndefOr[RecipeDescription] = js.native
+  var Description: js.UndefOr[RecipeDescription] = js.undefined
   
   /**
     * The name of the recipe to be updated.
     */
-  var Name: RecipeName = js.native
+  var Name: RecipeName
   
   /**
     * One or more steps to be performed by the recipe. Each step consists of an action, and the conditions under which the action should succeed.
     */
-  var Steps: js.UndefOr[RecipeStepList] = js.native
+  var Steps: js.UndefOr[RecipeStepList] = js.undefined
 }
 object UpdateRecipeRequest {
   

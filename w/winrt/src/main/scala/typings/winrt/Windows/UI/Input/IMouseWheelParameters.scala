@@ -3,19 +3,17 @@ package typings.winrt.Windows.UI.Input
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMouseWheelParameters extends StObject {
   
-  var charTranslation: Point = js.native
+  var charTranslation: Point
   
-  var deltaRotationAngle: Double = js.native
+  var deltaRotationAngle: Double
   
-  var deltaScale: Double = js.native
+  var deltaScale: Double
   
-  var pageTranslation: Point = js.native
+  var pageTranslation: Point
 }
 object IMouseWheelParameters {
   

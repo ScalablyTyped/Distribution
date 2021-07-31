@@ -7,7 +7,6 @@ import typings.semanticUiReact.genericMod.SemanticVERTICALALIGNMENTS
 import typings.semanticUiReact.iconIconMod.StrictIconProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listIconMod extends Shortcut {
@@ -16,9 +15,9 @@ object listIconMod extends Shortcut {
   @js.native
   val default: StatelessComponent[ListIconProps] = js.native
   
-  @js.native
   trait ListIconProps
-    extends StrictListIconProps
+    extends StObject
+       with StrictListIconProps
        with /* key */ StringDictionary[js.Any]
   object ListIconProps {
     
@@ -29,11 +28,12 @@ object listIconMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait StrictListIconProps extends StrictIconProps {
+  trait StrictListIconProps
+    extends StObject
+       with StrictIconProps {
     
     /** An element inside a list can be vertically aligned. */
-    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.native
+    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
   }
   object StrictListIconProps {
     

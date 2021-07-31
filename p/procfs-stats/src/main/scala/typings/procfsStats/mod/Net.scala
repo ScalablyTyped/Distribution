@@ -5,33 +5,31 @@ import typings.procfsStats.anon.ReceiveString
 import typings.procfsStats.anon.Transmit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Net extends StObject {
   
-  var Interface: String = js.native
+  var Interface: String
   
-  var bytes: Receive = js.native
+  var bytes: Receive
   
-  var carrier: Transmit = js.native
+  var carrier: Transmit
   
-  var colls: Transmit = js.native
+  var colls: Transmit
   
-  var compressed: Receive = js.native
+  var compressed: Receive
   
-  var drop: Receive = js.native
+  var drop: Receive
   
-  var errs: Receive = js.native
+  var errs: Receive
   
-  var fifo: Receive = js.native
+  var fifo: Receive
   
-  var frame: ReceiveString = js.native
+  var frame: ReceiveString
   
-  var multicast: ReceiveString = js.native
+  var multicast: ReceiveString
   
-  var packets: Receive = js.native
+  var packets: Receive
 }
 object Net {
   

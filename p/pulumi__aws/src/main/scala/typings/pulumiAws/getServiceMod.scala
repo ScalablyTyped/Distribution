@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getServiceMod {
   
-  @JSImport("@pulumi/aws/ecs/getService", "getService")
+  @JSImport("@pulumi/aws/ecs/getService", JSImport.Namespace)
   @js.native
-  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = js.native
-  @JSImport("@pulumi/aws/ecs/getService", "getService")
-  @js.native
-  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceResult]]
+  @scala.inline
+  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceResult]]
+  
   trait GetServiceArgs extends StObject {
     
     /**
       * The arn of the ECS Cluster
       */
-    val clusterArn: String = js.native
+    val clusterArn: String
     
     /**
       * The name of the ECS Service
       */
-    val serviceName: String = js.native
+    val serviceName: String
   }
   object GetServiceArgs {
     
@@ -47,42 +47,41 @@ object getServiceMod {
     }
   }
   
-  @js.native
   trait GetServiceResult extends StObject {
     
     /**
       * The ARN of the ECS Service
       */
-    val arn: String = js.native
+    val arn: String
     
-    val clusterArn: String = js.native
+    val clusterArn: String
     
     /**
       * The number of tasks for the ECS Service
       */
-    val desiredCount: Double = js.native
+    val desiredCount: Double
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The launch type for the ECS Service
       */
-    val launchType: String = js.native
+    val launchType: String
     
     /**
       * The scheduling strategy for the ECS Service
       */
-    val schedulingStrategy: String = js.native
+    val schedulingStrategy: String
     
-    val serviceName: String = js.native
+    val serviceName: String
     
     /**
       * The family for the latest ACTIVE revision
       */
-    val taskDefinition: String = js.native
+    val taskDefinition: String
   }
   object GetServiceResult {
     

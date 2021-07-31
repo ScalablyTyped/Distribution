@@ -2,47 +2,45 @@ package typings.broccoliPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
   type MapSeriesIterator[T] = js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], js.Promise[T] | T]
   
-  @js.native
   trait PluginOptions extends StObject {
     
     /**
       * A descriptive annotation. Useful for debugging, to tell multiple instances of the same plugin apart.
       */
-    var annotation: js.UndefOr[String] = js.native
+    var annotation: js.UndefOr[String] = js.undefined
     
     /**
       * The name of this plugin class. Defaults to this.constructor.name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * If true, a cache directory is created automatically and the path is set at cachePath.
       * If false, a cache directory is not created and this.cachePath is undefined. Defaults to true
       */
-    var needsCache: js.UndefOr[Boolean] = js.native
+    var needsCache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the output directory is not automatically emptied between builds.
       */
-    var persistentOutput: js.UndefOr[Boolean] = js.native
+    var persistentOutput: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, a change object will be passed to the build method which contains
       * information about which input has changed since the last build. Defaults to false.
       */
-    var trackInputChanges: js.UndefOr[Boolean] = js.native
+    var trackInputChanges: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, memoization will not be applied and the build method will always be called regardless if the inputNodes have changed. Defaults to false.
       */
-    var volatile: js.UndefOr[Boolean] = js.native
+    var volatile: js.UndefOr[Boolean] = js.undefined
   }
   object PluginOptions {
     

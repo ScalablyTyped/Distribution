@@ -3,71 +3,69 @@ package typings.pulumiAws.outputMod.glue
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CatalogTableStorageDescriptor extends StObject {
   
   /**
     * A list of reducer grouping columns, clustering columns, and bucketing columns in the table.
     */
-  var bucketColumns: js.UndefOr[js.Array[String]] = js.native
+  var bucketColumns: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of the Columns in the table.
     */
-  var columns: js.UndefOr[js.Array[CatalogTableStorageDescriptorColumn]] = js.native
+  var columns: js.UndefOr[js.Array[CatalogTableStorageDescriptorColumn]] = js.undefined
   
   /**
     * True if the data in the table is compressed, or False if not.
     */
-  var compressed: js.UndefOr[Boolean] = js.native
+  var compressed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The input format: SequenceFileInputFormat (binary), or TextInputFormat, or a custom format.
     */
-  var inputFormat: js.UndefOr[String] = js.native
+  var inputFormat: js.UndefOr[String] = js.undefined
   
   /**
     * The physical location of the table. By default this takes the form of the warehouse location, followed by the database location in the warehouse, followed by the table name.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Must be specified if the table contains any dimension columns.
     */
-  var numberOfBuckets: js.UndefOr[Double] = js.native
+  var numberOfBuckets: js.UndefOr[Double] = js.undefined
   
   /**
     * The output format: SequenceFileOutputFormat (binary), or IgnoreKeyTextOutputFormat, or a custom format.
     */
-  var outputFormat: js.UndefOr[String] = js.native
+  var outputFormat: js.UndefOr[String] = js.undefined
   
   /**
     * A map of initialization parameters for the SerDe, in key-value form.
     */
-  var parameters: js.UndefOr[StringDictionary[String]] = js.native
+  var parameters: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Serialization/deserialization (SerDe) information.
     */
-  var serDeInfo: js.UndefOr[CatalogTableStorageDescriptorSerDeInfo] = js.native
+  var serDeInfo: js.UndefOr[CatalogTableStorageDescriptorSerDeInfo] = js.undefined
   
   /**
     * Information about values that appear very frequently in a column (skewed values).
     */
-  var skewedInfo: js.UndefOr[CatalogTableStorageDescriptorSkewedInfo] = js.native
+  var skewedInfo: js.UndefOr[CatalogTableStorageDescriptorSkewedInfo] = js.undefined
   
   /**
     * A list of Order objects specifying the sort order of each bucket in the table.
     */
-  var sortColumns: js.UndefOr[js.Array[CatalogTableStorageDescriptorSortColumn]] = js.native
+  var sortColumns: js.UndefOr[js.Array[CatalogTableStorageDescriptorSortColumn]] = js.undefined
   
   /**
     * True if the table data is stored in subdirectories, or False if not.
     */
-  var storedAsSubDirectories: js.UndefOr[Boolean] = js.native
+  var storedAsSubDirectories: js.UndefOr[Boolean] = js.undefined
 }
 object CatalogTableStorageDescriptor {
   

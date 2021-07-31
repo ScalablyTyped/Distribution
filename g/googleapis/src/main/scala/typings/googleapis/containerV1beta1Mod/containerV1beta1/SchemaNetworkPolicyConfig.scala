@@ -2,7 +2,6 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * enabled or not on the Master, it does not track whether network policy is
   * enabled for the nodes.
   */
-@js.native
 trait SchemaNetworkPolicyConfig extends StObject {
   
   /**
     * Whether NetworkPolicy is enabled for this cluster.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaNetworkPolicyConfig {
   

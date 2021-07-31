@@ -2,16 +2,14 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentOrchestrationConfig extends StObject {
   
   /**
     *  A Boolean that specifies whether the profiling agent collects profiling data or not. Set to true to enable profiling. 
     */
-  var profilingEnabled: Boolean = js.native
+  var profilingEnabled: Boolean
 }
 object AgentOrchestrationConfig {
   

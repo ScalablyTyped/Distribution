@@ -8,7 +8,6 @@ import typings.chromeApps.chromeAppsStrings.system_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -22,6 +21,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since Chrome 27.
   */
 object power {
+  
+  @JSGlobal("chrome.power")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @enum
@@ -48,9 +51,8 @@ object power {
   }
   
   /** Releases a request previously made via requestKeepAwake(). */
-  @JSGlobal("chrome.power.releaseKeepAwake")
-  @js.native
-  def releaseKeepAwake(): Unit = js.native
+  @scala.inline
+  def releaseKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseKeepAwake")().asInstanceOf[Unit]
   
   /**
     * Requests that power management be temporarily disabled.
@@ -58,8 +60,7 @@ object power {
     *              If a request previously made by the same app is still active, it will be replaced by the new request.
     * @see Enum: chrome.power.Level
     */
-  @JSGlobal("chrome.power.requestKeepAwake")
-  @js.native
+  @scala.inline
   def requestKeepAwake(
     level: ToStringLiteral[
       DISPLAY, 
@@ -69,5 +70,5 @@ object power {
         system_ | display_
       ]
     ]
-  ): Unit = js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestKeepAwake")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

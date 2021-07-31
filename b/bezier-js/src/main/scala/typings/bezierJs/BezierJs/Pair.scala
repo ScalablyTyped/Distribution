@@ -2,15 +2,13 @@ package typings.bezierJs.BezierJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pair extends StObject {
   
-  var left: Bezier = js.native
+  var left: Bezier
   
-  var right: Bezier = js.native
+  var right: Bezier
 }
 object Pair {
   

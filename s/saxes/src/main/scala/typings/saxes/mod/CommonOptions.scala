@@ -2,23 +2,21 @@ package typings.saxes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonOptions extends StObject {
   
   /**
     * A file name to use for error reporting. "File name" is a loose concept. You
     * could use a URL to some resource, or any descriptive name you like.
     */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /** Whether to accept XML fragments. Unset means ``false``. */
-  var fragment: js.UndefOr[Boolean] = js.native
+  var fragment: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to track positions. Unset means ``true``. */
-  var position: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[Boolean] = js.undefined
 }
 object CommonOptions {
   

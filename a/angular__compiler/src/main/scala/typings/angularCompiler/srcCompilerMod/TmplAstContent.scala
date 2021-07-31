@@ -6,7 +6,6 @@ import typings.angularCompiler.r3AstMod.Content
 import typings.angularCompiler.r3AstMod.TextAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "TmplAstContent")

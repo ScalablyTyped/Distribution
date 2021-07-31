@@ -2,16 +2,14 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaFreeBusyRequestItem extends StObject {
   
   /**
     * The identifier of a calendar or a group.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object SchemaFreeBusyRequestItem {
   

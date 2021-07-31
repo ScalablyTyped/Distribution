@@ -2,7 +2,6 @@ package typings.typedoc.mod.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.GeneratedIdentifierFlags")
@@ -10,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object GeneratedIdentifierFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.typescript.mod.GeneratedIdentifierFlags with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.typescript.mod.GeneratedIdentifierFlags & Double] = js.native
   
-  /* 64 */ val AllowNameSubstitution: typings.typescript.mod.GeneratedIdentifierFlags.AllowNameSubstitution with Double = js.native
+  /* 64 */ val AllowNameSubstitution: typings.typescript.mod.GeneratedIdentifierFlags.AllowNameSubstitution & Double = js.native
   
-  /* 32 */ val FileLevel: typings.typescript.mod.GeneratedIdentifierFlags.FileLevel with Double = js.native
+  /* 32 */ val FileLevel: typings.typescript.mod.GeneratedIdentifierFlags.FileLevel & Double = js.native
   
-  /* 0 */ val None: typings.typescript.mod.GeneratedIdentifierFlags.None with Double = js.native
+  /* 0 */ val None: typings.typescript.mod.GeneratedIdentifierFlags.None & Double = js.native
   
-  /* 16 */ val Optimistic: typings.typescript.mod.GeneratedIdentifierFlags.Optimistic with Double = js.native
+  /* 16 */ val Optimistic: typings.typescript.mod.GeneratedIdentifierFlags.Optimistic & Double = js.native
   
-  /* 8 */ val ReservedInNestedScopes: typings.typescript.mod.GeneratedIdentifierFlags.ReservedInNestedScopes with Double = js.native
+  /* 8 */ val ReservedInNestedScopes: typings.typescript.mod.GeneratedIdentifierFlags.ReservedInNestedScopes & Double = js.native
 }

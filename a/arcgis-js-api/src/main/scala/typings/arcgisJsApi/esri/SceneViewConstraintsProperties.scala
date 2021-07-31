@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewConstraintsProperties extends Object {
+trait SceneViewConstraintsProperties
+  extends StObject
+     with Object {
   
   /**
     * Specifies a constraint on the minimum and maximum allowed camera altitude.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var altitude: js.UndefOr[SceneViewConstraintsAltitudeProperties] = js.native
+  var altitude: js.UndefOr[SceneViewConstraintsAltitudeProperties] = js.undefined
   
   /**
     * Specifies the near and far webgl clip distances.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var clipDistance: js.UndefOr[SceneViewConstraintsClipDistanceProperties] = js.native
+  var clipDistance: js.UndefOr[SceneViewConstraintsClipDistanceProperties] = js.undefined
   
   /**
     * When enabled, prevents the user from navigating below the surface in a local SceneView.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var collision: js.UndefOr[SceneViewConstraintsCollision] = js.native
+  var collision: js.UndefOr[SceneViewConstraintsCollision] = js.undefined
   
   /**
     * Specifies a constraint on the amount of allowed tilting of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var tilt: js.UndefOr[SceneViewConstraintsTiltProperties] = js.native
+  var tilt: js.UndefOr[SceneViewConstraintsTiltProperties] = js.undefined
 }
 object SceneViewConstraintsProperties {
   

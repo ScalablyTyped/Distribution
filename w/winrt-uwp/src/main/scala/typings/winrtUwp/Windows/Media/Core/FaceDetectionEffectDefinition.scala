@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Media.Core
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the definition of a face detection video effect. */
-@js.native
 trait FaceDetectionEffectDefinition extends StObject {
   
   /** Gets a string containing the activatable class ID of the face detection effect definition. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   
   /** Gets or sets a value that prioritizes the speed of face detection and the quality of detection results. */
-  var detectionMode: FaceDetectionMode = js.native
+  var detectionMode: FaceDetectionMode
   
   /** Gets the set of properties for configuring the FaceDetectionEffectDefinition object. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
   
   /** Gets or sets a value indicating whether synchronous face detection is enabled. */
-  var synchronousDetectionEnabled: Boolean = js.native
+  var synchronousDetectionEnabled: Boolean
 }
 object FaceDetectionEffectDefinition {
   

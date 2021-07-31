@@ -2,13 +2,11 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyIndexOptions extends StObject {
   
-  val scope: js.UndefOr[js.Array[ScopeType]] = js.native
+  val scope: js.UndefOr[js.Array[ScopeType]] = js.undefined
 }
 object CopyIndexOptions {
   

@@ -2,47 +2,47 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceCompliancePolicySettingStateSummary extends Entity {
+trait DeviceCompliancePolicySettingStateSummary
+  extends StObject
+     with Entity {
   
   // Number of compliant devices
-  var compliantDeviceCount: js.UndefOr[Double] = js.native
+  var compliantDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of conflict devices
-  var conflictDeviceCount: js.UndefOr[Double] = js.native
+  var conflictDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Not yet documented
-  var deviceComplianceSettingStates: js.UndefOr[NullableOption[js.Array[DeviceComplianceSettingState]]] = js.native
+  var deviceComplianceSettingStates: js.UndefOr[NullableOption[js.Array[DeviceComplianceSettingState]]] = js.undefined
   
   // Number of error devices
-  var errorDeviceCount: js.UndefOr[Double] = js.native
+  var errorDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of NonCompliant devices
-  var nonCompliantDeviceCount: js.UndefOr[Double] = js.native
+  var nonCompliantDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of not applicable devices
-  var notApplicableDeviceCount: js.UndefOr[Double] = js.native
+  var notApplicableDeviceCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Setting platform. Possible values are: android, iOS, macOS, windowsPhone81, windows81AndLater, windows10AndLater,
     * androidWorkProfile, all.
     */
-  var platformType: js.UndefOr[PolicyPlatformType] = js.native
+  var platformType: js.UndefOr[PolicyPlatformType] = js.undefined
   
   // Number of remediated devices
-  var remediatedDeviceCount: js.UndefOr[Double] = js.native
+  var remediatedDeviceCount: js.UndefOr[Double] = js.undefined
   
   // The setting class name and property name.
-  var setting: js.UndefOr[NullableOption[String]] = js.native
+  var setting: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the setting.
-  var settingName: js.UndefOr[NullableOption[String]] = js.native
+  var settingName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Number of unknown devices
-  var unknownDeviceCount: js.UndefOr[Double] = js.native
+  var unknownDeviceCount: js.UndefOr[Double] = js.undefined
 }
 object DeviceCompliancePolicySettingStateSummary {
   

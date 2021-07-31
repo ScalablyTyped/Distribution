@@ -2,29 +2,27 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An invitation to join a course.
   */
-@js.native
 trait SchemaInvitation extends StObject {
   
   /**
     * Identifier of the course to invite the user to.
     */
-  var courseId: js.UndefOr[String] = js.native
+  var courseId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier assigned by Classroom.  Read-only.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Role to invite the user to have. Must not be `COURSE_ROLE_UNSPECIFIED`.
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the invited user.  When specified as a parameter of a
@@ -32,7 +30,7 @@ trait SchemaInvitation extends StObject {
     * numeric identifier for the user * the email address of the user * the
     * string literal `&quot;me&quot;`, indicating the requesting user
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object SchemaInvitation {
   

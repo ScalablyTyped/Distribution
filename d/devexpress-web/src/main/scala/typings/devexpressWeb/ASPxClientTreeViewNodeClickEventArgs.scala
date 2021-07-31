@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeView.NodeClick event.
   */
-@js.native
-trait ASPxClientTreeViewNodeClickEventArgs extends ASPxClientTreeViewNodeProcessingModeEventArgs {
+trait ASPxClientTreeViewNodeClickEventArgs
+  extends StObject
+     with ASPxClientTreeViewNodeProcessingModeEventArgs {
   
   /**
     * Gets the HTML object that contains the processed node.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
 }
 object ASPxClientTreeViewNodeClickEventArgs {
   

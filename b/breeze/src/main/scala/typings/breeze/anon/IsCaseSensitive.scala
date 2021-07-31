@@ -2,17 +2,15 @@ package typings.breeze.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsCaseSensitive extends StObject {
   
-  var isCaseSensitive: js.UndefOr[Boolean] = js.native
+  var isCaseSensitive: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var usesSql92CompliantStringComparison: js.UndefOr[Boolean] = js.native
+  var usesSql92CompliantStringComparison: js.UndefOr[Boolean] = js.undefined
 }
 object IsCaseSensitive {
   

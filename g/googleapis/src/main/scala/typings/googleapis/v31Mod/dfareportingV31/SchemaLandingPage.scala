@@ -2,52 +2,50 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about where a user&#39;s browser is taken after the
   * user clicks an ad.
   */
-@js.native
 trait SchemaLandingPage extends StObject {
   
   /**
     * Advertiser ID of this landing page. This is a required field.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this landing page has been archived.
     */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Links that will direct the user to a mobile app, if installed.
     */
-  var deepLinks: js.UndefOr[js.Array[SchemaDeepLink]] = js.native
+  var deepLinks: js.UndefOr[js.Array[SchemaDeepLink]] = js.undefined
   
   /**
     * ID of this landing page. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#landingPage&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this landing page. This is a required field. It must be less than
     * 256 characters long.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * URL of this landing page. This is a required field.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaLandingPage {
   

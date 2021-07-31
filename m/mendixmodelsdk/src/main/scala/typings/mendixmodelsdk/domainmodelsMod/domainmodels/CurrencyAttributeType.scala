@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -58,9 +57,8 @@ object CurrencyAttributeType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CurrencyAttributeType.create")
-  @js.native
-  def create(model: IModel): CurrencyAttributeType = js.native
+  @scala.inline
+  def create(model: IModel): CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CurrencyAttributeType]
   
   /**
     * Creates and returns a new CurrencyAttributeType instance in the SDK and on the server.
@@ -71,9 +69,8 @@ object CurrencyAttributeType {
     *  6.0.0 to 8.8.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CurrencyAttributeType.createIn")
-  @js.native
-  def createIn(container: Attribute): CurrencyAttributeType = js.native
+  @scala.inline
+  def createIn(container: Attribute): CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[CurrencyAttributeType]
   
   /**
     * Creates and returns a new CurrencyAttributeType instance in the SDK and on the server.
@@ -81,9 +78,8 @@ object CurrencyAttributeType {
     * of the parent Attribute element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CurrencyAttributeType.createInAttributeUnderType")
-  @js.native
-  def createInAttributeUnderType(container: Attribute): CurrencyAttributeType = js.native
+  @scala.inline
+  def createInAttributeUnderType(container: Attribute): CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[CurrencyAttributeType]
   
   /**
     * Creates and returns a new CurrencyAttributeType instance in the SDK and on the server.
@@ -94,9 +90,8 @@ object CurrencyAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CurrencyAttributeType.createInEntityKeyPartUnderType")
-  @js.native
-  def createInEntityKeyPartUnderType(container: EntityKeyPart): CurrencyAttributeType = js.native
+  @scala.inline
+  def createInEntityKeyPartUnderType(container: EntityKeyPart): CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[CurrencyAttributeType]
   
   /**
     * Creates and returns a new CurrencyAttributeType instance in the SDK and on the server.
@@ -107,9 +102,8 @@ object CurrencyAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CurrencyAttributeType.createInODataKeyPartUnderType")
-  @js.native
-  def createInODataKeyPartUnderType(container: ODataKeyPart): CurrencyAttributeType = js.native
+  @scala.inline
+  def createInODataKeyPartUnderType(container: ODataKeyPart): CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[CurrencyAttributeType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CurrencyAttributeType.structureTypeName")

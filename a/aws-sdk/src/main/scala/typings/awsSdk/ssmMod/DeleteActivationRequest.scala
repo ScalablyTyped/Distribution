@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteActivationRequest extends StObject {
   
   /**
     * The ID of the activation that you want to delete.
     */
-  var ActivationId: typings.awsSdk.ssmMod.ActivationId = js.native
+  var ActivationId: typings.awsSdk.ssmMod.ActivationId
 }
 object DeleteActivationRequest {
   

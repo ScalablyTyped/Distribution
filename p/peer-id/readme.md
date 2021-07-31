@@ -10,9 +10,9 @@ IPFS Peer Id implementation in Node.js
 | ------------------ | :-------------: |
 | Full name          | peer-id |
 | Keywords           | IPFS |
-| # releases         | 22 |
-| # dependents       | 101 |
-| # downloads        | 918348 |
+| # releases         | 20 |
+| # dependents       | 125 |
+| # downloads        | 920815 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ BigNumber library used in ethers.js.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/bignumber |
 | Keywords           | Ethereum, bignumber, bn |
-| # releases         | 33 |
-| # dependents       | 73 |
-| # downloads        | 1794474 |
+| # releases         | 38 |
+| # dependents       | 95 |
+| # downloads        | 2982169 |
 | # stars            | 0 |
 
 ## Links

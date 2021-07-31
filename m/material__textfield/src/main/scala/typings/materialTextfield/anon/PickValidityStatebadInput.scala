@@ -2,16 +2,14 @@ package typings.materialTextfield.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<std.ValidityState, 'badInput' | 'valid'> */
-@js.native
 trait PickValidityStatebadInput extends StObject {
   
-  var badInput: Boolean = js.native
+  var badInput: Boolean
   
-  var valid: Boolean = js.native
+  var valid: Boolean
 }
 object PickValidityStatebadInput {
   

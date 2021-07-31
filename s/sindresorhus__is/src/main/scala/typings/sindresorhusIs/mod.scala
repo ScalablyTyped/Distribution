@@ -1,8 +1,7 @@
 package typings.sindresorhusIs
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.sindresorhusIs.anon.NodeName
-import typings.sindresorhusIs.anon.Pipe
+import typings.sindresorhusIs.sindresorhusIsNumbers.`1`
 import typings.std.Float32Array
 import typings.std.Float64Array
 import typings.std.Int16Array
@@ -15,313 +14,241 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
+    @scala.inline
+    def apply(value: js.Any): TypeName = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[TypeName]
+    
     @JSImport("@sindresorhus/is", JSImport.Default)
     @js.native
-    def apply(value: js.Any): TypeName = js.native
-    
-    @JSImport("@sindresorhus/is", "default.all")
-    @js.native
-    def all(predicate: js.Any, values: js.Any*): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.any")
-    @js.native
-    def any(predicate: js.Any, values: js.Any*): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.array")
-    @js.native
-    def array(arg: js.Any): /* is std.Array<any> */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.arrayBuffer")
-    @js.native
-    def arrayBuffer(value: js.Any): /* is std.ArrayBuffer */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.arrayLike")
-    @js.native
-    def arrayLike(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.ArrayLike */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.asyncFunction")
-    @js.native
-    def asyncFunction(value: js.Any): /* is std.Function */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.asyncIterable")
-    @js.native
-    def asyncIterable(value: js.Any): /* is std.AsyncIterableIterator<unknown> */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.boolean")
-    @js.native
-    def boolean(value: js.Any): /* is boolean */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.boundFunction")
-    @js.native
-    def boundFunction(value: js.Any): /* is std.Function */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.buffer")
-    @js.native
-    def buffer(input: js.Any): /* is node.Buffer */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.dataView")
-    @js.native
-    def dataView(value: js.Any): /* is std.DataView */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.date")
-    @js.native
-    def date(value: js.Any): /* is std.Date */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.directInstanceOf")
-    @js.native
-    def directInstanceOf[T](instance: js.Any, klass: Class[T]): /* is T */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.domElement")
-    @js.native
-    def domElement(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.DomElement */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.emptyArray")
-    @js.native
-    def emptyArray(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.emptyMap")
-    @js.native
-    def emptyMap(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.emptyObject")
-    @js.native
-    def emptyObject(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.emptySet")
-    @js.native
-    def emptySet(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.emptyString")
-    @js.native
-    def emptyString(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.emptyStringOrWhitespace")
-    @js.native
-    def emptyStringOrWhitespace(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.error")
-    @js.native
-    def error(value: js.Any): /* is std.Error */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.even")
-    @js.native
-    def even(value: Double): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.falsy")
-    @js.native
-    def falsy(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.float32Array")
-    @js.native
-    def float32Array(value: js.Any): /* is std.Float32Array */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.float64Array")
-    @js.native
-    def float64Array(value: js.Any): /* is std.Float64Array */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.function_")
-    @js.native
-    def function(value: js.Any): /* is std.Function */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.generator")
-    @js.native
-    def generator(value: js.Any): /* is std.Generator<unknown, any, unknown> */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.generatorFunction")
-    @js.native
-    def generatorFunction(value: js.Any): /* is std.GeneratorFunction */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.inRange")
-    @js.native
-    def inRange(value: Double, range: js.Array[Double]): Boolean = js.native
-    @JSImport("@sindresorhus/is", "default.inRange")
-    @js.native
-    def inRange(value: Double, range: Double): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.infinite")
-    @js.native
-    def infinite(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.int16Array")
-    @js.native
-    def int16Array(value: js.Any): /* is std.Int16Array */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.int32Array")
-    @js.native
-    def int32Array(value: js.Any): /* is std.Int32Array */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.int8Array")
-    @js.native
-    def int8Array(value: js.Any): /* is std.Int8Array */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.integer")
-    @js.native
-    def integer(value: js.Any): /* is number */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.iterable")
-    @js.native
-    def iterable(value: js.Any): /* is std.IterableIterator<unknown> */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.map")
-    @js.native
-    def map(value: js.Any): /* is std.Map<unknown, unknown> */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.nan")
-    @js.native
-    def nan(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.nativePromise")
-    @js.native
-    def nativePromise(value: js.Any): /* is std.Promise<unknown> */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.nodeStream")
-    @js.native
-    def nodeStream(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.NodeStream */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.nonEmptyArray")
-    @js.native
-    def nonEmptyArray(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.nonEmptyMap")
-    @js.native
-    def nonEmptyMap(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.nonEmptyObject")
-    @js.native
-    def nonEmptyObject(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.nonEmptySet")
-    @js.native
-    def nonEmptySet(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.nonEmptyString")
-    @js.native
-    def nonEmptyString(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.nullOrUndefined")
-    @js.native
-    def nullOrUndefined(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.number")
-    @js.native
-    def number(value: js.Any): /* is number */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.numericString")
-    @js.native
-    def numericString(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.observable")
-    @js.native
-    def observable(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.odd")
-    @js.native
-    def odd(value: Double): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.plainObject")
-    @js.native
-    def plainObject(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.primitive")
-    @js.native
-    def primitive(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.Primitive */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.promise")
-    @js.native
-    def promise(value: js.Any): /* is std.Promise<unknown> */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.regExp")
-    @js.native
-    def regExp(value: js.Any): /* is std.RegExp */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.safeInteger")
-    @js.native
-    def safeInteger(value: js.Any): /* is number */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.set")
-    @js.native
-    def set(value: js.Any): /* is std.Set<unknown> */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.sharedArrayBuffer")
-    @js.native
-    def sharedArrayBuffer(value: js.Any): /* is std.SharedArrayBuffer */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.string")
-    @js.native
-    def string(value: js.Any): /* is string */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.symbol")
-    @js.native
-    def symbol(value: js.Any): /* is std.Symbol */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.truthy")
-    @js.native
-    def truthy(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.typedArray")
-    @js.native
-    def typedArray(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.TypedArray */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.uint16Array")
-    @js.native
-    def uint16Array(value: js.Any): /* is std.Uint16Array */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.uint32Array")
-    @js.native
-    def uint32Array(value: js.Any): /* is std.Uint32Array */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.uint8Array")
-    @js.native
-    def uint8Array(value: js.Any): /* is std.Uint8Array */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.uint8ClampedArray")
-    @js.native
-    def uint8ClampedArray(value: js.Any): /* is std.Uint8ClampedArray */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.undefined")
-    @js.native
-    def undefined(value: js.Any): /* is undefined */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.urlInstance")
-    @js.native
-    def urlInstance(value: js.Any): /* is std.URL */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.urlString")
-    @js.native
-    def urlString(value: js.Any): Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.weakMap")
-    @js.native
-    def weakMap(value: js.Any): /* is std.WeakMap<object, unknown> */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.weakSet")
-    @js.native
-    def weakSet(value: js.Any): /* is std.WeakSet<object> */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.class_")
-    @js.native
-    def `class`(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.Class<unknown> */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.null_")
-    @js.native
-    def `null`(value: js.Any): /* is null */ Boolean = js.native
-    
-    @JSImport("@sindresorhus/is", "default.object")
-    @js.native
-    def `object`(value: js.Any): /* is object */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def all(predicate: js.Any, values: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(predicate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def any(predicate: js.Any, values: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(predicate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def array(arg: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
+    
+    @scala.inline
+    def arrayBuffer(value: js.Any): /* is std.ArrayBuffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.ArrayBuffer */ Boolean]
+    
+    @scala.inline
+    def arrayLike(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.ArrayLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayLike")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @sindresorhus/is.@sindresorhus/is.ArrayLike */ Boolean]
+    
+    @scala.inline
+    def asyncFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
+    
+    @scala.inline
+    def asyncIterable(value: js.Any): /* is std.AsyncIterableIterator<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncIterable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.AsyncIterableIterator<unknown> */ Boolean]
+    
+    @scala.inline
+    def boolean(value: js.Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(value.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
+    
+    @scala.inline
+    def boundFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boundFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
+    
+    @scala.inline
+    def buffer(input: js.Any): /* is node.Buffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(input.asInstanceOf[js.Any]).asInstanceOf[/* is node.Buffer */ Boolean]
+    
+    @scala.inline
+    def `class`(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.Class<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("class_")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @sindresorhus/is.@sindresorhus/is.Class<unknown> */ Boolean]
+    
+    @scala.inline
+    def dataView(value: js.Any): /* is std.DataView */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dataView")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.DataView */ Boolean]
+    
+    @scala.inline
+    def date(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
+    
+    @scala.inline
+    def directInstanceOf[T](instance: js.Any, klass: Class[T]): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("directInstanceOf")(instance.asInstanceOf[js.Any], klass.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+    
+    @scala.inline
+    def domElement(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.DomElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("domElement")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @sindresorhus/is.@sindresorhus/is.DomElement */ Boolean]
+    
+    @scala.inline
+    def emptyArray(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def emptyMap(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyMap")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def emptyObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def emptySet(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emptySet")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def emptyString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def emptyStringOrWhitespace(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyStringOrWhitespace")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def error(value: js.Any): /* is std.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Error */ Boolean]
+    
+    @scala.inline
+    def even(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("even")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def falsy(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("falsy")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def float32Array(value: js.Any): /* is std.Float32Array */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("float32Array")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Float32Array */ Boolean]
+    
+    @scala.inline
+    def float64Array(value: js.Any): /* is std.Float64Array */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("float64Array")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Float64Array */ Boolean]
+    
+    @scala.inline
+    def function(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("function_")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
+    
+    @scala.inline
+    def generator(value: js.Any): /* is std.Generator<unknown, any, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("generator")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Generator<unknown, any, unknown> */ Boolean]
+    
+    @scala.inline
+    def generatorFunction(value: js.Any): /* is std.GeneratorFunction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("generatorFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.GeneratorFunction */ Boolean]
+    
+    @scala.inline
+    def inRange(value: Double, range: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inRange")(value.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def inRange(value: Double, range: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inRange")(value.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def infinite(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("infinite")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def int16Array(value: js.Any): /* is std.Int16Array */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("int16Array")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Int16Array */ Boolean]
+    
+    @scala.inline
+    def int32Array(value: js.Any): /* is std.Int32Array */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("int32Array")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Int32Array */ Boolean]
+    
+    @scala.inline
+    def int8Array(value: js.Any): /* is std.Int8Array */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("int8Array")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Int8Array */ Boolean]
+    
+    @scala.inline
+    def integer(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("integer")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
+    
+    @scala.inline
+    def iterable(value: js.Any): /* is std.IterableIterator<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("iterable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.IterableIterator<unknown> */ Boolean]
+    
+    @scala.inline
+    def map(value: js.Any): /* is std.Map<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Map<unknown, unknown> */ Boolean]
+    
+    @scala.inline
+    def nan(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nan")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def nativePromise(value: js.Any): /* is std.Promise<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nativePromise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<unknown> */ Boolean]
+    
+    @scala.inline
+    def nodeStream(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.NodeStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeStream")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @sindresorhus/is.@sindresorhus/is.NodeStream */ Boolean]
+    
+    @scala.inline
+    def nonEmptyArray(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nonEmptyArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def nonEmptyMap(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nonEmptyMap")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def nonEmptyObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nonEmptyObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def nonEmptySet(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nonEmptySet")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def nonEmptyString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nonEmptyString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def `null`(value: js.Any): /* is null */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("null_")(value.asInstanceOf[js.Any]).asInstanceOf[/* is null */ Boolean]
+    
+    @scala.inline
+    def nullOrUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nullOrUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def number(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
+    
+    @scala.inline
+    def numericString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("numericString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def `object`(value: js.Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(value.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
+    
+    @scala.inline
+    def observable(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("observable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def odd(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("odd")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def plainObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("plainObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def primitive(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.Primitive */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("primitive")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @sindresorhus/is.@sindresorhus/is.Primitive */ Boolean]
+    
+    @scala.inline
+    def promise(value: js.Any): /* is std.Promise<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<unknown> */ Boolean]
+    
+    @scala.inline
+    def regExp(value: js.Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("regExp")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
+    
+    @scala.inline
+    def safeInteger(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInteger")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
+    
+    @scala.inline
+    def set(value: js.Any): /* is std.Set<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Set<unknown> */ Boolean]
+    
+    @scala.inline
+    def sharedArrayBuffer(value: js.Any): /* is std.SharedArrayBuffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("sharedArrayBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.SharedArrayBuffer */ Boolean]
+    
+    @scala.inline
+    def string(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+    
+    @scala.inline
+    def symbol(value: js.Any): /* is std.Symbol */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Symbol */ Boolean]
+    
+    @scala.inline
+    def truthy(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("truthy")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def typedArray(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("typedArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @sindresorhus/is.@sindresorhus/is.TypedArray */ Boolean]
+    
+    @scala.inline
+    def uint16Array(value: js.Any): /* is std.Uint16Array */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("uint16Array")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Uint16Array */ Boolean]
+    
+    @scala.inline
+    def uint32Array(value: js.Any): /* is std.Uint32Array */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("uint32Array")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Uint32Array */ Boolean]
+    
+    @scala.inline
+    def uint8Array(value: js.Any): /* is std.Uint8Array */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("uint8Array")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Uint8Array */ Boolean]
+    
+    @scala.inline
+    def uint8ClampedArray(value: js.Any): /* is std.Uint8ClampedArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("uint8ClampedArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Uint8ClampedArray */ Boolean]
+    
+    @scala.inline
+    def undefined(value: js.Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("undefined")(value.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
+    
+    @scala.inline
+    def urlInstance(value: js.Any): /* is std.URL */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("urlInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.URL */ Boolean]
+    
+    @scala.inline
+    def urlString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("urlString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def weakMap(value: js.Any): /* is std.WeakMap<object, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("weakMap")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.WeakMap<object, unknown> */ Boolean]
+    
+    @scala.inline
+    def weakSet(value: js.Any): /* is std.WeakSet<object> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("weakSet")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.WeakSet<object> */ Boolean]
   }
   
-  @js.native
   trait ArrayLike extends StObject {
     
-    var length: Double = js.native
+    var length: Double
   }
   object ArrayLike {
     
@@ -341,11 +268,55 @@ object mod {
   
   @js.native
   trait Class[T]
-    extends Instantiable1[/* args (repeated) */ js.Any, T]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, T]
   
-  type DomElement = js.Object with NodeName
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped object */ trait DomElement extends StObject {
+    
+    var nodeName: String
+    
+    var nodeType: `1`
+  }
+  object DomElement {
+    
+    @scala.inline
+    def apply(nodeName: String): DomElement = {
+      val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any], nodeType = 1)
+      __obj.asInstanceOf[DomElement]
+    }
+    
+    @scala.inline
+    implicit class DomElementMutableBuilder[Self <: DomElement] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNodeType(value: `1`): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+    }
+  }
   
-  type NodeStream = js.Object with Pipe
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped object */ trait NodeStream extends StObject {
+    
+    var pipe: js.Function
+  }
+  object NodeStream {
+    
+    @scala.inline
+    def apply(pipe: js.Function): NodeStream = {
+      val __obj = js.Dynamic.literal(pipe = pipe.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NodeStream]
+    }
+    
+    @scala.inline
+    implicit class NodeStreamMutableBuilder[Self <: NodeStream] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setPipe(value: js.Function): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
+    }
+  }
   
   type Primitive = js.UndefOr[Null | String | Double | Boolean | Symbol]
   

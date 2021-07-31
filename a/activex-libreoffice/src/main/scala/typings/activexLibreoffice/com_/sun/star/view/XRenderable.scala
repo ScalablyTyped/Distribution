@@ -7,28 +7,28 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents something that can be rendered.
   * @since OOo 1.1.2
   */
-@js.native
-trait XRenderable extends XInterface {
+trait XRenderable
+  extends StObject
+     with XInterface {
   
   /**
     * @returns a descriptor of the specific renderer.  returns the specific renderer properties based on the given selection.  If the selection contains a valid
     * @see RenderDescriptor
     * @see RenderOptions
     */
-  def getRenderer(nRenderer: Double, aSelection: js.Any, xOptions: SeqEquiv[PropertyValue]): SafeArray[PropertyValue] = js.native
+  def getRenderer(nRenderer: Double, aSelection: js.Any, xOptions: SeqEquiv[PropertyValue]): SafeArray[PropertyValue]
   
   /**
     * @returns the count of renderers (based on paper count of a document, for example).  If a selection is given, the count has to be calculated based on this
     * @see RenderOptions
     */
-  def getRendererCount(aSelection: js.Any, xOptions: SeqEquiv[PropertyValue]): Double = js.native
+  def getRendererCount(aSelection: js.Any, xOptions: SeqEquiv[PropertyValue]): Double
   
   /**
     * renders the object.
@@ -39,7 +39,7 @@ trait XRenderable extends XInterface {
     * should be rendered.
     * @see RenderOptions
     */
-  def render(nRenderer: Double, aSelection: js.Any, xOptions: SeqEquiv[PropertyValue]): Unit = js.native
+  def render(nRenderer: Double, aSelection: js.Any, xOptions: SeqEquiv[PropertyValue]): Unit
 }
 object XRenderable {
   

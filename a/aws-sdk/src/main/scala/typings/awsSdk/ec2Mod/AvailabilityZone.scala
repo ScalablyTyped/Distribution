@@ -2,66 +2,64 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailabilityZone extends StObject {
   
   /**
     *  For Availability Zones, this parameter has the same value as the Region name. For Local Zones, the name of the associated group, for example us-west-2-lax-1. For Wavelength Zones, the name of the associated group, for example us-east-1-wl1-bos-wlz-1.
     */
-  var GroupName: js.UndefOr[String] = js.native
+  var GroupName: js.UndefOr[String] = js.undefined
   
   /**
     * Any messages about the Availability Zone, Local Zone, or Wavelength Zone.
     */
-  var Messages: js.UndefOr[AvailabilityZoneMessageList] = js.native
+  var Messages: js.UndefOr[AvailabilityZoneMessageList] = js.undefined
   
   /**
     * The name of the network border group.
     */
-  var NetworkBorderGroup: js.UndefOr[String] = js.native
+  var NetworkBorderGroup: js.UndefOr[String] = js.undefined
   
   /**
     * For Availability Zones, this parameter always has the value of opt-in-not-required. For Local Zones and Wavelength Zones, this parameter is the opt-in status. The possible values are opted-in, and not-opted-in.
     */
-  var OptInStatus: js.UndefOr[AvailabilityZoneOptInStatus] = js.native
+  var OptInStatus: js.UndefOr[AvailabilityZoneOptInStatus] = js.undefined
   
   /**
     * The ID of the zone that handles some of the Local Zone or Wavelength Zone control plane operations, such as API calls.
     */
-  var ParentZoneId: js.UndefOr[String] = js.native
+  var ParentZoneId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the zone that handles some of the Local Zone or Wavelength Zone control plane operations, such as API calls.
     */
-  var ParentZoneName: js.UndefOr[String] = js.native
+  var ParentZoneName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Region.
     */
-  var RegionName: js.UndefOr[String] = js.native
+  var RegionName: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the Availability Zone, Local Zone, or Wavelength Zone.
     */
-  var State: js.UndefOr[AvailabilityZoneState] = js.native
+  var State: js.UndefOr[AvailabilityZoneState] = js.undefined
   
   /**
     * The ID of the Availability Zone, Local Zone, or Wavelength Zone.
     */
-  var ZoneId: js.UndefOr[String] = js.native
+  var ZoneId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Availability Zone, Local Zone, or Wavelength Zone.
     */
-  var ZoneName: js.UndefOr[String] = js.native
+  var ZoneName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of zone. The valid values are availability-zone, local-zone, and wavelength-zone.
     */
-  var ZoneType: js.UndefOr[String] = js.native
+  var ZoneType: js.UndefOr[String] = js.undefined
 }
 object AvailabilityZone {
   

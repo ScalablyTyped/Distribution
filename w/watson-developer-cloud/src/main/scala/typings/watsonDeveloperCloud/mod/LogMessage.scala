@@ -3,20 +3,19 @@ package typings.watsonDeveloperCloud.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Log message details. */
-@js.native
 trait LogMessage
-  extends /** DialogNodeOutput accepts additional properties. */
+  extends StObject
+     with /** DialogNodeOutput accepts additional properties. */
 /* propName */ StringDictionary[js.Any] {
   
   /** The severity of the log message. */
-  var level: String = js.native
+  var level: String
   
   /** The text of the log message. */
-  var msg: String = js.native
+  var msg: String
 }
 object LogMessage {
   

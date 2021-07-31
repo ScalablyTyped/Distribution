@@ -2,41 +2,39 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTypeVersionsInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the type for which you want version summary information. Conditional: You must specify either TypeName and Type, or Arn.
     */
-  var Arn: js.UndefOr[PrivateTypeArn] = js.native
+  var Arn: js.UndefOr[PrivateTypeArn] = js.undefined
   
   /**
     * The deprecation status of the type versions that you want to get summary information about. Valid values include:    LIVE: The type version is registered and can be used in CloudFormation operations, dependent on its provisioning behavior and visibility scope.    DEPRECATED: The type version has been deregistered and can no longer be used in CloudFormation operations.    The default is LIVE.
     */
-  var DeprecatedStatus: js.UndefOr[typings.awsSdk.cloudformationMod.DeprecatedStatus] = js.native
+  var DeprecatedStatus: js.UndefOr[typings.awsSdk.cloudformationMod.DeprecatedStatus] = js.undefined
   
   /**
     * The maximum number of results to be returned with a single call. If the number of available results exceeds this maximum, the response includes a NextToken value that you can assign to the NextToken request parameter to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.cloudformationMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.cloudformationMod.MaxResults] = js.undefined
   
   /**
     * If the previous paginated request didn't return all of the remaining results, the response object's NextToken parameter value is set to a token. To retrieve the next set of results, call this action again and assign that token to the request object's NextToken parameter. If there are no remaining results, the previous response object's NextToken parameter is set to null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
     * The kind of the type. Currently the only valid value is RESOURCE. Conditional: You must specify either TypeName and Type, or Arn.
     */
-  var Type: js.UndefOr[RegistryType] = js.native
+  var Type: js.UndefOr[RegistryType] = js.undefined
   
   /**
     * The name of the type for which you want version summary information. Conditional: You must specify either TypeName and Type, or Arn.
     */
-  var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.native
+  var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.undefined
 }
 object ListTypeVersionsInput {
   

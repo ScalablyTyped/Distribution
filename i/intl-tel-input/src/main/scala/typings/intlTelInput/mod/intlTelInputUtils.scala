@@ -2,7 +2,6 @@ package typings.intlTelInput.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intlTelInputUtils {
@@ -14,16 +13,24 @@ object intlTelInputUtils {
   object numberFormat extends StObject {
     
     @js.native
-    sealed trait E164 extends numberFormat
+    sealed trait E164
+      extends StObject
+         with numberFormat
     
     @js.native
-    sealed trait INTERNATIONAL extends numberFormat
+    sealed trait INTERNATIONAL
+      extends StObject
+         with numberFormat
     
     @js.native
-    sealed trait NATIONAL extends numberFormat
+    sealed trait NATIONAL
+      extends StObject
+         with numberFormat
     
     @js.native
-    sealed trait RFC3966 extends numberFormat
+    sealed trait RFC3966
+      extends StObject
+         with numberFormat
   }
   
   @js.native
@@ -33,40 +40,64 @@ object intlTelInputUtils {
   object numberType extends StObject {
     
     @js.native
-    sealed trait FIXED_LINE extends numberType
+    sealed trait FIXED_LINE
+      extends StObject
+         with numberType
     
     @js.native
-    sealed trait FIXED_LINE_OR_MOBILE extends numberType
+    sealed trait FIXED_LINE_OR_MOBILE
+      extends StObject
+         with numberType
     
     @js.native
-    sealed trait MOBILE extends numberType
+    sealed trait MOBILE
+      extends StObject
+         with numberType
     
     @js.native
-    sealed trait PAGER extends numberType
+    sealed trait PAGER
+      extends StObject
+         with numberType
     
     @js.native
-    sealed trait PERSONAL_NUMBER extends numberType
+    sealed trait PERSONAL_NUMBER
+      extends StObject
+         with numberType
     
     @js.native
-    sealed trait PREMIUM_RATE extends numberType
+    sealed trait PREMIUM_RATE
+      extends StObject
+         with numberType
     
     @js.native
-    sealed trait SHARED_COST extends numberType
+    sealed trait SHARED_COST
+      extends StObject
+         with numberType
     
     @js.native
-    sealed trait TOLL_FREE extends numberType
+    sealed trait TOLL_FREE
+      extends StObject
+         with numberType
     
     @js.native
-    sealed trait UAN extends numberType
+    sealed trait UAN
+      extends StObject
+         with numberType
     
     @js.native
-    sealed trait UNKNOWN extends numberType
+    sealed trait UNKNOWN
+      extends StObject
+         with numberType
     
     @js.native
-    sealed trait VOICEMAIL extends numberType
+    sealed trait VOICEMAIL
+      extends StObject
+         with numberType
     
     @js.native
-    sealed trait VOIP extends numberType
+    sealed trait VOIP
+      extends StObject
+         with numberType
   }
   
   @js.native
@@ -76,29 +107,38 @@ object intlTelInputUtils {
   object validationError extends StObject {
     
     @js.native
-    sealed trait INVALID_COUNTRY_CODE extends validationError
+    sealed trait INVALID_COUNTRY_CODE
+      extends StObject
+         with validationError
     
     @js.native
-    sealed trait IS_POSSIBLE extends validationError
+    sealed trait IS_POSSIBLE
+      extends StObject
+         with validationError
     
     @js.native
-    sealed trait NOT_A_NUMBER extends validationError
+    sealed trait NOT_A_NUMBER
+      extends StObject
+         with validationError
     
     @js.native
-    sealed trait TOO_LONG extends validationError
+    sealed trait TOO_LONG
+      extends StObject
+         with validationError
     
     @js.native
-    sealed trait TOO_SHORT extends validationError
+    sealed trait TOO_SHORT
+      extends StObject
+         with validationError
   }
   
-  @js.native
   trait CountryData extends StObject {
     
-    var dialCode: String = js.native
+    var dialCode: String
     
-    var iso2: String = js.native
+    var iso2: String
     
-    var name: String = js.native
+    var name: String
   }
   object CountryData {
     

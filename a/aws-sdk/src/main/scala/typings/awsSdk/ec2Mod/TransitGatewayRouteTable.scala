@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayRouteTable extends StObject {
   
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.native
+  var CreationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Indicates whether this is the default association route table for the transit gateway.
     */
-  var DefaultAssociationRouteTable: js.UndefOr[Boolean] = js.native
+  var DefaultAssociationRouteTable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether this is the default propagation route table for the transit gateway.
     */
-  var DefaultPropagationRouteTable: js.UndefOr[Boolean] = js.native
+  var DefaultPropagationRouteTable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The state of the transit gateway route table.
     */
-  var State: js.UndefOr[TransitGatewayRouteTableState] = js.native
+  var State: js.UndefOr[TransitGatewayRouteTableState] = js.undefined
   
   /**
     * Any tags assigned to the route table.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the transit gateway.
     */
-  var TransitGatewayId: js.UndefOr[String] = js.native
+  var TransitGatewayId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the transit gateway route table.
     */
-  var TransitGatewayRouteTableId: js.UndefOr[String] = js.native
+  var TransitGatewayRouteTableId: js.UndefOr[String] = js.undefined
 }
 object TransitGatewayRouteTable {
   

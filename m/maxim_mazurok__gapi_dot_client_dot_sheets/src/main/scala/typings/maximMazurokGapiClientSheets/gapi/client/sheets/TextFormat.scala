@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextFormat extends StObject {
   
   /** True if the text is bold. */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /** The font family. */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /** The size of the font. */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /** The foreground color of the text. */
-  var foregroundColor: js.UndefOr[Color] = js.native
+  var foregroundColor: js.UndefOr[Color] = js.undefined
   
   /** The foreground color of the text. If foreground_color is also set, this field takes precedence. */
-  var foregroundColorStyle: js.UndefOr[ColorStyle] = js.native
+  var foregroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** True if the text is italicized. */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /** True if the text has a strikethrough. */
-  var strikethrough: js.UndefOr[Boolean] = js.native
+  var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /** True if the text is underlined. */
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
 }
 object TextFormat {
   

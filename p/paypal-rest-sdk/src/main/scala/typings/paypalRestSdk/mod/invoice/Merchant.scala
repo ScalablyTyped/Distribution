@@ -3,19 +3,19 @@ package typings.paypalRestSdk.mod.invoice
 import typings.paypalRestSdk.mod.Phone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Merchant extends Person {
+trait Merchant
+  extends StObject
+     with Person {
   
-  var additional_info: js.UndefOr[String] = js.native
+  var additional_info: js.UndefOr[String] = js.undefined
   
-  var additional_info_label: js.UndefOr[String] = js.native
+  var additional_info_label: js.UndefOr[String] = js.undefined
   
-  var fax: js.UndefOr[Phone] = js.native
+  var fax: js.UndefOr[Phone] = js.undefined
   
-  var tax_id: js.UndefOr[String] = js.native
+  var tax_id: js.UndefOr[String] = js.undefined
 }
 object Merchant {
   

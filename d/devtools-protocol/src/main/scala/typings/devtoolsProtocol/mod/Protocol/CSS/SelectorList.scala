@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectorList extends StObject {
   
   /**
     * Selectors in the list.
     */
-  var selectors: js.Array[Value] = js.native
+  var selectors: js.Array[Value]
   
   /**
     * Rule selector text.
     */
-  var text: String = js.native
+  var text: String
 }
 object SelectorList {
   

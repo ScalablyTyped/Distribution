@@ -2,17 +2,15 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var color: js.Array[Double] = js.native
+  var color: js.Array[Double]
   
-  var depth: Double = js.native
+  var depth: Double
   
-  var flags: Double = js.native
+  var flags: Double
 }
 object Color {
   

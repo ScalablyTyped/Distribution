@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Security.SetIgnoreCertificateErrorsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `168` extends StObject {
   
-  var paramsType: js.Array[SetIgnoreCertificateErrorsRequest] = js.native
+  var paramsType: js.Array[SetIgnoreCertificateErrorsRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `168` {
   

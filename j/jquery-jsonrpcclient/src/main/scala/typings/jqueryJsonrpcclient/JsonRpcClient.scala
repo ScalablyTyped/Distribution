@@ -4,7 +4,6 @@ import typings.jquery.JQueryDeferred
 import typings.jquery.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,7 +33,7 @@ trait JsonRpcClient extends StObject {
   
   def call(
     method: String,
-    params: js.Array[_],
+    params: js.Array[js.Any],
     successCb: js.Function1[/* result */ js.Any, Unit],
     errorCb: js.Function1[/* result */ js.Any, Unit]
   ): JQueryDeferred[JQueryXHR] = js.native
@@ -56,7 +55,7 @@ trait JsonRpcClient extends StObject {
     errorCb: js.Function1[/* result */ js.Any, Unit]
   ): JQueryDeferred[JQueryXHR] = js.native
   
-  def notify(method: String, params: js.Array[_]): JQueryDeferred[JQueryXHR] = js.native
+  def notify(method: String, params: js.Array[js.Any]): JQueryDeferred[JQueryXHR] = js.native
   /**
     * Notify sends a command to the server that won't need a response.  In http, there is probably
     * an empty response - that will be dropped, but in ws there should be no response at all.

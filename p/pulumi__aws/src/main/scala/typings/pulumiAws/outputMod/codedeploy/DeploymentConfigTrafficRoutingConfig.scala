@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.codedeploy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentConfigTrafficRoutingConfig extends StObject {
   
   /**
     * The time based canary configuration information. If `type` is `TimeBasedLinear`, use `timeBasedLinear` instead.
     */
-  var timeBasedCanary: js.UndefOr[DeploymentConfigTrafficRoutingConfigTimeBasedCanary] = js.native
+  var timeBasedCanary: js.UndefOr[DeploymentConfigTrafficRoutingConfigTimeBasedCanary] = js.undefined
   
   /**
     * The time based linear configuration information. If `type` is `TimeBasedCanary`, use `timeBasedCanary` instead.
     */
-  var timeBasedLinear: js.UndefOr[DeploymentConfigTrafficRoutingConfigTimeBasedLinear] = js.native
+  var timeBasedLinear: js.UndefOr[DeploymentConfigTrafficRoutingConfigTimeBasedLinear] = js.undefined
   
   /**
     * Type of traffic routing config. One of `TimeBasedCanary`, `TimeBasedLinear`, `AllAtOnce`.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DeploymentConfigTrafficRoutingConfig {
   

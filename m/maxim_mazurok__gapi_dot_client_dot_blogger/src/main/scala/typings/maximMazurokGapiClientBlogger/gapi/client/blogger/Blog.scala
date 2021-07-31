@@ -5,50 +5,48 @@ import typings.maximMazurokGapiClientBlogger.anon.Items
 import typings.maximMazurokGapiClientBlogger.anon.SelfLink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Blog extends StObject {
   
   /** The JSON custom meta-data for the Blog. */
-  var customMetaData: js.UndefOr[String] = js.native
+  var customMetaData: js.UndefOr[String] = js.undefined
   
   /** The description of this blog. This is displayed underneath the title. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The identifier for this resource. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The kind of this entry. Always blogger#blog. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The locale this Blog is set to. */
-  var locale: js.UndefOr[Country] = js.native
+  var locale: js.UndefOr[Country] = js.undefined
   
   /** The name of this blog. This is displayed as the title. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The container of pages in this blog. */
-  var pages: js.UndefOr[SelfLink] = js.native
+  var pages: js.UndefOr[SelfLink] = js.undefined
   
   /** The container of posts in this blog. */
-  var posts: js.UndefOr[Items] = js.native
+  var posts: js.UndefOr[Items] = js.undefined
   
   /** RFC 3339 date-time when this blog was published. */
-  var published: js.UndefOr[String] = js.native
+  var published: js.UndefOr[String] = js.undefined
   
   /** The API REST URL to fetch this resource from. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** The status of the blog. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** RFC 3339 date-time when this blog was last updated. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /** The URL where this blog is published. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Blog {
   

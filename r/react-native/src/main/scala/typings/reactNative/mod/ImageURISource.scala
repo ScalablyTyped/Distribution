@@ -7,10 +7,8 @@ import typings.reactNative.reactNativeStrings.default
 import typings.reactNative.reactNativeStrings.reload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageURISource extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait ImageURISource extends StObject {
     * UTF-8 string, and will be sent exactly as specified, with no
     * additional encoding (e.g. URL-escaping or base64) applied.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * `bundle` is the iOS asset bundle which the image is included in. This
     * will default to [NSBundle mainBundle] if not set.
     * @platform ios
     */
-  var bundle: js.UndefOr[String] = js.native
+  var bundle: js.UndefOr[String] = js.undefined
   
   /**
     * `cache` determines how the requests handles potentially cached
@@ -47,26 +45,26 @@ trait ImageURISource extends StObject {
     *
     * @platform ios
     */
-  var cache: js.UndefOr[default | reload | `force-cache` | `only-if-cached`] = js.native
+  var cache: js.UndefOr[default | reload | `force-cache` | `only-if-cached`] = js.undefined
   
   /**
     * `headers` is an object representing the HTTP headers to send along with the
     * request for a remote image.
     */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * `method` is the HTTP Method to use. Defaults to GET if not specified.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * `scale` is used to indicate the scale factor of the image. Defaults to 1.0 if
     * unspecified, meaning that one image pixel equates to one display point / DIP.
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * `uri` is a string representing the resource identifier for the image, which
@@ -74,13 +72,13 @@ trait ImageURISource extends StObject {
     * resource (which should be wrapped in the `require('./path/to/image.png')`
     * function).
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
   /**
     * `width` and `height` can be specified if known at build time, in which case
     * these will be used to set the default `<Image/>` component dimensions.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ImageURISource {
   

@@ -5,49 +5,49 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Widget extends Base {
+trait Widget
+  extends StObject
+     with Base {
   
-  var absolutePosition: X = js.native
+  var absolutePosition: X
   
-  def addClass(className: String): Unit = js.native
-  
-  // readonly
-  var contextMenu: PopupWindow = js.native
-  
-  var contextMenuName: String = js.native
-  
-  def hide(): Unit = js.native
-  
-  var html: HTMLElement = js.native
+  def addClass(className: String): Unit
   
   // readonly
-  var layoutOptions: StringDictionary[js.Any] = js.native
+  var contextMenu: PopupWindow
   
-  var name: String = js.native
+  var contextMenuName: String
+  
+  def hide(): Unit
+  
+  var html: HTMLElement
   
   // readonly
-  var offsetHeight: Double = js.native
+  var layoutOptions: StringDictionary[js.Any]
   
-  var offsetWidth: Double = js.native
+  var name: String
   
   // readonly
-  var parent: Widget = js.native
+  var offsetHeight: Double
   
-  var parentName: String = js.native
+  var offsetWidth: Double
   
-  def removeClass(className: String): Unit = js.native
+  // readonly
+  var parent: Widget
   
-  def show(): Unit = js.native
+  var parentName: String
   
-  var tooltip: String = js.native
+  def removeClass(className: String): Unit
   
-  def unparent(): Unit = js.native
+  def show(): Unit
   
-  var visible: Boolean = js.native
+  var tooltip: String
+  
+  def unparent(): Unit
+  
+  var visible: Boolean
 }
 object Widget {
   

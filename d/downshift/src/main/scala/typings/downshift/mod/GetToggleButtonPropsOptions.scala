@@ -4,11 +4,11 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetToggleButtonPropsOptions extends HTMLProps[HTMLButtonElement]
+trait GetToggleButtonPropsOptions
+  extends StObject
+     with HTMLProps[HTMLButtonElement]
 object GetToggleButtonPropsOptions {
   
   @scala.inline

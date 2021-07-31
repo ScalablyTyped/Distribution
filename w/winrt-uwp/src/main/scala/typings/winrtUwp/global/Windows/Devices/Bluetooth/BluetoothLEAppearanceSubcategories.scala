@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Devices.Bluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates the appearance subcategory code of the Bluetooth LE device. */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothLEAppearanceSubcategories")
 @js.native
 abstract class BluetoothLEAppearanceSubcategories ()
-  extends typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearanceSubcategories
+  extends StObject
+     with typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearanceSubcategories
 object BluetoothLEAppearanceSubcategories {
   
   @JSGlobal("Windows.Devices.Bluetooth.BluetoothLEAppearanceSubcategories")

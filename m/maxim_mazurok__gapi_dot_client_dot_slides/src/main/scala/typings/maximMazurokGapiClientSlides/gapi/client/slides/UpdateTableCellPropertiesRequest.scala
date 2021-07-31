@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTableCellPropertiesRequest extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait UpdateTableCellPropertiesRequest extends StObject {
     * short-hand for listing every field. For example to update the table cell background solid fill color, set `fields` to `"tableCellBackgroundFill.solidFill.color"`. To reset a
     * property to its default value, include its field name in the field mask but leave the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** The object ID of the table. */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /** The table cell properties to update. */
-  var tableCellProperties: js.UndefOr[TableCellProperties] = js.native
+  var tableCellProperties: js.UndefOr[TableCellProperties] = js.undefined
   
   /** The table range representing the subset of the table to which the updates are applied. If a table range is not specified, the updates will apply to the entire table. */
-  var tableRange: js.UndefOr[TableRange] = js.native
+  var tableRange: js.UndefOr[TableRange] = js.undefined
 }
 object UpdateTableCellPropertiesRequest {
   

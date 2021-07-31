@@ -2,20 +2,20 @@ package typings.appBuilderLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flagsMod {
   
-  @JSImport("app-builder-lib/out/util/flags", "isAutoDiscoveryCodeSignIdentity")
+  @JSImport("app-builder-lib/out/util/flags", JSImport.Namespace)
   @js.native
-  def isAutoDiscoveryCodeSignIdentity(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("app-builder-lib/out/util/flags", "isBuildCacheEnabled")
-  @js.native
-  def isBuildCacheEnabled(): Boolean = js.native
+  @scala.inline
+  def isAutoDiscoveryCodeSignIdentity(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAutoDiscoveryCodeSignIdentity")().asInstanceOf[Boolean]
   
-  @JSImport("app-builder-lib/out/util/flags", "isUseSystemSigncode")
-  @js.native
-  def isUseSystemSigncode(): Boolean = js.native
+  @scala.inline
+  def isBuildCacheEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuildCacheEnabled")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isUseSystemSigncode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUseSystemSigncode")().asInstanceOf[Boolean]
 }

@@ -2,25 +2,25 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyntaxWalker extends ISyntaxVisitor {
+trait SyntaxWalker
+  extends StObject
+     with ISyntaxVisitor {
   
-  def visitList(list: ISyntaxList): Unit = js.native
+  def visitList(list: ISyntaxList): Unit
   
-  def visitNode(node: SyntaxNode): Unit = js.native
+  def visitNode(node: SyntaxNode): Unit
   
-  def visitNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
+  def visitNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit
   
-  def visitOptionalNode(node: SyntaxNode): Unit = js.native
+  def visitOptionalNode(node: SyntaxNode): Unit
   
-  def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
+  def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit
   
-  /* private */ def visitOptionalToken(token: js.Any): js.Any = js.native
+  /* private */ def visitOptionalToken(token: js.Any): js.Any
   
-  def visitSeparatedList(list: ISeparatedSyntaxList): Unit = js.native
+  def visitSeparatedList(list: ISeparatedSyntaxList): Unit
 }
 object SyntaxWalker {
   

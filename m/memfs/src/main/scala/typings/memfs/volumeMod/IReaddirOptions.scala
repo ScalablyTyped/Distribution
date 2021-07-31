@@ -2,13 +2,13 @@ package typings.memfs.volumeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IReaddirOptions extends IOptions {
+trait IReaddirOptions
+  extends StObject
+     with IOptions {
   
-  var withFileTypes: js.UndefOr[Boolean] = js.native
+  var withFileTypes: js.UndefOr[Boolean] = js.undefined
 }
 object IReaddirOptions {
   

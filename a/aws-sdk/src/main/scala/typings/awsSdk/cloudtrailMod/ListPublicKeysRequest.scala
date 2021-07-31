@@ -2,26 +2,24 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPublicKeysRequest extends StObject {
   
   /**
     * Optionally specifies, in UTC, the end of the time range to look up public keys for CloudTrail digest files. If not specified, the current time is used.
     */
-  var EndTime: js.UndefOr[Date] = js.native
+  var EndTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Reserved for future use.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Optionally specifies, in UTC, the start of the time range to look up public keys for CloudTrail digest files. If not specified, the current time is used, and the current public key is returned.
     */
-  var StartTime: js.UndefOr[Date] = js.native
+  var StartTime: js.UndefOr[Date] = js.undefined
 }
 object ListPublicKeysRequest {
   

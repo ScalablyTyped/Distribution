@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 
   */
 @js.native
-trait ClassDbConnection extends ClassObject {
+trait ClassDbConnection
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -48,7 +49,7 @@ trait ClassDbConnection extends ClassObject {
     * 
     * @async
     */
-  def execute(sql: String, args: js.Any*): js.Array[_] = js.native
+  def execute(sql: String, args: js.Any*): js.Array[js.Any] = js.native
   
   /**
     * 

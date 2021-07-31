@@ -2,21 +2,21 @@ package typings.openfin.mod.fin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TrayIconClickedEvent extends ApplicationBaseEvent {
+trait TrayIconClickedEvent
+  extends StObject
+     with ApplicationBaseEvent {
   
-  var button: Double = js.native
+  var button: Double
   
   // 0 for left, 1 for middle, 2 for right
-  var monitorInfo: MonitorInfo = js.native
+  var monitorInfo: MonitorInfo
   
-  var x: Double = js.native
+  var x: Double
   
   // the cursor x coordinate
-  var y: Double = js.native
+  var y: Double
 }
 object TrayIconClickedEvent {
   

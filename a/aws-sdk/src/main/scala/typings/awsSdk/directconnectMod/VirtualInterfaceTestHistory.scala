@@ -2,51 +2,49 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualInterfaceTestHistory extends StObject {
   
   /**
     * The BGP peers that were put in the DOWN state as part of the virtual interface failover test.
     */
-  var bgpPeers: js.UndefOr[BGPPeerIdList] = js.native
+  var bgpPeers: js.UndefOr[BGPPeerIdList] = js.undefined
   
   /**
     * The time that the virtual interface moves out of the DOWN state.
     */
-  var endTime: js.UndefOr[EndTime] = js.native
+  var endTime: js.UndefOr[EndTime] = js.undefined
   
   /**
     * The owner ID of the tested virtual interface.
     */
-  var ownerAccount: js.UndefOr[OwnerAccount] = js.native
+  var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
     * The time that the virtual interface moves to the DOWN state.
     */
-  var startTime: js.UndefOr[StartTime] = js.native
+  var startTime: js.UndefOr[StartTime] = js.undefined
   
   /**
     * The status of the virtual interface failover test.
     */
-  var status: js.UndefOr[FailureTestHistoryStatus] = js.native
+  var status: js.UndefOr[FailureTestHistoryStatus] = js.undefined
   
   /**
     * The time that the virtual interface failover test ran in minutes.
     */
-  var testDurationInMinutes: js.UndefOr[TestDuration] = js.native
+  var testDurationInMinutes: js.UndefOr[TestDuration] = js.undefined
   
   /**
     * The ID of the virtual interface failover test.
     */
-  var testId: js.UndefOr[TestId] = js.native
+  var testId: js.UndefOr[TestId] = js.undefined
   
   /**
     * The ID of the tested virtual interface.
     */
-  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.native
+  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.undefined
 }
 object VirtualInterfaceTestHistory {
   

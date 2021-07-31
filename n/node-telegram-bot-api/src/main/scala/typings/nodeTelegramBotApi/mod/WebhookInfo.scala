@@ -2,25 +2,23 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebhookInfo extends StObject {
   
-  var allowed_updates: js.UndefOr[js.Array[String]] = js.native
+  var allowed_updates: js.UndefOr[js.Array[String]] = js.undefined
   
-  var has_custom_certificate: Boolean = js.native
+  var has_custom_certificate: Boolean
   
-  var last_error_date: js.UndefOr[Double] = js.native
+  var last_error_date: js.UndefOr[Double] = js.undefined
   
-  var last_error_message: js.UndefOr[String] = js.native
+  var last_error_message: js.UndefOr[String] = js.undefined
   
-  var max_connections: js.UndefOr[Double] = js.native
+  var max_connections: js.UndefOr[Double] = js.undefined
   
-  var pending_update_count: Double = js.native
+  var pending_update_count: Double
   
-  var url: String = js.native
+  var url: String
 }
 object WebhookInfo {
   

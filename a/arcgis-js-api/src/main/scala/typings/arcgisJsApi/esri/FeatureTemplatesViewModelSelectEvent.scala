@@ -2,15 +2,13 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureTemplatesViewModelSelectEvent extends StObject {
   
-  var item: TemplateItem = js.native
+  var item: TemplateItem
   
-  var template: FeatureTemplate = js.native
+  var template: FeatureTemplate
 }
 object FeatureTemplatesViewModelSelectEvent {
   

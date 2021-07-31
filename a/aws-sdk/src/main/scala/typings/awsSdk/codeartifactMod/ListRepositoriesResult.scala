@@ -2,21 +2,19 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRepositoriesResult extends StObject {
   
   /**
     *  If there are additional results, this is the token for the next set of results. 
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  The returned list of  RepositorySummary  objects. 
     */
-  var repositories: js.UndefOr[RepositorySummaryList] = js.native
+  var repositories: js.UndefOr[RepositorySummaryList] = js.undefined
 }
 object ListRepositoriesResult {
   

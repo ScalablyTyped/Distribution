@@ -12,7 +12,6 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object innerProxiesMod {
@@ -24,7 +23,7 @@ object innerProxiesMod {
   @JSImport("@ionic/react/dist/types/components/inner-proxies", "IonIconInner")
   @js.native
   val IonIconInner: ForwardRefExoticComponent[
-    IonIcon with PickHTMLAttributesHTMLIon with IonicReactProps with RefAttributes[HTMLIonIconElement]
+    IonIcon & PickHTMLAttributesHTMLIon & IonicReactProps & RefAttributes[HTMLIonIconElement]
   ] = js.native
   
   @JSImport("@ionic/react/dist/types/components/inner-proxies", "IonRouterOutletInner")

@@ -4,29 +4,27 @@ import typings.vexflow.anon.Extraleftpx
 import typings.vexflow.anon.Leftshift
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifierContext extends StObject {
   
-  def addModifier(modifier: Modifier): ModifierContext = js.native
+  def addModifier(modifier: Modifier): ModifierContext
   
-  def getExtraLeftPx(): Double = js.native
+  def getExtraLeftPx(): Double
   
-  def getExtraRightPx(): Double = js.native
+  def getExtraRightPx(): Double
   
-  def getMetrics(): Extraleftpx = js.native
+  def getMetrics(): Extraleftpx
   
-  def getModifiers(`type`: String): js.Array[Modifier] = js.native
+  def getModifiers(`type`: String): js.Array[Modifier]
   
-  def getState(): Leftshift = js.native
+  def getState(): Leftshift
   
-  def getWidth(): Double = js.native
+  def getWidth(): Double
   
-  def postFormat(): Unit = js.native
+  def postFormat(): Unit
   
-  def preFormat(): Unit = js.native
+  def preFormat(): Unit
 }
 object ModifierContext {
   

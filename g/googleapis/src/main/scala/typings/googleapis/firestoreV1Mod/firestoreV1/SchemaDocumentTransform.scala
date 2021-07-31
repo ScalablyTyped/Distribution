@@ -2,25 +2,23 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A transformation of a document.
   */
-@js.native
 trait SchemaDocumentTransform extends StObject {
   
   /**
     * The name of the document to transform.
     */
-  var document: js.UndefOr[String] = js.native
+  var document: js.UndefOr[String] = js.undefined
   
   /**
     * The list of transformations to apply to the fields of the document, in
     * order. This must not be empty.
     */
-  var fieldTransforms: js.UndefOr[js.Array[SchemaFieldTransform]] = js.native
+  var fieldTransforms: js.UndefOr[js.Array[SchemaFieldTransform]] = js.undefined
 }
 object SchemaDocumentTransform {
   

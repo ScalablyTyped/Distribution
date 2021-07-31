@@ -2,15 +2,15 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InteractiveLayerOptions extends LayerOptions {
+trait InteractiveLayerOptions
+  extends StObject
+     with LayerOptions {
   
-  var bubblingMouseEvents: js.UndefOr[Boolean] = js.native
+  var bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined
   
-  var interactive: js.UndefOr[Boolean] = js.native
+  var interactive: js.UndefOr[Boolean] = js.undefined
 }
 object InteractiveLayerOptions {
   

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTargetsResponse extends StObject {
   
   /**
     * The list of targets.
     */
-  var targetInfos: js.Array[TargetInfo] = js.native
+  var targetInfos: js.Array[TargetInfo]
 }
 object GetTargetsResponse {
   

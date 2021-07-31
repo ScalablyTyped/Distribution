@@ -10,9 +10,9 @@ The base package for including a theme for react-md. This is required by most ot
 | ------------------ | :-------------: |
 | Full name          | @react-md/link |
 | Keywords           | accessibility, a11y, react-md, material design, react, link, component, components |
-| # releases         | 31 |
+| # releases         | 38 |
 | # dependents       | 2 |
-| # downloads        | 6635 |
+| # downloads        | 18187 |
 | # stars            | 0 |
 
 ## Links

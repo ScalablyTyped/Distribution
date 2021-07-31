@@ -8,7 +8,6 @@ import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.DepthwiseConv2D
 import typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convolutionalDepthwiseSerializationMod {
@@ -22,19 +21,20 @@ object convolutionalDepthwiseSerializationMod {
   
   type ConvolutionalDepthwiseLayerSerialization = DepthwiseConv2DLayerSerialization
   
-  @js.native
-  trait DepthwiseConv2DLayerConfig extends BaseConvLayerConfig {
+  trait DepthwiseConv2DLayerConfig
+    extends StObject
+       with BaseConvLayerConfig {
     
-    var depth_multiplier: js.UndefOr[Double] = js.native
+    var depth_multiplier: js.UndefOr[Double] = js.undefined
     
-    var depthwise_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var depthwise_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var depthwise_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var depthwise_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var depthwise_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var depthwise_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
     @JSName("kernel_size")
-    var kernel_size_DepthwiseConv2DLayerConfig: Double | (js.Tuple2[Double, Double]) = js.native
+    var kernel_size_DepthwiseConv2DLayerConfig: Double | (js.Tuple2[Double, Double])
   }
   object DepthwiseConv2DLayerConfig {
     

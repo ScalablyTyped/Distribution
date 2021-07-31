@@ -3,43 +3,35 @@ package typings.fastJsonPatch
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
+  @JSImport("fast-json-patch/commonjs/helpers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("fast-json-patch/commonjs/helpers", "PatchError")
   @js.native
-  class PatchError protected () extends Error {
+  class PatchError protected ()
+    extends StObject
+       with Error {
     def this(message: String, name: JsonPatchErrorName) = this()
     def this(message: String, name: JsonPatchErrorName, index: Double) = this()
-    def this(message: String, name: JsonPatchErrorName, index: js.UndefOr[scala.Nothing], operation: js.Any) = this()
     def this(message: String, name: JsonPatchErrorName, index: Double, operation: js.Any) = this()
-    def this(
-      message: String,
-      name: JsonPatchErrorName,
-      index: js.UndefOr[scala.Nothing],
-      operation: js.UndefOr[scala.Nothing],
-      tree: js.Any
-    ) = this()
-    def this(
-      message: String,
-      name: JsonPatchErrorName,
-      index: js.UndefOr[scala.Nothing],
-      operation: js.Any,
-      tree: js.Any
-    ) = this()
-    def this(
-      message: String,
-      name: JsonPatchErrorName,
-      index: Double,
-      operation: js.UndefOr[scala.Nothing],
-      tree: js.Any
-    ) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: js.Any) = this()
     def this(message: String, name: JsonPatchErrorName, index: Double, operation: js.Any, tree: js.Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Double, operation: Unit, tree: js.Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: js.Any, tree: js.Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Unit, tree: js.Any) = this()
     
     var index: js.UndefOr[Double] = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     @JSName("name")
     var name_PatchError: JsonPatchErrorName = js.native
     
@@ -48,41 +40,32 @@ object helpersMod {
     var tree: js.UndefOr[js.Any] = js.native
   }
   
-  @JSImport("fast-json-patch/commonjs/helpers", "_deepClone")
-  @js.native
-  def deepClone(obj: js.Any): js.Any = js.native
+  @scala.inline
+  def deepClone(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_deepClone")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("fast-json-patch/commonjs/helpers", "escapePathComponent")
-  @js.native
-  def escapePathComponent(path: String): String = js.native
+  @scala.inline
+  def escapePathComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapePathComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("fast-json-patch/commonjs/helpers", "getPath")
-  @js.native
-  def getPath(root: js.Object, obj: js.Object): String = js.native
+  @scala.inline
+  def getPath(root: js.Object, obj: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(root.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("fast-json-patch/commonjs/helpers", "_getPathRecursive")
-  @js.native
-  def getPathRecursive(root: js.Object, obj: js.Object): String = js.native
+  @scala.inline
+  def getPathRecursive(root: js.Object, obj: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_getPathRecursive")(root.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("fast-json-patch/commonjs/helpers", "hasOwnProperty")
-  @js.native
-  def hasOwnProperty_(obj: js.Any, key: js.Any): js.Any = js.native
+  @scala.inline
+  def hasOwnProperty_(obj: js.Any, key: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("fast-json-patch/commonjs/helpers", "hasUndefined")
-  @js.native
-  def hasUndefined(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def hasUndefined(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("fast-json-patch/commonjs/helpers", "isInteger")
-  @js.native
-  def isInteger(str: String): Boolean = js.native
+  @scala.inline
+  def isInteger(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("fast-json-patch/commonjs/helpers", "_objectKeys")
-  @js.native
-  def objectKeys(obj: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def objectKeys(obj: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_objectKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("fast-json-patch/commonjs/helpers", "unescapePathComponent")
-  @js.native
-  def unescapePathComponent(path: String): String = js.native
+  @scala.inline
+  def unescapePathComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapePathComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.fastJsonPatch.fastJsonPatchStrings.SEQUENCE_NOT_AN_ARRAY

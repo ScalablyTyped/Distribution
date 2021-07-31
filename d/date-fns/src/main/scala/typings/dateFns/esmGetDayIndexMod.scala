@@ -10,18 +10,19 @@ import typings.dateFns.dateFnsNumbers.`6`
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmGetDayIndexMod {
   
   object default {
     
+    @scala.inline
+    def apply(date: Double): `0` | `1` | `2` | `3` | `4` | `5` | `6` = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2` | `3` | `4` | `5` | `6`]
+    @scala.inline
+    def apply(date: Date): `0` | `1` | `2` | `3` | `4` | `5` | `6` = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2` | `3` | `4` | `5` | `6`]
+    
     @JSImport("date-fns/esm/getDay/index", JSImport.Default)
     @js.native
-    def apply(date: Double): `0` | `1` | `2` | `3` | `4` | `5` | `6` = js.native
-    @JSImport("date-fns/esm/getDay/index", JSImport.Default)
-    @js.native
-    def apply(date: Date): `0` | `1` | `2` | `3` | `4` | `5` | `6` = js.native
+    val ^ : js.Any = js.native
   }
 }

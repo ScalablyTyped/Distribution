@@ -18,24 +18,23 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** defines a column used for a result set which contains the data definition and the data of the column of the current row of a result set. */
-@js.native
 trait DataColumn
-  extends ResultColumn
+  extends StObject
+     with ResultColumn
      with XColumn
      with XColumnUpdate {
   
   /** contains the original value of the column. */
-  var OriginalValue: js.Any = js.native
+  var OriginalValue: js.Any
   
   /**
     * contains the column's value. This could be a constraint property, to veto modifications, if a new value does not fit into rules defined for the
     * column.
     */
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object DataColumn {
   

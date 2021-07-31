@@ -2,25 +2,23 @@ package typings.jqueryFlagstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jQueryFlagStrap {
   
-  @js.native
   trait FlagStrapOptions extends StObject {
     
     /**
       * Default: "btn-md"
       * The bootstrap button size `class` for this drop down
       */
-    var buttonSize: String = js.native
+    var buttonSize: String
     
     /**
       * Default: "btn-default"
       * The bootstrap button type `class` for this drop down
       */
-    var buttonType: String = js.native
+    var buttonType: String
     
     /**
       * Default: (all)
@@ -31,49 +29,49 @@ object jQueryFlagStrap {
       * 
       * will only show the USA and UK.
       */
-    var countries: js.UndefOr[js.Object] = js.native
+    var countries: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Default: uniquely generated
       * the `id` attribute for the actual `select` input
       */
-    var inputId: js.UndefOr[String] = js.native
+    var inputId: js.UndefOr[String] = js.undefined
     
     /**
       * Default: uniquely generated
       * the `name` attribute for the actual `select` input
       */
-    var inputName: String = js.native
+    var inputName: String
     
     /**
       * Default: "20px"
       * The `margin` between `flag` and `text label`
       */
-    var labelMargin: String = js.native
+    var labelMargin: String
     
     /**
       * Default: null
       * This callback gets called each time the select is changed. It receives two parameters, the new value, and the select element.
       */
-    var onSelect: js.UndefOr[js.Function2[/* value */ js.Any, /* element */ js.Any, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function2[/* value */ js.Any, /* element */ js.Any, Unit]] = js.undefined
     
     /**
       * Default: {value: "", text: "Please select a country"}
       * Set the placeholder value and text. To disable the placeholder define as (boolean) false.
       */
-    var placeholder: Boolean | FlagStrapPlaceholderOptions = js.native
+    var placeholder: Boolean | FlagStrapPlaceholderOptions
     
     /**
       * Default: false
       * Scrollable or full height drop down
       */
-    var scrollable: Boolean = js.native
+    var scrollable: Boolean
     
     /**
       * Default: "250px"
       * `max-height` for the scrollable drop down
       */
-    var scrollableHeight: js.UndefOr[String] = js.native
+    var scrollableHeight: js.UndefOr[String] = js.undefined
   }
   object FlagStrapOptions {
     
@@ -137,12 +135,11 @@ object jQueryFlagStrap {
     }
   }
   
-  @js.native
   trait FlagStrapPlaceholderOptions extends StObject {
     
-    var text: String = js.native
+    var text: String
     
-    var value: String = js.native
+    var value: String
   }
   object FlagStrapPlaceholderOptions {
     
@@ -163,10 +160,9 @@ object jQueryFlagStrap {
     }
   }
   
-  @js.native
   trait FlagStrapStatic extends StObject {
     
-    var flagStrap: js.UndefOr[Unit] = js.native
+    var flagStrap: js.UndefOr[Unit] = js.undefined
   }
   object FlagStrapStatic {
     

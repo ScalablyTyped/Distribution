@@ -10,7 +10,6 @@ import typings.angularHttp.staticResponseMod.Response
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xhrBackendMod {
@@ -19,8 +18,8 @@ object xhrBackendMod {
   @js.native
   class CookieXSRFStrategy () extends XSRFStrategy {
     def this(_cookieName: String) = this()
-    def this(_cookieName: js.UndefOr[scala.Nothing], _headerName: String) = this()
     def this(_cookieName: String, _headerName: String) = this()
+    def this(_cookieName: Unit, _headerName: String) = this()
     
     var _cookieName: js.Any = js.native
     

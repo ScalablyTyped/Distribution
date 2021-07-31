@@ -2,19 +2,17 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapedTextOpts extends StObject {
   
-  var font: SkFont = js.native
+  var font: SkFont
   
-  var leftToRight: Boolean = js.native
+  var leftToRight: Boolean
   
-  var text: String = js.native
+  var text: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object ShapedTextOpts {
   

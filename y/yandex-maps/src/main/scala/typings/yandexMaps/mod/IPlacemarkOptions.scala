@@ -2,55 +2,53 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPlacemarkOptions extends StObject {
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var hasBalloon: js.UndefOr[Boolean] = js.native
+  var hasBalloon: js.UndefOr[Boolean] = js.undefined
   
-  var hasHint: js.UndefOr[Boolean] = js.native
+  var hasHint: js.UndefOr[Boolean] = js.undefined
   
-  var hideIconOnBalloonOpen: js.UndefOr[Boolean] = js.native
+  var hideIconOnBalloonOpen: js.UndefOr[Boolean] = js.undefined
   
-  var iconOffset: js.UndefOr[js.Array[Double]] = js.native
+  var iconOffset: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var iconShape: js.UndefOr[IGeometryJson | Null] = js.native
+  var iconShape: js.UndefOr[IGeometryJson | Null] = js.undefined
   
-  var interactiveZIndex: js.UndefOr[Boolean] = js.native
+  var interactiveZIndex: js.UndefOr[Boolean] = js.undefined
   
-  var interactivityModel: js.UndefOr[String] = js.native
+  var interactivityModel: js.UndefOr[String] = js.undefined
   
-  var openBalloonOnClick: js.UndefOr[Boolean] = js.native
+  var openBalloonOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var openEmptyBalloon: js.UndefOr[Boolean] = js.native
+  var openEmptyBalloon: js.UndefOr[Boolean] = js.undefined
   
-  var openEmptyHint: js.UndefOr[Boolean] = js.native
+  var openEmptyHint: js.UndefOr[Boolean] = js.undefined
   
-  var openHintOnHover: js.UndefOr[Boolean] = js.native
+  var openHintOnHover: js.UndefOr[Boolean] = js.undefined
   
-  var pane: js.UndefOr[String] = js.native
+  var pane: js.UndefOr[String] = js.undefined
   
-  var pointOverlay: js.UndefOr[String] = js.native
+  var pointOverlay: js.UndefOr[String] = js.undefined
   
-  var syncOverlayInit: js.UndefOr[Boolean] = js.native
+  var syncOverlayInit: js.UndefOr[Boolean] = js.undefined
   
-  var useMapMarginInDragging: js.UndefOr[Boolean] = js.native
+  var useMapMarginInDragging: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
   
-  var zIndexActive: js.UndefOr[Double] = js.native
+  var zIndexActive: js.UndefOr[Double] = js.undefined
   
-  var zIndexDrag: js.UndefOr[Double] = js.native
+  var zIndexDrag: js.UndefOr[Double] = js.undefined
   
-  var zIndexHover: js.UndefOr[Double] = js.native
+  var zIndexHover: js.UndefOr[Double] = js.undefined
 }
 object IPlacemarkOptions {
   

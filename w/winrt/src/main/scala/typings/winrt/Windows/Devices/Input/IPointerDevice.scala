@@ -4,23 +4,21 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPointerDevice extends StObject {
   
-  var isIntegrated: Boolean = js.native
+  var isIntegrated: Boolean
   
-  var maxContacts: Double = js.native
+  var maxContacts: Double
   
-  var physicalDeviceRect: Rect = js.native
+  var physicalDeviceRect: Rect
   
-  var pointerDeviceType: PointerDeviceType = js.native
+  var pointerDeviceType: PointerDeviceType
   
-  var screenRect: Rect = js.native
+  var screenRect: Rect
   
-  var supportedUsages: IVectorView[PointerDeviceUsage] = js.native
+  var supportedUsages: IVectorView[PointerDeviceUsage]
 }
 object IPointerDevice {
   

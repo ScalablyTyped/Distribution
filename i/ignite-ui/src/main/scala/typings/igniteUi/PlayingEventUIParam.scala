@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlayingEventUIParam extends StObject {
   
   /**
     * Get the current time in the video at which the event was fired.
     */
-  var currentTime: js.UndefOr[Double] = js.native
+  var currentTime: js.UndefOr[Double] = js.undefined
   
   /**
     * Get the video duration in seconds.
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * Get the url of the playing video.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object PlayingEventUIParam {
   

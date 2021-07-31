@@ -4,29 +4,27 @@ import typings.humanDate.humanDateBooleans.`false`
 import typings.humanDate.humanDateBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined human-date.human-date.RelativeTimeOptions & {  returnObject :false | undefined} */
-  @js.native
   trait RelativeTimeOptionsreturn extends StObject {
     
-    var allUnits: js.UndefOr[Boolean] = js.native
+    var allUnits: js.UndefOr[Boolean] = js.undefined
     
-    var futureSuffix: js.UndefOr[String] = js.native
+    var futureSuffix: js.UndefOr[String] = js.undefined
     
-    var pastSuffix: js.UndefOr[String] = js.native
+    var pastSuffix: js.UndefOr[String] = js.undefined
     
-    var presentText: js.UndefOr[String] = js.native
+    var presentText: js.UndefOr[String] = js.undefined
     
-    var returnObject: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var returnObject: js.UndefOr[Boolean] & js.UndefOr[`false`]
   }
   object RelativeTimeOptionsreturn {
     
     @scala.inline
-    def apply(returnObject: js.UndefOr[Boolean] with js.UndefOr[`false`]): RelativeTimeOptionsreturn = {
+    def apply(returnObject: js.UndefOr[Boolean] & js.UndefOr[`false`]): RelativeTimeOptionsreturn = {
       val __obj = js.Dynamic.literal(returnObject = returnObject.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelativeTimeOptionsreturn]
     }
@@ -59,28 +57,27 @@ object anon {
       def setPresentTextUndefined: Self = StObject.set(x, "presentText", js.undefined)
       
       @scala.inline
-      def setReturnObject(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
+      def setReturnObject(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined human-date.human-date.RelativeTimeOptions & {  returnObject :true} */
-  @js.native
   trait RelativeTimeOptionsreturnAllUnits extends StObject {
     
-    var allUnits: js.UndefOr[Boolean] = js.native
+    var allUnits: js.UndefOr[Boolean] = js.undefined
     
-    var futureSuffix: js.UndefOr[String] = js.native
+    var futureSuffix: js.UndefOr[String] = js.undefined
     
-    var pastSuffix: js.UndefOr[String] = js.native
+    var pastSuffix: js.UndefOr[String] = js.undefined
     
-    var presentText: js.UndefOr[String] = js.native
+    var presentText: js.UndefOr[String] = js.undefined
     
-    var returnObject: js.UndefOr[Boolean] with `true` = js.native
+    var returnObject: js.UndefOr[Boolean] & `true`
   }
   object RelativeTimeOptionsreturnAllUnits {
     
     @scala.inline
-    def apply(returnObject: js.UndefOr[Boolean] with `true`): RelativeTimeOptionsreturnAllUnits = {
+    def apply(returnObject: js.UndefOr[Boolean] & `true`): RelativeTimeOptionsreturnAllUnits = {
       val __obj = js.Dynamic.literal(returnObject = returnObject.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelativeTimeOptionsreturnAllUnits]
     }
@@ -113,7 +110,7 @@ object anon {
       def setPresentTextUndefined: Self = StObject.set(x, "presentText", js.undefined)
       
       @scala.inline
-      def setReturnObject(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
+      def setReturnObject(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
     }
   }
 }

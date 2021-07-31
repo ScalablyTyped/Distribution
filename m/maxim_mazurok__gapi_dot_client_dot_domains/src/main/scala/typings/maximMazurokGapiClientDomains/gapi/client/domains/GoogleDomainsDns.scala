@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDomainsDns extends StObject {
   
   /** Output only. The list of DS records published for this domain. The list is automatically populated when `ds_state` is `DS_RECORDS_PUBLISHED`, otherwise it remains empty. */
-  var dsRecords: js.UndefOr[js.Array[DsRecord]] = js.native
+  var dsRecords: js.UndefOr[js.Array[DsRecord]] = js.undefined
   
   /** Required. The state of DS records for this domain. Used to enable or disable automatic DNSSEC. */
-  var dsState: js.UndefOr[String] = js.native
+  var dsState: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A list of name servers that store the DNS zone for this domain. Each name server is a domain name, with Unicode domain names expressed in Punycode format. This field is
     * automatically populated with the name servers assigned to the Google Domains DNS zone.
     */
-  var nameServers: js.UndefOr[js.Array[String]] = js.native
+  var nameServers: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleDomainsDns {
   

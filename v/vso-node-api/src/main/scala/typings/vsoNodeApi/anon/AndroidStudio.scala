@@ -2,39 +2,37 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidStudio extends StObject {
   
-  var androidStudio: scala.Double = js.native
+  var androidStudio: scala.Double
   
-  var appCode: scala.Double = js.native
+  var appCode: scala.Double
   
-  var cLion: scala.Double = js.native
+  var cLion: scala.Double
   
-  var dataGrip: scala.Double = js.native
+  var dataGrip: scala.Double
   
-  var eclipse: scala.Double = js.native
+  var eclipse: scala.Double
   
-  var intelliJ: scala.Double = js.native
+  var intelliJ: scala.Double
   
-  var mPS: scala.Double = js.native
+  var mPS: scala.Double
   
-  var phpStorm: scala.Double = js.native
+  var phpStorm: scala.Double
   
-  var pyCharm: scala.Double = js.native
+  var pyCharm: scala.Double
   
-  var rubyMine: scala.Double = js.native
+  var rubyMine: scala.Double
   
-  var tower: scala.Double = js.native
+  var tower: scala.Double
   
-  var unknown: scala.Double = js.native
+  var unknown: scala.Double
   
-  var visualStudio: scala.Double = js.native
+  var visualStudio: scala.Double
   
-  var webStorm: scala.Double = js.native
+  var webStorm: scala.Double
 }
 object AndroidStudio {
   

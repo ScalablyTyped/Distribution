@@ -3,13 +3,13 @@ package typings.vegaTypings.encodeMod
 import typings.vegaTypings.anon.Test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaEncodeEntry extends LineEncodeEntry {
+trait AreaEncodeEntry
+  extends StObject
+     with LineEncodeEntry {
   
-  var orient: js.UndefOr[ProductionRule[ScaledValueRef[Orientation]]] = js.native
+  var orient: js.UndefOr[ProductionRule[ScaledValueRef[Orientation]]] = js.undefined
 }
 object AreaEncodeEntry {
   
@@ -29,6 +29,6 @@ object AreaEncodeEntry {
     def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
     @scala.inline
-    def setOrientVarargs(value: (Test with ScaledValueRef[Orientation])*): Self = StObject.set(x, "orient", js.Array(value :_*))
+    def setOrientVarargs(value: (Test & ScaledValueRef[Orientation])*): Self = StObject.set(x, "orient", js.Array(value :_*))
   }
 }

@@ -2,40 +2,38 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for aggregate stats.
   */
-@js.native
 trait SchemaAggregateStats extends StObject {
   
   /**
     * The number of messages sent between a pair of peers.
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#aggregateStats.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum amount.
     */
-  var max: js.UndefOr[String] = js.native
+  var max: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum amount.
     */
-  var min: js.UndefOr[String] = js.native
+  var min: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of bytes sent for messages between a pair of peers.
     */
-  var sum: js.UndefOr[String] = js.native
+  var sum: js.UndefOr[String] = js.undefined
 }
 object SchemaAggregateStats {
   

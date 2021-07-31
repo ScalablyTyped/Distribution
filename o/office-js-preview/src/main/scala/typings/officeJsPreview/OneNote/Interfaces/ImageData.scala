@@ -3,11 +3,9 @@ package typings.officeJsPreview.OneNote.Interfaces
 import typings.officeJsPreview.OneNote.ImageOcrData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "image.toJSON()". */
-@js.native
 trait ImageData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ImageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait ImageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait ImageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var hyperlink: js.UndefOr[String] = js.native
+  var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait ImageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait ImageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var ocrData: js.UndefOr[ImageOcrData] = js.native
+  var ocrData: js.UndefOr[ImageOcrData] = js.undefined
   
   /**
     *
@@ -56,7 +54,7 @@ trait ImageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ImageData {
   

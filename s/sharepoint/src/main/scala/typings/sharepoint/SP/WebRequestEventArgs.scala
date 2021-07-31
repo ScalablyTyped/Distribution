@@ -4,13 +4,13 @@ import typings.microsoftAjax.Sys.EventArgs
 import typings.microsoftAjax.Sys.Net.WebRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebRequestEventArgs extends EventArgs {
+trait WebRequestEventArgs
+  extends StObject
+     with EventArgs {
   
-  def get_webRequest(): WebRequest = js.native
+  def get_webRequest(): WebRequest
 }
 object WebRequestEventArgs {
   

@@ -3,115 +3,107 @@ package typings.scalike
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("scalike", "Failure")
+  @JSImport("scalike", JSImport.Namespace)
   @js.native
-  def Failure[A](e: Error): Try[A] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def Failure[A](e: Error): Try[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Failure")(e.asInstanceOf[js.Any]).asInstanceOf[Try[A]]
+  
   trait Future[A] extends StObject {
     
-    def andThen[B](f: js.Function1[/* t */ Try[A], B]): Future[A] = js.native
+    def andThen[B](f: js.Function1[/* t */ Try[A], B]): Future[A]
     
-    def apply1[B, C](ob: Future[B], f: js.Function2[/* a */ A, /* b */ B, C]): Future[C] = js.native
+    def apply1[B, C](ob: Future[B], f: js.Function2[/* a */ A, /* b */ B, C]): Future[C]
     
-    def apply2[B, C, D](ob: Future[B], oc: Future[C], f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Future[D] = js.native
+    def apply2[B, C, D](ob: Future[B], oc: Future[C], f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Future[D]
     
-    def chain[B](ob: Future[B]): FutureBuilder1[A, B] = js.native
+    def chain[B](ob: Future[B]): FutureBuilder1[A, B]
     
-    def failed(): Future[Error] = js.native
+    def failed(): Future[Error]
     
-    def fallbackTo[B /* <: A */](fu: Future[B]): Future[A] = js.native
+    def fallbackTo[B /* <: A */](fu: Future[B]): Future[A]
     
-    def filter(f: js.Function1[/* a */ A, Boolean]): Future[A] = js.native
+    def filter(f: js.Function1[/* a */ A, Boolean]): Future[A]
     
-    def flatMap[B](f: js.Function1[/* a */ A, Future[B]]): Future[B] = js.native
+    def flatMap[B](f: js.Function1[/* a */ A, Future[B]]): Future[B]
     
-    def foreach[B](f: js.Function1[/* a */ A, B]): Unit = js.native
+    def foreach[B](f: js.Function1[/* a */ A, B]): Unit
     
-    def getPromise(): js.Promise[A] = js.native
+    def getPromise(): js.Promise[A]
     
-    def isCompleted(): Boolean = js.native
+    def isCompleted(): Boolean
     
-    def map[B](f: js.Function1[/* a */ A, B]): Future[B] = js.native
+    def map[B](f: js.Function1[/* a */ A, B]): Future[B]
     
-    def onComplete[B](f: js.Function1[/* t */ Try[A], B]): Unit = js.native
+    def onComplete[B](f: js.Function1[/* t */ Try[A], B]): Unit
     
-    def recover[B /* <: A */](f: js.Function1[/* e */ Error, Optional[B]]): Future[A] = js.native
+    def recover[B /* <: A */](f: js.Function1[/* e */ Error, Optional[B]]): Future[A]
     
-    def recoverWith[B /* <: A */](f: js.Function1[/* e */ Error, Optional[Future[B]]]): Future[A] = js.native
+    def recoverWith[B /* <: A */](f: js.Function1[/* e */ Error, Optional[Future[B]]]): Future[A]
     
-    def transform[B](f: js.Function1[/* t */ Try[A], Try[B]]): Future[B] = js.native
+    def transform[B](f: js.Function1[/* t */ Try[A], Try[B]]): Future[B]
     
-    def transform1[B](fs: js.Function1[/* a */ A, B], ff: js.Function1[/* e */ Error, Error]): Future[B] = js.native
+    def transform1[B](fs: js.Function1[/* a */ A, B], ff: js.Function1[/* e */ Error, Error]): Future[B]
     
-    def transformWith[B](f: js.Function1[/* t */ Try[A], Future[B]]): Future[B] = js.native
+    def transformWith[B](f: js.Function1[/* t */ Try[A], Future[B]]): Future[B]
     
-    def value(): Optional[Try[A]] = js.native
+    def value(): Optional[Try[A]]
     
-    def zip[B](fu: Future[B]): Future[js.Tuple2[A, B]] = js.native
+    def zip[B](fu: Future[B]): Future[js.Tuple2[A, B]]
     
-    def zipWith[B, C](fu: Future[B], f: js.Function2[/* a */ A, /* b */ B, C]): Future[C] = js.native
+    def zipWith[B, C](fu: Future[B], f: js.Function2[/* a */ A, /* b */ B, C]): Future[C]
   }
   object Future {
     
+    @scala.inline
+    def apply[A](f: js.Function0[A]): Future[A] = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    @scala.inline
+    def apply[A](f: js.Promise[A]): Future[A] = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    
     @JSImport("scalike", "Future")
     @js.native
-    def apply[A](f: js.Function0[A]): Future[A] = js.native
-    @JSImport("scalike", "Future")
-    @js.native
-    def apply[A](f: js.Promise[A]): Future[A] = js.native
-    
-    @JSImport("scalike", "Future.failed")
-    @js.native
-    def failed[A](e: Error): Future[A] = js.native
-    
-    @JSImport("scalike", "Future.find")
-    @js.native
-    def find[A](fus: js.Array[Future[A]], f: js.Function1[/* a */ A, Boolean]): Future[Optional[A]] = js.native
-    
-    @JSImport("scalike", "Future.firstCompletedOf")
-    @js.native
-    def firstCompletedOf[A](fus: js.Array[Future[A]]): Future[A] = js.native
-    
-    @JSImport("scalike", "Future.foldLeft")
-    @js.native
-    def foldLeft[A, B](fu: js.Array[Future[A]], zero: B, f: js.Function2[/* b */ B, /* a */ A, B]): Future[B] = js.native
-    
-    @JSImport("scalike", "Future.fromPromise")
-    @js.native
-    def fromPromise[A](p: js.Promise[A]): Future[A] = js.native
-    
-    @JSImport("scalike", "Future.fromTry")
-    @js.native
-    def fromTry[A](t: Try[A]): Future[A] = js.native
-    
-    @JSImport("scalike", "Future.reduceLeft")
-    @js.native
-    def reduceLeft[A, B](fu: js.Array[Future[A]], f: js.Function2[/* b */ B, /* a */ A, B]): Future[B] = js.native
-    
-    @JSImport("scalike", "Future.sequence")
-    @js.native
-    def sequence[A](fus: js.Array[Future[A]]): Future[js.Array[A]] = js.native
-    
-    @JSImport("scalike", "Future.successful")
-    @js.native
-    def successful[A](a: A): Future[A] = js.native
-    
-    @JSImport("scalike", "Future.traverse")
-    @js.native
-    def traverse[A, B](fu: js.Array[A], f: js.Function1[/* a */ A, Future[B]]): Future[js.Array[B]] = js.native
-    
-    @JSImport("scalike", "Future.unit")
-    @js.native
-    def unit(): Future[Unit] = js.native
+    val ^ : js.Any = js.native
     
     @scala.inline
-    implicit class FutureMutableBuilder[Self <: Future[_], A] (val x: Self with Future[A]) extends AnyVal {
+    def failed[A](e: Error): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("failed")(e.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    
+    @scala.inline
+    def find[A](fus: js.Array[Future[A]], f: js.Function1[/* a */ A, Boolean]): Future[Optional[A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(fus.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[Optional[A]]]
+    
+    @scala.inline
+    def firstCompletedOf[A](fus: js.Array[Future[A]]): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("firstCompletedOf")(fus.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    
+    @scala.inline
+    def foldLeft[A, B](fu: js.Array[Future[A]], zero: B, f: js.Function2[/* b */ B, /* a */ A, B]): Future[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLeft")(fu.asInstanceOf[js.Any], zero.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[B]]
+    
+    @scala.inline
+    def fromPromise[A](p: js.Promise[A]): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(p.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    
+    @scala.inline
+    def fromTry[A](t: Try[A]): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTry")(t.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    
+    @scala.inline
+    def reduceLeft[A, B](fu: js.Array[Future[A]], f: js.Function2[/* b */ B, /* a */ A, B]): Future[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceLeft")(fu.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[B]]
+    
+    @scala.inline
+    def sequence[A](fus: js.Array[Future[A]]): Future[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(fus.asInstanceOf[js.Any]).asInstanceOf[Future[js.Array[A]]]
+    
+    @scala.inline
+    def successful[A](a: A): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("successful")(a.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    
+    @scala.inline
+    def traverse[A, B](fu: js.Array[A], f: js.Function1[/* a */ A, Future[B]]): Future[js.Array[B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(fu.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[js.Array[B]]]
+    
+    @scala.inline
+    def unit(): Future[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unit")().asInstanceOf[Future[Unit]]
+    
+    @scala.inline
+    implicit class FutureMutableBuilder[Self <: Future[?], A] (val x: Self & Future[A]) extends AnyVal {
       
       @scala.inline
       def setAndThen(value: js.Function1[/* t */ Try[A], js.Any] => Future[A]): Self = StObject.set(x, "andThen", js.Any.fromFunction1(value))
@@ -268,9 +260,8 @@ object mod {
     def run[G](f: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, G]): Future[G] = js.native
   }
   
-  @JSImport("scalike", "Left")
-  @js.native
-  def Left[A, B](a: A): Either[A, B] = js.native
+  @scala.inline
+  def Left[A, B](a: A): Either[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("Left")(a.asInstanceOf[js.Any]).asInstanceOf[Either[A, B]]
   
   @JSImport("scalike", "LeftProjection")
   @js.native
@@ -302,42 +293,41 @@ object mod {
   @js.native
   val None: Optional[js.Any] = js.native
   
-  @js.native
   trait Optional[A] extends StObject {
     
-    def apply1[B, C](ob: Optional[B], f: js.Function2[/* a */ A, /* b */ B, C]): Optional[C] = js.native
+    def apply1[B, C](ob: Optional[B], f: js.Function2[/* a */ A, /* b */ B, C]): Optional[C]
     
-    def apply2[B, C, D](ob: Optional[B], oc: Optional[C], f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Optional[D] = js.native
+    def apply2[B, C, D](ob: Optional[B], oc: Optional[C], f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Optional[D]
     
-    def chain[B](ob: Optional[B]): OptionalBuilder1[A, B] = js.native
+    def chain[B](ob: Optional[B]): OptionalBuilder1[A, B]
     
-    def contains[B /* <: A */](b: B): Boolean = js.native
+    def contains[B /* <: A */](b: B): Boolean
     
-    def exists(f: js.Function1[/* a */ A, Boolean]): Boolean = js.native
+    def exists(f: js.Function1[/* a */ A, Boolean]): Boolean
     
-    def filter(f: js.Function1[/* a */ A, Boolean]): Optional[A] = js.native
+    def filter(f: js.Function1[/* a */ A, Boolean]): Optional[A]
     
-    def flatMap[B](f: js.Function1[/* a */ A, Optional[B]]): Optional[B] = js.native
+    def flatMap[B](f: js.Function1[/* a */ A, Optional[B]]): Optional[B]
     
-    def flatten(): Optional[A] = js.native
+    def flatten(): Optional[A]
     
-    def fold[B](ifEmpty: B, f: js.Function1[/* a */ A, B]): B = js.native
+    def fold[B](ifEmpty: B, f: js.Function1[/* a */ A, B]): B
     
-    def forall(f: js.Function1[/* a */ A, Boolean]): Boolean = js.native
+    def forall(f: js.Function1[/* a */ A, Boolean]): Boolean
     
-    def foreach(f: js.Function1[/* a */ A, Unit]): Unit = js.native
+    def foreach(f: js.Function1[/* a */ A, Unit]): Unit
     
-    def get(): A = js.native
+    def get(): A
     
-    def getOrElse[B /* <: A */](a: B): A = js.native
+    def getOrElse[B /* <: A */](a: B): A
     
-    var isEmpty: Boolean = js.native
+    var isEmpty: Boolean
     
-    def map[B](f: js.Function1[/* a */ A, B]): Optional[B] = js.native
+    def map[B](f: js.Function1[/* a */ A, B]): Optional[B]
     
-    var nonEmpty: Boolean = js.native
+    var nonEmpty: Boolean
     
-    def orElse[B /* <: A */](ob: Optional[B]): Optional[A] = js.native
+    def orElse[B /* <: A */](ob: Optional[B]): Optional[A]
   }
   object Optional {
     
@@ -346,7 +336,7 @@ object mod {
     def apply[A](a: A): Optional[A] = js.native
     
     @scala.inline
-    implicit class OptionalMutableBuilder[Self <: Optional[_], A] (val x: Self with Optional[A]) extends AnyVal {
+    implicit class OptionalMutableBuilder[Self <: Optional[?], A] (val x: Self & Optional[A]) extends AnyVal {
       
       @scala.inline
       def setApply1(value: (Optional[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Optional[js.Any]): Self = StObject.set(x, "apply1", js.Any.fromFunction2(value))
@@ -498,9 +488,8 @@ object mod {
     def run[G](f: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, G]): Optional[G] = js.native
   }
   
-  @JSImport("scalike", "Right")
-  @js.native
-  def Right[A, B](b: B): Either[A, B] = js.native
+  @scala.inline
+  def Right[A, B](b: B): Either[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("Right")(b.asInstanceOf[js.Any]).asInstanceOf[Either[A, B]]
   
   @JSImport("scalike", "RightProjection")
   @js.native
@@ -528,52 +517,49 @@ object mod {
     def toOptional(): Optional[B] = js.native
   }
   
-  @JSImport("scalike", "Some")
-  @js.native
-  def Some[A](a: A): Optional[A] = js.native
+  @scala.inline
+  def Some[A](a: A): Optional[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Some")(a.asInstanceOf[js.Any]).asInstanceOf[Optional[A]]
   
-  @JSImport("scalike", "Success")
-  @js.native
-  def Success[A](a: A): Try[A] = js.native
+  @scala.inline
+  def Success[A](a: A): Try[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Success")(a.asInstanceOf[js.Any]).asInstanceOf[Try[A]]
   
-  @js.native
   trait Try[A] extends StObject {
     
-    def apply1[B, C](ob: Try[B], f: js.Function2[/* a */ A, /* b */ B, C]): Try[C] = js.native
+    def apply1[B, C](ob: Try[B], f: js.Function2[/* a */ A, /* b */ B, C]): Try[C]
     
-    def apply2[B, C, D](ob: Try[B], oc: Try[C], f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Try[D] = js.native
+    def apply2[B, C, D](ob: Try[B], oc: Try[C], f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Try[D]
     
-    def chain[B](ob: Try[B]): TryBuilder1[A, B] = js.native
+    def chain[B](ob: Try[B]): TryBuilder1[A, B]
     
-    def failed(): Try[A] = js.native
+    def failed(): Try[A]
     
-    def filter(f: js.Function1[/* a */ A, Boolean]): Try[A] = js.native
+    def filter(f: js.Function1[/* a */ A, Boolean]): Try[A]
     
-    def flatMap[B](f: js.Function1[/* a */ A, Try[B]]): Try[B] = js.native
+    def flatMap[B](f: js.Function1[/* a */ A, Try[B]]): Try[B]
     
-    def fold[B](fe: js.Function1[/* e */ Error, B], ff: js.Function1[/* a */ A, B]): B = js.native
+    def fold[B](fe: js.Function1[/* e */ Error, B], ff: js.Function1[/* a */ A, B]): B
     
-    def foreach[B](f: js.Function1[/* a */ A, Unit]): Unit = js.native
+    def foreach[B](f: js.Function1[/* a */ A, Unit]): Unit
     
-    def get(): A = js.native
+    def get(): A
     
-    def getError(): Error = js.native
+    def getError(): Error
     
-    def getOrElse[B /* <: A */](a: B): A = js.native
+    def getOrElse[B /* <: A */](a: B): A
     
-    var isFailure: Boolean = js.native
+    var isFailure: Boolean
     
-    var isSuccess: Boolean = js.native
+    var isSuccess: Boolean
     
-    def map[B](f: js.Function1[/* a */ A, B]): Try[B] = js.native
+    def map[B](f: js.Function1[/* a */ A, B]): Try[B]
     
-    def orElse[B /* <: A */](a: Try[B]): Try[A] = js.native
+    def orElse[B /* <: A */](a: Try[B]): Try[A]
     
-    def recover[B /* <: A */](f: js.Function1[/* e */ Error, Optional[Try[B]]]): Try[A] = js.native
+    def recover[B /* <: A */](f: js.Function1[/* e */ Error, Optional[Try[B]]]): Try[A]
     
-    def toOptional(): Optional[A] = js.native
+    def toOptional(): Optional[A]
     
-    def transform[B](fs: js.Function1[/* a */ A, Try[B]], ff: js.Function1[/* e */ Error, Try[B]]): Try[B] = js.native
+    def transform[B](fs: js.Function1[/* a */ A, Try[B]], ff: js.Function1[/* e */ Error, Try[B]]): Try[B]
   }
   object Try {
     
@@ -582,7 +568,7 @@ object mod {
     def apply[A](f: js.Function0[A]): Try[A] = js.native
     
     @scala.inline
-    implicit class TryMutableBuilder[Self <: Try[_], A] (val x: Self with Try[A]) extends AnyVal {
+    implicit class TryMutableBuilder[Self <: Try[?], A] (val x: Self & Try[A]) extends AnyVal {
       
       @scala.inline
       def setApply1(value: (Try[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Try[js.Any]): Self = StObject.set(x, "apply1", js.Any.fromFunction2(value))
@@ -730,22 +716,21 @@ object mod {
     def run[G](f: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, G]): Try[G] = js.native
   }
   
-  @js.native
   trait Either[A, B] extends StObject {
     
-    def fold[X](fa: js.Function1[/* a */ A, X], fb: js.Function1[/* b */ B, X]): X = js.native
+    def fold[X](fa: js.Function1[/* a */ A, X], fb: js.Function1[/* b */ B, X]): X
     
-    var isLeft: Boolean = js.native
+    var isLeft: Boolean
     
-    var isRight: Boolean = js.native
+    var isRight: Boolean
     
-    def left(): LeftProjection[A, B] = js.native
+    def left(): LeftProjection[A, B]
     
-    def right(): RightProjection[A, B] = js.native
+    def right(): RightProjection[A, B]
     
-    def swap(): Either[B, A] = js.native
+    def swap(): Either[B, A]
     
-    var value: A | B = js.native
+    var value: A | B
   }
   object Either {
     
@@ -764,7 +749,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class EitherMutableBuilder[Self <: Either[_, _], A, B] (val x: Self with (Either[A, B])) extends AnyVal {
+    implicit class EitherMutableBuilder[Self <: Either[?, ?], A, B] (val x: Self & (Either[A, B])) extends AnyVal {
       
       @scala.inline
       def setFold(value: (js.Function1[/* a */ A, js.Any], js.Function1[/* b */ B, js.Any]) => js.Any): Self = StObject.set(x, "fold", js.Any.fromFunction2(value))

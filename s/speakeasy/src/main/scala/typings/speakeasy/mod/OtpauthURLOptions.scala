@@ -3,49 +3,49 @@ package typings.speakeasy.mod
 import typings.speakeasy.speakeasyStrings.htop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OtpauthURLOptions extends SharedOptions {
+trait OtpauthURLOptions
+  extends StObject
+     with SharedOptions {
   
   /**
     * The initial counter value, required for HOTP.
     */
-  var counter: js.UndefOr[Double] = js.native
+  var counter: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of digits for the one-time passcode. Currently ignored
     * by Google Authenticator, defaults to 6
     */
-  var digits: js.UndefOr[Double] = js.native
+  var digits: js.UndefOr[Double] = js.undefined
   
   /**
     * The provider or service with which the secret key is associated.
     */
-  var issuer: js.UndefOr[String] = js.native
+  var issuer: js.UndefOr[String] = js.undefined
   
   /**
     * Used to identify the account with which the secret key is associated,
     * e.g. the user's email address.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * The length of time for which a TOTP code will be valid, in seconds.
     * Currently ignored by Google Authenticator, defaults to 30
     */
-  var period: js.UndefOr[Double] = js.native
+  var period: js.UndefOr[Double] = js.undefined
   
   /**
     * Shared secret key
     */
-  var secret: String = js.native
+  var secret: String
   
   /**
     * Either 'hotp' or 'totp', defaults to 'totp'
     */
-  var `type`: js.UndefOr[htop | typings.speakeasy.speakeasyStrings.totp] = js.native
+  var `type`: js.UndefOr[htop | typings.speakeasy.speakeasyStrings.totp] = js.undefined
 }
 object OtpauthURLOptions {
   

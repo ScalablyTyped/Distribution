@@ -11,7 +11,6 @@ import typings.officeJs.officeJsStrings.None
 import typings.officeJs.officeJsStrings.Single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ConditionalRangeFont extends ClientObject {
+trait ConditionalRangeFont
+  extends StObject
+     with ClientObject {
   
   /**
     *

@@ -2,7 +2,6 @@ package typings.cordovaPluginWebsql
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,16 +20,16 @@ trait Database extends StObject {
   def readTransaction(callback: js.Function1[/* transaction */ SqlTransaction, Unit]): Unit = js.native
   def readTransaction(
     callback: js.Function1[/* transaction */ SqlTransaction, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    successCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def readTransaction(
-    callback: js.Function1[/* transaction */ SqlTransaction, Unit],
     errorCallback: js.Function1[/* error */ SqlError, Unit]
   ): Unit = js.native
   def readTransaction(
     callback: js.Function1[/* transaction */ SqlTransaction, Unit],
     errorCallback: js.Function1[/* error */ SqlError, Unit],
+    successCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def readTransaction(
+    callback: js.Function1[/* transaction */ SqlTransaction, Unit],
+    errorCallback: Unit,
     successCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -45,16 +44,16 @@ trait Database extends StObject {
   def transaction(callback: js.Function1[/* transaction */ SqlTransaction, Unit]): Unit = js.native
   def transaction(
     callback: js.Function1[/* transaction */ SqlTransaction, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    successCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def transaction(
-    callback: js.Function1[/* transaction */ SqlTransaction, Unit],
     errorCallback: js.Function1[/* error */ SqlError, Unit]
   ): Unit = js.native
   def transaction(
     callback: js.Function1[/* transaction */ SqlTransaction, Unit],
     errorCallback: js.Function1[/* error */ SqlError, Unit],
+    successCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def transaction(
+    callback: js.Function1[/* transaction */ SqlTransaction, Unit],
+    errorCallback: Unit,
     successCallback: js.Function0[Unit]
   ): Unit = js.native
   

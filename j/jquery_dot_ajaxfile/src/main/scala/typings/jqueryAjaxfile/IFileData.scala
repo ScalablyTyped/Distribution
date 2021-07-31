@@ -3,15 +3,13 @@ package typings.jqueryAjaxfile
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFileData extends StObject {
   
-  var element: HTMLInputElement = js.native
+  var element: HTMLInputElement
   
-  var name: String = js.native
+  var name: String
 }
 object IFileData {
   

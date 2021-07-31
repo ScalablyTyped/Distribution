@@ -3,29 +3,27 @@ package typings.inboxsdk.mod.Conversations
 import typings.inboxsdk.inboxsdkStrings.MORE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageViewToolbarButtonDescriptor extends StObject {
   
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
-  var iconUrl: String = js.native
+  var iconUrl: String
   
-  def onClick(): Unit = js.native
+  def onClick(): Unit
   
-  var orderHint: Double = js.native
+  var orderHint: Double
   
-  var section: MORE = js.native
+  var section: MORE
   
-  var title: String = js.native
+  var title: String
 }
 object MessageViewToolbarButtonDescriptor {
   
   @scala.inline
-  def apply(iconUrl: String, onClick: () => Unit, orderHint: Double, section: MORE, title: String): MessageViewToolbarButtonDescriptor = {
-    val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), orderHint = orderHint.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  def apply(iconUrl: String, onClick: () => Unit, orderHint: Double, title: String): MessageViewToolbarButtonDescriptor = {
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), orderHint = orderHint.asInstanceOf[js.Any], section = "MORE", title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageViewToolbarButtonDescriptor]
   }
   

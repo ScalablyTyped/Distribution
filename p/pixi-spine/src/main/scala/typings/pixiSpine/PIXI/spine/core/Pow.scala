@@ -2,13 +2,13 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Pow extends Interpolation {
+trait Pow
+  extends StObject
+     with Interpolation {
   
-  var power: Double = js.native
+  var power: Double
 }
 object Pow {
   

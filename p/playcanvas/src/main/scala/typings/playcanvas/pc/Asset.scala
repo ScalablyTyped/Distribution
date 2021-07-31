@@ -4,7 +4,6 @@ import typings.playcanvas.anon.Contents
 import typings.playcanvas.pc.callbacks.AssetReady
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,7 +44,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.crossOrigin] - For use with texture resources. For browser-supported image formats only, enable cross origin.
   */
 @js.native
-trait Asset extends EventHandler {
+trait Asset
+  extends StObject
+     with EventHandler {
   
   /**
     * Optional JSON data that contains either the complete resource data (e.g. in the case of a material) or additional data (e.g. in the case of a model it contains mappings from mesh to material)
@@ -123,7 +124,7 @@ trait Asset extends EventHandler {
   /**
     * A reference to the resources of the asset when it's loaded. An asset can hold more runtime resources than one e.g. cubemaps
     */
-  var resources: js.Array[_] = js.native
+  var resources: js.Array[js.Any] = js.native
   
   /**
     * Interface for tagging. Allows to find assets by tags using {@link pc.AssetRegistry#findByTag} method.

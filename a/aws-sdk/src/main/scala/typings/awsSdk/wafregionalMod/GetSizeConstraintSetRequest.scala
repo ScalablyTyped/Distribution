@@ -2,16 +2,14 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSizeConstraintSetRequest extends StObject {
   
   /**
     * The SizeConstraintSetId of the SizeConstraintSet that you want to get. SizeConstraintSetId is returned by CreateSizeConstraintSet and by ListSizeConstraintSets.
     */
-  var SizeConstraintSetId: ResourceId = js.native
+  var SizeConstraintSetId: ResourceId
 }
 object GetSizeConstraintSetRequest {
   

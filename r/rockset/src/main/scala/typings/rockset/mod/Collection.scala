@@ -10,41 +10,39 @@ import typings.rockset.rocksetStrings.RESUMING
 import typings.rockset.rocksetStrings.UNKNOWN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Collection extends StObject {
   
   // ISO-8601 date
-  var created_at: js.UndefOr[String] = js.native
+  var created_at: js.UndefOr[String] = js.undefined
   
   // email of user who created the collection
-  var created_by: js.UndefOr[String] = js.native
+  var created_by: js.UndefOr[String] = js.undefined
   
   // text describing the collection
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   // list of mappings applied on all documents in a collection
-  var field_mappings: js.UndefOr[js.Array[FieldMappingV2]] = js.native
+  var field_mappings: js.UndefOr[js.Array[FieldMappingV2]] = js.undefined
   
   // unique identifer for collection, can contain alphanumeric or dash characters
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   // number of seconds after which data is purged based on event time
-  var retention_secs: js.UndefOr[Double] = js.native
+  var retention_secs: js.UndefOr[Double] = js.undefined
   
   // list of sources from which collection ingests
-  var sources: js.UndefOr[js.Array[Source]] = js.native
+  var sources: js.UndefOr[js.Array[Source]] = js.undefined
   
   // metrics about the collection
-  var stats: js.UndefOr[CollectionStats] = js.native
+  var stats: js.UndefOr[CollectionStats] = js.undefined
   
   // current status of collection, one of: CREATED, READY, DELETED
-  var status: js.UndefOr[CREATED | READY | PAUSED | DELETED | PAUSING | RESUMING | CATCHINGUP | UNKNOWN] = js.native
+  var status: js.UndefOr[CREATED | READY | PAUSED | DELETED | PAUSING | RESUMING | CATCHINGUP | UNKNOWN] = js.undefined
   
   // name of the workspace that the collection is in
-  var workspace: js.UndefOr[String] = js.native
+  var workspace: js.UndefOr[String] = js.undefined
 }
 object Collection {
   

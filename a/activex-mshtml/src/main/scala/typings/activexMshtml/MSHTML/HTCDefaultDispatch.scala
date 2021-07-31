@@ -2,22 +2,20 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTCDefaultDispatch extends StObject {
   
-  def CreateEventObject(): IHTMLEventObj = js.native
+  def CreateEventObject(): IHTMLEventObj
   
   @JSName("MSHTML.HTCDefaultDispatch_typekey")
-  var MSHTMLDotHTCDefaultDispatch_typekey: HTCDefaultDispatch = js.native
+  var MSHTMLDotHTCDefaultDispatch_typekey: HTCDefaultDispatch
   
-  val defaults: js.Any = js.native
+  val defaults: js.Any
   
-  val document: js.Any = js.native
+  val document: js.Any
   
-  val element: IHTMLElement = js.native
+  val element: IHTMLElement
 }
 object HTCDefaultDispatch {
   

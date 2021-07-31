@@ -2,19 +2,17 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Borders extends StObject {
   
-  var bottom: Border = js.native
+  var bottom: Border
   
-  var left: Border = js.native
+  var left: Border
   
-  var right: Border = js.native
+  var right: Border
   
-  var top: Border = js.native
+  var top: Border
 }
 object Borders {
   

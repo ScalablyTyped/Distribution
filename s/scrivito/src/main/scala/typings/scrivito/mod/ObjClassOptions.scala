@@ -3,17 +3,15 @@ package typings.scrivito.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjClassOptions extends StObject {
   
-  var attributes: Record[String, Attribute | AttributeWithOptions] = js.native
+  var attributes: Record[String, Attribute | AttributeWithOptions]
   
-  var extend: js.UndefOr[ObjClass] = js.native
+  var extend: js.UndefOr[ObjClass] = js.undefined
   
-  var extractTextAttributes: js.UndefOr[js.Array[String]] = js.native
+  var extractTextAttributes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ObjClassOptions {
   

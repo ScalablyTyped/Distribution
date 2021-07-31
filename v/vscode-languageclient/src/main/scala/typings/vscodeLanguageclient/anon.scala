@@ -10,29 +10,46 @@ import typings.vscodeLanguageclient.mod._ServerOptions
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code2Protocol extends StObject {
     
-    def code2Protocol(value: Uri): String = js.native
+    def code2Protocol(value: Uri): String
     @JSName("code2Protocol")
-    var code2Protocol_Original: URIConverter = js.native
+    var code2Protocol_Original: URIConverter
     
-    def protocol2Code(value: String): Uri = js.native
+    def protocol2Code(value: String): Uri
     @JSName("protocol2Code")
-    var protocol2Code_Original: typings.vscodeLanguageclient.protocolConverterMod.URIConverter = js.native
+    var protocol2Code_Original: typings.vscodeLanguageclient.protocolConverterMod.URIConverter
+  }
+  object Code2Protocol {
+    
+    @scala.inline
+    def apply(code2Protocol: /* value */ Uri => String, protocol2Code: /* value */ String => Uri): Code2Protocol = {
+      val __obj = js.Dynamic.literal(code2Protocol = js.Any.fromFunction1(code2Protocol), protocol2Code = js.Any.fromFunction1(protocol2Code))
+      __obj.asInstanceOf[Code2Protocol]
+    }
+    
+    @scala.inline
+    implicit class Code2ProtocolMutableBuilder[Self <: Code2Protocol] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCode2Protocol(value: /* value */ Uri => String): Self = StObject.set(x, "code2Protocol", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setProtocol2Code(value: /* value */ String => Uri): Self = StObject.set(x, "protocol2Code", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
-  trait Debug extends _ServerOptions {
+  trait Debug
+    extends StObject
+       with _ServerOptions {
     
-    var debug: Executable = js.native
+    var debug: Executable
     
-    var run: Executable = js.native
+    var run: Executable
   }
   object Debug {
     
@@ -53,12 +70,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Document extends StObject {
     
-    var document: TextDocument = js.native
+    var document: TextDocument
     
-    var range: Range = js.native
+    var range: Range
   }
   object Document {
     
@@ -79,10 +95,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DocumentSelector extends StObject {
     
-    var documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector = js.native
+    var documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector
   }
   object DocumentSelector {
     
@@ -103,10 +118,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IncludeDeclaration extends StObject {
     
-    var includeDeclaration: Boolean = js.native
+    var includeDeclaration: Boolean
   }
   object IncludeDeclaration {
     
@@ -124,12 +138,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Placeholder extends StObject {
     
-    var placeholder: String = js.native
+    var placeholder: String
     
-    var range: Range = js.native
+    var range: Range
   }
   object Placeholder {
     
@@ -150,12 +163,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Run extends _ServerOptions {
+  trait Run
+    extends StObject
+       with _ServerOptions {
     
-    var debug: NodeModule = js.native
+    var debug: NodeModule
     
-    var run: NodeModule = js.native
+    var run: NodeModule
   }
   object Run {
     
@@ -176,10 +190,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Send[T /* <: js.Function */] extends StObject {
     
-    var send: T = js.native
+    var send: T
   }
   object Send {
     
@@ -190,7 +203,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class SendMutableBuilder[Self <: Send[_], T /* <: js.Function */] (val x: Self with Send[T]) extends AnyVal {
+    implicit class SendMutableBuilder[Self <: Send[?], T /* <: js.Function */] (val x: Self & Send[T]) extends AnyVal {
       
       @scala.inline
       def setSend(value: T): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])

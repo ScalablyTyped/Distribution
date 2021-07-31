@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdatePartitionFailureEntry extends StObject {
   
   /**
     * The details about the batch update partition error.
     */
-  var ErrorDetail: js.UndefOr[typings.awsSdk.glueMod.ErrorDetail] = js.native
+  var ErrorDetail: js.UndefOr[typings.awsSdk.glueMod.ErrorDetail] = js.undefined
   
   /**
     * A list of values defining the partitions.
     */
-  var PartitionValueList: js.UndefOr[BoundedPartitionValueList] = js.native
+  var PartitionValueList: js.UndefOr[BoundedPartitionValueList] = js.undefined
 }
 object BatchUpdatePartitionFailureEntry {
   

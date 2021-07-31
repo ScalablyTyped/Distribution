@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TodoCommentDescriptor extends StObject {
   
-  var priority: Double = js.native
+  var priority: Double
   
-  var text: java.lang.String = js.native
+  var text: java.lang.String
 }
 object TodoCommentDescriptor {
   

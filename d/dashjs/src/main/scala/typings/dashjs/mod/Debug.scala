@@ -2,25 +2,23 @@ package typings.dashjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Debug extends StObject {
   
-  def getLogLevel(): LogLevel = js.native
+  def getLogLevel(): LogLevel
   
-  def getLogToBrowserConsole(): Boolean = js.native
+  def getLogToBrowserConsole(): Boolean
   
-  def getLogger(): Logger = js.native
+  def getLogger(): Logger
   
-  def setCalleeNameVisible(flag: Boolean): Unit = js.native
+  def setCalleeNameVisible(flag: Boolean): Unit
   
-  def setLogLevel(level: LogLevel): Unit = js.native
+  def setLogLevel(level: LogLevel): Unit
   
-  def setLogTimestampVisible(flag: Boolean): Unit = js.native
+  def setLogTimestampVisible(flag: Boolean): Unit
   
-  def setLogToBrowserConsole(flag: Boolean): Unit = js.native
+  def setLogToBrowserConsole(flag: Boolean): Unit
 }
 object Debug {
   

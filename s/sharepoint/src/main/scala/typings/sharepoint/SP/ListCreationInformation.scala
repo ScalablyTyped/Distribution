@@ -2,47 +2,47 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListCreationInformation extends ClientValueObject {
+trait ListCreationInformation
+  extends StObject
+     with ClientValueObject {
   
-  def get_customSchemaXml(): String = js.native
+  def get_customSchemaXml(): String
   
-  def get_dataSourceProperties(): js.Any = js.native
+  def get_dataSourceProperties(): js.Any
   
-  def get_description(): String = js.native
+  def get_description(): String
   
-  def get_documentTemplateType(): Double = js.native
+  def get_documentTemplateType(): Double
   
-  def get_quickLaunchOption(): QuickLaunchOptions = js.native
+  def get_quickLaunchOption(): QuickLaunchOptions
   
-  def get_templateFeatureId(): Guid = js.native
+  def get_templateFeatureId(): Guid
   
-  def get_templateType(): Double = js.native
+  def get_templateType(): Double
   
-  def get_title(): String = js.native
+  def get_title(): String
   
-  def get_url(): String = js.native
+  def get_url(): String
   
-  def set_customSchemaXml(value: String): Unit = js.native
+  def set_customSchemaXml(value: String): Unit
   
-  def set_dataSourceProperties(value: js.Any): Unit = js.native
+  def set_dataSourceProperties(value: js.Any): Unit
   
-  def set_description(value: String): Unit = js.native
+  def set_description(value: String): Unit
   
-  def set_documentTemplateType(value: Double): Unit = js.native
+  def set_documentTemplateType(value: Double): Unit
   
-  def set_quickLaunchOption(value: QuickLaunchOptions): Unit = js.native
+  def set_quickLaunchOption(value: QuickLaunchOptions): Unit
   
-  def set_templateFeatureId(value: Guid): Unit = js.native
+  def set_templateFeatureId(value: Guid): Unit
   
-  def set_templateType(value: Double): Unit = js.native
+  def set_templateType(value: Double): Unit
   
-  def set_title(value: String): Unit = js.native
+  def set_title(value: String): Unit
   
-  def set_url(value: String): Unit = js.native
+  def set_url(value: String): Unit
 }
 object ListCreationInformation {
   

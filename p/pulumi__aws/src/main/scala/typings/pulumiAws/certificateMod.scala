@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object certificateMod {
@@ -27,7 +26,7 @@ object certificateMod {
       */
     def this(name: String) = this()
     def this(name: String, args: CertificateArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: CertificateArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -100,6 +99,10 @@ object certificateMod {
   /* static members */
   object Certificate {
     
+    @JSImport("@pulumi/aws/acm/certificate", "Certificate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Certificate resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -109,77 +112,71 @@ object certificateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/acm/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Certificate = js.native
-    @JSImport("@pulumi/aws/acm/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Certificate = js.native
-    @JSImport("@pulumi/aws/acm/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateState): Certificate = js.native
-    @JSImport("@pulumi/aws/acm/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateState): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
     
     /**
       * Returns true if the given object is an instance of Certificate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/acm/certificate", "Certificate.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acm/certificate.Certificate */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acm/certificate.Certificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/acm/certificate.Certificate */ Boolean]
   }
   
-  @js.native
   trait CertificateArgs extends StObject {
     
     /**
       * ARN of an ACMPCA
       */
-    val certificateAuthorityArn: js.UndefOr[Input[String]] = js.native
+    val certificateAuthorityArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate's PEM-formatted public key
       */
-    val certificateBody: js.UndefOr[Input[String]] = js.native
+    val certificateBody: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate's PEM-formatted chain
       * * Creating a private CA issued certificate
       */
-    val certificateChain: js.UndefOr[Input[String]] = js.native
+    val certificateChain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A domain name for which the certificate should be issued
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block used to set certificate options. Detailed below.
       * * Importing an existing certificate
       */
-    val options: js.UndefOr[Input[typings.pulumiAws.inputMod.acm.CertificateOptions]] = js.native
+    val options: js.UndefOr[Input[typings.pulumiAws.inputMod.acm.CertificateOptions]] = js.undefined
     
     /**
       * The certificate's PEM-formatted private key
       */
-    val privateKey: js.UndefOr[Input[String]] = js.native
+    val privateKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of domains that should be SANs in the issued certificate. To remove all elements of a previously configured list, set this value equal to an empty list (`[]`) to trigger recreation.
       */
-    val subjectAlternativeNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subjectAlternativeNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into the provider.
       */
-    val validationMethod: js.UndefOr[Input[String]] = js.native
+    val validationMethod: js.UndefOr[Input[String]] = js.undefined
   }
   object CertificateArgs {
     
@@ -251,34 +248,33 @@ object certificateMod {
     }
   }
   
-  @js.native
   trait CertificateState extends StObject {
     
     /**
       * The ARN of the certificate
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ARN of an ACMPCA
       */
-    val certificateAuthorityArn: js.UndefOr[Input[String]] = js.native
+    val certificateAuthorityArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate's PEM-formatted public key
       */
-    val certificateBody: js.UndefOr[Input[String]] = js.native
+    val certificateBody: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate's PEM-formatted chain
       * * Creating a private CA issued certificate
       */
-    val certificateChain: js.UndefOr[Input[String]] = js.native
+    val certificateChain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A domain name for which the certificate should be issued
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of domain validation objects which can be used to complete certificate validation. Can have more than one element, e.g. if SANs are defined. Only set if `DNS`-validation was used.
@@ -287,43 +283,43 @@ object certificateMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.acm.CertificateDomainValidationOption]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration block used to set certificate options. Detailed below.
       * * Importing an existing certificate
       */
-    val options: js.UndefOr[Input[typings.pulumiAws.inputMod.acm.CertificateOptions]] = js.native
+    val options: js.UndefOr[Input[typings.pulumiAws.inputMod.acm.CertificateOptions]] = js.undefined
     
     /**
       * The certificate's PEM-formatted private key
       */
-    val privateKey: js.UndefOr[Input[String]] = js.native
+    val privateKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Status of the certificate.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of domains that should be SANs in the issued certificate. To remove all elements of a previously configured list, set this value equal to an empty list (`[]`) to trigger recreation.
       */
-    val subjectAlternativeNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subjectAlternativeNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A list of addresses that received a validation E-Mail. Only set if `EMAIL`-validation was used.
       */
-    val validationEmails: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val validationEmails: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into the provider.
       */
-    val validationMethod: js.UndefOr[Input[String]] = js.native
+    val validationMethod: js.UndefOr[Input[String]] = js.undefined
   }
   object CertificateState {
     

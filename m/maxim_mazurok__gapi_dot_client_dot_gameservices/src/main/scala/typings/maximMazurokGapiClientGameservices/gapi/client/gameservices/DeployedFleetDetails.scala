@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeployedFleetDetails extends StObject {
   
   /** Information about the Agones autoscaler for that fleet. */
-  var deployedAutoscaler: js.UndefOr[DeployedFleetAutoscaler] = js.native
+  var deployedAutoscaler: js.UndefOr[DeployedFleetAutoscaler] = js.undefined
   
   /** Information about the Agones fleet. */
-  var deployedFleet: js.UndefOr[DeployedFleet] = js.native
+  var deployedFleet: js.UndefOr[DeployedFleet] = js.undefined
 }
 object DeployedFleetDetails {
   

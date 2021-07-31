@@ -2,36 +2,34 @@ package typings.awsSdk.acmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportCertificateRequest extends StObject {
   
   /**
     * The certificate to import.
     */
-  var Certificate: CertificateBodyBlob = js.native
+  var Certificate: CertificateBodyBlob
   
   /**
     * The Amazon Resource Name (ARN) of an imported certificate to replace. To import a new certificate, omit this field. 
     */
-  var CertificateArn: js.UndefOr[Arn] = js.native
+  var CertificateArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The PEM encoded certificate chain.
     */
-  var CertificateChain: js.UndefOr[CertificateChainBlob] = js.native
+  var CertificateChain: js.UndefOr[CertificateChainBlob] = js.undefined
   
   /**
     * The private key that matches the public key in the certificate.
     */
-  var PrivateKey: PrivateKeyBlob = js.native
+  var PrivateKey: PrivateKeyBlob
   
   /**
     * One or more resource tags to associate with the imported certificate.  Note: You cannot apply tags when reimporting a certificate.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ImportCertificateRequest {
   

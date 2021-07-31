@@ -2,23 +2,21 @@ package typings.reactGoogleMapsLoader
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Typeofgeometry extends StObject {
     
-    val encoding: js.Any = js.native
+    val encoding: js.Any
     
-    val poly: js.Any = js.native
+    val poly: js.Any
     
     /**
       * Utility functions for computing geodesic angles, distances and areas.
       * The default radius is Earth's radius of 6378137 meters.
       */
-    val spherical: js.Any = js.native
+    val spherical: js.Any
   }
   object Typeofgeometry {
     

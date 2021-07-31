@@ -3,19 +3,17 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFIndirectPropertyIDLevelType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IIndirectPropertyIDLevel extends StObject {
   
-  def Clone(): IIndirectPropertyIDLevel = js.native
+  def Clone(): IIndirectPropertyIDLevel
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var LevelType: MFIndirectPropertyIDLevelType = js.native
+  var LevelType: MFIndirectPropertyIDLevelType
   
-  def ToJSON(): String = js.native
+  def ToJSON(): String
 }
 object IIndirectPropertyIDLevel {
   

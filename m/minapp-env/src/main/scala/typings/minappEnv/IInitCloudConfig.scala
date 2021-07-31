@@ -3,15 +3,13 @@ package typings.minappEnv
 import typings.minappEnv.anon.Database
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInitCloudConfig extends StObject {
   
-  var env: js.UndefOr[java.lang.String | Database] = js.native
+  var env: js.UndefOr[java.lang.String | Database] = js.undefined
   
-  var traceUser: js.UndefOr[scala.Boolean] = js.native
+  var traceUser: js.UndefOr[scala.Boolean] = js.undefined
 }
 object IInitCloudConfig {
   

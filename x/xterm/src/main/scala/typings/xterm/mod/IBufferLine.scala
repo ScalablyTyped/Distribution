@@ -2,7 +2,6 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,11 +45,11 @@ trait IBufferLine extends StObject {
     * @param endColumn The column to end at (exclusive).
     */
   def translateToString(): String = js.native
-  def translateToString(trimRight: js.UndefOr[scala.Nothing], startColumn: js.UndefOr[scala.Nothing], endColumn: Double): String = js.native
-  def translateToString(trimRight: js.UndefOr[scala.Nothing], startColumn: Double): String = js.native
-  def translateToString(trimRight: js.UndefOr[scala.Nothing], startColumn: Double, endColumn: Double): String = js.native
   def translateToString(trimRight: Boolean): String = js.native
-  def translateToString(trimRight: Boolean, startColumn: js.UndefOr[scala.Nothing], endColumn: Double): String = js.native
   def translateToString(trimRight: Boolean, startColumn: Double): String = js.native
   def translateToString(trimRight: Boolean, startColumn: Double, endColumn: Double): String = js.native
+  def translateToString(trimRight: Boolean, startColumn: Unit, endColumn: Double): String = js.native
+  def translateToString(trimRight: Unit, startColumn: Double): String = js.native
+  def translateToString(trimRight: Unit, startColumn: Double, endColumn: Double): String = js.native
+  def translateToString(trimRight: Unit, startColumn: Unit, endColumn: Double): String = js.native
 }

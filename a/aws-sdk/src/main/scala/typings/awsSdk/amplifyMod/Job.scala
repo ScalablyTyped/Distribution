@@ -2,21 +2,19 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Job extends StObject {
   
   /**
     *  The execution steps for an execution job, for an Amplify app. 
     */
-  var steps: Steps = js.native
+  var steps: Steps
   
   /**
     *  Describes the summary for an execution job for an Amplify app. 
     */
-  var summary: JobSummary = js.native
+  var summary: JobSummary
 }
 object Job {
   

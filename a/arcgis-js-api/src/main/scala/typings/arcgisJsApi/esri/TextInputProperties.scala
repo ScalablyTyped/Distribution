@@ -2,25 +2,25 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextInputProperties extends InputProperties {
+trait TextInputProperties
+  extends StObject
+     with InputProperties {
   
   /**
     * When set, defines the input's maximum length.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#maxLength)
     */
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
   /**
     * When set, defines the input's minimum length.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#minLength)
     */
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
 }
 object TextInputProperties {
   

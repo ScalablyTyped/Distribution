@@ -3,15 +3,15 @@ package typings.exceljs.mod
 import typings.exceljs.anon.PartialColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BorderDiagonal extends Border {
+trait BorderDiagonal
+  extends StObject
+     with Border {
   
-  var down: Boolean = js.native
+  var down: Boolean
   
-  var up: Boolean = js.native
+  var up: Boolean
 }
 object BorderDiagonal {
   

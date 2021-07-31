@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEventTrackersResponse extends StObject {
   
   /**
     * A list of event trackers.
     */
-  var eventTrackers: js.UndefOr[EventTrackers] = js.native
+  var eventTrackers: js.UndefOr[EventTrackers] = js.undefined
   
   /**
     * A token for getting the next set of event trackers (if they exist).
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListEventTrackersResponse {
   

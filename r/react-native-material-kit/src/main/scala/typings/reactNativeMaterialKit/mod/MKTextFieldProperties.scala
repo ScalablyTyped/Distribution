@@ -5,38 +5,38 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNativeMaterialKit.mod.MKPropTypes.font
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactNativeMaterialKit.mod.FloatingLabelProperties because var conflicts: allowFontScaling. Inlined floatingLabelEnabled, floatingLabelAniDuration, floatingLabelBottomMargin, floatingLabelFont */ @js.native
-trait MKTextFieldProperties extends TextInputProps {
+- typings.reactNativeMaterialKit.mod.FloatingLabelProperties because var conflicts: allowFontScaling. Inlined floatingLabelEnabled, floatingLabelAniDuration, floatingLabelBottomMargin, floatingLabelFont */ trait MKTextFieldProperties
+  extends StObject
+     with TextInputProps {
   
-  var additionalInputProps: js.UndefOr[TextInputProps] = js.native
+  var additionalInputProps: js.UndefOr[TextInputProps] = js.undefined
   
-  var floatingLabelAniDuration: js.UndefOr[Double] = js.native
+  var floatingLabelAniDuration: js.UndefOr[Double] = js.undefined
   
-  var floatingLabelBottomMargin: js.UndefOr[Double] = js.native
+  var floatingLabelBottomMargin: js.UndefOr[Double] = js.undefined
   
-  var floatingLabelEnabled: js.UndefOr[Boolean] = js.native
+  var floatingLabelEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var floatingLabelFont: js.UndefOr[font] = js.native
+  var floatingLabelFont: js.UndefOr[font] = js.undefined
   
-  var highlightColor: js.UndefOr[String] = js.native
+  var highlightColor: js.UndefOr[String] = js.undefined
   
-  var onTextChange: js.UndefOr[js.Function1[/* val */ String, Unit]] = js.native
+  var onTextChange: js.UndefOr[js.Function1[/* val */ String, Unit]] = js.undefined
   
-  var password: js.UndefOr[Boolean] = js.native
+  var password: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var textInputStyle: js.UndefOr[TextStyle] = js.native
+  var textInputStyle: js.UndefOr[TextStyle] = js.undefined
   
-  var tintColor: js.UndefOr[String] = js.native
+  var tintColor: js.UndefOr[String] = js.undefined
   
-  var underlineEnabled: js.UndefOr[Boolean] = js.native
+  var underlineEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var underlineSize: js.UndefOr[Double] = js.native
+  var underlineSize: js.UndefOr[Double] = js.undefined
 }
 object MKTextFieldProperties {
   

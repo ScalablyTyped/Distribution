@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.UsersSetPrimaryEmailVisibilityForAuthen
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersUsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint extends StObject {
   
-  var parameters: UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint = js.native
+  var parameters: UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint
   
-  var request: UsersSetPrimaryEmailVisibilityForAuthenticatedRequestOptions = js.native
+  var request: UsersSetPrimaryEmailVisibilityForAuthenticatedRequestOptions
   
-  var response: OctokitResponse[UsersSetPrimaryEmailVisibilityForAuthenticatedResponseData] = js.native
+  var response: OctokitResponse[UsersSetPrimaryEmailVisibilityForAuthenticatedResponseData]
 }
 object ParametersUsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint {
   

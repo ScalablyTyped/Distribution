@@ -2,7 +2,6 @@ package typings.riotGamesApi.RiotGamesAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object FeaturedGames {
   
-  @js.native
   trait BannedChampion extends StObject {
     
-    var championId: Double = js.native
+    var championId: Double
     
-    var pickTurn: Double = js.native
+    var pickTurn: Double
     
-    var teamId: Double = js.native
+    var teamId: Double
   }
   object BannedChampion {
     
@@ -41,30 +39,29 @@ object FeaturedGames {
     }
   }
   
-  @js.native
   trait FeaturedGameInfo extends StObject {
     
-    var bannedChampions: js.Array[BannedChampion] = js.native
+    var bannedChampions: js.Array[BannedChampion]
     
-    var gameId: Double = js.native
+    var gameId: Double
     
-    var gameLength: Double = js.native
+    var gameLength: Double
     
-    var gameMode: String = js.native
+    var gameMode: String
     
-    var gameQueueConfigId: Double = js.native
+    var gameQueueConfigId: Double
     
-    var gameStartTime: Double = js.native
+    var gameStartTime: Double
     
-    var gameType: String = js.native
+    var gameType: String
     
-    var mapId: Double = js.native
+    var mapId: Double
     
-    var observers: Observer = js.native
+    var observers: Observer
     
-    var participants: js.Array[Participant] = js.native
+    var participants: js.Array[Participant]
     
-    var plateformId: String = js.native
+    var plateformId: String
   }
   object FeaturedGameInfo {
     
@@ -130,12 +127,11 @@ object FeaturedGames {
     }
   }
   
-  @js.native
   trait FeaturedGames extends StObject {
     
-    var clientRefreshInterval: Double = js.native
+    var clientRefreshInterval: Double
     
-    var gameList: js.Array[FeaturedGameInfo] = js.native
+    var gameList: js.Array[FeaturedGameInfo]
   }
   object FeaturedGames {
     
@@ -159,10 +155,9 @@ object FeaturedGames {
     }
   }
   
-  @js.native
   trait Observer extends StObject {
     
-    var encryptionKey: String = js.native
+    var encryptionKey: String
   }
   object Observer {
     
@@ -180,22 +175,21 @@ object FeaturedGames {
     }
   }
   
-  @js.native
   trait Participant extends StObject {
     
-    var bot: Boolean = js.native
+    var bot: Boolean
     
-    var championId: Double = js.native
+    var championId: Double
     
-    var profileIconId: Double = js.native
+    var profileIconId: Double
     
-    var spell1Id: Double = js.native
+    var spell1Id: Double
     
-    var spell2Id: Double = js.native
+    var spell2Id: Double
     
-    var summonerName: String = js.native
+    var summonerName: String
     
-    var teamId: Double = js.native
+    var teamId: Double
   }
   object Participant {
     

@@ -2,7 +2,6 @@ package typings.finch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,9 +19,9 @@ trait FinchStatic extends StObject {
   def navigate(queryParams: js.Any, doUpdate: Boolean): Unit = js.native
   def navigate(uri: String): Unit = js.native
   def navigate(uri: String, doUpdate: Boolean): Unit = js.native
-  def navigate(uri: String, queryParams: js.UndefOr[scala.Nothing], doUpdate: Boolean): Unit = js.native
   def navigate(uri: String, queryParams: js.Any): Unit = js.native
   def navigate(uri: String, queryParams: js.Any, doUpdate: Boolean): Unit = js.native
+  def navigate(uri: String, queryParams: Unit, doUpdate: Boolean): Unit = js.native
   
   def observe(argN: js.Array[String], callback: js.Function1[/* params */ ObserveCallback, Unit]): Unit = js.native
   def observe(args: js.Any*): Unit = js.native

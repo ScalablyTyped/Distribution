@@ -10,9 +10,9 @@ Transform a string between `camelCase`, `PascalCase`, `Capital Case`, `snake_cas
 | ------------------ | :-------------: |
 | Full name          | change-case |
 | Keywords           | change, case, convert, transform, camel-case, pascal-case, param-case, kebab-case, header-case |
-| # releases         | 6 |
-| # dependents       | 1389 |
-| # downloads        | 67788782 |
+| # releases         | 7 |
+| # dependents       | 1509 |
+| # downloads        | 76412604 |
 | # stars            | 38 |
 
 ## Links

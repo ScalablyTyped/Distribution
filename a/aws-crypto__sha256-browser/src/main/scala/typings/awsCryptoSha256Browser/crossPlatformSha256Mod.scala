@@ -7,14 +7,15 @@ import typings.awsSdkTypes.cryptoMod.Hash
 import typings.awsSdkTypes.cryptoMod.SourceData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crossPlatformSha256Mod {
   
   @JSImport("@aws-crypto/sha256-browser/build/crossPlatformSha256", "Sha256")
   @js.native
-  class Sha256 () extends Hash {
+  class Sha256 ()
+    extends StObject
+       with Hash {
     def this(secret: SourceData) = this()
     
     val hash: js.Any = js.native

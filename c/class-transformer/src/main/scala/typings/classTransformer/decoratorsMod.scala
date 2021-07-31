@@ -10,87 +10,100 @@ import typings.classTransformer.transformationTypeEnumMod.TransformationType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decoratorsMod {
   
-  @JSImport("class-transformer/decorators", "Exclude")
+  @JSImport("class-transformer/decorators", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def Exclude(): js.Function2[
-    /* object */ (Record[String, _]) | js.Function, 
+    /* object */ (Record[String, js.Any]) | js.Function, 
     /* propertyName */ js.UndefOr[String], 
     Unit
-  ] = js.native
-  @JSImport("class-transformer/decorators", "Exclude")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclude")().asInstanceOf[js.Function2[
+    /* object */ (Record[String, js.Any]) | js.Function, 
+    /* propertyName */ js.UndefOr[String], 
+    Unit
+  ]]
+  @scala.inline
   def Exclude(options: ExcludeOptions): js.Function2[
-    /* object */ (Record[String, _]) | js.Function, 
+    /* object */ (Record[String, js.Any]) | js.Function, 
     /* propertyName */ js.UndefOr[String], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclude")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* object */ (Record[String, js.Any]) | js.Function, 
+    /* propertyName */ js.UndefOr[String], 
+    Unit
+  ]]
   
-  @JSImport("class-transformer/decorators", "Expose")
-  @js.native
+  @scala.inline
   def Expose(): js.Function2[
-    /* object */ (Record[String, _]) | js.Function, 
+    /* object */ (Record[String, js.Any]) | js.Function, 
     /* propertyName */ js.UndefOr[String], 
     Unit
-  ] = js.native
-  @JSImport("class-transformer/decorators", "Expose")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Expose")().asInstanceOf[js.Function2[
+    /* object */ (Record[String, js.Any]) | js.Function, 
+    /* propertyName */ js.UndefOr[String], 
+    Unit
+  ]]
+  @scala.inline
   def Expose(options: ExposeOptions): js.Function2[
-    /* object */ (Record[String, _]) | js.Function, 
+    /* object */ (Record[String, js.Any]) | js.Function, 
     /* propertyName */ js.UndefOr[String], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Expose")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* object */ (Record[String, js.Any]) | js.Function, 
+    /* propertyName */ js.UndefOr[String], 
+    Unit
+  ]]
   
-  @JSImport("class-transformer/decorators", "Transform")
-  @js.native
+  @scala.inline
   def Transform(
-    transformFn: js.Function3[/* value */ js.Any, /* obj */ js.Any, /* transformationType */ TransformationType, _]
-  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
-  @JSImport("class-transformer/decorators", "Transform")
-  @js.native
+    transformFn: js.Function3[
+      /* value */ js.Any, 
+      /* obj */ js.Any, 
+      /* transformationType */ TransformationType, 
+      js.Any
+    ]
+  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(transformFn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
+  @scala.inline
   def Transform(
-    transformFn: js.Function3[/* value */ js.Any, /* obj */ js.Any, /* transformationType */ TransformationType, _],
+    transformFn: js.Function3[
+      /* value */ js.Any, 
+      /* obj */ js.Any, 
+      /* transformationType */ TransformationType, 
+      js.Any
+    ],
     options: TransformOptions
-  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
+  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(transformFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
   
-  @JSImport("class-transformer/decorators", "TransformClassToClass")
-  @js.native
-  def TransformClassToClass(): js.Function = js.native
-  @JSImport("class-transformer/decorators", "TransformClassToClass")
-  @js.native
-  def TransformClassToClass(params: ClassTransformOptions): js.Function = js.native
+  @scala.inline
+  def TransformClassToClass(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToClass")().asInstanceOf[js.Function]
+  @scala.inline
+  def TransformClassToClass(params: ClassTransformOptions): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToClass")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @JSImport("class-transformer/decorators", "TransformClassToPlain")
-  @js.native
-  def TransformClassToPlain(): js.Function = js.native
-  @JSImport("class-transformer/decorators", "TransformClassToPlain")
-  @js.native
-  def TransformClassToPlain(params: ClassTransformOptions): js.Function = js.native
+  @scala.inline
+  def TransformClassToPlain(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToPlain")().asInstanceOf[js.Function]
+  @scala.inline
+  def TransformClassToPlain(params: ClassTransformOptions): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToPlain")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @JSImport("class-transformer/decorators", "TransformPlainToClass")
-  @js.native
-  def TransformPlainToClass(classType: js.Any): js.Function = js.native
-  @JSImport("class-transformer/decorators", "TransformPlainToClass")
-  @js.native
-  def TransformPlainToClass(classType: js.Any, params: ClassTransformOptions): js.Function = js.native
+  @scala.inline
+  def TransformPlainToClass(classType: js.Any): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToClass")(classType.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  @scala.inline
+  def TransformPlainToClass(classType: js.Any, params: ClassTransformOptions): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToClass")(classType.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
-  @JSImport("class-transformer/decorators", "Type")
-  @js.native
-  def Type(): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
-  @JSImport("class-transformer/decorators", "Type")
-  @js.native
-  def Type(typeFunction: js.UndefOr[scala.Nothing], options: TypeOptions): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
-  @JSImport("class-transformer/decorators", "Type")
-  @js.native
-  def Type(typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function]): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
-  @JSImport("class-transformer/decorators", "Type")
-  @js.native
+  @scala.inline
+  def Type(): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")().asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
+  @scala.inline
+  def Type(typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function]): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
+  @scala.inline
   def Type(
     typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function],
     options: TypeOptions
-  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
+  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
+  @scala.inline
+  def Type(typeFunction: Unit, options: TypeOptions): js.Function2[/* target */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
 }

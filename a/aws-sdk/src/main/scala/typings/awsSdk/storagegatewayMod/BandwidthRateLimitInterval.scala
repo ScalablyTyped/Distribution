@@ -2,46 +2,44 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BandwidthRateLimitInterval extends StObject {
   
   /**
     *  The average download rate limit component of the bandwidth rate limit interval, in bits per second. This field does not appear in the response if the download rate limit is not set. 
     */
-  var AverageDownloadRateLimitInBitsPerSec: js.UndefOr[BandwidthDownloadRateLimit] = js.native
+  var AverageDownloadRateLimitInBitsPerSec: js.UndefOr[BandwidthDownloadRateLimit] = js.undefined
   
   /**
     *  The average upload rate limit component of the bandwidth rate limit interval, in bits per second. This field does not appear in the response if the upload rate limit is not set. 
     */
-  var AverageUploadRateLimitInBitsPerSec: js.UndefOr[BandwidthUploadRateLimit] = js.native
+  var AverageUploadRateLimitInBitsPerSec: js.UndefOr[BandwidthUploadRateLimit] = js.undefined
   
   /**
     *  The days of the week component of the bandwidth rate limit interval, represented as ordinal numbers from 0 to 6, where 0 represents Sunday and 6 Saturday. 
     */
-  var DaysOfWeek: typings.awsSdk.storagegatewayMod.DaysOfWeek = js.native
+  var DaysOfWeek: typings.awsSdk.storagegatewayMod.DaysOfWeek
   
   /**
     *  The hour of the day to end the bandwidth rate limit interval. 
     */
-  var EndHourOfDay: HourOfDay = js.native
+  var EndHourOfDay: HourOfDay
   
   /**
     *  The minute of the hour to end the bandwidth rate limit interval.    The bandwidth rate limit interval ends at the end of the minute. To end an interval at the end of an hour, use the value 59.  
     */
-  var EndMinuteOfHour: MinuteOfHour = js.native
+  var EndMinuteOfHour: MinuteOfHour
   
   /**
     *  The hour of the day to start the bandwidth rate limit interval. 
     */
-  var StartHourOfDay: HourOfDay = js.native
+  var StartHourOfDay: HourOfDay
   
   /**
     *  The minute of the hour to start the bandwidth rate limit interval. The interval begins at the start of that minute. To begin an interval exactly at the start of the hour, use the value 0. 
     */
-  var StartMinuteOfHour: MinuteOfHour = js.native
+  var StartMinuteOfHour: MinuteOfHour
 }
 object BandwidthRateLimitInterval {
   

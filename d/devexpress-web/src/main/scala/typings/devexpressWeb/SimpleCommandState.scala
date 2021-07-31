@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a simple state common to most of the client commands.
   */
-@js.native
 trait SimpleCommandState extends StObject {
   
   /**
     * Specifies a command availability.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Specifies a command visibility.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object SimpleCommandState {
   

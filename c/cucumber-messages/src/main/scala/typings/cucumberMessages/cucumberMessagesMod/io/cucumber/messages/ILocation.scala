@@ -2,18 +2,16 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Location. */
-@js.native
 trait ILocation extends StObject {
   
   /** Location column */
-  var column: js.UndefOr[Double | Null] = js.native
+  var column: js.UndefOr[Double | Null] = js.undefined
   
   /** Location line */
-  var line: js.UndefOr[Double | Null] = js.native
+  var line: js.UndefOr[Double | Null] = js.undefined
 }
 object ILocation {
   

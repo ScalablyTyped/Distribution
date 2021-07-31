@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeGenEdge extends StObject {
   
   /**
     * The ID of the node at which the edge starts.
     */
-  var Source: CodeGenIdentifier = js.native
+  var Source: CodeGenIdentifier
   
   /**
     * The ID of the node at which the edge ends.
     */
-  var Target: CodeGenIdentifier = js.native
+  var Target: CodeGenIdentifier
   
   /**
     * The target of the edge.
     */
-  var TargetParameter: js.UndefOr[CodeGenArgName] = js.native
+  var TargetParameter: js.UndefOr[CodeGenArgName] = js.undefined
 }
 object CodeGenEdge {
   

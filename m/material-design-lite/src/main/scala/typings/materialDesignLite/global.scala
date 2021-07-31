@@ -3,7 +3,6 @@ package typings.materialDesignLite
 import typings.materialDesignLite.MaterialDesignLite.ComponentHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {

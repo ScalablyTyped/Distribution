@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildingSceneLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with SceneServiceProperties
      with PortalLayerProperties
      with ScaleRangeLayerProperties {
@@ -17,28 +16,28 @@ trait BuildingSceneLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#activeFilterId)
     */
-  var activeFilterId: js.UndefOr[String] = js.native
+  var activeFilterId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how features are placed on the vertical axis (z).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#elevationInfo)
     */
-  var elevationInfo: js.UndefOr[BuildingSceneLayerElevationInfo] = js.native
+  var elevationInfo: js.UndefOr[BuildingSceneLayerElevationInfo] = js.undefined
   
   /**
     * Collection of filters that can be used to show or hide specific features in the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#filters)
     */
-  var filters: js.UndefOr[CollectionProperties[BuildingFilterProperties]] = js.native
+  var filters: js.UndefOr[CollectionProperties[BuildingFilterProperties]] = js.undefined
   
   /**
     * An array of field names from the service to include with each feature in all sublayers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#outFields)
     */
-  var outFields: js.UndefOr[js.Array[String]] = js.native
+  var outFields: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BuildingSceneLayerProperties {
   

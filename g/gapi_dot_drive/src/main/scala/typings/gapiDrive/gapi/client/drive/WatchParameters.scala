@@ -2,19 +2,17 @@ package typings.gapiDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WatchParameters extends StObject {
   
-  var fileId: String = js.native
+  var fileId: String
   
-  var resource: js.UndefOr[WatchResource] = js.native
+  var resource: js.UndefOr[WatchResource] = js.undefined
   
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
   
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
 }
 object WatchParameters {
   

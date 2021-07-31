@@ -2,25 +2,25 @@ package typings.facebookJsSdk.facebook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PaymentsLiteDialogResponse extends DialogResponse {
+trait PaymentsLiteDialogResponse
+  extends StObject
+     with DialogResponse {
   
-  var app_id: Double = js.native
+  var app_id: Double
   
-  var developer_payload: js.UndefOr[String] = js.native
+  var developer_payload: js.UndefOr[String] = js.undefined
   
-  var payment_id: Double = js.native
+  var payment_id: Double
   
-  var product_id: String = js.native
+  var product_id: String
   
-  var purchase_time: Double = js.native
+  var purchase_time: Double
   
-  var purchase_token: String = js.native
+  var purchase_token: String
   
-  var signed_request: String = js.native
+  var signed_request: String
 }
 object PaymentsLiteDialogResponse {
   

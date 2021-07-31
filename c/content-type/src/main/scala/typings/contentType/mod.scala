@@ -3,31 +3,29 @@ package typings.contentType
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("content-type", "format")
+  @JSImport("content-type", JSImport.Namespace)
   @js.native
-  def format(obj: MediaType): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("content-type", "parse")
-  @js.native
-  def parse(input: String): ParsedMediaType = js.native
-  @JSImport("content-type", "parse")
-  @js.native
-  def parse(input: RequestLike): ParsedMediaType = js.native
-  @JSImport("content-type", "parse")
-  @js.native
-  def parse(input: ResponseLike): ParsedMediaType = js.native
+  @scala.inline
+  def format(obj: MediaType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def parse(input: String): ParsedMediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[ParsedMediaType]
+  @scala.inline
+  def parse(input: RequestLike): ParsedMediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[ParsedMediaType]
+  @scala.inline
+  def parse(input: ResponseLike): ParsedMediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[ParsedMediaType]
+  
   trait MediaType extends StObject {
     
-    var parameters: js.UndefOr[StringDictionary[String]] = js.native
+    var parameters: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object MediaType {
     
@@ -52,12 +50,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedMediaType extends StObject {
     
-    var parameters: StringDictionary[String] = js.native
+    var parameters: StringDictionary[String]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ParsedMediaType {
     
@@ -79,10 +76,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestLike extends StObject {
     
-    var headers: StringDictionary[js.UndefOr[String | js.Array[String]]] = js.native
+    var headers: StringDictionary[js.UndefOr[String | js.Array[String]]]
   }
   object RequestLike {
     
@@ -100,10 +96,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ResponseLike extends StObject {
     
-    def getHeader(name: String): js.UndefOr[Double | String | js.Array[String]] = js.native
+    def getHeader(name: String): js.UndefOr[Double | String | js.Array[String]]
   }
   object ResponseLike {
     

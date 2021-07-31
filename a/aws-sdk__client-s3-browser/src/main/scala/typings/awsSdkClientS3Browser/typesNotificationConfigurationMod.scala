@@ -9,28 +9,26 @@ import typings.awsSdkClientS3Browser.typesTopicConfigurationMod.UnmarshalledTopi
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesNotificationConfigurationMod {
   
-  @js.native
   trait NotificationConfiguration extends StObject {
     
     /**
       * _LambdaFunctionConfigurationList shape
       */
-    var LambdaFunctionConfigurations: js.UndefOr[js.Array[LambdaFunctionConfiguration] | Iterable[LambdaFunctionConfiguration]] = js.native
+    var LambdaFunctionConfigurations: js.UndefOr[js.Array[LambdaFunctionConfiguration] | Iterable[LambdaFunctionConfiguration]] = js.undefined
     
     /**
       * _QueueConfigurationList shape
       */
-    var QueueConfigurations: js.UndefOr[js.Array[QueueConfiguration] | Iterable[QueueConfiguration]] = js.native
+    var QueueConfigurations: js.UndefOr[js.Array[QueueConfiguration] | Iterable[QueueConfiguration]] = js.undefined
     
     /**
       * _TopicConfigurationList shape
       */
-    var TopicConfigurations: js.UndefOr[js.Array[TopicConfiguration] | Iterable[TopicConfiguration]] = js.native
+    var TopicConfigurations: js.UndefOr[js.Array[TopicConfiguration] | Iterable[TopicConfiguration]] = js.undefined
   }
   object NotificationConfiguration {
     
@@ -72,26 +70,27 @@ object typesNotificationConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledNotificationConfiguration extends NotificationConfiguration {
+  trait UnmarshalledNotificationConfiguration
+    extends StObject
+       with NotificationConfiguration {
     
     /**
       * _LambdaFunctionConfigurationList shape
       */
     @JSName("LambdaFunctionConfigurations")
-    var LambdaFunctionConfigurations_UnmarshalledNotificationConfiguration: js.UndefOr[js.Array[UnmarshalledLambdaFunctionConfiguration]] = js.native
+    var LambdaFunctionConfigurations_UnmarshalledNotificationConfiguration: js.UndefOr[js.Array[UnmarshalledLambdaFunctionConfiguration]] = js.undefined
     
     /**
       * _QueueConfigurationList shape
       */
     @JSName("QueueConfigurations")
-    var QueueConfigurations_UnmarshalledNotificationConfiguration: js.UndefOr[js.Array[UnmarshalledQueueConfiguration]] = js.native
+    var QueueConfigurations_UnmarshalledNotificationConfiguration: js.UndefOr[js.Array[UnmarshalledQueueConfiguration]] = js.undefined
     
     /**
       * _TopicConfigurationList shape
       */
     @JSName("TopicConfigurations")
-    var TopicConfigurations_UnmarshalledNotificationConfiguration: js.UndefOr[js.Array[UnmarshalledTopicConfiguration]] = js.native
+    var TopicConfigurations_UnmarshalledNotificationConfiguration: js.UndefOr[js.Array[UnmarshalledTopicConfiguration]] = js.undefined
   }
   object UnmarshalledNotificationConfiguration {
     

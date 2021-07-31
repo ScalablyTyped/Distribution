@@ -6,28 +6,25 @@ import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUni
 import typings.awsSdkClientCodecommitNode.postCommentReplyExceptionsUnionMod.PostCommentReplyExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesIdempotencyParameterMismatchExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_IdempotencyParameterMismatchExceptionDetails> * / any */ @js.native
-  trait IdempotencyParameterMismatchException
-    extends CreatePullRequestExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_IdempotencyParameterMismatchExceptionDetails> * / any */ trait IdempotencyParameterMismatchException
+    extends StObject
+       with CreatePullRequestExceptionsUnion
        with PostCommentForComparedCommitExceptionsUnion
        with PostCommentForPullRequestExceptionsUnion
        with PostCommentReplyExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.IdempotencyParameterMismatchException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.IdempotencyParameterMismatchException
   }
   object IdempotencyParameterMismatchException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.IdempotencyParameterMismatchException
-    ): IdempotencyParameterMismatchException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): IdempotencyParameterMismatchException = {
+      val __obj = js.Dynamic.literal(name = "IdempotencyParameterMismatchException")
       __obj.asInstanceOf[IdempotencyParameterMismatchException]
     }
     
@@ -41,6 +38,5 @@ object typesIdempotencyParameterMismatchExceptionMod {
     }
   }
   
-  @js.native
   trait IdempotencyParameterMismatchExceptionDetails extends StObject
 }

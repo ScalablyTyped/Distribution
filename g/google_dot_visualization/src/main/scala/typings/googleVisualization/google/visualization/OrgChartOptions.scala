@@ -2,30 +2,28 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgChartOptions extends StObject {
   
-  var allowCollapse: js.UndefOr[Boolean] = js.native
+  var allowCollapse: js.UndefOr[Boolean] = js.undefined
   
-  var allowHtml: js.UndefOr[Boolean] = js.native
+  var allowHtml: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var nodeClass: js.UndefOr[String] = js.native
+  var nodeClass: js.UndefOr[String] = js.undefined
   
-  var selectedNodeClass: js.UndefOr[String] = js.native
+  var selectedNodeClass: js.UndefOr[String] = js.undefined
   
-  var selectionColor: js.UndefOr[String] = js.native
+  var selectionColor: js.UndefOr[String] = js.undefined
   
   /**
     * Chart size
     * @type {('small'|'medium'|'large')}
     * @default 'medium'
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
 }
 object OrgChartOptions {
   

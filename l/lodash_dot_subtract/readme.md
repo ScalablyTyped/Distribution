@@ -12,7 +12,7 @@ The lodash method `_.subtract` exported as a module.
 | Keywords           | lodash-modularized, subtract |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 974 |
+| # downloads        | 818 |
 | # stars            | 0 |
 
 ## Links

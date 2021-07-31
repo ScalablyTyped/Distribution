@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountAdsLink extends StObject {
   
   /** Customer ID of the Ads account. */
-  var adsId: js.UndefOr[String] = js.native
+  var adsId: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the link between this Merchant Center account and the Ads account. Upon retrieval, it represents the actual status of the link and can be either `active` if it was
@@ -18,7 +16,7 @@ trait AccountAdsLink extends StObject {
     * equivalent to not submitting the link at all and will delete the link if it was active or cancel the link request if it was pending. Acceptable values are: - "`active`" -
     * "`pending`"
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object AccountAdsLink {
   

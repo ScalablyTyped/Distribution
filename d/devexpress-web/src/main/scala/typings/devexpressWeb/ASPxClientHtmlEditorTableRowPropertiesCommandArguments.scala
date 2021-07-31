@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.TABLEROWPROPERTIES_DIALOG_COMMAND command parameter.
   */
-@js.native
-trait ASPxClientHtmlEditorTableRowPropertiesCommandArguments extends ASPxClientHtmlEditorCommandArguments {
+trait ASPxClientHtmlEditorTableRowPropertiesCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorCommandArguments {
   
   /**
     * Contains the style settings specifying the appearance of the specified table row.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
 }
 object ASPxClientHtmlEditorTableRowPropertiesCommandArguments {
   

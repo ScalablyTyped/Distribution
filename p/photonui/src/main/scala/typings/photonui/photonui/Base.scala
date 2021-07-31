@@ -2,17 +2,15 @@ package typings.photonui.photonui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Base extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: js.Any): Unit = js.native
+  def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: js.Any): Unit
   
-  def removeCallback(id: String): Unit = js.native
+  def removeCallback(id: String): Unit
 }
 object Base {
   

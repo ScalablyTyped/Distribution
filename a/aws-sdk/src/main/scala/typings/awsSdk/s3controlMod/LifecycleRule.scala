@@ -2,51 +2,49 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecycleRule extends StObject {
   
   /**
     * Specifies the days since the initiation of an incomplete multipart upload that Amazon S3 waits before permanently removing all parts of the upload. For more information, see  Aborting Incomplete Multipart Uploads Using a Bucket Lifecycle Policy in the Amazon Simple Storage Service Developer Guide.
     */
-  var AbortIncompleteMultipartUpload: js.UndefOr[typings.awsSdk.s3controlMod.AbortIncompleteMultipartUpload] = js.native
+  var AbortIncompleteMultipartUpload: js.UndefOr[typings.awsSdk.s3controlMod.AbortIncompleteMultipartUpload] = js.undefined
   
   /**
     * Specifies the expiration for the lifecycle of the object in the form of date, days and, whether the object has a delete marker.
     */
-  var Expiration: js.UndefOr[LifecycleExpiration] = js.native
+  var Expiration: js.UndefOr[LifecycleExpiration] = js.undefined
   
   /**
     * The container for the filter of lifecycle rule.
     */
-  var Filter: js.UndefOr[LifecycleRuleFilter] = js.native
+  var Filter: js.UndefOr[LifecycleRuleFilter] = js.undefined
   
   /**
     * Unique identifier for the rule. The value cannot be longer than 255 characters.
     */
-  var ID: js.UndefOr[typings.awsSdk.s3controlMod.ID] = js.native
+  var ID: js.UndefOr[typings.awsSdk.s3controlMod.ID] = js.undefined
   
   /**
     * The noncurrent version expiration of the lifecycle rule.  This is not supported by Amazon S3 on Outposts buckets. 
     */
-  var NoncurrentVersionExpiration: js.UndefOr[typings.awsSdk.s3controlMod.NoncurrentVersionExpiration] = js.native
+  var NoncurrentVersionExpiration: js.UndefOr[typings.awsSdk.s3controlMod.NoncurrentVersionExpiration] = js.undefined
   
   /**
     *  Specifies the transition rule for the lifecycle rule that describes when noncurrent objects transition to a specific storage class. If your bucket is versioning-enabled (or versioning is suspended), you can set this action to request that Amazon S3 transition noncurrent object versions to a specific storage class at a set period in the object's lifetime.   This is not supported by Amazon S3 on Outposts buckets. 
     */
-  var NoncurrentVersionTransitions: js.UndefOr[NoncurrentVersionTransitionList] = js.native
+  var NoncurrentVersionTransitions: js.UndefOr[NoncurrentVersionTransitionList] = js.undefined
   
   /**
     * If 'Enabled', the rule is currently being applied. If 'Disabled', the rule is not currently being applied.
     */
-  var Status: ExpirationStatus = js.native
+  var Status: ExpirationStatus
   
   /**
     * Specifies when an Amazon S3 object transitions to a specified storage class.  This is not supported by Amazon S3 on Outposts buckets. 
     */
-  var Transitions: js.UndefOr[TransitionList] = js.native
+  var Transitions: js.UndefOr[TransitionList] = js.undefined
 }
 object LifecycleRule {
   

@@ -15,23 +15,25 @@ import typings.ssh2SftpClient.ssh2SftpClientStrings.w
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ssh2-sftp-client", JSImport.Namespace)
   @js.native
-  class ^ () extends sftp
+  class ^ ()
+    extends StObject
+       with sftp
   
-  @js.native
-  trait ConnectOptions extends ConnectConfig {
+  trait ConnectOptions
+    extends StObject
+       with ConnectConfig {
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var retry_factor: js.UndefOr[Double] = js.native
+    var retry_factor: js.UndefOr[Double] = js.undefined
     
-    var retry_minTimeout: js.UndefOr[Double] = js.native
+    var retry_minTimeout: js.UndefOr[Double] = js.undefined
   }
   object ConnectOptions {
     
@@ -64,16 +66,15 @@ object mod {
     }
   }
   
-  @js.native
   trait FastGetTransferOptions extends StObject {
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
     var step: js.UndefOr[
         js.Function3[/* totalTransferred */ Double, /* chunk */ Double, /* total */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object FastGetTransferOptions {
     
@@ -106,9 +107,9 @@ object mod {
     }
   }
   
-  @js.native
   trait FastPutTransferOptions
-    extends FastGetTransferOptions
+    extends StObject
+       with FastGetTransferOptions
        with ModeOption
   object FastPutTransferOptions {
     
@@ -119,24 +120,23 @@ object mod {
     }
   }
   
-  @js.native
   trait FileInfo extends StObject {
     
-    var accessTime: Double = js.native
+    var accessTime: Double
     
-    var group: Double = js.native
+    var group: Double
     
-    var modifyTime: Double = js.native
+    var modifyTime: Double
     
-    var name: String = js.native
+    var name: String
     
-    var owner: Double = js.native
+    var owner: Double
     
-    var rights: Group = js.native
+    var rights: Group
     
-    var size: Double = js.native
+    var size: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object FileInfo {
     
@@ -185,34 +185,33 @@ object mod {
     }
   }
   
-  @js.native
   trait FileStats extends StObject {
     
-    var accessTime: Double = js.native
+    var accessTime: Double
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var isBlockDevice: Boolean = js.native
+    var isBlockDevice: Boolean
     
-    var isCharacterDevice: Boolean = js.native
+    var isCharacterDevice: Boolean
     
-    var isDirectory: Boolean = js.native
+    var isDirectory: Boolean
     
-    var isFIFO: Boolean = js.native
+    var isFIFO: Boolean
     
-    var isFile: Boolean = js.native
+    var isFile: Boolean
     
-    var isSocket: Boolean = js.native
+    var isSocket: Boolean
     
-    var isSymbolicLink: Boolean = js.native
+    var isSymbolicLink: Boolean
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var modifyTime: Double = js.native
+    var modifyTime: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var uid: Double = js.native
+    var uid: Double
   }
   object FileStats {
     
@@ -280,10 +279,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait GetTransferOptions extends TransferOptions {
+  trait GetTransferOptions
+    extends StObject
+       with TransferOptions {
     
-    var handle: js.UndefOr[Null | String] = js.native
+    var handle: js.UndefOr[Null | String] = js.undefined
   }
   object GetTransferOptions {
     
@@ -307,10 +307,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ModeOption extends StObject {
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
   }
   object ModeOption {
     
@@ -331,14 +330,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait TransferOptions extends ModeOption {
+  trait TransferOptions
+    extends StObject
+       with ModeOption {
     
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[Null | String] = js.native
+    var encoding: js.UndefOr[Null | String] = js.undefined
     
-    var flags: js.UndefOr[w | a] = js.native
+    var flags: js.UndefOr[w | a] = js.undefined
   }
   object TransferOptions {
     
@@ -404,9 +404,9 @@ object mod {
     def fastPut(localPath: String, remoteFilePath: String, options: FastPutTransferOptions): js.Promise[String] = js.native
     
     def get(path: String): js.Promise[String | WritableStream | Buffer] = js.native
-    def get(path: String, dst: js.UndefOr[scala.Nothing], options: GetTransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
     def get(path: String, dst: String): js.Promise[String | WritableStream | Buffer] = js.native
     def get(path: String, dst: String, options: GetTransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
+    def get(path: String, dst: Unit, options: GetTransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
     def get(path: String, dst: WritableStream): js.Promise[String | WritableStream | Buffer] = js.native
     def get(path: String, dst: WritableStream, options: GetTransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
     

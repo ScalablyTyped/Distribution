@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,12 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * See auth.getUsers()
   */
-@js.native
-trait ProviderIdentifier extends UserIdentifier {
+trait ProviderIdentifier
+  extends StObject
+     with UserIdentifier {
   
-  var providerId: String = js.native
+  var providerId: String
   
-  var providerUid: String = js.native
+  var providerUid: String
 }
 object ProviderIdentifier {
   

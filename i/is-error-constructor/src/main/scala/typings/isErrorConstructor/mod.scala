@@ -3,7 +3,6 @@ package typings.isErrorConstructor
 import typings.isErrorConstructor.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,9 +24,8 @@ object mod {
   	//=> true
   	```
   	*/
-  @JSImport("is-error-constructor", JSImport.Namespace)
-  @js.native
-  def apply(value: js.Any): /* is std.ErrorConstructor */ Boolean = js.native
+  @scala.inline
+  def apply(value: js.Any): /* is std.ErrorConstructor */ Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.ErrorConstructor */ Boolean]
   
   @JSImport("is-error-constructor", JSImport.Namespace)
   @js.native
@@ -59,9 +57,8 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function isErrorConstructor(value: unknown): value is ErrorConstructor;
   // export = isErrorConstructor;
-  @JSImport("is-error-constructor", "default")
-  @js.native
-  def default(value: js.Any): /* is std.ErrorConstructor */ Boolean = js.native
+  @scala.inline
+  def default(value: js.Any): /* is std.ErrorConstructor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.ErrorConstructor */ Boolean]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

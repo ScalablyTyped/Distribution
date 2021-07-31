@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`picture-marker`
 import typings.arcgisJsApi.arcgisJsApiStrings.`simple-marker`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarkerSymbol extends Symbol {
+trait MarkerSymbol
+  extends StObject
+     with Symbol {
   
   /**
     * The angle of the marker relative to the screen in degrees.

@@ -3,22 +3,20 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2Input extends StObject {
   
   /**
     * A list of provided argument values for the input requested by the Action.
     */
-  var arguments: js.UndefOr[js.Array[GoogleActionsV2Argument]] = js.native
+  var arguments: js.UndefOr[js.Array[GoogleActionsV2Argument]] = js.undefined
   
   /**
     * Opaque context set in the interactive canvas web app for all subsequent
     * intents
     */
-  var canvasState: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var canvasState: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
   /**
     * Indicates the user's intent. For the first conversation turn, the intent
@@ -31,14 +29,14 @@ trait GoogleActionsV2Input extends StObject {
     * `actions.intent.TEXT` if the user provided other information.
     * See https://developers.google.com/actions/reference/rest/intents.
     */
-  var intent: js.UndefOr[String] = js.native
+  var intent: js.UndefOr[String] = js.undefined
   
   /**
     * Raw input transcription from each turn of conversation.
     * Multiple conversation turns may be required for Actions on Google to
     * provide some types of input to the Action.
     */
-  var rawInputs: js.UndefOr[js.Array[GoogleActionsV2RawInput]] = js.native
+  var rawInputs: js.UndefOr[js.Array[GoogleActionsV2RawInput]] = js.undefined
 }
 object GoogleActionsV2Input {
   
@@ -61,7 +59,7 @@ object GoogleActionsV2Input {
     def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
     @scala.inline
-    def setCanvasState(value: ApiClientObjectMap[_]): Self = StObject.set(x, "canvasState", value.asInstanceOf[js.Any])
+    def setCanvasState(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "canvasState", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCanvasStateUndefined: Self = StObject.set(x, "canvasState", js.undefined)

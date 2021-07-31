@@ -2,15 +2,13 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IterateOptions extends StObject {
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var probability: js.UndefOr[Double] = js.native
+  var probability: js.UndefOr[Double] = js.undefined
 }
 object IterateOptions {
   

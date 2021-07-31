@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputOutputBinding extends TypeDerived {
+trait InputOutputBinding
+  extends StObject
+     with TypeDerived {
   
-  var inputDataRef: InputSet = js.native
+  var inputDataRef: InputSet
   
-  var operationRef: Operation = js.native
+  var operationRef: Operation
   
-  var outputDataRef: OutputSet = js.native
+  var outputDataRef: OutputSet
 }
 object InputOutputBinding {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.augmentedairuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartHumanLoopRequest extends StObject {
   
   /**
     * Attributes of the specified data. Use DataAttributes to specify if your data is free of personally identifiable information and/or free of adult content.
     */
-  var DataAttributes: js.UndefOr[HumanLoopDataAttributes] = js.native
+  var DataAttributes: js.UndefOr[HumanLoopDataAttributes] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the flow definition associated with this human loop.
     */
-  var FlowDefinitionArn: typings.awsSdk.augmentedairuntimeMod.FlowDefinitionArn = js.native
+  var FlowDefinitionArn: typings.awsSdk.augmentedairuntimeMod.FlowDefinitionArn
   
   /**
     * An object that contains information about the human loop.
     */
-  var HumanLoopInput: typings.awsSdk.augmentedairuntimeMod.HumanLoopInput = js.native
+  var HumanLoopInput: typings.awsSdk.augmentedairuntimeMod.HumanLoopInput
   
   /**
     * The name of the human loop.
     */
-  var HumanLoopName: typings.awsSdk.augmentedairuntimeMod.HumanLoopName = js.native
+  var HumanLoopName: typings.awsSdk.augmentedairuntimeMod.HumanLoopName
 }
 object StartHumanLoopRequest {
   

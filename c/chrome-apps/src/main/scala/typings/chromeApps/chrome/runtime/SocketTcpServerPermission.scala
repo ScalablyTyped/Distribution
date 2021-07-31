@@ -2,17 +2,15 @@ package typings.chromeApps.chrome.runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketTcpServerPermission extends StObject {
   
   /**
     * The host:port pattern for listen operations.
     * *:* are allowed
     */
-  var listen: js.UndefOr[String | js.Array[String]] = js.native
+  var listen: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object SocketTcpServerPermission {
   

@@ -2,21 +2,19 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Title extends StObject {
   
   /**
     * The YouTube channel that created the video category.
     */
-  var channelId: String = js.native
+  var channelId: String
   
   /**
     * The video categorys title.
     */
-  var title: String = js.native
+  var title: String
 }
 object Title {
   

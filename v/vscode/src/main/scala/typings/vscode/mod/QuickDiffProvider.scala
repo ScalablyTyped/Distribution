@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuickDiffProvider extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait QuickDiffProvider extends StObject {
     * @param token A cancellation token.
     * @return A thenable that resolves to uri of the matching original resource.
     */
-  var provideOriginalResource: js.UndefOr[js.Function2[/* uri */ Uri, /* token */ CancellationToken, ProviderResult[Uri]]] = js.native
+  var provideOriginalResource: js.UndefOr[js.Function2[/* uri */ Uri, /* token */ CancellationToken, ProviderResult[Uri]]] = js.undefined
 }
 object QuickDiffProvider {
   

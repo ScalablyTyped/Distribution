@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statusMod {
@@ -27,7 +26,7 @@ object statusMod {
       */
     def this(name: String) = this()
     def this(name: String, args: StatusArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: StatusArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -73,6 +72,10 @@ object statusMod {
   /* static members */
   object Status {
     
+    @JSImport("@pulumi/kubernetes/meta/v1/status", "Status")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Status resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -81,59 +84,55 @@ object statusMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/meta/v1/status", "Status.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Status = js.native
-    @JSImport("@pulumi/kubernetes/meta/v1/status", "Status.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): Status = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Status = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Status]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): Status = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Status]
     
     /**
       * Returns true if the given object is an instance of Status.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/meta/v1/status", "Status.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/meta/v1/status.Status */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/meta/v1/status.Status */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/meta/v1/status.Status */ Boolean]
   }
   
-  @js.native
   trait StatusArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[v1]] = js.native
+    val apiVersion: js.UndefOr[Input[v1]] = js.undefined
     
     /**
       * Suggested HTTP return code for this status, 0 if not set.
       */
-    val code: js.UndefOr[Input[Double]] = js.native
+    val code: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Extended data associated with the reason.  Each reason may define its own extended details. This field is optional and the data returned is not guaranteed to conform to any schema except that defined by the reason type.
       */
-    val details: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.StatusDetails]] = js.native
+    val details: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.StatusDetails]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Status]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Status]] = js.undefined
     
     /**
       * A human-readable description of the status of this operation.
       */
-    val message: js.UndefOr[Input[String]] = js.native
+    val message: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.undefined
     
     /**
       * A machine-readable description of why this operation is in the "Failure" status. If this value is empty there is no information available. A Reason clarifies an HTTP status code but does not override it.
       */
-    val reason: js.UndefOr[Input[String]] = js.native
+    val reason: js.UndefOr[Input[String]] = js.undefined
   }
   object StatusArgs {
     

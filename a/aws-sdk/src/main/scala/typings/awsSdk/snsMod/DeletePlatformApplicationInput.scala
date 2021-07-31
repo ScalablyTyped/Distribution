@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePlatformApplicationInput extends StObject {
   
   /**
     * PlatformApplicationArn of platform application object to delete.
     */
-  var PlatformApplicationArn: String = js.native
+  var PlatformApplicationArn: String
 }
 object DeletePlatformApplicationInput {
   

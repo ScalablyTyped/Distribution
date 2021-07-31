@@ -4,16 +4,14 @@ import typings.pixiSpine.PIXI.spine.core.Attachment
 import typings.pixiSpine.PIXI.spine.core.TextureRegion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.DisplayObject * / any */ @js.native
-trait ISpineDisplayObject extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.DisplayObject * / any */ trait ISpineDisplayObject extends StObject {
   
-  var attachment: js.UndefOr[Attachment] = js.native
+  var attachment: js.UndefOr[Attachment] = js.undefined
   
-  var region: js.UndefOr[TextureRegion] = js.native
+  var region: js.UndefOr[TextureRegion] = js.undefined
 }
 object ISpineDisplayObject {
   

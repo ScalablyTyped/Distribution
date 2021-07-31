@@ -3,7 +3,6 @@ package typings.zoneJs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Only the `name` property is required (all other are optional).
   */
-@js.native
 trait ZoneSpec extends StObject {
   
   /**
     * The name of the zone. Useful when debugging Zones.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Allows interception of task cancellation.
@@ -33,9 +31,9 @@ trait ZoneSpec extends StObject {
       /* currentZone */ Zone, 
       /* targetZone */ Zone, 
       /* task */ Task, 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Allows the interception of zone forking.
@@ -55,7 +53,7 @@ trait ZoneSpec extends StObject {
       /* zoneSpec */ this.type, 
       Zone
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Allows interception of the error handling.
@@ -73,7 +71,7 @@ trait ZoneSpec extends StObject {
       /* error */ js.Any, 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Notifies of changes to the task queue empty status.
@@ -91,7 +89,7 @@ trait ZoneSpec extends StObject {
       /* hasTaskState */ HasTaskState, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Allows interception of the wrapping of the callback.
@@ -111,7 +109,7 @@ trait ZoneSpec extends StObject {
       /* source */ String, 
       js.Function
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Allows interception of the callback invocation.
@@ -131,11 +129,11 @@ trait ZoneSpec extends StObject {
       /* targetZone */ Zone, 
       /* delegate */ js.Function, 
       /* applyThis */ js.Any, 
-      /* applyArgs */ js.UndefOr[js.Array[_]], 
+      /* applyArgs */ js.UndefOr[js.Array[js.Any]], 
       /* source */ js.UndefOr[String], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onInvokeTask: js.UndefOr[
     js.Function6[
@@ -144,10 +142,10 @@ trait ZoneSpec extends StObject {
       /* targetZone */ Zone, 
       /* task */ Task, 
       /* applyThis */ js.Any, 
-      /* applyArgs */ js.UndefOr[js.Array[_]], 
-      _
+      /* applyArgs */ js.UndefOr[js.Array[js.Any]], 
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Allows interception of task scheduling.
@@ -165,12 +163,12 @@ trait ZoneSpec extends StObject {
       /* task */ Task, 
       Task
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A set of properties to be associated with Zone. Use [Zone.get] to retrieve them.
     */
-  var properties: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object ZoneSpec {
   
@@ -188,7 +186,7 @@ object ZoneSpec {
     
     @scala.inline
     def setOnCancelTask(
-      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => _
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => js.Any
     ): Self = StObject.set(x, "onCancelTask", js.Any.fromFunction4(value))
     
     @scala.inline
@@ -228,12 +226,12 @@ object ZoneSpec {
     
     @scala.inline
     def setOnInvoke(
-      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[_]], /* source */ js.UndefOr[String]) => _
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]], /* source */ js.UndefOr[String]) => js.Any
     ): Self = StObject.set(x, "onInvoke", js.Any.fromFunction7(value))
     
     @scala.inline
     def setOnInvokeTask(
-      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[_]]) => _
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]]) => js.Any
     ): Self = StObject.set(x, "onInvokeTask", js.Any.fromFunction6(value))
     
     @scala.inline

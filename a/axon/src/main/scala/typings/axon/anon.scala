@@ -12,21 +12,19 @@ import typings.axon.mod.SubEmitterSocket
 import typings.axon.mod.SubSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var family: String = js.native
+    var family: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var string: String = js.native
+    var string: String
   }
   object Address {
     
@@ -53,16 +51,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Hostname extends StObject {
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var port: String | Double = js.native
+    var port: String | Double
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
   }
   object Hostname {
     
@@ -96,7 +93,9 @@ object anon {
   }
   
   @js.native
-  trait Instantiable extends Instantiable0[
+  trait Instantiable
+    extends StObject
+       with Instantiable0[
           PubEmitterSocket | SubEmitterSocket | PushSocket | PullSocket | PubSocket | SubSocket | ReqSocket | RepSocket | Socket_
         ]
 }

@@ -2,24 +2,22 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsDismissReviewEndpoint extends StObject {
   
   /**
     * The message for the pull request review dismissal
     */
-  var message: String = js.native
+  var message: String
   
-  var owner: String = js.native
+  var owner: String
   
-  var pull_number: Double = js.native
+  var pull_number: Double
   
-  var repo: String = js.native
+  var repo: String
   
-  var review_id: Double = js.native
+  var review_id: Double
 }
 object PullsDismissReviewEndpoint {
   

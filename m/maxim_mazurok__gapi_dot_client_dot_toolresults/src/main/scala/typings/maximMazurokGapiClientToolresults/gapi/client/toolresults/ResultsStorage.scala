@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultsStorage extends StObject {
   
   /** The root directory for test results. */
-  var resultsStoragePath: js.UndefOr[FileReference] = js.native
+  var resultsStoragePath: js.UndefOr[FileReference] = js.undefined
   
   /** The path to the Xunit XML file. */
-  var xunitXmlFile: js.UndefOr[FileReference] = js.native
+  var xunitXmlFile: js.UndefOr[FileReference] = js.undefined
 }
 object ResultsStorage {
   

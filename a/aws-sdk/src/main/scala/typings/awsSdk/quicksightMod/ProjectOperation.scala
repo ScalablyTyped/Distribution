@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectOperation extends StObject {
   
   /**
     * Projected columns.
     */
-  var ProjectedColumns: ProjectedColumnList = js.native
+  var ProjectedColumns: ProjectedColumnList
 }
 object ProjectOperation {
   

@@ -2,13 +2,11 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProofSchemaAttribute extends StObject {
   
-  var restrictions: js.UndefOr[js.Array[Restriction]] = js.native
+  var restrictions: js.UndefOr[js.Array[Restriction]] = js.undefined
 }
 object ProofSchemaAttribute {
   

@@ -2,10 +2,8 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Adaptor extends StObject {
   
   /** Called when Ractive gets a new value to see if the adaptor should be applied.
@@ -14,7 +12,7 @@ trait Adaptor extends StObject {
   	 * @param ractive the Ractive instance that is applying the value to the given keypath
   	 * @returns true if the adaptor should be applied, false otherwisej
   	 */
-  def filter(value: js.Any, keypath: String, ractive: Ractive[Ractive[_]]): Boolean = js.native
+  def filter(value: js.Any, keypath: String, ractive: Ractive[Ractive[js.Any]]): Boolean
   
   /** Called when Ractive is applying the adaptor to a value
   	 * @param ractive the Ractive instance that is applying the adaptor
@@ -23,14 +21,14 @@ trait Adaptor extends StObject {
   	 * @param prefixer a helper function to prefix a value map with the current keypath
   	 * @returns the adaptor
   	 */
-  def wrap(ractive: Ractive[Ractive[_]], value: js.Any, keypath: String, prefixer: AdaptorPrefixer): AdaptorHandle = js.native
+  def wrap(ractive: Ractive[Ractive[js.Any]], value: js.Any, keypath: String, prefixer: AdaptorPrefixer): AdaptorHandle
 }
 object Adaptor {
   
   @scala.inline
   def apply(
-    filter: (js.Any, String, Ractive[Ractive[_]]) => Boolean,
-    wrap: (Ractive[Ractive[_]], js.Any, String, AdaptorPrefixer) => AdaptorHandle
+    filter: (js.Any, String, Ractive[Ractive[js.Any]]) => Boolean,
+    wrap: (Ractive[Ractive[js.Any]], js.Any, String, AdaptorPrefixer) => AdaptorHandle
   ): Adaptor = {
     val __obj = js.Dynamic.literal(filter = js.Any.fromFunction3(filter), wrap = js.Any.fromFunction4(wrap))
     __obj.asInstanceOf[Adaptor]
@@ -40,9 +38,9 @@ object Adaptor {
   implicit class AdaptorMutableBuilder[Self <: Adaptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFilter(value: (js.Any, String, Ractive[Ractive[_]]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
+    def setFilter(value: (js.Any, String, Ractive[Ractive[js.Any]]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setWrap(value: (Ractive[Ractive[_]], js.Any, String, AdaptorPrefixer) => AdaptorHandle): Self = StObject.set(x, "wrap", js.Any.fromFunction4(value))
+    def setWrap(value: (Ractive[Ractive[js.Any]], js.Any, String, AdaptorPrefixer) => AdaptorHandle): Self = StObject.set(x, "wrap", js.Any.fromFunction4(value))
   }
 }

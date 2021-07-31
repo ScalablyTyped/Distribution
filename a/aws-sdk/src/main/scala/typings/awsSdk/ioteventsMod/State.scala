@@ -2,31 +2,29 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait State extends StObject {
   
   /**
     * When entering this state, perform these actions if the condition is TRUE.
     */
-  var onEnter: js.UndefOr[OnEnterLifecycle] = js.native
+  var onEnter: js.UndefOr[OnEnterLifecycle] = js.undefined
   
   /**
     * When exiting this state, perform these actions if the specified condition is TRUE.
     */
-  var onExit: js.UndefOr[OnExitLifecycle] = js.native
+  var onExit: js.UndefOr[OnExitLifecycle] = js.undefined
   
   /**
     * When an input is received and the condition is TRUE, perform the specified actions.
     */
-  var onInput: js.UndefOr[OnInputLifecycle] = js.native
+  var onInput: js.UndefOr[OnInputLifecycle] = js.undefined
   
   /**
     * The name of the state.
     */
-  var stateName: StateName = js.native
+  var stateName: StateName
 }
 object State {
   

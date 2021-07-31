@@ -4,49 +4,47 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hookMod {
   
-  @JSImport("uncontrollable/cjs/hook", JSImport.Default)
+  @JSImport("uncontrollable/cjs/hook", JSImport.Namespace)
   @js.native
-  def default[TProps /* <: js.Object */, TDefaults /* <: String */](props: TProps, config: ConfigMap[TProps]): Omit[TProps, TDefaults] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("uncontrollable/cjs/hook", "useUncontrolledProp")
-  @js.native
-  def useUncontrolledProp[TProp, THandler /* <: Handler */](): js.Tuple2[js.UndefOr[TProp], THandler] = js.native
-  @JSImport("uncontrollable/cjs/hook", "useUncontrolledProp")
-  @js.native
-  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: TProp): js.Tuple2[js.UndefOr[TProp], THandler] = js.native
-  @JSImport("uncontrollable/cjs/hook", "useUncontrolledProp")
-  @js.native
-  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: TProp, defaultValue: TProp): js.Tuple2[js.UndefOr[TProp], THandler] = js.native
-  @JSImport("uncontrollable/cjs/hook", "useUncontrolledProp")
-  @js.native
-  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: TProp, defaultValue: TProp, handler: THandler): js.Tuple2[js.UndefOr[TProp], THandler] = js.native
-  @JSImport("uncontrollable/cjs/hook", "useUncontrolledProp")
-  @js.native
-  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: TProp, defaultValue: js.UndefOr[scala.Nothing], handler: THandler): js.Tuple2[js.UndefOr[TProp], THandler] = js.native
-  @JSImport("uncontrollable/cjs/hook", "useUncontrolledProp")
-  @js.native
-  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: js.UndefOr[scala.Nothing], defaultValue: TProp): js.Tuple2[js.UndefOr[TProp], THandler] = js.native
-  @JSImport("uncontrollable/cjs/hook", "useUncontrolledProp")
-  @js.native
-  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: js.UndefOr[scala.Nothing], defaultValue: TProp, handler: THandler): js.Tuple2[js.UndefOr[TProp], THandler] = js.native
-  @JSImport("uncontrollable/cjs/hook", "useUncontrolledProp")
-  @js.native
-  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: js.UndefOr[scala.Nothing], defaultValue: js.UndefOr[scala.Nothing], handler: THandler): js.Tuple2[js.UndefOr[TProp], THandler] = js.native
+  @scala.inline
+  def default[TProps /* <: js.Object */, TDefaults /* <: String */](props: TProps, config: ConfigMap[TProps]): Omit[TProps, TDefaults] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Omit[TProps, TDefaults]]
+  
+  @scala.inline
+  def useUncontrolledProp[TProp, THandler /* <: Handler */](): js.Tuple2[js.UndefOr[TProp], THandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("useUncontrolledProp")().asInstanceOf[js.Tuple2[js.UndefOr[TProp], THandler]]
+  @scala.inline
+  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: TProp): js.Tuple2[js.UndefOr[TProp], THandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("useUncontrolledProp")(propValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.UndefOr[TProp], THandler]]
+  @scala.inline
+  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: TProp, defaultValue: TProp): js.Tuple2[js.UndefOr[TProp], THandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUncontrolledProp")(propValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.UndefOr[TProp], THandler]]
+  @scala.inline
+  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: TProp, defaultValue: TProp, handler: THandler): js.Tuple2[js.UndefOr[TProp], THandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUncontrolledProp")(propValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.UndefOr[TProp], THandler]]
+  @scala.inline
+  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: TProp, defaultValue: Unit, handler: THandler): js.Tuple2[js.UndefOr[TProp], THandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUncontrolledProp")(propValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.UndefOr[TProp], THandler]]
+  @scala.inline
+  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: Unit, defaultValue: TProp): js.Tuple2[js.UndefOr[TProp], THandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUncontrolledProp")(propValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.UndefOr[TProp], THandler]]
+  @scala.inline
+  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: Unit, defaultValue: TProp, handler: THandler): js.Tuple2[js.UndefOr[TProp], THandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUncontrolledProp")(propValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.UndefOr[TProp], THandler]]
+  @scala.inline
+  def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: Unit, defaultValue: Unit, handler: THandler): js.Tuple2[js.UndefOr[TProp], THandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUncontrolledProp")(propValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.UndefOr[TProp], THandler]]
   
   type AllowedNames[Base, Condition] = /* import warning: importer.ImportType#apply Failed type conversion: uncontrollable.uncontrollable/cjs/hook.FilterFlags<Base, Condition>[keyof Base] */ js.Any
   
   type ConfigMap[TProps /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ p in keyof TProps ]:? uncontrollable.uncontrollable/cjs/hook.AllowedNames<TProps, std.Function>}
-    */ typings.uncontrollable.uncontrollableStrings.ConfigMap with TopLevel[js.Any]
+    */ typings.uncontrollable.uncontrollableStrings.ConfigMap & TopLevel[js.Any]
   
   type FilterFlags[Base, Condition] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ Key in keyof Base ]: std.NonNullable<Base[Key]> extends Condition? Key : never}
-    */ typings.uncontrollable.uncontrollableStrings.FilterFlags with TopLevel[Base]
+    */ typings.uncontrollable.uncontrollableStrings.FilterFlags & TopLevel[Base]
   
-  type Handler = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait Handler extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
 }

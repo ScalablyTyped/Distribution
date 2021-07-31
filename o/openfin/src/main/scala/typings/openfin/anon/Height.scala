@@ -2,15 +2,13 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
-  var height: js.Any = js.native
+  var height: js.Any
   
-  var width: js.Any = js.native
+  var width: js.Any
 }
 object Height {
   

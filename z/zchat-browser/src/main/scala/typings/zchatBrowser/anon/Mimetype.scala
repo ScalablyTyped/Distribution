@@ -2,19 +2,17 @@ package typings.zchatBrowser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mimetype extends StObject {
   
-  var mime_type: String = js.native
+  var mime_type: String
   
-  var name: String = js.native
+  var name: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var url: String = js.native
+  var url: String
 }
 object Mimetype {
   

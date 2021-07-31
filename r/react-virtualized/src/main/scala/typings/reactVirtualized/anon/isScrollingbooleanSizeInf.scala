@@ -2,18 +2,16 @@ package typings.reactVirtualized.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  isScrolling :boolean} & react-virtualized.react-virtualized.SizeInfo */
-@js.native
 trait isScrollingbooleanSizeInf extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var isScrolling: Boolean = js.native
+  var isScrolling: Boolean
   
-  var width: Double = js.native
+  var width: Double
 }
 object isScrollingbooleanSizeInf {
   

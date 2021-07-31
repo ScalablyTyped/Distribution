@@ -2,36 +2,34 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelPackageSummary extends StObject {
   
   /**
     * A timestamp that shows when the model package was created.
     */
-  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime = js.native
+  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime
   
   /**
     * The Amazon Resource Name (ARN) of the model package.
     */
-  var ModelPackageArn: typings.awsSdk.sagemakerMod.ModelPackageArn = js.native
+  var ModelPackageArn: typings.awsSdk.sagemakerMod.ModelPackageArn
   
   /**
     * A brief description of the model package.
     */
-  var ModelPackageDescription: js.UndefOr[EntityDescription] = js.native
+  var ModelPackageDescription: js.UndefOr[EntityDescription] = js.undefined
   
   /**
     * The name of the model package.
     */
-  var ModelPackageName: EntityName = js.native
+  var ModelPackageName: EntityName
   
   /**
     * The overall status of the model package.
     */
-  var ModelPackageStatus: typings.awsSdk.sagemakerMod.ModelPackageStatus = js.native
+  var ModelPackageStatus: typings.awsSdk.sagemakerMod.ModelPackageStatus
 }
 object ModelPackageSummary {
   

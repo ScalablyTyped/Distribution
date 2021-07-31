@@ -17,42 +17,36 @@ import typings.mysql2.rowDataPacketMod.RowDataPacket
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promiseMod {
   
-  @JSImport("mysql2/promise", "createConnection")
+  @JSImport("mysql2/promise", JSImport.Namespace)
   @js.native
-  def createConnection(config: ConnectionOptions): js.Promise[Connection] = js.native
-  @JSImport("mysql2/promise", "createConnection")
-  @js.native
-  def createConnection(connectionUri: String): js.Promise[Connection] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mysql2/promise", "createPool")
-  @js.native
-  def createPool(config: PoolOptions): Pool = js.native
+  @scala.inline
+  def createConnection(config: ConnectionOptions): js.Promise[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Connection]]
+  @scala.inline
+  def createConnection(connectionUri: String): js.Promise[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(connectionUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Connection]]
   
-  @JSImport("mysql2/promise", "createPoolCluster")
-  @js.native
-  def createPoolCluster(): PoolCluster = js.native
-  @JSImport("mysql2/promise", "createPoolCluster")
-  @js.native
-  def createPoolCluster(config: PoolClusterOptions): PoolCluster = js.native
+  @scala.inline
+  def createPool(config: PoolOptions): Pool = ^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(config.asInstanceOf[js.Any]).asInstanceOf[Pool]
   
-  @JSImport("mysql2/promise", "escape")
-  @js.native
-  def escape(value: js.Any): String = js.native
+  @scala.inline
+  def createPoolCluster(): PoolCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("createPoolCluster")().asInstanceOf[PoolCluster]
+  @scala.inline
+  def createPoolCluster(config: PoolClusterOptions): PoolCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("createPoolCluster")(config.asInstanceOf[js.Any]).asInstanceOf[PoolCluster]
   
-  @JSImport("mysql2/promise", "format")
-  @js.native
-  def format(sql: String): String = js.native
-  @JSImport("mysql2/promise", "format")
-  @js.native
-  def format(sql: String, values: js.Any): String = js.native
-  @JSImport("mysql2/promise", "format")
-  @js.native
-  def format(sql: String, values: js.Array[_]): String = js.native
+  @scala.inline
+  def escape(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def format(sql: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def format(sql: String, values: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(sql: String, values: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
   trait Connection extends EventEmitter {
@@ -79,16 +73,16 @@ object promiseMod {
     
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Any): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[_]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[_]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     
     def format(sql: String): String = js.native
     def format(sql: String, values: js.Any): String = js.native
-    def format(sql: String, values: js.Array[_]): String = js.native
+    def format(sql: String, values: js.Array[js.Any]): String = js.native
     def format(sql: String, values: StringDictionary[js.Any]): String = js.native
     
     def pause(): Unit = js.native
@@ -97,11 +91,11 @@ object promiseMod {
     
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Any): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[_]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[_]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     
     def resume(): Unit = js.native
@@ -120,31 +114,31 @@ object promiseMod {
     
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Any): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[_]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[_]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     
     def getConnection(): js.Promise[PoolConnection] = js.native
     
     @JSName("on")
-    def on_acquire(event: acquire, listener: js.Function1[/* connection */ PoolConnection, _]): this.type = js.native
+    def on_acquire(event: acquire, listener: js.Function1[/* connection */ PoolConnection, js.Any]): this.type = js.native
     @JSName("on")
-    def on_connection(event: connection, listener: js.Function1[/* connection */ PoolConnection, _]): this.type = js.native
+    def on_connection(event: connection, listener: js.Function1[/* connection */ PoolConnection, js.Any]): this.type = js.native
     @JSName("on")
-    def on_enqueue(event: enqueue, listener: js.Function0[_]): this.type = js.native
+    def on_enqueue(event: enqueue, listener: js.Function0[js.Any]): this.type = js.native
     @JSName("on")
-    def on_release(event: release, listener: js.Function1[/* connection */ PoolConnection, _]): this.type = js.native
+    def on_release(event: release, listener: js.Function1[/* connection */ PoolConnection, js.Any]): this.type = js.native
     
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Any): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[_]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[_]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
   }
   

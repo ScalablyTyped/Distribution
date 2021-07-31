@@ -9,7 +9,6 @@ import typings.react.mod.PropsWithChildren
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadUploadMod extends Shortcut {
@@ -19,7 +18,9 @@ object uploadUploadMod extends Shortcut {
   val default: CompoundedComponent = js.native
   
   @js.native
-  trait CompoundedComponent extends ForwardRefExoticComponent[PropsWithChildren[UploadProps[_]] with RefAttributes[_]] {
+  trait CompoundedComponent
+    extends StObject
+       with ForwardRefExoticComponent[PropsWithChildren[UploadProps[js.Any]] & RefAttributes[js.Any]] {
     
     var Dragger: FC[DraggerProps] = js.native
   }

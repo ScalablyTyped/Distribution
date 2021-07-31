@@ -2,36 +2,34 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterSecurityGroup extends StObject {
   
   /**
     * The name of the cluster security group to which the operation was applied.
     */
-  var ClusterSecurityGroupName: js.UndefOr[String] = js.native
+  var ClusterSecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the security group.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * A list of EC2 security groups that are permitted to access clusters associated with this cluster security group.
     */
-  var EC2SecurityGroups: js.UndefOr[EC2SecurityGroupList] = js.native
+  var EC2SecurityGroups: js.UndefOr[EC2SecurityGroupList] = js.undefined
   
   /**
     * A list of IP ranges (CIDR blocks) that are permitted to access clusters associated with this cluster security group.
     */
-  var IPRanges: js.UndefOr[IPRangeList] = js.native
+  var IPRanges: js.UndefOr[IPRangeList] = js.undefined
   
   /**
     * The list of tags for the cluster security group.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ClusterSecurityGroup {
   

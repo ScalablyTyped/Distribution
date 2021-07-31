@@ -2,21 +2,19 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IModelLanguageChangedEvent extends StObject {
   
   /**
     * New language
     */
-  val newLanguage: String = js.native
+  val newLanguage: String
   
   /**
     * Previous language
     */
-  val oldLanguage: String = js.native
+  val oldLanguage: String
 }
 object IModelLanguageChangedEvent {
   

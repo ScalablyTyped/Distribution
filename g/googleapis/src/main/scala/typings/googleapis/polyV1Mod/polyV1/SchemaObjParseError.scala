@@ -2,46 +2,44 @@ package typings.googleapis.polyV1Mod.polyV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of an error resulting from parsing an OBJ file
   */
-@js.native
 trait SchemaObjParseError extends StObject {
   
   /**
     * The type of problem found (required).
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * The ending character index at which the problem was found.
     */
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The file path in which the problem was found.
     */
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
   /**
     * The text of the line. Note that this may be truncated if the line was
     * very long. This may not include the error if it occurs after line
     * truncation.
     */
-  var line: js.UndefOr[String] = js.native
+  var line: js.UndefOr[String] = js.undefined
   
   /**
     * Line number at which the problem was found.
     */
-  var lineNumber: js.UndefOr[Double] = js.native
+  var lineNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * The starting character index at which the problem was found.
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
 }
 object SchemaObjParseError {
   

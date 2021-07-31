@@ -5,31 +5,29 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object test {
   
   type UITest = XUITest
   
-  @js.native
   trait XUIObject extends StObject {
     
-    val Children: SafeArray[String] = js.native
+    val Children: SafeArray[String]
     
-    val State: PropertyValues = js.native
+    val State: PropertyValues
     
-    val Type: String = js.native
+    val Type: String
     
-    def executeAction(action: String, propValues: PropertyValues): Unit = js.native
+    def executeAction(action: String, propValues: PropertyValues): Unit
     
-    def getChild(id: String): XUIObject = js.native
+    def getChild(id: String): XUIObject
     
-    def getChildren(): SafeArray[String] = js.native
+    def getChildren(): SafeArray[String]
     
-    def getState(): PropertyValues = js.native
+    def getState(): PropertyValues
     
-    def getType(): String = js.native
+    def getType(): String
   }
   object XUIObject {
     
@@ -80,14 +78,13 @@ object test {
     }
   }
   
-  @js.native
   trait XUITest extends StObject {
     
-    val TopFocusWindow: XUIObject = js.native
+    val TopFocusWindow: XUIObject
     
-    def executeCommand(command: String): Unit = js.native
+    def executeCommand(command: String): Unit
     
-    def getTopFocusWindow(): XUIObject = js.native
+    def getTopFocusWindow(): XUIObject
   }
   object XUITest {
     

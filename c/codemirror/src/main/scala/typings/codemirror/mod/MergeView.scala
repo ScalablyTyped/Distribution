@@ -3,7 +3,6 @@ package typings.codemirror.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MergeView {
@@ -11,25 +10,26 @@ object MergeView {
   /**
     * A function that calculates either a two-way or three-way merge between different sets of content.
     */
-  @JSImport("codemirror", "MergeView")
-  @js.native
-  def apply(element: HTMLElement): MergeViewEditor = js.native
-  @JSImport("codemirror", "MergeView")
-  @js.native
-  def apply(element: HTMLElement, options: MergeViewEditorConfiguration): MergeViewEditor = js.native
+  @scala.inline
+  def apply(element: HTMLElement): MergeViewEditor = ^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any]).asInstanceOf[MergeViewEditor]
+  @scala.inline
+  def apply(element: HTMLElement, options: MergeViewEditorConfiguration): MergeViewEditor = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MergeViewEditor]
   
+  @JSImport("codemirror", "MergeView")
   @js.native
+  val ^ : js.Any = js.native
+  
   trait DiffView extends StObject {
     
     /**
       * Forces the view to reload.
       */
-    def forceUpdate(): js.Function1[/* mode */ String, Unit] = js.native
+    def forceUpdate(): js.Function1[/* mode */ String, Unit]
     
     /**
       * Sets whether or not the merge view should show the differences between the editor views.
       */
-    def setShowDifferences(showDifferences: Boolean): Unit = js.native
+    def setShowDifferences(showDifferences: Boolean): Unit
   }
   object DiffView {
     
@@ -53,16 +53,15 @@ object MergeView {
   /**
     * Tracks changes in chunks from oroginal to new.
     */
-  @js.native
   trait MergeViewDiffChunk extends StObject {
     
-    var editFrom: Double = js.native
+    var editFrom: Double
     
-    var editTo: Double = js.native
+    var editTo: Double
     
-    var origFrom: Double = js.native
+    var origFrom: Double
     
-    var origTo: Double = js.native
+    var origTo: Double
   }
   object MergeViewDiffChunk {
     
@@ -90,7 +89,9 @@ object MergeView {
   }
   
   @js.native
-  trait MergeViewEditor extends Editor {
+  trait MergeViewEditor
+    extends StObject
+       with Editor {
     
     /**
       * Returns the editor instance.
@@ -124,25 +125,26 @@ object MergeView {
   /**
     * Options available to MergeView.
     */
-  @js.native
-  trait MergeViewEditorConfiguration extends EditorConfiguration {
+  trait MergeViewEditorConfiguration
+    extends StObject
+       with EditorConfiguration {
     
     /**
       * Determines whether the original editor allows editing. Defaults to false.
       */
-    var allowEditingOriginals: js.UndefOr[Boolean] = js.native
+    var allowEditingOriginals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true stretches of unchanged text will be collapsed. When a number is given, this indicates the amount
       * of lines to leave visible around such stretches (which defaults to 2). Defaults to false.
       */
-    var collapseIdentical: js.UndefOr[Boolean | Double] = js.native
+    var collapseIdentical: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Sets the style used to connect changed chunks of code. By default, connectors are drawn. When this is set to "align",
       * the smaller chunk is padded to align with the bigger chunk instead.
       */
-    var connect: js.UndefOr[String] = js.native
+    var connect: js.UndefOr[String] = js.undefined
     
     /**
       * Callback for when stretches of unchanged text are collapsed.
@@ -155,34 +157,34 @@ object MergeView {
           /* mark */ TextMarker, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Provides original version of the document to be shown on the right of the editor.
       */
-    var orig: js.Any = js.native
+    var orig: js.Any
     
     /**
       * Provides original version of the document to be shown on the left of the editor.
       * To create a 2-way (as opposed to 3-way) merge view, provide only one of origLeft and origRight.
       */
-    var origLeft: js.UndefOr[js.Any] = js.native
+    var origLeft: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Provides original version of document to be shown on the right of the editor.
       * To create a 2-way (as opposed to 3-way) merge view, provide only one of origLeft and origRight.
       */
-    var origRight: js.UndefOr[js.Any] = js.native
+    var origRight: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Determines whether buttons that allow the user to revert changes are shown. Defaults to true.
       */
-    var revertButtons: js.UndefOr[Boolean] = js.native
+    var revertButtons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true, changed pieces of text are highlighted. Defaults to true.
       */
-    var showDifferences: js.UndefOr[Boolean] = js.native
+    var showDifferences: js.UndefOr[Boolean] = js.undefined
   }
   object MergeViewEditorConfiguration {
     

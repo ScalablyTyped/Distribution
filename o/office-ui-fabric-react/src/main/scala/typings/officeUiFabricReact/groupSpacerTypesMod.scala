@@ -6,36 +6,34 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupSpacerTypesMod {
   
-  @js.native
   trait IGroupSpacerProps extends StObject {
     
     /** Count of spacer(s) */
-    var count: Double = js.native
+    var count: Double
     
     /** How much to indent */
-    var indentWidth: js.UndefOr[Double] = js.native
+    var indentWidth: js.UndefOr[Double] = js.undefined
     
     /** Override the default role (presentation) */
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
     /**
       * Style function to be passed in to override the themed or default styles
       *
       * @deprecated unused, to be removed in 7.0
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IGroupSpacerStyleProps, IGroupSpacerStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IGroupSpacerStyleProps, IGroupSpacerStyles]] = js.undefined
     
     /**
       * Theme from Higher Order Component
       *
       * @deprecated unused, to be removed in 7.0
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IGroupSpacerProps {
     
@@ -81,12 +79,11 @@ object groupSpacerTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/GroupedList/GroupSpacer.types.IGroupSpacerProps, 'theme'>> & {  width :number | undefined} */
-  @js.native
   trait IGroupSpacerStyleProps extends StObject {
     
-    var theme: ITheme = js.native
+    var theme: ITheme
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IGroupSpacerStyleProps {
     
@@ -110,10 +107,9 @@ object groupSpacerTypesMod {
     }
   }
   
-  @js.native
   trait IGroupSpacerStyles extends StObject {
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IGroupSpacerStyles {
     

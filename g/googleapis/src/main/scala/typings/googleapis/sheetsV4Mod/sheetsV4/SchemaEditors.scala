@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The editors of a protected range.
   */
-@js.native
 trait SchemaEditors extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait SchemaEditors extends StObject {
     * protected range.  Domain protection is only supported on documents within
     * a domain.
     */
-  var domainUsersCanEdit: js.UndefOr[Boolean] = js.native
+  var domainUsersCanEdit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The email addresses of groups with edit access to the protected range.
     */
-  var groups: js.UndefOr[js.Array[String]] = js.native
+  var groups: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The email addresses of users with edit access to the protected range.
     */
-  var users: js.UndefOr[js.Array[String]] = js.native
+  var users: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaEditors {
   

@@ -28,7 +28,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplie
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,9 +38,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * travel through text table cellsselect text table cellsget property values from the selected cellsset property values in the selected cells
   * @see com.sun.star.text.TextTable
   */
-@js.native
 trait TextTableCursor
-  extends XTextTableCursor
+  extends StObject
+     with XTextTableCursor
      with XPropertySet
      with CharacterProperties
      with CharacterPropertiesAsian

@@ -12,11 +12,11 @@ Packer, 3D-Bin-Packing with multiple Boxes.
 | Keywords           | packer, 3d bin packing, 3d bin packing with multiple boxes, boxing optimization |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3446 |
+| # downloads        | 2943 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](http://betterwaysystems.github.io/packer)
+- [Homepage](https://github.com/betterwaysystems/packer#readme)
 - [Bugs](https://github.com/betterwaysystems/packer/issues)
 - [Repository](https://github.com/betterwaysystems/packer)
 - [Npm](https://www.npmjs.com/package/3d-bin-packing)

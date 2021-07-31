@@ -2,28 +2,26 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/dropdown.html#optional-javascript-configuration
-@js.native
 trait DropdownOptions extends StObject {
   
-  var active_class: js.UndefOr[String] = js.native
+  var active_class: js.UndefOr[String] = js.undefined
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var closed: js.UndefOr[js.Function0[_]] = js.native
+  var closed: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var disabled_class: js.UndefOr[String] = js.native
+  var disabled_class: js.UndefOr[String] = js.undefined
   
-  var hover_timeout: js.UndefOr[Double] = js.native
+  var hover_timeout: js.UndefOr[Double] = js.undefined
   
-  var is_hover: js.UndefOr[Boolean] = js.native
+  var is_hover: js.UndefOr[Boolean] = js.undefined
   
-  var mega_class: js.UndefOr[String] = js.native
+  var mega_class: js.UndefOr[String] = js.undefined
   
-  var opened: js.UndefOr[js.Function0[_]] = js.native
+  var opened: js.UndefOr[js.Function0[js.Any]] = js.undefined
 }
 object DropdownOptions {
   
@@ -49,7 +47,7 @@ object DropdownOptions {
     def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def setClosed(value: () => _): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
+    def setClosed(value: () => js.Any): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     
     @scala.inline
     def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
@@ -79,7 +77,7 @@ object DropdownOptions {
     def setMega_classUndefined: Self = StObject.set(x, "mega_class", js.undefined)
     
     @scala.inline
-    def setOpened(value: () => _): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
+    def setOpened(value: () => js.Any): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)

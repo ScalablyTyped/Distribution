@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTraceGraphResult extends StObject {
   
   /**
     * Pagination token.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The services that have processed one of the specified requests.
     */
-  var Services: js.UndefOr[ServiceList] = js.native
+  var Services: js.UndefOr[ServiceList] = js.undefined
 }
 object GetTraceGraphResult {
   

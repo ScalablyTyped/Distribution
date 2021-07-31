@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object containing gateways array. */
-@js.native
 trait GatewayList extends StObject {
   
   /** Array of configured gateway connections. */
-  var gateways: js.UndefOr[js.Array[Gateway]] = js.native
+  var gateways: js.UndefOr[js.Array[Gateway]] = js.undefined
 }
 object GatewayList {
   

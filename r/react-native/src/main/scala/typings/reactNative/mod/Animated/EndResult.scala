@@ -2,13 +2,11 @@ package typings.reactNative.mod.Animated
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndResult extends StObject {
   
-  var finished: Boolean = js.native
+  var finished: Boolean
 }
 object EndResult {
   

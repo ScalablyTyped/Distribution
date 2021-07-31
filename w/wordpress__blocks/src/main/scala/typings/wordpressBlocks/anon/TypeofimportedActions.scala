@@ -5,7 +5,6 @@ import typings.wordpressBlocks.mod.BlockConfiguration
 import typings.wordpressBlocks.mod.BlockStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,8 +13,8 @@ trait TypeofimportedActions extends StObject {
   def addBlockStyles(blockName: String, styles: js.Array[BlockStyle]): Unit = js.native
   def addBlockStyles(blockName: String, styles: BlockStyle): Unit = js.native
   
-  def addBlockTypes(blockTypes: js.Array[BlockConfiguration[_]]): Unit = js.native
-  def addBlockTypes(blockTypes: BlockConfiguration[_]): Unit = js.native
+  def addBlockTypes(blockTypes: js.Array[BlockConfiguration[js.Any]]): Unit = js.native
+  def addBlockTypes(blockTypes: BlockConfiguration[js.Any]): Unit = js.native
   
   def removeBlockStyles(blockName: String, styleNames: String): Unit = js.native
   def removeBlockStyles(blockName: String, styleNames: js.Array[String]): Unit = js.native

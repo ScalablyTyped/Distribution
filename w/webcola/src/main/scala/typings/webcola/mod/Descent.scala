@@ -2,7 +2,6 @@ package typings.webcola.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Descent")
@@ -25,9 +24,8 @@ object Descent {
   @scala.inline
   def copy_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("copy")(x.asInstanceOf[js.Any])
   
-  @JSImport("webcola", "Descent.createSquareMatrix")
-  @js.native
-  def createSquareMatrix(n: Double, f: js.Function2[/* i */ Double, /* j */ Double, Double]): js.Array[js.Array[Double]] = js.native
+  @scala.inline
+  def createSquareMatrix(n: Double, f: js.Function2[/* i */ Double, /* j */ Double, Double]): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSquareMatrix")(n.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
   
   @JSImport("webcola", "Descent.dotProd")
   @js.native

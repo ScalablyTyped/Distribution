@@ -4,39 +4,37 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.dark
 import typings.tuyaPanelKit.tuyaPanelKitStrings.light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalTheme extends StObject {
   
-  var brickButton: BrickButton = js.native
+  var brickButton: BrickButton
   
-  var button: Button = js.native
+  var button: Button
   
-  var checkbox: Checkbox = js.native
+  var checkbox: Checkbox
   
-  var dialog: Dialog = js.native
+  var dialog: Dialog
   
-  var global: Global = js.native
+  var global: Global
   
-  var list: List = js.native
+  var list: List
   
-  var picker: Picker = js.native
+  var picker: Picker
   
-  var popup: Popup = js.native
+  var popup: Popup
   
-  var slider: Slider = js.native
+  var slider: Slider
   
-  var switchButton: SwitchButton = js.native
+  var switchButton: SwitchButton
   
-  var text: Text = js.native
+  var text: Text
   
-  var tips: Tips = js.native
+  var tips: Tips
   
-  var topbar: Topbar = js.native
+  var topbar: Topbar
   
-  var `type`: light | dark | String = js.native
+  var `type`: light | dark | String
 }
 object GlobalTheme {
   

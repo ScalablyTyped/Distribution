@@ -8,7 +8,6 @@ import typings.agGrid.iComponentMod.IComponent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentProviderMod {
@@ -29,22 +28,22 @@ object componentProviderMod {
     
     var jsComponents: js.Any = js.native
     
-    def registerComponent[A /* <: IComponent[_] */](rawName: String, component: AgGridRegisteredComponentInput[A]): Unit = js.native
+    def registerComponent[A /* <: IComponent[js.Any] */](rawName: String, component: AgGridRegisteredComponentInput[A]): Unit = js.native
     
-    def registerDefaultComponent[A /* <: IComponent[_] */](rawName: String, component: AgGridRegisteredComponentInput[A]): Unit = js.native
-    def registerDefaultComponent[A /* <: IComponent[_] */](rawName: String, component: AgGridRegisteredComponentInput[A], overridable: Boolean): Unit = js.native
-    
-    /**
-      * B the business interface (ie IHeader)
-      * A the agGridComponent interface (ie IHeaderComp). The final object acceptable by ag-grid
-      */
-    def registerFwComponent[A /* <: IComponent[_] with B */, B](rawName: String, component: `0`[B]): Unit = js.native
+    def registerDefaultComponent[A /* <: IComponent[js.Any] */](rawName: String, component: AgGridRegisteredComponentInput[A]): Unit = js.native
+    def registerDefaultComponent[A /* <: IComponent[js.Any] */](rawName: String, component: AgGridRegisteredComponentInput[A], overridable: Boolean): Unit = js.native
     
     /**
       * B the business interface (ie IHeader)
       * A the agGridComponent interface (ie IHeaderComp). The final object acceptable by ag-grid
       */
-    def retrieve[A /* <: IComponent[_] with B */, B](rawName: String): RegisteredComponent[A, B] = js.native
+    def registerFwComponent[A /* <: IComponent[js.Any] & B */, B](rawName: String, component: `0`[B]): Unit = js.native
+    
+    /**
+      * B the business interface (ie IHeader)
+      * A the agGridComponent interface (ie IHeaderComp). The final object acceptable by ag-grid
+      */
+    def retrieve[A /* <: IComponent[js.Any] & B */, B](rawName: String): RegisteredComponent[A, B] = js.native
     
     /* private */ def translateIfDeprecated(raw: js.Any): js.Any = js.native
   }
@@ -56,27 +55,30 @@ object componentProviderMod {
   object RegisteredComponentSource extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[RegisteredComponentSource with Double] = js.native
+    def apply(value: Double): js.UndefOr[RegisteredComponentSource & Double] = js.native
     
     @js.native
-    sealed trait DEFAULT extends RegisteredComponentSource
-    /* 0 */ val DEFAULT: typings.agGrid.componentProviderMod.RegisteredComponentSource.DEFAULT with Double = js.native
+    sealed trait DEFAULT
+      extends StObject
+         with RegisteredComponentSource
+    /* 0 */ val DEFAULT: typings.agGrid.componentProviderMod.RegisteredComponentSource.DEFAULT & Double = js.native
     
     @js.native
-    sealed trait REGISTERED extends RegisteredComponentSource
-    /* 1 */ val REGISTERED: typings.agGrid.componentProviderMod.RegisteredComponentSource.REGISTERED with Double = js.native
+    sealed trait REGISTERED
+      extends StObject
+         with RegisteredComponentSource
+    /* 1 */ val REGISTERED: typings.agGrid.componentProviderMod.RegisteredComponentSource.REGISTERED & Double = js.native
   }
   
   type AgGridComponentFunctionInput = js.Function1[/* params */ js.Any, String | HTMLElement]
   
-  type AgGridRegisteredComponentInput[A /* <: IComponent[_] */] = AgGridComponentFunctionInput | InstantiableA[A]
+  type AgGridRegisteredComponentInput[A /* <: IComponent[js.Any] */] = AgGridComponentFunctionInput | InstantiableA[A]
   
-  @js.native
   trait DeprecatedComponentName extends StObject {
     
-    var newComponentName: String = js.native
+    var newComponentName: String
     
-    var propertyHolder: String = js.native
+    var propertyHolder: String
   }
   object DeprecatedComponentName {
     
@@ -97,19 +99,18 @@ object componentProviderMod {
     }
   }
   
-  @js.native
-  trait RegisteredComponent[A /* <: IComponent[_] with B */, B] extends StObject {
+  trait RegisteredComponent[A /* <: IComponent[js.Any] & B */, B] extends StObject {
     
-    var component: RegisteredComponentInput[A, B] = js.native
+    var component: RegisteredComponentInput[A, B]
     
-    var source: RegisteredComponentSource = js.native
+    var source: RegisteredComponentSource
     
-    var `type`: ComponentType = js.native
+    var `type`: ComponentType
   }
   object RegisteredComponent {
     
     @scala.inline
-    def apply[A /* <: IComponent[_] with B */, B](
+    def apply[A /* <: IComponent[js.Any] & B */, B](
       component: RegisteredComponentInput[A, B],
       source: RegisteredComponentSource,
       `type`: ComponentType
@@ -120,7 +121,7 @@ object componentProviderMod {
     }
     
     @scala.inline
-    implicit class RegisteredComponentMutableBuilder[Self <: RegisteredComponent[_, _], A /* <: IComponent[_] with B */, B] (val x: Self with (RegisteredComponent[A, B])) extends AnyVal {
+    implicit class RegisteredComponentMutableBuilder[Self <: RegisteredComponent[?, ?], A /* <: IComponent[js.Any] & B */, B] (val x: Self & (RegisteredComponent[A, B])) extends AnyVal {
       
       @scala.inline
       def setComponent(value: RegisteredComponentInput[A, B]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
@@ -136,5 +137,5 @@ object componentProviderMod {
     }
   }
   
-  type RegisteredComponentInput[A /* <: IComponent[_] with B */, B] = AgGridRegisteredComponentInput[A] | InstantiableB[B]
+  type RegisteredComponentInput[A /* <: IComponent[js.Any] & B */, B] = AgGridRegisteredComponentInput[A] | InstantiableB[B]
 }

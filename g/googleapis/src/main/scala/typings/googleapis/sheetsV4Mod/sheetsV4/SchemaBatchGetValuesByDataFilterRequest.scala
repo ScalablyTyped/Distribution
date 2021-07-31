@@ -2,14 +2,12 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for retrieving a range of values in a spreadsheet selected by a
   * set of DataFilters.
   */
-@js.native
 trait SchemaBatchGetValuesByDataFilterRequest extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaBatchGetValuesByDataFilterRequest extends StObject {
     * that match any of the specified data filters will be included in the
     * response.
     */
-  var dataFilters: js.UndefOr[js.Array[SchemaDataFilter]] = js.native
+  var dataFilters: js.UndefOr[js.Array[SchemaDataFilter]] = js.undefined
   
   /**
     * How dates, times, and durations should be represented in the output. This
     * is ignored if value_render_option is FORMATTED_VALUE. The default
     * dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].
     */
-  var dateTimeRenderOption: js.UndefOr[String] = js.native
+  var dateTimeRenderOption: js.UndefOr[String] = js.undefined
   
   /**
     * The major dimension that results should use.  For example, if the
@@ -33,13 +31,13 @@ trait SchemaBatchGetValuesByDataFilterRequest extends StObject {
     * whereas a request that sets `majorDimension=COLUMNS` will return
     * `[[1,3],[2,4]]`.
     */
-  var majorDimension: js.UndefOr[String] = js.native
+  var majorDimension: js.UndefOr[String] = js.undefined
   
   /**
     * How values should be represented in the output. The default render option
     * is ValueRenderOption.FORMATTED_VALUE.
     */
-  var valueRenderOption: js.UndefOr[String] = js.native
+  var valueRenderOption: js.UndefOr[String] = js.undefined
 }
 object SchemaBatchGetValuesByDataFilterRequest {
   

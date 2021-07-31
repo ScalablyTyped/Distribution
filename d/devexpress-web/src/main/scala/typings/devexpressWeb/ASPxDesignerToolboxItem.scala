@@ -2,25 +2,23 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxDesignerToolboxItem extends StObject {
   
-  var defaultVal: js.Any = js.native
+  var defaultVal: js.Any
   
-  var info: js.Array[ASPxDesignerElementSerializationInfo] = js.native
+  var info: js.Array[ASPxDesignerElementSerializationInfo]
   
-  var isToolboxItem: Boolean = js.native
+  var isToolboxItem: Boolean
   
-  var popularProperties: js.Array[String] = js.native
+  var popularProperties: js.Array[String]
   
-  var surfaceType: js.Any = js.native
+  var surfaceType: js.Any
   
-  var toolboxIndex: Double = js.native
+  var toolboxIndex: Double
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
 }
 object ASPxDesignerToolboxItem {
   

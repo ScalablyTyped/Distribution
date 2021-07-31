@@ -5,27 +5,21 @@ import typings.cadesplugin.cadespluginNumbers.`1`
 import typings.cadesplugin.cadespluginNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CADESCOM_DISPLAY_DATA extends StObject {
   
-  val CADESCOM_DISPLAY_DATA_ATTRIBUTE: `2` = js.native
+  val CADESCOM_DISPLAY_DATA_ATTRIBUTE: `2`
   
-  val CADESCOM_DISPLAY_DATA_CONTENT: `1` = js.native
+  val CADESCOM_DISPLAY_DATA_CONTENT: `1`
   
-  val CADESCOM_DISPLAY_DATA_NONE: `0` = js.native
+  val CADESCOM_DISPLAY_DATA_NONE: `0`
 }
 object CADESCOM_DISPLAY_DATA {
   
   @scala.inline
-  def apply(
-    CADESCOM_DISPLAY_DATA_ATTRIBUTE: `2`,
-    CADESCOM_DISPLAY_DATA_CONTENT: `1`,
-    CADESCOM_DISPLAY_DATA_NONE: `0`
-  ): CADESCOM_DISPLAY_DATA = {
-    val __obj = js.Dynamic.literal(CADESCOM_DISPLAY_DATA_ATTRIBUTE = CADESCOM_DISPLAY_DATA_ATTRIBUTE.asInstanceOf[js.Any], CADESCOM_DISPLAY_DATA_CONTENT = CADESCOM_DISPLAY_DATA_CONTENT.asInstanceOf[js.Any], CADESCOM_DISPLAY_DATA_NONE = CADESCOM_DISPLAY_DATA_NONE.asInstanceOf[js.Any])
+  def apply(): CADESCOM_DISPLAY_DATA = {
+    val __obj = js.Dynamic.literal(CADESCOM_DISPLAY_DATA_ATTRIBUTE = 2, CADESCOM_DISPLAY_DATA_CONTENT = 1, CADESCOM_DISPLAY_DATA_NONE = 0)
     __obj.asInstanceOf[CADESCOM_DISPLAY_DATA]
   }
   

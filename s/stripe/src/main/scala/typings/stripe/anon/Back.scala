@@ -2,23 +2,21 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Back extends StObject {
   
   /**
     * The back of an ID returned by a file with a purpose value of identity_document.
     * This can be unset by updating the value to null and then saving.
     */
-  var back: js.UndefOr[String] = js.native
+  var back: js.UndefOr[String] = js.undefined
   
   /**
     * The front of an ID returned by a file with a purpose value of identity_document.
     * This can be unset by updating the value to null and then saving.
     */
-  var front: js.UndefOr[String] = js.native
+  var front: js.UndefOr[String] = js.undefined
 }
 object Back {
   

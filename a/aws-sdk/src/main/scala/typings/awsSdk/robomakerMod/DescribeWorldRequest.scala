@@ -2,16 +2,14 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorldRequest extends StObject {
   
   /**
     * The Amazon Resource Name (arn) of the world you want to describe.
     */
-  var world: Arn = js.native
+  var world: Arn
 }
 object DescribeWorldRequest {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Ads")
@@ -31,7 +30,7 @@ class ResourceAds protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAd] = js.native
   def get(callback: BodyResponseCallback[SchemaAd]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
   def get(params: ParamsResourceAdsGet): GaxiosPromise[SchemaAd] = js.native
   def get(params: ParamsResourceAdsGet, callback: BodyResponseCallback[SchemaAd]): Unit = js.native
   def get(
@@ -57,7 +56,7 @@ class ResourceAds protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaAd] = js.native
   def insert(callback: BodyResponseCallback[SchemaAd]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
   def insert(params: ParamsResourceAdsInsert): GaxiosPromise[SchemaAd] = js.native
   def insert(params: ParamsResourceAdsInsert, callback: BodyResponseCallback[SchemaAd]): Unit = js.native
   def insert(
@@ -106,7 +105,7 @@ class ResourceAds protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAdsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAdsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdsListResponse] = js.native
   def list(params: ParamsResourceAdsList): GaxiosPromise[SchemaAdsListResponse] = js.native
   def list(params: ParamsResourceAdsList, callback: BodyResponseCallback[SchemaAdsListResponse]): Unit = js.native
   def list(
@@ -137,7 +136,7 @@ class ResourceAds protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaAd] = js.native
   def patch(callback: BodyResponseCallback[SchemaAd]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
   def patch(params: ParamsResourceAdsPatch): GaxiosPromise[SchemaAd] = js.native
   def patch(params: ParamsResourceAdsPatch, callback: BodyResponseCallback[SchemaAd]): Unit = js.native
   def patch(
@@ -163,7 +162,7 @@ class ResourceAds protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaAd] = js.native
   def update(callback: BodyResponseCallback[SchemaAd]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
   def update(params: ParamsResourceAdsUpdate): GaxiosPromise[SchemaAd] = js.native
   def update(params: ParamsResourceAdsUpdate, callback: BodyResponseCallback[SchemaAd]): Unit = js.native
   def update(

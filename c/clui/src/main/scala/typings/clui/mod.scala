@@ -4,14 +4,16 @@ import typings.cliColor.mod.Format
 import typings.clui.cluiStrings.console
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("clui", "Gauge")
+  @JSImport("clui", JSImport.Namespace)
   @js.native
-  def Gauge(value: Double, maxValue: Double, guageWidth: Double, dangerZone: Double, suffix: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Gauge(value: Double, maxValue: Double, guageWidth: Double, dangerZone: Double, suffix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Gauge")(value.asInstanceOf[js.Any], maxValue.asInstanceOf[js.Any], guageWidth.asInstanceOf[js.Any], dangerZone.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("clui", "Line")
   @js.native
@@ -113,9 +115,8 @@ object mod {
     def update(currentValueOrPercent: Double, maxValue: Double): String = js.native
   }
   
-  @JSImport("clui", "Sparkline")
-  @js.native
-  def Sparkline(values: js.Array[Double], suffix: String): String = js.native
+  @scala.inline
+  def Sparkline(values: js.Array[Double], suffix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Sparkline")(values.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("clui", "Spinner")
   @js.native
@@ -145,18 +146,17 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait LineBufferOptions extends StObject {
     
-    var height: js.UndefOr[Double | console] = js.native
+    var height: js.UndefOr[Double | console] = js.undefined
     
-    var scroll: js.UndefOr[Double] = js.native
+    var scroll: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double | console] = js.native
+    var width: js.UndefOr[Double | console] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object LineBufferOptions {
     

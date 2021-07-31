@@ -4,7 +4,6 @@ import typings.chromeApps.chrome.enterprise.platformKeys.Token
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enterprise {
@@ -24,6 +23,10 @@ object enterprise {
     */
   object deviceAttributes {
     
+    @JSGlobal("chrome.enterprise.deviceAttributes")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @since Chrome 66.
       * @description
@@ -31,9 +34,8 @@ object enterprise {
       * If the current user is not affiliated or no Annotated Location has been set by the administrator, returns an empty string.
       * @param callback Called with the Annotated Location of the device.
       */
-    @JSGlobal("chrome.enterprise.deviceAttributes.getDeviceAnnotatedLocation")
-    @js.native
-    def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit = js.native
+    @scala.inline
+    def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceAnnotatedLocation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * @since Chrome 66.
@@ -42,9 +44,8 @@ object enterprise {
       * If the current user is not affiliated or no Asset Id has been set by the administrator, returns an empty string.
       * @param callback Called with the Asset ID of the device.
       */
-    @JSGlobal("chrome.enterprise.deviceAttributes.getDeviceAssetId")
-    @js.native
-    def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit = js.native
+    @scala.inline
+    def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceAssetId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * @since Chrome 66.
@@ -56,9 +57,8 @@ object enterprise {
       * If the current user is not affiliated, returns an empty string.
       * @param callback Called with the serial number of the device.
       */
-    @JSGlobal("chrome.enterprise.deviceAttributes.getDeviceSerialNumber")
-    @js.native
-    def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit = js.native
+    @scala.inline
+    def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSerialNumber")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * @description
@@ -68,9 +68,8 @@ object enterprise {
       * If the current user is not affiliated, returns an empty string.
       * @param callback Called with the device identifier of the directory API when received.
       */
-    @JSGlobal("chrome.enterprise.deviceAttributes.getDirectoryDeviceId")
-    @js.native
-    def getDirectoryDeviceId(callback: js.Function1[/* deviceId */ String, Unit]): Unit = js.native
+    @scala.inline
+    def getDirectoryDeviceId(callback: js.Function1[/* deviceId */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectoryDeviceId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -83,6 +82,10 @@ object enterprise {
     * @see[Documentation]{@link https://developer.chrome.com/extensions/enterprise_platformKeys}
     */
   object platformKeys {
+    
+    @JSGlobal("chrome.enterprise.platformKeys")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @since Chrome 50.
@@ -103,9 +106,8 @@ object enterprise {
       * @param challenge A challenge as emitted by the Verified Access Web API.
       * @param callback Called back with the challenge response.
       */
-    @JSGlobal("chrome.enterprise.platformKeys.challengeMachineKey")
-    @js.native
-    def challengeMachineKey(challenge: ArrayBuffer, callback: js.Function1[/* response */ ArrayBuffer, Unit]): Unit = js.native
+    @scala.inline
+    def challengeMachineKey(challenge: ArrayBuffer, callback: js.Function1[/* response */ ArrayBuffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeMachineKey")(challenge.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * @since **Since Chrome 59.** - Note: the parameter 'registerKey' requires at least Chrome 59
       * @description
@@ -128,13 +130,12 @@ object enterprise {
       *                    Subsequent calls to this function will then generate a new Enterprise Machine Key.
       * @param callback Called back with the challenge response.
       */
-    @JSGlobal("chrome.enterprise.platformKeys.challengeMachineKey")
-    @js.native
+    @scala.inline
     def challengeMachineKey(
       challenge: ArrayBuffer,
       registerKey: Boolean,
       callback: js.Function1[/* response */ ArrayBuffer, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeMachineKey")(challenge.asInstanceOf[js.Any], registerKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @since Chrome 50.
@@ -156,13 +157,12 @@ object enterprise {
       *                    This key is 2048-bit RSA. Subsequent calls to this function will then generate a new Enterprise User Key.
       * @param callback Called back with the challenge response.
       */
-    @JSGlobal("chrome.enterprise.platformKeys.challengeUserKey")
-    @js.native
+    @scala.inline
     def challengeUserKey(
       challenge: ArrayBuffer,
       registerKey: Boolean,
       callback: js.Function1[/* response */ ArrayBuffer, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeUserKey")(challenge.asInstanceOf[js.Any], registerKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns the list of all client certificates available from the given token.
@@ -170,9 +170,8 @@ object enterprise {
       * @param tokenId The id of a Token returned by getTokens.
       * @param callback Called back with the list of the available certificates.
       */
-    @JSGlobal("chrome.enterprise.platformKeys.getCertificates")
-    @js.native
-    def getCertificates(tokenId: String, callback: js.Function1[/* certificates */ js.Array[ArrayBuffer], Unit]): Unit = js.native
+    @scala.inline
+    def getCertificates(tokenId: String, callback: js.Function1[/* certificates */ js.Array[ArrayBuffer], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificates")(tokenId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns the available Tokens.
@@ -181,9 +180,8 @@ object enterprise {
       * The system-wide token will be the same for all sessions on this device (device in the sense of e.g. a Chromebook).
       * @param callback Invoked by getTokens with the list of available Tokens.
       */
-    @JSGlobal("chrome.enterprise.platformKeys.getTokens")
-    @js.native
-    def getTokens(callback: js.Function1[/* tokens */ js.Array[Token], Unit]): Unit = js.native
+    @scala.inline
+    def getTokens(callback: js.Function1[/* tokens */ js.Array[Token], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTokens")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Imports certificate to the given token if the certified key is already stored in this token.
@@ -193,9 +191,8 @@ object enterprise {
       * @param certificate The DER encoding of a X.509 certificate.
       * @param [callback] Called back when this operation is finished.
       */
-    @JSGlobal("chrome.enterprise.platformKeys.importCertificate")
-    @js.native
-    def importCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def importCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes certificate from the given token if present.
@@ -206,8 +203,7 @@ object enterprise {
       * @param certificate The DER encoding of a X.509 certificate.
       * @param [callback] Called back when this operation is finished.
       */
-    @JSGlobal("chrome.enterprise.platformKeys.removeCertificate")
-    @js.native
-    def removeCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def removeCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

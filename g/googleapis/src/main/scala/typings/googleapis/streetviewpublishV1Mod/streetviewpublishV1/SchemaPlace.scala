@@ -2,13 +2,11 @@ package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Place metadata for an entity.
   */
-@js.native
 trait SchemaPlace extends StObject {
   
   /**
@@ -16,18 +14,18 @@ trait SchemaPlace extends StObject {
     * should be the language_code specified in the request, but may be a
     * fallback.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Output-only. The name of the place, localized to the language_code.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Place identifier, as described in
     * https://developers.google.com/places/place-id.
     */
-  var placeId: js.UndefOr[String] = js.native
+  var placeId: js.UndefOr[String] = js.undefined
 }
 object SchemaPlace {
   

@@ -2,161 +2,161 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of rules about how FHIR is used
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait ImplementationGuide extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait ImplementationGuide
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'binary'.
     */
-  var _binary: js.UndefOr[js.Array[Element]] = js.native
+  var _binary: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'copyright'.
     */
-  var _copyright: js.UndefOr[Element] = js.native
+  var _copyright: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'experimental'.
     */
-  var _experimental: js.UndefOr[Element] = js.native
+  var _experimental: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'fhirVersion'.
     */
-  var _fhirVersion: js.UndefOr[Element] = js.native
+  var _fhirVersion: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Group of resources as used in .page.package
     */
   @JSName("package")
-  var _package: js.UndefOr[js.Array[ImplementationGuidePackage]] = js.native
+  var _package: js.UndefOr[js.Array[ImplementationGuidePackage]] = js.undefined
   
   /**
     * Contains extended information for property 'publisher'.
     */
-  var _publisher: js.UndefOr[Element] = js.native
+  var _publisher: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.native
+  var _url: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.native
+  var _version: js.UndefOr[Element] = js.undefined
   
   /**
     * Image, css, script, etc.
     */
-  var binary: js.UndefOr[js.Array[uri]] = js.native
+  var binary: js.UndefOr[js.Array[uri]] = js.undefined
   
   /**
     * Contact details for the publisher
     */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.native
+  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
     * Use and/or publishing restrictions
     */
-  var copyright: js.UndefOr[markdown] = js.native
+  var copyright: js.UndefOr[markdown] = js.undefined
   
   /**
     * Date this was last changed
     */
-  var date: js.UndefOr[dateTime] = js.native
+  var date: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Another Implementation guide this depends on
     */
-  var dependency: js.UndefOr[js.Array[ImplementationGuideDependency]] = js.native
+  var dependency: js.UndefOr[js.Array[ImplementationGuideDependency]] = js.undefined
   
   /**
     * Natural language description of the implementation guide
     */
-  var description: js.UndefOr[markdown] = js.native
+  var description: js.UndefOr[markdown] = js.undefined
   
   /**
     * For testing purposes, not real usage
     */
-  var experimental: js.UndefOr[Boolean] = js.native
+  var experimental: js.UndefOr[Boolean] = js.undefined
   
   /**
     * FHIR Version this Implementation Guide targets
     */
-  var fhirVersion: js.UndefOr[id] = js.native
+  var fhirVersion: js.UndefOr[id] = js.undefined
   
   /**
     * Profiles that apply globally
     */
-  var global: js.UndefOr[js.Array[ImplementationGuideGlobal]] = js.native
+  var global: js.UndefOr[js.Array[ImplementationGuideGlobal]] = js.undefined
   
   /**
     * Intended jurisdiction for implementation guide (if applicable)
     */
-  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Name for this implementation guide (computer friendly)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Page/Section in the Guide
     */
-  var page: js.UndefOr[ImplementationGuidePage] = js.native
+  var page: js.UndefOr[ImplementationGuidePage] = js.undefined
   
   /**
     * Name of the publisher (organization or individual)
     */
-  var publisher: js.UndefOr[String] = js.native
+  var publisher: js.UndefOr[String] = js.undefined
   
   /**
     * draft | active | retired | unknown
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * Logical URI to reference this implementation guide (globally unique)
     */
-  var url: uri = js.native
+  var url: uri
   
   /**
     * Context the content is intended to support
     */
-  var useContext: js.UndefOr[js.Array[UsageContext]] = js.native
+  var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
     * Business version of the implementation guide
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object ImplementationGuide {
   

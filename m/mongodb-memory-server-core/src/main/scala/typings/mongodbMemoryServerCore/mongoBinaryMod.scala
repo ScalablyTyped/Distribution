@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mongodbMemoryServerCore.anon.RequiredMongoBinaryOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongoBinaryMod {
   
   @JSImport("mongodb-memory-server-core/lib/util/MongoBinary", JSImport.Default)
   @js.native
-  class default () extends MongoBinary
+  class default ()
+    extends StObject
+       with MongoBinary
   /* static members */
   object default {
     
@@ -29,18 +30,16 @@ object mongoBinaryMod {
       * Check if specified version already exists in the cache
       * @param version The Version to check for
       */
-    @JSImport("mongodb-memory-server-core/lib/util/MongoBinary", "default.getCachePath")
-    @js.native
-    def getCachePath(version: String): String = js.native
+    @scala.inline
+    def getCachePath(version: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCachePath")(version.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Probe download path and download the binary
       * @param options Options Configuring which binary to download and to which path
       * @returns The BinaryPath the binary has been downloaded to
       */
-    @JSImport("mongodb-memory-server-core/lib/util/MongoBinary", "default.getDownloadPath")
-    @js.native
-    def getDownloadPath(options: RequiredMongoBinaryOpts): js.Promise[String] = js.native
+    @scala.inline
+    def getDownloadPath(options: RequiredMongoBinaryOpts): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDownloadPath")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     
     /**
       * Probe all supported paths for an binary and return the binary path
@@ -48,44 +47,39 @@ object mongoBinaryMod {
       * @throws {Error} if no valid BinaryPath has been found
       * @return The first found BinaryPath
       */
-    @JSImport("mongodb-memory-server-core/lib/util/MongoBinary", "default.getPath")
-    @js.native
-    def getPath(): js.Promise[String] = js.native
-    @JSImport("mongodb-memory-server-core/lib/util/MongoBinary", "default.getPath")
-    @js.native
-    def getPath(opts: MongoBinaryOpts): js.Promise[String] = js.native
+    @scala.inline
+    def getPath(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")().asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def getPath(opts: MongoBinaryOpts): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     
     /**
       * Probe if the provided "systemBinary" is an existing path
       * @param systemBinary The Path to probe for an System-Binary
       * @return System Binary path or empty string
       */
-    @JSImport("mongodb-memory-server-core/lib/util/MongoBinary", "default.getSystemPath")
-    @js.native
-    def getSystemPath(systemBinary: String): js.Promise[String] = js.native
+    @scala.inline
+    def getSystemPath(systemBinary: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemPath")(systemBinary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   }
   
   @JSImport("mongodb-memory-server-core/lib/util/MongoBinary", "LATEST_VERSION")
   @js.native
   val LATEST_VERSION: String = js.native
   
-  @js.native
   trait MongoBinary extends StObject
   
   type MongoBinaryCache = StringDictionary[String]
   
-  @js.native
   trait MongoBinaryOpts extends StObject {
     
-    var arch: js.UndefOr[String] = js.native
+    var arch: js.UndefOr[String] = js.undefined
     
-    var checkMD5: js.UndefOr[Boolean] = js.native
+    var checkMD5: js.UndefOr[Boolean] = js.undefined
     
-    var downloadDir: js.UndefOr[String] = js.native
+    var downloadDir: js.UndefOr[String] = js.undefined
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object MongoBinaryOpts {
     

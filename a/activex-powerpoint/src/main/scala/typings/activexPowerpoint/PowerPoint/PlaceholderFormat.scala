@@ -3,24 +3,22 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoShapeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceholderFormat extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val ContainedType: MsoShapeType = js.native
+  val ContainedType: MsoShapeType
   
-  var Name: String = js.native
+  var Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.PlaceholderFormat_typekey")
-  var PowerPointDotPlaceholderFormat_typekey: PlaceholderFormat = js.native
+  var PowerPointDotPlaceholderFormat_typekey: PlaceholderFormat
   
-  val Type: PpPlaceholderType = js.native
+  val Type: PpPlaceholderType
 }
 object PlaceholderFormat {
   

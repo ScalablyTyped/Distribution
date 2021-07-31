@@ -2,19 +2,17 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatetimepickerIcons extends StObject {
   
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
-  var down: js.UndefOr[String] = js.native
+  var down: js.UndefOr[String] = js.undefined
   
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
   
-  var up: js.UndefOr[String] = js.native
+  var up: js.UndefOr[String] = js.undefined
 }
 object DatetimepickerIcons {
   

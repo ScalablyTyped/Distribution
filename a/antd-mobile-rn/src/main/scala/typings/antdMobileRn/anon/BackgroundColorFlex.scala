@@ -2,15 +2,13 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColorFlex extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var flex: Double = js.native
+  var flex: Double
 }
 object BackgroundColorFlex {
   

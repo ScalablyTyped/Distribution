@@ -6,7 +6,6 @@ import typings.interfaceDatastore.mod.Key
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,7 +25,7 @@ object mod {
   class MountDatastore[Value] protected () extends Adapter[Value] {
     def this(mounts: js.Array[Mount[Value]]) = this()
     
-    var mounts: js.Array[Mount[_]] = js.native
+    var mounts: js.Array[Mount[js.Any]] = js.native
   }
   
   @JSImport("datastore-core", "NamespaceDatastore")
@@ -49,17 +48,18 @@ object mod {
   /* static members */
   object ShardingDatastore {
     
-    @JSImport("datastore-core", "ShardingDatastore.create")
+    @JSImport("datastore-core", "ShardingDatastore")
     @js.native
-    def create[Value](store: Adapter[Value], shard: Shard): js.Promise[ShardingDatastore[Value]] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("datastore-core", "ShardingDatastore.createOrOpen")
-    @js.native
-    def createOrOpen[Value](store: Adapter[Value], shard: Shard): js.Promise[ShardingDatastore[Value]] = js.native
+    @scala.inline
+    def create[Value](store: Adapter[Value], shard: Shard): js.Promise[ShardingDatastore[Value]] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(store.asInstanceOf[js.Any], shard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ShardingDatastore[Value]]]
     
-    @JSImport("datastore-core", "ShardingDatastore.open")
-    @js.native
-    def open[Value](store: Adapter[Value]): js.Promise[ShardingDatastore[Value]] = js.native
+    @scala.inline
+    def createOrOpen[Value](store: Adapter[Value], shard: Shard): js.Promise[ShardingDatastore[Value]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrOpen")(store.asInstanceOf[js.Any], shard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ShardingDatastore[Value]]]
+    
+    @scala.inline
+    def open[Value](store: Adapter[Value]): js.Promise[ShardingDatastore[Value]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(store.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShardingDatastore[Value]]]
   }
   
   @JSImport("datastore-core", "TieredDatastore")
@@ -71,6 +71,10 @@ object mod {
   }
   
   object shard {
+    
+    @JSImport("datastore-core", "shard")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("datastore-core", "shard.NextToLast")
     @js.native
@@ -116,31 +120,28 @@ object mod {
       def this(length: Double) = this()
     }
     
-    @JSImport("datastore-core", "shard.parseShardFun")
-    @js.native
-    def parseShardFun(str: String): Shard = js.native
+    @scala.inline
+    def parseShardFun(str: String): Shard = ^.asInstanceOf[js.Dynamic].applyDynamic("parseShardFun")(str.asInstanceOf[js.Any]).asInstanceOf[Shard]
     
-    @JSImport("datastore-core", "shard.readShardFun")
-    @js.native
-    def readShardFun(path: String, store: Adapter[Buffer]): js.Promise[Shard] = js.native
+    @scala.inline
+    def readShardFun(path: String, store: Adapter[Buffer]): js.Promise[Shard] = (^.asInstanceOf[js.Dynamic].applyDynamic("readShardFun")(path.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Shard]]
     
     @JSImport("datastore-core", "shard.readme")
     @js.native
     val readme: String = js.native
   }
   
-  @js.native
   trait Mount[Value] extends StObject {
     
     /**
       * The child datastore.
       */
-    var datastore: Adapter[Value] = js.native
+    var datastore: Adapter[Value]
     
     /**
       * The mount prefix.
       */
-    var prefix: Key = js.native
+    var prefix: Key
   }
   object Mount {
     
@@ -151,7 +152,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MountMutableBuilder[Self <: Mount[_], Value] (val x: Self with Mount[Value]) extends AnyVal {
+    implicit class MountMutableBuilder[Self <: Mount[?], Value] (val x: Self & Mount[Value]) extends AnyVal {
       
       @scala.inline
       def setDatastore(value: Adapter[Value]): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
@@ -161,7 +162,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Transform extends StObject {
     
     /**
@@ -171,7 +171,7 @@ object mod {
       * // Forward prefix transform
       * const convert = (key: Key) => new Key('/abc').child(key)
       */
-    def convert(key: Key): Key = js.native
+    def convert(key: Key): Key
     
     /**
       * Inverse transform function.
@@ -180,7 +180,7 @@ object mod {
       * // Inverse prefix transform
       * const invert = (key: Key) => Key.withNamespaces(key.list().slice(1))
       */
-    def invert(key: Key): Key = js.native
+    def invert(key: Key): Key
   }
   object Transform {
     

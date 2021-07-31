@@ -14,7 +14,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,11 +27,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The {@link com.sun.star.accessibility.XAccessibleExtendedComponent} is supported by all chart elements.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleChartElement
-  extends XAccessibleExtendedComponent
+  extends StObject
      with XAccessible
      with XAccessibleContext
+     with XAccessibleExtendedComponent
 object AccessibleChartElement {
   
   @scala.inline

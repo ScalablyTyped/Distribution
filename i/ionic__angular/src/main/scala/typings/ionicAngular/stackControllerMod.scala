@@ -11,7 +11,6 @@ import typings.ionicAngular.stackUtilsMod.StackEvent
 import typings.ionicCore.componentsMod.global.HTMLIonRouterOutletElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackControllerMod {
@@ -20,7 +19,7 @@ object stackControllerMod {
   @js.native
   class StackController protected () extends StObject {
     def this(
-      tabsPrefix: js.UndefOr[scala.Nothing],
+      tabsPrefix: String,
       containerEl: HTMLIonRouterOutletElement,
       router: Router,
       navCtrl: NavController,
@@ -28,7 +27,7 @@ object stackControllerMod {
       location: Location
     ) = this()
     def this(
-      tabsPrefix: String,
+      tabsPrefix: Unit,
       containerEl: HTMLIonRouterOutletElement,
       router: Router,
       navCtrl: NavController,
@@ -43,7 +42,7 @@ object stackControllerMod {
     
     var containerEl: js.Any = js.native
     
-    def createView(ref: ComponentRef[_], activatedRoute: ActivatedRoute): RouteView = js.native
+    def createView(ref: ComponentRef[js.Any], activatedRoute: ActivatedRoute): RouteView = js.native
     
     def destroy(): Unit = js.native
     

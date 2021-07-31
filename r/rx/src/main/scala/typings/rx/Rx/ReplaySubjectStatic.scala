@@ -6,12 +6,12 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ReplaySubjectStatic
-  extends /**
+  extends StObject
+     with /**
   *  Initializes a new instance of the ReplaySubject class with the specified buffer size, window size and scheduler.
   *  @param {Number} [bufferSize] Maximum element count of the replay buffer.
   *  @param {Number} [windowSize] Maximum time length of the replay buffer.
@@ -19,10 +19,14 @@ trait ReplaySubjectStatic
   */
 Instantiable0[ReplaySubject[js.Object]]
      with Instantiable1[/* bufferSize */ Double, ReplaySubject[js.Object]]
-     with Instantiable2[js.UndefOr[/* bufferSize */ Double], /* window */ Double, ReplaySubject[js.Object]]
+     with Instantiable2[
+      (/* bufferSize */ Double) | (/* bufferSize */ Unit), 
+      /* window */ Double, 
+      ReplaySubject[js.Object]
+    ]
      with Instantiable3[
-      js.UndefOr[/* bufferSize */ Double], 
-      js.UndefOr[/* window */ Double], 
+      (/* bufferSize */ Double) | (/* bufferSize */ Unit), 
+      (/* window */ Double) | (/* window */ Unit), 
       /* scheduler */ IScheduler, 
       ReplaySubject[js.Object]
     ]

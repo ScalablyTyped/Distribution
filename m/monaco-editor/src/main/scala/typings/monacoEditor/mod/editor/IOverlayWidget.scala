@@ -3,27 +3,25 @@ package typings.monacoEditor.mod.editor
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOverlayWidget extends StObject {
   
   /**
     * Get the dom node of the overlay widget.
     */
-  def getDomNode(): HTMLElement = js.native
+  def getDomNode(): HTMLElement
   
   /**
     * Get a unique identifier of the overlay widget.
     */
-  def getId(): String = js.native
+  def getId(): String
   
   /**
     * Get the placement of the overlay widget.
     * If null is returned, the overlay widget is responsible to place itself.
     */
-  def getPosition(): IOverlayWidgetPosition | Null = js.native
+  def getPosition(): IOverlayWidgetPosition | Null
 }
 object IOverlayWidget {
   

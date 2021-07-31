@@ -4,7 +4,6 @@ import typings.qrcodeGenerator.anon.CellSize
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,30 +13,30 @@ trait QRCode extends StObject {
   def addData(data: String, mode: Mode): Unit = js.native
   
   def createASCII(): String = js.native
-  def createASCII(cellSize: js.UndefOr[scala.Nothing], margin: Double): String = js.native
   def createASCII(cellSize: Double): String = js.native
   def createASCII(cellSize: Double, margin: Double): String = js.native
+  def createASCII(cellSize: Unit, margin: Double): String = js.native
   
   def createDataURL(): String = js.native
-  def createDataURL(cellSize: js.UndefOr[scala.Nothing], margin: Double): String = js.native
   def createDataURL(cellSize: Double): String = js.native
   def createDataURL(cellSize: Double, margin: Double): String = js.native
+  def createDataURL(cellSize: Unit, margin: Double): String = js.native
   
   def createImgTag(): String = js.native
-  def createImgTag(cellSize: js.UndefOr[scala.Nothing], margin: Double): String = js.native
   def createImgTag(cellSize: Double): String = js.native
   def createImgTag(cellSize: Double, margin: Double): String = js.native
+  def createImgTag(cellSize: Unit, margin: Double): String = js.native
   
   def createSvgTag(): String = js.native
-  def createSvgTag(cellSize: js.UndefOr[scala.Nothing], margin: Double): String = js.native
   def createSvgTag(cellSize: Double): String = js.native
   def createSvgTag(cellSize: Double, margin: Double): String = js.native
+  def createSvgTag(cellSize: Unit, margin: Double): String = js.native
   def createSvgTag(opts: CellSize): String = js.native
   
   def createTableTag(): String = js.native
-  def createTableTag(cellSize: js.UndefOr[scala.Nothing], margin: Double): String = js.native
   def createTableTag(cellSize: Double): String = js.native
   def createTableTag(cellSize: Double, margin: Double): String = js.native
+  def createTableTag(cellSize: Unit, margin: Double): String = js.native
   
   def getModuleCount(): Double = js.native
   

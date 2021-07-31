@@ -4,23 +4,21 @@ import typings.ipp.mod.JobState
 import typings.ipp.mod.JobStateReasons
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Jobstate extends StObject {
   
-  var `job-id`: Double = js.native
+  var `job-id`: Double
   
-  var `job-state`: JobState = js.native
+  var `job-state`: JobState
   
-  var `job-state-message`: js.UndefOr[String] = js.native
+  var `job-state-message`: js.UndefOr[String] = js.undefined
   
-  var `job-state-reasons`: js.Array[JobStateReasons] = js.native
+  var `job-state-reasons`: js.Array[JobStateReasons]
   
-  var `job-uri`: String = js.native
+  var `job-uri`: String
   
-  var `number-of-intervening-jobs`: js.UndefOr[Double] = js.native
+  var `number-of-intervening-jobs`: js.UndefOr[Double] = js.undefined
 }
 object Jobstate {
   

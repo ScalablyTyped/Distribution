@@ -2,7 +2,6 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "InlineViewStrategy")
@@ -16,12 +15,12 @@ class InlineViewStrategy protected () extends StObject {
     */
   def this(markup: String) = this()
   def this(markup: String, dependencies: js.Array[String | js.Function | js.Object]) = this()
-  def this(markup: String, dependencies: js.UndefOr[scala.Nothing], dependencyBaseUrl: String) = this()
   def this(
     markup: String,
     dependencies: js.Array[String | js.Function | js.Object],
     dependencyBaseUrl: String
   ) = this()
+  def this(markup: String, dependencies: Unit, dependencyBaseUrl: String) = this()
   
   /**
     * Loads a view factory.
@@ -35,7 +34,7 @@ class InlineViewStrategy protected () extends StObject {
   def loadViewFactory(
     viewEngine: ViewEngine,
     compileInstruction: ViewCompileInstruction,
-    loadContext: js.UndefOr[scala.Nothing],
+    loadContext: Unit,
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(

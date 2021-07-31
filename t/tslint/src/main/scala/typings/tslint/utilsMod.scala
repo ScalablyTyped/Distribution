@@ -24,142 +24,112 @@ import typings.typescript.mod.VariableDeclaration
 import typings.typescript.mod.VariableStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("tslint/lib/language/utils", "ancestorWhere")
+  @JSImport("tslint/lib/language/utils", JSImport.Namespace)
   @js.native
-  def ancestorWhere[T /* <: Node */](node: Node, predicate: js.Function1[/* n */ Node, /* is T */ Boolean]): js.UndefOr[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tslint/lib/language/utils", "childOfKind")
-  @js.native
-  def childOfKind(node: Node, kind: SyntaxKind): js.UndefOr[Node] = js.native
+  @scala.inline
+  def ancestorWhere[T /* <: Node */](node: Node, predicate: js.Function1[/* n */ Node, /* is T */ Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestorWhere")(node.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("tslint/lib/language/utils", "doesIntersect")
-  @js.native
-  def doesIntersect(failure: RuleFailure, disabledIntervals: js.Array[IDisabledInterval]): Boolean = js.native
+  @scala.inline
+  def childOfKind(node: Node, kind: SyntaxKind): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("childOfKind")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
   
-  @JSImport("tslint/lib/language/utils", "forEachComment")
-  @js.native
-  def forEachComment(node: Node, cb: ForEachCommentCallback): Unit = js.native
+  @scala.inline
+  def doesIntersect(failure: RuleFailure, disabledIntervals: js.Array[IDisabledInterval]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("doesIntersect")(failure.asInstanceOf[js.Any], disabledIntervals.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "forEachToken")
-  @js.native
-  def forEachToken(node: Node, skipTrivia: Boolean, cb: ForEachTokenCallback): Unit = js.native
-  @JSImport("tslint/lib/language/utils", "forEachToken")
-  @js.native
-  def forEachToken(node: Node, skipTrivia: Boolean, cb: ForEachTokenCallback, filter: FilterCallback): Unit = js.native
+  @scala.inline
+  def forEachComment(node: Node, cb: ForEachCommentCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachComment")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tslint/lib/language/utils", "getBindingElementVariableDeclaration")
-  @js.native
-  def getBindingElementVariableDeclaration(node: BindingElement): VariableDeclaration | Null = js.native
+  @scala.inline
+  def forEachToken(node: Node, skipTrivia: Boolean, cb: ForEachTokenCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachToken")(node.asInstanceOf[js.Any], skipTrivia.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def forEachToken(node: Node, skipTrivia: Boolean, cb: ForEachTokenCallback, filter: FilterCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachToken")(node.asInstanceOf[js.Any], skipTrivia.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tslint/lib/language/utils", "getEqualsKind")
-  @js.native
-  def getEqualsKind(node: BinaryOperatorToken): js.UndefOr[EqualsKind] = js.native
+  @scala.inline
+  def getBindingElementVariableDeclaration(node: BindingElement): VariableDeclaration | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBindingElementVariableDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[VariableDeclaration | Null]
   
-  @JSImport("tslint/lib/language/utils", "getSourceFile")
-  @js.native
-  def getSourceFile(fileName: String, source: String): SourceFile = js.native
+  @scala.inline
+  def getEqualsKind(node: BinaryOperatorToken): js.UndefOr[EqualsKind] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEqualsKind")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[EqualsKind]]
   
-  @JSImport("tslint/lib/language/utils", "hasCommentAfterPosition")
-  @js.native
-  def hasCommentAfterPosition(text: String, position: Double): Boolean = js.native
+  @scala.inline
+  def getSourceFile(fileName: String, source: String): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceFile")(fileName.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
   
-  @JSImport("tslint/lib/language/utils", "hasModifier")
-  @js.native
-  def hasModifier(modifiers: js.UndefOr[scala.Nothing], modifierKinds: SyntaxKind*): Boolean = js.native
-  @JSImport("tslint/lib/language/utils", "hasModifier")
-  @js.native
-  def hasModifier(modifiers: ModifiersArray, modifierKinds: SyntaxKind*): Boolean = js.native
+  @scala.inline
+  def hasCommentAfterPosition(text: String, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCommentAfterPosition")(text.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isAssignment")
-  @js.native
-  def isAssignment(node: Node): Boolean = js.native
+  @scala.inline
+  def hasModifier(modifiers: Unit, modifierKinds: SyntaxKind*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(modifiers.asInstanceOf[js.Any], modifierKinds.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasModifier(modifiers: ModifiersArray, modifierKinds: SyntaxKind*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(modifiers.asInstanceOf[js.Any], modifierKinds.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isBlockScopeBoundary")
-  @js.native
-  def isBlockScopeBoundary(node: Node): Boolean = js.native
+  @scala.inline
+  def isAssignment(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssignment")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isBlockScopedBindingElement")
-  @js.native
-  def isBlockScopedBindingElement(node: BindingElement): Boolean = js.native
+  @scala.inline
+  def isBlockScopeBoundary(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockScopeBoundary")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isBlockScopedVariable")
-  @js.native
-  def isBlockScopedVariable(node: VariableDeclaration): Boolean = js.native
-  @JSImport("tslint/lib/language/utils", "isBlockScopedVariable")
-  @js.native
-  def isBlockScopedVariable(node: VariableStatement): Boolean = js.native
+  @scala.inline
+  def isBlockScopedBindingElement(node: BindingElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockScopedBindingElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isCombinedModifierFlagSet")
-  @js.native
-  def isCombinedModifierFlagSet(node: Declaration, flagToCheck: ModifierFlags): Boolean = js.native
+  @scala.inline
+  def isBlockScopedVariable(node: VariableDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockScopedVariable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isBlockScopedVariable(node: VariableStatement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockScopedVariable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isCombinedNodeFlagSet")
-  @js.native
-  def isCombinedNodeFlagSet(node: Node, flagToCheck: NodeFlags): Boolean = js.native
+  @scala.inline
+  def isCombinedModifierFlagSet(node: Declaration, flagToCheck: ModifierFlags): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCombinedModifierFlagSet")(node.asInstanceOf[js.Any], flagToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isLoop")
-  @js.native
-  def isLoop(node: Node): /* is typescript.typescript.IterationStatement */ Boolean = js.native
+  @scala.inline
+  def isCombinedNodeFlagSet(node: Node, flagToCheck: NodeFlags): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCombinedNodeFlagSet")(node.asInstanceOf[js.Any], flagToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isNegativeNumberLiteral")
-  @js.native
-  def isNegativeNumberLiteral(node: Node): /* is tslint.anon.PrefixUnaryExpressionoper */ Boolean = js.native
+  @scala.inline
+  def isLoop(node: Node): /* is typescript.typescript.IterationStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoop")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IterationStatement */ Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isNestedModuleDeclaration")
-  @js.native
-  def isNestedModuleDeclaration(decl: ModuleDeclaration): Boolean = js.native
+  @scala.inline
+  def isNegativeNumberLiteral(node: Node): /* is tslint.anon.PrefixUnaryExpressionoper */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNegativeNumberLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is tslint.anon.PrefixUnaryExpressionoper */ Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isNodeFlagSet")
-  @js.native
-  def isNodeFlagSet(node: Node, flagToCheck: NodeFlags): Boolean = js.native
+  @scala.inline
+  def isNestedModuleDeclaration(decl: ModuleDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNestedModuleDeclaration")(decl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isNumeric")
-  @js.native
-  def isNumeric(node: Expression): Boolean = js.native
+  @scala.inline
+  def isNodeFlagSet(node: Node, flagToCheck: NodeFlags): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodeFlagSet")(node.asInstanceOf[js.Any], flagToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isObjectFlagSet")
-  @js.native
-  def isObjectFlagSet(objectType: ObjectType, flagToCheck: ObjectFlags): Boolean = js.native
+  @scala.inline
+  def isNumeric(node: Expression): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isScopeBoundary")
-  @js.native
-  def isScopeBoundary(node: Node): Boolean = js.native
+  @scala.inline
+  def isObjectFlagSet(objectType: ObjectType, flagToCheck: ObjectFlags): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObjectFlagSet")(objectType.asInstanceOf[js.Any], flagToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isStrictNullChecksEnabled")
-  @js.native
-  def isStrictNullChecksEnabled(options: CompilerOptions): Boolean = js.native
+  @scala.inline
+  def isScopeBoundary(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScopeBoundary")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isSymbolFlagSet")
-  @js.native
-  def isSymbolFlagSet(symbol: Symbol, flagToCheck: SymbolFlags): Boolean = js.native
+  @scala.inline
+  def isStrictNullChecksEnabled(options: CompilerOptions): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrictNullChecksEnabled")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isTypeFlagSet")
-  @js.native
-  def isTypeFlagSet(`type`: Type, flagToCheck: TypeFlags): Boolean = js.native
+  @scala.inline
+  def isSymbolFlagSet(symbol: Symbol, flagToCheck: SymbolFlags): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSymbolFlagSet")(symbol.asInstanceOf[js.Any], flagToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "isWhiteSpace")
-  @js.native
-  def isWhiteSpace(ch: Double): Boolean = js.native
+  @scala.inline
+  def isTypeFlagSet(`type`: Type, flagToCheck: TypeFlags): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeFlagSet")(`type`.asInstanceOf[js.Any], flagToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "someAncestor")
-  @js.native
-  def someAncestor(node: Node, predicate: js.Function1[/* n */ Node, Boolean]): Boolean = js.native
+  @scala.inline
+  def isWhiteSpace(ch: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWhiteSpace")(ch.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/language/utils", "unwrapParentheses")
-  @js.native
-  def unwrapParentheses(node: Expression): Expression = js.native
+  @scala.inline
+  def someAncestor(node: Node, predicate: js.Function1[/* n */ Node, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("someAncestor")(node.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def unwrapParentheses(node: Expression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapParentheses")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  
   trait EqualsKind extends StObject {
     
-    var isPositive: Boolean = js.native
+    var isPositive: Boolean
     
-    var isStrict: Boolean = js.native
+    var isStrict: Boolean
   }
   object EqualsKind {
     
@@ -192,17 +162,16 @@ object utilsMod {
     Unit
   ]
   
-  @js.native
   trait TokenPosition extends StObject {
     
     /** The end of the token */
-    var end: Double = js.native
+    var end: Double
     
     /** The start of the token including all trivia before it */
-    var fullStart: Double = js.native
+    var fullStart: Double
     
     /** The start of the token */
-    var tokenStart: Double = js.native
+    var tokenStart: Double
   }
   object TokenPosition {
     

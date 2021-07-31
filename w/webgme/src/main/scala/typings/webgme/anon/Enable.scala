@@ -2,13 +2,11 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enable extends StObject {
   
-  var enable: Boolean = js.native
+  var enable: Boolean
 }
 object Enable {
   

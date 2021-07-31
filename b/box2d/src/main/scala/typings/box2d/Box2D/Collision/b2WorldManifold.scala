@@ -4,10 +4,8 @@ import typings.box2d.Box2D.Common.Math.b2Transform
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2WorldManifold extends StObject {
   
   /**
@@ -18,17 +16,17 @@ trait b2WorldManifold extends StObject {
     * @param xfB B transform.
     * @param radiusB B radius.
     **/
-  def Initialize(manifold: b2Manifold, xfA: b2Transform, radiusA: Double, xfB: b2Transform, radiusB: Double): Unit = js.native
+  def Initialize(manifold: b2Manifold, xfA: b2Transform, radiusA: Double, xfB: b2Transform, radiusB: Double): Unit
   
   /**
     * World vector pointing from A to B.
     **/
-  var m_normal: b2Vec2 = js.native
+  var m_normal: b2Vec2
   
   /**
     * World contact point (point of intersection).
     **/
-  var m_points: js.Array[b2Vec2] = js.native
+  var m_points: js.Array[b2Vec2]
 }
 object b2WorldManifold {
   

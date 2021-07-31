@@ -4,32 +4,30 @@ import typings.node.netMod.Socket
 import typings.node.tlsMod.TLSSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("defer-to-connect", JSImport.Default)
+  @JSImport("defer-to-connect", JSImport.Namespace)
   @js.native
-  def default(socket: Socket, fn: js.Function0[Unit]): Unit = js.native
-  @JSImport("defer-to-connect", JSImport.Default)
-  @js.native
-  def default(socket: Socket, fn: Listeners): Unit = js.native
-  @JSImport("defer-to-connect", JSImport.Default)
-  @js.native
-  def default(socket: TLSSocket, fn: js.Function0[Unit]): Unit = js.native
-  @JSImport("defer-to-connect", JSImport.Default)
-  @js.native
-  def default(socket: TLSSocket, fn: Listeners): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(socket: Socket, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def default(socket: Socket, fn: Listeners): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def default(socket: TLSSocket, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def default(socket: TLSSocket, fn: Listeners): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Listeners extends StObject {
     
-    var close: js.UndefOr[js.Function1[/* hadError */ Boolean, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* hadError */ Boolean, Unit]] = js.undefined
     
-    var connect: js.UndefOr[js.Function0[Unit]] = js.native
+    var connect: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var secureConnect: js.UndefOr[js.Function0[Unit]] = js.native
+    var secureConnect: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Listeners {
     

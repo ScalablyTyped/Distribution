@@ -2,29 +2,29 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesPutMappingParams extends GenericParams {
+trait IndicesPutMappingParams
+  extends StObject
+     with GenericParams {
   
-  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
   
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var includeTypeName: js.UndefOr[Boolean] = js.native
+  var includeTypeName: js.UndefOr[Boolean] = js.undefined
   
-  var index: NameList = js.native
+  var index: NameList
   
-  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAllTypes: js.UndefOr[Boolean] = js.native
+  var updateAllTypes: js.UndefOr[Boolean] = js.undefined
 }
 object IndicesPutMappingParams {
   

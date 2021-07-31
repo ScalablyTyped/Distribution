@@ -2,19 +2,17 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fix extends StObject {
   
-  var fix: js.UndefOr[String] = js.native
+  var fix: js.UndefOr[String] = js.undefined
   
-  var leftPosition: js.UndefOr[String] = js.native
+  var leftPosition: js.UndefOr[String] = js.undefined
   
-  var rightPosition: js.UndefOr[String] = js.native
+  var rightPosition: js.UndefOr[String] = js.undefined
   
-  var unfix: js.UndefOr[String] = js.native
+  var unfix: js.UndefOr[String] = js.undefined
 }
 object Fix {
   

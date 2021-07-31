@@ -2,21 +2,44 @@ package typings.aqb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertRet extends StObject {
   
-  def in(collection: js.Any): InsertExpression = js.native
+  def in(collection: js.Any): InsertExpression
   
-  def in_(collection: js.Any): InsertExpression = js.native
+  def in_(collection: js.Any): InsertExpression
   
   @JSName("in")
-  var in_Original: js.Function1[/* collection */ js.Any, InsertExpression] = js.native
+  var in_Original: js.Function1[/* collection */ js.Any, InsertExpression]
   
   @JSName("in_")
-  var in__Original: js.Function1[/* collection */ js.Any, InsertExpression] = js.native
+  var in__Original: js.Function1[/* collection */ js.Any, InsertExpression]
   
-  def into(collection: js.Any): InsertExpression = js.native
+  def into(collection: js.Any): InsertExpression
+}
+object InsertRet {
+  
+  @scala.inline
+  def apply(
+    in: /* collection */ js.Any => InsertExpression,
+    in_ : /* collection */ js.Any => InsertExpression,
+    into: js.Any => InsertExpression
+  ): InsertRet = {
+    val __obj = js.Dynamic.literal(in = js.Any.fromFunction1(in), in_ = js.Any.fromFunction1(in_), into = js.Any.fromFunction1(into))
+    __obj.asInstanceOf[InsertRet]
+  }
+  
+  @scala.inline
+  implicit class InsertRetMutableBuilder[Self <: InsertRet] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setIn(value: /* collection */ js.Any => InsertExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setIn_(value: /* collection */ js.Any => InsertExpression): Self = StObject.set(x, "in_", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setInto(value: js.Any => InsertExpression): Self = StObject.set(x, "into", js.Any.fromFunction1(value))
+  }
 }

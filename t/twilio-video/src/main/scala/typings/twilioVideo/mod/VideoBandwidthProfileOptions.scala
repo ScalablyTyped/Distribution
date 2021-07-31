@@ -3,23 +3,21 @@ package typings.twilioVideo.mod
 import typings.twilioVideo.mod.Track.Priority
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoBandwidthProfileOptions extends StObject {
   
-  var dominantSpeakerPriority: js.UndefOr[Priority] = js.native
+  var dominantSpeakerPriority: js.UndefOr[Priority] = js.undefined
   
-  var maxSubscriptionBitrate: js.UndefOr[Double] = js.native
+  var maxSubscriptionBitrate: js.UndefOr[Double] = js.undefined
   
-  var maxTracks: js.UndefOr[Double] = js.native
+  var maxTracks: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[BandwidthProfileMode] = js.native
+  var mode: js.UndefOr[BandwidthProfileMode] = js.undefined
   
-  var renderDimensions: js.UndefOr[VideoRenderDimensions] = js.native
+  var renderDimensions: js.UndefOr[VideoRenderDimensions] = js.undefined
   
-  var trackSwitchOffMode: js.UndefOr[TrackSwitchOffMode] = js.native
+  var trackSwitchOffMode: js.UndefOr[TrackSwitchOffMode] = js.undefined
 }
 object VideoBandwidthProfileOptions {
   

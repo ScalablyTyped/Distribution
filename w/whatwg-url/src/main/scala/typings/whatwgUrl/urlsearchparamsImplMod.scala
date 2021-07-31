@@ -5,14 +5,15 @@ import typings.std.IterableIterator
 import typings.whatwgUrl.anon.DoNotStripQMark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlsearchparamsImplMod {
   
   @JSImport("whatwg-url/lib/URLSearchParams-impl", "implementation")
   @js.native
-  class implementation protected () extends URLSearchParamsImpl {
+  class implementation protected ()
+    extends StObject
+       with URLSearchParamsImpl {
     def this(
       globalObject: js.Object,
       hasInit: js.Array[(js.Array[js.Tuple2[String, String]]) | StringDictionary[String] | String],

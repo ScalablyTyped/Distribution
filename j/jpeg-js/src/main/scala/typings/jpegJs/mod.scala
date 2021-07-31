@@ -11,27 +11,25 @@ import typings.std.Iterable
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jpeg-js", "decode")
+  @JSImport("jpeg-js", JSImport.Namespace)
   @js.native
-  def decode(jpegData: BufferLike): BufferRetcommentsArraystr = js.native
-  @JSImport("jpeg-js", "decode")
-  @js.native
-  def decode(jpegData: BufferLike, opts: ColorTransform): UintArrRetcommentsArrayst = js.native
-  @JSImport("jpeg-js", "decode")
-  @js.native
-  def decode(jpegData: BufferLike, opts: FormatAsRGBA): BufferRetcommentsArraystr = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jpeg-js", "encode")
-  @js.native
-  def encode(imgData: RawImageData[BufferLike]): BufferRet = js.native
-  @JSImport("jpeg-js", "encode")
-  @js.native
-  def encode(imgData: RawImageData[BufferLike], quality: Double): BufferRet = js.native
+  @scala.inline
+  def decode(jpegData: BufferLike): BufferRetcommentsArraystr = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(jpegData.asInstanceOf[js.Any]).asInstanceOf[BufferRetcommentsArraystr]
+  @scala.inline
+  def decode(jpegData: BufferLike, opts: ColorTransform): UintArrRetcommentsArrayst = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(jpegData.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UintArrRetcommentsArrayst]
+  @scala.inline
+  def decode(jpegData: BufferLike, opts: FormatAsRGBA): BufferRetcommentsArraystr = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(jpegData.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BufferRetcommentsArraystr]
+  
+  @scala.inline
+  def encode(imgData: RawImageData[BufferLike]): BufferRet = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgData.asInstanceOf[js.Any]).asInstanceOf[BufferRet]
+  @scala.inline
+  def encode(imgData: RawImageData[BufferLike], quality: Double): BufferRet = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgData.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[BufferRet]
   
   type BufferLike = Buffer | Uint8Array | ArrayLike[Double] | Iterable[Double] | ArrayBuffer
   
@@ -39,14 +37,13 @@ object mod {
   
   type ImageData = BufferRet | UintArrRet
   
-  @js.native
   trait RawImageData[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object RawImageData {
     
@@ -57,7 +54,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RawImageDataMutableBuilder[Self <: RawImageData[_], T] (val x: Self with RawImageData[T]) extends AnyVal {
+    implicit class RawImageDataMutableBuilder[Self <: RawImageData[?], T] (val x: Self & RawImageData[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

@@ -2,21 +2,19 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeImportTasksResponse extends StObject {
   
   /**
     * The token to request the next page of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A returned array of import tasks that match any applied filters, up to the specified number of maximum results.
     */
-  var tasks: js.UndefOr[ImportTaskList] = js.native
+  var tasks: js.UndefOr[ImportTaskList] = js.undefined
 }
 object DescribeImportTasksResponse {
   

@@ -3,32 +3,30 @@ package typings.spotifyWebApiJs.SpotifyApi
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.track
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Track Link Object
   * [](https://developer.spotify.com/web-api/object-model/#track-object-simplified)
   */
-@js.native
 trait TrackLinkObject extends StObject {
   
-  var external_urls: ExternalUrlObject = js.native
+  var external_urls: ExternalUrlObject
   
-  var href: String = js.native
+  var href: String
   
-  var id: String = js.native
+  var id: String
   
-  var `type`: track = js.native
+  var `type`: track
   
-  var uri: String = js.native
+  var uri: String
 }
 object TrackLinkObject {
   
   @scala.inline
-  def apply(external_urls: ExternalUrlObject, href: String, id: String, `type`: track, uri: String): TrackLinkObject = {
+  def apply(external_urls: ExternalUrlObject, href: String, id: String, uri: String): TrackLinkObject = {
     val __obj = js.Dynamic.literal(external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("track")
     __obj.asInstanceOf[TrackLinkObject]
   }
   

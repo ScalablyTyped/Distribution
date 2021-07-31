@@ -5,10 +5,13 @@ import typings.sidewayAddress.mod.uri.Options.Relative
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uri {
+  
+  @JSImport("@sideway/address", "uri")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Faster version of decodeURIComponent() that does not throw.
@@ -17,9 +20,8 @@ object uri {
     * 
     * @returns the decoded string or null if invalid.
     */
-  @JSImport("@sideway/address", "uri.decode")
-  @js.native
-  def decode(string: String): String | Null = js.native
+  @scala.inline
+  def decode(string: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /**
     * Generates a regular expression used to validate URI addresses.
@@ -28,25 +30,22 @@ object uri {
     *
     * @returns an object with the regular expression and meta data.
     */
-  @JSImport("@sideway/address", "uri.regex")
-  @js.native
-  def regex(): Expression = js.native
-  @JSImport("@sideway/address", "uri.regex")
-  @js.native
-  def regex(options: Options): Expression = js.native
+  @scala.inline
+  def regex(): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")().asInstanceOf[Expression]
+  @scala.inline
+  def regex(options: Options): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")(options.asInstanceOf[js.Any]).asInstanceOf[Expression]
   
-  @js.native
   trait Expression extends StObject {
     
     /**
       * The raw regular expression string.
       */
-    var raw: String = js.native
+    var raw: String
     
     /**
       * The regular expression.
       */
-    var regex: RegExp = js.native
+    var regex: RegExp
   }
   object Expression {
     
@@ -69,27 +68,28 @@ object uri {
   
   object Options {
     
-    @js.native
-    trait Options extends Query {
+    trait Options
+      extends StObject
+         with Query {
       
       /**
         * Allow relative URIs.
         * 
         * @default false
         */
-      val allowRelative: js.UndefOr[Boolean] = js.native
+      val allowRelative: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Capture domain segment ($1).
         * 
         * @default false
         */
-      val domain: js.UndefOr[Boolean] = js.native
+      val domain: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The allowed URI schemes.
         */
-      val scheme: js.UndefOr[Scheme | js.Array[Scheme]] = js.native
+      val scheme: js.UndefOr[Scheme | js.Array[Scheme]] = js.undefined
     }
     object Options {
       
@@ -125,7 +125,6 @@ object uri {
       }
     }
     
-    @js.native
     trait Query extends StObject {
       
       /**
@@ -133,7 +132,7 @@ object uri {
         * 
         * @default false
         */
-      val allowQuerySquareBrackets: js.UndefOr[Boolean] = js.native
+      val allowQuerySquareBrackets: js.UndefOr[Boolean] = js.undefined
     }
     object Query {
       
@@ -154,15 +153,16 @@ object uri {
       }
     }
     
-    @js.native
-    trait Relative extends Query {
+    trait Relative
+      extends StObject
+         with Query {
       
       /**
         * Requires the URI to be relative.
         * 
         * @default false
         */
-      val relativeOnly: js.UndefOr[Boolean] = js.native
+      val relativeOnly: js.UndefOr[Boolean] = js.undefined
     }
     object Relative {
       

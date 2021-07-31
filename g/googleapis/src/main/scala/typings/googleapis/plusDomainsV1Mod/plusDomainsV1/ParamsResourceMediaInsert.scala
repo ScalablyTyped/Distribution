@@ -7,36 +7,36 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceMediaInsert extends StandardParameters {
+trait ParamsResourceMediaInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     *
     */
-  var collection: js.UndefOr[String] = js.native
+  var collection: js.UndefOr[String] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaMedia] = js.native
+  var requestBody: js.UndefOr[SchemaMedia] = js.undefined
   
   /**
     * The ID of the user to create the activity on behalf of.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceMediaInsert {
   

@@ -3,28 +3,26 @@ package typings.devtoolsProtocol.mod.Protocol
 import typings.devtoolsProtocol.devtoolsProtocolStrings.default_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CacheStorage {
   
-  @js.native
   trait Cache extends StObject {
     
     /**
       * An opaque unique id of the cache.
       */
-    var cacheId: CacheId = js.native
+    var cacheId: CacheId
     
     /**
       * The name of the cache.
       */
-    var cacheName: String = js.native
+    var cacheName: String
     
     /**
       * Security origin of the cache.
       */
-    var securityOrigin: String = js.native
+    var securityOrigin: String
   }
   object Cache {
     
@@ -50,13 +48,12 @@ object CacheStorage {
   
   type CacheId = String
   
-  @js.native
   trait CachedResponse extends StObject {
     
     /**
       * Entry content, base64-encoded.
       */
-    var body: String = js.native
+    var body: String
   }
   object CachedResponse {
     
@@ -104,48 +101,47 @@ object CacheStorage {
     def opaqueResponse: typings.devtoolsProtocol.devtoolsProtocolStrings.opaqueResponse = "opaqueResponse".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.opaqueResponse]
   }
   
-  @js.native
   trait DataEntry extends StObject {
     
     /**
       * Request headers
       */
-    var requestHeaders: js.Array[Header] = js.native
+    var requestHeaders: js.Array[Header]
     
     /**
       * Request method.
       */
-    var requestMethod: String = js.native
+    var requestMethod: String
     
     /**
       * Request URL.
       */
-    var requestURL: String = js.native
+    var requestURL: String
     
     /**
       * Response headers
       */
-    var responseHeaders: js.Array[Header] = js.native
+    var responseHeaders: js.Array[Header]
     
     /**
       * HTTP response status code.
       */
-    var responseStatus: integer = js.native
+    var responseStatus: integer
     
     /**
       * HTTP response status text.
       */
-    var responseStatusText: String = js.native
+    var responseStatusText: String
     
     /**
       * Number of seconds since epoch.
       */
-    var responseTime: Double = js.native
+    var responseTime: Double
     
     /**
       * HTTP response type
       */
-    var responseType: CachedResponseType = js.native
+    var responseType: CachedResponseType
   }
   object DataEntry {
     
@@ -199,13 +195,12 @@ object CacheStorage {
     }
   }
   
-  @js.native
   trait DeleteCacheRequest extends StObject {
     
     /**
       * Id of cache for deletion.
       */
-    var cacheId: CacheId = js.native
+    var cacheId: CacheId
   }
   object DeleteCacheRequest {
     
@@ -223,18 +218,17 @@ object CacheStorage {
     }
   }
   
-  @js.native
   trait DeleteEntryRequest extends StObject {
     
     /**
       * Id of cache where the entry will be deleted.
       */
-    var cacheId: CacheId = js.native
+    var cacheId: CacheId
     
     /**
       * URL spec of the request.
       */
-    var request: String = js.native
+    var request: String
   }
   object DeleteEntryRequest {
     
@@ -255,12 +249,11 @@ object CacheStorage {
     }
   }
   
-  @js.native
   trait Header extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object Header {
     
@@ -281,13 +274,12 @@ object CacheStorage {
     }
   }
   
-  @js.native
   trait RequestCacheNamesRequest extends StObject {
     
     /**
       * Security origin.
       */
-    var securityOrigin: String = js.native
+    var securityOrigin: String
   }
   object RequestCacheNamesRequest {
     
@@ -305,13 +297,12 @@ object CacheStorage {
     }
   }
   
-  @js.native
   trait RequestCacheNamesResponse extends StObject {
     
     /**
       * Caches for the security origin.
       */
-    var caches: js.Array[Cache] = js.native
+    var caches: js.Array[Cache]
   }
   object RequestCacheNamesResponse {
     
@@ -332,23 +323,22 @@ object CacheStorage {
     }
   }
   
-  @js.native
   trait RequestCachedResponseRequest extends StObject {
     
     /**
       * Id of cache that contains the entry.
       */
-    var cacheId: CacheId = js.native
+    var cacheId: CacheId
     
     /**
       * headers of the request.
       */
-    var requestHeaders: js.Array[Header] = js.native
+    var requestHeaders: js.Array[Header]
     
     /**
       * URL spec of the request.
       */
-    var requestURL: String = js.native
+    var requestURL: String
   }
   object RequestCachedResponseRequest {
     
@@ -375,13 +365,12 @@ object CacheStorage {
     }
   }
   
-  @js.native
   trait RequestCachedResponseResponse extends StObject {
     
     /**
       * Response read from the cache.
       */
-    var response: CachedResponse = js.native
+    var response: CachedResponse
   }
   object RequestCachedResponseResponse {
     
@@ -399,28 +388,27 @@ object CacheStorage {
     }
   }
   
-  @js.native
   trait RequestEntriesRequest extends StObject {
     
     /**
       * ID of cache to get entries from.
       */
-    var cacheId: CacheId = js.native
+    var cacheId: CacheId
     
     /**
       * Number of records to fetch.
       */
-    var pageSize: js.UndefOr[integer] = js.native
+    var pageSize: js.UndefOr[integer] = js.undefined
     
     /**
       * If present, only return the entries containing this substring in the path
       */
-    var pathFilter: js.UndefOr[String] = js.native
+    var pathFilter: js.UndefOr[String] = js.undefined
     
     /**
       * Number of records to skip.
       */
-    var skipCount: js.UndefOr[integer] = js.native
+    var skipCount: js.UndefOr[integer] = js.undefined
   }
   object RequestEntriesRequest {
     
@@ -456,19 +444,18 @@ object CacheStorage {
     }
   }
   
-  @js.native
   trait RequestEntriesResponse extends StObject {
     
     /**
       * Array of object store data entries.
       */
-    var cacheDataEntries: js.Array[DataEntry] = js.native
+    var cacheDataEntries: js.Array[DataEntry]
     
     /**
       * Count of returned entries from this storage. If pathFilter is empty, it
       * is the count of all entries from this storage.
       */
-    var returnCount: Double = js.native
+    var returnCount: Double
   }
   object RequestEntriesResponse {
     

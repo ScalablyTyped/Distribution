@@ -4,14 +4,16 @@ import typings.rcPicker.interfaceMod.PanelSharedProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decadePanelMod {
   
-  @JSImport("rc-picker/es/panels/DecadePanel", JSImport.Default)
+  @JSImport("rc-picker/es/panels/DecadePanel", JSImport.Namespace)
   @js.native
-  def default[DateType](props: DecadePanelProps[DateType]): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[DateType](props: DecadePanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("rc-picker/es/panels/DecadePanel", "DECADE_DISTANCE_COUNT")
   @js.native

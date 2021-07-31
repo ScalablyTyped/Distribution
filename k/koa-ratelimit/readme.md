@@ -10,14 +10,14 @@ Rate limiter middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-ratelimit |
 | Keywords           | koa, middleware, ratelimiter, ratelimit, rate |
-| # releases         | 4 |
-| # dependents       | 19 |
-| # downloads        | 181157 |
+| # releases         | 5 |
+| # dependents       | 21 |
+| # downloads        | 224139 |
 | # stars            | 6 |
 
 ## Links
-- [Homepage](https://github.com/koajs/ratelimit#readme)
-- [Bugs](https://github.com/koajs/ratelimit/issues)
+- [Homepage](https://github.com/koajs/maxrequests#readme)
+- [Bugs](https://github.com/koajs/maxrequests/issues)
 - [Repository](https://github.com/koajs/ratelimit)
 - [Npm](https://www.npmjs.com/package/koa-ratelimit)
     

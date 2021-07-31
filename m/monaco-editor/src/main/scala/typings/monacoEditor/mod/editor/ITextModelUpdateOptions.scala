@@ -2,19 +2,17 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITextModelUpdateOptions extends StObject {
   
-  var indentSize: js.UndefOr[Double] = js.native
+  var indentSize: js.UndefOr[Double] = js.undefined
   
-  var insertSpaces: js.UndefOr[Boolean] = js.native
+  var insertSpaces: js.UndefOr[Boolean] = js.undefined
   
-  var tabSize: js.UndefOr[Double] = js.native
+  var tabSize: js.UndefOr[Double] = js.undefined
   
-  var trimAutoWhitespace: js.UndefOr[Boolean] = js.native
+  var trimAutoWhitespace: js.UndefOr[Boolean] = js.undefined
 }
 object ITextModelUpdateOptions {
   

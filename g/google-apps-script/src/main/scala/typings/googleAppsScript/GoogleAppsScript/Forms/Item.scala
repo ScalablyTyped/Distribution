@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,56 +30,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * NameBrief description
   */
-@js.native
 trait Item extends StObject {
   
-  def asCheckboxGridItem(): CheckboxGridItem = js.native
+  def asCheckboxGridItem(): CheckboxGridItem
   
-  def asCheckboxItem(): CheckboxItem = js.native
+  def asCheckboxItem(): CheckboxItem
   
-  def asDateItem(): DateItem = js.native
+  def asDateItem(): DateItem
   
-  def asDateTimeItem(): DateTimeItem = js.native
+  def asDateTimeItem(): DateTimeItem
   
-  def asDurationItem(): DurationItem = js.native
+  def asDurationItem(): DurationItem
   
-  def asGridItem(): GridItem = js.native
+  def asGridItem(): GridItem
   
-  def asImageItem(): ImageItem = js.native
+  def asImageItem(): ImageItem
   
-  def asListItem(): ListItem = js.native
+  def asListItem(): ListItem
   
-  def asMultipleChoiceItem(): MultipleChoiceItem = js.native
+  def asMultipleChoiceItem(): MultipleChoiceItem
   
-  def asPageBreakItem(): PageBreakItem = js.native
+  def asPageBreakItem(): PageBreakItem
   
-  def asParagraphTextItem(): ParagraphTextItem = js.native
+  def asParagraphTextItem(): ParagraphTextItem
   
-  def asScaleItem(): ScaleItem = js.native
+  def asScaleItem(): ScaleItem
   
-  def asSectionHeaderItem(): SectionHeaderItem = js.native
+  def asSectionHeaderItem(): SectionHeaderItem
   
-  def asTextItem(): TextItem = js.native
+  def asTextItem(): TextItem
   
-  def asTimeItem(): TimeItem = js.native
+  def asTimeItem(): TimeItem
   
-  def asVideoItem(): VideoItem = js.native
+  def asVideoItem(): VideoItem
   
-  def duplicate(): Item = js.native
+  def duplicate(): Item
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def setHelpText(text: String): Item = js.native
+  def setHelpText(text: String): Item
   
-  def setTitle(title: String): Item = js.native
+  def setTitle(title: String): Item
 }
 object Item {
   

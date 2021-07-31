@@ -5,7 +5,6 @@ import typings.bitcoreLib.mod.PublicKey
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -104,12 +103,11 @@ object mod {
   @js.native
   val ECIES: typings.sicEcies.mod.ECIES = js.native
   
-  @js.native
   trait Blockcipher extends StObject {
     
-    def decrypt(encbuf: Buffer, cipherkeybuf: Buffer): Buffer = js.native
+    def decrypt(encbuf: Buffer, cipherkeybuf: Buffer): Buffer
     
-    def encrypt(xorbuf: Buffer, cipherkeybuf: Buffer): Buffer = js.native
+    def encrypt(xorbuf: Buffer, cipherkeybuf: Buffer): Buffer
   }
   object Blockcipher {
     
@@ -130,12 +128,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ECIESOptions extends StObject {
     
-    var noKey: js.UndefOr[Boolean] = js.native
+    var noKey: js.UndefOr[Boolean] = js.undefined
     
-    var shortTag: js.UndefOr[Boolean] = js.native
+    var shortTag: js.UndefOr[Boolean] = js.undefined
   }
   object ECIESOptions {
     

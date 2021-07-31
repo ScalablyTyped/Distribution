@@ -2,7 +2,6 @@ package typings.behavior3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object b3 {
@@ -43,18 +42,17 @@ object b3 {
     * `_execute` method, which is called in the tree traversal.
     *
     */
-  @js.native
   trait BaseNode extends StObject {
     
     /**
       * Wrapper for close method.
       */
-    def _close(tick: Tick): Unit = js.native
+    def _close(tick: Tick): Unit
     
     /**
       * Wrapper for enter method.
       */
-    def _enter(tick: Tick): Unit = js.native
+    def _enter(tick: Tick): Unit
     
     /**
       * This is the main method to propagate the tick signal to this node. This
@@ -64,22 +62,22 @@ object b3 {
       * different of `RUNNING`.
       *
       */
-    def _execute(tick: Tick): Double = js.native
+    def _execute(tick: Tick): Double
     
     /**
       * Wrapper for exit method.
       */
-    def _exit(tick: Tick): Unit = js.native
+    def _exit(tick: Tick): Unit
     
     /**
       * Wrapper for open method.
       */
-    def _open(tick: Tick): Unit = js.native
+    def _open(tick: Tick): Unit
     
     /**
       * Wrapper for tick method.
       */
-    def _tick(tick: Tick): Double = js.native
+    def _tick(tick: Tick): Double
     
     /**
       * Close method, override this to use. This method is called after the tick
@@ -87,20 +85,20 @@ object b3 {
       * `RUNNING`.
       *
       */
-    def close(tick: Tick): Unit = js.native
+    def close(tick: Tick): Unit
     
     /**
       * Enter method, override this to use. It is called every time a node is
       * asked to execute, before the tick itself.
       */
-    def enter(tick: Tick): Unit = js.native
+    def enter(tick: Tick): Unit
     
     /**
       * Exit method, override this to use. Called every time in the end of the
       * execution.
       *
       */
-    def exit(tick: Tick): Unit = js.native
+    def exit(tick: Tick): Unit
     
     /**
       * Open method, override this to use. It is called only before the tick
@@ -109,7 +107,7 @@ object b3 {
       * Note: a node will be closed if it returned `RUNNING` in the tick.
       *
       */
-    def open(tick: Tick): Unit = js.native
+    def open(tick: Tick): Unit
     
     /**
       * Tick method, override this to use. This method must contain the real
@@ -117,7 +115,7 @@ object b3 {
       * every time a node is asked to execute.
       *
       */
-    def tick(tick: Tick): Unit = js.native
+    def tick(tick: Tick): Unit
   }
   object BaseNode {
     
@@ -332,7 +330,6 @@ object b3 {
     * variables manually, use `get` and `set` instead.
     *
     */
-  @js.native
   trait Blackboard extends StObject {
     
     /**
@@ -344,21 +341,21 @@ object b3 {
       * return the global memory.
       *
       */
-    def _getMemory(treeScope: String, nodeScope: String): js.Any = js.native
+    def _getMemory(treeScope: String, nodeScope: String): js.Any
     
     /**
       * Internal method to retrieve the node context memory, given the tree
       * memory. If the memory does not exist, this method creates is.
       *
       */
-    def _getNodeMemory(treeMemory: String, nodeScope: String): js.Any = js.native
+    def _getNodeMemory(treeMemory: String, nodeScope: String): js.Any
     
     /**
       * Internal method to retrieve the tree context memory. If the memory does
       * not exist, this method creates it.
       *
       */
-    def _getTreeMemory(treeScope: String): js.Any = js.native
+    def _getTreeMemory(treeScope: String): js.Any
     
     /**
       * Retrieves a value in the blackboard. If treeScope and nodeScope are
@@ -370,7 +367,7 @@ object b3 {
       * memory.
       *
       */
-    def get(key: String, treeScope: String, nodeScope: String): js.Any = js.native
+    def get(key: String, treeScope: String, nodeScope: String): js.Any
     
     /**
       * Stores a value in the blackboard. If treeScope and nodeScope are
@@ -382,7 +379,7 @@ object b3 {
       * the global memory.
       *
       */
-    def set(key: String, value: String, treeScope: String, nodeScope: String): Unit = js.native
+    def set(key: String, value: String, treeScope: String, nodeScope: String): Unit
   }
   object Blackboard {
     
@@ -505,8 +502,9 @@ object b3 {
     * This action node returns `ERROR` always.
     *
     */
-  @js.native
-  trait Error extends BaseNode
+  trait Error
+    extends StObject
+       with BaseNode
   object Error {
     
     @scala.inline
@@ -532,8 +530,9 @@ object b3 {
     * This action node returns `FAILURE` always.
     *
     */
-  @js.native
-  trait Failer extends BaseNode
+  trait Failer
+    extends StObject
+       with BaseNode
   object Failer {
     
     @scala.inline
@@ -560,8 +559,9 @@ object b3 {
     * for `FAILURE` and `FAILURE` for `SUCCESS`.
     *
     */
-  @js.native
-  trait Inverter extends BaseNode
+  trait Inverter
+    extends StObject
+       with BaseNode
   object Inverter {
     
     @scala.inline
@@ -589,8 +589,9 @@ object b3 {
     * executing the child.
     *
     */
-  @js.native
-  trait Limiter extends BaseNode
+  trait Limiter
+    extends StObject
+       with BaseNode
   object Limiter {
     
     @scala.inline
@@ -619,8 +620,9 @@ object b3 {
     * status.
     *
     */
-  @js.native
-  trait MaxTime extends BaseNode
+  trait MaxTime
+    extends StObject
+       with BaseNode
   object MaxTime {
     
     @scala.inline
@@ -649,8 +651,9 @@ object b3 {
     * children again.
     *
     */
-  @js.native
-  trait MemPriority extends BaseNode
+  trait MemPriority
+    extends StObject
+       with BaseNode
   object MemPriority {
     
     @scala.inline
@@ -679,8 +682,9 @@ object b3 {
     * children again.
     *
     */
-  @js.native
-  trait MemSequence extends BaseNode
+  trait MemSequence
+    extends StObject
+       with BaseNode
   object MemSequence {
     
     @scala.inline
@@ -708,8 +712,9 @@ object b3 {
     * the priority also returns `FAILURE`.
     *
     */
-  @js.native
-  trait Priority extends BaseNode
+  trait Priority
+    extends StObject
+       with BaseNode
   object Priority {
     
     @scala.inline
@@ -737,8 +742,9 @@ object b3 {
     * number of repetitions can be defined.
     *
     */
-  @js.native
-  trait RepeatUntilFailure extends BaseNode
+  trait RepeatUntilFailure
+    extends StObject
+       with BaseNode
   object RepeatUntilFailure {
     
     @scala.inline
@@ -766,8 +772,9 @@ object b3 {
     * number of repetitions can be defined.
     *
     */
-  @js.native
-  trait RepeatUntilSuccess extends BaseNode
+  trait RepeatUntilSuccess
+    extends StObject
+       with BaseNode
   object RepeatUntilSuccess {
     
     @scala.inline
@@ -795,8 +802,9 @@ object b3 {
     * can be defined.
     *
     */
-  @js.native
-  trait Repeater extends BaseNode
+  trait Repeater
+    extends StObject
+       with BaseNode
   object Repeater {
     
     @scala.inline
@@ -822,8 +830,9 @@ object b3 {
     * This action node returns RUNNING always.
     *
     */
-  @js.native
-  trait Runner extends BaseNode
+  trait Runner
+    extends StObject
+       with BaseNode
   object Runner {
     
     @scala.inline
@@ -851,8 +860,9 @@ object b3 {
     * success state, the sequence also returns `SUCCESS`.
     *
     */
-  @js.native
-  trait Sequence extends BaseNode
+  trait Sequence
+    extends StObject
+       with BaseNode
   object Sequence {
     
     @scala.inline
@@ -878,8 +888,9 @@ object b3 {
     * This action node returns `SUCCESS` always.
     *
     */
-  @js.native
-  trait Succeeder extends BaseNode
+  trait Succeeder
+    extends StObject
+       with BaseNode
   object Succeeder {
     
     @scala.inline
@@ -916,33 +927,32 @@ object b3 {
     * node state to the debug if the last is provided.
     *
     */
-  @js.native
   trait Tick extends StObject {
     
     /**
       * Callback when closing a node (called by BaseNode).
       */
-    def _closeNode(node: js.Any): Unit = js.native
+    def _closeNode(node: js.Any): Unit
     
     /**
       * Called when entering a node (called by BaseNode).
       */
-    def _enterNode(node: js.Any): Unit = js.native
+    def _enterNode(node: js.Any): Unit
     
     /**
       * Callback when exiting a node (called by BaseNode).
       */
-    def _exitNode(node: js.Any): Unit = js.native
+    def _exitNode(node: js.Any): Unit
     
     /**
       * Callback when opening a node (called by BaseNode).
       */
-    def _openNode(node: js.Any): Unit = js.native
+    def _openNode(node: js.Any): Unit
     
     /**
       * Callback when ticking a node (called by BaseNode).
       */
-    def _tickNode(node: js.Any): Unit = js.native
+    def _tickNode(node: js.Any): Unit
   }
   object Tick {
     
@@ -982,8 +992,9 @@ object b3 {
     * Wait a few seconds.
     *
     */
-  @js.native
-  trait Wait extends BaseNode
+  trait Wait
+    extends StObject
+       with BaseNode
   object Wait {
     
     @scala.inline

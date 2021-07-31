@@ -9,7 +9,6 @@ import typings.monacoEditor.mod.Range
 import typings.monacoEditor.mod.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -253,7 +252,6 @@ trait IEditor extends StObject {
     */
   def setSelections(selections: js.Array[ISelection]): Unit = js.native
   
-  def trigger(source: js.UndefOr[scala.Nothing], handlerId: String, payload: js.Any): Unit = js.native
   /**
     * Directly trigger a handler or an editor action.
     * @param source The source of the call.
@@ -262,6 +260,7 @@ trait IEditor extends StObject {
     */
   def trigger(source: String, handlerId: String, payload: js.Any): Unit = js.native
   def trigger(source: Null, handlerId: String, payload: js.Any): Unit = js.native
+  def trigger(source: Unit, handlerId: String, payload: js.Any): Unit = js.native
   
   /**
     * Update the editor's options after the editor has been created.

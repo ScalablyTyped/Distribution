@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides error information. */
-@js.native
 trait UnifiedPosErrorData extends StObject {
   
   /** Gets the vendor specific error information. */
-  var extendedReason: Double = js.native
+  var extendedReason: Double
   
   /** Gets the error message. */
-  var message: String = js.native
+  var message: String
   
   /** Gets the cause of the error. */
-  var reason: UnifiedPosErrorReason = js.native
+  var reason: UnifiedPosErrorReason
   
   /** Gets the error severity. */
-  var severity: UnifiedPosErrorSeverity = js.native
+  var severity: UnifiedPosErrorSeverity
 }
 object UnifiedPosErrorData {
   

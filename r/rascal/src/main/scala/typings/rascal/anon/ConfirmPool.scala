@@ -3,15 +3,13 @@ package typings.rascal.anon
 import typings.rascal.mod.ChannelPoolConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmPool extends StObject {
   
-  var confirmPool: js.UndefOr[ChannelPoolConfig] = js.native
+  var confirmPool: js.UndefOr[ChannelPoolConfig] = js.undefined
   
-  var regularPool: js.UndefOr[ChannelPoolConfig] = js.native
+  var regularPool: js.UndefOr[ChannelPoolConfig] = js.undefined
 }
 object ConfirmPool {
   

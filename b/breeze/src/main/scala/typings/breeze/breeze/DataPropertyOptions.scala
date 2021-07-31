@@ -2,39 +2,37 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataPropertyOptions extends StObject {
   
-  var complexTypeName: js.UndefOr[String] = js.native
+  var complexTypeName: js.UndefOr[String] = js.undefined
   
-  var concurrencyMode: js.UndefOr[String] = js.native
+  var concurrencyMode: js.UndefOr[String] = js.undefined
   
-  var custom: js.UndefOr[js.Any] = js.native
+  var custom: js.UndefOr[js.Any] = js.undefined
   
-  var dataType: js.UndefOr[DataTypeSymbol] = js.native
+  var dataType: js.UndefOr[DataTypeSymbol] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var isNullable: js.UndefOr[Boolean] = js.native
+  var isNullable: js.UndefOr[Boolean] = js.undefined
   
-  var isPartOfKey: js.UndefOr[Boolean] = js.native
+  var isPartOfKey: js.UndefOr[Boolean] = js.undefined
   
-  var isScalar: js.UndefOr[Boolean] = js.native
+  var isScalar: js.UndefOr[Boolean] = js.undefined
   
-  var isUnmapped: js.UndefOr[Boolean] = js.native
+  var isUnmapped: js.UndefOr[Boolean] = js.undefined
   
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var nameOnServer: js.UndefOr[String] = js.native
+  var nameOnServer: js.UndefOr[String] = js.undefined
   
-  var validators: js.UndefOr[js.Array[Validator]] = js.native
+  var validators: js.UndefOr[js.Array[Validator]] = js.undefined
 }
 object DataPropertyOptions {
   

@@ -2,25 +2,23 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLaunchTemplateBlockDeviceMappingEb extends StObject {
   
-  var deleteOnTermination: String = js.native
+  var deleteOnTermination: String
   
-  var encrypted: String = js.native
+  var encrypted: String
   
-  var iops: Double = js.native
+  var iops: Double
   
-  var kmsKeyId: String = js.native
+  var kmsKeyId: String
   
-  var snapshotId: String = js.native
+  var snapshotId: String
   
-  var volumeSize: Double = js.native
+  var volumeSize: Double
   
-  var volumeType: String = js.native
+  var volumeType: String
 }
 object GetLaunchTemplateBlockDeviceMappingEb {
   

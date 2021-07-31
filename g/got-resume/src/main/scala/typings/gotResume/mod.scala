@@ -13,14 +13,12 @@ import typings.node.streamMod.Transform
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("got-resume", JSImport.Namespace)
-  @js.native
-  def apply(options: TransferOptions): TransferStream = js.native
+  @scala.inline
+  def apply(options: TransferOptions): TransferStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[TransferStream]
   /**
     * Fetch URL with retries if failure.
     * Returns stream of transfer contents.
@@ -28,12 +26,14 @@ object mod {
     * @param url URL (optional).
     * @param options Options object.
     */
+  @scala.inline
+  def apply(url: String): TransferStream = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[TransferStream]
+  @scala.inline
+  def apply(url: String, options: TransferOptions): TransferStream = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransferStream]
+  
   @JSImport("got-resume", JSImport.Namespace)
   @js.native
-  def apply(url: String): TransferStream = js.native
-  @JSImport("got-resume", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: TransferOptions): TransferStream = js.native
+  val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.Error * / any */ @JSImport("got-resume", "CancelError")
@@ -149,28 +149,22 @@ object mod {
     * @param url URL.
     * @param options Options object (as per stream method).
     */
-  @JSImport("got-resume", "toFile")
-  @js.native
-  def toFile(path: String): js.Promise[Unit] = js.native
-  @JSImport("got-resume", "toFile")
-  @js.native
-  def toFile(path: String, options: ToFileOptions): js.Promise[Unit] = js.native
-  @JSImport("got-resume", "toFile")
-  @js.native
-  def toFile(path: String, url: js.UndefOr[scala.Nothing], options: ToFileOptions): js.Promise[Unit] = js.native
-  @JSImport("got-resume", "toFile")
-  @js.native
-  def toFile(path: String, url: String): js.Promise[Unit] = js.native
-  @JSImport("got-resume", "toFile")
-  @js.native
-  def toFile(path: String, url: String, options: ToFileOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def toFile(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def toFile(path: String, options: ToFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def toFile(path: String, url: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def toFile(path: String, url: String, options: ToFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def toFile(path: String, url: Unit, options: ToFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait Progress extends StObject {
     
-    var total: Double = js.native
+    var total: Double
     
-    var transferred: Double = js.native
+    var transferred: Double
   }
   object Progress {
     
@@ -191,17 +185,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait ToFileOptions extends TransferOptions {
+  trait ToFileOptions
+    extends StObject
+       with TransferOptions {
     
     /** Promise implementation to use (default: Bluebird v2). */
-    var Promise: js.UndefOr[PromiseConstructor] = js.native
+    var Promise: js.UndefOr[PromiseConstructor] = js.undefined
     
     /** Function called with progress. */
-    var onProgress: js.UndefOr[js.Function1[/* progress */ Progress, Unit]] = js.native
+    var onProgress: js.UndefOr[js.Function1[/* progress */ Progress, Unit]] = js.undefined
     
     /** Function called with HTTP response. */
-    var onResponse: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+    var onResponse: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   }
   object ToFileOptions {
     
@@ -234,50 +229,49 @@ object mod {
     }
   }
   
-  @js.native
   trait TransferOptions extends StObject {
     
     /** Number of attempts to make before failing (0 for no limit). */
-    var attempts: js.UndefOr[Double] = js.native
+    var attempts: js.UndefOr[Double] = js.undefined
     
     /** Total number of attempts to make before failing (0 for no limit). */
-    var attemptsTotal: js.UndefOr[Double] = js.native
+    var attemptsTotal: js.UndefOr[Double] = js.undefined
     
     /**
       * Function called with `backoff(attempt, transfer)` and should return milliseconds to wait
       * before next attempt.
       */
-    var backoff: js.UndefOr[js.Function2[/* attempt */ Double, /* transfer */ Transfer, Double]] = js.native
+    var backoff: js.UndefOr[js.Function2[/* attempt */ Double, /* transfer */ Transfer, Double]] = js.undefined
     
     /** Options to pass to `got` module. */
-    var got: js.UndefOr[GotOptions[String | Null]] = js.native
+    var got: js.UndefOr[GotOptions[String | Null]] = js.undefined
     
     /**
       * Length of transfer
       * (NB is actually range end - does not take into account options.offset).
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** Function to call with logging information. */
-    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
     /** `true` to disable gzip encoding on first request in order to get length. */
-    var needLength: js.UndefOr[Boolean] = js.native
+    var needLength: js.UndefOr[Boolean] = js.undefined
     
     /** Number of bytes at start of file to skip. */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * Function to call before HTTP requests. Is passed `transfer` object, should set
       * `transfer.url` and `transfer.gotOptions` and return a promise.
       */
-    var pre: js.UndefOr[js.Function1[/* transfer */ Transfer, js.Promise[Unit]]] = js.native
+    var pre: js.UndefOr[js.Function1[/* transfer */ Transfer, js.Promise[Unit]]] = js.undefined
     
     /** Transform stream to pass result through. */
-    var transform: js.UndefOr[Transform] = js.native
+    var transform: js.UndefOr[Transform] = js.undefined
     
     /** URL (alternative way to provide). */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object TransferOptions {
     

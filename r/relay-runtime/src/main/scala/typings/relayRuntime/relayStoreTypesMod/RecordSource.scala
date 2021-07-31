@@ -5,23 +5,21 @@ import typings.relayRuntime.relayRecordStateMod.RecordState
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordSource extends StObject {
   
-  def get(dataID: DataID): js.UndefOr[Record | Null] = js.native
+  def get(dataID: DataID): js.UndefOr[Record | Null]
   
-  def getRecordIDs(): js.Array[DataID] = js.native
+  def getRecordIDs(): js.Array[DataID]
   
-  def getStatus(dataID: DataID): RecordState = js.native
+  def getStatus(dataID: DataID): RecordState
   
-  def has(dataID: DataID): Boolean = js.native
+  def has(dataID: DataID): Boolean
   
-  def size(): Double = js.native
+  def size(): Double
   
-  def toJSON(): StringDictionary[Record] = js.native
+  def toJSON(): StringDictionary[Record]
 }
 object RecordSource {
   

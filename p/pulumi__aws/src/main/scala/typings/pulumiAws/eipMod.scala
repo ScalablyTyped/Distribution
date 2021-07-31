@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eipMod {
@@ -25,7 +24,7 @@ object eipMod {
       */
     def this(name: String) = this()
     def this(name: String, args: EipArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: EipArgs, opts: CustomResourceOptions) = this()
     
     val allocationId: Output_[String] = js.native
@@ -107,6 +106,10 @@ object eipMod {
   /* static members */
   object Eip {
     
+    @JSImport("@pulumi/aws/ec2/eip", "Eip")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Eip resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -116,29 +119,23 @@ object eipMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/eip", "Eip.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Eip = js.native
-    @JSImport("@pulumi/aws/ec2/eip", "Eip.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Eip = js.native
-    @JSImport("@pulumi/aws/ec2/eip", "Eip.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EipState): Eip = js.native
-    @JSImport("@pulumi/aws/ec2/eip", "Eip.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EipState, opts: CustomResourceOptions): Eip = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Eip]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Eip]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EipState): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Eip]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EipState, opts: CustomResourceOptions): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Eip]
     
     /**
       * Returns true if the given object is an instance of Eip.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/eip", "Eip.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eip.Eip */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eip.Eip */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/eip.Eip */ Boolean]
   }
   
-  @js.native
   trait EipArgs extends StObject {
     
     /**
@@ -146,42 +143,42 @@ object eipMod {
       * associate with the Elastic IP address. If no private IP address is specified,
       * the Elastic IP address is associated with the primary private IP address.
       */
-    val associateWithPrivateIp: js.UndefOr[Input[String]] = js.native
+    val associateWithPrivateIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The  ID  of a customer-owned address pool. For more on customer owned IP addressed check out [Customer-owned IP addresses guide](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-networking-components.html#ip-addressing)
       */
-    val customerOwnedIpv4Pool: js.UndefOr[Input[String]] = js.native
+    val customerOwnedIpv4Pool: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * EC2 instance ID.
       */
-    val instance: js.UndefOr[Input[String]] = js.native
+    val instance: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The location from which the IP address is advertised. Use this parameter to limit the address to this location.
       */
-    val networkBorderGroup: js.UndefOr[Input[String]] = js.native
+    val networkBorderGroup: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Network interface ID to associate with.
       */
-    val networkInterface: js.UndefOr[Input[String]] = js.native
+    val networkInterface: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * EC2 IPv4 address pool identifier or `amazon`. This option is only available for VPC EIPs.
       */
-    val publicIpv4Pool: js.UndefOr[Input[String]] = js.native
+    val publicIpv4Pool: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource. Tags can only be applied to EIPs in a VPC.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Boolean if the EIP is in a VPC or not.
       */
-    val vpc: js.UndefOr[Input[Boolean]] = js.native
+    val vpc: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object EipArgs {
     
@@ -244,84 +241,83 @@ object eipMod {
     }
   }
   
-  @js.native
   trait EipState extends StObject {
     
-    val allocationId: js.UndefOr[Input[String]] = js.native
+    val allocationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A user specified primary or secondary private IP address to
       * associate with the Elastic IP address. If no private IP address is specified,
       * the Elastic IP address is associated with the primary private IP address.
       */
-    val associateWithPrivateIp: js.UndefOr[Input[String]] = js.native
+    val associateWithPrivateIp: js.UndefOr[Input[String]] = js.undefined
     
-    val associationId: js.UndefOr[Input[String]] = js.native
+    val associationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Customer owned IP.
       */
-    val customerOwnedIp: js.UndefOr[Input[String]] = js.native
+    val customerOwnedIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The  ID  of a customer-owned address pool. For more on customer owned IP addressed check out [Customer-owned IP addresses guide](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-networking-components.html#ip-addressing)
       */
-    val customerOwnedIpv4Pool: js.UndefOr[Input[String]] = js.native
+    val customerOwnedIpv4Pool: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates if this EIP is for use in VPC (`vpc`) or EC2 Classic (`standard`).
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * EC2 instance ID.
       */
-    val instance: js.UndefOr[Input[String]] = js.native
+    val instance: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The location from which the IP address is advertised. Use this parameter to limit the address to this location.
       */
-    val networkBorderGroup: js.UndefOr[Input[String]] = js.native
+    val networkBorderGroup: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Network interface ID to associate with.
       */
-    val networkInterface: js.UndefOr[Input[String]] = js.native
+    val networkInterface: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Private DNS associated with the Elastic IP address (if in VPC).
       */
-    val privateDns: js.UndefOr[Input[String]] = js.native
+    val privateDns: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Contains the private IP address (if in VPC).
       */
-    val privateIp: js.UndefOr[Input[String]] = js.native
+    val privateIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Public DNS associated with the Elastic IP address.
       */
-    val publicDns: js.UndefOr[Input[String]] = js.native
+    val publicDns: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Contains the public IP address.
       */
-    val publicIp: js.UndefOr[Input[String]] = js.native
+    val publicIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * EC2 IPv4 address pool identifier or `amazon`. This option is only available for VPC EIPs.
       */
-    val publicIpv4Pool: js.UndefOr[Input[String]] = js.native
+    val publicIpv4Pool: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource. Tags can only be applied to EIPs in a VPC.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Boolean if the EIP is in a VPC or not.
       */
-    val vpc: js.UndefOr[Input[Boolean]] = js.native
+    val vpc: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object EipState {
     

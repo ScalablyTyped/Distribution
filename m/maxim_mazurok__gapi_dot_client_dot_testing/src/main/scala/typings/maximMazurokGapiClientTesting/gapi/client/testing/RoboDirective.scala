@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoboDirective extends StObject {
   
   /** Required. The type of action that Robo should perform on the specified element. */
-  var actionType: js.UndefOr[String] = js.native
+  var actionType: js.UndefOr[String] = js.undefined
   
   /** The text that Robo is directed to set. If left empty, the directive will be treated as a CLICK on the element matching the resource_name. */
-  var inputText: js.UndefOr[String] = js.native
+  var inputText: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The android resource name of the target UI element. For example, in Java: R.string.foo in xml: @string/foo Only the "foo" part is needed. Reference doc:
     * https://developer.android.com/guide/topics/resources/accessing-resources.html
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
 }
 object RoboDirective {
   

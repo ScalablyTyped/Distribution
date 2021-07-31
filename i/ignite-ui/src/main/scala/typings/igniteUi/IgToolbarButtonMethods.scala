@@ -2,10 +2,8 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgToolbarButtonMethods extends StObject {
   
   /**
@@ -13,29 +11,29 @@ trait IgToolbarButtonMethods extends StObject {
     *
     * @param event
     */
-  def activate(event: js.Object): Unit = js.native
+  def activate(event: js.Object): Unit
   
   /**
     * Deactivate toolbar button
     *
     * @param event
     */
-  def deactivate(event: js.Object): Unit = js.native
+  def deactivate(event: js.Object): Unit
   
   /**
     * Destroy the widget.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Toggle toolbar button
     */
-  def toggle(): Unit = js.native
+  def toggle(): Unit
   
   /**
     * Returns the element that represents this widget.
     */
-  def widget(): js.Object = js.native
+  def widget(): js.Object
 }
 object IgToolbarButtonMethods {
   

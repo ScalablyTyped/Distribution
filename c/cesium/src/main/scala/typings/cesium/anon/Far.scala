@@ -2,23 +2,21 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Far extends StObject {
   
-  var aspectRatio: Double = js.native
+  var aspectRatio: Double
   
-  var far: js.UndefOr[Double] = js.native
+  var far: js.UndefOr[Double] = js.undefined
   
-  var fov: Double = js.native
+  var fov: Double
   
-  var near: js.UndefOr[Double] = js.native
+  var near: js.UndefOr[Double] = js.undefined
   
-  var xOffset: js.UndefOr[Double] = js.native
+  var xOffset: js.UndefOr[Double] = js.undefined
   
-  var yOffset: js.UndefOr[Double] = js.native
+  var yOffset: js.UndefOr[Double] = js.undefined
 }
 object Far {
   

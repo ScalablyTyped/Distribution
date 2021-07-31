@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2CryptoDeterministicConfig extends StObject {
   
   /**
@@ -15,10 +13,10 @@ trait GooglePrivacyDlpV2CryptoDeterministicConfig extends StObject {
     * no record present when transforming a given value or 2. the field is not present when transforming a given value, plaintext would be used as is for encryption. Note that case (1) is
     * expected when an `InfoTypeTransformation` is applied to both structured and non-structured `ContentItem`s.
     */
-  var context: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.native
+  var context: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.undefined
   
   /** The key used by the encryption function. */
-  var cryptoKey: js.UndefOr[GooglePrivacyDlpV2CryptoKey] = js.native
+  var cryptoKey: js.UndefOr[GooglePrivacyDlpV2CryptoKey] = js.undefined
   
   /**
     * The custom info type to annotate the surrogate with. This annotation will be applied to the surrogate by prefixing it with the name of the custom info type followed by the number of
@@ -31,7 +29,7 @@ trait GooglePrivacyDlpV2CryptoDeterministicConfig extends StObject {
     * looks like. One way to select a name that has a high chance of yielding reliable detection is to include one or more unicode characters that are highly improbable to exist in your
     * data. For example, assuming your data is entered from a regular ASCII keyboard, the symbol with the hex code point 29DD might be used like so: ⧝MY_TOKEN_TYPE.
     */
-  var surrogateInfoType: js.UndefOr[GooglePrivacyDlpV2InfoType] = js.native
+  var surrogateInfoType: js.UndefOr[GooglePrivacyDlpV2InfoType] = js.undefined
 }
 object GooglePrivacyDlpV2CryptoDeterministicConfig {
   

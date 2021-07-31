@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     * The name of the filter. Filter names are case-sensitive.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * One or more filter values. Filter values are case-sensitive.
     */
-  var Values: FilterValueList = js.native
+  var Values: FilterValueList
 }
 object Filter {
   

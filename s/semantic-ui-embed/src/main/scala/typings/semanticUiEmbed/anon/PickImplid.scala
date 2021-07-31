@@ -3,14 +3,12 @@ package typings.semanticUiEmbed.anon
 import typings.semanticUiEmbed.semanticUiEmbedBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-embed.SemanticUI.EmbedSettings._Impl, 'id'> */
-@js.native
 trait PickImplid extends StObject {
   
-  var id: `false` | String = js.native
+  var id: `false` | String
 }
 object PickImplid {
   

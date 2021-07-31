@@ -8,26 +8,28 @@ import typings.request.mod.CoreOptions
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): client = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[client]
+  @scala.inline
+  def apply(options: VaultOptions): client = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[client]
+  
   @JSImport("node-vault", JSImport.Namespace)
   @js.native
-  def apply(): client = js.native
-  @JSImport("node-vault", JSImport.Namespace)
-  @js.native
-  def apply(options: VaultOptions): client = js.native
+  val ^ : js.Any = js.native
   
   type Option = StringDictionary[js.Any]
   
-  @js.native
-  trait RequestOption extends Option {
+  trait RequestOption
+    extends StObject
+       with Option {
     
-    var method: String = js.native
+    var method: String
     
-    var path: String = js.native
+    var path: String
   }
   object RequestOption {
     
@@ -48,34 +50,33 @@ object mod {
     }
   }
   
-  @js.native
   trait VaultOptions extends StObject {
     
-    var Promise: js.UndefOr[PromiseConstructor] = js.native
+    var Promise: js.UndefOr[PromiseConstructor] = js.undefined
     
-    var apiVersion: js.UndefOr[String] = js.native
+    var apiVersion: js.UndefOr[String] = js.undefined
     
-    var commands: js.UndefOr[js.Array[Method]] = js.native
+    var commands: js.UndefOr[js.Array[Method]] = js.undefined
     
-    var debug: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var debug: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
-    var mustache: js.UndefOr[js.Any] = js.native
+    var mustache: js.UndefOr[js.Any] = js.undefined
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
-    var noCustomHTTPVerbs: js.UndefOr[Boolean] = js.native
+    var noCustomHTTPVerbs: js.UndefOr[Boolean] = js.undefined
     
-    var pathPrefix: js.UndefOr[String] = js.native
+    var pathPrefix: js.UndefOr[String] = js.undefined
     
-    var `request-promise`: js.UndefOr[js.Any] = js.native
+    var `request-promise`: js.UndefOr[js.Any] = js.undefined
     
-    var requestOptions: js.UndefOr[CoreOptions] = js.native
+    var requestOptions: js.UndefOr[CoreOptions] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var tv4: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var tv4: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   }
   object VaultOptions {
     
@@ -104,7 +105,7 @@ object mod {
       def setCommandsVarargs(value: Method*): Self = StObject.set(x, "commands", js.Array(value :_*))
       
       @scala.inline
-      def setDebug(value: /* repeated */ js.Any => _): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      def setDebug(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
@@ -164,7 +165,7 @@ object mod {
       def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
       @scala.inline
-      def setTv4(value: /* repeated */ js.Any => _): Self = StObject.set(x, "tv4", js.Any.fromFunction1(value))
+      def setTv4(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "tv4", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTv4Undefined: Self = StObject.set(x, "tv4", js.undefined)
@@ -174,244 +175,243 @@ object mod {
   @js.native
   trait client extends StObject {
     
-    def addApproleRole(): js.Promise[_] = js.native
-    def addApproleRole(options: Option): js.Promise[_] = js.native
+    def addApproleRole(): js.Promise[js.Any] = js.native
+    def addApproleRole(options: Option): js.Promise[js.Any] = js.native
     
-    def addPolicy(): js.Promise[_] = js.native
-    def addPolicy(options: Option): js.Promise[_] = js.native
+    def addPolicy(): js.Promise[js.Any] = js.native
+    def addPolicy(options: Option): js.Promise[js.Any] = js.native
     
-    def addTokenRole(): js.Promise[_] = js.native
-    def addTokenRole(options: Option): js.Promise[_] = js.native
+    def addTokenRole(): js.Promise[js.Any] = js.native
+    def addTokenRole(options: Option): js.Promise[js.Any] = js.native
     
     var apiVersion: String = js.native
     
-    def approleLogin(): js.Promise[_] = js.native
-    def approleLogin(options: Option): js.Promise[_] = js.native
+    def approleLogin(): js.Promise[js.Any] = js.native
+    def approleLogin(options: Option): js.Promise[js.Any] = js.native
     
-    def approleRoles(): js.Promise[_] = js.native
-    def approleRoles(options: Option): js.Promise[_] = js.native
+    def approleRoles(): js.Promise[js.Any] = js.native
+    def approleRoles(options: Option): js.Promise[js.Any] = js.native
     
-    def approleSecretAccessorDestroy(): js.Promise[_] = js.native
-    def approleSecretAccessorDestroy(options: Option): js.Promise[_] = js.native
+    def approleSecretAccessorDestroy(): js.Promise[js.Any] = js.native
+    def approleSecretAccessorDestroy(options: Option): js.Promise[js.Any] = js.native
     
-    def approleSecretAccessorLookup(): js.Promise[_] = js.native
-    def approleSecretAccessorLookup(options: Option): js.Promise[_] = js.native
+    def approleSecretAccessorLookup(): js.Promise[js.Any] = js.native
+    def approleSecretAccessorLookup(options: Option): js.Promise[js.Any] = js.native
     
-    def approleSecretAccessors(): js.Promise[_] = js.native
-    def approleSecretAccessors(options: Option): js.Promise[_] = js.native
+    def approleSecretAccessors(): js.Promise[js.Any] = js.native
+    def approleSecretAccessors(options: Option): js.Promise[js.Any] = js.native
     
-    def approleSecretDestroy(): js.Promise[_] = js.native
-    def approleSecretDestroy(options: Option): js.Promise[_] = js.native
+    def approleSecretDestroy(): js.Promise[js.Any] = js.native
+    def approleSecretDestroy(options: Option): js.Promise[js.Any] = js.native
     
-    def approleSecretLookup(): js.Promise[_] = js.native
-    def approleSecretLookup(options: Option): js.Promise[_] = js.native
+    def approleSecretLookup(): js.Promise[js.Any] = js.native
+    def approleSecretLookup(options: Option): js.Promise[js.Any] = js.native
     
-    def audits(): js.Promise[_] = js.native
-    def audits(options: Option): js.Promise[_] = js.native
+    def audits(): js.Promise[js.Any] = js.native
+    def audits(options: Option): js.Promise[js.Any] = js.native
     
-    def auths(): js.Promise[_] = js.native
-    def auths(options: Option): js.Promise[_] = js.native
+    def auths(): js.Promise[js.Any] = js.native
+    def auths(options: Option): js.Promise[js.Any] = js.native
     
-    def awsIamLogin(): js.Promise[_] = js.native
-    def awsIamLogin(options: Option): js.Promise[_] = js.native
+    def awsIamLogin(): js.Promise[js.Any] = js.native
+    def awsIamLogin(options: Option): js.Promise[js.Any] = js.native
     
-    def decryptData(): js.Promise[_] = js.native
-    def decryptData(options: Option): js.Promise[_] = js.native
+    def decryptData(): js.Promise[js.Any] = js.native
+    def decryptData(options: Option): js.Promise[js.Any] = js.native
     
-    def delete(path: String): js.Promise[_] = js.native
-    def delete(path: String, requestOptions: Option): js.Promise[_] = js.native
+    def delete(path: String): js.Promise[js.Any] = js.native
+    def delete(path: String, requestOptions: Option): js.Promise[js.Any] = js.native
     
-    def deleteApproleRole(): js.Promise[_] = js.native
-    def deleteApproleRole(options: Option): js.Promise[_] = js.native
+    def deleteApproleRole(): js.Promise[js.Any] = js.native
+    def deleteApproleRole(options: Option): js.Promise[js.Any] = js.native
     
-    def disableAudit(): js.Promise[_] = js.native
-    def disableAudit(options: Option): js.Promise[_] = js.native
+    def disableAudit(): js.Promise[js.Any] = js.native
+    def disableAudit(options: Option): js.Promise[js.Any] = js.native
     
-    def disableAuth(): js.Promise[_] = js.native
-    def disableAuth(options: Option): js.Promise[_] = js.native
+    def disableAuth(): js.Promise[js.Any] = js.native
+    def disableAuth(options: Option): js.Promise[js.Any] = js.native
     
-    def enableAudit(): js.Promise[_] = js.native
-    def enableAudit(options: Option): js.Promise[_] = js.native
+    def enableAudit(): js.Promise[js.Any] = js.native
+    def enableAudit(options: Option): js.Promise[js.Any] = js.native
     
-    def enableAuth(): js.Promise[_] = js.native
-    def enableAuth(options: Option): js.Promise[_] = js.native
+    def enableAuth(): js.Promise[js.Any] = js.native
+    def enableAuth(options: Option): js.Promise[js.Any] = js.native
     
-    def encryptData(): js.Promise[_] = js.native
-    def encryptData(options: Option): js.Promise[_] = js.native
+    def encryptData(): js.Promise[js.Any] = js.native
+    def encryptData(options: Option): js.Promise[js.Any] = js.native
     
     var endpoint: String = js.native
     
-    def generateDatabaseCredentials(): js.Promise[_] = js.native
-    def generateDatabaseCredentials(options: Option): js.Promise[_] = js.native
+    def generateDatabaseCredentials(): js.Promise[js.Any] = js.native
+    def generateDatabaseCredentials(options: Option): js.Promise[js.Any] = js.native
     
     def generateFunction(name: String, conf: functionConf): Unit = js.native
     
-    def generateRootCancel(): js.Promise[_] = js.native
-    def generateRootCancel(options: Option): js.Promise[_] = js.native
+    def generateRootCancel(): js.Promise[js.Any] = js.native
+    def generateRootCancel(options: Option): js.Promise[js.Any] = js.native
     
-    def generateRootInit(): js.Promise[_] = js.native
-    def generateRootInit(options: Option): js.Promise[_] = js.native
+    def generateRootInit(): js.Promise[js.Any] = js.native
+    def generateRootInit(options: Option): js.Promise[js.Any] = js.native
     
-    def generateRootStatus(): js.Promise[_] = js.native
-    def generateRootStatus(options: Option): js.Promise[_] = js.native
+    def generateRootStatus(): js.Promise[js.Any] = js.native
+    def generateRootStatus(options: Option): js.Promise[js.Any] = js.native
     
-    def generateRootUpdate(): js.Promise[_] = js.native
-    def generateRootUpdate(options: Option): js.Promise[_] = js.native
+    def generateRootUpdate(): js.Promise[js.Any] = js.native
+    def generateRootUpdate(options: Option): js.Promise[js.Any] = js.native
     
-    def getApproleRole(): js.Promise[_] = js.native
-    def getApproleRole(options: Option): js.Promise[_] = js.native
+    def getApproleRole(): js.Promise[js.Any] = js.native
+    def getApproleRole(options: Option): js.Promise[js.Any] = js.native
     
-    def getApproleRoleId(): js.Promise[_] = js.native
-    def getApproleRoleId(options: Option): js.Promise[_] = js.native
+    def getApproleRoleId(): js.Promise[js.Any] = js.native
+    def getApproleRoleId(options: Option): js.Promise[js.Any] = js.native
     
-    def getApproleRoleSecret(): js.Promise[_] = js.native
-    def getApproleRoleSecret(options: Option): js.Promise[_] = js.native
+    def getApproleRoleSecret(): js.Promise[js.Any] = js.native
+    def getApproleRoleSecret(options: Option): js.Promise[js.Any] = js.native
     
-    def getPolicy(): js.Promise[_] = js.native
-    def getPolicy(options: Option): js.Promise[_] = js.native
+    def getPolicy(): js.Promise[js.Any] = js.native
+    def getPolicy(options: Option): js.Promise[js.Any] = js.native
     
-    def getTokenRole(): js.Promise[_] = js.native
-    def getTokenRole(options: Option): js.Promise[_] = js.native
+    def getTokenRole(): js.Promise[js.Any] = js.native
+    def getTokenRole(options: Option): js.Promise[js.Any] = js.native
     
-    def githubLogin(): js.Promise[_] = js.native
-    def githubLogin(options: Option): js.Promise[_] = js.native
+    def githubLogin(): js.Promise[js.Any] = js.native
+    def githubLogin(options: Option): js.Promise[js.Any] = js.native
     
-    def handleVaultResponse(): js.Promise[_] = js.native
-    def handleVaultResponse(res: Body): js.Promise[_] = js.native
+    def handleVaultResponse(): js.Promise[js.Any] = js.native
+    def handleVaultResponse(res: Body): js.Promise[js.Any] = js.native
     
-    def health(): js.Promise[_] = js.native
-    def health(options: Option): js.Promise[_] = js.native
+    def health(): js.Promise[js.Any] = js.native
+    def health(options: Option): js.Promise[js.Any] = js.native
     
-    def help(path: String): js.Promise[_] = js.native
-    def help(path: String, requestOptions: Option): js.Promise[_] = js.native
+    def help(path: String): js.Promise[js.Any] = js.native
+    def help(path: String, requestOptions: Option): js.Promise[js.Any] = js.native
     
-    def init(): js.Promise[_] = js.native
-    def init(options: Option): js.Promise[_] = js.native
+    def init(): js.Promise[js.Any] = js.native
+    def init(options: Option): js.Promise[js.Any] = js.native
     
-    def initialized(): js.Promise[_] = js.native
-    def initialized(options: Option): js.Promise[_] = js.native
+    def initialized(): js.Promise[js.Any] = js.native
+    def initialized(options: Option): js.Promise[js.Any] = js.native
     
-    def kubernetesLogin(): js.Promise[_] = js.native
-    def kubernetesLogin(options: Option): js.Promise[_] = js.native
+    def kubernetesLogin(): js.Promise[js.Any] = js.native
+    def kubernetesLogin(options: Option): js.Promise[js.Any] = js.native
     
-    def leader(): js.Promise[_] = js.native
-    def leader(options: Option): js.Promise[_] = js.native
+    def leader(): js.Promise[js.Any] = js.native
+    def leader(options: Option): js.Promise[js.Any] = js.native
     
-    def list(path: String): js.Promise[_] = js.native
-    def list(path: String, requestOptions: Option): js.Promise[_] = js.native
+    def list(path: String): js.Promise[js.Any] = js.native
+    def list(path: String, requestOptions: Option): js.Promise[js.Any] = js.native
     
-    def mount(): js.Promise[_] = js.native
-    def mount(options: Option): js.Promise[_] = js.native
+    def mount(): js.Promise[js.Any] = js.native
+    def mount(options: Option): js.Promise[js.Any] = js.native
     
-    def mounts(): js.Promise[_] = js.native
-    def mounts(options: Option): js.Promise[_] = js.native
+    def mounts(): js.Promise[js.Any] = js.native
+    def mounts(options: Option): js.Promise[js.Any] = js.native
     
-    def policies(): js.Promise[_] = js.native
-    def policies(options: Option): js.Promise[_] = js.native
+    def policies(): js.Promise[js.Any] = js.native
+    def policies(options: Option): js.Promise[js.Any] = js.native
     
-    def read(path: String): js.Promise[_] = js.native
-    def read(path: String, requestOptions: Option): js.Promise[_] = js.native
+    def read(path: String): js.Promise[js.Any] = js.native
+    def read(path: String, requestOptions: Option): js.Promise[js.Any] = js.native
     
-    def remount(): js.Promise[_] = js.native
-    def remount(options: Option): js.Promise[_] = js.native
+    def remount(): js.Promise[js.Any] = js.native
+    def remount(options: Option): js.Promise[js.Any] = js.native
     
-    def removePolicy(): js.Promise[_] = js.native
-    def removePolicy(options: Option): js.Promise[_] = js.native
+    def removePolicy(): js.Promise[js.Any] = js.native
+    def removePolicy(options: Option): js.Promise[js.Any] = js.native
     
-    def removeTokenRole(): js.Promise[_] = js.native
-    def removeTokenRole(options: Option): js.Promise[_] = js.native
+    def removeTokenRole(): js.Promise[js.Any] = js.native
+    def removeTokenRole(options: Option): js.Promise[js.Any] = js.native
     
-    def renew(): js.Promise[_] = js.native
-    def renew(options: Option): js.Promise[_] = js.native
+    def renew(): js.Promise[js.Any] = js.native
+    def renew(options: Option): js.Promise[js.Any] = js.native
     
-    def request(requestOptions: RequestOption): js.Promise[_] = js.native
+    def request(requestOptions: RequestOption): js.Promise[js.Any] = js.native
     
-    def revoke(): js.Promise[_] = js.native
-    def revoke(options: Option): js.Promise[_] = js.native
+    def revoke(): js.Promise[js.Any] = js.native
+    def revoke(options: Option): js.Promise[js.Any] = js.native
     
-    def revokePrefix(): js.Promise[_] = js.native
-    def revokePrefix(options: Option): js.Promise[_] = js.native
+    def revokePrefix(): js.Promise[js.Any] = js.native
+    def revokePrefix(options: Option): js.Promise[js.Any] = js.native
     
-    def rotate(): js.Promise[_] = js.native
-    def rotate(options: Option): js.Promise[_] = js.native
+    def rotate(): js.Promise[js.Any] = js.native
+    def rotate(options: Option): js.Promise[js.Any] = js.native
     
-    def seal(): js.Promise[_] = js.native
-    def seal(options: Option): js.Promise[_] = js.native
+    def seal(): js.Promise[js.Any] = js.native
+    def seal(options: Option): js.Promise[js.Any] = js.native
     
-    def status(): js.Promise[_] = js.native
-    def status(options: Option): js.Promise[_] = js.native
+    def status(): js.Promise[js.Any] = js.native
+    def status(options: Option): js.Promise[js.Any] = js.native
     
-    def stepDown(): js.Promise[_] = js.native
-    def stepDown(options: Option): js.Promise[_] = js.native
+    def stepDown(): js.Promise[js.Any] = js.native
+    def stepDown(options: Option): js.Promise[js.Any] = js.native
     
     var token: String = js.native
     
-    def tokenAccessors(): js.Promise[_] = js.native
-    def tokenAccessors(options: Option): js.Promise[_] = js.native
+    def tokenAccessors(): js.Promise[js.Any] = js.native
+    def tokenAccessors(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenCreate(): js.Promise[_] = js.native
-    def tokenCreate(options: Option): js.Promise[_] = js.native
+    def tokenCreate(): js.Promise[js.Any] = js.native
+    def tokenCreate(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenCreateOrphan(): js.Promise[_] = js.native
-    def tokenCreateOrphan(options: Option): js.Promise[_] = js.native
+    def tokenCreateOrphan(): js.Promise[js.Any] = js.native
+    def tokenCreateOrphan(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenCreateRole(): js.Promise[_] = js.native
-    def tokenCreateRole(options: Option): js.Promise[_] = js.native
+    def tokenCreateRole(): js.Promise[js.Any] = js.native
+    def tokenCreateRole(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenLookup(): js.Promise[_] = js.native
-    def tokenLookup(options: Option): js.Promise[_] = js.native
+    def tokenLookup(): js.Promise[js.Any] = js.native
+    def tokenLookup(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenLookupAccessor(): js.Promise[_] = js.native
-    def tokenLookupAccessor(options: Option): js.Promise[_] = js.native
+    def tokenLookupAccessor(): js.Promise[js.Any] = js.native
+    def tokenLookupAccessor(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenLookupSelf(): js.Promise[_] = js.native
-    def tokenLookupSelf(options: Option): js.Promise[_] = js.native
+    def tokenLookupSelf(): js.Promise[js.Any] = js.native
+    def tokenLookupSelf(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenRenew(): js.Promise[_] = js.native
-    def tokenRenew(options: Option): js.Promise[_] = js.native
+    def tokenRenew(): js.Promise[js.Any] = js.native
+    def tokenRenew(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenRenewSelf(): js.Promise[_] = js.native
-    def tokenRenewSelf(options: Option): js.Promise[_] = js.native
+    def tokenRenewSelf(): js.Promise[js.Any] = js.native
+    def tokenRenewSelf(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenRevoke(): js.Promise[_] = js.native
-    def tokenRevoke(options: Option): js.Promise[_] = js.native
+    def tokenRevoke(): js.Promise[js.Any] = js.native
+    def tokenRevoke(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenRevokeAccessor(): js.Promise[_] = js.native
-    def tokenRevokeAccessor(options: Option): js.Promise[_] = js.native
+    def tokenRevokeAccessor(): js.Promise[js.Any] = js.native
+    def tokenRevokeAccessor(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenRevokeOrphan(): js.Promise[_] = js.native
-    def tokenRevokeOrphan(options: Option): js.Promise[_] = js.native
+    def tokenRevokeOrphan(): js.Promise[js.Any] = js.native
+    def tokenRevokeOrphan(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenRevokeSelf(): js.Promise[_] = js.native
-    def tokenRevokeSelf(options: Option): js.Promise[_] = js.native
+    def tokenRevokeSelf(): js.Promise[js.Any] = js.native
+    def tokenRevokeSelf(options: Option): js.Promise[js.Any] = js.native
     
-    def tokenRoles(): js.Promise[_] = js.native
-    def tokenRoles(options: Option): js.Promise[_] = js.native
+    def tokenRoles(): js.Promise[js.Any] = js.native
+    def tokenRoles(options: Option): js.Promise[js.Any] = js.native
     
-    def unmount(): js.Promise[_] = js.native
-    def unmount(options: Option): js.Promise[_] = js.native
+    def unmount(): js.Promise[js.Any] = js.native
+    def unmount(options: Option): js.Promise[js.Any] = js.native
     
-    def unseal(): js.Promise[_] = js.native
-    def unseal(options: Option): js.Promise[_] = js.native
+    def unseal(): js.Promise[js.Any] = js.native
+    def unseal(options: Option): js.Promise[js.Any] = js.native
     
-    def updateApproleRoleId(): js.Promise[_] = js.native
-    def updateApproleRoleId(options: Option): js.Promise[_] = js.native
+    def updateApproleRoleId(): js.Promise[js.Any] = js.native
+    def updateApproleRoleId(options: Option): js.Promise[js.Any] = js.native
     
-    def userpassLogin(): js.Promise[_] = js.native
-    def userpassLogin(options: Option): js.Promise[_] = js.native
+    def userpassLogin(): js.Promise[js.Any] = js.native
+    def userpassLogin(options: Option): js.Promise[js.Any] = js.native
     
-    def write(path: String, data: js.Any): js.Promise[_] = js.native
-    def write(path: String, data: js.Any, requestOptions: Option): js.Promise[_] = js.native
+    def write(path: String, data: js.Any): js.Promise[js.Any] = js.native
+    def write(path: String, data: js.Any, requestOptions: Option): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait functionConf extends StObject {
     
-    var method: String = js.native
+    var method: String
     
-    var path: String = js.native
+    var path: String
     
-    var schema: js.UndefOr[Query] = js.native
+    var schema: js.UndefOr[Query] = js.undefined
   }
   object functionConf {
     

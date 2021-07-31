@@ -4,23 +4,24 @@ import typings.moment.mod.Moment
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("alks-node", "createIamKey")
+  @JSImport("alks-node", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createIamKey(
     account: Account,
     auth: Auth,
     duration: Double,
     opts: js.Object,
     callback: js.Function2[/* err */ Error, /* key */ KeyData, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createIamKey")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("alks-node", "createIamRole")
-  @js.native
+  @scala.inline
   def createIamRole(
     account: Account,
     auth: Auth,
@@ -29,10 +30,9 @@ object mod {
     includeDefaultPolicies: Boolean,
     opts: js.Object,
     callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createIamRole")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], roleName.asInstanceOf[js.Any], roleType.asInstanceOf[js.Any], includeDefaultPolicies.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("alks-node", "createIamTrustRole")
-  @js.native
+  @scala.inline
   def createIamTrustRole(
     account: Account,
     auth: Auth,
@@ -41,100 +41,90 @@ object mod {
     trustArn: String,
     opts: js.Object,
     callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createIamTrustRole")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], roleName.asInstanceOf[js.Any], roleType.asInstanceOf[js.Any], trustArn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("alks-node", "createKey")
-  @js.native
+  @scala.inline
   def createKey(
     account: Account,
     auth: Auth,
     duration: Double,
     opts: js.Object,
     callback: js.Function2[/* err */ Error, /* key */ KeyData, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("alks-node", "createLongTermKey")
-  @js.native
+  @scala.inline
   def createLongTermKey(
     account: Account,
     auth: Auth,
     iamUserName: String,
     opts: js.Object,
     callback: js.Function2[/* err */ Error, /* data */ LongTermKeyData, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createLongTermKey")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], iamUserName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("alks-node", "deleteIamRole")
-  @js.native
+  @scala.inline
   def deleteIamRole(
     account: Account,
     auth: Auth,
     roleName: String,
     opts: js.Object,
     callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteIamRole")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], roleName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("alks-node", "deleteLongTermKey")
-  @js.native
+  @scala.inline
   def deleteLongTermKey(
     account: Account,
     auth: Auth,
     iamUserName: String,
     opts: js.Object,
     callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteLongTermKey")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], iamUserName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("alks-node", "generateConsoleUrl")
-  @js.native
-  def generateConsoleUrl(key: AwsKey, opts: js.Object, callback: js.Function2[/* err */ Error, /* url */ String, Unit]): Unit = js.native
+  @scala.inline
+  def generateConsoleUrl(key: AwsKey, opts: js.Object, callback: js.Function2[/* err */ Error, /* url */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateConsoleUrl")(key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("alks-node", "getAccounts")
-  @js.native
+  @scala.inline
   def getAccounts(
     server: String,
     userid: String,
     auth: Auth,
     opts: js.Object,
     callback: js.Function2[/* err */ Error, /* accounts */ js.Array[AlksAccount], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccounts")(server.asInstanceOf[js.Any], userid.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("alks-node", "getDurations")
-  @js.native
+  @scala.inline
   def getDurations(
     account: Account,
     auth: Auth,
     opts: js.Object,
     callback: js.Function2[/* err */ Error, /* duration */ js.Array[Double], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDurations")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("alks-node", "getIamRoleTypes")
-  @js.native
+  @scala.inline
   def getIamRoleTypes(
     server: String,
     userid: String,
     auth: Auth,
     opts: js.Object,
     callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getIamRoleTypes")(server.asInstanceOf[js.Any], userid.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("alks-node", "refreshTokenToAccessToken")
-  @js.native
+  @scala.inline
   def refreshTokenToAccessToken(
     account: Account,
     token: String,
     opts: js.Object,
     callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshTokenToAccessToken")(account.asInstanceOf[js.Any], token.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Account extends StObject {
     
-    var alksAccount: String = js.native
+    var alksAccount: String
     
-    var alksRole: String = js.native
+    var alksRole: String
     
-    var server: String = js.native
+    var server: String
     
-    var userid: String = js.native
+    var userid: String
   }
   object Account {
     
@@ -161,14 +151,13 @@ object mod {
     }
   }
   
-  @js.native
   trait AlksAccount extends StObject {
     
-    var account: String = js.native
+    var account: String
     
-    var iam: js.UndefOr[Boolean] = js.native
+    var iam: js.UndefOr[Boolean] = js.undefined
     
-    var role: String = js.native
+    var role: String
   }
   object AlksAccount {
     
@@ -195,12 +184,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Auth extends StObject {
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object Auth {
     
@@ -227,14 +215,13 @@ object mod {
     }
   }
   
-  @js.native
   trait AwsKey extends StObject {
     
-    var accessKey: String = js.native
+    var accessKey: String
     
-    var secretKey: String = js.native
+    var secretKey: String
     
-    var sessionToken: String = js.native
+    var sessionToken: String
   }
   object AwsKey {
     
@@ -258,22 +245,21 @@ object mod {
     }
   }
   
-  @js.native
   trait KeyData extends StObject {
     
-    var accessKey: String = js.native
+    var accessKey: String
     
-    var alksAccount: String = js.native
+    var alksAccount: String
     
-    var alksRole: String = js.native
+    var alksRole: String
     
-    var expires: Moment = js.native
+    var expires: Moment
     
-    var secretKey: String = js.native
+    var secretKey: String
     
-    var sessionTime: String = js.native
+    var sessionTime: String
     
-    var sessionToken: String = js.native
+    var sessionToken: String
   }
   object KeyData {
     
@@ -317,20 +303,19 @@ object mod {
     }
   }
   
-  @js.native
   trait LongTermKeyData extends StObject {
     
-    var accessKey: String = js.native
+    var accessKey: String
     
-    var alksAccount: String = js.native
+    var alksAccount: String
     
-    var alksRole: String = js.native
+    var alksRole: String
     
-    var iamUserArn: String = js.native
+    var iamUserArn: String
     
-    var iamUserName: String = js.native
+    var iamUserName: String
     
-    var secretKey: String = js.native
+    var secretKey: String
   }
   object LongTermKeyData {
     

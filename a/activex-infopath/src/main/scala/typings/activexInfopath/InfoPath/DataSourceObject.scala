@@ -3,22 +3,20 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceObject extends StObject {
   
-  val DOM: IXMLDOMDocument = js.native
+  val DOM: IXMLDOMDocument
   
   @JSName("InfoPath.DataSourceObject_typekey")
-  var InfoPathDotDataSourceObject_typekey: DataSourceObject = js.native
+  var InfoPathDotDataSourceObject_typekey: DataSourceObject
   
-  val Name: String = js.native
+  val Name: String
   
-  def Query(): Unit = js.native
+  def Query(): Unit
   
-  val QueryAdapter: js.Any = js.native
+  val QueryAdapter: js.Any
 }
 object DataSourceObject {
   

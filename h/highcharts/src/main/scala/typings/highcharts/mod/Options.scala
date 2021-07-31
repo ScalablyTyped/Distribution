@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
@@ -14,16 +12,16 @@ trait Options extends StObject {
     * loaded. For a description of the module and information on its features,
     * see Highcharts Accessibility.
     */
-  var accessibility: js.UndefOr[AccessibilityOptions] = js.native
+  var accessibility: js.UndefOr[AccessibilityOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A basic type of an annotation.
     * It allows to add custom labels or shapes. The items can be tied to
     * points, axis coordinates or chart pixel coordinates.
     */
-  var annotations: js.UndefOr[js.Array[AnnotationsOptions]] = js.native
+  var annotations: js.UndefOr[js.Array[AnnotationsOptions]] = js.undefined
   
-  var boost: js.UndefOr[BoostOptions] = js.native
+  var boost: js.UndefOr[BoostOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The chart's caption, which will
@@ -31,12 +29,12 @@ trait Options extends StObject {
     * can be updated after chart initialization through the `Chart.update` or
     * `Chart.caption.update` methods.
     */
-  var caption: js.UndefOr[CaptionOptions] = js.native
+  var caption: js.UndefOr[CaptionOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) General options for the chart.
     */
-  var chart: js.UndefOr[ChartOptions] = js.native
+  var chart: js.UndefOr[ChartOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) A color axis for series. Visually, the
@@ -66,7 +64,7 @@ trait Options extends StObject {
     *
     * See the Axis object for programmatic access to the axis.
     */
-  var colorAxis: js.UndefOr[ColorAxisOptions | js.Array[ColorAxisOptions]] = js.native
+  var colorAxis: js.UndefOr[ColorAxisOptions | js.Array[ColorAxisOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array containing the default
@@ -88,7 +86,7 @@ trait Options extends StObject {
     * In Highcharts 2.x, the default colors were: (see online documentation for
     * example)
     */
-  var colors: js.UndefOr[js.Array[ColorString]] = js.native
+  var colors: js.UndefOr[js.Array[ColorString]] = js.undefined
   
   /**
     * (Gantt) The Pathfinder module allows you to define connections between
@@ -99,14 +97,14 @@ trait Options extends StObject {
     * Connector functionality requires Highcharts Gantt to be loaded. In Gantt
     * charts, the connectors are used to draw dependencies between tasks.
     */
-  var connectors: js.UndefOr[ConnectorsOptions] = js.native
+  var connectors: js.UndefOr[ConnectorsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Highchart by default puts a
     * credits label in the lower right corner of the chart. This can be changed
     * using these options.
     */
-  var credits: js.UndefOr[CreditsOptions] = js.native
+  var credits: js.UndefOr[CreditsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The Data module provides a
@@ -119,7 +117,7 @@ trait Options extends StObject {
     * Please note that the default way of adding data in Highcharts, without
     * the need of a module, is through the series._type_.data option.
     */
-  var data: js.UndefOr[DataOptions] = js.native
+  var data: js.UndefOr[DataOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for configuring markers
@@ -127,7 +125,7 @@ trait Options extends StObject {
     *
     * An example of the arrow marker: (see online documentation for example)
     */
-  var defs: js.UndefOr[DefsOptions | Dictionary[SVGDefinitionObject]] = js.native
+  var defs: js.UndefOr[DefsOptions | Dictionary[SVGDefinitionObject]] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Options for drill down, the concept of inspecting
@@ -138,15 +136,15 @@ trait Options extends StObject {
     * in the modules directory of the download package, or online at
     * code.highcharts.com/modules/drilldown.js.
     */
-  var drilldown: js.UndefOr[DrilldownOptions] = js.native
+  var drilldown: js.UndefOr[DrilldownOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the exporting
     * module. For an overview on the matter, see the docs.
     */
-  var exporting: js.UndefOr[ExportingOptions] = js.native
+  var exporting: js.UndefOr[ExportingOptions] = js.undefined
   
-  var global: js.UndefOr[GlobalOptions] = js.native
+  var global: js.UndefOr[GlobalOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Language object. The language
@@ -154,7 +152,7 @@ trait Options extends StObject {
     * Instead, use `Highcharts.setOptions` to set it before any chart is
     * initialized. (see online documentation for example)
     */
-  var lang: js.UndefOr[LangOptions] = js.native
+  var lang: js.UndefOr[LangOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The legend is a box containing a
@@ -165,7 +163,7 @@ trait Options extends StObject {
     * It is possible to override the symbol creator function and create custom
     * legend symbols.
     */
-  var legend: js.UndefOr[LegendOptions] = js.native
+  var legend: js.UndefOr[LegendOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The loading options control the
@@ -176,22 +174,22 @@ trait Options extends StObject {
     * data via an XHR connection. The "Loading..." text itself is not part of
     * this configuration object, but part of the `lang` object.
     */
-  var loading: js.UndefOr[LoadingOptions] = js.native
+  var loading: js.UndefOr[LoadingOptions] = js.undefined
   
-  var mapNavigation: js.UndefOr[MapNavigationOptions] = js.native
+  var mapNavigation: js.UndefOr[MapNavigationOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A collection of options for
     * buttons and menus appearing in the exporting module.
     */
-  var navigation: js.UndefOr[NavigationOptions] = js.native
+  var navigation: js.UndefOr[NavigationOptions] = js.undefined
   
   /**
     * (Highstock, Gantt) The navigator is a small series below the main series,
     * displaying a view of the entire data set. It provides tools to zoom in
     * and out on parts of the data as well as panning across the dataset.
     */
-  var navigator: js.UndefOr[NavigatorOptions] = js.native
+  var navigator: js.UndefOr[NavigatorOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Options for displaying a message like "No
@@ -199,13 +197,13 @@ trait Options extends StObject {
     * be loaded in the page. The actual text to display is set in the
     * lang.noData option.
     */
-  var noData: js.UndefOr[NoDataOptions] = js.native
+  var noData: js.UndefOr[NoDataOptions] = js.undefined
   
   /**
     * (Highcharts) The pane serves as a container for axes and backgrounds for
     * circular gauges and polar charts.
     */
-  var pane: js.UndefOr[PaneOptions] = js.native
+  var pane: js.UndefOr[PaneOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The plotOptions is a wrapper
@@ -219,7 +217,7 @@ trait Options extends StObject {
     * plotOptions of that type, for example `plotOptions.line`. Next, options
     * for one single series are given in the series array.
     */
-  var plotOptions: js.UndefOr[PlotOptions] = js.native
+  var plotOptions: js.UndefOr[PlotOptions] = js.undefined
   
   /**
     * (Highstock, Gantt) The range selector is a tool for selecting ranges to
@@ -227,14 +225,14 @@ trait Options extends StObject {
     * ranges in the chart, like 1 day, 1 week, 1 month etc. It also provides
     * input boxes where min and max dates can be manually input.
     */
-  var rangeSelector: js.UndefOr[RangeSelectorOptions] = js.native
+  var rangeSelector: js.UndefOr[RangeSelectorOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Allows setting a set of rules to
     * apply for different screen or chart sizes. Each rule specifies additional
     * chart options.
     */
-  var responsive: js.UndefOr[ResponsiveOptions] = js.native
+  var responsive: js.UndefOr[ResponsiveOptions] = js.undefined
   
   /**
     * (Highstock, Gantt) The scrollbar is a means of panning over the X axis of
@@ -249,21 +247,21 @@ trait Options extends StObject {
     * `.highcharts-scrollbar-arrow`, `.highcharts-scrollbar-button`,
     * `.highcharts-scrollbar-rifles` and `.highcharts-scrollbar-track`.
     */
-  var scrollbar: js.UndefOr[ScrollbarOptions] = js.native
+  var scrollbar: js.UndefOr[ScrollbarOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Series options for specific data
     * and the data itself. In TypeScript you have to cast the series options to
     * specific series types, to get all possible options for a series.
     */
-  var series: js.UndefOr[js.Array[SeriesOptionsType]] = js.native
+  var series: js.UndefOr[js.Array[SeriesOptionsType]] = js.undefined
   
   /**
     * (Highstock) Configure the stockTools gui strings in the chart. Requires
     * the [stockTools module]() to be loaded. For a description of the module
     * and information on its features, see [Highcharts StockTools]().
     */
-  var stockTools: js.UndefOr[StockToolsOptions] = js.native
+  var stockTools: js.UndefOr[StockToolsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The chart's subtitle. This can
@@ -271,7 +269,7 @@ trait Options extends StObject {
     * random text anywhere in the chart. The subtitle can be updated after
     * chart initialization through the `Chart.setTitle` method.
     */
-  var subtitle: js.UndefOr[SubtitleOptions] = js.native
+  var subtitle: js.UndefOr[SubtitleOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Time options that can apply
@@ -287,18 +285,18 @@ trait Options extends StObject {
     * Since v6.0.5, the time options were moved from the `global` obect to the
     * `time` object, and time options can be set on each individual chart.
     */
-  var time: js.UndefOr[TimeOptions] = js.native
+  var time: js.UndefOr[TimeOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The chart's main title.
     */
-  var title: js.UndefOr[TitleOptions] = js.native
+  var title: js.UndefOr[TitleOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the tooltip that
     * appears when the user hovers over a series or point.
     */
-  var tooltip: js.UndefOr[TooltipOptions] = js.native
+  var tooltip: js.UndefOr[TooltipOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The X axis or category axis.
@@ -308,7 +306,7 @@ trait Options extends StObject {
     *
     * See the Axis class for programmatic access to the axis.
     */
-  var xAxis: js.UndefOr[XAxisOptions | js.Array[XAxisOptions]] = js.native
+  var xAxis: js.UndefOr[XAxisOptions | js.Array[XAxisOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The Y axis or value axis.
@@ -318,14 +316,14 @@ trait Options extends StObject {
     *
     * See the Axis object for programmatic access to the axis.
     */
-  var yAxis: js.UndefOr[YAxisOptions | js.Array[YAxisOptions]] = js.native
+  var yAxis: js.UndefOr[YAxisOptions | js.Array[YAxisOptions]] = js.undefined
   
   /**
     * (Highcharts) The Z axis or depth axis for 3D plots.
     *
     * See the Axis class for programmatic access to the axis.
     */
-  var zAxis: js.UndefOr[ZAxisOptions | js.Array[ZAxisOptions]] = js.native
+  var zAxis: js.UndefOr[ZAxisOptions | js.Array[ZAxisOptions]] = js.undefined
 }
 object Options {
   

@@ -3,13 +3,13 @@ package typings.googleVisualization.google.visualization
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartBaseClearable extends ChartBase {
+trait ChartBaseClearable
+  extends StObject
+     with ChartBase {
   
-  def clearChart(): Unit = js.native
+  def clearChart(): Unit
 }
 object ChartBaseClearable {
   

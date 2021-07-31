@@ -20,7 +20,6 @@ import typings.semanticUiReact.semanticUiReactStrings.tiny
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ratingRatingMod {
@@ -55,14 +54,16 @@ object ratingRatingMod {
   }
   
   @js.native
-  trait RatingComponent extends ComponentClass[RatingProps, ComponentState] {
+  trait RatingComponent
+    extends StObject
+       with ComponentClass[RatingProps, ComponentState] {
     
     var Icon: ComponentClass[RatingIconProps, ComponentState] = js.native
   }
   
-  @js.native
   trait RatingProps
-    extends StrictRatingProps
+    extends StObject
+       with StrictRatingProps
        with /* key */ StringDictionary[js.Any]
   object RatingProps {
     
@@ -73,33 +74,32 @@ object ratingRatingMod {
     }
   }
   
-  @js.native
   trait StrictRatingProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * You can clear the rating by clicking on the current start rating.
       * By default a rating will be only clearable if there is 1 icon.
       * Setting to `true`/`false` will allow or disallow a user to clear their rating.
       */
-    var clearable: js.UndefOr[Boolean | auto] = js.native
+    var clearable: js.UndefOr[Boolean | auto] = js.undefined
     
     /** The initial rating value. */
-    var defaultRating: js.UndefOr[Double | String] = js.native
+    var defaultRating: js.UndefOr[Double | String] = js.undefined
     
     /** You can disable or enable interactive rating.  Makes a read-only rating. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** A rating can use a set of star or heart icons. */
-    var icon: js.UndefOr[star | heart] = js.native
+    var icon: js.UndefOr[star | heart] = js.undefined
     
     /** The total number of icons. */
-    var maxRating: js.UndefOr[Double | String] = js.native
+    var maxRating: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Called after user selects a new rating.
@@ -113,13 +113,13 @@ object ratingRatingMod {
           /* data */ RatingProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** The current number of active icons. */
-    var rating: js.UndefOr[Double | String] = js.native
+    var rating: js.UndefOr[Double | String] = js.undefined
     
     /** A progress bar can vary in size. */
-    var size: js.UndefOr[mini | tiny | small | large | huge | massive] = js.native
+    var size: js.UndefOr[mini | tiny | small | large | huge | massive] = js.undefined
   }
   object StrictRatingProps {
     

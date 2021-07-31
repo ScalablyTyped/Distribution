@@ -4,7 +4,6 @@ import typings.playcanvas.pc.callbacks.LockMouse
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [element] - The Element that the mouse events are attached to.
   */
 @js.native
-trait Mouse extends EventHandler {
+trait Mouse
+  extends StObject
+     with EventHandler {
   
   /**
     * Attach mouse events to an Element.
@@ -53,7 +54,7 @@ trait Mouse extends EventHandler {
     * @param [error] - Function called if the request for mouse lock is unsuccessful.
     */
   def enablePointerLock(): Unit = js.native
-  def enablePointerLock(success: js.UndefOr[scala.Nothing], error: LockMouse): Unit = js.native
+  def enablePointerLock(success: Unit, error: LockMouse): Unit = js.native
   def enablePointerLock(success: LockMouse): Unit = js.native
   def enablePointerLock(success: LockMouse, error: LockMouse): Unit = js.native
   

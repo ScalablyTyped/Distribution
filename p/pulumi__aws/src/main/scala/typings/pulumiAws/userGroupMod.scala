@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userGroupMod {
@@ -53,6 +52,10 @@ object userGroupMod {
   /* static members */
   object UserGroup {
     
+    @JSImport("@pulumi/aws/cognito/userGroup", "UserGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UserGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -62,55 +65,49 @@ object userGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito/userGroup", "UserGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): UserGroup = js.native
-    @JSImport("@pulumi/aws/cognito/userGroup", "UserGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UserGroup = js.native
-    @JSImport("@pulumi/aws/cognito/userGroup", "UserGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserGroupState): UserGroup = js.native
-    @JSImport("@pulumi/aws/cognito/userGroup", "UserGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserGroupState, opts: CustomResourceOptions): UserGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserGroupState): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserGroupState, opts: CustomResourceOptions): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
     
     /**
       * Returns true if the given object is an instance of UserGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito/userGroup", "UserGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean]
   }
   
-  @js.native
   trait UserGroupArgs extends StObject {
     
     /**
       * The description of the user group.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the user group.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The precedence of the user group.
       */
-    val precedence: js.UndefOr[Input[Double]] = js.native
+    val precedence: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN of the IAM role to be associated with the user group.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user pool ID.
       */
-    val userPoolId: Input[String] = js.native
+    val userPoolId: Input[String]
   }
   object UserGroupArgs {
     
@@ -152,33 +149,32 @@ object userGroupMod {
     }
   }
   
-  @js.native
   trait UserGroupState extends StObject {
     
     /**
       * The description of the user group.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the user group.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The precedence of the user group.
       */
-    val precedence: js.UndefOr[Input[Double]] = js.native
+    val precedence: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN of the IAM role to be associated with the user group.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user pool ID.
       */
-    val userPoolId: js.UndefOr[Input[String]] = js.native
+    val userPoolId: js.UndefOr[Input[String]] = js.undefined
   }
   object UserGroupState {
     

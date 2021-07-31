@@ -3,24 +3,31 @@ package typings.ansiFragments
 import typings.ansiFragments.ifragmentMod.IFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modifierMod {
   
+  @JSImport("ansi-fragments/build/fragments/Modifier", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ansi-fragments/build/fragments/Modifier", "Modifier")
   @js.native
-  class Modifier_ protected () extends IFragment {
+  class Modifier_ protected ()
+    extends StObject
+       with IFragment {
     def this(ansiModifier: AnsiModifier, children: js.Array[String | IFragment]) = this()
+    
+    /* CompleteClass */
+    override def build(): String = js.native
     
     val children: js.Any = js.native
     
     val modifier: js.Any = js.native
   }
   
-  @JSImport("ansi-fragments/build/fragments/Modifier", "modifier")
-  @js.native
-  def modifier(ansiModifier: AnsiModifier, children: (String | IFragment)*): Modifier_ = js.native
+  @scala.inline
+  def modifier(ansiModifier: AnsiModifier, children: (String | IFragment)*): Modifier_ = (^.asInstanceOf[js.Dynamic].applyDynamic("modifier")(ansiModifier.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Modifier_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ansiFragments.ansiFragmentsStrings.dim

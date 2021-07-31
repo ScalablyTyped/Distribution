@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sheets/v4", "sheets_v4.Resource$Spreadsheets$Developermetadata")
@@ -84,7 +83,7 @@ class ResourceSpreadsheetsDevelopermetadata protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDeveloperMetadata] = js.native
   def get(callback: BodyResponseCallback[SchemaDeveloperMetadata]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeveloperMetadata] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDeveloperMetadata] = js.native
   def get(params: ParamsResourceSpreadsheetsDevelopermetadataGet): GaxiosPromise[SchemaDeveloperMetadata] = js.native
   def get(
     params: ParamsResourceSpreadsheetsDevelopermetadataGet,
@@ -173,7 +172,7 @@ class ResourceSpreadsheetsDevelopermetadata protected () extends StObject {
     */
   def search(): GaxiosPromise[SchemaSearchDeveloperMetadataResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchDeveloperMetadataResponse]): Unit = js.native
-  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchDeveloperMetadataResponse] = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSearchDeveloperMetadataResponse] = js.native
   def search(params: ParamsResourceSpreadsheetsDevelopermetadataSearch): GaxiosPromise[SchemaSearchDeveloperMetadataResponse] = js.native
   def search(
     params: ParamsResourceSpreadsheetsDevelopermetadataSearch,

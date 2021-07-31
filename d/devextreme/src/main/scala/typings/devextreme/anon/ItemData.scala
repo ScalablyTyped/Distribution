@@ -3,23 +3,21 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.core.dxElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemData[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var itemData: js.UndefOr[js.Any] = js.native
+  var itemData: js.UndefOr[js.Any] = js.undefined
   
-  var itemElement: js.UndefOr[dxElement] = js.native
+  var itemElement: js.UndefOr[dxElement] = js.undefined
   
-  var itemIndex: js.UndefOr[Double] = js.native
+  var itemIndex: js.UndefOr[Double] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object ItemData {
   
@@ -30,7 +28,7 @@ object ItemData {
   }
   
   @scala.inline
-  implicit class ItemDataMutableBuilder[Self <: ItemData[_], T] (val x: Self with ItemData[T]) extends AnyVal {
+  implicit class ItemDataMutableBuilder[Self <: ItemData[?], T] (val x: Self & ItemData[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

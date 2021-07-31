@@ -7,34 +7,17 @@ import typings.recurlyRecurlyJs.tokenMod.TokenHandler
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bankAccountMod {
   
-  /* Inlined @recurly/recurly-js.@recurly/recurly-js/lib/bank-account.BillingInfoCommonFields & {  account_number :string,   account_number_confirmation :string} */
-  @js.native
-  trait AccountInfo extends StObject {
+  trait AccountInfo
+    extends StObject
+       with BillingInfoCommonFields {
     
-    var account_number: String = js.native
+    var account_number: String
     
-    var account_number_confirmation: String = js.native
-    
-    var address1: js.UndefOr[String] = js.native
-    
-    var address2: js.UndefOr[String] = js.native
-    
-    var city: js.UndefOr[String] = js.native
-    
-    var country: js.UndefOr[String] = js.native
-    
-    var name_on_account: String = js.native
-    
-    var postal_code: js.UndefOr[String] = js.native
-    
-    var state: js.UndefOr[String] = js.native
-    
-    var vat_number: js.UndefOr[String] = js.native
+    var account_number_confirmation: String
   }
   object AccountInfo {
     
@@ -52,84 +35,20 @@ object bankAccountMod {
       
       @scala.inline
       def setAccount_number_confirmation(value: String): Self = StObject.set(x, "account_number_confirmation", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress1Undefined: Self = StObject.set(x, "address1", js.undefined)
-      
-      @scala.inline
-      def setAddress2(value: String): Self = StObject.set(x, "address2", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress2Undefined: Self = StObject.set(x, "address2", js.undefined)
-      
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
-      
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
-      
-      @scala.inline
-      def setName_on_account(value: String): Self = StObject.set(x, "name_on_account", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPostal_codeUndefined: Self = StObject.set(x, "postal_code", js.undefined)
-      
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
-      
-      @scala.inline
-      def setVat_number(value: String): Self = StObject.set(x, "vat_number", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVat_numberUndefined: Self = StObject.set(x, "vat_number", js.undefined)
     }
   }
   
-  /* Inlined @recurly/recurly-js.@recurly/recurly-js/lib/bank-account.AccountInfo & {  type :'bacs',   sort_code :string} */
-  @js.native
-  trait BacsBillingInfo extends BillingInfo {
-    
-    var account_number: String = js.native
-    
-    var account_number_confirmation: String = js.native
-    
-    var address1: js.UndefOr[String] = js.native
-    
-    var address2: js.UndefOr[String] = js.native
-    
-    var city: js.UndefOr[String] = js.native
-    
-    var country: js.UndefOr[String] = js.native
-    
-    var name_on_account: String = js.native
-    
-    var postal_code: js.UndefOr[String] = js.native
+  trait BacsBillingInfo
+    extends StObject
+       with AccountInfo
+       with BillingInfo {
     
     /**
       * Bank identifier code for UK based banks.
       */
-    var sort_code: String = js.native
+    var sort_code: String
     
-    var state: js.UndefOr[String] = js.native
-    
-    var `type`: bacs = js.native
-    
-    var vat_number: js.UndefOr[String] = js.native
+    var `type`: bacs
   }
   object BacsBillingInfo {
     
@@ -138,11 +57,10 @@ object bankAccountMod {
       account_number: String,
       account_number_confirmation: String,
       name_on_account: String,
-      sort_code: String,
-      `type`: bacs
+      sort_code: String
     ): BacsBillingInfo = {
       val __obj = js.Dynamic.literal(account_number = account_number.asInstanceOf[js.Any], account_number_confirmation = account_number_confirmation.asInstanceOf[js.Any], name_on_account = name_on_account.asInstanceOf[js.Any], sort_code = sort_code.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("bacs")
       __obj.asInstanceOf[BacsBillingInfo]
     }
     
@@ -150,61 +68,10 @@ object bankAccountMod {
     implicit class BacsBillingInfoMutableBuilder[Self <: BacsBillingInfo] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAccount_number_confirmation(value: String): Self = StObject.set(x, "account_number_confirmation", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress1Undefined: Self = StObject.set(x, "address1", js.undefined)
-      
-      @scala.inline
-      def setAddress2(value: String): Self = StObject.set(x, "address2", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress2Undefined: Self = StObject.set(x, "address2", js.undefined)
-      
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
-      
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
-      
-      @scala.inline
-      def setName_on_account(value: String): Self = StObject.set(x, "name_on_account", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPostal_codeUndefined: Self = StObject.set(x, "postal_code", js.undefined)
-      
-      @scala.inline
       def setSort_code(value: String): Self = StObject.set(x, "sort_code", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
-      
-      @scala.inline
       def setType(value: bacs): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVat_number(value: String): Self = StObject.set(x, "vat_number", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVat_numberUndefined: Self = StObject.set(x, "vat_number", js.undefined)
     }
   }
   
@@ -228,31 +95,12 @@ object bankAccountMod {
     def token(data: HTMLFormElement, tokenHandler: TokenHandler): Unit = js.native
   }
   
-  /* Inlined @recurly/recurly-js.@recurly/recurly-js/lib/bank-account.AccountInfo & {  routing_number :string} */
-  @js.native
-  trait BankAccountBillingInfo extends BillingInfo {
+  trait BankAccountBillingInfo
+    extends StObject
+       with AccountInfo
+       with BillingInfo {
     
-    var account_number: String = js.native
-    
-    var account_number_confirmation: String = js.native
-    
-    var address1: js.UndefOr[String] = js.native
-    
-    var address2: js.UndefOr[String] = js.native
-    
-    var city: js.UndefOr[String] = js.native
-    
-    var country: js.UndefOr[String] = js.native
-    
-    var name_on_account: String = js.native
-    
-    var postal_code: js.UndefOr[String] = js.native
-    
-    var routing_number: String = js.native
-    
-    var state: js.UndefOr[String] = js.native
-    
-    var vat_number: js.UndefOr[String] = js.native
+    var routing_number: String
   }
   object BankAccountBillingInfo {
     
@@ -271,58 +119,7 @@ object bankAccountMod {
     implicit class BankAccountBillingInfoMutableBuilder[Self <: BankAccountBillingInfo] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAccount_number_confirmation(value: String): Self = StObject.set(x, "account_number_confirmation", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress1Undefined: Self = StObject.set(x, "address1", js.undefined)
-      
-      @scala.inline
-      def setAddress2(value: String): Self = StObject.set(x, "address2", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress2Undefined: Self = StObject.set(x, "address2", js.undefined)
-      
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
-      
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
-      
-      @scala.inline
-      def setName_on_account(value: String): Self = StObject.set(x, "name_on_account", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPostal_codeUndefined: Self = StObject.set(x, "postal_code", js.undefined)
-      
-      @scala.inline
       def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
-      
-      @scala.inline
-      def setVat_number(value: String): Self = StObject.set(x, "vat_number", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVat_numberUndefined: Self = StObject.set(x, "vat_number", js.undefined)
     }
   }
   
@@ -330,13 +127,12 @@ object bankAccountMod {
   
   type BankInfoHandler = js.Function2[/* err */ RecurlyError, /* bankInfo */ BankInfoPayload, Unit]
   
-  @js.native
   trait BankInfoOptions extends StObject {
     
     /**
       * The routing number for a bank (ex: ‘123456780’)
       */
-    var routingNumber: String = js.native
+    var routingNumber: String
   }
   object BankInfoOptions {
     
@@ -354,13 +150,12 @@ object bankAccountMod {
     }
   }
   
-  @js.native
   trait BankInfoPayload extends StObject {
     
     /**
       * Bank institution name (ex: Bank of Recurly)
       */
-    var bank_name: String = js.native
+    var bank_name: String
   }
   object BankInfoPayload {
     
@@ -378,33 +173,14 @@ object bankAccountMod {
     }
   }
   
-  /* Inlined @recurly/recurly-js.@recurly/recurly-js/lib/bank-account.AccountInfo & {  type :'becs',   branch_code :string} */
-  @js.native
-  trait BecsBillingInfo extends BillingInfo {
+  trait BecsBillingInfo
+    extends StObject
+       with AccountInfo
+       with BillingInfo {
     
-    var account_number: String = js.native
+    var branch_code: String
     
-    var account_number_confirmation: String = js.native
-    
-    var address1: js.UndefOr[String] = js.native
-    
-    var address2: js.UndefOr[String] = js.native
-    
-    var branch_code: String = js.native
-    
-    var city: js.UndefOr[String] = js.native
-    
-    var country: js.UndefOr[String] = js.native
-    
-    var name_on_account: String = js.native
-    
-    var postal_code: js.UndefOr[String] = js.native
-    
-    var state: js.UndefOr[String] = js.native
-    
-    var `type`: becs = js.native
-    
-    var vat_number: js.UndefOr[String] = js.native
+    var `type`: becs
   }
   object BecsBillingInfo {
     
@@ -413,11 +189,10 @@ object bankAccountMod {
       account_number: String,
       account_number_confirmation: String,
       branch_code: String,
-      name_on_account: String,
-      `type`: becs
+      name_on_account: String
     ): BecsBillingInfo = {
       val __obj = js.Dynamic.literal(account_number = account_number.asInstanceOf[js.Any], account_number_confirmation = account_number_confirmation.asInstanceOf[js.Any], branch_code = branch_code.asInstanceOf[js.Any], name_on_account = name_on_account.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("becs")
       __obj.asInstanceOf[BecsBillingInfo]
     }
     
@@ -425,61 +200,10 @@ object bankAccountMod {
     implicit class BecsBillingInfoMutableBuilder[Self <: BecsBillingInfo] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAccount_number_confirmation(value: String): Self = StObject.set(x, "account_number_confirmation", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress1Undefined: Self = StObject.set(x, "address1", js.undefined)
-      
-      @scala.inline
-      def setAddress2(value: String): Self = StObject.set(x, "address2", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress2Undefined: Self = StObject.set(x, "address2", js.undefined)
-      
-      @scala.inline
       def setBranch_code(value: String): Self = StObject.set(x, "branch_code", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
-      
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
-      
-      @scala.inline
-      def setName_on_account(value: String): Self = StObject.set(x, "name_on_account", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPostal_codeUndefined: Self = StObject.set(x, "postal_code", js.undefined)
-      
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
-      
-      @scala.inline
       def setType(value: becs): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVat_number(value: String): Self = StObject.set(x, "vat_number", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVat_numberUndefined: Self = StObject.set(x, "vat_number", js.undefined)
     }
   }
   
@@ -497,11 +221,10 @@ object bankAccountMod {
       account_number: String,
       account_number_confirmation: String,
       name_on_account: String,
-      sort_code: String,
-      `type`: bacs
+      sort_code: String
     ): typings.recurlyRecurlyJs.bankAccountMod.BacsBillingInfo = {
       val __obj = js.Dynamic.literal(account_number = account_number.asInstanceOf[js.Any], account_number_confirmation = account_number_confirmation.asInstanceOf[js.Any], name_on_account = name_on_account.asInstanceOf[js.Any], sort_code = sort_code.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("bacs")
       __obj.asInstanceOf[typings.recurlyRecurlyJs.bankAccountMod.BacsBillingInfo]
     }
     
@@ -521,11 +244,10 @@ object bankAccountMod {
       account_number: String,
       account_number_confirmation: String,
       branch_code: String,
-      name_on_account: String,
-      `type`: becs
+      name_on_account: String
     ): typings.recurlyRecurlyJs.bankAccountMod.BecsBillingInfo = {
       val __obj = js.Dynamic.literal(account_number = account_number.asInstanceOf[js.Any], account_number_confirmation = account_number_confirmation.asInstanceOf[js.Any], branch_code = branch_code.asInstanceOf[js.Any], name_on_account = name_on_account.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("becs")
       __obj.asInstanceOf[typings.recurlyRecurlyJs.bankAccountMod.BecsBillingInfo]
     }
     
@@ -536,24 +258,23 @@ object bankAccountMod {
     }
   }
   
-  @js.native
   trait BillingInfoCommonFields extends StObject {
     
-    var address1: js.UndefOr[String] = js.native
+    var address1: js.UndefOr[String] = js.undefined
     
-    var address2: js.UndefOr[String] = js.native
+    var address2: js.UndefOr[String] = js.undefined
     
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var name_on_account: String = js.native
+    var name_on_account: String
     
-    var postal_code: js.UndefOr[String] = js.native
+    var postal_code: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var vat_number: js.UndefOr[String] = js.native
+    var vat_number: js.UndefOr[String] = js.undefined
   }
   object BillingInfoCommonFields {
     
@@ -613,32 +334,17 @@ object bankAccountMod {
     }
   }
   
-  /* Inlined @recurly/recurly-js.@recurly/recurly-js/lib/bank-account.BillingInfoCommonFields & {  name_on_account :string,   iban :string} */
-  @js.native
-  trait SepaBillingInfo extends BillingInfo {
-    
-    var address1: js.UndefOr[String] = js.native
-    
-    var address2: js.UndefOr[String] = js.native
-    
-    var city: js.UndefOr[String] = js.native
-    
-    var country: js.UndefOr[String] = js.native
+  trait SepaBillingInfo
+    extends StObject
+       with BillingInfoCommonFields
+       with BillingInfo {
     
     /**
       * The International Bank Account Number, up to 34 alphanumeric characters comprising a country code; two check
       * digits; and a number that includes the domestic bank account number, branch identifier, and potential routing
       * information.
       */
-    var iban: String = js.native
-    
-    var name_on_account: String = js.native
-    
-    var postal_code: js.UndefOr[String] = js.native
-    
-    var state: js.UndefOr[String] = js.native
-    
-    var vat_number: js.UndefOr[String] = js.native
+    var iban: String
   }
   object SepaBillingInfo {
     
@@ -652,52 +358,7 @@ object bankAccountMod {
     implicit class SepaBillingInfoMutableBuilder[Self <: SepaBillingInfo] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress1Undefined: Self = StObject.set(x, "address1", js.undefined)
-      
-      @scala.inline
-      def setAddress2(value: String): Self = StObject.set(x, "address2", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddress2Undefined: Self = StObject.set(x, "address2", js.undefined)
-      
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
-      
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
-      
-      @scala.inline
       def setIban(value: String): Self = StObject.set(x, "iban", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setName_on_account(value: String): Self = StObject.set(x, "name_on_account", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPostal_codeUndefined: Self = StObject.set(x, "postal_code", js.undefined)
-      
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
-      
-      @scala.inline
-      def setVat_number(value: String): Self = StObject.set(x, "vat_number", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVat_numberUndefined: Self = StObject.set(x, "vat_number", js.undefined)
     }
   }
 }

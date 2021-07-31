@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConfigurationSetRequest extends StObject {
   
   /**
     * The name of the configuration set that you want to delete.
     */
-  var ConfigurationSetName: typings.awsSdk.pinpointemailMod.ConfigurationSetName = js.native
+  var ConfigurationSetName: typings.awsSdk.pinpointemailMod.ConfigurationSetName
 }
 object DeleteConfigurationSetRequest {
   

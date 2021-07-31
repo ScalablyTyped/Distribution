@@ -2,17 +2,15 @@ package typings.stormReactDiagrams.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var selected: Boolean = js.native
+  var selected: Boolean
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Type {
   

@@ -116,6 +116,7 @@ import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
+import typings.std.GlobalEventHandlersEventMap
 import typings.std.HTMLCanvasElement
 import typings.std.ImageData
 import typings.std.KeyboardEvent
@@ -131,10 +132,13 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMod {
+  
+  @JSImport("konva/types/Node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("konva/types/Node", "Node")
   @js.native
@@ -151,7 +155,7 @@ object nodeMod {
     
     var _batchingTransformChange: Boolean = js.native
     
-    var _cache: Map[String, _] = js.native
+    var _cache: Map[String, js.Any] = js.native
     
     def _calculate(name: js.Any, deps: js.Any, getter: js.Any): js.Any = js.native
     
@@ -161,9 +165,9 @@ object nodeMod {
     def _clearCaches(): Unit = js.native
     
     def _clearSelfAndDescendantCache(): Unit = js.native
-    def _clearSelfAndDescendantCache(attr: js.UndefOr[scala.Nothing], forceEvent: Boolean): Unit = js.native
     def _clearSelfAndDescendantCache(attr: String): Unit = js.native
     def _clearSelfAndDescendantCache(attr: String, forceEvent: Boolean): Unit = js.native
+    def _clearSelfAndDescendantCache(attr: Unit, forceEvent: Boolean): Unit = js.native
     
     def _clearTransform(): OffsetX = js.native
     
@@ -227,9 +231,9 @@ object nodeMod {
     var _needClearTransformCache: Boolean = js.native
     
     def _off(`type`: js.Any): Unit = js.native
-    def _off(`type`: js.Any, name: js.UndefOr[scala.Nothing], callback: js.Any): Unit = js.native
     def _off(`type`: js.Any, name: js.Any): Unit = js.native
     def _off(`type`: js.Any, name: js.Any, callback: js.Any): Unit = js.native
+    def _off(`type`: js.Any, name: Unit, callback: js.Any): Unit = js.native
     
     def _remove(): Unit = js.native
     
@@ -282,7 +286,7 @@ object nodeMod {
     def cache(): this.type = js.native
     def cache(config: DrawBorder): this.type = js.native
     
-    var children: Collection[_] = js.native
+    var children: Collection[js.Any] = js.native
     
     var className: String = js.native
     
@@ -320,12 +324,12 @@ object nodeMod {
     def draw(): this.type = js.native
     
     def drawHit(): Unit = js.native
-    def drawHit(canvas: js.UndefOr[scala.Nothing], top: Node[NodeConfig]): Unit = js.native
+    def drawHit(canvas: Unit, top: Node[NodeConfig]): Unit = js.native
     def drawHit(canvas: Canvas): Unit = js.native
     def drawHit(canvas: Canvas, top: Node[NodeConfig]): Unit = js.native
     
     def drawScene(): Unit = js.native
-    def drawScene(canvas: js.UndefOr[scala.Nothing], top: Node[NodeConfig]): Unit = js.native
+    def drawScene(canvas: Unit, top: Node[NodeConfig]): Unit = js.native
     def drawScene(canvas: Canvas): Unit = js.native
     def drawScene(canvas: Canvas, top: Node[NodeConfig]): Unit = js.native
     
@@ -362,19 +366,19 @@ object nodeMod {
     var filters_Original: GetSet[js.Array[Filter], this.type] = js.native
     
     def findAncestor(selector: js.Any): Node[NodeConfig] = js.native
-    def findAncestor(selector: js.Any, includeSelf: js.UndefOr[scala.Nothing], stopNode: js.Any): Node[NodeConfig] = js.native
     def findAncestor(selector: js.Any, includeSelf: js.Any): Node[NodeConfig] = js.native
     def findAncestor(selector: js.Any, includeSelf: js.Any, stopNode: js.Any): Node[NodeConfig] = js.native
+    def findAncestor(selector: js.Any, includeSelf: Unit, stopNode: js.Any): Node[NodeConfig] = js.native
     
     def findAncestors(selector: js.Any): js.Array[Node[NodeConfig]] = js.native
-    def findAncestors(selector: js.Any, includeSelf: js.UndefOr[scala.Nothing], stopNode: js.Any): js.Array[Node[NodeConfig]] = js.native
     def findAncestors(selector: js.Any, includeSelf: js.Any): js.Array[Node[NodeConfig]] = js.native
     def findAncestors(selector: js.Any, includeSelf: js.Any, stopNode: js.Any): js.Array[Node[NodeConfig]] = js.native
+    def findAncestors(selector: js.Any, includeSelf: Unit, stopNode: js.Any): js.Array[Node[NodeConfig]] = js.native
     
     def fire(eventType: js.Any): this.type = js.native
-    def fire(eventType: js.Any, evt: js.UndefOr[scala.Nothing], bubble: js.Any): this.type = js.native
     def fire(eventType: js.Any, evt: js.Any): this.type = js.native
     def fire(eventType: js.Any, evt: js.Any, bubble: js.Any): this.type = js.native
+    def fire(eventType: js.Any, evt: Unit, bubble: js.Any): this.type = js.native
     
     def getAbsoluteOpacity(): js.Any = js.native
     
@@ -397,7 +401,7 @@ object nodeMod {
     
     def getAttrs(): js.Any = js.native
     
-    def getChildren(): Collection[_] = js.native
+    def getChildren(): Collection[js.Any] = js.native
     
     def getClassName(): String = js.native
     
@@ -819,9 +823,9 @@ object nodeMod {
     var skew_Original: GetSet[Vector2d, this.type] = js.native
     
     def startDrag(): Unit = js.native
-    def startDrag(evt: js.UndefOr[scala.Nothing], bubbleEvent: Boolean): Unit = js.native
     def startDrag(evt: js.Any): Unit = js.native
     def startDrag(evt: js.Any, bubbleEvent: Boolean): Unit = js.native
+    def startDrag(evt: Unit, bubbleEvent: Boolean): Unit = js.native
     
     def stopDrag(): Unit = js.native
     def stopDrag(evt: js.Any): Unit = js.native
@@ -883,24 +887,23 @@ object nodeMod {
   /* static members */
   object Node {
     
-    @JSImport("konva/types/Node", "Node._createNode")
+    @JSImport("konva/types/Node", "Node")
     @js.native
-    def _createNode(obj: js.Any): js.Any = js.native
-    @JSImport("konva/types/Node", "Node._createNode")
-    @js.native
-    def _createNode(obj: js.Any, container: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("konva/types/Node", "Node.create")
-    @js.native
-    def create(data: js.Any): js.Any = js.native
-    @JSImport("konva/types/Node", "Node.create")
-    @js.native
-    def create(data: js.Any, container: js.Any): js.Any = js.native
+    @scala.inline
+    def _createNode(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def _createNode(obj: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def create(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def create(data: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
-  @JSImport("konva/types/Node", "_addName")
-  @js.native
-  def addName(node: js.Any, name: String): Unit = js.native
+  @scala.inline
+  def addName(node: js.Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_addName")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("konva/types/Node", "ids")
   @js.native
@@ -910,22 +913,21 @@ object nodeMod {
   @js.native
   val names: js.Any = js.native
   
-  @JSImport("konva/types/Node", "_removeId")
-  @js.native
-  def removeId(id: String, node: js.Any): Unit = js.native
+  @scala.inline
+  def removeId(id: String, node: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_removeId")(id.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("konva/types/Node", "_removeName")
-  @js.native
-  def removeName(name: String, _id: Double): Unit = js.native
+  @scala.inline
+  def removeName(name: String, _id: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_removeName")(name.asInstanceOf[js.Any], _id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait AnimTo extends NodeConfig {
+  trait AnimTo
+    extends StObject
+       with NodeConfig {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var onFinish: js.UndefOr[js.Function] = js.native
+    var onFinish: js.UndefOr[js.Function] = js.undefined
     
-    var onUpdate: js.UndefOr[js.Function] = js.native
+    var onUpdate: js.UndefOr[js.Function] = js.undefined
   }
   object AnimTo {
     
@@ -962,18 +964,17 @@ object nodeMod {
   
   type KonvaEventListener[This, EventType] = js.ThisFunction1[/* this */ This, /* ev */ KonvaEventObject[EventType], Unit]
   
-  @js.native
   trait KonvaEventObject[EventType] extends StObject {
     
-    var cancelBubble: Boolean = js.native
+    var cancelBubble: Boolean
     
-    var child: js.UndefOr[Node[NodeConfig]] = js.native
+    var child: js.UndefOr[Node[NodeConfig]] = js.undefined
     
-    var currentTarget: Node[NodeConfig] = js.native
+    var currentTarget: Node[NodeConfig]
     
-    var evt: EventType = js.native
+    var evt: EventType
     
-    var target: Shape[ShapeConfig] | Stage = js.native
+    var target: Shape[ShapeConfig] | Stage
   }
   object KonvaEventObject {
     
@@ -989,7 +990,7 @@ object nodeMod {
     }
     
     @scala.inline
-    implicit class KonvaEventObjectMutableBuilder[Self <: KonvaEventObject[_], EventType] (val x: Self with KonvaEventObject[EventType]) extends AnyVal {
+    implicit class KonvaEventObjectMutableBuilder[Self <: KonvaEventObject[?], EventType] (val x: Self & KonvaEventObject[EventType]) extends AnyVal {
       
       @scala.inline
       def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
@@ -1011,55 +1012,55 @@ object nodeMod {
     }
   }
   
-  @js.native
   trait NodeConfig
-    extends /* index */ StringDictionary[js.Any] {
+    extends StObject
+       with /* index */ StringDictionary[js.Any] {
     
-    var dragBoundFunc: js.UndefOr[js.ThisFunction1[/* this */ Node[this.type], /* pos */ Vector2d, Vector2d]] = js.native
+    var dragBoundFunc: js.UndefOr[js.ThisFunction1[/* this */ Node[this.type], /* pos */ Vector2d, Vector2d]] = js.undefined
     
-    var dragDistance: js.UndefOr[Double] = js.native
+    var dragDistance: js.UndefOr[Double] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var filters: js.UndefOr[js.Array[Filter]] = js.native
+    var filters: js.UndefOr[js.Array[Filter]] = js.undefined
     
-    var globalCompositeOperation: js.UndefOr[globalCompositeOperationType] = js.native
+    var globalCompositeOperation: js.UndefOr[globalCompositeOperationType] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var listening: js.UndefOr[Boolean] = js.native
+    var listening: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var offset: js.UndefOr[Vector2d] = js.native
+    var offset: js.UndefOr[Vector2d] = js.undefined
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Number] = js.native
+    var opacity: js.UndefOr[Number] = js.undefined
     
-    var preventDefault: js.UndefOr[Boolean] = js.native
+    var preventDefault: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var rotationDeg: js.UndefOr[Double] = js.native
+    var rotationDeg: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Vector2d] = js.native
+    var scale: js.UndefOr[Vector2d] = js.undefined
     
-    var scaleX: js.UndefOr[Double] = js.native
+    var scaleX: js.UndefOr[Double] = js.undefined
     
-    var scaleY: js.UndefOr[Double] = js.native
+    var scaleY: js.UndefOr[Double] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object NodeConfig {
     
@@ -1215,185 +1216,10 @@ object nodeMod {
     }
   }
   
-  /* Inlined std.GlobalEventHandlersEventMap & {[index: string] : any} */
-  @js.native
   trait NodeEventMap
-    extends /* index */ StringDictionary[js.Any] {
-    
-    var abort: UIEvent = js.native
-    
-    var animationcancel: AnimationEvent = js.native
-    
-    var animationend: AnimationEvent = js.native
-    
-    var animationiteration: AnimationEvent = js.native
-    
-    var animationstart: AnimationEvent = js.native
-    
-    var auxclick: MouseEvent = js.native
-    
-    var blur: FocusEvent = js.native
-    
-    var cancel: Event = js.native
-    
-    var canplay: Event = js.native
-    
-    var canplaythrough: Event = js.native
-    
-    var change: Event = js.native
-    
-    var click: MouseEvent = js.native
-    
-    var close: Event = js.native
-    
-    var contextmenu: MouseEvent = js.native
-    
-    var cuechange: Event = js.native
-    
-    var dblclick: MouseEvent = js.native
-    
-    var drag: DragEvent = js.native
-    
-    var dragend: DragEvent = js.native
-    
-    var dragenter: DragEvent = js.native
-    
-    var dragexit: Event = js.native
-    
-    var dragleave: DragEvent = js.native
-    
-    var dragover: DragEvent = js.native
-    
-    var dragstart: DragEvent = js.native
-    
-    var drop: DragEvent = js.native
-    
-    var durationchange: Event = js.native
-    
-    var emptied: Event = js.native
-    
-    var ended: Event = js.native
-    
-    var error: ErrorEvent = js.native
-    
-    var focus: FocusEvent = js.native
-    
-    var focusin: FocusEvent = js.native
-    
-    var focusout: FocusEvent = js.native
-    
-    var gotpointercapture: PointerEvent = js.native
-    
-    var input: Event = js.native
-    
-    var invalid: Event = js.native
-    
-    var keydown: KeyboardEvent = js.native
-    
-    var keypress: KeyboardEvent = js.native
-    
-    var keyup: KeyboardEvent = js.native
-    
-    var load: Event = js.native
-    
-    var loadeddata: Event = js.native
-    
-    var loadedmetadata: Event = js.native
-    
-    var loadstart: Event = js.native
-    
-    var lostpointercapture: PointerEvent = js.native
-    
-    var mousedown: MouseEvent = js.native
-    
-    var mouseenter: MouseEvent = js.native
-    
-    var mouseleave: MouseEvent = js.native
-    
-    var mousemove: MouseEvent = js.native
-    
-    var mouseout: MouseEvent = js.native
-    
-    var mouseover: MouseEvent = js.native
-    
-    var mouseup: MouseEvent = js.native
-    
-    var pause: Event = js.native
-    
-    var play: Event = js.native
-    
-    var playing: Event = js.native
-    
-    var pointercancel: PointerEvent = js.native
-    
-    var pointerdown: PointerEvent = js.native
-    
-    var pointerenter: PointerEvent = js.native
-    
-    var pointerleave: PointerEvent = js.native
-    
-    var pointermove: PointerEvent = js.native
-    
-    var pointerout: PointerEvent = js.native
-    
-    var pointerover: PointerEvent = js.native
-    
-    var pointerup: PointerEvent = js.native
-    
-    var progress: ProgressEvent[EventTarget] = js.native
-    
-    var ratechange: Event = js.native
-    
-    var reset: Event = js.native
-    
-    var resize: UIEvent = js.native
-    
-    var scroll: Event = js.native
-    
-    var securitypolicyviolation: SecurityPolicyViolationEvent = js.native
-    
-    var seeked: Event = js.native
-    
-    var seeking: Event = js.native
-    
-    var select: Event = js.native
-    
-    var selectionchange: Event = js.native
-    
-    var selectstart: Event = js.native
-    
-    var stalled: Event = js.native
-    
-    var submit: Event = js.native
-    
-    var suspend: Event = js.native
-    
-    var timeupdate: Event = js.native
-    
-    var toggle: Event = js.native
-    
-    var touchcancel: TouchEvent = js.native
-    
-    var touchend: TouchEvent = js.native
-    
-    var touchmove: TouchEvent = js.native
-    
-    var touchstart: TouchEvent = js.native
-    
-    var transitioncancel: TransitionEvent = js.native
-    
-    var transitionend: TransitionEvent = js.native
-    
-    var transitionrun: TransitionEvent = js.native
-    
-    var transitionstart: TransitionEvent = js.native
-    
-    var volumechange: Event = js.native
-    
-    var waiting: Event = js.native
-    
-    var wheel: WheelEvent = js.native
-  }
+    extends StObject
+       with GlobalEventHandlersEventMap
+       with /* index */ StringDictionary[js.Any]
   object NodeEventMap {
     
     @scala.inline
@@ -1488,271 +1314,6 @@ object nodeMod {
     ): NodeEventMap = {
       val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragexit = dragexit.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeEventMap]
-    }
-    
-    @scala.inline
-    implicit class NodeEventMapMutableBuilder[Self <: NodeEventMap] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setAbort(value: UIEvent): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAnimationcancel(value: AnimationEvent): Self = StObject.set(x, "animationcancel", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAnimationend(value: AnimationEvent): Self = StObject.set(x, "animationend", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAnimationiteration(value: AnimationEvent): Self = StObject.set(x, "animationiteration", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAnimationstart(value: AnimationEvent): Self = StObject.set(x, "animationstart", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAuxclick(value: MouseEvent): Self = StObject.set(x, "auxclick", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBlur(value: FocusEvent): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCancel(value: Event): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCanplay(value: Event): Self = StObject.set(x, "canplay", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCanplaythrough(value: Event): Self = StObject.set(x, "canplaythrough", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setChange(value: Event): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setClick(value: MouseEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setClose(value: Event): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setContextmenu(value: MouseEvent): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCuechange(value: Event): Self = StObject.set(x, "cuechange", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDblclick(value: MouseEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDrag(value: DragEvent): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDragend(value: DragEvent): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDragenter(value: DragEvent): Self = StObject.set(x, "dragenter", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDragexit(value: Event): Self = StObject.set(x, "dragexit", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDragleave(value: DragEvent): Self = StObject.set(x, "dragleave", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDragover(value: DragEvent): Self = StObject.set(x, "dragover", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDragstart(value: DragEvent): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDrop(value: DragEvent): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDurationchange(value: Event): Self = StObject.set(x, "durationchange", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setEmptied(value: Event): Self = StObject.set(x, "emptied", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setEnded(value: Event): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFocus(value: FocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFocusin(value: FocusEvent): Self = StObject.set(x, "focusin", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFocusout(value: FocusEvent): Self = StObject.set(x, "focusout", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setGotpointercapture(value: PointerEvent): Self = StObject.set(x, "gotpointercapture", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInput(value: Event): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInvalid(value: Event): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setKeydown(value: KeyboardEvent): Self = StObject.set(x, "keydown", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setKeypress(value: KeyboardEvent): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setKeyup(value: KeyboardEvent): Self = StObject.set(x, "keyup", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLoad(value: Event): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLoadeddata(value: Event): Self = StObject.set(x, "loadeddata", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLoadedmetadata(value: Event): Self = StObject.set(x, "loadedmetadata", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLoadstart(value: Event): Self = StObject.set(x, "loadstart", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLostpointercapture(value: PointerEvent): Self = StObject.set(x, "lostpointercapture", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMousedown(value: MouseEvent): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMouseenter(value: MouseEvent): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMouseleave(value: MouseEvent): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMousemove(value: MouseEvent): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMouseout(value: MouseEvent): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMouseover(value: MouseEvent): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMouseup(value: MouseEvent): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPause(value: Event): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPlay(value: Event): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPlaying(value: Event): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPointercancel(value: PointerEvent): Self = StObject.set(x, "pointercancel", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPointerdown(value: PointerEvent): Self = StObject.set(x, "pointerdown", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPointerenter(value: PointerEvent): Self = StObject.set(x, "pointerenter", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPointerleave(value: PointerEvent): Self = StObject.set(x, "pointerleave", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPointermove(value: PointerEvent): Self = StObject.set(x, "pointermove", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPointerout(value: PointerEvent): Self = StObject.set(x, "pointerout", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPointerover(value: PointerEvent): Self = StObject.set(x, "pointerover", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPointerup(value: PointerEvent): Self = StObject.set(x, "pointerup", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setProgress(value: ProgressEvent[EventTarget]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRatechange(value: Event): Self = StObject.set(x, "ratechange", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setReset(value: Event): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setResize(value: UIEvent): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setScroll(value: Event): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSecuritypolicyviolation(value: SecurityPolicyViolationEvent): Self = StObject.set(x, "securitypolicyviolation", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSeeked(value: Event): Self = StObject.set(x, "seeked", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSeeking(value: Event): Self = StObject.set(x, "seeking", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSelect(value: Event): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSelectionchange(value: Event): Self = StObject.set(x, "selectionchange", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSelectstart(value: Event): Self = StObject.set(x, "selectstart", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStalled(value: Event): Self = StObject.set(x, "stalled", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSubmit(value: Event): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSuspend(value: Event): Self = StObject.set(x, "suspend", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTimeupdate(value: Event): Self = StObject.set(x, "timeupdate", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setToggle(value: Event): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTouchcancel(value: TouchEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTouchend(value: TouchEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTouchmove(value: TouchEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTouchstart(value: TouchEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTransitioncancel(value: TransitionEvent): Self = StObject.set(x, "transitioncancel", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTransitionend(value: TransitionEvent): Self = StObject.set(x, "transitionend", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTransitionrun(value: TransitionEvent): Self = StObject.set(x, "transitionrun", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTransitionstart(value: TransitionEvent): Self = StObject.set(x, "transitionstart", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVolumechange(value: Event): Self = StObject.set(x, "volumechange", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setWaiting(value: Event): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setWheel(value: WheelEvent): Self = StObject.set(x, "wheel", value.asInstanceOf[js.Any])
     }
   }
   

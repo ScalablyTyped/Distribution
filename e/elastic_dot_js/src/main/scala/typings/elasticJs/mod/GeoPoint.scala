@@ -2,16 +2,17 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "GeoPoint")
 @js.native
-class GeoPoint protected () extends Geo {
+class GeoPoint protected ()
+  extends StObject
+     with Geo {
   /*
     Defines a point
     */
-  def this(p: js.Array[_]) = this()
+  def this(p: js.Array[js.Any]) = this()
   
   /*
     The type of ejs object.  For internal use only.
@@ -24,7 +25,7 @@ class GeoPoint protected () extends Geo {
     Example:
     [41.12, -71.34]
     */
-  def array(a: js.Array[_]): GeoPoint = js.native
+  def array(a: js.Array[js.Any]): GeoPoint = js.native
   
   /*
     Sets the GeoPoint as a GeoHash.  The hash is a string of

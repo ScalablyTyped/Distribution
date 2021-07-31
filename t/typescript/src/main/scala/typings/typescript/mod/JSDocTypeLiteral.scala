@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSDocTypeLiteral extends JSDocType {
+trait JSDocTypeLiteral
+  extends StObject
+     with JSDocType {
   
   /** If true, then this type literal represents an *array* of its type. */
   val isArrayType: Boolean = js.native

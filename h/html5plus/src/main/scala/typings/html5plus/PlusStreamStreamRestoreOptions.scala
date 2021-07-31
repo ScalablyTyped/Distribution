@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
   */
-@js.native
 trait PlusStreamStreamRestoreOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusStreamStreamRestoreOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var extras: js.UndefOr[js.Any] = js.native
+  var extras: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 应用启动界面样式
@@ -31,7 +29,7 @@ trait PlusStreamStreamRestoreOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var splash: js.UndefOr[String] = js.native
+  var splash: js.UndefOr[String] = js.undefined
   
   /**
     * 流应用恢复运行时启动界面配置参数
@@ -39,14 +37,14 @@ trait PlusStreamStreamRestoreOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var splashscreen: js.UndefOr[PlusStreamStreamRestoreSplashscreenOptions] = js.native
+  var splashscreen: js.UndefOr[PlusStreamStreamRestoreSplashscreenOptions] = js.undefined
   
   /**
     * 流应用首页窗口对象样式
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var styles: js.UndefOr[PlusStreamLaunchWebviewStyles] = js.native
+  var styles: js.UndefOr[PlusStreamLaunchWebviewStyles] = js.undefined
 }
 object PlusStreamStreamRestoreOptions {
   

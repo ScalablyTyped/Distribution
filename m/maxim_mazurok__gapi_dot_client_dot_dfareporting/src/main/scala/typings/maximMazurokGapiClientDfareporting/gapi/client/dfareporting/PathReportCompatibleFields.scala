@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathReportCompatibleFields extends StObject {
   
   /** Dimensions which are compatible to be selected in the "channelGroupings" section of the report. */
-  var channelGroupings: js.UndefOr[js.Array[Dimension]] = js.native
+  var channelGroupings: js.UndefOr[js.Array[Dimension]] = js.undefined
   
   /** Dimensions which are compatible to be selected in the "dimensions" section of the report. */
-  var dimensions: js.UndefOr[js.Array[Dimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
   
   /** The kind of resource this is, in this case dfareporting#pathReportCompatibleFields. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Metrics which are compatible to be selected in the "metricNames" section of the report. */
-  var metrics: js.UndefOr[js.Array[Metric]] = js.native
+  var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
   
   /** Dimensions which are compatible to be selected in the "pathFilters" section of the report. */
-  var pathFilters: js.UndefOr[js.Array[Dimension]] = js.native
+  var pathFilters: js.UndefOr[js.Array[Dimension]] = js.undefined
 }
 object PathReportCompatibleFields {
   

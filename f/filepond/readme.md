@@ -10,9 +10,9 @@ FilePond, Where files go to stretch their bits.
 | ------------------ | :-------------: |
 | Full name          | filepond |
 | Keywords           | javascript, file, upload, drag, drop, browse, paste, image, preview |
-| # releases         | 101 |
-| # dependents       | 53 |
-| # downloads        | 1939868 |
+| # releases         | 92 |
+| # dependents       | 58 |
+| # downloads        | 2053920 |
 | # stars            | 1 |
 
 ## Links

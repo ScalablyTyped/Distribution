@@ -4,31 +4,31 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVpcLinkMod {
   
-  @JSImport("@pulumi/aws/apigateway/getVpcLink", "getVpcLink")
+  @JSImport("@pulumi/aws/apigateway/getVpcLink", JSImport.Namespace)
   @js.native
-  def getVpcLink(args: GetVpcLinkArgs): js.Promise[GetVpcLinkResult] = js.native
-  @JSImport("@pulumi/aws/apigateway/getVpcLink", "getVpcLink")
-  @js.native
-  def getVpcLink(args: GetVpcLinkArgs, opts: InvokeOptions): js.Promise[GetVpcLinkResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVpcLink(args: GetVpcLinkArgs): js.Promise[GetVpcLinkResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcLink")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcLinkResult]]
+  @scala.inline
+  def getVpcLink(args: GetVpcLinkArgs, opts: InvokeOptions): js.Promise[GetVpcLinkResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcLink")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcLinkResult]]
+  
   trait GetVpcLinkArgs extends StObject {
     
     /**
       * The name of the API Gateway VPC Link to look up. If no API Gateway VPC Link is found with this name, an error will be returned.
       * If multiple API Gateway VPC Links are found with this name, an error will be returned.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetVpcLinkArgs {
     
@@ -52,40 +52,39 @@ object getVpcLinkMod {
     }
   }
   
-  @js.native
   trait GetVpcLinkResult extends StObject {
     
     /**
       * The description of the VPC link.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * Set to the ID of the found API Gateway VPC Link.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The status of the VPC link.
       */
-    val status: String = js.native
+    val status: String
     
     /**
       * The status message of the VPC link.
       */
-    val statusMessage: String = js.native
+    val statusMessage: String
     
     /**
       * Key-value map of resource tags
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The list of network load balancer arns in the VPC targeted by the VPC link. Currently AWS only supports 1 target.
       */
-    val targetArns: js.Array[String] = js.native
+    val targetArns: js.Array[String]
   }
   object GetVpcLinkResult {
     

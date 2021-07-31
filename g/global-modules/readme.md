@@ -10,9 +10,9 @@ The directory used by npm for globally installed npm modules.
 | ------------------ | :-------------: |
 | Full name          | global-modules |
 | Keywords           | directory, dirname, global, module, modules, package, path, prefix, resolve |
-| # releases         | 2 |
-| # dependents       | 275 |
-| # downloads        | 503337911 |
+| # releases         | 0 |
+| # dependents       | 289 |
+| # downloads        | 610430291 |
 | # stars            | 2 |
 
 ## Links

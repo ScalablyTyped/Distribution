@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePackagesFilter extends StObject {
   
   /**
     * Any field from PackageDetails.
     */
-  var Name: js.UndefOr[DescribePackagesFilterName] = js.native
+  var Name: js.UndefOr[DescribePackagesFilterName] = js.undefined
   
   /**
     * A list of values for the specified field.
     */
-  var Value: js.UndefOr[DescribePackagesFilterValues] = js.native
+  var Value: js.UndefOr[DescribePackagesFilterValues] = js.undefined
 }
 object DescribePackagesFilter {
   

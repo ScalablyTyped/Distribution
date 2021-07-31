@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to delete the text in a selected range.
   */
-@js.native
-trait DeleteCommand extends CommandWithSimpleStateBase {
+trait DeleteCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the DeleteCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object DeleteCommand {
   

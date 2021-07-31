@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHealthCheckStatusResponse extends StObject {
   
   /**
     * A list that contains one HealthCheckObservation element for each Amazon Route 53 health checker that is reporting a status about the health check endpoint.
     */
-  var HealthCheckObservations: typings.awsSdk.route53Mod.HealthCheckObservations = js.native
+  var HealthCheckObservations: typings.awsSdk.route53Mod.HealthCheckObservations
 }
 object GetHealthCheckStatusResponse {
   

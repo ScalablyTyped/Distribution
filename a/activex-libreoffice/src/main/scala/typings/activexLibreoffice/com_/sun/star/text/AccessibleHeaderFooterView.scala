@@ -15,16 +15,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible view of headers and footers.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleHeaderFooterView
-  extends XAccessibleContext
+  extends StObject
+     with XAccessibleContext
      with XAccessibleComponent
      with XAccessibleEventBroadcaster
 object AccessibleHeaderFooterView {

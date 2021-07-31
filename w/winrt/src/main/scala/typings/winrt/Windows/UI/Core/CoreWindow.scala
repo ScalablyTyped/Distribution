@@ -6,11 +6,11 @@ import typings.winrt.Windows.Foundation.Rect
 import typings.winrt.Windows.System.VirtualKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CoreWindow extends ICoreWindow
+trait CoreWindow
+  extends StObject
+     with ICoreWindow
 object CoreWindow {
   
   @scala.inline

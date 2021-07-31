@@ -2,25 +2,25 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeatmapSliderProperties extends WidgetProperties {
+trait HeatmapSliderProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The colorStops of the [HeatmapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html) to associate with the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html#stops)
     */
-  var stops: js.UndefOr[js.Array[HeatmapColorStopProperties]] = js.native
+  var stops: js.UndefOr[js.Array[HeatmapColorStopProperties]] = js.undefined
   
   /**
     * The view model for the Heatmap widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html#viewModel)
     */
-  var viewModel: js.UndefOr[HeatmapSliderViewModelProperties] = js.native
+  var viewModel: js.UndefOr[HeatmapSliderViewModelProperties] = js.undefined
 }
 object HeatmapSliderProperties {
   

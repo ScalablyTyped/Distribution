@@ -2,33 +2,31 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPropertiesParameterType extends StObject {
   
   /**
     * If true, returns accessor properties (with getter/setter) only; internal properties are not returned either.
     * @experimental
     */
-  var accessorPropertiesOnly: js.UndefOr[Boolean] = js.native
+  var accessorPropertiesOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether preview should be generated for the results.
     * @experimental
     */
-  var generatePreview: js.UndefOr[Boolean] = js.native
+  var generatePreview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifier of the object to return properties for.
     */
-  var objectId: RemoteObjectId = js.native
+  var objectId: RemoteObjectId
   
   /**
     * If true, returns properties belonging only to the element itself, not to its prototype chain.
     */
-  var ownProperties: js.UndefOr[Boolean] = js.native
+  var ownProperties: js.UndefOr[Boolean] = js.undefined
 }
 object GetPropertiesParameterType {
   

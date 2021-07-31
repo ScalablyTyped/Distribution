@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getParameterMod {
   
-  @JSImport("@pulumi/aws/ssm/getParameter", "getParameter")
+  @JSImport("@pulumi/aws/ssm/getParameter", JSImport.Namespace)
   @js.native
-  def getParameter(args: GetParameterArgs): js.Promise[GetParameterResult] = js.native
-  @JSImport("@pulumi/aws/ssm/getParameter", "getParameter")
-  @js.native
-  def getParameter(args: GetParameterArgs, opts: InvokeOptions): js.Promise[GetParameterResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getParameter(args: GetParameterArgs): js.Promise[GetParameterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameter")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetParameterResult]]
+  @scala.inline
+  def getParameter(args: GetParameterArgs, opts: InvokeOptions): js.Promise[GetParameterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParameter")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetParameterResult]]
+  
   trait GetParameterArgs extends StObject {
     
     /**
       * The name of the parameter.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Whether to return decrypted `SecureString` value. Defaults to `true`.
       */
-    val withDecryption: js.UndefOr[Boolean] = js.native
+    val withDecryption: js.UndefOr[Boolean] = js.undefined
   }
   object GetParameterArgs {
     
@@ -50,25 +50,24 @@ object getParameterMod {
     }
   }
   
-  @js.native
   trait GetParameterResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
-    val `type`: String = js.native
+    val `type`: String
     
-    val value: String = js.native
+    val value: String
     
-    val version: Double = js.native
+    val version: Double
     
-    val withDecryption: js.UndefOr[Boolean] = js.native
+    val withDecryption: js.UndefOr[Boolean] = js.undefined
   }
   object GetParameterResult {
     

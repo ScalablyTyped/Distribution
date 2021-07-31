@@ -2,25 +2,23 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Apps extends StObject {
   
-  var apps: js.Array[Events] = js.native
+  var apps: js.Array[Events]
   
-  var apps_url: String = js.native
+  var apps_url: String
   
-  var teams: js.Array[Membersurl] = js.native
+  var teams: js.Array[Membersurl]
   
-  var teams_url: String = js.native
+  var teams_url: String
   
-  var url: String = js.native
+  var url: String
   
-  var users: js.Array[Avatarurl] = js.native
+  var users: js.Array[Avatarurl]
   
-  var users_url: String = js.native
+  var users_url: String
 }
 object Apps {
   

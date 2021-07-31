@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vision/v1p1beta1", "vision_v1p1beta1.Resource$Files")
@@ -33,7 +32,7 @@ class ResourceFiles protected () extends StObject {
     */
   def asyncBatchAnnotate(): GaxiosPromise[SchemaOperation] = js.native
   def asyncBatchAnnotate(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def asyncBatchAnnotate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def asyncBatchAnnotate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def asyncBatchAnnotate(params: ParamsResourceFilesAsyncbatchannotate): GaxiosPromise[SchemaOperation] = js.native
   def asyncBatchAnnotate(params: ParamsResourceFilesAsyncbatchannotate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def asyncBatchAnnotate(

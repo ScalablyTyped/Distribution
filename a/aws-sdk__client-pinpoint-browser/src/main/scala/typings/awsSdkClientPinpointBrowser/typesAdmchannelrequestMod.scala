@@ -2,28 +2,26 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAdmchannelrequestMod {
   
-  @js.native
   trait ADMChannelRequest extends StObject {
     
     /**
       * The Client ID that you obtained from the Amazon App Distribution Portal.
       */
-    var ClientId: js.UndefOr[String] = js.native
+    var ClientId: js.UndefOr[String] = js.undefined
     
     /**
       * The Client Secret that you obtained from the Amazon App Distribution Portal.
       */
-    var ClientSecret: js.UndefOr[String] = js.native
+    var ClientSecret: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates whether or not the channel is enabled for sending messages.
       */
-    var Enabled: js.UndefOr[Boolean] = js.native
+    var Enabled: js.UndefOr[Boolean] = js.undefined
   }
   object ADMChannelRequest {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDomainEndpointOptionsResponse extends StObject {
   
   /**
     * The newly-configured domain endpoint options.
     */
-  var DomainEndpointOptions: js.UndefOr[DomainEndpointOptionsStatus] = js.native
+  var DomainEndpointOptions: js.UndefOr[DomainEndpointOptionsStatus] = js.undefined
 }
 object UpdateDomainEndpointOptionsResponse {
   

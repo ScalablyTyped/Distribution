@@ -2,28 +2,26 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsequenceParams extends StObject {
   
   /**
     * Names of facets to which automatic filtering must be applied; they must match the facet name of a facet value placeholder in the query pattern.
     */
-  val automaticFacetFilters: js.UndefOr[js.Array[AutomaticFacetFilter | String]] = js.native
+  val automaticFacetFilters: js.UndefOr[js.Array[AutomaticFacetFilter | String]] = js.undefined
   
   /**
     * Same syntax as automaticFacetFilters, but the engine treats the filters as optional.
     * Behaves like optionalFilters.
     */
-  val automaticOptionalFacetFilters: js.UndefOr[js.Array[AutomaticFacetFilter]] = js.native
+  val automaticOptionalFacetFilters: js.UndefOr[js.Array[AutomaticFacetFilter]] = js.undefined
   
   /**
     * When providing a string, it replaces the entire query string.
     * When providing an object, it describes incremental edits to be made to the query string (but you can’t do both).
     */
-  val query: js.UndefOr[ConsequenceQuery | String] = js.native
+  val query: js.UndefOr[ConsequenceQuery | String] = js.undefined
 }
 object ConsequenceParams {
   

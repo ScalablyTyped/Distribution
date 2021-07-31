@@ -2,17 +2,15 @@ package typings.easyXHeaders.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeapTotal extends StObject {
   
-  var heapTotal: Double = js.native
+  var heapTotal: Double
   
-  var heapUsed: Double = js.native
+  var heapUsed: Double
   
-  var rss: Double = js.native
+  var rss: Double
 }
 object HeapTotal {
   

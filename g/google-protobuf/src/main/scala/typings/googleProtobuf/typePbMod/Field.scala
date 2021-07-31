@@ -11,7 +11,6 @@ import typings.googleProtobuf.typePbMod.Field.Kind
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/type_pb", "Field")
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Field () extends Message {
   
   def addOptions(): Option = js.native
-  def addOptions(value: js.UndefOr[scala.Nothing], index: Double): Option = js.native
+  def addOptions(value: Unit, index: Double): Option = js.native
   def addOptions(value: Option): Option = js.native
   def addOptions(value: Option, index: Double): Option = js.native
   
@@ -79,23 +78,31 @@ object Field {
   object Cardinality extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Cardinality with Double] = js.native
+    def apply(value: Double): js.UndefOr[Cardinality & Double] = js.native
     
     @js.native
-    sealed trait CARDINALITY_OPTIONAL extends Cardinality
-    /* 1 */ val CARDINALITY_OPTIONAL: typings.googleProtobuf.typePbMod.Field.Cardinality.CARDINALITY_OPTIONAL with Double = js.native
+    sealed trait CARDINALITY_OPTIONAL
+      extends StObject
+         with Cardinality
+    /* 1 */ val CARDINALITY_OPTIONAL: typings.googleProtobuf.typePbMod.Field.Cardinality.CARDINALITY_OPTIONAL & Double = js.native
     
     @js.native
-    sealed trait CARDINALITY_REPEATED extends Cardinality
-    /* 3 */ val CARDINALITY_REPEATED: typings.googleProtobuf.typePbMod.Field.Cardinality.CARDINALITY_REPEATED with Double = js.native
+    sealed trait CARDINALITY_REPEATED
+      extends StObject
+         with Cardinality
+    /* 3 */ val CARDINALITY_REPEATED: typings.googleProtobuf.typePbMod.Field.Cardinality.CARDINALITY_REPEATED & Double = js.native
     
     @js.native
-    sealed trait CARDINALITY_REQUIRED extends Cardinality
-    /* 2 */ val CARDINALITY_REQUIRED: typings.googleProtobuf.typePbMod.Field.Cardinality.CARDINALITY_REQUIRED with Double = js.native
+    sealed trait CARDINALITY_REQUIRED
+      extends StObject
+         with Cardinality
+    /* 2 */ val CARDINALITY_REQUIRED: typings.googleProtobuf.typePbMod.Field.Cardinality.CARDINALITY_REQUIRED & Double = js.native
     
     @js.native
-    sealed trait CARDINALITY_UNKNOWN extends Cardinality
-    /* 0 */ val CARDINALITY_UNKNOWN: typings.googleProtobuf.typePbMod.Field.Cardinality.CARDINALITY_UNKNOWN with Double = js.native
+    sealed trait CARDINALITY_UNKNOWN
+      extends StObject
+         with Cardinality
+    /* 0 */ val CARDINALITY_UNKNOWN: typings.googleProtobuf.typePbMod.Field.Cardinality.CARDINALITY_UNKNOWN & Double = js.native
   }
   
   @js.native
@@ -105,92 +112,128 @@ object Field {
   object Kind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Kind with Double] = js.native
+    def apply(value: Double): js.UndefOr[Kind & Double] = js.native
     
     @js.native
-    sealed trait TYPE_BOOL extends Kind
-    /* 8 */ val TYPE_BOOL: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_BOOL with Double = js.native
+    sealed trait TYPE_BOOL
+      extends StObject
+         with Kind
+    /* 8 */ val TYPE_BOOL: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_BOOL & Double = js.native
     
     @js.native
-    sealed trait TYPE_BYTES extends Kind
-    /* 12 */ val TYPE_BYTES: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_BYTES with Double = js.native
+    sealed trait TYPE_BYTES
+      extends StObject
+         with Kind
+    /* 12 */ val TYPE_BYTES: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_BYTES & Double = js.native
     
     @js.native
-    sealed trait TYPE_DOUBLE extends Kind
-    /* 1 */ val TYPE_DOUBLE: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_DOUBLE with Double = js.native
+    sealed trait TYPE_DOUBLE
+      extends StObject
+         with Kind
+    /* 1 */ val TYPE_DOUBLE: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_DOUBLE & Double = js.native
     
     @js.native
-    sealed trait TYPE_ENUM extends Kind
-    /* 14 */ val TYPE_ENUM: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_ENUM with Double = js.native
+    sealed trait TYPE_ENUM
+      extends StObject
+         with Kind
+    /* 14 */ val TYPE_ENUM: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_ENUM & Double = js.native
     
     @js.native
-    sealed trait TYPE_FIXED32 extends Kind
-    /* 7 */ val TYPE_FIXED32: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_FIXED32 with Double = js.native
+    sealed trait TYPE_FIXED32
+      extends StObject
+         with Kind
+    /* 7 */ val TYPE_FIXED32: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_FIXED32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_FIXED64 extends Kind
-    /* 6 */ val TYPE_FIXED64: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_FIXED64 with Double = js.native
+    sealed trait TYPE_FIXED64
+      extends StObject
+         with Kind
+    /* 6 */ val TYPE_FIXED64: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_FIXED64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_FLOAT extends Kind
-    /* 2 */ val TYPE_FLOAT: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_FLOAT with Double = js.native
+    sealed trait TYPE_FLOAT
+      extends StObject
+         with Kind
+    /* 2 */ val TYPE_FLOAT: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_FLOAT & Double = js.native
     
     @js.native
-    sealed trait TYPE_GROUP extends Kind
-    /* 10 */ val TYPE_GROUP: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_GROUP with Double = js.native
+    sealed trait TYPE_GROUP
+      extends StObject
+         with Kind
+    /* 10 */ val TYPE_GROUP: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_GROUP & Double = js.native
     
     @js.native
-    sealed trait TYPE_INT32 extends Kind
-    /* 5 */ val TYPE_INT32: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_INT32 with Double = js.native
+    sealed trait TYPE_INT32
+      extends StObject
+         with Kind
+    /* 5 */ val TYPE_INT32: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_INT32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_INT64 extends Kind
-    /* 3 */ val TYPE_INT64: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_INT64 with Double = js.native
+    sealed trait TYPE_INT64
+      extends StObject
+         with Kind
+    /* 3 */ val TYPE_INT64: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_INT64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_MESSAGE extends Kind
-    /* 11 */ val TYPE_MESSAGE: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_MESSAGE with Double = js.native
+    sealed trait TYPE_MESSAGE
+      extends StObject
+         with Kind
+    /* 11 */ val TYPE_MESSAGE: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_MESSAGE & Double = js.native
     
     @js.native
-    sealed trait TYPE_SFIXED32 extends Kind
-    /* 15 */ val TYPE_SFIXED32: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_SFIXED32 with Double = js.native
+    sealed trait TYPE_SFIXED32
+      extends StObject
+         with Kind
+    /* 15 */ val TYPE_SFIXED32: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_SFIXED32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_SFIXED64 extends Kind
-    /* 16 */ val TYPE_SFIXED64: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_SFIXED64 with Double = js.native
+    sealed trait TYPE_SFIXED64
+      extends StObject
+         with Kind
+    /* 16 */ val TYPE_SFIXED64: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_SFIXED64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_SINT32 extends Kind
-    /* 17 */ val TYPE_SINT32: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_SINT32 with Double = js.native
+    sealed trait TYPE_SINT32
+      extends StObject
+         with Kind
+    /* 17 */ val TYPE_SINT32: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_SINT32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_SINT64 extends Kind
-    /* 18 */ val TYPE_SINT64: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_SINT64 with Double = js.native
+    sealed trait TYPE_SINT64
+      extends StObject
+         with Kind
+    /* 18 */ val TYPE_SINT64: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_SINT64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_STRING extends Kind
-    /* 9 */ val TYPE_STRING: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_STRING with Double = js.native
+    sealed trait TYPE_STRING
+      extends StObject
+         with Kind
+    /* 9 */ val TYPE_STRING: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_STRING & Double = js.native
     
     @js.native
-    sealed trait TYPE_UINT32 extends Kind
-    /* 13 */ val TYPE_UINT32: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_UINT32 with Double = js.native
+    sealed trait TYPE_UINT32
+      extends StObject
+         with Kind
+    /* 13 */ val TYPE_UINT32: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_UINT32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_UINT64 extends Kind
-    /* 4 */ val TYPE_UINT64: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_UINT64 with Double = js.native
+    sealed trait TYPE_UINT64
+      extends StObject
+         with Kind
+    /* 4 */ val TYPE_UINT64: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_UINT64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_UNKNOWN extends Kind
-    /* 0 */ val TYPE_UNKNOWN: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_UNKNOWN with Double = js.native
+    sealed trait TYPE_UNKNOWN
+      extends StObject
+         with Kind
+    /* 0 */ val TYPE_UNKNOWN: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_UNKNOWN & Double = js.native
   }
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Field.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): Field = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Field]
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Field.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: Field, reader: BinaryReader): Field = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: Field, reader: BinaryReader): Field = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Field]
   
   @JSImport("google-protobuf/google/protobuf/type_pb", "Field.extensions")
   @js.native
@@ -205,36 +248,33 @@ object Field {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Field.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: Field, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: Field, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Field.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: Field): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: Field): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var cardinality: Cardinality = js.native
+    var cardinality: Cardinality
     
-    var defaultValue: String = js.native
+    var defaultValue: String
     
-    var jsonName: String = js.native
+    var jsonName: String
     
-    var kind: Kind = js.native
+    var kind: Kind
     
-    var name: String = js.native
+    var name: String
     
-    var number: Double = js.native
+    var number: Double
     
-    var oneofIndex: Double = js.native
+    var oneofIndex: Double
     
-    var optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject] = js.native
+    var optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]
     
-    var packed: Boolean = js.native
+    var packed: Boolean
     
-    var typeUrl: String = js.native
+    var typeUrl: String
   }
   object AsObject {
     

@@ -2,17 +2,15 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrencyCode extends StObject {
   
-  var currencyCode: String = js.native
+  var currencyCode: String
   
-  var totalPrice: String = js.native
+  var totalPrice: String
   
-  var totalPriceStatus: String = js.native
+  var totalPriceStatus: String
 }
 object CurrencyCode {
   

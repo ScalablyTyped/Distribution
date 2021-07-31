@@ -2,17 +2,15 @@ package typings.pixiJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoPreventDefault extends StObject {
   
-  var autoPreventDefault: js.UndefOr[Boolean] = js.native
+  var autoPreventDefault: js.UndefOr[Boolean] = js.undefined
   
-  var interactionFrequency: js.UndefOr[Double] = js.native
+  var interactionFrequency: js.UndefOr[Double] = js.undefined
   
-  var useSystemTicker: js.UndefOr[Double] = js.native
+  var useSystemTicker: js.UndefOr[Double] = js.undefined
 }
 object AutoPreventDefault {
   

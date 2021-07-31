@@ -3,39 +3,35 @@ package typings.gsap.gsap
 import typings.gsap.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.gsap.gsap.Timeline because Already inherited */ @js.native
-trait TimelineMax extends TimelineLite {
+trait TimelineMax
+  extends StObject
+     with TimelineLite {
   
   def addCallback(callback: js.Function1[/* repeated */ js.Any, Unit], position: js.Any): TimelineMax = js.native
+  def addCallback(callback: js.Function1[/* repeated */ js.Any, Unit], position: js.Any, params: js.Array[js.Any]): TimelineMax = js.native
   def addCallback(
     callback: js.Function1[/* repeated */ js.Any, Unit],
     position: js.Any,
-    params: js.UndefOr[scala.Nothing],
+    params: js.Array[js.Any],
     scope: js.Any
   ): TimelineMax = js.native
-  def addCallback(callback: js.Function1[/* repeated */ js.Any, Unit], position: js.Any, params: js.Array[_]): TimelineMax = js.native
-  def addCallback(
-    callback: js.Function1[/* repeated */ js.Any, Unit],
-    position: js.Any,
-    params: js.Array[_],
-    scope: js.Any
-  ): TimelineMax = js.native
+  def addCallback(callback: js.Function1[/* repeated */ js.Any, Unit], position: js.Any, params: Unit, scope: js.Any): TimelineMax = js.native
   
   def currentLabel(): String = js.native
   def currentLabel(value: String): TimelineMax = js.native
   
   def getActive(): Tween | js.Array[Timeline] = js.native
-  def getActive(nested: js.UndefOr[scala.Nothing], tweens: js.UndefOr[scala.Nothing], timelines: Boolean): Tween | js.Array[Timeline] = js.native
-  def getActive(nested: js.UndefOr[scala.Nothing], tweens: Boolean): Tween | js.Array[Timeline] = js.native
-  def getActive(nested: js.UndefOr[scala.Nothing], tweens: Boolean, timelines: Boolean): Tween | js.Array[Timeline] = js.native
   def getActive(nested: Boolean): Tween | js.Array[Timeline] = js.native
-  def getActive(nested: Boolean, tweens: js.UndefOr[scala.Nothing], timelines: Boolean): Tween | js.Array[Timeline] = js.native
   def getActive(nested: Boolean, tweens: Boolean): Tween | js.Array[Timeline] = js.native
   def getActive(nested: Boolean, tweens: Boolean, timelines: Boolean): Tween | js.Array[Timeline] = js.native
+  def getActive(nested: Boolean, tweens: Unit, timelines: Boolean): Tween | js.Array[Timeline] = js.native
+  def getActive(nested: Unit, tweens: Boolean): Tween | js.Array[Timeline] = js.native
+  def getActive(nested: Unit, tweens: Boolean, timelines: Boolean): Tween | js.Array[Timeline] = js.native
+  def getActive(nested: Unit, tweens: Unit, timelines: Boolean): Tween | js.Array[Timeline] = js.native
   
   def getLabelAfter(time: Double): String = js.native
   

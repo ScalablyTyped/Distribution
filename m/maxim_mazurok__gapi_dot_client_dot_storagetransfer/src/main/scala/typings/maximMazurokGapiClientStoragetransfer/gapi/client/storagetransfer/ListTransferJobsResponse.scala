@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTransferJobsResponse extends StObject {
   
   /** The list next page token. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** A list of transfer jobs. */
-  var transferJobs: js.UndefOr[js.Array[TransferJob]] = js.native
+  var transferJobs: js.UndefOr[js.Array[TransferJob]] = js.undefined
 }
 object ListTransferJobsResponse {
   

@@ -2,15 +2,13 @@ package typings.hapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bind extends StObject {
   
-  var bind: js.Object = js.native
+  var bind: js.Object
   
-  var files: RelativeTo = js.native
+  var files: RelativeTo
 }
 object Bind {
   

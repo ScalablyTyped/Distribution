@@ -2,25 +2,36 @@ package typings.tabris.mod
 
 import typings.tabris.Blob
 import typings.tabris.tabrisStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tabris", "Image")
 @js.native
-class Image protected () extends _ImageValue {
+class Image protected ()
+  extends StObject
+     with _ImageValue {
   def this(imageLike: ImageLikeObject) = this()
+  
+  /**
+    * Tests if the given value is a `Image` instance that is deeply equal to this one.
+    * @param value
+    */
+  def equals(value: Image): Boolean = js.native
+  
   /**
     * Image height in dip. Extracted from the image file when 'auto'.
     * @constant
     */
   val height: Double | auto = js.native
+  
   /**
     * Image scale factor - the image will be scaled down by this factor. See
     * [ImageLikeObject](../types.md#imagelikeobject) for details
     * @constant
     */
   val scale: Double | auto = js.native
+  
   /**
     * As a string this is a file system path, relative path or URL. [Data
     * URIs](https://en.wikipedia.org/wiki/Data_URI_scheme) are also supported. Relative paths are resolved
@@ -32,39 +43,41 @@ class Image protected () extends _ImageValue {
     * @constant
     */
   val src: String | ImageBitmap | Blob = js.native
+  
   /**
     * Image width in dip. Extracted from the image file when 'auto'.
     * @constant
     */
   val width: Double | auto = js.native
-  /**
-    * Tests if the given value is a `Image` instance that is deeply equal to this one.
-    * @param value
-    */
-  def equals(value: Image): Boolean = js.native
 }
-
 /* static members */
-@JSImport("tabris", "Image")
-@js.native
-object Image extends js.Object {
+object Image {
+  
+  @JSImport("tabris", "Image")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new instance of Image using any valid Image expression. For any other value, including
     * `null`, the method throws.
     * @param imageValue The value to create an Image instance from. See [ImageValue](../types.html#imagevalue)
     */
-  def from(imageValue: ImageValue): Image = js.native
+  @scala.inline
+  def from(imageValue: ImageValue): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(imageValue.asInstanceOf[js.Any]).asInstanceOf[Image]
+  
   /**
     * Returns true if value is an ImageValue. This includes `null`. Use this to check if a value will be
     * accepted by an image property. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  def isImageValue(value: js.Any): /* is tabris.tabris.ImageValue */ Boolean = js.native
+  @scala.inline
+  def isImageValue(value: js.Any): /* is tabris.tabris.ImageValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImageValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ImageValue */ Boolean]
+  
   /**
     * Returns true if value is a valid ImageValue. This excludes `null`. Use this to check if a value will
     * be accepted by Image.from. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  def isValidImageValue(value: js.Any): /* is tabris.tabris.ImageValue */ Boolean = js.native
+  @scala.inline
+  def isValidImageValue(value: js.Any): /* is tabris.tabris.ImageValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidImageValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ImageValue */ Boolean]
 }
-

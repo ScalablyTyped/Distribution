@@ -3,19 +3,17 @@ package typings.cadesplugin.CAPICOM
 import typings.cadesplugin.cadespluginNumbers.`128`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyUsagePlugin extends StObject {
   
-  val CAPICOM_DIGITAL_SIGNATURE_KEY_USAGE: `128` = js.native
+  val CAPICOM_DIGITAL_SIGNATURE_KEY_USAGE: `128`
 }
 object KeyUsagePlugin {
   
   @scala.inline
-  def apply(CAPICOM_DIGITAL_SIGNATURE_KEY_USAGE: `128`): KeyUsagePlugin = {
-    val __obj = js.Dynamic.literal(CAPICOM_DIGITAL_SIGNATURE_KEY_USAGE = CAPICOM_DIGITAL_SIGNATURE_KEY_USAGE.asInstanceOf[js.Any])
+  def apply(): KeyUsagePlugin = {
+    val __obj = js.Dynamic.literal(CAPICOM_DIGITAL_SIGNATURE_KEY_USAGE = 128)
     __obj.asInstanceOf[KeyUsagePlugin]
   }
   

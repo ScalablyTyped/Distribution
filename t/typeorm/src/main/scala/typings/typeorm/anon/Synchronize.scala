@@ -3,19 +3,17 @@ package typings.typeorm.anon
 import typings.typeorm.typeormBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Synchronize extends StObject {
   
-  var synchronize: `false` = js.native
+  var synchronize: `false`
 }
 object Synchronize {
   
   @scala.inline
-  def apply(synchronize: `false`): Synchronize = {
-    val __obj = js.Dynamic.literal(synchronize = synchronize.asInstanceOf[js.Any])
+  def apply(): Synchronize = {
+    val __obj = js.Dynamic.literal(synchronize = false)
     __obj.asInstanceOf[Synchronize]
   }
   

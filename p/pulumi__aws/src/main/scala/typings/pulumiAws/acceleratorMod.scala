@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object acceleratorMod {
@@ -27,7 +26,7 @@ object acceleratorMod {
       */
     def this(name: String) = this()
     def this(name: String, args: AcceleratorArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: AcceleratorArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -73,6 +72,10 @@ object acceleratorMod {
   /* static members */
   object Accelerator {
     
+    @JSImport("@pulumi/aws/globalaccelerator/accelerator", "Accelerator")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Accelerator resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -82,55 +85,49 @@ object acceleratorMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/globalaccelerator/accelerator", "Accelerator.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Accelerator = js.native
-    @JSImport("@pulumi/aws/globalaccelerator/accelerator", "Accelerator.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Accelerator = js.native
-    @JSImport("@pulumi/aws/globalaccelerator/accelerator", "Accelerator.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AcceleratorState): Accelerator = js.native
-    @JSImport("@pulumi/aws/globalaccelerator/accelerator", "Accelerator.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AcceleratorState, opts: CustomResourceOptions): Accelerator = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AcceleratorState): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AcceleratorState, opts: CustomResourceOptions): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
     
     /**
       * Returns true if the given object is an instance of Accelerator.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/globalaccelerator/accelerator", "Accelerator.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/accelerator.Accelerator */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/accelerator.Accelerator */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/accelerator.Accelerator */ Boolean]
   }
   
-  @js.native
   trait AcceleratorArgs extends StObject {
     
     /**
       * The attributes of the accelerator. Fields documented below.
       */
-    val attributes: js.UndefOr[Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorAttributes]] = js.native
+    val attributes: js.UndefOr[Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorAttributes]] = js.undefined
     
     /**
       * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The value for the address type must be `IPV4`.
       */
-    val ipAddressType: js.UndefOr[Input[String]] = js.native
+    val ipAddressType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the accelerator.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AcceleratorArgs {
     
@@ -175,13 +172,12 @@ object acceleratorMod {
     }
   }
   
-  @js.native
   trait AcceleratorState extends StObject {
     
     /**
       * The attributes of the accelerator. Fields documented below.
       */
-    val attributes: js.UndefOr[Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorAttributes]] = js.native
+    val attributes: js.UndefOr[Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorAttributes]] = js.undefined
     
     /**
       * The DNS name of the accelerator. For example, `a5d53ff5ee6bca4ce.awsglobalaccelerator.com`.
@@ -189,36 +185,36 @@ object acceleratorMod {
       * route an [Alias Resource Record Set](https://docs.aws.amazon.com/Route53/latest/APIReference/API_AliasTarget.html) to the Global Accelerator. This attribute
       * is simply an alias for the zone ID `Z2BJ6XQ5FK7U4H`.
       */
-    val dnsName: js.UndefOr[Input[String]] = js.native
+    val dnsName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val hostedZoneId: js.UndefOr[Input[String]] = js.native
+    val hostedZoneId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The value for the address type must be `IPV4`.
       */
-    val ipAddressType: js.UndefOr[Input[String]] = js.native
+    val ipAddressType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * IP address set associated with the accelerator.
       */
     val ipSets: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorIpSet]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the accelerator.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AcceleratorState {
     

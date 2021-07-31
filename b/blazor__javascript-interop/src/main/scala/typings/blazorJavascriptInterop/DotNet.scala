@@ -2,7 +2,6 @@ package typings.blazorJavascriptInterop
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DotNet {
@@ -10,7 +9,6 @@ object DotNet {
   /**
     * Represents the .NET instance passed by reference to JavaScript.
     */
-  @js.native
   trait DotNetObject extends StObject {
     
     /**
@@ -21,7 +19,7 @@ object DotNet {
       * @param args Arguments to pass to the method, each of which must be JSON-serializable.
       * @returns The result of the operation.
       */
-    def invokeMethod[T](methodIdentifier: String, args: js.Any*): T = js.native
+    def invokeMethod[T](methodIdentifier: String, args: js.Any*): T
     
     /**
       * Invokes the specified .NET instance public method asynchronously.
@@ -30,7 +28,7 @@ object DotNet {
       * @param args Arguments to pass to the method, each of which must be JSON-serializable.
       * @returns A promise representing the result of the operation.
       */
-    def invokeMethodAsync[T](methodIdentifier: String, args: js.Any*): js.Promise[T] = js.native
+    def invokeMethodAsync[T](methodIdentifier: String, args: js.Any*): js.Promise[T]
   }
   object DotNetObject {
     

@@ -2,77 +2,75 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dock extends StObject {
   
   // Methods
   /** Show the dock and focus its active Pane. */
-  def activate(): Unit = js.native
+  def activate(): Unit
   
   /** Make the next pane active. */
-  def activateNextPane(): Boolean = js.native
+  def activateNextPane(): Boolean
   
   /** Make the previous pane active. */
-  def activatePreviousPane(): Boolean = js.native
+  def activatePreviousPane(): Boolean
   
   /** Get the active Pane. */
-  def getActivePane(): Pane = js.native
+  def getActivePane(): Pane
   
   /** Get the active Pane's active item. */
-  def getActivePaneItem(): js.Object = js.native
+  def getActivePaneItem(): js.Object
   
   // Pane Items
   /** Get all pane items in the dock. */
-  def getPaneItems(): js.Array[js.Object] = js.native
+  def getPaneItems(): js.Array[js.Object]
   
   // Panes
   /** Returns an Array of Panes. */
-  def getPanes(): js.Array[Pane] = js.native
+  def getPanes(): js.Array[Pane]
   
   /**
     *  Hide the dock and activate the WorkspaceCenter if the dock was was previously
     *  focused.
     */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /** Check if the dock is visible. */
-  def isVisible(): Boolean = js.native
+  def isVisible(): Boolean
   
   /**
     *  Invoke the given callback with the current active pane and when the active
     *  pane changes.
     */
-  def observeActivePane(callback: js.Function1[/* pane */ Pane, Unit]): Disposable = js.native
+  def observeActivePane(callback: js.Function1[/* pane */ Pane, Unit]): Disposable
   
   /**
     *  Invoke the given callback with the current active pane item and with all future
     *  active pane items in the dock.
     */
-  def observeActivePaneItem(callback: js.Function1[/* item */ js.Object, Unit]): Disposable = js.native
+  def observeActivePaneItem(callback: js.Function1[/* item */ js.Object, Unit]): Disposable
   
   /** Invoke the given callback with all current and future panes items in the dock. */
-  def observePaneItems(callback: js.Function1[/* item */ js.Object, Unit]): Disposable = js.native
+  def observePaneItems(callback: js.Function1[/* item */ js.Object, Unit]): Disposable
   
   /** Invoke the given callback with all current and future panes in the dock. */
-  def observePanes(callback: js.Function1[/* pane */ Pane, Unit]): Disposable = js.native
+  def observePanes(callback: js.Function1[/* pane */ Pane, Unit]): Disposable
   
   /**
     *  Invoke the given callback with the current and all future visibilities of
     *  the dock.
     */
-  def observeVisible(callback: js.Function1[/* visible */ Boolean, Unit]): Disposable = js.native
+  def observeVisible(callback: js.Function1[/* visible */ Boolean, Unit]): Disposable
   
   /** Invoke the given callback when a pane is added to the dock. */
-  def onDidAddPane(callback: js.Function1[/* event */ typings.atom.anon.Pane, Unit]): Disposable = js.native
+  def onDidAddPane(callback: js.Function1[/* event */ typings.atom.anon.Pane, Unit]): Disposable
   
   /** Invoke the given callback when a pane item is added to the dock. */
-  def onDidAddPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, Unit]): Disposable = js.native
+  def onDidAddPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, Unit]): Disposable
   
   /** Invoke the given callback when the active pane changes. */
-  def onDidChangeActivePane(callback: js.Function1[/* pane */ Pane, Unit]): Disposable = js.native
+  def onDidChangeActivePane(callback: js.Function1[/* pane */ Pane, Unit]): Disposable
   
   /**
     *  Invoke the given callback when the active pane item changes.
@@ -81,29 +79,29 @@ trait Dock extends StObject {
     *  expensive operations via this method. Consider ::onDidStopChangingActivePaneItem
     *  to delay operations until after changes stop occurring.
     */
-  def onDidChangeActivePaneItem(callback: js.Function1[/* item */ js.Object, Unit]): Disposable = js.native
+  def onDidChangeActivePaneItem(callback: js.Function1[/* item */ js.Object, Unit]): Disposable
   
   /**
     *  Invoke the given callback when the hovered state of the dock changes.
     *  @param hovered Is the dock now hovered?
     */
-  def onDidChangeHovered(callback: js.Function1[/* hovered */ Boolean, Unit]): Disposable = js.native
+  def onDidChangeHovered(callback: js.Function1[/* hovered */ Boolean, Unit]): Disposable
   
   // Event Subscription
   /** Invoke the given callback when the visibility of the dock changes. */
-  def onDidChangeVisible(callback: js.Function1[/* visible */ Boolean, Unit]): Disposable = js.native
+  def onDidChangeVisible(callback: js.Function1[/* visible */ Boolean, Unit]): Disposable
   
   /** Invoke the given callback when a pane is destroyed in the dock. */
-  def onDidDestroyPane(callback: js.Function1[/* event */ typings.atom.anon.Pane, Unit]): Disposable = js.native
+  def onDidDestroyPane(callback: js.Function1[/* event */ typings.atom.anon.Pane, Unit]): Disposable
   
   /** Invoke the given callback when a pane item is destroyed. */
-  def onDidDestroyPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, Unit]): Disposable = js.native
+  def onDidDestroyPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, Unit]): Disposable
   
   /** Invoke the given callback when the active pane item stops changing. */
-  def onDidStopChangingActivePaneItem(callback: js.Function1[/* item */ js.Object, Unit]): Disposable = js.native
+  def onDidStopChangingActivePaneItem(callback: js.Function1[/* item */ js.Object, Unit]): Disposable
   
   /** Invoke the given callback before a pane is destroyed in the dock. */
-  def onWillDestroyPane(callback: js.Function1[/* event */ typings.atom.anon.Pane, Unit]): Disposable = js.native
+  def onWillDestroyPane(callback: js.Function1[/* event */ typings.atom.anon.Pane, Unit]): Disposable
   
   /**
     *  Invoke the given callback when a pane item is about to be destroyed, before the user is
@@ -112,16 +110,16 @@ trait Dock extends StObject {
     *      If this function returns a Promise, then the item will not be destroyed
     *      until the promise resolves.
     */
-  def onWillDestroyPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, Unit | js.Promise[Unit]]): Disposable = js.native
+  def onWillDestroyPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, Unit | js.Promise[Unit]]): Disposable
   
   /** Show the dock without focusing it. */
-  def show(): Unit = js.native
+  def show(): Unit
   
   /**
     *  Toggle the dock's visibility without changing the Workspace's active pane
     *  container.
     */
-  def toggle(): Unit = js.native
+  def toggle(): Unit
 }
 object Dock {
   

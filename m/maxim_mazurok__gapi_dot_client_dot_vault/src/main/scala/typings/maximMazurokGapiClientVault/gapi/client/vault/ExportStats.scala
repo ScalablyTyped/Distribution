@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportStats extends StObject {
   
   /** The number of documents already processed by the export. */
-  var exportedArtifactCount: js.UndefOr[String] = js.native
+  var exportedArtifactCount: js.UndefOr[String] = js.undefined
   
   /** The size of export in bytes. */
-  var sizeInBytes: js.UndefOr[String] = js.native
+  var sizeInBytes: js.UndefOr[String] = js.undefined
   
   /** The number of documents to be exported. */
-  var totalArtifactCount: js.UndefOr[String] = js.native
+  var totalArtifactCount: js.UndefOr[String] = js.undefined
 }
 object ExportStats {
   

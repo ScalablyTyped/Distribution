@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * exceed these restrictions.
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#MapRestriction Maps JavaScript API}
   */
-@js.native
 trait MapRestriction extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait MapRestriction extends StObject {
     * of -180 and 180, respectively.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#MapRestriction.latLngBounds Maps JavaScript API}
     */
-  var latLngBounds: LatLngBounds | LatLngBoundsLiteral = js.native
+  var latLngBounds: LatLngBounds | LatLngBoundsLiteral
   
   /**
     * By default bounds are relaxed, meaning that a user can zoom out
@@ -30,7 +28,7 @@ trait MapRestriction extends StObject {
     * restricted bounds stays hidden.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#MapRestriction.strictBounds Maps JavaScript API}
     */
-  var strictBounds: js.UndefOr[Boolean] = js.native
+  var strictBounds: js.UndefOr[Boolean] = js.undefined
 }
 object MapRestriction {
   

@@ -31,7 +31,6 @@ import typings.std.SVGElement
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -115,26 +114,25 @@ object mod {
     def defaultProps_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait DefaultProps extends StObject {
     
-    var maxHeight: Double = js.native
+    var maxHeight: Double
     
-    var maxWidth: Double = js.native
+    var maxWidth: Double
     
-    var onDrag: RndDragCallback = js.native
+    var onDrag: RndDragCallback
     
-    var onDragStart: RndDragCallback = js.native
+    var onDragStart: RndDragCallback
     
-    var onDragStop: RndDragCallback = js.native
+    var onDragStop: RndDragCallback
     
-    var onResize: RndResizeCallback = js.native
+    var onResize: RndResizeCallback
     
-    var onResizeStart: RndResizeStartCallback = js.native
+    var onResizeStart: RndResizeStartCallback
     
-    var onResizeStop: RndResizeCallback = js.native
+    var onResizeStop: RndResizeCallback
     
-    var scale: Double = js.native
+    var scale: Double
   }
   object DefaultProps {
     
@@ -198,23 +196,19 @@ object mod {
     }
   }
   
-  /* Inlined {  node :std.HTMLElement,   deltaX :number,   deltaY :number,   lastX :number,   lastY :number} & react-rnd.react-rnd.Position */
-  @js.native
-  trait DraggableData extends StObject {
+  trait DraggableData
+    extends StObject
+       with Position {
     
-    var deltaX: Double = js.native
+    var deltaX: Double
     
-    var deltaY: Double = js.native
+    var deltaY: Double
     
-    var lastX: Double = js.native
+    var lastX: Double
     
-    var lastY: Double = js.native
+    var lastY: Double
     
-    var node: HTMLElement = js.native
-    
-    var x: Double = js.native
-    
-    var y: Double = js.native
+    var node: HTMLElement
   }
   object DraggableData {
     
@@ -249,35 +243,28 @@ object mod {
       
       @scala.inline
       def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
   type Grid = js.Tuple2[Double, Double]
   
-  @js.native
   trait HandleClasses extends StObject {
     
-    var bottom: js.UndefOr[String] = js.native
+    var bottom: js.UndefOr[String] = js.undefined
     
-    var bottomLeft: js.UndefOr[String] = js.native
+    var bottomLeft: js.UndefOr[String] = js.undefined
     
-    var bottomRight: js.UndefOr[String] = js.native
+    var bottomRight: js.UndefOr[String] = js.undefined
     
-    var left: js.UndefOr[String] = js.native
+    var left: js.UndefOr[String] = js.undefined
     
-    var right: js.UndefOr[String] = js.native
+    var right: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[String] = js.native
+    var top: js.UndefOr[String] = js.undefined
     
-    var topLeft: js.UndefOr[String] = js.native
+    var topLeft: js.UndefOr[String] = js.undefined
     
-    var topRight: js.UndefOr[String] = js.native
+    var topRight: js.UndefOr[String] = js.undefined
   }
   object HandleClasses {
     
@@ -340,24 +327,23 @@ object mod {
     }
   }
   
-  @js.native
   trait HandleComponent extends StObject {
     
-    var bottom: js.UndefOr[ReactElement] = js.native
+    var bottom: js.UndefOr[ReactElement] = js.undefined
     
-    var bottomLeft: js.UndefOr[ReactElement] = js.native
+    var bottomLeft: js.UndefOr[ReactElement] = js.undefined
     
-    var bottomRight: js.UndefOr[ReactElement] = js.native
+    var bottomRight: js.UndefOr[ReactElement] = js.undefined
     
-    var left: js.UndefOr[ReactElement] = js.native
+    var left: js.UndefOr[ReactElement] = js.undefined
     
-    var right: js.UndefOr[ReactElement] = js.native
+    var right: js.UndefOr[ReactElement] = js.undefined
     
-    var top: js.UndefOr[ReactElement] = js.native
+    var top: js.UndefOr[ReactElement] = js.undefined
     
-    var topLeft: js.UndefOr[ReactElement] = js.native
+    var topLeft: js.UndefOr[ReactElement] = js.undefined
     
-    var topRight: js.UndefOr[ReactElement] = js.native
+    var topRight: js.UndefOr[ReactElement] = js.undefined
   }
   object HandleComponent {
     
@@ -420,24 +406,23 @@ object mod {
     }
   }
   
-  @js.native
   trait HandleStyles extends StObject {
     
-    var bottom: js.UndefOr[CSSProperties] = js.native
+    var bottom: js.UndefOr[CSSProperties] = js.undefined
     
-    var bottomLeft: js.UndefOr[CSSProperties] = js.native
+    var bottomLeft: js.UndefOr[CSSProperties] = js.undefined
     
-    var bottomRight: js.UndefOr[CSSProperties] = js.native
+    var bottomRight: js.UndefOr[CSSProperties] = js.undefined
     
-    var left: js.UndefOr[CSSProperties] = js.native
+    var left: js.UndefOr[CSSProperties] = js.undefined
     
-    var right: js.UndefOr[CSSProperties] = js.native
+    var right: js.UndefOr[CSSProperties] = js.undefined
     
-    var top: js.UndefOr[CSSProperties] = js.native
+    var top: js.UndefOr[CSSProperties] = js.undefined
     
-    var topLeft: js.UndefOr[CSSProperties] = js.native
+    var topLeft: js.UndefOr[CSSProperties] = js.undefined
     
-    var topRight: js.UndefOr[CSSProperties] = js.native
+    var topRight: js.UndefOr[CSSProperties] = js.undefined
   }
   object HandleStyles {
     
@@ -500,12 +485,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MaxSize extends StObject {
     
-    var maxHeight: Double | String = js.native
+    var maxHeight: Double | String
     
-    var maxWidth: Double | String = js.native
+    var maxWidth: Double | String
   }
   object MaxSize {
     
@@ -526,12 +510,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Position {
     
@@ -552,83 +535,83 @@ object mod {
     }
   }
   
-  @js.native
   trait Props
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var default: js.UndefOr[xnumberynumberSize] = js.native
+    var default: js.UndefOr[xnumberynumberSize] = js.undefined
     
-    var allowAnyClick: js.UndefOr[Boolean] = js.native
+    var allowAnyClick: js.UndefOr[Boolean] = js.undefined
     
-    var bounds: js.UndefOr[String] = js.native
+    var bounds: js.UndefOr[String] = js.undefined
     
-    var cancel: js.UndefOr[String] = js.native
+    var cancel: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableDragging: js.UndefOr[Boolean] = js.native
+    var disableDragging: js.UndefOr[Boolean] = js.undefined
     
-    var dragAxis: js.UndefOr[x | y | both | none] = js.native
+    var dragAxis: js.UndefOr[x | y | both | none] = js.undefined
     
-    var dragGrid: js.UndefOr[Grid] = js.native
+    var dragGrid: js.UndefOr[Grid] = js.undefined
     
-    var dragHandleClassName: js.UndefOr[String] = js.native
+    var dragHandleClassName: js.UndefOr[String] = js.undefined
     
-    var enableResizing: js.UndefOr[ResizeEnable] = js.native
+    var enableResizing: js.UndefOr[ResizeEnable] = js.undefined
     
-    var enableUserSelectHack: js.UndefOr[Boolean] = js.native
+    var enableUserSelectHack: js.UndefOr[Boolean] = js.undefined
     
-    var lockAspectRatio: js.UndefOr[Boolean | Double] = js.native
+    var lockAspectRatio: js.UndefOr[Boolean | Double] = js.undefined
     
-    var lockAspectRatioExtraHeight: js.UndefOr[Double] = js.native
+    var lockAspectRatioExtraHeight: js.UndefOr[Double] = js.undefined
     
-    var lockAspectRatioExtraWidth: js.UndefOr[Double] = js.native
+    var lockAspectRatioExtraWidth: js.UndefOr[Double] = js.undefined
     
-    var maxHeight: js.UndefOr[Double | String] = js.native
+    var maxHeight: js.UndefOr[Double | String] = js.undefined
     
-    var maxWidth: js.UndefOr[Double | String] = js.native
+    var maxWidth: js.UndefOr[Double | String] = js.undefined
     
-    var minHeight: js.UndefOr[Double | String] = js.native
+    var minHeight: js.UndefOr[Double | String] = js.undefined
     
-    var minWidth: js.UndefOr[Double | String] = js.native
+    var minWidth: js.UndefOr[Double | String] = js.undefined
     
-    var onDrag: js.UndefOr[RndDragCallback] = js.native
+    var onDrag: js.UndefOr[RndDragCallback] = js.undefined
     
-    var onDragStart: js.UndefOr[RndDragCallback] = js.native
+    var onDragStart: js.UndefOr[RndDragCallback] = js.undefined
     
-    var onDragStop: js.UndefOr[RndDragCallback] = js.native
+    var onDragStop: js.UndefOr[RndDragCallback] = js.undefined
     
-    var onMouseDown: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.native
+    var onMouseDown: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
     
-    var onMouseUp: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.native
+    var onMouseUp: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
     
-    var onResize: js.UndefOr[RndResizeCallback] = js.native
+    var onResize: js.UndefOr[RndResizeCallback] = js.undefined
     
-    var onResizeStart: js.UndefOr[RndResizeStartCallback] = js.native
+    var onResizeStart: js.UndefOr[RndResizeStartCallback] = js.undefined
     
-    var onResizeStop: js.UndefOr[RndResizeCallback] = js.native
+    var onResizeStop: js.UndefOr[RndResizeCallback] = js.undefined
     
-    var position: js.UndefOr[X] = js.native
+    var position: js.UndefOr[X] = js.undefined
     
-    var resizeGrid: js.UndefOr[Grid] = js.native
+    var resizeGrid: js.UndefOr[Grid] = js.undefined
     
-    var resizeHandleClasses: js.UndefOr[HandleClasses] = js.native
+    var resizeHandleClasses: js.UndefOr[HandleClasses] = js.undefined
     
-    var resizeHandleComponent: js.UndefOr[HandleComponent] = js.native
+    var resizeHandleComponent: js.UndefOr[HandleComponent] = js.undefined
     
-    var resizeHandleStyles: js.UndefOr[HandleStyles] = js.native
+    var resizeHandleStyles: js.UndefOr[HandleStyles] = js.undefined
     
-    var resizeHandleWrapperClass: js.UndefOr[String] = js.native
+    var resizeHandleWrapperClass: js.UndefOr[String] = js.undefined
     
-    var resizeHandleWrapperStyle: js.UndefOr[CSSProperties] = js.native
+    var resizeHandleWrapperStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object Props {
     
@@ -877,12 +860,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ResizableDelta extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ResizableDelta {
     
@@ -925,12 +907,11 @@ object mod {
     Unit | Boolean
   ]
   
-  @js.native
   trait Size extends StObject {
     
-    var height: String | Double = js.native
+    var height: String | Double
     
-    var width: String | Double = js.native
+    var width: String | Double
   }
   object Size {
     
@@ -951,16 +932,15 @@ object mod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var bounds: Bottom = js.native
+    var bounds: Bottom
     
-    var maxHeight: js.UndefOr[Double | String] = js.native
+    var maxHeight: js.UndefOr[Double | String] = js.undefined
     
-    var maxWidth: js.UndefOr[Double | String] = js.native
+    var maxWidth: js.UndefOr[Double | String] = js.undefined
     
-    var original: Position = js.native
+    var original: Position
   }
   object State {
     

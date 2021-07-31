@@ -4,15 +4,13 @@ import typings.chance.chanceStrings.female
 import typings.chance.chanceStrings.male
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstNameOptions extends StObject {
   
-  var gender: male | female = js.native
+  var gender: male | female
   
-  var nationality: FirstNameNationalities = js.native
+  var nationality: FirstNameNationalities
 }
 object FirstNameOptions {
   

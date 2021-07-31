@@ -1,17 +1,14 @@
 package typings.chance.Chance
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  comparator :(array : std.Array<T>, value : T): boolean | undefined} & chance.Chance.Options */
-@js.native
 trait UniqueOptions[T]
-  extends /* id */ StringDictionary[js.Any] {
+  extends StObject
+     with Options {
   
-  var comparator: js.UndefOr[js.Function2[/* array */ js.Array[T], /* value */ T, Boolean]] = js.native
+  var comparator: js.UndefOr[js.Function2[/* array */ js.Array[T], /* value */ T, Boolean]] = js.undefined
 }
 object UniqueOptions {
   
@@ -22,7 +19,7 @@ object UniqueOptions {
   }
   
   @scala.inline
-  implicit class UniqueOptionsMutableBuilder[Self <: UniqueOptions[_], T] (val x: Self with UniqueOptions[T]) extends AnyVal {
+  implicit class UniqueOptionsMutableBuilder[Self <: UniqueOptions[?], T] (val x: Self & UniqueOptions[T]) extends AnyVal {
     
     @scala.inline
     def setComparator(value: (/* array */ js.Array[T], /* value */ T) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))

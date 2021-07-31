@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.wrapper.XXMLElementWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is an extension of the {@link XSAXEventKeeper} interface, some security related features are added.
   */
-@js.native
-trait XSecuritySAXEventKeeper extends XSAXEventKeeper {
+trait XSecuritySAXEventKeeper
+  extends StObject
+     with XSAXEventKeeper {
   
   /**
     * Adds a new element collector on the next element in the SAX event stream.
@@ -22,14 +22,14 @@ trait XSecuritySAXEventKeeper extends XSAXEventKeeper {
     * @param modifyElement a flag representing whether the element collector will modify the content of its element after notification
     * @returns the keeper id of the new element collector
     */
-  def addSecurityElementCollector(priority: ElementMarkPriority, modifyElement: Boolean): Double = js.native
+  def addSecurityElementCollector(priority: ElementMarkPriority, modifyElement: Boolean): Double
   
   /**
     * Sets security id for an element mark.
     * @param id the keeper id of the element collector to be set
     * @param securityId the security id to be set
     */
-  def setSecurityId(id: Double, securityId: Double): Unit = js.native
+  def setSecurityId(id: Double, securityId: Double): Unit
 }
 object XSecuritySAXEventKeeper {
   

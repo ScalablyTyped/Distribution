@@ -8,7 +8,6 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
@@ -96,9 +95,8 @@ object modalMod {
       @scala.inline
       def maskClosable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maskClosable")(x.asInstanceOf[js.Any])
       
-      @JSImport("@ant-design/react-native/lib/modal", "default.defaultProps.onClose")
-      @js.native
-      def onClose(): Unit = js.native
+      @scala.inline
+      def onClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onClose")().asInstanceOf[Unit]
       
       @JSImport("@ant-design/react-native/lib/modal", "default.defaultProps.operation")
       @js.native

@@ -2,7 +2,6 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_WebSocketMessage")
@@ -19,40 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   */
 class ClassWebSocketMessage ()
-  extends typings.fibjs.ClassWebSocketMessage {
+  extends StObject
+     with typings.fibjs.ClassWebSocketMessage {
   def this(`type`: Double) = this()
-  def this(`type`: js.UndefOr[scala.Nothing], masked: Boolean) = this()
   def this(`type`: Double, masked: Boolean) = this()
-  def this(`type`: js.UndefOr[scala.Nothing], masked: js.UndefOr[scala.Nothing], compress: Boolean) = this()
-  def this(`type`: js.UndefOr[scala.Nothing], masked: Boolean, compress: Boolean) = this()
-  def this(`type`: Double, masked: js.UndefOr[scala.Nothing], compress: Boolean) = this()
+  def this(`type`: Unit, masked: Boolean) = this()
   def this(`type`: Double, masked: Boolean, compress: Boolean) = this()
-  def this(
-    `type`: js.UndefOr[scala.Nothing],
-    masked: js.UndefOr[scala.Nothing],
-    compress: js.UndefOr[scala.Nothing],
-    maxSize: Double
-  ) = this()
-  def this(
-    `type`: js.UndefOr[scala.Nothing],
-    masked: js.UndefOr[scala.Nothing],
-    compress: Boolean,
-    maxSize: Double
-  ) = this()
-  def this(
-    `type`: js.UndefOr[scala.Nothing],
-    masked: Boolean,
-    compress: js.UndefOr[scala.Nothing],
-    maxSize: Double
-  ) = this()
-  def this(`type`: js.UndefOr[scala.Nothing], masked: Boolean, compress: Boolean, maxSize: Double) = this()
-  def this(
-    `type`: Double,
-    masked: js.UndefOr[scala.Nothing],
-    compress: js.UndefOr[scala.Nothing],
-    maxSize: Double
-  ) = this()
-  def this(`type`: Double, masked: js.UndefOr[scala.Nothing], compress: Boolean, maxSize: Double) = this()
-  def this(`type`: Double, masked: Boolean, compress: js.UndefOr[scala.Nothing], maxSize: Double) = this()
+  def this(`type`: Double, masked: Unit, compress: Boolean) = this()
+  def this(`type`: Unit, masked: Boolean, compress: Boolean) = this()
+  def this(`type`: Unit, masked: Unit, compress: Boolean) = this()
   def this(`type`: Double, masked: Boolean, compress: Boolean, maxSize: Double) = this()
+  def this(`type`: Double, masked: Boolean, compress: Unit, maxSize: Double) = this()
+  def this(`type`: Double, masked: Unit, compress: Boolean, maxSize: Double) = this()
+  def this(`type`: Double, masked: Unit, compress: Unit, maxSize: Double) = this()
+  def this(`type`: Unit, masked: Boolean, compress: Boolean, maxSize: Double) = this()
+  def this(`type`: Unit, masked: Boolean, compress: Unit, maxSize: Double) = this()
+  def this(`type`: Unit, masked: Unit, compress: Boolean, maxSize: Double) = this()
+  def this(`type`: Unit, masked: Unit, compress: Unit, maxSize: Double) = this()
 }

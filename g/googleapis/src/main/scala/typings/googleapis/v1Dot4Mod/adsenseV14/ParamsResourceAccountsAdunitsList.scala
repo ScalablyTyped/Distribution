@@ -6,44 +6,44 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccountsAdunitsList extends StandardParameters {
+trait ParamsResourceAccountsAdunitsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Account to which the ad client belongs.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Ad client for which to list ad units.
     */
-  var adClientId: js.UndefOr[String] = js.native
+  var adClientId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Whether to include inactive ad units. Default: true.
     */
-  var includeInactive: js.UndefOr[Boolean] = js.native
+  var includeInactive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of ad units to include in the response, used for
     * paging.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * A continuation token, used to page through ad units. To retrieve the next
     * page, set this parameter to the value of "nextPageToken" from the
     * previous response.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAccountsAdunitsList {
   

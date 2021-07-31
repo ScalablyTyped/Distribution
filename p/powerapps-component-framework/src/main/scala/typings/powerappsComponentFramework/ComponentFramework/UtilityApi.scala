@@ -2,7 +2,6 @@ package typings.powerappsComponentFramework.ComponentFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,33 +12,32 @@ object UtilityApi {
   /**
     * Options used when opening a lookup dialog.
     */
-  @js.native
   trait LookupOptions extends StObject {
     
     /**
       * Whether the lookup allows more than one item to be selected.
       */
-    var allowMultiSelect: Boolean = js.native
+    var allowMultiSelect: Boolean
     
     /**
       * The default entity type.
       */
-    var defaultEntityType: String = js.native
+    var defaultEntityType: String
     
     /**
       * The default view to use.
       */
-    var defaultViewId: String = js.native
+    var defaultViewId: String
     
     /**
       * The entity types to display.
       */
-    var entityTypes: js.Array[String] = js.native
+    var entityTypes: js.Array[String]
     
     /**
       * The views to be available in the view picker. Only System views are supported (not user views).
       */
-    var viewIds: js.Array[String] = js.native
+    var viewIds: js.Array[String]
   }
   object LookupOptions {
     

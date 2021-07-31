@@ -2,10 +2,8 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VendorShorthandProperties[TLength] extends StObject {
   
   /**
@@ -13,168 +11,168 @@ trait VendorShorthandProperties[TLength] extends StObject {
     *
     * **Syntax**: `<single-animation>#`
     */
-  var MozAnimation: js.UndefOr[AnimationProperty] = js.native
+  var MozAnimation: js.UndefOr[AnimationProperty] = js.undefined
   
   /**
     * The **`border-image`** CSS property draws an image in place of an element's `border-style`.
     *
     * **Syntax**: `<'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>`
     */
-  var MozBorderImage: js.UndefOr[BorderImageProperty] = js.native
+  var MozBorderImage: js.UndefOr[BorderImageProperty] = js.undefined
   
   /**
     * The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout.
     *
     * **Syntax**: `<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>`
     */
-  var MozColumnRule: js.UndefOr[ColumnRuleProperty[TLength]] = js.native
+  var MozColumnRule: js.UndefOr[ColumnRuleProperty[TLength]] = js.undefined
   
   /**
     * The **`columns`** CSS property sets the column width and column count of an element.
     *
     * **Syntax**: `<'column-width'> || <'column-count'>`
     */
-  var MozColumns: js.UndefOr[ColumnsProperty[TLength]] = js.native
+  var MozColumns: js.UndefOr[ColumnsProperty[TLength]] = js.undefined
   
   /**
     * The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
     *
     * **Syntax**: `<single-transition>#`
     */
-  var MozTransition: js.UndefOr[TransitionProperty] = js.native
+  var MozTransition: js.UndefOr[TransitionProperty] = js.undefined
   
   /**
     * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
     *
     * **Syntax**: `<single-animation>#`
     */
-  var WebkitAnimation: js.UndefOr[AnimationProperty] = js.native
+  var WebkitAnimation: js.UndefOr[AnimationProperty] = js.undefined
   
   /**
     * The **`-webkit-border-before`** CSS property is a shorthand property for setting the individual logical block start border property values in a single place in the style sheet.
     *
     * **Syntax**: `<'border-width'> || <'border-style'> || <'color'>`
     */
-  var WebkitBorderBefore: js.UndefOr[WebkitBorderBeforeProperty[TLength]] = js.native
+  var WebkitBorderBefore: js.UndefOr[WebkitBorderBeforeProperty[TLength]] = js.undefined
   
   /**
     * The **`border-image`** CSS property draws an image in place of an element's `border-style`.
     *
     * **Syntax**: `<'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>`
     */
-  var WebkitBorderImage: js.UndefOr[BorderImageProperty] = js.native
+  var WebkitBorderImage: js.UndefOr[BorderImageProperty] = js.undefined
   
   /**
     * The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
     *
     * **Syntax**: `<length-percentage>{1,4} [ / <length-percentage>{1,4} ]?`
     */
-  var WebkitBorderRadius: js.UndefOr[BorderRadiusProperty[TLength]] = js.native
+  var WebkitBorderRadius: js.UndefOr[BorderRadiusProperty[TLength]] = js.undefined
   
   /**
     * The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout.
     *
     * **Syntax**: `<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>`
     */
-  var WebkitColumnRule: js.UndefOr[ColumnRuleProperty[TLength]] = js.native
+  var WebkitColumnRule: js.UndefOr[ColumnRuleProperty[TLength]] = js.undefined
   
   /**
     * The **`columns`** CSS property sets the column width and column count of an element.
     *
     * **Syntax**: `<'column-width'> || <'column-count'>`
     */
-  var WebkitColumns: js.UndefOr[ColumnsProperty[TLength]] = js.native
+  var WebkitColumns: js.UndefOr[ColumnsProperty[TLength]] = js.undefined
   
   /**
     * The **`flex`** CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`.
     *
     * **Syntax**: `none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]`
     */
-  var WebkitFlex: js.UndefOr[FlexProperty[TLength]] = js.native
+  var WebkitFlex: js.UndefOr[FlexProperty[TLength]] = js.undefined
   
   /**
     * The **`flex-flow`** CSS property is a shorthand property for `flex-direction` and `flex-wrap` properties.
     *
     * **Syntax**: `<'flex-direction'> || <'flex-wrap'>`
     */
-  var WebkitFlexFlow: js.UndefOr[FlexFlowProperty] = js.native
+  var WebkitFlexFlow: js.UndefOr[FlexFlowProperty] = js.undefined
   
   /**
     * The **`mask`** CSS property hides an element (partially or fully) by masking or clipping the image at specific points.
     *
     * **Syntax**: `[ <mask-reference> || <position> [ / <bg-size> ]? || <repeat-style> || [ <box> | border | padding | content | text ] || [ <box> | border | padding | content ] ]#`
     */
-  var WebkitMask: js.UndefOr[WebkitMaskProperty[TLength]] = js.native
+  var WebkitMask: js.UndefOr[WebkitMaskProperty[TLength]] = js.undefined
   
   /**
     * The **`text-emphasis`** CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for `text-emphasis-style` and `text-emphasis-color`.
     *
     * **Syntax**: `<'text-emphasis-style'> || <'text-emphasis-color'>`
     */
-  var WebkitTextEmphasis: js.UndefOr[TextEmphasisProperty] = js.native
+  var WebkitTextEmphasis: js.UndefOr[TextEmphasisProperty] = js.undefined
   
   /**
     * The **`-webkit-text-stroke`** CSS property specifies the width and color of strokes for text characters. This is a shorthand property for the longhand properties `-webkit-text-stroke-width` and `-webkit-text-stroke-color`.
     *
     * **Syntax**: `<length> || <color>`
     */
-  var WebkitTextStroke: js.UndefOr[WebkitTextStrokeProperty[TLength]] = js.native
+  var WebkitTextStroke: js.UndefOr[WebkitTextStrokeProperty[TLength]] = js.undefined
   
   /**
     * The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
     *
     * **Syntax**: `<single-transition>#`
     */
-  var WebkitTransition: js.UndefOr[TransitionProperty] = js.native
+  var WebkitTransition: js.UndefOr[TransitionProperty] = js.undefined
   
   /**
     * The **`-ms-content-zoom-limit`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-content-zoom-limit-min` and `-ms-content-zoom-limit-max` properties.
     *
     * **Syntax**: `<'-ms-content-zoom-limit-min'> <'-ms-content-zoom-limit-max'>`
     */
-  var msContentZoomLimit: js.UndefOr[GlobalsString] = js.native
+  var msContentZoomLimit: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`-ms-content-zoom-snap`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-content-zoom-snap-type` and `-ms-content-zoom-snap-points` properties.
     *
     * **Syntax**: `<'-ms-content-zoom-snap-type'> || <'-ms-content-zoom-snap-points'>`
     */
-  var msContentZoomSnap: js.UndefOr[MsContentZoomSnapProperty] = js.native
+  var msContentZoomSnap: js.UndefOr[MsContentZoomSnapProperty] = js.undefined
   
   /**
     * The **`flex`** CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`.
     *
     * **Syntax**: `none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]`
     */
-  var msFlex: js.UndefOr[FlexProperty[TLength]] = js.native
+  var msFlex: js.UndefOr[FlexProperty[TLength]] = js.undefined
   
   /**
     * The **\-ms-scroll-limit** CSS property is a Microsoft extension that specifies values for the `-ms-scroll-limit-x-min`, `-ms-scroll-limit-y-min`, `-ms-scroll-limit-x-max`, and `-ms-scroll-limit-y-max` properties.
     *
     * **Syntax**: `<'-ms-scroll-limit-x-min'> <'-ms-scroll-limit-y-min'> <'-ms-scroll-limit-x-max'> <'-ms-scroll-limit-y-max'>`
     */
-  var msScrollLimit: js.UndefOr[GlobalsString] = js.native
+  var msScrollLimit: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`-ms-scroll-snap-x`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-scroll-snap-type` and `-ms-scroll-snap-points-x` properties.
     *
     * **Syntax**: `<'-ms-scroll-snap-type'> <'-ms-scroll-snap-points-x'>`
     */
-  var msScrollSnapX: js.UndefOr[GlobalsString] = js.native
+  var msScrollSnapX: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`-ms-scroll-snap-x`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-scroll-snap-type` and `-ms-scroll-snap-points-y` properties.
     *
     * **Syntax**: `<'-ms-scroll-snap-type'> <'-ms-scroll-snap-points-y'>`
     */
-  var msScrollSnapY: js.UndefOr[GlobalsString] = js.native
+  var msScrollSnapY: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
     *
     * **Syntax**: `<single-transition>#`
     */
-  var msTransition: js.UndefOr[TransitionProperty] = js.native
+  var msTransition: js.UndefOr[TransitionProperty] = js.undefined
 }
 object VendorShorthandProperties {
   
@@ -185,7 +183,7 @@ object VendorShorthandProperties {
   }
   
   @scala.inline
-  implicit class VendorShorthandPropertiesMutableBuilder[Self <: VendorShorthandProperties[_], TLength] (val x: Self with VendorShorthandProperties[TLength]) extends AnyVal {
+  implicit class VendorShorthandPropertiesMutableBuilder[Self <: VendorShorthandProperties[?], TLength] (val x: Self & VendorShorthandProperties[TLength]) extends AnyVal {
     
     @scala.inline
     def setMozAnimation(value: AnimationProperty): Self = StObject.set(x, "MozAnimation", value.asInstanceOf[js.Any])

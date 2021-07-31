@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NOTE: Importing `ApplicationRef` here directly creates circular dependency, which is why we have
   * a subset of the `ApplicationRef` interface `ViewRefTracker` here.
   */
-@js.native
 trait ViewRefTracker extends StObject {
   
-  def detachView(viewRef: ViewRef): Unit = js.native
+  def detachView(viewRef: ViewRef): Unit
 }
 object ViewRefTracker {
   

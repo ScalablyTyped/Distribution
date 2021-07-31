@@ -3,23 +3,21 @@ package typings.polished.anon
 import typings.polished.polishedStrings.Comma
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfixRegSymbol extends StObject {
   
-  var infix: PrecedenceRightToLeft = js.native
+  var infix: PrecedenceRightToLeft
   
-  var regSymbol: Comma = js.native
+  var regSymbol: Comma
   
-  var symbol: Comma = js.native
+  var symbol: Comma
 }
 object InfixRegSymbol {
   
   @scala.inline
-  def apply(infix: PrecedenceRightToLeft, regSymbol: Comma, symbol: Comma): InfixRegSymbol = {
-    val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  def apply(infix: PrecedenceRightToLeft): InfixRegSymbol = {
+    val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = ",", symbol = ",")
     __obj.asInstanceOf[InfixRegSymbol]
   }
   

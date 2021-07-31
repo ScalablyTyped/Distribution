@@ -10,19 +10,17 @@ import typings.opentelemetryResources.mod.Resource
 import typings.opentelemetryTracing.typesMod.TraceParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait NumberOfAttributesPerSpan extends StObject {
     
-    var numberOfAttributesPerSpan: Double = js.native
+    var numberOfAttributesPerSpan: Double
     
-    var numberOfEventsPerSpan: Double = js.native
+    var numberOfEventsPerSpan: Double
     
-    var numberOfLinksPerSpan: Double = js.native
+    var numberOfLinksPerSpan: Double
   }
   object NumberOfAttributesPerSpan {
     
@@ -47,45 +45,44 @@ object anon {
   }
   
   /* Inlined {  logLevel :@opentelemetry/core.@opentelemetry/core.LogLevel,   sampler :@opentelemetry/core.@opentelemetry/core.AlwaysOnSampler,   traceParams :{  numberOfAttributesPerSpan :number,   numberOfLinksPerSpan :number,   numberOfEventsPerSpan :number},   gracefulShutdown :boolean,   sampler :@opentelemetry/core.@opentelemetry/core.ParentOrElseSampler} & @opentelemetry/tracing.@opentelemetry/tracing/build/src/types.TracerConfig */
-  @js.native
   trait logLevelLogLevelsamplerAl extends StObject {
     
     /** Bool for whether or not graceful shutdown is enabled. If disabled spans will not be exported when SIGTERM is recieved */
-    var gracefulShutdown: Boolean with js.UndefOr[Boolean] = js.native
+    var gracefulShutdown: Boolean & js.UndefOr[Boolean]
     
     /**
       * Generator of trace and span IDs
       * The default idGenerator generates random ids
       */
-    var idGenerator: js.UndefOr[IdGenerator] = js.native
+    var idGenerator: js.UndefOr[IdGenerator] = js.undefined
     
     /** level of logger.  */
-    var logLevel: LogLevel with js.UndefOr[LogLevel] = js.native
+    var logLevel: LogLevel & js.UndefOr[LogLevel]
     
     /**
       * User provided logger.
       */
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
     /** Resource associated with trace telemetry  */
-    var resource: js.UndefOr[Resource] = js.native
+    var resource: js.UndefOr[Resource] = js.undefined
     
     /**
       * Sampler determines if a span should be recorded or should be a NoopSpan.
       */
-    var sampler: AlwaysOnSampler with ParentOrElseSampler with js.UndefOr[Sampler] = js.native
+    var sampler: AlwaysOnSampler & ParentOrElseSampler & js.UndefOr[Sampler]
     
     /** Trace Parameters */
-    var traceParams: NumberOfAttributesPerSpan with js.UndefOr[TraceParams] = js.native
+    var traceParams: NumberOfAttributesPerSpan & js.UndefOr[TraceParams]
   }
   object logLevelLogLevelsamplerAl {
     
     @scala.inline
     def apply(
-      gracefulShutdown: Boolean with js.UndefOr[Boolean],
-      logLevel: LogLevel with js.UndefOr[LogLevel],
-      sampler: AlwaysOnSampler with ParentOrElseSampler with js.UndefOr[Sampler],
-      traceParams: NumberOfAttributesPerSpan with js.UndefOr[TraceParams]
+      gracefulShutdown: Boolean & js.UndefOr[Boolean],
+      logLevel: LogLevel & js.UndefOr[LogLevel],
+      sampler: AlwaysOnSampler & ParentOrElseSampler & js.UndefOr[Sampler],
+      traceParams: NumberOfAttributesPerSpan & js.UndefOr[TraceParams]
     ): logLevelLogLevelsamplerAl = {
       val __obj = js.Dynamic.literal(gracefulShutdown = gracefulShutdown.asInstanceOf[js.Any], logLevel = logLevel.asInstanceOf[js.Any], sampler = sampler.asInstanceOf[js.Any], traceParams = traceParams.asInstanceOf[js.Any])
       __obj.asInstanceOf[logLevelLogLevelsamplerAl]
@@ -95,7 +92,7 @@ object anon {
     implicit class logLevelLogLevelsamplerAlMutableBuilder[Self <: logLevelLogLevelsamplerAl] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGracefulShutdown(value: Boolean with js.UndefOr[Boolean]): Self = StObject.set(x, "gracefulShutdown", value.asInstanceOf[js.Any])
+      def setGracefulShutdown(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "gracefulShutdown", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIdGenerator(value: IdGenerator): Self = StObject.set(x, "idGenerator", value.asInstanceOf[js.Any])
@@ -104,7 +101,7 @@ object anon {
       def setIdGeneratorUndefined: Self = StObject.set(x, "idGenerator", js.undefined)
       
       @scala.inline
-      def setLogLevel(value: LogLevel with js.UndefOr[LogLevel]): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      def setLogLevel(value: LogLevel & js.UndefOr[LogLevel]): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
@@ -119,10 +116,10 @@ object anon {
       def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
       @scala.inline
-      def setSampler(value: AlwaysOnSampler with ParentOrElseSampler with js.UndefOr[Sampler]): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
+      def setSampler(value: AlwaysOnSampler & ParentOrElseSampler & js.UndefOr[Sampler]): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTraceParams(value: NumberOfAttributesPerSpan with js.UndefOr[TraceParams]): Self = StObject.set(x, "traceParams", value.asInstanceOf[js.Any])
+      def setTraceParams(value: NumberOfAttributesPerSpan & js.UndefOr[TraceParams]): Self = StObject.set(x, "traceParams", value.asInstanceOf[js.Any])
     }
   }
 }

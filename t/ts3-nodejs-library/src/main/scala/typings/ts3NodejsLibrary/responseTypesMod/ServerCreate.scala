@@ -3,15 +3,13 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.serverMod.TeamSpeakServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerCreate extends StObject {
   
-  var server: TeamSpeakServer = js.native
+  var server: TeamSpeakServer
   
-  var token: String = js.native
+  var token: String
 }
 object ServerCreate {
   

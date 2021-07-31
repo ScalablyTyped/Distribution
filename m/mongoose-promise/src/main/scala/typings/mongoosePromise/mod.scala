@@ -1,18 +1,17 @@
 package typings.mongoosePromise
 
 import typings.mpromise.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mongoose", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /*
     * mpromise definitions.
     * Callback signatures are from the mPromise type definitions.
     */
+  @JSImport("mongoose", "MongoosePromise")
   @js.native
   /**
     * Promise constructor.
@@ -72,20 +71,24 @@ object mod extends js.Object {
       */
     def on(event: String, listener: js.Function): this.type = js.native
     
-    def resolve(err: js.UndefOr[scala.Nothing], args: T*): this.type = js.native
+    def resolve(err: Unit, args: T*): this.type = js.native
   }
-  /* static members */
-  @js.native
-  object MongoosePromise extends js.Object {
+  object MongoosePromise {
+    
+    @JSImport("mongoose", "MongoosePromise")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** ES6-style promise constructor wrapper around mpromise. */
+    /* static member */
+    @scala.inline
     def ES6[TRes](
       resolver: js.Function2[
           /* complete */ js.Function1[/* repeated */ TRes, Unit | TRes | js.Thenable[TRes]], 
           /* error */ js.Function1[/* e */ js.Any, Unit | TRes | js.Thenable[TRes]], 
           Unit
         ]
-    ): MongoosePromise[TRes] = js.native
+    ): MongoosePromise[TRes] = ^.asInstanceOf[js.Dynamic].applyDynamic("ES6")(resolver.asInstanceOf[js.Any]).asInstanceOf[MongoosePromise[TRes]]
   }
   
   type Promise[T] = MongoosePromise[T]

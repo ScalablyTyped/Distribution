@@ -3,27 +3,26 @@ package typings.cssSelectorTokenizer.mod
 import typings.cssSelectorTokenizer.cssSelectorTokenizerStrings.`pseudo-class`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PseudoClassNode
-  extends SelectorNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with SelectorNodeType {
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   @JSName("name")
-  var name_PseudoClassNode: String = js.native
+  var name_PseudoClassNode: String
   
-  var `type`: `pseudo-class` = js.native
+  var `type`: `pseudo-class`
 }
 object PseudoClassNode {
   
   @scala.inline
-  def apply(name: String, `type`: `pseudo-class`): PseudoClassNode = {
+  def apply(name: String): PseudoClassNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pseudo-class")
     __obj.asInstanceOf[PseudoClassNode]
   }
   

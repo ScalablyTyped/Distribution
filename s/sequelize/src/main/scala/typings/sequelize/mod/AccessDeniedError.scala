@@ -2,8 +2,9 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessDeniedError extends ConnectionError
+trait AccessDeniedError
+  extends StObject
+     with ConnectionError

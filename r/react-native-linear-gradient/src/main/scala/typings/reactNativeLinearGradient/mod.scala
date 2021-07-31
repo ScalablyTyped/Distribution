@@ -5,7 +5,6 @@ import typings.reactNative.mod.ViewProps
 import typings.reactNativeLinearGradient.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,22 +32,23 @@ object mod {
     def this(props: LinearGradientProps, context: js.Any) = this()
   }
   
-  @js.native
-  trait LinearGradientProps extends ViewProps {
+  trait LinearGradientProps
+    extends StObject
+       with ViewProps {
     
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
-    var angleCenter: js.UndefOr[X] = js.native
+    var angleCenter: js.UndefOr[X] = js.undefined
     
-    var colors: js.Array[String | Double] = js.native
+    var colors: js.Array[String | Double]
     
-    var end: js.UndefOr[X] = js.native
+    var end: js.UndefOr[X] = js.undefined
     
-    var locations: js.UndefOr[js.Array[Double]] = js.native
+    var locations: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var start: js.UndefOr[X] = js.native
+    var start: js.UndefOr[X] = js.undefined
     
-    var useAngle: js.UndefOr[Boolean] = js.native
+    var useAngle: js.UndefOr[Boolean] = js.undefined
   }
   object LinearGradientProps {
     

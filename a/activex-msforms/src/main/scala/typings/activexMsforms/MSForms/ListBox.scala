@@ -4,16 +4,15 @@ import typings.activexStdole.stdole.StdPicture
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ListBox extends StObject {
   
   def AddItem(): Unit = js.native
-  def AddItem(pvargItem: js.UndefOr[scala.Nothing], pvargIndex: js.Any): Unit = js.native
   def AddItem(pvargItem: js.Any): Unit = js.native
   def AddItem(pvargItem: js.Any, pvargIndex: js.Any): Unit = js.native
+  def AddItem(pvargItem: Unit, pvargIndex: js.Any): Unit = js.native
   
   var BackColor: Double = js.native
   
@@ -27,7 +26,7 @@ trait ListBox extends StObject {
   
   def Clear(): Unit = js.native
   
-  def Column(): SafeArray[_] = js.native
+  def Column(): SafeArray[js.Any] = js.native
   def Column(pvargColumn: Double): js.Any = js.native
   def Column(pvargColumn: Double, pvargIndex: Double): js.Any = js.native
   
@@ -63,7 +62,7 @@ trait ListBox extends StObject {
   
   var IntegralHeight: Boolean = js.native
   
-  def List(): SafeArray[_] = js.native
+  def List(): SafeArray[js.Any] = js.native
   def List(pvargIndex: Double): js.Any = js.native
   def List(pvargIndex: Double, pvargColumn: Double): js.Any = js.native
   

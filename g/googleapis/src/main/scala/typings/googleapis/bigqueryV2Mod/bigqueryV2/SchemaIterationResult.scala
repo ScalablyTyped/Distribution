@@ -2,44 +2,42 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a single iteration of the training run.
   */
-@js.native
 trait SchemaIterationResult extends StObject {
   
   /**
     * [Beta] Information about top clusters for clustering models.
     */
-  var clusterInfos: js.UndefOr[js.Array[SchemaClusterInfo]] = js.native
+  var clusterInfos: js.UndefOr[js.Array[SchemaClusterInfo]] = js.undefined
   
   /**
     * Time taken to run the iteration in milliseconds.
     */
-  var durationMs: js.UndefOr[String] = js.native
+  var durationMs: js.UndefOr[String] = js.undefined
   
   /**
     * Loss computed on the eval data at the end of iteration.
     */
-  var evalLoss: js.UndefOr[Double] = js.native
+  var evalLoss: js.UndefOr[Double] = js.undefined
   
   /**
     * Index of the iteration, 0 based.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * Learn rate used for this iteration.
     */
-  var learnRate: js.UndefOr[Double] = js.native
+  var learnRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Loss computed on the training data at the end of iteration.
     */
-  var trainingLoss: js.UndefOr[Double] = js.native
+  var trainingLoss: js.UndefOr[Double] = js.undefined
 }
 object SchemaIterationResult {
   

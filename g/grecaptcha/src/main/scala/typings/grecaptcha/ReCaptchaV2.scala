@@ -3,18 +3,16 @@ package typings.grecaptcha
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReCaptchaV2 {
   
-  @js.native
   trait Action extends StObject {
     
     /**
       * the name of the action. Actions may only contain alphanumeric characters and slashes, and must not be user-specific.
       */
-    var action: String = js.native
+    var action: String
   }
   object Action {
     
@@ -50,7 +48,6 @@ object ReCaptchaV2 {
     def `inline`: typings.grecaptcha.grecaptchaStrings.`inline` = "inline".asInstanceOf[typings.grecaptcha.grecaptchaStrings.`inline`]
   }
   
-  @js.native
   trait Parameters extends StObject {
     
     /**
@@ -58,13 +55,13 @@ object ReCaptchaV2 {
       *
       * @default "bottomright"
       */
-    var badge: js.UndefOr[Badge] = js.native
+    var badge: js.UndefOr[Badge] = js.undefined
     
     /**
       * Optional. Your callback function that's executed when the user submits a successful CAPTCHA response.
       * The user's response, g-recaptcha-response, will be the input for your callback function.
       */
-    var callback: js.UndefOr[js.Function1[/* response */ String, Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* response */ String, Unit]] = js.undefined
     
     /**
       * Optional. Your callback function that's executed when reCAPTCHA encounters an error (usually network connectivity) and cannot continue until connectivity is restored.
@@ -72,14 +69,14 @@ object ReCaptchaV2 {
       */
     // Notice to the reader
     // I need to surround this object with quotes, this will however break intellisense in VS 2013.
-    var `error-callback`: js.UndefOr[js.Function0[Unit]] = js.native
+    var `error-callback`: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Optional. Your callback function that's executed when the reCAPTCHA response expires and the user needs to solve a new CAPTCHA.
       */
     // Notice to the reader
     // I need to surround this object with quotes, this will however break intellisense in VS 2013.
-    var `expired-callback`: js.UndefOr[js.Function0[Unit]] = js.native
+    var `expired-callback`: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Optional. Invisible reCAPTCHA only. For plugin owners to not interfere with existing reCAPTCHA installations on a page.
@@ -87,39 +84,39 @@ object ReCaptchaV2 {
       *
       * @default false
       */
-    var isolated: js.UndefOr[Boolean] = js.native
+    var isolated: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Your sitekey.
       */
-    var sitekey: js.UndefOr[String] = js.native
+    var sitekey: js.UndefOr[String] = js.undefined
     
     /**
       * Optional. The size of the widget.
       * Accepted values: "compact", "normal", "invisible".
       * @default "compact"
       */
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
     /**
       * Optional. The tabindex of the widget and challenge.
       * If other elements in your page use tabindex, it should be set to make user navigation easier.
       */
-    var tabindex: js.UndefOr[Double] = js.native
+    var tabindex: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional. The color theme of the widget.
       * Accepted values: "light", "dark"
       * @default "light"
       */
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
     
     /**
       * Optional. The type of CAPTCHA to serve.
       * Accepted values: "audio", "image"
       * @default "image"
       */
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
   }
   object Parameters {
     
@@ -235,11 +232,11 @@ object ReCaptchaV2 {
       * @return the ID of the newly created widget.
       */
     def render(container: String): Double = js.native
-    def render(container: String, parameters: js.UndefOr[scala.Nothing], inherit: Boolean): Double = js.native
+    def render(container: String, parameters: Unit, inherit: Boolean): Double = js.native
     def render(container: String, parameters: Parameters): Double = js.native
     def render(container: String, parameters: Parameters, inherit: Boolean): Double = js.native
     def render(container: HTMLElement): Double = js.native
-    def render(container: HTMLElement, parameters: js.UndefOr[scala.Nothing], inherit: Boolean): Double = js.native
+    def render(container: HTMLElement, parameters: Unit, inherit: Boolean): Double = js.native
     def render(container: HTMLElement, parameters: Parameters): Double = js.native
     def render(container: HTMLElement, parameters: Parameters, inherit: Boolean): Double = js.native
     

@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteVoiceConnectorProxyRequest extends StObject {
   
   /**
     * The Amazon Chime Voice Connector ID.
     */
-  var VoiceConnectorId: NonEmptyString128 = js.native
+  var VoiceConnectorId: NonEmptyString128
 }
 object DeleteVoiceConnectorProxyRequest {
   

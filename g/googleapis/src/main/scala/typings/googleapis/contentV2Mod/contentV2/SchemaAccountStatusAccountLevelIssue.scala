@@ -2,46 +2,44 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountStatusAccountLevelIssue extends StObject {
   
   /**
     * Country for which this issue is reported.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The destination the issue applies to.
     */
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
   /**
     * Additional details about the issue.
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of a web page to help resolving this issue.
     */
-  var documentation: js.UndefOr[String] = js.native
+  var documentation: js.UndefOr[String] = js.undefined
   
   /**
     * Issue identifier.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Severity of the issue.
     */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /**
     * Short description of the issue.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountStatusAccountLevelIssue {
   

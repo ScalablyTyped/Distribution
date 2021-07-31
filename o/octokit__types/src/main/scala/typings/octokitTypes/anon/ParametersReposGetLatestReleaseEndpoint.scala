@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetLatestReleaseResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetLatestReleaseEndpoint extends StObject {
   
-  var parameters: ReposGetLatestReleaseEndpoint = js.native
+  var parameters: ReposGetLatestReleaseEndpoint
   
-  var request: ReposGetLatestReleaseRequestOptions = js.native
+  var request: ReposGetLatestReleaseRequestOptions
   
-  var response: OctokitResponse[ReposGetLatestReleaseResponseData] = js.native
+  var response: OctokitResponse[ReposGetLatestReleaseResponseData]
 }
 object ParametersReposGetLatestReleaseEndpoint {
   

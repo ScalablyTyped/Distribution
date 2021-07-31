@@ -4,26 +4,24 @@ import typings.octokitTypes.octokitTypesStrings.`read-only`
 import typings.octokitTypes.octokitTypesStrings.custom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
   /**
     * Unique identifier of the label.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Name of the label.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The type of label. Read-only labels are applied automatically when the runner is configured.
     */
-  var `type`: `read-only` | custom = js.native
+  var `type`: `read-only` | custom
 }
 object Id {
   

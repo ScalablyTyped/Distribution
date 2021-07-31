@@ -3,33 +3,39 @@ package typings.reactSortablePane
 import typings.reactSortablePane.paneMod.PaneSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var grid: js.Array[Double] = js.native
+    var grid: js.Array[Double]
     
-    var maxHeight: js.UndefOr[scala.Nothing] = js.native
+    var maxHeight: Unit
     
-    var maxWidth: js.UndefOr[scala.Nothing] = js.native
+    var maxWidth: Unit
     
-    var minHeight: Double = js.native
+    var minHeight: Double
     
-    var minWidth: Double = js.native
+    var minWidth: Double
     
-    var resizable: X = js.native
+    var resizable: X
   }
   object ClassName {
     
     @scala.inline
-    def apply(className: String, grid: js.Array[Double], minHeight: Double, minWidth: Double, resizable: X): ClassName = {
-      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], resizable = resizable.asInstanceOf[js.Any])
+    def apply(
+      className: String,
+      grid: js.Array[Double],
+      maxHeight: Unit,
+      maxWidth: Unit,
+      minHeight: Double,
+      minWidth: Double,
+      resizable: X
+    ): ClassName = {
+      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], resizable = resizable.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassName]
     }
     
@@ -46,6 +52,12 @@ object anon {
       def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value :_*))
       
       @scala.inline
+      def setMaxHeight(value: Unit): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxWidth(value: Unit): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -56,12 +68,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: js.UndefOr[PaneSize] = js.native
+    var height: js.UndefOr[PaneSize] = js.undefined
     
-    var width: js.UndefOr[PaneSize] = js.native
+    var width: js.UndefOr[PaneSize] = js.undefined
   }
   object Height {
     
@@ -88,12 +99,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Next extends StObject {
     
-    var next: Double = js.native
+    var next: Double
     
-    var previous: Double = js.native
+    var previous: Double
   }
   object Next {
     
@@ -114,12 +124,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PageX extends StObject {
     
-    var pageX: Double = js.native
+    var pageX: Double
     
-    var pageY: Double = js.native
+    var pageY: Double
   }
   object PageX {
     
@@ -140,14 +149,13 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Boolean = js.native
+    var x: Boolean
     
-    var xy: Boolean = js.native
+    var xy: Boolean
     
-    var y: Boolean = js.native
+    var y: Boolean
   }
   object X {
     

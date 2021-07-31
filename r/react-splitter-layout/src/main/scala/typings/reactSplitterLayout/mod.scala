@@ -3,7 +3,6 @@ package typings.reactSplitterLayout
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,34 +14,33 @@ object mod {
   
   type SplitterLayout = PureComponent[SplitterLayoutProps, js.Object, js.Any]
   
-  @js.native
   trait SplitterLayoutProps extends StObject {
     
     /**
       * Placeholder of the panel(s) inside the splitter
       */
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Custom CSS class name applied to the layout div.
       * You can use this to customize layout style.
       * Refers to the original stylesheet to see what you can customize.
       */
-    var customClassName: js.UndefOr[String] = js.native
+    var customClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Called when dragging finishes.
       *
       * No parameter will be passed to event handlers.
       */
-    var onDragEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDragEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Called when dragging is started.
       *
       * No parameter will be passed to event handlers.
       */
-    var onDragStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Called when the size of secondary pane is changed.
@@ -52,7 +50,7 @@ object mod {
       * When percentage is set to false, the value is in pixel size.
       * When percentage is set to true, the value is in percentage.
       */
-    var onSecondaryPaneSizeChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onSecondaryPaneSizeChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
     /**
       * Determine whether the width of each pane should be calculated in percentage or by pixels.
@@ -60,7 +58,7 @@ object mod {
       *
       * @default false
       */
-    var percentage: js.UndefOr[Boolean] = js.native
+    var percentage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Index of the primary pane.
@@ -74,7 +72,7 @@ object mod {
       *
       * @default 0
       */
-    var primaryIndex: js.UndefOr[TPrimaryIndex] = js.native
+    var primaryIndex: js.UndefOr[TPrimaryIndex] = js.undefined
     
     /**
       * Minimal size of primary pane.
@@ -83,7 +81,7 @@ object mod {
       *
       * @default 0
       */
-    var primaryMinSize: js.UndefOr[Double] = js.native
+    var primaryMinSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Initial size of secondary pane when page loads.
@@ -92,19 +90,19 @@ object mod {
       *
       * @default undefined
       */
-    var secondaryInitialSize: js.UndefOr[Double] = js.native
+    var secondaryInitialSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimal size of secondary pane.
       */
-    var secondaryMinSize: js.UndefOr[Double] = js.native
+    var secondaryMinSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Determine whether the layout should be a horizontal split or a vertical split.
       *
       * @default false
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object SplitterLayoutProps {
     

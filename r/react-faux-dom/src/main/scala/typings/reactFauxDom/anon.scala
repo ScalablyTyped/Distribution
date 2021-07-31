@@ -2,15 +2,13 @@ package typings.reactFauxDom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait GetPropertyValue extends StObject {
     
-    def getPropertyValue(name: String): String = js.native
+    def getPropertyValue(name: String): String
   }
   object GetPropertyValue {
     

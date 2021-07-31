@@ -11,8 +11,8 @@ Colorful animations in terminal output
 | Full name          | chalk-animation |
 | Keywords           | animation, chalk, cli, color, colors, colour, command-line, console, formatting, gradient, log, logging, rainbow, shell, string, style, styles, terminal |
 | # releases         | 0 |
-| # dependents       | 77 |
-| # downloads        | 146330 |
+| # dependents       | 88 |
+| # downloads        | 207131 |
 | # stars            | 10 |
 
 ## Links

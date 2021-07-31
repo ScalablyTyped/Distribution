@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderedEventUIParam extends StObject {
   
   /**
     * Used to get a reference to the main/top combo element.
     */
-  var element: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get a reference to the combo performing rendering.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object RenderedEventUIParam {
   

@@ -2,27 +2,27 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormHTMLAttributes[T] extends HTMLAttributes[T] {
+trait FormHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var acceptCharset: js.UndefOr[String] = js.native
+  var acceptCharset: js.UndefOr[String] = js.undefined
   
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
-  var autoComplete: js.UndefOr[String] = js.native
+  var autoComplete: js.UndefOr[String] = js.undefined
   
-  var encType: js.UndefOr[String] = js.native
+  var encType: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var noValidate: js.UndefOr[Boolean] = js.native
+  var noValidate: js.UndefOr[Boolean] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object FormHTMLAttributes {
   
@@ -33,7 +33,7 @@ object FormHTMLAttributes {
   }
   
   @scala.inline
-  implicit class FormHTMLAttributesMutableBuilder[Self <: FormHTMLAttributes[_], T] (val x: Self with FormHTMLAttributes[T]) extends AnyVal {
+  implicit class FormHTMLAttributesMutableBuilder[Self <: FormHTMLAttributes[?], T] (val x: Self & FormHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAcceptCharset(value: String): Self = StObject.set(x, "acceptCharset", value.asInstanceOf[js.Any])

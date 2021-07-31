@@ -2,15 +2,13 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollSize extends StObject {
   
-  var scrollHeight: Double = js.native
+  var scrollHeight: Double
   
-  var scrollWidth: Double = js.native
+  var scrollWidth: Double
 }
 object ScrollSize {
   

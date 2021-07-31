@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioTrackSelection extends StObject {
   
   /**
     * Selects one or more unique audio tracks from within a source.
     */
-  var Tracks: listOfAudioTrack = js.native
+  var Tracks: listOfAudioTrack
 }
 object AudioTrackSelection {
   

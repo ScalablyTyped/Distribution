@@ -5,29 +5,28 @@ import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.react.mod.Props because var conflicts: children. Inlined ref, key */ @js.native
-trait PaperProps
-  extends HTMLAttributes[js.Object] {
+- typings.react.mod.Props because var conflicts: children. Inlined ref, key */ trait PaperProps
+  extends StObject
+     with HTMLAttributes[js.Object] {
   
-  var circle: js.UndefOr[Boolean] = js.native
+  var circle: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
   
-  var ref: js.UndefOr[LegacyRef[Paper]] = js.native
+  var ref: js.UndefOr[LegacyRef[Paper]] = js.undefined
   
-  var rounded: js.UndefOr[Boolean] = js.native
+  var rounded: js.UndefOr[Boolean] = js.undefined
   
-  var transitionEnabled: js.UndefOr[Boolean] = js.native
+  var transitionEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
-  var zDepth: js.UndefOr[Double] = js.native
+  var zDepth: js.UndefOr[Double] = js.undefined
 }
 object PaperProps {
   

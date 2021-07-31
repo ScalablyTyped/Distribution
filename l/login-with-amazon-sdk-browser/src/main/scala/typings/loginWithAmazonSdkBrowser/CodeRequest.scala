@@ -2,12 +2,12 @@ package typings.loginWithAmazonSdkBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeRequest
-  extends AuthorizeRequestBase[CodeRequest]
+  extends StObject
+     with AuthorizeRequestBase[CodeRequest]
      with AuthorizeRequest {
   
   /**

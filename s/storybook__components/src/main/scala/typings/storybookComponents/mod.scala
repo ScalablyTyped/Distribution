@@ -413,18 +413,20 @@ import typings.storybookComponents.zoomIFrameMod.ZoomIFrame
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@storybook/components", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@storybook/components", "ActionBar")
   @js.native
   val ActionBar: FunctionComponent[ActionBarProps] = js.native
   
-  @JSImport("@storybook/components", "AddonPanel")
-  @js.native
-  def AddonPanel(hasActiveChildren: AddonPanelProps): Element = js.native
+  @scala.inline
+  def AddonPanel(hasActiveChildren: AddonPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AddonPanel")(hasActiveChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@storybook/components", "ArgsTable")
   @js.native
@@ -435,11 +437,11 @@ object mod {
   object ArgsTableError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.storybookComponents.argsTableArgsTableMod.ArgsTableError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.storybookComponents.argsTableArgsTableMod.ArgsTableError & String] = js.native
     
-    /* "Args unsupported. See Args documentation for your framework." */ val ARGS_UNSUPPORTED: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.ARGS_UNSUPPORTED with String = js.native
+    /* "Args unsupported. See Args documentation for your framework." */ val ARGS_UNSUPPORTED: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.ARGS_UNSUPPORTED & String = js.native
     
-    /* "No component found." */ val NO_COMPONENT: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.NO_COMPONENT with String = js.native
+    /* "No component found." */ val NO_COMPONENT: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.NO_COMPONENT & String = js.native
   }
   
   @JSImport("@storybook/components", "ArrayControl")
@@ -517,12 +519,11 @@ object mod {
   /* Inlined @emotion/styled-base.@emotion/styled-base.StyledComponent<react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement>, std.Pick<react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement>, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'name' | 'method' | 'target' | 'acceptCharset' | 'action' | 'autoComplete' | 'encType' | 'noValidate'>, @storybook/theming.@storybook/theming.Theme> & {  Field :react.react.FunctionComponent<@storybook/components.@storybook/components/dist/form/field/field.FieldProps>,   Input :@emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick<std.Pick<react.react.HTMLProps<std.HTMLInputElement>, 'color' | 'content' | 'translate' | 'width' | 'default' | 'hidden' | 'ref' | 'key' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'formAction' | 'formEncType' | 'formMethod' | 'formNoValidate' | 'formTarget' | 'name' | 'type' | 'value' | 'start' | 'cite' | 'data' | 'label' | 'span' | 'summary' | 'pattern' | 'list' | 'step' | 'wrap' | 'href' | 'open' | 'multiple' | 'cellPadding' | 'cellSpacing' | 'alt' | 'crossOrigin' | 'sizes' | 'src' | 'srcSet' | 'useMap' | 'reversed' | 'max' | 'media' | 'method' | 'min' | 'target' | 'download' | 'hrefLang' | 'rel' | 'htmlFor' | 'accept' | 'acceptCharset' | 'action' | 'allowFullScreen' | 'allowTransparency' | 'as' | 'async' | 'autoComplete' | 'autoPlay' | 'capture' | 'charSet' | 'challenge' | 'checked' | 'classID' | 'cols' | 'colSpan' | 'controls' | 'coords' | 'dateTime' | 'defer' | 'encType' | 'frameBorder' | 'headers' | 'high' | 'httpEquiv' | 'integrity' | 'keyParams' | 'keyType' | 'kind' | 'loop' | 'low' | 'manifest' | 'marginHeight' | 'marginWidth' | 'maxLength' | 'mediaGroup' | 'minLength' | 'muted' | 'nonce' | 'noValidate' | 'optimum' | 'playsInline' | 'poster' | 'preload' | 'readOnly' | 'required' | 'rows' | 'rowSpan' | 'sandbox' | 'scope' | 'scoped' | 'scrolling' | 'seamless' | 'selected' | 'shape' | 'srcDoc' | 'srcLang' | 'wmode'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, 'color' | 'content' | 'height' | 'translate' | 'width' | 'default' | 'hidden' | 'key' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'formAction' | 'formEncType' | 'formMethod' | 'formNoValidate' | 'formTarget' | 'name' | 'type' | 'value' | 'start' | 'cite' | 'data' | 'label' | 'span' | 'summary' | 'pattern' | 'list' | 'step' | 'wrap' | 'href' | 'size' | 'open' | 'multiple' | 'cellPadding' | 'cellSpacing' | 'alt' | 'crossOrigin' | 'sizes' | 'src' | 'srcSet' | 'useMap' | 'reversed' | 'max' | 'media' | 'method' | 'min' | 'target' | 'download' | 'hrefLang' | 'rel' | 'htmlFor' | 'valid' | 'align' | 'accept' | 'acceptCharset' | 'action' | 'allowFullScreen' | 'allowTransparency' | 'as' | 'async' | 'autoComplete' | 'autoPlay' | 'capture' | 'charSet' | 'challenge' | 'checked' | 'classID' | 'cols' | 'colSpan' | 'controls' | 'coords' | 'dateTime' | 'defer' | 'encType' | 'frameBorder' | 'headers' | 'high' | 'httpEquiv' | 'integrity' | 'keyParams' | 'keyType' | 'kind' | 'loop' | 'low' | 'manifest' | 'marginHeight' | 'marginWidth' | 'maxLength' | 'mediaGroup' | 'minLength' | 'muted' | 'nonce' | 'noValidate' | 'optimum' | 'playsInline' | 'poster' | 'preload' | 'readOnly' | 'required' | 'rows' | 'rowSpan' | 'sandbox' | 'scope' | 'scoped' | 'scrolling' | 'seamless' | 'selected' | 'shape' | 'srcDoc' | 'srcLang' | 'wmode'> & react.react.RefAttributes<any>, @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string},   Select :@emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick<react.react.SelectHTMLAttributes<std.HTMLSelectElement>, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'multiple' | 'autoComplete' | 'required'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps & react.react.RefAttributes<any>, std.Pick<react.react.SelectHTMLAttributes<std.HTMLSelectElement>, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'multiple' | 'autoComplete' | 'required'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string},   Textarea :@emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_react-textarea-autosize.TextareaAutosizeProps * / any, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'wrap' | 'autoComplete' | 'cols' | 'maxLength' | 'minLength' | 'readOnly' | 'required' | 'rows' | 'dirName' | 'maxRows' | 'minRows' | 'onHeightChange' | 'cacheMeasurements'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps & react.react.RefAttributes<any>, std.Pick</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_react-textarea-autosize.TextareaAutosizeProps * / any, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'wrap' | 'autoComplete' | 'cols' | 'maxLength' | 'minLength' | 'readOnly' | 'required' | 'rows' | 'dirName' | 'maxRows' | 'minRows' | 'onHeightChange' | 'cacheMeasurements'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string},   Button :react.react.FunctionComponent<any>} */
   object Form {
     
-    @JSImport("@storybook/components", "Form")
-    @js.native
-    def apply(props: PropsWithChildrenDetailed): ReactElement | Null = js.native
-    @JSImport("@storybook/components", "Form")
-    @js.native
-    def apply(props: PropsWithChildrenDetailed, context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildrenDetailed): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildrenDetailed, context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@storybook/components", "Form")
     @js.native
     val ^ : js.Any = js.native
@@ -588,1005 +589,1472 @@ object mod {
     @scala.inline
     def propTypes_=(x: js.UndefOr[WeakValidationMapDetailed]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent[Tag /* <: ComponentType[_] */](tag: Tag): StyledComponent[PropsOf[Tag], PickDetailedHTMLPropsForm, Theme] = js.native
+    @scala.inline
+    def withComponent[Tag /* <: ComponentType[js.Any] */](tag: Tag): StyledComponent[PropsOf[Tag], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[PropsOf[Tag], PickDetailedHTMLPropsForm, Theme]]
+    
     /**
       * @desc this method is type-unsafe
       */
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+    @scala.inline
     def withComponent_a(tag: a): StyledComponent[
         DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_abbr(tag: abbr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_address(tag: address): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_area(tag: area): StyledComponent[
         DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_article(tag: article): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_aside(tag: aside): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_audio(tag: audio): StyledComponent[
         DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_b(tag: b): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_base(tag: base): StyledComponent[
         DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_bdi(tag: bdi): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_bdo(tag: bdo): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_big(tag: big): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_blockquote(tag: blockquote): StyledComponent[
         DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_body(tag: body): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_br(tag: br): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_button(tag: button): StyledComponent[
         DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_canvas(tag: canvas): StyledComponent[
         DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_caption(tag: caption): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGCircleElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_cite(tag: cite): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGClipPathElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_code(tag: code): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_col(tag: col): StyledComponent[
         DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_colgroup(tag: colgroup): StyledComponent[
         DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_data(tag: data): StyledComponent[
         DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_datalist(tag: datalist): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_dd(tag: dd): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDefsElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_del(tag: del): StyledComponent[
         DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDescElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_details(tag: details): StyledComponent[
         DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_dfn(tag: dfn): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_dialog(tag: dialog): StyledComponent[
         DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_div(tag: div): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_dl(tag: dl): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_dt(tag: dt): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGEllipseElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_em(tag: em): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_embed(tag: embed): StyledComponent[
         DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEBlendElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEColorMatrixElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEComponentTransferElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFECompositeElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEConvolveMatrixElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDiffuseLightingElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDisplacementMapElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDistantLightElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDropShadowElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFloodElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncAElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncBElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncGElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncRElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEGaussianBlurElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEImageElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeNodeElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMorphologyElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEOffsetElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEPointLightElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpecularLightingElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpotLightElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETileElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETurbulenceElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_fieldset(tag: fieldset): StyledComponent[
         DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_figcaption(tag: figcaption): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_figure(tag: figure): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFilterElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_footer(tag: footer): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGForeignObjectElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_form(tag: form): StyledComponent[
         DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGGElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_h1(tag: h1): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_h2(tag: h2): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_h3(tag: h3): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_h4(tag: h4): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_h5(tag: h5): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_h6(tag: h6): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_head(tag: head): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_header(tag: header): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_hgroup(tag: hgroup): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_hr(tag: hr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_html(tag: html): StyledComponent[
         DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_i(tag: i): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_iframe(tag: iframe): StyledComponent[
         DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGImageElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_img(tag: img): StyledComponent[
         DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_input(tag: input): StyledComponent[
         DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_ins(tag: ins): StyledComponent[
         DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_kbd(tag: kbd): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_keygen(tag: keygen): StyledComponent[
         DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_label(tag: label): StyledComponent[
         DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_legend(tag: legend): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_li(tag: li): StyledComponent[
         DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLineElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLinearGradientElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_link(tag: link): StyledComponent[
         DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_main(tag: main): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_map(tag: map): StyledComponent[
         DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_mark(tag: mark): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMarkerElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMaskElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_menu(tag: menu): StyledComponent[
         DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_menuitem(tag: menuitem): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_meta(tag: meta): StyledComponent[
         DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMetadataElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_meter(tag: meter): StyledComponent[
         DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_nav(tag: nav): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_noindex(tag: noindex): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_noscript(tag: noscript): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_object(tag: `object`): StyledComponent[
         DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_ol(tag: ol): StyledComponent[
         DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_optgroup(tag: optgroup): StyledComponent[
         DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_option(tag: option): StyledComponent[
         DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_output(tag: output): StyledComponent[
         DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_p(tag: p): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_param(tag: param): StyledComponent[
         DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPathElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPatternElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_picture(tag: picture): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolygonElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolylineElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_pre(tag: pre): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_progress(tag: progress): StyledComponent[
         DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_q(tag: q): StyledComponent[
         DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRadialGradientElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRectElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_rp(tag: rp): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_rt(tag: rt): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_ruby(tag: ruby): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_s(tag: s): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_samp(tag: samp): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_script(tag: script): StyledComponent[
         DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_section(tag: section): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_select(tag: select): StyledComponent[
         DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_slot(tag: slot): StyledComponent[
         DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_small(tag: small): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_source(tag: source): StyledComponent[
         DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_span(tag: span): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGStopElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_strong(tag: strong): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_style(tag: style): StyledComponent[
         DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_sub(tag: sub): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_summary(tag: summary): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_sup(tag: sup): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSVGElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSwitchElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSymbolElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_table(tag: table): StyledComponent[
         DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_tbody(tag: tbody): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_td(tag: td): StyledComponent[
         DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_template(tag: template): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
+    def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextPathElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_textarea(tag: textarea): StyledComponent[
         DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_tfoot(tag: tfoot): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_th(tag: th): StyledComponent[
         DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_thead(tag: thead): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_time(tag: time): StyledComponent[
         DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_title(tag: title): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_tr(tag: tr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_track(tag: track): StyledComponent[
         DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTSpanElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_u(tag: u): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_ul(tag: ul): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGUseElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_var(tag: `var`): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_video(tag: video): StyledComponent[
         DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
-    def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
+    def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGViewElement], PickDetailedHTMLPropsForm, Theme]]
+    
+    @scala.inline
     def withComponent_wbr(tag: wbr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
-    @JSImport("@storybook/components", "Form.withComponent")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
+    
+    @scala.inline
     def withComponent_webview(tag: webview): StyledComponent[
         DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
         PickDetailedHTMLPropsForm, 
         Theme
-      ] = js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[
+        DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ]]
   }
   
   @JSImport("@storybook/components", "IFrame")
@@ -1619,23 +2087,22 @@ object mod {
   
   @JSImport("@storybook/components", "Link")
   @js.native
-  val Link: FunctionComponent[LinkProps with AProps] = js.native
+  val Link: FunctionComponent[LinkProps & AProps] = js.native
   
   @JSImport("@storybook/components", "Loader")
   @js.native
   val Loader: FunctionComponent[
     ComponentProps[
       FunctionComponent[
-        LoaderProps with (ComponentProps[
+        LoaderProps & (ComponentProps[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProgressWrapper */ js.Any
         ])
       ]
     ]
   ] = js.native
   
-  @JSImport("@storybook/components", "NoControlsWarning")
-  @js.native
-  def NoControlsWarning(): Element = js.native
+  @scala.inline
+  def NoControlsWarning(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoControlsWarning")().asInstanceOf[Element]
   
   @JSImport("@storybook/components", "NumberControl")
   @js.native
@@ -1690,11 +2157,11 @@ object mod {
   object SourceError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.storybookComponents.sourceMod.SourceError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.storybookComponents.sourceMod.SourceError & String] = js.native
     
-    /* "There\\u2019s no story here." */ val NO_STORY: typings.storybookComponents.sourceMod.SourceError.NO_STORY with String = js.native
+    /* "There\\u2019s no story here." */ val NO_STORY: typings.storybookComponents.sourceMod.SourceError.NO_STORY & String = js.native
     
-    /* "Oh no! The source is not available." */ val SOURCE_UNAVAILABLE: typings.storybookComponents.sourceMod.SourceError.SOURCE_UNAVAILABLE with String = js.native
+    /* "Oh no! The source is not available." */ val SOURCE_UNAVAILABLE: typings.storybookComponents.sourceMod.SourceError.SOURCE_UNAVAILABLE & String = js.native
   }
   
   @JSImport("@storybook/components", "Spaced")
@@ -1707,16 +2174,16 @@ object mod {
     */
   @JSImport("@storybook/components", "Story")
   @js.native
-  val Story: FunctionComponent[StoryProps with Error] = js.native
+  val Story: FunctionComponent[StoryProps & Error] = js.native
   
   @JSImport("@storybook/components", "StoryError")
   @js.native
   object StoryError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.storybookComponents.storyMod.StoryError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.storybookComponents.storyMod.StoryError & String] = js.native
     
-    /* "No component or story to display" */ val NO_STORY: typings.storybookComponents.storyMod.StoryError.NO_STORY with String = js.native
+    /* "No component or story to display" */ val NO_STORY: typings.storybookComponents.storyMod.StoryError.NO_STORY & String = js.native
   }
   
   @JSImport("@storybook/components", "StorybookIcon")
@@ -1848,15 +2315,12 @@ object mod {
     def IFrame_=(x: Instantiable0[ZoomIFrame]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IFrame")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/components", "format")
-  @js.native
-  def format(value: NumberValue): String = js.native
+  @scala.inline
+  def format(value: NumberValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@storybook/components", "interleaveSeparators")
-  @js.native
-  def interleaveSeparators(list: js.Array[_]): js.Any = js.native
+  @scala.inline
+  def interleaveSeparators(list: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interleaveSeparators")(list.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@storybook/components", "parse")
-  @js.native
-  def parse(value: String): Double = js.native
+  @scala.inline
+  def parse(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

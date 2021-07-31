@@ -8,7 +8,6 @@ import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -86,9 +85,8 @@ object DocumentTemplate {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DocumentTemplate.createIn")
-  @js.native
-  def createIn(container: IFolderBase): DocumentTemplate = js.native
+  @scala.inline
+  def createIn(container: IFolderBase): DocumentTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DocumentTemplate]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DocumentTemplate.structureTypeName")

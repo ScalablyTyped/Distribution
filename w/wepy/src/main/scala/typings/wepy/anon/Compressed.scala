@@ -2,17 +2,15 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compressed extends StObject {
   
-  var compressed: Boolean = js.native
+  var compressed: Boolean
   
-  var maxDuration: Double = js.native
+  var maxDuration: Double
   
-  var sourceType: js.Array[String] = js.native
+  var sourceType: js.Array[String]
 }
 object Compressed {
   

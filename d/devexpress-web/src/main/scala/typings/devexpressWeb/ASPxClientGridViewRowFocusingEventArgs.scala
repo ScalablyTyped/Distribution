@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.RowFocusing event.
   */
-@js.native
-trait ASPxClientGridViewRowFocusingEventArgs extends ASPxClientGridViewRowCancelEventArgs {
+trait ASPxClientGridViewRowFocusingEventArgs
+  extends StObject
+     with ASPxClientGridViewRowCancelEventArgs {
   
   /**
     * Provides access to the parameters associated with the ASPxClientGridView.RowFocusing event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
 }
 object ASPxClientGridViewRowFocusingEventArgs {
   

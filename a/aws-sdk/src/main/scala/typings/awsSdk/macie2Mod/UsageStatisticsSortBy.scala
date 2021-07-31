@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageStatisticsSortBy extends StObject {
   
   /**
     * The field to sort the results by.
     */
-  var key: js.UndefOr[UsageStatisticsSortKey] = js.native
+  var key: js.UndefOr[UsageStatisticsSortKey] = js.undefined
   
   /**
     * The sort order to apply to the results, based on the value for the field specified by the key property. Valid values are: ASC, sort the results in ascending order; and, DESC, sort the results in descending order.
     */
-  var orderBy: js.UndefOr[OrderBy] = js.native
+  var orderBy: js.UndefOr[OrderBy] = js.undefined
 }
 object UsageStatisticsSortBy {
   

@@ -10,9 +10,9 @@ template compiler for Vue 2.0
 | ------------------ | :-------------: |
 | Full name          | vue-template-compiler |
 | Keywords           | vue, compiler |
-| # releases         | 21 |
-| # dependents       | 1938 |
-| # downloads        | 88020458 |
+| # releases         | 9 |
+| # dependents       | 2321 |
+| # downloads        | 120416311 |
 | # stars            | 21 |
 
 ## Links

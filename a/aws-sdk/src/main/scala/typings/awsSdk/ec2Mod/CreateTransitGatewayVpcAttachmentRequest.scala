@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTransitGatewayVpcAttachmentRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The VPC attachment options.
     */
-  var Options: js.UndefOr[CreateTransitGatewayVpcAttachmentRequestOptions] = js.native
+  var Options: js.UndefOr[CreateTransitGatewayVpcAttachmentRequestOptions] = js.undefined
   
   /**
     * The IDs of one or more subnets. You can specify only one subnet per Availability Zone. You must specify at least one subnet, but we recommend that you specify two subnets for better availability. The transit gateway uses one IP address from each specified subnet.
     */
-  var SubnetIds: TransitGatewaySubnetIdList = js.native
+  var SubnetIds: TransitGatewaySubnetIdList
   
   /**
     * The tags to apply to the VPC attachment.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   
   /**
     * The ID of the transit gateway.
     */
-  var TransitGatewayId: typings.awsSdk.ec2Mod.TransitGatewayId = js.native
+  var TransitGatewayId: typings.awsSdk.ec2Mod.TransitGatewayId
   
   /**
     * The ID of the VPC.
     */
-  var VpcId: typings.awsSdk.ec2Mod.VpcId = js.native
+  var VpcId: typings.awsSdk.ec2Mod.VpcId
 }
 object CreateTransitGatewayVpcAttachmentRequest {
   

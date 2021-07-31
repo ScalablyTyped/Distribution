@@ -2,21 +2,19 @@ package typings.systeminformation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Errorcountoutdated extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var error_count_outdated: Double = js.native
+  var error_count_outdated: Double
   
-  var error_count_total: Double = js.native
+  var error_count_total: Double
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var table: js.Array[Lifetimehours] = js.native
+  var table: js.Array[Lifetimehours]
 }
 object Errorcountoutdated {
   

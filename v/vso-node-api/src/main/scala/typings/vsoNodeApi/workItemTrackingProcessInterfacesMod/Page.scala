@@ -2,66 +2,64 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
   /**
     * Contribution for the page.
     */
-  var contribution: WitContribution = js.native
+  var contribution: WitContribution
   
   /**
     * The id for the layout node.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * A value indicating whether this layout node has been inherited from a parent layout.  This is expected to only be only set by the combiner.
     */
-  var inherited: Boolean = js.native
+  var inherited: Boolean
   
   /**
     * A value indicating if the layout node is contribution are not.
     */
-  var isContribution: Boolean = js.native
+  var isContribution: Boolean
   
   /**
     * The label for the page.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * A value indicating whether any user operations are permitted on this page and the contents of this page
     */
-  var locked: Boolean = js.native
+  var locked: Boolean
   
   /**
     * Order in which the page should appear in the layout.
     */
-  var order: Double = js.native
+  var order: Double
   
   /**
     * A value indicating whether this layout node has been overridden by a child layout.
     */
-  var overridden: Boolean = js.native
+  var overridden: Boolean
   
   /**
     * The icon for the page.
     */
-  var pageType: PageType = js.native
+  var pageType: PageType
   
   /**
     * The sections of the page.
     */
-  var sections: js.Array[Section] = js.native
+  var sections: js.Array[Section]
   
   /**
     * A value indicating if the page should be hidden or not.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object Page {
   

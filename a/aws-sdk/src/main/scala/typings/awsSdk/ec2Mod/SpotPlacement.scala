@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotPlacement extends StObject {
   
   /**
     * The Availability Zone. [Spot Fleet only] To specify multiple Availability Zones, separate them using commas; for example, "us-west-2a, us-west-2b".
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the placement group.
     */
-  var GroupName: js.UndefOr[String] = js.native
+  var GroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware. The host tenancy is not supported for Spot Instances.
     */
-  var Tenancy: js.UndefOr[typings.awsSdk.ec2Mod.Tenancy] = js.native
+  var Tenancy: js.UndefOr[typings.awsSdk.ec2Mod.Tenancy] = js.undefined
 }
 object SpotPlacement {
   

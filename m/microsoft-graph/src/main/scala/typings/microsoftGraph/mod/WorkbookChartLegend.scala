@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartLegend extends Entity {
+trait WorkbookChartLegend
+  extends StObject
+     with Entity {
   
   // Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
-  var format: js.UndefOr[NullableOption[WorkbookChartLegendFormat]] = js.native
+  var format: js.UndefOr[NullableOption[WorkbookChartLegendFormat]] = js.undefined
   
   // Boolean value for whether the chart legend should overlap with the main body of the chart.
-  var overlay: js.UndefOr[NullableOption[Boolean]] = js.native
+  var overlay: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Represents the position of the legend on the chart. The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-  var position: js.UndefOr[NullableOption[String]] = js.native
+  var position: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A boolean value the represents the visibility of a ChartLegend object.
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object WorkbookChartLegend {
   

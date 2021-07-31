@@ -2,16 +2,14 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSystemInstanceRequest extends StObject {
   
   /**
     * The ID of the system instance to be deleted.
     */
-  var id: js.UndefOr[Urn] = js.native
+  var id: js.UndefOr[Urn] = js.undefined
 }
 object DeleteSystemInstanceRequest {
   

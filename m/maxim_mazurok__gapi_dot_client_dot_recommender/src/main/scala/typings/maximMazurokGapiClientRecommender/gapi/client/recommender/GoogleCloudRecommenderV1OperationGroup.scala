@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommenderV1OperationGroup extends StObject {
   
   /** List of operations across one or more resources that belong to this group. Loosely based on RFC6902 and should be performed in the order they appear. */
-  var operations: js.UndefOr[js.Array[GoogleCloudRecommenderV1Operation]] = js.native
+  var operations: js.UndefOr[js.Array[GoogleCloudRecommenderV1Operation]] = js.undefined
 }
 object GoogleCloudRecommenderV1OperationGroup {
   

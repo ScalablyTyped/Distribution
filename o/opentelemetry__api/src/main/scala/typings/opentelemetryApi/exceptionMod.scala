@@ -2,7 +2,6 @@ package typings.opentelemetryApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exceptionMod {
@@ -15,16 +14,17 @@ object exceptionMod {
   */
   type Exception = _Exception | String
   
-  @js.native
-  trait ExceptionWithCode extends _Exception {
+  trait ExceptionWithCode
+    extends StObject
+       with _Exception {
     
-    var code: String = js.native
+    var code: String
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object ExceptionWithCode {
     
@@ -60,16 +60,17 @@ object exceptionMod {
     }
   }
   
-  @js.native
-  trait ExceptionWithMessage extends _Exception {
+  trait ExceptionWithMessage
+    extends StObject
+       with _Exception {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object ExceptionWithMessage {
     
@@ -105,16 +106,17 @@ object exceptionMod {
     }
   }
   
-  @js.native
-  trait ExceptionWithName extends _Exception {
+  trait ExceptionWithName
+    extends StObject
+       with _Exception {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object ExceptionWithName {
     

@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotAbandsTopLineStylesOptions extends StObject {
   
   /**
     * (Highstock) Pixel width of the line.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
 }
 object PlotAbandsTopLineStylesOptions {
   

@@ -11,8 +11,8 @@ Render a gif and provide frames to draw.
 | Full name          | render-gif |
 | Keywords           | gif, render, animate, sequence, decode, parse, draw, write, buffer |
 | # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 1294 |
+| # dependents       | 2 |
+| # downloads        | 21909 |
 | # stars            | 0 |
 
 ## Links

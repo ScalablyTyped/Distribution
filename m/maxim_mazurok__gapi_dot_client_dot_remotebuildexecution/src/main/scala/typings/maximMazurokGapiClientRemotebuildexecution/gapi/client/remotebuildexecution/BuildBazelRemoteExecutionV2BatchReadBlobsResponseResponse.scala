@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse extends StObject {
   
   /** The raw binary data. */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /** The digest to which this response corresponds. */
-  var digest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.native
+  var digest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /** The result of attempting to download that blob. */
-  var status: js.UndefOr[GoogleRpcStatus] = js.native
+  var status: js.UndefOr[GoogleRpcStatus] = js.undefined
 }
 object BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse {
   

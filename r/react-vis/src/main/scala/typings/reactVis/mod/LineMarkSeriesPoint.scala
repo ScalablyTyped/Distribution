@@ -3,25 +3,25 @@ package typings.reactVis.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineMarkSeriesPoint extends AbstractSeriesPoint {
+trait LineMarkSeriesPoint
+  extends StObject
+     with AbstractSeriesPoint {
   
-  var color: js.UndefOr[String | Double] = js.native
+  var color: js.UndefOr[String | Double] = js.undefined
   
-  var fill: js.UndefOr[String | Double] = js.native
+  var fill: js.UndefOr[String | Double] = js.undefined
   
-  var opacity: js.UndefOr[String | Double] = js.native
+  var opacity: js.UndefOr[String | Double] = js.undefined
   
-  var size: js.UndefOr[String | Double] = js.native
+  var size: js.UndefOr[String | Double] = js.undefined
   
-  var stroke: js.UndefOr[String | Double] = js.native
+  var stroke: js.UndefOr[String | Double] = js.undefined
   
-  var x: String | Double | Date = js.native
+  var x: String | Double | Date
   
-  var y: String | Double | Date = js.native
+  var y: String | Double | Date
 }
 object LineMarkSeriesPoint {
   

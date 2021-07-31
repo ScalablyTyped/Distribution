@@ -2,25 +2,23 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextMenu extends StObject {
   
-  def addItem(item: MenuItem): Unit = js.native
+  def addItem(item: MenuItem): Unit
   
-  def addSeparator(): Unit = js.native
+  def addSeparator(): Unit
   
-  def getItem(index: Double): MenuItem = js.native
+  def getItem(index: Double): MenuItem
   
-  def onclose(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def onclose(event: typings.baidumapWebSdk.anon.Pixel): Unit
   
-  def onopen(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def onopen(event: typings.baidumapWebSdk.anon.Pixel): Unit
   
-  def removeItem(item: MenuItem): Unit = js.native
+  def removeItem(item: MenuItem): Unit
   
-  def removeSeparator(index: Double): Unit = js.native
+  def removeSeparator(index: Double): Unit
 }
 object ContextMenu {
   

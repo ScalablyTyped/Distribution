@@ -2,7 +2,6 @@ package typings.noisejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,12 +13,10 @@ object mod {
     * @param  {number} seed
     * @return {Noise}       Noise instance
     */
-  class ^ () extends Noise {
+  class ^ ()
+    extends StObject
+       with Noise {
     def this(seed: Double) = this()
-  }
-  
-  @js.native
-  trait Noise extends StObject {
     
     /**
       * 2D Perlin Noise
@@ -27,7 +24,8 @@ object mod {
       * @param  {number} y
       * @return {number} noise value
       */
-    def perlin2(x: Double, y: Double): Double = js.native
+    /* CompleteClass */
+    override def perlin2(x: Double, y: Double): Double = js.native
     
     /**
       * 3D Perlin Noise
@@ -36,14 +34,16 @@ object mod {
       * @param  {number} z
       * @return {number} noise value
       */
-    def perlin3(x: Double, y: Double, z: Double): Double = js.native
+    /* CompleteClass */
+    override def perlin3(x: Double, y: Double, z: Double): Double = js.native
     
     /**
       * This isn't a very good seeding function, but it works ok. It supports 2^16
       * different seed values. Write something better if you need more seeds.
       * @param {number} seed [description]
       */
-    def seed(seed: Double): Unit = js.native
+    /* CompleteClass */
+    override def seed(seed: Double): Unit = js.native
     
     /**
       * 2D simplex noise
@@ -51,7 +51,8 @@ object mod {
       * @param  {number} y
       * @return {number} noise value
       */
-    def simplex2(x: Double, y: Double): Double = js.native
+    /* CompleteClass */
+    override def simplex2(x: Double, y: Double): Double = js.native
     
     /**
       * 3D simplex noise
@@ -60,7 +61,52 @@ object mod {
       * @param  {number} z
       * @return {number} noise value
       */
-    def simplex3(x: Double, y: Double, z: Double): Double = js.native
+    /* CompleteClass */
+    override def simplex3(x: Double, y: Double, z: Double): Double = js.native
+  }
+  
+  trait Noise extends StObject {
+    
+    /**
+      * 2D Perlin Noise
+      * @param  {number} x
+      * @param  {number} y
+      * @return {number} noise value
+      */
+    def perlin2(x: Double, y: Double): Double
+    
+    /**
+      * 3D Perlin Noise
+      * @param  {number} x
+      * @param  {number} y
+      * @param  {number} z
+      * @return {number} noise value
+      */
+    def perlin3(x: Double, y: Double, z: Double): Double
+    
+    /**
+      * This isn't a very good seeding function, but it works ok. It supports 2^16
+      * different seed values. Write something better if you need more seeds.
+      * @param {number} seed [description]
+      */
+    def seed(seed: Double): Unit
+    
+    /**
+      * 2D simplex noise
+      * @param  {number} x
+      * @param  {number} y
+      * @return {number} noise value
+      */
+    def simplex2(x: Double, y: Double): Double
+    
+    /**
+      * 3D simplex noise
+      * @param  {number} x
+      * @param  {number} y
+      * @param  {number} z
+      * @return {number} noise value
+      */
+    def simplex3(x: Double, y: Double, z: Double): Double
   }
   object Noise {
     

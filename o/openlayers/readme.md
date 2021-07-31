@@ -11,8 +11,8 @@ Build tools and sources for developing OpenLayers based mapping applications
 | Full name          | openlayers |
 | Keywords           | map, mapping, ol |
 | # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 365350 |
+| # dependents       | 51 |
+| # downloads        | 275497 |
 | # stars            | 15 |
 
 ## Links

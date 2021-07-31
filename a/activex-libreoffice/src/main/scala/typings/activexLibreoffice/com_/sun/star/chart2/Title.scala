@@ -8,15 +8,15 @@ import typings.activexLibreoffice.com_.sun.star.drawing.LineProperties
 import typings.activexLibreoffice.com_.sun.star.style.ParagraphProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Title
-  extends PropertySet
+  extends StObject
      with ParagraphProperties
      with FillProperties
      with LineProperties
+     with PropertySet
      with XTitle {
   
   /**

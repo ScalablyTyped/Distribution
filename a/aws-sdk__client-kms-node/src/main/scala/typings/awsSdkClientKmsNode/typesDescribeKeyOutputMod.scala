@@ -5,24 +5,24 @@ import typings.awsSdkClientKmsNode.typesKeyMetadataMod.UnmarshalledKeyMetadata
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDescribeKeyOutputMod {
   
-  @js.native
-  trait DescribeKeyOutput extends OutputTypesUnion {
+  trait DescribeKeyOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Metadata associated with the key.</p>
       */
-    var KeyMetadata: js.UndefOr[UnmarshalledKeyMetadata] = js.native
+    var KeyMetadata: js.UndefOr[UnmarshalledKeyMetadata] = js.undefined
   }
   object DescribeKeyOutput {
     

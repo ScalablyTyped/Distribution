@@ -4,23 +4,23 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2GearJoint extends b2Joint {
+trait b2GearJoint
+  extends StObject
+     with b2Joint {
   
   /**
     * Get the gear ratio.
     * @return Gear ratio.
     **/
-  def GetRatio(): Double = js.native
+  def GetRatio(): Double
   
   /**
     * Set the gear ratio.
     * @param force New gear ratio.
     **/
-  def SetRatio(ratio: Double): Unit = js.native
+  def SetRatio(ratio: Double): Unit
 }
 object b2GearJoint {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaFunctionScheduledEventDetails extends StObject {
   
   /**
     * The JSON data input to the lambda function. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
     */
-  var input: js.UndefOr[SensitiveData] = js.native
+  var input: js.UndefOr[SensitiveData] = js.undefined
   
   /**
     * Contains details about input for an execution history event.
     */
-  var inputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.native
+  var inputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the scheduled lambda function.
     */
-  var resource: Arn = js.native
+  var resource: Arn
   
   /**
     * The maximum allowed duration of the lambda function.
     */
-  var timeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.native
+  var timeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
 }
 object LambdaFunctionScheduledEventDetails {
   

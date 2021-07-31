@@ -5,25 +5,25 @@ import typings.std.PropertyKey
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreatePopupTemplateOptions extends Object {
+trait CreatePopupTemplateOptions
+  extends StObject
+     with Object {
   
   /**
     * An array of field types to ignore when creating the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#CreatePopupTemplateOptions)
     */
-  var ignoreFieldTypes: js.UndefOr[js.Array[String]] = js.native
+  var ignoreFieldTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An array of field names set to be visible within the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#CreatePopupTemplateOptions)
     */
-  var visibleFieldNames: js.UndefOr[Set[String]] = js.native
+  var visibleFieldNames: js.UndefOr[Set[String]] = js.undefined
 }
 object CreatePopupTemplateOptions {
   

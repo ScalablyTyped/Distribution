@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.DataEntity")
@@ -37,9 +36,8 @@ object DataEntity {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.DataEntity.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.DataEntity]
   
   /**
     * Creates and returns a new DataEntity instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object DataEntity {
     * of the parent DataEntityBase element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.DataEntity.createInDataEntityBaseUnderChildMembers")
-  @js.native
-  def createInDataEntityBaseUnderChildMembers(container: typings.mendixmodelsdk.webservicesMod.webservices.DataEntityBase): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = js.native
+  @scala.inline
+  def createInDataEntityBaseUnderChildMembers(container: typings.mendixmodelsdk.webservicesMod.webservices.DataEntityBase): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataEntityBaseUnderChildMembers")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.DataEntity]
   
   /**
     * Creates and returns a new DataEntity instance in the SDK and on the server.
@@ -57,9 +54,8 @@ object DataEntity {
     * of the parent PublishedParameter element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.DataEntity.createInPublishedParameterUnderDataEntity")
-  @js.native
-  def createInPublishedParameterUnderDataEntity(container: typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = js.native
+  @scala.inline
+  def createInPublishedParameterUnderDataEntity(container: typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderDataEntity")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.DataEntity]
   
   /**
     * Creates and returns a new DataEntity instance in the SDK and on the server.
@@ -67,9 +63,8 @@ object DataEntity {
     * of the parent PublishedResource element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.DataEntity.createInPublishedResourceUnderDataEntity")
-  @js.native
-  def createInPublishedResourceUnderDataEntity(container: typings.mendixmodelsdk.webservicesMod.webservices.PublishedResource): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = js.native
+  @scala.inline
+  def createInPublishedResourceUnderDataEntity(container: typings.mendixmodelsdk.webservicesMod.webservices.PublishedResource): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedResourceUnderDataEntity")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.DataEntity]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.DataEntity.structureTypeName")

@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbsMod {
@@ -22,28 +21,27 @@ object breadcrumbsMod {
   @js.native
   val StyledSeparator: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait BreadcrumbsOverrides extends StObject {
     
     var Icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var List: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ListItem: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Separator: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object BreadcrumbsOverrides {
     
@@ -98,16 +96,15 @@ object breadcrumbsMod {
     }
   }
   
-  @js.native
   trait BreadcrumbsProps extends StObject {
     
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var overrides: js.UndefOr[BreadcrumbsOverrides] = js.native
+    var overrides: js.UndefOr[BreadcrumbsOverrides] = js.undefined
     
-    var showTrailingSeparator: js.UndefOr[Boolean] = js.native
+    var showTrailingSeparator: js.UndefOr[Boolean] = js.undefined
   }
   object BreadcrumbsProps {
     

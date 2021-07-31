@@ -2,83 +2,81 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchSpecification extends StObject {
   
   /**
     * Deprecated.
     */
-  var AddressingType: js.UndefOr[String] = js.native
+  var AddressingType: js.UndefOr[String] = js.undefined
   
   /**
     * One or more block device mapping entries.
     */
-  var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.native
+  var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.undefined
   
   /**
     * Indicates whether the instance is optimized for EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance. Default: false 
     */
-  var EbsOptimized: js.UndefOr[Boolean] = js.native
+  var EbsOptimized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IAM instance profile.
     */
-  var IamInstanceProfile: js.UndefOr[IamInstanceProfileSpecification] = js.native
+  var IamInstanceProfile: js.UndefOr[IamInstanceProfileSpecification] = js.undefined
   
   /**
     * The ID of the AMI.
     */
-  var ImageId: js.UndefOr[String] = js.native
+  var ImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The instance type.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * The ID of the kernel.
     */
-  var KernelId: js.UndefOr[String] = js.native
+  var KernelId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[String] = js.native
+  var KeyName: js.UndefOr[String] = js.undefined
   
-  var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.native
+  var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.undefined
   
   /**
     * One or more network interfaces. If you specify a network interface, you must specify subnet IDs and security group IDs using the network interface.
     */
-  var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.native
+  var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.undefined
   
   /**
     * The placement information for the instance.
     */
-  var Placement: js.UndefOr[SpotPlacement] = js.native
+  var Placement: js.UndefOr[SpotPlacement] = js.undefined
   
   /**
     * The ID of the RAM disk.
     */
-  var RamdiskId: js.UndefOr[String] = js.native
+  var RamdiskId: js.UndefOr[String] = js.undefined
   
   /**
     * One or more security groups. When requesting instances in a VPC, you must specify the IDs of the security groups. When requesting instances in EC2-Classic, you can specify the names or the IDs of the security groups.
     */
-  var SecurityGroups: js.UndefOr[GroupIdentifierList] = js.native
+  var SecurityGroups: js.UndefOr[GroupIdentifierList] = js.undefined
   
   /**
     * The ID of the subnet in which to launch the instance.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[String] = js.undefined
   
   /**
     * The Base64-encoded user data for the instance.
     */
-  var UserData: js.UndefOr[String] = js.native
+  var UserData: js.UndefOr[String] = js.undefined
 }
 object LaunchSpecification {
   

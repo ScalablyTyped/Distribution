@@ -2,13 +2,11 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for the external VPN gateway.
   */
-@js.native
 trait SchemaExternalVpnGatewayInterface extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaExternalVpnGatewayInterface extends StObject {
     * SINGLE_IP_INTERNALLY_REDUNDANT - 0 TWO_IPS_REDUNDANCY - 0, 1
     * FOUR_IPS_REDUNDANCY - 0, 1, 2, 3
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     * IP address of the interface in the external VPN gateway. Only IPv4 is
@@ -25,7 +23,7 @@ trait SchemaExternalVpnGatewayInterface extends StObject {
     * another Cloud provider?s VPN gateway, it cannot be an IP address from
     * Google Compute Engine.
     */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
 }
 object SchemaExternalVpnGatewayInterface {
   

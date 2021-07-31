@@ -2,22 +2,20 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnVar extends StObject {
   
   @JSName("Access.ReturnVar_typekey")
-  var AccessDotReturnVar_typekey: ReturnVar = js.native
+  var AccessDotReturnVar_typekey: ReturnVar
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  val Value: String | Double = js.native
+  val Value: String | Double
   
-  val _Value: String | Double = js.native
+  val _Value: String | Double
 }
 object ReturnVar {
   

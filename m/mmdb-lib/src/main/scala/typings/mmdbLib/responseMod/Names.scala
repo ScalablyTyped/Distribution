@@ -2,27 +2,25 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Names extends StObject {
   
-  val de: js.UndefOr[String] = js.native
+  val de: js.UndefOr[String] = js.undefined
   
-  val en: String = js.native
+  val en: String
   
-  val es: js.UndefOr[String] = js.native
+  val es: js.UndefOr[String] = js.undefined
   
-  val fr: js.UndefOr[String] = js.native
+  val fr: js.UndefOr[String] = js.undefined
   
-  val ja: js.UndefOr[String] = js.native
+  val ja: js.UndefOr[String] = js.undefined
   
-  val `pt-BR`: js.UndefOr[String] = js.native
+  val `pt-BR`: js.UndefOr[String] = js.undefined
   
-  val ru: js.UndefOr[String] = js.native
+  val ru: js.UndefOr[String] = js.undefined
   
-  val `zh-CN`: js.UndefOr[String] = js.native
+  val `zh-CN`: js.UndefOr[String] = js.undefined
 }
 object Names {
   

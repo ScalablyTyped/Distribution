@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountLimit extends StObject {
   
   /**
     * The name of the account limit. Values: ConcurrentResourcesLimit | StackLimit | StackOutputsLimit 
     */
-  var Name: js.UndefOr[LimitName] = js.native
+  var Name: js.UndefOr[LimitName] = js.undefined
   
   /**
     * The value that is associated with the account limit name.
     */
-  var Value: js.UndefOr[LimitValue] = js.native
+  var Value: js.UndefOr[LimitValue] = js.undefined
 }
 object AccountLimit {
   

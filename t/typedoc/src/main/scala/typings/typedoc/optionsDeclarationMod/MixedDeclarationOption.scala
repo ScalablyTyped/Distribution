@@ -3,19 +3,18 @@ package typings.typedoc.optionsDeclarationMod
 import typings.typedoc.optionsDeclarationMod.ParameterType.Mixed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MixedDeclarationOption
-  extends DeclarationOptionBase
+  extends StObject
+     with DeclarationOptionBase
      with _DeclarationOption
      with _KeyToDeclaration[js.Any] {
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
   @JSName("type")
-  var type_MixedDeclarationOption: Mixed = js.native
+  var type_MixedDeclarationOption: Mixed
 }
 object MixedDeclarationOption {
   

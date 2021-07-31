@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.deployment
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated DeprecatedUse XExtensionManager.
   * @since OOo 2.0
   */
-@js.native
 trait XPackageManagerFactory extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait XPackageManagerFactory extends StObject {
     * @returns {@link XPackageManager} object
     * @throws com::sun::star::lang::IllegalArgumentException in case of an invalid context
     */
-  def getPackageManager(context: String): XPackageManager = js.native
+  def getPackageManager(context: String): XPackageManager
 }
 object XPackageManagerFactory {
   

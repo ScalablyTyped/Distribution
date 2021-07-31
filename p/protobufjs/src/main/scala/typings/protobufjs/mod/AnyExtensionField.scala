@@ -2,7 +2,6 @@ package typings.protobufjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Any extension field descriptor. */
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.protobufjs.mod.IExtensionField
   - typings.protobufjs.mod.IExtensionMapField
 */
-trait AnyExtensionField extends AnyNestedObject
+trait AnyExtensionField
+  extends StObject
+     with AnyNestedObject
 object AnyExtensionField {
   
   @scala.inline

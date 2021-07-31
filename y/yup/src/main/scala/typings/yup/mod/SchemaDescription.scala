@@ -4,21 +4,21 @@ import typings.std.Record
 import typings.yup.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SchemaDescription extends SchemaFieldDescription {
+trait SchemaDescription
+  extends StObject
+     with SchemaFieldDescription {
   
-  var fields: Record[String, SchemaFieldDescription] = js.native
+  var fields: Record[String, SchemaFieldDescription]
   
-  var label: String = js.native
+  var label: String
   
-  var meta: js.Object = js.native
+  var meta: js.Object
   
-  var tests: js.Array[Name] = js.native
+  var tests: js.Array[Name]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object SchemaDescription {
   

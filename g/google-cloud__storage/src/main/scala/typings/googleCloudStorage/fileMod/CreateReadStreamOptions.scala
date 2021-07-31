@@ -6,21 +6,19 @@ import typings.googleCloudStorage.googleCloudStorageStrings.crc32c
 import typings.googleCloudStorage.googleCloudStorageStrings.md5
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateReadStreamOptions extends StObject {
   
-  var decompress: js.UndefOr[Boolean] = js.native
+  var decompress: js.UndefOr[Boolean] = js.undefined
   
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
   
-  var validation: js.UndefOr[md5 | crc32c | `false` | `true`] = js.native
+  var validation: js.UndefOr[md5 | crc32c | `false` | `true`] = js.undefined
 }
 object CreateReadStreamOptions {
   

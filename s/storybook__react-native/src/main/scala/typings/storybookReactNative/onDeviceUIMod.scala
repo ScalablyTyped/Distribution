@@ -5,7 +5,6 @@ import typings.reactNative.mod.Animated.Value
 import typings.storybookReactNative.absolutePositionedKeyboardAwareViewMod.PreviewDimens
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onDeviceUIMod {
@@ -31,20 +30,19 @@ object onDeviceUIMod {
     def onLayout(hasPreviewWidthPreviewHeight: PreviewDimens): Unit = js.native
   }
   
-  @js.native
   trait OnDeviceUIProps extends StObject {
     
-    var isUIHidden: js.UndefOr[Boolean] = js.native
+    var isUIHidden: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardAvoidingViewVerticalOffset: js.UndefOr[Double] = js.native
+    var keyboardAvoidingViewVerticalOffset: js.UndefOr[Double] = js.undefined
     
-    var shouldDisableKeyboardAvoidingView: js.UndefOr[Boolean] = js.native
+    var shouldDisableKeyboardAvoidingView: js.UndefOr[Boolean] = js.undefined
     
-    var stories: js.Any = js.native
+    var stories: js.Any
     
-    var tabOpen: js.UndefOr[Double] = js.native
+    var tabOpen: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object OnDeviceUIProps {
     
@@ -92,16 +90,15 @@ object onDeviceUIMod {
     }
   }
   
-  @js.native
   trait OnDeviceUIState extends StObject {
     
-    var previewHeight: Double = js.native
+    var previewHeight: Double
     
-    var previewWidth: Double = js.native
+    var previewWidth: Double
     
-    var slideBetweenAnimation: Boolean = js.native
+    var slideBetweenAnimation: Boolean
     
-    var tabOpen: Double = js.native
+    var tabOpen: Double
   }
   object OnDeviceUIState {
     

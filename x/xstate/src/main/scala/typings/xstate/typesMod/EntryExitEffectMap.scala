@@ -2,15 +2,13 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntryExitEffectMap[TContext, TEvent /* <: EventObject */] extends StObject {
   
-  var entry: js.Array[ActionObject[TContext, TEvent]] = js.native
+  var entry: js.Array[ActionObject[TContext, TEvent]]
   
-  var exit: js.Array[ActionObject[TContext, TEvent]] = js.native
+  var exit: js.Array[ActionObject[TContext, TEvent]]
 }
 object EntryExitEffectMap {
   
@@ -21,7 +19,7 @@ object EntryExitEffectMap {
   }
   
   @scala.inline
-  implicit class EntryExitEffectMapMutableBuilder[Self <: EntryExitEffectMap[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (EntryExitEffectMap[TContext, TEvent])) extends AnyVal {
+  implicit class EntryExitEffectMapMutableBuilder[Self <: EntryExitEffectMap[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (EntryExitEffectMap[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setEntry(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])

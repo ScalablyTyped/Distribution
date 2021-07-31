@@ -3,15 +3,13 @@ package typings.openfin.anon
 import typings.openfin.windowOptionMod.CustomRequestHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `6` extends StObject {
   
-  var newVal: js.UndefOr[js.Array[CustomRequestHeaders]] = js.native
+  var newVal: js.UndefOr[js.Array[CustomRequestHeaders]] = js.undefined
   
-  var oldVal: js.UndefOr[js.Array[CustomRequestHeaders]] = js.native
+  var oldVal: js.UndefOr[js.Array[CustomRequestHeaders]] = js.undefined
 }
 object `6` {
   

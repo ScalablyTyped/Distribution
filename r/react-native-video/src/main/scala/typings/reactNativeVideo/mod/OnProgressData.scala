@@ -2,17 +2,15 @@ package typings.reactNativeVideo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnProgressData extends StObject {
   
-  var currentTime: Double = js.native
+  var currentTime: Double
   
-  var playableDuration: Double = js.native
+  var playableDuration: Double
   
-  var seekableDuration: Double = js.native
+  var seekableDuration: Double
 }
 object OnProgressData {
   

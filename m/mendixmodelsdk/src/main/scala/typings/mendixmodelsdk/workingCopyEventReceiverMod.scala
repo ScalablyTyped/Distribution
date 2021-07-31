@@ -7,7 +7,6 @@ import typings.mendixmodelsdk.iworkingcopyeventMod.IBuildResultEvent
 import typings.mendixmodelsdk.iworkingcopyeventMod.IWorkingCopyDataEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workingCopyEventReceiverMod {

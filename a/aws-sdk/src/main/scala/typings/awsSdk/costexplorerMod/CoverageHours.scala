@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoverageHours extends StObject {
   
   /**
     * The percentage of instance hours that a reservation covered.
     */
-  var CoverageHoursPercentage: js.UndefOr[typings.awsSdk.costexplorerMod.CoverageHoursPercentage] = js.native
+  var CoverageHoursPercentage: js.UndefOr[typings.awsSdk.costexplorerMod.CoverageHoursPercentage] = js.undefined
   
   /**
     * The number of instance running hours that On-Demand Instances covered.
     */
-  var OnDemandHours: js.UndefOr[typings.awsSdk.costexplorerMod.OnDemandHours] = js.native
+  var OnDemandHours: js.UndefOr[typings.awsSdk.costexplorerMod.OnDemandHours] = js.undefined
   
   /**
     * The number of instance running hours that reservations covered.
     */
-  var ReservedHours: js.UndefOr[typings.awsSdk.costexplorerMod.ReservedHours] = js.native
+  var ReservedHours: js.UndefOr[typings.awsSdk.costexplorerMod.ReservedHours] = js.undefined
   
   /**
     * The total instance usage, in hours.
     */
-  var TotalRunningHours: js.UndefOr[typings.awsSdk.costexplorerMod.TotalRunningHours] = js.native
+  var TotalRunningHours: js.UndefOr[typings.awsSdk.costexplorerMod.TotalRunningHours] = js.undefined
 }
 object CoverageHours {
   

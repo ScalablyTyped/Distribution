@@ -3,27 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Schedule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyScheduleHeaders extends StObject {
   
-  var body: Schedule = js.native
+  var body: Schedule
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Schedule = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Schedule
 }
 object BodyScheduleHeaders {
   
   @scala.inline
-  def apply(body: Schedule, id: String, resourceType: typings.fhirKitClient.fhirKitClientStrings.Schedule): BodyScheduleHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Schedule, id: String): BodyScheduleHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Schedule")
     __obj.asInstanceOf[BodyScheduleHeaders]
   }
   

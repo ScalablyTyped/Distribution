@@ -4,17 +4,17 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabsProps extends HTMLAttributes[HTMLDivElement] {
+trait TabsProps
+  extends StObject
+     with HTMLAttributes[HTMLDivElement] {
   
-  var defaultSelectedIndex: js.UndefOr[Double] = js.native
+  var defaultSelectedIndex: js.UndefOr[Double] = js.undefined
   
-  var justified: js.UndefOr[Boolean] = js.native
+  var justified: js.UndefOr[Boolean] = js.undefined
   
-  var selectedIndex: js.UndefOr[Double] = js.native
+  var selectedIndex: js.UndefOr[Double] = js.undefined
 }
 object TabsProps {
   

@@ -3,15 +3,15 @@ package typings.phaser.anon
 import typings.phaser.MatterJS._Dependency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Version extends _Dependency {
+trait Version
+  extends StObject
+     with _Dependency {
   
-  var name: String = js.native
+  var name: String
   
-  var version: String = js.native
+  var version: String
 }
 object Version {
   

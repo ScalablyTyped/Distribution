@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetIpAddressTypeInput extends StObject {
   
   /**
     * The IP address type. The possible values are ipv4 (for IPv4 addresses) and dualstack (for IPv4 and IPv6 addresses). Internal load balancers must use ipv4. You can’t specify dualstack for a load balancer with a UDP or TCP_UDP listener.
     */
-  var IpAddressType: typings.awsSdk.elbv2Mod.IpAddressType = js.native
+  var IpAddressType: typings.awsSdk.elbv2Mod.IpAddressType
   
   /**
     * The Amazon Resource Name (ARN) of the load balancer.
     */
-  var LoadBalancerArn: typings.awsSdk.elbv2Mod.LoadBalancerArn = js.native
+  var LoadBalancerArn: typings.awsSdk.elbv2Mod.LoadBalancerArn
 }
 object SetIpAddressTypeInput {
   

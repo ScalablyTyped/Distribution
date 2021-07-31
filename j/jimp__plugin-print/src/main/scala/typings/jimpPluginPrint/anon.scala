@@ -5,19 +5,17 @@ import typings.jimpPluginPrint.mod.Font
 import typings.jimpPluginPrint.mod.PrintableText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AlignmentX extends StObject {
     
-    var alignmentX: Double = js.native
+    var alignmentX: Double
     
-    var alignmentY: Double = js.native
+    var alignmentY: Double
     
-    var text: String = js.native
+    var text: String
   }
   object AlignmentX {
     
@@ -72,7 +70,7 @@ object anon {
     var FONT_SANS_8_WHITE: String = js.native
     
     def loadFont(file: String): js.Promise[Font] = js.native
-    def loadFont(file: String, cb: GenericCallback[Font, _, _]): js.Promise[scala.Nothing] = js.native
+    def loadFont(file: String, cb: GenericCallback[Font, js.Any, js.Any]): js.Promise[scala.Nothing] = js.native
     
     def measureText(font: Font, text: PrintableText): Double = js.native
     

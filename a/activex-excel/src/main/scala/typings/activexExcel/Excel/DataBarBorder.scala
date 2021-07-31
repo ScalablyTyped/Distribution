@@ -2,24 +2,22 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataBarBorder extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Color: FormatColor = js.native
+  val Color: FormatColor
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.DataBarBorder_typekey")
-  var ExcelDotDataBarBorder_typekey: DataBarBorder = js.native
+  var ExcelDotDataBarBorder_typekey: DataBarBorder
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Type: XlDataBarBorderType = js.native
+  var Type: XlDataBarBorderType
 }
 object DataBarBorder {
   

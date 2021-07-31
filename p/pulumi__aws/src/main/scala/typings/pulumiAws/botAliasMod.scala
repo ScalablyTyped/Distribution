@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object botAliasMod {
@@ -74,6 +73,10 @@ object botAliasMod {
   /* static members */
   object BotAlias {
     
+    @JSImport("@pulumi/aws/lex/botAlias", "BotAlias")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing BotAlias resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -83,55 +86,49 @@ object botAliasMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lex/botAlias", "BotAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID]): BotAlias = js.native
-    @JSImport("@pulumi/aws/lex/botAlias", "BotAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BotAlias = js.native
-    @JSImport("@pulumi/aws/lex/botAlias", "BotAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BotAliasState): BotAlias = js.native
-    @JSImport("@pulumi/aws/lex/botAlias", "BotAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BotAliasState, opts: CustomResourceOptions): BotAlias = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BotAliasState): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BotAliasState, opts: CustomResourceOptions): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
     
     /**
       * Returns true if the given object is an instance of BotAlias.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lex/botAlias", "BotAlias.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/botAlias.BotAlias */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/botAlias.BotAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lex/botAlias.BotAlias */ Boolean]
   }
   
-  @js.native
   trait BotAliasArgs extends StObject {
     
     /**
       * The name of the bot.
       */
-    val botName: Input[String] = js.native
+    val botName: Input[String]
     
     /**
       * The name of the bot.
       */
-    val botVersion: Input[String] = js.native
+    val botVersion: Input[String]
     
     /**
       * The settings that determine how Amazon Lex uses conversation logs for the alias. Attributes are documented under conversation_logs.
       */
-    val conversationLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.BotAliasConversationLogs]] = js.native
+    val conversationLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.BotAliasConversationLogs]] = js.undefined
     
     /**
       * A description of the alias. Must be less than or equal to 200 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the alias. The name is not case sensitive. Must be less than or equal to 100 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object BotAliasArgs {
     
@@ -170,53 +167,52 @@ object botAliasMod {
     }
   }
   
-  @js.native
   trait BotAliasState extends StObject {
     
     /**
       * The ARN of the bot alias.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the bot.
       */
-    val botName: js.UndefOr[Input[String]] = js.native
+    val botName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the bot.
       */
-    val botVersion: js.UndefOr[Input[String]] = js.native
+    val botVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Checksum of the bot alias.
       */
-    val checksum: js.UndefOr[Input[String]] = js.native
+    val checksum: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The settings that determine how Amazon Lex uses conversation logs for the alias. Attributes are documented under conversation_logs.
       */
-    val conversationLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.BotAliasConversationLogs]] = js.native
+    val conversationLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.BotAliasConversationLogs]] = js.undefined
     
     /**
       * The date that the bot alias was created.
       */
-    val createdDate: js.UndefOr[Input[String]] = js.native
+    val createdDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the alias. Must be less than or equal to 200 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The date that the bot alias was updated. When you create a resource, the creation date and the last updated date are the same.
       */
-    val lastUpdatedDate: js.UndefOr[Input[String]] = js.native
+    val lastUpdatedDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the alias. The name is not case sensitive. Must be less than or equal to 100 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object BotAliasState {
     

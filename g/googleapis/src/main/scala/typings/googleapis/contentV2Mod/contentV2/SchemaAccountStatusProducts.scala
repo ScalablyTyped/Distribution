@@ -2,36 +2,34 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountStatusProducts extends StObject {
   
   /**
     * The channel the data applies to.
     */
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
   /**
     * The country the data applies to.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The destination the data applies to.
     */
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
   /**
     * List of item-level issues.
     */
-  var itemLevelIssues: js.UndefOr[js.Array[SchemaAccountStatusItemLevelIssue]] = js.native
+  var itemLevelIssues: js.UndefOr[js.Array[SchemaAccountStatusItemLevelIssue]] = js.undefined
   
   /**
     * Aggregated product statistics.
     */
-  var statistics: js.UndefOr[SchemaAccountStatusStatistics] = js.native
+  var statistics: js.UndefOr[SchemaAccountStatusStatistics] = js.undefined
 }
 object SchemaAccountStatusProducts {
   

@@ -2,57 +2,55 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPackageVersionAssetRequest extends StObject {
   
   /**
     *  The name of the package that contains the requested asset. 
     */
   @JSName("package")
-  var _package: PackageName = js.native
+  var _package: PackageName
   
   /**
     *  The name of the requested asset. 
     */
-  var asset: AssetName = js.native
+  var asset: AssetName
   
   /**
     *  The domain that contains the repository that contains the package version with the requested asset. 
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  A format that specifies the type of the package version with the requested asset file. The valid values are:     npm     pypi     maven   
     */
-  var format: PackageFormat = js.native
+  var format: PackageFormat
   
   /**
     *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
     */
-  var namespace: js.UndefOr[PackageNamespace] = js.native
+  var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
   /**
     *  A string that contains the package version (for example, 3.5.2). 
     */
-  var packageVersion: PackageVersion = js.native
+  var packageVersion: PackageVersion
   
   /**
     *  The name of the package version revision that contains the requested asset. 
     */
-  var packageVersionRevision: js.UndefOr[PackageVersionRevision] = js.native
+  var packageVersionRevision: js.UndefOr[PackageVersionRevision] = js.undefined
   
   /**
     *  The repository that contains the package version with the requested asset. 
     */
-  var repository: RepositoryName = js.native
+  var repository: RepositoryName
 }
 object GetPackageVersionAssetRequest {
   

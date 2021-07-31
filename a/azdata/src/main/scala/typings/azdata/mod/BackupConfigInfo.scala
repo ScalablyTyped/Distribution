@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupConfigInfo extends StObject {
   
-  var defaultBackupFolder: String = js.native
+  var defaultBackupFolder: String
   
-  var recoveryModel: String = js.native
+  var recoveryModel: String
 }
 object BackupConfigInfo {
   

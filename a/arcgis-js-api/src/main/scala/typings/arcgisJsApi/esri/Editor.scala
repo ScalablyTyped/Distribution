@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Editor extends Widget_ {
+trait Editor
+  extends StObject
+     with Widget_ {
   
   /**
     * A property indicating the current active workflow.

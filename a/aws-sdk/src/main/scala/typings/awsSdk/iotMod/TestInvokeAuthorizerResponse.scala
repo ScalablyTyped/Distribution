@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestInvokeAuthorizerResponse extends StObject {
   
   /**
     * The number of seconds after which the connection is terminated.
     */
-  var disconnectAfterInSeconds: js.UndefOr[Seconds] = js.native
+  var disconnectAfterInSeconds: js.UndefOr[Seconds] = js.undefined
   
   /**
     * True if the token is authenticated, otherwise false.
     */
-  var isAuthenticated: js.UndefOr[IsAuthenticated] = js.native
+  var isAuthenticated: js.UndefOr[IsAuthenticated] = js.undefined
   
   /**
     * IAM policy documents.
     */
-  var policyDocuments: js.UndefOr[PolicyDocuments] = js.native
+  var policyDocuments: js.UndefOr[PolicyDocuments] = js.undefined
   
   /**
     * The principal ID.
     */
-  var principalId: js.UndefOr[PrincipalId] = js.native
+  var principalId: js.UndefOr[PrincipalId] = js.undefined
   
   /**
     * The number of seconds after which the temporary credentials are refreshed.
     */
-  var refreshAfterInSeconds: js.UndefOr[Seconds] = js.native
+  var refreshAfterInSeconds: js.UndefOr[Seconds] = js.undefined
 }
 object TestInvokeAuthorizerResponse {
   

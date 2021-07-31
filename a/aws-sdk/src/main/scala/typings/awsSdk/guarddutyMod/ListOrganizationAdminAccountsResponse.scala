@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOrganizationAdminAccountsResponse extends StObject {
   
   /**
     * An AdminAccounts object that includes a list of accounts configured as GuardDuty delegated administrators.
     */
-  var AdminAccounts: js.UndefOr[typings.awsSdk.guarddutyMod.AdminAccounts] = js.native
+  var AdminAccounts: js.UndefOr[typings.awsSdk.guarddutyMod.AdminAccounts] = js.undefined
   
   /**
     * The pagination parameter to be used on the next list operation to retrieve more items.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListOrganizationAdminAccountsResponse {
   

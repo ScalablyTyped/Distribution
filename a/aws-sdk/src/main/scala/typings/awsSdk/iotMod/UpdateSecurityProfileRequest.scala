@@ -2,61 +2,59 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSecurityProfileRequest extends StObject {
   
   /**
     *  Please use UpdateSecurityProfileRequest$additionalMetricsToRetainV2 instead.  A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors, but it is also retained for any metric specified here.
     */
-  var additionalMetricsToRetain: js.UndefOr[AdditionalMetricsToRetainList] = js.native
+  var additionalMetricsToRetain: js.UndefOr[AdditionalMetricsToRetainList] = js.undefined
   
   /**
     * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors, but it is also retained for any metric specified here.
     */
-  var additionalMetricsToRetainV2: js.UndefOr[AdditionalMetricsToRetainV2List] = js.native
+  var additionalMetricsToRetainV2: js.UndefOr[AdditionalMetricsToRetainV2List] = js.undefined
   
   /**
     * Where the alerts are sent. (Alerts are always sent to the console.)
     */
-  var alertTargets: js.UndefOr[AlertTargets] = js.native
+  var alertTargets: js.UndefOr[AlertTargets] = js.undefined
   
   /**
     * Specifies the behaviors that, when violated by a device (thing), cause an alert.
     */
-  var behaviors: js.UndefOr[Behaviors] = js.native
+  var behaviors: js.UndefOr[Behaviors] = js.undefined
   
   /**
     * If true, delete all additionalMetricsToRetain defined for this security profile. If any additionalMetricsToRetain are defined in the current invocation, an exception occurs.
     */
-  var deleteAdditionalMetricsToRetain: js.UndefOr[DeleteAdditionalMetricsToRetain] = js.native
+  var deleteAdditionalMetricsToRetain: js.UndefOr[DeleteAdditionalMetricsToRetain] = js.undefined
   
   /**
     * If true, delete all alertTargets defined for this security profile. If any alertTargets are defined in the current invocation, an exception occurs.
     */
-  var deleteAlertTargets: js.UndefOr[DeleteAlertTargets] = js.native
+  var deleteAlertTargets: js.UndefOr[DeleteAlertTargets] = js.undefined
   
   /**
     * If true, delete all behaviors defined for this security profile. If any behaviors are defined in the current invocation, an exception occurs.
     */
-  var deleteBehaviors: js.UndefOr[DeleteBehaviors] = js.native
+  var deleteBehaviors: js.UndefOr[DeleteBehaviors] = js.undefined
   
   /**
     * The expected version of the security profile. A new version is generated whenever the security profile is updated. If you specify a value that is different from the actual version, a VersionConflictException is thrown.
     */
-  var expectedVersion: js.UndefOr[OptionalVersion] = js.native
+  var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
   
   /**
     * A description of the security profile.
     */
-  var securityProfileDescription: js.UndefOr[SecurityProfileDescription] = js.native
+  var securityProfileDescription: js.UndefOr[SecurityProfileDescription] = js.undefined
   
   /**
     * The name of the security profile you want to update.
     */
-  var securityProfileName: SecurityProfileName = js.native
+  var securityProfileName: SecurityProfileName
 }
 object UpdateSecurityProfileRequest {
   

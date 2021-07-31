@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCRtpContributingSource extends StObject {
   
-  var audioLevel: js.UndefOr[Double] = js.native
+  var audioLevel: js.UndefOr[Double] = js.undefined
   
-  var rtpTimestamp: Double = js.native
+  var rtpTimestamp: Double
   
-  var source: Double = js.native
+  var source: Double
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object RTCRtpContributingSource {
   

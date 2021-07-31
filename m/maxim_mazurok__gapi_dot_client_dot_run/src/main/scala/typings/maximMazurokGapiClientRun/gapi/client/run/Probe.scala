@@ -2,53 +2,51 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Probe extends StObject {
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported One and only one of the following should be specified. Exec specifies the action to take. A field
     * inlined from the Handler message.
     */
-  var exec: js.UndefOr[ExecAction] = js.native
+  var exec: js.UndefOr[ExecAction] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults
     * to 3. Minimum value is 1.
     */
-  var failureThreshold: js.UndefOr[Double] = js.native
+  var failureThreshold: js.UndefOr[Double] = js.undefined
   
   /** (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported HTTPGet specifies the http request to perform. A field inlined from the Handler message. */
-  var httpGet: js.UndefOr[HTTPGetAction] = js.native
+  var httpGet: js.UndefOr[HTTPGetAction] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Number of seconds after the container has started before liveness probes are initiated. More info:
     * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     */
-  var initialDelaySeconds: js.UndefOr[Double] = js.native
+  var initialDelaySeconds: js.UndefOr[Double] = js.undefined
   
   /** (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. */
-  var periodSeconds: js.UndefOr[Double] = js.native
+  var periodSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Minimum consecutive successes for the probe to be considered successful after having failed.
     * Defaults to 1. Must be 1 for liveness. Minimum value is 1.
     */
-  var successThreshold: js.UndefOr[Double] = js.native
+  var successThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported A field inlined
     * from the Handler message.
     */
-  var tcpSocket: js.UndefOr[TCPSocketAction] = js.native
+  var tcpSocket: js.UndefOr[TCPSocketAction] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More
     * info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     */
-  var timeoutSeconds: js.UndefOr[Double] = js.native
+  var timeoutSeconds: js.UndefOr[Double] = js.undefined
 }
 object Probe {
   

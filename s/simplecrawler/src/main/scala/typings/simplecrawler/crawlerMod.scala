@@ -38,7 +38,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crawlerMod {
@@ -296,7 +295,7 @@ object crawlerMod {
     def queueLinkedItems(resourceData: Buffer, queueItem: QueueItem): this.type = js.native
     
     def queueURL(url: String): Boolean = js.native
-    def queueURL(url: String, referrer: js.UndefOr[scala.Nothing], force: Boolean): Boolean = js.native
+    def queueURL(url: String, referrer: Unit, force: Boolean): Boolean = js.native
     def queueURL(url: String, referrer: QueueItem): Boolean = js.native
     def queueURL(url: String, referrer: QueueItem, force: Boolean): Boolean = js.native
     
@@ -376,18 +375,17 @@ object crawlerMod {
     def TRACE: typings.simplecrawler.simplecrawlerStrings.TRACE = "TRACE".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.TRACE]
   }
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var agent: Agent | typings.node.httpsMod.Agent = js.native
+    var agent: Agent | typings.node.httpsMod.Agent
     
-    var headers: Dictkey = js.native
+    var headers: Dictkey
     
-    var host: String = js.native
+    var host: String
     
-    var method: HTTPMethods = js.native
+    var method: HTTPMethods
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object RequestOptions {
     

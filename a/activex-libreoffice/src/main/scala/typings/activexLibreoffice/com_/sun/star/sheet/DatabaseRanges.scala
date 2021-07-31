@@ -8,16 +8,15 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of database ranges in a spreadsheet document.
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
-@js.native
 trait DatabaseRanges
-  extends XDatabaseRanges
+  extends StObject
+     with XDatabaseRanges
      with XEnumerationAccess
      with XIndexAccess
 object DatabaseRanges {

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudresourcemanager.gapi.client.cloudreso
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFoldersResponse extends StObject {
   
   /** A possibly paginated list of Folders that are direct descendants of the specified parent resource. */
-  var folders: js.UndefOr[js.Array[Folder]] = js.native
+  var folders: js.UndefOr[js.Array[Folder]] = js.undefined
   
   /** A pagination token returned from a previous call to `ListFolders` that indicates from where listing should continue. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListFoldersResponse {
   

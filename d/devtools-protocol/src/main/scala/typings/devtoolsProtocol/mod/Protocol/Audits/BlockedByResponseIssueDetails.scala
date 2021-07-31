@@ -2,19 +2,17 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockedByResponseIssueDetails extends StObject {
   
-  var blockedFrame: js.UndefOr[AffectedFrame] = js.native
+  var blockedFrame: js.UndefOr[AffectedFrame] = js.undefined
   
-  var parentFrame: js.UndefOr[AffectedFrame] = js.native
+  var parentFrame: js.UndefOr[AffectedFrame] = js.undefined
   
-  var reason: BlockedByResponseReason = js.native
+  var reason: BlockedByResponseReason
   
-  var request: AffectedRequest = js.native
+  var request: AffectedRequest
 }
 object BlockedByResponseIssueDetails {
   

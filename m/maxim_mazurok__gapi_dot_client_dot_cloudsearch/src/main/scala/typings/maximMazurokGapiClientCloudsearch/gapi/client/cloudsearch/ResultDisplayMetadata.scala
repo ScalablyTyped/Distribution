@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultDisplayMetadata extends StObject {
   
   /** The metalines content to be displayed with the result. */
-  var metalines: js.UndefOr[js.Array[ResultDisplayLine]] = js.native
+  var metalines: js.UndefOr[js.Array[ResultDisplayLine]] = js.undefined
   
   /** The display label for the object. */
-  var objectTypeLabel: js.UndefOr[String] = js.native
+  var objectTypeLabel: js.UndefOr[String] = js.undefined
 }
 object ResultDisplayMetadata {
   

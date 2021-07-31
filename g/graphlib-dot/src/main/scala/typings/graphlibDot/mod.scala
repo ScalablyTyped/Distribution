@@ -3,14 +3,21 @@ package typings.graphlibDot
 import typings.graphlib.mod.Graph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("graphlib-dot", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object global {
     
     object graphlibDot {
+      
+      @JSGlobal("graphlibDot")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Contains the version of the graphlib library used by graphlib-dot.
@@ -23,25 +30,22 @@ object mod {
         * Reads a single DOT graph from the str and returns it a Graph representation.
         * @param str a string in the DOT language representing a graph
         */
-      @JSGlobal("graphlibDot.read")
-      @js.native
-      def read(str: String): Graph = js.native
+      @scala.inline
+      def read(str: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(str.asInstanceOf[js.Any]).asInstanceOf[Graph]
       
       /**
         * Parses one or more DOT graphs from str in a manner similar to that used by parse for individual graphs.
         * @param str a string in the DOT language representing one or more graphs
         */
-      @JSGlobal("graphlibDot.readMany")
-      @js.native
-      def readMany(str: String): js.Array[Graph] = js.native
+      @scala.inline
+      def readMany(str: String): js.Array[Graph] = ^.asInstanceOf[js.Dynamic].applyDynamic("readMany")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Graph]]
       
       /**
         * Writes a String representation of the given graph in the DOT language.
         * @param g a graphlib Graph object
         */
-      @JSGlobal("graphlibDot.write")
-      @js.native
-      def write(g: Graph): String = js.native
+      @scala.inline
+      def write(g: Graph): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(g.asInstanceOf[js.Any]).asInstanceOf[String]
     }
   }
   
@@ -49,15 +53,12 @@ object mod {
   @js.native
   val graphlib: js.Any = js.native
   
-  @JSImport("graphlib-dot", "read")
-  @js.native
-  def read(str: String): Graph = js.native
+  @scala.inline
+  def read(str: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(str.asInstanceOf[js.Any]).asInstanceOf[Graph]
   
-  @JSImport("graphlib-dot", "readMany")
-  @js.native
-  def readMany(str: String): js.Array[Graph] = js.native
+  @scala.inline
+  def readMany(str: String): js.Array[Graph] = ^.asInstanceOf[js.Dynamic].applyDynamic("readMany")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Graph]]
   
-  @JSImport("graphlib-dot", "write")
-  @js.native
-  def write(g: Graph): String = js.native
+  @scala.inline
+  def write(g: Graph): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(g.asInstanceOf[js.Any]).asInstanceOf[String]
 }

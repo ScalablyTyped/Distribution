@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLimitsOutput extends StObject {
   
   /**
     * The number of open shards.
     */
-  var OpenShardCount: ShardCountObject = js.native
+  var OpenShardCount: ShardCountObject
   
   /**
     * The maximum number of shards.
     */
-  var ShardLimit: ShardCountObject = js.native
+  var ShardLimit: ShardCountObject
 }
 object DescribeLimitsOutput {
   

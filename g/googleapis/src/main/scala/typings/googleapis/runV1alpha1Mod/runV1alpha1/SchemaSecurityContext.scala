@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PodSecurityContext.  When both are set, the values in SecurityContext take
   * precedence.
   */
-@js.native
 trait SchemaSecurityContext extends StObject {
   
   /**
@@ -21,25 +19,25 @@ trait SchemaSecurityContext extends StObject {
     * AllowPrivilegeEscalation is true always when the container is: 1) run as
     * Privileged 2) has CAP_SYS_ADMIN +optional
     */
-  var allowPrivilegeEscalation: js.UndefOr[Boolean] = js.native
+  var allowPrivilegeEscalation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The capabilities to add/drop when running containers. Defaults to the
     * default set of capabilities granted by the container runtime. +optional
     */
-  var capabilities: js.UndefOr[SchemaCapabilities] = js.native
+  var capabilities: js.UndefOr[SchemaCapabilities] = js.undefined
   
   /**
     * Run container in privileged mode. Processes in privileged containers are
     * essentially equivalent to root on the host. Defaults to false. +optional
     */
-  var privileged: js.UndefOr[Boolean] = js.native
+  var privileged: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this container has a read-only root filesystem. Default is false.
     * +optional
     */
-  var readOnlyRootFilesystem: js.UndefOr[Boolean] = js.native
+  var readOnlyRootFilesystem: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The GID to run the entrypoint of the container process. Uses runtime
@@ -47,7 +45,7 @@ trait SchemaSecurityContext extends StObject {
     * SecurityContext and PodSecurityContext, the value specified in
     * SecurityContext takes precedence. +optional
     */
-  var runAsGroup: js.UndefOr[String] = js.native
+  var runAsGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that the container must run as a non-root user. If true, the
@@ -58,7 +56,7 @@ trait SchemaSecurityContext extends StObject {
     * PodSecurityContext, the value specified in SecurityContext takes
     * precedence. +optional
     */
-  var runAsNonRoot: js.UndefOr[Boolean] = js.native
+  var runAsNonRoot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The UID to run the entrypoint of the container process. Defaults to user
@@ -67,7 +65,7 @@ trait SchemaSecurityContext extends StObject {
     * PodSecurityContext, the value specified in SecurityContext takes
     * precedence. +optional
     */
-  var runAsUser: js.UndefOr[String] = js.native
+  var runAsUser: js.UndefOr[String] = js.undefined
   
   /**
     * The SELinux context to be applied to the container. If unspecified, the
@@ -76,7 +74,7 @@ trait SchemaSecurityContext extends StObject {
     * SecurityContext and PodSecurityContext, the value specified in
     * SecurityContext takes precedence. +optional
     */
-  var seLinuxOptions: js.UndefOr[SchemaSELinuxOptions] = js.native
+  var seLinuxOptions: js.UndefOr[SchemaSELinuxOptions] = js.undefined
 }
 object SchemaSecurityContext {
   

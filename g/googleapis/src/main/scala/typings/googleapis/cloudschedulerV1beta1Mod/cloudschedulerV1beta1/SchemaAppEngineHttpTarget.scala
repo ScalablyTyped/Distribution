@@ -3,7 +3,6 @@ package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,20 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * response code, or a failure to receive a response before the deadline,
   * constitutes a failed attempt.
   */
-@js.native
 trait SchemaAppEngineHttpTarget extends StObject {
   
   /**
     * App Engine Routing setting for the job.
     */
-  var appEngineRouting: js.UndefOr[SchemaAppEngineRouting] = js.native
+  var appEngineRouting: js.UndefOr[SchemaAppEngineRouting] = js.undefined
   
   /**
     * Body.  HTTP request body. A request body is allowed only if the HTTP
     * method is POST or PUT. It will result in invalid argument error to set a
     * body on a job with an incompatible HttpMethod.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * HTTP request headers.  This map contains the header field names and
@@ -51,13 +49,13 @@ trait SchemaAppEngineHttpTarget extends StObject {
     * internal use only.  In addition, some App Engine headers, which contain
     * job-specific information, are also be sent to the job handler.
     */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The HTTP method to use for the request. PATCH and OPTIONS are not
     * permitted.
     */
-  var httpMethod: js.UndefOr[String] = js.native
+  var httpMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The relative URI.  The relative URL must begin with &quot;/&quot; and
@@ -66,7 +64,7 @@ trait SchemaAppEngineHttpTarget extends StObject {
     * path &quot;/&quot; will be used. No spaces are allowed, and the maximum
     * length allowed is 2083 characters.
     */
-  var relativeUri: js.UndefOr[String] = js.native
+  var relativeUri: js.UndefOr[String] = js.undefined
 }
 object SchemaAppEngineHttpTarget {
   

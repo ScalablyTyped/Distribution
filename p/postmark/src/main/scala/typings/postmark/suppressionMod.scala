@@ -3,7 +3,6 @@ package typings.postmark
 import typings.postmark.anon.EmailAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object suppressionMod {
@@ -12,16 +11,15 @@ object suppressionMod {
   
   type DeleteSuppressionsRequest = CreateSuppressionsRequest
   
-  @js.native
   trait Suppression extends StObject {
     
-    var CreatedAt: String = js.native
+    var CreatedAt: String
     
-    var EmailAddress: String = js.native
+    var EmailAddress: String
     
-    var Origin: String = js.native
+    var Origin: String
     
-    var SuppressionReason: String = js.native
+    var SuppressionReason: String
   }
   object Suppression {
     
@@ -48,10 +46,9 @@ object suppressionMod {
     }
   }
   
-  @js.native
   trait SuppressionEntries extends StObject {
     
-    var Suppressions: js.Array[EmailAddress] = js.native
+    var Suppressions: js.Array[EmailAddress]
   }
   object SuppressionEntries {
     
@@ -72,14 +69,13 @@ object suppressionMod {
     }
   }
   
-  @js.native
   trait SuppressionStatus extends StObject {
     
-    var EmailAddress: String = js.native
+    var EmailAddress: String
     
-    var Message: String = js.native
+    var Message: String
     
-    var Status: String = js.native
+    var Status: String
   }
   object SuppressionStatus {
     
@@ -103,10 +99,9 @@ object suppressionMod {
     }
   }
   
-  @js.native
   trait SuppressionStatuses extends StObject {
     
-    var Suppressions: js.Array[SuppressionStatus] = js.native
+    var Suppressions: js.Array[SuppressionStatus]
   }
   object SuppressionStatuses {
     
@@ -127,10 +122,9 @@ object suppressionMod {
     }
   }
   
-  @js.native
   trait Suppressions extends StObject {
     
-    var Suppressions: js.Array[Suppression] = js.native
+    var Suppressions: js.Array[Suppression]
   }
   object Suppressions {
     

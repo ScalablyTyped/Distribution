@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedactConversationMessageRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: NonEmptyString = js.native
+  var AccountId: NonEmptyString
   
   /**
     * The conversation ID.
     */
-  var ConversationId: NonEmptyString = js.native
+  var ConversationId: NonEmptyString
   
   /**
     * The message ID.
     */
-  var MessageId: NonEmptyString = js.native
+  var MessageId: NonEmptyString
 }
 object RedactConversationMessageRequest {
   

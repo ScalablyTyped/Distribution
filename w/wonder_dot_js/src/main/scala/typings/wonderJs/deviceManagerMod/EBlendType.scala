@@ -1,53 +1,51 @@
 package typings.wonderJs.deviceManagerMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EBlendType extends js.Object
-
+sealed trait EBlendType extends StObject
 @JSImport("wonder.js/dist/es2015/device/DeviceManager", "EBlendType")
 @js.native
-object EBlendType extends js.Object {
-  @js.native
-  sealed trait ADDITIVE extends EBlendType
-  
-  @js.native
-  sealed trait ADDITIVEALPHA extends EBlendType
-  
-  @js.native
-  sealed trait MULTIPLICATIVE extends EBlendType
-  
-  @js.native
-  sealed trait NONE extends EBlendType
-  
-  @js.native
-  sealed trait NORMAL extends EBlendType
-  
-  @js.native
-  sealed trait PREMULTIPLIED extends EBlendType
+object EBlendType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EBlendType with Double] = js.native
-  /* 2 */ @js.native
-  object ADDITIVE extends TopLevel[ADDITIVE with Double]
+  def apply(value: Double): js.UndefOr[EBlendType & Double] = js.native
   
-  /* 3 */ @js.native
-  object ADDITIVEALPHA extends TopLevel[ADDITIVEALPHA with Double]
+  @js.native
+  sealed trait ADDITIVE
+    extends StObject
+       with EBlendType
+  /* 2 */ val ADDITIVE: typings.wonderJs.deviceManagerMod.EBlendType.ADDITIVE & Double = js.native
   
-  /* 4 */ @js.native
-  object MULTIPLICATIVE extends TopLevel[MULTIPLICATIVE with Double]
+  @js.native
+  sealed trait ADDITIVEALPHA
+    extends StObject
+       with EBlendType
+  /* 3 */ val ADDITIVEALPHA: typings.wonderJs.deviceManagerMod.EBlendType.ADDITIVEALPHA & Double = js.native
   
-  /* 0 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
+  @js.native
+  sealed trait MULTIPLICATIVE
+    extends StObject
+       with EBlendType
+  /* 4 */ val MULTIPLICATIVE: typings.wonderJs.deviceManagerMod.EBlendType.MULTIPLICATIVE & Double = js.native
   
-  /* 1 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with EBlendType
+  /* 0 */ val NONE: typings.wonderJs.deviceManagerMod.EBlendType.NONE & Double = js.native
   
-  /* 5 */ @js.native
-  object PREMULTIPLIED extends TopLevel[PREMULTIPLIED with Double]
+  @js.native
+  sealed trait NORMAL
+    extends StObject
+       with EBlendType
+  /* 1 */ val NORMAL: typings.wonderJs.deviceManagerMod.EBlendType.NORMAL & Double = js.native
   
+  @js.native
+  sealed trait PREMULTIPLIED
+    extends StObject
+       with EBlendType
+  /* 5 */ val PREMULTIPLIED: typings.wonderJs.deviceManagerMod.EBlendType.PREMULTIPLIED & Double = js.native
 }
-

@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.overlayscrollbars.mod.ExtensionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dictindex extends /* index */ NumberDictionary[ExtensionInfo] {
+trait Dictindex
+  extends StObject
+     with /* index */ NumberDictionary[ExtensionInfo] {
   
-  var length: Double = js.native
+  var length: Double
 }
 object Dictindex {
   

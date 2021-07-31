@@ -2,18 +2,16 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Part of the WebGL API and represents the information returned by calling the WebGLRenderingContext.getActiveAttrib() and WebGLRenderingContext.getActiveUniform() methods. */
-@js.native
 trait WebGLActiveInfo extends StObject {
   
-  val name: java.lang.String = js.native
+  val name: java.lang.String
   
-  val size: GLint = js.native
+  val size: GLint
   
-  val `type`: GLenum = js.native
+  val `type`: GLenum
 }
 object WebGLActiveInfo {
   

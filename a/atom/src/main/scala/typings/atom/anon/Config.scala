@@ -3,17 +3,15 @@ package typings.atom.anon
 import typings.atom.mod.Project
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
-  var config: js.UndefOr[typings.atom.mod.Config] = js.native
+  var config: js.UndefOr[typings.atom.mod.Config] = js.undefined
   
-  var project: js.UndefOr[Project] = js.native
+  var project: js.UndefOr[Project] = js.undefined
   
-  var refreshOnWindowFocus: js.UndefOr[Boolean] = js.native
+  var refreshOnWindowFocus: js.UndefOr[Boolean] = js.undefined
 }
 object Config {
   

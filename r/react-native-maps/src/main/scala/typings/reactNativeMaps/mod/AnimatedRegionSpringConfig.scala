@@ -2,47 +2,45 @@ package typings.reactNativeMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent react-native.react-native.Animated.AnimationConfig */
 /* Inlined parent std.Partial<react-native-maps.react-native-maps.Region> */
-@js.native
 trait AnimatedRegionSpringConfig extends StObject {
   
-  var bounciness: js.UndefOr[Double] = js.native
+  var bounciness: js.UndefOr[Double] = js.undefined
   
-  var damping: js.UndefOr[Double] = js.native
+  var damping: js.UndefOr[Double] = js.undefined
   
-  var friction: js.UndefOr[Double] = js.native
+  var friction: js.UndefOr[Double] = js.undefined
   
-  var isInteraction: js.UndefOr[Boolean] = js.native
+  var isInteraction: js.UndefOr[Boolean] = js.undefined
   
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
-  var latitudeDelta: js.UndefOr[Double] = js.native
+  var latitudeDelta: js.UndefOr[Double] = js.undefined
   
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
-  var longitudeDelta: js.UndefOr[Double] = js.native
+  var longitudeDelta: js.UndefOr[Double] = js.undefined
   
-  var mass: js.UndefOr[Double] = js.native
+  var mass: js.UndefOr[Double] = js.undefined
   
-  var overshootClamping: js.UndefOr[Boolean] = js.native
+  var overshootClamping: js.UndefOr[Boolean] = js.undefined
   
-  var restDisplacementThreshold: js.UndefOr[Double] = js.native
+  var restDisplacementThreshold: js.UndefOr[Double] = js.undefined
   
-  var restSpeedThreshold: js.UndefOr[Double] = js.native
+  var restSpeedThreshold: js.UndefOr[Double] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
-  var stiffness: js.UndefOr[Double] = js.native
+  var stiffness: js.UndefOr[Double] = js.undefined
   
-  var tension: js.UndefOr[Double] = js.native
+  var tension: js.UndefOr[Double] = js.undefined
   
-  var useNativeDriver: Boolean = js.native
+  var useNativeDriver: Boolean
   
-  var velocity: js.UndefOr[Double | Point] = js.native
+  var velocity: js.UndefOr[Double | Point] = js.undefined
 }
 object AnimatedRegionSpringConfig {
   

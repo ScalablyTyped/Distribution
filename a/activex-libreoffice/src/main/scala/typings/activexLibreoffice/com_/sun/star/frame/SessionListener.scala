@@ -4,17 +4,17 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This was created from its sole place of use, so it might be incomplete.
   * @since LibreOffice 4.1
   */
-@js.native
-trait SessionListener extends XSessionManagerListener2 {
+trait SessionListener
+  extends StObject
+     with XSessionManagerListener2 {
   
-  def createWithOnQuitFlag(AllowUserInteractionOnQuit: Boolean): Unit = js.native
+  def createWithOnQuitFlag(AllowUserInteractionOnQuit: Boolean): Unit
 }
 object SessionListener {
   

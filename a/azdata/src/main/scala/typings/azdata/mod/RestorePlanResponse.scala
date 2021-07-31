@@ -3,25 +3,23 @@ package typings.azdata.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestorePlanResponse extends StObject {
   
-  var backupSetsToRestore: js.Array[DatabaseFileInfo] = js.native
+  var backupSetsToRestore: js.Array[DatabaseFileInfo]
   
-  var canRestore: Boolean = js.native
+  var canRestore: Boolean
   
-  var databaseNamesFromBackupSets: js.Array[String] = js.native
+  var databaseNamesFromBackupSets: js.Array[String]
   
-  var dbFiles: js.Array[RestoreDatabaseFileInfo] = js.native
+  var dbFiles: js.Array[RestoreDatabaseFileInfo]
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var planDetails: StringDictionary[RestorePlanDetailInfo] = js.native
+  var planDetails: StringDictionary[RestorePlanDetailInfo]
   
-  var sessionId: String = js.native
+  var sessionId: String
 }
 object RestorePlanResponse {
   

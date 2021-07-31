@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryStageExecutionOutput extends StObject {
   
   /**
     * The ID of the current workflow execution in the failed stage.
     */
-  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.native
+  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
 }
 object RetryStageExecutionOutput {
   

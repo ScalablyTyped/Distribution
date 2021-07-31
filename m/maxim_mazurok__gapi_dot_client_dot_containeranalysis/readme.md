@@ -10,9 +10,9 @@ TypeScript typings for Container Analysis API v1beta1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.containeranalysis |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 52 |
+| # downloads        | 968 |
 | # stars            | 0 |
 
 ## Links

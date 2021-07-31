@@ -2,18 +2,16 @@ package typings.awsSdkClientS3Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesJsonoutputMod {
   
-  @js.native
   trait JSONOutput extends StObject {
     
     /**
       * <p>The value used to separate individual records in the output.</p>
       */
-    var RecordDelimiter: js.UndefOr[String] = js.native
+    var RecordDelimiter: js.UndefOr[String] = js.undefined
   }
   object JSONOutput {
     

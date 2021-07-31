@@ -4,26 +4,27 @@ import typings.forkTsCheckerWebpackPlugin.issuePredicateMod.IssuePredicate
 import typings.forkTsCheckerWebpackPlugin.issueSeverityMod.IssueSeverity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object issueMatchMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueMatch", "createIssuePredicateFromIssueMatch")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueMatch", JSImport.Namespace)
   @js.native
-  def createIssuePredicateFromIssueMatch(context: String, `match`: IssueMatch): IssuePredicate = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createIssuePredicateFromIssueMatch(context: String, `match`: IssueMatch): IssuePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("createIssuePredicateFromIssueMatch")(context.asInstanceOf[js.Any], `match`.asInstanceOf[js.Any])).asInstanceOf[IssuePredicate]
   
   /* Inlined std.Partial<std.Pick<fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue.Issue, 'origin' | 'severity' | 'code' | 'file'>> */
-  @js.native
   trait IssueMatch extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
     
-    var severity: js.UndefOr[IssueSeverity] = js.native
+    var severity: js.UndefOr[IssueSeverity] = js.undefined
   }
   object IssueMatch {
     

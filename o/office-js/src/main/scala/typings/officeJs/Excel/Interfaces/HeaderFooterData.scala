@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `headerFooter.toJSON()`. */
-@js.native
 trait HeaderFooterData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait HeaderFooterData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var centerFooter: js.UndefOr[String] = js.native
+  var centerFooter: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -25,7 +23,7 @@ trait HeaderFooterData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var centerHeader: js.UndefOr[String] = js.native
+  var centerHeader: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait HeaderFooterData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var leftFooter: js.UndefOr[String] = js.native
+  var leftFooter: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait HeaderFooterData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var leftHeader: js.UndefOr[String] = js.native
+  var leftHeader: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait HeaderFooterData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rightFooter: js.UndefOr[String] = js.native
+  var rightFooter: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -61,7 +59,7 @@ trait HeaderFooterData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rightHeader: js.UndefOr[String] = js.native
+  var rightHeader: js.UndefOr[String] = js.undefined
 }
 object HeaderFooterData {
   

@@ -2,19 +2,17 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for Firestore.BeginTransaction.
   */
-@js.native
 trait SchemaBeginTransactionResponse extends StObject {
   
   /**
     * The transaction that was started.
     */
-  var transaction: js.UndefOr[String] = js.native
+  var transaction: js.UndefOr[String] = js.undefined
 }
 object SchemaBeginTransactionResponse {
   

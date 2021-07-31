@@ -2,28 +2,26 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/magellan.html#js
-@js.native
 trait MagellanOptions extends StObject {
   
-  var active_class: js.UndefOr[String] = js.native
+  var active_class: js.UndefOr[String] = js.undefined
   
-  var destination_threshold: js.UndefOr[Double] = js.native
+  var destination_threshold: js.UndefOr[Double] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var fixed_top: js.UndefOr[Double] = js.native
+  var fixed_top: js.UndefOr[Double] = js.undefined
   
-  var offset_by_height: js.UndefOr[Boolean] = js.native
+  var offset_by_height: js.UndefOr[Boolean] = js.undefined
   
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
   
-  var throttle_delay: js.UndefOr[Double] = js.native
+  var throttle_delay: js.UndefOr[Double] = js.undefined
 }
 object MagellanOptions {
   

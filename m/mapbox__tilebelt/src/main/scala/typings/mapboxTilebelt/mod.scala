@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.geojson.mod.Polygon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,7 +12,6 @@ object mod extends Shortcut {
   @js.native
   val ^ : TilebeltStatic = js.native
   
-  @js.native
   trait TilebeltStatic extends StObject {
     
     /**
@@ -26,7 +24,7 @@ object mod extends Shortcut {
       * var tile = bboxToTile([ -178, 84, -177, 85 ])
       * //=tile
       */
-    def bboxToTile(bbox: js.Array[Double]): js.Array[Double] = js.native
+    def bboxToTile(bbox: js.Array[Double]): js.Array[Double]
     
     /**
       * Get the 4 tiles one zoom level higher
@@ -38,7 +36,7 @@ object mod extends Shortcut {
       * var tiles = getChildren([5, 10, 10])
       * //=tiles
       */
-    def getChildren(tile: js.Array[Double]): js.Array[js.Array[Double]] = js.native
+    def getChildren(tile: js.Array[Double]): js.Array[js.Array[Double]]
     
     /**
       * Get the tile one zoom level lower
@@ -50,7 +48,7 @@ object mod extends Shortcut {
       * var tile = getParent([5, 10, 10])
       * //=tile
       */
-    def getParent(tile: js.Array[Double]): js.Array[Double] = js.native
+    def getParent(tile: js.Array[Double]): js.Array[Double]
     
     /**
       * Get the 3 sibling tiles for a tile
@@ -62,7 +60,7 @@ object mod extends Shortcut {
       * var tiles = getSiblings([5, 10, 10])
       * //=tiles
       */
-    def getSiblings(tile: js.Array[Double]): js.Array[js.Array[Double]] = js.native
+    def getSiblings(tile: js.Array[Double]): js.Array[js.Array[Double]]
     
     /**
       * Check to see if an array of tiles contains a tiles siblings
@@ -81,7 +79,7 @@ object mod extends Shortcut {
       * hasSiblings([0, 0, 5], tiles)
       * //=boolean
       */
-    def hasSiblings(tile: js.Array[Double], tiles: js.Array[js.Array[Double]]): Boolean = js.native
+    def hasSiblings(tile: js.Array[Double], tiles: js.Array[js.Array[Double]]): Boolean
     
     /**
       * Check to see if an array of tiles contains a particular tile
@@ -100,7 +98,7 @@ object mod extends Shortcut {
       * hasTile(tiles, [0, 0, 5])
       * //=boolean
       */
-    def hasTile(tiles: js.Array[js.Array[Double]], tile: js.Array[Double]): Boolean = js.native
+    def hasTile(tiles: js.Array[js.Array[Double]], tile: js.Array[Double]): Boolean
     
     /**
       * Get the tile for a point at a specified zoom level
@@ -114,7 +112,7 @@ object mod extends Shortcut {
       * var tile = pointToTile(1, 1, 20)
       * //=tile
       */
-    def pointToTile(lon: Double, lat: Double, z: Double): js.Array[Double] = js.native
+    def pointToTile(lon: Double, lat: Double, z: Double): js.Array[Double]
     
     /**
       * Get the precise fractional tile location for a point at a zoom level
@@ -127,7 +125,7 @@ object mod extends Shortcut {
       * var tile = pointToTileFraction(30.5, 50.5, 15)
       * //=tile
       */
-    def pointToTileFraction(lon: Double, lat: Double, z: Double): js.Array[Double] = js.native
+    def pointToTileFraction(lon: Double, lat: Double, z: Double): js.Array[Double]
     
     /**
       * Get the tile for a quadkey
@@ -139,7 +137,7 @@ object mod extends Shortcut {
       * var tile = quadkeyToTile('00001033')
       * //=tile
       */
-    def quadkeyToTile(quadkey: String): js.Array[Double] = js.native
+    def quadkeyToTile(quadkey: String): js.Array[Double]
     
     /**
       * Get the bbox of a tile
@@ -151,7 +149,7 @@ object mod extends Shortcut {
       * var bbox = tileToBBOX([5, 10, 10])
       * //=bbox
       */
-    def tileToBBOX(tile: js.Array[Double]): js.Array[Double] = js.native
+    def tileToBBOX(tile: js.Array[Double]): js.Array[Double]
     
     /**
       * Get a geojson representation of a tile
@@ -163,7 +161,7 @@ object mod extends Shortcut {
       * var poly = tileToGeoJSON([5, 10, 10])
       * //=poly
       */
-    def tileToGeoJSON(tile: js.Array[Double]): Polygon = js.native
+    def tileToGeoJSON(tile: js.Array[Double]): Polygon
     
     /**
       * Get the quadkey for a tile
@@ -175,7 +173,7 @@ object mod extends Shortcut {
       * var quadkey = tileToQuadkey([0, 1, 5])
       * //=quadkey
       */
-    def tileToQuadkey(tile: js.Array[Double]): String = js.native
+    def tileToQuadkey(tile: js.Array[Double]): String
     
     /**
       * Check to see if two tiles are the same
@@ -188,7 +186,7 @@ object mod extends Shortcut {
       * tilesEqual([0, 1, 5], [0, 0, 5])
       * //=boolean
       */
-    def tilesEqual(tile1: js.Array[Double], tile2: js.Array[Double]): Boolean = js.native
+    def tilesEqual(tile1: js.Array[Double], tile2: js.Array[Double]): Boolean
   }
   object TilebeltStatic {
     

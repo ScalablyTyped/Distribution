@@ -2,10 +2,8 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICustomOverlayOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ICustomOverlayOptions extends StObject {
     *
     * This can only be set when creating the overlay.
     */
-  var beneathLabels: js.UndefOr[Boolean] = js.native
+  var beneathLabels: js.UndefOr[Boolean] = js.undefined
 }
 object ICustomOverlayOptions {
   

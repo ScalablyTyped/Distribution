@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings of a tab stop.
   */
-@js.native
 trait TabSettings extends StObject {
   
   /**
     * Specifies the tab alignment type.
     */
-  var alignment: TabAlign = js.native
+  var alignment: TabAlign
   
   /**
     * Specifies whether the individual tab stop is in effect.
     */
-  var deleted: Boolean = js.native
+  var deleted: Boolean
   
   /**
     * Specifies the tab leader symbol.
     */
-  var leader: TabLeaderType = js.native
+  var leader: TabLeaderType
   
   /**
     * Specifies the position of the tab stop.
     */
-  var position: Double = js.native
+  var position: Double
 }
 object TabSettings {
   

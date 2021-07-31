@@ -2,7 +2,6 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "IslandManager")
@@ -23,7 +22,10 @@ class IslandManager () extends Solver {
 /* static members */
 object IslandManager {
   
-  @JSImport("p2", "IslandManager.getUnvisitedNode")
+  @JSImport("p2", "IslandManager")
   @js.native
-  def getUnvisitedNode(nodes: js.Array[IslandNode]): IslandNode | Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getUnvisitedNode(nodes: js.Array[IslandNode]): IslandNode | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnvisitedNode")(nodes.asInstanceOf[js.Any]).asInstanceOf[IslandNode | Boolean]
 }

@@ -2,25 +2,23 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicaGlobalSecondaryIndexAutoScalingDescription extends StObject {
   
   /**
     * The name of the global secondary index.
     */
-  var IndexName: js.UndefOr[typings.awsSdk.dynamodbMod.IndexName] = js.native
+  var IndexName: js.UndefOr[typings.awsSdk.dynamodbMod.IndexName] = js.undefined
   
   /**
     * The current state of the replica global secondary index:    CREATING - The index is being created.    UPDATING - The index is being updated.    DELETING - The index is being deleted.    ACTIVE - The index is ready for use.  
     */
-  var IndexStatus: js.UndefOr[typings.awsSdk.dynamodbMod.IndexStatus] = js.native
+  var IndexStatus: js.UndefOr[typings.awsSdk.dynamodbMod.IndexStatus] = js.undefined
   
-  var ProvisionedReadCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.native
+  var ProvisionedReadCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.undefined
   
-  var ProvisionedWriteCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.native
+  var ProvisionedWriteCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.undefined
 }
 object ReplicaGlobalSecondaryIndexAutoScalingDescription {
   

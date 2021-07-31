@@ -11,7 +11,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object comboboxMod {
@@ -20,16 +19,15 @@ object comboboxMod {
   @js.native
   val Combobox: FC[PropsT[js.Any]] = js.native
   
-  @js.native
   trait SIZE extends StObject {
     
-    var default: default_ = js.native
+    var default: default_
     
-    var compact: typings.baseui.baseuiStrings.compact = js.native
+    var compact: typings.baseui.baseuiStrings.compact
     
-    var large: large_ = js.native
+    var large: large_
     
-    var mini: typings.baseui.baseuiStrings.mini = js.native
+    var mini: typings.baseui.baseuiStrings.mini
   }
   object SIZE {
     
@@ -54,32 +52,31 @@ object comboboxMod {
     }
   }
   
-  @js.native
   trait ComboboxOverrides extends StObject {
     
     var Input: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var InputContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ListBox: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ListItem: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Popover: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ComboboxOverrides {
     
@@ -142,36 +139,35 @@ object comboboxMod {
     }
   }
   
-  @js.native
   trait PropsT[OptionT] extends StObject {
     
-    var autocomplete: js.UndefOr[Boolean] = js.native
+    var autocomplete: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var mapOptionToNode: js.UndefOr[js.Function1[/* hasIsSelectedOption */ js.Any, ReactNode]] = js.native
+    var mapOptionToNode: js.UndefOr[js.Function1[/* hasBooleanOptionT */ js.Any, ReactNode]] = js.undefined
     
-    def mapOptionToString(OptionT: js.Any): String = js.native
+    def mapOptionToString(OptionT: js.Any): String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement], _]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement], js.Any]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ String, /* option */ OptionT | Null, _]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* value */ String, /* option */ OptionT | Null, js.Any]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement], _]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement], js.Any]] = js.undefined
     
-    var onSubmit: js.UndefOr[js.Function1[/* params */ CloseListbox, _]] = js.native
+    var onSubmit: js.UndefOr[js.Function1[/* params */ CloseListbox, js.Any]] = js.undefined
     
-    var options: OptionT = js.native
+    var options: OptionT
     
-    var overrides: js.UndefOr[ComboboxOverrides] = js.native
+    var overrides: js.UndefOr[ComboboxOverrides] = js.undefined
     
-    var size: js.UndefOr[compact | default_ | large_ | mini] = js.native
+    var size: js.UndefOr[compact | default_ | large_ | mini] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object PropsT {
     
@@ -182,7 +178,7 @@ object comboboxMod {
     }
     
     @scala.inline
-    implicit class PropsTMutableBuilder[Self <: PropsT[_], OptionT] (val x: Self with PropsT[OptionT]) extends AnyVal {
+    implicit class PropsTMutableBuilder[Self <: PropsT[?], OptionT] (val x: Self & PropsT[OptionT]) extends AnyVal {
       
       @scala.inline
       def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
@@ -203,7 +199,7 @@ object comboboxMod {
       def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       @scala.inline
-      def setMapOptionToNode(value: /* hasIsSelectedOption */ js.Any => ReactNode): Self = StObject.set(x, "mapOptionToNode", js.Any.fromFunction1(value))
+      def setMapOptionToNode(value: /* hasBooleanOptionT */ js.Any => ReactNode): Self = StObject.set(x, "mapOptionToNode", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMapOptionToNodeUndefined: Self = StObject.set(x, "mapOptionToNode", js.undefined)
@@ -218,25 +214,25 @@ object comboboxMod {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnBlur(value: /* event */ FocusEvent[HTMLInputElement] => _): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      def setOnBlur(value: /* event */ FocusEvent[HTMLInputElement] => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
       @scala.inline
-      def setOnChange(value: (/* value */ String, /* option */ OptionT | Null) => _): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      def setOnChange(value: (/* value */ String, /* option */ OptionT | Null) => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnFocus(value: /* event */ FocusEvent[HTMLInputElement] => _): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      def setOnFocus(value: /* event */ FocusEvent[HTMLInputElement] => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       @scala.inline
-      def setOnSubmit(value: /* params */ CloseListbox => _): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      def setOnSubmit(value: /* params */ CloseListbox => js.Any): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)

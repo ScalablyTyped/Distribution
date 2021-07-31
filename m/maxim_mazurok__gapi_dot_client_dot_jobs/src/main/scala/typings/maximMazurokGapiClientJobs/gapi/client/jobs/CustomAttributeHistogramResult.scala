@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomAttributeHistogramResult extends StObject {
   
   /** Stores the key of custom attribute the histogram is performed on. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Stores bucketed histogram counting result or min/max values for custom attribute long values associated with `key`. */
-  var longValueHistogramResult: js.UndefOr[NumericBucketingResult] = js.native
+  var longValueHistogramResult: js.UndefOr[NumericBucketingResult] = js.undefined
   
   /** Stores a map from the values of string custom field associated with `key` to the number of jobs with that value in this histogram result. */
   var stringValueHistogramResult: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.CustomAttributeHistogramResult with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.CustomAttributeHistogramResult & TopLevel[js.Any]
+  ] = js.undefined
 }
 object CustomAttributeHistogramResult {
   
@@ -49,7 +47,7 @@ object CustomAttributeHistogramResult {
     def setStringValueHistogramResult(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.CustomAttributeHistogramResult with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.CustomAttributeHistogramResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "stringValueHistogramResult", value.asInstanceOf[js.Any])
     
     @scala.inline

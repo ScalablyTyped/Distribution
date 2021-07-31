@@ -11,11 +11,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Right
 import typings.officeJsPreview.officeJsPreviewStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartTrendlineLabel.toJSON()`. */
-@js.native
 trait ChartTrendlineLabelData extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var autoText: js.UndefOr[Boolean] = js.native
+  var autoText: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var format: js.UndefOr[ChartTrendlineLabelFormatData] = js.native
+  var format: js.UndefOr[ChartTrendlineLabelFormatData] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var formula: js.UndefOr[String] = js.native
+  var formula: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -57,7 +55,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var horizontalAlignment: js.UndefOr[ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed] = js.native
+  var horizontalAlignment: js.UndefOr[ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var linkNumberFormat: js.UndefOr[Boolean] = js.native
+  var linkNumberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -81,7 +79,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var numberFormat: js.UndefOr[String] = js.native
+  var numberFormat: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -89,7 +87,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var textOrientation: js.UndefOr[Double] = js.native
+  var textOrientation: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -105,7 +103,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var verticalAlignment: js.UndefOr[ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed] = js.native
+  var verticalAlignment: js.UndefOr[ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed] = js.undefined
   
   /**
     *
@@ -122,7 +120,7 @@ trait ChartTrendlineLabelData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartTrendlineLabelData {
   

@@ -3,7 +3,6 @@ package typings.chrome.chrome
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -16,12 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object bookmarks {
   
-  @js.native
   trait BookmarkChangeInfo extends StObject {
     
-    var title: String = js.native
+    var title: String
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object BookmarkChangeInfo {
     
@@ -47,12 +45,11 @@ object bookmarks {
   
   type BookmarkChangedEvent = Event[js.Function2[/* id */ String, /* changeInfo */ BookmarkChangeInfo, Unit]]
   
-  @js.native
   trait BookmarkChangesArg extends StObject {
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object BookmarkChangesArg {
     
@@ -81,17 +78,16 @@ object bookmarks {
   
   type BookmarkChildrenReordered = Event[js.Function2[/* id */ String, /* reorderInfo */ BookmarkReorderInfo, Unit]]
   
-  @js.native
   trait BookmarkCreateArg extends StObject {
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Optional. Defaults to the Other Bookmarks folder.  */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object BookmarkCreateArg {
     
@@ -132,12 +128,11 @@ object bookmarks {
   
   type BookmarkCreatedEvent = Event[js.Function2[/* id */ String, /* bookmark */ BookmarkTreeNode, Unit]]
   
-  @js.native
   trait BookmarkDestinationArg extends StObject {
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
   }
   object BookmarkDestinationArg {
     
@@ -168,16 +163,15 @@ object bookmarks {
   
   type BookmarkImportEndedEvent = Event[js.Function0[Unit]]
   
-  @js.native
   trait BookmarkMoveInfo extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var oldIndex: Double = js.native
+    var oldIndex: Double
     
-    var oldParentId: String = js.native
+    var oldParentId: String
     
-    var parentId: String = js.native
+    var parentId: String
   }
   object BookmarkMoveInfo {
     
@@ -206,14 +200,13 @@ object bookmarks {
   
   type BookmarkMovedEvent = Event[js.Function2[/* id */ String, /* moveInfo */ BookmarkMoveInfo, Unit]]
   
-  @js.native
   trait BookmarkRemoveInfo extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var node: BookmarkTreeNode = js.native
+    var node: BookmarkTreeNode
     
-    var parentId: String = js.native
+    var parentId: String
   }
   object BookmarkRemoveInfo {
     
@@ -239,10 +232,9 @@ object bookmarks {
   
   type BookmarkRemovedEvent = Event[js.Function2[/* id */ String, /* removeInfo */ BookmarkRemoveInfo, Unit]]
   
-  @js.native
   trait BookmarkReorderInfo extends StObject {
     
-    var childIds: js.Array[String] = js.native
+    var childIds: js.Array[String]
   }
   object BookmarkReorderInfo {
     
@@ -263,14 +255,13 @@ object bookmarks {
     }
   }
   
-  @js.native
   trait BookmarkSearchQuery extends StObject {
     
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object BookmarkSearchQuery {
     
@@ -303,39 +294,38 @@ object bookmarks {
     }
   }
   
-  @js.native
   trait BookmarkTreeNode extends StObject {
     
     /** Optional. An ordered list of children of this node.  */
-    var children: js.UndefOr[js.Array[BookmarkTreeNode]] = js.native
+    var children: js.UndefOr[js.Array[BookmarkTreeNode]] = js.undefined
     
     /** Optional. When this node was created, in milliseconds since the epoch (new Date(dateAdded)).  */
-    var dateAdded: js.UndefOr[Double] = js.native
+    var dateAdded: js.UndefOr[Double] = js.undefined
     
     /** Optional. When the contents of this folder last changed, in milliseconds since the epoch.   */
-    var dateGroupModified: js.UndefOr[Double] = js.native
+    var dateGroupModified: js.UndefOr[Double] = js.undefined
     
     /** The unique identifier for the node. IDs are unique within the current profile, and they remain valid even after the browser is restarted.  */
-    var id: String = js.native
+    var id: String
     
     /** Optional. The 0-based position of this node within its parent folder.  */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Optional. The id of the parent folder. Omitted for the root node.   */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** The text displayed for the node. */
-    var title: String = js.native
+    var title: String
     
     /**
       * Optional.
       * Since Chrome 37.
       * Indicates the reason why this node is unmodifiable. The managed value indicates that this node was configured by the system administrator or by the custodian of a supervised user. Omitted if the node can be modified by the user and the extension (default).
       */
-    var unmodifiable: js.UndefOr[js.Any] = js.native
+    var unmodifiable: js.UndefOr[js.Any] = js.undefined
     
     /** Optional. The URL navigated to when a user clicks the bookmark. Omitted for folders.   */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object BookmarkTreeNode {
     

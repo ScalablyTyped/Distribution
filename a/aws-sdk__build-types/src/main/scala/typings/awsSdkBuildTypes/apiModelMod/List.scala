@@ -3,32 +3,31 @@ package typings.awsSdkBuildTypes.apiModelMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.list
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait List
-  extends ShapeDef
+  extends StObject
+     with ShapeDef
      with ComplexShape
      with Shape {
   
-  var flattened: js.UndefOr[scala.Boolean] = js.native
+  var flattened: js.UndefOr[scala.Boolean] = js.undefined
   
-  var max: js.UndefOr[scala.Double] = js.native
+  var max: js.UndefOr[scala.Double] = js.undefined
   
-  var member: Member = js.native
+  var member: Member
   
-  var min: js.UndefOr[scala.Double] = js.native
+  var min: js.UndefOr[scala.Double] = js.undefined
   
   @JSName("type")
-  val type_List: list = js.native
+  val type_List: list
 }
 object List {
   
   @scala.inline
-  def apply(member: Member, `type`: list): List = {
+  def apply(member: Member): List = {
     val __obj = js.Dynamic.literal(member = member.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("list")
     __obj.asInstanceOf[List]
   }
   

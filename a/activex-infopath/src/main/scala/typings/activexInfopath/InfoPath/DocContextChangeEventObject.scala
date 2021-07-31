@@ -3,22 +3,20 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocContextChangeEventObject extends StObject {
   
-  val Context: IXMLDOMNode = js.native
+  val Context: IXMLDOMNode
   
   @JSName("InfoPath.DocContextChangeEventObject_typekey")
-  var InfoPathDotDocContextChangeEventObject_typekey: DocContextChangeEventObject = js.native
+  var InfoPathDotDocContextChangeEventObject_typekey: DocContextChangeEventObject
   
-  val IsUndoRedo: Boolean = js.native
+  val IsUndoRedo: Boolean
   
-  val Type: String = js.native
+  val Type: String
   
-  val XDocument: _XDocument = js.native
+  val XDocument: _XDocument
 }
 object DocContextChangeEventObject {
   

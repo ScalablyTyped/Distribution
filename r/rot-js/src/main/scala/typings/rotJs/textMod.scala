@@ -3,10 +3,13 @@ package typings.rotJs
 import typings.rotJs.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod {
+  
+  @JSImport("rot-js/lib/text", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rot-js/lib/text", "TYPE_BG")
   @js.native
@@ -24,11 +27,9 @@ object textMod {
   @js.native
   val TYPE_TEXT: /* 0 */ Double = js.native
   
-  @JSImport("rot-js/lib/text", "measure")
-  @js.native
-  def measure(str: String, maxWidth: Double): Height = js.native
+  @scala.inline
+  def measure(str: String, maxWidth: Double): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")(str.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any])).asInstanceOf[Height]
   
-  @JSImport("rot-js/lib/text", "tokenize")
-  @js.native
-  def tokenize(str: String, maxWidth: Double): js.Array[_] = js.native
+  @scala.inline
+  def tokenize(str: String, maxWidth: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(str.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

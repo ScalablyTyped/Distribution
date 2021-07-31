@@ -2,34 +2,32 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IterableChangeRecord[V] extends StObject {
   
   /** Current index of the item in `Iterable` or null if removed. */
-  val currentIndex: Double | Null = js.native
+  val currentIndex: Double | Null
   
   /** The item. */
-  val item: V = js.native
+  val item: V
   
   /** Previous index of the item in `Iterable` or null if added. */
-  val previousIndex: Double | Null = js.native
+  val previousIndex: Double | Null
   
   /** Track by identity as computed by the `TrackByFunction`. */
-  val trackById: js.Any = js.native
+  val trackById: js.Any
 }
 object IterableChangeRecord {
   
   @scala.inline
   def apply[V](item: V, trackById: js.Any): IterableChangeRecord[V] = {
-    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], trackById = trackById.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], trackById = trackById.asInstanceOf[js.Any], currentIndex = null, previousIndex = null)
     __obj.asInstanceOf[IterableChangeRecord[V]]
   }
   
   @scala.inline
-  implicit class IterableChangeRecordMutableBuilder[Self <: IterableChangeRecord[_], V] (val x: Self with IterableChangeRecord[V]) extends AnyVal {
+  implicit class IterableChangeRecordMutableBuilder[Self <: IterableChangeRecord[?], V] (val x: Self & IterableChangeRecord[V]) extends AnyVal {
     
     @scala.inline
     def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])

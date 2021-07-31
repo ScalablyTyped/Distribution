@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStorageLensConfigurationsResult extends StObject {
   
   /**
     * If the request produced more than the maximum number of S3 Storage Lens configuration results, you can pass this value into a subsequent request to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[ContinuationToken] = js.native
+  var NextToken: js.UndefOr[ContinuationToken] = js.undefined
   
   /**
     * A list of S3 Storage Lens configurations.
     */
-  var StorageLensConfigurationList: js.UndefOr[typings.awsSdk.s3controlMod.StorageLensConfigurationList] = js.native
+  var StorageLensConfigurationList: js.UndefOr[typings.awsSdk.s3controlMod.StorageLensConfigurationList] = js.undefined
 }
 object ListStorageLensConfigurationsResult {
   

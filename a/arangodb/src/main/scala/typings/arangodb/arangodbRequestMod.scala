@@ -10,7 +10,6 @@ import typings.arangodb.anon.urlstringmethodHttpMethod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arangodbRequestMod extends Shortcut {
@@ -61,34 +60,33 @@ object arangodbRequestMod extends Shortcut {
     var put_Original: FnCall = js.native
   }
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var auth: js.UndefOr[Password | Bearer] = js.native
+    var auth: js.UndefOr[Password | Bearer] = js.undefined
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var followRedirect: js.UndefOr[Boolean] = js.native
+    var followRedirect: js.UndefOr[Boolean] = js.undefined
     
-    var form: js.UndefOr[js.Any] = js.native
+    var form: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+    var headers: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var qs: js.UndefOr[js.Object] = js.native
+    var qs: js.UndefOr[js.Object] = js.undefined
     
-    var returnBodyOnError: js.UndefOr[Boolean] = js.native
+    var returnBodyOnError: js.UndefOr[Boolean] = js.undefined
     
-    var sslProtocol: js.UndefOr[Double] = js.native
+    var sslProtocol: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var useQuerystring: js.UndefOr[Boolean] = js.native
+    var useQuerystring: js.UndefOr[Boolean] = js.undefined
   }
   object RequestOptions {
     

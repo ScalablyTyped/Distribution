@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudSqlConnectionProfile extends StObject {
   
   /** Output only. The Cloud SQL instance ID that this connection profile is associated with. */
-  var cloudSqlId: js.UndefOr[String] = js.native
+  var cloudSqlId: js.UndefOr[String] = js.undefined
   
   /** Output only. The Cloud SQL database instance's private IP. */
-  var privateIp: js.UndefOr[String] = js.native
+  var privateIp: js.UndefOr[String] = js.undefined
   
   /** Output only. The Cloud SQL database instance's public IP. */
-  var publicIp: js.UndefOr[String] = js.native
+  var publicIp: js.UndefOr[String] = js.undefined
   
   /** Immutable. Metadata used to create the destination Cloud SQL database. */
-  var settings: js.UndefOr[CloudSqlSettings] = js.native
+  var settings: js.UndefOr[CloudSqlSettings] = js.undefined
 }
 object CloudSqlConnectionProfile {
   

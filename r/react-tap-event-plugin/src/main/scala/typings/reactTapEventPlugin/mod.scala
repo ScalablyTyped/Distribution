@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,12 +12,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : js.Function1[/* strategyOverrides */ js.UndefOr[StrategyOverrides], Unit] = js.native
   
-  @js.native
   trait StrategyOverrides extends StObject {
     
     var shouldRejectClick: js.UndefOr[
         js.Function2[/* lastTouchEventTimestamp */ Date, /* clickEventTimestamp */ Date, Boolean]
-      ] = js.native
+      ] = js.undefined
   }
   object StrategyOverrides {
     

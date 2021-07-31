@@ -2,17 +2,15 @@ package typings.seen.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Font extends StObject {
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var font: String = js.native
+  var font: String
   
-  var `text-anchor`: js.UndefOr[String] = js.native
+  var `text-anchor`: js.UndefOr[String] = js.undefined
 }
 object Font {
   

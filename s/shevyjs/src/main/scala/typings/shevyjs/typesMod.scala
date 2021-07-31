@@ -7,25 +7,23 @@ import typings.shevyjs.shevyjsStrings.minorThird
 import typings.shevyjs.shevyjsStrings.perfectFourth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type Factor = Double
   
-  @js.native
   trait FontScalePresets extends StObject {
     
-    var augmentedFourth: Scale = js.native
+    var augmentedFourth: Scale
     
-    var majorSecond: Scale = js.native
+    var majorSecond: Scale
     
-    var majorThird: Scale = js.native
+    var majorThird: Scale
     
-    var minorThird: Scale = js.native
+    var minorThird: Scale
     
-    var perfectFourth: Scale = js.native
+    var perfectFourth: Scale
   }
   object FontScalePresets {
     
@@ -106,20 +104,19 @@ object typesMod {
     def h6: typings.shevyjs.shevyjsStrings.h6 = "h6".asInstanceOf[typings.shevyjs.shevyjsStrings.h6]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var addMarginBottom: Boolean = js.native
+    var addMarginBottom: Boolean
     
-    var baseFontScale: Scale | majorSecond | minorThird | majorThird | perfectFourth | augmentedFourth = js.native
+    var baseFontScale: Scale | majorSecond | minorThird | majorThird | perfectFourth | augmentedFourth
     
-    var baseFontSize: String = js.native
+    var baseFontSize: String
     
-    var baseLineHeight: Double = js.native
+    var baseLineHeight: Double
     
-    var proximity: Boolean = js.native
+    var proximity: Boolean
     
-    var proximityFactor: Factor = js.native
+    var proximityFactor: Factor
   }
   object Options {
     
@@ -162,14 +159,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait RhythmProperties extends StObject {
     
-    var fontSize: String = js.native
+    var fontSize: String
     
-    var lineHeight: Double = js.native
+    var lineHeight: Double
     
-    var marginBottom: String = js.native
+    var marginBottom: String
   }
   object RhythmProperties {
     

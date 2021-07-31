@@ -2,7 +2,6 @@ package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * token can be used in a subsequent request to retrieve the next request
   * page.
   */
-@js.native
 trait SchemaListProjectsResponse extends StObject {
   
   /**
@@ -23,13 +21,13 @@ trait SchemaListProjectsResponse extends StObject {
     * returned is the last page in the result set.  Pagination tokens have a
     * limited lifetime.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of Projects that matched the list filter. This list can be
     * paginated.
     */
-  var projects: js.UndefOr[js.Array[SchemaProject]] = js.native
+  var projects: js.UndefOr[js.Array[SchemaProject]] = js.undefined
 }
 object SchemaListProjectsResponse {
   

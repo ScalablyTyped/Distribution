@@ -2,32 +2,30 @@ package typings.reactNativeFbsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareContentCommonParameters extends StObject {
   
   /**
     * A hashtag to be added to the share interface. The hashtag must be 32 characters or less.
     */
-  var hashtag: js.UndefOr[String] = js.native
+  var hashtag: js.UndefOr[String] = js.undefined
   
   /**
     * List of IDs for taggable people to tag with this content.
     */
-  var peopleIds: js.UndefOr[js.Array[String]] = js.native
+  var peopleIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The ID for a place to tag with this content.
     */
-  var placeId: js.UndefOr[String] = js.native
+  var placeId: js.UndefOr[String] = js.undefined
   
   /**
     * A value to be added to the referrer URL when a person follows a link from
     * this shared content on feed.
     */
-  var ref: js.UndefOr[String] = js.native
+  var ref: js.UndefOr[String] = js.undefined
 }
 object ShareContentCommonParameters {
   

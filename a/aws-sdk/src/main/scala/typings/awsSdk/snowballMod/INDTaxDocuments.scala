@@ -2,16 +2,14 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INDTaxDocuments extends StObject {
   
   /**
     * The Goods and Services Tax (GST) documents required in AWS Regions in India.
     */
-  var GSTIN: js.UndefOr[typings.awsSdk.snowballMod.GSTIN] = js.native
+  var GSTIN: js.UndefOr[typings.awsSdk.snowballMod.GSTIN] = js.undefined
 }
 object INDTaxDocuments {
   

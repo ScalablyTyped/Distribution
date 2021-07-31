@@ -2,23 +2,23 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextInsertionOptions extends TextEditOptions {
+trait TextInsertionOptions
+  extends StObject
+     with TextEditOptions {
   
   /**
     *  If true, decreases indent level appropriately (for example, when a closing
     *  bracket is inserted).
     */
-  var autoDecreaseIndent: js.UndefOr[Boolean] = js.native
+  var autoDecreaseIndent: js.UndefOr[Boolean] = js.undefined
   
   /** If true, indents all inserted text appropriately. */
-  var autoIndent: js.UndefOr[Boolean] = js.native
+  var autoIndent: js.UndefOr[Boolean] = js.undefined
   
   /** If true, indent newline appropriately. */
-  var autoIndentNewline: js.UndefOr[Boolean] = js.native
+  var autoIndentNewline: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  By default, when pasting multiple lines, Atom attempts to preserve the relative
@@ -26,10 +26,10 @@ trait TextInsertionOptions extends TextEditOptions {
     *  level of the first line has changed from the copied text. If this option is
     *  true, this behavior is suppressed.
     */
-  var preserveTrailingLineIndentation: js.UndefOr[Boolean] = js.native
+  var preserveTrailingLineIndentation: js.UndefOr[Boolean] = js.undefined
   
   /** If true, selects the newly added text. */
-  var select: js.UndefOr[Boolean] = js.native
+  var select: js.UndefOr[Boolean] = js.undefined
 }
 object TextInsertionOptions {
   

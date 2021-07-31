@@ -2,7 +2,6 @@ package typings.angularWizard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -60,22 +59,21 @@ object mod {
       def wizard(name: String): Wizard = js.native
     }
     
-    @js.native
     trait WzStep extends StObject {
       
-      def canenter(args: js.Any*): Boolean = js.native
+      def canenter(args: js.Any*): Boolean
       
-      def canexit(args: js.Any*): Boolean = js.native
+      def canexit(args: js.Any*): Boolean
       
-      var description: String = js.native
+      var description: String
       
-      var selected: Boolean = js.native
+      var selected: Boolean
       
-      var title: String = js.native
+      var title: String
       
-      var wzData: js.Any = js.native
+      var wzData: js.Any
       
-      var wzTitle: String = js.native
+      var wzTitle: String
     }
     object WzStep {
       

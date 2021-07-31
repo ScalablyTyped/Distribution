@@ -5,24 +5,24 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("create-react-context", JSImport.Default)
+  @JSImport("create-react-context", JSImport.Namespace)
   @js.native
-  def default[T](defaultValue: T): Context[T] = js.native
-  @JSImport("create-react-context", JSImport.Default)
-  @js.native
-  def default[T](defaultValue: T, calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, Double]): Context[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[T](defaultValue: T): Context[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Context[T]]
+  @scala.inline
+  def default[T](defaultValue: T, calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, Double]): Context[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(defaultValue.asInstanceOf[js.Any], calculateChangedBits.asInstanceOf[js.Any])).asInstanceOf[Context[T]]
+  
   trait ConsumerProps[T] extends StObject {
     
-    var children: RenderFn[T] | js.Array[RenderFn[T]] = js.native
+    var children: RenderFn[T] | js.Array[RenderFn[T]]
     
-    var observedBits: js.UndefOr[Double] = js.native
+    var observedBits: js.UndefOr[Double] = js.undefined
   }
   object ConsumerProps {
     
@@ -33,7 +33,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConsumerPropsMutableBuilder[Self <: ConsumerProps[_], T] (val x: Self with ConsumerProps[T]) extends AnyVal {
+    implicit class ConsumerPropsMutableBuilder[Self <: ConsumerProps[?], T] (val x: Self & ConsumerProps[T]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: RenderFn[T] | js.Array[RenderFn[T]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -52,12 +52,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Context[T] extends StObject {
     
-    var Consumer: ComponentClass[ConsumerProps[T], ComponentState] = js.native
+    var Consumer: ComponentClass[ConsumerProps[T], ComponentState]
     
-    var Provider: ComponentClass[ProviderProps[T], ComponentState] = js.native
+    var Provider: ComponentClass[ProviderProps[T], ComponentState]
   }
   object Context {
     
@@ -71,7 +70,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context[_], T] (val x: Self with Context[T]) extends AnyVal {
+    implicit class ContextMutableBuilder[Self <: Context[?], T] (val x: Self & Context[T]) extends AnyVal {
       
       @scala.inline
       def setConsumer(value: ComponentClass[ConsumerProps[T], ComponentState]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
@@ -81,12 +80,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ProviderProps[T] extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var value: T = js.native
+    var value: T
   }
   object ProviderProps {
     
@@ -97,7 +95,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps[_], T] (val x: Self with ProviderProps[T]) extends AnyVal {
+    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps[?], T] (val x: Self & ProviderProps[T]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

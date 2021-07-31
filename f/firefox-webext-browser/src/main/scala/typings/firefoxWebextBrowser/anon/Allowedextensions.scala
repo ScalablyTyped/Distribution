@@ -6,21 +6,21 @@ import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.pkcs11
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stdio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Allowedextensions extends NativeManifest {
+trait Allowedextensions
+  extends StObject
+     with NativeManifest {
   
-  var allowed_extensions: js.Array[ExtensionID] = js.native
+  var allowed_extensions: js.Array[ExtensionID]
   
-  var description: String = js.native
+  var description: String
   
-  var name: String = js.native
+  var name: String
   
-  var path: String = js.native
+  var path: String
   
-  var `type`: pkcs11 | stdio = js.native
+  var `type`: pkcs11 | stdio
 }
 object Allowedextensions {
   

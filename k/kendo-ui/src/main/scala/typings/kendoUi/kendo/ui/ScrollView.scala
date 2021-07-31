@@ -4,11 +4,12 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollView extends Widget {
+trait ScrollView
+  extends StObject
+     with Widget {
   
   def content(content: String): Unit = js.native
   def content(content: JQuery): Unit = js.native

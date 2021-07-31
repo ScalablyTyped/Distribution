@@ -2,26 +2,24 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Day extends StObject {
   
   /**
     * The day of birth, between 1 and 31.
     */
-  var day: Double = js.native
+  var day: Double
   
   /**
     * The month of birth, between 1 and 12.
     */
-  var month: Double = js.native
+  var month: Double
   
   /**
     * The four-digit year of birth.
     */
-  var year: Double = js.native
+  var year: Double
 }
 object Day {
   

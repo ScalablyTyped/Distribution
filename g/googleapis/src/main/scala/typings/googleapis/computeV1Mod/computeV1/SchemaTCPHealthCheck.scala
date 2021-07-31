@@ -2,23 +2,21 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTCPHealthCheck extends StObject {
   
   /**
     * The TCP port number for the health check request. The default value
     * is 80. Valid values are 1 through 65535.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * Port name as defined in InstanceGroup#NamedPort#name. If both port and
     * port_name are defined, port takes precedence.
     */
-  var portName: js.UndefOr[String] = js.native
+  var portName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how port is selected for health checking, can be one of
@@ -30,13 +28,13 @@ trait SchemaTCPHealthCheck extends StObject {
     * for health checking.   If not specified, TCP health check follows
     * behavior specified in port and portName fields.
     */
-  var portSpecification: js.UndefOr[String] = js.native
+  var portSpecification: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of proxy header to append before sending data to the
     * backend, either NONE or PROXY_V1. The default is NONE.
     */
-  var proxyHeader: js.UndefOr[String] = js.native
+  var proxyHeader: js.UndefOr[String] = js.undefined
   
   /**
     * The application data to send once the TCP connection has been established
@@ -44,14 +42,14 @@ trait SchemaTCPHealthCheck extends StObject {
     * connection establishment alone will indicate health. The request data can
     * only be ASCII.
     */
-  var request: js.UndefOr[String] = js.native
+  var request: js.UndefOr[String] = js.undefined
   
   /**
     * The bytes to match against the beginning of the response data. If left
     * empty (the default value), any response will indicate health. The
     * response data can only be ASCII.
     */
-  var response: js.UndefOr[String] = js.native
+  var response: js.UndefOr[String] = js.undefined
 }
 object SchemaTCPHealthCheck {
   

@@ -2,19 +2,17 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewOffset extends StObject {
   
-  var animated: js.UndefOr[Boolean | Null] = js.native
+  var animated: js.UndefOr[Boolean | Null] = js.undefined
   
-  var index: Double = js.native
+  var index: Double
   
-  var viewOffset: js.UndefOr[Double] = js.native
+  var viewOffset: js.UndefOr[Double] = js.undefined
   
-  var viewPosition: js.UndefOr[Double] = js.native
+  var viewPosition: js.UndefOr[Double] = js.undefined
 }
 object ViewOffset {
   

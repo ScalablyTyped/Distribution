@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alb extends StObject {
   
-  var authorizers: js.UndefOr[Authorizers] = js.native
+  var authorizers: js.UndefOr[Authorizers] = js.undefined
   
-  var targetGroupPrefix: js.UndefOr[String] = js.native
+  var targetGroupPrefix: js.UndefOr[String] = js.undefined
 }
 object Alb {
   

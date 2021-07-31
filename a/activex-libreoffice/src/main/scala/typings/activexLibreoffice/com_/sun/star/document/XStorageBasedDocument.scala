@@ -7,33 +7,33 @@ import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to initialize document with a storage, to store document to a storage, and to set document to be based on provided storage. */
-@js.native
-trait XStorageBasedDocument extends XInterface {
+trait XStorageBasedDocument
+  extends StObject
+     with XInterface {
   
   /** allows to get the storage the document is based on. */
-  val DocumentStorage: XStorage = js.native
+  val DocumentStorage: XStorage
   
   /** allows to register a listener that will be notified when another storage is set to the document. */
-  def addStorageChangeListener(xListener: XStorageChangeListener): Unit = js.native
+  def addStorageChangeListener(xListener: XStorageChangeListener): Unit
   
   /** allows to get the storage the document is based on. */
-  def getDocumentStorage(): XStorage = js.native
+  def getDocumentStorage(): XStorage
   
   /** lets the document load itself using provided storage. */
-  def loadFromStorage(xStorage: XStorage, aMediaDescriptor: SeqEquiv[PropertyValue]): Unit = js.native
+  def loadFromStorage(xStorage: XStorage, aMediaDescriptor: SeqEquiv[PropertyValue]): Unit
   
   /** allows to deregister the listener. */
-  def removeStorageChangeListener(xListener: XStorageChangeListener): Unit = js.native
+  def removeStorageChangeListener(xListener: XStorageChangeListener): Unit
   
   /** lets the document store itself to the provided storage. */
-  def storeToStorage(xStorage: XStorage, aMediaDescriptor: SeqEquiv[PropertyValue]): Unit = js.native
+  def storeToStorage(xStorage: XStorage, aMediaDescriptor: SeqEquiv[PropertyValue]): Unit
   
   /** allows to switch the document to the provided storage. */
-  def switchToStorage(xStorage: XStorage): Unit = js.native
+  def switchToStorage(xStorage: XStorage): Unit
 }
 object XStorageBasedDocument {
   

@@ -4,52 +4,52 @@ import typings.stripe.stripeStrings.automatic
 import typings.stripe.stripeStrings.manual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPaymentIntentCreationOptions extends IPaymentIntentUpdateOptions {
+trait IPaymentIntentCreationOptions
+  extends StObject
+     with IPaymentIntentUpdateOptions {
   
   /**
     * Capture method of this PaymentIntent.
     */
-  var capture_method: js.UndefOr[automatic | manual] = js.native
+  var capture_method: js.UndefOr[automatic | manual] = js.undefined
   
   /**
     * Attempt to confirm this PaymentIntent immediately. If the payment method attached is a card, a return_url must be provided in case additional authentication is required.
     */
-  var confirm: js.UndefOr[Boolean] = js.native
+  var confirm: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to use the publishable key automatic method, or the secret key manual method
     */
-  var confirmation_method: js.UndefOr[automatic | manual] = js.native
+  var confirmation_method: js.UndefOr[automatic | manual] = js.undefined
   
   /**
     * Set to true to indicate that the customer is not in your checkout flow during this payment attempt, and therefore is unable to authenticate. This parameter is intended for scenarios where you collect card details and charge them later.
     */
-  var off_session: js.UndefOr[Boolean] = js.native
+  var off_session: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Stripe account ID for which these funds are intended.
     */
-  var on_behalf_of: js.UndefOr[String] = js.native
+  var on_behalf_of: js.UndefOr[String] = js.undefined
   
   /**
     * Payment-method-specific configuration for this PaymentIntent.
     */
-  var payment_method_options: js.UndefOr[IPaymentMethodOptions] = js.native
+  var payment_method_options: js.UndefOr[IPaymentMethodOptions] = js.undefined
   
   /**
     * The URL to redirect your customer back to after they authenticate or cancel their payment on the payment method’s app or site. If you’d prefer to redirect to a mobile application, you can alternatively supply an application URI scheme. This param can only be used if `confirm=true`.
     */
-  var return_url: js.UndefOr[String] = js.native
+  var return_url: js.UndefOr[String] = js.undefined
   
   /**
     * The parameters used to automatically create a Transfer when the payment succeeds.
     */
   @JSName("transfer_data")
-  var transfer_data_IPaymentIntentCreationOptions: js.UndefOr[IPaymentIntentTransferData] = js.native
+  var transfer_data_IPaymentIntentCreationOptions: js.UndefOr[IPaymentIntentTransferData] = js.undefined
 }
 object IPaymentIntentCreationOptions {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateNodeRequest extends StObject {
   
   /**
     * Engine attributes that are used for disassociating the node. No attributes are required for Puppet.   Attributes required in a DisassociateNode request for Chef     CHEF_ORGANIZATION: The Chef organization with which the node was associated. By default only one organization named default can exist.   
     */
-  var EngineAttributes: js.UndefOr[typings.awsSdk.opsworkscmMod.EngineAttributes] = js.native
+  var EngineAttributes: js.UndefOr[typings.awsSdk.opsworkscmMod.EngineAttributes] = js.undefined
   
   /**
     * The name of the client node. 
     */
-  var NodeName: typings.awsSdk.opsworkscmMod.NodeName = js.native
+  var NodeName: typings.awsSdk.opsworkscmMod.NodeName
   
   /**
     * The name of the server from which to disassociate the node. 
     */
-  var ServerName: typings.awsSdk.opsworkscmMod.ServerName = js.native
+  var ServerName: typings.awsSdk.opsworkscmMod.ServerName
 }
 object DisassociateNodeRequest {
   

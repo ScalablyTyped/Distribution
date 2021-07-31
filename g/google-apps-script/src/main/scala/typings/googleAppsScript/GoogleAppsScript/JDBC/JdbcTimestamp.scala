@@ -3,51 +3,49 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A JDBC Timestamp. For documentation of this class, see java.sql.Timestamp
   * .
   */
-@js.native
 trait JdbcTimestamp extends StObject {
   
-  def after(when: JdbcTimestamp): Boolean = js.native
+  def after(when: JdbcTimestamp): Boolean
   
-  def before(when: JdbcTimestamp): Boolean = js.native
+  def before(when: JdbcTimestamp): Boolean
   
-  def getDate(): Integer = js.native
+  def getDate(): Integer
   
-  def getHours(): Integer = js.native
+  def getHours(): Integer
   
-  def getMinutes(): Integer = js.native
+  def getMinutes(): Integer
   
-  def getMonth(): Integer = js.native
+  def getMonth(): Integer
   
-  def getNanos(): Integer = js.native
+  def getNanos(): Integer
   
-  def getSeconds(): Integer = js.native
+  def getSeconds(): Integer
   
-  def getTime(): Integer = js.native
+  def getTime(): Integer
   
-  def getYear(): Integer = js.native
+  def getYear(): Integer
   
-  def setDate(date: Integer): Unit = js.native
+  def setDate(date: Integer): Unit
   
-  def setHours(hours: Integer): Unit = js.native
+  def setHours(hours: Integer): Unit
   
-  def setMinutes(minutes: Integer): Unit = js.native
+  def setMinutes(minutes: Integer): Unit
   
-  def setMonth(month: Integer): Unit = js.native
+  def setMonth(month: Integer): Unit
   
-  def setNanos(nanoseconds: Integer): Unit = js.native
+  def setNanos(nanoseconds: Integer): Unit
   
-  def setSeconds(seconds: Integer): Unit = js.native
+  def setSeconds(seconds: Integer): Unit
   
-  def setTime(milliseconds: Integer): Unit = js.native
+  def setTime(milliseconds: Integer): Unit
   
-  def setYear(year: Integer): Unit = js.native
+  def setYear(year: Integer): Unit
 }
 object JdbcTimestamp {
   

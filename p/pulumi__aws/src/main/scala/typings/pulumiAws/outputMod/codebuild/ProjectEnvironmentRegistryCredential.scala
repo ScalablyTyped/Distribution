@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.codebuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectEnvironmentRegistryCredential extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) or name of credentials created using AWS Secrets Manager.
     */
-  var credential: String = js.native
+  var credential: String
   
   /**
     * The service that created the credentials to access a private Docker registry. The valid value, SECRETS_MANAGER, is for AWS Secrets Manager.
     */
-  var credentialProvider: String = js.native
+  var credentialProvider: String
 }
 object ProjectEnvironmentRegistryCredential {
   

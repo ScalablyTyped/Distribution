@@ -2,25 +2,23 @@ package typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response containing a partial list of deployments and a page token used
   * to build the next request if the request has been truncated.
   */
-@js.native
 trait SchemaDeploymentsListResponse extends StObject {
   
   /**
     * Output only. The deployments contained in this response.
     */
-  var deployments: js.UndefOr[js.Array[SchemaDeployment]] = js.native
+  var deployments: js.UndefOr[js.Array[SchemaDeployment]] = js.undefined
   
   /**
     * Output only. A token used to continue a truncated list request.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaDeploymentsListResponse {
   

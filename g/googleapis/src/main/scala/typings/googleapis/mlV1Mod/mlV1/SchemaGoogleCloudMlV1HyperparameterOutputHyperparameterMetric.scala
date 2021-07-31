@@ -2,24 +2,22 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An observed value of a metric.
   */
-@js.native
 trait SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric extends StObject {
   
   /**
     * The objective value at this training step.
     */
-  var objectiveValue: js.UndefOr[Double] = js.native
+  var objectiveValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The global training step for this metric.
     */
-  var trainingStep: js.UndefOr[String] = js.native
+  var trainingStep: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric {
   

@@ -4,14 +4,16 @@ import typings.baconjs.observableMod.Property
 import typings.baconjs.observableMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object updateMod {
   
-  @JSImport("baconjs/types/update", "update")
+  @JSImport("baconjs/types/update", JSImport.Namespace)
   @js.native
-  def update[Out](initial: Out, patterns: UpdatePattern[Out]*): Property[Out] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def update[Out](initial: Out, patterns: UpdatePattern[Out]*): Property[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(initial.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[Property[Out]]
   
   type UpdatePattern[O] = (UpdatePattern1[js.Any, O]) | (UpdatePattern2[js.Any, js.Any, O]) | (UpdatePattern3[js.Any, js.Any, js.Any, O]) | (UpdatePattern4[js.Any, js.Any, js.Any, js.Any, O]) | (UpdatePattern5[js.Any, js.Any, js.Any, js.Any, js.Any, O]) | (UpdatePattern6[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, O])
   

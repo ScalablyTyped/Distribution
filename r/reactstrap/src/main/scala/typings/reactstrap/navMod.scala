@@ -8,7 +8,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navMod {
@@ -20,30 +19,30 @@ object navMod {
   
   type Nav = Component[NavProps, js.Object, js.Any]
   
-  @js.native
   trait NavProps
-    extends HTMLAttributes[HTMLUListElement]
+    extends StObject
+       with HTMLAttributes[HTMLUListElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var card: js.UndefOr[Boolean] = js.native
+    var card: js.UndefOr[Boolean] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var horizontal: js.UndefOr[String] = js.native
+    var horizontal: js.UndefOr[String] = js.undefined
     
-    var justified: js.UndefOr[Boolean] = js.native
+    var justified: js.UndefOr[Boolean] = js.undefined
     
-    var navbar: js.UndefOr[Boolean] = js.native
+    var navbar: js.UndefOr[Boolean] = js.undefined
     
-    var pills: js.UndefOr[Boolean] = js.native
+    var pills: js.UndefOr[Boolean] = js.undefined
     
-    var tabs: js.UndefOr[Boolean] = js.native
+    var tabs: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var vertical: js.UndefOr[Boolean | String] = js.native
+    var vertical: js.UndefOr[Boolean | String] = js.undefined
   }
   object NavProps {
     
@@ -105,7 +104,7 @@ object navMod {
       def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

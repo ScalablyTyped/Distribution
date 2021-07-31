@@ -2,51 +2,51 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaBezierProps extends AreaBaseProps {
+trait AreaBezierProps
+  extends StObject
+     with AreaBaseProps {
   
   /**
     * The x coordinate of the curve's control point at the start.
     */
-  var cx1: Double | String = js.native
+  var cx1: Double | String
   
   /**
     * The x coordinate of the curve's control point at the end.
     */
-  var cx2: Double | String = js.native
+  var cx2: Double | String
   
   /**
     * The y coordinate of the curve's control point at the start.
     */
-  var cy1: Double | String = js.native
+  var cy1: Double | String
   
   /**
     * The y coordinate of the curve's control point at the end.
     */
-  var cy2: Double | String = js.native
+  var cy2: Double | String
   
   /**
     * The x coordinate of the curve's start point.
     */
-  var x1: Double | String = js.native
+  var x1: Double | String
   
   /**
     * The x coordinate of the curve's end point.
     */
-  var x2: Double | String = js.native
+  var x2: Double | String
   
   /**
     * The y coordinate of the curve's start point.
     */
-  var y1: Double | String = js.native
+  var y1: Double | String
   
   /**
     * The y coordinate of the curve's end point.
     */
-  var y2: Double | String = js.native
+  var y2: Double | String
 }
 object AreaBezierProps {
   

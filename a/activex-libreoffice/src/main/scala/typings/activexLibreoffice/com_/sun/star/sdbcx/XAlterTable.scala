@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used for creating and appending new objects to a specific container. */
-@js.native
-trait XAlterTable extends XInterface {
+trait XAlterTable
+  extends StObject
+     with XInterface {
   
   /**
     * is intended to alter an existing column identified by its position. This operation must be atomic, in that it is done in one step.s
@@ -19,7 +19,7 @@ trait XAlterTable extends XInterface {
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the given index does not denote an existing column.
     */
-  def alterColumnByIndex(index: Double, descriptor: XPropertySet): Unit = js.native
+  def alterColumnByIndex(index: Double, descriptor: XPropertySet): Unit
   
   /**
     * is intended to alter an existing column identified by its name. This operation must be atomic, in that it is done in one step.s
@@ -27,7 +27,7 @@ trait XAlterTable extends XInterface {
     * @param descriptor the new descriptor for the new column
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def alterColumnByName(colName: String, descriptor: XPropertySet): Unit = js.native
+  def alterColumnByName(colName: String, descriptor: XPropertySet): Unit
 }
 object XAlterTable {
   

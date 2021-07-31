@@ -2,26 +2,24 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchBarColorPickerConstructorOptions extends StObject {
   
   /**
     * Array of hex color strings to appear as possible colors to select.
     */
-  var availableColors: js.UndefOr[js.Array[String]] = js.native
+  var availableColors: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Function to call when a color is selected.
     */
-  var change: js.UndefOr[js.Function1[/* color */ String, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* color */ String, Unit]] = js.undefined
   
   /**
     * The selected hex color in the picker, i.e `#ABCDEF`.
     */
-  var selectedColor: js.UndefOr[String] = js.native
+  var selectedColor: js.UndefOr[String] = js.undefined
 }
 object TouchBarColorPickerConstructorOptions {
   

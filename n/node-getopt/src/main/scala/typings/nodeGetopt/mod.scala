@@ -5,14 +5,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("node-getopt", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Getopt {
+  class ^ protected ()
+    extends StObject
+       with Getopt {
     /**
       * options is a set of option. each option contains 3 fields.
       *    [short_name, long_name_with_definition, comment]
@@ -24,7 +25,7 @@ object mod {
       *    ARG can be replaced by any word.
       * @param options
       */
-    def this(options: js.Array[_]) = this()
+    def this(options: js.Array[js.Any]) = this()
   }
   @JSImport("node-getopt", JSImport.Namespace)
   @js.native
@@ -70,14 +71,12 @@ object mod {
     * @param options
     */
   /* static member */
-  @JSImport("node-getopt", "create")
-  @js.native
-  def create(options: js.Array[js.Array[String]]): Getopt = js.native
+  @scala.inline
+  def create(options: js.Array[js.Array[String]]): Getopt = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Getopt]
   
   /* static member */
-  @JSImport("node-getopt", "getVersion")
-  @js.native
-  def getVersion(): String = js.native
+  @scala.inline
+  def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
   
   type ErrorFunc = js.Function1[/* exception */ Error, Unit]
   
@@ -156,14 +155,13 @@ object mod {
   /**
     * Parsed options.
     */
-  @js.native
   trait ParsedOption extends StObject {
     
-    var argv: js.Array[String] = js.native
+    var argv: js.Array[String]
     
-    def empty(): Boolean = js.native
+    def empty(): Boolean
     
-    var options: OptionMap = js.native
+    var options: OptionMap
   }
   object ParsedOption {
     

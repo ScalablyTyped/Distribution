@@ -2,21 +2,19 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecStartOptions extends StObject {
   
   // Detach and Tty are used by Docker's API
-  var Detach: js.UndefOr[Boolean] = js.native
+  var Detach: js.UndefOr[Boolean] = js.undefined
   
-  var Tty: js.UndefOr[Boolean] = js.native
+  var Tty: js.UndefOr[Boolean] = js.undefined
   
   // hijack and stdin are used by docker-modem
-  var hijack: js.UndefOr[Boolean] = js.native
+  var hijack: js.UndefOr[Boolean] = js.undefined
   
-  var stdin: js.UndefOr[Boolean] = js.native
+  var stdin: js.UndefOr[Boolean] = js.undefined
 }
 object ExecStartOptions {
   

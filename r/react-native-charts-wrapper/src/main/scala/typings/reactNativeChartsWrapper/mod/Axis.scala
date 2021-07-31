@@ -8,65 +8,63 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.MINUTES
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.SECONDS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Axis extends StObject {
   
-  var axisLineColor: js.UndefOr[Color] = js.native
+  var axisLineColor: js.UndefOr[Color] = js.undefined
   
-  var axisLineWidth: js.UndefOr[Double] = js.native
+  var axisLineWidth: js.UndefOr[Double] = js.undefined
   
-  var axisMaximum: js.UndefOr[Double] = js.native
+  var axisMaximum: js.UndefOr[Double] = js.undefined
   
-  var axisMinimum: js.UndefOr[Double] = js.native
+  var axisMinimum: js.UndefOr[Double] = js.undefined
   
-  var centerAxisLabels: js.UndefOr[Boolean] = js.native
+  var centerAxisLabels: js.UndefOr[Boolean] = js.undefined
   
-  var drawAxisLines: js.UndefOr[Boolean] = js.native
+  var drawAxisLines: js.UndefOr[Boolean] = js.undefined
   
-  var drawGridLines: js.UndefOr[Boolean] = js.native
+  var drawGridLines: js.UndefOr[Boolean] = js.undefined
   
-  var drawLabels: js.UndefOr[Boolean] = js.native
+  var drawLabels: js.UndefOr[Boolean] = js.undefined
   
-  var drawLimitLinesBehindData: js.UndefOr[Boolean] = js.native
+  var drawLimitLinesBehindData: js.UndefOr[Boolean] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var fontWeight: js.UndefOr[Double] = js.native
+  var fontWeight: js.UndefOr[Double] = js.undefined
   
-  var granularity: js.UndefOr[Double] = js.native
+  var granularity: js.UndefOr[Double] = js.undefined
   
-  var granularityEnabled: js.UndefOr[Boolean] = js.native
+  var granularityEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var gridColor: js.UndefOr[Color] = js.native
+  var gridColor: js.UndefOr[Color] = js.undefined
   
-  var gridDashedLine: js.UndefOr[LineLength] = js.native
+  var gridDashedLine: js.UndefOr[LineLength] = js.undefined
   
-  var gridLineWidth: js.UndefOr[Double] = js.native
+  var gridLineWidth: js.UndefOr[Double] = js.undefined
   
-  var labelCount: js.UndefOr[Double] = js.native
+  var labelCount: js.UndefOr[Double] = js.undefined
   
-  var labelCountForce: js.UndefOr[Boolean] = js.native
+  var labelCountForce: js.UndefOr[Boolean] = js.undefined
   
-  var limitLines: js.UndefOr[js.Array[AxisLimitLine]] = js.native
+  var limitLines: js.UndefOr[js.Array[AxisLimitLine]] = js.undefined
   
-  var since: js.UndefOr[Double] = js.native
+  var since: js.UndefOr[Double] = js.undefined
   
-  var textColor: js.UndefOr[Color] = js.native
+  var textColor: js.UndefOr[Color] = js.undefined
   
-  var textSize: js.UndefOr[Double] = js.native
+  var textSize: js.UndefOr[Double] = js.undefined
   
-  var timeUnit: js.UndefOr[MILLISECONDS | SECONDS | MINUTES | HOURS | DAYS] = js.native
+  var timeUnit: js.UndefOr[MILLISECONDS | SECONDS | MINUTES | HOURS | DAYS] = js.undefined
   
-  var valueFormatter: js.UndefOr[ValueFormatter] = js.native
+  var valueFormatter: js.UndefOr[ValueFormatter] = js.undefined
   
-  var valueFormatterPattern: js.UndefOr[String] = js.native
+  var valueFormatterPattern: js.UndefOr[String] = js.undefined
 }
 object Axis {
   

@@ -2,31 +2,26 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
   
-  var cases: js.Array[SwitchCase] = js.native
+  var cases: js.Array[SwitchCase]
   
-  var discriminant: Expression = js.native
+  var discriminant: Expression
   
   @JSName("type")
-  var type_SwitchStatement: typings.estree.estreeStrings.SwitchStatement = js.native
+  var type_SwitchStatement: typings.estree.estreeStrings.SwitchStatement
 }
 object SwitchStatement {
   
   @scala.inline
-  def apply(
-    cases: js.Array[SwitchCase],
-    discriminant: Expression,
-    `type`: typings.estree.estreeStrings.SwitchStatement
-  ): SwitchStatement = {
+  def apply(cases: js.Array[SwitchCase], discriminant: Expression): SwitchStatement = {
     val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], discriminant = discriminant.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SwitchStatement")
     __obj.asInstanceOf[SwitchStatement]
   }
   

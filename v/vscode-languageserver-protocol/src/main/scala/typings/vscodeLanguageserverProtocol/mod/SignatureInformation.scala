@@ -2,23 +2,24 @@ package typings.vscodeLanguageserverProtocol.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SignatureInformation {
   
-  @JSImport("vscode-languageserver-protocol", "SignatureInformation.create")
+  @JSImport("vscode-languageserver-protocol", "SignatureInformation")
   @js.native
-  def create(
-    label: String,
-    documentation: js.UndefOr[scala.Nothing],
-    parameters: typings.vscodeLanguageserverTypes.mod.ParameterInformation*
-  ): typings.vscodeLanguageserverTypes.mod.SignatureInformation = js.native
-  @JSImport("vscode-languageserver-protocol", "SignatureInformation.create")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def create(
     label: String,
     documentation: String,
     parameters: typings.vscodeLanguageserverTypes.mod.ParameterInformation*
-  ): typings.vscodeLanguageserverTypes.mod.SignatureInformation = js.native
+  ): typings.vscodeLanguageserverTypes.mod.SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SignatureInformation]
+  @scala.inline
+  def create(
+    label: String,
+    documentation: Unit,
+    parameters: typings.vscodeLanguageserverTypes.mod.ParameterInformation*
+  ): typings.vscodeLanguageserverTypes.mod.SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SignatureInformation]
 }

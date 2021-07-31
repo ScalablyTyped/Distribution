@@ -3,17 +3,15 @@ package typings.firebaseDatabase.anon
 import typings.firebaseDatabase.queryMod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTESTACCESS extends StObject {
   
-  def forceRestClient(forceRestClient: Boolean): Unit = js.native
+  def forceRestClient(forceRestClient: Boolean): Unit
   
-  def hijackHash(newHash: js.Function0[String]): js.Function0[Unit] = js.native
+  def hijackHash(newHash: js.Function0[String]): js.Function0[Unit]
   
-  def queryIdentifier(query: Query): String = js.native
+  def queryIdentifier(query: Query): String
 }
 object TypeofTESTACCESS {
   

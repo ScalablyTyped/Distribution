@@ -2,7 +2,6 @@ package typings.rotJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minHeapMod {
@@ -48,14 +47,13 @@ object minHeapMod {
     var updateUp: js.Any = js.native
   }
   
-  @js.native
   trait HeapWrapper[T] extends StObject {
     
-    var key: Double = js.native
+    var key: Double
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var value: T = js.native
+    var value: T
   }
   object HeapWrapper {
     
@@ -66,7 +64,7 @@ object minHeapMod {
     }
     
     @scala.inline
-    implicit class HeapWrapperMutableBuilder[Self <: HeapWrapper[_], T] (val x: Self with HeapWrapper[T]) extends AnyVal {
+    implicit class HeapWrapperMutableBuilder[Self <: HeapWrapper[?], T] (val x: Self & HeapWrapper[T]) extends AnyVal {
       
       @scala.inline
       def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

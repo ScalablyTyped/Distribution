@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileManagerMessagesDialogsMoveConfirm extends StObject {
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var close: js.UndefOr[String] = js.native
+  var close: js.UndefOr[String] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var okText: js.UndefOr[String] = js.native
+  var okText: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object FileManagerMessagesDialogsMoveConfirm {
   

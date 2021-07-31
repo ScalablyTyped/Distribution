@@ -9,7 +9,6 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxMod extends Shortcut {
@@ -19,7 +18,9 @@ object checkboxMod extends Shortcut {
   val default: CompoundedComponent = js.native
   
   @js.native
-  trait CompoundedComponent extends ForwardRefExoticComponent[CheckboxProps with RefAttributes[HTMLInputElement]] {
+  trait CompoundedComponent
+    extends StObject
+       with ForwardRefExoticComponent[CheckboxProps & RefAttributes[HTMLInputElement]] {
     
     var Group: NamedExoticComponent[CheckboxGroupProps] = js.native
     

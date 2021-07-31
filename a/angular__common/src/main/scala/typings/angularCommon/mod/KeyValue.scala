@@ -2,15 +2,13 @@ package typings.angularCommon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyValue[K, V] extends StObject {
   
-  var key: K = js.native
+  var key: K
   
-  var value: V = js.native
+  var value: V
 }
 object KeyValue {
   
@@ -21,7 +19,7 @@ object KeyValue {
   }
   
   @scala.inline
-  implicit class KeyValueMutableBuilder[Self <: KeyValue[_, _], K, V] (val x: Self with (KeyValue[K, V])) extends AnyVal {
+  implicit class KeyValueMutableBuilder[Self <: KeyValue[?, ?], K, V] (val x: Self & (KeyValue[K, V])) extends AnyVal {
     
     @scala.inline
     def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

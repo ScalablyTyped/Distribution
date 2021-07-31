@@ -7,13 +7,12 @@ import typings.nodeForge.anon.NotAfter
 import typings.nodeForge.mod.md.MessageDigest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Certificate extends StObject {
   
-  var extensions: js.Array[_] = js.native
+  var extensions: js.Array[js.Any] = js.native
   
   /**
     * Gets an issuer or subject attribute from its name, type, or short name.
@@ -56,7 +55,7 @@ trait Certificate extends StObject {
     *
     * @param exts the array of extensions to use.
     */
-  def setExtensions(exts: js.Array[_]): Unit = js.native
+  def setExtensions(exts: js.Array[js.Any]): Unit = js.native
   
   /**
     * Sets the issuer of this certificate.

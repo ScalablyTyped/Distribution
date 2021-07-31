@@ -2,57 +2,55 @@ package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A conversion containing data relevant to DoubleClick Search.
   */
-@js.native
 trait SchemaConversion extends StObject {
   
   /**
     * DS ad group ID.
     */
-  var adGroupId: js.UndefOr[String] = js.native
+  var adGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * DS ad ID.
     */
-  var adId: js.UndefOr[String] = js.native
+  var adId: js.UndefOr[String] = js.undefined
   
   /**
     * DS advertiser ID.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * DS agency ID.
     */
-  var agencyId: js.UndefOr[String] = js.native
+  var agencyId: js.UndefOr[String] = js.undefined
   
   /**
     * Available to advertisers only after contacting DoubleClick Search
     * customer support.
     */
-  var attributionModel: js.UndefOr[String] = js.native
+  var attributionModel: js.UndefOr[String] = js.undefined
   
   /**
     * DS campaign ID.
     */
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
   /**
     * Sales channel for the product. Acceptable values are:   -
     * &quot;local&quot;: a physical store  - &quot;online&quot;: an online
     * store
     */
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
   /**
     * DS click ID for the conversion.
     */
-  var clickId: js.UndefOr[String] = js.native
+  var clickId: js.UndefOr[String] = js.undefined
   
   /**
     * For offline conversions, advertisers provide this ID. Advertisers can
@@ -62,98 +60,98 @@ trait SchemaConversion extends StObject {
     * conversions, DS copies the dsConversionId or floodlightOrderId into this
     * property depending on the advertiser&#39;s Floodlight instructions.
     */
-  var conversionId: js.UndefOr[String] = js.native
+  var conversionId: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the conversion was last modified, in epoch millis UTC.
     */
-  var conversionModifiedTimestamp: js.UndefOr[String] = js.native
+  var conversionModifiedTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the conversion took place, in epoch millis UTC.
     */
-  var conversionTimestamp: js.UndefOr[String] = js.native
+  var conversionTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Available to advertisers only after contacting DoubleClick Search
     * customer support.
     */
-  var countMillis: js.UndefOr[String] = js.native
+  var countMillis: js.UndefOr[String] = js.undefined
   
   /**
     * DS criterion (keyword) ID.
     */
-  var criterionId: js.UndefOr[String] = js.native
+  var criterionId: js.UndefOr[String] = js.undefined
   
   /**
     * The currency code for the conversion&#39;s revenue. Should be in ISO 4217
     * alphabetic (3-char) format.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * Custom dimensions for the conversion, which can be used to filter data in
     * a report.
     */
-  var customDimension: js.UndefOr[js.Array[SchemaCustomDimension]] = js.native
+  var customDimension: js.UndefOr[js.Array[SchemaCustomDimension]] = js.undefined
   
   /**
     * Custom metrics for the conversion.
     */
-  var customMetric: js.UndefOr[js.Array[SchemaCustomMetric]] = js.native
+  var customMetric: js.UndefOr[js.Array[SchemaCustomMetric]] = js.undefined
   
   /**
     * The type of device on which the conversion occurred.
     */
-  var deviceType: js.UndefOr[String] = js.native
+  var deviceType: js.UndefOr[String] = js.undefined
   
   /**
     * ID that DoubleClick Search generates for each conversion.
     */
-  var dsConversionId: js.UndefOr[String] = js.native
+  var dsConversionId: js.UndefOr[String] = js.undefined
   
   /**
     * DS engine account ID.
     */
-  var engineAccountId: js.UndefOr[String] = js.native
+  var engineAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The Floodlight order ID provided by the advertiser for the conversion.
     */
-  var floodlightOrderId: js.UndefOr[String] = js.native
+  var floodlightOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * ID that DS generates and uses to uniquely identify the inventory account
     * that contains the product.
     */
-  var inventoryAccountId: js.UndefOr[String] = js.native
+  var inventoryAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The country registered for the Merchant Center feed that contains the
     * product. Use an ISO 3166 code to specify a country.
     */
-  var productCountry: js.UndefOr[String] = js.native
+  var productCountry: js.UndefOr[String] = js.undefined
   
   /**
     * DS product group ID.
     */
-  var productGroupId: js.UndefOr[String] = js.native
+  var productGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The product ID (SKU).
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * The language registered for the Merchant Center feed that contains the
     * product. Use an ISO 639 code to specify a language.
     */
-  var productLanguage: js.UndefOr[String] = js.native
+  var productLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The quantity of this conversion, in millis.
     */
-  var quantityMillis: js.UndefOr[String] = js.native
+  var quantityMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The revenue amount of this TRANSACTION conversion, in micros (value
@@ -161,36 +159,36 @@ trait SchemaConversion extends StObject {
     * value of &quot;10&quot; enter &quot;10000000&quot; (10 million) in your
     * request.
     */
-  var revenueMicros: js.UndefOr[String] = js.native
+  var revenueMicros: js.UndefOr[String] = js.undefined
   
   /**
     * The numeric segmentation identifier (for example, DoubleClick Search
     * Floodlight activity ID).
     */
-  var segmentationId: js.UndefOr[String] = js.native
+  var segmentationId: js.UndefOr[String] = js.undefined
   
   /**
     * The friendly segmentation identifier (for example, DoubleClick Search
     * Floodlight activity name).
     */
-  var segmentationName: js.UndefOr[String] = js.native
+  var segmentationName: js.UndefOr[String] = js.undefined
   
   /**
     * The segmentation type of this conversion (for example, FLOODLIGHT).
     */
-  var segmentationType: js.UndefOr[String] = js.native
+  var segmentationType: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the conversion, that is, either ACTIVE or REMOVED. Note:
     * state DELETED is deprecated.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the local store for which the product was advertised.
     * Applicable only when the channel is &quot;local&quot;.
     */
-  var storeId: js.UndefOr[String] = js.native
+  var storeId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the conversion, that is, either ACTION or TRANSACTION. An
@@ -199,7 +197,7 @@ trait SchemaConversion extends StObject {
     * have a monetarily quantifiable value. Examples are email list signups
     * (ACTION) versus ecommerce purchases (TRANSACTION).
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaConversion {
   

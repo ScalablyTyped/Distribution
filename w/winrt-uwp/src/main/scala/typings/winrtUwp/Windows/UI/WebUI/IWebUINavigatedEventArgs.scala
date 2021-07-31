@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.WebUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for an app navigation event. */
-@js.native
 trait IWebUINavigatedEventArgs extends StObject {
   
   /** Gets the app navigation operation. */
-  var navigatedOperation: WebUINavigatedOperation = js.native
+  var navigatedOperation: WebUINavigatedOperation
 }
 object IWebUINavigatedEventArgs {
   

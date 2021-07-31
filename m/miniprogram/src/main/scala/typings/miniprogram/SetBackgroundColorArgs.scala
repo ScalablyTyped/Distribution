@@ -2,26 +2,26 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SetBackgroundColorArgs extends AsyncCallback[Unit] {
+trait SetBackgroundColorArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * Window background color.
     */
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
   /**
     * Bottom window background color, supported in iOS only.
     */
-  var backgroundColorBottom: String = js.native
+  var backgroundColorBottom: String
   
   /**
     * Top window background color, supported in iOS only.
     */
-  var backgroundColorTop: String = js.native
+  var backgroundColorTop: String
 }
 object SetBackgroundColorArgs {
   

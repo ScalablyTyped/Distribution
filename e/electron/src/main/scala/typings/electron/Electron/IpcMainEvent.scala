@@ -2,11 +2,12 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpcMainEvent extends Event {
+trait IpcMainEvent
+  extends StObject
+     with Event {
   
   // Docs: https://electronjs.org/docs/api/structures/ipc-main-event
   /**

@@ -4,15 +4,13 @@ import typings.flexmonster.mod.ColumnSize
 import typings.flexmonster.mod.RowSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Columns extends StObject {
   
-  var columns: js.UndefOr[js.Array[ColumnSize]] = js.native
+  var columns: js.UndefOr[js.Array[ColumnSize]] = js.undefined
   
-  var rows: js.UndefOr[js.Array[RowSize]] = js.native
+  var rows: js.UndefOr[js.Array[RowSize]] = js.undefined
 }
 object Columns {
   

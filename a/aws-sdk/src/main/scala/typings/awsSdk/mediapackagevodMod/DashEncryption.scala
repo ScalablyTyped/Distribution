@@ -2,13 +2,11 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashEncryption extends StObject {
   
-  var SpekeKeyProvider: typings.awsSdk.mediapackagevodMod.SpekeKeyProvider = js.native
+  var SpekeKeyProvider: typings.awsSdk.mediapackagevodMod.SpekeKeyProvider
 }
 object DashEncryption {
   

@@ -2,21 +2,19 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Payment extends StObject {
   
   /**
     * The identifier of the purchased product.
     */
-  var productIdentifier: String = js.native
+  var productIdentifier: String
   
   /**
     * The quantity purchased.
     */
-  var quantity: Double = js.native
+  var quantity: Double
 }
 object Payment {
   

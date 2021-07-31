@@ -5,10 +5,13 @@ import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.structuresMod.IStructure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object versionChecksMod {
+  
+  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "LifeCycle")
   @js.native
@@ -53,26 +56,32 @@ object versionChecksMod {
   object LifeCycleState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[LifeCycleState with Double] = js.native
+    def apply(value: Double): js.UndefOr[LifeCycleState & Double] = js.native
     
     @js.native
-    sealed trait AVAILABLE extends LifeCycleState
-    /* 1 */ val AVAILABLE: typings.mendixmodelsdk.versionChecksMod.LifeCycleState.AVAILABLE with Double = js.native
+    sealed trait AVAILABLE
+      extends StObject
+         with LifeCycleState
+    /* 1 */ val AVAILABLE: typings.mendixmodelsdk.versionChecksMod.LifeCycleState.AVAILABLE & Double = js.native
     
     @js.native
-    sealed trait REMOVED extends LifeCycleState
-    /* 2 */ val REMOVED: typings.mendixmodelsdk.versionChecksMod.LifeCycleState.REMOVED with Double = js.native
+    sealed trait REMOVED
+      extends StObject
+         with LifeCycleState
+    /* 2 */ val REMOVED: typings.mendixmodelsdk.versionChecksMod.LifeCycleState.REMOVED & Double = js.native
     
     @js.native
-    sealed trait UNAVAILABLE extends LifeCycleState
-    /* 0 */ val UNAVAILABLE: typings.mendixmodelsdk.versionChecksMod.LifeCycleState.UNAVAILABLE with Double = js.native
+    sealed trait UNAVAILABLE
+      extends StObject
+         with LifeCycleState
+    /* 0 */ val UNAVAILABLE: typings.mendixmodelsdk.versionChecksMod.LifeCycleState.UNAVAILABLE & Double = js.native
   }
   
   @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "ModifierValueHistory")
   @js.native
   class ModifierValueHistory protected () extends StObject {
-    def this(lifecycle: js.UndefOr[scala.Nothing], defaultFallback: Boolean) = this()
     def this(lifecycle: Null, defaultFallback: Boolean) = this()
+    def this(lifecycle: Unit, defaultFallback: Boolean) = this()
     /**
       * defaultFallback indiciates whether the absence of a lifecycle yields true or false
       */
@@ -108,19 +117,25 @@ object versionChecksMod {
   object StructureType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[StructureType with Double] = js.native
+    def apply(value: Double): js.UndefOr[StructureType & Double] = js.native
     
     @js.native
-    sealed trait Element extends StructureType
-    /* 2 */ val Element: typings.mendixmodelsdk.versionChecksMod.StructureType.Element with Double = js.native
+    sealed trait Element
+      extends StObject
+         with StructureType
+    /* 2 */ val Element: typings.mendixmodelsdk.versionChecksMod.StructureType.Element & Double = js.native
     
     @js.native
-    sealed trait ModelUnit extends StructureType
-    /* 1 */ val ModelUnit: typings.mendixmodelsdk.versionChecksMod.StructureType.ModelUnit with Double = js.native
+    sealed trait ModelUnit
+      extends StObject
+         with StructureType
+    /* 1 */ val ModelUnit: typings.mendixmodelsdk.versionChecksMod.StructureType.ModelUnit & Double = js.native
     
     @js.native
-    sealed trait StructuralUnit extends StructureType
-    /* 0 */ val StructuralUnit: typings.mendixmodelsdk.versionChecksMod.StructureType.StructuralUnit with Double = js.native
+    sealed trait StructuralUnit
+      extends StObject
+         with StructureType
+    /* 0 */ val StructuralUnit: typings.mendixmodelsdk.versionChecksMod.StructureType.StructuralUnit & Double = js.native
   }
   
   @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "StructureVersionInfo")
@@ -198,9 +213,8 @@ object versionChecksMod {
       * This function is memoised to keep memory and time consumption low,
       * given that only a handful of versions exist at any time anyway.
       */
-    @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "Version.parse")
-    @js.native
-    def parse(versionString: String): Version = js.native
+    @scala.inline
+    def parse(versionString: String): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(versionString.asInstanceOf[js.Any]).asInstanceOf[Version]
   }
   
   @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "VersionInfo")
@@ -210,34 +224,29 @@ object versionChecksMod {
     def checkSameModelVersion(model: IAbstractModel, otherModel: IAbstractModel): Unit = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "contains")
-  @js.native
-  def contains(range: IVersionRange, version: Version): Boolean = js.native
+  @scala.inline
+  def contains(range: IVersionRange, version: Version): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(range.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "createInVersionCheck")
-  @js.native
-  def createInVersionCheck(model: IAbstractModel, structureTypeName: String, versionRange: IVersionRange): Unit = js.native
+  @scala.inline
+  def createInVersionCheck(model: IAbstractModel, structureTypeName: String, versionRange: IVersionRange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createInVersionCheck")(model.asInstanceOf[js.Any], structureTypeName.asInstanceOf[js.Any], versionRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "isAtLeast")
-  @js.native
-  def isAtLeast(versionString: String, model: IAbstractModel): Boolean = js.native
+  @scala.inline
+  def isAtLeast(versionString: String, model: IAbstractModel): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAtLeast")(versionString.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "parseAsNormalizedVersion")
-  @js.native
-  def parseAsNormalizedVersion(versionString: String): Version = js.native
+  @scala.inline
+  def parseAsNormalizedVersion(versionString: String): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAsNormalizedVersion")(versionString.asInstanceOf[js.Any]).asInstanceOf[Version]
   
-  @js.native
   trait ILifeCycle extends StObject {
     
-    var deleted: js.UndefOr[String] = js.native
+    var deleted: js.UndefOr[String] = js.undefined
     
-    var deletionMessage: js.UndefOr[String | Null] = js.native
+    var deletionMessage: js.UndefOr[String | Null] = js.undefined
     
-    var deprecated: js.UndefOr[String] = js.native
+    var deprecated: js.UndefOr[String] = js.undefined
     
-    var deprecationMessage: js.UndefOr[String | Null] = js.native
+    var deprecationMessage: js.UndefOr[String | Null] = js.undefined
     
-    var introduced: js.UndefOr[String] = js.native
+    var introduced: js.UndefOr[String] = js.undefined
   }
   object ILifeCycle {
     
@@ -288,13 +297,12 @@ object versionChecksMod {
     }
   }
   
-  @js.native
   trait IModifierValueHistory extends StObject {
     
     /** descending list of change in previous meta model versions */
-    var changedIn: js.UndefOr[js.Array[String]] = js.native
+    var changedIn: js.UndefOr[js.Array[String]] = js.undefined
     
-    var currentValue: Boolean = js.native
+    var currentValue: Boolean
   }
   object IModifierValueHistory {
     
@@ -321,12 +329,13 @@ object versionChecksMod {
     }
   }
   
-  @js.native
-  trait IPropertyVersionInfo extends ILifeCycle {
+  trait IPropertyVersionInfo
+    extends StObject
+       with ILifeCycle {
     
-    var public: js.UndefOr[IModifierValueHistory] = js.native
+    var public: js.UndefOr[IModifierValueHistory] = js.undefined
     
-    var required: js.UndefOr[IModifierValueHistory] = js.native
+    var required: js.UndefOr[IModifierValueHistory] = js.undefined
   }
   object IPropertyVersionInfo {
     
@@ -353,14 +362,15 @@ object versionChecksMod {
     }
   }
   
-  @js.native
-  trait IStructureVersionInfo extends ILifeCycle {
+  trait IStructureVersionInfo
+    extends StObject
+       with ILifeCycle {
     
-    var experimental: js.UndefOr[IModifierValueHistory] = js.native
+    var experimental: js.UndefOr[IModifierValueHistory] = js.undefined
     
-    var properties: js.UndefOr[StringDictionary[IPropertyVersionInfo]] = js.native
+    var properties: js.UndefOr[StringDictionary[IPropertyVersionInfo]] = js.undefined
     
-    var public: js.UndefOr[IModifierValueHistory] = js.native
+    var public: js.UndefOr[IModifierValueHistory] = js.undefined
   }
   object IStructureVersionInfo {
     
@@ -393,12 +403,11 @@ object versionChecksMod {
     }
   }
   
-  @js.native
   trait IVersionRange extends StObject {
     
-    var end: js.UndefOr[String] = js.native
+    var end: js.UndefOr[String] = js.undefined
     
-    var start: js.UndefOr[String] = js.native
+    var start: js.UndefOr[String] = js.undefined
   }
   object IVersionRange {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkPathComponent extends StObject {
   
   /**
     * The identifier of a component in the network path.
     */
-  var ComponentId: js.UndefOr[NonEmptyString] = js.native
+  var ComponentId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of component.
     */
-  var ComponentType: js.UndefOr[NonEmptyString] = js.native
+  var ComponentType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Information about the component that comes after the current component in the network path.
     */
-  var Egress: js.UndefOr[NetworkHeader] = js.native
+  var Egress: js.UndefOr[NetworkHeader] = js.undefined
   
   /**
     * Information about the component that comes before the current node in the network path.
     */
-  var Ingress: js.UndefOr[NetworkHeader] = js.native
+  var Ingress: js.UndefOr[NetworkHeader] = js.undefined
 }
 object NetworkPathComponent {
   

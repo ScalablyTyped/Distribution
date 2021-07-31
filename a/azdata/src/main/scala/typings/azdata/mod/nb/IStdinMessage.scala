@@ -4,28 +4,22 @@ import typings.azdata.anon.Password
 import typings.azdata.azdataStrings.stdin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IStdinMessage extends IMessage {
+trait IStdinMessage
+  extends StObject
+     with IMessage {
   
-  var channel: stdin = js.native
+  var channel: stdin
   
   @JSName("content")
-  var content_IStdinMessage: Password = js.native
+  var content_IStdinMessage: Password
 }
 object IStdinMessage {
   
   @scala.inline
-  def apply(
-    channel: stdin,
-    content: Password,
-    header: IHeader,
-    parent_header: IHeader | js.Object,
-    `type`: Channel
-  ): IStdinMessage = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+  def apply(content: Password, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IStdinMessage = {
+    val __obj = js.Dynamic.literal(channel = "stdin", content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStdinMessage]
   }

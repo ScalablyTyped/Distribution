@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a group of EmailConversation objects for batch processing. */
-@js.native
 trait EmailConversationBatch extends StObject {
   
   /** Gets a list of EmailConversation objects to use for batch processing. */
-  var conversations: IVectorView[EmailConversation] = js.native
+  var conversations: IVectorView[EmailConversation]
   
   /** Gets the status of the last batch processing operation. */
-  var status: EmailBatchStatus = js.native
+  var status: EmailBatchStatus
 }
 object EmailConversationBatch {
   

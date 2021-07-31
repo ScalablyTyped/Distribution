@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserPoolDomainResponse extends StObject {
   
   /**
     * The Amazon CloudFront endpoint that you use as the target of the alias that you set up with your Domain Name Service (DNS) provider.
     */
-  var CloudFrontDomain: js.UndefOr[DomainType] = js.native
+  var CloudFrontDomain: js.UndefOr[DomainType] = js.undefined
 }
 object CreateUserPoolDomainResponse {
   

@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,26 +17,42 @@ sealed trait ConditionalFormatRuleType extends StObject
 object ConditionalFormatRuleType extends StObject {
   
   @js.native
-  sealed trait automatic extends ConditionalFormatRuleType
+  sealed trait automatic
+    extends StObject
+       with ConditionalFormatRuleType
   
   @js.native
-  sealed trait formula extends ConditionalFormatRuleType
+  sealed trait formula
+    extends StObject
+       with ConditionalFormatRuleType
   
   @js.native
-  sealed trait highestValue extends ConditionalFormatRuleType
+  sealed trait highestValue
+    extends StObject
+       with ConditionalFormatRuleType
   
   @js.native
-  sealed trait invalid extends ConditionalFormatRuleType
+  sealed trait invalid
+    extends StObject
+       with ConditionalFormatRuleType
   
   @js.native
-  sealed trait lowestValue extends ConditionalFormatRuleType
+  sealed trait lowestValue
+    extends StObject
+       with ConditionalFormatRuleType
   
   @js.native
-  sealed trait number extends ConditionalFormatRuleType
+  sealed trait number
+    extends StObject
+       with ConditionalFormatRuleType
   
   @js.native
-  sealed trait percent extends ConditionalFormatRuleType
+  sealed trait percent
+    extends StObject
+       with ConditionalFormatRuleType
   
   @js.native
-  sealed trait percentile extends ConditionalFormatRuleType
+  sealed trait percentile
+    extends StObject
+       with ConditionalFormatRuleType
 }

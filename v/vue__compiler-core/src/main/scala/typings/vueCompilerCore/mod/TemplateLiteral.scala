@@ -3,25 +3,24 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`22`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateLiteral
-  extends SSRCodegenNode
-     with Node2 {
+  extends StObject
+     with Node2
+     with SSRCodegenNode {
   
-  var elements: js.Array[String | JSChildNode] = js.native
+  var elements: js.Array[String | JSChildNode]
   
   @JSName("type")
-  var type_TemplateLiteral: `22` = js.native
+  var type_TemplateLiteral: `22`
 }
 object TemplateLiteral {
   
   @scala.inline
-  def apply(elements: js.Array[String | JSChildNode], loc: SourceLocation, `type`: `22`): TemplateLiteral = {
+  def apply(elements: js.Array[String | JSChildNode], loc: SourceLocation): TemplateLiteral = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(22)
     __obj.asInstanceOf[TemplateLiteral]
   }
   

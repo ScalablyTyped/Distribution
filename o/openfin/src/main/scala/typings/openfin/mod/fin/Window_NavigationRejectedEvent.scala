@@ -3,36 +3,34 @@ package typings.openfin.mod.fin
 import typings.openfin.openfinStrings.`navigation-rejected`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window_NavigationRejectedEvent extends StObject {
   
-  var name: String = js.native
+  var name: String
   
   /**
     * source of navigation window name
     */
-  var sourceName: String = js.native
+  var sourceName: String
   
-  var topic: `navigation-rejected` = js.native
+  var topic: `navigation-rejected`
   
   /**
     * Url that was not reached "http://blocked-content.url"
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * the UUID of the application the window belongs to.
     */
-  var uuid: String = js.native
+  var uuid: String
 }
 object Window_NavigationRejectedEvent {
   
   @scala.inline
-  def apply(name: String, sourceName: String, topic: `navigation-rejected`, url: String, uuid: String): Window_NavigationRejectedEvent = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sourceName = sourceName.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+  def apply(name: String, sourceName: String, url: String, uuid: String): Window_NavigationRejectedEvent = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sourceName = sourceName.asInstanceOf[js.Any], topic = "navigation-rejected", url = url.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window_NavigationRejectedEvent]
   }
   

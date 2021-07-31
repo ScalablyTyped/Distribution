@@ -19,10 +19,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kinesis {
+  
+  @JSImport("@pulumi/aws", "kinesis")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "kinesis.AnalyticsApplication")
   @js.native
@@ -37,11 +40,15 @@ object kinesis {
       */
     def this(name: String) = this()
     def this(name: String, args: AnalyticsApplicationArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: AnalyticsApplicationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object AnalyticsApplication {
+    
+    @JSImport("@pulumi/aws", "kinesis.AnalyticsApplication")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing AnalyticsApplication resource's state with the given name, ID, and optional extra
@@ -52,26 +59,21 @@ object kinesis {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "kinesis.AnalyticsApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication = js.native
-    @JSImport("@pulumi/aws", "kinesis.AnalyticsApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication = js.native
-    @JSImport("@pulumi/aws", "kinesis.AnalyticsApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AnalyticsApplicationState): typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication = js.native
-    @JSImport("@pulumi/aws", "kinesis.AnalyticsApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AnalyticsApplicationState, opts: CustomResourceOptions): typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AnalyticsApplicationState): typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AnalyticsApplicationState, opts: CustomResourceOptions): typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsApplicationMod.AnalyticsApplication]
     
     /**
       * Returns true if the given object is an instance of AnalyticsApplication.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "kinesis.AnalyticsApplication.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/analyticsApplication.AnalyticsApplication */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/analyticsApplication.AnalyticsApplication */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/analyticsApplication.AnalyticsApplication */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "kinesis.FirehoseDeliveryStream")
@@ -91,6 +93,10 @@ object kinesis {
   /* static members */
   object FirehoseDeliveryStream {
     
+    @JSImport("@pulumi/aws", "kinesis.FirehoseDeliveryStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing FirehoseDeliveryStream resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -100,26 +106,21 @@ object kinesis {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "kinesis.FirehoseDeliveryStream.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream = js.native
-    @JSImport("@pulumi/aws", "kinesis.FirehoseDeliveryStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream = js.native
-    @JSImport("@pulumi/aws", "kinesis.FirehoseDeliveryStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState): typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream = js.native
-    @JSImport("@pulumi/aws", "kinesis.FirehoseDeliveryStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState, opts: CustomResourceOptions): typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState): typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState, opts: CustomResourceOptions): typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firehoseDeliveryStreamMod.FirehoseDeliveryStream]
     
     /**
       * Returns true if the given object is an instance of FirehoseDeliveryStream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "kinesis.FirehoseDeliveryStream.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/firehoseDeliveryStream.FirehoseDeliveryStream */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/firehoseDeliveryStream.FirehoseDeliveryStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/firehoseDeliveryStream.FirehoseDeliveryStream */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "kinesis.Stream")
@@ -139,6 +140,10 @@ object kinesis {
   /* static members */
   object Stream {
     
+    @JSImport("@pulumi/aws", "kinesis.Stream")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Stream resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -148,26 +153,21 @@ object kinesis {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "kinesis.Stream.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.streamMod.Stream = js.native
-    @JSImport("@pulumi/aws", "kinesis.Stream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.streamMod.Stream = js.native
-    @JSImport("@pulumi/aws", "kinesis.Stream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StreamState): typings.pulumiAws.streamMod.Stream = js.native
-    @JSImport("@pulumi/aws", "kinesis.Stream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StreamState, opts: CustomResourceOptions): typings.pulumiAws.streamMod.Stream = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.streamMod.Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.streamMod.Stream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.streamMod.Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.streamMod.Stream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StreamState): typings.pulumiAws.streamMod.Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.streamMod.Stream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StreamState, opts: CustomResourceOptions): typings.pulumiAws.streamMod.Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.streamMod.Stream]
     
     /**
       * Returns true if the given object is an instance of Stream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "kinesis.Stream.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/stream.Stream */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/stream.Stream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/stream.Stream */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "kinesis.StreamEventSubscription")
@@ -202,11 +202,15 @@ object kinesis {
       */
     def this(name: String) = this()
     def this(name: String, args: VideoStreamArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: VideoStreamArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object VideoStream {
+    
+    @JSImport("@pulumi/aws", "kinesis.VideoStream")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing VideoStream resource's state with the given name, ID, and optional extra
@@ -217,34 +221,27 @@ object kinesis {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "kinesis.VideoStream.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.videoStreamMod.VideoStream = js.native
-    @JSImport("@pulumi/aws", "kinesis.VideoStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.videoStreamMod.VideoStream = js.native
-    @JSImport("@pulumi/aws", "kinesis.VideoStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VideoStreamState): typings.pulumiAws.videoStreamMod.VideoStream = js.native
-    @JSImport("@pulumi/aws", "kinesis.VideoStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VideoStreamState, opts: CustomResourceOptions): typings.pulumiAws.videoStreamMod.VideoStream = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.videoStreamMod.VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.videoStreamMod.VideoStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.videoStreamMod.VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.videoStreamMod.VideoStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VideoStreamState): typings.pulumiAws.videoStreamMod.VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.videoStreamMod.VideoStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VideoStreamState, opts: CustomResourceOptions): typings.pulumiAws.videoStreamMod.VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.videoStreamMod.VideoStream]
     
     /**
       * Returns true if the given object is an instance of VideoStream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "kinesis.VideoStream.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/videoStream.VideoStream */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/videoStream.VideoStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/videoStream.VideoStream */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "kinesis.getStream")
-  @js.native
-  def getStream(args: GetStreamArgs): js.Promise[GetStreamResult] = js.native
-  @JSImport("@pulumi/aws", "kinesis.getStream")
-  @js.native
-  def getStream(args: GetStreamArgs, opts: InvokeOptions): js.Promise[GetStreamResult] = js.native
+  @scala.inline
+  def getStream(args: GetStreamArgs): js.Promise[GetStreamResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetStreamResult]]
+  @scala.inline
+  def getStream(args: GetStreamArgs, opts: InvokeOptions): js.Promise[GetStreamResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetStreamResult]]
   
   /* augmented module */
   object pulumiAwsKinesisStreamAugmentingMod {

@@ -2,64 +2,62 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Age extends StObject {
   
   /** Age of an object (in days). This condition is satisfied when an object reaches the specified age. */
-  var age: js.UndefOr[Double] = js.native
+  var age: js.UndefOr[Double] = js.undefined
   
   /**
     * A date in RFC 3339 format with only the date part (for instance, "2013-01-15"). This condition is satisfied when an object is created before midnight of the specified
     * date in UTC.
     */
-  var createdBefore: js.UndefOr[String] = js.native
+  var createdBefore: js.UndefOr[String] = js.undefined
   
   /** A date in RFC 3339 format with only the date part (for instance, "2013-01-15"). This condition is satisfied when the custom time on an object is before this date in UTC. */
-  var customTimeBefore: js.UndefOr[String] = js.native
+  var customTimeBefore: js.UndefOr[String] = js.undefined
   
   /**
     * Number of days elapsed since the user-specified timestamp set on an object. The condition is satisfied if the days elapsed is at least this number. If no custom
     * timestamp is specified on an object, the condition does not apply.
     */
-  var daysSinceCustomTime: js.UndefOr[Double] = js.native
+  var daysSinceCustomTime: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of days elapsed since the noncurrent timestamp of an object. The condition is satisfied if the days elapsed is at least this number. This condition is relevant
     * only for versioned objects. The value of the field must be a nonnegative integer. If it's zero, the object version will become eligible for Lifecycle action as soon as
     * it becomes noncurrent.
     */
-  var daysSinceNoncurrentTime: js.UndefOr[Double] = js.native
+  var daysSinceNoncurrentTime: js.UndefOr[Double] = js.undefined
   
   /** Relevant only for versioned objects. If the value is true, this condition matches live objects; if the value is false, it matches archived objects. */
-  var isLive: js.UndefOr[Boolean] = js.native
+  var isLive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A regular expression that satisfies the RE2 syntax. This condition is satisfied when the name of the object matches the RE2 pattern. Note: This feature is currently in
     * the "Early Access" launch stage and is only available to a whitelisted set of users; that means that this feature may be changed in backward-incompatible ways and that
     * it is not guaranteed to be released.
     */
-  var matchesPattern: js.UndefOr[String] = js.native
+  var matchesPattern: js.UndefOr[String] = js.undefined
   
   /**
     * Objects having any of the storage classes specified by this condition will be matched. Values include MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE, STANDARD,
     * and DURABLE_REDUCED_AVAILABILITY.
     */
-  var matchesStorageClass: js.UndefOr[js.Array[String]] = js.native
+  var matchesStorageClass: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A date in RFC 3339 format with only the date part (for instance, "2013-01-15"). This condition is satisfied when the noncurrent time on an object is before this date in
     * UTC. This condition is relevant only for versioned objects.
     */
-  var noncurrentTimeBefore: js.UndefOr[String] = js.native
+  var noncurrentTimeBefore: js.UndefOr[String] = js.undefined
   
   /**
     * Relevant only for versioned objects. If the value is N, this condition is satisfied when there are at least N versions (including the live version) newer than this
     * version of the object.
     */
-  var numNewerVersions: js.UndefOr[Double] = js.native
+  var numNewerVersions: js.UndefOr[Double] = js.undefined
 }
 object Age {
   

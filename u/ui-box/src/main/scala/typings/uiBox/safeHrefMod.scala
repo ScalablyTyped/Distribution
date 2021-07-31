@@ -3,33 +3,31 @@ package typings.uiBox
 import typings.uiBox.anon.SafeHref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object safeHrefMod {
   
-  @JSImport("ui-box/dist/src/utils/safeHref", "configureSafeHref")
+  @JSImport("ui-box/dist/src/utils/safeHref", JSImport.Namespace)
   @js.native
-  def configureSafeHref(configObject: SafeHrefConfigObj): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ui-box/dist/src/utils/safeHref", "extractAnchorProps")
-  @js.native
-  def extractAnchorProps(href: String, rel: String): SafeHref = js.native
+  @scala.inline
+  def configureSafeHref(configObject: SafeHrefConfigObj): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureSafeHref")(configObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ui-box/dist/src/utils/safeHref", "getURLInfo")
-  @js.native
-  def getURLInfo(url: String): URLInfo = js.native
+  @scala.inline
+  def extractAnchorProps(href: String, rel: String): SafeHref = (^.asInstanceOf[js.Dynamic].applyDynamic("extractAnchorProps")(href.asInstanceOf[js.Any], rel.asInstanceOf[js.Any])).asInstanceOf[SafeHref]
   
-  @JSImport("ui-box/dist/src/utils/safeHref", "getUseSafeHref")
-  @js.native
-  def getUseSafeHref(): Boolean = js.native
+  @scala.inline
+  def getURLInfo(url: String): URLInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getURLInfo")(url.asInstanceOf[js.Any]).asInstanceOf[URLInfo]
   
-  @js.native
+  @scala.inline
+  def getUseSafeHref(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getUseSafeHref")().asInstanceOf[Boolean]
+  
   trait SafeHrefConfigObj extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
   }
   object SafeHrefConfigObj {
     
@@ -56,12 +54,11 @@ object safeHrefMod {
     }
   }
   
-  @js.native
   trait URLInfo extends StObject {
     
-    var sameOrigin: Boolean = js.native
+    var sameOrigin: Boolean
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object URLInfo {
     

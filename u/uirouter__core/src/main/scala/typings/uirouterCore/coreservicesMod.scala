@@ -7,27 +7,28 @@ import typings.uirouterCore.commonCommonMod.Obj
 import typings.uirouterCore.interfaceMod.Disposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreservicesMod {
   
-  @JSImport("@uirouter/core/lib/common/coreservices", "makeStub")
+  @JSImport("@uirouter/core/lib/common/coreservices", JSImport.Namespace)
   @js.native
-  def makeStub[T](service: String, methods: js.Array[/* keyof T */ String]): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def makeStub[T](service: String, methods: js.Array[/* keyof T */ String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStub")(service.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@uirouter/core/lib/common/coreservices", "services")
   @js.native
   val services: CoreServices = js.native
   
-  @js.native
   trait CoreServices extends StObject {
     
     @JSName("$injector")
-    var $injector: InjectorLike = js.native
+    var $injector: InjectorLike
     
     @JSName("$q")
-    var $q: QLike = js.native
+    var $q: QLike
   }
   object CoreServices {
     
@@ -51,8 +52,8 @@ object coreservicesMod {
   @js.native
   trait InjectorLike extends StObject {
     
-    def annotate(fn: IInjectable): js.Array[_] = js.native
-    def annotate(fn: IInjectable, strictDi: Boolean): js.Array[_] = js.native
+    def annotate(fn: IInjectable): js.Array[js.Any] = js.native
+    def annotate(fn: IInjectable, strictDi: Boolean): js.Array[js.Any] = js.native
     
     def get(token: js.Any): js.Any = js.native
     @JSName("get")
@@ -61,15 +62,17 @@ object coreservicesMod {
     def has(token: js.Any): Boolean = js.native
     
     def invoke(fn: IInjectable): js.Any = js.native
-    def invoke(fn: IInjectable, context: js.UndefOr[scala.Nothing], locals: Obj): js.Any = js.native
     def invoke(fn: IInjectable, context: js.Any): js.Any = js.native
     def invoke(fn: IInjectable, context: js.Any, locals: Obj): js.Any = js.native
+    def invoke(fn: IInjectable, context: Unit, locals: Obj): js.Any = js.native
     
     var strictDi: js.UndefOr[Boolean] = js.native
   }
   
   @js.native
-  trait LocationConfig extends Disposable {
+  trait LocationConfig
+    extends StObject
+       with Disposable {
     
     /** See: [[UrlConfig.baseHref]] */ def baseHref(): String = js.native
     /** See: [[UrlConfig.baseHref]] */ @JSName("baseHref")
@@ -98,34 +101,36 @@ object coreservicesMod {
   }
   
   @js.native
-  trait LocationServices extends Disposable {
+  trait LocationServices
+    extends StObject
+       with Disposable {
     
     /** See: [[UrlService.hash]] */ def hash(): String = js.native
     /** See: [[UrlService.hash]] */ @JSName("hash")
-    var hash_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['hash'] */ js.Any) with js.Function0[String] = js.native
+    var hash_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['hash'] */ js.Any) & js.Function0[String] = js.native
     
     /** See: [[UrlService.onChange]] */ def onChange(callback: EventListener): js.Function = js.native
     /** See: [[UrlService.onChange]] */ @JSName("onChange")
-    var onChange_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['onChange'] */ js.Any) with (js.Function1[/* callback */ EventListener, js.Function]) = js.native
+    var onChange_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['onChange'] */ js.Any) & (js.Function1[/* callback */ EventListener, js.Function]) = js.native
     
     /** See: [[UrlService.path]] */ def path(): String = js.native
     /** See: [[UrlService.path]] */ @JSName("path")
-    var path_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['path'] */ js.Any) with js.Function0[String] = js.native
+    var path_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['path'] */ js.Any) & js.Function0[String] = js.native
     
     /** See: [[UrlService.search]] */ def search(): StringDictionary[js.Any] = js.native
     /** See: [[UrlService.search]] */ @JSName("search")
-    var search_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['search'] */ js.Any) with js.Function0[StringDictionary[_]] = js.native
+    var search_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['search'] */ js.Any) & js.Function0[StringDictionary[js.Any]] = js.native
     
     /** See: [[UrlService.url]] */ def url(): String = js.native
-    def url(newurl: js.UndefOr[scala.Nothing], replace: js.UndefOr[scala.Nothing], state: js.Any): String = js.native
-    def url(newurl: js.UndefOr[scala.Nothing], replace: Boolean): String = js.native
-    def url(newurl: js.UndefOr[scala.Nothing], replace: Boolean, state: js.Any): String = js.native
     def url(newurl: String): String = js.native
-    def url(newurl: String, replace: js.UndefOr[scala.Nothing], state: js.Any): String = js.native
     def url(newurl: String, replace: Boolean): String = js.native
     def url(newurl: String, replace: Boolean, state: js.Any): String = js.native
+    def url(newurl: String, replace: Unit, state: js.Any): String = js.native
+    def url(newurl: Unit, replace: Boolean): String = js.native
+    def url(newurl: Unit, replace: Boolean, state: js.Any): String = js.native
+    def url(newurl: Unit, replace: Unit, state: js.Any): String = js.native
     /** See: [[UrlService.url]] */ @JSName("url")
-    var url_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['url'] */ js.Any) with (js.Function3[
+    var url_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['url'] */ js.Any) & (js.Function3[
         /* newurl */ js.UndefOr[String], 
         /* replace */ js.UndefOr[Boolean], 
         /* state */ js.UndefOr[js.Any], 
@@ -136,8 +141,8 @@ object coreservicesMod {
   @js.native
   trait QLike extends StObject {
     
-    def all(promises: js.Array[js.Promise[_]]): js.Promise[js.Array[_]] = js.native
-    def all(promises: StringDictionary[js.Promise[_]]): js.Promise[_] = js.native
+    def all(promises: js.Array[js.Promise[js.Any]]): js.Promise[js.Array[js.Any]] = js.native
+    def all(promises: StringDictionary[js.Promise[js.Any]]): js.Promise[js.Any] = js.native
     
     def defer(): QLikeDeferred = js.native
     
@@ -151,7 +156,7 @@ object coreservicesMod {
   @js.native
   trait QLikeDeferred extends StObject {
     
-    var promise: js.Promise[_] = js.native
+    var promise: js.Promise[js.Any] = js.native
     
     def reject(): Unit = js.native
     def reject(reason: js.Any): Unit = js.native

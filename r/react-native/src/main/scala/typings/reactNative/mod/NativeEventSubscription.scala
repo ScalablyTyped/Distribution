@@ -2,16 +2,14 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeEventSubscription extends StObject {
   
   /**
     * Call this method to un-subscribe from a native-event
     */
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object NativeEventSubscription {
   

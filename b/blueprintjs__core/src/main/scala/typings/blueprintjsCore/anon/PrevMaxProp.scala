@@ -2,19 +2,17 @@ package typings.blueprintjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrevMaxProp extends StObject {
   
-  var prevMaxProp: js.UndefOr[Double] = js.native
+  var prevMaxProp: js.UndefOr[Double] = js.undefined
   
-  var prevMinProp: js.UndefOr[Double] = js.native
+  var prevMinProp: js.UndefOr[Double] = js.undefined
   
-  var stepMaxPrecision: Double = js.native
+  var stepMaxPrecision: Double
   
-  var value: String = js.native
+  var value: String
 }
 object PrevMaxProp {
   

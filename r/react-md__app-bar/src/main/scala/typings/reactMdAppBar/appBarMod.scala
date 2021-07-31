@@ -7,14 +7,13 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appBarMod {
   
   @JSImport("@react-md/app-bar/types/AppBar", "AppBar")
   @js.native
-  val AppBar: ForwardRefExoticComponent[AppBarProps with RefAttributes[HTMLDivElement]] = js.native
+  val AppBar: ForwardRefExoticComponent[AppBarProps & RefAttributes[HTMLDivElement]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdAppBar.reactMdAppBarStrings.none
@@ -56,8 +55,9 @@ object appBarMod {
     def top: typings.reactMdAppBar.reactMdAppBarStrings.top = "top".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.top]
   }
   
-  @js.native
-  trait AppBarProps extends HTMLAttributes[HTMLDivElement] {
+  trait AppBarProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * The component for the `AppBar` to render as. This should normally either
@@ -67,38 +67,38 @@ object appBarMod {
       * prop even though it is possible since it leads to bad practice and props
       * might not get passed as one would expect.
       */
-    var component: js.UndefOr[ElementType[_]] = js.native
+    var component: js.UndefOr[ElementType[js.Any]] = js.undefined
     
     /**
       * Boolean if the `AppBar` should be fixed to the top or bottom of the page.
       */
-    var fixed: js.UndefOr[Boolean] = js.native
+    var fixed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the fixed `AppBar` should gain elevation. This is recommended to
       * stay enabled unless you manually apply a border to help separate the
       * `AppBar` from other content.
       */
-    var fixedElevation: js.UndefOr[Boolean] = js.native
+    var fixedElevation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The position within the page to "fix" the `AppBar` when the `fixed` prop is
       * enabled.
       */
-    var fixedPosition: js.UndefOr[AppBarPosition] = js.native
+    var fixedPosition: js.UndefOr[AppBarPosition] = js.undefined
     
     /**
       * Boolean if the content of the `AppBar` should be allowed to wrap. When this
       * is omitted, it will be considered true for `"none"`, `"prominent"` and
       * `"prominent-dense"` heights
       */
-    var flexWrap: js.UndefOr[Boolean] = js.native
+    var flexWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The height to use for the app bar. See the `AppBarHeight` type for more
       * information.
       */
-    var height: js.UndefOr[AppBarHeight] = js.native
+    var height: js.UndefOr[AppBarHeight] = js.undefined
     
     /**
       * Boolean if the `AppBarNav`, `AppBarTitle`, and `AppBarActions` should
@@ -108,12 +108,12 @@ object appBarMod {
       * used instead. So if you set this to `false` and set the `theme` to
       * `"primary"`, the defined primary text color will not be inherited.
       */
-    var inheritColor: js.UndefOr[Boolean] = js.native
+    var inheritColor: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The theme to apply to the `AppBar`.
       */
-    var theme: js.UndefOr[AppBarTheme] = js.native
+    var theme: js.UndefOr[AppBarTheme] = js.undefined
   }
   object AppBarProps {
     
@@ -127,7 +127,7 @@ object appBarMod {
     implicit class AppBarPropsMutableBuilder[Self <: AppBarProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponent(value: ElementType[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)

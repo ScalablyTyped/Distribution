@@ -4,7 +4,6 @@ import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Geom {
@@ -54,9 +53,9 @@ object Geom {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
-    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Unit, output: O): O = js.native
     
     /**
       * Returns a uniformly distributed random point from anywhere within the Circle.
@@ -97,9 +96,9 @@ object Geom {
       * @param y The y position of the center of the circle. Default 0.
       */
     def setPosition(): this.type = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
     def setPosition(x: Double): this.type = js.native
     def setPosition(x: Double, y: Double): this.type = js.native
+    def setPosition(x: Unit, y: Double): this.type = js.native
     
     /**
       * Sets the x, y and radius of this circle.
@@ -108,13 +107,13 @@ object Geom {
       * @param radius The radius of the circle. Default 0.
       */
     def setTo(): this.type = js.native
-    def setTo(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], radius: Double): this.type = js.native
-    def setTo(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-    def setTo(x: js.UndefOr[scala.Nothing], y: Double, radius: Double): this.type = js.native
     def setTo(x: Double): this.type = js.native
-    def setTo(x: Double, y: js.UndefOr[scala.Nothing], radius: Double): this.type = js.native
     def setTo(x: Double, y: Double): this.type = js.native
     def setTo(x: Double, y: Double, radius: Double): this.type = js.native
+    def setTo(x: Double, y: Unit, radius: Double): this.type = js.native
+    def setTo(x: Unit, y: Double): this.type = js.native
+    def setTo(x: Unit, y: Double, radius: Double): this.type = js.native
+    def setTo(x: Unit, y: Unit, radius: Double): this.type = js.native
     
     /**
       * The top position of the Circle.
@@ -188,9 +187,9 @@ object Geom {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
-    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Unit, output: O): O = js.native
     
     /**
       * Returns a uniformly distributed random point from anywhere within the given Ellipse.
@@ -322,7 +321,7 @@ object Geom {
       * @param output An optional array of Points, or point-like objects, to store the coordinates of the points on the line.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
-    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Unit, output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: integer): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: integer, output: O): O = js.native
     
@@ -351,26 +350,21 @@ object Geom {
       * @param y2 The y coordinate of the lines ending point. Default 0.
       */
     def setTo(): this.type = js.native
-    def setTo(
-      x1: js.UndefOr[scala.Nothing],
-      y1: js.UndefOr[scala.Nothing],
-      x2: js.UndefOr[scala.Nothing],
-      y2: Double
-    ): this.type = js.native
-    def setTo(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double): this.type = js.native
-    def setTo(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double): this.type = js.native
-    def setTo(x1: js.UndefOr[scala.Nothing], y1: Double): this.type = js.native
-    def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
-    def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double): this.type = js.native
-    def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double, y2: Double): this.type = js.native
     def setTo(x1: Double): this.type = js.native
-    def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
-    def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double): this.type = js.native
-    def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double): this.type = js.native
     def setTo(x1: Double, y1: Double): this.type = js.native
-    def setTo(x1: Double, y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
     def setTo(x1: Double, y1: Double, x2: Double): this.type = js.native
     def setTo(x1: Double, y1: Double, x2: Double, y2: Double): this.type = js.native
+    def setTo(x1: Double, y1: Double, x2: Unit, y2: Double): this.type = js.native
+    def setTo(x1: Double, y1: Unit, x2: Double): this.type = js.native
+    def setTo(x1: Double, y1: Unit, x2: Double, y2: Double): this.type = js.native
+    def setTo(x1: Double, y1: Unit, x2: Unit, y2: Double): this.type = js.native
+    def setTo(x1: Unit, y1: Double): this.type = js.native
+    def setTo(x1: Unit, y1: Double, x2: Double): this.type = js.native
+    def setTo(x1: Unit, y1: Double, x2: Double, y2: Double): this.type = js.native
+    def setTo(x1: Unit, y1: Double, x2: Unit, y2: Double): this.type = js.native
+    def setTo(x1: Unit, y1: Unit, x2: Double): this.type = js.native
+    def setTo(x1: Unit, y1: Unit, x2: Double, y2: Double): this.type = js.native
+    def setTo(x1: Unit, y1: Unit, x2: Unit, y2: Double): this.type = js.native
     
     /**
       * The top position of the Line.
@@ -416,9 +410,9 @@ object Geom {
       * @param y The y coordinate of this Point. Default x.
       */
     def setTo(): this.type = js.native
-    def setTo(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
     def setTo(x: Double): this.type = js.native
     def setTo(x: Double, y: Double): this.type = js.native
+    def setTo(x: Unit, y: Double): this.type = js.native
     
     /**
       * The geometry constant type of this object: `GEOM_CONST.POINT`.
@@ -474,9 +468,9 @@ object Geom {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
-    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Unit, output: O): O = js.native
     
     /**
       * An array of number pair objects that make up this polygon. I.e. [ {x,y}, {x,y}, {x,y} ]
@@ -497,7 +491,7 @@ object Geom {
       * `setTo` may also be called without any arguments to remove all points.
       * @param points Points defining the perimeter of this polygon. Please check function description above for the different supported formats.
       */
-    def setTo(points: js.Array[_]): this.type = js.native
+    def setTo(points: js.Array[js.Any]): this.type = js.native
     
     /**
       * The geometry constant type of this object: `GEOM_CONST.POLYGON`.
@@ -582,9 +576,9 @@ object Geom {
       * @param output An array to which to append the points.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
-    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Unit, output: O): O = js.native
     
     /**
       * Returns a random point within the Rectangle's bounds.
@@ -729,9 +723,9 @@ object Geom {
       * @param output Optional Array for writing the calculated points into. Otherwise a new array will be created.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
-    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Unit, output: O): O = js.native
     
     /**
       * Returns a random point along the triangle.

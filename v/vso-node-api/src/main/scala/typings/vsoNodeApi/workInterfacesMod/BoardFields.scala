@@ -2,17 +2,15 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoardFields extends StObject {
   
-  var columnField: FieldReference = js.native
+  var columnField: FieldReference
   
-  var doneField: FieldReference = js.native
+  var doneField: FieldReference
   
-  var rowField: FieldReference = js.native
+  var rowField: FieldReference
 }
 object BoardFields {
   

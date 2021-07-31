@@ -3,16 +3,18 @@ package typings.ipfsHttpServer
 import typings.ipfsHttpServer.anon.Assign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockMod {
   
   object get {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/block", "get.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources/block", "get")
     @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options {
       
@@ -49,9 +51,12 @@ object blockMod {
   
   object put {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/block", "put.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources/block", "put")
     @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options2 {
       
@@ -92,9 +97,12 @@ object blockMod {
   
   object rm {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/block", "rm.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources/block", "rm")
     @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options4 {
       
@@ -120,9 +128,12 @@ object blockMod {
   
   object stat {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/block", "stat.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources/block", "stat")
     @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options6 {
       

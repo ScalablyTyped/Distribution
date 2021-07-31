@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudTalentV4BatchOperationMetadata extends StObject {
   
   /** The time when the batch operation is created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The time when the batch operation is finished and google.longrunning.Operation.done is set to `true`. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Count of failed item(s) inside an operation. */
-  var failureCount: js.UndefOr[Double] = js.native
+  var failureCount: js.UndefOr[Double] = js.undefined
   
   /** The state of a long running operation. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** More detailed information about operation state. */
-  var stateDescription: js.UndefOr[String] = js.native
+  var stateDescription: js.UndefOr[String] = js.undefined
   
   /** Count of successful item(s) inside an operation. */
-  var successCount: js.UndefOr[Double] = js.native
+  var successCount: js.UndefOr[Double] = js.undefined
   
   /** Count of total item(s) inside an operation. */
-  var totalCount: js.UndefOr[Double] = js.native
+  var totalCount: js.UndefOr[Double] = js.undefined
   
   /** The time when the batch operation status is updated. The metadata and the update_time is refreshed every minute otherwise cached data is returned. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudTalentV4BatchOperationMetadata {
   

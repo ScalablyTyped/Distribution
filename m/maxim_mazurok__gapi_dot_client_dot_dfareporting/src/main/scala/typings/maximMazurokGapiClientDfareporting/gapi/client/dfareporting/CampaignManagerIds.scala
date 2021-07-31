@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CampaignManagerIds extends StObject {
   
   /** Ad ID for Campaign Manager. */
-  var adId: js.UndefOr[String] = js.native
+  var adId: js.UndefOr[String] = js.undefined
   
   /** Campaign ID for Campaign Manager. */
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
   /** Creative ID for Campaign Manager. */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#campaignManagerIds". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Placement ID for Campaign Manager. */
-  var placementId: js.UndefOr[String] = js.native
+  var placementId: js.UndefOr[String] = js.undefined
   
   /** Site ID for Campaign Manager. */
-  var siteId: js.UndefOr[String] = js.native
+  var siteId: js.UndefOr[String] = js.undefined
 }
 object CampaignManagerIds {
   

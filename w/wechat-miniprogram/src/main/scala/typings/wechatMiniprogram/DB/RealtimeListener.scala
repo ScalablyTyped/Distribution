@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.DB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RealtimeListener extends StObject {
   
   // "And Now His Watch Is Ended"
-  def close(): js.Promise[Unit] = js.native
+  def close(): js.Promise[Unit]
 }
 object RealtimeListener {
   

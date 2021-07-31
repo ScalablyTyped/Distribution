@@ -2,23 +2,21 @@ package typings.hystrixjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricsProperties extends StObject {
   
-  var commandGroup: String = js.native
+  var commandGroup: String
   
-  var commandKey: String = js.native
+  var commandKey: String
   
-  var percentileWindowNumberOfBuckets: js.UndefOr[Double] = js.native
+  var percentileWindowNumberOfBuckets: js.UndefOr[Double] = js.undefined
   
-  var percentileWindowTimeInMilliSeconds: js.UndefOr[Double] = js.native
+  var percentileWindowTimeInMilliSeconds: js.UndefOr[Double] = js.undefined
   
-  var statisticalWindowNumberOfBuckets: js.UndefOr[Double] = js.native
+  var statisticalWindowNumberOfBuckets: js.UndefOr[Double] = js.undefined
   
-  var statisticalWindowTimeInMilliSeconds: js.UndefOr[Double] = js.native
+  var statisticalWindowTimeInMilliSeconds: js.UndefOr[Double] = js.undefined
 }
 object MetricsProperties {
   

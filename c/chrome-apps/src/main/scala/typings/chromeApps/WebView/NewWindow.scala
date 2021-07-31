@@ -3,22 +3,20 @@ package typings.chromeApps.WebView
 import typings.chromeApps.HTMLWebViewElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewWindow extends StObject {
   
   /**
     * Attach the requested target page to an existing webview element.
     * @param webview The webview element to which the target page should be attached.
     */
-  def attach(webview: HTMLWebViewElement): Unit = js.native
+  def attach(webview: HTMLWebViewElement): Unit
   
   /**
     * Cancel the new window request.
     */
-  def discard(): Unit = js.native
+  def discard(): Unit
 }
 object NewWindow {
   

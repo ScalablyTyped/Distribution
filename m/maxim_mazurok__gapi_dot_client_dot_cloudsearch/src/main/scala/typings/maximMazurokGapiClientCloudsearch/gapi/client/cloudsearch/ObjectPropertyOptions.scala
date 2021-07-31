@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectPropertyOptions extends StObject {
   
   /**
     * The properties of the sub-object. These properties represent a nested object. For example, if this property represents a postal address, the subobjectProperties might be named
     * *street*, *city*, and *state*. The maximum number of elements is 1000.
     */
-  var subobjectProperties: js.UndefOr[js.Array[PropertyDefinition]] = js.native
+  var subobjectProperties: js.UndefOr[js.Array[PropertyDefinition]] = js.undefined
 }
 object ObjectPropertyOptions {
   

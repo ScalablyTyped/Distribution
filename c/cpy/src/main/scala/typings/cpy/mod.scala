@@ -6,7 +6,6 @@ import typings.fastGlob.typesMod.Pattern
 import typings.globby.mod.ExpandDirectoriesOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,51 +24,50 @@ object mod {
   })();
   ```
   */
+  @scala.inline
+  def apply(source: String, destination: String): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
+  @scala.inline
+  def apply(source: String, destination: String, options: Options): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
+  @scala.inline
+  def apply(source: js.Array[String], destination: String): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
+  @scala.inline
+  def apply(source: js.Array[String], destination: String, options: Options): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
+  
   @JSImport("cpy", JSImport.Namespace)
   @js.native
-  def apply(source: String, destination: String): js.Promise[js.Array[String]] with ProgressEmitter = js.native
-  @JSImport("cpy", JSImport.Namespace)
-  @js.native
-  def apply(source: String, destination: String, options: Options): js.Promise[js.Array[String]] with ProgressEmitter = js.native
-  @JSImport("cpy", JSImport.Namespace)
-  @js.native
-  def apply(source: js.Array[String], destination: String): js.Promise[js.Array[String]] with ProgressEmitter = js.native
-  @JSImport("cpy", JSImport.Namespace)
-  @js.native
-  def apply(source: js.Array[String], destination: String, options: Options): js.Promise[js.Array[String]] with ProgressEmitter = js.native
+  val ^ : js.Any = js.native
   
   /* Inlined parent std.Readonly<globby.globby.GlobbyOptions> */
   /* Inlined parent cp-file.cp-file.Options */
-  @js.native
   trait Options extends StObject {
     
-    val absolute: js.UndefOr[Boolean] = js.native
+    val absolute: js.UndefOr[Boolean] = js.undefined
     
-    val baseNameMatch: js.UndefOr[Boolean] = js.native
+    val baseNameMatch: js.UndefOr[Boolean] = js.undefined
     
-    val braceExpansion: js.UndefOr[Boolean] = js.native
+    val braceExpansion: js.UndefOr[Boolean] = js.undefined
     
-    val caseSensitiveMatch: js.UndefOr[Boolean] = js.native
+    val caseSensitiveMatch: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Number of files being copied concurrently.
     		@default (os.cpus().length || 1) * 2
     		*/
-    val concurrency: js.UndefOr[Double] = js.native
+    val concurrency: js.UndefOr[Double] = js.undefined
     
     /**
     		Working directory to find source files.
     		@default process.cwd()
     		*/
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
-    val deep: js.UndefOr[Double] = js.native
+    val deep: js.UndefOr[Double] = js.undefined
     
-    val dot: js.UndefOr[Boolean] = js.native
+    val dot: js.UndefOr[Boolean] = js.undefined
     
-    val expandDirectories: js.UndefOr[ExpandDirectoriesOption] = js.native
+    val expandDirectories: js.UndefOr[ExpandDirectoriesOption] = js.undefined
     
-    val extglob: js.UndefOr[Boolean] = js.native
+    val extglob: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Function to filter files to copy.
@@ -85,43 +83,43 @@ object mod {
     		})();
     		```
     		*/
-    val filter: js.UndefOr[js.Function1[/* file */ SourceFile, Boolean | js.Promise[Boolean]]] = js.native
+    val filter: js.UndefOr[js.Function1[/* file */ SourceFile, Boolean | js.Promise[Boolean]]] = js.undefined
     
-    val followSymbolicLinks: js.UndefOr[Boolean] = js.native
+    val followSymbolicLinks: js.UndefOr[Boolean] = js.undefined
     
-    val fs: js.UndefOr[PartialFileSystemAdapter] = js.native
+    val fs: js.UndefOr[PartialFileSystemAdapter] = js.undefined
     
-    val gitignore: js.UndefOr[Boolean] = js.native
+    val gitignore: js.UndefOr[Boolean] = js.undefined
     
-    val globstar: js.UndefOr[Boolean] = js.native
+    val globstar: js.UndefOr[Boolean] = js.undefined
     
-    val ignore: js.UndefOr[js.Array[Pattern]] = js.native
+    val ignore: js.UndefOr[js.Array[Pattern]] = js.undefined
     
     /**
     		Ignore junk files.
     		@default true
     		*/
-    val ignoreJunk: js.UndefOr[Boolean] = js.native
+    val ignoreJunk: js.UndefOr[Boolean] = js.undefined
     
-    val markDirectories: js.UndefOr[Boolean] = js.native
+    val markDirectories: js.UndefOr[Boolean] = js.undefined
     
-    val objectMode: js.UndefOr[Boolean] = js.native
+    val objectMode: js.UndefOr[Boolean] = js.undefined
     
-    val onlyDirectories: js.UndefOr[Boolean] = js.native
+    val onlyDirectories: js.UndefOr[Boolean] = js.undefined
     
-    val onlyFiles: js.UndefOr[Boolean] = js.native
+    val onlyFiles: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Overwrite existing destination file.
     		@default true
     		*/
-    val overwrite: js.UndefOr[Boolean] = js.native
+    val overwrite: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Preserve path structure.
     		@default false
     		*/
-    val parents: js.UndefOr[Boolean] = js.native
+    val parents: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Filename or function returning a filename used to rename every file in `source`.
@@ -135,15 +133,15 @@ object mod {
     		})();
     		```
     		*/
-    val rename: js.UndefOr[String | (js.Function1[/* basename */ String, String])] = js.native
+    val rename: js.UndefOr[String | (js.Function1[/* basename */ String, String])] = js.undefined
     
-    val stats: js.UndefOr[Boolean] = js.native
+    val stats: js.UndefOr[Boolean] = js.undefined
     
-    val suppressErrors: js.UndefOr[Boolean] = js.native
+    val suppressErrors: js.UndefOr[Boolean] = js.undefined
     
-    val throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.native
+    val throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined
     
-    val unique: js.UndefOr[Boolean] = js.native
+    val unique: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -335,28 +333,27 @@ object mod {
     }
   }
   
-  @js.native
   trait ProgressData extends StObject {
     
     /**
     		Copied file count.
     		*/
-    var completedFiles: Double = js.native
+    var completedFiles: Double
     
     /**
     		Completed size in bytes.
     		*/
-    var completedSize: Double = js.native
+    var completedSize: Double
     
     /**
     		Completed percentage. A value between `0` and `1`.
     		*/
-    var percent: Double = js.native
+    var percent: Double
     
     /**
     		Overall file count.
     		*/
-    var totalFiles: Double = js.native
+    var totalFiles: Double
   }
   object ProgressData {
     
@@ -383,11 +380,10 @@ object mod {
     }
   }
   
-  @js.native
   trait ProgressEmitter extends StObject {
     
     @JSName("on")
-    def on_progress(event: progress, handler: js.Function1[/* progress */ ProgressData, Unit]): js.Promise[js.Array[String]] = js.native
+    def on_progress(event: progress, handler: js.Function1[/* progress */ ProgressData, Unit]): js.Promise[js.Array[String]]
   }
   object ProgressEmitter {
     
@@ -405,44 +401,50 @@ object mod {
     }
   }
   
-  @js.native
   trait SourceFile extends StObject {
     
     /**
     		File extension.
     		@example 'js'
     		*/
-    val extension: String = js.native
+    val `extension`: String
     
     /**
     		Filename with extension.
     		@example 'foo.js'
     		*/
-    val name: String = js.native
+    val name: String
     
     /**
     		Filename without extension.
     		@example 'foo'
     		*/
-    val nameWithoutExtension: String = js.native
+    val nameWithoutExtension: String
     
     /**
     		Resolved path to the file.
     		@example '/tmp/dir/foo.js'
     		*/
-    val path: String = js.native
+    val path: String
     
     /**
     		Relative path to the file from `cwd`.
     		@example 'dir/foo.js' if `cwd` was '/tmp'
     		*/
-    val relativePath: String = js.native
+    val relativePath: String
   }
   object SourceFile {
     
     @scala.inline
-    def apply(extension: String, name: String, nameWithoutExtension: String, path: String, relativePath: String): SourceFile = {
-      val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameWithoutExtension = nameWithoutExtension.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], relativePath = relativePath.asInstanceOf[js.Any])
+    def apply(
+      `extension`: String,
+      name: String,
+      nameWithoutExtension: String,
+      path: String,
+      relativePath: String
+    ): SourceFile = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nameWithoutExtension = nameWithoutExtension.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], relativePath = relativePath.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceFile]
     }
     

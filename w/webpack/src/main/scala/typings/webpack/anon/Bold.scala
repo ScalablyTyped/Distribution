@@ -2,41 +2,39 @@ package typings.webpack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bold extends StObject {
   
   /**
   				 * Custom color for bold text
   				 */
-  var bold: js.UndefOr[String] = js.native
+  var bold: js.UndefOr[String] = js.undefined
   
   /**
   				 * Custom color for cyan text
   				 */
-  var cyan: js.UndefOr[String] = js.native
+  var cyan: js.UndefOr[String] = js.undefined
   
   /**
   				 * Custom color for green text
   				 */
-  var green: js.UndefOr[String] = js.native
+  var green: js.UndefOr[String] = js.undefined
   
   /**
   				 * Custom color for magenta text
   				 */
-  var magenta: js.UndefOr[String] = js.native
+  var magenta: js.UndefOr[String] = js.undefined
   
   /**
   				 * Custom color for red text
   				 */
-  var red: js.UndefOr[String] = js.native
+  var red: js.UndefOr[String] = js.undefined
   
   /**
   				 * Custom color for yellow text
   				 */
-  var yellow: js.UndefOr[String] = js.native
+  var yellow: js.UndefOr[String] = js.undefined
 }
 object Bold {
   

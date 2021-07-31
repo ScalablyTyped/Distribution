@@ -6,24 +6,22 @@ import typings.jweixin.mod.jsApiList
 import typings.jweixin.mod.networkType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accuracy extends StObject {
     
     // 速度，以米/每秒计
-    var accuracy: Double = js.native
+    var accuracy: Double
     
-    var latitude: Double = js.native
+    var latitude: Double
     
     // 纬度，浮点数，范围为90 ~ -90
-    var longitude: Double = js.native
+    var longitude: Double
     
     // 经度，浮点数，范围为180 ~ -180。
-    var speed: Double = js.native
+    var speed: Double
   }
   object Accuracy {
     
@@ -50,25 +48,24 @@ object anon {
     }
   }
   
-  @js.native
   trait AppId extends StObject {
     
     // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
-    var appId: String = js.native
+    var appId: String
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     // 必填，签名，见附录1
-    var jsApiList: typings.jweixin.mod.jsApiList = js.native
+    var jsApiList: typings.jweixin.mod.jsApiList
     
     // 必填，生成签名的时间戳
-    var nonceStr: String = js.native
+    var nonceStr: String
     
     // 必填，生成签名的随机串
-    var signature: String = js.native
+    var signature: String
     
     // 必填，公众号的唯一标识
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object AppId {
     
@@ -107,12 +104,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CardExt extends StObject {
     
-    var cardExt: String = js.native
+    var cardExt: String
     
-    var cardId: String = js.native
+    var cardId: String
   }
   object CardExt {
     
@@ -133,12 +129,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CardId extends StObject {
     
-    var cardId: String = js.native
+    var cardId: String
     
-    var code: String = js.native
+    var code: String
   }
   object CardId {
     
@@ -159,10 +154,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CardList extends StObject {
     
-    var cardList: js.Array[String] = js.native
+    var cardList: js.Array[String]
   }
   object CardList {
     
@@ -183,12 +177,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CheckResult extends StObject {
     
-    var checkResult: StringDictionary[Boolean] = js.native
+    var checkResult: StringDictionary[Boolean]
     
-    var errMsg: String = js.native
+    var errMsg: String
   }
   object CheckResult {
     
@@ -209,10 +202,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ErrMsg extends StObject {
     
-    var errMsg: String = js.native
+    var errMsg: String
   }
   object ErrMsg {
     
@@ -230,10 +222,9 @@ object anon {
     }
   }
   
-  @js.native
   trait LocalData extends StObject {
     
-    var localData: String = js.native
+    var localData: String
   }
   object LocalData {
     
@@ -251,15 +242,14 @@ object anon {
     }
   }
   
-  @js.native
   trait LocalIds extends StObject {
     
-    var errMsg: String = js.native
+    var errMsg: String
     
     // weixin album camera
-    var localIds: js.Array[String] = js.native
+    var localIds: js.Array[String]
     
-    var sourceType: String = js.native
+    var sourceType: String
   }
   object LocalIds {
     
@@ -286,10 +276,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NetworkType extends StObject {
     
-    var networkType: typings.jweixin.mod.networkType = js.native
+    var networkType: typings.jweixin.mod.networkType
   }
   object NetworkType {
     
@@ -307,10 +296,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ResultStr extends StObject {
     
-    var resultStr: String = js.native
+    var resultStr: String
   }
   object ResultStr {
     
@@ -328,10 +316,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ServerId extends StObject {
     
-    var serverId: String = js.native
+    var serverId: String
   }
   object ServerId {
     
@@ -349,10 +336,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TranslateResult extends StObject {
     
-    var translateResult: String = js.native
+    var translateResult: String
   }
   object TranslateResult {
     

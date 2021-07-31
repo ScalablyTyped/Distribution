@@ -2,16 +2,14 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnEffect extends StObject {
   
   @JSName("MSForms.ReturnEffect_typekey")
-  var MSFormsDotReturnEffect_typekey: ReturnEffect = js.native
+  var MSFormsDotReturnEffect_typekey: ReturnEffect
   
-  var Value: fmDropEffect = js.native
+  var Value: fmDropEffect
 }
 object ReturnEffect {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1ListStudiesResponse extends StObject {
   
   /** The studies associated with the project. */
-  var studies: js.UndefOr[js.Array[GoogleCloudMlV1Study]] = js.native
+  var studies: js.UndefOr[js.Array[GoogleCloudMlV1Study]] = js.undefined
 }
 object GoogleCloudMlV1ListStudiesResponse {
   

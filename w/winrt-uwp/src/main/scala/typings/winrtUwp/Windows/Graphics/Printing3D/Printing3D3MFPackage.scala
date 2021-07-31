@@ -6,11 +6,9 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a 3D Manufacturing Format (3MF) package. */
-@js.native
 trait Printing3D3MFPackage extends StObject {
   
   /**
@@ -18,32 +16,32 @@ trait Printing3D3MFPackage extends StObject {
     * @param value A 3MF file stream.
     * @return A Printing3DModel object created from the specified 3MF object stream.
     */
-  def loadModelFromPackageAsync(value: IRandomAccessStream): IPromiseWithIAsyncOperation[Printing3DModel] = js.native
+  def loadModelFromPackageAsync(value: IRandomAccessStream): IPromiseWithIAsyncOperation[Printing3DModel]
   
   /** Gets or sets an XML stream to the 3D model in the 3D Manufacturing Format (3MF) package. */
-  var modelPart: IRandomAccessStream = js.native
+  var modelPart: IRandomAccessStream
   
   /** Gets or sets a stream to the print ticket in the 3D Manufacturing Format (3MF) package. */
-  var printTicket: IRandomAccessStream = js.native
+  var printTicket: IRandomAccessStream
   
   /**
     * Saves the Printing3D3MFPackage object to a 3D Manufacturing Format (3MF) file stream.
     * @return A stream to the 3MF file where the package is to be saved.
     */
-  def saveAsync(): IPromiseWithIAsyncOperation[IRandomAccessStream] = js.native
+  def saveAsync(): IPromiseWithIAsyncOperation[IRandomAccessStream]
   
   /**
     * Saves the specified 3D model to the 3D Manufacturing Format (3MF) package.
     * @param value The 3D model to be saved to the 3MF package.
     * @return The results of the operation.
     */
-  def saveModelToPackageAsync(value: Printing3DModel): IPromiseWithIAsyncAction = js.native
+  def saveModelToPackageAsync(value: Printing3DModel): IPromiseWithIAsyncAction
   
   /** Gets or sets the textures in the 3D Manufacturing Format (3MF) package. */
-  var textures: IVector[Printing3DTextureResource] = js.native
+  var textures: IVector[Printing3DTextureResource]
   
   /** Gets or sets a thumbnail image that represents the contents of the 3D Manufacturing Format (3MF) package. */
-  var thumbnail: Printing3DTextureResource = js.native
+  var thumbnail: Printing3DTextureResource
 }
 object Printing3D3MFPackage {
   

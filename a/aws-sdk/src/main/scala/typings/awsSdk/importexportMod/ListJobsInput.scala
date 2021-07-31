@@ -2,17 +2,15 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsInput extends StObject {
   
-  var APIVersion: js.UndefOr[APIVersion_] = js.native
+  var APIVersion: js.UndefOr[APIVersion_] = js.undefined
   
-  var Marker: js.UndefOr[typings.awsSdk.importexportMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.importexportMod.Marker] = js.undefined
   
-  var MaxJobs: js.UndefOr[typings.awsSdk.importexportMod.MaxJobs] = js.native
+  var MaxJobs: js.UndefOr[typings.awsSdk.importexportMod.MaxJobs] = js.undefined
 }
 object ListJobsInput {
   

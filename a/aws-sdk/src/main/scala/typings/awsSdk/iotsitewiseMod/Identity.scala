@@ -2,26 +2,24 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identity extends StObject {
   
   /**
     * An AWS SSO group identity.
     */
-  var group: js.UndefOr[GroupIdentity] = js.native
+  var group: js.UndefOr[GroupIdentity] = js.undefined
   
   /**
     * An IAM user identity.
     */
-  var iamUser: js.UndefOr[IAMUserIdentity] = js.native
+  var iamUser: js.UndefOr[IAMUserIdentity] = js.undefined
   
   /**
     * An AWS SSO user identity.
     */
-  var user: js.UndefOr[UserIdentity] = js.native
+  var user: js.UndefOr[UserIdentity] = js.undefined
 }
 object Identity {
   

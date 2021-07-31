@@ -4,33 +4,36 @@ import typings.antvComponent.typesMod.EnhancedTextCfg
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object graphicMod {
   
-  @JSImport("@antv/component/lib/util/graphic", "renderTag")
+  @JSImport("@antv/component/lib/util/graphic", JSImport.Namespace)
   @js.native
-  def renderTag(container: IGroup, tagCfg: TagCfg): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait TagCfg extends EnhancedTextCfg {
+  @scala.inline
+  def renderTag(container: IGroup, tagCfg: TagCfg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderTag")(container.asInstanceOf[js.Any], tagCfg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  trait TagCfg
+    extends StObject
+       with EnhancedTextCfg {
     
     /** 组件的 id 标识 */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** 组件的名字 */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * 文本标注位置 x
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * 文本标注位置 y
       */
-    var y: Double = js.native
+    var y: Double
   }
   object TagCfg {
     

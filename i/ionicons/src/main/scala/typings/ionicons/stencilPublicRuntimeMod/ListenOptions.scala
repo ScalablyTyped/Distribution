@@ -2,10 +2,8 @@ package typings.ionicons.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ListenOptions extends StObject {
     * during the "capture phase". Please see
     * https://www.quirksmode.org/js/events_order.html for further information.
     */
-  var capture: js.UndefOr[Boolean] = js.native
+  var capture: js.UndefOr[Boolean] = js.undefined
   
   /**
     * By default, Stencil uses several heuristics to determine if
@@ -23,14 +21,14 @@ trait ListenOptions extends StObject {
     * Using the `passive` option can be used to change the default behaviour.
     * Please see https://developers.google.com/web/updates/2016/06/passive-event-listeners for further information.
     */
-  var passive: js.UndefOr[Boolean] = js.native
+  var passive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Handlers can also be registered for an event other than the host itself.
     * The `target` option can be used to change where the event listener is attached,
     * this is useful for listening to application-wide events.
     */
-  var target: js.UndefOr[ListenTargetOptions] = js.native
+  var target: js.UndefOr[ListenTargetOptions] = js.undefined
 }
 object ListenOptions {
   

@@ -11,8 +11,8 @@ Convert an absolute path to a tilde path: `/Users/sindresorhus/dev` → `~/dev`
 | Full name          | tildify |
 | Keywords           | unexpand, homedir, tilde, tildify, collapse, path, home, directory, user, expand, convert |
 | # releases         | 2 |
-| # dependents       | 463 |
-| # downloads        | 53882452 |
+| # dependents       | 469 |
+| # downloads        | 55076529 |
 | # stars            | 10 |
 
 ## Links

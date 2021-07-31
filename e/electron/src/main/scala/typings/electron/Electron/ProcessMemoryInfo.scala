@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessMemoryInfo extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/process-memory-info
@@ -13,20 +11,20 @@ trait ProcessMemoryInfo extends StObject {
     * The amount of memory not shared by other processes, such as JS heap or HTML
     * content in Kilobytes.
     */
-  var `private`: Double = js.native
+  var `private`: Double
   
   /**
     * The amount of memory currently pinned to actual physical RAM in Kilobytes.
     *
     * @platform linux,win32
     */
-  var residentSet: Double = js.native
+  var residentSet: Double
   
   /**
     * The amount of memory shared between processes, typically memory consumed by the
     * Electron code itself in Kilobytes.
     */
-  var shared: Double = js.native
+  var shared: Double
 }
 object ProcessMemoryInfo {
   

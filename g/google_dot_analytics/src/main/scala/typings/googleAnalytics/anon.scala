@@ -3,23 +3,21 @@ package typings.googleAnalytics
 import typings.googleAnalytics.UniversalAnalytics.HitType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait EventAction extends StObject {
     
-    var eventAction: String = js.native
+    var eventAction: String
     
-    var eventCategory: String = js.native
+    var eventCategory: String
     
-    var eventLabel: js.UndefOr[String] = js.native
+    var eventLabel: js.UndefOr[String] = js.undefined
     
-    var eventValue: js.UndefOr[Double] = js.native
+    var eventValue: js.UndefOr[Double] = js.undefined
     
-    var nonInteraction: js.UndefOr[Boolean] = js.native
+    var nonInteraction: js.UndefOr[Boolean] = js.undefined
   }
   object EventAction {
     
@@ -58,21 +56,20 @@ object anon {
     }
   }
   
-  @js.native
   trait EventCategory extends StObject {
     
-    var eventAction: String = js.native
+    var eventAction: String
     
     // 'event'
-    var eventCategory: String = js.native
+    var eventCategory: String
     
-    var eventLabel: js.UndefOr[String] = js.native
+    var eventLabel: js.UndefOr[String] = js.undefined
     
-    var eventValue: js.UndefOr[Double] = js.native
+    var eventValue: js.UndefOr[Double] = js.undefined
     
-    var hitType: HitType = js.native
+    var hitType: HitType
     
-    var nonInteraction: js.UndefOr[Boolean] = js.native
+    var nonInteraction: js.UndefOr[Boolean] = js.undefined
   }
   object EventCategory {
     
@@ -114,14 +111,13 @@ object anon {
     }
   }
   
-  @js.native
   trait SocialAction extends StObject {
     
-    var socialAction: String = js.native
+    var socialAction: String
     
-    var socialNetwork: String = js.native
+    var socialNetwork: String
     
-    var socialTarget: String = js.native
+    var socialTarget: String
   }
   object SocialAction {
     
@@ -145,14 +141,13 @@ object anon {
     }
   }
   
-  @js.native
   trait TimingCategory extends StObject {
     
-    var timingCategory: String = js.native
+    var timingCategory: String
     
-    var timingValue: Double = js.native
+    var timingValue: Double
     
-    var timingVar: String = js.native
+    var timingVar: String
   }
   object TimingCategory {
     

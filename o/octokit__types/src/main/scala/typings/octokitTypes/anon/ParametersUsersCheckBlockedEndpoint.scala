@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.UsersCheckBlockedRequestOptions
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersUsersCheckBlockedEndpoint extends StObject {
   
-  var parameters: UsersCheckBlockedEndpoint = js.native
+  var parameters: UsersCheckBlockedEndpoint
   
-  var request: UsersCheckBlockedRequestOptions = js.native
+  var request: UsersCheckBlockedRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersUsersCheckBlockedEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersUsersCheckBlockedEndpoint {
   def apply(
     parameters: UsersCheckBlockedEndpoint,
     request: UsersCheckBlockedRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersUsersCheckBlockedEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersUsersCheckBlockedEndpoint]
@@ -39,6 +37,6 @@ object ParametersUsersCheckBlockedEndpoint {
     def setRequest(value: UsersCheckBlockedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

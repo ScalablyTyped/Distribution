@@ -2,16 +2,14 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeginTransactionResponse extends StObject {
   
   /**
     * The transaction ID of the transaction started by the call.
     */
-  var transactionId: js.UndefOr[Id] = js.native
+  var transactionId: js.UndefOr[Id] = js.undefined
 }
 object BeginTransactionResponse {
   

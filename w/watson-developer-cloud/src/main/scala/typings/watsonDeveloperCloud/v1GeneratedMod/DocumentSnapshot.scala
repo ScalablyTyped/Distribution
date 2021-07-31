@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DocumentSnapshot. */
-@js.native
 trait DocumentSnapshot extends StObject {
   
   /** Snapshot of the conversion. */
-  var snapshot: js.UndefOr[js.Object] = js.native
+  var snapshot: js.UndefOr[js.Object] = js.undefined
   
   /** The step in the document conversion process that the snapshot object represents. */
-  var step: js.UndefOr[String] = js.native
+  var step: js.UndefOr[String] = js.undefined
 }
 object DocumentSnapshot {
   

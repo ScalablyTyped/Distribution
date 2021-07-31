@@ -10,7 +10,6 @@ import typings.officeJs.officeJsStrings.Mention
 import typings.officeJs.officeJsStrings.Plain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.10]
   */
 @js.native
-trait CommentReplyCollection extends ClientObject {
+trait CommentReplyCollection
+  extends StObject
+     with ClientObject {
   
   def add(content: String): CommentReply = js.native
   def add(content: String, contentType: ContentType): CommentReply = js.native
@@ -81,7 +82,7 @@ trait CommentReplyCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): CommentReplyCollection = js.native
-  def load(options: CommentReplyCollectionLoadOptions with CollectionLoadOptions): CommentReplyCollection = js.native
+  def load(options: CommentReplyCollectionLoadOptions & CollectionLoadOptions): CommentReplyCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): CommentReplyCollection = js.native
   def load(propertyNames: String): CommentReplyCollection = js.native
   def load(propertyNames: js.Array[String]): CommentReplyCollection = js.native

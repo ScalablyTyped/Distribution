@@ -4,7 +4,6 @@ import typings.std.Record
 import typings.wordpressApiFetch.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // prettier-ignore
@@ -23,7 +22,7 @@ object Category {
     description: String,
     id: Double,
     link: String,
-    meta: js.Array[_],
+    meta: js.Array[js.Any],
     name: String,
     parent: Double,
     slug: String,
@@ -53,7 +52,7 @@ object Category {
     description: String,
     id: Double,
     link: String,
-    meta: js.Array[_],
+    meta: js.Array[js.Any],
     name: String,
     parent: Double,
     slug: String,

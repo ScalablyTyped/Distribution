@@ -2,7 +2,6 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resource describes the locations where you can connect to Google&#39;s
   * networks. For more information, see  Colocation Facilities.
   */
-@js.native
 trait SchemaInterconnectLocation extends StObject {
   
   /**
     * [Output Only] The postal address of the Point of Presence, each line in
     * the address is separated by a newline character.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Availability zone for this InterconnectLocation. Within a
@@ -25,82 +23,82 @@ trait SchemaInterconnectLocation extends StObject {
     * scheduled in more than one availability zone. Example: &quot;zone1&quot;
     * or &quot;zone2&quot;.
     */
-  var availabilityZone: js.UndefOr[String] = js.native
+  var availabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Metropolitan area designator that indicates which city an
     * interconnect is located. For example: &quot;Chicago, IL&quot;,
     * &quot;Amsterdam, Netherlands&quot;.
     */
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Continent for this location.
     */
-  var continent: js.UndefOr[String] = js.native
+  var continent: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] An optional description of the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The name of the provider for this facility (e.g., EQUINIX).
     */
-  var facilityProvider: js.UndefOr[String] = js.native
+  var facilityProvider: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A provider-assigned Identifier for this facility (e.g.,
     * Ashburn-DC1).
     */
-  var facilityProviderFacilityId: js.UndefOr[String] = js.native
+  var facilityProviderFacilityId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#interconnectLocation
     * for interconnect locations.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Name of the resource.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The peeringdb identifier for this facility (corresponding
     * with a netfac type in peeringdb).
     */
-  var peeringdbFacilityId: js.UndefOr[String] = js.native
+  var peeringdbFacilityId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A list of InterconnectLocation.RegionInfo objects, that
     * describe parameters pertaining to the relation between this
     * InterconnectLocation and various Google Cloud regions.
     */
-  var regionInfos: js.UndefOr[js.Array[SchemaInterconnectLocationRegionInfo]] = js.native
+  var regionInfos: js.UndefOr[js.Array[SchemaInterconnectLocationRegionInfo]] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The status of this InterconnectLocation. If the status is
     * AVAILABLE, new Interconnects may be provisioned in this
     * InterconnectLocation. Otherwise, no new Interconnects may be provisioned.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaInterconnectLocation {
   

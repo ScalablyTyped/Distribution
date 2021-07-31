@@ -4,31 +4,29 @@ import typings.ionicCore.anon.Visible
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonSplitPane extends StObject {
   
   /**
     * The content `id` of the split-pane's main content.
     */
-  var contentId: js.UndefOr[String] = js.native
+  var contentId: js.UndefOr[String] = js.undefined
   
   /**
     * If `true`, the split pane will be hidden.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Expression to be called when the split-pane visibility has changed
     */
-  var onIonSplitPaneVisible: js.UndefOr[js.Function1[/* event */ CustomEvent[Visible], Unit]] = js.native
+  var onIonSplitPaneVisible: js.UndefOr[js.Function1[/* event */ CustomEvent[Visible], Unit]] = js.undefined
   
   /**
     * When the split-pane should be shown. Can be a CSS media query expression, or a shortcut expression. Can also be a boolean expression.
     */
-  var when: js.UndefOr[String | Boolean] = js.native
+  var when: js.UndefOr[String | Boolean] = js.undefined
 }
 object IonSplitPane {
   

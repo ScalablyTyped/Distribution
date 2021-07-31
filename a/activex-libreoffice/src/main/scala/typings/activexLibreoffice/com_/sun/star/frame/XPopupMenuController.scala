@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XPopupMenu
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,15 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * with a set of menu items and/or sub menus. The parent menu implementation briefs the controller whenever the pop-up menu gets activated by a user.
   * @since OOo 2.0
   */
-@js.native
-trait XPopupMenuController extends XInterface {
+trait XPopupMenuController
+  extends StObject
+     with XInterface {
   
   /**
     * provides a {@link com.sun.star.awt.XPopupMenu} to a pop-up menu controller implementation. The controller must fill this pop-up menu with its
     * functions.
     * @param PopupMenu An empty pop-up menu that must be filled by the pop-up menu controller.
     */
-  def setPopupMenu(PopupMenu: XPopupMenu): Unit = js.native
+  def setPopupMenu(PopupMenu: XPopupMenu): Unit
   
   /**
     * briefs the pop-up menu controller to update the contents of the provided pop-up menu to reflect the current state.
@@ -32,7 +32,7 @@ trait XPopupMenuController extends XInterface {
     * registers itself as status listener to for a command URL and immediately deregister after that. Therefore status updates will not be send regularly
     * for a non visible pop-up menu.
     */
-  def updatePopupMenu(): Unit = js.native
+  def updatePopupMenu(): Unit
 }
 object XPopupMenuController {
   

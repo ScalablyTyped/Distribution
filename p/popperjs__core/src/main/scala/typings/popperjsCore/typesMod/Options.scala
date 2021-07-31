@@ -5,19 +5,17 @@ import typings.popperjsCore.anon.PartialState
 import typings.popperjsCore.enumsMod.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var modifiers: js.Array[PartialModifieranyany] = js.native
+  var modifiers: js.Array[PartialModifieranyany]
   
-  var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.native
+  var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.undefined
   
-  var placement: Placement = js.native
+  var placement: Placement
   
-  var strategy: PositioningStrategy = js.native
+  var strategy: PositioningStrategy
 }
 object Options {
   

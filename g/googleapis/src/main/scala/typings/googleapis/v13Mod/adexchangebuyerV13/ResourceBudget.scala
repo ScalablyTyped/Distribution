@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.3", "adexchangebuyer_v1_3.Resource$Budget")
@@ -32,7 +31,7 @@ class ResourceBudget protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBudget] = js.native
   def get(callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBudget] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBudget] = js.native
   def get(params: ParamsResourceBudgetGet): GaxiosPromise[SchemaBudget] = js.native
   def get(params: ParamsResourceBudgetGet, callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
   def get(
@@ -65,7 +64,7 @@ class ResourceBudget protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaBudget] = js.native
   def patch(callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBudget] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBudget] = js.native
   def patch(params: ParamsResourceBudgetPatch): GaxiosPromise[SchemaBudget] = js.native
   def patch(params: ParamsResourceBudgetPatch, callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
   def patch(
@@ -97,7 +96,7 @@ class ResourceBudget protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaBudget] = js.native
   def update(callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBudget] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBudget] = js.native
   def update(params: ParamsResourceBudgetUpdate): GaxiosPromise[SchemaBudget] = js.native
   def update(params: ParamsResourceBudgetUpdate, callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
   def update(

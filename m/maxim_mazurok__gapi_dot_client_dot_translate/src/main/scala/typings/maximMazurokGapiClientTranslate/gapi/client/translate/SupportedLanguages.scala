@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportedLanguages extends StObject {
   
   /** A list of supported language responses. This list contains an entry for each language the Translation API supports. */
-  var languages: js.UndefOr[js.Array[SupportedLanguage]] = js.native
+  var languages: js.UndefOr[js.Array[SupportedLanguage]] = js.undefined
 }
 object SupportedLanguages {
   

@@ -2,20 +2,18 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message containing connection draining configuration.
   */
-@js.native
 trait SchemaConnectionDraining extends StObject {
   
   /**
     * Time for which instance will be drained (not accept new connections, but
     * still work to finish started).
     */
-  var drainingTimeoutSec: js.UndefOr[Double] = js.native
+  var drainingTimeoutSec: js.UndefOr[Double] = js.undefined
 }
 object SchemaConnectionDraining {
   

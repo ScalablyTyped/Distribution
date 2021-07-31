@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.1]
   */
-@js.native
 trait RangeLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var address: js.UndefOr[Boolean] = js.native
+  var address: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var addressLocal: js.UndefOr[Boolean] = js.native
+  var addressLocal: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var cellCount: js.UndefOr[Boolean] = js.native
+  var cellCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var columnCount: js.UndefOr[Boolean] = js.native
+  var columnCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var columnHidden: js.UndefOr[Boolean] = js.native
+  var columnHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var columnIndex: js.UndefOr[Boolean] = js.native
+  var columnIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -76,7 +74,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var dataValidation: js.UndefOr[DataValidationLoadOptions] = js.native
+  var dataValidation: js.UndefOr[DataValidationLoadOptions] = js.undefined
   
   /**
     *
@@ -84,7 +82,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[RangeFormatLoadOptions] = js.native
+  var format: js.UndefOr[RangeFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -92,7 +90,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var formulas: js.UndefOr[Boolean] = js.native
+  var formulas: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -100,7 +98,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var formulasLocal: js.UndefOr[Boolean] = js.native
+  var formulasLocal: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -108,7 +106,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var formulasR1C1: js.UndefOr[Boolean] = js.native
+  var formulasR1C1: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -118,7 +116,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var hasSpill: js.UndefOr[Boolean] = js.native
+  var hasSpill: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -126,7 +124,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -134,7 +132,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -142,7 +140,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var hyperlink: js.UndefOr[Boolean] = js.native
+  var hyperlink: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -150,7 +148,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var isEntireColumn: js.UndefOr[Boolean] = js.native
+  var isEntireColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -158,7 +156,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var isEntireRow: js.UndefOr[Boolean] = js.native
+  var isEntireRow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -166,7 +164,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -174,7 +172,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var linkedDataTypeState: js.UndefOr[Boolean] = js.native
+  var linkedDataTypeState: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -182,7 +180,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var numberFormat: js.UndefOr[Boolean] = js.native
+  var numberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -190,7 +188,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var numberFormatCategories: js.UndefOr[Boolean] = js.native
+  var numberFormatCategories: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -200,7 +198,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var numberFormatLocal: js.UndefOr[Boolean] = js.native
+  var numberFormatLocal: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -208,7 +206,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var rowCount: js.UndefOr[Boolean] = js.native
+  var rowCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -216,7 +214,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var rowHidden: js.UndefOr[Boolean] = js.native
+  var rowHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -224,7 +222,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var rowIndex: js.UndefOr[Boolean] = js.native
+  var rowIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -234,7 +232,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var savedAsArray: js.UndefOr[Boolean] = js.native
+  var savedAsArray: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -244,7 +242,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -252,7 +250,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var text: js.UndefOr[Boolean] = js.native
+  var text: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -260,7 +258,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -268,7 +266,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var valueTypes: js.UndefOr[Boolean] = js.native
+  var valueTypes: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -276,7 +274,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var values: js.UndefOr[Boolean] = js.native
+  var values: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -284,7 +282,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -292,7 +290,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.native
+  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
 object RangeLoadOptions {
   

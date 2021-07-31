@@ -4,39 +4,39 @@ import typings.mapboxGl.mapboxGlStrings.map
 import typings.mapboxGl.mapboxGlStrings.viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FillExtrusionPaint extends AnyPaint {
+trait FillExtrusionPaint
+  extends StObject
+     with AnyPaint {
   
-  var `fill-extrusion-base`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `fill-extrusion-base`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `fill-extrusion-base-transition`: js.UndefOr[Transition] = js.native
+  var `fill-extrusion-base-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `fill-extrusion-color`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `fill-extrusion-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   
-  var `fill-extrusion-color-transition`: js.UndefOr[Transition] = js.native
+  var `fill-extrusion-color-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `fill-extrusion-height`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `fill-extrusion-height`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `fill-extrusion-height-transition`: js.UndefOr[Transition] = js.native
+  var `fill-extrusion-height-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `fill-extrusion-opacity`: js.UndefOr[Double | Expression] = js.native
+  var `fill-extrusion-opacity`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `fill-extrusion-opacity-transition`: js.UndefOr[Transition] = js.native
+  var `fill-extrusion-opacity-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `fill-extrusion-pattern`: js.UndefOr[String | Expression] = js.native
+  var `fill-extrusion-pattern`: js.UndefOr[String | Expression] = js.undefined
   
-  var `fill-extrusion-pattern-transition`: js.UndefOr[Transition] = js.native
+  var `fill-extrusion-pattern-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `fill-extrusion-translate`: js.UndefOr[js.Array[Double] | Expression] = js.native
+  var `fill-extrusion-translate`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
   
-  var `fill-extrusion-translate-anchor`: js.UndefOr[map | viewport] = js.native
+  var `fill-extrusion-translate-anchor`: js.UndefOr[map | viewport] = js.undefined
   
-  var `fill-extrusion-translate-transition`: js.UndefOr[Transition] = js.native
+  var `fill-extrusion-translate-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `fill-extrusion-vertical-gradient`: js.UndefOr[Boolean] = js.native
+  var `fill-extrusion-vertical-gradient`: js.UndefOr[Boolean] = js.undefined
 }
 object FillExtrusionPaint {
   

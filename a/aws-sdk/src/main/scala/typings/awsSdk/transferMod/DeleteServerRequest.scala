@@ -2,16 +2,14 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteServerRequest extends StObject {
   
   /**
     * A unique system-assigned identifier for a server instance.
     */
-  var ServerId: typings.awsSdk.transferMod.ServerId = js.native
+  var ServerId: typings.awsSdk.transferMod.ServerId
 }
 object DeleteServerRequest {
   

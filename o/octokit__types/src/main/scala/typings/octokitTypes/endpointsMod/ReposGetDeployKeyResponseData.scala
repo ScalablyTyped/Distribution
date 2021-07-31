@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetDeployKeyResponseData extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var key: String = js.native
+  var key: String
   
-  var read_only: Boolean = js.native
+  var read_only: Boolean
   
-  var title: String = js.native
+  var title: String
   
-  var url: String = js.native
+  var url: String
   
-  var verified: Boolean = js.native
+  var verified: Boolean
 }
 object ReposGetDeployKeyResponseData {
   

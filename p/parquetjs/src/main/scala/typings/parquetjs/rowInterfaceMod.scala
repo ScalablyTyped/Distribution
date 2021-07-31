@@ -4,16 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowInterfaceMod {
   
   type ArrayType = js.Array[Boolean | Date | Double | String]
   
-  @js.native
   trait RowInterface
-    extends /* key */ StringDictionary[ScalarType | ArrayType | RowInterface | js.Array[RowInterface]]
+    extends StObject
+       with /* key */ StringDictionary[ScalarType | ArrayType | RowInterface | js.Array[RowInterface]]
   object RowInterface {
     
     @scala.inline

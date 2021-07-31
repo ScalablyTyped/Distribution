@@ -2,22 +2,21 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSImportEqualsDeclaration
-  extends Node
+  extends StObject
+     with Node
      with Statement {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var isExport: Boolean | Null = js.native
+  var isExport: Boolean | Null
   
-  var moduleReference: TSEntityName | TSExternalModuleReference = js.native
+  var moduleReference: TSEntityName | TSExternalModuleReference
   
   @JSName("type")
-  var type_TSImportEqualsDeclaration: typings.babelTypes.babelTypesStrings.TSImportEqualsDeclaration = js.native
+  var type_TSImportEqualsDeclaration: typings.babelTypes.babelTypesStrings.TSImportEqualsDeclaration
 }
 object TSImportEqualsDeclaration {
   

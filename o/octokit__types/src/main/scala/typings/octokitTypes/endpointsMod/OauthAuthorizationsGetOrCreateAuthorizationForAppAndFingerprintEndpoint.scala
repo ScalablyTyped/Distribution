@@ -2,35 +2,33 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprintEndpoint extends StObject {
   
-  var client_id: String = js.native
+  var client_id: String
   
   /**
     * The 40 character OAuth app client secret associated with the client ID specified in the URL.
     */
-  var client_secret: String = js.native
+  var client_secret: String
   
-  var fingerprint: String = js.native
+  var fingerprint: String
   
   /**
     * A note to remind you what the OAuth token is for.
     */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
   /**
     * A URL to remind you what app the OAuth token is for.
     */
-  var note_url: js.UndefOr[String] = js.native
+  var note_url: js.UndefOr[String] = js.undefined
   
   /**
     * A list of scopes that this authorization is in.
     */
-  var scopes: js.UndefOr[js.Array[String]] = js.native
+  var scopes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object OauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprintEndpoint {
   

@@ -2,31 +2,29 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionDeleteOneOptions extends StObject {
   
   /**
     * Allow driver to bypass schema validation in MongoDB 3.2 or higher.
     */
-  var bypassDocumentValidation: js.UndefOr[Boolean] = js.native
+  var bypassDocumentValidation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify a journal write concern.
     */
-  var j: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The write concern.
     */
-  var w: js.UndefOr[scala.Double | String] = js.native
+  var w: js.UndefOr[scala.Double | String] = js.undefined
   
   /**
     * The write concern timeout.
     */
-  var wtimmeout: js.UndefOr[scala.Double] = js.native
+  var wtimmeout: js.UndefOr[scala.Double] = js.undefined
 }
 object CollectionDeleteOneOptions {
   

@@ -2,17 +2,15 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskRoutingConfigurationOptions extends StObject {
   
-  var defaultFilter: js.UndefOr[WorkflowRuleOptions] = js.native
+  var defaultFilter: js.UndefOr[WorkflowRuleOptions] = js.undefined
   
-  var default_filter: js.UndefOr[WorkflowRuleOptions] = js.native
+  var default_filter: js.UndefOr[WorkflowRuleOptions] = js.undefined
   
-  var filters: js.Array[WorkflowRuleOptions] = js.native
+  var filters: js.Array[WorkflowRuleOptions]
 }
 object TaskRoutingConfigurationOptions {
   

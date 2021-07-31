@@ -2,96 +2,94 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorMetadata extends StObject {
   
   /**
     *  The connector metadata specific to Amplitude. 
     */
-  var Amplitude: js.UndefOr[AmplitudeMetadata] = js.native
+  var Amplitude: js.UndefOr[AmplitudeMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Datadog. 
     */
-  var Datadog: js.UndefOr[DatadogMetadata] = js.native
+  var Datadog: js.UndefOr[DatadogMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Dynatrace. 
     */
-  var Dynatrace: js.UndefOr[DynatraceMetadata] = js.native
+  var Dynatrace: js.UndefOr[DynatraceMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Amazon EventBridge. 
     */
-  var EventBridge: js.UndefOr[EventBridgeMetadata] = js.native
+  var EventBridge: js.UndefOr[EventBridgeMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Google Analytics. 
     */
-  var GoogleAnalytics: js.UndefOr[GoogleAnalyticsMetadata] = js.native
+  var GoogleAnalytics: js.UndefOr[GoogleAnalyticsMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Infor Nexus. 
     */
-  var InforNexus: js.UndefOr[InforNexusMetadata] = js.native
+  var InforNexus: js.UndefOr[InforNexusMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Marketo. 
     */
-  var Marketo: js.UndefOr[MarketoMetadata] = js.native
+  var Marketo: js.UndefOr[MarketoMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Amazon Redshift. 
     */
-  var Redshift: js.UndefOr[RedshiftMetadata] = js.native
+  var Redshift: js.UndefOr[RedshiftMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Amazon S3. 
     */
-  var S3: js.UndefOr[S3Metadata] = js.native
+  var S3: js.UndefOr[S3Metadata] = js.undefined
   
   /**
     *  The connector metadata specific to Salesforce. 
     */
-  var Salesforce: js.UndefOr[SalesforceMetadata] = js.native
+  var Salesforce: js.UndefOr[SalesforceMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to ServiceNow. 
     */
-  var ServiceNow: js.UndefOr[ServiceNowMetadata] = js.native
+  var ServiceNow: js.UndefOr[ServiceNowMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Singular. 
     */
-  var Singular: js.UndefOr[SingularMetadata] = js.native
+  var Singular: js.UndefOr[SingularMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Slack. 
     */
-  var Slack: js.UndefOr[SlackMetadata] = js.native
+  var Slack: js.UndefOr[SlackMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Snowflake. 
     */
-  var Snowflake: js.UndefOr[SnowflakeMetadata] = js.native
+  var Snowflake: js.UndefOr[SnowflakeMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Trend Micro. 
     */
-  var Trendmicro: js.UndefOr[TrendmicroMetadata] = js.native
+  var Trendmicro: js.UndefOr[TrendmicroMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Veeva. 
     */
-  var Veeva: js.UndefOr[VeevaMetadata] = js.native
+  var Veeva: js.UndefOr[VeevaMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Zendesk. 
     */
-  var Zendesk: js.UndefOr[ZendeskMetadata] = js.native
+  var Zendesk: js.UndefOr[ZendeskMetadata] = js.undefined
 }
 object ConnectorMetadata {
   

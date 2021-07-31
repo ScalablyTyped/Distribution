@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Children")
@@ -31,7 +30,7 @@ class ResourceChildren protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceChildrenDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceChildrenDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -57,7 +56,7 @@ class ResourceChildren protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaChildReference] = js.native
   def get(callback: BodyResponseCallback[SchemaChildReference]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChildReference] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChildReference] = js.native
   def get(params: ParamsResourceChildrenGet): GaxiosPromise[SchemaChildReference] = js.native
   def get(params: ParamsResourceChildrenGet, callback: BodyResponseCallback[SchemaChildReference]): Unit = js.native
   def get(
@@ -88,7 +87,7 @@ class ResourceChildren protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaChildReference] = js.native
   def insert(callback: BodyResponseCallback[SchemaChildReference]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChildReference] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChildReference] = js.native
   def insert(params: ParamsResourceChildrenInsert): GaxiosPromise[SchemaChildReference] = js.native
   def insert(params: ParamsResourceChildrenInsert, callback: BodyResponseCallback[SchemaChildReference]): Unit = js.native
   def insert(
@@ -121,7 +120,7 @@ class ResourceChildren protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaChildList] = js.native
   def list(callback: BodyResponseCallback[SchemaChildList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChildList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChildList] = js.native
   def list(params: ParamsResourceChildrenList): GaxiosPromise[SchemaChildList] = js.native
   def list(params: ParamsResourceChildrenList, callback: BodyResponseCallback[SchemaChildList]): Unit = js.native
   def list(

@@ -9,34 +9,32 @@ import typings.stylelint.mod.RuleMessageValue
 import typings.stylelint.mod.ValidateOptionsAssertion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<stylelint-webpack-plugin.stylelint-webpack-plugin/declarations/getOptions.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var emitError: js.UndefOr[Boolean] = js.native
+    var emitError: js.UndefOr[Boolean] = js.undefined
     
-    var emitWarning: js.UndefOr[Boolean] = js.native
+    var emitWarning: js.UndefOr[Boolean] = js.undefined
     
-    var failOnError: js.UndefOr[Boolean] = js.native
+    var failOnError: js.UndefOr[Boolean] = js.undefined
     
-    var failOnWarning: js.UndefOr[Boolean] = js.native
+    var failOnWarning: js.UndefOr[Boolean] = js.undefined
     
-    var files: js.UndefOr[js.Array[String] | String] = js.native
+    var files: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var formatter: js.UndefOr[js.Function | String] = js.native
+    var formatter: js.UndefOr[js.Function | String] = js.undefined
     
-    var lintDirtyModulesOnly: js.UndefOr[Boolean] = js.native
+    var lintDirtyModulesOnly: js.UndefOr[Boolean] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var stylelintPath: js.UndefOr[String] = js.native
+    var stylelintPath: js.UndefOr[String] = js.undefined
   }
   object PartialOptions {
     
@@ -115,10 +113,9 @@ object anon {
   }
   
   /* Inlined std.Partial<{  timestamp :number}> */
-  @js.native
   trait Partialtimestampnumber extends StObject {
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
   }
   object Partialtimestampnumber {
     
@@ -139,18 +136,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeofformatters extends StObject {
     
-    def compact(results: js.Array[LintResult]): String = js.native
+    def compact(results: js.Array[LintResult]): String
     
-    def json(results: js.Array[LintResult]): String = js.native
+    def json(results: js.Array[LintResult]): String
     
-    def string(results: js.Array[LintResult]): String = js.native
+    def string(results: js.Array[LintResult]): String
     
-    def unix(results: js.Array[LintResult]): String = js.native
+    def unix(results: js.Array[LintResult]): String
     
-    def verbose(results: js.Array[LintResult]): String = js.native
+    def verbose(results: js.Array[LintResult]): String
   }
   object Typeofformatters {
     
@@ -186,16 +182,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeofutils extends StObject {
     
-    def checkAgainstRule(options: Root, callback: js.Function1[/* warning */ String, Unit]): Unit = js.native
+    def checkAgainstRule(options: Root, callback: js.Function1[/* warning */ String, Unit]): Unit
     
-    def report(violation: Index): Unit = js.native
+    def report(violation: Index): Unit
     
-    def ruleMessages[T /* <: StringDictionary[RuleMessageValue] */](ruleName: String, messages: T): T = js.native
+    def ruleMessages[T /* <: StringDictionary[RuleMessageValue] */](ruleName: String, messages: T): T
     
-    def validateOptions(result: Result, ruleName: String, options: ValidateOptionsAssertion*): Boolean = js.native
+    def validateOptions(result: Result, ruleName: String, options: ValidateOptionsAssertion*): Boolean
   }
   object Typeofutils {
     

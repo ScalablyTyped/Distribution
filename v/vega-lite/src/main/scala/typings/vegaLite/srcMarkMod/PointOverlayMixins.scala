@@ -5,10 +5,8 @@ import typings.vegaLite.vegaLiteStrings.transparent
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointOverlayMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait PointOverlayMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
     *
     * __Default value:__ `false`.
     */
-  var point: js.UndefOr[Boolean | OverlayMarkDef[ES] | transparent] = js.native
+  var point: js.UndefOr[Boolean | OverlayMarkDef[ES] | transparent] = js.undefined
 }
 object PointOverlayMixins {
   
@@ -33,7 +31,7 @@ object PointOverlayMixins {
   }
   
   @scala.inline
-  implicit class PointOverlayMixinsMutableBuilder[Self <: PointOverlayMixins[_], ES /* <: ExprRef | SignalRef */] (val x: Self with PointOverlayMixins[ES]) extends AnyVal {
+  implicit class PointOverlayMixinsMutableBuilder[Self <: PointOverlayMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & PointOverlayMixins[ES]) extends AnyVal {
     
     @scala.inline
     def setPoint(value: Boolean | OverlayMarkDef[ES] | transparent): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])

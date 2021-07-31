@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to add spacing before a paragraph.
   */
-@js.native
-trait AddSpacingBeforeParagraphCommand extends CommandWithSimpleStateBase {
+trait AddSpacingBeforeParagraphCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the AddSpacingBeforeParagraphCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object AddSpacingBeforeParagraphCommand {
   

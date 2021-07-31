@@ -3,21 +3,19 @@ package typings.ssri.anon
 import typings.ssri.ssriBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var single: `true` = js.native
+  var single: `true`
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object `1` {
   
   @scala.inline
-  def apply(single: `true`): `1` = {
-    val __obj = js.Dynamic.literal(single = single.asInstanceOf[js.Any])
+  def apply(): `1` = {
+    val __obj = js.Dynamic.literal(single = true)
     __obj.asInstanceOf[`1`]
   }
   

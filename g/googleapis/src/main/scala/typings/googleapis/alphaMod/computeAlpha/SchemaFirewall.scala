@@ -3,44 +3,42 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.IPProtocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Firewall resource.
   */
-@js.native
 trait SchemaFirewall extends StObject {
   
   /**
     * The list of ALLOW rules specified by this firewall. Each rule specifies a
     * protocol and port-range tuple that describes a permitted connection.
     */
-  var allowed: js.UndefOr[js.Array[IPProtocol]] = js.native
+  var allowed: js.UndefOr[js.Array[IPProtocol]] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * The list of DENY rules specified by this firewall. Each rule specifies a
     * protocol and port-range tuple that describes a denied connection.
     */
-  var denied: js.UndefOr[js.Array[IPProtocol]] = js.native
+  var denied: js.UndefOr[js.Array[IPProtocol]] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * If destination ranges are specified, the firewall will apply only to
     * traffic that has destination IP address in these ranges. These ranges
     * must be expressed in CIDR format. Only IPv4 is supported.
     */
-  var destinationRanges: js.UndefOr[js.Array[String]] = js.native
+  var destinationRanges: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Direction of traffic to which this firewall applies; default is INGRESS.
@@ -48,7 +46,7 @@ trait SchemaFirewall extends StObject {
     * destinationRanges; For EGRESS traffic, it is NOT supported to specify
     * sourceRanges OR sourceTags.
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * Denotes whether the firewall rule is disabled, i.e not applied to the
@@ -56,32 +54,32 @@ trait SchemaFirewall extends StObject {
     * enforced and the network behaves as if it did not exist. If this is
     * unspecified, the firewall rule will be enabled.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Deprecated in favor of enable in LogConfig. This field denotes whether to
     * enable logging for a particular firewall rule. If logging is enabled,
     * logs will be exported to Stackdriver.
     */
-  var enableLogging: js.UndefOr[Boolean] = js.native
+  var enableLogging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#firewall for firewall
     * rules.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * This field denotes the logging options for a particular firewall rule. If
     * logging is enabled, logs will be exported to Stackdriver.
     */
-  var logConfig: js.UndefOr[SchemaFirewallLogConfig] = js.native
+  var logConfig: js.UndefOr[SchemaFirewallLogConfig] = js.undefined
   
   /**
     * Name of the resource; provided by the client when the resource is
@@ -92,7 +90,7 @@ trait SchemaFirewall extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the network resource for this firewall rule. If not specified when
@@ -104,7 +102,7 @@ trait SchemaFirewall extends StObject {
     * - projects/myproject/global/networks/my-network  -
     * global/networks/default
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * Priority for this rule. This is an integer between 0 and 65535, both
@@ -114,17 +112,17 @@ trait SchemaFirewall extends StObject {
     * precedence than a rule with priority 1). DENY rules take precedence over
     * ALLOW rules having equal priority.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource with the resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
   
   /**
     * If source ranges are specified, the firewall will apply only to traffic
@@ -136,7 +134,7 @@ trait SchemaFirewall extends StObject {
     * not need to match both properties for the firewall to apply. Only IPv4 is
     * supported.
     */
-  var sourceRanges: js.UndefOr[js.Array[String]] = js.native
+  var sourceRanges: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If source service accounts are specified, the firewall will apply only to
@@ -151,7 +149,7 @@ trait SchemaFirewall extends StObject {
     * properties for the firewall to apply. sourceServiceAccounts cannot be
     * used at the same time as sourceTags or targetTags.
     */
-  var sourceServiceAccounts: js.UndefOr[js.Array[String]] = js.native
+  var sourceServiceAccounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If source tags are specified, the firewall rule applies only to traffic
@@ -166,7 +164,7 @@ trait SchemaFirewall extends StObject {
     * sourceTags property. The connection does not need to match both
     * properties for the firewall to apply.
     */
-  var sourceTags: js.UndefOr[js.Array[String]] = js.native
+  var sourceTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of service accounts indicating sets of instances located in the
@@ -176,7 +174,7 @@ trait SchemaFirewall extends StObject {
     * specified, the firewall rule applies to all instances on the specified
     * network.
     */
-  var targetServiceAccounts: js.UndefOr[js.Array[String]] = js.native
+  var targetServiceAccounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of tags that controls which instances the firewall rule applies
@@ -185,7 +183,7 @@ trait SchemaFirewall extends StObject {
     * targetTags are specified, the firewall rule applies to all instances on
     * the specified network.
     */
-  var targetTags: js.UndefOr[js.Array[String]] = js.native
+  var targetTags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaFirewall {
   

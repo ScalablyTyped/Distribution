@@ -3,30 +3,28 @@ package typings.googleapis.storageV1beta2Mod.storageV1beta2
 import typings.googleapis.anon.Generation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Compose request.
   */
-@js.native
 trait SchemaComposeRequest extends StObject {
   
   /**
     * Properties of the resulting object
     */
-  var destination: js.UndefOr[SchemaObject] = js.native
+  var destination: js.UndefOr[SchemaObject] = js.undefined
   
   /**
     * The kind of item this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The list of source objects that will be concatenated into a single
     * object.
     */
-  var sourceObjects: js.UndefOr[js.Array[Generation]] = js.native
+  var sourceObjects: js.UndefOr[js.Array[Generation]] = js.undefined
 }
 object SchemaComposeRequest {
   

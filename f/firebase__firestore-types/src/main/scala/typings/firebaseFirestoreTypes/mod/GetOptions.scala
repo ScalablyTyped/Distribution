@@ -5,13 +5,11 @@ import typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.default
 import typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOptions extends StObject {
   
-  val source: js.UndefOr[default | server | cache] = js.native
+  val source: js.UndefOr[default | server | cache] = js.undefined
 }
 object GetOptions {
   

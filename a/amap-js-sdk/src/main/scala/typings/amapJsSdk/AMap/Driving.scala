@@ -5,11 +5,12 @@ import typings.amapJsSdk.anon.Keyword
 import typings.amapJsSdk.anon.Waypoints
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Driving extends EventBindable {
+trait Driving
+  extends StObject
+     with EventBindable {
   
   def clear(): Unit = js.native
   
@@ -25,7 +26,7 @@ trait Driving extends EventBindable {
   def search(
     origin: LngLat,
     destination: LngLat,
-    opts: js.UndefOr[scala.Nothing],
+    opts: Unit,
     callback: js.Function2[/* status */ String, /* result */ String | DrivingResult, Unit]
   ): Unit = js.native
   def search(origin: LngLat, destination: LngLat, opts: Waypoints): Unit = js.native

@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.iot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorActionIotEvents extends StObject {
   
   /**
     * The name of the AWS IoT Events input.
     */
-  var inputName: String = js.native
+  var inputName: String
   
   /**
     * Use this to ensure that only one input (message) with a given messageId is processed by an AWS IoT Events detector.
     */
-  var messageId: js.UndefOr[String] = js.native
+  var messageId: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: String = js.native
+  var roleArn: String
 }
 object TopicRuleErrorActionIotEvents {
   

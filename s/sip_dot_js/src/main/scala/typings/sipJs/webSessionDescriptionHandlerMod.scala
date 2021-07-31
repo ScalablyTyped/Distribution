@@ -9,10 +9,13 @@ import typings.std.MediaStreamConstraints
 import typings.std.RTCConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webSessionDescriptionHandlerMod {
+  
+  @JSImport("sip.js/lib/platform/web/session-description-handler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sip.js/lib/platform/web/session-description-handler", "SessionDescriptionHandler")
   @js.native
@@ -51,24 +54,20 @@ object webSessionDescriptionHandlerMod {
     def dispatchRemoveTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchRemoveTrackEvent")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("sip.js/lib/platform/web/session-description-handler", "defaultMediaStreamFactory")
-  @js.native
-  def defaultMediaStreamFactory(): MediaStreamFactory = js.native
+  @scala.inline
+  def defaultMediaStreamFactory(): MediaStreamFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMediaStreamFactory")().asInstanceOf[MediaStreamFactory]
   
-  @JSImport("sip.js/lib/platform/web/session-description-handler", "defaultPeerConnectionConfiguration")
-  @js.native
-  def defaultPeerConnectionConfiguration(): RTCConfiguration = js.native
+  @scala.inline
+  def defaultPeerConnectionConfiguration(): RTCConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultPeerConnectionConfiguration")().asInstanceOf[RTCConfiguration]
   
-  @JSImport("sip.js/lib/platform/web/session-description-handler", "defaultSessionDescriptionHandlerFactory")
-  @js.native
-  def defaultSessionDescriptionHandlerFactory(): SessionDescriptionHandlerFactory = js.native
-  @JSImport("sip.js/lib/platform/web/session-description-handler", "defaultSessionDescriptionHandlerFactory")
-  @js.native
+  @scala.inline
+  def defaultSessionDescriptionHandlerFactory(): SessionDescriptionHandlerFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSessionDescriptionHandlerFactory")().asInstanceOf[SessionDescriptionHandlerFactory]
+  @scala.inline
   def defaultSessionDescriptionHandlerFactory(
     mediaStreamFactory: js.Function2[
       /* constraints */ MediaStreamConstraints, 
       /* sessionDescriptionHandler */ typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler, 
       js.Promise[MediaStream]
     ]
-  ): SessionDescriptionHandlerFactory = js.native
+  ): SessionDescriptionHandlerFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSessionDescriptionHandlerFactory")(mediaStreamFactory.asInstanceOf[js.Any]).asInstanceOf[SessionDescriptionHandlerFactory]
 }

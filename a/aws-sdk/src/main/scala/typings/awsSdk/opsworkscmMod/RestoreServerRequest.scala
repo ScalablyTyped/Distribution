@@ -2,31 +2,29 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreServerRequest extends StObject {
   
   /**
     *  The ID of the backup that you want to use to restore a server. 
     */
-  var BackupId: typings.awsSdk.opsworkscmMod.BackupId = js.native
+  var BackupId: typings.awsSdk.opsworkscmMod.BackupId
   
   /**
     *  The type of instance to restore. Valid values must be specified in the following format: ^([cm][34]|t2).* For example, m5.large. Valid values are m5.large, r5.xlarge, and r5.2xlarge. If you do not specify this parameter, RestoreServer uses the instance type from the specified backup. 
     */
-  var InstanceType: js.UndefOr[String] = js.native
+  var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
     *  The name of the key pair to set on the new EC2 instance. This can be helpful if the administrator no longer has the SSH key. 
     */
-  var KeyPair: js.UndefOr[typings.awsSdk.opsworkscmMod.KeyPair] = js.native
+  var KeyPair: js.UndefOr[typings.awsSdk.opsworkscmMod.KeyPair] = js.undefined
   
   /**
     *  The name of the server that you want to restore. 
     */
-  var ServerName: typings.awsSdk.opsworkscmMod.ServerName = js.native
+  var ServerName: typings.awsSdk.opsworkscmMod.ServerName
 }
 object RestoreServerRequest {
   

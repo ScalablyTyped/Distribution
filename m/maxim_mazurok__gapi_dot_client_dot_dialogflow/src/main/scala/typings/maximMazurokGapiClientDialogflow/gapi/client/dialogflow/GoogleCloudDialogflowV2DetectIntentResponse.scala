@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2DetectIntentResponse extends StObject {
   
   /**
@@ -14,19 +12,19 @@ trait GoogleCloudDialogflowV2DetectIntentResponse extends StObject {
     * the generated audio content will be empty. In some scenarios, multiple output audio fields may be present in the response structure. In these cases, only the top-most-level audio
     * output has content.
     */
-  var outputAudio: js.UndefOr[String] = js.native
+  var outputAudio: js.UndefOr[String] = js.undefined
   
   /** The config used by the speech synthesizer to generate the output audio. */
-  var outputAudioConfig: js.UndefOr[GoogleCloudDialogflowV2OutputAudioConfig] = js.native
+  var outputAudioConfig: js.UndefOr[GoogleCloudDialogflowV2OutputAudioConfig] = js.undefined
   
   /** The selected results of the conversational query or event processing. See `alternative_query_results` for additional potential results. */
-  var queryResult: js.UndefOr[GoogleCloudDialogflowV2QueryResult] = js.native
+  var queryResult: js.UndefOr[GoogleCloudDialogflowV2QueryResult] = js.undefined
   
   /** The unique identifier of the response. It can be used to locate a response in the training example set or for reporting issues. */
-  var responseId: js.UndefOr[String] = js.native
+  var responseId: js.UndefOr[String] = js.undefined
   
   /** Specifies the status of the webhook request. */
-  var webhookStatus: js.UndefOr[GoogleRpcStatus] = js.native
+  var webhookStatus: js.UndefOr[GoogleRpcStatus] = js.undefined
 }
 object GoogleCloudDialogflowV2DetectIntentResponse {
   

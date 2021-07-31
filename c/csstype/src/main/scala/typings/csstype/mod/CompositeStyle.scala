@@ -2,7 +2,6 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`source-over`
   - typings.csstype.csstypeStrings.xor
 */
-trait CompositeStyle extends _WebkitMaskCompositeProperty
+trait CompositeStyle
+  extends StObject
+     with _WebkitMaskCompositeProperty
 object CompositeStyle {
   
   @scala.inline

@@ -10,11 +10,12 @@ import typings.trtcJsSdk.trtcJsSdkStrings.text
 import typings.trtcJsSdk.trtcJsSdkStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalStream extends Stream {
+trait LocalStream
+  extends StObject
+     with Stream {
   
   /**
     * 添加音频或视频轨道

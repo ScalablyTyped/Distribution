@@ -5,33 +5,28 @@ import typings.tensorflowTfjsCore.distTensorMod.Scalar
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scalarMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/scalar", "scalar")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/scalar", JSImport.Namespace)
   @js.native
-  def scalar(value: String): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/scalar", "scalar")
-  @js.native
-  def scalar(value: String, dtype: DataType): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/scalar", "scalar")
-  @js.native
-  def scalar(value: Boolean): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/scalar", "scalar")
-  @js.native
-  def scalar(value: Boolean, dtype: DataType): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/scalar", "scalar")
-  @js.native
-  def scalar(value: Double): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/scalar", "scalar")
-  @js.native
-  def scalar(value: Double, dtype: DataType): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/scalar", "scalar")
-  @js.native
-  def scalar(value: Uint8Array): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/scalar", "scalar")
-  @js.native
-  def scalar(value: Uint8Array, dtype: DataType): Scalar = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def scalar(value: String): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: String, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Boolean): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Boolean, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Double): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Double, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Uint8Array): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Uint8Array, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
 }

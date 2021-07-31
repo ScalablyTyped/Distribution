@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRoleMod {
   
-  @JSImport("@pulumi/aws/iam/getRole", "getRole")
+  @JSImport("@pulumi/aws/iam/getRole", JSImport.Namespace)
   @js.native
-  def getRole(args: GetRoleArgs): js.Promise[GetRoleResult] = js.native
-  @JSImport("@pulumi/aws/iam/getRole", "getRole")
-  @js.native
-  def getRole(args: GetRoleArgs, opts: InvokeOptions): js.Promise[GetRoleResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRole(args: GetRoleArgs): js.Promise[GetRoleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRole")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRoleResult]]
+  @scala.inline
+  def getRole(args: GetRoleArgs, opts: InvokeOptions): js.Promise[GetRoleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRole")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRoleResult]]
+  
   trait GetRoleArgs extends StObject {
     
     /**
       * The friendly IAM role name to match.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The tags attached to the role.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetRoleArgs {
     
@@ -51,60 +51,59 @@ object getRoleMod {
     }
   }
   
-  @js.native
   trait GetRoleResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the role.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The policy document associated with the role.
       */
-    val assumeRolePolicy: String = js.native
+    val assumeRolePolicy: String
     
     /**
       * Creation date of the role in RFC 3339 format.
       */
-    val createDate: String = js.native
+    val createDate: String
     
     /**
       * Description for the role.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Maximum session duration.
       */
-    val maxSessionDuration: Double = js.native
+    val maxSessionDuration: Double
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The path to the role.
       */
-    val path: String = js.native
+    val path: String
     
     /**
       * The ARN of the policy that is used to set the permissions boundary for the role.
       */
-    val permissionsBoundary: String = js.native
+    val permissionsBoundary: String
     
     /**
       * The tags attached to the role.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The stable and unique string identifying the role.
       */
-    val uniqueId: String = js.native
+    val uniqueId: String
   }
   object GetRoleResult {
     

@@ -4,21 +4,21 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Is used for interaction handle to query user decision regarding locked document.
   * @since OOo 3.0
   */
-@js.native
-trait LockedDocumentRequest extends Exception {
+trait LockedDocumentRequest
+  extends StObject
+     with Exception {
   
   /** The URL of the locked document. */
-  var DocumentURL: String = js.native
+  var DocumentURL: String
   
   /** The user information of the locked document. */
-  var UserInfo: String = js.native
+  var UserInfo: String
 }
 object LockedDocumentRequest {
   

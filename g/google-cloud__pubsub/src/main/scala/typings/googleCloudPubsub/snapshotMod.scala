@@ -11,7 +11,6 @@ import typings.googleCloudPubsub.subscriptionMod.Subscription
 import typings.googleGax.gaxMod.CallOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snapshotMod {
@@ -44,9 +43,12 @@ object snapshotMod {
   /* static members */
   object Snapshot {
     
-    @JSImport("@google-cloud/pubsub/build/src/snapshot", "Snapshot.formatName_")
+    @JSImport("@google-cloud/pubsub/build/src/snapshot", "Snapshot")
     @js.native
-    def formatName_(projectId: String, name: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def formatName_(projectId: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(projectId.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   type CreateSnapshotCallback = ResourceCallback[Snapshot, ISnapshot]

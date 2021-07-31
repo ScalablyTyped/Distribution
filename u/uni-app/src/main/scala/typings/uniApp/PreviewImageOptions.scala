@@ -5,31 +5,29 @@ import typings.uniApp.uniAppStrings.none
 import typings.uniApp.uniAppStrings.number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviewImageOptions extends StObject {
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 当前显示图片的链接，不填则默认为 urls 的第一张
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * current 为当前显示图片的链接/索引值，不填或填写的值无效则为 urls 的第一张。App平台在 1.9.5至1.9.8之间，current为必填。不填会报错
     */
-  var current: js.UndefOr[String] = js.native
+  var current: js.UndefOr[String] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 图片指示器样式
@@ -37,27 +35,27 @@ trait PreviewImageOptions extends StObject {
     * - number: 顶部数字指示器
     * - none: 不显示指示器
     */
-  var indicator: js.UndefOr[default | number | none] = js.native
+  var indicator: js.UndefOr[default | number | none] = js.undefined
   
   /**
     * 长按图片显示操作菜单，如不填默认为保存相册，1.9.5 起支持。
     */
-  var longPressActions: js.UndefOr[LongPressActionsOptions] = js.native
+  var longPressActions: js.UndefOr[LongPressActionsOptions] = js.undefined
   
   /**
     * 是否可循环预览
     */
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 接口调用成功的回调函数
     */
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 需要预览的图片链接列表
     */
-  var urls: js.UndefOr[String | js.Array[_]] = js.native
+  var urls: js.UndefOr[String | js.Array[js.Any]] = js.undefined
 }
 object PreviewImageOptions {
   
@@ -119,7 +117,7 @@ object PreviewImageOptions {
     def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setUrls(value: String | js.Array[_]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    def setUrls(value: String | js.Array[js.Any]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)

@@ -2,7 +2,6 @@ package typings.osLocale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,32 +18,31 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
   @JSImport("os-locale", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[String] = js.native
-  @JSImport("os-locale", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Synchronously get the system [locale](https://en.wikipedia.org/wiki/Locale_(computer_software)).
   	@returns The locale.
   	*/
-  @JSImport("os-locale", "sync")
-  @js.native
-  def sync(): String = js.native
-  @JSImport("os-locale", "sync")
-  @js.native
-  def sync(options: Options): String = js.native
+  @scala.inline
+  def sync(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[String]
+  @scala.inline
+  def sync(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Set to `false` to avoid spawning subprocesses and instead only resolve the locale from environment variables.
     		@default true
     		*/
-    val spawn: js.UndefOr[Boolean] = js.native
+    val spawn: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

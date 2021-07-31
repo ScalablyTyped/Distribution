@@ -9,25 +9,24 @@ import typings.lowlight.lowlightStrings.element
 import typings.lowlight.lowlightStrings.root
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AST {
   
-  @js.native
   trait Comment
-    extends typings.lowlight.lowlight.AST.Unist.Text
+    extends StObject
+       with typings.lowlight.lowlight.AST.Unist.Text
        with HastNode {
     
     @JSName("type")
-    var type_Comment: comment = js.native
+    var type_Comment: comment
   }
   object Comment {
     
     @scala.inline
-    def apply(`type`: comment, value: String): Comment = {
+    def apply(value: String): Comment = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("comment")
       __obj.asInstanceOf[Comment]
     }
     
@@ -39,26 +38,26 @@ object AST {
     }
   }
   
-  @js.native
   trait Doctype
-    extends Node
+    extends StObject
+       with Node
        with HastNode {
     
-    var name: String = js.native
+    var name: String
     
-    var public: js.UndefOr[String] = js.native
+    var public: js.UndefOr[String] = js.undefined
     
-    var system: js.UndefOr[String] = js.native
+    var system: js.UndefOr[String] = js.undefined
     
     @JSName("type")
-    var type_Doctype: doctype = js.native
+    var type_Doctype: doctype
   }
   object Doctype {
     
     @scala.inline
-    def apply(name: String, `type`: doctype): Doctype = {
+    def apply(name: String): Doctype = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("doctype")
       __obj.asInstanceOf[Doctype]
     }
     
@@ -85,24 +84,24 @@ object AST {
     }
   }
   
-  @js.native
   trait Element
-    extends Parent
+    extends StObject
+       with Parent
        with HastNode {
     
-    var properties: Properties = js.native
+    var properties: Properties
     
-    var tagName: String = js.native
+    var tagName: String
     
     @JSName("type")
-    var type_Element: element = js.native
+    var type_Element: element
   }
   object Element {
     
     @scala.inline
-    def apply(children: js.Array[Node], properties: Properties, tagName: String, `type`: element): Element = {
+    def apply(children: js.Array[Node], properties: Properties, tagName: String): Element = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("element")
       __obj.asInstanceOf[Element]
     }
     
@@ -122,20 +121,20 @@ object AST {
   
   type Properties = StringDictionary[js.Any]
   
-  @js.native
   trait Root
-    extends Parent
+    extends StObject
+       with Parent
        with HastNode {
     
     @JSName("type")
-    var type_Root: root = js.native
+    var type_Root: root
   }
   object Root {
     
     @scala.inline
-    def apply(children: js.Array[Node], `type`: root): Root = {
+    def apply(children: js.Array[Node]): Root = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("root")
       __obj.asInstanceOf[Root]
     }
     
@@ -147,9 +146,9 @@ object AST {
     }
   }
   
-  @js.native
   trait Text
-    extends typings.lowlight.lowlight.AST.Unist.Text
+    extends StObject
+       with typings.lowlight.lowlight.AST.Unist.Text
        with HastNode
   object Text {
     
@@ -165,14 +164,13 @@ object AST {
     
     type Data = StringDictionary[js.Any]
     
-    @js.native
     trait Location extends StObject {
       
-      var end: Position = js.native
+      var end: Position
       
-      var indent: js.UndefOr[js.Array[Double]] = js.native
+      var indent: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var start: Position = js.native
+      var start: Position
     }
     object Location {
       
@@ -202,14 +200,13 @@ object AST {
       }
     }
     
-    @js.native
     trait Node extends StObject {
       
-      var data: js.UndefOr[Data] = js.native
+      var data: js.UndefOr[Data] = js.undefined
       
-      var position: js.UndefOr[Location] = js.native
+      var position: js.UndefOr[Location] = js.undefined
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object Node {
       
@@ -240,10 +237,11 @@ object AST {
       }
     }
     
-    @js.native
-    trait Parent extends Node {
+    trait Parent
+      extends StObject
+         with Node {
       
-      var children: js.Array[Node] = js.native
+      var children: js.Array[Node]
     }
     object Parent {
       
@@ -265,14 +263,13 @@ object AST {
       }
     }
     
-    @js.native
     trait Position extends StObject {
       
-      var column: Double = js.native
+      var column: Double
       
-      var line: Double = js.native
+      var line: Double
       
-      var offset: js.UndefOr[Double] = js.native
+      var offset: js.UndefOr[Double] = js.undefined
     }
     object Position {
       
@@ -299,10 +296,11 @@ object AST {
       }
     }
     
-    @js.native
-    trait Text extends Node {
+    trait Text
+      extends StObject
+         with Node {
       
-      var value: String = js.native
+      var value: String
     }
     object Text {
       

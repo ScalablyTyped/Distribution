@@ -2,16 +2,17 @@ package typings.antd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devWarningMod {
   
-  @JSImport("antd/lib/_util/devWarning", JSImport.Default)
+  @JSImport("antd/lib/_util/devWarning", JSImport.Namespace)
   @js.native
-  def default(valid: Boolean, component: String, message: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("antd/lib/_util/devWarning", "resetWarned")
-  @js.native
-  def resetWarned(): Unit = js.native
+  @scala.inline
+  def default(valid: Boolean, component: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(valid.asInstanceOf[js.Any], component.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resetWarned(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetWarned")().asInstanceOf[Unit]
 }

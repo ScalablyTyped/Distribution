@@ -12,7 +12,7 @@ Better HTML5 drag events
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 20165 |
+| # downloads        | 17770 |
 | # stars            | 1 |
 
 ## Links

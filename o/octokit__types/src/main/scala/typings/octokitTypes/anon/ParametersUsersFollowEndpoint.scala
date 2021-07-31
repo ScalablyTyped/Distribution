@@ -5,22 +5,24 @@ import typings.octokitTypes.endpointsMod.UsersFollowRequestOptions
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersUsersFollowEndpoint extends StObject {
   
-  var parameters: UsersFollowEndpoint = js.native
+  var parameters: UsersFollowEndpoint
   
-  var request: UsersFollowRequestOptions = js.native
+  var request: UsersFollowRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersUsersFollowEndpoint {
   
   @scala.inline
-  def apply(parameters: UsersFollowEndpoint, request: UsersFollowRequestOptions, response: OctokitResponse[_]): ParametersUsersFollowEndpoint = {
+  def apply(
+    parameters: UsersFollowEndpoint,
+    request: UsersFollowRequestOptions,
+    response: OctokitResponse[js.Any]
+  ): ParametersUsersFollowEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersUsersFollowEndpoint]
   }
@@ -35,6 +37,6 @@ object ParametersUsersFollowEndpoint {
     def setRequest(value: UsersFollowRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

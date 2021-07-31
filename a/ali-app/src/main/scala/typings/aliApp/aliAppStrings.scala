@@ -10,38 +10,49 @@ import typings.aliApp.my._TextRiskIdentificationType
 import typings.aliApp.my.scanType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aliAppStrings {
   
   @js.native
-  sealed trait `0` extends _TextRiskIdentificationType
+  sealed trait `0`
+    extends StObject
+       with _TextRiskIdentificationType
   @scala.inline
   def `0`: `0` = "0".asInstanceOf[`0`]
   
   @js.native
-  sealed trait `1` extends _TextRiskIdentificationType
+  sealed trait `1`
+    extends StObject
+       with _TextRiskIdentificationType
   @scala.inline
   def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
-  sealed trait `2` extends _TextRiskIdentificationType
+  sealed trait `2`
+    extends StObject
+       with _TextRiskIdentificationType
   @scala.inline
   def `2`: `2` = "2".asInstanceOf[`2`]
   
   @js.native
-  sealed trait `2G` extends NetworkType
+  sealed trait `2G`
+    extends StObject
+       with NetworkType
   @scala.inline
   def `2G`: `2G` = "2G".asInstanceOf[`2G`]
   
   @js.native
-  sealed trait `3` extends _TextRiskIdentificationType
+  sealed trait `3`
+    extends StObject
+       with _TextRiskIdentificationType
   @scala.inline
   def `3`: `3` = "3".asInstanceOf[`3`]
   
   @js.native
-  sealed trait `3G` extends NetworkType
+  sealed trait `3G`
+    extends StObject
+       with NetworkType
   @scala.inline
   def `3G`: `3G` = "3G".asInstanceOf[`3G`]
   
@@ -51,7 +62,9 @@ object aliAppStrings {
   def `4000`: `4000` = "4000".asInstanceOf[`4000`]
   
   @js.native
-  sealed trait `4G` extends NetworkType
+  sealed trait `4G`
+    extends StObject
+       with NetworkType
   @scala.inline
   def `4G`: `4G` = "4G".asInstanceOf[`4G`]
   
@@ -126,7 +139,9 @@ object aliAppStrings {
   def NOTIFICATION: NOTIFICATION = "NOTIFICATION".asInstanceOf[NOTIFICATION]
   
   @js.native
-  sealed trait NOTREACHABLE extends NetworkType
+  sealed trait NOTREACHABLE
+    extends StObject
+       with NetworkType
   @scala.inline
   def NOTREACHABLE: NOTREACHABLE = "NOTREACHABLE".asInstanceOf[NOTREACHABLE]
   
@@ -156,12 +171,16 @@ object aliAppStrings {
   def TINYAPP: TINYAPP = "TINYAPP".asInstanceOf[TINYAPP]
   
   @js.native
-  sealed trait UNKNOWN extends NetworkType
+  sealed trait UNKNOWN
+    extends StObject
+       with NetworkType
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
-  sealed trait WIFI extends NetworkType
+  sealed trait WIFI
+    extends StObject
+       with NetworkType
   @scala.inline
   def WIFI: WIFI = "WIFI".asInstanceOf[WIFI]
   
@@ -171,7 +190,9 @@ object aliAppStrings {
   def WINDOWS: WINDOWS = "WINDOWS".asInstanceOf[WINDOWS]
   
   @js.native
-  sealed trait WWAN extends NetworkType
+  sealed trait WWAN
+    extends StObject
+       with NetworkType
   @scala.inline
   def WWAN: WWAN = "WWAN".asInstanceOf[WWAN]
   
@@ -181,7 +202,9 @@ object aliAppStrings {
   def Y: Y = "Y".asInstanceOf[Y]
   
   @js.native
-  sealed trait album extends ImageSourceType
+  sealed trait album
+    extends StObject
+       with ImageSourceType
   @scala.inline
   def album: album = "album".asInstanceOf[album]
   
@@ -207,21 +230,24 @@ object aliAppStrings {
   
   @js.native
   sealed trait animationend
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
   @scala.inline
   def animationend: animationend = "animationend".asInstanceOf[animationend]
   
   @js.native
   sealed trait animationiteration
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
   @scala.inline
   def animationiteration: animationiteration = "animationiteration".asInstanceOf[animationiteration]
   
   @js.native
   sealed trait animationstart
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
   @scala.inline
   def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
@@ -232,7 +258,9 @@ object aliAppStrings {
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait bar extends scanType
+  sealed trait bar
+    extends StObject
+       with scanType
   @scala.inline
   def bar: bar = "bar".asInstanceOf[bar]
   
@@ -257,7 +285,9 @@ object aliAppStrings {
   def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
-  sealed trait camera_ extends ImageSourceType
+  sealed trait camera_
+    extends StObject
+       with ImageSourceType
   @scala.inline
   def camera_ : camera_ = "camera".asInstanceOf[camera_]
   
@@ -282,22 +312,30 @@ object aliAppStrings {
   def develop: develop = "develop".asInstanceOf[develop]
   
   @js.native
-  sealed trait ease extends TimingFunction
+  sealed trait ease
+    extends StObject
+       with TimingFunction
   @scala.inline
   def ease: ease = "ease".asInstanceOf[ease]
   
   @js.native
-  sealed trait `ease-in` extends TimingFunction
+  sealed trait `ease-in`
+    extends StObject
+       with TimingFunction
   @scala.inline
   def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
   
   @js.native
-  sealed trait `ease-in-out` extends TimingFunction
+  sealed trait `ease-in-out`
+    extends StObject
+       with TimingFunction
   @scala.inline
   def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
   
   @js.native
-  sealed trait `ease-out` extends TimingFunction
+  sealed trait `ease-out`
+    extends StObject
+       with TimingFunction
   @scala.inline
   def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
   
@@ -317,7 +355,9 @@ object aliAppStrings {
   def fail: fail = "fail".asInstanceOf[fail]
   
   @js.native
-  sealed trait form extends EventType
+  sealed trait form
+    extends StObject
+       with EventType
   @scala.inline
   def form: form = "form".asInstanceOf[form]
   
@@ -342,7 +382,9 @@ object aliAppStrings {
   def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait input extends EventType
+  sealed trait input
+    extends StObject
+       with EventType
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   
@@ -352,7 +394,9 @@ object aliAppStrings {
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait keyword extends _TextRiskIdentificationType
+  sealed trait keyword
+    extends StObject
+       with _TextRiskIdentificationType
   @scala.inline
   def keyword: keyword = "keyword".asInstanceOf[keyword]
   
@@ -367,12 +411,16 @@ object aliAppStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait linear extends TimingFunction
+  sealed trait linear
+    extends StObject
+       with TimingFunction
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
-  sealed trait longpress extends EventType
+  sealed trait longpress
+    extends StObject
+       with EventType
   @scala.inline
   def longpress: longpress = "longpress".asInstanceOf[longpress]
   
@@ -432,7 +480,9 @@ object aliAppStrings {
   def point: point = "point".asInstanceOf[point]
   
   @js.native
-  sealed trait qr extends scanType
+  sealed trait qr
+    extends StObject
+       with scanType
   @scala.inline
   def qr: qr = "qr".asInstanceOf[qr]
   
@@ -452,7 +502,9 @@ object aliAppStrings {
   def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait scroll extends EventType
+  sealed trait scroll
+    extends StObject
+       with EventType
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   
@@ -477,17 +529,23 @@ object aliAppStrings {
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait `step-end` extends TimingFunction
+  sealed trait `step-end`
+    extends StObject
+       with TimingFunction
   @scala.inline
   def `step-end`: `step-end` = "step-end".asInstanceOf[`step-end`]
   
   @js.native
-  sealed trait `step-start` extends TimingFunction
+  sealed trait `step-start`
+    extends StObject
+       with TimingFunction
   @scala.inline
   def `step-start`: `step-start` = "step-start".asInstanceOf[`step-start`]
   
   @js.native
-  sealed trait submit extends EventType
+  sealed trait submit
+    extends StObject
+       with EventType
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
   
@@ -498,7 +556,8 @@ object aliAppStrings {
   
   @js.native
   sealed trait tap
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def tap: tap = "tap".asInstanceOf[tap]
@@ -515,42 +574,48 @@ object aliAppStrings {
   
   @js.native
   sealed trait touchcancel
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
   
   @js.native
   sealed trait touchend
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def touchend: touchend = "touchend".asInstanceOf[touchend]
   
   @js.native
   sealed trait touchforcechange
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def touchforcechange: touchforcechange = "touchforcechange".asInstanceOf[touchforcechange]
   
   @js.native
   sealed trait touchmove
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
   
   @js.native
   sealed trait touchstart
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   
   @js.native
   sealed trait transitionend
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
   @scala.inline
   def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]

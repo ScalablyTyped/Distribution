@@ -16,7 +16,6 @@ import typings.intlRelativeformat.typesMod.SUPPORTED_FIELD
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,12 +23,14 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("intl-relativeformat", JSImport.Default)
   @js.native
-  class default () extends IntlRelativeFormat {
+  class default ()
+    extends StObject
+       with IntlRelativeFormat {
     def this(locales: String) = this()
     def this(locales: js.Array[String]) = this()
-    def this(locales: js.UndefOr[scala.Nothing], opts: IntlRelativeFormatOptions) = this()
     def this(locales: String, opts: IntlRelativeFormatOptions) = this()
     def this(locales: js.Array[String], opts: IntlRelativeFormatOptions) = this()
+    def this(locales: Unit, opts: IntlRelativeFormatOptions) = this()
   }
   @JSImport("intl-relativeformat", JSImport.Default)
   @js.native
@@ -46,9 +47,9 @@ object mod extends Shortcut {
         extends typings.formatjsIntlRelativetimeformat.mod.default {
         def this(locales: String) = this()
         def this(locales: js.Array[String]) = this()
-        def this(locales: js.UndefOr[scala.Nothing], options: IntlRelativeTimeFormatOptions) = this()
         def this(locales: String, options: IntlRelativeTimeFormatOptions) = this()
         def this(locales: js.Array[String], options: IntlRelativeTimeFormatOptions) = this()
+        def this(locales: Unit, options: IntlRelativeTimeFormatOptions) = this()
       }
       /* static members */
       object RelativeTimeFormat {
@@ -57,9 +58,8 @@ object mod extends Shortcut {
         @js.native
         val ^ : js.Any = js.native
         
-        @JSGlobal("Intl.RelativeTimeFormat.__addLocaleData")
-        @js.native
-        def __addLocaleData(data: RelativeTimeLocaleData*): Unit = js.native
+        @scala.inline
+        def __addLocaleData(data: RelativeTimeLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
         @JSGlobal("Intl.RelativeTimeFormat.__defaultLocale")
         @js.native
@@ -97,38 +97,35 @@ object mod extends Shortcut {
         @scala.inline
         def relevantExtensionKeys_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relevantExtensionKeys")(x.asInstanceOf[js.Any])
         
-        @JSGlobal("Intl.RelativeTimeFormat.supportedLocalesOf")
-        @js.native
-        def supportedLocalesOf(locales: String): js.Array[String] = js.native
-        @JSGlobal("Intl.RelativeTimeFormat.supportedLocalesOf")
-        @js.native
-        def supportedLocalesOf(locales: String, options: PickIntlRelativeTimeForma): js.Array[String] = js.native
-        @JSGlobal("Intl.RelativeTimeFormat.supportedLocalesOf")
-        @js.native
-        def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
-        @JSGlobal("Intl.RelativeTimeFormat.supportedLocalesOf")
-        @js.native
-        def supportedLocalesOf(locales: js.Array[String], options: PickIntlRelativeTimeForma): js.Array[String] = js.native
+        @scala.inline
+        def supportedLocalesOf(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+        @scala.inline
+        def supportedLocalesOf(locales: String, options: PickIntlRelativeTimeForma): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+        @scala.inline
+        def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+        @scala.inline
+        def supportedLocalesOf(locales: js.Array[String], options: PickIntlRelativeTimeForma): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
       }
     }
   }
   
   @js.native
   trait IntlRelativeFormat
-    extends Instantiable0[IntlRelativeFormat]
+    extends StObject
+       with Instantiable0[IntlRelativeFormat]
        with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), IntlRelativeFormat]
        with Instantiable2[
-          js.UndefOr[(/* locales */ js.Array[String]) | (/* locales */ String)], 
+          (/* locales */ js.Array[String]) | (/* locales */ String) | (/* locales */ Unit), 
           /* opts */ IntlRelativeFormatOptions, 
           IntlRelativeFormat
         ] {
     
     def apply(): IntlRelativeFormat = js.native
-    def apply(locales: js.UndefOr[scala.Nothing], opts: IntlRelativeFormatOptions): IntlRelativeFormat = js.native
     def apply(locales: String): IntlRelativeFormat = js.native
     def apply(locales: String, opts: IntlRelativeFormatOptions): IntlRelativeFormat = js.native
     def apply(locales: js.Array[String]): IntlRelativeFormat = js.native
     def apply(locales: js.Array[String], opts: IntlRelativeFormatOptions): IntlRelativeFormat = js.native
+    def apply(locales: Unit, opts: IntlRelativeFormatOptions): IntlRelativeFormat = js.native
     
     def __addLocaleData(data: LocaleData*): Unit = js.native
     
@@ -151,12 +148,11 @@ object mod extends Shortcut {
     var thresholds: Record[String, Double] = js.native
   }
   
-  @js.native
   trait IntlRelativeFormatOptions extends StObject {
     
-    var style: js.UndefOr[STYLE] = js.native
+    var style: js.UndefOr[STYLE] = js.undefined
     
-    var units: js.UndefOr[SUPPORTED_FIELD] = js.native
+    var units: js.UndefOr[SUPPORTED_FIELD] = js.undefined
   }
   object IntlRelativeFormatOptions {
     

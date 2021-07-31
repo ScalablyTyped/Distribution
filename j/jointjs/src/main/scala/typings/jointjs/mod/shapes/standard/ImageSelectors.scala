@@ -5,17 +5,15 @@ import typings.jointjs.mod.attributes.SVGImageAttributes
 import typings.jointjs.mod.attributes.SVGTextAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageSelectors extends StObject {
   
-  var image: js.UndefOr[SVGImageAttributes] = js.native
+  var image: js.UndefOr[SVGImageAttributes] = js.undefined
   
-  var label: js.UndefOr[SVGTextAttributes] = js.native
+  var label: js.UndefOr[SVGTextAttributes] = js.undefined
   
-  var root: js.UndefOr[SVGAttributes] = js.native
+  var root: js.UndefOr[SVGAttributes] = js.undefined
 }
 object ImageSelectors {
   

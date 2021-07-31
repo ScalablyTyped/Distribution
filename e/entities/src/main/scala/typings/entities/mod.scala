@@ -2,81 +2,65 @@ package typings.entities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("entities", "decode")
+  @JSImport("entities", JSImport.Namespace)
   @js.native
-  def decode(data: String): String = js.native
-  @JSImport("entities", "decode")
-  @js.native
-  def decode(data: String, level: Double): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("entities", "decodeHTML")
-  @js.native
-  def decodeHTML(str: String): String = js.native
+  @scala.inline
+  def decode(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def decode(data: String, level: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("entities", "decodeHTML4")
-  @js.native
-  def decodeHTML4(str: String): String = js.native
+  @scala.inline
+  def decodeHTML(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("entities", "decodeHTML4Strict")
-  @js.native
-  def decodeHTML4Strict(str: String): String = js.native
+  @scala.inline
+  def decodeHTML4(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML4")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("entities", "decodeHTML5")
-  @js.native
-  def decodeHTML5(str: String): String = js.native
+  @scala.inline
+  def decodeHTML4Strict(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML4Strict")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("entities", "decodeHTML5Strict")
-  @js.native
-  def decodeHTML5Strict(str: String): String = js.native
+  @scala.inline
+  def decodeHTML5(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML5")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("entities", "decodeHTMLStrict")
-  @js.native
-  def decodeHTMLStrict(str: String): String = js.native
+  @scala.inline
+  def decodeHTML5Strict(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML5Strict")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("entities", "decodeStrict")
-  @js.native
-  def decodeStrict(data: String): String = js.native
-  @JSImport("entities", "decodeStrict")
-  @js.native
-  def decodeStrict(data: String, level: Double): String = js.native
+  @scala.inline
+  def decodeHTMLStrict(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTMLStrict")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("entities", "decodeXML")
-  @js.native
-  def decodeXML(str: String): String = js.native
+  @scala.inline
+  def decodeStrict(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeStrict")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def decodeStrict(data: String, level: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStrict")(data.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("entities", "decodeXMLStrict")
-  @js.native
-  def decodeXMLStrict(str: String): String = js.native
+  @scala.inline
+  def decodeXML(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeXML")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("entities", "encode")
-  @js.native
-  def encode(data: String): String = js.native
-  @JSImport("entities", "encode")
-  @js.native
-  def encode(data: String, level: Double): String = js.native
+  @scala.inline
+  def decodeXMLStrict(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeXMLStrict")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("entities", "encodeHTML")
-  @js.native
-  def encodeHTML(data: String): String = js.native
+  @scala.inline
+  def encode(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(data: String, level: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("entities", "encodeHTML4")
-  @js.native
-  def encodeHTML4(data: String): String = js.native
+  @scala.inline
+  def encodeHTML(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeHTML")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("entities", "encodeHTML5")
-  @js.native
-  def encodeHTML5(data: String): String = js.native
+  @scala.inline
+  def encodeHTML4(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeHTML4")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("entities", "encodeXML")
-  @js.native
-  def encodeXML(data: String): String = js.native
+  @scala.inline
+  def encodeHTML5(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeHTML5")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("entities", "escape")
-  @js.native
-  def escape(data: String): String = js.native
+  @scala.inline
+  def encodeXML(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeXML")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def escape(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 }

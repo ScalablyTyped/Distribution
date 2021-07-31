@@ -2,53 +2,51 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAssetResponse extends StObject {
   
   /**
     * The ARN of the Asset.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The time the Asset was initially submitted for Ingest.
     */
-  var CreatedAt: js.UndefOr[string] = js.native
+  var CreatedAt: js.UndefOr[string] = js.undefined
   
   /**
     * The list of egress endpoints available for the Asset.
     */
-  var EgressEndpoints: js.UndefOr[listOfEgressEndpoint] = js.native
+  var EgressEndpoints: js.UndefOr[listOfEgressEndpoint] = js.undefined
   
   /**
     * The unique identifier for the Asset.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the PackagingGroup for the Asset.
     */
-  var PackagingGroupId: js.UndefOr[string] = js.native
+  var PackagingGroupId: js.UndefOr[string] = js.undefined
   
   /**
     * The resource ID to include in SPEKE key requests.
     */
-  var ResourceId: js.UndefOr[string] = js.native
+  var ResourceId: js.UndefOr[string] = js.undefined
   
   /**
     * ARN of the source object in S3.
     */
-  var SourceArn: js.UndefOr[string] = js.native
+  var SourceArn: js.UndefOr[string] = js.undefined
   
   /**
     * The IAM role_arn used to access the source S3 bucket.
     */
-  var SourceRoleArn: js.UndefOr[string] = js.native
+  var SourceRoleArn: js.UndefOr[string] = js.undefined
   
-  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.undefined
 }
 object DescribeAssetResponse {
   

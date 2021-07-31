@@ -6,7 +6,6 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -37,16 +36,15 @@ object mod extends Shortcut {
       def text(options: StripOptions): ReadWriteStream = js.native
     }
     
-    @js.native
     trait StripOptions extends StObject {
       
-      var ignore: js.UndefOr[RegExp | js.Array[RegExp]] = js.native
+      var ignore: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
       
-      var safe: js.UndefOr[Boolean] = js.native
+      var safe: js.UndefOr[Boolean] = js.undefined
       
-      var space: js.UndefOr[Boolean] = js.native
+      var space: js.UndefOr[Boolean] = js.undefined
       
-      var trim: js.UndefOr[Boolean] = js.native
+      var trim: js.UndefOr[Boolean] = js.undefined
     }
     object StripOptions {
       

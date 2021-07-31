@@ -71,7 +71,6 @@ import typings.vexdb.vexdbStrings.wins
 import typings.vexdb.vexdbStrings.wp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestObjectsMod {
@@ -83,19 +82,25 @@ object requestObjectsMod {
   object SkillsType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SkillsType with Double] = js.native
+    def apply(value: Double): js.UndefOr[SkillsType & Double] = js.native
     
     @js.native
-    sealed trait Driver extends SkillsType
-    /* 0 */ val Driver: typings.vexdb.requestObjectsMod.SkillsType.Driver with Double = js.native
+    sealed trait Driver
+      extends StObject
+         with SkillsType
+    /* 0 */ val Driver: typings.vexdb.requestObjectsMod.SkillsType.Driver & Double = js.native
     
     @js.native
-    sealed trait Programming extends SkillsType
-    /* 1 */ val Programming: typings.vexdb.requestObjectsMod.SkillsType.Programming with Double = js.native
+    sealed trait Programming
+      extends StObject
+         with SkillsType
+    /* 1 */ val Programming: typings.vexdb.requestObjectsMod.SkillsType.Programming & Double = js.native
     
     @js.native
-    sealed trait Robot extends SkillsType
-    /* 2 */ val Robot: typings.vexdb.requestObjectsMod.SkillsType.Robot with Double = js.native
+    sealed trait Robot
+      extends StObject
+         with SkillsType
+    /* 2 */ val Robot: typings.vexdb.requestObjectsMod.SkillsType.Robot & Double = js.native
   }
   
   @JSImport("vexdb/out/constants/RequestObjects", "endpoints")
@@ -152,22 +157,23 @@ object requestObjectsMod {
     def teams_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("teams")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait AwardsRequestObject extends RequestObject {
+  trait AwardsRequestObject
+    extends StObject
+       with RequestObject {
     
-    var limit_number: js.UndefOr[Double] = js.native
+    var limit_number: js.UndefOr[Double] = js.undefined
     
-    var limit_start: js.UndefOr[Double] = js.native
+    var limit_start: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.name, String]] = js.native
+    var name: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.name, String]] = js.undefined
     
-    var order: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.order, Double]] = js.native
+    var order: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.order, Double]] = js.undefined
     
-    var season: js.UndefOr[Seasons] = js.native
+    var season: js.UndefOr[Seasons] = js.undefined
     
-    var sku: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.sku, String]] = js.native
+    var sku: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.sku, String]] = js.undefined
     
-    var team: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.team, String]] = js.native
+    var team: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.team, String]] = js.undefined
   }
   object AwardsRequestObject {
     
@@ -278,52 +284,53 @@ object requestObjectsMod {
     def teams: typings.vexdb.vexdbStrings.teams = "teams".asInstanceOf[typings.vexdb.vexdbStrings.teams]
   }
   
-  @js.native
-  trait EventsRequestObject extends RequestObject {
+  trait EventsRequestObject
+    extends StObject
+       with RequestObject {
     
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
-    var end: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.end, String]] = js.native
+    var end: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.end, String]] = js.undefined
     
-    var key: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.key, String]] = js.native
+    var key: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.key, String]] = js.undefined
     
-    var limit_number: js.UndefOr[Double] = js.native
+    var limit_number: js.UndefOr[Double] = js.undefined
     
-    var limit_start: js.UndefOr[Double] = js.native
+    var limit_start: js.UndefOr[Double] = js.undefined
     
-    var loc_address1: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_address1, String]] = js.native
+    var loc_address1: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_address1, String]] = js.undefined
     
-    var loc_address2: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_address2, String]] = js.native
+    var loc_address2: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_address2, String]] = js.undefined
     
-    var loc_city: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_city, String]] = js.native
+    var loc_city: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_city, String]] = js.undefined
     
-    var loc_country: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_country, String]] = js.native
+    var loc_country: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_country, String]] = js.undefined
     
-    var loc_postcode: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_postcode, String]] = js.native
+    var loc_postcode: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_postcode, String]] = js.undefined
     
-    var loc_region: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_region, String]] = js.native
+    var loc_region: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_region, String]] = js.undefined
     
-    var loc_venue: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_venue, String]] = js.native
+    var loc_venue: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.loc_venue, String]] = js.undefined
     
-    var name: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.name, String]] = js.native
+    var name: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.name, String]] = js.undefined
     
-    var program: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.program, Programs]] = js.native
+    var program: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.program, Programs]] = js.undefined
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var season: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.season, Seasons]] = js.native
+    var season: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.season, Seasons]] = js.undefined
     
-    var sku: js.UndefOr[String] = js.native
+    var sku: js.UndefOr[String] = js.undefined
     
-    var start: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.start, String]] = js.native
+    var start: js.UndefOr[Filter[EventsResponseObject, typings.vexdb.vexdbStrings.start, String]] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var team: js.UndefOr[String] = js.native
+    var team: js.UndefOr[String] = js.undefined
   }
   object EventsRequestObject {
     
@@ -559,52 +566,53 @@ object requestObjectsMod {
     def `Middle School`: typings.vexdb.vexdbStrings.`Middle School` = ("Middle School").asInstanceOf[typings.vexdb.vexdbStrings.`Middle School`]
   }
   
-  @js.native
-  trait MatchesRequestObject extends RequestObject {
+  trait MatchesRequestObject
+    extends StObject
+       with RequestObject {
     
-    var blue1: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.blue1, String]] = js.native
+    var blue1: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.blue1, String]] = js.undefined
     
-    var blue2: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.blue2, String]] = js.native
+    var blue2: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.blue2, String]] = js.undefined
     
-    var blue3: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.blue3, String]] = js.native
+    var blue3: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.blue3, String]] = js.undefined
     
-    var bluescore: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.bluescore, Double]] = js.native
+    var bluescore: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.bluescore, Double]] = js.undefined
     
-    var bluesit: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.bluesit, String]] = js.native
+    var bluesit: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.bluesit, String]] = js.undefined
     
-    var division: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.division, String]] = js.native
+    var division: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.division, String]] = js.undefined
     
-    var field: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.field, String]] = js.native
+    var field: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.field, String]] = js.undefined
     
-    var instance: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.instance, Double]] = js.native
+    var instance: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.instance, Double]] = js.undefined
     
-    var limit_number: js.UndefOr[Double] = js.native
+    var limit_number: js.UndefOr[Double] = js.undefined
     
-    var limit_start: js.UndefOr[Double] = js.native
+    var limit_start: js.UndefOr[Double] = js.undefined
     
-    var matchnum: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.matchnum, Double]] = js.native
+    var matchnum: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.matchnum, Double]] = js.undefined
     
-    var red1: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.red1, String]] = js.native
+    var red1: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.red1, String]] = js.undefined
     
-    var red2: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.red2, String]] = js.native
+    var red2: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.red2, String]] = js.undefined
     
-    var red3: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.red3, String]] = js.native
+    var red3: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.red3, String]] = js.undefined
     
-    var redscore: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.redscore, Double]] = js.native
+    var redscore: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.redscore, Double]] = js.undefined
     
-    var redsit: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.redsit, String]] = js.native
+    var redsit: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.redsit, String]] = js.undefined
     
-    var round: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `16`] = js.native
+    var round: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `16`] = js.undefined
     
-    var scheduled: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.scheduled, String]] = js.native
+    var scheduled: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.scheduled, String]] = js.undefined
     
-    var scored: js.UndefOr[`0` | `1`] = js.native
+    var scored: js.UndefOr[`0` | `1`] = js.undefined
     
-    var season: js.UndefOr[Seasons] = js.native
+    var season: js.UndefOr[Seasons] = js.undefined
     
-    var sku: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.sku, String]] = js.native
+    var sku: js.UndefOr[Filter[MatchesResponseObject, typings.vexdb.vexdbStrings.sku, String]] = js.undefined
     
-    var team: js.UndefOr[String] = js.native
+    var team: js.UndefOr[String] = js.undefined
   }
   object MatchesRequestObject {
     
@@ -845,44 +853,45 @@ object requestObjectsMod {
     def VRC: typings.vexdb.vexdbStrings.VRC = "VRC".asInstanceOf[typings.vexdb.vexdbStrings.VRC]
   }
   
-  @js.native
-  trait RankingsRequestObject extends RequestObject {
+  trait RankingsRequestObject
+    extends StObject
+       with RequestObject {
     
-    var ap: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.ap, Double]] = js.native
+    var ap: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.ap, Double]] = js.undefined
     
-    var ccwm: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.ccwm, Double]] = js.native
+    var ccwm: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.ccwm, Double]] = js.undefined
     
-    var division: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.division, String]] = js.native
+    var division: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.division, String]] = js.undefined
     
-    var dpr: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.dpr, Double]] = js.native
+    var dpr: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.dpr, Double]] = js.undefined
     
-    var limit_number: js.UndefOr[Double] = js.native
+    var limit_number: js.UndefOr[Double] = js.undefined
     
-    var limit_start: js.UndefOr[Double] = js.native
+    var limit_start: js.UndefOr[Double] = js.undefined
     
-    var losses: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.losses, Double]] = js.native
+    var losses: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.losses, Double]] = js.undefined
     
-    var max_score: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.max_score, Double]] = js.native
+    var max_score: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.max_score, Double]] = js.undefined
     
-    var opr: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.opr, Double]] = js.native
+    var opr: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.opr, Double]] = js.undefined
     
-    var rank: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.rank, Double]] = js.native
+    var rank: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.rank, Double]] = js.undefined
     
-    var season: js.UndefOr[Seasons] = js.native
+    var season: js.UndefOr[Seasons] = js.undefined
     
-    var sku: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.sku, String]] = js.native
+    var sku: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.sku, String]] = js.undefined
     
-    var sp: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.sp, Double]] = js.native
+    var sp: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.sp, Double]] = js.undefined
     
-    var team: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.team, String]] = js.native
+    var team: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.team, String]] = js.undefined
     
-    var ties: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.ties, Double]] = js.native
+    var ties: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.ties, Double]] = js.undefined
     
-    var trsp: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.trsp, Double]] = js.native
+    var trsp: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.trsp, Double]] = js.undefined
     
-    var wins: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.wins, Double]] = js.native
+    var wins: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.wins, Double]] = js.undefined
     
-    var wp: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.wp, Double]] = js.native
+    var wp: js.UndefOr[Filter[RankingsResponseObject, typings.vexdb.vexdbStrings.wp, Double]] = js.undefined
   }
   object RankingsRequestObject {
     
@@ -1135,26 +1144,27 @@ object requestObjectsMod {
     }
   }
   
-  @js.native
-  trait SeasonRankingsRequestObject extends RequestObject {
+  trait SeasonRankingsRequestObject
+    extends StObject
+       with RequestObject {
     
-    var limit_number: js.UndefOr[Double] = js.native
+    var limit_number: js.UndefOr[Double] = js.undefined
     
-    var limit_start: js.UndefOr[Double] = js.native
+    var limit_start: js.UndefOr[Double] = js.undefined
     
     var program: js.UndefOr[
         Filter[SeasonRankingsResponseObject, typings.vexdb.vexdbStrings.program, Programs]
-      ] = js.native
+      ] = js.undefined
     
-    var season: js.UndefOr[Filter[SeasonRankingsResponseObject, typings.vexdb.vexdbStrings.season, Seasons]] = js.native
+    var season: js.UndefOr[Filter[SeasonRankingsResponseObject, typings.vexdb.vexdbStrings.season, Seasons]] = js.undefined
     
-    var team: js.UndefOr[Filter[SeasonRankingsResponseObject, typings.vexdb.vexdbStrings.team, String]] = js.native
+    var team: js.UndefOr[Filter[SeasonRankingsResponseObject, typings.vexdb.vexdbStrings.team, String]] = js.undefined
     
-    var vrating: js.UndefOr[Filter[SeasonRankingsResponseObject, typings.vexdb.vexdbStrings.vrating, Double]] = js.native
+    var vrating: js.UndefOr[Filter[SeasonRankingsResponseObject, typings.vexdb.vexdbStrings.vrating, Double]] = js.undefined
     
     var vrating_rank: js.UndefOr[
         Filter[SeasonRankingsResponseObject, typings.vexdb.vexdbStrings.vrating_rank, Double]
-      ] = js.native
+      ] = js.undefined
   }
   object SeasonRankingsRequestObject {
     
@@ -1302,30 +1312,31 @@ object requestObjectsMod {
     def current: typings.vexdb.vexdbStrings.current = "current".asInstanceOf[typings.vexdb.vexdbStrings.current]
   }
   
-  @js.native
-  trait SkillsRequestObject extends RequestObject {
+  trait SkillsRequestObject
+    extends StObject
+       with RequestObject {
     
-    var attempts: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.attempts, Double]] = js.native
+    var attempts: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.attempts, Double]] = js.undefined
     
-    var limit_number: js.UndefOr[Double] = js.native
+    var limit_number: js.UndefOr[Double] = js.undefined
     
-    var limit_start: js.UndefOr[Double] = js.native
+    var limit_start: js.UndefOr[Double] = js.undefined
     
-    var program: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.program, Programs]] = js.native
+    var program: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.program, Programs]] = js.undefined
     
-    var rank: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.rank, Double]] = js.native
+    var rank: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.rank, Double]] = js.undefined
     
-    var score: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.score, Double]] = js.native
+    var score: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.score, Double]] = js.undefined
     
-    var season: js.UndefOr[Seasons] = js.native
+    var season: js.UndefOr[Seasons] = js.undefined
     
-    var season_rank: js.UndefOr[Double] = js.native
+    var season_rank: js.UndefOr[Double] = js.undefined
     
-    var sku: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.sku, String]] = js.native
+    var sku: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.sku, String]] = js.undefined
     
-    var team: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.team, String]] = js.native
+    var team: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.team, String]] = js.undefined
     
-    var `type`: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.`type`, SkillsType]] = js.native
+    var `type`: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.`type`, SkillsType]] = js.undefined
   }
   object SkillsRequestObject {
     
@@ -1441,36 +1452,37 @@ object requestObjectsMod {
     }
   }
   
-  @js.native
-  trait TeamsRequestObject extends RequestObject {
+  trait TeamsRequestObject
+    extends StObject
+       with RequestObject {
     
-    var city: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.city, String]] = js.native
+    var city: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.city, String]] = js.undefined
     
-    var country: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.country, String]] = js.native
+    var country: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.country, String]] = js.undefined
     
-    var grade: js.UndefOr[Filter[TeamsResponseObject, country, Grades]] = js.native
+    var grade: js.UndefOr[Filter[TeamsResponseObject, country, Grades]] = js.undefined
     
-    var is_registered: js.UndefOr[`0` | `1`] = js.native
+    var is_registered: js.UndefOr[`0` | `1`] = js.undefined
     
-    var limit_number: js.UndefOr[Double] = js.native
+    var limit_number: js.UndefOr[Double] = js.undefined
     
-    var limit_start: js.UndefOr[Double] = js.native
+    var limit_start: js.UndefOr[Double] = js.undefined
     
-    var number: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.number, String]] = js.native
+    var number: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.number, String]] = js.undefined
     
-    var organisation: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.organisation, String]] = js.native
+    var organisation: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.organisation, String]] = js.undefined
     
-    var program: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.program, Programs]] = js.native
+    var program: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.program, Programs]] = js.undefined
     
-    var region: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.region, String]] = js.native
+    var region: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.region, String]] = js.undefined
     
-    var robot_name: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.robot_name, String]] = js.native
+    var robot_name: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.robot_name, String]] = js.undefined
     
-    var sku: js.UndefOr[String] = js.native
+    var sku: js.UndefOr[String] = js.undefined
     
-    var team: js.UndefOr[String] = js.native
+    var team: js.UndefOr[String] = js.undefined
     
-    var team_name: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.team_name, String]] = js.native
+    var team_name: js.UndefOr[Filter[TeamsResponseObject, typings.vexdb.vexdbStrings.team_name, String]] = js.undefined
   }
   object TeamsRequestObject {
     

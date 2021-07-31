@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashboardValidationMessage extends StObject {
   
   /**
     * The data path related to the message.
     */
-  var DataPath: js.UndefOr[typings.awsSdk.cloudwatchMod.DataPath] = js.native
+  var DataPath: js.UndefOr[typings.awsSdk.cloudwatchMod.DataPath] = js.undefined
   
   /**
     * A message describing the error or warning.
     */
-  var Message: js.UndefOr[typings.awsSdk.cloudwatchMod.Message] = js.native
+  var Message: js.UndefOr[typings.awsSdk.cloudwatchMod.Message] = js.undefined
 }
 object DashboardValidationMessage {
   

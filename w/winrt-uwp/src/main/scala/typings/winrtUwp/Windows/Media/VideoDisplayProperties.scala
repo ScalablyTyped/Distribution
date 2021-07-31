@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Media
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties for video information that is displayed by SystemMediaTransportControlsDisplayUpdater class. */
-@js.native
 trait VideoDisplayProperties extends StObject {
   
   /** Gets a modifiable list of strings representing genre names. */
-  var genres: IVector[String] = js.native
+  var genres: IVector[String]
   
   /** Gets or sets the subtitle of the video. */
-  var subtitle: String = js.native
+  var subtitle: String
   
   /** Gets or sets the title of the video. */
-  var title: String = js.native
+  var title: String
 }
 object VideoDisplayProperties {
   

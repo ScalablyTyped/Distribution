@@ -3,17 +3,15 @@ package typings.winrt.Windows.Devices.Sms
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISmsDeviceStatics extends StObject {
   
-  def fromIdAsync(deviceInstanceId: String): IAsyncOperation[SmsDevice] = js.native
+  def fromIdAsync(deviceInstanceId: String): IAsyncOperation[SmsDevice]
   
-  def getDefaultAsync(): IAsyncOperation[SmsDevice] = js.native
+  def getDefaultAsync(): IAsyncOperation[SmsDevice]
   
-  def getDeviceSelector(): String = js.native
+  def getDeviceSelector(): String
 }
 object ISmsDeviceStatics {
   

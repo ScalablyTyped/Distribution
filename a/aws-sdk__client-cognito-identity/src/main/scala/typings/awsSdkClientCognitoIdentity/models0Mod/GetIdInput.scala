@@ -3,21 +3,19 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIdInput extends StObject {
   
   /**
     * <p>A standard AWS account ID (9+ digits).</p>
     */
-  var AccountId: js.UndefOr[String] = js.native
+  var AccountId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>An identity pool ID in the format REGION:GUID.</p>
     */
-  var IdentityPoolId: js.UndefOr[String] = js.native
+  var IdentityPoolId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>A set of optional name-value pairs that map provider names to provider tokens. The
@@ -51,7 +49,7 @@ trait GetIdInput extends StObject {
     *             </li>
     *          </ul>
     */
-  var Logins: js.UndefOr[StringDictionary[String]] = js.native
+  var Logins: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object GetIdInput {
   
@@ -61,9 +59,12 @@ object GetIdInput {
     __obj.asInstanceOf[GetIdInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetIdInput.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetIdInput")
   @js.native
-  def filterSensitiveLog(obj: GetIdInput): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: GetIdInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class GetIdInputMutableBuilder[Self <: GetIdInput] (val x: Self) extends AnyVal {

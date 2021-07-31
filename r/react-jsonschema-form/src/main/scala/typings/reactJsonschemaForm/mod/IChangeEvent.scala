@@ -3,27 +3,25 @@ package typings.reactJsonschemaForm.mod
 import typings.jsonSchema.mod.JSONSchema6
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IChangeEvent[T] extends StObject {
   
-  var edit: Boolean = js.native
+  var edit: Boolean
   
-  var errorSchema: FormValidation = js.native
+  var errorSchema: FormValidation
   
-  var errors: js.Array[AjvError] = js.native
+  var errors: js.Array[AjvError]
   
-  var formData: T = js.native
+  var formData: T
   
-  var idSchema: IdSchema[_] = js.native
+  var idSchema: IdSchema[js.Any]
   
-  var schema: JSONSchema6 = js.native
+  var schema: JSONSchema6
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var uiSchema: UiSchema = js.native
+  var uiSchema: UiSchema
 }
 object IChangeEvent {
   
@@ -33,7 +31,7 @@ object IChangeEvent {
     errorSchema: FormValidation,
     errors: js.Array[AjvError],
     formData: T,
-    idSchema: IdSchema[_],
+    idSchema: IdSchema[js.Any],
     schema: JSONSchema6,
     uiSchema: UiSchema
   ): IChangeEvent[T] = {
@@ -42,7 +40,7 @@ object IChangeEvent {
   }
   
   @scala.inline
-  implicit class IChangeEventMutableBuilder[Self <: IChangeEvent[_], T] (val x: Self with IChangeEvent[T]) extends AnyVal {
+  implicit class IChangeEventMutableBuilder[Self <: IChangeEvent[?], T] (val x: Self & IChangeEvent[T]) extends AnyVal {
     
     @scala.inline
     def setEdit(value: Boolean): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
@@ -60,7 +58,7 @@ object IChangeEvent {
     def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdSchema(value: IdSchema[_]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
+    def setIdSchema(value: IdSchema[js.Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])

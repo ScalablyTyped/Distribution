@@ -2,20 +2,18 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDatasetRequest extends StObject {
   
-  var FormatOptions: js.UndefOr[typings.awsSdk.databrewMod.FormatOptions] = js.native
+  var FormatOptions: js.UndefOr[typings.awsSdk.databrewMod.FormatOptions] = js.undefined
   
-  var Input: typings.awsSdk.databrewMod.Input = js.native
+  var Input: typings.awsSdk.databrewMod.Input
   
   /**
     * The name of the dataset to be updated.
     */
-  var Name: DatasetName = js.native
+  var Name: DatasetName
 }
 object UpdateDatasetRequest {
   

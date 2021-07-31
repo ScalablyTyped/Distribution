@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecorderManagerOnErrorCallbackResult extends StObject {
   
   /** 错误信息 */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object RecorderManagerOnErrorCallbackResult {
   

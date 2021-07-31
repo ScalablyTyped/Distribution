@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMonitoringScheduleRequest extends StObject {
   
   /**
     * The configuration object that specifies the monitoring schedule and defines the monitoring job.
     */
-  var MonitoringScheduleConfig: typings.awsSdk.sagemakerMod.MonitoringScheduleConfig = js.native
+  var MonitoringScheduleConfig: typings.awsSdk.sagemakerMod.MonitoringScheduleConfig
   
   /**
     * The name of the monitoring schedule. The name must be unique within an AWS Region within an AWS account.
     */
-  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName = js.native
+  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName
 }
 object UpdateMonitoringScheduleRequest {
   

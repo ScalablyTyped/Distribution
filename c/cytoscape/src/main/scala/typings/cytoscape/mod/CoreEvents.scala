@@ -3,7 +3,6 @@ package typings.cytoscape.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoreEvents extends StObject {
   
   def addListener(eventsMap: StringDictionary[EventHandler]): this.type = js.native
-  def addListener(eventsMap: StringDictionary[EventHandler], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
+  def addListener(eventsMap: StringDictionary[EventHandler], selector: Unit, data: js.Any): this.type = js.native
   def addListener(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def addListener(eventsMap: StringDictionary[EventHandler], selector: Selector, data: js.Any): this.type = js.native
   def addListener(events: EventNames, handler: EventHandler): this.type = js.native
@@ -22,7 +21,7 @@ trait CoreEvents extends StObject {
   def addListener(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
   
   def bind(eventsMap: StringDictionary[EventHandler]): this.type = js.native
-  def bind(eventsMap: StringDictionary[EventHandler], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
+  def bind(eventsMap: StringDictionary[EventHandler], selector: Unit, data: js.Any): this.type = js.native
   def bind(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def bind(eventsMap: StringDictionary[EventHandler], selector: Selector, data: js.Any): this.type = js.native
   def bind(events: EventNames, handler: EventHandler): this.type = js.native
@@ -30,10 +29,10 @@ trait CoreEvents extends StObject {
   def bind(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
   
   def emit(events: EventNames): this.type = js.native
-  def emit(events: EventNames, extraParams: js.Array[_]): this.type = js.native
+  def emit(events: EventNames, extraParams: js.Array[js.Any]): this.type = js.native
   
   def listen(eventsMap: StringDictionary[EventHandler]): this.type = js.native
-  def listen(eventsMap: StringDictionary[EventHandler], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
+  def listen(eventsMap: StringDictionary[EventHandler], selector: Unit, data: js.Any): this.type = js.native
   def listen(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def listen(eventsMap: StringDictionary[EventHandler], selector: Selector, data: js.Any): this.type = js.native
   def listen(events: EventNames, handler: EventHandler): this.type = js.native
@@ -52,12 +51,12 @@ trait CoreEvents extends StObject {
     * @param eventsMap A map of event names to handler functions to remove.
     */
   def off(events: EventNames): this.type = js.native
-  def off(events: EventNames, selector: js.UndefOr[scala.Nothing], handler: EventHandler): this.type = js.native
+  def off(events: EventNames, selector: Unit, handler: EventHandler): this.type = js.native
   def off(events: EventNames, selector: Selector): this.type = js.native
   def off(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
   
   def on(eventsMap: StringDictionary[EventHandler]): this.type = js.native
-  def on(eventsMap: StringDictionary[EventHandler], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
+  def on(eventsMap: StringDictionary[EventHandler], selector: Unit, data: js.Any): this.type = js.native
   def on(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def on(eventsMap: StringDictionary[EventHandler], selector: Selector, data: js.Any): this.type = js.native
   /**
@@ -81,7 +80,7 @@ trait CoreEvents extends StObject {
     * @param data A plain object which is passed to the handler in the event object argument.
     */
   def one(eventsMap: StringDictionary[EventHandler]): this.type = js.native
-  def one(eventsMap: StringDictionary[EventHandler], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
+  def one(eventsMap: StringDictionary[EventHandler], selector: Unit, data: js.Any): this.type = js.native
   def one(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def one(eventsMap: StringDictionary[EventHandler], selector: Selector, data: js.Any): this.type = js.native
   /**
@@ -130,7 +129,7 @@ trait CoreEvents extends StObject {
   def removeListener(eventsMap: StringDictionary[EventHandler]): this.type = js.native
   def removeListener(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def removeListener(events: EventNames): this.type = js.native
-  def removeListener(events: EventNames, selector: js.UndefOr[scala.Nothing], handler: EventHandler): this.type = js.native
+  def removeListener(events: EventNames, selector: Unit, handler: EventHandler): this.type = js.native
   def removeListener(events: EventNames, selector: Selector): this.type = js.native
   def removeListener(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
   
@@ -141,19 +140,19 @@ trait CoreEvents extends StObject {
     * @param extraParams [optional] An array of additional parameters to pass to the handler.
     */
   def trigger(events: EventNames): this.type = js.native
-  def trigger(events: EventNames, extraParams: js.Array[_]): this.type = js.native
+  def trigger(events: EventNames, extraParams: js.Array[js.Any]): this.type = js.native
   
   def unbind(eventsMap: StringDictionary[EventHandler]): this.type = js.native
   def unbind(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def unbind(events: EventNames): this.type = js.native
-  def unbind(events: EventNames, selector: js.UndefOr[scala.Nothing], handler: EventHandler): this.type = js.native
+  def unbind(events: EventNames, selector: Unit, handler: EventHandler): this.type = js.native
   def unbind(events: EventNames, selector: Selector): this.type = js.native
   def unbind(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
   
   def unlisten(eventsMap: StringDictionary[EventHandler]): this.type = js.native
   def unlisten(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def unlisten(events: EventNames): this.type = js.native
-  def unlisten(events: EventNames, selector: js.UndefOr[scala.Nothing], handler: EventHandler): this.type = js.native
+  def unlisten(events: EventNames, selector: Unit, handler: EventHandler): this.type = js.native
   def unlisten(events: EventNames, selector: Selector): this.type = js.native
   def unlisten(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
 }

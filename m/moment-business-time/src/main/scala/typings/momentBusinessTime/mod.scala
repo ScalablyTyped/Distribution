@@ -3,19 +3,17 @@ package typings.momentBusinessTime
 import typings.moment.mod.unitOfTime.Base
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*~ Here, declare the same module as the one you imported above */
 /* augmented module */
 object mod {
   
-  @js.native
   trait LocaleSpecification extends StObject {
     
-    var holidays: js.UndefOr[js.Array[String]] = js.native
+    var holidays: js.UndefOr[js.Array[String]] = js.undefined
     
-    var workinghours: js.UndefOr[WorkingHoursMap] = js.native
+    var workinghours: js.UndefOr[WorkingHoursMap] = js.undefined
   }
   object LocaleSpecification {
     
@@ -68,28 +66,34 @@ object mod {
     def workingDiff(moment: Moment, unit: Base, fractions: Boolean): Double = js.native
   }
   
-  @js.native
   trait WorkingHoursMap extends StObject {
     
-    var `0`: js.Array[String] | Null = js.native
+    var `0`: js.Array[String] | Null
     
-    var `1`: js.Array[String] | Null = js.native
+    var `1`: js.Array[String] | Null
     
-    var `2`: js.Array[String] | Null = js.native
+    var `2`: js.Array[String] | Null
     
-    var `3`: js.Array[String] | Null = js.native
+    var `3`: js.Array[String] | Null
     
-    var `4`: js.Array[String] | Null = js.native
+    var `4`: js.Array[String] | Null
     
-    var `5`: js.Array[String] | Null = js.native
+    var `5`: js.Array[String] | Null
     
-    var `6`: js.Array[String] | Null = js.native
+    var `6`: js.Array[String] | Null
   }
   object WorkingHoursMap {
     
     @scala.inline
     def apply(): WorkingHoursMap = {
       val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("0")(null)
+      __obj.updateDynamic("1")(null)
+      __obj.updateDynamic("2")(null)
+      __obj.updateDynamic("3")(null)
+      __obj.updateDynamic("4")(null)
+      __obj.updateDynamic("5")(null)
+      __obj.updateDynamic("6")(null)
       __obj.asInstanceOf[WorkingHoursMap]
     }
     

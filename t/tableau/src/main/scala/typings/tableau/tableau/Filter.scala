@@ -2,23 +2,21 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /** Gets the field that is currently being filtered. */
-  def getFieldAsync(): js.Promise[Field] = js.native
+  def getFieldAsync(): js.Promise[Field]
   
   /** Gets the name of the field being filtered. Note that this is the caption as shown in the UI and not the actual database field name. */
-  def getFieldName(): String = js.native
+  def getFieldName(): String
   
   /** Gets the type of the filter. See FilterType Enum for the values in the enum. */
-  def getFilterType(): FilterType = js.native
+  def getFilterType(): FilterType
   
   /** Gets the parent worksheet */
-  def getWorksheet(): Worksheet = js.native
+  def getWorksheet(): Worksheet
 }
 object Filter {
   

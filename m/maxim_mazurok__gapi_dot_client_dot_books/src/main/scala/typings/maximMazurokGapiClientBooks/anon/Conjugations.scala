@@ -2,27 +2,25 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conjugations extends StObject {
   
-  var conjugations: js.UndefOr[js.Array[Type]] = js.native
+  var conjugations: js.UndefOr[js.Array[Type]] = js.undefined
   
-  var definitions: js.UndefOr[js.Array[Definition]] = js.native
+  var definitions: js.UndefOr[js.Array[Definition]] = js.undefined
   
-  var partOfSpeech: js.UndefOr[String] = js.native
+  var partOfSpeech: js.UndefOr[String] = js.undefined
   
-  var pronunciation: js.UndefOr[String] = js.native
+  var pronunciation: js.UndefOr[String] = js.undefined
   
-  var pronunciationUrl: js.UndefOr[String] = js.native
+  var pronunciationUrl: js.UndefOr[String] = js.undefined
   
-  var source: js.UndefOr[Attribution] = js.native
+  var source: js.UndefOr[Attribution] = js.undefined
   
-  var syllabification: js.UndefOr[String] = js.native
+  var syllabification: js.UndefOr[String] = js.undefined
   
-  var synonyms: js.UndefOr[js.Array[Source]] = js.native
+  var synonyms: js.UndefOr[js.Array[Source]] = js.undefined
 }
 object Conjugations {
   

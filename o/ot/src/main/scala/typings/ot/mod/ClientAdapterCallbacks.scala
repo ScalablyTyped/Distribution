@@ -2,17 +2,15 @@ package typings.ot.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientAdapterCallbacks extends StObject {
   
-  def blur(): Unit = js.native
+  def blur(): Unit
   
-  def change(operation: TextOperation, inverse: TextOperation): Unit = js.native
+  def change(operation: TextOperation, inverse: TextOperation): Unit
   
-  def selectionChange(): Unit = js.native
+  def selectionChange(): Unit
 }
 object ClientAdapterCallbacks {
   

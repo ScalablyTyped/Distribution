@@ -2,30 +2,28 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  light :tuya-panel-kit.tuya-panel-kit/theme.SliderTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.SliderTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.SliderTheme> */
-@js.native
 trait Slider extends StObject {
   
-  var dark: SliderTheme = js.native
+  var dark: SliderTheme
   
-  var light: SliderTheme = js.native
+  var light: SliderTheme
   
-  var maximumTrackTintColor: js.UndefOr[String] = js.native
+  var maximumTrackTintColor: js.UndefOr[String] = js.undefined
   
-  var thumbRadius: js.UndefOr[Double] = js.native
+  var thumbRadius: js.UndefOr[Double] = js.undefined
   
-  var thumbSize: js.UndefOr[Double] = js.native
+  var thumbSize: js.UndefOr[Double] = js.undefined
   
-  var thumbTintColor: js.UndefOr[String] = js.native
+  var thumbTintColor: js.UndefOr[String] = js.undefined
   
-  var trackHeight: js.UndefOr[Double] = js.native
+  var trackHeight: js.UndefOr[Double] = js.undefined
   
-  var trackRadius: js.UndefOr[Double] = js.native
+  var trackRadius: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double | Null] = js.native
+  var width: js.UndefOr[Double | Null] = js.undefined
 }
 object Slider {
   

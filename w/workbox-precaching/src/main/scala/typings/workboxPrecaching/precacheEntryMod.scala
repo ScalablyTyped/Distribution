@@ -2,18 +2,16 @@ package typings.workboxPrecaching
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object precacheEntryMod {
   
-  @js.native
   trait PrecacheEntry extends StObject {
     
     // integrity?: string;
-    var revision: js.UndefOr[String] = js.native
+    var revision: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object PrecacheEntry {
     

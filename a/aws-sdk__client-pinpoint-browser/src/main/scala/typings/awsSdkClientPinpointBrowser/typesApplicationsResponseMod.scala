@@ -5,23 +5,21 @@ import typings.awsSdkClientPinpointBrowser.typesApplicationResponseMod.Unmarshal
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesApplicationsResponseMod {
   
-  @js.native
   trait ApplicationsResponse extends StObject {
     
     /**
       * List of applications returned in this page.
       */
-    var Item: js.UndefOr[js.Array[ApplicationResponse] | Iterable[ApplicationResponse]] = js.native
+    var Item: js.UndefOr[js.Array[ApplicationResponse] | Iterable[ApplicationResponse]] = js.undefined
     
     /**
       * The string that you use in a subsequent request to get the next page of results in a paginated response.
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   object ApplicationsResponse {
     
@@ -51,14 +49,15 @@ object typesApplicationsResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledApplicationsResponse extends ApplicationsResponse {
+  trait UnmarshalledApplicationsResponse
+    extends StObject
+       with ApplicationsResponse {
     
     /**
       * List of applications returned in this page.
       */
     @JSName("Item")
-    var Item_UnmarshalledApplicationsResponse: js.UndefOr[js.Array[UnmarshalledApplicationResponse]] = js.native
+    var Item_UnmarshalledApplicationsResponse: js.UndefOr[js.Array[UnmarshalledApplicationResponse]] = js.undefined
   }
   object UnmarshalledApplicationsResponse {
     

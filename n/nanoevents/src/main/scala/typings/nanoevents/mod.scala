@@ -2,30 +2,46 @@ package typings.nanoevents
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("nanoevents", JSImport.Namespace)
   @js.native
-  class ^[T /* <: js.Object */] () extends NanoEvents[T]
+  class ^[T /* <: js.Object */] ()
+    extends StObject
+       with NanoEvents[T] {
+    
+    /* CompleteClass */
+    override def emit[U /* <: /* keyof T */ String */](
+      name: U,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    override def on[U /* <: /* keyof T */ String */](
+      name: U,
+      callBack: js.Function1[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
+          js.Any
+        ]
+    ): js.Function0[Unit] = js.native
+  }
   
-  @js.native
   trait NanoEvents[T /* <: js.Object */] extends StObject {
     
     def emit[U /* <: /* keyof T */ String */](
       name: U,
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any
-    ): Unit = js.native
+    ): Unit
     
     def on[U /* <: /* keyof T */ String */](
       name: U,
       callBack: js.Function1[
           /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
-          _
+          js.Any
         ]
-    ): js.Function0[Unit] = js.native
+    ): js.Function0[Unit]
   }
   object NanoEvents {
     
@@ -34,7 +50,7 @@ object mod {
       emit: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any) => Unit,
       on: (js.Any, js.Function1[
           /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
-          _
+          js.Any
         ]) => js.Function0[Unit]
     ): NanoEvents[T] = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), on = js.Any.fromFunction2(on))
@@ -42,7 +58,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class NanoEventsMutableBuilder[Self <: NanoEvents[_], T /* <: js.Object */] (val x: Self with NanoEvents[T]) extends AnyVal {
+    implicit class NanoEventsMutableBuilder[Self <: NanoEvents[?], T /* <: js.Object */] (val x: Self & NanoEvents[T]) extends AnyVal {
       
       @scala.inline
       def setEmit(
@@ -53,7 +69,7 @@ object mod {
       def setOn(
         value: (js.Any, js.Function1[
               /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
-              _
+              js.Any
             ]) => js.Function0[Unit]
       ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }

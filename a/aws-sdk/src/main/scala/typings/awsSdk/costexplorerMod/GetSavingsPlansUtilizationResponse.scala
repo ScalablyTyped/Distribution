@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSavingsPlansUtilizationResponse extends StObject {
   
   /**
     * The amount of cost/commitment you used your Savings Plans. This allows you to specify date ranges.
     */
-  var SavingsPlansUtilizationsByTime: js.UndefOr[typings.awsSdk.costexplorerMod.SavingsPlansUtilizationsByTime] = js.native
+  var SavingsPlansUtilizationsByTime: js.UndefOr[typings.awsSdk.costexplorerMod.SavingsPlansUtilizationsByTime] = js.undefined
   
   /**
     * The total amount of cost/commitment that you used your Savings Plans, regardless of date ranges.
     */
-  var Total: SavingsPlansUtilizationAggregates = js.native
+  var Total: SavingsPlansUtilizationAggregates
 }
 object GetSavingsPlansUtilizationResponse {
   

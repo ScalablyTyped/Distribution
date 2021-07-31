@@ -2,75 +2,73 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A group of one or more TestExecutions, built by taking a product of values
   * over a pre-defined set of axes.
   */
-@js.native
 trait SchemaTestMatrix extends StObject {
   
   /**
     * Information about the client which invoked the test.
     */
-  var clientInfo: js.UndefOr[SchemaClientInfo] = js.native
+  var clientInfo: js.UndefOr[SchemaClientInfo] = js.undefined
   
   /**
     * Required. How the host machine(s) are configured.
     */
-  var environmentMatrix: js.UndefOr[SchemaEnvironmentMatrix] = js.native
+  var environmentMatrix: js.UndefOr[SchemaEnvironmentMatrix] = js.undefined
   
   /**
     * The number of times a TestExecution should be re-attempted if one or more
     * of its test cases fail for any reason. The maximum number of reruns
     * allowed is 10.  Default is 0, which implies no reruns.
     */
-  var flakyTestAttempts: js.UndefOr[Double] = js.native
+  var flakyTestAttempts: js.UndefOr[Double] = js.undefined
   
   /**
     * Output only. Describes why the matrix is considered invalid. Only useful
     * for matrices in the INVALID state.
     */
-  var invalidMatrixDetails: js.UndefOr[String] = js.native
+  var invalidMatrixDetails: js.UndefOr[String] = js.undefined
   
   /**
     * The cloud project that owns the test matrix.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Where the results for the matrix are written.
     */
-  var resultStorage: js.UndefOr[SchemaResultStorage] = js.native
+  var resultStorage: js.UndefOr[SchemaResultStorage] = js.undefined
   
   /**
     * Output only. Indicates the current progress of the test matrix (e.g.,
     * FINISHED).
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The list of test executions that the service creates for
     * this matrix.
     */
-  var testExecutions: js.UndefOr[js.Array[SchemaTestExecution]] = js.native
+  var testExecutions: js.UndefOr[js.Array[SchemaTestExecution]] = js.undefined
   
   /**
     * Output only. Unique id set by the service.
     */
-  var testMatrixId: js.UndefOr[String] = js.native
+  var testMatrixId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. How to run the test.
     */
-  var testSpecification: js.UndefOr[SchemaTestSpecification] = js.native
+  var testSpecification: js.UndefOr[SchemaTestSpecification] = js.undefined
   
   /**
     * Output only. The time this test matrix was initially created.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaTestMatrix {
   

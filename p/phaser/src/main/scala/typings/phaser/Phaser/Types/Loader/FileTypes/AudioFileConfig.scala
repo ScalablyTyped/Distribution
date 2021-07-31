@@ -4,31 +4,29 @@ import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import typings.std.AudioContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioFileConfig extends StObject {
   
   /**
     * The AudioContext this file will use to process itself.
     */
-  var audioContext: js.UndefOr[AudioContext] = js.native
+  var audioContext: js.UndefOr[AudioContext] = js.undefined
   
   /**
     * The key of the file. Must be unique within the Loader and Audio Cache.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The absolute or relative URL to load the file from.
     */
-  var urlConfig: js.UndefOr[String] = js.native
+  var urlConfig: js.UndefOr[String] = js.undefined
   
   /**
     * Extra XHR Settings specifically for this file.
     */
-  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
 }
 object AudioFileConfig {
   

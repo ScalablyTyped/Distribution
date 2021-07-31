@@ -2,41 +2,39 @@ package typings.jqueryBootstrapWizard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Wizard extends StObject {
   
-  def activeTab(): js.Any = js.native
+  def activeTab(): js.Any
   
-  def currentIndex(): Double = js.native
+  def currentIndex(): Double
   
-  def first(): Unit = js.native
+  def first(): Unit
   
-  def firstIndex(): Double = js.native
+  def firstIndex(): Double
   
-  def getIndex(element: js.Any): Double = js.native
+  def getIndex(element: js.Any): Double
   
-  def last(): Unit = js.native
+  def last(): Unit
   
-  def lastIndex(): Double = js.native
+  def lastIndex(): Double
   
-  def navigationLength(): Double = js.native
+  def navigationLength(): Double
   
-  def next(): Unit = js.native
+  def next(): Unit
   
-  def nextIndex(): Double = js.native
+  def nextIndex(): Double
   
-  def nextTab(): js.Any = js.native
+  def nextTab(): js.Any
   
-  def previous(): Unit = js.native
+  def previous(): Unit
   
-  def previousIndex(): Double = js.native
+  def previousIndex(): Double
   
-  def previousTab(): js.Any = js.native
+  def previousTab(): js.Any
   
-  def show(index: Double): js.Any = js.native
+  def show(index: Double): js.Any
 }
 object Wizard {
   

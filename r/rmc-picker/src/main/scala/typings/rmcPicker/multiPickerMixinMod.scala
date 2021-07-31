@@ -3,12 +3,14 @@ package typings.rmcPicker
 import typings.rmcPicker.anon.Instantiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiPickerMixinMod {
   
-  @JSImport("rmc-picker/lib/MultiPickerMixin", JSImport.Default)
+  @JSImport("rmc-picker/lib/MultiPickerMixin", JSImport.Namespace)
   @js.native
-  def default(ComposedComponent: js.Any): Instantiable = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(ComposedComponent: js.Any): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
 }

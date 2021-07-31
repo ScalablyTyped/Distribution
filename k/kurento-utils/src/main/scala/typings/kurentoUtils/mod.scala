@@ -10,7 +10,6 @@ import typings.std.RTCPeerConnection
 import typings.std.RTCSessionDescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,24 +23,12 @@ object mod {
     def this(mode: recv, options: js.Object) = this()
     def this(mode: sendRecv, options: js.Object) = this()
     def this(mode: send, options: js.Object) = this()
-    def this(
-      mode: recv,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.UndefOr[String], Unit]
-    ) = this()
     def this(mode: recv, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
-    def this(
-      mode: sendRecv,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.UndefOr[String], Unit]
-    ) = this()
+    def this(mode: recv, options: Unit, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
     def this(mode: sendRecv, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
-    def this(
-      mode: send,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.UndefOr[String], Unit]
-    ) = this()
+    def this(mode: sendRecv, options: Unit, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
     def this(mode: send, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
+    def this(mode: send, options: Unit, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
     
     /**
       * Callback function invoked when an ICE candidate is received. Developers are expected to invoke this function in order to complete the SDP negotiation. This method has two parameters:
@@ -113,25 +100,26 @@ object mod {
   /* static members */
   object WebRtcPeer {
     
+    @JSImport("kurento-utils", "WebRtcPeer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a WebRtcPeer as receive only.
       */
-    @JSImport("kurento-utils", "WebRtcPeer.WebRtcPeerRecvonly")
-    @js.native
-    def WebRtcPeerRecvonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = js.native
+    @scala.inline
+    def WebRtcPeerRecvonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerRecvonly")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
     
     /**
       * Create a WebRtcPeer as send only.
       */
-    @JSImport("kurento-utils", "WebRtcPeer.WebRtcPeerSendonly")
-    @js.native
-    def WebRtcPeerSendonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = js.native
+    @scala.inline
+    def WebRtcPeerSendonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerSendonly")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
     
     /**
       * Create a WebRtcPeer as send and receive.
       */
-    @JSImport("kurento-utils", "WebRtcPeer.WebRtcPeerSendrecv")
-    @js.native
-    def WebRtcPeerSendrecv(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = js.native
+    @scala.inline
+    def WebRtcPeerSendrecv(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerSendrecv")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
   }
 }

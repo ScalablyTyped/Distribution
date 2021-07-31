@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIAMPolicyAssignmentResponse extends StObject {
   
   /**
     * The name of the assignment. 
     */
-  var AssignmentName: js.UndefOr[IAMPolicyAssignmentName] = js.native
+  var AssignmentName: js.UndefOr[IAMPolicyAssignmentName] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
 }
 object DeleteIAMPolicyAssignmentResponse {
   

@@ -3,24 +3,22 @@ package typings.onfleetNodeOnfleet.anon
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@onfleet/node-onfleet.@onfleet/node-onfleet/Resources/Recipients.CreateRecipientProps> */
-@js.native
 trait PartialCreateRecipientPro extends StObject {
   
-  var metadata: js.UndefOr[js.Array[OnfleetMetadata]] = js.native
+  var metadata: js.UndefOr[js.Array[OnfleetMetadata]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
-  var skipPhoneNumberValidation: js.UndefOr[Boolean] = js.native
+  var skipPhoneNumberValidation: js.UndefOr[Boolean] = js.undefined
   
-  var skipSMSNotifications: js.UndefOr[Boolean] = js.native
+  var skipSMSNotifications: js.UndefOr[Boolean] = js.undefined
 }
 object PartialCreateRecipientPro {
   

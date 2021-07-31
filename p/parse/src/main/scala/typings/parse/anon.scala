@@ -5,15 +5,13 @@ import typings.parse.mod.global.Parse.Object._Encode
 import typings.parse.parseStrings.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AuthData extends StObject {
     
-    var authData: js.UndefOr[typings.parse.mod.global.Parse.AuthData] = js.native
+    var authData: js.UndefOr[typings.parse.mod.global.Parse.AuthData] = js.undefined
   }
   object AuthData {
     
@@ -34,10 +32,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Base64 extends StObject {
     
-    var base64: String = js.native
+    var base64: String
   }
   object Base64 {
     
@@ -55,10 +52,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: String = js.native
+    var className: String
   }
   object ClassName {
     
@@ -76,11 +72,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var objectId: js.UndefOr[String] = js.native
+    var objectId: js.UndefOr[String] = js.undefined
   }
   object Dictkey {
     
@@ -101,10 +97,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ForceSecure extends StObject {
     
-    var forceSecure: js.UndefOr[Boolean] = js.native
+    var forceSecure: js.UndefOr[Boolean] = js.undefined
   }
   object ForceSecure {
     
@@ -125,19 +120,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Iso
-    extends _Encode[js.Any] {
+    extends StObject
+       with _Encode[js.Any] {
     
-    var __type: Date = js.native
+    var __type: Date
     
-    var iso: String = js.native
+    var iso: String
   }
   object Iso {
     
     @scala.inline
-    def apply(__type: Date, iso: String): Iso = {
-      val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], iso = iso.asInstanceOf[js.Any])
+    def apply(iso: String): Iso = {
+      val __obj = js.Dynamic.literal(__type = "Date", iso = iso.asInstanceOf[js.Any])
       __obj.asInstanceOf[Iso]
     }
     
@@ -152,12 +147,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Latitude extends StObject {
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object Latitude {
     
@@ -178,14 +172,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var __type: String = js.native
+    var __type: String
     
-    var name: String = js.native
+    var name: String
     
-    var url: String = js.native
+    var url: String
   }
   object Name {
     
@@ -209,12 +202,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var size: Double = js.native
+    var size: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Size {
     
@@ -236,10 +228,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SizeNumber extends StObject {
     
-    var size: Double = js.native
+    var size: Double
   }
   object SizeNumber {
     
@@ -257,10 +248,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Uri extends StObject {
     
-    var uri: String = js.native
+    var uri: String
   }
   object Uri {
     

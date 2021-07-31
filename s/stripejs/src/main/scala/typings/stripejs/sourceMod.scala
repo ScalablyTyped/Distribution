@@ -28,34 +28,32 @@ import typings.stripejs.stripejsStrings.user_abort
 import typings.stripejs.tokenMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceMod {
   
-  @js.native
   trait Acceptance extends StObject {
     
     /**
       * The unix timestamp the mandate was accepted or refused at by the customer.
       */
-    var date: Double = js.native
+    var date: Double
     
     /**
       * The unix timestamp the mandate was accepted or refused at by the customer.
       */
-    var ip: String = js.native
+    var ip: String
     
     /**
       * The status of the mandate acceptance
       */
-    var status: accepted | refused = js.native
+    var status: accepted | refused
     
     /**
       * The user agent of the browser from which the mandate was accepted or refused by the customer
       * NOTE: This can be unset by updating the value to `null` and then saving
       */
-    var user_agent: String = js.native
+    var user_agent: String
   }
   object Acceptance {
     
@@ -82,19 +80,18 @@ object sourceMod {
     }
   }
   
-  @js.native
   trait CodeVerification extends StObject {
     
     /**
       * The number of attempts remaining to authenticate the
       * source object with a verification code
       */
-    var attempts_remaining: Double = js.native
+    var attempts_remaining: Double
     
     /**
       * The status of the code verification
       */
-    var status: pending | attempts_remaining | succeeded | failed = js.native
+    var status: pending | attempts_remaining | succeeded | failed
   }
   object CodeVerification {
     
@@ -115,10 +112,9 @@ object sourceMod {
     }
   }
   
-  @js.native
   trait Mandate extends StObject {
     
-    var acceptance: js.UndefOr[Acceptance] = js.native
+    var acceptance: js.UndefOr[Acceptance] = js.undefined
     
     /**
       * The method Stripe should use to notify the customer
@@ -126,7 +122,7 @@ object sourceMod {
       * - manual: a source.mandate_notification event is sent to your webhooks endpoint and you should handle the notification
       * - none: the underlying debit network does not require any notification
       */
-    var notification_method: js.UndefOr[email | manual | none] = js.native
+    var notification_method: js.UndefOr[email | manual | none] = js.undefined
   }
   object Mandate {
     
@@ -153,31 +149,30 @@ object sourceMod {
     }
   }
   
-  @js.native
   trait Receiver extends StObject {
     
     /**
       * The address of the receiver source
       * NOTE: This is the value that should be communicated to the customer to send their funds to
       */
-    var address: String = js.native
+    var address: String
     
     /**
       * The total amount that was charged by you
       * NOTE: The amount charged is expressed in the source’s currency
       */
-    var amount_charged: Double = js.native
+    var amount_charged: Double
     
     /**
       * The total amount received by the receiver source
       */
-    var amount_received: Double = js.native
+    var amount_received: Double
     
     /**
       * The total amount that was returned to the customer
       * NOTE: The amount charged is expressed in the source’s currency
       */
-    var amount_returned: Double = js.native
+    var amount_returned: Double
   }
   object Receiver {
     
@@ -204,19 +199,18 @@ object sourceMod {
     }
   }
   
-  @js.native
   trait Redirect extends StObject {
     
     /**
       * The failure reason for the redirect
       * Present only if the redirect status is `'failed'`
       */
-    var failure_reason: js.UndefOr[user_abort | declined | processing_error] = js.native
+    var failure_reason: js.UndefOr[user_abort | declined | processing_error] = js.undefined
     
     /**
       * The URL you provide to redirect the customer to after they authenticated their payment
       */
-    var return_url: String = js.native
+    var return_url: String
     
     /**
       * The status of the redirect
@@ -225,13 +219,13 @@ object sourceMod {
       * - not_required: redirect should not be used
       * - failed: failed authentication, cannot be reused
       */
-    var status: pending | succeeded | not_required | failed = js.native
+    var status: pending | succeeded | not_required | failed
     
     /**
       * The URL provided to you to redirect a customer to as part of a redirect
       * authentication flow
       */
-    var url: String = js.native
+    var url: String
   }
   object Redirect {
     
@@ -261,9 +255,9 @@ object sourceMod {
     }
   }
   
-  @js.native
   trait Source
-    extends /**
+    extends StObject
+       with /**
     * A matching name to the type with extra information about the payment method
     * @see type
     */
@@ -274,95 +268,95 @@ object sourceMod {
       * or 1 for ¥1, Japanese Yen being a zero-decimal currency) representing the total
       * amount associated with the source
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * The client secret of the source.
       * Used for client-side retrieval using a publishable key.
       */
-    var client_secret: String = js.native
+    var client_secret: String
     
     /**
       * Information related to the code verification flow
       * Present if the source is authenticated by a verification code
       */
-    var code_verification: js.UndefOr[CodeVerification] = js.native
+    var code_verification: js.UndefOr[CodeVerification] = js.undefined
     
     /**
       * Time at which the object was created.
       * Measured in seconds since the Unix epoch.
       * (Timestamp)
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO code for the currency associated with the source
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * The authentication flow of the source
       */
-    var flow: redirect | receiver | code_verification | none = js.native
+    var flow: redirect | receiver | code_verification | none
     
     /**
       * Unique identifier for the object
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * LIVE MODE = true
       * TEST MODE = false
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Your own saved information with this bank account
       */
-    var metadata: StringDictionary[String] = js.native
+    var metadata: StringDictionary[String]
     
-    var `object`: source = js.native
+    var `object`: source
     
     /**
       * Information about the owner of the payment instrument that may be used or
       * required by particular source types.
       */
-    var owner: Customer = js.native
+    var owner: Customer
     
     /**
       * Information related to the receiver flow.
       * Present if the source is a receiver
       */
-    var receiver: js.UndefOr[Receiver] = js.native
+    var receiver: js.UndefOr[Receiver] = js.undefined
     
     /**
       * Information related to the redirect flow.
       * Present if the source is authenticated by a redirect
       */
-    var redirect: js.UndefOr[Redirect] = js.native
+    var redirect: js.UndefOr[Redirect] = js.undefined
     
     /**
       * Extra information about a source
       * NOTE: This will appear on your customer’s statement every time you charge the source
       */
-    var statement_descriptor: String = js.native
+    var statement_descriptor: String
     
     /**
       * The status of the source
       * NOTE: Only `chargeable` sources can be used to create a charge
       */
-    var status: pending | canceled | failed | consumed | chargeable = js.native
+    var status: pending | canceled | failed | consumed | chargeable
     
     /**
       * The type of the source.
       * NOTE: The type is a payment method
       */
-    var `type`: paymentOptions = js.native
+    var `type`: paymentOptions
     
     /**
       * Whether this source should be reusable or not
       */
-    var usage: reusable = js.native
+    var usage: reusable
   }
   object Source {
     
@@ -376,15 +370,13 @@ object sourceMod {
       id: String,
       livemode: Boolean,
       metadata: StringDictionary[String],
-      `object`: source,
       owner: Customer,
       statement_descriptor: String,
       status: pending | canceled | failed | consumed | chargeable,
-      `type`: paymentOptions,
-      usage: reusable
+      `type`: paymentOptions
     ): Source = {
-      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = "reusable")
+      __obj.updateDynamic("object")("source")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Source]
     }
@@ -454,74 +446,73 @@ object sourceMod {
     }
   }
   
-  @js.native
   trait SourceData extends StObject {
     
     /**
       * This is the amount for which the source will be chargeable once ready
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Three-letter ISO code for the currency associated with the source
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * The authentication flow of the source
       */
-    var flow: redirect | receiver | code_verification | none = js.native
+    var flow: redirect | receiver | code_verification | none
     
     /**
       * Information about a mandate possiblity attached to a source object
       * (generally for bank debits) as well as its acceptance status
       */
-    var mandate: js.UndefOr[Mandate] = js.native
+    var mandate: js.UndefOr[Mandate] = js.undefined
     
     /**
       * Extra data you want to add to the source object
       */
-    var metadata: js.UndefOr[StringDictionary[String]] = js.native
+    var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Information about the owner of the payment instrument that may be used or
       * required by particular source types.
       */
-    var owner: js.UndefOr[Customer] = js.native
+    var owner: js.UndefOr[Customer] = js.undefined
     
     /**
       * Can be set only if the source is a receiver
       */
-    var receiver: js.UndefOr[Receiver] = js.native
+    var receiver: js.UndefOr[Receiver] = js.undefined
     
     /**
       * Required if the source is authenticated by a redirect
       */
-    var redirect: js.UndefOr[Redirect] = js.native
+    var redirect: js.UndefOr[Redirect] = js.undefined
     
     /**
       * An arbitrary string to be displayed on your customer’s statement
       * @example if your website is RunClub and the item you’re charging for is a race ticket,
       * you may want to specify a statement_descriptor of RunClub 5K race ticket.
       */
-    var statement_descriptor: js.UndefOr[String] = js.native
+    var statement_descriptor: js.UndefOr[String] = js.undefined
     
-    var three_d_secure_2_eap: js.UndefOr[js.Any] = js.native
+    var three_d_secure_2_eap: js.UndefOr[js.Any] = js.undefined
     
     /**
       * When passed, token properties will override source parameters
       */
-    var token: js.UndefOr[Token] = js.native
+    var token: js.UndefOr[Token] = js.undefined
     
     /**
       * The type of the source to create
       */
-    var `type`: paymentOptions = js.native
+    var `type`: paymentOptions
     
     /**
       * Whether this source should be reusable or not
       */
-    var usage: reusable | single_use = js.native
+    var usage: reusable | single_use
   }
   object SourceData {
     
@@ -606,18 +597,17 @@ object sourceMod {
     }
   }
   
-  @js.native
   trait SourceResult extends StObject {
     
     /**
       * There was an error. This includes client-side validation errors.
       */
-    var error: js.UndefOr[StripeError] = js.native
+    var error: js.UndefOr[StripeError] = js.undefined
     
     /**
       * The identifier of the source to be retrieved
       */
-    var source: Source = js.native
+    var source: Source
   }
   object SourceResult {
     

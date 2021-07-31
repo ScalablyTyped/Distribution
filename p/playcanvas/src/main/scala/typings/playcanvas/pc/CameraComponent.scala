@@ -5,7 +5,6 @@ import typings.playcanvas.pc.callbacks.CalculateMatrix
 import typings.playcanvas.pc.callbacks.XrError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -102,7 +101,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param entity - The Entity that this Component is attached to.
   */
 @js.native
-trait CameraComponent extends Component {
+trait CameraComponent
+  extends StObject
+     with Component {
   
   /**
     * The aspect ratio (width divided by height) of the

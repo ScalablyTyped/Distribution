@@ -2,57 +2,55 @@ package typings.clearbladejsNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryObj extends StObject {
   
-  var OR: js.Array[Query] = js.native
+  var OR: js.Array[Query]
   
-  var URI: String = js.native
+  var URI: String
   
-  def ascending(field: String): Query = js.native
+  def ascending(field: String): Query
   
-  def descending(field: String): Query = js.native
+  def descending(field: String): Query
   
-  var endpoint: String = js.native
+  var endpoint: String
   
-  def equalTo(field: String, value: QueryValue): Query = js.native
+  def equalTo(field: String, value: QueryValue): Query
   
-  def fetch(callback: CbCallback): Unit = js.native
+  def fetch(callback: CbCallback): Unit
   
-  def greaterThan(field: String, value: QueryValue): Query = js.native
+  def greaterThan(field: String, value: QueryValue): Query
   
-  def greaterThanEqualTo(field: String, value: QueryValue): Query = js.native
+  def greaterThanEqualTo(field: String, value: QueryValue): Query
   
-  def lessThan(field: String, value: QueryValue): Query = js.native
+  def lessThan(field: String, value: QueryValue): Query
   
-  def lessThanEqualTo(field: String, value: QueryValue): Query = js.native
+  def lessThanEqualTo(field: String, value: QueryValue): Query
   
-  var limit: Double = js.native
+  var limit: Double
   
-  def matches(field: String, pattern: String): Query = js.native
+  def matches(field: String, pattern: String): Query
   
-  def notEqualTo(field: String, value: QueryValue): Query = js.native
+  def notEqualTo(field: String, value: QueryValue): Query
   
-  var offset: Double = js.native
+  var offset: Double
   
-  def or(query: QueryObj): Query = js.native
+  def or(query: QueryObj): Query
   
-  var query: Query = js.native
+  var query: Query
   
-  def remove(callback: CbCallback): Unit = js.native
+  def remove(callback: CbCallback): Unit
   
-  def setPage(pageSize: Double, pageNum: Double): Query = js.native
+  def setPage(pageSize: Double, pageNum: Double): Query
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  def update(changes: js.Object, callback: CbCallback): Unit = js.native
+  def update(changes: js.Object, callback: CbCallback): Unit
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object QueryObj {
   

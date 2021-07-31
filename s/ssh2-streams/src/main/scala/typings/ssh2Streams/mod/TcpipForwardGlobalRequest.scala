@@ -2,21 +2,21 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TcpipForwardGlobalRequest extends _GlobalRequest {
+trait TcpipForwardGlobalRequest
+  extends StObject
+     with _GlobalRequest {
   
   /**
     * The IP address to start/stop binding to.
     */
-  var bindAddr: String = js.native
+  var bindAddr: String
   
   /**
     * The port to start/stop binding to.
     */
-  var bindPort: Double = js.native
+  var bindPort: Double
 }
 object TcpipForwardGlobalRequest {
   

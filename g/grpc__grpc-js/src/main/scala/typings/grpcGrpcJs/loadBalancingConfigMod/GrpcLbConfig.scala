@@ -2,13 +2,11 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrpcLbConfig extends StObject {
   
-  var childPolicy: js.Array[LoadBalancingConfig] = js.native
+  var childPolicy: js.Array[LoadBalancingConfig]
 }
 object GrpcLbConfig {
   

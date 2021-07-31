@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait UpgradeType extends StObject
 object UpgradeType extends StObject {
   
   @js.native
-  sealed trait buildUpgrade extends UpgradeType
+  sealed trait buildUpgrade
+    extends StObject
+       with UpgradeType
   
   @js.native
-  sealed trait versionUpgrade extends UpgradeType
+  sealed trait versionUpgrade
+    extends StObject
+       with UpgradeType
 }

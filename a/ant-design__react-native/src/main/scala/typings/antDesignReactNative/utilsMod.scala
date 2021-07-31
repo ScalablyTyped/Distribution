@@ -3,16 +3,17 @@ package typings.antDesignReactNative
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("@ant-design/react-native/lib/date-picker/utils", "formatFn")
+  @JSImport("@ant-design/react-native/lib/date-picker/utils", JSImport.Namespace)
   @js.native
-  def formatFn(instance: js.Any, value: Date): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ant-design/react-native/lib/date-picker/utils", "formatProps")
-  @js.native
-  def formatProps(props: js.Any, value: Date): js.Any = js.native
+  @scala.inline
+  def formatFn(instance: js.Any, value: Date): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatFn")(instance.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def formatProps(props: js.Any, value: Date): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatProps")(props.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

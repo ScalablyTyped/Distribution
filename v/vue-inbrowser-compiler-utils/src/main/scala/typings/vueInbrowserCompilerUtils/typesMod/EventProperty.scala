@@ -2,17 +2,15 @@ package typings.vueInbrowserCompilerUtils.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventProperty extends StObject {
   
-  var description: js.UndefOr[String | Boolean] = js.native
+  var description: js.UndefOr[String | Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `type`: EventType = js.native
+  var `type`: EventType
 }
 object EventProperty {
   

@@ -2,7 +2,6 @@ package typings.mapsjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapsjs", "envelope")
@@ -131,23 +130,22 @@ class envelope protected () extends StObject {
 }
 object envelope {
   
-  @JSImport("mapsjs", "envelope.createFromCenterAndMargins")
+  @JSImport("mapsjs", "envelope")
   @js.native
-  def createFromCenterAndMargins(centerPtX: Double, centerPtY: Double, marginX: Double, marginY: Double): envelope = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mapsjs", "envelope.createFromMdnXml")
-  @js.native
-  def createFromMdnXml(xml: String): envelope = js.native
+  @scala.inline
+  def createFromCenterAndMargins(centerPtX: Double, centerPtY: Double, marginX: Double, marginY: Double): envelope = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromCenterAndMargins")(centerPtX.asInstanceOf[js.Any], centerPtY.asInstanceOf[js.Any], marginX.asInstanceOf[js.Any], marginY.asInstanceOf[js.Any])).asInstanceOf[envelope]
   
-  @JSImport("mapsjs", "envelope.createFromPoints")
-  @js.native
-  def createFromPoints(pt1: point, pt2: point): envelope = js.native
+  @scala.inline
+  def createFromMdnXml(xml: String): envelope = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMdnXml")(xml.asInstanceOf[js.Any]).asInstanceOf[envelope]
   
-  @JSImport("mapsjs", "envelope.intersects")
-  @js.native
-  def intersects(env1: envelope, env2: envelope): Boolean = js.native
+  @scala.inline
+  def createFromPoints(pt1: point, pt2: point): envelope = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromPoints")(pt1.asInstanceOf[js.Any], pt2.asInstanceOf[js.Any])).asInstanceOf[envelope]
   
-  @JSImport("mapsjs", "envelope.union")
-  @js.native
-  def union(env1: envelope, env2: envelope): envelope = js.native
+  @scala.inline
+  def intersects(env1: envelope, env2: envelope): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(env1.asInstanceOf[js.Any], env2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def union(env1: envelope, env2: envelope): envelope = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(env1.asInstanceOf[js.Any], env2.asInstanceOf[js.Any])).asInstanceOf[envelope]
 }

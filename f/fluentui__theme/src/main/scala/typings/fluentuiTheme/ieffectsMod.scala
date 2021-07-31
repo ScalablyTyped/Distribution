@@ -2,12 +2,10 @@ package typings.fluentuiTheme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ieffectsMod {
   
-  @js.native
   trait IEffects extends StObject {
     
     /**
@@ -16,7 +14,7 @@ object ieffectsMod {
       * The shadow's color should not change with the theme, because colored shadows look unnatural.
       * Used for: search result dropdowns, hover cards, tooltips, help bubbles
       */
-    var elevation16: String = js.native
+    var elevation16: String
     
     /**
       * Used to provide a visual affordance that this element is elevated above the surface it rests on.
@@ -24,7 +22,7 @@ object ieffectsMod {
       * The shadow's color should not change with the theme, because colored shadows look unnatural.
       * Used for: cards, grid items
       */
-    var elevation4: String = js.native
+    var elevation4: String
     
     /**
       * Used to provide a visual affordance that this element is elevated above the surface it rests on.
@@ -32,7 +30,7 @@ object ieffectsMod {
       * The shadow's color should not change with the theme, because colored shadows look unnatural.
       * Used for: Panels, Dialogs
       */
-    var elevation64: String = js.native
+    var elevation64: String
     
     /**
       * Used to provide a visual affordance that this element is elevated above the surface it rests on.
@@ -40,28 +38,28 @@ object ieffectsMod {
       * The shadow's color should not change with the theme, because colored shadows look unnatural.
       * Used for: menus, command surfaces
       */
-    var elevation8: String = js.native
+    var elevation8: String
     
     /**
       * Rounded corner value, for use with border-radius. Smaller values indicate less rounding.
       * Smaller elements should get less rounding than larger elements.
       * Used for: buttons
       */
-    var roundedCorner2: String = js.native
+    var roundedCorner2: String
     
     /**
       * Rounded corner value, for use with border-radius. Smaller values indicate less rounding.
       * Smaller elements should get less rounding than larger elements.
       * Used for: cards
       */
-    var roundedCorner4: String = js.native
+    var roundedCorner4: String
     
     /**
       * Rounded corner value, for use with border-radius. Smaller values indicate less rounding.
       * Smaller elements should get less rounding than larger elements.
       * Used for: surfaces
       */
-    var roundedCorner6: String = js.native
+    var roundedCorner6: String
   }
   object IEffects {
     

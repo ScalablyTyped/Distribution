@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeltaX extends StObject {
   
-  var deltaX: Double = js.native
+  var deltaX: Double
   
-  var deltaY: Double = js.native
+  var deltaY: Double
   
-  var scrollHeight: Double = js.native
+  var scrollHeight: Double
   
-  var scrollLeft: Double = js.native
+  var scrollLeft: Double
   
-  var scrollTop: Double = js.native
+  var scrollTop: Double
   
-  var scrollWidth: Double = js.native
+  var scrollWidth: Double
 }
 object DeltaX {
   

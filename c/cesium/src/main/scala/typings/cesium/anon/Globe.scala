@@ -3,21 +3,19 @@ package typings.cesium.anon
 import typings.cesium.mod.ProviderViewModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Globe extends StObject {
   
-  var globe: typings.cesium.mod.Globe = js.native
+  var globe: typings.cesium.mod.Globe
   
-  var imageryProviderViewModels: js.UndefOr[js.Array[ProviderViewModel]] = js.native
+  var imageryProviderViewModels: js.UndefOr[js.Array[ProviderViewModel]] = js.undefined
   
-  var selectedImageryProviderViewModel: js.UndefOr[ProviderViewModel] = js.native
+  var selectedImageryProviderViewModel: js.UndefOr[ProviderViewModel] = js.undefined
   
-  var selectedTerrainProviderViewModel: js.UndefOr[ProviderViewModel] = js.native
+  var selectedTerrainProviderViewModel: js.UndefOr[ProviderViewModel] = js.undefined
   
-  var terrainProviderViewModels: js.UndefOr[js.Array[ProviderViewModel]] = js.native
+  var terrainProviderViewModels: js.UndefOr[js.Array[ProviderViewModel]] = js.undefined
 }
 object Globe {
   

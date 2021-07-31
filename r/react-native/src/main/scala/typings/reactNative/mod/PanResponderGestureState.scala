@@ -2,64 +2,62 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanResponderGestureState extends StObject {
   
   // All `gestureState` accounts for timeStamps up until:
-  var _accountsForMovesUpTo: Double = js.native
+  var _accountsForMovesUpTo: Double
   
   /**
     * accumulated distance of the gesture since the touch started
     */
-  var dx: Double = js.native
+  var dx: Double
   
   /**
     * accumulated distance of the gesture since the touch started
     */
-  var dy: Double = js.native
+  var dy: Double
   
   /**
     *  the latest screen coordinates of the recently-moved touch
     */
-  var moveX: Double = js.native
+  var moveX: Double
   
   /**
     *  the latest screen coordinates of the recently-moved touch
     */
-  var moveY: Double = js.native
+  var moveY: Double
   
   /**
     * Number of touches currently on screen
     */
-  var numberActiveTouches: Double = js.native
+  var numberActiveTouches: Double
   
   /**
     *  ID of the gestureState- persisted as long as there at least one touch on
     */
-  var stateID: Double = js.native
+  var stateID: Double
   
   /**
     * current velocity of the gesture
     */
-  var vx: Double = js.native
+  var vx: Double
   
   /**
     * current velocity of the gesture
     */
-  var vy: Double = js.native
+  var vy: Double
   
   /**
     * the screen coordinates of the responder grant
     */
-  var x0: Double = js.native
+  var x0: Double
   
   /**
     * the screen coordinates of the responder grant
     */
-  var y0: Double = js.native
+  var y0: Double
 }
 object PanResponderGestureState {
   

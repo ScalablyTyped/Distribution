@@ -11,8 +11,8 @@ Rigorous implementation of RFC4122 (v1 and v4) UUIDs for React Native
 | Full name          | react-native-uuid |
 | Keywords           | react-native, react, iOS, Android, guid, rfc4122, uuid |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 623019 |
+| # dependents       | 24 |
+| # downloads        | 863555 |
 | # stars            | 0 |
 
 ## Links

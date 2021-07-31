@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepresentativeInfoData extends StObject {
   
   /** A map of political geographic divisions that contain the requested address, keyed by the unique Open Civic Data identifier for this division. */
   var divisions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.civicinfo.gapi.client.civicinfo.GeographicDivision}
-    */ typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.RepresentativeInfoData with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.RepresentativeInfoData & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Elected offices referenced by the divisions listed above. Will only be present if includeOffices was true in the request. */
-  var offices: js.UndefOr[js.Array[Office]] = js.native
+  var offices: js.UndefOr[js.Array[Office]] = js.undefined
   
   /** Officials holding the offices listed above. Will only be present if includeOffices was true in the request. */
-  var officials: js.UndefOr[js.Array[Official]] = js.native
+  var officials: js.UndefOr[js.Array[Official]] = js.undefined
 }
 object RepresentativeInfoData {
   
@@ -37,7 +35,7 @@ object RepresentativeInfoData {
     def setDivisions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.civicinfo.gapi.client.civicinfo.GeographicDivision}
-      */ typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.RepresentativeInfoData with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.RepresentativeInfoData & TopLevel[js.Any]
     ): Self = StObject.set(x, "divisions", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -3,21 +3,19 @@ package typings.cesium.anon
 import typings.cesium.mod.Cartesian2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberOfLevelZeroTilesY extends StObject {
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var numberOfLevelZeroTilesX: js.UndefOr[Double] = js.native
+  var numberOfLevelZeroTilesX: js.UndefOr[Double] = js.undefined
   
-  var numberOfLevelZeroTilesY: js.UndefOr[Double] = js.native
+  var numberOfLevelZeroTilesY: js.UndefOr[Double] = js.undefined
   
-  var rectangleNortheastInMeters: js.UndefOr[Cartesian2] = js.native
+  var rectangleNortheastInMeters: js.UndefOr[Cartesian2] = js.undefined
   
-  var rectangleSouthwestInMeters: js.UndefOr[Cartesian2] = js.native
+  var rectangleSouthwestInMeters: js.UndefOr[Cartesian2] = js.undefined
 }
 object NumberOfLevelZeroTilesY {
   

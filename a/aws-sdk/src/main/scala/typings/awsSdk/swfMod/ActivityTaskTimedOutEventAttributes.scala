@@ -2,31 +2,29 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityTaskTimedOutEventAttributes extends StObject {
   
   /**
     * Contains the content of the details parameter for the last call made by the activity to RecordActivityTaskHeartbeat.
     */
-  var details: js.UndefOr[LimitedData] = js.native
+  var details: js.UndefOr[LimitedData] = js.undefined
   
   /**
     * The ID of the ActivityTaskScheduled event that was recorded when this activity task was scheduled. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var scheduledEventId: EventId = js.native
+  var scheduledEventId: EventId
   
   /**
     * The ID of the ActivityTaskStarted event recorded when this activity task was started. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var startedEventId: EventId = js.native
+  var startedEventId: EventId
   
   /**
     * The type of the timeout that caused this event.
     */
-  var timeoutType: ActivityTaskTimeoutType = js.native
+  var timeoutType: ActivityTaskTimeoutType
 }
 object ActivityTaskTimedOutEventAttributes {
   

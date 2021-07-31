@@ -2,19 +2,17 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmbindObject[T /* <: EmbindObject[T] */] extends StObject {
   
-  def delete(): Unit = js.native
+  def delete(): Unit
   
-  def deleteAfter(): Unit = js.native
+  def deleteAfter(): Unit
   
-  def isAliasOf(other: js.Any): Boolean = js.native
+  def isAliasOf(other: js.Any): Boolean
   
-  def isDeleted(): Boolean = js.native
+  def isDeleted(): Boolean
 }
 object EmbindObject {
   
@@ -30,7 +28,7 @@ object EmbindObject {
   }
   
   @scala.inline
-  implicit class EmbindObjectMutableBuilder[Self <: EmbindObject[_], T /* <: EmbindObject[T] */] (val x: Self with EmbindObject[T]) extends AnyVal {
+  implicit class EmbindObjectMutableBuilder[Self <: EmbindObject[?], T /* <: EmbindObject[T] */] (val x: Self & EmbindObject[T]) extends AnyVal {
     
     @scala.inline
     def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))

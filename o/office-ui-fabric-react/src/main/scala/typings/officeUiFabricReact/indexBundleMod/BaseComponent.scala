@@ -3,12 +3,11 @@ package typings.officeUiFabricReact.indexBundleMod
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseComponent")
 @js.native
-class BaseComponent[TProps /* <: IBaseProps[_] */, TState] protected ()
+class BaseComponent[TProps /* <: IBaseProps[js.Any] */, TState] protected ()
   extends typings.officeUiFabricReact.mod.BaseComponent[TProps, TState] {
   /**
     * BaseComponent constructor
@@ -21,19 +20,19 @@ class BaseComponent[TProps /* <: IBaseProps[_] */, TState] protected ()
 /* static members */
 object BaseComponent {
   
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseComponent")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @deprecated Use React's error boundaries instead.
     */
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseComponent.onError")
-  @js.native
-  def onError(): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseComponent.onError")
-  @js.native
-  def onError(errorMessage: js.UndefOr[scala.Nothing], ex: js.Any): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseComponent.onError")
-  @js.native
-  def onError(errorMessage: String): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseComponent.onError")
-  @js.native
-  def onError(errorMessage: String, ex: js.Any): Unit = js.native
+  @scala.inline
+  def onError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")().asInstanceOf[Unit]
+  @scala.inline
+  def onError(errorMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def onError(errorMessage: String, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def onError(errorMessage: Unit, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

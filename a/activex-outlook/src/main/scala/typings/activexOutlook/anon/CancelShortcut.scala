@@ -3,15 +3,13 @@ package typings.activexOutlook.anon
 import typings.activexOutlook.Outlook.OutlookBarShortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelShortcut extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val Shortcut: OutlookBarShortcut = js.native
+  val Shortcut: OutlookBarShortcut
 }
 object CancelShortcut {
   

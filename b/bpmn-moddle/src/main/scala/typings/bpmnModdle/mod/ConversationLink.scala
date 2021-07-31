@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConversationLink extends BaseElement {
+trait ConversationLink
+  extends StObject
+     with BaseElement {
   
-  var name: String = js.native
+  var name: String
   
-  var sourceRef: InteractionNode = js.native
+  var sourceRef: InteractionNode
   
-  var targetRef: InteractionNode = js.native
+  var targetRef: InteractionNode
 }
 object ConversationLink {
   

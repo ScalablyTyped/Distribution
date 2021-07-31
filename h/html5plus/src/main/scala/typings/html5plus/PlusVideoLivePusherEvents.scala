@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
   */
-@js.native
 trait PlusVideoLivePusherEvents extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait PlusVideoLivePusherEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     * 网络状态通知事件
@@ -32,7 +30,7 @@ trait PlusVideoLivePusherEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var netstatus: js.UndefOr[String] = js.native
+  var netstatus: js.UndefOr[String] = js.undefined
   
   /**
     * 状态变化事件
@@ -73,7 +71,7 @@ trait PlusVideoLivePusherEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var statechange: js.UndefOr[String] = js.native
+  var statechange: js.UndefOr[String] = js.undefined
 }
 object PlusVideoLivePusherEvents {
   

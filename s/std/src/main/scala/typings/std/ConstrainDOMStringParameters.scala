@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstrainDOMStringParameters extends StObject {
   
-  var exact: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.native
+  var exact: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   
-  var ideal: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.native
+  var ideal: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 object ConstrainDOMStringParameters {
   

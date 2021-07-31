@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexDirectionProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait FlexDirectionProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends 
     */
   var flexDirection: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FlexDirectionProps {
   
@@ -30,12 +28,12 @@ object FlexDirectionProps {
   }
   
   @scala.inline
-  implicit class FlexDirectionPropsMutableBuilder[Self <: FlexDirectionProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with FlexDirectionProps[ThemeType]) extends AnyVal {
+  implicit class FlexDirectionPropsMutableBuilder[Self <: FlexDirectionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FlexDirectionProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setFlexDirection(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
@@ -47,6 +45,8 @@ object FlexDirectionProps {
     def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
     
     @scala.inline
-    def setFlexDirectionVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "flexDirection", js.Array(value :_*))
+    def setFlexDirectionVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any) | Null)*
+    ): Self = StObject.set(x, "flexDirection", js.Array(value :_*))
   }
 }

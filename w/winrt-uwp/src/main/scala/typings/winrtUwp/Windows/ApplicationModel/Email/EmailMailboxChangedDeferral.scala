@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a deferred process that will halt a thread until the deferral is complete. */
-@js.native
 trait EmailMailboxChangedDeferral extends StObject {
   
   /** Indicates to waiting processes that the deferral is complete. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object EmailMailboxChangedDeferral {
   

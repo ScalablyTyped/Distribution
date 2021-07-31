@@ -2,23 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of edits to make in response to a refactor action, plus an optional
   * location where renaming should be invoked from
   */
-@js.native
 trait RefactorEditInfo extends StObject {
   
-  var commands: js.UndefOr[js.Array[CodeActionCommand]] = js.native
+  var commands: js.UndefOr[js.Array[CodeActionCommand]] = js.undefined
   
-  var edits: js.Array[FileTextChanges] = js.native
+  var edits: js.Array[FileTextChanges]
   
-  var renameFilename: js.UndefOr[java.lang.String] = js.native
+  var renameFilename: js.UndefOr[java.lang.String] = js.undefined
   
-  var renameLocation: js.UndefOr[Double] = js.native
+  var renameLocation: js.UndefOr[Double] = js.undefined
 }
 object RefactorEditInfo {
   

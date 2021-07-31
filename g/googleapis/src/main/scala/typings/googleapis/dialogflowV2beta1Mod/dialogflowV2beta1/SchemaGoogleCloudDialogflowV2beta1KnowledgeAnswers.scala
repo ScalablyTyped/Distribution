@@ -2,19 +2,17 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the result of querying a Knowledge base.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers extends StObject {
   
   /**
     * A list of answers from Knowledge Connector.
     */
-  var answers: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer]] = js.native
+  var answers: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer]] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers {
   

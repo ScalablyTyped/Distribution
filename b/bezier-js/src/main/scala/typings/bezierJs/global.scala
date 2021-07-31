@@ -12,7 +12,6 @@ import typings.bezierJs.BezierJs.Shape
 import typings.bezierJs.anon.Typeofutils
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -30,68 +29,56 @@ object global {
     @JSGlobal("BezierJs.Bezier")
     @js.native
     class Bezier protected ()
-      extends typings.bezierJs.BezierJs.Bezier {
+      extends StObject
+         with typings.bezierJs.BezierJs.Bezier {
       def this(points: js.Array[Double | Point]) = this()
       def this(p1: Point, p2: Point, p3: Point) = this()
       def this(p1: Point, p2: Point, p3: Point, p4: Point) = this()
       def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double) = this()
       def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double) = this()
-      def this(
-        x1: Double,
-        y1: Double,
-        x2: Double,
-        y2: Double,
-        x3: Double,
-        y3: Double,
-        x4: js.UndefOr[scala.Nothing],
-        y4: Double
-      ) = this()
       def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double) = this()
+      def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Unit, y4: Double) = this()
     }
     object Bezier {
       
-      /* static member */
-      @JSGlobal("BezierJs.Bezier.cubicFromPoints")
+      @JSGlobal("BezierJs.Bezier")
       @js.native
-      def cubicFromPoints(S: Point, B: Point, E: Point): typings.bezierJs.BezierJs.Bezier = js.native
-      @JSGlobal("BezierJs.Bezier.cubicFromPoints")
-      @js.native
-      def cubicFromPoints(S: Point, B: Point, E: Point, t: js.UndefOr[scala.Nothing], d1: Double): typings.bezierJs.BezierJs.Bezier = js.native
-      @JSGlobal("BezierJs.Bezier.cubicFromPoints")
-      @js.native
-      def cubicFromPoints(S: Point, B: Point, E: Point, t: Double): typings.bezierJs.BezierJs.Bezier = js.native
-      @JSGlobal("BezierJs.Bezier.cubicFromPoints")
-      @js.native
-      def cubicFromPoints(S: Point, B: Point, E: Point, t: Double, d1: Double): typings.bezierJs.BezierJs.Bezier = js.native
+      val ^ : js.Any = js.native
       
       /* static member */
-      @JSGlobal("BezierJs.Bezier.fromSVG")
-      @js.native
-      def fromSVG(svgString: String): typings.bezierJs.BezierJs.Bezier = js.native
+      @scala.inline
+      def cubicFromPoints(S: Point, B: Point, E: Point): typings.bezierJs.BezierJs.Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any])).asInstanceOf[typings.bezierJs.BezierJs.Bezier]
+      @scala.inline
+      def cubicFromPoints(S: Point, B: Point, E: Point, t: Double): typings.bezierJs.BezierJs.Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[typings.bezierJs.BezierJs.Bezier]
+      @scala.inline
+      def cubicFromPoints(S: Point, B: Point, E: Point, t: Double, d1: Double): typings.bezierJs.BezierJs.Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any], d1.asInstanceOf[js.Any])).asInstanceOf[typings.bezierJs.BezierJs.Bezier]
+      @scala.inline
+      def cubicFromPoints(S: Point, B: Point, E: Point, t: Unit, d1: Double): typings.bezierJs.BezierJs.Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any], d1.asInstanceOf[js.Any])).asInstanceOf[typings.bezierJs.BezierJs.Bezier]
       
       /* static member */
-      @JSGlobal("BezierJs.Bezier.getABC")
-      @js.native
-      def getABC(n: Double, S: Point, B: Point, E: Point, t: Double): ABC = js.native
+      @scala.inline
+      def fromSVG(svgString: String): typings.bezierJs.BezierJs.Bezier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSVG")(svgString.asInstanceOf[js.Any]).asInstanceOf[typings.bezierJs.BezierJs.Bezier]
       
       /* static member */
-      @JSGlobal("BezierJs.Bezier.getUtils")
-      @js.native
-      def getUtils(): Typeofutils = js.native
+      @scala.inline
+      def getABC(n: Double, S: Point, B: Point, E: Point, t: Double): ABC = (^.asInstanceOf[js.Dynamic].applyDynamic("getABC")(n.asInstanceOf[js.Any], S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[ABC]
       
       /* static member */
-      @JSGlobal("BezierJs.Bezier.quadraticFromPoints")
-      @js.native
-      def quadraticFromPoints(p1: Point, p2: Point, p3: Point): typings.bezierJs.BezierJs.Bezier = js.native
-      @JSGlobal("BezierJs.Bezier.quadraticFromPoints")
-      @js.native
-      def quadraticFromPoints(p1: Point, p2: Point, p3: Point, t: Double): typings.bezierJs.BezierJs.Bezier = js.native
+      @scala.inline
+      def getUtils(): Typeofutils = ^.asInstanceOf[js.Dynamic].applyDynamic("getUtils")().asInstanceOf[Typeofutils]
+      
+      /* static member */
+      @scala.inline
+      def quadraticFromPoints(p1: Point, p2: Point, p3: Point): typings.bezierJs.BezierJs.Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[typings.bezierJs.BezierJs.Bezier]
+      @scala.inline
+      def quadraticFromPoints(p1: Point, p2: Point, p3: Point, t: Double): typings.bezierJs.BezierJs.Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[typings.bezierJs.BezierJs.Bezier]
     }
     
     @JSGlobal("BezierJs.BezierCap")
     @js.native
     class BezierCap ()
-      extends typings.bezierJs.BezierJs.BezierCap
+      extends StObject
+         with typings.bezierJs.BezierJs.BezierCap
     
     /**
       * Poly Bezier
@@ -100,8 +87,33 @@ object global {
     @JSGlobal("BezierJs.PolyBezier")
     @js.native
     class PolyBezier protected ()
-      extends typings.bezierJs.BezierJs.PolyBezier {
+      extends StObject
+         with typings.bezierJs.BezierJs.PolyBezier {
       def this(curves: js.Array[typings.bezierJs.BezierJs.Bezier]) = this()
+      
+      /* CompleteClass */
+      var _3d: js.Any = js.native
+      
+      /* CompleteClass */
+      override def addCurve(curve: typings.bezierJs.BezierJs.Bezier): Unit = js.native
+      
+      /* CompleteClass */
+      override def bbox(): BBox = js.native
+      
+      /* CompleteClass */
+      override def curve(idx: Double): typings.bezierJs.BezierJs.Bezier = js.native
+      
+      /* CompleteClass */
+      var curves: js.Array[typings.bezierJs.BezierJs.Bezier] = js.native
+      
+      /* CompleteClass */
+      override def length(): Double = js.native
+      
+      /* CompleteClass */
+      override def offset(d: Double): typings.bezierJs.BezierJs.PolyBezier = js.native
+      
+      /* CompleteClass */
+      var points: js.Array[Point] = js.native
     }
     
     object utils {
@@ -122,149 +134,114 @@ object global {
       @scala.inline
       def Tvalues_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tvalues")(x.asInstanceOf[js.Any])
       
-      @JSGlobal("BezierJs.utils.abcratio")
-      @js.native
-      def abcratio(t: Double, n: Double): Double = js.native
+      @scala.inline
+      def abcratio(t: Double, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("abcratio")(t.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("BezierJs.utils.align")
-      @js.native
-      def align(points: js.Array[Point], line: Line): js.Array[Point] = js.native
+      @scala.inline
+      def align(points: js.Array[Point], line: Line): js.Array[Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("align")(points.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point]]
       
-      @JSGlobal("BezierJs.utils.angle")
-      @js.native
-      def angle(o: Point, v1: Point, v2: Point): Double = js.native
+      @scala.inline
+      def angle(o: Point, v1: Point, v2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angle")(o.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("BezierJs.utils.approximately")
-      @js.native
-      def approximately(a: Double, b: Double): Boolean = js.native
-      @JSGlobal("BezierJs.utils.approximately")
-      @js.native
-      def approximately(a: Double, b: Double, precision: Double): Boolean = js.native
+      @scala.inline
+      def approximately(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("approximately")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def approximately(a: Double, b: Double, precision: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("approximately")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("BezierJs.utils.arcfn")
-      @js.native
-      def arcfn(t: Double, derivativeFn: js.Function): Double = js.native
+      @scala.inline
+      def arcfn(t: Double, derivativeFn: js.Function): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arcfn")(t.asInstanceOf[js.Any], derivativeFn.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("BezierJs.utils.bboxoverlap")
-      @js.native
-      def bboxoverlap(b1: BBox, b2: BBox): Boolean = js.native
+      @scala.inline
+      def bboxoverlap(b1: BBox, b2: BBox): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("bboxoverlap")(b1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("BezierJs.utils.between")
-      @js.native
-      def between(v: Double, m: Double, M: Double): Boolean = js.native
+      @scala.inline
+      def between(v: Double, m: Double, M: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(v.asInstanceOf[js.Any], m.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("BezierJs.utils.closest")
-      @js.native
-      def closest(LUT: js.Array[Point], point: Point): Closest = js.native
+      @scala.inline
+      def closest(LUT: js.Array[Point], point: Point): Closest = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(LUT.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Closest]
       
-      @JSGlobal("BezierJs.utils.copy")
-      @js.native
-      def copy(obj: js.Object): js.Any = js.native
+      @scala.inline
+      def copy(obj: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @JSGlobal("BezierJs.utils.dist")
-      @js.native
-      def dist(p1: Point, p2: Point): Double = js.native
+      @scala.inline
+      def dist(p1: Point, p2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dist")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("BezierJs.utils.droots")
-      @js.native
-      def droots(p: js.Array[Double]): js.Array[Double] = js.native
+      @scala.inline
+      def droots(p: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("droots")(p.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
       
-      @JSGlobal("BezierJs.utils.expandbox")
-      @js.native
-      def expandbox(bbox: BBox, _bbox: BBox): Unit = js.native
+      @scala.inline
+      def expandbox(bbox: BBox, _bbox: BBox): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expandbox")(bbox.asInstanceOf[js.Any], _bbox.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("BezierJs.utils.findbbox")
-      @js.native
-      def findbbox(sections: js.Array[typings.bezierJs.BezierJs.Bezier]): BBox = js.native
+      @scala.inline
+      def findbbox(sections: js.Array[typings.bezierJs.BezierJs.Bezier]): BBox = ^.asInstanceOf[js.Dynamic].applyDynamic("findbbox")(sections.asInstanceOf[js.Any]).asInstanceOf[BBox]
       
-      @JSGlobal("BezierJs.utils.getccenter")
-      @js.native
-      def getccenter(p1: Point, p2: Point, p3: Point): Arc = js.native
+      @scala.inline
+      def getccenter(p1: Point, p2: Point, p3: Point): Arc = (^.asInstanceOf[js.Dynamic].applyDynamic("getccenter")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Arc]
       
-      @JSGlobal("BezierJs.utils.getminmax")
-      @js.native
-      def getminmax(curve: typings.bezierJs.BezierJs.Bezier, d: String, list: js.Array[Double]): MinMax = js.native
+      @scala.inline
+      def getminmax(curve: typings.bezierJs.BezierJs.Bezier, d: String, list: js.Array[Double]): MinMax = (^.asInstanceOf[js.Dynamic].applyDynamic("getminmax")(curve.asInstanceOf[js.Any], d.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[MinMax]
       
-      @JSGlobal("BezierJs.utils.inflections")
-      @js.native
-      def inflections(points: js.Array[Point]): js.Array[Double] = js.native
+      @scala.inline
+      def inflections(points: js.Array[Point]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("inflections")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
       
-      @JSGlobal("BezierJs.utils.length")
-      @js.native
-      def length(derivativeFn: js.Function): Double = js.native
+      @scala.inline
+      def length(derivativeFn: js.Function): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("length")(derivativeFn.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @JSGlobal("BezierJs.utils.lerp")
-      @js.native
-      def lerp(r: Double, v1: Point, v2: Point): Point = js.native
+      @scala.inline
+      def lerp(r: Double, v1: Point, v2: Point): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(r.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Point]
       
-      @JSGlobal("BezierJs.utils.lli")
-      @js.native
-      def lli(v1: Offset, v2: Offset): Point = js.native
+      @scala.inline
+      def lli(v1: Offset, v2: Offset): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("lli")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Point]
       
-      @JSGlobal("BezierJs.utils.lli4")
-      @js.native
-      def lli4(p1: Point, p2: Point, p3: Point, p4: Point): Point = js.native
+      @scala.inline
+      def lli4(p1: Point, p2: Point, p3: Point, p4: Point): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("lli4")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any])).asInstanceOf[Point]
       
-      @JSGlobal("BezierJs.utils.lli8")
-      @js.native
-      def lli8(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): Point = js.native
+      @scala.inline
+      def lli8(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("lli8")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any])).asInstanceOf[Point]
       
-      @JSGlobal("BezierJs.utils.makeline")
-      @js.native
-      def makeline(p1: Point, p2: Point): typings.bezierJs.BezierJs.Bezier = js.native
+      @scala.inline
+      def makeline(p1: Point, p2: Point): typings.bezierJs.BezierJs.Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("makeline")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[typings.bezierJs.BezierJs.Bezier]
       
-      @JSGlobal("BezierJs.utils.makeshape")
-      @js.native
-      def makeshape(forward: typings.bezierJs.BezierJs.Bezier, back: typings.bezierJs.BezierJs.Bezier): Shape = js.native
-      @JSGlobal("BezierJs.utils.makeshape")
-      @js.native
+      @scala.inline
+      def makeshape(forward: typings.bezierJs.BezierJs.Bezier, back: typings.bezierJs.BezierJs.Bezier): Shape = (^.asInstanceOf[js.Dynamic].applyDynamic("makeshape")(forward.asInstanceOf[js.Any], back.asInstanceOf[js.Any])).asInstanceOf[Shape]
+      @scala.inline
       def makeshape(
         forward: typings.bezierJs.BezierJs.Bezier,
         back: typings.bezierJs.BezierJs.Bezier,
         curveIntersectionThreshold: Double
-      ): Shape = js.native
+      ): Shape = (^.asInstanceOf[js.Dynamic].applyDynamic("makeshape")(forward.asInstanceOf[js.Any], back.asInstanceOf[js.Any], curveIntersectionThreshold.asInstanceOf[js.Any])).asInstanceOf[Shape]
       
-      @JSGlobal("BezierJs.utils.map")
-      @js.native
-      def map(v: Double, ds: Double, de: Double, ts: Double, te: Double): Double = js.native
+      @scala.inline
+      def map(v: Double, ds: Double, de: Double, ts: Double, te: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(v.asInstanceOf[js.Any], ds.asInstanceOf[js.Any], de.asInstanceOf[js.Any], ts.asInstanceOf[js.Any], te.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("BezierJs.utils.pairiteration")
-      @js.native
-      def pairiteration(c1: typings.bezierJs.BezierJs.Bezier, c2: typings.bezierJs.BezierJs.Bezier): js.Array[String] = js.native
-      @JSGlobal("BezierJs.utils.pairiteration")
-      @js.native
+      @scala.inline
+      def pairiteration(c1: typings.bezierJs.BezierJs.Bezier, c2: typings.bezierJs.BezierJs.Bezier): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("pairiteration")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+      @scala.inline
       def pairiteration(
         c1: typings.bezierJs.BezierJs.Bezier,
         c2: typings.bezierJs.BezierJs.Bezier,
         curveIntersectionThreshold: Double
-      ): js.Array[String] = js.native
+      ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("pairiteration")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any], curveIntersectionThreshold.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
       
-      @JSGlobal("BezierJs.utils.pointToString")
-      @js.native
-      def pointToString(p: Point): String = js.native
+      @scala.inline
+      def pointToString(p: Point): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pointToString")(p.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSGlobal("BezierJs.utils.pointsToString")
-      @js.native
-      def pointsToString(points: js.Array[Point]): String = js.native
+      @scala.inline
+      def pointsToString(points: js.Array[Point]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pointsToString")(points.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSGlobal("BezierJs.utils.projectionratio")
-      @js.native
-      def projectionratio(t: Double, n: Double): Double = js.native
+      @scala.inline
+      def projectionratio(t: Double, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("projectionratio")(t.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("BezierJs.utils.roots")
-      @js.native
-      def roots(points: js.Array[Point], line: Line): js.Array[Double] = js.native
+      @scala.inline
+      def roots(points: js.Array[Point], line: Line): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("roots")(points.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
       
-      @JSGlobal("BezierJs.utils.round")
-      @js.native
-      def round(v: Double, d: Double): Double = js.native
+      @scala.inline
+      def round(v: Double, d: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("round")(v.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("BezierJs.utils.shapeintersections")
-      @js.native
-      def shapeintersections(s1: Shape, bbox1: BBox, s2: Shape, bbox2: BBox): js.Array[js.Array[Double | String]] = js.native
-      @JSGlobal("BezierJs.utils.shapeintersections")
-      @js.native
-      def shapeintersections(s1: Shape, bbox1: BBox, s2: Shape, bbox2: BBox, curveIntersectionThreshold: Double): js.Array[js.Array[Double | String]] = js.native
+      @scala.inline
+      def shapeintersections(s1: Shape, bbox1: BBox, s2: Shape, bbox2: BBox): js.Array[js.Array[Double | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shapeintersections")(s1.asInstanceOf[js.Any], bbox1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], bbox2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double | String]]]
+      @scala.inline
+      def shapeintersections(s1: Shape, bbox1: BBox, s2: Shape, bbox2: BBox, curveIntersectionThreshold: Double): js.Array[js.Array[Double | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shapeintersections")(s1.asInstanceOf[js.Any], bbox1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], bbox2.asInstanceOf[js.Any], curveIntersectionThreshold.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double | String]]]
     }
   }
 }

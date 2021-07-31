@@ -2,21 +2,19 @@ package typings.reactNativeMultiSlider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BorderRadius extends StObject {
     
-    var borderRadius: Double = js.native
+    var borderRadius: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var slipDisplacement: Double = js.native
+    var slipDisplacement: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object BorderRadius {
     

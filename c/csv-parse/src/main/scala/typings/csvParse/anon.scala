@@ -3,17 +3,16 @@ package typings.csvParse
 import typings.csvParse.es5Mod._ColumnOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Name
-    extends _ColumnOption
+    extends StObject
+       with _ColumnOption
        with typings.csvParse.mod._ColumnOption {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     

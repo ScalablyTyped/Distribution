@@ -3,20 +3,18 @@ package typings.reactNativeCommunityCliTypes.anon
 import typings.reactNativeCommunityCliTypes.mod.InquirerPrompt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<@react-native-community/cli-types.@react-native-community/cli-types.Dependency, 'name' | 'root'> */
-@js.native
 trait OmitDependencynameroot extends StObject {
   
-  var assets: js.Array[String] = js.native
+  var assets: js.Array[String]
   
-  var hooks: Postlink = js.native
+  var hooks: Postlink
   
-  var params: js.Array[InquirerPrompt] = js.native
+  var params: js.Array[InquirerPrompt]
   
-  var platforms: Dictkey = js.native
+  var platforms: Dictkey
 }
 object OmitDependencynameroot {
   

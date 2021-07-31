@@ -2,16 +2,14 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PollForTaskOutput extends StObject {
   
   /**
     * The information needed to complete the task that is being assigned to the task runner. One of the fields returned in this object is taskId, which contains an identifier for the task being assigned. The calling task runner uses taskId in subsequent calls to ReportTaskProgress and SetTaskStatus.
     */
-  var taskObject: js.UndefOr[TaskObject] = js.native
+  var taskObject: js.UndefOr[TaskObject] = js.undefined
 }
 object PollForTaskOutput {
   

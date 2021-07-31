@@ -13,34 +13,32 @@ import typings.extenso.extensoStrings.short
 import typings.extenso.mod.Extenso.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(number: String): String = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(number: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(number: Double): String = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(number: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("extenso", JSImport.Namespace)
   @js.native
-  def apply(number: String): String = js.native
-  @JSImport("extenso", JSImport.Namespace)
-  @js.native
-  def apply(number: String, options: Options): String = js.native
-  @JSImport("extenso", JSImport.Namespace)
-  @js.native
-  def apply(number: Double): String = js.native
-  @JSImport("extenso", JSImport.Namespace)
-  @js.native
-  def apply(number: Double, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   object Extenso {
     
-    @js.native
     trait BaseOptions extends StObject {
       
-      var locale: js.UndefOr[br | pt] = js.native
+      var locale: js.UndefOr[br | pt] = js.undefined
       
-      var negative: js.UndefOr[formal | informal] = js.native
+      var negative: js.UndefOr[formal | informal] = js.undefined
       
-      var scale: js.UndefOr[short | long] = js.native
+      var scale: js.UndefOr[short | long] = js.undefined
     }
     object BaseOptions {
       
@@ -73,20 +71,20 @@ object mod {
       }
     }
     
-    @js.native
     trait CurrencyModeOptions
-      extends BaseOptions
+      extends StObject
+         with BaseOptions
          with Options {
       
-      var currency: js.UndefOr[Type] = js.native
+      var currency: js.UndefOr[Type] = js.undefined
       
-      var mode: currency = js.native
+      var mode: currency
     }
     object CurrencyModeOptions {
       
       @scala.inline
-      def apply(mode: currency): CurrencyModeOptions = {
-        val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+      def apply(): CurrencyModeOptions = {
+        val __obj = js.Dynamic.literal(mode = "currency")
         __obj.asInstanceOf[CurrencyModeOptions]
       }
       
@@ -104,14 +102,14 @@ object mod {
       }
     }
     
-    @js.native
     trait NumberModeOptions
-      extends BaseOptions
+      extends StObject
+         with BaseOptions
          with Options {
       
-      var mode: js.UndefOr[number] = js.native
+      var mode: js.UndefOr[number] = js.undefined
       
-      var number: js.UndefOr[Decimal] = js.native
+      var number: js.UndefOr[Decimal] = js.undefined
     }
     object NumberModeOptions {
       
@@ -146,8 +144,8 @@ object mod {
     object Options {
       
       @scala.inline
-      def CurrencyModeOptions(mode: currency): typings.extenso.mod.Extenso.CurrencyModeOptions = {
-        val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+      def CurrencyModeOptions(): typings.extenso.mod.Extenso.CurrencyModeOptions = {
+        val __obj = js.Dynamic.literal(mode = "currency")
         __obj.asInstanceOf[typings.extenso.mod.Extenso.CurrencyModeOptions]
       }
       

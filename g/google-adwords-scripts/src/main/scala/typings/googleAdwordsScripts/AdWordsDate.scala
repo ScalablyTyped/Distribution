@@ -2,18 +2,16 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Types
-@js.native
 trait AdWordsDate extends StObject {
   
-  var day: Double = js.native
+  var day: Double
   
-  var month: Double = js.native
+  var month: Double
   
-  var year: Double = js.native
+  var year: Double
 }
 object AdWordsDate {
   

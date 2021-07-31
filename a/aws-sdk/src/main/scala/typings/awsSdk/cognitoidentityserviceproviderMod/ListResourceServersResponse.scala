@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourceServersResponse extends StObject {
   
   /**
     * A pagination token.
     */
-  var NextToken: js.UndefOr[PaginationKeyType] = js.native
+  var NextToken: js.UndefOr[PaginationKeyType] = js.undefined
   
   /**
     * The resource servers.
     */
-  var ResourceServers: ResourceServersListType = js.native
+  var ResourceServers: ResourceServersListType
 }
 object ListResourceServersResponse {
   

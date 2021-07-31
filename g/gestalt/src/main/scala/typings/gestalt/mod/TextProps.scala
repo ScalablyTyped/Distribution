@@ -30,31 +30,29 @@ import typings.gestalt.gestaltStrings.white
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextProps extends StObject {
   
-  var align: js.UndefOr[left | right | center | justify] = js.native
+  var align: js.UndefOr[left | right | center | justify] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var color: js.UndefOr[
     blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
-  ] = js.native
+  ] = js.undefined
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
-  var overflow: js.UndefOr[normal | breakWord] = js.native
+  var overflow: js.UndefOr[normal | breakWord] = js.undefined
   
-  var size: js.UndefOr[sm | md | lg] = js.native
+  var size: js.UndefOr[sm | md | lg] = js.undefined
   
-  var truncate: js.UndefOr[Boolean] = js.native
+  var truncate: js.UndefOr[Boolean] = js.undefined
   
-  var weight: js.UndefOr[bold | normal] = js.native
+  var weight: js.UndefOr[bold | normal] = js.undefined
 }
 object TextProps {
   

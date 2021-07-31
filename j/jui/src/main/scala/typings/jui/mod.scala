@@ -24,13 +24,14 @@ import typings.jui.juiStrings.vertical
 import typings.juiCore.mod.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @js.native
-  trait UIAccordion extends UIEvent {
+  trait UIAccordion
+    extends StObject
+       with UIEvent {
     
     def apply(selector: js.Any): this.type = js.native
     def apply(selector: js.Any, options: AutoFold): this.type = js.native
@@ -205,7 +206,7 @@ object mod {
       *
       * @param nodes Dropdown list
       */
-    def update(nodes: js.Array[_]): Unit = js.native
+    def update(nodes: js.Array[js.Any]): Unit = js.native
   }
   
   @js.native
@@ -286,7 +287,7 @@ object mod {
     def apply(selector: js.Any): this.type = js.native
     def apply(selector: js.Any, options: Items): this.type = js.native
     
-    def addItem(item: js.Array[_]): Unit = js.native
+    def addItem(item: js.Array[js.Any]): Unit = js.native
     def addItem(item: js.Object): Unit = js.native
     
     /**
@@ -309,9 +310,9 @@ object mod {
     
     def getAllValue(key: String): js.Any = js.native
     
-    def getDefaultValue(): js.Array[_] = js.native
+    def getDefaultValue(): js.Array[js.Any] = js.native
     
-    def getGroupList(): js.Array[_] = js.native
+    def getGroupList(): js.Array[js.Any] = js.native
     
     /**
       *
@@ -319,12 +320,12 @@ object mod {
       *
       * @param [key=null]  if key is null, value is all properties.
       */
-    def getValue(): js.Object | js.Array[_] = js.native
-    def getValue(key: String): js.Object | js.Array[_] = js.native
+    def getValue(): js.Object | js.Array[js.Any] = js.native
+    def getValue(key: String): js.Object | js.Array[js.Any] = js.native
     
     def initValue(obj: js.Object): Unit = js.native
     
-    def loadItems(newItems: js.Array[_]): Unit = js.native
+    def loadItems(newItems: js.Array[js.Any]): Unit = js.native
     
     def refreshValue($dom: js.Any, newValue: js.Any): Unit = js.native
     
@@ -349,14 +350,14 @@ object mod {
     
     def getSelectedIndex(): Double = js.native
     
-    def getValue(): js.Any | js.Array[_] = js.native
+    def getValue(): js.Any | js.Array[js.Any] = js.native
     
     def setSelectedIndex(index: Double): Unit = js.native
     
     def setValue(value: js.Any): Unit = js.native
-    def setValue(value: js.Array[_]): Unit = js.native
+    def setValue(value: js.Array[js.Any]): Unit = js.native
     
-    def update(data: js.Array[_]): Unit = js.native
+    def update(data: js.Array[js.Any]): Unit = js.native
   }
   
   @js.native
@@ -487,7 +488,7 @@ object mod {
       * Changes the tab list
       *
       */
-    def update(nodes: js.Array[_]): Unit = js.native
+    def update(nodes: js.Array[js.Any]): Unit = js.native
   }
   
   @js.native
@@ -554,7 +555,7 @@ object mod {
       * Adds a node at a specified index.
       *
       */
-    def insert(index: String, data: js.Array[_]): Unit = js.native
+    def insert(index: String, data: js.Array[js.Any]): Unit = js.native
     
     /**
       * Return all nodes of the root.
@@ -616,39 +617,38 @@ object mod {
       * Changes to the node at a specified index.
       *
       */
-    def update(index: String, data: js.Array[_]): Unit = js.native
+    def update(index: String, data: js.Array[js.Any]): Unit = js.native
   }
   
-  @js.native
   trait UITreeBase extends StObject {
     
-    def appendNode(args: js.Any*): UITreeNode = js.native
+    def appendNode(args: js.Any*): UITreeNode
     
-    def foldNode(index: String): Unit = js.native
+    def foldNode(index: String): Unit
     
-    def foldNodeAll(index: String): Unit = js.native
+    def foldNodeAll(index: String): Unit
     
-    def getNode(index: String): UITreeNode = js.native
+    def getNode(index: String): UITreeNode
     
-    def getNodeAll(index: String): js.Array[UITreeNode] = js.native
+    def getNodeAll(index: String): js.Array[UITreeNode]
     
-    def getNodeParent(index: String): UITreeNode = js.native
+    def getNodeParent(index: String): UITreeNode
     
-    def getRoot(): UITreeNode = js.native
+    def getRoot(): UITreeNode
     
-    def insertNode(index: String, data: js.Any): UITreeNode = js.native
+    def insertNode(index: String, data: js.Any): UITreeNode
     
-    def moveNode(index: String, targetIndex: Double): Unit = js.native
+    def moveNode(index: String, targetIndex: Double): Unit
     
-    def openNode(index: String): Unit = js.native
+    def openNode(index: String): Unit
     
-    def openNodeAll(index: String): Unit = js.native
+    def openNodeAll(index: String): Unit
     
-    def removeNode(index: String): Unit = js.native
+    def removeNode(index: String): Unit
     
-    def removeNodes(): Unit = js.native
+    def removeNodes(): Unit
     
-    def updateNode(index: String, data: js.Any): UITreeNode = js.native
+    def updateNode(index: String, data: js.Any): UITreeNode
   }
   object UITreeBase {
     
@@ -720,32 +720,31 @@ object mod {
     }
   }
   
-  @js.native
   trait UITreeNode extends StObject {
     
     /** List of child nodes of a specified node */
-    var children: js.UndefOr[js.Array[UITreeNode]] = js.native
+    var children: js.UndefOr[js.Array[UITreeNode]] = js.undefined
     
     /** Data of a specified node */
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Depth of a specified node */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
     /** LI element of a specified node */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** Index of a specified node  */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Unique number of a specifiede node at the current depth */
-    var nodenum: js.UndefOr[Double] = js.native
+    var nodenum: js.UndefOr[Double] = js.undefined
     
     /** Variable that refers to the parent of the current node */
-    var parent: js.UndefOr[UITreeNode] = js.native
+    var parent: js.UndefOr[UITreeNode] = js.undefined
     
     /** State value that indicates whether a child node is shown or hidden */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object UITreeNode {
     
@@ -768,7 +767,7 @@ object mod {
       def setChildrenVarargs(value: UITreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

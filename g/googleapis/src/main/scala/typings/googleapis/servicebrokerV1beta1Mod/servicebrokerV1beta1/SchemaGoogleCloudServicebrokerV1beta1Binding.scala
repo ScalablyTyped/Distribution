@@ -3,61 +3,59 @@ package typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the binding.
   */
-@js.native
 trait SchemaGoogleCloudServicebrokerV1beta1Binding extends StObject {
   
   /**
     * A JSON object that contains data for platform resources associated with
     * the binding to be created.
     */
-  var bind_resource: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var bind_resource: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The id of the binding. Must be unique within GCP project. Maximum length
     * is 64, GUID recommended. Required.
     */
-  var binding_id: js.UndefOr[String] = js.native
+  var binding_id: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Timestamp for when the binding was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. String containing the Deployment Manager deployment name
     * that was created for this binding,
     */
-  var deploymentName: js.UndefOr[String] = js.native
+  var deploymentName: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration options for the service binding.
     */
-  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The ID of the plan. See `Service` and `Plan` resources for details.
     * Maximum length is 64, GUID recommended. Required.
     */
-  var plan_id: js.UndefOr[String] = js.native
+  var plan_id: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The resource name of the binding, e.g.
     * projects/project_id/brokers/broker_id/service_instances/instance_id/bindings/binding_id.
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the service. Must be a valid identifier of a service contained
     * in the list from a `ListServices()` call. Maximum length is 64, GUID
     * recommended. Required.
     */
-  var service_id: js.UndefOr[String] = js.native
+  var service_id: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudServicebrokerV1beta1Binding {
   

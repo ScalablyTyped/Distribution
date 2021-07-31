@@ -5,12 +5,13 @@ import typings.wicgFileSystemAccess.mod.BaseFileSystemHandle
 import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.directory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("FileSystemDirectoryHandle")
 @js.native
-class FileSystemDirectoryHandle () extends BaseFileSystemHandle {
+class FileSystemDirectoryHandle ()
+  extends StObject
+     with BaseFileSystemHandle {
   
   def entries(): AsyncIterableIterator[js.Tuple2[String, FileSystemHandle]] = js.native
   
@@ -76,11 +77,14 @@ class FileSystemDirectoryHandle () extends BaseFileSystemHandle {
 }
 object FileSystemDirectoryHandle {
   
+  @JSGlobal("FileSystemDirectoryHandle")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @deprecated Old method just for Chromium <=85. Use `navigator.storage.getDirectory()` in the new API.
     */
   /* static member */
-  @JSGlobal("FileSystemDirectoryHandle.getSystemDirectory")
-  @js.native
-  def getSystemDirectory(options: GetSystemDirectoryOptions): js.Promise[FileSystemDirectoryHandle] = js.native
+  @scala.inline
+  def getSystemDirectory(options: GetSystemDirectoryOptions): js.Promise[FileSystemDirectoryHandle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemDirectory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileSystemDirectoryHandle]]
 }

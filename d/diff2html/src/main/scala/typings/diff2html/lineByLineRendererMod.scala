@@ -14,14 +14,15 @@ import typings.diff2html.typesMod.DiffStyleType
 import typings.diff2html.typesMod.LineMatchingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineByLineRendererMod {
   
   @JSImport("diff2html/lib/line-by-line-renderer", JSImport.Default)
   @js.native
-  class default protected () extends LineByLineRenderer {
+  class default protected ()
+    extends StObject
+       with LineByLineRenderer {
     def this(hoganUtils: typings.diff2html.hoganjsUtilsMod.default) = this()
     def this(hoganUtils: typings.diff2html.hoganjsUtilsMod.default, config: LineByLineRendererConfig) = this()
   }
@@ -78,24 +79,23 @@ object lineByLineRendererMod {
   
   type DiffLineGroups = js.Array[
     js.Tuple3[
-      js.Array[DiffLineContext with DiffLineContent], 
-      js.Array[DiffLineDeleted with DiffLineContent], 
-      js.Array[DiffLineInserted with DiffLineContent]
+      js.Array[DiffLineContext & DiffLineContent], 
+      js.Array[DiffLineDeleted & DiffLineContent], 
+      js.Array[DiffLineInserted & DiffLineContent]
     ]
   ]
   
-  @js.native
   trait DiffPreparedLine extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var newNumber: js.UndefOr[Double] = js.native
+    var newNumber: js.UndefOr[Double] = js.undefined
     
-    var oldNumber: js.UndefOr[Double] = js.native
+    var oldNumber: js.UndefOr[Double] = js.undefined
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var `type`: CSSLineClass = js.native
+    var `type`: CSSLineClass
   }
   object DiffPreparedLine {
     
@@ -132,12 +132,11 @@ object lineByLineRendererMod {
     }
   }
   
-  @js.native
   trait FileHtml extends StObject {
     
-    var left: String = js.native
+    var left: String
     
-    var right: String = js.native
+    var right: String
   }
   object FileHtml {
     
@@ -172,7 +171,7 @@ object lineByLineRendererMod {
     def generateFileHtml(file: DiffFile): String = js.native
     
     def generateLineHtml(): FileHtml = js.native
-    def generateLineHtml(oldLine: js.UndefOr[scala.Nothing], newLine: DiffPreparedLine): FileHtml = js.native
+    def generateLineHtml(oldLine: Unit, newLine: DiffPreparedLine): FileHtml = js.native
     def generateLineHtml(oldLine: DiffPreparedLine): FileHtml = js.native
     def generateLineHtml(oldLine: DiffPreparedLine, newLine: DiffPreparedLine): FileHtml = js.native
     
@@ -188,14 +187,15 @@ object lineByLineRendererMod {
     def render(diffFiles: js.Array[DiffFile]): String = js.native
   }
   
-  @js.native
-  trait LineByLineRendererConfig extends RenderConfig {
+  trait LineByLineRendererConfig
+    extends StObject
+       with RenderConfig {
     
-    var matchingMaxComparisons: js.UndefOr[Double] = js.native
+    var matchingMaxComparisons: js.UndefOr[Double] = js.undefined
     
-    var maxLineSizeInBlockForComparison: js.UndefOr[Double] = js.native
+    var maxLineSizeInBlockForComparison: js.UndefOr[Double] = js.undefined
     
-    var renderNothingWhenEmpty: js.UndefOr[Boolean] = js.native
+    var renderNothingWhenEmpty: js.UndefOr[Boolean] = js.undefined
   }
   object LineByLineRendererConfig {
     

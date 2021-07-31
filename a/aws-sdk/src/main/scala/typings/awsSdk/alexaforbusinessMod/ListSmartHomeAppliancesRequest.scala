@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSmartHomeAppliancesRequest extends StObject {
   
   /**
     * The maximum number of appliances to be returned, per paginated calls.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MaxResults] = js.undefined
   
   /**
     * The tokens used for pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
   
   /**
     * The room that the appliances are associated with.
     */
-  var RoomArn: Arn = js.native
+  var RoomArn: Arn
 }
 object ListSmartHomeAppliancesRequest {
   

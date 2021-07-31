@@ -2,27 +2,25 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyBoxButtonTemplateOptions extends StObject {
   
-  var arrowLeft: js.UndefOr[String] = js.native
+  var arrowLeft: js.UndefOr[String] = js.undefined
   
-  var arrowRight: js.UndefOr[String] = js.native
+  var arrowRight: js.UndefOr[String] = js.undefined
   
-  var close: js.UndefOr[String] = js.native
+  var close: js.UndefOr[String] = js.undefined
   
-  var download: js.UndefOr[String] = js.native
+  var download: js.UndefOr[String] = js.undefined
   
   /**
     * This small close button will be appended to your html/inline/ajax content by default,
     * if "smallBtn" option is not set to false
     */
-  var smallBtn: js.UndefOr[String] = js.native
+  var smallBtn: js.UndefOr[String] = js.undefined
   
-  var zoom: js.UndefOr[String] = js.native
+  var zoom: js.UndefOr[String] = js.undefined
 }
 object FancyBoxButtonTemplateOptions {
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeTableMod {
@@ -54,6 +53,10 @@ object routeTableMod {
   /* static members */
   object RouteTable {
     
+    @JSImport("@pulumi/aws/ec2transitgateway/routeTable", "RouteTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RouteTable resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -63,40 +66,34 @@ object routeTableMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway/routeTable", "RouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RouteTable = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/routeTable", "RouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RouteTable = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/routeTable", "RouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteTableState): RouteTable = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/routeTable", "RouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteTableState, opts: CustomResourceOptions): RouteTable = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteTableState): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteTableState, opts: CustomResourceOptions): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
     
     /**
       * Returns true if the given object is an instance of RouteTable.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway/routeTable", "RouteTable.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTable.RouteTable */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTable.RouteTable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTable.RouteTable */ Boolean]
   }
   
-  @js.native
   trait RouteTableArgs extends StObject {
     
     /**
       * Key-value tags for the EC2 Transit Gateway Route Table.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Identifier of EC2 Transit Gateway.
       */
-    val transitGatewayId: Input[String] = js.native
+    val transitGatewayId: Input[String]
   }
   object RouteTableArgs {
     
@@ -120,33 +117,32 @@ object routeTableMod {
     }
   }
   
-  @js.native
   trait RouteTableState extends StObject {
     
     /**
       * EC2 Transit Gateway Route Table Amazon Resource Name (ARN).
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean whether this is the default association route table for the EC2 Transit Gateway.
       */
-    val defaultAssociationRouteTable: js.UndefOr[Input[Boolean]] = js.native
+    val defaultAssociationRouteTable: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean whether this is the default propagation route table for the EC2 Transit Gateway.
       */
-    val defaultPropagationRouteTable: js.UndefOr[Input[Boolean]] = js.native
+    val defaultPropagationRouteTable: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Key-value tags for the EC2 Transit Gateway Route Table.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Identifier of EC2 Transit Gateway.
       */
-    val transitGatewayId: js.UndefOr[Input[String]] = js.native
+    val transitGatewayId: js.UndefOr[Input[String]] = js.undefined
   }
   object RouteTableState {
     

@@ -2,39 +2,37 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartSeriesDefaults extends StObject {
   
-  var area: js.UndefOr[js.Any] = js.native
+  var area: js.UndefOr[js.Any] = js.undefined
   
-  var border: js.UndefOr[StockChartSeriesDefaultsBorder] = js.native
+  var border: js.UndefOr[StockChartSeriesDefaultsBorder] = js.undefined
   
-  var candlestick: js.UndefOr[js.Any] = js.native
+  var candlestick: js.UndefOr[js.Any] = js.undefined
   
-  var column: js.UndefOr[js.Any] = js.native
+  var column: js.UndefOr[js.Any] = js.undefined
   
-  var gap: js.UndefOr[Double] = js.native
+  var gap: js.UndefOr[Double] = js.undefined
   
-  var labels: js.UndefOr[StockChartSeriesDefaultsLabels] = js.native
+  var labels: js.UndefOr[StockChartSeriesDefaultsLabels] = js.undefined
   
-  var line: js.UndefOr[js.Any] = js.native
+  var line: js.UndefOr[js.Any] = js.undefined
   
-  var ohlc: js.UndefOr[js.Any] = js.native
+  var ohlc: js.UndefOr[js.Any] = js.undefined
   
-  var overlay: js.UndefOr[js.Any] = js.native
+  var overlay: js.UndefOr[js.Any] = js.undefined
   
-  var pie: js.UndefOr[js.Any] = js.native
+  var pie: js.UndefOr[js.Any] = js.undefined
   
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
-  var stack: js.UndefOr[Boolean | StockChartSeriesDefaultsStack] = js.native
+  var stack: js.UndefOr[Boolean | StockChartSeriesDefaultsStack] = js.undefined
   
-  var tooltip: js.UndefOr[StockChartSeriesDefaultsTooltip] = js.native
+  var tooltip: js.UndefOr[StockChartSeriesDefaultsTooltip] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object StockChartSeriesDefaults {
   

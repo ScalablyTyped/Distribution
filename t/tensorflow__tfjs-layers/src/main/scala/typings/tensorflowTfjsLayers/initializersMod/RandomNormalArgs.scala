@@ -2,20 +2,18 @@ package typings.tensorflowTfjsLayers.initializersMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RandomNormalArgs extends StObject {
   
   /** Mean of the random values to generate. */
-  var mean: js.UndefOr[Double] = js.native
+  var mean: js.UndefOr[Double] = js.undefined
   
   /** Used to seed the random generator. */
-  var seed: js.UndefOr[Double] = js.native
+  var seed: js.UndefOr[Double] = js.undefined
   
   /** Standard deviation of the random values to generate. */
-  var stddev: js.UndefOr[Double] = js.native
+  var stddev: js.UndefOr[Double] = js.undefined
 }
 object RandomNormalArgs {
   

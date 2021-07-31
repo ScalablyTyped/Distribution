@@ -2,23 +2,21 @@ package typings.angularCompiler.compilerFacadeInterfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait R3QueryMetadataFacade extends StObject {
   
-  var descendants: Boolean = js.native
+  var descendants: Boolean
   
-  var first: Boolean = js.native
+  var first: Boolean
   
-  var predicate: js.Any | js.Array[String] = js.native
+  var predicate: js.Any | js.Array[String]
   
-  var propertyName: String = js.native
+  var propertyName: String
   
-  var read: js.Any | Null = js.native
+  var read: js.Any | Null
   
-  var static: Boolean = js.native
+  var static: Boolean
 }
 object R3QueryMetadataFacade {
   
@@ -30,7 +28,7 @@ object R3QueryMetadataFacade {
     propertyName: String,
     static: Boolean
   ): R3QueryMetadataFacade = {
-    val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], predicate = predicate.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], predicate = predicate.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], read = null)
     __obj.asInstanceOf[R3QueryMetadataFacade]
   }
   

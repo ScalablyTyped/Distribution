@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object replicationGroupMod {
@@ -191,6 +190,10 @@ object replicationGroupMod {
   /* static members */
   object ReplicationGroup {
     
+    @JSImport("@pulumi/aws/elasticache/replicationGroup", "ReplicationGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ReplicationGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -200,146 +203,140 @@ object replicationGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticache/replicationGroup", "ReplicationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ReplicationGroup = js.native
-    @JSImport("@pulumi/aws/elasticache/replicationGroup", "ReplicationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ReplicationGroup = js.native
-    @JSImport("@pulumi/aws/elasticache/replicationGroup", "ReplicationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReplicationGroupState): ReplicationGroup = js.native
-    @JSImport("@pulumi/aws/elasticache/replicationGroup", "ReplicationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReplicationGroupState, opts: CustomResourceOptions): ReplicationGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReplicationGroupState): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReplicationGroupState, opts: CustomResourceOptions): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
     
     /**
       * Returns true if the given object is an instance of ReplicationGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticache/replicationGroup", "ReplicationGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/replicationGroup.ReplicationGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/replicationGroup.ReplicationGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticache/replicationGroup.ReplicationGroup */ Boolean]
   }
   
-  @js.native
   trait ReplicationGroupArgs extends StObject {
     
     /**
       * Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
       */
-    val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
+    val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether to enable encryption at rest.
       */
-    val atRestEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val atRestEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The password used to access a password protected server. Can be specified only if `transitEncryptionEnabled = true`.
       */
-    val authToken: js.UndefOr[Input[String]] = js.native
+    val authToken: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
       */
-    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
       */
-    val automaticFailoverEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val automaticFailoverEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
       */
-    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Create a native redis cluster. `automaticFailoverEnabled` must be set to true. Cluster Mode documented below. Only 1 `clusterMode` block is allowed.
       */
-    val clusterMode: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticache.ReplicationGroupClusterMode]] = js.native
+    val clusterMode: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticache.ReplicationGroupClusterMode]] = js.undefined
     
     /**
       * The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
       */
-    val engine: js.UndefOr[Input[String]] = js.native
+    val engine: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version number of the cache engine to be used for the cache clusters in this replication group.
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `atRestEncryptionEnabled = true`.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the weekly time range for when maintenance
       * on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
       * The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
       */
-    val maintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val maintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The compute and memory capacity of the nodes in the node group.
       */
-    val nodeType: js.UndefOr[Input[String]] = js.native
+    val nodeType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An Amazon Resource Name (ARN) of an
       * SNS topic to send ElastiCache notifications to. Example:
       * `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
       */
-    val notificationTopicArn: js.UndefOr[Input[String]] = js.native
+    val notificationTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
       */
-    val numberCacheClusters: js.UndefOr[Input[Double]] = js.native
+    val numberCacheClusters: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
       */
-    val parameterGroupName: js.UndefOr[Input[String]] = js.native
+    val parameterGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A user-created description for the replication group.
       */
-    val replicationGroupDescription: Input[String] = js.native
+    val replicationGroupDescription: Input[String]
     
     /**
       * The replication group identifier. This parameter is stored as a lowercase string.
       */
-    val replicationGroupId: js.UndefOr[Input[String]] = js.native
+    val replicationGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of cache security group names to associate with this replication group.
       */
-    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A single-element string list containing an
       * Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
       * Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
       */
-    val snapshotArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val snapshotArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of a snapshot from which to restore data into the new node group. Changing the `snapshotName` forces a new resource.
       */
-    val snapshotName: js.UndefOr[Input[String]] = js.native
+    val snapshotName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of days for which ElastiCache will
@@ -348,28 +345,28 @@ object replicationGroupMod {
       * before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
       * Please note that setting a `snapshotRetentionLimit` is not supported on cache.t1.micro or cache.t2.* cache nodes
       */
-    val snapshotRetentionLimit: js.UndefOr[Input[Double]] = js.native
+    val snapshotRetentionLimit: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The daily time range (in UTC) during which ElastiCache will
       * begin taking a daily snapshot of your cache cluster. The minimum snapshot window is a 60 minute period. Example: `05:00-09:00`
       */
-    val snapshotWindow: js.UndefOr[Input[String]] = js.native
+    val snapshotWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the cache subnet group to be used for the replication group.
       */
-    val subnetGroupName: js.UndefOr[Input[String]] = js.native
+    val subnetGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource. Adding tags to this resource will add or overwrite any existing tags on the clusters in the replication group and not to the group itself.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Whether to enable encryption in transit.
       */
-    val transitEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val transitEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object ReplicationGroupArgs {
     
@@ -555,139 +552,138 @@ object replicationGroupMod {
     }
   }
   
-  @js.native
   trait ReplicationGroupState extends StObject {
     
     /**
       * Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
       */
-    val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
+    val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether to enable encryption at rest.
       */
-    val atRestEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val atRestEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The password used to access a password protected server. Can be specified only if `transitEncryptionEnabled = true`.
       */
-    val authToken: js.UndefOr[Input[String]] = js.native
+    val authToken: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
       */
-    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
       */
-    val automaticFailoverEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val automaticFailoverEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
       */
-    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Create a native redis cluster. `automaticFailoverEnabled` must be set to true. Cluster Mode documented below. Only 1 `clusterMode` block is allowed.
       */
-    val clusterMode: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticache.ReplicationGroupClusterMode]] = js.native
+    val clusterMode: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticache.ReplicationGroupClusterMode]] = js.undefined
     
     /**
       * The address of the replication group configuration endpoint when cluster mode is enabled.
       */
-    val configurationEndpointAddress: js.UndefOr[Input[String]] = js.native
+    val configurationEndpointAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
       */
-    val engine: js.UndefOr[Input[String]] = js.native
+    val engine: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version number of the cache engine to be used for the cache clusters in this replication group.
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `atRestEncryptionEnabled = true`.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the weekly time range for when maintenance
       * on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
       * The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
       */
-    val maintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val maintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifiers of all the nodes that are part of this replication group.
       */
-    val memberClusters: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val memberClusters: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The compute and memory capacity of the nodes in the node group.
       */
-    val nodeType: js.UndefOr[Input[String]] = js.native
+    val nodeType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An Amazon Resource Name (ARN) of an
       * SNS topic to send ElastiCache notifications to. Example:
       * `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
       */
-    val notificationTopicArn: js.UndefOr[Input[String]] = js.native
+    val notificationTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
       */
-    val numberCacheClusters: js.UndefOr[Input[Double]] = js.native
+    val numberCacheClusters: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
       */
-    val parameterGroupName: js.UndefOr[Input[String]] = js.native
+    val parameterGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * (Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
       */
-    val primaryEndpointAddress: js.UndefOr[Input[String]] = js.native
+    val primaryEndpointAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A user-created description for the replication group.
       */
-    val replicationGroupDescription: js.UndefOr[Input[String]] = js.native
+    val replicationGroupDescription: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The replication group identifier. This parameter is stored as a lowercase string.
       */
-    val replicationGroupId: js.UndefOr[Input[String]] = js.native
+    val replicationGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of cache security group names to associate with this replication group.
       */
-    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A single-element string list containing an
       * Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
       * Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
       */
-    val snapshotArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val snapshotArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of a snapshot from which to restore data into the new node group. Changing the `snapshotName` forces a new resource.
       */
-    val snapshotName: js.UndefOr[Input[String]] = js.native
+    val snapshotName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of days for which ElastiCache will
@@ -696,28 +692,28 @@ object replicationGroupMod {
       * before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
       * Please note that setting a `snapshotRetentionLimit` is not supported on cache.t1.micro or cache.t2.* cache nodes
       */
-    val snapshotRetentionLimit: js.UndefOr[Input[Double]] = js.native
+    val snapshotRetentionLimit: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The daily time range (in UTC) during which ElastiCache will
       * begin taking a daily snapshot of your cache cluster. The minimum snapshot window is a 60 minute period. Example: `05:00-09:00`
       */
-    val snapshotWindow: js.UndefOr[Input[String]] = js.native
+    val snapshotWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the cache subnet group to be used for the replication group.
       */
-    val subnetGroupName: js.UndefOr[Input[String]] = js.native
+    val subnetGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource. Adding tags to this resource will add or overwrite any existing tags on the clusters in the replication group and not to the group itself.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Whether to enable encryption in transit.
       */
-    val transitEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val transitEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object ReplicationGroupState {
     

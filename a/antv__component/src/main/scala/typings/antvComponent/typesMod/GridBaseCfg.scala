@@ -3,35 +3,35 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridBaseCfg extends GroupComponentCfg {
+trait GridBaseCfg
+  extends StObject
+     with GroupComponentCfg {
   
   /**
     * 两个栅格线间的填充色，必须是一个数组
     * @type {string|string[]}
     */
-  var alternateColor: js.UndefOr[String | js.Array[String]] = js.native
+  var alternateColor: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * 栅格线是否封闭
     * @type {boolean}
     */
-  var closed: js.UndefOr[Boolean] = js.native
+  var closed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 绘制 grid 需要的点的集合
     * @type {GridItem[]}
     */
-  var items: js.Array[GridItem] = js.native
+  var items: js.Array[GridItem]
   
   /**
     * 线的样式
     * @type {object}
     */
-  var line: js.UndefOr[GridLineCfg] = js.native
+  var line: js.UndefOr[GridLineCfg] = js.undefined
 }
 object GridBaseCfg {
   

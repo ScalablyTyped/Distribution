@@ -3,39 +3,37 @@ package typings.spotifyWebApiJs.SpotifyApi
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.playlist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base Playlist Object. Does not in itself exist in Spotify Web Api,
   * but needs to be made since the tracks types vary in the Full and Simplified versions.
   */
-@js.native
 trait PlaylistBaseObject extends StObject {
   
-  var collaborative: Boolean = js.native
+  var collaborative: Boolean
   
-  var description: String | Null = js.native
+  var description: String | Null
   
-  var external_urls: ExternalUrlObject = js.native
+  var external_urls: ExternalUrlObject
   
-  var href: String = js.native
+  var href: String
   
-  var id: String = js.native
+  var id: String
   
-  var images: js.Array[ImageObject] = js.native
+  var images: js.Array[ImageObject]
   
-  var name: String = js.native
+  var name: String
   
-  var owner: UserObjectPublic = js.native
+  var owner: UserObjectPublic
   
-  var public: Boolean = js.native
+  var public: Boolean
   
-  var snapshot_id: String = js.native
+  var snapshot_id: String
   
-  var `type`: playlist = js.native
+  var `type`: playlist
   
-  var uri: String = js.native
+  var uri: String
 }
 object PlaylistBaseObject {
   
@@ -50,11 +48,10 @@ object PlaylistBaseObject {
     owner: UserObjectPublic,
     public: Boolean,
     snapshot_id: String,
-    `type`: playlist,
     uri: String
   ): PlaylistBaseObject = {
-    val __obj = js.Dynamic.literal(collaborative = collaborative.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], snapshot_id = snapshot_id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collaborative = collaborative.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], snapshot_id = snapshot_id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], description = null)
+    __obj.updateDynamic("type")("playlist")
     __obj.asInstanceOf[PlaylistBaseObject]
   }
   

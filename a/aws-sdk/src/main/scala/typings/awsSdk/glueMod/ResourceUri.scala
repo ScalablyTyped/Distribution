@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceUri extends StObject {
   
   /**
     * The type of the resource.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.glueMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.glueMod.ResourceType] = js.undefined
   
   /**
     * The URI for accessing the resource.
     */
-  var Uri: js.UndefOr[URI] = js.native
+  var Uri: js.UndefOr[URI] = js.undefined
 }
 object ResourceUri {
   

@@ -3,25 +3,23 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceBinding extends StObject {
   
-  var dataSourceName: String = js.native
+  var dataSourceName: String
   
-  var endpointId: String = js.native
+  var endpointId: String
   
-  var endpointUrl: String = js.native
+  var endpointUrl: String
   
-  var parameters: StringDictionary[String] = js.native
+  var parameters: StringDictionary[String]
   
-  var resultSelector: String = js.native
+  var resultSelector: String
   
-  var resultTemplate: String = js.native
+  var resultTemplate: String
   
-  var target: String = js.native
+  var target: String
 }
 object DataSourceBinding {
   

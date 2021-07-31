@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInvalidationsResult extends StObject {
   
   /**
     * Information about invalidation batches. 
     */
-  var InvalidationList: js.UndefOr[typings.awsSdk.cloudfrontMod.InvalidationList] = js.native
+  var InvalidationList: js.UndefOr[typings.awsSdk.cloudfrontMod.InvalidationList] = js.undefined
 }
 object ListInvalidationsResult {
   

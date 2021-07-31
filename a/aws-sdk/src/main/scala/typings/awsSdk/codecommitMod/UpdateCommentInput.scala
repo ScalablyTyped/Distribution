@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCommentInput extends StObject {
   
   /**
     * The system-generated ID of the comment you want to update. To get this ID, use GetCommentsForComparedCommit or GetCommentsForPullRequest.
     */
-  var commentId: CommentId = js.native
+  var commentId: CommentId
   
   /**
     * The updated content to replace the existing content of the comment.
     */
-  var content: Content = js.native
+  var content: Content
 }
 object UpdateCommentInput {
   

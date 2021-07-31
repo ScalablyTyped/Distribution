@@ -20,7 +20,6 @@ import typings.long.mod.Long
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "MapField")
@@ -48,17 +47,10 @@ class MapField protected () extends FieldBase {
     id: Double,
     keyType: String,
     `type`: String,
-    options: js.UndefOr[scala.Nothing],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    keyType: String,
-    `type`: String,
     options: StringDictionary[js.UndefOr[js.Any]],
     comment: String
   ) = this()
+  def this(name: String, id: Double, keyType: String, `type`: String, options: Unit, comment: String) = this()
   
   /** Key type. */
   var keyType: String = js.native
@@ -69,6 +61,10 @@ class MapField protected () extends FieldBase {
 /* static members */
 object MapField {
   
+  @JSImport("@apollo/protobufjs", "MapField")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Map field decorator (TypeScript).
     * @param fieldId Field id
@@ -76,15 +72,14 @@ object MapField {
     * @param fieldValueType Field value type
     * @returns Decorator function
     */
-  @JSImport("@apollo/protobufjs", "MapField.d")
-  @js.native
+  @scala.inline
   def d[T /* <: StringDictionary[
     Double | Long | String | Boolean | Uint8Array | Buffer | js.Array[Double] | Message[js.Object]
   ] */](
     fieldId: Double,
     fieldKeyType: int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | bool | string,
     fieldValueType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | bool | string | bytes | js.Object | Constructor[js.Object]
-  ): FieldDecorator = js.native
+  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldKeyType.asInstanceOf[js.Any], fieldValueType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
   
   /**
     * Constructs a map field from a map field descriptor.
@@ -93,7 +88,6 @@ object MapField {
     * @returns Created map field
     * @throws {TypeError} If arguments are invalid
     */
-  @JSImport("@apollo/protobufjs", "MapField.fromJSON")
-  @js.native
-  def fromJSON(name: String, json: IMapField): MapField = js.native
+  @scala.inline
+  def fromJSON(name: String, json: IMapField): MapField = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[MapField]
 }

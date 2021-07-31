@@ -2,11 +2,11 @@ package typings.node
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.Require
 import typings.node.urlMod.URL_
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moduleMod extends Shortcut {
@@ -14,13 +14,46 @@ object moduleMod extends Shortcut {
   @JSImport("module", JSImport.Namespace)
   @js.native
   class ^ protected ()
-    extends typings.node.NodeJS.Module {
+    extends StObject
+       with typings.node.NodeJS.Module {
     def this(id: java.lang.String) = this()
     def this(id: java.lang.String, parent: Module) = this()
+    
+    /* CompleteClass */
+    var children: js.Array[typings.node.NodeJS.Module] = js.native
+    
+    /* CompleteClass */
+    var exports: js.Any = js.native
+    
+    /* CompleteClass */
+    var filename: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var id: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var loaded: Boolean = js.native
+    
+    /**
+      * @since 11.14.0
+      *
+      * The directory name of the module. This is usually the same as the path.dirname() of the module.id.
+      */
+    /* CompleteClass */
+    var path: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var paths: js.Array[java.lang.String] = js.native
+    
+    /* CompleteClass */
+    override def require(id: java.lang.String): js.Any = js.native
+    /* CompleteClass */
+    @JSName("require")
+    var require_Original: Require = js.native
   }
   @JSImport("module", JSImport.Namespace)
   @js.native
-  val ^ : Instantiable2[/* id */ java.lang.String, /* parent */ js.UndefOr[Module], Module] = js.native
+  val ^ : js.Object & (Instantiable2[/* id */ java.lang.String, /* parent */ js.UndefOr[Module], Module]) = js.native
   
   /* static member */
   @JSImport("module", "Module")
@@ -32,9 +65,42 @@ object moduleMod extends Shortcut {
   @JSImport("module", "Module")
   @js.native
   class ModuleCls protected ()
-    extends typings.node.NodeJS.Module {
+    extends StObject
+       with typings.node.NodeJS.Module {
     def this(id: java.lang.String) = this()
     def this(id: java.lang.String, parent: Module) = this()
+    
+    /* CompleteClass */
+    var children: js.Array[typings.node.NodeJS.Module] = js.native
+    
+    /* CompleteClass */
+    var exports: js.Any = js.native
+    
+    /* CompleteClass */
+    var filename: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var id: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var loaded: Boolean = js.native
+    
+    /**
+      * @since 11.14.0
+      *
+      * The directory name of the module. This is usually the same as the path.dirname() of the module.id.
+      */
+    /* CompleteClass */
+    var path: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var paths: js.Array[java.lang.String] = js.native
+    
+    /* CompleteClass */
+    override def require(id: java.lang.String): js.Any = js.native
+    /* CompleteClass */
+    @JSName("require")
+    var require_Original: Require = js.native
   }
   
   @scala.inline
@@ -58,62 +124,53 @@ object moduleMod extends Shortcut {
   def builtinModules_=(x: js.Array[java.lang.String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("builtinModules")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("module", "createRequire")
-  @js.native
-  def createRequire(path: java.lang.String): NodeRequire = js.native
-  @JSImport("module", "createRequire")
-  @js.native
-  def createRequire(path: URL_): NodeRequire = js.native
+  @scala.inline
+  def createRequire(path: java.lang.String): NodeRequire = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequire")(path.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
+  @scala.inline
+  def createRequire(path: URL_): NodeRequire = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequire")(path.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
   
   /**
     * @deprecated Deprecated since: v12.2.0. Please use createRequire() instead.
     */
   /* static member */
-  @JSImport("module", "createRequireFromPath")
-  @js.native
-  def createRequireFromPath(path: java.lang.String): NodeRequire = js.native
+  @scala.inline
+  def createRequireFromPath(path: java.lang.String): NodeRequire = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequireFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
   
-  @JSImport("module", "findSourceMap")
-  @js.native
-  def findSourceMap(path: java.lang.String): SourceMap = js.native
-  @JSImport("module", "findSourceMap")
-  @js.native
-  def findSourceMap(path: java.lang.String, error: Error): SourceMap = js.native
+  @scala.inline
+  def findSourceMap(path: java.lang.String): SourceMap = ^.asInstanceOf[js.Dynamic].applyDynamic("findSourceMap")(path.asInstanceOf[js.Any]).asInstanceOf[SourceMap]
+  @scala.inline
+  def findSourceMap(path: java.lang.String, error: Error): SourceMap = (^.asInstanceOf[js.Dynamic].applyDynamic("findSourceMap")(path.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[SourceMap]
   
   /* static member */
-  @JSImport("module", "runMain")
-  @js.native
-  def runMain(): Unit = js.native
+  @scala.inline
+  def runMain(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runMain")().asInstanceOf[Unit]
   
   /**
     * Updates all the live bindings for builtin ES Modules to match the properties of the CommonJS exports.
     * It does not add or remove exported names from the ES Modules.
     */
-  @JSImport("module", "syncBuiltinESMExports")
-  @js.native
-  def syncBuiltinESMExports(): Unit = js.native
+  @scala.inline
+  def syncBuiltinESMExports(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncBuiltinESMExports")().asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("module", "wrap")
-  @js.native
-  def wrap(code: java.lang.String): java.lang.String = js.native
+  @scala.inline
+  def wrap(code: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(code.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
-  @js.native
   trait SourceMapPayload extends StObject {
     
-    var file: java.lang.String = js.native
+    var file: java.lang.String
     
-    var mappings: java.lang.String = js.native
+    var mappings: java.lang.String
     
-    var names: js.Array[java.lang.String] = js.native
+    var names: js.Array[java.lang.String]
     
-    var sourceRoot: java.lang.String = js.native
+    var sourceRoot: java.lang.String
     
-    var sources: js.Array[java.lang.String] = js.native
+    var sources: js.Array[java.lang.String]
     
-    var sourcesContent: js.Array[java.lang.String] = js.native
+    var sourcesContent: js.Array[java.lang.String]
     
-    var version: Double = js.native
+    var version: Double
   }
   object SourceMapPayload {
     
@@ -166,18 +223,17 @@ object moduleMod extends Shortcut {
     }
   }
   
-  @js.native
   trait SourceMapping extends StObject {
     
-    var generatedColumn: Double = js.native
+    var generatedColumn: Double
     
-    var generatedLine: Double = js.native
+    var generatedLine: Double
     
-    var originalColumn: Double = js.native
+    var originalColumn: Double
     
-    var originalLine: Double = js.native
+    var originalLine: Double
     
-    var originalSource: java.lang.String = js.native
+    var originalSource: java.lang.String
   }
   object SourceMapping {
     
@@ -213,8 +269,8 @@ object moduleMod extends Shortcut {
     }
   }
   
-  type _To = Instantiable2[/* id */ java.lang.String, /* parent */ js.UndefOr[Module], Module]
+  type _To = js.Object & (Instantiable2[/* id */ java.lang.String, /* parent */ js.UndefOr[Module], Module])
   
   /* This means you don't have to write `^`, but can instead just say `moduleMod.foo` */
-  override def _to: Instantiable2[/* id */ java.lang.String, /* parent */ js.UndefOr[Module], Module] = ^
+  override def _to: js.Object & (Instantiable2[/* id */ java.lang.String, /* parent */ js.UndefOr[Module], Module]) = ^
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotCopyGrant extends StObject {
   
   /**
     * The unique identifier of the customer master key (CMK) in AWS KMS to which Amazon Redshift is granted permission.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the snapshot copy grant.
     */
-  var SnapshotCopyGrantName: js.UndefOr[String] = js.native
+  var SnapshotCopyGrantName: js.UndefOr[String] = js.undefined
   
   /**
     * A list of tag instances.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object SnapshotCopyGrant {
   

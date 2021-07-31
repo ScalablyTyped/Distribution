@@ -3,14 +3,14 @@ package typings.zoneJs
 import typings.zoneJs.zoneJsStrings.microTask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MicroTask extends Task {
+trait MicroTask
+  extends StObject
+     with Task {
   
   @JSName("type")
-  var type_MicroTask: microTask = js.native
+  var type_MicroTask: microTask
 }
 object MicroTask {
   
@@ -22,11 +22,10 @@ object MicroTask {
     runCount: Double,
     source: String,
     state: TaskState,
-    `type`: microTask,
     zone: Zone
   ): MicroTask = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], cancelScheduleRequest = js.Any.fromFunction0(cancelScheduleRequest), invoke = invoke.asInstanceOf[js.Any], runCount = runCount.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("microTask")
     __obj.asInstanceOf[MicroTask]
   }
   

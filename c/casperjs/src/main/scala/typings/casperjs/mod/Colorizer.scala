@@ -2,15 +2,13 @@ package typings.casperjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Colorizer extends StObject {
   
-  def colorize(text: String, styleName: String): Unit = js.native
+  def colorize(text: String, styleName: String): Unit
   
-  def format(text: String, style: js.Any): Unit = js.native
+  def format(text: String, style: js.Any): Unit
 }
 object Colorizer {
   

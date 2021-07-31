@@ -4,17 +4,15 @@ import typings.accedoAccedoOne.mod.AccedoLocale
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alpha2Code extends StObject {
     
-    var alpha2Code: String = js.native
+    var alpha2Code: String
     
-    var alpha3Code: String = js.native
+    var alpha3Code: String
   }
   object Alpha2Code {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DeviceId extends StObject {
     
-    var deviceId: String = js.native
+    var deviceId: String
     
-    var sessionKey: String = js.native
+    var sessionKey: String
   }
   object DeviceId {
     
@@ -61,10 +58,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Locales extends StObject {
     
-    var locales: js.Array[AccedoLocale] = js.native
+    var locales: js.Array[AccedoLocale]
   }
   object Locales {
     
@@ -86,14 +82,13 @@ object anon {
   }
   
   /* Inlined std.Pick<@accedo/accedo-one.@accedo/accedo-one.AccedoEntryParams, 'preview' | 'at' | 'locale'> */
-  @js.native
   trait PickAccedoEntryParamsprev extends StObject {
     
-    var at: js.UndefOr[String | Date] = js.native
+    var at: js.UndefOr[String | Date] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var preview: js.UndefOr[Boolean] = js.native
+    var preview: js.UndefOr[Boolean] = js.undefined
   }
   object PickAccedoEntryParamsprev {
     
@@ -127,20 +122,19 @@ object anon {
   }
   
   /* Inlined std.Readonly<@accedo/accedo-one.@accedo/accedo-one.AccedoLog.Details> */
-  @js.native
   trait ReadonlyDetails extends StObject {
     
-    val dim1: js.UndefOr[String] = js.native
+    val dim1: js.UndefOr[String] = js.undefined
     
-    val dim2: js.UndefOr[String] = js.native
+    val dim2: js.UndefOr[String] = js.undefined
     
-    val dim3: js.UndefOr[String] = js.native
+    val dim3: js.UndefOr[String] = js.undefined
     
-    val dim4: js.UndefOr[String] = js.native
+    val dim4: js.UndefOr[String] = js.undefined
     
-    val errorCode: js.UndefOr[Double] = js.native
+    val errorCode: js.UndefOr[Double] = js.undefined
     
-    val message: String = js.native
+    val message: String
   }
   object ReadonlyDetails {
     

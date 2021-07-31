@@ -7,7 +7,6 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownDividerMod extends Shortcut {
@@ -24,9 +23,9 @@ object dropdownDividerMod extends Shortcut {
   @js.native
   val default: ComponentClass[DropdownDividerProps, ComponentState] = js.native
   
-  @js.native
   trait DropdownDividerProps
-    extends StrictDropdownDividerProps
+    extends StObject
+       with StrictDropdownDividerProps
        with /* key */ StringDictionary[js.Any]
   object DropdownDividerProps {
     
@@ -37,14 +36,13 @@ object dropdownDividerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictDropdownDividerProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object StrictDropdownDividerProps {
     

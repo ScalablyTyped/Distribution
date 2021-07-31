@@ -2,21 +2,19 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConfigRequest extends StObject {
   
   /**
     * UUID of a Config.
     */
-  var configId: String = js.native
+  var configId: String
   
   /**
     * Type of a Config.
     */
-  var configType: ConfigCapabilityType = js.native
+  var configType: ConfigCapabilityType
 }
 object DeleteConfigRequest {
   

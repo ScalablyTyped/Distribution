@@ -2,51 +2,37 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Date extends StObject {
   
-  val date: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val date: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val day: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val day: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val dayofyear: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val dayofyear: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val hours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val hours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val milliseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val milliseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val minutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val minutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val month: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val month: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val quarter: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val quarter: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val seconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val seconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val week: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val week: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val year: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val year: typings.vegaLite.vegaLiteNumbers.`1`
 }
 object Date {
   
   @scala.inline
-  def apply(
-    date: typings.vegaLite.vegaLiteNumbers.`1`,
-    day: typings.vegaLite.vegaLiteNumbers.`1`,
-    dayofyear: typings.vegaLite.vegaLiteNumbers.`1`,
-    hours: typings.vegaLite.vegaLiteNumbers.`1`,
-    milliseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    minutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    month: typings.vegaLite.vegaLiteNumbers.`1`,
-    quarter: typings.vegaLite.vegaLiteNumbers.`1`,
-    seconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    week: typings.vegaLite.vegaLiteNumbers.`1`,
-    year: typings.vegaLite.vegaLiteNumbers.`1`
-  ): Date = {
-    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], dayofyear = dayofyear.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], milliseconds = milliseconds.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], quarter = quarter.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], week = week.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
+  def apply(): Date = {
+    val __obj = js.Dynamic.literal(date = 1, day = 1, dayofyear = 1, hours = 1, milliseconds = 1, minutes = 1, month = 1, quarter = 1, seconds = 1, week = 1, year = 1)
     __obj.asInstanceOf[Date]
   }
   

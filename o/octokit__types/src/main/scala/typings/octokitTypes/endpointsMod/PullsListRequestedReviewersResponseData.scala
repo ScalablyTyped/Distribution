@@ -4,15 +4,13 @@ import typings.octokitTypes.anon.Avatarurl
 import typings.octokitTypes.anon.Membersurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsListRequestedReviewersResponseData extends StObject {
   
-  var teams: js.Array[Membersurl] = js.native
+  var teams: js.Array[Membersurl]
   
-  var users: js.Array[Avatarurl] = js.native
+  var users: js.Array[Avatarurl]
 }
 object PullsListRequestedReviewersResponseData {
   

@@ -2,7 +2,6 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,47 +9,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * killed and replaced with new instances. Only applicable for instances in
   * App Engine flexible environment.
   */
-@js.native
 trait SchemaHealthCheck extends StObject {
   
   /**
     * Interval between health checks.
     */
-  var checkInterval: js.UndefOr[String] = js.native
+  var checkInterval: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to explicitly disable health checks for this instance.
     */
-  var disableHealthCheck: js.UndefOr[Boolean] = js.native
+  var disableHealthCheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number of consecutive successful health checks required before receiving
     * traffic.
     */
-  var healthyThreshold: js.UndefOr[Double] = js.native
+  var healthyThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Host header to send when performing an HTTP health check. Example:
     * &quot;myapp.appspot.com&quot;
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Number of consecutive failed health checks required before an instance is
     * restarted.
     */
-  var restartThreshold: js.UndefOr[Double] = js.native
+  var restartThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Time before the health check is considered failed.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
   /**
     * Number of consecutive failed health checks required before removing
     * traffic.
     */
-  var unhealthyThreshold: js.UndefOr[Double] = js.native
+  var unhealthyThreshold: js.UndefOr[Double] = js.undefined
 }
 object SchemaHealthCheck {
   

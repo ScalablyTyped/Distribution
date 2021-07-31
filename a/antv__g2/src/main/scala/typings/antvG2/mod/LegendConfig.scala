@@ -26,71 +26,69 @@ import typings.antvG2.mod.Styles.text
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendConfig extends StObject {
   
-  var allowAllCanceled: js.UndefOr[Double] = js.native
+  var allowAllCanceled: js.UndefOr[Double] = js.undefined
   
-  var background: js.UndefOr[Fill] = js.native
+  var background: js.UndefOr[Fill] = js.undefined
   
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var containerTpl: js.UndefOr[String] = js.native
+  var containerTpl: js.UndefOr[String] = js.undefined
   
-  var custom: js.UndefOr[Double] = js.native
+  var custom: js.UndefOr[Double] = js.undefined
   
-  var defaultClickHandlerEnabled: js.UndefOr[Boolean] = js.native
+  var defaultClickHandlerEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hoverable: js.UndefOr[Boolean] = js.native
+  var hoverable: js.UndefOr[Boolean] = js.undefined
   
-  var itemFormatter: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+  var itemFormatter: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
   
-  var itemGap: js.UndefOr[Double] = js.native
+  var itemGap: js.UndefOr[Double] = js.undefined
   
-  var itemMarginBottom: js.UndefOr[Double] = js.native
+  var itemMarginBottom: js.UndefOr[Double] = js.undefined
   
-  var itemTpl: js.UndefOr[String] = js.native
+  var itemTpl: js.UndefOr[String] = js.undefined
   
-  var itemWidth: js.UndefOr[Double] = js.native
+  var itemWidth: js.UndefOr[Double] = js.undefined
   
-  var items: js.UndefOr[js.Array[Marker]] = js.native
+  var items: js.UndefOr[js.Array[Marker]] = js.undefined
   
-  var layout: js.UndefOr[vertical | horizontal] = js.native
+  var layout: js.UndefOr[vertical | horizontal] = js.undefined
   
-  var marker: js.UndefOr[String | js.Function] = js.native
+  var marker: js.UndefOr[String | js.Function] = js.undefined
   
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
   
-  var onHover: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.native
+  var onHover: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
   
   var position: js.UndefOr[
     top | bottom | left | right | `left-top` | `left-center` | `left-bottom` | `right-top` | `right-center` | `right-bottom` | `top-left` | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right`
-  ] = js.native
+  ] = js.undefined
   
-  var selectedMode: js.UndefOr[single | multiple] = js.native
+  var selectedMode: js.UndefOr[single | multiple] = js.undefined
   
-  var slidable: js.UndefOr[Boolean] = js.native
+  var slidable: js.UndefOr[Boolean] = js.undefined
   
-  var textStyle: js.UndefOr[text] = js.native
+  var textStyle: js.UndefOr[text] = js.undefined
   
-  var title: js.UndefOr[text] = js.native
+  var title: js.UndefOr[text] = js.undefined
   
-  var unCheckColor: js.UndefOr[String] = js.native
+  var unCheckColor: js.UndefOr[String] = js.undefined
   
-  var useHtml: js.UndefOr[Boolean] = js.native
+  var useHtml: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object LegendConfig {
   

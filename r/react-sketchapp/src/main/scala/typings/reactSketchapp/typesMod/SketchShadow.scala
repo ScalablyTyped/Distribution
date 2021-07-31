@@ -3,23 +3,21 @@ package typings.reactSketchapp.typesMod
 import typings.reactSketchapp.anon.Width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchShadow extends StObject {
   
-  var shadowColor: Color = js.native
+  var shadowColor: Color
   
-  var shadowInner: Boolean = js.native
+  var shadowInner: Boolean
   
-  var shadowOffset: Width = js.native
+  var shadowOffset: Width
   
-  var shadowOpacity: Double = js.native
+  var shadowOpacity: Double
   
-  var shadowRadius: Double = js.native
+  var shadowRadius: Double
   
-  var shadowSpread: Double = js.native
+  var shadowSpread: Double
 }
 object SketchShadow {
   

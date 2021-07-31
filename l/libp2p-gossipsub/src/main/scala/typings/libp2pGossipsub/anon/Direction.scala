@@ -4,13 +4,11 @@ import typings.libp2pGossipsub.libp2pGossipsubStrings.inbound
 import typings.libp2pGossipsub.libp2pGossipsubStrings.outbound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction extends StObject {
   
-  var direction: inbound | outbound = js.native
+  var direction: inbound | outbound
 }
 object Direction {
   

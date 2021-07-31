@@ -4,7 +4,6 @@ import typings.sipJs.levelsMod.Levels
 import typings.sipJs.loggerMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerFactoryMod {
@@ -40,8 +39,8 @@ object loggerFactoryMod {
         ]
     ): Unit = js.native
     
-    def genericLog(levelToLog: Levels, category: String, label: js.UndefOr[scala.Nothing], content: js.Any): Unit = js.native
     def genericLog(levelToLog: Levels, category: String, label: String, content: js.Any): Unit = js.native
+    def genericLog(levelToLog: Levels, category: String, label: Unit, content: js.Any): Unit = js.native
     
     def getLogger(category: String): Logger = js.native
     def getLogger(category: String, label: String): Logger = js.native

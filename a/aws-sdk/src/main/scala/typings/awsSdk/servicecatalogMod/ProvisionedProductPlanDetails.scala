@@ -2,86 +2,84 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisionedProductPlanDetails extends StObject {
   
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.CreatedTime] = js.native
+  var CreatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.CreatedTime] = js.undefined
   
   /**
     * Passed to CloudFormation. The SNS topic ARNs to which to publish stack-related events.
     */
-  var NotificationArns: js.UndefOr[typings.awsSdk.servicecatalogMod.NotificationArns] = js.native
+  var NotificationArns: js.UndefOr[typings.awsSdk.servicecatalogMod.NotificationArns] = js.undefined
   
   /**
     * The path identifier of the product. This value is optional if the product has a default path, and required if the product has more than one path. To list the paths for a product, use ListLaunchPaths.
     */
-  var PathId: js.UndefOr[Id] = js.native
+  var PathId: js.UndefOr[Id] = js.undefined
   
   /**
     * The plan identifier.
     */
-  var PlanId: js.UndefOr[Id] = js.native
+  var PlanId: js.UndefOr[Id] = js.undefined
   
   /**
     * The name of the plan.
     */
-  var PlanName: js.UndefOr[ProvisionedProductPlanName] = js.native
+  var PlanName: js.UndefOr[ProvisionedProductPlanName] = js.undefined
   
   /**
     * The plan type.
     */
-  var PlanType: js.UndefOr[ProvisionedProductPlanType] = js.native
+  var PlanType: js.UndefOr[ProvisionedProductPlanType] = js.undefined
   
   /**
     * The product identifier.
     */
-  var ProductId: js.UndefOr[Id] = js.native
+  var ProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * The product identifier.
     */
-  var ProvisionProductId: js.UndefOr[Id] = js.native
+  var ProvisionProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * The user-friendly name of the provisioned product.
     */
-  var ProvisionProductName: js.UndefOr[ProvisionedProductName] = js.native
+  var ProvisionProductName: js.UndefOr[ProvisionedProductName] = js.undefined
   
   /**
     * The identifier of the provisioning artifact.
     */
-  var ProvisioningArtifactId: js.UndefOr[Id] = js.native
+  var ProvisioningArtifactId: js.UndefOr[Id] = js.undefined
   
   /**
     * Parameters specified by the administrator that are required for provisioning the product.
     */
-  var ProvisioningParameters: js.UndefOr[UpdateProvisioningParameters] = js.native
+  var ProvisioningParameters: js.UndefOr[UpdateProvisioningParameters] = js.undefined
   
   /**
     * The status.
     */
-  var Status: js.UndefOr[ProvisionedProductPlanStatus] = js.native
+  var Status: js.UndefOr[ProvisionedProductPlanStatus] = js.undefined
   
   /**
     * The status message.
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.servicecatalogMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.servicecatalogMod.StatusMessage] = js.undefined
   
   /**
     * One or more tags.
     */
-  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.undefined
   
   /**
     * The time when the plan was last updated.
     */
-  var UpdatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.UpdatedTime] = js.native
+  var UpdatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.UpdatedTime] = js.undefined
 }
 object ProvisionedProductPlanDetails {
   

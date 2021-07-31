@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImagePermissions extends StObject {
   
   /**
     * Indicates whether the image can be used for a fleet.
     */
-  var allowFleet: js.UndefOr[BooleanObject] = js.native
+  var allowFleet: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * Indicates whether the image can be used for an image builder.
     */
-  var allowImageBuilder: js.UndefOr[BooleanObject] = js.native
+  var allowImageBuilder: js.UndefOr[BooleanObject] = js.undefined
 }
 object ImagePermissions {
   

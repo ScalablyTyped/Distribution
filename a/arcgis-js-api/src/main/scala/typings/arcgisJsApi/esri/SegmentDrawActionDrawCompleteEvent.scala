@@ -3,31 +3,24 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`draw-complete`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentDrawActionDrawCompleteEvent extends StObject {
   
-  var defaultPrevented: Boolean = js.native
+  var defaultPrevented: Boolean
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var `type`: `draw-complete` = js.native
+  var `type`: `draw-complete`
   
-  var vertices: js.Array[js.Array[Double]] = js.native
+  var vertices: js.Array[js.Array[Double]]
 }
 object SegmentDrawActionDrawCompleteEvent {
   
   @scala.inline
-  def apply(
-    defaultPrevented: Boolean,
-    preventDefault: js.Function,
-    `type`: `draw-complete`,
-    vertices: js.Array[js.Array[Double]]
-  ): SegmentDrawActionDrawCompleteEvent = {
+  def apply(defaultPrevented: Boolean, preventDefault: js.Function, vertices: js.Array[js.Array[Double]]): SegmentDrawActionDrawCompleteEvent = {
     val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("draw-complete")
     __obj.asInstanceOf[SegmentDrawActionDrawCompleteEvent]
   }
   

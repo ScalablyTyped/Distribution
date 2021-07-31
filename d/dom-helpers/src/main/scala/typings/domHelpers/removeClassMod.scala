@@ -4,15 +4,16 @@ import typings.std.Element
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object removeClassMod {
   
-  @JSImport("dom-helpers/cjs/removeClass", JSImport.Default)
+  @JSImport("dom-helpers/cjs/removeClass", JSImport.Namespace)
   @js.native
-  def default(element: Element, className: String): Unit = js.native
-  @JSImport("dom-helpers/cjs/removeClass", JSImport.Default)
-  @js.native
-  def default(element: SVGElement, className: String): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(element: Element, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def default(element: SVGElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

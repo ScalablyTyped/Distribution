@@ -2,21 +2,19 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateChannelRequest extends StObject {
   
   /**
     * A short text description of the Channel.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the Channel to update.
     */
-  var Id: string = js.native
+  var Id: string
 }
 object UpdateChannelRequest {
   

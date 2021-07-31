@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Compartment Consistency Rules
   */
-@js.native
-trait GraphDefinitionLinkTargetCompartment extends BackboneElement {
+trait GraphDefinitionLinkTargetCompartment
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'expression'.
     */
-  var _expression: js.UndefOr[Element] = js.native
+  var _expression: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'rule'.
     */
-  var _rule: js.UndefOr[Element] = js.native
+  var _rule: js.UndefOr[Element] = js.undefined
   
   /**
     * Identifies the compartment
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * Documentation for FHIRPath expression
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Custom rule, as a FHIRPath expression
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * identical | matching | different | custom
     */
-  var rule: code = js.native
+  var rule: code
 }
 object GraphDefinitionLinkTargetCompartment {
   

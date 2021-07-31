@@ -23,11 +23,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Slider extends Widget_ {
+trait Slider
+  extends StObject
+     with Widget_ {
   
   /**
     * When `true`, sets the slider to a disabled state so the user cannot interact with it.
@@ -74,7 +75,7 @@ trait Slider extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction)
     */
   def inputFormatFunction(value: Double): String = js.native
-  def inputFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
   /**
     * A function used to format user inputs.
     *
@@ -109,7 +110,7 @@ trait Slider extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction)
     */
   def inputParseFunction(value: String): Double = js.native
-  def inputParseFunction(value: String, `type`: js.UndefOr[scala.Nothing], index: Double): Double = js.native
+  def inputParseFunction(value: String, `type`: Unit, index: Double): Double = js.native
   /**
     * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction).
     *
@@ -144,7 +145,7 @@ trait Slider extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
-  def labelFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
   /**
     * A function used to format labels.
     *

@@ -2,15 +2,13 @@ package typings.plugapi.mod.Event
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoothCycle extends StObject {
   
-  var cycle: Boolean = js.native
+  var cycle: Boolean
   
-  var moderator: String = js.native
+  var moderator: String
 }
 object BoothCycle {
   

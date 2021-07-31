@@ -5,36 +5,61 @@ import typings.node.streamMod.Transform
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("gifencoder", JSImport.Namespace)
   @js.native
-  class ^ protected () extends GIFEncoder {
+  class ^ protected ()
+    extends StObject
+       with GIFEncoder {
     def this(width: Double, height: Double) = this()
-  }
-  
-  @js.native
-  trait GIFEncoder extends StObject {
     
-    def addFrame(ctx: CanvasRenderingContext2D): Unit = js.native
+    /* CompleteClass */
+    override def addFrame(ctx: CanvasRenderingContext2D): Unit = js.native
     
-    def createReadStream(): Readable = js.native
+    /* CompleteClass */
+    override def createReadStream(): Readable = js.native
     
-    def createWriteStream(options: GIFOptions): Transform = js.native
+    /* CompleteClass */
+    override def createWriteStream(options: GIFOptions): Transform = js.native
     
-    def finish(): Unit = js.native
+    /* CompleteClass */
+    override def finish(): Unit = js.native
     
-    def setDelay(/** frame delay in ms */ delay: Double): Unit = js.native
+    /* CompleteClass */
+    override def setDelay(/** frame delay in ms */ delay: Double): Unit = js.native
     
-    def setQuality(/** image quality. 10 is default */ quality: Double): Unit = js.native
+    /* CompleteClass */
+    override def setQuality(/** image quality. 10 is default */ quality: Double): Unit = js.native
     
-    def setRepeat(/** 0 for repeat, -1 for no-repeat */
+    /* CompleteClass */
+    override def setRepeat(/** 0 for repeat, -1 for no-repeat */
     repeat: Double): Unit = js.native
     
-    def start(): Unit = js.native
+    /* CompleteClass */
+    override def start(): Unit = js.native
+  }
+  
+  trait GIFEncoder extends StObject {
+    
+    def addFrame(ctx: CanvasRenderingContext2D): Unit
+    
+    def createReadStream(): Readable
+    
+    def createWriteStream(options: GIFOptions): Transform
+    
+    def finish(): Unit
+    
+    def setDelay(/** frame delay in ms */ delay: Double): Unit
+    
+    def setQuality(/** image quality. 10 is default */ quality: Double): Unit
+    
+    def setRepeat(/** 0 for repeat, -1 for no-repeat */
+    repeat: Double): Unit
+    
+    def start(): Unit
   }
   object GIFEncoder {
     
@@ -82,17 +107,16 @@ object mod {
     }
   }
   
-  @js.native
   trait GIFOptions extends StObject {
     
     /** frame delay in ms */
-    var delay: Double = js.native
+    var delay: Double
     
     /** image quality. 10 is default */
-    var quality: Double = js.native
+    var quality: Double
     
     /** 0 for repeat, -1 for no-repeat */
-    var repeat: Double = js.native
+    var repeat: Double
   }
   object GIFOptions {
     

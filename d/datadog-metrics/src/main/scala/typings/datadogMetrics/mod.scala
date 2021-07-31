@@ -3,10 +3,13 @@ package typings.datadogMetrics
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("datadog-metrics", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("datadog-metrics", "BufferedMetricsLogger")
   @js.native
@@ -20,9 +23,9 @@ object mod {
       * metrics have been sent before you quit the application process, for example.
       */
     def flush(): Unit = js.native
-    def flush(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* err */ Error, Unit]): Unit = js.native
     def flush(onSuccess: js.Function0[Unit]): Unit = js.native
     def flush(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def flush(onSuccess: Unit, onError: js.Function1[/* err */ Error, Unit]): Unit = js.native
     
     /**
       * Record the current value of a metric. They most recent value in a given flush
@@ -31,9 +34,9 @@ object mod {
       * process uptime, total number of active users, or number of rows in a database table.
       */
     def gauge(key: String, value: Double): Unit = js.native
-    def gauge(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
     def gauge(key: String, value: Double, tags: js.Array[String]): Unit = js.native
     def gauge(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
+    def gauge(key: String, value: Double, tags: Unit, timestamp: Double): Unit = js.native
     
     /**
       * Sample a histogram value. Histograms will produce metrics that describe the distribution
@@ -41,9 +44,9 @@ object mod {
       * 95th and 99th percentiles. Optionally, specify a list of tags to associate with the metric.
       */
     def histogram(key: String, value: Double): Unit = js.native
-    def histogram(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
     def histogram(key: String, value: Double, tags: js.Array[String]): Unit = js.native
     def histogram(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
+    def histogram(key: String, value: Double, tags: Unit, timestamp: Double): Unit = js.native
     
     /**
       * Increment the counter by the given value (or 1 by default). Optionally, specify a
@@ -51,115 +54,93 @@ object mod {
       * as incrementing a counter each time a page is requested.
       */
     def increment(key: String): Unit = js.native
-    def increment(key: String, value: js.UndefOr[scala.Nothing], tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
-    def increment(key: String, value: js.UndefOr[scala.Nothing], tags: js.Array[String]): Unit = js.native
-    def increment(key: String, value: js.UndefOr[scala.Nothing], tags: js.Array[String], timestamp: Double): Unit = js.native
     def increment(key: String, value: Double): Unit = js.native
-    def increment(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
     def increment(key: String, value: Double, tags: js.Array[String]): Unit = js.native
     def increment(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
+    def increment(key: String, value: Double, tags: Unit, timestamp: Double): Unit = js.native
+    def increment(key: String, value: Unit, tags: js.Array[String]): Unit = js.native
+    def increment(key: String, value: Unit, tags: js.Array[String], timestamp: Double): Unit = js.native
+    def increment(key: String, value: Unit, tags: Unit, timestamp: Double): Unit = js.native
   }
   
-  @JSImport("datadog-metrics", "flush")
-  @js.native
-  def flush(): Unit = js.native
-  @JSImport("datadog-metrics", "flush")
-  @js.native
-  def flush(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("datadog-metrics", "flush")
-  @js.native
-  def flush(onSuccess: js.Function0[Unit]): Unit = js.native
-  @JSImport("datadog-metrics", "flush")
-  @js.native
-  def flush(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
+  @scala.inline
+  def flush(onSuccess: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def flush(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def flush(onSuccess: Unit, onError: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("datadog-metrics", "gauge")
-  @js.native
-  def gauge(key: String, value: Double): Unit = js.native
-  @JSImport("datadog-metrics", "gauge")
-  @js.native
-  def gauge(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
-  @JSImport("datadog-metrics", "gauge")
-  @js.native
-  def gauge(key: String, value: Double, tags: js.Array[String]): Unit = js.native
-  @JSImport("datadog-metrics", "gauge")
-  @js.native
-  def gauge(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
+  @scala.inline
+  def gauge(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def gauge(key: String, value: Double, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def gauge(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def gauge(key: String, value: Double, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("datadog-metrics", "histogram")
-  @js.native
-  def histogram(key: String, value: Double): Unit = js.native
-  @JSImport("datadog-metrics", "histogram")
-  @js.native
-  def histogram(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
-  @JSImport("datadog-metrics", "histogram")
-  @js.native
-  def histogram(key: String, value: Double, tags: js.Array[String]): Unit = js.native
-  @JSImport("datadog-metrics", "histogram")
-  @js.native
-  def histogram(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
+  @scala.inline
+  def histogram(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def histogram(key: String, value: Double, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def histogram(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def histogram(key: String, value: Double, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("datadog-metrics", "increment")
-  @js.native
-  def increment(key: String): Unit = js.native
-  @JSImport("datadog-metrics", "increment")
-  @js.native
-  def increment(key: String, value: js.UndefOr[scala.Nothing], tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
-  @JSImport("datadog-metrics", "increment")
-  @js.native
-  def increment(key: String, value: js.UndefOr[scala.Nothing], tags: js.Array[String]): Unit = js.native
-  @JSImport("datadog-metrics", "increment")
-  @js.native
-  def increment(key: String, value: js.UndefOr[scala.Nothing], tags: js.Array[String], timestamp: Double): Unit = js.native
-  @JSImport("datadog-metrics", "increment")
-  @js.native
-  def increment(key: String, value: Double): Unit = js.native
-  @JSImport("datadog-metrics", "increment")
-  @js.native
-  def increment(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
-  @JSImport("datadog-metrics", "increment")
-  @js.native
-  def increment(key: String, value: Double, tags: js.Array[String]): Unit = js.native
-  @JSImport("datadog-metrics", "increment")
-  @js.native
-  def increment(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
+  @scala.inline
+  def increment(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def increment(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def increment(key: String, value: Double, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def increment(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def increment(key: String, value: Double, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def increment(key: String, value: Unit, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def increment(key: String, value: Unit, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def increment(key: String, value: Unit, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("datadog-metrics", "init")
-  @js.native
-  def init(options: BufferedMetricsLoggerOptions): Unit = js.native
+  @scala.inline
+  def init(options: BufferedMetricsLoggerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait BufferedMetricsLoggerOptions extends StObject {
     
     /**
       * Sets the DataDog API key.
       */
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the DataDog APP key.
       */
-    var appKey: js.UndefOr[String] = js.native
+    var appKey: js.UndefOr[String] = js.undefined
     
     /**
       * Default tags used for all metric reporting.
       */
-    var defaultTags: js.UndefOr[js.Array[String]] = js.native
+    var defaultTags: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * How often to send metrics to DataDog.
       */
-    var flushIntervalSeconds: js.UndefOr[Double] = js.native
+    var flushIntervalSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets the hostname reported with each metric.
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * Sets a default prefix for all metrics.
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object BufferedMetricsLoggerOptions {
     

@@ -6,100 +6,88 @@ import typings.firebaseAnalyticsTypes.mod.EventParams
 import typings.firebaseAnalyticsTypes.mod.Gtag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object functionsMod {
   
-  @JSImport("@firebase/analytics/dist/src/functions", "logEvent")
+  @JSImport("@firebase/analytics/dist/src/functions", JSImport.Namespace)
   @js.native
-  def logEvent(gtagFunction: Gtag, initializationPromise: js.Promise[String], eventName: String): js.Promise[Unit] = js.native
-  @JSImport("@firebase/analytics/dist/src/functions", "logEvent")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def logEvent(gtagFunction: Gtag, initializationPromise: js.Promise[String], eventName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def logEvent(
     gtagFunction: Gtag,
     initializationPromise: js.Promise[String],
     eventName: String,
-    eventParams: js.UndefOr[scala.Nothing],
+    eventParams: Unit,
     options: AnalyticsCallOptions
-  ): js.Promise[Unit] = js.native
-  @JSImport("@firebase/analytics/dist/src/functions", "logEvent")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventParams.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def logEvent(
     gtagFunction: Gtag,
     initializationPromise: js.Promise[String],
     eventName: String,
     eventParams: EventParams
-  ): js.Promise[Unit] = js.native
-  @JSImport("@firebase/analytics/dist/src/functions", "logEvent")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def logEvent(
     gtagFunction: Gtag,
     initializationPromise: js.Promise[String],
     eventName: String,
     eventParams: EventParams,
     options: AnalyticsCallOptions
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventParams.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@firebase/analytics/dist/src/functions", "setAnalyticsCollectionEnabled")
-  @js.native
-  def setAnalyticsCollectionEnabled(initializationPromise: js.Promise[String], enabled: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def setAnalyticsCollectionEnabled(initializationPromise: js.Promise[String], enabled: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAnalyticsCollectionEnabled")(initializationPromise.asInstanceOf[js.Any], enabled.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@firebase/analytics/dist/src/functions", "setCurrentScreen")
-  @js.native
-  def setCurrentScreen(gtagFunction: Gtag, initializationPromise: js.Promise[String]): js.Promise[Unit] = js.native
-  @JSImport("@firebase/analytics/dist/src/functions", "setCurrentScreen")
-  @js.native
-  def setCurrentScreen(gtagFunction: Gtag, initializationPromise: js.Promise[String], screenName: String): js.Promise[Unit] = js.native
-  @JSImport("@firebase/analytics/dist/src/functions", "setCurrentScreen")
-  @js.native
+  @scala.inline
+  def setCurrentScreen(gtagFunction: Gtag, initializationPromise: js.Promise[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentScreen")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def setCurrentScreen(gtagFunction: Gtag, initializationPromise: js.Promise[String], screenName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentScreen")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], screenName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def setCurrentScreen(
     gtagFunction: Gtag,
     initializationPromise: js.Promise[String],
     screenName: String,
     options: AnalyticsCallOptions
-  ): js.Promise[Unit] = js.native
-  @JSImport("@firebase/analytics/dist/src/functions", "setCurrentScreen")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentScreen")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], screenName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def setCurrentScreen(
     gtagFunction: Gtag,
     initializationPromise: js.Promise[String],
     screenName: Null,
     options: AnalyticsCallOptions
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentScreen")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], screenName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@firebase/analytics/dist/src/functions", "setUserId")
-  @js.native
-  def setUserId(gtagFunction: Gtag, initializationPromise: js.Promise[String]): js.Promise[Unit] = js.native
-  @JSImport("@firebase/analytics/dist/src/functions", "setUserId")
-  @js.native
-  def setUserId(gtagFunction: Gtag, initializationPromise: js.Promise[String], id: String): js.Promise[Unit] = js.native
-  @JSImport("@firebase/analytics/dist/src/functions", "setUserId")
-  @js.native
+  @scala.inline
+  def setUserId(gtagFunction: Gtag, initializationPromise: js.Promise[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def setUserId(gtagFunction: Gtag, initializationPromise: js.Promise[String], id: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def setUserId(
     gtagFunction: Gtag,
     initializationPromise: js.Promise[String],
     id: String,
     options: AnalyticsCallOptions
-  ): js.Promise[Unit] = js.native
-  @JSImport("@firebase/analytics/dist/src/functions", "setUserId")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def setUserId(
     gtagFunction: Gtag,
     initializationPromise: js.Promise[String],
     id: Null,
     options: AnalyticsCallOptions
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@firebase/analytics/dist/src/functions", "setUserProperties")
-  @js.native
-  def setUserProperties(gtagFunction: Gtag, initializationPromise: js.Promise[String], properties: CustomParams): js.Promise[Unit] = js.native
-  @JSImport("@firebase/analytics/dist/src/functions", "setUserProperties")
-  @js.native
+  @scala.inline
+  def setUserProperties(gtagFunction: Gtag, initializationPromise: js.Promise[String], properties: CustomParams): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserProperties")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def setUserProperties(
     gtagFunction: Gtag,
     initializationPromise: js.Promise[String],
     properties: CustomParams,
     options: AnalyticsCallOptions
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserProperties")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

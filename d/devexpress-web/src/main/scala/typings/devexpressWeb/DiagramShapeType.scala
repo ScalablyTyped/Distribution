@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,137 +14,223 @@ sealed trait DiagramShapeType extends StObject
 object DiagramShapeType extends StObject {
   
   @js.native
-  sealed trait ArrowBottom extends DiagramShapeType
+  sealed trait ArrowBottom
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait ArrowEastWest extends DiagramShapeType
+  sealed trait ArrowEastWest
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait ArrowLeft extends DiagramShapeType
+  sealed trait ArrowLeft
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait ArrowNorthSouth extends DiagramShapeType
+  sealed trait ArrowNorthSouth
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait ArrowRight extends DiagramShapeType
+  sealed trait ArrowRight
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait ArrowTop extends DiagramShapeType
+  sealed trait ArrowTop
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait CardWithImageOnLeft extends DiagramShapeType
+  sealed trait CardWithImageOnLeft
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait CardWithImageOnRight extends DiagramShapeType
+  sealed trait CardWithImageOnRight
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait CardWithImageOnTop extends DiagramShapeType
+  sealed trait CardWithImageOnTop
+    extends StObject
+       with DiagramShapeType
   
   /**
     * The connector.
     */
   @js.native
-  sealed trait Connector extends DiagramShapeType
+  sealed trait Connector
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Cross extends DiagramShapeType
+  sealed trait Cross
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Data extends DiagramShapeType
+  sealed trait Data
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Database extends DiagramShapeType
+  sealed trait Database
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Decision extends DiagramShapeType
+  sealed trait Decision
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Delay extends DiagramShapeType
+  sealed trait Delay
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Diamond extends DiagramShapeType
+  sealed trait Diamond
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Display extends DiagramShapeType
+  sealed trait Display
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Document extends DiagramShapeType
+  sealed trait Document
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Ellipse extends DiagramShapeType
+  sealed trait Ellipse
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait HardDisk extends DiagramShapeType
+  sealed trait HardDisk
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Heart extends DiagramShapeType
+  sealed trait Heart
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Hexagon extends DiagramShapeType
+  sealed trait Hexagon
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait HorizontalContainer extends DiagramShapeType
+  sealed trait HorizontalContainer
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait InternalStorage extends DiagramShapeType
+  sealed trait InternalStorage
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait ManualInput extends DiagramShapeType
+  sealed trait ManualInput
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait ManualOperation extends DiagramShapeType
+  sealed trait ManualOperation
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Merge extends DiagramShapeType
+  sealed trait Merge
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait MultipleDocuments extends DiagramShapeType
+  sealed trait MultipleDocuments
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Octagon extends DiagramShapeType
+  sealed trait Octagon
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Or extends DiagramShapeType
+  sealed trait Or
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait PaperTape extends DiagramShapeType
+  sealed trait PaperTape
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Pentagon extends DiagramShapeType
+  sealed trait Pentagon
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait PredefinedProcess extends DiagramShapeType
+  sealed trait PredefinedProcess
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Preparation extends DiagramShapeType
+  sealed trait Preparation
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Process extends DiagramShapeType
+  sealed trait Process
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Rectangle extends DiagramShapeType
+  sealed trait Rectangle
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Star extends DiagramShapeType
+  sealed trait Star
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait StoredData extends DiagramShapeType
+  sealed trait StoredData
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait SummingJunction extends DiagramShapeType
+  sealed trait SummingJunction
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Terminator extends DiagramShapeType
+  sealed trait Terminator
+    extends StObject
+       with DiagramShapeType
   
   /**
     * Text
     */
   @js.native
-  sealed trait Text extends DiagramShapeType
+  sealed trait Text
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait Triangle extends DiagramShapeType
+  sealed trait Triangle
+    extends StObject
+       with DiagramShapeType
   
   @js.native
-  sealed trait VerticalContainer extends DiagramShapeType
+  sealed trait VerticalContainer
+    extends StObject
+       with DiagramShapeType
 }

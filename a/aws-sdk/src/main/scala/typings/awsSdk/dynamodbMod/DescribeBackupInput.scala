@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBackupInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) associated with the backup.
     */
-  var BackupArn: typings.awsSdk.dynamodbMod.BackupArn = js.native
+  var BackupArn: typings.awsSdk.dynamodbMod.BackupArn
 }
 object DescribeBackupInput {
   

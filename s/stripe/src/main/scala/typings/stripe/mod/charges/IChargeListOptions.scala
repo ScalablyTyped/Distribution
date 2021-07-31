@@ -4,22 +4,22 @@ import typings.stripe.anon.Object
 import typings.stripe.mod.IListOptionsCreated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChargeListOptions extends IListOptionsCreated {
+trait IChargeListOptions
+  extends StObject
+     with IListOptionsCreated {
   
   /**
     * Only return charges for the customer specified by this customer ID.
     */
-  var customer: js.UndefOr[String] = js.native
+  var customer: js.UndefOr[String] = js.undefined
   
   /**
     * A filter on the list based on the source of the charge. The value can be a
     * dictionary with the following options:
     */
-  var source: js.UndefOr[Object] = js.native
+  var source: js.UndefOr[Object] = js.undefined
 }
 object IChargeListOptions {
   

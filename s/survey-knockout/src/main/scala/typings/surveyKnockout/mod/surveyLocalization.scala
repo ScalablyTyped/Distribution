@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object surveyLocalization {
@@ -37,21 +36,17 @@ object surveyLocalization {
   @scala.inline
   def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
   
-  @JSImport("survey-knockout", "surveyLocalization.getCurrentStrings")
-  @js.native
-  def getCurrentStrings(): js.Any = js.native
+  @scala.inline
+  def getCurrentStrings(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentStrings")().asInstanceOf[js.Any]
   
-  @JSImport("survey-knockout", "surveyLocalization.getLocaleStrings")
-  @js.native
-  def getLocaleStrings(loc: String): js.Any = js.native
+  @scala.inline
+  def getLocaleStrings(loc: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleStrings")(loc.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("survey-knockout", "surveyLocalization.getLocales")
-  @js.native
-  def getLocales(): js.Array[String] = js.native
+  @scala.inline
+  def getLocales(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocales")().asInstanceOf[js.Array[String]]
   
-  @JSImport("survey-knockout", "surveyLocalization.getString")
-  @js.native
-  def getString(strName: String): js.Any = js.native
+  @scala.inline
+  def getString(strName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getString")(strName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("survey-knockout", "surveyLocalization.supportedLocales")
   @js.native

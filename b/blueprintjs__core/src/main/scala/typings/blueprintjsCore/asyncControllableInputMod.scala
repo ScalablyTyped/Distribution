@@ -8,7 +8,6 @@ import typings.react.mod.PureComponent
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncControllableInputMod {
@@ -43,17 +42,16 @@ object asyncControllableInputMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/core/lib/esm/components/forms/asyncControllableInput", "AsyncControllableInput.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: IAsyncControllableInputProps, nextState: IAsyncControllableInputState): PartialIAsyncControllable | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: IAsyncControllableInputProps, nextState: IAsyncControllableInputState): PartialIAsyncControllable | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], nextState.asInstanceOf[js.Any])).asInstanceOf[PartialIAsyncControllable | Null]
   }
   
-  @js.native
   trait IAsyncControllableInputProps
-    extends InputHTMLAttributes[HTMLInputElement]
-       with ClassAttributes[HTMLInputElement] {
+    extends StObject
+       with ClassAttributes[HTMLInputElement]
+       with InputHTMLAttributes[HTMLInputElement] {
     
-    var inputRef: js.UndefOr[LegacyRef[HTMLInputElement]] = js.native
+    var inputRef: js.UndefOr[LegacyRef[HTMLInputElement]] = js.undefined
   }
   object IAsyncControllableInputProps {
     
@@ -80,32 +78,31 @@ object asyncControllableInputMod {
     }
   }
   
-  @js.native
   trait IAsyncControllableInputState extends StObject {
     
     /**
       * Whether there is a pending update we are expecting from a parent component.
       * @default false
       */
-    var hasPendingUpdate: Boolean = js.native
+    var hasPendingUpdate: Boolean
     
     /**
       * Whether we are in the middle of a composition event.
       * @default false
       */
-    var isComposing: Boolean = js.native
+    var isComposing: Boolean
     
     /**
       * The latest input value, which updates during IME composition. Defaults to props.value.
       */
-    var nextValue: InputValue = js.native
+    var nextValue: InputValue
     
     /**
       * The source of truth for the input value. This is not updated during IME composition.
       * It may be updated by a parent component.
       * @default ""
       */
-    var value: InputValue = js.native
+    var value: InputValue
   }
   object IAsyncControllableInputState {
     

@@ -4,12 +4,11 @@ import typings.vegaLite.exprMod.ExprRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RectConfig[ES /* <: ExprRef | SignalRef */]
-  extends RectBinSpacingMixins
+  extends StObject
+     with RectBinSpacingMixins
      with MarkConfig[ES]
      with _AnyMarkConfig[ES] {
   
@@ -20,13 +19,13 @@ trait RectConfig[ES /* <: ExprRef | SignalRef */]
     *
     * @minimum 0
     */
-  var continuousBandSize: js.UndefOr[Double] = js.native
+  var continuousBandSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The default size of the bars with discrete dimensions. If unspecified, the default size is  `step-2`, which provides 2 pixel offset between bars.
     * @minimum 0
     */
-  var discreteBandSize: js.UndefOr[Double] = js.native
+  var discreteBandSize: js.UndefOr[Double] = js.undefined
 }
 object RectConfig {
   
@@ -37,7 +36,7 @@ object RectConfig {
   }
   
   @scala.inline
-  implicit class RectConfigMutableBuilder[Self <: RectConfig[_], ES /* <: ExprRef | SignalRef */] (val x: Self with RectConfig[ES]) extends AnyVal {
+  implicit class RectConfigMutableBuilder[Self <: RectConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & RectConfig[ES]) extends AnyVal {
     
     @scala.inline
     def setContinuousBandSize(value: Double): Self = StObject.set(x, "continuousBandSize", value.asInstanceOf[js.Any])

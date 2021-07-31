@@ -5,35 +5,35 @@ import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.parsedOptionMod.ParsedOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parsedCellMod {
   
-  @js.native
-  trait ParsedCell extends ParsedOption {
+  trait ParsedCell
+    extends StObject
+       with ParsedOption {
     
     /**
       * The jQuery-object which contains the cell.
       */
     @JSName("$cell")
-    var $cell: JQuery[HTMLElement] = js.native
+    var $cell: JQuery[HTMLElement]
     
     /**
       * The jQuery-object which contains the row.
       */
     @JSName("$row")
-    var $row: JQuery[HTMLElement] = js.native
+    var $row: JQuery[HTMLElement]
     
     /**
       * The index of the row.
       */
-    var rowIndex: Double = js.native
+    var rowIndex: Double
     
     /**
       * The index of the `tbody` of the row.
       */
-    var tbodyIndex: Double = js.native
+    var tbodyIndex: Double
   }
   object ParsedCell {
     

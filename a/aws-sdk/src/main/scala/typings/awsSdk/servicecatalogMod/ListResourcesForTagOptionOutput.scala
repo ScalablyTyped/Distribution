@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourcesForTagOptionOutput extends StObject {
   
   /**
     * The page token for the next set of results. To retrieve the first set of results, use null.
     */
-  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.native
+  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.undefined
   
   /**
     * Information about the resources.
     */
-  var ResourceDetails: js.UndefOr[typings.awsSdk.servicecatalogMod.ResourceDetails] = js.native
+  var ResourceDetails: js.UndefOr[typings.awsSdk.servicecatalogMod.ResourceDetails] = js.undefined
 }
 object ListResourcesForTagOptionOutput {
   

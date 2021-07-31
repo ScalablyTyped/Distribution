@@ -15,7 +15,6 @@ import typings.instagramPrivateApi.anon.StickerOptionsSliderStick
 import typings.instagramPrivateApi.anon.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stickerBuilderMod {
@@ -82,58 +81,48 @@ object stickerBuilderMod {
   /* static members */
   object StickerBuilder {
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.attachment")
+    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder")
     @js.native
-    def attachment(options: StickerOptionsAttachmentS): typings.instagramPrivateApi.stickersMod.AttachmentSticker = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.attachmentFromMedia")
-    @js.native
-    def attachmentFromMedia(mediaInfo: User): typings.instagramPrivateApi.stickersMod.AttachmentSticker = js.native
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.attachmentFromMedia")
-    @js.native
-    def attachmentFromMedia(mediaInfo: User, additional: PartialStickerOptionsAtta): typings.instagramPrivateApi.stickersMod.AttachmentSticker = js.native
+    @scala.inline
+    def attachment(options: StickerOptionsAttachmentS): typings.instagramPrivateApi.stickersMod.AttachmentSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("attachment")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.AttachmentSticker]
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.chat")
-    @js.native
-    def chat(options: StickerOptionsChatSticker): typings.instagramPrivateApi.stickersMod.ChatSticker = js.native
+    @scala.inline
+    def attachmentFromMedia(mediaInfo: User): typings.instagramPrivateApi.stickersMod.AttachmentSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("attachmentFromMedia")(mediaInfo.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.AttachmentSticker]
+    @scala.inline
+    def attachmentFromMedia(mediaInfo: User, additional: PartialStickerOptionsAtta): typings.instagramPrivateApi.stickersMod.AttachmentSticker = (^.asInstanceOf[js.Dynamic].applyDynamic("attachmentFromMedia")(mediaInfo.asInstanceOf[js.Any], additional.asInstanceOf[js.Any])).asInstanceOf[typings.instagramPrivateApi.stickersMod.AttachmentSticker]
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.countdown")
-    @js.native
-    def countdown(options: StickerOptionsCountdownSt): typings.instagramPrivateApi.stickersMod.CountdownSticker = js.native
+    @scala.inline
+    def chat(options: StickerOptionsChatSticker): typings.instagramPrivateApi.stickersMod.ChatSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("chat")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.ChatSticker]
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.hashtag")
-    @js.native
-    def hashtag(options: StickerOptionsHashtagStic): typings.instagramPrivateApi.stickersMod.HashtagSticker = js.native
+    @scala.inline
+    def countdown(options: StickerOptionsCountdownSt): typings.instagramPrivateApi.stickersMod.CountdownSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("countdown")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.CountdownSticker]
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.location")
-    @js.native
-    def location(options: StickerOptionsLocationSti): typings.instagramPrivateApi.stickersMod.LocationSticker = js.native
+    @scala.inline
+    def hashtag(options: StickerOptionsHashtagStic): typings.instagramPrivateApi.stickersMod.HashtagSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("hashtag")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.HashtagSticker]
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.mention")
-    @js.native
-    def mention(options: StickerOptionsMentionStic): typings.instagramPrivateApi.stickersMod.MentionSticker = js.native
+    @scala.inline
+    def location(options: StickerOptionsLocationSti): typings.instagramPrivateApi.stickersMod.LocationSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("location")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.LocationSticker]
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.mentionReel")
-    @js.native
-    def mentionReel(mediaInfo: User): typings.instagramPrivateApi.stickersMod.MentionSticker = js.native
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.mentionReel")
-    @js.native
-    def mentionReel(mediaInfo: User, additional: PartialStickerOptionsMent): typings.instagramPrivateApi.stickersMod.MentionSticker = js.native
+    @scala.inline
+    def mention(options: StickerOptionsMentionStic): typings.instagramPrivateApi.stickersMod.MentionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("mention")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.MentionSticker]
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.poll")
-    @js.native
-    def poll(options: StickerOptionsPollSticker): typings.instagramPrivateApi.stickersMod.PollSticker = js.native
+    @scala.inline
+    def mentionReel(mediaInfo: User): typings.instagramPrivateApi.stickersMod.MentionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("mentionReel")(mediaInfo.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.MentionSticker]
+    @scala.inline
+    def mentionReel(mediaInfo: User, additional: PartialStickerOptionsMent): typings.instagramPrivateApi.stickersMod.MentionSticker = (^.asInstanceOf[js.Dynamic].applyDynamic("mentionReel")(mediaInfo.asInstanceOf[js.Any], additional.asInstanceOf[js.Any])).asInstanceOf[typings.instagramPrivateApi.stickersMod.MentionSticker]
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.question")
-    @js.native
-    def question(options: StickerOptionsQuestionSti): typings.instagramPrivateApi.stickersMod.QuestionSticker = js.native
+    @scala.inline
+    def poll(options: StickerOptionsPollSticker): typings.instagramPrivateApi.stickersMod.PollSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("poll")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.PollSticker]
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.quiz")
-    @js.native
-    def quiz(options: StickerOptionsQuizSticker): typings.instagramPrivateApi.stickersMod.QuizSticker = js.native
+    @scala.inline
+    def question(options: StickerOptionsQuestionSti): typings.instagramPrivateApi.stickersMod.QuestionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("question")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.QuestionSticker]
     
-    @JSImport("instagram-private-api/dist/sticker-builder", "StickerBuilder.slider")
-    @js.native
-    def slider(options: StickerOptionsSliderStick): typings.instagramPrivateApi.stickersMod.SliderSticker = js.native
+    @scala.inline
+    def quiz(options: StickerOptionsQuizSticker): typings.instagramPrivateApi.stickersMod.QuizSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("quiz")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.QuizSticker]
+    
+    @scala.inline
+    def slider(options: StickerOptionsSliderStick): typings.instagramPrivateApi.stickersMod.SliderSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("slider")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.SliderSticker]
   }
 }

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionPurchasesDeferRequest extends StObject {
   
   /** The information about the new desired expiry time for the subscription. */
-  var deferralInfo: js.UndefOr[SubscriptionDeferralInfo] = js.native
+  var deferralInfo: js.UndefOr[SubscriptionDeferralInfo] = js.undefined
 }
 object SubscriptionPurchasesDeferRequest {
   

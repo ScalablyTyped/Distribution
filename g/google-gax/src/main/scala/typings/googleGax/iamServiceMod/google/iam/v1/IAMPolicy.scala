@@ -8,7 +8,6 @@ import typings.protobufjs.mod.rpc.Service
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a IAMPolicy */
@@ -23,8 +22,8 @@ class IAMPolicy protected () extends Service {
     */
   def this(rpcImpl: RPCImpl) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-  def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+  def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   
   /**
     * Calls GetIamPolicy.
@@ -67,6 +66,10 @@ class IAMPolicy protected () extends Service {
 }
 object IAMPolicy {
   
+  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.IAMPolicy")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new IAMPolicy service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -75,18 +78,14 @@ object IAMPolicy {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.IAMPolicy.create")
-  @js.native
-  def create(rpcImpl: RPCImpl): IAMPolicy = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.IAMPolicy.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): IAMPolicy = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.IAMPolicy.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): IAMPolicy = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.IAMPolicy.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): IAMPolicy = js.native
+  @scala.inline
+  def create(rpcImpl: RPCImpl): IAMPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[IAMPolicy]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): IAMPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[IAMPolicy]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): IAMPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[IAMPolicy]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): IAMPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[IAMPolicy]
   
   /**
     * Callback as used by {@link google.iam.v1.IAMPolicy#getIamPolicy}.

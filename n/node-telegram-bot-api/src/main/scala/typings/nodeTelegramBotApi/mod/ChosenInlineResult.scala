@@ -2,21 +2,19 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChosenInlineResult extends StObject {
   
-  var from: User = js.native
+  var from: User
   
-  var inline_message_id: js.UndefOr[String] = js.native
+  var inline_message_id: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var query: String = js.native
+  var query: String
   
-  var result_id: String = js.native
+  var result_id: String
 }
 object ChosenInlineResult {
   

@@ -10,9 +10,9 @@ An experimental package providing utilities for React Refresh.
 | ------------------ | :-------------: |
 | Full name          | @next/react-refresh-utils |
 | Keywords           | - |
-| # releases         | 239 |
-| # dependents       | 8 |
-| # downloads        | 14791190 |
+| # releases         | 301 |
+| # dependents       | 12 |
+| # downloads        | 27291934 |
 | # stars            | 0 |
 
 ## Links

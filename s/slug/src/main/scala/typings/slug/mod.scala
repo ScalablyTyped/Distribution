@@ -5,20 +5,20 @@ import typings.slug.anon.Pretty
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, opts: String): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, opts: Mode): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("slug", JSImport.Namespace)
   @js.native
-  def apply(string: String): String = js.native
-  @JSImport("slug", JSImport.Namespace)
-  @js.native
-  def apply(string: String, opts: String): String = js.native
-  @JSImport("slug", JSImport.Namespace)
-  @js.native
-  def apply(string: String, opts: Mode): String = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("slug", "charmap")
   @js.native
@@ -61,20 +61,19 @@ object mod {
   
   type CharMap_ = StringDictionary[String]
   
-  @js.native
   trait Mode extends StObject {
     
-    var charmap: js.UndefOr[CharMap_ | Null] = js.native
+    var charmap: js.UndefOr[CharMap_ | Null] = js.undefined
     
-    var lower: js.UndefOr[Boolean | Null] = js.native
+    var lower: js.UndefOr[Boolean | Null] = js.undefined
     
-    var multicharmap: js.UndefOr[CharMap_ | Null] = js.native
+    var multicharmap: js.UndefOr[CharMap_ | Null] = js.undefined
     
-    var remove: js.UndefOr[RegExp | Null] = js.native
+    var remove: js.UndefOr[RegExp | Null] = js.undefined
     
-    var replacement: js.UndefOr[String | Null] = js.native
+    var replacement: js.UndefOr[String | Null] = js.undefined
     
-    var symbols: js.UndefOr[Boolean | Null] = js.native
+    var symbols: js.UndefOr[Boolean | Null] = js.undefined
   }
   object Mode {
     

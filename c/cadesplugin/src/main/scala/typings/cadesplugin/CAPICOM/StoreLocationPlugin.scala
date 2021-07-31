@@ -4,21 +4,19 @@ import typings.cadesplugin.cadespluginNumbers.`1`
 import typings.cadesplugin.cadespluginNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoreLocationPlugin extends StObject {
   
-  val CAPICOM_CURRENT_USER_STORE: `2` = js.native
+  val CAPICOM_CURRENT_USER_STORE: `2`
   
-  val CAPICOM_LOCAL_MACHINE_STORE: `1` = js.native
+  val CAPICOM_LOCAL_MACHINE_STORE: `1`
 }
 object StoreLocationPlugin {
   
   @scala.inline
-  def apply(CAPICOM_CURRENT_USER_STORE: `2`, CAPICOM_LOCAL_MACHINE_STORE: `1`): StoreLocationPlugin = {
-    val __obj = js.Dynamic.literal(CAPICOM_CURRENT_USER_STORE = CAPICOM_CURRENT_USER_STORE.asInstanceOf[js.Any], CAPICOM_LOCAL_MACHINE_STORE = CAPICOM_LOCAL_MACHINE_STORE.asInstanceOf[js.Any])
+  def apply(): StoreLocationPlugin = {
+    val __obj = js.Dynamic.literal(CAPICOM_CURRENT_USER_STORE = 2, CAPICOM_LOCAL_MACHINE_STORE = 1)
     __obj.asInstanceOf[StoreLocationPlugin]
   }
   

@@ -2,30 +2,28 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * All result fields mentioned below are updated while the job is processing.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Result extends StObject {
   
   /**
     * Statistics of how many instances of each info type were found during
     * inspect job.
     */
-  var infoTypeStats: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoTypeStats]] = js.native
+  var infoTypeStats: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoTypeStats]] = js.undefined
   
   /**
     * Total size in bytes that were processed.
     */
-  var processedBytes: js.UndefOr[String] = js.native
+  var processedBytes: js.UndefOr[String] = js.undefined
   
   /**
     * Estimate of the number of bytes to process.
     */
-  var totalEstimatedBytes: js.UndefOr[String] = js.native
+  var totalEstimatedBytes: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Result {
   

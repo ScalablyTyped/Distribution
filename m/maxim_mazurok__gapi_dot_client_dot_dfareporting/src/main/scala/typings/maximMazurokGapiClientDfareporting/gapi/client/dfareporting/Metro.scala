@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metro extends StObject {
   
   /** Country code of the country to which this metro region belongs. */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /** DART ID of the country to which this metro region belongs. */
-  var countryDartId: js.UndefOr[String] = js.native
+  var countryDartId: js.UndefOr[String] = js.undefined
   
   /** DART ID of this metro region. */
-  var dartId: js.UndefOr[String] = js.native
+  var dartId: js.UndefOr[String] = js.undefined
   
   /** DMA ID of this metro region. This is the ID used for targeting and generating reports, and is equivalent to metro_code. */
-  var dmaId: js.UndefOr[String] = js.native
+  var dmaId: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#metro". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Metro code of this metro region. This is equivalent to dma_id. */
-  var metroCode: js.UndefOr[String] = js.native
+  var metroCode: js.UndefOr[String] = js.undefined
   
   /** Name of this metro region. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Metro {
   

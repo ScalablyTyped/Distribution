@@ -2,15 +2,15 @@ package typings.kendoUi.kendo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RouterChangeEvent extends RouterEvent {
+trait RouterChangeEvent
+  extends StObject
+     with RouterEvent {
   
-  var backButtonPressed: Boolean = js.native
+  var backButtonPressed: Boolean
   
-  var params: js.Any = js.native
+  var params: js.Any
 }
 object RouterChangeEvent {
   

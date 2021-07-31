@@ -2,15 +2,13 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IShimFactory extends StObject {
   
-  def registerShim(shim: IShim): Unit = js.native
+  def registerShim(shim: IShim): Unit
   
-  def unregisterShim(shim: IShim): Unit = js.native
+  def unregisterShim(shim: IShim): Unit
 }
 object IShimFactory {
   

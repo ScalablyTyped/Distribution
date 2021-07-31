@@ -2,64 +2,64 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Named sections for reader convenience
   */
-@js.native
-trait StructureMapGroup extends BackboneElement {
+trait StructureMapGroup
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'documentation'.
     */
-  var _documentation: js.UndefOr[Element] = js.native
+  var _documentation: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'extends'.
     */
-  var _extends: js.UndefOr[Element] = js.native
+  var _extends: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'typeMode'.
     */
-  var _typeMode: js.UndefOr[Element] = js.native
+  var _typeMode: js.UndefOr[Element] = js.undefined
   
   /**
     * Additional description/explaination for group
     */
-  var documentation: js.UndefOr[String] = js.native
+  var documentation: js.UndefOr[String] = js.undefined
   
   /**
     * Another group that this group adds rules to
     */
-  var `extends`: js.UndefOr[id] = js.native
+  var `extends`: js.UndefOr[id] = js.undefined
   
   /**
     * Named instance provided when invoking the map
     */
-  var input: js.Array[StructureMapGroupInput] = js.native
+  var input: js.Array[StructureMapGroupInput]
   
   /**
     * Human-readable label
     */
-  var name: id = js.native
+  var name: id
   
   /**
     * Transform Rule from source to target
     */
-  var rule: js.Array[StructureMapGroupRule] = js.native
+  var rule: js.Array[StructureMapGroupRule]
   
   /**
     * none | types | type-and-types
     */
-  var typeMode: code = js.native
+  var typeMode: code
 }
 object StructureMapGroup {
   

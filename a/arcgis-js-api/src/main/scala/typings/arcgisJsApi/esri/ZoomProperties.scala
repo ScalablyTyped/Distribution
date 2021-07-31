@@ -4,39 +4,39 @@ import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ZoomProperties extends WidgetProperties {
+trait ZoomProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * Determines the layout/orientation of the Zoom widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#layout)
     */
-  var layout: js.UndefOr[vertical | horizontal] = js.native
+  var layout: js.UndefOr[vertical | horizontal] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#viewModel)
     */
-  var viewModel: js.UndefOr[ZoomViewModelProperties] = js.native
+  var viewModel: js.UndefOr[ZoomViewModelProperties] = js.undefined
 }
 object ZoomProperties {
   

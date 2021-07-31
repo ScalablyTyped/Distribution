@@ -2,20 +2,18 @@ package typings.nodeRedRegistry.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeMessageParts extends StObject {
   
   /** if known, the total number of messages in the sequence */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** a unique identifier for the sequence */
-  var id: String = js.native
+  var id: String
   
   /** the message's position within the sequence */
-  var index: Double = js.native
+  var index: Double
 }
 object NodeMessageParts {
   

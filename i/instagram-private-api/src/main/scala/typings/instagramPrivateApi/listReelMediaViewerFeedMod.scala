@@ -6,7 +6,6 @@ import typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod.ListReelMe
 import typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod.ListReelMediaViewerFeedResponseUsersItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listReelMediaViewerFeedMod {

@@ -3,7 +3,6 @@ package typings.materialUiCore
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod extends Shortcut {
@@ -12,12 +11,11 @@ object commonMod extends Shortcut {
   @js.native
   val default: CommonColors = js.native
   
-  @js.native
   trait CommonColors extends StObject {
     
-    var black: String = js.native
+    var black: String
     
-    var white: String = js.native
+    var white: String
   }
   object CommonColors {
     

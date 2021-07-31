@@ -6,51 +6,51 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrderdocumentsList extends StandardParameters {
+trait ParamsResourceOrderdocumentsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Select only order documents that have been approved by at least one user.
     */
-  var approved: js.UndefOr[Boolean] = js.native
+  var approved: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only order documents with these IDs.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Select only order documents for specified orders.
     */
-  var orderId: js.UndefOr[js.Array[String]] = js.native
+  var orderId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Value of the nextPageToken from the previous result page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Project ID for order documents.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Allows searching for order documents by name or ID. Wildcards (*) are
@@ -61,22 +61,22 @@ trait ParamsResourceOrderdocumentsList extends StandardParameters {
     * search string of "orderdocument" will match order documents with name "my
     * orderdocument", "orderdocument 2015", or simply "orderdocument".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /**
     * Select only order documents that are associated with these sites.
     */
-  var siteId: js.UndefOr[js.Array[String]] = js.native
+  var siteId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Field by which to sort the list.
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * Order of sorted results.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrderdocumentsList {
   

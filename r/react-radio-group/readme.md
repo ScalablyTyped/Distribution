@@ -11,8 +11,8 @@ Better radio buttons.
 | Full name          | react-radio-group |
 | Keywords           | facebook, react, radio, radio-group, component, react-component |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 787400 |
+| # dependents       | 21 |
+| # downloads        | 939931 |
 | # stars            | 3 |
 
 ## Links

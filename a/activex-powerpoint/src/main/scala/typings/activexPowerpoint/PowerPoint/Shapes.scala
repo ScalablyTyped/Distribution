@@ -12,7 +12,6 @@ import typings.activexOffice.Office.SmartArtLayout
 import typings.activexOffice.Office.XlChartType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,108 +29,37 @@ trait Shapes extends StObject {
     * @param number [Height=-1]
     */
   def AddChart(): Shape = js.native
-  def AddChart(
-    Type: js.UndefOr[scala.Nothing],
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddChart(
-    Type: js.UndefOr[scala.Nothing],
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double
-  ): Shape = js.native
-  def AddChart(
-    Type: js.UndefOr[scala.Nothing],
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
-  def AddChart(Type: js.UndefOr[scala.Nothing], Left: js.UndefOr[scala.Nothing], Top: Double): Shape = js.native
-  def AddChart(
-    Type: js.UndefOr[scala.Nothing],
-    Left: js.UndefOr[scala.Nothing],
-    Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddChart(Type: js.UndefOr[scala.Nothing], Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double): Shape = js.native
-  def AddChart(
-    Type: js.UndefOr[scala.Nothing],
-    Left: js.UndefOr[scala.Nothing],
-    Top: Double,
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
-  def AddChart(Type: js.UndefOr[scala.Nothing], Left: Double): Shape = js.native
-  def AddChart(
-    Type: js.UndefOr[scala.Nothing],
-    Left: Double,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddChart(Type: js.UndefOr[scala.Nothing], Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddChart(
-    Type: js.UndefOr[scala.Nothing],
-    Left: Double,
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
-  def AddChart(Type: js.UndefOr[scala.Nothing], Left: Double, Top: Double): Shape = js.native
-  def AddChart(
-    Type: js.UndefOr[scala.Nothing],
-    Left: Double,
-    Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddChart(Type: js.UndefOr[scala.Nothing], Left: Double, Top: Double, Width: Double): Shape = js.native
-  def AddChart(Type: js.UndefOr[scala.Nothing], Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Double, Width: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
   def AddChart(Type: XlChartType): Shape = js.native
-  def AddChart(
-    Type: XlChartType,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddChart(Type: XlChartType, Left: js.UndefOr[scala.Nothing], Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddChart(
-    Type: XlChartType,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
-  def AddChart(Type: XlChartType, Left: js.UndefOr[scala.Nothing], Top: Double): Shape = js.native
-  def AddChart(
-    Type: XlChartType,
-    Left: js.UndefOr[scala.Nothing],
-    Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddChart(Type: XlChartType, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double): Shape = js.native
-  def AddChart(Type: XlChartType, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double): Shape = js.native
-  def AddChart(
-    Type: XlChartType,
-    Left: Double,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddChart(Type: XlChartType, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddChart(Type: XlChartType, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double, Height: Double): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double, Top: Double): Shape = js.native
-  def AddChart(Type: XlChartType, Left: Double, Top: Double, Width: js.UndefOr[scala.Nothing], Height: Double): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
   
   /**
     * @param number [Left=1.25]
@@ -140,26 +68,21 @@ trait Shapes extends StObject {
     * @param number [Height=145.25]
     */
   def AddComment(): Shape = js.native
-  def AddComment(
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddComment(Left: js.UndefOr[scala.Nothing], Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddComment(Left: js.UndefOr[scala.Nothing], Top: js.UndefOr[scala.Nothing], Width: Double, Height: Double): Shape = js.native
-  def AddComment(Left: js.UndefOr[scala.Nothing], Top: Double): Shape = js.native
-  def AddComment(Left: js.UndefOr[scala.Nothing], Top: Double, Width: js.UndefOr[scala.Nothing], Height: Double): Shape = js.native
-  def AddComment(Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double): Shape = js.native
-  def AddComment(Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddComment(Left: Double): Shape = js.native
-  def AddComment(Left: Double, Top: js.UndefOr[scala.Nothing], Width: js.UndefOr[scala.Nothing], Height: Double): Shape = js.native
-  def AddComment(Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddComment(Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double, Height: Double): Shape = js.native
   def AddComment(Left: Double, Top: Double): Shape = js.native
-  def AddComment(Left: Double, Top: Double, Width: js.UndefOr[scala.Nothing], Height: Double): Shape = js.native
   def AddComment(Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddComment(Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddComment(Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddComment(Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddComment(Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddComment(Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
   
   def AddConnector(Type: MsoConnectorType, BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape = js.native
   
@@ -178,45 +101,21 @@ trait Shapes extends StObject {
     * @param number [Height=-1]
     */
   def AddMediaObject(FileName: String): Shape = js.native
-  def AddMediaObject(
-    FileName: String,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddMediaObject(FileName: String, Left: js.UndefOr[scala.Nothing], Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddMediaObject(
-    FileName: String,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
-  def AddMediaObject(FileName: String, Left: js.UndefOr[scala.Nothing], Top: Double): Shape = js.native
-  def AddMediaObject(
-    FileName: String,
-    Left: js.UndefOr[scala.Nothing],
-    Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddMediaObject(FileName: String, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double): Shape = js.native
-  def AddMediaObject(FileName: String, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddMediaObject(FileName: String, Left: Double): Shape = js.native
-  def AddMediaObject(
-    FileName: String,
-    Left: Double,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddMediaObject(FileName: String, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddMediaObject(FileName: String, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double, Height: Double): Shape = js.native
   def AddMediaObject(FileName: String, Left: Double, Top: Double): Shape = js.native
-  def AddMediaObject(FileName: String, Left: Double, Top: Double, Width: js.UndefOr[scala.Nothing], Height: Double): Shape = js.native
   def AddMediaObject(FileName: String, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddMediaObject(FileName: String, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
   
   /**
     * @param Office.MsoTriState [LinkToFile=0]
@@ -243,45 +142,21 @@ trait Shapes extends StObject {
     * @param number [Height=-1]
     */
   def AddMediaObjectFromEmbedTag(EmbedTag: String): Shape = js.native
-  def AddMediaObjectFromEmbedTag(
-    EmbedTag: String,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: js.UndefOr[scala.Nothing], Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddMediaObjectFromEmbedTag(
-    EmbedTag: String,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
-  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: js.UndefOr[scala.Nothing], Top: Double): Shape = js.native
-  def AddMediaObjectFromEmbedTag(
-    EmbedTag: String,
-    Left: js.UndefOr[scala.Nothing],
-    Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double): Shape = js.native
-  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double): Shape = js.native
-  def AddMediaObjectFromEmbedTag(
-    EmbedTag: String,
-    Left: Double,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double, Height: Double): Shape = js.native
   def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Double): Shape = js.native
-  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Double, Width: js.UndefOr[scala.Nothing], Height: Double): Shape = js.native
   def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
   
   /**
     * @param number [Left=0]
@@ -327,15 +202,6 @@ trait Shapes extends StObject {
     SaveWithDocument: MsoTriState,
     Left: Double,
     Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddPicture(
-    FileName: String,
-    LinkToFile: MsoTriState,
-    SaveWithDocument: MsoTriState,
-    Left: Double,
-    Top: Double,
     Width: Double
   ): Shape = js.native
   def AddPicture(
@@ -345,6 +211,15 @@ trait Shapes extends StObject {
     Left: Double,
     Top: Double,
     Width: Double,
+    Height: Double
+  ): Shape = js.native
+  def AddPicture(
+    FileName: String,
+    LinkToFile: MsoTriState,
+    SaveWithDocument: MsoTriState,
+    Left: Double,
+    Top: Double,
+    Width: Unit,
     Height: Double
   ): Shape = js.native
   
@@ -355,68 +230,21 @@ trait Shapes extends StObject {
     * @param number [Height=-1]
     */
   def AddPlaceholder(Type: PpPlaceholderType): Shape = js.native
-  def AddPlaceholder(
-    Type: PpPlaceholderType,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddPlaceholder(
-    Type: PpPlaceholderType,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double
-  ): Shape = js.native
-  def AddPlaceholder(
-    Type: PpPlaceholderType,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
-  def AddPlaceholder(Type: PpPlaceholderType, Left: js.UndefOr[scala.Nothing], Top: Double): Shape = js.native
-  def AddPlaceholder(
-    Type: PpPlaceholderType,
-    Left: js.UndefOr[scala.Nothing],
-    Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddPlaceholder(Type: PpPlaceholderType, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double): Shape = js.native
-  def AddPlaceholder(
-    Type: PpPlaceholderType,
-    Left: js.UndefOr[scala.Nothing],
-    Top: Double,
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
   def AddPlaceholder(Type: PpPlaceholderType, Left: Double): Shape = js.native
-  def AddPlaceholder(
-    Type: PpPlaceholderType,
-    Left: Double,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddPlaceholder(
-    Type: PpPlaceholderType,
-    Left: Double,
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
   def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Double): Shape = js.native
-  def AddPlaceholder(
-    Type: PpPlaceholderType,
-    Left: Double,
-    Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
   def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
   
   def AddPolyline(SafeArrayOfPoints: js.Any): Shape = js.native
   
@@ -429,68 +257,21 @@ trait Shapes extends StObject {
     * @param number [Height=-1]
     */
   def AddSmartArt(Layout: SmartArtLayout): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
-  def AddSmartArt(Layout: SmartArtLayout, Left: js.UndefOr[scala.Nothing], Top: Double): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddSmartArt(Layout: SmartArtLayout, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: Double,
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: Double,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: Double,
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: Double,
-    Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
   
   /**
     * @param number [Left=-1]
@@ -499,76 +280,21 @@ trait Shapes extends StObject {
     * @param number [Height=-1]
     */
   def AddTable(NumRows: Double, NumColumns: Double): Shape = js.native
-  def AddTable(
-    NumRows: Double,
-    NumColumns: Double,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddTable(
-    NumRows: Double,
-    NumColumns: Double,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double
-  ): Shape = js.native
-  def AddTable(
-    NumRows: Double,
-    NumColumns: Double,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
-  def AddTable(NumRows: Double, NumColumns: Double, Left: js.UndefOr[scala.Nothing], Top: Double): Shape = js.native
-  def AddTable(
-    NumRows: Double,
-    NumColumns: Double,
-    Left: js.UndefOr[scala.Nothing],
-    Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddTable(NumRows: Double, NumColumns: Double, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double): Shape = js.native
-  def AddTable(
-    NumRows: Double,
-    NumColumns: Double,
-    Left: js.UndefOr[scala.Nothing],
-    Top: Double,
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
   def AddTable(NumRows: Double, NumColumns: Double, Left: Double): Shape = js.native
-  def AddTable(
-    NumRows: Double,
-    NumColumns: Double,
-    Left: Double,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
-  def AddTable(
-    NumRows: Double,
-    NumColumns: Double,
-    Left: Double,
-    Top: js.UndefOr[scala.Nothing],
-    Width: Double,
-    Height: Double
-  ): Shape = js.native
   def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Double): Shape = js.native
-  def AddTable(
-    NumRows: Double,
-    NumColumns: Double,
-    Left: Double,
-    Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
   def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
   
   def AddTextEffect(
     PresetTextEffect: MsoPresetTextEffect,

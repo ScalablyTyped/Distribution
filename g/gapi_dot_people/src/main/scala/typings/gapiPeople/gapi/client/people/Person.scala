@@ -2,69 +2,67 @@ package typings.gapiPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Person extends StObject {
   
-  var BraggingRights: js.UndefOr[js.Array[typings.gapiPeople.gapi.client.people.BraggingRights]] = js.native
+  var BraggingRights: js.UndefOr[js.Array[typings.gapiPeople.gapi.client.people.BraggingRights]] = js.undefined
   
-  var addresses: js.UndefOr[js.Array[Address]] = js.native
+  var addresses: js.UndefOr[js.Array[Address]] = js.undefined
   
-  var ageRange: js.UndefOr[AgeRange] = js.native
+  var ageRange: js.UndefOr[AgeRange] = js.undefined
   
-  var biographies: js.UndefOr[js.Array[Biography]] = js.native
+  var biographies: js.UndefOr[js.Array[Biography]] = js.undefined
   
-  var birthdays: js.UndefOr[js.Array[Birthday]] = js.native
+  var birthdays: js.UndefOr[js.Array[Birthday]] = js.undefined
   
-  var coverPhotos: js.Array[CoverPhoto] = js.native
+  var coverPhotos: js.Array[CoverPhoto]
   
-  var emailAddresses: js.UndefOr[js.Array[EmailAddress]] = js.native
+  var emailAddresses: js.UndefOr[js.Array[EmailAddress]] = js.undefined
   
-  var etag: String = js.native
+  var etag: String
   
-  var events: js.UndefOr[js.Array[Event]] = js.native
+  var events: js.UndefOr[js.Array[Event]] = js.undefined
   
-  var genders: js.UndefOr[js.Array[Gender]] = js.native
+  var genders: js.UndefOr[js.Array[Gender]] = js.undefined
   
-  var imClients: js.UndefOr[js.Array[ImClient]] = js.native
+  var imClients: js.UndefOr[js.Array[ImClient]] = js.undefined
   
-  var interests: js.UndefOr[js.Array[Interest]] = js.native
+  var interests: js.UndefOr[js.Array[Interest]] = js.undefined
   
-  var locales: js.Array[Locale] = js.native
+  var locales: js.Array[Locale]
   
-  var memberships: js.UndefOr[js.Array[Membership]] = js.native
+  var memberships: js.UndefOr[js.Array[Membership]] = js.undefined
   
-  var metadata: PersonMetadata = js.native
+  var metadata: PersonMetadata
   
-  var names: js.Array[Name] = js.native
+  var names: js.Array[Name]
   
-  var nicknames: js.UndefOr[js.Array[Nickname]] = js.native
+  var nicknames: js.UndefOr[js.Array[Nickname]] = js.undefined
   
-  var occupations: js.UndefOr[js.Array[Occupation]] = js.native
+  var occupations: js.UndefOr[js.Array[Occupation]] = js.undefined
   
-  var organizations: js.UndefOr[js.Array[Organization]] = js.native
+  var organizations: js.UndefOr[js.Array[Organization]] = js.undefined
   
-  var phoneNumbers: js.UndefOr[js.Array[PhoneNumber]] = js.native
+  var phoneNumbers: js.UndefOr[js.Array[PhoneNumber]] = js.undefined
   
-  var photos: js.UndefOr[js.Array[Photo]] = js.native
+  var photos: js.UndefOr[js.Array[Photo]] = js.undefined
   
-  var relations: js.UndefOr[js.Array[Relation]] = js.native
+  var relations: js.UndefOr[js.Array[Relation]] = js.undefined
   
-  var relationshipInterests: js.UndefOr[js.Array[RelationshipInterest]] = js.native
+  var relationshipInterests: js.UndefOr[js.Array[RelationshipInterest]] = js.undefined
   
-  var relationshipStatuses: js.UndefOr[js.Array[RelationshipStatus]] = js.native
+  var relationshipStatuses: js.UndefOr[js.Array[RelationshipStatus]] = js.undefined
   
-  var residences: js.UndefOr[js.Array[Residence]] = js.native
+  var residences: js.UndefOr[js.Array[Residence]] = js.undefined
   
-  var resourceName: String = js.native
+  var resourceName: String
   
-  var skills: js.UndefOr[js.Array[Skill]] = js.native
+  var skills: js.UndefOr[js.Array[Skill]] = js.undefined
   
-  var taglines: js.UndefOr[js.Array[Tagline]] = js.native
+  var taglines: js.UndefOr[js.Array[Tagline]] = js.undefined
   
-  var urls: js.UndefOr[js.Array[Url]] = js.native
+  var urls: js.UndefOr[js.Array[Url]] = js.undefined
 }
 object Person {
   

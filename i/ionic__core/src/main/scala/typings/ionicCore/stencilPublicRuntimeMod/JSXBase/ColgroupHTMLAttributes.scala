@@ -2,13 +2,13 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColgroupHTMLAttributes[T] extends HTMLAttributes[T] {
+trait ColgroupHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var span: js.UndefOr[Double] = js.native
+  var span: js.UndefOr[Double] = js.undefined
 }
 object ColgroupHTMLAttributes {
   
@@ -19,7 +19,7 @@ object ColgroupHTMLAttributes {
   }
   
   @scala.inline
-  implicit class ColgroupHTMLAttributesMutableBuilder[Self <: ColgroupHTMLAttributes[_], T] (val x: Self with ColgroupHTMLAttributes[T]) extends AnyVal {
+  implicit class ColgroupHTMLAttributesMutableBuilder[Self <: ColgroupHTMLAttributes[?], T] (val x: Self & ColgroupHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])

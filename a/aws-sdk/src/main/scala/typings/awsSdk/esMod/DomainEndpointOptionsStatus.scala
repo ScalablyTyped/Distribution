@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainEndpointOptionsStatus extends StObject {
   
   /**
     * Options to configure endpoint for the Elasticsearch domain.
     */
-  var Options: DomainEndpointOptions = js.native
+  var Options: DomainEndpointOptions
   
   /**
     * The status of the endpoint options for the Elasticsearch domain. See OptionStatus for the status information that's included. 
     */
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object DomainEndpointOptionsStatus {
   

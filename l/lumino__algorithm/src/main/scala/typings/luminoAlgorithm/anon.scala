@@ -2,17 +2,15 @@ package typings.luminoAlgorithm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Index[T] extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var value: js.UndefOr[T] = js.native
+    var value: js.UndefOr[T] = js.undefined
   }
   object Index {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index[_], T] (val x: Self with Index[T]) extends AnyVal {
+    implicit class IndexMutableBuilder[Self <: Index[?], T] (val x: Self & Index[T]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])

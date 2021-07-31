@@ -2,14 +2,12 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Cell in a UITableRow._
   * @see https://docs.scriptable.app/uitablecell
   */
-@js.native
 trait UITableCell extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait UITableCell extends StObject {
     * Specifies that content in the cell should be center aligned.
     * @see https://docs.scriptable.app/uitablecell/#-centeraligned
     */
-  def centerAligned(): Unit = js.native
+  def centerAligned(): Unit
   
   /**
     * _Whether to dismiss the table when the button is tapped._
@@ -26,7 +24,7 @@ trait UITableCell extends StObject {
     * Defaults to false.
     * @see https://docs.scriptable.app/uitablecell/#dismissontap
     */
-  var dismissOnTap: Boolean = js.native
+  var dismissOnTap: Boolean
   
   /**
     * _Left aligns content._
@@ -34,7 +32,7 @@ trait UITableCell extends StObject {
     * Specifies that content in the cell should be left aligned.
     * @see https://docs.scriptable.app/uitablecell/#-leftaligned
     */
-  def leftAligned(): Unit = js.native
+  def leftAligned(): Unit
   
   /**
     * _Called when the button is tapped._
@@ -42,7 +40,7 @@ trait UITableCell extends StObject {
     * Buttons cannot be tapped when the table is presented in Siri.
     * @see https://docs.scriptable.app/uitablecell/#ontap
     */
-  def onTap(): Unit = js.native
+  def onTap(): Unit
   
   /**
     * _Right aligns content._
@@ -50,7 +48,7 @@ trait UITableCell extends StObject {
     * Specifies that content in the cell should be right aligned.
     * @see https://docs.scriptable.app/uitablecell/#-rightaligned
     */
-  def rightAligned(): Unit = js.native
+  def rightAligned(): Unit
   
   /**
     * _Color of the subtitle._
@@ -59,13 +57,13 @@ trait UITableCell extends StObject {
     * context the script is running in.
     * @see https://docs.scriptable.app/uitablecell/#subtitlecolor
     */
-  var subtitleColor: Color = js.native
+  var subtitleColor: Color
   
   /**
     * _Font of the subtitle._
     * @see https://docs.scriptable.app/uitablecell/#subtitlefont
     */
-  var subtitleFont: Font = js.native
+  var subtitleFont: Font
   
   /**
     * _Color of the title._
@@ -74,13 +72,13 @@ trait UITableCell extends StObject {
     * context the script is running in.
     * @see https://docs.scriptable.app/uitablecell/#titlecolor
     */
-  var titleColor: Color = js.native
+  var titleColor: Color
   
   /**
     * _Font of the title._
     * @see https://docs.scriptable.app/uitablecell/#titlefont
     */
-  var titleFont: Font = js.native
+  var titleFont: Font
   
   /**
     * _Relative width of the cell._
@@ -93,7 +91,7 @@ trait UITableCell extends StObject {
     * three times as wide as A.
     * @see https://docs.scriptable.app/uitablecell/#widthweight
     */
-  var widthWeight: Double = js.native
+  var widthWeight: Double
 }
 object UITableCell {
   

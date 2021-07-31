@@ -9,20 +9,18 @@ import typings.d3pie.d3pieStrings.percentage
 import typings.d3pie.d3pieStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  pieDistance :number | undefined} & d3pie.d3pie.ID3PieLabelsOptions */
-@js.native
 trait pieDistancenumberundefine extends StObject {
   
   var format: js.UndefOr[
     label | value | percentage | `label-value1` | `label-value2` | `label-percentage1` | `label-percentage2`
-  ] = js.native
+  ] = js.undefined
   
-  var hideWhenLessThanPercentage: js.UndefOr[Double] = js.native
+  var hideWhenLessThanPercentage: js.UndefOr[Double] = js.undefined
   
-  var pieDistance: js.UndefOr[Double] = js.native
+  var pieDistance: js.UndefOr[Double] = js.undefined
 }
 object pieDistancenumberundefine {
   

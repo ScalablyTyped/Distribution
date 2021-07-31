@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociatePhoneNumberWithUserRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: String = js.native
+  var AccountId: String
   
   /**
     * The phone number, in E.164 format.
     */
-  var E164PhoneNumber: typings.awsSdk.chimeMod.E164PhoneNumber = js.native
+  var E164PhoneNumber: typings.awsSdk.chimeMod.E164PhoneNumber
   
   /**
     * The user ID.
     */
-  var UserId: String = js.native
+  var UserId: String
 }
 object AssociatePhoneNumberWithUserRequest {
   

@@ -3,17 +3,15 @@ package typings.reactDates.anon
 import typings.reactDates.mod.OrientationShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnGetNextScrollableMonths extends StObject {
   
-  var onGetNextScrollableMonths: js.UndefOr[scala.Nothing] = js.native
+  var onGetNextScrollableMonths: js.UndefOr[scala.Nothing] = js.undefined
   
-  var onGetPrevScrollableMonths: js.UndefOr[scala.Nothing] = js.native
+  var onGetPrevScrollableMonths: js.UndefOr[scala.Nothing] = js.undefined
   
-  var orientation: js.UndefOr[OrientationShape] = js.native
+  var orientation: js.UndefOr[OrientationShape] = js.undefined
 }
 object OnGetNextScrollableMonths {
   

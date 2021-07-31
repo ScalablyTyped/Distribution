@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** enables a text object to copy attributed text from another text object. */
-@js.native
-trait XTextCopy extends XInterface {
+trait XTextCopy
+  extends StObject
+     with XInterface {
   
   /**
     * copies the content from another text object.
     * @param xSource specifies the source text object.
     */
-  def copyText(xSource: XTextCopy): Unit = js.native
+  def copyText(xSource: XTextCopy): Unit
 }
 object XTextCopy {
   

@@ -2,36 +2,35 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStyleType extends StObject
 object IStyleType {
   
-  @js.native
-  trait Cell extends IStyleType {
+  trait Cell
+    extends StObject
+       with IStyleType {
     
     /** -> CSS background-color */
-    var backgroundColor: js.Any = js.native
+    var backgroundColor: js.Any
     
     /** -> CSS font-family */
-    var font: js.Any = js.native
+    var font: js.Any
     
     /** -> CSS font-size */
-    var fontSize: js.Any = js.native
+    var fontSize: js.Any
     
     /** -> CSS font-style */
-    var fontStyle: js.Any = js.native
+    var fontStyle: js.Any
     
     /** -> CSS font-weight */
-    var fontWeight: js.Any = js.native
+    var fontWeight: js.Any
     
     /** -> CSS text-align */
-    var textAlign: js.Any = js.native
+    var textAlign: js.Any
     
     /** -> CSS color */
-    var textColor: js.Any = js.native
+    var textColor: js.Any
   }
   object Cell {
     
@@ -75,44 +74,43 @@ object IStyleType {
     }
   }
   
-  @js.native
   trait GridPane extends StObject {
     
-    var backgroundColor: js.Any = js.native
+    var backgroundColor: js.Any
     
-    var changeHighlightCellBgColor: js.Any = js.native
+    var changeHighlightCellBgColor: js.Any
     
-    var columnDropIndicatorColor: js.Any = js.native
+    var columnDropIndicatorColor: js.Any
     
-    var copyRectBackBorderColor: js.Any = js.native
+    var copyRectBackBorderColor: js.Any
     
-    var copyRectForeBorderColor: js.Any = js.native
+    var copyRectForeBorderColor: js.Any
     
-    var errorRectBorderColor: js.Any = js.native
+    var errorRectBorderColor: js.Any
     
-    var fillRectBorderColor: js.Any = js.native
+    var fillRectBorderColor: js.Any
     
-    var focusRectBorderColor: js.Any = js.native
+    var focusRectBorderColor: js.Any
     
-    var horizontalBorderColor: js.Any = js.native
+    var horizontalBorderColor: js.Any
     
-    var horizontalBorderStyle: js.Any = js.native
+    var horizontalBorderStyle: js.Any
     
-    var linkColor: js.Any = js.native
+    var linkColor: js.Any
     
-    var readonlySelectionRectBorderColor: js.Any = js.native
+    var readonlySelectionRectBorderColor: js.Any
     
-    var rowDropIndicatorColor: js.Any = js.native
+    var rowDropIndicatorColor: js.Any
     
-    var selectedCellBgColor: js.Any = js.native
+    var selectedCellBgColor: js.Any
     
-    var selectionRectBorderColor: js.Any = js.native
+    var selectionRectBorderColor: js.Any
     
-    var verticalBorderColor: js.Any = js.native
+    var verticalBorderColor: js.Any
     
-    var verticalBorderStyle: js.Any = js.native
+    var verticalBorderStyle: js.Any
     
-    var visitedLinkColor: js.Any = js.native
+    var visitedLinkColor: js.Any
   }
   object GridPane {
     
@@ -200,50 +198,49 @@ object IStyleType {
     }
   }
   
-  @js.native
   trait Header extends StObject {
     
-    var backgroundColor: js.Any = js.native
+    var backgroundColor: js.Any
     
-    var elementClickBorderColor: js.Any = js.native
+    var elementClickBorderColor: js.Any
     
-    var elementClickColor: js.Any = js.native
+    var elementClickColor: js.Any
     
-    var eyeBrowBorderColor: js.Any = js.native
+    var eyeBrowBorderColor: js.Any
     
-    var eyeBrowColor: js.Any = js.native
+    var eyeBrowColor: js.Any
     
-    var eyeBrowHoverBorderColor: js.Any = js.native
+    var eyeBrowHoverBorderColor: js.Any
     
-    var eyeBrowHoverColor: js.Any = js.native
+    var eyeBrowHoverColor: js.Any
     
-    var font: js.Any = js.native
+    var font: js.Any
     
-    var fontSize: js.Any = js.native
+    var fontSize: js.Any
     
-    var fontWeight: js.Any = js.native
+    var fontWeight: js.Any
     
-    var innerBorderColor: js.Any = js.native
+    var innerBorderColor: js.Any
     
-    var menuBorderColor: js.Any = js.native
+    var menuBorderColor: js.Any
     
-    var menuColor: js.Any = js.native
+    var menuColor: js.Any
     
-    var menuHoverBorderColor: js.Any = js.native
+    var menuHoverBorderColor: js.Any
     
-    var menuHoverColor: js.Any = js.native
+    var menuHoverColor: js.Any
     
-    var outerBorderColor: js.Any = js.native
+    var outerBorderColor: js.Any
     
-    var resizeBorderColor: js.Any = js.native
+    var resizeBorderColor: js.Any
     
-    var resizeColor: js.Any = js.native
+    var resizeColor: js.Any
     
-    var resizeHoverBorderColor: js.Any = js.native
+    var resizeHoverBorderColor: js.Any
     
-    var resizeHoverColor: js.Any = js.native
+    var resizeHoverColor: js.Any
     
-    var textColor: js.Any = js.native
+    var textColor: js.Any
   }
   object Header {
     
@@ -343,14 +340,13 @@ object IStyleType {
     }
   }
   
-  @js.native
   trait RowHeaderStyle extends StObject {
     
-    var backgroundColor: js.Any = js.native
+    var backgroundColor: js.Any
     
-    var innerBorderColor: js.Any = js.native
+    var innerBorderColor: js.Any
     
-    var outerBorderColor: js.Any = js.native
+    var outerBorderColor: js.Any
   }
   object RowHeaderStyle {
     
@@ -374,16 +370,17 @@ object IStyleType {
     }
   }
   
-  @js.native
-  trait Splitter extends IStyleType {
+  trait Splitter
+    extends StObject
+       with IStyleType {
     
-    var backgroundColor: js.Any = js.native
+    var backgroundColor: js.Any
     
-    var innerBorderColor: js.Any = js.native
+    var innerBorderColor: js.Any
     
-    var leftInnerBorderColor: js.Any = js.native
+    var leftInnerBorderColor: js.Any
     
-    var outerBorderColor: js.Any = js.native
+    var outerBorderColor: js.Any
   }
   object Splitter {
     
@@ -415,20 +412,21 @@ object IStyleType {
     }
   }
   
-  @js.native
-  trait SplitterHandle extends IStyleType {
+  trait SplitterHandle
+    extends StObject
+       with IStyleType {
     
-    var backgroundColor: js.Any = js.native
+    var backgroundColor: js.Any
     
-    var gripLowerColor: js.Any = js.native
+    var gripLowerColor: js.Any
     
-    var gripUpperColor: js.Any = js.native
+    var gripUpperColor: js.Any
     
-    var innerBorderColor: js.Any = js.native
+    var innerBorderColor: js.Any
     
-    var leftInnerBorderColor: js.Any = js.native
+    var leftInnerBorderColor: js.Any
     
-    var outerBorderColor: js.Any = js.native
+    var outerBorderColor: js.Any
   }
   object SplitterHandle {
     
@@ -468,30 +466,29 @@ object IStyleType {
     }
   }
   
-  @js.native
   trait TimescaleTier extends StObject {
     
-    var backgroundColor: js.Any = js.native
+    var backgroundColor: js.Any
     
-    var font: js.Any = js.native
+    var font: js.Any
     
-    var fontSize: js.Any = js.native
+    var fontSize: js.Any
     
-    var fontWeight: js.Any = js.native
+    var fontWeight: js.Any
     
-    var horizontalBorderColor: js.Any = js.native
+    var horizontalBorderColor: js.Any
     
-    var horizontalBorderStyle: js.Any = js.native
+    var horizontalBorderStyle: js.Any
     
-    var outerBorderColor: js.Any = js.native
+    var outerBorderColor: js.Any
     
-    var textColor: js.Any = js.native
+    var textColor: js.Any
     
-    var todayLineColor: js.Any = js.native
+    var todayLineColor: js.Any
     
-    var verticalBorderColor: js.Any = js.native
+    var verticalBorderColor: js.Any
     
-    var verticalBorderStyle: js.Any = js.native
+    var verticalBorderStyle: js.Any
   }
   object TimescaleTier {
     
@@ -551,12 +548,11 @@ object IStyleType {
     }
   }
   
-  @js.native
   trait Widget extends StObject {
     
-    var backgroundColor: js.Any = js.native
+    var backgroundColor: js.Any
     
-    var borderColor: js.Any = js.native
+    var borderColor: js.Any
   }
   object Widget {
     

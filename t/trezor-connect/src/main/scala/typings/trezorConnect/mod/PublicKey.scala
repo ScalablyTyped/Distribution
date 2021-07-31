@@ -2,37 +2,35 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKey extends StObject {
   
   // optional for segwit accounts: xpub in segwit format
-  var chainCode: String = js.native
+  var chainCode: String
   
   // BIP32 serialization format
-  var childNum: Double = js.native
+  var childNum: Double
   
   // BIP32 serialization format
-  var depth: Double = js.native
+  var depth: Double
   
   // BIP32 serialization format
-  var fingerprint: Double = js.native
+  var fingerprint: Double
   
-  var path: js.Array[Double] = js.native
+  var path: js.Array[Double]
   
   // BIP32 serialization format
-  var publicKey: String = js.native
+  var publicKey: String
   
   // hardended path
-  var serializedPath: String = js.native
+  var serializedPath: String
   
   // serialized path
-  var xpub: String = js.native
+  var xpub: String
   
   // xpub in legacy format
-  var xpubSegwit: js.UndefOr[String] = js.native
+  var xpubSegwit: js.UndefOr[String] = js.undefined
 }
 object PublicKey {
   

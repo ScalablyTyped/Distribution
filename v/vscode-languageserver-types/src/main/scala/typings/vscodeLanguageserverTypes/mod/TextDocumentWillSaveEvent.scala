@@ -5,21 +5,19 @@ import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`2`
 import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentWillSaveEvent extends StObject {
   
   /**
     * The document that will be saved
     */
-  var document: TextDocument = js.native
+  var document: TextDocument
   
   /**
     * The reason why save was triggered.
     */
-  var reason: `1` | `2` | `3` = js.native
+  var reason: `1` | `2` | `3`
 }
 object TextDocumentWillSaveEvent {
   

@@ -2,28 +2,26 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoundNote extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
   @JSName("Excel.SoundNote_typekey")
-  var ExcelDotSoundNote_typekey: SoundNote = js.native
+  var ExcelDotSoundNote_typekey: SoundNote
   
-  def Import(Filename: String): js.Any = js.native
+  def Import(Filename: String): js.Any
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Play(): js.Any = js.native
+  def Play(): js.Any
   
-  def Record(): js.Any = js.native
+  def Record(): js.Any
 }
 object SoundNote {
   

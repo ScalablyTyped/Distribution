@@ -6,7 +6,6 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,36 +14,37 @@ object mod extends Shortcut {
   @js.native
   val ^ : MagnetUri = js.native
   
-  @js.native
-  trait Instance extends Object {
+  trait Instance
+    extends StObject
+       with Object {
     
-    var announce: js.UndefOr[js.Array[String]] = js.native
+    var announce: js.UndefOr[js.Array[String]] = js.undefined
     
-    var as: js.UndefOr[String | js.Array[String]] = js.native
+    var as: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var dn: js.UndefOr[String | js.Array[String]] = js.native
+    var dn: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var infoHash: js.UndefOr[String] = js.native
+    var infoHash: js.UndefOr[String] = js.undefined
     
-    var infoHashBuffer: js.UndefOr[Buffer] = js.native
+    var infoHashBuffer: js.UndefOr[Buffer] = js.undefined
     
-    var ix: js.UndefOr[Double | js.Array[Double]] = js.native
+    var ix: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var keywords: js.UndefOr[String | js.Array[String]] = js.native
+    var keywords: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var kt: js.UndefOr[js.Array[String]] = js.native
+    var kt: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String | js.Array[String]] = js.native
+    var name: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var tr: js.UndefOr[String | js.Array[String]] = js.native
+    var tr: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var urlList: js.UndefOr[js.Array[String]] = js.native
+    var urlList: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ws: js.UndefOr[String | js.Array[String]] = js.native
+    var ws: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var xs: js.UndefOr[String | js.Array[String]] = js.native
+    var xs: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var xt: js.UndefOr[String | js.Array[String]] = js.native
+    var xt: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Instance {
     

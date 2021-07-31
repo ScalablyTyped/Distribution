@@ -2,11 +2,11 @@ package typings.winrt.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceWatcher extends IDeviceWatcher
+trait DeviceWatcher
+  extends StObject
+     with IDeviceWatcher
 object DeviceWatcher {
   
   @scala.inline

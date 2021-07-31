@@ -2,16 +2,14 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRotateSuccessCallbackResult extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 旋转角 */
-  var rotate: Double = js.native
+  var rotate: Double
 }
 object GetRotateSuccessCallbackResult {
   

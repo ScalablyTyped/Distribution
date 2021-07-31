@@ -2,13 +2,13 @@ package typings.pixiSpine.global.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.spine.core.MathUtils")
 @js.native
 class MathUtils ()
-  extends typings.pixiSpine.PIXI.spine.core.MathUtils
+  extends StObject
+     with typings.pixiSpine.PIXI.spine.core.MathUtils
 object MathUtils {
   
   @JSGlobal("PIXI.spine.core.MathUtils")
@@ -31,19 +31,16 @@ object MathUtils {
   def PI_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.MathUtils.cbrt")
-  @js.native
-  def cbrt(x: Double): Double = js.native
+  @scala.inline
+  def cbrt(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cbrt")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.MathUtils.clamp")
-  @js.native
-  def clamp(value: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def clamp(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.MathUtils.cosDeg")
-  @js.native
-  def cosDeg(degrees: Double): Double = js.native
+  @scala.inline
+  def cosDeg(degrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cosDeg")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
   @JSGlobal("PIXI.spine.core.MathUtils.degRad")
@@ -74,27 +71,22 @@ object MathUtils {
   def radiansToDegrees_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radiansToDegrees")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.MathUtils.randomTriangular")
-  @js.native
-  def randomTriangular(min: Double, max: Double): Double = js.native
+  @scala.inline
+  def randomTriangular(min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("randomTriangular")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.MathUtils.randomTriangularWith")
-  @js.native
-  def randomTriangularWith(min: Double, max: Double, mode: Double): Double = js.native
+  @scala.inline
+  def randomTriangularWith(min: Double, max: Double, mode: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("randomTriangularWith")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.MathUtils.signum")
-  @js.native
-  def signum(value: Double): Double = js.native
+  @scala.inline
+  def signum(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("signum")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.MathUtils.sinDeg")
-  @js.native
-  def sinDeg(degrees: Double): Double = js.native
+  @scala.inline
+  def sinDeg(degrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sinDeg")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.MathUtils.toInt")
-  @js.native
-  def toInt(x: Double): Double = js.native
+  @scala.inline
+  def toInt(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toInt")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

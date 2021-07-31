@@ -3,19 +3,17 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFImpersonationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IImpersonation extends StObject {
   
-  var Account: String = js.native
+  var Account: String
   
-  def Clone(): IImpersonation = js.native
+  def Clone(): IImpersonation
   
-  var ImpersonationType: MFImpersonationType = js.native
+  var ImpersonationType: MFImpersonationType
   
-  var Password: String = js.native
+  var Password: String
 }
 object IImpersonation {
   

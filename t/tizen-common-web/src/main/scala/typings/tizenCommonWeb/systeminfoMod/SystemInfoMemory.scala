@@ -4,16 +4,16 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.NORMAL
 import typings.tizenCommonWeb.tizenCommonWebStrings.WARNING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoMemory extends SystemInfoProperty {
+trait SystemInfoMemory
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * Represents the low memory state.
     */
-  val status: SystemInfoLowMemoryStatus | NORMAL | WARNING = js.native
+  val status: SystemInfoLowMemoryStatus | NORMAL | WARNING
 }
 object SystemInfoMemory {
   

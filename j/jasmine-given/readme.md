@@ -12,7 +12,7 @@ Adds a Given-When-Then DSL to jasmine as an alternative style for specs
 | Keywords           | jasmine, bdd |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 149879 |
+| # downloads        | 137168 |
 | # stars            | 1 |
 
 ## Links

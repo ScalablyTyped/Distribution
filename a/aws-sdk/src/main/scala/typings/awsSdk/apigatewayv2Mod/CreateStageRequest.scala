@@ -2,66 +2,64 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStageRequest extends StObject {
   
   /**
     * Settings for logging access in this stage.
     */
-  var AccessLogSettings: js.UndefOr[typings.awsSdk.apigatewayv2Mod.AccessLogSettings] = js.native
+  var AccessLogSettings: js.UndefOr[typings.awsSdk.apigatewayv2Mod.AccessLogSettings] = js.undefined
   
   /**
     * The API identifier.
     */
-  var ApiId: string = js.native
+  var ApiId: string
   
   /**
     * Specifies whether updates to an API automatically trigger a new deployment. The default value is false.
     */
-  var AutoDeploy: js.UndefOr[boolean] = js.native
+  var AutoDeploy: js.UndefOr[boolean] = js.undefined
   
   /**
     * The identifier of a client certificate for a Stage. Supported only for WebSocket APIs.
     */
-  var ClientCertificateId: js.UndefOr[Id] = js.native
+  var ClientCertificateId: js.UndefOr[Id] = js.undefined
   
   /**
     * The default route settings for the stage.
     */
-  var DefaultRouteSettings: js.UndefOr[RouteSettings] = js.native
+  var DefaultRouteSettings: js.UndefOr[RouteSettings] = js.undefined
   
   /**
     * The deployment identifier of the API stage.
     */
-  var DeploymentId: js.UndefOr[Id] = js.native
+  var DeploymentId: js.UndefOr[Id] = js.undefined
   
   /**
     * The description for the API stage.
     */
-  var Description: js.UndefOr[StringWithLengthBetween0And1024] = js.native
+  var Description: js.UndefOr[StringWithLengthBetween0And1024] = js.undefined
   
   /**
     * Route settings for the stage, by routeKey.
     */
-  var RouteSettings: js.UndefOr[RouteSettingsMap] = js.native
+  var RouteSettings: js.UndefOr[RouteSettingsMap] = js.undefined
   
   /**
     * The name of the stage.
     */
-  var StageName: StringWithLengthBetween1And128 = js.native
+  var StageName: StringWithLengthBetween1And128
   
   /**
     * A map that defines the stage variables for a Stage. Variable names can have alphanumeric and underscore characters, and the values must match [A-Za-z0-9-._~:/?#&amp;=,]+.
     */
-  var StageVariables: js.UndefOr[StageVariablesMap] = js.native
+  var StageVariables: js.UndefOr[StageVariablesMap] = js.undefined
   
   /**
     * The collection of tags. Each tag element is associated with a given resource.
     */
-  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.undefined
 }
 object CreateStageRequest {
   

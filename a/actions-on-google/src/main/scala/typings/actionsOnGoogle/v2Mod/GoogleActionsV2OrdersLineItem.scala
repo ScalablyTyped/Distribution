@@ -3,63 +3,61 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersLineItem extends StObject {
   
   /**
     * Description of the item.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Extension to the line item based on its type.
     */
-  var extension: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
   /**
     * Unique id of the line item within the Cart/Order. Required.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Small image associated with this item.
     */
-  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
   
   /**
     * Name of the line item as displayed in the receipt. Required.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional product or offer id for this item.
     */
-  var offerId: js.UndefOr[String] = js.native
+  var offerId: js.UndefOr[String] = js.undefined
   
   /**
     * Each line item should have a price, even if the price is 0. Required.
     * This is the total price as displayed on the receipt for this line
     * (i.e. unit price * quantity).
     */
-  var price: js.UndefOr[GoogleActionsV2OrdersPrice] = js.native
+  var price: js.UndefOr[GoogleActionsV2OrdersPrice] = js.undefined
   
   /**
     * Number of items included.
     */
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
   
   /**
     * Sub-line item(s). Only valid if type is `REGULAR`.
     */
-  var subLines: js.UndefOr[js.Array[GoogleActionsV2OrdersLineItemSubLine]] = js.native
+  var subLines: js.UndefOr[js.Array[GoogleActionsV2OrdersLineItemSubLine]] = js.undefined
   
   /**
     * Type of line item.
     */
-  var `type`: js.UndefOr[GoogleActionsV2OrdersLineItemType] = js.native
+  var `type`: js.UndefOr[GoogleActionsV2OrdersLineItemType] = js.undefined
 }
 object GoogleActionsV2OrdersLineItem {
   
@@ -79,7 +77,7 @@ object GoogleActionsV2OrdersLineItem {
     def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setExtension(value: ApiClientObjectMap[_]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)

@@ -6,7 +6,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,10 +16,11 @@ object mod {
     def this(options: WatchOptions) = this()
   }
   
-  @js.native
-  trait WatchOptions extends WatcherOptions {
+  trait WatchOptions
+    extends StObject
+       with WatcherOptions {
     
-    var aggregateTimeout: js.UndefOr[Double] = js.native
+    var aggregateTimeout: js.UndefOr[Double] = js.undefined
   }
   object WatchOptions {
     
@@ -41,12 +41,11 @@ object mod {
     }
   }
   
-  @js.native
   trait WatcherOptions extends StObject {
     
-    var ignored: js.UndefOr[js.Array[String] | String | RegExp | (js.Function1[/* path */ String, Boolean])] = js.native
+    var ignored: js.UndefOr[js.Array[String] | String | RegExp | (js.Function1[/* path */ String, Boolean])] = js.undefined
     
-    var poll: js.UndefOr[Boolean | Double] = js.native
+    var poll: js.UndefOr[Boolean | Double] = js.undefined
   }
   object WatcherOptions {
     

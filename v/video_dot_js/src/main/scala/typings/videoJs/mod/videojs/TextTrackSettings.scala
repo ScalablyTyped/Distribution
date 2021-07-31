@@ -2,14 +2,15 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Manipulate Text Tracks settings.
   */
 @js.native
-trait TextTrackSettings extends ModalDialog {
+trait TextTrackSettings
+  extends StObject
+     with ModalDialog {
   
   /**
     * Gets an object of text track settings (or null).

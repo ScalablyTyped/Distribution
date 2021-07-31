@@ -2,23 +2,21 @@ package typings.heremaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayPosition extends StObject {
   
-  var Address: AdditionalData = js.native
+  var Address: AdditionalData
   
-  var DisplayPosition: Longitude = js.native
+  var DisplayPosition: Longitude
   
-  var LocationId: String = js.native
+  var LocationId: String
   
-  var LocationType: String = js.native
+  var LocationType: String
   
-  var MapView: BottomRight = js.native
+  var MapView: BottomRight
   
-  var NavigationPosition: js.Array[Longitude] = js.native
+  var NavigationPosition: js.Array[Longitude]
 }
 object DisplayPosition {
   

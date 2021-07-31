@@ -9,14 +9,16 @@ import typings.std.Extract
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useStylingMod {
   
-  @JSImport("glaze/dist-types/useStyling", "useStyling")
+  @JSImport("glaze/dist-types/useStyling", JSImport.Namespace)
   @js.native
-  def useStyling(): js.Function1[/* themedStyle */ ThemedStyle, String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useStyling(): js.Function1[/* themedStyle */ ThemedStyle, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useStyling")().asInstanceOf[js.Function1[/* themedStyle */ ThemedStyle, String]]
   
   type ResolveAlias[T /* <: Tokens[aliases] */] = (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny * / any['aliases'][T] */ js.Any) | (ResolveShorthand[
     /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny * / any['aliases'][T] */ js.Any
@@ -32,5 +34,5 @@ object useStylingMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueOf<CSSProperties> */ js.Any
   ]
   
-  type ThemedStyle = CSSProperties with typings.glaze.glazeStrings.ThemedStyle with TopLevel[js.Any]
+  type ThemedStyle = CSSProperties & typings.glaze.glazeStrings.ThemedStyle & TopLevel[js.Any]
 }

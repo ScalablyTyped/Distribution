@@ -9,19 +9,17 @@ import typings.std.HTMLElement
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTypesMod {
   
   type ClassNameCloneableChild[T] = ReactElement
   
-  @js.native
   trait LabelA11y extends StObject {
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
   }
   object LabelA11y {
     
@@ -52,7 +50,7 @@ object typesTypesMod {
   
   type Maybe[T, NotFound] = T | NotFound
   
-  type PropsWithRef[P /* <: js.Object */, E /* <: HTMLElement */] = P with Ref[E]
+  type PropsWithRef[P /* <: js.Object */, E /* <: HTMLElement */] = P & Ref[E]
   
-  type RequireAtLeastOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) with (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]: -? std.Required<std.Pick<T, K>> & std.Partial<std.Pick<T, std.Exclude<Keys, K>>>}[Keys] */ js.Any)
+  type RequireAtLeastOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]: -? std.Required<std.Pick<T, K>> & std.Partial<std.Pick<T, std.Exclude<Keys, K>>>}[Keys] */ js.Any)
 }

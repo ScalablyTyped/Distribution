@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConferenceProviderRequest extends StObject {
   
   /**
     * The ARN of the newly created conference provider.
     */
-  var ConferenceProviderArn: Arn = js.native
+  var ConferenceProviderArn: Arn
 }
 object GetConferenceProviderRequest {
   

@@ -3,16 +3,15 @@ package typings.vastClient.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VASTClientCustomStorage
-  extends /* key */ StringDictionary[js.Any | js.Function0[_]] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any | js.Function0[js.Any]] {
   
-  def getItem(key: String): String | Null = js.native
+  def getItem(key: String): String | Null
   
-  def setItem(key: String, `val`: String): Unit = js.native
+  def setItem(key: String, `val`: String): Unit
 }
 object VASTClientCustomStorage {
   

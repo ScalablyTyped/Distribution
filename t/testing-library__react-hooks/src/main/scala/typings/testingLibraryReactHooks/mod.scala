@@ -7,35 +7,33 @@ import typings.testingLibraryReactHooks.anon.PickWaitOptionstimeout
 import typings.testingLibraryReactHooks.anon.PickWaitOptionstimeoutsup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@testing-library/react-hooks", "act")
+  @JSImport("@testing-library/react-hooks", JSImport.Namespace)
   @js.native
-  def act(callback: js.Function0[js.UndefOr[Unit]]): DebugPromiseLike = js.native
-  @JSImport("@testing-library/react-hooks", "act")
-  @js.native
-  def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@testing-library/react-hooks", "cleanup")
-  @js.native
-  def cleanup(): js.Promise[Unit] = js.native
+  @scala.inline
+  def act(callback: js.Function0[js.UndefOr[Unit]]): DebugPromiseLike = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[DebugPromiseLike]
   
-  @JSImport("@testing-library/react-hooks", "renderHook")
-  @js.native
-  def renderHook[P, R](callback: js.Function1[/* props */ P, R]): RenderHookResult[P, R] = js.native
-  @JSImport("@testing-library/react-hooks", "renderHook")
-  @js.native
-  def renderHook[P, R](callback: js.Function1[/* props */ P, R], options: RenderHookOptions[P]): RenderHookResult[P, R] = js.native
+  @scala.inline
+  def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
+  @scala.inline
+  def cleanup(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def renderHook[P, R](callback: js.Function1[/* props */ P, R]): RenderHookResult[P, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderHook")(callback.asInstanceOf[js.Any]).asInstanceOf[RenderHookResult[P, R]]
+  @scala.inline
+  def renderHook[P, R](callback: js.Function1[/* props */ P, R], options: RenderHookOptions[P]): RenderHookResult[P, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderHook")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RenderHookResult[P, R]]
+  
   trait HookResult[R] extends StObject {
     
-    val current: R = js.native
+    val current: R
     
-    val error: Error = js.native
+    val error: Error
   }
   object HookResult {
     
@@ -46,7 +44,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HookResultMutableBuilder[Self <: HookResult[_], R] (val x: Self with HookResult[R]) extends AnyVal {
+    implicit class HookResultMutableBuilder[Self <: HookResult[?], R] (val x: Self & HookResult[R]) extends AnyVal {
       
       @scala.inline
       def setCurrent(value: R): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
@@ -56,12 +54,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RenderHookOptions[P] extends StObject {
     
-    var initialProps: js.UndefOr[P] = js.native
+    var initialProps: js.UndefOr[P] = js.undefined
     
-    var wrapper: js.UndefOr[ComponentType[P]] = js.native
+    var wrapper: js.UndefOr[ComponentType[P]] = js.undefined
   }
   object RenderHookOptions {
     
@@ -72,7 +69,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RenderHookOptionsMutableBuilder[Self <: RenderHookOptions[_], P] (val x: Self with RenderHookOptions[P]) extends AnyVal {
+    implicit class RenderHookOptionsMutableBuilder[Self <: RenderHookOptions[?], P] (val x: Self & RenderHookOptions[P]) extends AnyVal {
       
       @scala.inline
       def setInitialProps(value: P): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
@@ -108,18 +105,17 @@ object mod {
     def waitForNextUpdate(): js.Promise[Unit] = js.native
     def waitForNextUpdate(options: PickWaitOptionstimeout): js.Promise[Unit] = js.native
     
-    def waitForValueToChange(selector: js.Function0[_]): js.Promise[Unit] = js.native
-    def waitForValueToChange(selector: js.Function0[_], options: WaitOptions): js.Promise[Unit] = js.native
+    def waitForValueToChange(selector: js.Function0[js.Any]): js.Promise[Unit] = js.native
+    def waitForValueToChange(selector: js.Function0[js.Any], options: WaitOptions): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait WaitOptions extends StObject {
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var suppressErrors: js.UndefOr[Boolean] = js.native
+    var suppressErrors: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object WaitOptions {
     

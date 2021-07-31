@@ -2,19 +2,17 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for hangouts chat export.
   */
-@js.native
 trait SchemaHangoutsChatExportOptions extends StObject {
   
   /**
     * The export format for hangouts chat export.
     */
-  var exportFormat: js.UndefOr[String] = js.native
+  var exportFormat: js.UndefOr[String] = js.undefined
 }
 object SchemaHangoutsChatExportOptions {
   

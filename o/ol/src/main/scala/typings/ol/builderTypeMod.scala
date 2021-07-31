@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object builderTypeMod {
@@ -12,19 +11,19 @@ object builderTypeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[BuilderType with String] = js.native
+    def apply(value: String): js.UndefOr[BuilderType & String] = js.native
     
-    /* "Circle" */ val CIRCLE: typings.ol.builderTypeMod.BuilderType.CIRCLE with String = js.native
+    /* "Circle" */ val CIRCLE: typings.ol.builderTypeMod.BuilderType.CIRCLE & String = js.native
     
-    /* "Default" */ val DEFAULT: typings.ol.builderTypeMod.BuilderType.DEFAULT with String = js.native
+    /* "Default" */ val DEFAULT: typings.ol.builderTypeMod.BuilderType.DEFAULT & String = js.native
     
-    /* "Image" */ val IMAGE: typings.ol.builderTypeMod.BuilderType.IMAGE with String = js.native
+    /* "Image" */ val IMAGE: typings.ol.builderTypeMod.BuilderType.IMAGE & String = js.native
     
-    /* "LineString" */ val LINE_STRING: typings.ol.builderTypeMod.BuilderType.LINE_STRING with String = js.native
+    /* "LineString" */ val LINE_STRING: typings.ol.builderTypeMod.BuilderType.LINE_STRING & String = js.native
     
-    /* "Polygon" */ val POLYGON: typings.ol.builderTypeMod.BuilderType.POLYGON with String = js.native
+    /* "Polygon" */ val POLYGON: typings.ol.builderTypeMod.BuilderType.POLYGON & String = js.native
     
-    /* "Text" */ val TEXT: typings.ol.builderTypeMod.BuilderType.TEXT with String = js.native
+    /* "Text" */ val TEXT: typings.ol.builderTypeMod.BuilderType.TEXT & String = js.native
   }
   
   @js.native
@@ -34,21 +33,33 @@ object builderTypeMod {
   object BuilderType extends StObject {
     
     @js.native
-    sealed trait CIRCLE extends BuilderType
+    sealed trait CIRCLE
+      extends StObject
+         with BuilderType
     
     @js.native
-    sealed trait DEFAULT extends BuilderType
+    sealed trait DEFAULT
+      extends StObject
+         with BuilderType
     
     @js.native
-    sealed trait IMAGE extends BuilderType
+    sealed trait IMAGE
+      extends StObject
+         with BuilderType
     
     @js.native
-    sealed trait LINE_STRING extends BuilderType
+    sealed trait LINE_STRING
+      extends StObject
+         with BuilderType
     
     @js.native
-    sealed trait POLYGON extends BuilderType
+    sealed trait POLYGON
+      extends StObject
+         with BuilderType
     
     @js.native
-    sealed trait TEXT extends BuilderType
+    sealed trait TEXT
+      extends StObject
+         with BuilderType
   }
 }

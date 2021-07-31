@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,76 +28,75 @@ object mod {
     def isAM(): Boolean = js.native
   }
   
-  @js.native
   trait TimePickerProps extends StObject {
     
-    def addon(timepicker: TimePicker): Element = js.native
+    def addon(timepicker: TimePicker): Element
     
-    var allowEmpty: Boolean = js.native
+    var allowEmpty: Boolean
     
-    var className: String = js.native
+    var className: String
     
-    var clearIcon: ReactNode = js.native
+    var clearIcon: ReactNode
     
-    var clearText: String = js.native
+    var clearText: String
     
-    var defaultOpenValue: Moment = js.native
+    var defaultOpenValue: Moment
     
-    var defaultValue: Moment = js.native
+    var defaultValue: Moment
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    def disabledHours(): js.Array[Double] = js.native
+    def disabledHours(): js.Array[Double]
     
-    def disabledMinutes(hour: Double): js.Array[Double] = js.native
+    def disabledMinutes(hour: Double): js.Array[Double]
     
-    def disabledSeconds(hour: Double, minute: Double): js.Array[Double] = js.native
+    def disabledSeconds(hour: Double, minute: Double): js.Array[Double]
     
-    var focusOnOpen: Boolean = js.native
+    var focusOnOpen: Boolean
     
-    var format: String = js.native
+    var format: String
     
-    var hideDisabledOptions: Boolean = js.native
+    var hideDisabledOptions: Boolean
     
-    var hourStep: Double = js.native
+    var hourStep: Double
     
-    var id: String = js.native
+    var id: String
     
-    var inputIcon: ReactNode = js.native
+    var inputIcon: ReactNode
     
-    var inputReadOnly: Boolean = js.native
+    var inputReadOnly: Boolean
     
-    var minuteStep: Double = js.native
+    var minuteStep: Double
     
-    def onChange(value: Moment): Unit = js.native
+    def onChange(value: Moment): Unit
     
-    def onClose(state: Open): Unit = js.native
+    def onClose(state: Open): Unit
     
-    def onOpen(state: Open): Unit = js.native
+    def onOpen(state: Open): Unit
     
-    var open: Boolean = js.native
+    var open: Boolean
     
-    var placeholder: String = js.native
+    var placeholder: String
     
-    var placement: String = js.native
+    var placement: String
     
-    var popupClassName: String = js.native
+    var popupClassName: String
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var secondStep: Double = js.native
+    var secondStep: Double
     
-    var showHour: Boolean = js.native
+    var showHour: Boolean
     
-    var showMinute: Boolean = js.native
+    var showMinute: Boolean
     
-    var showSecond: Boolean = js.native
+    var showSecond: Boolean
     
-    var transitionName: String = js.native
+    var transitionName: String
     
-    var use12Hours: Boolean = js.native
+    var use12Hours: Boolean
     
-    var value: Moment = js.native
+    var value: Moment
   }
   object TimePickerProps {
     

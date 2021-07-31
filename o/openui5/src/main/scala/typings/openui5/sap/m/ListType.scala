@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,27 @@ sealed trait ListType extends StObject
 object ListType extends StObject {
   
   @js.native
-  sealed trait Active extends ListType
+  sealed trait Active
+    extends StObject
+       with ListType
   
   @js.native
-  sealed trait Detail extends ListType
+  sealed trait Detail
+    extends StObject
+       with ListType
   
   @js.native
-  sealed trait DetailAndActive extends ListType
+  sealed trait DetailAndActive
+    extends StObject
+       with ListType
   
   @js.native
-  sealed trait Inactive extends ListType
+  sealed trait Inactive
+    extends StObject
+       with ListType
   
   @js.native
-  sealed trait Navigation extends ListType
+  sealed trait Navigation
+    extends StObject
+       with ListType
 }

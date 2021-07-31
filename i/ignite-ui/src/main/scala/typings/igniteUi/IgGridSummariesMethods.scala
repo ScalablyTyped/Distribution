@@ -2,16 +2,14 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridSummariesMethods extends StObject {
   
   /**
     * Calculate summaries
     */
-  def calculateSummaries(): Unit = js.native
+  def calculateSummaries(): Unit
   
   /**
     * Summary calculate the whole data for the specified column key, columnMethods and dataType (used when datasource is remote and dataType is date or time)
@@ -22,35 +20,35 @@ trait IgGridSummariesMethods extends StObject {
     * represents dataType for the current column
     * @param dataType
     */
-  def calculateSummaryColumn(ck: String, columnMethods: js.Array[_], data: js.Object, dataType: js.Object): Unit = js.native
+  def calculateSummaryColumn(ck: String, columnMethods: js.Array[js.Any], data: js.Object, dataType: js.Object): Unit
   
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
   /**
     * Changes the all locales into the widget element to the language specified in [options.language](ui.iggridsummaries#options:language)
     * Note that this method is for rare scenarios, see [language](ui.iggridsummaries#options:language) or [locale](ui.iggridsummaries#options:locale) option setter
     */
-  def changeLocale(): Unit = js.native
+  def changeLocale(): Unit
   
   /**
     * Changes the the regional settings of widget element to the language specified in [options.regional](ui.iggridsummaries#options:regional)
     * Note that this method is for rare scenarios, use [regional](ui.iggridsummaries#options:regional) option setter
     */
-  def changeRegional(): Unit = js.native
+  def changeRegional(): Unit
   
   /**
     * Remove all summaries dropdown buttons.
     */
-  def clearAllFooterIcons(): Unit = js.native
+  def clearAllFooterIcons(): Unit
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Returns whether summaries rows are hidden
     */
-  def isSummariesRowsHidden(): Unit = js.native
+  def isSummariesRowsHidden(): Unit
   
   /**
     * Select/Unselect specified checkbox
@@ -58,33 +56,33 @@ trait IgGridSummariesMethods extends StObject {
     * @param $checkbox Specifies the jQuery object for checkbox
     * @param isToSelect Specify whether to select or not checkbox
     */
-  def selectCheckBox($checkbox: js.Object, isToSelect: Boolean): Unit = js.native
+  def selectCheckBox($checkbox: js.Object, isToSelect: Boolean): Unit
   
   /**
     * Show/Hide dialog
     *
     * @param $dialog jQuery object representation of dropdown div element
     */
-  def showHideDialog($dialog: js.Object): Unit = js.native
+  def showHideDialog($dialog: js.Object): Unit
   
   /**
     * Return a JQUERY object which holds all summaries for column with the specified column key
     *
     * @param columnKey
     */
-  def summariesFor(columnKey: js.Object): Unit = js.native
+  def summariesFor(columnKey: js.Object): Unit
   
   /**
     * Return a JQUERY object which holds all summaries for all columns
     */
-  def summaryCollection(): Unit = js.native
+  def summaryCollection(): Unit
   
   /**
     * Toggles the checkstate of a checkbox if checkboxMode is not set to off, otherwise does nothing.
     *
     * @param $checkbox Specifies the jQuery object of the checkbox.
     */
-  def toggleCheckstate($checkbox: js.Object): Unit = js.native
+  def toggleCheckstate($checkbox: js.Object): Unit
   
   /**
     * Toggle drop down
@@ -92,7 +90,7 @@ trait IgGridSummariesMethods extends StObject {
     * @param columnKey toggle drop down for the column with the specified key
     * @param event event object. Its data should contain current columnKey, isAnimating, buttonId
     */
-  def toggleDropDown(columnKey: String, event: js.Object): Unit = js.native
+  def toggleDropDown(columnKey: String, event: js.Object): Unit
   
   /**
     * Toggle summaries rows
@@ -100,14 +98,14 @@ trait IgGridSummariesMethods extends StObject {
     * @param isToShow Specifies whether to show or not summaries
     * @param isInternalCall Optional parameter.Specifies whether this function is called internally by the widget.
     */
-  def toggleSummariesRows(isToShow: Boolean, isInternalCall: Boolean): Unit = js.native
+  def toggleSummariesRows(isToShow: Boolean, isInternalCall: Boolean): Unit
 }
 object IgGridSummariesMethods {
   
   @scala.inline
   def apply(
     calculateSummaries: () => Unit,
-    calculateSummaryColumn: (String, js.Array[_], js.Object, js.Object) => Unit,
+    calculateSummaryColumn: (String, js.Array[js.Any], js.Object, js.Object) => Unit,
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
     changeLocale: () => Unit,
@@ -134,7 +132,7 @@ object IgGridSummariesMethods {
     def setCalculateSummaries(value: () => Unit): Self = StObject.set(x, "calculateSummaries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCalculateSummaryColumn(value: (String, js.Array[_], js.Object, js.Object) => Unit): Self = StObject.set(x, "calculateSummaryColumn", js.Any.fromFunction4(value))
+    def setCalculateSummaryColumn(value: (String, js.Array[js.Any], js.Object, js.Object) => Unit): Self = StObject.set(x, "calculateSummaryColumn", js.Any.fromFunction4(value))
     
     @scala.inline
     def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))

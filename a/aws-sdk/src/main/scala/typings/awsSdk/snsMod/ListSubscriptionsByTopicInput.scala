@@ -2,21 +2,19 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSubscriptionsByTopicInput extends StObject {
   
   /**
     * Token returned by the previous ListSubscriptionsByTopic request.
     */
-  var NextToken: js.UndefOr[nextToken] = js.native
+  var NextToken: js.UndefOr[nextToken] = js.undefined
   
   /**
     * The ARN of the topic for which you wish to find subscriptions.
     */
-  var TopicArn: topicARN = js.native
+  var TopicArn: topicARN
 }
 object ListSubscriptionsByTopicInput {
   

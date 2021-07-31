@@ -31,7 +31,6 @@ import typings.leafletDraw.mod.DrawOptions.RectangleOptions
 import typings.leafletDraw.mod.DrawOptions.SimpleShapeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Draw {
@@ -199,64 +198,48 @@ object Draw {
     * @example
     * for (const key in eventHandlers) { map.off(eventHandlers[key], LeafletFn); }
     */
-  @js.native
-  trait EventHandlers extends // Requires an index signature of type string to be properly useful
+  trait EventHandlers
+    extends StObject
+       with // Requires an index signature of type string to be properly useful
   /* key */ StringDictionary[String] {
     
-    var onCreated: drawColoncreated = js.native
+    var onCreated: drawColoncreated
     
-    var onDeleteStart: drawColondeletestart = js.native
+    var onDeleteStart: drawColondeletestart
     
-    var onDeleteStop: drawColondeletestop = js.native
+    var onDeleteStop: drawColondeletestop
     
-    var onDeleted: drawColondeleted = js.native
+    var onDeleted: drawColondeleted
     
-    var onDrawStart: drawColondrawstart = js.native
+    var onDrawStart: drawColondrawstart
     
-    var onDrawStop: drawColondrawstop = js.native
+    var onDrawStop: drawColondrawstop
     
-    var onDrawVertex: drawColondrawvertex = js.native
+    var onDrawVertex: drawColondrawvertex
     
-    var onEditMove: drawColoneditmove = js.native
+    var onEditMove: drawColoneditmove
     
-    var onEditResize: drawColoneditresize = js.native
+    var onEditResize: drawColoneditresize
     
-    var onEditStart: drawColoneditstart = js.native
+    var onEditStart: drawColoneditstart
     
-    var onEditStop: drawColoneditstop = js.native
+    var onEditStop: drawColoneditstop
     
-    var onEditVertex: drawColoneditvertex = js.native
+    var onEditVertex: drawColoneditvertex
     
-    var onEdited: drawColonedited = js.native
+    var onEdited: drawColonedited
     
-    var onMarkerContext: drawColonmarkercontext = js.native
+    var onMarkerContext: drawColonmarkercontext
     
-    var onToolbarClosed: drawColontoolbarclosed = js.native
+    var onToolbarClosed: drawColontoolbarclosed
     
-    var onToolbarOpened: drawColontoolbaropened = js.native
+    var onToolbarOpened: drawColontoolbaropened
   }
   object EventHandlers {
     
     @scala.inline
-    def apply(
-      onCreated: drawColoncreated,
-      onDeleteStart: drawColondeletestart,
-      onDeleteStop: drawColondeletestop,
-      onDeleted: drawColondeleted,
-      onDrawStart: drawColondrawstart,
-      onDrawStop: drawColondrawstop,
-      onDrawVertex: drawColondrawvertex,
-      onEditMove: drawColoneditmove,
-      onEditResize: drawColoneditresize,
-      onEditStart: drawColoneditstart,
-      onEditStop: drawColoneditstop,
-      onEditVertex: drawColoneditvertex,
-      onEdited: drawColonedited,
-      onMarkerContext: drawColonmarkercontext,
-      onToolbarClosed: drawColontoolbarclosed,
-      onToolbarOpened: drawColontoolbaropened
-    ): EventHandlers = {
-      val __obj = js.Dynamic.literal(onCreated = onCreated.asInstanceOf[js.Any], onDeleteStart = onDeleteStart.asInstanceOf[js.Any], onDeleteStop = onDeleteStop.asInstanceOf[js.Any], onDeleted = onDeleted.asInstanceOf[js.Any], onDrawStart = onDrawStart.asInstanceOf[js.Any], onDrawStop = onDrawStop.asInstanceOf[js.Any], onDrawVertex = onDrawVertex.asInstanceOf[js.Any], onEditMove = onEditMove.asInstanceOf[js.Any], onEditResize = onEditResize.asInstanceOf[js.Any], onEditStart = onEditStart.asInstanceOf[js.Any], onEditStop = onEditStop.asInstanceOf[js.Any], onEditVertex = onEditVertex.asInstanceOf[js.Any], onEdited = onEdited.asInstanceOf[js.Any], onMarkerContext = onMarkerContext.asInstanceOf[js.Any], onToolbarClosed = onToolbarClosed.asInstanceOf[js.Any], onToolbarOpened = onToolbarOpened.asInstanceOf[js.Any])
+    def apply(): EventHandlers = {
+      val __obj = js.Dynamic.literal(onCreated = "draw:created", onDeleteStart = "draw:deletestart", onDeleteStop = "draw:deletestop", onDeleted = "draw:deleted", onDrawStart = "draw:drawstart", onDrawStop = "draw:drawstop", onDrawVertex = "draw:drawvertex", onEditMove = "draw:editmove", onEditResize = "draw:editresize", onEditStart = "draw:editstart", onEditStop = "draw:editstop", onEditVertex = "draw:editvertex", onEdited = "draw:edited", onMarkerContext = "draw:markercontext", onToolbarClosed = "draw:toolbarclosed", onToolbarOpened = "draw:toolbaropened")
       __obj.asInstanceOf[EventHandlers]
     }
     

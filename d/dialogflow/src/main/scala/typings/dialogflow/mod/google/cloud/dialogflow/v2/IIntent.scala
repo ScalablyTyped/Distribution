@@ -8,68 +8,66 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Platform
 import typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.WebhookState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an Intent. */
-@js.native
 trait IIntent extends StObject {
   
   /** Intent action */
-  var action: js.UndefOr[String | Null] = js.native
+  var action: js.UndefOr[String | Null] = js.undefined
   
   /** Intent defaultResponsePlatforms */
-  var defaultResponsePlatforms: js.UndefOr[js.Array[Platform] | Null] = js.native
+  var defaultResponsePlatforms: js.UndefOr[js.Array[Platform] | Null] = js.undefined
   
   /** Intent displayName */
-  var displayName: js.UndefOr[String | Null] = js.native
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /** Intent events */
-  var events: js.UndefOr[js.Array[String] | Null] = js.native
+  var events: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** Intent followupIntentInfo */
-  var followupIntentInfo: js.UndefOr[js.Array[IFollowupIntentInfo] | Null] = js.native
+  var followupIntentInfo: js.UndefOr[js.Array[IFollowupIntentInfo] | Null] = js.undefined
   
   /** Intent inputContextNames */
-  var inputContextNames: js.UndefOr[js.Array[String] | Null] = js.native
+  var inputContextNames: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** Intent isFallback */
-  var isFallback: js.UndefOr[Boolean | Null] = js.native
+  var isFallback: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Intent messages */
-  var messages: js.UndefOr[js.Array[IMessage] | Null] = js.native
+  var messages: js.UndefOr[js.Array[IMessage] | Null] = js.undefined
   
   /** Intent mlDisabled */
-  var mlDisabled: js.UndefOr[Boolean | Null] = js.native
+  var mlDisabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Intent name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** Intent outputContexts */
-  var outputContexts: js.UndefOr[js.Array[IContext] | Null] = js.native
+  var outputContexts: js.UndefOr[js.Array[IContext] | Null] = js.undefined
   
   /** Intent parameters */
-  var parameters: js.UndefOr[js.Array[IParameter] | Null] = js.native
+  var parameters: js.UndefOr[js.Array[IParameter] | Null] = js.undefined
   
   /** Intent parentFollowupIntentName */
-  var parentFollowupIntentName: js.UndefOr[String | Null] = js.native
+  var parentFollowupIntentName: js.UndefOr[String | Null] = js.undefined
   
   /** Intent priority */
-  var priority: js.UndefOr[Double | Null] = js.native
+  var priority: js.UndefOr[Double | Null] = js.undefined
   
   /** Intent resetContexts */
-  var resetContexts: js.UndefOr[Boolean | Null] = js.native
+  var resetContexts: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Intent rootFollowupIntentName */
-  var rootFollowupIntentName: js.UndefOr[String | Null] = js.native
+  var rootFollowupIntentName: js.UndefOr[String | Null] = js.undefined
   
   /** Intent trainingPhrases */
-  var trainingPhrases: js.UndefOr[js.Array[ITrainingPhrase] | Null] = js.native
+  var trainingPhrases: js.UndefOr[js.Array[ITrainingPhrase] | Null] = js.undefined
   
   /** Intent webhookState */
   var webhookState: js.UndefOr[
     WebhookState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.WebhookState * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
 }
 object IIntent {
   

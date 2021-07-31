@@ -5,27 +5,25 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISyndicationNode extends StObject {
   
-  var attributeExtensions: IVector[SyndicationAttribute] = js.native
+  var attributeExtensions: IVector[SyndicationAttribute]
   
-  var baseUri: Uri = js.native
+  var baseUri: Uri
   
-  var elementExtensions: IVector[ISyndicationNode] = js.native
+  var elementExtensions: IVector[ISyndicationNode]
   
-  def getXmlDocument(format: SyndicationFormat): XmlDocument = js.native
+  def getXmlDocument(format: SyndicationFormat): XmlDocument
   
-  var language: String = js.native
+  var language: String
   
-  var nodeName: String = js.native
+  var nodeName: String
   
-  var nodeNamespace: String = js.native
+  var nodeNamespace: String
   
-  var nodeValue: String = js.native
+  var nodeValue: String
 }
 object ISyndicationNode {
   

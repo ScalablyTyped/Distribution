@@ -2,41 +2,39 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionAcquisitionRequest extends StObject {
   
   /**
     * How the item is being assigned
     */
-  var assignmentType: AcquisitionAssignmentType = js.native
+  var assignmentType: AcquisitionAssignmentType
   
   /**
     * The id of the subscription used for purchase
     */
-  var billingId: String = js.native
+  var billingId: String
   
   /**
     * The marketplace id (publisherName.extensionName) for the item
     */
-  var itemId: String = js.native
+  var itemId: String
   
   /**
     * The type of operation, such as install, request, purchase
     */
-  var operationType: AcquisitionOperationType = js.native
+  var operationType: AcquisitionOperationType
   
   /**
     * Additional properties which can be added to the request.
     */
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * How many licenses should be purchased
     */
-  var quantity: Double = js.native
+  var quantity: Double
 }
 object ExtensionAcquisitionRequest {
   

@@ -3,27 +3,25 @@ package typings.rethinkdb.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteResult extends StObject {
   
-  var deleted: Double = js.native
+  var deleted: Double
   
-  var errors: Double = js.native
+  var errors: Double
   
-  var first_error: Error = js.native
+  var first_error: Error
   
-  var generated_keys: js.Array[String] = js.native
+  var generated_keys: js.Array[String]
   
-  var inserted: Double = js.native
+  var inserted: Double
   
-  var replaced: Double = js.native
+  var replaced: Double
   
-  var skipped: Double = js.native
+  var skipped: Double
   
-  var unchanged: Double = js.native
+  var unchanged: Double
 }
 object WriteResult {
   

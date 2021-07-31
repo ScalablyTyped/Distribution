@@ -2,16 +2,14 @@ package typings.wegameApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestTask extends StObject {
   
   /**
     * 中断请求任务
     */
-  def abort(): Unit = js.native
+  def abort(): Unit
 }
 object RequestTask {
   

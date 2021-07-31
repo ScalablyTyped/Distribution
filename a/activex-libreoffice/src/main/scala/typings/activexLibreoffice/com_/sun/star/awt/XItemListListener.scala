@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a listener for changes in a item list
   * @see XListItems
   */
-@js.native
-trait XItemListListener extends XEventListener {
+trait XItemListListener
+  extends StObject
+     with XEventListener {
   
   /** is called when the list has been completely cleared, i.e. after an invocation of {@link XItemList.removeAllItems()} */
-  def allItemsRemoved(Event: EventObject): Unit = js.native
+  def allItemsRemoved(Event: EventObject): Unit
   
   /**
     * is called when the changes to the item list which occurred are too complex to be notified in single events.
@@ -24,16 +24,16 @@ trait XItemListListener extends XEventListener {
     * Consumers of this event should discard their cached information about the current item list, and completely refresh it from the {@link XItemList} 's
     * current state.
     */
-  def itemListChanged(Event: EventObject): Unit = js.native
+  def itemListChanged(Event: EventObject): Unit
   
   /** is called when an item is inserted into the list */
-  def listItemInserted(Event: ItemListEvent): Unit = js.native
+  def listItemInserted(Event: ItemListEvent): Unit
   
   /** is called when an item in the list is modified, i.e. its text or image changed */
-  def listItemModified(Event: ItemListEvent): Unit = js.native
+  def listItemModified(Event: ItemListEvent): Unit
   
   /** is called when an item is removed from the list */
-  def listItemRemoved(Event: ItemListEvent): Unit = js.native
+  def listItemRemoved(Event: ItemListEvent): Unit
 }
 object XItemListListener {
   

@@ -3,17 +3,15 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.core.dxElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `17`[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object `17` {
   
@@ -24,7 +22,7 @@ object `17` {
   }
   
   @scala.inline
-  implicit class `17MutableBuilder`[Self <: `17`[_], T] (val x: Self with `17`[T]) extends AnyVal {
+  implicit class `17MutableBuilder`[Self <: `17`[?], T] (val x: Self & `17`[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

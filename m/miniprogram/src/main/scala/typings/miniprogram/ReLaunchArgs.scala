@@ -2,11 +2,11 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReLaunchArgs extends AsyncCallback[Unit] {
+trait ReLaunchArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * Page path If the page is not a tabbar page, the path can be
@@ -15,7 +15,7 @@ trait ReLaunchArgs extends AsyncCallback[Unit] {
     * parameter value are connected with =, and different parameters
     *  must be separated with &, such as path?key1=value1&key2=value2.
     */
-  var url: String = js.native
+  var url: String
 }
 object ReLaunchArgs {
   

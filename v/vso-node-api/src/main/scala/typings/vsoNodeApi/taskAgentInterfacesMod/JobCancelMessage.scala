@@ -2,15 +2,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobCancelMessage extends StObject {
   
-  var jobId: String = js.native
+  var jobId: String
   
-  var timeout: js.Any = js.native
+  var timeout: js.Any
 }
 object JobCancelMessage {
   

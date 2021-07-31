@@ -3,16 +3,14 @@ package typings.fundamentalReact.anon
 import typings.fundamentalReact.iconMod.IconGlyph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/List/List.ListIconProps> */
-@js.native
 trait PartialListIconProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var glyph: js.UndefOr[IconGlyph] = js.native
+  var glyph: js.UndefOr[IconGlyph] = js.undefined
 }
 object PartialListIconProps {
   

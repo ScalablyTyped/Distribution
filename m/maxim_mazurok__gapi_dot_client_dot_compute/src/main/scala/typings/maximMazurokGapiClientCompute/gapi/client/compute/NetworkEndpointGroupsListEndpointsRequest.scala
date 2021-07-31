@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkEndpointGroupsListEndpointsRequest extends StObject {
   
   /**
     * Optional query parameter for showing the health status of each network endpoint. Valid options are SKIP or SHOW. If you don't specify this parameter, the health status of network
     * endpoints will not be provided.
     */
-  var healthStatus: js.UndefOr[String] = js.native
+  var healthStatus: js.UndefOr[String] = js.undefined
 }
 object NetworkEndpointGroupsListEndpointsRequest {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTemplatePermissionsRequest extends StObject {
   
   /**
     * The ID of the AWS account that contains the template.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * A list of resource permissions to be granted on the template. 
     */
-  var GrantPermissions: js.UndefOr[UpdateResourcePermissionList] = js.native
+  var GrantPermissions: js.UndefOr[UpdateResourcePermissionList] = js.undefined
   
   /**
     * A list of resource permissions to be revoked from the template. 
     */
-  var RevokePermissions: js.UndefOr[UpdateResourcePermissionList] = js.native
+  var RevokePermissions: js.UndefOr[UpdateResourcePermissionList] = js.undefined
   
   /**
     * The ID for the template.
     */
-  var TemplateId: RestrictiveResourceId = js.native
+  var TemplateId: RestrictiveResourceId
 }
 object UpdateTemplatePermissionsRequest {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotValueRegion extends StObject {
   
   /** The values of the metrics in each of the pivot regions. */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PivotValueRegion {
   

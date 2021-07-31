@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,16 +22,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "RopeGeometry")
 @js.native
 class RopeGeometry ()
-  extends typings.pixiJs.PIXI.RopeGeometry {
+  extends StObject
+     with typings.pixiJs.PIXI.RopeGeometry {
   def this(width: Double) = this()
-  def this(width: js.UndefOr[scala.Nothing], points: js.Array[typings.pixiJs.PIXI.Point]) = this()
   def this(width: Double, points: js.Array[typings.pixiJs.PIXI.Point]) = this()
-  def this(width: js.UndefOr[scala.Nothing], points: js.UndefOr[scala.Nothing], textureScale: Double) = this()
-  def this(
-    width: js.UndefOr[scala.Nothing],
-    points: js.Array[typings.pixiJs.PIXI.Point],
-    textureScale: Double
-  ) = this()
-  def this(width: Double, points: js.UndefOr[scala.Nothing], textureScale: Double) = this()
+  def this(width: Unit, points: js.Array[typings.pixiJs.PIXI.Point]) = this()
   def this(width: Double, points: js.Array[typings.pixiJs.PIXI.Point], textureScale: Double) = this()
+  def this(width: Double, points: Unit, textureScale: Double) = this()
+  def this(width: Unit, points: js.Array[typings.pixiJs.PIXI.Point], textureScale: Double) = this()
+  def this(width: Unit, points: Unit, textureScale: Double) = this()
 }

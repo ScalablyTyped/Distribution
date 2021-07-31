@@ -10,9 +10,9 @@ Wallet management utilities for KeyStore and Crowdsale JSON wallets.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/json-wallets |
 | Keywords           | Ethereum, ethers |
-| # releases         | 29 |
+| # releases         | 32 |
 | # dependents       | 8 |
-| # downloads        | 547176 |
+| # downloads        | 1159096 |
 | # stars            | 0 |
 
 ## Links

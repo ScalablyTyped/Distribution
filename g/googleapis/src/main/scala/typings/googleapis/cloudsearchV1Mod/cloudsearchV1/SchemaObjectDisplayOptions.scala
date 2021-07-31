@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The display options for an object.
   */
-@js.native
 trait SchemaObjectDisplayOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaObjectDisplayOptions extends StObject {
     * this list. All of the properties must set is_returnable to true. The
     * maximum number of elements is 3.
     */
-  var metalines: js.UndefOr[js.Array[SchemaMetaline]] = js.native
+  var metalines: js.UndefOr[js.Array[SchemaMetaline]] = js.undefined
   
   /**
     * The user friendly label to display in the search result to inidicate the
@@ -28,7 +26,7 @@ trait SchemaObjectDisplayOptions extends StObject {
     * not be displayed on the context line of the search results. The maximum
     * length is 32 characters.
     */
-  var objectDisplayLabel: js.UndefOr[String] = js.native
+  var objectDisplayLabel: js.UndefOr[String] = js.undefined
 }
 object SchemaObjectDisplayOptions {
   

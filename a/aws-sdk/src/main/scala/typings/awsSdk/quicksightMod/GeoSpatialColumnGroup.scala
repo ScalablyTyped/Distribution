@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoSpatialColumnGroup extends StObject {
   
   /**
     * Columns in this hierarchy.
     */
-  var Columns: ColumnList = js.native
+  var Columns: ColumnList
   
   /**
     * Country code.
     */
-  var CountryCode: GeoSpatialCountryCode = js.native
+  var CountryCode: GeoSpatialCountryCode
   
   /**
     * A display name for the hierarchy.
     */
-  var Name: ColumnGroupName = js.native
+  var Name: ColumnGroupName
 }
 object GeoSpatialColumnGroup {
   

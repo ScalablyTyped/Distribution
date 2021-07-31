@@ -6,7 +6,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeNodeMod extends Shortcut {
@@ -17,24 +16,23 @@ object treeNodeMod extends Shortcut {
   val default: FC[TreeNodeProps] = js.native
   
   /* Inlined parent std.Omit<rc-tree-select.rc-tree-select/es/interface.DataNode, 'children'> */
-  @js.native
   trait TreeNodeProps extends StObject {
     
-    var checkable: js.UndefOr[Boolean] = js.native
+    var checkable: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var disableCheckbox: js.UndefOr[Boolean] = js.native
+    var disableCheckbox: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var value: Key = js.native
+    var value: Key
   }
   object TreeNodeProps {
     

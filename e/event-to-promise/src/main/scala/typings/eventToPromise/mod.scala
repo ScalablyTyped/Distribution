@@ -4,7 +4,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,33 +16,32 @@ object mod {
     * @param options  An `Object` controlling advanced options.
     * @return         The returned promise has a `cancel()` method which can be used to remove the event listeners. Note that the promise will never settled if canceled.
     */
-  @JSImport("event-to-promise", JSImport.Namespace)
-  @js.native
-  def apply(emitter: EventSource, event: String): js.Promise[_] = js.native
-  @JSImport("event-to-promise", JSImport.Namespace)
-  @js.native
-  def apply(emitter: EventSource, event: String, options: EventToPromiseOptions): js.Promise[_] = js.native
+  @scala.inline
+  def apply(emitter: EventSource, event: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def apply(emitter: EventSource, event: String, options: EventToPromiseOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("event-to-promise", "multi")
+  @JSImport("event-to-promise", JSImport.Namespace)
   @js.native
-  def multi(emitter: EventSource, successEvents: js.Array[String]): js.Promise[_] = js.native
-  @JSImport("event-to-promise", "multi")
-  @js.native
-  def multi(emitter: EventSource, successEvents: js.Array[String], errorEvents: js.Array[String]): js.Promise[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def multi(emitter: EventSource, successEvents: js.Array[String]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multi")(emitter.asInstanceOf[js.Any], successEvents.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def multi(emitter: EventSource, successEvents: js.Array[String], errorEvents: js.Array[String]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multi")(emitter.asInstanceOf[js.Any], successEvents.asInstanceOf[js.Any], errorEvents.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   type EventSource = EventEmitter | EventTarget
   
-  @js.native
   trait EventToPromiseOptions extends StObject {
     
     /**  If true, all parameters of the emitted events are put in an array which is used to resolve/reject the promise. (default: `false`) */
-    var array: js.UndefOr[Boolean] = js.native
+    var array: js.UndefOr[Boolean] = js.undefined
     
     /** The name of the event which rejects the promise. (default: `'error'`) */
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
     /** Whether the error event should be ignored and not reject the promise. (default: `false`) */
-    var ignoreErrors: js.UndefOr[Boolean] = js.native
+    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
   }
   object EventToPromiseOptions {
     

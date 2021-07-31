@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountCount extends StObject {
   
   /** Account owner. */
-  var account: js.UndefOr[UserInfo] = js.native
+  var account: js.UndefOr[UserInfo] = js.undefined
   
   /** The number of artifacts found for this account. */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
 }
 object AccountCount {
   

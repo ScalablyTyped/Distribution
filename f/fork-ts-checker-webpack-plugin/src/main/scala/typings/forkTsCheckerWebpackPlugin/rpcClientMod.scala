@@ -6,25 +6,26 @@ import typings.forkTsCheckerWebpackPlugin.rpcProcedureMod.RpcProcedurePayload
 import typings.forkTsCheckerWebpackPlugin.rpcProcedureMod.RpcProcedureResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rpcClientMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/RpcClient", "createRpcClient")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/RpcClient", JSImport.Namespace)
   @js.native
-  def createRpcClient(port: RpcMessagePort): RpcClient = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createRpcClient(port: RpcMessagePort): RpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcClient")(port.asInstanceOf[js.Any]).asInstanceOf[RpcClient]
+  
   trait RpcClient extends StObject {
     
-    def connect(): js.Promise[Unit] = js.native
+    def connect(): js.Promise[Unit]
     
-    def disconnect(): js.Promise[Unit] = js.native
+    def disconnect(): js.Promise[Unit]
     
-    def dispatchCall[TProcedure /* <: RpcProcedure[_, _] */](procedure: TProcedure, payload: RpcProcedurePayload[TProcedure]): js.Promise[RpcProcedureResult[TProcedure]] = js.native
+    def dispatchCall[TProcedure /* <: RpcProcedure[js.Any, js.Any] */](procedure: TProcedure, payload: RpcProcedurePayload[TProcedure]): js.Promise[RpcProcedureResult[TProcedure]]
     
-    def isConnected(): Boolean = js.native
+    def isConnected(): Boolean
   }
   object RpcClient {
     

@@ -2,31 +2,32 @@ package typings.awsSdkBucketEndpointMiddleware
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bucketHostnameMod {
   
-  @JSImport("@aws-sdk/bucket-endpoint-middleware/build/bucketHostname", "bucketHostname")
+  @JSImport("@aws-sdk/bucket-endpoint-middleware/build/bucketHostname", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def bucketHostname(
     hasAccelerateEndpointBaseHostnameBucketNameDualstackEndpointPathStyleEndpointSslCompatible: BucketHostnameParameters
-  ): BucketHostname_ = js.native
+  ): BucketHostname_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketHostname")(hasAccelerateEndpointBaseHostnameBucketNameDualstackEndpointPathStyleEndpointSslCompatible.asInstanceOf[js.Any]).asInstanceOf[BucketHostname_]
   
-  @js.native
   trait BucketHostnameParameters extends StObject {
     
-    var accelerateEndpoint: js.UndefOr[Boolean] = js.native
+    var accelerateEndpoint: js.UndefOr[Boolean] = js.undefined
     
-    var baseHostname: String = js.native
+    var baseHostname: String
     
-    var bucketName: String = js.native
+    var bucketName: String
     
-    var dualstackEndpoint: js.UndefOr[Boolean] = js.native
+    var dualstackEndpoint: js.UndefOr[Boolean] = js.undefined
     
-    var pathStyleEndpoint: js.UndefOr[Boolean] = js.native
+    var pathStyleEndpoint: js.UndefOr[Boolean] = js.undefined
     
-    var sslCompatible: js.UndefOr[Boolean] = js.native
+    var sslCompatible: js.UndefOr[Boolean] = js.undefined
   }
   object BucketHostnameParameters {
     
@@ -71,12 +72,11 @@ object bucketHostnameMod {
     }
   }
   
-  @js.native
   trait BucketHostname_ extends StObject {
     
-    var bucketEndpoint: Boolean = js.native
+    var bucketEndpoint: Boolean
     
-    var hostname: String = js.native
+    var hostname: String
   }
   object BucketHostname_ {
     

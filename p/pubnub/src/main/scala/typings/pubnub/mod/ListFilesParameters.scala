@@ -2,18 +2,16 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // files
-@js.native
 trait ListFilesParameters extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
 }
 object ListFilesParameters {
   

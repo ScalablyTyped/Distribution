@@ -8,7 +8,6 @@ import typings.reactBurgerMenu.anon.PartialStyles
 import typings.reactBurgerMenu.reactBurgerMenuBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -135,10 +134,9 @@ object mod {
     def this(props: Props, context: js.Any) = this()
   }
   
-  @js.native
   trait HoverState extends StObject {
     
-    var isMouseIn: Boolean = js.native
+    var isMouseIn: Boolean
   }
   object HoverState {
     
@@ -156,74 +154,73 @@ object mod {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var bodyClassName: js.UndefOr[String] = js.native
+    var bodyClassName: js.UndefOr[String] = js.undefined
     
-    var burgerBarClassName: js.UndefOr[String] = js.native
+    var burgerBarClassName: js.UndefOr[String] = js.undefined
     
-    var burgerButtonClassName: js.UndefOr[String] = js.native
+    var burgerButtonClassName: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var crossButtonClassName: js.UndefOr[String] = js.native
+    var crossButtonClassName: js.UndefOr[String] = js.undefined
     
-    var crossClassName: js.UndefOr[String] = js.native
+    var crossClassName: js.UndefOr[String] = js.undefined
     
-    var customBurgerIcon: js.UndefOr[Element | `false`] = js.native
+    var customBurgerIcon: js.UndefOr[Element | `false`] = js.undefined
     
-    var customCrossIcon: js.UndefOr[Element | `false`] = js.native
+    var customCrossIcon: js.UndefOr[Element | `false`] = js.undefined
     
-    var customOnKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[typings.std.Element], Unit]] = js.native
+    var customOnKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[typings.std.Element], Unit]] = js.undefined
     
-    var disableAutoFocus: js.UndefOr[Boolean] = js.native
+    var disableAutoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var disableCloseOnEsc: js.UndefOr[Boolean] = js.native
+    var disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined
     
-    var disableOverlayClick: js.UndefOr[Boolean | js.Function0[Boolean]] = js.native
+    var disableOverlayClick: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
     
-    var htmlClassName: js.UndefOr[String] = js.native
+    var htmlClassName: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var itemClassName: js.UndefOr[String] = js.native
+    var itemClassName: js.UndefOr[String] = js.undefined
     
-    var itemListClassName: js.UndefOr[String] = js.native
+    var itemListClassName: js.UndefOr[String] = js.undefined
     
-    var menuClassName: js.UndefOr[String] = js.native
+    var menuClassName: js.UndefOr[String] = js.undefined
     
-    var morphShapeClassName: js.UndefOr[String] = js.native
+    var morphShapeClassName: js.UndefOr[String] = js.undefined
     
-    var noOverlay: js.UndefOr[Boolean] = js.native
+    var noOverlay: js.UndefOr[Boolean] = js.undefined
     
-    var noTransition: js.UndefOr[Boolean] = js.native
+    var noTransition: js.UndefOr[Boolean] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onIconHoverChange: js.UndefOr[js.Function1[/* state */ HoverState, Unit]] = js.native
+    var onIconHoverChange: js.UndefOr[js.Function1[/* state */ HoverState, Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onStateChange: js.UndefOr[js.Function1[/* state */ State, Unit]] = js.native
+    var onStateChange: js.UndefOr[js.Function1[/* state */ State, Unit]] = js.undefined
     
     // TODO (Rajab) This can be improved, though I do not know how. From PropTypes:
     // styles && styles.outerContainer ? PropTypes.string.isRequired : PropTypes.string
-    var outerContainerId: js.UndefOr[String] = js.native
+    var outerContainerId: js.UndefOr[String] = js.undefined
     
-    var overlayClassName: js.UndefOr[String] = js.native
+    var overlayClassName: js.UndefOr[String] = js.undefined
     
     // TODO (Rajab) This can be improved, though I do not know how. From PropTypes:
     // styles && styles.pageWrap ? PropTypes.string.isRequired : PropTypes.string,
-    var pageWrapId: js.UndefOr[String] = js.native
+    var pageWrapId: js.UndefOr[String] = js.undefined
     
-    var right: js.UndefOr[Boolean] = js.native
+    var right: js.UndefOr[Boolean] = js.undefined
     
-    var styles: js.UndefOr[PartialStyles] = js.native
+    var styles: js.UndefOr[PartialStyles] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object Props {
     
@@ -427,10 +424,9 @@ object mod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
   }
   object State {
     
@@ -448,26 +444,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Styles extends StObject {
     
-    var bmBurgerBars: PartialCSSStyleDeclaratio = js.native
+    var bmBurgerBars: PartialCSSStyleDeclaratio
     
-    var bmBurgerButton: PartialCSSStyleDeclaratio = js.native
+    var bmBurgerButton: PartialCSSStyleDeclaratio
     
-    var bmCross: PartialCSSStyleDeclaratio = js.native
+    var bmCross: PartialCSSStyleDeclaratio
     
-    var bmCrossButton: PartialCSSStyleDeclaratio = js.native
+    var bmCrossButton: PartialCSSStyleDeclaratio
     
-    var bmItemList: PartialCSSStyleDeclaratio = js.native
+    var bmItemList: PartialCSSStyleDeclaratio
     
-    var bmMenu: PartialCSSStyleDeclaratio = js.native
+    var bmMenu: PartialCSSStyleDeclaratio
     
-    var bmMenuWrap: PartialCSSStyleDeclaratio = js.native
+    var bmMenuWrap: PartialCSSStyleDeclaratio
     
-    var bmMorphShape: PartialCSSStyleDeclaratio = js.native
+    var bmMorphShape: PartialCSSStyleDeclaratio
     
-    var bmOverlay: PartialCSSStyleDeclaratio = js.native
+    var bmOverlay: PartialCSSStyleDeclaratio
   }
   object Styles {
     

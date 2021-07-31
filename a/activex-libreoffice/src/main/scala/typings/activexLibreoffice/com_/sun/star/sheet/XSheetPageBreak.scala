@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to page breaks in a sheet.
   * @deprecated Deprecated
   */
-@js.native
-trait XSheetPageBreak extends XInterface {
+trait XSheetPageBreak
+  extends StObject
+     with XInterface {
   
   /**
     * returns a sequence of descriptions of all horizontal page breaks on the sheet.
@@ -22,7 +22,7 @@ trait XSheetPageBreak extends XInterface {
     * property of the column.
     * @returns a sequence of structs containing column page break data.
     */
-  val ColumnPageBreaks: SafeArray[TablePageBreakData] = js.native
+  val ColumnPageBreaks: SafeArray[TablePageBreakData]
   
   /**
     * returns a sequence of descriptions of all vertical page breaks on the sheet.
@@ -31,7 +31,7 @@ trait XSheetPageBreak extends XInterface {
     * of the row.
     * @returns a sequence of structs containing row page break data.
     */
-  val RowPageBreaks: SafeArray[TablePageBreakData] = js.native
+  val RowPageBreaks: SafeArray[TablePageBreakData]
   
   /**
     * returns a sequence of descriptions of all horizontal page breaks on the sheet.
@@ -40,7 +40,7 @@ trait XSheetPageBreak extends XInterface {
     * property of the column.
     * @returns a sequence of structs containing column page break data.
     */
-  def getColumnPageBreaks(): SafeArray[TablePageBreakData] = js.native
+  def getColumnPageBreaks(): SafeArray[TablePageBreakData]
   
   /**
     * returns a sequence of descriptions of all vertical page breaks on the sheet.
@@ -49,10 +49,10 @@ trait XSheetPageBreak extends XInterface {
     * of the row.
     * @returns a sequence of structs containing row page break data.
     */
-  def getRowPageBreaks(): SafeArray[TablePageBreakData] = js.native
+  def getRowPageBreaks(): SafeArray[TablePageBreakData]
   
   /** removes all manual page breaks on the sheet. */
-  def removeAllManualPageBreaks(): Unit = js.native
+  def removeAllManualPageBreaks(): Unit
 }
 object XSheetPageBreak {
   

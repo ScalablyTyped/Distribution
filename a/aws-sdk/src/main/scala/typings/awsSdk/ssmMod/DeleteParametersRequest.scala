@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteParametersRequest extends StObject {
   
   /**
     * The names of the parameters to delete.
     */
-  var Names: ParameterNameList = js.native
+  var Names: ParameterNameList
 }
 object DeleteParametersRequest {
   

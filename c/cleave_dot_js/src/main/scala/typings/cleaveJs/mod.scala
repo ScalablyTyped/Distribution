@@ -4,32 +4,50 @@ import typings.cleaveJs.optionsMod.CleaveOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("cleave.js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Cleave {
+  class ^ protected ()
+    extends StObject
+       with Cleave {
     def this(selector: String, options: CleaveOptions) = this()
     def this(selector: HTMLElement, options: CleaveOptions) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getFormattedValue(): String = js.native
+    
+    /* CompleteClass */
+    override def getISOFormatDate(): String = js.native
+    
+    /* CompleteClass */
+    override def getRawValue(): String = js.native
+    
+    /* CompleteClass */
+    override def setPhoneRegionCode(regionCode: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def setRawValue(value: String): Unit = js.native
   }
   
-  @js.native
   trait Cleave extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getFormattedValue(): String = js.native
+    def getFormattedValue(): String
     
-    def getISOFormatDate(): String = js.native
+    def getISOFormatDate(): String
     
-    def getRawValue(): String = js.native
+    def getRawValue(): String
     
-    def setPhoneRegionCode(regionCode: String): Unit = js.native
+    def setPhoneRegionCode(regionCode: String): Unit
     
-    def setRawValue(value: String): Unit = js.native
+    def setRawValue(value: String): Unit
   }
   object Cleave {
     

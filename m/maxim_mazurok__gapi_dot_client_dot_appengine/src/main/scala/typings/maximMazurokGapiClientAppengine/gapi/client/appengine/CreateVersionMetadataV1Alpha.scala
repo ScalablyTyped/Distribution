@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateVersionMetadataV1Alpha extends StObject {
   
   /** The Cloud Build ID if one was created as part of the version create. @OutputOnly */
-  var cloudBuildId: js.UndefOr[String] = js.native
+  var cloudBuildId: js.UndefOr[String] = js.undefined
 }
 object CreateVersionMetadataV1Alpha {
   

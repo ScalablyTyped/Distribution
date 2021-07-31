@@ -5,13 +5,11 @@ import typings.typeorm.typeormStrings.each
 import typings.typeorm.typeormStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transaction extends StObject {
   
-  var transaction: js.UndefOr[all | none | each] = js.native
+  var transaction: js.UndefOr[all | none | each] = js.undefined
 }
 object Transaction {
   

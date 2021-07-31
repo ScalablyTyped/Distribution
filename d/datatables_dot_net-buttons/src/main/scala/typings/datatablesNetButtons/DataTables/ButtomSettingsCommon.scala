@@ -3,71 +3,69 @@ package typings.datatablesNetButtons.DataTables
 import typings.datatablesNet.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtomSettingsCommon extends StObject {
   
   /**
     * Action to take when the button is activated
     */
-  var action: js.UndefOr[FunctionButtonAction] = js.native
+  var action: js.UndefOr[FunctionButtonAction] = js.undefined
   
   /**
     * Ensure that any requirements have been satisfied before initialising a button
     */
-  var available: js.UndefOr[FunctionButtonAvailable] = js.native
+  var available: js.UndefOr[FunctionButtonAvailable] = js.undefined
   
   /**
     * Set the class name for the button
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Function that is called when the button is destroyed
     */
-  var destroy: js.UndefOr[FunctionButtonInit] = js.native
+  var destroy: js.UndefOr[FunctionButtonInit] = js.undefined
   
   /**
     * Set a button's initial enabled state
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Define which button type the button should be based on
     */
-  var extend: js.UndefOr[String] = js.native
+  var extend: js.UndefOr[String] = js.undefined
   
   /**
     * Initialisation function that can be used to add events specific to this button
     */
-  var init: js.UndefOr[FunctionButtonInit] = js.native
+  var init: js.UndefOr[FunctionButtonInit] = js.undefined
   
   /**
     * Define an activation key for a button
     */
-  var key: js.UndefOr[String | ButtonKey] = js.native
+  var key: js.UndefOr[String | ButtonKey] = js.undefined
   
   /**
     * Set a name for each selection
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Unique namespace for every button
     */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
   /**
     * The text to show in the button
     */
-  var text: js.UndefOr[String | FunctionButtonText] = js.native
+  var text: js.UndefOr[String | FunctionButtonText] = js.undefined
   
   /**
     * Button 'title' attribute text
     */
-  var titleAttr: js.UndefOr[String] = js.native
+  var titleAttr: js.UndefOr[String] = js.undefined
 }
 object ButtomSettingsCommon {
   

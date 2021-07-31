@@ -2,37 +2,35 @@ package typings.kuromoji.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpadicFeatures extends StObject {
   
-  var basic_form: String = js.native
+  var basic_form: String
   
-  var conjugated_form: String = js.native
+  var conjugated_form: String
   
-  var conjugated_type: String = js.native
+  var conjugated_type: String
   
-  var pos: String = js.native
+  var pos: String
   
-  var pos_detail_1: String = js.native
+  var pos_detail_1: String
   
-  var pos_detail_2: String = js.native
+  var pos_detail_2: String
   
-  var pos_detail_3: String = js.native
+  var pos_detail_3: String
   
-  var pronunciation: js.UndefOr[String] = js.native
+  var pronunciation: js.UndefOr[String] = js.undefined
   
-  var reading: js.UndefOr[String] = js.native
+  var reading: js.UndefOr[String] = js.undefined
   
-  var surface_form: String = js.native
+  var surface_form: String
   
-  var word_id: Double = js.native
+  var word_id: Double
   
-  var word_position: Double = js.native
+  var word_position: Double
   
-  var word_type: String = js.native
+  var word_type: String
 }
 object IpadicFeatures {
   

@@ -5,7 +5,6 @@ import typings.ionicCore.interfaceMod.RouteID
 import typings.ionicCore.interfaceMod.RouteWrite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

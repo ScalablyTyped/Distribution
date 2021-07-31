@@ -5,7 +5,6 @@ import typings.node.fsMod.Stats
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,9 +19,12 @@ object mod {
     * @link [API] https://github.com/segmentio/metalsmith#new-metalsmithdir
     * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L30
     */
+  @scala.inline
+  def apply(directory: String): Metalsmith = ^.asInstanceOf[js.Dynamic].apply(directory.asInstanceOf[js.Any]).asInstanceOf[Metalsmith]
+  
   @JSImport("metalsmith", JSImport.Namespace)
   @js.native
-  def apply(directory: String): Metalsmith = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function3[/* err */ Error | Null, /* files */ Files, /* metalsmith */ Metalsmith, Unit]
   
@@ -334,9 +336,9 @@ object mod {
       * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L308
       */
     def write(files: js.Object): Unit = js.native
-    def write(files: js.Object, dir: js.UndefOr[scala.Nothing], fn: Callback): Unit = js.native
     def write(files: js.Object, dir: String): Unit = js.native
     def write(files: js.Object, dir: String, fn: Callback): Unit = js.native
+    def write(files: js.Object, dir: Unit, fn: Callback): Unit = js.native
     /**
       * Write a dictionary of `files` to a destination `dir`. If no directory is
       * provided, it will default to the destination directory.

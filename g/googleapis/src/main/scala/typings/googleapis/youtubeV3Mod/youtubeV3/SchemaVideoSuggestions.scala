@@ -2,21 +2,19 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies suggestions on how to improve video content, including encoding
   * hints, tag suggestions, and editor suggestions.
   */
-@js.native
 trait SchemaVideoSuggestions extends StObject {
   
   /**
     * A list of video editing operations that might improve the video quality
     * or playback experience of the uploaded video.
     */
-  var editorSuggestions: js.UndefOr[js.Array[String]] = js.native
+  var editorSuggestions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of errors that will prevent YouTube from successfully processing
@@ -24,13 +22,13 @@ trait SchemaVideoSuggestions extends StObject {
     * video&#39;s current processing status, eventually, that status will
     * almost certainly be failed.
     */
-  var processingErrors: js.UndefOr[js.Array[String]] = js.native
+  var processingErrors: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of suggestions that may improve YouTube&#39;s ability to process
     * the video.
     */
-  var processingHints: js.UndefOr[js.Array[String]] = js.native
+  var processingHints: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of reasons why YouTube may have difficulty transcoding the
@@ -40,14 +38,14 @@ trait SchemaVideoSuggestions extends StObject {
     * the video processing to fail but that might cause problems such as sync
     * issues, video artifacts, or a missing audio track.
     */
-  var processingWarnings: js.UndefOr[js.Array[String]] = js.native
+  var processingWarnings: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of keyword tags that could be added to the video&#39;s metadata to
     * increase the likelihood that users will locate your video when searching
     * or browsing on YouTube.
     */
-  var tagSuggestions: js.UndefOr[js.Array[SchemaVideoSuggestionsTagSuggestion]] = js.native
+  var tagSuggestions: js.UndefOr[js.Array[SchemaVideoSuggestionsTagSuggestion]] = js.undefined
 }
 object SchemaVideoSuggestions {
   

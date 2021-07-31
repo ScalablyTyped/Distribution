@@ -2,21 +2,19 @@ package typings.gulpPugI18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default extends StObject {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var locales: String | js.Array[String] = js.native
+    var locales: String | js.Array[String]
     
-    var namespace: js.UndefOr[String | Null] = js.native
+    var namespace: js.UndefOr[String | Null] = js.undefined
   }
   object Default {
     

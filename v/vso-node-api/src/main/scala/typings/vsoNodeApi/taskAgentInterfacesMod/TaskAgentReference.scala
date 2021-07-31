@@ -2,38 +2,36 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentReference extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Gets or sets a value indicating whether or not this agent should be enabled for job execution.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Gets the identifier of the agent.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Gets the name of the agent.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets the current connectivity status of the agent.
     */
-  var status: TaskAgentStatus = js.native
+  var status: TaskAgentStatus
   
   /**
     * Gets the version of the agent.
     */
-  var version: String = js.native
+  var version: String
 }
 object TaskAgentReference {
   

@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IXMLSearchResult extends StObject {
   
-  val MoreResults: Boolean = js.native
+  val MoreResults: Boolean
   
-  val SearchResult: String = js.native
+  val SearchResult: String
 }
 object IXMLSearchResult {
   

@@ -12,7 +12,6 @@ import typings.rascal.rascalStrings.redeliveries_exceeded
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rascal", "SubscriptionSession")

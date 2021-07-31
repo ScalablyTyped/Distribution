@@ -2,31 +2,29 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MakePhoneCallOptions extends StObject {
   
   /**
     * 结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 需要拨打的电话号码
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * 成功返回的回调函数
     */
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object MakePhoneCallOptions {
   

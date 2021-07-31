@@ -2,22 +2,20 @@ package typings.node.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NodeWorker {
   
-  @js.native
   trait AttachedToWorkerEventDataType extends StObject {
     
     /**
       * Identifier assigned to the session used to send/receive messages.
       */
-    var sessionId: SessionID = js.native
+    var sessionId: SessionID
     
-    var waitingForDebugger: Boolean = js.native
+    var waitingForDebugger: Boolean
     
-    var workerInfo: WorkerInfo = js.native
+    var workerInfo: WorkerInfo
   }
   object AttachedToWorkerEventDataType {
     
@@ -41,10 +39,9 @@ object NodeWorker {
     }
   }
   
-  @js.native
   trait DetachParameterType extends StObject {
     
-    var sessionId: SessionID = js.native
+    var sessionId: SessionID
   }
   object DetachParameterType {
     
@@ -62,13 +59,12 @@ object NodeWorker {
     }
   }
   
-  @js.native
   trait DetachedFromWorkerEventDataType extends StObject {
     
     /**
       * Detached session identifier.
       */
-    var sessionId: SessionID = js.native
+    var sessionId: SessionID
   }
   object DetachedFromWorkerEventDataType {
     
@@ -86,14 +82,13 @@ object NodeWorker {
     }
   }
   
-  @js.native
   trait EnableParameterType extends StObject {
     
     /**
       * Whether to new workers should be paused until the frontend sends `Runtime.runIfWaitingForDebugger`
       * message to run them.
       */
-    var waitForDebuggerOnStart: Boolean = js.native
+    var waitForDebuggerOnStart: Boolean
   }
   object EnableParameterType {
     
@@ -111,15 +106,14 @@ object NodeWorker {
     }
   }
   
-  @js.native
   trait ReceivedMessageFromWorkerEventDataType extends StObject {
     
-    var message: String = js.native
+    var message: String
     
     /**
       * Identifier of a session which sends a message.
       */
-    var sessionId: SessionID = js.native
+    var sessionId: SessionID
   }
   object ReceivedMessageFromWorkerEventDataType {
     
@@ -140,15 +134,14 @@ object NodeWorker {
     }
   }
   
-  @js.native
   trait SendMessageToWorkerParameterType extends StObject {
     
-    var message: String = js.native
+    var message: String
     
     /**
       * Identifier of the session.
       */
-    var sessionId: SessionID = js.native
+    var sessionId: SessionID
   }
   object SendMessageToWorkerParameterType {
     
@@ -176,16 +169,15 @@ object NodeWorker {
   
   type WorkerID = String
   
-  @js.native
   trait WorkerInfo extends StObject {
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: String = js.native
+    var url: String
     
-    var workerId: WorkerID = js.native
+    var workerId: WorkerID
   }
   object WorkerInfo {
     

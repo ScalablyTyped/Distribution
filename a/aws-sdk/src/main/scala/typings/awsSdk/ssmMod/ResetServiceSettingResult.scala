@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetServiceSettingResult extends StObject {
   
   /**
     * The current, effective service setting after calling the ResetServiceSetting API action.
     */
-  var ServiceSetting: js.UndefOr[typings.awsSdk.ssmMod.ServiceSetting] = js.native
+  var ServiceSetting: js.UndefOr[typings.awsSdk.ssmMod.ServiceSetting] = js.undefined
 }
 object ResetServiceSettingResult {
   

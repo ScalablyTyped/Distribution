@@ -5,28 +5,26 @@ import typings.aliApp.my.LaunchOptions
 import typings.aliApp.my.Page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.AppOptions & ali-app.my.App> */
-@js.native
 trait PartialAppOptionsApp extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var getCurrentPage: js.UndefOr[js.Function0[Page]] = js.native
+  var getCurrentPage: js.UndefOr[js.Function0[Page]] = js.undefined
   
-  var globalData: js.UndefOr[js.Object] = js.native
+  var globalData: js.UndefOr[js.Object] = js.undefined
   
-  var onError: js.UndefOr[js.ThisFunction1[/* this */ App, /* msg */ String, Unit]] = js.native
+  var onError: js.UndefOr[js.ThisFunction1[/* this */ App, /* msg */ String, Unit]] = js.undefined
   
-  var onHide: js.UndefOr[js.ThisFunction0[/* this */ App, Unit]] = js.native
+  var onHide: js.UndefOr[js.ThisFunction0[/* this */ App, Unit]] = js.undefined
   
-  var onLaunch: js.UndefOr[js.ThisFunction1[/* this */ App, /* option */ LaunchOptions, Unit]] = js.native
+  var onLaunch: js.UndefOr[js.ThisFunction1[/* this */ App, /* option */ LaunchOptions, Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.ThisFunction1[/* this */ App, /* option */ LaunchOptions, Unit]] = js.native
+  var onShow: js.UndefOr[js.ThisFunction1[/* this */ App, /* option */ LaunchOptions, Unit]] = js.undefined
   
-  var onUnlaunch: js.UndefOr[js.ThisFunction0[/* this */ App, Unit]] = js.native
+  var onUnlaunch: js.UndefOr[js.ThisFunction0[/* this */ App, Unit]] = js.undefined
 }
 object PartialAppOptionsApp {
   

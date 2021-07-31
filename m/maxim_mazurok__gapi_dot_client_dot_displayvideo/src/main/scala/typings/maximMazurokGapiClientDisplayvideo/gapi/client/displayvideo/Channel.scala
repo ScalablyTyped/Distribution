@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Channel extends StObject {
   
   /** The ID of the advertiser that owns the channel. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique ID of the channel. Assigned by the system. */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /** Required. The display name of the channel. Must be UTF-8 encoded with a maximum length of 240 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name of the channel. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The ID of the partner that owns the channel. */
-  var partnerId: js.UndefOr[String] = js.native
+  var partnerId: js.UndefOr[String] = js.undefined
 }
 object Channel {
   

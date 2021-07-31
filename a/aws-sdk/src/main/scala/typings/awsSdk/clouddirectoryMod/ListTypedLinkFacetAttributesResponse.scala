@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTypedLinkFacetAttributesResponse extends StObject {
   
   /**
     * An ordered set of attributes associate with the typed link.
     */
-  var Attributes: js.UndefOr[TypedLinkAttributeDefinitionList] = js.native
+  var Attributes: js.UndefOr[TypedLinkAttributeDefinitionList] = js.undefined
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
 }
 object ListTypedLinkFacetAttributesResponse {
   

@@ -2,13 +2,13 @@ package typings.swaggerizeExpress.mod.Swagger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InBodyParameterObject extends ParameterObject {
+trait InBodyParameterObject
+  extends StObject
+     with ParameterObject {
   
-  var schema: SchemaObject = js.native
+  var schema: SchemaObject
 }
 object InBodyParameterObject {
   

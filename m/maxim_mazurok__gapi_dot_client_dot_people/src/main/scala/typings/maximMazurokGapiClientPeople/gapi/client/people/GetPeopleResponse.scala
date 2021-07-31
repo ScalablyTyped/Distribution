@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPeopleResponse extends StObject {
   
   /** The response for each requested resource name. */
-  var responses: js.UndefOr[js.Array[PersonResponse]] = js.native
+  var responses: js.UndefOr[js.Array[PersonResponse]] = js.undefined
 }
 object GetPeopleResponse {
   

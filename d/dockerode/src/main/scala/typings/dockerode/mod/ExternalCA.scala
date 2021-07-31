@@ -3,19 +3,17 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalCA extends StObject {
   
-  var CACert: String = js.native
+  var CACert: String
   
-  var Options: js.UndefOr[StringDictionary[String]] = js.native
+  var Options: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var Protocol: ExternalCAProtocol = js.native
+  var Protocol: ExternalCAProtocol
   
-  var URL: String = js.native
+  var URL: String
 }
 object ExternalCA {
   

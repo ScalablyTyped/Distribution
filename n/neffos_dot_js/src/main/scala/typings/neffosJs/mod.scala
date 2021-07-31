@@ -5,10 +5,13 @@ import typings.std.Error
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("neffos.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("neffos.js", "Conn")
   @js.native
@@ -210,31 +213,24 @@ object mod {
   @js.native
   val URLParamAsHeaderPrefix: /* "X-Websocket-Header-" */ String = js.native
   
-  @JSImport("neffos.js", "dial")
-  @js.native
-  def dial(endpoint: String, connHandler: js.Any): js.Promise[Conn] = js.native
-  @JSImport("neffos.js", "dial")
-  @js.native
-  def dial(endpoint: String, connHandler: js.Any, options: js.Any): js.Promise[Conn] = js.native
-  @JSImport("neffos.js", "dial")
-  @js.native
-  def dial(endpoint: String, connHandler: js.Any, options: Options): js.Promise[Conn] = js.native
+  @scala.inline
+  def dial(endpoint: String, connHandler: js.Any): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
+  @scala.inline
+  def dial(endpoint: String, connHandler: js.Any, options: js.Any): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
+  @scala.inline
+  def dial(endpoint: String, connHandler: js.Any, options: Options): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
   
-  @JSImport("neffos.js", "isCloseError")
-  @js.native
-  def isCloseError(err: Error): Boolean = js.native
+  @scala.inline
+  def isCloseError(err: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCloseError")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("neffos.js", "isSystemEvent")
-  @js.native
-  def isSystemEvent(event: String): Boolean = js.native
+  @scala.inline
+  def isSystemEvent(event: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSystemEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("neffos.js", "marshal")
-  @js.native
-  def marshal(obj: js.Any): String = js.native
+  @scala.inline
+  def marshal(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("marshal")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("neffos.js", "reply")
-  @js.native
-  def reply(body: WSData): Error = js.native
+  @scala.inline
+  def reply(body: WSData): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("reply")(body.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   type Events = Map[String, MessageHandlerFunc]
   
@@ -244,14 +240,13 @@ object mod {
   
   type Namespaces = Map[String, Events]
   
-  @js.native
   trait Options extends StObject {
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
-    var protocols: js.UndefOr[js.Array[String]] = js.native
+    var protocols: js.UndefOr[js.Array[String]] = js.undefined
     
-    var reconnnect: js.UndefOr[Double] = js.native
+    var reconnnect: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

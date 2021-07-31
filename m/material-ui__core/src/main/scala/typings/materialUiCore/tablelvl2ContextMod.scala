@@ -7,7 +7,6 @@ import typings.materialUiCore.materialUiCoreStrings.head
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tablelvl2ContextMod extends Shortcut {
@@ -16,10 +15,9 @@ object tablelvl2ContextMod extends Shortcut {
   @js.native
   val default: Context[js.UndefOr[Tablelvl2ContextProps]] = js.native
   
-  @js.native
   trait Tablelvl2ContextProps extends StObject {
     
-    var variant: head | body | footer = js.native
+    var variant: head | body | footer
   }
   object Tablelvl2ContextProps {
     

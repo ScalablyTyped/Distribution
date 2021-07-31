@@ -3,22 +3,22 @@ package typings.opentok.mod
 import typings.opentok.opentokStrings.custom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomArchiveLayoutOptions extends ArchiveLayoutOptions {
+trait CustomArchiveLayoutOptions
+  extends StObject
+     with ArchiveLayoutOptions {
   
-  var stylesheet: String = js.native
+  var stylesheet: String
   
-  var `type`: custom = js.native
+  var `type`: custom
 }
 object CustomArchiveLayoutOptions {
   
   @scala.inline
-  def apply(stylesheet: String, `type`: custom): CustomArchiveLayoutOptions = {
+  def apply(stylesheet: String): CustomArchiveLayoutOptions = {
     val __obj = js.Dynamic.literal(stylesheet = stylesheet.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("custom")
     __obj.asInstanceOf[CustomArchiveLayoutOptions]
   }
   

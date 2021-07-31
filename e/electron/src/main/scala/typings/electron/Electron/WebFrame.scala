@@ -4,11 +4,12 @@ import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebFrame extends EventEmitter {
+trait WebFrame
+  extends StObject
+     with EventEmitter {
   
   // Docs: https://electronjs.org/docs/api/web-frame
   /**
@@ -33,18 +34,18 @@ trait WebFrame extends EventEmitter {
     * invoked by a gesture from the user. Setting `userGesture` to `true` will remove
     * this limitation.
     */
-  def executeJavaScript(code: String): js.Promise[_] = js.native
-  def executeJavaScript(
-    code: String,
-    userGesture: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
-  ): js.Promise[_] = js.native
-  def executeJavaScript(code: String, userGesture: Boolean): js.Promise[_] = js.native
+  def executeJavaScript(code: String): js.Promise[js.Any] = js.native
+  def executeJavaScript(code: String, userGesture: Boolean): js.Promise[js.Any] = js.native
   def executeJavaScript(
     code: String,
     userGesture: Boolean,
     callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
+  def executeJavaScript(
+    code: String,
+    userGesture: Unit,
+    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
+  ): js.Promise[js.Any] = js.native
   
   /**
     * A promise that resolves with the result of the executed code or is rejected if
@@ -56,20 +57,20 @@ trait WebFrame extends EventEmitter {
     * reject and the `result` would be `undefined`. This is because Chromium does not
     * dispatch errors of isolated worlds to foreign worlds.
     */
-  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[_] = js.native
-  def executeJavaScriptInIsolatedWorld(
-    worldId: Double,
-    scripts: js.Array[WebSource],
-    userGesture: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
-  ): js.Promise[_] = js.native
-  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[_] = js.native
+  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[js.Any] = js.native
+  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[js.Any] = js.native
   def executeJavaScriptInIsolatedWorld(
     worldId: Double,
     scripts: js.Array[WebSource],
     userGesture: Boolean,
     callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
+  def executeJavaScriptInIsolatedWorld(
+    worldId: Double,
+    scripts: js.Array[WebSource],
+    userGesture: Unit,
+    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
+  ): js.Promise[js.Any] = js.native
   
   /**
     * A child of `webFrame` with the supplied `name`, `null` would be returned if

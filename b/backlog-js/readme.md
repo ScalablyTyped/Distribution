@@ -10,9 +10,9 @@ Backlog API v2 client for browser and node
 | ------------------ | :-------------: |
 | Full name          | backlog-js |
 | Keywords           | nulab, backlog, api |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 1307 |
+| # downloads        | 4233 |
 | # stars            | 0 |
 
 ## Links

@@ -6,11 +6,12 @@ import typings.nvd3.nvd3Strings.wiggle
 import typings.nvd3.nvd3Strings.zero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiBarHorizontal extends Nvd3Element {
+trait MultiBarHorizontal
+  extends StObject
+     with Nvd3Element {
   
   /*this option lets you specific a color for each bar group to have the same color but differentiated by shading.*/
   def barColor(func: js.Function2[/* d */ js.Any, /* i */ Double, String]): this.type = js.native
@@ -99,9 +100,9 @@ trait MultiBarHorizontal extends Nvd3Element {
   def width(value: Double): this.type = js.native
   
   /* Proxy function to return the X value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def x(): js.Function1[/* d */ js.Any, _] = js.native
+  def x(): js.Function1[/* d */ js.Any, js.Any] = js.native
   /* Proxy function to return the X value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def x(func: js.Function1[/* d */ js.Any, _]): this.type = js.native
+  def x(func: js.Function1[/* d */ js.Any, js.Any]): this.type = js.native
   
   /* Defines the whole X scale's domain. Using this will disable calculating the domain based on the data.*/
   def xDomain(): js.Array[Double] = js.native

@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwaitPromiseResponse extends StObject {
   
   /**
     * Exception details if stack strace is available.
     */
-  var exceptionDetails: js.UndefOr[ExceptionDetails] = js.native
+  var exceptionDetails: js.UndefOr[ExceptionDetails] = js.undefined
   
   /**
     * Promise result. Will contain rejected value if promise was rejected.
     */
-  var result: RemoteObject = js.native
+  var result: RemoteObject
 }
 object AwaitPromiseResponse {
   

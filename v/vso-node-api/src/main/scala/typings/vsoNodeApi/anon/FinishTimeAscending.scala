@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishTimeAscending extends StObject {
   
-  var finishTimeAscending: scala.Double = js.native
+  var finishTimeAscending: scala.Double
   
-  var finishTimeDescending: scala.Double = js.native
+  var finishTimeDescending: scala.Double
   
-  var queueTimeAscending: scala.Double = js.native
+  var queueTimeAscending: scala.Double
   
-  var queueTimeDescending: scala.Double = js.native
+  var queueTimeDescending: scala.Double
   
-  var startTimeAscending: scala.Double = js.native
+  var startTimeAscending: scala.Double
   
-  var startTimeDescending: scala.Double = js.native
+  var startTimeDescending: scala.Double
 }
 object FinishTimeAscending {
   

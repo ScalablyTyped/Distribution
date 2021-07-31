@@ -2,15 +2,13 @@ package typings.gapiCalendar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Overrides extends StObject {
   
-  var overrides: js.Array[Minutes] = js.native
+  var overrides: js.Array[Minutes]
   
-  var useDefault: Boolean = js.native
+  var useDefault: Boolean
 }
 object Overrides {
   

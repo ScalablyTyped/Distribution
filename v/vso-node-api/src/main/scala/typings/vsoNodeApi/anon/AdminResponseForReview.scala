@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminResponseForReview extends StObject {
   
-  var adminResponseForReview: scala.Double = js.native
+  var adminResponseForReview: scala.Double
   
-  var deleteAdminReply: scala.Double = js.native
+  var deleteAdminReply: scala.Double
   
-  var deletePublisherReply: scala.Double = js.native
+  var deletePublisherReply: scala.Double
   
-  var flagReview: scala.Double = js.native
+  var flagReview: scala.Double
   
-  var replyToReview: scala.Double = js.native
+  var replyToReview: scala.Double
   
-  var updateReview: scala.Double = js.native
+  var updateReview: scala.Double
 }
 object AdminResponseForReview {
   

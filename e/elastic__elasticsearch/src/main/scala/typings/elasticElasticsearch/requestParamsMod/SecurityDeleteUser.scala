@@ -3,15 +3,15 @@ package typings.elasticElasticsearch.requestParamsMod
 import typings.elasticElasticsearch.elasticElasticsearchStrings.wait_for
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecurityDeleteUser extends Generic {
+trait SecurityDeleteUser
+  extends StObject
+     with Generic {
   
-  var refresh: js.UndefOr[wait_for | Boolean] = js.native
+  var refresh: js.UndefOr[wait_for | Boolean] = js.undefined
   
-  var username: String = js.native
+  var username: String
 }
 object SecurityDeleteUser {
   

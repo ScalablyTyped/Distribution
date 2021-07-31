@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestCase extends StObject {
   
   /** The elapsed run time of the test case. Required. */
-  var elapsedTime: js.UndefOr[Duration] = js.native
+  var elapsedTime: js.UndefOr[Duration] = js.undefined
   
   /** The end time of the test case. */
-  var endTime: js.UndefOr[Timestamp] = js.native
+  var endTime: js.UndefOr[Timestamp] = js.undefined
   
   /** Why the test case was skipped. Present only for skipped test case */
-  var skippedMessage: js.UndefOr[String] = js.native
+  var skippedMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The stack trace details if the test case failed or encountered an error. The maximum size of the stack traces is 100KiB, beyond which the stack track will be truncated. Zero if the
     * test case passed.
     */
-  var stackTraces: js.UndefOr[js.Array[StackTrace]] = js.native
+  var stackTraces: js.UndefOr[js.Array[StackTrace]] = js.undefined
   
   /** The start time of the test case. */
-  var startTime: js.UndefOr[Timestamp] = js.native
+  var startTime: js.UndefOr[Timestamp] = js.undefined
   
   /** The status of the test case. Required. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** A unique identifier within a Step for this Test Case. */
-  var testCaseId: js.UndefOr[String] = js.native
+  var testCaseId: js.UndefOr[String] = js.undefined
   
   /** Test case reference, e.g. name, class name and test suite name. Required. */
-  var testCaseReference: js.UndefOr[TestCaseReference] = js.native
+  var testCaseReference: js.UndefOr[TestCaseReference] = js.undefined
   
   /** References to opaque files of any format output by the tool execution. @OutputOnly */
-  var toolOutputs: js.UndefOr[js.Array[ToolOutputReference]] = js.native
+  var toolOutputs: js.UndefOr[js.Array[ToolOutputReference]] = js.undefined
 }
 object TestCase {
   

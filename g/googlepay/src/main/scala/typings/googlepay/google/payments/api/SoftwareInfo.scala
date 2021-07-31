@@ -2,13 +2,11 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The info of the software used by merchants to integrate with GPay.
   */
-@js.native
 trait SoftwareInfo extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SoftwareInfo extends StObject {
     *
     * This field is optional.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the software.
@@ -28,7 +26,7 @@ trait SoftwareInfo extends StObject {
     *
     * This field is optional.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SoftwareInfo {
   

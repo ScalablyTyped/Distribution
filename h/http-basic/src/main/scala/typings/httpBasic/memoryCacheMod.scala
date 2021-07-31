@@ -6,30 +6,49 @@ import typings.node.NodeJS.ErrnoException
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoryCacheMod {
   
   @JSImport("http-basic/lib/MemoryCache", JSImport.Default)
   @js.native
-  class default () extends MemoryCache
-  
-  @js.native
-  trait MemoryCache extends StObject {
+  class default ()
+    extends StObject
+       with MemoryCache {
     
-    val _cache: js.Any = js.native
+    /* CompleteClass */
+    override val _cache: js.Any = js.native
     
-    def getResponse(
+    /* CompleteClass */
+    override def getResponse(
       url: String,
       callback: js.Function2[/* err */ Null | Error, /* response */ Null | CachedResponse, Unit]
     ): Unit = js.native
     
-    def invalidateResponse(url: String, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
+    /* CompleteClass */
+    override def invalidateResponse(url: String, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
     
-    def setResponse(url: String, response: CachedResponse): Unit = js.native
+    /* CompleteClass */
+    override def setResponse(url: String, response: CachedResponse): Unit = js.native
     
-    def updateResponseHeaders(url: String, response: PickCachedResponseheaders): Unit = js.native
+    /* CompleteClass */
+    override def updateResponseHeaders(url: String, response: PickCachedResponseheaders): Unit = js.native
+  }
+  
+  trait MemoryCache extends StObject {
+    
+    val _cache: js.Any
+    
+    def getResponse(
+      url: String,
+      callback: js.Function2[/* err */ Null | Error, /* response */ Null | CachedResponse, Unit]
+    ): Unit
+    
+    def invalidateResponse(url: String, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit
+    
+    def setResponse(url: String, response: CachedResponse): Unit
+    
+    def updateResponseHeaders(url: String, response: PickCachedResponseheaders): Unit
   }
   object MemoryCache {
     

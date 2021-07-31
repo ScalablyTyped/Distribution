@@ -4,14 +4,15 @@ import typings.heremaps.H.map.ArrowStyle.Options
 import typings.heremaps.H.map.provider.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a spatial map object which provides its projected geometry.
   */
 @js.native
-trait Spatial extends Object {
+trait Spatial
+  extends StObject
+     with Object {
   
   /**
     * To get the arrow style of this spatial object or undefined if no style is defined. A returned arrow style is treated as immutable and must not be modified afterwards to prevent
@@ -63,22 +64,21 @@ object Spatial {
     * @property color {string} - The CSS color
     * @property text {string} - The text content, new line characters (\\u000A) are interpreted as line breaks
     */
-  @js.native
   trait Label extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var color: String = js.native
+    var color: String
     
-    var font: String = js.native
+    var font: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var text: String = js.native
+    var text: String
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Label {
     
@@ -126,24 +126,23 @@ object Spatial {
     * an object.
     * @property data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData.
     */
-  @js.native
   trait Options extends StObject {
     
-    var arrows: js.UndefOr[ArrowStyle | typings.heremaps.H.map.ArrowStyle.Options] = js.native
+    var arrows: js.UndefOr[ArrowStyle | typings.heremaps.H.map.ArrowStyle.Options] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var provider: js.UndefOr[Provider] = js.native
+    var provider: js.UndefOr[Provider] = js.undefined
     
-    var style: js.UndefOr[SpatialStyle | typings.heremaps.H.map.SpatialStyle.Options] = js.native
+    var style: js.UndefOr[SpatialStyle | typings.heremaps.H.map.SpatialStyle.Options] = js.undefined
     
-    var visibility: js.UndefOr[Boolean] = js.native
+    var visibility: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

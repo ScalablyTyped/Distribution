@@ -4,7 +4,6 @@ import typings.firefoxWebextBrowser.browser.manifest.ExtensionID
 import typings.firefoxWebextBrowser.browser.manifest.HttpURL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,61 +29,60 @@ object management {
   }
   
   /** Information about an installed extension. */
-  @js.native
   trait ExtensionInfo extends StObject {
     
     /** The description of this extension. */
-    var description: String = js.native
+    var description: String
     
     /** A reason the item is disabled. */
-    var disabledReason: js.UndefOr[ExtensionDisabledReason] = js.native
+    var disabledReason: js.UndefOr[ExtensionDisabledReason] = js.undefined
     
     /** Whether it is currently enabled or disabled. */
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
     /** The URL of the homepage of this extension. */
-    var homepageUrl: js.UndefOr[String] = js.native
+    var homepageUrl: js.UndefOr[String] = js.undefined
     
     /** Returns a list of host based permissions. */
-    var hostPermissions: js.UndefOr[js.Array[String]] = js.native
+    var hostPermissions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A list of icon information. Note that this just reflects what was declared in the manifest, and the actual image at that url may be larger or smaller than what was declared, so you might consider using explicit width and height attributes on img tags referencing these images. See the manifest documentation on icons for more details.
       */
-    var icons: js.UndefOr[js.Array[IconInfo]] = js.native
+    var icons: js.UndefOr[js.Array[IconInfo]] = js.undefined
     
     /** The extension's unique identifier. */
-    var id: String = js.native
+    var id: String
     
     /** How the extension was installed. */
-    var installType: ExtensionInstallType = js.native
+    var installType: ExtensionInstallType
     
     /** Whether this extension can be disabled or uninstalled by the user. */
-    var mayDisable: Boolean = js.native
+    var mayDisable: Boolean
     
     /** The name of this extension. */
-    var name: String = js.native
+    var name: String
     
     /** The url for the item's options page, if it has one. */
-    var optionsUrl: String = js.native
+    var optionsUrl: String
     
     /** Returns a list of API based permissions. */
-    var permissions: js.UndefOr[js.Array[String]] = js.native
+    var permissions: js.UndefOr[js.Array[String]] = js.undefined
     
     /** A short version of the name of this extension. */
-    var shortName: js.UndefOr[String] = js.native
+    var shortName: js.UndefOr[String] = js.undefined
     
     /** The type of this extension, 'extension' or 'theme'. */
-    var `type`: ExtensionType = js.native
+    var `type`: ExtensionType
     
     /** The update URL of this extension. */
-    var updateUrl: js.UndefOr[String] = js.native
+    var updateUrl: js.UndefOr[String] = js.undefined
     
     /** The version of this extension. */
-    var version: String = js.native
+    var version: String
     
     /** The version name of this extension if the manifest specified one. */
-    var versionName: js.UndefOr[String] = js.native
+    var versionName: js.UndefOr[String] = js.undefined
   }
   object ExtensionInfo {
     
@@ -225,14 +223,14 @@ object management {
   
   /** The type of this extension, 'extension' or 'theme'. */
   /* Rewritten from type alias, can be one of: 
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.extension
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension`
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.theme
   */
   trait ExtensionType extends StObject
   object ExtensionType {
     
     @scala.inline
-    def extension: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.extension = "extension".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.extension]
+    def `extension`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension` = "extension".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension`]
     
     @scala.inline
     def theme: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.theme = "theme".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.theme]
@@ -240,18 +238,17 @@ object management {
   
   /* management types */
   /** Information about an icon belonging to an extension. */
-  @js.native
   trait IconInfo extends StObject {
     
     /**
       * A number representing the width and height of the icon. Likely values include (but are not limited to) 128, 48, 24, and 16.
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * The URL for this icon image. To display a grayscale version of the icon (to indicate that an extension is disabled, for example), append `?grayscale=true` to the URL.
       */
-    var url: String = js.native
+    var url: String
   }
   object IconInfo {
     
@@ -272,14 +269,13 @@ object management {
     }
   }
   
-  @js.native
   trait InstallOptions extends StObject {
     
     /** A hash of the XPI file, using sha256 or stronger. */
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
     /** URL pointing to the XPI file on addons.mozilla.org or similar. */
-    var url: HttpURL = js.native
+    var url: HttpURL
   }
   object InstallOptions {
     
@@ -303,10 +299,9 @@ object management {
     }
   }
   
-  @js.native
   trait InstallReturnResult extends StObject {
     
-    var id: ExtensionID = js.native
+    var id: ExtensionID
   }
   object InstallReturnResult {
     
@@ -324,14 +319,13 @@ object management {
     }
   }
   
-  @js.native
   trait UninstallSelfOptions extends StObject {
     
     /** The message to display to a user when being asked to confirm removal of the extension. */
-    var dialogMessage: js.UndefOr[String] = js.native
+    var dialogMessage: js.UndefOr[String] = js.undefined
     
     /** Whether or not a confirm-uninstall dialog should prompt the user. Defaults to false. */
-    var showConfirmDialog: js.UndefOr[Boolean] = js.native
+    var showConfirmDialog: js.UndefOr[Boolean] = js.undefined
   }
   object UninstallSelfOptions {
     

@@ -2,27 +2,25 @@ package typings.activexLibreoffice.com_.sun.star.table
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains a cell range address within a spreadsheet document. */
-@js.native
 trait CellRangeAddress extends StObject {
   
   /** is the index of the column of the right edge of the range. */
-  var EndColumn: Double = js.native
+  var EndColumn: Double
   
   /** is the index of the row of the bottom edge of the range. */
-  var EndRow: Double = js.native
+  var EndRow: Double
   
   /** is the index of the sheet that contains the cell range. */
-  var Sheet: Double = js.native
+  var Sheet: Double
   
   /** is the index of the column of the left edge of the range. */
-  var StartColumn: Double = js.native
+  var StartColumn: Double
   
   /** is the index of the row of the top edge of the range. */
-  var StartRow: Double = js.native
+  var StartRow: Double
 }
 object CellRangeAddress {
   

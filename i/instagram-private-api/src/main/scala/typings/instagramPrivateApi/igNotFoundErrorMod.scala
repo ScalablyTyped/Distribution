@@ -4,7 +4,6 @@ import typings.instagramPrivateApi.commonTypesMod.IgResponse
 import typings.instagramPrivateApi.igResponseErrorMod.IgResponseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object igNotFoundErrorMod {
@@ -13,6 +12,6 @@ object igNotFoundErrorMod {
   @js.native
   class IgNotFoundError protected ()
     extends IgResponseError[js.Any] {
-    def this(response: IgResponse[_]) = this()
+    def this(response: IgResponse[js.Any]) = this()
   }
 }

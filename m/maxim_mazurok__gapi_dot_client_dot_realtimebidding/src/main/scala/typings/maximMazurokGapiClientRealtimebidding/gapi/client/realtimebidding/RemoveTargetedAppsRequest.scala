@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTargetedAppsRequest extends StObject {
   
   /**
     * A list of app IDs to stop targeting in the pretargeting configuration. These values will be removed from the list of targeted app IDs in
     * PretargetingConfig.appTargeting.mobileAppTargeting.values.
     */
-  var appIds: js.UndefOr[js.Array[String]] = js.native
+  var appIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RemoveTargetedAppsRequest {
   

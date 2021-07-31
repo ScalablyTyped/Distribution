@@ -9,67 +9,69 @@ import typings.std.ReadableStream
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("evaporate", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Evaporate {
+  class ^ protected ()
+    extends StObject
+       with Evaporate {
     def this(config: CreateConfig) = this()
   }
-  
-  @JSImport("evaporate", "create")
+  @JSImport("evaporate", JSImport.Namespace)
   @js.native
-  def create(config: CreateConfig): js.Promise[Evaporate] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def create(config: CreateConfig): js.Promise[Evaporate] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Evaporate]]
+  
   trait AddConfig extends StObject {
     
-    var beforeSigner: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* url */ String, Unit]] = js.native
+    var beforeSigner: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* url */ String, Unit]] = js.undefined
     
-    var cancelled: js.UndefOr[js.Function0[Unit]] = js.native
+    var cancelled: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var complete: js.UndefOr[
         js.Function3[/* xhr */ XMLHttpRequest, /* awsObjectKey */ String, /* stats */ TransferStats, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
     
-    var file: File = js.native
+    var file: File
     
-    var info: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var info: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var nameChanged: js.UndefOr[js.Function1[/* awsObjectKey */ String, Unit]] = js.native
+    var nameChanged: js.UndefOr[js.Function1[/* awsObjectKey */ String, Unit]] = js.undefined
     
-    var notSignedHeadersAtInitiate: js.UndefOr[StringDictionary[String]] = js.native
+    var notSignedHeadersAtInitiate: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var paused: js.UndefOr[js.Function1[/* file_key */ String, Unit]] = js.native
+    var paused: js.UndefOr[js.Function1[/* file_key */ String, Unit]] = js.undefined
     
-    var pausing: js.UndefOr[js.Function1[/* file_key */ String, Unit]] = js.native
+    var pausing: js.UndefOr[js.Function1[/* file_key */ String, Unit]] = js.undefined
     
-    var progress: js.UndefOr[js.Function2[/* p */ Double, /* stats */ TransferStats, Unit]] = js.native
+    var progress: js.UndefOr[js.Function2[/* p */ Double, /* stats */ TransferStats, Unit]] = js.undefined
     
-    var resumed: js.UndefOr[js.Function1[/* file_key */ String, Unit]] = js.native
+    var resumed: js.UndefOr[js.Function1[/* file_key */ String, Unit]] = js.undefined
     
-    var started: js.UndefOr[js.Function1[/* file_key */ String, Unit]] = js.native
+    var started: js.UndefOr[js.Function1[/* file_key */ String, Unit]] = js.undefined
     
-    var uploadInitiated: js.UndefOr[js.Function1[/* s3UploadId */ js.UndefOr[String], Unit]] = js.native
+    var uploadInitiated: js.UndefOr[js.Function1[/* s3UploadId */ js.UndefOr[String], Unit]] = js.undefined
     
-    var warn: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var warn: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
     
-    var xAmzHeadersAtComplete: js.UndefOr[StringDictionary[String]] = js.native
+    var xAmzHeadersAtComplete: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var xAmzHeadersAtInitiate: js.UndefOr[StringDictionary[String]] = js.native
+    var xAmzHeadersAtInitiate: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var xAmzHeadersAtUpload: js.UndefOr[StringDictionary[String]] = js.native
+    var xAmzHeadersAtUpload: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var xAmzHeadersCommon: js.UndefOr[StringDictionary[String]] = js.native
+    var xAmzHeadersCommon: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object AddConfig {
     
@@ -300,16 +302,15 @@ object mod {
   }
   
   /* Inlined parent std.Pick<evaporate.evaporate.CreateConfig, evaporate.evaporate.AddOverrideOptionKeys> */
-  @js.native
   trait AddOverrideOptions extends StObject {
     
-    var abortCompletionThrottlingMs: js.UndefOr[Double] = js.native
+    var abortCompletionThrottlingMs: js.UndefOr[Double] = js.undefined
     
-    var aws_key: js.UndefOr[String] = js.native
+    var aws_key: js.UndefOr[String] = js.undefined
     
-    var aws_url: js.UndefOr[String] = js.native
+    var aws_url: js.UndefOr[String] = js.undefined
     
-    var bucket: String = js.native
+    var bucket: String
     
     var customAuthMethod: js.UndefOr[
         Null | (js.Function5[
@@ -320,37 +321,37 @@ object mod {
           /* canonicalRequest */ String, 
           js.Promise[String]
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var localTimeOffset: js.UndefOr[Double] = js.native
+    var localTimeOffset: js.UndefOr[Double] = js.undefined
     
-    var maxFileSize: js.UndefOr[Double] = js.native
+    var maxFileSize: js.UndefOr[Double] = js.undefined
     
-    var maxRetryBackoffSecs: js.UndefOr[Double] = js.native
+    var maxRetryBackoffSecs: js.UndefOr[Double] = js.undefined
     
-    var mockLocalStorage: js.UndefOr[Boolean] = js.native
+    var mockLocalStorage: js.UndefOr[Boolean] = js.undefined
     
-    var partSize: js.UndefOr[Double] = js.native
+    var partSize: js.UndefOr[Double] = js.undefined
     
-    var progressIntervalMS: js.UndefOr[Double] = js.native
+    var progressIntervalMS: js.UndefOr[Double] = js.undefined
     
     var readableStreamPartMethod: js.UndefOr[
-        Null | (js.Function3[/* file */ File, /* start */ Double, /* end */ Double, ReadableStream[_]])
-      ] = js.native
+        Null | (js.Function3[/* file */ File, /* start */ Double, /* end */ Double, ReadableStream[js.Any]])
+      ] = js.undefined
     
-    var readableStreams: js.UndefOr[Boolean] = js.native
+    var readableStreams: js.UndefOr[Boolean] = js.undefined
     
-    var retryBackoffPower: js.UndefOr[Double] = js.native
+    var retryBackoffPower: js.UndefOr[Double] = js.undefined
     
-    var s3Acceleration: js.UndefOr[Boolean] = js.native
+    var s3Acceleration: js.UndefOr[Boolean] = js.undefined
     
-    var s3FileCacheHoursAgo: js.UndefOr[Null | Double] = js.native
+    var s3FileCacheHoursAgo: js.UndefOr[Null | Double] = js.undefined
     
-    var sendCanonicalRequestToSignerUrl: js.UndefOr[Boolean] = js.native
+    var sendCanonicalRequestToSignerUrl: js.UndefOr[Boolean] = js.undefined
     
-    var signHeaders: js.UndefOr[js.Object] = js.native
+    var signHeaders: js.UndefOr[js.Object] = js.undefined
     
-    var signParams: js.UndefOr[js.Object] = js.native
+    var signParams: js.UndefOr[js.Object] = js.undefined
     
     var signResponseHandler: js.UndefOr[
         Null | (js.Function3[
@@ -359,11 +360,11 @@ object mod {
           /* signatureDateTime */ String, 
           js.Promise[String]
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var signerUrl: js.UndefOr[String] = js.native
+    var signerUrl: js.UndefOr[String] = js.undefined
     
-    var xhrWithCredentials: js.UndefOr[Boolean] = js.native
+    var xhrWithCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object AddOverrideOptions {
     
@@ -445,7 +446,7 @@ object mod {
       def setProgressIntervalMSUndefined: Self = StObject.set(x, "progressIntervalMS", js.undefined)
       
       @scala.inline
-      def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[_]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
+      def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[js.Any]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
       
       @scala.inline
       def setReadableStreamPartMethodNull: Self = StObject.set(x, "readableStreamPartMethod", null)
@@ -523,30 +524,29 @@ object mod {
     }
   }
   
-  @js.native
   trait CreateConfig extends StObject {
     
-    var abortCompletionThrottlingMs: js.UndefOr[Double] = js.native
+    var abortCompletionThrottlingMs: js.UndefOr[Double] = js.undefined
     
-    var allowS3ExistenceOptimization: js.UndefOr[Boolean] = js.native
+    var allowS3ExistenceOptimization: js.UndefOr[Boolean] = js.undefined
     
-    var awsRegion: js.UndefOr[String] = js.native
+    var awsRegion: js.UndefOr[String] = js.undefined
     
-    var awsSignatureVersion: js.UndefOr[`2` | `4`] = js.native
+    var awsSignatureVersion: js.UndefOr[`2` | `4`] = js.undefined
     
-    var aws_key: js.UndefOr[String] = js.native
+    var aws_key: js.UndefOr[String] = js.undefined
     
-    var aws_url: js.UndefOr[String] = js.native
+    var aws_url: js.UndefOr[String] = js.undefined
     
-    var bucket: String = js.native
+    var bucket: String
     
-    var cloudfront: js.UndefOr[Boolean] = js.native
+    var cloudfront: js.UndefOr[Boolean] = js.undefined
     
-    var computeContentMd5: js.UndefOr[Boolean] = js.native
+    var computeContentMd5: js.UndefOr[Boolean] = js.undefined
     
-    var cryptoHexEncodedHash256: js.UndefOr[Null | (js.Function1[/* data */ String | ArrayBuffer | Null, String])] = js.native
+    var cryptoHexEncodedHash256: js.UndefOr[Null | (js.Function1[/* data */ String | ArrayBuffer | Null, String])] = js.undefined
     
-    var cryptoMd5Method: js.UndefOr[Null | (js.Function1[/* data */ ArrayBuffer, String])] = js.native
+    var cryptoMd5Method: js.UndefOr[Null | (js.Function1[/* data */ ArrayBuffer, String])] = js.undefined
     
     var customAuthMethod: js.UndefOr[
         Null | (js.Function5[
@@ -557,47 +557,47 @@ object mod {
           /* canonicalRequest */ String, 
           js.Promise[String]
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var encodeFilename: js.UndefOr[Boolean] = js.native
+    var encodeFilename: js.UndefOr[Boolean] = js.undefined
     
-    var evaporateChanged: js.UndefOr[js.Function2[/* evaporate */ Evaporate, /* evaporatingCount */ Double, Unit]] = js.native
+    var evaporateChanged: js.UndefOr[js.Function2[/* evaporate */ Evaporate, /* evaporatingCount */ Double, Unit]] = js.undefined
     
-    var localTimeOffset: js.UndefOr[Double] = js.native
+    var localTimeOffset: js.UndefOr[Double] = js.undefined
     
-    var logging: js.UndefOr[Boolean] = js.native
+    var logging: js.UndefOr[Boolean] = js.undefined
     
-    var maxConcurrentParts: js.UndefOr[Double] = js.native
+    var maxConcurrentParts: js.UndefOr[Double] = js.undefined
     
-    var maxFileSize: js.UndefOr[Double] = js.native
+    var maxFileSize: js.UndefOr[Double] = js.undefined
     
-    var maxRetryBackoffSecs: js.UndefOr[Double] = js.native
+    var maxRetryBackoffSecs: js.UndefOr[Double] = js.undefined
     
-    var mockLocalStorage: js.UndefOr[Boolean] = js.native
+    var mockLocalStorage: js.UndefOr[Boolean] = js.undefined
     
-    var onlyRetryForSameFileName: js.UndefOr[Boolean] = js.native
+    var onlyRetryForSameFileName: js.UndefOr[Boolean] = js.undefined
     
-    var partSize: js.UndefOr[Double] = js.native
+    var partSize: js.UndefOr[Double] = js.undefined
     
-    var progressIntervalMS: js.UndefOr[Double] = js.native
+    var progressIntervalMS: js.UndefOr[Double] = js.undefined
     
     var readableStreamPartMethod: js.UndefOr[
-        Null | (js.Function3[/* file */ File, /* start */ Double, /* end */ Double, ReadableStream[_]])
-      ] = js.native
+        Null | (js.Function3[/* file */ File, /* start */ Double, /* end */ Double, ReadableStream[js.Any]])
+      ] = js.undefined
     
-    var readableStreams: js.UndefOr[Boolean] = js.native
+    var readableStreams: js.UndefOr[Boolean] = js.undefined
     
-    var retryBackoffPower: js.UndefOr[Double] = js.native
+    var retryBackoffPower: js.UndefOr[Double] = js.undefined
     
-    var s3Acceleration: js.UndefOr[Boolean] = js.native
+    var s3Acceleration: js.UndefOr[Boolean] = js.undefined
     
-    var s3FileCacheHoursAgo: js.UndefOr[Null | Double] = js.native
+    var s3FileCacheHoursAgo: js.UndefOr[Null | Double] = js.undefined
     
-    var sendCanonicalRequestToSignerUrl: js.UndefOr[Boolean] = js.native
+    var sendCanonicalRequestToSignerUrl: js.UndefOr[Boolean] = js.undefined
     
-    var signHeaders: js.UndefOr[js.Object] = js.native
+    var signHeaders: js.UndefOr[js.Object] = js.undefined
     
-    var signParams: js.UndefOr[js.Object] = js.native
+    var signParams: js.UndefOr[js.Object] = js.undefined
     
     var signResponseHandler: js.UndefOr[
         Null | (js.Function3[
@@ -606,13 +606,13 @@ object mod {
           /* signatureDateTime */ String, 
           js.Promise[String]
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var signerUrl: js.UndefOr[String] = js.native
+    var signerUrl: js.UndefOr[String] = js.undefined
     
-    var timeUrl: js.UndefOr[String] = js.native
+    var timeUrl: js.UndefOr[String] = js.undefined
     
-    var xhrWithCredentials: js.UndefOr[Boolean] = js.native
+    var xhrWithCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object CreateConfig {
     
@@ -772,7 +772,7 @@ object mod {
       def setProgressIntervalMSUndefined: Self = StObject.set(x, "progressIntervalMS", js.undefined)
       
       @scala.inline
-      def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[_]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
+      def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[js.Any]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
       
       @scala.inline
       def setReadableStreamPartMethodNull: Self = StObject.set(x, "readableStreamPartMethod", null)
@@ -862,16 +862,16 @@ object mod {
     def add(config: AddConfig): js.Promise[String] = js.native
     def add(config: AddConfig, options: AddOverrideOptions): js.Promise[String] = js.native
     
-    def cancel(): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
-    def cancel(file_key: String): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
+    def cancel(): js.Promise[js.Array[Unit]] = js.native
+    def cancel(file_key: String): js.Promise[js.Array[Unit]] = js.native
     
-    def pause(): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
-    def pause(file_key: js.UndefOr[scala.Nothing], options: js.Object): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
-    def pause(file_key: String): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
-    def pause(file_key: String, options: js.Object): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
+    def pause(): js.Promise[js.Array[Unit]] = js.native
+    def pause(file_key: String): js.Promise[js.Array[Unit]] = js.native
+    def pause(file_key: String, options: js.Object): js.Promise[js.Array[Unit]] = js.native
+    def pause(file_key: Unit, options: js.Object): js.Promise[js.Array[Unit]] = js.native
     
-    def resume(): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
-    def resume(file_key: String): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
+    def resume(): js.Promise[js.Array[Unit]] = js.native
+    def resume(file_key: String): js.Promise[js.Array[Unit]] = js.native
     
     var supported: Boolean = js.native
   }
@@ -934,10 +934,9 @@ object mod {
     def timeUrl: typings.evaporate.evaporateStrings.timeUrl = "timeUrl".asInstanceOf[typings.evaporate.evaporateStrings.timeUrl]
   }
   
-  @js.native
   trait PauseConfig extends StObject {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
   }
   object PauseConfig {
     
@@ -958,22 +957,21 @@ object mod {
     }
   }
   
-  @js.native
   trait TransferStats extends StObject {
     
-    var fileSize: Double = js.native
+    var fileSize: Double
     
-    var loaded: Double = js.native
+    var loaded: Double
     
-    var readableSpeed: String = js.native
+    var readableSpeed: String
     
-    var remainingSize: Double = js.native
+    var remainingSize: Double
     
-    var secondsLeft: Double = js.native
+    var secondsLeft: Double
     
-    var speed: Double = js.native
+    var speed: Double
     
-    var totalUploaded: Double = js.native
+    var totalUploaded: Double
   }
   object TransferStats {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormatOptions extends StObject {
   
   /**
     * Options that define how Excel input is to be interpreted by DataBrew.
     */
-  var Excel: js.UndefOr[ExcelOptions] = js.native
+  var Excel: js.UndefOr[ExcelOptions] = js.undefined
   
   /**
     * Options that define how JSON input is to be interpreted by DataBrew.
     */
-  var Json: js.UndefOr[JsonOptions] = js.native
+  var Json: js.UndefOr[JsonOptions] = js.undefined
 }
 object FormatOptions {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GuestAttributesEntry extends StObject {
   
   /** Key for the guest attribute entry. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Namespace for the guest attribute entry. */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
   /** Value for the guest attribute entry. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object GuestAttributesEntry {
   

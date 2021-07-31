@@ -3,26 +3,24 @@ package typings.jwplayer.jwplayer
 import typings.jwplayer.jwplayerStrings.cast
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CastParam extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var available: Boolean = js.native
+  var available: Boolean
   
-  var deviceName: String = js.native
+  var deviceName: String
   
-  var `type`: cast = js.native
+  var `type`: cast
 }
 object CastParam {
   
   @scala.inline
-  def apply(active: Boolean, available: Boolean, deviceName: String, `type`: cast): CastParam = {
+  def apply(active: Boolean, available: Boolean, deviceName: String): CastParam = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], available = available.asInstanceOf[js.Any], deviceName = deviceName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("cast")
     __obj.asInstanceOf[CastParam]
   }
   

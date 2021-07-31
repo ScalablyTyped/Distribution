@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Media.Core.TimedMetadataTrack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsTimedMetadataTrack extends StObject {
   
-  /** The timed metadata tracks that start at startIndex in the list. */ var items: TimedMetadataTrack = js.native
+  /** The timed metadata tracks that start at startIndex in the list. */ var items: TimedMetadataTrack
   
-  /** The number of timed metadata tracks retrieved. */ var returnValue: Double = js.native
+  /** The number of timed metadata tracks retrieved. */ var returnValue: Double
 }
 object ItemsTimedMetadataTrack {
   

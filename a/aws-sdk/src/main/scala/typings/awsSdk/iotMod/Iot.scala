@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -211,7 +210,7 @@ trait Iot extends Service {
   ): Request[ClearDefaultAuthorizerResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_Iot: ConfigBase with ClientConfiguration = js.native
+  var config_Iot: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Confirms a topic rule destination. When you create a rule requiring a destination, AWS IoT sends a confirmation message to the endpoint or base address you specify. The message includes a token which you pass back when calling ConfirmTopicRuleDestination to confirm that you own or have access to the endpoint.

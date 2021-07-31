@@ -3,23 +3,21 @@ package typings.scrollmagic.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event[T] extends StObject {
   
-  val currentTarget: Scene = js.native
+  val currentTarget: Scene
   
-  val namespace: String = js.native
+  val namespace: String
   
-  val target: Scene = js.native
+  val target: Scene
   
-  val timeStamp: Date = js.native
+  val timeStamp: Date
   
-  val timestamp: Date = js.native
+  val timestamp: Date
   
-  val `type`: T = js.native
+  val `type`: T
 }
 object Event {
   
@@ -38,7 +36,7 @@ object Event {
   }
   
   @scala.inline
-  implicit class EventMutableBuilder[Self <: Event[_], T] (val x: Self with Event[T]) extends AnyVal {
+  implicit class EventMutableBuilder[Self <: Event[?], T] (val x: Self & Event[T]) extends AnyVal {
     
     @scala.inline
     def setCurrentTarget(value: Scene): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])

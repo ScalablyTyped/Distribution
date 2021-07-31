@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetingTemplatesListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#targetingTemplatesListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Pagination token to be used for the next list operation. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Targeting template collection. */
-  var targetingTemplates: js.UndefOr[js.Array[TargetingTemplate]] = js.native
+  var targetingTemplates: js.UndefOr[js.Array[TargetingTemplate]] = js.undefined
 }
 object TargetingTemplatesListResponse {
   

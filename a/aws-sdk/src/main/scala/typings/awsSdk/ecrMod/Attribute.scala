@@ -2,21 +2,19 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
   /**
     * The attribute key.
     */
-  var key: AttributeKey = js.native
+  var key: AttributeKey
   
   /**
     * The value assigned to the attribute key.
     */
-  var value: js.UndefOr[AttributeValue] = js.native
+  var value: js.UndefOr[AttributeValue] = js.undefined
 }
 object Attribute {
   

@@ -9,7 +9,6 @@ import typings.pg.mod.Client
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,7 +20,7 @@ object mod {
     
     def close(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
     
-    def closeAsync(): js.Promise[_] = js.native
+    def closeAsync(): js.Promise[js.Any] = js.native
     
     def getReadableStream(): ReadStream = js.native
     def getReadableStream(bufferSize: Double): ReadStream = js.native
@@ -53,12 +52,12 @@ object mod {
     def truncate(length: Double): Unit = js.native
     def truncate(length: Double, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
     
-    def truncateAsync(length: Double): js.Promise[_] = js.native
+    def truncateAsync(length: Double): js.Promise[js.Any] = js.native
     
     def write(buffer: Buffer): Unit = js.native
     def write(buffer: Buffer, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
     
-    def writeAsync(buffer: Buffer): js.Promise[_] = js.native
+    def writeAsync(buffer: Buffer): js.Promise[js.Any] = js.native
   }
   /* static members */
   object LargeObject {
@@ -85,13 +84,13 @@ object mod {
     def create(callback: js.Function2[/* error */ Error, /* oid */ Double, Unit]): Unit = js.native
     
     def createAndWritableStream(): Unit = js.native
-    def createAndWritableStream(
-      bufferSize: js.UndefOr[scala.Nothing],
-      callback: js.Function3[/* error */ Error, /* oid */ Double, /* stream */ WriteStream, Unit]
-    ): Unit = js.native
     def createAndWritableStream(bufferSize: Double): Unit = js.native
     def createAndWritableStream(
       bufferSize: Double,
+      callback: js.Function3[/* error */ Error, /* oid */ Double, /* stream */ WriteStream, Unit]
+    ): Unit = js.native
+    def createAndWritableStream(
+      bufferSize: Unit,
       callback: js.Function3[/* error */ Error, /* oid */ Double, /* stream */ WriteStream, Unit]
     ): Unit = js.native
     
@@ -120,7 +119,7 @@ object mod {
     def unlink(oid: Double): Unit = js.native
     def unlink(oid: Double, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
     
-    def unlinkAsync(oid: Double): js.Promise[_] = js.native
+    def unlinkAsync(oid: Double): js.Promise[js.Any] = js.native
   }
   /* static members */
   object LargeObjectManager {
@@ -150,12 +149,11 @@ object mod {
     def this(opts: WritableOptions) = this()
   }
   
-  @js.native
   trait LargeObjectManagerSettings extends StObject {
     
-    var pg: js.UndefOr[Client] = js.native
+    var pg: js.UndefOr[Client] = js.undefined
     
-    var pgPromise: js.UndefOr[js.Object] = js.native
+    var pgPromise: js.UndefOr[js.Object] = js.undefined
   }
   object LargeObjectManagerSettings {
     

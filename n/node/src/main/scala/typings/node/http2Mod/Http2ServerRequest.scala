@@ -8,7 +8,6 @@ import typings.node.streamMod.ReadableOptions
 import typings.node.tlsMod.TLSSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("http2", "Http2ServerRequest")

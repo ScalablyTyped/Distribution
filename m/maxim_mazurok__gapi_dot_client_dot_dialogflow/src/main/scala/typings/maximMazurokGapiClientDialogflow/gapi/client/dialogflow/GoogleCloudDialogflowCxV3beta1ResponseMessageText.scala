@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3beta1ResponseMessageText extends StObject {
   
   /** Output only. Whether the playback of this message can be interrupted by the end user's speech and the client can then starts the next Dialogflow request. */
-  var allowPlaybackInterruption: js.UndefOr[Boolean] = js.native
+  var allowPlaybackInterruption: js.UndefOr[Boolean] = js.undefined
   
   /** Required. A collection of text responses. */
-  var text: js.UndefOr[js.Array[String]] = js.native
+  var text: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1ResponseMessageText {
   

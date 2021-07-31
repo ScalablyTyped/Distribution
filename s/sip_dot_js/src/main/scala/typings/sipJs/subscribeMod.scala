@@ -8,19 +8,17 @@ import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.subscriptionSubscriptionMod.Subscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscribeMod {
   
-  @js.native
   trait IncomingRequestWithSubscription extends StObject {
     
     /** The NOTIFY request which established the subscription. */
-    val request: IncomingNotifyRequest = js.native
+    val request: IncomingNotifyRequest
     
     /** If subscription state is not "terminated", then the subscription. Otherwise undefined. */
-    val subscription: js.UndefOr[Subscription] = js.native
+    val subscription: js.UndefOr[Subscription] = js.undefined
   }
   object IncomingRequestWithSubscription {
     
@@ -49,7 +47,9 @@ object subscribeMod {
   type IncomingSubscribeResponse = IncomingResponse
   
   @js.native
-  trait OutgoingSubscribeRequest extends OutgoingRequest {
+  trait OutgoingSubscribeRequest
+    extends StObject
+       with OutgoingRequest {
     
     /** Delegate providing custom handling of this outgoing SUBSCRIBE request. */
     @JSName("delegate")
@@ -59,21 +59,22 @@ object subscribeMod {
     def waitNotifyStop(): Unit = js.native
   }
   
-  @js.native
-  trait OutgoingSubscribeRequestDelegate extends OutgoingRequestDelegate {
+  trait OutgoingSubscribeRequestDelegate
+    extends StObject
+       with OutgoingRequestDelegate {
     
     /**
       * Received the initial subscription creating NOTIFY in response to this request.
       * Called for out of dialog SUBSCRIBE requests only (not called for re-SUBSCRIBE requests).
       * @param request - Incoming NOTIFY request (including a Subscription).
       */
-    var onNotify: js.UndefOr[js.Function1[/* request */ IncomingRequestWithSubscription, Unit]] = js.native
+    var onNotify: js.UndefOr[js.Function1[/* request */ IncomingRequestWithSubscription, Unit]] = js.undefined
     
     /**
       * Timed out waiting to receive the initial subscription creating NOTIFY in response to this request.
       * Called for out of dialog SUBSCRIBE requests only (not called for re-SUBSCRIBE requests).
       */
-    var onNotifyTimeout: js.UndefOr[js.Function0[Unit]] = js.native
+    var onNotifyTimeout: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object OutgoingSubscribeRequestDelegate {
     

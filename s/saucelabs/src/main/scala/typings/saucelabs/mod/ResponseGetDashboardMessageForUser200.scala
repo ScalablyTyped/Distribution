@@ -4,16 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.saucelabs.anon.Cta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseGetDashboardMessageForUser200
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var response: js.UndefOr[Cta] = js.native
+  var response: js.UndefOr[Cta] = js.undefined
   
-  var status: js.UndefOr[Boolean] = js.native
+  var status: js.UndefOr[Boolean] = js.undefined
 }
 object ResponseGetDashboardMessageForUser200 {
   

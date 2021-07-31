@@ -7,7 +7,6 @@ import typings.chromeApps.chromeAppsStrings.write_
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,23 +21,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object bluetoothLowEnergy {
   
-  @js.native
   trait Advertisement extends StObject {
     
     /** List of manufacturer specific data to be included in 'Manufacturer Specific Data' fields of the advertising data. */
-    var manufacturerData: js.UndefOr[Data] = js.native
+    var manufacturerData: js.UndefOr[Data] = js.undefined
     
     /** List of service data to be included in 'Service Data' fields of the advertising data. */
-    var serviceData: Uuid = js.native
+    var serviceData: Uuid
     
     /** List of UUIDs to include in the 'Service UUIDs' field of the Advertising Data. These UUIDs can be of the 16bit, 32bit or 128 formats. */
-    var serviceUuids: js.UndefOr[js.Array[String]] = js.native
+    var serviceUuids: js.UndefOr[js.Array[String]] = js.undefined
     
     /** List of UUIDs to include in the 'Solicit UUIDs' field of the Advertising Data. These UUIDs can be of the 16bit, 32bit or 128 formats. */
-    var solicitUuids: js.UndefOr[js.Array[String]] = js.native
+    var solicitUuids: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Type of advertisement. */
-    var `type`: AdvertisementType = js.native
+    var `type`: AdvertisementType
   }
   object Advertisement {
     
@@ -98,23 +96,22 @@ object bluetoothLowEnergy {
     def peripheral: typings.chromeApps.chromeAppsStrings.peripheral = "peripheral".asInstanceOf[typings.chromeApps.chromeAppsStrings.peripheral]
   }
   
-  @js.native
   trait Characteristic extends StObject {
     
     /** Returns the identifier assigned to this characteristic. Use the instance ID to distinguish between characteristics from a peripheral with the same UUID and to make function calls that take in a characteristic identifier. Present, if this instance represents a remote characteristic. */
-    var instanceId: js.UndefOr[String] = js.native
+    var instanceId: js.UndefOr[String] = js.undefined
     
     /** The properties of this characteristic. */
-    var properties: js.Array[CharacteristicProperties] = js.native
+    var properties: js.Array[CharacteristicProperties]
     
     /** The GATT service this characteristic belongs to. */
-    var service: js.UndefOr[Service] = js.native
+    var service: js.UndefOr[Service] = js.undefined
     
     /** The UUID of the characteristic, e.g. 00002a37-0000-1000-8000-00805f9b34fb. */
-    var uuid: String = js.native
+    var uuid: String
     
     /** The currently cached characteristic value. This value gets updated when the value of the characteristic is read or updated via a notification or indication. */
-    var value: js.UndefOr[ArrayBuffer] = js.native
+    var value: js.UndefOr[ArrayBuffer] = js.undefined
   }
   object Characteristic {
     
@@ -215,26 +212,25 @@ object bluetoothLowEnergy {
     def writeWithoutResponse: typings.chromeApps.chromeAppsStrings.writeWithoutResponse = "writeWithoutResponse".asInstanceOf[typings.chromeApps.chromeAppsStrings.writeWithoutResponse]
   }
   
-  @js.native
   trait Descriptor extends StObject {
     
     /** The GATT characteristic this descriptor belongs to. */
-    var characteristic: js.UndefOr[Characteristic] = js.native
+    var characteristic: js.UndefOr[Characteristic] = js.undefined
     
     /** Returns the identifier assigned to this descriptor. Use the instance ID to distinguish between descriptors from a peripheral with the same UUID and to make function calls that take in a descriptor identifier. Present, if this instance represents a remote characteristic. */
-    var instanceId: js.UndefOr[String] = js.native
+    var instanceId: js.UndefOr[String] = js.undefined
     
     /**
       * The permissions of this descriptor.
       * @since Chrome 52.
       */
-    var permissions: js.Array[DescriptorPermissions] = js.native
+    var permissions: js.Array[DescriptorPermissions]
     
     /** The UUID of the characteristic descriptor, e.g. 00002902-0000-1000-8000-00805f9b34fb. */
-    var uuid: String = js.native
+    var uuid: String
     
     /** The currently cached descriptor value. This value gets updated when the value of the descriptor is read. */
-    var value: js.UndefOr[ArrayBuffer] = js.native
+    var value: js.UndefOr[ArrayBuffer] = js.undefined
   }
   object Descriptor {
     
@@ -306,14 +302,13 @@ object bluetoothLowEnergy {
     def write: write_ = "write".asInstanceOf[write_]
   }
   
-  @js.native
   trait INotification extends StObject {
     
     /** Optional flag for sending an indication instead of a notification. */
-    var shouldIndicate: Boolean = js.native
+    var shouldIndicate: Boolean
     
     /** New value of the characteristic. */
-    var value: ArrayBuffer = js.native
+    var value: ArrayBuffer
   }
   object INotification {
     
@@ -334,7 +329,6 @@ object bluetoothLowEnergy {
     }
   }
   
-  @js.native
   trait IProperties extends StObject {
     
     /**
@@ -342,7 +336,7 @@ object bluetoothLowEnergy {
       * @see [HowToManageAppLifecycle]{@link https://developer.chrome.com/apps/app_lifecycle}
       * @default false
       */
-    var persistent: Boolean = js.native
+    var persistent: Boolean
   }
   object IProperties {
     
@@ -360,17 +354,16 @@ object bluetoothLowEnergy {
     }
   }
   
-  @js.native
   trait IResponse extends StObject {
     
     /** If this is an error response, this should be true. */
-    var isError: Boolean = js.native
+    var isError: Boolean
     
     /** Id of the request this is a response to. */
-    var requestId: integer = js.native
+    var requestId: integer
     
     /** Response value. Write requests and error responses will ignore this parameter. */
-    var value: js.UndefOr[ArrayBuffer] = js.native
+    var value: js.UndefOr[ArrayBuffer] = js.undefined
   }
   object IResponse {
     
@@ -397,17 +390,16 @@ object bluetoothLowEnergy {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
     /** Device that send this request. */
-    var device: RequestDevice = js.native
+    var device: RequestDevice
     
     /** Unique ID for this request. Use this ID when responding to this request. */
-    var requestId: integer = js.native
+    var requestId: integer
     
     /** Value to write (if this is a write request). */
-    var value: js.UndefOr[ArrayBuffer] = js.native
+    var value: js.UndefOr[ArrayBuffer] = js.undefined
   }
   object Request {
     
@@ -434,19 +426,18 @@ object bluetoothLowEnergy {
     }
   }
   
-  @js.native
   trait RequestDevice extends StObject {
     
     /** The address of the device, in the format 'XX:XX:XX:XX:XX:XX'. */
-    var address: String = js.native
+    var address: String
     
     /** The class of the device, a bit - field defined by:
       * @see [Specs]{@link http://www.bluetooth.org/en-us/specification/assigned-numbers/baseband}
       **/
-    var deviceClass: js.UndefOr[integer] = js.native
+    var deviceClass: js.UndefOr[integer] = js.undefined
     
     /** The human-readable name of the device. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object RequestDevice {
     
@@ -476,27 +467,26 @@ object bluetoothLowEnergy {
     }
   }
   
-  @js.native
   trait Service extends StObject {
     
     /**
       * The device address of the remote peripheral that the GATT service belongs to.
       * Present, if this instance represents a remote service.
       */
-    var deviceAddress: js.UndefOr[String] = js.native
+    var deviceAddress: js.UndefOr[String] = js.undefined
     
     /**
       * Returns the identifier assigned to this service.
       * Use the instance ID to distinguish between services from a peripheral with the same UUID and to make function calls that take in a service identifier.
       * Present, if this instance represents a remote service.
       **/
-    var instanceId: js.UndefOr[String] = js.native
+    var instanceId: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the type of this service is primary or secondary. */
-    var isPrimary: Boolean = js.native
+    var isPrimary: Boolean
     
     /** The UUID of the service, e.g. 0000180d-0000-1000-8000-00805f9b34fb. */
-    var uuid: String = js.native
+    var uuid: String
   }
   object Service {
     

@@ -4,23 +4,24 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelGroupMod {
   
-  @JSImport("@react-md/tabs/types/PanelGroup", "PanelGroup")
+  @JSImport("@react-md/tabs/types/PanelGroup", JSImport.Namespace)
   @js.native
-  def PanelGroup(hasPersistentDisableTransitionChildren: PanelGroupProps): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def PanelGroup(hasPersistentDisableTransitionChildren: PanelGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("PanelGroup")(hasPersistentDisableTransitionChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait PanelGroupProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var disableTransition: Boolean = js.native
+    var disableTransition: Boolean
     
-    var persistent: Boolean = js.native
+    var persistent: Boolean
   }
   object PanelGroupProps {
     

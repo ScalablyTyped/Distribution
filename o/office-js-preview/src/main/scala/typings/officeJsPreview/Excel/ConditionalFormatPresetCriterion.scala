@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,83 +17,137 @@ sealed trait ConditionalFormatPresetCriterion extends StObject
 object ConditionalFormatPresetCriterion extends StObject {
   
   @js.native
-  sealed trait aboveAverage extends ConditionalFormatPresetCriterion
+  sealed trait aboveAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait belowAverage extends ConditionalFormatPresetCriterion
+  sealed trait belowAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait blanks extends ConditionalFormatPresetCriterion
+  sealed trait blanks
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait duplicateValues extends ConditionalFormatPresetCriterion
+  sealed trait duplicateValues
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait equalOrAboveAverage extends ConditionalFormatPresetCriterion
+  sealed trait equalOrAboveAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait equalOrBelowAverage extends ConditionalFormatPresetCriterion
+  sealed trait equalOrBelowAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait errors extends ConditionalFormatPresetCriterion
+  sealed trait errors
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait invalid extends ConditionalFormatPresetCriterion
+  sealed trait invalid
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait lastMonth extends ConditionalFormatPresetCriterion
+  sealed trait lastMonth
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait lastSevenDays extends ConditionalFormatPresetCriterion
+  sealed trait lastSevenDays
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait lastWeek extends ConditionalFormatPresetCriterion
+  sealed trait lastWeek
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait nextMonth extends ConditionalFormatPresetCriterion
+  sealed trait nextMonth
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait nextWeek extends ConditionalFormatPresetCriterion
+  sealed trait nextWeek
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait nonBlanks extends ConditionalFormatPresetCriterion
+  sealed trait nonBlanks
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait nonErrors extends ConditionalFormatPresetCriterion
+  sealed trait nonErrors
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait oneStdDevAboveAverage extends ConditionalFormatPresetCriterion
+  sealed trait oneStdDevAboveAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait oneStdDevBelowAverage extends ConditionalFormatPresetCriterion
+  sealed trait oneStdDevBelowAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait thisMonth extends ConditionalFormatPresetCriterion
+  sealed trait thisMonth
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait thisWeek extends ConditionalFormatPresetCriterion
+  sealed trait thisWeek
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait threeStdDevAboveAverage extends ConditionalFormatPresetCriterion
+  sealed trait threeStdDevAboveAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait threeStdDevBelowAverage extends ConditionalFormatPresetCriterion
+  sealed trait threeStdDevBelowAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait today extends ConditionalFormatPresetCriterion
+  sealed trait today
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait tomorrow extends ConditionalFormatPresetCriterion
+  sealed trait tomorrow
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait twoStdDevAboveAverage extends ConditionalFormatPresetCriterion
+  sealed trait twoStdDevAboveAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait twoStdDevBelowAverage extends ConditionalFormatPresetCriterion
+  sealed trait twoStdDevBelowAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait uniqueValues extends ConditionalFormatPresetCriterion
+  sealed trait uniqueValues
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
   @js.native
-  sealed trait yesterday extends ConditionalFormatPresetCriterion
+  sealed trait yesterday
+    extends StObject
+       with ConditionalFormatPresetCriterion
 }

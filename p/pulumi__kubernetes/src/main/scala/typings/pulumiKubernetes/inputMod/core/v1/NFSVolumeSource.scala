@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not support ownership management or SELinux relabeling.
   */
-@js.native
 trait NFSVolumeSource extends StObject {
   
   /**
     * Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
     */
-  var path: Input[String] = js.native
+  var path: Input[String]
   
   /**
     * ReadOnly here will force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
     */
-  var server: Input[String] = js.native
+  var server: Input[String]
 }
 object NFSVolumeSource {
   

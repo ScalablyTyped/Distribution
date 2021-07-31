@@ -2,26 +2,24 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemFieldReference extends StObject {
   
   /**
     * The name of the field.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The reference name of the field.
     */
-  var referenceName: String = js.native
+  var referenceName: String
   
   /**
     * The REST URL of the resource.
     */
-  var url: String = js.native
+  var url: String
 }
 object WorkItemFieldReference {
   

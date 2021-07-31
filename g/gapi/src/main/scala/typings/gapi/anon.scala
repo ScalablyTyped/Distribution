@@ -2,35 +2,33 @@ package typings.gapi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ApiKey extends StObject {
     
     /**
       * The API Key to use.
       */
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
     /**
       * The app's client ID, found and created in the Google Developers Console.
       */
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
     /**
       * An array of discovery doc URLs or discovery doc JSON objects.
       */
-    var discoveryDocs: js.UndefOr[js.Array[String]] = js.native
+    var discoveryDocs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var hosted_domain: js.UndefOr[String] = js.native
+    var hosted_domain: js.UndefOr[String] = js.undefined
     
     /**
       * The scopes to request, as a space-delimited string.
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
   }
   object ApiKey {
     
@@ -78,43 +76,42 @@ object anon {
     }
   }
   
-  @js.native
   trait Apppackagename extends StObject {
     
     /**
       * If you have an Android app, you can drive automatic Android downloads from your web sign-in flow.
       */
-    var apppackagename: js.UndefOr[String] = js.native
+    var apppackagename: js.UndefOr[String] = js.undefined
     
     /**
       * A function in the global namespace, which is called when the sign-in button is rendered and also called after a sign-in flow completes.
       */
-    var callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Your OAuth 2.0 client ID that you obtained from the Google Developers Console.
       */
-    var clientid: js.UndefOr[String] = js.native
+    var clientid: js.UndefOr[String] = js.undefined
     
     /**
       * Directs the sign-in button to store user and session information in a session cookie and HTML5 session storage on the user's client for the purpose of minimizing HTTP traffic and distinguishing between multiple Google accounts a user might be signed into.
       */
-    var cookiepolicy: js.UndefOr[String] = js.native
+    var cookiepolicy: js.UndefOr[String] = js.undefined
     
     /**
       * If true, all previously granted scopes remain granted in each incremental request, for incremental authorization. The default value true is correct for most use cases; use false only if employing delegated auth, where you pass the bearer token to a less-trusted component with lower programmatic authority.
       */
-    var includegrantedscopes: js.UndefOr[Boolean] = js.native
+    var includegrantedscopes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If your app will write moments, list the full URI of the types of moments that you intend to write.
       */
-    var requestvisibleactions: js.UndefOr[js.Any] = js.native
+    var requestvisibleactions: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The OAuth 2.0 scopes for the APIs that you would like to use as a space-delimited list.
       */
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
   }
   object Apppackagename {
     
@@ -171,10 +168,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Authuser extends StObject {
     
-    var authuser: String = js.native
+    var authuser: String
   }
   object Authuser {
     
@@ -192,21 +188,20 @@ object anon {
     }
   }
   
-  @js.native
   trait Body extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var headers: js.Array[_] = js.native
+    var headers: js.Array[js.Any]
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
   }
   object Body {
     
     @scala.inline
-    def apply(body: String, headers: js.Array[_], status: Double, statusText: String): Body = {
+    def apply(body: String, headers: js.Array[js.Any], status: Double, statusText: String): Body = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
@@ -218,7 +213,7 @@ object anon {
       def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHeaders(value: js.Array[_]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
@@ -231,7 +226,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Callback extends StObject {
     
     def callback(
@@ -243,12 +237,12 @@ object anon {
       * is the raw batch ID-response map as a string. It contains all responses to all requests in the batch.
       */
     rawBatchResponse: js.Any
-    ): js.Any = js.native
+    ): js.Any
     
     /**
       * Identifies the response for this request in the map of batch responses. If one is not provided, the system generates a random ID.
       */
-    var id: String = js.native
+    var id: String
   }
   object Callback {
     
@@ -269,33 +263,32 @@ object anon {
     }
   }
   
-  @js.native
   trait Clientid extends StObject {
     
     /**
       * The user to sign in as. -1 to toggle a multi-account chooser, 0 to default to the user's current account, and 1 to automatically sign in if the user is signed into Google Plus.
       */
-    var authuser: js.UndefOr[Double] = js.native
+    var authuser: js.UndefOr[Double] = js.undefined
     
     /**
       * The application's client ID.
       */
-    var client_id: js.UndefOr[String] = js.native
+    var client_id: js.UndefOr[String] = js.undefined
     
     /**
       * If true, then login uses "immediate mode", which means that the token is refreshed behind the scenes, and no UI is shown to the user.
       */
-    var immediate: js.UndefOr[Boolean] = js.native
+    var immediate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The OAuth 2.0 response type property. Default: token
       */
-    var response_type: js.UndefOr[String] = js.native
+    var response_type: js.UndefOr[String] = js.undefined
     
     /**
       * The auth scope or scopes to authorize. Auth scopes for individual APIs can be found in their documentation.
       */
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
   }
   object Clientid {
     

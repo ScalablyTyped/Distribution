@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "RendererFactory2")
@@ -32,5 +31,5 @@ abstract class RendererFactory2 () extends StObject {
     * Use with animations test-only mode. Notifies the test when rendering has completed.
     * @returns The asynchronous result of the developer-defined function.
     */
-  var whenRenderingDone: js.UndefOr[js.Function0[js.Promise[_]]] = js.native
+  var whenRenderingDone: js.UndefOr[js.Function0[js.Promise[js.Any]]] = js.native
 }

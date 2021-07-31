@@ -9,14 +9,15 @@ import typings.pulumiPulumi.workspaceMod.Workspace
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localWorkspaceMod {
   
   @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace")
   @js.native
-  class LocalWorkspace protected () extends Workspace {
+  class LocalWorkspace protected ()
+    extends StObject
+       with Workspace {
     
     var ready: js.Any = js.native
     
@@ -35,9 +36,8 @@ object localWorkspaceMod {
       *
       * @param opts Options used to configure the Workspace
       */
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.create")
-    @js.native
-    def create(opts: LocalWorkspaceOptions): js.Promise[LocalWorkspace] = js.native
+    @scala.inline
+    def create(opts: LocalWorkspaceOptions): js.Promise[LocalWorkspace] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalWorkspace]]
     
     /**
       * Creates or selects an existing Stack with a LocalWorkspace utilizing the specified inline Pulumi CLI program.
@@ -48,12 +48,10 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with and inline `PulumiFn` program that runs in process.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.createOrSelectStack")
-    @js.native
-    def createOrSelectStack(args: InlineProgramArgs): js.Promise[Stack] = js.native
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.createOrSelectStack")
-    @js.native
-    def createOrSelectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = js.native
+    @scala.inline
+    def createOrSelectStack(args: InlineProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    @scala.inline
+    def createOrSelectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
     /**
       * Creates or selects an existing Stack with a LocalWorkspace utilizing the specified inline (in process) Pulumi CLI program.
       * This program is fully debuggable and runs in process. If no Project option is specified, default project settings
@@ -63,12 +61,10 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with a pre-configured Pulumi CLI program that already exists on disk.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.createOrSelectStack")
-    @js.native
-    def createOrSelectStack(args: LocalProgramArgs): js.Promise[Stack] = js.native
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.createOrSelectStack")
-    @js.native
-    def createOrSelectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = js.native
+    @scala.inline
+    def createOrSelectStack(args: LocalProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    @scala.inline
+    def createOrSelectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
     
     /**
       * Creates a Stack with a LocalWorkspace utilizing the specified inline (in process) Pulumi program.
@@ -79,12 +75,10 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with and inline `PulumiFn` program that runs in process.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.createStack")
-    @js.native
-    def createStack(args: InlineProgramArgs): js.Promise[Stack] = js.native
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.createStack")
-    @js.native
-    def createStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = js.native
+    @scala.inline
+    def createStack(args: InlineProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    @scala.inline
+    def createStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
     /**
       * Creates a Stack with a LocalWorkspace utilizing the local Pulumi CLI program from the specified workDir.
       * This is a way to create drivers on top of pre-existing Pulumi programs. This Workspace will pick up
@@ -93,12 +87,10 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with a pre-configured Pulumi CLI program that already exists on disk.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.createStack")
-    @js.native
-    def createStack(args: LocalProgramArgs): js.Promise[Stack] = js.native
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.createStack")
-    @js.native
-    def createStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = js.native
+    @scala.inline
+    def createStack(args: LocalProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    @scala.inline
+    def createStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
     
     @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.inlineSourceStackHelper")
     @js.native
@@ -121,12 +113,10 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with and inline `PulumiFn` program that runs in process.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.selectStack")
-    @js.native
-    def selectStack(args: InlineProgramArgs): js.Promise[Stack] = js.native
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.selectStack")
-    @js.native
-    def selectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = js.native
+    @scala.inline
+    def selectStack(args: InlineProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    @scala.inline
+    def selectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
     /**
       * Selects a Stack with a LocalWorkspace utilizing the local Pulumi CLI program from the specified workDir.
       * This is a way to create drivers on top of pre-existing Pulumi programs. This Workspace will pick up
@@ -135,44 +125,61 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with a pre-configured Pulumi CLI program that already exists on disk.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.selectStack")
-    @js.native
-    def selectStack(args: LocalProgramArgs): js.Promise[Stack] = js.native
-    @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.selectStack")
-    @js.native
-    def selectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = js.native
+    @scala.inline
+    def selectStack(args: LocalProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    @scala.inline
+    def selectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
   }
   
-  @js.native
   trait InlineProgramArgs extends StObject {
     
     /**
       * The inline (in process) Pulumi program to use with Update and Preview operations.
       */
-    def program(): js.Promise[(Record[String, _]) | Unit] = js.native
+    def program(): js.Promise[(Record[String, js.Any]) | Unit]
     /**
       * The inline (in process) Pulumi program to use with Update and Preview operations.
       */
     @JSName("program")
-    var program_Original: PulumiFn = js.native
+    var program_Original: PulumiFn
     
     /**
       * The name of the associated project
       */
-    var projectName: String = js.native
+    var projectName: String
     
     /**
       * The name of the associated Stack
       */
-    var stackName: String = js.native
+    var stackName: String
+  }
+  object InlineProgramArgs {
+    
+    @scala.inline
+    def apply(program: () => js.Promise[(Record[String, js.Any]) | Unit], projectName: String, stackName: String): InlineProgramArgs = {
+      val __obj = js.Dynamic.literal(program = js.Any.fromFunction0(program), projectName = projectName.asInstanceOf[js.Any], stackName = stackName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InlineProgramArgs]
+    }
+    
+    @scala.inline
+    implicit class InlineProgramArgsMutableBuilder[Self <: InlineProgramArgs] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setProgram(value: () => js.Promise[(Record[String, js.Any]) | Unit]): Self = StObject.set(x, "program", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStackName(value: String): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait LocalProgramArgs extends StObject {
     
-    var stackName: String = js.native
+    var stackName: String
     
-    var workDir: String = js.native
+    var workDir: String
   }
   object LocalProgramArgs {
     
@@ -193,45 +200,44 @@ object localWorkspaceMod {
     }
   }
   
-  @js.native
   trait LocalWorkspaceOptions extends StObject {
     
     /**
       * Environment values scoped to the current workspace. These will be supplied to every Pulumi command.
       */
-    var envVars: js.UndefOr[StringDictionary[String]] = js.native
+    var envVars: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       *  The inline program `PulumiFn` to be used for Preview/Update operations if any.
       *  If none is specified, the stack will refer to ProjectSettings for this information.
       */
-    var program: js.UndefOr[PulumiFn] = js.native
+    var program: js.UndefOr[PulumiFn] = js.undefined
     
     /**
       * The settings object for the current project.
       */
-    var projectSettings: js.UndefOr[ProjectSettings] = js.native
+    var projectSettings: js.UndefOr[ProjectSettings] = js.undefined
     
     /**
       * The directory to override for CLI metadata
       */
-    var pulumiHome: js.UndefOr[String] = js.native
+    var pulumiHome: js.UndefOr[String] = js.undefined
     
     /**
       * The secrets provider to use for encryption and decryption of stack secrets.
       * See: https://www.pulumi.com/docs/intro/concepts/config/#available-encryption-providers
       */
-    var secretsProvider: js.UndefOr[String] = js.native
+    var secretsProvider: js.UndefOr[String] = js.undefined
     
     /**
       * A map of Stack names and corresponding settings objects.
       */
-    var stackSettings: js.UndefOr[StringDictionary[StackSettings]] = js.native
+    var stackSettings: js.UndefOr[StringDictionary[StackSettings]] = js.undefined
     
     /**
       * The directory to run Pulumi commands and read settings (Pulumi.yaml and Pulumi.<stack>.yaml)l.
       */
-    var workDir: js.UndefOr[String] = js.native
+    var workDir: js.UndefOr[String] = js.undefined
   }
   object LocalWorkspaceOptions {
     

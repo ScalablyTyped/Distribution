@@ -12,7 +12,7 @@ JavaScript implementation of EXTERNAL SASL mechanism.
 | Keywords           | sasl, auth, authn, authentication, security |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 69419 |
+| # downloads        | 86633 |
 | # stars            | 0 |
 
 ## Links

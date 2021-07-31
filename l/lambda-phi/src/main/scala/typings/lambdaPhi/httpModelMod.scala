@@ -2,14 +2,15 @@ package typings.lambdaPhi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpModelMod {
   
   @JSImport("lambda-phi/lib/http-model", JSImport.Default)
   @js.native
-  class default () extends HttpModel
+  class default ()
+    extends StObject
+       with HttpModel
   /* static members */
   object default {
     
@@ -46,6 +47,5 @@ object httpModelMod {
     val methods: js.Array[String] = js.native
   }
   
-  @js.native
   trait HttpModel extends StObject
 }

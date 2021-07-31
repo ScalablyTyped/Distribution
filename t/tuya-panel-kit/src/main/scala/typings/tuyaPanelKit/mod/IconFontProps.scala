@@ -10,65 +10,63 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.round
 import typings.tuyaPanelKit.tuyaPanelKitStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconFontProps extends StObject {
   
-  var ascent: js.UndefOr[Double] = js.native
+  var ascent: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[js.Any] = js.undefined
   
-  var d: js.UndefOr[String] = js.native
+  var d: js.UndefOr[String] = js.undefined
   
-  var descent: js.UndefOr[Double] = js.native
+  var descent: js.UndefOr[Double] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var hFlip: js.UndefOr[Boolean] = js.native
+  var hFlip: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[String | Double] = js.native
+  var opacity: js.UndefOr[String | Double] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
-  var scaleX: js.UndefOr[Double] = js.native
+  var scaleX: js.UndefOr[Double] = js.undefined
   
-  var scaleY: js.UndefOr[Double] = js.native
+  var scaleY: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var spaceOffset: js.UndefOr[Double] = js.native
+  var spaceOffset: js.UndefOr[Double] = js.undefined
   
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
-  var strokeCap: js.UndefOr[round | butt | square] = js.native
+  var strokeCap: js.UndefOr[round | butt | square] = js.undefined
   
-  var strokeDash: js.UndefOr[js.Array[Double]] = js.native
+  var strokeDash: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var strokeJoin: js.UndefOr[round | miter | bevel] = js.native
+  var strokeJoin: js.UndefOr[round | miter | bevel] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var unitsPerEm: js.UndefOr[Double] = js.native
+  var unitsPerEm: js.UndefOr[Double] = js.undefined
   
-  var useART: js.UndefOr[`true`] = js.native
+  var useART: js.UndefOr[`true`] = js.undefined
   
-  var vFlip: js.UndefOr[Boolean] = js.native
+  var vFlip: js.UndefOr[Boolean] = js.undefined
   
-  var viewBox: js.UndefOr[String] = js.native
+  var viewBox: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object IconFontProps {
   

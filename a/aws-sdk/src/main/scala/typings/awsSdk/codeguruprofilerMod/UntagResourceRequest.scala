@@ -2,21 +2,19 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the resource that contains the tags to remove. 
     */
-  var resourceArn: ProfilingGroupArn = js.native
+  var resourceArn: ProfilingGroupArn
   
   /**
     *  A list of tag keys. Existing tags of resources with keys in this list are removed from the specified resource. 
     */
-  var tagKeys: TagKeys = js.native
+  var tagKeys: TagKeys
 }
 object UntagResourceRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteHsmClientCertificateMessage extends StObject {
   
   /**
     * The identifier of the HSM client certificate to be deleted.
     */
-  var HsmClientCertificateIdentifier: String = js.native
+  var HsmClientCertificateIdentifier: String
 }
 object DeleteHsmClientCertificateMessage {
   

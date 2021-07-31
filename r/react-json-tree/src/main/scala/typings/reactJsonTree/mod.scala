@@ -5,7 +5,6 @@ import typings.react.mod.Props
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,30 +18,31 @@ object mod {
   trait JSONTreeComponent
     extends Component[JSONTreeProps, js.Object, js.Any]
   
-  @js.native
-  trait JSONTreeProps extends Props[JSONTreeComponent] {
+  trait JSONTreeProps
+    extends StObject
+       with Props[JSONTreeComponent] {
     
-    var collectionLimit: js.UndefOr[Double] = js.native
+    var collectionLimit: js.UndefOr[Double] = js.undefined
     
-    var data: js.Array[_] | js.Object = js.native
+    var data: js.Array[js.Any] | js.Object
     
     var getItemString: js.UndefOr[
         js.Function4[
           /* type */ String, 
-          /* data */ js.Array[_] | js.Object, 
+          /* data */ js.Array[js.Any] | js.Object, 
           /* itemType */ String, 
           /* itemString */ String, 
           Element
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var hideRoot: js.UndefOr[Boolean] = js.native
+    var hideRoot: js.UndefOr[Boolean] = js.undefined
     
-    var invertTheme: js.UndefOr[Boolean] = js.native
+    var invertTheme: js.UndefOr[Boolean] = js.undefined
     
-    var isCustomNode: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isCustomNode: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var keyPath: js.UndefOr[js.Array[String | Double]] = js.native
+    var keyPath: js.UndefOr[js.Array[String | Double]] = js.undefined
     
     var labelRenderer: js.UndefOr[
         js.Function4[
@@ -52,22 +52,22 @@ object mod {
           /* expandable */ js.UndefOr[Boolean], 
           Element
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var postprocessValue: js.UndefOr[js.Function1[/* raw */ String, Element]] = js.native
+    var postprocessValue: js.UndefOr[js.Function1[/* raw */ String, Element]] = js.undefined
     
     var shouldExpandNode: js.UndefOr[
         js.Function3[
           /* keyPath */ js.Array[String | Double], 
-          /* data */ js.Array[_] | js.Object, 
+          /* data */ js.Array[js.Any] | js.Object, 
           /* level */ Double, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var sortObjectKeys: js.UndefOr[js.Function | Boolean] = js.native
+    var sortObjectKeys: js.UndefOr[js.Function | Boolean] = js.undefined
     
-    var theme: js.UndefOr[js.Object | String] = js.native
+    var theme: js.UndefOr[js.Object | String] = js.undefined
     
     var valueRenderer: js.UndefOr[
         js.Function3[
@@ -76,12 +76,12 @@ object mod {
           /* repeated */ String | Double, 
           Element
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object JSONTreeProps {
     
     @scala.inline
-    def apply(data: js.Array[_] | js.Object): JSONTreeProps = {
+    def apply(data: js.Array[js.Any] | js.Object): JSONTreeProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONTreeProps]
     }
@@ -96,14 +96,14 @@ object mod {
       def setCollectionLimitUndefined: Self = StObject.set(x, "collectionLimit", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_] | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
       @scala.inline
       def setGetItemString(
-        value: (/* type */ String, /* data */ js.Array[_] | js.Object, /* itemType */ String, /* itemString */ String) => Element
+        value: (/* type */ String, /* data */ js.Array[js.Any] | js.Object, /* itemType */ String, /* itemString */ String) => Element
       ): Self = StObject.set(x, "getItemString", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -152,7 +152,7 @@ object mod {
       
       @scala.inline
       def setShouldExpandNode(
-        value: (/* keyPath */ js.Array[String | Double], /* data */ js.Array[_] | js.Object, /* level */ Double) => Boolean
+        value: (/* keyPath */ js.Array[String | Double], /* data */ js.Array[js.Any] | js.Object, /* level */ Double) => Boolean
       ): Self = StObject.set(x, "shouldExpandNode", js.Any.fromFunction3(value))
       
       @scala.inline

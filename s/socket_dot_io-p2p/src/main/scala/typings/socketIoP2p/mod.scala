@@ -6,7 +6,6 @@ import typings.std.RTCPeerConnection
 import typings.std.RTCSessionDescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,19 +18,68 @@ object mod {
     */
   @JSImport("socket.io-p2p", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SocketioP2PStatic {
+  class ^ protected ()
+    extends StObject
+       with SocketioP2PStatic {
     def this(socket: js.Any) = this()
     def this(socket: js.Any, opts: P2POptions) = this()
-    def this(socket: js.Any, opts: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]) = this()
+    def this(socket: js.Any, opts: Unit, cb: js.Function0[Unit]) = this()
     def this(socket: js.Any, opts: P2POptions, cb: js.Function0[Unit]) = this()
+    
+    /* CompleteClass */
+    override def binarySlice(arr: js.Array[js.Any], interval: Double, cb: js.Function0[Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def cb(): Unit = js.native
+    
+    /* CompleteClass */
+    var decoder: js.Any = js.native
+    
+    /* CompleteClass */
+    var defaultOps: DefaultOps = js.native
+    
+    /* CompleteClass */
+    override def disconnect(): Unit = js.native
+    
+    /* CompleteClass */
+    override def emit(eventName: js.Any, data: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var numConnectedClients: Double = js.native
+    
+    /* CompleteClass */
+    override def on(event: String, callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    var opts: P2POptions = js.native
+    
+    /* CompleteClass */
+    var peerOpts: PeerOpts = js.native
+    
+    /* CompleteClass */
+    override def setupPeerEvents(peer: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var socket: js.Any = js.native
+    
+    /**
+      * Upgrade the connection to p2p
+      */
+    /* CompleteClass */
+    override def upgrade(): Unit = js.native
+    
+    /* CompleteClass */
+    var usePeerConnection: Boolean = js.native
+    
+    /* CompleteClass */
+    var useSockets: Boolean = js.native
   }
   
-  @js.native
   trait DefaultOps extends StObject {
     
-    var autoUpgrade: Boolean = js.native
+    var autoUpgrade: Boolean
     
-    var numClients: Double = js.native
+    var numClients: Double
   }
   object DefaultOps {
     
@@ -52,26 +100,25 @@ object mod {
     }
   }
   
-  @js.native
   trait P2POptions extends StObject {
     
     /**
       * Upgrade to p2p connection (from s.io one) when peers are ready
       * @default true
       */
-    var autoUpgrade: js.UndefOr[Boolean] = js.native
+    var autoUpgrade: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Max number of peers each client can connect to
       * @default 5
       */
-    var numClients: js.UndefOr[Double] = js.native
+    var numClients: js.UndefOr[Double] = js.undefined
     
     /**
       * Object of options passed to underlying peers
       * @default {}
       */
-    var peerOpts: js.UndefOr[PeerOpts] = js.native
+    var peerOpts: js.UndefOr[PeerOpts] = js.undefined
   }
   object P2POptions {
     
@@ -104,85 +151,84 @@ object mod {
     }
   }
   
-  @js.native
   trait PeerOpts extends StObject {
     
     /**
       * Custom answer constraints (used by createAnswer method)
       */
-    var answerConstraints: js.UndefOr[js.Object] = js.native
+    var answerConstraints: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Custom WebRTC channel configuration (used by createDataChannel)
       * @default {}
       */
-    var channelConfig: js.UndefOr[js.Object] = js.native
+    var channelConfig: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Custom WebRTC data channel name
       * @default <randomString>
       */
-    var channelName: js.UndefOr[String] = js.native
+    var channelName: js.UndefOr[String] = js.undefined
     
     /**
       * Custom WebRTC configuration (used by RTCPeerConnection constructor)
       * @default {iceServers:[{urls:'stun:stun.l.google.com:19302'},{urls:'stun:global.stun.twilio.com:3478?transport=udp'}]}
       */
-    var config: js.UndefOr[js.Object] = js.native
+    var config: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Custom WebRTC video/voice constrainst (used by RTCPeerConnection constructor)
       * @default {}
       */
-    var constraints: js.UndefOr[js.Object] = js.native
+    var constraints: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Set to true if this is the initiating peer
       * @default false
       */
-    var initiator: js.UndefOr[Boolean] = js.native
+    var initiator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true to create the stream in Object Mode. In this mode, incoming string data is not automatically converted to Buffer objects
       * @default false
       */
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom offer contstraints (used by createOffer methode)
       * @default {}
       */
-    var offerConstraints: js.UndefOr[js.Object] = js.native
+    var offerConstraints: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Function to transform generated SDP signaling data (for advanced users)
       * @default (sdp)=>sdp
       */
-    var sdpTransfrom: js.UndefOr[js.Function1[/* sdp */ js.Any, _]] = js.native
+    var sdpTransfrom: js.UndefOr[js.Function1[/* sdp */ js.Any, js.Any]] = js.undefined
     
     /**
       * If video/voice is desired, pass stream from getUserMedia
       * @default false
       */
-    var stream: js.UndefOr[Boolean] = js.native
+    var stream: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An array of MediaStreams returned from getUserMedia
       * @default []
       */
-    var streams: js.UndefOr[js.Array[MediaStream]] = js.native
+    var streams: js.UndefOr[js.Array[MediaStream]] = js.undefined
     
     /**
       * Set to false to disable trickle ICE and get single 'signal' event (slower)
       * @default true
       */
-    var trickle: js.UndefOr[Boolean] = js.native
+    var trickle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom WebRTC implementation, mainly useful in node to specify the wrtc package
       * @default {}
       */
-    var wrtc: js.UndefOr[RTCPeerConnection | RTCSessionDescription | RTCIceCandidate] = js.native
+    var wrtc: js.UndefOr[RTCPeerConnection | RTCSessionDescription | RTCIceCandidate] = js.undefined
   }
   object PeerOpts {
     
@@ -244,7 +290,7 @@ object mod {
       def setOfferConstraintsUndefined: Self = StObject.set(x, "offerConstraints", js.undefined)
       
       @scala.inline
-      def setSdpTransfrom(value: /* sdp */ js.Any => _): Self = StObject.set(x, "sdpTransfrom", js.Any.fromFunction1(value))
+      def setSdpTransfrom(value: /* sdp */ js.Any => js.Any): Self = StObject.set(x, "sdpTransfrom", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSdpTransfromUndefined: Self = StObject.set(x, "sdpTransfrom", js.undefined)
@@ -284,47 +330,46 @@ object mod {
     * @param opts Object of viable options
     * @param cb Optional callback
     */
-  @js.native
   trait SocketioP2PStatic extends StObject {
     
-    def binarySlice(arr: js.Array[_], interval: Double, cb: js.Function0[Unit]): Unit = js.native
+    def binarySlice(arr: js.Array[js.Any], interval: Double, cb: js.Function0[Unit]): Unit
     
-    def cb(): Unit = js.native
+    def cb(): Unit
     
-    var decoder: js.Any = js.native
+    var decoder: js.Any
     
-    var defaultOps: DefaultOps = js.native
+    var defaultOps: DefaultOps
     
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
-    def emit(eventName: js.Any, data: js.Any): Unit = js.native
+    def emit(eventName: js.Any, data: js.Any): Unit
     
-    var numConnectedClients: Double = js.native
+    var numConnectedClients: Double
     
-    def on(event: String, callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def on(event: String, callback: js.Function1[/* data */ js.Any, Unit]): Unit
     
-    var opts: P2POptions = js.native
+    var opts: P2POptions
     
-    var peerOpts: PeerOpts = js.native
+    var peerOpts: PeerOpts
     
-    def setupPeerEvents(peer: js.Any): Unit = js.native
+    def setupPeerEvents(peer: js.Any): Unit
     
-    var socket: js.Any = js.native
+    var socket: js.Any
     
     /**
       * Upgrade the connection to p2p
       */
-    def upgrade(): Unit = js.native
+    def upgrade(): Unit
     
-    var usePeerConnection: Boolean = js.native
+    var usePeerConnection: Boolean
     
-    var useSockets: Boolean = js.native
+    var useSockets: Boolean
   }
   object SocketioP2PStatic {
     
     @scala.inline
     def apply(
-      binarySlice: (js.Array[_], Double, js.Function0[Unit]) => Unit,
+      binarySlice: (js.Array[js.Any], Double, js.Function0[Unit]) => Unit,
       cb: () => Unit,
       decoder: js.Any,
       defaultOps: DefaultOps,
@@ -348,7 +393,7 @@ object mod {
     implicit class SocketioP2PStaticMutableBuilder[Self <: SocketioP2PStatic] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBinarySlice(value: (js.Array[_], Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "binarySlice", js.Any.fromFunction3(value))
+      def setBinarySlice(value: (js.Array[js.Any], Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "binarySlice", js.Any.fromFunction3(value))
       
       @scala.inline
       def setCb(value: () => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction0(value))

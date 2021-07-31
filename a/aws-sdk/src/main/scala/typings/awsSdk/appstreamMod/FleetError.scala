@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FleetError extends StObject {
   
   /**
     * The error code.
     */
-  var ErrorCode: js.UndefOr[FleetErrorCode] = js.native
+  var ErrorCode: js.UndefOr[FleetErrorCode] = js.undefined
   
   /**
     * The error message.
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
 }
 object FleetError {
   

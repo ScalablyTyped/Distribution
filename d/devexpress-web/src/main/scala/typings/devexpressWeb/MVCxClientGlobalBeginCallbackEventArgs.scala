@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGlobalEvents.BeginCallback event.
   */
-@js.native
-trait MVCxClientGlobalBeginCallbackEventArgs extends ASPxClientGlobalBeginCallbackEventArgs {
+trait MVCxClientGlobalBeginCallbackEventArgs
+  extends StObject
+     with ASPxClientGlobalBeginCallbackEventArgs {
   
   /**
     * Gets an object containing specific information (if any, as name/value pairs) that should be passed as a request parameter from the client to the server side for further processing.
     */
-  var customArgs: js.Any = js.native
+  var customArgs: js.Any
 }
 object MVCxClientGlobalBeginCallbackEventArgs {
   

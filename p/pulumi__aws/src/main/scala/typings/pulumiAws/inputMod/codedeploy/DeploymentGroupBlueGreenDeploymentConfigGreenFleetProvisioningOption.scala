@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.codedeploy
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption exten
     * * `DISCOVER_EXISTING`: Use instances that already exist or will be created manually.
     * * `COPY_AUTO_SCALING_GROUP`: Use settings from a specified **Auto Scaling** group to define and create instances in a new Auto Scaling group. _Exactly one Auto Scaling group must be specified_ when selecting `COPY_AUTO_SCALING_GROUP`. Use `autoscalingGroups` to specify the Auto Scaling group.
     */
-  var action: js.UndefOr[Input[String]] = js.native
+  var action: js.UndefOr[Input[String]] = js.undefined
 }
 object DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption {
   

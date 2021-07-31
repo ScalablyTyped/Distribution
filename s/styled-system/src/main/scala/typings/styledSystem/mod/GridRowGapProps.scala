@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridRowGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait GridRowGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exten
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap)
     */
-  var gridRowGap: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var gridRowGap: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object GridRowGapProps {
   
@@ -26,7 +24,7 @@ object GridRowGapProps {
   }
   
   @scala.inline
-  implicit class GridRowGapPropsMutableBuilder[Self <: GridRowGapProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (GridRowGapProps[ThemeType, TVal])) extends AnyVal {
+  implicit class GridRowGapPropsMutableBuilder[Self <: GridRowGapProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (GridRowGapProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setGridRowGap(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])

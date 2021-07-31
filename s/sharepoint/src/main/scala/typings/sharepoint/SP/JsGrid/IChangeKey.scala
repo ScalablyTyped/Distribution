@@ -2,19 +2,17 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IChangeKey extends StObject {
   
-  def CompareTo(changeKey: IChangeKey): Double = js.native
+  def CompareTo(changeKey: IChangeKey): Double
   
-  def GetVersionNumber(): Double = js.native
+  def GetVersionNumber(): Double
   
-  def Release(): Unit = js.native
+  def Release(): Unit
   
-  def Reserve(): Unit = js.native
+  def Reserve(): Unit
 }
 object IChangeKey {
   

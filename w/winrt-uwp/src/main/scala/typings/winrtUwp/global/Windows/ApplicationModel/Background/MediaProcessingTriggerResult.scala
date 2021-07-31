@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the result of a call to MediaProcessingTrigger::RequestAsync . */
@@ -12,14 +11,14 @@ object MediaProcessingTriggerResult extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typings.winrtUwp.Windows.ApplicationModel.Background.MediaProcessingTriggerResult with Double
+    typings.winrtUwp.Windows.ApplicationModel.Background.MediaProcessingTriggerResult & Double
   ] = js.native
   
-  /* 0 */ val allowed: typings.winrtUwp.Windows.ApplicationModel.Background.MediaProcessingTriggerResult.allowed with Double = js.native
+  /* 0 */ val allowed: typings.winrtUwp.Windows.ApplicationModel.Background.MediaProcessingTriggerResult.allowed & Double = js.native
   
-  /* 1 */ val currentlyRunning: typings.winrtUwp.Windows.ApplicationModel.Background.MediaProcessingTriggerResult.currentlyRunning with Double = js.native
+  /* 1 */ val currentlyRunning: typings.winrtUwp.Windows.ApplicationModel.Background.MediaProcessingTriggerResult.currentlyRunning & Double = js.native
   
-  /* 2 */ val disabledByPolicy: typings.winrtUwp.Windows.ApplicationModel.Background.MediaProcessingTriggerResult.disabledByPolicy with Double = js.native
+  /* 2 */ val disabledByPolicy: typings.winrtUwp.Windows.ApplicationModel.Background.MediaProcessingTriggerResult.disabledByPolicy & Double = js.native
   
-  /* 3 */ val unknownError: typings.winrtUwp.Windows.ApplicationModel.Background.MediaProcessingTriggerResult.unknownError with Double = js.native
+  /* 3 */ val unknownError: typings.winrtUwp.Windows.ApplicationModel.Background.MediaProcessingTriggerResult.unknownError & Double = js.native
 }

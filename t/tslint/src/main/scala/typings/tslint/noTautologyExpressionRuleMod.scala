@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noTautologyExpressionRuleMod {

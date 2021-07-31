@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTreeGridRowSelectors
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -22,17 +21,17 @@ trait IgTreeGridRowSelectors
     * "biState" Checkboxes are rendered and support two states(checked and unchecked). Checkboxes do not cascade down or up in this mode.
     * "triState" Checkboxes are rendered and support three states(checked, partial and unchecked). Checkboxes cascade up and down in this mode.
     */
-  var checkBoxMode: js.UndefOr[String] = js.native
+  var checkBoxMode: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after a row selector checkbox had changed state.
     */
-  var checkBoxStateChanged: js.UndefOr[CheckBoxStateChangedEvent] = js.native
+  var checkBoxStateChanged: js.UndefOr[CheckBoxStateChangedEvent] = js.undefined
   
   /**
     * Event fired when a row selector checkbox is changing.
     */
-  var checkBoxStateChanging: js.UndefOr[CheckBoxStateChangingEvent] = js.native
+  var checkBoxStateChanging: js.UndefOr[CheckBoxStateChangingEvent] = js.undefined
   
   /**
     * Custom template for "deselect all" overlay with paging
@@ -42,32 +41,32 @@ trait IgTreeGridRowSelectors
     * There is also ${allCheckedRecords} parameter which is not used in the default template, but it represents the checked records from all pages.
     *
     */
-  var deselectAllForPagingTemplate: js.UndefOr[String] = js.native
+  var deselectAllForPagingTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Determines whether the row selectors column should contain checkboxes
     *
     */
-  var enableCheckBoxes: js.UndefOr[Boolean] = js.native
+  var enableCheckBoxes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines whether the row selectors column should contain row numbering
     *
     */
-  var enableRowNumbering: js.UndefOr[Boolean] = js.native
+  var enableRowNumbering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables/disables showing an overlay after clicking on the header checkbox, which allows selecting all records from all pages.
     *
     */
-  var enableSelectAllForPaging: js.UndefOr[Boolean] = js.native
+  var enableSelectAllForPaging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
     */
-  var inherit: js.UndefOr[Boolean] = js.native
+  var inherit: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[IgGridRowSelectorsLocale] = js.native
+  var locale: js.UndefOr[IgGridRowSelectorsLocale] = js.undefined
   
   /**
     * Determines whether the selection feature is required for the row selectors. If set to "false"
@@ -75,18 +74,18 @@ trait IgTreeGridRowSelectors
     * not available.
     *
     */
-  var requireSelection: js.UndefOr[Boolean] = js.native
+  var requireSelection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The seed to be added to the default numbering
     *
     */
-  var rowNumberingSeed: js.UndefOr[Double] = js.native
+  var rowNumberingSeed: js.UndefOr[Double] = js.undefined
   
   /**
     * Event fired after a row selector is clicked.
     */
-  var rowSelectorClicked: js.UndefOr[RowSelectorClickedEvent] = js.native
+  var rowSelectorClicked: js.UndefOr[RowSelectorClickedEvent] = js.undefined
   
   /**
     * defines width of the row selector`s column in pixels or percentage.
@@ -97,7 +96,7 @@ trait IgTreeGridRowSelectors
     * "number" The row selector width can be set as a number
     * "null" will let the feature decide the best width depending on enabled contents
     */
-  var rowSelectorColumnWidth: js.UndefOr[String | Double] = js.native
+  var rowSelectorColumnWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Determines row numbering format.
@@ -107,7 +106,7 @@ trait IgTreeGridRowSelectors
     * "sequential" Defines numbering format to be the index of the visible records.
     * "hierarchical" Defines numbering format to be concatenation of the parent and children indexes.
     */
-  var rowSelectorNumberingMode: js.UndefOr[String] = js.native
+  var rowSelectorNumberingMode: js.UndefOr[String] = js.undefined
   
   /**
     * Custom template for "select all" overlay with paging
@@ -117,13 +116,13 @@ trait IgTreeGridRowSelectors
     * There is also ${allCheckedRecords} parameter which is not used in the default template, but it represents the checked records from all pages.
     *
     */
-  var selectAllForPagingTemplate: js.UndefOr[String] = js.native
+  var selectAllForPagingTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Determines whether checkboxes will be shown only if row selectors are on focus/selected.
     *
     */
-  var showCheckBoxesOnFocus: js.UndefOr[Boolean] = js.native
+  var showCheckBoxesOnFocus: js.UndefOr[Boolean] = js.undefined
 }
 object IgTreeGridRowSelectors {
   

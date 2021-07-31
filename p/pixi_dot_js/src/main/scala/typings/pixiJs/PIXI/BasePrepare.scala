@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -65,7 +64,7 @@ trait BasePrepare extends StObject {
     *          function must return `true` if it was able to add item to the queue.
     * @return {this} Instance of plugin for chaining.
     */
-  def registerFindHook(addHook: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def registerFindHook(addHook: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
   
   /**
     * Adds hooks for uploading items.
@@ -74,7 +73,7 @@ trait BasePrepare extends StObject {
     *          function must return `true` if it was able to handle upload of item.
     * @return {this} Instance of plugin for chaining.
     */
-  def registerUploadHook(uploadHook: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def registerUploadHook(uploadHook: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
   
   /**
     * Reference to the renderer.
@@ -91,20 +90,23 @@ trait BasePrepare extends StObject {
     *        or the callback function, if items have been added using `prepare.add`.
     * @param {Function} [done] - Optional callback when all queued uploads have completed
     */
-  def upload(item: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
-  def upload(item: js.Function1[/* repeated */ js.Any, _], done: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def upload(item: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def upload(
+    item: js.Function1[/* repeated */ js.Any, js.Any],
+    done: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = js.native
   def upload(item: BaseTexture): Unit = js.native
-  def upload(item: BaseTexture, done: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def upload(item: BaseTexture, done: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   def upload(item: Container): Unit = js.native
-  def upload(item: Container, done: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def upload(item: Container, done: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   def upload(item: DisplayObject): Unit = js.native
-  def upload(item: DisplayObject, done: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def upload(item: DisplayObject, done: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   def upload(item: Graphics): Unit = js.native
-  def upload(item: Graphics, done: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def upload(item: Graphics, done: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   def upload(item: Text): Unit = js.native
-  def upload(item: Text, done: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def upload(item: Text, done: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   def upload(item: Texture): Unit = js.native
-  def upload(item: Texture, done: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def upload(item: Texture, done: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /**
     * The only real difference between CanvasPrepare and Prepare is what they pass

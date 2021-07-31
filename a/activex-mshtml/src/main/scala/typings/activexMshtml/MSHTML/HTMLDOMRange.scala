@@ -2,64 +2,62 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLDOMRange extends StObject {
   
-  def Detach(): Unit = js.native
+  def Detach(): Unit
   
   @JSName("MSHTML.HTMLDOMRange_typekey")
-  var MSHTMLDotHTMLDOMRange_typekey: HTMLDOMRange = js.native
+  var MSHTMLDotHTMLDOMRange_typekey: HTMLDOMRange
   
-  def cloneContents(): js.Any = js.native
+  def cloneContents(): js.Any
   
-  def cloneRange(): IHTMLDOMRange = js.native
+  def cloneRange(): IHTMLDOMRange
   
-  def collapse(toStart: Boolean): Unit = js.native
+  def collapse(toStart: Boolean): Unit
   
-  val collapsed: Boolean = js.native
+  val collapsed: Boolean
   
-  val commonAncestorContainer: IHTMLDOMNode = js.native
+  val commonAncestorContainer: IHTMLDOMNode
   
-  def compareBoundaryPoints(how: Double, sourceRange: js.Any): Double = js.native
+  def compareBoundaryPoints(how: Double, sourceRange: js.Any): Double
   
-  def deleteContents(): Unit = js.native
+  def deleteContents(): Unit
   
-  val endContainer: IHTMLDOMNode = js.native
+  val endContainer: IHTMLDOMNode
   
-  val endOffset: Double = js.native
+  val endOffset: Double
   
-  def extractContents(): js.Any = js.native
+  def extractContents(): js.Any
   
-  def getBoundingClientRect(): IHTMLRect = js.native
+  def getBoundingClientRect(): IHTMLRect
   
-  def getClientRects(): IHTMLRectCollection = js.native
+  def getClientRects(): IHTMLRectCollection
   
-  def insertNode(newNode: js.Any): Unit = js.native
+  def insertNode(newNode: js.Any): Unit
   
-  def selectNode(refNode: js.Any): Unit = js.native
+  def selectNode(refNode: js.Any): Unit
   
-  def selectNodeContents(refNode: js.Any): Unit = js.native
+  def selectNodeContents(refNode: js.Any): Unit
   
-  def setEnd(refNode: js.Any, offset: Double): Unit = js.native
+  def setEnd(refNode: js.Any, offset: Double): Unit
   
-  def setEndAfter(refNode: js.Any): Unit = js.native
+  def setEndAfter(refNode: js.Any): Unit
   
-  def setEndBefore(refNode: js.Any): Unit = js.native
+  def setEndBefore(refNode: js.Any): Unit
   
-  def setStart(refNode: js.Any, offset: Double): Unit = js.native
+  def setStart(refNode: js.Any, offset: Double): Unit
   
-  def setStartAfter(refNode: js.Any): Unit = js.native
+  def setStartAfter(refNode: js.Any): Unit
   
-  def setStartBefore(refNode: js.Any): Unit = js.native
+  def setStartBefore(refNode: js.Any): Unit
   
-  val startContainer: IHTMLDOMNode = js.native
+  val startContainer: IHTMLDOMNode
   
-  val startOffset: Double = js.native
+  val startOffset: Double
   
-  def surroundContents(newParent: js.Any): Unit = js.native
+  def surroundContents(newParent: js.Any): Unit
 }
 object HTMLDOMRange {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeeklyAutoScalingSchedule extends StObject {
   
   /**
     * The schedule for Friday.
     */
-  var Friday: js.UndefOr[DailyAutoScalingSchedule] = js.native
+  var Friday: js.UndefOr[DailyAutoScalingSchedule] = js.undefined
   
   /**
     * The schedule for Monday.
     */
-  var Monday: js.UndefOr[DailyAutoScalingSchedule] = js.native
+  var Monday: js.UndefOr[DailyAutoScalingSchedule] = js.undefined
   
   /**
     * The schedule for Saturday.
     */
-  var Saturday: js.UndefOr[DailyAutoScalingSchedule] = js.native
+  var Saturday: js.UndefOr[DailyAutoScalingSchedule] = js.undefined
   
   /**
     * The schedule for Sunday.
     */
-  var Sunday: js.UndefOr[DailyAutoScalingSchedule] = js.native
+  var Sunday: js.UndefOr[DailyAutoScalingSchedule] = js.undefined
   
   /**
     * The schedule for Thursday.
     */
-  var Thursday: js.UndefOr[DailyAutoScalingSchedule] = js.native
+  var Thursday: js.UndefOr[DailyAutoScalingSchedule] = js.undefined
   
   /**
     * The schedule for Tuesday.
     */
-  var Tuesday: js.UndefOr[DailyAutoScalingSchedule] = js.native
+  var Tuesday: js.UndefOr[DailyAutoScalingSchedule] = js.undefined
   
   /**
     * The schedule for Wednesday.
     */
-  var Wednesday: js.UndefOr[DailyAutoScalingSchedule] = js.native
+  var Wednesday: js.UndefOr[DailyAutoScalingSchedule] = js.undefined
 }
 object WeeklyAutoScalingSchedule {
   

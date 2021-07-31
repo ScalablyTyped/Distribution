@@ -3,7 +3,6 @@ package typings.durandal
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,9 +30,9 @@ trait DurandalViewLocatorModule extends StObject {
     * @returns {Promise} A promise of the view.
     */
   def locateView(viewUrlOrId: String): DurandalPromise[HTMLElement] = js.native
-  def locateView(viewUrlOrId: String, area: js.UndefOr[scala.Nothing], elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
   def locateView(viewUrlOrId: String, area: String): DurandalPromise[HTMLElement] = js.native
   def locateView(viewUrlOrId: String, area: String, elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
+  def locateView(viewUrlOrId: String, area: Unit, elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
   /**
     * Locates the specified view.
     * @param {string|DOMElement} view A view. It will be immediately returned.
@@ -42,9 +41,9 @@ trait DurandalViewLocatorModule extends StObject {
     * @returns {Promise} A promise of the view.
     */
   def locateView(view: HTMLElement): DurandalPromise[HTMLElement] = js.native
-  def locateView(view: HTMLElement, area: js.UndefOr[scala.Nothing], elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
   def locateView(view: HTMLElement, area: String): DurandalPromise[HTMLElement] = js.native
   def locateView(view: HTMLElement, area: String, elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
+  def locateView(view: HTMLElement, area: Unit, elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
   
   /**
     * Maps an object instance to a view instance.
@@ -71,11 +70,11 @@ trait DurandalViewLocatorModule extends StObject {
     * @param {string} [areasPath] Partial views are mapped to the "views" folder if not specified. Use this parameter to change their location.
     */
   def useConvention(): Unit = js.native
-  def useConvention(modulesPath: js.UndefOr[scala.Nothing], viewsPath: js.UndefOr[scala.Nothing], areasPath: String): Unit = js.native
-  def useConvention(modulesPath: js.UndefOr[scala.Nothing], viewsPath: String): Unit = js.native
-  def useConvention(modulesPath: js.UndefOr[scala.Nothing], viewsPath: String, areasPath: String): Unit = js.native
   def useConvention(modulesPath: String): Unit = js.native
-  def useConvention(modulesPath: String, viewsPath: js.UndefOr[scala.Nothing], areasPath: String): Unit = js.native
   def useConvention(modulesPath: String, viewsPath: String): Unit = js.native
   def useConvention(modulesPath: String, viewsPath: String, areasPath: String): Unit = js.native
+  def useConvention(modulesPath: String, viewsPath: Unit, areasPath: String): Unit = js.native
+  def useConvention(modulesPath: Unit, viewsPath: String): Unit = js.native
+  def useConvention(modulesPath: Unit, viewsPath: String, areasPath: String): Unit = js.native
+  def useConvention(modulesPath: Unit, viewsPath: Unit, areasPath: String): Unit = js.native
 }

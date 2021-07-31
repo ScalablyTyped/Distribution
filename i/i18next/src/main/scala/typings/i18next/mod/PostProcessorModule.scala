@@ -3,30 +3,26 @@ package typings.i18next.mod
 import typings.i18next.i18nextStrings.postProcessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PostProcessorModule extends Module {
+trait PostProcessorModule
+  extends StObject
+     with Module {
   
   /** Unique name */
-  var name: String = js.native
+  var name: String
   
-  def process(value: String, key: String, options: TOptions[StringMap], translator: js.Any): String = js.native
+  def process(value: String, key: String, options: TOptions[StringMap], translator: js.Any): String
   
   @JSName("type")
-  var type_PostProcessorModule: postProcessor = js.native
+  var type_PostProcessorModule: postProcessor
 }
 object PostProcessorModule {
   
   @scala.inline
-  def apply(
-    name: String,
-    process: (String, String, TOptions[StringMap], js.Any) => String,
-    `type`: postProcessor
-  ): PostProcessorModule = {
+  def apply(name: String, process: (String, String, TOptions[StringMap], js.Any) => String): PostProcessorModule = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], process = js.Any.fromFunction4(process))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("postProcessor")
     __obj.asInstanceOf[PostProcessorModule]
   }
   

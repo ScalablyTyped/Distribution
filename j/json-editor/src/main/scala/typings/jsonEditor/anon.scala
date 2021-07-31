@@ -2,17 +2,15 @@ package typings.jsonEditor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Array extends StObject {
     
-    var array: OptionsJSONEditorArrayOptions = js.native
+    var array: OptionsJSONEditorArrayOptions
     
-    var `object`: Options = js.native
+    var `object`: Options
   }
   object Array {
     
@@ -34,10 +32,9 @@ object anon {
     }
   }
   
-  @js.native
   trait BasePath extends StObject {
     
-    var basePath: String = js.native
+    var basePath: String
   }
   object BasePath {
     
@@ -55,10 +52,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Compile extends StObject {
     
-    def compile(template: String): js.Function1[/* vars */ js.Any, String] = js.native
+    def compile(template: String): js.Function1[/* vars */ js.Any, String]
   }
   object Compile {
     
@@ -76,10 +72,9 @@ object anon {
     }
   }
   
-  @js.native
   trait EmoticonsEnabled extends StObject {
     
-    var emoticonsEnabled: Boolean = js.native
+    var emoticonsEnabled: Boolean
   }
   object EmoticonsEnabled {
     
@@ -97,10 +92,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Enable extends StObject {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
   }
   object Enable {
     
@@ -118,10 +112,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: JSONEditorObjectOptions = js.native
+    var options: JSONEditorObjectOptions
   }
   object Options {
     
@@ -139,10 +132,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OptionsJSONEditorArrayOptions extends StObject {
     
-    var options: JSONEditorArrayOptions = js.native
+    var options: JSONEditorArrayOptions
   }
   object OptionsJSONEditorArrayOptions {
     
@@ -160,10 +152,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Theme extends StObject {
     
-    var theme: String = js.native
+    var theme: String
   }
   object Theme {
     

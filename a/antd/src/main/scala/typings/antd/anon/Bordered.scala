@@ -4,17 +4,15 @@ import typings.antd.configProviderSizeContextMod.SizeType
 import typings.antd.generatePickerMod.PickerLocale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bordered extends StObject {
   
-  var bordered: js.UndefOr[Boolean] = js.native
+  var bordered: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[PickerLocale] = js.native
+  var locale: js.UndefOr[PickerLocale] = js.undefined
   
-  var size: js.UndefOr[SizeType] = js.native
+  var size: js.UndefOr[SizeType] = js.undefined
 }
 object Bordered {
   

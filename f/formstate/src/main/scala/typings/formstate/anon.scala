@@ -6,21 +6,19 @@ import typings.formstate.formstateBooleans.`false`
 import typings.formstate.formstateBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HasError extends StObject {
     
-    var hasError: `true` = js.native
+    var hasError: `true`
   }
   object HasError {
     
     @scala.inline
-    def apply(hasError: `true`): HasError = {
-      val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any])
+    def apply(): HasError = {
+      val __obj = js.Dynamic.literal(hasError = true)
       __obj.asInstanceOf[HasError]
     }
     
@@ -32,23 +30,22 @@ object anon {
     }
   }
   
-  @js.native
   trait HasErrorValue[TValue /* <: ValidatableMapOrArray */] extends StObject {
     
-    var hasError: `false` = js.native
+    var hasError: `false`
     
-    var value: TValue = js.native
+    var value: TValue
   }
   object HasErrorValue {
     
     @scala.inline
-    def apply[TValue /* <: ValidatableMapOrArray */](hasError: `false`, value: TValue): HasErrorValue[TValue] = {
-      val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply[TValue /* <: ValidatableMapOrArray */](value: TValue): HasErrorValue[TValue] = {
+      val __obj = js.Dynamic.literal(hasError = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[HasErrorValue[TValue]]
     }
     
     @scala.inline
-    implicit class HasErrorValueMutableBuilder[Self <: HasErrorValue[_], TValue /* <: ValidatableMapOrArray */] (val x: Self with HasErrorValue[TValue]) extends AnyVal {
+    implicit class HasErrorValueMutableBuilder[Self <: HasErrorValue[?], TValue /* <: ValidatableMapOrArray */] (val x: Self & HasErrorValue[TValue]) extends AnyVal {
       
       @scala.inline
       def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
@@ -58,12 +55,11 @@ object anon {
     }
   }
   
-  @js.native
   trait NewValue[TValue] extends StObject {
     
-    var newValue: TValue = js.native
+    var newValue: TValue
     
-    var oldValue: TValue = js.native
+    var oldValue: TValue
   }
   object NewValue {
     
@@ -74,7 +70,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class NewValueMutableBuilder[Self <: NewValue[_], TValue] (val x: Self with NewValue[TValue]) extends AnyVal {
+    implicit class NewValueMutableBuilder[Self <: NewValue[?], TValue] (val x: Self & NewValue[TValue]) extends AnyVal {
       
       @scala.inline
       def setNewValue(value: TValue): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
@@ -84,14 +80,13 @@ object anon {
     }
   }
   
-  @js.native
   trait OnReinit extends StObject {
     
     @JSName("on$Reinit")
-    def on$Reinit(): Unit = js.native
+    def on$Reinit(): Unit
     
     @JSName("on$ValidationPass")
-    def on$ValidationPass(): Unit = js.native
+    def on$ValidationPass(): Unit
   }
   object OnReinit {
     
@@ -112,23 +107,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Value[TValue] extends StObject {
     
-    var hasError: `false` = js.native
+    var hasError: `false`
     
-    var value: TValue = js.native
+    var value: TValue
   }
   object Value {
     
     @scala.inline
-    def apply[TValue](hasError: `false`, value: TValue): Value[TValue] = {
-      val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply[TValue](value: TValue): Value[TValue] = {
+      val __obj = js.Dynamic.literal(hasError = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value[TValue]]
     }
     
     @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value[_], TValue] (val x: Self with Value[TValue]) extends AnyVal {
+    implicit class ValueMutableBuilder[Self <: Value[?], TValue] (val x: Self & Value[TValue]) extends AnyVal {
       
       @scala.inline
       def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
@@ -138,23 +132,22 @@ object anon {
     }
   }
   
-  @js.native
   trait ValueTValue[TValue /* <: ValidatableArray */] extends StObject {
     
-    var hasError: `false` = js.native
+    var hasError: `false`
     
-    var value: TValue = js.native
+    var value: TValue
   }
   object ValueTValue {
     
     @scala.inline
-    def apply[TValue /* <: ValidatableArray */](hasError: `false`, value: TValue): ValueTValue[TValue] = {
-      val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply[TValue /* <: ValidatableArray */](value: TValue): ValueTValue[TValue] = {
+      val __obj = js.Dynamic.literal(hasError = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValueTValue[TValue]]
     }
     
     @scala.inline
-    implicit class ValueTValueMutableBuilder[Self <: ValueTValue[_], TValue /* <: ValidatableArray */] (val x: Self with ValueTValue[TValue]) extends AnyVal {
+    implicit class ValueTValueMutableBuilder[Self <: ValueTValue[?], TValue /* <: ValidatableArray */] (val x: Self & ValueTValue[TValue]) extends AnyVal {
       
       @scala.inline
       def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])

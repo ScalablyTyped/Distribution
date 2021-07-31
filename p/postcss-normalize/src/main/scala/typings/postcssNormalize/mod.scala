@@ -5,7 +5,6 @@ import typings.postcss.mod.Plugin_
 import typings.postcssNormalize.mod.Normalize.NormalizePlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,23 +17,22 @@ object mod extends Shortcut {
     
     type NormalizePlugin = Plugin_[Options]
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * @default false
         */
-      var allowDuplicates: js.UndefOr[Boolean] = js.native
+      var allowDuplicates: js.UndefOr[Boolean] = js.undefined
       
       /**
         * @default null
         */
-      var browsers: js.UndefOr[String] = js.native
+      var browsers: js.UndefOr[String] = js.undefined
       
       /**
         * @default null
         */
-      var forceImport: js.UndefOr[Boolean | String] = js.native
+      var forceImport: js.UndefOr[Boolean | String] = js.undefined
     }
     object Options {
       

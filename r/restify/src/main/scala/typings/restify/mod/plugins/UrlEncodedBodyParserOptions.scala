@@ -2,17 +2,15 @@ package typings.restify.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlEncodedBodyParserOptions extends StObject {
   
-  var bodyReader: js.UndefOr[Boolean] = js.native
+  var bodyReader: js.UndefOr[Boolean] = js.undefined
   
-  var mapParams: js.UndefOr[Boolean] = js.native
+  var mapParams: js.UndefOr[Boolean] = js.undefined
   
-  var overrideParams: js.UndefOr[Boolean] = js.native
+  var overrideParams: js.UndefOr[Boolean] = js.undefined
 }
 object UrlEncodedBodyParserOptions {
   

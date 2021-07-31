@@ -2,13 +2,11 @@ package typings.kuromoji.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenizerStatic extends StObject {
   
-  def splitByPunctuation(input: String): js.Array[String] = js.native
+  def splitByPunctuation(input: String): js.Array[String]
 }
 object TokenizerStatic {
   

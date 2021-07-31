@@ -4,27 +4,25 @@ import typings.jqueryNotify.jqueryNotifyStrings.above
 import typings.jqueryNotify.jqueryNotifyStrings.below
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryNotifyOptions extends StObject {
   
-  var close: js.UndefOr[js.Function0[Unit]] = js.native
+  var close: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var custom: js.UndefOr[Boolean] = js.native
+  var custom: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var expires: js.UndefOr[Double] = js.native
+  var expires: js.UndefOr[Double] = js.undefined
   
-  var open: js.UndefOr[js.Function0[Unit]] = js.native
+  var open: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var queue: js.UndefOr[Boolean] = js.native
+  var queue: js.UndefOr[Boolean] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
-  var stack: js.UndefOr[below | above] = js.native
+  var stack: js.UndefOr[below | above] = js.undefined
 }
 object JQueryNotifyOptions {
   

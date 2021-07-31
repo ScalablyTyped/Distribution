@@ -2,18 +2,17 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeLensRegistrationOptions
-  extends CodeLensOptions
+  extends StObject
      with TextDocumentRegistrationOptions
+     with CodeLensOptions
 object CodeLensRegistrationOptions {
   
   @scala.inline
   def apply(): CodeLensRegistrationOptions = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[CodeLensRegistrationOptions]
   }
 }

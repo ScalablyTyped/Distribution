@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFlowExecutionRecordsResponse extends StObject {
   
   /**
     *  Returns a list of all instances when this flow was run. 
     */
-  var flowExecutions: js.UndefOr[FlowExecutionList] = js.native
+  var flowExecutions: js.UndefOr[FlowExecutionList] = js.undefined
   
   /**
     *  The pagination token for the next page of data. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeFlowExecutionRecordsResponse {
   

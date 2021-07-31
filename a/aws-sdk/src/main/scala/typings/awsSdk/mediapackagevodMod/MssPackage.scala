@@ -2,23 +2,21 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MssPackage extends StObject {
   
-  var Encryption: js.UndefOr[MssEncryption] = js.native
+  var Encryption: js.UndefOr[MssEncryption] = js.undefined
   
   /**
     * A list of MSS manifest configurations.
     */
-  var MssManifests: listOfMssManifest = js.native
+  var MssManifests: listOfMssManifest
   
   /**
     * The duration (in seconds) of each segment.
     */
-  var SegmentDurationSeconds: js.UndefOr[integer] = js.native
+  var SegmentDurationSeconds: js.UndefOr[integer] = js.undefined
 }
 object MssPackage {
   

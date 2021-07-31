@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScoreSubmission extends StObject {
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#scoreSubmission`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The leaderboard this score is being submitted to. */
-  var leaderboardId: js.UndefOr[String] = js.native
+  var leaderboardId: js.UndefOr[String] = js.undefined
   
   /** The new score being submitted. */
-  var score: js.UndefOr[String] = js.native
+  var score: js.UndefOr[String] = js.undefined
   
   /** Additional information about this score. Values will contain no more than 64 URI-safe characters as defined by section 2.3 of RFC 3986. */
-  var scoreTag: js.UndefOr[String] = js.native
+  var scoreTag: js.UndefOr[String] = js.undefined
   
   /** Signature Values will contain URI-safe characters as defined by section 2.3 of RFC 3986. */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
 }
 object ScoreSubmission {
   

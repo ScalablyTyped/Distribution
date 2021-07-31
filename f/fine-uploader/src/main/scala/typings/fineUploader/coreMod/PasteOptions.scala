@@ -3,10 +3,8 @@ package typings.fineUploader.coreMod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PasteOptions extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait PasteOptions extends StObject {
     *
     * @default `'pasted_image'`
     */
-  var defaultName: js.UndefOr[String] = js.native
+  var defaultName: js.UndefOr[String] = js.undefined
   
   /**
     * Enable this feature by providing any HTMLElement here
     *
     * @default `null`
     */
-  var targetElement: js.UndefOr[HTMLElement] = js.native
+  var targetElement: js.UndefOr[HTMLElement] = js.undefined
 }
 object PasteOptions {
   

@@ -9,43 +9,44 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerTriggerMod {
   
-  @JSImport("rc-picker/es/PickerTrigger", JSImport.Default)
+  @JSImport("rc-picker/es/PickerTrigger", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     hasPrefixClsPopupElementPopupStyleVisibleDropdownClassNameDropdownAlignTransitionNameGetPopupContainerChildrenRangePopupPlacementDirection: PickerTriggerProps
-  ): Element = js.native
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsPopupElementPopupStyleVisibleDropdownClassNameDropdownAlignTransitionNameGetPopupContainerChildrenRangePopupPlacementDirection.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
   trait PickerTriggerProps extends StObject {
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var dropdownAlign: js.UndefOr[AlignType] = js.native
+    var dropdownAlign: js.UndefOr[AlignType] = js.undefined
     
-    var dropdownClassName: js.UndefOr[String] = js.native
+    var dropdownClassName: js.UndefOr[String] = js.undefined
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
     
-    var popupElement: ReactElement = js.native
+    var popupElement: ReactElement
     
-    var popupPlacement: js.UndefOr[Placement] = js.native
+    var popupPlacement: js.UndefOr[Placement] = js.undefined
     
-    var popupStyle: js.UndefOr[CSSProperties] = js.native
+    var popupStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var range: js.UndefOr[Boolean] = js.native
+    var range: js.UndefOr[Boolean] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object PickerTriggerProps {
     

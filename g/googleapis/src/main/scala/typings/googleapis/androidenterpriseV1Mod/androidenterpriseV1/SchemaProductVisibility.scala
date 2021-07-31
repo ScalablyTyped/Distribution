@@ -2,31 +2,29 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A product to be made visible to a user.
   */
-@js.native
 trait SchemaProductVisibility extends StObject {
   
   /**
     * The product ID to make visible to the user. Required for each item in the
     * productVisibility list.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * Grants the user visibility to the specified product track(s), identified
     * by trackIds.
     */
-  var trackIds: js.UndefOr[js.Array[String]] = js.native
+  var trackIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Deprecated. Use trackIds instead.
     */
-  var tracks: js.UndefOr[js.Array[String]] = js.native
+  var tracks: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaProductVisibility {
   

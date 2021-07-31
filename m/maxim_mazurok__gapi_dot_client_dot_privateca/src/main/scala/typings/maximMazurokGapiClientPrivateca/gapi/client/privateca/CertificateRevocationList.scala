@@ -3,42 +3,40 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateRevocationList extends StObject {
   
   /** Output only. The location where 'pem_crl' can be accessed. */
-  var accessUrl: js.UndefOr[String] = js.native
+  var accessUrl: js.UndefOr[String] = js.undefined
   
   /** Output only. The time at which this CertificateRevocationList was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Optional. Labels with user-defined metadata. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateRevocationList with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateRevocationList & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The resource path for this CertificateRevocationList in the format `projects/∗/locations/∗/certificateAuthorities/∗/ certificateRevocationLists/ *`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The PEM-encoded X.509 CRL. */
-  var pemCrl: js.UndefOr[String] = js.native
+  var pemCrl: js.UndefOr[String] = js.undefined
   
   /** Output only. The revoked serial numbers that appear in pem_crl. */
-  var revokedCertificates: js.UndefOr[js.Array[RevokedCertificate]] = js.native
+  var revokedCertificates: js.UndefOr[js.Array[RevokedCertificate]] = js.undefined
   
   /** Output only. The CRL sequence number that appears in pem_crl. */
-  var sequenceNumber: js.UndefOr[String] = js.native
+  var sequenceNumber: js.UndefOr[String] = js.undefined
   
   /** Output only. The State for this CertificateRevocationList. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. The time at which this CertificateRevocationList was updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object CertificateRevocationList {
   
@@ -67,7 +65,7 @@ object CertificateRevocationList {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateRevocationList with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateRevocationList & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

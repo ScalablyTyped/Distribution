@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevertVariableResponse extends StObject {
   
   /**
     * Variable as it appears in the latest container version since the last workspace synchronization operation. If no variable is present, that means the variable was deleted in the
     * latest container version.
     */
-  var variable: js.UndefOr[Variable] = js.native
+  var variable: js.UndefOr[Variable] = js.undefined
 }
 object RevertVariableResponse {
   

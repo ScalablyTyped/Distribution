@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.overflowSetTypesMod.IOverflowSetStyles
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overflowSetStylesMod {

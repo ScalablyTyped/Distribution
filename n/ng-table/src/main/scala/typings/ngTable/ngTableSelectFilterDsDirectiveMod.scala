@@ -12,20 +12,18 @@ import typings.ngTable.publicInterfacesMod.IColumnDef
 import typings.ngTable.publicInterfacesMod.ISelectOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngTableSelectFilterDsDirectiveMod {
   
+  @JSImport("ng-table/src/browser/ngTableSelectFilterDs.directive", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ng-table/src/browser/ngTableSelectFilterDs.directive", "NgTableSelectFilterDsController")
   @js.native
   class NgTableSelectFilterDsController protected () extends StObject {
-    def this(
-      $scope: IScope with IScopeExtensions,
-      $parse: IParseService,
-      $attrs: IInputAttributes,
-      $q: IQService
-    ) = this()
+    def this($scope: IScope & IScopeExtensions, $parse: IParseService, $attrs: IInputAttributes, $q: IQService) = this()
     
     @JSName("$attrs")
     var $attrs: js.Any = js.native
@@ -67,14 +65,14 @@ object ngTableSelectFilterDsDirectiveMod {
     *
     * This directive is is focused on providing a datasource to an `ngOptions` directive
     */
-  @JSImport("ng-table/src/browser/ngTableSelectFilterDs.directive", "ngTableSelectFilterDs")
-  @js.native
-  def ngTableSelectFilterDs(): IDirective[IScope, JQLite, IAttributes, IController] = js.native
+  @scala.inline
+  def ngTableSelectFilterDs(): IDirective[IScope, JQLite, IAttributes, IController] = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableSelectFilterDs")().asInstanceOf[IDirective[IScope, JQLite, IAttributes, IController]]
   
-  @js.native
-  trait IInputAttributes extends IAttributes {
+  trait IInputAttributes
+    extends StObject
+       with IAttributes {
     
-    var ngTableSelectFilterDs: String = js.native
+    var ngTableSelectFilterDs: String
   }
   object IInputAttributes {
     
@@ -83,7 +81,7 @@ object ngTableSelectFilterDsDirectiveMod {
       $addClass: String => Unit,
       $attr: js.Object,
       $normalize: String => String,
-      $observe: (String, js.Function1[/* value */ js.UndefOr[js.Any], _]) => Function,
+      $observe: (String, js.Function1[/* value */ js.UndefOr[js.Any], js.Any]) => Function,
       $removeClass: String => Unit,
       $set: (String, js.Any) => Unit,
       $updateClass: (String, String) => Unit,
@@ -101,11 +99,10 @@ object ngTableSelectFilterDsDirectiveMod {
     }
   }
   
-  @js.native
   trait IScopeExtensions extends StObject {
     
     @JSName("$selectData")
-    var $selectData: js.Array[ISelectOption] = js.native
+    var $selectData: js.Array[ISelectOption]
   }
   object IScopeExtensions {
     

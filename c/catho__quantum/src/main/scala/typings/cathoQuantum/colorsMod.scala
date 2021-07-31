@@ -3,7 +3,6 @@ package typings.cathoQuantum
 import typings.cathoQuantum.anon.ColorsTones0string1000str
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorsMod {
@@ -51,18 +50,17 @@ object colorsMod {
     def warning_=(x: ColorsTones): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ColorsTones extends StObject {
     
-    var `100`: String = js.native
+    var `100`: String
     
-    var `300`: String = js.native
+    var `300`: String
     
-    var `500`: String = js.native
+    var `500`: String
     
-    var `700`: String = js.native
+    var `700`: String
     
-    var `900`: String = js.native
+    var `900`: String
   }
   object ColorsTones {
     

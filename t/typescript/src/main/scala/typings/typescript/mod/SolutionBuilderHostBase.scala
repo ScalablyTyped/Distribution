@@ -3,11 +3,12 @@ package typings.typescript.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SolutionBuilderHostBase[T /* <: BuilderProgram */] extends ProgramHost[T] {
+trait SolutionBuilderHostBase[T /* <: BuilderProgram */]
+  extends StObject
+     with ProgramHost[T] {
   
   var afterProgramEmitAndDiagnostics: js.UndefOr[js.Function1[/* program */ T, Unit]] = js.native
   

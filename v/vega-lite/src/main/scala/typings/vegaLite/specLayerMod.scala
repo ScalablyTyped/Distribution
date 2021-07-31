@@ -13,19 +13,21 @@ import typings.vegaLite.specUnitMod.UnitSpec
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object specLayerMod {
   
-  @JSImport("vega-lite/build/src/spec/layer", "isLayerSpec")
+  @JSImport("vega-lite/build/src/spec/layer", JSImport.Namespace)
   @js.native
-  def isLayerSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/layer.GenericLayerSpec<any> */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait GenericLayerSpec[U /* <: GenericUnitSpec[_, _] */]
-    extends FrameMixins[ExprRef | SignalRef]
+  @scala.inline
+  def isLayerSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/layer.GenericLayerSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayerSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/layer.GenericLayerSpec<any> */ Boolean]
+  
+  trait GenericLayerSpec[U /* <: GenericUnitSpec[js.Any, js.Any] */]
+    extends StObject
        with BaseSpec
+       with FrameMixins[ExprRef | SignalRef]
        with ResolveMixins {
     
     /**
@@ -33,18 +35,18 @@ object specLayerMod {
       *
       * __Note__: Specifications inside `layer` cannot use `row` and `column` channels as layering facet specifications is not allowed. Instead, use the [facet operator](https://vega.github.io/vega-lite/docs/facet.html) and place a layer inside a facet.
       */
-    var layer: js.Array[GenericLayerSpec[U] | U] = js.native
+    var layer: js.Array[GenericLayerSpec[U] | U]
   }
   object GenericLayerSpec {
     
     @scala.inline
-    def apply[U /* <: GenericUnitSpec[_, _] */](layer: js.Array[GenericLayerSpec[U] | U]): GenericLayerSpec[U] = {
+    def apply[U /* <: GenericUnitSpec[js.Any, js.Any] */](layer: js.Array[GenericLayerSpec[U] | U]): GenericLayerSpec[U] = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericLayerSpec[U]]
     }
     
     @scala.inline
-    implicit class GenericLayerSpecMutableBuilder[Self <: GenericLayerSpec[_], U /* <: GenericUnitSpec[_, _] */] (val x: Self with GenericLayerSpec[U]) extends AnyVal {
+    implicit class GenericLayerSpecMutableBuilder[Self <: GenericLayerSpec[?], U /* <: GenericUnitSpec[js.Any, js.Any] */] (val x: Self & GenericLayerSpec[U]) extends AnyVal {
       
       @scala.inline
       def setLayer(value: js.Array[GenericLayerSpec[U] | U]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
@@ -54,28 +56,28 @@ object specLayerMod {
     }
   }
   
-  @js.native
   trait LayerSpec
-    extends FrameMixins[ExprRef | SignalRef]
+    extends StObject
        with BaseSpec
+       with FrameMixins[ExprRef | SignalRef]
        with ResolveMixins {
     
     /**
       * A shared key-value mapping between encoding channels and definition of fields in the underlying layers.
       */
-    var encoding: js.UndefOr[SharedCompositeEncoding[Field]] = js.native
+    var encoding: js.UndefOr[SharedCompositeEncoding[Field]] = js.undefined
     
     /**
       * Layer or single view specifications to be layered.
       *
       * __Note__: Specifications inside `layer` cannot use `row` and `column` channels as layering facet specifications is not allowed. Instead, use the [facet operator](https://vega.github.io/vega-lite/docs/facet.html) and place a layer inside a facet.
       */
-    var layer: js.Array[LayerSpec | UnitSpec] = js.native
+    var layer: js.Array[LayerSpec | UnitSpec]
     
     /**
       * An object defining properties of the geographic projection shared by underlying layers.
       */
-    var projection: js.UndefOr[Projection] = js.native
+    var projection: js.UndefOr[Projection] = js.undefined
   }
   object LayerSpec {
     

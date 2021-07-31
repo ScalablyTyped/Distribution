@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,43 +17,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param b - The second entity involved in the contact.
   * @param contactPoint - The contact point between the two entities.
   */
-@js.native
 trait SingleContactResult extends StObject {
   
   /**
     * The first entity involved in the contact.
     */
-  var a: Entity = js.native
+  var a: Entity
   
   /**
     * The second entity involved in the contact.
     */
-  var b: Entity = js.native
+  var b: Entity
   
   /**
     * The point on Entity A where the contact occurred, relative to A.
     */
-  var localPointA: Vec3 = js.native
+  var localPointA: Vec3
   
   /**
     * The point on Entity B where the contact occurred, relative to B.
     */
-  var localPointB: Vec3 = js.native
+  var localPointB: Vec3
   
   /**
     * The normal vector of the contact on Entity B, in world space.
     */
-  var normal: Vec3 = js.native
+  var normal: Vec3
   
   /**
     * The point on Entity A where the contact occurred, in world space.
     */
-  var pointA: Vec3 = js.native
+  var pointA: Vec3
   
   /**
     * The point on Entity B where the contact occurred, in world space.
     */
-  var pointB: Vec3 = js.native
+  var pointB: Vec3
 }
 object SingleContactResult {
   

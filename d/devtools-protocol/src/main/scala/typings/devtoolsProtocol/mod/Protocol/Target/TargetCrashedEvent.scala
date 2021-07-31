@@ -3,23 +3,21 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetCrashedEvent extends StObject {
   
   /**
     * Termination error code.
     */
-  var errorCode: integer = js.native
+  var errorCode: integer
   
   /**
     * Termination status type.
     */
-  var status: String = js.native
+  var status: String
   
-  var targetId: TargetID = js.native
+  var targetId: TargetID
 }
 object TargetCrashedEvent {
   

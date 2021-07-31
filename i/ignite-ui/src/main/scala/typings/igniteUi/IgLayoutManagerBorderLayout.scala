@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgLayoutManagerBorderLayout
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,37 +16,37 @@ trait IgLayoutManagerBorderLayout
     * Option specifying the width of the left region, either in px or percentages
     *
     */
-  var leftWidth: js.UndefOr[String] = js.native
+  var leftWidth: js.UndefOr[String] = js.undefined
   
   /**
     * Option specifying the width of the right region, either in px or percentages
     *
     */
-  var rightWidth: js.UndefOr[String] = js.native
+  var rightWidth: js.UndefOr[String] = js.undefined
   
   /**
     * Option specifying whether the footer region in the border layout will be hidden or shown
     *
     */
-  var showFooter: js.UndefOr[Boolean] = js.native
+  var showFooter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Option specifying whether the header region in the border layout will be hidden or shown
     *
     */
-  var showHeader: js.UndefOr[Boolean] = js.native
+  var showHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Option specifying whether the left region in the border layout will be hidden or shown
     *
     */
-  var showLeft: js.UndefOr[Boolean] = js.native
+  var showLeft: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Option specifying whether the right region in the border layout will be hidden or shown
     *
     */
-  var showRight: js.UndefOr[Boolean] = js.native
+  var showRight: js.UndefOr[Boolean] = js.undefined
 }
 object IgLayoutManagerBorderLayout {
   

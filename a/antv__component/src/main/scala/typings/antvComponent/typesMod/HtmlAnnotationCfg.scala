@@ -8,23 +8,23 @@ import typings.antvComponent.antvComponentStrings.top
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HtmlAnnotationCfg extends HtmlComponentCfg {
+trait HtmlAnnotationCfg
+  extends StObject
+     with HtmlComponentCfg {
   
   /** X 方向对齐，默认 left */
-  var alignX: js.UndefOr[left | middle | right] = js.native
+  var alignX: js.UndefOr[left | middle | right] = js.undefined
   
   /** Y 方向对齐，默认 top */
-  var alignY: js.UndefOr[top | middle | bottom] = js.native
+  var alignY: js.UndefOr[top | middle | bottom] = js.undefined
   
   /** 自定义 html */
-  var html: String | HTMLElement | (js.Function1[/* container */ HTMLElement, Unit | String | HTMLElement]) = js.native
+  var html: String | HTMLElement | (js.Function1[/* container */ HTMLElement, Unit | String | HTMLElement])
   
   /** zIndex 设置 */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object HtmlAnnotationCfg {
   

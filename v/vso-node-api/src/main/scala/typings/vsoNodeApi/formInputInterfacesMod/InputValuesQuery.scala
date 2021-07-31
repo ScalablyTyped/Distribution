@@ -3,23 +3,21 @@ package typings.vsoNodeApi.formInputInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputValuesQuery extends StObject {
   
-  var currentValues: StringDictionary[String] = js.native
+  var currentValues: StringDictionary[String]
   
   /**
     * The input values to return on input, and the result from the consumer on output.
     */
-  var inputValues: js.Array[InputValues] = js.native
+  var inputValues: js.Array[InputValues]
   
   /**
     * Subscription containing information about the publisher/consumer and the current input values
     */
-  var resource: js.Any = js.native
+  var resource: js.Any
 }
 object InputValuesQuery {
   

@@ -2,24 +2,22 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUtilObject extends StObject {
   
   /**
     * Creates an empty object and copies all enumerable properties of another object to it
     * @param object Object to clone
     */
-  def clone(`object`: js.Any): js.Any = js.native
+  def clone(`object`: js.Any): js.Any
   
   /**
     * Copies all enumerable properties of one object to another
     * @param destination Where to copy to
     * @param source Where to copy from
     */
-  def extend(destination: js.Any, source: js.Any): js.Any = js.native
+  def extend(destination: js.Any, source: js.Any): js.Any
 }
 object IUtilObject {
   

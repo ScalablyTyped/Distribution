@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connection {
+  
+  @JSImport("azdata", "connection")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("azdata", "connection.ConnectionProfile")
   @js.native
@@ -44,116 +47,95 @@ object connection {
   /* static members */
   object ConnectionProfile {
     
-    @JSImport("azdata", "connection.ConnectionProfile.createFrom")
+    @JSImport("azdata", "connection.ConnectionProfile")
     @js.native
-    def createFrom(options: StringDictionary[js.Any]): ConnectionProfile = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createFrom(options: StringDictionary[js.Any]): ConnectionProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createFrom")(options.asInstanceOf[js.Any]).asInstanceOf[ConnectionProfile]
   }
   
-  @JSImport("azdata", "connection.connect")
-  @js.native
-  def connect(connectionProfile: IConnectionProfile): Thenable[ConnectionResult] = js.native
-  @JSImport("azdata", "connection.connect")
-  @js.native
-  def connect(
-    connectionProfile: IConnectionProfile,
-    saveConnection: js.UndefOr[scala.Nothing],
-    showDashboard: Boolean
-  ): Thenable[ConnectionResult] = js.native
-  @JSImport("azdata", "connection.connect")
-  @js.native
-  def connect(connectionProfile: IConnectionProfile, saveConnection: Boolean): Thenable[ConnectionResult] = js.native
-  @JSImport("azdata", "connection.connect")
-  @js.native
-  def connect(connectionProfile: IConnectionProfile, saveConnection: Boolean, showDashboard: Boolean): Thenable[ConnectionResult] = js.native
+  @scala.inline
+  def connect(connectionProfile: IConnectionProfile): Thenable[ConnectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any]).asInstanceOf[Thenable[ConnectionResult]]
+  @scala.inline
+  def connect(connectionProfile: IConnectionProfile, saveConnection: Boolean): Thenable[ConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any], saveConnection.asInstanceOf[js.Any])).asInstanceOf[Thenable[ConnectionResult]]
+  @scala.inline
+  def connect(connectionProfile: IConnectionProfile, saveConnection: Boolean, showDashboard: Boolean): Thenable[ConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any], saveConnection.asInstanceOf[js.Any], showDashboard.asInstanceOf[js.Any])).asInstanceOf[Thenable[ConnectionResult]]
+  @scala.inline
+  def connect(connectionProfile: IConnectionProfile, saveConnection: Unit, showDashboard: Boolean): Thenable[ConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any], saveConnection.asInstanceOf[js.Any], showDashboard.asInstanceOf[js.Any])).asInstanceOf[Thenable[ConnectionResult]]
   
-  @JSImport("azdata", "connection.getActiveConnections")
-  @js.native
-  def getActiveConnections(): Thenable[js.Array[Connection]] = js.native
+  @scala.inline
+  def getActiveConnections(): Thenable[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveConnections")().asInstanceOf[Thenable[js.Array[Connection]]]
   
-  @JSImport("azdata", "connection.getConnectionString")
-  @js.native
-  def getConnectionString(connectionId: String, includePassword: Boolean): Thenable[String] = js.native
+  @scala.inline
+  def getConnectionString(connectionId: String, includePassword: Boolean): Thenable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionString")(connectionId.asInstanceOf[js.Any], includePassword.asInstanceOf[js.Any])).asInstanceOf[Thenable[String]]
   
-  @JSImport("azdata", "connection.getConnections")
-  @js.native
-  def getConnections(): Thenable[js.Array[ConnectionProfile]] = js.native
-  @JSImport("azdata", "connection.getConnections")
-  @js.native
-  def getConnections(activeConnectionsOnly: Boolean): Thenable[js.Array[ConnectionProfile]] = js.native
+  @scala.inline
+  def getConnections(): Thenable[js.Array[ConnectionProfile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")().asInstanceOf[Thenable[js.Array[ConnectionProfile]]]
+  @scala.inline
+  def getConnections(activeConnectionsOnly: Boolean): Thenable[js.Array[ConnectionProfile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")(activeConnectionsOnly.asInstanceOf[js.Any]).asInstanceOf[Thenable[js.Array[ConnectionProfile]]]
   
-  @JSImport("azdata", "connection.getCredentials")
-  @js.native
-  def getCredentials(connectionId: String): Thenable[StringDictionary[String]] = js.native
+  @scala.inline
+  def getCredentials(connectionId: String): Thenable[StringDictionary[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCredentials")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[StringDictionary[String]]]
   
-  @JSImport("azdata", "connection.getCurrentConnection")
-  @js.native
-  def getCurrentConnection(): Thenable[ConnectionProfile] = js.native
+  @scala.inline
+  def getCurrentConnection(): Thenable[ConnectionProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentConnection")().asInstanceOf[Thenable[ConnectionProfile]]
   
-  @JSImport("azdata", "connection.getServerInfo")
-  @js.native
-  def getServerInfo(connectionId: String): Thenable[ServerInfo] = js.native
+  @scala.inline
+  def getServerInfo(connectionId: String): Thenable[ServerInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServerInfo")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[ServerInfo]]
   
-  @JSImport("azdata", "connection.getUriForConnection")
-  @js.native
-  def getUriForConnection(connectionId: String): Thenable[String] = js.native
+  @scala.inline
+  def getUriForConnection(connectionId: String): Thenable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUriForConnection")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[String]]
   
-  @JSImport("azdata", "connection.listDatabases")
-  @js.native
-  def listDatabases(connectionId: String): Thenable[js.Array[String]] = js.native
+  @scala.inline
+  def listDatabases(connectionId: String): Thenable[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDatabases")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[js.Array[String]]]
   
-  @JSImport("azdata", "connection.openConnectionDialog")
-  @js.native
-  def openConnectionDialog(): Thenable[Connection] = js.native
-  @JSImport("azdata", "connection.openConnectionDialog")
-  @js.native
-  def openConnectionDialog(
-    providers: js.UndefOr[scala.Nothing],
-    initialConnectionProfile: js.UndefOr[scala.Nothing],
-    connectionCompletionOptions: IConnectionCompletionOptions
-  ): Thenable[Connection] = js.native
-  @JSImport("azdata", "connection.openConnectionDialog")
-  @js.native
-  def openConnectionDialog(providers: js.UndefOr[scala.Nothing], initialConnectionProfile: IConnectionProfile): Thenable[Connection] = js.native
-  @JSImport("azdata", "connection.openConnectionDialog")
-  @js.native
-  def openConnectionDialog(
-    providers: js.UndefOr[scala.Nothing],
-    initialConnectionProfile: IConnectionProfile,
-    connectionCompletionOptions: IConnectionCompletionOptions
-  ): Thenable[Connection] = js.native
-  @JSImport("azdata", "connection.openConnectionDialog")
-  @js.native
-  def openConnectionDialog(providers: js.Array[String]): Thenable[Connection] = js.native
-  @JSImport("azdata", "connection.openConnectionDialog")
-  @js.native
+  @scala.inline
+  def openConnectionDialog(): Thenable[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")().asInstanceOf[Thenable[Connection]]
+  @scala.inline
+  def openConnectionDialog(providers: js.Array[String]): Thenable[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any]).asInstanceOf[Thenable[Connection]]
+  @scala.inline
   def openConnectionDialog(
     providers: js.Array[String],
-    initialConnectionProfile: js.UndefOr[scala.Nothing],
+    initialConnectionProfile: Unit,
     connectionCompletionOptions: IConnectionCompletionOptions
-  ): Thenable[Connection] = js.native
-  @JSImport("azdata", "connection.openConnectionDialog")
-  @js.native
-  def openConnectionDialog(providers: js.Array[String], initialConnectionProfile: IConnectionProfile): Thenable[Connection] = js.native
-  @JSImport("azdata", "connection.openConnectionDialog")
-  @js.native
+  ): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any], connectionCompletionOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
+  @scala.inline
+  def openConnectionDialog(providers: js.Array[String], initialConnectionProfile: IConnectionProfile): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
+  @scala.inline
   def openConnectionDialog(
     providers: js.Array[String],
     initialConnectionProfile: IConnectionProfile,
     connectionCompletionOptions: IConnectionCompletionOptions
-  ): Thenable[Connection] = js.native
+  ): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any], connectionCompletionOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
+  @scala.inline
+  def openConnectionDialog(
+    providers: Unit,
+    initialConnectionProfile: Unit,
+    connectionCompletionOptions: IConnectionCompletionOptions
+  ): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any], connectionCompletionOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
+  @scala.inline
+  def openConnectionDialog(providers: Unit, initialConnectionProfile: IConnectionProfile): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
+  @scala.inline
+  def openConnectionDialog(
+    providers: Unit,
+    initialConnectionProfile: IConnectionProfile,
+    connectionCompletionOptions: IConnectionCompletionOptions
+  ): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any], connectionCompletionOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
   
-  @js.native
-  trait Connection extends ConnectionInfo {
+  trait Connection
+    extends StObject
+       with ConnectionInfo {
     
     /**
       * A unique identifier for the connection
       */
-    var connectionId: String = js.native
+    var connectionId: String
     
     /**
       * The name of the provider managing the connection (e.g. MSSQL)
       */
-    var providerName: String = js.native
+    var providerName: String
   }
   object Connection {
     

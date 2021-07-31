@@ -10,9 +10,9 @@ A simple & customizable notifications system for React
 | ------------------ | :-------------: |
 | Full name          | reapop |
 | Keywords           | reapop, react, redux, mobx, notifications, notification, toast, toasts, component |
-| # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 235279 |
+| # releases         | 6 |
+| # dependents       | 3 |
+| # downloads        | 236652 |
 | # stars            | 4 |
 
 ## Links

@@ -3,7 +3,6 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mod.disputeDocument.DisputeDocumentData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "DisputeDocuments")
@@ -14,7 +13,7 @@ class DisputeDocuments () extends StObject {
     * Creates temporary URLs where each page of a KYC document can be viewed.
     * @param documentId
     */
-  def createDisputeDocumentConsult(data: String): js.Promise[_] = js.native
+  def createDisputeDocumentConsult(data: String): js.Promise[js.Any] = js.native
   /**
     * Creates temporary URLs where each page of a KYC document can be viewed.
     * @param documentId
@@ -26,7 +25,7 @@ class DisputeDocuments () extends StObject {
     */
   def createDisputeDocumentConsult(
     data: String,
-    callback: js.Function1[/* data */ WithResponse[_], Unit],
+    callback: js.Function1[/* data */ WithResponse[js.Any], Unit],
     options: MethodOptionWithResponse
   ): Unit = js.native
   def createDisputeDocumentConsult(
@@ -38,14 +37,14 @@ class DisputeDocuments () extends StObject {
     * Creates temporary URLs where each page of a KYC document can be viewed.
     * @param documentId
     */
-  def createDisputeDocumentConsult(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[_]] = js.native
-  def createDisputeDocumentConsult(data: String, options: MethodOptionWithoutResponse): js.Promise[_] = js.native
+  def createDisputeDocumentConsult(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Any]] = js.native
+  def createDisputeDocumentConsult(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Any] = js.native
   /**
     * Creates temporary URLs where each page of a KYC document can be viewed.
     * @param documentId
     */
   @JSName("createDisputeDocumentConsult")
-  var createDisputeDocumentConsult_Original: MethodOverload[String, _] = js.native
+  var createDisputeDocumentConsult_Original: MethodOverload[String, js.Any] = js.native
   
   /**
     * Get KycDocument

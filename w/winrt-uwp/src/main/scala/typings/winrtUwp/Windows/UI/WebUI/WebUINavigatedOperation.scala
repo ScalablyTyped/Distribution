@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.UI.WebUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages an app navigation operation. */
-@js.native
 trait WebUINavigatedOperation extends StObject {
   
   /**
     * Requests that the completion of app navigation be delayed.
     * @return The navigated deferral object.
     */
-  def getDeferral(): WebUINavigatedDeferral = js.native
+  def getDeferral(): WebUINavigatedDeferral
 }
 object WebUINavigatedOperation {
   

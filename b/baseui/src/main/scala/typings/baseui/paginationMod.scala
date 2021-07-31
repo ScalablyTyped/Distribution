@@ -19,7 +19,6 @@ import typings.std.Event
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationMod {
@@ -41,19 +40,18 @@ object paginationMod {
     
     def onMenuItemSelect(data: Value): Unit = js.native
     
-    def onNextClick(event: SyntheticEvent[_, Event]): Unit = js.native
+    def onNextClick(event: SyntheticEvent[js.Any, Event]): Unit = js.native
     
-    def onPrevClick(event: SyntheticEvent[_, Event]): Unit = js.native
+    def onPrevClick(event: SyntheticEvent[js.Any, Event]): Unit = js.native
   }
   
   @JSImport("baseui/pagination", "SIZE")
   @js.native
   val SIZE: typings.baseui.inputMod.SIZE = js.native
   
-  @js.native
   trait STATE_CHANGE_TYPE extends StObject {
     
-    var change: change_ = js.native
+    var change: change_
   }
   object STATE_CHANGE_TYPE {
     
@@ -102,14 +100,13 @@ object paginationMod {
   @js.native
   val StyledRoot: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait Callbacks extends StObject {
     
-    var onNextClick: js.UndefOr[js.Function1[/* args */ EventAny, _]] = js.native
+    var onNextClick: js.UndefOr[js.Function1[/* args */ EventAny, js.Any]] = js.undefined
     
-    var onPageChange: js.UndefOr[js.Function1[/* args */ NextPage, _]] = js.native
+    var onPageChange: js.UndefOr[js.Function1[/* args */ NextPage, js.Any]] = js.undefined
     
-    var onPrevClick: js.UndefOr[js.Function1[/* args */ EventAny, _]] = js.native
+    var onPrevClick: js.UndefOr[js.Function1[/* args */ EventAny, js.Any]] = js.undefined
   }
   object Callbacks {
     
@@ -123,33 +120,32 @@ object paginationMod {
     implicit class CallbacksMutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnNextClick(value: /* args */ EventAny => _): Self = StObject.set(x, "onNextClick", js.Any.fromFunction1(value))
+      def setOnNextClick(value: /* args */ EventAny => js.Any): Self = StObject.set(x, "onNextClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnNextClickUndefined: Self = StObject.set(x, "onNextClick", js.undefined)
       
       @scala.inline
-      def setOnPageChange(value: /* args */ NextPage => _): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
+      def setOnPageChange(value: /* args */ NextPage => js.Any): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
       
       @scala.inline
-      def setOnPrevClick(value: /* args */ EventAny => _): Self = StObject.set(x, "onPrevClick", js.Any.fromFunction1(value))
+      def setOnPrevClick(value: /* args */ EventAny => js.Any): Self = StObject.set(x, "onPrevClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPrevClickUndefined: Self = StObject.set(x, "onPrevClick", js.undefined)
     }
   }
   
-  @js.native
   trait Labels extends StObject {
     
-    var nextButton: js.UndefOr[String] = js.native
+    var nextButton: js.UndefOr[String] = js.undefined
     
-    var preposition: js.UndefOr[String] = js.native
+    var preposition: js.UndefOr[String] = js.undefined
     
-    var prevButton: js.UndefOr[String] = js.native
+    var prevButton: js.UndefOr[String] = js.undefined
   }
   object Labels {
     
@@ -182,10 +178,9 @@ object paginationMod {
     }
   }
   
-  @js.native
   trait PageOption extends StObject {
     
-    var label: Double = js.native
+    var label: Double
   }
   object PageOption {
     
@@ -203,32 +198,31 @@ object paginationMod {
     }
   }
   
-  @js.native
   trait PaginationOverrides extends StObject {
     
     var DropdownContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var MaxLabel: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var NextButton: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var PrevButton: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Select: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PaginationOverrides {
     
@@ -291,18 +285,19 @@ object paginationMod {
     }
   }
   
-  @js.native
-  trait PaginationProps extends Callbacks {
+  trait PaginationProps
+    extends StObject
+       with Callbacks {
     
-    var currentPage: Double = js.native
+    var currentPage: Double
     
-    var labels: js.UndefOr[Labels] = js.native
+    var labels: js.UndefOr[Labels] = js.undefined
     
-    var numPages: Double = js.native
+    var numPages: Double
     
-    var overrides: js.UndefOr[PaginationOverrides] = js.native
+    var overrides: js.UndefOr[PaginationOverrides] = js.undefined
     
-    var size: js.UndefOr[mini | default_ | compact | large_] = js.native
+    var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   }
   object PaginationProps {
     
@@ -341,10 +336,9 @@ object paginationMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var currentPage: Double = js.native
+    var currentPage: Double
   }
   object State {
     
@@ -364,18 +358,17 @@ object paginationMod {
   
   type StateReducer = js.Function3[change_, /* changes */ State, /* currentState */ State, State]
   
-  @js.native
   trait StatefulContainerProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var initialState: js.UndefOr[State] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var numPages: Double = js.native
+    var numPages: Double
     
-    var onPageChange: js.UndefOr[js.Function1[/* args */ NextPage, _]] = js.native
+    var onPageChange: js.UndefOr[js.Function1[/* args */ NextPage, js.Any]] = js.undefined
     
-    var stateReducer: js.UndefOr[StateReducer] = js.native
+    var stateReducer: js.UndefOr[StateReducer] = js.undefined
   }
   object StatefulContainerProps {
     
@@ -404,7 +397,7 @@ object paginationMod {
       def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPageChange(value: /* args */ NextPage => _): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
+      def setOnPageChange(value: /* args */ NextPage => js.Any): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
@@ -417,18 +410,19 @@ object paginationMod {
     }
   }
   
-  @js.native
-  trait StatefulPaginationProps extends Callbacks {
+  trait StatefulPaginationProps
+    extends StObject
+       with Callbacks {
     
-    var initialState: js.UndefOr[State] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var labels: js.UndefOr[Labels] = js.native
+    var labels: js.UndefOr[Labels] = js.undefined
     
-    var numPages: Double = js.native
+    var numPages: Double
     
-    var overrides: js.UndefOr[PaginationOverrides] = js.native
+    var overrides: js.UndefOr[PaginationOverrides] = js.undefined
     
-    var stateReducer: js.UndefOr[StateReducer] = js.native
+    var stateReducer: js.UndefOr[StateReducer] = js.undefined
   }
   object StatefulPaginationProps {
     

@@ -2,16 +2,14 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INotifyHostEventHandler extends StObject {
   
   @JSName("InfoPath.INotifyHostEventHandler_typekey")
-  var InfoPathDotINotifyHostEventHandler_typekey: INotifyHostEventHandler = js.native
+  var InfoPathDotINotifyHostEventHandler_typekey: INotifyHostEventHandler
   
-  def NotifyHostEventHandler(punkSender: js.Any, bstrNotification: String): Unit = js.native
+  def NotifyHostEventHandler(punkSender: js.Any, bstrNotification: String): Unit
 }
 object INotifyHostEventHandler {
   

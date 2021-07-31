@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the template.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the template was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the template was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.native
+  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
   
   /**
     * The name of the template.
     */
-  var name: js.UndefOr[TemplateName] = js.native
+  var name: js.UndefOr[TemplateName] = js.undefined
 }
 object TemplateSummary {
   

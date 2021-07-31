@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdmin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
   /** Machine readable code or warning type. The warning code value is 200. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /** Key-value pairs to give detailed information on the warning. */
-  var data: js.UndefOr[js.Array[Key]] = js.native
+  var data: js.UndefOr[js.Array[Key]] = js.undefined
   
   /**
     * The human readable messages for a warning are: - Data is not available warning - Sorry, data for date yyyy-mm-dd for application "application name" is not available. - Partial
     * data is available warning - Data for date yyyy-mm-dd for application "application name" is not available right now, please try again after a few hours.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object Code {
   

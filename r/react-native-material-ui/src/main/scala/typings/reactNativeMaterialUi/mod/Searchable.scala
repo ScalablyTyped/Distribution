@@ -6,29 +6,27 @@ import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.sentences
 import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.words
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Searchable extends StObject {
   
-  var autoCapitalize: js.UndefOr[none | sentences | words | characters] = js.native
+  var autoCapitalize: js.UndefOr[none | sentences | words | characters] = js.undefined
   
-  var autoCorrect: js.UndefOr[Boolean] = js.native
+  var autoCorrect: js.UndefOr[Boolean] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
+  var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
   
-  var onSearchCloseRequested: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSearchCloseRequested: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onSearchClosed: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSearchClosed: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onSearchPressed: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSearchPressed: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onSubmitEditing: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSubmitEditing: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
 }
 object Searchable {
   

@@ -3,22 +3,22 @@ package typings.reactMdForm.typesMod
 import typings.reactMdForm.reactMdFormStrings.maximum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SliderMaximumAction extends SliderAction {
+trait SliderMaximumAction
+  extends StObject
+     with SliderAction {
   
-  var max: Double = js.native
+  var max: Double
   
-  var `type`: maximum = js.native
+  var `type`: maximum
 }
 object SliderMaximumAction {
   
   @scala.inline
-  def apply(max: Double, `type`: maximum): SliderMaximumAction = {
+  def apply(max: Double): SliderMaximumAction = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("maximum")
     __obj.asInstanceOf[SliderMaximumAction]
   }
   

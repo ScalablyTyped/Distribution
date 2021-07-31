@@ -8,7 +8,6 @@ import typings.officeJs.officeJsStrings.PinYin
 import typings.officeJs.officeJsStrings.StrokeCount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.2]
   */
 @js.native
-trait TableSort extends ClientObject {
+trait TableSort
+  extends StObject
+     with ClientObject {
   
   /**
     * Perform a sort operation.
@@ -32,19 +33,19 @@ trait TableSort extends ClientObject {
   @JSName("apply")
   def apply(fields: js.Array[SortField]): Unit = js.native
   @JSName("apply")
-  def apply(fields: js.Array[SortField], matchCase: js.UndefOr[scala.Nothing], method: SortMethod): Unit = js.native
-  @JSName("apply")
   def apply(fields: js.Array[SortField], matchCase: Boolean): Unit = js.native
   @JSName("apply")
   def apply(fields: js.Array[SortField], matchCase: Boolean, method: SortMethod): Unit = js.native
   @JSName("apply")
-  def apply_PinYin(fields: js.Array[SortField], matchCase: js.UndefOr[scala.Nothing], method: PinYin): Unit = js.native
+  def apply(fields: js.Array[SortField], matchCase: Unit, method: SortMethod): Unit = js.native
   @JSName("apply")
   def apply_PinYin(fields: js.Array[SortField], matchCase: Boolean, method: PinYin): Unit = js.native
   @JSName("apply")
-  def apply_StrokeCount(fields: js.Array[SortField], matchCase: js.UndefOr[scala.Nothing], method: StrokeCount): Unit = js.native
+  def apply_PinYin(fields: js.Array[SortField], matchCase: Unit, method: PinYin): Unit = js.native
   @JSName("apply")
   def apply_StrokeCount(fields: js.Array[SortField], matchCase: Boolean, method: StrokeCount): Unit = js.native
+  @JSName("apply")
+  def apply_StrokeCount(fields: js.Array[SortField], matchCase: Unit, method: StrokeCount): Unit = js.native
   
   /**
     * Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.

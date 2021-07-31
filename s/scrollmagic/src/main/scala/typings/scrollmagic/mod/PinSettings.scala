@@ -2,15 +2,13 @@ package typings.scrollmagic.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PinSettings extends StObject {
   
-  var pushFollowers: js.UndefOr[Boolean] = js.native
+  var pushFollowers: js.UndefOr[Boolean] = js.undefined
   
-  var spacerClass: js.UndefOr[String] = js.native
+  var spacerClass: js.UndefOr[String] = js.undefined
 }
 object PinSettings {
   

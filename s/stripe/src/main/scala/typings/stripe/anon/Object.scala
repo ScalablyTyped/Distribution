@@ -6,17 +6,15 @@ import typings.stripe.stripeStrings.bitcoin_receiver
 import typings.stripe.stripeStrings.card
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Object extends StObject {
   
   /**
     * Return charges that match this source type string. Available options are
     * "all", "alipay_account", "bitcoin_receiver", or "card".
     */
-  var `object`: all | alipay_account | bitcoin_receiver | card = js.native
+  var `object`: all | alipay_account | bitcoin_receiver | card
 }
 object Object {
   

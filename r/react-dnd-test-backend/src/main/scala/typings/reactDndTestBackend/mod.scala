@@ -5,10 +5,13 @@ import typings.dndCore.interfacesMod.DragDropManager
 import typings.reactDndTestBackend.testBackendMod.ITestBackend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-dnd-test-backend", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-dnd-test-backend", "TestBackend")
   @js.native
@@ -21,11 +24,9 @@ object mod {
     def this(manager: DragDropManager) = this()
   }
   
-  @JSImport("react-dnd-test-backend", "clearInstance")
-  @js.native
-  def clearInstance(): Unit = js.native
+  @scala.inline
+  def clearInstance(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInstance")().asInstanceOf[Unit]
   
-  @JSImport("react-dnd-test-backend", "getInstance")
-  @js.native
-  def getInstance(): js.UndefOr[ITestBackend] = js.native
+  @scala.inline
+  def getInstance(): js.UndefOr[ITestBackend] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.UndefOr[ITestBackend]]
 }

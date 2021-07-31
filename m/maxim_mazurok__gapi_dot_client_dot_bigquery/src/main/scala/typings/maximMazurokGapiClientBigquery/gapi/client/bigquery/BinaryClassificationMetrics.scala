@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BinaryClassificationMetrics extends StObject {
   
   /** Aggregate classification metrics. */
-  var aggregateClassificationMetrics: js.UndefOr[AggregateClassificationMetrics] = js.native
+  var aggregateClassificationMetrics: js.UndefOr[AggregateClassificationMetrics] = js.undefined
   
   /** Binary confusion matrix at multiple thresholds. */
-  var binaryConfusionMatrixList: js.UndefOr[js.Array[BinaryConfusionMatrix]] = js.native
+  var binaryConfusionMatrixList: js.UndefOr[js.Array[BinaryConfusionMatrix]] = js.undefined
   
   /** Label representing the negative class. */
-  var negativeLabel: js.UndefOr[String] = js.native
+  var negativeLabel: js.UndefOr[String] = js.undefined
   
   /** Label representing the positive class. */
-  var positiveLabel: js.UndefOr[String] = js.native
+  var positiveLabel: js.UndefOr[String] = js.undefined
 }
 object BinaryClassificationMetrics {
   

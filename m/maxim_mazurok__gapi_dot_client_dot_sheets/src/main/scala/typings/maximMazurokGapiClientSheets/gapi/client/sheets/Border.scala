@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Border extends StObject {
   
   /** The color of the border. */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /** The color of the border. If color is also set, this field takes precedence. */
-  var colorStyle: js.UndefOr[ColorStyle] = js.native
+  var colorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The style of the border. */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /** The width of the border, in pixels. Deprecated; the width is determined by the "style" field. */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Border {
   

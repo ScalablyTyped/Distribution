@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRichEdit.AutoCorrect event.
   */
-@js.native
-trait ASPxClientRichEditAutoCorrectEventArgs extends ASPxClientEventArgs {
+trait ASPxClientRichEditAutoCorrectEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Specifies whether the event is handled.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   
   /**
     * Gets the input string's interval.
     */
-  var interval: Interval = js.native
+  var interval: Interval
   
   /**
     * Gets the input string to check whether it should be replaced.
     */
-  var text: String = js.native
+  var text: String
 }
 object ASPxClientRichEditAutoCorrectEventArgs {
   

@@ -2,20 +2,18 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalOptionsBackdropString extends StObject {
   
-  var backdrop: js.UndefOr[String] = js.native
+  var backdrop: js.UndefOr[String] = js.undefined
   
   // for "static"
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var remote: js.UndefOr[String] = js.native
+  var remote: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object ModalOptionsBackdropString {
   

@@ -3,23 +3,21 @@ package typings.pubnub.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Objects v1
 // Object
-@js.native
 trait ObjectData extends StObject {
   
-  var created: String = js.native
+  var created: String
   
-  var custom: js.UndefOr[StringDictionary[String] | Null] = js.native
+  var custom: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
-  var eTag: String = js.native
+  var eTag: String
   
-  var id: String = js.native
+  var id: String
   
-  var updated: String = js.native
+  var updated: String
 }
 object ObjectData {
   

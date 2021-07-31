@@ -2,91 +2,89 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceNetworkInterface extends StObject {
   
   /**
     * The association information for an Elastic IPv4 associated with the network interface.
     */
-  var Association: js.UndefOr[InstanceNetworkInterfaceAssociation] = js.native
+  var Association: js.UndefOr[InstanceNetworkInterfaceAssociation] = js.undefined
   
   /**
     * The network interface attachment.
     */
-  var Attachment: js.UndefOr[InstanceNetworkInterfaceAttachment] = js.native
+  var Attachment: js.UndefOr[InstanceNetworkInterfaceAttachment] = js.undefined
   
   /**
     * The description.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * One or more security groups.
     */
-  var Groups: js.UndefOr[GroupIdentifierList] = js.native
+  var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
   
   /**
     * Describes the type of network interface. Valid values: interface | efa 
     */
-  var InterfaceType: js.UndefOr[String] = js.native
+  var InterfaceType: js.UndefOr[String] = js.undefined
   
   /**
     * One or more IPv6 addresses associated with the network interface.
     */
-  var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressList] = js.native
+  var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressList] = js.undefined
   
   /**
     * The MAC address.
     */
-  var MacAddress: js.UndefOr[String] = js.native
+  var MacAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.native
+  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the AWS account that created the network interface.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The private DNS name.
     */
-  var PrivateDnsName: js.UndefOr[String] = js.native
+  var PrivateDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv4 address of the network interface within the subnet.
     */
-  var PrivateIpAddress: js.UndefOr[String] = js.native
+  var PrivateIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * One or more private IPv4 addresses associated with the network interface.
     */
-  var PrivateIpAddresses: js.UndefOr[InstancePrivateIpAddressList] = js.native
+  var PrivateIpAddresses: js.UndefOr[InstancePrivateIpAddressList] = js.undefined
   
   /**
     * Indicates whether to validate network traffic to or from this network interface.
     */
-  var SourceDestCheck: js.UndefOr[Boolean] = js.native
+  var SourceDestCheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The status of the network interface.
     */
-  var Status: js.UndefOr[NetworkInterfaceStatus] = js.native
+  var Status: js.UndefOr[NetworkInterfaceStatus] = js.undefined
   
   /**
     * The ID of the subnet.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the VPC.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object InstanceNetworkInterface {
   

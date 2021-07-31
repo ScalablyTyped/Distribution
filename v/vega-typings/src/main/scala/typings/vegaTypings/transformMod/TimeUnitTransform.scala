@@ -5,34 +5,34 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.timeunit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeUnitTransform extends _Transforms {
+trait TimeUnitTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
-  var field: FieldRef = js.native
+  var field: FieldRef
   
-  var interval: js.UndefOr[Boolean | SignalRef] = js.native
+  var interval: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var signal: js.UndefOr[SignalName] = js.native
+  var signal: js.UndefOr[SignalName] = js.undefined
   
-  var step: js.UndefOr[Double | SignalRef] = js.native
+  var step: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var timezone: js.UndefOr[TimeZone | SignalRef] = js.native
+  var timezone: js.UndefOr[TimeZone | SignalRef] = js.undefined
   
-  var `type`: timeunit = js.native
+  var `type`: timeunit
   
-  var units: js.UndefOr[(js.Array[TimeUnit | SignalRef]) | SignalRef] = js.native
+  var units: js.UndefOr[(js.Array[TimeUnit | SignalRef]) | SignalRef] = js.undefined
 }
 object TimeUnitTransform {
   
   @scala.inline
-  def apply(field: FieldRef, `type`: timeunit): TimeUnitTransform = {
+  def apply(field: FieldRef): TimeUnitTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("timeunit")
     __obj.asInstanceOf[TimeUnitTransform]
   }
   

@@ -12,7 +12,6 @@ import typings.twilioChat.sessionerrorMod.SessionError
 import typings.twilioMcsClient.mod.McsClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod {
@@ -144,12 +143,11 @@ object messageMod {
       def lastUpdatedBy: typings.twilioChat.twilioChatStrings.lastUpdatedBy = "lastUpdatedBy".asInstanceOf[typings.twilioChat.twilioChatStrings.lastUpdatedBy]
     }
     
-    @js.native
     trait UpdatedEventArgs extends StObject {
       
-      var message: Message = js.native
+      var message: Message
       
-      var updateReasons: js.Array[UpdateReason] = js.native
+      var updateReasons: js.Array[UpdateReason]
     }
     object UpdatedEventArgs {
       
@@ -174,12 +172,11 @@ object messageMod {
     }
   }
   
-  @js.native
   trait MessageServices extends StObject {
     
-    var mcsClient: McsClient = js.native
+    var mcsClient: McsClient
     
-    var session: Session = js.native
+    var session: Session
   }
   object MessageServices {
     

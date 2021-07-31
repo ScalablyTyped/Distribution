@@ -2,31 +2,29 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemporaryCredential extends StObject {
   
   /**
     * The instance's AWS OpsWorks Stacks ID.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The password.
     */
-  var Password: js.UndefOr[String] = js.native
+  var Password: js.UndefOr[String] = js.undefined
   
   /**
     * The user name.
     */
-  var Username: js.UndefOr[String] = js.native
+  var Username: js.UndefOr[String] = js.undefined
   
   /**
     * The length of time (in minutes) that the grant is valid. When the grant expires, at the end of this period, the user will no longer be able to use the credentials to log in. If they are logged in at the time, they will be automatically logged out.
     */
-  var ValidForInMinutes: js.UndefOr[Integer] = js.native
+  var ValidForInMinutes: js.UndefOr[Integer] = js.undefined
 }
 object TemporaryCredential {
   

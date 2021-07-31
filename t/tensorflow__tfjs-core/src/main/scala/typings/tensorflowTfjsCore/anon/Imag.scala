@@ -3,15 +3,13 @@ package typings.tensorflowTfjsCore.anon
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Imag extends StObject {
   
-  var imag: Float32Array = js.native
+  var imag: Float32Array
   
-  var real: Float32Array = js.native
+  var real: Float32Array
 }
 object Imag {
   

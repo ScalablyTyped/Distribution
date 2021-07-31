@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pubnub.anon.Actions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FetchMessagesResponse extends StObject {
   
-  var channels: StringDictionary[js.Array[Actions]] = js.native
+  var channels: StringDictionary[js.Array[Actions]]
 }
 object FetchMessagesResponse {
   

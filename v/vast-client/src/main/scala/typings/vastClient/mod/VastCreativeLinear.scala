@@ -2,27 +2,27 @@ package typings.vastClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VastCreativeLinear extends VastCreative {
+trait VastCreativeLinear
+  extends StObject
+     with VastCreative {
   
-  var adParameters: String | Null = js.native
+  var adParameters: String | Null
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var icons: js.Array[VastIcon] = js.native
+  var icons: js.Array[VastIcon]
   
-  var mediaFiles: js.Array[VastMediaFile] = js.native
+  var mediaFiles: js.Array[VastMediaFile]
   
-  var skipDelay: Double | Null = js.native
+  var skipDelay: Double | Null
   
-  var videoClickThroughURLTemplate: String | Null = js.native
+  var videoClickThroughURLTemplate: String | Null
   
-  var videoClickTrackingURLTemplates: js.Array[String] = js.native
+  var videoClickTrackingURLTemplates: js.Array[String]
   
-  var videoCustomClickURLTemplates: js.Array[String] = js.native
+  var videoCustomClickURLTemplates: js.Array[String]
 }
 object VastCreativeLinear {
   
@@ -36,7 +36,7 @@ object VastCreativeLinear {
     videoClickTrackingURLTemplates: js.Array[String],
     videoCustomClickURLTemplates: js.Array[String]
   ): VastCreativeLinear = {
-    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], mediaFiles = mediaFiles.asInstanceOf[js.Any], trackingEvents = trackingEvents.asInstanceOf[js.Any], videoClickTrackingURLTemplates = videoClickTrackingURLTemplates.asInstanceOf[js.Any], videoCustomClickURLTemplates = videoCustomClickURLTemplates.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], mediaFiles = mediaFiles.asInstanceOf[js.Any], trackingEvents = trackingEvents.asInstanceOf[js.Any], videoClickTrackingURLTemplates = videoClickTrackingURLTemplates.asInstanceOf[js.Any], videoCustomClickURLTemplates = videoCustomClickURLTemplates.asInstanceOf[js.Any], adId = null, adParameters = null, apiFramework = null, id = null, sequence = null, skipDelay = null, videoClickThroughURLTemplate = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastCreativeLinear]
   }

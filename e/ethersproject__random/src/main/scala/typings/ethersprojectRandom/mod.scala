@@ -3,16 +3,17 @@ package typings.ethersprojectRandom
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@ethersproject/random", "randomBytes")
+  @JSImport("@ethersproject/random", JSImport.Namespace)
   @js.native
-  def randomBytes(length: Double): Uint8Array = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ethersproject/random", "shuffled")
-  @js.native
-  def shuffled(array: js.Array[_]): js.Array[_] = js.native
+  @scala.inline
+  def randomBytes(length: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(length.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  
+  @scala.inline
+  def shuffled(array: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffled")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
 }

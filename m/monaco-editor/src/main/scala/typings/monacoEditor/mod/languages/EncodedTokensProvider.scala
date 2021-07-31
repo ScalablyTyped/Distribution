@@ -2,21 +2,19 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncodedTokensProvider extends StObject {
   
   /**
     * The initial state of a language. Will be the state passed in to tokenize the first line.
     */
-  def getInitialState(): IState = js.native
+  def getInitialState(): IState
   
   /**
     * Tokenize a line given the state at the beginning of the line.
     */
-  def tokenizeEncoded(line: String, state: IState): IEncodedLineTokens = js.native
+  def tokenizeEncoded(line: String, state: IState): IEncodedLineTokens
 }
 object EncodedTokensProvider {
   

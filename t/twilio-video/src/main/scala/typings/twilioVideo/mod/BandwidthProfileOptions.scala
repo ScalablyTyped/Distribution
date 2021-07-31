@@ -2,13 +2,11 @@ package typings.twilioVideo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BandwidthProfileOptions extends StObject {
   
-  var video: js.UndefOr[VideoBandwidthProfileOptions] = js.native
+  var video: js.UndefOr[VideoBandwidthProfileOptions] = js.undefined
 }
 object BandwidthProfileOptions {
   

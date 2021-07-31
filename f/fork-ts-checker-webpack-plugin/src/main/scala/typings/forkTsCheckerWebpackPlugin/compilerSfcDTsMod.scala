@@ -5,17 +5,17 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compilerSfcDTsMod {
   
-  @js.native
-  trait CompilerError extends Error {
+  trait CompilerError
+    extends StObject
+       with Error {
     
-    var code: Double = js.native
+    var code: Double
     
-    var loc: js.UndefOr[SourceLocation] = js.native
+    var loc: js.UndefOr[SourceLocation] = js.undefined
   }
   object CompilerError {
     
@@ -39,14 +39,13 @@ object compilerSfcDTsMod {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Position {
     
@@ -70,20 +69,19 @@ object compilerSfcDTsMod {
     }
   }
   
-  @js.native
   trait SFCBlock extends StObject {
     
-    var attrs: Record[String, String | `true`] = js.native
+    var attrs: Record[String, String | `true`]
     
-    var content: String = js.native
+    var content: String
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var loc: SourceLocation = js.native
+    var loc: SourceLocation
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SFCBlock {
     
@@ -123,24 +121,23 @@ object compilerSfcDTsMod {
     }
   }
   
-  @js.native
   trait SFCDescriptor extends StObject {
     
-    var customBlocks: js.Array[SFCBlock] = js.native
+    var customBlocks: js.Array[SFCBlock]
     
-    var filename: String = js.native
+    var filename: String
     
-    var script: SFCBlock | Null = js.native
+    var script: SFCBlock | Null
     
-    var styles: js.Array[SFCBlock] = js.native
+    var styles: js.Array[SFCBlock]
     
-    var template: SFCBlock | Null = js.native
+    var template: SFCBlock | Null
   }
   object SFCDescriptor {
     
     @scala.inline
     def apply(customBlocks: js.Array[SFCBlock], filename: String, styles: js.Array[SFCBlock]): SFCDescriptor = {
-      val __obj = js.Dynamic.literal(customBlocks = customBlocks.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(customBlocks = customBlocks.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], script = null, template = null)
       __obj.asInstanceOf[SFCDescriptor]
     }
     
@@ -176,12 +173,11 @@ object compilerSfcDTsMod {
     }
   }
   
-  @js.native
   trait SFCParseResult extends StObject {
     
-    var descriptor: SFCDescriptor = js.native
+    var descriptor: SFCDescriptor
     
-    var errors: js.Array[CompilerError] = js.native
+    var errors: js.Array[CompilerError]
   }
   object SFCParseResult {
     
@@ -205,14 +201,13 @@ object compilerSfcDTsMod {
     }
   }
   
-  @js.native
   trait SourceLocation extends StObject {
     
-    var end: Position = js.native
+    var end: Position
     
-    var source: String = js.native
+    var source: String
     
-    var start: Position = js.native
+    var start: Position
   }
   object SourceLocation {
     

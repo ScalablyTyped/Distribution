@@ -2,17 +2,15 @@ package typings.kolite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KoLiteActivityDefaultOptions extends StObject {
   
-  var activityClass: js.UndefOr[String] = js.native
+  var activityClass: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var inactiveClass: js.UndefOr[String] = js.native
+  var inactiveClass: js.UndefOr[String] = js.undefined
 }
 object KoLiteActivityDefaultOptions {
   

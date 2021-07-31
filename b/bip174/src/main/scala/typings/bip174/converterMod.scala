@@ -15,7 +15,6 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object converterMod {
@@ -26,9 +25,8 @@ object converterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("bip174/src/lib/converter", "globals.checkPubkey")
-    @js.native
-    def checkPubkey(keyVal: KeyValue): js.UndefOr[Buffer] = js.native
+    @scala.inline
+    def checkPubkey(keyVal: KeyValue): js.UndefOr[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkPubkey")(keyVal.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Buffer]]
     
     @JSImport("bip174/src/lib/converter", "globals.globalXpub")
     @js.native
@@ -55,9 +53,8 @@ object converterMod {
     @scala.inline
     def bip32Derivation_=(x: CanAddToArray): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bip32Derivation")(x.asInstanceOf[js.Any])
     
-    @JSImport("bip174/src/lib/converter", "inputs.checkPubkey")
-    @js.native
-    def checkPubkey(keyVal: KeyValue): js.UndefOr[Buffer] = js.native
+    @scala.inline
+    def checkPubkey(keyVal: KeyValue): js.UndefOr[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkPubkey")(keyVal.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Buffer]]
     
     @JSImport("bip174/src/lib/converter", "inputs.finalScriptSig")
     @js.native
@@ -126,9 +123,8 @@ object converterMod {
     @scala.inline
     def bip32Derivation_=(x: CanAddToArray): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bip32Derivation")(x.asInstanceOf[js.Any])
     
-    @JSImport("bip174/src/lib/converter", "outputs.checkPubkey")
-    @js.native
-    def checkPubkey(keyVal: KeyValue): js.UndefOr[Buffer] = js.native
+    @scala.inline
+    def checkPubkey(keyVal: KeyValue): js.UndefOr[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkPubkey")(keyVal.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Buffer]]
     
     @JSImport("bip174/src/lib/converter", "outputs.redeemScript")
     @js.native

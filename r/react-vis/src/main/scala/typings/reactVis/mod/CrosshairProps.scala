@@ -7,33 +7,31 @@ import typings.reactVis.reactVisStrings.left
 import typings.reactVis.reactVisStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrosshairProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var innerHeight: js.UndefOr[Double] = js.native
+  var innerHeight: js.UndefOr[Double] = js.undefined
   
-  var innerWidth: js.UndefOr[Double] = js.native
+  var innerWidth: js.UndefOr[Double] = js.undefined
   
-  var itemsFormat: js.UndefOr[js.Function1[/* x */ js.Any, js.Array[Title]]] = js.native
+  var itemsFormat: js.UndefOr[js.Function1[/* x */ js.Any, js.Array[Title]]] = js.undefined
   
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[left | right] = js.native
+  var orientation: js.UndefOr[left | right] = js.undefined
   
-  var series: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var series: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var style: js.UndefOr[Box] = js.native
+  var style: js.UndefOr[Box] = js.undefined
   
-  var titleFormat: js.UndefOr[js.Function1[/* x */ js.Any, Title]] = js.native
+  var titleFormat: js.UndefOr[js.Function1[/* x */ js.Any, Title]] = js.undefined
   
-  var values: js.UndefOr[js.Array[_]] = js.native
+  var values: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object CrosshairProps {
   
@@ -107,7 +105,7 @@ object CrosshairProps {
     def setTitleFormatUndefined: Self = StObject.set(x, "titleFormat", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

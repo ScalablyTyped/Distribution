@@ -2,24 +2,22 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/ListSubheader/ListSubheader.ListSubheaderClassKey>> */
-@js.native
 trait PartialClassNameMapListSu extends StObject {
   
-  var colorInherit: js.UndefOr[String] = js.native
+  var colorInherit: js.UndefOr[String] = js.undefined
   
-  var colorPrimary: js.UndefOr[String] = js.native
+  var colorPrimary: js.UndefOr[String] = js.undefined
   
-  var gutters: js.UndefOr[String] = js.native
+  var gutters: js.UndefOr[String] = js.undefined
   
-  var inset: js.UndefOr[String] = js.native
+  var inset: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var sticky: js.UndefOr[String] = js.native
+  var sticky: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapListSu {
   

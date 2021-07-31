@@ -2,29 +2,27 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Success response to a new file creation request.
   */
-@js.native
 trait INewFileResponse extends StObject {
   
   /**
     * ID of the new item.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The file's name and file extension.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * URL where the item can be downloaded from.
     */
-  var source: String = js.native
+  var source: String
 }
 object INewFileResponse {
   

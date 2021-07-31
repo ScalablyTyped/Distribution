@@ -2,21 +2,19 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFileInfoData extends StObject {
   
   /**
     * 创建时间
     */
-  var createTime: Double = js.native
+  var createTime: Double
   
   /**
     * 文件大小，单位B
     */
-  var size: Double = js.native
+  var size: Double
 }
 object SavedFileInfoData {
   

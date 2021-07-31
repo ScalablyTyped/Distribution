@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAppInstanceUserResponse extends StObject {
   
   /**
     * The name of the app instance user.
     */
-  var AppInstanceUser: js.UndefOr[typings.awsSdk.chimeMod.AppInstanceUser] = js.native
+  var AppInstanceUser: js.UndefOr[typings.awsSdk.chimeMod.AppInstanceUser] = js.undefined
 }
 object DescribeAppInstanceUserResponse {
   

@@ -2,83 +2,81 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageEvent extends StObject {
   
   /** Classification code for a given message (see [Bounce Classification Codes](https://support.sparkpost.com/customer/portal/articles/1929896)) */
-  var bounce_class: String = js.native
+  var bounce_class: String
   
   /** Campaign of which this message was a part */
-  var campaign_id: String = js.native
+  var campaign_id: String
   
   /** SparkPost-customer identifier through which this message was sent */
-  var customer_id: String = js.native
+  var customer_id: String
   
   /** Protocol by which SparkPost delivered this message */
-  var delv_method: String = js.native
+  var delv_method: String
   
   /** Token of the device / application targeted by this PUSH notification message. Applies only when delv_method is gcm or apn. */
-  var device_token: String = js.native
+  var device_token: String
   
   /** Error code by which the remote server described a failed delivery attempt */
-  var error_code: String = js.native
+  var error_code: String
   
   /** IP address of the host to which SparkPost delivered this message; in engagement events, the IP address of the host where the HTTP request originated */
-  var ip_address: String = js.native
+  var ip_address: String
   
   /** SparkPost-cluster-wide unique identifier for this message */
-  var message_id: String = js.native
+  var message_id: String
   
   /** Sender address used on this message"s SMTP envelope */
-  var msg_from: String = js.native
+  var msg_from: String
   
   /** Message"s size in bytes */
-  var msg_size: String = js.native
+  var msg_size: String
   
   /** Number of failed attempts before this message was successfully delivered; when the first attempt succeeds, zero */
-  var num_retries: String = js.native
+  var num_retries: String
   
   /** Unmodified, exact response returned by the remote server due to a failed delivery attempt */
-  var raw_reason: String = js.native
+  var raw_reason: String
   
   /** Metadata describing the message recipient */
-  var rcpt_meta: js.Any = js.native
+  var rcpt_meta: js.Any
   
   /** Tags applied to the message which generated this event */
-  var rcpt_tags: js.Array[String] = js.native
+  var rcpt_tags: js.Array[String]
   
   /** Recipient address used on this message"s SMTP envelope */
-  var rcpt_to: String = js.native
+  var rcpt_to: String
   
   /** Indicates that a recipient address appeared in the Cc or Bcc header or the archive JSON array */
-  var rcpt_type: String = js.native
+  var rcpt_type: String
   
   /** Canonicalized text of the response returned by the remote server due to a failed delivery attempt */
-  var reason: String = js.native
+  var reason: String
   
   /** Domain receiving this message */
-  var routing_domain: String = js.native
+  var routing_domain: String
   
   /** Subject line from the email header */
-  var subject: String = js.native
+  var subject: String
   
   /** Slug of the template used to construct this message */
-  var template_id: String = js.native
+  var template_id: String
   
   /** Version of the template used to construct this message */
-  var template_version: String = js.native
+  var template_version: String
   
   /** Event date and time formatted as: YYYY-MM-DDTHH:MM:SS.SSS±hh:mm */
-  var timestamp: String = js.native
+  var timestamp: String
   
   /** Transmission which originated this message */
-  var transmission_id: String = js.native
+  var transmission_id: String
   
   /** Type of event this record describes */
-  var `type`: String = js.native
+  var `type`: String
 }
 object MessageEvent {
   

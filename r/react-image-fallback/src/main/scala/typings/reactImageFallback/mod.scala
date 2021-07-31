@@ -9,7 +9,6 @@ import typings.std.Event
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,31 +17,30 @@ object mod {
   @js.native
   class default ()
     extends Component[
-          ReactImageFallbackProps with (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]), 
+          ReactImageFallbackProps & (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]), 
           js.Any, 
           js.Any
         ]
   
   type ReactImageFallback = Component[
-    ReactImageFallbackProps with (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]), 
+    ReactImageFallbackProps & (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]), 
     js.Any, 
     js.Any
   ]
   
-  @js.native
   trait ReactImageFallbackProps extends StObject {
     
-    var fallbackImage: String | ReactElement | (js.Array[ReactElement | String]) = js.native
+    var fallbackImage: String | ReactElement | (js.Array[ReactElement | String])
     
-    var initialImage: js.UndefOr[String | ReactElement] = js.native
+    var initialImage: js.UndefOr[String | ReactElement] = js.undefined
     
-    var initialTimeout: js.UndefOr[Double] = js.native
+    var initialTimeout: js.UndefOr[Double] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLImageElement, Event], Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLImageElement, Event], Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLImageElement, Event], Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLImageElement, Event], Unit]] = js.undefined
     
-    var src: String = js.native
+    var src: String
   }
   object ReactImageFallbackProps {
     

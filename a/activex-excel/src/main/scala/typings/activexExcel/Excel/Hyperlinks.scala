@@ -2,7 +2,6 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,57 +11,21 @@ trait Hyperlinks extends StObject {
   def apply(Index: Double): Hyperlink = js.native
   
   def Add(Anchor: Range, Address: String): Hyperlink = js.native
-  def Add(
-    Anchor: Range,
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    ScreenTip: js.UndefOr[scala.Nothing],
-    TextToDisplay: String
-  ): Hyperlink = js.native
-  def Add(Anchor: Range, Address: String, SubAddress: js.UndefOr[scala.Nothing], ScreenTip: String): Hyperlink = js.native
-  def Add(
-    Anchor: Range,
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    ScreenTip: String,
-    TextToDisplay: String
-  ): Hyperlink = js.native
   def Add(Anchor: Range, Address: String, SubAddress: String): Hyperlink = js.native
-  def Add(
-    Anchor: Range,
-    Address: String,
-    SubAddress: String,
-    ScreenTip: js.UndefOr[scala.Nothing],
-    TextToDisplay: String
-  ): Hyperlink = js.native
   def Add(Anchor: Range, Address: String, SubAddress: String, ScreenTip: String): Hyperlink = js.native
   def Add(Anchor: Range, Address: String, SubAddress: String, ScreenTip: String, TextToDisplay: String): Hyperlink = js.native
+  def Add(Anchor: Range, Address: String, SubAddress: String, ScreenTip: Unit, TextToDisplay: String): Hyperlink = js.native
+  def Add(Anchor: Range, Address: String, SubAddress: Unit, ScreenTip: String): Hyperlink = js.native
+  def Add(Anchor: Range, Address: String, SubAddress: Unit, ScreenTip: String, TextToDisplay: String): Hyperlink = js.native
+  def Add(Anchor: Range, Address: String, SubAddress: Unit, ScreenTip: Unit, TextToDisplay: String): Hyperlink = js.native
   def Add(Anchor: Shape, Address: String): Hyperlink = js.native
-  def Add(
-    Anchor: Shape,
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    ScreenTip: js.UndefOr[scala.Nothing],
-    TextToDisplay: String
-  ): Hyperlink = js.native
-  def Add(Anchor: Shape, Address: String, SubAddress: js.UndefOr[scala.Nothing], ScreenTip: String): Hyperlink = js.native
-  def Add(
-    Anchor: Shape,
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    ScreenTip: String,
-    TextToDisplay: String
-  ): Hyperlink = js.native
   def Add(Anchor: Shape, Address: String, SubAddress: String): Hyperlink = js.native
-  def Add(
-    Anchor: Shape,
-    Address: String,
-    SubAddress: String,
-    ScreenTip: js.UndefOr[scala.Nothing],
-    TextToDisplay: String
-  ): Hyperlink = js.native
   def Add(Anchor: Shape, Address: String, SubAddress: String, ScreenTip: String): Hyperlink = js.native
   def Add(Anchor: Shape, Address: String, SubAddress: String, ScreenTip: String, TextToDisplay: String): Hyperlink = js.native
+  def Add(Anchor: Shape, Address: String, SubAddress: String, ScreenTip: Unit, TextToDisplay: String): Hyperlink = js.native
+  def Add(Anchor: Shape, Address: String, SubAddress: Unit, ScreenTip: String): Hyperlink = js.native
+  def Add(Anchor: Shape, Address: String, SubAddress: Unit, ScreenTip: String, TextToDisplay: String): Hyperlink = js.native
+  def Add(Anchor: Shape, Address: String, SubAddress: Unit, ScreenTip: Unit, TextToDisplay: String): Hyperlink = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   

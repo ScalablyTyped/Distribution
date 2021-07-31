@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFacetResponse extends StObject {
   
   /**
     * The Facet structure that is associated with the facet.
     */
-  var Facet: js.UndefOr[typings.awsSdk.clouddirectoryMod.Facet] = js.native
+  var Facet: js.UndefOr[typings.awsSdk.clouddirectoryMod.Facet] = js.undefined
 }
 object GetFacetResponse {
   

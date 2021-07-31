@@ -3,19 +3,17 @@ package typings.sqlFormatter
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Indent extends StObject {
     
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[StringDictionary[String] | js.Array[String]] = js.native
+    var params: js.UndefOr[StringDictionary[String] | js.Array[String]] = js.undefined
   }
   object Indent {
     

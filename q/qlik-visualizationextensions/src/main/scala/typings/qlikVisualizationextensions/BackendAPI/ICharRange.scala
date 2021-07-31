@@ -2,23 +2,21 @@ package typings.qlikVisualizationextensions.BackendAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICharRange extends StObject {
   
   /**
     * Number of occurrences found
     * Integer
     */
-  var qCharCount: Double = js.native
+  var qCharCount: Double
   
   /**
     * Position of the first search occurrence
     * Integer
     */
-  var qCharPos: Double = js.native
+  var qCharPos: Double
 }
 object ICharRange {
   

@@ -5,7 +5,6 @@ import typings.simplestorageJs.mod.simplestoragejs.SimpleStorage
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,13 +20,12 @@ object mod extends Shortcut {
   
   object simplestoragejs {
     
-    @js.native
     trait SetOptions extends StObject {
       
       /**
         * Sets the time-to-live (TTL) value in milliseconds for the given key/value.
         */
-      var TTL: js.UndefOr[Double] = js.native
+      var TTL: js.UndefOr[Double] = js.undefined
     }
     object SetOptions {
       

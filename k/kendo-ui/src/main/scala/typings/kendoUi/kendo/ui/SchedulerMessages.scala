@@ -2,55 +2,53 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerMessages extends StObject {
   
-  var allDay: js.UndefOr[String] = js.native
+  var allDay: js.UndefOr[String] = js.undefined
   
-  var ariaEventLabel: js.UndefOr[String] = js.native
+  var ariaEventLabel: js.UndefOr[String] = js.undefined
   
-  var ariaSlotLabel: js.UndefOr[String] = js.native
+  var ariaSlotLabel: js.UndefOr[String] = js.undefined
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
-  var defaultRowText: js.UndefOr[String] = js.native
+  var defaultRowText: js.UndefOr[String] = js.undefined
   
-  var deleteWindowTitle: js.UndefOr[String] = js.native
+  var deleteWindowTitle: js.UndefOr[String] = js.undefined
   
-  var destroy: js.UndefOr[String] = js.native
+  var destroy: js.UndefOr[String] = js.undefined
   
-  var editable: js.UndefOr[SchedulerMessagesEditable] = js.native
+  var editable: js.UndefOr[SchedulerMessagesEditable] = js.undefined
   
-  var editor: js.UndefOr[SchedulerMessagesEditor] = js.native
+  var editor: js.UndefOr[SchedulerMessagesEditor] = js.undefined
   
-  var event: js.UndefOr[String] = js.native
+  var event: js.UndefOr[String] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var pdf: js.UndefOr[String] = js.native
+  var pdf: js.UndefOr[String] = js.undefined
   
-  var previous: js.UndefOr[String] = js.native
+  var previous: js.UndefOr[String] = js.undefined
   
-  var recurrenceEditor: js.UndefOr[SchedulerMessagesRecurrenceEditor] = js.native
+  var recurrenceEditor: js.UndefOr[SchedulerMessagesRecurrenceEditor] = js.undefined
   
-  var recurrenceMessages: js.UndefOr[SchedulerMessagesRecurrenceMessages] = js.native
+  var recurrenceMessages: js.UndefOr[SchedulerMessagesRecurrenceMessages] = js.undefined
   
-  var save: js.UndefOr[String] = js.native
+  var save: js.UndefOr[String] = js.undefined
   
-  var showFullDay: js.UndefOr[String] = js.native
+  var showFullDay: js.UndefOr[String] = js.undefined
   
-  var showWorkDay: js.UndefOr[String] = js.native
+  var showWorkDay: js.UndefOr[String] = js.undefined
   
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
   
-  var today: js.UndefOr[String] = js.native
+  var today: js.UndefOr[String] = js.undefined
   
-  var views: js.UndefOr[SchedulerMessagesViews] = js.native
+  var views: js.UndefOr[SchedulerMessagesViews] = js.undefined
 }
 object SchedulerMessages {
   

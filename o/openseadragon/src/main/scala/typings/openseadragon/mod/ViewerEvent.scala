@@ -5,11 +5,12 @@ import typings.std.Element
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewerEvent extends OSDEvent[Viewer] {
+trait ViewerEvent
+  extends StObject
+     with OSDEvent[Viewer] {
   
   var button: js.UndefOr[Double] = js.native
   

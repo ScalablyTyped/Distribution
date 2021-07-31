@@ -2,31 +2,29 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionResult extends StObject {
   
   /**
     *  The total number of bytes processed by the flow run. 
     */
-  var bytesProcessed: js.UndefOr[Long] = js.native
+  var bytesProcessed: js.UndefOr[Long] = js.undefined
   
   /**
     *  The total number of bytes written as a result of the flow run. 
     */
-  var bytesWritten: js.UndefOr[Long] = js.native
+  var bytesWritten: js.UndefOr[Long] = js.undefined
   
   /**
     *  Provides any error message information related to the flow run. 
     */
-  var errorInfo: js.UndefOr[ErrorInfo] = js.native
+  var errorInfo: js.UndefOr[ErrorInfo] = js.undefined
   
   /**
     *  The number of records processed in the flow run. 
     */
-  var recordsProcessed: js.UndefOr[Long] = js.native
+  var recordsProcessed: js.UndefOr[Long] = js.undefined
 }
 object ExecutionResult {
   

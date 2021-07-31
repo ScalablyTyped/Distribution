@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsHttpCookiePairHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Cookie HTTP header on an HTTP request. */
 @js.native
-trait HttpCookiePairHeaderValueCollection extends Array[HttpCookiePairHeaderValue] {
+trait HttpCookiePairHeaderValueCollection
+  extends StObject
+     with Array[HttpCookiePairHeaderValue] {
   
   /**
     * Adds a new HttpCookiePairHeaderValue item to the end of the collection.

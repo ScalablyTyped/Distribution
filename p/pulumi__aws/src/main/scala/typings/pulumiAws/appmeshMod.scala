@@ -19,7 +19,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appmeshMod {
@@ -41,6 +40,10 @@ object appmeshMod {
   /* static members */
   object GatewayRoute {
     
+    @JSImport("@pulumi/aws/appmesh", "GatewayRoute")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GatewayRoute resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -50,26 +53,21 @@ object appmeshMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appmesh", "GatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.gatewayRouteMod.GatewayRoute = js.native
-    @JSImport("@pulumi/aws/appmesh", "GatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.gatewayRouteMod.GatewayRoute = js.native
-    @JSImport("@pulumi/aws/appmesh", "GatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayRouteState): typings.pulumiAws.gatewayRouteMod.GatewayRoute = js.native
-    @JSImport("@pulumi/aws/appmesh", "GatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayRouteState, opts: CustomResourceOptions): typings.pulumiAws.gatewayRouteMod.GatewayRoute = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.gatewayRouteMod.GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayRouteMod.GatewayRoute]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.gatewayRouteMod.GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayRouteMod.GatewayRoute]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayRouteState): typings.pulumiAws.gatewayRouteMod.GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayRouteMod.GatewayRoute]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayRouteState, opts: CustomResourceOptions): typings.pulumiAws.gatewayRouteMod.GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayRouteMod.GatewayRoute]
     
     /**
       * Returns true if the given object is an instance of GatewayRoute.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appmesh", "GatewayRoute.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/gatewayRoute.GatewayRoute */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/gatewayRoute.GatewayRoute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/gatewayRoute.GatewayRoute */ Boolean]
   }
   
   @JSImport("@pulumi/aws/appmesh", "Mesh")
@@ -85,11 +83,15 @@ object appmeshMod {
       */
     def this(name: String) = this()
     def this(name: String, args: MeshArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: MeshArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Mesh {
+    
+    @JSImport("@pulumi/aws/appmesh", "Mesh")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Mesh resource's state with the given name, ID, and optional extra
@@ -100,26 +102,21 @@ object appmeshMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appmesh", "Mesh.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.meshMod.Mesh = js.native
-    @JSImport("@pulumi/aws/appmesh", "Mesh.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.meshMod.Mesh = js.native
-    @JSImport("@pulumi/aws/appmesh", "Mesh.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MeshState): typings.pulumiAws.meshMod.Mesh = js.native
-    @JSImport("@pulumi/aws/appmesh", "Mesh.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MeshState, opts: CustomResourceOptions): typings.pulumiAws.meshMod.Mesh = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.meshMod.Mesh]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.meshMod.Mesh]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MeshState): typings.pulumiAws.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.meshMod.Mesh]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MeshState, opts: CustomResourceOptions): typings.pulumiAws.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.meshMod.Mesh]
     
     /**
       * Returns true if the given object is an instance of Mesh.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appmesh", "Mesh.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/mesh.Mesh */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/mesh.Mesh */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/mesh.Mesh */ Boolean]
   }
   
   @JSImport("@pulumi/aws/appmesh", "Route")
@@ -139,6 +136,10 @@ object appmeshMod {
   /* static members */
   object Route {
     
+    @JSImport("@pulumi/aws/appmesh", "Route")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Route resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -148,26 +149,21 @@ object appmeshMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appmesh", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.appmeshRouteMod.Route = js.native
-    @JSImport("@pulumi/aws/appmesh", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.appmeshRouteMod.Route = js.native
-    @JSImport("@pulumi/aws/appmesh", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState): typings.pulumiAws.appmeshRouteMod.Route = js.native
-    @JSImport("@pulumi/aws/appmesh", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): typings.pulumiAws.appmeshRouteMod.Route = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.appmeshRouteMod.Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.appmeshRouteMod.Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.appmeshRouteMod.Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.appmeshRouteMod.Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState): typings.pulumiAws.appmeshRouteMod.Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.appmeshRouteMod.Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): typings.pulumiAws.appmeshRouteMod.Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.appmeshRouteMod.Route]
     
     /**
       * Returns true if the given object is an instance of Route.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appmesh", "Route.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/route.Route */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/route.Route */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/route.Route */ Boolean]
   }
   
   @JSImport("@pulumi/aws/appmesh", "VirtualGateway")
@@ -187,6 +183,10 @@ object appmeshMod {
   /* static members */
   object VirtualGateway {
     
+    @JSImport("@pulumi/aws/appmesh", "VirtualGateway")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VirtualGateway resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -196,26 +196,21 @@ object appmeshMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appmesh", "VirtualGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.virtualGatewayMod.VirtualGateway = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.virtualGatewayMod.VirtualGateway = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VirtualGatewayState): typings.pulumiAws.virtualGatewayMod.VirtualGateway = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VirtualGatewayState, opts: CustomResourceOptions): typings.pulumiAws.virtualGatewayMod.VirtualGateway = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.virtualGatewayMod.VirtualGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualGatewayMod.VirtualGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.virtualGatewayMod.VirtualGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualGatewayMod.VirtualGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VirtualGatewayState): typings.pulumiAws.virtualGatewayMod.VirtualGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualGatewayMod.VirtualGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VirtualGatewayState, opts: CustomResourceOptions): typings.pulumiAws.virtualGatewayMod.VirtualGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualGatewayMod.VirtualGateway]
     
     /**
       * Returns true if the given object is an instance of VirtualGateway.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appmesh", "VirtualGateway.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualGateway.VirtualGateway */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualGateway.VirtualGateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/virtualGateway.VirtualGateway */ Boolean]
   }
   
   @JSImport("@pulumi/aws/appmesh", "VirtualNode")
@@ -235,6 +230,10 @@ object appmeshMod {
   /* static members */
   object VirtualNode {
     
+    @JSImport("@pulumi/aws/appmesh", "VirtualNode")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VirtualNode resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -244,26 +243,21 @@ object appmeshMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appmesh", "VirtualNode.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.virtualNodeMod.VirtualNode = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualNode.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.virtualNodeMod.VirtualNode = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualNode.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VirtualNodeState): typings.pulumiAws.virtualNodeMod.VirtualNode = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualNode.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VirtualNodeState, opts: CustomResourceOptions): typings.pulumiAws.virtualNodeMod.VirtualNode = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.virtualNodeMod.VirtualNode = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualNodeMod.VirtualNode]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.virtualNodeMod.VirtualNode = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualNodeMod.VirtualNode]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VirtualNodeState): typings.pulumiAws.virtualNodeMod.VirtualNode = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualNodeMod.VirtualNode]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VirtualNodeState, opts: CustomResourceOptions): typings.pulumiAws.virtualNodeMod.VirtualNode = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualNodeMod.VirtualNode]
     
     /**
       * Returns true if the given object is an instance of VirtualNode.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appmesh", "VirtualNode.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualNode.VirtualNode */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualNode.VirtualNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/virtualNode.VirtualNode */ Boolean]
   }
   
   @JSImport("@pulumi/aws/appmesh", "VirtualRouter")
@@ -283,6 +277,10 @@ object appmeshMod {
   /* static members */
   object VirtualRouter {
     
+    @JSImport("@pulumi/aws/appmesh", "VirtualRouter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VirtualRouter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -292,26 +290,21 @@ object appmeshMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appmesh", "VirtualRouter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.virtualRouterMod.VirtualRouter = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualRouter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.virtualRouterMod.VirtualRouter = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualRouter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VirtualRouterState): typings.pulumiAws.virtualRouterMod.VirtualRouter = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualRouter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VirtualRouterState, opts: CustomResourceOptions): typings.pulumiAws.virtualRouterMod.VirtualRouter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.virtualRouterMod.VirtualRouter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualRouterMod.VirtualRouter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.virtualRouterMod.VirtualRouter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualRouterMod.VirtualRouter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VirtualRouterState): typings.pulumiAws.virtualRouterMod.VirtualRouter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualRouterMod.VirtualRouter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VirtualRouterState, opts: CustomResourceOptions): typings.pulumiAws.virtualRouterMod.VirtualRouter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualRouterMod.VirtualRouter]
     
     /**
       * Returns true if the given object is an instance of VirtualRouter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appmesh", "VirtualRouter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualRouter.VirtualRouter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualRouter.VirtualRouter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/virtualRouter.VirtualRouter */ Boolean]
   }
   
   @JSImport("@pulumi/aws/appmesh", "VirtualService")
@@ -331,6 +324,10 @@ object appmeshMod {
   /* static members */
   object VirtualService {
     
+    @JSImport("@pulumi/aws/appmesh", "VirtualService")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VirtualService resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -340,25 +337,20 @@ object appmeshMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appmesh", "VirtualService.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.virtualServiceMod.VirtualService = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualService.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.virtualServiceMod.VirtualService = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualService.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VirtualServiceState): typings.pulumiAws.virtualServiceMod.VirtualService = js.native
-    @JSImport("@pulumi/aws/appmesh", "VirtualService.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VirtualServiceState, opts: CustomResourceOptions): typings.pulumiAws.virtualServiceMod.VirtualService = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.virtualServiceMod.VirtualService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualServiceMod.VirtualService]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.virtualServiceMod.VirtualService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualServiceMod.VirtualService]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VirtualServiceState): typings.pulumiAws.virtualServiceMod.VirtualService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualServiceMod.VirtualService]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VirtualServiceState, opts: CustomResourceOptions): typings.pulumiAws.virtualServiceMod.VirtualService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.virtualServiceMod.VirtualService]
     
     /**
       * Returns true if the given object is an instance of VirtualService.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appmesh", "VirtualService.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualService.VirtualService */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualService.VirtualService */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/virtualService.VirtualService */ Boolean]
   }
 }

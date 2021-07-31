@@ -2,51 +2,49 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Datastore extends StObject {
   
   /**
     * The ARN of the data store.
     */
-  var arn: js.UndefOr[DatastoreArn] = js.native
+  var arn: js.UndefOr[DatastoreArn] = js.undefined
   
   /**
     * When the data store was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time when a new message arrived in the data store. AWS IoT Analytics updates this value at most once per minute for one data store. Hence, the lastMessageArrivalTime value is an approximation. This feature only applies to messages that arrived in the data store after October 23, 2020. 
     */
-  var lastMessageArrivalTime: js.UndefOr[Timestamp] = js.native
+  var lastMessageArrivalTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time the data store was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the data store.
     */
-  var name: js.UndefOr[DatastoreName] = js.native
+  var name: js.UndefOr[DatastoreName] = js.undefined
   
   /**
     * How long, in days, message data is kept for the data store. When customerManagedS3 storage is selected, this parameter is ignored.
     */
-  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.native
+  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
   
   /**
     * The status of a data store:  CREATING  The data store is being created.  ACTIVE  The data store has been created and can be used.  DELETING  The data store is being deleted.  
     */
-  var status: js.UndefOr[DatastoreStatus] = js.native
+  var status: js.UndefOr[DatastoreStatus] = js.undefined
   
   /**
     * Where data store data is stored. You can choose one of serviceManagedS3 or customerManagedS3 storage. If not specified, the default is serviceManagedS3. You cannot change this storage option after the data store is created.
     */
-  var storage: js.UndefOr[DatastoreStorage] = js.native
+  var storage: js.UndefOr[DatastoreStorage] = js.undefined
 }
 object Datastore {
   

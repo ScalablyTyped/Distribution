@@ -18,41 +18,30 @@ import typings.std.NonNullable
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("phin", JSImport.Namespace)
-  @js.native
-  def apply(options: String): js.Promise[IResponse] = js.native
-  @JSImport("phin", JSImport.Namespace)
-  @js.native
-  def apply(options: IWithDataIOptions): js.Promise[IResponse] = js.native
-  @JSImport("phin", JSImport.Namespace)
-  @js.native
-  def apply(options: IWithDataIStreamResponseO): js.Promise[IStreamResponse] = js.native
-  @JSImport("phin", JSImport.Namespace)
-  @js.native
-  def apply(options: IWithFormIOptions): js.Promise[IResponse] = js.native
-  @JSImport("phin", JSImport.Namespace)
-  @js.native
-  def apply(options: IWithFormIStreamResponseO): js.Promise[IStreamResponse] = js.native
-  @JSImport("phin", JSImport.Namespace)
-  @js.native
-  def apply(options: IOptions): js.Promise[IResponse] = js.native
-  @JSImport("phin", JSImport.Namespace)
-  @js.native
-  def apply(options: IStreamResponseOptions): js.Promise[IStreamResponse] = js.native
-  @JSImport("phin", JSImport.Namespace)
-  @js.native
-  def apply[T](options: IWithDataIJSONResponseOpt): js.Promise[IJSONResponse[T]] = js.native
-  @JSImport("phin", JSImport.Namespace)
-  @js.native
-  def apply[T](options: IWithFormIJSONResponseOpt): js.Promise[IJSONResponse[T]] = js.native
-  @JSImport("phin", JSImport.Namespace)
-  @js.native
-  def apply[T](options: IJSONResponseOptions): js.Promise[IJSONResponse[T]] = js.native
+  @scala.inline
+  def apply(options: String): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
+  @scala.inline
+  def apply(options: IWithDataIOptions): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
+  @scala.inline
+  def apply(options: IWithDataIStreamResponseO): js.Promise[IStreamResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStreamResponse]]
+  @scala.inline
+  def apply(options: IWithFormIOptions): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
+  @scala.inline
+  def apply(options: IWithFormIStreamResponseO): js.Promise[IStreamResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStreamResponse]]
+  @scala.inline
+  def apply(options: IOptions): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
+  @scala.inline
+  def apply(options: IStreamResponseOptions): js.Promise[IStreamResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStreamResponse]]
+  @scala.inline
+  def apply[T](options: IWithDataIJSONResponseOpt): js.Promise[IJSONResponse[T]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IJSONResponse[T]]]
+  @scala.inline
+  def apply[T](options: IWithFormIJSONResponseOpt): js.Promise[IJSONResponse[T]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IJSONResponse[T]]]
+  @scala.inline
+  def apply[T](options: IJSONResponseOptions): js.Promise[IJSONResponse[T]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IJSONResponse[T]]]
   
   @JSImport("phin", JSImport.Namespace)
   @js.native
@@ -64,36 +53,26 @@ object mod {
   @scala.inline
   def promisified_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof phin */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promisified")(x.asInstanceOf[js.Any])
   
-  @JSImport("phin", "unpromisified")
-  @js.native
-  def unpromisified(options: String, callback: ICallback[IResponse] | IErrorCallback): Unit = js.native
-  @JSImport("phin", "unpromisified")
-  @js.native
-  def unpromisified(options: IWithDataIOptions, callback: ICallback[IResponse] | IErrorCallback): Unit = js.native
-  @JSImport("phin", "unpromisified")
-  @js.native
-  def unpromisified(options: IWithDataIStreamResponseO, callback: ICallback[IStreamResponse] | IErrorCallback): Unit = js.native
-  @JSImport("phin", "unpromisified")
-  @js.native
-  def unpromisified(options: IWithFormIOptions, callback: ICallback[IResponse] | IErrorCallback): Unit = js.native
-  @JSImport("phin", "unpromisified")
-  @js.native
-  def unpromisified(options: IWithFormIStreamResponseO, callback: ICallback[IStreamResponse] | IErrorCallback): Unit = js.native
-  @JSImport("phin", "unpromisified")
-  @js.native
-  def unpromisified(options: IOptions, callback: ICallback[IResponse] | IErrorCallback): Unit = js.native
-  @JSImport("phin", "unpromisified")
-  @js.native
-  def unpromisified(options: IStreamResponseOptions, callback: ICallback[IStreamResponse] | IErrorCallback): Unit = js.native
-  @JSImport("phin", "unpromisified")
-  @js.native
-  def unpromisified[T](options: IWithDataIJSONResponseOpt, callback: ICallback[IJSONResponse[T]] | IErrorCallback): Unit = js.native
-  @JSImport("phin", "unpromisified")
-  @js.native
-  def unpromisified[T](options: IWithFormIJSONResponseOpt, callback: ICallback[IJSONResponse[T]] | IErrorCallback): Unit = js.native
-  @JSImport("phin", "unpromisified")
-  @js.native
-  def unpromisified[T](options: IJSONResponseOptions, callback: ICallback[IJSONResponse[T]] | IErrorCallback): Unit = js.native
+  @scala.inline
+  def unpromisified(options: String, callback: ICallback[IResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unpromisified(options: IWithDataIOptions, callback: ICallback[IResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unpromisified(options: IWithDataIStreamResponseO, callback: ICallback[IStreamResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unpromisified(options: IWithFormIOptions, callback: ICallback[IResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unpromisified(options: IWithFormIStreamResponseO, callback: ICallback[IStreamResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unpromisified(options: IOptions, callback: ICallback[IResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unpromisified(options: IStreamResponseOptions, callback: ICallback[IStreamResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unpromisified[T](options: IWithDataIJSONResponseOpt, callback: ICallback[IJSONResponse[T]] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unpromisified[T](options: IWithFormIJSONResponseOpt, callback: ICallback[IJSONResponse[T]] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unpromisified[T](options: IJSONResponseOptions, callback: ICallback[IJSONResponse[T]] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type ICallback[T] = js.Function2[/* error */ Null, /* response */ NonNullable[T], Unit]
   
@@ -107,16 +86,17 @@ object mod {
     var body: T = js.native
   }
   
-  @js.native
-  trait IJSONResponseOptions extends IOptionsBase {
+  trait IJSONResponseOptions
+    extends StObject
+       with IOptionsBase {
     
-    var parse: json = js.native
+    var parse: json
   }
   object IJSONResponseOptions {
     
     @scala.inline
-    def apply(parse: json, url: String | URL): IJSONResponseOptions = {
-      val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def apply(url: String | URL): IJSONResponseOptions = {
+      val __obj = js.Dynamic.literal(parse = "json", url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IJSONResponseOptions]
     }
     
@@ -128,10 +108,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait IOptions extends IOptionsBase {
+  trait IOptions
+    extends StObject
+       with IOptionsBase {
     
-    var parse: js.UndefOr[none] = js.native
+    var parse: js.UndefOr[none] = js.undefined
   }
   object IOptions {
     
@@ -152,30 +133,29 @@ object mod {
     }
   }
   
-  @js.native
   trait IOptionsBase extends StObject {
     
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
-    var core: js.UndefOr[ClientRequestArgs] = js.native
+    var core: js.UndefOr[ClientRequestArgs] = js.undefined
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var stream: js.UndefOr[Boolean] = js.native
+    var stream: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: String | URL = js.native
+    var url: String | URL
   }
   object IOptionsBase {
     
@@ -265,17 +245,18 @@ object mod {
     var stream: IncomingMessage = js.native
   }
   
-  @js.native
-  trait IStreamResponseOptions extends IOptionsBase {
+  trait IStreamResponseOptions
+    extends StObject
+       with IOptionsBase {
     
     @JSName("stream")
-    var stream_IStreamResponseOptions: `true` = js.native
+    var stream_IStreamResponseOptions: `true`
   }
   object IStreamResponseOptions {
     
     @scala.inline
-    def apply(stream: `true`, url: String | URL): IStreamResponseOptions = {
-      val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def apply(url: String | URL): IStreamResponseOptions = {
+      val __obj = js.Dynamic.literal(stream = true, url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IStreamResponseOptions]
     }
     
@@ -288,7 +269,7 @@ object mod {
   }
   
   // Form and data property has been written this way so they're mutually exclusive.
-  type IWithData[T /* <: js.Object */] = T with Data
+  type IWithData[T /* <: js.Object */] = T & Data
   
-  type IWithForm[T /* <: js.Object */] = T with Form
+  type IWithForm[T /* <: js.Object */] = T & Form
 }

@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.TopLevel
 import typings.hermesProfileTransformer.eventInterfacesMod.SharedEventProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hermesProfileMod {
   
-  @js.native
   trait HermesCPUProfile extends StObject {
     
-    var samples: js.Array[HermesSample] = js.native
+    var samples: js.Array[HermesSample]
     
     var stackFrames: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in string ]: hermes-profile-transformer.hermes-profile-transformer/dist/types/HermesProfile.HermesStackFrame}
-      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile with TopLevel[js.Any] = js.native
+      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile & TopLevel[js.Any]
     
-    var traceEvents: js.Array[SharedEventProperties] = js.native
+    var traceEvents: js.Array[SharedEventProperties]
   }
   object HermesCPUProfile {
     
@@ -27,7 +25,7 @@ object hermesProfileMod {
       samples: js.Array[HermesSample],
       stackFrames: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in string ]: hermes-profile-transformer.hermes-profile-transformer/dist/types/HermesProfile.HermesStackFrame}
-      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile with TopLevel[js.Any],
+      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile & TopLevel[js.Any],
       traceEvents: js.Array[SharedEventProperties]
     ): HermesCPUProfile = {
       val __obj = js.Dynamic.literal(samples = samples.asInstanceOf[js.Any], stackFrames = stackFrames.asInstanceOf[js.Any], traceEvents = traceEvents.asInstanceOf[js.Any])
@@ -47,7 +45,7 @@ object hermesProfileMod {
       def setStackFrames(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ key in string ]: hermes-profile-transformer.hermes-profile-transformer/dist/types/HermesProfile.HermesStackFrame}
-        */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile with TopLevel[js.Any]
+        */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile & TopLevel[js.Any]
       ): Self = StObject.set(x, "stackFrames", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -58,27 +56,26 @@ object hermesProfileMod {
     }
   }
   
-  @js.native
   trait HermesSample extends StObject {
     
-    var cpu: String = js.native
+    var cpu: String
     
-    var name: String = js.native
+    var name: String
     
-    var pid: Double = js.native
+    var pid: Double
     
     /**
       * Will refer to an element in the stackFrames object of the Hermes Profile
       */
-    var sf: Double = js.native
+    var sf: Double
     
-    var stackFrameData: js.UndefOr[HermesStackFrame] = js.native
+    var stackFrameData: js.UndefOr[HermesStackFrame] = js.undefined
     
-    var tid: String = js.native
+    var tid: String
     
-    var ts: String = js.native
+    var ts: String
     
-    var weight: String = js.native
+    var weight: String
   }
   object HermesSample {
     
@@ -120,25 +117,24 @@ object hermesProfileMod {
     }
   }
   
-  @js.native
   trait HermesStackFrame extends StObject {
     
-    var category: String = js.native
+    var category: String
     
-    var column: String = js.native
+    var column: String
     
-    var funcColumn: String = js.native
+    var funcColumn: String
     
-    var funcLine: String = js.native
+    var funcLine: String
     
-    var line: String = js.native
+    var line: String
     
-    var name: String = js.native
+    var name: String
     
     /**
       * A parent function may or may not exist
       */
-    var parent: js.UndefOr[Double] = js.native
+    var parent: js.UndefOr[Double] = js.undefined
   }
   object HermesStackFrame {
     

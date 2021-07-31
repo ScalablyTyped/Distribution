@@ -3,14 +3,12 @@ package typings.semanticUiProgress.anon
 import typings.semanticUiProgress.semanticUiProgressBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-progress.SemanticUI.ProgressSettings._Impl, 'total'> */
-@js.native
 trait PickImpltotal extends StObject {
   
-  var total: `false` | Double = js.native
+  var total: `false` | Double
 }
 object PickImpltotal {
   

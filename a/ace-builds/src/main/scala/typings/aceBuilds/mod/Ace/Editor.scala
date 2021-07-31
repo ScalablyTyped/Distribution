@@ -88,12 +88,12 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Editor
-  extends OptionsProvider
+  extends StObject
+     with OptionsProvider
      with EventEmitter {
   
   def blockIndent(): Unit = js.native
@@ -126,17 +126,17 @@ trait Editor
   def execCommand(command: js.Array[String], args: js.Any): Boolean = js.native
   
   def find(needle: String): Unit = js.native
-  def find(needle: String, options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
+  def find(needle: String, options: Unit, animate: Boolean): Unit = js.native
   def find(needle: String, options: PartialSearchOptions): Unit = js.native
   def find(needle: String, options: PartialSearchOptions, animate: Boolean): Unit = js.native
   
   def findNext(): Unit = js.native
-  def findNext(options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
+  def findNext(options: Unit, animate: Boolean): Unit = js.native
   def findNext(options: PartialSearchOptions): Unit = js.native
   def findNext(options: PartialSearchOptions, animate: Boolean): Unit = js.native
   
   def findPrevious(): Unit = js.native
-  def findPrevious(options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
+  def findPrevious(options: Unit, animate: Boolean): Unit = js.native
   def findPrevious(options: PartialSearchOptions): Unit = js.native
   def findPrevious(options: PartialSearchOptions, animate: Boolean): Unit = js.native
   

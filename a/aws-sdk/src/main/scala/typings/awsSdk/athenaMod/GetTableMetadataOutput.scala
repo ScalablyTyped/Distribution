@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTableMetadataOutput extends StObject {
   
   /**
     * An object that contains table metadata.
     */
-  var TableMetadata: js.UndefOr[typings.awsSdk.athenaMod.TableMetadata] = js.native
+  var TableMetadata: js.UndefOr[typings.awsSdk.athenaMod.TableMetadata] = js.undefined
 }
 object GetTableMetadataOutput {
   

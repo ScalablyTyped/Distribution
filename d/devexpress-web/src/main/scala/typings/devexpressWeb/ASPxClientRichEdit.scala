@@ -3,14 +3,15 @@ package typings.devexpressWeb
 import typings.devexpressWeb.anon.ModifyPdfDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxRichEdit control.
   */
 @js.native
-trait ASPxClientRichEdit extends ASPxClientControl {
+trait ASPxClientRichEdit
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs when the active sub-document is substituted with another sub-document.
@@ -78,11 +79,11 @@ trait ASPxClientRichEdit extends ASPxClientControl {
     * @param options A function that allows you to modify the PDF document before it is downloaded; or an object that contains modifyPdfDocument and modifyPdfPage functions.
     */
   def DownloadPdf(): Unit = js.native
-  def DownloadPdf(fileName: js.UndefOr[scala.Nothing], options: js.Function1[/* pdfDocument */ js.Any, Unit]): Unit = js.native
-  def DownloadPdf(fileName: js.UndefOr[scala.Nothing], options: ModifyPdfDocument): Unit = js.native
   def DownloadPdf(fileName: String): Unit = js.native
   def DownloadPdf(fileName: String, options: js.Function1[/* pdfDocument */ js.Any, Unit]): Unit = js.native
   def DownloadPdf(fileName: String, options: ModifyPdfDocument): Unit = js.native
+  def DownloadPdf(fileName: Unit, options: js.Function1[/* pdfDocument */ js.Any, Unit]): Unit = js.native
+  def DownloadPdf(fileName: Unit, options: ModifyPdfDocument): Unit = js.native
   
   /**
     * Occurs on the client side after a callback's server-side processing has been completed.

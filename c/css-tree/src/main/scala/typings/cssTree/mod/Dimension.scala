@@ -2,28 +2,27 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimension
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
   @JSName("type")
-  var type_Dimension: typings.cssTree.cssTreeStrings.Dimension = js.native
+  var type_Dimension: typings.cssTree.cssTreeStrings.Dimension
   
-  var unit: String = js.native
+  var unit: String
   
-  var value: String = js.native
+  var value: String
 }
 object Dimension {
   
   @scala.inline
-  def apply(`type`: typings.cssTree.cssTreeStrings.Dimension, unit: String, value: String): Dimension = {
+  def apply(unit: String, value: String): Dimension = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Dimension")
     __obj.asInstanceOf[Dimension]
   }
   

@@ -6,7 +6,6 @@ import typings.acorn.mod.Token
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -14,7 +13,7 @@ object anon {
   @js.native
   trait Call extends StObject {
     
-    def apply(): Iterator[Token, _, js.UndefOr[scala.Nothing]] = js.native
+    def apply(): Iterator[Token, js.Any, Unit] = js.native
     
     def getToken(): /* import warning: importer.ImportType#apply Failed type conversion: acorn.acorn.Token[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.iterator * / any] */ js.Any = js.native
   }

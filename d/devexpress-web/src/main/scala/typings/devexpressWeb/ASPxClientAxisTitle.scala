@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the AxisTitle class.
   */
-@js.native
-trait ASPxClientAxisTitle extends ASPxClientWebChartElement {
+trait ASPxClientAxisTitle
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Gets the axis to which the axis title belongs.
     */
-  var axis: ASPxClientAxisBase = js.native
+  var axis: ASPxClientAxisBase
   
   /**
     * Gets the text of the axis title.
     */
-  var text: String = js.native
+  var text: String
 }
 object ASPxClientAxisTitle {
   

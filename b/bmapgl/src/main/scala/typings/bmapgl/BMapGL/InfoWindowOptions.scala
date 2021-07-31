@@ -2,29 +2,27 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfoWindowOptions extends StObject {
   
-  var enableAutoPan: js.UndefOr[Boolean] = js.native
+  var enableAutoPan: js.UndefOr[Boolean] = js.undefined
   
-  var enableCloseOnClick: js.UndefOr[Boolean] = js.native
+  var enableCloseOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var enableMessage: js.UndefOr[Boolean] = js.native
+  var enableMessage: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Size] = js.native
+  var offset: js.UndefOr[Size] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object InfoWindowOptions {
   

@@ -4,39 +4,39 @@ import typings.reactMdTransition.getTimeoutMod.DefinedTimeout
 import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getClassNamesMod {
   
-  @JSImport("@react-md/transition/types/getClassNames", "getClassNames")
+  @JSImport("@react-md/transition/types/getClassNames", JSImport.Namespace)
   @js.native
-  def getClassNames(classNames: String, timeout: DefinedTimeout): DefinedCSSTransitionClassNames = js.native
-  @JSImport("@react-md/transition/types/getClassNames", "getClassNames")
-  @js.native
-  def getClassNames(classNames: CSSTransitionClassNames, timeout: DefinedTimeout): DefinedCSSTransitionClassNames = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getClassNames(classNames: String, timeout: DefinedTimeout): DefinedCSSTransitionClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(classNames.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[DefinedCSSTransitionClassNames]
+  @scala.inline
+  def getClassNames(classNames: CSSTransitionClassNames, timeout: DefinedTimeout): DefinedCSSTransitionClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(classNames.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[DefinedCSSTransitionClassNames]
   
   /* Inlined std.Required<react-transition-group.react-transition-group/CSSTransition.CSSTransitionClassNames> */
-  @js.native
   trait DefinedCSSTransitionClassNames extends StObject {
     
-    var appear: String = js.native
+    var appear: String
     
-    var appearActive: String = js.native
+    var appearActive: String
     
-    var appearDone: String = js.native
+    var appearDone: String
     
-    var enter: String = js.native
+    var enter: String
     
-    var enterActive: String = js.native
+    var enterActive: String
     
-    var enterDone: String = js.native
+    var enterDone: String
     
-    var exit: String = js.native
+    var exit: String
     
-    var exitActive: String = js.native
+    var exitActive: String
     
-    var exitDone: String = js.native
+    var exitDone: String
   }
   object DefinedCSSTransitionClassNames {
     

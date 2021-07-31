@@ -2,47 +2,45 @@ package typings.materialTopAppBar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCTopAppBarAdapter extends StObject {
     
     /**
       * Adds a class to the root Element.
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * Gets the height of the top app bar.
       */
-    def getTopAppBarHeight(): Double = js.native
+    def getTopAppBarHeight(): Double
     
-    def getTotalActionItems(): Double = js.native
+    def getTotalActionItems(): Double
     
-    def getViewportScrollY(): Double = js.native
+    def getViewportScrollY(): Double
     
     /**
       * Returns true if the root Element contains the given class.
       */
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
     /**
       * Emits an event when the navigation icon is clicked.
       */
-    def notifyNavigationIconClicked(): Unit = js.native
+    def notifyNavigationIconClicked(): Unit
     
     /**
       * Removes a class from the root Element.
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /**
       * Sets the specified inline style property on the root Element to the given value.
       */
-    def setStyle(property: String, value: String): Unit = js.native
+    def setStyle(property: String, value: String): Unit
   }
   object MDCTopAppBarAdapter {
     

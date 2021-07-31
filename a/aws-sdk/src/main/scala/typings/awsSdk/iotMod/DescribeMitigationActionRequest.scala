@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMitigationActionRequest extends StObject {
   
   /**
     * The friendly name that uniquely identifies the mitigation action.
     */
-  var actionName: MitigationActionName = js.native
+  var actionName: MitigationActionName
 }
 object DescribeMitigationActionRequest {
   

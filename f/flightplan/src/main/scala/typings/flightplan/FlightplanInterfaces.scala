@@ -3,17 +3,15 @@ package typings.flightplan
 import typings.flightplan.anon.Exec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FlightplanInterfaces {
   
-  @js.native
   trait CommandOptions extends StObject {
     
-    var failsafe: js.UndefOr[Boolean] = js.native
+    var failsafe: js.UndefOr[Boolean] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object CommandOptions {
     
@@ -40,14 +38,13 @@ object FlightplanInterfaces {
     }
   }
   
-  @js.native
   trait CommandResult extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var stderr: String = js.native
+    var stderr: String
     
-    var stdout: String = js.native
+    var stdout: String
   }
   object CommandResult {
     
@@ -92,12 +89,11 @@ object FlightplanInterfaces {
     def target(name: String, options: TargetOptions): Flightplan = js.native
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object Host {
     
@@ -118,12 +114,11 @@ object FlightplanInterfaces {
     }
   }
   
-  @js.native
   trait PromptOptions extends StObject {
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
   }
   object PromptOptions {
     
@@ -150,16 +145,15 @@ object FlightplanInterfaces {
     }
   }
   
-  @js.native
   trait Runtime extends StObject {
     
-    var hosts: js.Array[Host] = js.native
+    var hosts: js.Array[Host]
     
-    var options: js.Any = js.native
+    var options: js.Any
     
-    var target: String = js.native
+    var target: String
     
-    var task: String = js.native
+    var task: String
   }
   object Runtime {
     
@@ -189,10 +183,11 @@ object FlightplanInterfaces {
     }
   }
   
-  @js.native
-  trait SudoOptions extends CommandOptions {
+  trait SudoOptions
+    extends StObject
+       with CommandOptions {
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object SudoOptions {
     
@@ -213,16 +208,15 @@ object FlightplanInterfaces {
     }
   }
   
-  @js.native
   trait TargetOptions extends StObject {
     
-    var agent: String = js.native
+    var agent: String
     
-    var failsafe: js.UndefOr[Boolean] = js.native
+    var failsafe: js.UndefOr[Boolean] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var username: String = js.native
+    var username: String
   }
   object TargetOptions {
     

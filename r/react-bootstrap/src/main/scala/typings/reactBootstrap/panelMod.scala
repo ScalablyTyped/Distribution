@@ -7,7 +7,6 @@ import typings.reactBootstrap.mod.SelectCallback
 import typings.reactBootstrap.mod.TransitionCallbacks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelMod {
@@ -96,23 +95,23 @@ object panelMod {
   trait Panel
     extends Component[PanelProps, js.Object, js.Any]
   
-  @js.native
   trait PanelProps
-    extends HTMLProps[Panel]
-       with TransitionCallbacks {
+    extends StObject
+       with TransitionCallbacks
+       with HTMLProps[Panel] {
     
-    var bsStyle: js.UndefOr[String] = js.native
+    var bsStyle: js.UndefOr[String] = js.undefined
     
-    var defaultExpanded: js.UndefOr[Boolean] = js.native
+    var defaultExpanded: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.native
+    var eventKey: js.UndefOr[js.Any] = js.undefined
     
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     @JSName("onSelect")
-    var onSelect_PanelProps: js.UndefOr[SelectCallback] = js.native
+    var onSelect_PanelProps: js.UndefOr[SelectCallback] = js.undefined
     
-    var onToggle: js.UndefOr[SelectCallback] = js.native
+    var onToggle: js.UndefOr[SelectCallback] = js.undefined
   }
   object PanelProps {
     

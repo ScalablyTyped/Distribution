@@ -3,45 +3,43 @@ package typings.winrtUwp.Windows.Devices.WiFi
 import typings.winrtUwp.Windows.Networking.Connectivity.NetworkSecuritySettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes an available Wi-Fi network. */
-@js.native
 trait WiFiAvailableNetwork extends StObject {
   
   /** Gets the interval between 802.11 Beacon frames used by this network. */
-  var beaconInterval: Double = js.native
+  var beaconInterval: Double
   
   /** Gets the MAC address of the access point. */
-  var bssid: String = js.native
+  var bssid: String
   
   /** Gets the channel center frequency of the band on which the 802.11 Beacon or Probe Response was received. */
-  var channelCenterFrequencyInKilohertz: Double = js.native
+  var channelCenterFrequencyInKilohertz: Double
   
   /** Gets a value indicating whether this network originates from a Wi-Fi Direct access point. */
-  var isWiFiDirect: Boolean = js.native
+  var isWiFiDirect: Boolean
   
   /** Gets a value describing the kind of network being described. */
-  var networkKind: WiFiNetworkKind = js.native
+  var networkKind: WiFiNetworkKind
   
   /** Gets the signal strength of the network. */
-  var networkRssiInDecibelMilliwatts: Double = js.native
+  var networkRssiInDecibelMilliwatts: Double
   
   /** Gets a value describing the kind of PHY used by this network. */
-  var phyKind: WiFiPhyKind = js.native
+  var phyKind: WiFiPhyKind
   
   /** Gets the security configuration of the network. */
-  var securitySettings: NetworkSecuritySettings = js.native
+  var securitySettings: NetworkSecuritySettings
   
   /** Gets the strength of the signal as a number of bars. */
-  var signalBars: Double = js.native
+  var signalBars: Double
   
   /** Gets the SSID (name) of the network. */
-  var ssid: String = js.native
+  var ssid: String
   
   /** Gets the uptime value reported by the network. */
-  var uptime: Double = js.native
+  var uptime: Double
 }
 object WiFiAvailableNetwork {
   

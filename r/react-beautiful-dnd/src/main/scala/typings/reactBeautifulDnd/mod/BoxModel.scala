@@ -2,30 +2,28 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoxModel extends StObject {
   
   // for your own consumption
-  var border: Spacing = js.native
+  var border: Spacing
   
   // content + padding + border
-  var borderBox: Rect = js.native
+  var borderBox: Rect
   
   // content
-  var contentBox: Rect = js.native
+  var contentBox: Rect
   
-  var margin: Spacing = js.native
+  var margin: Spacing
   
   // content + padding + border + margin
-  var marginBox: Rect = js.native
+  var marginBox: Rect
   
-  var padding: Spacing = js.native
+  var padding: Spacing
   
   // content + padding
-  var paddingBox: Rect = js.native
+  var paddingBox: Rect
 }
 object BoxModel {
   

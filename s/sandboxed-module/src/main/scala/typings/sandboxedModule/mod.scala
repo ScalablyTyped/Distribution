@@ -2,14 +2,61 @@ package typings.sandboxedModule
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("sandboxed-module", JSImport.Namespace)
   @js.native
-  class ^ () extends SandboxedModule
+  class ^ ()
+    extends StObject
+       with SandboxedModule {
+    
+    /**
+      * A getter returning the sandboxedModule.module.exports object.
+      */
+    /* CompleteClass */
+    var exports: js.Any = js.native
+    
+    /**
+      * The full path to the module.
+      */
+    /* CompleteClass */
+    var filename: String = js.native
+    
+    /**
+      * See {@link SandboxOptions.globals}
+      */
+    /* CompleteClass */
+    var globals: js.Object = js.native
+    
+    /**
+      * See {@link SandboxOptions.locals}
+      */
+    /* CompleteClass */
+    var locals: js.Object = js.native
+    
+    /**
+      * The underlaying node.js Module instance.
+      */
+    /* CompleteClass */
+    var module: String = js.native
+    
+    /**
+      * See {@link SandboxOptions.requires}
+      */
+    /* CompleteClass */
+    var required: js.Object = js.native
+    
+    /**
+      * See {@link SandboxOptions.sourceTransformers}.
+      */
+    /* CompleteClass */
+    var sourceTransformers: js.Object = js.native
+  }
+  @JSImport("sandboxed-module", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Sets options globally across all uses of {@link SandboxedModule.load()} and {@link SandboxedModule.require()}.
@@ -18,9 +65,8 @@ object mod {
     * @param options the loading and requiring default options
     */
   /* static member */
-  @JSImport("sandboxed-module", "configure")
-  @js.native
-  def configure(options: SandboxOptions): Unit = js.native
+  @scala.inline
+  def configure(options: SandboxOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns a new SandboxedModule where moduleId is a regular module path / id as you would normally pass into
@@ -31,12 +77,10 @@ object mod {
     * @param options the loading options
     */
   /* static member */
-  @JSImport("sandboxed-module", "load")
-  @js.native
-  def load(moduleId: String): SandboxedModule = js.native
-  @JSImport("sandboxed-module", "load")
-  @js.native
-  def load(moduleId: String, options: SandboxOptions): SandboxedModule = js.native
+  @scala.inline
+  def load(moduleId: String): SandboxedModule = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(moduleId.asInstanceOf[js.Any]).asInstanceOf[SandboxedModule]
+  @scala.inline
+  def load(moduleId: String, options: SandboxOptions): SandboxedModule = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(moduleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SandboxedModule]
   
   /**
     * Enables a built-in source transformer by name. Currently, SandboxedModule ships with two built in source
@@ -49,9 +93,8 @@ object mod {
     * @param name The name of the built-in source transformer
     */
   /* static member */
-  @JSImport("sandboxed-module", "registerBuiltInSourceTransformer")
-  @js.native
-  def registerBuiltInSourceTransformer(name: String): Unit = js.native
+  @scala.inline
+  def registerBuiltInSourceTransformer(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerBuiltInSourceTransformer")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Identical to {@link SandboxedModule.load()}, but returns sandboxedModule.exports directly.
@@ -60,38 +103,35 @@ object mod {
     * @param options the requiring options
     */
   /* static member */
-  @JSImport("sandboxed-module", "require")
-  @js.native
-  def require(moduleId: String): js.Any = js.native
-  @JSImport("sandboxed-module", "require")
-  @js.native
-  def require(moduleId: String, options: SandboxOptions): js.Any = js.native
+  @scala.inline
+  def require(moduleId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def require(moduleId: String, options: SandboxOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(moduleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
   trait SandboxOptions extends StObject {
     
     /**
       * An object of global variables to inject into the sandboxed module.
       */
-    var globals: js.UndefOr[js.Object] = js.native
+    var globals: js.UndefOr[js.Object] = js.undefined
     
     /**
       * An object of local variables to inject into the sandboxed module.
       */
-    var locals: js.UndefOr[js.Object] = js.native
+    var locals: js.UndefOr[js.Object] = js.undefined
     
     /**
       * An object containing moduleIds and the values to inject for them when required by the sandboxed module.
       * This does not affect children of the sandboxed module.
       */
-    var requires: js.UndefOr[js.Object] = js.native
+    var requires: js.UndefOr[js.Object] = js.undefined
     
     /**
       * If false, modules that are required by the sandboxed module will not be sandboxed. By default all modules
       * required by the sandboxedModule will be sandboxed using the same options that were used for the original
       * sandboxed module.
       */
-    var singleOnly: js.UndefOr[Boolean] = js.native
+    var singleOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An object of named functions which will transform the source code required with SandboxedModule.require.
@@ -111,13 +151,13 @@ object mod {
       *   }
       * })
       */
-    var sourceTransformers: js.UndefOr[js.Object] = js.native
+    var sourceTransformers: js.UndefOr[js.Object] = js.undefined
     
     /**
       * If false, the source transformers will not be run against modules required by the sandboxed module.
       * By default it will take the same value as {@link SandboxOptions.singleOnly}.
       */
-    var sourceTransformersSingleOnly: js.UndefOr[Boolean] = js.native
+    var sourceTransformersSingleOnly: js.UndefOr[Boolean] = js.undefined
   }
   object SandboxOptions {
     
@@ -168,43 +208,42 @@ object mod {
     }
   }
   
-  @js.native
   trait SandboxedModule extends StObject {
     
     /**
       * A getter returning the sandboxedModule.module.exports object.
       */
-    var exports: js.Any = js.native
+    var exports: js.Any
     
     /**
       * The full path to the module.
       */
-    var filename: String = js.native
+    var filename: String
     
     /**
       * See {@link SandboxOptions.globals}
       */
-    var globals: js.Object = js.native
+    var globals: js.Object
     
     /**
       * See {@link SandboxOptions.locals}
       */
-    var locals: js.Object = js.native
+    var locals: js.Object
     
     /**
       * The underlaying node.js Module instance.
       */
-    var module: String = js.native
+    var module: String
     
     /**
       * See {@link SandboxOptions.requires}
       */
-    var required: js.Object = js.native
+    var required: js.Object
     
     /**
       * See {@link SandboxOptions.sourceTransformers}.
       */
-    var sourceTransformers: js.Object = js.native
+    var sourceTransformers: js.Object
   }
   object SandboxedModule {
     

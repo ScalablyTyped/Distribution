@@ -3,10 +3,8 @@ package typings.plotlyJs.mod
 import typings.plotlyJs.anon.PartialLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Frame extends StObject {
   
   /**
@@ -14,36 +12,36 @@ trait Frame extends StObject {
     * before applying. This is used to unify properties and avoid needing
     * to specify the same values for the same properties in multiple frames.
     */
-  var baseframe: String = js.native
+  var baseframe: String
   
   /**
     * A list of traces this frame modifies. The format is identical to the
     * normal trace definition.
     */
-  var data: js.Array[Data] = js.native
+  var data: js.Array[Data]
   
   /**
     * An identifier that specifies the group to which the frame belongs,
     * used by animate to select a subset of frames.
     */
-  var group: String = js.native
+  var group: String
   
   /**
     * Layout properties which this frame modifies. The format is identical
     * to the normal layout definition.
     */
-  var layout: PartialLayout = js.native
+  var layout: PartialLayout
   
   /**
     * A label by which to identify the frame
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * A list of trace indices that identify the respective traces in the
     * data attribute
     */
-  var traces: js.Array[Double] = js.native
+  var traces: js.Array[Double]
 }
 object Frame {
   

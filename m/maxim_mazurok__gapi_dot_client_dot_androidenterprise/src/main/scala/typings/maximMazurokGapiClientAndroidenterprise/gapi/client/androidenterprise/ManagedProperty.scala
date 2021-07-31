@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedProperty extends StObject {
   
   /** The unique key that identifies the property. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** The boolean value - this will only be present if type of the property is bool. */
-  var valueBool: js.UndefOr[Boolean] = js.native
+  var valueBool: js.UndefOr[Boolean] = js.undefined
   
   /** The bundle of managed properties - this will only be present if type of the property is bundle. */
-  var valueBundle: js.UndefOr[ManagedPropertyBundle] = js.native
+  var valueBundle: js.UndefOr[ManagedPropertyBundle] = js.undefined
   
   /** The list of bundles of properties - this will only be present if type of the property is bundle_array. */
-  var valueBundleArray: js.UndefOr[js.Array[ManagedPropertyBundle]] = js.native
+  var valueBundleArray: js.UndefOr[js.Array[ManagedPropertyBundle]] = js.undefined
   
   /** The integer value - this will only be present if type of the property is integer. */
-  var valueInteger: js.UndefOr[Double] = js.native
+  var valueInteger: js.UndefOr[Double] = js.undefined
   
   /** The string value - this will only be present if type of the property is string, choice or hidden. */
-  var valueString: js.UndefOr[String] = js.native
+  var valueString: js.UndefOr[String] = js.undefined
   
   /** The list of string values - this will only be present if type of the property is multiselect. */
-  var valueStringArray: js.UndefOr[js.Array[String]] = js.native
+  var valueStringArray: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ManagedProperty {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SdkConfigurationProperty extends StObject {
   
   /**
     * The default value of an SdkType configuration property.
     */
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
   /**
     * The description of an SdkType configuration property.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The user-friendly name of an SdkType configuration property.
     */
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of a an SdkType configuration property.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A boolean flag of an SdkType configuration property to indicate if the associated SDK configuration property is required (true) or not (false).
     */
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
 }
 object SdkConfigurationProperty {
   

@@ -9,7 +9,6 @@ import typings.wordpressComponents.anon.X
 import typings.wordpressComponents.dropZoneMod.DropZone.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropZoneMod {
@@ -30,19 +29,18 @@ object dropZoneMod {
     
     type HoverPosition = X | Null
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * A CSS class to be appended after the default components-drop-zone class.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * A string to be shown within the drop zone area.
         * @defaultValue "Drop files to upload"
         */
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
       /**
         * The function is generic drop handler called if the onFilesDrop or
@@ -54,7 +52,7 @@ object dropZoneMod {
         */
       var onDrop: js.UndefOr[
             js.Function2[/* event */ DragEvent[HTMLDivElement], /* position */ HoverPosition, Unit]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * The function is called when dropping a file into the DropZone.
@@ -63,7 +61,7 @@ object dropZoneMod {
         * @param position - Indicates whether the drop event happened closer
         *     to the top or bottom edges and left or right ones.
         */
-      var onFilesDrop: js.UndefOr[js.Function2[/* files */ js.Array[File], /* position */ HoverPosition, Unit]] = js.native
+      var onFilesDrop: js.UndefOr[js.Function2[/* files */ js.Array[File], /* position */ HoverPosition, Unit]] = js.undefined
       
       /**
         * The function is called when dropping an HTML file into the DropZone.
@@ -72,7 +70,7 @@ object dropZoneMod {
         * @param position - Indicates whether the drop event happened closer
         *     to the top or bottom edges and left or right ones.
         */
-      var onHTMLDrop: js.UndefOr[js.Function2[/* html */ String, /* position */ HoverPosition, Unit]] = js.native
+      var onHTMLDrop: js.UndefOr[js.Function2[/* html */ String, /* position */ HoverPosition, Unit]] = js.undefined
     }
     object Props {
       

@@ -2,13 +2,11 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInputResponse extends StObject {
   
-  var Input: js.UndefOr[typings.awsSdk.medialiveMod.Input] = js.native
+  var Input: js.UndefOr[typings.awsSdk.medialiveMod.Input] = js.undefined
 }
 object CreateInputResponse {
   

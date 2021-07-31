@@ -2,14 +2,12 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Readiness checking configuration for VM instances. Unhealthy instances are
   * removed from traffic rotation.
   */
-@js.native
 trait SchemaReadinessCheck extends StObject {
   
   /**
@@ -17,39 +15,39 @@ trait SchemaReadinessCheck extends StObject {
     * the application successfully replies to a healthcheck until it is ready
     * to serve traffic.
     */
-  var appStartTimeout: js.UndefOr[String] = js.native
+  var appStartTimeout: js.UndefOr[String] = js.undefined
   
   /**
     * Interval between health checks.
     */
-  var checkInterval: js.UndefOr[String] = js.native
+  var checkInterval: js.UndefOr[String] = js.undefined
   
   /**
     * Number of consecutive failed checks required before removing traffic.
     */
-  var failureThreshold: js.UndefOr[Double] = js.native
+  var failureThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Host header to send when performing a HTTP Readiness check. Example:
     * &quot;myapp.appspot.com&quot;
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * The request path.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Number of consecutive successful checks required before receiving
     * traffic.
     */
-  var successThreshold: js.UndefOr[Double] = js.native
+  var successThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Time before the check is considered failed.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object SchemaReadinessCheck {
   

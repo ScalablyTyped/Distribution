@@ -3,11 +3,11 @@ package typings.winrt.Windows.Graphics.Printing
 import typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackagePropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrintTask extends IPrintTask
+trait PrintTask
+  extends StObject
+     with IPrintTask
 object PrintTask {
   
   @scala.inline

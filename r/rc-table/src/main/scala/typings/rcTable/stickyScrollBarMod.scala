@@ -10,25 +10,23 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stickyScrollBarMod extends Shortcut {
   
   @JSImport("rc-table/lib/stickyScrollBar", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[StickyScrollBarProps with RefAttributes[_]] = js.native
+  val default: ForwardRefExoticComponent[StickyScrollBarProps & RefAttributes[js.Any]] = js.native
   
-  @js.native
   trait StickyScrollBarProps extends StObject {
     
-    var container: HTMLElement | Window = js.native
+    var container: HTMLElement | Window
     
-    var offsetScroll: Double = js.native
+    var offsetScroll: Double
     
-    def onScroll(params: `0`): Unit = js.native
+    def onScroll(params: `0`): Unit
     
-    var scrollBodyRef: RefObject[HTMLDivElement] = js.native
+    var scrollBodyRef: RefObject[HTMLDivElement]
   }
   object StickyScrollBarProps {
     
@@ -60,8 +58,8 @@ object stickyScrollBarMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[StickyScrollBarProps with RefAttributes[_]]
+  type _To = ForwardRefExoticComponent[StickyScrollBarProps & RefAttributes[js.Any]]
   
   /* This means you don't have to write `default`, but can instead just say `stickyScrollBarMod.foo` */
-  override def _to: ForwardRefExoticComponent[StickyScrollBarProps with RefAttributes[_]] = default
+  override def _to: ForwardRefExoticComponent[StickyScrollBarProps & RefAttributes[js.Any]] = default
 }

@@ -6,25 +6,26 @@ import typings.jimpBmp.anon.Imagexmsbmp
 import typings.jimpBmp.anon.MIMEBMP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/bmp", JSImport.Default)
+  @JSImport("@jimp/bmp", JSImport.Namespace)
   @js.native
-  def default(): Bmp = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Bmp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Bmp]
+  
   trait Bmp extends StObject {
     
-    var constants: MIMEBMP = js.native
+    var constants: MIMEBMP
     
-    var decoders: Imagexmsbmp = js.native
+    var decoders: Imagexmsbmp
     
-    var encoders: ImagebmpImagexmsbmp = js.native
+    var encoders: ImagebmpImagexmsbmp
     
-    var mime: Imagebmp = js.native
+    var mime: Imagebmp
   }
   object Bmp {
     

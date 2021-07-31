@@ -2,31 +2,29 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Policy for retention of scheduled snapshots.
   */
-@js.native
 trait SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy extends StObject {
   
   /**
     * Maximum age of the snapshot that is allowed to be kept.
     */
-  var maxRetentionDays: js.UndefOr[Double] = js.native
+  var maxRetentionDays: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the behavior to apply to existing, scheduled snapshots
     * snapshots if the policy is changed.
     */
-  var onPolicySwitch: js.UndefOr[String] = js.native
+  var onPolicySwitch: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the behavior to apply to scheduled snapshots when the source
     * disk is deleted.
     */
-  var onSourceDiskDelete: js.UndefOr[String] = js.native
+  var onSourceDiskDelete: js.UndefOr[String] = js.undefined
 }
 object SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy {
   

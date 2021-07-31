@@ -3,33 +3,31 @@ package typings.winrtUwp.Windows.ApplicationModel.Activation
 import typings.winrtUwp.Windows.UI.ViewManagement.ActivationViewSwitcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information for a device that invokes AutoPlay. */
-@js.native
 trait DeviceActivatedEventArgs extends StObject {
   
   /** Gets the identifier for the currently shown app view. */
-  var currentlyShownApplicationViewId: Double = js.native
+  var currentlyShownApplicationViewId: Double
   
   /** Gets the device identifier for the device that invoked AutoPlay. */
-  var deviceInformationId: String = js.native
+  var deviceInformationId: String
   
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the execution state of the app before it was activated. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the splash screen object which provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
   
   /** Gets the action associated with the activated device. */
-  var verb: String = js.native
+  var verb: String
   
   /** Gets the view switcher object that allows you to set the view for the application. */
-  var viewSwitcher: ActivationViewSwitcher = js.native
+  var viewSwitcher: ActivationViewSwitcher
 }
 object DeviceActivatedEventArgs {
   

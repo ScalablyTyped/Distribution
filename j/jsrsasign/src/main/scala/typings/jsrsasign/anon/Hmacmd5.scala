@@ -2,87 +2,85 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hmacmd5 extends StObject {
   
-  var MD5withECDSA: String = js.native
+  var MD5withECDSA: String
   
-  var MD5withRSA: String = js.native
+  var MD5withRSA: String
   
-  var MD5withRSAandMGF1: String = js.native
+  var MD5withRSAandMGF1: String
   
-  var RIPEMD160withECDSA: String = js.native
+  var RIPEMD160withECDSA: String
   
-  var RIPEMD160withRSA: String = js.native
+  var RIPEMD160withRSA: String
   
-  var RIPEMD160withRSAandMGF1: String = js.native
+  var RIPEMD160withRSAandMGF1: String
   
-  var SHA1withDSA: String = js.native
+  var SHA1withDSA: String
   
-  var SHA1withECDSA: String = js.native
+  var SHA1withECDSA: String
   
-  var SHA1withRSA: String = js.native
+  var SHA1withRSA: String
   
-  var SHA1withRSAandMGF1: String = js.native
+  var SHA1withRSAandMGF1: String
   
-  var SHA224withDSA: String = js.native
+  var SHA224withDSA: String
   
-  var SHA224withECDSA: String = js.native
+  var SHA224withECDSA: String
   
-  var SHA224withRSA: String = js.native
+  var SHA224withRSA: String
   
-  var SHA224withRSAandMGF1: String = js.native
+  var SHA224withRSAandMGF1: String
   
-  var SHA256withDSA: String = js.native
+  var SHA256withDSA: String
   
-  var SHA256withECDSA: String = js.native
+  var SHA256withECDSA: String
   
-  var SHA256withRSA: String = js.native
+  var SHA256withRSA: String
   
-  var SHA256withRSAandMGF1: String = js.native
+  var SHA256withRSAandMGF1: String
   
-  var SHA384withECDSA: String = js.native
+  var SHA384withECDSA: String
   
-  var SHA384withRSA: String = js.native
+  var SHA384withRSA: String
   
-  var SHA384withRSAandMGF1: String = js.native
+  var SHA384withRSAandMGF1: String
   
-  var SHA512withECDSA: String = js.native
+  var SHA512withECDSA: String
   
-  var SHA512withRSA: String = js.native
+  var SHA512withRSA: String
   
-  var SHA512withRSAandMGF1: String = js.native
+  var SHA512withRSAandMGF1: String
   
-  var hmacmd5: String = js.native
+  var hmacmd5: String
   
-  var hmacripemd160: String = js.native
+  var hmacripemd160: String
   
-  var hmacsha1: String = js.native
+  var hmacsha1: String
   
-  var hmacsha224: String = js.native
+  var hmacsha224: String
   
-  var hmacsha256: String = js.native
+  var hmacsha256: String
   
-  var hmacsha384: String = js.native
+  var hmacsha384: String
   
-  var hmacsha512: String = js.native
+  var hmacsha512: String
   
-  var md5: String = js.native
+  var md5: String
   
-  var ripemd160: String = js.native
+  var ripemd160: String
   
-  var sha1: String = js.native
+  var sha1: String
   
-  var sha224: String = js.native
+  var sha224: String
   
-  var sha256: String = js.native
+  var sha256: String
   
-  var sha384: String = js.native
+  var sha384: String
   
-  var sha512: String = js.native
+  var sha512: String
 }
 object Hmacmd5 {
   

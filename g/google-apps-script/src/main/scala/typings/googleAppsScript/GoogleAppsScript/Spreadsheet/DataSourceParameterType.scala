@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait DataSourceParameterType extends StObject
 object DataSourceParameterType extends StObject {
   
   @js.native
-  sealed trait CELL extends DataSourceParameterType
+  sealed trait CELL
+    extends StObject
+       with DataSourceParameterType
   
   @js.native
-  sealed trait DATA_SOURCE_PARAMETER_TYPE_UNSUPPORTED extends DataSourceParameterType
+  sealed trait DATA_SOURCE_PARAMETER_TYPE_UNSUPPORTED
+    extends StObject
+       with DataSourceParameterType
 }

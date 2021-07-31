@@ -5,11 +5,12 @@ import typings.awsSdk.managedUploadMod.ManagedUpload
 import typings.awsSdk.managedUploadMod.ManagedUpload.ManagedUploadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofManagedUpload extends Instantiable1[/* options */ ManagedUploadOptions, ManagedUpload] {
+trait TypeofManagedUpload
+  extends StObject
+     with Instantiable1[/* options */ ManagedUploadOptions, ManagedUpload] {
   
   /**
     * Default value: 10000

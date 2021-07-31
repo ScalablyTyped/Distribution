@@ -10,9 +10,9 @@ Turns a browser readble stream into an async iterator
 | ------------------ | :-------------: |
 | Full name          | browser-readablestream-to-it |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 22718 |
+| # downloads        | 277825 |
 | # stars            | 0 |
 
 ## Links

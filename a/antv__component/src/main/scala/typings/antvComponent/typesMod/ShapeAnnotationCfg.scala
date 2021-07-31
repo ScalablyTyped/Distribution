@@ -3,14 +3,14 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShapeAnnotationCfg extends GroupComponentCfg {
+trait ShapeAnnotationCfg
+  extends StObject
+     with GroupComponentCfg {
   
   /** 自定义 render 函数，注意绘制的 shape/group 需要设置 id */
-  def render(container: IGroup): Unit = js.native
+  def render(container: IGroup): Unit
 }
 object ShapeAnnotationCfg {
   

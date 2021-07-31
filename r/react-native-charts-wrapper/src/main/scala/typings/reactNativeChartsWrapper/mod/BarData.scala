@@ -3,15 +3,13 @@ package typings.reactNativeChartsWrapper.mod
 import typings.reactNativeChartsWrapper.anon.BarWidth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarData extends StObject {
   
-  var config: js.UndefOr[BarWidth] = js.native
+  var config: js.UndefOr[BarWidth] = js.undefined
   
-  var dataSets: js.UndefOr[js.Array[BarDataset]] = js.native
+  var dataSets: js.UndefOr[js.Array[BarDataset]] = js.undefined
 }
 object BarData {
   

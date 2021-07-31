@@ -2,18 +2,17 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSExportAssignment
-  extends Node
+  extends StObject
+     with Node
      with Statement {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
   @JSName("type")
-  var type_TSExportAssignment: typings.babelTypes.babelTypesStrings.TSExportAssignment = js.native
+  var type_TSExportAssignment: typings.babelTypes.babelTypesStrings.TSExportAssignment
 }
 object TSExportAssignment {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentPropertyDescriptions extends StObject {
   
   /**
     * Describes the execution property groups.
     */
-  var PropertyGroupDescriptions: js.UndefOr[PropertyGroups] = js.native
+  var PropertyGroupDescriptions: js.UndefOr[PropertyGroups] = js.undefined
 }
 object EnvironmentPropertyDescriptions {
   

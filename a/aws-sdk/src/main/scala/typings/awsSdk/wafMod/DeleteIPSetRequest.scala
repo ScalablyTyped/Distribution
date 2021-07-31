@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIPSetRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
     */
-  var ChangeToken: typings.awsSdk.wafMod.ChangeToken = js.native
+  var ChangeToken: typings.awsSdk.wafMod.ChangeToken
   
   /**
     * The IPSetId of the IPSet that you want to delete. IPSetId is returned by CreateIPSet and by ListIPSets.
     */
-  var IPSetId: ResourceId = js.native
+  var IPSetId: ResourceId
 }
 object DeleteIPSetRequest {
   

@@ -11,20 +11,20 @@ import typings.chromeApps.chromeAppsStrings.getter
 import typings.chromeApps.chromeAppsStrings.unmanaged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */] extends NetworkConfigBase[M, IF, getter] {
+trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */]
+  extends StObject
+     with NetworkConfigBase[M, IF, getter] {
   
   /** Whether the network is connectable. */
-  var Connectable: js.UndefOr[Boolean] = js.native
+  var Connectable: js.UndefOr[Boolean] = js.undefined
   
   /** The network's current connection state. */
-  var ConnectionState: js.UndefOr[ConnectionStateType] = js.native
+  var ConnectionState: js.UndefOr[ConnectionStateType] = js.undefined
   
   /** The last recorded network error state. */
-  var ErrorState: js.UndefOr[String] = js.native
+  var ErrorState: js.UndefOr[String] = js.undefined
   
   /** The network's IP configuration. */
   var IPConfigs: js.UndefOr[
@@ -37,21 +37,21 @@ trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */] ext
         integer | ManagedLong
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** The network's MAC address. */
-  var MacAddress: js.UndefOr[String] = js.native
+  var MacAddress: js.UndefOr[String] = js.undefined
   
   /** The network's proxy settings. */
   var ProxySettings: js.UndefOr[
     typings.chromeApps.chrome.networking.onc.ProxySettings[unmanaged, String | ManagedDOMString, js.Array[String] | ManagedDOMStringList]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * For a connected network, whether the network connectivity to the Internet is limited,
     * e.g. if the network is behind a portal, or a cellular network is not activated.
     */
-  var RestrictedConnectivity: js.UndefOr[Boolean] = js.native
+  var RestrictedConnectivity: js.UndefOr[Boolean] = js.undefined
   
   /** IP configuration that was received from the DHCP server before applying static IP configuration. */
   var SavedIPConfig: js.UndefOr[
@@ -62,14 +62,14 @@ trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */] ext
       js.Array[String] | ManagedDOMStringList, 
       integer | ManagedLong
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Indicates whether and how the network is configured.
     * 'None' conflicts with extension code generation,
     * so we must use a string for 'Source' instead of a SourceType enum.
     */
-  var Source: js.UndefOr[Device_ | DevicePolicy | User | UserPolicy | None] = js.native
+  var Source: js.UndefOr[Device_ | DevicePolicy | User | UserPolicy | None] = js.undefined
   
   /** The network's static IP configuration. */
   var StaticIPConfig: js.UndefOr[
@@ -80,7 +80,7 @@ trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */] ext
       js.Array[String] | ManagedDOMStringList, 
       integer | ManagedLong
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object NetworkProperties {
   
@@ -91,7 +91,7 @@ object NetworkProperties {
   }
   
   @scala.inline
-  implicit class NetworkPropertiesMutableBuilder[Self <: NetworkProperties[_, _], M /* <: ManagedObject */, IF /* <: InterfaceType */] (val x: Self with (NetworkProperties[M, IF])) extends AnyVal {
+  implicit class NetworkPropertiesMutableBuilder[Self <: NetworkProperties[?, ?], M /* <: ManagedObject */, IF /* <: InterfaceType */] (val x: Self & (NetworkProperties[M, IF])) extends AnyVal {
     
     @scala.inline
     def setConnectable(value: Boolean): Self = StObject.set(x, "Connectable", value.asInstanceOf[js.Any])

@@ -3,19 +3,17 @@ package typings.screeps.anon
 import typings.screeps.screepsNumbers.`1.8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `4` extends StObject {
   
-  var upgradeController: `1.8` = js.native
+  var upgradeController: `1.8`
 }
 object `4` {
   
   @scala.inline
-  def apply(upgradeController: `1.8`): `4` = {
-    val __obj = js.Dynamic.literal(upgradeController = upgradeController.asInstanceOf[js.Any])
+  def apply(): `4` = {
+    val __obj = js.Dynamic.literal(upgradeController = 1.8)
     __obj.asInstanceOf[`4`]
   }
   

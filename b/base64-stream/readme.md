@@ -10,9 +10,9 @@ Contains new Node.js v0.10 style stream classes for encoding / decoding Base64 d
 | ------------------ | :-------------: |
 | Full name          | base64-stream |
 | Keywords           | Base64, stream, streaming, piping, node, node.js, encode, decode |
-| # releases         | 4 |
-| # dependents       | 86 |
-| # downloads        | 1593300 |
+| # releases         | 0 |
+| # dependents       | 94 |
+| # downloads        | 3082801 |
 | # stars            | 2 |
 
 ## Links

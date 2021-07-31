@@ -16,15 +16,14 @@ import typings.awsSdkClientXrayNode.putTraceSegmentsExceptionsUnionMod.PutTraceS
 import typings.awsSdkClientXrayNode.updateSamplingRuleExceptionsUnionMod.UpdateSamplingRuleExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesThrottledExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ThrottledExceptionDetails> * / any */ @js.native
-  trait ThrottledException
-    extends BatchGetTracesExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ThrottledExceptionDetails> * / any */ trait ThrottledException
+    extends StObject
+       with BatchGetTracesExceptionsUnion
        with CreateSamplingRuleExceptionsUnion
        with DeleteSamplingRuleExceptionsUnion
        with GetEncryptionConfigExceptionsUnion
@@ -39,13 +38,13 @@ object typesThrottledExceptionMod {
        with PutTraceSegmentsExceptionsUnion
        with UpdateSamplingRuleExceptionsUnion {
     
-    var name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.ThrottledException = js.native
+    var name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.ThrottledException
   }
   object ThrottledException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.ThrottledException): ThrottledException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ThrottledException = {
+      val __obj = js.Dynamic.literal(name = "ThrottledException")
       __obj.asInstanceOf[ThrottledException]
     }
     
@@ -57,13 +56,12 @@ object typesThrottledExceptionMod {
     }
   }
   
-  @js.native
   trait ThrottledExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
   }
   object ThrottledExceptionDetails {
     

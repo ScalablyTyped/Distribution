@@ -7,14 +7,15 @@ import typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper
 import typings.agGrid.originalColumnGroupMod.OriginalColumnGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnGroupMod {
   
   @JSImport("ag-grid/dist/lib/entities/columnGroup", "ColumnGroup")
   @js.native
-  class ColumnGroup protected () extends ColumnGroupChild {
+  class ColumnGroup protected ()
+    extends StObject
+       with ColumnGroupChild {
     def this(originalColumnGroup: OriginalColumnGroup, groupId: String, instanceId: Double) = this()
     
     def addChild(child: ColumnGroupChild): Unit = js.native
@@ -114,8 +115,7 @@ object columnGroupMod {
     @scala.inline
     def HEADER_GROUP_SHOW_OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEADER_GROUP_SHOW_OPEN")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/entities/columnGroup", "ColumnGroup.createUniqueId")
-    @js.native
-    def createUniqueId(groupId: String, instanceId: Double): String = js.native
+    @scala.inline
+    def createUniqueId(groupId: String, instanceId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createUniqueId")(groupId.asInstanceOf[js.Any], instanceId.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

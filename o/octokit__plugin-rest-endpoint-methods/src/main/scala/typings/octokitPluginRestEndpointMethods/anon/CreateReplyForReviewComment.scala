@@ -2,65 +2,63 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateReplyForReviewComment extends StObject {
   
-  var checkIfMerged: `845` = js.native
+  var checkIfMerged: `845`
   
-  var create: `846` = js.native
+  var create: `846`
   
-  var createReplyForReviewComment: `847` = js.native
+  var createReplyForReviewComment: `847`
   
-  var createReview: `848` = js.native
+  var createReview: `848`
   
-  var createReviewComment: `849` = js.native
+  var createReviewComment: `849`
   
-  var deletePendingReview: `850` = js.native
+  var deletePendingReview: `850`
   
-  var deleteReviewComment: `851` = js.native
+  var deleteReviewComment: `851`
   
-  var dismissReview: `852` = js.native
+  var dismissReview: `852`
   
-  var get: `853` = js.native
+  var get: `853`
   
-  var getReview: `854` = js.native
+  var getReview: `854`
   
-  var getReviewComment: `855` = js.native
+  var getReviewComment: `855`
   
-  var list: `856` = js.native
+  var list: `856`
   
-  var listCommentsForReview: `857` = js.native
+  var listCommentsForReview: `857`
   
-  var listCommits: `858` = js.native
+  var listCommits: `858`
   
-  var listFiles: `859` = js.native
+  var listFiles: `859`
   
-  var listRequestedReviewers: `860` = js.native
+  var listRequestedReviewers: `860`
   
-  var listReviewComments: `861` = js.native
+  var listReviewComments: `861`
   
-  var listReviewCommentsForRepo: `862` = js.native
+  var listReviewCommentsForRepo: `862`
   
-  var listReviews: `863` = js.native
+  var listReviews: `863`
   
-  var merge: `864` = js.native
+  var merge: `864`
   
-  var removeRequestedReviewers: `865` = js.native
+  var removeRequestedReviewers: `865`
   
-  var requestReviewers: `866` = js.native
+  var requestReviewers: `866`
   
-  var submitReview: `867` = js.native
+  var submitReview: `867`
   
-  var update: `868` = js.native
+  var update: `868`
   
-  var updateBranch: `869` = js.native
+  var updateBranch: `869`
   
-  var updateReview: `870` = js.native
+  var updateReview: `870`
   
-  var updateReviewComment: `871` = js.native
+  var updateReviewComment: `871`
 }
 object CreateReplyForReviewComment {
   

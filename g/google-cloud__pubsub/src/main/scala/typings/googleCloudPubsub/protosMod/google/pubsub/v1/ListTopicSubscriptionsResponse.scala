@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a ListTopicSubscriptionsResponse. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ListTopicSubscriptionsResponse.
   * @param [properties] Properties to set
   */
-class ListTopicSubscriptionsResponse () extends IListTopicSubscriptionsResponse {
+class ListTopicSubscriptionsResponse ()
+  extends StObject
+     with IListTopicSubscriptionsResponse {
   def this(properties: IListTopicSubscriptionsResponse) = this()
   
   /** ListTopicSubscriptionsResponse nextPageToken. */
@@ -36,18 +37,20 @@ class ListTopicSubscriptionsResponse () extends IListTopicSubscriptionsResponse 
 }
 object ListTopicSubscriptionsResponse {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ListTopicSubscriptionsResponse instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ListTopicSubscriptionsResponse instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.create")
-  @js.native
-  def create(): ListTopicSubscriptionsResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.create")
-  @js.native
-  def create(properties: IListTopicSubscriptionsResponse): ListTopicSubscriptionsResponse = js.native
+  @scala.inline
+  def create(): ListTopicSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListTopicSubscriptionsResponse]
+  @scala.inline
+  def create(properties: IListTopicSubscriptionsResponse): ListTopicSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListTopicSubscriptionsResponse]
   
   /**
     * Decodes a ListTopicSubscriptionsResponse message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object ListTopicSubscriptionsResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.decode")
-  @js.native
-  def decode(reader: Reader): ListTopicSubscriptionsResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ListTopicSubscriptionsResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array): ListTopicSubscriptionsResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ListTopicSubscriptionsResponse = js.native
+  @scala.inline
+  def decode(reader: Reader): ListTopicSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSubscriptionsResponse]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ListTopicSubscriptionsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListTopicSubscriptionsResponse]
+  @scala.inline
+  def decode(reader: Uint8Array): ListTopicSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSubscriptionsResponse]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ListTopicSubscriptionsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListTopicSubscriptionsResponse]
   
   /**
     * Decodes a ListTopicSubscriptionsResponse message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object ListTopicSubscriptionsResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ListTopicSubscriptionsResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ListTopicSubscriptionsResponse = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ListTopicSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSubscriptionsResponse]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ListTopicSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSubscriptionsResponse]
   
   /**
     * Encodes the specified ListTopicSubscriptionsResponse message. Does not implicitly {@link google.pubsub.v1.ListTopicSubscriptionsResponse.verify|verify} messages.
@@ -93,12 +90,10 @@ object ListTopicSubscriptionsResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.encode")
-  @js.native
-  def encode(message: IListTopicSubscriptionsResponse): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.encode")
-  @js.native
-  def encode(message: IListTopicSubscriptionsResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IListTopicSubscriptionsResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IListTopicSubscriptionsResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ListTopicSubscriptionsResponse message, length delimited. Does not implicitly {@link google.pubsub.v1.ListTopicSubscriptionsResponse.verify|verify} messages.
@@ -107,12 +102,10 @@ object ListTopicSubscriptionsResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IListTopicSubscriptionsResponse): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IListTopicSubscriptionsResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IListTopicSubscriptionsResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IListTopicSubscriptionsResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ListTopicSubscriptionsResponse message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object ListTopicSubscriptionsResponse {
     * @returns ListTopicSubscriptionsResponse
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ListTopicSubscriptionsResponse = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ListTopicSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListTopicSubscriptionsResponse]
   
   /**
     * Creates a plain object from a ListTopicSubscriptionsResponse message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object ListTopicSubscriptionsResponse {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.toObject")
-  @js.native
-  def toObject(message: ListTopicSubscriptionsResponse): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.toObject")
-  @js.native
-  def toObject(message: ListTopicSubscriptionsResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ListTopicSubscriptionsResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ListTopicSubscriptionsResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ListTopicSubscriptionsResponse message.
@@ -144,7 +134,6 @@ object ListTopicSubscriptionsResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSubscriptionsResponse.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

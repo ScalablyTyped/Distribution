@@ -6,30 +6,30 @@ import typings.iobroker.iobrokerStrings.host
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<std.Omit<iobroker.iobroker/objects.<global>.ioBroker.HostObject, 'common' | 'native'>> */
-@js.native
-trait PartialHostObject extends PartialObject {
+trait PartialHostObject
+  extends StObject
+     with PartialObject {
   
-  var _id: js.UndefOr[String] = js.native
+  var _id: js.UndefOr[String] = js.undefined
   
-  var acl: js.UndefOr[ObjectACL] = js.native
+  var acl: js.UndefOr[ObjectACL] = js.undefined
   
-  var common: js.UndefOr[PartialHostCommon] = js.native
+  var common: js.UndefOr[PartialHostCommon] = js.undefined
   
-  var enums: js.UndefOr[Record[String, String]] = js.native
+  var enums: js.UndefOr[Record[String, String]] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var native: js.UndefOr[PartialHostNative] = js.native
+  var native: js.UndefOr[PartialHostNative] = js.undefined
   
-  var ts: js.UndefOr[Double] = js.native
+  var ts: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[host] = js.native
+  var `type`: js.UndefOr[host] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object PartialHostObject {
   

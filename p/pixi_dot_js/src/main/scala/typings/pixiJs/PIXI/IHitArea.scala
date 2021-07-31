@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @interface IHitArea
   * @memberof PIXI
   */
-@js.native
 trait IHitArea extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait IHitArea extends StObject {
     * @param {number} y - The Y coordinate of the point to test
     * @return {boolean} Whether the x/y coordinates are within this area
     */
-  def contains(x: Double, y: Double): Boolean = js.native
+  def contains(x: Double, y: Double): Boolean
 }
 object IHitArea {
   

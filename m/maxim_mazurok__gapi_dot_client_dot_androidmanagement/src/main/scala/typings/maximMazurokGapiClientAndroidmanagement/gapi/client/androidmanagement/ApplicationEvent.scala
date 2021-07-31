@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationEvent extends StObject {
   
   /** The creation time of the event. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** App event type. */
-  var eventType: js.UndefOr[String] = js.native
+  var eventType: js.UndefOr[String] = js.undefined
 }
 object ApplicationEvent {
   

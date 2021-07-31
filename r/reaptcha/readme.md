@@ -10,9 +10,9 @@ Google reCAPTCHA for React
 | ------------------ | :-------------: |
 | Full name          | reaptcha |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 482548 |
+| # releases         | 7 |
+| # dependents       | 6 |
+| # downloads        | 572035 |
 | # stars            | 0 |
 
 ## Links

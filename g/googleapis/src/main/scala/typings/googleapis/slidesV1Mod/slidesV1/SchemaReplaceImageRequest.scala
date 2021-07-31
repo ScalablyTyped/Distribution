@@ -2,25 +2,23 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Replaces an existing image with a new image.  Replacing an image removes
   * some image effects from the existing image.
   */
-@js.native
 trait SchemaReplaceImageRequest extends StObject {
   
   /**
     * The ID of the existing image that will be replaced.
     */
-  var imageObjectId: js.UndefOr[String] = js.native
+  var imageObjectId: js.UndefOr[String] = js.undefined
   
   /**
     * The replacement method.
     */
-  var imageReplaceMethod: js.UndefOr[String] = js.native
+  var imageReplaceMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the new image.  The image is fetched once at insertion time
@@ -30,7 +28,7 @@ trait SchemaReplaceImageRequest extends StObject {
     * length. The URL itself is saved with the image, and exposed via the
     * Image.source_url field.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaReplaceImageRequest {
   

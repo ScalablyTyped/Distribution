@@ -10,9 +10,9 @@ Chunk converts arrays like `[1,2,3,4,5]` into arrays of arrays like `[[1,2], [3,
 | ------------------ | :-------------: |
 | Full name          | chunk |
 | Keywords           | array, chunk |
-| # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 198107 |
+| # releases         | 2 |
+| # dependents       | 43 |
+| # downloads        | 224618 |
 | # stars            | 2 |
 
 ## Links

@@ -3,33 +3,31 @@ package typings.pdfmake.interfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TDocumentInformation extends StObject {
   
   /** the name of the author */
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
-  var creationDate: js.UndefOr[Date] = js.native
+  var creationDate: js.UndefOr[Date] = js.undefined
   
-  var creator: js.UndefOr[String] = js.native
+  var creator: js.UndefOr[String] = js.undefined
   
   /** keywords associated with the document */
-  var keywords: js.UndefOr[String] = js.native
+  var keywords: js.UndefOr[String] = js.undefined
   
-  var modDate: js.UndefOr[Date] = js.native
+  var modDate: js.UndefOr[Date] = js.undefined
   
-  var producer: js.UndefOr[String] = js.native
+  var producer: js.UndefOr[String] = js.undefined
   
   /** the subject of the document */
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
   /** the title of the document */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var trapped: js.UndefOr[String] = js.native
+  var trapped: js.UndefOr[String] = js.undefined
 }
 object TDocumentInformation {
   

@@ -5,19 +5,17 @@ import typings.awsLambda.awsLambdaStrings.ThirdParty
 import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Category extends StObject {
   
-  var category: CodePipelineActionCategory = js.native
+  var category: CodePipelineActionCategory
   
-  var owner: AWS | typings.awsLambda.awsLambdaStrings.Custom | ThirdParty = js.native
+  var owner: AWS | typings.awsLambda.awsLambdaStrings.Custom | ThirdParty
   
-  var provider: String = js.native
+  var provider: String
   
-  var version: Double = js.native
+  var version: Double
 }
 object Category {
   

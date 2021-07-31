@@ -9,7 +9,6 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpsMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined follow-redirects.follow-redirects.Override<{readonly request (options : node.https.RequestOptions): node.http.ClientRequest, readonly request (options : string): node.http.ClientRequest, readonly request (options : node.url.URL): node.http.ClientRequest, readonly request (options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : node.url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : string, options : node.https.RequestOptions): node.http.ClientRequest, readonly request (url : node.url.URL, options : node.https.RequestOptions): node.http.ClientRequest, readonly request (url : string, options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : node.url.URL, options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : node.https.RequestOptions): node.http.ClientRequest, readonly get (options : string): node.http.ClientRequest, readonly get (options : node.url.URL): node.http.ClientRequest, readonly get (options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : node.url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : string, options : node.https.RequestOptions): node.http.ClientRequest, readonly get (url : node.url.URL, options : node.https.RequestOptions): node.http.ClientRequest, readonly get (url : string, options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : node.url.URL, options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly createServer (): node.https.Server, readonly createServer (requestListener : node.http.RequestListener): node.https.Server, readonly createServer (options : node.https.ServerOptions): node.https.Server, readonly createServer (options : node.https.ServerOptions, requestListener : node.http.RequestListener): node.https.Server,   Agent :new (): node.https.Agent,   Server :new (): node.https.Server,   globalAgent :node.https.Agent}, follow-redirects.follow-redirects.RedirectScheme<node.https.RequestOptions, node.http.ClientRequest, node.http.IncomingMessage>> */
@@ -41,9 +40,8 @@ object httpsMod {
   @scala.inline
   def Server_=(x: Instantiable0[typings.node.httpsMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
   
-  @JSImport("follow-redirects/https", "createServer")
-  @js.native
-  def createServer(): typings.node.httpsMod.Server = js.native
+  @scala.inline
+  def createServer(): typings.node.httpsMod.Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.node.httpsMod.Server]
   @JSImport("follow-redirects/https", "createServer")
   @js.native
   def createServer_FhttpsMod: js.Function0[typings.node.httpsMod.Server] = js.native
@@ -51,21 +49,17 @@ object httpsMod {
   @scala.inline
   def createServer_FhttpsMod_=(x: js.Function0[typings.node.httpsMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createServer")(x.asInstanceOf[js.Any])
   
-  @JSImport("follow-redirects/https", "get")
-  @js.native
-  def get(options: RequestOptions with FollowOptions[RequestOptions]): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-  @JSImport("follow-redirects/https", "get")
-  @js.native
+  @scala.inline
+  def get(options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  @scala.inline
   def get(
-    options: RequestOptions with FollowOptions[RequestOptions],
-    callback: js.Function1[/* res */ IncomingMessage with FollowResponse, Unit]
-  ): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-  @JSImport("follow-redirects/https", "get")
-  @js.native
-  def get(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-  @JSImport("follow-redirects/https", "get")
-  @js.native
-  def get(options: String, callback: js.Function1[/* res */ IncomingMessage with FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  @scala.inline
+  def get(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  @scala.inline
+  def get(options: String, callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
   
   @JSImport("follow-redirects/https", "globalAgent")
   @js.native
@@ -73,19 +67,15 @@ object httpsMod {
   @scala.inline
   def globalAgent_=(x: typings.node.httpsMod.Agent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalAgent")(x.asInstanceOf[js.Any])
   
-  @JSImport("follow-redirects/https", "request")
-  @js.native
-  def request(options: RequestOptions with FollowOptions[RequestOptions]): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-  @JSImport("follow-redirects/https", "request")
-  @js.native
+  @scala.inline
+  def request(options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  @scala.inline
   def request(
-    options: RequestOptions with FollowOptions[RequestOptions],
-    callback: js.Function1[/* res */ IncomingMessage with FollowResponse, Unit]
-  ): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-  @JSImport("follow-redirects/https", "request")
-  @js.native
-  def request(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-  @JSImport("follow-redirects/https", "request")
-  @js.native
-  def request(options: String, callback: js.Function1[/* res */ IncomingMessage with FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  @scala.inline
+  def request(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  @scala.inline
+  def request(options: String, callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
 }

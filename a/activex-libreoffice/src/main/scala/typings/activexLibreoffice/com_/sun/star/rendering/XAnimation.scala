@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface must be implemented by every animation object. It is used by the {@link XCanvas} interface to render generic animations.
   * @since OOo 2.0
   */
-@js.native
-trait XAnimation extends XInterface {
+trait XAnimation
+  extends StObject
+     with XInterface {
   
   /**
     * Request the attribute information for this animation.
@@ -22,7 +22,7 @@ trait XAnimation extends XInterface {
     * This method returns the {@link AnimationAttributes} structure, which defines more closely how to play this animation.
     * @returns the requested {@link AnimationAttributes} structure.
     */
-  val AnimationAttributes: typings.activexLibreoffice.com_.sun.star.rendering.AnimationAttributes = js.native
+  val AnimationAttributes: typings.activexLibreoffice.com_.sun.star.rendering.AnimationAttributes
   
   /**
     * Request the attribute information for this animation.
@@ -30,7 +30,7 @@ trait XAnimation extends XInterface {
     * This method returns the {@link AnimationAttributes} structure, which defines more closely how to play this animation.
     * @returns the requested {@link AnimationAttributes} structure.
     */
-  def getAnimationAttributes(): typings.activexLibreoffice.com_.sun.star.rendering.AnimationAttributes = js.native
+  def getAnimationAttributes(): typings.activexLibreoffice.com_.sun.star.rendering.AnimationAttributes
   
   /**
     * Render the animation content at time t into the specified canvas.
@@ -49,7 +49,7 @@ trait XAnimation extends XInterface {
     * @param t Time instant for which animation content is requested. The range must always be [0,1], where 0 denotes the very beginning, and 1 the end of the
     * @throws com::sun::star::lang::IllegalArgumentException if one of the passed parameters does not lie in the specified, permissible range.
     */
-  def render(canvas: XCanvas, viewState: ViewState, t: Double): Unit = js.native
+  def render(canvas: XCanvas, viewState: ViewState, t: Double): Unit
 }
 object XAnimation {
   

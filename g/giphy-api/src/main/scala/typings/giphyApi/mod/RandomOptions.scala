@@ -2,13 +2,13 @@ package typings.giphyApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RandomOptions extends BaseOptions {
+trait RandomOptions
+  extends StObject
+     with BaseOptions {
   
-  var tag: String = js.native
+  var tag: String
 }
 object RandomOptions {
   

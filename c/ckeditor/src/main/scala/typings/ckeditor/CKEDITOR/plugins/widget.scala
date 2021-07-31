@@ -15,13 +15,13 @@ import typings.ckeditor.CKEDITOR.template
 import typings.ckeditor.anon.FocusInited
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait widget
-  extends typings.ckeditor.CKEDITOR.plugins.widget.definition
-     with event {
+  extends StObject
+     with event
+     with typings.ckeditor.CKEDITOR.plugins.widget.definition {
   
   def addClass(className: String): Unit = js.native
   
@@ -87,52 +87,53 @@ trait widget
 }
 object widget {
   
-  @js.native
-  trait definition extends feature {
+  trait definition
+    extends StObject
+       with feature {
     
-    var button: js.UndefOr[String] = js.native
+    var button: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var data: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var defaults: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var defaults: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var dialog: js.UndefOr[String] = js.native
+    var dialog: js.UndefOr[String] = js.undefined
     
-    var downcast: js.UndefOr[String | (js.Function1[/* element */ element, Unit])] = js.native
+    var downcast: js.UndefOr[String | (js.Function1[/* element */ element, Unit])] = js.undefined
     
-    var downcasts: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var downcasts: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var edit: js.UndefOr[js.Function0[Unit]] = js.native
+    var edit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var editables: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var editables: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var getLabel: js.UndefOr[js.Function0[_]] = js.native
+    var getLabel: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var init: js.UndefOr[js.Function0[Unit]] = js.native
+    var init: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var insert: js.UndefOr[js.Function0[Unit]] = js.native
+    var insert: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var parts: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var parts: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var pathName: js.UndefOr[String] = js.native
+    var pathName: js.UndefOr[String] = js.undefined
     
-    var styleToAllowedContentRules: js.UndefOr[js.Function1[/* style */ style, allowedContentRules]] = js.native
+    var styleToAllowedContentRules: js.UndefOr[js.Function1[/* style */ style, allowedContentRules]] = js.undefined
     
-    var styleableElements: js.UndefOr[String] = js.native
+    var styleableElements: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[String | typings.ckeditor.CKEDITOR.template] = js.native
+    var template: js.UndefOr[String | typings.ckeditor.CKEDITOR.template] = js.undefined
     
-    var upcast: js.UndefOr[String | (js.Function2[/* element */ element, /* data */ js.Any, Boolean])] = js.native
+    var upcast: js.UndefOr[String | (js.Function2[/* element */ element, /* data */ js.Any, Boolean])] = js.undefined
     
-    var upcastPriority: js.UndefOr[Double] = js.native
+    var upcastPriority: js.UndefOr[Double] = js.undefined
     
-    var upcasts: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var upcasts: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object definition {
     
@@ -203,7 +204,7 @@ object widget {
       def setEditablesUndefined: Self = StObject.set(x, "editables", js.undefined)
       
       @scala.inline
-      def setGetLabel(value: () => _): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      def setGetLabel(value: () => js.Any): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
@@ -287,7 +288,8 @@ object widget {
   
   @js.native
   trait nestedEditable
-    extends typings.ckeditor.CKEDITOR.dom.element {
+    extends StObject
+       with typings.ckeditor.CKEDITOR.dom.element {
     
     val editor: typings.ckeditor.CKEDITOR.editor = js.native
     
@@ -303,16 +305,15 @@ object widget {
   }
   object nestedEditable {
     
-    @js.native
     trait definition extends StObject {
       
-      var allowedContent: js.UndefOr[allowedContentRules] = js.native
+      var allowedContent: js.UndefOr[allowedContentRules] = js.undefined
       
-      var disallowedContent: js.UndefOr[disallowedContentRules] = js.native
+      var disallowedContent: js.UndefOr[disallowedContentRules] = js.undefined
       
-      var pathName: js.UndefOr[String] = js.native
+      var pathName: js.UndefOr[String] = js.undefined
       
-      var selector: js.UndefOr[String] = js.native
+      var selector: js.UndefOr[String] = js.undefined
     }
     object definition {
       
@@ -356,7 +357,9 @@ object widget {
   }
   
   @js.native
-  trait repository extends event {
+  trait repository
+    extends StObject
+       with event {
     
     def add(name: String, widgetDef: definition): Unit = js.native
     
@@ -384,15 +387,15 @@ object widget {
     def getByElement(element: js.Any, checkWrapperOnly: Boolean): widget = js.native
     
     def initOn(element: typings.ckeditor.CKEDITOR.dom.element): widget = js.native
-    def initOn(
-      element: typings.ckeditor.CKEDITOR.dom.element,
-      widgetDef: js.UndefOr[scala.Nothing],
-      startupData: StringDictionary[js.Any]
-    ): widget = js.native
     def initOn(element: typings.ckeditor.CKEDITOR.dom.element, widgetDef: String): widget = js.native
     def initOn(
       element: typings.ckeditor.CKEDITOR.dom.element,
       widgetDef: String,
+      startupData: StringDictionary[js.Any]
+    ): widget = js.native
+    def initOn(
+      element: typings.ckeditor.CKEDITOR.dom.element,
+      widgetDef: Unit,
       startupData: StringDictionary[js.Any]
     ): widget = js.native
     def initOn(element: typings.ckeditor.CKEDITOR.dom.element, widgetDef: definition): widget = js.native
@@ -419,12 +422,11 @@ object widget {
     def wrapElement(element: js.Any, widgetName: String): js.Any = js.native
   }
   
-  @js.native
   trait widgetselection extends StObject {
     
-    def addFillers(editable: editable): Boolean = js.native
+    def addFillers(editable: editable): Boolean
     
-    def removeFillers(editable: editable): Unit = js.native
+    def removeFillers(editable: editable): Unit
   }
   object widgetselection {
     

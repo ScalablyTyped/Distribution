@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Directorysitecontacts")
@@ -31,7 +30,7 @@ class ResourceDirectorysitecontacts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDirectorySiteContact] = js.native
   def get(callback: BodyResponseCallback[SchemaDirectorySiteContact]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDirectorySiteContact] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDirectorySiteContact] = js.native
   def get(params: ParamsResourceDirectorysitecontactsGet): GaxiosPromise[SchemaDirectorySiteContact] = js.native
   def get(
     params: ParamsResourceDirectorysitecontactsGet,
@@ -71,7 +70,7 @@ class ResourceDirectorysitecontacts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaDirectorySiteContactsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDirectorySiteContactsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDirectorySiteContactsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDirectorySiteContactsListResponse] = js.native
   def list(params: ParamsResourceDirectorysitecontactsList): GaxiosPromise[SchemaDirectorySiteContactsListResponse] = js.native
   def list(
     params: ParamsResourceDirectorysitecontactsList,

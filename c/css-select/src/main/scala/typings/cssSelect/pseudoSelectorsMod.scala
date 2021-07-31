@@ -9,29 +9,30 @@ import typings.cssWhat.parseMod.PseudoSelector
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pseudoSelectorsMod {
   
-  @JSImport("css-select/lib/pseudo-selectors", "compilePseudoSelector")
+  @JSImport("css-select/lib/pseudo-selectors", JSImport.Namespace)
   @js.native
-  def compilePseudoSelector[Node, ElementNode /* <: Node */](
-    next: CompiledQuery[ElementNode],
-    selector: PseudoSelector,
-    options: InternalOptions[Node, ElementNode],
-    context: js.UndefOr[scala.Nothing],
-    compileToken: CompileToken[Node, ElementNode]
-  ): CompiledQuery[ElementNode] = js.native
-  @JSImport("css-select/lib/pseudo-selectors", "compilePseudoSelector")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def compilePseudoSelector[Node, ElementNode /* <: Node */](
     next: CompiledQuery[ElementNode],
     selector: PseudoSelector,
     options: InternalOptions[Node, ElementNode],
     context: js.Array[ElementNode],
     compileToken: CompileToken[Node, ElementNode]
-  ): CompiledQuery[ElementNode] = js.native
+  ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compilePseudoSelector")(next.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], compileToken.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
+  @scala.inline
+  def compilePseudoSelector[Node, ElementNode /* <: Node */](
+    next: CompiledQuery[ElementNode],
+    selector: PseudoSelector,
+    options: InternalOptions[Node, ElementNode],
+    context: Unit,
+    compileToken: CompileToken[Node, ElementNode]
+  ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compilePseudoSelector")(next.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], compileToken.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
   
   @JSImport("css-select/lib/pseudo-selectors", "filters")
   @js.native

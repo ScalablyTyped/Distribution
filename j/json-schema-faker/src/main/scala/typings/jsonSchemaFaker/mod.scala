@@ -7,277 +7,156 @@ import typings.jsonSchemaFaker.anon.Callback
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /** @deprecated calling JsonSchemaFaker() is deprecated, call either .generate() or .resolve()' */
+  @scala.inline
+  def apply(schema: Schema): js.Any = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(schema: Schema, refs: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(schema: Schema, refs: js.Array[Schema]): js.Any = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   @JSImport("json-schema-faker", JSImport.Namespace)
   @js.native
-  def apply(schema: Schema): js.Any = js.native
-  @JSImport("json-schema-faker", JSImport.Namespace)
-  @js.native
-  def apply(schema: Schema, refs: String): js.Any = js.native
-  @JSImport("json-schema-faker", JSImport.Namespace)
-  @js.native
-  def apply(schema: Schema, refs: js.Array[Schema]): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("json-schema-faker", "define")
-  @js.native
-  def define(name: String, cb: js.Function0[Unit]): js.Any = js.native
+  @scala.inline
+  def define(name: String, cb: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("json-schema-faker", "extend")
-  @js.native
-  def extend(name: String, cb: js.Function0[Unit]): js.Any = js.native
+  @scala.inline
+  def extend(name: String, cb: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(name.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("json-schema-faker", "format")
-  @js.native
-  def format(): js.Any = js.native
-  @JSImport("json-schema-faker", "format")
-  @js.native
-  def format(nameOrFormatMap: js.UndefOr[NameOrFormatMap], callback: js.Function1[js.UndefOr[Schema], Unit]): js.Any = js.native
-  @JSImport("json-schema-faker", "format")
-  @js.native
-  def format(nameOrFormatMap: NameOrFormatMap): js.Any = js.native
+  @scala.inline
+  def format(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("format")().asInstanceOf[js.Any]
+  @scala.inline
+  def format(nameOrFormatMap: Unit, callback: js.Function1[/* schema */ js.UndefOr[Schema], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(nameOrFormatMap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def format(nameOrFormatMap: NameOrFormatMap): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(nameOrFormatMap.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def format(nameOrFormatMap: NameOrFormatMap, callback: js.Function1[/* schema */ js.UndefOr[Schema], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(nameOrFormatMap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("json-schema-faker", "generate")
-  @js.native
-  def generate(schema: Schema): js.Any = js.native
-  @JSImport("json-schema-faker", "generate")
-  @js.native
-  def generate(schema: Schema, refs: String): js.Any = js.native
-  @JSImport("json-schema-faker", "generate")
-  @js.native
-  def generate(schema: Schema, refs: js.Array[Schema]): js.Any = js.native
+  @scala.inline
+  def generate(schema: Schema): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def generate(schema: Schema, refs: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def generate(schema: Schema, refs: js.Array[Schema]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("json-schema-faker", "locate")
-  @js.native
-  def locate(name: String): js.Any = js.native
+  @scala.inline
+  def locate(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("locate")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("json-schema-faker", "option")
-  @js.native
-  def option(option: String): js.Any = js.native
-  @JSImport("json-schema-faker", "option")
-  @js.native
-  def option(option: String, value: js.Any): js.Any = js.native
-  @JSImport("json-schema-faker", "option")
-  @js.native
-  def option(option: OptionInputObject): js.Any = js.native
-  @JSImport("json-schema-faker", "option")
-  @js.native
-  def option(option: OptionInputObject, value: js.Any): js.Any = js.native
+  @scala.inline
+  def option(option: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def option(option: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def option(option: OptionInputObject): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def option(option: OptionInputObject, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   // jsf.random
   object random {
     
-    @JSImport("json-schema-faker", "random.date")
+    @JSImport("json-schema-faker", "random")
     @js.native
-    def date(step: String): Date = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      defMin: js.UndefOr[scala.Nothing],
-      defMax: js.UndefOr[scala.Nothing],
-      hasPrecision: Boolean
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      defMin: js.UndefOr[scala.Nothing],
-      defMax: Double
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      defMin: js.UndefOr[scala.Nothing],
-      defMax: Double,
-      hasPrecision: Boolean
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], defMin: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      defMin: Double,
-      defMax: js.UndefOr[scala.Nothing],
-      hasPrecision: Boolean
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], defMin: Double, defMax: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      defMin: Double,
-      defMax: Double,
-      hasPrecision: Boolean
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: js.UndefOr[scala.Nothing],
-      max: Double,
-      defMin: js.UndefOr[scala.Nothing],
-      defMax: js.UndefOr[scala.Nothing],
-      hasPrecision: Boolean
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: js.UndefOr[scala.Nothing], max: Double, defMin: js.UndefOr[scala.Nothing], defMax: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: js.UndefOr[scala.Nothing],
-      max: Double,
-      defMin: js.UndefOr[scala.Nothing],
-      defMax: Double,
-      hasPrecision: Boolean
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: js.UndefOr[scala.Nothing], max: Double, defMin: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: js.UndefOr[scala.Nothing],
-      max: Double,
-      defMin: Double,
-      defMax: js.UndefOr[scala.Nothing],
-      hasPrecision: Boolean
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: js.UndefOr[scala.Nothing], max: Double, defMin: Double, defMax: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: js.UndefOr[scala.Nothing], max: Double, defMin: Double, defMax: Double, hasPrecision: Boolean): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: Double,
-      max: js.UndefOr[scala.Nothing],
-      defMin: js.UndefOr[scala.Nothing],
-      defMax: js.UndefOr[scala.Nothing],
-      hasPrecision: Boolean
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double, max: js.UndefOr[scala.Nothing], defMin: js.UndefOr[scala.Nothing], defMax: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: Double,
-      max: js.UndefOr[scala.Nothing],
-      defMin: js.UndefOr[scala.Nothing],
-      defMax: Double,
-      hasPrecision: Boolean
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double, max: js.UndefOr[scala.Nothing], defMin: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: Double,
-      max: js.UndefOr[scala.Nothing],
-      defMin: Double,
-      defMax: js.UndefOr[scala.Nothing],
-      hasPrecision: Boolean
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double, max: js.UndefOr[scala.Nothing], defMin: Double, defMax: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double, max: js.UndefOr[scala.Nothing], defMin: Double, defMax: Double, hasPrecision: Boolean): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double, max: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(
-      min: Double,
-      max: Double,
-      defMin: js.UndefOr[scala.Nothing],
-      defMax: js.UndefOr[scala.Nothing],
-      hasPrecision: Boolean
-    ): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double, max: Double, defMin: js.UndefOr[scala.Nothing], defMax: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double, max: Double, defMin: js.UndefOr[scala.Nothing], defMax: Double, hasPrecision: Boolean): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double, max: Double, defMin: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double, max: Double, defMin: Double, defMax: js.UndefOr[scala.Nothing], hasPrecision: Boolean): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double, max: Double, defMin: Double, defMax: Double): Double = js.native
-    @JSImport("json-schema-faker", "random.number")
-    @js.native
-    def number(min: Double, max: Double, defMin: Double, defMax: Double, hasPrecision: Boolean): Double = js.native
+    @scala.inline
+    def date(step: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(step.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @JSImport("json-schema-faker", "random.pick")
-    @js.native
-    def pick[T](collection: js.Array[T]): T = js.native
+    @scala.inline
+    def number(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("number")().asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Double, defMin: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Double, defMin: Double, defMax: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Double, defMin: Double, defMax: Double, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Double, defMin: Double, defMax: Unit, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Double, defMin: Unit, defMax: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Double, defMin: Unit, defMax: Double, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Double, defMin: Unit, defMax: Unit, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Unit, defMin: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Unit, defMin: Double, defMax: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Unit, defMin: Double, defMax: Double, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Unit, defMin: Double, defMax: Unit, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Unit, defMin: Unit, defMax: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Unit, defMin: Unit, defMax: Double, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Double, max: Unit, defMin: Unit, defMax: Unit, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Double, defMin: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Double, defMin: Double, defMax: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Double, defMin: Double, defMax: Double, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Double, defMin: Double, defMax: Unit, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Double, defMin: Unit, defMax: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Double, defMin: Unit, defMax: Double, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Double, defMin: Unit, defMax: Unit, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Unit, defMin: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Unit, defMin: Double, defMax: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Unit, defMin: Double, defMax: Double, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Unit, defMin: Double, defMax: Unit, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Unit, defMin: Unit, defMax: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Unit, defMin: Unit, defMax: Double, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def number(min: Unit, max: Unit, defMin: Unit, defMax: Unit, hasPrecision: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defMin.asInstanceOf[js.Any], defMax.asInstanceOf[js.Any], hasPrecision.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("json-schema-faker", "random.randexp")
-    @js.native
-    def randexp(value: String): String | Double = js.native
+    @scala.inline
+    def pick[T](collection: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(collection.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("json-schema-faker", "random.shuffle")
-    @js.native
-    def shuffle[T](collection: js.Array[T]): js.Array[T] = js.native
+    @scala.inline
+    def randexp(value: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("randexp")(value.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+    
+    @scala.inline
+    def shuffle[T](collection: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(collection.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   }
   
-  @JSImport("json-schema-faker", "reset")
-  @js.native
-  def reset(name: String): js.Any = js.native
+  @scala.inline
+  def reset(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("json-schema-faker", "resolve")
-  @js.native
-  def resolve(schema: Schema): js.Promise[js.Array[_]] = js.native
-  @JSImport("json-schema-faker", "resolve")
-  @js.native
-  def resolve(schema: Schema, refs: js.UndefOr[scala.Nothing], cwd: String): js.Promise[js.Array[_]] = js.native
-  @JSImport("json-schema-faker", "resolve")
-  @js.native
-  def resolve(schema: Schema, refs: String): js.Promise[js.Array[_]] = js.native
-  @JSImport("json-schema-faker", "resolve")
-  @js.native
-  def resolve(schema: Schema, refs: String, cwd: String): js.Promise[js.Array[_]] = js.native
-  @JSImport("json-schema-faker", "resolve")
-  @js.native
-  def resolve(schema: Schema, refs: js.Array[Schema]): js.Promise[js.Array[_]] = js.native
-  @JSImport("json-schema-faker", "resolve")
-  @js.native
-  def resolve(schema: Schema, refs: js.Array[Schema], cwd: String): js.Promise[js.Array[_]] = js.native
+  @scala.inline
+  def resolve(schema: Schema): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def resolve(schema: Schema, refs: String): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def resolve(schema: Schema, refs: String, cwd: String): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def resolve(schema: Schema, refs: js.Array[Schema]): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def resolve(schema: Schema, refs: js.Array[Schema], cwd: String): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def resolve(schema: Schema, refs: Unit, cwd: String): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
   
   @JSImport("json-schema-faker", "version")
   @js.native
@@ -286,54 +165,53 @@ object mod {
   type NameOrFormatMap = String | Callback
   
   /* Inlined std.Partial<{[ option in json-schema-faker.json-schema-faker.jsfOptions ]: any}> */
-  @js.native
   trait OptionInputObject extends StObject {
     
-    var alwaysFakeOptionals: js.UndefOr[js.Any] = js.native
+    var alwaysFakeOptionals: js.UndefOr[js.Any] = js.undefined
     
-    var defaultInvalidTypeProduct: js.UndefOr[js.Any] = js.native
+    var defaultInvalidTypeProduct: js.UndefOr[js.Any] = js.undefined
     
-    var defaultRandExpMax: js.UndefOr[js.Any] = js.native
+    var defaultRandExpMax: js.UndefOr[js.Any] = js.undefined
     
-    var failOnInvalidFormat: js.UndefOr[js.Any] = js.native
+    var failOnInvalidFormat: js.UndefOr[js.Any] = js.undefined
     
-    var failOnInvalidTypes: js.UndefOr[js.Any] = js.native
+    var failOnInvalidTypes: js.UndefOr[js.Any] = js.undefined
     
-    var fillProperties: js.UndefOr[js.Any] = js.native
+    var fillProperties: js.UndefOr[js.Any] = js.undefined
     
-    var fixedProbabilities: js.UndefOr[js.Any] = js.native
+    var fixedProbabilities: js.UndefOr[js.Any] = js.undefined
     
-    var ignoreMissingRefs: js.UndefOr[js.Any] = js.native
+    var ignoreMissingRefs: js.UndefOr[js.Any] = js.undefined
     
-    var ignoreProperties: js.UndefOr[js.Any] = js.native
+    var ignoreProperties: js.UndefOr[js.Any] = js.undefined
     
-    var maxItems: js.UndefOr[js.Any] = js.native
+    var maxItems: js.UndefOr[js.Any] = js.undefined
     
-    var maxLength: js.UndefOr[js.Any] = js.native
+    var maxLength: js.UndefOr[js.Any] = js.undefined
     
-    var minItems: js.UndefOr[js.Any] = js.native
+    var minItems: js.UndefOr[js.Any] = js.undefined
     
-    var minLength: js.UndefOr[js.Any] = js.native
+    var minLength: js.UndefOr[js.Any] = js.undefined
     
-    var optionalsProbability: js.UndefOr[js.Any] = js.native
+    var optionalsProbability: js.UndefOr[js.Any] = js.undefined
     
-    var random: js.UndefOr[js.Any] = js.native
+    var random: js.UndefOr[js.Any] = js.undefined
     
-    var refDepthMax: js.UndefOr[js.Any] = js.native
+    var refDepthMax: js.UndefOr[js.Any] = js.undefined
     
-    var refDepthMin: js.UndefOr[js.Any] = js.native
+    var refDepthMin: js.UndefOr[js.Any] = js.undefined
     
-    var replaceEmptyByRandomValue: js.UndefOr[js.Any] = js.native
+    var replaceEmptyByRandomValue: js.UndefOr[js.Any] = js.undefined
     
-    var requiredOnly: js.UndefOr[js.Any] = js.native
+    var requiredOnly: js.UndefOr[js.Any] = js.undefined
     
-    var resolveJsonPath: js.UndefOr[js.Any] = js.native
+    var resolveJsonPath: js.UndefOr[js.Any] = js.undefined
     
-    var reuseProperties: js.UndefOr[js.Any] = js.native
+    var reuseProperties: js.UndefOr[js.Any] = js.undefined
     
-    var useDefaultValue: js.UndefOr[js.Any] = js.native
+    var useDefaultValue: js.UndefOr[js.Any] = js.undefined
     
-    var useExamplesValue: js.UndefOr[js.Any] = js.native
+    var useExamplesValue: js.UndefOr[js.Any] = js.undefined
   }
   object OptionInputObject {
     

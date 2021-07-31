@@ -8,7 +8,6 @@ import typings.reactBootstrap.reactBootstrapStrings.warning
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxMod {
@@ -22,16 +21,17 @@ object checkboxMod {
   trait Checkbox
     extends Component[CheckboxProps, js.Object, js.Any]
   
-  @js.native
-  trait CheckboxProps extends HTMLProps[Checkbox] {
+  trait CheckboxProps
+    extends StObject
+       with HTMLProps[Checkbox] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var inputRef: js.UndefOr[js.Function1[/* instance */ HTMLInputElement, Unit]] = js.native
+    var inputRef: js.UndefOr[js.Function1[/* instance */ HTMLInputElement, Unit]] = js.undefined
     
-    var validationState: js.UndefOr[success | warning | error] = js.native
+    var validationState: js.UndefOr[success | warning | error] = js.undefined
   }
   object CheckboxProps {
     

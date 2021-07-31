@@ -4,46 +4,46 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkItemUpdate extends WorkItemTrackingResource {
+trait WorkItemUpdate
+  extends StObject
+     with WorkItemTrackingResource {
   
   /**
     * List of updates to fields.
     */
-  var fields: StringDictionary[WorkItemFieldUpdate] = js.native
+  var fields: StringDictionary[WorkItemFieldUpdate]
   
   /**
     * ID of update.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * List of updates to relations.
     */
-  var relations: WorkItemRelationUpdates = js.native
+  var relations: WorkItemRelationUpdates
   
   /**
     * The revision number of work item update.
     */
-  var rev: Double = js.native
+  var rev: Double
   
   /**
     * Identity for the work item update.
     */
-  var revisedBy: IdentityReference = js.native
+  var revisedBy: IdentityReference
   
   /**
     * The work item updates revision date.
     */
-  var revisedDate: Date = js.native
+  var revisedDate: Date
   
   /**
     * The work item ID.
     */
-  var workItemId: Double = js.native
+  var workItemId: Double
 }
 object WorkItemUpdate {
   

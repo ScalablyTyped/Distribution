@@ -5,14 +5,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slidesMod {
   
   @JSImport("@ionic/core/dist/types/components/slides/slides", "Slides")
   @js.native
-  class Slides () extends ComponentInterface {
+  class Slides ()
+    extends StObject
+       with ComponentInterface {
     
     @JSName("connectedCallback")
     def connectedCallback_MSlides(): Unit = js.native
@@ -39,7 +40,7 @@ object slidesMod {
       * Use this to access the full Swiper API.
       * See https://idangero.us/swiper/api/ for all API options.
       */
-    def getSwiper(): js.Promise[_] = js.native
+    def getSwiper(): js.Promise[js.Any] = js.native
     
     var initSwiper: js.Any = js.native
     
@@ -197,9 +198,9 @@ object slidesMod {
       * @param runCallbacks If true, the transition will produce [Transition/SlideChange][Start/End] transition events.
       */
     def slideNext(): js.Promise[Unit] = js.native
-    def slideNext(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): js.Promise[Unit] = js.native
     def slideNext(speed: Double): js.Promise[Unit] = js.native
     def slideNext(speed: Double, runCallbacks: Boolean): js.Promise[Unit] = js.native
+    def slideNext(speed: Unit, runCallbacks: Boolean): js.Promise[Unit] = js.native
     
     /**
       * Transition to the previous slide.
@@ -208,9 +209,9 @@ object slidesMod {
       * @param runCallbacks If true, the transition will produce the [Transition/SlideChange][Start/End] transition events.
       */
     def slidePrev(): js.Promise[Unit] = js.native
-    def slidePrev(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): js.Promise[Unit] = js.native
     def slidePrev(speed: Double): js.Promise[Unit] = js.native
     def slidePrev(speed: Double, runCallbacks: Boolean): js.Promise[Unit] = js.native
+    def slidePrev(speed: Unit, runCallbacks: Boolean): js.Promise[Unit] = js.native
     
     /**
       * Transition to the specified slide.
@@ -220,9 +221,9 @@ object slidesMod {
       * @param runCallbacks If true, the transition will produce [Transition/SlideChange][Start/End] transition events.
       */
     def slideTo(index: Double): js.Promise[Unit] = js.native
-    def slideTo(index: Double, speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): js.Promise[Unit] = js.native
     def slideTo(index: Double, speed: Double): js.Promise[Unit] = js.native
     def slideTo(index: Double, speed: Double, runCallbacks: Boolean): js.Promise[Unit] = js.native
+    def slideTo(index: Double, speed: Unit, runCallbacks: Boolean): js.Promise[Unit] = js.native
     
     /**
       * Start auto play.

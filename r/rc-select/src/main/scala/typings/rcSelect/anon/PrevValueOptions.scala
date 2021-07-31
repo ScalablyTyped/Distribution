@@ -2,13 +2,11 @@ package typings.rcSelect.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrevValueOptions[OptionsType /* <: js.Array[js.Object] */] extends StObject {
   
-  var prevValueOptions: js.UndefOr[js.Array[OptionsType]] = js.native
+  var prevValueOptions: js.UndefOr[js.Array[OptionsType]] = js.undefined
 }
 object PrevValueOptions {
   
@@ -19,7 +17,7 @@ object PrevValueOptions {
   }
   
   @scala.inline
-  implicit class PrevValueOptionsMutableBuilder[Self <: PrevValueOptions[_], OptionsType /* <: js.Array[js.Object] */] (val x: Self with PrevValueOptions[OptionsType]) extends AnyVal {
+  implicit class PrevValueOptionsMutableBuilder[Self <: PrevValueOptions[?], OptionsType /* <: js.Array[js.Object] */] (val x: Self & PrevValueOptions[OptionsType]) extends AnyVal {
     
     @scala.inline
     def setPrevValueOptions(value: js.Array[OptionsType]): Self = StObject.set(x, "prevValueOptions", value.asInstanceOf[js.Any])

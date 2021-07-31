@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutSkillAuthorizationRequest extends StObject {
   
   /**
     * The authorization result specific to OAUTH code grant output. "Code” must be populated in the AuthorizationResult map to establish the authorization.
     */
-  var AuthorizationResult: typings.awsSdk.alexaforbusinessMod.AuthorizationResult = js.native
+  var AuthorizationResult: typings.awsSdk.alexaforbusinessMod.AuthorizationResult
   
   /**
     * The room that the skill is authorized for.
     */
-  var RoomArn: js.UndefOr[Arn] = js.native
+  var RoomArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The unique identifier of a skill.
     */
-  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId = js.native
+  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId
 }
 object PutSkillAuthorizationRequest {
   

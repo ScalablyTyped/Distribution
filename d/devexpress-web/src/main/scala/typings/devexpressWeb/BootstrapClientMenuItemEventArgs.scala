@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events related to manipulations on menu items.
   */
-@js.native
-trait BootstrapClientMenuItemEventArgs extends ASPxClientEventArgs {
+trait BootstrapClientMenuItemEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the menu item object related to the event.
     */
-  var item: BootstrapClientMenuItem = js.native
+  var item: BootstrapClientMenuItem
 }
 object BootstrapClientMenuItemEventArgs {
   

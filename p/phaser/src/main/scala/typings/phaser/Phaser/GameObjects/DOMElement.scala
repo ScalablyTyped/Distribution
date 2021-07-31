@@ -12,7 +12,6 @@ import typings.phaser.Phaser.Math.Vector4
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -73,7 +72,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait DOMElement
-  extends GameObject
+  extends StObject
+     with GameObject
      with AlphaSingle
      with BlendMode
      with Depth
@@ -141,11 +141,11 @@ trait DOMElement
     * @param innerText A DOMString that holds the text that will be set as the innerText of the created element.
     */
   def createElement(tagName: String): this.type = js.native
-  def createElement(tagName: String, style: js.UndefOr[scala.Nothing], innerText: String): this.type = js.native
   def createElement(tagName: String, style: String): this.type = js.native
   def createElement(tagName: String, style: String, innerText: String): this.type = js.native
   def createElement(tagName: String, style: js.Any): this.type = js.native
   def createElement(tagName: String, style: js.Any, innerText: String): this.type = js.native
+  def createElement(tagName: String, style: Unit, innerText: String): this.type = js.native
   
   /**
     * Takes a block of html from the HTML Cache, that has previously been preloaded into the game, and then
@@ -360,17 +360,17 @@ trait DOMElement
     * @param innerText A DOMString that holds the text that will be set as the innerText of the created element.
     */
   def setElement(element: String): this.type = js.native
-  def setElement(element: String, style: js.UndefOr[scala.Nothing], innerText: String): this.type = js.native
   def setElement(element: String, style: String): this.type = js.native
   def setElement(element: String, style: String, innerText: String): this.type = js.native
   def setElement(element: String, style: js.Any): this.type = js.native
   def setElement(element: String, style: js.Any, innerText: String): this.type = js.native
+  def setElement(element: String, style: Unit, innerText: String): this.type = js.native
   def setElement(element: Element): this.type = js.native
-  def setElement(element: Element, style: js.UndefOr[scala.Nothing], innerText: String): this.type = js.native
   def setElement(element: Element, style: String): this.type = js.native
   def setElement(element: Element, style: String, innerText: String): this.type = js.native
   def setElement(element: Element, style: js.Any): this.type = js.native
   def setElement(element: Element, style: js.Any, innerText: String): this.type = js.native
+  def setElement(element: Element, style: Unit, innerText: String): this.type = js.native
   
   /**
     * Sets the `innerHTML` property of the DOM Element node and updates the internal sizes.
@@ -399,9 +399,9 @@ trait DOMElement
     * @param y The angle, in radians, by which to skew the DOM Element on the vertical axis. Default x.
     */
   def setSkew(): this.type = js.native
-  def setSkew(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setSkew(x: Double): this.type = js.native
   def setSkew(x: Double, y: Double): this.type = js.native
+  def setSkew(x: Unit, y: Double): this.type = js.native
   
   /**
     * Sets the `innerText` property of the DOM Element node and updates the internal sizes.

@@ -2,61 +2,59 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElbv2LoadBalancerDetails extends StObject {
   
   /**
     * The Availability Zones for the load balancer.
     */
-  var AvailabilityZones: js.UndefOr[typings.awsSdk.securityhubMod.AvailabilityZones] = js.native
+  var AvailabilityZones: js.UndefOr[typings.awsSdk.securityhubMod.AvailabilityZones] = js.undefined
   
   /**
     * The ID of the Amazon Route 53 hosted zone associated with the load balancer.
     */
-  var CanonicalHostedZoneId: js.UndefOr[NonEmptyString] = js.native
+  var CanonicalHostedZoneId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the load balancer was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreatedTime: js.UndefOr[NonEmptyString] = js.native
+  var CreatedTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The public DNS name of the load balancer.
     */
-  var DNSName: js.UndefOr[NonEmptyString] = js.native
+  var DNSName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of IP addresses used by the subnets for your load balancer. The possible values are ipv4 (for IPv4 addresses) and dualstack (for IPv4 and IPv6 addresses).
     */
-  var IpAddressType: js.UndefOr[NonEmptyString] = js.native
+  var IpAddressType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The nodes of an Internet-facing load balancer have public IP addresses.
     */
-  var Scheme: js.UndefOr[NonEmptyString] = js.native
+  var Scheme: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The IDs of the security groups for the load balancer.
     */
-  var SecurityGroups: js.UndefOr[typings.awsSdk.securityhubMod.SecurityGroups] = js.native
+  var SecurityGroups: js.UndefOr[typings.awsSdk.securityhubMod.SecurityGroups] = js.undefined
   
   /**
     * The state of the load balancer.
     */
-  var State: js.UndefOr[LoadBalancerState] = js.native
+  var State: js.UndefOr[LoadBalancerState] = js.undefined
   
   /**
     * The type of load balancer.
     */
-  var Type: js.UndefOr[NonEmptyString] = js.native
+  var Type: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ID of the VPC for the load balancer.
     */
-  var VpcId: js.UndefOr[NonEmptyString] = js.native
+  var VpcId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsElbv2LoadBalancerDetails {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitorInstancesResult extends StObject {
   
   /**
     * The monitoring information.
     */
-  var InstanceMonitorings: js.UndefOr[InstanceMonitoringList] = js.native
+  var InstanceMonitorings: js.UndefOr[InstanceMonitoringList] = js.undefined
 }
 object MonitorInstancesResult {
   

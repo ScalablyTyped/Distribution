@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Relationships to other compositions/documents
   */
-@js.native
-trait CompositionRelatesTo extends BackboneElement {
+trait CompositionRelatesTo
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * replaces | transforms | signs | appends
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * Target of the relationship
     */
-  var targetIdentifier: js.UndefOr[Identifier] = js.native
+  var targetIdentifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Target of the relationship
     */
-  var targetReference: js.UndefOr[Reference] = js.native
+  var targetReference: js.UndefOr[Reference] = js.undefined
 }
 object CompositionRelatesTo {
   

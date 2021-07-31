@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteVpcPeeringConnectionInput extends StObject {
   
   /**
     * A unique identifier for a fleet. This fleet specified must match the fleet referenced in the VPC peering connection record. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: typings.awsSdk.gameliftMod.FleetId
   
   /**
     * A unique identifier for a VPC peering connection. This value is included in the VpcPeeringConnection object, which can be retrieved by calling DescribeVpcPeeringConnections.
     */
-  var VpcPeeringConnectionId: NonZeroAndMaxString = js.native
+  var VpcPeeringConnectionId: NonZeroAndMaxString
 }
 object DeleteVpcPeeringConnectionInput {
   

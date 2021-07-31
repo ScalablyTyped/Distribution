@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig extends StObject {
   
   /** The sole-tenant node type to host the pool's workers on. */
-  var nodeType: js.UndefOr[String] = js.native
+  var nodeType: js.UndefOr[String] = js.undefined
   
   /** Zone in which STNs are reserved. */
-  var nodesZone: js.UndefOr[String] = js.native
+  var nodesZone: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig {
   

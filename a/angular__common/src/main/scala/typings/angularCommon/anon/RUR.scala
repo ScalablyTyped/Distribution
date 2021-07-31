@@ -2,31 +2,29 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RUR extends StObject {
   
-  var GEL: js.Array[js.UndefOr[String]] = js.native
+  var GEL: js.Array[js.UndefOr[String]]
   
-  var KZT: js.Array[String] = js.native
+  var KZT: js.Array[String]
   
-  var RON: js.Array[js.UndefOr[String]] = js.native
+  var RON: js.Array[js.UndefOr[String]]
   
-  var RUB: js.Array[String] = js.native
+  var RUB: js.Array[String]
   
-  var RUR: js.Array[String] = js.native
+  var RUR: js.Array[String]
   
-  var THB: js.Array[String] = js.native
+  var THB: js.Array[String]
   
-  var TMT: js.Array[String] = js.native
+  var TMT: js.Array[String]
   
-  var TWD: js.Array[String] = js.native
+  var TWD: js.Array[String]
   
-  var UAH: js.Array[String] = js.native
+  var UAH: js.Array[String]
   
-  var XXX: js.Array[String] = js.native
+  var XXX: js.Array[String]
 }
 object RUR {
   

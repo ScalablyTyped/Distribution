@@ -2,33 +2,33 @@ package typings.s3Uploader
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("s3-uploader", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Upload {
+  class ^ protected ()
+    extends StObject
+       with Upload {
     def this(awsBucketName: String, opts: S3UploaderOptions) = this()
   }
   
-  @js.native
   trait Meta extends StObject {
     
-    var colorSpace: String = js.native
+    var colorSpace: String
     
-    var compression: String = js.native
+    var compression: String
     
-    var fileSize: String = js.native
+    var fileSize: String
     
-    var format: String = js.native
+    var format: String
     
-    var imageSize: typings.s3Uploader.mod.imageSize = js.native
+    var imageSize: typings.s3Uploader.mod.imageSize
     
-    var orientation: String = js.native
+    var orientation: String
     
-    var quallity: String = js.native
+    var quallity: String
   }
   object Meta {
     
@@ -72,34 +72,33 @@ object mod {
     }
   }
   
-  @js.native
   trait S3UploaderOptions extends StObject {
     
-    var awsAccessKeyId: js.UndefOr[String] = js.native
+    var awsAccessKeyId: js.UndefOr[String] = js.undefined
     
-    var awsBucketAcl: js.UndefOr[String] = js.native
+    var awsBucketAcl: js.UndefOr[String] = js.undefined
     
-    var awsBucketPath: js.UndefOr[String] = js.native
+    var awsBucketPath: js.UndefOr[String] = js.undefined
     
-    var awsBucketRegion: js.UndefOr[String] = js.native
+    var awsBucketRegion: js.UndefOr[String] = js.undefined
     
-    var awsHttpTimeout: js.UndefOr[Double] = js.native
+    var awsHttpTimeout: js.UndefOr[Double] = js.undefined
     
-    var awsMaxRetries: js.UndefOr[Double] = js.native
+    var awsMaxRetries: js.UndefOr[Double] = js.undefined
     
-    var awsSecretAccessKey: js.UndefOr[String] = js.native
+    var awsSecretAccessKey: js.UndefOr[String] = js.undefined
     
-    var resizeQuality: js.UndefOr[Double] = js.native
+    var resizeQuality: js.UndefOr[Double] = js.undefined
     
-    var returnExif: js.UndefOr[Boolean] = js.native
+    var returnExif: js.UndefOr[Boolean] = js.undefined
     
-    var tmpDir: js.UndefOr[String] = js.native
+    var tmpDir: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var versions: js.UndefOr[js.Array[S3UploaderVersion]] = js.native
+    var versions: js.UndefOr[js.Array[S3UploaderVersion]] = js.undefined
     
-    var workers: js.UndefOr[Double] = js.native
+    var workers: js.UndefOr[Double] = js.undefined
   }
   object S3UploaderOptions {
     
@@ -195,18 +194,17 @@ object mod {
     }
   }
   
-  @js.native
   trait S3UploaderVersion extends StObject {
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var original: js.UndefOr[Boolean] = js.native
+    var original: js.UndefOr[Boolean] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object S3UploaderVersion {
     
@@ -257,7 +255,7 @@ object mod {
     def upload(src: String): Unit = js.native
     def upload(
       src: String,
-      opts: js.UndefOr[scala.Nothing],
+      opts: Unit,
       cb: js.Function3[/* err */ String, /* images */ js.Array[image], /* meta */ Meta, Unit]
     ): Unit = js.native
     def upload(src: String, opts: S3UploaderOptions): Unit = js.native
@@ -268,26 +266,25 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait image extends StObject {
     
-    var etag: String = js.native
+    var etag: String
     
-    var format: String = js.native
+    var format: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var original: Boolean = js.native
+    var original: Boolean
     
-    var path: String = js.native
+    var path: String
     
-    var size: String = js.native
+    var size: String
     
-    var src: String = js.native
+    var src: String
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object image {
     
@@ -339,12 +336,11 @@ object mod {
     }
   }
   
-  @js.native
   trait imageSize extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object imageSize {
     

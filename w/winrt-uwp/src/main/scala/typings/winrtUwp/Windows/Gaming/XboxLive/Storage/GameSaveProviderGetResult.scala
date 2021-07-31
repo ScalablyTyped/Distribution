@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Gaming.XboxLive.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-@js.native
 trait GameSaveProviderGetResult extends StObject {
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var status: GameSaveErrorStatus = js.native
+  var status: GameSaveErrorStatus
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var value: GameSaveProvider = js.native
+  var value: GameSaveProvider
 }
 object GameSaveProviderGetResult {
   

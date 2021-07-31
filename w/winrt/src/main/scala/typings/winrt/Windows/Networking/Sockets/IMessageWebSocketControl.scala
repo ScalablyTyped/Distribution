@@ -4,15 +4,15 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Security.Credentials.PasswordCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMessageWebSocketControl extends IWebSocketControl {
+trait IMessageWebSocketControl
+  extends StObject
+     with IWebSocketControl {
   
-  var maxMessageSize: Double = js.native
+  var maxMessageSize: Double
   
-  var messageType: SocketMessageType = js.native
+  var messageType: SocketMessageType
 }
 object IMessageWebSocketControl {
   

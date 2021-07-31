@@ -2,19 +2,17 @@ package typings.lyricist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Media extends StObject {
   
-  var provider: String = js.native
+  var provider: String
   
-  var start: Double = js.native
+  var start: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object Media {
   

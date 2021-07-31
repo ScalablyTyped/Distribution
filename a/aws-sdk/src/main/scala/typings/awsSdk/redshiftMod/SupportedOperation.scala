@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportedOperation extends StObject {
   
   /**
     * A list of the supported operations.
     */
-  var OperationName: js.UndefOr[String] = js.native
+  var OperationName: js.UndefOr[String] = js.undefined
 }
 object SupportedOperation {
   

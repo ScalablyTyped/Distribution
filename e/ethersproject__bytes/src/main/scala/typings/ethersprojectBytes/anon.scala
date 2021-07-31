@@ -2,23 +2,21 @@ package typings.ethersprojectBytes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait R extends StObject {
     
-    var _vs: js.UndefOr[String] = js.native
+    var _vs: js.UndefOr[String] = js.undefined
     
-    var r: String = js.native
+    var r: String
     
-    var recoveryParam: js.UndefOr[Double] = js.native
+    var recoveryParam: js.UndefOr[Double] = js.undefined
     
-    var s: js.UndefOr[String] = js.native
+    var s: js.UndefOr[String] = js.undefined
     
-    var v: js.UndefOr[Double] = js.native
+    var v: js.UndefOr[Double] = js.undefined
   }
   object R {
     

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BadRequest extends StObject {
   
-  var badRequest: scala.Double = js.native
+  var badRequest: scala.Double
   
-  var invalidResolution: scala.Double = js.native
+  var invalidResolution: scala.Double
   
-  var notFound: scala.Double = js.native
+  var notFound: scala.Double
   
-  var succeeded: scala.Double = js.native
+  var succeeded: scala.Double
   
-  var unsupportedConflictType: scala.Double = js.native
+  var unsupportedConflictType: scala.Double
 }
 object BadRequest {
   

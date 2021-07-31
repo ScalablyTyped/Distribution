@@ -1,33 +1,47 @@
 package typings.wonderFrp
 
 import typings.wonderFrp.actionTypeMod.ActionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/testing/Record", JSImport.Namespace)
-@js.native
-object recordMod extends js.Object {
+object recordMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/testing/Record", "Record")
   @js.native
-  class Record protected () extends js.Object {
+  class Record protected () extends StObject {
     def this(time: js.Any, value: js.Any, actionType: ActionType, comparer: js.Function) = this()
+    
     var _actionType: js.Any = js.native
+    
     var _comparer: js.Any = js.native
+    
     var _time: js.Any = js.native
+    
     var _value: js.Any = js.native
+    
     var actionType: ActionType = js.native
-    var time: Double = js.native
-    var value: Double = js.native
+    
     def equals(other: js.Any): js.Any = js.native
+    
+    var time: Double = js.native
+    
+    var value: Double = js.native
   }
-  
   /* static members */
-  @js.native
-  object Record extends js.Object {
-    def create(time: Double, value: js.Any): Record = js.native
-    def create(time: Double, value: js.Any, actionType: ActionType): Record = js.native
-    def create(time: Double, value: js.Any, actionType: ActionType, comparer: js.Function): Record = js.native
+  object Record {
+    
+    @JSImport("wonder-frp/dist/commonjs/testing/Record", "Record")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(time: Double, value: js.Any): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Record]
+    @scala.inline
+    def create(time: Double, value: js.Any, actionType: Unit, comparer: js.Function): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any], actionType.asInstanceOf[js.Any], comparer.asInstanceOf[js.Any])).asInstanceOf[Record]
+    @scala.inline
+    def create(time: Double, value: js.Any, actionType: ActionType): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any], actionType.asInstanceOf[js.Any])).asInstanceOf[Record]
+    @scala.inline
+    def create(time: Double, value: js.Any, actionType: ActionType, comparer: js.Function): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any], actionType.asInstanceOf[js.Any], comparer.asInstanceOf[js.Any])).asInstanceOf[Record]
   }
-  
 }
-

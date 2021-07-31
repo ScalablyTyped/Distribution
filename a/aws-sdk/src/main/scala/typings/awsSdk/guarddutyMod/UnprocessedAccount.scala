@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnprocessedAccount extends StObject {
   
   /**
     * The AWS account ID.
     */
-  var AccountId: typings.awsSdk.guarddutyMod.AccountId = js.native
+  var AccountId: typings.awsSdk.guarddutyMod.AccountId
   
   /**
     * A reason why the account hasn't been processed.
     */
-  var Result: String = js.native
+  var Result: String
 }
 object UnprocessedAccount {
   

@@ -3,21 +3,19 @@ package typings.antDesignProProvider
 import typings.antDesignProProvider.mod.IntlType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Clear extends StObject {
     
-    var clear: String = js.native
+    var clear: String
     
-    var confirm: String = js.native
+    var confirm: String
     
-    var itemUnit: String = js.native
+    var itemUnit: String
     
-    var more: String = js.native
+    var more: String
   }
   object Clear {
     
@@ -44,22 +42,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Collapsed extends StObject {
     
-    var collapsed: String = js.native
+    var collapsed: String
     
-    var expand: String = js.native
+    var expand: String
     
-    var inputPlaceholder: String = js.native
+    var inputPlaceholder: String
     
-    var reset: String = js.native
+    var reset: String
     
-    var search: String = js.native
+    var search: String
     
-    var selectPlaceholder: String = js.native
+    var selectPlaceholder: String
     
-    var submit: String = js.native
+    var submit: String
   }
   object Collapsed {
     
@@ -103,42 +100,41 @@ object anon {
     }
   }
   
-  @js.native
   trait ColumnDisplay extends StObject {
     
-    var columnDisplay: String = js.native
+    var columnDisplay: String
     
-    var columnSetting: String = js.native
+    var columnSetting: String
     
-    var density: String = js.native
+    var density: String
     
-    var densityDefault: String = js.native
+    var densityDefault: String
     
-    var densityLarger: String = js.native
+    var densityLarger: String
     
-    var densityMiddle: String = js.native
+    var densityMiddle: String
     
-    var densitySmall: String = js.native
+    var densitySmall: String
     
-    var exitFullScreen: String = js.native
+    var exitFullScreen: String
     
-    var fullScreen: String = js.native
+    var fullScreen: String
     
-    var leftFixedTitle: String = js.native
+    var leftFixedTitle: String
     
-    var leftPin: String = js.native
+    var leftPin: String
     
-    var noFixedTitle: String = js.native
+    var noFixedTitle: String
     
-    var noPin: String = js.native
+    var noPin: String
     
-    var reload: String = js.native
+    var reload: String
     
-    var reset: String = js.native
+    var reset: String
     
-    var rightFixedTitle: String = js.native
+    var rightFixedTitle: String
     
-    var rightPin: String = js.native
+    var rightPin: String
   }
   object ColumnDisplay {
     
@@ -222,40 +218,39 @@ object anon {
     }
   }
   
-  @js.native
   trait ColumnSetting extends StObject {
     
-    var columnDisplay: String = js.native
+    var columnDisplay: String
     
-    var columnSetting: String = js.native
+    var columnSetting: String
     
-    var density: String = js.native
+    var density: String
     
-    var densityLarger: String = js.native
+    var densityLarger: String
     
-    var densityMiddle: String = js.native
+    var densityMiddle: String
     
-    var densitySmall: String = js.native
+    var densitySmall: String
     
-    var exitFullScreen: String = js.native
+    var exitFullScreen: String
     
-    var fullScreen: String = js.native
+    var fullScreen: String
     
-    var leftFixedTitle: String = js.native
+    var leftFixedTitle: String
     
-    var leftPin: String = js.native
+    var leftPin: String
     
-    var noFixedTitle: String = js.native
+    var noFixedTitle: String
     
-    var noPin: String = js.native
+    var noPin: String
     
-    var reload: String = js.native
+    var reload: String
     
-    var reset: String = js.native
+    var reset: String
     
-    var rightFixedTitle: String = js.native
+    var rightFixedTitle: String
     
-    var rightPin: String = js.native
+    var rightPin: String
   }
   object ColumnSetting {
     
@@ -335,10 +330,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Intl extends StObject {
     
-    var intl: IntlType = js.native
+    var intl: IntlType
   }
   object Intl {
     
@@ -356,14 +350,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Item extends StObject {
     
-    var clear: String = js.native
+    var clear: String
     
-    var item: String = js.native
+    var item: String
     
-    var selected: String = js.native
+    var selected: String
   }
   object Item {
     
@@ -387,10 +380,9 @@ object anon {
     }
   }
   
-  @js.native
   trait LightFilter extends StObject {
     
-    var lightFilter: Clear = js.native
+    var lightFilter: Clear
   }
   object LightFilter {
     
@@ -408,12 +400,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Next extends StObject {
     
-    var next: String = js.native
+    var next: String
     
-    var prev: String = js.native
+    var prev: String
   }
   object Next {
     
@@ -434,14 +425,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Prev extends StObject {
     
-    var next: String = js.native
+    var next: String
     
-    var prev: String = js.native
+    var prev: String
     
-    var submit: String = js.native
+    var submit: String
   }
   object Prev {
     
@@ -465,14 +455,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Range extends StObject {
     
-    var item: String = js.native
+    var item: String
     
-    var range: String = js.native
+    var range: String
     
-    var total: String = js.native
+    var total: String
   }
   object Range {
     
@@ -496,10 +485,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Total extends StObject {
     
-    var total: Range = js.native
+    var total: Range
   }
   object Total {
     

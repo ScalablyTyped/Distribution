@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenancePolicy extends StObject {
   
   /**
     * A hash identifying the version of this policy, so that updates to fields of the policy won't accidentally undo intermediate changes (and so that users of the API unaware of some
     * fields won't accidentally remove other fields). Make a `get()` request to the cluster to get the current resource version and include it with requests to set the policy.
     */
-  var resourceVersion: js.UndefOr[String] = js.native
+  var resourceVersion: js.UndefOr[String] = js.undefined
   
   /** Specifies the maintenance window in which maintenance may be performed. */
-  var window: js.UndefOr[MaintenanceWindow] = js.native
+  var window: js.UndefOr[MaintenanceWindow] = js.undefined
 }
 object MaintenancePolicy {
   

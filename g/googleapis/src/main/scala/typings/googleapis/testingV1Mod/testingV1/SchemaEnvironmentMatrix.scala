@@ -2,30 +2,28 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The matrix of environments in which the test is to be executed.
   */
-@js.native
 trait SchemaEnvironmentMatrix extends StObject {
   
   /**
     * A list of Android devices; the test will be run only on the specified
     * devices.
     */
-  var androidDeviceList: js.UndefOr[SchemaAndroidDeviceList] = js.native
+  var androidDeviceList: js.UndefOr[SchemaAndroidDeviceList] = js.undefined
   
   /**
     * A matrix of Android devices.
     */
-  var androidMatrix: js.UndefOr[SchemaAndroidMatrix] = js.native
+  var androidMatrix: js.UndefOr[SchemaAndroidMatrix] = js.undefined
   
   /**
     * A list of iOS devices.
     */
-  var iosDeviceList: js.UndefOr[SchemaIosDeviceList] = js.native
+  var iosDeviceList: js.UndefOr[SchemaIosDeviceList] = js.undefined
 }
 object SchemaEnvironmentMatrix {
   

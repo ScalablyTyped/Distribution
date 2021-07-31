@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityGroup extends StObject {
   
   /**
     * A description of the security group.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the security group.
     */
-  var GroupId: js.UndefOr[String] = js.native
+  var GroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the security group.
     */
-  var GroupName: js.UndefOr[String] = js.native
+  var GroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The inbound rules associated with the security group.
     */
-  var IpPermissions: js.UndefOr[IpPermissionList] = js.native
+  var IpPermissions: js.UndefOr[IpPermissionList] = js.undefined
   
   /**
     * [VPC only] The outbound rules associated with the security group.
     */
-  var IpPermissionsEgress: js.UndefOr[IpPermissionList] = js.native
+  var IpPermissionsEgress: js.UndefOr[IpPermissionList] = js.undefined
   
   /**
     * The AWS account ID of the owner of the security group.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags assigned to the security group.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * [VPC only] The ID of the VPC for the security group.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object SecurityGroup {
   

@@ -2,158 +2,156 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyEndpointMessage extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the certificate used for SSL connection.
     */
-  var CertificateArn: js.UndefOr[String] = js.native
+  var CertificateArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the endpoint database.
     */
-  var DatabaseName: js.UndefOr[String] = js.native
+  var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
     * The settings in JSON format for the DMS transfer type of source endpoint.  Attributes include the following:   serviceAccessRoleArn - The AWS Identity and Access Management (IAM) role that has permission to access the Amazon S3 bucket.   BucketName - The name of the S3 bucket to use.   compressionType - An optional parameter to use GZIP to compress the target files. Either set this parameter to NONE (the default) or don't use it to leave the files uncompressed.   Shorthand syntax for these settings is as follows: ServiceAccessRoleArn=string ,BucketName=string,CompressionType=string  JSON syntax for these settings is as follows: { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" }  
     */
-  var DmsTransferSettings: js.UndefOr[typings.awsSdk.dmsMod.DmsTransferSettings] = js.native
+  var DmsTransferSettings: js.UndefOr[typings.awsSdk.dmsMod.DmsTransferSettings] = js.undefined
   
   /**
     * Settings in JSON format for the source DocumentDB endpoint. For more information about the available settings, see the configuration properties section in  Using DocumentDB as a Target for AWS Database Migration Service in the AWS Database Migration Service User Guide. 
     */
-  var DocDbSettings: js.UndefOr[typings.awsSdk.dmsMod.DocDbSettings] = js.native
+  var DocDbSettings: js.UndefOr[typings.awsSdk.dmsMod.DocDbSettings] = js.undefined
   
   /**
     * Settings in JSON format for the target Amazon DynamoDB endpoint. For information about other available settings, see Using Object Mapping to Migrate Data to DynamoDB in the AWS Database Migration Service User Guide. 
     */
-  var DynamoDbSettings: js.UndefOr[typings.awsSdk.dmsMod.DynamoDbSettings] = js.native
+  var DynamoDbSettings: js.UndefOr[typings.awsSdk.dmsMod.DynamoDbSettings] = js.undefined
   
   /**
     * Settings in JSON format for the target Elasticsearch endpoint. For more information about the available settings, see Extra Connection Attributes When Using Elasticsearch as a Target for AWS DMS in the AWS Database Migration Service User Guide. 
     */
-  var ElasticsearchSettings: js.UndefOr[typings.awsSdk.dmsMod.ElasticsearchSettings] = js.native
+  var ElasticsearchSettings: js.UndefOr[typings.awsSdk.dmsMod.ElasticsearchSettings] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
     */
-  var EndpointArn: String = js.native
+  var EndpointArn: String
   
   /**
     * The database endpoint identifier. Identifiers must begin with a letter and must contain only ASCII letters, digits, and hyphens. They can't end with a hyphen or contain two consecutive hyphens.
     */
-  var EndpointIdentifier: js.UndefOr[String] = js.native
+  var EndpointIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The type of endpoint. Valid values are source and target.
     */
-  var EndpointType: js.UndefOr[ReplicationEndpointTypeValue] = js.native
+  var EndpointType: js.UndefOr[ReplicationEndpointTypeValue] = js.undefined
   
   /**
     * The type of engine for the endpoint. Valid values, depending on the EndpointType, include "mysql", "oracle", "postgres", "mariadb", "aurora", "aurora-postgresql", "redshift", "s3", "db2", "azuredb", "sybase", "dynamodb", "mongodb", "kinesis", "kafka", "elasticsearch", "documentdb", "sqlserver", and "neptune".
     */
-  var EngineName: js.UndefOr[String] = js.native
+  var EngineName: js.UndefOr[String] = js.undefined
   
   /**
     * The external table definition.
     */
-  var ExternalTableDefinition: js.UndefOr[String] = js.native
+  var ExternalTableDefinition: js.UndefOr[String] = js.undefined
   
   /**
     * Additional attributes associated with the connection. To reset this parameter, pass the empty string ("") as an argument.
     */
-  var ExtraConnectionAttributes: js.UndefOr[String] = js.native
+  var ExtraConnectionAttributes: js.UndefOr[String] = js.undefined
   
   /**
     * Settings in JSON format for the source IBM Db2 LUW endpoint. For information about other available settings, see Extra connection attributes when using Db2 LUW as a source for AWS DMS in the AWS Database Migration Service User Guide. 
     */
-  var IBMDb2Settings: js.UndefOr[typings.awsSdk.dmsMod.IBMDb2Settings] = js.native
+  var IBMDb2Settings: js.UndefOr[typings.awsSdk.dmsMod.IBMDb2Settings] = js.undefined
   
   /**
     * Settings in JSON format for the target Apache Kafka endpoint. For more information about the available settings, see Using Apache Kafka as a Target for AWS Database Migration Service in the AWS Database Migration Service User Guide. 
     */
-  var KafkaSettings: js.UndefOr[typings.awsSdk.dmsMod.KafkaSettings] = js.native
+  var KafkaSettings: js.UndefOr[typings.awsSdk.dmsMod.KafkaSettings] = js.undefined
   
   /**
     * Settings in JSON format for the target endpoint for Amazon Kinesis Data Streams. For more information about the available settings, see Using Amazon Kinesis Data Streams as a Target for AWS Database Migration Service in the AWS Database Migration Service User Guide. 
     */
-  var KinesisSettings: js.UndefOr[typings.awsSdk.dmsMod.KinesisSettings] = js.native
+  var KinesisSettings: js.UndefOr[typings.awsSdk.dmsMod.KinesisSettings] = js.undefined
   
   /**
     * Settings in JSON format for the source and target Microsoft SQL Server endpoint. For information about other available settings, see Extra connection attributes when using SQL Server as a source for AWS DMS and  Extra connection attributes when using SQL Server as a target for AWS DMS in the AWS Database Migration Service User Guide. 
     */
-  var MicrosoftSQLServerSettings: js.UndefOr[typings.awsSdk.dmsMod.MicrosoftSQLServerSettings] = js.native
+  var MicrosoftSQLServerSettings: js.UndefOr[typings.awsSdk.dmsMod.MicrosoftSQLServerSettings] = js.undefined
   
   /**
     * Settings in JSON format for the source MongoDB endpoint. For more information about the available settings, see the configuration properties section in  Using MongoDB as a Target for AWS Database Migration Service in the AWS Database Migration Service User Guide. 
     */
-  var MongoDbSettings: js.UndefOr[typings.awsSdk.dmsMod.MongoDbSettings] = js.native
+  var MongoDbSettings: js.UndefOr[typings.awsSdk.dmsMod.MongoDbSettings] = js.undefined
   
   /**
     * Settings in JSON format for the source and target MySQL endpoint. For information about other available settings, see Extra connection attributes when using MySQL as a source for AWS DMS and Extra connection attributes when using a MySQL-compatible database as a target for AWS DMS in the AWS Database Migration Service User Guide. 
     */
-  var MySQLSettings: js.UndefOr[typings.awsSdk.dmsMod.MySQLSettings] = js.native
+  var MySQLSettings: js.UndefOr[typings.awsSdk.dmsMod.MySQLSettings] = js.undefined
   
   /**
     * Settings in JSON format for the target Amazon Neptune endpoint. For more information about the available settings, see Specifying Endpoint Settings for Amazon Neptune as a Target in the AWS Database Migration Service User Guide. 
     */
-  var NeptuneSettings: js.UndefOr[typings.awsSdk.dmsMod.NeptuneSettings] = js.native
+  var NeptuneSettings: js.UndefOr[typings.awsSdk.dmsMod.NeptuneSettings] = js.undefined
   
   /**
     * Settings in JSON format for the source and target Oracle endpoint. For information about other available settings, see Extra connection attributes when using Oracle as a source for AWS DMS and  Extra connection attributes when using Oracle as a target for AWS DMS in the AWS Database Migration Service User Guide. 
     */
-  var OracleSettings: js.UndefOr[typings.awsSdk.dmsMod.OracleSettings] = js.native
+  var OracleSettings: js.UndefOr[typings.awsSdk.dmsMod.OracleSettings] = js.undefined
   
   /**
     * The password to be used to login to the endpoint database.
     */
-  var Password: js.UndefOr[SecretString] = js.native
+  var Password: js.UndefOr[SecretString] = js.undefined
   
   /**
     * The port used by the endpoint database.
     */
-  var Port: js.UndefOr[IntegerOptional] = js.native
+  var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Settings in JSON format for the source and target PostgreSQL endpoint. For information about other available settings, see Extra connection attributes when using PostgreSQL as a source for AWS DMS and  Extra connection attributes when using PostgreSQL as a target for AWS DMS in the AWS Database Migration Service User Guide. 
     */
-  var PostgreSQLSettings: js.UndefOr[typings.awsSdk.dmsMod.PostgreSQLSettings] = js.native
+  var PostgreSQLSettings: js.UndefOr[typings.awsSdk.dmsMod.PostgreSQLSettings] = js.undefined
   
-  var RedshiftSettings: js.UndefOr[typings.awsSdk.dmsMod.RedshiftSettings] = js.native
+  var RedshiftSettings: js.UndefOr[typings.awsSdk.dmsMod.RedshiftSettings] = js.undefined
   
   /**
     * Settings in JSON format for the target Amazon S3 endpoint. For more information about the available settings, see Extra Connection Attributes When Using Amazon S3 as a Target for AWS DMS in the AWS Database Migration Service User Guide. 
     */
-  var S3Settings: js.UndefOr[typings.awsSdk.dmsMod.S3Settings] = js.native
+  var S3Settings: js.UndefOr[typings.awsSdk.dmsMod.S3Settings] = js.undefined
   
   /**
     * The name of the server where the endpoint database resides.
     */
-  var ServerName: js.UndefOr[String] = js.native
+  var ServerName: js.UndefOr[String] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) for the service access role you want to use to modify the endpoint. 
     */
-  var ServiceAccessRoleArn: js.UndefOr[String] = js.native
+  var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * The SSL mode used to connect to the endpoint. The default value is none.
     */
-  var SslMode: js.UndefOr[DmsSslModeValue] = js.native
+  var SslMode: js.UndefOr[DmsSslModeValue] = js.undefined
   
   /**
     * Settings in JSON format for the source and target SAP ASE endpoint. For information about other available settings, see Extra connection attributes when using SAP ASE as a source for AWS DMS and Extra connection attributes when using SAP ASE as a target for AWS DMS in the AWS Database Migration Service User Guide. 
     */
-  var SybaseSettings: js.UndefOr[typings.awsSdk.dmsMod.SybaseSettings] = js.native
+  var SybaseSettings: js.UndefOr[typings.awsSdk.dmsMod.SybaseSettings] = js.undefined
   
   /**
     * The user name to be used to login to the endpoint database.
     */
-  var Username: js.UndefOr[String] = js.native
+  var Username: js.UndefOr[String] = js.undefined
 }
 object ModifyEndpointMessage {
   

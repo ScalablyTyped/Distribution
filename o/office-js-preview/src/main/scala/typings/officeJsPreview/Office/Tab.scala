@@ -2,24 +2,22 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an individual tab and the state it should have.
   */
-@js.native
 trait Tab extends StObject {
   
   /**
     * Specifies the controls in the tab, such as menu items, buttons, etc.
     */
-  var controls: js.Array[Control] = js.native
+  var controls: js.Array[Control]
   
   /**
     * Identifier of the tab as specified in the manifest.
     */
-  var id: String = js.native
+  var id: String
 }
 object Tab {
   

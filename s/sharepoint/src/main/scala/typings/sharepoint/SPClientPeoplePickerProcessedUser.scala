@@ -2,57 +2,55 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SPClientPeoplePickerProcessedUser extends StObject {
   
-  def BuildUserHTML(): String = js.native
+  def BuildUserHTML(): String
   
   // '',
-  var DeleteUserElementId: String = js.native
+  var DeleteUserElementId: String
   
   // '',
-  var DisplayElementId: String = js.native
+  var DisplayElementId: String
   
   // '',
-  var DisplayName: String = js.native
+  var DisplayName: String
   
   // null,
-  var ErrorDescription: String = js.native
+  var ErrorDescription: String
   
   // '',
-  var PresenceElementId: String = js.native
+  var PresenceElementId: String
   
   // '',
-  var ResolveText: String = js.native
+  var ResolveText: String
   
-  def ResolvedAsUnverifiedEmail(): String = js.native
+  def ResolvedAsUnverifiedEmail(): String
   
   // null,
-  var ResolvedUser: Boolean = js.native
+  var ResolvedUser: Boolean
   
   // '',
-  var SID: String = js.native
+  var SID: String
   
   // '',
-  var SIPAddress: String = js.native
+  var SIPAddress: String
   
   // true,
-  var Suggestions: js.Array[ISPClientAutoFillData] = js.native
+  var Suggestions: js.Array[ISPClientAutoFillData]
   
   // '',
-  def UpdateResolvedUser(newUserInfo: ISPClientPeoplePickerEntity, strNewElementId: String): Unit = js.native
+  def UpdateResolvedUser(newUserInfo: ISPClientPeoplePickerEntity, strNewElementId: String): Unit
   
-  def UpdateSuggestions(entity: ISPClientPeoplePickerEntity): Unit = js.native
+  def UpdateSuggestions(entity: ISPClientPeoplePickerEntity): Unit
   
-  def UpdateUserMaxWidth(): Unit = js.native
+  def UpdateUserMaxWidth(): Unit
   
-  var UserContainerElementId: String = js.native
+  var UserContainerElementId: String
   
   // '',
-  var UserInfo: ISPClientPeoplePickerEntity = js.native
+  var UserInfo: ISPClientPeoplePickerEntity
 }
 object SPClientPeoplePickerProcessedUser {
   

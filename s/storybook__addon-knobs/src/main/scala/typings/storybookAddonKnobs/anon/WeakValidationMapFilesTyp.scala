@@ -5,20 +5,18 @@ import typings.storybookAddonKnobs.filesMod.DateTypeKnobValue
 import typings.storybookAddonKnobs.filesMod.FileTypeKnob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Files.FilesTypeProps> */
-@js.native
 trait WeakValidationMapFilesTyp extends StObject {
   
-  var knob: js.UndefOr[Validator[js.UndefOr[FileTypeKnob | Null]]] = js.native
+  var knob: js.UndefOr[Validator[js.UndefOr[FileTypeKnob | Null]]] = js.undefined
   
   var onChange: js.UndefOr[
     Validator[
       js.UndefOr[(js.Function1[/* value */ DateTypeKnobValue, DateTypeKnobValue]) | Null]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object WeakValidationMapFilesTyp {
   

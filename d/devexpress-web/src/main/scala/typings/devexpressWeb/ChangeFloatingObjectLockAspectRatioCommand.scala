@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to lock a floating object's aspect ratio.
   */
-@js.native
-trait ChangeFloatingObjectLockAspectRatioCommand extends ChangeFloatingObjectPropertyCommandBase[Boolean]
+trait ChangeFloatingObjectLockAspectRatioCommand
+  extends StObject
+     with ChangeFloatingObjectPropertyCommandBase[Boolean]
 object ChangeFloatingObjectLockAspectRatioCommand {
   
   @scala.inline

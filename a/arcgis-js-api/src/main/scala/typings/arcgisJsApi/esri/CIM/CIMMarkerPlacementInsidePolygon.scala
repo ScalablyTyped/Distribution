@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMarkerPlacementInsidePolygon
-  extends CIMMarkerPlacementBase
+  extends StObject
+     with CIMMarkerPlacementBase
      with CIMMarkerPlacementType {
   
   /**
@@ -15,64 +14,64 @@ trait CIMMarkerPlacementInsidePolygon
     */
   var clipping: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementClip * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The orientation angle that the markers are placed on within the polygon.
     */
-  var gridAngle: js.UndefOr[Double] = js.native
+  var gridAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * The grid type which defines how markers are placed.
     */
   var gridType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementGridType * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The marker row offset horizontally.
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * The marker row offset vertically.
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * The randomness of the pattern when markers are placed randomly in a polygon.
     */
-  var randomness: js.UndefOr[Double] = js.native
+  var randomness: js.UndefOr[Double] = js.undefined
   
   /**
     * The starting value for generating a random pattern.
     */
-  var seed: js.UndefOr[Double] = js.native
+  var seed: js.UndefOr[Double] = js.undefined
   
   /**
     * A value indicating whether every other row of markers should be shifted to create an offset grid.
     */
-  var shiftOddRows: js.UndefOr[Boolean] = js.native
+  var shiftOddRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The distance between each marker on the X-axis of the grid.
     */
-  var stepX: js.UndefOr[Double] = js.native
+  var stepX: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance between each marker on the Y-axis of the grid.
     */
-  var stepY: js.UndefOr[Double] = js.native
+  var stepY: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMMarkerPlacementInsidePolygon: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementInsidePolygon = js.native
+  var type_CIMMarkerPlacementInsidePolygon: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementInsidePolygon
 }
 object CIMMarkerPlacementInsidePolygon {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementInsidePolygon): CIMMarkerPlacementInsidePolygon = {
+  def apply(): CIMMarkerPlacementInsidePolygon = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMMarkerPlacementInsidePolygon")
     __obj.asInstanceOf[CIMMarkerPlacementInsidePolygon]
   }
   

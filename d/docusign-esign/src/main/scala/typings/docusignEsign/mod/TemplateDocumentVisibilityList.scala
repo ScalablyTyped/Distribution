@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateDocumentVisibilityList extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TemplateDocumentVisibilityList extends StObject {
     js.Array[
       /* This object configures a recipient's read/write access to a document. */ DocumentVisibility
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object TemplateDocumentVisibilityList {
   

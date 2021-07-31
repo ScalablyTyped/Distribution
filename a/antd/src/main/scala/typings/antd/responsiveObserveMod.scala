@@ -3,32 +3,30 @@ package typings.antd
 import typings.antd.sizeContextMod._AvatarSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responsiveObserveMod {
   
   object default {
     
-    @JSImport("antd/lib/_util/responsiveObserve", "default.dispatch")
+    @JSImport("antd/lib/_util/responsiveObserve", JSImport.Default)
     @js.native
-    def dispatch(pointMap: ScreenMap): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("antd/lib/_util/responsiveObserve", "default.register")
-    @js.native
-    def register(): Unit = js.native
+    @scala.inline
+    def dispatch(pointMap: ScreenMap): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(pointMap.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("antd/lib/_util/responsiveObserve", "default.subscribe")
-    @js.native
-    def subscribe(func: SubscribeFunc): Double = js.native
+    @scala.inline
+    def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
     
-    @JSImport("antd/lib/_util/responsiveObserve", "default.unregister")
-    @js.native
-    def unregister(): Unit = js.native
+    @scala.inline
+    def subscribe(func: SubscribeFunc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(func.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("antd/lib/_util/responsiveObserve", "default.unsubscribe")
-    @js.native
-    def unsubscribe(token: Double): Unit = js.native
+    @scala.inline
+    def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def unsubscribe(token: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("antd/lib/_util/responsiveObserve", "responsiveArray")
@@ -70,20 +68,19 @@ object responsiveObserveMod {
   }
   
   /* Inlined std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, string> */
-  @js.native
   trait BreakpointMap extends StObject {
     
-    var lg: String = js.native
+    var lg: String
     
-    var md: String = js.native
+    var md: String
     
-    var sm: String = js.native
+    var sm: String
     
-    var xl: String = js.native
+    var xl: String
     
-    var xs: String = js.native
+    var xs: String
     
-    var xxl: String = js.native
+    var xxl: String
   }
   object BreakpointMap {
     
@@ -117,20 +114,19 @@ object responsiveObserveMod {
   }
   
   /* Inlined std.Partial<std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, boolean>> */
-  @js.native
   trait ScreenMap extends StObject {
     
-    var lg: js.UndefOr[Boolean] = js.native
+    var lg: js.UndefOr[Boolean] = js.undefined
     
-    var md: js.UndefOr[Boolean] = js.native
+    var md: js.UndefOr[Boolean] = js.undefined
     
-    var sm: js.UndefOr[Boolean] = js.native
+    var sm: js.UndefOr[Boolean] = js.undefined
     
-    var xl: js.UndefOr[Boolean] = js.native
+    var xl: js.UndefOr[Boolean] = js.undefined
     
-    var xs: js.UndefOr[Boolean] = js.native
+    var xs: js.UndefOr[Boolean] = js.undefined
     
-    var xxl: js.UndefOr[Boolean] = js.native
+    var xxl: js.UndefOr[Boolean] = js.undefined
   }
   object ScreenMap {
     
@@ -182,20 +178,21 @@ object responsiveObserveMod {
   }
   
   /* Inlined std.Partial<std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, number>> */
-  @js.native
-  trait ScreenSizeMap extends _AvatarSize {
+  trait ScreenSizeMap
+    extends StObject
+       with _AvatarSize {
     
-    var lg: js.UndefOr[Double] = js.native
+    var lg: js.UndefOr[Double] = js.undefined
     
-    var md: js.UndefOr[Double] = js.native
+    var md: js.UndefOr[Double] = js.undefined
     
-    var sm: js.UndefOr[Double] = js.native
+    var sm: js.UndefOr[Double] = js.undefined
     
-    var xl: js.UndefOr[Double] = js.native
+    var xl: js.UndefOr[Double] = js.undefined
     
-    var xs: js.UndefOr[Double] = js.native
+    var xs: js.UndefOr[Double] = js.undefined
     
-    var xxl: js.UndefOr[Double] = js.native
+    var xxl: js.UndefOr[Double] = js.undefined
   }
   object ScreenSizeMap {
     

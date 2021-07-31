@@ -2,13 +2,11 @@ package typings.activexExcel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuccessBoolean extends StObject {
   
-  val Success: Boolean = js.native
+  val Success: Boolean
 }
 object SuccessBoolean {
   

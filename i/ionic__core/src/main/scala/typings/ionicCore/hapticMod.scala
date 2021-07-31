@@ -8,43 +8,38 @@ import typings.ionicCore.ionicCoreStrings.success
 import typings.ionicCore.ionicCoreStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hapticMod {
   
-  @JSImport("@ionic/core/dist/types/utils/native/haptic", "hapticAvailable")
+  @JSImport("@ionic/core/dist/types/utils/native/haptic", JSImport.Namespace)
   @js.native
-  def hapticAvailable(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/utils/native/haptic", "hapticImpact")
-  @js.native
-  def hapticImpact(options: HapticImpactOptions): Unit = js.native
+  @scala.inline
+  def hapticAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticAvailable")().asInstanceOf[Boolean]
   
-  @JSImport("@ionic/core/dist/types/utils/native/haptic", "hapticNotification")
-  @js.native
-  def hapticNotification(options: HapticNotificationOptions): Unit = js.native
+  @scala.inline
+  def hapticImpact(options: HapticImpactOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticImpact")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/native/haptic", "hapticSelection")
-  @js.native
-  def hapticSelection(): Unit = js.native
+  @scala.inline
+  def hapticNotification(options: HapticNotificationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticNotification")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/native/haptic", "hapticSelectionChanged")
-  @js.native
-  def hapticSelectionChanged(): Unit = js.native
+  @scala.inline
+  def hapticSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelection")().asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/native/haptic", "hapticSelectionEnd")
-  @js.native
-  def hapticSelectionEnd(): Unit = js.native
+  @scala.inline
+  def hapticSelectionChanged(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelectionChanged")().asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/native/haptic", "hapticSelectionStart")
-  @js.native
-  def hapticSelectionStart(): Unit = js.native
+  @scala.inline
+  def hapticSelectionEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelectionEnd")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def hapticSelectionStart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelectionStart")().asInstanceOf[Unit]
+  
   trait HapticImpactOptions extends StObject {
     
-    var style: light | medium | heavy = js.native
+    var style: light | medium | heavy
   }
   object HapticImpactOptions {
     
@@ -62,10 +57,9 @@ object hapticMod {
     }
   }
   
-  @js.native
   trait HapticNotificationOptions extends StObject {
     
-    var style: success | warning | error = js.native
+    var style: success | warning | error
   }
   object HapticNotificationOptions {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchAssociateApprovalRuleTemplateWithRepositoriesError extends StObject {
   
   /**
     * An error code that specifies whether the repository name was not valid or not found.
     */
-  var errorCode: js.UndefOr[ErrorCode] = js.native
+  var errorCode: js.UndefOr[ErrorCode] = js.undefined
   
   /**
     * An error message that provides details about why the repository name was not found or not valid.
     */
-  var errorMessage: js.UndefOr[ErrorMessage] = js.native
+  var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
   
   /**
     * The name of the repository where the association was not made.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object BatchAssociateApprovalRuleTemplateWithRepositoriesError {
   

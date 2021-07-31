@@ -3,25 +3,25 @@ package typings.duplicatePackageCheckerWebpackPlugin
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("duplicate-package-checker-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
   type DuplicatePackageCheckerWebpackPlugin = Plugin
   
   /** The configurable options for the plugin */
-  @js.native
   trait Options extends StObject {
     
     /** Emit errors instead of warnings (default: false) */
-    var emitError: js.UndefOr[Boolean] = js.native
+    var emitError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Exclude instances of packages from the results.
@@ -30,16 +30,16 @@ object mod {
       * @param instance The instance of a package being evaluated for exclusion.
       * @returns true to exclude the instance, false otherwise
       */
-    var exclude: js.UndefOr[js.Function1[/* instance */ PackageInstanceProperties, Boolean]] = js.native
+    var exclude: js.UndefOr[js.Function1[/* instance */ PackageInstanceProperties, Boolean]] = js.undefined
     
     /** Show help message if duplicate packages are found (default: true) */
-    var showHelp: js.UndefOr[Boolean] = js.native
+    var showHelp: js.UndefOr[Boolean] = js.undefined
     
     /** Warn also if major versions differ (default: true) */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /** Also show module that is requiring each duplicate package (default: false) */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -85,20 +85,19 @@ object mod {
   }
   
   /** The properties of the instance of a package */
-  @js.native
   trait PackageInstanceProperties extends StObject {
     
     /** Absolute path to the module that requested the package */
-    var issuer: js.UndefOr[String] = js.native
+    var issuer: js.UndefOr[String] = js.undefined
     
     /** The name of the package */
-    var name: String = js.native
+    var name: String
     
     /** Absolute path to the package */
-    var path: String = js.native
+    var path: String
     
     /** The version of the package */
-    var version: String = js.native
+    var version: String
   }
   object PackageInstanceProperties {
     

@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationshipRampElement
-  extends Object
+  extends StObject
+     with Object
      with LegendElement {
   
   /**
@@ -17,56 +16,56 @@ trait RelationshipRampElement
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
     */
-  var colors: js.Array[js.Array[Color_]] = js.native
+  var colors: js.Array[js.Array[Color_]]
   
   /**
     * Determines the orientation of the Legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
     */
-  var focus: String = js.native
+  var focus: String
   
   /**
     * Info objects associated with the relationship renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
     */
-  var infos: js.UndefOr[js.Array[_]] = js.native
+  var infos: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The labels for each corner of the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
     */
-  var labels: RelationshipLabels = js.native
+  var labels: RelationshipLabels
   
   /**
     * The number of classes for each field comprising the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
     */
-  var numClasses: Double = js.native
+  var numClasses: Double
   
   /**
     * The rotation of the legend in degrees (0-360).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
     */
-  var rotation: Double = js.native
+  var rotation: Double
   
   /**
     * The title of the renderer as displayed in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The type of this element is always `relationship-ramp`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object RelationshipRampElement {
   
@@ -100,7 +99,7 @@ object RelationshipRampElement {
     def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfos(value: js.Array[_]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
+    def setInfos(value: js.Array[js.Any]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInfosUndefined: Self = StObject.set(x, "infos", js.undefined)

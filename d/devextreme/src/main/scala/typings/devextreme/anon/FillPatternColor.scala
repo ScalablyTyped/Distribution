@@ -34,37 +34,35 @@ import typings.devextreme.mod.DevExpress.exporter.ExcelFont
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillPatternColor extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var component: js.UndefOr[dxDataGrid] = js.native
+  var component: js.UndefOr[dxDataGrid] = js.undefined
   
-  var fillPatternColor: js.UndefOr[String] = js.native
+  var fillPatternColor: js.UndefOr[String] = js.undefined
   
   var fillPatternType: js.UndefOr[
     darkDown | darkGray | darkGrid | darkHorizontal | darkTrellis | darkUp | darkVertical | gray0625 | gray125 | lightDown | lightGray | lightGrid | lightHorizontal | lightTrellis | lightUp | lightVertical | mediumGray | none | solid
-  ] = js.native
+  ] = js.undefined
   
-  var font: js.UndefOr[ExcelFont] = js.native
+  var font: js.UndefOr[ExcelFont] = js.undefined
   
-  var gridCell: js.UndefOr[ExcelDataGridCell] = js.native
+  var gridCell: js.UndefOr[ExcelDataGridCell] = js.undefined
   
   var horizontalAlignment: js.UndefOr[
     center | centerContinuous | distributed | fill | general | justify | left | right
-  ] = js.native
+  ] = js.undefined
   
-  var numberFormat: js.UndefOr[String] = js.native
+  var numberFormat: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double | typings.std.Date] = js.native
+  var value: js.UndefOr[String | Double | typings.std.Date] = js.undefined
   
-  var verticalAlignment: js.UndefOr[bottom | center | distributed | justify | top] = js.native
+  var verticalAlignment: js.UndefOr[bottom | center | distributed | justify | top] = js.undefined
   
-  var wrapTextEnabled: js.UndefOr[Boolean] = js.native
+  var wrapTextEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object FillPatternColor {
   

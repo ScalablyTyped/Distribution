@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoCompleteAnimation extends StObject {
   
-  var close: js.UndefOr[AutoCompleteAnimationClose] = js.native
+  var close: js.UndefOr[AutoCompleteAnimationClose] = js.undefined
   
-  var open: js.UndefOr[AutoCompleteAnimationOpen] = js.native
+  var open: js.UndefOr[AutoCompleteAnimationOpen] = js.undefined
 }
 object AutoCompleteAnimation {
   

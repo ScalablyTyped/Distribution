@@ -2,26 +2,24 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelOutputConfiguration extends StObject {
   
   /**
     * A map of CSV index values in the SageMaker response to the Amazon Fraud Detector variables. 
     */
-  var csvIndexToVariableMap: js.UndefOr[CsvIndexToVariableMap] = js.native
+  var csvIndexToVariableMap: js.UndefOr[CsvIndexToVariableMap] = js.undefined
   
   /**
     * The format of the model output configuration.
     */
-  var format: ModelOutputDataFormat = js.native
+  var format: ModelOutputDataFormat
   
   /**
     * A map of JSON keys in response from SageMaker to the Amazon Fraud Detector variables. 
     */
-  var jsonKeyToVariableMap: js.UndefOr[JsonKeyToVariableMap] = js.native
+  var jsonKeyToVariableMap: js.UndefOr[JsonKeyToVariableMap] = js.undefined
 }
 object ModelOutputConfiguration {
   

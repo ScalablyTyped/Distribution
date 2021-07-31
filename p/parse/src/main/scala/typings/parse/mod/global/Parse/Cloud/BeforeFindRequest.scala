@@ -5,19 +5,19 @@ import typings.parse.mod.global.Parse.Object
 import typings.parse.mod.global.Parse.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BeforeFindRequest extends TriggerRequest {
+trait BeforeFindRequest
+  extends StObject
+     with TriggerRequest {
   
-  var count: Boolean = js.native
+  var count: Boolean
   
-  var isGet: Boolean = js.native
+  var isGet: Boolean
   
-  var query: Query[Object[Attributes]] = js.native
+  var query: Query[Object[Attributes]]
   
-  var readPreference: js.UndefOr[ReadPreferenceOption] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOption] = js.undefined
 }
 object BeforeFindRequest {
   

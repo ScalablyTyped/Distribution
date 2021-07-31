@@ -3,24 +3,25 @@ package typings.std
 import typings.std.stdStrings.statechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseAudioContext extends EventTarget {
+trait BaseAudioContext
+  extends StObject
+     with EventTarget {
   
   @JSName("addEventListener")
-  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -70,25 +71,13 @@ trait BaseAudioContext extends EventTarget {
   def createPeriodicWave(real: Iterable[Double], imag: Iterable[Double], constraints: PeriodicWaveConstraints): PeriodicWave = js.native
   
   def createScriptProcessor(): ScriptProcessorNode = js.native
-  def createScriptProcessor(
-    bufferSize: js.UndefOr[scala.Nothing],
-    numberOfInputChannels: js.UndefOr[scala.Nothing],
-    numberOfOutputChannels: Double
-  ): ScriptProcessorNode = js.native
-  def createScriptProcessor(bufferSize: js.UndefOr[scala.Nothing], numberOfInputChannels: Double): ScriptProcessorNode = js.native
-  def createScriptProcessor(
-    bufferSize: js.UndefOr[scala.Nothing],
-    numberOfInputChannels: Double,
-    numberOfOutputChannels: Double
-  ): ScriptProcessorNode = js.native
   def createScriptProcessor(bufferSize: Double): ScriptProcessorNode = js.native
-  def createScriptProcessor(
-    bufferSize: Double,
-    numberOfInputChannels: js.UndefOr[scala.Nothing],
-    numberOfOutputChannels: Double
-  ): ScriptProcessorNode = js.native
   def createScriptProcessor(bufferSize: Double, numberOfInputChannels: Double): ScriptProcessorNode = js.native
   def createScriptProcessor(bufferSize: Double, numberOfInputChannels: Double, numberOfOutputChannels: Double): ScriptProcessorNode = js.native
+  def createScriptProcessor(bufferSize: Double, numberOfInputChannels: Unit, numberOfOutputChannels: Double): ScriptProcessorNode = js.native
+  def createScriptProcessor(bufferSize: Unit, numberOfInputChannels: Double): ScriptProcessorNode = js.native
+  def createScriptProcessor(bufferSize: Unit, numberOfInputChannels: Double, numberOfOutputChannels: Double): ScriptProcessorNode = js.native
+  def createScriptProcessor(bufferSize: Unit, numberOfInputChannels: Unit, numberOfOutputChannels: Double): ScriptProcessorNode = js.native
   
   def createStereoPanner(): StereoPannerNode = js.native
   
@@ -97,12 +86,8 @@ trait BaseAudioContext extends EventTarget {
   val currentTime: Double = js.native
   
   def decodeAudioData(audioData: ArrayBuffer): js.Promise[AudioBuffer] = js.native
-  def decodeAudioData(
-    audioData: ArrayBuffer,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: DecodeErrorCallback
-  ): js.Promise[AudioBuffer] = js.native
   def decodeAudioData(audioData: ArrayBuffer, successCallback: Null, errorCallback: DecodeErrorCallback): js.Promise[AudioBuffer] = js.native
+  def decodeAudioData(audioData: ArrayBuffer, successCallback: Unit, errorCallback: DecodeErrorCallback): js.Promise[AudioBuffer] = js.native
   def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback): js.Promise[AudioBuffer] = js.native
   def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback, errorCallback: DecodeErrorCallback): js.Promise[AudioBuffer] = js.native
   
@@ -110,20 +95,20 @@ trait BaseAudioContext extends EventTarget {
   
   val listener: AudioListener = js.native
   
-  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
   @JSName("removeEventListener")
-  def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   

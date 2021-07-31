@@ -4,39 +4,39 @@ import typings.arcgisJsApi.arcgisJsApiStrings.asc_
 import typings.arcgisJsApi.arcgisJsApiStrings.desc_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldColumnConfigProperties extends FieldConfigProperties {
+trait FieldColumnConfigProperties
+  extends StObject
+     with FieldConfigProperties {
   
   /**
     * Controls the sort order of the column.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#direction)
     */
-  var direction: js.UndefOr[asc_ | desc_ | js.Any] = js.native
+  var direction: js.UndefOr[asc_ | desc_ | js.Any] = js.undefined
   
   /**
     * Set this object to customize the field column's menu content.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#menuConfig)
     */
-  var menuConfig: js.UndefOr[ButtonMenuConfig] = js.native
+  var menuConfig: js.UndefOr[ButtonMenuConfig] = js.undefined
   
   /**
     * Indicates whether the field column can be sorted.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#sortable)
     */
-  var sortable: js.UndefOr[Boolean] = js.native
+  var sortable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the field column is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#visible)
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object FieldColumnConfigProperties {
   

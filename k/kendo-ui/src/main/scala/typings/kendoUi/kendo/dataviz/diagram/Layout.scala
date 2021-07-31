@@ -3,11 +3,12 @@ package typings.kendoUi.kendo.dataviz.diagram
 import typings.kendoUi.kendo.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Layout extends Observable {
+trait Layout
+  extends StObject
+     with Observable {
   
   def append(element: js.Any): Unit = js.native
   

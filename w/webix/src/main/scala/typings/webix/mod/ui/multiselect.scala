@@ -5,13 +5,13 @@ import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.multiselect")
 @js.native
 class multiselect ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
@@ -74,11 +74,14 @@ class multiselect ()
   def attachEvent(`type`: multiselectEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: multiselectEventName, functor: WebixCallback, id: String): String | Double = js.native
   
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
   def blur(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_multiselect: multiselectConfig = js.native

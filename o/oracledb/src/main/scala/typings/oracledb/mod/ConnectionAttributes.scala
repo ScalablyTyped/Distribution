@@ -4,13 +4,11 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides connection credentials and connection-specific configuration properties.
   */
-@js.native
 trait ConnectionAttributes extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait ConnectionAttributes extends StObject {
     * The Oracle database instance to connect to.
     * The string can be an Easy Connect string, or a Net Service Name from atnsnames.ora file, or the name of a local Oracle database instance.
     */
-  var connectString: js.UndefOr[String] = js.native
+  var connectString: js.UndefOr[String] = js.undefined
   
   /**
     * An alias of connectString. Only one of the properties should be used.
@@ -27,7 +25,7 @@ trait ConnectionAttributes extends StObject {
     *
     * @since 2.1
     */
-  var connectionString: js.UndefOr[String] = js.native
+  var connectionString: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the name used for Edition-Based Redefinition by this connection.
@@ -35,7 +33,7 @@ trait ConnectionAttributes extends StObject {
     *
     * @since 2.2
     */
-  var edition: js.UndefOr[String] = js.native
+  var edition: js.UndefOr[String] = js.undefined
   
   /**
     * Determines if the standalone connection is created using Oracle Call Interface events mode.
@@ -44,7 +42,7 @@ trait ConnectionAttributes extends StObject {
     * @default false
     * @since 2.2
     */
-  var events: js.UndefOr[Boolean] = js.native
+  var events: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines if the connection should be established using External Authentication.
@@ -53,7 +51,7 @@ trait ConnectionAttributes extends StObject {
     *
     * @default false
     */
-  var externalAuth: js.UndefOr[Boolean] = js.native
+  var externalAuth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used in conjunction with tag when getting a connection from a connection pool.
@@ -62,7 +60,7 @@ trait ConnectionAttributes extends StObject {
     * @default false
     * @since 3.1
     */
-  var matchAny: js.UndefOr[Boolean] = js.native
+  var matchAny: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The new password to use for the database user. When using newPassword, the password property should be set to the current password.
@@ -70,17 +68,17 @@ trait ConnectionAttributes extends StObject {
     *
     * @since 2.2
     */
-  var newPassword: js.UndefOr[String] = js.native
+  var newPassword: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies which previously created pool in the connection pool cache to obtain the connection from. See Pool Alias.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * The password of the database user. A password is also necessary if a proxy user is specified.
     */
-  var poolAlias: js.UndefOr[String] = js.native
+  var poolAlias: js.UndefOr[String] = js.undefined
   
   /**
     * The privilege to use when establishing connection to the database.
@@ -89,7 +87,7 @@ trait ConnectionAttributes extends StObject {
     *
     * @since 2.1
     */
-  var privilege: js.UndefOr[Double] = js.native
+  var privilege: js.UndefOr[Double] = js.undefined
   
   /**
     * Allows a connection to be established directly to a database shard.
@@ -97,13 +95,13 @@ trait ConnectionAttributes extends StObject {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sharding
     * @since 4.1
     */
-  var shardingKey: js.UndefOr[js.Array[String | Double | Date | Buffer]] = js.native
+  var shardingKey: js.UndefOr[js.Array[String | Double | Date | Buffer]] = js.undefined
   
   /**
     * The number of statements to be cached in the statement cache of each connection.
     * This optional property may be used to override the oracledb.stmtCacheSize property.
     */
-  var stmtCacheSize: js.UndefOr[Double] = js.native
+  var stmtCacheSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Allows a connection to be established directly to a database shard.
@@ -111,7 +109,7 @@ trait ConnectionAttributes extends StObject {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sharding
     * @since 4.1
     */
-  var superShardingKey: js.UndefOr[js.Array[String | Double | Date | Buffer]] = js.native
+  var superShardingKey: js.UndefOr[js.Array[String | Double | Date | Buffer]] = js.undefined
   
   /**
     * Used when getting a connection from a connection pool.
@@ -120,12 +118,12 @@ trait ConnectionAttributes extends StObject {
     *
     * @since 3.1
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
   /**
     * The database user name. Can be a simple user name or a proxy of the form alison[fred].
     */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object ConnectionAttributes {
   

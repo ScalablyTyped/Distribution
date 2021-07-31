@@ -2,19 +2,17 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Captions extends StObject {
   
-  var captions: js.UndefOr[`5`] = js.native
+  var captions: js.UndefOr[`5`] = js.undefined
   
-  var controls: js.UndefOr[`5`] = js.native
+  var controls: js.UndefOr[`5`] = js.undefined
   
-  var icons: js.UndefOr[ClosedCaption] = js.native
+  var icons: js.UndefOr[ClosedCaption] = js.undefined
   
-  var scrubber: js.UndefOr[`3`] = js.native
+  var scrubber: js.UndefOr[`3`] = js.undefined
 }
 object Captions {
   

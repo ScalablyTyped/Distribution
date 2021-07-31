@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasCompositing extends StObject {
   
-  var globalAlpha: Double = js.native
+  var globalAlpha: Double
   
-  var globalCompositeOperation: java.lang.String = js.native
+  var globalCompositeOperation: java.lang.String
 }
 object CanvasCompositing {
   

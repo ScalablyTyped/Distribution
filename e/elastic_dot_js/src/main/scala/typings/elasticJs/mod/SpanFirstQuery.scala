@@ -3,12 +3,13 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "SpanFirstQuery")
 @js.native
-class SpanFirstQuery protected () extends Query {
+class SpanFirstQuery protected ()
+  extends StObject
+     with Query {
   /*
     Matches spans near the beginning of a field.
     */

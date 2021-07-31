@@ -2,36 +2,34 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenIterator extends StObject {
   
   /**
     * Returns the current tokenized string.
     **/
-  def getCurrentToken(): TokenInfo = js.native
+  def getCurrentToken(): TokenInfo
   
   /**
     * Returns the current column.
     **/
-  def getCurrentTokenColumn(): Double = js.native
+  def getCurrentTokenColumn(): Double
   
   /**
     * Returns the current row.
     **/
-  def getCurrentTokenRow(): Double = js.native
+  def getCurrentTokenRow(): Double
   
   /**
     * Tokenizes all the items from the current point to the row prior in the document.
     **/
-  def stepBackward(): js.Array[String] = js.native
+  def stepBackward(): js.Array[String]
   
   /**
     * Tokenizes all the items from the current point until the next row in the document. If the current point is at the end of the file, this function returns `null`. Otherwise, it returns the tokenized string.
     **/
-  def stepForward(): String = js.native
+  def stepForward(): String
 }
 object TokenIterator {
   

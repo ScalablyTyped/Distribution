@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.IfStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `83` extends StObject {
   
-  var `type`: IfStatement = js.native
+  var `type`: IfStatement
 }
 object `83` {
   
   @scala.inline
-  def apply(`type`: IfStatement): `83` = {
+  def apply(): `83` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IfStatement")
     __obj.asInstanceOf[`83`]
   }
   

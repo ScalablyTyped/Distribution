@@ -4,32 +4,32 @@ import typings.arcgisJsApi.arcgisJsApiStrings.list
 import typings.arcgisJsApi.arcgisJsApiStrings.preview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AttachmentsProperties extends WidgetProperties {
+trait AttachmentsProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * A string value indicating how to display the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments.html#displayType)
     */
-  var displayType: js.UndefOr[preview | list] = js.native
+  var displayType: js.UndefOr[preview | list] = js.undefined
   
   /**
     * The graphic for the attachments.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments.html#graphic)
     */
-  var graphic: js.UndefOr[GraphicProperties] = js.native
+  var graphic: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments.html#viewModel)
     */
-  var viewModel: js.UndefOr[AttachmentsViewModelProperties] = js.native
+  var viewModel: js.UndefOr[AttachmentsViewModelProperties] = js.undefined
 }
 object AttachmentsProperties {
   

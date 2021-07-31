@@ -16,11 +16,12 @@ import typings.ckeditor.ckeditorBooleans.`false`
 import typings.ckeditor.ckeditorBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait editor extends event {
+trait editor
+  extends StObject
+     with event {
   
   val activeEnterMode: Double = js.native
   
@@ -102,9 +103,9 @@ trait editor extends event {
   def execCommand(commandName: String, data: js.Any): Boolean = js.native
   
   def extractSelectedHtml(): documentFragment | String | Unit = js.native
-  def extractSelectedHtml(toString: js.UndefOr[scala.Nothing], removeEmptyBlock: Boolean): documentFragment | String | Unit = js.native
   def extractSelectedHtml(toString: Boolean): documentFragment | String | Unit = js.native
   def extractSelectedHtml(toString: Boolean, removeEmptyBlock: Boolean): documentFragment | String | Unit = js.native
+  def extractSelectedHtml(toString: Unit, removeEmptyBlock: Boolean): documentFragment | String | Unit = js.native
   
   val filter: typings.ckeditor.CKEDITOR.filter = js.native
   
@@ -158,9 +159,9 @@ trait editor extends event {
   def insertElement(element: typings.ckeditor.CKEDITOR.dom.element): Unit = js.native
   
   def insertHtml(html: String): Unit = js.native
-  def insertHtml(html: String, mode: js.UndefOr[scala.Nothing], range: range): Unit = js.native
   def insertHtml(html: String, mode: String): Unit = js.native
   def insertHtml(html: String, mode: String, range: range): Unit = js.native
+  def insertHtml(html: String, mode: Unit, range: range): Unit = js.native
   
   def insertText(text: String): Unit = js.native
   
@@ -186,23 +187,23 @@ trait editor extends event {
   val plugins: js.Any = js.native
   
   def popup(url: String): Unit = js.native
-  def popup(url: String, width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], options: String): Unit = js.native
-  def popup(url: String, width: js.UndefOr[scala.Nothing], height: String): Unit = js.native
-  def popup(url: String, width: js.UndefOr[scala.Nothing], height: String, options: String): Unit = js.native
-  def popup(url: String, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def popup(url: String, width: js.UndefOr[scala.Nothing], height: Double, options: String): Unit = js.native
   def popup(url: String, width: String): Unit = js.native
-  def popup(url: String, width: String, height: js.UndefOr[scala.Nothing], options: String): Unit = js.native
   def popup(url: String, width: String, height: String): Unit = js.native
   def popup(url: String, width: String, height: String, options: String): Unit = js.native
   def popup(url: String, width: String, height: Double): Unit = js.native
   def popup(url: String, width: String, height: Double, options: String): Unit = js.native
+  def popup(url: String, width: String, height: Unit, options: String): Unit = js.native
   def popup(url: String, width: Double): Unit = js.native
-  def popup(url: String, width: Double, height: js.UndefOr[scala.Nothing], options: String): Unit = js.native
   def popup(url: String, width: Double, height: String): Unit = js.native
   def popup(url: String, width: Double, height: String, options: String): Unit = js.native
   def popup(url: String, width: Double, height: Double): Unit = js.native
   def popup(url: String, width: Double, height: Double, options: String): Unit = js.native
+  def popup(url: String, width: Double, height: Unit, options: String): Unit = js.native
+  def popup(url: String, width: Unit, height: String): Unit = js.native
+  def popup(url: String, width: Unit, height: String, options: String): Unit = js.native
+  def popup(url: String, width: Unit, height: Double): Unit = js.native
+  def popup(url: String, width: Unit, height: Double, options: String): Unit = js.native
+  def popup(url: String, width: Unit, height: Unit, options: String): Unit = js.native
   
   val readOnly: Boolean = js.native
   
@@ -215,21 +216,21 @@ trait editor extends event {
   def resetUndo(): Unit = js.native
   
   def resize(width: String, height: String): Unit = js.native
-  def resize(width: String, height: String, isContentHeight: js.UndefOr[scala.Nothing], resizeInner: Boolean): Unit = js.native
   def resize(width: String, height: String, isContentHeight: Boolean): Unit = js.native
   def resize(width: String, height: String, isContentHeight: Boolean, resizeInner: Boolean): Unit = js.native
+  def resize(width: String, height: String, isContentHeight: Unit, resizeInner: Boolean): Unit = js.native
   def resize(width: String, height: Double): Unit = js.native
-  def resize(width: String, height: Double, isContentHeight: js.UndefOr[scala.Nothing], resizeInner: Boolean): Unit = js.native
   def resize(width: String, height: Double, isContentHeight: Boolean): Unit = js.native
   def resize(width: String, height: Double, isContentHeight: Boolean, resizeInner: Boolean): Unit = js.native
+  def resize(width: String, height: Double, isContentHeight: Unit, resizeInner: Boolean): Unit = js.native
   def resize(width: Double, height: String): Unit = js.native
-  def resize(width: Double, height: String, isContentHeight: js.UndefOr[scala.Nothing], resizeInner: Boolean): Unit = js.native
   def resize(width: Double, height: String, isContentHeight: Boolean): Unit = js.native
   def resize(width: Double, height: String, isContentHeight: Boolean, resizeInner: Boolean): Unit = js.native
+  def resize(width: Double, height: String, isContentHeight: Unit, resizeInner: Boolean): Unit = js.native
   def resize(width: Double, height: Double): Unit = js.native
-  def resize(width: Double, height: Double, isContentHeight: js.UndefOr[scala.Nothing], resizeInner: Boolean): Unit = js.native
   def resize(width: Double, height: Double, isContentHeight: Boolean): Unit = js.native
   def resize(width: Double, height: Double, isContentHeight: Boolean, resizeInner: Boolean): Unit = js.native
+  def resize(width: Double, height: Double, isContentHeight: Unit, resizeInner: Boolean): Unit = js.native
   
   def restoreRealElement(fakeElement: typings.ckeditor.CKEDITOR.dom.element): typings.ckeditor.CKEDITOR.dom.element = js.native
   
@@ -281,158 +282,157 @@ trait editor extends event {
 }
 object editor {
   
-  @js.native
   trait eventObject extends StObject {
     
-    var activeEnterModeChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var activeEnterModeChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var activeFilterChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var activeFilterChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var afterCommandExec: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var afterCommandExec: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var afterInsertHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var afterInsertHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var afterPaste: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var afterPaste: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var afterPasteFromWord: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var afterPasteFromWord: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var afterSetData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var afterSetData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var afterUndoImage: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var afterUndoImage: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var ariaEditorHelpLabel: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var ariaEditorHelpLabel: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var ariaWidget: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var ariaWidget: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var autogrow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var autogrow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var beforeCommandExec: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var beforeCommandExec: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var beforeDestroy: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var beforeDestroy: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var beforeGetData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var beforeGetData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var beforeModeUnload: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var beforeModeUnload: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var beforeSetMode: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var beforeSetMode: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var beforeUndoImage: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var beforeUndoImage: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var blur: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var blur: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var change: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var configLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var configLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var contentDirChanged: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var contentDirChanged: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var contentDom: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var contentDom: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var contentDomInvalidated: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var contentDomInvalidated: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var contentDomUnload: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var contentDomUnload: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var customConfigLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var customConfigLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var dataFiltered: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var dataFiltered: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var dataReady: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var dataReady: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var destroy: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var dialogHide: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var dialogHide: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var dialogShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var dialogShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var dirChanged: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var dirChanged: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var doubleclick: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var doubleclick: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var dragend: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var dragend: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var dragstart: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var dragstart: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var drop: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var drop: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var elementsPathUpdate: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var elementsPathUpdate: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var fileUploadRequest: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var fileUploadRequest: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var fileUploadResponse: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var fileUploadResponse: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var floatingSpaceLayout: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var floatingSpaceLayout: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var focus: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var focus: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var getData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var getData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var getSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var getSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var insertElement: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var insertElement: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var insertHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var insertHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var insertText: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var insertText: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var instanceReady: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var instanceReady: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var key: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var key: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var langLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var langLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var loadSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var loadSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var loaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var loaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var lockSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var lockSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var maximize: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var maximize: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var menuShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var menuShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var mode: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var mode: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var notificationHide: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var notificationHide: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var notificationShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var notificationShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var notificationUpdate: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var notificationUpdate: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var paste: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var paste: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var pasteFromWord: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var pasteFromWord: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var pluginsLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var pluginsLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var readOnly: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var readOnly: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var removeFormatCleanup: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var removeFormatCleanup: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var required: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var required: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var resize: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var resize: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var save: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var save: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var saveSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var saveSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var selectionChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var selectionChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var setData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var setData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var stylesSet: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var stylesSet: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var template: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var template: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var toDataFormat: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var toDataFormat: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var toHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var toHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var unlockSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var unlockSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var updateSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var updateSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
     
-    var widgetDefinition: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+    var widgetDefinition: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
   }
   object eventObject {
     

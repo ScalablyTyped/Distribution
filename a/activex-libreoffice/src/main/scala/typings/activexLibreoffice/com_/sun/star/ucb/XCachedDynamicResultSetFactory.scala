@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The needed stub on server side can be created using {@link XCachedDynamicResultSetStubFactory} .
   */
-@js.native
-trait XCachedDynamicResultSetFactory extends XInterface {
+trait XCachedDynamicResultSetFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a remote optimizes {@link XDynamicResultSet} .
@@ -24,7 +24,7 @@ trait XCachedDynamicResultSetFactory extends XInterface {
     * @param ContentIdentifierMapping is not required, but can be set if it is necessary to change the identity of the contents accessible via the interface {
     * @returns an instance of service {@link CachedDynamicResultSet} .
     */
-  def createCachedDynamicResultSet(SourceStub: XDynamicResultSet, ContentIdentifierMapping: XContentIdentifierMapping): XDynamicResultSet = js.native
+  def createCachedDynamicResultSet(SourceStub: XDynamicResultSet, ContentIdentifierMapping: XContentIdentifierMapping): XDynamicResultSet
 }
 object XCachedDynamicResultSetFactory {
   

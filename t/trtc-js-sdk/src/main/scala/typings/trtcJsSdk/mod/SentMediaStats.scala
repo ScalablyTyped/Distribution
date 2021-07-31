@@ -2,17 +2,15 @@ package typings.trtcJsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SentMediaStats extends StObject {
   
   /** 已发送字节数 */
-  var bytesSent: Double = js.native
+  var bytesSent: Double
   
   /** 已发送包数 */
-  var packetsSent: Double = js.native
+  var packetsSent: Double
 }
 object SentMediaStats {
   

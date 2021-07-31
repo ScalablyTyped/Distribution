@@ -4,19 +4,18 @@ import typings.gun.mod.Gun.CryptoKeyPair
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Decrypt extends StObject {
   
-  def decrypt(message: js.Any, pair: String): js.Promise[_] = js.native
+  def decrypt(message: js.Any, pair: String): js.Promise[js.Any] = js.native
   /**
     * Read the secret data, if and only if you are allowed to.
     * @param message is what comes from .encrypt.
     * @param pair from .pair or the passphrase to decypher the message.
     */
-  def decrypt(message: js.Any, pair: CryptoKeyPair): js.Promise[_] = js.native
+  def decrypt(message: js.Any, pair: CryptoKeyPair): js.Promise[js.Any] = js.native
   
   def encrypt(data: js.Any, pair: String): js.Promise[String] = js.native
   /**
@@ -48,13 +47,13 @@ trait Decrypt extends StObject {
   /** If you want SEA to throw while in development, turn SEA.throw = true on, but please do not use this in production. */
   var `throw`: js.UndefOr[Boolean] = js.native
   
-  def verify(message: js.Any, pair: String): js.Promise[_] = js.native
+  def verify(message: js.Any, pair: String): js.Promise[js.Any] = js.native
   /**
     * Gets the data if and only if the message can be verified as coming from the person you expect.
     * @param message is what comes from .sign.
     * @param pair from .pair or its public key text (pair.pub).
     */
-  def verify(message: js.Any, pair: CryptoKeyPair): js.Promise[_] = js.native
+  def verify(message: js.Any, pair: CryptoKeyPair): js.Promise[js.Any] = js.native
   
   /**
     * This gives you a Proof of Work (POW) / Hashing of Data
@@ -66,25 +65,7 @@ trait Decrypt extends StObject {
     * @param opt default: {name: 'PBKDF2', encode: 'base64'}
     */
   def work(data: js.Any): js.Promise[js.UndefOr[String]] = js.native
-  def work(
-    data: js.Any,
-    pair: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    opt: PartialnameSHA256PBKDF2en
-  ): js.Promise[js.UndefOr[String]] = js.native
-  def work(
-    data: js.Any,
-    pair: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* data */ js.UndefOr[String], Unit]
-  ): js.Promise[js.UndefOr[String]] = js.native
-  def work(
-    data: js.Any,
-    pair: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* data */ js.UndefOr[String], Unit],
-    opt: PartialnameSHA256PBKDF2en
-  ): js.Promise[js.UndefOr[String]] = js.native
   def work(data: js.Any, pair: js.Any): js.Promise[js.UndefOr[String]] = js.native
-  def work(data: js.Any, pair: js.Any, callback: js.UndefOr[scala.Nothing], opt: PartialnameSHA256PBKDF2en): js.Promise[js.UndefOr[String]] = js.native
   def work(data: js.Any, pair: js.Any, callback: js.Function1[/* data */ js.UndefOr[String], Unit]): js.Promise[js.UndefOr[String]] = js.native
   def work(
     data: js.Any,
@@ -92,4 +73,13 @@ trait Decrypt extends StObject {
     callback: js.Function1[/* data */ js.UndefOr[String], Unit],
     opt: PartialnameSHA256PBKDF2en
   ): js.Promise[js.UndefOr[String]] = js.native
+  def work(data: js.Any, pair: js.Any, callback: Unit, opt: PartialnameSHA256PBKDF2en): js.Promise[js.UndefOr[String]] = js.native
+  def work(data: js.Any, pair: Unit, callback: js.Function1[/* data */ js.UndefOr[String], Unit]): js.Promise[js.UndefOr[String]] = js.native
+  def work(
+    data: js.Any,
+    pair: Unit,
+    callback: js.Function1[/* data */ js.UndefOr[String], Unit],
+    opt: PartialnameSHA256PBKDF2en
+  ): js.Promise[js.UndefOr[String]] = js.native
+  def work(data: js.Any, pair: Unit, callback: Unit, opt: PartialnameSHA256PBKDF2en): js.Promise[js.UndefOr[String]] = js.native
 }

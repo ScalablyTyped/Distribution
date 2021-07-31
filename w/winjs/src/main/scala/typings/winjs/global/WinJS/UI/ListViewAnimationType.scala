@@ -2,7 +2,6 @@ package typings.winjs.global.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ListViewAnimationType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winjs.WinJS.UI.ListViewAnimationType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winjs.WinJS.UI.ListViewAnimationType & Double] = js.native
   
-  /* 1 */ val contentTransition: typings.winjs.WinJS.UI.ListViewAnimationType.contentTransition with Double = js.native
+  /* 1 */ val contentTransition: typings.winjs.WinJS.UI.ListViewAnimationType.contentTransition & Double = js.native
   
-  /* 0 */ val entrance: typings.winjs.WinJS.UI.ListViewAnimationType.entrance with Double = js.native
+  /* 0 */ val entrance: typings.winjs.WinJS.UI.ListViewAnimationType.entrance & Double = js.native
 }

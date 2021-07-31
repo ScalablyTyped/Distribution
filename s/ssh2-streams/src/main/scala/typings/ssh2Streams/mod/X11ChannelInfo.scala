@@ -3,28 +3,28 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.x11
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait X11ChannelInfo extends ChannelOpenInfo {
+trait X11ChannelInfo
+  extends StObject
+     with ChannelOpenInfo {
   
-  var data: X11ChannelData = js.native
+  var data: X11ChannelData
   
-  var packetSize: Double = js.native
+  var packetSize: Double
   
-  var sender: Double = js.native
+  var sender: Double
   
-  var `type`: x11 = js.native
+  var `type`: x11
   
-  var window: Double = js.native
+  var window: Double
 }
 object X11ChannelInfo {
   
   @scala.inline
-  def apply(data: X11ChannelData, packetSize: Double, sender: Double, `type`: x11, window: Double): X11ChannelInfo = {
+  def apply(data: X11ChannelData, packetSize: Double, sender: Double, window: Double): X11ChannelInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("x11")
     __obj.asInstanceOf[X11ChannelInfo]
   }
   

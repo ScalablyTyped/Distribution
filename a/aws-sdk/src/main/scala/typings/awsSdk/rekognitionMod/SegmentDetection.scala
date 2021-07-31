@@ -2,56 +2,54 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentDetection extends StObject {
   
   /**
     * The duration of the detected segment in milliseconds. 
     */
-  var DurationMillis: js.UndefOr[ULong] = js.native
+  var DurationMillis: js.UndefOr[ULong] = js.undefined
   
   /**
     * The duration of the timecode for the detected segment in SMPTE format.
     */
-  var DurationSMPTE: js.UndefOr[Timecode] = js.native
+  var DurationSMPTE: js.UndefOr[Timecode] = js.undefined
   
   /**
     * The frame-accurate SMPTE timecode, from the start of a video, for the end of a detected segment. EndTimecode is in HH:MM:SS:fr format (and ;fr for drop frame-rates).
     */
-  var EndTimecodeSMPTE: js.UndefOr[Timecode] = js.native
+  var EndTimecodeSMPTE: js.UndefOr[Timecode] = js.undefined
   
   /**
     * The end time of the detected segment, in milliseconds, from the start of the video. This value is rounded down.
     */
-  var EndTimestampMillis: js.UndefOr[Timestamp] = js.native
+  var EndTimestampMillis: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If the segment is a shot detection, contains information about the shot detection.
     */
-  var ShotSegment: js.UndefOr[typings.awsSdk.rekognitionMod.ShotSegment] = js.native
+  var ShotSegment: js.UndefOr[typings.awsSdk.rekognitionMod.ShotSegment] = js.undefined
   
   /**
     * The frame-accurate SMPTE timecode, from the start of a video, for the start of a detected segment. StartTimecode is in HH:MM:SS:fr format (and ;fr for drop frame-rates). 
     */
-  var StartTimecodeSMPTE: js.UndefOr[Timecode] = js.native
+  var StartTimecodeSMPTE: js.UndefOr[Timecode] = js.undefined
   
   /**
     * The start time of the detected segment in milliseconds from the start of the video. This value is rounded down. For example, if the actual timestamp is 100.6667 milliseconds, Amazon Rekognition Video returns a value of 100 millis.
     */
-  var StartTimestampMillis: js.UndefOr[Timestamp] = js.native
+  var StartTimestampMillis: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If the segment is a technical cue, contains information about the technical cue.
     */
-  var TechnicalCueSegment: js.UndefOr[typings.awsSdk.rekognitionMod.TechnicalCueSegment] = js.native
+  var TechnicalCueSegment: js.UndefOr[typings.awsSdk.rekognitionMod.TechnicalCueSegment] = js.undefined
   
   /**
     * The type of the segment. Valid values are TECHNICAL_CUE and SHOT.
     */
-  var Type: js.UndefOr[SegmentType] = js.native
+  var Type: js.UndefOr[SegmentType] = js.undefined
 }
 object SegmentDetection {
   

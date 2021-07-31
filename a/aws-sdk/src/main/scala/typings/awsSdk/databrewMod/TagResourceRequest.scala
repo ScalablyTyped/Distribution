@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The DataBrew resource to which tags should be added. The value for this parameter is an Amazon Resource Name (ARN). For DataBrew, you can tag a dataset, a job, a project, or a recipe.
     */
-  var ResourceArn: Arn = js.native
+  var ResourceArn: Arn
   
   /**
     * One or more tags to be assigned to the resource.
     */
-  var Tags: TagMap = js.native
+  var Tags: TagMap
 }
 object TagResourceRequest {
   

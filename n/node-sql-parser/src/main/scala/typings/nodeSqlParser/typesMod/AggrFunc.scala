@@ -3,24 +3,22 @@ package typings.nodeSqlParser.typesMod
 import typings.nodeSqlParser.nodeSqlParserStrings.aggr_func
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggrFunc extends StObject {
   
-  var args: ColumnRef | AggrFunc | Star | Null = js.native
+  var args: ColumnRef | AggrFunc | Star | Null
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: aggr_func = js.native
+  var `type`: aggr_func
 }
 object AggrFunc {
   
   @scala.inline
-  def apply(name: String, `type`: aggr_func): AggrFunc = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: String): AggrFunc = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], args = null)
+    __obj.updateDynamic("type")("aggr_func")
     __obj.asInstanceOf[AggrFunc]
   }
   

@@ -2,7 +2,6 @@ package typings.ejWebAll.ej.datavisualization.Sunburst
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,9 +12,13 @@ object Animation extends StObject {
   
   //string
   @js.native
-  sealed trait FadeIn extends Animation
+  sealed trait FadeIn
+    extends StObject
+       with Animation
   
   //string
   @js.native
-  sealed trait Rotation extends Animation
+  sealed trait Rotation
+    extends StObject
+       with Animation
 }

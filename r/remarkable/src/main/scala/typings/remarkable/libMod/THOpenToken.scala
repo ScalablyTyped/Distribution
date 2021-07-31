@@ -3,22 +3,22 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.th_open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait THOpenToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait THOpenToken
+  extends StObject
+     with TagToken {
   
   @JSName("type")
-  var type_THOpenToken: th_open = js.native
+  var type_THOpenToken: th_open
 }
 object THOpenToken {
   
   @scala.inline
-  def apply(level: Double, `type`: th_open): THOpenToken = {
+  def apply(level: Double): THOpenToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("th_open")
     __obj.asInstanceOf[THOpenToken]
   }
   

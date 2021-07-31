@@ -3,20 +3,20 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait File_ extends Node {
+trait File_
+  extends StObject
+     with Node {
   
-  var comments: js.Array[Comment] = js.native
+  var comments: js.Array[Comment]
   
-  var program: Program_ = js.native
+  var program: Program_
   
-  var tokens: js.Array[_] = js.native
+  var tokens: js.Array[js.Any]
   
   @JSName("type")
-  var type_File_ : File = js.native
+  var type_File_ : File
 }
 object File_ {
   
@@ -27,11 +27,10 @@ object File_ {
     loc: SourceLocation,
     program: Program_,
     start: Double,
-    tokens: js.Array[_],
-    `type`: File
+    tokens: js.Array[js.Any]
   ): File_ = {
     val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("File")
     __obj.asInstanceOf[File_]
   }
   
@@ -48,7 +47,7 @@ object File_ {
     def setProgram(value: Program_): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokens(value: js.Array[_]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    def setTokens(value: js.Array[js.Any]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTokensVarargs(value: js.Any*): Self = StObject.set(x, "tokens", js.Array(value :_*))

@@ -13,18 +13,16 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coachmarkTypesMod {
   
-  @js.native
   trait ICoachmark extends StObject {
     
     /**
       * Forces the Coachmark to dismiss
       */
-    var dismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.native
+    var dismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ICoachmark {
     
@@ -45,195 +43,196 @@ object coachmarkTypesMod {
     }
   }
   
-  @js.native
-  trait ICoachmarkProps extends ClassAttributes[CoachmarkBase] {
+  trait ICoachmarkProps
+    extends StObject
+       with ClassAttributes[CoachmarkBase] {
     
     /**
       * Text to announce to screen reader / narrator when Coachmark is displayed
       */
-    var ariaAlertText: js.UndefOr[String] = js.native
+    var ariaAlertText: js.UndefOr[String] = js.undefined
     
     /**
       * Defines the element id referencing the element containing the description for the Coachmark.
       */
-    var ariaDescribedBy: js.UndefOr[String] = js.native
+    var ariaDescribedBy: js.UndefOr[String] = js.undefined
     
     /**
       * Defines the text content for the ariaDescribedBy element
       */
-    var ariaDescribedByText: js.UndefOr[String] = js.native
+    var ariaDescribedByText: js.UndefOr[String] = js.undefined
     
     /**
       *  Defines the element id referencing the element containing label text for Coachmark.
       */
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     /**
       *  Defines the text content for the ariaLabelledBy element
       */
-    var ariaLabelledByText: js.UndefOr[String] = js.native
+    var ariaLabelledByText: js.UndefOr[String] = js.undefined
     
     /**
       * Beacon color one.
       */
-    var beaconColorOne: js.UndefOr[String] = js.native
+    var beaconColorOne: js.UndefOr[String] = js.undefined
     
     /**
       * Beacon color two.
       */
-    var beaconColorTwo: js.UndefOr[String] = js.native
+    var beaconColorTwo: js.UndefOr[String] = js.undefined
     
     /**
       * The height of the Beak component.
       * @deprecated No longer used.
       */
-    var beakHeight: js.UndefOr[Double] = js.native
+    var beakHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The width of the Beak component.
       * @deprecated No longer used.
       */
-    var beakWidth: js.UndefOr[Double] = js.native
+    var beakWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * If provided, additional class name to provide on the root element.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * The starting collapsed state for the Coachmark.  Use `isCollapsed` instead.
       * @defaultvalue true
       * @deprecated Use `isCollapsed` instead.
       */
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Color of the Coachmark/TeachingBubble.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the ICoachmark interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ICoachmark]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ICoachmark]] = js.undefined
     
     /**
       * Delay in milliseconds before Coachmark animation appears.
       * @defaultvalue 0
       */
-    var delayBeforeCoachmarkAnimation: js.UndefOr[Double] = js.native
+    var delayBeforeCoachmarkAnimation: js.UndefOr[Double] = js.undefined
     
     /**
       * Delay before allowing mouse movements to open the Coachmark.
       * @defaultvalue 3600
       */
-    var delayBeforeMouseOpen: js.UndefOr[Double] = js.native
+    var delayBeforeMouseOpen: js.UndefOr[Double] = js.undefined
     
     /**
       * The height of the Coachmark.
       * @deprecated No longer used.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * The starting collapsed state for the Coachmark.
       * @defaultvalue true
       */
-    var isCollapsed: js.UndefOr[Boolean] = js.native
+    var isCollapsed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to force the Coachmark/TeachingBubble content to fit within the window bounds.
       * @defaultvalue true
       */
-    var isPositionForced: js.UndefOr[Boolean] = js.native
+    var isPositionForced: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The distance in pixels the mouse is located
       * before opening up the Coachmark.
       * @defaultvalue 10
       */
-    var mouseProximityOffset: js.UndefOr[Double] = js.native
+    var mouseProximityOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback when the opening animation completes.
       */
-    var onAnimationOpenEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAnimationOpenEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback when the opening animation begins.
       */
-    var onAnimationOpenStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAnimationOpenStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback when the Coachmark tries to close.
       */
-    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /**
       * Callback to run when the mouse moves.
       */
-    var onMouseMove: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.native
+    var onMouseMove: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
     
     /**
       * If true then the Coachmark beak (arrow pointing towards target) will always be visible as long as
       * Coachmark is visible
       * @defaultvalue false
       */
-    var persistentBeak: js.UndefOr[Boolean] = js.native
+    var persistentBeak: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Props to pass to the PositioningContainer component. Specify the `directionalHint` to indicate
       * on which edge the Coachmark/TeachingBubble should be positioned.
       * @defaultvalue directionalHint: DirectionalHint.bottomAutoEdge
       */
-    var positioningContainerProps: js.UndefOr[IPositioningContainerProps] = js.native
+    var positioningContainerProps: js.UndefOr[IPositioningContainerProps] = js.undefined
     
     /**
       * If true then the Coachmark will not dismiss when it loses focus
       * @defaultvalue false
       */
-    var preventDismissOnLostFocus: js.UndefOr[Boolean] = js.native
+    var preventDismissOnLostFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true then focus will not be set to the Coachmark when it mounts. Useful in cases where focus on coachmark
       * is causing other components in page to dismiss upon losing focus.
       * @defaultvalue false
       */
-    var preventFocusOnMount: js.UndefOr[Boolean] = js.native
+    var preventFocusOnMount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]] = js.undefined
     
     /**
       * The target that the Coachmark should try to position itself based on.
       */
-    var target: HTMLElement | String | Null = js.native
+    var target: HTMLElement | String | Null
     
     /**
       * Ref for TeachingBubble
       * @deprecated Coachmark uses `focusFirstChild` utility instead to focus on TeachingBubbleContent
       */
-    var teachingBubbleRef: js.UndefOr[ITeachingBubble] = js.native
+    var teachingBubbleRef: js.UndefOr[ITeachingBubble] = js.undefined
     
     /**
       * Theme provided by higher order component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * The width of the Coachmark.
       * @deprecated No longer used.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ICoachmarkProps {
     
     @scala.inline
     def apply(): ICoachmarkProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(target = null)
       __obj.asInstanceOf[ICoachmarkProps]
     }
     
@@ -440,93 +439,92 @@ object coachmarkTypesMod {
     }
   }
   
-  @js.native
   trait ICoachmarkStyleProps extends StObject {
     
     /**
       * Beacon color one
       */
-    var beaconColorOne: js.UndefOr[String] = js.native
+    var beaconColorOne: js.UndefOr[String] = js.undefined
     
     /**
       * Beacon color two
       */
-    var beaconColorTwo: js.UndefOr[String] = js.native
+    var beaconColorTwo: js.UndefOr[String] = js.undefined
     
     /**
       * ClassName to provide on the root style area.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Is the Coachmark collapsed.
       * Deprecated, use `isCollapsed` instead.
       * @deprecated Use `isCollapsed` instead.
       */
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Color
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Delay time for the animation to start
       */
-    var delayBeforeCoachmarkAnimation: js.UndefOr[String] = js.native
+    var delayBeforeCoachmarkAnimation: js.UndefOr[String] = js.undefined
     
     /**
       * The height measured before the component has been mounted
       * in pixels
       */
-    var entityHostHeight: js.UndefOr[String] = js.native
+    var entityHostHeight: js.UndefOr[String] = js.undefined
     
     /**
       * The width measured in pixels
       */
-    var entityHostWidth: js.UndefOr[String] = js.native
+    var entityHostWidth: js.UndefOr[String] = js.undefined
     
     /**
       * Height of the coachmark
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /**
       * Is the beacon currently animating.
       * @deprecated Property is never used
       */
-    var isBeaconAnimating: Boolean = js.native
+    var isBeaconAnimating: Boolean
     
     /**
       * Is the Coachmark collapsed
       */
-    var isCollapsed: Boolean = js.native
+    var isCollapsed: Boolean
     
     /**
       * Is the Coachmark finished measuring the dimensions of innerHostElement
       * @deprecated Value is always the inverse of `isMeasuring`
       */
-    var isMeasured: Boolean = js.native
+    var isMeasured: Boolean
     
     /**
       * Is the component taking measurements
       */
-    var isMeasuring: Boolean = js.native
+    var isMeasuring: Boolean
     
     /**
       * Current theme.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Transform origin for teaching bubble content
       */
-    var transformOrigin: js.UndefOr[String] = js.native
+    var transformOrigin: js.UndefOr[String] = js.undefined
     
     /**
       * Width of the coachmark
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object ICoachmarkStyleProps {
     
@@ -625,60 +623,59 @@ object coachmarkTypesMod {
     }
   }
   
-  @js.native
   trait ICoachmarkStyles extends StObject {
     
     /**
       * The styles applied to the ARIA attribute container
       */
-    var ariaContainer: js.UndefOr[IStyle] = js.native
+    var ariaContainer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * The layer that directly contains the TeachingBubbleContent
       */
-    var childrenContainer: IStyle = js.native
+    var childrenContainer: IStyle
     
     /**
       * The styles applied when the Coachmark has collapsed.
       */
-    var collapsed: js.UndefOr[IStyle] = js.native
+    var collapsed: js.UndefOr[IStyle] = js.undefined
     
     /**
       * The layer that content/components/elements will be hosted in.
       */
-    var entityHost: js.UndefOr[IStyle] = js.native
+    var entityHost: js.UndefOr[IStyle] = js.undefined
     
     /**
       * The inner layer that components will be hosted in
       * and primary purpose is scaling the layer down while the
       * Coachmark collapsed.
       */
-    var entityInnerHost: IStyle = js.native
+    var entityInnerHost: IStyle
     
     /**
       * The pulsing beacon that animates when the Coachmark is collapsed.
       */
-    var pulsingBeacon: js.UndefOr[IStyle] = js.native
+    var pulsingBeacon: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the root element in the default enabled/unchecked state.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /**
       * The layer the Rotate animation will be applied to.
       */
-    var rotateAnimationLayer: js.UndefOr[IStyle] = js.native
+    var rotateAnimationLayer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * The layer the Scale animation will be applied to.
       */
-    var scaleAnimationLayer: js.UndefOr[IStyle] = js.native
+    var scaleAnimationLayer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * The layer, or div, that the translate animation will be applied to.
       */
-    var translateAnimationContainer: js.UndefOr[IStyle] = js.native
+    var translateAnimationContainer: js.UndefOr[IStyle] = js.undefined
   }
   object ICoachmarkStyles {
     

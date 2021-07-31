@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientBlogger.gapi.client.blogger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostList extends StObject {
   
   /** Etag of the response. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The list of Posts for this Blog. */
-  var items: js.UndefOr[js.Array[Post]] = js.native
+  var items: js.UndefOr[js.Array[Post]] = js.undefined
   
   /** The kind of this entity. Always blogger#postList. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Pagination token to fetch the next page, if one exists. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Pagination token to fetch the previous page, if one exists. */
-  var prevPageToken: js.UndefOr[String] = js.native
+  var prevPageToken: js.UndefOr[String] = js.undefined
 }
 object PostList {
   

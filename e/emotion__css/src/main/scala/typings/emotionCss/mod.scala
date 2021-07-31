@@ -5,15 +5,16 @@ import typings.emotionUtils.mod.SerializedStyles
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@emotion/css", JSImport.Default)
+  @JSImport("@emotion/css", JSImport.Namespace)
   @js.native
-  def default(args: Interpolation[js.UndefOr[scala.Nothing]]*): SerializedStyles = js.native
-  @JSImport("@emotion/css", JSImport.Default)
-  @js.native
-  def default(template: TemplateStringsArray, args: Interpolation[js.UndefOr[scala.Nothing]]*): SerializedStyles = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(args: Interpolation[Unit]*): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[SerializedStyles]
+  @scala.inline
+  def default(template: TemplateStringsArray, args: Interpolation[Unit]*): SerializedStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SerializedStyles]
 }

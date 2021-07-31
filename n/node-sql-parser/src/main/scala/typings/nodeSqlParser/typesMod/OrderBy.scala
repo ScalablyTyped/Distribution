@@ -4,15 +4,13 @@ import typings.nodeSqlParser.nodeSqlParserStrings.ASC
 import typings.nodeSqlParser.nodeSqlParserStrings.DESC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderBy extends StObject {
   
-  var expr: js.Any = js.native
+  var expr: js.Any
   
-  var `type`: ASC | DESC = js.native
+  var `type`: ASC | DESC
 }
 object OrderBy {
   

@@ -6,40 +6,38 @@ import typings.materialUiDatatables.mod.Column
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<material-ui-datatables.material-ui-datatables.DataTableProps> */
-  @js.native
   trait PartialDataTableProps extends StObject {
     
-    var columns: js.UndefOr[js.Array[Column]] = js.native
+    var columns: js.UndefOr[js.Array[Column]] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var deselectOnClickaway: js.UndefOr[Boolean] = js.native
+    var deselectOnClickaway: js.UndefOr[Boolean] = js.undefined
     
-    var enableSelectAll: js.UndefOr[Boolean] = js.native
+    var enableSelectAll: js.UndefOr[Boolean] = js.undefined
     
-    var filterHintText: js.UndefOr[String] = js.native
+    var filterHintText: js.UndefOr[String] = js.undefined
     
-    var filterValue: js.UndefOr[String] = js.native
+    var filterValue: js.UndefOr[String] = js.undefined
     
-    var fixedFooter: js.UndefOr[Boolean] = js.native
+    var fixedFooter: js.UndefOr[Boolean] = js.undefined
     
-    var fixedHeader: js.UndefOr[Boolean] = js.native
+    var fixedHeader: js.UndefOr[Boolean] = js.undefined
     
-    var footerToolbarStyle: js.UndefOr[CSSProperties] = js.native
+    var footerToolbarStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var headerToolbarMode: js.UndefOr[default | filter | String] = js.native
+    var headerToolbarMode: js.UndefOr[default | filter | String] = js.undefined
     
-    var height: js.UndefOr[js.Any] = js.native
+    var height: js.UndefOr[js.Any] = js.undefined
     
-    var multiSelectable: js.UndefOr[Boolean] = js.native
+    var multiSelectable: js.UndefOr[Boolean] = js.undefined
     
     var onCellClick: js.UndefOr[
         js.Function5[
@@ -50,7 +48,7 @@ object anon {
           /* event */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onCellDoubleClick: js.UndefOr[
         js.Function5[
@@ -61,65 +59,65 @@ object anon {
           /* event */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onFilterValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onFilterValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onNextPageClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+    var onNextPageClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
     
-    var onPreviousPageClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+    var onPreviousPageClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
     
-    var onRowSelection: js.UndefOr[js.Function1[/* selectedRows */ js.Any, Unit]] = js.native
+    var onRowSelection: js.UndefOr[js.Function1[/* selectedRows */ js.Any, Unit]] = js.undefined
     
-    var onRowSizeChange: js.UndefOr[js.Function2[/* index */ Double, /* value */ js.Any, Unit]] = js.native
+    var onRowSizeChange: js.UndefOr[js.Function2[/* index */ Double, /* value */ js.Any, Unit]] = js.undefined
     
-    var onSortOrderChange: js.UndefOr[js.Function2[/* key */ String, /* order */ String, Unit]] = js.native
+    var onSortOrderChange: js.UndefOr[js.Function2[/* key */ String, /* order */ String, Unit]] = js.undefined
     
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
-    var rowSize: js.UndefOr[Double] = js.native
+    var rowSize: js.UndefOr[Double] = js.undefined
     
-    var rowSizeLabel: js.UndefOr[String] = js.native
+    var rowSizeLabel: js.UndefOr[String] = js.undefined
     
-    var rowSizeList: js.UndefOr[js.Array[Double]] = js.native
+    var rowSizeList: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var showCheckboxes: js.UndefOr[Boolean] = js.native
+    var showCheckboxes: js.UndefOr[Boolean] = js.undefined
     
-    var showFooterToolbar: js.UndefOr[Boolean] = js.native
+    var showFooterToolbar: js.UndefOr[Boolean] = js.undefined
     
-    var showHeaderToolbar: js.UndefOr[Boolean] = js.native
+    var showHeaderToolbar: js.UndefOr[Boolean] = js.undefined
     
-    var showHeaderToolbarFilterIcon: js.UndefOr[Boolean] = js.native
+    var showHeaderToolbarFilterIcon: js.UndefOr[Boolean] = js.undefined
     
-    var showRowHover: js.UndefOr[Boolean] = js.native
+    var showRowHover: js.UndefOr[Boolean] = js.undefined
     
-    var showRowSizeControls: js.UndefOr[Boolean] = js.native
+    var showRowSizeControls: js.UndefOr[Boolean] = js.undefined
     
-    var stripedRows: js.UndefOr[Boolean] = js.native
+    var stripedRows: js.UndefOr[Boolean] = js.undefined
     
-    var summaryLabelTemplate: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* count */ Double, _]] = js.native
+    var summaryLabelTemplate: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* count */ Double, js.Any]] = js.undefined
     
-    var tableBodyStyle: js.UndefOr[CSSProperties] = js.native
+    var tableBodyStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var tableHeaderColumnStyle: js.UndefOr[CSSProperties] = js.native
+    var tableHeaderColumnStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var tableHeaderStyle: js.UndefOr[CSSProperties] = js.native
+    var tableHeaderStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var tableRowColumnStyle: js.UndefOr[CSSProperties] = js.native
+    var tableRowColumnStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var tableRowStyle: js.UndefOr[CSSProperties] = js.native
+    var tableRowStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var tableStyle: js.UndefOr[CSSProperties] = js.native
+    var tableStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var tableWrapperStyle: js.UndefOr[CSSProperties] = js.native
+    var tableWrapperStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var titleStyle: js.UndefOr[CSSProperties] = js.native
+    var titleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var toolbarIconRight: js.UndefOr[js.Any] = js.native
+    var toolbarIconRight: js.UndefOr[js.Any] = js.undefined
   }
   object PartialDataTableProps {
     
@@ -148,7 +146,7 @@ object anon {
       def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -344,7 +342,7 @@ object anon {
       def setStripedRowsUndefined: Self = StObject.set(x, "stripedRows", js.undefined)
       
       @scala.inline
-      def setSummaryLabelTemplate(value: (/* start */ Double, /* end */ Double, /* count */ Double) => _): Self = StObject.set(x, "summaryLabelTemplate", js.Any.fromFunction3(value))
+      def setSummaryLabelTemplate(value: (/* start */ Double, /* end */ Double, /* count */ Double) => js.Any): Self = StObject.set(x, "summaryLabelTemplate", js.Any.fromFunction3(value))
       
       @scala.inline
       def setSummaryLabelTemplateUndefined: Self = StObject.set(x, "summaryLabelTemplate", js.undefined)

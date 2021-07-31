@@ -2,68 +2,66 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoleDetail extends StObject {
   
-  var Arn: js.UndefOr[arnType] = js.native
+  var Arn: js.UndefOr[arnType] = js.undefined
   
   /**
     * The trust policy that grants permission to assume the role.
     */
-  var AssumeRolePolicyDocument: js.UndefOr[policyDocumentType] = js.native
+  var AssumeRolePolicyDocument: js.UndefOr[policyDocumentType] = js.undefined
   
   /**
     * A list of managed policies attached to the role. These policies are the role's access (permissions) policies.
     */
-  var AttachedManagedPolicies: js.UndefOr[attachedPoliciesListType] = js.native
+  var AttachedManagedPolicies: js.UndefOr[attachedPoliciesListType] = js.undefined
   
   /**
     * The date and time, in ISO 8601 date-time format, when the role was created.
     */
-  var CreateDate: js.UndefOr[dateType] = js.native
+  var CreateDate: js.UndefOr[dateType] = js.undefined
   
   /**
     * A list of instance profiles that contain this role.
     */
-  var InstanceProfileList: js.UndefOr[instanceProfileListType] = js.native
+  var InstanceProfileList: js.UndefOr[instanceProfileListType] = js.undefined
   
   /**
     * The path to the role. For more information about paths, see IAM Identifiers in the IAM User Guide.
     */
-  var Path: js.UndefOr[pathType] = js.native
+  var Path: js.UndefOr[pathType] = js.undefined
   
   /**
     * The ARN of the policy used to set the permissions boundary for the role. For more information about permissions boundaries, see Permissions Boundaries for IAM Identities  in the IAM User Guide.
     */
-  var PermissionsBoundary: js.UndefOr[AttachedPermissionsBoundary] = js.native
+  var PermissionsBoundary: js.UndefOr[AttachedPermissionsBoundary] = js.undefined
   
   /**
     * The stable and unique string identifying the role. For more information about IDs, see IAM Identifiers in the IAM User Guide.
     */
-  var RoleId: js.UndefOr[idType] = js.native
+  var RoleId: js.UndefOr[idType] = js.undefined
   
   /**
     * Contains information about the last time that an IAM role was used. This includes the date and time and the Region in which the role was last used. Activity is only reported for the trailing 400 days. This period can be shorter if your Region began supporting these features within the last year. The role might have been used more than 400 days ago. For more information, see Regions Where Data Is Tracked in the IAM User Guide.
     */
-  var RoleLastUsed: js.UndefOr[typings.awsSdk.iamMod.RoleLastUsed] = js.native
+  var RoleLastUsed: js.UndefOr[typings.awsSdk.iamMod.RoleLastUsed] = js.undefined
   
   /**
     * The friendly name that identifies the role.
     */
-  var RoleName: js.UndefOr[roleNameType] = js.native
+  var RoleName: js.UndefOr[roleNameType] = js.undefined
   
   /**
     * A list of inline policies embedded in the role. These policies are the role's access (permissions) policies.
     */
-  var RolePolicyList: js.UndefOr[policyDetailListType] = js.native
+  var RolePolicyList: js.UndefOr[policyDetailListType] = js.undefined
   
   /**
     * A list of tags that are attached to the specified role. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
     */
-  var Tags: js.UndefOr[tagListType] = js.native
+  var Tags: js.UndefOr[tagListType] = js.undefined
 }
 object RoleDetail {
   

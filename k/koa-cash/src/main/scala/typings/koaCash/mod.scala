@@ -6,33 +6,33 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("koa-cash", JSImport.Namespace)
-  @js.native
-  def apply(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-cash", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(opts: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
+  @JSImport("koa-cash", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * If a truthy value is passed, then compression will be enabled.
       * @default false
       */
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Get a value from a store. Must return a Promise, which returns the cache's value, if any.
       * @param key Cache key
       * @param maxAge Max age (in milliseconds) for the cache
       */
-    def get(key: String, maxAge: Double): js.Promise[js.UndefOr[_]] = js.native
+    def get(key: String, maxAge: Double): js.Promise[js.UndefOr[js.Any]]
     
     /**
       * A hashing function. By default, it caches based on the URL.
@@ -43,12 +43,12 @@ object mod {
       * }
       * ```
       */
-    var hash: js.UndefOr[js.Function1[/* ctx */ Context, String]] = js.native
+    var hash: js.UndefOr[js.Function1[/* ctx */ Context, String]] = js.undefined
     
     /**
       * Default max age (in milliseconds) for the cache if not set via `await ctx.cashed(maxAge)`.
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * Set a value to a store. Must return a Promise.\
@@ -58,26 +58,26 @@ object mod {
       * @param value Cached value
       * @param maxAge Max age (in milliseconds) for the cache
       */
-    def set(key: String, value: js.Any, maxAge: Double): js.Promise[Unit] = js.native
+    def set(key: String, value: js.Any, maxAge: Double): js.Promise[Unit]
     
     /**
       * If a truthy value is passed, then X-Cached-Response header will be set as HIT when response
       * is served from the cache.
       * @default false
       */
-    var setCachedHeader: js.UndefOr[Boolean] = js.native
+    var setCachedHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Minimum byte size to compress response bodies. Default 1kb.
       * @default 1000
       */
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
     @scala.inline
     def apply(
-      get: (String, Double) => js.Promise[js.UndefOr[_]],
+      get: (String, Double) => js.Promise[js.UndefOr[js.Any]],
       set: (String, js.Any, Double) => js.Promise[Unit]
     ): Options = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), set = js.Any.fromFunction3(set))
@@ -94,7 +94,7 @@ object mod {
       def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
       @scala.inline
-      def setGet(value: (String, Double) => js.Promise[js.UndefOr[_]]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      def setGet(value: (String, Double) => js.Promise[js.UndefOr[js.Any]]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
       @scala.inline
       def setHash(value: /* ctx */ Context => String): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))

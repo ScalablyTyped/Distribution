@@ -4,7 +4,6 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Phaser.GameObjects.GameObject")
 @js.native
 class GameObject protected ()
-  extends typings.phaser.Phaser.GameObjects.GameObject {
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.GameObject {
   /**
     * 
     * @param scene The Scene to which this Game Object belongs.

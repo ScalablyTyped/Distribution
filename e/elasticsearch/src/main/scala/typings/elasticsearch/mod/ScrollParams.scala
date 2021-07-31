@@ -2,15 +2,15 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScrollParams extends GenericParams {
+trait ScrollParams
+  extends StObject
+     with GenericParams {
   
-  var scroll: TimeSpan = js.native
+  var scroll: TimeSpan
   
-  var scrollId: String = js.native
+  var scrollId: String
 }
 object ScrollParams {
   

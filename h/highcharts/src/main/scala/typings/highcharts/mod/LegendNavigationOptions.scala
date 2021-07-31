@@ -3,17 +3,15 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendNavigationOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color for the active up or
     * down arrow in the legend page navigation.
     */
-  var activeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var activeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) How to animate the pages when
@@ -21,13 +19,13 @@ trait LegendNavigationOptions extends StObject {
     * given in the `chart.animation` option. Additional options can be given as
     * an object containing values for easing and duration.
     */
-  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel size of the up and
     * down arrows in the legend paging navigation.
     */
-  var arrowSize: js.UndefOr[Double] = js.native
+  var arrowSize: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to enable the legend
@@ -38,19 +36,19 @@ trait LegendNavigationOptions extends StObject {
     * chart height to make room for the legend, optionally in exported charts
     * only.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the inactive up or
     * down arrow in the legend page navigation. .
     */
-  var inactiveColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var inactiveColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Text styles for the legend page
     * navigation.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
 }
 object LegendNavigationOptions {
   

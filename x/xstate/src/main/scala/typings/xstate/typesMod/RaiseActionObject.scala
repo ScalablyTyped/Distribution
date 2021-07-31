@@ -3,15 +3,13 @@ package typings.xstate.typesMod
 import typings.xstate.typesMod.ActionTypes.Raise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaiseActionObject[TEvent /* <: EventObject */] extends StObject {
   
-  var _event: typings.xstate.typesMod.SCXML.Event[TEvent] = js.native
+  var _event: typings.xstate.typesMod.SCXML.Event[TEvent]
   
-  var `type`: Raise = js.native
+  var `type`: Raise
 }
 object RaiseActionObject {
   
@@ -23,7 +21,7 @@ object RaiseActionObject {
   }
   
   @scala.inline
-  implicit class RaiseActionObjectMutableBuilder[Self <: RaiseActionObject[_], TEvent /* <: EventObject */] (val x: Self with RaiseActionObject[TEvent]) extends AnyVal {
+  implicit class RaiseActionObjectMutableBuilder[Self <: RaiseActionObject[?], TEvent /* <: EventObject */] (val x: Self & RaiseActionObject[TEvent]) extends AnyVal {
     
     @scala.inline
     def setType(value: Raise): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

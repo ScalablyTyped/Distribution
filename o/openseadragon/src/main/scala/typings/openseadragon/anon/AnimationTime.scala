@@ -2,19 +2,17 @@ package typings.openseadragon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationTime extends StObject {
   
-  var animationTime: Double = js.native
+  var animationTime: Double
   
-  var exponential: js.UndefOr[Boolean] = js.native
+  var exponential: js.UndefOr[Boolean] = js.undefined
   
-  var initial: js.UndefOr[Double] = js.native
+  var initial: js.UndefOr[Double] = js.undefined
   
-  var springStiffness: Double = js.native
+  var springStiffness: Double
 }
 object AnimationTime {
   

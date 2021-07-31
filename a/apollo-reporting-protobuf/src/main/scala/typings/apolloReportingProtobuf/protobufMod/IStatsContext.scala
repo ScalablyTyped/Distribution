@@ -2,20 +2,18 @@ package typings.apolloReportingProtobuf.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStatsContext extends StObject {
   
   /** StatsContext clientName */
-  var clientName: js.UndefOr[String | Null] = js.native
+  var clientName: js.UndefOr[String | Null] = js.undefined
   
   /** StatsContext clientReferenceId */
-  var clientReferenceId: js.UndefOr[String | Null] = js.native
+  var clientReferenceId: js.UndefOr[String | Null] = js.undefined
   
   /** StatsContext clientVersion */
-  var clientVersion: js.UndefOr[String | Null] = js.native
+  var clientVersion: js.UndefOr[String | Null] = js.undefined
 }
 object IStatsContext {
   

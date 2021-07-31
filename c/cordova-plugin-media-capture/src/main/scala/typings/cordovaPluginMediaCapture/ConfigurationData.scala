@@ -2,21 +2,19 @@ package typings.cordovaPluginMediaCapture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encapsulates a set of media capture parameters that a device supports. */
-@js.native
 trait ConfigurationData extends StObject {
   
   /** The height of the image or video in pixels. The value is zero for sound clips. */
-  var height: Double = js.native
+  var height: Double
   
   /** The ASCII-encoded lowercase string representing the media type. */
-  var `type`: String = js.native
+  var `type`: String
   
   /** The width of the image or video in pixels. The value is zero for sound clips. */
-  var width: Double = js.native
+  var width: Double
 }
 object ConfigurationData {
   

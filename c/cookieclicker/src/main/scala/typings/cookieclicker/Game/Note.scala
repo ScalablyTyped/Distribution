@@ -4,29 +4,27 @@ import typings.cookieclicker.cookieclickerStrings._empty
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Note extends StObject {
   
-  var date: Double = js.native
+  var date: Double
   
-  var desc: String = js.native
+  var desc: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var l: HTMLDivElement | PseudoNull = js.native
+  var l: HTMLDivElement | PseudoNull
   
-  var life: Double = js.native
+  var life: Double
   
-  var pic: Icon | _empty = js.native
+  var pic: Icon | _empty
   
-  var quick: Double = js.native
+  var quick: Double
   
-  var title: String = js.native
+  var title: String
 }
 object Note {
   

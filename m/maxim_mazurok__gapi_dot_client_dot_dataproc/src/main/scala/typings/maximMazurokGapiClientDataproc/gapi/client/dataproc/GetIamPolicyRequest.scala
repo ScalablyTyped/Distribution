@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIamPolicyRequest extends StObject {
   
   /** OPTIONAL: A GetPolicyOptions object for specifying options to GetIamPolicy. */
-  var options: js.UndefOr[GetPolicyOptions] = js.native
+  var options: js.UndefOr[GetPolicyOptions] = js.undefined
 }
 object GetIamPolicyRequest {
   

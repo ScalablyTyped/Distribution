@@ -2,10 +2,8 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alwaysupdate extends StObject {
   
   /**
@@ -15,9 +13,9 @@ trait Alwaysupdate extends StObject {
     * the required platform version is respected and the app update is
     * deferred until the underlying platform becomes compliant.
     */
-  var always_update: js.UndefOr[Boolean] = js.native
+  var always_update: js.UndefOr[Boolean] = js.undefined
   
-  var required_platform_version: js.UndefOr[String] = js.native
+  var required_platform_version: js.UndefOr[String] = js.undefined
 }
 object Alwaysupdate {
   

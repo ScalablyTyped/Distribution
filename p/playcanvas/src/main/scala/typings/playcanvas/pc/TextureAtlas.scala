@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.playcanvas.anon.Border
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,7 +30,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property frames - Contains frames which define portions of the texture atlas.
   */
 @js.native
-trait TextureAtlas extends EventHandler {
+trait TextureAtlas
+  extends StObject
+     with EventHandler {
   
   /**
     * Free up the underlying texture owned by the atlas.

@@ -2,21 +2,19 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpRetryPolicy extends StObject {
   
   /** Specifies the allowed number retries. This number must be > 0. If not specified, defaults to 1. */
-  var numRetries: js.UndefOr[Double] = js.native
+  var numRetries: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies a non-zero timeout per retry attempt.
     * If not specified, will use the timeout set in HttpRouteAction. If timeout in HttpRouteAction is not set, will use the largest timeout among all backend services associated with the
     * route.
     */
-  var perTryTimeout: js.UndefOr[Duration] = js.native
+  var perTryTimeout: js.UndefOr[Duration] = js.undefined
   
   /**
     * Specfies one or more conditions when this retry rule applies. Valid values are:
@@ -32,7 +30,7 @@ trait HttpRetryPolicy extends StObject {
     * - resource-exhausted: Loadbalancer will retry if the gRPC status code in the response header is set to resource-exhausted
     * - unavailable: Loadbalancer will retry if the gRPC status code in the response header is set to unavailable
     */
-  var retryConditions: js.UndefOr[js.Array[String]] = js.native
+  var retryConditions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object HttpRetryPolicy {
   

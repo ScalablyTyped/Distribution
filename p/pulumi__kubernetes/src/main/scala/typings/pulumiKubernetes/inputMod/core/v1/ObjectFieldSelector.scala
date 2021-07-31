@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ObjectFieldSelector selects an APIVersioned field of an object.
   */
-@js.native
 trait ObjectFieldSelector extends StObject {
   
   /**
     * Version of the schema the FieldPath is written in terms of, defaults to "v1".
     */
-  var apiVersion: js.UndefOr[Input[String]] = js.native
+  var apiVersion: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Path of the field to select in the specified API version.
     */
-  var fieldPath: Input[String] = js.native
+  var fieldPath: Input[String]
 }
 object ObjectFieldSelector {
   

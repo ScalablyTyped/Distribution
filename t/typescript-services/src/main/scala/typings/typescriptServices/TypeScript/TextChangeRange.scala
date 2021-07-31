@@ -2,23 +2,21 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextChangeRange extends StObject {
   
-  var _newLength: js.Any = js.native
+  var _newLength: js.Any
   
-  var _span: js.Any = js.native
+  var _span: js.Any
   
-  def isUnchanged(): Boolean = js.native
+  def isUnchanged(): Boolean
   
-  def newLength(): Double = js.native
+  def newLength(): Double
   
-  def newSpan(): TextSpan = js.native
+  def newSpan(): TextSpan
   
-  def span(): TextSpan = js.native
+  def span(): TextSpan
 }
 object TextChangeRange {
   

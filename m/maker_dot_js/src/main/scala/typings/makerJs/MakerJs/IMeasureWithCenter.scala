@@ -2,19 +2,19 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A measurement of extents, with a center point.
   */
-@js.native
-trait IMeasureWithCenter extends IMeasure {
+trait IMeasureWithCenter
+  extends StObject
+     with IMeasure {
   
   /**
     * The center point of the rectangle containing the item being measured.
     */
-  var center: IPoint = js.native
+  var center: IPoint
 }
 object IMeasureWithCenter {
   

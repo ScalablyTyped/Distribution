@@ -66,7 +66,6 @@ import typings.semanticUiAccordion.semanticUiAccordionStrings.toggle
 import typings.semanticUiAccordion.semanticUiAccordionStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -92,48 +91,50 @@ object SemanticUI {
       * Refreshes all cached selectors and data
       */
     def apply(behavior: refresh): JQuery = js.native
-    def apply(behavior: setting, name: animateChildren, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: animateChildren, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-    def apply(behavior: setting, name: closeNested, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: animateChildren, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
+    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
     def apply(behavior: setting, name: closeNested, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: collapsible, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: closeNested, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: collapsible, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: collapsible, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: easing, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
     def apply(behavior: setting, name: easing, value: String): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+    def apply(behavior: setting, name: easing, value: Unit): String = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
     def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: exclusive, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: exclusive, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: exclusive, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: observeChanges, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: observeChanges, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onClose, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onChange, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onClose, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onClosing, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onClose, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onClosing, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onOpening, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onClosing, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onOpening, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onOpen, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onOpening, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onOpen, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: onOpen, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: on, value: String): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: on, value: Unit): String = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
+    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: AccordionSettings): JQuery = js.native
     /**
       * Toggles accordion content at index
@@ -147,18 +148,17 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'active'
           */
-        var active: String = js.native
+        var active: String
         
         /**
           * @default 'animating'
           */
-        var animating: String = js.native
+        var animating: String
       }
       object Impl {
         
@@ -179,20 +179,19 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactive | PickImplanimating) with PartialPickImplkeyofImplActive
+      type Param = (PickImplactive | PickImplanimating) & PartialPickImplkeyofImplActive
     }
     type ClassNameSettings = Param
     
     /* Inlined semantic-ui-accordion.SemanticUI.Accordion.ErrorSettings.Param */
-    @js.native
     trait ErrorSettings extends StObject {
       
-      var method: String with js.UndefOr[String] = js.native
+      var method: String & js.UndefOr[String]
     }
     object ErrorSettings {
       
       @scala.inline
-      def apply(method: String with js.UndefOr[String]): ErrorSettings = {
+      def apply(method: String & js.UndefOr[String]): ErrorSettings = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
@@ -201,16 +200,15 @@ object SemanticUI {
       implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setMethod(value: String with js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'The method you called is not defined.'
           */
-        var method: String = js.native
+        var method: String
       }
       object Impl {
         
@@ -229,15 +227,14 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-accordion.SemanticUI.Accordion.ErrorSettings._Impl, 'method'> & std.Partial<std.Pick<semantic-ui-accordion.SemanticUI.Accordion.ErrorSettings._Impl, keyof semantic-ui-accordion.SemanticUI.Accordion.ErrorSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        var method: String with js.UndefOr[String] = js.native
+        var method: String & js.UndefOr[String]
       }
       object Param {
         
         @scala.inline
-        def apply(method: String with js.UndefOr[String]): typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param = {
+        def apply(method: String & js.UndefOr[String]): typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param]
         }
@@ -246,35 +243,34 @@ object SemanticUI {
         implicit class ParamMutableBuilder[Self <: typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setMethod(value: String with js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
     }
     
     object SelectorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.accordion'
           */
-        var accordion: String = js.native
+        var accordion: String
         
         /**
           * @default '.content'
           */
-        var content: String = js.native
+        var content: String
         
         /**
           * @default '.title'
           */
-        var title: String = js.native
+        var title: String
         
         /**
           * @default '.title'
           */
-        var trigger: String = js.native
+        var trigger: String
       }
       object Impl {
         
@@ -301,14 +297,13 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplaccordion | PickImpltitle | PickImpltrigger | PickImplcontent) with PartialPickImplkeyofImplAccordion
+      type Param = (PickImplaccordion | PickImpltitle | PickImpltrigger | PickImplcontent) & PartialPickImplkeyofImplAccordion
     }
     type SelectorSettings = typings.semanticUiAccordion.SemanticUI.Accordion.SelectorSettings.Param
   }
   
   object AccordionSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
@@ -316,38 +311,38 @@ object SemanticUI {
         *
         * @default true
         */
-      var animateChildren: Boolean = js.native
+      var animateChildren: Boolean
       
       /**
         * Class names used to determine element state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Close open nested accordion content when an element closes
         *
         * @default true
         */
-      var closeNested: Boolean = js.native
+      var closeNested: Boolean
       
       /**
         * Allow active sections to collapse
         *
         * @default true
         */
-      var collapsible: Boolean = js.native
+      var collapsible: Boolean
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       /**
         * Duration in ms of opening animation
         *
         * @default 500
         */
-      var duration: Double = js.native
+      var duration: Double
       
       /**
         * Easing of opening animation. EaseInOutQuint is included with accordion, for additional options you must include easing equations.
@@ -355,11 +350,11 @@ object SemanticUI {
         * @default 'easeInOutQuint'
         * @see {@link http://gsgd.co.uk/sandbox/jquery/easing/}
         */
-      var easing: String = js.native
+      var easing: String
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       // region Behavior
       /**
@@ -367,14 +362,14 @@ object SemanticUI {
         *
         * @default true
         */
-      var exclusive: Boolean = js.native
+      var exclusive: Boolean
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -382,70 +377,70 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * whether accordion should automatically refresh on DOM insertion
         *
         * @default true
         */
-      var observeChanges: Boolean = js.native
+      var observeChanges: Boolean
       
       /**
         * Event on title that will cause accordion to open
         *
         * @default 'click'
         */
-      var on: String = js.native
+      var on: String
       
       /**
         * Callback on element open or close
         */
-      def onChange(): Unit = js.native
+      def onChange(): Unit
       
       /**
         * Callback after element is closed
         */
-      def onClose(): Unit = js.native
+      def onClose(): Unit
       
       /**
         * Callback before element closes
         */
-      def onClosing(): Unit = js.native
+      def onClosing(): Unit
       
       /**
         * Callback after element is open
         */
-      def onOpen(): Unit = js.native
+      def onOpen(): Unit
       
       // endregion
       // region Callbacks
       /**
         * Callback before element opens
         */
-      def onOpening(): Unit = js.native
+      def onOpening(): Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       // endregion
       // region DOM Settings
       /**
         * Selectors used to find parts of a module
         */
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -549,7 +544,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplexclusive | PickImplon | PickImplanimateChildren | PickImplcloseNested | PickImplcollapsible | PickImplduration | PickImpleasing | PickImplobserveChanges | PickImplonOpening | PickImplonOpen | PickImplonClosing | PickImplonClose | PickImplonChange | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplexclusive | PickImplon | PickImplanimateChildren | PickImplcloseNested | PickImplcollapsible | PickImplduration | PickImpleasing | PickImplobserveChanges | PickImplonOpening | PickImplonOpen | PickImplonClosing | PickImplonClose | PickImplonChange | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/accordion.html#/settings}

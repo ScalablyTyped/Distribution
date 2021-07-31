@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DatabaseOwner...
   */
-@js.native
 trait IDatabaseOwner extends StObject {
   
   /**
     * Name of the owner
     */
-  var qName: String = js.native
+  var qName: String
 }
 object IDatabaseOwner {
   

@@ -4,7 +4,6 @@ import typings.phaser.spine.Skeleton
 import typings.phaser.spine.VertexEffect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,14 +12,9 @@ trait SkeletonRenderer extends StObject {
   var clipper: js.Any = js.native
   
   def draw(batcher: PolygonBatcher, skeleton: Skeleton): Unit = js.native
-  def draw(
-    batcher: PolygonBatcher,
-    skeleton: Skeleton,
-    slotRangeStart: js.UndefOr[scala.Nothing],
-    slotRangeEnd: Double
-  ): Unit = js.native
   def draw(batcher: PolygonBatcher, skeleton: Skeleton, slotRangeStart: Double): Unit = js.native
   def draw(batcher: PolygonBatcher, skeleton: Skeleton, slotRangeStart: Double, slotRangeEnd: Double): Unit = js.native
+  def draw(batcher: PolygonBatcher, skeleton: Skeleton, slotRangeStart: Unit, slotRangeEnd: Double): Unit = js.native
   
   var premultipliedAlpha: Boolean = js.native
   

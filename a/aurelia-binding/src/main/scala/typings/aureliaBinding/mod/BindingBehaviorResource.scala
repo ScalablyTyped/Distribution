@@ -3,7 +3,6 @@ package typings.aureliaBinding.mod
 import typings.aureliaDependencyInjection.mod.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "BindingBehaviorResource")
@@ -18,7 +17,10 @@ class BindingBehaviorResource protected () extends StObject {
 /* static members */
 object BindingBehaviorResource {
   
-  @JSImport("aurelia-binding", "BindingBehaviorResource.convention")
+  @JSImport("aurelia-binding", "BindingBehaviorResource")
   @js.native
-  def convention(name: String): BindingBehaviorResource = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def convention(name: String): BindingBehaviorResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[BindingBehaviorResource]
 }

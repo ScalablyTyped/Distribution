@@ -2,21 +2,19 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The type of tag on which to filter.
     */
-  var key: TagKey = js.native
+  var key: TagKey
   
   /**
     * A value for a tag key on which to filter.
     */
-  var value: TagValue = js.native
+  var value: TagValue
 }
 object Tag {
   

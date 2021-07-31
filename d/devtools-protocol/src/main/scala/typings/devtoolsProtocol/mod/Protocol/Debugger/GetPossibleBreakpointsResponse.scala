@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPossibleBreakpointsResponse extends StObject {
   
   /**
     * List of the possible breakpoint locations.
     */
-  var locations: js.Array[BreakLocation] = js.native
+  var locations: js.Array[BreakLocation]
 }
 object GetPossibleBreakpointsResponse {
   

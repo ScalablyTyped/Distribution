@@ -2,39 +2,37 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ReplicationControllerCondition describes the state of a replication controller at a certain point.
   */
-@js.native
 trait ReplicationControllerCondition extends StObject {
   
   /**
     * The last time the condition transitioned from one status to another.
     */
-  var lastTransitionTime: String = js.native
+  var lastTransitionTime: String
   
   /**
     * A human readable message indicating details about the transition.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The reason for the condition's last transition.
     */
-  var reason: String = js.native
+  var reason: String
   
   /**
     * Status of the condition, one of True, False, Unknown.
     */
-  var status: String = js.native
+  var status: String
   
   /**
     * Type of replication controller condition.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ReplicationControllerCondition {
   

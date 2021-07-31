@@ -10,9 +10,9 @@ Get video property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-video |
 | Keywords           | metascraper, video |
-| # releases         | 85 |
-| # dependents       | 6 |
-| # downloads        | 122562 |
+| # releases         | 105 |
+| # dependents       | 7 |
+| # downloads        | 115215 |
 | # stars            | 0 |
 
 ## Links

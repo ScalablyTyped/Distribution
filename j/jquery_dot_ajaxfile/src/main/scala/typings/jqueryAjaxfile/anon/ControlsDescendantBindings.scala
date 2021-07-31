@@ -2,13 +2,11 @@ package typings.jqueryAjaxfile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControlsDescendantBindings extends StObject {
   
-  var controlsDescendantBindings: Boolean = js.native
+  var controlsDescendantBindings: Boolean
 }
 object ControlsDescendantBindings {
   

@@ -7,7 +7,6 @@ import typings.storybookCore.anon.DecorateStory
 import typings.storybookCore.typesMod.RenderStoryFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewMod {
@@ -89,8 +88,7 @@ object previewMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/core/dist/client/preview", "default.toId")
-    @js.native
-    def toId(kind: String, name: String): String = js.native
+    @scala.inline
+    def toId(kind: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toId")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

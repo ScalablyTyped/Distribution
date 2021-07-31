@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldMetadata extends StObject {
   
   /** Deidentify action for one field. */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * List of paths to FHIR fields to be redacted. Each path is a period-separated list where each component is either a field name or FHIR type name, for example: Patient, HumanName. For
@@ -17,7 +15,7 @@ trait FieldMetadata extends StObject {
     * types are: AdministrativeGenderCode, Code, Date, DateTime, Decimal, HumanName, Id, LanguageCode, Markdown, Oid, String, Uri, Uuid, Xhtml. Base64Binary is also supported, but may
     * only be kept as-is or have all the content removed.
     */
-  var paths: js.UndefOr[js.Array[String]] = js.native
+  var paths: js.UndefOr[js.Array[String]] = js.undefined
 }
 object FieldMetadata {
   

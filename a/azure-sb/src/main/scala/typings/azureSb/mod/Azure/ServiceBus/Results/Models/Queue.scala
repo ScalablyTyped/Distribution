@@ -5,25 +5,25 @@ import typings.azureSb.mod.Azure.ServiceBus.DateString
 import typings.azureSb.mod.Azure.ServiceBus.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Queue extends ExtendedBase {
+trait Queue
+  extends StObject
+     with ExtendedBase {
   
-  var DeadLetteringOnMessageExpiration: String = js.native
+  var DeadLetteringOnMessageExpiration: String
   
-  var LockDuration: Duration = js.native
+  var LockDuration: Duration
   
-  var MaxDeliveryCount: String = js.native
+  var MaxDeliveryCount: String
   
-  var MessageCount: String = js.native
+  var MessageCount: String
   
-  var QueueName: String = js.native
+  var QueueName: String
   
-  var RequiresSession: String = js.native
+  var RequiresSession: String
   
-  var SupportOrdering: String = js.native
+  var SupportOrdering: String
 }
 object Queue {
   

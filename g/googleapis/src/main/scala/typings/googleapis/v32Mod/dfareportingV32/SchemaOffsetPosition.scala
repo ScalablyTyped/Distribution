@@ -2,24 +2,22 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Offset Position.
   */
-@js.native
 trait SchemaOffsetPosition extends StObject {
   
   /**
     * Offset distance from left side of an asset or a window.
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     * Offset distance from top side of an asset or a window.
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object SchemaOffsetPosition {
   

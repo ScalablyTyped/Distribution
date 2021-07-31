@@ -7,39 +7,39 @@ import typings.pulumiAws.outputMod.GetAmiProductCode
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getAmiMod {
   
-  @JSImport("@pulumi/aws/getAmi", "getAmi")
+  @JSImport("@pulumi/aws/getAmi", JSImport.Namespace)
   @js.native
-  def getAmi(args: GetAmiArgs): js.Promise[GetAmiResult] = js.native
-  @JSImport("@pulumi/aws/getAmi", "getAmi")
-  @js.native
-  def getAmi(args: GetAmiArgs, opts: InvokeOptions): js.Promise[GetAmiResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAmi(args: GetAmiArgs): js.Promise[GetAmiResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAmi")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAmiResult]]
+  @scala.inline
+  def getAmi(args: GetAmiArgs, opts: InvokeOptions): js.Promise[GetAmiResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAmi")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAmiResult]]
+  
   trait GetAmiArgs extends StObject {
     
     /**
       * Limit search to users with *explicit* launch permission on
       * the image. Valid items are the numeric account ID or `self`.
       */
-    val executableUsers: js.UndefOr[js.Array[String]] = js.native
+    val executableUsers: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * One or more name/value pairs to filter off of. There are
       * several valid keys, for a full reference, check out
       * [describe-images in the AWS CLI reference][1].
       */
-    val filters: js.UndefOr[js.Array[GetAmiFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetAmiFilter]] = js.undefined
     
     /**
       * If more than one result is returned, use the most
       * recent AMI.
       */
-    val mostRecent: js.UndefOr[Boolean] = js.native
+    val mostRecent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A regex string to apply to the AMI list returned
@@ -48,19 +48,19 @@ object getAmiMod {
       * impact if the result is large. It is recommended to combine this with other
       * options to narrow down the list AWS returns.
       */
-    val nameRegex: js.UndefOr[String] = js.native
+    val nameRegex: js.UndefOr[String] = js.undefined
     
     /**
       * List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
       */
-    val owners: js.Array[String] = js.native
+    val owners: js.Array[String]
     
     /**
       * Any tags assigned to the image.
       * * `tags.#.key` - The key name of the tag.
       * * `tags.#.value` - The value of the tag.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetAmiArgs {
     
@@ -117,18 +117,17 @@ object getAmiMod {
     }
   }
   
-  @js.native
   trait GetAmiResult extends StObject {
     
     /**
       * The OS architecture of the AMI (ie: `i386` or `x8664`).
       */
-    val architecture: String = js.native
+    val architecture: String
     
     /**
       * The ARN of the AMI.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The block device mappings of the AMI.
@@ -147,145 +146,145 @@ object getAmiMod {
       * * `block_device_mappings.#.virtual_name` - The virtual device name (for
       * instance stores).
       */
-    val blockDeviceMappings: js.Array[GetAmiBlockDeviceMapping] = js.native
+    val blockDeviceMappings: js.Array[GetAmiBlockDeviceMapping]
     
     /**
       * The date and time the image was created.
       */
-    val creationDate: String = js.native
+    val creationDate: String
     
     /**
       * The description of the AMI that was provided during image
       * creation.
       */
-    val description: String = js.native
+    val description: String
     
-    val executableUsers: js.UndefOr[js.Array[String]] = js.native
+    val executableUsers: js.UndefOr[js.Array[String]] = js.undefined
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetAmiFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetAmiFilter]] = js.undefined
     
     /**
       * The hypervisor type of the image.
       */
-    val hypervisor: String = js.native
+    val hypervisor: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ID of the AMI. Should be the same as the resource `id`.
       */
-    val imageId: String = js.native
+    val imageId: String
     
     /**
       * The location of the AMI.
       */
-    val imageLocation: String = js.native
+    val imageLocation: String
     
     /**
       * The AWS account alias (for example, `amazon`, `self`) or
       * the AWS account ID of the AMI owner.
       */
-    val imageOwnerAlias: String = js.native
+    val imageOwnerAlias: String
     
     /**
       * The type of image.
       */
-    val imageType: String = js.native
+    val imageType: String
     
     /**
       * The kernel associated with the image, if any. Only applicable
       * for machine images.
       */
-    val kernelId: String = js.native
+    val kernelId: String
     
-    val mostRecent: js.UndefOr[Boolean] = js.native
+    val mostRecent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of the AMI that was provided during image creation.
       */
-    val name: String = js.native
+    val name: String
     
-    val nameRegex: js.UndefOr[String] = js.native
+    val nameRegex: js.UndefOr[String] = js.undefined
     
     /**
       * The AWS account ID of the image owner.
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
-    val owners: js.Array[String] = js.native
+    val owners: js.Array[String]
     
     /**
       * The value is Windows for `Windows` AMIs; otherwise blank.
       */
-    val platform: String = js.native
+    val platform: String
     
     /**
       * Any product codes associated with the AMI.
       * * `product_codes.#.product_code_id` - The product code.
       * * `product_codes.#.product_code_type` - The type of product code.
       */
-    val productCodes: js.Array[GetAmiProductCode] = js.native
+    val productCodes: js.Array[GetAmiProductCode]
     
     /**
       * `true` if the image has public launch permissions.
       */
-    val public: Boolean = js.native
+    val public: Boolean
     
     /**
       * The RAM disk associated with the image, if any. Only applicable
       * for machine images.
       */
-    val ramdiskId: String = js.native
+    val ramdiskId: String
     
     /**
       * The device name of the root device.
       */
-    val rootDeviceName: String = js.native
+    val rootDeviceName: String
     
     /**
       * The type of root device (ie: `ebs` or `instance-store`).
       */
-    val rootDeviceType: String = js.native
+    val rootDeviceType: String
     
     /**
       * The snapshot id associated with the root device, if any
       * (only applies to `ebs` root devices).
       */
-    val rootSnapshotId: String = js.native
+    val rootSnapshotId: String
     
     /**
       * Specifies whether enhanced networking is enabled.
       */
-    val sriovNetSupport: String = js.native
+    val sriovNetSupport: String
     
     /**
       * The current state of the AMI. If the state is `available`, the image
       * is successfully registered and can be used to launch an instance.
       */
-    val state: String = js.native
+    val state: String
     
     /**
       * Describes a state change. Fields are `UNSET` if not available.
       * * `state_reason.code` - The reason code for the state change.
       * * `state_reason.message` - The message for the state change.
       */
-    val stateReason: StringDictionary[String] = js.native
+    val stateReason: StringDictionary[String]
     
     /**
       * Any tags assigned to the image.
       * * `tags.#.key` - The key name of the tag.
       * * `tags.#.value` - The value of the tag.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The type of virtualization of the AMI (ie: `hvm` or
       * `paravirtual`).
       */
-    val virtualizationType: String = js.native
+    val virtualizationType: String
   }
   object GetAmiResult {
     

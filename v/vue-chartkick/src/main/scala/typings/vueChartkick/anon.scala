@@ -2,15 +2,13 @@ package typings.vueChartkick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Adapter extends StObject {
     
-    var adapter: js.Any = js.native
+    var adapter: js.Any
   }
   object Adapter {
     

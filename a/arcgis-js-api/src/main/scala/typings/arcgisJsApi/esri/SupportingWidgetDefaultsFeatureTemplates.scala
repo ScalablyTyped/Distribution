@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SupportingWidgetDefaultsFeatureTemplates extends Object {
+trait SupportingWidgetDefaultsFeatureTemplates
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether the [templates filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterEnabled) displays.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var filterEnabled: js.UndefOr[Boolean] = js.native
+  var filterEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Aids in managing various template items and how they display within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var groupBy: js.UndefOr[String | GroupByFunction] = js.native
+  var groupBy: js.UndefOr[String | GroupByFunction] = js.undefined
 }
 object SupportingWidgetDefaultsFeatureTemplates {
   

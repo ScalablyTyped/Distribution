@@ -2,19 +2,17 @@ package typings.gapiCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // calendarId: 'primary' or the calendar from which the event to be deleted
 // eventId: the event that need to be deleted from calendar (Event.id from the list/insert response)
-@js.native
 trait EventsDeleteParameters extends StObject {
   
-  var calendarId: String = js.native
+  var calendarId: String
   
-  var eventId: String = js.native
+  var eventId: String
   
-  var sendNotifications: js.UndefOr[Boolean] = js.native
+  var sendNotifications: js.UndefOr[Boolean] = js.undefined
 }
 object EventsDeleteParameters {
   

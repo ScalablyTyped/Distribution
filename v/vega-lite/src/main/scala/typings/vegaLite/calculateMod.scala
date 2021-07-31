@@ -11,10 +11,13 @@ import typings.vegaLite.vegaLiteStrings.binned
 import typings.vegaTypings.transformMod.FormulaTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calculateMod {
+  
+  @JSImport("vega-lite/build/src/compile/data/calculate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compile/data/calculate", "CalculateNode")
   @js.native
@@ -30,19 +33,23 @@ object calculateMod {
   /* static members */
   object CalculateNode {
     
-    @JSImport("vega-lite/build/src/compile/data/calculate", "CalculateNode.parseAllForSortIndex")
+    @JSImport("vega-lite/build/src/compile/data/calculate", "CalculateNode")
     @js.native
-    def parseAllForSortIndex(parent: DataFlowNode, model: ModelWithField): DataFlowNode = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def parseAllForSortIndex(parent: DataFlowNode, model: ModelWithField): DataFlowNode = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllForSortIndex")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[DataFlowNode]
   }
   
-  @JSImport("vega-lite/build/src/compile/data/calculate", "sortArrayIndexField")
-  @js.native
-  def sortArrayIndexField_binned(fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null], channel: SingleDefChannel): String = js.native
-  @JSImport("vega-lite/build/src/compile/data/calculate", "sortArrayIndexField")
-  @js.native
+  @scala.inline
   def sortArrayIndexField_binned(
-    fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null],
+    fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
+    channel: SingleDefChannel
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sortArrayIndexField")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sortArrayIndexField_binned(
+    fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
     channel: SingleDefChannel,
     opt: FieldRefOption
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sortArrayIndexField")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
 }

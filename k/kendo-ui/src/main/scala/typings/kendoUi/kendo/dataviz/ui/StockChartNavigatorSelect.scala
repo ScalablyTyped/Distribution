@@ -3,17 +3,15 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartNavigatorSelect extends StObject {
   
-  var from: js.UndefOr[Date] = js.native
+  var from: js.UndefOr[Date] = js.undefined
   
-  var mousewheel: js.UndefOr[Boolean | StockChartNavigatorSelectMousewheel] = js.native
+  var mousewheel: js.UndefOr[Boolean | StockChartNavigatorSelectMousewheel] = js.undefined
   
-  var to: js.UndefOr[Date] = js.native
+  var to: js.UndefOr[Date] = js.undefined
 }
 object StockChartNavigatorSelect {
   

@@ -9,25 +9,23 @@ import typings.sipml.anon.MaxHeight
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SIPml {
   
-  @js.native
   trait Event extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    def getContent(): js.Object = js.native
+    def getContent(): js.Object
     
-    def getContentString(): String = js.native
+    def getContentString(): String
     
-    def getContentType(): js.Object = js.native
+    def getContentType(): js.Object
     
-    def getSipResponseCode(): Double = js.native
+    def getSipResponseCode(): Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Event {
     
@@ -68,12 +66,11 @@ object SIPml {
     }
   }
   
-  @js.native
   trait EventTarget[EventSubscriptionType /* <: String */, EventType /* <: Event */] extends StObject {
     
-    def addEventListener(`type`: EventSubscriptionType, listener: js.Function1[/* e */ EventType, Unit]): Unit = js.native
+    def addEventListener(`type`: EventSubscriptionType, listener: js.Function1[/* e */ EventType, Unit]): Unit
     
-    def removeEventListener(`type`: EventSubscriptionType): Unit = js.native
+    def removeEventListener(`type`: EventSubscriptionType): Unit
   }
   object EventTarget {
     
@@ -87,7 +84,7 @@ object SIPml {
     }
     
     @scala.inline
-    implicit class EventTargetMutableBuilder[Self <: EventTarget[_, _], EventSubscriptionType /* <: String */, EventType /* <: Event */] (val x: Self with (EventTarget[EventSubscriptionType, EventType])) extends AnyVal {
+    implicit class EventTargetMutableBuilder[Self <: EventTarget[?, ?], EventSubscriptionType /* <: String */, EventType /* <: Event */] (val x: Self & (EventTarget[EventSubscriptionType, EventType])) extends AnyVal {
       
       @scala.inline
       def setAddEventListener(value: (EventSubscriptionType, js.Function1[/* e */ EventType, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
@@ -99,7 +96,8 @@ object SIPml {
   
   @js.native
   trait Session
-    extends EventTarget[EventSubscriptionType, typings.sipml.SIPml.Session.Event] {
+    extends StObject
+       with EventTarget[EventSubscriptionType, typings.sipml.SIPml.Session.Event] {
     
     def accept(): Double = js.native
     def accept(configuration: Configuration): Double = js.native
@@ -119,7 +117,9 @@ object SIPml {
   object Session {
     
     @js.native
-    trait Call extends Session {
+    trait Call
+      extends StObject
+         with Session {
       
       def acceptTransfer(): Double = js.native
       def acceptTransfer(configuration: Configuration): Double = js.native
@@ -180,28 +180,27 @@ object SIPml {
       type EventSubscriptionType = typings.sipml.SIPml.Session.EventSubscriptionType
     }
     
-    @js.native
     trait Configuration extends StObject {
       
-      var audio_remote: js.UndefOr[HTMLElement] = js.native
+      var audio_remote: js.UndefOr[HTMLElement] = js.undefined
       
-      var bandwidth: js.UndefOr[Audio] = js.native
+      var bandwidth: js.UndefOr[Audio] = js.undefined
       
-      var events_listener: js.UndefOr[Events] = js.native
+      var events_listener: js.UndefOr[Events] = js.undefined
       
-      var expires: js.UndefOr[Double] = js.native
+      var expires: js.UndefOr[Double] = js.undefined
       
-      var from: js.UndefOr[String] = js.native
+      var from: js.UndefOr[String] = js.undefined
       
-      var sip_caps: js.UndefOr[js.Array[js.Object]] = js.native
+      var sip_caps: js.UndefOr[js.Array[js.Object]] = js.undefined
       
-      var sip_headers: js.UndefOr[js.Array[js.Object]] = js.native
+      var sip_headers: js.UndefOr[js.Array[js.Object]] = js.undefined
       
-      var video_local: js.UndefOr[HTMLElement] = js.native
+      var video_local: js.UndefOr[HTMLElement] = js.undefined
       
-      var video_remote: js.UndefOr[HTMLElement] = js.native
+      var video_remote: js.UndefOr[HTMLElement] = js.undefined
       
-      var video_size: js.UndefOr[MaxHeight] = js.native
+      var video_size: js.UndefOr[MaxHeight] = js.undefined
     }
     object Configuration {
       
@@ -282,13 +281,13 @@ object SIPml {
       }
     }
     
-    @js.native
     trait Event
-      extends typings.sipml.SIPml.Event {
+      extends StObject
+         with typings.sipml.SIPml.Event {
       
-      def getTransferDestinationFriendlyName(): String = js.native
+      def getTransferDestinationFriendlyName(): String
       
-      var session: Session = js.native
+      var session: Session
     }
     object Event {
       
@@ -342,45 +341,42 @@ object SIPml {
     type EventSubscriptionType = String
     
     @js.native
-    trait Message extends Session {
+    trait Message
+      extends StObject
+         with Session {
       
       def send(to: String): Double = js.native
-      def send(
-        to: String,
-        content: js.UndefOr[scala.Nothing],
-        contentType: js.UndefOr[scala.Nothing],
-        configuration: Configuration
-      ): Double = js.native
-      def send(to: String, content: js.UndefOr[scala.Nothing], contentType: String): Double = js.native
-      def send(to: String, content: js.UndefOr[scala.Nothing], contentType: String, configuration: Configuration): Double = js.native
       def send(to: String, content: js.Any): Double = js.native
-      def send(to: String, content: js.Any, contentType: js.UndefOr[scala.Nothing], configuration: Configuration): Double = js.native
       def send(to: String, content: js.Any, contentType: String): Double = js.native
       def send(to: String, content: js.Any, contentType: String, configuration: Configuration): Double = js.native
+      def send(to: String, content: js.Any, contentType: Unit, configuration: Configuration): Double = js.native
+      def send(to: String, content: Unit, contentType: String): Double = js.native
+      def send(to: String, content: Unit, contentType: String, configuration: Configuration): Double = js.native
+      def send(to: String, content: Unit, contentType: Unit, configuration: Configuration): Double = js.native
     }
     
     @js.native
-    trait Publish extends Session {
+    trait Publish
+      extends StObject
+         with Session {
       
       def publish(): Double = js.native
-      def publish(
-        content: js.UndefOr[scala.Nothing],
-        contentType: js.UndefOr[scala.Nothing],
-        configuration: Configuration
-      ): Double = js.native
-      def publish(content: js.UndefOr[scala.Nothing], contentType: String): Double = js.native
-      def publish(content: js.UndefOr[scala.Nothing], contentType: String, configuration: Configuration): Double = js.native
       def publish(content: js.Any): Double = js.native
-      def publish(content: js.Any, contentType: js.UndefOr[scala.Nothing], configuration: Configuration): Double = js.native
       def publish(content: js.Any, contentType: String): Double = js.native
       def publish(content: js.Any, contentType: String, configuration: Configuration): Double = js.native
+      def publish(content: js.Any, contentType: Unit, configuration: Configuration): Double = js.native
+      def publish(content: Unit, contentType: String): Double = js.native
+      def publish(content: Unit, contentType: String, configuration: Configuration): Double = js.native
+      def publish(content: Unit, contentType: Unit, configuration: Configuration): Double = js.native
       
       def unpublish(): Unit = js.native
       def unpublish(configuration: Configuration): Unit = js.native
     }
     
     @js.native
-    trait Registration extends Session {
+    trait Registration
+      extends StObject
+         with Session {
       
       def register(): Unit = js.native
       def register(configuration: Configuration): Unit = js.native
@@ -390,7 +386,9 @@ object SIPml {
     }
     
     @js.native
-    trait Subscribe extends Session {
+    trait Subscribe
+      extends StObject
+         with Session {
       
       def subscribe(to: String): Double = js.native
       def subscribe(to: String, configuration: Configuration): Double = js.native
@@ -411,7 +409,8 @@ object SIPml {
   
   @js.native
   trait Stack
-    extends EventTarget[typings.sipml.SIPml.Stack.EventSubscriptionType, typings.sipml.SIPml.Stack.Event] {
+    extends StObject
+       with EventTarget[typings.sipml.SIPml.Stack.EventSubscriptionType, typings.sipml.SIPml.Stack.Event] {
     
     def newSession(`type`: String): js.Any = js.native
     def newSession(`type`: String, configuration: Configuration): js.Any = js.native
@@ -425,40 +424,39 @@ object SIPml {
   }
   object Stack {
     
-    @js.native
     trait Configuration extends StObject {
       
-      var bandwidth: js.UndefOr[Audio] = js.native
+      var bandwidth: js.UndefOr[Audio] = js.undefined
       
-      var display_name: js.UndefOr[String] = js.native
+      var display_name: js.UndefOr[String] = js.undefined
       
-      var enable_click2call: js.UndefOr[Boolean] = js.native
+      var enable_click2call: js.UndefOr[Boolean] = js.undefined
       
-      var enable_early_ims: js.UndefOr[Boolean] = js.native
+      var enable_early_ims: js.UndefOr[Boolean] = js.undefined
       
-      var enable_media_stream_cache: js.UndefOr[Boolean] = js.native
+      var enable_media_stream_cache: js.UndefOr[Boolean] = js.undefined
       
-      var enable_rtcweb_breaker: js.UndefOr[Boolean] = js.native
+      var enable_rtcweb_breaker: js.UndefOr[Boolean] = js.undefined
       
-      var events_listener: js.UndefOr[Listener] = js.native
+      var events_listener: js.UndefOr[Listener] = js.undefined
       
-      var ice_servers: js.UndefOr[js.Array[js.Object]] = js.native
+      var ice_servers: js.UndefOr[js.Array[js.Object]] = js.undefined
       
-      var impi: js.UndefOr[String] = js.native
+      var impi: js.UndefOr[String] = js.undefined
       
-      var impu: js.UndefOr[String] = js.native
+      var impu: js.UndefOr[String] = js.undefined
       
-      var outbound_proxy_url: js.UndefOr[String] = js.native
+      var outbound_proxy_url: js.UndefOr[String] = js.undefined
       
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
-      var realm: js.UndefOr[String] = js.native
+      var realm: js.UndefOr[String] = js.undefined
       
-      var sip_headers: js.UndefOr[js.Array[js.Object]] = js.native
+      var sip_headers: js.UndefOr[js.Array[js.Object]] = js.undefined
       
-      var video_size: js.UndefOr[MaxHeight] = js.native
+      var video_size: js.UndefOr[MaxHeight] = js.undefined
       
-      var websocket_proxy_url: js.UndefOr[String] = js.native
+      var websocket_proxy_url: js.UndefOr[String] = js.undefined
     }
     object Configuration {
       
@@ -575,11 +573,11 @@ object SIPml {
       }
     }
     
-    @js.native
     trait Event
-      extends typings.sipml.SIPml.Event {
+      extends StObject
+         with typings.sipml.SIPml.Event {
       
-      var newSession: Session = js.native
+      var newSession: Session
     }
     object Event {
       

@@ -2,137 +2,135 @@ package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicalExploreFeedResponseMedia extends StObject {
   
-  var algorithm: js.UndefOr[String] = js.native
+  var algorithm: js.UndefOr[String] = js.undefined
   
-  var can_see_insights_as_brand: Boolean = js.native
+  var can_see_insights_as_brand: Boolean
   
-  var can_view_more_preview_comments: Boolean = js.native
+  var can_view_more_preview_comments: Boolean
   
-  var can_viewer_reshare: Boolean = js.native
+  var can_viewer_reshare: Boolean
   
-  var can_viewer_save: Boolean = js.native
+  var can_viewer_save: Boolean
   
-  var caption: TopicalExploreFeedResponseCaption = js.native
+  var caption: TopicalExploreFeedResponseCaption
   
-  var caption_is_edited: Boolean = js.native
+  var caption_is_edited: Boolean
   
-  var carousel_media: js.UndefOr[js.Array[TopicalExploreFeedResponseCarouselMediaItem]] = js.native
+  var carousel_media: js.UndefOr[js.Array[TopicalExploreFeedResponseCarouselMediaItem]] = js.undefined
   
-  var carousel_media_count: js.UndefOr[Double] = js.native
+  var carousel_media_count: js.UndefOr[Double] = js.undefined
   
-  var client_cache_key: String = js.native
+  var client_cache_key: String
   
-  var code: String = js.native
+  var code: String
   
-  var comment_count: Double = js.native
+  var comment_count: Double
   
-  var comment_likes_enabled: Boolean = js.native
+  var comment_likes_enabled: Boolean
   
-  var comment_threading_enabled: Boolean = js.native
+  var comment_threading_enabled: Boolean
   
-  var connection_id: js.UndefOr[String] = js.native
+  var connection_id: js.UndefOr[String] = js.undefined
   
-  var deleted_reason: Double = js.native
+  var deleted_reason: Double
   
-  var device_timestamp: Double | String = js.native
+  var device_timestamp: Double | String
   
-  var explore: TopicalExploreFeedResponseExplore = js.native
+  var explore: TopicalExploreFeedResponseExplore
   
-  var explore_context: js.UndefOr[String] = js.native
+  var explore_context: js.UndefOr[String] = js.undefined
   
-  var explore_hide_comments: js.UndefOr[Boolean] = js.native
+  var explore_hide_comments: js.UndefOr[Boolean] = js.undefined
   
-  var explore_source_token: js.UndefOr[String] = js.native
+  var explore_source_token: js.UndefOr[String] = js.undefined
   
-  var filter_type: Double = js.native
+  var filter_type: Double
   
-  var has_audio: js.UndefOr[Boolean] = js.native
+  var has_audio: js.UndefOr[Boolean] = js.undefined
   
-  var has_liked: js.UndefOr[Boolean] = js.native
+  var has_liked: js.UndefOr[Boolean] = js.undefined
   
-  var has_more_comments: Boolean = js.native
+  var has_more_comments: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: js.UndefOr[TopicalExploreFeedResponseImageVersions2] = js.native
+  var image_versions2: js.UndefOr[TopicalExploreFeedResponseImageVersions2] = js.undefined
   
-  var impression_token: js.UndefOr[String] = js.native
+  var impression_token: js.UndefOr[String] = js.undefined
   
-  var is_dash_eligible: js.UndefOr[Double] = js.native
+  var is_dash_eligible: js.UndefOr[Double] = js.undefined
   
-  var is_in_profile_grid: Boolean = js.native
+  var is_in_profile_grid: Boolean
   
-  var is_post_live: js.UndefOr[Boolean] = js.native
+  var is_post_live: js.UndefOr[Boolean] = js.undefined
   
-  var is_shop_the_look_eligible: Boolean = js.native
+  var is_shop_the_look_eligible: Boolean
   
-  var lat: js.UndefOr[Double] = js.native
+  var lat: js.UndefOr[Double] = js.undefined
   
-  var like_count: js.UndefOr[Double] = js.native
+  var like_count: js.UndefOr[Double] = js.undefined
   
-  var lng: js.UndefOr[Double] = js.native
+  var lng: js.UndefOr[Double] = js.undefined
   
-  var location: js.UndefOr[TopicalExploreFeedResponseLocation] = js.native
+  var location: js.UndefOr[TopicalExploreFeedResponseLocation] = js.undefined
   
-  var max_num_visible_preview_comments: Double = js.native
+  var max_num_visible_preview_comments: Double
   
-  var media_cropping_info: js.UndefOr[TopicalExploreFeedResponseMediaCroppingInfo] = js.native
+  var media_cropping_info: js.UndefOr[TopicalExploreFeedResponseMediaCroppingInfo] = js.undefined
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var mezql_token: String = js.native
+  var mezql_token: String
   
-  var nearly_complete_copyright_match: js.UndefOr[Boolean] = js.native
+  var nearly_complete_copyright_match: js.UndefOr[Boolean] = js.undefined
   
-  var number_of_qualities: js.UndefOr[Double] = js.native
+  var number_of_qualities: js.UndefOr[Double] = js.undefined
   
-  var organic_tracking_token: String = js.native
+  var organic_tracking_token: String
   
-  var original_height: js.UndefOr[Double] = js.native
+  var original_height: js.UndefOr[Double] = js.undefined
   
-  var original_width: js.UndefOr[Double] = js.native
+  var original_width: js.UndefOr[Double] = js.undefined
   
-  var photo_of_you: Boolean = js.native
+  var photo_of_you: Boolean
   
-  var pk: String = js.native
+  var pk: String
   
-  var preview_comments: js.Array[_] = js.native
+  var preview_comments: js.Array[js.Any]
   
-  var product_tags: js.UndefOr[TopicalExploreFeedResponseProductTags] = js.native
+  var product_tags: js.UndefOr[TopicalExploreFeedResponseProductTags] = js.undefined
   
-  var product_type: js.UndefOr[String] = js.native
+  var product_type: js.UndefOr[String] = js.undefined
   
-  var profile_grid_control_enabled: Boolean = js.native
+  var profile_grid_control_enabled: Boolean
   
-  var sharing_friction_info: TopicalExploreFeedResponseSharingFrictionInfo = js.native
+  var sharing_friction_info: TopicalExploreFeedResponseSharingFrictionInfo
   
-  var taken_at: Double = js.native
+  var taken_at: Double
   
-  var thumbnails: js.UndefOr[TopicalExploreFeedResponseThumbnails] = js.native
+  var thumbnails: js.UndefOr[TopicalExploreFeedResponseThumbnails] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var top_likers: js.UndefOr[js.Array[String]] = js.native
+  var top_likers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var user: TopicalExploreFeedResponseUser = js.native
+  var user: TopicalExploreFeedResponseUser
   
-  var usertags: js.UndefOr[TopicalExploreFeedResponseUsertags] = js.native
+  var usertags: js.UndefOr[TopicalExploreFeedResponseUsertags] = js.undefined
   
-  var video_codec: js.UndefOr[String] = js.native
+  var video_codec: js.UndefOr[String] = js.undefined
   
-  var video_dash_manifest: js.UndefOr[String] = js.native
+  var video_dash_manifest: js.UndefOr[String] = js.undefined
   
-  var video_duration: js.UndefOr[Double] = js.native
+  var video_duration: js.UndefOr[Double] = js.undefined
   
-  var video_versions: js.UndefOr[js.Array[TopicalExploreFeedResponseVideoVersionsItem]] = js.native
+  var video_versions: js.UndefOr[js.Array[TopicalExploreFeedResponseVideoVersionsItem]] = js.undefined
   
-  var view_count: js.UndefOr[Double] = js.native
+  var view_count: js.UndefOr[Double] = js.undefined
 }
 object TopicalExploreFeedResponseMedia {
   
@@ -163,7 +161,7 @@ object TopicalExploreFeedResponseMedia {
     organic_tracking_token: String,
     photo_of_you: Boolean,
     pk: String,
-    preview_comments: js.Array[_],
+    preview_comments: js.Array[js.Any],
     profile_grid_control_enabled: Boolean,
     sharing_friction_info: TopicalExploreFeedResponseSharingFrictionInfo,
     taken_at: Double,
@@ -387,7 +385,7 @@ object TopicalExploreFeedResponseMedia {
     def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview_comments(value: js.Array[_]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
+    def setPreview_comments(value: js.Array[js.Any]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPreview_commentsVarargs(value: js.Any*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))

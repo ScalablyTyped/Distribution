@@ -3,7 +3,6 @@ package typings.angularForms.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "Validators")
@@ -12,9 +11,12 @@ class Validators () extends StObject
 /* static members */
 object Validators {
   
-  @JSImport("@angular/forms", "Validators.compose")
+  @JSImport("@angular/forms", "Validators")
   @js.native
-  def compose(validators: js.Array[js.UndefOr[ValidatorFn | Null]]): ValidatorFn | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def compose(validators: js.Array[js.UndefOr[ValidatorFn | Null]]): ValidatorFn | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(validators.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn | Null]
   /**
     * @description
     * Compose multiple validators into a single function that returns the union
@@ -26,9 +28,8 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @JSImport("@angular/forms", "Validators.compose")
-  @js.native
-  def compose(validators: Null): Null = js.native
+  @scala.inline
+  def compose(validators: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(validators.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   /**
     * @description
@@ -41,9 +42,8 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @JSImport("@angular/forms", "Validators.composeAsync")
-  @js.native
-  def composeAsync(validators: js.Array[AsyncValidatorFn | Null]): AsyncValidatorFn | Null = js.native
+  @scala.inline
+  def composeAsync(validators: js.Array[AsyncValidatorFn | Null]): AsyncValidatorFn | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("composeAsync")(validators.asInstanceOf[js.Any]).asInstanceOf[AsyncValidatorFn | Null]
   
   /**
     * @description
@@ -81,9 +81,8 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @JSImport("@angular/forms", "Validators.email")
-  @js.native
-  def email(control: AbstractControl): ValidationErrors | Null = js.native
+  @scala.inline
+  def email(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
   
   /**
     * @description
@@ -106,9 +105,8 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @JSImport("@angular/forms", "Validators.max")
-  @js.native
-  def max(max: Double): ValidatorFn = js.native
+  @scala.inline
+  def max(max: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(max.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
   
   /**
     * @description
@@ -137,9 +135,8 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @JSImport("@angular/forms", "Validators.maxLength")
-  @js.native
-  def maxLength(maxLength: Double): ValidatorFn = js.native
+  @scala.inline
+  def maxLength(maxLength: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(maxLength.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
   
   /**
     * @description
@@ -162,9 +159,8 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @JSImport("@angular/forms", "Validators.min")
-  @js.native
-  def min(min: Double): ValidatorFn = js.native
+  @scala.inline
+  def min(min: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(min.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
   
   /**
     * @description
@@ -196,9 +192,8 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @JSImport("@angular/forms", "Validators.minLength")
-  @js.native
-  def minLength(minLength: Double): ValidatorFn = js.native
+  @scala.inline
+  def minLength(minLength: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("minLength")(minLength.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
   
   /**
     * @description
@@ -207,9 +202,8 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @JSImport("@angular/forms", "Validators.nullValidator")
-  @js.native
-  def nullValidator(control: AbstractControl): ValidationErrors | Null = js.native
+  @scala.inline
+  def nullValidator(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("nullValidator")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
   
   /**
     * @description
@@ -260,12 +254,10 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @JSImport("@angular/forms", "Validators.pattern")
-  @js.native
-  def pattern(pattern: String): ValidatorFn = js.native
-  @JSImport("@angular/forms", "Validators.pattern")
-  @js.native
-  def pattern(pattern: RegExp): ValidatorFn = js.native
+  @scala.inline
+  def pattern(pattern: String): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  @scala.inline
+  def pattern(pattern: RegExp): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
   
   /**
     * @description
@@ -287,9 +279,8 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @JSImport("@angular/forms", "Validators.required")
-  @js.native
-  def required(control: AbstractControl): ValidationErrors | Null = js.native
+  @scala.inline
+  def required(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
   
   /**
     * @description
@@ -312,7 +303,6 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @JSImport("@angular/forms", "Validators.requiredTrue")
-  @js.native
-  def requiredTrue(control: AbstractControl): ValidationErrors | Null = js.native
+  @scala.inline
+  def requiredTrue(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredTrue")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
 }

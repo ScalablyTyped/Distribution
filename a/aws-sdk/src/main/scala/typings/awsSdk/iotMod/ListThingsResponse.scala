@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListThingsResponse extends StObject {
   
   /**
     * The token to use to get the next set of results. Will not be returned if operation has returned all results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The things.
     */
-  var things: js.UndefOr[ThingAttributeList] = js.native
+  var things: js.UndefOr[ThingAttributeList] = js.undefined
 }
 object ListThingsResponse {
   

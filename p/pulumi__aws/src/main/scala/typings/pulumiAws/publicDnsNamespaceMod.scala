@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publicDnsNamespaceMod {
@@ -25,7 +24,7 @@ object publicDnsNamespaceMod {
       */
     def this(name: String) = this()
     def this(name: String, args: PublicDnsNamespaceArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: PublicDnsNamespaceArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -56,6 +55,10 @@ object publicDnsNamespaceMod {
   /* static members */
   object PublicDnsNamespace {
     
+    @JSImport("@pulumi/aws/servicediscovery/publicDnsNamespace", "PublicDnsNamespace")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PublicDnsNamespace resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -65,45 +68,39 @@ object publicDnsNamespaceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/servicediscovery/publicDnsNamespace", "PublicDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID]): PublicDnsNamespace = js.native
-    @JSImport("@pulumi/aws/servicediscovery/publicDnsNamespace", "PublicDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PublicDnsNamespace = js.native
-    @JSImport("@pulumi/aws/servicediscovery/publicDnsNamespace", "PublicDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PublicDnsNamespaceState): PublicDnsNamespace = js.native
-    @JSImport("@pulumi/aws/servicediscovery/publicDnsNamespace", "PublicDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PublicDnsNamespaceState, opts: CustomResourceOptions): PublicDnsNamespace = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): PublicDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PublicDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PublicDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PublicDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PublicDnsNamespaceState): PublicDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PublicDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PublicDnsNamespaceState, opts: CustomResourceOptions): PublicDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PublicDnsNamespace]
     
     /**
       * Returns true if the given object is an instance of PublicDnsNamespace.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/servicediscovery/publicDnsNamespace", "PublicDnsNamespace.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/publicDnsNamespace.PublicDnsNamespace */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/publicDnsNamespace.PublicDnsNamespace */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicediscovery/publicDnsNamespace.PublicDnsNamespace */ Boolean]
   }
   
-  @js.native
   trait PublicDnsNamespaceArgs extends StObject {
     
     /**
       * The description that you specify for the namespace when you create it.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the namespace.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the namespace.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object PublicDnsNamespaceArgs {
     
@@ -136,33 +133,32 @@ object publicDnsNamespaceMod {
     }
   }
   
-  @js.native
   trait PublicDnsNamespaceState extends StObject {
     
     /**
       * The ARN that Amazon Route 53 assigns to the namespace when you create it.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description that you specify for the namespace when you create it.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID for the hosted zone that Amazon Route 53 creates when you create a namespace.
       */
-    val hostedZone: js.UndefOr[Input[String]] = js.native
+    val hostedZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the namespace.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the namespace.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object PublicDnsNamespaceState {
     

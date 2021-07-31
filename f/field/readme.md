@@ -12,7 +12,7 @@ Easily set, get, stub values of a field in a JavaScript object.
 | Keywords           | stub, field, fields, set, get, object, property, properties, accessor, accessors, configuration, config |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 26484 |
+| # downloads        | 26750 |
 | # stars            | 0 |
 
 ## Links

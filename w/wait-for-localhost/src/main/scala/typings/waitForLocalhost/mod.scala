@@ -2,7 +2,6 @@ package typings.waitForLocalhost
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,12 +17,10 @@ object mod {
   	})();
   	```
   	 */
-  @JSImport("wait-for-localhost", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[Unit] = js.native
-  @JSImport("wait-for-localhost", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[Unit] = js.native
+  @scala.inline
+  def apply(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(options: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("wait-for-localhost", JSImport.Namespace)
   @js.native
@@ -42,7 +39,6 @@ object mod {
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof waitForLocalhost */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -51,18 +47,18 @@ object mod {
     		For example, `/health` for a health-check endpoint.
     		@default '/'
     		*/
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
     		@default 80
     		*/
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
     		Use the `GET` HTTP-method instead of `HEAD` to check if the server is running.
     		@default false
     		*/
-    var useGet: js.UndefOr[Boolean] = js.native
+    var useGet: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

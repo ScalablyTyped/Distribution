@@ -2,54 +2,52 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conversation extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  def ClearAlwaysAssignCategories(Store: Store): Unit = js.native
+  def ClearAlwaysAssignCategories(Store: Store): Unit
   
-  val ConversationID: String = js.native
+  val ConversationID: String
   
-  def GetAlwaysAssignCategories(Store: Store): String = js.native
+  def GetAlwaysAssignCategories(Store: Store): String
   
-  def GetAlwaysDelete(Store: Store): OlAlwaysDeleteConversation = js.native
+  def GetAlwaysDelete(Store: Store): OlAlwaysDeleteConversation
   
-  def GetAlwaysMoveToFolder(Store: Store): Folder = js.native
+  def GetAlwaysMoveToFolder(Store: Store): Folder
   
-  def GetChildren(Item: js.Any): SimpleItems = js.native
+  def GetChildren(Item: js.Any): SimpleItems
   
-  def GetParent(Item: js.Any): js.Any = js.native
+  def GetParent(Item: js.Any): js.Any
   
-  def GetRootItems(): SimpleItems = js.native
+  def GetRootItems(): SimpleItems
   
-  def GetTable(): Table = js.native
+  def GetTable(): Table
   
-  def MarkAsRead(): Unit = js.native
+  def MarkAsRead(): Unit
   
-  def MarkAsUnread(): Unit = js.native
+  def MarkAsUnread(): Unit
   
   @JSName("Outlook.Conversation_typekey")
-  var OutlookDotConversation_typekey: Conversation = js.native
+  var OutlookDotConversation_typekey: Conversation
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  def SetAlwaysAssignCategories(Categories: String, Store: Store): Unit = js.native
+  def SetAlwaysAssignCategories(Categories: String, Store: Store): Unit
   
-  def SetAlwaysDelete(AlwaysDelete: OlAlwaysDeleteConversation, Store: Store): Unit = js.native
+  def SetAlwaysDelete(AlwaysDelete: OlAlwaysDeleteConversation, Store: Store): Unit
   
-  def SetAlwaysMoveToFolder(MoveToFolder: Folder, Store: Store): Unit = js.native
+  def SetAlwaysMoveToFolder(MoveToFolder: Folder, Store: Store): Unit
   
-  def StopAlwaysDelete(Store: Store): Unit = js.native
+  def StopAlwaysDelete(Store: Store): Unit
   
-  def StopAlwaysMoveToFolder(Store: Store): Unit = js.native
+  def StopAlwaysMoveToFolder(Store: Store): Unit
 }
 object Conversation {
   

@@ -3,7 +3,6 @@ package typings.node
 import typings.node.NodeJS.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wasiMod {
@@ -45,10 +44,9 @@ object wasiMod {
       * should be passed as the `wasi_snapshot_preview1` import during the instantiation of a
       * [`WebAssembly.Instance`][].
       */
-    val wasiImport: Dict[_] = js.native
+    val wasiImport: Dict[js.Any] = js.native
   }
   
-  @js.native
   trait WASIOptions extends StObject {
     
     /**
@@ -56,13 +54,13 @@ object wasiMod {
       * see as command line arguments. The first argument is the virtual path to the
       * WASI command itself.
       */
-    var args: js.UndefOr[js.Array[java.lang.String]] = js.native
+    var args: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     
     /**
       * An object similar to `process.env` that the WebAssembly
       * application will see as its environment.
       */
-    var env: js.UndefOr[js.Object] = js.native
+    var env: js.UndefOr[js.Object] = js.undefined
     
     /**
       * This object represents the WebAssembly application's
@@ -70,7 +68,7 @@ object wasiMod {
       * directories within the sandbox. The corresponding values in `preopens` are
       * the real paths to those directories on the host machine.
       */
-    var preopens: js.UndefOr[Dict[java.lang.String]] = js.native
+    var preopens: js.UndefOr[Dict[java.lang.String]] = js.undefined
     
     /**
       * By default, WASI applications terminate the Node.js
@@ -79,25 +77,25 @@ object wasiMod {
       * process.
       * @default false
       */
-    var returnOnExit: js.UndefOr[Boolean] = js.native
+    var returnOnExit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The file descriptor used as standard error in the WebAssembly application.
       * @default 2
       */
-    var stderr: js.UndefOr[Double] = js.native
+    var stderr: js.UndefOr[Double] = js.undefined
     
     /**
       * The file descriptor used as standard input in the WebAssembly application.
       * @default 0
       */
-    var stdin: js.UndefOr[Double] = js.native
+    var stdin: js.UndefOr[Double] = js.undefined
     
     /**
       * The file descriptor used as standard output in the WebAssembly application.
       * @default 1
       */
-    var stdout: js.UndefOr[Double] = js.native
+    var stdout: js.UndefOr[Double] = js.undefined
   }
   object WASIOptions {
     

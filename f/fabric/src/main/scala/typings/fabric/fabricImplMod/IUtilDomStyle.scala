@@ -3,16 +3,14 @@ package typings.fabric.fabricImplMod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUtilDomStyle extends StObject {
   
   /**
     * Cross-browser wrapper for setting element's style
     */
-  def setStyle(element: HTMLElement, styles: js.Any): HTMLElement = js.native
+  def setStyle(element: HTMLElement, styles: js.Any): HTMLElement
 }
 object IUtilDomStyle {
   

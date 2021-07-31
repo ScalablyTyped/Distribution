@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemporalLayerProperties extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait TemporalLayerProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeExtent)
     */
-  var timeExtent: js.UndefOr[TimeExtentProperties] = js.native
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
   
   /**
     * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
     */
-  var timeInfo: js.UndefOr[TimeInfoProperties] = js.native
+  var timeInfo: js.UndefOr[TimeInfoProperties] = js.undefined
   
   /**
     * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeOffset)
     */
-  var timeOffset: js.UndefOr[TimeIntervalProperties] = js.native
+  var timeOffset: js.UndefOr[TimeIntervalProperties] = js.undefined
   
   /**
     * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#useViewTime)
     */
-  var useViewTime: js.UndefOr[Boolean] = js.native
+  var useViewTime: js.UndefOr[Boolean] = js.undefined
 }
 object TemporalLayerProperties {
   

@@ -2,25 +2,23 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IShape extends StObject {
   
-  def contains(position: js.Array[Double]): Boolean = js.native
+  def contains(position: js.Array[Double]): Boolean
   
-  def equals(shape: IShape): Boolean = js.native
+  def equals(shape: IShape): Boolean
   
-  def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+  def getBounds(): js.Array[js.Array[Double]] | Null
   
-  def getGeometry(): IPixelGeometry = js.native
+  def getGeometry(): IPixelGeometry
   
-  def getType(): String = js.native
+  def getType(): String
   
-  def scale(factor: Double): IShape = js.native
+  def scale(factor: Double): IShape
   
-  def shift(offset: js.Array[Double]): IShape = js.native
+  def shift(offset: js.Array[Double]): IShape
 }
 object IShape {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativeStatusRow extends StObject {
   
   /** The number of bids with the specified status. */
-  var bidCount: js.UndefOr[MetricValue] = js.native
+  var bidCount: js.UndefOr[MetricValue] = js.undefined
   
   /** The ID of the creative status. See [creative-status-codes](https://developers.google.com/authorized-buyers/rtb/downloads/creative-status-codes). */
-  var creativeStatusId: js.UndefOr[Double] = js.native
+  var creativeStatusId: js.UndefOr[Double] = js.undefined
   
   /** The values of all dimensions associated with metric values in this row. */
-  var rowDimensions: js.UndefOr[RowDimensions] = js.native
+  var rowDimensions: js.UndefOr[RowDimensions] = js.undefined
 }
 object CreativeStatusRow {
   

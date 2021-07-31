@@ -3,7 +3,6 @@ package typings.nodeMysqlWrapper.mod
 import typings.mysql.mod.MysqlError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "Database")
@@ -45,11 +44,11 @@ class Database () extends StObject {
   
   def noticeReady(): Unit = js.native
   
-  def query(queryStr: String, callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, _]): Unit = js.native
+  def query(queryStr: String, callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, js.Any]): Unit = js.native
   def query(
     queryStr: String,
-    callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, _],
-    queryArguments: js.Array[_]
+    callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, js.Any],
+    queryArguments: js.Array[js.Any]
   ): Unit = js.native
   
   def ready(): Unit = js.native
@@ -73,8 +72,11 @@ class Database () extends StObject {
 }
 object Database {
   
-  /* static member */
-  @JSImport("node-mysql-wrapper", "Database.when")
+  @JSImport("node-mysql-wrapper", "Database")
   @js.native
-  def when(_promises: typings.bluebird.mod.^[_]*): typings.bluebird.mod.^[_] = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def when(_promises: typings.bluebird.mod.^[js.Any]*): typings.bluebird.mod.^[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(_promises.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Any]]
 }

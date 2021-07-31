@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.DetectedIssue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyDetectedIssueHeaders extends StObject {
   
-  var body: DetectedIssue = js.native
+  var body: DetectedIssue
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DetectedIssue = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DetectedIssue
 }
 object BodyDetectedIssueHeaders {
   
   @scala.inline
-  def apply(
-    body: DetectedIssue,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.DetectedIssue
-  ): BodyDetectedIssueHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: DetectedIssue, id: String): BodyDetectedIssueHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "DetectedIssue")
     __obj.asInstanceOf[BodyDetectedIssueHeaders]
   }
   

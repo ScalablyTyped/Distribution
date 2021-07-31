@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tpu/v1alpha1", "tpu_v1alpha1.Resource$Projects$Locations$Acceleratortypes")
@@ -30,7 +29,7 @@ class ResourceProjectsLocationsAcceleratortypes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAcceleratorType] = js.native
   def get(callback: BodyResponseCallback[SchemaAcceleratorType]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAcceleratorType] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAcceleratorType] = js.native
   def get(params: ParamsResourceProjectsLocationsAcceleratortypesGet): GaxiosPromise[SchemaAcceleratorType] = js.native
   def get(
     params: ParamsResourceProjectsLocationsAcceleratortypesGet,
@@ -66,7 +65,7 @@ class ResourceProjectsLocationsAcceleratortypes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListAcceleratorTypesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAcceleratorTypesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAcceleratorTypesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAcceleratorTypesResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsAcceleratortypesList): GaxiosPromise[SchemaListAcceleratorTypesResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsAcceleratortypesList,

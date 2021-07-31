@@ -8,7 +8,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,7 +28,7 @@ trait ElasticTranscoder extends Service {
   ): Request[CancelJobResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_ElasticTranscoder: ConfigBase with ClientConfiguration = js.native
+  var config_ElasticTranscoder: ConfigBase & ClientConfiguration = js.native
   
   /**
     * When you create a job, Elastic Transcoder returns JSON data that includes the values that you specified plus information about the job that is created. If you have specified more than one output for your jobs (for example, one output for the Kindle Fire and another output for the Apple iPhone 4s), you currently must use the Elastic Transcoder API to list the jobs (as opposed to the AWS Console).

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignedUserRole extends StObject {
   
   /** The ID of the advertiser that the assigend user role applies to. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Output only. The ID of the assigned user role. */
-  var assignedUserRoleId: js.UndefOr[String] = js.native
+  var assignedUserRoleId: js.UndefOr[String] = js.undefined
   
   /** The ID of the partner that the assigned user role applies to. */
-  var partnerId: js.UndefOr[String] = js.native
+  var partnerId: js.UndefOr[String] = js.undefined
   
   /** Required. The user role to assign to a user for the entity. */
-  var userRole: js.UndefOr[String] = js.native
+  var userRole: js.UndefOr[String] = js.undefined
 }
 object AssignedUserRole {
   

@@ -12,7 +12,7 @@ A simple web server for the roads framework
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 2 |
-| # downloads        | 811 |
+| # downloads        | 636 |
 | # stars            | 0 |
 
 ## Links

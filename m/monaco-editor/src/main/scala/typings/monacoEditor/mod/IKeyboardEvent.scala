@@ -5,41 +5,38 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKeyboardEvent extends StObject {
   
-  val _standardKeyboardEventBrand: `true` = js.native
+  val _standardKeyboardEventBrand: `true`
   
-  val altKey: Boolean = js.native
+  val altKey: Boolean
   
-  val browserEvent: KeyboardEvent = js.native
+  val browserEvent: KeyboardEvent
   
-  val code: String = js.native
+  val code: String
   
-  val ctrlKey: Boolean = js.native
+  val ctrlKey: Boolean
   
-  def equals(keybinding: Double): Boolean = js.native
+  def equals(keybinding: Double): Boolean
   
-  val keyCode: KeyCode = js.native
+  val keyCode: KeyCode
   
-  val metaKey: Boolean = js.native
+  val metaKey: Boolean
   
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
   
-  val shiftKey: Boolean = js.native
+  val shiftKey: Boolean
   
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
   
-  val target: HTMLElement = js.native
+  val target: HTMLElement
 }
 object IKeyboardEvent {
   
   @scala.inline
   def apply(
-    _standardKeyboardEventBrand: `true`,
     altKey: Boolean,
     browserEvent: KeyboardEvent,
     code: String,
@@ -52,7 +49,7 @@ object IKeyboardEvent {
     stopPropagation: () => Unit,
     target: HTMLElement
   ): IKeyboardEvent = {
-    val __obj = js.Dynamic.literal(_standardKeyboardEventBrand = _standardKeyboardEventBrand.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], browserEvent = browserEvent.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_standardKeyboardEventBrand = true, altKey = altKey.asInstanceOf[js.Any], browserEvent = browserEvent.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[IKeyboardEvent]
   }

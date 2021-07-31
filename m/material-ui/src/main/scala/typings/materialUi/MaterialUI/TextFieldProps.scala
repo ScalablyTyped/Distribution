@@ -9,97 +9,95 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextFieldProps extends StObject {
   
-  var autoComplete: js.UndefOr[String] = js.native
+  var autoComplete: js.UndefOr[String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var defaultValue: js.UndefOr[String | Double] = js.native
+  var defaultValue: js.UndefOr[String | Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var errorStyle: js.UndefOr[CSSProperties] = js.native
+  var errorStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var errorText: js.UndefOr[ReactNode] = js.native
+  var errorText: js.UndefOr[ReactNode] = js.undefined
   
-  var floatingLabelFixed: js.UndefOr[Boolean] = js.native
+  var floatingLabelFixed: js.UndefOr[Boolean] = js.undefined
   
-  var floatingLabelFocusStyle: js.UndefOr[CSSProperties] = js.native
+  var floatingLabelFocusStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var floatingLabelShrinkStyle: js.UndefOr[CSSProperties] = js.native
+  var floatingLabelShrinkStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var floatingLabelStyle: js.UndefOr[CSSProperties] = js.native
+  var floatingLabelStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var floatingLabelText: js.UndefOr[ReactNode] = js.native
+  var floatingLabelText: js.UndefOr[ReactNode] = js.undefined
   
-  var fullWidth: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
   
-  var hintStyle: js.UndefOr[CSSProperties] = js.native
+  var hintStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var hintText: js.UndefOr[ReactNode] = js.native
+  var hintText: js.UndefOr[ReactNode] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inputStyle: js.UndefOr[CSSProperties] = js.native
+  var inputStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var maxlength: js.UndefOr[String] = js.native
+  var maxlength: js.UndefOr[String] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var minlength: js.UndefOr[String] = js.native
+  var minlength: js.UndefOr[String] = js.undefined
   
-  var multiLine: js.UndefOr[Boolean] = js.native
+  var multiLine: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function2[/* e */ FormEvent[js.Object], /* newValue */ String, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function2[/* e */ FormEvent[js.Object], /* newValue */ String, Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
   
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[js.Object]] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[js.Object]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var rowsMax: js.UndefOr[Double] = js.native
+  var rowsMax: js.UndefOr[Double] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var textareaStyle: js.UndefOr[CSSProperties] = js.native
+  var textareaStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var underlineDisabledStyle: js.UndefOr[CSSProperties] = js.native
+  var underlineDisabledStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var underlineFocusStyle: js.UndefOr[CSSProperties] = js.native
+  var underlineFocusStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var underlineShow: js.UndefOr[Boolean] = js.native
+  var underlineShow: js.UndefOr[Boolean] = js.undefined
   
-  var underlineStyle: js.UndefOr[CSSProperties] = js.native
+  var underlineStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 object TextFieldProps {
   

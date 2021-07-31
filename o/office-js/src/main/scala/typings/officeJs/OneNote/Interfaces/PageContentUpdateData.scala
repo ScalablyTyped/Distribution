@@ -2,11 +2,9 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the PageContent object, for use in "pageContent.set({ ... })". */
-@js.native
 trait PageContentUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PageContentUpdateData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var image: js.UndefOr[ImageUpdateData] = js.native
+  var image: js.UndefOr[ImageUpdateData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait PageContentUpdateData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait PageContentUpdateData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object PageContentUpdateData {
   

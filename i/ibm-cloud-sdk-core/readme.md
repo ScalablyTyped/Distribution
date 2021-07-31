@@ -4,15 +4,15 @@
 Typings are for version 0.1.2
 
 ## Library description:
-Core functionality to support SDKs generated with IBM's OpenAPI 3 SDK Generator.
+Core functionality to support SDKs generated with IBM's OpenAPI SDK Generator.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ibm-cloud-sdk-core |
 | Keywords           | ibm, sdk, openapi, core |
-| # releases         | 55 |
-| # dependents       | 12 |
-| # downloads        | 695037 |
+| # releases         | 56 |
+| # dependents       | 17 |
+| # downloads        | 737821 |
 | # stars            | 0 |
 
 ## Links

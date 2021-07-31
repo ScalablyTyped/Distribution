@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetExternalModelsResult extends StObject {
   
   /**
     * Gets the Amazon SageMaker models.
     */
-  var externalModels: js.UndefOr[ExternalModelList] = js.native
+  var externalModels: js.UndefOr[ExternalModelList] = js.undefined
   
   /**
     * The next page token to be used in subsequent requests.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object GetExternalModelsResult {
   

@@ -28,7 +28,6 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterWorldConfig
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -326,7 +325,7 @@ trait MatterPhysics extends StObject {
     * @param bodies An array of objects to extract the bodies from. If falsey, it will return all bodies in the world.
     */
   def getMatterBodies(): js.Array[BodyType] = js.native
-  def getMatterBodies(bodies: js.Array[_]): js.Array[BodyType] = js.native
+  def getMatterBodies(bodies: js.Array[js.Any]): js.Array[BodyType] = js.native
   
   /**
     * A reference to the `Matter.Grid` module.
@@ -374,16 +373,9 @@ trait MatterPhysics extends StObject {
     * @param bodies An array of bodies to check. If not provided it will search all bodies in the world.
     */
   def intersectRay(x1: Double, y1: Double, x2: Double, y2: Double): js.Array[MatterBody] = js.native
-  def intersectRay(
-    x1: Double,
-    y1: Double,
-    x2: Double,
-    y2: Double,
-    rayWidth: js.UndefOr[scala.Nothing],
-    bodies: js.Array[MatterBody]
-  ): js.Array[MatterBody] = js.native
   def intersectRay(x1: Double, y1: Double, x2: Double, y2: Double, rayWidth: Double): js.Array[MatterBody] = js.native
   def intersectRay(x1: Double, y1: Double, x2: Double, y2: Double, rayWidth: Double, bodies: js.Array[MatterBody]): js.Array[MatterBody] = js.native
+  def intersectRay(x1: Double, y1: Double, x2: Double, y2: Double, rayWidth: Unit, bodies: js.Array[MatterBody]): js.Array[MatterBody] = js.native
   
   /**
     * Checks the given rectangular area to see if any vertices of the given bodies intersect with it.
@@ -399,14 +391,6 @@ trait MatterPhysics extends StObject {
     * @param bodies An array of bodies to check. If not provided it will search all bodies in the world.
     */
   def intersectRect(x: Double, y: Double, width: Double, height: Double): js.Array[MatterBody] = js.native
-  def intersectRect(
-    x: Double,
-    y: Double,
-    width: Double,
-    height: Double,
-    outside: js.UndefOr[scala.Nothing],
-    bodies: js.Array[MatterBody]
-  ): js.Array[MatterBody] = js.native
   def intersectRect(x: Double, y: Double, width: Double, height: Double, outside: Boolean): js.Array[MatterBody] = js.native
   def intersectRect(
     x: Double,
@@ -416,71 +400,27 @@ trait MatterPhysics extends StObject {
     outside: Boolean,
     bodies: js.Array[MatterBody]
   ): js.Array[MatterBody] = js.native
+  def intersectRect(x: Double, y: Double, width: Double, height: Double, outside: Unit, bodies: js.Array[MatterBody]): js.Array[MatterBody] = js.native
   
   def overlap(target: js.Array[MatterBody]): Boolean = js.native
-  def overlap(
-    target: js.Array[MatterBody],
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: js.UndefOr[scala.Nothing],
-    processCallback: js.UndefOr[scala.Nothing],
-    callbackContext: js.Any
-  ): Boolean = js.native
-  def overlap(
-    target: js.Array[MatterBody],
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: js.UndefOr[scala.Nothing],
-    processCallback: ArcadePhysicsCallback
-  ): Boolean = js.native
-  def overlap(
-    target: js.Array[MatterBody],
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: js.UndefOr[scala.Nothing],
-    processCallback: ArcadePhysicsCallback,
-    callbackContext: js.Any
-  ): Boolean = js.native
-  def overlap(
-    target: js.Array[MatterBody],
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: ArcadePhysicsCallback
-  ): Boolean = js.native
-  def overlap(
-    target: js.Array[MatterBody],
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: ArcadePhysicsCallback,
-    processCallback: js.UndefOr[scala.Nothing],
-    callbackContext: js.Any
-  ): Boolean = js.native
-  def overlap(
-    target: js.Array[MatterBody],
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: ArcadePhysicsCallback,
-    processCallback: ArcadePhysicsCallback
-  ): Boolean = js.native
-  def overlap(
-    target: js.Array[MatterBody],
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: ArcadePhysicsCallback,
-    processCallback: ArcadePhysicsCallback,
-    callbackContext: js.Any
-  ): Boolean = js.native
   def overlap(target: js.Array[MatterBody], bodies: js.Array[MatterBody]): Boolean = js.native
   def overlap(
     target: js.Array[MatterBody],
     bodies: js.Array[MatterBody],
-    overlapCallback: js.UndefOr[scala.Nothing],
-    processCallback: js.UndefOr[scala.Nothing],
+    overlapCallback: Unit,
+    processCallback: Unit,
     callbackContext: js.Any
   ): Boolean = js.native
   def overlap(
     target: js.Array[MatterBody],
     bodies: js.Array[MatterBody],
-    overlapCallback: js.UndefOr[scala.Nothing],
+    overlapCallback: Unit,
     processCallback: ArcadePhysicsCallback
   ): Boolean = js.native
   def overlap(
     target: js.Array[MatterBody],
     bodies: js.Array[MatterBody],
-    overlapCallback: js.UndefOr[scala.Nothing],
+    overlapCallback: Unit,
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
@@ -489,7 +429,7 @@ trait MatterPhysics extends StObject {
     target: js.Array[MatterBody],
     bodies: js.Array[MatterBody],
     overlapCallback: ArcadePhysicsCallback,
-    processCallback: js.UndefOr[scala.Nothing],
+    processCallback: Unit,
     callbackContext: js.Any
   ): Boolean = js.native
   def overlap(
@@ -501,6 +441,47 @@ trait MatterPhysics extends StObject {
   def overlap(
     target: js.Array[MatterBody],
     bodies: js.Array[MatterBody],
+    overlapCallback: ArcadePhysicsCallback,
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(
+    target: js.Array[MatterBody],
+    bodies: Unit,
+    overlapCallback: Unit,
+    processCallback: Unit,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(
+    target: js.Array[MatterBody],
+    bodies: Unit,
+    overlapCallback: Unit,
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def overlap(
+    target: js.Array[MatterBody],
+    bodies: Unit,
+    overlapCallback: Unit,
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(target: js.Array[MatterBody], bodies: Unit, overlapCallback: ArcadePhysicsCallback): Boolean = js.native
+  def overlap(
+    target: js.Array[MatterBody],
+    bodies: Unit,
+    overlapCallback: ArcadePhysicsCallback,
+    processCallback: Unit,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(
+    target: js.Array[MatterBody],
+    bodies: Unit,
+    overlapCallback: ArcadePhysicsCallback,
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def overlap(
+    target: js.Array[MatterBody],
+    bodies: Unit,
     overlapCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
@@ -529,65 +510,24 @@ trait MatterPhysics extends StObject {
     * @param callbackContext The context, or scope, in which to run the callbacks.
     */
   def overlap(target: MatterBody): Boolean = js.native
-  def overlap(
-    target: MatterBody,
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: js.UndefOr[scala.Nothing],
-    processCallback: js.UndefOr[scala.Nothing],
-    callbackContext: js.Any
-  ): Boolean = js.native
-  def overlap(
-    target: MatterBody,
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: js.UndefOr[scala.Nothing],
-    processCallback: ArcadePhysicsCallback
-  ): Boolean = js.native
-  def overlap(
-    target: MatterBody,
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: js.UndefOr[scala.Nothing],
-    processCallback: ArcadePhysicsCallback,
-    callbackContext: js.Any
-  ): Boolean = js.native
-  def overlap(target: MatterBody, bodies: js.UndefOr[scala.Nothing], overlapCallback: ArcadePhysicsCallback): Boolean = js.native
-  def overlap(
-    target: MatterBody,
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: ArcadePhysicsCallback,
-    processCallback: js.UndefOr[scala.Nothing],
-    callbackContext: js.Any
-  ): Boolean = js.native
-  def overlap(
-    target: MatterBody,
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: ArcadePhysicsCallback,
-    processCallback: ArcadePhysicsCallback
-  ): Boolean = js.native
-  def overlap(
-    target: MatterBody,
-    bodies: js.UndefOr[scala.Nothing],
-    overlapCallback: ArcadePhysicsCallback,
-    processCallback: ArcadePhysicsCallback,
-    callbackContext: js.Any
-  ): Boolean = js.native
   def overlap(target: MatterBody, bodies: js.Array[MatterBody]): Boolean = js.native
   def overlap(
     target: MatterBody,
     bodies: js.Array[MatterBody],
-    overlapCallback: js.UndefOr[scala.Nothing],
-    processCallback: js.UndefOr[scala.Nothing],
+    overlapCallback: Unit,
+    processCallback: Unit,
     callbackContext: js.Any
   ): Boolean = js.native
   def overlap(
     target: MatterBody,
     bodies: js.Array[MatterBody],
-    overlapCallback: js.UndefOr[scala.Nothing],
+    overlapCallback: Unit,
     processCallback: ArcadePhysicsCallback
   ): Boolean = js.native
   def overlap(
     target: MatterBody,
     bodies: js.Array[MatterBody],
-    overlapCallback: js.UndefOr[scala.Nothing],
+    overlapCallback: Unit,
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
@@ -596,7 +536,7 @@ trait MatterPhysics extends StObject {
     target: MatterBody,
     bodies: js.Array[MatterBody],
     overlapCallback: ArcadePhysicsCallback,
-    processCallback: js.UndefOr[scala.Nothing],
+    processCallback: Unit,
     callbackContext: js.Any
   ): Boolean = js.native
   def overlap(
@@ -608,6 +548,42 @@ trait MatterPhysics extends StObject {
   def overlap(
     target: MatterBody,
     bodies: js.Array[MatterBody],
+    overlapCallback: ArcadePhysicsCallback,
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(
+    target: MatterBody,
+    bodies: Unit,
+    overlapCallback: Unit,
+    processCallback: Unit,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(target: MatterBody, bodies: Unit, overlapCallback: Unit, processCallback: ArcadePhysicsCallback): Boolean = js.native
+  def overlap(
+    target: MatterBody,
+    bodies: Unit,
+    overlapCallback: Unit,
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(target: MatterBody, bodies: Unit, overlapCallback: ArcadePhysicsCallback): Boolean = js.native
+  def overlap(
+    target: MatterBody,
+    bodies: Unit,
+    overlapCallback: ArcadePhysicsCallback,
+    processCallback: Unit,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(
+    target: MatterBody,
+    bodies: Unit,
+    overlapCallback: ArcadePhysicsCallback,
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def overlap(
+    target: MatterBody,
+    bodies: Unit,
     overlapCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
@@ -774,9 +750,9 @@ trait MatterPhysics extends StObject {
     * @param correction Optional delta correction value. Default 1.
     */
   def step(): Unit = js.native
-  def step(delta: js.UndefOr[scala.Nothing], correction: Double): Unit = js.native
   def step(delta: Double): Unit = js.native
   def step(delta: Double, correction: Double): Unit = js.native
+  def step(delta: Unit, correction: Double): Unit = js.native
   
   /**
     * A reference to the `Matter.Svg` module.

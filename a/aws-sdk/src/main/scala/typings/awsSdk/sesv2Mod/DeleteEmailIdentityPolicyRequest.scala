@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEmailIdentityPolicyRequest extends StObject {
   
   /**
     * The email identity for which you want to delete a policy.
     */
-  var EmailIdentity: Identity = js.native
+  var EmailIdentity: Identity
   
   /**
     * The name of the policy. The policy name cannot exceed 64 characters and can only include alphanumeric characters, dashes, and underscores.
     */
-  var PolicyName: typings.awsSdk.sesv2Mod.PolicyName = js.native
+  var PolicyName: typings.awsSdk.sesv2Mod.PolicyName
 }
 object DeleteEmailIdentityPolicyRequest {
   

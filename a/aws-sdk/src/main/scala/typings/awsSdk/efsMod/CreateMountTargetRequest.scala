@@ -2,31 +2,29 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMountTargetRequest extends StObject {
   
   /**
     * The ID of the file system for which to create the mount target.
     */
-  var FileSystemId: typings.awsSdk.efsMod.FileSystemId = js.native
+  var FileSystemId: typings.awsSdk.efsMod.FileSystemId
   
   /**
     * Valid IPv4 address within the address range of the specified subnet.
     */
-  var IpAddress: js.UndefOr[typings.awsSdk.efsMod.IpAddress] = js.native
+  var IpAddress: js.UndefOr[typings.awsSdk.efsMod.IpAddress] = js.undefined
   
   /**
     * Up to five VPC security group IDs, of the form sg-xxxxxxxx. These must be for the same VPC as subnet specified.
     */
-  var SecurityGroups: js.UndefOr[typings.awsSdk.efsMod.SecurityGroups] = js.native
+  var SecurityGroups: js.UndefOr[typings.awsSdk.efsMod.SecurityGroups] = js.undefined
   
   /**
     * The ID of the subnet to add the mount target in.
     */
-  var SubnetId: typings.awsSdk.efsMod.SubnetId = js.native
+  var SubnetId: typings.awsSdk.efsMod.SubnetId
 }
 object CreateMountTargetRequest {
   

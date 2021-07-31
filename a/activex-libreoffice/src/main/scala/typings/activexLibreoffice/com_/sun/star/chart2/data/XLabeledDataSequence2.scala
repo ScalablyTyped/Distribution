@@ -6,13 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyBroadcaster
 import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
 trait XLabeledDataSequence2
-  extends XLabeledDataSequence
+  extends StObject
+     with XLabeledDataSequence
      with XModifyBroadcaster
      with XCloneable
 object XLabeledDataSequence2 {

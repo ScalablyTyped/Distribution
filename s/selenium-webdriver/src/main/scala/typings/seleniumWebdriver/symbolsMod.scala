@@ -3,7 +3,6 @@ package typings.seleniumWebdriver
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object symbolsMod extends Shortcut {
@@ -12,7 +11,6 @@ object symbolsMod extends Shortcut {
   @js.native
   val default: ISymbols = js.native
   
-  @js.native
   trait ISymbols extends StObject {
     
     /**
@@ -25,7 +23,7 @@ object symbolsMod extends Shortcut {
       * `toJSON()` method, except the serialized result may be a promise, or
       * another object with a promised property.
       */
-    val serialize: js.Symbol = js.native
+    val serialize: js.Symbol
   }
   object ISymbols {
     

@@ -2,46 +2,44 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response when updating a range of values in a spreadsheet.
   */
-@js.native
 trait SchemaBatchUpdateValuesByDataFilterResponse extends StObject {
   
   /**
     * The response for each range updated.
     */
-  var responses: js.UndefOr[js.Array[SchemaUpdateValuesByDataFilterResponse]] = js.native
+  var responses: js.UndefOr[js.Array[SchemaUpdateValuesByDataFilterResponse]] = js.undefined
   
   /**
     * The spreadsheet the updates were applied to.
     */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of cells updated.
     */
-  var totalUpdatedCells: js.UndefOr[Double] = js.native
+  var totalUpdatedCells: js.UndefOr[Double] = js.undefined
   
   /**
     * The total number of columns where at least one cell in the column was
     * updated.
     */
-  var totalUpdatedColumns: js.UndefOr[Double] = js.native
+  var totalUpdatedColumns: js.UndefOr[Double] = js.undefined
   
   /**
     * The total number of rows where at least one cell in the row was updated.
     */
-  var totalUpdatedRows: js.UndefOr[Double] = js.native
+  var totalUpdatedRows: js.UndefOr[Double] = js.undefined
   
   /**
     * The total number of sheets where at least one cell in the sheet was
     * updated.
     */
-  var totalUpdatedSheets: js.UndefOr[Double] = js.native
+  var totalUpdatedSheets: js.UndefOr[Double] = js.undefined
 }
 object SchemaBatchUpdateValuesByDataFilterResponse {
   

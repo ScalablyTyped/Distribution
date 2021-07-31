@@ -3,39 +3,34 @@ package typings.ethereumBloomFilters
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ethereum-bloom-filters/dist", "isAddress")
+  @JSImport("ethereum-bloom-filters/dist", JSImport.Namespace)
   @js.native
-  def isAddress(address: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethereum-bloom-filters/dist", "isBloom")
-  @js.native
-  def isBloom(bloom: String): Boolean = js.native
+  @scala.inline
+  def isAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ethereum-bloom-filters/dist", "isContractAddressInBloom")
-  @js.native
-  def isContractAddressInBloom(bloom: String, contractAddress: String): Boolean = js.native
+  @scala.inline
+  def isBloom(bloom: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBloom")(bloom.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ethereum-bloom-filters/dist", "isInBloom")
-  @js.native
-  def isInBloom(bloom: String, value: String): Boolean = js.native
-  @JSImport("ethereum-bloom-filters/dist", "isInBloom")
-  @js.native
-  def isInBloom(bloom: String, value: Uint8Array): Boolean = js.native
+  @scala.inline
+  def isContractAddressInBloom(bloom: String, contractAddress: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContractAddressInBloom")(bloom.asInstanceOf[js.Any], contractAddress.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ethereum-bloom-filters/dist", "isTopic")
-  @js.native
-  def isTopic(topic: String): Boolean = js.native
+  @scala.inline
+  def isInBloom(bloom: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isInBloom(bloom: String, value: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ethereum-bloom-filters/dist", "isTopicInBloom")
-  @js.native
-  def isTopicInBloom(bloom: String, topic: String): Boolean = js.native
+  @scala.inline
+  def isTopic(topic: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTopic")(topic.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ethereum-bloom-filters/dist", "isUserEthereumAddressInBloom")
-  @js.native
-  def isUserEthereumAddressInBloom(bloom: String, ethereumAddress: String): Boolean = js.native
+  @scala.inline
+  def isTopicInBloom(bloom: String, topic: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTopicInBloom")(bloom.asInstanceOf[js.Any], topic.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isUserEthereumAddressInBloom(bloom: String, ethereumAddress: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isUserEthereumAddressInBloom")(bloom.asInstanceOf[js.Any], ethereumAddress.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

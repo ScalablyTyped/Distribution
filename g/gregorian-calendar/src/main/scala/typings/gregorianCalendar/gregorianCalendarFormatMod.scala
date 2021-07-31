@@ -3,14 +3,15 @@ package typings.gregorianCalendar
 import typings.gregorianCalendar.anon.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gregorianCalendarFormatMod {
   
   @JSImport("gregorian-calendar-format", JSImport.Namespace)
   @js.native
-  class ^ protected () extends DateTimeFormat {
+  class ^ protected ()
+    extends StObject
+       with DateTimeFormat {
     /**
       * @param pattern The format pattern string
       * @param locale The local of to output (defaults to require('gregorian-calendar/lib/locale/en_US'),
@@ -32,25 +33,33 @@ object gregorianCalendarFormatMod {
       * full style
       */
     @js.native
-    sealed trait FULL extends DateTimeStyle
+    sealed trait FULL
+      extends StObject
+         with DateTimeStyle
     
     /**
       * long style
       */
     @js.native
-    sealed trait LONG extends DateTimeStyle
+    sealed trait LONG
+      extends StObject
+         with DateTimeStyle
     
     /**
       * medium style
       */
     @js.native
-    sealed trait MEDIUM extends DateTimeStyle
+    sealed trait MEDIUM
+      extends StObject
+         with DateTimeStyle
     
     /**
       * short style
       */
     @js.native
-    sealed trait SHORT extends DateTimeStyle
+    sealed trait SHORT
+      extends StObject
+         with DateTimeStyle
   }
   
   @js.native

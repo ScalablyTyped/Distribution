@@ -23,19 +23,20 @@ import typings.globalize.globalizeStrings.truncate
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalizeMod extends Shortcut {
   
   @JSImport("globalize/dist/globalize", JSImport.Namespace)
   @js.native
-  val ^ : Static = js.native
+  val ^ : js.Object & Static = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("globalize/dist/globalize", JSImport.Namespace)
   @js.native
-  class Class protected () extends Shared {
+  class Class protected ()
+    extends StObject
+       with Shared {
     /**
       * Create a Globalize instance.
       * @param cldr Cldr instance of the instance.
@@ -50,13 +51,12 @@ object globalizeMod extends Shortcut {
     def this(locale: String) = this()
   }
   
-  @js.native
   trait CommonNumberFormatterOptions extends StObject {
     
     /**
       * String `short` or `long` indicating which compact number format should be used to represent the number.
       */
-    var compact: js.UndefOr[short | long] = js.native
+    var compact: js.UndefOr[short | long] = js.undefined
     
     /**
       * Non-negative integer Number values indicating the minimum and maximum fraction digits to be used.
@@ -64,7 +64,7 @@ object globalizeMod extends Shortcut {
       * Either one or both of these properties must be present.
       * If they are, they will override minimum and maximum fraction digits derived from the CLDR patterns.
       */
-    var maximumFractionDigits: js.UndefOr[Double] = js.native
+    var maximumFractionDigits: js.UndefOr[Double] = js.undefined
     
     /**
       * Positive integer Number values indicating the minimum and maximum fraction digits to be shown.
@@ -72,7 +72,7 @@ object globalizeMod extends Shortcut {
       * If they are, they override minimum and maximum integer and fraction digits.
       * The formatter uses however many integer and fraction digits are required to display the specified number of significant digits.
       */
-    var maximumSignificantDigits: js.UndefOr[Double] = js.native
+    var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
     
     /**
       * Non-negative integer Number values indicating the minimum and maximum fraction digits to be used.
@@ -80,12 +80,12 @@ object globalizeMod extends Shortcut {
       * Either one or both of these properties must be present.
       * If they are, they will override minimum and maximum fraction digits derived from the CLDR patterns.
       */
-    var minimumFractionDigits: js.UndefOr[Double] = js.native
+    var minimumFractionDigits: js.UndefOr[Double] = js.undefined
     
     /**
       * Non-negative integer Number value indicating the minimum integer digits to be used. Numbers will be padded with leading zeroes if necessary.
       */
-    var minimumIntegerDigits: js.UndefOr[Double] = js.native
+    var minimumIntegerDigits: js.UndefOr[Double] = js.undefined
     
     /**
       * Positive integer Number values indicating the minimum and maximum fraction digits to be shown.
@@ -93,17 +93,17 @@ object globalizeMod extends Shortcut {
       * If they are, they override minimum and maximum integer and fraction digits.
       * The formatter uses however many integer and fraction digits are required to display the specified number of significant digits.
       */
-    var minimumSignificantDigits: js.UndefOr[Double] = js.native
+    var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
     
     /**
       * String with rounding method ceil, floor, round (default), or truncate.
       */
-    var round: js.UndefOr[ceil | floor | typings.globalize.globalizeStrings.round | truncate] = js.native
+    var round: js.UndefOr[ceil | floor | typings.globalize.globalizeStrings.round | truncate] = js.undefined
     
     /**
       * Boolean (default is true) value indicating whether a grouping separator should be used.
       */
-    var useGrouping: js.UndefOr[Boolean] = js.native
+    var useGrouping: js.UndefOr[Boolean] = js.undefined
   }
   object CommonNumberFormatterOptions {
     
@@ -166,13 +166,14 @@ object globalizeMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait CurrencyFormatterOptions extends CommonNumberFormatterOptions {
+  trait CurrencyFormatterOptions
+    extends StObject
+       with CommonNumberFormatterOptions {
     
     /**
       * symbol (default), accounting, code or name.
       */
-    var style: js.UndefOr[symbol | accounting | code | name] = js.native
+    var style: js.UndefOr[symbol | accounting | code | name] = js.undefined
   }
   object CurrencyFormatterOptions {
     
@@ -193,12 +194,11 @@ object globalizeMod extends Shortcut {
     }
   }
   
-  @js.native
   trait DateFormatPart extends StObject {
     
-    var `type`: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes = js.native
+    var `type`: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
     
-    var value: String = js.native
+    var value: String
   }
   object DateFormatPart {
     
@@ -273,42 +273,41 @@ object globalizeMod extends Shortcut {
     def zone: typings.globalize.globalizeStrings.zone = "zone".asInstanceOf[typings.globalize.globalizeStrings.zone]
   }
   
-  @js.native
   trait DateFormatterOptions extends StObject {
     
     /**
       * One of the following String values: full, long, medium, or short, eg. { date: "full" }.
       */
-    var date: js.UndefOr[full | long | medium | short] = js.native
+    var date: js.UndefOr[full | long | medium | short] = js.undefined
     
     /**
       * One of the following String values: full, long, medium, or short, eg. { datetime: "full" }
       */
-    var datetime: js.UndefOr[full | long | medium | short] = js.native
+    var datetime: js.UndefOr[full | long | medium | short] = js.undefined
     
     /**
       * String value indicating a machine raw pattern (anything in the "Sym." column) eg. { raw: "dd/mm" }.
       * Note this is NOT recommended for i18n in general. Use skeleton instead.
       */
-    var raw: js.UndefOr[String] = js.native
+    var raw: js.UndefOr[String] = js.undefined
     
     /**
       * String value indicating a skeleton (see description above), eg. { skeleton: "GyMMMd" }.
       * Skeleton provides a more flexible formatting mechanism than the predefined list full, long, medium, or short represented by date, time, or datetime.
       * Instead, they are an open-ended list of patterns containing only date field information, and in a canonical order.
       */
-    var skeleton: js.UndefOr[String] = js.native
+    var skeleton: js.UndefOr[String] = js.undefined
     
     /**
       * One of the following String values: full, long, medium, or short, eg. { time: "full" }.
       */
-    var time: js.UndefOr[full | long | medium | short] = js.native
+    var time: js.UndefOr[full | long | medium | short] = js.undefined
     
     /**
       * String based on the time zone names of the IANA time zone database,
       * such as "Asia/Shanghai", "Asia/Kolkata", "America/New_York".
       */
-    var timeZone: js.UndefOr[String] = js.native
+    var timeZone: js.UndefOr[String] = js.undefined
   }
   object DateFormatterOptions {
     
@@ -361,9 +360,9 @@ object globalizeMod extends Shortcut {
   
   type Globalize = Shared
   
-  @js.native
   trait NumberFormatterOptions
-    extends CommonNumberFormatterOptions
+    extends StObject
+       with CommonNumberFormatterOptions
        with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberParserOptions
   object NumberFormatterOptions {
     
@@ -374,13 +373,12 @@ object globalizeMod extends Shortcut {
     }
   }
   
-  @js.native
   trait NumberParserOptions extends StObject {
     
     /**
       * decimal (default), or percent.
       */
-    var style: js.UndefOr[decimal | percent] = js.native
+    var style: js.UndefOr[decimal | percent] = js.undefined
   }
   object NumberParserOptions {
     
@@ -401,13 +399,12 @@ object globalizeMod extends Shortcut {
     }
   }
   
-  @js.native
   trait PluralGeneratorOptions extends StObject {
     
     /**
       * cardinal (default), or ordinal.
       */
-    var `type`: js.UndefOr[cardinal | ordinal] = js.native
+    var `type`: js.UndefOr[cardinal | ordinal] = js.undefined
   }
   object PluralGeneratorOptions {
     
@@ -428,13 +425,12 @@ object globalizeMod extends Shortcut {
     }
   }
   
-  @js.native
   trait RelativeTimeFormatterOptions extends StObject {
     
     /**
       * eg. "short" or "narrow". Or falsy for default long form
       */
-    var form: js.UndefOr[short | narrow] = js.native
+    var form: js.UndefOr[short | narrow] = js.undefined
   }
   object RelativeTimeFormatterOptions {
     
@@ -696,7 +692,8 @@ object globalizeMod extends Shortcut {
   
   @js.native
   trait Static
-    extends Shared
+    extends StObject
+       with Shared
        with /**
     * Create a Globalize instance.
     * @param cldr Cldr instance of the instance.
@@ -765,20 +762,19 @@ object globalizeMod extends Shortcut {
     def locale(locale: String): CldrStatic = js.native
   }
   
-  @js.native
   trait UnitFormatterOptions extends StObject {
     
     /**
       * form: [String] eg. "long", "short" or "narrow".
       */
-    var form: js.UndefOr[long | short | narrow] = js.native
+    var form: js.UndefOr[long | short | narrow] = js.undefined
     
     /**
       * numberFormatter: [Function] a number formatter function. Defaults to Globalize .numberFormatter() for the current locale using the default options.
       */
     var numberFormatter: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object UnitFormatterOptions {
     
@@ -807,8 +803,8 @@ object globalizeMod extends Shortcut {
     }
   }
   
-  type _To = Static
+  type _To = js.Object & Static
   
   /* This means you don't have to write `^`, but can instead just say `globalizeMod.foo` */
-  override def _to: Static = ^
+  override def _to: js.Object & Static = ^
 }

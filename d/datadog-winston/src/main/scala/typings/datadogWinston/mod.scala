@@ -3,7 +3,6 @@ package typings.datadogWinston
 import typings.winstonTransport.mod.TransportStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,18 +13,19 @@ object mod {
     def this(options: DatadogTransportOptions) = this()
   }
   
-  @js.native
-  trait DatadogTransportOptions extends TransportStreamOptions {
+  trait DatadogTransportOptions
+    extends StObject
+       with TransportStreamOptions {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var ddsource: js.UndefOr[String] = js.native
+    var ddsource: js.UndefOr[String] = js.undefined
     
-    var ddtags: js.UndefOr[String] = js.native
+    var ddtags: js.UndefOr[String] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var service: js.UndefOr[String] = js.native
+    var service: js.UndefOr[String] = js.undefined
   }
   object DatadogTransportOptions {
     

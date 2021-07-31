@@ -4,15 +4,13 @@ import typings.node.fsMod.ReadStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait File extends StObject {
     
-    var file: String = js.native
+    var file: String
   }
   object File {
     
@@ -30,20 +28,19 @@ object anon {
     }
   }
   
-  @js.native
   trait FromUrl extends StObject {
     
     def fromUrl(
       url: String,
       options: Store,
       callback: js.Function2[/* err */ Error, /* res */ typings.uploadcare.mod.File, Unit]
-    ): Unit = js.native
+    ): Unit
     
     def upload(
       readStream: ReadStream,
       options: Store,
       callback: js.Function2[/* err */ Error, /* res */ File, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object FromUrl {
     
@@ -69,12 +66,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Remove extends StObject {
     
-    def remove(uuid: String, callback: js.Function2[/* err */ Error, /* res */ typings.uploadcare.mod.File, Unit]): Unit = js.native
+    def remove(uuid: String, callback: js.Function2[/* err */ Error, /* res */ typings.uploadcare.mod.File, Unit]): Unit
     
-    def store(uuid: String, callback: js.Function2[/* err */ Error, /* res */ typings.uploadcare.mod.File, Unit]): Unit = js.native
+    def store(uuid: String, callback: js.Function2[/* err */ Error, /* res */ typings.uploadcare.mod.File, Unit]): Unit
   }
   object Remove {
     
@@ -102,10 +98,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Store extends StObject {
     
-    var store: js.UndefOr[Boolean] = js.native
+    var store: js.UndefOr[Boolean] = js.undefined
   }
   object Store {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProvisioningClaimResponse extends StObject {
   
   /**
     * The ID of the certificate.
     */
-  var certificateId: js.UndefOr[CertificateId] = js.native
+  var certificateId: js.UndefOr[CertificateId] = js.undefined
   
   /**
     * The provisioning claim certificate.
     */
-  var certificatePem: js.UndefOr[CertificatePem] = js.native
+  var certificatePem: js.UndefOr[CertificatePem] = js.undefined
   
   /**
     * The provisioning claim expiration time.
     */
-  var expiration: js.UndefOr[DateType] = js.native
+  var expiration: js.UndefOr[DateType] = js.undefined
   
   /**
     * The provisioning claim key pair.
     */
-  var keyPair: js.UndefOr[KeyPair] = js.native
+  var keyPair: js.UndefOr[KeyPair] = js.undefined
 }
 object CreateProvisioningClaimResponse {
   

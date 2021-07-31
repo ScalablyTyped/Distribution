@@ -2,31 +2,24 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForOfStatement
-  extends BaseForXStatement
+  extends StObject
+     with BaseForXStatement
      with Statement {
   
-  var await: Boolean = js.native
+  var await: Boolean
   
   @JSName("type")
-  var type_ForOfStatement: typings.estree.estreeStrings.ForOfStatement = js.native
+  var type_ForOfStatement: typings.estree.estreeStrings.ForOfStatement
 }
 object ForOfStatement {
   
   @scala.inline
-  def apply(
-    await: Boolean,
-    body: Statement,
-    left: VariableDeclaration | Pattern,
-    right: Expression,
-    `type`: typings.estree.estreeStrings.ForOfStatement
-  ): ForOfStatement = {
+  def apply(await: Boolean, body: Statement, left: VariableDeclaration | Pattern, right: Expression): ForOfStatement = {
     val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForOfStatement")
     __obj.asInstanceOf[ForOfStatement]
   }
   

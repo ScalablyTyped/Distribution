@@ -3,7 +3,6 @@ package typings.dav.mod
 import typings.dav.mod.transport.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dav", "Client")
@@ -74,8 +73,8 @@ class Client protected () extends StObject {
     * `transformResponse` function to the xhr object after its readyState
     * is 4.
     */
-  def send(req: Request_, uri: String): js.Promise[_] = js.native
-  def send(req: Request_, uri: String, options: ClientSendOptions): js.Promise[_] = js.native
+  def send(req: Request_, uri: String): js.Promise[js.Any] = js.native
+  def send(req: Request_, uri: String, options: ClientSendOptions): js.Promise[js.Any] = js.native
   
   /**
     * Fetch changes from the remote server to the parameter address books.

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FloodlightConfigurationsListResponse extends StObject {
   
   /** Floodlight configuration collection. */
-  var floodlightConfigurations: js.UndefOr[js.Array[FloodlightConfiguration]] = js.native
+  var floodlightConfigurations: js.UndefOr[js.Array[FloodlightConfiguration]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#floodlightConfigurationsListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object FloodlightConfigurationsListResponse {
   

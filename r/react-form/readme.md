@@ -11,8 +11,8 @@ Typings are for version 2.16
 | Full name          | react-form |
 | Keywords           | - |
 | # releases         | 19 |
-| # dependents       | 19 |
-| # downloads        | 717288 |
+| # dependents       | 18 |
+| # downloads        | 1025662 |
 | # stars            | 5 |
 
 ## Links

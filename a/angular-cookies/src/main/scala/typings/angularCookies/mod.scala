@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -30,7 +29,6 @@ object mod extends Shortcut {
         * Cookies options
         * see https://docs.angularjs.org/api/ngCookies/provider/$cookiesProvider#defaults
         */
-      @js.native
       trait ICookiesOptions extends StObject {
         
         /**
@@ -38,30 +36,30 @@ object mod extends Shortcut {
           * For obvious security reasons the user agent will not accept the cookie if the
           * current domain is not a sub domain or equals to the requested domain.
           */
-        var domain: js.UndefOr[String] = js.native
+        var domain: js.UndefOr[String] = js.undefined
         
         /**
           * String of the form "Wdy, DD Mon YYYY HH:MM:SS GMT" or a Date object
           * indicating the exact date/time this cookie will expire.
           */
-        var expires: js.UndefOr[String | Date] = js.native
+        var expires: js.UndefOr[String | Date] = js.undefined
         
         /**
           * The cookie will be available only for this path and its sub-paths.
           * By default, this would be the URL that appears in your base tag.
           */
-        var path: js.UndefOr[String] = js.native
+        var path: js.UndefOr[String] = js.undefined
         
         /**
           * Prevents the browser from sending the cookie along with cross-site requests.
           * Accepts the values "lax" and "strict".
           */
-        var samesite: js.UndefOr[String] = js.native
+        var samesite: js.UndefOr[String] = js.undefined
         
         /**
           * The cookie will be available only in secured connection.
           */
-        var secure: js.UndefOr[Boolean] = js.native
+        var secure: js.UndefOr[Boolean] = js.undefined
       }
       object ICookiesOptions {
         
@@ -110,13 +108,12 @@ object mod extends Shortcut {
         * CookiesProvider
         * see https://docs.angularjs.org/api/ngCookies/provider/$cookiesProvider
         */
-      @js.native
       trait ICookiesProvider extends StObject {
         
         /**
           * Object containing default options to pass when setting cookies.
           */
-        var defaults: ICookiesOptions = js.native
+        var defaults: ICookiesOptions
       }
       object ICookiesProvider {
         

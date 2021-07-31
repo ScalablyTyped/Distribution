@@ -2,24 +2,22 @@ package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response including listed builds.
   */
-@js.native
 trait SchemaListBuildsResponse extends StObject {
   
   /**
     * Builds will be sorted by `create_time`, descending.
     */
-  var builds: js.UndefOr[js.Array[SchemaBuild]] = js.native
+  var builds: js.UndefOr[js.Array[SchemaBuild]] = js.undefined
   
   /**
     * Token to receive the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListBuildsResponse {
   

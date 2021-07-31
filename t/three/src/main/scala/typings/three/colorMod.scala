@@ -6,7 +6,6 @@ import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorMod {
@@ -194,9 +193,9 @@ object colorMod {
     	 * @return The created or provided array.
     	 */
     def toArray(): js.Array[Double] = js.native
-    def toArray(array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+    def toArray(array: Unit, offset: Double): js.Array[Double] = js.native
     /**
     	 * Copies red, green and blue into the provided array-like.
     	 * @param array array-like to store the color to.
@@ -223,14 +222,13 @@ object colorMod {
     def NAMES_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAMES")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait HSL extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var l: Double = js.native
+    var l: Double
     
-    var s: Double = js.native
+    var s: Double
   }
   object HSL {
     

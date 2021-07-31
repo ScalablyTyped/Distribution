@@ -3,27 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhirKitClient.fhirKitClientStrings.PaymentNotice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `175` extends StObject {
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: PaymentNotice = js.native
+  var resourceType: PaymentNotice
   
-  var version: String = js.native
+  var version: String
 }
 object `175` {
   
   @scala.inline
-  def apply(id: String, resourceType: PaymentNotice, version: String): `175` = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  def apply(id: String, version: String): `175` = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = "PaymentNotice", version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[`175`]
   }
   

@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "TermSuggester")
 @js.native
-class TermSuggester protected () extends Suggest {
+class TermSuggester protected ()
+  extends StObject
+     with Suggest {
   /*
     A suggester that suggests terms based on edit distance.
     */

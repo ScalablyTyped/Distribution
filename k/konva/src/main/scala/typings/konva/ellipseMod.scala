@@ -6,7 +6,6 @@ import typings.konva.typesMod.GetSet
 import typings.konva.typesMod.Vector2d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ellipseMod {
@@ -43,12 +42,13 @@ object ellipseMod {
     def setWidth(width: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait EllipseConfig extends ShapeConfig {
+  trait EllipseConfig
+    extends StObject
+       with ShapeConfig {
     
-    var radiusX: Double = js.native
+    var radiusX: Double
     
-    var radiusY: Double = js.native
+    var radiusY: Double
   }
   object EllipseConfig {
     

@@ -4,25 +4,23 @@ import typings.meteor.Mongo.FieldSpecifier
 import typings.meteor.Mongo.SortSpecifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: js.UndefOr[FieldSpecifier] = js.native
+    var fields: js.UndefOr[FieldSpecifier] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var reactive: js.UndefOr[Boolean] = js.native
+    var reactive: js.UndefOr[Boolean] = js.undefined
     
-    var skip: js.UndefOr[Double] = js.native
+    var skip: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[SortSpecifier] = js.native
+    var sort: js.UndefOr[SortSpecifier] = js.undefined
     
-    var transform: js.UndefOr[js.Function] = js.native
+    var transform: js.UndefOr[js.Function] = js.undefined
   }
   object Fields {
     

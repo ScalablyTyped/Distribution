@@ -2,27 +2,27 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArcSeriesPoint extends AbstractSeriesPoint {
+trait ArcSeriesPoint
+  extends StObject
+     with AbstractSeriesPoint {
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var angle0: Double = js.native
+  var angle0: Double
   
-  var color: js.UndefOr[String | Double] = js.native
+  var color: js.UndefOr[String | Double] = js.undefined
   
-  var fill: js.UndefOr[String | Double] = js.native
+  var fill: js.UndefOr[String | Double] = js.undefined
   
-  var opacity: js.UndefOr[String | Double] = js.native
+  var opacity: js.UndefOr[String | Double] = js.undefined
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var radius0: Double = js.native
+  var radius0: Double
   
-  var stroke: js.UndefOr[String | Double] = js.native
+  var stroke: js.UndefOr[String | Double] = js.undefined
 }
 object ArcSeriesPoint {
   

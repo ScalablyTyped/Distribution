@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomViewabilityMetric extends StObject {
   
   /** Configuration of the custom viewability metric. */
-  var configuration: js.UndefOr[CustomViewabilityMetricConfiguration] = js.native
+  var configuration: js.UndefOr[CustomViewabilityMetricConfiguration] = js.undefined
   
   /** ID of the custom viewability metric. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Name of the custom viewability metric. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object CustomViewabilityMetric {
   

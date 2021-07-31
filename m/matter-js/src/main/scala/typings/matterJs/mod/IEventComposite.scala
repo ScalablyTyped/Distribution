@@ -2,16 +2,16 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEventComposite[T] extends IEvent[T] {
+trait IEventComposite[T]
+  extends StObject
+     with IEvent[T] {
   
   /**
     * EventObjects (may be a single body, constraint, composite or a mixed array of these)
     */
-  var `object`: js.Any = js.native
+  var `object`: js.Any
 }
 object IEventComposite {
   
@@ -23,7 +23,7 @@ object IEventComposite {
   }
   
   @scala.inline
-  implicit class IEventCompositeMutableBuilder[Self <: IEventComposite[_], T] (val x: Self with IEventComposite[T]) extends AnyVal {
+  implicit class IEventCompositeMutableBuilder[Self <: IEventComposite[?], T] (val x: Self & IEventComposite[T]) extends AnyVal {
     
     @scala.inline
     def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])

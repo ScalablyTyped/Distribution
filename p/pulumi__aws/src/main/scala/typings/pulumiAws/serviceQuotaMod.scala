@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceQuotaMod {
@@ -72,6 +71,10 @@ object serviceQuotaMod {
   /* static members */
   object ServiceQuota {
     
+    @JSImport("@pulumi/aws/servicequotas/serviceQuota", "ServiceQuota")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ServiceQuota resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -81,45 +84,39 @@ object serviceQuotaMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/servicequotas/serviceQuota", "ServiceQuota.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ServiceQuota = js.native
-    @JSImport("@pulumi/aws/servicequotas/serviceQuota", "ServiceQuota.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ServiceQuota = js.native
-    @JSImport("@pulumi/aws/servicequotas/serviceQuota", "ServiceQuota.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceQuotaState): ServiceQuota = js.native
-    @JSImport("@pulumi/aws/servicequotas/serviceQuota", "ServiceQuota.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceQuotaState, opts: CustomResourceOptions): ServiceQuota = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ServiceQuota = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ServiceQuota]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ServiceQuota = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServiceQuota]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceQuotaState): ServiceQuota = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ServiceQuota]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceQuotaState, opts: CustomResourceOptions): ServiceQuota = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServiceQuota]
     
     /**
       * Returns true if the given object is an instance of ServiceQuota.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/servicequotas/serviceQuota", "ServiceQuota.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicequotas/serviceQuota.ServiceQuota */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicequotas/serviceQuota.ServiceQuota */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicequotas/serviceQuota.ServiceQuota */ Boolean]
   }
   
-  @js.native
   trait ServiceQuotaArgs extends StObject {
     
     /**
       * Code of the service quota to track. For example: `L-F678F1CE`. Available values can be found with the [AWS CLI service-quotas list-service-quotas command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-service-quotas.html).
       */
-    val quotaCode: Input[String] = js.native
+    val quotaCode: Input[String]
     
     /**
       * Code of the service to track. For example: `vpc`. Available values can be found with the [AWS CLI service-quotas list-services command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-services.html).
       */
-    val serviceCode: Input[String] = js.native
+    val serviceCode: Input[String]
     
     /**
       * Float specifying the desired value for the service quota. If the desired value is higher than the current value, a quota increase request is submitted. When a known request is submitted and pending, the value reflects the desired value of the pending request.
       */
-    val value: Input[Double] = js.native
+    val value: Input[Double]
   }
   object ServiceQuotaArgs {
     
@@ -143,52 +140,51 @@ object serviceQuotaMod {
     }
   }
   
-  @js.native
   trait ServiceQuotaState extends StObject {
     
     /**
       * Whether the service quota can be increased.
       */
-    val adjustable: js.UndefOr[Input[Boolean]] = js.native
+    val adjustable: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the service quota.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Default value of the service quota.
       */
-    val defaultValue: js.UndefOr[Input[Double]] = js.native
+    val defaultValue: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Code of the service quota to track. For example: `L-F678F1CE`. Available values can be found with the [AWS CLI service-quotas list-service-quotas command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-service-quotas.html).
       */
-    val quotaCode: js.UndefOr[Input[String]] = js.native
+    val quotaCode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the quota.
       */
-    val quotaName: js.UndefOr[Input[String]] = js.native
+    val quotaName: js.UndefOr[Input[String]] = js.undefined
     
-    val requestId: js.UndefOr[Input[String]] = js.native
+    val requestId: js.UndefOr[Input[String]] = js.undefined
     
-    val requestStatus: js.UndefOr[Input[String]] = js.native
+    val requestStatus: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Code of the service to track. For example: `vpc`. Available values can be found with the [AWS CLI service-quotas list-services command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-services.html).
       */
-    val serviceCode: js.UndefOr[Input[String]] = js.native
+    val serviceCode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the service.
       */
-    val serviceName: js.UndefOr[Input[String]] = js.native
+    val serviceName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Float specifying the desired value for the service quota. If the desired value is higher than the current value, a quota increase request is submitted. When a known request is submitted and pending, the value reflects the desired value of the pending request.
       */
-    val value: js.UndefOr[Input[Double]] = js.native
+    val value: js.UndefOr[Input[Double]] = js.undefined
   }
   object ServiceQuotaState {
     

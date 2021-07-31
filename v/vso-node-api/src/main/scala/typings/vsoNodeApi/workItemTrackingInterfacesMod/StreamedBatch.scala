@@ -2,19 +2,17 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamedBatch[T] extends StObject {
   
-  var continuationToken: String = js.native
+  var continuationToken: String
   
-  var isLastBatch: Boolean = js.native
+  var isLastBatch: Boolean
   
-  var nextLink: String = js.native
+  var nextLink: String
   
-  var values: js.Array[T] = js.native
+  var values: js.Array[T]
 }
 object StreamedBatch {
   
@@ -25,7 +23,7 @@ object StreamedBatch {
   }
   
   @scala.inline
-  implicit class StreamedBatchMutableBuilder[Self <: StreamedBatch[_], T] (val x: Self with StreamedBatch[T]) extends AnyVal {
+  implicit class StreamedBatchMutableBuilder[Self <: StreamedBatch[?], T] (val x: Self & StreamedBatch[T]) extends AnyVal {
     
     @scala.inline
     def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])

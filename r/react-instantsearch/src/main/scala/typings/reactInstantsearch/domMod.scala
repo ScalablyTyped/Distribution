@@ -9,7 +9,6 @@ import typings.reactInstantsearchDom.mod.HitsProps
 import typings.reactInstantsearchDom.mod.SearchBoxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domMod {

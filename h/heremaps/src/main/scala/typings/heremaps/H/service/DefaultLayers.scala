@@ -4,18 +4,16 @@ import typings.heremaps.anon.Normal
 import typings.heremaps.anon.Satellite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This property specifies collection of pre-configured HERE layers
   */
-@js.native
 trait DefaultLayers extends StObject {
   
-  var raster: Satellite = js.native
+  var raster: Satellite
   
-  var vector: Normal = js.native
+  var vector: Normal
 }
 object DefaultLayers {
   

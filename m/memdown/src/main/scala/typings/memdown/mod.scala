@@ -1,50 +1,51 @@
 package typings.memdown
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Shortcut
 import typings.abstractLeveldown.mod.AbstractLevelDOWN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("memdown", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("memdown", JSImport.Default)
   @js.native
   val default: MemDownConstructor = js.native
   
-  @JSImport("memdown", "clearGlobalStore")
-  @js.native
-  def clearGlobalStore(): js.Any = js.native
-  @JSImport("memdown", "clearGlobalStore")
-  @js.native
-  def clearGlobalStore(strict: Boolean): js.Any = js.native
+  @scala.inline
+  def clearGlobalStore(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clearGlobalStore")().asInstanceOf[js.Any]
+  @scala.inline
+  def clearGlobalStore(strict: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clearGlobalStore")(strict.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("memdown", JSImport.Default)
   @js.native
-  class defaultCls[K, V] protected () extends AbstractLevelDOWN[K, V] {
+  class defaultCls[K, V] protected ()
+    extends StObject
+       with AbstractLevelDOWN[K, V] {
     def this(location: String) = this()
   }
   
-  @JSImport("memdown", "destroy")
-  @js.native
-  def destroy(location: String, cb: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def destroy(location: String, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(location.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type MemDown[K, V] = AbstractLevelDOWN[K, V]
   
   @js.native
   trait MemDownConstructor
-    extends Instantiable1[/* location */ String, MemDown[js.Object, js.Object]] {
+    extends StObject
+       with Instantiable1[/* location */ String, MemDown[js.Object, js.Object]] {
     
     def apply[K, V](location: String): MemDown[K, V] = js.native
   }
   
-  @js.native
   trait MemDownGetOptions extends StObject {
     
-    var asBuffer: js.UndefOr[Boolean] = js.native
+    var asBuffer: js.UndefOr[Boolean] = js.undefined
   }
   object MemDownGetOptions {
     
@@ -65,12 +66,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait MemDownIteratorOptions extends StObject {
     
-    var keyAsBuffer: js.UndefOr[Boolean] = js.native
+    var keyAsBuffer: js.UndefOr[Boolean] = js.undefined
     
-    var valueAsBuffer: js.UndefOr[Boolean] = js.native
+    var valueAsBuffer: js.UndefOr[Boolean] = js.undefined
   }
   object MemDownIteratorOptions {
     
@@ -96,9 +96,4 @@ object mod extends Shortcut {
       def setValueAsBufferUndefined: Self = StObject.set(x, "valueAsBuffer", js.undefined)
     }
   }
-  
-  type _To = MemDownConstructor
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: MemDownConstructor = default
 }

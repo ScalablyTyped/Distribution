@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutSchemaFromJsonResponse extends StObject {
   
   /**
     * The ARN of the schema to update.
     */
-  var Arn: js.UndefOr[typings.awsSdk.clouddirectoryMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.clouddirectoryMod.Arn] = js.undefined
 }
 object PutSchemaFromJsonResponse {
   

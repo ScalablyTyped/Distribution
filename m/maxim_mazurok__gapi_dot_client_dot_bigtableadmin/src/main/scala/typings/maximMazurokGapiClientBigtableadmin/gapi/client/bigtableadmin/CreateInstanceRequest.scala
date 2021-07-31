@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInstanceRequest extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait CreateInstanceRequest extends StObject {
   var clusters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.Cluster}
-    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateInstanceRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateInstanceRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Required. The instance to create. Fields marked `OutputOnly` must be left blank. */
-  var instance: js.UndefOr[Instance] = js.native
+  var instance: js.UndefOr[Instance] = js.undefined
   
   /** Required. The ID to be used when referring to the new instance within its project, e.g., just `myinstance` rather than `projects/myproject/instances/myinstance`. */
-  var instanceId: js.UndefOr[String] = js.native
+  var instanceId: js.UndefOr[String] = js.undefined
   
   /** Required. The unique name of the project in which to create the new instance. Values are of the form `projects/{project}`. */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object CreateInstanceRequest {
   
@@ -43,7 +41,7 @@ object CreateInstanceRequest {
     def setClusters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.Cluster}
-      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateInstanceRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateInstanceRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
     @scala.inline

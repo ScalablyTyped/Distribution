@@ -4,15 +4,15 @@
 Typings are for version 4.1.0
 
 ## Library description:
-A Unity-inspired render loop for JavaScript
+A frame-synced render loop for JavaScript
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | framesync |
 | Keywords           | animation, raf |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 8202219 |
+| # releases         | 4 |
+| # dependents       | 11 |
+| # downloads        | 13298456 |
 | # stars            | 0 |
 
 ## Links

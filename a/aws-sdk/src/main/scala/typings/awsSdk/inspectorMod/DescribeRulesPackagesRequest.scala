@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRulesPackagesRequest extends StObject {
   
   /**
     * The locale that you want to translate a rules package description into.
     */
-  var locale: js.UndefOr[Locale] = js.native
+  var locale: js.UndefOr[Locale] = js.undefined
   
   /**
     * The ARN that specifies the rules package that you want to describe.
     */
-  var rulesPackageArns: BatchDescribeArnList = js.native
+  var rulesPackageArns: BatchDescribeArnList
 }
 object DescribeRulesPackagesRequest {
   

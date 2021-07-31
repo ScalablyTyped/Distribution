@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersOrderLocation extends StObject {
   
   /**
     * Contains actual location info.
     */
-  var location: js.UndefOr[GoogleActionsV2Location] = js.native
+  var location: js.UndefOr[GoogleActionsV2Location] = js.undefined
   
   /**
     * Address type. Determines icon and placement. Required.
     */
-  var `type`: js.UndefOr[GoogleActionsV2OrdersOrderLocationType] = js.native
+  var `type`: js.UndefOr[GoogleActionsV2OrdersOrderLocationType] = js.undefined
 }
 object GoogleActionsV2OrdersOrderLocation {
   

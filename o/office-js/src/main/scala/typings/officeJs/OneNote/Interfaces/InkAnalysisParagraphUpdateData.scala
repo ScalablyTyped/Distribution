@@ -2,11 +2,9 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the InkAnalysisParagraph object, for use in "inkAnalysisParagraph.set({ ... })". */
-@js.native
 trait InkAnalysisParagraphUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait InkAnalysisParagraphUpdateData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var inkAnalysis: js.UndefOr[InkAnalysisUpdateData] = js.native
+  var inkAnalysis: js.UndefOr[InkAnalysisUpdateData] = js.undefined
 }
 object InkAnalysisParagraphUpdateData {
   

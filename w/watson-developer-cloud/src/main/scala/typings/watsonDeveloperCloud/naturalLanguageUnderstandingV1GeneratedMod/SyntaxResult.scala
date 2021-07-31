@@ -2,16 +2,14 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Tokens and sentences returned from syntax analysis. */
-@js.native
 trait SyntaxResult extends StObject {
   
-  var sentences: js.UndefOr[js.Array[SentenceResult]] = js.native
+  var sentences: js.UndefOr[js.Array[SentenceResult]] = js.undefined
   
-  var tokens: js.UndefOr[js.Array[TokenResult]] = js.native
+  var tokens: js.UndefOr[js.Array[TokenResult]] = js.undefined
 }
 object SyntaxResult {
   

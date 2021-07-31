@@ -2,22 +2,20 @@ package typings.cssesc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<std.Partial<cssesc.cssesc.Options>> */
-  @js.native
   trait ReadonlyPartialOptions extends StObject {
     
-    val escapeEverything: js.UndefOr[Boolean] = js.native
+    val escapeEverything: js.UndefOr[Boolean] = js.undefined
     
-    val isIdentifier: js.UndefOr[Boolean] = js.native
+    val isIdentifier: js.UndefOr[Boolean] = js.undefined
     
-    val quotes: js.UndefOr[String] = js.native
+    val quotes: js.UndefOr[String] = js.undefined
     
-    val wrap: js.UndefOr[Boolean] = js.native
+    val wrap: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyPartialOptions {
     

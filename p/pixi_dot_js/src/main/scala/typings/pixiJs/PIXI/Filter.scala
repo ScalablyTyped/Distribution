@@ -3,7 +3,6 @@ package typings.pixiJs.PIXI
 import typings.pixiJs.PIXI.systems.FilterSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -143,7 +142,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @extends PIXI.Shader
   */
 @js.native
-trait Filter extends Shader {
+trait Filter
+  extends StObject
+     with Shader {
   
   /**
     * Applies the filter

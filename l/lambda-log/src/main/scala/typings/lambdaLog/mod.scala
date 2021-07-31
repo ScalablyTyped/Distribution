@@ -12,18 +12,29 @@ import typings.std.Console
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lambda-log", "LambdaLog")
+  @JSImport("lambda-log", JSImport.Namespace)
   @js.native
-  class LambdaLog ()
-    extends EventEmitter
-       with /* key */ StringDictionary[js.Any] {
+  val ^ : js.Any = js.native
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("lambda-log", "LambdaLog")
+  @js.native
+  class LambdaLog () extends EventEmitter {
     def this(options: LambdaLogOptions) = this()
-    def this(options: js.UndefOr[scala.Nothing], levels: js.Any) = this()
+    def this(options: Unit, levels: js.Any) = this()
     def this(options: LambdaLogOptions, levels: js.Any) = this()
     
     var LambdaLog: typings.lambdaLog.mod.LambdaLog = js.native
@@ -33,42 +44,42 @@ object mod {
     var _logLevels: js.Any = js.native
     
     def assert(test: js.Any, msg: String): Boolean | LogMessage = js.native
-    def assert(test: js.Any, msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): Boolean | LogMessage = js.native
     def assert(test: js.Any, msg: String, meta: js.Object): Boolean | LogMessage = js.native
     def assert(test: js.Any, msg: String, meta: js.Object, tags: js.Array[String]): Boolean | LogMessage = js.native
+    def assert(test: js.Any, msg: String, meta: Unit, tags: js.Array[String]): Boolean | LogMessage = js.native
     
     var console: Console = js.native
     
     def debug(msg: String): LogMessage = js.native
-    def debug(msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
     def debug(msg: String, meta: js.Object): LogMessage = js.native
     def debug(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+    def debug(msg: String, meta: Unit, tags: js.Array[String]): LogMessage = js.native
     
     def error(msg: String): LogMessage = js.native
-    def error(msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
     def error(msg: String, meta: js.Object): LogMessage = js.native
     def error(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+    def error(msg: String, meta: Unit, tags: js.Array[String]): LogMessage = js.native
     def error(msg: Error): LogMessage = js.native
-    def error(msg: Error, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
     def error(msg: Error, meta: js.Object): LogMessage = js.native
     def error(msg: Error, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+    def error(msg: Error, meta: Unit, tags: js.Array[String]): LogMessage = js.native
     
     def info(msg: String): LogMessage = js.native
-    def info(msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
     def info(msg: String, meta: js.Object): LogMessage = js.native
     def info(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+    def info(msg: String, meta: Unit, tags: js.Array[String]): LogMessage = js.native
     
     def log(level: String, msg: String): LogMessage = js.native
-    def log(level: String, msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
     def log(level: String, msg: String, meta: js.Object): LogMessage = js.native
     def log(level: String, msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+    def log(level: String, msg: String, meta: Unit, tags: js.Array[String]): LogMessage = js.native
     
     var options: LambdaLogOptions = js.native
     
     def warn(msg: String): LogMessage = js.native
-    def warn(msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
     def warn(msg: String, meta: js.Object): LogMessage = js.native
     def warn(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+    def warn(msg: String, meta: Unit, tags: js.Array[String]): LogMessage = js.native
   }
   
   @JSImport("lambda-log", "LogMessage")
@@ -86,7 +97,7 @@ object mod {
     
     var tags: js.UndefOr[js.Array[String]] = js.native
     
-    var `throw`: js.UndefOr[scala.Nothing] = js.native
+    var `throw`: Unit = js.native
     
     def toJSON(): String = js.native
     def toJSON(format: Boolean): String = js.native
@@ -96,133 +107,107 @@ object mod {
   /* static members */
   object LogMessage {
     
-    @JSImport("lambda-log", "LogMessage.isError")
+    @JSImport("lambda-log", "LogMessage")
     @js.native
-    def isError(`val`: js.Any): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isError(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  @JSImport("lambda-log", "assert")
-  @js.native
-  def assert(test: js.Any, msg: String): LogMessage = js.native
-  @JSImport("lambda-log", "assert")
-  @js.native
-  def assert(test: js.Any, msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
-  @JSImport("lambda-log", "assert")
-  @js.native
-  def assert(test: js.Any, msg: String, meta: js.Object): LogMessage = js.native
-  @JSImport("lambda-log", "assert")
-  @js.native
-  def assert(test: js.Any, msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+  @scala.inline
+  def assert(test: js.Any, msg: String): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def assert(test: js.Any, msg: String, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def assert(test: js.Any, msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def assert(test: js.Any, msg: String, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
   
-  @JSImport("lambda-log", "debug")
-  @js.native
-  def debug(msg: String): LogMessage = js.native
-  @JSImport("lambda-log", "debug")
-  @js.native
-  def debug(msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
-  @JSImport("lambda-log", "debug")
-  @js.native
-  def debug(msg: String, meta: js.Object): LogMessage = js.native
-  @JSImport("lambda-log", "debug")
-  @js.native
-  def debug(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+  @scala.inline
+  def debug(msg: String): LogMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any]).asInstanceOf[LogMessage]
+  @scala.inline
+  def debug(msg: String, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def debug(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def debug(msg: String, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
   
-  @JSImport("lambda-log", "error")
-  @js.native
-  def error(msg: String): LogMessage = js.native
-  @JSImport("lambda-log", "error")
-  @js.native
-  def error(msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
-  @JSImport("lambda-log", "error")
-  @js.native
-  def error(msg: String, meta: js.Object): LogMessage = js.native
-  @JSImport("lambda-log", "error")
-  @js.native
-  def error(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
-  @JSImport("lambda-log", "error")
-  @js.native
-  def error(msg: Error): LogMessage = js.native
-  @JSImport("lambda-log", "error")
-  @js.native
-  def error(msg: Error, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
-  @JSImport("lambda-log", "error")
-  @js.native
-  def error(msg: Error, meta: js.Object): LogMessage = js.native
-  @JSImport("lambda-log", "error")
-  @js.native
-  def error(msg: Error, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+  @scala.inline
+  def error(msg: String): LogMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[LogMessage]
+  @scala.inline
+  def error(msg: String, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def error(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def error(msg: String, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def error(msg: Error): LogMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[LogMessage]
+  @scala.inline
+  def error(msg: Error, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def error(msg: Error, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def error(msg: Error, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
   
-  @JSImport("lambda-log", "info")
-  @js.native
-  def info(msg: String): LogMessage = js.native
-  @JSImport("lambda-log", "info")
-  @js.native
-  def info(msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
-  @JSImport("lambda-log", "info")
-  @js.native
-  def info(msg: String, meta: js.Object): LogMessage = js.native
-  @JSImport("lambda-log", "info")
-  @js.native
-  def info(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+  @scala.inline
+  def info(msg: String): LogMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[LogMessage]
+  @scala.inline
+  def info(msg: String, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def info(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def info(msg: String, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
   
-  @JSImport("lambda-log", "log")
-  @js.native
-  def log(level: String, msg: String): LogMessage = js.native
-  @JSImport("lambda-log", "log")
-  @js.native
-  def log(level: String, msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
-  @JSImport("lambda-log", "log")
-  @js.native
-  def log(level: String, msg: String, meta: js.Object): LogMessage = js.native
-  @JSImport("lambda-log", "log")
-  @js.native
-  def log(level: String, msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+  @scala.inline
+  def log(level: String, msg: String): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def log(level: String, msg: String, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def log(level: String, msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def log(level: String, msg: String, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
   
   @JSImport("lambda-log", "options")
   @js.native
   val options: LambdaLogOptions = js.native
   
-  @JSImport("lambda-log", "warn")
-  @js.native
-  def warn(msg: String): LogMessage = js.native
-  @JSImport("lambda-log", "warn")
-  @js.native
-  def warn(msg: String, meta: js.UndefOr[scala.Nothing], tags: js.Array[String]): LogMessage = js.native
-  @JSImport("lambda-log", "warn")
-  @js.native
-  def warn(msg: String, meta: js.Object): LogMessage = js.native
-  @JSImport("lambda-log", "warn")
-  @js.native
-  def warn(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+  @scala.inline
+  def warn(msg: String): LogMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any]).asInstanceOf[LogMessage]
+  @scala.inline
+  def warn(msg: String, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def warn(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  @scala.inline
+  def warn(msg: String, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
   
-  @js.native
   trait LambdaLogOptions extends StObject {
     
     // Enable debugging mode (log.debug messages)
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     // Enable development mode which pretty-prints the log object to the console
-    var dev: js.UndefOr[Boolean] = js.native
+    var dev: js.UndefOr[Boolean] = js.undefined
     
     // Optional function which will run for every log to inject dynamic metadata
-    var dynamicMeta: js.UndefOr[js.Function1[/* message */ LogMessage, _]] = js.native
+    var dynamicMeta: js.UndefOr[js.Function1[/* message */ LogMessage, js.Any]] = js.undefined
     
-    var meta: js.UndefOr[js.Any] = js.native
+    var meta: js.UndefOr[js.Any] = js.undefined
     
     // Optional replacer function for `JSON.stringify`
-    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.native
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
     
     // Disables logging to the console (used for testing)
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
     // Optional stream to write stderr messages to
-    var stderrStream: js.UndefOr[WriteStream] = js.native
+    var stderrStream: js.UndefOr[WriteStream] = js.undefined
     
     // Optional stream to write stdout messages to
-    var stdoutStream: js.UndefOr[WriteStream] = js.native
+    var stdoutStream: js.UndefOr[WriteStream] = js.undefined
     
     // Global tags array to include with every log
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object LambdaLogOptions {
     
@@ -248,7 +233,7 @@ object mod {
       def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
       
       @scala.inline
-      def setDynamicMeta(value: /* message */ LogMessage => _): Self = StObject.set(x, "dynamicMeta", js.Any.fromFunction1(value))
+      def setDynamicMeta(value: /* message */ LogMessage => js.Any): Self = StObject.set(x, "dynamicMeta", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDynamicMetaUndefined: Self = StObject.set(x, "dynamicMeta", js.undefined)
@@ -260,7 +245,7 @@ object mod {
       def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
       @scala.inline
-      def setReplacer(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
@@ -294,23 +279,23 @@ object mod {
     }
   }
   
-  @js.native
   trait LogLevels
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var debug: log | `false` = js.native
+    var debug: log | `false`
     
-    var error: typings.lambdaLog.lambdaLogStrings.error = js.native
+    var error: typings.lambdaLog.lambdaLogStrings.error
     
-    var info: typings.lambdaLog.lambdaLogStrings.info = js.native
+    var info: typings.lambdaLog.lambdaLogStrings.info
     
-    var warn: typings.lambdaLog.lambdaLogStrings.warn = js.native
+    var warn: typings.lambdaLog.lambdaLogStrings.warn
   }
   object LogLevels {
     
     @scala.inline
-    def apply(debug: log | `false`, error: error, info: info, warn: warn): LogLevels = {
-      val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
+    def apply(debug: log | `false`): LogLevels = {
+      val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = "error", info = "info", warn = "warn")
       __obj.asInstanceOf[LogLevels]
     }
     
@@ -331,16 +316,15 @@ object mod {
     }
   }
   
-  @js.native
   trait LogRecord extends StObject {
     
-    var _logLevel: String = js.native
+    var _logLevel: String
     
-    var _tags: js.Array[String] = js.native
+    var _tags: js.Array[String]
     
-    var meta: js.Any = js.native
+    var meta: js.Any
     
-    var msg: String = js.native
+    var msg: String
   }
   object LogRecord {
     
@@ -370,16 +354,15 @@ object mod {
     }
   }
   
-  @js.native
   trait LogRecordOptions extends StObject {
     
-    var level: String = js.native
+    var level: String
     
-    var meta: js.UndefOr[js.Any] = js.native
+    var meta: js.UndefOr[js.Any] = js.undefined
     
-    var msg: String = js.native
+    var msg: String
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object LogRecordOptions {
     

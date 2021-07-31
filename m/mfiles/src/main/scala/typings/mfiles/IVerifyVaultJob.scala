@@ -2,27 +2,25 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVerifyVaultJob extends StObject {
   
-  def Clone(): IVerifyVaultJob = js.native
+  def Clone(): IVerifyVaultJob
   
-  val FixErrors: Boolean = js.native
+  val FixErrors: Boolean
   
-  def GetNumberOfSteps(): Double = js.native
+  def GetNumberOfSteps(): Double
   
-  def GetOneBasedIndexOfStep(CurrentStep: Double): Double = js.native
+  def GetOneBasedIndexOfStep(CurrentStep: Double): Double
   
-  def GetStepProgressText(CurrentStep: Double): String = js.native
+  def GetStepProgressText(CurrentStep: Double): String
   
-  def Set(GuidVault: String, FixErrors: Boolean, VerifyFileContents: Boolean): Unit = js.native
+  def Set(GuidVault: String, FixErrors: Boolean, VerifyFileContents: Boolean): Unit
   
-  val VaultGUID: String = js.native
+  val VaultGUID: String
   
-  val VerifyFileContents: Boolean = js.native
+  val VerifyFileContents: Boolean
 }
 object IVerifyVaultJob {
   

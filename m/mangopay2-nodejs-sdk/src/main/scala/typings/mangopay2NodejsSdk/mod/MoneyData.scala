@@ -3,21 +3,19 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoneyData extends StObject {
   
   /**
     * An amount of money in the smallest sub-division of the currency, e.g. 12.60 EUR would be represented as 1260 whereas 12 JPY would be represented as just 12)
     */
-  var Amount: Double = js.native
+  var Amount: Double
   
   /**
     * The currency - should be ISO_4217 format
     */
-  var Currency: CurrencyISO = js.native
+  var Currency: CurrencyISO
 }
 object MoneyData {
   

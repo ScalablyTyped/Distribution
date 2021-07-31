@@ -2,16 +2,16 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExecuteCommandOptions extends WorkDoneProgressOptions {
+trait ExecuteCommandOptions
+  extends StObject
+     with WorkDoneProgressOptions {
   
   /**
     * The commands to be executed on the server
     */
-  var commands: js.Array[String] = js.native
+  var commands: js.Array[String]
 }
 object ExecuteCommandOptions {
   

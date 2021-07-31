@@ -4,32 +4,30 @@ import typings.std.Document
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildEnvironmentOptions extends StObject {
   
   /**
     *  An object responsible for Atom's interaction with the browser process and host OS.
     *  Use buildDefaultApplicationDelegate for a default instance.
     */
-  var applicationDelegate: js.UndefOr[js.Object] = js.native
+  var applicationDelegate: js.UndefOr[js.Object] = js.undefined
   
   /** A path to the configuration directory (usually ~/.atom). */
-  var configDirPath: js.UndefOr[String] = js.native
+  var configDirPath: js.UndefOr[String] = js.undefined
   
   /** A document global. */
-  var document: js.UndefOr[Document] = js.native
+  var document: js.UndefOr[Document] = js.undefined
   
   /**
     *  A boolean indicating whether the Atom environment should save or load state
     *  from the file system. You probably want this to be false.
     */
-  var enablePersistence: js.UndefOr[Boolean] = js.native
+  var enablePersistence: js.UndefOr[Boolean] = js.undefined
   
   /** A window global. */
-  var window: js.UndefOr[Window] = js.native
+  var window: js.UndefOr[Window] = js.undefined
 }
 object BuildEnvironmentOptions {
   

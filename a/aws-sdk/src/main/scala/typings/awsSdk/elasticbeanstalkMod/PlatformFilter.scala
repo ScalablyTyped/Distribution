@@ -2,26 +2,24 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlatformFilter extends StObject {
   
   /**
     * The operator to apply to the Type with each of the Values. Valid values: = | != | &lt; | &lt;= | &gt; | &gt;= | contains | begins_with | ends_with 
     */
-  var Operator: js.UndefOr[PlatformFilterOperator] = js.native
+  var Operator: js.UndefOr[PlatformFilterOperator] = js.undefined
   
   /**
     * The platform version attribute to which the filter values are applied. Valid values: PlatformName | PlatformVersion | PlatformStatus | PlatformBranchName | PlatformLifecycleState | PlatformOwner | SupportedTier | SupportedAddon | ProgrammingLanguageName | OperatingSystemName 
     */
-  var Type: js.UndefOr[PlatformFilterType] = js.native
+  var Type: js.UndefOr[PlatformFilterType] = js.undefined
   
   /**
     * The list of values applied to the filtering platform version attribute. Only one value is supported for all current operators. The following list shows valid filter values for some filter attributes.    PlatformStatus: Creating | Failed | Ready | Deleting | Deleted     PlatformLifecycleState: recommended     SupportedTier: WebServer/Standard | Worker/SQS/HTTP     SupportedAddon: Log/S3 | Monitoring/Healthd | WorkerDaemon/SQSD   
     */
-  var Values: js.UndefOr[PlatformFilterValueList] = js.native
+  var Values: js.UndefOr[PlatformFilterValueList] = js.undefined
 }
 object PlatformFilter {
   

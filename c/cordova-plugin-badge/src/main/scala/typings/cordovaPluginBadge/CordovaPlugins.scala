@@ -3,13 +3,11 @@ package typings.cordovaPluginBadge
 import typings.cordovaPluginBadge.anon.Badge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CordovaPlugins extends StObject {
   
-  var notification: Badge = js.native
+  var notification: Badge
 }
 object CordovaPlugins {
   

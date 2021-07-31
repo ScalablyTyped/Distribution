@@ -5,7 +5,6 @@ import typings.maximMazurokGapiClientGroupssettings.anon.Alt
 import typings.maximMazurokGapiClientGroupssettings.anon.Fields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -14,7 +13,6 @@ object gapi {
     
     object groupssettings {
       
-      @js.native
       trait Groups extends StObject {
         
         /**
@@ -22,7 +20,7 @@ object gapi {
           * - true: G Suite users external to your organization can become members of this group.
           * - false: Users not belonging to the organization are not allowed to become members of this group.
           */
-        var allowExternalMembers: js.UndefOr[String] = js.native
+        var allowExternalMembers: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. Allows Google to contact administrator of the group.
@@ -30,14 +28,14 @@ object gapi {
           * highlight your group.
           * - false: Google can not contact managers of this group.
           */
-        var allowGoogleCommunication: js.UndefOr[String] = js.native
+        var allowGoogleCommunication: js.UndefOr[String] = js.undefined
         
         /**
           * Allows posting from web. Possible values are:
           * - true: Allows any member to post to the group forum.
           * - false: Members only use Gmail to communicate with the group.
           */
-        var allowWebPosting: js.UndefOr[String] = js.native
+        var allowWebPosting: js.UndefOr[String] = js.undefined
         
         /**
           * Allows the group to be archived only. Possible values are:
@@ -47,17 +45,17 @@ object gapi {
           * - false: The group is active and can receive messages.
           * - When false, updating whoCanPostMessage to NONE_CAN_POST, results in an error.
           */
-        var archiveOnly: js.UndefOr[String] = js.native
+        var archiveOnly: js.UndefOr[String] = js.undefined
         
         /** Set the content of custom footer text. The maximum number of characters is 1,000. */
-        var customFooterText: js.UndefOr[String] = js.native
+        var customFooterText: js.UndefOr[String] = js.undefined
         
         /**
           * An email address used when replying to a message if the replyTo property is set to REPLY_TO_CUSTOM. This address is defined by an account administrator.
           * - When the group's ReplyTo property is set to REPLY_TO_CUSTOM, the customReplyTo property holds a custom email address used when replying to a message.
           * - If the group's ReplyTo property is set to REPLY_TO_CUSTOM, the customReplyTo property must have a text value or an error is returned.
           */
-        var customReplyTo: js.UndefOr[String] = js.native
+        var customReplyTo: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies whether the group has a custom role that's included in one of the settings being merged. This field is read-only and update/patch requests to it are ignored. Possible
@@ -65,67 +63,67 @@ object gapi {
           * - true
           * - false
           */
-        var customRolesEnabledForSettingsToBeMerged: js.UndefOr[String] = js.native
+        var customRolesEnabledForSettingsToBeMerged: js.UndefOr[String] = js.undefined
         
         /**
           * When a message is rejected, this is text for the rejection notification sent to the message's author. By default, this property is empty and has no value in the API's response body.
           * The maximum notification text size is 10,000 characters. Note: Requires sendMessageDenyNotification property to be true.
           */
-        var defaultMessageDenyNotificationText: js.UndefOr[String] = js.native
+        var defaultMessageDenyNotificationText: js.UndefOr[String] = js.undefined
         
         /**
           * Description of the group. This property value may be an empty string if no group description has been entered. If entered, the maximum group description is no more than 300
           * characters.
           */
-        var description: js.UndefOr[String] = js.native
+        var description: js.UndefOr[String] = js.undefined
         
         /**
           * The group's email address. This property can be updated using the Directory API. Note: Only a group owner can change a group's email address. A group manager can't do this.
           * When you change your group's address using the Directory API or the control panel, you are changing the address your subscribers use to send email and the web address people use to
           * access your group. People can't reach your group by visiting the old address.
           */
-        var email: js.UndefOr[String] = js.native
+        var email: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies whether a collaborative inbox will remain turned on for the group. Possible values are:
           * - true
           * - false
           */
-        var enableCollaborativeInbox: js.UndefOr[String] = js.native
+        var enableCollaborativeInbox: js.UndefOr[String] = js.undefined
         
         /**
           * Indicates if favorite replies should be displayed above other replies.
           * - true: Favorite replies will be displayed above other replies.
           * - false: Favorite replies will not be displayed above other replies.
           */
-        var favoriteRepliesOnTop: js.UndefOr[String] = js.native
+        var favoriteRepliesOnTop: js.UndefOr[String] = js.undefined
         
         /**
           * Whether to include custom footer. Possible values are:
           * - true
           * - false
           */
-        var includeCustomFooter: js.UndefOr[String] = js.native
+        var includeCustomFooter: js.UndefOr[String] = js.undefined
         
         /**
           * Enables the group to be included in the Global Address List. For more information, see the help center. Possible values are:
           * - true: Group is included in the Global Address List.
           * - false: Group is not included in the Global Address List.
           */
-        var includeInGlobalAddressList: js.UndefOr[String] = js.native
+        var includeInGlobalAddressList: js.UndefOr[String] = js.undefined
         
         /**
           * Allows the Group contents to be archived. Possible values are:
           * - true: Archive messages sent to the group.
           * - false: Do not keep an archive of messages sent to this group. If false, previously archived messages remain in the archive.
           */
-        var isArchived: js.UndefOr[String] = js.native
+        var isArchived: js.UndefOr[String] = js.undefined
         
         /** The type of the resource. It is always groupsSettings#groups. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** Deprecated. The maximum size of a message is 25Mb. */
-        var maxMessageBytes: js.UndefOr[Double] = js.native
+        var maxMessageBytes: js.UndefOr[Double] = js.undefined
         
         /**
           * Enables members to post messages as the group. Possible values are:
@@ -133,10 +131,10 @@ object gapi {
           * message moderation settings on individual users or new members do not apply to posts made on behalf of the group.
           * - false: Members can not post in behalf of the group's email address.
           */
-        var membersCanPostAsTheGroup: js.UndefOr[String] = js.native
+        var membersCanPostAsTheGroup: js.UndefOr[String] = js.undefined
         
         /** Deprecated. The default message display font always has a value of "DEFAULT_FONT". */
-        var messageDisplayFont: js.UndefOr[String] = js.native
+        var messageDisplayFont: js.UndefOr[String] = js.undefined
         
         /**
           * Moderation level of incoming messages. Possible values are:
@@ -147,13 +145,13 @@ object gapi {
           * messageModerationLevel be set to MODERATE_NON_MEMBERS to protect the group from possible spam.
           * When memberCanPostAsTheGroup is true, any message moderation settings on individual users or new members will not apply to posts made on behalf of the group.
           */
-        var messageModerationLevel: js.UndefOr[String] = js.native
+        var messageModerationLevel: js.UndefOr[String] = js.undefined
         
         /** Name of the group, which has a maximum size of 75 characters. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** The primary language for group. For a group's primary language use the language tags from the G Suite languages found at G Suite Email Settings API Email Language Tags. */
-        var primaryLanguage: js.UndefOr[String] = js.native
+        var primaryLanguage: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies who receives the default reply. Possible values are:
@@ -167,7 +165,7 @@ object gapi {
           * - REPLY_TO_IGNORE: Group users individually decide where the message reply is sent.
           * - REPLY_TO_MANAGERS: This reply message is sent to the group's managers, which includes all managers and the group owner.
           */
-        var replyTo: js.UndefOr[String] = js.native
+        var replyTo: js.UndefOr[String] = js.undefined
         
         /**
           * Allows a member to be notified if the member's message to the group is denied by the group owner. Possible values are:
@@ -176,14 +174,14 @@ object gapi {
           *
           * - false: When a message is rejected, no notification is sent.
           */
-        var sendMessageDenyNotification: js.UndefOr[String] = js.native
+        var sendMessageDenyNotification: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanDiscoverGroup setting. Allows the group to be visible in the Groups Directory. Possible values are:
           * - true: All groups in the account are listed in the Groups directory.
           * - false: All groups in the account are not listed in the directory.
           */
-        var showInGroupDirectory: js.UndefOr[String] = js.native
+        var showInGroupDirectory: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies moderation levels for messages detected as spam. Possible values are:
@@ -192,7 +190,7 @@ object gapi {
           * - SILENTLY_MODERATE: Send the message to the moderation queue, but do not send notification to moderators.
           * - REJECT: Immediately reject the message.
           */
-        var spamModerationLevel: js.UndefOr[String] = js.native
+        var spamModerationLevel: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateMembers setting. Permissions to add members. Possible values are:
@@ -201,10 +199,10 @@ object gapi {
           * - ALL_OWNERS_CAN_ADD: Only owners can directly add new members.
           * - NONE_CAN_ADD: No one can directly add new members.
           */
-        var whoCanAdd: js.UndefOr[String] = js.native
+        var whoCanAdd: js.UndefOr[String] = js.undefined
         
         /** Deprecated. This functionality is no longer supported in the Google Groups UI. The value is always "NONE". */
-        var whoCanAddReferences: js.UndefOr[String] = js.native
+        var whoCanAddReferences: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies who can approve members who ask to join groups. This permission will be deprecated once it is merged into the new whoCanModerateMembers setting. Possible values are:
@@ -213,7 +211,7 @@ object gapi {
           * - ALL_OWNERS_CAN_APPROVE
           * - NONE_CAN_APPROVE
           */
-        var whoCanApproveMembers: js.UndefOr[String] = js.native
+        var whoCanApproveMembers: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateContent setting. Specifies who can approve pending messages in the moderation queue. Possible values are:
@@ -222,7 +220,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanApproveMessages: js.UndefOr[String] = js.native
+        var whoCanApproveMessages: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanAssistContent setting. Permission to assign topics in a forum to another user. Possible values are:
@@ -232,7 +230,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanAssignTopics: js.UndefOr[String] = js.native
+        var whoCanAssignTopics: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies who can moderate metadata. Possible values are:
@@ -242,7 +240,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanAssistContent: js.UndefOr[String] = js.native
+        var whoCanAssistContent: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies who can deny membership to users. This permission will be deprecated once it is merged into the new whoCanModerateMembers setting. Possible values are:
@@ -251,7 +249,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanBanUsers: js.UndefOr[String] = js.native
+        var whoCanBanUsers: js.UndefOr[String] = js.undefined
         
         /**
           * Permission to contact owner of the group via web UI. Possible values are:
@@ -260,7 +258,7 @@ object gapi {
           * - ALL_MEMBERS_CAN_CONTACT
           * - ANYONE_CAN_CONTACT
           */
-        var whoCanContactOwner: js.UndefOr[String] = js.native
+        var whoCanContactOwner: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateContent setting. Specifies who can delete replies to topics. (Authors can always delete their own posts). Possible values are:
@@ -270,7 +268,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanDeleteAnyPost: js.UndefOr[String] = js.native
+        var whoCanDeleteAnyPost: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateContent setting. Specifies who can delete topics. Possible values are:
@@ -279,7 +277,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanDeleteTopics: js.UndefOr[String] = js.native
+        var whoCanDeleteTopics: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies the set of users for whom this group is discoverable. Possible values are:
@@ -287,7 +285,7 @@ object gapi {
           * - ALL_IN_DOMAIN_CAN_DISCOVER
           * - ALL_MEMBERS_CAN_DISCOVER
           */
-        var whoCanDiscoverGroup: js.UndefOr[String] = js.native
+        var whoCanDiscoverGroup: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanAssistContent setting. Permission to enter free form tags for topics in a forum. Possible values are:
@@ -297,7 +295,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanEnterFreeFormTags: js.UndefOr[String] = js.native
+        var whoCanEnterFreeFormTags: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateContent setting. Specifies who can hide posts by reporting them as abuse. Possible values are:
@@ -306,7 +304,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanHideAbuse: js.UndefOr[String] = js.native
+        var whoCanHideAbuse: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateMembers setting. Permissions to invite new members. Possible values are:
@@ -315,7 +313,7 @@ object gapi {
           * - ALL_OWNERS_CAN_INVITE: Only owners can invite a new member.
           * - NONE_CAN_INVITE: No one can invite a new member candidate.
           */
-        var whoCanInvite: js.UndefOr[String] = js.native
+        var whoCanInvite: js.UndefOr[String] = js.undefined
         
         /**
           * Permission to join group. Possible values are:
@@ -326,7 +324,7 @@ object gapi {
           * - INVITED_CAN_JOIN: Candidates for membership can be invited to join.
           * - CAN_REQUEST_TO_JOIN: Non members can request an invitation to join.
           */
-        var whoCanJoin: js.UndefOr[String] = js.native
+        var whoCanJoin: js.UndefOr[String] = js.undefined
         
         /**
           * Permission to leave the group. Possible values are:
@@ -334,7 +332,7 @@ object gapi {
           * - ALL_MEMBERS_CAN_LEAVE
           * - NONE_CAN_LEAVE
           */
-        var whoCanLeaveGroup: js.UndefOr[String] = js.native
+        var whoCanLeaveGroup: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateContent setting. Specifies who can prevent users from posting replies to topics. Possible values are:
@@ -343,7 +341,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanLockTopics: js.UndefOr[String] = js.native
+        var whoCanLockTopics: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateContent setting. Specifies who can make topics appear at the top of the topic list. Possible values are:
@@ -352,7 +350,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanMakeTopicsSticky: js.UndefOr[String] = js.native
+        var whoCanMakeTopicsSticky: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanAssistContent setting. Permission to mark a topic as a duplicate of another topic. Possible values are:
@@ -362,7 +360,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanMarkDuplicate: js.UndefOr[String] = js.native
+        var whoCanMarkDuplicate: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanAssistContent setting. Permission to mark any other user's post as a favorite reply. Possible values are:
@@ -372,7 +370,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanMarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.native
+        var whoCanMarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanAssistContent setting. Permission to mark a post for a topic they started as a favorite reply. Possible values are:
@@ -382,7 +380,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanMarkFavoriteReplyOnOwnTopic: js.UndefOr[String] = js.native
+        var whoCanMarkFavoriteReplyOnOwnTopic: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanAssistContent setting. Permission to mark a topic as not needing a response. Possible values are:
@@ -392,7 +390,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanMarkNoResponseNeeded: js.UndefOr[String] = js.native
+        var whoCanMarkNoResponseNeeded: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies who can moderate content. Possible values are:
@@ -401,7 +399,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanModerateContent: js.UndefOr[String] = js.native
+        var whoCanModerateContent: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies who can manage members. Possible values are:
@@ -410,7 +408,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanModerateMembers: js.UndefOr[String] = js.native
+        var whoCanModerateMembers: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateMembers setting. Specifies who can change group members' roles. Possible values are:
@@ -419,7 +417,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanModifyMembers: js.UndefOr[String] = js.native
+        var whoCanModifyMembers: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanAssistContent setting. Permission to change tags and categories. Possible values are:
@@ -429,7 +427,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanModifyTagsAndCategories: js.UndefOr[String] = js.native
+        var whoCanModifyTagsAndCategories: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateContent setting. Specifies who can move topics into the group or forum. Possible values are:
@@ -438,7 +436,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanMoveTopicsIn: js.UndefOr[String] = js.native
+        var whoCanMoveTopicsIn: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateContent setting. Specifies who can move topics out of the group or forum. Possible values are:
@@ -447,7 +445,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanMoveTopicsOut: js.UndefOr[String] = js.native
+        var whoCanMoveTopicsOut: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanModerateContent setting. Specifies who can post announcements, a special topic type. Possible values are:
@@ -456,7 +454,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanPostAnnouncements: js.UndefOr[String] = js.native
+        var whoCanPostAnnouncements: js.UndefOr[String] = js.undefined
         
         /**
           * Permissions to post messages. Possible values are:
@@ -470,7 +468,7 @@ object gapi {
           * - ANYONE_CAN_POST: Any Internet user who outside your account can access your Google Groups service and post a message. Note: When whoCanPostMessage is set to ANYONE_CAN_POST, we
           * recommend the messageModerationLevel be set to MODERATE_NON_MEMBERS to protect the group from possible spam.
           */
-        var whoCanPostMessage: js.UndefOr[String] = js.native
+        var whoCanPostMessage: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanAssistContent setting. Permission to take topics in a forum. Possible values are:
@@ -480,7 +478,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanTakeTopics: js.UndefOr[String] = js.native
+        var whoCanTakeTopics: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanAssistContent setting. Permission to unassign any topic in a forum. Possible values are:
@@ -490,7 +488,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanUnassignTopic: js.UndefOr[String] = js.native
+        var whoCanUnassignTopic: js.UndefOr[String] = js.undefined
         
         /**
           * Deprecated. This is merged into the new whoCanAssistContent setting. Permission to unmark any post from a favorite reply. Possible values are:
@@ -500,7 +498,7 @@ object gapi {
           * - OWNERS_ONLY
           * - NONE
           */
-        var whoCanUnmarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.native
+        var whoCanUnmarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.undefined
         
         /**
           * Permissions to view group messages. Possible values are:
@@ -509,7 +507,7 @@ object gapi {
           * - ALL_MEMBERS_CAN_VIEW: All group members can view the group's messages.
           * - ALL_MANAGERS_CAN_VIEW: Any group manager can view this group's messages.
           */
-        var whoCanViewGroup: js.UndefOr[String] = js.native
+        var whoCanViewGroup: js.UndefOr[String] = js.undefined
         
         /**
           * Permissions to view membership. Possible values are:
@@ -519,7 +517,7 @@ object gapi {
           * - ALL_MEMBERS_CAN_VIEW: The group members can view the group members list.
           * - ALL_MANAGERS_CAN_VIEW: The group managers can view group members list.
           */
-        var whoCanViewMembership: js.UndefOr[String] = js.native
+        var whoCanViewMembership: js.UndefOr[String] = js.undefined
       }
       object Groups {
         

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativeGroupAssignment extends StObject {
   
   /** ID of the creative group to be assigned. */
-  var creativeGroupId: js.UndefOr[String] = js.native
+  var creativeGroupId: js.UndefOr[String] = js.undefined
   
   /** Creative group number of the creative group assignment. */
-  var creativeGroupNumber: js.UndefOr[String] = js.native
+  var creativeGroupNumber: js.UndefOr[String] = js.undefined
 }
 object CreativeGroupAssignment {
   

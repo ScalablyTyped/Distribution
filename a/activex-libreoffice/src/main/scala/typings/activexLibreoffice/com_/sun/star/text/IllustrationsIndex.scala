@@ -8,21 +8,21 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of illustration indexes within a document.
   * @see com.sun.star.text.BaseIndex
   */
-@js.native
-trait IllustrationsIndex extends BaseIndex {
+trait IllustrationsIndex
+  extends StObject
+     with BaseIndex {
   
-  var CreateFromLabels: Boolean = js.native
+  var CreateFromLabels: Boolean
   
-  var LabelCategory: String = js.native
+  var LabelCategory: String
   
-  var LabelDisplayType: Double = js.native
+  var LabelDisplayType: Double
 }
 object IllustrationsIndex {
   

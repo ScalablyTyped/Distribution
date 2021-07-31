@@ -33,7 +33,6 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
@@ -332,9 +331,8 @@ object tableMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/table/lib/esm/table", "Table.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: ITableProps, state: ITableState): ChildrenArray = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: ITableProps, state: ITableState): ChildrenArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ChildrenArray]
     
     @JSImport("@blueprintjs/table/lib/esm/table", "Table.isSelectionModeEnabled")
     @js.native
@@ -349,29 +347,28 @@ object tableMod {
     def resizeRowsByApproximateHeightDefaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resizeRowsByApproximateHeightDefaults")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IResizeRowsByApproximateHeightOptions extends StObject {
     
     /**
       * Approximate width (in pixels) of an average character of text.
       */
-    var getApproximateCharWidth: js.UndefOr[Double | ICellMapper[Double]] = js.native
+    var getApproximateCharWidth: js.UndefOr[Double | ICellMapper[Double]] = js.undefined
     
     /**
       * Approximate height (in pixels) of an average line of text.
       */
-    var getApproximateLineHeight: js.UndefOr[Double | ICellMapper[Double]] = js.native
+    var getApproximateLineHeight: js.UndefOr[Double | ICellMapper[Double]] = js.undefined
     
     /**
       * Sum of horizontal paddings (in pixels) from the left __and__ right sides
       * of the cell.
       */
-    var getCellHorizontalPadding: js.UndefOr[Double | ICellMapper[Double]] = js.native
+    var getCellHorizontalPadding: js.UndefOr[Double | ICellMapper[Double]] = js.undefined
     
     /**
       * Number of extra lines to add in case the calculation is imperfect.
       */
-    var getNumBufferLines: js.UndefOr[Double | ICellMapper[Double]] = js.native
+    var getNumBufferLines: js.UndefOr[Double | ICellMapper[Double]] = js.undefined
   }
   object IResizeRowsByApproximateHeightOptions {
     
@@ -422,9 +419,9 @@ object tableMod {
     }
   }
   
-  @js.native
   trait ITableProps
-    extends IProps
+    extends StObject
+       with IProps
        with IRowHeights
        with IColumnWidths {
     
@@ -435,13 +432,13 @@ object tableMod {
       * contain all selected regions. Otherwise it will have one `IRegion` that
       * represents the clicked cell.
       */
-    var bodyContextMenuRenderer: js.UndefOr[IContextMenuRenderer] = js.native
+    var bodyContextMenuRenderer: js.UndefOr[IContextMenuRenderer] = js.undefined
     
     /**
       * The children of a `Table` component, which must be React elements
       * that use `IColumnProps`.
       */
-    var children: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.native
+    var children: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.undefined
     
     /**
       * A sparse number array with a length equal to the number of columns. Any
@@ -449,26 +446,26 @@ object tableMod {
       * index. Note that if you want to update these values when the user
       * drag-resizes a column, you may define a callback for `onColumnWidthChanged`.
       */
-    var columnWidths: js.UndefOr[js.Array[js.UndefOr[Double | Null]]] = js.native
+    var columnWidths: js.UndefOr[js.Array[js.UndefOr[Double | Null]]] = js.undefined
     
     /**
       * If `true`, adds an interaction bar on top of all column header cells, and
       * moves interaction triggers into it.
       * @default false
       */
-    var enableColumnInteractionBar: js.UndefOr[Boolean] = js.native
+    var enableColumnInteractionBar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `false`, disables reordering of columns.
       * @default false
       */
-    var enableColumnReordering: js.UndefOr[Boolean] = js.native
+    var enableColumnReordering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `false`, disables resizing of columns.
       * @default true
       */
-    var enableColumnResizing: js.UndefOr[Boolean] = js.native
+    var enableColumnResizing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, there will be a single "focused" cell at all times,
@@ -476,14 +473,14 @@ object tableMod {
       * spreadsheet. When false, no such cell will exist.
       * @default false
       */
-    var enableFocusedCell: js.UndefOr[Boolean] = js.native
+    var enableFocusedCell: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, empty space in the table container will be filled with empty
       * cells instead of a blank background.
       * @default false
       */
-    var enableGhostCells: js.UndefOr[Boolean] = js.native
+    var enableGhostCells: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `false`, only a single region of a single column/row/cell may be
@@ -491,39 +488,39 @@ object tableMod {
       * and a mouse drag will select the current column/row/cell only.
       * @default true
       */
-    var enableMultipleSelection: js.UndefOr[Boolean] = js.native
+    var enableMultipleSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `false`, hides the row headers and settings menu.
       * @default true
       */
-    var enableRowHeader: js.UndefOr[Boolean] = js.native
+    var enableRowHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `false`, disables reordering of rows.
       * @default false
       */
-    var enableRowReordering: js.UndefOr[Boolean] = js.native
+    var enableRowReordering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `false`, disables resizing of rows.
       * @default true
       */
-    var enableRowResizing: js.UndefOr[Boolean] = js.native
+    var enableRowResizing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If defined, will set the focused cell state. This changes
       * the focused cell to controlled mode, meaning you are in charge of
       * setting the focus in response to events in the `onFocusedCell` callback.
       */
-    var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.native
+    var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.undefined
     
     /**
       * If `true`, selection state changes will cause the component to re-render.
       * If `false`, selection state is ignored when deciding to re-render.
       * @default false
       */
-    var forceRerenderOnSelectionChange: js.UndefOr[Boolean] = js.native
+    var forceRerenderOnSelectionChange: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If defined, this callback will be invoked for each cell when the user
@@ -532,39 +529,39 @@ object tableMod {
       * The data will be invisibly added as `textContent` into the DOM before
       * copying. If not defined, keyboard copying via `mod+c` will be disabled.
       */
-    var getCellClipboardData: js.UndefOr[js.Function2[/* row */ Double, /* col */ Double, _]] = js.native
+    var getCellClipboardData: js.UndefOr[js.Function2[/* row */ Double, /* col */ Double, js.Any]] = js.undefined
     
     /**
       * A list of `TableLoadingOption`. Set this prop to specify whether to
       * render the loading state for the column header, row header, and body
       * sections of the table.
       */
-    var loadingOptions: js.UndefOr[js.Array[TableLoadingOption]] = js.native
+    var loadingOptions: js.UndefOr[js.Array[TableLoadingOption]] = js.undefined
     
     /**
       * The number of columns to freeze to the left side of the table, counting
       * from the leftmost column.
       * @default 0
       */
-    var numFrozenColumns: js.UndefOr[Double] = js.native
+    var numFrozenColumns: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of rows to freeze to the top of the table, counting from the
       * topmost row.
       * @default 0
       */
-    var numFrozenRows: js.UndefOr[Double] = js.native
+    var numFrozenRows: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of rows in the table.
       */
-    var numRows: js.UndefOr[Double] = js.native
+    var numRows: js.UndefOr[Double] = js.undefined
     
     /**
       * If resizing is enabled, this callback will be invoked when the user
       * finishes drag-resizing a column.
       */
-    var onColumnWidthChanged: js.UndefOr[IIndexedResizeCallback] = js.native
+    var onColumnWidthChanged: js.UndefOr[IIndexedResizeCallback] = js.undefined
     
     /**
       * If reordering is enabled, this callback will be invoked when the user finishes
@@ -572,13 +569,13 @@ object tableMod {
       */
     var onColumnsReordered: js.UndefOr[
         js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An optional callback invoked when all cells in view have completely rendered.
       * Will be invoked on initial mount and whenever cells update (e.g., on scroll).
       */
-    var onCompleteRender: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCompleteRender: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * If you want to do something after the copy or if you want to notify the
@@ -589,18 +586,18 @@ object tableMod {
       * if the browser does not support the copy method (see
       * `Clipboard.isCopySupported`).
       */
-    var onCopy: js.UndefOr[js.Function1[/* success */ Boolean, Unit]] = js.native
+    var onCopy: js.UndefOr[js.Function1[/* success */ Boolean, Unit]] = js.undefined
     
     /**
       * A callback called when the focus is changed in the table.
       */
-    var onFocusedCell: js.UndefOr[js.Function1[/* focusedCell */ IFocusedCellCoordinates, Unit]] = js.native
+    var onFocusedCell: js.UndefOr[js.Function1[/* focusedCell */ IFocusedCellCoordinates, Unit]] = js.undefined
     
     /**
       * If resizing is enabled, this callback will be invoked when the user
       * finishes drag-resizing a row.
       */
-    var onRowHeightChanged: js.UndefOr[IIndexedResizeCallback] = js.native
+    var onRowHeightChanged: js.UndefOr[IIndexedResizeCallback] = js.undefined
     
     /**
       * If reordering is enabled, this callback will be invoked when the user finishes
@@ -608,19 +605,19 @@ object tableMod {
       */
     var onRowsReordered: js.UndefOr[
         js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback called when the selection is changed in the table.
       */
-    var onSelection: js.UndefOr[js.Function1[/* selectedRegions */ js.Array[IRegion], Unit]] = js.native
+    var onSelection: js.UndefOr[js.Function1[/* selectedRegions */ js.Array[IRegion], Unit]] = js.undefined
     
     /**
       * A callback called when the visible cell indices change in the table.
       */
     var onVisibleCellsChange: js.UndefOr[
         js.Function2[/* rowIndices */ IRowIndices, /* columnIndices */ IColumnIndices, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Dictates how cells should be rendered. Supported modes are:
@@ -630,12 +627,12 @@ object tableMod {
       * - `RenderMode.NONE`: renders cells synchronously all at once
       * @default RenderMode.BATCH_ON_UPDATE
       */
-    var renderMode: js.UndefOr[RenderMode] = js.native
+    var renderMode: js.UndefOr[RenderMode] = js.undefined
     
     /**
       * Render each row's header cell.
       */
-    var rowHeaderCellRenderer: js.UndefOr[IRowHeaderRenderer] = js.native
+    var rowHeaderCellRenderer: js.UndefOr[IRowHeaderRenderer] = js.undefined
     
     /**
       * A sparse number array with a length equal to the number of rows. Any
@@ -643,7 +640,7 @@ object tableMod {
       * index. Note that if you want to update these values when the user
       * drag-resizes a row, you may define a callback for `onRowHeightChanged`.
       */
-    var rowHeights: js.UndefOr[js.Array[js.UndefOr[Double | Null]]] = js.native
+    var rowHeights: js.UndefOr[js.Array[js.UndefOr[Double | Null]]] = js.undefined
     
     /**
       * An optional transform function that will be applied to the located
@@ -653,7 +650,7 @@ object tableMod {
       * `Region`s while maintaining the existing multi-select and meta-click
       * functionality.
       */
-    var selectedRegionTransform: js.UndefOr[ISelectedRegionTransform] = js.native
+    var selectedRegionTransform: js.UndefOr[ISelectedRegionTransform] = js.undefined
     
     /**
       * If defined, will set the selected regions in the cells. If defined, this
@@ -666,7 +663,7 @@ object tableMod {
       * selection you can pass to the `selectedRegions` prop. Therefore you can,
       * for example, convert cell clicks into row selections.
       */
-    var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.native
+    var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.undefined
     
     /**
       * A `SelectionModes` enum value indicating the selection mode. You may
@@ -689,13 +686,13 @@ object tableMod {
       *
       * @default SelectionModes.ALL
       */
-    var selectionModes: js.UndefOr[js.Array[RegionCardinality]] = js.native
+    var selectionModes: js.UndefOr[js.Array[RegionCardinality]] = js.undefined
     
     /**
       * Styled region groups are rendered as overlays above the table and are
       * marked with their own `className` for custom styling.
       */
-    var styledRegionGroups: js.UndefOr[js.Array[IStyledRegionGroup]] = js.native
+    var styledRegionGroups: js.UndefOr[js.Array[IStyledRegionGroup]] = js.undefined
   }
   object ITableProps {
     
@@ -799,7 +796,7 @@ object tableMod {
       def setForceRerenderOnSelectionChangeUndefined: Self = StObject.set(x, "forceRerenderOnSelectionChange", js.undefined)
       
       @scala.inline
-      def setGetCellClipboardData(value: (/* row */ Double, /* col */ Double) => _): Self = StObject.set(x, "getCellClipboardData", js.Any.fromFunction2(value))
+      def setGetCellClipboardData(value: (/* row */ Double, /* col */ Double) => js.Any): Self = StObject.set(x, "getCellClipboardData", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetCellClipboardDataUndefined: Self = StObject.set(x, "getCellClipboardData", js.undefined)
@@ -943,12 +940,11 @@ object tableMod {
     }
   }
   
-  @js.native
   trait ITableSnapshot extends StObject {
     
-    var nextScrollLeft: js.UndefOr[Double] = js.native
+    var nextScrollLeft: js.UndefOr[Double] = js.undefined
     
-    var nextScrollTop: js.UndefOr[Double] = js.native
+    var nextScrollTop: js.UndefOr[Double] = js.undefined
   }
   object ITableSnapshot {
     
@@ -975,36 +971,35 @@ object tableMod {
     }
   }
   
-  @js.native
   trait ITableState extends StObject {
     
-    var childrenArray: js.Array[ReactElement] = js.native
+    var childrenArray: js.Array[ReactElement]
     
-    var columnIdToIndex: StringDictionary[Double] = js.native
+    var columnIdToIndex: StringDictionary[Double]
     
     /**
       * An array of column widths. These are initialized from the column props
       * and updated when the user drags column header resize handles.
       */
-    var columnWidths: js.UndefOr[js.Array[Double]] = js.native
+    var columnWidths: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * The coordinates of the currently focused table cell
       */
-    var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.native
+    var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.undefined
     
     /**
       * An array of pixel offsets for resize guides, which are drawn over the
       * table body when a row is being resized.
       */
-    var horizontalGuides: js.UndefOr[js.Array[Double]] = js.native
+    var horizontalGuides: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * If `true`, will disable updates that will cause re-renders of children
       * components. This is used, for example, to disable layout updates while
       * the user is dragging a resize handle.
       */
-    var isLayoutLocked: js.UndefOr[Boolean] = js.native
+    var isLayoutLocked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the user is currently dragging to reorder one or more elements.
@@ -1012,40 +1007,40 @@ object tableMod {
       * displays a `grabbing` CSS cursor wherever the mouse moves in the table
       * for the duration of the dragging interaction.
       */
-    var isReordering: js.UndefOr[Boolean] = js.native
+    var isReordering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of frozen columns, clamped to [0, num <Column>s].
       */
-    var numFrozenColumnsClamped: js.UndefOr[Double] = js.native
+    var numFrozenColumnsClamped: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of frozen rows, clamped to [0, numRows].
       */
-    var numFrozenRowsClamped: js.UndefOr[Double] = js.native
+    var numFrozenRowsClamped: js.UndefOr[Double] = js.undefined
     
     /**
       * An array of row heights. These are initialized updated when the user
       * drags row header resize handles.
       */
-    var rowHeights: js.UndefOr[js.Array[Double]] = js.native
+    var rowHeights: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * An array of Regions representing the selections of the table.
       */
-    var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.native
+    var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.undefined
     
     /**
       * An array of pixel offsets for resize guides, which are drawn over the
       * table body when a column is being resized.
       */
-    var verticalGuides: js.UndefOr[js.Array[Double]] = js.native
+    var verticalGuides: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * The `Rect` bounds of the viewport used to perform virtual viewport
       * performance enhancements.
       */
-    var viewportRect: js.UndefOr[Rect] = js.native
+    var viewportRect: js.UndefOr[Rect] = js.undefined
   }
   object ITableState {
     

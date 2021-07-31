@@ -6,21 +6,19 @@ import typings.jointjs.mod.attributes.SVGRectAttributes
 import typings.jointjs.mod.attributes.SVGTextAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderedImageSelectors extends StObject {
   
-  var background: js.UndefOr[SVGRectAttributes] = js.native
+  var background: js.UndefOr[SVGRectAttributes] = js.undefined
   
-  var border: js.UndefOr[SVGRectAttributes] = js.native
+  var border: js.UndefOr[SVGRectAttributes] = js.undefined
   
-  var image: js.UndefOr[SVGImageAttributes] = js.native
+  var image: js.UndefOr[SVGImageAttributes] = js.undefined
   
-  var label: js.UndefOr[SVGTextAttributes] = js.native
+  var label: js.UndefOr[SVGTextAttributes] = js.undefined
   
-  var root: js.UndefOr[SVGAttributes] = js.native
+  var root: js.UndefOr[SVGAttributes] = js.undefined
 }
 object BorderedImageSelectors {
   

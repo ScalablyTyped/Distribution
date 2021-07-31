@@ -6,15 +6,13 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.easeOut
 import typings.wechatMiniprogram.wechatMiniprogramStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 动画效果 */
-@js.native
 trait AnimationOption extends StObject {
   
   /** 动画变化时间，单位 ms */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** 动画变化方式
     *
@@ -23,7 +21,7 @@ trait AnimationOption extends StObject {
     * - 'easeIn': 动画以低速开始;
     * - 'easeOut': 动画以低速结束;
     * - 'easeInOut': 动画以低速开始和结束; */
-  var timingFunc: js.UndefOr[linear | easeIn | easeOut | easeInOut] = js.native
+  var timingFunc: js.UndefOr[linear | easeIn | easeOut | easeInOut] = js.undefined
 }
 object AnimationOption {
   

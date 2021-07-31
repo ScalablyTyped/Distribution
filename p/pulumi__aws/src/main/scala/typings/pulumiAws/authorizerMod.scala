@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authorizerMod {
@@ -91,6 +90,10 @@ object authorizerMod {
   /* static members */
   object Authorizer {
     
+    @JSImport("@pulumi/aws/apigatewayv2/authorizer", "Authorizer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Authorizer resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -100,92 +103,86 @@ object authorizerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/authorizer", "Authorizer.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Authorizer = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/authorizer", "Authorizer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Authorizer = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/authorizer", "Authorizer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AuthorizerState): Authorizer = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/authorizer", "Authorizer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AuthorizerState, opts: CustomResourceOptions): Authorizer = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AuthorizerState): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AuthorizerState, opts: CustomResourceOptions): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
     
     /**
       * Returns true if the given object is an instance of Authorizer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/authorizer", "Authorizer.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/authorizer.Authorizer */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/authorizer.Authorizer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/authorizer.Authorizer */ Boolean]
   }
   
-  @js.native
   trait AuthorizerArgs extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * The required credentials as an IAM role for API Gateway to invoke the authorizer.
       * Supported only for `REQUEST` authorizers.
       */
-    val authorizerCredentialsArn: js.UndefOr[Input[String]] = js.native
+    val authorizerCredentialsArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The format of the payload sent to an HTTP API Lambda authorizer. Required for HTTP API Lambda authorizers.
       * Valid values: `1.0`, `2.0`.
       */
-    val authorizerPayloadFormatVersion: js.UndefOr[Input[String]] = js.native
+    val authorizerPayloadFormatVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The time to live (TTL) for cached authorizer results, in seconds. If it equals 0, authorization caching is disabled.
       * If it is greater than 0, API Gateway caches authorizer responses. The maximum value is 3600, or 1 hour. Defaults to `300`.
       * Supported only for HTTP API Lambda authorizers.
       */
-    val authorizerResultTtlInSeconds: js.UndefOr[Input[Double]] = js.native
+    val authorizerResultTtlInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The authorizer type. Valid values: `JWT`, `REQUEST`.
       * Specify `REQUEST` for a Lambda function using incoming request parameters.
       * For HTTP APIs, specify `JWT` to use JSON Web Tokens.
       */
-    val authorizerType: Input[String] = js.native
+    val authorizerType: Input[String]
     
     /**
       * The authorizer's Uniform Resource Identifier (URI).
       * For `REQUEST` authorizers this must be a well-formed Lambda function URI, such as the `invokeArn` attribute of the `aws.lambda.Function` resource.
       * Supported only for `REQUEST` authorizers. Must be between 1 and 2048 characters in length.
       */
-    val authorizerUri: js.UndefOr[Input[String]] = js.native
+    val authorizerUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether a Lambda authorizer returns a response in a simple format. If enabled, the Lambda authorizer can return a boolean value instead of an IAM policy.
       * Supported only for HTTP APIs.
       */
-    val enableSimpleResponses: js.UndefOr[Input[Boolean]] = js.native
+    val enableSimpleResponses: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The identity sources for which authorization is requested.
       * For `REQUEST` authorizers the value is a list of one or more mapping expressions of the specified request parameters.
       * For `JWT` authorizers the single entry specifies where to extract the JSON Web Token (JWT) from inbound requests.
       */
-    val identitySources: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val identitySources: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The configuration of a JWT authorizer. Required for the `JWT` authorizer type.
       * Supported only for HTTP APIs.
       */
-    val jwtConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.AuthorizerJwtConfiguration]] = js.native
+    val jwtConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.AuthorizerJwtConfiguration]] = js.undefined
     
     /**
       * The name of the authorizer. Must be between 1 and 128 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object AuthorizerArgs {
     
@@ -257,70 +254,69 @@ object authorizerMod {
     }
   }
   
-  @js.native
   trait AuthorizerState extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The required credentials as an IAM role for API Gateway to invoke the authorizer.
       * Supported only for `REQUEST` authorizers.
       */
-    val authorizerCredentialsArn: js.UndefOr[Input[String]] = js.native
+    val authorizerCredentialsArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The format of the payload sent to an HTTP API Lambda authorizer. Required for HTTP API Lambda authorizers.
       * Valid values: `1.0`, `2.0`.
       */
-    val authorizerPayloadFormatVersion: js.UndefOr[Input[String]] = js.native
+    val authorizerPayloadFormatVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The time to live (TTL) for cached authorizer results, in seconds. If it equals 0, authorization caching is disabled.
       * If it is greater than 0, API Gateway caches authorizer responses. The maximum value is 3600, or 1 hour. Defaults to `300`.
       * Supported only for HTTP API Lambda authorizers.
       */
-    val authorizerResultTtlInSeconds: js.UndefOr[Input[Double]] = js.native
+    val authorizerResultTtlInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The authorizer type. Valid values: `JWT`, `REQUEST`.
       * Specify `REQUEST` for a Lambda function using incoming request parameters.
       * For HTTP APIs, specify `JWT` to use JSON Web Tokens.
       */
-    val authorizerType: js.UndefOr[Input[String]] = js.native
+    val authorizerType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The authorizer's Uniform Resource Identifier (URI).
       * For `REQUEST` authorizers this must be a well-formed Lambda function URI, such as the `invokeArn` attribute of the `aws.lambda.Function` resource.
       * Supported only for `REQUEST` authorizers. Must be between 1 and 2048 characters in length.
       */
-    val authorizerUri: js.UndefOr[Input[String]] = js.native
+    val authorizerUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether a Lambda authorizer returns a response in a simple format. If enabled, the Lambda authorizer can return a boolean value instead of an IAM policy.
       * Supported only for HTTP APIs.
       */
-    val enableSimpleResponses: js.UndefOr[Input[Boolean]] = js.native
+    val enableSimpleResponses: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The identity sources for which authorization is requested.
       * For `REQUEST` authorizers the value is a list of one or more mapping expressions of the specified request parameters.
       * For `JWT` authorizers the single entry specifies where to extract the JSON Web Token (JWT) from inbound requests.
       */
-    val identitySources: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val identitySources: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The configuration of a JWT authorizer. Required for the `JWT` authorizer type.
       * Supported only for HTTP APIs.
       */
-    val jwtConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.AuthorizerJwtConfiguration]] = js.native
+    val jwtConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.AuthorizerJwtConfiguration]] = js.undefined
     
     /**
       * The name of the authorizer. Must be between 1 and 128 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object AuthorizerState {
     

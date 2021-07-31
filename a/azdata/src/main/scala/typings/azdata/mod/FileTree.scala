@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileTree extends StObject {
   
-  var rootNode: FileTreeNode = js.native
+  var rootNode: FileTreeNode
   
-  var selectedNode: FileTreeNode = js.native
+  var selectedNode: FileTreeNode
 }
 object FileTree {
   

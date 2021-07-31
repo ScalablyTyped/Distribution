@@ -2,20 +2,18 @@ package typings.ts3NodejsLibrary.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ts3-nodejs-library.ts3-nodejs-library/lib/util/Permission.Permission.PermType> */
-@js.native
 trait PartialPermType extends StObject {
   
-  var permname: js.UndefOr[String | Double] = js.native
+  var permname: js.UndefOr[String | Double] = js.undefined
   
-  var permnegated: js.UndefOr[Boolean] = js.native
+  var permnegated: js.UndefOr[Boolean] = js.undefined
   
-  var permskip: js.UndefOr[Boolean] = js.native
+  var permskip: js.UndefOr[Boolean] = js.undefined
   
-  var permvalue: js.UndefOr[Double] = js.native
+  var permvalue: js.UndefOr[Double] = js.undefined
 }
 object PartialPermType {
   

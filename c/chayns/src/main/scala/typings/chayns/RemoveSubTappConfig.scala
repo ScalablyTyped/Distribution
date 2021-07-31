@@ -2,18 +2,16 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.removeSubTapp()
-@js.native
 trait RemoveSubTappConfig extends StObject {
   
-  var close: Boolean = js.native
+  var close: Boolean
   
-  var remove: Boolean = js.native
+  var remove: Boolean
   
-  var tappID: Double = js.native
+  var tappID: Double
 }
 object RemoveSubTappConfig {
   

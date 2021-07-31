@@ -5,45 +5,45 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to change the settings of a linked cell range.
   * @see com.sun.star.sheet.CellAreaLink
   */
-@js.native
-trait XAreaLink extends XInterface {
+trait XAreaLink
+  extends StObject
+     with XInterface {
   
   /** returns the position of the linked range in the destination document. */
-  var DestArea: CellRangeAddress = js.native
+  var DestArea: CellRangeAddress
   
   /**
     * returns the source of the range within the source document.
     *
     * This can be the address of a cell or range in the form "Sheet1.A1:C5", or the name of a named range or database range.
     */
-  var SourceArea: String = js.native
+  var SourceArea: String
   
   /** returns the position of the linked range in the destination document. */
-  def getDestArea(): CellRangeAddress = js.native
+  def getDestArea(): CellRangeAddress
   
   /**
     * returns the source of the range within the source document.
     *
     * This can be the address of a cell or range in the form "Sheet1.A1:C5", or the name of a named range or database range.
     */
-  def getSourceArea(): String = js.native
+  def getSourceArea(): String
   
   /** sets the position of the linked range in the destination document. */
-  def setDestArea(aDestArea: CellRangeAddress): Unit = js.native
+  def setDestArea(aDestArea: CellRangeAddress): Unit
   
   /**
     * sets the source of the range within the source document.
     *
     * This can be the address of a cell or range in the form "Sheet1.A1:C5", or the name of a named range or database range.
     */
-  def setSourceArea(aSourceArea: String): Unit = js.native
+  def setSourceArea(aSourceArea: String): Unit
 }
 object XAreaLink {
   

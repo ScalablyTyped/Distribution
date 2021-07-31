@@ -3,19 +3,17 @@ package typings.styleToObject
 import typings.styleToObject.mod.DeclarationPos
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait End extends StObject {
     
-    var end: DeclarationPos = js.native
+    var end: DeclarationPos
     
-    var source: js.Any = js.native
+    var source: js.Any
     
-    var start: DeclarationPos = js.native
+    var start: DeclarationPos
   }
   object End {
     

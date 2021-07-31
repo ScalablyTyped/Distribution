@@ -9,7 +9,6 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.agGrid.utilsMod.NumberSequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object infiniteCacheMod {
@@ -33,7 +32,7 @@ object infiniteCacheMod {
     
     /* private */ def insertItems(block: js.Any, indexToInsert: js.Any, items: js.Any): js.Any = js.native
     
-    def insertItemsAtIndex(indexToInsert: Double, items: js.Array[_]): Unit = js.native
+    def insertItemsAtIndex(indexToInsert: Double, items: js.Array[js.Any]): Unit = js.native
     
     /* private */ def moveItemsDown(block: js.Any, moveFromIndex: js.Any, moveCount: js.Any): js.Any = js.native
     
@@ -42,10 +41,11 @@ object infiniteCacheMod {
     /* private */ def setBeans(loggerFactory: js.Any): js.Any = js.native
   }
   
-  @js.native
-  trait InfiniteCacheParams extends RowNodeCacheParams {
+  trait InfiniteCacheParams
+    extends StObject
+       with RowNodeCacheParams {
     
-    var datasource: IDatasource = js.native
+    var datasource: IDatasource
   }
   object InfiniteCacheParams {
     

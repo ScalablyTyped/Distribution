@@ -45,10 +45,13 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-intl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-intl", "FormattedDate")
   @js.native
@@ -56,7 +59,7 @@ object mod {
   
   @JSImport("react-intl", "FormattedDateParts")
   @js.native
-  val FormattedDateParts: FC[FormatDateOptions with Children] = js.native
+  val FormattedDateParts: FC[FormatDateOptions & Children] = js.native
   
   @JSImport("react-intl", "FormattedDateTimeRange")
   @js.native
@@ -72,7 +75,7 @@ object mod {
   
   @JSImport("react-intl", "FormattedMessage")
   @js.native
-  class FormattedMessage[V /* <: Record[String, _] */] () extends default[V]
+  class FormattedMessage[V /* <: Record[String, js.Any] */] () extends default[V]
   object FormattedMessage {
     
     @JSImport("react-intl", "FormattedMessage")
@@ -93,20 +96,19 @@ object mod {
   
   @JSImport("react-intl", "FormattedNumberParts")
   @js.native
-  val FormattedNumberParts: FC[FormatNumberOptions with Value] = js.native
+  val FormattedNumberParts: FC[FormatNumberOptions & Value] = js.native
   
   /* Inlined react.react.FC<react-intl.react-intl/src/components/injectIntl.WithIntlProps<react-intl.react-intl/src/components/plural.Props>> & {  WrappedComponent :react.react.ComponentType<react-intl.react-intl/src/components/plural.Props>} */
   object FormattedPlural {
     
-    @JSImport("react-intl", "FormattedPlural")
-    @js.native
-    def apply(props: PropsWithChildren[WithIntlProps[typings.reactIntl.componentsPluralMod.Props]]): ReactElement | Null = js.native
-    @JSImport("react-intl", "FormattedPlural")
-    @js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[WithIntlProps[typings.reactIntl.componentsPluralMod.Props]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
     def apply(
       props: PropsWithChildren[WithIntlProps[typings.reactIntl.componentsPluralMod.Props]],
       context: js.Any
-    ): ReactElement | Null = js.native
+    ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("react-intl", "FormattedPlural")
     @js.native
     val ^ : js.Any = js.native
@@ -167,9 +169,8 @@ object mod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-intl", "FormattedRelativeTime.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: typings.reactIntl.componentsRelativeMod.Props, state: State): PartialStateCurrentValueInSeconds | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: typings.reactIntl.componentsRelativeMod.Props, state: State): PartialStateCurrentValueInSeconds | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialStateCurrentValueInSeconds | Null]
   }
   
   @JSImport("react-intl", "FormattedTime")
@@ -178,7 +179,7 @@ object mod {
   
   @JSImport("react-intl", "FormattedTimeParts")
   @js.native
-  val FormattedTimeParts: FC[FormatDateOptions with Children] = js.native
+  val FormattedTimeParts: FC[FormatDateOptions & Children] = js.native
   
   @JSImport("react-intl", "IntlContext")
   @js.native
@@ -207,9 +208,8 @@ object mod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-intl", "IntlProvider.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevConfigCache: typings.reactIntl.componentsProviderMod.State): PartialState | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevConfigCache: typings.reactIntl.componentsProviderMod.State): PartialState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], hasPrevConfigCache.asInstanceOf[js.Any])).asInstanceOf[PartialState | Null]
   }
   
   @JSImport("react-intl", "InvalidConfigError")
@@ -226,7 +226,7 @@ object mod {
     extends typings.formatjsIntl.mod.MessageFormatError {
     def this(message: String, locale: String) = this()
     def this(message: String, locale: String, descriptor: MessageDescriptor) = this()
-    def this(message: String, locale: String, descriptor: js.UndefOr[scala.Nothing], exception: Error) = this()
+    def this(message: String, locale: String, descriptor: Unit, exception: Error) = this()
     def this(message: String, locale: String, descriptor: MessageDescriptor, exception: Error) = this()
   }
   
@@ -268,32 +268,27 @@ object mod {
   @js.native
   val createIntl: CreateIntlFn[ReactNode, OptionalIntlConfig, IntlShape] = js.native
   
-  @JSImport("react-intl", "createIntlCache")
-  @js.native
-  def createIntlCache(): IntlCache = js.native
+  @scala.inline
+  def createIntlCache(): IntlCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createIntlCache")().asInstanceOf[IntlCache]
   
-  @JSImport("react-intl", "defineMessage")
-  @js.native
-  def defineMessage[T](msg: T): T = js.native
+  @scala.inline
+  def defineMessage[T](msg: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("defineMessage")(msg.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("react-intl", "defineMessages")
-  @js.native
-  def defineMessages[K /* <: /* keyof any */ String */, T, U /* <: Record[K, T] */](msgs: U): U = js.native
+  @scala.inline
+  def defineMessages[K /* <: /* keyof any */ String */, T, U /* <: Record[K, T] */](msgs: U): U = ^.asInstanceOf[js.Dynamic].applyDynamic("defineMessages")(msgs.asInstanceOf[js.Any]).asInstanceOf[U]
   
-  @JSImport("react-intl", "injectIntl")
-  @js.native
-  def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] with (WrappedComponent[P, IntlPropName]) = js.native
-  @JSImport("react-intl", "injectIntl")
-  @js.native
-  def injectIntl_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] with RefAttributes[T]]) with (WrappedComponent[P, IntlPropName]) = js.native
-  @JSImport("react-intl", "injectIntl")
-  @js.native
-  def injectIntl_false[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] with (WrappedComponent[P, IntlPropName]) = js.native
-  @JSImport("react-intl", "injectIntl")
-  @js.native
-  def injectIntl_true[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `true`]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] with RefAttributes[T]]) with (WrappedComponent[P, IntlPropName]) = js.native
+  @scala.inline
+  def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName]) = ^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName])]
   
-  @JSImport("react-intl", "useIntl")
-  @js.native
-  def useIntl(): IntlShape = js.native
+  @scala.inline
+  def injectIntl_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName]) = ^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[(ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName])]
+  
+  @scala.inline
+  def injectIntl_false[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName]) = (^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName])]
+  
+  @scala.inline
+  def injectIntl_true[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `true`]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName]) = (^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName])]
+  
+  @scala.inline
+  def useIntl(): IntlShape = ^.asInstanceOf[js.Dynamic].applyDynamic("useIntl")().asInstanceOf[IntlShape]
 }

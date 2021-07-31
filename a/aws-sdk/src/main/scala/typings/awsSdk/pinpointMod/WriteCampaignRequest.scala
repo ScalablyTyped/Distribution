@@ -2,91 +2,89 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteCampaignRequest extends StObject {
   
   /**
     * An array of requests that defines additional treatments for the campaign, in addition to the default treatment for the campaign.
     */
-  var AdditionalTreatments: js.UndefOr[ListOfWriteTreatmentResource] = js.native
+  var AdditionalTreatments: js.UndefOr[ListOfWriteTreatmentResource] = js.undefined
   
   /**
     * The delivery configuration settings for sending the campaign through a custom channel. This object is required if the MessageConfiguration object for the campaign specifies a CustomMessage object.
     */
-  var CustomDeliveryConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.CustomDeliveryConfiguration] = js.native
+  var CustomDeliveryConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.CustomDeliveryConfiguration] = js.undefined
   
   /**
     * A custom description of the campaign.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The allocated percentage of users (segment members) who shouldn't receive messages from the campaign.
     */
-  var HoldoutPercent: js.UndefOr[integer] = js.native
+  var HoldoutPercent: js.UndefOr[integer] = js.undefined
   
   /**
     * The settings for the AWS Lambda function to invoke as a code hook for the campaign. You can use this hook to customize the segment that's used by the campaign.
     */
-  var Hook: js.UndefOr[CampaignHook] = js.native
+  var Hook: js.UndefOr[CampaignHook] = js.undefined
   
   /**
     * Specifies whether to pause the campaign. A paused campaign doesn't run unless you resume it by changing this value to false.
     */
-  var IsPaused: js.UndefOr[boolean] = js.native
+  var IsPaused: js.UndefOr[boolean] = js.undefined
   
   /**
     * The messaging limits for the campaign.
     */
-  var Limits: js.UndefOr[CampaignLimits] = js.native
+  var Limits: js.UndefOr[CampaignLimits] = js.undefined
   
   /**
     * The message configuration settings for the campaign.
     */
-  var MessageConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.MessageConfiguration] = js.native
+  var MessageConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.MessageConfiguration] = js.undefined
   
   /**
     * A custom name for the campaign.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * The schedule settings for the campaign.
     */
-  var Schedule: js.UndefOr[typings.awsSdk.pinpointMod.Schedule] = js.native
+  var Schedule: js.UndefOr[typings.awsSdk.pinpointMod.Schedule] = js.undefined
   
   /**
     * The unique identifier for the segment to associate with the campaign.
     */
-  var SegmentId: js.UndefOr[string] = js.native
+  var SegmentId: js.UndefOr[string] = js.undefined
   
   /**
     * The version of the segment to associate with the campaign.
     */
-  var SegmentVersion: js.UndefOr[integer] = js.native
+  var SegmentVersion: js.UndefOr[integer] = js.undefined
   
   /**
     * The message template to use for the campaign.
     */
-  var TemplateConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.TemplateConfiguration] = js.native
+  var TemplateConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.TemplateConfiguration] = js.undefined
   
   /**
     * A custom description of the default treatment for the campaign.
     */
-  var TreatmentDescription: js.UndefOr[string] = js.native
+  var TreatmentDescription: js.UndefOr[string] = js.undefined
   
   /**
     * A custom name of the default treatment for the campaign, if the campaign has multiple treatments. A treatment is a variation of a campaign that's used for A/B testing.
     */
-  var TreatmentName: js.UndefOr[string] = js.native
+  var TreatmentName: js.UndefOr[string] = js.undefined
   
   /**
     * A string-to-string map of key-value pairs that defines the tags to associate with the campaign. Each tag consists of a required tag key and an associated tag value.
     */
-  var tags: js.UndefOr[MapOfString] = js.native
+  var tags: js.UndefOr[MapOfString] = js.undefined
 }
 object WriteCampaignRequest {
   

@@ -2,15 +2,13 @@ package typings.sparkpost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dkimrecord extends StObject {
   
-  var dkim_record: String = js.native
+  var dkim_record: String
   
-  var spf_record: String = js.native
+  var spf_record: String
 }
 object Dkimrecord {
   

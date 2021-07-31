@@ -2,39 +2,37 @@ package typings.apolloProtobufjs.descriptorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFileOptions extends StObject {
   
-  var ccEnableArenas: js.UndefOr[Boolean] = js.native
+  var ccEnableArenas: js.UndefOr[Boolean] = js.undefined
   
-  var ccGenericServices: js.UndefOr[Boolean] = js.native
+  var ccGenericServices: js.UndefOr[Boolean] = js.undefined
   
-  var csharpNamespace: js.UndefOr[String] = js.native
+  var csharpNamespace: js.UndefOr[String] = js.undefined
   
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   
-  var goPackage: js.UndefOr[String] = js.native
+  var goPackage: js.UndefOr[String] = js.undefined
   
-  var javaGenerateEqualsAndHash: js.UndefOr[Boolean] = js.native
+  var javaGenerateEqualsAndHash: js.UndefOr[Boolean] = js.undefined
   
-  var javaGenericServices: js.UndefOr[Boolean] = js.native
+  var javaGenericServices: js.UndefOr[Boolean] = js.undefined
   
-  var javaMultipleFiles: js.UndefOr[Boolean] = js.native
+  var javaMultipleFiles: js.UndefOr[Boolean] = js.undefined
   
-  var javaOuterClassname: js.UndefOr[String] = js.native
+  var javaOuterClassname: js.UndefOr[String] = js.undefined
   
-  var javaPackage: js.UndefOr[String] = js.native
+  var javaPackage: js.UndefOr[String] = js.undefined
   
-  var javaStringCheckUtf8: js.UndefOr[Boolean] = js.native
+  var javaStringCheckUtf8: js.UndefOr[Boolean] = js.undefined
   
-  var objcClassPrefix: js.UndefOr[String] = js.native
+  var objcClassPrefix: js.UndefOr[String] = js.undefined
   
-  var optimizeFor: js.UndefOr[IFileOptionsOptimizeMode] = js.native
+  var optimizeFor: js.UndefOr[IFileOptionsOptimizeMode] = js.undefined
   
-  var pyGenericServices: js.UndefOr[Boolean] = js.native
+  var pyGenericServices: js.UndefOr[Boolean] = js.undefined
 }
 object IFileOptions {
   

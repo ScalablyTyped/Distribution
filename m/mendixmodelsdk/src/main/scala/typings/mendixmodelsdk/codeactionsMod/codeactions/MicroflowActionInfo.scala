@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.microflowsMod.microflows.Microflow
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -76,9 +75,8 @@ object MicroflowActionInfo {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.MicroflowActionInfo.create")
-  @js.native
-  def create(model: IModel): MicroflowActionInfo = js.native
+  @scala.inline
+  def create(model: IModel): MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MicroflowActionInfo]
   
   /**
     * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
@@ -89,9 +87,8 @@ object MicroflowActionInfo {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.MicroflowActionInfo.createIn")
-  @js.native
-  def createIn(container: CodeAction): MicroflowActionInfo = js.native
+  @scala.inline
+  def createIn(container: CodeAction): MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowActionInfo]
   
   /**
     * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
@@ -102,9 +99,8 @@ object MicroflowActionInfo {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.MicroflowActionInfo.createInCodeActionUnderModelerActionInfo")
-  @js.native
-  def createInCodeActionUnderModelerActionInfo(container: CodeAction): MicroflowActionInfo = js.native
+  @scala.inline
+  def createInCodeActionUnderModelerActionInfo(container: CodeAction): MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderModelerActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowActionInfo]
   
   /**
     * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
@@ -115,9 +111,8 @@ object MicroflowActionInfo {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.MicroflowActionInfo.createInMicroflowUnderMicroflowActionInfo")
-  @js.native
-  def createInMicroflowUnderMicroflowActionInfo(container: Microflow): MicroflowActionInfo = js.native
+  @scala.inline
+  def createInMicroflowUnderMicroflowActionInfo(container: Microflow): MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderMicroflowActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowActionInfo]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.MicroflowActionInfo.structureTypeName")

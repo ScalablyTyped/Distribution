@@ -2,63 +2,61 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Backup extends StObject {
   
   /**
     * The ID of the backup.
     */
-  var BackupId: typings.awsSdk.fsxMod.BackupId = js.native
+  var BackupId: typings.awsSdk.fsxMod.BackupId
   
   /**
     * The time when a particular backup was created.
     */
-  var CreationTime: typings.awsSdk.fsxMod.CreationTime = js.native
+  var CreationTime: typings.awsSdk.fsxMod.CreationTime
   
   /**
     * The configuration of the self-managed Microsoft Active Directory (AD) to which the Windows File Server instance is joined.
     */
-  var DirectoryInformation: js.UndefOr[ActiveDirectoryBackupAttributes] = js.native
+  var DirectoryInformation: js.UndefOr[ActiveDirectoryBackupAttributes] = js.undefined
   
   /**
     * Details explaining any failures that occur when creating a backup.
     */
-  var FailureDetails: js.UndefOr[BackupFailureDetails] = js.native
+  var FailureDetails: js.UndefOr[BackupFailureDetails] = js.undefined
   
   /**
     * Metadata of the file system associated with the backup. This metadata is persisted even if the file system is deleted.
     */
-  var FileSystem: typings.awsSdk.fsxMod.FileSystem = js.native
+  var FileSystem: typings.awsSdk.fsxMod.FileSystem
   
   /**
     * The ID of the AWS Key Management Service (AWS KMS) key used to encrypt the backup of the Amazon FSx file system's data at rest. 
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.fsxMod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.fsxMod.KmsKeyId] = js.undefined
   
   /**
     * The lifecycle status of the backup.    AVAILABLE - The backup is fully available.    CREATING - FSx is creating the backup.    TRANSFERRING - For Lustre file systems only; FSx is transferring the backup to S3.    DELETED - The backup was deleted is no longer available.    FAILED - Amazon FSx could not complete the backup.  
     */
-  var Lifecycle: BackupLifecycle = js.native
+  var Lifecycle: BackupLifecycle
   
-  var ProgressPercent: js.UndefOr[typings.awsSdk.fsxMod.ProgressPercent] = js.native
+  var ProgressPercent: js.UndefOr[typings.awsSdk.fsxMod.ProgressPercent] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the backup resource.
     */
-  var ResourceARN: js.UndefOr[typings.awsSdk.fsxMod.ResourceARN] = js.native
+  var ResourceARN: js.UndefOr[typings.awsSdk.fsxMod.ResourceARN] = js.undefined
   
   /**
     * Tags associated with a particular file system.
     */
-  var Tags: js.UndefOr[typings.awsSdk.fsxMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.fsxMod.Tags] = js.undefined
   
   /**
     * The type of the file system backup.
     */
-  var Type: BackupType = js.native
+  var Type: BackupType
 }
 object Backup {
   

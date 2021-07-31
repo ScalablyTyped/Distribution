@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateVpcLinkRequest extends StObject {
   
   /**
     * A list of update operations to be applied to the specified resource and in the order specified in this list.
     */
-  var patchOperations: js.UndefOr[ListOfPatchOperation] = js.native
+  var patchOperations: js.UndefOr[ListOfPatchOperation] = js.undefined
   
   /**
     * [Required] The identifier of the VpcLink. It is used in an Integration to reference this VpcLink.
     */
-  var vpcLinkId: String = js.native
+  var vpcLinkId: String
 }
 object UpdateVpcLinkRequest {
   

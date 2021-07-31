@@ -2,15 +2,13 @@ package typings.wordpressApiFetch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtectedRaw extends StObject {
   
-  var `protected`: Boolean = js.native
+  var `protected`: Boolean
   
-  var raw: String = js.native
+  var raw: String
 }
 object ProtectedRaw {
   

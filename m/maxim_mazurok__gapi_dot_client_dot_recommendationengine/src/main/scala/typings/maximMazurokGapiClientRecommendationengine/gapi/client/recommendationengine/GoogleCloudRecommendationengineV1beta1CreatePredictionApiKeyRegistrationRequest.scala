@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest extends StObject {
   
   /** Required. The prediction API key registration. */
-  var predictionApiKeyRegistration: js.UndefOr[GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration] = js.native
+  var predictionApiKeyRegistration: js.UndefOr[GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest {
   

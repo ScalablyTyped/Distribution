@@ -5,7 +5,6 @@ import typings.firebaseDatabase.mod.firebaseAppTypesAugmentingMod.FirebaseApp
 import typings.firebaseDatabaseTypes.mod.FirebaseDatabase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,11 +18,11 @@ trait Call extends StObject {
   var ServerValue: typings.firebaseDatabaseTypes.mod.ServerValue = js.native
   
   def enableLogging(): js.Any = js.native
-  def enableLogging(logger: js.UndefOr[scala.Nothing], persistent: Boolean): js.Any = js.native
-  def enableLogging(logger: js.Function1[/* a */ String, _]): js.Any = js.native
-  def enableLogging(logger: js.Function1[/* a */ String, _], persistent: Boolean): js.Any = js.native
+  def enableLogging(logger: js.Function1[/* a */ String, js.Any]): js.Any = js.native
+  def enableLogging(logger: js.Function1[/* a */ String, js.Any], persistent: Boolean): js.Any = js.native
   def enableLogging(logger: Boolean): js.Any = js.native
   def enableLogging(logger: Boolean, persistent: Boolean): js.Any = js.native
+  def enableLogging(logger: Unit, persistent: Boolean): js.Any = js.native
   @JSName("enableLogging")
   var enableLogging_Original: FnCall = js.native
 }

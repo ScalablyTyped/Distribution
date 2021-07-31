@@ -2,19 +2,20 @@ package typings.weightedRandomObject
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T /* <: Weighted */](objects: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].apply(objects.asInstanceOf[js.Any]).asInstanceOf[T]
+  
   @JSImport("weighted-random-object", JSImport.Namespace)
   @js.native
-  def apply[T /* <: Weighted */](objects: js.Array[T]): T = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Weighted extends StObject {
     
-    var weight: Double = js.native
+    var weight: Double
   }
   object Weighted {
     

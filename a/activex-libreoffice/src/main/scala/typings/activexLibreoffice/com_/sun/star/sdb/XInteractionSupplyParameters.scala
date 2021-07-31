@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This continuation is typically used in conjunction with a {@link com.sun.star.sdb.ParametersRequest} .
   */
-@js.native
-trait XInteractionSupplyParameters extends XInteractionContinuation {
+trait XInteractionSupplyParameters
+  extends StObject
+     with XInteractionContinuation {
   
   /**
     * set the parameters chosen by the interaction handler
     * @param Values the parameters to set
     */
-  def setParameters(Values: SeqEquiv[PropertyValue]): Unit = js.native
+  def setParameters(Values: SeqEquiv[PropertyValue]): Unit
 }
 object XInteractionSupplyParameters {
   

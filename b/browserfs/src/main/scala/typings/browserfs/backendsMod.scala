@@ -23,7 +23,6 @@ import typings.node.Buffer
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backendsMod {
@@ -138,12 +137,12 @@ object backendsMod {
     class HTML5FS ()
       extends typings.browserfs.html5fsMod.default {
       def this(size: Double) = this()
-      def this(size: js.UndefOr[scala.Nothing], `type`: Double) = this()
       def this(size: Double, `type`: Double) = this()
-      def this(size: js.UndefOr[scala.Nothing], `type`: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
-      def this(size: js.UndefOr[scala.Nothing], `type`: Double, deprecateMsg: Boolean) = this()
-      def this(size: Double, `type`: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
+      def this(size: Unit, `type`: Double) = this()
       def this(size: Double, `type`: Double, deprecateMsg: Boolean) = this()
+      def this(size: Double, `type`: Unit, deprecateMsg: Boolean) = this()
+      def this(size: Unit, `type`: Double, deprecateMsg: Boolean) = this()
+      def this(size: Unit, `type`: Unit, deprecateMsg: Boolean) = this()
     }
     @JSImport("browserfs/dist/node/core/backends", "default.HTML5FS")
     @js.native
@@ -179,8 +178,8 @@ object backendsMod {
         */
       def this(cb: BFSCallback[IndexedDBFileSystem]) = this()
       def this(cb: BFSCallback[IndexedDBFileSystem], storeName: String) = this()
-      def this(cb: BFSCallback[IndexedDBFileSystem], storeName: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
       def this(cb: BFSCallback[IndexedDBFileSystem], storeName: String, deprecateMsg: Boolean) = this()
+      def this(cb: BFSCallback[IndexedDBFileSystem], storeName: Unit, deprecateMsg: Boolean) = this()
     }
     @JSImport("browserfs/dist/node/core/backends", "default.IndexedDB")
     @js.native
@@ -202,8 +201,8 @@ object backendsMod {
         */
       def this(data: Buffer) = this()
       def this(data: Buffer, name: String) = this()
-      def this(data: Buffer, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
       def this(data: Buffer, name: String, deprecateMsg: Boolean) = this()
+      def this(data: Buffer, name: Unit, deprecateMsg: Boolean) = this()
     }
     @JSImport("browserfs/dist/node/core/backends", "default.IsoFS")
     @js.native
@@ -303,10 +302,10 @@ object backendsMod {
       def this(listingUrlOrObj: js.Object) = this()
       def this(listingUrlOrObj: String, prefixUrl: String) = this()
       def this(listingUrlOrObj: js.Object, prefixUrl: String) = this()
-      def this(listingUrlOrObj: String, prefixUrl: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
       def this(listingUrlOrObj: String, prefixUrl: String, deprecateMsg: Boolean) = this()
-      def this(listingUrlOrObj: js.Object, prefixUrl: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
+      def this(listingUrlOrObj: String, prefixUrl: Unit, deprecateMsg: Boolean) = this()
       def this(listingUrlOrObj: js.Object, prefixUrl: String, deprecateMsg: Boolean) = this()
+      def this(listingUrlOrObj: js.Object, prefixUrl: Unit, deprecateMsg: Boolean) = this()
     }
     @JSImport("browserfs/dist/node/core/backends", "default.XmlHttpRequest")
     @js.native
@@ -326,10 +325,10 @@ object backendsMod {
       def this(input: Buffer) = this()
       def this(input: ZipTOC, name: String) = this()
       def this(input: Buffer, name: String) = this()
-      def this(input: ZipTOC, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
       def this(input: ZipTOC, name: String, deprecateMsg: Boolean) = this()
-      def this(input: Buffer, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
+      def this(input: ZipTOC, name: Unit, deprecateMsg: Boolean) = this()
       def this(input: Buffer, name: String, deprecateMsg: Boolean) = this()
+      def this(input: Buffer, name: Unit, deprecateMsg: Boolean) = this()
     }
     @JSImport("browserfs/dist/node/core/backends", "default.ZipFS")
     @js.native

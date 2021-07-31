@@ -2,27 +2,25 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TapTargetOptions> * / any */ @js.native
-trait TapTarget extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TapTargetOptions> * / any */ trait TapTarget extends StObject {
   
   /**
     * Close Tap Target
     */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * If the tap target is open
     */
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
   /**
     * Open Tap Target
     */
-  def open(): Unit = js.native
+  def open(): Unit
 }
 object TapTarget {
   

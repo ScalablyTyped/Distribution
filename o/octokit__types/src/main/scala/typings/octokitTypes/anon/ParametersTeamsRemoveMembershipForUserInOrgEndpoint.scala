@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.TeamsRemoveMembershipForUserInOrgReques
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersTeamsRemoveMembershipForUserInOrgEndpoint extends StObject {
   
-  var parameters: TeamsRemoveMembershipForUserInOrgEndpoint = js.native
+  var parameters: TeamsRemoveMembershipForUserInOrgEndpoint
   
-  var request: TeamsRemoveMembershipForUserInOrgRequestOptions = js.native
+  var request: TeamsRemoveMembershipForUserInOrgRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersTeamsRemoveMembershipForUserInOrgEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersTeamsRemoveMembershipForUserInOrgEndpoint {
   def apply(
     parameters: TeamsRemoveMembershipForUserInOrgEndpoint,
     request: TeamsRemoveMembershipForUserInOrgRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersTeamsRemoveMembershipForUserInOrgEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersTeamsRemoveMembershipForUserInOrgEndpoint]
@@ -39,6 +37,6 @@ object ParametersTeamsRemoveMembershipForUserInOrgEndpoint {
     def setRequest(value: TeamsRemoveMembershipForUserInOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

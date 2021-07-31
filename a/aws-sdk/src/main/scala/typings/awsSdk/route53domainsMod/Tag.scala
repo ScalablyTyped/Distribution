@@ -2,21 +2,19 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The key (name) of a tag. Valid values: A-Z, a-z, 0-9, space, ".:/=+\-@" Constraints: Each key can be 1-128 characters long.
     */
-  var Key: js.UndefOr[TagKey] = js.native
+  var Key: js.UndefOr[TagKey] = js.undefined
   
   /**
     * The value of a tag. Valid values: A-Z, a-z, 0-9, space, ".:/=+\-@" Constraints: Each value can be 0-256 characters long.
     */
-  var Value: js.UndefOr[TagValue] = js.native
+  var Value: js.UndefOr[TagValue] = js.undefined
 }
 object Tag {
   

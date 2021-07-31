@@ -12,7 +12,7 @@ Poisson distribution quantile function.
 | Keywords           | distributions.io, distributions, probability, statistics, stats, cdf, inverse, discrete, counts |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 5838 |
+| # downloads        | 11219 |
 | # stars            | 0 |
 
 ## Links

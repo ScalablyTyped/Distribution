@@ -2,29 +2,27 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A coordinate in a sheet. All indexes are zero-based.
   */
-@js.native
 trait SchemaGridCoordinate extends StObject {
   
   /**
     * The column index of the coordinate.
     */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The row index of the coordinate.
     */
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The sheet this coordinate is on.
     */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
 }
 object SchemaGridCoordinate {
   

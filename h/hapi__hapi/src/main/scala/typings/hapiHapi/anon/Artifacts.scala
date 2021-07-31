@@ -3,28 +3,26 @@ package typings.hapiHapi.anon
 import typings.hapiHapi.mod.AuthCredentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Artifacts extends StObject {
   
   /**
     * The artifacts are used to bypass the default authentication strategies,
     * and are validated directly as if they were received via an authentication scheme. Defaults to no artifacts.
     */
-  var artifacts: js.UndefOr[js.Object] = js.native
+  var artifacts: js.UndefOr[js.Object] = js.undefined
   
   /**
     * The credentials are used to bypass the default authentication strategies,
     * and are validated directly as if they were received via an authentication scheme.
     */
-  var credentials: AuthCredentials = js.native
+  var credentials: AuthCredentials
   
   /**
     * The authentication strategy name matching the provided credentials.
     */
-  var strategy: String = js.native
+  var strategy: String
 }
 object Artifacts {
   

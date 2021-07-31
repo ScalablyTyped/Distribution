@@ -3,20 +3,19 @@ package typings.typescript.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WatchOptions
-  extends /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] {
+  extends StObject
+     with /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] {
   
-  var fallbackPolling: js.UndefOr[PollingWatchKind] = js.native
+  var fallbackPolling: js.UndefOr[PollingWatchKind] = js.undefined
   
-  var synchronousWatchDirectory: js.UndefOr[Boolean] = js.native
+  var synchronousWatchDirectory: js.UndefOr[Boolean] = js.undefined
   
-  var watchDirectory: js.UndefOr[WatchDirectoryKind] = js.native
+  var watchDirectory: js.UndefOr[WatchDirectoryKind] = js.undefined
   
-  var watchFile: js.UndefOr[WatchFileKind] = js.native
+  var watchFile: js.UndefOr[WatchFileKind] = js.undefined
 }
 object WatchOptions {
   

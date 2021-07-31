@@ -40,7 +40,6 @@ import typings.node.streamMod.Transform
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriberClientMod {
@@ -186,7 +185,7 @@ object subscriberClientMod {
     def getIamPolicy(request: GetIamPolicyRequest): js.Promise[Policy] = js.native
     def getIamPolicy(
       request: GetIamPolicyRequest,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: Callback[Policy, js.UndefOr[GetIamPolicyRequest | Null], js.UndefOr[js.Object | Null]]
     ): js.Promise[Policy] = js.native
     def getIamPolicy(
@@ -206,7 +205,7 @@ object subscriberClientMod {
     ): js.Promise[Policy] = js.native
     
     def getProjectId(): js.Promise[String] = js.native
-    def getProjectId(callback: Callback[String, js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]): Unit = js.native
+    def getProjectId(callback: Callback[String, Unit, Unit]): Unit = js.native
     
     def getSnapshot(request: IGetSnapshotRequest): js.Promise[js.Tuple3[ISnapshot, js.UndefOr[IGetSnapshotRequest], js.UndefOr[js.Object]]] = js.native
     def getSnapshot(
@@ -299,7 +298,7 @@ object subscriberClientMod {
       *   An iterable Object that conforms to @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols.
       */
     def listSnapshotsAsync(): AsyncIterable[ISnapshot] = js.native
-    def listSnapshotsAsync(request: js.UndefOr[scala.Nothing], options: CallOptions): AsyncIterable[ISnapshot] = js.native
+    def listSnapshotsAsync(request: Unit, options: CallOptions): AsyncIterable[ISnapshot] = js.native
     def listSnapshotsAsync(request: IListSnapshotsRequest): AsyncIterable[ISnapshot] = js.native
     def listSnapshotsAsync(request: IListSnapshotsRequest, options: CallOptions): AsyncIterable[ISnapshot] = js.native
     
@@ -333,7 +332,7 @@ object subscriberClientMod {
       *   An object stream which emits an object representing [Snapshot]{@link google.pubsub.v1.Snapshot} on 'data' event.
       */
     def listSnapshotsStream(): Transform = js.native
-    def listSnapshotsStream(request: js.UndefOr[scala.Nothing], options: CallOptions): Transform = js.native
+    def listSnapshotsStream(request: Unit, options: CallOptions): Transform = js.native
     def listSnapshotsStream(request: IListSnapshotsRequest): Transform = js.native
     def listSnapshotsStream(request: IListSnapshotsRequest, options: CallOptions): Transform = js.native
     
@@ -391,7 +390,7 @@ object subscriberClientMod {
       *   An iterable Object that conforms to @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols.
       */
     def listSubscriptionsAsync(): AsyncIterable[ISubscription] = js.native
-    def listSubscriptionsAsync(request: js.UndefOr[scala.Nothing], options: CallOptions): AsyncIterable[ISubscription] = js.native
+    def listSubscriptionsAsync(request: Unit, options: CallOptions): AsyncIterable[ISubscription] = js.native
     def listSubscriptionsAsync(request: IListSubscriptionsRequest): AsyncIterable[ISubscription] = js.native
     def listSubscriptionsAsync(request: IListSubscriptionsRequest, options: CallOptions): AsyncIterable[ISubscription] = js.native
     
@@ -425,7 +424,7 @@ object subscriberClientMod {
       *   An object stream which emits an object representing [Subscription]{@link google.pubsub.v1.Subscription} on 'data' event.
       */
     def listSubscriptionsStream(): Transform = js.native
-    def listSubscriptionsStream(request: js.UndefOr[scala.Nothing], options: CallOptions): Transform = js.native
+    def listSubscriptionsStream(request: Unit, options: CallOptions): Transform = js.native
     def listSubscriptionsStream(request: IListSubscriptionsRequest): Transform = js.native
     def listSubscriptionsStream(request: IListSubscriptionsRequest, options: CallOptions): Transform = js.native
     
@@ -592,7 +591,7 @@ object subscriberClientMod {
     def setIamPolicy(request: SetIamPolicyRequest): js.Promise[Policy] = js.native
     def setIamPolicy(
       request: SetIamPolicyRequest,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: Callback[Policy, js.UndefOr[SetIamPolicyRequest | Null], js.UndefOr[js.Object | Null]]
     ): js.Promise[Policy] = js.native
     def setIamPolicy(
@@ -684,7 +683,7 @@ object subscriberClientMod {
     def testIamPermissions(request: TestIamPermissionsRequest): js.Promise[TestIamPermissionsResponse] = js.native
     def testIamPermissions(
       request: TestIamPermissionsRequest,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: Callback[
           TestIamPermissionsResponse, 
           js.UndefOr[TestIamPermissionsRequest | Null], 

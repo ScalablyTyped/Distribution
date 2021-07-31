@@ -2,21 +2,19 @@ package typings.itunesconnectanalytics.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsResult extends StObject {
   
-  var adamId: String = js.native
+  var adamId: String
   
-  var data: js.Array[AnalyticsDataPoint] = js.native
+  var data: js.Array[AnalyticsDataPoint]
   
-  var group: AnalyticsGroup | Null = js.native
+  var group: AnalyticsGroup | Null
   
-  var meetsThreshold: Boolean = js.native
+  var meetsThreshold: Boolean
   
-  var totals: AnalyticsTotals = js.native
+  var totals: AnalyticsTotals
 }
 object AnalyticsResult {
   
@@ -27,7 +25,7 @@ object AnalyticsResult {
     meetsThreshold: Boolean,
     totals: AnalyticsTotals
   ): AnalyticsResult = {
-    val __obj = js.Dynamic.literal(adamId = adamId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], meetsThreshold = meetsThreshold.asInstanceOf[js.Any], totals = totals.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adamId = adamId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], meetsThreshold = meetsThreshold.asInstanceOf[js.Any], totals = totals.asInstanceOf[js.Any], group = null)
     __obj.asInstanceOf[AnalyticsResult]
   }
   

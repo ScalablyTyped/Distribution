@@ -10,9 +10,9 @@ CSS-Element-Queries Polyfill. Proof-of-concept for high-speed element dimension/
 | ------------------ | :-------------: |
 | Full name          | css-element-queries |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 164 |
-| # downloads        | 6483815 |
+| # releases         | 5 |
+| # dependents       | 166 |
+| # downloads        | 7263718 |
 | # stars            | 8 |
 
 ## Links

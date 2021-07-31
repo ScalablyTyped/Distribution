@@ -2,13 +2,11 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartSeriesItemTargetLine extends StObject {
   
-  var width: js.UndefOr[Double | js.Function] = js.native
+  var width: js.UndefOr[Double | js.Function] = js.undefined
 }
 object ChartSeriesItemTargetLine {
   

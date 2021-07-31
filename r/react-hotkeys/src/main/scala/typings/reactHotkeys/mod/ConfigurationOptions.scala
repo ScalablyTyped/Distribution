@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationOptions extends StObject {
   
   /**
@@ -15,74 +13,74 @@ trait ConfigurationOptions extends StObject {
     * cmd, pressing shift+cmd will *not* trigger that action when
     * allowCombinationSubmatches is false.
     */
-  var allowCombinationSubmatches: js.UndefOr[Boolean] = js.native
+  var allowCombinationSubmatches: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A mapping of custom key codes to key names that you can then use in your
     * key sequences
     */
-  var customKeyCodes: js.UndefOr[NumberDictionary[String]] = js.native
+  var customKeyCodes: js.UndefOr[NumberDictionary[String]] = js.undefined
   
   /**
     * The default component type to wrap HotKey components' children in, to provide
     * the required focus and keyboard event listening for HotKeys to function
     */
-  var defaultComponent: js.UndefOr[ReactComponent] = js.native
+  var defaultComponent: js.UndefOr[ReactComponent] = js.undefined
   
   /**
     * The default key event key maps are bound to, if left unspecified
     */
-  var defaultKeyEvent: js.UndefOr[KeyEventName] = js.native
+  var defaultKeyEvent: js.UndefOr[KeyEventName] = js.undefined
   
   /**
     * The default tabIndex value passed to the wrapping component used to contain
     * HotKey components' children. -1 skips focusing the element when tabbing through
     * the DOM, but allows focusing programmatically.
     */
-  var defaultTabIndex: js.UndefOr[TabIndex] = js.native
+  var defaultTabIndex: js.UndefOr[TabIndex] = js.undefined
   
   /**
     * Whether to allow hard sequences, or the binding of handlers to actions that have
     * names that are valid key sequences, which implicitly define actions that are
     * triggered by that key sequence
     */
-  var enableHardSequences: js.UndefOr[Boolean] = js.native
+  var enableHardSequences: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The function used to determine whether a key event should be ignored by React
     * Hotkeys. By default, keyboard events originating elements with a tag name in
     * ignoreTags, or a isContentEditable property of true, are ignored.
     */
-  var ignoreEventsCondition: js.UndefOr[js.Function1[/* keyEvent */ KeyboardEvent, Boolean]] = js.native
+  var ignoreEventsCondition: js.UndefOr[js.Function1[/* keyEvent */ KeyboardEvent, Boolean]] = js.undefined
   
   /**
     * Whether to ignore changes to keyMap and handlers props by default (this reduces
     * a significant amount of unnecessarily resetting internal state)
     */
-  var ignoreKeymapAndHandlerChangesByDefault: js.UndefOr[Boolean] = js.native
+  var ignoreKeymapAndHandlerChangesByDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to ignore repeated keyboard events when a key is being held down
     */
-  var ignoreRepeatedEventsWhenKeyHeldDown: js.UndefOr[Boolean] = js.native
+  var ignoreRepeatedEventsWhenKeyHeldDown: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The HTML tags that React HotKeys should ignore key events from. This only works
     * if you are using the default ignoreEventsCondition function.
     */
-  var ignoreTags: js.UndefOr[js.Array[String]] = js.native
+  var ignoreTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The level of logging of its own behaviour React HotKeys should perform. Default
     * level is 'warn'.
     */
-  var logLevel: js.UndefOr[String] = js.native
+  var logLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Whether React HotKeys should simulate keypress events for the keys that do not
     * natively emit them.
     */
-  var simulateMissingKeyPressEvents: js.UndefOr[Boolean] = js.native
+  var simulateMissingKeyPressEvents: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to call stopPropagation() on events after they are handled (preventing
@@ -93,7 +91,7 @@ trait ConfigurationOptions extends StObject {
     * the event once React Hotkeys is done with it (whether it's allowed to propagate
     * any further through the Render tree).
     */
-  var stopEventPropagationAfterHandling: js.UndefOr[Boolean] = js.native
+  var stopEventPropagationAfterHandling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to call stopPropagation() on events after they are ignored (preventing
@@ -104,7 +102,7 @@ trait ConfigurationOptions extends StObject {
     * the event once React Hotkeys is done with it (whether it's allowed to propagate
     * any further through the Render tree).
     */
-  var stopEventPropagationAfterIgnoring: js.UndefOr[Boolean] = js.native
+  var stopEventPropagationAfterIgnoring: js.UndefOr[Boolean] = js.undefined
 }
 object ConfigurationOptions {
   

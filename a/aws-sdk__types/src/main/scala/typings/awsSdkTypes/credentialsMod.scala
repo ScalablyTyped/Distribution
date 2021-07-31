@@ -4,36 +4,34 @@ import typings.awsSdkTypes.utilMod.Provider
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object credentialsMod {
   
   type CredentialProvider = Provider[Credentials]
   
-  @js.native
   trait Credentials extends StObject {
     
     /**
       * AWS access key ID
       */
-    val accessKeyId: String = js.native
+    val accessKeyId: String
     
     /**
       * A {Date} when these credentials will no longer be accepted.
       */
-    val expiration: js.UndefOr[Date] = js.native
+    val expiration: js.UndefOr[Date] = js.undefined
     
     /**
       * AWS secret access key
       */
-    val secretAccessKey: String = js.native
+    val secretAccessKey: String
     
     /**
       * A security or session token to use with these credentials. Usually
       * present for temporary credentials.
       */
-    val sessionToken: js.UndefOr[String] = js.native
+    val sessionToken: js.UndefOr[String] = js.undefined
   }
   object Credentials {
     

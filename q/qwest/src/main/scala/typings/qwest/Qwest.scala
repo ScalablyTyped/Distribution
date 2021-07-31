@@ -3,43 +3,41 @@ package typings.qwest
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Qwest {
   
-  @js.native
   trait Options extends StObject {
     
     /** true (default) or false; used to make asynchronous or synchronous requests */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /** the total number of times to attempt the request through timeouts; 1 by default; if you want to remove the limit set it to null */
-    var attempts: js.UndefOr[Double] = js.native
+    var attempts: js.UndefOr[Double] = js.undefined
     
     /** browser caching; default is false for GET requests and true for POST requests */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /** post (by default), json, text, arraybuffer, blob, document or formdata */
-    var dataType: js.UndefOr[String] = js.native
+    var dataType: js.UndefOr[String] = js.undefined
     
     /** javascript object containing headers to be sent */
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /** the password to access to the URL, if needed */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /** the response type; either auto (default), json, xml, text, arraybuffer, blob or document */
-    var responseType: js.UndefOr[String] = js.native
+    var responseType: js.UndefOr[String] = js.undefined
     
     /** the timeout for the request in ms; 30000 by default */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** the user to access to the URL, if needed */
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
     
     /** false by default; sends credentials with your XHR2 request */
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -114,27 +112,36 @@ object Qwest {
     }
   }
   
-  @js.native
   trait Promise extends StObject {
     
     /** Request has failed */
     def `catch`(
-      callback: js.Function3[/* e */ js.Any, /* xhr */ js.UndefOr[js.Any], /* response */ js.UndefOr[js.Any], _]
-    ): Promise = js.native
+      callback: js.Function3[
+          /* e */ js.Any, 
+          /* xhr */ js.UndefOr[js.Any], 
+          /* response */ js.UndefOr[js.Any], 
+          js.Any
+        ]
+    ): Promise
     
     /** Always run */
-    def complete(callback: js.Function0[_]): Promise = js.native
+    def complete(callback: js.Function0[js.Any]): Promise
     
     /** Request is successful */
-    def `then`(callback: js.Function2[/* xhr */ js.Any, /* response */ js.UndefOr[js.Any], _]): Promise = js.native
+    def `then`(callback: js.Function2[/* xhr */ js.Any, /* response */ js.UndefOr[js.Any], js.Any]): Promise
   }
   object Promise {
     
     @scala.inline
     def apply(
-      `catch`: js.Function3[/* e */ js.Any, /* xhr */ js.UndefOr[js.Any], /* response */ js.UndefOr[js.Any], _] => Promise,
-      complete: js.Function0[_] => Promise,
-      `then`: js.Function2[/* xhr */ js.Any, /* response */ js.UndefOr[js.Any], _] => Promise
+      `catch`: js.Function3[
+          /* e */ js.Any, 
+          /* xhr */ js.UndefOr[js.Any], 
+          /* response */ js.UndefOr[js.Any], 
+          js.Any
+        ] => Promise,
+      complete: js.Function0[js.Any] => Promise,
+      `then`: js.Function2[/* xhr */ js.Any, /* response */ js.UndefOr[js.Any], js.Any] => Promise
     ): Promise = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
       __obj.updateDynamic("catch")(js.Any.fromFunction1(`catch`))
@@ -147,14 +154,19 @@ object Qwest {
       
       @scala.inline
       def setCatch(
-        value: js.Function3[/* e */ js.Any, /* xhr */ js.UndefOr[js.Any], /* response */ js.UndefOr[js.Any], _] => Promise
+        value: js.Function3[
+              /* e */ js.Any, 
+              /* xhr */ js.UndefOr[js.Any], 
+              /* response */ js.UndefOr[js.Any], 
+              js.Any
+            ] => Promise
       ): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setComplete(value: js.Function0[_] => Promise): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      def setComplete(value: js.Function0[js.Any] => Promise): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setThen(value: js.Function2[/* xhr */ js.Any, /* response */ js.UndefOr[js.Any], _] => Promise): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+      def setThen(value: js.Function2[/* xhr */ js.Any, /* response */ js.UndefOr[js.Any], js.Any] => Promise): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
     }
   }
   
@@ -165,7 +177,7 @@ object Qwest {
     var base: String = js.native
     
     /** Set XHR options before request */
-    def before(callback: js.Function0[_]): Static = js.native
+    def before(callback: js.Function0[js.Any]): Static = js.native
     
     /**
       * Perfoms an AJAX DELETE request
@@ -174,9 +186,9 @@ object Qwest {
       * @param options Configuration options for the AJAX request
       * */
     def delete(url: String): Promise = js.native
-    def delete(url: String, data: js.UndefOr[scala.Nothing], options: Options): Promise = js.native
     def delete(url: String, data: js.Any): Promise = js.native
     def delete(url: String, data: js.Any, options: Options): Promise = js.native
+    def delete(url: String, data: Unit, options: Options): Promise = js.native
     
     /**
       * Perfoms an AJAX GET request
@@ -185,9 +197,9 @@ object Qwest {
       * @param options Configuration options for the AJAX request
       * */
     def get(url: String): Promise = js.native
-    def get(url: String, data: js.UndefOr[scala.Nothing], options: Options): Promise = js.native
     def get(url: String, data: js.Any): Promise = js.native
     def get(url: String, data: js.Any, options: Options): Promise = js.native
+    def get(url: String, data: Unit, options: Options): Promise = js.native
     
     /** Sets the request limit */
     def limit(by: Double): Unit = js.native
@@ -199,9 +211,9 @@ object Qwest {
       * @param options Configuration options for the AJAX request
       * */
     def post(url: String): Promise = js.native
-    def post(url: String, data: js.UndefOr[scala.Nothing], options: Options): Promise = js.native
     def post(url: String, data: js.Any): Promise = js.native
     def post(url: String, data: js.Any, options: Options): Promise = js.native
+    def post(url: String, data: Unit, options: Options): Promise = js.native
     
     /**
       * Perfoms an AJAX PUT request
@@ -210,9 +222,9 @@ object Qwest {
       * @param options Configuration options for the AJAX request
       * */
     def put(url: String): Promise = js.native
-    def put(url: String, data: js.UndefOr[scala.Nothing], options: Options): Promise = js.native
     def put(url: String, data: js.Any): Promise = js.native
     def put(url: String, data: js.Any, options: Options): Promise = js.native
+    def put(url: String, data: Unit, options: Options): Promise = js.native
     
     /** Set default cross-domain response type for IE8/9 (defaults to 'json') */
     def setDefaultXdrResponseType(`type`: String): Unit = js.native

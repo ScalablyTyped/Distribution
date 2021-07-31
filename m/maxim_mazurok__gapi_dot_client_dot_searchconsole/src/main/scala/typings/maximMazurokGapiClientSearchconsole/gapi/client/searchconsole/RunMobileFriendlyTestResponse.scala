@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunMobileFriendlyTestResponse extends StObject {
   
   /** Test verdict, whether the page is mobile friendly or not. */
-  var mobileFriendliness: js.UndefOr[String] = js.native
+  var mobileFriendliness: js.UndefOr[String] = js.undefined
   
   /** List of mobile-usability issues. */
-  var mobileFriendlyIssues: js.UndefOr[js.Array[MobileFriendlyIssue]] = js.native
+  var mobileFriendlyIssues: js.UndefOr[js.Array[MobileFriendlyIssue]] = js.undefined
   
   /** Information about embedded resources issues. */
-  var resourceIssues: js.UndefOr[js.Array[ResourceIssue]] = js.native
+  var resourceIssues: js.UndefOr[js.Array[ResourceIssue]] = js.undefined
   
   /** Screenshot of the requested URL. */
-  var screenshot: js.UndefOr[Image] = js.native
+  var screenshot: js.UndefOr[Image] = js.undefined
   
   /** Final state of the test, can be either complete or an error. */
-  var testStatus: js.UndefOr[TestStatus] = js.native
+  var testStatus: js.UndefOr[TestStatus] = js.undefined
 }
 object RunMobileFriendlyTestResponse {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRestoreJobsInput extends StObject {
   
   /**
     * The account ID to list the jobs from. Returns only restore jobs associated with the specified account ID.
     */
-  var ByAccountId: js.UndefOr[AccountId] = js.native
+  var ByAccountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * Returns only restore jobs that were created after the specified date.
     */
-  var ByCreatedAfter: js.UndefOr[timestamp] = js.native
+  var ByCreatedAfter: js.UndefOr[timestamp] = js.undefined
   
   /**
     * Returns only restore jobs that were created before the specified date.
     */
-  var ByCreatedBefore: js.UndefOr[timestamp] = js.native
+  var ByCreatedBefore: js.UndefOr[timestamp] = js.undefined
   
   /**
     * Returns only restore jobs associated with the specified job status.
     */
-  var ByStatus: js.UndefOr[RestoreJobStatus] = js.native
+  var ByStatus: js.UndefOr[RestoreJobStatus] = js.undefined
   
   /**
     * The maximum number of items to be returned.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.backupMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.backupMod.MaxResults] = js.undefined
   
   /**
     * The next item following a partial list of returned items. For example, if a request is made to return maxResults number of items, NextToken allows you to return more items in your list starting at the location pointed to by the next token.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListRestoreJobsInput {
   

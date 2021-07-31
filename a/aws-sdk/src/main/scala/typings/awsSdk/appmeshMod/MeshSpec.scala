@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeshSpec extends StObject {
   
   /**
     * The egress filter rules for the service mesh.
     */
-  var egressFilter: js.UndefOr[EgressFilter] = js.native
+  var egressFilter: js.UndefOr[EgressFilter] = js.undefined
 }
 object MeshSpec {
   

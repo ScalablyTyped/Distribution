@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IntentCollection. */
-@js.native
 trait IntentCollection extends StObject {
   
   /** An array of objects describing the intents defined for the workspace. */
-  var intents: js.Array[Intent] = js.native
+  var intents: js.Array[Intent]
   
   /** The pagination data for the returned objects. */
-  var pagination: Pagination = js.native
+  var pagination: Pagination
 }
 object IntentCollection {
   

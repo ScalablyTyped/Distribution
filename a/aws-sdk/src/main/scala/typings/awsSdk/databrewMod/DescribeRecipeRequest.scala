@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRecipeRequest extends StObject {
   
   /**
     * The name of the recipe to be described.
     */
-  var Name: RecipeName = js.native
+  var Name: RecipeName
   
   /**
     * The recipe version identifier. If this parameter isn't specified, then the latest published version is returned.
     */
-  var RecipeVersion: js.UndefOr[typings.awsSdk.databrewMod.RecipeVersion] = js.native
+  var RecipeVersion: js.UndefOr[typings.awsSdk.databrewMod.RecipeVersion] = js.undefined
 }
 object DescribeRecipeRequest {
   

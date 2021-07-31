@@ -3,7 +3,6 @@ package typings.typeorm.mongodbTypingsMod
 import typings.typeorm.platformPlatformToolsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/driver/mongodb/typings", "Mongos")
@@ -20,5 +19,5 @@ class Mongos protected () extends EventEmitter {
   /**
     * All raw connections
     */
-  def connections(): js.Array[_] = js.native
+  def connections(): js.Array[js.Any] = js.native
 }

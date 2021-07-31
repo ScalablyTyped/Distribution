@@ -2,17 +2,17 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScriptDefinition extends PropertyDefinition {
+trait ScriptDefinition
+  extends StObject
+     with PropertyDefinition {
   
-  var exec: js.UndefOr[String | js.Array[String]] = js.native
+  var exec: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var src: js.UndefOr[String | Url] = js.native
+  var src: js.UndefOr[String | Url] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ScriptDefinition {
   

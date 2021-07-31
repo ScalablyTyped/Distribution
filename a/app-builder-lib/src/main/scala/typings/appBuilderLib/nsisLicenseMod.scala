@@ -5,17 +5,19 @@ import typings.appBuilderLib.nsisScriptGeneratorMod.NsisScriptGenerator
 import typings.appBuilderLib.winPackagerMod.WinPackager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nsisLicenseMod {
   
-  @JSImport("app-builder-lib/out/targets/nsis/nsisLicense", "computeLicensePage")
+  @JSImport("app-builder-lib/out/targets/nsis/nsisLicense", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def computeLicensePage(
     packager: WinPackager,
     options: NsisOptions,
     scriptGenerator: NsisScriptGenerator,
     languages: js.Array[String]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeLicensePage")(packager.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scriptGenerator.asInstanceOf[js.Any], languages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

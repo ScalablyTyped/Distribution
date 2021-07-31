@@ -2,32 +2,30 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCookiesRequest extends StObject {
   
   /**
     * If specified, deletes only cookies with the exact domain.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the cookies to remove.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * If specified, deletes only cookies with the exact path.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, deletes all the cookies with the given name where domain and path match
     * provided URL.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object DeleteCookiesRequest {
   

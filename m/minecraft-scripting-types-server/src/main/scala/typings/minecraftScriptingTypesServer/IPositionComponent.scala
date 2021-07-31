@@ -2,32 +2,30 @@ package typings.minecraftScriptingTypesServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This component allows you to control an entity's current position in the world. Once applied the entity will be teleported to the new position specified.
   */
-@js.native
 trait IPositionComponent extends StObject {
   
   /**
     * Position along the X-Axis (east-west) of the entity
     * @default 0.0
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Position along the Y-Axis (height) of the entity
     * @default 0.0
     */
-  var y: Double = js.native
+  var y: Double
   
   /**
     * Position along the Z-Axis (north-south) of the entity
     * @default 0.0
     */
-  var z: Double = js.native
+  var z: Double
 }
 object IPositionComponent {
   

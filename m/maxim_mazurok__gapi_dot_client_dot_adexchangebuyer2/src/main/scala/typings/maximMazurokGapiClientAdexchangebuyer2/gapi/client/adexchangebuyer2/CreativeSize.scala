@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativeSize extends StObject {
   
   /**
     * What formats are allowed by the publisher. If this repeated field is empty then all formats are allowed. For example, if this field contains AllowedFormatType.AUDIO then the
     * publisher only allows an audio ad (without any video).
     */
-  var allowedFormats: js.UndefOr[js.Array[String]] = js.native
+  var allowedFormats: js.UndefOr[js.Array[String]] = js.undefined
   
   /** For video creatives specifies the sizes of companion ads (if present). Companion sizes may be filled in only when creative_size_type = VIDEO */
-  var companionSizes: js.UndefOr[js.Array[Size]] = js.native
+  var companionSizes: js.UndefOr[js.Array[Size]] = js.undefined
   
   /** The creative size type. */
-  var creativeSizeType: js.UndefOr[String] = js.native
+  var creativeSizeType: js.UndefOr[String] = js.undefined
   
   /** Output only. The native template for this creative. It will have a value only if creative_size_type = CreativeSizeType.NATIVE. */
-  var nativeTemplate: js.UndefOr[String] = js.native
+  var nativeTemplate: js.UndefOr[String] = js.undefined
   
   /** For regular or video creative size type, specifies the size of the creative */
-  var size: js.UndefOr[Size] = js.native
+  var size: js.UndefOr[Size] = js.undefined
   
   /** The type of skippable ad for this creative. It will have a value only if creative_size_type = CreativeSizeType.VIDEO. */
-  var skippableAdType: js.UndefOr[String] = js.native
+  var skippableAdType: js.UndefOr[String] = js.undefined
 }
 object CreativeSize {
   

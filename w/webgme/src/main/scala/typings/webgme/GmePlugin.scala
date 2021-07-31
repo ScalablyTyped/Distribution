@@ -13,7 +13,6 @@ import typings.webgme.GmeCommon.ResultCallback
 import typings.webgme.GmeConfig.ConfigItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GmePlugin {
@@ -125,7 +124,7 @@ object GmePlugin {
       */
     var namespace: String = js.native
     
-    var notificationHandlers: js.Array[_] = js.native
+    var notificationHandlers: js.Array[js.Any] = js.native
     
     var pluginMetadata: Metadata = js.native
     

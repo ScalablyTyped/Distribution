@@ -3,47 +3,45 @@ package typings.octokitTypes.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comments extends StObject {
   
-  var comments: Double = js.native
+  var comments: Double
   
-  var comments_url: String = js.native
+  var comments_url: String
   
-  var commits_url: String = js.native
+  var commits_url: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var description: String = js.native
+  var description: String
   
-  var files: StringDictionary[Filename] = js.native
+  var files: StringDictionary[Filename]
   
-  var forks_url: String = js.native
+  var forks_url: String
   
-  var git_pull_url: String = js.native
+  var git_pull_url: String
   
-  var git_push_url: String = js.native
+  var git_push_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: String = js.native
+  var id: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var owner: Avatarurl = js.native
+  var owner: Avatarurl
   
-  var public: Boolean = js.native
+  var public: Boolean
   
-  var truncated: Boolean = js.native
+  var truncated: Boolean
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
   
-  var user: String = js.native
+  var user: String
 }
 object Comments {
   

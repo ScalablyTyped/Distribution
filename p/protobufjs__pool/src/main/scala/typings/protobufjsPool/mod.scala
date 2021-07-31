@@ -3,7 +3,6 @@ package typings.protobufjsPool
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,12 +16,14 @@ object mod {
     * @param {number} [size=8192] Slab size
     * @returns {PoolAllocator} Pooled allocator
     */
+  @scala.inline
+  def apply(alloc: PoolAllocator, slice: PoolSlicer): PoolAllocator = (^.asInstanceOf[js.Dynamic].apply(alloc.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[PoolAllocator]
+  @scala.inline
+  def apply(alloc: PoolAllocator, slice: PoolSlicer, size: Double): PoolAllocator = (^.asInstanceOf[js.Dynamic].apply(alloc.asInstanceOf[js.Any], slice.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[PoolAllocator]
+  
   @JSImport("@protobufjs/pool", JSImport.Namespace)
   @js.native
-  def apply(alloc: PoolAllocator, slice: PoolSlicer): PoolAllocator = js.native
-  @JSImport("@protobufjs/pool", JSImport.Namespace)
-  @js.native
-  def apply(alloc: PoolAllocator, slice: PoolSlicer, size: Double): PoolAllocator = js.native
+  val ^ : js.Any = js.native
   
   /**
     * An allocator as used by {@link util.pool}.

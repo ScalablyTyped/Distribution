@@ -3,46 +3,44 @@ package typings.codemirror.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightSelectionMatches extends StObject {
   
   /**
     * If annotateScrollbar is enabled, the occurences will be highlighted on the scrollbar via the matchesonscrollbar addon.
     */
-  var annotateScrollbar: js.UndefOr[Boolean] = js.native
+  var annotateScrollbar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used to specify how much time to wait, in milliseconds, before highlighting the matches (default is 100). 
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum amount of selected characters that triggers a highlight (default 2).
     */
-  var minChars: js.UndefOr[Double] = js.native
+  var minChars: js.UndefOr[Double] = js.undefined
   
   /**
     * Can be set to true or to a regexp matching the characters that make up a word.
     */
-  var showToken: js.UndefOr[Boolean | RegExp] = js.native
+  var showToken: js.UndefOr[Boolean | RegExp] = js.undefined
   
   /**
     * The style to be used to highlight the matches (default "matchhighlight", which will correspond to CSS class cm-matchhighlight).
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     * Controls whether whitespace is trimmed from the selection.
     */
-  var trim: js.UndefOr[Boolean] = js.native
+  var trim: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If wordsOnly is enabled, the matches will be highlighted only if the selected text is a word.
     */
-  var wordsOnly: js.UndefOr[Boolean] = js.native
+  var wordsOnly: js.UndefOr[Boolean] = js.undefined
 }
 object HighlightSelectionMatches {
   

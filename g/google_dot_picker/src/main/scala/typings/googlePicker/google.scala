@@ -2,21 +2,19 @@ package typings.googlePicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object google {
   
   object picker {
     
-    @js.native
     trait DocsUploadView extends StObject {
       
       // Allows the user to select a folder in Google Drive to upload to.
-      def setIncludeFolders(included: Boolean): DocsUploadView = js.native
+      def setIncludeFolders(included: Boolean): DocsUploadView
       
       // Sets the upload destination to the specified folder. This overrides ".setIncludeFolders" to false.
-      def setParent(parentId: String): DocsUploadView = js.native
+      def setParent(parentId: String): DocsUploadView
     }
     object DocsUploadView {
       
@@ -66,18 +64,17 @@ object google {
       def setStarred(starred: Boolean): DocsView = js.native
     }
     
-    @js.native
     trait Picker extends StObject {
       
-      def dispose(): Unit = js.native
+      def dispose(): Unit
       
-      def isVisible(): Boolean = js.native
+      def isVisible(): Boolean
       
-      def setCallback(method: js.Function): Picker = js.native
+      def setCallback(method: js.Function): Picker
       
-      def setRelayUrl(url: String): Picker = js.native
+      def setRelayUrl(url: String): Picker
       
-      def setVisible(visible: Boolean): Picker = js.native
+      def setVisible(visible: Boolean): Picker
     }
     object Picker {
       
@@ -113,77 +110,76 @@ object google {
       }
     }
     
-    @js.native
     trait PickerBuilder extends StObject {
       
       // Add a View to the navigation pane.
-      def addView(viewOrId: js.Any): PickerBuilder = js.native
+      def addView(viewOrId: js.Any): PickerBuilder
       
       // Add a ViewGroup to the top-level navigation pane.
-      def addViewGroup(viewGroup: js.Any): PickerBuilder = js.native
+      def addViewGroup(viewGroup: js.Any): PickerBuilder
       
       // Construct the Picker object. The Picker object is returned.
-      def build(): Picker = js.native
+      def build(): Picker
       
       // Disable a picker feature.
-      def disableFeature(feature: String): PickerBuilder = js.native
+      def disableFeature(feature: String): PickerBuilder
       
       // Enable a picker feature.
-      def enableFeature(feature: String): PickerBuilder = js.native
+      def enableFeature(feature: String): PickerBuilder
       
       // Get the relay URL, used for gadgets.rpc.
-      def getRelayUrl(): String = js.native
+      def getRelayUrl(): String
       
       // Get the dialog title.
-      def getTitle(): String = js.native
+      def getTitle(): String
       
       // Disable the title bar from being shown. To re-enable, call setTitle with a non-empty title or undefined.
-      def hideTitleBar(): PickerBuilder = js.native
+      def hideTitleBar(): PickerBuilder
       
       // Check if a picker Feature is enabled.
-      def isFeatureEnabled(feature: String): Boolean = js.native
+      def isFeatureEnabled(feature: String): Boolean
       
       // Sets the Google Drive App ID needed to allow application to access the user's files via the Google Drive API.
-      def setAppId(appId: String): PickerBuilder = js.native
+      def setAppId(appId: String): PickerBuilder
       
       // Set the callback method called when the user picks and item (or items), or cancels. The callback method receives a single callback object. The structure of the callback object is described in the JSON Guide.
-      def setCallback(method: js.Function): PickerBuilder = js.native
+      def setCallback(method: js.Function): PickerBuilder
       
       // Sets the Browser API key obtained from Google Developers Console. See the Developer's Guide for details on how to obtain the Browser API key.
-      def setDeveloperKey(key: String): PickerBuilder = js.native
+      def setDeveloperKey(key: String): PickerBuilder
       
       // Set the document.
-      def setDocument(document: String): PickerBuilder = js.native
+      def setDocument(document: String): PickerBuilder
       
       // ISO 639 language code. If the language is not supported, en-US is used. This method provides an alternative to setting the locale at google.load() time. See the Developer's Guide for a list of supported locales.
-      def setLocale(locale: String): PickerBuilder = js.native
+      def setLocale(locale: String): PickerBuilder
       
       // Sets the maximum number of items a user can pick.
-      def setMaxItems(max: Double): PickerBuilder = js.native
+      def setMaxItems(max: Double): PickerBuilder
       
       // Sets an OAuth token to use for authenticating the current user. Depending on the scope of the token, only certain views will display data. Valid scopes are Google Docs, Drive, Photos, YouTube.
-      def setOAuthToken(token: String): PickerBuilder = js.native
+      def setOAuthToken(token: String): PickerBuilder
       
       // Sets the origin of picker dialog. The origin should be set to the window.location.protocol + '//' + window.location.host of the top-most page, if your application is running in an iframe.
-      def setOrigin(origin: String): PickerBuilder = js.native
+      def setOrigin(origin: String): PickerBuilder
       
       // Set the relay URL, used for gadgets.rpc.
-      def setRelayUrl(url: String): PickerBuilder = js.native
+      def setRelayUrl(url: String): PickerBuilder
       
       // Set the list of MIME types which will be selectable. Use commas to separate MIME types if more than one is required.
-      def setSelectableMimeTypes(`type`: String): PickerBuilder = js.native
+      def setSelectableMimeTypes(`type`: String): PickerBuilder
       
       // Set the preferred dialog size. The dialog will be auto-centered. It has a minimum size of (566,350) and a maximum size of (1051,650).
-      def setSize(width: Double, height: Double): PickerBuilder = js.native
+      def setSize(width: Double, height: Double): PickerBuilder
       
       // Set the dialog title.
-      def setTitle(title: String): PickerBuilder = js.native
+      def setTitle(title: String): PickerBuilder
       
       // Specify an album ID for photo uploads. See Picasa Web Albums Data API documentation for more information about albums.
-      def setUploadToAlbumId(albumId: String): PickerBuilder = js.native
+      def setUploadToAlbumId(albumId: String): PickerBuilder
       
       // Returns the URI generated by this builder.
-      def toUri(): String = js.native
+      def toUri(): String
     }
     object PickerBuilder {
       

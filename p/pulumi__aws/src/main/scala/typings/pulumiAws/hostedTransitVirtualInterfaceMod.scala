@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hostedTransitVirtualInterfaceMod {
@@ -95,6 +94,10 @@ object hostedTransitVirtualInterfaceMod {
   /* static members */
   object HostedTransitVirtualInterface {
     
+    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterface", "HostedTransitVirtualInterface")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HostedTransitVirtualInterface resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -104,85 +107,79 @@ object hostedTransitVirtualInterfaceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterface", "HostedTransitVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID]): HostedTransitVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterface", "HostedTransitVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): HostedTransitVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterface", "HostedTransitVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedTransitVirtualInterfaceState): HostedTransitVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterface", "HostedTransitVirtualInterface.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): HostedTransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): HostedTransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedTransitVirtualInterfaceState): HostedTransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterface]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: HostedTransitVirtualInterfaceState,
       opts: CustomResourceOptions
-    ): HostedTransitVirtualInterface = js.native
+    ): HostedTransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterface]
     
     /**
       * Returns true if the given object is an instance of HostedTransitVirtualInterface.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterface", "HostedTransitVirtualInterface.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterface.HostedTransitVirtualInterface */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterface.HostedTransitVirtualInterface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterface.HostedTransitVirtualInterface */ Boolean]
   }
   
-  @js.native
   trait HostedTransitVirtualInterfaceArgs extends StObject {
     
     /**
       * The address family for the BGP peer. `ipv4 ` or `ipv6`.
       */
-    val addressFamily: Input[String] = js.native
+    val addressFamily: Input[String]
     
     /**
       * The IPv4 CIDR address to use to send traffic to Amazon. Required for IPv4 BGP peers.
       */
-    val amazonAddress: js.UndefOr[Input[String]] = js.native
+    val amazonAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
       */
-    val bgpAsn: Input[Double] = js.native
+    val bgpAsn: Input[Double]
     
     /**
       * The authentication key for BGP configuration.
       */
-    val bgpAuthKey: js.UndefOr[Input[String]] = js.native
+    val bgpAuthKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Direct Connect connection (or LAG) on which to create the virtual interface.
       */
-    val connectionId: Input[String] = js.native
+    val connectionId: Input[String]
     
     /**
       * The IPv4 CIDR destination address to which Amazon should send traffic. Required for IPv4 BGP peers.
       */
-    val customerAddress: js.UndefOr[Input[String]] = js.native
+    val customerAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum transmission unit (MTU) is the size, in bytes, of the largest permissible packet that can be passed over the connection. The MTU of a virtual transit interface can be either `1500` or `8500` (jumbo frames). Default is `1500`.
       */
-    val mtu: js.UndefOr[Input[Double]] = js.native
+    val mtu: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name for the virtual interface.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS account that will own the new virtual interface.
       */
-    val ownerAccountId: Input[String] = js.native
+    val ownerAccountId: Input[String]
     
     /**
       * The VLAN ID.
       */
-    val vlan: Input[Double] = js.native
+    val vlan: Input[Double]
   }
   object HostedTransitVirtualInterfaceArgs {
     
@@ -248,75 +245,74 @@ object hostedTransitVirtualInterfaceMod {
     }
   }
   
-  @js.native
   trait HostedTransitVirtualInterfaceState extends StObject {
     
     /**
       * The address family for the BGP peer. `ipv4 ` or `ipv6`.
       */
-    val addressFamily: js.UndefOr[Input[String]] = js.native
+    val addressFamily: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv4 CIDR address to use to send traffic to Amazon. Required for IPv4 BGP peers.
       */
-    val amazonAddress: js.UndefOr[Input[String]] = js.native
+    val amazonAddress: js.UndefOr[Input[String]] = js.undefined
     
-    val amazonSideAsn: js.UndefOr[Input[String]] = js.native
+    val amazonSideAsn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the virtual interface.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Direct Connect endpoint on which the virtual interface terminates.
       */
-    val awsDevice: js.UndefOr[Input[String]] = js.native
+    val awsDevice: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
       */
-    val bgpAsn: js.UndefOr[Input[Double]] = js.native
+    val bgpAsn: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The authentication key for BGP configuration.
       */
-    val bgpAuthKey: js.UndefOr[Input[String]] = js.native
+    val bgpAuthKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Direct Connect connection (or LAG) on which to create the virtual interface.
       */
-    val connectionId: js.UndefOr[Input[String]] = js.native
+    val connectionId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv4 CIDR destination address to which Amazon should send traffic. Required for IPv4 BGP peers.
       */
-    val customerAddress: js.UndefOr[Input[String]] = js.native
+    val customerAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether jumbo frames (8500 MTU) are supported.
       */
-    val jumboFrameCapable: js.UndefOr[Input[Boolean]] = js.native
+    val jumboFrameCapable: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The maximum transmission unit (MTU) is the size, in bytes, of the largest permissible packet that can be passed over the connection. The MTU of a virtual transit interface can be either `1500` or `8500` (jumbo frames). Default is `1500`.
       */
-    val mtu: js.UndefOr[Input[Double]] = js.native
+    val mtu: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name for the virtual interface.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS account that will own the new virtual interface.
       */
-    val ownerAccountId: js.UndefOr[Input[String]] = js.native
+    val ownerAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The VLAN ID.
       */
-    val vlan: js.UndefOr[Input[Double]] = js.native
+    val vlan: js.UndefOr[Input[Double]] = js.undefined
   }
   object HostedTransitVirtualInterfaceState {
     

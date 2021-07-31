@@ -6,7 +6,6 @@ import typings.rsmq.rsmqNumbers.`0`
 import typings.rsmq.rsmqNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,11 +13,77 @@ object mod {
   /*~ Write your module's methods and properties in this class */
   @JSImport("rsmq", JSImport.Namespace)
   @js.native
-  class ^ protected () extends RedisSMQ {
+  class ^ protected ()
+    extends StObject
+       with RedisSMQ {
     def this(options: ConstructorOptions) = this()
+    
+    /* CompleteClass */
+    override def changeMessageVisibility(opts: ChangeMessageVisibilityOptions, cb: Callback[`0` | `1`]): Unit = js.native
+    
+    /* CompleteClass */
+    override def changeMessageVisibilityAsync(opts: ChangeMessageVisibilityOptions): js.Promise[`0` | `1`] = js.native
+    
+    /* CompleteClass */
+    override def createQueueAsync(opts: CreateQueueOptions): js.Promise[`1`] = js.native
+    
+    /* CompleteClass */
+    @JSName("createQueue")
+    override def createQueue_1(opts: CreateQueueOptions, cb: Callback[`1`]): Unit = js.native
+    
+    /* CompleteClass */
+    override def deleteMessage(opts: DeleteMessageOptions, cb: Callback[`0` | `1`]): Unit = js.native
+    
+    /* CompleteClass */
+    override def deleteMessageAsync(opts: DeleteMessageOptions): js.Promise[`0` | `1`] = js.native
+    
+    /* CompleteClass */
+    override def deleteQueueAsync(opts: DeleteQueueOptions): js.Promise[`1`] = js.native
+    
+    /* CompleteClass */
+    @JSName("deleteQueue")
+    override def deleteQueue_1(opts: DeleteQueueOptions, cb: Callback[`1`]): Unit = js.native
+    
+    /* CompleteClass */
+    override def getQueueAttributes(opts: GetQueueAttributesOptions, cb: Callback[QueueAttributes]): Unit = js.native
+    
+    /* CompleteClass */
+    override def getQueueAttributesAsync(opts: GetQueueAttributesOptions): js.Promise[QueueAttributes] = js.native
+    
+    /* CompleteClass */
+    override def listQueues(cb: Callback[js.Array[String]]): Unit = js.native
+    
+    /* CompleteClass */
+    override def listQueuesAsync(): js.Promise[js.Array[String]] = js.native
+    
+    /* CompleteClass */
+    override def popMessage(opts: PopMessageOptions, cb: Callback[QueueMessage | js.Object]): Unit = js.native
+    
+    /* CompleteClass */
+    override def popMessageAsync(opts: PopMessageOptions): js.Promise[QueueMessage | js.Object] = js.native
+    
+    /* CompleteClass */
+    override def quit(): Unit = js.native
+    
+    /* CompleteClass */
+    override def receiveMessage(opts: ReceiveMessageOptions, cb: Callback[QueueMessage | js.Object]): Unit = js.native
+    
+    /* CompleteClass */
+    override def receiveMessageAsync(opts: ReceiveMessageOptions): js.Promise[QueueMessage | js.Object] = js.native
+    
+    /* CompleteClass */
+    override def sendMessage(opts: SendMessageOptions, cb: Callback[String]): Unit = js.native
+    
+    /* CompleteClass */
+    override def sendMessageAsync(opts: SendMessageOptions): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override def setQueueAttributes(opts: SetQueueAttributesOptions, cb: Callback[QueueAttributes]): Unit = js.native
+    
+    /* CompleteClass */
+    override def setQueueAttributesAsync(opts: SetQueueAttributesOptions): js.Promise[QueueAttributes] = js.native
   }
   
-  @js.native
   trait BaseOptions extends StObject {
     
     /**
@@ -28,7 +93,7 @@ object mod {
     		 * @type {string}
     		 * @memberof BaseQueueOptions
     		 */
-    var qname: String = js.native
+    var qname: String
   }
   object BaseOptions {
     
@@ -48,8 +113,9 @@ object mod {
   
   type Callback[T] = js.Function2[/* err */ js.Any, /* response */ T, Unit]
   
-  @js.native
-  trait ChangeMessageVisibilityOptions extends BaseOptions {
+  trait ChangeMessageVisibilityOptions
+    extends StObject
+       with BaseOptions {
     
     /**
     		 * message id to modify.
@@ -57,7 +123,7 @@ object mod {
     		 * @type {string}
     		 * @memberof DeleteMessageOptions
     		 */
-    var id: String = js.native
+    var id: String
     
     /**
     		 * The length of time, in seconds, that this message will not be visible.
@@ -66,7 +132,7 @@ object mod {
     		 * @type {number}
     		 * @memberof ChangeMessageVisibilityOptions
     		 */
-    var vt: Double = js.native
+    var vt: Double
   }
   object ChangeMessageVisibilityOptions {
     
@@ -87,22 +153,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ConstructorOptions extends StObject {
     
-    var client: js.UndefOr[RedisClient] = js.native
+    var client: js.UndefOr[RedisClient] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var ns: js.UndefOr[String] = js.native
+    var ns: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[ClientOpts] = js.native
+    var options: js.UndefOr[ClientOpts] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var realtime: js.UndefOr[Boolean] = js.native
+    var realtime: js.UndefOr[Boolean] = js.undefined
   }
   object ConstructorOptions {
     
@@ -159,8 +224,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait CreateQueueOptions extends BaseOptions {
+  trait CreateQueueOptions
+    extends StObject
+       with BaseOptions {
     
     /**
     		 * *(Default: 0)*
@@ -170,7 +236,7 @@ object mod {
     		 * @type {number}
     		 * @memberof CreateQueueOptions
     		 */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
     		 * *(Default: 65536)*
@@ -180,7 +246,7 @@ object mod {
     		 * @type {number}
     		 * @memberof CreateQueueOptions
     		 */
-    var maxsize: js.UndefOr[Double] = js.native
+    var maxsize: js.UndefOr[Double] = js.undefined
     
     /**
     		 * *(Default: 30)*
@@ -191,7 +257,7 @@ object mod {
     		 * @type {number}
     		 * @memberof CreateQueueOptions
     		 */
-    var vt: js.UndefOr[Double] = js.native
+    var vt: js.UndefOr[Double] = js.undefined
   }
   object CreateQueueOptions {
     
@@ -224,8 +290,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait DeleteMessageOptions extends BaseOptions {
+  trait DeleteMessageOptions
+    extends StObject
+       with BaseOptions {
     
     /**
     		 * message id to delete.
@@ -233,7 +300,7 @@ object mod {
     		 * @type {string}
     		 * @memberof DeleteMessageOptions
     		 */
-    var id: String = js.native
+    var id: String
   }
   object DeleteMessageOptions {
     
@@ -257,7 +324,6 @@ object mod {
   
   type PopMessageOptions = BaseOptions
   
-  @js.native
   trait QueueAttributes extends StObject {
     
     /**
@@ -266,7 +332,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueAttributes
     		 */
-    var created: Double = js.native
+    var created: Double
     
     /**
     		 * The delay for new messages in seconds
@@ -274,7 +340,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueAttributes
     		 */
-    var delay: Double = js.native
+    var delay: Double
     
     /**
     		 * Current number of hidden / not visible messages.
@@ -283,7 +349,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueAttributes
     		 */
-    var hiddenmsgs: Double = js.native
+    var hiddenmsgs: Double
     
     /**
     		 * The maximum size of a message in bytes
@@ -291,7 +357,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueAttributes
     		 */
-    var maxsize: Double = js.native
+    var maxsize: Double
     
     /**
     		 * Timestamp (epoch in seconds) when the queue was last modified with `setQueueAttributes`
@@ -299,7 +365,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueAttributes
     		 */
-    var modified: Double = js.native
+    var modified: Double
     
     /**
     		 * Current number of messages in the queue
@@ -307,7 +373,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueAttributes
     		 */
-    var msgs: Double = js.native
+    var msgs: Double
     
     /**
     		 * Total number of messages received from the queue
@@ -315,7 +381,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueAttributes
     		 */
-    var totalrecv: Double = js.native
+    var totalrecv: Double
     
     /**
     		 * Total number of messages sent to the queue
@@ -323,7 +389,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueAttributes
     		 */
-    var totalsent: Double = js.native
+    var totalsent: Double
     
     /**
     		 * The visibility timeout for the queue in seconds
@@ -331,7 +397,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueAttributes
     		 */
-    var vt: Double = js.native
+    var vt: Double
   }
   object QueueAttributes {
     
@@ -383,7 +449,6 @@ object mod {
     }
   }
   
-  @js.native
   trait QueueMessage extends StObject {
     
     /**
@@ -392,7 +457,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueMessage
     		 */
-    var fr: Double = js.native
+    var fr: Double
     
     /**
     		 * The internal message id.
@@ -400,7 +465,7 @@ object mod {
     		 * @type {string}
     		 * @memberof QueueMessage
     		 */
-    var id: String = js.native
+    var id: String
     
     /**
     		 * The message's contents.
@@ -408,7 +473,7 @@ object mod {
     		 * @type {string}
     		 * @memberof QueueMessage
     		 */
-    var message: String = js.native
+    var message: String
     
     /**
     		 * Number of times this message was received.
@@ -416,7 +481,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueMessage
     		 */
-    var rc: Double = js.native
+    var rc: Double
     
     /**
     		 * Timestamp of when this message was sent / created.
@@ -424,7 +489,7 @@ object mod {
     		 * @type {number}
     		 * @memberof QueueMessage
     		 */
-    var sent: Double = js.native
+    var sent: Double
   }
   object QueueMessage {
     
@@ -454,8 +519,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait ReceiveMessageOptions extends BaseOptions {
+  trait ReceiveMessageOptions
+    extends StObject
+       with BaseOptions {
     
     /**
     		 * *(Default: queue settings)*
@@ -465,7 +531,7 @@ object mod {
     		 * @type {number}
     		 * @memberof ReceiveMessageOptions
     		 */
-    var vt: js.UndefOr[Double] = js.native
+    var vt: js.UndefOr[Double] = js.undefined
   }
   object ReceiveMessageOptions {
     
@@ -487,52 +553,51 @@ object mod {
   }
   
   /*~ Write your module's methods and properties in this class */
-  @js.native
   trait RedisSMQ extends StObject {
     
-    def changeMessageVisibility(opts: ChangeMessageVisibilityOptions, cb: Callback[`0` | `1`]): Unit = js.native
+    def changeMessageVisibility(opts: ChangeMessageVisibilityOptions, cb: Callback[`0` | `1`]): Unit
     
-    def changeMessageVisibilityAsync(opts: ChangeMessageVisibilityOptions): js.Promise[`0` | `1`] = js.native
+    def changeMessageVisibilityAsync(opts: ChangeMessageVisibilityOptions): js.Promise[`0` | `1`]
     
-    def createQueueAsync(opts: CreateQueueOptions): js.Promise[`1`] = js.native
+    def createQueueAsync(opts: CreateQueueOptions): js.Promise[`1`]
     
     @JSName("createQueue")
-    def createQueue_1(opts: CreateQueueOptions, cb: Callback[`1`]): Unit = js.native
+    def createQueue_1(opts: CreateQueueOptions, cb: Callback[`1`]): Unit
     
-    def deleteMessage(opts: DeleteMessageOptions, cb: Callback[`0` | `1`]): Unit = js.native
+    def deleteMessage(opts: DeleteMessageOptions, cb: Callback[`0` | `1`]): Unit
     
-    def deleteMessageAsync(opts: DeleteMessageOptions): js.Promise[`0` | `1`] = js.native
+    def deleteMessageAsync(opts: DeleteMessageOptions): js.Promise[`0` | `1`]
     
-    def deleteQueueAsync(opts: DeleteQueueOptions): js.Promise[`1`] = js.native
+    def deleteQueueAsync(opts: DeleteQueueOptions): js.Promise[`1`]
     
     @JSName("deleteQueue")
-    def deleteQueue_1(opts: DeleteQueueOptions, cb: Callback[`1`]): Unit = js.native
+    def deleteQueue_1(opts: DeleteQueueOptions, cb: Callback[`1`]): Unit
     
-    def getQueueAttributes(opts: GetQueueAttributesOptions, cb: Callback[QueueAttributes]): Unit = js.native
+    def getQueueAttributes(opts: GetQueueAttributesOptions, cb: Callback[QueueAttributes]): Unit
     
-    def getQueueAttributesAsync(opts: GetQueueAttributesOptions): js.Promise[QueueAttributes] = js.native
+    def getQueueAttributesAsync(opts: GetQueueAttributesOptions): js.Promise[QueueAttributes]
     
-    def listQueues(cb: Callback[js.Array[String]]): Unit = js.native
+    def listQueues(cb: Callback[js.Array[String]]): Unit
     
-    def listQueuesAsync(): js.Promise[js.Array[String]] = js.native
+    def listQueuesAsync(): js.Promise[js.Array[String]]
     
-    def popMessage(opts: PopMessageOptions, cb: Callback[QueueMessage | js.Object]): Unit = js.native
+    def popMessage(opts: PopMessageOptions, cb: Callback[QueueMessage | js.Object]): Unit
     
-    def popMessageAsync(opts: PopMessageOptions): js.Promise[QueueMessage | js.Object] = js.native
+    def popMessageAsync(opts: PopMessageOptions): js.Promise[QueueMessage | js.Object]
     
-    def quit(): Unit = js.native
+    def quit(): Unit
     
-    def receiveMessage(opts: ReceiveMessageOptions, cb: Callback[QueueMessage | js.Object]): Unit = js.native
+    def receiveMessage(opts: ReceiveMessageOptions, cb: Callback[QueueMessage | js.Object]): Unit
     
-    def receiveMessageAsync(opts: ReceiveMessageOptions): js.Promise[QueueMessage | js.Object] = js.native
+    def receiveMessageAsync(opts: ReceiveMessageOptions): js.Promise[QueueMessage | js.Object]
     
-    def sendMessage(opts: SendMessageOptions, cb: Callback[String]): Unit = js.native
+    def sendMessage(opts: SendMessageOptions, cb: Callback[String]): Unit
     
-    def sendMessageAsync(opts: SendMessageOptions): js.Promise[String] = js.native
+    def sendMessageAsync(opts: SendMessageOptions): js.Promise[String]
     
-    def setQueueAttributes(opts: SetQueueAttributesOptions, cb: Callback[QueueAttributes]): Unit = js.native
+    def setQueueAttributes(opts: SetQueueAttributesOptions, cb: Callback[QueueAttributes]): Unit
     
-    def setQueueAttributesAsync(opts: SetQueueAttributesOptions): js.Promise[QueueAttributes] = js.native
+    def setQueueAttributesAsync(opts: SetQueueAttributesOptions): js.Promise[QueueAttributes]
   }
   object RedisSMQ {
     
@@ -632,8 +697,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait SendMessageOptions extends BaseOptions {
+  trait SendMessageOptions
+    extends StObject
+       with BaseOptions {
     
     /**
     		 * *(Default: queue settings)*
@@ -643,7 +709,7 @@ object mod {
     		 * @type {number}
     		 * @memberof SendMessageOptions
     		 */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
     		 * Message for the queue
@@ -651,7 +717,7 @@ object mod {
     		 * @type {string}
     		 * @memberof SendMessageOptions
     		 */
-    var message: String = js.native
+    var message: String
   }
   object SendMessageOptions {
     
@@ -675,8 +741,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait SetQueueAttributesOptions extends BaseOptions {
+  trait SetQueueAttributesOptions
+    extends StObject
+       with BaseOptions {
     
     /**
     		 * The time in seconds that the delivery of all new messages in the queue will be delayed.
@@ -685,7 +752,7 @@ object mod {
     		 * @type {number}
     		 * @memberof SetQueueAttributesOptions
     		 */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
     		 * The maximum message size in bytes.
@@ -694,7 +761,7 @@ object mod {
     		 * @type {number}
     		 * @memberof SetQueueAttributesOptions
     		 */
-    var maxsize: js.UndefOr[Double] = js.native
+    var maxsize: js.UndefOr[Double] = js.undefined
     
     /**
     		 * The length of time, in seconds,
@@ -705,7 +772,7 @@ object mod {
     		 * @type {number}
     		 * @memberof SetQueueAttributesOptions
     		 */
-    var vt: js.UndefOr[Double] = js.native
+    var vt: js.UndefOr[Double] = js.undefined
   }
   object SetQueueAttributesOptions {
     

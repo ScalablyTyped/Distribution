@@ -5,24 +5,23 @@ import typings.uirouterCore.vanillaInterfaceMod.LocationPlugin
 import typings.uirouterCore.vanillaInterfaceMod.ServicesPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginsMod {
   
-  @JSImport("@uirouter/core/lib/vanilla/plugins", "hashLocationPlugin")
+  @JSImport("@uirouter/core/lib/vanilla/plugins", JSImport.Namespace)
   @js.native
-  def hashLocationPlugin(router: UIRouter): LocationPlugin = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uirouter/core/lib/vanilla/plugins", "memoryLocationPlugin")
-  @js.native
-  def memoryLocationPlugin(router: UIRouter): LocationPlugin = js.native
+  @scala.inline
+  def hashLocationPlugin(router: UIRouter): LocationPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("hashLocationPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[LocationPlugin]
   
-  @JSImport("@uirouter/core/lib/vanilla/plugins", "pushStateLocationPlugin")
-  @js.native
-  def pushStateLocationPlugin(router: UIRouter): LocationPlugin = js.native
+  @scala.inline
+  def memoryLocationPlugin(router: UIRouter): LocationPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryLocationPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[LocationPlugin]
   
-  @JSImport("@uirouter/core/lib/vanilla/plugins", "servicesPlugin")
-  @js.native
-  def servicesPlugin(router: UIRouter): ServicesPlugin = js.native
+  @scala.inline
+  def pushStateLocationPlugin(router: UIRouter): LocationPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("pushStateLocationPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[LocationPlugin]
+  
+  @scala.inline
+  def servicesPlugin(router: UIRouter): ServicesPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("servicesPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[ServicesPlugin]
 }

@@ -11,19 +11,17 @@ import typings.phonegapPluginPush.phonegapPluginPushStrings.registration
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PhonegapPluginPush {
   
-  @js.native
   trait CategoryAction extends StObject {
     
-    var maybe: js.UndefOr[CategoryActionData] = js.native
+    var maybe: js.UndefOr[CategoryActionData] = js.undefined
     
-    var no: js.UndefOr[CategoryActionData] = js.native
+    var no: js.UndefOr[CategoryActionData] = js.undefined
     
-    var yes: js.UndefOr[CategoryActionData] = js.native
+    var yes: js.UndefOr[CategoryActionData] = js.undefined
   }
   object CategoryAction {
     
@@ -56,16 +54,15 @@ object PhonegapPluginPush {
     }
   }
   
-  @js.native
   trait CategoryActionData extends StObject {
     
-    var callback: String = js.native
+    var callback: String
     
-    var destructive: Boolean = js.native
+    var destructive: Boolean
     
-    var foreground: Boolean = js.native
+    var foreground: Boolean
     
-    var title: String = js.native
+    var title: String
   }
   object CategoryActionData {
     
@@ -104,28 +101,27 @@ object PhonegapPluginPush {
   /**
   	 * platform specific initialization options.
   	 */
-  @js.native
   trait InitOptions extends StObject {
     
     /**
     		 * Android specific initialization options.
     		 */
-    var android: js.UndefOr[ClearBadge] = js.native
+    var android: js.UndefOr[ClearBadge] = js.undefined
     
     /**
     		 * Browser specific initialization options.
     		 */
-    var browser: js.UndefOr[ApplicationServerKey] = js.native
+    var browser: js.UndefOr[ApplicationServerKey] = js.undefined
     
     /**
     		 * iOS specific initialization options.
     		 */
-    var ios: js.UndefOr[Alert] = js.native
+    var ios: js.UndefOr[Alert] = js.undefined
     
     /**
     		 * Windows specific initialization options.
     		 */
-    var windows: js.UndefOr[js.Object] = js.native
+    var windows: js.UndefOr[js.Object] = js.undefined
   }
   object InitOptions {
     
@@ -172,25 +168,25 @@ object PhonegapPluginPush {
   	 * Ideally the developer would overload (merged declaration) this or create a new interface that would extend this one
   	 * so that he could specify any custom code without having to use array notation (map['prop']) for all of them.
   	 */
-  @js.native
   trait NotificationEventAdditionalData
-    extends /* name */ StringDictionary[js.Any] {
+    extends StObject
+       with /* name */ StringDictionary[js.Any] {
     
     /**
     		 * Will be true if the application is started by clicking on the push notification, false if the app is already started. (Android/iOS only)
     		 */
-    var coldstart: js.UndefOr[Boolean] = js.native
+    var coldstart: js.UndefOr[Boolean] = js.undefined
     
-    var collapse_key: js.UndefOr[String] = js.native
+    var collapse_key: js.UndefOr[String] = js.undefined
     
     /**
     		 * Whether the notification was received while the app was in the foreground
     		 */
-    var foreground: js.UndefOr[Boolean] = js.native
+    var foreground: js.UndefOr[Boolean] = js.undefined
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var notId: js.UndefOr[String] = js.native
+    var notId: js.UndefOr[String] = js.undefined
   }
   object NotificationEventAdditionalData {
     
@@ -235,39 +231,40 @@ object PhonegapPluginPush {
     }
   }
   
-  @js.native
-  trait NotificationEventResponse extends _EventResponse {
+  trait NotificationEventResponse
+    extends StObject
+       with _EventResponse {
     
     /**
     		 * An optional collection of data sent by the 3rd party push service that does not fit in the above properties.
     		 */
-    var additionalData: NotificationEventAdditionalData = js.native
+    var additionalData: NotificationEventAdditionalData
     
     /**
     		 * The number of messages to be displayed in the badge iOS or message count in the notification shade in Android.
     		 * For windows, it represents the value in the badge notification which could be a number or a status glyph.
     		 */
-    var count: String = js.native
+    var count: String
     
     /**
     		 * The path of the image file to be displayed in the notification.
     		 */
-    var image: String = js.native
+    var image: String
     
     /**
     		 * The text of the push message sent from the 3rd party service.
     		 */
-    var message: String = js.native
+    var message: String
     
     /**
     		 * The name of the sound file to be played upon receipt of the notification.
     		 */
-    var sound: String = js.native
+    var sound: String
     
     /**
     		 * The optional title of the push message sent from the 3rd party service.
     		 */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object NotificationEventResponse {
     
@@ -317,7 +314,7 @@ object PhonegapPluginPush {
     		 * @param successHandler Is called when the api successfully clears the notifications.
     		 * @param errorHandler Is called when the api encounters an error when attempting to clears the notifications.
     		 */
-    def clearAllNotifications(successHandler: js.Function0[_], errorHandler: js.Function0[_]): Unit = js.native
+    def clearAllNotifications(successHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): Unit = js.native
     
     /**
     		 * iOS only
@@ -328,13 +325,13 @@ object PhonegapPluginPush {
     		 * @param id
     		 */
     def finish(): Unit = js.native
-    def finish(successHandler: js.UndefOr[scala.Nothing], errorHandler: js.UndefOr[scala.Nothing], id: String): Unit = js.native
-    def finish(successHandler: js.UndefOr[scala.Nothing], errorHandler: js.Function0[_]): Unit = js.native
-    def finish(successHandler: js.UndefOr[scala.Nothing], errorHandler: js.Function0[_], id: String): Unit = js.native
-    def finish(successHandler: js.Function0[_]): Unit = js.native
-    def finish(successHandler: js.Function0[_], errorHandler: js.UndefOr[scala.Nothing], id: String): Unit = js.native
-    def finish(successHandler: js.Function0[_], errorHandler: js.Function0[_]): Unit = js.native
-    def finish(successHandler: js.Function0[_], errorHandler: js.Function0[_], id: String): Unit = js.native
+    def finish(successHandler: js.Function0[js.Any]): Unit = js.native
+    def finish(successHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): Unit = js.native
+    def finish(successHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any], id: String): Unit = js.native
+    def finish(successHandler: js.Function0[js.Any], errorHandler: Unit, id: String): Unit = js.native
+    def finish(successHandler: Unit, errorHandler: js.Function0[js.Any]): Unit = js.native
+    def finish(successHandler: Unit, errorHandler: js.Function0[js.Any], id: String): Unit = js.native
+    def finish(successHandler: Unit, errorHandler: Unit, id: String): Unit = js.native
     
     /**
     		 * Get the current badge count visible when the app is not running
@@ -342,7 +339,7 @@ object PhonegapPluginPush {
     		 * @param successHandler
     		 * @param errorHandler
     		 */
-    def getApplicationIconBadgeNumber(successHandler: js.Function1[/* count */ Double, _], errorHandler: js.Function0[_]): Unit = js.native
+    def getApplicationIconBadgeNumber(successHandler: js.Function1[/* count */ Double, js.Any], errorHandler: js.Function0[js.Any]): Unit = js.native
     
     /**
     		 * As stated in the example, you will have to store your event handler if you are planning to remove it.
@@ -351,13 +348,13 @@ object PhonegapPluginPush {
     		 * @param event
     		 * @param callback
     		 */
-    def off(event: String, callback: js.Function1[/* response */ EventResponse, _]): Unit = js.native
+    def off(event: String, callback: js.Function1[/* response */ EventResponse, js.Any]): Unit = js.native
     @JSName("off")
-    def off_error(event: error, callback: js.Function1[/* response */ Error, _]): Unit = js.native
+    def off_error(event: error, callback: js.Function1[/* response */ Error, js.Any]): Unit = js.native
     @JSName("off")
-    def off_notification(event: notification, callback: js.Function1[/* response */ NotificationEventResponse, _]): Unit = js.native
+    def off_notification(event: notification, callback: js.Function1[/* response */ NotificationEventResponse, js.Any]): Unit = js.native
     @JSName("off")
-    def off_registration(event: registration, callback: js.Function1[/* response */ RegistrationEventResponse, _]): Unit = js.native
+    def off_registration(event: registration, callback: js.Function1[/* response */ RegistrationEventResponse, js.Any]): Unit = js.native
     
     /**
     		 *
@@ -366,28 +363,28 @@ object PhonegapPluginPush {
     		 * @param event
     		 * @param callback
     		 */
-    def on(event: String, callback: js.Function1[/* response */ EventResponse, _]): Unit = js.native
+    def on(event: String, callback: js.Function1[/* response */ EventResponse, js.Any]): Unit = js.native
     /**
     		 * The event error will trigger when an internal error occurs and the cache is aborted.
     		 * @param event
     		 * @param callback
     		 */
     @JSName("on")
-    def on_error(event: error, callback: js.Function1[/* response */ Error, _]): Unit = js.native
+    def on_error(event: error, callback: js.Function1[/* response */ Error, js.Any]): Unit = js.native
     /**
     		 * The event notification will be triggered each time a push notification is received by a 3rd party push service on the device.
     		 * @param event
     		 * @param callback
     		 */
     @JSName("on")
-    def on_notification(event: notification, callback: js.Function1[/* response */ NotificationEventResponse, _]): Unit = js.native
+    def on_notification(event: notification, callback: js.Function1[/* response */ NotificationEventResponse, js.Any]): Unit = js.native
     /**
     		 * The event registration will be triggered on each successful registration with the 3rd party push service.
     		 * @param event
     		 * @param callback
     		 */
     @JSName("on")
-    def on_registration(event: registration, callback: js.Function1[/* response */ RegistrationEventResponse, _]): Unit = js.native
+    def on_registration(event: registration, callback: js.Function1[/* response */ RegistrationEventResponse, js.Any]): Unit = js.native
     
     /*TODO according to js source code, "errorHandler" is optional, but is "count" also optional? I can't read objetive-C code (can anyone at all? I wonder...)*/
     /**
@@ -400,7 +397,7 @@ object PhonegapPluginPush {
     		 * @param errorHandler
     		 * @param count
     		 */
-    def setApplicationIconBadgeNumber(successHandler: js.Function0[_], errorHandler: js.Function0[_], count: Double): Unit = js.native
+    def setApplicationIconBadgeNumber(successHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any], count: Double): Unit = js.native
     
     /**
     		 * The subscribe method is used when the application wants to subscribe a new topic to receive push notifications.
@@ -408,7 +405,7 @@ object PhonegapPluginPush {
     		 * @param successHandler Is called when the api successfully unregisters.
     		 * @param errorHandler Is called when the api encounters an error while unregistering.
     		 */
-    def subscribe(topic: String, successHandler: js.Function0[_], errorHandler: js.Function0[_]): Unit = js.native
+    def subscribe(topic: String, successHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): Unit = js.native
     
     /**
     		 * The unregister method is used when the application no longer wants to receive push notifications.
@@ -418,10 +415,10 @@ object PhonegapPluginPush {
     		 * @param errorHandler
     		 * @param topics
     		 */
-    def unregister(successHandler: js.Function0[_]): Unit = js.native
-    def unregister(successHandler: js.Function0[_], errorHandler: js.UndefOr[scala.Nothing], topics: js.Array[String]): Unit = js.native
-    def unregister(successHandler: js.Function0[_], errorHandler: js.Function0[_]): Unit = js.native
-    def unregister(successHandler: js.Function0[_], errorHandler: js.Function0[_], topics: js.Array[String]): Unit = js.native
+    def unregister(successHandler: js.Function0[js.Any]): Unit = js.native
+    def unregister(successHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): Unit = js.native
+    def unregister(successHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any], topics: js.Array[String]): Unit = js.native
+    def unregister(successHandler: js.Function0[js.Any], errorHandler: Unit, topics: js.Array[String]): Unit = js.native
     
     /**
     		 * The unsubscribe method is used when the application no longer wants to receive push notifications
@@ -430,22 +427,25 @@ object PhonegapPluginPush {
     		 * @param successHandler Is called when the api successfully unregisters.
     		 * @param errorHandler Is called when the api encounters an error while unregistering.
     		 */
-    def unsubscribe(topic: String, successHandler: js.Function0[_], errorHandler: js.Function0[_]): Unit = js.native
+    def unsubscribe(topic: String, successHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): Unit = js.native
   }
   
   @js.native
-  trait PushNotificationStatic extends Instantiable1[/* options */ InitOptions, PushNotification] {
+  trait PushNotificationStatic
+    extends StObject
+       with Instantiable1[/* options */ InitOptions, PushNotification] {
     
     def init(options: InitOptions): PushNotification = js.native
   }
   
-  @js.native
-  trait RegistrationEventResponse extends _EventResponse {
+  trait RegistrationEventResponse
+    extends StObject
+       with _EventResponse {
     
     /**
     		 * The registration ID provided by the 3rd party remote push service.
     		 */
-    var registrationId: String = js.native
+    var registrationId: String
   }
   object RegistrationEventResponse {
     

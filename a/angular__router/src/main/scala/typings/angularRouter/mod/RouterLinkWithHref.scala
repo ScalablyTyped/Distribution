@@ -4,15 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCommon.mod.LocationStrategy
 import typings.angularCore.mod.OnChanges
 import typings.angularCore.mod.OnDestroy
+import typings.angularCore.mod.SimpleChanges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterLinkWithHref")
 @js.native
 class RouterLinkWithHref protected ()
-  extends OnChanges
+  extends StObject
+     with OnChanges
      with OnDestroy {
   def this(router: Router, route: ActivatedRoute, locationStrategy: LocationStrategy) = this()
   
@@ -29,6 +30,23 @@ class RouterLinkWithHref protected ()
   var href: String = js.native
   
   var locationStrategy: js.Any = js.native
+  
+  /**
+    * A callback method that is invoked immediately after the
+    * default change detector has checked data-bound properties
+    * if at least one has changed, and before the view and content
+    * children are checked.
+    * @param changes The changed properties.
+    */
+  /* CompleteClass */
+  override def ngOnChanges(changes: SimpleChanges): Unit = js.native
+  
+  /**
+    * A callback method that performs custom clean-up, invoked immediately
+    * before a directive, pipe, or service instance is destroyed.
+    */
+  /* CompleteClass */
+  override def ngOnDestroy(): Unit = js.native
   
   /** @nodoc */
   def onClick(button: Double, ctrlKey: Boolean, shiftKey: Boolean, altKey: Boolean, metaKey: Boolean): Boolean = js.native
@@ -78,7 +96,7 @@ class RouterLinkWithHref protected ()
     *   - **null|undefined**: shorthand for an empty array of commands, i.e. `[]`
     * @see {@link Router#createUrlTree Router#createUrlTree}
     */
-  def routerLink_=(commands: js.UndefOr[js.Array[_] | String | Null]): Unit = js.native
+  def routerLink_=(commands: js.UndefOr[js.Array[js.Any] | String | Null]): Unit = js.native
   
   /**
     * Passed to {@link Router#navigateByUrl Router#navigateByUrl} as part of the

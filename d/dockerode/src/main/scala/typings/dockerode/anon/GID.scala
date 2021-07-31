@@ -2,19 +2,17 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GID extends StObject {
   
-  var GID: js.UndefOr[String] = js.native
+  var GID: js.UndefOr[String] = js.undefined
   
-  var Mode: js.UndefOr[Double] = js.native
+  var Mode: js.UndefOr[Double] = js.undefined
   
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
-  var UID: js.UndefOr[String] = js.native
+  var UID: js.UndefOr[String] = js.undefined
 }
 object GID {
   

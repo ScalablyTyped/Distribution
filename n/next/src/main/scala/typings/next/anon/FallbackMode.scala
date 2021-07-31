@@ -5,15 +5,13 @@ import typings.next.nextStrings.blocking
 import typings.next.nextStrings.static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FallbackMode extends StObject {
   
-  var fallbackMode: static | blocking | `false` = js.native
+  var fallbackMode: static | blocking | `false`
   
-  var staticPaths: js.UndefOr[js.Array[String]] = js.native
+  var staticPaths: js.UndefOr[js.Array[String]] = js.undefined
 }
 object FallbackMode {
   

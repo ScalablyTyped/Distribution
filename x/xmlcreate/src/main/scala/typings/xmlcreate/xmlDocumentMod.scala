@@ -8,25 +8,25 @@ import typings.xmlcreate.xmlElementMod.IXmlElementOptions
 import typings.xmlcreate.xmlProcInstMod.IXmlProcInstOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlDocumentMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlDocument", JSImport.Default)
   @js.native
-  class default protected () extends XmlDocument {
+  class default protected ()
+    extends StObject
+       with XmlDocument {
     def this(options: IXmlDocumentOptions) = this()
   }
   
-  @js.native
   trait IXmlDocumentOptions extends StObject {
     
     /**
       * Whether to throw an exception if basic XML validation fails while
       * building the document.
       */
-    var validation: js.UndefOr[Boolean] = js.native
+    var validation: js.UndefOr[Boolean] = js.undefined
   }
   object IXmlDocumentOptions {
     

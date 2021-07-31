@@ -4,7 +4,6 @@ import typings.ink.colorizeMod.ColorType
 import typings.ink.domMod.ElementNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inkStrings {
@@ -30,7 +29,9 @@ object inkStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait background extends ColorType
+  sealed trait background
+    extends StObject
+       with ColorType
   @scala.inline
   def background: background = "background".asInstanceOf[background]
   
@@ -90,27 +91,37 @@ object inkStrings {
   def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
   
   @js.native
-  sealed trait foreground extends ColorType
+  sealed trait foreground
+    extends StObject
+       with ColorType
   @scala.inline
   def foreground: foreground = "foreground".asInstanceOf[foreground]
   
   @js.native
-  sealed trait `ink-box` extends ElementNames
+  sealed trait `ink-box`
+    extends StObject
+       with ElementNames
   @scala.inline
   def `ink-box`: `ink-box` = "ink-box".asInstanceOf[`ink-box`]
   
   @js.native
-  sealed trait `ink-root` extends ElementNames
+  sealed trait `ink-root`
+    extends StObject
+       with ElementNames
   @scala.inline
   def `ink-root`: `ink-root` = "ink-root".asInstanceOf[`ink-root`]
   
   @js.native
-  sealed trait `ink-text` extends ElementNames
+  sealed trait `ink-text`
+    extends StObject
+       with ElementNames
   @scala.inline
   def `ink-text`: `ink-text` = "ink-text".asInstanceOf[`ink-text`]
   
   @js.native
-  sealed trait `ink-virtual-text` extends ElementNames
+  sealed trait `ink-virtual-text`
+    extends StObject
+       with ElementNames
   @scala.inline
   def `ink-virtual-text`: `ink-virtual-text` = "ink-virtual-text".asInstanceOf[`ink-virtual-text`]
   

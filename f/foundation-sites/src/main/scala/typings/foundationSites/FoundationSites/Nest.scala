@@ -2,15 +2,13 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Nest extends StObject {
   
-  def Burn(menu: js.Any, `type`: js.Any): Unit = js.native
+  def Burn(menu: js.Any, `type`: js.Any): Unit
   
-  def Feather(menu: js.Any, `type`: js.Any): Unit = js.native
+  def Feather(menu: js.Any, `type`: js.Any): Unit
 }
 object Nest {
   

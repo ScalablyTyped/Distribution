@@ -4,7 +4,6 @@ import typings.karmaViewport.viewportMod.Viewport
 import typings.karmaViewport.viewportMod.ViewportConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
@@ -14,12 +13,11 @@ object adapterMod {
     */
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      var __viewport__ : ViewportConfiguration = js.native
+      var __viewport__ : ViewportConfiguration
       
-      var viewport: Viewport = js.native
+      var viewport: Viewport
     }
     object Window {
       

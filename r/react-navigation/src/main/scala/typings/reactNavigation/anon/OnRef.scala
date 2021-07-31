@@ -8,13 +8,11 @@ import typings.reactNavigation.mod.NavigationParams
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnRef[T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationInjectedProps[NavigationParams] */] extends StObject {
   
-  var onRef: js.UndefOr[Ref[InstanceType[T]]] = js.native
+  var onRef: js.UndefOr[Ref[InstanceType[T]]] = js.undefined
 }
 object OnRef {
   
@@ -25,7 +23,7 @@ object OnRef {
   }
   
   @scala.inline
-  implicit class OnRefMutableBuilder[Self <: OnRef[_, _], T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationInjectedProps[NavigationParams] */] (val x: Self with (OnRef[T, P])) extends AnyVal {
+  implicit class OnRefMutableBuilder[Self <: OnRef[?, ?], T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationInjectedProps[NavigationParams] */] (val x: Self & (OnRef[T, P])) extends AnyVal {
     
     @scala.inline
     def setOnRef(value: Ref[InstanceType[T]]): Self = StObject.set(x, "onRef", value.asInstanceOf[js.Any])

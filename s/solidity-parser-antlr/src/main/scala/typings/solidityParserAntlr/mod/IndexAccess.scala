@@ -2,32 +2,27 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
 trait IndexAccess
-  extends Expression
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with Expression {
   
-  var base: Expression = js.native
+  var base: Expression
   
-  var index: Expression = js.native
+  var index: Expression
   
   @JSName("type")
-  var type_IndexAccess: typings.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess = js.native
+  var type_IndexAccess: typings.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess
 }
 object IndexAccess {
   
   @scala.inline
-  def apply(
-    base: Expression,
-    index: Expression,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess
-  ): IndexAccess = {
+  def apply(base: Expression, index: Expression): IndexAccess = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IndexAccess")
     __obj.asInstanceOf[IndexAccess]
   }
   

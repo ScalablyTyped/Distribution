@@ -6,57 +6,52 @@ import typings.antd.anon.Update
 import typings.antd.modalModalMod.ModalFuncProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object confirmMod {
   
-  @JSImport("antd/lib/modal/confirm", JSImport.Default)
+  @JSImport("antd/lib/modal/confirm", JSImport.Namespace)
   @js.native
-  def default(config: ModalFuncProps): Update = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("antd/lib/modal/confirm", "globalConfig")
-  @js.native
-  def globalConfig(hasRootPrefixCls: RootPrefixCls): Unit = js.native
+  @scala.inline
+  def default(config: ModalFuncProps): Update = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Update]
   
-  @JSImport("antd/lib/modal/confirm", "withConfirm")
-  @js.native
-  def withConfirm(props: ModalFuncProps): ModalFuncProps = js.native
+  @scala.inline
+  def globalConfig(hasRootPrefixCls: RootPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("globalConfig")(hasRootPrefixCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("antd/lib/modal/confirm", "withError")
-  @js.native
-  def withError(props: ModalFuncProps): ModalFuncProps = js.native
+  @scala.inline
+  def withConfirm(props: ModalFuncProps): ModalFuncProps = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfirm")(props.asInstanceOf[js.Any]).asInstanceOf[ModalFuncProps]
   
-  @JSImport("antd/lib/modal/confirm", "withInfo")
-  @js.native
-  def withInfo(props: ModalFuncProps): ModalFuncProps = js.native
+  @scala.inline
+  def withError(props: ModalFuncProps): ModalFuncProps = ^.asInstanceOf[js.Dynamic].applyDynamic("withError")(props.asInstanceOf[js.Any]).asInstanceOf[ModalFuncProps]
   
-  @JSImport("antd/lib/modal/confirm", "withSuccess")
-  @js.native
-  def withSuccess(props: ModalFuncProps): ModalFuncProps = js.native
+  @scala.inline
+  def withInfo(props: ModalFuncProps): ModalFuncProps = ^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(props.asInstanceOf[js.Any]).asInstanceOf[ModalFuncProps]
   
-  @JSImport("antd/lib/modal/confirm", "withWarn")
-  @js.native
-  def withWarn(props: ModalFuncProps): ModalFuncProps = js.native
+  @scala.inline
+  def withSuccess(props: ModalFuncProps): ModalFuncProps = ^.asInstanceOf[js.Dynamic].applyDynamic("withSuccess")(props.asInstanceOf[js.Any]).asInstanceOf[ModalFuncProps]
+  
+  @scala.inline
+  def withWarn(props: ModalFuncProps): ModalFuncProps = ^.asInstanceOf[js.Dynamic].applyDynamic("withWarn")(props.asInstanceOf[js.Any]).asInstanceOf[ModalFuncProps]
   
   type ConfigUpdate = ModalFuncProps | (js.Function1[/* prevConfig */ ModalFuncProps, ModalFuncProps])
   
   type ModalFunc = js.Function1[/* props */ ModalFuncProps, Destroy]
   
-  @js.native
   trait ModalStaticFunctions extends StObject {
     
-    var confirm: ModalFunc = js.native
+    var confirm: ModalFunc
     
-    var error: ModalFunc = js.native
+    var error: ModalFunc
     
-    var info: ModalFunc = js.native
+    var info: ModalFunc
     
-    var success: ModalFunc = js.native
+    var success: ModalFunc
     
-    var warn: ModalFunc = js.native
+    var warn: ModalFunc
     
-    var warning: ModalFunc = js.native
+    var warning: ModalFunc
   }
   object ModalStaticFunctions {
     

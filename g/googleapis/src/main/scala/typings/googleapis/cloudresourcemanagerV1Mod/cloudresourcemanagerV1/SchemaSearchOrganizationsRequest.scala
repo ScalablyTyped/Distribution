@@ -2,13 +2,11 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request sent to the `SearchOrganizations` method.
   */
-@js.native
 trait SchemaSearchOrganizationsRequest extends StObject {
   
   /**
@@ -21,20 +19,20 @@ trait SchemaSearchOrganizationsRequest extends StObject {
     * |domain:google.com|Organizations corresponding to the domain
     * `google.com`.|  This field is optional.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of Organizations to return in the response. This field
     * is optional.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A pagination token returned from a previous call to `SearchOrganizations`
     * that indicates from where listing should continue. This field is
     * optional.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaSearchOrganizationsRequest {
   

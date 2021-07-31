@@ -11,8 +11,8 @@ XMPP client for JavaScript
 | Full name          | node-xmpp-client |
 | Keywords           | client, XMPP, C2S, WebSocket, BOSH |
 | # releases         | 1 |
-| # dependents       | 68 |
-| # downloads        | 585172 |
+| # dependents       | 67 |
+| # downloads        | 561409 |
 | # stars            | 4 |
 
 ## Links

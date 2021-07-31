@@ -2,17 +2,15 @@ package typings.casperjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyOptions extends StObject {
   
-  var keepFocus: js.UndefOr[Boolean] = js.native
+  var keepFocus: js.UndefOr[Boolean] = js.undefined
   
-  var modifiers: js.UndefOr[String] = js.native
+  var modifiers: js.UndefOr[String] = js.undefined
   
-  var reset: js.UndefOr[Boolean] = js.native
+  var reset: js.UndefOr[Boolean] = js.undefined
 }
 object KeyOptions {
   

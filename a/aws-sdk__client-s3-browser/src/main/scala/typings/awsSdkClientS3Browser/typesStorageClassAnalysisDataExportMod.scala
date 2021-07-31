@@ -5,23 +5,21 @@ import typings.awsSdkClientS3Browser.typesAnalyticsExportDestinationMod.Analytic
 import typings.awsSdkClientS3Browser.typesAnalyticsExportDestinationMod.UnmarshalledAnalyticsExportDestination
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesStorageClassAnalysisDataExportMod {
   
-  @js.native
   trait StorageClassAnalysisDataExport extends StObject {
     
     /**
       * <p>The place to store the data for an analysis.</p>
       */
-    var Destination: AnalyticsExportDestination = js.native
+    var Destination: AnalyticsExportDestination
     
     /**
       * <p>The version of the output schema to use when exporting data. Must be V_1.</p>
       */
-    var OutputSchemaVersion: V_1 | String = js.native
+    var OutputSchemaVersion: V_1 | String
   }
   object StorageClassAnalysisDataExport {
     
@@ -42,14 +40,15 @@ object typesStorageClassAnalysisDataExportMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledStorageClassAnalysisDataExport extends StorageClassAnalysisDataExport {
+  trait UnmarshalledStorageClassAnalysisDataExport
+    extends StObject
+       with StorageClassAnalysisDataExport {
     
     /**
       * <p>The place to store the data for an analysis.</p>
       */
     @JSName("Destination")
-    var Destination_UnmarshalledStorageClassAnalysisDataExport: UnmarshalledAnalyticsExportDestination = js.native
+    var Destination_UnmarshalledStorageClassAnalysisDataExport: UnmarshalledAnalyticsExportDestination
   }
   object UnmarshalledStorageClassAnalysisDataExport {
     

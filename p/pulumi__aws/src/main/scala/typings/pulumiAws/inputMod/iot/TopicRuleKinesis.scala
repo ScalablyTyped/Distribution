@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleKinesis extends StObject {
   
   /**
     * The partition key.
     */
-  var partitionKey: js.UndefOr[Input[String]] = js.native
+  var partitionKey: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access to the Amazon Kinesis stream.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
   
   /**
     * The name of the Amazon Kinesis stream.
     */
-  var streamName: Input[String] = js.native
+  var streamName: Input[String]
 }
 object TopicRuleKinesis {
   

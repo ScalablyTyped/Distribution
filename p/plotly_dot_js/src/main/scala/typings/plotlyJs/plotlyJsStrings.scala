@@ -10,13 +10,14 @@ import typings.plotlyJs.mod.XAxisName
 import typings.plotlyJs.mod.YAxisName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object plotlyJsStrings {
   
   @js.native
-  sealed trait `-_` extends AxisType
+  sealed trait `-_`
+    extends StObject
+       with AxisType
   @scala.inline
   def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
@@ -151,7 +152,9 @@ object plotlyJsStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait autoScale2d extends ModeBarDefaultButtons
+  sealed trait autoScale2d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def autoScale2d: autoScale2d = "autoScale2d".asInstanceOf[autoScale2d]
   
@@ -196,12 +199,16 @@ object plotlyJsStrings {
   def backward: backward = "backward".asInstanceOf[backward]
   
   @js.native
-  sealed trait bar extends PlotType
+  sealed trait bar
+    extends StObject
+       with PlotType
   @scala.inline
   def bar: bar = "bar".asInstanceOf[bar]
   
   @js.native
-  sealed trait barpolar extends PlotType
+  sealed trait barpolar
+    extends StObject
+       with PlotType
   @scala.inline
   def barpolar: barpolar = "barpolar".asInstanceOf[barpolar]
   
@@ -306,7 +313,9 @@ object plotlyJsStrings {
   def `bounce-out`: `bounce-out` = "bounce-out".asInstanceOf[`bounce-out`]
   
   @js.native
-  sealed trait box extends PlotType
+  sealed trait box
+    extends StObject
+       with PlotType
   @scala.inline
   def box: box = "box".asInstanceOf[box]
   
@@ -326,7 +335,9 @@ object plotlyJsStrings {
   def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait candlestick extends PlotType
+  sealed trait candlestick
+    extends StObject
+       with PlotType
   @scala.inline
   def candlestick: candlestick = "candlestick".asInstanceOf[candlestick]
   
@@ -341,12 +352,16 @@ object plotlyJsStrings {
   def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
-  sealed trait carpet extends PlotType
+  sealed trait carpet
+    extends StObject
+       with PlotType
   @scala.inline
   def carpet: carpet = "carpet".asInstanceOf[carpet]
   
   @js.native
-  sealed trait category extends AxisType
+  sealed trait category
+    extends StObject
+       with AxisType
   @scala.inline
   def category: category = "category".asInstanceOf[category]
   
@@ -366,17 +381,23 @@ object plotlyJsStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait chinese extends Calendar
+  sealed trait chinese
+    extends StObject
+       with Calendar
   @scala.inline
   def chinese: chinese = "chinese".asInstanceOf[chinese]
   
   @js.native
-  sealed trait choropleth extends PlotType
+  sealed trait choropleth
+    extends StObject
+       with PlotType
   @scala.inline
   def choropleth: choropleth = "choropleth".asInstanceOf[choropleth]
   
   @js.native
-  sealed trait choroplethmapbox extends PlotType
+  sealed trait choroplethmapbox
+    extends StObject
+       with PlotType
   @scala.inline
   def choroplethmapbox: choroplethmapbox = "choroplethmapbox".asInstanceOf[choroplethmapbox]
   
@@ -441,7 +462,9 @@ object plotlyJsStrings {
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait cone extends PlotType
+  sealed trait cone
+    extends StObject
+       with PlotType
   @scala.inline
   def cone: cone = "cone".asInstanceOf[cone]
   
@@ -461,22 +484,30 @@ object plotlyJsStrings {
   def container: container = "container".asInstanceOf[container]
   
   @js.native
-  sealed trait contour extends PlotType
+  sealed trait contour
+    extends StObject
+       with PlotType
   @scala.inline
   def contour: contour = "contour".asInstanceOf[contour]
   
   @js.native
-  sealed trait contourcarpet extends PlotType
+  sealed trait contourcarpet
+    extends StObject
+       with PlotType
   @scala.inline
   def contourcarpet: contourcarpet = "contourcarpet".asInstanceOf[contourcarpet]
   
   @js.native
-  sealed trait contourgl extends PlotType
+  sealed trait contourgl
+    extends StObject
+       with PlotType
   @scala.inline
   def contourgl: contourgl = "contourgl".asInstanceOf[contourgl]
   
   @js.native
-  sealed trait coptic extends Calendar
+  sealed trait coptic
+    extends StObject
+       with Calendar
   @scala.inline
   def coptic: coptic = "coptic".asInstanceOf[coptic]
   
@@ -531,12 +562,16 @@ object plotlyJsStrings {
   def d: d = "d".asInstanceOf[d]
   
   @js.native
-  sealed trait dash extends Dash
+  sealed trait dash
+    extends StObject
+       with Dash
   @scala.inline
   def dash: dash = "dash".asInstanceOf[dash]
   
   @js.native
-  sealed trait dashdot extends Dash
+  sealed trait dashdot
+    extends StObject
+       with Dash
   @scala.inline
   def dashdot: dashdot = "dashdot".asInstanceOf[dashdot]
   
@@ -551,7 +586,9 @@ object plotlyJsStrings {
   def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
-  sealed trait date extends AxisType
+  sealed trait date
+    extends StObject
+       with AxisType
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
@@ -581,7 +618,9 @@ object plotlyJsStrings {
   def delta: delta = "delta".asInstanceOf[delta]
   
   @js.native
-  sealed trait densitymapbox extends PlotType
+  sealed trait densitymapbox
+    extends StObject
+       with PlotType
   @scala.inline
   def densitymapbox: densitymapbox = "densitymapbox".asInstanceOf[densitymapbox]
   
@@ -621,7 +660,9 @@ object plotlyJsStrings {
   def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
-  sealed trait discworld extends Calendar
+  sealed trait discworld
+    extends StObject
+       with Calendar
   @scala.inline
   def discworld: discworld = "discworld".asInstanceOf[discworld]
   
@@ -641,7 +682,9 @@ object plotlyJsStrings {
   def domain: domain = "domain".asInstanceOf[domain]
   
   @js.native
-  sealed trait dot extends Dash
+  sealed trait dot
+    extends StObject
+       with Dash
   @scala.inline
   def dot: dot = "dot".asInstanceOf[dot]
   
@@ -696,7 +739,9 @@ object plotlyJsStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait ethiopian extends Calendar
+  sealed trait ethiopian
+    extends StObject
+       with Calendar
   @scala.inline
   def ethiopian: ethiopian = "ethiopian".asInstanceOf[ethiopian]
   
@@ -926,12 +971,16 @@ object plotlyJsStrings {
   def free: free = "free".asInstanceOf[free]
   
   @js.native
-  sealed trait funnel extends PlotType
+  sealed trait funnel
+    extends StObject
+       with PlotType
   @scala.inline
   def funnel: funnel = "funnel".asInstanceOf[funnel]
   
   @js.native
-  sealed trait funnelarea extends PlotType
+  sealed trait funnelarea
+    extends StObject
+       with PlotType
   @scala.inline
   def funnelarea: funnelarea = "funnelarea".asInstanceOf[funnelarea]
   
@@ -966,7 +1015,9 @@ object plotlyJsStrings {
   def geojson: geojson = "geojson".asInstanceOf[geojson]
   
   @js.native
-  sealed trait gregorian extends Calendar
+  sealed trait gregorian
+    extends StObject
+       with Calendar
   @scala.inline
   def gregorian: gregorian = "gregorian".asInstanceOf[gregorian]
   
@@ -1036,17 +1087,23 @@ object plotlyJsStrings {
   def header: header = "header".asInstanceOf[header]
   
   @js.native
-  sealed trait heatmap extends PlotType
+  sealed trait heatmap
+    extends StObject
+       with PlotType
   @scala.inline
   def heatmap: heatmap = "heatmap".asInstanceOf[heatmap]
   
   @js.native
-  sealed trait heatmapgl extends PlotType
+  sealed trait heatmapgl
+    extends StObject
+       with PlotType
   @scala.inline
   def heatmapgl: heatmapgl = "heatmapgl".asInstanceOf[heatmapgl]
   
   @js.native
-  sealed trait hebrew extends Calendar
+  sealed trait hebrew
+    extends StObject
+       with Calendar
   @scala.inline
   def hebrew: hebrew = "hebrew".asInstanceOf[hebrew]
   
@@ -1056,17 +1113,23 @@ object plotlyJsStrings {
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
-  sealed trait histogram extends PlotType
+  sealed trait histogram
+    extends StObject
+       with PlotType
   @scala.inline
   def histogram: histogram = "histogram".asInstanceOf[histogram]
   
   @js.native
-  sealed trait histogram2d extends PlotType
+  sealed trait histogram2d
+    extends StObject
+       with PlotType
   @scala.inline
   def histogram2d: histogram2d = "histogram2d".asInstanceOf[histogram2d]
   
   @js.native
-  sealed trait histogram2dcontour extends PlotType
+  sealed trait histogram2dcontour
+    extends StObject
+       with PlotType
   @scala.inline
   def histogram2dcontour: histogram2dcontour = "histogram2dcontour".asInstanceOf[histogram2dcontour]
   
@@ -1086,32 +1149,44 @@ object plotlyJsStrings {
   def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
-  sealed trait hoverClosest3d extends ModeBarDefaultButtons
+  sealed trait hoverClosest3d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def hoverClosest3d: hoverClosest3d = "hoverClosest3d".asInstanceOf[hoverClosest3d]
   
   @js.native
-  sealed trait hoverClosestCartesian extends ModeBarDefaultButtons
+  sealed trait hoverClosestCartesian
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def hoverClosestCartesian: hoverClosestCartesian = "hoverClosestCartesian".asInstanceOf[hoverClosestCartesian]
   
   @js.native
-  sealed trait hoverClosestGeo extends ModeBarDefaultButtons
+  sealed trait hoverClosestGeo
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def hoverClosestGeo: hoverClosestGeo = "hoverClosestGeo".asInstanceOf[hoverClosestGeo]
   
   @js.native
-  sealed trait hoverClosestGl2d extends ModeBarDefaultButtons
+  sealed trait hoverClosestGl2d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def hoverClosestGl2d: hoverClosestGl2d = "hoverClosestGl2d".asInstanceOf[hoverClosestGl2d]
   
   @js.native
-  sealed trait hoverClosestPie extends ModeBarDefaultButtons
+  sealed trait hoverClosestPie
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def hoverClosestPie: hoverClosestPie = "hoverClosestPie".asInstanceOf[hoverClosestPie]
   
   @js.native
-  sealed trait hoverCompareCartesian extends ModeBarDefaultButtons
+  sealed trait hoverCompareCartesian
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def hoverCompareCartesian: hoverCompareCartesian = "hoverCompareCartesian".asInstanceOf[hoverCompareCartesian]
   
@@ -1151,7 +1226,9 @@ object plotlyJsStrings {
   def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
-  sealed trait image extends PlotType
+  sealed trait image
+    extends StObject
+       with PlotType
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   
@@ -1176,7 +1253,9 @@ object plotlyJsStrings {
   def independent: independent = "independent".asInstanceOf[independent]
   
   @js.native
-  sealed trait indicator extends PlotType
+  sealed trait indicator
+    extends StObject
+       with PlotType
   @scala.inline
   def indicator: indicator = "indicator".asInstanceOf[indicator]
   
@@ -1206,17 +1285,23 @@ object plotlyJsStrings {
   def interpolate: interpolate = "interpolate".asInstanceOf[interpolate]
   
   @js.native
-  sealed trait islamic extends Calendar
+  sealed trait islamic
+    extends StObject
+       with Calendar
   @scala.inline
   def islamic: islamic = "islamic".asInstanceOf[islamic]
   
   @js.native
-  sealed trait isosurface extends PlotType
+  sealed trait isosurface
+    extends StObject
+       with PlotType
   @scala.inline
   def isosurface: isosurface = "isosurface".asInstanceOf[isosurface]
   
   @js.native
-  sealed trait jalali extends Calendar
+  sealed trait jalali
+    extends StObject
+       with Calendar
   @scala.inline
   def jalali: jalali = "jalali".asInstanceOf[jalali]
   
@@ -1226,7 +1311,9 @@ object plotlyJsStrings {
   def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
   
   @js.native
-  sealed trait julian extends Calendar
+  sealed trait julian
+    extends StObject
+       with Calendar
   @scala.inline
   def julian: julian = "julian".asInstanceOf[julian]
   
@@ -1281,7 +1368,9 @@ object plotlyJsStrings {
   def lasso: lasso = "lasso".asInstanceOf[lasso]
   
   @js.native
-  sealed trait lasso2d extends ModeBarDefaultButtons
+  sealed trait lasso2d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def lasso2d: lasso2d = "lasso2d".asInstanceOf[lasso2d]
   
@@ -1331,7 +1420,9 @@ object plotlyJsStrings {
   def `line-center`: `line-center` = "line-center".asInstanceOf[`line-center`]
   
   @js.native
-  sealed trait linear extends AxisType
+  sealed trait linear
+    extends StObject
+       with AxisType
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   
@@ -1371,17 +1462,23 @@ object plotlyJsStrings {
   def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait log extends AxisType
+  sealed trait log
+    extends StObject
+       with AxisType
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   
   @js.native
-  sealed trait longdash extends Dash
+  sealed trait longdash
+    extends StObject
+       with Dash
   @scala.inline
   def longdash: longdash = "longdash".asInstanceOf[longdash]
   
   @js.native
-  sealed trait longdashdot extends Dash
+  sealed trait longdashdot
+    extends StObject
+       with Dash
   @scala.inline
   def longdashdot: longdashdot = "longdashdot".asInstanceOf[longdashdot]
   
@@ -1441,7 +1538,9 @@ object plotlyJsStrings {
   def `max descending`: `max descending` = ("max descending").asInstanceOf[`max descending`]
   
   @js.native
-  sealed trait mayan extends Calendar
+  sealed trait mayan
+    extends StObject
+       with Calendar
   @scala.inline
   def mayan: mayan = "mayan".asInstanceOf[mayan]
   
@@ -1476,7 +1575,9 @@ object plotlyJsStrings {
   def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
-  sealed trait mesh3d extends PlotType
+  sealed trait mesh3d
+    extends StObject
+       with PlotType
   @scala.inline
   def mesh3d: mesh3d = "mesh3d".asInstanceOf[mesh3d]
   
@@ -1546,7 +1647,9 @@ object plotlyJsStrings {
   def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait multicategory extends AxisType
+  sealed trait multicategory
+    extends StObject
+       with AxisType
   @scala.inline
   def multicategory: multicategory = "multicategory".asInstanceOf[multicategory]
   
@@ -1556,7 +1659,9 @@ object plotlyJsStrings {
   def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait nanakshahi extends Calendar
+  sealed trait nanakshahi
+    extends StObject
+       with Calendar
   @scala.inline
   def nanakshahi: nanakshahi = "nanakshahi".asInstanceOf[nanakshahi]
   
@@ -1571,7 +1676,9 @@ object plotlyJsStrings {
   def negative: negative = "negative".asInstanceOf[negative]
   
   @js.native
-  sealed trait nepali extends Calendar
+  sealed trait nepali
+    extends StObject
+       with Calendar
   @scala.inline
   def nepali: nepali = "nepali".asInstanceOf[nepali]
   
@@ -1611,7 +1718,9 @@ object plotlyJsStrings {
   def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait ohlc extends PlotType
+  sealed trait ohlc
+    extends StObject
+       with PlotType
   @scala.inline
   def ohlc: ohlc = "ohlc".asInstanceOf[ohlc]
   
@@ -1651,7 +1760,9 @@ object plotlyJsStrings {
   def orbit: orbit = "orbit".asInstanceOf[orbit]
   
   @js.native
-  sealed trait orbitRotation extends ModeBarDefaultButtons
+  sealed trait orbitRotation
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def orbitRotation: orbitRotation = "orbitRotation".asInstanceOf[orbitRotation]
   
@@ -1686,12 +1797,16 @@ object plotlyJsStrings {
   def pan: pan = "pan".asInstanceOf[pan]
   
   @js.native
-  sealed trait pan2d extends ModeBarDefaultButtons
+  sealed trait pan2d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def pan2d: pan2d = "pan2d".asInstanceOf[pan2d]
   
   @js.native
-  sealed trait pan3d extends ModeBarDefaultButtons
+  sealed trait pan3d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def pan3d: pan3d = "pan3d".asInstanceOf[pan3d]
   
@@ -1706,12 +1821,16 @@ object plotlyJsStrings {
   def param: param = "param".asInstanceOf[param]
   
   @js.native
-  sealed trait parcats extends PlotType
+  sealed trait parcats
+    extends StObject
+       with PlotType
   @scala.inline
   def parcats: parcats = "parcats".asInstanceOf[parcats]
   
   @js.native
-  sealed trait parcoords extends PlotType
+  sealed trait parcoords
+    extends StObject
+       with PlotType
   @scala.inline
   def parcoords: parcoords = "parcoords".asInstanceOf[parcoords]
   
@@ -1731,7 +1850,9 @@ object plotlyJsStrings {
   def percent: percent = "percent".asInstanceOf[percent]
   
   @js.native
-  sealed trait persian extends Calendar
+  sealed trait persian
+    extends StObject
+       with Calendar
   @scala.inline
   def persian: persian = "persian".asInstanceOf[persian]
   
@@ -1741,7 +1862,9 @@ object plotlyJsStrings {
   def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
-  sealed trait pie extends PlotType
+  sealed trait pie
+    extends StObject
+       with PlotType
   @scala.inline
   def pie: pie = "pie".asInstanceOf[pie]
   
@@ -1916,7 +2039,9 @@ object plotlyJsStrings {
   def point: point = "point".asInstanceOf[point]
   
   @js.native
-  sealed trait pointcloud extends PlotType
+  sealed trait pointcloud
+    extends StObject
+       with PlotType
   @scala.inline
   def pointcloud: pointcloud = "pointcloud".asInstanceOf[pointcloud]
   
@@ -2031,17 +2156,23 @@ object plotlyJsStrings {
   def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait resetCameraDefault3d extends ModeBarDefaultButtons
+  sealed trait resetCameraDefault3d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def resetCameraDefault3d: resetCameraDefault3d = "resetCameraDefault3d".asInstanceOf[resetCameraDefault3d]
   
   @js.native
-  sealed trait resetCameraLastSave3d extends ModeBarDefaultButtons
+  sealed trait resetCameraLastSave3d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def resetCameraLastSave3d: resetCameraLastSave3d = "resetCameraLastSave3d".asInstanceOf[resetCameraLastSave3d]
   
   @js.native
-  sealed trait resetGeo extends ModeBarDefaultButtons
+  sealed trait resetGeo
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def resetGeo: resetGeo = "resetGeo".asInstanceOf[resetGeo]
   
@@ -2051,12 +2182,16 @@ object plotlyJsStrings {
   def resetPlussignautosize: resetPlussignautosize = "reset+autosize".asInstanceOf[resetPlussignautosize]
   
   @js.native
-  sealed trait resetScale2d extends ModeBarDefaultButtons
+  sealed trait resetScale2d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def resetScale2d: resetScale2d = "resetScale2d".asInstanceOf[resetScale2d]
   
   @js.native
-  sealed trait resetViews extends ModeBarDefaultButtons
+  sealed trait resetViews
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def resetViews: resetViews = "resetViews".asInstanceOf[resetViews]
   
@@ -2116,7 +2251,9 @@ object plotlyJsStrings {
   def sample: sample = "sample".asInstanceOf[sample]
   
   @js.native
-  sealed trait sankey extends PlotType
+  sealed trait sankey
+    extends StObject
+       with PlotType
   @scala.inline
   def sankey: sankey = "sankey".asInstanceOf[sankey]
   
@@ -2126,47 +2263,65 @@ object plotlyJsStrings {
   def scaled: scaled = "scaled".asInstanceOf[scaled]
   
   @js.native
-  sealed trait scatter extends PlotType
+  sealed trait scatter
+    extends StObject
+       with PlotType
   @scala.inline
   def scatter: scatter = "scatter".asInstanceOf[scatter]
   
   @js.native
-  sealed trait scatter3d extends PlotType
+  sealed trait scatter3d
+    extends StObject
+       with PlotType
   @scala.inline
   def scatter3d: scatter3d = "scatter3d".asInstanceOf[scatter3d]
   
   @js.native
-  sealed trait scattercarpet extends PlotType
+  sealed trait scattercarpet
+    extends StObject
+       with PlotType
   @scala.inline
   def scattercarpet: scattercarpet = "scattercarpet".asInstanceOf[scattercarpet]
   
   @js.native
-  sealed trait scattergeo extends PlotType
+  sealed trait scattergeo
+    extends StObject
+       with PlotType
   @scala.inline
   def scattergeo: scattergeo = "scattergeo".asInstanceOf[scattergeo]
   
   @js.native
-  sealed trait scattergl extends PlotType
+  sealed trait scattergl
+    extends StObject
+       with PlotType
   @scala.inline
   def scattergl: scattergl = "scattergl".asInstanceOf[scattergl]
   
   @js.native
-  sealed trait scattermapbox extends PlotType
+  sealed trait scattermapbox
+    extends StObject
+       with PlotType
   @scala.inline
   def scattermapbox: scattermapbox = "scattermapbox".asInstanceOf[scattermapbox]
   
   @js.native
-  sealed trait scatterpolar extends PlotType
+  sealed trait scatterpolar
+    extends StObject
+       with PlotType
   @scala.inline
   def scatterpolar: scatterpolar = "scatterpolar".asInstanceOf[scatterpolar]
   
   @js.native
-  sealed trait scatterpolargl extends PlotType
+  sealed trait scatterpolargl
+    extends StObject
+       with PlotType
   @scala.inline
   def scatterpolargl: scatterpolargl = "scatterpolargl".asInstanceOf[scatterpolargl]
   
   @js.native
-  sealed trait scatterternary extends PlotType
+  sealed trait scatterternary
+    extends StObject
+       with PlotType
   @scala.inline
   def scatterternary: scatterternary = "scatterternary".asInstanceOf[scatterternary]
   
@@ -2196,12 +2351,16 @@ object plotlyJsStrings {
   def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait select2d extends ModeBarDefaultButtons
+  sealed trait select2d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def select2d: select2d = "select2d".asInstanceOf[select2d]
   
   @js.native
-  sealed trait sendDataToCloud extends ModeBarDefaultButtons
+  sealed trait sendDataToCloud
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def sendDataToCloud: sendDataToCloud = "sendDataToCloud".asInstanceOf[sendDataToCloud]
   
@@ -2246,7 +2405,9 @@ object plotlyJsStrings {
   def soft: soft = "soft".asInstanceOf[soft]
   
   @js.native
-  sealed trait solid extends Dash
+  sealed trait solid
+    extends StObject
+       with Dash
   @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
   
@@ -2271,7 +2432,9 @@ object plotlyJsStrings {
   def spline: spline = "spline".asInstanceOf[spline]
   
   @js.native
-  sealed trait splom extends PlotType
+  sealed trait splom
+    extends StObject
+       with PlotType
   @scala.inline
   def splom: splom = "splom".asInstanceOf[splom]
   
@@ -2296,7 +2459,9 @@ object plotlyJsStrings {
   def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait streamtube extends PlotType
+  sealed trait streamtube
+    extends StObject
+       with PlotType
   @scala.inline
   def streamtube: streamtube = "streamtube".asInstanceOf[streamtube]
   
@@ -2341,7 +2506,9 @@ object plotlyJsStrings {
   def summary: summary = "summary".asInstanceOf[summary]
   
   @js.native
-  sealed trait sunburst extends PlotType
+  sealed trait sunburst
+    extends StObject
+       with PlotType
   @scala.inline
   def sunburst: sunburst = "sunburst".asInstanceOf[sunburst]
   
@@ -2351,7 +2518,9 @@ object plotlyJsStrings {
   def sup: sup = "sup".asInstanceOf[sup]
   
   @js.native
-  sealed trait surface extends PlotType
+  sealed trait surface
+    extends StObject
+       with PlotType
   @scala.inline
   def surface: surface = "surface".asInstanceOf[surface]
   
@@ -2376,17 +2545,23 @@ object plotlyJsStrings {
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
-  sealed trait table extends PlotType
+  sealed trait table
+    extends StObject
+       with PlotType
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   
   @js.native
-  sealed trait tableRotation extends ModeBarDefaultButtons
+  sealed trait tableRotation
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def tableRotation: tableRotation = "tableRotation".asInstanceOf[tableRotation]
   
   @js.native
-  sealed trait taiwan extends Calendar
+  sealed trait taiwan
+    extends StObject
+       with Calendar
   @scala.inline
   def taiwan: taiwan = "taiwan".asInstanceOf[taiwan]
   
@@ -2461,7 +2636,9 @@ object plotlyJsStrings {
   def th: th = "th".asInstanceOf[th]
   
   @js.native
-  sealed trait thai extends Calendar
+  sealed trait thai
+    extends StObject
+       with Calendar
   @scala.inline
   def thai: thai = "thai".asInstanceOf[thai]
   
@@ -2486,7 +2663,9 @@ object plotlyJsStrings {
   def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait toImage extends ModeBarDefaultButtons
+  sealed trait toImage
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def toImage: toImage = "toImage".asInstanceOf[toImage]
   
@@ -2516,12 +2695,16 @@ object plotlyJsStrings {
   def todate: todate = "todate".asInstanceOf[todate]
   
   @js.native
-  sealed trait toggleHover extends ModeBarDefaultButtons
+  sealed trait toggleHover
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def toggleHover: toggleHover = "toggleHover".asInstanceOf[toggleHover]
   
   @js.native
-  sealed trait toggleSpikelines extends ModeBarDefaultButtons
+  sealed trait toggleSpikelines
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def toggleSpikelines: toggleSpikelines = "toggleSpikelines".asInstanceOf[toggleSpikelines]
   
@@ -2631,7 +2814,9 @@ object plotlyJsStrings {
   def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native
-  sealed trait treemap extends PlotType
+  sealed trait treemap
+    extends StObject
+       with PlotType
   @scala.inline
   def treemap: treemap = "treemap".asInstanceOf[treemap]
   
@@ -2656,7 +2841,9 @@ object plotlyJsStrings {
   def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
-  sealed trait ummalqura extends Calendar
+  sealed trait ummalqura
+    extends StObject
+       with Calendar
   @scala.inline
   def ummalqura: ummalqura = "ummalqura".asInstanceOf[ummalqura]
   
@@ -2721,7 +2908,9 @@ object plotlyJsStrings {
   def view: view = "view".asInstanceOf[view]
   
   @js.native
-  sealed trait violin extends PlotType
+  sealed trait violin
+    extends StObject
+       with PlotType
   @scala.inline
   def violin: violin = "violin".asInstanceOf[violin]
   
@@ -2731,12 +2920,16 @@ object plotlyJsStrings {
   def violins: violins = "violins".asInstanceOf[violins]
   
   @js.native
-  sealed trait volume extends PlotType
+  sealed trait volume
+    extends StObject
+       with PlotType
   @scala.inline
   def volume: volume = "volume".asInstanceOf[volume]
   
   @js.native
-  sealed trait waterfall extends PlotType
+  sealed trait waterfall
+    extends StObject
+       with PlotType
   @scala.inline
   def waterfall: waterfall = "waterfall".asInstanceOf[waterfall]
   
@@ -2757,7 +2950,8 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait x
-    extends AxisName
+    extends StObject
+       with AxisName
        with XAxisName
   @scala.inline
   def x: x = "x".asInstanceOf[x]
@@ -2769,70 +2963,80 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait x10
-    extends AxisName
+    extends StObject
+       with AxisName
        with XAxisName
   @scala.inline
   def x10: x10 = "x10".asInstanceOf[x10]
   
   @js.native
   sealed trait x11
-    extends AxisName
+    extends StObject
+       with AxisName
        with XAxisName
   @scala.inline
   def x11: x11 = "x11".asInstanceOf[x11]
   
   @js.native
   sealed trait x2
-    extends AxisName
+    extends StObject
+       with AxisName
        with XAxisName
   @scala.inline
   def x2: x2 = "x2".asInstanceOf[x2]
   
   @js.native
   sealed trait x3
-    extends AxisName
+    extends StObject
+       with AxisName
        with XAxisName
   @scala.inline
   def x3: x3 = "x3".asInstanceOf[x3]
   
   @js.native
   sealed trait x4
-    extends AxisName
+    extends StObject
+       with AxisName
        with XAxisName
   @scala.inline
   def x4: x4 = "x4".asInstanceOf[x4]
   
   @js.native
   sealed trait x5
-    extends AxisName
+    extends StObject
+       with AxisName
        with XAxisName
   @scala.inline
   def x5: x5 = "x5".asInstanceOf[x5]
   
   @js.native
   sealed trait x6
-    extends AxisName
+    extends StObject
+       with AxisName
        with XAxisName
   @scala.inline
   def x6: x6 = "x6".asInstanceOf[x6]
   
   @js.native
   sealed trait x7
-    extends AxisName
+    extends StObject
+       with AxisName
        with XAxisName
   @scala.inline
   def x7: x7 = "x7".asInstanceOf[x7]
   
   @js.native
   sealed trait x8
-    extends AxisName
+    extends StObject
+       with AxisName
        with XAxisName
   @scala.inline
   def x8: x8 = "x8".asInstanceOf[x8]
   
   @js.native
   sealed trait x9
-    extends AxisName
+    extends StObject
+       with AxisName
        with XAxisName
   @scala.inline
   def x9: x9 = "x9".asInstanceOf[x9]
@@ -2879,7 +3083,8 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait y
-    extends AxisName
+    extends StObject
+       with AxisName
        with YAxisName
   @scala.inline
   def y: y = "y".asInstanceOf[y]
@@ -2891,70 +3096,80 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait y10
-    extends AxisName
+    extends StObject
+       with AxisName
        with YAxisName
   @scala.inline
   def y10: y10 = "y10".asInstanceOf[y10]
   
   @js.native
   sealed trait y11
-    extends AxisName
+    extends StObject
+       with AxisName
        with YAxisName
   @scala.inline
   def y11: y11 = "y11".asInstanceOf[y11]
   
   @js.native
   sealed trait y2
-    extends AxisName
+    extends StObject
+       with AxisName
        with YAxisName
   @scala.inline
   def y2: y2 = "y2".asInstanceOf[y2]
   
   @js.native
   sealed trait y3
-    extends AxisName
+    extends StObject
+       with AxisName
        with YAxisName
   @scala.inline
   def y3: y3 = "y3".asInstanceOf[y3]
   
   @js.native
   sealed trait y4
-    extends AxisName
+    extends StObject
+       with AxisName
        with YAxisName
   @scala.inline
   def y4: y4 = "y4".asInstanceOf[y4]
   
   @js.native
   sealed trait y5
-    extends AxisName
+    extends StObject
+       with AxisName
        with YAxisName
   @scala.inline
   def y5: y5 = "y5".asInstanceOf[y5]
   
   @js.native
   sealed trait y6
-    extends AxisName
+    extends StObject
+       with AxisName
        with YAxisName
   @scala.inline
   def y6: y6 = "y6".asInstanceOf[y6]
   
   @js.native
   sealed trait y7
-    extends AxisName
+    extends StObject
+       with AxisName
        with YAxisName
   @scala.inline
   def y7: y7 = "y7".asInstanceOf[y7]
   
   @js.native
   sealed trait y8
-    extends AxisName
+    extends StObject
+       with AxisName
        with YAxisName
   @scala.inline
   def y8: y8 = "y8".asInstanceOf[y8]
   
   @js.native
   sealed trait y9
-    extends AxisName
+    extends StObject
+       with AxisName
        with YAxisName
   @scala.inline
   def y9: y9 = "y9".asInstanceOf[y9]
@@ -3075,32 +3290,44 @@ object plotlyJsStrings {
   def zoom: zoom = "zoom".asInstanceOf[zoom]
   
   @js.native
-  sealed trait zoom2d extends ModeBarDefaultButtons
+  sealed trait zoom2d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def zoom2d: zoom2d = "zoom2d".asInstanceOf[zoom2d]
   
   @js.native
-  sealed trait zoom3d extends ModeBarDefaultButtons
+  sealed trait zoom3d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def zoom3d: zoom3d = "zoom3d".asInstanceOf[zoom3d]
   
   @js.native
-  sealed trait zoomIn2d extends ModeBarDefaultButtons
+  sealed trait zoomIn2d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def zoomIn2d: zoomIn2d = "zoomIn2d".asInstanceOf[zoomIn2d]
   
   @js.native
-  sealed trait zoomInGeo extends ModeBarDefaultButtons
+  sealed trait zoomInGeo
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def zoomInGeo: zoomInGeo = "zoomInGeo".asInstanceOf[zoomInGeo]
   
   @js.native
-  sealed trait zoomOut2d extends ModeBarDefaultButtons
+  sealed trait zoomOut2d
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def zoomOut2d: zoomOut2d = "zoomOut2d".asInstanceOf[zoomOut2d]
   
   @js.native
-  sealed trait zoomOutGeo extends ModeBarDefaultButtons
+  sealed trait zoomOutGeo
+    extends StObject
+       with ModeBarDefaultButtons
   @scala.inline
   def zoomOutGeo: zoomOutGeo = "zoomOutGeo".asInstanceOf[zoomOutGeo]
 }

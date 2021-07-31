@@ -4,42 +4,42 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getBucketObjectMod {
   
-  @JSImport("@pulumi/aws/s3/getBucketObject", "getBucketObject")
+  @JSImport("@pulumi/aws/s3/getBucketObject", JSImport.Namespace)
   @js.native
-  def getBucketObject(args: GetBucketObjectArgs): js.Promise[GetBucketObjectResult] = js.native
-  @JSImport("@pulumi/aws/s3/getBucketObject", "getBucketObject")
-  @js.native
-  def getBucketObject(args: GetBucketObjectArgs, opts: InvokeOptions): js.Promise[GetBucketObjectResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getBucketObject(args: GetBucketObjectArgs): js.Promise[GetBucketObjectResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObject")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketObjectResult]]
+  @scala.inline
+  def getBucketObject(args: GetBucketObjectArgs, opts: InvokeOptions): js.Promise[GetBucketObjectResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObject")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketObjectResult]]
+  
   trait GetBucketObjectArgs extends StObject {
     
     /**
       * The name of the bucket to read the object from. Alternatively, an [S3 access point](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-access-points.html) ARN can be specified
       */
-    val bucket: String = js.native
+    val bucket: String
     
     /**
       * The full path to the object inside the bucket
       */
-    val key: String = js.native
+    val key: String
     
-    val range: js.UndefOr[String] = js.native
+    val range: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags assigned to the object.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Specific version ID of the object returned (defaults to latest version)
       */
-    val versionId: js.UndefOr[String] = js.native
+    val versionId: js.UndefOr[String] = js.undefined
   }
   object GetBucketObjectArgs {
     
@@ -78,124 +78,123 @@ object getBucketObjectMod {
     }
   }
   
-  @js.native
   trait GetBucketObjectResult extends StObject {
     
     /**
       * Object data (see **limitations above** to understand cases in which this field is actually available)
       */
-    val body: String = js.native
+    val body: String
     
-    val bucket: String = js.native
+    val bucket: String
     
     /**
       * Specifies caching behavior along the request/reply chain.
       */
-    val cacheControl: String = js.native
+    val cacheControl: String
     
     /**
       * Specifies presentational information for the object.
       */
-    val contentDisposition: String = js.native
+    val contentDisposition: String
     
     /**
       * Specifies what content encodings have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field.
       */
-    val contentEncoding: String = js.native
+    val contentEncoding: String
     
     /**
       * The language the content is in.
       */
-    val contentLanguage: String = js.native
+    val contentLanguage: String
     
     /**
       * Size of the body in bytes.
       */
-    val contentLength: Double = js.native
+    val contentLength: Double
     
     /**
       * A standard MIME type describing the format of the object data.
       */
-    val contentType: String = js.native
+    val contentType: String
     
     /**
       * [ETag](https://en.wikipedia.org/wiki/HTTP_ETag) generated for the object (an MD5 sum of the object content in case it's not encrypted)
       */
-    val etag: String = js.native
+    val etag: String
     
     /**
       * If the object expiration is configured (see [object lifecycle management](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html)), the field includes this header. It includes the expiry-date and rule-id key value pairs providing object expiration information. The value of the rule-id is URL encoded.
       */
-    val expiration: String = js.native
+    val expiration: String
     
     /**
       * The date and time at which the object is no longer cacheable.
       */
-    val expires: String = js.native
+    val expires: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val key: String = js.native
+    val key: String
     
     /**
       * Last modified date of the object in RFC1123 format (e.g. `Mon, 02 Jan 2006 15:04:05 MST`)
       */
-    val lastModified: String = js.native
+    val lastModified: String
     
     /**
       * A map of metadata stored with the object in S3
       */
-    val metadata: StringDictionary[String] = js.native
+    val metadata: StringDictionary[String]
     
     /**
       * Indicates whether this object has an active [legal hold](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-legal-holds). This field is only returned if you have permission to view an object's legal hold status.
       */
-    val objectLockLegalHoldStatus: String = js.native
+    val objectLockLegalHoldStatus: String
     
     /**
       * The object lock [retention mode](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-retention-modes) currently in place for this object.
       */
-    val objectLockMode: String = js.native
+    val objectLockMode: String
     
     /**
       * The date and time when this object's object lock will expire.
       */
-    val objectLockRetainUntilDate: String = js.native
+    val objectLockRetainUntilDate: String
     
-    val range: js.UndefOr[String] = js.native
+    val range: js.UndefOr[String] = js.undefined
     
     /**
       * If the object is stored using server-side encryption (KMS or Amazon S3-managed encryption key), this field includes the chosen encryption and algorithm used.
       */
-    val serverSideEncryption: String = js.native
+    val serverSideEncryption: String
     
     /**
       * If present, specifies the ID of the Key Management Service (KMS) master encryption key that was used for the object.
       */
-    val sseKmsKeyId: String = js.native
+    val sseKmsKeyId: String
     
     /**
       * [Storage class](http://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html) information of the object. Available for all objects except for `Standard` storage class objects.
       */
-    val storageClass: String = js.native
+    val storageClass: String
     
     /**
       * A map of tags assigned to the object.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The latest version ID of the object returned.
       */
-    val versionId: String = js.native
+    val versionId: String
     
     /**
       * If the bucket is configured as a website, redirects requests for this object to another object in the same bucket or to an external URL. Amazon S3 stores the value of this header in the object metadata.
       */
-    val websiteRedirectLocation: String = js.native
+    val websiteRedirectLocation: String
   }
   object GetBucketObjectResult {
     

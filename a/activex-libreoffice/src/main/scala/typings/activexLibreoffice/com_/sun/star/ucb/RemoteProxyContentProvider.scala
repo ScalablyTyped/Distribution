@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The way this works might change, therefore this interface is marked as deprecated.
   * @deprecated Deprecated
   */
-@js.native
 trait RemoteProxyContentProvider
-  extends XContentProvider
+  extends StObject
+     with XContentProvider
      with XContentIdentifierFactory
      with XParameterizedContentProvider
 object RemoteProxyContentProvider {

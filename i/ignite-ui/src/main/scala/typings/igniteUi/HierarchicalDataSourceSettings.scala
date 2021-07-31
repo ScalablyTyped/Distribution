@@ -3,66 +3,65 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HierarchicalDataSourceSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var autogenerate: js.UndefOr[Boolean] = js.native
+  var autogenerate: js.UndefOr[Boolean] = js.undefined
   
-  var callback: js.UndefOr[js.Any] = js.native
+  var callback: js.UndefOr[js.Any] = js.undefined
   
-  var callee: js.UndefOr[js.Any] = js.native
+  var callee: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Any] = js.native
+  var dataBinding: js.UndefOr[js.Any] = js.undefined
   
-  var dataBound: js.UndefOr[js.Any] = js.native
+  var dataBound: js.UndefOr[js.Any] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
-  var defaultChildrenDataProperty: js.UndefOr[String] = js.native
+  var defaultChildrenDataProperty: js.UndefOr[String] = js.undefined
   
-  var filtering: js.UndefOr[HierarchicalDataSourceSettingsFiltering] = js.native
+  var filtering: js.UndefOr[HierarchicalDataSourceSettingsFiltering] = js.undefined
   
-  var initialDataBindDepth: js.UndefOr[Double] = js.native
+  var initialDataBindDepth: js.UndefOr[Double] = js.undefined
   
-  var localSchemaTransform: js.UndefOr[Boolean] = js.native
+  var localSchemaTransform: js.UndefOr[Boolean] = js.undefined
   
-  var maxDataBindDepth: js.UndefOr[Double] = js.native
+  var maxDataBindDepth: js.UndefOr[Double] = js.undefined
   
-  var odata: js.UndefOr[Boolean] = js.native
+  var odata: js.UndefOr[Boolean] = js.undefined
   
-  var paging: js.UndefOr[HierarchicalDataSourceSettingsPaging] = js.native
+  var paging: js.UndefOr[HierarchicalDataSourceSettingsPaging] = js.undefined
   
-  var requestType: js.UndefOr[String] = js.native
+  var requestType: js.UndefOr[String] = js.undefined
   
-  var responseContentType: js.UndefOr[js.Any] = js.native
+  var responseContentType: js.UndefOr[js.Any] = js.undefined
   
-  var responseDataType: js.UndefOr[js.Any] = js.native
+  var responseDataType: js.UndefOr[js.Any] = js.undefined
   
   /**
     * All of the rest - paging, sorting, filtering, can be defined in the layouts definition, which will "override" the parent defs
     * IMPORTANT:  if there is no paging, sorting or filtering, an instance of $.ig.DataSource won't be created for child row islands
     */
-  var schema: js.UndefOr[HierarchicalDataSourceSettingsSchema] = js.native
+  var schema: js.UndefOr[HierarchicalDataSourceSettingsSchema] = js.undefined
   
-  var sorting: js.UndefOr[HierarchicalDataSourceSettingsSorting] = js.native
+  var sorting: js.UndefOr[HierarchicalDataSourceSettingsSorting] = js.undefined
   
   /**
     * Other options
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var urlParamsEncoded: js.UndefOr[js.Any] = js.native
+  var urlParamsEncoded: js.UndefOr[js.Any] = js.undefined
   
-  var urlParamsEncoding: js.UndefOr[js.Any] = js.native
+  var urlParamsEncoding: js.UndefOr[js.Any] = js.undefined
 }
 object HierarchicalDataSourceSettings {
   
@@ -94,7 +93,7 @@ object HierarchicalDataSourceSettings {
     def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataBinding(value: js.Any): Self = StObject.set(x, "dataBinding", value.asInstanceOf[js.Any])

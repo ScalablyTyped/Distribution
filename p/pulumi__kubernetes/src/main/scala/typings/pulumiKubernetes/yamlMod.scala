@@ -9,10 +9,13 @@ import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yamlMod {
+  
+  @JSImport("@pulumi/kubernetes/yaml", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/kubernetes/yaml", "CollectionComponentResource")
   @js.native
@@ -35,7 +38,7 @@ object yamlMod {
       */
     def this(name: String) = this()
     def this(name: String, config: ConfigFileOpts) = this()
-    def this(name: String, config: js.UndefOr[scala.Nothing], opts: ComponentResourceOptions) = this()
+    def this(name: String, config: Unit, opts: ComponentResourceOptions) = this()
     def this(name: String, config: ConfigFileOpts, opts: ComponentResourceOptions) = this()
   }
   
@@ -54,10 +57,8 @@ object yamlMod {
     def this(name: String, config: ConfigGroupOpts, opts: ComponentResourceOptions) = this()
   }
   
-  @JSImport("@pulumi/kubernetes/yaml", "parse")
-  @js.native
-  def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = js.native
-  @JSImport("@pulumi/kubernetes/yaml", "parse")
-  @js.native
-  def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = js.native
+  @scala.inline
+  def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any]).asInstanceOf[Output_[StringDictionary[CustomResource]]]
+  @scala.inline
+  def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Output_[StringDictionary[CustomResource]]]
 }

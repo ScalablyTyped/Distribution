@@ -6,18 +6,16 @@ import typings.wouter.useLocationMod.Path
 import typings.wouter.wouterNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Array<wouter.wouter/preact.Path>> */
-@js.native
 trait ReadonlyArrayPath extends StObject {
   
-  val concat: js.Function1[/* repeated */ js.Array[Path], js.Array[Path]] = js.native
+  val concat: js.Function1[/* repeated */ js.Array[Path], js.Array[Path]]
   
-  val copyWithin: js.Function2[/* target */ Double, /* start */ Double, this.type] = js.native
+  val copyWithin: js.Function2[/* target */ Double, /* start */ Double, this.type]
   
-  val entries: js.Function0[IterableIterator[js.Tuple2[Double, Path]]] = js.native
+  val entries: js.Function0[IterableIterator[js.Tuple2[Double, Path]]]
   
   val every: js.Function1[
     /* predicate */ js.Function3[
@@ -27,9 +25,9 @@ trait ReadonlyArrayPath extends StObject {
       /* is wouter.wouter/preact/use-location.Path */ Boolean
     ], 
     /* is std.Array<wouter.wouter/preact/use-location.Path> */ Boolean
-  ] = js.native
+  ]
   
-  val fill: js.Function1[/* value */ Path, this.type] = js.native
+  val fill: js.Function1[/* value */ Path, this.type]
   
   val filter: js.Function1[
     /* predicate */ js.Function3[
@@ -39,7 +37,7 @@ trait ReadonlyArrayPath extends StObject {
       /* is wouter.wouter/preact/use-location.Path */ Boolean
     ], 
     js.Array[Path]
-  ] = js.native
+  ]
   
   val find: js.Function1[
     /* predicate */ js.ThisFunction3[
@@ -50,51 +48,51 @@ trait ReadonlyArrayPath extends StObject {
       /* is wouter.wouter/preact/use-location.Path */ Boolean
     ], 
     js.UndefOr[Path]
-  ] = js.native
+  ]
   
   val findIndex: js.Function1[
-    /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* obj */ js.Array[Path], _], 
+    /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* obj */ js.Array[Path], js.Any], 
     Double
-  ] = js.native
+  ]
   
-  val flat: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[_, `1`]]] = js.native
+  val flat: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, `1`]]]
   
   val flatMap: js.Function1[
     /* callback */ js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
+      /* this */ Unit, 
       /* value */ Path, 
       /* index */ Double, 
       /* array */ js.Array[Path], 
-      _ | js.Array[_]
+      js.Any | js.Array[js.Any]
     ], 
-    js.Array[_]
-  ] = js.native
+    js.Array[js.Any]
+  ]
   
   val forEach: js.Function1[
     /* callbackfn */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], Unit], 
     Unit
-  ] = js.native
+  ]
   
-  val includes: js.Function1[/* searchElement */ Path, Boolean] = js.native
+  val includes: js.Function1[/* searchElement */ Path, Boolean]
   
-  val indexOf: js.Function1[/* searchElement */ Path, Double] = js.native
+  val indexOf: js.Function1[/* searchElement */ Path, Double]
   
-  val join: js.Function0[String] = js.native
+  val join: js.Function0[String]
   
-  val keys: js.Function0[IterableIterator[Double]] = js.native
+  val keys: js.Function0[IterableIterator[Double]]
   
-  val lastIndexOf: js.Function1[/* searchElement */ Path, Double] = js.native
+  val lastIndexOf: js.Function1[/* searchElement */ Path, Double]
   
-  val length: Double = js.native
+  val length: Double
   
   val map: js.Function1[
-    /* callbackfn */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _], 
-    js.Array[_]
-  ] = js.native
+    /* callbackfn */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], js.Any], 
+    js.Array[js.Any]
+  ]
   
-  val pop: js.Function0[js.UndefOr[Path]] = js.native
+  val pop: js.Function0[js.UndefOr[Path]]
   
-  val push: js.Function1[/* repeated */ Path, Double] = js.native
+  val push: js.Function1[/* repeated */ Path, Double]
   
   val reduce: js.Function1[
     /* callbackfn */ js.Function4[
@@ -105,7 +103,7 @@ trait ReadonlyArrayPath extends StObject {
       Path
     ], 
     Path
-  ] = js.native
+  ]
   
   val reduceRight: js.Function1[
     /* callbackfn */ js.Function4[
@@ -116,32 +114,32 @@ trait ReadonlyArrayPath extends StObject {
       Path
     ], 
     Path
-  ] = js.native
+  ]
   
-  val reverse: js.Function0[js.Array[Path]] = js.native
+  val reverse: js.Function0[js.Array[Path]]
   
-  val shift: js.Function0[js.UndefOr[Path]] = js.native
+  val shift: js.Function0[js.UndefOr[Path]]
   
-  val slice: js.Function0[js.Array[Path]] = js.native
+  val slice: js.Function0[js.Array[Path]]
   
   val some: js.Function1[
-    /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _], 
+    /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], js.Any], 
     Boolean
-  ] = js.native
+  ]
   
-  val sort: js.Function0[this.type] = js.native
+  val sort: js.Function0[this.type]
   
-  val splice: js.Function1[/* start */ Double, js.Array[Path]] = js.native
+  val splice: js.Function1[/* start */ Double, js.Array[Path]]
   
   @JSName("toLocaleString")
-  val toLocaleString_FReadonlyArrayPath: js.Function0[String] = js.native
+  val toLocaleString_FReadonlyArrayPath: js.Function0[String]
   
   @JSName("toString")
-  val toString_FReadonlyArrayPath: js.Function0[String] = js.native
+  val toString_FReadonlyArrayPath: js.Function0[String]
   
-  val unshift: js.Function1[/* repeated */ Path, Double] = js.native
+  val unshift: js.Function1[/* repeated */ Path, Double]
   
-  val values: js.Function0[IterableIterator[Path]] = js.native
+  val values: js.Function0[IterableIterator[Path]]
 }
 object ReadonlyArrayPath {
   
@@ -170,15 +168,15 @@ object ReadonlyArrayPath {
       /* obj */ js.Array[Path], 
       /* is wouter.wouter/preact/use-location.Path */ Boolean
     ] => js.UndefOr[Path],
-    findIndex: /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* obj */ js.Array[Path], _] => Double,
-    flat: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[_, `1`]]],
+    findIndex: /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* obj */ js.Array[Path], js.Any] => Double,
+    flat: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, `1`]]],
     flatMap: /* callback */ js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
+      /* this */ Unit, 
       /* value */ Path, 
       /* index */ Double, 
       /* array */ js.Array[Path], 
-      _ | js.Array[_]
-    ] => js.Array[_],
+      js.Any | js.Array[js.Any]
+    ] => js.Array[js.Any],
     forEach: /* callbackfn */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], Unit] => Unit,
     includes: /* searchElement */ Path => Boolean,
     indexOf: /* searchElement */ Path => Double,
@@ -186,7 +184,7 @@ object ReadonlyArrayPath {
     keys: () => IterableIterator[Double],
     lastIndexOf: /* searchElement */ Path => Double,
     length: Double,
-    map: /* callbackfn */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _] => js.Array[_],
+    map: /* callbackfn */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], js.Any] => js.Array[js.Any],
     pop: () => js.UndefOr[Path],
     push: /* repeated */ Path => Double,
     reduce: /* callbackfn */ js.Function4[
@@ -206,7 +204,7 @@ object ReadonlyArrayPath {
     reverse: () => js.Array[Path],
     shift: () => js.UndefOr[Path],
     slice: () => js.Array[Path],
-    some: /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _] => Boolean,
+    some: /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], js.Any] => Boolean,
     sort: () => ReadonlyArrayPath,
     splice: /* start */ Double => js.Array[Path],
     toLocaleString: () => String,
@@ -267,21 +265,21 @@ object ReadonlyArrayPath {
     
     @scala.inline
     def setFindIndex(
-      value: /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* obj */ js.Array[Path], _] => Double
+      value: /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* obj */ js.Array[Path], js.Any] => Double
     ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlat(value: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[_, `1`]]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    def setFlat(value: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, `1`]]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFlatMap(
       value: /* callback */ js.ThisFunction3[
-          /* this */ js.UndefOr[scala.Nothing], 
+          /* this */ Unit, 
           /* value */ Path, 
           /* index */ Double, 
           /* array */ js.Array[Path], 
-          _ | js.Array[_]
-        ] => js.Array[_]
+          js.Any | js.Array[js.Any]
+        ] => js.Array[js.Any]
     ): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -309,7 +307,7 @@ object ReadonlyArrayPath {
     
     @scala.inline
     def setMap(
-      value: /* callbackfn */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _] => js.Array[_]
+      value: /* callbackfn */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], js.Any] => js.Array[js.Any]
     ): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -351,7 +349,7 @@ object ReadonlyArrayPath {
     
     @scala.inline
     def setSome(
-      value: /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _] => Boolean
+      value: /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], js.Any] => Boolean
     ): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
     
     @scala.inline

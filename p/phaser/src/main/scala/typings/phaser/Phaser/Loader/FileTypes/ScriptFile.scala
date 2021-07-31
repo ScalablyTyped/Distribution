@@ -12,7 +12,6 @@ import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,8 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * For documentation about what all the arguments and configuration options mean please see Phaser.Loader.LoaderPlugin#script.
   */
-@js.native
-trait ScriptFile extends File
+trait ScriptFile
+  extends StObject
+     with File
 object ScriptFile {
   
   @scala.inline

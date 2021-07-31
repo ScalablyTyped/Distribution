@@ -2,35 +2,33 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileProperties extends StObject {
   
-  var createdById: String = js.native
+  var createdById: String
   
-  var createdByName: String = js.native
+  var createdByName: String
   
-  var createdDate: String = js.native
+  var createdDate: String
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var fullName: String = js.native
+  var fullName: String
   
-  var id: String = js.native
+  var id: String
   
-  var lastModifiedById: String = js.native
+  var lastModifiedById: String
   
-  var lastModifiedByName: String = js.native
+  var lastModifiedByName: String
   
-  var lastModifiedDate: String = js.native
+  var lastModifiedDate: String
   
-  var manageableState: js.UndefOr[String] = js.native
+  var manageableState: js.UndefOr[String] = js.undefined
   
-  var namespacePrefix: js.UndefOr[String] = js.native
+  var namespacePrefix: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object FileProperties {
   

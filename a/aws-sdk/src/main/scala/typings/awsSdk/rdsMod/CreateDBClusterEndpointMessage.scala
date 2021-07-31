@@ -2,41 +2,39 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDBClusterEndpointMessage extends StObject {
   
   /**
     * The identifier to use for the new endpoint. This parameter is stored as a lowercase string.
     */
-  var DBClusterEndpointIdentifier: String = js.native
+  var DBClusterEndpointIdentifier: String
   
   /**
     * The DB cluster identifier of the DB cluster associated with the endpoint. This parameter is stored as a lowercase string.
     */
-  var DBClusterIdentifier: String = js.native
+  var DBClusterIdentifier: String
   
   /**
     * The type of the endpoint. One of: READER, WRITER, ANY.
     */
-  var EndpointType: String = js.native
+  var EndpointType: String
   
   /**
     * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty.
     */
-  var ExcludedMembers: js.UndefOr[StringList] = js.native
+  var ExcludedMembers: js.UndefOr[StringList] = js.undefined
   
   /**
     * List of DB instance identifiers that are part of the custom endpoint group.
     */
-  var StaticMembers: js.UndefOr[StringList] = js.native
+  var StaticMembers: js.UndefOr[StringList] = js.undefined
   
   /**
     * The tags to be assigned to the Amazon RDS resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateDBClusterEndpointMessage {
   

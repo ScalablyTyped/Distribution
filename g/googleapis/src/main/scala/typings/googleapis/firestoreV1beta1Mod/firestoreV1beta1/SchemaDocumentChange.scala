@@ -2,7 +2,6 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,24 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DocumentChange messages may be returned for the same logical change, if
   * multiple targets are affected.
   */
-@js.native
 trait SchemaDocumentChange extends StObject {
   
   /**
     * The new state of the Document.  If `mask` is set, contains only fields
     * that were updated or added.
     */
-  var document: js.UndefOr[SchemaDocument] = js.native
+  var document: js.UndefOr[SchemaDocument] = js.undefined
   
   /**
     * A set of target IDs for targets that no longer match this document.
     */
-  var removedTargetIds: js.UndefOr[js.Array[Double]] = js.native
+  var removedTargetIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * A set of target IDs of targets that match this document.
     */
-  var targetIds: js.UndefOr[js.Array[Double]] = js.native
+  var targetIds: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaDocumentChange {
   

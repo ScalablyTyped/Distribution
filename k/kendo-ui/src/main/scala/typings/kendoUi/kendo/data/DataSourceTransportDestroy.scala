@@ -3,23 +3,23 @@ package typings.kendoUi.kendo.data
 import typings.kendoUi.JQueryAjaxSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataSourceTransportDestroy extends JQueryAjaxSettings {
+trait DataSourceTransportDestroy
+  extends StObject
+     with JQueryAjaxSettings {
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
 }
 object DataSourceTransportDestroy {
   

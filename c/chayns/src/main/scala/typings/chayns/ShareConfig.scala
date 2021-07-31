@@ -2,22 +2,20 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.share()
-@js.native
 trait ShareConfig extends StObject {
   
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
-  var sharingAndroidApp: js.UndefOr[String] = js.native
+  var sharingAndroidApp: js.UndefOr[String] = js.undefined
   
-  var sharingApp: Double = js.native
+  var sharingApp: Double
   
-  var text: String = js.native
+  var text: String
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ShareConfig {
   

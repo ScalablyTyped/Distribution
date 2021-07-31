@@ -2,17 +2,16 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnzipOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   // 源文件路径，只可以是 zip 压缩文件
-  var targetPath: String = js.native
+  var targetPath: String
   
-  var zipFilePath: String = js.native
+  var zipFilePath: String
 }
 object UnzipOptions {
   

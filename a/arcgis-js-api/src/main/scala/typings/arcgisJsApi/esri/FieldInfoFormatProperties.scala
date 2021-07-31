@@ -25,10 +25,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.default
 import typings.arcgisJsApi.arcgisJsApiStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldInfoFormatProperties extends StObject {
   
   /**
@@ -38,21 +36,21 @@ trait FieldInfoFormatProperties extends StObject {
     */
   var dateFormat: js.UndefOr[
     default | `short-date` | `short-date-short-time` | `short-date-long-time` | `short-date-long-time-24` | `long-month-day-year` | `long-month-day-year-short-time` | `long-month-day-year-short-time-24` | `long-month-day-year-long-time` | `long-month-day-year-long-time-24` | `day-short-month-year` | `day-short-month-year-short-time` | `day-short-month-year-short-time-24` | `day-short-month-year-long-time` | `day-short-month-year-long-time-24` | `long-date` | `long-date-short-time` | `long-date-short-time-24` | `long-date-long-time` | `long-date-long-time-24` | `long-month-year` | `short-month-year` | year
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Used only with `Number` fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-FieldInfoFormat.html#digitSeparator)
     */
-  var digitSeparator: js.UndefOr[Boolean] = js.native
+  var digitSeparator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used only with `Number` fields to specify the number of supported decimal places that should appear in popups.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-FieldInfoFormat.html#places)
     */
-  var places: js.UndefOr[Double] = js.native
+  var places: js.UndefOr[Double] = js.undefined
 }
 object FieldInfoFormatProperties {
   

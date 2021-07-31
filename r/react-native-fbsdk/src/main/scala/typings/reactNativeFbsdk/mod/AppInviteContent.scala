@@ -2,36 +2,34 @@ package typings.reactNativeFbsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppInviteContent extends StObject {
   
   /**
     * An app link target that will be used as a target when the user accepts the invite.
     */
-  var applinkUrl: String = js.native
+  var applinkUrl: String
   
   /**
     * A URL to a preview image that will be displayed with the app invite.
     * This is optional. If you don't include it, a fallback image will be used.
     */
-  var previewImageUrl: js.UndefOr[String] = js.native
+  var previewImageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Promotional code to be displayed while sending and receiving the invite.
     * This is optional. This can be between 0 and 10 characters long and can contain
     * alphanumeric characters only. To set a promo code, you need to set promo text.
     */
-  var promotionCode: js.UndefOr[String] = js.native
+  var promotionCode: js.UndefOr[String] = js.undefined
   
   /**
     * Promotional text to be displayed while sending and receiving the invite.
     * This is optional. This can be between 0 and 80 characters long and can contain
     * alphanumeric and spaces only.
     */
-  var promotionText: js.UndefOr[String] = js.native
+  var promotionText: js.UndefOr[String] = js.undefined
 }
 object AppInviteContent {
   

@@ -3,7 +3,6 @@ package typings.makerJs.MakerJs
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait IKit
-  extends /**
+  extends StObject
+     with /**
   * The constructor. The kit must be "new-able" and it must produce an IModel.
   * It can have any number of any type of parameters.
   */

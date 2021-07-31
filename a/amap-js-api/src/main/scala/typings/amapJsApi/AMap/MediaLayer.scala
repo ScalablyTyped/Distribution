@@ -4,11 +4,12 @@ import typings.amapJsApi.anon.PartialOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaLayer[E /* <: HTMLElement */] extends Layer {
+trait MediaLayer[E /* <: HTMLElement */]
+  extends StObject
+     with Layer {
   
   /**
     * 获取显示的范围
@@ -39,29 +40,29 @@ trait MediaLayer[E /* <: HTMLElement */] extends Layer {
 }
 object MediaLayer {
   
-  @js.native
   trait Options
-    extends typings.amapJsApi.AMap.Layer.Options {
+    extends StObject
+       with typings.amapJsApi.AMap.Layer.Options {
     
     /**
       * 显示范围
       */
-    var bounds: js.UndefOr[Bounds] = js.native
+    var bounds: js.UndefOr[Bounds] = js.undefined
     
     /**
       * 透明度
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * 是否可见
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 缩放范围
       */
-    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object Options {
     

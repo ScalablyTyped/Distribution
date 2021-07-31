@@ -3,23 +3,21 @@ package typings.ssUtils.ssutils
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandleServerEventsOptions extends StObject {
   
-  var handlers: js.UndefOr[StringDictionary[js.Function]] = js.native
+  var handlers: js.UndefOr[StringDictionary[js.Function]] = js.undefined
   
-  var heartbeatIntervalMs: js.UndefOr[Double] = js.native
+  var heartbeatIntervalMs: js.UndefOr[Double] = js.undefined
   
-  var heartbeatUrl: js.UndefOr[String] = js.native
+  var heartbeatUrl: js.UndefOr[String] = js.undefined
   
-  var receivers: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var receivers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var success: js.UndefOr[js.Function3[/* selector */ String, /* msg */ String, /* e */ js.Any, Unit]] = js.native
+  var success: js.UndefOr[js.Function3[/* selector */ String, /* msg */ String, /* e */ js.Any, Unit]] = js.undefined
   
-  var unRegisterUrl: js.UndefOr[String] = js.native
+  var unRegisterUrl: js.UndefOr[String] = js.undefined
   
   var validate: js.UndefOr[
     js.Function4[
@@ -29,7 +27,7 @@ trait HandleServerEventsOptions extends StObject {
       /* json */ js.UndefOr[String], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object HandleServerEventsOptions {
   

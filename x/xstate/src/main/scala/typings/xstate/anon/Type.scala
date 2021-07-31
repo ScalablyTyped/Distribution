@@ -3,13 +3,11 @@ package typings.xstate.anon
 import typings.xstate.typesMod.ActionTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var `type`: ActionTypes = js.native
+  var `type`: ActionTypes
 }
 object Type {
   

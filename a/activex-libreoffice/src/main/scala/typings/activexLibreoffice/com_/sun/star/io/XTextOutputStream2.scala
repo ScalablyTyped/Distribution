@@ -4,16 +4,15 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the new-style service {@link TextOutputStream} .
   * @since LibreOffice 4.1
   */
-@js.native
 trait XTextOutputStream2
-  extends XTextOutputStream
+  extends StObject
+     with XTextOutputStream
      with XActiveDataSource
 object XTextOutputStream2 {
   

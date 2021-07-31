@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditInfo extends StObject {
   
-  var length: Double = js.native
+  var length: Double
   
-  var position: Double = js.native
+  var position: Double
   
-  var replaceWith: String = js.native
+  var replaceWith: String
 }
 object TextEditInfo {
   

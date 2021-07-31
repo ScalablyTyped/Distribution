@@ -2,31 +2,29 @@ package typings.awsSdk.dlmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FastRestoreRule extends StObject {
   
   /**
     * The Availability Zones in which to enable fast snapshot restore.
     */
-  var AvailabilityZones: AvailabilityZoneList = js.native
+  var AvailabilityZones: AvailabilityZoneList
   
   /**
     * The number of snapshots to be enabled with fast snapshot restore.
     */
-  var Count: js.UndefOr[typings.awsSdk.dlmMod.Count] = js.native
+  var Count: js.UndefOr[typings.awsSdk.dlmMod.Count] = js.undefined
   
   /**
     * The amount of time to enable fast snapshot restore. The maximum is 100 years. This is equivalent to 1200 months, 5200 weeks, or 36500 days.
     */
-  var Interval: js.UndefOr[typings.awsSdk.dlmMod.Interval] = js.native
+  var Interval: js.UndefOr[typings.awsSdk.dlmMod.Interval] = js.undefined
   
   /**
     * The unit of time for enabling fast snapshot restore.
     */
-  var IntervalUnit: js.UndefOr[RetentionIntervalUnitValues] = js.native
+  var IntervalUnit: js.UndefOr[RetentionIntervalUnitValues] = js.undefined
 }
 object FastRestoreRule {
   

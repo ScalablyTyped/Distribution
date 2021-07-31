@@ -9,15 +9,13 @@ import typings.teenyRequest.mod.CoreOptions
 import typings.teenyRequest.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ContentType extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
   }
   object ContentType {
     
@@ -39,30 +37,6 @@ object anon {
   }
   
   @js.native
-  trait IgnoreNotFound extends StObject {
-    
-    var ignoreNotFound: js.UndefOr[Boolean] = js.native
-  }
-  object IgnoreNotFound {
-    
-    @scala.inline
-    def apply(): IgnoreNotFound = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IgnoreNotFound]
-    }
-    
-    @scala.inline
-    implicit class IgnoreNotFoundMutableBuilder[Self <: IgnoreNotFound] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setIgnoreNotFound(value: Boolean): Self = StObject.set(x, "ignoreNotFound", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIgnoreNotFoundUndefined: Self = StObject.set(x, "ignoreNotFound", js.undefined)
-    }
-  }
-  
-  @js.native
   trait OnAuthenticated extends StObject {
     
     def onAuthenticated(): Unit = js.native
@@ -71,10 +45,9 @@ object anon {
     def onAuthenticated(err: Error, authenticatedReqOpts: Options): Unit = js.native
   }
   
-  @js.native
   trait ReqOpts extends StObject {
     
-    var reqOpts: js.UndefOr[CoreOptions] = js.native
+    var reqOpts: js.UndefOr[CoreOptions] = js.undefined
   }
   object ReqOpts {
     
@@ -96,7 +69,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofApiError extends Instantiable1[/* errorMessage */ String, ApiError] {
+  trait TypeofApiError
+    extends StObject
+       with Instantiable1[/* errorMessage */ String, ApiError] {
     
     /**
       * Pieces together an error message by combining all unique error messages

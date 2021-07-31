@@ -2,13 +2,11 @@ package typings.karmaRemapCoverage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
@@ -24,7 +22,7 @@ object mod {
       *
       * {@link https://github.com/sshev/karma-remap-coverage#remapcoveragereporter-format }
       */
-    var remapCoverageReporter: js.UndefOr[KarmaRemapCoverageReporter] = js.native
+    var remapCoverageReporter: js.UndefOr[KarmaRemapCoverageReporter] = js.undefined
   }
   object ConfigOptions {
     
@@ -47,30 +45,29 @@ object mod {
   
   // remapped reporter types to key-value pairs
   /* Inlined std.Partial<std.Record<karma-coverage.karma.ReporterType, string | null | undefined>> */
-  @js.native
   trait KarmaRemapCoverageReporter extends StObject {
     
-    var cobertura: js.UndefOr[String | Null] = js.native
+    var cobertura: js.UndefOr[String | Null] = js.undefined
     
-    var html: js.UndefOr[String | Null] = js.native
+    var html: js.UndefOr[String | Null] = js.undefined
     
-    var `in-memory`: js.UndefOr[String | Null] = js.native
+    var `in-memory`: js.UndefOr[String | Null] = js.undefined
     
-    var json: js.UndefOr[String | Null] = js.native
+    var json: js.UndefOr[String | Null] = js.undefined
     
-    var `json-summary`: js.UndefOr[String | Null] = js.native
+    var `json-summary`: js.UndefOr[String | Null] = js.undefined
     
-    var lcov: js.UndefOr[String | Null] = js.native
+    var lcov: js.UndefOr[String | Null] = js.undefined
     
-    var lcovonly: js.UndefOr[String | Null] = js.native
+    var lcovonly: js.UndefOr[String | Null] = js.undefined
     
-    var none: js.UndefOr[String | Null] = js.native
+    var none: js.UndefOr[String | Null] = js.undefined
     
-    var teamcity: js.UndefOr[String | Null] = js.native
+    var teamcity: js.UndefOr[String | Null] = js.undefined
     
-    var text: js.UndefOr[String | Null] = js.native
+    var text: js.UndefOr[String | Null] = js.undefined
     
-    var `text-summary`: js.UndefOr[String | Null] = js.native
+    var `text-summary`: js.UndefOr[String | Null] = js.undefined
   }
   object KarmaRemapCoverageReporter {
     

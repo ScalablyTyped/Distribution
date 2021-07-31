@@ -2,25 +2,23 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageFilters extends StObject {
   
-  val contrast: js.UndefOr[Double] = js.native
+  val contrast: js.UndefOr[Double] = js.undefined
   
-  val exposure: js.UndefOr[Double] = js.native
+  val exposure: js.UndefOr[Double] = js.undefined
   
-  val highlights: js.UndefOr[Double] = js.native
+  val highlights: js.UndefOr[Double] = js.undefined
   
-  val saturation: js.UndefOr[Double] = js.native
+  val saturation: js.UndefOr[Double] = js.undefined
   
-  val shadows: js.UndefOr[Double] = js.native
+  val shadows: js.UndefOr[Double] = js.undefined
   
-  val temperature: js.UndefOr[Double] = js.native
+  val temperature: js.UndefOr[Double] = js.undefined
   
-  val tint: js.UndefOr[Double] = js.native
+  val tint: js.UndefOr[Double] = js.undefined
 }
 object ImageFilters {
   

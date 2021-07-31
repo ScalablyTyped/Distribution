@@ -2,17 +2,15 @@ package typings.ptyJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cols extends StObject {
     
-    var cols: js.UndefOr[Double] = js.native
+    var cols: js.UndefOr[Double] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
   }
   object Cols {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
   }
   object End {
     
@@ -63,14 +60,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Fd extends StObject {
     
-    var fd: Double = js.native
+    var fd: Double
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var pty: String = js.native
+    var pty: String
   }
   object Fd {
     
@@ -94,14 +90,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Master extends StObject {
     
-    var master: Double = js.native
+    var master: Double
     
-    var pty: String = js.native
+    var pty: String
     
-    var slave: Double = js.native
+    var slave: Double
   }
   object Master {
     
@@ -125,14 +120,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Pid extends StObject {
     
-    var fd: Double = js.native
+    var fd: Double
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var pty: Double = js.native
+    var pty: Double
   }
   object Pid {
     

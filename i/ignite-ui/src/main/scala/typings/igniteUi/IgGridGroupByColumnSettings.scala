@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridGroupByColumnSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,7 +16,7 @@ trait IgGridGroupByColumnSettings
     * Enables/disables grouping a column from the UI. By default all columns can be grouped.
     *
     */
-  var allowGrouping: js.UndefOr[Boolean] = js.native
+  var allowGrouping: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Reference/name of a function (string or function) used for custom comparison.
@@ -35,18 +34,18 @@ trait IgGridGroupByColumnSettings
     * "string" the name of the function as a string located in the global window object.
     * "function" function which will be used for custom comparison.
     */
-  var compareFunc: js.UndefOr[String | js.Function] = js.native
+  var compareFunc: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * Specifies the sort order - ascending or descending when the column is initially grouped ([isGroupBy](ui.iggridgroupby#options:columnSettings.isGroupBy) = true).
     *
     */
-  var dir: js.UndefOr[js.Any] = js.native
+  var dir: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Specifies a custom group by function, which accepts the column setting, the first and the second value to compare and returns bool. This option is deprecated - please use option [compareFunc](ui.iggridgroupby#options:columnSettings.compareFunc) instead.
     */
-  var groupComparerFunction: js.UndefOr[js.Function] = js.native
+  var groupComparerFunction: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Reference/name of a function (string or function) which will be used for formatting the cell values. The function should accept a value from the grouped column and return the new formatted value in the label of the row.
@@ -56,25 +55,25 @@ trait IgGridGroupByColumnSettings
     * "string" the name of the function as a string located in the global window object.
     * "function" which will be used for formatting the cell values.
     */
-  var groupLabelFormatter: js.UndefOr[String | js.Function] = js.native
+  var groupLabelFormatter: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * Enables/disables default summaries per group data island or specifies summaries that are applied to specific column no matter the group.
     *
     */
-  var groupSummaries: js.UndefOr[js.Any] = js.native
+  var groupSummaries: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Specifies the initial column grouped state.
     *
     */
-  var isGroupBy: js.UndefOr[Boolean] = js.native
+  var isGroupBy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of aggregation functions to calculate on the column values for each group. When not specified the default aggregate function is "count".
     *
     */
-  var summaries: js.UndefOr[IgGridGroupByColumnSettingsSummaries] = js.native
+  var summaries: js.UndefOr[IgGridGroupByColumnSettingsSummaries] = js.undefined
 }
 object IgGridGroupByColumnSettings {
   

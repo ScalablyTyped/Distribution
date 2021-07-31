@@ -2,13 +2,13 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AccelerometerMPU6050Option extends AccelerometerGeneralOption {
+trait AccelerometerMPU6050Option
+  extends StObject
+     with AccelerometerGeneralOption {
   
-  var sensitivity: js.UndefOr[Double] = js.native
+  var sensitivity: js.UndefOr[Double] = js.undefined
 }
 object AccelerometerMPU6050Option {
   

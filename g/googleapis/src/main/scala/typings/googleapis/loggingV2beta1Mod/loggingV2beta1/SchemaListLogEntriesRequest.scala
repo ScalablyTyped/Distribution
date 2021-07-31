@@ -2,13 +2,11 @@ package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The parameters to ListLogEntries.
   */
-@js.native
 trait SchemaListLogEntriesRequest extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaListLogEntriesRequest extends StObject {
     * resource_names will cause the filter to return no results. The maximum
     * length of the filter is 20000 characters.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. How the results should be sorted. Presently, the only permitted
@@ -29,14 +27,14 @@ trait SchemaListLogEntriesRequest extends StObject {
     * returns entries in order of decreasing timestamps (newest first). Entries
     * with equal timestamps are returned in order of their insert_id values.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The maximum number of results to return from this request.
     * Non-positive values are ignored. The presence of next_page_token in the
     * response indicates that more results might be available.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. If present, then retrieve the next batch of results from the
@@ -44,14 +42,14 @@ trait SchemaListLogEntriesRequest extends StObject {
     * next_page_token from the previous response. The values of other method
     * parameters should be identical to those in the previous call.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Use resource_names instead. One or more project identifiers
     * or project numbers from which to retrieve log entries. Example:
     * &quot;my-project-1A&quot;.
     */
-  var projectIds: js.UndefOr[js.Array[String]] = js.native
+  var projectIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. Names of one or more parent resources from which to retrieve
@@ -61,7 +59,7 @@ trait SchemaListLogEntriesRequest extends StObject {
     * &quot;folders/[FOLDER_ID]&quot; Projects listed in the project_ids field
     * are added to this list.
     */
-  var resourceNames: js.UndefOr[js.Array[String]] = js.native
+  var resourceNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaListLogEntriesRequest {
   

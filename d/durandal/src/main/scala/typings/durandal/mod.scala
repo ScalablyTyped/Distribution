@@ -2,7 +2,6 @@ package typings.durandal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,18 +18,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("durandal/activator", "create")
-  @js.native
-  def create[T](): DurandalActivator[T] = js.native
-  @JSImport("durandal/activator", "create")
-  @js.native
-  def create[T](initialActiveItem: T): DurandalActivator[T] = js.native
-  @JSImport("durandal/activator", "create")
-  @js.native
-  def create[T](initialActiveItem: T, settings: DurandalActivatorSettings): DurandalActivator[T] = js.native
-  @JSImport("durandal/activator", "create")
-  @js.native
-  def create[T](initialActiveItem: js.UndefOr[scala.Nothing], settings: DurandalActivatorSettings): DurandalActivator[T] = js.native
+  @scala.inline
+  def create[T](): DurandalActivator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DurandalActivator[T]]
+  @scala.inline
+  def create[T](initialActiveItem: T): DurandalActivator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialActiveItem.asInstanceOf[js.Any]).asInstanceOf[DurandalActivator[T]]
+  @scala.inline
+  def create[T](initialActiveItem: T, settings: DurandalActivatorSettings): DurandalActivator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialActiveItem.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalActivator[T]]
+  @scala.inline
+  def create[T](initialActiveItem: Unit, settings: DurandalActivatorSettings): DurandalActivator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialActiveItem.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalActivator[T]]
   
   @JSImport("durandal/activator", "defaults")
   @js.native
@@ -38,7 +33,6 @@ object mod {
   @scala.inline
   def defaults_=(x: DurandalActivatorSettings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   
-  @JSImport("durandal/activator", "isActivator")
-  @js.native
-  def isActivator(`object`: js.Any): Boolean = js.native
+  @scala.inline
+  def isActivator(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActivator")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -4,11 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.lovefield.mod.raw.BackStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // module raw
 object schema {
+  
+  @JSImport("lovefield", "schema")
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait DataStoreType extends StObject
@@ -17,32 +20,41 @@ object schema {
   object DataStoreType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DataStoreType with Double] = js.native
+    def apply(value: Double): js.UndefOr[DataStoreType & Double] = js.native
     
     @js.native
-    sealed trait FIREBASE extends DataStoreType
-    /* 3 */ val FIREBASE: typings.lovefield.mod.schema.DataStoreType.FIREBASE with Double = js.native
+    sealed trait FIREBASE
+      extends StObject
+         with DataStoreType
+    /* 3 */ val FIREBASE: typings.lovefield.mod.schema.DataStoreType.FIREBASE & Double = js.native
     
     @js.native
-    sealed trait INDEXED_DB extends DataStoreType
-    /* 0 */ val INDEXED_DB: typings.lovefield.mod.schema.DataStoreType.INDEXED_DB with Double = js.native
+    sealed trait INDEXED_DB
+      extends StObject
+         with DataStoreType
+    /* 0 */ val INDEXED_DB: typings.lovefield.mod.schema.DataStoreType.INDEXED_DB & Double = js.native
     
     @js.native
-    sealed trait LOCAL_STORAGE extends DataStoreType
-    /* 2 */ val LOCAL_STORAGE: typings.lovefield.mod.schema.DataStoreType.LOCAL_STORAGE with Double = js.native
+    sealed trait LOCAL_STORAGE
+      extends StObject
+         with DataStoreType
+    /* 2 */ val LOCAL_STORAGE: typings.lovefield.mod.schema.DataStoreType.LOCAL_STORAGE & Double = js.native
     
     @js.native
-    sealed trait MEMORY extends DataStoreType
-    /* 1 */ val MEMORY: typings.lovefield.mod.schema.DataStoreType.MEMORY with Double = js.native
+    sealed trait MEMORY
+      extends StObject
+         with DataStoreType
+    /* 1 */ val MEMORY: typings.lovefield.mod.schema.DataStoreType.MEMORY & Double = js.native
     
     @js.native
-    sealed trait WEB_SQL extends DataStoreType
-    /* 4 */ val WEB_SQL: typings.lovefield.mod.schema.DataStoreType.WEB_SQL with Double = js.native
+    sealed trait WEB_SQL
+      extends StObject
+         with DataStoreType
+    /* 4 */ val WEB_SQL: typings.lovefield.mod.schema.DataStoreType.WEB_SQL & Double = js.native
   }
   
-  @JSImport("lovefield", "schema.create")
-  @js.native
-  def create(dbName: String, dbVersion: Double): Builder = js.native
+  @scala.inline
+  def create(dbName: String, dbVersion: Double): Builder = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(dbName.asInstanceOf[js.Any], dbVersion.asInstanceOf[js.Any])).asInstanceOf[Builder]
   
   @js.native
   trait Builder extends StObject {
@@ -58,7 +70,9 @@ object schema {
   }
   
   @js.native
-  trait Column extends PredicateProvider {
+  trait Column
+    extends StObject
+       with PredicateProvider {
     
     def as(name: String): Column = js.native
     
@@ -67,14 +81,13 @@ object schema {
     def getNormalizedName(): String = js.native
   }
   
-  @js.native
   trait ConnectOptions extends StObject {
     
-    var onUpgrade: js.UndefOr[js.Function1[/* rawDb */ BackStore, js.Promise[Unit]]] = js.native
+    var onUpgrade: js.UndefOr[js.Function1[/* rawDb */ BackStore, js.Promise[Unit]]] = js.undefined
     
-    var storeType: js.UndefOr[DataStoreType] = js.native
+    var storeType: js.UndefOr[DataStoreType] = js.undefined
     
-    var webSqlDbSize: js.UndefOr[Double] = js.native
+    var webSqlDbSize: js.UndefOr[Double] = js.undefined
   }
   object ConnectOptions {
     
@@ -107,18 +120,17 @@ object schema {
     }
   }
   
-  @js.native
   trait Database extends StObject {
     
-    def name(): String = js.native
+    def name(): String
     
-    def pragma(): DatabasePragma = js.native
+    def pragma(): DatabasePragma
     
-    def table(tableName: String): Table = js.native
+    def table(tableName: String): Table
     
-    def tables(): js.Array[Table] = js.native
+    def tables(): js.Array[Table]
     
-    def version(): Double = js.native
+    def version(): Double
   }
   object Database {
     
@@ -154,10 +166,9 @@ object schema {
     }
   }
   
-  @js.native
   trait DatabasePragma extends StObject {
     
-    var enableBundledMode: Boolean = js.native
+    var enableBundledMode: Boolean
   }
   object DatabasePragma {
     
@@ -175,14 +186,13 @@ object schema {
     }
   }
   
-  @js.native
   trait ITable extends StObject {
     
-    def as(name: String): Table = js.native
+    def as(name: String): Table
     
-    def createRow(value: js.Object): Row = js.native
+    def createRow(value: js.Object): Row
     
-    def getName(): String = js.native
+    def getName(): String
   }
   object ITable {
     
@@ -206,14 +216,13 @@ object schema {
     }
   }
   
-  @js.native
   trait IndexedColumn extends StObject {
     
-    var autoIncrement: Boolean = js.native
+    var autoIncrement: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var order: Order = js.native
+    var order: Order
   }
   object IndexedColumn {
     
@@ -237,16 +246,15 @@ object schema {
     }
   }
   
-  @js.native
   trait RawForeignKeySpec extends StObject {
     
-    var action: js.UndefOr[ConstraintAction] = js.native
+    var action: js.UndefOr[ConstraintAction] = js.undefined
     
-    var local: String = js.native
+    var local: String
     
-    var ref: String = js.native
+    var ref: String
     
-    var timing: js.UndefOr[ConstraintTiming] = js.native
+    var timing: js.UndefOr[ConstraintTiming] = js.undefined
   }
   object RawForeignKeySpec {
     
@@ -279,35 +287,16 @@ object schema {
     }
   }
   
-  /* Inlined lovefield.lovefield.schema.ITable & {[index: string] : lovefield.lovefield.schema.Column} */
-  @js.native
-  trait Table extends /* index */ StringDictionary[Column] {
-    
-    def as(name: String): Table = js.native
-    
-    def createRow(value: js.Object): Row = js.native
-    
-    def getName(): String = js.native
-  }
+  trait Table
+    extends StObject
+       with ITable
+       with /* index */ StringDictionary[Column]
   object Table {
     
     @scala.inline
     def apply(as: String => Table, createRow: js.Object => Row, getName: () => String): Table = {
       val __obj = js.Dynamic.literal(as = js.Any.fromFunction1(as), createRow = js.Any.fromFunction1(createRow), getName = js.Any.fromFunction0(getName))
       __obj.asInstanceOf[Table]
-    }
-    
-    @scala.inline
-    implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setAs(value: String => Table): Self = StObject.set(x, "as", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setCreateRow(value: js.Object => Row): Self = StObject.set(x, "createRow", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     }
   }
   
@@ -319,14 +308,9 @@ object schema {
     def addForeignKey(name: String, spec: RawForeignKeySpec): TableBuilder = js.native
     
     def addIndex(name: String, columns: js.Array[IndexedColumn | String]): TableBuilder = js.native
-    def addIndex(
-      name: String,
-      columns: js.Array[IndexedColumn | String],
-      unique: js.UndefOr[scala.Nothing],
-      order: Order
-    ): TableBuilder = js.native
     def addIndex(name: String, columns: js.Array[IndexedColumn | String], unique: Boolean): TableBuilder = js.native
     def addIndex(name: String, columns: js.Array[IndexedColumn | String], unique: Boolean, order: Order): TableBuilder = js.native
+    def addIndex(name: String, columns: js.Array[IndexedColumn | String], unique: Unit, order: Order): TableBuilder = js.native
     
     def addNullable(columns: js.Array[String]): TableBuilder = js.native
     

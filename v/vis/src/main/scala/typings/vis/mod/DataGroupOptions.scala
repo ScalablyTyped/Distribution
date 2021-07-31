@@ -2,24 +2,22 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataGroupOptions extends StObject {
   
-  var drawPoints: js.UndefOr[Graph2dDrawPointsOption | js.Function0[Unit]] = js.native
+  var drawPoints: js.UndefOr[Graph2dDrawPointsOption | js.Function0[Unit]] = js.undefined
   
   // TODO
-  var excludeFromLegend: js.UndefOr[Boolean] = js.native
+  var excludeFromLegend: js.UndefOr[Boolean] = js.undefined
   
-  var interpolation: js.UndefOr[Boolean | InterpolationOptions] = js.native
+  var interpolation: js.UndefOr[Boolean | InterpolationOptions] = js.undefined
   
-  var shaded: js.UndefOr[Graph2dShadedOption] = js.native
+  var shaded: js.UndefOr[Graph2dShadedOption] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var yAxisOrientation: js.UndefOr[RightLeftEnumType] = js.native
+  var yAxisOrientation: js.UndefOr[RightLeftEnumType] = js.undefined
 }
 object DataGroupOptions {
   

@@ -3,33 +3,31 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogEvents extends StObject {
   
-  var beforeClose: js.UndefOr[DialogEvent] = js.native
+  var beforeClose: js.UndefOr[DialogEvent] = js.undefined
   
-  var close: js.UndefOr[DialogEvent] = js.native
+  var close: js.UndefOr[DialogEvent] = js.undefined
   
-  var create: js.UndefOr[DialogEvent] = js.native
+  var create: js.UndefOr[DialogEvent] = js.undefined
   
-  var drag: js.UndefOr[DialogEvent] = js.native
+  var drag: js.UndefOr[DialogEvent] = js.undefined
   
-  var dragStart: js.UndefOr[DialogEvent] = js.native
+  var dragStart: js.UndefOr[DialogEvent] = js.undefined
   
-  var dragStop: js.UndefOr[DialogEvent] = js.native
+  var dragStop: js.UndefOr[DialogEvent] = js.undefined
   
-  var focus: js.UndefOr[DialogEvent] = js.native
+  var focus: js.UndefOr[DialogEvent] = js.undefined
   
-  var open: js.UndefOr[DialogEvent] = js.native
+  var open: js.UndefOr[DialogEvent] = js.undefined
   
-  var resize: js.UndefOr[DialogEvent] = js.native
+  var resize: js.UndefOr[DialogEvent] = js.undefined
   
-  var resizeStart: js.UndefOr[DialogEvent] = js.native
+  var resizeStart: js.UndefOr[DialogEvent] = js.undefined
   
-  var resizeStop: js.UndefOr[DialogEvent] = js.native
+  var resizeStop: js.UndefOr[DialogEvent] = js.undefined
 }
 object DialogEvents {
   

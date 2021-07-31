@@ -3,20 +3,19 @@ package typings.typescript.mod
 import typings.typescript.mod.TypePredicateKind.AssertsIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssertsIdentifierTypePredicate
-  extends TypePredicateBase
+  extends StObject
+     with TypePredicateBase
      with TypePredicate {
   
   @JSName("kind")
-  var kind_AssertsIdentifierTypePredicate: AssertsIdentifier = js.native
+  var kind_AssertsIdentifierTypePredicate: AssertsIdentifier
   
-  var parameterIndex: Double = js.native
+  var parameterIndex: Double
   
-  var parameterName: java.lang.String = js.native
+  var parameterName: java.lang.String
 }
 object AssertsIdentifierTypePredicate {
   

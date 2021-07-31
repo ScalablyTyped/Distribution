@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowGraph extends StObject {
   
   /** Output only. The workflow nodes. */
-  var nodes: js.UndefOr[js.Array[WorkflowNode]] = js.native
+  var nodes: js.UndefOr[js.Array[WorkflowNode]] = js.undefined
 }
 object WorkflowGraph {
   

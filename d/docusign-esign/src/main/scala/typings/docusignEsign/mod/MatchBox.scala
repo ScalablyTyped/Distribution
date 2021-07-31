@@ -2,28 +2,26 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchBox extends StObject {
   
   /**
     * The height of the tab in pixels.
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the page number on which the tab is located.
     * Must be 1 for supplemental documents.
     *
     */
-  var pageNumber: js.UndefOr[String] = js.native
+  var pageNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the tab in pixels.
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
   
   /**
     * This property indicates the horizontal offset of the object on the page.
@@ -31,12 +29,12 @@ trait MatchBox extends StObject {
     * Required. May be zero.
     *
     */
-  var xPosition: js.UndefOr[String] = js.native
+  var xPosition: js.UndefOr[String] = js.undefined
   
   /**
     * This indicates the vertical offset of the object on the page. DocuSign uses 72 DPI when determining position.
     */
-  var yPosition: js.UndefOr[String] = js.native
+  var yPosition: js.UndefOr[String] = js.undefined
 }
 object MatchBox {
   

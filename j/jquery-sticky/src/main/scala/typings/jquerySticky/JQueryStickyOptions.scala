@@ -2,47 +2,45 @@ package typings.jquerySticky
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStickyOptions extends StObject {
   
   /**
     * Pixels between the page bottom and the element's bottom.
     * @default 0
     */
-  var bottomSpacing: js.UndefOr[Double] = js.native
+  var bottomSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     * Boolean determining whether the sticky element should be horizontally centered in the page.
     * @default false
     */
-  var center: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[Boolean] = js.undefined
   
   /**
     * CSS class added to the element's wrapper when "sticked".
     * @default is-sticky
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Selector of element referenced to set fixed width of "sticky" element.
     * @default ''
     */
-  var getWidthFrom: js.UndefOr[String] = js.native
+  var getWidthFrom: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean determining whether widths will be recalculated on window resize (using getWidthfrom).
     * @default false
     */
-  var responsiveWidth: js.UndefOr[Boolean] = js.native
+  var responsiveWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Pixels between the page top and the element's top.
     * @default 0
     */
-  var topSpacing: js.UndefOr[Double] = js.native
+  var topSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     * Boolean determining whether width of the "sticky" element should be updated to match the wrapper's width.
@@ -50,19 +48,19 @@ trait JQueryStickyOptions extends StObject {
     * Works only as long getWidthForm isn't set.
     * @default true
     */
-  var widthFromWrapper: js.UndefOr[Boolean] = js.native
+  var widthFromWrapper: js.UndefOr[Boolean] = js.undefined
   
   /**
     * CSS class added to the wrapper.
     * @default 'sticky-wrapper'
     */
-  var wrapperClassName: js.UndefOr[String] = js.native
+  var wrapperClassName: js.UndefOr[String] = js.undefined
   
   /**
     * Controls z-index of the sticked element.
     * @default inherit
     */
-  var zIndex: js.UndefOr[String] = js.native
+  var zIndex: js.UndefOr[String] = js.undefined
 }
 object JQueryStickyOptions {
   

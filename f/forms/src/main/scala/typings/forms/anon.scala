@@ -4,19 +4,17 @@ import typings.forms.mod.Form
 import typings.forms.mod.FormHandleCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var method: String = js.native
+    var method: String
     
-    var url: String = js.native
+    var url: String
   }
   object Body {
     
@@ -40,16 +38,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Empty extends StObject {
     
-    var empty: js.UndefOr[FormHandleCallback] = js.native
+    var empty: js.UndefOr[FormHandleCallback] = js.undefined
     
-    var error: js.UndefOr[FormHandleCallback] = js.native
+    var error: js.UndefOr[FormHandleCallback] = js.undefined
     
-    var other: js.UndefOr[FormHandleCallback] = js.native
+    var other: js.UndefOr[FormHandleCallback] = js.undefined
     
-    var success: js.UndefOr[FormHandleCallback] = js.native
+    var success: js.UndefOr[FormHandleCallback] = js.undefined
   }
   object Empty {
     
@@ -88,12 +85,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Field extends StObject {
     
-    var field: js.UndefOr[js.Array[String]] = js.native
+    var field: js.UndefOr[js.Array[String]] = js.undefined
     
-    var label: js.UndefOr[js.Array[String]] = js.native
+    var label: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Field {
     
@@ -126,11 +122,10 @@ object anon {
     }
   }
   
-  @js.native
   trait ValidatePastFirstError extends StObject {
     
     /** If false, the first validation error will halt form validation, otherwise all fields will be validated. */
-    var validatePastFirstError: js.UndefOr[Boolean] = js.native
+    var validatePastFirstError: js.UndefOr[Boolean] = js.undefined
   }
   object ValidatePastFirstError {
     
@@ -152,21 +147,20 @@ object anon {
   }
   
   /* Inlined forms.forms.WidgetParameters & {  rows :number | undefined,   cols :number | undefined} */
-  @js.native
   trait WidgetParametersrowsnumbe extends StObject {
     
     /** Custom classes to add to the rendered widget. */
-    var classes: js.UndefOr[js.Array[String]] = js.native
+    var classes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cols: js.UndefOr[Double] = js.native
+    var cols: js.UndefOr[Double] = js.undefined
     
     /** Custom classes to add to the choices label when applicable (multipleRadio and multipleCheckbox) */
-    var labelClasses: js.UndefOr[js.Array[String]] = js.native
+    var labelClasses: js.UndefOr[js.Array[String]] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
     /** A string representing the widget type, e.g. 'text' or 'checkbox' */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object WidgetParametersrowsnumbe {
     

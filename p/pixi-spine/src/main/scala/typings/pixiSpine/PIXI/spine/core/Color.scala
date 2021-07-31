@@ -2,29 +2,27 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var a: Double = js.native
+  var a: Double
   
-  def add(r: Double, g: Double, b: Double, a: Double): this.type = js.native
+  def add(r: Double, g: Double, b: Double, a: Double): this.type
   
-  var b: Double = js.native
+  var b: Double
   
-  def clamp(): this.type = js.native
+  def clamp(): this.type
   
-  var g: Double = js.native
+  var g: Double
   
-  var r: Double = js.native
+  var r: Double
   
-  def set(r: Double, g: Double, b: Double, a: Double): this.type = js.native
+  def set(r: Double, g: Double, b: Double, a: Double): this.type
   
-  def setFromColor(c: Color): this.type = js.native
+  def setFromColor(c: Color): this.type
   
-  def setFromString(hex: String): this.type = js.native
+  def setFromString(hex: String): this.type
 }
 object Color {
   

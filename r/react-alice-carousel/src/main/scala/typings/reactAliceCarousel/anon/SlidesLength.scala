@@ -2,15 +2,13 @@ package typings.reactAliceCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlidesLength extends StObject {
   
-  var activeIndex: js.Any = js.native
+  var activeIndex: js.Any
   
-  var slidesLength: js.Any = js.native
+  var slidesLength: js.Any
 }
 object SlidesLength {
   

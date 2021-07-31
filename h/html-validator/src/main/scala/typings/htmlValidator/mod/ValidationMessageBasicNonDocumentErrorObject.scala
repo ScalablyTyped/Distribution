@@ -6,22 +6,20 @@ import typings.htmlValidator.htmlValidatorStrings.io
 import typings.htmlValidator.htmlValidatorStrings.schema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationMessageBasicNonDocumentErrorObject extends StObject {
   
-  var subType: js.UndefOr[internal | io | schema] = js.native
+  var subType: js.UndefOr[internal | io | schema] = js.undefined
   
-  var `type`: `non-document-error` = js.native
+  var `type`: `non-document-error`
 }
 object ValidationMessageBasicNonDocumentErrorObject {
   
   @scala.inline
-  def apply(`type`: `non-document-error`): ValidationMessageBasicNonDocumentErrorObject = {
+  def apply(): ValidationMessageBasicNonDocumentErrorObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("non-document-error")
     __obj.asInstanceOf[ValidationMessageBasicNonDocumentErrorObject]
   }
   

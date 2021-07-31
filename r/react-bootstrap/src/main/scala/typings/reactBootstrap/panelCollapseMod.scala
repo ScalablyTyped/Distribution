@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelCollapseMod {
@@ -18,22 +17,23 @@ object panelCollapseMod {
   trait PanelCollapse
     extends Component[PanelCollapseProps, js.Object, js.Any]
   
-  @js.native
-  trait PanelCollapseProps extends HTMLProps[PanelCollapse] {
+  trait PanelCollapseProps
+    extends StObject
+       with HTMLProps[PanelCollapse] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var onEnter: js.UndefOr[js.Function] = js.native
+    var onEnter: js.UndefOr[js.Function] = js.undefined
     
-    var onEntered: js.UndefOr[js.Function] = js.native
+    var onEntered: js.UndefOr[js.Function] = js.undefined
     
-    var onEntering: js.UndefOr[js.Function] = js.native
+    var onEntering: js.UndefOr[js.Function] = js.undefined
     
-    var onExit: js.UndefOr[js.Function] = js.native
+    var onExit: js.UndefOr[js.Function] = js.undefined
     
-    var onExited: js.UndefOr[js.Function] = js.native
+    var onExited: js.UndefOr[js.Function] = js.undefined
     
-    var onExiting: js.UndefOr[js.Function] = js.native
+    var onExiting: js.UndefOr[js.Function] = js.undefined
   }
   object PanelCollapseProps {
     

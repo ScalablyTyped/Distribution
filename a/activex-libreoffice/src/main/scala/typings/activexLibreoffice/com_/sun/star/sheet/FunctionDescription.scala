@@ -3,36 +3,34 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * collects all properties used to describe a function.
   * @see com.sun.star.sheet.FunctionDescriptions
   */
-@js.native
 trait FunctionDescription extends StObject {
   
   /** returns a sequence of localized descriptions of the function's arguments (in the order specified by the function). */
-  var Arguments: SafeArray[FunctionArgument] = js.native
+  var Arguments: SafeArray[FunctionArgument]
   
   /**
     * returns the function's category.
     * @see com.sun.star.sheet.FunctionCategory
     */
-  var Category: Double = js.native
+  var Category: Double
   
   /** returns a localized description of the function. */
-  var Description: String = js.native
+  var Description: String
   
   /**
     * returns the function's unique identifier.
     * @see com.sun.star.sheet.XFunctionDescriptions
     */
-  var Id: Double = js.native
+  var Id: Double
   
   /** returns the localized function's name. */
-  var Name: String = js.native
+  var Name: String
 }
 object FunctionDescription {
   

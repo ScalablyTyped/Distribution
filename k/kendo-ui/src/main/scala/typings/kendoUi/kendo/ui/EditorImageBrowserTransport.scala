@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorImageBrowserTransport extends StObject {
   
-  var create: js.UndefOr[String | EditorImageBrowserTransportCreate] = js.native
+  var create: js.UndefOr[String | EditorImageBrowserTransportCreate] = js.undefined
   
-  var destroy: js.UndefOr[String | EditorImageBrowserTransportDestroy] = js.native
+  var destroy: js.UndefOr[String | EditorImageBrowserTransportDestroy] = js.undefined
   
-  var imageUrl: js.UndefOr[String | js.Function] = js.native
+  var imageUrl: js.UndefOr[String | js.Function] = js.undefined
   
-  var read: js.UndefOr[String | js.Function | EditorImageBrowserTransportRead] = js.native
+  var read: js.UndefOr[String | js.Function | EditorImageBrowserTransportRead] = js.undefined
   
-  var thumbnailUrl: js.UndefOr[String | js.Function] = js.native
+  var thumbnailUrl: js.UndefOr[String | js.Function] = js.undefined
   
-  var uploadUrl: js.UndefOr[String] = js.native
+  var uploadUrl: js.UndefOr[String] = js.undefined
 }
 object EditorImageBrowserTransport {
   

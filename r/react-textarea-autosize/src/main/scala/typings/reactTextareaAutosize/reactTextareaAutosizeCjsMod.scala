@@ -5,7 +5,6 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.reactTextareaAutosize.anon.PickTextareaPropscolortra
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactTextareaAutosizeCjsMod extends Shortcut {

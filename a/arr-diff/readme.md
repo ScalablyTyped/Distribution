@@ -11,8 +11,8 @@ Returns an array with only the unique values from the first array, by excluding 
 | Full name          | arr-diff |
 | Keywords           | arr, array, array differ, array-differ, diff, differ, difference |
 | # releases         | 0 |
-| # dependents       | 129 |
-| # downloads        | 775834412 |
+| # dependents       | 168 |
+| # downloads        | 869755392 |
 | # stars            | 3 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComparisonType extends StObject {
   
-  var comparisonType: js.UndefOr[String] = js.native
+  var comparisonType: js.UndefOr[String] = js.undefined
   
-  var comparisonValue: js.UndefOr[String] = js.native
+  var comparisonValue: js.UndefOr[String] = js.undefined
   
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
-  var matchType: js.UndefOr[String] = js.native
+  var matchType: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ComparisonType {
   

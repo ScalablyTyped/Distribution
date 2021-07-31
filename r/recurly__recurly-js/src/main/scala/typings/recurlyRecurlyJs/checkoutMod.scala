@@ -10,7 +10,6 @@ import typings.recurlyRecurlyJs.subscriptionMod.SubscriptionPricingState
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkoutMod {
@@ -35,16 +34,15 @@ object checkoutMod {
     }
   }
   
-  @js.native
   trait CheckoutPrice extends StObject {
     
-    var currency: Code = js.native
+    var currency: Code
     
-    var next: Adjustments = js.native
+    var next: Adjustments
     
-    var now: Adjustments = js.native
+    var now: Adjustments
     
-    var taxes: js.Array[CheckoutPricingStateTax] = js.native
+    var taxes: js.Array[CheckoutPricingStateTax]
   }
   object CheckoutPrice {
     
@@ -78,8 +76,9 @@ object checkoutMod {
   
   @js.native
   trait CheckoutPricingInstance
-    extends PricingInstance[CheckoutPricingPromise]
-       with CheckoutPricingMethods {
+    extends StObject
+       with CheckoutPricingMethods
+       with PricingInstance[CheckoutPricingPromise] {
     
     /**
       * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#fn-checkoutpricingattach|CheckoutPricing.attach}
@@ -88,24 +87,23 @@ object checkoutMod {
     def attach(element: HTMLElement): Unit = js.native
   }
   
-  @js.native
   trait CheckoutPricingMethods extends StObject {
     
-    def address(address: Address): CheckoutPricingPromise = js.native
+    def address(address: Address): CheckoutPricingPromise
     
-    def adjustment(adjustment: Adjustment): CheckoutPricingPromise = js.native
+    def adjustment(adjustment: Adjustment): CheckoutPricingPromise
     
-    def coupon(coupon: String): CheckoutPricingPromise = js.native
+    def coupon(coupon: String): CheckoutPricingPromise
     
-    def currency(currency: String): CheckoutPricingPromise = js.native
+    def currency(currency: String): CheckoutPricingPromise
     
-    def giftCard(giftcard: String): CheckoutPricingPromise = js.native
+    def giftCard(giftcard: String): CheckoutPricingPromise
     
-    def shippingAddress(address: Address): CheckoutPricingPromise = js.native
+    def shippingAddress(address: Address): CheckoutPricingPromise
     
-    def subscription(subscriptionPricing: SubscriptionPricingState): CheckoutPricingPromise = js.native
+    def subscription(subscriptionPricing: SubscriptionPricingState): CheckoutPricingPromise
     
-    def tax(tax: Tax): CheckoutPricingPromise = js.native
+    def tax(tax: Tax): CheckoutPricingPromise
   }
   object CheckoutPricingMethods {
     
@@ -156,12 +154,20 @@ object checkoutMod {
   @js.native
   trait CheckoutPricingPromise
     extends PricingPromise[CheckoutPricingState, CheckoutPricingMethods]
-       with CheckoutPricingInstance
+       with CheckoutPricingInstance {
+    
+    /* InferMemberOverrides */
+    override def `then`[B](
+      onFulfilled: js.Function1[CheckoutPricingState, B | js.Thenable[B]],
+      onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]
+    ): js.Thenable[B] & js.Promise[B] = js.native
+    /* InferMemberOverrides */
+    override def `then`[B](onFulfilled: Unit, onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Thenable[B] & js.Promise[B] = js.native
+  }
   
-  @js.native
   trait CheckoutPricingState extends StObject {
     
-    var price: CheckoutPrice = js.native
+    var price: CheckoutPrice
   }
   object CheckoutPricingState {
     
@@ -179,14 +185,13 @@ object checkoutMod {
     }
   }
   
-  @js.native
   trait CheckoutPricingStateTax extends StObject {
     
-    var rate: String = js.native
+    var rate: String
     
-    var region: String = js.native
+    var region: String
     
-    var tax_type: String = js.native
+    var tax_type: String
   }
   object CheckoutPricingStateTax {
     
@@ -210,20 +215,19 @@ object checkoutMod {
     }
   }
   
-  @js.native
   trait Item extends StObject {
     
-    var addons: String = js.native
+    var addons: String
     
-    var amount: String = js.native
+    var amount: String
     
-    var id: String = js.native
+    var id: String
     
-    var plan: String = js.native
+    var plan: String
     
-    var setupFee: String = js.native
+    var setupFee: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Item {
     
@@ -257,29 +261,30 @@ object checkoutMod {
     }
   }
   
-  @js.native
-  trait ItemAdjustment extends Adjustment {
+  trait ItemAdjustment
+    extends StObject
+       with Adjustment {
     
     /**
       * Currency code
       */
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
     /**
       * Unique identifier. Use this value to modify an adjustment in-place.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Item code reference. If provided, the amount and tax properties will be populated from the given item. An itemCode
       * may not be used to modify an adjustment in-place.
       */
-    var itemCode: String = js.native
+    var itemCode: String
     
     /**
       * Number of units
       */
-    var quantity: Double = js.native
+    var quantity: Double
   }
   object ItemAdjustment {
     
@@ -312,38 +317,39 @@ object checkoutMod {
     }
   }
   
-  @js.native
-  trait NonItemAdjustment extends Adjustment {
+  trait NonItemAdjustment
+    extends StObject
+       with Adjustment {
     
     /**
       * In unit price (1.0 for USD, etc)
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Currency code
       */
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
     /**
       * Unique identifier. Use this value to modify an adjustment in-place.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Number of units
       */
-    var quantity: Double = js.native
+    var quantity: Double
     
     /**
       * Taxation code
       */
-    var taxCode: String = js.native
+    var taxCode: String
     
     /**
       * Whether this adjustment is tax exempt
       */
-    var taxExempt: Boolean = js.native
+    var taxExempt: Boolean
   }
   object NonItemAdjustment {
     

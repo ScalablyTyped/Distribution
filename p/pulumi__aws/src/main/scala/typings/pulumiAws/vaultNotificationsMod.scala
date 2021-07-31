@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vaultNotificationsMod {
@@ -48,6 +47,10 @@ object vaultNotificationsMod {
   /* static members */
   object VaultNotifications {
     
+    @JSImport("@pulumi/aws/backup/vaultNotifications", "VaultNotifications")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VaultNotifications resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,45 +60,39 @@ object vaultNotificationsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/backup/vaultNotifications", "VaultNotifications.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VaultNotifications = js.native
-    @JSImport("@pulumi/aws/backup/vaultNotifications", "VaultNotifications.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VaultNotifications = js.native
-    @JSImport("@pulumi/aws/backup/vaultNotifications", "VaultNotifications.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultNotificationsState): VaultNotifications = js.native
-    @JSImport("@pulumi/aws/backup/vaultNotifications", "VaultNotifications.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultNotificationsState, opts: CustomResourceOptions): VaultNotifications = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultNotificationsState): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultNotificationsState, opts: CustomResourceOptions): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
     
     /**
       * Returns true if the given object is an instance of VaultNotifications.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/backup/vaultNotifications", "VaultNotifications.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vaultNotifications.VaultNotifications */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vaultNotifications.VaultNotifications */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/vaultNotifications.VaultNotifications */ Boolean]
   }
   
-  @js.native
   trait VaultNotificationsArgs extends StObject {
     
     /**
       * An array of events that indicate the status of jobs to back up resources to the backup vault.
       */
-    val backupVaultEvents: Input[js.Array[Input[String]]] = js.native
+    val backupVaultEvents: Input[js.Array[Input[String]]]
     
     /**
       * Name of the backup vault to add notifications for.
       */
-    val backupVaultName: Input[String] = js.native
+    val backupVaultName: Input[String]
     
     /**
       * The Amazon Resource Name (ARN) that specifies the topic for a backup vault’s events
       */
-    val snsTopicArn: Input[String] = js.native
+    val snsTopicArn: Input[String]
   }
   object VaultNotificationsArgs {
     
@@ -126,28 +123,27 @@ object vaultNotificationsMod {
     }
   }
   
-  @js.native
   trait VaultNotificationsState extends StObject {
     
     /**
       * The ARN of the vault.
       */
-    val backupVaultArn: js.UndefOr[Input[String]] = js.native
+    val backupVaultArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An array of events that indicate the status of jobs to back up resources to the backup vault.
       */
-    val backupVaultEvents: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val backupVaultEvents: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Name of the backup vault to add notifications for.
       */
-    val backupVaultName: js.UndefOr[Input[String]] = js.native
+    val backupVaultName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) that specifies the topic for a backup vault’s events
       */
-    val snsTopicArn: js.UndefOr[Input[String]] = js.native
+    val snsTopicArn: js.UndefOr[Input[String]] = js.undefined
   }
   object VaultNotificationsState {
     

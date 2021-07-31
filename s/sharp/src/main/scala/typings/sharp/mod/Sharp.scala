@@ -10,7 +10,6 @@ import typings.std.ArrayLike
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -205,10 +204,10 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def linear(): Sharp = js.native
-  def linear(a: js.UndefOr[scala.Nothing], b: Double): Sharp = js.native
   def linear(a: Double): Sharp = js.native
   def linear(a: Double, b: Double): Sharp = js.native
   def linear(a: Null, b: Double): Sharp = js.native
+  def linear(a: Unit, b: Double): Sharp = js.native
   
   /**
     * Apply median filter. When used without parameters the default window is 3x3.
@@ -338,19 +337,19 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def resize(options: ResizeOptions): Sharp = js.native
-  def resize(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], options: ResizeOptions): Sharp = js.native
-  def resize(width: js.UndefOr[scala.Nothing], height: Double): Sharp = js.native
-  def resize(width: js.UndefOr[scala.Nothing], height: Double, options: ResizeOptions): Sharp = js.native
-  def resize(width: js.UndefOr[scala.Nothing], height: Null, options: ResizeOptions): Sharp = js.native
   def resize(width: Double): Sharp = js.native
-  def resize(width: Double, height: js.UndefOr[scala.Nothing], options: ResizeOptions): Sharp = js.native
   def resize(width: Double, height: Double): Sharp = js.native
   def resize(width: Double, height: Double, options: ResizeOptions): Sharp = js.native
   def resize(width: Double, height: Null, options: ResizeOptions): Sharp = js.native
-  def resize(width: Null, height: js.UndefOr[scala.Nothing], options: ResizeOptions): Sharp = js.native
+  def resize(width: Double, height: Unit, options: ResizeOptions): Sharp = js.native
   def resize(width: Null, height: Double): Sharp = js.native
   def resize(width: Null, height: Double, options: ResizeOptions): Sharp = js.native
   def resize(width: Null, height: Null, options: ResizeOptions): Sharp = js.native
+  def resize(width: Null, height: Unit, options: ResizeOptions): Sharp = js.native
+  def resize(width: Unit, height: Double): Sharp = js.native
+  def resize(width: Unit, height: Double, options: ResizeOptions): Sharp = js.native
+  def resize(width: Unit, height: Null, options: ResizeOptions): Sharp = js.native
+  def resize(width: Unit, height: Unit, options: ResizeOptions): Sharp = js.native
   
   //#endregion
   //#region Operation functions
@@ -372,9 +371,9 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def rotate(): Sharp = js.native
-  def rotate(angle: js.UndefOr[scala.Nothing], options: RotateOptions): Sharp = js.native
   def rotate(angle: Double): Sharp = js.native
   def rotate(angle: Double, options: RotateOptions): Sharp = js.native
+  def rotate(angle: Unit, options: RotateOptions): Sharp = js.native
   
   /**
     * Sharpen the image.
@@ -388,13 +387,13 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def sharpen(): Sharp = js.native
-  def sharpen(sigma: js.UndefOr[scala.Nothing], flat: js.UndefOr[scala.Nothing], jagged: Double): Sharp = js.native
-  def sharpen(sigma: js.UndefOr[scala.Nothing], flat: Double): Sharp = js.native
-  def sharpen(sigma: js.UndefOr[scala.Nothing], flat: Double, jagged: Double): Sharp = js.native
   def sharpen(sigma: Double): Sharp = js.native
-  def sharpen(sigma: Double, flat: js.UndefOr[scala.Nothing], jagged: Double): Sharp = js.native
   def sharpen(sigma: Double, flat: Double): Sharp = js.native
   def sharpen(sigma: Double, flat: Double, jagged: Double): Sharp = js.native
+  def sharpen(sigma: Double, flat: Unit, jagged: Double): Sharp = js.native
+  def sharpen(sigma: Unit, flat: Double): Sharp = js.native
+  def sharpen(sigma: Unit, flat: Double, jagged: Double): Sharp = js.native
+  def sharpen(sigma: Unit, flat: Unit, jagged: Double): Sharp = js.native
   
   /**
     * Access to pixel-derived image statistics for every channel in the image.
@@ -415,9 +414,9 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def threshold(): Sharp = js.native
-  def threshold(threshold: js.UndefOr[scala.Nothing], options: ThresholdOptions): Sharp = js.native
   def threshold(threshold: Double): Sharp = js.native
   def threshold(threshold: Double, options: ThresholdOptions): Sharp = js.native
+  def threshold(threshold: Unit, options: ThresholdOptions): Sharp = js.native
   
   /**
     * Use these TIFF options for output image.

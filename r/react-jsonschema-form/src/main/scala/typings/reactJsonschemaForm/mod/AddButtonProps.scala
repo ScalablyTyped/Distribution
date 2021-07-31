@@ -4,17 +4,15 @@ import typings.std.HTMLButtonElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddButtonProps extends StObject {
   
-  var className: String = js.native
+  var className: String
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  def onClick(e: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent]): Unit = js.native
+  def onClick(e: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent]): Unit
 }
 object AddButtonProps {
   

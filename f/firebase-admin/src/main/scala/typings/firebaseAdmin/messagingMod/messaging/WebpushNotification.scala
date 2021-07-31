@@ -7,98 +7,97 @@ import typings.firebaseAdmin.firebaseAdminStrings.ltr
 import typings.firebaseAdmin.firebaseAdminStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebpushNotification
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   /**
     * An array of notification actions representing the actions
     * available to the user when the notification is presented.
     */
-  var actions: js.UndefOr[js.Array[Action]] = js.native
+  var actions: js.UndefOr[js.Array[Action]] = js.undefined
   
   /**
     * URL of the image used to represent the notification when there is
     * not enough space to display the notification itself.
     */
-  var badge: js.UndefOr[String] = js.native
+  var badge: js.UndefOr[String] = js.undefined
   
   /**
     * Body text of the notification.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * Arbitrary data that you want associated with the notification.
     * This can be of any data type.
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The direction in which to display the notification. Must be one
     * of `auto`, `ltr` or `rtl`.
     */
-  var dir: js.UndefOr[auto | ltr | rtl] = js.native
+  var dir: js.UndefOr[auto | ltr | rtl] = js.undefined
   
   /**
     * URL to the notification icon.
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * URL of an image to be displayed in the notification.
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * The notification's language as a BCP 47 language tag.
     */
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
   /**
     * A boolean specifying whether the user should be notified after a
     * new notification replaces an old one. Defaults to false.
     */
-  var renotify: js.UndefOr[Boolean] = js.native
+  var renotify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that a notification should remain active until the user
     * clicks or dismisses it, rather than closing automatically.
     * Defaults to false.
     */
-  var requireInteraction: js.UndefOr[Boolean] = js.native
+  var requireInteraction: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean specifying whether the notification should be silent.
     * Defaults to false.
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An identifying tag for the notification.
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
   /**
     * Timestamp of the notification. Refer to
     * https://developer.mozilla.org/en-US/docs/Web/API/notification/timestamp
     * for details.
     */
-  var timestamp: js.UndefOr[Double] = js.native
+  var timestamp: js.UndefOr[Double] = js.undefined
   
   /**
     * Title text of the notification.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * A vibration pattern for the device's vibration hardware to emit
     * when the notification fires.
     */
-  var vibrate: js.UndefOr[Double | js.Array[Double]] = js.native
+  var vibrate: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 object WebpushNotification {
   

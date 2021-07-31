@@ -1,44 +1,41 @@
 package typings.webdriverio.webdriverioCoreMod.WebdriverIO
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Matcher extends js.Object {
-  var args: js.Array[String | js.Object] = js.native
-  var `class`: js.UndefOr[String] = js.native
-  var name: String = js.native
+trait Matcher extends StObject {
+  
+  var args: js.Array[String | js.Object]
+  
+  var `class`: js.UndefOr[String] = js.undefined
+  
+  var name: String
 }
-
 object Matcher {
+  
   @scala.inline
   def apply(args: js.Array[String | js.Object], name: String): Matcher = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Matcher]
   }
-  @scala.inline
-  implicit class MatcherOps[Self <: Matcher] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setArgsVarargs(value: (String | js.Object)*): Self = this.set("args", js.Array(value :_*))
-    @scala.inline
-    def setArgs(value: js.Array[String | js.Object]): Self = this.set("args", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
-  }
   
+  @scala.inline
+  implicit class MatcherMutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setArgs(value: js.Array[String | js.Object]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setArgsVarargs(value: (String | js.Object)*): Self = StObject.set(x, "args", js.Array(value :_*))
+    
+    @scala.inline
+    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

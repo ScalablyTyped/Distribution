@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceInput extends StObject {
   
   /**
     * An identifier returned from the previous ListTagsForResource call. It can be used to return the next set of applications in the list.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.codedeployMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.codedeployMod.NextToken] = js.undefined
   
   /**
     *  The ARN of a CodeDeploy resource. ListTagsForResource returns all the tags associated with the resource that is identified by the ResourceArn. 
     */
-  var ResourceArn: Arn = js.native
+  var ResourceArn: Arn
 }
 object ListTagsForResourceInput {
   

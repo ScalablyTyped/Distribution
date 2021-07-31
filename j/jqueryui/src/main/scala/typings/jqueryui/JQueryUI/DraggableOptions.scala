@@ -4,69 +4,69 @@ import typings.jqueryui.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DraggableOptions extends DraggableEvents {
+trait DraggableOptions
+  extends StObject
+     with DraggableEvents {
   
-  var addClasses: js.UndefOr[Boolean] = js.native
+  var addClasses: js.UndefOr[Boolean] = js.undefined
   
-  var appendTo: js.UndefOr[js.Any] = js.native
+  var appendTo: js.UndefOr[js.Any] = js.undefined
   
-  var axis: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.undefined
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var classes: js.UndefOr[DraggableClasses] = js.native
+  var classes: js.UndefOr[DraggableClasses] = js.undefined
   
-  var connectToSortable: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.native
+  var connectToSortable: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.undefined
   
-  var containment: js.UndefOr[js.Any] = js.native
+  var containment: js.UndefOr[js.Any] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var cursorAt: js.UndefOr[js.Any] = js.native
+  var cursorAt: js.UndefOr[js.Any] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var grid: js.UndefOr[js.Array[Double]] = js.native
+  var grid: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var handle: js.UndefOr[js.Any] = js.native
+  var handle: js.UndefOr[js.Any] = js.undefined
   
-  var helper: js.UndefOr[js.Any] = js.native
+  var helper: js.UndefOr[js.Any] = js.undefined
   
-  var iframeFix: js.UndefOr[js.Any] = js.native
+  var iframeFix: js.UndefOr[js.Any] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var refreshPositions: js.UndefOr[Boolean] = js.native
+  var refreshPositions: js.UndefOr[Boolean] = js.undefined
   
-  var revert: js.UndefOr[js.Any] = js.native
+  var revert: js.UndefOr[js.Any] = js.undefined
   
-  var revertDuration: js.UndefOr[Double] = js.native
+  var revertDuration: js.UndefOr[Double] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var scroll: js.UndefOr[Boolean] = js.native
+  var scroll: js.UndefOr[Boolean] = js.undefined
   
-  var scrollSensitivity: js.UndefOr[Double] = js.native
+  var scrollSensitivity: js.UndefOr[Double] = js.undefined
   
-  var scrollSpeed: js.UndefOr[Double] = js.native
+  var scrollSpeed: js.UndefOr[Double] = js.undefined
   
-  var snap: js.UndefOr[js.Any] = js.native
+  var snap: js.UndefOr[js.Any] = js.undefined
   
-  var snapMode: js.UndefOr[String] = js.native
+  var snapMode: js.UndefOr[String] = js.undefined
   
-  var snapTolerance: js.UndefOr[Double] = js.native
+  var snapTolerance: js.UndefOr[Double] = js.undefined
   
-  var stack: js.UndefOr[String] = js.native
+  var stack: js.UndefOr[String] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object DraggableOptions {
   

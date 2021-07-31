@@ -2,7 +2,6 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -15,7 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`inline-list-item`
   - typings.csstype.csstypeStrings.`inline-table`
 */
-trait DisplayLegacy extends _DisplayProperty
+trait DisplayLegacy
+  extends StObject
+     with _DisplayProperty
 object DisplayLegacy {
   
   @scala.inline

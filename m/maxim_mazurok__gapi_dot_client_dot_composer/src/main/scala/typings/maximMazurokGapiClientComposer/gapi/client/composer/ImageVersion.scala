@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientComposer.gapi.client.composer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageVersion extends StObject {
   
   /** The string identifier of the ImageVersion, in the form: "composer-x.y.z-airflow-a.b(.c)" */
-  var imageVersionId: js.UndefOr[String] = js.native
+  var imageVersionId: js.UndefOr[String] = js.undefined
   
   /** Whether this is the default ImageVersion used by Composer during environment creation if no input ImageVersion is specified. */
-  var isDefault: js.UndefOr[Boolean] = js.native
+  var isDefault: js.UndefOr[Boolean] = js.undefined
   
   /** supported python versions */
-  var supportedPythonVersions: js.UndefOr[js.Array[String]] = js.native
+  var supportedPythonVersions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ImageVersion {
   

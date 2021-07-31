@@ -2,24 +2,22 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a new calendar item.
   */
-@js.native
 trait INewCalendar extends StObject {
   
   /**
     * Description of the calendar.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the calendar.
     */
-  var name: String = js.native
+  var name: String
 }
 object INewCalendar {
   

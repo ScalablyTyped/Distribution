@@ -4,19 +4,19 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.kendoUi.kendo.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObservableArray
-  extends Observable
+  extends StObject
+     with Observable
      with /* index */ NumberDictionary[js.Any] {
   
   def empty(): Unit = js.native
   
   def every(callback: js.Function3[/* item */ js.Object, /* index */ Double, /* source */ this.type, Boolean]): Boolean = js.native
   
-  def filter(callback: js.Function3[/* item */ js.Object, /* index */ Double, /* source */ this.type, Boolean]): js.Array[_] = js.native
+  def filter(callback: js.Function3[/* item */ js.Object, /* index */ Double, /* source */ this.type, Boolean]): js.Array[js.Any] = js.native
   
   def find(callback: js.Function3[/* item */ js.Object, /* index */ Double, /* source */ this.type, Boolean]): js.Any = js.native
   
@@ -24,13 +24,13 @@ trait ObservableArray
   
   def indexOf(item: js.Any): Double = js.native
   
-  def init(array: js.Array[_]): Unit = js.native
+  def init(array: js.Array[js.Any]): Unit = js.native
   
   def join(separator: String): String = js.native
   
   var length: Double = js.native
   
-  def map(callback: js.Function3[/* item */ js.Object, /* index */ Double, /* source */ this.type, _]): js.Array[_] = js.native
+  def map(callback: js.Function3[/* item */ js.Object, /* index */ Double, /* source */ this.type, js.Any]): js.Array[js.Any] = js.native
   
   def parent(): ObservableObject = js.native
   
@@ -42,18 +42,18 @@ trait ObservableArray
   
   def shift(): js.Any = js.native
   
-  def slice(begin: Double): js.Array[_] = js.native
-  def slice(begin: Double, end: Double): js.Array[_] = js.native
+  def slice(begin: Double): js.Array[js.Any] = js.native
+  def slice(begin: Double, end: Double): js.Array[js.Any] = js.native
   
   def some(callback: js.Function3[/* item */ js.Object, /* index */ Double, /* source */ this.type, Boolean]): Boolean = js.native
   
-  def sort(): js.Array[_] = js.native
-  def sort(compareFn: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): js.Array[_] = js.native
+  def sort(): js.Array[js.Any] = js.native
+  def sort(compareFn: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): js.Array[js.Any] = js.native
   
-  def splice(start: Double): js.Array[_] = js.native
-  def splice(start: Double, deleteCount: Double, items: js.Any*): js.Array[_] = js.native
+  def splice(start: Double): js.Array[js.Any] = js.native
+  def splice(start: Double, deleteCount: Double, items: js.Any*): js.Array[js.Any] = js.native
   
-  def toJSON(): js.Array[_] = js.native
+  def toJSON(): js.Array[js.Any] = js.native
   
   def unshift(items: js.Any*): Double = js.native
   

@@ -2,32 +2,30 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationSession extends StObject {
   
   /**
     * The access token.
     */
-  val accessToken: String = js.native
+  val accessToken: String
   
   /**
     * The account associated with the session.
     */
-  val account: AuthenticationSessionAccountInformation = js.native
+  val account: AuthenticationSessionAccountInformation
   
   /**
     * The identifier of the authentication session.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * The permissions granted by the session's access token. Available scopes
     * are defined by the [AuthenticationProvider](#AuthenticationProvider).
     */
-  val scopes: js.Array[String] = js.native
+  val scopes: js.Array[String]
 }
 object AuthenticationSession {
   

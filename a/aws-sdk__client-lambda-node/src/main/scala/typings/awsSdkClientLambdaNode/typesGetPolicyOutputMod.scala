@@ -4,29 +4,29 @@ import typings.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetPolicyOutputMod {
   
-  @js.native
-  trait GetPolicyOutput extends OutputTypesUnion {
+  trait GetPolicyOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The resource policy associated with the specified function. The response returns the same as a string using a backslash ("\") as an escape character in the JSON.</p>
       */
-    var Policy: js.UndefOr[String] = js.native
+    var Policy: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Represents the latest updated revision of the function or alias.</p>
       */
-    var RevisionId: js.UndefOr[String] = js.native
+    var RevisionId: js.UndefOr[String] = js.undefined
   }
   object GetPolicyOutput {
     

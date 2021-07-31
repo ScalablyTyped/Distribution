@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The type of param can be either "purpose" or "pref". */

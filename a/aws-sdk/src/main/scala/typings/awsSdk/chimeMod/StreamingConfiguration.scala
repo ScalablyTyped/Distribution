@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamingConfiguration extends StObject {
   
   /**
     * The retention period, in hours, for the Amazon Kinesis data.
     */
-  var DataRetentionInHours: typings.awsSdk.chimeMod.DataRetentionInHours = js.native
+  var DataRetentionInHours: typings.awsSdk.chimeMod.DataRetentionInHours
   
   /**
     * When true, media streaming to Amazon Kinesis is turned off.
     */
-  var Disabled: js.UndefOr[Boolean] = js.native
+  var Disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The streaming notification targets.
     */
-  var StreamingNotificationTargets: js.UndefOr[StreamingNotificationTargetList] = js.native
+  var StreamingNotificationTargets: js.UndefOr[StreamingNotificationTargetList] = js.undefined
 }
 object StreamingConfiguration {
   

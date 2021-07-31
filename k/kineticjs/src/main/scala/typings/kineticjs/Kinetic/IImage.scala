@@ -2,17 +2,18 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IImage extends IShape {
+trait IImage
+  extends StObject
+     with IShape {
   
   def applyFilter(config: js.Any): js.Any = js.native
   
   def clearImageBuffer(): js.Any = js.native
   
-  def createImageBuffer(callback: js.Function0[_]): js.Any = js.native
+  def createImageBuffer(callback: js.Function0[js.Any]): js.Any = js.native
   
   def getCrop(): js.Any = js.native
   

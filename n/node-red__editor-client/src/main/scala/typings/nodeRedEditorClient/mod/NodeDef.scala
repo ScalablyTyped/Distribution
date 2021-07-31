@@ -11,71 +11,69 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.node_label_italic
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Node Definition
   * Read more: https://nodered.org/docs/creating-nodes/node-html#node-definition
   */
-@js.native
 trait NodeDef[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */] extends StObject {
   
   /**
     * The alignment of the icon and label.
     * Read more: https://nodered.org/docs/creating-nodes/appearance#alignment
     */
-  var align: js.UndefOr[left | right] = js.native
+  var align: js.UndefOr[left | right] = js.undefined
   
   /**
     * Adds a button to the edge of the node.
     * Read more: https://nodered.org/docs/creating-nodes/appearance#buttons
     */
-  var button: js.UndefOr[Enabled[TInstProps, TProps]] = js.native
+  var button: js.UndefOr[Enabled[TInstProps, TProps]] = js.undefined
   
   /** The palette category the node appears in. */
-  var category: config | String = js.native
+  var category: config | String
   
   /**
     * The background colour to use.
     * Read more: https://nodered.org/docs/creating-nodes/appearance#background-colour
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * The credential properties for the node.
     * Read more: https://nodered.org/docs/creating-nodes/credentials
     */
-  var credentials: js.UndefOr[NodeCredentials[TCreds]] = js.native
+  var credentials: js.UndefOr[NodeCredentials[TCreds]] = js.undefined
   
   /**
     * The editable properties for the node.
     * Read more: https://nodered.org/docs/creating-nodes/properties
     */
-  var defaults: NodePropertiesDef[TProps, TInstProps] = js.native
+  var defaults: NodePropertiesDef[TProps, TInstProps]
   
   /**
     * The icon to use.
     * Read more: https://nodered.org/docs/creating-nodes/appearance#icon
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * Optional label to add on hover to the input port of a node.
     * Read more: https://nodered.org/docs/creating-nodes/appearance#port-labels
     */
-  var inputLabels: js.UndefOr[String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])] = js.native
+  var inputLabels: js.UndefOr[String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])] = js.undefined
   
   /**
     * How many inputs the node has, either 0 or 1.
     */
-  var inputs: js.UndefOr[`0` | `1`] = js.native
+  var inputs: js.UndefOr[`0` | `1`] = js.undefined
   
   /**
     * The label to use in the workspace.
     * Read more: https://nodered.org/docs/creating-nodes/appearance#node-label
     */
-  var label: js.UndefOr[String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])] = js.native
+  var label: js.UndefOr[String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])] = js.undefined
   
   /**
     * The style to apply to the label.
@@ -83,49 +81,49 @@ trait NodeDef[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */
     */
   var labelStyle: js.UndefOr[
     node_label | node_label_italic | String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], node_label | node_label_italic | String])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Called when the edit dialog is cancelled.
     * Read more: https://nodered.org/docs/creating-nodes/properties#custom-edit-behaviour
     */
-  var oneditcancel: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.native
+  var oneditcancel: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.undefined
   
   /**
     * Called when the delete button in a configuration node’s edit dialog is pressed.
     * Read more: https://nodered.org/docs/creating-nodes/properties#custom-edit-behaviour
     */
-  var oneditdelete: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.native
+  var oneditdelete: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.undefined
   
   /**
     * Called when the edit dialog is being built.
     * Read more: https://nodered.org/docs/creating-nodes/properties#custom-edit-behaviour
     */
-  var oneditprepare: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.native
+  var oneditprepare: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.undefined
   
   /**
     * Called when the edit dialog is resized.
     * Read more: https://nodered.org/docs/creating-nodes/properties#custom-edit-behaviour
     */
-  var oneditresize: js.UndefOr[js.ThisFunction1[/* this */ NodeInstance[TInstProps], /* size */ Height, Unit]] = js.native
+  var oneditresize: js.UndefOr[js.ThisFunction1[/* this */ NodeInstance[TInstProps], /* size */ Height, Unit]] = js.undefined
   
   /**
     * Called when the edit dialog is okayed.
     * Read more: https://nodered.org/docs/creating-nodes/properties#custom-edit-behaviour
     */
-  var oneditsave: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.native
+  var oneditsave: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.undefined
   
   /**
     * Called when the node type is added to the palette.
     * Read more: https://nodered.org/docs/creating-nodes/properties#custom-edit-behaviour
     */
-  var onpaletteadd: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.native
+  var onpaletteadd: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.undefined
   
   /**
     * Called when the node type is removed from the palette.
     * Read more: https://nodered.org/docs/creating-nodes/properties#custom-edit-behaviour
     */
-  var onpaletteremove: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.native
+  var onpaletteremove: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]] = js.undefined
   
   /**
     * Optional labels to add on hover to the output ports of a node.
@@ -133,18 +131,18 @@ trait NodeDef[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */
     */
   var outputLabels: js.UndefOr[
     String | js.Array[String] | (js.ThisFunction1[/* this */ NodeInstance[TInstProps], /* idx */ Double, js.UndefOr[String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * How many outputs the node has. Can be 0 or more.
     */
-  var outputs: js.UndefOr[Double] = js.native
+  var outputs: js.UndefOr[Double] = js.undefined
   
   /**
     * The label to use in the palette.
     * Read more: https://nodered.org/docs/creating-nodes/appearance#palette-label
     */
-  var paletteLabel: js.UndefOr[String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])] = js.native
+  var paletteLabel: js.UndefOr[String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])] = js.undefined
 }
 object NodeDef {
   
@@ -155,7 +153,7 @@ object NodeDef {
   }
   
   @scala.inline
-  implicit class NodeDefMutableBuilder[Self <: NodeDef[_, _, _], TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */] (val x: Self with (NodeDef[TProps, TCreds, TInstProps])) extends AnyVal {
+  implicit class NodeDefMutableBuilder[Self <: NodeDef[?, ?, ?], TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */] (val x: Self & (NodeDef[TProps, TCreds, TInstProps])) extends AnyVal {
     
     @scala.inline
     def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])

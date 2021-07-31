@@ -8,12 +8,11 @@ import typings.winrt.Windows.Media.MediaProperties.IMediaEncodingProperties
 import typings.winrt.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoDeviceController
-  extends IVideoDeviceController
+  extends StObject
+     with IVideoDeviceController
      with IAdvancedVideoCaptureDeviceController
 object VideoDeviceController {
   

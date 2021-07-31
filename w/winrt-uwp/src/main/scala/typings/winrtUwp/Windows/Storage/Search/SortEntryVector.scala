@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsSortEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the sorting criteria of the query results as a collection of SortEntry objects. */
 @js.native
-trait SortEntryVector extends Array[SortEntry] {
+trait SortEntryVector
+  extends StObject
+     with Array[SortEntry] {
   
   /**
     * Appends a sort entry to the end of the collection.

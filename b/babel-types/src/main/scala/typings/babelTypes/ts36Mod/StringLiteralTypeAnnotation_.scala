@@ -3,24 +3,23 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.StringLiteralTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringLiteralTypeAnnotation_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with FlowTypeAnnotation {
   
   @JSName("type")
-  var type_StringLiteralTypeAnnotation_ : StringLiteralTypeAnnotation = js.native
+  var type_StringLiteralTypeAnnotation_ : StringLiteralTypeAnnotation
 }
 object StringLiteralTypeAnnotation_ {
   
   @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double, `type`: StringLiteralTypeAnnotation): StringLiteralTypeAnnotation_ = {
+  def apply(end: Double, loc: SourceLocation, start: Double): StringLiteralTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StringLiteralTypeAnnotation")
     __obj.asInstanceOf[StringLiteralTypeAnnotation_]
   }
   

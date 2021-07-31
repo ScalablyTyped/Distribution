@@ -2,23 +2,21 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApprovalOptions extends StObject {
   
-  var autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped: Boolean = js.native
+  var autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped: Boolean
   
-  var enforceIdentityRevalidation: Boolean = js.native
+  var enforceIdentityRevalidation: Boolean
   
-  var executionOrder: ApprovalExecutionOrder = js.native
+  var executionOrder: ApprovalExecutionOrder
   
-  var releaseCreatorCanBeApprover: Boolean = js.native
+  var releaseCreatorCanBeApprover: Boolean
   
-  var requiredApproverCount: Double = js.native
+  var requiredApproverCount: Double
   
-  var timeoutInMinutes: Double = js.native
+  var timeoutInMinutes: Double
 }
 object ApprovalOptions {
   

@@ -2,29 +2,27 @@ package typings.jqueryAjaxfile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Interval extends StObject {
   
   /**
     * The rate (in milliseconds) at which animations fire.
     */
-  var interval: Double = js.native
+  var interval: Double
   
   /**
     * Globally disable all animations.
     */
-  var off: Boolean = js.native
+  var off: Boolean
   
-  var speeds: Fast = js.native
+  var speeds: Fast
   
-  var step: js.Any = js.native
+  var step: js.Any
   
-  def stop(): Unit = js.native
+  def stop(): Unit
   
-  def tick(): Unit = js.native
+  def tick(): Unit
 }
 object Interval {
   

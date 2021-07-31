@@ -4,13 +4,11 @@ import typings.knockout.mod.MaybeSubscribable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  def update(element: HTMLElement, valueAccessor: js.Function0[MaybeSubscribable[String]]): Unit = js.native
+  def update(element: HTMLElement, valueAccessor: js.Function0[MaybeSubscribable[String]]): Unit
 }
 object `0` {
   

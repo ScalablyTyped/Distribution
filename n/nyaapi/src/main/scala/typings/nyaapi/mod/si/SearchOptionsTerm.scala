@@ -2,14 +2,14 @@ package typings.nyaapi.mod.si
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchOptionsTerm extends SearchOptions {
+trait SearchOptionsTerm
+  extends StObject
+     with SearchOptions {
   
   @JSName("term")
-  var term_SearchOptionsTerm: String = js.native
+  var term_SearchOptionsTerm: String
 }
 object SearchOptionsTerm {
   

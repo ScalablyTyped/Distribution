@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AboveNormal extends StObject {
   
-  var aboveNormal: scala.Double = js.native
+  var aboveNormal: scala.Double
   
-  var belowNormal: scala.Double = js.native
+  var belowNormal: scala.Double
   
-  var high: scala.Double = js.native
+  var high: scala.Double
   
-  var low: scala.Double = js.native
+  var low: scala.Double
   
-  var normal: scala.Double = js.native
+  var normal: scala.Double
 }
 object AboveNormal {
   

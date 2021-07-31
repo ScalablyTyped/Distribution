@@ -2,17 +2,15 @@ package typings.nodeRedRuntime.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommsConnection extends StObject {
   
-  def send(): Unit = js.native
+  def send(): Unit
   
-  var session: String = js.native
+  var session: String
   
-  var user: js.Object = js.native
+  var user: js.Object
 }
 object CommsConnection {
   

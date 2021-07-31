@@ -3,17 +3,15 @@ package typings.ionic.anon
 import typings.ionic.definitionsMod.ResourcesImageConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Images extends StObject {
   
-  var images: js.Array[ResourcesImageConfig] = js.native
+  var images: js.Array[ResourcesImageConfig]
   
-  var nodeAttributes: js.Array[String] = js.native
+  var nodeAttributes: js.Array[String]
   
-  var nodeName: String = js.native
+  var nodeName: String
 }
 object Images {
   

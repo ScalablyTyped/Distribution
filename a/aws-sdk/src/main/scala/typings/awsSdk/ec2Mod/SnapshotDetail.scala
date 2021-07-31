@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotDetail extends StObject {
   
   /**
     * A description for the snapshot.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The block device mapping for the snapshot.
     */
-  var DeviceName: js.UndefOr[String] = js.native
+  var DeviceName: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the disk in the snapshot, in GiB.
     */
-  var DiskImageSize: js.UndefOr[Double] = js.native
+  var DiskImageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The format of the disk image from which the snapshot is created.
     */
-  var Format: js.UndefOr[String] = js.native
+  var Format: js.UndefOr[String] = js.undefined
   
   /**
     * The percentage of progress for the task.
     */
-  var Progress: js.UndefOr[String] = js.native
+  var Progress: js.UndefOr[String] = js.undefined
   
   /**
     * The snapshot ID of the disk being imported.
     */
-  var SnapshotId: js.UndefOr[String] = js.native
+  var SnapshotId: js.UndefOr[String] = js.undefined
   
   /**
     * A brief status of the snapshot creation.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * A detailed status message for the snapshot creation.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The URL used to access the disk image.
     */
-  var Url: js.UndefOr[String] = js.native
+  var Url: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon S3 bucket for the disk image.
     */
-  var UserBucket: js.UndefOr[UserBucketDetails] = js.native
+  var UserBucket: js.UndefOr[UserBucketDetails] = js.undefined
 }
 object SnapshotDetail {
   

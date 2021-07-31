@@ -7,18 +7,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FetchResourcesParams extends Object {
+trait FetchResourcesParams
+  extends StObject
+     with Object {
   
   /**
     * The maximum number of results to be included in the result set response.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesParams)
     */
-  var num: js.UndefOr[Double] = js.native
+  var num: js.UndefOr[Double] = js.undefined
   
   /**
     * A field to sort the results.
@@ -27,21 +27,21 @@ trait FetchResourcesParams extends Object {
     */
   var sortField: js.UndefOr[
     created | typings.arcgisJsApi.arcgisJsApiStrings.size | typings.arcgisJsApi.arcgisJsApiStrings.`type`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The order in which to sort the results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesParams)
     */
-  var sortOrder: js.UndefOr[asc_ | desc_] = js.native
+  var sortOrder: js.UndefOr[asc_ | desc_] = js.undefined
   
   /**
     * The index of the first entry in the result set response.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesParams)
     */
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object FetchResourcesParams {
   

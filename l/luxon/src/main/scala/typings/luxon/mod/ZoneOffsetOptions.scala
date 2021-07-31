@@ -4,15 +4,13 @@ import typings.luxon.luxonStrings.long
 import typings.luxon.luxonStrings.short
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoneOffsetOptions extends StObject {
   
-  var format: js.UndefOr[short | long] = js.native
+  var format: js.UndefOr[short | long] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
 }
 object ZoneOffsetOptions {
   

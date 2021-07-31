@@ -3,7 +3,6 @@ package typings.fibjs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 
   */
 @js.native
-trait ClassHeapSnapshot extends ClassObject {
+trait ClassHeapSnapshot
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -45,7 +46,7 @@ trait ClassHeapSnapshot extends ClassObject {
     * @readonly
     * @type NArray
     */
-  var nodes: js.Array[_] = js.native
+  var nodes: js.Array[js.Any] = js.native
   
   /**
     * class prop 

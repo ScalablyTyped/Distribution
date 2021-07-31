@@ -3,7 +3,6 @@ package typings.reactCssCollapse
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,16 +15,15 @@ object mod {
   trait Collapse
     extends Component[Props, js.Object, js.Any]
   
-  @js.native
   trait Props extends StObject {
     
-    var className: js.UndefOr[String | Null] = js.native
+    var className: js.UndefOr[String | Null] = js.undefined
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
-    var onRest: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRest: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var transition: js.UndefOr[String | Null] = js.native
+    var transition: js.UndefOr[String | Null] = js.undefined
   }
   object Props {
     

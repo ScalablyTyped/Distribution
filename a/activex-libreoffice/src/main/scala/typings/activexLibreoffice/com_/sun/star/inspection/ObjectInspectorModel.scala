@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,11 +19,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XObjectInspectorModel.getPropertyOrderIndex
   * @since OOo 2.0.3
   */
-@js.native
-trait ObjectInspectorModel extends XObjectInspectorModel {
+trait ObjectInspectorModel
+  extends StObject
+     with XObjectInspectorModel {
   
   /** creates a default {@link ObjectInspectorModel} , whose one and only handler factory creates a {@link GenericPropertyHandler} . */
-  def createDefault(): Unit = js.native
+  def createDefault(): Unit
   
   /**
     * creates a default {@link ObjectInspectorModel} , using an externally provided sequence of property handler factories.
@@ -32,7 +32,7 @@ trait ObjectInspectorModel extends XObjectInspectorModel {
     * @see XObjectInspectorModel.HandlerFactories
     * @throws com::sun::star::lang::IllegalArgumentException if the given sequence is empty.
     */
-  def createWithHandlerFactories(handlerFactories: SeqEquiv[_]): Unit = js.native
+  def createWithHandlerFactories(handlerFactories: SeqEquiv[js.Any]): Unit
   
   /**
     * creates a default {@link ObjectInspectorModel} , using an externally provided sequence of property handler factories, and describing an {@link
@@ -48,20 +48,20 @@ trait ObjectInspectorModel extends XObjectInspectorModel {
     * @throws com::sun::star::lang::IllegalArgumentException if handlerFactories is empty.
     * @throws com::sun::star::lang::IllegalArgumentException if minHelpTextLines or maxHelpTextLines are negative, or if minHelpTextLines is greater than maxHe
     */
-  def createWithHandlerFactoriesAndHelpSection(handlerFactories: SeqEquiv[_], minHelpTextLines: Double, maxHelpTextLines: Double): Unit = js.native
+  def createWithHandlerFactoriesAndHelpSection(handlerFactories: SeqEquiv[js.Any], minHelpTextLines: Double, maxHelpTextLines: Double): Unit
 }
 object ObjectInspectorModel {
   
   @scala.inline
   def apply(
-    HandlerFactories: SafeArray[_],
+    HandlerFactories: SafeArray[js.Any],
     HasHelpSection: Boolean,
     IsReadOnly: Boolean,
     MaxHelpTextLines: Double,
     MinHelpTextLines: Double,
     createDefault: () => Unit,
-    createWithHandlerFactories: SeqEquiv[_] => Unit,
-    createWithHandlerFactoriesAndHelpSection: (SeqEquiv[_], Double, Double) => Unit,
+    createWithHandlerFactories: SeqEquiv[js.Any] => Unit,
+    createWithHandlerFactoriesAndHelpSection: (SeqEquiv[js.Any], Double, Double) => Unit,
     describeCategories: () => SafeArray[PropertyCategoryDescriptor],
     getPropertyOrderIndex: String => Double
   ): ObjectInspectorModel = {
@@ -76,9 +76,9 @@ object ObjectInspectorModel {
     def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateWithHandlerFactories(value: SeqEquiv[_] => Unit): Self = StObject.set(x, "createWithHandlerFactories", js.Any.fromFunction1(value))
+    def setCreateWithHandlerFactories(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "createWithHandlerFactories", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateWithHandlerFactoriesAndHelpSection(value: (SeqEquiv[_], Double, Double) => Unit): Self = StObject.set(x, "createWithHandlerFactoriesAndHelpSection", js.Any.fromFunction3(value))
+    def setCreateWithHandlerFactoriesAndHelpSection(value: (SeqEquiv[js.Any], Double, Double) => Unit): Self = StObject.set(x, "createWithHandlerFactoriesAndHelpSection", js.Any.fromFunction3(value))
   }
 }

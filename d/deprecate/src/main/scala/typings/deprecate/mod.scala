@@ -3,7 +3,6 @@ package typings.deprecate
 import typings.node.processMod.global.NodeJS.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,9 +12,8 @@ object mod {
     *
     * It will spit out all the messages to the console the first time and only the first time the method is called.
     */
-  @JSImport("deprecate", JSImport.Namespace)
-  @js.native
-  def apply(methodName: String, message: String*): Unit = js.native
+  @scala.inline
+  def apply(methodName: String, message: String*): Unit = (^.asInstanceOf[js.Dynamic].apply(methodName.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("deprecate", JSImport.Namespace)
   @js.native

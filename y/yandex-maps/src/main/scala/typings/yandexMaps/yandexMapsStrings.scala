@@ -7,14 +7,14 @@ import typings.yandexMaps.mod._InteractivityModelKey
 import typings.yandexMaps.mod._OverlayKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yandexMapsStrings {
   
   @js.native
   sealed trait default
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSetKey
   @scala.inline
   def default: default = "default".asInstanceOf[default]
@@ -45,57 +45,79 @@ object yandexMapsStrings {
   def clusterNumbersignballoonTwoColumns: clusterNumbersignballoonTwoColumns = "cluster#balloonTwoColumns".asInstanceOf[clusterNumbersignballoonTwoColumns]
   
   @js.native
-  sealed trait defaultNumbersigncircle extends _OverlayKey
+  sealed trait defaultNumbersigncircle
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def defaultNumbersigncircle: defaultNumbersigncircle = "default#circle".asInstanceOf[defaultNumbersigncircle]
   
   @js.native
-  sealed trait defaultNumbersigngeoObject extends _InteractivityModelKey
+  sealed trait defaultNumbersigngeoObject
+    extends StObject
+       with _InteractivityModelKey
   @scala.inline
   def defaultNumbersigngeoObject: defaultNumbersigngeoObject = "default#geoObject".asInstanceOf[defaultNumbersigngeoObject]
   
   @js.native
-  sealed trait defaultNumbersignlayer extends _InteractivityModelKey
+  sealed trait defaultNumbersignlayer
+    extends StObject
+       with _InteractivityModelKey
   @scala.inline
   def defaultNumbersignlayer: defaultNumbersignlayer = "default#layer".asInstanceOf[defaultNumbersignlayer]
   
   @js.native
-  sealed trait defaultNumbersignopaque extends _InteractivityModelKey
+  sealed trait defaultNumbersignopaque
+    extends StObject
+       with _InteractivityModelKey
   @scala.inline
   def defaultNumbersignopaque: defaultNumbersignopaque = "default#opaque".asInstanceOf[defaultNumbersignopaque]
   
   @js.native
-  sealed trait defaultNumbersignpin extends _OverlayKey
+  sealed trait defaultNumbersignpin
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def defaultNumbersignpin: defaultNumbersignpin = "default#pin".asInstanceOf[defaultNumbersignpin]
   
   @js.native
-  sealed trait defaultNumbersignplacemark extends _OverlayKey
+  sealed trait defaultNumbersignplacemark
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def defaultNumbersignplacemark: defaultNumbersignplacemark = "default#placemark".asInstanceOf[defaultNumbersignplacemark]
   
   @js.native
-  sealed trait defaultNumbersignpolygon extends _OverlayKey
+  sealed trait defaultNumbersignpolygon
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def defaultNumbersignpolygon: defaultNumbersignpolygon = "default#polygon".asInstanceOf[defaultNumbersignpolygon]
   
   @js.native
-  sealed trait defaultNumbersignpolyline extends _OverlayKey
+  sealed trait defaultNumbersignpolyline
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def defaultNumbersignpolyline: defaultNumbersignpolyline = "default#polyline".asInstanceOf[defaultNumbersignpolyline]
   
   @js.native
-  sealed trait defaultNumbersignrectangle extends _OverlayKey
+  sealed trait defaultNumbersignrectangle
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def defaultNumbersignrectangle: defaultNumbersignrectangle = "default#rectangle".asInstanceOf[defaultNumbersignrectangle]
   
   @js.native
-  sealed trait defaultNumbersignsilent extends _InteractivityModelKey
+  sealed trait defaultNumbersignsilent
+    extends StObject
+       with _InteractivityModelKey
   @scala.inline
   def defaultNumbersignsilent: defaultNumbersignsilent = "default#silent".asInstanceOf[defaultNumbersignsilent]
   
   @js.native
-  sealed trait defaultNumbersigntransparent extends _InteractivityModelKey
+  sealed trait defaultNumbersigntransparent
+    extends StObject
+       with _InteractivityModelKey
   @scala.inline
   def defaultNumbersigntransparent: defaultNumbersigntransparent = "default#transparent".asInstanceOf[defaultNumbersigntransparent]
   
@@ -111,14 +133,16 @@ object yandexMapsStrings {
   
   @js.native
   sealed trait fullscreenControl
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSingleKey
   @scala.inline
   def fullscreenControl: fullscreenControl = "fullscreenControl".asInstanceOf[fullscreenControl]
   
   @js.native
   sealed trait geolocationControl
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSingleKey
   @scala.inline
   def geolocationControl: geolocationControl = "geolocationControl".asInstanceOf[geolocationControl]
@@ -129,27 +153,37 @@ object yandexMapsStrings {
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait hotspotNumbersigncircle extends _OverlayKey
+  sealed trait hotspotNumbersigncircle
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def hotspotNumbersigncircle: hotspotNumbersigncircle = "hotspot#circle".asInstanceOf[hotspotNumbersigncircle]
   
   @js.native
-  sealed trait hotspotNumbersignplacemark extends _OverlayKey
+  sealed trait hotspotNumbersignplacemark
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def hotspotNumbersignplacemark: hotspotNumbersignplacemark = "hotspot#placemark".asInstanceOf[hotspotNumbersignplacemark]
   
   @js.native
-  sealed trait hotspotNumbersignpolygon extends _OverlayKey
+  sealed trait hotspotNumbersignpolygon
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def hotspotNumbersignpolygon: hotspotNumbersignpolygon = "hotspot#polygon".asInstanceOf[hotspotNumbersignpolygon]
   
   @js.native
-  sealed trait hotspotNumbersignpolyline extends _OverlayKey
+  sealed trait hotspotNumbersignpolyline
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def hotspotNumbersignpolyline: hotspotNumbersignpolyline = "hotspot#polyline".asInstanceOf[hotspotNumbersignpolyline]
   
   @js.native
-  sealed trait hotspotNumbersignrectangle extends _OverlayKey
+  sealed trait hotspotNumbersignrectangle
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def hotspotNumbersignrectangle: hotspotNumbersignrectangle = "hotspot#rectangle".asInstanceOf[hotspotNumbersignrectangle]
   
@@ -159,22 +193,30 @@ object yandexMapsStrings {
   def house: house = "house".asInstanceOf[house]
   
   @js.native
-  sealed trait htmlNumbersignballoon extends _OverlayKey
+  sealed trait htmlNumbersignballoon
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def htmlNumbersignballoon: htmlNumbersignballoon = "html#balloon".asInstanceOf[htmlNumbersignballoon]
   
   @js.native
-  sealed trait htmlNumbersignhint extends _OverlayKey
+  sealed trait htmlNumbersignhint
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def htmlNumbersignhint: htmlNumbersignhint = "html#hint".asInstanceOf[htmlNumbersignhint]
   
   @js.native
-  sealed trait htmlNumbersignplacemark extends _OverlayKey
+  sealed trait htmlNumbersignplacemark
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def htmlNumbersignplacemark: htmlNumbersignplacemark = "html#placemark".asInstanceOf[htmlNumbersignplacemark]
   
   @js.native
-  sealed trait htmlNumbersignrectangle extends _OverlayKey
+  sealed trait htmlNumbersignrectangle
+    extends StObject
+       with _OverlayKey
   @scala.inline
   def htmlNumbersignrectangle: htmlNumbersignrectangle = "html#rectangle".asInstanceOf[htmlNumbersignrectangle]
   
@@ -200,7 +242,8 @@ object yandexMapsStrings {
   
   @js.native
   sealed trait largeMapDefaultSet
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSetKey
   @scala.inline
   def largeMapDefaultSet: largeMapDefaultSet = "largeMapDefaultSet".asInstanceOf[largeMapDefaultSet]
@@ -237,7 +280,8 @@ object yandexMapsStrings {
   
   @js.native
   sealed trait mediumMapDefaultSet
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSetKey
   @scala.inline
   def mediumMapDefaultSet: mediumMapDefaultSet = "mediumMapDefaultSet".asInstanceOf[mediumMapDefaultSet]
@@ -299,21 +343,24 @@ object yandexMapsStrings {
   
   @js.native
   sealed trait routeEditor
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSingleKey
   @scala.inline
   def routeEditor: routeEditor = "routeEditor".asInstanceOf[routeEditor]
   
   @js.native
   sealed trait rulerControl
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSingleKey
   @scala.inline
   def rulerControl: rulerControl = "rulerControl".asInstanceOf[rulerControl]
   
   @js.native
   sealed trait searchControl
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSingleKey
   @scala.inline
   def searchControl: searchControl = "searchControl".asInstanceOf[searchControl]
@@ -340,7 +387,8 @@ object yandexMapsStrings {
   
   @js.native
   sealed trait smallMapDefaultSet
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSetKey
   @scala.inline
   def smallMapDefaultSet: smallMapDefaultSet = "smallMapDefaultSet".asInstanceOf[smallMapDefaultSet]
@@ -372,7 +420,8 @@ object yandexMapsStrings {
   
   @js.native
   sealed trait trafficControl
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSingleKey
   @scala.inline
   def trafficControl: trafficControl = "trafficControl".asInstanceOf[trafficControl]
@@ -384,7 +433,8 @@ object yandexMapsStrings {
   
   @js.native
   sealed trait typeSelector
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSingleKey
   @scala.inline
   def typeSelector: typeSelector = "typeSelector".asInstanceOf[typeSelector]
@@ -426,7 +476,8 @@ object yandexMapsStrings {
   
   @js.native
   sealed trait zoomControl
-    extends ControlKey
+    extends StObject
+       with ControlKey
        with ControlSingleKey
   @scala.inline
   def zoomControl: zoomControl = "zoomControl".asInstanceOf[zoomControl]

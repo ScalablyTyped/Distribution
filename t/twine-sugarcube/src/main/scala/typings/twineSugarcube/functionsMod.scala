@@ -6,7 +6,6 @@ import typings.twineSugarcube.userdataMod.SugarCubeStoryVariables
 import typings.twineSugarcube.userdataMod.SugarCubeTemporaryVariables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object functionsMod {
@@ -36,9 +35,8 @@ object functionsMod {
       * $foo.id -> Returns: 1
       * $bar.id -> Returns: 5
       */
-    @JSGlobal("clone")
-    @js.native
-    def clone_[T](original: T): T = js.native
+    @scala.inline
+    def clone_[T](original: T): T = js.Dynamic.global.applyDynamic("clone")(original.asInstanceOf[js.Any]).asInstanceOf[T]
     
     /**
       * Returns a random value from its given arguments.
@@ -61,18 +59,16 @@ object functionsMod {
       * // Using multiple arrays; given: $letters = ["A", "B"] & $numerals = ["1", "2"]
       * either($letters, $numerals) -> Returns a random value from the whole list (i.e. "A", "B", "1", "2")
       */
-    @JSGlobal("either")
-    @js.native
-    def either[T](list: T*): T = js.native
+    @scala.inline
+    def either[T](list: T*): T = js.Dynamic.global.applyDynamic("either")(list.asInstanceOf[js.Any]).asInstanceOf[T]
     
     /**
       * Removes the specified key, and its associated value, from the story metadata store.
       * @param key The key to remove.
       * @since 2.29.0
       */
-    @JSGlobal("forget")
-    @js.native
-    def forget(key: String): Unit = js.native
+    @scala.inline
+    def forget(key: String): Unit = js.Dynamic.global.applyDynamic("forget")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Returns whether the passage with the given title occurred within the story history. If multiple passage titles are given,
@@ -85,9 +81,8 @@ object functionsMod {
       * <<if hasVisited("Bar", "Café")>>…has been to both the Bar and Café<</if>>
       * <<if not hasVisited("Bar", "Café")>>…has never been to either the Bar, Café, or both…<</if>>
       */
-    @JSGlobal("hasVisited")
-    @js.native
-    def hasVisited(passageNames: String*): Boolean = js.native
+    @scala.inline
+    def hasVisited(passageNames: String*): Boolean = js.Dynamic.global.applyDynamic("hasVisited")(passageNames.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Load and integrate external JavaScript scripts.
@@ -158,9 +153,8 @@ object functionsMod {
       *     console.log(err);
       * });
       */
-    @JSGlobal("importScripts")
-    @js.native
-    def importScripts(urls: String*): js.Promise[Unit] = js.native
+    @scala.inline
+    def importScripts(urls: String*): js.Promise[Unit] = js.Dynamic.global.applyDynamic("importScripts")(urls.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Load and integrate external CSS stylesheets.
@@ -216,9 +210,8 @@ object functionsMod {
       *      console.log(err);
       * });
       */
-    @JSGlobal("importStyles")
-    @js.native
-    def importStyles(urls: String*): js.Promise[Unit] = js.native
+    @scala.inline
+    def importStyles(urls: String*): js.Promise[Unit] = js.Dynamic.global.applyDynamic("importStyles")(urls.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Returns the number of turns that have passed since the last instance of the passage with the given title occurred within
@@ -233,9 +226,8 @@ object functionsMod {
       * <<if lastVisited("Bar", "Café") is -1>>…has never been to the Bar, Café, or both…<</if>>
       * <<if lastVisited("Bar", "Café") is 2>>…has been to both the Bar and Café, most recently two turns ago…<</if>>
       */
-    @JSGlobal("lastVisited")
-    @js.native
-    def lastVisited(passageNames: String*): Double = js.native
+    @scala.inline
+    def lastVisited(passageNames: String*): Double = js.Dynamic.global.applyDynamic("lastVisited")(passageNames.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Sets the specified key and value within the story metadata store, which causes them to persist over story and browser
@@ -259,9 +251,8 @@ object functionsMod {
       * // Sets 'ngplus', with the given value, in the metadata store.
       * <<run memorize('ngplus', true)>>
       */
-    @JSGlobal("memorize")
-    @js.native
-    def memorize(key: String, value: js.Any): Unit = js.native
+    @scala.inline
+    def memorize(key: String, value: js.Any): Unit = (js.Dynamic.global.applyDynamic("memorize")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns the title of the active (present) passage.
@@ -269,9 +260,8 @@ object functionsMod {
       * @example
       * <<if passage() is "Café">>…the current passage is the Café passage…<</if>>
       */
-    @JSGlobal("passage")
-    @js.native
-    def passage(): String = js.native
+    @scala.inline
+    def passage(): String = js.Dynamic.global.applyDynamic("passage")().asInstanceOf[String]
     
     /**
       * Returns the title of the most recent previous passage whose title does not match that of the active passage or an empty
@@ -283,9 +273,8 @@ object functionsMod {
       * // Commonly used as part of a link to return to the most recent non-active passage
       * [[Return|previous()]]
       */
-    @JSGlobal("previous")
-    @js.native
-    def previous(): String = js.native
+    @scala.inline
+    def previous(): String = js.Dynamic.global.applyDynamic("previous")().asInstanceOf[String]
     
     /**
       * Returns a pseudo-random whole number (integer) within the range of the given bounds (inclusive)—i.e. [min, max].
@@ -299,12 +288,10 @@ object functionsMod {
       * random(5) // Returns a number in the range 0–5
       * random(1, 6) // Returns a number in the range 1–6
       */
-    @JSGlobal("random")
-    @js.native
-    def random(minOrMax: Double): Double = js.native
-    @JSGlobal("random")
-    @js.native
-    def random(minOrMax: Double, max: Double): Double = js.native
+    @scala.inline
+    def random(minOrMax: Double): Double = js.Dynamic.global.applyDynamic("random")(minOrMax.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def random(minOrMax: Double, max: Double): Double = (js.Dynamic.global.applyDynamic("random")(minOrMax.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns a pseudo-random real number (floating-point) within the range of the given bounds (inclusive for the minimum,
@@ -319,12 +306,10 @@ object functionsMod {
       * randomFloat(5.0) // Returns a number in the range 0.0–4.9999999…
       * randomFloat(1.0, 6.0) // Returns a number in the range 1.0–5.9999999…
       */
-    @JSGlobal("randomFloat")
-    @js.native
-    def randomFloat(minOrMax: Double): Double = js.native
-    @JSGlobal("randomFloat")
-    @js.native
-    def randomFloat(minOrMax: Double, max: Double): Double = js.native
+    @scala.inline
+    def randomFloat(minOrMax: Double): Double = js.Dynamic.global.applyDynamic("randomFloat")(minOrMax.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def randomFloat(minOrMax: Double, max: Double): Double = (js.Dynamic.global.applyDynamic("randomFloat")(minOrMax.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the value associated with the specified key from the story metadata store or, if no such key exists, the specified
@@ -339,12 +324,10 @@ object functionsMod {
       * // Set setup.ngplus to the 'ngplus' metadata, with no default.
       * <<set setup.ngplus to recall('ngplus')>>
       */
-    @JSGlobal("recall")
-    @js.native
-    def recall(key: String): js.Any = js.native
-    @JSGlobal("recall")
-    @js.native
-    def recall(key: String, defaultValue: js.Any): js.Any = js.native
+    @scala.inline
+    def recall(key: String): js.Any = js.Dynamic.global.applyDynamic("recall")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def recall(key: String, defaultValue: js.Any): js.Any = (js.Dynamic.global.applyDynamic("recall")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Renders the selected passage into the target element, replacing any existing content, and returns the element. If no passages are found and default text is specified, it will be used instead.
@@ -364,30 +347,22 @@ object functionsMod {
       * // Using an element; given a reference to an existing element: myElement
       * setPageElement(myElement, "MyPassage");
       */
-    @JSGlobal("setPageElement")
-    @js.native
-    def setPageElement(idOrElement: String, passages: String): HTMLElement | Null = js.native
-    @JSGlobal("setPageElement")
-    @js.native
-    def setPageElement(idOrElement: String, passages: String, defaultText: String): HTMLElement | Null = js.native
-    @JSGlobal("setPageElement")
-    @js.native
-    def setPageElement(idOrElement: String, passages: Array[String]): HTMLElement | Null = js.native
-    @JSGlobal("setPageElement")
-    @js.native
-    def setPageElement(idOrElement: String, passages: Array[String], defaultText: String): HTMLElement | Null = js.native
-    @JSGlobal("setPageElement")
-    @js.native
-    def setPageElement(idOrElement: HTMLElement, passages: String): HTMLElement | Null = js.native
-    @JSGlobal("setPageElement")
-    @js.native
-    def setPageElement(idOrElement: HTMLElement, passages: String, defaultText: String): HTMLElement | Null = js.native
-    @JSGlobal("setPageElement")
-    @js.native
-    def setPageElement(idOrElement: HTMLElement, passages: Array[String]): HTMLElement | Null = js.native
-    @JSGlobal("setPageElement")
-    @js.native
-    def setPageElement(idOrElement: HTMLElement, passages: Array[String], defaultText: String): HTMLElement | Null = js.native
+    @scala.inline
+    def setPageElement(idOrElement: String, passages: String): HTMLElement | Null = (js.Dynamic.global.applyDynamic("setPageElement")(idOrElement.asInstanceOf[js.Any], passages.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+    @scala.inline
+    def setPageElement(idOrElement: String, passages: String, defaultText: String): HTMLElement | Null = (js.Dynamic.global.applyDynamic("setPageElement")(idOrElement.asInstanceOf[js.Any], passages.asInstanceOf[js.Any], defaultText.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+    @scala.inline
+    def setPageElement(idOrElement: String, passages: Array[String]): HTMLElement | Null = (js.Dynamic.global.applyDynamic("setPageElement")(idOrElement.asInstanceOf[js.Any], passages.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+    @scala.inline
+    def setPageElement(idOrElement: String, passages: Array[String], defaultText: String): HTMLElement | Null = (js.Dynamic.global.applyDynamic("setPageElement")(idOrElement.asInstanceOf[js.Any], passages.asInstanceOf[js.Any], defaultText.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+    @scala.inline
+    def setPageElement(idOrElement: HTMLElement, passages: String): HTMLElement | Null = (js.Dynamic.global.applyDynamic("setPageElement")(idOrElement.asInstanceOf[js.Any], passages.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+    @scala.inline
+    def setPageElement(idOrElement: HTMLElement, passages: String, defaultText: String): HTMLElement | Null = (js.Dynamic.global.applyDynamic("setPageElement")(idOrElement.asInstanceOf[js.Any], passages.asInstanceOf[js.Any], defaultText.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+    @scala.inline
+    def setPageElement(idOrElement: HTMLElement, passages: Array[String]): HTMLElement | Null = (js.Dynamic.global.applyDynamic("setPageElement")(idOrElement.asInstanceOf[js.Any], passages.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+    @scala.inline
+    def setPageElement(idOrElement: HTMLElement, passages: Array[String], defaultText: String): HTMLElement | Null = (js.Dynamic.global.applyDynamic("setPageElement")(idOrElement.asInstanceOf[js.Any], passages.asInstanceOf[js.Any], defaultText.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
     
     /**
       * Returns a new array consisting of all of the tags of the given passages.
@@ -398,9 +373,8 @@ object functionsMod {
       * <<if tags().includes("forest")>>…the current passage is part of the forest…<</if>>
       * <<if tags("Lonely Glade").includes("forest")>>…the Lonely Glade passage is part of the forest…<</if>>
       */
-    @JSGlobal("tags")
-    @js.native
-    def tags(passages: String*): Array[String] = js.native
+    @scala.inline
+    def tags(passages: String*): Array[String] = js.Dynamic.global.applyDynamic("tags")(passages.asInstanceOf[js.Any]).asInstanceOf[Array[String]]
     
     /**
       * Returns a reference to the current temporary variables store (equivalent to: State.temporary). This is only really useful
@@ -412,9 +386,8 @@ object functionsMod {
       *   // Do something...
       * }
       */
-    @JSGlobal("temporary")
-    @js.native
-    def temporary(): SugarCubeTemporaryVariables = js.native
+    @scala.inline
+    def temporary(): SugarCubeTemporaryVariables = js.Dynamic.global.applyDynamic("temporary")().asInstanceOf[SugarCubeTemporaryVariables]
     
     /**
       * Returns the number of milliseconds which have passed since the current passage was rendered to the page.
@@ -433,9 +406,8 @@ object functionsMod {
       * <</link>> \
       * or [[stand your ground|Eaten by a grue]]?
       */
-    @JSGlobal("time")
-    @js.native
-    def time(): Double = js.native
+    @scala.inline
+    def time(): Double = js.Dynamic.global.applyDynamic("time")().asInstanceOf[Double]
     
     /**
       * Returns the number of passages that the player has visited.
@@ -443,9 +415,8 @@ object functionsMod {
       * @example
       * << print "This is turn #" + turns() >>
       */
-    @JSGlobal("turns")
-    @js.native
-    def turns(): Double = js.native
+    @scala.inline
+    def turns(): Double = js.Dynamic.global.applyDynamic("turns")().asInstanceOf[Double]
     
     /**
       * Returns a reference to the active(present) story variables store(equivalent to: State.variables).This is only really
@@ -457,9 +428,8 @@ object functionsMod {
       *    //Do something
       * }
       */
-    @JSGlobal("variables")
-    @js.native
-    def variables(): SugarCubeStoryVariables = js.native
+    @scala.inline
+    def variables(): SugarCubeStoryVariables = js.Dynamic.global.applyDynamic("variables")().asInstanceOf[SugarCubeStoryVariables]
     
     /**
       * Returns the number of times that the passage with the given title occurred within the story history. If multiple passage
@@ -473,9 +443,8 @@ object functionsMod {
       * <<if visited("Café") is 1>>…has been to the Café exactly once…<</if>>
       * <<if visited("Bar", "Café") is 4>>…has been to both the Bar and Café at least four times…<</if>>
       */
-    @JSGlobal("visited")
-    @js.native
-    def visited(passages: String*): Double = js.native
+    @scala.inline
+    def visited(passages: String*): Double = js.Dynamic.global.applyDynamic("visited")(passages.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the number of passages within the story history which are tagged with all of the given tags.
@@ -486,8 +455,7 @@ object functionsMod {
       * <<if visitedTags("forest", "haunted") is 1>>…has been to the haunted part of the forest exactly once…<</if>>
       * <<if visitedTags("forest", "burned") is 3>>…has been to the burned part of the forest three times…<</if>>
       */
-    @JSGlobal("visitedTags")
-    @js.native
-    def visitedTags(tags: String*): Double = js.native
+    @scala.inline
+    def visitedTags(tags: String*): Double = js.Dynamic.global.applyDynamic("visitedTags")(tags.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
 }

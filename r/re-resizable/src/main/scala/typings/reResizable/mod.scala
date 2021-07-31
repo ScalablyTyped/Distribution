@@ -29,7 +29,6 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -45,9 +44,9 @@ object mod {
     def bindEvents(): Unit = js.native
     
     def calculateNewMaxFromBoundary(): MaxHeight = js.native
-    def calculateNewMaxFromBoundary(maxWidth: js.UndefOr[scala.Nothing], maxHeight: Double): MaxHeight = js.native
     def calculateNewMaxFromBoundary(maxWidth: Double): MaxHeight = js.native
     def calculateNewMaxFromBoundary(maxWidth: Double, maxHeight: Double): MaxHeight = js.native
+    def calculateNewMaxFromBoundary(maxWidth: Unit, maxHeight: Double): MaxHeight = js.native
     
     def calculateNewSizeFromAspectRatio(newWidth: Double, newHeight: Double, max: HeightWidth, min: HeightWidth): NewHeight = js.native
     
@@ -134,24 +133,23 @@ object mod {
     def defaultProps_=(x: As): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Enable extends StObject {
     
-    var bottom: js.UndefOr[Boolean] = js.native
+    var bottom: js.UndefOr[Boolean] = js.undefined
     
-    var bottomLeft: js.UndefOr[Boolean] = js.native
+    var bottomLeft: js.UndefOr[Boolean] = js.undefined
     
-    var bottomRight: js.UndefOr[Boolean] = js.native
+    var bottomRight: js.UndefOr[Boolean] = js.undefined
     
-    var left: js.UndefOr[Boolean] = js.native
+    var left: js.UndefOr[Boolean] = js.undefined
     
-    var right: js.UndefOr[Boolean] = js.native
+    var right: js.UndefOr[Boolean] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
     
-    var topLeft: js.UndefOr[Boolean] = js.native
+    var topLeft: js.UndefOr[Boolean] = js.undefined
     
-    var topRight: js.UndefOr[Boolean] = js.native
+    var topRight: js.UndefOr[Boolean] = js.undefined
   }
   object Enable {
     
@@ -214,24 +212,23 @@ object mod {
     }
   }
   
-  @js.native
   trait HandleClassName extends StObject {
     
-    var bottom: js.UndefOr[String] = js.native
+    var bottom: js.UndefOr[String] = js.undefined
     
-    var bottomLeft: js.UndefOr[String] = js.native
+    var bottomLeft: js.UndefOr[String] = js.undefined
     
-    var bottomRight: js.UndefOr[String] = js.native
+    var bottomRight: js.UndefOr[String] = js.undefined
     
-    var left: js.UndefOr[String] = js.native
+    var left: js.UndefOr[String] = js.undefined
     
-    var right: js.UndefOr[String] = js.native
+    var right: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[String] = js.native
+    var top: js.UndefOr[String] = js.undefined
     
-    var topLeft: js.UndefOr[String] = js.native
+    var topLeft: js.UndefOr[String] = js.undefined
     
-    var topRight: js.UndefOr[String] = js.native
+    var topRight: js.UndefOr[String] = js.undefined
   }
   object HandleClassName {
     
@@ -294,24 +291,23 @@ object mod {
     }
   }
   
-  @js.native
   trait HandleComponent extends StObject {
     
-    var bottom: js.UndefOr[ReactElement] = js.native
+    var bottom: js.UndefOr[ReactElement] = js.undefined
     
-    var bottomLeft: js.UndefOr[ReactElement] = js.native
+    var bottomLeft: js.UndefOr[ReactElement] = js.undefined
     
-    var bottomRight: js.UndefOr[ReactElement] = js.native
+    var bottomRight: js.UndefOr[ReactElement] = js.undefined
     
-    var left: js.UndefOr[ReactElement] = js.native
+    var left: js.UndefOr[ReactElement] = js.undefined
     
-    var right: js.UndefOr[ReactElement] = js.native
+    var right: js.UndefOr[ReactElement] = js.undefined
     
-    var top: js.UndefOr[ReactElement] = js.native
+    var top: js.UndefOr[ReactElement] = js.undefined
     
-    var topLeft: js.UndefOr[ReactElement] = js.native
+    var topLeft: js.UndefOr[ReactElement] = js.undefined
     
-    var topRight: js.UndefOr[ReactElement] = js.native
+    var topRight: js.UndefOr[ReactElement] = js.undefined
   }
   object HandleComponent {
     
@@ -374,24 +370,23 @@ object mod {
     }
   }
   
-  @js.native
   trait HandleStyles extends StObject {
     
-    var bottom: js.UndefOr[CSSProperties] = js.native
+    var bottom: js.UndefOr[CSSProperties] = js.undefined
     
-    var bottomLeft: js.UndefOr[CSSProperties] = js.native
+    var bottomLeft: js.UndefOr[CSSProperties] = js.undefined
     
-    var bottomRight: js.UndefOr[CSSProperties] = js.native
+    var bottomRight: js.UndefOr[CSSProperties] = js.undefined
     
-    var left: js.UndefOr[CSSProperties] = js.native
+    var left: js.UndefOr[CSSProperties] = js.undefined
     
-    var right: js.UndefOr[CSSProperties] = js.native
+    var right: js.UndefOr[CSSProperties] = js.undefined
     
-    var top: js.UndefOr[CSSProperties] = js.native
+    var top: js.UndefOr[CSSProperties] = js.undefined
     
-    var topLeft: js.UndefOr[CSSProperties] = js.native
+    var topLeft: js.UndefOr[CSSProperties] = js.undefined
     
-    var topRight: js.UndefOr[CSSProperties] = js.native
+    var topRight: js.UndefOr[CSSProperties] = js.undefined
   }
   object HandleStyles {
     
@@ -454,12 +449,11 @@ object mod {
     }
   }
   
-  @js.native
   trait NumberSize extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object NumberSize {
     
@@ -480,64 +474,63 @@ object mod {
     }
   }
   
-  @js.native
   trait ResizableProps extends StObject {
     
-    var as: js.UndefOr[String | ComponentType[_]] = js.native
+    var as: js.UndefOr[String | ComponentType[js.Any]] = js.undefined
     
-    var bounds: js.UndefOr[parent | window | HTMLElement] = js.native
+    var bounds: js.UndefOr[parent | window | HTMLElement] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultSize: js.UndefOr[Size] = js.native
+    var defaultSize: js.UndefOr[Size] = js.undefined
     
-    var enable: js.UndefOr[Enable] = js.native
+    var enable: js.UndefOr[Enable] = js.undefined
     
-    var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var handleClasses: js.UndefOr[HandleClassName] = js.native
+    var handleClasses: js.UndefOr[HandleClassName] = js.undefined
     
-    var handleComponent: js.UndefOr[HandleComponent] = js.native
+    var handleComponent: js.UndefOr[HandleComponent] = js.undefined
     
-    var handleStyles: js.UndefOr[HandleStyles] = js.native
+    var handleStyles: js.UndefOr[HandleStyles] = js.undefined
     
-    var handleWrapperClass: js.UndefOr[String] = js.native
+    var handleWrapperClass: js.UndefOr[String] = js.undefined
     
-    var handleWrapperStyle: js.UndefOr[CSSProperties] = js.native
+    var handleWrapperStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var lockAspectRatio: js.UndefOr[Boolean | Double] = js.native
+    var lockAspectRatio: js.UndefOr[Boolean | Double] = js.undefined
     
-    var lockAspectRatioExtraHeight: js.UndefOr[Double] = js.native
+    var lockAspectRatioExtraHeight: js.UndefOr[Double] = js.undefined
     
-    var lockAspectRatioExtraWidth: js.UndefOr[Double] = js.native
+    var lockAspectRatioExtraWidth: js.UndefOr[Double] = js.undefined
     
-    var maxHeight: js.UndefOr[String | Double] = js.native
+    var maxHeight: js.UndefOr[String | Double] = js.undefined
     
-    var maxWidth: js.UndefOr[String | Double] = js.native
+    var maxWidth: js.UndefOr[String | Double] = js.undefined
     
-    var minHeight: js.UndefOr[String | Double] = js.native
+    var minHeight: js.UndefOr[String | Double] = js.undefined
     
-    var minWidth: js.UndefOr[String | Double] = js.native
+    var minWidth: js.UndefOr[String | Double] = js.undefined
     
-    var onResize: js.UndefOr[ResizeCallback] = js.native
+    var onResize: js.UndefOr[ResizeCallback] = js.undefined
     
-    var onResizeStart: js.UndefOr[ResizeStartCallback] = js.native
+    var onResizeStart: js.UndefOr[ResizeStartCallback] = js.undefined
     
-    var onResizeStop: js.UndefOr[ResizeCallback] = js.native
+    var onResizeStop: js.UndefOr[ResizeCallback] = js.undefined
     
-    var resizeRatio: js.UndefOr[Double] = js.native
+    var resizeRatio: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
-    var snap: js.UndefOr[X] = js.native
+    var snap: js.UndefOr[X] = js.undefined
     
-    var snapGap: js.UndefOr[Double] = js.native
+    var snapGap: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ResizableProps {
     
@@ -551,7 +544,7 @@ object mod {
     implicit class ResizablePropsMutableBuilder[Self <: ResizableProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAs(value: String | ComponentType[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: String | ComponentType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
@@ -743,12 +736,11 @@ object mod {
     Unit | Boolean
   ]
   
-  @js.native
   trait Size extends StObject {
     
-    var height: String | Double = js.native
+    var height: String | Double
     
-    var width: String | Double = js.native
+    var width: String | Double
   }
   object Size {
     
@@ -769,22 +761,21 @@ object mod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var backgroundStyle: CSSProperties = js.native
+    var backgroundStyle: CSSProperties
     
-    var direction: Direction = js.native
+    var direction: Direction
     
-    var flexBasis: js.UndefOr[String | Double] = js.native
+    var flexBasis: js.UndefOr[String | Double] = js.undefined
     
-    var height: Double | String = js.native
+    var height: Double | String
     
-    var isResizing: Boolean = js.native
+    var isResizing: Boolean
     
-    var original: Y = js.native
+    var original: Y
     
-    var width: Double | String = js.native
+    var width: Double | String
   }
   object State {
     
@@ -832,12 +823,11 @@ object mod {
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      var MouseEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MouseEvent */ js.Any = js.native
+      var MouseEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MouseEvent */ js.Any
       
-      var TouchEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TouchEvent */ js.Any = js.native
+      var TouchEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TouchEvent */ js.Any
     }
     object Window {
       

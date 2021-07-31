@@ -6,10 +6,8 @@ import typings.chromeApps.chrome.mdns.Service
 import typings.chromeApps.chrome.mdns.ServiceTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofmdns extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait Typeofmdns extends StObject {
     * @default 2048
     * @since Chrome 44.
     */
-  val MAX_SERVICE_INSTANCES_PER_EVENT: integer = js.native
+  val MAX_SERVICE_INSTANCES_PER_EVENT: integer
   
   /**
     * Immediately issues a multicast DNS query for all service types.
@@ -30,7 +28,7 @@ trait Typeofmdns extends StObject {
     * @since Chrome 45.
     * @param callback Callback invoked after ForceDiscovery() has started.
     */
-  def forceDiscovery(callback: js.Function0[Unit]): Unit = js.native
+  def forceDiscovery(callback: js.Function0[Unit]): Unit
   
   /**
     * Event fired to inform clients of the current complete
@@ -45,7 +43,7 @@ trait Typeofmdns extends StObject {
     * chrome.mdns.onServiceList.addListener(() => { },
     *  { 'serviceType': 'definitelyTyped._tcp.local' });
     */
-  val onServiceList: FilteredEvent[js.Function1[/* services */ js.Array[Service], Unit], ServiceTypes] = js.native
+  val onServiceList: FilteredEvent[js.Function1[/* services */ js.Array[Service], Unit], ServiceTypes]
 }
 object Typeofmdns {
   

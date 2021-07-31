@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as a base class for the ASPxClientDockPanel and ASPxClientPopupControl classes.
   */
 @js.native
-trait ASPxClientPopupControlBase extends ASPxClientControl {
+trait ASPxClientPopupControlBase
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Modifies a control's window size in accordance with the content.

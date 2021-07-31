@@ -4,19 +4,17 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BottomNavigationProps extends StObject {
   
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
-  var children: Element | js.Array[Element] = js.native
+  var children: Element | js.Array[Element]
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[`0`] = js.native
+  var style: js.UndefOr[`0`] = js.undefined
 }
 object BottomNavigationProps {
   

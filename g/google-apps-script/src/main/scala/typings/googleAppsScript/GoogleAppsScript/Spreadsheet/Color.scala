@@ -4,20 +4,18 @@ import typings.googleAppsScript.GoogleAppsScript.Base.ColorType
 import typings.googleAppsScript.GoogleAppsScript.Base.RgbColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A representation for a color.
   */
-@js.native
 trait Color extends StObject {
   
-  def asRgbColor(): RgbColor = js.native
+  def asRgbColor(): RgbColor
   
-  def asThemeColor(): ThemeColor = js.native
+  def asThemeColor(): ThemeColor
   
-  def getColorType(): ColorType = js.native
+  def getColorType(): ColorType
 }
 object Color {
   

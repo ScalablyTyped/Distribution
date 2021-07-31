@@ -2,131 +2,129 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SvgPropertiesFallback[TLength] extends StObject {
   
-  var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]] = js.native
+  var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]] = js.undefined
   
-  var baselineShift: js.UndefOr[BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]]] = js.native
+  var baselineShift: js.UndefOr[BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]]] = js.undefined
   
-  var clip: js.UndefOr[ClipProperty | js.Array[ClipProperty]] = js.native
+  var clip: js.UndefOr[ClipProperty | js.Array[ClipProperty]] = js.undefined
   
-  var clipPath: js.UndefOr[ClipPathProperty | js.Array[ClipPathProperty]] = js.native
+  var clipPath: js.UndefOr[ClipPathProperty | js.Array[ClipPathProperty]] = js.undefined
   
-  var clipRule: js.UndefOr[ClipRuleProperty | js.Array[ClipRuleProperty]] = js.native
+  var clipRule: js.UndefOr[ClipRuleProperty | js.Array[ClipRuleProperty]] = js.undefined
   
-  var color: js.UndefOr[ColorProperty | js.Array[ColorProperty]] = js.native
+  var color: js.UndefOr[ColorProperty | js.Array[ColorProperty]] = js.undefined
   
-  var colorInterpolation: js.UndefOr[ColorInterpolationProperty | js.Array[ColorInterpolationProperty]] = js.native
+  var colorInterpolation: js.UndefOr[ColorInterpolationProperty | js.Array[ColorInterpolationProperty]] = js.undefined
   
-  var colorRendering: js.UndefOr[ColorRenderingProperty | js.Array[ColorRenderingProperty]] = js.native
+  var colorRendering: js.UndefOr[ColorRenderingProperty | js.Array[ColorRenderingProperty]] = js.undefined
   
-  var cursor: js.UndefOr[CursorProperty | js.Array[CursorProperty]] = js.native
+  var cursor: js.UndefOr[CursorProperty | js.Array[CursorProperty]] = js.undefined
   
-  var direction: js.UndefOr[DirectionProperty | js.Array[DirectionProperty]] = js.native
+  var direction: js.UndefOr[DirectionProperty | js.Array[DirectionProperty]] = js.undefined
   
-  var display: js.UndefOr[DisplayProperty | js.Array[DisplayProperty]] = js.native
+  var display: js.UndefOr[DisplayProperty | js.Array[DisplayProperty]] = js.undefined
   
-  var dominantBaseline: js.UndefOr[DominantBaselineProperty | js.Array[DominantBaselineProperty]] = js.native
+  var dominantBaseline: js.UndefOr[DominantBaselineProperty | js.Array[DominantBaselineProperty]] = js.undefined
   
-  var fill: js.UndefOr[FillProperty | js.Array[FillProperty]] = js.native
+  var fill: js.UndefOr[FillProperty | js.Array[FillProperty]] = js.undefined
   
-  var fillOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+  var fillOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   
-  var fillRule: js.UndefOr[FillRuleProperty | js.Array[FillRuleProperty]] = js.native
+  var fillRule: js.UndefOr[FillRuleProperty | js.Array[FillRuleProperty]] = js.undefined
   
-  var filter: js.UndefOr[FilterProperty | js.Array[FilterProperty]] = js.native
+  var filter: js.UndefOr[FilterProperty | js.Array[FilterProperty]] = js.undefined
   
-  var floodColor: js.UndefOr[FloodColorProperty | js.Array[FloodColorProperty]] = js.native
+  var floodColor: js.UndefOr[FloodColorProperty | js.Array[FloodColorProperty]] = js.undefined
   
-  var floodOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+  var floodOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   
-  var font: js.UndefOr[FontProperty | js.Array[FontProperty]] = js.native
+  var font: js.UndefOr[FontProperty | js.Array[FontProperty]] = js.undefined
   
-  var fontFamily: js.UndefOr[FontFamilyProperty | js.Array[FontFamilyProperty]] = js.native
+  var fontFamily: js.UndefOr[FontFamilyProperty | js.Array[FontFamilyProperty]] = js.undefined
   
-  var fontSize: js.UndefOr[FontSizeProperty[TLength] | js.Array[FontSizeProperty[TLength]]] = js.native
+  var fontSize: js.UndefOr[FontSizeProperty[TLength] | js.Array[FontSizeProperty[TLength]]] = js.undefined
   
-  var fontSizeAdjust: js.UndefOr[FontSizeAdjustProperty | js.Array[FontSizeAdjustProperty]] = js.native
+  var fontSizeAdjust: js.UndefOr[FontSizeAdjustProperty | js.Array[FontSizeAdjustProperty]] = js.undefined
   
-  var fontStretch: js.UndefOr[FontStretchProperty | js.Array[FontStretchProperty]] = js.native
+  var fontStretch: js.UndefOr[FontStretchProperty | js.Array[FontStretchProperty]] = js.undefined
   
-  var fontStyle: js.UndefOr[FontStyleProperty | js.Array[FontStyleProperty]] = js.native
+  var fontStyle: js.UndefOr[FontStyleProperty | js.Array[FontStyleProperty]] = js.undefined
   
-  var fontVariant: js.UndefOr[FontVariantProperty | js.Array[FontVariantProperty]] = js.native
+  var fontVariant: js.UndefOr[FontVariantProperty | js.Array[FontVariantProperty]] = js.undefined
   
-  var fontWeight: js.UndefOr[FontWeightProperty | js.Array[FontWeightProperty]] = js.native
+  var fontWeight: js.UndefOr[FontWeightProperty | js.Array[FontWeightProperty]] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[GlyphOrientationVerticalProperty | js.Array[GlyphOrientationVerticalProperty]] = js.native
+  var glyphOrientationVertical: js.UndefOr[GlyphOrientationVerticalProperty | js.Array[GlyphOrientationVerticalProperty]] = js.undefined
   
-  var imageRendering: js.UndefOr[ImageRenderingProperty | js.Array[ImageRenderingProperty]] = js.native
+  var imageRendering: js.UndefOr[ImageRenderingProperty | js.Array[ImageRenderingProperty]] = js.undefined
   
-  var letterSpacing: js.UndefOr[LetterSpacingProperty[TLength] | js.Array[LetterSpacingProperty[TLength]]] = js.native
+  var letterSpacing: js.UndefOr[LetterSpacingProperty[TLength] | js.Array[LetterSpacingProperty[TLength]]] = js.undefined
   
-  var lightingColor: js.UndefOr[LightingColorProperty | js.Array[LightingColorProperty]] = js.native
+  var lightingColor: js.UndefOr[LightingColorProperty | js.Array[LightingColorProperty]] = js.undefined
   
-  var lineHeight: js.UndefOr[LineHeightProperty[TLength] | js.Array[LineHeightProperty[TLength]]] = js.native
+  var lineHeight: js.UndefOr[LineHeightProperty[TLength] | js.Array[LineHeightProperty[TLength]]] = js.undefined
   
-  var marker: js.UndefOr[MarkerProperty | js.Array[MarkerProperty]] = js.native
+  var marker: js.UndefOr[MarkerProperty | js.Array[MarkerProperty]] = js.undefined
   
-  var markerEnd: js.UndefOr[MarkerEndProperty | js.Array[MarkerEndProperty]] = js.native
+  var markerEnd: js.UndefOr[MarkerEndProperty | js.Array[MarkerEndProperty]] = js.undefined
   
-  var markerMid: js.UndefOr[MarkerMidProperty | js.Array[MarkerMidProperty]] = js.native
+  var markerMid: js.UndefOr[MarkerMidProperty | js.Array[MarkerMidProperty]] = js.undefined
   
-  var markerStart: js.UndefOr[MarkerStartProperty | js.Array[MarkerStartProperty]] = js.native
+  var markerStart: js.UndefOr[MarkerStartProperty | js.Array[MarkerStartProperty]] = js.undefined
   
-  var mask: js.UndefOr[MaskProperty[TLength] | js.Array[MaskProperty[TLength]]] = js.native
+  var mask: js.UndefOr[MaskProperty[TLength] | js.Array[MaskProperty[TLength]]] = js.undefined
   
-  var opacity: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.native
+  var opacity: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.undefined
   
-  var overflow: js.UndefOr[OverflowProperty | js.Array[OverflowProperty]] = js.native
+  var overflow: js.UndefOr[OverflowProperty | js.Array[OverflowProperty]] = js.undefined
   
-  var paintOrder: js.UndefOr[PaintOrderProperty | js.Array[PaintOrderProperty]] = js.native
+  var paintOrder: js.UndefOr[PaintOrderProperty | js.Array[PaintOrderProperty]] = js.undefined
   
-  var pointerEvents: js.UndefOr[PointerEventsProperty | js.Array[PointerEventsProperty]] = js.native
+  var pointerEvents: js.UndefOr[PointerEventsProperty | js.Array[PointerEventsProperty]] = js.undefined
   
-  var shapeRendering: js.UndefOr[ShapeRenderingProperty | js.Array[ShapeRenderingProperty]] = js.native
+  var shapeRendering: js.UndefOr[ShapeRenderingProperty | js.Array[ShapeRenderingProperty]] = js.undefined
   
-  var stopColor: js.UndefOr[StopColorProperty | js.Array[StopColorProperty]] = js.native
+  var stopColor: js.UndefOr[StopColorProperty | js.Array[StopColorProperty]] = js.undefined
   
-  var stopOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+  var stopOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   
-  var stroke: js.UndefOr[StrokeProperty | js.Array[StrokeProperty]] = js.native
+  var stroke: js.UndefOr[StrokeProperty | js.Array[StrokeProperty]] = js.undefined
   
-  var strokeDasharray: js.UndefOr[StrokeDasharrayProperty[TLength] | js.Array[StrokeDasharrayProperty[TLength]]] = js.native
+  var strokeDasharray: js.UndefOr[StrokeDasharrayProperty[TLength] | js.Array[StrokeDasharrayProperty[TLength]]] = js.undefined
   
-  var strokeDashoffset: js.UndefOr[StrokeDashoffsetProperty[TLength] | js.Array[StrokeDashoffsetProperty[TLength]]] = js.native
+  var strokeDashoffset: js.UndefOr[StrokeDashoffsetProperty[TLength] | js.Array[StrokeDashoffsetProperty[TLength]]] = js.undefined
   
-  var strokeLinecap: js.UndefOr[StrokeLinecapProperty | js.Array[StrokeLinecapProperty]] = js.native
+  var strokeLinecap: js.UndefOr[StrokeLinecapProperty | js.Array[StrokeLinecapProperty]] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty]] = js.native
+  var strokeLinejoin: js.UndefOr[StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty]] = js.undefined
   
-  var strokeMiterlimit: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+  var strokeMiterlimit: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   
-  var strokeOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+  var strokeOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   
-  var strokeWidth: js.UndefOr[StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]]] = js.native
+  var strokeWidth: js.UndefOr[StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]]] = js.undefined
   
-  var textAnchor: js.UndefOr[TextAnchorProperty | js.Array[TextAnchorProperty]] = js.native
+  var textAnchor: js.UndefOr[TextAnchorProperty | js.Array[TextAnchorProperty]] = js.undefined
   
-  var textDecoration: js.UndefOr[TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]] = js.native
+  var textDecoration: js.UndefOr[TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]] = js.undefined
   
-  var textRendering: js.UndefOr[TextRenderingProperty | js.Array[TextRenderingProperty]] = js.native
+  var textRendering: js.UndefOr[TextRenderingProperty | js.Array[TextRenderingProperty]] = js.undefined
   
-  var unicodeBidi: js.UndefOr[UnicodeBidiProperty | js.Array[UnicodeBidiProperty]] = js.native
+  var unicodeBidi: js.UndefOr[UnicodeBidiProperty | js.Array[UnicodeBidiProperty]] = js.undefined
   
-  var vectorEffect: js.UndefOr[VectorEffectProperty | js.Array[VectorEffectProperty]] = js.native
+  var vectorEffect: js.UndefOr[VectorEffectProperty | js.Array[VectorEffectProperty]] = js.undefined
   
-  var visibility: js.UndefOr[VisibilityProperty | js.Array[VisibilityProperty]] = js.native
+  var visibility: js.UndefOr[VisibilityProperty | js.Array[VisibilityProperty]] = js.undefined
   
-  var whiteSpace: js.UndefOr[WhiteSpaceProperty | js.Array[WhiteSpaceProperty]] = js.native
+  var whiteSpace: js.UndefOr[WhiteSpaceProperty | js.Array[WhiteSpaceProperty]] = js.undefined
   
-  var wordSpacing: js.UndefOr[WordSpacingProperty[TLength] | js.Array[WordSpacingProperty[TLength]]] = js.native
+  var wordSpacing: js.UndefOr[WordSpacingProperty[TLength] | js.Array[WordSpacingProperty[TLength]]] = js.undefined
   
-  var writingMode: js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]] = js.native
+  var writingMode: js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]] = js.undefined
 }
 object SvgPropertiesFallback {
   
@@ -137,7 +135,7 @@ object SvgPropertiesFallback {
   }
   
   @scala.inline
-  implicit class SvgPropertiesFallbackMutableBuilder[Self <: SvgPropertiesFallback[_], TLength] (val x: Self with SvgPropertiesFallback[TLength]) extends AnyVal {
+  implicit class SvgPropertiesFallbackMutableBuilder[Self <: SvgPropertiesFallback[?], TLength] (val x: Self & SvgPropertiesFallback[TLength]) extends AnyVal {
     
     @scala.inline
     def setAlignmentBaseline(value: AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])

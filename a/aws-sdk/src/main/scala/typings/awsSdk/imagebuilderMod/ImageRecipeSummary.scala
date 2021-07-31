@@ -2,46 +2,44 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageRecipeSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the image recipe.
     */
-  var arn: js.UndefOr[ImageBuilderArn] = js.native
+  var arn: js.UndefOr[ImageBuilderArn] = js.undefined
   
   /**
     * The date on which this image recipe was created.
     */
-  var dateCreated: js.UndefOr[DateTime] = js.native
+  var dateCreated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the image recipe.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The owner of the image recipe.
     */
-  var owner: js.UndefOr[NonEmptyString] = js.native
+  var owner: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The parent image of the image recipe.
     */
-  var parentImage: js.UndefOr[NonEmptyString] = js.native
+  var parentImage: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The platform of the image recipe.
     */
-  var platform: js.UndefOr[Platform] = js.native
+  var platform: js.UndefOr[Platform] = js.undefined
   
   /**
     * The tags of the image recipe.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object ImageRecipeSummary {
   

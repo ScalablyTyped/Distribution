@@ -2,61 +2,59 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** These properties describe the printing of the content of a text document. */
-@js.native
 trait PrintSettings extends StObject {
   
   /**
     * determines how notes are printed.
     * @see NotePrintMode
     */
-  var PrintAnnotationMode: NotePrintMode = js.native
+  var PrintAnnotationMode: NotePrintMode
   
   /** determines if characters are always printed in black. */
-  var PrintBlackFonts: Boolean = js.native
+  var PrintBlackFonts: Boolean
   
   /** determines if control shapes are printed. */
-  var PrintControls: Boolean = js.native
+  var PrintControls: Boolean
   
   /** determines if shapes are printed. */
-  var PrintDrawings: Boolean = js.native
+  var PrintDrawings: Boolean
   
   /** determines if automatically inserted empty pages are printed. */
-  var PrintEmptyPages: Boolean = js.native
+  var PrintEmptyPages: Boolean
   
   /** contains the name of the fax. */
-  var PrintFaxName: String = js.native
+  var PrintFaxName: String
   
   /** determines if graphic objects are printed */
-  var PrintGraphics: Boolean = js.native
+  var PrintGraphics: Boolean
   
   /** determines if left pages are printed. */
-  var PrintLeftPages: Boolean = js.native
+  var PrintLeftPages: Boolean
   
   /** determines if the background color / background graphic of pages is printed. */
-  var PrintPageBackground: Boolean = js.native
+  var PrintPageBackground: Boolean
   
   /**
     * specifies if the printer paper tray selection of the system printer is used.
     *
     * If com::sun::star::view::PrintSettings::PaperFromSetup is `FALSE` , then the paper tray selection of the page styles is used.
     */
-  var PrintPaperFromSetup: Boolean = js.native
+  var PrintPaperFromSetup: Boolean
   
   /** determines if prospect printing is used. */
-  var PrintProspect: Boolean = js.native
+  var PrintProspect: Boolean
   
   /** determines if the pages are printed in the reverse order, starting with the last page. */
-  var PrintReversed: Boolean = js.native
+  var PrintReversed: Boolean
   
   /** determines if right pages are printed. */
-  var PrintRightPages: Boolean = js.native
+  var PrintRightPages: Boolean
   
   /** determines if text tables are printed. */
-  var PrintTables: Boolean = js.native
+  var PrintTables: Boolean
 }
 object PrintSettings {
   

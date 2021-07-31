@@ -5,27 +5,25 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableGroup extends StObject {
   
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
-  var createdOn: Date = js.native
+  var createdOn: Date
   
-  var description: String = js.native
+  var description: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var modifiedBy: IdentityRef = js.native
+  var modifiedBy: IdentityRef
   
-  var modifiedOn: Date = js.native
+  var modifiedOn: Date
   
-  var name: String = js.native
+  var name: String
   
-  var variables: StringDictionary[VariableValue] = js.native
+  var variables: StringDictionary[VariableValue]
 }
 object VariableGroup {
   

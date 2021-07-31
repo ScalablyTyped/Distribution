@@ -2,105 +2,85 @@ package typings.unlCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("unl-core", "adjacent")
+  @JSImport("unl-core", JSImport.Namespace)
   @js.native
-  def adjacent(locationId: String, direction: Direction): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("unl-core", "appendElevation")
-  @js.native
-  def appendElevation(locationIdWithoutElevation: String, elevation: Double, elevationType: ElevationType): String = js.native
+  @scala.inline
+  def adjacent(locationId: String, direction: Direction): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjacent")(locationId.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("unl-core", "bounds")
-  @js.native
-  def bounds(locationId: String): BoundsWithElevation = js.native
+  @scala.inline
+  def appendElevation(locationIdWithoutElevation: String, elevation: Double, elevationType: ElevationType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendElevation")(locationIdWithoutElevation.asInstanceOf[js.Any], elevation.asInstanceOf[js.Any], elevationType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("unl-core", "compressPolyhash")
-  @js.native
-  def compressPolyhash(polyhash: js.Array[Polyhash]): String = js.native
+  @scala.inline
+  def bounds(locationId: String): BoundsWithElevation = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(locationId.asInstanceOf[js.Any]).asInstanceOf[BoundsWithElevation]
   
-  @JSImport("unl-core", "decode")
-  @js.native
-  def decode(locationId: String): PointWithElevation = js.native
+  @scala.inline
+  def compressPolyhash(polyhash: js.Array[Polyhash]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compressPolyhash")(polyhash.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("unl-core", "decompressPolyhash")
-  @js.native
-  def decompressPolyhash(compressedPolyhash: String): js.Array[String] = js.native
+  @scala.inline
+  def decode(locationId: String): PointWithElevation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(locationId.asInstanceOf[js.Any]).asInstanceOf[PointWithElevation]
   
-  @JSImport("unl-core", "deflate")
-  @js.native
-  def deflate(locationIds: js.Array[String]): js.Array[Polyhash] = js.native
+  @scala.inline
+  def decompressPolyhash(compressedPolyhash: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressPolyhash")(compressedPolyhash.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("unl-core", "encode")
-  @js.native
-  def encode(lat: Double, lon: Double): String = js.native
-  @JSImport("unl-core", "encode")
-  @js.native
-  def encode(lat: Double, lon: Double, precision: js.UndefOr[scala.Nothing], options: EncodeOptions): String = js.native
-  @JSImport("unl-core", "encode")
-  @js.native
-  def encode(lat: Double, lon: Double, precision: Double): String = js.native
-  @JSImport("unl-core", "encode")
-  @js.native
-  def encode(lat: Double, lon: Double, precision: Double, options: EncodeOptions): String = js.native
+  @scala.inline
+  def deflate(locationIds: js.Array[String]): js.Array[Polyhash] = ^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(locationIds.asInstanceOf[js.Any]).asInstanceOf[js.Array[Polyhash]]
   
-  @JSImport("unl-core", "excludeElevation")
-  @js.native
-  def excludeElevation(locationIdWithElevation: String): LocationIdWithElevation = js.native
+  @scala.inline
+  def encode(lat: Double, lon: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encode(lat: Double, lon: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encode(lat: Double, lon: Double, precision: Double, options: EncodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encode(lat: Double, lon: Double, precision: Unit, options: EncodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("unl-core", "fromWords")
-  @js.native
-  def fromWords(words: String, apiKey: String, langCode: String): Address = js.native
+  @scala.inline
+  def excludeElevation(locationIdWithElevation: String): LocationIdWithElevation = ^.asInstanceOf[js.Dynamic].applyDynamic("excludeElevation")(locationIdWithElevation.asInstanceOf[js.Any]).asInstanceOf[LocationIdWithElevation]
   
-  @JSImport("unl-core", "gridLines")
-  @js.native
-  def gridLines(bounds: Bounds_): js.Array[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]] = js.native
-  @JSImport("unl-core", "gridLines")
-  @js.native
-  def gridLines(bounds: Bounds_, precision: Double): js.Array[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]] = js.native
+  @scala.inline
+  def fromWords(words: String, apiKey: String, langCode: String): Address = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWords")(words.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], langCode.asInstanceOf[js.Any])).asInstanceOf[Address]
   
-  @JSImport("unl-core", "groupByPrefix")
-  @js.native
-  def groupByPrefix(locationIds: js.Array[String]): js.Array[js.Array[String]] = js.native
+  @scala.inline
+  def gridLines(bounds: Bounds_): js.Array[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("gridLines")(bounds.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]]
+  @scala.inline
+  def gridLines(bounds: Bounds_, precision: Double): js.Array[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("gridLines")(bounds.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]]
   
-  @JSImport("unl-core", "inflate")
-  @js.native
-  def inflate(deflatedList: js.Array[Polyhash]): js.Array[String] = js.native
+  @scala.inline
+  def groupByPrefix(locationIds: js.Array[String]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupByPrefix")(locationIds.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
   
-  @JSImport("unl-core", "neighbours")
-  @js.native
-  def neighbours(locationId: String): Neighbours_ = js.native
+  @scala.inline
+  def inflate(deflatedList: js.Array[Polyhash]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("inflate")(deflatedList.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("unl-core", "toCluster")
-  @js.native
-  def toCluster(points: js.Array[js.Array[Double]], locationIdPrecision: Double): js.Array[Polyhash] = js.native
+  @scala.inline
+  def neighbours(locationId: String): Neighbours_ = ^.asInstanceOf[js.Dynamic].applyDynamic("neighbours")(locationId.asInstanceOf[js.Any]).asInstanceOf[Neighbours_]
   
-  @JSImport("unl-core", "toCoordinates")
-  @js.native
-  def toCoordinates(polyhash: js.Array[String]): js.Array[js.Array[Double]] = js.native
+  @scala.inline
+  def toCluster(points: js.Array[js.Array[Double]], locationIdPrecision: Double): js.Array[Polyhash] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCluster")(points.asInstanceOf[js.Any], locationIdPrecision.asInstanceOf[js.Any])).asInstanceOf[js.Array[Polyhash]]
   
-  @JSImport("unl-core", "toPolyhash")
-  @js.native
-  def toPolyhash(points: js.Array[js.Array[Double]], locationIdPrecision: Double): js.Array[Polyhash] = js.native
+  @scala.inline
+  def toCoordinates(polyhash: js.Array[String]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCoordinates")(polyhash.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
   
-  @JSImport("unl-core", "toWords")
-  @js.native
-  def toWords(location: String, apiKey: String, langCode: String, count: Double): Address = js.native
+  @scala.inline
+  def toPolyhash(points: js.Array[js.Array[Double]], locationIdPrecision: Double): js.Array[Polyhash] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPolyhash")(points.asInstanceOf[js.Any], locationIdPrecision.asInstanceOf[js.Any])).asInstanceOf[js.Array[Polyhash]]
   
-  @js.native
+  @scala.inline
+  def toWords(location: String, apiKey: String, langCode: String, count: Double): Address = (^.asInstanceOf[js.Dynamic].applyDynamic("toWords")(location.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], langCode.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Address]
+  
   trait Address extends StObject {
     
-    var bounds: BoundsWithElevation = js.native
+    var bounds: BoundsWithElevation
     
-    var coordinates: PointWithElevation = js.native
+    var coordinates: PointWithElevation
     
-    var geohash: String = js.native
+    var geohash: String
     
-    var words: String = js.native
+    var words: String
   }
   object Address {
     
@@ -127,12 +107,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait BoundsWithElevation extends Bounds_ {
+  trait BoundsWithElevation
+    extends StObject
+       with Bounds_ {
     
-    var elevation: Double = js.native
+    var elevation: Double
     
-    var elevationType: ElevationType = js.native
+    var elevationType: ElevationType
   }
   object BoundsWithElevation {
     
@@ -154,13 +135,12 @@ object mod {
     }
   }
   
-  @js.native
   trait Bounds_ extends StObject {
     
     @JSName("ne")
-    var ne_FBounds_ : Point = js.native
+    var ne_FBounds_ : Point
     
-    var sw: Point = js.native
+    var sw: Point
   }
   object Bounds_ {
     
@@ -218,12 +198,11 @@ object mod {
     def heightincm: typings.unlCore.unlCoreStrings.heightincm = "heightincm".asInstanceOf[typings.unlCore.unlCoreStrings.heightincm]
   }
   
-  @js.native
   trait EncodeOptions extends StObject {
     
-    var elevation: Double = js.native
+    var elevation: Double
     
-    var elevationType: ElevationType = js.native
+    var elevationType: ElevationType
   }
   object EncodeOptions {
     
@@ -244,14 +223,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LocationIdWithElevation extends StObject {
     
-    var elevation: Double = js.native
+    var elevation: Double
     
-    var elevationType: ElevationType = js.native
+    var elevationType: ElevationType
     
-    var locationId: String = js.native
+    var locationId: String
   }
   object LocationIdWithElevation {
     
@@ -275,25 +253,24 @@ object mod {
     }
   }
   
-  @js.native
   trait Neighbours_ extends StObject {
     
-    var e: String = js.native
+    var e: String
     
-    var n: String = js.native
+    var n: String
     
     @JSName("ne")
-    var ne_FNeighbours_ : String = js.native
+    var ne_FNeighbours_ : String
     
-    var nw: String = js.native
+    var nw: String
     
-    var s: String = js.native
+    var s: String
     
-    var se: String = js.native
+    var se: String
     
-    var sw: String = js.native
+    var sw: String
     
-    var w: String = js.native
+    var w: String
   }
   object Neighbours_ {
     
@@ -333,12 +310,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Point extends StObject {
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lon: Double = js.native
+    var lon: Double
   }
   object Point {
     
@@ -359,14 +335,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait PointWithElevation extends Point {
+  trait PointWithElevation
+    extends StObject
+       with Point {
     
-    var bounds: BoundsWithElevation = js.native
+    var bounds: BoundsWithElevation
     
-    var elevation: Double = js.native
+    var elevation: Double
     
-    var elevationType: ElevationType = js.native
+    var elevationType: ElevationType
   }
   object PointWithElevation {
     
@@ -396,12 +373,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Polyhash extends StObject {
     
-    var data: js.Array[String] = js.native
+    var data: js.Array[String]
     
-    var precision: Double = js.native
+    var precision: Double
   }
   object Polyhash {
     

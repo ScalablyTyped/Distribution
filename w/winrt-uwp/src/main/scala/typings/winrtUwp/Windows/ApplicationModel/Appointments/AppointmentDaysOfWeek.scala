@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,33 +13,49 @@ object AppointmentDaysOfWeek extends StObject {
   
   /** The appointment occurs on Friday. */
   @js.native
-  sealed trait friday extends AppointmentDaysOfWeek
+  sealed trait friday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Monday. */
   @js.native
-  sealed trait monday extends AppointmentDaysOfWeek
+  sealed trait monday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment doesn't occur on any days of the week. */
   @js.native
-  sealed trait none extends AppointmentDaysOfWeek
+  sealed trait none
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Saturday. */
   @js.native
-  sealed trait saturday extends AppointmentDaysOfWeek
+  sealed trait saturday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Sunday. */
   @js.native
-  sealed trait sunday extends AppointmentDaysOfWeek
+  sealed trait sunday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Thursday. */
   @js.native
-  sealed trait thursday extends AppointmentDaysOfWeek
+  sealed trait thursday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Tuesday. */
   @js.native
-  sealed trait tuesday extends AppointmentDaysOfWeek
+  sealed trait tuesday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Wednesday. */
   @js.native
-  sealed trait wednesday extends AppointmentDaysOfWeek
+  sealed trait wednesday
+    extends StObject
+       with AppointmentDaysOfWeek
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeExportImageTasksResult extends StObject {
   
   /**
     * Information about the export image tasks.
     */
-  var ExportImageTasks: js.UndefOr[ExportImageTaskList] = js.native
+  var ExportImageTasks: js.UndefOr[ExportImageTaskList] = js.undefined
   
   /**
     * The token to use to get the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ec2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ec2Mod.NextToken] = js.undefined
 }
 object DescribeExportImageTasksResult {
   

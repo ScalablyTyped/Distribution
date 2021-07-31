@@ -2,21 +2,19 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerSummary extends StObject {
   
   /**
     * The exit code to return upon completion.
     */
-  var exitCode: js.UndefOr[Integer] = js.native
+  var exitCode: js.UndefOr[Integer] = js.undefined
   
   /**
     * A short (255 max characters) human-readable string to provide additional details about a running or stopped container.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object ContainerSummary {
   

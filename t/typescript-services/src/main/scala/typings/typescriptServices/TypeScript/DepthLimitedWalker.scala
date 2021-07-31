@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DepthLimitedWalker extends PositionTrackingWalker {
+trait DepthLimitedWalker
+  extends StObject
+     with PositionTrackingWalker {
   
-  var _depth: js.Any = js.native
+  var _depth: js.Any
   
-  var _maximumDepth: js.Any = js.native
+  var _maximumDepth: js.Any
 }
 object DepthLimitedWalker {
   

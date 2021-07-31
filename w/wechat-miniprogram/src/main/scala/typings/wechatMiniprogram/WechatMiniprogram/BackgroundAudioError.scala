@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundAudioError extends StObject {
   
   /** 错误码
@@ -16,7 +14,7 @@ trait BackgroundAudioError extends StObject {
     * | 10002 |  | 网络错误 |
     * | 10003 |  | 文件错误 |
     * | 10004 |  | 格式错误 |
-    * | -1 |  | 未知错误 | */ var errCode: Double = js.native
+    * | -1 |  | 未知错误 | */ var errCode: Double
   
   /** 错误信息
     *
@@ -26,7 +24,7 @@ trait BackgroundAudioError extends StObject {
     * | 10002 |  | 网络错误 |
     * | 10003 |  | 文件错误 |
     * | 10004 |  | 格式错误 |
-    * | -1 |  | 未知错误 | */ var errMsg: String = js.native
+    * | -1 |  | 未知错误 | */ var errMsg: String
 }
 object BackgroundAudioError {
   

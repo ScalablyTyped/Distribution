@@ -3,15 +3,13 @@ package typings.amapJsSdk.anon
 import typings.amapJsSdk.AMap.Pixel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var content: String = js.native
+  var content: String
   
-  var offset: Pixel = js.native
+  var offset: Pixel
 }
 object Content {
   

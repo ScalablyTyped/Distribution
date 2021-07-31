@@ -2,35 +2,33 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalePolicyTab extends StObject {
   
-  var addressFormat: js.UndefOr[String] = js.native
+  var addressFormat: js.UndefOr[String] = js.undefined
   
-  var calendarType: js.UndefOr[String] = js.native
+  var calendarType: js.UndefOr[String] = js.undefined
   
-  var cultureName: js.UndefOr[String] = js.native
+  var cultureName: js.UndefOr[String] = js.undefined
   
-  var currencyNegativeFormat: js.UndefOr[String] = js.native
+  var currencyNegativeFormat: js.UndefOr[String] = js.undefined
   
-  var currencyPositiveFormat: js.UndefOr[String] = js.native
+  var currencyPositiveFormat: js.UndefOr[String] = js.undefined
   
-  var customDateFormat: js.UndefOr[String] = js.native
+  var customDateFormat: js.UndefOr[String] = js.undefined
   
-  var customTimeFormat: js.UndefOr[String] = js.native
+  var customTimeFormat: js.UndefOr[String] = js.undefined
   
-  var dateFormat: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.undefined
   
-  var initialFormat: js.UndefOr[String] = js.native
+  var initialFormat: js.UndefOr[String] = js.undefined
   
-  var nameFormat: js.UndefOr[String] = js.native
+  var nameFormat: js.UndefOr[String] = js.undefined
   
-  var timeFormat: js.UndefOr[String] = js.native
+  var timeFormat: js.UndefOr[String] = js.undefined
   
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object LocalePolicyTab {
   

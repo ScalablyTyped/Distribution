@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountPasswordQuestionsRequired extends StObject {
   
   /**
     * The maximum number of password reset questions allowed for the account. This number must be between `0` and `4`, and equal to or greater than `minimumQuestions`.
     */
-  var maximumQuestions: js.UndefOr[String] = js.native
+  var maximumQuestions: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum number of password reset questions allowed for the account. This number must be between `0` and `4`, and equal to or less than `maximumQuestions`.
     */
-  var minimumQuestions: js.UndefOr[String] = js.native
+  var minimumQuestions: js.UndefOr[String] = js.undefined
 }
 object AccountPasswordQuestionsRequired {
   

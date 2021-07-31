@@ -4,19 +4,21 @@
 Typings are for version 5.14
 
 ## Library description:
-metascraper integration with Amazon
+Metascraper integration with Amazon
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | metascraper-amazon |
 | Keywords           | amazon, metascraper |
-| # releases         | 111 |
+| # releases         | 134 |
 | # dependents       | 5 |
-| # downloads        | 41170 |
+| # downloads        | 45677 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-amazon)
+- [Bugs](https://github.com/microlinkhq/metascraper/issues)
+- [Repository](https://github.com/microlinkhq/metascraper)
 - [Npm](https://www.npmjs.com/package/metascraper-amazon)
     
 

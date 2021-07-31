@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -52,18 +51,18 @@ object mod {
     var parent: js.Any = js.native
   }
   
-  @js.native
   trait Event
-    extends /* otherData */ StringDictionary[js.Any] {
+    extends StObject
+       with /* otherData */ StringDictionary[js.Any] {
     
     /** event phase */
-    var ph: js.UndefOr[String] = js.native
+    var ph: js.UndefOr[String] = js.undefined
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var tid: Double = js.native
+    var tid: Double
     
-    var ts: Double = js.native
+    var ts: Double
   }
   object Event {
     
@@ -93,13 +92,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Fields
-    extends /* otherData */ StringDictionary[js.Any] {
+    extends StObject
+       with /* otherData */ StringDictionary[js.Any] {
     
-    var args: js.UndefOr[js.Any] = js.native
+    var args: js.UndefOr[js.Any] = js.undefined
     
-    var cat: js.UndefOr[js.Any] = js.native
+    var cat: js.UndefOr[js.Any] = js.undefined
   }
   object Fields {
     
@@ -126,16 +125,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TracerOptions extends StObject {
     
-    var fields: js.UndefOr[Fields | Null] = js.native
+    var fields: js.UndefOr[Fields | Null] = js.undefined
     
-    var noStream: js.UndefOr[Boolean] = js.native
+    var noStream: js.UndefOr[Boolean] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean | Null] = js.native
+    var objectMode: js.UndefOr[Boolean | Null] = js.undefined
     
-    var parent: js.UndefOr[Tracer | Null] = js.native
+    var parent: js.UndefOr[Tracer | Null] = js.undefined
   }
   object TracerOptions {
     

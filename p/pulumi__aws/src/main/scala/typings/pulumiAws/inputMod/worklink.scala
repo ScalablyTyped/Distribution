@@ -3,23 +3,21 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object worklink {
   
-  @js.native
   trait FleetIdentityProvider extends StObject {
     
     /**
       * The SAML metadata document provided by the customer’s identity provider.
       */
-    var samlMetadata: Input[String] = js.native
+    var samlMetadata: Input[String]
     
     /**
       * The type of identity provider.
       */
-    var `type`: Input[String] = js.native
+    var `type`: Input[String]
   }
   object FleetIdentityProvider {
     
@@ -41,23 +39,22 @@ object worklink {
     }
   }
   
-  @js.native
   trait FleetNetwork extends StObject {
     
     /**
       * A list of security group IDs associated with access to the provided subnets.
       */
-    var securityGroupIds: Input[js.Array[Input[String]]] = js.native
+    var securityGroupIds: Input[js.Array[Input[String]]]
     
     /**
       * A list of subnet IDs used for X-ENI connections from Amazon WorkLink rendering containers.
       */
-    var subnetIds: Input[js.Array[Input[String]]] = js.native
+    var subnetIds: Input[js.Array[Input[String]]]
     
     /**
       * The VPC ID with connectivity to associated websites.
       */
-    var vpcId: Input[String] = js.native
+    var vpcId: Input[String]
   }
   object FleetNetwork {
     

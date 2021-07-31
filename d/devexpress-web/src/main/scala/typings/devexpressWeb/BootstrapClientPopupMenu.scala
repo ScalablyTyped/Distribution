@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapPopupMenu control.
   */
 @js.native
-trait BootstrapClientPopupMenu extends ASPxClientPopupMenu {
+trait BootstrapClientPopupMenu
+  extends StObject
+     with ASPxClientPopupMenu {
   
   /**
     * Sets the CSS selector of a web control or HTML element with which the current popup menu is associated.

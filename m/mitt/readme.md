@@ -11,8 +11,8 @@ Tiny 200b functional Event Emitter / pubsub.
 | Full name          | mitt |
 | Keywords           | events, eventemitter, emitter, pubsub |
 | # releases         | 6 |
-| # dependents       | 305 |
-| # downloads        | 48942996 |
+| # dependents       | 388 |
+| # downloads        | 61992331 |
 | # stars            | 22 |
 
 ## Links

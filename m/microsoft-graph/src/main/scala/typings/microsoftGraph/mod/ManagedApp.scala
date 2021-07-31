@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedApp extends MobileApp {
+trait ManagedApp
+  extends StObject
+     with MobileApp {
   
   // The Application's availability. Possible values are: global, lineOfBusiness.
-  var appAvailability: js.UndefOr[ManagedAppAvailability] = js.native
+  var appAvailability: js.UndefOr[ManagedAppAvailability] = js.undefined
   
   // The Application's version.
-  var version: js.UndefOr[NullableOption[String]] = js.native
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ManagedApp {
   

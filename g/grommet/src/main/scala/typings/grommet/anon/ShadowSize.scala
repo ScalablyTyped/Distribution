@@ -3,19 +3,17 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.BackgroundType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShadowSize extends StObject {
   
-  var background: js.UndefOr[BackgroundType] = js.native
+  var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[Width] = js.native
+  var border: js.UndefOr[Width] = js.undefined
   
-  var shadowSize: js.UndefOr[String] = js.native
+  var shadowSize: js.UndefOr[String] = js.undefined
   
-  var zIndex: js.UndefOr[String] = js.native
+  var zIndex: js.UndefOr[String] = js.undefined
 }
 object ShadowSize {
   

@@ -2,18 +2,16 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#dom-rtcrtpcontributingsource
-@js.native
 trait RTCRtpContributingSource extends StObject {
   
   //readonly timestamp: number;
-  var source: Double = js.native
+  var source: Double
   
   //readonly audioLevel: number | null;
-  val voiceActivityFlag: js.UndefOr[Boolean] = js.native
+  val voiceActivityFlag: js.UndefOr[Boolean] = js.undefined
 }
 object RTCRtpContributingSource {
   

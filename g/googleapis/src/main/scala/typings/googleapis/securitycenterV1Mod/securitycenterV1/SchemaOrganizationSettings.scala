@@ -2,20 +2,18 @@ package typings.googleapis.securitycenterV1Mod.securitycenterV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User specified settings that are attached to the Cloud Security Command
   * Center (Cloud SCC) organization.
   */
-@js.native
 trait SchemaOrganizationSettings extends StObject {
   
   /**
     * The configuration used for Asset Discovery runs.
     */
-  var assetDiscoveryConfig: js.UndefOr[SchemaAssetDiscoveryConfig] = js.native
+  var assetDiscoveryConfig: js.UndefOr[SchemaAssetDiscoveryConfig] = js.undefined
   
   /**
     * A flag that indicates if Asset Discovery should be enabled. If the flag
@@ -23,14 +21,14 @@ trait SchemaOrganizationSettings extends StObject {
     * `false, all historical assets will remain, but discovery of future assets
     * will not occur.
     */
-  var enableAssetDiscovery: js.UndefOr[Boolean] = js.native
+  var enableAssetDiscovery: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The relative resource name of the settings. See:
     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
     * Example: &quot;organizations/123/organizationSettings&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaOrganizationSettings {
   

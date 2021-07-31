@@ -1,284 +1,358 @@
 package typings.ioTs
 
+import typings.ioTs.decodeErrorMod.Kind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ioTsStrings {
-  @js.native
-  sealed trait AnyArrayType extends js.Object
   
   @js.native
-  sealed trait AnyDictionaryType extends js.Object
-  
-  @js.native
-  sealed trait AnyType extends js.Object
-  
-  @js.native
-  sealed trait ArrayType extends js.Object
-  
-  @js.native
-  sealed trait BigIntType extends js.Object
-  
-  @js.native
-  sealed trait BooleanType extends js.Object
-  
-  @js.native
-  sealed trait Codec extends js.Object
-  
-  @js.native
-  sealed trait Compact extends js.Object
-  
-  @js.native
-  sealed trait Decoder extends js.Object
-  
-  @js.native
-  sealed trait DictionaryType extends js.Object
-  
-  @js.native
-  sealed trait Encoder extends js.Object
-  
-  @js.native
-  sealed trait Exact extends js.Object
-  
-  @js.native
-  sealed trait ExactType extends js.Object
-  
-  @js.native
-  sealed trait FunctionType extends js.Object
-  
-  @js.native
-  sealed trait Guard extends js.Object
-  
-  @js.native
-  sealed trait InterfaceType extends js.Object
-  
-  @js.native
-  sealed trait IntersectionType extends js.Object
-  
-  @js.native
-  sealed trait KeyofType extends js.Object
-  
-  @js.native
-  sealed trait LiteralType extends js.Object
-  
-  @js.native
-  sealed trait NeverType extends js.Object
-  
-  @js.native
-  sealed trait NullType extends js.Object
-  
-  @js.native
-  sealed trait NumberType extends js.Object
-  
-  @js.native
-  sealed trait ObjectType extends js.Object
-  
-  @js.native
-  sealed trait OutputOfDictionary extends js.Object
-  
-  @js.native
-  sealed trait OutputOfPartialProps extends js.Object
-  
-  @js.native
-  sealed trait OutputOfProps extends js.Object
-  
-  @js.native
-  sealed trait PartialC extends js.Object
-  
-  @js.native
-  sealed trait PartialType extends js.Object
-  
-  @js.native
-  sealed trait ReadonlyArrayType extends js.Object
-  
-  @js.native
-  sealed trait ReadonlyC extends js.Object
-  
-  @js.native
-  sealed trait ReadonlyType extends js.Object
-  
-  @js.native
-  sealed trait RecordC extends js.Object
-  
-  @js.native
-  sealed trait RecursiveType extends js.Object
-  
-  @js.native
-  sealed trait RefinementType extends js.Object
-  
-  @js.native
-  sealed trait Schemable extends js.Object
-  
-  @js.native
-  sealed trait StrictC extends js.Object
-  
-  @js.native
-  sealed trait StrictType extends js.Object
-  
-  @js.native
-  sealed trait StringType extends js.Object
-  
-  @js.native
-  sealed trait TaggedProps extends js.Object
-  
-  @js.native
-  sealed trait TupleType extends js.Object
-  
-  @js.native
-  sealed trait TypeC extends js.Object
-  
-  @js.native
-  sealed trait TypeOfDictionary extends js.Object
-  
-  @js.native
-  sealed trait TypeOfPartialProps extends js.Object
-  
-  @js.native
-  sealed trait TypeOfProps extends js.Object
-  
-  @js.native
-  sealed trait UndefinedType extends js.Object
-  
-  @js.native
-  sealed trait UnionType extends js.Object
-  
-  @js.native
-  sealed trait UnknownType extends js.Object
-  
-  @js.native
-  sealed trait VoidType extends js.Object
-  
-  @js.native
-  sealed trait WithUnion extends js.Object
-  
-  @js.native
-  sealed trait brand extends js.Object
-  
-  @js.native
-  sealed trait partial extends js.Object
-  
-  @js.native
-  sealed trait sum extends js.Object
-  
-  @js.native
-  sealed trait tuple extends js.Object
-  
-  @js.native
-  sealed trait `type` extends js.Object
-  
-  @js.native
-  sealed trait union extends js.Object
-  
+  sealed trait AnyArrayType extends StObject
   @scala.inline
   def AnyArrayType: AnyArrayType = "AnyArrayType".asInstanceOf[AnyArrayType]
+  
+  @js.native
+  sealed trait AnyDictionaryType extends StObject
   @scala.inline
   def AnyDictionaryType: AnyDictionaryType = "AnyDictionaryType".asInstanceOf[AnyDictionaryType]
+  
+  @js.native
+  sealed trait AnyType extends StObject
   @scala.inline
   def AnyType: AnyType = "AnyType".asInstanceOf[AnyType]
+  
+  @js.native
+  sealed trait ArrayType extends StObject
   @scala.inline
   def ArrayType: ArrayType = "ArrayType".asInstanceOf[ArrayType]
+  
+  @js.native
+  sealed trait BigIntType extends StObject
   @scala.inline
   def BigIntType: BigIntType = "BigIntType".asInstanceOf[BigIntType]
+  
+  @js.native
+  sealed trait BooleanType extends StObject
   @scala.inline
   def BooleanType: BooleanType = "BooleanType".asInstanceOf[BooleanType]
-  @scala.inline
-  def Codec: Codec = "Codec".asInstanceOf[Codec]
+  
+  @js.native
+  sealed trait Compact extends StObject
   @scala.inline
   def Compact: Compact = "Compact".asInstanceOf[Compact]
+  
+  @js.native
+  sealed trait Concat extends StObject
   @scala.inline
-  def Decoder: Decoder = "Decoder".asInstanceOf[Decoder]
+  def Concat: Concat = "Concat".asInstanceOf[Concat]
+  
+  @js.native
+  sealed trait DictionaryType extends StObject
   @scala.inline
   def DictionaryType: DictionaryType = "DictionaryType".asInstanceOf[DictionaryType]
+  
+  @js.native
+  sealed trait Either extends StObject
   @scala.inline
-  def Encoder: Encoder = "Encoder".asInstanceOf[Encoder]
+  def Either: Either = "Either".asInstanceOf[Either]
+  
+  @js.native
+  sealed trait Exact extends StObject
   @scala.inline
   def Exact: Exact = "Exact".asInstanceOf[Exact]
+  
+  @js.native
+  sealed trait ExactType extends StObject
   @scala.inline
   def ExactType: ExactType = "ExactType".asInstanceOf[ExactType]
+  
+  @js.native
+  sealed trait FunctionType extends StObject
   @scala.inline
   def FunctionType: FunctionType = "FunctionType".asInstanceOf[FunctionType]
+  
+  @js.native
+  sealed trait Index extends StObject
   @scala.inline
-  def Guard: Guard = "Guard".asInstanceOf[Guard]
+  def Index: Index = "Index".asInstanceOf[Index]
+  
+  @js.native
+  sealed trait InterfaceType extends StObject
   @scala.inline
   def InterfaceType: InterfaceType = "InterfaceType".asInstanceOf[InterfaceType]
+  
+  @js.native
+  sealed trait IntersectionType extends StObject
   @scala.inline
   def IntersectionType: IntersectionType = "IntersectionType".asInstanceOf[IntersectionType]
+  
+  @js.native
+  sealed trait Key extends StObject
+  @scala.inline
+  def Key: Key = "Key".asInstanceOf[Key]
+  
+  @js.native
+  sealed trait KeyofType extends StObject
   @scala.inline
   def KeyofType: KeyofType = "KeyofType".asInstanceOf[KeyofType]
+  
+  @js.native
+  sealed trait Lazy extends StObject
+  @scala.inline
+  def Lazy: Lazy = "Lazy".asInstanceOf[Lazy]
+  
+  @js.native
+  sealed trait Leaf extends StObject
+  @scala.inline
+  def Leaf: Leaf = "Leaf".asInstanceOf[Leaf]
+  
+  @js.native
+  sealed trait LiteralType extends StObject
   @scala.inline
   def LiteralType: LiteralType = "LiteralType".asInstanceOf[LiteralType]
+  
+  @js.native
+  sealed trait Member extends StObject
+  @scala.inline
+  def Member: Member = "Member".asInstanceOf[Member]
+  
+  @js.native
+  sealed trait NeverType extends StObject
   @scala.inline
   def NeverType: NeverType = "NeverType".asInstanceOf[NeverType]
+  
+  @js.native
+  sealed trait NullType extends StObject
   @scala.inline
   def NullType: NullType = "NullType".asInstanceOf[NullType]
+  
+  @js.native
+  sealed trait NumberType extends StObject
   @scala.inline
   def NumberType: NumberType = "NumberType".asInstanceOf[NumberType]
+  
+  @js.native
+  sealed trait ObjectType extends StObject
   @scala.inline
   def ObjectType: ObjectType = "ObjectType".asInstanceOf[ObjectType]
+  
+  @js.native
+  sealed trait Of extends StObject
+  @scala.inline
+  def Of: Of = "Of".asInstanceOf[Of]
+  
+  @js.native
+  sealed trait OutputOfDictionary extends StObject
   @scala.inline
   def OutputOfDictionary: OutputOfDictionary = "OutputOfDictionary".asInstanceOf[OutputOfDictionary]
+  
+  @js.native
+  sealed trait OutputOfPartialProps extends StObject
   @scala.inline
   def OutputOfPartialProps: OutputOfPartialProps = "OutputOfPartialProps".asInstanceOf[OutputOfPartialProps]
+  
+  @js.native
+  sealed trait OutputOfProps extends StObject
   @scala.inline
   def OutputOfProps: OutputOfProps = "OutputOfProps".asInstanceOf[OutputOfProps]
+  
+  @js.native
+  sealed trait PartialC extends StObject
   @scala.inline
   def PartialC: PartialC = "PartialC".asInstanceOf[PartialC]
+  
+  @js.native
+  sealed trait PartialType extends StObject
   @scala.inline
   def PartialType: PartialType = "PartialType".asInstanceOf[PartialType]
+  
+  @js.native
+  sealed trait ReadonlyArrayType extends StObject
   @scala.inline
   def ReadonlyArrayType: ReadonlyArrayType = "ReadonlyArrayType".asInstanceOf[ReadonlyArrayType]
-  @scala.inline
-  def ReadonlyC: ReadonlyC = "ReadonlyC".asInstanceOf[ReadonlyC]
+  
+  @js.native
+  sealed trait ReadonlyType extends StObject
   @scala.inline
   def ReadonlyType: ReadonlyType = "ReadonlyType".asInstanceOf[ReadonlyType]
+  
+  @js.native
+  sealed trait RecordC extends StObject
   @scala.inline
   def RecordC: RecordC = "RecordC".asInstanceOf[RecordC]
+  
+  @js.native
+  sealed trait RecursiveType extends StObject
   @scala.inline
   def RecursiveType: RecursiveType = "RecursiveType".asInstanceOf[RecursiveType]
+  
+  @js.native
+  sealed trait RefinementType extends StObject
   @scala.inline
   def RefinementType: RefinementType = "RefinementType".asInstanceOf[RefinementType]
+  
+  @js.native
+  sealed trait Schemable extends StObject
   @scala.inline
   def Schemable: Schemable = "Schemable".asInstanceOf[Schemable]
+  
+  @js.native
+  sealed trait Schemable1 extends StObject
+  @scala.inline
+  def Schemable1: Schemable1 = "Schemable1".asInstanceOf[Schemable1]
+  
+  @js.native
+  sealed trait Schemable2C extends StObject
+  @scala.inline
+  def Schemable2C: Schemable2C = "Schemable2C".asInstanceOf[Schemable2C]
+  
+  @js.native
+  sealed trait StrictC extends StObject
   @scala.inline
   def StrictC: StrictC = "StrictC".asInstanceOf[StrictC]
+  
+  @js.native
+  sealed trait StrictType extends StObject
   @scala.inline
   def StrictType: StrictType = "StrictType".asInstanceOf[StrictType]
+  
+  @js.native
+  sealed trait StringType extends StObject
   @scala.inline
   def StringType: StringType = "StringType".asInstanceOf[StringType]
+  
+  @js.native
+  sealed trait TaggedProps extends StObject
   @scala.inline
   def TaggedProps: TaggedProps = "TaggedProps".asInstanceOf[TaggedProps]
+  
+  @js.native
+  sealed trait TaskEither extends StObject
+  @scala.inline
+  def TaskEither: TaskEither = "TaskEither".asInstanceOf[TaskEither]
+  
+  @js.native
+  sealed trait TupleType extends StObject
   @scala.inline
   def TupleType: TupleType = "TupleType".asInstanceOf[TupleType]
+  
+  @js.native
+  sealed trait TypeC extends StObject
   @scala.inline
   def TypeC: TypeC = "TypeC".asInstanceOf[TypeC]
+  
+  @js.native
+  sealed trait TypeOfDictionary extends StObject
   @scala.inline
   def TypeOfDictionary: TypeOfDictionary = "TypeOfDictionary".asInstanceOf[TypeOfDictionary]
+  
+  @js.native
+  sealed trait TypeOfPartialProps extends StObject
   @scala.inline
   def TypeOfPartialProps: TypeOfPartialProps = "TypeOfPartialProps".asInstanceOf[TypeOfPartialProps]
+  
+  @js.native
+  sealed trait TypeOfProps extends StObject
   @scala.inline
   def TypeOfProps: TypeOfProps = "TypeOfProps".asInstanceOf[TypeOfProps]
+  
+  @js.native
+  sealed trait UndefinedType extends StObject
   @scala.inline
   def UndefinedType: UndefinedType = "UndefinedType".asInstanceOf[UndefinedType]
+  
+  @js.native
+  sealed trait UnionType extends StObject
   @scala.inline
   def UnionType: UnionType = "UnionType".asInstanceOf[UnionType]
+  
+  @js.native
+  sealed trait UnknownType extends StObject
   @scala.inline
   def UnknownType: UnknownType = "UnknownType".asInstanceOf[UnknownType]
+  
+  @js.native
+  sealed trait VoidType extends StObject
   @scala.inline
   def VoidType: VoidType = "VoidType".asInstanceOf[VoidType]
+  
+  @js.native
+  sealed trait WithUnion extends StObject
   @scala.inline
   def WithUnion: WithUnion = "WithUnion".asInstanceOf[WithUnion]
+  
+  @js.native
+  sealed trait WithUnion1 extends StObject
+  @scala.inline
+  def WithUnion1: WithUnion1 = "WithUnion1".asInstanceOf[WithUnion1]
+  
+  @js.native
+  sealed trait WithUnion2C extends StObject
+  @scala.inline
+  def WithUnion2C: WithUnion2C = "WithUnion2C".asInstanceOf[WithUnion2C]
+  
+  @js.native
+  sealed trait Wrap extends StObject
+  @scala.inline
+  def Wrap: Wrap = "Wrap".asInstanceOf[Wrap]
+  
+  @js.native
+  sealed trait brand extends StObject
   @scala.inline
   def brand: brand = "brand".asInstanceOf[brand]
+  
+  @js.native
+  sealed trait fromPartial extends StObject
+  @scala.inline
+  def fromPartial: fromPartial = "fromPartial".asInstanceOf[fromPartial]
+  
+  @js.native
+  sealed trait fromTuple extends StObject
+  @scala.inline
+  def fromTuple: fromTuple = "fromTuple".asInstanceOf[fromTuple]
+  
+  @js.native
+  sealed trait fromType extends StObject
+  @scala.inline
+  def fromType: fromType = "fromType".asInstanceOf[fromType]
+  
+  @js.native
+  sealed trait optional
+    extends StObject
+       with Kind
+  @scala.inline
+  def optional: optional = "optional".asInstanceOf[optional]
+  
+  @js.native
+  sealed trait partial extends StObject
   @scala.inline
   def partial: partial = "partial".asInstanceOf[partial]
+  
+  @js.native
+  sealed trait required
+    extends StObject
+       with Kind
+  @scala.inline
+  def required: required = "required".asInstanceOf[required]
+  
+  @js.native
+  sealed trait sum extends StObject
   @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
+  
+  @js.native
+  sealed trait tuple extends StObject
   @scala.inline
   def tuple: tuple = "tuple".asInstanceOf[tuple]
+  
+  @js.native
+  sealed trait `type` extends StObject
   @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
+  
+  @js.native
+  sealed trait union extends StObject
   @scala.inline
   def union: union = "union".asInstanceOf[union]
 }
-

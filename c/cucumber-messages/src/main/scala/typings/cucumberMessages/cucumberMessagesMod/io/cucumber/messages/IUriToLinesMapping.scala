@@ -2,22 +2,20 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an UriToLinesMapping. */
-@js.native
 trait IUriToLinesMapping extends StObject {
   
   /** UriToLinesMapping absolutePath */
-  var absolutePath: js.UndefOr[String | Null] = js.native
+  var absolutePath: js.UndefOr[String | Null] = js.undefined
   
   /** UriToLinesMapping lines */
   var lines: js.UndefOr[
     (js.Array[
-      Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
+      Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
     ]) | Null
-  ] = js.native
+  ] = js.undefined
 }
 object IUriToLinesMapping {
   
@@ -42,7 +40,7 @@ object IUriToLinesMapping {
     @scala.inline
     def setLines(
       value: js.Array[
-          Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
+          Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
         ]
     ): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
@@ -53,6 +51,8 @@ object IUriToLinesMapping {
     def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
     @scala.inline
-    def setLinesVarargs(value: (Double | js.Any)*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    def setLinesVarargs(
+      value: (Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any))*
+    ): Self = StObject.set(x, "lines", js.Array(value :_*))
   }
 }

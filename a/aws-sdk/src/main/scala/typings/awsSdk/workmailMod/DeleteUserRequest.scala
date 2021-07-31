@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUserRequest extends StObject {
   
   /**
     * The organization that contains the user to be deleted.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The identifier of the user to be deleted.
     */
-  var UserId: WorkMailIdentifier = js.native
+  var UserId: WorkMailIdentifier
 }
 object DeleteUserRequest {
   

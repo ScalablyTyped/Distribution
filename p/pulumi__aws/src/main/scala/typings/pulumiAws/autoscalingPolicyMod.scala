@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autoscalingPolicyMod {
@@ -93,6 +92,10 @@ object autoscalingPolicyMod {
   /* static members */
   object Policy {
     
+    @JSImport("@pulumi/aws/autoscaling/policy", "Policy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Policy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -102,77 +105,71 @@ object autoscalingPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/autoscaling/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Policy = js.native
-    @JSImport("@pulumi/aws/autoscaling/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Policy = js.native
-    @JSImport("@pulumi/aws/autoscaling/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyState): Policy = js.native
-    @JSImport("@pulumi/aws/autoscaling/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): Policy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyState): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Policy]
     
     /**
       * Returns true if the given object is an instance of Policy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/autoscaling/policy", "Policy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ Boolean]
   }
   
-  @js.native
   trait PolicyArgs extends StObject {
     
     /**
       * Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
       */
-    val adjustmentType: js.UndefOr[Input[String]] = js.native
+    val adjustmentType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the autoscaling group.
       */
-    val autoscalingGroupName: Input[String] = js.native
+    val autoscalingGroupName: Input[String]
     
     /**
       * The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
       */
-    val cooldown: js.UndefOr[Input[Double]] = js.native
+    val cooldown: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
       */
-    val estimatedInstanceWarmup: js.UndefOr[Input[Double]] = js.native
+    val estimatedInstanceWarmup: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
       */
-    val metricAggregationType: js.UndefOr[Input[String]] = js.native
+    val metricAggregationType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Minimum value to scale by when `adjustmentType` is set to `PercentChangeInCapacity`.
       */
-    val minAdjustmentMagnitude: js.UndefOr[Input[Double]] = js.native
+    val minAdjustmentMagnitude: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of the dimension.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
       */
-    val policyType: js.UndefOr[Input[String]] = js.native
+    val policyType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of members by which to
       * scale, when the adjustment bounds are breached. A positive value scales
       * up. A negative value scales down.
       */
-    val scalingAdjustment: js.UndefOr[Input[Double]] = js.native
+    val scalingAdjustment: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A set of adjustments that manage
@@ -180,12 +177,12 @@ object autoscalingPolicyMod {
       */
     val stepAdjustments: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.autoscaling.PolicyStepAdjustment]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A target tracking policy. These have the following structure:
       */
-    val targetTrackingConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.PolicyTargetTrackingConfiguration]] = js.native
+    val targetTrackingConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.PolicyTargetTrackingConfiguration]] = js.undefined
   }
   object PolicyArgs {
     
@@ -266,60 +263,59 @@ object autoscalingPolicyMod {
     }
   }
   
-  @js.native
   trait PolicyState extends StObject {
     
     /**
       * Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
       */
-    val adjustmentType: js.UndefOr[Input[String]] = js.native
+    val adjustmentType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN assigned by AWS to the scaling policy.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the autoscaling group.
       */
-    val autoscalingGroupName: js.UndefOr[Input[String]] = js.native
+    val autoscalingGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
       */
-    val cooldown: js.UndefOr[Input[Double]] = js.native
+    val cooldown: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
       */
-    val estimatedInstanceWarmup: js.UndefOr[Input[Double]] = js.native
+    val estimatedInstanceWarmup: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
       */
-    val metricAggregationType: js.UndefOr[Input[String]] = js.native
+    val metricAggregationType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Minimum value to scale by when `adjustmentType` is set to `PercentChangeInCapacity`.
       */
-    val minAdjustmentMagnitude: js.UndefOr[Input[Double]] = js.native
+    val minAdjustmentMagnitude: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of the dimension.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
       */
-    val policyType: js.UndefOr[Input[String]] = js.native
+    val policyType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of members by which to
       * scale, when the adjustment bounds are breached. A positive value scales
       * up. A negative value scales down.
       */
-    val scalingAdjustment: js.UndefOr[Input[Double]] = js.native
+    val scalingAdjustment: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A set of adjustments that manage
@@ -327,12 +323,12 @@ object autoscalingPolicyMod {
       */
     val stepAdjustments: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.autoscaling.PolicyStepAdjustment]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A target tracking policy. These have the following structure:
       */
-    val targetTrackingConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.PolicyTargetTrackingConfiguration]] = js.native
+    val targetTrackingConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.PolicyTargetTrackingConfiguration]] = js.undefined
   }
   object PolicyState {
     

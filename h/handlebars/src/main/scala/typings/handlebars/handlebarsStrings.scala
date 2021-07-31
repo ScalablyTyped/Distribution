@@ -2,7 +2,6 @@ package typings.handlebars
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handlebarsStrings {
@@ -88,42 +87,58 @@ object handlebarsStrings {
   def UndefinedLiteral: UndefinedLiteral = "UndefinedLiteral".asInstanceOf[UndefinedLiteral]
   
   @js.native
-  sealed trait blockHelperMissing extends BuiltinHelperName
+  sealed trait blockHelperMissing
+    extends StObject
+       with BuiltinHelperName
   @scala.inline
   def blockHelperMissing: blockHelperMissing = "blockHelperMissing".asInstanceOf[blockHelperMissing]
   
   @js.native
-  sealed trait each extends BuiltinHelperName
+  sealed trait each
+    extends StObject
+       with BuiltinHelperName
   @scala.inline
   def each: each = "each".asInstanceOf[each]
   
   @js.native
-  sealed trait helperMissing extends BuiltinHelperName
+  sealed trait helperMissing
+    extends StObject
+       with BuiltinHelperName
   @scala.inline
   def helperMissing: helperMissing = "helperMissing".asInstanceOf[helperMissing]
   
   @js.native
-  sealed trait `if` extends BuiltinHelperName
+  sealed trait `if`
+    extends StObject
+       with BuiltinHelperName
   @scala.inline
   def `if`: `if` = "if".asInstanceOf[`if`]
   
   @js.native
-  sealed trait log extends BuiltinHelperName
+  sealed trait log
+    extends StObject
+       with BuiltinHelperName
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   
   @js.native
-  sealed trait lookup extends BuiltinHelperName
+  sealed trait lookup
+    extends StObject
+       with BuiltinHelperName
   @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
   
   @js.native
-  sealed trait unless extends BuiltinHelperName
+  sealed trait unless
+    extends StObject
+       with BuiltinHelperName
   @scala.inline
   def unless: unless = "unless".asInstanceOf[unless]
   
   @js.native
-  sealed trait `with` extends BuiltinHelperName
+  sealed trait `with`
+    extends StObject
+       with BuiltinHelperName
   @scala.inline
   def `with`: `with` = "with".asInstanceOf[`with`]
 }

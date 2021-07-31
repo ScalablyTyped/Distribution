@@ -3,43 +3,43 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RGBA extends Node {
+trait RGBA
+  extends StObject
+     with Node {
   
-  var a: Double = js.native
+  var a: Double
   
   /**
     * Add r,g,b,a to the current component values
     */
-  def add(r: Double, g: Double, b: Double, a: Double): RGBA = js.native
+  def add(r: Double, g: Double, b: Double, a: Double): RGBA
   
-  var b: Double = js.native
+  var b: Double
   
   /**
     * Divide rgb components by `n`.
     */
-  def divide(n: Double): RGBA = js.native
+  def divide(n: Double): RGBA
   
-  var g: Double = js.native
+  var g: Double
   
-  var hsla: HSLA = js.native
+  var hsla: HSLA
   
   /**
     * Multiply rgb components by `n`.
     */
-  def multiply(n: Double): RGBA = js.native
+  def multiply(n: Double): RGBA
   
-  var r: Double = js.native
+  var r: Double
   
-  var rgba: RGBA = js.native
+  var rgba: RGBA
   
   /**
     * Subtract r,g,b,a from the current component values
     */
-  def substract(r: Double, g: Double, b: Double, a: Double): RGBA = js.native
+  def substract(r: Double, g: Double, b: Double, a: Double): RGBA
 }
 object RGBA {
   

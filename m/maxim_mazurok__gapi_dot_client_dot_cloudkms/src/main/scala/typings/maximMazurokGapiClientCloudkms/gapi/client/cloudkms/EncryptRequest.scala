@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait EncryptRequest extends StObject {
     * version's protection_level. For SOFTWARE keys, the AAD must be no larger than 64KiB. For HSM keys, the combined length of the plaintext and additional_authenticated_data fields must
     * be no larger than 8KiB.
     */
-  var additionalAuthenticatedData: js.UndefOr[String] = js.native
+  var additionalAuthenticatedData: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. An optional CRC32C checksum of the EncryptRequest.additional_authenticated_data. If specified, KeyManagementService will verify the integrity of the received
@@ -23,13 +21,13 @@ trait EncryptRequest extends StObject {
     * different languages. However, it is a non-negative integer, which will never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support this type. NOTE: This
     * field is in Beta.
     */
-  var additionalAuthenticatedDataCrc32c: js.UndefOr[String] = js.native
+  var additionalAuthenticatedDataCrc32c: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The data to encrypt. Must be no larger than 64KiB. The maximum size depends on the key version's protection_level. For SOFTWARE keys, the plaintext must be no larger than
     * 64KiB. For HSM keys, the combined length of the plaintext and additional_authenticated_data fields must be no larger than 8KiB.
     */
-  var plaintext: js.UndefOr[String] = js.native
+  var plaintext: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. An optional CRC32C checksum of the EncryptRequest.plaintext. If specified, KeyManagementService will verify the integrity of the received EncryptRequest.plaintext using
@@ -38,7 +36,7 @@ trait EncryptRequest extends StObject {
     * computation of the CRC32C checksum. Note: This field is defined as int64 for reasons of compatibility across different languages. However, it is a non-negative integer, which will
     * never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support this type. NOTE: This field is in Beta.
     */
-  var plaintextCrc32c: js.UndefOr[String] = js.native
+  var plaintextCrc32c: js.UndefOr[String] = js.undefined
 }
 object EncryptRequest {
   

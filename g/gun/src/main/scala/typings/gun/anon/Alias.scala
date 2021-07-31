@@ -2,19 +2,17 @@ package typings.gun.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alias extends StObject {
   
-  var alias: String = js.native
+  var alias: String
   
-  var auth: js.Any = js.native
+  var auth: js.Any
   
-  var epub: String = js.native
+  var epub: String
   
-  var pub: String = js.native
+  var pub: String
 }
 object Alias {
   

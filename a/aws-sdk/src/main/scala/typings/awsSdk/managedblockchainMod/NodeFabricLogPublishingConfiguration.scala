@@ -2,21 +2,19 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeFabricLogPublishingConfiguration extends StObject {
   
   /**
     * Configuration properties for logging events associated with chaincode execution on a peer node. Chaincode logs contain the results of instantiating, invoking, and querying the chaincode. A peer can run multiple instances of chaincode. When enabled, a log stream is created for all chaincodes, with an individual log stream for each chaincode.
     */
-  var ChaincodeLogs: js.UndefOr[LogConfigurations] = js.native
+  var ChaincodeLogs: js.UndefOr[LogConfigurations] = js.undefined
   
   /**
     * Configuration properties for a peer node log. Peer node logs contain messages generated when your client submits transaction proposals to peer nodes, requests to join channels, enrolls an admin peer, and lists the chaincode instances on a peer node. 
     */
-  var PeerLogs: js.UndefOr[LogConfigurations] = js.native
+  var PeerLogs: js.UndefOr[LogConfigurations] = js.undefined
 }
 object NodeFabricLogPublishingConfiguration {
   

@@ -2,7 +2,6 @@ package typings.arbiter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ArbiterDef {
@@ -23,9 +22,9 @@ object ArbiterDef {
       * @param data Pass data to subscribers that contains details about the message.
       */
     def publish(msg: String): Boolean = js.native
-    def publish(msg: String, data: js.UndefOr[scala.Nothing], options: PublishOptions): Boolean = js.native
     def publish(msg: String, data: js.Any): Boolean = js.native
     def publish(msg: String, data: js.Any, options: PublishOptions): Boolean = js.native
+    def publish(msg: String, data: Unit, options: PublishOptions): Boolean = js.native
     
     /**
       * After unsubscribing, you can later re-subscribe to begin receiving messages again.
@@ -83,27 +82,26 @@ object ArbiterDef {
     var version: String = js.native
   }
   
-  @js.native
   trait PublishOptions extends StObject {
     
     /**
       * If you wish to notify the subscribers but return from the publish() call before
       * the subscriber functions execute, use asynchronous mode
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, subscribers can return "false" to prevent subsequent subscribers from
       * receiving the message. By passing cancelable:false in the options, the publisher
       * can prevent canceling.
       */
-    var cancelable: js.UndefOr[Boolean] = js.native
+    var cancelable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If the publishers wants subscribers to be notified even if they subscribe later,
       * setting the persist flag will do that.
       */
-    var persist: js.UndefOr[Boolean] = js.native
+    var persist: js.UndefOr[Boolean] = js.undefined
   }
   object PublishOptions {
     
@@ -138,25 +136,24 @@ object ArbiterDef {
   
   type SubscribeHandler = js.Function3[/* data */ js.Any, /* message */ String, /* subscriber_context */ js.Any, Unit]
   
-  @js.native
   trait SubscribeOptions extends StObject {
     
     /**
       * A subscriber can be set to execute asynchronously, even if the message wasn't published as async.
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If your subscriber is not interested in any past messages that may have been
       * persisted, you can force them to be ignored.
       */
-    var persist: js.UndefOr[Boolean] = js.native
+    var persist: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, all subscribers have a priority of 0. Higher values get higher
       * priority and are executed first. Negative values are allowed.
       */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
   }
   object SubscribeOptions {
     

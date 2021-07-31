@@ -2,26 +2,24 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VocabularyFilterInfo extends StObject {
   
   /**
     * The language code of the words in the vocabulary filter.
     */
-  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.native
+  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
   
   /**
     * The date and time that the vocabulary was last updated.
     */
-  var LastModifiedTime: js.UndefOr[DateTime] = js.native
+  var LastModifiedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the vocabulary filter. The name must be unique in the account that holds the filter.
     */
-  var VocabularyFilterName: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyFilterName] = js.native
+  var VocabularyFilterName: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyFilterName] = js.undefined
 }
 object VocabularyFilterInfo {
   

@@ -2,15 +2,15 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomDomainsManagerOptions extends BaseClientOptions {
+trait CustomDomainsManagerOptions
+  extends StObject
+     with BaseClientOptions {
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var retry: js.UndefOr[RetryOptions] = js.native
+  var retry: js.UndefOr[RetryOptions] = js.undefined
 }
 object CustomDomainsManagerOptions {
   

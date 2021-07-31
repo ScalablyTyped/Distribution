@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateEmailIdentityRequest extends StObject {
   
   /**
     * If your request includes this object, Amazon SES configures the identity to use Bring Your Own DKIM (BYODKIM) for DKIM authentication purposes, as opposed to the default method, Easy DKIM. You can only specify this object if the email identity is a domain, as opposed to an address.
     */
-  var DkimSigningAttributes: js.UndefOr[typings.awsSdk.sesv2Mod.DkimSigningAttributes] = js.native
+  var DkimSigningAttributes: js.UndefOr[typings.awsSdk.sesv2Mod.DkimSigningAttributes] = js.undefined
   
   /**
     * The email address or domain that you want to verify.
     */
-  var EmailIdentity: Identity = js.native
+  var EmailIdentity: Identity
   
   /**
     * An array of objects that define the tags (keys and values) that you want to associate with the email identity.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateEmailIdentityRequest {
   

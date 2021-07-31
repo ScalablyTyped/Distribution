@@ -2,37 +2,35 @@ package typings.paypalCordovaPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayPalItem extends StObject {
   
   /**
     * ISO standard currency code.
     */
-  var currency: String = js.native
+  var currency: String
   
   /**
     * Name of the item. 127 characters max.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Unit price for this item 10 characters max.
     * May be negative for "coupon" etc.
     */
-  var price: String = js.native
+  var price: String
   
   /**
     * Number of units. 10 characters max.
     */
-  var quantity: Double = js.native
+  var quantity: Double
   
   /**
     * The stock keeping unit for this item. 50 characters max (optional).
     */
-  var sku: String = js.native
+  var sku: String
 }
 object PayPalItem {
   

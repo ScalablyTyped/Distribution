@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistogramViewModelProperties extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait HistogramViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#average)
     */
-  var average: js.UndefOr[Double] = js.native
+  var average: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of objects representing each bin in the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#bins)
     */
-  var bins: js.UndefOr[js.Array[Bin]] = js.native
+  var bins: js.UndefOr[js.Array[Bin]] = js.undefined
   
   /**
     * A function used to format labels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#labelFormatFunction)
     */
-  var labelFormatFunction: js.UndefOr[LabelFormatter] = js.native
+  var labelFormatFunction: js.UndefOr[LabelFormatter] = js.undefined
   
   /**
     * The maximum value or bound of the entire histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#max)
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum value or bound of the entire histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#min)
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
 }
 object HistogramViewModelProperties {
   

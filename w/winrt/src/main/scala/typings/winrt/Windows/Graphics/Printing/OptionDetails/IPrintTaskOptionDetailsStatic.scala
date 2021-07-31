@@ -3,13 +3,11 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 import typings.winrt.Windows.Graphics.Printing.PrintTaskOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPrintTaskOptionDetailsStatic extends StObject {
   
-  def getFromPrintTaskOptions(printTaskOptions: PrintTaskOptions): PrintTaskOptionDetails = js.native
+  def getFromPrintTaskOptions(printTaskOptions: PrintTaskOptions): PrintTaskOptionDetails
 }
 object IPrintTaskOptionDetailsStatic {
   

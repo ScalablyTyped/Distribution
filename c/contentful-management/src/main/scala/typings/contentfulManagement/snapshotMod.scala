@@ -7,22 +7,23 @@ import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.commonTypesMod.DefaultElements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snapshotMod {
   
-  @JSImport("contentful-management/dist/typings/entities/snapshot", "wrapSnapshot")
+  @JSImport("contentful-management/dist/typings/entities/snapshot", JSImport.Namespace)
   @js.native
-  def wrapSnapshot[T](_http: AxiosInstance, data: SnapshotProps[T]): Snapshot[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/snapshot", "wrapSnapshotCollection")
-  @js.native
-  def wrapSnapshotCollection[T](http: AxiosInstance, data: CollectionProp[SnapshotProps[T]]): Collection[Snapshot[T], SnapshotProps[T]] = js.native
+  @scala.inline
+  def wrapSnapshot[T](_http: AxiosInstance, data: SnapshotProps[T]): Snapshot[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSnapshot")(_http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Snapshot[T]]
   
-  @js.native
+  @scala.inline
+  def wrapSnapshotCollection[T](http: AxiosInstance, data: CollectionProp[SnapshotProps[T]]): Collection[Snapshot[T], SnapshotProps[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSnapshotCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Snapshot[T], SnapshotProps[T]]]
+  
   trait Snapshot[T]
-    extends SnapshotProps[T]
+    extends StObject
+       with SnapshotProps[T]
        with DefaultElements[SnapshotProps[T]]
   object Snapshot {
     
@@ -33,12 +34,11 @@ object snapshotMod {
     }
   }
   
-  @js.native
   trait SnapshotProps[T] extends StObject {
     
-    var snapshot: T = js.native
+    var snapshot: T
     
-    var sys: MetaSysPropssnapshotTypes = js.native
+    var sys: MetaSysPropssnapshotTypes
   }
   object SnapshotProps {
     
@@ -49,7 +49,7 @@ object snapshotMod {
     }
     
     @scala.inline
-    implicit class SnapshotPropsMutableBuilder[Self <: SnapshotProps[_], T] (val x: Self with SnapshotProps[T]) extends AnyVal {
+    implicit class SnapshotPropsMutableBuilder[Self <: SnapshotProps[?], T] (val x: Self & SnapshotProps[T]) extends AnyVal {
       
       @scala.inline
       def setSnapshot(value: T): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])

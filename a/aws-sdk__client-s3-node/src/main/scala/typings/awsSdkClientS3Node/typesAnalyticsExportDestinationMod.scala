@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Node.typesAnalyticsS3BucketDestinationMod.Analytics
 import typings.awsSdkClientS3Node.typesAnalyticsS3BucketDestinationMod.UnmarshalledAnalyticsS3BucketDestination
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAnalyticsExportDestinationMod {
   
-  @js.native
   trait AnalyticsExportDestination extends StObject {
     
     /**
       * <p>A destination signifying output to an S3 bucket.</p>
       */
-    var S3BucketDestination: AnalyticsS3BucketDestination = js.native
+    var S3BucketDestination: AnalyticsS3BucketDestination
   }
   object AnalyticsExportDestination {
     
@@ -33,14 +31,15 @@ object typesAnalyticsExportDestinationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAnalyticsExportDestination extends AnalyticsExportDestination {
+  trait UnmarshalledAnalyticsExportDestination
+    extends StObject
+       with AnalyticsExportDestination {
     
     /**
       * <p>A destination signifying output to an S3 bucket.</p>
       */
     @JSName("S3BucketDestination")
-    var S3BucketDestination_UnmarshalledAnalyticsExportDestination: UnmarshalledAnalyticsS3BucketDestination = js.native
+    var S3BucketDestination_UnmarshalledAnalyticsExportDestination: UnmarshalledAnalyticsS3BucketDestination
   }
   object UnmarshalledAnalyticsExportDestination {
     

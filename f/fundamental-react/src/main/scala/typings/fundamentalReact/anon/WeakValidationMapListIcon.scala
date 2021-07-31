@@ -4,16 +4,14 @@ import typings.fundamentalReact.iconMod.IconGlyph
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/List/List.ListIconProps> */
-@js.native
 trait WeakValidationMapListIcon extends StObject {
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var glyph: js.UndefOr[Validator[js.UndefOr[IconGlyph | Null]]] = js.native
+  var glyph: js.UndefOr[Validator[js.UndefOr[IconGlyph | Null]]] = js.undefined
 }
 object WeakValidationMapListIcon {
   

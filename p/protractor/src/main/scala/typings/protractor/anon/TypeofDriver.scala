@@ -9,11 +9,12 @@ import typings.seleniumWebdriver.mod.Session
 import typings.seleniumWebdriver.remoteMod.DriverService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofDriver extends Instantiable2[/* session */ Session, /* executor */ Executor, Driver] {
+trait TypeofDriver
+  extends StObject
+     with Instantiable2[/* session */ Session, /* executor */ Executor, Driver] {
   
   /**
     * Creates a new Firefox session.
@@ -38,8 +39,8 @@ trait TypeofDriver extends Instantiable2[/* session */ Session, /* executor */ E
     * @return {!Driver} A new driver instance.
     */
   def createSession(): Driver = js.native
-  def createSession(opt_config: js.UndefOr[scala.Nothing], opt_executor: Executor): Driver = js.native
-  def createSession(opt_config: js.UndefOr[scala.Nothing], opt_executor: DriverService): Driver = js.native
+  def createSession(opt_config: Unit, opt_executor: Executor): Driver = js.native
+  def createSession(opt_config: Unit, opt_executor: DriverService): Driver = js.native
   def createSession(opt_config: Options): Driver = js.native
   def createSession(opt_config: Options, opt_executor: Executor): Driver = js.native
   def createSession(opt_config: Options, opt_executor: DriverService): Driver = js.native

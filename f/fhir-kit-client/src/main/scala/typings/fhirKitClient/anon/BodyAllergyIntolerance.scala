@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.AllergyIntolerance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyAllergyIntolerance extends StObject {
   
-  var body: AllergyIntolerance = js.native
+  var body: AllergyIntolerance
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.AllergyIntolerance = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.AllergyIntolerance
 }
 object BodyAllergyIntolerance {
   
   @scala.inline
-  def apply(
-    body: AllergyIntolerance,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.AllergyIntolerance
-  ): BodyAllergyIntolerance = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: AllergyIntolerance, id: String): BodyAllergyIntolerance = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "AllergyIntolerance")
     __obj.asInstanceOf[BodyAllergyIntolerance]
   }
   

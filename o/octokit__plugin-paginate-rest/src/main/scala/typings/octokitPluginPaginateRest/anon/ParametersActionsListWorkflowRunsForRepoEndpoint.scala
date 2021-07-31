@@ -5,22 +5,20 @@ import typings.octokitTypes.endpointsMod.ActionsListWorkflowRunsForRepoResponseD
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsListWorkflowRunsForRepoEndpoint extends StObject {
   
-  var parameters: ActionsListWorkflowRunsForRepoEndpoint = js.native
+  var parameters: ActionsListWorkflowRunsForRepoEndpoint
   
-  var response: OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `9` = js.native
+  var response: OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] & `9`
 }
 object ParametersActionsListWorkflowRunsForRepoEndpoint {
   
   @scala.inline
   def apply(
     parameters: ActionsListWorkflowRunsForRepoEndpoint,
-    response: OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `9`
+    response: OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] & `9`
   ): ParametersActionsListWorkflowRunsForRepoEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersActionsListWorkflowRunsForRepoEndpoint]
@@ -33,6 +31,6 @@ object ParametersActionsListWorkflowRunsForRepoEndpoint {
     def setParameters(value: ActionsListWorkflowRunsForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `9`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] & `9`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

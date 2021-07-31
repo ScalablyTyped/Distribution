@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIM3DSymbolProperties extends StObject {
   
   /**
@@ -13,33 +11,33 @@ trait CIM3DSymbolProperties extends StObject {
     */
   var dominantSizeAxis3D: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DominantSizeAxis * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The rotation order 3D.
     */
   var rotationOrder3D: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RotationOrder * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The scale Y.
     */
-  var scaleY: js.UndefOr[Double] = js.native
+  var scaleY: js.UndefOr[Double] = js.undefined
   
   /**
     * The scale Z.
     */
-  var scaleZ: js.UndefOr[Double] = js.native
+  var scaleZ: js.UndefOr[Double] = js.undefined
   
-  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIM3DSymbolProperties = js.native
+  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIM3DSymbolProperties
 }
 object CIM3DSymbolProperties {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIM3DSymbolProperties): CIM3DSymbolProperties = {
+  def apply(): CIM3DSymbolProperties = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIM3DSymbolProperties")
     __obj.asInstanceOf[CIM3DSymbolProperties]
   }
   

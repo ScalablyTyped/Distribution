@@ -2,19 +2,17 @@ package typings.reactJoyride.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FloaterProps extends StObject {
   
-  var disableAnimation: js.UndefOr[Boolean] = js.native
+  var disableAnimation: js.UndefOr[Boolean] = js.undefined
   
-  var options: js.UndefOr[GenericObject] = js.native
+  var options: js.UndefOr[GenericObject] = js.undefined
   
-  var styles: js.UndefOr[GenericObject] = js.native
+  var styles: js.UndefOr[GenericObject] = js.undefined
   
-  var wrapperOptions: js.UndefOr[GenericObject] = js.native
+  var wrapperOptions: js.UndefOr[GenericObject] = js.undefined
 }
 object FloaterProps {
   

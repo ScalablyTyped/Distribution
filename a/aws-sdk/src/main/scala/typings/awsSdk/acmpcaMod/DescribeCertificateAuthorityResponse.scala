@@ -2,16 +2,14 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCertificateAuthorityResponse extends StObject {
   
   /**
     * A CertificateAuthority structure that contains information about your private CA.
     */
-  var CertificateAuthority: js.UndefOr[typings.awsSdk.acmpcaMod.CertificateAuthority] = js.native
+  var CertificateAuthority: js.UndefOr[typings.awsSdk.acmpcaMod.CertificateAuthority] = js.undefined
 }
 object DescribeCertificateAuthorityResponse {
   

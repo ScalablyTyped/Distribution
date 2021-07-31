@@ -2,64 +2,62 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Group resource in Directory API.
   */
-@js.native
 trait SchemaGroup extends StObject {
   
   /**
     * Is the group created by admin (Read-only) *
     */
-  var adminCreated: js.UndefOr[Boolean] = js.native
+  var adminCreated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * List of aliases (Read-only)
     */
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Description of the group
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Group direct members count
     */
-  var directMembersCount: js.UndefOr[String] = js.native
+  var directMembersCount: js.UndefOr[String] = js.undefined
   
   /**
     * Email of Group
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier of Group (Read-only)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Group name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * List of non editable aliases (Read-only)
     */
-  var nonEditableAliases: js.UndefOr[js.Array[String]] = js.native
+  var nonEditableAliases: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGroup {
   

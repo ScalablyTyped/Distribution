@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.pathMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeMod {
@@ -19,14 +18,14 @@ object treeMod {
     */
   class Tree[T] () extends StObject {
     def this(name_ : String) = this()
-    def this(name_ : js.UndefOr[scala.Nothing], parent_ : Tree[T]) = this()
     def this(name_ : String, parent_ : Tree[T]) = this()
-    def this(name_ : js.UndefOr[scala.Nothing], parent_ : js.UndefOr[scala.Nothing], node_ : TreeNode[T]) = this()
-    def this(name_ : js.UndefOr[scala.Nothing], parent_ : Null, node_ : TreeNode[T]) = this()
-    def this(name_ : js.UndefOr[scala.Nothing], parent_ : Tree[T], node_ : TreeNode[T]) = this()
-    def this(name_ : String, parent_ : js.UndefOr[scala.Nothing], node_ : TreeNode[T]) = this()
+    def this(name_ : Unit, parent_ : Tree[T]) = this()
     def this(name_ : String, parent_ : Null, node_ : TreeNode[T]) = this()
+    def this(name_ : String, parent_ : Unit, node_ : TreeNode[T]) = this()
     def this(name_ : String, parent_ : Tree[T], node_ : TreeNode[T]) = this()
+    def this(name_ : Unit, parent_ : Null, node_ : TreeNode[T]) = this()
+    def this(name_ : Unit, parent_ : Unit, node_ : TreeNode[T]) = this()
+    def this(name_ : Unit, parent_ : Tree[T], node_ : TreeNode[T]) = this()
     
     /**
       * Clears the contents of the tree node (its value and all children).
@@ -41,8 +40,8 @@ object treeMod {
       * @param {boolean=} includeSelf Whether to call action on this node as well.
       * @return {boolean} true if the action callback returned true.
       */
-    def forEachAncestor(action: js.Function1[/* tree */ Tree[T], _]): Boolean = js.native
-    def forEachAncestor(action: js.Function1[/* tree */ Tree[T], _], includeSelf: Boolean): Boolean = js.native
+    def forEachAncestor(action: js.Function1[/* tree */ Tree[T], js.Any]): Boolean = js.native
+    def forEachAncestor(action: js.Function1[/* tree */ Tree[T], js.Any], includeSelf: Boolean): Boolean = js.native
     
     /**
       * Calls action for each child of this tree node.
@@ -61,13 +60,9 @@ object treeMod {
       *   parent.
       */
     def forEachDescendant(action: js.Function1[/* tree */ Tree[T], Unit]): Unit = js.native
-    def forEachDescendant(
-      action: js.Function1[/* tree */ Tree[T], Unit],
-      includeSelf: js.UndefOr[scala.Nothing],
-      childrenFirst: Boolean
-    ): Unit = js.native
     def forEachDescendant(action: js.Function1[/* tree */ Tree[T], Unit], includeSelf: Boolean): Unit = js.native
     def forEachDescendant(action: js.Function1[/* tree */ Tree[T], Unit], includeSelf: Boolean, childrenFirst: Boolean): Unit = js.native
+    def forEachDescendant(action: js.Function1[/* tree */ Tree[T], Unit], includeSelf: Unit, childrenFirst: Boolean): Unit = js.native
     
     /**
       * Does a depth-first traversal of this node's descendants.  When a descendant with a value

@@ -4,24 +4,24 @@ import typings.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPutFunctionConcurrencyOutputMod {
   
-  @js.native
-  trait PutFunctionConcurrencyOutput extends OutputTypesUnion {
+  trait PutFunctionConcurrencyOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The number of concurrent executions reserved for this function. For more information, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/concurrent-executions.html">Managing Concurrency</a>.</p>
       */
-    var ReservedConcurrentExecutions: js.UndefOr[Double] = js.native
+    var ReservedConcurrentExecutions: js.UndefOr[Double] = js.undefined
   }
   object PutFunctionConcurrencyOutput {
     

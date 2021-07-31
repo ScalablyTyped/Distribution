@@ -12,7 +12,7 @@ CSS unit and integration testing
 | Keywords           | css, test, tdd |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 5120 |
+| # downloads        | 3882 |
 | # stars            | 2 |
 
 ## Links

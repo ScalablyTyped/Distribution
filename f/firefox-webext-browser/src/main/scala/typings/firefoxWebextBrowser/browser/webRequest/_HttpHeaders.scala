@@ -2,22 +2,20 @@ package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait _HttpHeaders extends StObject {
   
   /**
     * Value of the HTTP header if it cannot be represented by UTF-8, stored as individual byte values (0..255).
     */
-  var binaryValue: js.UndefOr[js.Array[Double]] = js.native
+  var binaryValue: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Name of the HTTP header. */
-  var name: String = js.native
+  var name: String
   
   /** Value of the HTTP header if it can be represented by UTF-8. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object _HttpHeaders {
   

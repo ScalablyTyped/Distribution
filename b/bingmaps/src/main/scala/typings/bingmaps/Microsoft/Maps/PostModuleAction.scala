@@ -2,20 +2,18 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostModuleAction extends StObject {
   
   /** A URL to load the data layer from. Currently supports data in GeoJSON, GeoRSS (with inline GML), GPX, KML, and KMZ formats. */
-  var addLayerFromUrl: String = js.native
+  var addLayerFromUrl: String
   
   /** Options to use when loading data via the GeoJson module. */
-  var geoJsonOption: js.UndefOr[IGeoJsonReadOptions] = js.native
+  var geoJsonOption: js.UndefOr[IGeoJsonReadOptions] = js.undefined
   
   /** Options to use when loading data via the GeoXml module. */
-  var geoXmlOption: js.UndefOr[IGeoXmlLayerOptions] = js.native
+  var geoXmlOption: js.UndefOr[IGeoXmlLayerOptions] = js.undefined
 }
 object PostModuleAction {
   

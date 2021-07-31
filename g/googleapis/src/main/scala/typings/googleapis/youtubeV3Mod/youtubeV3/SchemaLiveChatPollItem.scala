@@ -2,18 +2,16 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiveChatPollItem extends StObject {
   
   /**
     * Plain text description of the item.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var itemId: js.UndefOr[String] = js.native
+  var itemId: js.UndefOr[String] = js.undefined
 }
 object SchemaLiveChatPollItem {
   

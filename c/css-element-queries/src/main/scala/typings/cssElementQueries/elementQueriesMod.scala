@@ -2,7 +2,6 @@ package typings.cssElementQueries
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementQueriesMod {
@@ -13,20 +12,22 @@ object elementQueriesMod {
   /* static members */
   object default {
     
+    @JSImport("css-element-queries/src/ElementQueries", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Parses all available CSS and attach ResizeSensor to those elements which have rules attached.
       * Make sure this is called after 'load' event, because CSS files are not ready when domReady is fired.
       */
-    @JSImport("css-element-queries/src/ElementQueries", "default.init")
-    @js.native
-    def init(): Unit = js.native
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
     
     /**
       * Attaches to DOMLoadContent
       */
-    @JSImport("css-element-queries/src/ElementQueries", "default.listen")
-    @js.native
-    def listen(): Unit = js.native
+    @scala.inline
+    def listen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[Unit]
   }
   
   @JSImport("css-element-queries/src/ElementQueries", "ElementQueries")
@@ -35,19 +36,21 @@ object elementQueriesMod {
   /* static members */
   object ElementQueries {
     
+    @JSImport("css-element-queries/src/ElementQueries", "ElementQueries")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Parses all available CSS and attach ResizeSensor to those elements which have rules attached.
       * Make sure this is called after 'load' event, because CSS files are not ready when domReady is fired.
       */
-    @JSImport("css-element-queries/src/ElementQueries", "ElementQueries.init")
-    @js.native
-    def init(): Unit = js.native
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
     
     /**
       * Attaches to DOMLoadContent
       */
-    @JSImport("css-element-queries/src/ElementQueries", "ElementQueries.listen")
-    @js.native
-    def listen(): Unit = js.native
+    @scala.inline
+    def listen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[Unit]
   }
 }

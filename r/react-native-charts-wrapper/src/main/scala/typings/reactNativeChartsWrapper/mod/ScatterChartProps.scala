@@ -2,13 +2,13 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScatterChartProps extends BarLineChartBase {
+trait ScatterChartProps
+  extends StObject
+     with BarLineChartBase {
   
-  var data: js.UndefOr[ScatterData] = js.native
+  var data: js.UndefOr[ScatterData] = js.undefined
 }
 object ScatterChartProps {
   

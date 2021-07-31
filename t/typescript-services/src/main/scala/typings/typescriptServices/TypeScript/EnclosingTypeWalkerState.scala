@@ -2,15 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnclosingTypeWalkerState extends StObject {
   
-  var _currentSymbols: js.Array[PullSymbol] = js.native
+  var _currentSymbols: js.Array[PullSymbol]
   
-  var _hasSetEnclosingType: Boolean = js.native
+  var _hasSetEnclosingType: Boolean
 }
 object EnclosingTypeWalkerState {
   

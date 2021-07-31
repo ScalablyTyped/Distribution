@@ -2,19 +2,17 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request sent to the GetOrgPolicy method.
   */
-@js.native
 trait SchemaGetOrgPolicyRequest extends StObject {
   
   /**
     * Name of the `Constraint` to get the `Policy`.
     */
-  var constraint: js.UndefOr[String] = js.native
+  var constraint: js.UndefOr[String] = js.undefined
 }
 object SchemaGetOrgPolicyRequest {
   

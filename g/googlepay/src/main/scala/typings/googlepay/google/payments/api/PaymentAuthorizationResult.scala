@@ -2,24 +2,22 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Callback result for a payment authorization update.
   */
-@js.native
 trait PaymentAuthorizationResult extends StObject {
   
   /**
     * Error for the last PaymentData, will be displayed to the user.
     */
-  var error: js.UndefOr[PaymentDataError] = js.native
+  var error: js.UndefOr[PaymentDataError] = js.undefined
   
   /**
     * Represents the state of the transaction after callback is performed.
     */
-  var transactionState: TransactionState = js.native
+  var transactionState: TransactionState
 }
 object PaymentAuthorizationResult {
   

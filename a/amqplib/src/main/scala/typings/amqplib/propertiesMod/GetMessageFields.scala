@@ -2,13 +2,13 @@ package typings.amqplib.propertiesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetMessageFields extends CommonMessageFields {
+trait GetMessageFields
+  extends StObject
+     with CommonMessageFields {
   
-  var messageCount: Double = js.native
+  var messageCount: Double
 }
 object GetMessageFields {
   

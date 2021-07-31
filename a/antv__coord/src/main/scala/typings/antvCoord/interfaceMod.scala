@@ -2,21 +2,19 @@ package typings.antvCoord
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
-  @js.native
   trait CoordinateCfg extends StObject {
     
-    val end: Point = js.native
+    val end: Point
     
-    val isTransposed: js.UndefOr[Boolean] = js.native
+    val isTransposed: js.UndefOr[Boolean] = js.undefined
     
-    val matrix: js.UndefOr[js.Array[Double]] = js.native
+    val matrix: js.UndefOr[js.Array[Double]] = js.undefined
     
-    val start: Point = js.native
+    val start: Point
   }
   object CoordinateCfg {
     
@@ -191,12 +189,11 @@ object interfaceMod {
     val y: Range = js.native
   }
   
-  @js.native
   trait Point extends StObject {
     
-    val x: Double = js.native
+    val x: Double
     
-    val y: Double = js.native
+    val y: Double
   }
   object Point {
     
@@ -217,16 +214,17 @@ object interfaceMod {
     }
   }
   
-  @js.native
-  trait PolarCfg extends CoordinateCfg {
+  trait PolarCfg
+    extends StObject
+       with CoordinateCfg {
     
-    val endAngle: js.UndefOr[Double] = js.native
+    val endAngle: js.UndefOr[Double] = js.undefined
     
-    val innerRadius: js.UndefOr[Double] = js.native
+    val innerRadius: js.UndefOr[Double] = js.undefined
     
-    val radius: js.UndefOr[Double] = js.native
+    val radius: js.UndefOr[Double] = js.undefined
     
-    val startAngle: js.UndefOr[Double] = js.native
+    val startAngle: js.UndefOr[Double] = js.undefined
   }
   object PolarCfg {
     
@@ -265,12 +263,11 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait Range extends StObject {
     
-    val end: Double = js.native
+    val end: Double
     
-    val start: Double = js.native
+    val start: Double
   }
   object Range {
     

@@ -5,17 +5,15 @@ import typings.ethersprojectBignumber.mod.BigNumber
 import typings.ethersprojectBytes.mod.BytesLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait From extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var nonce: BigNumberish = js.native
+    var nonce: BigNumberish
   }
   object From {
     
@@ -36,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Nonce extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var nonce: BytesLike | BigNumber | Double = js.native
+    var nonce: BytesLike | BigNumber | Double
   }
   object Nonce {
     
@@ -62,10 +59,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Object extends StObject {
     
-    var `object`: String = js.native
+    var `object`: String
   }
   object Object {
     

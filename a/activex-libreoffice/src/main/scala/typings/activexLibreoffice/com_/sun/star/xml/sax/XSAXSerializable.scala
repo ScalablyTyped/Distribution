@@ -4,14 +4,12 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.com_.sun.star.beans.StringPair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * serializes a DOM tree by generating SAX events.
   * @since OOo 3.0
   */
-@js.native
 trait XSAXSerializable extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait XSAXSerializable extends StObject {
     * @param namespaces a list of namespace declarations that will be added to the root element node of the XML document This is necessary mostly because the
     * @throws com::sun::star::xml::sax::SAXException if serializing the XML document fails
     */
-  def serialize(handler: XDocumentHandler, namespaces: SeqEquiv[StringPair]): Unit = js.native
+  def serialize(handler: XDocumentHandler, namespaces: SeqEquiv[StringPair]): Unit
 }
 object XSAXSerializable {
   

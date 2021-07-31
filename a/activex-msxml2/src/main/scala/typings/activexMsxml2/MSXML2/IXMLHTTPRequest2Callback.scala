@@ -2,32 +2,30 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IXMLHTTPRequest2Callback Interface */
-@js.native
 trait IXMLHTTPRequest2Callback extends StObject {
   
   @JSName("MSXML2.IXMLHTTPRequest2Callback_typekey")
-  var MSXML2DotIXMLHTTPRequest2Callback_typekey: IXMLHTTPRequest2Callback = js.native
+  var MSXML2DotIXMLHTTPRequest2Callback_typekey: IXMLHTTPRequest2Callback
   
-  def OnError(pXHR: FreeThreadedXMLHTTP60, hrError: js.UndefOr[scala.Nothing]): Unit = js.native
+  def OnError(pXHR: FreeThreadedXMLHTTP60, hrError: Unit): Unit
   
-  def OnHeadersAvailable(pXHR: FreeThreadedXMLHTTP60, dwStatus: Double, pwszStatus: String): Unit = js.native
+  def OnHeadersAvailable(pXHR: FreeThreadedXMLHTTP60, dwStatus: Double, pwszStatus: String): Unit
   
-  def OnRedirect(pXHR: FreeThreadedXMLHTTP60, pwszRedirectUrl: String): Unit = js.native
+  def OnRedirect(pXHR: FreeThreadedXMLHTTP60, pwszRedirectUrl: String): Unit
   
-  def OnResponseReceived(pXHR: FreeThreadedXMLHTTP60, pResponseStream: ISequentialStream): Unit = js.native
+  def OnResponseReceived(pXHR: FreeThreadedXMLHTTP60, pResponseStream: ISequentialStream): Unit
   
-  def ondataavailable(pXHR: FreeThreadedXMLHTTP60, pResponseStream: ISequentialStream): Unit = js.native
+  def ondataavailable(pXHR: FreeThreadedXMLHTTP60, pResponseStream: ISequentialStream): Unit
 }
 object IXMLHTTPRequest2Callback {
   
   @scala.inline
   def apply(
     MSXML2DotIXMLHTTPRequest2Callback_typekey: IXMLHTTPRequest2Callback,
-    OnError: (FreeThreadedXMLHTTP60, js.UndefOr[scala.Nothing]) => Unit,
+    OnError: (FreeThreadedXMLHTTP60, Unit) => Unit,
     OnHeadersAvailable: (FreeThreadedXMLHTTP60, Double, String) => Unit,
     OnRedirect: (FreeThreadedXMLHTTP60, String) => Unit,
     OnResponseReceived: (FreeThreadedXMLHTTP60, ISequentialStream) => Unit,
@@ -45,7 +43,7 @@ object IXMLHTTPRequest2Callback {
     def setMSXML2DotIXMLHTTPRequest2Callback_typekey(value: IXMLHTTPRequest2Callback): Self = StObject.set(x, "MSXML2.IXMLHTTPRequest2Callback_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnError(value: (FreeThreadedXMLHTTP60, js.UndefOr[scala.Nothing]) => Unit): Self = StObject.set(x, "OnError", js.Any.fromFunction2(value))
+    def setOnError(value: (FreeThreadedXMLHTTP60, Unit) => Unit): Self = StObject.set(x, "OnError", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnHeadersAvailable(value: (FreeThreadedXMLHTTP60, Double, String) => Unit): Self = StObject.set(x, "OnHeadersAvailable", js.Any.fromFunction3(value))

@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalDeviceResourceData extends StObject {
   
   /**
     * Group/owner related settings for local resources.
     */
-  var GroupOwnerSetting: js.UndefOr[typings.awsSdk.greengrassMod.GroupOwnerSetting] = js.native
+  var GroupOwnerSetting: js.UndefOr[typings.awsSdk.greengrassMod.GroupOwnerSetting] = js.undefined
   
   /**
     * The local absolute path of the device resource. The source path for a device resource can refer only to a character device or block device under ''/dev''.
     */
-  var SourcePath: js.UndefOr[string] = js.native
+  var SourcePath: js.UndefOr[string] = js.undefined
 }
 object LocalDeviceResourceData {
   

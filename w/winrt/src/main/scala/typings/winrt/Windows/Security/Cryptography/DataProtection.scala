@@ -7,13 +7,13 @@ import typings.winrt.Windows.Storage.Streams.IInputStream
 import typings.winrt.Windows.Storage.Streams.IOutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataProtection {
   
-  @js.native
-  trait DataProtectionProvider extends IDataProtectionProvider
+  trait DataProtectionProvider
+    extends StObject
+       with IDataProtectionProvider
   object DataProtectionProvider {
     
     @scala.inline
@@ -28,16 +28,15 @@ object DataProtection {
     }
   }
   
-  @js.native
   trait IDataProtectionProvider extends StObject {
     
-    def protectAsync(data: IBuffer): IAsyncOperation[IBuffer] = js.native
+    def protectAsync(data: IBuffer): IAsyncOperation[IBuffer]
     
-    def protectStreamAsync(src: IInputStream, dest: IOutputStream): IAsyncAction = js.native
+    def protectStreamAsync(src: IInputStream, dest: IOutputStream): IAsyncAction
     
-    def unprotectAsync(data: IBuffer): IAsyncOperation[IBuffer] = js.native
+    def unprotectAsync(data: IBuffer): IAsyncOperation[IBuffer]
     
-    def unprotectStreamAsync(src: IInputStream, dest: IOutputStream): IAsyncAction = js.native
+    def unprotectStreamAsync(src: IInputStream, dest: IOutputStream): IAsyncAction
   }
   object IDataProtectionProvider {
     
@@ -69,10 +68,9 @@ object DataProtection {
     }
   }
   
-  @js.native
   trait IDataProtectionProviderFactory extends StObject {
     
-    def createOverloadExplicit(protectionDescriptor: String): DataProtectionProvider = js.native
+    def createOverloadExplicit(protectionDescriptor: String): DataProtectionProvider
   }
   object IDataProtectionProviderFactory {
     

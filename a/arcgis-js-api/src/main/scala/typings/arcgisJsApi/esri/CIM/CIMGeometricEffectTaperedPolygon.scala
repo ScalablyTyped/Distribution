@@ -2,38 +2,37 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectTaperedPolygon
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
     * The width at the start of the line to be used to generate a polygon.
     */
-  var fromWidth: js.UndefOr[Double] = js.native
+  var fromWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance along the line to be used to generate the polygon.
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The width at the end of the line to be used to generate the polygon.
     */
-  var toWidth: js.UndefOr[Double] = js.native
+  var toWidth: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectTaperedPolygon: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectTaperedPolygon = js.native
+  var type_CIMGeometricEffectTaperedPolygon: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectTaperedPolygon
 }
 object CIMGeometricEffectTaperedPolygon {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectTaperedPolygon): CIMGeometricEffectTaperedPolygon = {
+  def apply(): CIMGeometricEffectTaperedPolygon = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectTaperedPolygon")
     __obj.asInstanceOf[CIMGeometricEffectTaperedPolygon]
   }
   

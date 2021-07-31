@@ -2,13 +2,11 @@ package typings.winrt.Windows.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IApplicationDataStatics extends StObject {
   
-  var current: ApplicationData = js.native
+  var current: ApplicationData
 }
 object IApplicationDataStatics {
   

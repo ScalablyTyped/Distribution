@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasedynamiclinks/v1", "firebasedynamiclinks_v1.Resource$V1")
@@ -34,7 +33,7 @@ class ResourceV1 protected () extends StObject {
     */
   def getLinkStats(): GaxiosPromise[SchemaDynamicLinkStats] = js.native
   def getLinkStats(callback: BodyResponseCallback[SchemaDynamicLinkStats]): Unit = js.native
-  def getLinkStats(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDynamicLinkStats] = js.native
+  def getLinkStats(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDynamicLinkStats] = js.native
   def getLinkStats(params: ParamsResourceV1Getlinkstats): GaxiosPromise[SchemaDynamicLinkStats] = js.native
   def getLinkStats(params: ParamsResourceV1Getlinkstats, callback: BodyResponseCallback[SchemaDynamicLinkStats]): Unit = js.native
   def getLinkStats(
@@ -63,7 +62,7 @@ class ResourceV1 protected () extends StObject {
     */
   def installAttribution(): GaxiosPromise[SchemaGetIosPostInstallAttributionResponse] = js.native
   def installAttribution(callback: BodyResponseCallback[SchemaGetIosPostInstallAttributionResponse]): Unit = js.native
-  def installAttribution(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetIosPostInstallAttributionResponse] = js.native
+  def installAttribution(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetIosPostInstallAttributionResponse] = js.native
   def installAttribution(params: ParamsResourceV1Installattribution): GaxiosPromise[SchemaGetIosPostInstallAttributionResponse] = js.native
   def installAttribution(
     params: ParamsResourceV1Installattribution,
@@ -95,7 +94,7 @@ class ResourceV1 protected () extends StObject {
     */
   def reopenAttribution(): GaxiosPromise[SchemaGetIosReopenAttributionResponse] = js.native
   def reopenAttribution(callback: BodyResponseCallback[SchemaGetIosReopenAttributionResponse]): Unit = js.native
-  def reopenAttribution(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetIosReopenAttributionResponse] = js.native
+  def reopenAttribution(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetIosReopenAttributionResponse] = js.native
   def reopenAttribution(params: ParamsResourceV1Reopenattribution): GaxiosPromise[SchemaGetIosReopenAttributionResponse] = js.native
   def reopenAttribution(
     params: ParamsResourceV1Reopenattribution,

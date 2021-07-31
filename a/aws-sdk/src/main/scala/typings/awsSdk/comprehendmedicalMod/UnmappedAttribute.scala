@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnmappedAttribute extends StObject {
   
   /**
     *  The specific attribute that has been extracted but not mapped to an entity. 
     */
-  var Attribute: js.UndefOr[typings.awsSdk.comprehendmedicalMod.Attribute] = js.native
+  var Attribute: js.UndefOr[typings.awsSdk.comprehendmedicalMod.Attribute] = js.undefined
   
   /**
     *  The type of the attribute, could be one of the following values: "MEDICATION", "MEDICAL_CONDITION", "ANATOMY", "TEST_AND_TREATMENT_PROCEDURE" or "PROTECTED_HEALTH_INFORMATION". 
     */
-  var Type: js.UndefOr[EntityType] = js.native
+  var Type: js.UndefOr[EntityType] = js.undefined
 }
 object UnmappedAttribute {
   

@@ -2,35 +2,35 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgentPoolQueueTarget extends PhaseTarget {
+trait AgentPoolQueueTarget
+  extends StObject
+     with PhaseTarget {
   
   /**
     * Enables scripts and other processes launched while executing phase to access the OAuth token
     */
-  var allowScriptsAuthAccessOption: Boolean = js.native
+  var allowScriptsAuthAccessOption: Boolean
   
-  var demands: js.Array[_] = js.native
+  var demands: js.Array[js.Any]
   
   /**
     * The execution options.
     */
-  var executionOptions: AgentTargetExecutionOptions = js.native
+  var executionOptions: AgentTargetExecutionOptions
   
   /**
     * The queue.
     */
-  var queue: AgentPoolQueue = js.native
+  var queue: AgentPoolQueue
 }
 object AgentPoolQueueTarget {
   
   @scala.inline
   def apply(
     allowScriptsAuthAccessOption: Boolean,
-    demands: js.Array[_],
+    demands: js.Array[js.Any],
     executionOptions: AgentTargetExecutionOptions,
     queue: AgentPoolQueue,
     `type`: Double
@@ -47,7 +47,7 @@ object AgentPoolQueueTarget {
     def setAllowScriptsAuthAccessOption(value: Boolean): Self = StObject.set(x, "allowScriptsAuthAccessOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))

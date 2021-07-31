@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Schedule extends StObject {
   
   /** Required. The duration of time between executions in days. */
-  var intervalDurationDays: js.UndefOr[Double] = js.native
+  var intervalDurationDays: js.UndefOr[Double] = js.undefined
   
   /**
     * A timestamp indicates when the next run will be scheduled. The value is refreshed by the server after each run. If unspecified, it will default to current server time, which means
     * the scan will be scheduled to start immediately.
     */
-  var scheduleTime: js.UndefOr[String] = js.native
+  var scheduleTime: js.UndefOr[String] = js.undefined
 }
 object Schedule {
   

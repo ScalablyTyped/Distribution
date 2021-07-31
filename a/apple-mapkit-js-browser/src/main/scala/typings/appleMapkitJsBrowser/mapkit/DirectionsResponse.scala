@@ -2,18 +2,16 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The directions and estimated travel time returned for a route.
   */
-@js.native
 trait DirectionsResponse extends StObject {
   
-  var request: js.Any = js.native
+  var request: js.Any
   
-  var routes: js.Array[Route] = js.native
+  var routes: js.Array[Route]
 }
 object DirectionsResponse {
   

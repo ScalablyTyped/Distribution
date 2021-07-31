@@ -3,7 +3,6 @@ package typings.antvColorUtil
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -13,6 +12,6 @@ object anon {
     
     def apply(args: js.Any*): js.Any = js.native
     
-    var cache: Map[_, _] = js.native
+    var cache: Map[js.Any, js.Any] = js.native
   }
 }

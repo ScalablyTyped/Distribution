@@ -2,30 +2,28 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an activity group.
   */
-@js.native
 trait SchemaActivities extends StObject {
   
   /**
     * List of activity filters. The dimension values need to be all either of
     * type &quot;dfa:activity&quot; or &quot;dfa:activityGroup&quot;.
     */
-  var filters: js.UndefOr[js.Array[SchemaDimensionValue]] = js.native
+  var filters: js.UndefOr[js.Array[SchemaDimensionValue]] = js.undefined
   
   /**
     * The kind of resource this is, in this case dfareporting#activities.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * List of names of floodlight activity metrics.
     */
-  var metricNames: js.UndefOr[js.Array[String]] = js.native
+  var metricNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaActivities {
   

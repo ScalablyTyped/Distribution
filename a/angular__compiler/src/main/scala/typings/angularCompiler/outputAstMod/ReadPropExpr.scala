@@ -3,7 +3,6 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "ReadPropExpr")
@@ -11,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ReadPropExpr protected () extends Expression {
   def this(receiver: Expression, name: String) = this()
   def this(receiver: Expression, name: String, `type`: Type) = this()
-  def this(receiver: Expression, name: String, `type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(receiver: Expression, name: String, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(receiver: Expression, name: String, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
   def this(receiver: Expression, name: String, `type`: Type, sourceSpan: ParseSourceSpan) = this()
   
   var name: String = js.native

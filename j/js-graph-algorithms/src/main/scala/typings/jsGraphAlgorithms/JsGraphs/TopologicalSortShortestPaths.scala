@@ -2,27 +2,25 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopologicalSortShortestPaths extends StObject {
   
-  var cost: js.Any = js.native
+  var cost: js.Any
   
-  def distanceTo(v: Double): Double = js.native
+  def distanceTo(v: Double): Double
   
-  var edgeTo: js.Any = js.native
+  var edgeTo: js.Any
   
-  def hasPathTo(v: Double): Boolean = js.native
+  def hasPathTo(v: Double): Boolean
   
-  var marked: js.Any = js.native
+  var marked: js.Any
   
-  def pathTo(v: Double): js.Array[Edge] = js.native
+  def pathTo(v: Double): js.Array[Edge]
   
-  def relax(e: Edge): Unit = js.native
+  def relax(e: Edge): Unit
   
-  var s: js.Any = js.native
+  var s: js.Any
 }
 object TopologicalSortShortestPaths {
   

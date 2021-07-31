@@ -12,7 +12,7 @@ Typings are for version 0.9
 | Keywords           | xml, xsl, xslt, libxslt, bindings |
 | # releases         | 2 |
 | # dependents       | 13 |
-| # downloads        | 19674 |
+| # downloads        | 29588 |
 | # stars            | 3 |
 
 ## Links

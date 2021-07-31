@@ -28,7 +28,6 @@ import typings.phaser.spine.TrackEntry
 import typings.phaser.spine.TransformConstraintData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent phaser.Phaser.GameObjects.GameObject */
@@ -49,9 +48,9 @@ trait SpineGameObject extends StObject {
   var active: Boolean = js.native
   
   def addAnimation(trackIndex: integer, animationName: String): TrackEntry = js.native
-  def addAnimation(trackIndex: integer, animationName: String, loop: js.UndefOr[scala.Nothing], delay: integer): TrackEntry = js.native
   def addAnimation(trackIndex: integer, animationName: String, loop: Boolean): TrackEntry = js.native
   def addAnimation(trackIndex: integer, animationName: String, loop: Boolean, delay: integer): TrackEntry = js.native
+  def addAnimation(trackIndex: integer, animationName: String, loop: Unit, delay: integer): TrackEntry = js.native
   
   /**
     * Add a listener for a given event.
@@ -69,34 +68,13 @@ trait SpineGameObject extends StObject {
   var angle: integer = js.native
   
   def angleBoneToXY(bone: Bone, worldX: Double, worldY: Double): SpineGameObject = js.native
-  def angleBoneToXY(
-    bone: Bone,
-    worldX: Double,
-    worldY: Double,
-    offset: js.UndefOr[scala.Nothing],
-    minAngle: js.UndefOr[scala.Nothing],
-    maxAngle: Double
-  ): SpineGameObject = js.native
-  def angleBoneToXY(bone: Bone, worldX: Double, worldY: Double, offset: js.UndefOr[scala.Nothing], minAngle: Double): SpineGameObject = js.native
-  def angleBoneToXY(
-    bone: Bone,
-    worldX: Double,
-    worldY: Double,
-    offset: js.UndefOr[scala.Nothing],
-    minAngle: Double,
-    maxAngle: Double
-  ): SpineGameObject = js.native
   def angleBoneToXY(bone: Bone, worldX: Double, worldY: Double, offset: Double): SpineGameObject = js.native
-  def angleBoneToXY(
-    bone: Bone,
-    worldX: Double,
-    worldY: Double,
-    offset: Double,
-    minAngle: js.UndefOr[scala.Nothing],
-    maxAngle: Double
-  ): SpineGameObject = js.native
   def angleBoneToXY(bone: Bone, worldX: Double, worldY: Double, offset: Double, minAngle: Double): SpineGameObject = js.native
   def angleBoneToXY(bone: Bone, worldX: Double, worldY: Double, offset: Double, minAngle: Double, maxAngle: Double): SpineGameObject = js.native
+  def angleBoneToXY(bone: Bone, worldX: Double, worldY: Double, offset: Double, minAngle: Unit, maxAngle: Double): SpineGameObject = js.native
+  def angleBoneToXY(bone: Bone, worldX: Double, worldY: Double, offset: Unit, minAngle: Double): SpineGameObject = js.native
+  def angleBoneToXY(bone: Bone, worldX: Double, worldY: Double, offset: Unit, minAngle: Double, maxAngle: Double): SpineGameObject = js.native
+  def angleBoneToXY(bone: Bone, worldX: Double, worldY: Double, offset: Unit, minAngle: Unit, maxAngle: Double): SpineGameObject = js.native
   
   val blendMode: Double = js.native
   
@@ -268,7 +246,7 @@ trait SpineGameObject extends StObject {
   def getSlotList(): js.Array[String] = js.native
   
   def getWorldTransformMatrix(): TransformMatrix = js.native
-  def getWorldTransformMatrix(tempMatrix: js.UndefOr[scala.Nothing], parentMatrix: TransformMatrix): TransformMatrix = js.native
+  def getWorldTransformMatrix(tempMatrix: Unit, parentMatrix: TransformMatrix): TransformMatrix = js.native
   def getWorldTransformMatrix(tempMatrix: TransformMatrix): TransformMatrix = js.native
   def getWorldTransformMatrix(tempMatrix: TransformMatrix, parentMatrix: TransformMatrix): TransformMatrix = js.native
   
@@ -335,21 +313,21 @@ trait SpineGameObject extends StObject {
     * @param once Only remove one-time listeners.
     */
   def off(event: String): this.type = js.native
-  def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-  def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-  def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
   def off(event: String, fn: js.Function): this.type = js.native
-  def off(event: String, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   def off(event: String, fn: js.Function, context: js.Any): this.type = js.native
   def off(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+  def off(event: String, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+  def off(event: String, fn: Unit, context: js.Any): this.type = js.native
+  def off(event: String, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+  def off(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
   def off(event: js.Symbol): this.type = js.native
-  def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-  def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-  def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
   def off(event: js.Symbol, fn: js.Function): this.type = js.native
-  def off(event: js.Symbol, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   def off(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
   def off(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+  def off(event: js.Symbol, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+  def off(event: js.Symbol, fn: Unit, context: js.Any): this.type = js.native
+  def off(event: js.Symbol, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+  def off(event: js.Symbol, fn: Unit, context: Unit, once: Boolean): this.type = js.native
   
   /**
     * Add a listener for a given event.
@@ -379,9 +357,9 @@ trait SpineGameObject extends StObject {
   var parentContainer: Container = js.native
   
   def play(animationName: String): SpineGameObject = js.native
-  def play(animationName: String, loop: js.UndefOr[scala.Nothing], ignoreIfPlaying: Boolean): SpineGameObject = js.native
   def play(animationName: String, loop: Boolean): SpineGameObject = js.native
   def play(animationName: String, loop: Boolean, ignoreIfPlaying: Boolean): SpineGameObject = js.native
+  def play(animationName: String, loop: Unit, ignoreIfPlaying: Boolean): SpineGameObject = js.native
   
   var plugin: SpinePlugin = js.native
   
@@ -433,21 +411,21 @@ trait SpineGameObject extends StObject {
     * @param once Only remove one-time listeners.
     */
   def removeListener(event: String): this.type = js.native
-  def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-  def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-  def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
   def removeListener(event: String, fn: js.Function): this.type = js.native
-  def removeListener(event: String, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   def removeListener(event: String, fn: js.Function, context: js.Any): this.type = js.native
   def removeListener(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+  def removeListener(event: String, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+  def removeListener(event: String, fn: Unit, context: js.Any): this.type = js.native
+  def removeListener(event: String, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+  def removeListener(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
   def removeListener(event: js.Symbol): this.type = js.native
-  def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-  def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-  def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
   def removeListener(event: js.Symbol, fn: js.Function): this.type = js.native
-  def removeListener(event: js.Symbol, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   def removeListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
   def removeListener(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+  def removeListener(event: js.Symbol, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+  def removeListener(event: js.Symbol, fn: Unit, context: js.Any): this.type = js.native
+  def removeListener(event: js.Symbol, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+  def removeListener(event: js.Symbol, fn: Unit, context: Unit, once: Boolean): this.type = js.native
   
   /**
     * The flags that are compared against `RENDER_MASK` to determine if this Game Object will render or not.
@@ -492,21 +470,16 @@ trait SpineGameObject extends StObject {
   def setAngle(degrees: Double): this.type = js.native
   
   def setAnimation(trackIndex: integer, animationName: String): TrackEntry = js.native
-  def setAnimation(
-    trackIndex: integer,
-    animationName: String,
-    loop: js.UndefOr[scala.Nothing],
-    ignoreIfPlaying: Boolean
-  ): TrackEntry = js.native
   def setAnimation(trackIndex: integer, animationName: String, loop: Boolean): TrackEntry = js.native
   def setAnimation(trackIndex: integer, animationName: String, loop: Boolean, ignoreIfPlaying: Boolean): TrackEntry = js.native
+  def setAnimation(trackIndex: integer, animationName: String, loop: Unit, ignoreIfPlaying: Boolean): TrackEntry = js.native
   
   def setAttachment(slotName: String, attachmentName: String): SpineGameObject = js.native
   
   def setBonesToSetupPose(): SpineGameObject = js.native
   
   def setColor(): SpineGameObject = js.native
-  def setColor(color: js.UndefOr[scala.Nothing], slotName: String): SpineGameObject = js.native
+  def setColor(color: Unit, slotName: String): SpineGameObject = js.native
   def setColor(color: integer): SpineGameObject = js.native
   def setColor(color: integer, slotName: String): SpineGameObject = js.native
   
@@ -593,15 +566,15 @@ trait SpineGameObject extends StObject {
     * @param dropZone Should this Game Object be treated as a drop zone target? Default false.
     */
   def setInteractive(): this.type = js.native
-  def setInteractive(shape: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: js.UndefOr[scala.Nothing], callback: HitAreaCallback): this.type = js.native
-  def setInteractive(shape: js.UndefOr[scala.Nothing], callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
   def setInteractive(shape: js.Any): this.type = js.native
-  def setInteractive(shape: js.Any, callback: js.UndefOr[scala.Nothing], dropZone: Boolean): this.type = js.native
+  def setInteractive(shape: js.Any, callback: Unit, dropZone: Boolean): this.type = js.native
   def setInteractive(shape: js.Any, callback: HitAreaCallback): this.type = js.native
   def setInteractive(shape: js.Any, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+  def setInteractive(shape: Unit, callback: Unit, dropZone: Boolean): this.type = js.native
+  def setInteractive(shape: Unit, callback: HitAreaCallback): this.type = js.native
+  def setInteractive(shape: Unit, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
   def setInteractive(shape: InputConfiguration): this.type = js.native
-  def setInteractive(shape: InputConfiguration, callback: js.UndefOr[scala.Nothing], dropZone: Boolean): this.type = js.native
+  def setInteractive(shape: InputConfiguration, callback: Unit, dropZone: Boolean): this.type = js.native
   def setInteractive(shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
   def setInteractive(shape: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
   
@@ -616,53 +589,43 @@ trait SpineGameObject extends StObject {
   def setName(value: String): this.type = js.native
   
   def setOffset(): SpineGameObject = js.native
-  def setOffset(offsetX: js.UndefOr[scala.Nothing], offsetY: Double): SpineGameObject = js.native
   def setOffset(offsetX: Double): SpineGameObject = js.native
   def setOffset(offsetX: Double, offsetY: Double): SpineGameObject = js.native
+  def setOffset(offsetX: Unit, offsetY: Double): SpineGameObject = js.native
   
   def setPosition(): this.type = js.native
-  def setPosition(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    z: js.UndefOr[scala.Nothing],
-    w: Double
-  ): this.type = js.native
-  def setPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): this.type = js.native
-  def setPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double): this.type = js.native
-  def setPosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-  def setPosition(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double): this.type = js.native
-  def setPosition(x: js.UndefOr[scala.Nothing], y: Double, z: Double): this.type = js.native
-  def setPosition(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double): this.type = js.native
   def setPosition(x: Double): this.type = js.native
-  def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): this.type = js.native
-  def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: Double): this.type = js.native
-  def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double): this.type = js.native
   def setPosition(x: Double, y: Double): this.type = js.native
-  def setPosition(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double): this.type = js.native
   def setPosition(x: Double, y: Double, z: Double): this.type = js.native
   def setPosition(x: Double, y: Double, z: Double, w: Double): this.type = js.native
+  def setPosition(x: Double, y: Double, z: Unit, w: Double): this.type = js.native
+  def setPosition(x: Double, y: Unit, z: Double): this.type = js.native
+  def setPosition(x: Double, y: Unit, z: Double, w: Double): this.type = js.native
+  def setPosition(x: Double, y: Unit, z: Unit, w: Double): this.type = js.native
+  def setPosition(x: Unit, y: Double): this.type = js.native
+  def setPosition(x: Unit, y: Double, z: Double): this.type = js.native
+  def setPosition(x: Unit, y: Double, z: Double, w: Double): this.type = js.native
+  def setPosition(x: Unit, y: Double, z: Unit, w: Double): this.type = js.native
+  def setPosition(x: Unit, y: Unit, z: Double): this.type = js.native
+  def setPosition(x: Unit, y: Unit, z: Double, w: Double): this.type = js.native
+  def setPosition(x: Unit, y: Unit, z: Unit, w: Double): this.type = js.native
   
   def setRandomPosition(): this.type = js.native
-  def setRandomPosition(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): this.type = js.native
-  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
-  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
-  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
-  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double, width: Double): this.type = js.native
-  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): this.type = js.native
   def setRandomPosition(x: Double): this.type = js.native
-  def setRandomPosition(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
-  def setRandomPosition(x: Double, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
-  def setRandomPosition(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
   def setRandomPosition(x: Double, y: Double): this.type = js.native
-  def setRandomPosition(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setRandomPosition(x: Double, y: Double, width: Double): this.type = js.native
   def setRandomPosition(x: Double, y: Double, width: Double, height: Double): this.type = js.native
+  def setRandomPosition(x: Double, y: Double, width: Unit, height: Double): this.type = js.native
+  def setRandomPosition(x: Double, y: Unit, width: Double): this.type = js.native
+  def setRandomPosition(x: Double, y: Unit, width: Double, height: Double): this.type = js.native
+  def setRandomPosition(x: Double, y: Unit, width: Unit, height: Double): this.type = js.native
+  def setRandomPosition(x: Unit, y: Double): this.type = js.native
+  def setRandomPosition(x: Unit, y: Double, width: Double): this.type = js.native
+  def setRandomPosition(x: Unit, y: Double, width: Double, height: Double): this.type = js.native
+  def setRandomPosition(x: Unit, y: Double, width: Unit, height: Double): this.type = js.native
+  def setRandomPosition(x: Unit, y: Unit, width: Double): this.type = js.native
+  def setRandomPosition(x: Unit, y: Unit, width: Double, height: Double): this.type = js.native
+  def setRandomPosition(x: Unit, y: Unit, width: Unit, height: Double): this.type = js.native
   
   def setRotation(): this.type = js.native
   def setRotation(radians: Double): this.type = js.native
@@ -674,61 +637,31 @@ trait SpineGameObject extends StObject {
   def setScrollFactor(x: Double, y: Double): this.type = js.native
   
   def setSize(): SpineGameObject = js.native
-  def setSize(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    offsetX: js.UndefOr[scala.Nothing],
-    offsetY: Double
-  ): SpineGameObject = js.native
-  def setSize(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], offsetX: Double): SpineGameObject = js.native
-  def setSize(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    offsetX: Double,
-    offsetY: Double
-  ): SpineGameObject = js.native
-  def setSize(width: js.UndefOr[scala.Nothing], height: Double): SpineGameObject = js.native
-  def setSize(
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    offsetX: js.UndefOr[scala.Nothing],
-    offsetY: Double
-  ): SpineGameObject = js.native
-  def setSize(width: js.UndefOr[scala.Nothing], height: Double, offsetX: Double): SpineGameObject = js.native
-  def setSize(width: js.UndefOr[scala.Nothing], height: Double, offsetX: Double, offsetY: Double): SpineGameObject = js.native
   def setSize(width: Double): SpineGameObject = js.native
-  def setSize(
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    offsetX: js.UndefOr[scala.Nothing],
-    offsetY: Double
-  ): SpineGameObject = js.native
-  def setSize(width: Double, height: js.UndefOr[scala.Nothing], offsetX: Double): SpineGameObject = js.native
-  def setSize(width: Double, height: js.UndefOr[scala.Nothing], offsetX: Double, offsetY: Double): SpineGameObject = js.native
   def setSize(width: Double, height: Double): SpineGameObject = js.native
-  def setSize(width: Double, height: Double, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): SpineGameObject = js.native
   def setSize(width: Double, height: Double, offsetX: Double): SpineGameObject = js.native
   def setSize(width: Double, height: Double, offsetX: Double, offsetY: Double): SpineGameObject = js.native
+  def setSize(width: Double, height: Double, offsetX: Unit, offsetY: Double): SpineGameObject = js.native
+  def setSize(width: Double, height: Unit, offsetX: Double): SpineGameObject = js.native
+  def setSize(width: Double, height: Unit, offsetX: Double, offsetY: Double): SpineGameObject = js.native
+  def setSize(width: Double, height: Unit, offsetX: Unit, offsetY: Double): SpineGameObject = js.native
+  def setSize(width: Unit, height: Double): SpineGameObject = js.native
+  def setSize(width: Unit, height: Double, offsetX: Double): SpineGameObject = js.native
+  def setSize(width: Unit, height: Double, offsetX: Double, offsetY: Double): SpineGameObject = js.native
+  def setSize(width: Unit, height: Double, offsetX: Unit, offsetY: Double): SpineGameObject = js.native
+  def setSize(width: Unit, height: Unit, offsetX: Double): SpineGameObject = js.native
+  def setSize(width: Unit, height: Unit, offsetX: Double, offsetY: Double): SpineGameObject = js.native
+  def setSize(width: Unit, height: Unit, offsetX: Unit, offsetY: Double): SpineGameObject = js.native
   
   def setSkeleton(atlasDataKey: String, skeletonJSON: js.Object): SpineGameObject = js.native
-  def setSkeleton(
-    atlasDataKey: String,
-    skeletonJSON: js.Object,
-    animationName: js.UndefOr[scala.Nothing],
-    loop: Boolean
-  ): SpineGameObject = js.native
   def setSkeleton(atlasDataKey: String, skeletonJSON: js.Object, animationName: String): SpineGameObject = js.native
   def setSkeleton(atlasDataKey: String, skeletonJSON: js.Object, animationName: String, loop: Boolean): SpineGameObject = js.native
+  def setSkeleton(atlasDataKey: String, skeletonJSON: js.Object, animationName: Unit, loop: Boolean): SpineGameObject = js.native
   
   def setSkeletonFromJSON(atlasDataKey: String, skeletonJSON: js.Object): SpineGameObject = js.native
-  def setSkeletonFromJSON(
-    atlasDataKey: String,
-    skeletonJSON: js.Object,
-    animationName: js.UndefOr[scala.Nothing],
-    loop: Boolean
-  ): SpineGameObject = js.native
   def setSkeletonFromJSON(atlasDataKey: String, skeletonJSON: js.Object, animationName: String): SpineGameObject = js.native
   def setSkeletonFromJSON(atlasDataKey: String, skeletonJSON: js.Object, animationName: String, loop: Boolean): SpineGameObject = js.native
+  def setSkeletonFromJSON(atlasDataKey: String, skeletonJSON: js.Object, animationName: Unit, loop: Boolean): SpineGameObject = js.native
   
   def setSkin(newSkin: Skin): SpineGameObject = js.native
   

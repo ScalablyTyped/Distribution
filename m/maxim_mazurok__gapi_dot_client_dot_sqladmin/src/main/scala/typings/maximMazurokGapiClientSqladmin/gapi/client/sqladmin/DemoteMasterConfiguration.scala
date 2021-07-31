@@ -2,21 +2,19 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DemoteMasterConfiguration extends StObject {
   
   /** This is always *sql#demoteMasterConfiguration*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * MySQL specific configuration when replicating from a MySQL on-premises primary instance. Replication configuration information such as the username, password, certificates, and keys
     * are not stored in the instance metadata. The configuration information is used only to set up the replication connection and is stored by MySQL in a file named *master.info* in the
     * data directory.
     */
-  var mysqlReplicaConfiguration: js.UndefOr[DemoteMasterMySqlReplicaConfiguration] = js.native
+  var mysqlReplicaConfiguration: js.UndefOr[DemoteMasterMySqlReplicaConfiguration] = js.undefined
 }
 object DemoteMasterConfiguration {
   

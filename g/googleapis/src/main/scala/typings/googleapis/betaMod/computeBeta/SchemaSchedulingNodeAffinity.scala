@@ -2,30 +2,28 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Node Affinity: the configuration of desired nodes onto which this Instance
   * could be scheduled.
   */
-@js.native
 trait SchemaSchedulingNodeAffinity extends StObject {
   
   /**
     * Corresponds to the label key of Node resource.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the operation of node selection.
     */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
   /**
     * Corresponds to the label values of Node resource.
     */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaSchedulingNodeAffinity {
   

@@ -19,10 +19,15 @@ import typings.jsrsasign.anon.StringParamcertissuerstri
 import typings.jsrsasign.anon.Uri
 import typings.jsrsasign.anon.X500NameParamcertissuerst
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.ObjectIdentifierParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.ExtensionParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.GeneralNameParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.UriParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.X500NameParam
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.RSAKey
@@ -36,7 +41,6 @@ import typings.jsrsasign.jsrsasignStrings.keyusage
 import typings.jsrsasign.jsrsasignStrings.subjectaltname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -109,8 +113,53 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.AlgorithmIdentifier")
   @js.native
   class AlgorithmIdentifier ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.AlgorithmIdentifier {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.AlgorithmIdentifier {
     def this(params: Asn1params) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
   }
   
   /**
@@ -123,8 +172,53 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.AttributeTypeAndValue")
   @js.native
   class AttributeTypeAndValue protected ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.AttributeTypeAndValue {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.AttributeTypeAndValue {
     def this(params: StringParam) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
   }
   
   /**
@@ -154,8 +248,59 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.AuthorityInfoAccess")
   @js.native
   class AuthorityInfoAccess ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.AuthorityInfoAccess {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.AuthorityInfoAccess {
     def this(params: ArrayParam[ExtensionParam]) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getExtnValueHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /* CompleteClass */
+    override def setAccessDescriptionArray(accessDescriptionArray: js.Array[ExtensionParam]): Unit = js.native
   }
   
   /**
@@ -181,8 +326,53 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.AuthorityKeyIdentifier")
   @js.native
   class AuthorityKeyIdentifier ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.AuthorityKeyIdentifier {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.AuthorityKeyIdentifier {
     def this(params: Critical) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
   }
   
   /**
@@ -192,8 +382,56 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.BasicConstraints")
   @js.native
   class BasicConstraints ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.BasicConstraints {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.BasicConstraints {
     def this(params: CA_) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getExtnValueHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
   }
   
   /**
@@ -223,8 +461,73 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.CRL")
   @js.native
   class CRL ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.CRL {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.CRL {
     def this(params: Rsaprvkey) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get PEM formatted CRL string after signed
+      * @return PEM formatted string of certificate
+      * @example
+      * var cert = new KJUR.asn1.x509.CRL({'tbsobj': tbs, 'rsaprvkey': prvKey});
+      * cert.sign();
+      * var sPEM =  cert.getPEMString();
+      */
+    /* CompleteClass */
+    override def getPEMString(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /**
+      * sign TBSCertList and set signature value internally
+      * @example
+      * var cert = new KJUR.asn1.x509.CRL({'tbsobj': tbs, 'prvkeyobj': prvKey});
+      * cert.sign();
+      */
+    /* CompleteClass */
+    override def sign(): Unit = js.native
   }
   
   /**
@@ -260,8 +563,62 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.CRLDistributionPoints")
   @js.native
   class CRLDistributionPoints ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.CRLDistributionPoints {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.CRLDistributionPoints {
     def this(params: Uri) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getExtnValueHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /* CompleteClass */
+    override def setByDPArray(dpArray: js.Array[typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object]): Unit = js.native
+    
+    /* CompleteClass */
+    override def setByOneURI(uri: String): Unit = js.native
   }
   
   /**
@@ -279,8 +636,71 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.CRLEntry")
   @js.native
   class CRLEntry ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.CRLEntry {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.CRLEntry {
     def this(params: Sn) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /**
+      * set DERInteger parameter for serial number of revoked certificate
+      * @param intParam DERInteger parameter for certificate serial number
+      * @example
+      * entry.setCertSerial({'int': 3});
+      */
+    /* CompleteClass */
+    override def setCertSerial(intParam: IntegerParam): Unit = js.native
+    
+    /**
+      * set Time parameter for revocation date
+      * @param timeParam Time parameter for revocation date
+      * @example
+      * entry.setRevocationDate({'str': '130508235959Z'});
+      */
+    /* CompleteClass */
+    override def setRevocationDate(timeParam: StringParam): Unit = js.native
   }
   
   /**
@@ -309,8 +729,82 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.Certificate")
   @js.native
   class Certificate ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Certificate {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Certificate {
     def this(params: Prvkeyobj) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get PEM formatted certificate string after signed
+      * @return PEM formatted string of certificate
+      * @example
+      * var cert = new KJUR.asn1.x509.Certificate({'tbscertobj': tbs, 'prvkeyobj': prvKey});
+      * cert.sign();
+      * var sPEM = cert.getPEMString();
+      */
+    /* CompleteClass */
+    override def getPEMString(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /**
+      * set signature value internally by hex string
+      * @example
+      * var cert = new KJUR.asn1.x509.Certificate({'tbscertobj': tbs});
+      * cert.setSignatureHex('01020304');
+      */
+    /* CompleteClass */
+    override def setSignatureHex(sigHex: String): Unit = js.native
+    
+    /**
+      * sign TBSCertificate and set signature value internally
+      * @example
+      * var cert = new KJUR.asn1.x509.Certificate({tbscertobj: tbs, prvkeyobj: prvKey});
+      * cert.sign();
+      */
+    /* CompleteClass */
+    override def sign(): Unit = js.native
   }
   
   /**
@@ -341,8 +835,12 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.DistributionPoint")
   @js.native
   class DistributionPoint ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.DistributionPoint {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.DistributionPoint {
     def this(params: Dpobj) = this()
+    
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
   }
   
   /**
@@ -373,8 +871,12 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.DistributionPointName")
   @js.native
   class DistributionPointName protected ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.DistributionPointName {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.DistributionPointName {
     def this(gnOrRdn: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.GeneralNames) = this()
+    
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
   }
   
   /**
@@ -395,8 +897,59 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.ExtKeyUsage")
   @js.native
   class ExtKeyUsage ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.ExtKeyUsage {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.ExtKeyUsage {
     def this(params: ArrayArray) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getExtnValueHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /* CompleteClass */
+    override def setPurposeArray(purposeArray: js.Array[ObjectIdentifierParam | HexParam | NameParam]): Unit = js.native
   }
   
   /**
@@ -413,25 +966,74 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.Extension")
   @js.native
   class Extension ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension {
     def this(params: CriticalBoolean) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
   }
   object Extension {
     
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.Extension.appendByNameToArray")
+    @JSGlobal("jsrsasign.KJUR.asn1.x509.Extension")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def appendByNameToArray_authorityinfoaccess(
       name: authorityinfoaccess,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
-      a: js.Array[_]
-    ): Unit = js.native
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.Extension.appendByNameToArray")
-    @js.native
+      a: js.Array[js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
     def appendByNameToArray_authoritykeyidentifier(
       name: authoritykeyidentifier,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
-      a: js.Array[_]
-    ): Unit = js.native
+      a: js.Array[js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /**
       * append X.509v3 extension to any specified array
       * @param name X.509v3 extension name
@@ -447,40 +1049,47 @@ object x509 {
       * KJUR.asn1.x509.Extension.appendByNameToArray("KeyUsage", {'bin':'11'}, a);
       */
     /* static member */
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.Extension.appendByNameToArray")
-    @js.native
+    @scala.inline
     def appendByNameToArray_basicconstraints(
       name: basicconstraints,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
-      a: js.Array[_]
-    ): Unit = js.native
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.Extension.appendByNameToArray")
-    @js.native
+      a: js.Array[js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
     def appendByNameToArray_crldistributionpoints(
       name: crldistributionpoints,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
-      a: js.Array[_]
-    ): Unit = js.native
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.Extension.appendByNameToArray")
-    @js.native
-    def appendByNameToArray_extkeyusage(name: extkeyusage, extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension, a: js.Array[_]): Unit = js.native
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.Extension.appendByNameToArray")
-    @js.native
+      a: js.Array[js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def appendByNameToArray_extkeyusage(
+      name: extkeyusage,
+      extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
+      a: js.Array[js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
     def appendByNameToArray_issueraltname(
       name: issueraltname,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
-      a: js.Array[_]
-    ): Unit = js.native
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.Extension.appendByNameToArray")
-    @js.native
-    def appendByNameToArray_keyusage(name: keyusage, extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension, a: js.Array[_]): Unit = js.native
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.Extension.appendByNameToArray")
-    @js.native
+      a: js.Array[js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def appendByNameToArray_keyusage(
+      name: keyusage,
+      extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
+      a: js.Array[js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
     def appendByNameToArray_subjectaltname(
       name: subjectaltname,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
-      a: js.Array[_]
-    ): Unit = js.native
+      a: js.Array[js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -527,8 +1136,15 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.GeneralName")
   @js.native
   class GeneralName ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.GeneralName {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.GeneralName {
     def this(params: GeneralNameParam) = this()
+    
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def setByParam(params: js.Array[String]): Unit = js.native
   }
   
   /**
@@ -541,8 +1157,22 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.GeneralNames")
   @js.native
   class GeneralNames protected ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.GeneralNames {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.GeneralNames {
     def this(paramsArray: js.Array[UriParam]) = this()
+    
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /**
+      * set a array of `KJUR.asn1.x509.GeneralName` parameters
+      * @param paramsArray Array of `KJUR.asn1.x509.GeneralNames`
+      * @example
+      * gns = new KJUR.asn1.x509.GeneralNames();
+      * gns.setByParamArray([{uri: 'http://aaa.com/'}, {uri: 'http://bbb.com/'}]);
+      */
+    /* CompleteClass */
+    override def setByParamArray(paramsArray: js.Array[GeneralNameParam]): Unit = js.native
   }
   
   /**
@@ -576,8 +1206,59 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.IssuerAltName")
   @js.native
   class IssuerAltName ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.IssuerAltName {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.IssuerAltName {
     def this(params: ArrayParamUriParamcritica) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getExtnValueHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /* CompleteClass */
+    override def setNameArray(paramsArray: js.Array[UriParam]): Unit = js.native
   }
   
   /**
@@ -587,8 +1268,59 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.KeyUsage")
   @js.native
   class KeyUsage ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.KeyUsage {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.KeyUsage {
     def this(params: Bin) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getExtnValueHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /* CompleteClass */
+    override def setPurposeArray(purposeArray: js.Array[ObjectIdentifierParam | HexParam | NameParam]): Unit = js.native
   }
   
   /**
@@ -619,6 +1351,10 @@ object x509 {
     */
   object OID {
     
+    @JSGlobal("jsrsasign.KJUR.asn1.x509.OID")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * get DERObjectIdentifier by registered attribute type name such like 'C' or 'CN'
       * @param atype short attribute type name such like 'C' or 'CN'
@@ -626,9 +1362,8 @@ object x509 {
       * KJUR.asn1.x509.OID.atype2obj('CN') → 2.5.4.3
       * KJUR.asn1.x509.OID.atype2obj('OU') → 2.5.4.11
       */
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.OID.atype2obj")
-    @js.native
-    def atype2obj(atype: String): String = js.native
+    @scala.inline
+    def atype2obj(atype: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atype2obj")(atype.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** for short attribute type name and oid (ex. 'C' and '2.5.4.6') */
     @JSGlobal("jsrsasign.KJUR.asn1.x509.OID.atype2oidList")
@@ -641,9 +1376,8 @@ object x509 {
       * @example
       * var asn1ObjOID = OID.name2obj('SHA1withRSA');
       */
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.OID.name2obj")
-    @js.native
-    def name2obj(name: String): typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier = js.native
+    @scala.inline
+    def name2obj(name: String): typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("name2obj")(name.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier]
     
     /**
       * convert OID name to OID value
@@ -655,9 +1389,8 @@ object x509 {
       * @example
       * KJUR.asn1.x509.OID.name2oid("authorityInfoAccess") → 1.3.6.1.5.5.7.1.1
       */
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.OID.name2oid")
-    @js.native
-    def name2oid(name: String): String = js.native
+    @scala.inline
+    def name2oid(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name2oid")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** for oid name and oid (ex. 'keyUsage' and '2.5.29.15') */
     @JSGlobal("jsrsasign.KJUR.asn1.x509.OID.name2oidList")
@@ -677,9 +1410,8 @@ object x509 {
       * KJUR.asn1.x509.OID.oid2atype("1.3.6.1.4.1.311.60.2.1.3") → jurisdictionOfIncorporationC
       * KJUR.asn1.x509.OID.oid2atype("0.1.2.3.4") → 0.1.2.3.4 // unregistered OID
       */
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.OID.oid2atype")
-    @js.native
-    def oid2atype(oid: String): String = js.native
+    @scala.inline
+    def oid2atype(oid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oid2atype")(oid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * convert OID to name
@@ -691,12 +1423,10 @@ object x509 {
       * @example
       * KJUR.asn1.x509.OID.oid2name("1.3.6.1.5.5.7.1.1") → 'authorityInfoAccess'
       */
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.OID.oid2name")
-    @js.native
-    def oid2name(): String = js.native
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.OID.oid2name")
-    @js.native
-    def oid2name(oid: String): String = js.native
+    @scala.inline
+    def oid2name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oid2name")().asInstanceOf[String]
+    @scala.inline
+    def oid2name(oid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oid2name")(oid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** for caching name and DERObjectIdentifier object */
     object objCache
@@ -730,10 +1460,87 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.RDN")
   @js.native
   class RDN ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.RDN {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.RDN {
     def this(params: StringParam) = this()
+    
+    /**
+      * add one AttributeTypeAndValue by multi-valued string
+      * @param s string of multi-valued RDN
+      * @description
+      * This method add multi-valued RDN to RDN object.
+      * @example
+      * rdn = new KJUR.asn1.x509.RDN();
+      * rdn.addByMultiValuedString("CN=john+O=test");
+      * rdn.addByMultiValuedString("O=a+O=b\+b\+b+O=c"); // multi-valued RDN with quoted plus
+      * rdn.addByMultiValuedString("O=a+O=\"b+b+b\"+O=c"); // multi-valued RDN with quoted quotation
+      */
+    /* CompleteClass */
+    override def addByMultiValuedString(s: String): Unit = js.native
+    
+    /**
+      * add one AttributeTypeAndValue by string
+      * @param s string of AttributeTypeAndValue
+      * @return unspecified
+      * @description
+      * This method adds one AttributeTypeAndValue to RDN object.
+      * @example
+      * rdn = new KJUR.asn1.x509.RDN();
+      * rdn.addByString("CN=john");
+      * rdn.addByString("serialNumber=1234"); // for multi-valued RDN
+      */
+    /* CompleteClass */
+    override def addByString(s: String): Unit = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
   }
   object RDN {
+    
+    @JSGlobal("jsrsasign.KJUR.asn1.x509.RDN")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * parse multi-valued RDN string and split into array of 'AttributeTypeAndValue'
@@ -750,9 +1557,8 @@ object x509 {
       * KJUR.asn1.x509.RDN.parseString("CN=john+OU=test+OU=t1") → ["CN=john", "OU=test", "OU=t1"]
       */
     /* static member */
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.RDN.parseString")
-    @js.native
-    def parseString(s: String): js.Array[String] = js.native
+    @scala.inline
+    def parseString(s: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   /**
@@ -786,8 +1592,59 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.SubjectAltName")
   @js.native
   class SubjectAltName ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.SubjectAltName {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.SubjectAltName {
     def this(params: ArrayParamUriParamcritica) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getExtnValueHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /* CompleteClass */
+    override def setNameArray(paramsArray: js.Array[UriParam]): Unit = js.native
   }
   
   /**
@@ -812,10 +1669,55 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.SubjectPublicKeyInfo")
   @js.native
   class SubjectPublicKeyInfo ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.SubjectPublicKeyInfo {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.SubjectPublicKeyInfo {
     def this(params: DSA) = this()
     def this(params: ECDSA) = this()
     def this(params: RSAKey) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
   }
   
   /**
@@ -848,7 +1750,103 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.TBSCertList")
   @js.native
   class TBSCertList ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.TBSCertList
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.TBSCertList {
+    
+    /**
+      * add revoked certificate by parameter
+      * @param snParam DERInteger parameter for certificate serial number
+      * @param timeParam Time parameter for revocation date
+      * @example
+      * tbsc.addRevokedCert({'int': 3}, {'str': '130508235959Z'});
+      * @see KJUR.asn1.x509.Time
+      */
+    /* CompleteClass */
+    override def addRevokedCert(snParam: IntegerParam, timeParam: StringParam): Unit = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /**
+      * set issuer name field by parameter
+      * @param x500NameParam X500Name parameter
+      * @example
+      * tbsc.setIssuerParam({'str': '/C=US/CN=b'});
+      * @see KJUR.asn1.x509.X500Name
+      */
+    /* CompleteClass */
+    override def setIssuerByParam(x500NameParam: StringParam): Unit = js.native
+    
+    /**
+      * set nextUpdate field by parameter
+      * @param timeParam Time parameter
+      * @example
+      * tbsc.setNextUpdateByParam({'str': '130508235959Z'});
+      * @see KJUR.asn1.x509.Time
+      */
+    /* CompleteClass */
+    override def setNextUpdateByParam(timeParam: StringParam): Unit = js.native
+    
+    /**
+      * set signature algorithm field by parameter
+      * @param algIdParam AlgorithmIdentifier parameter
+      * @example
+      * tbsc.setSignatureAlgByParam({'name': 'SHA1withRSA'});
+      */
+    /* CompleteClass */
+    override def setSignatureAlgByParam(algIdParam: NameParam): Unit = js.native
+    
+    /**
+      * set thisUpdate field by parameter
+      * @param timeParam Time parameter
+      * @example
+      * tbsc.setThisUpdateByParam({'str': '130508235959Z'});
+      * @see KJUR.asn1.x509.Time
+      */
+    /* CompleteClass */
+    override def setThisUpdateByParam(timeParam: StringParam): Unit = js.native
+  }
   
   /**
     * ASN.1 TBSCertificate structure class
@@ -868,7 +1866,53 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.TBSCertificate")
   @js.native
   class TBSCertificate ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.TBSCertificate
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.TBSCertificate {
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+  }
   
   /**
     * X500Name ASN.1 structure class
@@ -906,12 +1950,91 @@ object x509 {
   @JSGlobal("jsrsasign.KJUR.asn1.x509.X500Name")
   @js.native
   class X500Name protected ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.X500Name {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.x509.X500Name {
     def this(params: Certissuer) = this()
     def this(params: StringParamcertissuerstri) = this()
     def this(params: X500NameParamcertissuerst) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /**
+      * set DN by LDAP(RFC 2253) distinguished name string
+      * @param dnStr distinguished name by LDAP string (ex. O=aaa,C=US)
+      * @example
+      * name = new KJUR.asn1.x509.X500Name();
+      * name.setByLdapString("CN=foo@example.com,OU=bbb,O=aaa,C=US");
+      */
+    /* CompleteClass */
+    override def setByLdapString(dnStr: String): Unit = js.native
+    
+    /**
+      * set DN by associative array
+      * @param dnObj associative array of DN (ex. {C: "US", O: "aaa"})
+      * @example
+      * name = new KJUR.asn1.x509.X500Name();
+      * name.setByObject({C: "US", O: "aaa", CN="http://example.com/"1});
+      */
+    /* CompleteClass */
+    override def setByObject(dnObj: X500NameParam): Unit = js.native
+    
+    /**
+      * set DN by OpenSSL oneline distinguished name string
+      * @param dnStr distinguished name by string (ex. /C=US/O=aaa)
+      * @example
+      * name = new KJUR.asn1.x509.X500Name();
+      * name.setByString("/C=US/O=aaa/OU=bbb/CN=foo@example.com");
+      */
+    /* CompleteClass */
+    override def setByString(dnStr: String): Unit = js.native
   }
   object X500Name {
+    
+    @JSGlobal("jsrsasign.KJUR.asn1.x509.X500Name")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * convert LDAP(RFC 2253) distinguished name format string to OpenSSL oneline format
@@ -928,9 +2051,8 @@ object x509 {
       * KJUR.asn1.x509.X500Name.ldapToOneline('O=a/a,C=US')  → '/C=US/O=a\/a'
       */
     /* static member */
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.X500Name.ldapToOneline")
-    @js.native
-    def ldapToOneline(s: String): String = js.native
+    @scala.inline
+    def ldapToOneline(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ldapToOneline")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * convert OpenSSL oneline distinguished name format string to LDAP(RFC 2253) format
@@ -947,12 +2069,15 @@ object x509 {
       * KJUR.asn1.x509.X500Name.onelineToLDAP("/C=US/O=a,a") → 'O=a\,a,C=US'
       */
     /* static member */
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.X500Name.onelineToLDAP")
-    @js.native
-    def onelineToLDAP(s: String): String = js.native
+    @scala.inline
+    def onelineToLDAP(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("onelineToLDAP")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object X509Util {
+    
+    @JSGlobal("jsrsasign.KJUR.asn1.x509.X509Util")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * issue a certificate in PEM format
@@ -1022,11 +2147,9 @@ object x509 {
       *   sighex: '0102030405..'
       * });
       */
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.X509Util.newCertPEM")
-    @js.native
-    def newCertPEM(): String = js.native
-    @JSGlobal("jsrsasign.KJUR.asn1.x509.X509Util.newCertPEM")
-    @js.native
-    def newCertPEM(param: Cakey): String = js.native
+    @scala.inline
+    def newCertPEM(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCertPEM")().asInstanceOf[String]
+    @scala.inline
+    def newCertPEM(param: Cakey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCertPEM")(param.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

@@ -10,8 +10,8 @@ Recursive filesystem (and other) operations that Node *should* have.
 | Full name          | wrench |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 686 |
-| # downloads        | 6687747 |
+| # dependents       | 680 |
+| # downloads        | 6140877 |
 | # stars            | 34 |
 
 ## Links

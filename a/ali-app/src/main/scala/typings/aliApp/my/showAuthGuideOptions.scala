@@ -12,14 +12,13 @@ import typings.aliApp.aliAppStrings.SELFSTARTING
 import typings.aliApp.aliAppStrings.SHORTCUT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 权限引导 https://docs.alipay.com/mini/api/show-auth-guide
-@js.native
 trait showAuthGuideOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 引导的权限标识，用于标识该权限类型(如 LBS)
@@ -37,7 +36,7 @@ trait showAuthGuideOptions
     * lbs总开关    LBSSERVICE    iOS
     * lbs开关(app)    LBS    iOS
     */
-  var authType: BACKGROUNDER | SHORTCUT | MICROPHONE | ADDRESSBOOK | CAMERA | PHOTO | NOTIFICATION | SELFSTARTING | LBSSERVICE | LBS = js.native
+  var authType: BACKGROUNDER | SHORTCUT | MICROPHONE | ADDRESSBOOK | CAMERA | PHOTO | NOTIFICATION | SELFSTARTING | LBSSERVICE | LBS
 }
 object showAuthGuideOptions {
   

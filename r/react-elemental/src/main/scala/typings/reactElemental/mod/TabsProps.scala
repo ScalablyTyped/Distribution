@@ -4,25 +4,23 @@ import typings.react.mod.CSSProperties
 import typings.reactElemental.anon.LabelValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabsProps extends StObject {
   
-  val fit: js.UndefOr[Boolean] = js.native
+  val fit: js.UndefOr[Boolean] = js.undefined
   
-  val invert: js.UndefOr[Boolean] = js.native
+  val invert: js.UndefOr[Boolean] = js.undefined
   
-  val onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+  val onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
   
-  val options: js.UndefOr[js.Array[LabelValue]] = js.native
+  val options: js.UndefOr[js.Array[LabelValue]] = js.undefined
   
-  val secondary: js.UndefOr[Boolean] = js.native
+  val secondary: js.UndefOr[Boolean] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val value: js.UndefOr[String] = js.native
+  val value: js.UndefOr[String] = js.undefined
 }
 object TabsProps {
   

@@ -33,12 +33,15 @@ import typings.reduxRouter.reduxRouterStrings.location
 import typings.reduxRouter.reduxRouterStrings.staticContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reduxRouterMod {
   
   object default {
+    
+    @JSImport("redux-router/lib/ReduxRouter", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("redux-router/lib/ReduxRouter", "default.MemoryRouter")
     @js.native
@@ -134,87 +137,77 @@ object reduxRouterMod {
       def this(props: SwitchProps, context: js.Any) = this()
     }
     
-    @JSImport("redux-router/lib/ReduxRouter", "default.generatePath")
-    @js.native
-    def generatePath(pattern: String): String = js.native
-    @JSImport("redux-router/lib/ReduxRouter", "default.generatePath")
-    @js.native
-    def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = js.native
+    @scala.inline
+    def generatePath(pattern: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(pattern.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("redux-router/lib/ReduxRouter", "default.matchPath")
-    @js.native
+    @scala.inline
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String): `match`[Params] | Null = js.native
-    @JSImport("redux-router/lib/ReduxRouter", "default.matchPath")
-    @js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: String): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
+    @scala.inline
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = js.native
-    @JSImport("redux-router/lib/ReduxRouter", "default.matchPath")
-    @js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
+    @scala.inline
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String]): `match`[Params] | Null = js.native
-    @JSImport("redux-router/lib/ReduxRouter", "default.matchPath")
-    @js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: js.Array[String]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
+    @scala.inline
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = js.native
-    @JSImport("redux-router/lib/ReduxRouter", "default.matchPath")
-    @js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
+    @scala.inline
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps): `match`[Params] | Null = js.native
-    @JSImport("redux-router/lib/ReduxRouter", "default.matchPath")
-    @js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: RouteProps): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
+    @scala.inline
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
     
-    @JSImport("redux-router/lib/ReduxRouter", "default.useHistory")
-    @js.native
-    def useHistory[HistoryLocationState](): History[HistoryLocationState] = js.native
+    @scala.inline
+    def useHistory[HistoryLocationState](): History[HistoryLocationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHistory")().asInstanceOf[History[HistoryLocationState]]
     
-    @JSImport("redux-router/lib/ReduxRouter", "default.useLocation")
-    @js.native
-    def useLocation[S](): Location[S] = js.native
+    @scala.inline
+    def useLocation[S](): Location[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[Location[S]]
     
-    @JSImport("redux-router/lib/ReduxRouter", "default.useParams")
-    @js.native
+    @scala.inline
     def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.useParams with TopLevel[js.Any] */](): Params = js.native
+      */ typings.reduxRouter.reduxRouterStrings.useParams & TopLevel[js.Any] */](): Params = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[Params]
     
-    @JSImport("redux-router/lib/ReduxRouter", "default.useRouteMatch")
-    @js.native
+    @scala.inline
     def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with TopLevel[js.Any] */](): `match`[Params] = js.native
-    @JSImport("redux-router/lib/ReduxRouter", "default.useRouteMatch")
-    @js.native
+      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch & TopLevel[js.Any] */](): `match`[Params] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")().asInstanceOf[`match`[Params]]
+    @scala.inline
     def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with TopLevel[js.Any] */](path: String): `match`[Params] | Null = js.native
-    @JSImport("redux-router/lib/ReduxRouter", "default.useRouteMatch")
-    @js.native
+      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch & TopLevel[js.Any] */](path: String): `match`[Params] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")(path.asInstanceOf[js.Any]).asInstanceOf[`match`[Params] | Null]
+    @scala.inline
     def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with TopLevel[js.Any] */](path: js.Array[String]): `match`[Params] | Null = js.native
-    @JSImport("redux-router/lib/ReduxRouter", "default.useRouteMatch")
-    @js.native
+      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch & TopLevel[js.Any] */](path: js.Array[String]): `match`[Params] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")(path.asInstanceOf[js.Any]).asInstanceOf[`match`[Params] | Null]
+    @scala.inline
     def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with TopLevel[js.Any] */](path: RouteProps): `match`[Params] | Null = js.native
+      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch & TopLevel[js.Any] */](path: RouteProps): `match`[Params] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")(path.asInstanceOf[js.Any]).asInstanceOf[`match`[Params] | Null]
     
-    @JSImport("redux-router/lib/ReduxRouter", "default.withRouter")
-    @js.native
-    def withRouter[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClass[
+    @scala.inline
+    def withRouter[P /* <: RouteComponentProps[js.Any, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C & ComponentType[P]): (ComponentClass[
         (Omit[
           P, 
           /* keyof react-router.react-router.RouteComponentProps<any, react-router.react-router.StaticContext, history.history.LocationState> */ history | location | typings.reduxRouter.reduxRouterStrings.`match` | staticContext
-        ]) with WithRouterProps[C], 
+        ]) & WithRouterProps[C], 
         ComponentState
-      ]) with WithRouterStatics[C] = js.native
+      ]) & WithRouterStatics[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("withRouter")(component.asInstanceOf[js.Any]).asInstanceOf[(ComponentClass[
+        (Omit[
+          P, 
+          /* keyof react-router.react-router.RouteComponentProps<any, react-router.react-router.StaticContext, history.history.LocationState> */ history | location | typings.reduxRouter.reduxRouterStrings.`match` | staticContext
+        ]) & WithRouterProps[C], 
+        ComponentState
+      ]) & WithRouterStatics[C]]
   }
 }

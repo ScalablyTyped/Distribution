@@ -2,53 +2,51 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressInformation extends StObject {
   
   /**
     * The first line of the user's address.
     * Maximum length: 100 characters.
     */
-  var address1: js.UndefOr[String] = js.native
+  var address1: js.UndefOr[String] = js.undefined
   
   /**
     * The second line of the user's address.
     * Maximum length: 100 characters.
     */
-  var address2: js.UndefOr[String] = js.native
+  var address2: js.UndefOr[String] = js.undefined
   
   /**
     * The user's city. Maximum length: 40 characters.
     */
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
   /**
     * The user's country. Maximum length: 50 characters.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * A fax number associated with the address, if one is available.
     */
-  var fax: js.UndefOr[String] = js.native
+  var fax: js.UndefOr[String] = js.undefined
   
   /**
     * A phone number associated with the address.
     */
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
   /**
     * The user's postal code. Maximum length: 20 characters.
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * The user's state or province. Maximum length: 40 characters.
     */
-  var stateOrProvince: js.UndefOr[String] = js.native
+  var stateOrProvince: js.UndefOr[String] = js.undefined
 }
 object AddressInformation {
   

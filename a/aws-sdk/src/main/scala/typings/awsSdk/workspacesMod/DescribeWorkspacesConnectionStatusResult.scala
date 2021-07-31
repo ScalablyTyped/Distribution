@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorkspacesConnectionStatusResult extends StObject {
   
   /**
     * The token to use to retrieve the next set of results, or null if no more results are available.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * Information about the connection status of the WorkSpace.
     */
-  var WorkspacesConnectionStatus: js.UndefOr[WorkspaceConnectionStatusList] = js.native
+  var WorkspacesConnectionStatus: js.UndefOr[WorkspaceConnectionStatusList] = js.undefined
 }
 object DescribeWorkspacesConnectionStatusResult {
   

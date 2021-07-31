@@ -7,15 +7,70 @@ import typings.playable.downloadTypesMod.IDownloadViewConfig
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object downloadMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/download/download", JSImport.Default)
   @js.native
-  class default protected () extends DownloadButton {
+  class default protected ()
+    extends StObject
+       with DownloadButton {
     def this(hasEventEmitterTextMapTooltipServiceTheme: TextMap) = this()
+    
+    /* CompleteClass */
+    var _bindCallbacks: js.Any = js.native
+    
+    /* CompleteClass */
+    var _callback: js.Any = js.native
+    
+    /* CompleteClass */
+    var _destroyInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _interceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _textMap: js.Any = js.native
+    
+    /* CompleteClass */
+    var _theme: js.Any = js.native
+    
+    /* CompleteClass */
+    var _tooltipService: js.Any = js.native
+    
+    /* CompleteClass */
+    var _triggerCallback: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /* CompleteClass */
+    override def setDownloadClickCallback(callback: js.Function0[Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.downloadViewMod.default = js.native
   }
   object default {
     
@@ -53,34 +108,35 @@ object downloadMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait DownloadButton extends IDownloadButton {
+  trait DownloadButton
+    extends StObject
+       with IDownloadButton {
     
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: js.Any
     
-    var _callback: js.Any = js.native
+    var _callback: js.Any
     
-    var _destroyInterceptor: js.Any = js.native
+    var _destroyInterceptor: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _initInterceptor: js.Any = js.native
+    var _initInterceptor: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _interceptor: js.Any = js.native
+    var _interceptor: js.Any
     
-    var _textMap: js.Any = js.native
+    var _textMap: js.Any
     
-    var _theme: js.Any = js.native
+    var _theme: js.Any
     
-    var _tooltipService: js.Any = js.native
+    var _tooltipService: js.Any
     
-    var _triggerCallback: js.Any = js.native
+    var _triggerCallback: js.Any
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    var view: typings.playable.downloadViewMod.default = js.native
+    var view: typings.playable.downloadViewMod.default
   }
   object DownloadButton {
     

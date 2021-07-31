@@ -2,39 +2,37 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a combined date+time value. */
-@js.native
 trait DateTime extends StObject {
   
   /** is the day of month (1-31 or 0 for a void date). */
-  var Day: Double = js.native
+  var Day: Double
   
   /** contains the hour (0-23). */
-  var Hours: Double = js.native
+  var Hours: Double
   
   /**
     * true: time zone is UTC false: unknown time zone.
     * @since LibreOffice 4.1
     */
-  var IsUTC: Boolean = js.native
+  var IsUTC: Boolean
   
   /** contains the minutes (0-59). */
-  var Minutes: Double = js.native
+  var Minutes: Double
   
   /** is the month of year (1-12 or 0 for a void date). */
-  var Month: Double = js.native
+  var Month: Double
   
   /** contains the nanoseconds (0 - 999 999 999). */
-  var NanoSeconds: Double = js.native
+  var NanoSeconds: Double
   
   /** contains the seconds (0-59). */
-  var Seconds: Double = js.native
+  var Seconds: Double
   
   /** is the year. */
-  var Year: Double = js.native
+  var Year: Double
 }
 object DateTime {
   

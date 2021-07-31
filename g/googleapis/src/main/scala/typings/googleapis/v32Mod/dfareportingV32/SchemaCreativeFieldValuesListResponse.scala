@@ -2,30 +2,28 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creative Field Value List Response
   */
-@js.native
 trait SchemaCreativeFieldValuesListResponse extends StObject {
   
   /**
     * Creative field value collection.
     */
-  var creativeFieldValues: js.UndefOr[js.Array[SchemaCreativeFieldValue]] = js.native
+  var creativeFieldValues: js.UndefOr[js.Array[SchemaCreativeFieldValue]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#creativeFieldValuesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeFieldValuesListResponse {
   

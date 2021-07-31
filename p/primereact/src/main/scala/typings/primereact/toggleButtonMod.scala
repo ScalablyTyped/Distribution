@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toggleButtonMod {
@@ -23,40 +22,39 @@ object toggleButtonMod {
     def this(props: ToggleButtonProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ToggleButtonProps extends StObject {
     
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var iconPos: js.UndefOr[String] = js.native
+    var iconPos: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var offIcon: js.UndefOr[String] = js.native
+    var offIcon: js.UndefOr[String] = js.undefined
     
-    var offLabel: js.UndefOr[String] = js.native
+    var offLabel: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ TargetNameType, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ TargetNameType, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onIcon: js.UndefOr[String] = js.native
+    var onIcon: js.UndefOr[String] = js.undefined
     
-    var onLabel: js.UndefOr[String] = js.native
+    var onLabel: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
-    var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+    var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
   }
   object ToggleButtonProps {
     

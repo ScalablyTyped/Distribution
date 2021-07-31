@@ -3,18 +3,16 @@ package typings.algoliasearch.anon
 import typings.algoliaClientSearch.mod.UpdateApiKeyResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@algolia/client-common.@algolia/client-common.WaitablePromise<@algolia/client-search.@algolia/client-search.UpdateApiKeyResponse>> */
-@js.native
 trait ReadonlyWaitablePromiseUp extends StObject {
   
-  def `catch`[TResult](): js.Promise[UpdateApiKeyResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[UpdateApiKeyResponse | TResult]
   
-  def `finally`(): js.Promise[UpdateApiKeyResponse] = js.native
+  def `finally`(): js.Promise[UpdateApiKeyResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyWaitablePromiseUp {
   

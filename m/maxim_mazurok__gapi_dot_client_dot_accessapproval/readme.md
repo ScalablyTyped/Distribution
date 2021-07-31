@@ -10,9 +10,9 @@ TypeScript typings for Access Approval API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.accessapproval |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 37 |
+| # releases         | 13 |
+| # dependents       | 1 |
+| # downloads        | 1225 |
 | # stars            | 0 |
 
 ## Links

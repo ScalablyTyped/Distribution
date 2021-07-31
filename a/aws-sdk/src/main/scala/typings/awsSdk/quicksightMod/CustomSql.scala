@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomSql extends StObject {
   
   /**
     * The column schema from the SQL query result set.
     */
-  var Columns: js.UndefOr[InputColumnList] = js.native
+  var Columns: js.UndefOr[InputColumnList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the data source.
     */
-  var DataSourceArn: Arn = js.native
+  var DataSourceArn: Arn
   
   /**
     * A display name for the SQL query result.
     */
-  var Name: CustomSqlName = js.native
+  var Name: CustomSqlName
   
   /**
     * The SQL query.
     */
-  var SqlQuery: typings.awsSdk.quicksightMod.SqlQuery = js.native
+  var SqlQuery: typings.awsSdk.quicksightMod.SqlQuery
 }
 object CustomSql {
   

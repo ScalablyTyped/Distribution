@@ -2,10 +2,8 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IServerManagementOperations extends StObject {
   
   def BackupMasterDB(
@@ -13,21 +11,21 @@ trait IServerManagementOperations extends StObject {
     OverwriteExistingFiles: Boolean,
     FileSizeLimitInMB: Double,
     Impersonation: IImpersonation
-  ): Unit = js.native
+  ): Unit
   
-  def ConfigureWebAccessToDefaultWebSite(): Unit = js.native
+  def ConfigureWebAccessToDefaultWebSite(): Unit
   
-  def ConfigureWebAccessToExistingWebSite(WebSite: String): Unit = js.native
+  def ConfigureWebAccessToExistingWebSite(WebSite: String): Unit
   
-  def ConfigureWebAccessToNewVirtualDirectory(WebSite: String, VirtualDirectory: String): Unit = js.native
+  def ConfigureWebAccessToNewVirtualDirectory(WebSite: String, VirtualDirectory: String): Unit
   
-  def ConfigureWebAccessToNewWebSite(WebSite: String, Port: String): Unit = js.native
+  def ConfigureWebAccessToNewWebSite(WebSite: String, Port: String): Unit
   
-  def GetEventHandlers(): IEventHandlers = js.native
+  def GetEventHandlers(): IEventHandlers
   
-  def RestoreMasterDB(BackupFile: String, Impersonation: IImpersonation): Unit = js.native
+  def RestoreMasterDB(BackupFile: String, Impersonation: IImpersonation): Unit
   
-  def SetEventHandlers(EventHandlers: IEventHandlers): Unit = js.native
+  def SetEventHandlers(EventHandlers: IEventHandlers): Unit
 }
 object IServerManagementOperations {
   

@@ -5,21 +5,21 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents text, HTML, or XHTML content. This interface encapsulates elements in RSS 2.0 or Atom 1.0 that can have either text, HTML, or XHTML content. In Atom 1.0 this interface maps to an atomTextConstruct in the schema, which can be element atom:title, atom:subtitle, atom:rights or atom:summary. */
-@js.native
-trait ISyndicationText extends ISyndicationNode {
+trait ISyndicationText
+  extends StObject
+     with ISyndicationNode {
   
   /** Gets or sets the content of a text content construct like atom:title. */
-  var text: String = js.native
+  var text: String
   
   /** Gets or sets the type of the content. */
-  var `type`: String = js.native
+  var `type`: String
   
   /** Gets or sets the XML content. */
-  var xml: XmlDocument = js.native
+  var xml: XmlDocument
 }
 object ISyndicationText {
   

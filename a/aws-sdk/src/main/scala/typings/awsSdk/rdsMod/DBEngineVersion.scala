@@ -2,101 +2,99 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBEngineVersion extends StObject {
   
   /**
     * The description of the database engine.
     */
-  var DBEngineDescription: js.UndefOr[String] = js.native
+  var DBEngineDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the database engine version.
     */
-  var DBEngineVersionDescription: js.UndefOr[String] = js.native
+  var DBEngineVersionDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the DB parameter group family for the database engine.
     */
-  var DBParameterGroupFamily: js.UndefOr[String] = js.native
+  var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
   
   /**
     *  The default character set for new instances of this engine version, if the CharacterSetName parameter of the CreateDBInstance API isn't specified. 
     */
-  var DefaultCharacterSet: js.UndefOr[CharacterSet] = js.native
+  var DefaultCharacterSet: js.UndefOr[CharacterSet] = js.undefined
   
   /**
     * The name of the database engine.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * The version number of the database engine.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The types of logs that the database engine has available for export to CloudWatch Logs.
     */
-  var ExportableLogTypes: js.UndefOr[LogTypeList] = js.native
+  var ExportableLogTypes: js.UndefOr[LogTypeList] = js.undefined
   
   /**
     * The status of the DB engine version, either available or deprecated.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the character sets supported by this engine for the CharacterSetName parameter of the CreateDBInstance operation. 
     */
-  var SupportedCharacterSets: js.UndefOr[SupportedCharacterSetsList] = js.native
+  var SupportedCharacterSets: js.UndefOr[SupportedCharacterSetsList] = js.undefined
   
   /**
     * A list of the supported DB engine modes.
     */
-  var SupportedEngineModes: js.UndefOr[EngineModeList] = js.native
+  var SupportedEngineModes: js.UndefOr[EngineModeList] = js.undefined
   
   /**
     *  A list of features supported by the DB engine. Supported feature names include the following.    s3Import  
     */
-  var SupportedFeatureNames: js.UndefOr[FeatureNameList] = js.native
+  var SupportedFeatureNames: js.UndefOr[FeatureNameList] = js.undefined
   
   /**
     * A list of the character sets supported by the Oracle DB engine for the NcharCharacterSetName parameter of the CreateDBInstance operation. 
     */
-  var SupportedNcharCharacterSets: js.UndefOr[SupportedCharacterSetsList] = js.native
+  var SupportedNcharCharacterSets: js.UndefOr[SupportedCharacterSetsList] = js.undefined
   
   /**
     * A list of the time zones supported by this engine for the Timezone parameter of the CreateDBInstance action. 
     */
-  var SupportedTimezones: js.UndefOr[SupportedTimezonesList] = js.native
+  var SupportedTimezones: js.UndefOr[SupportedTimezonesList] = js.undefined
   
   /**
     * A value that indicates whether you can use Aurora global databases with a specific DB engine version.
     */
-  var SupportsGlobalDatabases: js.UndefOr[Boolean] = js.native
+  var SupportsGlobalDatabases: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A value that indicates whether the engine version supports exporting the log types specified by ExportableLogTypes to CloudWatch Logs.
     */
-  var SupportsLogExportsToCloudwatchLogs: js.UndefOr[Boolean] = js.native
+  var SupportsLogExportsToCloudwatchLogs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A value that indicates whether you can use Aurora parallel query with a specific DB engine version.
     */
-  var SupportsParallelQuery: js.UndefOr[Boolean] = js.native
+  var SupportsParallelQuery: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the database engine version supports read replicas.
     */
-  var SupportsReadReplica: js.UndefOr[Boolean] = js.native
+  var SupportsReadReplica: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of engine versions that this database engine version can be upgraded to.
     */
-  var ValidUpgradeTarget: js.UndefOr[ValidUpgradeTargetList] = js.native
+  var ValidUpgradeTarget: js.UndefOr[ValidUpgradeTargetList] = js.undefined
 }
 object DBEngineVersion {
   

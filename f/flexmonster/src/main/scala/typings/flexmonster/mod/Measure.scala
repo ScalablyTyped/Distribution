@@ -2,27 +2,25 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Measure extends StObject {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var aggregation: js.UndefOr[String] = js.native
+  var aggregation: js.UndefOr[String] = js.undefined
   
-  var availableAggregations: js.UndefOr[js.Array[String]] = js.native
+  var availableAggregations: js.UndefOr[js.Array[String]] = js.undefined
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var formula: js.UndefOr[String] = js.native
+  var formula: js.UndefOr[String] = js.undefined
   
-  var grandTotalCaption: js.UndefOr[String] = js.native
+  var grandTotalCaption: js.UndefOr[String] = js.undefined
   
-  var uniqueName: js.UndefOr[String] = js.native
+  var uniqueName: js.UndefOr[String] = js.undefined
 }
 object Measure {
   

@@ -7,23 +7,21 @@ import typings.node.Buffer
 import typings.peerId.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handshakeInterfaceMod {
   
-  @js.native
   trait IHandshake extends StObject {
     
-    def decrypt(ciphertext: bytes, session: NoiseSession): Plaintext = js.native
+    def decrypt(ciphertext: bytes, session: NoiseSession): Plaintext
     
-    def encrypt(plaintext: bytes, session: NoiseSession): bytes = js.native
+    def encrypt(plaintext: bytes, session: NoiseSession): bytes
     
-    var remoteEarlyData: Buffer = js.native
+    var remoteEarlyData: Buffer
     
-    var remotePeer: ^ = js.native
+    var remotePeer: ^
     
-    var session: NoiseSession = js.native
+    var session: NoiseSession
   }
   object IHandshake {
     

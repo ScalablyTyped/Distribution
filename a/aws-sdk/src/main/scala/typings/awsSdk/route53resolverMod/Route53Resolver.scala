@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -59,7 +58,7 @@ trait Route53Resolver extends Service {
   ): Request[AssociateResolverRuleResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_Route53Resolver: ConfigBase with ClientConfiguration = js.native
+  var config_Route53Resolver: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a Resolver endpoint. There are two types of Resolver endpoints, inbound and outbound:   An inbound Resolver endpoint forwards DNS queries to the DNS service for a VPC from your network.   An outbound Resolver endpoint forwards DNS queries from the DNS service for a VPC to your network.  

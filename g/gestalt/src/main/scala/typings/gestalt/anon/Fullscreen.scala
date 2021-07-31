@@ -2,13 +2,11 @@ package typings.gestalt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fullscreen extends StObject {
   
-  var fullscreen: Boolean = js.native
+  var fullscreen: Boolean
 }
 object Fullscreen {
   

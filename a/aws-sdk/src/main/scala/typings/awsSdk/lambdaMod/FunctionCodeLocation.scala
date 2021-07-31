@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionCodeLocation extends StObject {
   
   /**
     * A presigned URL that you can use to download the deployment package.
     */
-  var Location: js.UndefOr[String] = js.native
+  var Location: js.UndefOr[String] = js.undefined
   
   /**
     * The service that's hosting the file.
     */
-  var RepositoryType: js.UndefOr[String] = js.native
+  var RepositoryType: js.UndefOr[String] = js.undefined
 }
 object FunctionCodeLocation {
   

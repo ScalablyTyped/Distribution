@@ -11,7 +11,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object suggestionsControlMod {
@@ -23,19 +22,25 @@ object suggestionsControlMod {
   object SuggestionItemType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SuggestionItemType with Double] = js.native
+    def apply(value: Double): js.UndefOr[SuggestionItemType & Double] = js.native
     
     @js.native
-    sealed trait footer extends SuggestionItemType
-    /* 2 */ val footer: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.footer with Double = js.native
+    sealed trait footer
+      extends StObject
+         with SuggestionItemType
+    /* 2 */ val footer: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.footer & Double = js.native
     
     @js.native
-    sealed trait header extends SuggestionItemType
-    /* 0 */ val header: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.header with Double = js.native
+    sealed trait header
+      extends StObject
+         with SuggestionItemType
+    /* 0 */ val header: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.header & Double = js.native
     
     @js.native
-    sealed trait suggestion extends SuggestionItemType
-    /* 1 */ val suggestion: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.suggestion with Double = js.native
+    sealed trait suggestion
+      extends StObject
+         with SuggestionItemType
+    /* 1 */ val suggestion: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.suggestion & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsControl", "SuggestionsControl")
@@ -152,14 +157,13 @@ object suggestionsControlMod {
     def this(props: ISuggestionsHeaderFooterItemProps) = this()
   }
   
-  @js.native
   trait ISuggestionsControlState[T] extends StObject {
     
-    var selectedFooterIndex: Double = js.native
+    var selectedFooterIndex: Double
     
-    var selectedHeaderIndex: Double = js.native
+    var selectedHeaderIndex: Double
     
-    var suggestions: js.Array[ISuggestionModel[T]] = js.native
+    var suggestions: js.Array[ISuggestionModel[T]]
   }
   object ISuggestionsControlState {
     
@@ -174,7 +178,7 @@ object suggestionsControlMod {
     }
     
     @scala.inline
-    implicit class ISuggestionsControlStateMutableBuilder[Self <: ISuggestionsControlState[_], T] (val x: Self with ISuggestionsControlState[T]) extends AnyVal {
+    implicit class ISuggestionsControlStateMutableBuilder[Self <: ISuggestionsControlState[?], T] (val x: Self & ISuggestionsControlState[T]) extends AnyVal {
       
       @scala.inline
       def setSelectedFooterIndex(value: Double): Self = StObject.set(x, "selectedFooterIndex", value.asInstanceOf[js.Any])

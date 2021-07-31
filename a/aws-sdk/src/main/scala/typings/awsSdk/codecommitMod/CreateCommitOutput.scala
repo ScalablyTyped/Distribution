@@ -2,36 +2,34 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCommitOutput extends StObject {
   
   /**
     * The full commit ID of the commit that contains your committed file changes.
     */
-  var commitId: js.UndefOr[ObjectId] = js.native
+  var commitId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * The files added as part of the committed file changes.
     */
-  var filesAdded: js.UndefOr[FilesMetadata] = js.native
+  var filesAdded: js.UndefOr[FilesMetadata] = js.undefined
   
   /**
     * The files deleted as part of the committed file changes.
     */
-  var filesDeleted: js.UndefOr[FilesMetadata] = js.native
+  var filesDeleted: js.UndefOr[FilesMetadata] = js.undefined
   
   /**
     * The files updated as part of the commited file changes.
     */
-  var filesUpdated: js.UndefOr[FilesMetadata] = js.native
+  var filesUpdated: js.UndefOr[FilesMetadata] = js.undefined
   
   /**
     * The full SHA-1 pointer of the tree information for the commit that contains the commited file changes.
     */
-  var treeId: js.UndefOr[ObjectId] = js.native
+  var treeId: js.UndefOr[ObjectId] = js.undefined
 }
 object CreateCommitOutput {
   

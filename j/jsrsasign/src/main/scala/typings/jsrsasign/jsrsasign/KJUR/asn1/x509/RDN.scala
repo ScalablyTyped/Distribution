@@ -3,7 +3,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,8 +30,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * rdn = new KJUR.asn1.x509.RDN({str: "O=a+O=b\\+b+O=c"}); // plus escaped
   * rdn = new KJUR.asn1.x509.RDN({str: "O=a+O=\"b+b\"+O=c"}); // double quoted
   */
-@js.native
-trait RDN extends ASN1Object {
+trait RDN
+  extends StObject
+     with ASN1Object {
   
   /**
     * add one AttributeTypeAndValue by multi-valued string
@@ -45,7 +45,7 @@ trait RDN extends ASN1Object {
     * rdn.addByMultiValuedString("O=a+O=b\+b\+b+O=c"); // multi-valued RDN with quoted plus
     * rdn.addByMultiValuedString("O=a+O=\"b+b+b\"+O=c"); // multi-valued RDN with quoted quotation
     */
-  def addByMultiValuedString(s: String): Unit = js.native
+  def addByMultiValuedString(s: String): Unit
   
   /**
     * add one AttributeTypeAndValue by string
@@ -58,7 +58,7 @@ trait RDN extends ASN1Object {
     * rdn.addByString("CN=john");
     * rdn.addByString("serialNumber=1234"); // for multi-valued RDN
     */
-  def addByString(s: String): Unit = js.native
+  def addByString(s: String): Unit
 }
 object RDN {
   

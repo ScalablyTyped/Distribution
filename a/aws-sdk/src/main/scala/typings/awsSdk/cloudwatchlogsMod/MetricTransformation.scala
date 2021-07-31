@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricTransformation extends StObject {
   
   /**
     * (Optional) The value to emit when a filter pattern does not match a log event. This value can be null.
     */
-  var defaultValue: js.UndefOr[DefaultValue] = js.native
+  var defaultValue: js.UndefOr[DefaultValue] = js.undefined
   
   /**
     * The name of the CloudWatch metric.
     */
-  var metricName: MetricName = js.native
+  var metricName: MetricName
   
   /**
     * A custom namespace to contain your metric in CloudWatch. Use namespaces to group together metrics that are similar. For more information, see Namespaces.
     */
-  var metricNamespace: MetricNamespace = js.native
+  var metricNamespace: MetricNamespace
   
   /**
     * The value to publish to the CloudWatch metric when a filter pattern matches a log event.
     */
-  var metricValue: MetricValue = js.native
+  var metricValue: MetricValue
 }
 object MetricTransformation {
   

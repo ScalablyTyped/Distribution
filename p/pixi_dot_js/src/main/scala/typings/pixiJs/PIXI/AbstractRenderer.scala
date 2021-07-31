@@ -4,7 +4,6 @@ import typings.pixiJs.PIXI.utils.EventEmitter
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait AbstractRenderer extends EventEmitter {
+trait AbstractRenderer
+  extends StObject
+     with EventEmitter {
   
   /**
     * The background color as a number.

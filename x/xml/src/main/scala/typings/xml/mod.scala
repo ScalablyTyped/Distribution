@@ -8,52 +8,48 @@ import typings.xml.anon.Encoding
 import typings.xml.anon.Indent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("xml", JSImport.Namespace)
-  @js.native
-  def apply(): String = js.native
-  @JSImport("xml", JSImport.Namespace)
-  @js.native
-  def apply(xmlObject: js.UndefOr[XmlObject], options: String): String = js.native
-  @JSImport("xml", JSImport.Namespace)
-  @js.native
-  def apply(xmlObject: js.UndefOr[XmlObject], options: Boolean): String = js.native
-  @JSImport("xml", JSImport.Namespace)
-  @js.native
-  def apply(xmlObject: js.UndefOr[XmlObject], options: Option): String = js.native
-  @JSImport("xml", JSImport.Namespace)
-  @js.native
-  def apply(xmlObject: js.Array[XmlObject]): String = js.native
-  @JSImport("xml", JSImport.Namespace)
-  @js.native
-  def apply(xmlObject: js.Array[XmlObject], options: String): String = js.native
-  @JSImport("xml", JSImport.Namespace)
-  @js.native
-  def apply(xmlObject: js.Array[XmlObject], options: Boolean): String = js.native
-  @JSImport("xml", JSImport.Namespace)
-  @js.native
-  def apply(xmlObject: js.Array[XmlObject], options: Indent): ReadableStream = js.native
-  @JSImport("xml", JSImport.Namespace)
-  @js.native
-  def apply(xmlObject: js.Array[XmlObject], options: Option): String = js.native
-  @JSImport("xml", JSImport.Namespace)
-  @js.native
-  def apply(xmlObject: XmlObject): String = js.native
-  @JSImport("xml", JSImport.Namespace)
-  @js.native
-  def apply(xmlObject: XmlObject, options: Indent): ReadableStream = js.native
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(xmlObject: js.Array[XmlObject]): String = ^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(xmlObject: js.Array[XmlObject], options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(xmlObject: js.Array[XmlObject], options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(xmlObject: js.Array[XmlObject], options: Indent): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def apply(xmlObject: js.Array[XmlObject], options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(xmlObject: Unit, options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(xmlObject: Unit, options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(xmlObject: Unit, options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(xmlObject: XmlObject): String = ^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(xmlObject: XmlObject, options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(xmlObject: XmlObject, options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(xmlObject: XmlObject, options: Indent): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def apply(xmlObject: XmlObject, options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("xml", "Element")
+  @JSImport("xml", JSImport.Namespace)
   @js.native
-  def Element_(xmlObjects: XmlObject*): ElementObject = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("xml", "element")
-  @js.native
-  def element(xmlObjects: XmlObject*): ElementObject = js.native
+  @scala.inline
+  def Element_(xmlObjects: XmlObject*): ElementObject = ^.asInstanceOf[js.Dynamic].applyDynamic("Element")(xmlObjects.asInstanceOf[js.Any]).asInstanceOf[ElementObject]
+  
+  @scala.inline
+  def element(xmlObjects: XmlObject*): ElementObject = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(xmlObjects.asInstanceOf[js.Any]).asInstanceOf[ElementObject]
   
   @js.native
   trait ElementObject extends StObject {
@@ -64,23 +60,22 @@ object mod {
     def push(xmlObject: XmlObject): Unit = js.native
   }
   
-  @js.native
   trait Option extends StObject {
     
     /**
       * Add default xml declaration (default false)
       */
-    var declaration: js.UndefOr[Boolean | Encoding] = js.native
+    var declaration: js.UndefOr[Boolean | Encoding] = js.undefined
     
     /**
       * String used for tab, defaults to no tabs (compressed)
       */
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
     /**
       * Return the result as a `stream` (default false)
       */
-    var stream: js.UndefOr[Boolean] = js.native
+    var stream: js.UndefOr[Boolean] = js.undefined
   }
   object Option {
     
@@ -127,9 +122,9 @@ object mod {
   */
   type XmlDesc = _XmlDesc | js.Array[XmlAtom] | XmlAtom
   
-  @js.native
   trait XmlDescArray
-    extends /* index */ NumberDictionary[Attr | XmlObject]
+    extends StObject
+       with /* index */ NumberDictionary[Attr | XmlObject]
        with _XmlDesc
   object XmlDescArray {
     

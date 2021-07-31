@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProductOutput extends StObject {
   
   /**
     * Information about the product view.
     */
-  var ProductViewDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ProductViewDetail] = js.native
+  var ProductViewDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ProductViewDetail] = js.undefined
   
   /**
     * Information about the provisioning artifact. 
     */
-  var ProvisioningArtifactDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactDetail] = js.native
+  var ProvisioningArtifactDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactDetail] = js.undefined
   
   /**
     * Information about the tags associated with the product.
     */
-  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.undefined
 }
 object CreateProductOutput {
   

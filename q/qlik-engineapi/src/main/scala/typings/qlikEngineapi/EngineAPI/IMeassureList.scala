@@ -2,16 +2,14 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IMeassureList
   */
-@js.native
 trait IMeassureList extends StObject {
   
-  var qItems: js.Array[IMeassureListItemLayout] = js.native
+  var qItems: js.Array[IMeassureListItemLayout]
 }
 object IMeassureList {
   

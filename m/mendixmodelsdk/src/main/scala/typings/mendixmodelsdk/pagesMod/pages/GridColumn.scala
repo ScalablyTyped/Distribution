@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -100,9 +99,8 @@ object GridColumn {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridColumn.create")
-  @js.native
-  def create(model: IModel): GridColumn = js.native
+  @scala.inline
+  def create(model: IModel): GridColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[GridColumn]
   
   /**
     * Creates and returns a new GridColumn instance in the SDK and on the server.
@@ -110,9 +108,8 @@ object GridColumn {
     * of the parent ColumnGrid element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridColumn.createIn")
-  @js.native
-  def createIn(container: ColumnGrid): GridColumn = js.native
+  @scala.inline
+  def createIn(container: ColumnGrid): GridColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GridColumn]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridColumn.structureTypeName")

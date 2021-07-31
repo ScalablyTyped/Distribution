@@ -4,21 +4,21 @@ import typings.materialChips.chipConstantsMod.EventSource
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   @js.native
-  trait MDCChipInteractionEvent extends Event {
+  trait MDCChipInteractionEvent
+    extends StObject
+       with Event {
     
     val detail: MDCChipInteractionEventDetail = js.native
   }
   
-  @js.native
   trait MDCChipInteractionEventDetail extends StObject {
     
-    var chipId: String = js.native
+    var chipId: String
   }
   object MDCChipInteractionEventDetail {
     
@@ -37,17 +37,20 @@ object typesMod {
   }
   
   @js.native
-  trait MDCChipNavigationEvent extends Event {
+  trait MDCChipNavigationEvent
+    extends StObject
+       with Event {
     
     val detail: MDCChipNavigationEventDetail = js.native
   }
   
-  @js.native
-  trait MDCChipNavigationEventDetail extends MDCChipInteractionEventDetail {
+  trait MDCChipNavigationEventDetail
+    extends StObject
+       with MDCChipInteractionEventDetail {
     
-    var key: String = js.native
+    var key: String
     
-    var source: EventSource = js.native
+    var source: EventSource
   }
   object MDCChipNavigationEventDetail {
     
@@ -69,21 +72,24 @@ object typesMod {
   }
   
   @js.native
-  trait MDCChipRemovalEvent extends Event {
+  trait MDCChipRemovalEvent
+    extends StObject
+       with Event {
     
     val detail: MDCChipRemovalEventDetail = js.native
   }
   
-  @js.native
-  trait MDCChipRemovalEventDetail extends MDCChipInteractionEventDetail {
+  trait MDCChipRemovalEventDetail
+    extends StObject
+       with MDCChipInteractionEventDetail {
     
-    var removedAnnouncement: String | Null = js.native
+    var removedAnnouncement: String | Null
   }
   object MDCChipRemovalEventDetail {
     
     @scala.inline
     def apply(chipId: String): MDCChipRemovalEventDetail = {
-      val __obj = js.Dynamic.literal(chipId = chipId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(chipId = chipId.asInstanceOf[js.Any], removedAnnouncement = null)
       __obj.asInstanceOf[MDCChipRemovalEventDetail]
     }
     
@@ -99,17 +105,20 @@ object typesMod {
   }
   
   @js.native
-  trait MDCChipSelectionEvent extends Event {
+  trait MDCChipSelectionEvent
+    extends StObject
+       with Event {
     
     val detail: MDCChipSelectionEventDetail = js.native
   }
   
-  @js.native
-  trait MDCChipSelectionEventDetail extends MDCChipInteractionEventDetail {
+  trait MDCChipSelectionEventDetail
+    extends StObject
+       with MDCChipInteractionEventDetail {
     
-    var selected: Boolean = js.native
+    var selected: Boolean
     
-    var shouldIgnore: Boolean = js.native
+    var shouldIgnore: Boolean
   }
   object MDCChipSelectionEventDetail {
     

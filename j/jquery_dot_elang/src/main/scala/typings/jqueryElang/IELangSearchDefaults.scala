@@ -2,26 +2,26 @@ package typings.jqueryElang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ELangSearch
-@js.native
-trait IELangSearchDefaults extends IELangBaseDefaults {
+trait IELangSearchDefaults
+  extends StObject
+     with IELangBaseDefaults {
   
-  var expressionsLabel: String = js.native
+  var expressionsLabel: String
   
-  var expressionsTooltip: String = js.native
+  var expressionsTooltip: String
   
-  var meaningsLabel: String = js.native
+  var meaningsLabel: String
   
-  var meaningsTooltip: String = js.native
+  var meaningsTooltip: String
   
-  var searchButtonLabel: String = js.native
+  var searchButtonLabel: String
   
-  var searchFieldHtml: String = js.native
+  var searchFieldHtml: String
   
-  var searchFormHtml: String = js.native
+  var searchFormHtml: String
 }
 object IELangSearchDefaults {
   

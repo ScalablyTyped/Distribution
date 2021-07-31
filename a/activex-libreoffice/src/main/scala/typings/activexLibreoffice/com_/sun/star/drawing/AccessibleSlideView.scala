@@ -16,7 +16,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An accessible slide view gives access to all visible slides of a slide view.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleSlideView
-  extends XAccessible
+  extends StObject
+     with XAccessible
      with XAccessibleContext
      with XAccessibleEventBroadcaster
      with XAccessibleComponent

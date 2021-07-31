@@ -9,13 +9,14 @@ import typings.vueNiceDates.anon.GridType
 import typings.vueNiceDates.anon.MergedModifiers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendarMod {
   
   @js.native
-  trait Calendar extends VueConstructor[Vue] {
+  trait Calendar
+    extends StObject
+       with VueConstructor[Vue] {
     
     var computed: MergedModifiers = js.native
     

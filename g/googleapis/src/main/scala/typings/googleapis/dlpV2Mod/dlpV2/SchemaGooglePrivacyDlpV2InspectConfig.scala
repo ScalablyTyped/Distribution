@@ -2,39 +2,37 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration description of the scanning process. When used with
   * redactContent only info_types and min_likelihood are currently used.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2InspectConfig extends StObject {
   
   /**
     * List of options defining data content to scan. If empty, text, images,
     * and other content will be included.
     */
-  var contentOptions: js.UndefOr[js.Array[String]] = js.native
+  var contentOptions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * CustomInfoTypes provided by the user. See
     * https://cloud.google.com/dlp/docs/creating-custom-infotypes to learn
     * more.
     */
-  var customInfoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2CustomInfoType]] = js.native
+  var customInfoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2CustomInfoType]] = js.undefined
   
   /**
     * When true, excludes type information of the findings.
     */
-  var excludeInfoTypes: js.UndefOr[Boolean] = js.native
+  var excludeInfoTypes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, a contextual quote from the data that triggered a finding is
     * included in the response; see Finding.quote.
     */
-  var includeQuote: js.UndefOr[Boolean] = js.native
+  var includeQuote: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Restricts what info_types to look for. The values must correspond to
@@ -48,22 +46,22 @@ trait SchemaGooglePrivacyDlpV2InspectConfig extends StObject {
     * control and predictability as to what detectors are run you should
     * specify specific InfoTypes listed in the reference.
     */
-  var infoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoType]] = js.native
+  var infoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoType]] = js.undefined
   
-  var limits: js.UndefOr[SchemaGooglePrivacyDlpV2FindingLimits] = js.native
+  var limits: js.UndefOr[SchemaGooglePrivacyDlpV2FindingLimits] = js.undefined
   
   /**
     * Only returns findings equal or above this threshold. The default is
     * POSSIBLE. See https://cloud.google.com/dlp/docs/likelihood to learn more.
     */
-  var minLikelihood: js.UndefOr[String] = js.native
+  var minLikelihood: js.UndefOr[String] = js.undefined
   
   /**
     * Set of rules to apply to the findings for this InspectConfig. Exclusion
     * rules, contained in the set are executed in the end, other rules are
     * executed in the order they are specified for each info type.
     */
-  var ruleSet: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InspectionRuleSet]] = js.native
+  var ruleSet: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InspectionRuleSet]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InspectConfig {
   

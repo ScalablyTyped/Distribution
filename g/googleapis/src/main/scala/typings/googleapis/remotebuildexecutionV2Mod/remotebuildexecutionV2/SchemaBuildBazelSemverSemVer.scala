@@ -2,36 +2,34 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The full version of a given tool.
   */
-@js.native
 trait SchemaBuildBazelSemverSemVer extends StObject {
   
   /**
     * The major version, e.g 10 for 10.2.3.
     */
-  var major: js.UndefOr[Double] = js.native
+  var major: js.UndefOr[Double] = js.undefined
   
   /**
     * The minor version, e.g. 2 for 10.2.3.
     */
-  var minor: js.UndefOr[Double] = js.native
+  var minor: js.UndefOr[Double] = js.undefined
   
   /**
     * The patch version, e.g 3 for 10.2.3.
     */
-  var patch: js.UndefOr[Double] = js.native
+  var patch: js.UndefOr[Double] = js.undefined
   
   /**
     * The pre-release version. Either this field or major/minor/patch fields
     * must be filled. They are mutually exclusive. Pre-release versions are
     * assumed to be earlier than any released versions.
     */
-  var prerelease: js.UndefOr[String] = js.native
+  var prerelease: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildBazelSemverSemVer {
   

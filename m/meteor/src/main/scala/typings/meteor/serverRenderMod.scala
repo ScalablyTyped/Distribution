@@ -6,57 +6,58 @@ import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverRenderMod {
   
-  @JSImport("meteor/server-render", "onPageLoad")
+  @JSImport("meteor/server-render", JSImport.Namespace)
   @js.native
-  def onPageLoad[T /* <: Callback */](callback: T): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def onPageLoad[T /* <: Callback */](callback: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("onPageLoad")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
   
   type Callback = js.Function1[/* sink */ Sink, js.Promise[js.Any] | js.Any]
   
-  @js.native
   trait Sink extends StObject {
     
-    var appendToBody: js.UndefOr[js.Function1[/* html */ String, Unit]] = js.native
+    var appendToBody: js.UndefOr[js.Function1[/* html */ String, Unit]] = js.undefined
     
-    var appendToElementById: js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]] = js.native
+    var appendToElementById: js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]] = js.undefined
     
-    var appendToHead: js.UndefOr[js.Function1[/* html */ String, Unit]] = js.native
+    var appendToHead: js.UndefOr[js.Function1[/* html */ String, Unit]] = js.undefined
     
-    var arch: js.UndefOr[String] = js.native
+    var arch: js.UndefOr[String] = js.undefined
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var getCookies: js.UndefOr[js.Function0[StringDictionary[String]]] = js.native
+    var getCookies: js.UndefOr[js.Function0[StringDictionary[String]]] = js.undefined
     
-    var getHeaders: js.UndefOr[js.Function0[IncomingHttpHeaders]] = js.native
+    var getHeaders: js.UndefOr[js.Function0[IncomingHttpHeaders]] = js.undefined
     
-    var head: js.UndefOr[String] = js.native
+    var head: js.UndefOr[String] = js.undefined
     
-    var htmlById: js.UndefOr[StringDictionary[String]] = js.native
+    var htmlById: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var maybeMadeChanges: js.UndefOr[Boolean] = js.native
+    var maybeMadeChanges: js.UndefOr[Boolean] = js.undefined
     
-    var redirect: js.UndefOr[js.Function2[/* location */ String, /* code */ js.UndefOr[Double], Unit]] = js.native
+    var redirect: js.UndefOr[js.Function2[/* location */ String, /* code */ js.UndefOr[Double], Unit]] = js.undefined
     
-    var renderIntoElementById: (js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]]) with (js.UndefOr[js.Function2[/* id */ String, /* html */ ReadableStream, Unit]]) = js.native
+    var renderIntoElementById: (js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]]) & (js.UndefOr[js.Function2[/* id */ String, /* html */ ReadableStream, Unit]])
     
-    var request: js.UndefOr[IncomingMessage] = js.native
+    var request: js.UndefOr[IncomingMessage] = js.undefined
     
     var setHeader: js.UndefOr[
         js.Function2[/* key */ String, /* value */ Double | String | js.Array[String], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var setStatusCode: js.UndefOr[js.Function1[/* code */ Double, Unit]] = js.native
+    var setStatusCode: js.UndefOr[js.Function1[/* code */ Double, Unit]] = js.undefined
   }
   object Sink {
     
     @scala.inline
     def apply(
-      renderIntoElementById: (js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]]) with (js.UndefOr[js.Function2[/* id */ String, /* html */ ReadableStream, Unit]])
+      renderIntoElementById: (js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]]) & (js.UndefOr[js.Function2[/* id */ String, /* html */ ReadableStream, Unit]])
     ): Sink = {
       val __obj = js.Dynamic.literal(renderIntoElementById = renderIntoElementById.asInstanceOf[js.Any])
       __obj.asInstanceOf[Sink]
@@ -133,7 +134,7 @@ object serverRenderMod {
       
       @scala.inline
       def setRenderIntoElementById(
-        value: (js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]]) with (js.UndefOr[js.Function2[/* id */ String, /* html */ ReadableStream, Unit]])
+        value: (js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]]) & (js.UndefOr[js.Function2[/* id */ String, /* html */ ReadableStream, Unit]])
       ): Self = StObject.set(x, "renderIntoElementById", value.asInstanceOf[js.Any])
       
       @scala.inline

@@ -2,31 +2,29 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationBackup extends StObject {
   
   /**
     * The date and time when both the source backup was created.
     */
-  var CreateTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreateTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The identifier (ID) of the source backup from which the new backup was copied.
     */
-  var SourceBackup: js.UndefOr[BackupId] = js.native
+  var SourceBackup: js.UndefOr[BackupId] = js.undefined
   
   /**
     * The identifier (ID) of the cluster containing the source backup from which the new backup was copied.
     */
-  var SourceCluster: js.UndefOr[ClusterId] = js.native
+  var SourceCluster: js.UndefOr[ClusterId] = js.undefined
   
   /**
     * The AWS region that contains the source backup from which the new backup was copied.
     */
-  var SourceRegion: js.UndefOr[Region] = js.native
+  var SourceRegion: js.UndefOr[Region] = js.undefined
 }
 object DestinationBackup {
   

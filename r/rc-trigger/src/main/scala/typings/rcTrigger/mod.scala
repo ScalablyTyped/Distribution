@@ -1,6 +1,5 @@
 package typings.rcTrigger
 
-import org.scalablytyped.runtime.Shortcut
 import typings.rcMotion.cssmotionMod.CSSMotionProps
 import typings.rcTrigger.interfaceMod.ActionType
 import typings.rcTrigger.interfaceMod.AlignType
@@ -19,10 +18,13 @@ import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("rc-trigger", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rc-trigger", JSImport.Default)
@@ -36,104 +38,102 @@ object mod extends Shortcut {
   @js.native
   val default: ComponentClass[TriggerProps, js.Any] = js.native
   
-  @JSImport("rc-trigger", "generateTrigger")
-  @js.native
-  def generateTrigger(PortalComponent: js.Any): ComponentClass[TriggerProps, ComponentState] = js.native
+  @scala.inline
+  def generateTrigger(PortalComponent: js.Any): ComponentClass[TriggerProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateTrigger")(PortalComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[TriggerProps, ComponentState]]
   
-  @js.native
   trait TriggerProps extends StObject {
     
-    var action: js.UndefOr[ActionType | js.Array[ActionType]] = js.native
+    var action: js.UndefOr[ActionType | js.Array[ActionType]] = js.undefined
     
-    var afterPopupVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var afterPopupVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var alignPoint: js.UndefOr[Boolean] = js.native
+    var alignPoint: js.UndefOr[Boolean] = js.undefined
     
-    var autoDestroy: js.UndefOr[Boolean] = js.native
+    var autoDestroy: js.UndefOr[Boolean] = js.undefined
     
-    var blurDelay: js.UndefOr[Double] = js.native
+    var blurDelay: js.UndefOr[Double] = js.undefined
     
-    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.native
+    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultPopupVisible: js.UndefOr[Boolean] = js.native
+    var defaultPopupVisible: js.UndefOr[Boolean] = js.undefined
     
-    var destroyPopupOnHide: js.UndefOr[Boolean] = js.native
+    var destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined
     
-    var focusDelay: js.UndefOr[Double] = js.native
+    var focusDelay: js.UndefOr[Double] = js.undefined
     
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getDocument: js.UndefOr[js.Function0[HTMLDocument]] = js.native
+    var getDocument: js.UndefOr[js.Function0[HTMLDocument]] = js.undefined
     
-    var getPopupClassNameFromAlign: js.UndefOr[js.Function1[/* align */ AlignType, String]] = js.native
+    var getPopupClassNameFromAlign: js.UndefOr[js.Function1[/* align */ AlignType, String]] = js.undefined
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
     
     /**
       * @private Get trigger DOM node.
       * Used for some component is function component which can not access by `findDOMNode`
       */
-    var getTriggerDOMNode: js.UndefOr[js.Function1[/* node */ ReactInstance, HTMLElement]] = js.native
+    var getTriggerDOMNode: js.UndefOr[js.Function1[/* node */ ReactInstance, HTMLElement]] = js.undefined
     
-    var hideAction: js.UndefOr[js.Array[ActionType]] = js.native
+    var hideAction: js.UndefOr[js.Array[ActionType]] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated Please us `maskMotion` instead. */
-    var maskAnimation: js.UndefOr[String] = js.native
+    var maskAnimation: js.UndefOr[String] = js.undefined
     
-    var maskClosable: js.UndefOr[Boolean] = js.native
+    var maskClosable: js.UndefOr[Boolean] = js.undefined
     
     /** Set mask motion. You can ref `rc-motion` for more info. */
-    var maskMotion: js.UndefOr[CSSMotionProps] = js.native
+    var maskMotion: js.UndefOr[CSSMotionProps] = js.undefined
     
     /** @deprecated Please us `maskMotion` instead. */
-    var maskTransitionName: js.UndefOr[TransitionNameType] = js.native
+    var maskTransitionName: js.UndefOr[TransitionNameType] = js.undefined
     
     /** @private Bump fixed position at bottom in mobile.
       * This is internal usage currently, do not use in your prod */
-    var mobile: js.UndefOr[MobileConfig] = js.native
+    var mobile: js.UndefOr[MobileConfig] = js.undefined
     
-    var mouseEnterDelay: js.UndefOr[Double] = js.native
+    var mouseEnterDelay: js.UndefOr[Double] = js.undefined
     
-    var mouseLeaveDelay: js.UndefOr[Double] = js.native
+    var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
     
-    var onPopupAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.native
+    var onPopupAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.undefined
     
-    var onPopupVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onPopupVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var popup: ReactNode | js.Function0[ReactNode] = js.native
+    var popup: ReactNode | js.Function0[ReactNode]
     
-    var popupAlign: js.UndefOr[AlignType] = js.native
+    var popupAlign: js.UndefOr[AlignType] = js.undefined
     
     /** @deprecated Please us `popupMotion` instead. */
-    var popupAnimation: js.UndefOr[AnimationType] = js.native
+    var popupAnimation: js.UndefOr[AnimationType] = js.undefined
     
-    var popupClassName: js.UndefOr[String] = js.native
+    var popupClassName: js.UndefOr[String] = js.undefined
     
     /** Set popup motion. You can ref `rc-motion` for more info. */
-    var popupMotion: js.UndefOr[CSSMotionProps] = js.native
+    var popupMotion: js.UndefOr[CSSMotionProps] = js.undefined
     
-    var popupPlacement: js.UndefOr[String] = js.native
+    var popupPlacement: js.UndefOr[String] = js.undefined
     
-    var popupStyle: js.UndefOr[CSSProperties] = js.native
+    var popupStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /** @deprecated Please us `popupMotion` instead. */
-    var popupTransitionName: js.UndefOr[TransitionNameType] = js.native
+    var popupTransitionName: js.UndefOr[TransitionNameType] = js.undefined
     
-    var popupVisible: js.UndefOr[Boolean] = js.native
+    var popupVisible: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var showAction: js.UndefOr[js.Array[ActionType]] = js.native
+    var showAction: js.UndefOr[js.Array[ActionType]] = js.undefined
     
-    var stretch: js.UndefOr[String] = js.native
+    var stretch: js.UndefOr[String] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object TriggerProps {
     
@@ -396,9 +396,4 @@ object mod extends Shortcut {
       def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
-  
-  type _To = ComponentClass[TriggerProps, js.Any]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: ComponentClass[TriggerProps, js.Any] = default
 }

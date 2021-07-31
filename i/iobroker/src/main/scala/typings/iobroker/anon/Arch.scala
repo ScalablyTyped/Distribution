@@ -6,25 +6,23 @@ import typings.node.processMod.global.NodeJS.Platform
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arch extends StObject {
   
-  var arch: ReturnType[js.Function0[String]] = js.native
+  var arch: ReturnType[js.Function0[String]]
   
-  var endianness: ReturnType[js.Function0[BE | LE]] = js.native
+  var endianness: ReturnType[js.Function0[BE | LE]]
   
-  var hostname: String = js.native
+  var hostname: String
   
-  var platform: ReturnType[js.Function0[Platform]] = js.native
+  var platform: ReturnType[js.Function0[Platform]]
   
-  var release: ReturnType[js.Function0[String]] = js.native
+  var release: ReturnType[js.Function0[String]]
   
-  var tmpdir: ReturnType[js.Function0[String]] = js.native
+  var tmpdir: ReturnType[js.Function0[String]]
   
-  var `type`: ReturnType[js.Function0[String]] = js.native
+  var `type`: ReturnType[js.Function0[String]]
 }
 object Arch {
   

@@ -3,15 +3,13 @@ package typings.kiiCloudSdk.anon
 import typings.kiiCloudSdk.KiiCloud.KiiObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `15` extends StObject {
   
-  def failure(obj: KiiObject, anErrorString: String): js.Any = js.native
+  def failure(obj: KiiObject, anErrorString: String): js.Any
   
-  def success(obj: KiiObject, publishedUrl: String): js.Any = js.native
+  def success(obj: KiiObject, publishedUrl: String): js.Any
 }
 object `15` {
   

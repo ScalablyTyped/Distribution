@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContentQuadsResponse extends StObject {
   
   /**
     * Quads that describe node layout relative to viewport.
     */
-  var quads: js.Array[Quad] = js.native
+  var quads: js.Array[Quad]
 }
 object GetContentQuadsResponse {
   

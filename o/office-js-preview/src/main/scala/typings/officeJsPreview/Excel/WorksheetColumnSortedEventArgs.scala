@@ -5,7 +5,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Remote
 import typings.officeJsPreview.officeJsPreviewStrings.WorksheetColumnSorted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.10]
   */
-@js.native
 trait WorksheetColumnSortedEventArgs extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait WorksheetColumnSortedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var address: String = js.native
+  var address: String
   
   /**
     *
@@ -31,7 +29,7 @@ trait WorksheetColumnSortedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -39,7 +37,7 @@ trait WorksheetColumnSortedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var `type`: WorksheetColumnSorted = js.native
+  var `type`: WorksheetColumnSorted
   
   /**
     *
@@ -47,19 +45,14 @@ trait WorksheetColumnSortedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object WorksheetColumnSortedEventArgs {
   
   @scala.inline
-  def apply(
-    address: String,
-    source: EventSource | Local | Remote,
-    `type`: WorksheetColumnSorted,
-    worksheetId: String
-  ): WorksheetColumnSortedEventArgs = {
+  def apply(address: String, source: EventSource | Local | Remote, worksheetId: String): WorksheetColumnSortedEventArgs = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorksheetColumnSorted")
     __obj.asInstanceOf[WorksheetColumnSortedEventArgs]
   }
   

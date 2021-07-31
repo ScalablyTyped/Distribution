@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Api extends StObject {
   
   /** The methods of this interface, in unspecified order. */
-  var methods: js.UndefOr[js.Array[Method]] = js.native
+  var methods: js.UndefOr[js.Array[Method]] = js.undefined
   
   /** Included interfaces. See Mixin. */
-  var mixins: js.UndefOr[js.Array[Mixin]] = js.native
+  var mixins: js.UndefOr[js.Array[Mixin]] = js.undefined
   
   /** The fully qualified name of this interface, including package name followed by the interface's simple name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Any metadata attached to the interface. */
-  var options: js.UndefOr[js.Array[Option]] = js.native
+  var options: js.UndefOr[js.Array[Option]] = js.undefined
   
   /** Source context for the protocol buffer service represented by this message. */
-  var sourceContext: js.UndefOr[SourceContext] = js.native
+  var sourceContext: js.UndefOr[SourceContext] = js.undefined
   
   /** The source syntax of the service. */
-  var syntax: js.UndefOr[String] = js.native
+  var syntax: js.UndefOr[String] = js.undefined
   
   /**
     * A version string for this interface. If specified, must have the form `major-version.minor-version`, as in `1.10`. If the minor version is omitted, it defaults to zero. If the
@@ -34,7 +32,7 @@ trait Api extends StObject {
     * plan. The major version is also reflected in the package name of the interface, which must end in `v`, as in `google.feature.v1`. For major versions 0 and 1, the suffix can be
     * omitted. Zero major versions must only be used for experimental, non-GA interfaces.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object Api {
   

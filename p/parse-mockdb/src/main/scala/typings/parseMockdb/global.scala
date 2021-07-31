@@ -4,40 +4,38 @@ import typings.parse.mod.global.Parse.Cloud.BeforeSaveRequest
 import typings.parseMockdb.ParseMockDB.HookType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object ParseMockDB {
     
-    @JSGlobal("ParseMockDB.cleanUp")
+    @JSGlobal("ParseMockDB")
     @js.native
-    def cleanUp(): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("ParseMockDB.mockDB")
-    @js.native
-    def mockDB(): Unit = js.native
+    @scala.inline
+    def cleanUp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanUp")().asInstanceOf[Unit]
     
-    @JSGlobal("ParseMockDB.promiseResultSync")
-    @js.native
+    @scala.inline
+    def mockDB(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mockDB")().asInstanceOf[Unit]
+    
+    @scala.inline
     def promiseResultSync[T](
       promise: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Parse.IPromise<T> */ js.Any
-    ): T = js.native
+    ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseResultSync")(promise.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSGlobal("ParseMockDB.registerHook")
-    @js.native
+    @scala.inline
     def registerHook(
       className: String,
       hookType: HookType,
       hookFn: js.Function1[
           /* request */ BeforeSaveRequest, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Parse.IPromise<any> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Parse.IPromise<any> */ js.Any
         ]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(className.asInstanceOf[js.Any], hookType.asInstanceOf[js.Any], hookFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("ParseMockDB.unMockDB")
-    @js.native
-    def unMockDB(): Unit = js.native
+    @scala.inline
+    def unMockDB(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unMockDB")().asInstanceOf[Unit]
   }
 }

@@ -3,16 +3,14 @@ package typings.wegameApi
 import typings.wegameApi.anon.Progress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadTask extends StObject {
   
   /**
     * 中断下载任务
     */
-  def abort(): Unit = js.native
+  def abort(): Unit
   
   /**
     * 监听下载进度变化事件
@@ -20,7 +18,7 @@ trait DownloadTask extends StObject {
     * @param res.totalBytesWritten 已经下载的数据长度，单位 Bytes
     * @param res.totalBytesExpectedToWrite 预期需要下载的数据总长度，单位 Bytes
     */
-  def onProgressUpdate(callback: js.Function1[/* res */ Progress, Unit]): Unit = js.native
+  def onProgressUpdate(callback: js.Function1[/* res */ Progress, Unit]): Unit
 }
 object DownloadTask {
   

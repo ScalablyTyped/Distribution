@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.MirrorPadAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.MirrorPadInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsMirrorPadAttrs extends StObject {
   
-  var attrs: MirrorPadAttrs = js.native
+  var attrs: MirrorPadAttrs
   
-  var backend: MathBackendWebGL = js.native
+  var backend: MathBackendWebGL
   
-  var inputs: MirrorPadInputs = js.native
+  var inputs: MirrorPadInputs
 }
 object AttrsMirrorPadAttrs {
   

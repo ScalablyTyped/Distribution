@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** compares two `any` s. */
-@js.native
-trait XAnyCompare extends XInterface {
+trait XAnyCompare
+  extends StObject
+     with XInterface {
   
   /**
     * allows comparison of two `any` s.
@@ -17,7 +17,7 @@ trait XAnyCompare extends XInterface {
     * @param Any2 is the second compare value
     * @returns `-1` , if the first any is less than the second ( Any1 < Any2 )`0` , if the first any is equal to the second ( Any1 == Any2 )`+1` , if the first
     */
-  def compare(Any1: js.Any, Any2: js.Any): Double = js.native
+  def compare(Any1: js.Any, Any2: js.Any): Double
 }
 object XAnyCompare {
   

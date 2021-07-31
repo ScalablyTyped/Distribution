@@ -9,27 +9,26 @@ import typings.pdfmake.pdfmakeStrings.numeric
 import typings.pdfmake.pdfmakeStrings.octet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentQr
-  extends ContentBase
+  extends StObject
+     with ContentBase
      with _Content {
   
-  var eccLevel: js.UndefOr[L | M | Q | H] = js.native
+  var eccLevel: js.UndefOr[L | M | Q | H] = js.undefined
   
-  var fit: js.UndefOr[Double] = js.native
+  var fit: js.UndefOr[Double] = js.undefined
   
-  var foreground: js.UndefOr[String] = js.native
+  var foreground: js.UndefOr[String] = js.undefined
   
-  var mask: js.UndefOr[Double] = js.native
+  var mask: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[numeric | alphanumeric | octet] = js.native
+  var mode: js.UndefOr[numeric | alphanumeric | octet] = js.undefined
   
-  var qr: String = js.native
+  var qr: String
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object ContentQr {
   

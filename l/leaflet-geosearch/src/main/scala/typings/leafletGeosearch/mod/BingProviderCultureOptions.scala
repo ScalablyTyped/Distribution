@@ -2,18 +2,16 @@ package typings.leafletGeosearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Bing Maps
   */
-@js.native
 trait BingProviderCultureOptions extends StObject {
   
-  var c: js.UndefOr[String] = js.native
+  var c: js.UndefOr[String] = js.undefined
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
 }
 object BingProviderCultureOptions {
   

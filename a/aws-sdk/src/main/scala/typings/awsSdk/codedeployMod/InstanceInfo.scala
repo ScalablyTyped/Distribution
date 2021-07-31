@@ -2,46 +2,44 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceInfo extends StObject {
   
   /**
     * If the on-premises instance was deregistered, the time at which the on-premises instance was deregistered.
     */
-  var deregisterTime: js.UndefOr[Timestamp] = js.native
+  var deregisterTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the IAM session associated with the on-premises instance.
     */
-  var iamSessionArn: js.UndefOr[IamSessionArn] = js.native
+  var iamSessionArn: js.UndefOr[IamSessionArn] = js.undefined
   
   /**
     * The IAM user ARN associated with the on-premises instance.
     */
-  var iamUserArn: js.UndefOr[IamUserArn] = js.native
+  var iamUserArn: js.UndefOr[IamUserArn] = js.undefined
   
   /**
     * The ARN of the on-premises instance.
     */
-  var instanceArn: js.UndefOr[InstanceArn] = js.native
+  var instanceArn: js.UndefOr[InstanceArn] = js.undefined
   
   /**
     * The name of the on-premises instance.
     */
-  var instanceName: js.UndefOr[InstanceName] = js.native
+  var instanceName: js.UndefOr[InstanceName] = js.undefined
   
   /**
     * The time at which the on-premises instance was registered.
     */
-  var registerTime: js.UndefOr[Timestamp] = js.native
+  var registerTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The tags currently associated with the on-premises instance.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object InstanceInfo {
   

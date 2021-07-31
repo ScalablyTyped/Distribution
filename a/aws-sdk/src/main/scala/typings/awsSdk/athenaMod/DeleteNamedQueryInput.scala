@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteNamedQueryInput extends StObject {
   
   /**
     * The unique ID of the query to delete.
     */
-  var NamedQueryId: typings.awsSdk.athenaMod.NamedQueryId = js.native
+  var NamedQueryId: typings.awsSdk.athenaMod.NamedQueryId
 }
 object DeleteNamedQueryInput {
   

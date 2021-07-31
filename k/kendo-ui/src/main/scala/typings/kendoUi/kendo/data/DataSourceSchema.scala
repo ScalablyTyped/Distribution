@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSchema extends StObject {
   
-  var aggregates: js.UndefOr[js.Any] = js.native
+  var aggregates: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var errors: js.UndefOr[js.Any] = js.native
+  var errors: js.UndefOr[js.Any] = js.undefined
   
-  var groups: js.UndefOr[js.Any] = js.native
+  var groups: js.UndefOr[js.Any] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var parse: js.UndefOr[js.Function] = js.native
+  var parse: js.UndefOr[js.Function] = js.undefined
   
-  var total: js.UndefOr[js.Any] = js.native
+  var total: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DataSourceSchema {
   

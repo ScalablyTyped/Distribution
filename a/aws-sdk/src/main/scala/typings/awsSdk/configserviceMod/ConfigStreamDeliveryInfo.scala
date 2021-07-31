@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigStreamDeliveryInfo extends StObject {
   
   /**
     * The error code from the last attempted delivery.
     */
-  var lastErrorCode: js.UndefOr[String] = js.native
+  var lastErrorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The error message from the last attempted delivery.
     */
-  var lastErrorMessage: js.UndefOr[String] = js.native
+  var lastErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the last attempted delivery.  Note Providing an SNS topic on a DeliveryChannel for AWS Config is optional. If the SNS delivery is turned off, the last status will be Not_Applicable.
     */
-  var lastStatus: js.UndefOr[DeliveryStatus] = js.native
+  var lastStatus: js.UndefOr[DeliveryStatus] = js.undefined
   
   /**
     * The time from the last status change.
     */
-  var lastStatusChangeTime: js.UndefOr[Date] = js.native
+  var lastStatusChangeTime: js.UndefOr[Date] = js.undefined
 }
 object ConfigStreamDeliveryInfo {
   

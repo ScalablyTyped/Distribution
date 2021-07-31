@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeType extends StObject {
   
   /**
     * The name of the attribute.
     */
-  var Name: AttributeNameType = js.native
+  var Name: AttributeNameType
   
   /**
     * The value of the attribute.
     */
-  var Value: js.UndefOr[AttributeValueType] = js.native
+  var Value: js.UndefOr[AttributeValueType] = js.undefined
 }
 object AttributeType {
   

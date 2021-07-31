@@ -12,7 +12,7 @@ a dependency injector for node.js
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 1253 |
+| # downloads        | 1347 |
 | # stars            | 2 |
 
 ## Links

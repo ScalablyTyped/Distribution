@@ -10,45 +10,44 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shimmerCircleTypesMod {
   
-  @js.native
   trait IShimmerCircle extends StObject
   
-  @js.native
-  trait IShimmerCircleProps extends AllHTMLAttributes[HTMLElement] {
+  trait IShimmerCircleProps
+    extends StObject
+       with AllHTMLAttributes[HTMLElement] {
     
     /**
       * Use to set custom styling of the shimmerCircle borders.
       * @deprecated Use `styles` prop to leverage mergeStyle API.
       */
-    var borderStyle: js.UndefOr[IRawStyle] = js.native
+    var borderStyle: js.UndefOr[IRawStyle] = js.undefined
     
     /**
       * Optional callback to access the IShimmerCircle interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IShimmerCircle]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IShimmerCircle]] = js.undefined
     
     /**
       * Sets the height of the circle.
       * @defaultvalue 24px
       */
     @JSName("height")
-    var height_IShimmerCircleProps: js.UndefOr[Double] = js.native
+    var height_IShimmerCircleProps: js.UndefOr[Double] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IShimmerCircleStyleProps, IShimmerCircleStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IShimmerCircleStyleProps, IShimmerCircleStyles]] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IShimmerCircleProps {
     
@@ -99,24 +98,23 @@ object shimmerCircleTypesMod {
     }
   }
   
-  @js.native
   trait IShimmerCircleStyleProps extends StObject {
     
     /**
       * Styles to override borderStyles with custom ones.
       * @deprecated in favor of mergeStyles API.
       */
-    var borderStyle: js.UndefOr[IRawStyle] = js.native
+    var borderStyle: js.UndefOr[IRawStyle] = js.undefined
     
     /**
       * Needed to provide a height to the root of the control.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Theme values passed to the component.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IShimmerCircleStyleProps {
     
@@ -146,18 +144,17 @@ object shimmerCircleTypesMod {
     }
   }
   
-  @js.native
   trait IShimmerCircleStyles extends StObject {
     
     /**
       * Root of the ShimmerCircle component.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the circle SVG of the ShimmerCircle component.
       */
-    var svg: js.UndefOr[IStyle] = js.native
+    var svg: js.UndefOr[IStyle] = js.undefined
   }
   object IShimmerCircleStyles {
     

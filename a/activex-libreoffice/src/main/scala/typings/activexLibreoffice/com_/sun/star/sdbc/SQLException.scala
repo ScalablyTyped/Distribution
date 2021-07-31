@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * a string describing the error. This is used as the {@link com.sun.star.uno.Exception} message.
   */
-@js.native
-trait SQLException extends Exception {
+trait SQLException
+  extends StObject
+     with Exception {
   
   /**
     * returns an integer error code that is specific to each vendor. Normally this will be the actual error code returned by the underlying database. A
     * chain to the next Exception. This can be used to provide additional error information.
     */
-  var ErrorCode: Double = js.native
+  var ErrorCode: Double
   
   /** returns a chain to the next Exception. This can be used to provide additional error information. */
-  var NextException: js.Any = js.native
+  var NextException: js.Any
   
   /** returns a string, which uses the XOPEN SQLState conventions. The values of the SQLState string are described in the XOPEN SQL spec. */
-  var SQLState: String = js.native
+  var SQLState: String
 }
 object SQLException {
   

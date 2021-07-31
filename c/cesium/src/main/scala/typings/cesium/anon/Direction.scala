@@ -3,15 +3,13 @@ package typings.cesium.anon
 import typings.cesium.mod.Cartesian3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction extends StObject {
   
-  var direction: Cartesian3 = js.native
+  var direction: Cartesian3
   
-  var up: Cartesian3 = js.native
+  var up: Cartesian3
 }
 object Direction {
   

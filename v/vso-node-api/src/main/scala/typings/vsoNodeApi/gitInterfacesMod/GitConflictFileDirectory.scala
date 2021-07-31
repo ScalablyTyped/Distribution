@@ -4,17 +4,17 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitConflictFileDirectory extends GitConflict {
+trait GitConflictFileDirectory
+  extends StObject
+     with GitConflict {
   
-  var resolution: GitResolutionPathConflict = js.native
+  var resolution: GitResolutionPathConflict
   
-  var sourceBlob: GitBlobRef = js.native
+  var sourceBlob: GitBlobRef
   
-  var targetTree: GitTreeRef = js.native
+  var targetTree: GitTreeRef
 }
 object GitConflictFileDirectory {
   

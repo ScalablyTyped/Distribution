@@ -2,83 +2,81 @@ package typings.cote.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscoveryOptions extends StObject {
   
   /**
     * Address to bind to.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Broadcast address if using broadcast.
     */
-  var broadcast: js.UndefOr[String] = js.native
+  var broadcast: js.UndefOr[String] = js.undefined
   
   /**
     * How often to to check for missing nodes in milliseconds.
     */
-  var checkInterval: js.UndefOr[Double] = js.native
+  var checkInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Prevents Monitor from drawing.
     */
-  var disableScreen: js.UndefOr[Boolean] = js.native
+  var disableScreen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * How often to broadcast a hello packet in milliseconds.
     */
-  var helloInterval: js.UndefOr[Double] = js.native
+  var helloInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Notifies when another service goes online.
     */
-  var helloLogsEnabled: js.UndefOr[Boolean] = js.native
+  var helloLogsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ignores messages from other services within the same process.
     */
-  var ignoreProcess: js.UndefOr[Boolean] = js.native
+  var ignoreProcess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If false, disables `helloLogsEnabled` and `statusLogsEnabled` no matter
     * what value they have, and also own hello log.
     */
-  var log: js.UndefOr[Boolean] = js.native
+  var log: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Consider a master node dead if not seen in this many milliseconds.
     */
-  var masterTimeout: js.UndefOr[Double] = js.native
+  var masterTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Skips key equality checks when logging.
     */
-  var monitor: js.UndefOr[Boolean] = js.native
+  var monitor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Multicast address if using multicast.
     */
-  var multicast: js.UndefOr[String] = js.native
+  var multicast: js.UndefOr[String] = js.undefined
   
   /**
     * Consider a node dead if not seen in this many milliseconds.
     */
-  var nodeTimeout: js.UndefOr[Double] = js.native
+  var nodeTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Milliseconds between emissions of own status for monitoring.
     */
-  var statusInterval: js.UndefOr[Double] = js.native
+  var statusInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Notifies when another service goes online or offline. If false, disables
     * `helloLogsEnabled` as well.
     */
-  var statusLogsEnabled: js.UndefOr[Boolean] = js.native
+  var statusLogsEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object DiscoveryOptions {
   

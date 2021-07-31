@@ -15,14 +15,15 @@ import typings.sipJs.transactionsMod.ClientTransaction
 import typings.sipJs.userAgentCoreMod.UserAgentCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userAgentClientMod {
   
   @JSImport("sip.js/lib/core/user-agents/user-agent-client", "UserAgentClient")
   @js.native
-  class UserAgentClient protected () extends OutgoingRequest {
+  class UserAgentClient protected ()
+    extends StObject
+       with OutgoingRequest {
     def this(
       transactionConstructor: ClientTransactionConstructor,
       core: UserAgentCore,

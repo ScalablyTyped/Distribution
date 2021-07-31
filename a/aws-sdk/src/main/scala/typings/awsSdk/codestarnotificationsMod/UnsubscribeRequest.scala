@@ -2,21 +2,19 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnsubscribeRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the notification rule.
     */
-  var Arn: NotificationRuleArn = js.native
+  var Arn: NotificationRuleArn
   
   /**
     * The ARN of the SNS topic to unsubscribe from the notification rule.
     */
-  var TargetAddress: typings.awsSdk.codestarnotificationsMod.TargetAddress = js.native
+  var TargetAddress: typings.awsSdk.codestarnotificationsMod.TargetAddress
 }
 object UnsubscribeRequest {
   

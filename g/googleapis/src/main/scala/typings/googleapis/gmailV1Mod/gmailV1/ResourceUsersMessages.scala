@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Messages")
@@ -32,7 +31,7 @@ class ResourceUsersMessages protected () extends StObject {
     */
   def batchDelete(): GaxiosPromise[Unit] = js.native
   def batchDelete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def batchDelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def batchDelete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def batchDelete(params: ParamsResourceUsersMessagesBatchdelete): GaxiosPromise[Unit] = js.native
   def batchDelete(params: ParamsResourceUsersMessagesBatchdelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def batchDelete(
@@ -62,7 +61,7 @@ class ResourceUsersMessages protected () extends StObject {
     */
   def batchModify(): GaxiosPromise[Unit] = js.native
   def batchModify(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def batchModify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def batchModify(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def batchModify(params: ParamsResourceUsersMessagesBatchmodify): GaxiosPromise[Unit] = js.native
   def batchModify(params: ParamsResourceUsersMessagesBatchmodify, callback: BodyResponseCallback[Unit]): Unit = js.native
   def batchModify(
@@ -95,7 +94,7 @@ class ResourceUsersMessages protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersMessagesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersMessagesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -127,7 +126,7 @@ class ResourceUsersMessages protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaMessage] = js.native
   def get(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def get(params: ParamsResourceUsersMessagesGet): GaxiosPromise[SchemaMessage] = js.native
   def get(params: ParamsResourceUsersMessagesGet, callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
   def get(
@@ -166,7 +165,7 @@ class ResourceUsersMessages protected () extends StObject {
     */
   def `import`(): GaxiosPromise[SchemaMessage] = js.native
   def `import`(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
-  def `import`(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
+  def `import`(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def `import`(params: ParamsResourceUsersMessagesImport): GaxiosPromise[SchemaMessage] = js.native
   def `import`(params: ParamsResourceUsersMessagesImport, callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
   def `import`(
@@ -201,7 +200,7 @@ class ResourceUsersMessages protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaMessage] = js.native
   def insert(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def insert(params: ParamsResourceUsersMessagesInsert): GaxiosPromise[SchemaMessage] = js.native
   def insert(params: ParamsResourceUsersMessagesInsert, callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
   def insert(
@@ -235,7 +234,7 @@ class ResourceUsersMessages protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListMessagesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListMessagesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListMessagesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListMessagesResponse] = js.native
   def list(params: ParamsResourceUsersMessagesList): GaxiosPromise[SchemaListMessagesResponse] = js.native
   def list(
     params: ParamsResourceUsersMessagesList,
@@ -269,7 +268,7 @@ class ResourceUsersMessages protected () extends StObject {
     */
   def modify(): GaxiosPromise[SchemaMessage] = js.native
   def modify(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
-  def modify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
+  def modify(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def modify(params: ParamsResourceUsersMessagesModify): GaxiosPromise[SchemaMessage] = js.native
   def modify(params: ParamsResourceUsersMessagesModify, callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
   def modify(
@@ -303,7 +302,7 @@ class ResourceUsersMessages protected () extends StObject {
     */
   def send(): GaxiosPromise[SchemaMessage] = js.native
   def send(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
-  def send(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
+  def send(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def send(params: ParamsResourceUsersMessagesSend): GaxiosPromise[SchemaMessage] = js.native
   def send(params: ParamsResourceUsersMessagesSend, callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
   def send(
@@ -333,7 +332,7 @@ class ResourceUsersMessages protected () extends StObject {
     */
   def trash(): GaxiosPromise[SchemaMessage] = js.native
   def trash(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
-  def trash(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
+  def trash(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def trash(params: ParamsResourceUsersMessagesTrash): GaxiosPromise[SchemaMessage] = js.native
   def trash(params: ParamsResourceUsersMessagesTrash, callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
   def trash(
@@ -363,7 +362,7 @@ class ResourceUsersMessages protected () extends StObject {
     */
   def untrash(): GaxiosPromise[SchemaMessage] = js.native
   def untrash(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
-  def untrash(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
+  def untrash(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def untrash(params: ParamsResourceUsersMessagesUntrash): GaxiosPromise[SchemaMessage] = js.native
   def untrash(params: ParamsResourceUsersMessagesUntrash, callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
   def untrash(

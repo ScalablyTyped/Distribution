@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeydownEventUIParam extends StObject {
   
   /**
     * Gets a reference to the editor input field.
     */
-  var editorInput: js.UndefOr[js.Any] = js.native
+  var editorInput: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the event target.
     */
-  var element: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the value of the keyCode.
     */
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the editor.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object KeydownEventUIParam {
   

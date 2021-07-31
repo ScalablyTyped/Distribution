@@ -12,7 +12,7 @@ angular-load ============
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 116570 |
+| # downloads        | 98960 |
 | # stars            | 1 |
 
 ## Links

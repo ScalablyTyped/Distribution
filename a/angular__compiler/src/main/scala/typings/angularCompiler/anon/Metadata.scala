@@ -7,15 +7,13 @@ import typings.angularCompiler.compileMetadataMod.CompileTypeMetadata
 import typings.angularCompiler.compileMetadataMod.CompileTypeSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
-  var metadata: CompileNgModuleMetadata | CompileDirectiveMetadata | CompilePipeMetadata | CompileTypeMetadata = js.native
+  var metadata: CompileNgModuleMetadata | CompileDirectiveMetadata | CompilePipeMetadata | CompileTypeMetadata
   
-  var summary: CompileTypeSummary = js.native
+  var summary: CompileTypeSummary
 }
 object Metadata {
   

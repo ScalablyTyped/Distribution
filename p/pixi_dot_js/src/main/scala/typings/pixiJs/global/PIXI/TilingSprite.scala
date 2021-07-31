@@ -5,7 +5,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,20 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.TilingSprite")
 @js.native
 class TilingSprite protected ()
-  extends typings.pixiJs.PIXI.TilingSprite {
+  extends StObject
+     with typings.pixiJs.PIXI.TilingSprite {
   def this(texture: typings.pixiJs.PIXI.Texture) = this()
   def this(texture: typings.pixiJs.PIXI.Texture, width: Double) = this()
-  def this(texture: typings.pixiJs.PIXI.Texture, width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(texture: typings.pixiJs.PIXI.Texture, width: Double, height: Double) = this()
+  def this(texture: typings.pixiJs.PIXI.Texture, width: Unit, height: Double) = this()
 }
 object TilingSprite {
   
-  @JSGlobal("PIXI.TilingSprite.from")
+  @JSGlobal("PIXI.TilingSprite")
   @js.native
-  def from(source: String): typings.pixiJs.PIXI.Sprite = js.native
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: String, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def from(source: String): typings.pixiJs.PIXI.Sprite = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Sprite]
+  @scala.inline
+  def from(source: String, options: js.Any): typings.pixiJs.PIXI.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Sprite]
   /**
     * Helper function that creates a new tiling sprite based on the source you provide.
     * The source can be - frame id, image url, video url, canvas element, video element, base texture
@@ -44,51 +46,37 @@ object TilingSprite {
     * @return {PIXI.TilingSprite} The newly created texture
     */
   /* static member */
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: String, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = js.native
+  @scala.inline
+  def from(source: String, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TilingSprite]
   /* static member */
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: Double): typings.pixiJs.PIXI.Sprite = js.native
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: Double, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.Sprite = js.native
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: typings.pixiJs.PIXI.Texture, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: typings.pixiJs.PIXI.Texture, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = js.native
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: HTMLCanvasElement): typings.pixiJs.PIXI.Sprite = js.native
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: HTMLCanvasElement, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: HTMLCanvasElement, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = js.native
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: HTMLVideoElement): typings.pixiJs.PIXI.Sprite = js.native
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
-  @JSGlobal("PIXI.TilingSprite.from")
-  @js.native
-  def from(source: HTMLVideoElement, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = js.native
+  @scala.inline
+  def from(source: Double): typings.pixiJs.PIXI.Sprite = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Sprite]
+  @scala.inline
+  def from(source: Double, options: js.Any): typings.pixiJs.PIXI.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Sprite]
+  @scala.inline
+  def from(source: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.Sprite = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Sprite]
+  @scala.inline
+  def from(source: typings.pixiJs.PIXI.Texture, options: js.Any): typings.pixiJs.PIXI.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Sprite]
+  @scala.inline
+  def from(source: typings.pixiJs.PIXI.Texture, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TilingSprite]
+  @scala.inline
+  def from(source: HTMLCanvasElement): typings.pixiJs.PIXI.Sprite = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Sprite]
+  @scala.inline
+  def from(source: HTMLCanvasElement, options: js.Any): typings.pixiJs.PIXI.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Sprite]
+  @scala.inline
+  def from(source: HTMLCanvasElement, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TilingSprite]
+  @scala.inline
+  def from(source: HTMLVideoElement): typings.pixiJs.PIXI.Sprite = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Sprite]
+  @scala.inline
+  def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Sprite]
+  @scala.inline
+  def from(source: HTMLVideoElement, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TilingSprite]
   
   /* static member */
-  @JSGlobal("PIXI.TilingSprite.fromFrame")
-  @js.native
-  def fromFrame(): typings.pixiJs.PIXI.Sprite = js.native
+  @scala.inline
+  def fromFrame(): typings.pixiJs.PIXI.Sprite = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrame")().asInstanceOf[typings.pixiJs.PIXI.Sprite]
   
   /* static member */
-  @JSGlobal("PIXI.TilingSprite.fromImage")
-  @js.native
-  def fromImage(): typings.pixiJs.PIXI.Sprite = js.native
+  @scala.inline
+  def fromImage(): typings.pixiJs.PIXI.Sprite = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImage")().asInstanceOf[typings.pixiJs.PIXI.Sprite]
 }

@@ -3,22 +3,20 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUrlMapsScopedList extends StObject {
   
   /**
     * A list of UrlMaps contained in this scope.
     */
-  var urlMaps: js.UndefOr[js.Array[SchemaUrlMap]] = js.native
+  var urlMaps: js.UndefOr[js.Array[SchemaUrlMap]] = js.undefined
   
   /**
     * Informational warning which replaces the list of backend services when
     * the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaUrlMapsScopedList {
   

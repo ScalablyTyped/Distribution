@@ -3,42 +3,40 @@ package typings.jsontoxml
 import typings.jsontoxml.anon.Standalone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(data: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(data: js.Any, options: JsonToXmlOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("jsontoxml", JSImport.Namespace)
   @js.native
-  def apply(data: js.Any): String = js.native
-  @JSImport("jsontoxml", JSImport.Namespace)
-  @js.native
-  def apply(data: js.Any, options: JsonToXmlOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jsontoxml", "cdata")
-  @js.native
-  def cdata(str: String): String = js.native
+  @scala.inline
+  def cdata(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cdata")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jsontoxml", "escape")
-  @js.native
-  def escape(str: String): String = js.native
+  @scala.inline
+  def escape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait JsonToXmlOptions extends StObject {
     
-    var docType: js.UndefOr[String] = js.native
+    var docType: js.UndefOr[String] = js.undefined
     
-    var escape: js.UndefOr[Boolean] = js.native
+    var escape: js.UndefOr[Boolean] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
-    var removeIllegalNameCharacters: js.UndefOr[Boolean] = js.native
+    var removeIllegalNameCharacters: js.UndefOr[Boolean] = js.undefined
     
-    var xmlHeader: js.UndefOr[Boolean | Standalone] = js.native
+    var xmlHeader: js.UndefOr[Boolean | Standalone] = js.undefined
   }
   object JsonToXmlOptions {
     

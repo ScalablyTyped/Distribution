@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.ProgressBarOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.ProgressBar")
 @js.native
 class ProgressBar protected ()
-  extends typings.kendoUi.kendo.ui.ProgressBar {
+  extends StObject
+     with typings.kendoUi.kendo.ui.ProgressBar {
   def this(element: Element) = this()
   def this(element: Element, options: ProgressBarOptions) = this()
 }
@@ -21,9 +21,8 @@ object ProgressBar {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.ProgressBar.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.ProgressBar = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.ProgressBar = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ProgressBar]
   
   /* static member */
   @JSGlobal("kendo.ui.ProgressBar.fn")

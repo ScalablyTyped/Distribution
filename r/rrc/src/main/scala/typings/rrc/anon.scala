@@ -7,29 +7,27 @@ import typings.history.mod.Pathname
 import typings.history.mod.Search
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined history.history.LocationDescriptorObject<history.history.LocationState> & {  pathname :history.history.Pathname} */
-  @js.native
   trait LocationDescriptorObjectL extends StObject {
     
-    var hash: js.UndefOr[Hash] = js.native
+    var hash: js.UndefOr[Hash] = js.undefined
     
-    var key: js.UndefOr[LocationKey] = js.native
+    var key: js.UndefOr[LocationKey] = js.undefined
     
-    var pathname: js.UndefOr[Pathname] with Pathname = js.native
+    var pathname: js.UndefOr[Pathname] & Pathname
     
-    var search: js.UndefOr[Search] = js.native
+    var search: js.UndefOr[Search] = js.undefined
     
-    var state: js.UndefOr[LocationState] = js.native
+    var state: js.UndefOr[LocationState] = js.undefined
   }
   object LocationDescriptorObjectL {
     
     @scala.inline
-    def apply(pathname: js.UndefOr[Pathname] with Pathname): LocationDescriptorObjectL = {
+    def apply(pathname: js.UndefOr[Pathname] & Pathname): LocationDescriptorObjectL = {
       val __obj = js.Dynamic.literal(pathname = pathname.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocationDescriptorObjectL]
     }
@@ -50,7 +48,7 @@ object anon {
       def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
       @scala.inline
-      def setPathname(value: js.UndefOr[Pathname] with Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      def setPathname(value: js.UndefOr[Pathname] & Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])

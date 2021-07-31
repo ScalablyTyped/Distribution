@@ -3,23 +3,23 @@ package typings.loginWithAmazonSdkBrowser
 import typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Option form to request a code.
   */
-@js.native
-trait CodeAuthorizeOptions extends AuthorizeOptions {
+trait CodeAuthorizeOptions
+  extends StObject
+     with AuthorizeOptions {
   
   @JSName("response_type")
-  var response_type_CodeAuthorizeOptions: code = js.native
+  var response_type_CodeAuthorizeOptions: code
 }
 object CodeAuthorizeOptions {
   
   @scala.inline
-  def apply(response_type: code, scope: AuthorizeScope): CodeAuthorizeOptions = {
-    val __obj = js.Dynamic.literal(response_type = response_type.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
+  def apply(scope: AuthorizeScope): CodeAuthorizeOptions = {
+    val __obj = js.Dynamic.literal(response_type = "code", scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeAuthorizeOptions]
   }
   

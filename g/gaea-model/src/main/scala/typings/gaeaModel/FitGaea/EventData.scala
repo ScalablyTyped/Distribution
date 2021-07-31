@@ -2,26 +2,24 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventData extends StObject {
   
-  var event: String = js.native
+  var event: String
   
-  var eventData: js.UndefOr[EventActionJumpUrl | EventActionCall | EventActionEvent] = js.native
+  var eventData: js.UndefOr[EventActionJumpUrl | EventActionCall | EventActionEvent] = js.undefined
   
-  var eventIndex: Double = js.native
+  var eventIndex: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var typeData: js.UndefOr[EventTriggerEvent] = js.native
+  var typeData: js.UndefOr[EventTriggerEvent] = js.undefined
   
   /**
     * 因为事件可能 type 相同，因此记录是第几个
     */
-  var typeIndex: Double = js.native
+  var typeIndex: Double
 }
 object EventData {
   

@@ -2,16 +2,14 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaError extends StObject {
   
   /**
     * Domain, or broad category, of the error.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * Specific reason for the error. Some of the possible values are:   -
@@ -24,7 +22,7 @@ trait SchemaError extends StObject {
     * should gracefully handle additional error statuses not included in this
     * list.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object SchemaError {
   

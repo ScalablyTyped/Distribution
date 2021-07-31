@@ -11,8 +11,8 @@ Names all remaining modules that do not get named via NamedModulesPlugin Edit
 | Full name          | name-all-modules-plugin |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 14749486 |
+| # dependents       | 17 |
+| # downloads        | 17900149 |
 | # stars            | 2 |
 
 ## Links

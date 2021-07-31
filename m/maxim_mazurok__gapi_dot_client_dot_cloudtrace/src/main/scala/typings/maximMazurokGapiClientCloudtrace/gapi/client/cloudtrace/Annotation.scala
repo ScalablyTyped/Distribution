@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Annotation extends StObject {
   
   /** A set of attributes on the annotation. You can have up to 4 attributes per Annotation. */
-  var attributes: js.UndefOr[Attributes] = js.native
+  var attributes: js.UndefOr[Attributes] = js.undefined
   
   /** A user-supplied message describing the event. The maximum length for the description is 256 bytes. */
-  var description: js.UndefOr[TruncatableString] = js.native
+  var description: js.UndefOr[TruncatableString] = js.undefined
 }
 object Annotation {
   

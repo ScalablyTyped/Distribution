@@ -2,13 +2,13 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BezierCurve extends JsonCurve {
+trait BezierCurve
+  extends StObject
+     with JsonCurve {
   
-  var b: js.Tuple3[Position, Position2D, Position2D] = js.native
+  var b: js.Tuple3[Position, Position2D, Position2D]
 }
 object BezierCurve {
   

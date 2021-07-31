@@ -4,13 +4,14 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object service {
   
   @js.native
-  trait Service extends Object {
+  trait Service
+    extends StObject
+       with Object {
     
     /**
       * Cleans up the service instance before destruction.Applications must not call this hook method
@@ -36,7 +37,9 @@ object service {
   }
   
   @js.native
-  trait ServiceFactory extends Object {
+  trait ServiceFactory
+    extends StObject
+       with Object {
     
     /**
       * Creates a new instance of a service. When used as a generic service factoryby providing a service
@@ -45,6 +48,6 @@ object service {
       * @param oServiceContext Context for which the service is created
       * @returns Promise which resolves with the new Service instance.
       */
-    def createInstance(oServiceContext: js.Any): JQueryPromise[_] = js.native
+    def createInstance(oServiceContext: js.Any): JQueryPromise[js.Any] = js.native
   }
 }

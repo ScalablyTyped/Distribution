@@ -3,80 +3,78 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarView extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  def Apply(): Unit = js.native
+  def Apply(): Unit
   
-  val AutoFormatRules: typings.activexOutlook.Outlook.AutoFormatRules = js.native
+  val AutoFormatRules: typings.activexOutlook.Outlook.AutoFormatRules
   
-  var BoldDatesWithItems: Boolean = js.native
+  var BoldDatesWithItems: Boolean
   
-  var BoldSubjects: Boolean = js.native
+  var BoldSubjects: Boolean
   
-  var CalendarViewMode: OlCalendarViewMode = js.native
+  var CalendarViewMode: OlCalendarViewMode
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  def Copy(Name: String, SaveOption: OlViewSaveOption): View = js.native
+  def Copy(Name: String, SaveOption: OlViewSaveOption): View
   
-  val DayWeekFont: ViewFont = js.native
+  val DayWeekFont: ViewFont
   
-  val DayWeekTimeFont: ViewFont = js.native
+  val DayWeekTimeFont: ViewFont
   
-  var DayWeekTimeScale: OlDayWeekTimeScale = js.native
+  var DayWeekTimeScale: OlDayWeekTimeScale
   
-  var DaysInMultiDayMode: Double = js.native
+  var DaysInMultiDayMode: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val DisplayedDates: js.Any = js.native
+  val DisplayedDates: js.Any
   
-  var EndField: String = js.native
+  var EndField: String
   
-  var Filter: String = js.native
+  var Filter: String
   
-  def GoToDate(Date: VarDate): Unit = js.native
+  def GoToDate(Date: VarDate): Unit
   
-  var Language: String = js.native
+  var Language: String
   
-  var LockUserChanges: Boolean = js.native
+  var LockUserChanges: Boolean
   
-  val MonthFont: ViewFont = js.native
+  val MonthFont: ViewFont
   
-  var MonthShowEndTime: Boolean = js.native
+  var MonthShowEndTime: Boolean
   
-  var Name: String = js.native
+  var Name: String
   
   @JSName("Outlook.CalendarView_typekey")
-  var OutlookDotCalendarView_typekey: CalendarView = js.native
+  var OutlookDotCalendarView_typekey: CalendarView
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Reset(): Unit = js.native
+  def Reset(): Unit
   
-  def Save(): Unit = js.native
+  def Save(): Unit
   
-  val SaveOption: OlViewSaveOption = js.native
+  val SaveOption: OlViewSaveOption
   
-  val SelectedEndTime: VarDate = js.native
+  val SelectedEndTime: VarDate
   
-  val SelectedStartTime: VarDate = js.native
+  val SelectedStartTime: VarDate
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val Standard: Boolean = js.native
+  val Standard: Boolean
   
-  var StartField: String = js.native
+  var StartField: String
   
-  val ViewType: OlViewType = js.native
+  val ViewType: OlViewType
   
-  var XML: String = js.native
+  var XML: String
 }
 object CalendarView {
   

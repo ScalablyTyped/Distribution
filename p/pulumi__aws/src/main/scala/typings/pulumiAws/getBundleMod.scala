@@ -6,41 +6,39 @@ import typings.pulumiAws.outputMod.workspaces.GetBundleUserStorage
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getBundleMod {
   
-  @JSImport("@pulumi/aws/workspaces/getBundle", "getBundle")
+  @JSImport("@pulumi/aws/workspaces/getBundle", JSImport.Namespace)
   @js.native
-  def getBundle(): js.Promise[GetBundleResult] = js.native
-  @JSImport("@pulumi/aws/workspaces/getBundle", "getBundle")
-  @js.native
-  def getBundle(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetBundleResult] = js.native
-  @JSImport("@pulumi/aws/workspaces/getBundle", "getBundle")
-  @js.native
-  def getBundle(args: GetBundleArgs): js.Promise[GetBundleResult] = js.native
-  @JSImport("@pulumi/aws/workspaces/getBundle", "getBundle")
-  @js.native
-  def getBundle(args: GetBundleArgs, opts: InvokeOptions): js.Promise[GetBundleResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getBundle(): js.Promise[GetBundleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")().asInstanceOf[js.Promise[GetBundleResult]]
+  @scala.inline
+  def getBundle(args: Unit, opts: InvokeOptions): js.Promise[GetBundleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBundleResult]]
+  @scala.inline
+  def getBundle(args: GetBundleArgs): js.Promise[GetBundleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBundleResult]]
+  @scala.inline
+  def getBundle(args: GetBundleArgs, opts: InvokeOptions): js.Promise[GetBundleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBundleResult]]
+  
   trait GetBundleArgs extends StObject {
     
     /**
       * The ID of the bundle.
       */
-    val bundleId: js.UndefOr[String] = js.native
+    val bundleId: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the bundle. You cannot combine this parameter with `bundleId`.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * The owner of the bundles. You have to leave it blank for own bundles. You cannot combine this parameter with `bundleId`.
       */
-    val owner: js.UndefOr[String] = js.native
+    val owner: js.UndefOr[String] = js.undefined
   }
   object GetBundleArgs {
     
@@ -73,48 +71,47 @@ object getBundleMod {
     }
   }
   
-  @js.native
   trait GetBundleResult extends StObject {
     
     /**
       * The ID of the bundle.
       */
-    val bundleId: js.UndefOr[String] = js.native
+    val bundleId: js.UndefOr[String] = js.undefined
     
     /**
       * The compute type. See supported fields below.
       */
-    val computeTypes: js.Array[GetBundleComputeType] = js.native
+    val computeTypes: js.Array[GetBundleComputeType]
     
     /**
       * The description of the bundle.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The name of the compute type.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * The owner of the bundle.
       */
-    val owner: js.UndefOr[String] = js.native
+    val owner: js.UndefOr[String] = js.undefined
     
     /**
       * The root volume. See supported fields below.
       */
-    val rootStorages: js.Array[GetBundleRootStorage] = js.native
+    val rootStorages: js.Array[GetBundleRootStorage]
     
     /**
       * The user storage. See supported fields below.
       */
-    val userStorages: js.Array[GetBundleUserStorage] = js.native
+    val userStorages: js.Array[GetBundleUserStorage]
   }
   object GetBundleResult {
     

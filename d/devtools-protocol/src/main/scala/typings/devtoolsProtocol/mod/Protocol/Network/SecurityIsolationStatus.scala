@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityIsolationStatus extends StObject {
   
-  var coep: CrossOriginEmbedderPolicyStatus = js.native
+  var coep: CrossOriginEmbedderPolicyStatus
   
-  var coop: CrossOriginOpenerPolicyStatus = js.native
+  var coop: CrossOriginOpenerPolicyStatus
 }
 object SecurityIsolationStatus {
   

@@ -6,7 +6,6 @@ import typings.webcl.webclNumbers.`0x11D3`
 import typings.webcl.webclNumbers.`0x11D4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_event_info  */

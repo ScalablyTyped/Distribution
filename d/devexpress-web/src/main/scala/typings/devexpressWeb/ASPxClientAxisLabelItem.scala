@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the AxisLabelItem class.
   */
-@js.native
-trait ASPxClientAxisLabelItem extends ASPxClientWebChartElement {
+trait ASPxClientAxisLabelItem
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Gets the axis to which an axis label item belongs.
     */
-  var axis: ASPxClientAxisBase = js.native
+  var axis: ASPxClientAxisBase
   
   /**
     * Gets the axis value to which an axis label item corresponds.
     */
-  var axisValue: js.Any = js.native
+  var axisValue: js.Any
   
   /**
     * Gets the internal representation of the axis value to which an axis label item corresponds.
     */
-  var axisValueInternal: Double = js.native
+  var axisValueInternal: Double
   
   /**
     * Gets the text of an axis label item.
     */
-  var text: String = js.native
+  var text: String
 }
 object ASPxClientAxisLabelItem {
   

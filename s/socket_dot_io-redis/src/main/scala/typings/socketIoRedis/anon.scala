@@ -3,19 +3,17 @@ package typings.socketIoRedis
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Except extends StObject {
     
-    var except: js.UndefOr[js.Array[String]] = js.native
+    var except: js.UndefOr[js.Array[String]] = js.undefined
     
-    var flags: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var flags: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var rooms: js.UndefOr[js.Array[String]] = js.native
+    var rooms: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Except {
     

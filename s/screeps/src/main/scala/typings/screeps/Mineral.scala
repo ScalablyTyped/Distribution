@@ -2,40 +2,40 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A mineral deposit object. Can be harvested by creeps with a WORK body part using the extractor structure.
   * @see http://docs.screeps.com/api/#Mineral
   */
-@js.native
-trait Mineral[T /* <: MineralConstant */] extends RoomObject {
+trait Mineral[T /* <: MineralConstant */]
+  extends StObject
+     with RoomObject {
   
   /**
     * The density of this mineral deposit, one of the `DENSITY_*` constants.
     */
-  var density: Double = js.native
+  var density: Double
   
   /**
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
-  var id: Id[this.type] = js.native
+  var id: Id[this.type]
   
   /**
     * The remaining amount of resources.
     */
-  var mineralAmount: Double = js.native
+  var mineralAmount: Double
   
   /**
     * The resource type, one of the `RESOURCE_*` constants.
     */
-  var mineralType: T = js.native
+  var mineralType: T
   
   /**
     * The remaining time after which the deposit will be refilled.
     */
-  var ticksToRegeneration: Double = js.native
+  var ticksToRegeneration: Double
 }
 object Mineral {
   
@@ -54,7 +54,7 @@ object Mineral {
   }
   
   @scala.inline
-  implicit class MineralMutableBuilder[Self <: Mineral[_], T /* <: MineralConstant */] (val x: Self with Mineral[T]) extends AnyVal {
+  implicit class MineralMutableBuilder[Self <: Mineral[?], T /* <: MineralConstant */] (val x: Self & Mineral[T]) extends AnyVal {
     
     @scala.inline
     def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])

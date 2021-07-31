@@ -7,34 +7,32 @@ import typings.popperjsCore.typesMod.PositioningStrategy
 import typings.popperjsCore.typesMod.StateRects
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/types.State> */
-@js.native
 trait PartialStateAttributes extends StObject {
   
-  var attributes: js.UndefOr[StringDictionary[StringDictionary[String | Boolean]]] = js.native
+  var attributes: js.UndefOr[StringDictionary[StringDictionary[String | Boolean]]] = js.undefined
   
-  var elements: js.UndefOr[Arrow] = js.native
+  var elements: js.UndefOr[Arrow] = js.undefined
   
-  var modifiersData: js.UndefOr[Dictkey] = js.native
+  var modifiersData: js.UndefOr[Dictkey] = js.undefined
   
-  var options: js.UndefOr[OptionsGeneric[_]] = js.native
+  var options: js.UndefOr[OptionsGeneric[js.Any]] = js.undefined
   
-  var orderedModifiers: js.UndefOr[js.Array[Modifier[_, _]]] = js.native
+  var orderedModifiers: js.UndefOr[js.Array[Modifier[js.Any, js.Any]]] = js.undefined
   
-  var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.native
+  var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
   
-  var rects: js.UndefOr[StateRects] = js.native
+  var rects: js.UndefOr[StateRects] = js.undefined
   
-  var reset: js.UndefOr[Boolean] = js.native
+  var reset: js.UndefOr[Boolean] = js.undefined
   
-  var scrollParents: js.UndefOr[Popper] = js.native
+  var scrollParents: js.UndefOr[Popper] = js.undefined
   
-  var strategy: js.UndefOr[PositioningStrategy] = js.native
+  var strategy: js.UndefOr[PositioningStrategy] = js.undefined
   
-  var styles: js.UndefOr[StringDictionary[PartialCSSStyleDeclaratio]] = js.native
+  var styles: js.UndefOr[StringDictionary[PartialCSSStyleDeclaratio]] = js.undefined
 }
 object PartialStateAttributes {
   
@@ -66,13 +64,13 @@ object PartialStateAttributes {
     def setModifiersDataUndefined: Self = StObject.set(x, "modifiersData", js.undefined)
     
     @scala.inline
-    def setOptions(value: OptionsGeneric[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    def setOptions(value: OptionsGeneric[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setOrderedModifiers(value: js.Array[Modifier[_, _]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
+    def setOrderedModifiers(value: js.Array[Modifier[js.Any, js.Any]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOrderedModifiersUndefined: Self = StObject.set(x, "orderedModifiers", js.undefined)

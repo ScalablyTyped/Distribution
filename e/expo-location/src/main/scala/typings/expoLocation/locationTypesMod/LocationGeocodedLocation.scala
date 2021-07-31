@@ -2,19 +2,17 @@ package typings.expoLocation.locationTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationGeocodedLocation extends StObject {
   
-  var accuracy: js.UndefOr[Double] = js.native
+  var accuracy: js.UndefOr[Double] = js.undefined
   
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
 }
 object LocationGeocodedLocation {
   

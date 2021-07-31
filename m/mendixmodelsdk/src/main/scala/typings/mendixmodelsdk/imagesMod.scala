@@ -18,7 +18,6 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagesMod {
@@ -63,6 +62,14 @@ object imagesMod {
       @JSName("name")
       val name_FImage: String = js.native
       
+      /**
+        * Returns the qualified name of this element, or
+        * null if this element is not a part of the model,
+        * or if it or one of its namespace containers does not have a
+        * valid name.
+        */
+      /* CompleteClass */
+      override val qualifiedName: String | Null = js.native
       @JSName("qualifiedName")
       def qualifiedName_MImage: String | Null = js.native
     }
@@ -78,9 +85,8 @@ object imagesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/images", "images.Image.create")
-      @js.native
-      def create(model: IModel): Image = js.native
+      @scala.inline
+      def create(model: IModel): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Image]
       
       /**
         * Creates and returns a new Image instance in the SDK and on the server.
@@ -88,9 +94,8 @@ object imagesMod {
         * of the parent ImageCollection element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/images", "images.Image.createIn")
-      @js.native
-      def createIn(container: ImageCollection): Image = js.native
+      @scala.inline
+      def createIn(container: ImageCollection): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Image]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/images", "images.Image.structureTypeName")
@@ -148,9 +153,8 @@ object imagesMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/images", "images.ImageCollection.createIn")
-      @js.native
-      def createIn(container: IFolderBase): ImageCollection = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): ImageCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ImageCollection]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/images", "images.ImageCollection.structureTypeName")
@@ -172,7 +176,8 @@ object imagesMod {
       */
     @js.native
     trait IImage
-      extends IElement
+      extends StObject
+         with IElement
          with IByNameReferrable {
       
       val containerAsImageCollection: IImageCollection = js.native
@@ -187,7 +192,9 @@ object imagesMod {
       * See: {@link https://docs.mendix.com/refguide/images relevant section in reference guide}
       */
     @js.native
-    trait IImageCollection extends IDocument {
+    trait IImageCollection
+      extends StObject
+         with IDocument {
       
       val images: IList[IImage] = js.native
     }

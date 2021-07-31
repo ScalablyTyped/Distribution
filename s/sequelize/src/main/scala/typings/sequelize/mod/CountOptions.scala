@@ -2,48 +2,47 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for Model.count method
   */
-@js.native
 trait CountOptions
-  extends LoggingOptions
+  extends StObject
+     with LoggingOptions
      with SearchPathOptions {
   
   /**
     * Used in conjustion with `group`
     */
-  var attributes: js.UndefOr[js.Array[String | (js.Tuple2[String, String])]] = js.native
+  var attributes: js.UndefOr[js.Array[String | (js.Tuple2[String, String])]] = js.undefined
   
   /**
     * Apply column on which COUNT() should be applied
     */
-  var col: js.UndefOr[String] = js.native
+  var col: js.UndefOr[String] = js.undefined
   
   /**
     * Apply COUNT(DISTINCT(col))
     */
-  var distinct: js.UndefOr[Boolean] = js.native
+  var distinct: js.UndefOr[Boolean] = js.undefined
   
   /**
     * For creating complex counts. Will return multiple rows as needed.
     *
     * TODO: Check?
     */
-  var group: js.UndefOr[js.Object] = js.native
+  var group: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Include options. See `find` for details
     */
-  var include: js.UndefOr[js.Array[(Model[_, _, _]) | IncludeOptions]] = js.native
+  var include: js.UndefOr[js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]] = js.undefined
   
   /**
     * A hash of search attributes.
     */
-  var where: js.UndefOr[AnyWhereOptions | js.Array[String]] = js.native
+  var where: js.UndefOr[AnyWhereOptions | js.Array[String]] = js.undefined
 }
 object CountOptions {
   
@@ -84,7 +83,7 @@ object CountOptions {
     def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    def setInclude(value: js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)

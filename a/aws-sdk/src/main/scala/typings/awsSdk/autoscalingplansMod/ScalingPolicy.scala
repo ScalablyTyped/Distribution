@@ -2,26 +2,24 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScalingPolicy extends StObject {
   
   /**
     * The name of the scaling policy.
     */
-  var PolicyName: typings.awsSdk.autoscalingplansMod.PolicyName = js.native
+  var PolicyName: typings.awsSdk.autoscalingplansMod.PolicyName
   
   /**
     * The type of scaling policy.
     */
-  var PolicyType: typings.awsSdk.autoscalingplansMod.PolicyType = js.native
+  var PolicyType: typings.awsSdk.autoscalingplansMod.PolicyType
   
   /**
     * The target tracking scaling policy. Includes support for predefined or customized metrics.
     */
-  var TargetTrackingConfiguration: js.UndefOr[typings.awsSdk.autoscalingplansMod.TargetTrackingConfiguration] = js.native
+  var TargetTrackingConfiguration: js.UndefOr[typings.awsSdk.autoscalingplansMod.TargetTrackingConfiguration] = js.undefined
 }
 object ScalingPolicy {
   

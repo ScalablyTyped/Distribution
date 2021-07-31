@@ -2,7 +2,6 @@ package typings.winrt.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Diagnostics {
@@ -14,27 +13,36 @@ object Diagnostics {
   object ErrorOptions extends StObject {
     
     @js.native
-    sealed trait forceExceptions extends ErrorOptions
+    sealed trait forceExceptions
+      extends StObject
+         with ErrorOptions
     
     @js.native
-    sealed trait none extends ErrorOptions
+    sealed trait none
+      extends StObject
+         with ErrorOptions
     
     @js.native
-    sealed trait suppressExceptions extends ErrorOptions
+    sealed trait suppressExceptions
+      extends StObject
+         with ErrorOptions
     
     @js.native
-    sealed trait suppressSetErrorInfo extends ErrorOptions
+    sealed trait suppressSetErrorInfo
+      extends StObject
+         with ErrorOptions
     
     @js.native
-    sealed trait useSetErrorInfo extends ErrorOptions
+    sealed trait useSetErrorInfo
+      extends StObject
+         with ErrorOptions
   }
   
-  @js.native
   trait IErrorReportingSettings extends StObject {
     
-    def getErrorOptions(): ErrorOptions = js.native
+    def getErrorOptions(): ErrorOptions
     
-    def setErrorOptions(value: ErrorOptions): Unit = js.native
+    def setErrorOptions(value: ErrorOptions): Unit
   }
   object IErrorReportingSettings {
     
@@ -55,8 +63,9 @@ object Diagnostics {
     }
   }
   
-  @js.native
-  trait RuntimeBrokerErrorSettings extends IErrorReportingSettings
+  trait RuntimeBrokerErrorSettings
+    extends StObject
+       with IErrorReportingSettings
   object RuntimeBrokerErrorSettings {
     
     @scala.inline

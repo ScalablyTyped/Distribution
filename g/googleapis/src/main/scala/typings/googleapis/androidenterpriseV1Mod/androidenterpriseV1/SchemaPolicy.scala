@@ -2,13 +2,11 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The device policy for a given managed device.
   */
-@js.native
 trait SchemaPolicy extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaPolicy extends StObject {
     * &quot;never&quot; disables auto updates. &quot;wifiOnly&quot; enables
     * auto updates only when the device is connected to wifi.
     */
-  var autoUpdatePolicy: js.UndefOr[String] = js.native
+  var autoUpdatePolicy: js.UndefOr[String] = js.undefined
   
   /**
     * The maintenance window defining when apps running in the foreground
     * should be updated.
     */
-  var maintenanceWindow: js.UndefOr[SchemaMaintenanceWindow] = js.native
+  var maintenanceWindow: js.UndefOr[SchemaMaintenanceWindow] = js.undefined
   
   /**
     * The availability granted to the device for the specified products.
@@ -37,12 +35,12 @@ trait SchemaPolicy extends StObject {
     * no value is provided, the availability set at the user level is applied
     * by default.
     */
-  var productAvailabilityPolicy: js.UndefOr[String] = js.native
+  var productAvailabilityPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * The list of product policies.
     */
-  var productPolicy: js.UndefOr[js.Array[SchemaProductPolicy]] = js.native
+  var productPolicy: js.UndefOr[js.Array[SchemaProductPolicy]] = js.undefined
 }
 object SchemaPolicy {
   

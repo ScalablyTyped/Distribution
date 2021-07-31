@@ -2,21 +2,19 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListComponentsResponse extends StObject {
   
   /**
     * The list of application components.
     */
-  var ApplicationComponentList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ApplicationComponentList] = js.native
+  var ApplicationComponentList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ApplicationComponentList] = js.undefined
   
   /**
     * The token to request the next page of results.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListComponentsResponse {
   

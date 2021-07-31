@@ -3,15 +3,16 @@ package typings.msMacro
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ms.macro", JSImport.Default)
+  @JSImport("ms.macro", JSImport.Namespace)
   @js.native
-  def default(value: String): Double = js.native
-  @JSImport("ms.macro", JSImport.Default)
-  @js.native
-  def default(value: TemplateStringsArray): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def default(value: TemplateStringsArray): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

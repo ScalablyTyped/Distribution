@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
   /**
     * The list of script project files. One of the files is a script manifest; it must be named "appsscript", must have type of JSON, and include the manifest configurations for the
     * project.
     */
-  var files: js.UndefOr[js.Array[File]] = js.native
+  var files: js.UndefOr[js.Array[File]] = js.undefined
   
   /** The script project's Drive ID. */
-  var scriptId: js.UndefOr[String] = js.native
+  var scriptId: js.UndefOr[String] = js.undefined
 }
 object Content {
   

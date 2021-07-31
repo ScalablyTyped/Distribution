@@ -2,13 +2,11 @@ package typings.restify.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheOptions extends StObject {
   
-  var maxAge: Double = js.native
+  var maxAge: Double
 }
 object CacheOptions {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnaryFilter extends StObject {
   
   /** The field to which to apply the operator. */
-  var field: js.UndefOr[FieldReference] = js.native
+  var field: js.UndefOr[FieldReference] = js.undefined
   
   /** The unary operator to apply. */
-  var op: js.UndefOr[String] = js.native
+  var op: js.UndefOr[String] = js.undefined
 }
 object UnaryFilter {
   

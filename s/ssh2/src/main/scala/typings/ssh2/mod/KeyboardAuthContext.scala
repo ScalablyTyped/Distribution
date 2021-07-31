@@ -4,7 +4,6 @@ import typings.ssh2.ssh2Strings.`keyboard-interactive`
 import typings.ssh2Streams.mod.Prompt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

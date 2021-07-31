@@ -2,21 +2,19 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDeviceRequest extends StObject {
   
   /**
     * The ID of the device.
     */
-  var DeviceId: String = js.native
+  var DeviceId: String
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String = js.native
+  var GlobalNetworkId: String
 }
 object DeleteDeviceRequest {
   

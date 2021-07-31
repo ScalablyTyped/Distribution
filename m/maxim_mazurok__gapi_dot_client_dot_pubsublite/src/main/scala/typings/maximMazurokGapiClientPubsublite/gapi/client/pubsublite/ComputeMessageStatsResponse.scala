@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComputeMessageStatsResponse extends StObject {
   
   /** The number of quota bytes accounted to these messages. */
-  var messageBytes: js.UndefOr[String] = js.native
+  var messageBytes: js.UndefOr[String] = js.undefined
   
   /** The count of messages. */
-  var messageCount: js.UndefOr[String] = js.native
+  var messageCount: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum event timestamp across these messages. For the purposes of this computation, if a message does not have an event time, we use the publish time. The timestamp will be
     * unset if there are no messages.
     */
-  var minimumEventTime: js.UndefOr[String] = js.native
+  var minimumEventTime: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum publish timestamp across these messages. Note that publish timestamps within a partition are not guaranteed to be non-decreasing. The timestamp will be unset if there
     * are no messages.
     */
-  var minimumPublishTime: js.UndefOr[String] = js.native
+  var minimumPublishTime: js.UndefOr[String] = js.undefined
 }
 object ComputeMessageStatsResponse {
   

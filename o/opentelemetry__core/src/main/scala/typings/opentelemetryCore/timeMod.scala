@@ -4,47 +4,40 @@ import typings.opentelemetryApi.timeMod.HrTime
 import typings.opentelemetryApi.timeMod.TimeInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeMod {
   
-  @JSImport("@opentelemetry/core/build/src/common/time", "hrTime")
+  @JSImport("@opentelemetry/core/build/src/common/time", JSImport.Namespace)
   @js.native
-  def hrTime(): HrTime = js.native
-  @JSImport("@opentelemetry/core/build/src/common/time", "hrTime")
-  @js.native
-  def hrTime(performanceNow: Double): HrTime = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@opentelemetry/core/build/src/common/time", "hrTimeDuration")
-  @js.native
-  def hrTimeDuration(startTime: HrTime, endTime: HrTime): HrTime = js.native
+  @scala.inline
+  def hrTime(): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTime")().asInstanceOf[HrTime]
+  @scala.inline
+  def hrTime(performanceNow: Double): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTime")(performanceNow.asInstanceOf[js.Any]).asInstanceOf[HrTime]
   
-  @JSImport("@opentelemetry/core/build/src/common/time", "hrTimeToMicroseconds")
-  @js.native
-  def hrTimeToMicroseconds(hrTime: HrTime): Double = js.native
+  @scala.inline
+  def hrTimeDuration(startTime: HrTime, endTime: HrTime): HrTime = (^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeDuration")(startTime.asInstanceOf[js.Any], endTime.asInstanceOf[js.Any])).asInstanceOf[HrTime]
   
-  @JSImport("@opentelemetry/core/build/src/common/time", "hrTimeToMilliseconds")
-  @js.native
-  def hrTimeToMilliseconds(hrTime: HrTime): Double = js.native
+  @scala.inline
+  def hrTimeToMicroseconds(hrTime: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToMicroseconds")(hrTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@opentelemetry/core/build/src/common/time", "hrTimeToNanoseconds")
-  @js.native
-  def hrTimeToNanoseconds(hrTime: HrTime): Double = js.native
+  @scala.inline
+  def hrTimeToMilliseconds(hrTime: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToMilliseconds")(hrTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@opentelemetry/core/build/src/common/time", "hrTimeToTimeStamp")
-  @js.native
-  def hrTimeToTimeStamp(hrTime: HrTime): String = js.native
+  @scala.inline
+  def hrTimeToNanoseconds(hrTime: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToNanoseconds")(hrTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@opentelemetry/core/build/src/common/time", "isTimeInput")
-  @js.native
-  def isTimeInput(value: js.Any): Boolean = js.native
+  @scala.inline
+  def hrTimeToTimeStamp(hrTime: HrTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToTimeStamp")(hrTime.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@opentelemetry/core/build/src/common/time", "isTimeInputHrTime")
-  @js.native
-  def isTimeInputHrTime(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isTimeInput(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeInput")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@opentelemetry/core/build/src/common/time", "timeInputToHrTime")
-  @js.native
-  def timeInputToHrTime(time: TimeInput): HrTime = js.native
+  @scala.inline
+  def isTimeInputHrTime(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeInputHrTime")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def timeInputToHrTime(time: TimeInput): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timeInputToHrTime")(time.asInstanceOf[js.Any]).asInstanceOf[HrTime]
 }

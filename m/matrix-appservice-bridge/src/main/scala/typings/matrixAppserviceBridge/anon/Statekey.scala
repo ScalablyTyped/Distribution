@@ -2,19 +2,17 @@ package typings.matrixAppserviceBridge.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Statekey extends StObject {
   
-  var content: Displayname = js.native
+  var content: Displayname
   
-  var room_id: String = js.native
+  var room_id: String
   
-  var state_key: js.Any = js.native
+  var state_key: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Statekey {
   

@@ -5,7 +5,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabbedLayoutMod {
@@ -57,16 +56,15 @@ object tabbedLayoutMod {
     def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait TabbedItem extends StObject {
     
-    var afterAttachedCallback: js.UndefOr[js.Function] = js.native
+    var afterAttachedCallback: js.UndefOr[js.Function] = js.undefined
     
-    var bodyPromise: Promise[HTMLElement] = js.native
+    var bodyPromise: Promise[HTMLElement]
     
-    var name: String = js.native
+    var name: String
     
-    var title: Element = js.native
+    var title: Element
   }
   object TabbedItem {
     
@@ -96,16 +94,15 @@ object tabbedLayoutMod {
     }
   }
   
-  @js.native
   trait TabbedLayoutParams extends StObject {
     
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
-    var items: js.Array[TabbedItem] = js.native
+    var items: js.Array[TabbedItem]
     
-    var onActiveItemClicked: js.UndefOr[js.Function] = js.native
+    var onActiveItemClicked: js.UndefOr[js.Function] = js.undefined
     
-    var onItemClicked: js.UndefOr[js.Function] = js.native
+    var onItemClicked: js.UndefOr[js.Function] = js.undefined
   }
   object TabbedLayoutParams {
     

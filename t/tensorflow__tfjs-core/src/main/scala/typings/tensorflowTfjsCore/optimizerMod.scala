@@ -9,7 +9,6 @@ import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensor
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optimizerMod {
@@ -84,21 +83,20 @@ object optimizerMod {
       * @doc {heading: 'Training', subheading: 'Optimizers'}
       */
     def minimize(f: js.Function0[Scalar]): Scalar | Null = js.native
-    def minimize(f: js.Function0[Scalar], returnCost: js.UndefOr[scala.Nothing], varList: js.Array[Variable[Rank]]): Scalar | Null = js.native
     def minimize(f: js.Function0[Scalar], returnCost: Boolean): Scalar | Null = js.native
     def minimize(f: js.Function0[Scalar], returnCost: Boolean, varList: js.Array[Variable[Rank]]): Scalar | Null = js.native
+    def minimize(f: js.Function0[Scalar], returnCost: Unit, varList: js.Array[Variable[Rank]]): Scalar | Null = js.native
     
     def saveIterations(): js.Promise[NamedTensor] = js.native
     
     def setWeights(weightValues: js.Array[NamedTensor]): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait OptimizerVariable extends StObject {
     
-    var originalName: String = js.native
+    var originalName: String
     
-    var variable: Variable[Rank] = js.native
+    var variable: Variable[Rank]
   }
   object OptimizerVariable {
     

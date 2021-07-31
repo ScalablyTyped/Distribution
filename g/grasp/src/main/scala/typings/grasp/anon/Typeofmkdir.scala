@@ -9,7 +9,6 @@ import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,16 +17,16 @@ trait Typeofmkdir extends StObject {
   def apply(path: PathLike, callback: NoParamCallback): Unit = js.native
   def apply(
     path: PathLike,
-    options: js.UndefOr[Mode],
-    callback: js.Function2[ErrnoException | Null, js.UndefOr[String], Unit]
-  ): Unit = js.native
-  def apply(path: PathLike, options: js.UndefOr[Mode], callback: NoParamCallback): Unit = js.native
-  def apply(
-    path: PathLike,
     options: Null,
     callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
   ): Unit = js.native
   def apply(path: PathLike, options: Null, callback: NoParamCallback): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: Unit,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
+  ): Unit = js.native
+  def apply(path: PathLike, options: Unit, callback: NoParamCallback): Unit = js.native
   def apply(path: PathLike, options: MakeDirectoryOptionsrecurMode, callback: NoParamCallback): Unit = js.native
   def apply(
     path: PathLike,
@@ -39,4 +38,10 @@ trait Typeofmkdir extends StObject {
     options: MakeDirectoryOptions,
     callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
   ): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: Mode,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
+  ): Unit = js.native
+  def apply(path: PathLike, options: Mode, callback: NoParamCallback): Unit = js.native
 }

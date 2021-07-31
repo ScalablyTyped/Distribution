@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object infiniteScrollMod {
@@ -26,22 +25,21 @@ object infiniteScrollMod {
   @js.native
   val InfiniteScroll: ComponentClass[InfiniteScrollProps, ComponentState] = js.native
   
-  @js.native
   trait InfiniteScrollProps extends StObject {
     
-    var items: js.UndefOr[js.Array[String | Double | ReactElement | (Record[String, _])]] = js.native
+    var items: js.UndefOr[js.Array[String | Double | ReactElement | (Record[String, js.Any])]] = js.undefined
     
-    var onMore: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMore: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var renderMarker: js.UndefOr[js.Function1[/* marker */ ReactElement, ReactElement]] = js.native
+    var renderMarker: js.UndefOr[js.Function1[/* marker */ ReactElement, ReactElement]] = js.undefined
     
-    var replace: js.UndefOr[Boolean] = js.native
+    var replace: js.UndefOr[Boolean] = js.undefined
     
-    var scrollableAncestor: js.UndefOr[ReactNode | window] = js.native
+    var scrollableAncestor: js.UndefOr[ReactNode | window] = js.undefined
     
-    var show: js.UndefOr[Double] = js.native
+    var show: js.UndefOr[Double] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object InfiniteScrollProps {
     
@@ -55,7 +53,7 @@ object infiniteScrollMod {
     implicit class InfiniteScrollPropsMutableBuilder[Self <: InfiniteScrollProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setItems(value: js.Array[String | Double | ReactElement | (Record[String, _])]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | Double | ReactElement | (Record[String, js.Any])]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

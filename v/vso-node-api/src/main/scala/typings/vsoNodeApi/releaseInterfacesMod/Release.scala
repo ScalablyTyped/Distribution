@@ -5,132 +5,130 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Release extends StObject {
   
   /**
     * Gets links to access the release.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Gets or sets the list of artifacts.
     */
-  var artifacts: js.Array[Artifact] = js.native
+  var artifacts: js.Array[Artifact]
   
   /**
     * Gets or sets comment.
     */
-  var comment: String = js.native
+  var comment: String
   
   /**
     * Gets or sets the identity who created.
     */
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
   /**
     * Gets date on which it got created.
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * Gets revision number of definition snapshot.
     */
-  var definitionSnapshotRevision: Double = js.native
+  var definitionSnapshotRevision: Double
   
   /**
     * Gets or sets description of release.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Gets list of environments.
     */
-  var environments: js.Array[ReleaseEnvironment] = js.native
+  var environments: js.Array[ReleaseEnvironment]
   
   /**
     * Gets the unique identifier of this field.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Whether to exclude the release from retention policies.
     */
-  var keepForever: Boolean = js.native
+  var keepForever: Boolean
   
   /**
     * Gets logs container url.
     */
-  var logsContainerUrl: String = js.native
+  var logsContainerUrl: String
   
   /**
     * Gets or sets the identity who modified.
     */
-  var modifiedBy: IdentityRef = js.native
+  var modifiedBy: IdentityRef
   
   /**
     * Gets date on which it got modified.
     */
-  var modifiedOn: Date = js.native
+  var modifiedOn: Date
   
   /**
     * Gets name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets pool name.
     */
-  var poolName: String = js.native
+  var poolName: String
   
   /**
     * Gets or sets project reference.
     */
-  var projectReference: ProjectReference = js.native
+  var projectReference: ProjectReference
   
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * Gets reason of release.
     */
-  var reason: ReleaseReason = js.native
+  var reason: ReleaseReason
   
   /**
     * Gets releaseDefinitionReference which specifies the reference of the release definition to which this release is associated.
     */
-  var releaseDefinition: ReleaseDefinitionShallowReference = js.native
+  var releaseDefinition: ReleaseDefinitionShallowReference
   
   /**
     * Gets release name format.
     */
-  var releaseNameFormat: String = js.native
+  var releaseNameFormat: String
   
   /**
     * Gets status.
     */
-  var status: ReleaseStatus = js.native
+  var status: ReleaseStatus
   
   /**
     * Gets or sets list of tags.
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
-  var triggeringArtifactAlias: String = js.native
+  var triggeringArtifactAlias: String
   
-  var url: String = js.native
+  var url: String
   
   /**
     * Gets the list of variable groups.
     */
-  var variableGroups: js.Array[VariableGroup] = js.native
+  var variableGroups: js.Array[VariableGroup]
   
   /**
     * Gets or sets the dictionary of variables.
     */
-  var variables: StringDictionary[ConfigurationVariableValue] = js.native
+  var variables: StringDictionary[ConfigurationVariableValue]
 }
 object Release {
   

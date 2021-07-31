@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionContentDetails extends StObject {
   
   /** The type of activity this subscription is for (only uploads, everything). */
-  var activityType: js.UndefOr[String] = js.native
+  var activityType: js.UndefOr[String] = js.undefined
   
   /** The number of new items in the subscription since its content was last read. */
-  var newItemCount: js.UndefOr[Double] = js.native
+  var newItemCount: js.UndefOr[Double] = js.undefined
   
   /** The approximate number of items that the subscription points to. */
-  var totalItemCount: js.UndefOr[Double] = js.native
+  var totalItemCount: js.UndefOr[Double] = js.undefined
 }
 object SubscriptionContentDetails {
   

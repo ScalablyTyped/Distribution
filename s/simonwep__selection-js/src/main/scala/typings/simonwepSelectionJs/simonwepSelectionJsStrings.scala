@@ -4,7 +4,6 @@ import typings.simonwepSelectionJs.mod.Mode
 import typings.simonwepSelectionJs.mod.TapMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simonwepSelectionJsStrings {
@@ -20,7 +19,9 @@ object simonwepSelectionJsStrings {
   def boundaries: boundaries = "boundaries".asInstanceOf[boundaries]
   
   @js.native
-  sealed trait center extends Mode
+  sealed trait center
+    extends StObject
+       with Mode
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -30,7 +31,9 @@ object simonwepSelectionJsStrings {
   def `class`: `class` = "class".asInstanceOf[`class`]
   
   @js.native
-  sealed trait cover extends Mode
+  sealed trait cover
+    extends StObject
+       with Mode
   @scala.inline
   def cover: cover = "cover".asInstanceOf[cover]
   
@@ -60,7 +63,9 @@ object simonwepSelectionJsStrings {
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait native extends TapMode
+  sealed trait native
+    extends StObject
+       with TapMode
   @scala.inline
   def native: native = "native".asInstanceOf[native]
   
@@ -111,7 +116,8 @@ object simonwepSelectionJsStrings {
   
   @js.native
   sealed trait touch
-    extends Mode
+    extends StObject
+       with Mode
        with TapMode
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]

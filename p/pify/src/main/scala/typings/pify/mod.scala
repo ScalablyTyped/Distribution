@@ -4,38 +4,36 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pify", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Any): js.Any = js.native
-  @JSImport("pify", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Any, options: PifyOptions): js.Any = js.native
-  @JSImport("pify", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Function): js.Function1[/* repeated */ js.Any, js.Promise[_]] = js.native
-  @JSImport("pify", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Function, options: PifyOptions): js.Function1[/* repeated */ js.Any, js.Promise[_]] = js.native
+  @scala.inline
+  def apply(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: js.Any, options: PifyOptions): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: js.Function): js.Function1[/* repeated */ js.Any, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]]
+  @scala.inline
+  def apply(input: js.Function, options: PifyOptions): js.Function1[/* repeated */ js.Any, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]]
   
+  @JSImport("pify", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait PifyOptions extends StObject {
     
-    var errorFirst: js.UndefOr[Boolean] = js.native
+    var errorFirst: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var exclude: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
-    var excludeMain: js.UndefOr[Boolean] = js.native
+    var excludeMain: js.UndefOr[Boolean] = js.undefined
     
-    var include: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var include: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
-    var multiArgs: js.UndefOr[Boolean] = js.native
+    var multiArgs: js.UndefOr[Boolean] = js.undefined
     
-    var promiseModule: js.UndefOr[PromiseModule] = js.native
+    var promiseModule: js.UndefOr[PromiseModule] = js.undefined
   }
   object PifyOptions {
     
@@ -94,7 +92,8 @@ object mod {
   
   @js.native
   trait PromiseModule
-    extends Instantiable1[
+    extends StObject
+       with Instantiable1[
           /* executor */ js.Function2[
             /* resolve */ js.Function1[/* value */ js.UndefOr[js.Any], Unit], 
             /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 

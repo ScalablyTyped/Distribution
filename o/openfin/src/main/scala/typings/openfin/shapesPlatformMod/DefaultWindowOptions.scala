@@ -3,13 +3,13 @@ package typings.openfin.shapesPlatformMod
 import typings.openfin.windowOptionMod.WindowOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DefaultWindowOptions extends WindowOption {
+trait DefaultWindowOptions
+  extends StObject
+     with WindowOption {
   
-  var stylesheetUrl: String = js.native
+  var stylesheetUrl: String
 }
 object DefaultWindowOptions {
   

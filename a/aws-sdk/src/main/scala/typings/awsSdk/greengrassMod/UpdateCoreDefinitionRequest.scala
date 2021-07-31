@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCoreDefinitionRequest extends StObject {
   
   /**
     * The ID of the core definition.
     */
-  var CoreDefinitionId: string = js.native
+  var CoreDefinitionId: string
   
   /**
     * The name of the definition.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
 }
 object UpdateCoreDefinitionRequest {
   

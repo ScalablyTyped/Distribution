@@ -10,9 +10,9 @@ yet another zip library for node
 | ------------------ | :-------------: |
 | Full name          | yazl |
 | Keywords           | zip, stream, archive, file |
-| # releases         | 3 |
-| # dependents       | 207 |
-| # downloads        | 13125076 |
+| # releases         | 0 |
+| # dependents       | 231 |
+| # downloads        | 15669477 |
 | # stars            | 9 |
 
 ## Links

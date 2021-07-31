@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.ReactionsDeleteForTeamDiscussionComment
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReactionsDeleteForTeamDiscussionCommentEndpoint extends StObject {
   
-  var parameters: ReactionsDeleteForTeamDiscussionCommentEndpoint = js.native
+  var parameters: ReactionsDeleteForTeamDiscussionCommentEndpoint
   
-  var request: ReactionsDeleteForTeamDiscussionCommentRequestOptions = js.native
+  var request: ReactionsDeleteForTeamDiscussionCommentRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersReactionsDeleteForTeamDiscussionCommentEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersReactionsDeleteForTeamDiscussionCommentEndpoint {
   def apply(
     parameters: ReactionsDeleteForTeamDiscussionCommentEndpoint,
     request: ReactionsDeleteForTeamDiscussionCommentRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersReactionsDeleteForTeamDiscussionCommentEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersReactionsDeleteForTeamDiscussionCommentEndpoint]
@@ -39,6 +37,6 @@ object ParametersReactionsDeleteForTeamDiscussionCommentEndpoint {
     def setRequest(value: ReactionsDeleteForTeamDiscussionCommentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

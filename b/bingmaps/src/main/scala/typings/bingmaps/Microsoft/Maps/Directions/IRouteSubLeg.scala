@@ -3,23 +3,21 @@ package typings.bingmaps.Microsoft.Maps.Directions
 import typings.bingmaps.Microsoft.Maps.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRouteSubLeg extends StObject {
   
   /** The location of the last waypoint of the sub leg. */
-  var actualEnd: Location = js.native
+  var actualEnd: Location
   
   /** The location of the first waypoint of the sub leg. */
-  var actualStart: Location = js.native
+  var actualStart: Location
   
   /** The description of the last waypoint of the sub leg. */
-  var endDescription: String = js.native
+  var endDescription: String
   
   /** The description of the first waypoint of the sub leg. */
-  var startDescription: String = js.native
+  var startDescription: String
 }
 object IRouteSubLeg {
   

@@ -2,76 +2,76 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Definition of a Medication
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Medication extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Medication
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'isBrand'.
     */
-  var _isBrand: js.UndefOr[Element] = js.native
+  var _isBrand: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'isOverTheCounter'.
     */
-  var _isOverTheCounter: js.UndefOr[Element] = js.native
+  var _isOverTheCounter: js.UndefOr[Element] = js.undefined
   
   /**
     * Details about packaged medications
     */
   @JSName("package")
-  var _package: js.UndefOr[MedicationPackage] = js.native
+  var _package: js.UndefOr[MedicationPackage] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Codes that identify this medication
     */
-  var code: js.UndefOr[CodeableConcept] = js.native
+  var code: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * powder | tablets | capsule +
     */
-  var form: js.UndefOr[CodeableConcept] = js.native
+  var form: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Picture of the medication
     */
-  var image: js.UndefOr[js.Array[Attachment]] = js.native
+  var image: js.UndefOr[js.Array[Attachment]] = js.undefined
   
   /**
     * Active or inactive ingredient
     */
-  var ingredient: js.UndefOr[js.Array[MedicationIngredient]] = js.native
+  var ingredient: js.UndefOr[js.Array[MedicationIngredient]] = js.undefined
   
   /**
     * True if a brand
     */
-  var isBrand: js.UndefOr[Boolean] = js.native
+  var isBrand: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if medication does not require a prescription
     */
-  var isOverTheCounter: js.UndefOr[Boolean] = js.native
+  var isOverTheCounter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Manufacturer of the item
     */
-  var manufacturer: js.UndefOr[Reference] = js.native
+  var manufacturer: js.UndefOr[Reference] = js.undefined
   
   /**
     * active | inactive | entered-in-error
     */
-  var status: js.UndefOr[code] = js.native
+  var status: js.UndefOr[code] = js.undefined
 }
 object Medication {
   

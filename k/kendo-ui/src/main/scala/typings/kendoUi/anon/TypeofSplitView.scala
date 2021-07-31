@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.mobile.ui.SplitView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSplitView extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): SplitView = js.native
+  def extend(proto: js.Object): SplitView
   
   /* static member */
-  var fn: SplitView = js.native
+  var fn: SplitView
 }
 object TypeofSplitView {
   

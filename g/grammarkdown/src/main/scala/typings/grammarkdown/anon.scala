@@ -8,15 +8,13 @@ import typings.grammarkdown.optionsMod.NewLineKind
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var detailed: js.UndefOr[Boolean] = js.native
+    var detailed: js.UndefOr[Boolean] = js.undefined
   }
   object `0` {
     
@@ -37,12 +35,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var message: String = js.native
+    var message: String
   }
   object Code {
     
@@ -63,12 +60,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Detailed extends StObject {
     
-    var detailed: js.UndefOr[Boolean] = js.native
+    var detailed: js.UndefOr[Boolean] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
   }
   object Detailed {
     
@@ -95,14 +91,13 @@ object anon {
     }
   }
   
-  @js.native
   trait DetailedMessage extends StObject {
     
-    var detailedMessage: js.UndefOr[Boolean] = js.native
+    var detailedMessage: js.UndefOr[Boolean] = js.undefined
     
-    var formatMessage: js.UndefOr[Boolean] = js.native
+    var formatMessage: js.UndefOr[Boolean] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
   }
   object DetailedMessage {
     
@@ -135,12 +130,11 @@ object anon {
     }
   }
   
-  @js.native
   trait FormatMessage extends StObject {
     
-    var detailedMessage: js.UndefOr[Boolean] = js.native
+    var detailedMessage: js.UndefOr[Boolean] = js.undefined
     
-    var formatMessage: js.UndefOr[Boolean] = js.native
+    var formatMessage: js.UndefOr[Boolean] = js.undefined
   }
   object FormatMessage {
     
@@ -167,20 +161,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var message: String = js.native
+    var message: String
     
-    var warning: `true` = js.native
+    var warning: `true`
   }
   object Message {
     
     @scala.inline
-    def apply(code: Double, message: String, warning: `true`): Message = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
+    def apply(code: Double, message: String): Message = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], warning = true)
       __obj.asInstanceOf[Message]
     }
     
@@ -199,34 +192,35 @@ object anon {
   }
   
   /* Inlined std.Partial<grammarkdown.grammarkdown/dist/grammarkdown.KnownOption> */
-  @js.native
   trait PartialKnownOption extends StObject {
     
-    var aliasFor: js.UndefOr[js.Array[String]] = js.native
+    var aliasFor: js.UndefOr[js.Array[String]] = js.undefined
     
-    var convert: js.UndefOr[js.Function3[/* key */ String, /* value */ String, /* raw */ RawArguments, _]] = js.native
+    var convert: js.UndefOr[
+        js.Function3[/* key */ String, /* value */ String, /* raw */ RawArguments, js.Any]
+      ] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var isUsage: js.UndefOr[Boolean] = js.native
+    var isUsage: js.UndefOr[Boolean] = js.undefined
     
-    var longName: js.UndefOr[String] = js.native
+    var longName: js.UndefOr[String] = js.undefined
     
-    var many: js.UndefOr[Boolean] = js.native
+    var many: js.UndefOr[Boolean] = js.undefined
     
-    var param: js.UndefOr[String] = js.native
+    var param: js.UndefOr[String] = js.undefined
     
-    var shortName: js.UndefOr[String] = js.native
+    var shortName: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String | (Map[String, _])] = js.native
+    var `type`: js.UndefOr[String | (Map[String, js.Any])] = js.undefined
     
     var validate: js.UndefOr[
         js.Function3[/* key */ String, /* value */ String, /* raw */ RawArguments, Boolean]
-      ] = js.native
+      ] = js.undefined
   }
   object PartialKnownOption {
     
@@ -249,7 +243,7 @@ object anon {
       def setAliasForVarargs(value: String*): Self = StObject.set(x, "aliasFor", js.Array(value :_*))
       
       @scala.inline
-      def setConvert(value: (/* key */ String, /* value */ String, /* raw */ RawArguments) => _): Self = StObject.set(x, "convert", js.Any.fromFunction3(value))
+      def setConvert(value: (/* key */ String, /* value */ String, /* raw */ RawArguments) => js.Any): Self = StObject.set(x, "convert", js.Any.fromFunction3(value))
       
       @scala.inline
       def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
@@ -303,7 +297,7 @@ object anon {
       def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
       
       @scala.inline
-      def setType(value: String | (Map[String, _])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: String | (Map[String, js.Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
@@ -317,37 +311,36 @@ object anon {
   }
   
   /* Inlined std.Partial<grammarkdown.grammarkdown/dist/options.KnownOption> */
-  @js.native
   trait PartialKnownOptionAliasFor extends StObject {
     
-    var aliasFor: js.UndefOr[js.Array[String]] = js.native
+    var aliasFor: js.UndefOr[js.Array[String]] = js.undefined
     
     var convert: js.UndefOr[
         js.Function3[
           /* key */ String, 
           /* value */ String, 
           /* raw */ typings.grammarkdown.optionsMod.RawArguments, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var isUsage: js.UndefOr[Boolean] = js.native
+    var isUsage: js.UndefOr[Boolean] = js.undefined
     
-    var longName: js.UndefOr[String] = js.native
+    var longName: js.UndefOr[String] = js.undefined
     
-    var many: js.UndefOr[Boolean] = js.native
+    var many: js.UndefOr[Boolean] = js.undefined
     
-    var param: js.UndefOr[String] = js.native
+    var param: js.UndefOr[String] = js.undefined
     
-    var shortName: js.UndefOr[String] = js.native
+    var shortName: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String | (Map[String, _])] = js.native
+    var `type`: js.UndefOr[String | (Map[String, js.Any])] = js.undefined
     
     var validate: js.UndefOr[
         js.Function3[
@@ -356,7 +349,7 @@ object anon {
           /* raw */ typings.grammarkdown.optionsMod.RawArguments, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PartialKnownOptionAliasFor {
     
@@ -380,7 +373,7 @@ object anon {
       
       @scala.inline
       def setConvert(
-        value: (/* key */ String, /* value */ String, /* raw */ typings.grammarkdown.optionsMod.RawArguments) => _
+        value: (/* key */ String, /* value */ String, /* raw */ typings.grammarkdown.optionsMod.RawArguments) => js.Any
       ): Self = StObject.set(x, "convert", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -435,7 +428,7 @@ object anon {
       def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
       
       @scala.inline
-      def setType(value: String | (Map[String, _])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: String | (Map[String, js.Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
@@ -450,12 +443,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Range extends StObject {
     
-    var range: Range2 = js.native
+    var range: Range2
     
-    var text: String = js.native
+    var text: String
   }
   object Range {
     
@@ -477,28 +469,27 @@ object anon {
   }
   
   /* Inlined std.Readonly<grammarkdown.grammarkdown/dist/options.CompilerOptions> */
-  @js.native
   trait ReadonlyCompilerOptions extends StObject {
     
-    val diagnostics: js.UndefOr[Boolean] = js.native
+    val diagnostics: js.UndefOr[Boolean] = js.undefined
     
-    val emitLinks: js.UndefOr[Boolean] = js.native
+    val emitLinks: js.UndefOr[Boolean] = js.undefined
     
-    val format: js.UndefOr[EmitFormat] = js.native
+    val format: js.UndefOr[EmitFormat] = js.undefined
     
-    val newLine: js.UndefOr[NewLineKind] = js.native
+    val newLine: js.UndefOr[NewLineKind] = js.undefined
     
-    val noChecks: js.UndefOr[Boolean] = js.native
+    val noChecks: js.UndefOr[Boolean] = js.undefined
     
-    val noEmit: js.UndefOr[Boolean] = js.native
+    val noEmit: js.UndefOr[Boolean] = js.undefined
     
-    val noEmitOnError: js.UndefOr[Boolean] = js.native
+    val noEmitOnError: js.UndefOr[Boolean] = js.undefined
     
-    val noStrictParametricProductions: js.UndefOr[Boolean] = js.native
+    val noStrictParametricProductions: js.UndefOr[Boolean] = js.undefined
     
-    val noUnusedParameters: js.UndefOr[Boolean] = js.native
+    val noUnusedParameters: js.UndefOr[Boolean] = js.undefined
     
-    val out: js.UndefOr[String] = js.native
+    val out: js.UndefOr[String] = js.undefined
   }
   object ReadonlyCompilerOptions {
     
@@ -573,12 +564,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var range: typings.grammarkdown.typesMod.Range = js.native
+    var range: typings.grammarkdown.typesMod.Range
     
-    var text: String = js.native
+    var text: String
   }
   object Text {
     

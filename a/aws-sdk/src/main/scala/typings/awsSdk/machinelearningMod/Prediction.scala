@@ -2,25 +2,23 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Prediction extends StObject {
   
-  var details: js.UndefOr[DetailsMap] = js.native
+  var details: js.UndefOr[DetailsMap] = js.undefined
   
   /**
     * The prediction label for either a BINARY or MULTICLASS MLModel.
     */
-  var predictedLabel: js.UndefOr[Label] = js.native
+  var predictedLabel: js.UndefOr[Label] = js.undefined
   
-  var predictedScores: js.UndefOr[ScoreValuePerLabelMap] = js.native
+  var predictedScores: js.UndefOr[ScoreValuePerLabelMap] = js.undefined
   
   /**
     * The prediction value for REGRESSION MLModel.
     */
-  var predictedValue: js.UndefOr[floatLabel] = js.native
+  var predictedValue: js.UndefOr[floatLabel] = js.undefined
 }
 object Prediction {
   

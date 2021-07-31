@@ -3,12 +3,15 @@ package typings.cryptoJs.mod
 import typings.cryptoJs.anon.PartialCipherParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object CryptoJS {
+    
+    @JSGlobal("CryptoJS")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSGlobal("CryptoJS.AES")
     @js.native
@@ -18,30 +21,22 @@ object global {
     @js.native
     val DES: CipherHelper = js.native
     
-    @JSGlobal("CryptoJS.EvpKDF")
-    @js.native
-    def EvpKDF(password: String, salt: String): WordArray = js.native
-    @JSGlobal("CryptoJS.EvpKDF")
-    @js.native
-    def EvpKDF(password: String, salt: String, cfg: typings.cryptoJs.anon.Hasher): WordArray = js.native
-    @JSGlobal("CryptoJS.EvpKDF")
-    @js.native
-    def EvpKDF(password: String, salt: WordArray): WordArray = js.native
-    @JSGlobal("CryptoJS.EvpKDF")
-    @js.native
-    def EvpKDF(password: String, salt: WordArray, cfg: typings.cryptoJs.anon.Hasher): WordArray = js.native
-    @JSGlobal("CryptoJS.EvpKDF")
-    @js.native
-    def EvpKDF(password: WordArray, salt: String): WordArray = js.native
-    @JSGlobal("CryptoJS.EvpKDF")
-    @js.native
-    def EvpKDF(password: WordArray, salt: String, cfg: typings.cryptoJs.anon.Hasher): WordArray = js.native
-    @JSGlobal("CryptoJS.EvpKDF")
-    @js.native
-    def EvpKDF(password: WordArray, salt: WordArray): WordArray = js.native
-    @JSGlobal("CryptoJS.EvpKDF")
-    @js.native
-    def EvpKDF(password: WordArray, salt: WordArray, cfg: typings.cryptoJs.anon.Hasher): WordArray = js.native
+    @scala.inline
+    def EvpKDF(password: String, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def EvpKDF(password: String, salt: String, cfg: typings.cryptoJs.anon.Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def EvpKDF(password: String, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def EvpKDF(password: String, salt: WordArray, cfg: typings.cryptoJs.anon.Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def EvpKDF(password: WordArray, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def EvpKDF(password: WordArray, salt: String, cfg: typings.cryptoJs.anon.Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def EvpKDF(password: WordArray, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def EvpKDF(password: WordArray, salt: WordArray, cfg: typings.cryptoJs.anon.Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
     
     @JSGlobal("CryptoJS.HmacMD5")
     @js.native
@@ -79,30 +74,22 @@ object global {
     @js.native
     val MD5: HasherHelper = js.native
     
-    @JSGlobal("CryptoJS.PBKDF2")
-    @js.native
-    def PBKDF2(password: String, salt: String): WordArray = js.native
-    @JSGlobal("CryptoJS.PBKDF2")
-    @js.native
-    def PBKDF2(password: String, salt: String, cfg: KDFOption): WordArray = js.native
-    @JSGlobal("CryptoJS.PBKDF2")
-    @js.native
-    def PBKDF2(password: String, salt: WordArray): WordArray = js.native
-    @JSGlobal("CryptoJS.PBKDF2")
-    @js.native
-    def PBKDF2(password: String, salt: WordArray, cfg: KDFOption): WordArray = js.native
-    @JSGlobal("CryptoJS.PBKDF2")
-    @js.native
-    def PBKDF2(password: WordArray, salt: String): WordArray = js.native
-    @JSGlobal("CryptoJS.PBKDF2")
-    @js.native
-    def PBKDF2(password: WordArray, salt: String, cfg: KDFOption): WordArray = js.native
-    @JSGlobal("CryptoJS.PBKDF2")
-    @js.native
-    def PBKDF2(password: WordArray, salt: WordArray): WordArray = js.native
-    @JSGlobal("CryptoJS.PBKDF2")
-    @js.native
-    def PBKDF2(password: WordArray, salt: WordArray, cfg: KDFOption): WordArray = js.native
+    @scala.inline
+    def PBKDF2(password: String, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def PBKDF2(password: String, salt: String, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def PBKDF2(password: String, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def PBKDF2(password: String, salt: WordArray, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def PBKDF2(password: WordArray, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def PBKDF2(password: WordArray, salt: String, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def PBKDF2(password: WordArray, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+    @scala.inline
+    def PBKDF2(password: WordArray, salt: WordArray, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
     
     @JSGlobal("CryptoJS.RC4")
     @js.native
@@ -193,6 +180,10 @@ object global {
       }
       object EvpKDF {
         
+        @JSGlobal("CryptoJS.algo.EvpKDF")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Initializes a newly created key derivation function.
           *
@@ -205,12 +196,10 @@ object global {
           *     var kdf = CryptoJS.algo.EvpKDF.create({ keySize: 8, iterations: 1000 });
           */
         /* static member */
-        @JSGlobal("CryptoJS.algo.EvpKDF.create")
-        @js.native
-        def create(): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = js.native
-        @JSGlobal("CryptoJS.algo.EvpKDF.create")
-        @js.native
-        def create(cfg: typings.cryptoJs.anon.Hasher): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = js.native
+        @scala.inline
+        def create(): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF]
+        @scala.inline
+        def create(cfg: typings.cryptoJs.anon.Hasher): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cfg.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF]
       }
       
       /**
@@ -249,9 +238,12 @@ object global {
       }
       object HMAC {
         
-        @JSGlobal("CryptoJS.algo.HMAC.create")
+        @JSGlobal("CryptoJS.algo.HMAC")
         @js.native
-        def create(hasher: HasherStatic, key: String): HMAC = js.native
+        val ^ : js.Any = js.native
+        
+        @scala.inline
+        def create(hasher: HasherStatic, key: String): HMAC = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hasher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[HMAC]
         /**
           * Initializes a newly created HMAC.
           *
@@ -263,9 +255,8 @@ object global {
           *     var hmacHasher = CryptoJS.algo.HMAC.create(CryptoJS.algo.SHA256, key);
           */
         /* static member */
-        @JSGlobal("CryptoJS.algo.HMAC.create")
-        @js.native
-        def create(hasher: HasherStatic, key: WordArray): HMAC = js.native
+        @scala.inline
+        def create(hasher: HasherStatic, key: WordArray): HMAC = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hasher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[HMAC]
       }
       
       /**
@@ -299,6 +290,10 @@ object global {
       }
       object PBKDF2 {
         
+        @JSGlobal("CryptoJS.algo.PBKDF2")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Initializes a newly created key derivation function.
           *
@@ -311,12 +306,10 @@ object global {
           *     var kdf = CryptoJS.algo.PBKDF2.create({ keySize: 8, iterations: 1000 });
           */
         /* static member */
-        @JSGlobal("CryptoJS.algo.PBKDF2.create")
-        @js.native
-        def create(): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = js.native
-        @JSGlobal("CryptoJS.algo.PBKDF2.create")
-        @js.native
-        def create(cfg: KDFOption): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = js.native
+        @scala.inline
+        def create(): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2]
+        @scala.inline
+        def create(cfg: KDFOption): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cfg.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2]
       }
       
       /**
@@ -478,6 +471,10 @@ object global {
         */
       object OpenSSL {
         
+        @JSGlobal("CryptoJS.kdf.OpenSSL")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Derives a key and IV from a password.
           *
@@ -493,15 +490,12 @@ object global {
           *     var derivedParams = CryptoJS.kdf.OpenSSL.execute('Password', 256/32, 128/32);
           *     var derivedParams = CryptoJS.kdf.OpenSSL.execute('Password', 256/32, 128/32, 'saltsalt');
           */
-        @JSGlobal("CryptoJS.kdf.OpenSSL.execute")
-        @js.native
-        def execute(password: String, keySize: Double, ivSize: Double): CipherParams = js.native
-        @JSGlobal("CryptoJS.kdf.OpenSSL.execute")
-        @js.native
-        def execute(password: String, keySize: Double, ivSize: Double, salt: String): CipherParams = js.native
-        @JSGlobal("CryptoJS.kdf.OpenSSL.execute")
-        @js.native
-        def execute(password: String, keySize: Double, ivSize: Double, salt: WordArray): CipherParams = js.native
+        @scala.inline
+        def execute(password: String, keySize: Double, ivSize: Double): CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(password.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], ivSize.asInstanceOf[js.Any])).asInstanceOf[CipherParams]
+        @scala.inline
+        def execute(password: String, keySize: Double, ivSize: Double, salt: String): CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(password.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], ivSize.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[CipherParams]
+        @scala.inline
+        def execute(password: String, keySize: Double, ivSize: Double, salt: WordArray): CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(password.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], ivSize.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[CipherParams]
       }
     }
     
@@ -511,6 +505,10 @@ object global {
         * Base object for prototypal inheritance.
         */
       object Base {
+        
+        @JSGlobal("CryptoJS.lib.Base")
+        @js.native
+        val ^ : js.Any = js.native
         
         /**
           * Extends this object and runs the init method.
@@ -522,9 +520,8 @@ object global {
           *
           *     var instance = MyType.create();
           */
-        @JSGlobal("CryptoJS.lib.Base.create")
-        @js.native
-        def create(args: js.Any*): js.Any = js.native
+        @scala.inline
+        def create(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
         
         /**
           * Creates a new object that inherits from this object.
@@ -542,9 +539,8 @@ object global {
           *         }
           *     });
           */
-        @JSGlobal("CryptoJS.lib.Base.extend")
-        @js.native
-        def extend(overrides: js.Object): js.Any = js.native
+        @scala.inline
+        def extend(overrides: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(overrides.asInstanceOf[js.Any]).asInstanceOf[js.Any]
         
         /**
           * Copies properties into this object.
@@ -557,9 +553,8 @@ object global {
           *         field: 'value'
           *     });
           */
-        @JSGlobal("CryptoJS.lib.Base.mixIn")
-        @js.native
-        def mixIn(properties: js.Object): js.Any = js.native
+        @scala.inline
+        def mixIn(properties: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixIn")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       }
       
       /**
@@ -575,6 +570,10 @@ object global {
       
       object Cipher {
         
+        @JSGlobal("CryptoJS.lib.Cipher")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates shortcut functions to a cipher's object interface.
           *
@@ -586,9 +585,8 @@ object global {
           *
           *     var AES = CryptoJS.lib.Cipher._createHelper(CryptoJS.algo.AES);
           */
-        @JSGlobal("CryptoJS.lib.Cipher._createHelper")
-        @js.native
-        def createHelper(cipher: typings.cryptoJs.mod.Cipher): CipherHelper = js.native
+        @scala.inline
+        def createHelper(cipher: typings.cryptoJs.mod.Cipher): CipherHelper = ^.asInstanceOf[js.Dynamic].applyDynamic("_createHelper")(cipher.asInstanceOf[js.Any]).asInstanceOf[CipherHelper]
       }
       
       /**
@@ -646,6 +644,10 @@ object global {
       }
       object CipherParams {
         
+        @JSGlobal("CryptoJS.lib.CipherParams")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Initializes a newly created cipher params object.
           *
@@ -665,12 +667,15 @@ object global {
           *         formatter: CryptoJS.format.OpenSSL
           *     });
           */
-        @JSGlobal("CryptoJS.lib.CipherParams.create")
-        @js.native
-        def create(cipherParams: PartialCipherParams): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+        @scala.inline
+        def create(cipherParams: PartialCipherParams): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cipherParams.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
       }
       
       object Hasher {
+        
+        @JSGlobal("CryptoJS.lib.Hasher")
+        @js.native
+        val ^ : js.Any = js.native
         
         /**
           * Creates a shortcut function to a hasher's object interface.
@@ -683,9 +688,8 @@ object global {
           *
           *     var SHA256 = CryptoJS.lib.Hasher._createHelper(CryptoJS.algo.SHA256);
           */
-        @JSGlobal("CryptoJS.lib.Hasher._createHelper")
-        @js.native
-        def createHelper(hasher: HasherStatic): HasherHelper = js.native
+        @scala.inline
+        def createHelper(hasher: HasherStatic): HasherHelper = ^.asInstanceOf[js.Dynamic].applyDynamic("_createHelper")(hasher.asInstanceOf[js.Any]).asInstanceOf[HasherHelper]
         
         /**
           * Creates a shortcut function to the HMAC's object interface.
@@ -698,9 +702,8 @@ object global {
           *
           *     var HmacSHA256 = CryptoJS.lib.Hasher._createHmacHelper(CryptoJS.algo.SHA256);
           */
-        @JSGlobal("CryptoJS.lib.Hasher._createHmacHelper")
-        @js.native
-        def createHmacHelper(hasher: HasherStatic): HmacHasherHelper = js.native
+        @scala.inline
+        def createHmacHelper(hasher: HasherStatic): HmacHasherHelper = ^.asInstanceOf[js.Dynamic].applyDynamic("_createHmacHelper")(hasher.asInstanceOf[js.Any]).asInstanceOf[HmacHasherHelper]
       }
       
       /**
@@ -709,12 +712,14 @@ object global {
         */
       object PasswordBasedCipher {
         
-        @JSGlobal("CryptoJS.lib.PasswordBasedCipher.decrypt")
+        @JSGlobal("CryptoJS.lib.PasswordBasedCipher")
         @js.native
-        def decrypt(cipher: CipherStatic, ciphertext: String, password: String): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
-        @JSGlobal("CryptoJS.lib.PasswordBasedCipher.decrypt")
-        @js.native
-        def decrypt(cipher: CipherStatic, ciphertext: String, password: String, cfg: CipherOption): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+        val ^ : js.Any = js.native
+        
+        @scala.inline
+        def decrypt(cipher: CipherStatic, ciphertext: String, password: String): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
+        @scala.inline
+        def decrypt(cipher: CipherStatic, ciphertext: String, password: String, cfg: CipherOption): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], password.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
         /**
           * Decrypts serialized ciphertext using a password.
           *
@@ -730,28 +735,24 @@ object global {
           *     var plaintext = CryptoJS.lib.PasswordBasedCipher.decrypt(CryptoJS.algo.AES, formattedCiphertext, 'password', { format: CryptoJS.format.OpenSSL });
           *     var plaintext = CryptoJS.lib.PasswordBasedCipher.decrypt(CryptoJS.algo.AES, ciphertextParams, 'password', { format: CryptoJS.format.OpenSSL });
           */
-        @JSGlobal("CryptoJS.lib.PasswordBasedCipher.decrypt")
-        @js.native
+        @scala.inline
         def decrypt(
           cipher: CipherStatic,
           ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams,
           password: String
-        ): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
-        @JSGlobal("CryptoJS.lib.PasswordBasedCipher.decrypt")
-        @js.native
+        ): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
+        @scala.inline
         def decrypt(
           cipher: CipherStatic,
           ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams,
           password: String,
           cfg: CipherOption
-        ): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+        ): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], password.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
         
-        @JSGlobal("CryptoJS.lib.PasswordBasedCipher.encrypt")
-        @js.native
-        def encrypt(cipher: CipherStatic, message: String, password: String): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-        @JSGlobal("CryptoJS.lib.PasswordBasedCipher.encrypt")
-        @js.native
-        def encrypt(cipher: CipherStatic, message: String, password: String, cfg: CipherOption): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+        @scala.inline
+        def encrypt(cipher: CipherStatic, message: String, password: String): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+        @scala.inline
+        def encrypt(cipher: CipherStatic, message: String, password: String, cfg: CipherOption): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], password.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
         /**
           * Encrypts a message using a password.
           *
@@ -767,21 +768,19 @@ object global {
           *     var ciphertextParams = CryptoJS.lib.PasswordBasedCipher.encrypt(CryptoJS.algo.AES, message, 'password');
           *     var ciphertextParams = CryptoJS.lib.PasswordBasedCipher.encrypt(CryptoJS.algo.AES, message, 'password', { format: CryptoJS.format.OpenSSL });
           */
-        @JSGlobal("CryptoJS.lib.PasswordBasedCipher.encrypt")
-        @js.native
+        @scala.inline
         def encrypt(
           cipher: CipherStatic,
           message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
           password: String
-        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-        @JSGlobal("CryptoJS.lib.PasswordBasedCipher.encrypt")
-        @js.native
+        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+        @scala.inline
         def encrypt(
           cipher: CipherStatic,
           message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
           password: String,
           cfg: CipherOption
-        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], password.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
       }
       
       /**
@@ -789,17 +788,19 @@ object global {
         */
       object SerializableCipher {
         
-        @JSGlobal("CryptoJS.lib.SerializableCipher.decrypt")
+        @JSGlobal("CryptoJS.lib.SerializableCipher")
         @js.native
-        def decrypt(cipher: CipherStatic, ciphertext: String, key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-        @JSGlobal("CryptoJS.lib.SerializableCipher.decrypt")
-        @js.native
+        val ^ : js.Any = js.native
+        
+        @scala.inline
+        def decrypt(cipher: CipherStatic, ciphertext: String, key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+        @scala.inline
         def decrypt(
           cipher: CipherStatic,
           ciphertext: String,
           key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
           cfg: CipherOption
-        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
         /**
           * Decrypts serialized ciphertext.
           *
@@ -815,33 +816,29 @@ object global {
           *     var plaintext = CryptoJS.lib.SerializableCipher.decrypt(CryptoJS.algo.AES, formattedCiphertext, key, { iv: iv, format: CryptoJS.format.OpenSSL });
           *     var plaintext = CryptoJS.lib.SerializableCipher.decrypt(CryptoJS.algo.AES, ciphertextParams, key, { iv: iv, format: CryptoJS.format.OpenSSL });
           */
-        @JSGlobal("CryptoJS.lib.SerializableCipher.decrypt")
-        @js.native
+        @scala.inline
         def decrypt(
           cipher: CipherStatic,
           ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
           key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray
-        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-        @JSGlobal("CryptoJS.lib.SerializableCipher.decrypt")
-        @js.native
+        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+        @scala.inline
         def decrypt(
           cipher: CipherStatic,
           ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
           key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
           cfg: CipherOption
-        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
         
-        @JSGlobal("CryptoJS.lib.SerializableCipher.encrypt")
-        @js.native
-        def encrypt(cipher: CipherStatic, message: String, key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-        @JSGlobal("CryptoJS.lib.SerializableCipher.encrypt")
-        @js.native
+        @scala.inline
+        def encrypt(cipher: CipherStatic, message: String, key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+        @scala.inline
         def encrypt(
           cipher: CipherStatic,
           message: String,
           key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
           cfg: CipherOption
-        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
         /**
           * Encrypts a message.
           *
@@ -858,25 +855,22 @@ object global {
           *     var ciphertextParams = CryptoJS.lib.SerializableCipher.encrypt(CryptoJS.algo.AES, message, key, { iv: iv });
           *     var ciphertextParams = CryptoJS.lib.SerializableCipher.encrypt(CryptoJS.algo.AES, message, key, { iv: iv, format: CryptoJS.format.OpenSSL });
           */
-        @JSGlobal("CryptoJS.lib.SerializableCipher.encrypt")
-        @js.native
+        @scala.inline
         def encrypt(
           cipher: CipherStatic,
           message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
           key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray
-        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-        @JSGlobal("CryptoJS.lib.SerializableCipher.encrypt")
-        @js.native
+        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+        @scala.inline
         def encrypt(
           cipher: CipherStatic,
           message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
           key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
           cfg: CipherOption
-        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+        ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
         
-        @JSGlobal("CryptoJS.lib.SerializableCipher._parse")
-        @js.native
-        def parse(ciphertext: String, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+        @scala.inline
+        def parse(ciphertext: String, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("_parse")(ciphertext.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
         /**
           * Converts serialized ciphertext to CipherParams,
           * else assumed CipherParams already and returns ciphertext unchanged.
@@ -890,9 +884,8 @@ object global {
           *
           *     var ciphertextParams = CryptoJS.lib.SerializableCipher._parse(ciphertextStringOrParams, format);
           */
-        @JSGlobal("CryptoJS.lib.SerializableCipher._parse")
-        @js.native
-        def parse(ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+        @scala.inline
+        def parse(ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("_parse")(ciphertext.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
       }
       
       /**
@@ -937,6 +930,10 @@ object global {
       }
       object WordArray {
         
+        @JSGlobal("CryptoJS.lib.WordArray")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Initializes a newly created word array.
           *
@@ -949,18 +946,14 @@ object global {
           *     var wordArray = CryptoJS.lib.WordArray.create([0x00010203, 0x04050607]);
           *     var wordArray = CryptoJS.lib.WordArray.create([0x00010203, 0x04050607], 6);
           */
-        @JSGlobal("CryptoJS.lib.WordArray.create")
-        @js.native
-        def create(): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
-        @JSGlobal("CryptoJS.lib.WordArray.create")
-        @js.native
-        def create(words: js.UndefOr[scala.Nothing], sigBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
-        @JSGlobal("CryptoJS.lib.WordArray.create")
-        @js.native
-        def create(words: js.Array[Double]): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
-        @JSGlobal("CryptoJS.lib.WordArray.create")
-        @js.native
-        def create(words: js.Array[Double], sigBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+        @scala.inline
+        def create(): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
+        @scala.inline
+        def create(words: js.Array[Double]): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
+        @scala.inline
+        def create(words: js.Array[Double], sigBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
+        @scala.inline
+        def create(words: Unit, sigBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
         
         /**
           * Creates a word array filled with random bytes.
@@ -973,16 +966,17 @@ object global {
           *
           *     var wordArray = CryptoJS.lib.WordArray.random(16);
           */
-        @JSGlobal("CryptoJS.lib.WordArray.random")
-        @js.native
-        def random(nBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+        @scala.inline
+        def random(nBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(nBytes.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
       }
       
       /**
         * Abstract base stream cipher template.
         */
       @js.native
-      trait StreamCipher extends Cipher {
+      trait StreamCipher
+        extends StObject
+           with Cipher {
         
         /**
           * The number of 32-bit words this cipher operates on. Default: 1 (32 bits)
@@ -1089,7 +1083,6 @@ object global {
       /**
         * A 64-bit word.
         */
-      @js.native
       trait Word extends StObject {
         
         /**
@@ -1103,7 +1096,7 @@ object global {
           *
           *     var added = x64Word.add(anotherX64Word);
           */
-        def add(word: X64Word): X64Word = js.native
+        def add(word: X64Word): X64Word
         
         /**
           * Bitwise ANDs this word with the passed word.
@@ -1116,7 +1109,7 @@ object global {
           *
           *     var anded = x64Word.and(anotherX64Word);
           */
-        def and(word: X64Word): X64Word = js.native
+        def and(word: X64Word): X64Word
         
         /**
           * Bitwise NOTs this word.
@@ -1127,7 +1120,7 @@ object global {
           *
           *     var negated = x64Word.not();
           */
-        def not(): X64Word = js.native
+        def not(): X64Word
         
         /**
           * Bitwise ORs this word with the passed word.
@@ -1140,7 +1133,7 @@ object global {
           *
           *     var ored = x64Word.or(anotherX64Word);
           */
-        def or(word: X64Word): X64Word = js.native
+        def or(word: X64Word): X64Word
         
         /**
           * Rotates this word n bits to the left.
@@ -1153,7 +1146,7 @@ object global {
           *
           *     var rotated = x64Word.rotL(25);
           */
-        def rotL(n: Double): X64Word = js.native
+        def rotL(n: Double): X64Word
         
         /**
           * Rotates this word n bits to the right.
@@ -1166,7 +1159,7 @@ object global {
           *
           *     var rotated = x64Word.rotR(7);
           */
-        def rotR(n: Double): X64Word = js.native
+        def rotR(n: Double): X64Word
         
         /**
           * Shifts this word n bits to the left.
@@ -1179,7 +1172,7 @@ object global {
           *
           *     var shifted = x64Word.shiftL(25);
           */
-        def shiftL(n: Double): X64Word = js.native
+        def shiftL(n: Double): X64Word
         
         /**
           * Shifts this word n bits to the right.
@@ -1192,7 +1185,7 @@ object global {
           *
           *     var shifted = x64Word.shiftR(7);
           */
-        def shiftR(n: Double): X64Word = js.native
+        def shiftR(n: Double): X64Word
         
         /**
           * Bitwise XORs this word with the passed word.
@@ -1205,7 +1198,7 @@ object global {
           *
           *     var xored = x64Word.xor(anotherX64Word);
           */
-        def xor(word: X64Word): X64Word = js.native
+        def xor(word: X64Word): X64Word
       }
       object Word {
         
@@ -1225,6 +1218,10 @@ object global {
           __obj.asInstanceOf[Word]
         }
         
+        @JSGlobal("CryptoJS.x64.Word")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Initializes a newly created 64-bit word.
           *
@@ -1235,9 +1232,8 @@ object global {
           *
           *     var x64Word = CryptoJS.x64.Word.create(0x00010203, 0x04050607);
           */
-        @JSGlobal("CryptoJS.x64.Word.create")
-        @js.native
-        def create(high: Double, low: Double): X64Word = js.native
+        @scala.inline
+        def create(high: Double, low: Double): X64Word = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(high.asInstanceOf[js.Any], low.asInstanceOf[js.Any])).asInstanceOf[X64Word]
         
         @scala.inline
         implicit class WordMutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
@@ -1293,18 +1289,18 @@ object global {
         */
       object WordArray {
         
-        @JSGlobal("CryptoJS.x64.WordArray.create")
+        @JSGlobal("CryptoJS.x64.WordArray")
         @js.native
-        def create(): X64WordArray = js.native
-        @JSGlobal("CryptoJS.x64.WordArray.create")
-        @js.native
-        def create(words: js.UndefOr[scala.Nothing], sigBytes: Double): X64WordArray = js.native
-        @JSGlobal("CryptoJS.x64.WordArray.create")
-        @js.native
-        def create(words: js.Array[X64WordArray]): X64WordArray = js.native
-        @JSGlobal("CryptoJS.x64.WordArray.create")
-        @js.native
-        def create(words: js.Array[X64WordArray], sigBytes: Double): X64WordArray = js.native
+        val ^ : js.Any = js.native
+        
+        @scala.inline
+        def create(): X64WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[X64WordArray]
+        @scala.inline
+        def create(words: js.Array[X64WordArray]): X64WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any]).asInstanceOf[X64WordArray]
+        @scala.inline
+        def create(words: js.Array[X64WordArray], sigBytes: Double): X64WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[X64WordArray]
+        @scala.inline
+        def create(words: Unit, sigBytes: Double): X64WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[X64WordArray]
       }
     }
   }

@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCustomActionTypeInput extends StObject {
   
   /**
     * The category of the custom action that you want to delete, such as source or deploy.
     */
-  var category: ActionCategory = js.native
+  var category: ActionCategory
   
   /**
     * The provider of the service used in the custom action, such as AWS CodeDeploy.
     */
-  var provider: ActionProvider = js.native
+  var provider: ActionProvider
   
   /**
     * The version of the custom action to delete.
     */
-  var version: Version = js.native
+  var version: Version
 }
 object DeleteCustomActionTypeInput {
   

@@ -6,104 +6,103 @@ import typings.std.RegExp
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.highlightJs.CompiledMode because var conflicts: compiled, contains, keywords. Inlined className, returnBegin, __beforeBegin, beginKeywords, end, onColonend, excludeBegin, lexemes, onColonbegin, endsParent, parent, subLanguage, relevance, variants, skip, excludeEnd, cached_variants, label, starts, begin, endSameAsBegin, endsWithParent, returnEnd, illegal, data, terminator_end, keywordPatternRe, beginRe, endRe, illegalRe, matcher */ @js.native
-trait CompiledLanguage extends LanguageDetail {
+- typings.highlightJs.CompiledMode because var conflicts: compiled, contains, keywords. Inlined className, returnBegin, __beforeBegin, beginKeywords, end, onColonend, excludeBegin, lexemes, onColonbegin, endsParent, parent, subLanguage, relevance, variants, skip, excludeEnd, cached_variants, label, starts, begin, endSameAsBegin, endsWithParent, returnEnd, illegal, data, terminator_end, keywordPatternRe, beginRe, endRe, illegalRe, matcher */ trait CompiledLanguage
+  extends StObject
+     with LanguageDetail {
   
-  var __beforeBegin: js.UndefOr[js.Function] = js.native
+  var __beforeBegin: js.UndefOr[js.Function] = js.undefined
   
-  var begin: js.UndefOr[RegExp | String] = js.native
+  var begin: js.UndefOr[RegExp | String] = js.undefined
   
-  var beginKeywords: js.UndefOr[String] = js.native
+  var beginKeywords: js.UndefOr[String] = js.undefined
   
-  var beginRe: RegExp = js.native
+  var beginRe: RegExp
   
-  var cached_variants: js.UndefOr[js.Array[Mode]] = js.native
+  var cached_variants: js.UndefOr[js.Array[Mode]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   @JSName("compiled")
-  var compiled_CompiledLanguage: `true` = js.native
+  var compiled_CompiledLanguage: `true`
   
   @JSName("contains")
-  var contains_CompiledLanguage: js.Array[CompiledMode] = js.native
+  var contains_CompiledLanguage: js.Array[CompiledMode]
   
-  var data: Record[String, _] = js.native
+  var data: Record[String, js.Any]
   
-  var end: js.UndefOr[RegExp | String] = js.native
+  var end: js.UndefOr[RegExp | String] = js.undefined
   
-  var endRe: RegExp = js.native
+  var endRe: RegExp
   
-  var endSameAsBegin: js.UndefOr[Boolean] = js.native
+  var endSameAsBegin: js.UndefOr[Boolean] = js.undefined
   
-  var endsParent: js.UndefOr[Boolean] = js.native
+  var endsParent: js.UndefOr[Boolean] = js.undefined
   
-  var endsWithParent: js.UndefOr[Boolean] = js.native
+  var endsWithParent: js.UndefOr[Boolean] = js.undefined
   
-  var excludeBegin: js.UndefOr[Boolean] = js.native
+  var excludeBegin: js.UndefOr[Boolean] = js.undefined
   
-  var excludeEnd: js.UndefOr[Boolean] = js.native
+  var excludeEnd: js.UndefOr[Boolean] = js.undefined
   
-  var illegal: js.UndefOr[String | RegExp] = js.native
+  var illegal: js.UndefOr[String | RegExp] = js.undefined
   
-  var illegalRe: RegExp = js.native
+  var illegalRe: RegExp
   
-  var keywordPatternRe: RegExp = js.native
+  var keywordPatternRe: RegExp
   
   @JSName("keywords")
-  var keywords_CompiledLanguage: Record[String, _] = js.native
+  var keywords_CompiledLanguage: Record[String, js.Any]
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var lexemes: js.UndefOr[String | RegExp] = js.native
+  var lexemes: js.UndefOr[String | RegExp] = js.undefined
   
-  var matcher: js.Any = js.native
+  var matcher: js.Any
   
   @JSName("on:begin")
-  var onColonbegin: js.UndefOr[ModeCallback] = js.native
+  var onColonbegin: js.UndefOr[ModeCallback] = js.undefined
   
   @JSName("on:end")
-  var onColonend: js.UndefOr[js.Function] = js.native
+  var onColonend: js.UndefOr[js.Function] = js.undefined
   
-  var parent: js.UndefOr[Mode] with js.UndefOr[CompiledMode] = js.native
+  var parent: js.UndefOr[Mode] & js.UndefOr[CompiledMode]
   
-  var relevance: js.UndefOr[Double] = js.native
+  var relevance: js.UndefOr[Double] = js.undefined
   
-  var returnBegin: js.UndefOr[Boolean] = js.native
+  var returnBegin: js.UndefOr[Boolean] = js.undefined
   
-  var returnEnd: js.UndefOr[Boolean] = js.native
+  var returnEnd: js.UndefOr[Boolean] = js.undefined
   
-  var skip: js.UndefOr[Boolean] = js.native
+  var skip: js.UndefOr[Boolean] = js.undefined
   
-  var starts: js.UndefOr[Mode] with js.UndefOr[CompiledMode] = js.native
+  var starts: js.UndefOr[Mode] & js.UndefOr[CompiledMode]
   
-  var subLanguage: js.UndefOr[String | js.Array[String]] = js.native
+  var subLanguage: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var terminator_end: String = js.native
+  var terminator_end: String
   
-  var variants: js.UndefOr[js.Array[Mode]] = js.native
+  var variants: js.UndefOr[js.Array[Mode]] = js.undefined
 }
 object CompiledLanguage {
   
   @scala.inline
   def apply(
     beginRe: RegExp,
-    compiled: `true`,
     contains: js.Array[CompiledMode],
-    data: Record[String, _],
+    data: Record[String, js.Any],
     endRe: RegExp,
     illegalRe: RegExp,
     keywordPatternRe: RegExp,
-    keywords: Record[String, _],
+    keywords: Record[String, js.Any],
     matcher: js.Any,
-    parent: js.UndefOr[Mode] with js.UndefOr[CompiledMode],
-    starts: js.UndefOr[Mode] with js.UndefOr[CompiledMode],
+    parent: js.UndefOr[Mode] & js.UndefOr[CompiledMode],
+    starts: js.UndefOr[Mode] & js.UndefOr[CompiledMode],
     terminator_end: String
   ): CompiledLanguage = {
-    val __obj = js.Dynamic.literal(beginRe = beginRe.asInstanceOf[js.Any], compiled = compiled.asInstanceOf[js.Any], contains = contains.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], endRe = endRe.asInstanceOf[js.Any], illegalRe = illegalRe.asInstanceOf[js.Any], keywordPatternRe = keywordPatternRe.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], matcher = matcher.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], starts = starts.asInstanceOf[js.Any], terminator_end = terminator_end.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(beginRe = beginRe.asInstanceOf[js.Any], compiled = true, contains = contains.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], endRe = endRe.asInstanceOf[js.Any], illegalRe = illegalRe.asInstanceOf[js.Any], keywordPatternRe = keywordPatternRe.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], matcher = matcher.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], starts = starts.asInstanceOf[js.Any], terminator_end = terminator_end.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompiledLanguage]
   }
   
@@ -150,7 +149,7 @@ object CompiledLanguage {
     def setContainsVarargs(value: CompiledMode*): Self = StObject.set(x, "contains", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: Record[String, _]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEnd(value: RegExp | String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
@@ -204,7 +203,7 @@ object CompiledLanguage {
     def setKeywordPatternRe(value: RegExp): Self = StObject.set(x, "keywordPatternRe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: Record[String, _]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    def setKeywords(value: Record[String, js.Any]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
@@ -234,7 +233,7 @@ object CompiledLanguage {
     def setOnColonendUndefined: Self = StObject.set(x, "on:end", js.undefined)
     
     @scala.inline
-    def setParent(value: js.UndefOr[Mode] with js.UndefOr[CompiledMode]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    def setParent(value: js.UndefOr[Mode] & js.UndefOr[CompiledMode]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
@@ -261,7 +260,7 @@ object CompiledLanguage {
     def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     @scala.inline
-    def setStarts(value: js.UndefOr[Mode] with js.UndefOr[CompiledMode]): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
+    def setStarts(value: js.UndefOr[Mode] & js.UndefOr[CompiledMode]): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSubLanguage(value: String | js.Array[String]): Self = StObject.set(x, "subLanguage", value.asInstanceOf[js.Any])

@@ -2,96 +2,94 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxCurrentSelectionItem...
   */
-@js.native
 trait INxCurrentSelectionItem extends StObject {
   
   /**
     * Name of the field that is selected.
     */
-  var qField: String = js.native
+  var qField: String
   
   /**
     * Optional parameter. This parameter is displayed if its value is true.
     * Is set to true if the field is a numeric.
     */
-  var qIsNum: js.UndefOr[Boolean] = js.native
+  var qIsNum: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional parameter. This parameter is displayed if its value is true.
     * Is set to true if the field is locked.
     */
-  var qLocked: js.UndefOr[Boolean] = js.native
+  var qLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Information about the fields that are not selected.
     */
-  var qNotSelectedFieldSelectionInfo: js.Array[INxFieldSelectionInfo] = js.native
+  var qNotSelectedFieldSelectionInfo: js.Array[INxFieldSelectionInfo]
   
   /**
     * Optional parameter. This parameter is displayed if its value is true.
     * Property that is set to a field. Is set to true if the field cannot be unselected.
     */
-  var qOneAndOnlyOne: js.UndefOr[Boolean] = js.native
+  var qOneAndOnlyOne: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Information about the range of selected values.
     * Is empty if there is no range of selected values.
     */
-  var qRangeInfo: js.Array[IRangeSelectInfo] = js.native
+  var qRangeInfo: js.Array[IRangeSelectInfo]
   
   /**
     * Label that, if defined, is displayed in current selections instead of the actual expression.
     */
-  var qReadableName: String = js.native
+  var qReadableName: String
   
   /**
     * Values that are selected.
     */
-  var qSelected: String = js.native
+  var qSelected: String
   
   /**
     * Number of values that are selected.
     */
-  var qSelectedCount: Double = js.native
+  var qSelectedCount: Double
   
   /**
     * Information about the fields that are selected.
     */
-  var qSelectedFieldSelectionInfo: js.Array[INxFieldSelectionInfo] = js.native
+  var qSelectedFieldSelectionInfo: js.Array[INxFieldSelectionInfo]
   
   /**
     * Maximum values to show in the current selections.
     * >> The default value is 6.
     */
-  var qSelectionThreshold: Double = js.native
+  var qSelectionThreshold: Double
   
   /**
     * Sort index of the field. Indexing starts from 0.
     */
-  var qSortIndex: Double = js.native
+  var qSortIndex: Double
   
   /**
     * Number of values in a particular state.
     */
-  var qStateCounts: INxStateCounts = js.native
+  var qStateCounts: INxStateCounts
   
   /**
     * Optional parameter.
     * Text that was used for the search.
     * This parameter is filled when searching for a value and selecting it.
     */
-  var qTextSearch: js.UndefOr[String] = js.native
+  var qTextSearch: js.UndefOr[String] = js.undefined
   
   /**
     * Number of values in the field.
     */
-  var qTotal: Double = js.native
+  var qTotal: Double
 }
 object INxCurrentSelectionItem {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRdsDbInstancesResult extends StObject {
   
   /**
     * An a array of RdsDbInstance objects that describe the instances.
     */
-  var RdsDbInstances: js.UndefOr[typings.awsSdk.opsworksMod.RdsDbInstances] = js.native
+  var RdsDbInstances: js.UndefOr[typings.awsSdk.opsworksMod.RdsDbInstances] = js.undefined
 }
 object DescribeRdsDbInstancesResult {
   

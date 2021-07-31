@@ -2,36 +2,34 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAggregateDiscoveredResourceCountsRequest extends StObject {
   
   /**
     * The name of the configuration aggregator.
     */
-  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName = js.native
+  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName
   
   /**
     * Filters the results based on the ResourceCountFilters object.
     */
-  var Filters: js.UndefOr[ResourceCountFilters] = js.native
+  var Filters: js.UndefOr[ResourceCountFilters] = js.undefined
   
   /**
     * The key to group the resource counts.
     */
-  var GroupByKey: js.UndefOr[ResourceCountGroupKey] = js.native
+  var GroupByKey: js.UndefOr[ResourceCountGroupKey] = js.undefined
   
   /**
     * The maximum number of GroupedResourceCount objects returned on each page. The default is 1000. You cannot specify a number greater than 1000. If you specify 0, AWS Config uses the default.
     */
-  var Limit: js.UndefOr[GroupByAPILimit] = js.native
+  var Limit: js.UndefOr[GroupByAPILimit] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
 }
 object GetAggregateDiscoveredResourceCountsRequest {
   

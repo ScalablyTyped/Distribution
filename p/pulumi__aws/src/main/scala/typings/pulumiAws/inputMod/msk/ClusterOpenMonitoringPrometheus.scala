@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.msk
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOpenMonitoringPrometheus extends StObject {
   
   /**
     * Configuration block for JMX Exporter. See below.
     */
-  var jmxExporter: js.UndefOr[Input[ClusterOpenMonitoringPrometheusJmxExporter]] = js.native
+  var jmxExporter: js.UndefOr[Input[ClusterOpenMonitoringPrometheusJmxExporter]] = js.undefined
   
   /**
     * Configuration block for Node Exporter. See below.
     */
-  var nodeExporter: js.UndefOr[Input[ClusterOpenMonitoringPrometheusNodeExporter]] = js.native
+  var nodeExporter: js.UndefOr[Input[ClusterOpenMonitoringPrometheusNodeExporter]] = js.undefined
 }
 object ClusterOpenMonitoringPrometheus {
   

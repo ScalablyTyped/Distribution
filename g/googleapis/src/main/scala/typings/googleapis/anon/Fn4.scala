@@ -7,7 +7,6 @@ import typings.googleapis.googleapisStrings.directory_v1
 import typings.googleapis.googleapisStrings.reports_v1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appengineMod {
+  
+  @JSImport("googleapis/build/src/apis/appengine", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -89,24 +92,21 @@ object appengineMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/appengine", "appengine")
-  @js.native
-  def appengine(options: Options): Appengine = js.native
-  @JSImport("googleapis/build/src/apis/appengine", "appengine")
-  @js.native
-  def appengine(options: typings.googleapis.appengineV1betaMod.appengineV1beta.Options): typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine = js.native
-  @JSImport("googleapis/build/src/apis/appengine", "appengine")
-  @js.native
-  def appengine(options: typings.googleapis.v1alphaMod.appengineV1alpha.Options): typings.googleapis.v1alphaMod.appengineV1alpha.Appengine = js.native
-  @JSImport("googleapis/build/src/apis/appengine", "appengine")
-  @js.native
-  def appengine_v1(version: v1): Appengine = js.native
-  @JSImport("googleapis/build/src/apis/appengine", "appengine")
-  @js.native
-  def appengine_v1alpha(version: v1alpha): typings.googleapis.v1alphaMod.appengineV1alpha.Appengine = js.native
-  @JSImport("googleapis/build/src/apis/appengine", "appengine")
-  @js.native
-  def appengine_v1beta(version: v1beta): typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine = js.native
+  @scala.inline
+  def appengine(options: Options): Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(options.asInstanceOf[js.Any]).asInstanceOf[Appengine]
+  @scala.inline
+  def appengine(options: typings.googleapis.appengineV1betaMod.appengineV1beta.Options): typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine]
+  @scala.inline
+  def appengine(options: typings.googleapis.v1alphaMod.appengineV1alpha.Options): typings.googleapis.v1alphaMod.appengineV1alpha.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alphaMod.appengineV1alpha.Appengine]
+  
+  @scala.inline
+  def appengine_v1(version: v1): Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(version.asInstanceOf[js.Any]).asInstanceOf[Appengine]
+  
+  @scala.inline
+  def appengine_v1alpha(version: v1alpha): typings.googleapis.v1alphaMod.appengineV1alpha.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alphaMod.appengineV1alpha.Appengine]
+  
+  @scala.inline
+  def appengine_v1beta(version: v1beta): typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine]
   
   object auth extends Shortcut {
     
@@ -137,9 +137,12 @@ object appengineMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/appengine", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/appengine", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

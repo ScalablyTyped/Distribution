@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildOptions extends StObject {
   
   /**
@@ -13,56 +11,56 @@ trait BuildOptions extends StObject {
     * this is the minimum disk size that will be allocated for the build -- the build may run with a larger disk than requested. At present, the maximum disk size is 1000GB; builds that
     * request more than the maximum are rejected with an error.
     */
-  var diskSizeGb: js.UndefOr[String] = js.native
+  var diskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * Option to specify whether or not to apply bash style string operations to the substitutions. NOTE: this is always enabled for triggered builds and cannot be overridden in the build
     * configuration file.
     */
-  var dynamicSubstitutions: js.UndefOr[Boolean] = js.native
+  var dynamicSubstitutions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of global environment variable definitions that will exist for all build steps in this build. If a variable is defined in both globally and in a build step, the variable will
     * use the build step value. The elements are of the form "KEY=VALUE" for the environment variable "KEY" being given the value "VALUE".
     */
-  var env: js.UndefOr[js.Array[String]] = js.native
+  var env: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Option to define build log streaming behavior to Google Cloud Storage. */
-  var logStreamingOption: js.UndefOr[String] = js.native
+  var logStreamingOption: js.UndefOr[String] = js.undefined
   
   /** Option to specify the logging mode, which determines if and where build logs are stored. */
-  var logging: js.UndefOr[String] = js.native
+  var logging: js.UndefOr[String] = js.undefined
   
   /** Compute Engine machine type on which to run the build. */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /** Requested verifiability options. */
-  var requestedVerifyOption: js.UndefOr[String] = js.native
+  var requestedVerifyOption: js.UndefOr[String] = js.undefined
   
   /**
     * A list of global environment variables, which are encrypted using a Cloud Key Management Service crypto key. These values must be specified in the build's `Secret`. These variables
     * will be available to all build steps in this build.
     */
-  var secretEnv: js.UndefOr[js.Array[String]] = js.native
+  var secretEnv: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requested hash for SourceProvenance. */
-  var sourceProvenanceHash: js.UndefOr[js.Array[String]] = js.native
+  var sourceProvenanceHash: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Option to specify behavior when there is an error in the substitution checks. NOTE: this is always set to ALLOW_LOOSE for triggered builds and cannot be overridden in the build
     * configuration file.
     */
-  var substitutionOption: js.UndefOr[String] = js.native
+  var substitutionOption: js.UndefOr[String] = js.undefined
   
   /**
     * Global list of volumes to mount for ALL build steps Each volume is created as an empty volume prior to starting the build process. Upon completion of the build, volumes and their
     * contents are discarded. Global volume names and paths cannot conflict with the volumes defined a build step. Using a global volume in a build with only one step is not valid as it
     * is indicative of a build request with an incorrect configuration.
     */
-  var volumes: js.UndefOr[js.Array[Volume]] = js.native
+  var volumes: js.UndefOr[js.Array[Volume]] = js.undefined
   
   /** Option to specify a `WorkerPool` for the build. Format: projects/{project}/locations/{location}/workerPools/{workerPool} This field is experimental. */
-  var workerPool: js.UndefOr[String] = js.native
+  var workerPool: js.UndefOr[String] = js.undefined
 }
 object BuildOptions {
   

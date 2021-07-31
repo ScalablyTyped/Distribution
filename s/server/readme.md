@@ -11,8 +11,8 @@ A modern and powerful server for Node.js
 | Full name          | server |
 | Keywords           | server, node.js, http, websocket, socket, async |
 | # releases         | 13 |
-| # dependents       | 31 |
-| # downloads        | 276460 |
+| # dependents       | 37 |
+| # downloads        | 397318 |
 | # stars            | 17 |
 
 ## Links

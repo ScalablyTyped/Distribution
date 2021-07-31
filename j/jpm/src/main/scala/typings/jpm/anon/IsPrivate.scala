@@ -3,23 +3,21 @@ package typings.jpm.anon
 import typings.jpm.FFAddonSDK.BrowserWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsPrivate extends StObject {
   
-  var isPrivate: js.UndefOr[Boolean] = js.native
+  var isPrivate: js.UndefOr[Boolean] = js.undefined
   
-  var onActivate: js.UndefOr[js.Function1[/* window */ BrowserWindow, _]] = js.native
+  var onActivate: js.UndefOr[js.Function1[/* window */ BrowserWindow, js.Any]] = js.undefined
   
-  var onClose: js.UndefOr[js.Function1[/* window */ BrowserWindow, _]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* window */ BrowserWindow, js.Any]] = js.undefined
   
-  var onDeactivate: js.UndefOr[js.Function1[/* window */ BrowserWindow, _]] = js.native
+  var onDeactivate: js.UndefOr[js.Function1[/* window */ BrowserWindow, js.Any]] = js.undefined
   
-  var onOpen: js.UndefOr[js.Function1[/* window */ BrowserWindow, _]] = js.native
+  var onOpen: js.UndefOr[js.Function1[/* window */ BrowserWindow, js.Any]] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object IsPrivate {
   
@@ -39,25 +37,25 @@ object IsPrivate {
     def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
     
     @scala.inline
-    def setOnActivate(value: /* window */ BrowserWindow => _): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
+    def setOnActivate(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
     
     @scala.inline
-    def setOnClose(value: /* window */ BrowserWindow => _): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    def setOnClose(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def setOnDeactivate(value: /* window */ BrowserWindow => _): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction1(value))
+    def setOnDeactivate(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
     
     @scala.inline
-    def setOnOpen(value: /* window */ BrowserWindow => _): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+    def setOnOpen(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)

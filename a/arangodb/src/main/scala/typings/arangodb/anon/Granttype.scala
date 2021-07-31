@@ -2,13 +2,11 @@ package typings.arangodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Granttype extends StObject {
   
-  var grant_type: js.UndefOr[String] = js.native
+  var grant_type: js.UndefOr[String] = js.undefined
 }
 object Granttype {
   

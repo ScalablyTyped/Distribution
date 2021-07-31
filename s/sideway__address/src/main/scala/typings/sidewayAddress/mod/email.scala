@@ -2,10 +2,13 @@ package typings.sidewayAddress.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object email {
+  
+  @JSImport("@sideway/address", "email")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Analyzes a string to verify it is a valid email address.
@@ -15,12 +18,10 @@ object email {
     * 
     * @return - undefined when valid, otherwise an object with single error key with a string message value.
     */
-  @JSImport("@sideway/address", "email.analyze")
-  @js.native
-  def analyze(email: String): Analysis | Null = js.native
-  @JSImport("@sideway/address", "email.analyze")
-  @js.native
-  def analyze(email: String, options: Options): Analysis | Null = js.native
+  @scala.inline
+  def analyze(email: String): Analysis | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(email.asInstanceOf[js.Any]).asInstanceOf[Analysis | Null]
+  @scala.inline
+  def analyze(email: String, options: Options): Analysis | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Analysis | Null]
   
   /**
     * Analyzes a string to verify it is a valid email address.
@@ -30,23 +31,21 @@ object email {
     * 
     * @return - true when valid, otherwise false.
     */
-  @JSImport("@sideway/address", "email.isValid")
-  @js.native
-  def isValid(email: String): Boolean = js.native
-  @JSImport("@sideway/address", "email.isValid")
-  @js.native
-  def isValid(email: String, options: Options): Boolean = js.native
+  @scala.inline
+  def isValid(email: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValid(email: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait Options
-    extends typings.sidewayAddress.mod.domain.Options {
+    extends StObject
+       with typings.sidewayAddress.mod.domain.Options {
     
     /**
       * Determines whether to ignore the standards maximum email length limit.
       * 
       * @default false
       */
-    val ignoreLength: js.UndefOr[Boolean] = js.native
+    val ignoreLength: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -3,16 +3,14 @@ package typings.babelPluginGlaze
 import typings.glaze.useStylingMod.ThemedStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait Attributes extends StObject {
     
-    var sx: js.UndefOr[ThemedStyle] = js.native
+    var sx: js.UndefOr[ThemedStyle] = js.undefined
   }
   object Attributes {
     

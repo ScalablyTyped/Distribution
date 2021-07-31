@@ -6,7 +6,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselMod {
@@ -37,32 +36,33 @@ object carouselMod {
     def onChange(index: Double): Unit = js.native
   }
   
-  @js.native
-  trait CarouselProps extends CarouselPropsType {
+  trait CarouselProps
+    extends StObject
+       with CarouselPropsType {
     
-    var afterChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.native
+    var afterChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.undefined
     
-    var beforeChange: js.UndefOr[js.Function2[/* from */ Double, /* to */ Double, Unit]] = js.native
+    var beforeChange: js.UndefOr[js.Function2[/* from */ Double, /* to */ Double, Unit]] = js.undefined
     
-    var cellSpacing: js.UndefOr[Double] = js.native
+    var cellSpacing: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dotActiveStyle: js.UndefOr[CSSProperties] = js.native
+    var dotActiveStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var dotStyle: js.UndefOr[CSSProperties] = js.native
+    var dotStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var easing: js.UndefOr[js.Function0[Unit]] = js.native
+    var easing: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var frameOverflow: js.UndefOr[IFrameOverFlow] = js.native
+    var frameOverflow: js.UndefOr[IFrameOverFlow] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var slideWidth: js.UndefOr[String | Double] = js.native
+    var slideWidth: js.UndefOr[String | Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var swipeSpeed: js.UndefOr[Double] = js.native
+    var swipeSpeed: js.UndefOr[Double] = js.undefined
   }
   object CarouselProps {
     
@@ -149,10 +149,9 @@ object carouselMod {
     }
   }
   
-  @js.native
   trait CarouselState extends StObject {
     
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
   }
   object CarouselState {
     

@@ -3,34 +3,32 @@ package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /** The friendly name for this location, typically a nearby city name. For example, "Tokyo". */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Cross-service attributes for the location. For example {"cloud.googleapis.com/region": "us-east1"} */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Location with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Location & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The canonical id for this location. For example: `"us-east1"`. */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /** Service-specific metadata. For example the available capacity at the given location. */
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Location with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Location & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Resource name for the location, which may vary between implementations. For example: `"projects/example-project/locations/us-east1"` */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Location {
   
@@ -53,7 +51,7 @@ object Location {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Location with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Location & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -69,7 +67,7 @@ object Location {
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Location with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Location & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline

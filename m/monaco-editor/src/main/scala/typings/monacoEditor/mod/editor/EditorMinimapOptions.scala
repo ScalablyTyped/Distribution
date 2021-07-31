@@ -9,26 +9,24 @@ import typings.monacoEditor.monacoEditorStrings.proportional
 import typings.monacoEditor.monacoEditorStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.IEditorMinimapOptions>> */
-@js.native
 trait EditorMinimapOptions extends StObject {
   
-  val enabled: Boolean = js.native
+  val enabled: Boolean
   
-  val maxColumn: Double = js.native
+  val maxColumn: Double
   
-  val renderCharacters: Boolean = js.native
+  val renderCharacters: Boolean
   
-  val scale: Double = js.native
+  val scale: Double
   
-  val showSlider: always | mouseover = js.native
+  val showSlider: always | mouseover
   
-  val side: right | left = js.native
+  val side: right | left
   
-  val size: proportional | fill | fit = js.native
+  val size: proportional | fill | fit
 }
 object EditorMinimapOptions {
   

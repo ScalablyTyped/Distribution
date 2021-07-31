@@ -3,22 +3,20 @@ package typings.googleapis.computeV1Mod.computeV1
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInterconnectAttachmentsScopedList extends StObject {
   
   /**
     * A list of interconnect attachments contained in this scope.
     */
-  var interconnectAttachments: js.UndefOr[js.Array[SchemaInterconnectAttachment]] = js.native
+  var interconnectAttachments: js.UndefOr[js.Array[SchemaInterconnectAttachment]] = js.undefined
   
   /**
     * Informational warning which replaces the list of addresses when the list
     * is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaInterconnectAttachmentsScopedList {
   

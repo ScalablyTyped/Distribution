@@ -2,21 +2,19 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFileSystemLustreResponse extends StObject {
   
   /**
     * The ID of the final backup for this file system.
     */
-  var FinalBackupId: js.UndefOr[BackupId] = js.native
+  var FinalBackupId: js.UndefOr[BackupId] = js.undefined
   
   /**
     * The set of tags applied to the final backup.
     */
-  var FinalBackupTags: js.UndefOr[Tags] = js.native
+  var FinalBackupTags: js.UndefOr[Tags] = js.undefined
 }
 object DeleteFileSystemLustreResponse {
   

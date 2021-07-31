@@ -2,10 +2,36 @@ package typings.activexMshtml.global.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MSHTML.IDOMNodeIterator")
 @js.native
 class IDOMNodeIterator protected ()
-  extends typings.activexMshtml.MSHTML.IDOMNodeIterator
+  extends StObject
+     with typings.activexMshtml.MSHTML.IDOMNodeIterator {
+  
+  /* CompleteClass */
+  override def Detach(): Unit = js.native
+  
+  /* CompleteClass */
+  @JSName("MSHTML.IDOMNodeIterator_typekey")
+  var MSHTMLDotIDOMNodeIterator_typekey: typings.activexMshtml.MSHTML.IDOMNodeIterator = js.native
+  
+  /* CompleteClass */
+  override val expandEntityReferences: Boolean = js.native
+  
+  /* CompleteClass */
+  override val filter: js.Any = js.native
+  
+  /* CompleteClass */
+  override def nextNode(): js.Any = js.native
+  
+  /* CompleteClass */
+  override def previousNode(): js.Any = js.native
+  
+  /* CompleteClass */
+  override val root: js.Any = js.native
+  
+  /* CompleteClass */
+  override val whatToShow: Double = js.native
+}

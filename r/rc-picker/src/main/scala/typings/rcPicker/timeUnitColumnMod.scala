@@ -4,29 +4,30 @@ import typings.react.mod.ReactText
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeUnitColumnMod {
   
-  @JSImport("rc-picker/es/panels/TimePanel/TimeUnitColumn", JSImport.Default)
+  @JSImport("rc-picker/es/panels/TimePanel/TimeUnitColumn", JSImport.Namespace)
   @js.native
-  def default(props: TimeUnitColumnProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: TimeUnitColumnProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait TimeUnitColumnProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var hideDisabledOptions: js.UndefOr[Boolean] = js.native
+    var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* value */ Double, scala.Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* value */ Double, scala.Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var units: js.UndefOr[js.Array[Unit]] = js.native
+    var units: js.UndefOr[js.Array[Unit]] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object TimeUnitColumnProps {
     
@@ -80,14 +81,13 @@ object timeUnitColumnMod {
     }
   }
   
-  @js.native
   trait Unit extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var label: ReactText = js.native
+    var label: ReactText
     
-    var value: Double = js.native
+    var value: Double
   }
   object Unit {
     

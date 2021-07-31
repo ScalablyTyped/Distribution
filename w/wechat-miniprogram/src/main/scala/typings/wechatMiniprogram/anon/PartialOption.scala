@@ -8,26 +8,24 @@ import typings.wechatMiniprogram.WechatMiniprogram.OnUnhandledRejectionCallback
 import typings.wechatMiniprogram.WechatMiniprogram.OnUnhandledRejectionCallbackResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<wechat-miniprogram.WechatMiniprogram.App.Option> */
-@js.native
 trait PartialOption extends StObject {
   
-  var onError: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.undefined
   
-  var onHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLaunch: js.UndefOr[js.Function1[/* options */ LaunchShowOption, Unit]] = js.native
+  var onLaunch: js.UndefOr[js.Function1[/* options */ LaunchShowOption, Unit]] = js.undefined
   
-  var onPageNotFound: js.UndefOr[js.Function1[/* options */ PageNotFoundOption, Unit]] = js.native
+  var onPageNotFound: js.UndefOr[js.Function1[/* options */ PageNotFoundOption, Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function1[/* options */ LaunchShowOption, Unit]] = js.native
+  var onShow: js.UndefOr[js.Function1[/* options */ LaunchShowOption, Unit]] = js.undefined
   
-  var onThemeChange: js.UndefOr[OnThemeChangeCallback] = js.native
+  var onThemeChange: js.UndefOr[OnThemeChangeCallback] = js.undefined
   
-  var onUnhandledRejection: js.UndefOr[OnUnhandledRejectionCallback] = js.native
+  var onUnhandledRejection: js.UndefOr[OnUnhandledRejectionCallback] = js.undefined
 }
 object PartialOption {
   

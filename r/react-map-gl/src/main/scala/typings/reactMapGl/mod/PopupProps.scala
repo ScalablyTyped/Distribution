@@ -3,37 +3,37 @@ package typings.reactMapGl.mod
 import typings.mapboxGl.mod.Anchor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupProps extends BaseControlProps {
+trait PopupProps
+  extends StObject
+     with BaseControlProps {
   
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
-  var anchor: js.UndefOr[Anchor] = js.native
+  var anchor: js.UndefOr[Anchor] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var closeButton: js.UndefOr[Boolean] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var dynamicPosition: js.UndefOr[Boolean] = js.native
+  var dynamicPosition: js.UndefOr[Boolean] = js.undefined
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var offsetLeft: js.UndefOr[Double] = js.native
+  var offsetLeft: js.UndefOr[Double] = js.undefined
   
-  var offsetTop: js.UndefOr[Double] = js.native
+  var offsetTop: js.UndefOr[Double] = js.undefined
   
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var sortByDepth: js.UndefOr[Boolean] = js.native
+  var sortByDepth: js.UndefOr[Boolean] = js.undefined
   
-  var tipSize: js.UndefOr[Double] = js.native
+  var tipSize: js.UndefOr[Double] = js.undefined
 }
 object PopupProps {
   

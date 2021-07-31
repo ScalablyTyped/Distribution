@@ -3,37 +3,37 @@ package typings.senchaTouch.Ext.chart
 import typings.senchaTouch.Ext.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPolarChart extends IAbstractChart {
+trait IPolarChart
+  extends StObject
+     with IAbstractChart {
   
   /** [Config Option] (Array) */
-  var center: js.UndefOr[Array] = js.native
+  var center: js.UndefOr[Array] = js.undefined
   
   /** [Method] Returns the value of center
     * @returns Array
     */
-  var getCenter: js.UndefOr[js.Function0[Array]] = js.native
+  var getCenter: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of radius
     * @returns Number
     */
-  var getRadius: js.UndefOr[js.Function0[Double]] = js.native
+  var getRadius: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Config Option] (Number) */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /** [Method] Sets the value of center
     * @param center Array The new value.
     */
-  var setCenter: js.UndefOr[js.Function1[/* center */ js.UndefOr[Array], Unit]] = js.native
+  var setCenter: js.UndefOr[js.Function1[/* center */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of radius
     * @param radius Number The new value.
     */
-  var setRadius: js.UndefOr[js.Function1[/* radius */ js.UndefOr[Double], Unit]] = js.native
+  var setRadius: js.UndefOr[js.Function1[/* radius */ js.UndefOr[Double], Unit]] = js.undefined
 }
 object IPolarChart {
   

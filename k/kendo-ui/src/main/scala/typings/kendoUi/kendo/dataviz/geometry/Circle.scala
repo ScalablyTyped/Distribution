@@ -3,11 +3,12 @@ package typings.kendoUi.kendo.dataviz.geometry
 import typings.kendoUi.kendo.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Circle extends Observable {
+trait Circle
+  extends StObject
+     with Observable {
   
   def bbox(matrix: typings.kendoUi.kendo.geometry.Matrix): typings.kendoUi.kendo.geometry.Rect = js.native
   

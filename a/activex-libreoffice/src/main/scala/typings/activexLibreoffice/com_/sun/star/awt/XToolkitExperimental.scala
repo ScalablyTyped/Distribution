@@ -10,27 +10,27 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Work in progress, don't use unless you know what you are doing. */
-@js.native
-trait XToolkitExperimental extends XToolkit2 {
+trait XToolkitExperimental
+  extends StObject
+     with XToolkit2 {
   
   /** Get the number of OpenGL buffer swaps. */
-  val OpenGLBufferSwapCounter: Double = js.native
+  val OpenGLBufferSwapCounter: Double
   
   /** Get the number of OpenGL buffer swaps. */
-  def getOpenGLBufferSwapCounter(): Double = js.native
+  def getOpenGLBufferSwapCounter(): Double
   
   /** Pause the main thread of LibreOffice for the requested amount of time. */
-  def pause(nMilliseconds: Double): Unit = js.native
+  def pause(nMilliseconds: Double): Unit
   
   /** Process all pending idle events */
-  def processEventsToIdle(): Unit = js.native
+  def processEventsToIdle(): Unit
   
   /** Turn on or off deterministic scheduling (off is the default). */
-  def setDeterministicScheduling(bDeterministicMode: Boolean): Unit = js.native
+  def setDeterministicScheduling(bDeterministicMode: Boolean): Unit
 }
 object XToolkitExperimental {
   

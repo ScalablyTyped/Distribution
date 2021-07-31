@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,21 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * To implement inaccurate name access, support the {@link com.sun.star.beans.XExactName} interface.
   * @see com.sun.star.beans.XExactName
   */
-@js.native
-trait XHierarchicalNameAccess extends XInterface {
+trait XHierarchicalNameAccess
+  extends StObject
+     with XInterface {
   
   /**
     * @param aName the name of the object.
     * @returns the object with the specified name.
     * @throws NoSuchElementException if an element under Name does not exist.
     */
-  def getByHierarchicalName(aName: String): js.Any = js.native
+  def getByHierarchicalName(aName: String): js.Any
   
   /**
     * @param aName the name of the object.
     * @returns `TRUE` if an element with this name is in the container, `FALSE` otherwise.  In many cases, the next call is {@link XNameAccess.getByName()} . Yo
     */
-  def hasByHierarchicalName(aName: String): Boolean = js.native
+  def hasByHierarchicalName(aName: String): Boolean
 }
 object XHierarchicalNameAccess {
   

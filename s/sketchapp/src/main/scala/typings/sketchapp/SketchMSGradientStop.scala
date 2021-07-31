@@ -3,23 +3,21 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.gradientStop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSGradientStop extends StObject {
   
-  var _class: gradientStop = js.native
+  var _class: gradientStop
   
-  var color: SketchMSColor = js.native
+  var color: SketchMSColor
   
-  var position: Double = js.native
+  var position: Double
 }
 object SketchMSGradientStop {
   
   @scala.inline
-  def apply(_class: gradientStop, color: SketchMSColor, position: Double): SketchMSGradientStop = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+  def apply(color: SketchMSColor, position: Double): SketchMSGradientStop = {
+    val __obj = js.Dynamic.literal(_class = "gradientStop", color = color.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSGradientStop]
   }
   

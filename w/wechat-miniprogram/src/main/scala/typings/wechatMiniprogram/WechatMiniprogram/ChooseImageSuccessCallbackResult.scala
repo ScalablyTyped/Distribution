@@ -2,21 +2,19 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseImageSuccessCallbackResult extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 图片的本地临时文件路径列表 (本地路径) */
-  var tempFilePaths: js.Array[String] = js.native
+  var tempFilePaths: js.Array[String]
   
   /** 图片的本地临时文件列表
     *
     * 最低基础库： `1.2.0` */
-  var tempFiles: js.Array[ImageFile] = js.native
+  var tempFiles: js.Array[ImageFile]
 }
 object ChooseImageSuccessCallbackResult {
   

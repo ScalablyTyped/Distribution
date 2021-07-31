@@ -2,14 +2,12 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a match condition that incoming traffic is evaluated against.
   * Exactly one field must be specified.
   */
-@js.native
 trait SchemaSecurityPolicyRuleMatcher extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaSecurityPolicyRuleMatcher extends StObject {
     * field must be specified if versioned_expr is specified and cannot be
     * specified if versioned_expr is not specified.
     */
-  var config: js.UndefOr[SchemaSecurityPolicyRuleMatcherConfig] = js.native
+  var config: js.UndefOr[SchemaSecurityPolicyRuleMatcherConfig] = js.undefined
   
   /**
     * Preconfigured versioned expression. If this field is specified, config
@@ -25,7 +23,7 @@ trait SchemaSecurityPolicyRuleMatcher extends StObject {
     * their requirements are: SRC_IPS_V1 - must specify the corresponding
     * src_ip_range field in config.
     */
-  var versionedExpr: js.UndefOr[String] = js.native
+  var versionedExpr: js.UndefOr[String] = js.undefined
 }
 object SchemaSecurityPolicyRuleMatcher {
   

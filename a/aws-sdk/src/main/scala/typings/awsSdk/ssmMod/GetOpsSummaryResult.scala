@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOpsSummaryResult extends StObject {
   
   /**
     * The list of aggregated and filtered OpsItems.
     */
-  var Entities: js.UndefOr[OpsEntityList] = js.native
+  var Entities: js.UndefOr[OpsEntityList] = js.undefined
   
   /**
     * The token for the next set of items to return. Use this token to get the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object GetOpsSummaryResult {
   

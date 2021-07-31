@@ -2,16 +2,14 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorSelectedEventUIParam extends StObject {
   
   /**
     * Used to get a reference to the color object.
     */
-  var color: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[js.Any] = js.undefined
 }
 object ColorSelectedEventUIParam {
   

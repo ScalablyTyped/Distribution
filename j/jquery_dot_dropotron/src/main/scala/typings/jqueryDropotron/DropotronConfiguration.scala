@@ -2,137 +2,135 @@ package typings.jqueryDropotron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropotronConfiguration extends StObject {
   
   /**
     * @summary IE Offset X.
     * @type {number}
     */
-  var IEOffsetX: Double = js.native
+  var IEOffsetX: Double
   
   /**
     * @summary IE Offset Y.
     * @type {number}
     */
-  var IEOffsetY: Double = js.native
+  var IEOffsetY: Double
   
   /**
     * @summary Alignment ("left", "center", "right").
     * @type {string}
     */
-  var alignment: String = js.native
+  var alignment: String
   
   /**
     * @summary Base Z-Index.
     * @type {number}
     */
-  var baseZIndex: Double = js.native
+  var baseZIndex: Double
   
   /**
     * @summary If true and detach = true, leave original menu intact.
     * @type {boolean}
     */
-  var cloneOnDetach: Boolean = js.native
+  var cloneOnDetach: Boolean
   
   /**
     * @summary Detach second level menus (prevents parent style bleed).
     * @type {boolean}
     */
-  var detach: Boolean = js.native
+  var detach: Boolean
   
   /**
     * @summary Easing mode ("swing", "linear").
     * @type {string}
     */
-  var easing: String = js.native
+  var easing: String
   
   /**
     * @summary Expansion mode ("hover" or "click").
     * @type {string}
     */
-  var expandMode: String = js.native
+  var expandMode: String
   
   /**
     * @summary Global offset Y.
     * @type {number}
     */
-  var globalOffsetY: Double = js.native
+  var globalOffsetY: Double
   
   /**
     * @summary Hide delay (in ms; 0 disables).
     * @type {number}
     */
-  var hideDelay: Double = js.native
+  var hideDelay: Double
   
   /**
     * @summary Hover delay (in ms).
     * @type {number}
     */
-  var hoverDelay: Double = js.native
+  var hoverDelay: Double
   
   /**
     * @summary Menu class (assigned to every <ul>).
     * @type {string}
     */
-  var menuClass: String = js.native
+  var menuClass: String
   
   /**
     * @summary Menu mode ("instant", "fade", "slide", "zoom").
     * @type {string}
     */
-  var mode: String = js.native
+  var mode: String
   
   /**
     * @summary If true and mode = "fade", prevents top-level opener fade.
     * @type {boolean}
     */
-  var noOpenerFade: Boolean = js.native
+  var noOpenerFade: Boolean
   
   /**
     * @summary Submenu offset X.
     * @type {number}
     */
-  var offsetX: Double = js.native
+  var offsetX: Double
   
   /**
     * @summary Submenu offset Y.
     * @type {number}
     */
-  var offsetY: Double = js.native
+  var offsetY: Double
   
   /**
     * @summary Active opener class.
     * @type {string}
     */
-  var openerActiveClass: String = js.native
+  var openerActiveClass: String
   
   /**
     * @summary Opener class.
     * @type {string}
     */
-  var openerClass: String = js.native
+  var openerClass: String
   
   /**
     * @summary Parent jQuery object.
     * @type {JQuery}
     */
-  var selectorParent: JQuery = js.native
+  var selectorParent: JQuery
   
   /**
     * @summary Menu speed ("fast", "slow", or ms).
     * @type {string}
     */
-  var speed: String = js.native
+  var speed: String
   
   /**
     * @summary Submenu class prefix.
     * @type {string}
     */
-  var submenuClassPrefix: String = js.native
+  var submenuClassPrefix: String
 }
 object DropotronConfiguration {
   

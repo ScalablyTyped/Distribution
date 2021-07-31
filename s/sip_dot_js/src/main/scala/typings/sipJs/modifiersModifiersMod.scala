@@ -4,40 +4,35 @@ import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerMo
 import typings.std.RTCSessionDescriptionInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modifiersModifiersMod {
   
-  @JSImport("sip.js/lib/platform/web/modifiers/modifiers", "addMidLines")
+  @JSImport("sip.js/lib/platform/web/modifiers/modifiers", JSImport.Namespace)
   @js.native
-  def addMidLines(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sip.js/lib/platform/web/modifiers/modifiers", "cleanJitsiSdpImageattr")
-  @js.native
-  def cleanJitsiSdpImageattr(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def addMidLines(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addMidLines")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
-  @JSImport("sip.js/lib/platform/web/modifiers/modifiers", "holdModifier")
-  @js.native
-  def holdModifier(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def cleanJitsiSdpImageattr(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanJitsiSdpImageattr")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
-  @JSImport("sip.js/lib/platform/web/modifiers/modifiers", "stripG722")
-  @js.native
-  def stripG722(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def holdModifier(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("holdModifier")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
-  @JSImport("sip.js/lib/platform/web/modifiers/modifiers", "stripRtpPayload")
-  @js.native
-  def stripRtpPayload(payload: String): SessionDescriptionHandlerModifier = js.native
+  @scala.inline
+  def stripG722(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripG722")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
-  @JSImport("sip.js/lib/platform/web/modifiers/modifiers", "stripTcpCandidates")
-  @js.native
-  def stripTcpCandidates(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def stripRtpPayload(payload: String): SessionDescriptionHandlerModifier = ^.asInstanceOf[js.Dynamic].applyDynamic("stripRtpPayload")(payload.asInstanceOf[js.Any]).asInstanceOf[SessionDescriptionHandlerModifier]
   
-  @JSImport("sip.js/lib/platform/web/modifiers/modifiers", "stripTelephoneEvent")
-  @js.native
-  def stripTelephoneEvent(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def stripTcpCandidates(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTcpCandidates")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
-  @JSImport("sip.js/lib/platform/web/modifiers/modifiers", "stripVideo")
-  @js.native
-  def stripVideo(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def stripTelephoneEvent(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTelephoneEvent")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
+  
+  @scala.inline
+  def stripVideo(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripVideo")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
 }

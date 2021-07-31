@@ -2,26 +2,24 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The metadata for a directory. Similar to the equivalent message in the
   * Remote Execution API.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteworkersV1test2DirectoryMetadata extends StObject {
   
   /**
     * A pointer to the contents of the directory, in the form of a marshalled
     * Directory message.
     */
-  var digest: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2Digest] = js.native
+  var digest: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2Digest] = js.undefined
   
   /**
     * The path of the directory, as in FileMetadata.path.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2DirectoryMetadata {
   

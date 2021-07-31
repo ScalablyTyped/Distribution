@@ -2,37 +2,35 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exception extends StObject {
   
   /**
     * An array of exception objects each of which is considered a cause of this exception.
     */
-  var innerExceptions: js.UndefOr[js.Array[Exception]] = js.native
+  var innerExceptions: js.UndefOr[js.Array[Exception]] = js.undefined
   
   /**
     * A string that identifies the kind of exception, for example, the fully qualified type name of an object that was
     * thrown, or the symbolic name of a signal.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A message that describes the exception.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the exception.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * The sequence of function calls leading to the exception.
     */
-  var stack: js.UndefOr[Stack] = js.native
+  var stack: js.UndefOr[Stack] = js.undefined
 }
 object Exception {
   

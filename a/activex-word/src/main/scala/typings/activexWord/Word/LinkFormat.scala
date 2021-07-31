@@ -2,38 +2,36 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkFormat extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var AutoUpdate: Boolean = js.native
+  var AutoUpdate: Boolean
   
-  def BreakLink(): Unit = js.native
+  def BreakLink(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var SavePictureWithDocument: Boolean = js.native
+  var SavePictureWithDocument: Boolean
   
-  var SourceFullName: String = js.native
+  var SourceFullName: String
   
-  val SourceName: String = js.native
+  val SourceName: String
   
-  val SourcePath: String = js.native
+  val SourcePath: String
   
-  val Type: WdLinkType = js.native
+  val Type: WdLinkType
   
-  def Update(): Unit = js.native
+  def Update(): Unit
   
   @JSName("Word.LinkFormat_typekey")
-  var WordDotLinkFormat_typekey: LinkFormat = js.native
+  var WordDotLinkFormat_typekey: LinkFormat
 }
 object LinkFormat {
   

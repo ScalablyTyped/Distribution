@@ -2,17 +2,15 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanel extends StObject {
   
-  var format: IFormat = js.native
+  var format: IFormat
   
-  var margins: IMargins = js.native
+  var margins: IMargins
   
-  var transparent: Boolean = js.native
+  var transparent: Boolean
 }
 object IPanel {
   

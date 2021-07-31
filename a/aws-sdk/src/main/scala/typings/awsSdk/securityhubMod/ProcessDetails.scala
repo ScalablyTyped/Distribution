@@ -2,41 +2,39 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessDetails extends StObject {
   
   /**
     * Indicates when the process was launched. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var LaunchedAt: js.UndefOr[NonEmptyString] = js.native
+  var LaunchedAt: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the process.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The parent process ID.
     */
-  var ParentPid: js.UndefOr[Integer] = js.native
+  var ParentPid: js.UndefOr[Integer] = js.undefined
   
   /**
     * The path to the process executable.
     */
-  var Path: js.UndefOr[NonEmptyString] = js.native
+  var Path: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The process ID.
     */
-  var Pid: js.UndefOr[Integer] = js.native
+  var Pid: js.UndefOr[Integer] = js.undefined
   
   /**
     * Indicates when the process was terminated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var TerminatedAt: js.UndefOr[NonEmptyString] = js.native
+  var TerminatedAt: js.UndefOr[NonEmptyString] = js.undefined
 }
 object ProcessDetails {
   

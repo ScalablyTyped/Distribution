@@ -4,15 +4,13 @@ import typings.auth0Lock.auth0LockStrings.error
 import typings.auth0Lock.auth0LockStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0LockFlashMessageOptions extends StObject {
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: success | error = js.native
+  var `type`: success | error
 }
 object Auth0LockFlashMessageOptions {
   

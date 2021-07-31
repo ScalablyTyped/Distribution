@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOpenIdTokenResponse extends StObject {
   
   /**
     * A unique identifier in the format REGION:GUID. Note that the IdentityId returned may not match the one passed on input.
     */
-  var IdentityId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityId] = js.native
+  var IdentityId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityId] = js.undefined
   
   /**
     * An OpenID token, valid for 10 minutes.
     */
-  var Token: js.UndefOr[OIDCToken] = js.native
+  var Token: js.UndefOr[OIDCToken] = js.undefined
 }
 object GetOpenIdTokenResponse {
   

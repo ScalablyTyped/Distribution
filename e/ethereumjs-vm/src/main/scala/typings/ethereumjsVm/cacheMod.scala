@@ -3,14 +3,15 @@ package typings.ethereumjsVm
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheMod {
   
   @JSImport("ethereumjs-vm/dist/state/cache", JSImport.Default)
   @js.native
-  class default protected () extends Cache {
+  class default protected ()
+    extends StObject
+       with Cache {
     def this(trie: js.Any) = this()
   }
   
@@ -19,7 +20,7 @@ object cacheMod {
     
     var _cache: js.Any = js.native
     
-    var _checkpoints: js.Array[_] = js.native
+    var _checkpoints: js.Array[js.Any] = js.native
     
     /**
       * Looks up address in underlying trie.

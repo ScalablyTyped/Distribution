@@ -4,7 +4,6 @@ import typings.plottable.scalesMod.IIncludedValuesProvider
 import typings.plottable.scalesMod.ITransformableScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scaleMod {
@@ -144,7 +143,10 @@ object scaleMod {
     def updateId(): Double = js.native
   }
   
-  type IScaleCallback[S /* <: Scale[_, _] */] = js.Function1[/* scale */ S, js.Any]
+  type IScaleCallback[S /* <: Scale[js.Any, js.Any] */] = js.Function1[/* scale */ S, js.Any]
   
-  type TransformableScale[D, R] = (Scale[D, R]) with ITransformableScale
+  @js.native
+  trait TransformableScale[D, R]
+    extends Scale[D, R]
+       with ITransformableScale
 }

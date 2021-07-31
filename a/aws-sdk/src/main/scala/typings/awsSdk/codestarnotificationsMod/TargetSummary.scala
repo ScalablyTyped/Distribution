@@ -2,26 +2,24 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the SNS topic.
     */
-  var TargetAddress: js.UndefOr[typings.awsSdk.codestarnotificationsMod.TargetAddress] = js.native
+  var TargetAddress: js.UndefOr[typings.awsSdk.codestarnotificationsMod.TargetAddress] = js.undefined
   
   /**
     * The status of the target.
     */
-  var TargetStatus: js.UndefOr[typings.awsSdk.codestarnotificationsMod.TargetStatus] = js.native
+  var TargetStatus: js.UndefOr[typings.awsSdk.codestarnotificationsMod.TargetStatus] = js.undefined
   
   /**
     * The type of the target (for example, SNS).
     */
-  var TargetType: js.UndefOr[typings.awsSdk.codestarnotificationsMod.TargetType] = js.native
+  var TargetType: js.UndefOr[typings.awsSdk.codestarnotificationsMod.TargetType] = js.undefined
 }
 object TargetSummary {
   

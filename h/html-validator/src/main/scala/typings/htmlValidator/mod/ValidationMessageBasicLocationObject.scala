@@ -2,23 +2,21 @@ package typings.htmlValidator.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationMessageBasicLocationObject extends StObject {
   
-  var extract: String = js.native
+  var extract: String
   
-  var firstColumn: Double = js.native
+  var firstColumn: Double
   
-  var hiliteLength: Double = js.native
+  var hiliteLength: Double
   
-  var hiliteStart: Double = js.native
+  var hiliteStart: Double
   
-  var lastColumn: Double = js.native
+  var lastColumn: Double
   
-  var lastLine: Double = js.native
+  var lastLine: Double
 }
 object ValidationMessageBasicLocationObject {
   

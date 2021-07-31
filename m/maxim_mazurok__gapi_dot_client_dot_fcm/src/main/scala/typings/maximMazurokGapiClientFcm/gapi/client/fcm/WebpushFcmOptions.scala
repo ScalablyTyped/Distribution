@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebpushFcmOptions extends StObject {
   
   /** Label associated with the message's analytics data. */
-  var analyticsLabel: js.UndefOr[String] = js.native
+  var analyticsLabel: js.UndefOr[String] = js.undefined
   
   /** The link to open when the user clicks on the notification. For all URL values, HTTPS is required. */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
 }
 object WebpushFcmOptions {
   

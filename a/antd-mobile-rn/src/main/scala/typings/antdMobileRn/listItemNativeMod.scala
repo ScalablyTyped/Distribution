@@ -10,7 +10,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listItemNativeMod {
@@ -63,11 +62,11 @@ object listItemNativeMod {
     def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait BriefProps
-    extends typings.antdMobileRn.listPropsTypeMod.BriefProps {
+    extends StObject
+       with typings.antdMobileRn.listPropsTypeMod.BriefProps {
     
-    var styles: js.UndefOr[typings.antdMobileRn.anon.Brief] = js.native
+    var styles: js.UndefOr[typings.antdMobileRn.anon.Brief] = js.undefined
   }
   object BriefProps {
     
@@ -92,18 +91,19 @@ object listItemNativeMod {
   trait Item
     extends Component[ListItemProps, js.Any, js.Any]
   
-  @js.native
-  trait ListItemProps extends ListItemPropsType {
+  trait ListItemProps
+    extends StObject
+       with ListItemPropsType {
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPressIn: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPressIn: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPressOut: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPressOut: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[Arrow] = js.native
+    var styles: js.UndefOr[Arrow] = js.undefined
   }
   object ListItemProps {
     

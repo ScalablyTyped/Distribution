@@ -2,13 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IModuleReferenceSyntax extends ISyntaxNodeOrToken {
+trait IModuleReferenceSyntax
+  extends StObject
+     with ISyntaxNodeOrToken {
   
-  def isModuleReference(): Boolean = js.native
+  def isModuleReference(): Boolean
 }
 object IModuleReferenceSyntax {
   

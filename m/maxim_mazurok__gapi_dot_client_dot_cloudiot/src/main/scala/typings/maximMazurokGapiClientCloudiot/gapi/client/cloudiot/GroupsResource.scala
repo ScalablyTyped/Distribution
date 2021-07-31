@@ -4,22 +4,20 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCloudiot.anon.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupsResource extends StObject {
   
-  var devices: DevicesResource = js.native
+  var devices: DevicesResource
   
   /** Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. */
-  def getIamPolicy(request: Resource, body: GetIamPolicyRequest): Request[Policy] = js.native
+  def getIamPolicy(request: Resource, body: GetIamPolicyRequest): Request[Policy]
   
   /** Sets the access control policy on the specified resource. Replaces any existing policy. */
-  def setIamPolicy(request: Resource, body: SetIamPolicyRequest): Request[Policy] = js.native
+  def setIamPolicy(request: Resource, body: SetIamPolicyRequest): Request[Policy]
   
   /** Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a NOT_FOUND error. */
-  def testIamPermissions(request: Resource, body: TestIamPermissionsRequest): Request[TestIamPermissionsResponse] = js.native
+  def testIamPermissions(request: Resource, body: TestIamPermissionsRequest): Request[TestIamPermissionsResponse]
 }
 object GroupsResource {
   

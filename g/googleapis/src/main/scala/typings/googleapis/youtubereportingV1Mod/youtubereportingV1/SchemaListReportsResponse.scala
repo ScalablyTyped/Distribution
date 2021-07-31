@@ -2,13 +2,11 @@ package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for ReportingService.ListReports.
   */
-@js.native
 trait SchemaListReportsResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaListReportsResponse extends StObject {
     * ListReportsRequest.page_token field in the subsequent call to
     * `ListReports` method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of report types.
     */
-  var reports: js.UndefOr[js.Array[SchemaReport]] = js.native
+  var reports: js.UndefOr[js.Array[SchemaReport]] = js.undefined
 }
 object SchemaListReportsResponse {
   

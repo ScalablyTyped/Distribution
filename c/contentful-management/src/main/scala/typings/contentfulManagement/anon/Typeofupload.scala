@@ -4,13 +4,11 @@ import typings.axios.mod.AxiosInstance
 import typings.contentfulManagement.uploadMod.UploadProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofupload extends StObject {
   
-  def wrapUpload(http: AxiosInstance, data: UploadProps): deletePromisevoidtoPlainO = js.native
+  def wrapUpload(http: AxiosInstance, data: UploadProps): deletePromisevoidtoPlainO
 }
 object Typeofupload {
   

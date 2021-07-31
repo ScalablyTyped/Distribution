@@ -2,27 +2,25 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiClient extends StObject {
   
-  var apiKeys: ApiKeysApi = js.native
+  var apiKeys: ApiKeysApi
   
-  var collections: CollectionsApi = js.native
+  var collections: CollectionsApi
   
-  var documents: DocumentsApi = js.native
+  var documents: DocumentsApi
   
-  var integrations: IntegrationsApi = js.native
+  var integrations: IntegrationsApi
   
-  var organizations: OrganizationsApi = js.native
+  var organizations: OrganizationsApi
   
-  var queries: QueriesApi = js.native
+  var queries: QueriesApi
   
-  var users: UsersApi = js.native
+  var users: UsersApi
   
-  var workspaces: WorkspacesApi = js.native
+  var workspaces: WorkspacesApi
 }
 object ApiClient {
   

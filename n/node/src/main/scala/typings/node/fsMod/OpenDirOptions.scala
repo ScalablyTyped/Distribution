@@ -3,10 +3,8 @@ package typings.node.fsMod
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenDirOptions extends StObject {
   
   /**
@@ -15,9 +13,9 @@ trait OpenDirOptions extends StObject {
     * performance but higher memory usage.
     * @default 32
     */
-  var bufferSize: js.UndefOr[Double] = js.native
+  var bufferSize: js.UndefOr[Double] = js.undefined
   
-  var encoding: js.UndefOr[BufferEncoding] = js.native
+  var encoding: js.UndefOr[BufferEncoding] = js.undefined
 }
 object OpenDirOptions {
   

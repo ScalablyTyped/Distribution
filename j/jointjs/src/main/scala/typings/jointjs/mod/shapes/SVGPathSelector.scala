@@ -4,13 +4,13 @@ import typings.jointjs.mod.attributes.SVGPathAttributes
 import typings.jointjs.mod.dia.Cell.Selectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGPathSelector extends Selectors {
+trait SVGPathSelector
+  extends StObject
+     with Selectors {
   
-  var path: js.UndefOr[SVGPathAttributes] = js.native
+  var path: js.UndefOr[SVGPathAttributes] = js.undefined
 }
 object SVGPathSelector {
   

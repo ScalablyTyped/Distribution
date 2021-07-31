@@ -3,21 +3,19 @@ package typings.gulpStylint
 import typings.gulpStylint.gulpStylintBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FailOnWarning extends StObject {
     
-    var failOnWarning: `true` = js.native
+    var failOnWarning: `true`
   }
   object FailOnWarning {
     
     @scala.inline
-    def apply(failOnWarning: `true`): FailOnWarning = {
-      val __obj = js.Dynamic.literal(failOnWarning = failOnWarning.asInstanceOf[js.Any])
+    def apply(): FailOnWarning = {
+      val __obj = js.Dynamic.literal(failOnWarning = true)
       __obj.asInstanceOf[FailOnWarning]
     }
     

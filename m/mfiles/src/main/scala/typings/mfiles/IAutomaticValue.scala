@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAutomaticValue extends StObject {
   
-  var ANSIncrement: Double = js.native
+  var ANSIncrement: Double
   
-  var ANVCode: String = js.native
+  var ANVCode: String
   
-  var CVSExpression: String = js.native
+  var CVSExpression: String
   
-  var CVVCode: String = js.native
+  var CVVCode: String
   
-  var CalculationOrderNumber: Double = js.native
+  var CalculationOrderNumber: Double
   
-  def Clone(): IAutomaticValue = js.native
+  def Clone(): IAutomaticValue
 }
 object IAutomaticValue {
   

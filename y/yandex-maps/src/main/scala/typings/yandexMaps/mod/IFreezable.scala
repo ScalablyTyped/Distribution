@@ -2,19 +2,17 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFreezable extends StObject {
   
-  var events: IEventManager[js.Object] = js.native
+  var events: IEventManager[js.Object]
   
-  def freeze(): IFreezable = js.native
+  def freeze(): IFreezable
   
-  def isFrozen(): Boolean = js.native
+  def isFrozen(): Boolean
   
-  def unfreeze(): IFreezable = js.native
+  def unfreeze(): IFreezable
 }
 object IFreezable {
   

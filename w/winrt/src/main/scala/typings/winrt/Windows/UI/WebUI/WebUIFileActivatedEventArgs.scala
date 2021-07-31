@@ -8,12 +8,11 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Storage.IStorageItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebUIFileActivatedEventArgs
-  extends IFileActivatedEventArgs
+  extends StObject
+     with IFileActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUIFileActivatedEventArgs {
   

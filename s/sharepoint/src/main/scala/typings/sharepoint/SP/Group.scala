@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Group extends Principal {
+trait Group
+  extends StObject
+     with Principal {
   
   def get_allowMembersEditMembership(): Boolean = js.native
   

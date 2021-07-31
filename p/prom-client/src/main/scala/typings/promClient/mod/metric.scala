@@ -2,19 +2,17 @@ package typings.promClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait metric extends StObject {
   
-  var aggregator: Aggregator = js.native
+  var aggregator: Aggregator
   
-  var help: String = js.native
+  var help: String
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: MetricType = js.native
+  var `type`: MetricType
 }
 object metric {
   

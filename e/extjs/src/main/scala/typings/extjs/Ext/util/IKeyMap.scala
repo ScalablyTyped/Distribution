@@ -3,41 +3,41 @@ package typings.extjs.Ext.util
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IKeyMap extends IBase {
+trait IKeyMap
+  extends StObject
+     with IBase {
   
   /** [Method] Add a new binding to this KeyMap
     * @param binding Object/Object[] A single KeyMap config or an array of configs. The following config object properties are supported:
     */
-  var addBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.native
+  var addBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Object/Object[][]) */
-  var binding: js.UndefOr[js.Any] = js.native
+  var binding: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Destroys the KeyMap instance and removes all handlers
     * @param removeTarget Boolean True to also remove the target
     */
-  var destroy: js.UndefOr[js.Function1[/* removeTarget */ js.UndefOr[Boolean], Unit]] = js.native
+  var destroy: js.UndefOr[js.Function1[/* removeTarget */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Disable this KeyMap */
-  var disable: js.UndefOr[js.Function0[Unit]] = js.native
+  var disable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Enables this KeyMap */
-  var enable: js.UndefOr[js.Function0[Unit]] = js.native
+  var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var eventName: js.UndefOr[String] = js.native
+  var eventName: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var ignoreInputFields: js.UndefOr[Boolean] = js.native
+  var ignoreInputFields: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Returns true if this KeyMap is enabled
     * @returns Boolean
     */
-  var isEnabled: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isEnabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Shorthand for adding a single key listener
     * @param key Number/Number[]/Object Either the numeric key code, array of key codes or an object with the following options: {key: (number or array), shift: (true/false), ctrl: (true/false), alt: (true/false)}
@@ -51,26 +51,26 @@ trait IKeyMap extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Function) */
-  var processEvent: js.UndefOr[js.Any] = js.native
+  var processEvent: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var processEventScope: js.UndefOr[js.Any] = js.native
+  var processEventScope: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Remove a binding from this KeyMap
     * @param binding Object See for options
     */
-  var removeBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.native
+  var removeBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Convenience function for setting disabled enabled by boolean
     * @param disabled Boolean
     */
-  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.native
+  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Ext.Component/Ext.Element/HTMLElement/String) */
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Shorthand for removing a single key listener
     * @param key Number/Number[]/Object Either the numeric key code, array of key codes or an object with the following options: {key: (number or array), shift: (true/false), ctrl: (true/false), alt: (true/false)}
@@ -84,7 +84,7 @@ trait IKeyMap extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IKeyMap {
   

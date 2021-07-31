@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media track list that allows a single item to be selected at a time. */
-@js.native
 trait ISingleSelectMediaTrackList extends StObject {
   
   /** Gets or set the currently selected media track in the list. */
-  var selectedIndex: Double = js.native
+  var selectedIndex: Double
 }
 object ISingleSelectMediaTrackList {
   

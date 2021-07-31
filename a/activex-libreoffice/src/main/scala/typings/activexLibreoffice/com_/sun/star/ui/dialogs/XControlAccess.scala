@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.ui.dialogs.FilePicker
   * @since OOo 1.1.2
   */
-@js.native
-trait XControlAccess extends XInterface {
+trait XControlAccess
+  extends StObject
+     with XInterface {
   
   /**
     * Query for a control property.
@@ -26,7 +26,7 @@ trait XControlAccess extends XInterface {
     * @returns the requested value.
     * @throws com::sun::star::lang::IllegalArgumentException when the control is not supported or the control property is invalid.
     */
-  def getControlProperty(aControlName: String, aControlProperty: String): js.Any = js.native
+  def getControlProperty(aControlName: String, aControlProperty: String): js.Any
   
   /**
     * Change a control property.
@@ -35,7 +35,7 @@ trait XControlAccess extends XInterface {
     * @param aValue A value appropriated for the property.
     * @throws com::sun::star::lang::IllegalArgumentException when the control is not supported, the control property is invalid or the value fits not the contr
     */
-  def setControlProperty(aControlName: String, aControlProperty: String, aValue: js.Any): Unit = js.native
+  def setControlProperty(aControlName: String, aControlProperty: String, aValue: js.Any): Unit
 }
 object XControlAccess {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BookingOptions extends StObject {
   
   /**
     * The resource's ability to automatically reply to requests. If disabled, delegates must be associated to the resource.
     */
-  var AutoAcceptRequests: js.UndefOr[Boolean] = js.native
+  var AutoAcceptRequests: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The resource's ability to automatically decline any conflicting requests.
     */
-  var AutoDeclineConflictingRequests: js.UndefOr[Boolean] = js.native
+  var AutoDeclineConflictingRequests: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The resource's ability to automatically decline any recurring requests.
     */
-  var AutoDeclineRecurringRequests: js.UndefOr[Boolean] = js.native
+  var AutoDeclineRecurringRequests: js.UndefOr[Boolean] = js.undefined
 }
 object BookingOptions {
   

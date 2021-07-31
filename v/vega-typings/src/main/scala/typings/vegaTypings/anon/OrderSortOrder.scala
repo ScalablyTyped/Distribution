@@ -4,13 +4,13 @@ import typings.vegaTypings.scaleMod.SortOrder
 import typings.vegaTypings.scaleMod._SortField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OrderSortOrder extends _SortField {
+trait OrderSortOrder
+  extends StObject
+     with _SortField {
   
-  var order: SortOrder = js.native
+  var order: SortOrder
 }
 object OrderSortOrder {
   

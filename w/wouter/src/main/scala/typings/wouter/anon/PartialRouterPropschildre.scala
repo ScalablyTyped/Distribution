@@ -8,20 +8,18 @@ import typings.wouter.wouterUseLocationMod.BaseLocationHook
 import typings.wouter.wouterUseLocationMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<wouter.wouter.RouterProps> & {  children :react.react.ReactNode} */
-@js.native
 trait PartialRouterPropschildre extends StObject {
   
-  var base: js.UndefOr[Path] = js.native
+  var base: js.UndefOr[Path] = js.undefined
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var hook: js.UndefOr[BaseLocationHook] = js.native
+  var hook: js.UndefOr[BaseLocationHook] = js.undefined
   
-  var matcher: js.UndefOr[MatcherFn] = js.native
+  var matcher: js.UndefOr[MatcherFn] = js.undefined
 }
 object PartialRouterPropschildre {
   
@@ -47,9 +45,7 @@ object PartialRouterPropschildre {
     def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setHook(
-      value: /* repeated */ js.Any => js.Tuple2[Path, js.Function2[/* path */ Path, /* repeated */ js.Any, js.Any]]
-    ): Self = StObject.set(x, "hook", js.Any.fromFunction1(value))
+    def setHook(value: BaseLocationHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)

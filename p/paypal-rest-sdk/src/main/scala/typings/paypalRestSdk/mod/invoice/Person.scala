@@ -4,25 +4,23 @@ import typings.paypalRestSdk.mod.Address
 import typings.paypalRestSdk.mod.Phone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Person extends StObject {
   
-  var address: js.UndefOr[Address] = js.native
+  var address: js.UndefOr[Address] = js.undefined
   
-  var business_name: js.UndefOr[String] = js.native
+  var business_name: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var first_name: js.UndefOr[String] = js.native
+  var first_name: js.UndefOr[String] = js.undefined
   
-  var last_name: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.undefined
   
-  var phone: js.UndefOr[Phone] = js.native
+  var phone: js.UndefOr[Phone] = js.undefined
   
-  var website: js.UndefOr[String] = js.native
+  var website: js.UndefOr[String] = js.undefined
 }
 object Person {
   

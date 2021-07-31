@@ -5,7 +5,6 @@ import typings.frctlFractal.mod.fractal.cli.Console
 import typings.frctlFractal.mod.fractal.cli.Notifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @frctl/fractal.@frctl/fractal.fractal.cli.Cli & {  fractal :@frctl/fractal.@frctl/fractal.Fractal} */
@@ -14,31 +13,16 @@ trait ClifractalFractal extends StObject {
   
   def command(
     commandString: String,
-    callback: js.ThisFunction2[
-      /* this */ this.type with Fractal, 
-      /* args */ js.Any, 
-      /* done */ js.Function0[Unit], 
-      Unit
-    ]
+    callback: js.ThisFunction2[/* this */ this.type & Fractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit]
   ): Unit = js.native
   def command(
     commandString: String,
-    callback: js.ThisFunction2[
-      /* this */ this.type with Fractal, 
-      /* args */ js.Any, 
-      /* done */ js.Function0[Unit], 
-      Unit
-    ],
+    callback: js.ThisFunction2[/* this */ this.type & Fractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit],
     opts: String
   ): Unit = js.native
   def command(
     commandString: String,
-    callback: js.ThisFunction2[
-      /* this */ this.type with Fractal, 
-      /* args */ js.Any, 
-      /* done */ js.Function0[Unit], 
-      Unit
-    ],
+    callback: js.ThisFunction2[/* this */ this.type & Fractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit],
     opts: Description
   ): Unit = js.native
   

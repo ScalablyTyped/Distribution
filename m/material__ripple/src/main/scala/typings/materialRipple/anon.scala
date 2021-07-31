@@ -8,23 +8,21 @@ import typings.std.ClientRect
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BGFOCUSED extends StObject {
     
-    var BG_FOCUSED: String = js.native
+    var BG_FOCUSED: String
     
-    var FG_ACTIVATION: String = js.native
+    var FG_ACTIVATION: String
     
-    var FG_DEACTIVATION: String = js.native
+    var FG_DEACTIVATION: String
     
-    var ROOT: String = js.native
+    var ROOT: String
     
-    var UNBOUNDED: String = js.native
+    var UNBOUNDED: String
   }
   object BGFOCUSED {
     
@@ -60,18 +58,17 @@ object anon {
     }
   }
   
-  @js.native
   trait DEACTIVATIONTIMEOUTMS extends StObject {
     
-    var DEACTIVATION_TIMEOUT_MS: Double = js.native
+    var DEACTIVATION_TIMEOUT_MS: Double
     
-    var FG_DEACTIVATION_MS: Double = js.native
+    var FG_DEACTIVATION_MS: Double
     
-    var INITIAL_ORIGIN_SCALE: Double = js.native
+    var INITIAL_ORIGIN_SCALE: Double
     
-    var PADDING: Double = js.native
+    var PADDING: Double
     
-    var TAP_DELAY_MS: Double = js.native
+    var TAP_DELAY_MS: Double
   }
   object DEACTIVATIONTIMEOUTMS {
     
@@ -108,48 +105,47 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/ripple.@material/ripple/adapter.MDCRippleAdapter> */
-  @js.native
   trait PartialMDCRippleAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var browserSupportsCssVars: js.UndefOr[js.Function0[Boolean]] = js.native
+    var browserSupportsCssVars: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var computeBoundingRect: js.UndefOr[js.Function0[ClientRect]] = js.native
+    var computeBoundingRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
     
-    var containsEventTarget: js.UndefOr[js.Function1[/* target */ EventTarget | Null, Boolean]] = js.native
+    var containsEventTarget: js.UndefOr[js.Function1[/* target */ EventTarget | Null, Boolean]] = js.undefined
     
     var deregisterDocumentInteractionHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var deregisterInteractionHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var deregisterResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.native
+    var deregisterResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.undefined
     
-    var getWindowPageOffset: js.UndefOr[js.Function0[MDCRipplePoint]] = js.native
+    var getWindowPageOffset: js.UndefOr[js.Function0[MDCRipplePoint]] = js.undefined
     
-    var isSurfaceActive: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isSurfaceActive: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isSurfaceDisabled: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isSurfaceDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isUnbounded: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isUnbounded: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     var registerDocumentInteractionHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var registerInteractionHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var registerResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.native
+    var registerResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var updateCssVariable: js.UndefOr[js.Function2[/* varName */ String, /* value */ String | Null, Unit]] = js.native
+    var updateCssVariable: js.UndefOr[js.Function2[/* varName */ String, /* value */ String | Null, Unit]] = js.undefined
   }
   object PartialMDCRippleAdapter {
     
@@ -260,20 +256,19 @@ object anon {
     }
   }
   
-  @js.native
   trait VARFGSCALE extends StObject {
     
-    var VAR_FG_SCALE: String = js.native
+    var VAR_FG_SCALE: String
     
-    var VAR_FG_SIZE: String = js.native
+    var VAR_FG_SIZE: String
     
-    var VAR_FG_TRANSLATE_END: String = js.native
+    var VAR_FG_TRANSLATE_END: String
     
-    var VAR_FG_TRANSLATE_START: String = js.native
+    var VAR_FG_TRANSLATE_START: String
     
-    var VAR_LEFT: String = js.native
+    var VAR_LEFT: String
     
-    var VAR_TOP: String = js.native
+    var VAR_TOP: String
   }
   object VARFGSCALE {
     

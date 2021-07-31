@@ -5,15 +5,13 @@ import typings.kiiCloudSdk.KiiCloud.KiiPushSubscription
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `22` extends StObject {
   
-  def failure(error: Error): js.Any = js.native
+  def failure(error: Error): js.Any
   
-  def success(subscription: KiiPushSubscription, topic: KiiBucket, isSubscribed: Boolean): js.Any = js.native
+  def success(subscription: KiiPushSubscription, topic: KiiBucket, isSubscribed: Boolean): js.Any
 }
 object `22` {
   

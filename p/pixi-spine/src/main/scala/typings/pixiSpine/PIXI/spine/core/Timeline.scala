@@ -2,10 +2,8 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timeline extends StObject {
   
   @JSName("apply")
@@ -17,9 +15,9 @@ trait Timeline extends StObject {
     alpha: Double,
     blend: MixBlend,
     direction: MixDirection
-  ): Unit = js.native
+  ): Unit
   
-  def getPropertyId(): Double = js.native
+  def getPropertyId(): Double
 }
 object Timeline {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationMetadata extends StObject {
   
   /** The full name of the resources that this operation is directly associated with. */
-  var resourceNames: js.UndefOr[js.Array[String]] = js.native
+  var resourceNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object OperationMetadata {
   

@@ -2,14 +2,12 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Helper used internally for source map parsing in order to provide helpful
   * JavaScript stack-traces.
   */
-@js.native
 trait SourceMap extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SourceMap extends StObject {
     *
     * @param generatedPosition Position in generated code.
     */
-  def resolve(generatedPosition: GeneratedSourcePosition): OriginalSourcePosition | Null = js.native
+  def resolve(generatedPosition: GeneratedSourcePosition): OriginalSourcePosition | Null
 }
 object SourceMap {
   

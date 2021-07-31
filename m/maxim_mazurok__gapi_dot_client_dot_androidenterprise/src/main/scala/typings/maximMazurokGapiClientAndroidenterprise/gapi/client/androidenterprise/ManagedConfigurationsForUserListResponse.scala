@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedConfigurationsForUserListResponse extends StObject {
   
   /** A managed configuration for an app for a specific user. */
-  var managedConfigurationForUser: js.UndefOr[js.Array[ManagedConfiguration]] = js.native
+  var managedConfigurationForUser: js.UndefOr[js.Array[ManagedConfiguration]] = js.undefined
 }
 object ManagedConfigurationsForUserListResponse {
   

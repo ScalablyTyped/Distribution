@@ -6,7 +6,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,34 +13,33 @@ object mod {
   @JSImport("redux-infinite-scroll", JSImport.Default)
   @js.native
   class default ()
-    extends Component[InfiniteScrollerProps with HTMLProps[HTMLDivElement], js.Object, js.Any]
+    extends Component[InfiniteScrollerProps & HTMLProps[HTMLDivElement], js.Object, js.Any]
   
-  type InfiniteScoller = Component[InfiniteScrollerProps with HTMLProps[HTMLDivElement], js.Object, js.Any]
+  type InfiniteScoller = Component[InfiniteScrollerProps & HTMLProps[HTMLDivElement], js.Object, js.Any]
   
-  @js.native
   trait InfiniteScrollerProps extends StObject {
     
-    var children: js.UndefOr[js.Array[Element]] = js.native
+    var children: js.UndefOr[js.Array[Element]] = js.undefined
     
-    var containerHeight: js.UndefOr[Double | String] = js.native
+    var containerHeight: js.UndefOr[Double | String] = js.undefined
     
-    var elementIsScrollable: js.UndefOr[Boolean] = js.native
+    var elementIsScrollable: js.UndefOr[Boolean] = js.undefined
     
-    var hasMore: js.UndefOr[Boolean] = js.native
+    var hasMore: js.UndefOr[Boolean] = js.undefined
     
-    var holderType: js.UndefOr[String] = js.native
+    var holderType: js.UndefOr[String] = js.undefined
     
-    var items: js.UndefOr[js.Array[Element]] = js.native
+    var items: js.UndefOr[js.Array[Element]] = js.undefined
     
-    def loadMore(): Unit = js.native
+    def loadMore(): Unit
     
-    var loader: js.UndefOr[js.Any] = js.native
+    var loader: js.UndefOr[js.Any] = js.undefined
     
-    var loadingMore: js.UndefOr[Boolean] = js.native
+    var loadingMore: js.UndefOr[Boolean] = js.undefined
     
-    var showLoader: js.UndefOr[Boolean] = js.native
+    var showLoader: js.UndefOr[Boolean] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object InfiniteScrollerProps {
     

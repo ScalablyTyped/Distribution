@@ -2,33 +2,31 @@ package typings.expoLocation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accuracy extends StObject {
     
-    var accuracy: Double | Null = js.native
+    var accuracy: Double | Null
     
-    var altitude: Double | Null = js.native
+    var altitude: Double | Null
     
-    var altitudeAccuracy: Double | Null = js.native
+    var altitudeAccuracy: Double | Null
     
-    var heading: Double | Null = js.native
+    var heading: Double | Null
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
     
-    var speed: Double | Null = js.native
+    var speed: Double | Null
   }
   object Accuracy {
     
     @scala.inline
     def apply(latitude: Double, longitude: Double): Accuracy = {
-      val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], accuracy = null, altitude = null, altitudeAccuracy = null, heading = null, speed = null)
       __obj.asInstanceOf[Accuracy]
     }
     
@@ -73,12 +71,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Latitude extends StObject {
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object Latitude {
     
@@ -99,10 +96,9 @@ object anon {
     }
   }
   
-  @js.native
   trait LocationServicesEnabled extends StObject {
     
-    var locationServicesEnabled: Boolean = js.native
+    var locationServicesEnabled: Boolean
   }
   object LocationServicesEnabled {
     
@@ -120,14 +116,13 @@ object anon {
     }
   }
   
-  @js.native
   trait NotificationBody extends StObject {
     
-    var notificationBody: String = js.native
+    var notificationBody: String
     
-    var notificationColor: js.UndefOr[String] = js.native
+    var notificationColor: js.UndefOr[String] = js.undefined
     
-    var notificationTitle: String = js.native
+    var notificationTitle: String
   }
   object NotificationBody {
     
@@ -155,12 +150,11 @@ object anon {
   }
   
   /* Inlined std.Pick<expo-location.expo-location/build/Location.types.LocationGeocodedLocation, 'latitude' | 'longitude'> */
-  @js.native
   trait PickLocationGeocodedLocat extends StObject {
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object PickLocationGeocodedLocat {
     
@@ -181,10 +175,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Remove extends StObject {
     
-    def remove(): Unit = js.native
+    def remove(): Unit
   }
   object Remove {
     

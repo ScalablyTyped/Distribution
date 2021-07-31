@@ -3,13 +3,11 @@ package typings.antd.anon
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Icon extends StObject {
   
-  var icon: js.UndefOr[ReactElement] = js.native
+  var icon: js.UndefOr[ReactElement] = js.undefined
 }
 object Icon {
   

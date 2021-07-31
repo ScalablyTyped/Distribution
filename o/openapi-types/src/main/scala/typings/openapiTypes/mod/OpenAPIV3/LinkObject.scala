@@ -3,23 +3,21 @@ package typings.openapiTypes.mod.OpenAPIV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkObject extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
-  var operationRef: js.UndefOr[String] = js.native
+  var operationRef: js.UndefOr[String] = js.undefined
   
-  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var requestBody: js.UndefOr[js.Any] = js.native
+  var requestBody: js.UndefOr[js.Any] = js.undefined
   
-  var server: js.UndefOr[ServerObject] = js.native
+  var server: js.UndefOr[ServerObject] = js.undefined
 }
 object LinkObject {
   

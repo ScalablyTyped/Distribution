@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOnPremisesInstanceOutput extends StObject {
   
   /**
     *  Information about the on-premises instance. 
     */
-  var instanceInfo: js.UndefOr[InstanceInfo] = js.native
+  var instanceInfo: js.UndefOr[InstanceInfo] = js.undefined
 }
 object GetOnPremisesInstanceOutput {
   

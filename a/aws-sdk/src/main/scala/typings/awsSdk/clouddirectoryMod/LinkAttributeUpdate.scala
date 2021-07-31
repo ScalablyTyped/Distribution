@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkAttributeUpdate extends StObject {
   
   /**
     * The action to perform as part of the attribute update.
     */
-  var AttributeAction: js.UndefOr[LinkAttributeAction] = js.native
+  var AttributeAction: js.UndefOr[LinkAttributeAction] = js.undefined
   
   /**
     * The key of the attribute being updated.
     */
-  var AttributeKey: js.UndefOr[typings.awsSdk.clouddirectoryMod.AttributeKey] = js.native
+  var AttributeKey: js.UndefOr[typings.awsSdk.clouddirectoryMod.AttributeKey] = js.undefined
 }
 object LinkAttributeUpdate {
   

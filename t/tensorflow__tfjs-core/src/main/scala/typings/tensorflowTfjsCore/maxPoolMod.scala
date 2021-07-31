@@ -10,18 +10,20 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maxPoolMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/max_pool", "maxPool")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/max_pool", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def maxPool[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: (js.Tuple2[Double, Double]) | Double,
     pad: valid_ | same_ | Double,
     dimRoundingMode: js.UndefOr[floor | round | ceil]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
 }

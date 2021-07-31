@@ -5,17 +5,15 @@ import typings.amapJsApiMap3d.amapJsApiMap3dStrings.mesh
 import typings.amapJsApiMap3d.amapJsApiMap3dStrings.points
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geometry3D extends StObject {
   
-  val vertexColors: js.Array[Double] = js.native
+  val vertexColors: js.Array[Double]
   
-  val vertexUVs: js.Array[Double] = js.native
+  val vertexUVs: js.Array[Double]
   
-  val vertices: js.Array[Double] = js.native
+  val vertices: js.Array[Double]
 }
 object Geometry3D {
   
@@ -47,14 +45,15 @@ object Geometry3D {
     def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
   
-  @js.native
-  trait Line extends Geometry3D {
+  trait Line
+    extends StObject
+       with Geometry3D {
     
-    val segments: js.Array[Double] = js.native
+    val segments: js.Array[Double]
     
-    val textureIndices: js.Array[Double] = js.native
+    val textureIndices: js.Array[Double]
     
-    val `type`: line = js.native
+    val `type`: line
   }
   object Line {
     
@@ -62,13 +61,12 @@ object Geometry3D {
     def apply(
       segments: js.Array[Double],
       textureIndices: js.Array[Double],
-      `type`: line,
       vertexColors: js.Array[Double],
       vertexUVs: js.Array[Double],
       vertices: js.Array[Double]
     ): Line = {
       val __obj = js.Dynamic.literal(segments = segments.asInstanceOf[js.Any], textureIndices = textureIndices.asInstanceOf[js.Any], vertexColors = vertexColors.asInstanceOf[js.Any], vertexUVs = vertexUVs.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("line")
       __obj.asInstanceOf[Line]
     }
     
@@ -92,14 +90,15 @@ object Geometry3D {
     }
   }
   
-  @js.native
-  trait Mesh extends Geometry3D {
+  trait Mesh
+    extends StObject
+       with Geometry3D {
     
-    val faces: js.Array[Double] = js.native
+    val faces: js.Array[Double]
     
-    val textureIndices: js.Array[Double] = js.native
+    val textureIndices: js.Array[Double]
     
-    val `type`: mesh = js.native
+    val `type`: mesh
   }
   object Mesh {
     
@@ -107,13 +106,12 @@ object Geometry3D {
     def apply(
       faces: js.Array[Double],
       textureIndices: js.Array[Double],
-      `type`: mesh,
       vertexColors: js.Array[Double],
       vertexUVs: js.Array[Double],
       vertices: js.Array[Double]
     ): Mesh = {
       val __obj = js.Dynamic.literal(faces = faces.asInstanceOf[js.Any], textureIndices = textureIndices.asInstanceOf[js.Any], vertexColors = vertexColors.asInstanceOf[js.Any], vertexUVs = vertexUVs.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mesh")
       __obj.asInstanceOf[Mesh]
     }
     
@@ -137,16 +135,17 @@ object Geometry3D {
     }
   }
   
-  @js.native
-  trait Points extends Geometry3D {
+  trait Points
+    extends StObject
+       with Geometry3D {
     
-    val pointAreas: js.Array[Double] = js.native
+    val pointAreas: js.Array[Double]
     
-    val pointSizes: js.Array[Double] = js.native
+    val pointSizes: js.Array[Double]
     
-    val textureIndices: js.Array[Double] = js.native
+    val textureIndices: js.Array[Double]
     
-    val `type`: points = js.native
+    val `type`: points
   }
   object Points {
     
@@ -155,13 +154,12 @@ object Geometry3D {
       pointAreas: js.Array[Double],
       pointSizes: js.Array[Double],
       textureIndices: js.Array[Double],
-      `type`: points,
       vertexColors: js.Array[Double],
       vertexUVs: js.Array[Double],
       vertices: js.Array[Double]
     ): Points = {
       val __obj = js.Dynamic.literal(pointAreas = pointAreas.asInstanceOf[js.Any], pointSizes = pointSizes.asInstanceOf[js.Any], textureIndices = textureIndices.asInstanceOf[js.Any], vertexColors = vertexColors.asInstanceOf[js.Any], vertexUVs = vertexUVs.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("points")
       __obj.asInstanceOf[Points]
     }
     

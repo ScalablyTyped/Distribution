@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHsmRequest extends StObject {
   
   /**
     * The ARN of the HSM. Either the HsmArn or the SerialNumber parameter must be specified.
     */
-  var HsmArn: js.UndefOr[typings.awsSdk.cloudhsmMod.HsmArn] = js.native
+  var HsmArn: js.UndefOr[typings.awsSdk.cloudhsmMod.HsmArn] = js.undefined
   
   /**
     * The serial number of the HSM. Either the HsmArn or the HsmSerialNumber parameter must be specified.
     */
-  var HsmSerialNumber: js.UndefOr[typings.awsSdk.cloudhsmMod.HsmSerialNumber] = js.native
+  var HsmSerialNumber: js.UndefOr[typings.awsSdk.cloudhsmMod.HsmSerialNumber] = js.undefined
 }
 object DescribeHsmRequest {
   

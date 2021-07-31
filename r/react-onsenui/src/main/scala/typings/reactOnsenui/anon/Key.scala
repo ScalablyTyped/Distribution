@@ -4,19 +4,17 @@ import typings.reactOnsenui.mod.Route
 import typings.reactOnsenui.mod.RouteConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Key extends StObject {
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Any] = js.undefined
   
-  var route: Route = js.native
+  var route: Route
   
-  var routeConfig: RouteConfig = js.native
+  var routeConfig: RouteConfig
 }
 object Key {
   

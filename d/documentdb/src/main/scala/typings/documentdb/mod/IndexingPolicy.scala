@@ -2,23 +2,21 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexingPolicy extends StObject {
   
   /** Represents the paths to be excluded from indexing. */
-  var ExcludedPaths: js.Array[ExcludedPath] = js.native
+  var ExcludedPaths: js.Array[ExcludedPath]
   
   /** Represents the paths to be included for indexing. */
-  var IncludedPaths: js.Array[IncludedPath] = js.native
+  var IncludedPaths: js.Array[IncludedPath]
   
   /** Specifies whether automatic indexing is enabled for a collection. */
-  var automatic: Boolean = js.native
+  var automatic: Boolean
   
   /** The indexing mode (consistent or lazy) {@link IndexingMode}. */
-  var indexingMode: IndexingMode = js.native
+  var indexingMode: IndexingMode
 }
 object IndexingPolicy {
   

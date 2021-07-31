@@ -4,32 +4,32 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("styletron-standard", "driver")
+  @JSImport("styletron-standard", JSImport.Namespace)
   @js.native
-  def driver(style: StyleObject, styletron: StandardEngine): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("styletron-standard", "getInitialStyle")
-  @js.native
-  def getInitialStyle(): StyleObject = js.native
+  @scala.inline
+  def driver(style: StyleObject, styletron: StandardEngine): String = (^.asInstanceOf[js.Dynamic].applyDynamic("driver")(style.asInstanceOf[js.Any], styletron.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("styletron-standard", "renderDeclarativeRules")
-  @js.native
-  def renderDeclarativeRules(style: StyleObject, styletrong: StandardEngine): StyleObject = js.native
+  @scala.inline
+  def getInitialStyle(): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialStyle")().asInstanceOf[StyleObject]
+  
+  @scala.inline
+  def renderDeclarativeRules(style: StyleObject, styletrong: StandardEngine): StyleObject = (^.asInstanceOf[js.Dynamic].applyDynamic("renderDeclarativeRules")(style.asInstanceOf[js.Any], styletrong.asInstanceOf[js.Any])).asInstanceOf[StyleObject]
   
   type FontFace = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.AtRule.FontFace */ js.Any
   
-  /* Inlined styletron-standard.styletron-standard.KeyframesPercentageObject & {  from :styletron-standard.styletron-standard.Properties | undefined,   to :styletron-standard.styletron-standard.Properties | undefined} */
-  @js.native
-  trait KeyframesObject extends /* key */ StringDictionary[Properties] {
+  trait KeyframesObject
+    extends StObject
+       with KeyframesPercentageObject {
     
-    var from: js.UndefOr[Properties] = js.native
+    var from: js.UndefOr[Properties] = js.undefined
     
-    var to: js.UndefOr[Properties] = js.native
+    var to: js.UndefOr[Properties] = js.undefined
   }
   object KeyframesObject {
     
@@ -60,14 +60,13 @@ object mod {
   
   type Properties = typings.csstype.mod.Properties[String | Double]
   
-  @js.native
   trait StandardEngine extends StObject {
     
-    def renderFontFace(fontFace: FontFace): String = js.native
+    def renderFontFace(fontFace: FontFace): String
     
-    def renderKeyframes(keyframes: KeyframesObject): String = js.native
+    def renderKeyframes(keyframes: KeyframesObject): String
     
-    def renderStyle(style: StyleObject): String = js.native
+    def renderStyle(style: StyleObject): String
   }
   object StandardEngine {
     
@@ -95,5 +94,5 @@ object mod {
     }
   }
   
-  type StyleObject = Properties with typings.styletronStandard.styletronStandardStrings.StyleObject with TopLevel[js.Any]
+  type StyleObject = Properties & typings.styletronStandard.styletronStandardStrings.StyleObject & TopLevel[js.Any]
 }

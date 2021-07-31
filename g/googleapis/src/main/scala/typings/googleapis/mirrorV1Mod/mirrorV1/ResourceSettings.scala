@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Settings")
@@ -30,7 +29,7 @@ class ResourceSettings protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSetting] = js.native
   def get(callback: BodyResponseCallback[SchemaSetting]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSetting] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSetting] = js.native
   def get(params: ParamsResourceSettingsGet): GaxiosPromise[SchemaSetting] = js.native
   def get(params: ParamsResourceSettingsGet, callback: BodyResponseCallback[SchemaSetting]): Unit = js.native
   def get(

@@ -2,22 +2,20 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverlayOptions extends StObject {
   
   /**
     * Control wether this Overlay should handle Keyboard events.
     * Set this to true if your Overlay contains a TextInput.
     */
-  var handleKeyboardEvents: js.UndefOr[Boolean] = js.native
+  var handleKeyboardEvents: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Capture touches outside of the Component View
     */
-  var interceptTouchOutside: js.UndefOr[Boolean] = js.native
+  var interceptTouchOutside: js.UndefOr[Boolean] = js.undefined
 }
 object OverlayOptions {
   

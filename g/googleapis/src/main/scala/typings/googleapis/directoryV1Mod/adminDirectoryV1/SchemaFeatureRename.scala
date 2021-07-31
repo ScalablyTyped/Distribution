@@ -2,19 +2,17 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON request template for renaming a feature.
   */
-@js.native
 trait SchemaFeatureRename extends StObject {
   
   /**
     * New name of the feature.
     */
-  var newName: js.UndefOr[String] = js.native
+  var newName: js.UndefOr[String] = js.undefined
 }
 object SchemaFeatureRename {
   

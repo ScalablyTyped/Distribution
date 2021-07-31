@@ -2,13 +2,11 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The GetNotificationChannelVerificationCode request.
   */
-@js.native
 trait SchemaGetNotificationChannelVerificationCodeRequest extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaGetNotificationChannelVerificationCodeRequest extends StObject {
     * code&#39;s lifetime over omitting an expiration, even though the API does
     * impose an upper limit on the maximum expiration that is permitted).
     */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGetNotificationChannelVerificationCodeRequest {
   

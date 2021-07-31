@@ -8,82 +8,82 @@ import typings.xlsx.xlsxStrings.file
 import typings.xlsx.xlsxStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParsingOptions extends CommonOptions {
+trait ParsingOptions
+  extends StObject
+     with CommonOptions {
   
   /**
     * If true, parse calculation chains
     * @default false
     */
-  var bookDeps: js.UndefOr[Boolean] = js.native
+  var bookDeps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, add raw files to book object
     * @default false
     */
-  var bookFiles: js.UndefOr[Boolean] = js.native
+  var bookFiles: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, only parse enough to get book metadata
     * @default false
     */
-  var bookProps: js.UndefOr[Boolean] = js.native
+  var bookProps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, only parse enough to get the sheet names
     * @default false
     */
-  var bookSheets: js.UndefOr[Boolean] = js.native
+  var bookSheets: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Save formulae to the .f field
     * @default true
     */
-  var cellFormula: js.UndefOr[Boolean] = js.native
+  var cellFormula: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Parse rich text and save HTML to the .h field
     * @default true
     */
-  var cellHTML: js.UndefOr[Boolean] = js.native
+  var cellHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Save number format string to the .z field
     * @default false
     */
-  var cellNF: js.UndefOr[Boolean] = js.native
+  var cellNF: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Generate formatted text to the .w field
     * @default true
     */
-  var cellText: js.UndefOr[Boolean] = js.native
+  var cellText: js.UndefOr[Boolean] = js.undefined
   
   /** Default codepage */
-  var codepage: js.UndefOr[Double] = js.native
+  var codepage: js.UndefOr[Double] = js.undefined
   
   /** Override default date format (code 14) */
-  var dateNF: js.UndefOr[String] = js.native
+  var dateNF: js.UndefOr[String] = js.undefined
   
-  var dense: js.UndefOr[Boolean] = js.native
+  var dense: js.UndefOr[Boolean] = js.undefined
   
   /** If true, plaintext parsing will not parse values */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If >0, read the first sheetRows rows
     * @default 0
     */
-  var sheetRows: js.UndefOr[Double] = js.native
+  var sheetRows: js.UndefOr[Double] = js.undefined
   
   /** If specified, only parse the specified sheets or sheet names */
-  var sheets: js.UndefOr[Double | String | (js.Array[Double | String])] = js.native
+  var sheets: js.UndefOr[Double | String | (js.Array[Double | String])] = js.undefined
   
   /** Input data encoding */
-  var `type`: js.UndefOr[base64 | binary | buffer | file | array | string] = js.native
+  var `type`: js.UndefOr[base64 | binary | buffer | file | array | string] = js.undefined
 }
 object ParsingOptions {
   

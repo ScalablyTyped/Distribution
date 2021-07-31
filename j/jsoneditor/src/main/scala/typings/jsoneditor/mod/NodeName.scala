@@ -2,17 +2,15 @@ package typings.jsoneditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeName extends StObject {
   
-  var path: js.Array[String] = js.native
+  var path: js.Array[String]
   
-  var size: Double = js.native
+  var size: Double
   
-  var `type`: NodeType = js.native
+  var `type`: NodeType
 }
 object NodeName {
   

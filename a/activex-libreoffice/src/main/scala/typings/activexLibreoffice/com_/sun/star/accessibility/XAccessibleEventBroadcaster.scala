@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XAccessibleEventListener
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleEventBroadcaster extends XInterface {
+trait XAccessibleEventBroadcaster
+  extends StObject
+     with XInterface {
   
   /** registers the given {@link XAccessibleEventListener} . */
-  def addAccessibleEventListener(xListener: XAccessibleEventListener): Unit = js.native
+  def addAccessibleEventListener(xListener: XAccessibleEventListener): Unit
   
   /** unregisters the given {@link XAccessibleEventListener} . */
-  def removeAccessibleEventListener(xListener: XAccessibleEventListener): Unit = js.native
+  def removeAccessibleEventListener(xListener: XAccessibleEventListener): Unit
 }
 object XAccessibleEventBroadcaster {
   

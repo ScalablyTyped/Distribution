@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteTable extends StObject {
   
   /**
     * The associations between the route table and one or more subnets or a gateway.
     */
-  var Associations: js.UndefOr[RouteTableAssociationList] = js.native
+  var Associations: js.UndefOr[RouteTableAssociationList] = js.undefined
   
   /**
     * The ID of the AWS account that owns the route table.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Any virtual private gateway (VGW) propagating routes.
     */
-  var PropagatingVgws: js.UndefOr[PropagatingVgwList] = js.native
+  var PropagatingVgws: js.UndefOr[PropagatingVgwList] = js.undefined
   
   /**
     * The ID of the route table.
     */
-  var RouteTableId: js.UndefOr[String] = js.native
+  var RouteTableId: js.UndefOr[String] = js.undefined
   
   /**
     * The routes in the route table.
     */
-  var Routes: js.UndefOr[RouteList] = js.native
+  var Routes: js.UndefOr[RouteList] = js.undefined
   
   /**
     * Any tags assigned to the route table.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the VPC.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object RouteTable {
   

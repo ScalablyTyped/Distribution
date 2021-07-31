@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2OutputFile extends StObject {
   
   /**
     * The contents of the file if inlining was requested. The server SHOULD NOT inline file contents unless requested by the client in the GetActionResultRequest message. The server MAY
     * omit inlining, even if requested, and MUST do so if inlining would cause the response to exceed message size limits.
     */
-  var contents: js.UndefOr[String] = js.native
+  var contents: js.UndefOr[String] = js.undefined
   
   /** The digest of the file's content. */
-  var digest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.native
+  var digest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /** True if file is executable, false otherwise. */
-  var isExecutable: js.UndefOr[Boolean] = js.native
+  var isExecutable: js.UndefOr[Boolean] = js.undefined
   
   /** The supported node properties of the OutputFile, if requested by the Action. */
-  var nodeProperties: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2NodeProperty]] = js.native
+  var nodeProperties: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2NodeProperty]] = js.undefined
   
   /**
     * The full path of the file relative to the working directory, including the filename. The path separator is a forward slash `/`. Since this is a relative path, it MUST NOT begin with
     * a leading forward slash.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object BuildBazelRemoteExecutionV2OutputFile {
   

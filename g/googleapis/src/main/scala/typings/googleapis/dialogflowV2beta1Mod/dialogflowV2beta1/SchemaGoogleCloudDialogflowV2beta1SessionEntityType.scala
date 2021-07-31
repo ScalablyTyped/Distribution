@@ -2,7 +2,6 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * agent level as &quot;developer entity types&quot;).  Note: session entity
   * types apply to all queries, regardless of the language.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1SessionEntityType extends StObject {
   
   /**
     * Required. The collection of entities associated with this session entity
     * type.
     */
-  var entities: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity]] = js.native
+  var entities: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity]] = js.undefined
   
   /**
     * Required. Indicates whether the additional data should override or
     * supplement the developer entity type definition.
     */
-  var entityOverrideMode: js.UndefOr[String] = js.native
+  var entityOverrideMode: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The unique identifier of this session entity type. Format:
@@ -38,7 +36,7 @@ trait SchemaGoogleCloudDialogflowV2beta1SessionEntityType extends StObject {
     * Type Display Name&gt;` must be the display name of an existing entity
     * type in the same agent that will be overridden or supplemented.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1SessionEntityType {
   

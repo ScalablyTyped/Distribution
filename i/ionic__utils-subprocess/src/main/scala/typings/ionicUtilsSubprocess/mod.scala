@@ -9,10 +9,13 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@ionic/utils-subprocess", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/utils-subprocess", "ERROR_COMMAND_NOT_FOUND")
   @js.native
@@ -60,7 +63,9 @@ object mod {
   
   @JSImport("@ionic/utils-subprocess", "SubprocessError")
   @js.native
-  class SubprocessError protected () extends Error {
+  class SubprocessError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     
     var code: js.UndefOr[/* "ERR_SUBPROCESS_COMMAND_NOT_FOUND" */ String] = js.native
@@ -68,6 +73,12 @@ object mod {
     var error: js.UndefOr[Error] = js.native
     
     var exitCode: js.UndefOr[Double] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var output: js.UndefOr[String] = js.native
     
@@ -81,58 +92,42 @@ object mod {
   @js.native
   val TILDE_PATH_REGEX: RegExp = js.native
   
-  @JSImport("@ionic/utils-subprocess", "convertPATH")
-  @js.native
-  def convertPATH(): String = js.native
-  @JSImport("@ionic/utils-subprocess", "convertPATH")
-  @js.native
-  def convertPATH(path: String): String = js.native
+  @scala.inline
+  def convertPATH(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPATH")().asInstanceOf[String]
+  @scala.inline
+  def convertPATH(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPATH")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ionic/utils-subprocess", "expandTildePath")
-  @js.native
-  def expandTildePath(p: String): String = js.native
+  @scala.inline
+  def expandTildePath(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("expandTildePath")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ionic/utils-subprocess", "findExecutables")
-  @js.native
-  def findExecutables(program: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("@ionic/utils-subprocess", "findExecutables")
-  @js.native
-  def findExecutables(program: String, hasPATHPATHEXT: WhichOptions): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def findExecutables(program: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findExecutables")(program.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def findExecutables(program: String, hasPATHPATHEXT: WhichOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findExecutables")(program.asInstanceOf[js.Any], hasPATHPATHEXT.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @JSImport("@ionic/utils-subprocess", "fork")
-  @js.native
-  def fork(modulePath: String): ChildProcess = js.native
-  @JSImport("@ionic/utils-subprocess", "fork")
-  @js.native
-  def fork(modulePath: String, args: js.UndefOr[scala.Nothing], options: ForkOptionsPickSpawnOptio): ChildProcess = js.native
-  @JSImport("@ionic/utils-subprocess", "fork")
-  @js.native
-  def fork(modulePath: String, args: js.Array[String]): ChildProcess = js.native
-  @JSImport("@ionic/utils-subprocess", "fork")
-  @js.native
-  def fork(modulePath: String, args: js.Array[String], options: ForkOptionsPickSpawnOptio): ChildProcess = js.native
+  @scala.inline
+  def fork(modulePath: String): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any]).asInstanceOf[ChildProcess]
+  @scala.inline
+  def fork(modulePath: String, args: js.Array[String]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  @scala.inline
+  def fork(modulePath: String, args: js.Array[String], options: ForkOptionsPickSpawnOptio): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  @scala.inline
+  def fork(modulePath: String, args: Unit, options: ForkOptionsPickSpawnOptio): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
-  @JSImport("@ionic/utils-subprocess", "spawn")
-  @js.native
-  def spawn(command: String): ChildProcess = js.native
-  @JSImport("@ionic/utils-subprocess", "spawn")
-  @js.native
-  def spawn(command: String, args: js.UndefOr[scala.Nothing], options: SpawnOptions): ChildProcess = js.native
-  @JSImport("@ionic/utils-subprocess", "spawn")
-  @js.native
-  def spawn(command: String, args: js.Array[String]): ChildProcess = js.native
-  @JSImport("@ionic/utils-subprocess", "spawn")
-  @js.native
-  def spawn(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = js.native
+  @scala.inline
+  def spawn(command: String): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any]).asInstanceOf[ChildProcess]
+  @scala.inline
+  def spawn(command: String, args: js.Array[String]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  @scala.inline
+  def spawn(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  @scala.inline
+  def spawn(command: String, args: Unit, options: SpawnOptions): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
-  @JSImport("@ionic/utils-subprocess", "which")
-  @js.native
-  def which(program: String): js.Promise[String] = js.native
-  @JSImport("@ionic/utils-subprocess", "which")
-  @js.native
-  def which(program: String, hasPATHPATHEXT: WhichOptions): js.Promise[String] = js.native
+  @scala.inline
+  def which(program: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("which")(program.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def which(program: String, hasPATHPATHEXT: WhichOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("which")(program.asInstanceOf[js.Any], hasPATHPATHEXT.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @js.native
   trait SubprocessBashifyOptions extends StObject {
     
     /**
@@ -144,7 +139,7 @@ object mod {
       *
       * The default is `true`.
       */
-    var maskArgv0: js.UndefOr[Boolean] = js.native
+    var maskArgv0: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Mask file path to second argument.
@@ -155,7 +150,7 @@ object mod {
       *
       * The default is `false`.
       */
-    var maskArgv1: js.UndefOr[Boolean] = js.native
+    var maskArgv1: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Remove the first argument from output.
@@ -165,7 +160,7 @@ object mod {
       *
       * The default is `false`.
       */
-    var shiftArgv0: js.UndefOr[Boolean] = js.native
+    var shiftArgv0: js.UndefOr[Boolean] = js.undefined
   }
   object SubprocessBashifyOptions {
     
@@ -200,12 +195,11 @@ object mod {
   
   type SubprocessOptions = SpawnOptions
   
-  @js.native
   trait WhichOptions extends StObject {
     
-    var PATH: js.UndefOr[String] = js.native
+    var PATH: js.UndefOr[String] = js.undefined
     
-    var PATHEXT: js.UndefOr[String] = js.native
+    var PATHEXT: js.UndefOr[String] = js.undefined
   }
   object WhichOptions {
     

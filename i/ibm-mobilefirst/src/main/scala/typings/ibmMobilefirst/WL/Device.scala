@@ -2,17 +2,15 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Device {
   
-  @js.native
   trait AddressPair extends StObject {
     
-    var `3GAddress`: String = js.native
+    var `3GAddress`: String
     
-    var wifiAddress: String = js.native
+    var wifiAddress: String
   }
   object AddressPair {
     
@@ -34,28 +32,27 @@ object Device {
     }
   }
   
-  @js.native
   trait NetworkInfo extends StObject {
     
-    var Ipv4Addresses: js.UndefOr[js.Array[AddressPair]] = js.native
+    var Ipv4Addresses: js.UndefOr[js.Array[AddressPair]] = js.undefined
     
-    var Ipv6Addresses: js.UndefOr[js.Array[AddressPair]] = js.native
+    var Ipv6Addresses: js.UndefOr[js.Array[AddressPair]] = js.undefined
     
-    var carrierName: js.UndefOr[String] = js.native
+    var carrierName: js.UndefOr[String] = js.undefined
     
-    var ipAddress: js.UndefOr[String] = js.native
+    var ipAddress: js.UndefOr[String] = js.undefined
     
-    var isAirplaneMode: js.UndefOr[Boolean] = js.native
+    var isAirplaneMode: js.UndefOr[Boolean] = js.undefined
     
-    var isNetworkConnected: js.UndefOr[Boolean] = js.native
+    var isNetworkConnected: js.UndefOr[Boolean] = js.undefined
     
-    var isRoaming: js.UndefOr[Boolean] = js.native
+    var isRoaming: js.UndefOr[Boolean] = js.undefined
     
-    var networkConnectionType: js.UndefOr[String] = js.native
+    var networkConnectionType: js.UndefOr[String] = js.undefined
     
-    var telephonyNetworkType: js.UndefOr[String] = js.native
+    var telephonyNetworkType: js.UndefOr[String] = js.undefined
     
-    var wifiName: js.UndefOr[String] = js.native
+    var wifiName: js.UndefOr[String] = js.undefined
   }
   object NetworkInfo {
     

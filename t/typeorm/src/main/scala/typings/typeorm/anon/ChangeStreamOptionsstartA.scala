@@ -5,49 +5,47 @@ import typings.typeorm.typingsMod.CollationDocument
 import typings.typeorm.typingsMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined typeorm.typeorm/browser/driver/mongodb/typings.ChangeStreamOptions & {  startAtClusterTime :typeorm.typeorm/browser/driver/mongodb/typings.Timestamp | undefined,   session :typeorm.typeorm/browser/driver/mongodb/typings.ClientSession | undefined} */
-@js.native
 trait ChangeStreamOptionsstartA extends StObject {
   
   /**
     * The number of documents to return per batch.
     */
-  var batchSize: js.UndefOr[Double] = js.native
+  var batchSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify collation settings for operation.
     */
-  var collation: js.UndefOr[CollationDocument] = js.native
+  var collation: js.UndefOr[CollationDocument] = js.undefined
   
   /**
     * Allowed values: ‘default’, ‘updateLookup’.
     * When set to ‘updateLookup’, the change stream will include both a delta describing the changes to the document,
     * as well as a copy of the entire document that was changed from some time after the change occurred.
     */
-  var fullDocument: js.UndefOr[String] = js.native
+  var fullDocument: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum amount of time for the server to wait on new documents to satisfy a change stream query
     */
-  var maxAwaitTimeMS: js.UndefOr[Double] = js.native
+  var maxAwaitTimeMS: js.UndefOr[Double] = js.undefined
   
   /**
     * The read preference. Defaults to the read preference of the database or collection.
     */
-  var readPreference: js.UndefOr[typings.typeorm.typingsMod.ReadPreference] = js.native
+  var readPreference: js.UndefOr[typings.typeorm.typingsMod.ReadPreference] = js.undefined
   
   /**
     * Specifies the logical starting point for the new change stream.
     * This should be the _id field from a previously returned change stream document.
     */
-  var resumeAfter: js.UndefOr[js.Object] = js.native
+  var resumeAfter: js.UndefOr[js.Object] = js.undefined
   
-  var session: js.UndefOr[ClientSession] = js.native
+  var session: js.UndefOr[ClientSession] = js.undefined
   
-  var startAtClusterTime: js.UndefOr[Timestamp] = js.native
+  var startAtClusterTime: js.UndefOr[Timestamp] = js.undefined
 }
 object ChangeStreamOptionsstartA {
   

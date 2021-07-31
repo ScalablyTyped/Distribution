@@ -2,74 +2,72 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITheme extends StObject {
   
   /** The default background color */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /** ANSI black (eg. `\x1b[30m`) */
-  var black: js.UndefOr[String] = js.native
+  var black: js.UndefOr[String] = js.undefined
   
   /** ANSI blue (eg. `\x1b[34m`) */
-  var blue: js.UndefOr[String] = js.native
+  var blue: js.UndefOr[String] = js.undefined
   
   /** ANSI bright black (eg. `\x1b[1;30m`) */
-  var brightBlack: js.UndefOr[String] = js.native
+  var brightBlack: js.UndefOr[String] = js.undefined
   
   /** ANSI bright blue (eg. `\x1b[1;34m`) */
-  var brightBlue: js.UndefOr[String] = js.native
+  var brightBlue: js.UndefOr[String] = js.undefined
   
   /** ANSI bright cyan (eg. `\x1b[1;36m`) */
-  var brightCyan: js.UndefOr[String] = js.native
+  var brightCyan: js.UndefOr[String] = js.undefined
   
   /** ANSI bright green (eg. `\x1b[1;32m`) */
-  var brightGreen: js.UndefOr[String] = js.native
+  var brightGreen: js.UndefOr[String] = js.undefined
   
   /** ANSI bright magenta (eg. `\x1b[1;35m`) */
-  var brightMagenta: js.UndefOr[String] = js.native
+  var brightMagenta: js.UndefOr[String] = js.undefined
   
   /** ANSI bright red (eg. `\x1b[1;31m`) */
-  var brightRed: js.UndefOr[String] = js.native
+  var brightRed: js.UndefOr[String] = js.undefined
   
   /** ANSI bright white (eg. `\x1b[1;37m`) */
-  var brightWhite: js.UndefOr[String] = js.native
+  var brightWhite: js.UndefOr[String] = js.undefined
   
   /** ANSI bright yellow (eg. `\x1b[1;33m`) */
-  var brightYellow: js.UndefOr[String] = js.native
+  var brightYellow: js.UndefOr[String] = js.undefined
   
   /** The cursor color */
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
   /** The accent color of the cursor (fg color for a block cursor) */
-  var cursorAccent: js.UndefOr[String] = js.native
+  var cursorAccent: js.UndefOr[String] = js.undefined
   
   /** ANSI cyan (eg. `\x1b[36m`) */
-  var cyan: js.UndefOr[String] = js.native
+  var cyan: js.UndefOr[String] = js.undefined
   
   /** The default foreground color */
-  var foreground: js.UndefOr[String] = js.native
+  var foreground: js.UndefOr[String] = js.undefined
   
   /** ANSI green (eg. `\x1b[32m`) */
-  var green: js.UndefOr[String] = js.native
+  var green: js.UndefOr[String] = js.undefined
   
   /** ANSI magenta (eg. `\x1b[35m`) */
-  var magenta: js.UndefOr[String] = js.native
+  var magenta: js.UndefOr[String] = js.undefined
   
   /** ANSI red (eg. `\x1b[31m`) */
-  var red: js.UndefOr[String] = js.native
+  var red: js.UndefOr[String] = js.undefined
   
   /** The selection background color (can be transparent) */
-  var selection: js.UndefOr[String] = js.native
+  var selection: js.UndefOr[String] = js.undefined
   
   /** ANSI white (eg. `\x1b[37m`) */
-  var white: js.UndefOr[String] = js.native
+  var white: js.UndefOr[String] = js.undefined
   
   /** ANSI yellow (eg. `\x1b[33m`) */
-  var yellow: js.UndefOr[String] = js.native
+  var yellow: js.UndefOr[String] = js.undefined
 }
 object ITheme {
   

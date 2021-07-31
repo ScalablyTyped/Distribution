@@ -3,25 +3,23 @@ package typings.hermesProfileTransformer
 import typings.hermesProfileTransformer.anon.Mappings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceMapMod {
   
-  @js.native
   trait SourceMap extends StObject {
     
-    var mappings: String = js.native
+    var mappings: String
     
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
     
-    var sourceContent: js.Array[String] = js.native
+    var sourceContent: js.Array[String]
     
-    var sources: js.Array[String] = js.native
+    var sources: js.Array[String]
     
-    var version: String = js.native
+    var version: String
     
-    var x_facebook_sources: js.Array[Mappings] | Null = js.native
+    var x_facebook_sources: js.Array[Mappings] | Null
   }
   object SourceMap {
     
@@ -33,7 +31,7 @@ object sourceMapMod {
       sources: js.Array[String],
       version: String
     ): SourceMap = {
-      val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], sourceContent = sourceContent.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], sourceContent = sourceContent.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], x_facebook_sources = null)
       __obj.asInstanceOf[SourceMap]
     }
     

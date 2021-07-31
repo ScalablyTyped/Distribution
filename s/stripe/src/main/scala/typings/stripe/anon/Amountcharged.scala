@@ -8,23 +8,21 @@ import typings.stripe.stripeStrings.none
 import typings.stripe.stripeStrings.requested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Amountcharged extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var amount_charged: Double = js.native
+  var amount_charged: Double
   
-  var amount_received: Double = js.native
+  var amount_received: Double
   
-  var amount_returned: Double = js.native
+  var amount_returned: Double
   
-  var refund_attributes_method: email | manual | none = js.native
+  var refund_attributes_method: email | manual | none
   
-  var refund_attributes_status: missing | requested | available = js.native
+  var refund_attributes_status: missing | requested | available
 }
 object Amountcharged {
   

@@ -3,26 +3,24 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2Finding extends StObject {
   
   /** Timestamp when finding was detected. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The unique finding id. */
-  var findingId: js.UndefOr[String] = js.native
+  var findingId: js.UndefOr[String] = js.undefined
   
   /** The type of content that might have been found. Provided if `excluded_types` is false. */
-  var infoType: js.UndefOr[GooglePrivacyDlpV2InfoType] = js.native
+  var infoType: js.UndefOr[GooglePrivacyDlpV2InfoType] = js.undefined
   
   /** Time the job started that produced this finding. */
-  var jobCreateTime: js.UndefOr[String] = js.native
+  var jobCreateTime: js.UndefOr[String] = js.undefined
   
   /** The job that stored the finding. */
-  var jobName: js.UndefOr[String] = js.native
+  var jobName: js.UndefOr[String] = js.undefined
   
   /**
     * The labels associated with this `Finding`. Label keys must be between 1 and 63 characters long and must conform to the following regular expression: `[a-z]([-a-z0-9]*[a-z0-9])?`.
@@ -32,35 +30,35 @@ trait GooglePrivacyDlpV2Finding extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2Finding with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2Finding & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Confidence of how likely it is that the `info_type` is correct. */
-  var likelihood: js.UndefOr[String] = js.native
+  var likelihood: js.UndefOr[String] = js.undefined
   
   /** Where the content was found. */
-  var location: js.UndefOr[GooglePrivacyDlpV2Location] = js.native
+  var location: js.UndefOr[GooglePrivacyDlpV2Location] = js.undefined
   
   /** Resource name in format projects/{project}/locations/{location}/findings/{finding} Populated only when viewing persisted findings. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The content that was found. Even if the content is not textual, it may be converted to a textual representation here. Provided if `include_quote` is true and the finding is less
     * than or equal to 4096 bytes long. If the finding exceeds 4096 bytes in length, the quote may be omitted.
     */
-  var quote: js.UndefOr[String] = js.native
+  var quote: js.UndefOr[String] = js.undefined
   
   /**
     * Contains data parsed from quotes. Only populated if include_quote was set to true and a supported infoType was requested. Currently supported infoTypes: DATE, DATE_OF_BIRTH and
     * TIME.
     */
-  var quoteInfo: js.UndefOr[GooglePrivacyDlpV2QuoteInfo] = js.native
+  var quoteInfo: js.UndefOr[GooglePrivacyDlpV2QuoteInfo] = js.undefined
   
   /** The job that stored the finding. */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /** Job trigger name, if applicable, for this finding. */
-  var triggerName: js.UndefOr[String] = js.native
+  var triggerName: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2Finding {
   
@@ -107,7 +105,7 @@ object GooglePrivacyDlpV2Finding {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2Finding with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2Finding & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

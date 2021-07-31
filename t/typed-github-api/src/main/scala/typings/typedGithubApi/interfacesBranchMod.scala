@@ -6,15 +6,15 @@ import typings.typedGithubApi.interfacesRepositoryMod.RepositoryRef
 import typings.typedGithubApi.interfacesUserMod.UserSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesBranchMod {
   
-  @js.native
-  trait Branch extends BranchRef {
+  trait Branch
+    extends StObject
+       with BranchRef {
     
-    var commit: CommitSummary = js.native
+    var commit: CommitSummary
   }
   object Branch {
     
@@ -37,14 +37,13 @@ object interfacesBranchMod {
     }
   }
   
-  @js.native
   trait BranchRef extends StObject {
     
-    def loadAsync(): js.Promise[Branch | Null] = js.native
+    def loadAsync(): js.Promise[Branch | Null]
     
-    val name: String = js.native
+    val name: String
     
-    val repository: RepositoryRef = js.native
+    val repository: RepositoryRef
   }
   object BranchRef {
     
@@ -68,16 +67,15 @@ object interfacesBranchMod {
     }
   }
   
-  @js.native
   trait BranchSummary extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var repository: js.UndefOr[Repository] = js.native
+    var repository: js.UndefOr[Repository] = js.undefined
     
-    var sha: String = js.native
+    var sha: String
     
-    var user: UserSummary = js.native
+    var user: UserSummary
   }
   object BranchSummary {
     
@@ -107,11 +105,12 @@ object interfacesBranchMod {
     }
   }
   
-  @js.native
-  trait BranchSummaryWithRepository extends BranchSummary {
+  trait BranchSummaryWithRepository
+    extends StObject
+       with BranchSummary {
     
     @JSName("repository")
-    var repository_BranchSummaryWithRepository: Repository = js.native
+    var repository_BranchSummaryWithRepository: Repository
   }
   object BranchSummaryWithRepository {
     

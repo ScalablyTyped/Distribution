@@ -9,7 +9,6 @@ import typings.nodeMysqlWrapper.Mongo.ObjectIDStatic
 import typings.nodeMysqlWrapper.anon.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -46,7 +45,9 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Mongo.Collection")
     @js.native
-    class CollectionCls[T] protected () extends Collection[T] {
+    class CollectionCls[T] protected ()
+      extends StObject
+         with Collection[T] {
       def this(name: String) = this()
       def this(name: String, options: Connection) = this()
     }
@@ -61,7 +62,9 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Mongo.Cursor")
     @js.native
-    class CursorCls[T] () extends Cursor[T]
+    class CursorCls[T] ()
+      extends StObject
+         with Cursor[T]
     
     @scala.inline
     def Cursor_=(x: CursorStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cursor")(x.asInstanceOf[js.Any])
@@ -73,7 +76,9 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Mongo.ObjectID")
     @js.native
-    class ObjectIDCls protected () extends ObjectID {
+    class ObjectIDCls protected ()
+      extends StObject
+         with ObjectID {
       def this(hexString: String) = this()
     }
     

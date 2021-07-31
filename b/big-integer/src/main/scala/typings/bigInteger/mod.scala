@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.bigInteger.anon.Quotient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,12 +12,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : BigIntegerStatic = js.native
   
-  @js.native
   trait BaseArray extends StObject {
     
-    var isNegative: Boolean = js.native
+    var isNegative: Boolean
     
-    var value: js.Array[Double] = js.native
+    var value: js.Array[Double]
   }
   object BaseArray {
     
@@ -93,16 +91,6 @@ object mod extends Shortcut {
     def divmod(number: BigNumber): Quotient = js.native
     
     /**
-      * Alias for the equals method.
-      */
-    def eq(number: BigNumber): Boolean = js.native
-    
-    /**
-      * Checks if two numbers are equal.
-      */
-    def equals(number: BigNumber): Boolean = js.native
-    
-    /**
       * Alias for the greaterOrEquals method.
       */
     def geq(number: BigNumber): Boolean = js.native
@@ -158,9 +146,9 @@ object mod extends Shortcut {
       * Returns true if the number is very likely to be prime, false otherwise.
       */
     def isProbablePrime(): Boolean = js.native
-    def isProbablePrime(iterations: js.UndefOr[scala.Nothing], rng: js.Function0[Double]): Boolean = js.native
     def isProbablePrime(iterations: Double): Boolean = js.native
     def isProbablePrime(iterations: Double, rng: js.Function0[Double]): Boolean = js.native
+    def isProbablePrime(iterations: Unit, rng: js.Function0[Double]): Boolean = js.native
     
     /**
       * Returns true if the number is 1 or -1, false otherwise.
@@ -321,9 +309,9 @@ object mod extends Shortcut {
       */
     def toJSON(): String = js.native
     
-    def toString(radix: js.UndefOr[scala.Nothing], alphabet: String): String = js.native
     def toString(radix: Double): String = js.native
     def toString(radix: Double, alphabet: String): String = js.native
+    def toString(radix: Unit, alphabet: String): String = js.native
     
     /**
       * Performs the bitwise XOR operation.
@@ -358,15 +346,13 @@ object mod extends Shortcut {
       * caseSensitive defaults to false.
       */
     def apply(string: String): BigInteger = js.native
-    def apply(
-      string: String,
-      base: js.UndefOr[BigNumber],
-      alphabet: js.UndefOr[scala.Nothing],
-      caseSensitive: Boolean
-    ): BigInteger = js.native
-    def apply(string: String, base: js.UndefOr[BigNumber], alphabet: String): BigInteger = js.native
-    def apply(string: String, base: js.UndefOr[BigNumber], alphabet: String, caseSensitive: Boolean): BigInteger = js.native
+    def apply(string: String, base: Unit, alphabet: String): BigInteger = js.native
+    def apply(string: String, base: Unit, alphabet: String, caseSensitive: Boolean): BigInteger = js.native
+    def apply(string: String, base: Unit, alphabet: Unit, caseSensitive: Boolean): BigInteger = js.native
     def apply(string: String, base: BigNumber): BigInteger = js.native
+    def apply(string: String, base: BigNumber, alphabet: String): BigInteger = js.native
+    def apply(string: String, base: BigNumber, alphabet: String, caseSensitive: Boolean): BigInteger = js.native
+    def apply(string: String, base: BigNumber, alphabet: Unit, caseSensitive: Boolean): BigInteger = js.native
     
     var `-1`: BigInteger = js.native
     
@@ -4371,8 +4357,9 @@ object mod extends Shortcut {
       * The optional isNegative flag will make the number negative.
       */
     def fromArray(digits: js.Array[BigNumber]): BigInteger = js.native
-    def fromArray(digits: js.Array[BigNumber], base: js.UndefOr[BigNumber], isNegative: Boolean): BigInteger = js.native
+    def fromArray(digits: js.Array[BigNumber], base: Unit, isNegative: Boolean): BigInteger = js.native
     def fromArray(digits: js.Array[BigNumber], base: BigNumber): BigInteger = js.native
+    def fromArray(digits: js.Array[BigNumber], base: BigNumber, isNegative: Boolean): BigInteger = js.native
     
     /**
       * Finds the greatest common denominator of a and b.

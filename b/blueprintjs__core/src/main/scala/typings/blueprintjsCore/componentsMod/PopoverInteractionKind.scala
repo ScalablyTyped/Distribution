@@ -6,7 +6,6 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.click
 import typings.blueprintjsCore.blueprintjsCoreStrings.hover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PopoverInteractionKind {

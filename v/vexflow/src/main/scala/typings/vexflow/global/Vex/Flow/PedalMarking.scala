@@ -2,13 +2,13 @@ package typings.vexflow.global.Vex.Flow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Vex.Flow.PedalMarking")
 @js.native
 class PedalMarking protected ()
-  extends typings.vexflow.Vex.Flow.PedalMarking {
+  extends StObject
+     with typings.vexflow.Vex.Flow.PedalMarking {
   def this(notes: js.Array[typings.vexflow.Vex.Flow.Note]) = this()
 }
 object PedalMarking {
@@ -30,27 +30,24 @@ object PedalMarking {
   object Styles extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.PedalMarking.Styles with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.PedalMarking.Styles & Double] = js.native
     
-    /* 0 */ val BRACKET: typings.vexflow.Vex.Flow.PedalMarking.Styles.BRACKET with Double = js.native
+    /* 0 */ val BRACKET: typings.vexflow.Vex.Flow.PedalMarking.Styles.BRACKET & Double = js.native
     
-    /* 1 */ val MIXED: typings.vexflow.Vex.Flow.PedalMarking.Styles.MIXED with Double = js.native
+    /* 1 */ val MIXED: typings.vexflow.Vex.Flow.PedalMarking.Styles.MIXED & Double = js.native
     
-    /* 1 */ val TEXT: typings.vexflow.Vex.Flow.PedalMarking.Styles.TEXT with Double = js.native
+    /* 1 */ val TEXT: typings.vexflow.Vex.Flow.PedalMarking.Styles.TEXT & Double = js.native
   }
   
   /* static member */
-  @JSGlobal("Vex.Flow.PedalMarking.createSostenuto")
-  @js.native
-  def createSostenuto(notes: js.Array[typings.vexflow.Vex.Flow.Note]): typings.vexflow.Vex.Flow.PedalMarking = js.native
+  @scala.inline
+  def createSostenuto(notes: js.Array[typings.vexflow.Vex.Flow.Note]): typings.vexflow.Vex.Flow.PedalMarking = ^.asInstanceOf[js.Dynamic].applyDynamic("createSostenuto")(notes.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.PedalMarking]
   
   /* static member */
-  @JSGlobal("Vex.Flow.PedalMarking.createSustain")
-  @js.native
-  def createSustain(notes: js.Array[typings.vexflow.Vex.Flow.Note]): typings.vexflow.Vex.Flow.PedalMarking = js.native
+  @scala.inline
+  def createSustain(notes: js.Array[typings.vexflow.Vex.Flow.Note]): typings.vexflow.Vex.Flow.PedalMarking = ^.asInstanceOf[js.Dynamic].applyDynamic("createSustain")(notes.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.PedalMarking]
   
   /* static member */
-  @JSGlobal("Vex.Flow.PedalMarking.createUnaCorda")
-  @js.native
-  def createUnaCorda(notes: js.Array[typings.vexflow.Vex.Flow.Note]): typings.vexflow.Vex.Flow.PedalMarking = js.native
+  @scala.inline
+  def createUnaCorda(notes: js.Array[typings.vexflow.Vex.Flow.Note]): typings.vexflow.Vex.Flow.PedalMarking = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnaCorda")(notes.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.PedalMarking]
 }

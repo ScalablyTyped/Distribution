@@ -2,20 +2,18 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A color that can either be fully opaque or fully transparent.
   */
-@js.native
 trait SchemaOptionalColor extends StObject {
   
   /**
     * If set, this will be used as an opaque color. If unset, this represents a
     * transparent color.
     */
-  var opaqueColor: js.UndefOr[SchemaOpaqueColor] = js.native
+  var opaqueColor: js.UndefOr[SchemaOpaqueColor] = js.undefined
 }
 object SchemaOptionalColor {
   

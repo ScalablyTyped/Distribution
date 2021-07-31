@@ -2,41 +2,39 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTrainingJobsForHyperParameterTuningJobRequest extends StObject {
   
   /**
     * The name of the tuning job whose training jobs you want to list.
     */
-  var HyperParameterTuningJobName: typings.awsSdk.sagemakerMod.HyperParameterTuningJobName = js.native
+  var HyperParameterTuningJobName: typings.awsSdk.sagemakerMod.HyperParameterTuningJobName
   
   /**
     * The maximum number of training jobs to return. The default value is 10.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * If the result of the previous ListTrainingJobsForHyperParameterTuningJob request was truncated, the response includes a NextToken. To retrieve the next set of training jobs, use the token in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The field to sort results by. The default is Name. If the value of this field is FinalObjectiveMetricValue, any training jobs that did not return an objective metric are not listed.
     */
-  var SortBy: js.UndefOr[TrainingJobSortByOptions] = js.native
+  var SortBy: js.UndefOr[TrainingJobSortByOptions] = js.undefined
   
   /**
     * The sort order for results. The default is Ascending.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.undefined
   
   /**
     * A filter that returns only training jobs with the specified status.
     */
-  var StatusEquals: js.UndefOr[TrainingJobStatus] = js.native
+  var StatusEquals: js.UndefOr[TrainingJobStatus] = js.undefined
 }
 object ListTrainingJobsForHyperParameterTuningJobRequest {
   

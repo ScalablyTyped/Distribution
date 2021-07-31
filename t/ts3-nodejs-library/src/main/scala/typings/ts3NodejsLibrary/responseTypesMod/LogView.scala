@@ -3,17 +3,17 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LogView extends ResponseEntry {
+trait LogView
+  extends StObject
+     with ResponseEntry {
   
-  var fileSize: Double = js.native
+  var fileSize: Double
   
-  var l: String = js.native
+  var l: String
   
-  var lastPos: Double = js.native
+  var lastPos: Double
 }
 object LogView {
   

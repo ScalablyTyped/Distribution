@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConnectionsResponse extends StObject {
   
   /** The list of Connections. */
-  var connections: js.UndefOr[js.Array[Connection]] = js.native
+  var connections: js.UndefOr[js.Array[Connection]] = js.undefined
 }
 object ListConnectionsResponse {
   

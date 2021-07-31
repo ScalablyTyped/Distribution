@@ -5,26 +5,25 @@ import typings.bizcharts.anon.X
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewProps
-  extends Props[js.Any] {
+  extends StObject
+     with Props[js.Any] {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var end: js.UndefOr[X] = js.native
+  var end: js.UndefOr[X] = js.undefined
   
-  var filter: js.UndefOr[js.Array[_]] = js.native
+  var filter: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var scale: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var scale: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var start: js.UndefOr[X] = js.native
+  var start: js.UndefOr[X] = js.undefined
 }
 object ViewProps {
   
@@ -56,7 +55,7 @@ object ViewProps {
     def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def setFilter(value: js.Array[_]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)

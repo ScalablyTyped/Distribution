@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociationFilter extends StObject {
   
   /**
     * The name of the filter.   InstanceId has been deprecated. 
     */
-  var key: AssociationFilterKey = js.native
+  var key: AssociationFilterKey
   
   /**
     * The filter value.
     */
-  var value: AssociationFilterValue = js.native
+  var value: AssociationFilterValue
 }
 object AssociationFilter {
   

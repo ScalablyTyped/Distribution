@@ -2,10 +2,8 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusBarPropsAndroid extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait StatusBarPropsAndroid extends StObject {
     *
     * @platform android
     */
-  var backgroundColor: js.UndefOr[ColorValue] = js.native
+  var backgroundColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * If the status bar is translucent. When translucent is set to true,
     * the app will draw under the status bar. This is useful when using a
     * semi transparent status bar color.
     */
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
 }
 object StatusBarPropsAndroid {
   

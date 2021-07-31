@@ -3,16 +3,14 @@ package typings.awsSdk.s3Mod
 import typings.awsSdk.anon.Cont
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectObjectContentOutput extends StObject {
   
   /**
     * The array of results.
     */
-  var Payload: js.UndefOr[SelectObjectContentEventStream] = js.native
+  var Payload: js.UndefOr[SelectObjectContentEventStream] = js.undefined
 }
 object SelectObjectContentOutput {
   

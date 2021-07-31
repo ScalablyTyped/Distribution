@@ -3,17 +3,15 @@ package typings.amapJsSdk.anon
 import typings.amapJsSdk.AMap.TileLayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsOpen extends StObject {
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var tileLayer: js.UndefOr[js.Array[TileLayer]] = js.native
+  var tileLayer: js.UndefOr[js.Array[TileLayer]] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object IsOpen {
   

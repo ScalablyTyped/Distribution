@@ -3,34 +3,34 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectiveNode extends Node2 {
+trait DirectiveNode
+  extends StObject
+     with Node2 {
   
-  var arg: js.UndefOr[ExpressionNode] = js.native
+  var arg: js.UndefOr[ExpressionNode] = js.undefined
   
-  var exp: js.UndefOr[ExpressionNode] = js.native
+  var exp: js.UndefOr[ExpressionNode] = js.undefined
   
-  var modifiers: js.Array[String] = js.native
+  var modifiers: js.Array[String]
   
-  var name: String = js.native
+  var name: String
   
   /**
     * optional property to cache the expression parse result for v-for
     */
-  var parseResult: js.UndefOr[ForParseResult] = js.native
+  var parseResult: js.UndefOr[ForParseResult] = js.undefined
   
   @JSName("type")
-  var type_DirectiveNode: `7` = js.native
+  var type_DirectiveNode: `7`
 }
 object DirectiveNode {
   
   @scala.inline
-  def apply(loc: SourceLocation, modifiers: js.Array[String], name: String, `type`: `7`): DirectiveNode = {
+  def apply(loc: SourceLocation, modifiers: js.Array[String], name: String): DirectiveNode = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(7)
     __obj.asInstanceOf[DirectiveNode]
   }
   

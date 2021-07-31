@@ -2,19 +2,17 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlbumsControlOptions extends StObject {
   
-  var anchor: js.UndefOr[ControlAnchor] = js.native
+  var anchor: js.UndefOr[ControlAnchor] = js.undefined
   
-  var imageHeight: js.UndefOr[Double] = js.native
+  var imageHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double | String] = js.native
+  var maxWidth: js.UndefOr[Double | String] = js.undefined
   
-  var offset: js.UndefOr[Size] = js.native
+  var offset: js.UndefOr[Size] = js.undefined
 }
 object AlbumsControlOptions {
   

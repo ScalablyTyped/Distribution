@@ -2,25 +2,23 @@ package typings.chui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callback extends StObject {
   
-  var callback: js.UndefOr[js.Function] = js.native
+  var callback: js.UndefOr[js.Function] = js.undefined
   
-  var cancelButton: js.UndefOr[String] = js.native
+  var cancelButton: js.UndefOr[String] = js.undefined
   
-  var continueButton: js.UndefOr[String] = js.native
+  var continueButton: js.UndefOr[String] = js.undefined
   
-  var empty: js.UndefOr[Boolean] = js.native
+  var empty: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Callback {
   

@@ -3,13 +3,13 @@ package typings.hummusRecipe.mod
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Metadata extends /* PagesIndex */ NumberDictionary[PageInfo] {
+trait Metadata
+  extends StObject
+     with /* PagesIndex */ NumberDictionary[PageInfo] {
   
-  var pages: Double = js.native
+  var pages: Double
 }
 object Metadata {
   

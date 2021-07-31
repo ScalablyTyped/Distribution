@@ -2,31 +2,29 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBParameterGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the DB parameter group.
     */
-  var DBParameterGroupArn: js.UndefOr[String] = js.native
+  var DBParameterGroupArn: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the name of the DB parameter group family that this DB parameter group is compatible with.
     */
-  var DBParameterGroupFamily: js.UndefOr[String] = js.native
+  var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the name of the DB parameter group.
     */
-  var DBParameterGroupName: js.UndefOr[String] = js.native
+  var DBParameterGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the customer-specified description for this DB parameter group.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
 }
 object DBParameterGroup {
   

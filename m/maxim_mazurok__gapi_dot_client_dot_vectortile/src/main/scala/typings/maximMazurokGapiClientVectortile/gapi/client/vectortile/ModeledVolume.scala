@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModeledVolume extends StObject {
   
   /** The triangle strips present in this mesh. */
-  var strips: js.UndefOr[js.Array[TriangleStrip]] = js.native
+  var strips: js.UndefOr[js.Array[TriangleStrip]] = js.undefined
   
   /** The vertices present in the mesh defining the modeled volume. */
-  var vertexOffsets: js.UndefOr[Vertex3DList] = js.native
+  var vertexOffsets: js.UndefOr[Vertex3DList] = js.undefined
 }
 object ModeledVolume {
   

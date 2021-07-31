@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v1", "remotebuildexecution_v1.Resource$V1")
@@ -31,7 +30,7 @@ class ResourceV1 protected () extends StObject {
     */
   def watch(): GaxiosPromise[SchemaGoogleWatcherV1ChangeBatch] = js.native
   def watch(callback: BodyResponseCallback[SchemaGoogleWatcherV1ChangeBatch]): Unit = js.native
-  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleWatcherV1ChangeBatch] = js.native
+  def watch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleWatcherV1ChangeBatch] = js.native
   def watch(params: ParamsResourceV1Watch): GaxiosPromise[SchemaGoogleWatcherV1ChangeBatch] = js.native
   def watch(params: ParamsResourceV1Watch, callback: BodyResponseCallback[SchemaGoogleWatcherV1ChangeBatch]): Unit = js.native
   def watch(

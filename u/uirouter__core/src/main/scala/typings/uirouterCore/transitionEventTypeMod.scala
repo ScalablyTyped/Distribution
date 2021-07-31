@@ -9,7 +9,6 @@ import typings.uirouterCore.transitionInterfaceMod.PathType
 import typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionEventTypeMod {
@@ -30,14 +29,6 @@ object transitionEventTypeMod {
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler
-    ) = this()
-    def this(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
       reverseSort: Boolean,
       getResultHandler: GetResultHandler
     ) = this()
@@ -46,18 +37,8 @@ object transitionEventTypeMod {
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: GetErrorHandler
-    ) = this()
-    def this(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler,
-      getErrorHandler: GetErrorHandler
+      reverseSort: Unit,
+      getResultHandler: GetResultHandler
     ) = this()
     def this(
       name: String,
@@ -65,7 +46,7 @@ object transitionEventTypeMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
+      getResultHandler: Unit,
       getErrorHandler: GetErrorHandler
     ) = this()
     def this(
@@ -82,39 +63,27 @@ object transitionEventTypeMod {
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: js.UndefOr[scala.Nothing],
-      synchronous: Boolean
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: GetErrorHandler
     ) = this()
     def this(
       name: String,
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: GetErrorHandler,
-      synchronous: Boolean
-    ) = this()
-    def this(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
+      reverseSort: Unit,
       getResultHandler: GetResultHandler,
-      getErrorHandler: js.UndefOr[scala.Nothing],
-      synchronous: Boolean
+      getErrorHandler: GetErrorHandler
     ) = this()
     def this(
       name: String,
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler,
-      getErrorHandler: GetErrorHandler,
+      reverseSort: Boolean,
+      getResultHandler: Unit,
+      getErrorHandler: Unit,
       synchronous: Boolean
     ) = this()
     def this(
@@ -123,17 +92,7 @@ object transitionEventTypeMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: js.UndefOr[scala.Nothing],
-      synchronous: Boolean
-    ) = this()
-    def this(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
+      getResultHandler: Unit,
       getErrorHandler: GetErrorHandler,
       synchronous: Boolean
     ) = this()
@@ -144,7 +103,7 @@ object transitionEventTypeMod {
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
       getResultHandler: GetResultHandler,
-      getErrorHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: Unit,
       synchronous: Boolean
     ) = this()
     def this(
@@ -153,6 +112,46 @@ object transitionEventTypeMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: Unit,
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: Unit,
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
       getResultHandler: GetResultHandler,
       getErrorHandler: GetErrorHandler,
       synchronous: Boolean

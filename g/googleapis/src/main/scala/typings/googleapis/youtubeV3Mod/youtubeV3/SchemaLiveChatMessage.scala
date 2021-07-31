@@ -2,42 +2,40 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A liveChatMessage resource represents a chat message in a YouTube Live
   * Chat.
   */
-@js.native
 trait SchemaLiveChatMessage extends StObject {
   
   /**
     * The authorDetails object contains basic details about the user that
     * posted this message.
     */
-  var authorDetails: js.UndefOr[SchemaLiveChatMessageAuthorDetails] = js.native
+  var authorDetails: js.UndefOr[SchemaLiveChatMessageAuthorDetails] = js.undefined
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube assigns to uniquely identify the message.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#liveChatMessage&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet object contains basic details about the message.
     */
-  var snippet: js.UndefOr[SchemaLiveChatMessageSnippet] = js.native
+  var snippet: js.UndefOr[SchemaLiveChatMessageSnippet] = js.undefined
 }
 object SchemaLiveChatMessage {
   

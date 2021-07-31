@@ -2,7 +2,6 @@ package typings.seleniumWebdriver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "WebElementCondition")
@@ -19,5 +18,5 @@ class WebElementCondition protected () extends Condition[WebElement] {
   
   // add an unused private member so the compiler treats this
   // class distinct from other Conditions
-  var _nominal: js.UndefOr[scala.Nothing] = js.native
+  var _nominal: Unit = js.native
 }

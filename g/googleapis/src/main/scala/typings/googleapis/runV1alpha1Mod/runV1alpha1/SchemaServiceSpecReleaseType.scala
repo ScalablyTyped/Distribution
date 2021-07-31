@@ -2,21 +2,19 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ServiceSpecReleaseType contains the options for slowly releasing revisions.
   * See ServiceSpec for more details.  Not currently supported by Cloud Run.
   */
-@js.native
 trait SchemaServiceSpecReleaseType extends StObject {
   
   /**
     * The configuration for this service. All revisions from this service must
     * come from a single configuration.
     */
-  var configuration: js.UndefOr[SchemaConfigurationSpec] = js.native
+  var configuration: js.UndefOr[SchemaConfigurationSpec] = js.undefined
   
   /**
     * Revisions is an ordered list of 1 or 2 revisions. The first is the
@@ -25,14 +23,14 @@ trait SchemaServiceSpecReleaseType extends StObject {
     * &quot;@latest&quot; is a shortcut for usage that refers to the latest
     * created revision by the configuration.
     */
-  var revisions: js.UndefOr[js.Array[String]] = js.native
+  var revisions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * RolloutPercent is the percent of traffic that should be sent to the
     * candidate revision, i.e. the 2nd revision in the revisions list. Valid
     * values are between 0 and 99 inclusive.
     */
-  var rolloutPercent: js.UndefOr[Double] = js.native
+  var rolloutPercent: js.UndefOr[Double] = js.undefined
 }
 object SchemaServiceSpecReleaseType {
   

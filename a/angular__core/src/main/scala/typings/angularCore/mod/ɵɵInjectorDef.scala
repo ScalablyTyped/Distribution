@@ -2,28 +2,26 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ɵɵInjectorDef[T] extends StObject {
   
-  def factory(): T = js.native
+  def factory(): T
   
-  var imports: js.Array[InjectorType[_] | InjectorTypeWithProviders[_]] = js.native
+  var imports: js.Array[InjectorType[js.Any] | InjectorTypeWithProviders[js.Any]]
   
   var providers: js.Array[
-    typings.angularCore.mod.Type[_] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[_]
-  ] = js.native
+    Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any]
+  ]
 }
 object ɵɵInjectorDef {
   
   @scala.inline
   def apply[T](
     factory: () => T,
-    imports: js.Array[InjectorType[_] | InjectorTypeWithProviders[_]],
+    imports: js.Array[InjectorType[js.Any] | InjectorTypeWithProviders[js.Any]],
     providers: js.Array[
-      typings.angularCore.mod.Type[_] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[_]
+      Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any]
     ]
   ): ɵɵInjectorDef[T] = {
     val __obj = js.Dynamic.literal(factory = js.Any.fromFunction0(factory), imports = imports.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any])
@@ -31,13 +29,13 @@ object ɵɵInjectorDef {
   }
   
   @scala.inline
-  implicit class ɵɵInjectorDefMutableBuilder[Self <: ɵɵInjectorDef[_], T] (val x: Self with ɵɵInjectorDef[T]) extends AnyVal {
+  implicit class ɵɵInjectorDefMutableBuilder[Self <: ɵɵInjectorDef[?], T] (val x: Self & ɵɵInjectorDef[T]) extends AnyVal {
     
     @scala.inline
     def setFactory(value: () => T): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setImports(value: js.Array[InjectorType[_] | InjectorTypeWithProviders[_]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    def setImports(value: js.Array[InjectorType[js.Any] | InjectorTypeWithProviders[js.Any]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setImportsVarargs(value: (InjectorType[js.Any] | InjectorTypeWithProviders[js.Any])*): Self = StObject.set(x, "imports", js.Array(value :_*))
@@ -45,13 +43,13 @@ object ɵɵInjectorDef {
     @scala.inline
     def setProviders(
       value: js.Array[
-          typings.angularCore.mod.Type[_] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[_]
+          Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any]
         ]
     ): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProvidersVarargs(
-      value: (typings.angularCore.mod.Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any])*
+      value: (Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any])*
     ): Self = StObject.set(x, "providers", js.Array(value :_*))
   }
 }

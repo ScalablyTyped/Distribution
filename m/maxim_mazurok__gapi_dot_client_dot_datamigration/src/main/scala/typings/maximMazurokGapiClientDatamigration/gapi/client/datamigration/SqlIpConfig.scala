@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlIpConfig extends StObject {
   
   /**
     * The list of external networks that are allowed to connect to the instance using the IP. See https://en.wikipedia.org/wiki/CIDR_notation#CIDR_notation, also known as 'slash' notation
     * (e.g. `192.168.100.0/24`).
     */
-  var authorizedNetworks: js.UndefOr[js.Array[SqlAclEntry]] = js.native
+  var authorizedNetworks: js.UndefOr[js.Array[SqlAclEntry]] = js.undefined
   
   /** Whether the instance should be assigned an IPv4 address or not. */
-  var enableIpv4: js.UndefOr[Boolean] = js.native
+  var enableIpv4: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The resource link for the VPC network from which the Cloud SQL instance is accessible for private IP. For example, `/projects/myProject/global/networks/default`. This setting can be
     * updated, but it cannot be removed after it is set.
     */
-  var privateNetwork: js.UndefOr[String] = js.native
+  var privateNetwork: js.UndefOr[String] = js.undefined
   
   /** Whether SSL connections over IP should be enforced or not. */
-  var requireSsl: js.UndefOr[Boolean] = js.native
+  var requireSsl: js.UndefOr[Boolean] = js.undefined
 }
 object SqlIpConfig {
   

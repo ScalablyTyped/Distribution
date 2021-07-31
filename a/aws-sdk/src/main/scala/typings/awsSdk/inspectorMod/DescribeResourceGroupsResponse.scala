@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeResourceGroupsResponse extends StObject {
   
   /**
     * Resource group details that cannot be described. An error code is provided for each failed item.
     */
-  var failedItems: FailedItems = js.native
+  var failedItems: FailedItems
   
   /**
     * Information about a resource group.
     */
-  var resourceGroups: ResourceGroupList = js.native
+  var resourceGroups: ResourceGroupList
 }
 object DescribeResourceGroupsResponse {
   

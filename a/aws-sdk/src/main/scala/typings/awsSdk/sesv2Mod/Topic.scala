@@ -2,31 +2,29 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Topic extends StObject {
   
   /**
     * The default subscription status to be applied to a contact if the contact has not noted their preference for subscribing to a topic.
     */
-  var DefaultSubscriptionStatus: SubscriptionStatus = js.native
+  var DefaultSubscriptionStatus: SubscriptionStatus
   
   /**
     * A description of what the topic is about, which the contact will see.
     */
-  var Description: js.UndefOr[typings.awsSdk.sesv2Mod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.sesv2Mod.Description] = js.undefined
   
   /**
     * The name of the topic the contact will see.
     */
-  var DisplayName: typings.awsSdk.sesv2Mod.DisplayName = js.native
+  var DisplayName: typings.awsSdk.sesv2Mod.DisplayName
   
   /**
     * The name of the topic.
     */
-  var TopicName: typings.awsSdk.sesv2Mod.TopicName = js.native
+  var TopicName: typings.awsSdk.sesv2Mod.TopicName
 }
 object Topic {
   

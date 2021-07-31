@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelReservedInstancesListingRequest extends StObject {
   
   /**
     * The ID of the Reserved Instance listing.
     */
-  var ReservedInstancesListingId: typings.awsSdk.ec2Mod.ReservedInstancesListingId = js.native
+  var ReservedInstancesListingId: typings.awsSdk.ec2Mod.ReservedInstancesListingId
 }
 object CancelReservedInstancesListingRequest {
   

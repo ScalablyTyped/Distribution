@@ -2,28 +2,22 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForInStatement
-  extends BaseForXStatement
+  extends StObject
+     with BaseForXStatement
      with Statement {
   
   @JSName("type")
-  var type_ForInStatement: typings.estree.estreeStrings.ForInStatement = js.native
+  var type_ForInStatement: typings.estree.estreeStrings.ForInStatement
 }
 object ForInStatement {
   
   @scala.inline
-  def apply(
-    body: Statement,
-    left: VariableDeclaration | Pattern,
-    right: Expression,
-    `type`: typings.estree.estreeStrings.ForInStatement
-  ): ForInStatement = {
+  def apply(body: Statement, left: VariableDeclaration | Pattern, right: Expression): ForInStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForInStatement")
     __obj.asInstanceOf[ForInStatement]
   }
   

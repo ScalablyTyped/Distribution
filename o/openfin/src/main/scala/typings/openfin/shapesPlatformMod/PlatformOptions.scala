@@ -3,16 +3,16 @@ package typings.openfin.shapesPlatformMod
 import typings.openfin.applicationOptionMod.ApplicationOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlatformOptions extends ApplicationOption {
+trait PlatformOptions
+  extends StObject
+     with ApplicationOption {
   
   @JSName("defaultWindowOptions")
-  var defaultWindowOptions_PlatformOptions: js.UndefOr[DefaultWindowOptions] = js.native
+  var defaultWindowOptions_PlatformOptions: js.UndefOr[DefaultWindowOptions] = js.undefined
   
-  var disableDefaultCommands: js.UndefOr[Boolean] = js.native
+  var disableDefaultCommands: js.UndefOr[Boolean] = js.undefined
 }
 object PlatformOptions {
   

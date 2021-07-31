@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,10 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * log has to be preformatted with the formatMultiColumn method.
   * @since OOo 3.0
   */
-@js.native
-trait CsvLogFormatter extends XCsvLogFormatter {
+trait CsvLogFormatter
+  extends StObject
+     with XCsvLogFormatter {
   
-  def create(): Unit = js.native
+  def create(): Unit
 }
 object CsvLogFormatter {
   

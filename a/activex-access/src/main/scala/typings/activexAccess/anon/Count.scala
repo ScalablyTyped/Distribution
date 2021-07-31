@@ -2,15 +2,13 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Count extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Page: Boolean = js.native
+  val Page: Boolean
 }
 object Count {
   

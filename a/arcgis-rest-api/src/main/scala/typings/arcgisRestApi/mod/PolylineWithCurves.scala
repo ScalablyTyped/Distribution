@@ -2,15 +2,14 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolylineWithCurves
-  extends HasZM
+  extends StObject
+     with HasZM
      with Geometry {
   
-  var curvePaths: js.Array[js.Array[Position | JsonCurve]] = js.native
+  var curvePaths: js.Array[js.Array[Position | JsonCurve]]
 }
 object PolylineWithCurves {
   

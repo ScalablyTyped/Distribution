@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wafRuleMod {
@@ -55,6 +54,10 @@ object wafRuleMod {
   /* static members */
   object Rule {
     
+    @JSImport("@pulumi/aws/waf/rule", "Rule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Rule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -64,50 +67,44 @@ object wafRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/waf/rule", "Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Rule = js.native
-    @JSImport("@pulumi/aws/waf/rule", "Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Rule = js.native
-    @JSImport("@pulumi/aws/waf/rule", "Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleState): Rule = js.native
-    @JSImport("@pulumi/aws/waf/rule", "Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleState, opts: CustomResourceOptions): Rule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Rule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Rule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleState): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Rule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleState, opts: CustomResourceOptions): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Rule]
     
     /**
       * Returns true if the given object is an instance of Rule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/waf/rule", "Rule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ Boolean]
   }
   
-  @js.native
   trait RuleArgs extends StObject {
     
     /**
       * The name or description for the Amazon CloudWatch metric of this rule. The name can contain only alphanumeric characters (A-Z, a-z, 0-9); the name can't contain whitespace.
       */
-    val metricName: Input[String] = js.native
+    val metricName: Input[String]
     
     /**
       * The name or description of the rule.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The objects to include in a rule (documented below).
       */
-    val predicates: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RulePredicate]]]] = js.native
+    val predicates: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RulePredicate]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RuleArgs {
     
@@ -146,33 +143,32 @@ object wafRuleMod {
     }
   }
   
-  @js.native
   trait RuleState extends StObject {
     
     /**
       * The ARN of the WAF rule.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name or description for the Amazon CloudWatch metric of this rule. The name can contain only alphanumeric characters (A-Z, a-z, 0-9); the name can't contain whitespace.
       */
-    val metricName: js.UndefOr[Input[String]] = js.native
+    val metricName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name or description of the rule.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The objects to include in a rule (documented below).
       */
-    val predicates: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RulePredicate]]]] = js.native
+    val predicates: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RulePredicate]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RuleState {
     

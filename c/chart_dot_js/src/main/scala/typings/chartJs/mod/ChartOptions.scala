@@ -3,78 +3,74 @@ package typings.chartJs.mod
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartOptions extends StObject {
   
-  var animation: js.UndefOr[ChartAnimationOptions] = js.native
+  var animation: js.UndefOr[ChartAnimationOptions] = js.undefined
   
-  var aspectRatio: js.UndefOr[Double] = js.native
+  var aspectRatio: js.UndefOr[Double] = js.undefined
   
-  var circumference: js.UndefOr[Double] = js.native
+  var circumference: js.UndefOr[Double] = js.undefined
   
-  var cutoutPercentage: js.UndefOr[Double] = js.native
+  var cutoutPercentage: js.UndefOr[Double] = js.undefined
   
-  var defaultColor: js.UndefOr[ChartColor] = js.native
+  var defaultColor: js.UndefOr[ChartColor] = js.undefined
   
-  var devicePixelRatio: js.UndefOr[Double] = js.native
+  var devicePixelRatio: js.UndefOr[Double] = js.undefined
   
-  var elements: js.UndefOr[ChartElementsOptions] = js.native
+  var elements: js.UndefOr[ChartElementsOptions] = js.undefined
   
-  var events: js.UndefOr[js.Array[String]] = js.native
+  var events: js.UndefOr[js.Array[String]] = js.undefined
   
-  var hover: js.UndefOr[ChartHoverOptions] = js.native
+  var hover: js.UndefOr[ChartHoverOptions] = js.undefined
   
-  var layout: js.UndefOr[ChartLayoutOptions] = js.native
+  var layout: js.UndefOr[ChartLayoutOptions] = js.undefined
   
-  var legend: js.UndefOr[ChartLegendOptions] = js.native
+  var legend: js.UndefOr[ChartLegendOptions] = js.undefined
   
-  var legendCallback: js.UndefOr[js.Function1[/* chart */ typings.chartJs.mod.Chart, String]] = js.native
+  var legendCallback: js.UndefOr[js.Function1[/* chart */ Chart, String]] = js.undefined
   
-  var maintainAspectRatio: js.UndefOr[Boolean] = js.native
+  var maintainAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   var onClick: js.UndefOr[
     js.Function2[
       /* event */ js.UndefOr[MouseEvent], 
       /* activeElements */ js.UndefOr[js.Array[js.Object]], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onHover: js.UndefOr[
     js.ThisFunction2[
-      /* this */ typings.chartJs.mod.Chart, 
+      /* this */ Chart, 
       /* event */ MouseEvent, 
       /* activeElements */ js.Array[js.Object], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onResize: js.UndefOr[
-    js.ThisFunction1[/* this */ typings.chartJs.mod.Chart, /* newSize */ ChartSize, Unit]
-  ] = js.native
+  var onResize: js.UndefOr[js.ThisFunction1[/* this */ Chart, /* newSize */ ChartSize, Unit]] = js.undefined
   
-  var plugins: js.UndefOr[ChartPluginsOptions] = js.native
+  var plugins: js.UndefOr[ChartPluginsOptions] = js.undefined
   
-  var responsive: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.undefined
   
-  var responsiveAnimationDuration: js.UndefOr[Double] = js.native
+  var responsiveAnimationDuration: js.UndefOr[Double] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var scale: js.UndefOr[RadialLinearScale] = js.native
+  var scale: js.UndefOr[RadialLinearScale] = js.undefined
   
-  var scales: js.UndefOr[ChartScales | LinearScale | LogarithmicScale | TimeScale] = js.native
+  var scales: js.UndefOr[ChartScales | LinearScale | LogarithmicScale | TimeScale] = js.undefined
   
-  var showLines: js.UndefOr[Boolean] = js.native
+  var showLines: js.UndefOr[Boolean] = js.undefined
   
-  var spanGaps: js.UndefOr[Boolean] = js.native
+  var spanGaps: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[ChartTitleOptions] = js.native
+  var title: js.UndefOr[ChartTitleOptions] = js.undefined
   
-  var tooltips: js.UndefOr[ChartTooltipOptions] = js.native
+  var tooltips: js.UndefOr[ChartTooltipOptions] = js.undefined
 }
 object ChartOptions {
   
@@ -157,7 +153,7 @@ object ChartOptions {
     def setLegend(value: ChartLegendOptions): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendCallback(value: /* chart */ typings.chartJs.mod.Chart => String): Self = StObject.set(x, "legendCallback", js.Any.fromFunction1(value))
+    def setLegendCallback(value: /* chart */ Chart => String): Self = StObject.set(x, "legendCallback", js.Any.fromFunction1(value))
     
     @scala.inline
     def setLegendCallbackUndefined: Self = StObject.set(x, "legendCallback", js.undefined)
@@ -173,7 +169,7 @@ object ChartOptions {
     
     @scala.inline
     def setOnClick(
-      value: (/* event */ js.UndefOr[MouseEvent], /* activeElements */ js.UndefOr[js.Array[js.Object]]) => _
+      value: (/* event */ js.UndefOr[MouseEvent], /* activeElements */ js.UndefOr[js.Array[js.Object]]) => js.Any
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     
     @scala.inline
@@ -182,10 +178,10 @@ object ChartOptions {
     @scala.inline
     def setOnHover(
       value: js.ThisFunction2[
-          /* this */ typings.chartJs.mod.Chart, 
+          /* this */ Chart, 
           /* event */ MouseEvent, 
           /* activeElements */ js.Array[js.Object], 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "onHover", value.asInstanceOf[js.Any])
     
@@ -193,7 +189,7 @@ object ChartOptions {
     def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
     
     @scala.inline
-    def setOnResize(value: js.ThisFunction1[/* this */ typings.chartJs.mod.Chart, /* newSize */ ChartSize, Unit]): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+    def setOnResize(value: js.ThisFunction1[/* this */ Chart, /* newSize */ ChartSize, Unit]): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)

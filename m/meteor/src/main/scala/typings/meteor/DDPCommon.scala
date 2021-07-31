@@ -4,13 +4,14 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.meteor.Meteor.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DDPCommon {
   
   @js.native
-  trait MethodInvocation extends Instantiable1[/* options */ MethodInvocationOptions, MethodInvocation] {
+  trait MethodInvocation
+    extends StObject
+       with Instantiable1[/* options */ MethodInvocationOptions, MethodInvocation] {
     
     var connection: Connection = js.native
     
@@ -23,24 +24,23 @@ object DDPCommon {
     var userId: String | Null = js.native
   }
   
-  @js.native
   trait MethodInvocationOptions extends StObject {
     
-    var connection: Connection = js.native
+    var connection: Connection
     
-    var isSimulation: Boolean = js.native
+    var isSimulation: Boolean
     
-    var randomSeed: String = js.native
+    var randomSeed: String
     
-    var setUserId: js.UndefOr[js.Function1[/* newUserId */ String, Unit]] = js.native
+    var setUserId: js.UndefOr[js.Function1[/* newUserId */ String, Unit]] = js.undefined
     
-    var userId: String | Null = js.native
+    var userId: String | Null
   }
   object MethodInvocationOptions {
     
     @scala.inline
     def apply(connection: Connection, isSimulation: Boolean, randomSeed: String): MethodInvocationOptions = {
-      val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isSimulation = isSimulation.asInstanceOf[js.Any], randomSeed = randomSeed.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isSimulation = isSimulation.asInstanceOf[js.Any], randomSeed = randomSeed.asInstanceOf[js.Any], userId = null)
       __obj.asInstanceOf[MethodInvocationOptions]
     }
     

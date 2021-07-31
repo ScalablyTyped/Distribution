@@ -3,12 +3,13 @@ package typings.hummusRecipe.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hummus-recipe", JSImport.Namespace)
 @js.native
-class ^ protected () extends Recipe {
+class ^ protected ()
+  extends StObject
+     with Recipe {
   def this(buffer: Buffer) = this()
   def this(buffer: Buffer, options: RecipeOptions) = this()
   def this(src: String, output: String) = this()

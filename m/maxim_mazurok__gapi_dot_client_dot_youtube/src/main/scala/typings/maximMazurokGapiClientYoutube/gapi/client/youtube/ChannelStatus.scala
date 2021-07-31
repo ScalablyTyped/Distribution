@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelStatus extends StObject {
   
   /** If true, then the user is linked to either a YouTube username or G+ account. Otherwise, the user doesn't have a public YouTube identity. */
-  var isLinked: js.UndefOr[Boolean] = js.native
+  var isLinked: js.UndefOr[Boolean] = js.undefined
   
   /** The long uploads status of this channel. See https://support.google.com/youtube/answer/71673 for more information. */
-  var longUploadsStatus: js.UndefOr[String] = js.native
+  var longUploadsStatus: js.UndefOr[String] = js.undefined
   
-  var madeForKids: js.UndefOr[Boolean] = js.native
+  var madeForKids: js.UndefOr[Boolean] = js.undefined
   
   /** Privacy status of the channel. */
-  var privacyStatus: js.UndefOr[String] = js.native
+  var privacyStatus: js.UndefOr[String] = js.undefined
   
-  var selfDeclaredMadeForKids: js.UndefOr[Boolean] = js.native
+  var selfDeclaredMadeForKids: js.UndefOr[Boolean] = js.undefined
 }
 object ChannelStatus {
   

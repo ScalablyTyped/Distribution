@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePlatformApplicationResponse extends StObject {
   
   /**
     * PlatformApplicationArn is returned.
     */
-  var PlatformApplicationArn: js.UndefOr[String] = js.native
+  var PlatformApplicationArn: js.UndefOr[String] = js.undefined
 }
 object CreatePlatformApplicationResponse {
   

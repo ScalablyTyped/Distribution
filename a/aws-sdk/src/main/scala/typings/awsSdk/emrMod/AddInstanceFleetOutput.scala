@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddInstanceFleetOutput extends StObject {
   
   /**
     * The Amazon Resource Name of the cluster.
     */
-  var ClusterArn: js.UndefOr[ArnType] = js.native
+  var ClusterArn: js.UndefOr[ArnType] = js.undefined
   
   /**
     * The unique identifier of the cluster.
     */
-  var ClusterId: js.UndefOr[XmlStringMaxLen256] = js.native
+  var ClusterId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * The unique identifier of the instance fleet.
     */
-  var InstanceFleetId: js.UndefOr[typings.awsSdk.emrMod.InstanceFleetId] = js.native
+  var InstanceFleetId: js.UndefOr[typings.awsSdk.emrMod.InstanceFleetId] = js.undefined
 }
 object AddInstanceFleetOutput {
   

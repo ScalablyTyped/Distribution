@@ -2,26 +2,24 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGPathSegCurvetoCubicSmoothRel extends StObject {
   
   @JSName("MSHTML.SVGPathSegCurvetoCubicSmoothRel_typekey")
-  var MSHTMLDotSVGPathSegCurvetoCubicSmoothRel_typekey: SVGPathSegCurvetoCubicSmoothRel = js.native
+  var MSHTMLDotSVGPathSegCurvetoCubicSmoothRel_typekey: SVGPathSegCurvetoCubicSmoothRel
   
-  var pathSegType: Double = js.native
+  var pathSegType: Double
   
-  val pathSegTypeAsLetter: String = js.native
+  val pathSegTypeAsLetter: String
   
-  var x: Double = js.native
+  var x: Double
   
-  var x2: Double = js.native
+  var x2: Double
   
-  var y: Double = js.native
+  var y: Double
   
-  var y2: Double = js.native
+  var y2: Double
 }
 object SVGPathSegCurvetoCubicSmoothRel {
   

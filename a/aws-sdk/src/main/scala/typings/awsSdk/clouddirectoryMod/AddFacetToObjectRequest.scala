@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddFacetToObjectRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Directory where the object resides. For more information, see arns.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * Attributes on the facet that you are adding to the object.
     */
-  var ObjectAttributeList: js.UndefOr[AttributeKeyAndValueList] = js.native
+  var ObjectAttributeList: js.UndefOr[AttributeKeyAndValueList] = js.undefined
   
   /**
     * A reference to the object you are adding the specified facet to.
     */
-  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference = js.native
+  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference
   
   /**
     * Identifiers for the facet that you are adding to the object. See SchemaFacet for details.
     */
-  var SchemaFacet: typings.awsSdk.clouddirectoryMod.SchemaFacet = js.native
+  var SchemaFacet: typings.awsSdk.clouddirectoryMod.SchemaFacet
 }
 object AddFacetToObjectRequest {
   

@@ -6,43 +6,43 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUserprofilesGuardianinvitationsList extends StandardParameters {
+trait ParamsResourceUserprofilesGuardianinvitationsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * If specified, only results with the specified `invited_email_address`
     * will be returned.
     */
-  var invitedEmailAddress: js.UndefOr[String] = js.native
+  var invitedEmailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of items to return. Zero or unspecified indicates that the
     * server may assign a maximum.  The server may return fewer than the
     * specified number of results.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * nextPageToken value returned from a previous list call, indicating that
     * the subsequent page of results should be returned.  The list request must
     * be otherwise identical to the one that resulted in this token.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, only results with the specified `state` values will be
     * returned. Otherwise, results with a `state` of `PENDING` will be
     * returned.
     */
-  var states: js.UndefOr[js.Array[String]] = js.native
+  var states: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The ID of the student whose guardian invitations are to be returned. The
@@ -52,7 +52,7 @@ trait ParamsResourceUserprofilesGuardianinvitationsList extends StandardParamete
     * that results should be returned for   all students that the requesting
     * user is permitted to view guardian   invitations.
     */
-  var studentId: js.UndefOr[String] = js.native
+  var studentId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUserprofilesGuardianinvitationsList {
   

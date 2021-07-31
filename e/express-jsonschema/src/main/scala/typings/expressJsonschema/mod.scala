@@ -11,10 +11,13 @@ import typings.expressServeStaticCore.mod.Query
 import typings.jsonSchema.mod.JSONSchema4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("express-jsonschema", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("express-jsonschema", "JsonSchemaCustomPropertyError")
   @js.native
@@ -38,8 +41,7 @@ object mod {
     var validations: StringDictionary[js.Array[Messages]] = js.native
   }
   
-  @JSImport("express-jsonschema", "addSchemaProperties")
-  @js.native
+  @scala.inline
   def addSchemaProperties(
     newProperties: StringDictionary[
       js.Function4[
@@ -50,22 +52,30 @@ object mod {
         Unit | String
       ]
     ]
-  ): Unit = js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSchemaProperties")(newProperties.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("express-jsonschema", "validate")
-  @js.native
+  @scala.inline
   def validate(schemas: StringDictionary[JSONSchema4]): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* res */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
     Unit
-  ] = js.native
-  @JSImport("express-jsonschema", "validate")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schemas.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    Unit
+  ]]
+  @scala.inline
   def validate(schemas: StringDictionary[JSONSchema4], schemaDependencies: js.Array[JSONSchema4]): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* res */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
     Unit
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schemas.asInstanceOf[js.Any], schemaDependencies.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    Unit
+  ]]
 }

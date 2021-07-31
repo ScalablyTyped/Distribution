@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.policy.v1beta1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IDRange provides a min/max of an allowed range of IDs.
   */
-@js.native
 trait IDRange extends StObject {
   
   /**
     * max is the end of the range, inclusive.
     */
-  var max: Input[Double] = js.native
+  var max: Input[Double]
   
   /**
     * min is the start of the range, inclusive.
     */
-  var min: Input[Double] = js.native
+  var min: Input[Double]
 }
 object IDRange {
   

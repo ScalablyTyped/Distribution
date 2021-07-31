@@ -2,16 +2,14 @@ package typings.node.inspectorMod.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Profile.
   */
-@js.native
 trait SamplingHeapProfile extends StObject {
   
-  var head: SamplingHeapProfileNode = js.native
+  var head: SamplingHeapProfileNode
 }
 object SamplingHeapProfile {
   

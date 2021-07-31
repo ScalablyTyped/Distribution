@@ -3,16 +3,14 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverTypes.mod.TextDocumentItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DidOpenTextDocumentParams extends StObject {
   
   /**
     * The document that was opened.
     */
-  var textDocument: TextDocumentItem = js.native
+  var textDocument: TextDocumentItem
 }
 object DidOpenTextDocumentParams {
   

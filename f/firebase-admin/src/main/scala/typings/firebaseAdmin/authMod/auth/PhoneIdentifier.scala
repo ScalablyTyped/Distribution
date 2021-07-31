@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,10 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * See auth.getUsers()
   */
-@js.native
-trait PhoneIdentifier extends UserIdentifier {
+trait PhoneIdentifier
+  extends StObject
+     with UserIdentifier {
   
-  var phoneNumber: String = js.native
+  var phoneNumber: String
 }
 object PhoneIdentifier {
   

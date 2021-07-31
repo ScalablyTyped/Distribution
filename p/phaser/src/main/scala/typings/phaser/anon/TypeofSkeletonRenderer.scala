@@ -2,17 +2,15 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSkeletonRenderer extends StObject {
   
   /* static member */
-  var QUAD_TRIANGLES: js.Array[Double] = js.native
+  var QUAD_TRIANGLES: js.Array[Double]
   
   /* static member */
-  var VERTEX_SIZE: Double = js.native
+  var VERTEX_SIZE: Double
 }
 object TypeofSkeletonRenderer {
   

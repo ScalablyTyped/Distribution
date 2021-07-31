@@ -2,44 +2,42 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User provider data to include when importing a user.
   */
-@js.native
 trait UserProviderRequest extends StObject {
   
   /**
     * The display name for the linked provider.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The email for the linked provider.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number for the linked provider.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The photo URL for the linked provider.
     */
-  var photoURL: js.UndefOr[String] = js.native
+  var photoURL: js.UndefOr[String] = js.undefined
   
   /**
     * The linked provider ID (for example, "google.com" for the Google provider).
     */
-  var providerId: String = js.native
+  var providerId: String
   
   /**
     * The user identifier for the linked provider.
     */
-  var uid: String = js.native
+  var uid: String
 }
 object UserProviderRequest {
   

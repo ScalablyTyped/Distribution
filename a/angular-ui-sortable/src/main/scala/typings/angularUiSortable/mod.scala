@@ -9,7 +9,6 @@ import typings.angular.mod.auto.IInjectorService
 import typings.angularUiSortable.angularUiSortableStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -18,16 +17,15 @@ object mod {
   object ui {
     
     // Base Sortable //////////////////////////////////////////////////
-    @js.native
     trait SortableCursorAtOptions extends StObject {
       
-      var bottom: js.UndefOr[Double] = js.native
+      var bottom: js.UndefOr[Double] = js.undefined
       
-      var left: js.UndefOr[Double] = js.native
+      var left: js.UndefOr[Double] = js.undefined
       
-      var right: js.UndefOr[Double] = js.native
+      var right: js.UndefOr[Double] = js.undefined
       
-      var top: js.UndefOr[Double] = js.native
+      var top: js.UndefOr[Double] = js.undefined
     }
     object SortableCursorAtOptions {
       
@@ -68,32 +66,31 @@ object mod {
     
     type SortableEvent[T] = js.Function2[/* event */ JQueryEventObject, /* ui */ UISortableUIParams[T], Unit]
     
-    @js.native
     trait SortableEvents[T] extends StObject {
       
-      var activate: js.UndefOr[SortableEvent[T]] = js.native
+      var activate: js.UndefOr[SortableEvent[T]] = js.undefined
       
-      var beforeStop: js.UndefOr[SortableEvent[T]] = js.native
+      var beforeStop: js.UndefOr[SortableEvent[T]] = js.undefined
       
-      var change: js.UndefOr[SortableEvent[T]] = js.native
+      var change: js.UndefOr[SortableEvent[T]] = js.undefined
       
-      var deactivate: js.UndefOr[SortableEvent[T]] = js.native
+      var deactivate: js.UndefOr[SortableEvent[T]] = js.undefined
       
-      var out: js.UndefOr[SortableEvent[T]] = js.native
+      var out: js.UndefOr[SortableEvent[T]] = js.undefined
       
-      var over: js.UndefOr[SortableEvent[T]] = js.native
+      var over: js.UndefOr[SortableEvent[T]] = js.undefined
       
-      var receive: js.UndefOr[SortableEvent[T]] = js.native
+      var receive: js.UndefOr[SortableEvent[T]] = js.undefined
       
-      var remove: js.UndefOr[SortableEvent[T]] = js.native
+      var remove: js.UndefOr[SortableEvent[T]] = js.undefined
       
-      var sort: js.UndefOr[SortableEvent[T]] = js.native
+      var sort: js.UndefOr[SortableEvent[T]] = js.undefined
       
-      var start: js.UndefOr[SortableEvent[T]] = js.native
+      var start: js.UndefOr[SortableEvent[T]] = js.undefined
       
-      var stop: js.UndefOr[SortableEvent[T]] = js.native
+      var stop: js.UndefOr[SortableEvent[T]] = js.undefined
       
-      var update: js.UndefOr[SortableEvent[T]] = js.native
+      var update: js.UndefOr[SortableEvent[T]] = js.undefined
     }
     object SortableEvents {
       
@@ -104,7 +101,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class SortableEventsMutableBuilder[Self <: SortableEvents[_], T] (val x: Self with SortableEvents[T]) extends AnyVal {
+      implicit class SortableEventsMutableBuilder[Self <: SortableEvents[?], T] (val x: Self & SortableEvents[T]) extends AnyVal {
         
         @scala.inline
         def setActivate(value: (/* event */ JQueryEventObject, /* ui */ UISortableUIParams[T]) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
@@ -182,112 +179,113 @@ object mod {
     
     type SortableHelperFunctionOption = js.Function2[/* event */ JQueryEventObject, /* ui */ IAugmentedJQuery, JQuery]
     
-    @js.native
-    trait SortableOptions[T] extends SortableEvents[T] {
+    trait SortableOptions[T]
+      extends StObject
+         with SortableEvents[T] {
       
       /**
         * jQuery, Element, Selector or string
         * Default: "parent"
         */
-      var appendTo: js.UndefOr[js.Any] = js.native
+      var appendTo: js.UndefOr[js.Any] = js.undefined
       
       /**
         * "X", "Y" or false
         * Default: false
         */
-      var axis: js.UndefOr[String | Boolean] = js.native
+      var axis: js.UndefOr[String | Boolean] = js.undefined
       
       /**
         * Selector
         * Default: "input,textarea,button,select,option"
         */
-      var cancel: js.UndefOr[String] = js.native
+      var cancel: js.UndefOr[String] = js.undefined
       
       /**
         * Selector or false
         * Default: false
         */
-      var connectWith: js.UndefOr[String | Boolean] = js.native
+      var connectWith: js.UndefOr[String | Boolean] = js.undefined
       
       /**
         * Element, Selector, string or false
         * Default: false
         */
-      var containment: js.UndefOr[js.Any] = js.native
+      var containment: js.UndefOr[js.Any] = js.undefined
       
-      var cursor: js.UndefOr[String] = js.native
+      var cursor: js.UndefOr[String] = js.undefined
       
       /**
         * Moves the sorting element or helper so the cursor always appears to drag from the same position. Coordinates can be given as a hash using a combination of one or two keys SortableCursorAtOptions: { top, left, right, bottom }
         * Default: false
         */
-      var cursorAt: js.UndefOr[SortableCursorAtOptions | Boolean] = js.native
+      var cursorAt: js.UndefOr[SortableCursorAtOptions | Boolean] = js.undefined
       
-      var delay: js.UndefOr[Double] = js.native
+      var delay: js.UndefOr[Double] = js.undefined
       
-      var disabled: js.UndefOr[Boolean] = js.native
+      var disabled: js.UndefOr[Boolean] = js.undefined
       
-      var distance: js.UndefOr[Double] = js.native
+      var distance: js.UndefOr[Double] = js.undefined
       
-      var dropOnEmpty: js.UndefOr[Boolean] = js.native
+      var dropOnEmpty: js.UndefOr[Boolean] = js.undefined
       
-      var forceHelperSize: js.UndefOr[Boolean] = js.native
+      var forceHelperSize: js.UndefOr[Boolean] = js.undefined
       
-      var forcePlaceholderSize: js.UndefOr[Boolean] = js.native
+      var forcePlaceholderSize: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Array of numbers or false
         * Default: false
         */
-      var grid: js.UndefOr[js.Array[Double] | Boolean] = js.native
+      var grid: js.UndefOr[js.Array[Double] | Boolean] = js.undefined
       
       /**
         * Selector or Element
         */
-      var handle: js.UndefOr[js.Any] = js.native
+      var handle: js.UndefOr[js.Any] = js.undefined
       
       /**
         * "original", "clone" or Function()
         * Default: "original"
         */
-      var helper: js.UndefOr[String | SortableHelperFunctionOption] = js.native
+      var helper: js.UndefOr[String | SortableHelperFunctionOption] = js.undefined
       
       /**
         * Selector
         */
-      var items: js.UndefOr[String] = js.native
+      var items: js.UndefOr[String] = js.undefined
       
       /**
         * Number or false
         * Default: false
         */
-      var opacity: js.UndefOr[Double | Boolean] = js.native
+      var opacity: js.UndefOr[Double | Boolean] = js.undefined
       
       /**
         * string or false
         * Default: false
         */
-      var placeholder: js.UndefOr[String | Boolean] = js.native
+      var placeholder: js.UndefOr[String | Boolean] = js.undefined
       
       /**
         * boolean or number
         * Default: false
         */
-      var revert: js.UndefOr[Double | Boolean] = js.native
+      var revert: js.UndefOr[Double | Boolean] = js.undefined
       
-      var scroll: js.UndefOr[Boolean] = js.native
+      var scroll: js.UndefOr[Boolean] = js.undefined
       
-      var scrollSensitivity: js.UndefOr[Double] = js.native
+      var scrollSensitivity: js.UndefOr[Double] = js.undefined
       
-      var scrollSpeed: js.UndefOr[Double] = js.native
+      var scrollSpeed: js.UndefOr[Double] = js.undefined
       
       /**
         * "intersect" or "pointer"
         * Default: "intersect"
         */
-      var tolerance: js.UndefOr[String] = js.native
+      var tolerance: js.UndefOr[String] = js.undefined
       
-      var zIndex: js.UndefOr[Double] = js.native
+      var zIndex: js.UndefOr[Double] = js.undefined
     }
     object SortableOptions {
       
@@ -298,7 +296,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class SortableOptionsMutableBuilder[Self <: SortableOptions[_], T] (val x: Self with SortableOptions[T]) extends AnyVal {
+      implicit class SortableOptionsMutableBuilder[Self <: SortableOptions[?], T] (val x: Self & SortableOptions[T]) extends AnyVal {
         
         @scala.inline
         def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
@@ -458,22 +456,21 @@ object mod {
       }
     }
     
-    @js.native
     trait SortableUIParams extends StObject {
       
-      var helper: IAugmentedJQuery = js.native
+      var helper: IAugmentedJQuery
       
-      var item: IAugmentedJQuery = js.native
+      var item: IAugmentedJQuery
       
-      var offset: js.Any = js.native
+      var offset: js.Any
       
-      var originalPosition: js.Any = js.native
+      var originalPosition: js.Any
       
-      var placeholder: IAugmentedJQuery = js.native
+      var placeholder: IAugmentedJQuery
       
-      var position: js.Any = js.native
+      var position: js.Any
       
-      var sender: IAugmentedJQuery = js.native
+      var sender: IAugmentedJQuery
     }
     object SortableUIParams {
       
@@ -517,10 +514,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait UISortableOptions[T] extends SortableOptions[T] {
+    trait UISortableOptions[T]
+      extends StObject
+         with SortableOptions[T] {
       
-      var `ui-floating`: js.UndefOr[auto | Boolean] = js.native
+      var `ui-floating`: js.UndefOr[auto | Boolean] = js.undefined
     }
     object UISortableOptions {
       
@@ -531,7 +529,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class UISortableOptionsMutableBuilder[Self <: UISortableOptions[_], T] (val x: Self with UISortableOptions[T]) extends AnyVal {
+      implicit class UISortableOptionsMutableBuilder[Self <: UISortableOptions[?], T] (val x: Self & UISortableOptions[T]) extends AnyVal {
         
         @scala.inline
         def `setUi-floating`(value: auto | Boolean): Self = StObject.set(x, "ui-floating", value.asInstanceOf[js.Any])
@@ -541,70 +539,69 @@ object mod {
       }
     }
     
-    @js.native
     trait UISortableProperties[T] extends StObject {
       
       /**
         * Can be called inside the `update` callback, in order to prevent/revert a sorting.
         * Should be used instead of the [jquery-ui-sortable cancel()](http://api.jqueryui.com/sortable/#method-cancel) method.
         */
-      def cancel(): Unit = js.native
+      def cancel(): Unit
       
       /**
         * Holds the index of the drop target that the dragged item was dropped.
         */
-      var dropindex: Double = js.native
+      var dropindex: Double
       
       /**
         * Holds the ui-sortable element that the dragged item was dropped on.
         */
-      var droptarget: Double = js.native
+      var droptarget: Double
       
       /**
         * Holds the array that is specified by the `ng-model` attribute of the [`droptarget`](#droptarget) ui-sortable element.
         */
-      var droptargetModel: js.Array[T] = js.native
+      var droptargetModel: js.Array[T]
       
       /**
         * Holds the original index of the item dragged.
         */
-      var index: Double = js.native
+      var index: Double
       
       /**
         * Returns whether the current sorting is marked as canceled, by an earlier call to [`ui.item.sortable.cancel()`](#cancel).
         */
-      def isCanceled(): Boolean = js.native
+      def isCanceled(): Boolean
       
       /**
         * Returns whether the [`helper`](http://api.jqueryui.com/sortable/#option-helper) element used for the current sorting, is one of the original ui-sortable list elements.
         */
-      def isCustomHelperUsed(): Boolean = js.native
+      def isCustomHelperUsed(): Boolean
       
       /**
         * Holds the JavaScript object that is used as the model of the dragged item, as specified by the ng-repeat of the [`source`](#source) ui-sortable element and the item's [`index`](#index).
         */
-      var model: T = js.native
+      var model: T
       
       /**
         * Holds the model of the dragged item only when a sorting happens between two connected ui-sortable elements.
         * In other words: `'moved' in ui.item.sortable` will return false only when a sorting is withing the same ui-sortable element ([`source`](#source) equals to the [`droptarget`](#droptarget)).
         */
-      var moved: js.UndefOr[T] = js.native
+      var moved: js.UndefOr[T] = js.undefined
       
       /**
         * When sorting between two connected sortables, it will be set to true inside the `update` callback of the [`droptarget`](#droptarget).
         */
-      var received: Boolean = js.native
+      var received: Boolean
       
       /**
         * Holds the ui-sortable element that the dragged item originated from.
         */
-      var source: IAugmentedJQuery = js.native
+      var source: IAugmentedJQuery
       
       /**
         * Holds the array that is specified by the `ng-model` of the [`source`](#source) ui-sortable element.
         */
-      var sourceModel: js.Array[T] = js.native
+      var sourceModel: js.Array[T]
     }
     object UISortableProperties {
       
@@ -627,7 +624,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class UISortablePropertiesMutableBuilder[Self <: UISortableProperties[_], T] (val x: Self with UISortableProperties[T]) extends AnyVal {
+      implicit class UISortablePropertiesMutableBuilder[Self <: UISortableProperties[?], T] (val x: Self & UISortableProperties[T]) extends AnyVal {
         
         @scala.inline
         def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
@@ -677,209 +674,399 @@ object mod {
     }
     
     /* Inlined parent std.Omit<angular.angular.IAugmentedJQuery, 'sortable'> */
-    @js.native
     trait UISortableUIItem[T] extends StObject {
       
-      def addClass(className: String): this.type = js.native
+      def addClass(className: String): this.type
       @JSName("addClass")
-      var addClass_Original: js.Function1[/* className */ String, this.type] = js.native
+      var addClass_Original: js.Function1[/* className */ String, this.type]
       
-      def after(content1: JQuery, content2: js.Any*): this.type = js.native
+      def after(content1: JQuery, content2: js.Any*): this.type
       @JSName("after")
-      var after_Original: js.Function2[/* content1 */ JQuery, /* repeated */ js.Any, this.type] = js.native
+      var after_Original: js.Function2[/* content1 */ JQuery, /* repeated */ js.Any, this.type]
       
-      def append(content1: JQuery, content2: js.Any*): this.type = js.native
+      def append(content1: JQuery, content2: js.Any*): this.type
       @JSName("append")
-      var append_Original: js.Function2[/* content1 */ JQuery, /* repeated */ js.Any, this.type] = js.native
+      var append_Original: js.Function2[/* content1 */ JQuery, /* repeated */ js.Any, this.type]
       
-      def attr(attributeName: String): String = js.native
+      def attr(attributeName: String): String
       @JSName("attr")
-      var attr_Original: js.Function1[/* attributeName */ String, String] = js.native
+      var attr_Original: js.Function1[/* attributeName */ String, String]
       
-      def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): this.type = js.native
+      def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): this.type
       @JSName("bind")
       var bind_Original: js.Function2[
             /* eventType */ String, 
-            /* handler */ js.Function1[/* eventObject */ JQueryEventObject, _], 
+            /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any], 
             this.type
-          ] = js.native
+          ]
       
-      def children(): this.type = js.native
+      def children(): this.type
       @JSName("children")
-      var children_Original: js.Function0[this.type] = js.native
+      var children_Original: js.Function0[this.type]
       
       @JSName("clone")
-      var clone_Original: js.Function0[this.type] = js.native
+      var clone_Original: js.Function0[this.type]
       
-      def contents(): this.type = js.native
+      def contents(): this.type
       @JSName("contents")
-      var contents_Original: js.Function0[this.type] = js.native
+      var contents_Original: js.Function0[this.type]
       
-      def controller(): js.Any = js.native
+      def controller(): js.Any
       @JSName("controller")
-      var controller_Original: js.Function0[_] = js.native
+      var controller_Original: js.Function0[js.Any]
       
-      def css(propertyName: String): String = js.native
+      def css(propertyName: String): String
       @JSName("css")
-      var css_Original: js.Function1[/* propertyName */ String, String] = js.native
+      var css_Original: js.Function1[/* propertyName */ String, String]
       
-      def data(key: String, value: js.Any): this.type = js.native
+      def data(key: String, value: js.Any): this.type
       @JSName("data")
-      var data_Original: js.Function2[/* key */ String, /* value */ js.Any, this.type] = js.native
+      var data_Original: js.Function2[/* key */ String, /* value */ js.Any, this.type]
       
-      def detach(): this.type = js.native
+      def detach(): this.type
       @JSName("detach")
-      var detach_Original: js.Function0[this.type] = js.native
+      var detach_Original: js.Function0[this.type]
       
-      def empty(): this.type = js.native
+      def empty(): this.type
       @JSName("empty")
-      var empty_Original: js.Function0[this.type] = js.native
+      var empty_Original: js.Function0[this.type]
       
-      def eq(index: Double): this.type = js.native
+      def eq(index: Double): this.type
       @JSName("eq")
-      var eq_Original: js.Function1[/* index */ Double, this.type] = js.native
+      var eq_Original: js.Function1[/* index */ Double, this.type]
       
-      def find(selector: String): this.type = js.native
+      def find(selector: String): this.type
       @JSName("find")
-      var find_Original: js.Function1[/* selector */ String, this.type] = js.native
+      var find_Original: js.Function1[/* selector */ String, this.type]
       
-      def hasClass(className: String): Boolean = js.native
+      def hasClass(className: String): Boolean
       @JSName("hasClass")
-      var hasClass_Original: js.Function1[/* className */ String, Boolean] = js.native
+      var hasClass_Original: js.Function1[/* className */ String, Boolean]
       
-      def html(): String = js.native
+      def html(): String
       @JSName("html")
-      var html_Original: js.Function0[String] = js.native
+      var html_Original: js.Function0[String]
       
-      def inheritedData(key: String, value: js.Any): this.type = js.native
+      def inheritedData(key: String, value: js.Any): this.type
       @JSName("inheritedData")
-      var inheritedData_Original: js.Function2[/* key */ String, /* value */ js.Any, this.type] = js.native
+      var inheritedData_Original: js.Function2[/* key */ String, /* value */ js.Any, this.type]
       
-      def injector(): IInjectorService = js.native
+      def injector(): IInjectorService
       @JSName("injector")
-      var injector_Original: js.Function0[IInjectorService] = js.native
+      var injector_Original: js.Function0[IInjectorService]
       
-      def isolateScope[T /* <: IScope */](): T = js.native
+      def isolateScope[T /* <: IScope */](): T
       @JSName("isolateScope")
-      var isolateScope_Original: js.Function0[IScope] = js.native
+      var isolateScope_Original: js.Function0[IScope]
       
-      var length: Double = js.native
+      var length: Double
       
-      def next(): this.type = js.native
+      def next(): this.type
       @JSName("next")
-      var next_Original: js.Function0[this.type] = js.native
+      var next_Original: js.Function0[this.type]
       
-      def off(): this.type = js.native
+      def off(): this.type
       @JSName("off")
-      var off_Original: js.Function0[this.type] = js.native
+      var off_Original: js.Function0[this.type]
       
       def on(
         events: String,
-        handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
-      ): this.type = js.native
+        handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+      ): this.type
       @JSName("on")
       var on_Original: js.Function2[
             /* events */ String, 
-            /* handler */ js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _], 
+            /* handler */ js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any], 
             this.type
-          ] = js.native
+          ]
       
-      def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): this.type = js.native
+      def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): this.type
       @JSName("one")
       var one_Original: js.Function2[
             /* events */ String, 
-            /* handler */ js.Function1[/* eventObject */ JQueryEventObject, _], 
+            /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any], 
             this.type
-          ] = js.native
+          ]
       
-      def parent(): this.type = js.native
+      def parent(): this.type
       @JSName("parent")
-      var parent_Original: js.Function0[this.type] = js.native
+      var parent_Original: js.Function0[this.type]
       
-      def prepend(content1: JQuery, content2: js.Any*): this.type = js.native
+      def prepend(content1: JQuery, content2: js.Any*): this.type
       @JSName("prepend")
-      var prepend_Original: js.Function2[/* content1 */ JQuery, /* repeated */ js.Any, this.type] = js.native
+      var prepend_Original: js.Function2[/* content1 */ JQuery, /* repeated */ js.Any, this.type]
       
-      def prop(propertyName: String): js.Any = js.native
+      def prop(propertyName: String): js.Any
       @JSName("prop")
-      var prop_Original: js.Function1[/* propertyName */ String, _] = js.native
+      var prop_Original: js.Function1[/* propertyName */ String, js.Any]
       
-      def ready(handler: js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], _]): this.type = js.native
+      def ready(handler: js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], js.Any]): this.type
       @JSName("ready")
       var ready_Original: js.Function1[
-            /* handler */ js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], _], 
+            /* handler */ js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], js.Any], 
             this.type
-          ] = js.native
+          ]
       
-      def remove(): this.type = js.native
+      def remove(): this.type
       
-      def removeAttr(attributeName: String): this.type = js.native
+      def removeAttr(attributeName: String): this.type
       @JSName("removeAttr")
-      var removeAttr_Original: js.Function1[/* attributeName */ String, this.type] = js.native
+      var removeAttr_Original: js.Function1[/* attributeName */ String, this.type]
       
-      def removeClass(): this.type = js.native
+      def removeClass(): this.type
       @JSName("removeClass")
-      var removeClass_Original: js.Function0[this.type] = js.native
+      var removeClass_Original: js.Function0[this.type]
       
-      def removeData(name: String): this.type = js.native
+      def removeData(name: String): this.type
       @JSName("removeData")
-      var removeData_Original: js.Function1[/* name */ String, this.type] = js.native
+      var removeData_Original: js.Function1[/* name */ String, this.type]
       
       @JSName("remove")
-      var remove_Original: js.Function0[this.type] = js.native
+      var remove_Original: js.Function0[this.type]
       
-      def replaceWith(newContent: JQuery): this.type = js.native
+      def replaceWith(newContent: JQuery): this.type
       @JSName("replaceWith")
-      var replaceWith_Original: js.Function1[/* newContent */ JQuery, this.type] = js.native
+      var replaceWith_Original: js.Function1[/* newContent */ JQuery, this.type]
       
-      def scope[T /* <: IScope */](): T = js.native
+      def scope[T /* <: IScope */](): T
       @JSName("scope")
-      var scope_Original: js.Function0[IScope] = js.native
+      var scope_Original: js.Function0[IScope]
       
-      var sortable: UISortableProperties[T] = js.native
+      var sortable: UISortableProperties[T]
       
-      def text(): String = js.native
+      def text(): String
       @JSName("text")
-      var text_Original: js.Function0[String] = js.native
+      var text_Original: js.Function0[String]
       
-      def toggleClass(className: String): this.type = js.native
+      def toggleClass(className: String): this.type
       @JSName("toggleClass")
-      var toggleClass_Original: js.Function1[/* className */ String, this.type] = js.native
+      var toggleClass_Original: js.Function1[/* className */ String, this.type]
       
-      def triggerHandler(eventType: String, extraParameters: js.Any*): js.Object = js.native
+      def triggerHandler(eventType: String, extraParameters: js.Any*): js.Object
       @JSName("triggerHandler")
-      var triggerHandler_Original: js.Function2[/* eventType */ String, /* repeated */ js.Any, js.Object] = js.native
+      var triggerHandler_Original: js.Function2[/* eventType */ String, /* repeated */ js.Any, js.Object]
       
-      def unbind(): this.type = js.native
+      def unbind(): this.type
       @JSName("unbind")
-      var unbind_Original: js.Function0[this.type] = js.native
+      var unbind_Original: js.Function0[this.type]
       
-      def `val`(): js.Any = js.native
+      def `val`(): js.Any
       @JSName("val")
-      var val_Original: js.Function0[_] = js.native
+      var val_Original: js.Function0[js.Any]
       
-      def wrap(wrappingElement: JQuery): this.type = js.native
+      def wrap(wrappingElement: JQuery): this.type
       @JSName("wrap")
-      var wrap_Original: js.Function1[/* wrappingElement */ JQuery, this.type] = js.native
+      var wrap_Original: js.Function1[/* wrappingElement */ JQuery, this.type]
+    }
+    object UISortableUIItem {
+      
+      @scala.inline
+      def apply[T](
+        addClass: /* className */ String => UISortableUIItem[T],
+        after: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T],
+        append: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T],
+        attr: /* attributeName */ String => String,
+        bind: (/* eventType */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any]) => UISortableUIItem[T],
+        children: () => UISortableUIItem[T],
+        clone_ : () => UISortableUIItem[T],
+        contents: () => UISortableUIItem[T],
+        controller: () => js.Any,
+        css: /* propertyName */ String => String,
+        data: (/* key */ String, /* value */ js.Any) => UISortableUIItem[T],
+        detach: () => UISortableUIItem[T],
+        empty: () => UISortableUIItem[T],
+        eq_ : /* index */ Double => UISortableUIItem[T],
+        find: /* selector */ String => UISortableUIItem[T],
+        hasClass: /* className */ String => Boolean,
+        html: () => String,
+        inheritedData: (/* key */ String, /* value */ js.Any) => UISortableUIItem[T],
+        injector: () => IInjectorService,
+        isolateScope: () => IScope,
+        length: Double,
+        next: () => UISortableUIItem[T],
+        off: () => UISortableUIItem[T],
+        on: (/* events */ String, /* handler */ js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]) => UISortableUIItem[T],
+        one: (/* events */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any]) => UISortableUIItem[T],
+        parent: () => UISortableUIItem[T],
+        prepend: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T],
+        prop: /* propertyName */ String => js.Any,
+        ready: /* handler */ js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], js.Any] => UISortableUIItem[T],
+        remove: () => UISortableUIItem[T],
+        removeAttr: /* attributeName */ String => UISortableUIItem[T],
+        removeClass: () => UISortableUIItem[T],
+        removeData: /* name */ String => UISortableUIItem[T],
+        replaceWith: /* newContent */ JQuery => UISortableUIItem[T],
+        scope: () => IScope,
+        sortable: UISortableProperties[T],
+        text: () => String,
+        toggleClass: /* className */ String => UISortableUIItem[T],
+        triggerHandler: (/* eventType */ String, /* repeated */ js.Any) => js.Object,
+        unbind: () => UISortableUIItem[T],
+        `val`: () => js.Any,
+        wrap: /* wrappingElement */ JQuery => UISortableUIItem[T]
+      ): UISortableUIItem[T] = {
+        val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), after = js.Any.fromFunction2(after), append = js.Any.fromFunction2(append), attr = js.Any.fromFunction1(attr), bind = js.Any.fromFunction2(bind), children = js.Any.fromFunction0(children), contents = js.Any.fromFunction0(contents), controller = js.Any.fromFunction0(controller), css = js.Any.fromFunction1(css), data = js.Any.fromFunction2(data), detach = js.Any.fromFunction0(detach), empty = js.Any.fromFunction0(empty), find = js.Any.fromFunction1(find), hasClass = js.Any.fromFunction1(hasClass), html = js.Any.fromFunction0(html), inheritedData = js.Any.fromFunction2(inheritedData), injector = js.Any.fromFunction0(injector), isolateScope = js.Any.fromFunction0(isolateScope), length = length.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), off = js.Any.fromFunction0(off), on = js.Any.fromFunction2(on), one = js.Any.fromFunction2(one), parent = js.Any.fromFunction0(parent), prepend = js.Any.fromFunction2(prepend), prop = js.Any.fromFunction1(prop), ready = js.Any.fromFunction1(ready), remove = js.Any.fromFunction0(remove), removeAttr = js.Any.fromFunction1(removeAttr), removeClass = js.Any.fromFunction0(removeClass), removeData = js.Any.fromFunction1(removeData), replaceWith = js.Any.fromFunction1(replaceWith), scope = js.Any.fromFunction0(scope), sortable = sortable.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), toggleClass = js.Any.fromFunction1(toggleClass), triggerHandler = js.Any.fromFunction2(triggerHandler), unbind = js.Any.fromFunction0(unbind), wrap = js.Any.fromFunction1(wrap))
+        __obj.updateDynamic("clone")(js.Any.fromFunction0(clone_))
+        __obj.updateDynamic("eq")(js.Any.fromFunction1(eq_))
+        __obj.updateDynamic("val")(js.Any.fromFunction0(`val`))
+        __obj.asInstanceOf[UISortableUIItem[T]]
+      }
+      
+      @scala.inline
+      implicit class UISortableUIItemMutableBuilder[Self <: UISortableUIItem[?], T] (val x: Self & UISortableUIItem[T]) extends AnyVal {
+        
+        @scala.inline
+        def setAddClass(value: /* className */ String => UISortableUIItem[T]): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setAfter(value: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T]): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setAppend(value: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T]): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setAttr(value: /* attributeName */ String => String): Self = StObject.set(x, "attr", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setBind(
+          value: (/* eventType */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any]) => UISortableUIItem[T]
+        ): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setChildren(value: () => UISortableUIItem[T]): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setClone_(value: () => UISortableUIItem[T]): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setContents(value: () => UISortableUIItem[T]): Self = StObject.set(x, "contents", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setController(value: () => js.Any): Self = StObject.set(x, "controller", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setCss(value: /* propertyName */ String => String): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setData(value: (/* key */ String, /* value */ js.Any) => UISortableUIItem[T]): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setDetach(value: () => UISortableUIItem[T]): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setEmpty(value: () => UISortableUIItem[T]): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setEq_(value: /* index */ Double => UISortableUIItem[T]): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setFind(value: /* selector */ String => UISortableUIItem[T]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setHtml(value: () => String): Self = StObject.set(x, "html", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setInheritedData(value: (/* key */ String, /* value */ js.Any) => UISortableUIItem[T]): Self = StObject.set(x, "inheritedData", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setInjector(value: () => IInjectorService): Self = StObject.set(x, "injector", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setIsolateScope(value: () => IScope): Self = StObject.set(x, "isolateScope", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setNext(value: () => UISortableUIItem[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setOff(value: () => UISortableUIItem[T]): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setOn(
+          value: (/* events */ String, /* handler */ js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]) => UISortableUIItem[T]
+        ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setOne(
+          value: (/* events */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any]) => UISortableUIItem[T]
+        ): Self = StObject.set(x, "one", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setParent(value: () => UISortableUIItem[T]): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setPrepend(value: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T]): Self = StObject.set(x, "prepend", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setProp(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "prop", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setReady(
+          value: /* handler */ js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], js.Any] => UISortableUIItem[T]
+        ): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setRemove(value: () => UISortableUIItem[T]): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setRemoveAttr(value: /* attributeName */ String => UISortableUIItem[T]): Self = StObject.set(x, "removeAttr", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setRemoveClass(value: () => UISortableUIItem[T]): Self = StObject.set(x, "removeClass", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setRemoveData(value: /* name */ String => UISortableUIItem[T]): Self = StObject.set(x, "removeData", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setReplaceWith(value: /* newContent */ JQuery => UISortableUIItem[T]): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setScope(value: () => IScope): Self = StObject.set(x, "scope", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setSortable(value: UISortableProperties[T]): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setToggleClass(value: /* className */ String => UISortableUIItem[T]): Self = StObject.set(x, "toggleClass", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setTriggerHandler(value: (/* eventType */ String, /* repeated */ js.Any) => js.Object): Self = StObject.set(x, "triggerHandler", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setUnbind(value: () => UISortableUIItem[T]): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setVal(value: () => js.Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setWrap(value: /* wrappingElement */ JQuery => UISortableUIItem[T]): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
+      }
     }
     
     /* Inlined parent std.Omit<angular-ui-sortable.angular.ui.SortableUIParams, 'item'> */
-    @js.native
     trait UISortableUIParams[T] extends StObject {
       
-      var helper: IAugmentedJQuery = js.native
+      var helper: IAugmentedJQuery
       
-      var item: UISortableUIItem[T] = js.native
+      var item: UISortableUIItem[T]
       
-      var offset: js.Any = js.native
+      var offset: js.Any
       
-      var originalPosition: js.Any = js.native
+      var originalPosition: js.Any
       
-      var placeholder: IAugmentedJQuery = js.native
+      var placeholder: IAugmentedJQuery
       
-      var position: js.Any = js.native
+      var position: js.Any
       
-      var sender: IAugmentedJQuery = js.native
+      var sender: IAugmentedJQuery
     }
     object UISortableUIParams {
       
@@ -898,7 +1085,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class UISortableUIParamsMutableBuilder[Self <: UISortableUIParams[_], T] (val x: Self with UISortableUIParams[T]) extends AnyVal {
+      implicit class UISortableUIParamsMutableBuilder[Self <: UISortableUIParams[?], T] (val x: Self & UISortableUIParams[T]) extends AnyVal {
         
         @scala.inline
         def setHelper(value: IAugmentedJQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])

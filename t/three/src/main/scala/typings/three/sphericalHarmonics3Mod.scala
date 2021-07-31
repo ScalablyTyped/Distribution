@@ -5,7 +5,6 @@ import typings.three.threeBooleans.`true`
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sphericalHarmonics3Mod {
@@ -61,9 +60,9 @@ object sphericalHarmonics3Mod {
     	 * @return The created or provided array.
     	 */
     def toArray(): js.Array[Double] = js.native
-    def toArray(array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+    def toArray(array: Unit, offset: Double): js.Array[Double] = js.native
     /**
     	 * Returns an array with the values of this spherical harmonics, or copies them into the provided array-like.
     	 * @param array array-like to store the spherical harmonics to.
@@ -78,8 +77,11 @@ object sphericalHarmonics3Mod {
   /* static members */
   object SphericalHarmonics3 {
     
-    @JSImport("three/src/math/SphericalHarmonics3", "SphericalHarmonics3.getBasisAt")
+    @JSImport("three/src/math/SphericalHarmonics3", "SphericalHarmonics3")
     @js.native
-    def getBasisAt(normal: Vector3, shBasis: js.Array[Double]): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getBasisAt(normal: Vector3, shBasis: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBasisAt")(normal.asInstanceOf[js.Any], shBasis.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

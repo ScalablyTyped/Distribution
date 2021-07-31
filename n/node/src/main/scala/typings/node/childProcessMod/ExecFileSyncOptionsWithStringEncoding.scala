@@ -3,14 +3,14 @@ package typings.node.childProcessMod
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExecFileSyncOptionsWithStringEncoding extends ExecFileSyncOptions {
+trait ExecFileSyncOptionsWithStringEncoding
+  extends StObject
+     with ExecFileSyncOptions {
   
   @JSName("encoding")
-  var encoding_ExecFileSyncOptionsWithStringEncoding: BufferEncoding = js.native
+  var encoding_ExecFileSyncOptionsWithStringEncoding: BufferEncoding
 }
 object ExecFileSyncOptionsWithStringEncoding {
   

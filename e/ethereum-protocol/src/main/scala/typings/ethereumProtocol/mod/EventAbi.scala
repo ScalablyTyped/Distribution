@@ -3,19 +3,19 @@ package typings.ethereumProtocol.mod
 import typings.ethereumProtocol.mod.AbiType.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EventAbi extends AbiDefinition {
+trait EventAbi
+  extends StObject
+     with AbiDefinition {
   
-  var anonymous: Boolean = js.native
+  var anonymous: Boolean
   
-  var inputs: js.Array[EventParameter] = js.native
+  var inputs: js.Array[EventParameter]
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: Event = js.native
+  var `type`: Event
 }
 object EventAbi {
   

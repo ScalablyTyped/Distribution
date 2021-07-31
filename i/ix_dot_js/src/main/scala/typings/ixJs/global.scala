@@ -5,9 +5,9 @@ import typings.ixJs.Ix.EnumerableStatic
 import typings.ixJs.Ix.Enumerator
 import typings.ixJs.Ix.EnumeratorStatic
 import typings.ixJs.Ix.EqualityComparer
+import typings.ixJs.Ix.KeyValuePair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -21,10 +21,41 @@ object global {
     @JSGlobal("Ix.Dictionary")
     @js.native
     class Dictionary[TKey, TValue] ()
-      extends typings.ixJs.Ix.Dictionary[TKey, TValue] {
+      extends StObject
+         with typings.ixJs.Ix.Dictionary[TKey, TValue] {
       def this(capacity: Double) = this()
-      def this(capacity: js.UndefOr[scala.Nothing], comparer: EqualityComparer[TKey, TKey]) = this()
       def this(capacity: Double, comparer: EqualityComparer[TKey, TKey]) = this()
+      def this(capacity: Unit, comparer: EqualityComparer[TKey, TKey]) = this()
+      
+      /* CompleteClass */
+      override def add(key: TKey, value: TValue): Unit = js.native
+      
+      /* CompleteClass */
+      override def clear(): Unit = js.native
+      
+      /* CompleteClass */
+      override def get(key: TKey): TValue = js.native
+      
+      /* CompleteClass */
+      override def getValues(): js.Array[TValue] = js.native
+      
+      /* CompleteClass */
+      override def has(key: TKey): Boolean = js.native
+      
+      /* CompleteClass */
+      override def length(): Double = js.native
+      
+      /* CompleteClass */
+      override def remove(key: TKey): Boolean = js.native
+      
+      /* CompleteClass */
+      override def set(key: TKey, value: TValue): Unit = js.native
+      
+      /* CompleteClass */
+      override def toEnumerable(): Enumerable[KeyValuePair[TKey, TValue]] = js.native
+      
+      /* CompleteClass */
+      override def tryGetValue(key: TKey): TValue = js.native
     }
     
     @JSGlobal("Ix.Enumerable")
@@ -34,7 +65,9 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Ix.Enumerable")
     @js.native
-    class EnumerableCls[T] protected () extends Enumerable[T] {
+    class EnumerableCls[T] protected ()
+      extends StObject
+         with Enumerable[T] {
       def this(getEnumerator: js.Function0[Enumerator[T]]) = this()
     }
     
@@ -48,8 +81,19 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Ix.Enumerator")
     @js.native
-    class EnumeratorCls[T] protected () extends Enumerator[T] {
+    class EnumeratorCls[T] protected ()
+      extends StObject
+         with Enumerator[T] {
       def this(moveNext: js.Function0[Boolean], getCurrent: js.Function0[T], dispose: js.Function0[Unit]) = this()
+      
+      /* CompleteClass */
+      override def dispose(): Unit = js.native
+      
+      /* CompleteClass */
+      override def getCurrent(): T = js.native
+      
+      /* CompleteClass */
+      override def moveNext(): Boolean = js.native
     }
     
     @scala.inline

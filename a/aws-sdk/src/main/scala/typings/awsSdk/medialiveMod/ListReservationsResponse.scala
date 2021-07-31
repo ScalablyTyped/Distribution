@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReservationsResponse extends StObject {
   
   /**
     * Token to retrieve the next page of results
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * List of reservations
     */
-  var Reservations: js.UndefOr[listOfReservation] = js.native
+  var Reservations: js.UndefOr[listOfReservation] = js.undefined
 }
 object ListReservationsResponse {
   

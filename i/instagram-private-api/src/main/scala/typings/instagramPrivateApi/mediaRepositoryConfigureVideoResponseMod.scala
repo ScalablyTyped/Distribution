@@ -2,21 +2,19 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaRepositoryConfigureVideoResponseMod {
   
-  @js.native
   trait MediaRepositoryConfigureVideoResponseCandidatesItem extends StObject {
     
-    var estimated_scans_sizes: js.Array[Double] = js.native
+    var estimated_scans_sizes: js.Array[Double]
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object MediaRepositoryConfigureVideoResponseCandidatesItem {
     
@@ -46,15 +44,14 @@ object mediaRepositoryConfigureVideoResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureVideoResponseFbUserTags extends StObject {
     
-    var in: js.Array[_] = js.native
+    var in: js.Array[js.Any]
   }
   object MediaRepositoryConfigureVideoResponseFbUserTags {
     
     @scala.inline
-    def apply(in: js.Array[_]): MediaRepositoryConfigureVideoResponseFbUserTags = {
+    def apply(in: js.Array[js.Any]): MediaRepositoryConfigureVideoResponseFbUserTags = {
       val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaRepositoryConfigureVideoResponseFbUserTags]
     }
@@ -63,17 +60,16 @@ object mediaRepositoryConfigureVideoResponseMod {
     implicit class MediaRepositoryConfigureVideoResponseFbUserTagsMutableBuilder[Self <: MediaRepositoryConfigureVideoResponseFbUserTags] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setIn(value: js.Array[_]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      def setIn(value: js.Array[js.Any]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInVarargs(value: js.Any*): Self = StObject.set(x, "in", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureVideoResponseImageVersions2 extends StObject {
     
-    var candidates: js.Array[MediaRepositoryConfigureVideoResponseCandidatesItem] = js.native
+    var candidates: js.Array[MediaRepositoryConfigureVideoResponseCandidatesItem]
   }
   object MediaRepositoryConfigureVideoResponseImageVersions2 {
     
@@ -94,16 +90,15 @@ object mediaRepositoryConfigureVideoResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureVideoResponseInItem extends StObject {
     
-    var duration_in_video_in_sec: Null = js.native
+    var duration_in_video_in_sec: Null
     
-    var position: js.Array[Double] = js.native
+    var position: js.Array[Double]
     
-    var start_time_in_video_in_sec: Null = js.native
+    var start_time_in_video_in_sec: Null
     
-    var user: MediaRepositoryConfigureVideoResponseUser = js.native
+    var user: MediaRepositoryConfigureVideoResponseUser
   }
   object MediaRepositoryConfigureVideoResponseInItem {
     
@@ -138,62 +133,61 @@ object mediaRepositoryConfigureVideoResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureVideoResponseMedia extends StObject {
     
-    var can_view_more_preview_comments: Boolean = js.native
+    var can_view_more_preview_comments: Boolean
     
-    var can_viewer_reshare: Boolean = js.native
+    var can_viewer_reshare: Boolean
     
-    var can_viewer_save: Boolean = js.native
+    var can_viewer_save: Boolean
     
-    var caption: Null = js.native
+    var caption: Null
     
-    var caption_is_edited: Boolean = js.native
+    var caption_is_edited: Boolean
     
-    var client_cache_key: String = js.native
+    var client_cache_key: String
     
-    var code: String = js.native
+    var code: String
     
-    var comment_count: Double = js.native
+    var comment_count: Double
     
-    var comment_likes_enabled: Boolean = js.native
+    var comment_likes_enabled: Boolean
     
-    var comment_threading_enabled: Boolean = js.native
+    var comment_threading_enabled: Boolean
     
-    var device_timestamp: Double = js.native
+    var device_timestamp: Double
     
-    var fb_user_tags: MediaRepositoryConfigureVideoResponseFbUserTags = js.native
+    var fb_user_tags: MediaRepositoryConfigureVideoResponseFbUserTags
     
-    var filter_type: Double = js.native
+    var filter_type: Double
     
-    var has_more_comments: Boolean = js.native
+    var has_more_comments: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var image_versions2: MediaRepositoryConfigureVideoResponseImageVersions2 = js.native
+    var image_versions2: MediaRepositoryConfigureVideoResponseImageVersions2
     
-    var max_num_visible_preview_comments: Double = js.native
+    var max_num_visible_preview_comments: Double
     
-    var media_type: Double = js.native
+    var media_type: Double
     
-    var organic_tracking_token: String = js.native
+    var organic_tracking_token: String
     
-    var original_height: Double = js.native
+    var original_height: Double
     
-    var original_width: Double = js.native
+    var original_width: Double
     
-    var photo_of_you: Boolean = js.native
+    var photo_of_you: Boolean
     
-    var pk: String = js.native
+    var pk: String
     
-    var preview_comments: js.Array[_] = js.native
+    var preview_comments: js.Array[js.Any]
     
-    var taken_at: Double = js.native
+    var taken_at: Double
     
-    var user: MediaRepositoryConfigureVideoResponseUser = js.native
+    var user: MediaRepositoryConfigureVideoResponseUser
     
-    var usertags: MediaRepositoryConfigureVideoResponseUsertags = js.native
+    var usertags: MediaRepositoryConfigureVideoResponseUsertags
   }
   object MediaRepositoryConfigureVideoResponseMedia {
     
@@ -222,7 +216,7 @@ object mediaRepositoryConfigureVideoResponseMod {
       original_width: Double,
       photo_of_you: Boolean,
       pk: String,
-      preview_comments: js.Array[_],
+      preview_comments: js.Array[js.Any],
       taken_at: Double,
       user: MediaRepositoryConfigureVideoResponseUser,
       usertags: MediaRepositoryConfigureVideoResponseUsertags
@@ -304,7 +298,7 @@ object mediaRepositoryConfigureVideoResponseMod {
       def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPreview_comments(value: js.Array[_]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
+      def setPreview_comments(value: js.Array[js.Any]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreview_commentsVarargs(value: js.Any*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
@@ -320,14 +314,13 @@ object mediaRepositoryConfigureVideoResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureVideoResponseRootObject extends StObject {
     
-    var media: MediaRepositoryConfigureVideoResponseMedia = js.native
+    var media: MediaRepositoryConfigureVideoResponseMedia
     
-    var status: String = js.native
+    var status: String
     
-    var upload_id: String = js.native
+    var upload_id: String
   }
   object MediaRepositoryConfigureVideoResponseRootObject {
     
@@ -351,38 +344,37 @@ object mediaRepositoryConfigureVideoResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureVideoResponseUser extends StObject {
     
-    var allowed_commenter_type: js.UndefOr[String] = js.native
+    var allowed_commenter_type: js.UndefOr[String] = js.undefined
     
-    var can_boost_post: js.UndefOr[Boolean] = js.native
+    var can_boost_post: js.UndefOr[Boolean] = js.undefined
     
-    var can_see_organic_insights: js.UndefOr[Boolean] = js.native
+    var can_see_organic_insights: js.UndefOr[Boolean] = js.undefined
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_unpublished: js.UndefOr[Boolean] = js.native
+    var is_unpublished: js.UndefOr[Boolean] = js.undefined
     
-    var is_verified: js.UndefOr[Boolean] = js.native
+    var is_verified: js.UndefOr[Boolean] = js.undefined
     
-    var latest_reel_media: js.UndefOr[Null] = js.native
+    var latest_reel_media: js.UndefOr[Null] = js.undefined
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: js.UndefOr[String] = js.native
+    var reel_auto_archive: js.UndefOr[String] = js.undefined
     
-    var show_insights_terms: js.UndefOr[Boolean] = js.native
+    var show_insights_terms: js.UndefOr[Boolean] = js.undefined
     
-    var username: String = js.native
+    var username: String
   }
   object MediaRepositoryConfigureVideoResponseUser {
     
@@ -470,10 +462,9 @@ object mediaRepositoryConfigureVideoResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureVideoResponseUsertags extends StObject {
     
-    var in: js.Array[MediaRepositoryConfigureVideoResponseInItem] = js.native
+    var in: js.Array[MediaRepositoryConfigureVideoResponseInItem]
   }
   object MediaRepositoryConfigureVideoResponseUsertags {
     

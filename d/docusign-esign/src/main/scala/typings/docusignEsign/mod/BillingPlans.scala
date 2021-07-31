@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingPlans extends StObject {
   
   /**
@@ -13,34 +11,34 @@ trait BillingPlans extends StObject {
     */
   var billingAddress: js.UndefOr[
     /* Contains information about the address associated with the account. */ AccountAddress
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, the credit card address information is the same as that returned as the billing address.
     * If false, then the billing address is considered a billing contact address, and the credit card address can be different.
     */
-  var billingAddressIsCreditCardAddress: js.UndefOr[String] = js.native
+  var billingAddressIsCreditCardAddress: js.UndefOr[String] = js.undefined
   
   /**
     * An object that contains details about the billing plan.
     */
-  var billingPlan: js.UndefOr[/* Contains information about an account billing plan. */ AccountBillingPlan] = js.native
+  var billingPlan: js.UndefOr[/* Contains information about an account billing plan. */ AccountBillingPlan] = js.undefined
   
   /**
     * A complex type that has information about the credit card used to pay for this account.
     */
   var creditCardInformation: js.UndefOr[
     /* This object contains information about a credit card that is associated with an account. */ CreditCardInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Information about the bank that processes direct debits for the payment plan.
     */
   var directDebitProcessorInformation: js.UndefOr[
     /* Contains information about a bank that processes a customer's direct debit payments. */ DirectDebitProcessorInformation
-  ] = js.native
+  ] = js.undefined
   
-  var downgradePlanInformation: js.UndefOr[DowngradePlanUpdateResponse] = js.native
+  var downgradePlanInformation: js.UndefOr[DowngradePlanUpdateResponse] = js.undefined
   
   /**
     * The payment method used for the billing plan. Valid values are:
@@ -55,22 +53,22 @@ trait BillingPlans extends StObject {
     * - `DigitalExternal`
     * - `DirectDebit`
     */
-  var paymentMethod: js.UndefOr[String] = js.native
+  var paymentMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the entity that processes payments for the billing plan.
     */
-  var paymentProcessorInformation: js.UndefOr[PaymentProcessorInformation] = js.native
+  var paymentProcessorInformation: js.UndefOr[PaymentProcessorInformation] = js.undefined
   
   /**
     * Contains information describing discounts and promotions.
     */
-  var referralInformation: js.UndefOr[ReferralInformation] = js.native
+  var referralInformation: js.UndefOr[ReferralInformation] = js.undefined
   
   /**
     * A list of billing plans that the current billing plan can be rolled into.
     */
-  var successorPlans: js.UndefOr[js.Array[/* Contains information about a billing plan. */ BillingPlan]] = js.native
+  var successorPlans: js.UndefOr[js.Array[/* Contains information about a billing plan. */ BillingPlan]] = js.undefined
 }
 object BillingPlans {
   

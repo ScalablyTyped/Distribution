@@ -2,19 +2,17 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request message for ContentAddressableStorage.BatchUpdateBlobs.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest extends StObject {
   
   /**
     * The individual upload requests.
     */
-  var requests: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest]] = js.native
+  var requests: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest]] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest {
   

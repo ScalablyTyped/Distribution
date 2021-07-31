@@ -3,26 +3,24 @@ package typings.signalsJs
 import typings.signalsJs.iprioritysignalMod.IPrioritySignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ieventMod {
   
-  @js.native
   trait IEvent extends StObject {
     
     /** Indicates whether the event is a bubbling event. */
-    var bubbles: Boolean = js.native
+    var bubbles: Boolean
     
     /** The object that added the listener for the event. */
-    var currentTarget: js.Object = js.native
+    var currentTarget: js.Object
     
     /** The signal that dispatched the event. */
-    var signal: IPrioritySignal = js.native
+    var signal: IPrioritySignal
     
     /** The object that originally dispatched the event.
       *  When dispatched from an signal, the target is the object containing the signal. */
-    var target: js.Object = js.native
+    var target: js.Object
   }
   object IEvent {
     

@@ -21,11 +21,9 @@ import typings.officeJs.officeJsStrings.ThinThick
 import typings.officeJs.officeJsStrings.ThinThin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`. */
-@js.native
 trait ShapeLineFormatUpdateData extends StObject {
   
   /**
@@ -34,7 +32,7 @@ trait ShapeLineFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait ShapeLineFormatUpdateData extends StObject {
     */
   var dashStyle: js.UndefOr[
     ShapeLineDashStyle | Dash | DashDot | DashDotDot | LongDash | LongDashDot | RoundDot | Solid | SquareDot | LongDashDotDot | SystemDash | SystemDot | SystemDashDot
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait ShapeLineFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var style: js.UndefOr[ShapeLineStyle | Single | ThickBetweenThin | ThickThin | ThinThick | ThinThin] = js.native
+  var style: js.UndefOr[ShapeLineStyle | Single | ThickBetweenThin | ThickThin | ThinThick | ThinThin] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait ShapeLineFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var transparency: js.UndefOr[Double] = js.native
+  var transparency: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait ShapeLineFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -76,7 +74,7 @@ trait ShapeLineFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object ShapeLineFormatUpdateData {
   

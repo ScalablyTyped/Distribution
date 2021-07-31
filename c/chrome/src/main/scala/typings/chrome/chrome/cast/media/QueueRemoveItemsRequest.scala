@@ -2,15 +2,13 @@ package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueueRemoveItemsRequest extends StObject {
   
-  var customData: js.Object = js.native
+  var customData: js.Object
   
-  var itemIds: js.Array[Double] = js.native
+  var itemIds: js.Array[Double]
 }
 object QueueRemoveItemsRequest {
   

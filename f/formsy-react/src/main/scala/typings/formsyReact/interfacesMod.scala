@@ -11,43 +11,42 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
   @js.native
   trait ComponentWithStaticAttributes
-    extends ComponentClass[js.Object, ComponentState] {
+    extends StObject
+       with ComponentClass[js.Object, ComponentState] {
     
     var defaultValue: js.UndefOr[js.Any] = js.native
   }
   
-  @js.native
   trait FormsyContextInterface extends StObject {
     
-    def attachToForm(component: InputComponent[_]): Unit = js.native
+    def attachToForm(component: InputComponent[js.Any]): Unit
     
-    def detachFromForm(component: InputComponent[_]): Unit = js.native
+    def detachFromForm(component: InputComponent[js.Any]): Unit
     
-    var isFormDisabled: Boolean = js.native
+    var isFormDisabled: Boolean
     
-    def isValidValue(component: InputComponent[_], value: js.Any): Boolean = js.native
+    def isValidValue(component: InputComponent[js.Any], value: js.Any): Boolean
     
-    def runValidation(component: InputComponent[_]): IsRequired = js.native
+    def runValidation(component: InputComponent[js.Any]): IsRequired
     
-    def validate(component: InputComponent[_]): Unit = js.native
+    def validate(component: InputComponent[js.Any]): Unit
   }
   object FormsyContextInterface {
     
     @scala.inline
     def apply(
-      attachToForm: InputComponent[_] => Unit,
-      detachFromForm: InputComponent[_] => Unit,
+      attachToForm: InputComponent[js.Any] => Unit,
+      detachFromForm: InputComponent[js.Any] => Unit,
       isFormDisabled: Boolean,
-      isValidValue: (InputComponent[_], js.Any) => Boolean,
-      runValidation: InputComponent[_] => IsRequired,
-      validate: InputComponent[_] => Unit
+      isValidValue: (InputComponent[js.Any], js.Any) => Boolean,
+      runValidation: InputComponent[js.Any] => IsRequired,
+      validate: InputComponent[js.Any] => Unit
     ): FormsyContextInterface = {
       val __obj = js.Dynamic.literal(attachToForm = js.Any.fromFunction1(attachToForm), detachFromForm = js.Any.fromFunction1(detachFromForm), isFormDisabled = isFormDisabled.asInstanceOf[js.Any], isValidValue = js.Any.fromFunction2(isValidValue), runValidation = js.Any.fromFunction1(runValidation), validate = js.Any.fromFunction1(validate))
       __obj.asInstanceOf[FormsyContextInterface]
@@ -57,22 +56,22 @@ object interfacesMod {
     implicit class FormsyContextInterfaceMutableBuilder[Self <: FormsyContextInterface] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAttachToForm(value: InputComponent[_] => Unit): Self = StObject.set(x, "attachToForm", js.Any.fromFunction1(value))
+      def setAttachToForm(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "attachToForm", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setDetachFromForm(value: InputComponent[_] => Unit): Self = StObject.set(x, "detachFromForm", js.Any.fromFunction1(value))
+      def setDetachFromForm(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "detachFromForm", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIsFormDisabled(value: Boolean): Self = StObject.set(x, "isFormDisabled", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setIsValidValue(value: (InputComponent[_], js.Any) => Boolean): Self = StObject.set(x, "isValidValue", js.Any.fromFunction2(value))
+      def setIsValidValue(value: (InputComponent[js.Any], js.Any) => Boolean): Self = StObject.set(x, "isValidValue", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setRunValidation(value: InputComponent[_] => IsRequired): Self = StObject.set(x, "runValidation", js.Any.fromFunction1(value))
+      def setRunValidation(value: InputComponent[js.Any] => IsRequired): Self = StObject.set(x, "runValidation", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setValidate(value: InputComponent[_] => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      def setValidate(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }
   }
   

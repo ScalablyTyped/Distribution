@@ -2,21 +2,19 @@ package typings.awsSdk.cloud9Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEnvironmentMembershipRequest extends StObject {
   
   /**
     * The ID of the environment to delete the environment member from.
     */
-  var environmentId: EnvironmentId = js.native
+  var environmentId: EnvironmentId
   
   /**
     * The Amazon Resource Name (ARN) of the environment member to delete from the environment.
     */
-  var userArn: UserArn = js.native
+  var userArn: UserArn
 }
 object DeleteEnvironmentMembershipRequest {
   

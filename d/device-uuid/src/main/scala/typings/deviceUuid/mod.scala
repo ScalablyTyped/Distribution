@@ -6,7 +6,6 @@ import typings.deviceUuid.deviceUuidStrings.Silk
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -73,50 +72,51 @@ object mod {
     var version: String = js.native
   }
   
-  @js.native
-  trait Agent extends CommonOptions {
+  trait Agent
+    extends StObject
+       with CommonOptions {
     
-    var browser: String = js.native
+    var browser: String
     
-    var colorDepth: Double = js.native
+    var colorDepth: Double
     
-    var cpuCores: Double = js.native
+    var cpuCores: Double
     
-    var geoIp: Headers = js.native
+    var geoIp: Headers
     
-    def hashInt(s: String): String = js.native
+    def hashInt(s: String): String
     
-    def hashMD5(s: String): String = js.native
+    def hashMD5(s: String): String
     
-    var isAndroidTablet: Boolean = js.native
+    var isAndroidTablet: Boolean
     
-    var isBada: Boolean = js.native
+    var isBada: Boolean
     
-    var isBot: Boolean = js.native
+    var isBot: Boolean
     
-    var isCaptive: Boolean = js.native
+    var isCaptive: Boolean
     
-    var isCurl: Boolean = js.native
+    var isCurl: Boolean
     
-    var isSilk: Boolean = js.native
+    var isSilk: Boolean
     
-    var isUC: Boolean = js.native
+    var isUC: Boolean
     
-    var isWinJs: Boolean = js.native
+    var isWinJs: Boolean
     
-    var language: String = js.native
+    var language: String
     
-    var os: String = js.native
+    var os: String
     
-    var pixelDepth: Double = js.native
+    var pixelDepth: Double
     
-    var platform: String = js.native
+    var platform: String
     
-    var resolution: js.Tuple2[Double, Double] = js.native
+    var resolution: js.Tuple2[Double, Double]
     
-    var source: String = js.native
+    var source: String
     
-    var version: String = js.native
+    var version: String
   }
   object Agent {
     
@@ -251,78 +251,77 @@ object mod {
     }
   }
   
-  @js.native
   trait CommonOptions extends StObject {
     
-    var isAmaya: Boolean = js.native
+    var isAmaya: Boolean
     
-    var isAndroid: Boolean = js.native
+    var isAndroid: Boolean
     
-    var isAuthoritative: Boolean = js.native
+    var isAuthoritative: Boolean
     
-    var isBlackberry: Boolean = js.native
+    var isBlackberry: Boolean
     
-    var isChrome: Boolean = js.native
+    var isChrome: Boolean
     
-    var isChromeOS: Boolean = js.native
+    var isChromeOS: Boolean
     
-    var isDesktop: Boolean = js.native
+    var isDesktop: Boolean
     
-    var isEdge: Boolean = js.native
+    var isEdge: Boolean
     
-    var isEpiphany: Boolean = js.native
+    var isEpiphany: Boolean
     
-    var isFirefox: Boolean = js.native
+    var isFirefox: Boolean
     
-    var isFlock: Boolean = js.native
+    var isFlock: Boolean
     
-    var isIE: Boolean = js.native
+    var isIE: Boolean
     
-    var isIECompatibilityMode: Boolean = js.native
+    var isIECompatibilityMode: Boolean
     
-    var isKindleFire: Boolean = js.native
+    var isKindleFire: Boolean
     
-    var isKonqueror: Boolean = js.native
+    var isKonqueror: Boolean
     
-    var isLinux: Boolean = js.native
+    var isLinux: Boolean
     
-    var isLinux64: Boolean = js.native
+    var isLinux64: Boolean
     
-    var isMac: Boolean = js.native
+    var isMac: Boolean
     
-    var isMobile: Boolean = js.native
+    var isMobile: Boolean
     
-    var isOmniWeb: Boolean = js.native
+    var isOmniWeb: Boolean
     
-    var isOpera: Boolean = js.native
+    var isOpera: Boolean
     
-    var isPhantomJS: Boolean = js.native
+    var isPhantomJS: Boolean
     
-    var isRaspberry: Boolean = js.native
+    var isRaspberry: Boolean
     
-    var isSafari: Boolean = js.native
+    var isSafari: Boolean
     
-    var isSamsung: Boolean = js.native
+    var isSamsung: Boolean
     
-    var isSeaMonkey: Boolean = js.native
+    var isSeaMonkey: Boolean
     
-    var isSmartTV: Boolean = js.native
+    var isSmartTV: Boolean
     
-    var isTablet: Boolean = js.native
+    var isTablet: Boolean
     
-    var isTouchScreen: Boolean = js.native
+    var isTouchScreen: Boolean
     
-    var isWebkit: Boolean = js.native
+    var isWebkit: Boolean
     
-    var isWindows: Boolean = js.native
+    var isWindows: Boolean
     
-    var isiPad: Boolean = js.native
+    var isiPad: Boolean
     
-    var isiPhone: Boolean = js.native
+    var isiPhone: Boolean
     
-    var isiPod: Boolean = js.native
+    var isiPod: Boolean
     
-    var silkAccelerated: Boolean = js.native
+    var silkAccelerated: Boolean
   }
   object CommonOptions {
     
@@ -480,26 +479,27 @@ object mod {
   
   type Headers = Record[String, String]
   
-  @js.native
-  trait Options extends CommonOptions {
+  trait Options
+    extends StObject
+       with CommonOptions {
     
-    var colorDepth: Boolean = js.native
+    var colorDepth: Boolean
     
-    var cpuCores: Boolean = js.native
+    var cpuCores: Boolean
     
-    var language: Boolean = js.native
+    var language: Boolean
     
-    var os: Boolean = js.native
+    var os: Boolean
     
-    var pixelDepth: Boolean = js.native
+    var pixelDepth: Boolean
     
-    var platform: Boolean = js.native
+    var platform: Boolean
     
-    var resolution: Boolean = js.native
+    var resolution: Boolean
     
-    var source: Boolean = js.native
+    var source: Boolean
     
-    var version: Boolean = js.native
+    var version: Boolean
   }
   object Options {
     

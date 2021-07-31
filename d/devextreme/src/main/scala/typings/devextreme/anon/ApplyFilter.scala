@@ -4,29 +4,27 @@ import typings.devextreme.devextremeStrings.auto
 import typings.devextreme.devextremeStrings.onClick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyFilter extends StObject {
   
-  var applyFilter: js.UndefOr[auto | onClick] = js.native
+  var applyFilter: js.UndefOr[auto | onClick] = js.undefined
   
-  var applyFilterText: js.UndefOr[String] = js.native
+  var applyFilterText: js.UndefOr[String] = js.undefined
   
-  var betweenEndText: js.UndefOr[String] = js.native
+  var betweenEndText: js.UndefOr[String] = js.undefined
   
-  var betweenStartText: js.UndefOr[String] = js.native
+  var betweenStartText: js.UndefOr[String] = js.undefined
   
-  var operationDescriptions: js.UndefOr[Between] = js.native
+  var operationDescriptions: js.UndefOr[Between] = js.undefined
   
-  var resetOperationText: js.UndefOr[String] = js.native
+  var resetOperationText: js.UndefOr[String] = js.undefined
   
-  var showAllText: js.UndefOr[String] = js.native
+  var showAllText: js.UndefOr[String] = js.undefined
   
-  var showOperationChooser: js.UndefOr[Boolean] = js.native
+  var showOperationChooser: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ApplyFilter {
   

@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributedNodesUpdatedEvent extends StObject {
   
   /**
     * Distributed nodes for given insertion point.
     */
-  var distributedNodes: js.Array[BackendNode] = js.native
+  var distributedNodes: js.Array[BackendNode]
   
   /**
     * Insertion point where distrubuted nodes were updated.
     */
-  var insertionPointId: NodeId = js.native
+  var insertionPointId: NodeId
 }
 object DistributedNodesUpdatedEvent {
   

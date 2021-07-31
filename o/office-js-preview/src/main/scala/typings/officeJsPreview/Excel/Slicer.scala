@@ -12,7 +12,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.DataSourceOrder
 import typings.officeJsPreview.officeJsPreviewStrings.Descending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.10]
   */
 @js.native
-trait Slicer extends ClientObject {
+trait Slicer
+  extends StObject
+     with ClientObject {
   
   /**
     *

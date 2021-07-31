@@ -2,75 +2,74 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMCharacterMarker
-  extends CIMMarker
+  extends StObject
+     with CIMMarker
      with CIMSymbolLayerType {
   
   /**
     * The Unicode decimal value for the individual glyph of the font that defines the shape of the marker.
     */
-  var characterIndex: js.UndefOr[Double] = js.native
+  var characterIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The depth of the marker when drawn in 3D.
     */
-  var depth3D: js.UndefOr[Double] = js.native
+  var depth3D: js.UndefOr[Double] = js.undefined
   
   /**
     * The font family name of the font. e.g. Comic Sans.
     */
-  var fontFamilyName: js.UndefOr[String] = js.native
+  var fontFamilyName: js.UndefOr[String] = js.undefined
   
   /**
     * The style name for the font family. e.g. Regular, Bold, or Italic.
     */
-  var fontStyleName: js.UndefOr[String] = js.native
+  var fontStyleName: js.UndefOr[String] = js.undefined
   
   /**
     * The font type.
     */
   var fontType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontType * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A value indicating whether the frame of the character marker should be honored when transforming the marker.
     */
-  var respectFrame: js.UndefOr[Boolean] = js.native
+  var respectFrame: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A value indicating whether the strokes and/or fills of a marker are scaled proportionally when the symbol size is changed. When enabled, the strokes for the outline or fill of the polygon symbol used to draw the marker will be scaled proportionally with changes to the symbol size. If this property is not enabled, the stroke will draw with the specified width regardless of the marker size.
     */
-  var scaleSymbolsProportionally: js.UndefOr[Boolean] = js.native
+  var scaleSymbolsProportionally: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The width of the symbol without changing the height (or depth in 3D), as a ratio.
     */
-  var scaleX: js.UndefOr[Double] = js.native
+  var scaleX: js.UndefOr[Double] = js.undefined
   
   /**
     * The polygon symbol that is used to renderer the marker.
     */
-  var symbol: js.UndefOr[CIMPolygonSymbol] = js.native
+  var symbol: js.UndefOr[CIMPolygonSymbol] = js.undefined
   
   @JSName("type")
-  var type_CIMCharacterMarker: typings.arcgisJsApi.arcgisJsApiStrings.CIMCharacterMarker = js.native
+  var type_CIMCharacterMarker: typings.arcgisJsApi.arcgisJsApiStrings.CIMCharacterMarker
   
   /**
     * A value indicating whether the marker stands a marker upright as though locked in place. The marker can be viewed from all angles.
     */
-  var verticalOrientation3D: js.UndefOr[Boolean] = js.native
+  var verticalOrientation3D: js.UndefOr[Boolean] = js.undefined
 }
 object CIMCharacterMarker {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMCharacterMarker): CIMCharacterMarker = {
+  def apply(): CIMCharacterMarker = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMCharacterMarker")
     __obj.asInstanceOf[CIMCharacterMarker]
   }
   

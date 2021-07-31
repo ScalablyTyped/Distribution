@@ -2,36 +2,34 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateImageRequest extends StObject {
   
   /**
     * The description of the image.
     */
-  var Description: js.UndefOr[ImageDescription] = js.native
+  var Description: js.UndefOr[ImageDescription] = js.undefined
   
   /**
     * The display name of the image. If not provided, ImageName is displayed.
     */
-  var DisplayName: js.UndefOr[ImageDisplayName] = js.native
+  var DisplayName: js.UndefOr[ImageDisplayName] = js.undefined
   
   /**
     * The name of the image. Must be unique to your account.
     */
-  var ImageName: typings.awsSdk.sagemakerMod.ImageName = js.native
+  var ImageName: typings.awsSdk.sagemakerMod.ImageName
   
   /**
     * The Amazon Resource Name (ARN) of an IAM role that enables Amazon SageMaker to perform tasks on your behalf.
     */
-  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
   
   /**
     * A list of tags to apply to the image.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateImageRequest {
   

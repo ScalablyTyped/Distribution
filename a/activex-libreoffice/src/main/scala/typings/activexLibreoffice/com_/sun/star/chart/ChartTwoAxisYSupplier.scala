@@ -5,30 +5,29 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** a helper service for chart documents which supply primary and secondary y-axes. */
-@js.native
 trait ChartTwoAxisYSupplier
-  extends XTwoAxisYSupplier
+  extends StObject
+     with XTwoAxisYSupplier
      with ChartAxisYSupplier {
   
   /**
     * determines if the secondary y-axis is shown or hidden.
     * @see ChartAxis
     */
-  var HasSecondaryYAxis: Boolean = js.native
+  var HasSecondaryYAxis: Boolean
   
   /** determines for the secondary y-axis if the labels at the tick marks are shown or hidden. */
-  var HasSecondaryYAxisDescription: Boolean = js.native
+  var HasSecondaryYAxisDescription: Boolean
   
   /**
     * determines if the title of the secondary y-axis is shown or hidden.
     * @see ChartTitle
     * @since OOo 3.0
     */
-  var HasSecondaryYAxisTitle: Boolean = js.native
+  var HasSecondaryYAxisTitle: Boolean
 }
 object ChartTwoAxisYSupplier {
   

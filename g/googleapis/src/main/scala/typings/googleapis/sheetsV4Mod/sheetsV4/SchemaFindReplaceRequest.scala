@@ -2,50 +2,48 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Finds and replaces data in cells over a range, sheet, or all sheets.
   */
-@js.native
 trait SchemaFindReplaceRequest extends StObject {
   
   /**
     * True to find/replace over all sheets.
     */
-  var allSheets: js.UndefOr[Boolean] = js.native
+  var allSheets: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value to search.
     */
-  var find: js.UndefOr[String] = js.native
+  var find: js.UndefOr[String] = js.undefined
   
   /**
     * True if the search should include cells with formulas. False to skip
     * cells with formulas.
     */
-  var includeFormulas: js.UndefOr[Boolean] = js.native
+  var includeFormulas: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if the search is case sensitive.
     */
-  var matchCase: js.UndefOr[Boolean] = js.native
+  var matchCase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if the find value should match the entire cell.
     */
-  var matchEntireCell: js.UndefOr[Boolean] = js.native
+  var matchEntireCell: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The range to find/replace over.
     */
-  var range: js.UndefOr[SchemaGridRange] = js.native
+  var range: js.UndefOr[SchemaGridRange] = js.undefined
   
   /**
     * The value to use as the replacement.
     */
-  var replacement: js.UndefOr[String] = js.native
+  var replacement: js.UndefOr[String] = js.undefined
   
   /**
     * True if the find value is a regex. The regular expression and replacement
@@ -58,12 +56,12 @@ trait SchemaFindReplaceRequest extends StObject {
     * contents of the cells to `&quot;GSheets Rocks&quot;` and `&quot;GDocs
     * Rocks&quot;` respectively.
     */
-  var searchByRegex: js.UndefOr[Boolean] = js.native
+  var searchByRegex: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The sheet to find/replace over.
     */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
 }
 object SchemaFindReplaceRequest {
   

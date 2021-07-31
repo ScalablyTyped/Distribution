@@ -2,33 +2,31 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRightsizingRecommendationRequest extends StObject {
   
   /**
     *  Enables you to customize recommendations across two attributes. You can choose to view recommendations for instances within the same instance families or across different instance families. You can also choose to view your estimated savings associated with recommendations with consideration of existing Savings Plans or RI benefits, or neither. 
     */
-  var Configuration: js.UndefOr[RightsizingRecommendationConfiguration] = js.native
+  var Configuration: js.UndefOr[RightsizingRecommendationConfiguration] = js.undefined
   
-  var Filter: js.UndefOr[Expression] = js.native
+  var Filter: js.UndefOr[Expression] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results that you want to retrieve.
     */
-  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.native
+  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
   /**
     * The number of recommendations that you want returned in a single response object.
     */
-  var PageSize: js.UndefOr[NonNegativeInteger] = js.native
+  var PageSize: js.UndefOr[NonNegativeInteger] = js.undefined
   
   /**
     * The specific service that you want recommendations for. The only valid value for GetRightsizingRecommendation is "AmazonEC2".
     */
-  var Service: GenericString = js.native
+  var Service: GenericString
 }
 object GetRightsizingRecommendationRequest {
   

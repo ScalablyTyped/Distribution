@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpecListenerTimeoutTcp extends StObject {
   
   /**
     * The idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
     */
-  var idle: js.UndefOr[VirtualNodeSpecListenerTimeoutTcpIdle] = js.native
+  var idle: js.UndefOr[VirtualNodeSpecListenerTimeoutTcpIdle] = js.undefined
 }
 object VirtualNodeSpecListenerTimeoutTcp {
   

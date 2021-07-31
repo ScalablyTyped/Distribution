@@ -11,23 +11,21 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.swiper
 import typings.tuyaPanelKit.tuyaPanelKitStrings.warp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarGroupProps extends StObject {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var size: js.UndefOr[large | normal | small | Double] = js.native
+  var size: js.UndefOr[large | normal | small | Double] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var swiperConfig: js.UndefOr[CarouselProps] = js.native
+  var swiperConfig: js.UndefOr[CarouselProps] = js.undefined
   
-  var `type`: js.UndefOr[warp | swiper | divide] = js.native
+  var `type`: js.UndefOr[warp | swiper | divide] = js.undefined
   
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object BarGroupProps {
   

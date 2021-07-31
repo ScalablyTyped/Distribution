@@ -3,7 +3,6 @@ package typings.postmark
 import typings.postmark.filteringParametersMod.FilteringParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bounceFilteringParametersMod {
@@ -48,94 +47,138 @@ object bounceFilteringParametersMod {
   object BounceType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[BounceType with String] = js.native
+    def apply(value: String): js.UndefOr[BounceType & String] = js.native
     
     @js.native
-    sealed trait AddressChange extends BounceType
-    /* "AddressChange" */ val AddressChange: typings.postmark.bounceFilteringParametersMod.BounceType.AddressChange with String = js.native
+    sealed trait AddressChange
+      extends StObject
+         with BounceType
+    /* "AddressChange" */ val AddressChange: typings.postmark.bounceFilteringParametersMod.BounceType.AddressChange & String = js.native
     
     @js.native
-    sealed trait AutoResponder extends BounceType
-    /* "AutoResponder" */ val AutoResponder: typings.postmark.bounceFilteringParametersMod.BounceType.AutoResponder with String = js.native
+    sealed trait AutoResponder
+      extends StObject
+         with BounceType
+    /* "AutoResponder" */ val AutoResponder: typings.postmark.bounceFilteringParametersMod.BounceType.AutoResponder & String = js.native
     
     @js.native
-    sealed trait BadEmailAddress extends BounceType
-    /* "BadEmailAddress" */ val BadEmailAddress: typings.postmark.bounceFilteringParametersMod.BounceType.BadEmailAddress with String = js.native
+    sealed trait BadEmailAddress
+      extends StObject
+         with BounceType
+    /* "BadEmailAddress" */ val BadEmailAddress: typings.postmark.bounceFilteringParametersMod.BounceType.BadEmailAddress & String = js.native
     
     @js.native
-    sealed trait Blocked extends BounceType
-    /* "Blocked" */ val Blocked: typings.postmark.bounceFilteringParametersMod.BounceType.Blocked with String = js.native
+    sealed trait Blocked
+      extends StObject
+         with BounceType
+    /* "Blocked" */ val Blocked: typings.postmark.bounceFilteringParametersMod.BounceType.Blocked & String = js.native
     
     @js.native
-    sealed trait ChallengeVerification extends BounceType
-    /* "ChallengeVerification" */ val ChallengeVerification: typings.postmark.bounceFilteringParametersMod.BounceType.ChallengeVerification with String = js.native
+    sealed trait ChallengeVerification
+      extends StObject
+         with BounceType
+    /* "ChallengeVerification" */ val ChallengeVerification: typings.postmark.bounceFilteringParametersMod.BounceType.ChallengeVerification & String = js.native
     
     @js.native
-    sealed trait DMARCPolicy extends BounceType
-    /* "DMARCPolicy" */ val DMARCPolicy: typings.postmark.bounceFilteringParametersMod.BounceType.DMARCPolicy with String = js.native
+    sealed trait DMARCPolicy
+      extends StObject
+         with BounceType
+    /* "DMARCPolicy" */ val DMARCPolicy: typings.postmark.bounceFilteringParametersMod.BounceType.DMARCPolicy & String = js.native
     
     @js.native
-    sealed trait DnsError extends BounceType
-    /* "DnsError" */ val DnsError: typings.postmark.bounceFilteringParametersMod.BounceType.DnsError with String = js.native
+    sealed trait DnsError
+      extends StObject
+         with BounceType
+    /* "DnsError" */ val DnsError: typings.postmark.bounceFilteringParametersMod.BounceType.DnsError & String = js.native
     
     @js.native
-    sealed trait HardBounce extends BounceType
-    /* "HardBounce" */ val HardBounce: typings.postmark.bounceFilteringParametersMod.BounceType.HardBounce with String = js.native
+    sealed trait HardBounce
+      extends StObject
+         with BounceType
+    /* "HardBounce" */ val HardBounce: typings.postmark.bounceFilteringParametersMod.BounceType.HardBounce & String = js.native
     
     @js.native
-    sealed trait InboundError extends BounceType
-    /* "InboundError" */ val InboundError: typings.postmark.bounceFilteringParametersMod.BounceType.InboundError with String = js.native
+    sealed trait InboundError
+      extends StObject
+         with BounceType
+    /* "InboundError" */ val InboundError: typings.postmark.bounceFilteringParametersMod.BounceType.InboundError & String = js.native
     
     @js.native
-    sealed trait ManuallyDeactivated extends BounceType
-    /* "ManuallyDeactivated" */ val ManuallyDeactivated: typings.postmark.bounceFilteringParametersMod.BounceType.ManuallyDeactivated with String = js.native
+    sealed trait ManuallyDeactivated
+      extends StObject
+         with BounceType
+    /* "ManuallyDeactivated" */ val ManuallyDeactivated: typings.postmark.bounceFilteringParametersMod.BounceType.ManuallyDeactivated & String = js.native
     
     @js.native
-    sealed trait OpenRelayTest extends BounceType
-    /* "OpenRelayTest" */ val OpenRelayTest: typings.postmark.bounceFilteringParametersMod.BounceType.OpenRelayTest with String = js.native
+    sealed trait OpenRelayTest
+      extends StObject
+         with BounceType
+    /* "OpenRelayTest" */ val OpenRelayTest: typings.postmark.bounceFilteringParametersMod.BounceType.OpenRelayTest & String = js.native
     
     @js.native
-    sealed trait SMTPApiError extends BounceType
-    /* "SMTPApiError" */ val SMTPApiError: typings.postmark.bounceFilteringParametersMod.BounceType.SMTPApiError with String = js.native
+    sealed trait SMTPApiError
+      extends StObject
+         with BounceType
+    /* "SMTPApiError" */ val SMTPApiError: typings.postmark.bounceFilteringParametersMod.BounceType.SMTPApiError & String = js.native
     
     @js.native
-    sealed trait SoftBounce extends BounceType
-    /* "SoftBounce" */ val SoftBounce: typings.postmark.bounceFilteringParametersMod.BounceType.SoftBounce with String = js.native
+    sealed trait SoftBounce
+      extends StObject
+         with BounceType
+    /* "SoftBounce" */ val SoftBounce: typings.postmark.bounceFilteringParametersMod.BounceType.SoftBounce & String = js.native
     
     @js.native
-    sealed trait SpamComplaint extends BounceType
-    /* "SpamComplaint" */ val SpamComplaint: typings.postmark.bounceFilteringParametersMod.BounceType.SpamComplaint with String = js.native
+    sealed trait SpamComplaint
+      extends StObject
+         with BounceType
+    /* "SpamComplaint" */ val SpamComplaint: typings.postmark.bounceFilteringParametersMod.BounceType.SpamComplaint & String = js.native
     
     @js.native
-    sealed trait SpamNotification extends BounceType
-    /* "SpamNotification" */ val SpamNotification: typings.postmark.bounceFilteringParametersMod.BounceType.SpamNotification with String = js.native
+    sealed trait SpamNotification
+      extends StObject
+         with BounceType
+    /* "SpamNotification" */ val SpamNotification: typings.postmark.bounceFilteringParametersMod.BounceType.SpamNotification & String = js.native
     
     @js.native
-    sealed trait Subscribe extends BounceType
-    /* "Subscribe" */ val Subscribe: typings.postmark.bounceFilteringParametersMod.BounceType.Subscribe with String = js.native
+    sealed trait Subscribe
+      extends StObject
+         with BounceType
+    /* "Subscribe" */ val Subscribe: typings.postmark.bounceFilteringParametersMod.BounceType.Subscribe & String = js.native
     
     @js.native
-    sealed trait TemplateRenderingFailed extends BounceType
-    /* "TemplateRenderingFailed" */ val TemplateRenderingFailed: typings.postmark.bounceFilteringParametersMod.BounceType.TemplateRenderingFailed with String = js.native
+    sealed trait TemplateRenderingFailed
+      extends StObject
+         with BounceType
+    /* "TemplateRenderingFailed" */ val TemplateRenderingFailed: typings.postmark.bounceFilteringParametersMod.BounceType.TemplateRenderingFailed & String = js.native
     
     @js.native
-    sealed trait Transient extends BounceType
-    /* "Transient" */ val Transient: typings.postmark.bounceFilteringParametersMod.BounceType.Transient with String = js.native
+    sealed trait Transient
+      extends StObject
+         with BounceType
+    /* "Transient" */ val Transient: typings.postmark.bounceFilteringParametersMod.BounceType.Transient & String = js.native
     
     @js.native
-    sealed trait Unconfirmed extends BounceType
-    /* "Unconfirmed" */ val Unconfirmed: typings.postmark.bounceFilteringParametersMod.BounceType.Unconfirmed with String = js.native
+    sealed trait Unconfirmed
+      extends StObject
+         with BounceType
+    /* "Unconfirmed" */ val Unconfirmed: typings.postmark.bounceFilteringParametersMod.BounceType.Unconfirmed & String = js.native
     
     @js.native
-    sealed trait Unknown extends BounceType
-    /* "Unknown" */ val Unknown: typings.postmark.bounceFilteringParametersMod.BounceType.Unknown with String = js.native
+    sealed trait Unknown
+      extends StObject
+         with BounceType
+    /* "Unknown" */ val Unknown: typings.postmark.bounceFilteringParametersMod.BounceType.Unknown & String = js.native
     
     @js.native
-    sealed trait Unsubscribe extends BounceType
-    /* "Unsubscribe" */ val Unsubscribe: typings.postmark.bounceFilteringParametersMod.BounceType.Unsubscribe with String = js.native
+    sealed trait Unsubscribe
+      extends StObject
+         with BounceType
+    /* "Unsubscribe" */ val Unsubscribe: typings.postmark.bounceFilteringParametersMod.BounceType.Unsubscribe & String = js.native
     
     @js.native
-    sealed trait VirusNotification extends BounceType
-    /* "VirusNotification" */ val VirusNotification: typings.postmark.bounceFilteringParametersMod.BounceType.VirusNotification with String = js.native
+    sealed trait VirusNotification
+      extends StObject
+         with BounceType
+    /* "VirusNotification" */ val VirusNotification: typings.postmark.bounceFilteringParametersMod.BounceType.VirusNotification & String = js.native
   }
 }

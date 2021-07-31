@@ -12,7 +12,7 @@ Write concise React components without JSX
 | Keywords           | react, reactjs, jsx |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1050 |
+| # downloads        | 921 |
 | # stars            | 2 |
 
 ## Links

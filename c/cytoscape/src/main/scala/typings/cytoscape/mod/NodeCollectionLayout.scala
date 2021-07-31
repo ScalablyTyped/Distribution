@@ -2,10 +2,8 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeCollectionLayout extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait NodeCollectionLayout extends StObject {
     * @param layout The layout.
     * @param options The layout options object.
     */
-  def layoutPositions(layout: String, options: LayoutPositionOptions, handler: ElementPositionFunction): Unit = js.native
+  def layoutPositions(layout: String, options: LayoutPositionOptions, handler: ElementPositionFunction): Unit
 }
 object NodeCollectionLayout {
   

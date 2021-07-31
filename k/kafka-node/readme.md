@@ -10,9 +10,9 @@ Client for Apache Kafka v0.9.x, v0.10.x and v0.11.x
 | ------------------ | :-------------: |
 | Full name          | kafka-node |
 | Keywords           | kafka, consumer, producer, broker |
-| # releases         | 13 |
-| # dependents       | 258 |
-| # downloads        | 3602404 |
+| # releases         | 10 |
+| # dependents       | 279 |
+| # downloads        | 6520572 |
 | # stars            | 44 |
 
 ## Links

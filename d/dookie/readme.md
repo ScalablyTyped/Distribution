@@ -12,7 +12,7 @@ Stylus-inspired preprocessor for MongoDB data sets and fixtures
 | Keywords           | mongodb, fixture, fixtures, test, data, dataset, import |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 131445 |
+| # downloads        | 102859 |
 | # stars            | 2 |
 
 ## Links

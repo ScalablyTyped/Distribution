@@ -8,7 +8,6 @@ import typings.officeJs.officeJsStrings.Rows
 import typings.officeJs.officeJsStrings.StrokeCount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.2]
   */
 @js.native
-trait RangeSort extends ClientObject {
+trait RangeSort
+  extends StObject
+     with ClientObject {
   
   /**
     * Perform a sort operation.
@@ -34,174 +35,7 @@ trait RangeSort extends ClientObject {
   @JSName("apply")
   def apply(fields: js.Array[SortField]): Unit = js.native
   @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: js.UndefOr[scala.Nothing],
-    method: SortMethod
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: SortOrientation
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: SortOrientation,
-    method: SortMethod
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Columns,
-    method: PinYin
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Columns,
-    method: StrokeCount
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Rows,
-    method: PinYin
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Rows,
-    method: StrokeCount
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(fields: js.Array[SortField], matchCase: js.UndefOr[scala.Nothing], hasHeaders: Boolean): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: Boolean,
-    orientation: js.UndefOr[scala.Nothing],
-    method: SortMethod
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: Boolean,
-    orientation: SortOrientation
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: Boolean,
-    orientation: SortOrientation,
-    method: SortMethod
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: Boolean,
-    orientation: Columns,
-    method: PinYin
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: Boolean,
-    orientation: Columns,
-    method: StrokeCount
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: Boolean,
-    orientation: Rows,
-    method: PinYin
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: Boolean,
-    orientation: Rows,
-    method: StrokeCount
-  ): Unit = js.native
-  @JSName("apply")
   def apply(fields: js.Array[SortField], matchCase: Boolean): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: Boolean,
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: js.UndefOr[scala.Nothing],
-    method: SortMethod
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: Boolean,
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: SortOrientation
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: Boolean,
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: SortOrientation,
-    method: SortMethod
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: Boolean,
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Columns,
-    method: PinYin
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: Boolean,
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Columns,
-    method: StrokeCount
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: Boolean,
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Rows,
-    method: PinYin
-  ): Unit = js.native
-  @JSName("apply")
-  def apply(
-    fields: js.Array[SortField],
-    matchCase: Boolean,
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Rows,
-    method: StrokeCount
-  ): Unit = js.native
   @JSName("apply")
   def apply(fields: js.Array[SortField], matchCase: Boolean, hasHeaders: Boolean): Unit = js.native
   @JSName("apply")
@@ -209,7 +43,7 @@ trait RangeSort extends ClientObject {
     fields: js.Array[SortField],
     matchCase: Boolean,
     hasHeaders: Boolean,
-    orientation: js.UndefOr[scala.Nothing],
+    orientation: Unit,
     method: SortMethod
   ): Unit = js.native
   @JSName("apply")
@@ -255,113 +89,223 @@ trait RangeSort extends ClientObject {
     method: StrokeCount
   ): Unit = js.native
   @JSName("apply")
-  def apply_Columns(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Columns
-  ): Unit = js.native
-  @JSName("apply")
-  def apply_Columns(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: Boolean,
-    orientation: Columns
-  ): Unit = js.native
-  @JSName("apply")
-  def apply_Columns(
+  def apply(
     fields: js.Array[SortField],
     matchCase: Boolean,
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Columns
+    hasHeaders: Unit,
+    orientation: Unit,
+    method: SortMethod
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(fields: js.Array[SortField], matchCase: Boolean, hasHeaders: Unit, orientation: SortOrientation): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Boolean,
+    hasHeaders: Unit,
+    orientation: SortOrientation,
+    method: SortMethod
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Boolean,
+    hasHeaders: Unit,
+    orientation: Columns,
+    method: PinYin
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Boolean,
+    hasHeaders: Unit,
+    orientation: Columns,
+    method: StrokeCount
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Boolean,
+    hasHeaders: Unit,
+    orientation: Rows,
+    method: PinYin
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Boolean,
+    hasHeaders: Unit,
+    orientation: Rows,
+    method: StrokeCount
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(fields: js.Array[SortField], matchCase: Unit, hasHeaders: Boolean): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Boolean,
+    orientation: Unit,
+    method: SortMethod
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(fields: js.Array[SortField], matchCase: Unit, hasHeaders: Boolean, orientation: SortOrientation): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Boolean,
+    orientation: SortOrientation,
+    method: SortMethod
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Boolean,
+    orientation: Columns,
+    method: PinYin
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Boolean,
+    orientation: Columns,
+    method: StrokeCount
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Boolean,
+    orientation: Rows,
+    method: PinYin
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Boolean,
+    orientation: Rows,
+    method: StrokeCount
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Unit,
+    orientation: Unit,
+    method: SortMethod
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(fields: js.Array[SortField], matchCase: Unit, hasHeaders: Unit, orientation: SortOrientation): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Unit,
+    orientation: SortOrientation,
+    method: SortMethod
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Unit,
+    orientation: Columns,
+    method: PinYin
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Unit,
+    orientation: Columns,
+    method: StrokeCount
+  ): Unit = js.native
+  @JSName("apply")
+  def apply(fields: js.Array[SortField], matchCase: Unit, hasHeaders: Unit, orientation: Rows, method: PinYin): Unit = js.native
+  @JSName("apply")
+  def apply(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Unit,
+    orientation: Rows,
+    method: StrokeCount
   ): Unit = js.native
   @JSName("apply")
   def apply_Columns(fields: js.Array[SortField], matchCase: Boolean, hasHeaders: Boolean, orientation: Columns): Unit = js.native
   @JSName("apply")
-  def apply_PinYin(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: js.UndefOr[scala.Nothing],
-    method: PinYin
-  ): Unit = js.native
+  def apply_Columns(fields: js.Array[SortField], matchCase: Boolean, hasHeaders: Unit, orientation: Columns): Unit = js.native
+  @JSName("apply")
+  def apply_Columns(fields: js.Array[SortField], matchCase: Unit, hasHeaders: Boolean, orientation: Columns): Unit = js.native
+  @JSName("apply")
+  def apply_Columns(fields: js.Array[SortField], matchCase: Unit, hasHeaders: Unit, orientation: Columns): Unit = js.native
   @JSName("apply")
   def apply_PinYin(
     fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
+    matchCase: Boolean,
     hasHeaders: Boolean,
-    orientation: js.UndefOr[scala.Nothing],
+    orientation: Unit,
     method: PinYin
   ): Unit = js.native
   @JSName("apply")
   def apply_PinYin(
     fields: js.Array[SortField],
     matchCase: Boolean,
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: js.UndefOr[scala.Nothing],
+    hasHeaders: Unit,
+    orientation: Unit,
     method: PinYin
   ): Unit = js.native
   @JSName("apply")
   def apply_PinYin(
     fields: js.Array[SortField],
-    matchCase: Boolean,
+    matchCase: Unit,
     hasHeaders: Boolean,
-    orientation: js.UndefOr[scala.Nothing],
+    orientation: Unit,
     method: PinYin
   ): Unit = js.native
   @JSName("apply")
-  def apply_Rows(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Rows
-  ): Unit = js.native
-  @JSName("apply")
-  def apply_Rows(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: Boolean,
-    orientation: Rows
-  ): Unit = js.native
-  @JSName("apply")
-  def apply_Rows(
-    fields: js.Array[SortField],
-    matchCase: Boolean,
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: Rows
-  ): Unit = js.native
+  def apply_PinYin(fields: js.Array[SortField], matchCase: Unit, hasHeaders: Unit, orientation: Unit, method: PinYin): Unit = js.native
   @JSName("apply")
   def apply_Rows(fields: js.Array[SortField], matchCase: Boolean, hasHeaders: Boolean, orientation: Rows): Unit = js.native
   @JSName("apply")
-  def apply_StrokeCount(
-    fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: js.UndefOr[scala.Nothing],
-    method: StrokeCount
-  ): Unit = js.native
+  def apply_Rows(fields: js.Array[SortField], matchCase: Boolean, hasHeaders: Unit, orientation: Rows): Unit = js.native
+  @JSName("apply")
+  def apply_Rows(fields: js.Array[SortField], matchCase: Unit, hasHeaders: Boolean, orientation: Rows): Unit = js.native
+  @JSName("apply")
+  def apply_Rows(fields: js.Array[SortField], matchCase: Unit, hasHeaders: Unit, orientation: Rows): Unit = js.native
   @JSName("apply")
   def apply_StrokeCount(
     fields: js.Array[SortField],
-    matchCase: js.UndefOr[scala.Nothing],
+    matchCase: Boolean,
     hasHeaders: Boolean,
-    orientation: js.UndefOr[scala.Nothing],
+    orientation: Unit,
     method: StrokeCount
   ): Unit = js.native
   @JSName("apply")
   def apply_StrokeCount(
     fields: js.Array[SortField],
     matchCase: Boolean,
-    hasHeaders: js.UndefOr[scala.Nothing],
-    orientation: js.UndefOr[scala.Nothing],
+    hasHeaders: Unit,
+    orientation: Unit,
     method: StrokeCount
   ): Unit = js.native
   @JSName("apply")
   def apply_StrokeCount(
     fields: js.Array[SortField],
-    matchCase: Boolean,
+    matchCase: Unit,
     hasHeaders: Boolean,
-    orientation: js.UndefOr[scala.Nothing],
+    orientation: Unit,
+    method: StrokeCount
+  ): Unit = js.native
+  @JSName("apply")
+  def apply_StrokeCount(
+    fields: js.Array[SortField],
+    matchCase: Unit,
+    hasHeaders: Unit,
+    orientation: Unit,
     method: StrokeCount
   ): Unit = js.native
   

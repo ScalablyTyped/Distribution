@@ -10,9 +10,9 @@ unist utility to check if a node passes a test
 | ------------------ | :-------------: |
 | Full name          | unist-util-is |
 | Keywords           | unist, unist-util, util, utility, tree, node, is, equal, check, test, type |
-| # releases         | 5 |
-| # dependents       | 94 |
-| # downloads        | 151756437 |
+| # releases         | 8 |
+| # dependents       | 106 |
+| # downloads        | 202177271 |
 | # stars            | 1 |
 
 ## Links

@@ -5,27 +5,28 @@ import typings.zipcelx.zipcelxStrings.number
 import typings.zipcelx.zipcelxStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("zipcelx", JSImport.Default)
+  @JSImport("zipcelx", JSImport.Namespace)
   @js.native
-  def default(config: ZipCelXConfig): js.Promise[Blob] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(config: ZipCelXConfig): js.Promise[Blob] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Blob]]
+  
   trait ZipCelXCell extends StObject {
     
     /**
       * The cell value type
       */
-    var `type`: string | number = js.native
+    var `type`: string | number
     
     /**
       * The cell value
       */
-    var value: String | Double = js.native
+    var value: String | Double
   }
   object ZipCelXCell {
     
@@ -47,18 +48,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ZipCelXConfig extends StObject {
     
     /**
       * The file name of the exported file
       */
-    var filename: String = js.native
+    var filename: String
     
     /**
       * The sheet to be exported as an .xlsx file
       */
-    var sheet: ZipCelXSheet = js.native
+    var sheet: ZipCelXSheet
   }
   object ZipCelXConfig {
     
@@ -83,13 +83,12 @@ object mod {
   
   type ZipCelXRow = js.Array[ZipCelXCell]
   
-  @js.native
   trait ZipCelXSheet extends StObject {
     
     /**
       * The sheet's DataSet
       */
-    var data: ZipCelXDataSet = js.native
+    var data: ZipCelXDataSet
   }
   object ZipCelXSheet {
     

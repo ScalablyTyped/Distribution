@@ -2,7 +2,6 @@ package typings.officeJsPreview.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait SectionLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait SectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var clientUrl: js.UndefOr[Boolean] = js.native
+  var clientUrl: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait SectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait SectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.2]
     */
-  var isEncrypted: js.UndefOr[Boolean] = js.native
+  var isEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait SectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.2]
     */
-  var isLocked: js.UndefOr[Boolean] = js.native
+  var isLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait SectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait SectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var notebook: js.UndefOr[NotebookLoadOptions] = js.native
+  var notebook: js.UndefOr[NotebookLoadOptions] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait SectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var pages: js.UndefOr[PageCollectionLoadOptions] = js.native
+  var pages: js.UndefOr[PageCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait SectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var parentSectionGroup: js.UndefOr[SectionGroupLoadOptions] = js.native
+  var parentSectionGroup: js.UndefOr[SectionGroupLoadOptions] = js.undefined
   
   /**
     *
@@ -87,7 +85,7 @@ trait SectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var parentSectionGroupOrNull: js.UndefOr[SectionGroupLoadOptions] = js.native
+  var parentSectionGroupOrNull: js.UndefOr[SectionGroupLoadOptions] = js.undefined
   
   /**
     *
@@ -95,7 +93,7 @@ trait SectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var webUrl: js.UndefOr[Boolean] = js.native
+  var webUrl: js.UndefOr[Boolean] = js.undefined
 }
 object SectionLoadOptions {
   

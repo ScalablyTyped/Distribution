@@ -9,7 +9,6 @@ import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object List {
@@ -18,53 +17,54 @@ object List {
   
   type ListItem = Component[ListItemProps, js.Object, js.Any]
   
-  @js.native
-  trait ListItemProps extends EnhancedButtonProps {
+  trait ListItemProps
+    extends StObject
+       with EnhancedButtonProps {
     
     // <EnhancedButton/> is the element that get the 'other' properties
-    var autoGenerateNestedIndicator: js.UndefOr[Boolean] = js.native
+    var autoGenerateNestedIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var hoverColor: js.UndefOr[String] = js.native
+    var hoverColor: js.UndefOr[String] = js.undefined
     
-    var initiallyOpen: js.UndefOr[Boolean] = js.native
+    var initiallyOpen: js.UndefOr[Boolean] = js.undefined
     
-    var innerDivStyle: js.UndefOr[CSSProperties] = js.native
+    var innerDivStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var insetChildren: js.UndefOr[Boolean] = js.native
+    var insetChildren: js.UndefOr[Boolean] = js.undefined
     
-    var leftAvatar: js.UndefOr[ReactElement] = js.native
+    var leftAvatar: js.UndefOr[ReactElement] = js.undefined
     
-    var leftCheckbox: js.UndefOr[ReactElement] = js.native
+    var leftCheckbox: js.UndefOr[ReactElement] = js.undefined
     
-    var leftIcon: js.UndefOr[ReactElement] = js.native
+    var leftIcon: js.UndefOr[ReactElement] = js.undefined
     
-    var nestedItems: js.UndefOr[js.Array[ReactElement]] = js.native
+    var nestedItems: js.UndefOr[js.Array[ReactElement]] = js.undefined
     
-    var nestedLevel: js.UndefOr[Double] = js.native
+    var nestedLevel: js.UndefOr[Double] = js.undefined
     
-    var nestedListStyle: js.UndefOr[CSSProperties] = js.native
+    var nestedListStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var onNestedListToggle: js.UndefOr[js.Function1[/* item */ ListItem, Unit]] = js.native
+    var onNestedListToggle: js.UndefOr[js.Function1[/* item */ ListItem, Unit]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var primaryText: js.UndefOr[ReactNode] = js.native
+    var primaryText: js.UndefOr[ReactNode] = js.undefined
     
-    var primaryTogglesNestedList: js.UndefOr[Boolean] = js.native
+    var primaryTogglesNestedList: js.UndefOr[Boolean] = js.undefined
     
-    var rightAvatar: js.UndefOr[ReactElement] = js.native
+    var rightAvatar: js.UndefOr[ReactElement] = js.undefined
     
-    var rightIcon: js.UndefOr[ReactElement] = js.native
+    var rightIcon: js.UndefOr[ReactElement] = js.undefined
     
-    var rightIconButton: js.UndefOr[ReactElement] = js.native
+    var rightIconButton: js.UndefOr[ReactElement] = js.undefined
     
-    var rightToggle: js.UndefOr[ReactElement] = js.native
+    var rightToggle: js.UndefOr[ReactElement] = js.undefined
     
-    var secondaryText: js.UndefOr[ReactNode] = js.native
+    var secondaryText: js.UndefOr[ReactNode] = js.undefined
     
-    var secondaryTextLines: js.UndefOr[Double] = js.native
+    var secondaryTextLines: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object ListItemProps {
     
@@ -216,14 +216,13 @@ object List {
   
   type ListProps = HTMLAttributes[js.Object]
   
-  @js.native
   trait SelectableProps extends StObject {
     
-    var onChange: js.UndefOr[js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* value */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* value */ js.Any, Unit]] = js.undefined
     
-    var selectedItemStyle: js.UndefOr[CSSProperties] = js.native
+    var selectedItemStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object SelectableProps {
     

@@ -3,25 +3,23 @@ package typings.jsforce.describeResultMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordTypeInfo extends StObject {
   
-  var available: Boolean = js.native
+  var available: Boolean
   
-  var defaultRecordTypeMapping: Boolean = js.native
+  var defaultRecordTypeMapping: Boolean
   
-  var developerName: js.UndefOr[maybe[String]] = js.native
+  var developerName: js.UndefOr[maybe[String]] = js.undefined
   
-  var master: Boolean = js.native
+  var master: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var recordTypeId: String = js.native
+  var recordTypeId: String
   
-  var urls: Record[String, String] = js.native
+  var urls: Record[String, String]
 }
 object RecordTypeInfo {
   

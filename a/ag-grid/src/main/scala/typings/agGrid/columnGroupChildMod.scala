@@ -5,13 +5,14 @@ import typings.agGrid.columnGroupMod.ColumnGroup
 import typings.agGrid.iEventEmitterMod.IEventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnGroupChildMod {
   
   @js.native
-  trait ColumnGroupChild extends IEventEmitter {
+  trait ColumnGroupChild
+    extends StObject
+       with IEventEmitter {
     
     def getActualWidth(): Double = js.native
     

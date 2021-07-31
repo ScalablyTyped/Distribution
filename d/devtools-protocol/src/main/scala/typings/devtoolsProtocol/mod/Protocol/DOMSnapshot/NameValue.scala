@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NameValue extends StObject {
   
   /**
     * Attribute/property name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Attribute/property value.
     */
-  var value: String = js.native
+  var value: String
 }
 object NameValue {
   

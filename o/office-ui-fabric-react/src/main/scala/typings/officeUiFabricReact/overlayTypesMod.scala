@@ -9,46 +9,45 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayTypesMod {
   
-  @js.native
   trait IOverlay extends StObject
   
-  @js.native
-  trait IOverlayProps extends HTMLAttributes[HTMLElement] {
+  trait IOverlayProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * Allow body scroll on touch devices. Changing after mounting has no effect.
       * @defaultvalue false
       */
-    var allowTouchBodyScroll: js.UndefOr[Boolean] = js.native
+    var allowTouchBodyScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IOverlay]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IOverlay]] = js.undefined
     
     /**
       * Whether to use the dark-themed overlay.
       * @defaultvalue false
       */
-    var isDarkThemed: js.UndefOr[Boolean] = js.native
+    var isDarkThemed: js.UndefOr[Boolean] = js.undefined
     
     @JSName("onClick")
-    var onClick_IOverlayProps: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick_IOverlayProps: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IOverlayStyleProps, IOverlayStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IOverlayStyleProps, IOverlayStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IOverlayProps {
     
@@ -105,28 +104,27 @@ object overlayTypesMod {
     }
   }
   
-  @js.native
   trait IOverlayStyleProps extends StObject {
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Is overlay dark themed
       */
-    var isDark: js.UndefOr[Boolean] = js.native
+    var isDark: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Is overlay visible
       */
-    var isNone: js.UndefOr[Boolean] = js.native
+    var isNone: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IOverlayStyleProps {
     
@@ -162,13 +160,12 @@ object overlayTypesMod {
     }
   }
   
-  @js.native
   trait IOverlayStyles extends StObject {
     
     /**
       * Style for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IOverlayStyles {
     

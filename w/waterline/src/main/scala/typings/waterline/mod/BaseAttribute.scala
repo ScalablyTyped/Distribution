@@ -2,37 +2,35 @@ package typings.waterline.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseAttribute[T] extends StObject {
   
-  var allowNull: js.UndefOr[Boolean] = js.native
+  var allowNull: js.UndefOr[Boolean] = js.undefined
   
-  var autoCreatedAt: js.UndefOr[Boolean] = js.native
+  var autoCreatedAt: js.UndefOr[Boolean] = js.undefined
   
-  var autoUpdatedAt: js.UndefOr[Boolean] = js.native
+  var autoUpdatedAt: js.UndefOr[Boolean] = js.undefined
   
-  var columnName: js.UndefOr[String] = js.native
+  var columnName: js.UndefOr[String] = js.undefined
   
-  var defaultsTo: js.UndefOr[T | DefaultsToFn[T]] = js.native
+  var defaultsTo: js.UndefOr[T | DefaultsToFn[T]] = js.undefined
   
-  var enum: js.UndefOr[js.Array[T]] = js.native
+  var `enum`: js.UndefOr[js.Array[T]] = js.undefined
   
-  var index: js.UndefOr[Boolean] = js.native
+  var index: js.UndefOr[Boolean] = js.undefined
   
-  var primaryKey: js.UndefOr[Boolean] = js.native
+  var primaryKey: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var unique: js.UndefOr[Boolean] = js.native
+  var unique: js.UndefOr[Boolean] = js.undefined
   
-  var validations: js.UndefOr[AttributeValidations] = js.native
+  var validations: js.UndefOr[AttributeValidations] = js.undefined
 }
 object BaseAttribute {
   
@@ -43,7 +41,7 @@ object BaseAttribute {
   }
   
   @scala.inline
-  implicit class BaseAttributeMutableBuilder[Self <: BaseAttribute[_], T] (val x: Self with BaseAttribute[T]) extends AnyVal {
+  implicit class BaseAttributeMutableBuilder[Self <: BaseAttribute[?], T] (val x: Self & BaseAttribute[T]) extends AnyVal {
     
     @scala.inline
     def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])

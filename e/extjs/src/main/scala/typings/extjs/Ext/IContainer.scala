@@ -3,14 +3,14 @@ package typings.extjs.Ext
 import typings.extjs.Ext.container.IAbstractContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IContainer extends IAbstractContainer {
+trait IContainer
+  extends StObject
+     with IAbstractContainer {
   
   /** [Config Option] (Number/Object) */
-  var anchorSize: js.UndefOr[js.Any] = js.native
+  var anchorSize: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Return the immediate child Component in which the passed element is located
     * @param el Ext.Element/HTMLElement/String The element to test (or ID of element).
@@ -19,7 +19,7 @@ trait IContainer extends IAbstractContainer {
     */
   var getChildByElement: js.UndefOr[
     js.Function2[/* el */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean], IComponent]
-  ] = js.native
+  ] = js.undefined
 }
 object IContainer {
   

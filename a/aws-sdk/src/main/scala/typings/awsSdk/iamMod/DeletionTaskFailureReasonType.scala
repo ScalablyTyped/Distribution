@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletionTaskFailureReasonType extends StObject {
   
   /**
     * A short description of the reason that the service-linked role deletion failed.
     */
-  var Reason: js.UndefOr[ReasonType] = js.native
+  var Reason: js.UndefOr[ReasonType] = js.undefined
   
   /**
     * A list of objects that contains details about the service-linked role deletion failure, if that information is returned by the service. If the service-linked role has active sessions or if any resources that were used by the role have not been deleted from the linked service, the role can't be deleted. This parameter includes a list of the resources that are associated with the role and the Region in which the resources are being used.
     */
-  var RoleUsageList: js.UndefOr[RoleUsageListType] = js.native
+  var RoleUsageList: js.UndefOr[RoleUsageListType] = js.undefined
 }
 object DeletionTaskFailureReasonType {
   

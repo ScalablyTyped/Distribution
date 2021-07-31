@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMarkerPlacementOnLine
-  extends CIMMarkerStrokePlacement
+  extends StObject
+     with CIMMarkerStrokePlacement
      with CIMMarkerPlacementType {
   
   /**
@@ -15,22 +14,22 @@ trait CIMMarkerPlacementOnLine
     */
   var relativeTo: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementOnLineRelativeTo * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The distances from a specified location on a line that a marker will be placed.
     */
-  var startPointOffset: js.UndefOr[Double] = js.native
+  var startPointOffset: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMMarkerPlacementOnLine: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementOnLine = js.native
+  var type_CIMMarkerPlacementOnLine: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementOnLine
 }
 object CIMMarkerPlacementOnLine {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementOnLine): CIMMarkerPlacementOnLine = {
+  def apply(): CIMMarkerPlacementOnLine = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMMarkerPlacementOnLine")
     __obj.asInstanceOf[CIMMarkerPlacementOnLine]
   }
   

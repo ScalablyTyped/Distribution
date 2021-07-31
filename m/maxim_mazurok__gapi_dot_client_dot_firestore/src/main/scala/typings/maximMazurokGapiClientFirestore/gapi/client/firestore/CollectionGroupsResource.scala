@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionGroupsResource extends StObject {
   
-  var fields: FieldsResource = js.native
+  var fields: FieldsResource
   
-  var indexes: IndexesResource = js.native
+  var indexes: IndexesResource
 }
 object CollectionGroupsResource {
   

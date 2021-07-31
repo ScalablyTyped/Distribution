@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Relation extends StObject {
   
   /** Output only. The type of the relation translated and formatted in the viewer's account locale or the locale specified in the Accept-Language HTTP header. */
-  var formattedType: js.UndefOr[String] = js.native
+  var formattedType: js.UndefOr[String] = js.undefined
   
   /** Metadata about the relation. */
-  var metadata: js.UndefOr[FieldMetadata] = js.native
+  var metadata: js.UndefOr[FieldMetadata] = js.undefined
   
   /** The name of the other person this relation refers to. */
-  var person: js.UndefOr[String] = js.native
+  var person: js.UndefOr[String] = js.undefined
   
   /**
     * The person's relation to the other person. The type can be custom or one of these predefined values: * `spouse` * `child` * `mother` * `father` * `parent` * `brother` * `sister` *
     * `friend` * `relative` * `domesticPartner` * `manager` * `assistant` * `referredBy` * `partner`
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Relation {
   

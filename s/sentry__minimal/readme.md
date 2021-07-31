@@ -10,9 +10,9 @@ Sentry minimal library that can be used in other packages
 | ------------------ | :-------------: |
 | Full name          | @sentry/minimal |
 | Keywords           | - |
-| # releases         | 117 |
+| # releases         | 120 |
 | # dependents       | 28 |
-| # downloads        | 86312010 |
+| # downloads        | 115140068 |
 | # stars            | 0 |
 
 ## Links

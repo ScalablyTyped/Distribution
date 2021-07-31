@@ -2,26 +2,24 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     * The condition to apply. To include the objects that match the statement, specify IS. To exclude matching objects, specify IS_NOT.
     */
-  var Condition: FilterConditionString = js.native
+  var Condition: FilterConditionString
   
   /**
     * The name of the parameter to filter on.
     */
-  var Key: String = js.native
+  var Key: String
   
   /**
     * The value to match.
     */
-  var Value: Arn = js.native
+  var Value: Arn
 }
 object Filter {
   

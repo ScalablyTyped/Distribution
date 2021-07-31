@@ -2,19 +2,17 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tl extends StObject {
   
-  var bl: X = js.native
+  var bl: X
   
-  var br: X = js.native
+  var br: X
   
-  var tl: X = js.native
+  var tl: X
   
-  var tr: X = js.native
+  var tr: X
 }
 object Tl {
   

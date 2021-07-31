@@ -2,7 +2,6 @@ package typings.mailgen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,16 +11,29 @@ object mod {
     */
   @JSImport("mailgen", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Mailgen {
+  class ^ protected ()
+    extends StObject
+       with Mailgen {
     def this(opts: Option) = this()
+    
+    /* CompleteClass */
+    override def cacheThemes(): Unit = js.native
+    
+    /* CompleteClass */
+    override def generate(params: Content): js.Any = js.native
+    
+    /* CompleteClass */
+    override def generatePlaintext(params: Content): js.Any = js.native
+    
+    /* CompleteClass */
+    override def parseParams(params: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait Action extends StObject {
     
-    var button: Button = js.native
+    var button: Button
     
-    var instructions: String = js.native
+    var instructions: String
   }
   object Action {
     
@@ -42,14 +54,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Button extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var link: String = js.native
+    var link: String
     
-    var text: String = js.native
+    var text: String
   }
   object Button {
     
@@ -73,12 +84,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ColumnOptions extends StObject {
     
-    var customAlignment: js.Any = js.native
+    var customAlignment: js.Any
     
-    var customWidth: js.Any = js.native
+    var customWidth: js.Any
   }
   object ColumnOptions {
     
@@ -99,10 +109,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Content extends StObject {
     
-    var body: ContentBody = js.native
+    var body: ContentBody
   }
   object Content {
     
@@ -120,28 +129,27 @@ object mod {
     }
   }
   
-  @js.native
   trait ContentBody extends StObject {
     
-    var action: js.UndefOr[Action | js.Array[Action]] = js.native
+    var action: js.UndefOr[Action | js.Array[Action]] = js.undefined
     
-    var dictionary: js.UndefOr[js.Any] = js.native
+    var dictionary: js.UndefOr[js.Any] = js.undefined
     
-    var goToAction: js.UndefOr[GoToAction] = js.native
+    var goToAction: js.UndefOr[GoToAction] = js.undefined
     
-    var greeting: js.UndefOr[String] = js.native
+    var greeting: js.UndefOr[String] = js.undefined
     
-    var intro: js.UndefOr[String | js.Array[String]] = js.native
+    var intro: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var outro: js.UndefOr[String | js.Array[String]] = js.native
+    var outro: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var signature: js.UndefOr[String] = js.native
+    var signature: js.UndefOr[String] = js.undefined
     
-    var table: js.UndefOr[Table | js.Array[Table]] = js.native
+    var table: js.UndefOr[Table | js.Array[Table]] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ContentBody {
     
@@ -228,12 +236,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CustomTheme extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var plaintextPath: js.UndefOr[String] = js.native
+    var plaintextPath: js.UndefOr[String] = js.undefined
   }
   object CustomTheme {
     
@@ -257,14 +264,13 @@ object mod {
     }
   }
   
-  @js.native
   trait GoToAction extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var link: String = js.native
+    var link: String
     
-    var text: String = js.native
+    var text: String
   }
   object GoToAction {
     
@@ -291,16 +297,15 @@ object mod {
   /**
     * Created by kiettv on 7/24/16.
     */
-  @js.native
   trait Mailgen extends StObject {
     
-    def cacheThemes(): Unit = js.native
+    def cacheThemes(): Unit
     
-    def generate(params: Content): js.Any = js.native
+    def generate(params: Content): js.Any
     
-    def generatePlaintext(params: Content): js.Any = js.native
+    def generatePlaintext(params: Content): js.Any
     
-    def parseParams(params: js.Any): js.Any = js.native
+    def parseParams(params: js.Any): js.Any
   }
   object Mailgen {
     
@@ -332,12 +337,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var product: Product = js.native
+    var product: Product
     
-    var theme: String | CustomTheme = js.native
+    var theme: String | CustomTheme
   }
   object Option {
     
@@ -358,16 +362,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Product extends StObject {
     
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
-    var link: String = js.native
+    var link: String
     
-    var logo: js.UndefOr[String] = js.native
+    var logo: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Product {
     
@@ -400,17 +403,16 @@ object mod {
     }
   }
   
-  @js.native
   trait Table extends StObject {
     
-    var columns: js.UndefOr[js.Array[ColumnOptions]] = js.native
+    var columns: js.UndefOr[js.Array[ColumnOptions]] = js.undefined
     
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
   }
   object Table {
     
     @scala.inline
-    def apply(data: js.Array[_]): Table = {
+    def apply(data: js.Array[js.Any]): Table = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Table]
     }
@@ -428,7 +430,7 @@ object mod {
       def setColumnsVarargs(value: ColumnOptions*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))

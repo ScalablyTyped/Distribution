@@ -2,56 +2,54 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RdsDbInstance extends StObject {
   
   /**
     * The instance's address.
     */
-  var Address: js.UndefOr[String] = js.native
+  var Address: js.UndefOr[String] = js.undefined
   
   /**
     * The DB instance identifier.
     */
-  var DbInstanceIdentifier: js.UndefOr[String] = js.native
+  var DbInstanceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * AWS OpsWorks Stacks returns *****FILTERED***** instead of the actual value.
     */
-  var DbPassword: js.UndefOr[String] = js.native
+  var DbPassword: js.UndefOr[String] = js.undefined
   
   /**
     * The master user name.
     */
-  var DbUser: js.UndefOr[String] = js.native
+  var DbUser: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's database engine.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * Set to true if AWS OpsWorks Stacks is unable to discover the Amazon RDS instance. AWS OpsWorks Stacks attempts to discover the instance only once. If this value is set to true, you must deregister the instance, and then register it again.
     */
-  var MissingOnRds: js.UndefOr[Boolean] = js.native
+  var MissingOnRds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The instance's ARN.
     */
-  var RdsDbInstanceArn: js.UndefOr[String] = js.native
+  var RdsDbInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's AWS region.
     */
-  var Region: js.UndefOr[String] = js.native
+  var Region: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the stack with which the instance is registered.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
 }
 object RdsDbInstance {
   

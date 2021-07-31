@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** WordAlternativeResults. */
-@js.native
 trait WordAlternativeResults extends StObject {
   
   /** An array of alternative hypotheses for a word from the input audio. */
-  var alternatives: js.Array[WordAlternativeResult] = js.native
+  var alternatives: js.Array[WordAlternativeResult]
   
   /** The end time in seconds of the word from the input audio that corresponds to the word alternatives. */
-  var end_time: Double = js.native
+  var end_time: Double
   
   /** The start time in seconds of the word from the input audio that corresponds to the word alternatives. */
-  var start_time: Double = js.native
+  var start_time: Double
 }
 object WordAlternativeResults {
   

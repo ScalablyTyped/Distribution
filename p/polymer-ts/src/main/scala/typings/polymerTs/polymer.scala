@@ -9,14 +9,14 @@ import typings.std.FunctionConstructor
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polymer {
   
   @js.native
   trait Base
-    extends PolymerBase
+    extends StObject
+       with PolymerBase
        with Element {
     
     /* InferMemberOverrides */
@@ -36,30 +36,29 @@ object polymer {
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
   
-  @js.native
   trait Element extends StObject {
     
-    var attached: js.UndefOr[js.Function0[Unit]] = js.native
+    var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var attributeChanged: js.UndefOr[
         js.Function3[/* attrName */ String, /* oldVal */ js.Any, /* newVal */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var behaviors: js.UndefOr[js.Array[js.Object]] = js.native
+    var behaviors: js.UndefOr[js.Array[js.Object]] = js.undefined
     
-    var created: js.UndefOr[js.Function0[Unit]] = js.native
+    var created: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var detached: js.UndefOr[js.Function0[Unit]] = js.native
+    var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var factoryImpl: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var factoryImpl: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var listeners: js.UndefOr[js.Object] = js.native
+    var listeners: js.UndefOr[js.Object] = js.undefined
     
-    var observers: js.UndefOr[js.Array[String]] = js.native
+    var observers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var properties: js.UndefOr[js.Object] = js.native
+    var properties: js.UndefOr[js.Object] = js.undefined
     
-    var ready: js.UndefOr[js.Function0[Unit]] = js.native
+    var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Element {
     
@@ -140,14 +139,13 @@ object polymer {
     }
   }
   
-  @js.native
   trait FireOptions extends StObject {
     
-    var bubbles: js.UndefOr[Boolean] = js.native
+    var bubbles: js.UndefOr[Boolean] = js.undefined
     
-    var cancelable: js.UndefOr[Boolean] = js.native
+    var cancelable: js.UndefOr[Boolean] = js.undefined
     
-    var node: js.UndefOr[HTMLElement | Base] = js.native
+    var node: js.UndefOr[HTMLElement | Base] = js.undefined
   }
   object FireOptions {
     
@@ -181,13 +179,22 @@ object polymer {
   }
   
   @js.native
-  trait PolymerBase extends HTMLElement {
+  trait PolymerBase
+    extends StObject
+       with HTMLElement {
     
     @JSName("$")
     var $: js.Any = js.native
     
     @JSName("$$")
     var DollarDollar: js.Any = js.native
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     def arrayDelete(path: String, item: String): js.Any = js.native
     def arrayDelete(path: String, item: js.Any): js.Any = js.native
@@ -222,9 +229,9 @@ object polymer {
     def elementMatches(selector: String, node: Element): js.Any = js.native
     
     def fire(`type`: String): js.Any = js.native
-    def fire(`type`: String, detail: js.UndefOr[scala.Nothing], options: FireOptions): js.Any = js.native
     def fire(`type`: String, detail: js.Object): js.Any = js.native
     def fire(`type`: String, detail: js.Object, options: FireOptions): js.Any = js.native
+    def fire(`type`: String, detail: Unit, options: FireOptions): js.Any = js.native
     
     def flushDebouncer(jobName: String): Unit = js.native
     
@@ -240,18 +247,13 @@ object polymer {
     def getPropertyInfo(property: String): js.Any = js.native
     
     def importHref(href: String): js.Any = js.native
-    def importHref(
-      href: String,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      optAsync: Boolean
-    ): js.Any = js.native
-    def importHref(href: String, onload: js.UndefOr[scala.Nothing], onerror: js.Function): js.Any = js.native
-    def importHref(href: String, onload: js.UndefOr[scala.Nothing], onerror: js.Function, optAsync: Boolean): js.Any = js.native
     def importHref(href: String, onload: js.Function): js.Any = js.native
-    def importHref(href: String, onload: js.Function, onerror: js.UndefOr[scala.Nothing], optAsync: Boolean): js.Any = js.native
     def importHref(href: String, onload: js.Function, onerror: js.Function): js.Any = js.native
     def importHref(href: String, onload: js.Function, onerror: js.Function, optAsync: Boolean): js.Any = js.native
+    def importHref(href: String, onload: js.Function, onerror: Unit, optAsync: Boolean): js.Any = js.native
+    def importHref(href: String, onload: Unit, onerror: js.Function): js.Any = js.native
+    def importHref(href: String, onload: Unit, onerror: js.Function, optAsync: Boolean): js.Any = js.native
+    def importHref(href: String, onload: Unit, onerror: Unit, optAsync: Boolean): js.Any = js.native
     
     def instanceTemplate(template: js.Any): js.Any = js.native
     
@@ -273,6 +275,13 @@ object polymer {
     def push(path: String, value: js.Any): js.Any = js.native
     
     def reflectPropertyToAttribute(name: String): Unit = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
     def resolveUrl(url: String): js.Any = js.native
     
@@ -297,8 +306,8 @@ object polymer {
     
     def splice(path: String, start: Double, deleteCount: Double, items: js.Any*): js.Any = js.native
     
-    def toggleAttribute(name: String, force: js.UndefOr[scala.Nothing], node: HTMLElement): Boolean = js.native
     def toggleAttribute(name: String, force: Boolean, node: HTMLElement): Boolean = js.native
+    def toggleAttribute(name: String, force: Unit, node: HTMLElement): Boolean = js.native
     
     def toggleClass(name: String, bool: Boolean): Unit = js.native
     def toggleClass(name: String, bool: Boolean, node: HTMLElement): Unit = js.native
@@ -316,18 +325,17 @@ object polymer {
     def updateStyles(): Unit = js.native
   }
   
-  @js.native
   trait PolymerTSElement extends StObject {
     
     @JSName("$custom_cons")
-    var $custom_cons: js.UndefOr[FunctionConstructor] = js.native
+    var $custom_cons: js.UndefOr[FunctionConstructor] = js.undefined
     
     @JSName("$custom_cons_args")
-    var $custom_cons_args: js.UndefOr[js.Array[_]] = js.native
+    var $custom_cons_args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object PolymerTSElement {
     
@@ -347,7 +355,7 @@ object polymer {
       def set$custom_consUndefined: Self = StObject.set(x, "$custom_cons", js.undefined)
       
       @scala.inline
-      def set$custom_cons_args(value: js.Array[_]): Self = StObject.set(x, "$custom_cons_args", value.asInstanceOf[js.Any])
+      def set$custom_cons_args(value: js.Array[js.Any]): Self = StObject.set(x, "$custom_cons_args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def set$custom_cons_argsUndefined: Self = StObject.set(x, "$custom_cons_args", js.undefined)
@@ -369,25 +377,24 @@ object polymer {
     }
   }
   
-  @js.native
   trait Property extends StObject {
     
-    var computed: js.UndefOr[String] = js.native
+    var computed: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     @JSName("notify")
-    var notify_FProperty: js.UndefOr[Boolean] = js.native
+    var notify_FProperty: js.UndefOr[Boolean] = js.undefined
     
-    var observer: js.UndefOr[String] = js.native
+    var observer: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var reflectToAttribute: js.UndefOr[Boolean] = js.native
+    var reflectToAttribute: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object Property {
     

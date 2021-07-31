@@ -5,17 +5,15 @@ import typings.grpc.grpcNumbers.`6`
 import typings.grpc.grpcStrings.detect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadObjectOptions extends StObject {
   
   /**
     * Deserialize bytes values as base64 strings instead of Buffers.
     * Defaults to `false`.
     */
-  var binaryAsBase64: js.UndefOr[Boolean] = js.native
+  var binaryAsBase64: js.UndefOr[Boolean] = js.undefined
   
   /**
     * use the beta method argument order for client methods, with optional
@@ -24,20 +22,20 @@ trait LoadObjectOptions extends StObject {
     * should not use it.
     * Defaults to `false`
     */
-  var deprecatedArgumentOrder: js.UndefOr[Boolean] = js.native
+  var deprecatedArgumentOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Deserialize enum values as strings instead of numbers. Only works with
     * Protobuf.js 6 values.
     * Defaults to `true`.
     */
-  var enumsAsStrings: js.UndefOr[Boolean] = js.native
+  var enumsAsStrings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Deserialize long values as strings instead of objects.
     * Defaults to `true`.
     */
-  var longsAsStrings: js.UndefOr[Boolean] = js.native
+  var longsAsStrings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 5 and 6 respectively indicate that an object from the corresponding
@@ -45,7 +43,7 @@ trait LoadObjectOptions extends StObject {
     * is 'detect', gRPC wll guess what the version is based on the structure
     * of the value.
     */
-  var protobufjsVersion: js.UndefOr[`5` | `6` | detect] = js.native
+  var protobufjsVersion: js.UndefOr[`5` | `6` | detect] = js.undefined
 }
 object LoadObjectOptions {
   

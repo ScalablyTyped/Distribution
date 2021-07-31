@@ -2,51 +2,49 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFunctionRequest extends StObject {
   
   /**
     * The GraphQL API ID.
     */
-  var apiId: String = js.native
+  var apiId: String
   
   /**
     * The Function DataSource name.
     */
-  var dataSourceName: ResourceName = js.native
+  var dataSourceName: ResourceName
   
   /**
     * The Function description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The function ID.
     */
-  var functionId: ResourceName = js.native
+  var functionId: ResourceName
   
   /**
     * The version of the request mapping template. Currently the supported value is 2018-05-29. 
     */
-  var functionVersion: String = js.native
+  var functionVersion: String
   
   /**
     * The Function name.
     */
-  var name: ResourceName = js.native
+  var name: ResourceName
   
   /**
     * The Function request mapping template. Functions support only the 2018-05-29 version of the request mapping template.
     */
-  var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.native
+  var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
   /**
     * The Function request mapping template. 
     */
-  var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.native
+  var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
 }
 object UpdateFunctionRequest {
   

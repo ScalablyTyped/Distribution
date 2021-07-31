@@ -11,8 +11,8 @@ Minifies blocks of JSON-like content into valid JSON by removing all whitespace 
 | Full name          | gulp-jsonminify |
 | Keywords           | gulpplugin, json, minify, jsonminify, gulp |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 436832 |
+| # dependents       | 20 |
+| # downloads        | 499682 |
 | # stars            | 9 |
 
 ## Links

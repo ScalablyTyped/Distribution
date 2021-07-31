@@ -2,32 +2,30 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/CircularProgress/CircularProgress.CircularProgressClassKey>> */
-@js.native
 trait PartialClassNameMapCircul extends StObject {
   
-  var circle: js.UndefOr[String] = js.native
+  var circle: js.UndefOr[String] = js.undefined
   
-  var circleDisableShrink: js.UndefOr[String] = js.native
+  var circleDisableShrink: js.UndefOr[String] = js.undefined
   
-  var circleIndeterminate: js.UndefOr[String] = js.native
+  var circleIndeterminate: js.UndefOr[String] = js.undefined
   
-  var circleStatic: js.UndefOr[String] = js.native
+  var circleStatic: js.UndefOr[String] = js.undefined
   
-  var colorPrimary: js.UndefOr[String] = js.native
+  var colorPrimary: js.UndefOr[String] = js.undefined
   
-  var colorSecondary: js.UndefOr[String] = js.native
+  var colorSecondary: js.UndefOr[String] = js.undefined
   
-  var indeterminate: js.UndefOr[String] = js.native
+  var indeterminate: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var static: js.UndefOr[String] = js.native
+  var static: js.UndefOr[String] = js.undefined
   
-  var svg: js.UndefOr[String] = js.native
+  var svg: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapCircul {
   

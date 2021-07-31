@@ -2,13 +2,11 @@ package typings.finch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinchOptions extends StObject {
   
-  var CoerceParameterTypes: js.UndefOr[Boolean] = js.native
+  var CoerceParameterTypes: js.UndefOr[Boolean] = js.undefined
 }
 object FinchOptions {
   

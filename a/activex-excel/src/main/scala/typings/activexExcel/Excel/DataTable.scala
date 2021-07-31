@@ -2,40 +2,38 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataTable extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: js.Any
   
-  val Border: typings.activexExcel.Excel.Border = js.native
+  val Border: typings.activexExcel.Excel.Border
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
   @JSName("Excel.DataTable_typekey")
-  var ExcelDotDataTable_typekey: DataTable = js.native
+  var ExcelDotDataTable_typekey: DataTable
   
-  val Font: typings.activexExcel.Excel.Font = js.native
+  val Font: typings.activexExcel.Excel.Font
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  var HasBorderHorizontal: Boolean = js.native
+  var HasBorderHorizontal: Boolean
   
-  var HasBorderOutline: Boolean = js.native
+  var HasBorderOutline: Boolean
   
-  var HasBorderVertical: Boolean = js.native
+  var HasBorderVertical: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  var ShowLegendKey: Boolean = js.native
+  var ShowLegendKey: Boolean
 }
 object DataTable {
   

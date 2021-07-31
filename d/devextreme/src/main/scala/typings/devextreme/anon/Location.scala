@@ -6,21 +6,19 @@ import typings.devextreme.devextremeStrings.right
 import typings.devextreme.devextremeStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var alignment: js.UndefOr[center | left | right] = js.native
+  var alignment: js.UndefOr[center | left | right] = js.undefined
   
-  var location: js.UndefOr[left | right | top] = js.native
+  var location: js.UndefOr[left | right | top] = js.undefined
   
-  var showColon: js.UndefOr[Boolean] = js.native
+  var showColon: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Location {
   

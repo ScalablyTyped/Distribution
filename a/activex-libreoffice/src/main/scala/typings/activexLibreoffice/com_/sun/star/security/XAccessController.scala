@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for checking permissions and invoking privileged or restricted actions.
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessController extends XInterface {
+trait XAccessController
+  extends StObject
+     with XInterface {
   
   /**
     * This method takes a "snapshot" of the current calling context and returns it.
@@ -20,7 +20,7 @@ trait XAccessController extends XInterface {
     * This context may then be checked at a later point, possibly in another thread.
     * @returns snapshot of context
     */
-  val Context: XAccessControlContext = js.native
+  val Context: XAccessControlContext
   
   /**
     * Determines whether the access request indicated by the specified permission should be allowed or denied, based on the security policy currently in
@@ -36,7 +36,7 @@ trait XAccessController extends XInterface {
     * @see com.sun.star.connection.SocketPermission
     * @throws AccessControlException thrown if access is denied
     */
-  def checkPermission(perm: js.Any): Unit = js.native
+  def checkPermission(perm: js.Any): Unit
   
   /**
     * Perform the specified action adding a set of permissions defined by the given {@link XAccessControlContext} . The action is performed with the union
@@ -50,7 +50,7 @@ trait XAccessController extends XInterface {
     * @returns result
     * @throws com::sun::star::uno::Exception any UNO exception may be thrown
     */
-  def doPrivileged(action: XAction, restriction: XAccessControlContext): js.Any = js.native
+  def doPrivileged(action: XAction, restriction: XAccessControlContext): js.Any
   
   /**
     * Perform the specified action restricting permissions to the given {@link XAccessControlContext} . The action is performed with the intersection of the
@@ -63,7 +63,7 @@ trait XAccessController extends XInterface {
     * @returns result
     * @throws com::sun::star::uno::Exception any UNO exception may be thrown
     */
-  def doRestricted(action: XAction, restriction: XAccessControlContext): js.Any = js.native
+  def doRestricted(action: XAction, restriction: XAccessControlContext): js.Any
   
   /**
     * This method takes a "snapshot" of the current calling context and returns it.
@@ -71,7 +71,7 @@ trait XAccessController extends XInterface {
     * This context may then be checked at a later point, possibly in another thread.
     * @returns snapshot of context
     */
-  def getContext(): XAccessControlContext = js.native
+  def getContext(): XAccessControlContext
 }
 object XAccessController {
   

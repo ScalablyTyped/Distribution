@@ -26,12 +26,12 @@ import typings.aceBuilds.anon.PageX
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VirtualRenderer
-  extends OptionsProvider
+  extends StObject
+     with OptionsProvider
      with EventEmitter {
   
   def adjustWrapLimit(): Boolean = js.native

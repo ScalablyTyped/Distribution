@@ -3,15 +3,13 @@ package typings.googleapis.booksV1Mod.booksV1
 import typings.googleapis.anon.LayerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAnnotationsSummary extends StObject {
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var layers: js.UndefOr[js.Array[LayerId]] = js.native
+  var layers: js.UndefOr[js.Array[LayerId]] = js.undefined
 }
 object SchemaAnnotationsSummary {
   

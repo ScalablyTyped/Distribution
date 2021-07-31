@@ -2,31 +2,29 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for the object representing a turn.
   */
-@js.native
 trait SchemaTurnBasedMatchTurn extends StObject {
   
   /**
     * The shared game state data after the turn is over.
     */
-  var data: js.UndefOr[SchemaTurnBasedMatchDataRequest] = js.native
+  var data: js.UndefOr[SchemaTurnBasedMatchDataRequest] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#turnBasedMatchTurn.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The version of this match: an increasing counter, used to avoid
     * out-of-date updates to the match.
     */
-  var matchVersion: js.UndefOr[Double] = js.native
+  var matchVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID of the participant who should take their turn next. May be set to
@@ -35,12 +33,12 @@ trait SchemaTurnBasedMatchTurn extends StObject {
     * join via automatching; this is only valid if automatch criteria is set on
     * the match with remaining slots for automatched players.
     */
-  var pendingParticipantId: js.UndefOr[String] = js.native
+  var pendingParticipantId: js.UndefOr[String] = js.undefined
   
   /**
     * The match results for the participants in the match.
     */
-  var results: js.UndefOr[js.Array[SchemaParticipantResult]] = js.native
+  var results: js.UndefOr[js.Array[SchemaParticipantResult]] = js.undefined
 }
 object SchemaTurnBasedMatchTurn {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * 
     */
-  var Limit: js.UndefOr[PaginationLimit] = js.native
+  var Limit: js.UndefOr[PaginationLimit] = js.undefined
   
   /**
     * 
     */
-  var NextMarker: js.UndefOr[typings.awsSdk.wafregionalMod.NextMarker] = js.native
+  var NextMarker: js.UndefOr[typings.awsSdk.wafregionalMod.NextMarker] = js.undefined
   
   /**
     * 
     */
-  var ResourceARN: ResourceArn = js.native
+  var ResourceARN: ResourceArn
 }
 object ListTagsForResourceRequest {
   

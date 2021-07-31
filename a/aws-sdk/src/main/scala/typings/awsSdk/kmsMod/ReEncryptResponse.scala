@@ -2,36 +2,34 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReEncryptResponse extends StObject {
   
   /**
     * The reencrypted data. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
     */
-  var CiphertextBlob: js.UndefOr[CiphertextType] = js.native
+  var CiphertextBlob: js.UndefOr[CiphertextType] = js.undefined
   
   /**
     * The encryption algorithm that was used to reencrypt the data.
     */
-  var DestinationEncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.native
+  var DestinationEncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.undefined
   
   /**
     * The Amazon Resource Name (key ARN) of the CMK that was used to reencrypt the data.
     */
-  var KeyId: js.UndefOr[KeyIdType] = js.native
+  var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
   /**
     * The encryption algorithm that was used to decrypt the ciphertext before it was reencrypted.
     */
-  var SourceEncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.native
+  var SourceEncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.undefined
   
   /**
     * Unique identifier of the CMK used to originally encrypt the data.
     */
-  var SourceKeyId: js.UndefOr[KeyIdType] = js.native
+  var SourceKeyId: js.UndefOr[KeyIdType] = js.undefined
 }
 object ReEncryptResponse {
   

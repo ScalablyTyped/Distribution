@@ -5,21 +5,19 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalTitleProps extends StObject {
   
-  var align: js.UndefOr[AlignTypes] = js.native
+  var align: js.UndefOr[AlignTypes] = js.undefined
   
-  var hasTitleBar: js.UndefOr[Boolean] = js.native
+  var hasTitleBar: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object ModalTitleProps {
   

@@ -2,25 +2,23 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of Contacts representing contacts. This is the response from the
   * server to GET requests on the contacts collection.
   */
-@js.native
 trait SchemaContactsListResponse extends StObject {
   
   /**
     * Contact list.
     */
-  var items: js.UndefOr[js.Array[SchemaContact]] = js.native
+  var items: js.UndefOr[js.Array[SchemaContact]] = js.undefined
   
   /**
     * The type of resource. This is always mirror#contacts.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaContactsListResponse {
   

@@ -2,17 +2,15 @@ package typings.reactBootstrapTableNext.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataField extends StObject {
   
-  var dataField: js.Any = js.native
+  var dataField: js.Any
   
-  var newValue: js.Any = js.native
+  var newValue: js.Any
   
-  var rowId: String = js.native
+  var rowId: String
 }
 object DataField {
   

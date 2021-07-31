@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckBox extends Widget_ {
+trait CheckBox
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -30,28 +31,27 @@ trait CheckBox extends Widget_ {
 }
 object CheckBox {
   
-  @js.native
   trait BeforeChangeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event model values
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the status whether the element is checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** returns the CheckBox model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeChangeEventArgs {
     
@@ -96,32 +96,31 @@ object CheckBox {
     }
   }
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the state of the checkbox
       */
-    var checkState: js.UndefOr[String] = js.native
+    var checkState: js.UndefOr[String] = js.undefined
     
     /** returns the event arguments
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the status whether the element is checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** returns the CheckBox model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -172,20 +171,19 @@ object CheckBox {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the CheckBox model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -218,20 +216,19 @@ object CheckBox {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the CheckBox model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -264,109 +261,108 @@ object CheckBox {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires before the CheckBox is going to changed its state successfully
       */
-    var beforeChange: js.UndefOr[js.Function1[/* e */ BeforeChangeEventArgs, Unit]] = js.native
+    var beforeChange: js.UndefOr[js.Function1[/* e */ BeforeChangeEventArgs, Unit]] = js.undefined
     
     /** Fires when the CheckBox state is changed successfully
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Specifies the State of CheckBox.See below to get available CheckState
       * @Default {null}
       */
-    var checkState: js.UndefOr[CheckState | String] = js.native
+    var checkState: js.UndefOr[CheckState | String] = js.undefined
     
     /** Specifies whether CheckBox has to be in checked or not. We can also specify array of string as value for this property. If any of the value in the specified array matches the
       * value of the textbox, then it will be considered as checked. It will be useful in MVVM binding, specify array type to identify the values of the checked CheckBoxes.
       * @Default {false}
       */
-    var checked: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var checked: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /** Fires when the CheckBox state is created successfully
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root CSS class for CheckBox theme, which is used customize.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires when the CheckBox state is destroyed successfully
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the persist property for CheckBox while initialization. The persist API save current model value to browser cookies for state maintains. While refreshing the CheckBox
       * control page the model value apply from browser cookies.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the Right to Left direction to Checkbox
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the enable or disable Tri-State for checkbox control.
       * @Default {false}
       */
-    var enableTriState: js.UndefOr[Boolean] = js.native
+    var enableTriState: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the checkbox control state.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** It allows to define the characteristics of the CheckBox control. It will helps to extend the capability of an HTML element.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Specified value to be added an id attribute of the CheckBox.
       * @Default {null}
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Specify the prefix value of id to be added before the current id of the CheckBox.
       * @Default {ej}
       */
-    var idPrefix: js.UndefOr[String] = js.native
+    var idPrefix: js.UndefOr[String] = js.undefined
     
     /** Specifies the name attribute of the CheckBox.
       * @Default {null}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Displays rounded corner borders to CheckBox
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size of the CheckBox.See below to know available CheckboxSize
       * @Default {small}
       */
-    var size: js.UndefOr[CheckboxSize | String] = js.native
+    var size: js.UndefOr[CheckboxSize | String] = js.undefined
     
     /** Specifies the text content to be displayed for CheckBox.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Set the jQuery validation error message in CheckBox.
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.native
+    var validationMessage: js.UndefOr[js.Any] = js.undefined
     
     /** Set the jQuery validation rules in CheckBox.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.native
+    var validationRules: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the value attribute of the CheckBox.
       * @Default {null}
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Model {
     

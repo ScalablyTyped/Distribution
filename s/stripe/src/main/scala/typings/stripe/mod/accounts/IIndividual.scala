@@ -2,21 +2,21 @@ package typings.stripe.mod.accounts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IIndividual extends IIndividualShared {
+trait IIndividual
+  extends StObject
+     with IIndividualShared {
   
   /**
     * Whether the individual’s personal ID number was provided.
     */
-  var id_number_provided: Boolean = js.native
+  var id_number_provided: Boolean
   
   /**
     * Whether the individual’s last 4 SSN digits was provided.
     */
-  var ssn_last_4_provided: Boolean = js.native
+  var ssn_last_4_provided: Boolean
 }
 object IIndividual {
   

@@ -3,368 +3,511 @@ package typings.cliSpinners
 import typings.cliSpinners.mod.SpinnerName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cliSpinnersStrings {
   
   @js.native
-  sealed trait arc extends SpinnerName
+  sealed trait arc
+    extends StObject
+       with SpinnerName
   @scala.inline
   def arc: arc = "arc".asInstanceOf[arc]
   
   @js.native
-  sealed trait arrow extends SpinnerName
+  sealed trait arrow
+    extends StObject
+       with SpinnerName
   @scala.inline
   def arrow: arrow = "arrow".asInstanceOf[arrow]
   
   @js.native
-  sealed trait arrow2 extends SpinnerName
+  sealed trait arrow2
+    extends StObject
+       with SpinnerName
   @scala.inline
   def arrow2: arrow2 = "arrow2".asInstanceOf[arrow2]
   
   @js.native
-  sealed trait arrow3 extends SpinnerName
+  sealed trait arrow3
+    extends StObject
+       with SpinnerName
   @scala.inline
   def arrow3: arrow3 = "arrow3".asInstanceOf[arrow3]
   
   @js.native
-  sealed trait balloon extends SpinnerName
+  sealed trait balloon
+    extends StObject
+       with SpinnerName
   @scala.inline
   def balloon: balloon = "balloon".asInstanceOf[balloon]
   
   @js.native
-  sealed trait balloon2 extends SpinnerName
+  sealed trait balloon2
+    extends StObject
+       with SpinnerName
   @scala.inline
   def balloon2: balloon2 = "balloon2".asInstanceOf[balloon2]
   
   @js.native
-  sealed trait betaWave extends SpinnerName
+  sealed trait betaWave
+    extends StObject
+       with SpinnerName
   @scala.inline
   def betaWave: betaWave = "betaWave".asInstanceOf[betaWave]
   
   @js.native
-  sealed trait bounce extends SpinnerName
+  sealed trait bounce
+    extends StObject
+       with SpinnerName
   @scala.inline
   def bounce: bounce = "bounce".asInstanceOf[bounce]
   
   @js.native
-  sealed trait bouncingBall extends SpinnerName
+  sealed trait bouncingBall
+    extends StObject
+       with SpinnerName
   @scala.inline
   def bouncingBall: bouncingBall = "bouncingBall".asInstanceOf[bouncingBall]
   
   @js.native
-  sealed trait bouncingBar extends SpinnerName
+  sealed trait bouncingBar
+    extends StObject
+       with SpinnerName
   @scala.inline
   def bouncingBar: bouncingBar = "bouncingBar".asInstanceOf[bouncingBar]
   
   @js.native
-  sealed trait boxBounce extends SpinnerName
+  sealed trait boxBounce
+    extends StObject
+       with SpinnerName
   @scala.inline
   def boxBounce: boxBounce = "boxBounce".asInstanceOf[boxBounce]
   
   @js.native
-  sealed trait boxBounce2 extends SpinnerName
+  sealed trait boxBounce2
+    extends StObject
+       with SpinnerName
   @scala.inline
   def boxBounce2: boxBounce2 = "boxBounce2".asInstanceOf[boxBounce2]
   
   @js.native
-  sealed trait christmas extends SpinnerName
+  sealed trait christmas
+    extends StObject
+       with SpinnerName
   @scala.inline
   def christmas: christmas = "christmas".asInstanceOf[christmas]
   
   @js.native
-  sealed trait circle extends SpinnerName
+  sealed trait circle
+    extends StObject
+       with SpinnerName
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
-  sealed trait circleHalves extends SpinnerName
+  sealed trait circleHalves
+    extends StObject
+       with SpinnerName
   @scala.inline
   def circleHalves: circleHalves = "circleHalves".asInstanceOf[circleHalves]
   
   @js.native
-  sealed trait circleQuarters extends SpinnerName
+  sealed trait circleQuarters
+    extends StObject
+       with SpinnerName
   @scala.inline
   def circleQuarters: circleQuarters = "circleQuarters".asInstanceOf[circleQuarters]
   
   @js.native
-  sealed trait clock extends SpinnerName
+  sealed trait clock
+    extends StObject
+       with SpinnerName
   @scala.inline
   def clock: clock = "clock".asInstanceOf[clock]
   
   @js.native
-  sealed trait dots extends SpinnerName
+  sealed trait dots
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots: dots = "dots".asInstanceOf[dots]
   
   @js.native
-  sealed trait dots10 extends SpinnerName
+  sealed trait dots10
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots10: dots10 = "dots10".asInstanceOf[dots10]
   
   @js.native
-  sealed trait dots11 extends SpinnerName
+  sealed trait dots11
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots11: dots11 = "dots11".asInstanceOf[dots11]
   
   @js.native
-  sealed trait dots12 extends SpinnerName
+  sealed trait dots12
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots12: dots12 = "dots12".asInstanceOf[dots12]
   
   @js.native
-  sealed trait dots2 extends SpinnerName
+  sealed trait dots2
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots2: dots2 = "dots2".asInstanceOf[dots2]
   
   @js.native
-  sealed trait dots3 extends SpinnerName
+  sealed trait dots3
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots3: dots3 = "dots3".asInstanceOf[dots3]
   
   @js.native
-  sealed trait dots4 extends SpinnerName
+  sealed trait dots4
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots4: dots4 = "dots4".asInstanceOf[dots4]
   
   @js.native
-  sealed trait dots5 extends SpinnerName
+  sealed trait dots5
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots5: dots5 = "dots5".asInstanceOf[dots5]
   
   @js.native
-  sealed trait dots6 extends SpinnerName
+  sealed trait dots6
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots6: dots6 = "dots6".asInstanceOf[dots6]
   
   @js.native
-  sealed trait dots7 extends SpinnerName
+  sealed trait dots7
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots7: dots7 = "dots7".asInstanceOf[dots7]
   
   @js.native
-  sealed trait dots8 extends SpinnerName
+  sealed trait dots8
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots8: dots8 = "dots8".asInstanceOf[dots8]
   
   @js.native
-  sealed trait dots8Bit extends SpinnerName
+  sealed trait dots8Bit
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots8Bit: dots8Bit = "dots8Bit".asInstanceOf[dots8Bit]
   
   @js.native
-  sealed trait dots9 extends SpinnerName
+  sealed trait dots9
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dots9: dots9 = "dots9".asInstanceOf[dots9]
   
   @js.native
-  sealed trait dqpb extends SpinnerName
+  sealed trait dqpb
+    extends StObject
+       with SpinnerName
   @scala.inline
   def dqpb: dqpb = "dqpb".asInstanceOf[dqpb]
   
   @js.native
-  sealed trait earth extends SpinnerName
+  sealed trait earth
+    extends StObject
+       with SpinnerName
   @scala.inline
   def earth: earth = "earth".asInstanceOf[earth]
   
   @js.native
-  sealed trait flip extends SpinnerName
+  sealed trait flip
+    extends StObject
+       with SpinnerName
   @scala.inline
   def flip: flip = "flip".asInstanceOf[flip]
   
   @js.native
-  sealed trait grenade extends SpinnerName
+  sealed trait grenade
+    extends StObject
+       with SpinnerName
   @scala.inline
   def grenade: grenade = "grenade".asInstanceOf[grenade]
   
   @js.native
-  sealed trait growHorizontal extends SpinnerName
+  sealed trait growHorizontal
+    extends StObject
+       with SpinnerName
   @scala.inline
   def growHorizontal: growHorizontal = "growHorizontal".asInstanceOf[growHorizontal]
   
   @js.native
-  sealed trait growVertical extends SpinnerName
+  sealed trait growVertical
+    extends StObject
+       with SpinnerName
   @scala.inline
   def growVertical: growVertical = "growVertical".asInstanceOf[growVertical]
   
   @js.native
-  sealed trait hamburger extends SpinnerName
+  sealed trait hamburger
+    extends StObject
+       with SpinnerName
   @scala.inline
   def hamburger: hamburger = "hamburger".asInstanceOf[hamburger]
   
   @js.native
-  sealed trait hearts extends SpinnerName
+  sealed trait hearts
+    extends StObject
+       with SpinnerName
   @scala.inline
   def hearts: hearts = "hearts".asInstanceOf[hearts]
   
   @js.native
-  sealed trait layer extends SpinnerName
+  sealed trait layer
+    extends StObject
+       with SpinnerName
   @scala.inline
   def layer: layer = "layer".asInstanceOf[layer]
   
   @js.native
-  sealed trait line extends SpinnerName
+  sealed trait line
+    extends StObject
+       with SpinnerName
   @scala.inline
   def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait line2 extends SpinnerName
+  sealed trait line2
+    extends StObject
+       with SpinnerName
   @scala.inline
   def line2: line2 = "line2".asInstanceOf[line2]
   
   @js.native
-  sealed trait material extends SpinnerName
+  sealed trait material
+    extends StObject
+       with SpinnerName
   @scala.inline
   def material: material = "material".asInstanceOf[material]
   
   @js.native
-  sealed trait monkey extends SpinnerName
+  sealed trait monkey
+    extends StObject
+       with SpinnerName
   @scala.inline
   def monkey: monkey = "monkey".asInstanceOf[monkey]
   
   @js.native
-  sealed trait moon extends SpinnerName
+  sealed trait moon
+    extends StObject
+       with SpinnerName
   @scala.inline
   def moon: moon = "moon".asInstanceOf[moon]
   
   @js.native
-  sealed trait noise extends SpinnerName
+  sealed trait noise
+    extends StObject
+       with SpinnerName
   @scala.inline
   def noise: noise = "noise".asInstanceOf[noise]
   
   @js.native
-  sealed trait pipe extends SpinnerName
+  sealed trait pipe
+    extends StObject
+       with SpinnerName
   @scala.inline
   def pipe: pipe = "pipe".asInstanceOf[pipe]
   
   @js.native
-  sealed trait point extends SpinnerName
+  sealed trait point
+    extends StObject
+       with SpinnerName
   @scala.inline
   def point: point = "point".asInstanceOf[point]
   
   @js.native
-  sealed trait pong extends SpinnerName
+  sealed trait pong
+    extends StObject
+       with SpinnerName
   @scala.inline
   def pong: pong = "pong".asInstanceOf[pong]
   
   @js.native
-  sealed trait runner extends SpinnerName
+  sealed trait runner
+    extends StObject
+       with SpinnerName
   @scala.inline
   def runner: runner = "runner".asInstanceOf[runner]
   
   @js.native
-  sealed trait shark extends SpinnerName
+  sealed trait shark
+    extends StObject
+       with SpinnerName
   @scala.inline
   def shark: shark = "shark".asInstanceOf[shark]
   
   @js.native
-  sealed trait simpleDots extends SpinnerName
+  sealed trait simpleDots
+    extends StObject
+       with SpinnerName
   @scala.inline
   def simpleDots: simpleDots = "simpleDots".asInstanceOf[simpleDots]
   
   @js.native
-  sealed trait simpleDotsScrolling extends SpinnerName
+  sealed trait simpleDotsScrolling
+    extends StObject
+       with SpinnerName
   @scala.inline
   def simpleDotsScrolling: simpleDotsScrolling = "simpleDotsScrolling".asInstanceOf[simpleDotsScrolling]
   
   @js.native
-  sealed trait smiley extends SpinnerName
+  sealed trait smiley
+    extends StObject
+       with SpinnerName
   @scala.inline
   def smiley: smiley = "smiley".asInstanceOf[smiley]
   
   @js.native
-  sealed trait squareCorners extends SpinnerName
+  sealed trait squareCorners
+    extends StObject
+       with SpinnerName
   @scala.inline
   def squareCorners: squareCorners = "squareCorners".asInstanceOf[squareCorners]
   
   @js.native
-  sealed trait squish extends SpinnerName
+  sealed trait squish
+    extends StObject
+       with SpinnerName
   @scala.inline
   def squish: squish = "squish".asInstanceOf[squish]
   
   @js.native
-  sealed trait star extends SpinnerName
+  sealed trait star
+    extends StObject
+       with SpinnerName
   @scala.inline
   def star: star = "star".asInstanceOf[star]
   
   @js.native
-  sealed trait star2 extends SpinnerName
+  sealed trait star2
+    extends StObject
+       with SpinnerName
   @scala.inline
   def star2: star2 = "star2".asInstanceOf[star2]
   
   @js.native
-  sealed trait toggle extends SpinnerName
+  sealed trait toggle
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
   
   @js.native
-  sealed trait toggle10 extends SpinnerName
+  sealed trait toggle10
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle10: toggle10 = "toggle10".asInstanceOf[toggle10]
   
   @js.native
-  sealed trait toggle11 extends SpinnerName
+  sealed trait toggle11
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle11: toggle11 = "toggle11".asInstanceOf[toggle11]
   
   @js.native
-  sealed trait toggle12 extends SpinnerName
+  sealed trait toggle12
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle12: toggle12 = "toggle12".asInstanceOf[toggle12]
   
   @js.native
-  sealed trait toggle13 extends SpinnerName
+  sealed trait toggle13
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle13: toggle13 = "toggle13".asInstanceOf[toggle13]
   
   @js.native
-  sealed trait toggle2 extends SpinnerName
+  sealed trait toggle2
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle2: toggle2 = "toggle2".asInstanceOf[toggle2]
   
   @js.native
-  sealed trait toggle3 extends SpinnerName
+  sealed trait toggle3
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle3: toggle3 = "toggle3".asInstanceOf[toggle3]
   
   @js.native
-  sealed trait toggle4 extends SpinnerName
+  sealed trait toggle4
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle4: toggle4 = "toggle4".asInstanceOf[toggle4]
   
   @js.native
-  sealed trait toggle5 extends SpinnerName
+  sealed trait toggle5
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle5: toggle5 = "toggle5".asInstanceOf[toggle5]
   
   @js.native
-  sealed trait toggle6 extends SpinnerName
+  sealed trait toggle6
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle6: toggle6 = "toggle6".asInstanceOf[toggle6]
   
   @js.native
-  sealed trait toggle7 extends SpinnerName
+  sealed trait toggle7
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle7: toggle7 = "toggle7".asInstanceOf[toggle7]
   
   @js.native
-  sealed trait toggle8 extends SpinnerName
+  sealed trait toggle8
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle8: toggle8 = "toggle8".asInstanceOf[toggle8]
   
   @js.native
-  sealed trait toggle9 extends SpinnerName
+  sealed trait toggle9
+    extends StObject
+       with SpinnerName
   @scala.inline
   def toggle9: toggle9 = "toggle9".asInstanceOf[toggle9]
   
   @js.native
-  sealed trait triangle extends SpinnerName
+  sealed trait triangle
+    extends StObject
+       with SpinnerName
   @scala.inline
   def triangle: triangle = "triangle".asInstanceOf[triangle]
   
   @js.native
-  sealed trait weather extends SpinnerName
+  sealed trait weather
+    extends StObject
+       with SpinnerName
   @scala.inline
   def weather: weather = "weather".asInstanceOf[weather]
 }

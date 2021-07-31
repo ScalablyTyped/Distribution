@@ -9,15 +9,19 @@ import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media source. Provides a common way to reference media from different sources and exposes a common model for accessing media data regardless of the underlying media format. */
 @JSGlobal("Windows.Media.Core.MediaSource")
 @js.native
 abstract class MediaSource ()
-  extends typings.winrtUwp.Windows.Media.Core.MediaSource
+  extends StObject
+     with typings.winrtUwp.Windows.Media.Core.MediaSource
 object MediaSource {
+  
+  @JSGlobal("Windows.Media.Core.MediaSource")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates an instance of MediaSource from the provided AdaptiveMediaSource .
@@ -25,9 +29,8 @@ object MediaSource {
     * @return The new media source.
     */
   /* static member */
-  @JSGlobal("Windows.Media.Core.MediaSource.createFromAdaptiveMediaSource")
-  @js.native
-  def createFromAdaptiveMediaSource(mediaSource: AdaptiveMediaSource): typings.winrtUwp.Windows.Media.Core.MediaSource = js.native
+  @scala.inline
+  def createFromAdaptiveMediaSource(mediaSource: AdaptiveMediaSource): typings.winrtUwp.Windows.Media.Core.MediaSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromAdaptiveMediaSource")(mediaSource.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Core.MediaSource]
   
   /**
     * Creates an instance of MediaSource from the provided IMediaSource .
@@ -35,9 +38,8 @@ object MediaSource {
     * @return The new media source.
     */
   /* static member */
-  @JSGlobal("Windows.Media.Core.MediaSource.createFromIMediaSource")
-  @js.native
-  def createFromIMediaSource(mediaSource: IMediaSource): typings.winrtUwp.Windows.Media.Core.MediaSource = js.native
+  @scala.inline
+  def createFromIMediaSource(mediaSource: IMediaSource): typings.winrtUwp.Windows.Media.Core.MediaSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIMediaSource")(mediaSource.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Core.MediaSource]
   
   /**
     * Creates an instance of MediaSource from the provided MediaBinder .
@@ -45,9 +47,8 @@ object MediaSource {
     * @return The new media source.
     */
   /* static member */
-  @JSGlobal("Windows.Media.Core.MediaSource.createFromMediaBinder")
-  @js.native
-  def createFromMediaBinder(binder: typings.winrtUwp.Windows.Media.Core.MediaBinder): typings.winrtUwp.Windows.Media.Core.MediaSource = js.native
+  @scala.inline
+  def createFromMediaBinder(binder: typings.winrtUwp.Windows.Media.Core.MediaBinder): typings.winrtUwp.Windows.Media.Core.MediaSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMediaBinder")(binder.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Core.MediaSource]
   
   /**
     * Creates an instance of MediaSource from the provided MediaStreamSource .
@@ -55,9 +56,8 @@ object MediaSource {
     * @return The new media source.
     */
   /* static member */
-  @JSGlobal("Windows.Media.Core.MediaSource.createFromMediaStreamSource")
-  @js.native
-  def createFromMediaStreamSource(mediaSource: typings.winrtUwp.Windows.Media.Core.MediaStreamSource): typings.winrtUwp.Windows.Media.Core.MediaSource = js.native
+  @scala.inline
+  def createFromMediaStreamSource(mediaSource: typings.winrtUwp.Windows.Media.Core.MediaStreamSource): typings.winrtUwp.Windows.Media.Core.MediaSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMediaStreamSource")(mediaSource.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Core.MediaSource]
   
   /**
     * Creates an instance of MediaSource from the provided MseStreamSource .
@@ -65,9 +65,8 @@ object MediaSource {
     * @return The new media source.
     */
   /* static member */
-  @JSGlobal("Windows.Media.Core.MediaSource.createFromMseStreamSource")
-  @js.native
-  def createFromMseStreamSource(mediaSource: MseStreamSource): typings.winrtUwp.Windows.Media.Core.MediaSource = js.native
+  @scala.inline
+  def createFromMseStreamSource(mediaSource: MseStreamSource): typings.winrtUwp.Windows.Media.Core.MediaSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMseStreamSource")(mediaSource.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Core.MediaSource]
   
   /**
     * Creates an instance of MediaSource from the provided IStorageFile .
@@ -75,9 +74,8 @@ object MediaSource {
     * @return The new media source.
     */
   /* static member */
-  @JSGlobal("Windows.Media.Core.MediaSource.createFromStorageFile")
-  @js.native
-  def createFromStorageFile(file: IStorageFile): typings.winrtUwp.Windows.Media.Core.MediaSource = js.native
+  @scala.inline
+  def createFromStorageFile(file: IStorageFile): typings.winrtUwp.Windows.Media.Core.MediaSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromStorageFile")(file.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Core.MediaSource]
   
   /**
     * Creates an instance of MediaSource from the provided IRandomAccessStream .
@@ -86,9 +84,8 @@ object MediaSource {
     * @return The new media source.
     */
   /* static member */
-  @JSGlobal("Windows.Media.Core.MediaSource.createFromStream")
-  @js.native
-  def createFromStream(stream: IRandomAccessStream, contentType: String): typings.winrtUwp.Windows.Media.Core.MediaSource = js.native
+  @scala.inline
+  def createFromStream(stream: IRandomAccessStream, contentType: String): typings.winrtUwp.Windows.Media.Core.MediaSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromStream")(stream.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Core.MediaSource]
   
   /**
     * Creates an instance of MediaSource from the provided IRandomAccessStreamReference .
@@ -97,9 +94,8 @@ object MediaSource {
     * @return The new media source.
     */
   /* static member */
-  @JSGlobal("Windows.Media.Core.MediaSource.createFromStreamReference")
-  @js.native
-  def createFromStreamReference(stream: IRandomAccessStreamReference, contentType: String): typings.winrtUwp.Windows.Media.Core.MediaSource = js.native
+  @scala.inline
+  def createFromStreamReference(stream: IRandomAccessStreamReference, contentType: String): typings.winrtUwp.Windows.Media.Core.MediaSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromStreamReference")(stream.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Core.MediaSource]
   
   /**
     * Creates an instance of MediaSource from the provided Uri .
@@ -107,7 +103,6 @@ object MediaSource {
     * @return The new media source.
     */
   /* static member */
-  @JSGlobal("Windows.Media.Core.MediaSource.createFromUri")
-  @js.native
-  def createFromUri(uri: Uri): typings.winrtUwp.Windows.Media.Core.MediaSource = js.native
+  @scala.inline
+  def createFromUri(uri: Uri): typings.winrtUwp.Windows.Media.Core.MediaSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromUri")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Core.MediaSource]
 }

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interface {@link XDrawPagesSupplier} is supported.
   * @deprecated Deprecated
   */
-@js.native
-trait XDrawPageSupplier extends XInterface {
+trait XDrawPageSupplier
+  extends StObject
+     with XInterface {
   
   /** returns the {@link DrawPage} . */
-  val DrawPage: XDrawPage = js.native
+  val DrawPage: XDrawPage
   
   /** returns the {@link DrawPage} . */
-  def getDrawPage(): XDrawPage = js.native
+  def getDrawPage(): XDrawPage
 }
 object XDrawPageSupplier {
   

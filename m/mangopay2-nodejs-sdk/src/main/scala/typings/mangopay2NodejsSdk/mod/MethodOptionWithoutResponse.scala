@@ -3,13 +3,13 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MethodOptionWithoutResponse extends MethodOptions {
+trait MethodOptionWithoutResponse
+  extends StObject
+     with MethodOptions {
   
-  var resolveWithFullResponse: js.UndefOr[`false`] = js.native
+  var resolveWithFullResponse: js.UndefOr[`false`] = js.undefined
 }
 object MethodOptionWithoutResponse {
   

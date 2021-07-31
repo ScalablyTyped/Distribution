@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
   */
-@js.native
 trait PlusOauthUserInfo extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait PlusOauthUserInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权用户注册的国家信息
@@ -32,7 +30,7 @@ trait PlusOauthUserInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权用户的邮箱地址
@@ -40,7 +38,7 @@ trait PlusOauthUserInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权用户的头像图片地址
@@ -48,7 +46,7 @@ trait PlusOauthUserInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var headimgurl: js.UndefOr[String] = js.native
+  var headimgurl: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权用户的昵称
@@ -56,7 +54,7 @@ trait PlusOauthUserInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var nickname: js.UndefOr[String] = js.native
+  var nickname: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权用户的唯一标识
@@ -64,7 +62,7 @@ trait PlusOauthUserInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var openid: js.UndefOr[String] = js.native
+  var openid: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权用户的电话号码
@@ -72,7 +70,7 @@ trait PlusOauthUserInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var phonenumber: js.UndefOr[String] = js.native
+  var phonenumber: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权用户注册的省份信息
@@ -80,7 +78,7 @@ trait PlusOauthUserInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var province: js.UndefOr[String] = js.native
+  var province: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权用户的性别
@@ -89,7 +87,7 @@ trait PlusOauthUserInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var sex: js.UndefOr[String] = js.native
+  var sex: js.UndefOr[String] = js.undefined
 }
 object PlusOauthUserInfo {
   

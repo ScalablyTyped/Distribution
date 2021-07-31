@@ -2,41 +2,39 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReserveContactRequest extends StObject {
   
   /**
     * End time of a contact.
     */
-  var endTime: Timestamp = js.native
+  var endTime: Timestamp
   
   /**
     * Name of a ground station.
     */
-  var groundStation: String = js.native
+  var groundStation: String
   
   /**
     * ARN of a mission profile.
     */
-  var missionProfileArn: MissionProfileArn = js.native
+  var missionProfileArn: MissionProfileArn
   
   /**
     * ARN of a satellite
     */
-  var satelliteArn: typings.awsSdk.groundstationMod.satelliteArn = js.native
+  var satelliteArn: typings.awsSdk.groundstationMod.satelliteArn
   
   /**
     * Start time of a contact.
     */
-  var startTime: Timestamp = js.native
+  var startTime: Timestamp
   
   /**
     * Tags assigned to a contact.
     */
-  var tags: js.UndefOr[TagsMap] = js.native
+  var tags: js.UndefOr[TagsMap] = js.undefined
 }
 object ReserveContactRequest {
   

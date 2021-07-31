@@ -4,43 +4,41 @@ import typings.csstype.mod.ColorProperty
 import typings.mjmlReact.mjmlReactStrings.hamburger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlNavbarProps extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
-  var hamburger: js.UndefOr[typings.mjmlReact.mjmlReactStrings.hamburger] = js.native
+  var hamburger: js.UndefOr[typings.mjmlReact.mjmlReactStrings.hamburger] = js.undefined
   
-  var icoAlign: js.UndefOr[String] = js.native
+  var icoAlign: js.UndefOr[String] = js.undefined
   
-  var icoClose: js.UndefOr[String] = js.native
+  var icoClose: js.UndefOr[String] = js.undefined
   
-  var icoColor: js.UndefOr[ColorProperty] = js.native
+  var icoColor: js.UndefOr[ColorProperty] = js.undefined
   
-  var icoFontSize: js.UndefOr[String] = js.native
+  var icoFontSize: js.UndefOr[String] = js.undefined
   
-  var icoLineHeight: js.UndefOr[String] = js.native
+  var icoLineHeight: js.UndefOr[String] = js.undefined
   
-  var icoOpen: js.UndefOr[String] = js.native
+  var icoOpen: js.UndefOr[String] = js.undefined
   
-  var icoPadding: js.UndefOr[String] = js.native
+  var icoPadding: js.UndefOr[String] = js.undefined
   
-  var icoPaddingBottom: js.UndefOr[String] = js.native
+  var icoPaddingBottom: js.UndefOr[String] = js.undefined
   
-  var icoPaddingLeft: js.UndefOr[String] = js.native
+  var icoPaddingLeft: js.UndefOr[String] = js.undefined
   
-  var icoPaddingRight: js.UndefOr[String] = js.native
+  var icoPaddingRight: js.UndefOr[String] = js.undefined
   
-  var icoPaddingTop: js.UndefOr[String] = js.native
+  var icoPaddingTop: js.UndefOr[String] = js.undefined
   
-  var icoTextDecoration: js.UndefOr[String] = js.native
+  var icoTextDecoration: js.UndefOr[String] = js.undefined
   
-  var icoTextTransform: js.UndefOr[String] = js.native
+  var icoTextTransform: js.UndefOr[String] = js.undefined
 }
 object MjmlNavbarProps {
   

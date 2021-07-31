@@ -2,50 +2,48 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditorRegistry extends StObject {
   
   /** Register a TextEditor. */
-  def add(editor: TextEditor): Disposable = js.native
+  def add(editor: TextEditor): Disposable
   
   // Managing Text Editors
   /** Remove all editors from the registry. */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /** Remove any grammar override that has been set for the given TextEditor. */
-  def clearGrammarOverride(editor: TextEditor): Unit = js.native
+  def clearGrammarOverride(editor: TextEditor): Unit
   
   /**
     *  Retrieve the grammar scope name that has been set as a grammar override
     *  for the given TextEditor.
     */
-  def getGrammarOverride(editor: TextEditor): String | Null = js.native
+  def getGrammarOverride(editor: TextEditor): String | Null
   
   /** Keep a TextEditor's configuration in sync with Atom's settings. */
-  def maintainConfig(editor: TextEditor): Disposable = js.native
+  def maintainConfig(editor: TextEditor): Disposable
   
   /**
     *  Set a TextEditor's grammar based on its path and content, and continue
     *  to update its grammar as gramamrs are added or updated, or the editor's
     *  file path changes.
     */
-  def maintainGrammar(editor: TextEditor): Disposable = js.native
+  def maintainGrammar(editor: TextEditor): Disposable
   
   // Event Subscription
   /** Invoke the given callback with all the current and future registered TextEditors. */
-  def observe(callback: js.Function1[/* editor */ TextEditor, Unit]): Disposable = js.native
+  def observe(callback: js.Function1[/* editor */ TextEditor, Unit]): Disposable
   
   /** Remove the given TextEditor from the registry. */
-  def remove(editor: TextEditor): Boolean = js.native
+  def remove(editor: TextEditor): Boolean
   
   /**
     *  Force a TextEditor to use a different grammar than the one that would
     *  otherwise be selected for it.
     */
-  def setGrammarOverride(editor: TextEditor, scopeName: String): Unit = js.native
+  def setGrammarOverride(editor: TextEditor, scopeName: String): Unit
 }
 object TextEditorRegistry {
   

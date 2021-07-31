@@ -2,17 +2,15 @@ package typings.nodal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColumn extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var properties: IColumnProperties = js.native
+  var properties: IColumnProperties
   
-  var `type`: DataType = js.native
+  var `type`: DataType
 }
 object IColumn {
   

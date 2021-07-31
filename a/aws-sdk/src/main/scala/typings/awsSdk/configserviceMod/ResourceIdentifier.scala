@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceIdentifier extends StObject {
   
   /**
     * The time that the resource was deleted.
     */
-  var resourceDeletionTime: js.UndefOr[ResourceDeletionTime] = js.native
+  var resourceDeletionTime: js.UndefOr[ResourceDeletionTime] = js.undefined
   
   /**
     * The ID of the resource (for example, sg-xxxxxx).
     */
-  var resourceId: js.UndefOr[ResourceId] = js.native
+  var resourceId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The custom name of the resource (if available).
     */
-  var resourceName: js.UndefOr[ResourceName] = js.native
+  var resourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The type of resource.
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
 }
 object ResourceIdentifier {
   

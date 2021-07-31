@@ -2,7 +2,6 @@ package typings.nwJs.mod.global.NWJSHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,9 +23,9 @@ trait clip extends StObject {
     * @returns {string} the data retrieved from the clipboard.
     */
   def get(): String = js.native
-  def get(`type`: js.UndefOr[scala.Nothing], raw: Boolean): String = js.native
   def get(`type`: String): String = js.native
   def get(`type`: String, raw: Boolean): String = js.native
+  def get(`type`: Unit, raw: Boolean): String = js.native
   
   /**
     * Get an array contains list of available types of data in clipboard currenly.
@@ -44,7 +43,7 @@ trait clip extends StObject {
     * @param raw {boolean} (Optional) requiring raw image data. This option is only valid if type is png or jpeg. By default, raw is set to false.
     */
   def set(data: String): Unit = js.native
-  def set(data: String, `type`: js.UndefOr[scala.Nothing], raw: Boolean): Unit = js.native
   def set(data: String, `type`: String): Unit = js.native
   def set(data: String, `type`: String, raw: Boolean): Unit = js.native
+  def set(data: String, `type`: Unit, raw: Boolean): Unit = js.native
 }

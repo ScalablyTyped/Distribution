@@ -2,20 +2,18 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Multiple async file annotation requests are batched into a single service
   * call.
   */
-@js.native
 trait SchemaAsyncBatchAnnotateFilesRequest extends StObject {
   
   /**
     * Individual async file annotation requests for this batch.
     */
-  var requests: js.UndefOr[js.Array[SchemaAsyncAnnotateFileRequest]] = js.native
+  var requests: js.UndefOr[js.Array[SchemaAsyncAnnotateFileRequest]] = js.undefined
 }
 object SchemaAsyncBatchAnnotateFilesRequest {
   

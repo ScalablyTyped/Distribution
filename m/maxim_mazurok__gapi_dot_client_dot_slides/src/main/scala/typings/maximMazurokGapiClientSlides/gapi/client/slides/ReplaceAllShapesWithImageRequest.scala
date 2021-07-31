@@ -2,39 +2,37 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceAllShapesWithImageRequest extends StObject {
   
   /** If set, this request will replace all of the shapes that contain the given text. */
-  var containsText: js.UndefOr[SubstringMatchCriteria] = js.native
+  var containsText: js.UndefOr[SubstringMatchCriteria] = js.undefined
   
   /**
     * The image replace method. If you specify both a `replace_method` and an `image_replace_method`, the `image_replace_method` takes precedence. If you do not specify a value for
     * `image_replace_method`, but specify a value for `replace_method`, then the specified `replace_method` value is used. If you do not specify either, then CENTER_INSIDE is used.
     */
-  var imageReplaceMethod: js.UndefOr[String] = js.native
+  var imageReplaceMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The image URL. The image is fetched once at insertion time and a copy is stored for display inside the presentation. Images must be less than 50MB in size, cannot exceed 25
     * megapixels, and must be in one of PNG, JPEG, or GIF format. The provided URL can be at most 2 kB in length. The URL itself is saved with the image, and exposed via the
     * Image.source_url field.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * If non-empty, limits the matches to page elements only on the given pages. Returns a 400 bad request error if given the page object ID of a notes page or a notes master, or if a
     * page with that object ID doesn't exist in the presentation.
     */
-  var pageObjectIds: js.UndefOr[js.Array[String]] = js.native
+  var pageObjectIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The replace method. *Deprecated*: use `image_replace_method` instead. If you specify both a `replace_method` and an `image_replace_method`, the `image_replace_method` takes
     * precedence.
     */
-  var replaceMethod: js.UndefOr[String] = js.native
+  var replaceMethod: js.UndefOr[String] = js.undefined
 }
 object ReplaceAllShapesWithImageRequest {
   

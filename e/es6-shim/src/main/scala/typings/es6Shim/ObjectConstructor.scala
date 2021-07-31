@@ -2,10 +2,8 @@ package typings.es6Shim
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectConstructor extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait ObjectConstructor extends StObject {
     * @param target The target object to copy to.
     * @param sources One or more source objects to copy properties from.
     */
-  def assign(target: js.Any, sources: js.Any*): js.Any = js.native
+  def assign(target: js.Any, sources: js.Any*): js.Any
   
   /**
     * Returns true if the values are the same value, false otherwise.
     * @param value1 The first value.
     * @param value2 The second value.
     */
-  def is(value1: js.Any, value2: js.Any): Boolean = js.native
+  def is(value1: js.Any, value2: js.Any): Boolean
   
   /**
     * Sets the prototype of a specified object o to  object proto or null. Returns the object o.
@@ -29,7 +27,7 @@ trait ObjectConstructor extends StObject {
     * @param proto The value of the new prototype or null.
     * @remarks Requires `__proto__` support.
     */
-  def setPrototypeOf(o: js.Any, proto: js.Any): js.Any = js.native
+  def setPrototypeOf(o: js.Any, proto: js.Any): js.Any
 }
 object ObjectConstructor {
   

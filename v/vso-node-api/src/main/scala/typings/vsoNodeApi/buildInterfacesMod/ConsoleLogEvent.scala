@@ -2,17 +2,17 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConsoleLogEvent extends RealtimeBuildEvent {
+trait ConsoleLogEvent
+  extends StObject
+     with RealtimeBuildEvent {
   
-  var lines: js.Array[String] = js.native
+  var lines: js.Array[String]
   
-  var timelineId: String = js.native
+  var timelineId: String
   
-  var timelineRecordId: String = js.native
+  var timelineRecordId: String
 }
 object ConsoleLogEvent {
   

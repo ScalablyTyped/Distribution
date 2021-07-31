@@ -3,54 +3,52 @@ package typings.webix.webix.ui
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait fieldsetConfig extends StObject {
   
   @JSName("$cssName")
-  var $cssName: js.UndefOr[String] = js.native
+  var $cssName: js.UndefOr[String] = js.undefined
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var body: js.UndefOr[baseview] = js.native
+  var body: js.UndefOr[baseview] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.native
+  var keyPressTimeout: js.UndefOr[Double] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var paddingX: js.UndefOr[Double] = js.native
+  var paddingX: js.UndefOr[Double] = js.undefined
   
-  var paddingY: js.UndefOr[Double] = js.native
+  var paddingY: js.UndefOr[Double] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object fieldsetConfig {
   

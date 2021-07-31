@@ -105,46 +105,44 @@ import typings.reactNativeElements.reactNativeElementsStrings.yes
 import typings.reactNativeElements.reactNativeElementsStrings.yesExcludeDescendants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.SearchBarProps>> */
-@js.native
 trait RecursivePartialPartialSe extends StObject {
   
-  var InputComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentType[_]]]] = js.native
+  var InputComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentType[js.Any]]]] = js.undefined
   
-  var accessibilityActions: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]] = js.native
+  var accessibilityActions: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]] = js.undefined
   
   var accessibilityComponentType: js.UndefOr[
     RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]
-  ] = js.native
+  ] = js.undefined
   
-  var accessibilityElementsHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var accessibilityElementsHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var accessibilityHint: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var accessibilityHint: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var accessibilityIgnoresInvertColors: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var accessibilityIgnoresInvertColors: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var accessibilityLabel: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var accessibilityLabel: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var accessibilityLiveRegion: js.UndefOr[RecursivePartial[js.UndefOr[none | polite | assertive]]] = js.native
+  var accessibilityLiveRegion: js.UndefOr[RecursivePartial[js.UndefOr[none | polite | assertive]]] = js.undefined
   
-  var accessibilityRole: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityRole]]] = js.native
+  var accessibilityRole: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityRole]]] = js.undefined
   
-  var accessibilityState: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityState]]] = js.native
+  var accessibilityState: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityState]]] = js.undefined
   
-  var accessibilityTraits: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]] = js.native
+  var accessibilityTraits: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]] = js.undefined
   
-  var accessibilityValue: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityValue]]] = js.native
+  var accessibilityValue: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityValue]]] = js.undefined
   
-  var accessibilityViewIsModal: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var accessibilityViewIsModal: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var accessible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var accessible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var allowFontScaling: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var allowFontScaling: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var autoCapitalize: js.UndefOr[RecursivePartial[js.UndefOr[none | sentences | words | characters]]] = js.native
+  var autoCapitalize: js.UndefOr[RecursivePartial[js.UndefOr[none | sentences | words | characters]]] = js.undefined
   
   var autoCompleteType: js.UndefOr[
     RecursivePartial[
@@ -152,131 +150,131 @@ trait RecursivePartialPartialSe extends StObject {
         `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var autoCorrect: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var autoCorrect: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var autoFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var autoFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var blurOnSubmit: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var blurOnSubmit: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var cancelButtonProps: js.UndefOr[RecursivePartial[js.UndefOr[PartialTouchableOpacityPr]]] = js.native
+  var cancelButtonProps: js.UndefOr[RecursivePartial[js.UndefOr[PartialTouchableOpacityPr]]] = js.undefined
   
-  var cancelButtonTitle: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var cancelButtonTitle: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var cancelIcon: js.UndefOr[RecursivePartial[js.UndefOr[IconNode]]] = js.native
+  var cancelIcon: js.UndefOr[RecursivePartial[js.UndefOr[IconNode]]] = js.undefined
   
-  var caretHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var caretHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
   var clearButtonMode: js.UndefOr[
     RecursivePartial[js.UndefOr[never | `while-editing` | `unless-editing` | always]]
-  ] = js.native
+  ] = js.undefined
   
-  var clearIcon: js.UndefOr[RecursivePartial[js.UndefOr[IconNode]]] = js.native
+  var clearIcon: js.UndefOr[RecursivePartial[js.UndefOr[IconNode]]] = js.undefined
   
-  var clearTextOnFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var clearTextOnFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var collapsable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var collapsable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var contextMenuHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var contextMenuHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var dataDetectorTypes: js.UndefOr[RecursivePartial[js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]]]] = js.native
+  var dataDetectorTypes: js.UndefOr[RecursivePartial[js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]]]] = js.undefined
   
-  var defaultValue: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var defaultValue: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var disableFullscreenUI: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var disableFullscreenUI: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var disabledInputStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var disabledInputStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var editable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var editable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var enablesReturnKeyAutomatically: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var enablesReturnKeyAutomatically: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var errorMessage: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var errorMessage: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var errorProps: js.UndefOr[RecursivePartial[js.UndefOr[TextProps]]] = js.native
+  var errorProps: js.UndefOr[RecursivePartial[js.UndefOr[TextProps]]] = js.undefined
   
-  var errorStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var errorStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var focusable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var focusable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var hasTVPreferredFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var hasTVPreferredFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var hitSlop: js.UndefOr[RecursivePartial[js.UndefOr[Insets]]] = js.native
+  var hitSlop: js.UndefOr[RecursivePartial[js.UndefOr[Insets]]] = js.undefined
   
-  var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.native
+  var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.undefined
   
   var importantForAutofill: js.UndefOr[
     RecursivePartial[js.UndefOr[auto | no | noExcludeDescendants | yes | yesExcludeDescendants]]
-  ] = js.native
+  ] = js.undefined
   
-  var inlineImageLeft: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var inlineImageLeft: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var inlineImagePadding: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var inlineImagePadding: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var inputAccessoryViewID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var inputAccessoryViewID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var inputContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var inputContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var inputStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var inputStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var isTVSelectable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var isTVSelectable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var keyboardAppearance: js.UndefOr[RecursivePartial[js.UndefOr[default | light | dark]]] = js.native
+  var keyboardAppearance: js.UndefOr[RecursivePartial[js.UndefOr[default | light | dark]]] = js.undefined
   
-  var keyboardType: js.UndefOr[RecursivePartial[js.UndefOr[KeyboardTypeOptions]]] = js.native
+  var keyboardType: js.UndefOr[RecursivePartial[js.UndefOr[KeyboardTypeOptions]]] = js.undefined
   
-  var label: js.UndefOr[RecursivePartial[js.UndefOr[String | ReactElement]]] = js.native
+  var label: js.UndefOr[RecursivePartial[js.UndefOr[String | ReactElement]]] = js.undefined
   
-  var labelProps: js.UndefOr[RecursivePartial[js.UndefOr[TextProps]]] = js.native
+  var labelProps: js.UndefOr[RecursivePartial[js.UndefOr[TextProps]]] = js.undefined
   
-  var labelStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var labelStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var leftIcon: js.UndefOr[RecursivePartial[js.UndefOr[IconNode]]] = js.native
+  var leftIcon: js.UndefOr[RecursivePartial[js.UndefOr[IconNode]]] = js.undefined
   
-  var leftIconContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var leftIconContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var lightTheme: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var lightTheme: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var loadingProps: js.UndefOr[RecursivePartial[js.UndefOr[ActivityIndicatorProperties]]] = js.native
+  var loadingProps: js.UndefOr[RecursivePartial[js.UndefOr[ActivityIndicatorProperties]]] = js.undefined
   
-  var maxFontSizeMultiplier: js.UndefOr[RecursivePartial[js.UndefOr[Double | Null]]] = js.native
+  var maxFontSizeMultiplier: js.UndefOr[RecursivePartial[js.UndefOr[Double | Null]]] = js.undefined
   
-  var maxLength: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var maxLength: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var multiline: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var multiline: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var nativeID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var nativeID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var needsOffscreenAlphaCompositing: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var needsOffscreenAlphaCompositing: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var numberOfLines: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var numberOfLines: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
   var onAccessibilityAction: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
-  var onAccessibilityEscape: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onAccessibilityEscape: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onAccessibilityTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onAccessibilityTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onBlur: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onBlur: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onCancel: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onCancel: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
   var onChange: js.UndefOr[
     RecursivePartial[
       js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputChangeEventData], Unit]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onChangeText: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* text */ String, Unit]]]] = js.native
+  var onChangeText: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* text */ String, Unit]]]] = js.undefined
   
-  var onClear: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onClear: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
   var onContentSizeChange: js.UndefOr[
     RecursivePartial[
@@ -284,71 +282,71 @@ trait RecursivePartialPartialSe extends StObject {
         js.Function1[/* e */ NativeSyntheticEvent[TextInputContentSizeChangeEventData], Unit]
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onEndEditing: js.UndefOr[
     RecursivePartial[
       js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputEndEditingEventData], Unit]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onFocus: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onFocus: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
   var onKeyPress: js.UndefOr[
     RecursivePartial[
       js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputKeyPressEventData], Unit]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onLayout: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]] = js.native
+  var onLayout: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]] = js.undefined
   
-  var onMagicTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onMagicTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
   var onMoveShouldSetResponder: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]
-  ] = js.native
+  ] = js.undefined
   
   var onMoveShouldSetResponderCapture: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]
-  ] = js.native
+  ] = js.undefined
   
   var onResponderEnd: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
   var onResponderGrant: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
   var onResponderMove: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
   var onResponderReject: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
   var onResponderRelease: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
   var onResponderStart: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
   var onResponderTerminate: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
   var onResponderTerminationRequest: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]
-  ] = js.native
+  ] = js.undefined
   
   var onScroll: js.UndefOr[
     RecursivePartial[
       js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputScrollEventData], Unit]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onSelectionChange: js.UndefOr[
     RecursivePartial[
@@ -356,15 +354,15 @@ trait RecursivePartialPartialSe extends StObject {
         js.Function1[/* e */ NativeSyntheticEvent[TextInputSelectionChangeEventData], Unit]
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onStartShouldSetResponder: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]
-  ] = js.native
+  ] = js.undefined
   
   var onStartShouldSetResponderCapture: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]
-  ] = js.native
+  ] = js.undefined
   
   var onSubmitEditing: js.UndefOr[
     RecursivePartial[
@@ -372,93 +370,93 @@ trait RecursivePartialPartialSe extends StObject {
         js.Function1[/* e */ NativeSyntheticEvent[TextInputSubmitEditingEventData], Unit]
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onTextInput: js.UndefOr[
     RecursivePartial[
       js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputTextInputEventData], Unit]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onTouchCancel: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
   var onTouchEnd: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
   var onTouchEndCapture: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
   var onTouchMove: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
   var onTouchStart: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
-  var passwordRules: js.UndefOr[RecursivePartial[js.UndefOr[String | Null]]] = js.native
+  var passwordRules: js.UndefOr[RecursivePartial[js.UndefOr[String | Null]]] = js.undefined
   
-  var placeholder: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var placeholder: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var placeholderTextColor: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.native
+  var placeholderTextColor: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.undefined
   
-  var platform: js.UndefOr[RecursivePartial[js.UndefOr[default | ios | android]]] = js.native
+  var platform: js.UndefOr[RecursivePartial[js.UndefOr[default | ios | android]]] = js.undefined
   
-  var pointerEvents: js.UndefOr[RecursivePartial[js.UndefOr[`box-none` | none | `box-only` | auto]]] = js.native
+  var pointerEvents: js.UndefOr[RecursivePartial[js.UndefOr[`box-none` | none | `box-only` | auto]]] = js.undefined
   
-  var rejectResponderTermination: js.UndefOr[RecursivePartial[js.UndefOr[Boolean | Null]]] = js.native
+  var rejectResponderTermination: js.UndefOr[RecursivePartial[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var removeClippedSubviews: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var removeClippedSubviews: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var renderErrorMessage: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var renderErrorMessage: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var renderToHardwareTextureAndroid: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var renderToHardwareTextureAndroid: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var returnKeyLabel: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var returnKeyLabel: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var returnKeyType: js.UndefOr[RecursivePartial[js.UndefOr[ReturnKeyTypeOptions]]] = js.native
+  var returnKeyType: js.UndefOr[RecursivePartial[js.UndefOr[ReturnKeyTypeOptions]]] = js.undefined
   
-  var rightIcon: js.UndefOr[RecursivePartial[js.UndefOr[IconNode]]] = js.native
+  var rightIcon: js.UndefOr[RecursivePartial[js.UndefOr[IconNode]]] = js.undefined
   
-  var rightIconContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var rightIconContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var round: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var round: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var scrollEnabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var scrollEnabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var searchIcon: js.UndefOr[RecursivePartial[js.UndefOr[IconNode]]] = js.native
+  var searchIcon: js.UndefOr[RecursivePartial[js.UndefOr[IconNode]]] = js.undefined
   
-  var secureTextEntry: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var secureTextEntry: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var selectTextOnFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var selectTextOnFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var selection: js.UndefOr[RecursivePartial[js.UndefOr[Start]]] = js.native
+  var selection: js.UndefOr[RecursivePartial[js.UndefOr[Start]]] = js.undefined
   
-  var selectionColor: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.native
+  var selectionColor: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.undefined
   
-  var selectionState: js.UndefOr[RecursivePartial[js.UndefOr[DocumentSelectionState]]] = js.native
+  var selectionState: js.UndefOr[RecursivePartial[js.UndefOr[DocumentSelectionState]]] = js.undefined
   
-  var shouldRasterizeIOS: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var shouldRasterizeIOS: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var showCancel: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var showCancel: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var showLoading: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var showLoading: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var showSoftInputOnFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var showSoftInputOnFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var spellCheck: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var spellCheck: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var testID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var testID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var textAlignVertical: js.UndefOr[RecursivePartial[js.UndefOr[auto | top | bottom | center]]] = js.native
+  var textAlignVertical: js.UndefOr[RecursivePartial[js.UndefOr[auto | top | bottom | center]]] = js.undefined
   
-  var textBreakStrategy: js.UndefOr[RecursivePartial[js.UndefOr[simple | highQuality | balanced]]] = js.native
+  var textBreakStrategy: js.UndefOr[RecursivePartial[js.UndefOr[simple | highQuality | balanced]]] = js.undefined
   
   var textContentType: js.UndefOr[
     RecursivePartial[
@@ -466,21 +464,21 @@ trait RecursivePartialPartialSe extends StObject {
         none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var tvParallaxMagnification: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var tvParallaxMagnification: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var tvParallaxProperties: js.UndefOr[RecursivePartial[js.UndefOr[TVParallaxProperties]]] = js.native
+  var tvParallaxProperties: js.UndefOr[RecursivePartial[js.UndefOr[TVParallaxProperties]]] = js.undefined
   
-  var tvParallaxShiftDistanceX: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var tvParallaxShiftDistanceX: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var tvParallaxShiftDistanceY: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var tvParallaxShiftDistanceY: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var tvParallaxTiltAngle: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var tvParallaxTiltAngle: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var underlineColorAndroid: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.native
+  var underlineColorAndroid: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.undefined
   
-  var value: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var value: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
 }
 object RecursivePartialPartialSe {
   
@@ -784,7 +782,7 @@ object RecursivePartialPartialSe {
     def setInputAccessoryViewIDUndefined: Self = StObject.set(x, "inputAccessoryViewID", js.undefined)
     
     @scala.inline
-    def setInputComponent(value: RecursivePartial[js.UndefOr[ComponentType[_]]]): Self = StObject.set(x, "InputComponent", value.asInstanceOf[js.Any])
+    def setInputComponent(value: RecursivePartial[js.UndefOr[ComponentType[js.Any]]]): Self = StObject.set(x, "InputComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInputComponentUndefined: Self = StObject.set(x, "InputComponent", js.undefined)

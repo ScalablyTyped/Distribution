@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcPeeringConnectivity extends StObject {
   
   /** The name of the VPC network to peer with the Cloud SQL private network. */
-  var vpc: js.UndefOr[String] = js.native
+  var vpc: js.UndefOr[String] = js.undefined
 }
 object VpcPeeringConnectivity {
   

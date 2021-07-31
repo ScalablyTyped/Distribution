@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.Optional
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Obtains human readable strings from an {@link XInteractionRequest} . */
-@js.native
-trait XInteractionRequestStringResolver extends XInterface {
+trait XInteractionRequestStringResolver
+  extends StObject
+     with XInterface {
   
   /**
     * Obtains a string containing a human readable message from an informational interaction request.
@@ -20,7 +20,7 @@ trait XInteractionRequestStringResolver extends XInterface {
     * @param Request the interaction request for that the message shall be obtained.
     * @returns the message string or an empty com::sun::star::beans::Optional.
     */
-  def getStringFromInformationalRequest(Request: XInteractionRequest): Optional[String] = js.native
+  def getStringFromInformationalRequest(Request: XInteractionRequest): Optional[String]
 }
 object XInteractionRequestStringResolver {
   

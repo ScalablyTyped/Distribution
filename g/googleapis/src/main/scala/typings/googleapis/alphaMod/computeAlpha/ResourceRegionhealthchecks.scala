@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Regionhealthchecks")
@@ -33,7 +32,7 @@ class ResourceRegionhealthchecks protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegionhealthchecksDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegionhealthchecksDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -65,7 +64,7 @@ class ResourceRegionhealthchecks protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaHealthCheck] = js.native
   def get(callback: BodyResponseCallback[SchemaHealthCheck]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHealthCheck] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHealthCheck] = js.native
   def get(params: ParamsResourceRegionhealthchecksGet): GaxiosPromise[SchemaHealthCheck] = js.native
   def get(params: ParamsResourceRegionhealthchecksGet, callback: BodyResponseCallback[SchemaHealthCheck]): Unit = js.native
   def get(
@@ -98,7 +97,7 @@ class ResourceRegionhealthchecks protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegionhealthchecksInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegionhealthchecksInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -133,7 +132,7 @@ class ResourceRegionhealthchecks protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaHealthCheckList] = js.native
   def list(callback: BodyResponseCallback[SchemaHealthCheckList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHealthCheckList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHealthCheckList] = js.native
   def list(params: ParamsResourceRegionhealthchecksList): GaxiosPromise[SchemaHealthCheckList] = js.native
   def list(
     params: ParamsResourceRegionhealthchecksList,
@@ -171,7 +170,7 @@ class ResourceRegionhealthchecks protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceRegionhealthchecksPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceRegionhealthchecksPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -203,7 +202,7 @@ class ResourceRegionhealthchecks protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceRegionhealthchecksTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceRegionhealthchecksTestiampermissions,
@@ -240,7 +239,7 @@ class ResourceRegionhealthchecks protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceRegionhealthchecksUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceRegionhealthchecksUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

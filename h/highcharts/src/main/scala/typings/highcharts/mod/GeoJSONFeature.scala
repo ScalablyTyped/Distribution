@@ -2,17 +2,16 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoJSONFeature
-  extends Dictionary[js.Any] {
+  extends StObject
+     with Dictionary[js.Any] {
   
   /**
     * Data type of the geographic feature.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object GeoJSONFeature {
   

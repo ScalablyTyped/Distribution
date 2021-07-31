@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeHttpConnectionPool extends StObject {
   
   /**
     * Maximum number of outbound TCP connections Envoy can establish concurrently with all hosts in upstream cluster.
     */
-  var maxConnections: MaxConnections = js.native
+  var maxConnections: MaxConnections
   
   /**
     * Number of overflowing requests after max_connections Envoy will queue to upstream cluster.
     */
-  var maxPendingRequests: js.UndefOr[MaxPendingRequests] = js.native
+  var maxPendingRequests: js.UndefOr[MaxPendingRequests] = js.undefined
 }
 object VirtualNodeHttpConnectionPool {
   

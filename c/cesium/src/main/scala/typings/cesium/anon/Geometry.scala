@@ -4,19 +4,17 @@ import typings.cesium.mod.Matrix4
 import typings.cesium.mod.PolygonGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geometry extends StObject {
   
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
-  var geometry: typings.cesium.mod.Geometry | PolygonGeometry = js.native
+  var geometry: typings.cesium.mod.Geometry | PolygonGeometry
   
-  var id: js.UndefOr[js.Any] = js.native
+  var id: js.UndefOr[js.Any] = js.undefined
   
-  var modelMatrix: js.UndefOr[Matrix4] = js.native
+  var modelMatrix: js.UndefOr[Matrix4] = js.undefined
 }
 object Geometry {
   

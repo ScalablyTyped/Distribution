@@ -2,101 +2,99 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbClusterSnapshotDetails extends StObject {
   
   /**
     * Specifies the allocated storage size in gibibytes (GiB).
     */
-  var AllocatedStorage: js.UndefOr[Integer] = js.native
+  var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
     * A list of Availability Zones where instances in the DB cluster can be created.
     */
-  var AvailabilityZones: js.UndefOr[StringList] = js.native
+  var AvailabilityZones: js.UndefOr[StringList] = js.undefined
   
   /**
     * Indicates when the DB cluster was created, in Universal Coordinated Time (UTC). Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var ClusterCreateTime: js.UndefOr[NonEmptyString] = js.native
+  var ClusterCreateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The DB cluster identifier.
     */
-  var DbClusterIdentifier: js.UndefOr[NonEmptyString] = js.native
+  var DbClusterIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the DB cluster snapshot.
     */
-  var DbClusterSnapshotIdentifier: js.UndefOr[NonEmptyString] = js.native
+  var DbClusterSnapshotIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var Engine: js.UndefOr[NonEmptyString] = js.native
+  var Engine: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The version of the database engine to use.
     */
-  var EngineVersion: js.UndefOr[NonEmptyString] = js.native
+  var EngineVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether mapping of IAM accounts to database accounts is enabled.
     */
-  var IamDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.native
+  var IamDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ARN of the AWS KMS master key that is used to encrypt the database instances in the DB cluster.
     */
-  var KmsKeyId: js.UndefOr[NonEmptyString] = js.native
+  var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The license model information for this DB cluster snapshot.
     */
-  var LicenseModel: js.UndefOr[NonEmptyString] = js.native
+  var LicenseModel: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the master user for the DB cluster.
     */
-  var MasterUsername: js.UndefOr[NonEmptyString] = js.native
+  var MasterUsername: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Specifies the percentage of the estimated data that has been transferred.
     */
-  var PercentProgress: js.UndefOr[Integer] = js.native
+  var PercentProgress: js.UndefOr[Integer] = js.undefined
   
   /**
     * The port number on which the DB instances in the DB cluster accept connections.
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
   
   /**
     * Indicates when the snapshot was taken. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var SnapshotCreateTime: js.UndefOr[NonEmptyString] = js.native
+  var SnapshotCreateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of DB cluster snapshot.
     */
-  var SnapshotType: js.UndefOr[NonEmptyString] = js.native
+  var SnapshotType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The status of this DB cluster snapshot.
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the DB cluster is encrypted.
     */
-  var StorageEncrypted: js.UndefOr[Boolean] = js.native
+  var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The VPC ID that is associated with the DB cluster snapshot.
     */
-  var VpcId: js.UndefOr[NonEmptyString] = js.native
+  var VpcId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRdsDbClusterSnapshotDetails {
   

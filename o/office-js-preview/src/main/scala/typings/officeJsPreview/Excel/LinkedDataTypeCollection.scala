@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait LinkedDataTypeCollection extends ClientObject {
+trait LinkedDataTypeCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -73,7 +74,7 @@ trait LinkedDataTypeCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): LinkedDataTypeCollection = js.native
-  def load(options: LinkedDataTypeCollectionLoadOptions with CollectionLoadOptions): LinkedDataTypeCollection = js.native
+  def load(options: LinkedDataTypeCollectionLoadOptions & CollectionLoadOptions): LinkedDataTypeCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): LinkedDataTypeCollection = js.native
   def load(propertyNames: String): LinkedDataTypeCollection = js.native
   def load(propertyNames: js.Array[String]): LinkedDataTypeCollection = js.native

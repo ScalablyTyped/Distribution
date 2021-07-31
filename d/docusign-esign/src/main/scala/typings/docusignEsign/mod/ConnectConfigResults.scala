@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectConfigResults extends StObject {
   
   /**
     * An array of DocuSign Connect configurations.
     */
-  var configurations: js.UndefOr[js.Array[ConnectCustomConfiguration]] = js.native
+  var configurations: js.UndefOr[js.Array[ConnectCustomConfiguration]] = js.undefined
   
   /**
     * The number of results.
     */
-  var totalRecords: js.UndefOr[String] = js.native
+  var totalRecords: js.UndefOr[String] = js.undefined
 }
 object ConnectConfigResults {
   

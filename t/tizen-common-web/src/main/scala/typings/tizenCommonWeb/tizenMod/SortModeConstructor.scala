@@ -6,10 +6,10 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.ASC
 import typings.tizenCommonWeb.tizenCommonWebStrings.DESC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SortModeConstructor
-  extends Instantiable1[/* attributeName */ String, SortMode]
+  extends StObject
+     with Instantiable1[/* attributeName */ String, SortMode]
      with Instantiable2[/* attributeName */ String, ASC | DESC | (/* order */ SortModeOrder), SortMode]

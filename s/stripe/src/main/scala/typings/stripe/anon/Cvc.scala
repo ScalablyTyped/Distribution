@@ -2,19 +2,17 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cvc extends StObject {
   
-  var cvc: js.UndefOr[String] = js.native
+  var cvc: js.UndefOr[String] = js.undefined
   
-  var exp_month: Double = js.native
+  var exp_month: Double
   
-  var exp_year: Double = js.native
+  var exp_year: Double
   
-  var number: String = js.native
+  var number: String
 }
 object Cvc {
   

@@ -3,17 +3,15 @@ package typings.cesium.anon
 import typings.cesium.mod.Matrix4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeometryLength extends StObject {
   
-  var geometry: typings.cesium.mod.Geometry = js.native
+  var geometry: typings.cesium.mod.Geometry
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var modelMatrix: js.UndefOr[Matrix4] = js.native
+  var modelMatrix: js.UndefOr[Matrix4] = js.undefined
 }
 object GeometryLength {
   

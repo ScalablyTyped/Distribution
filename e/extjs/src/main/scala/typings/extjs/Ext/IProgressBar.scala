@@ -2,42 +2,42 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IProgressBar extends IComponent {
+trait IProgressBar
+  extends StObject
+     with IComponent {
   
   /** [Config Option] (Boolean/Object) */
   @JSName("animate")
-  var animate_IProgressBar: js.UndefOr[js.Any] = js.native
+  var animate_IProgressBar: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Initialized the renderData to be used when rendering the renderTpl
     * @returns Object Object with keys and values that are going to be applied to the renderTpl
     */
   @JSName("initRenderData")
-  var initRenderData_IProgressBar: js.UndefOr[js.Function0[_]] = js.native
+  var initRenderData_IProgressBar: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns true if the progress bar is currently in a wait operation
     * @returns Boolean True if waiting, else false
     */
-  var isWaiting: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isWaiting: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Template method called when this Component s DOM structure is created  */
   @JSName("onRender")
-  var onRender_IProgressBar: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRender_IProgressBar: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Resets the progress bar value to 0 and text to empty string
     * @param hide Boolean True to hide the progress bar.
     * @returns Ext.ProgressBar this
     */
-  var reset: js.UndefOr[js.Function1[/* hide */ js.UndefOr[Boolean], this.type]] = js.native
+  var reset: js.UndefOr[js.Function1[/* hide */ js.UndefOr[Boolean], this.type]] = js.undefined
   
   /** [Config Option] (String) */
-  var text: js.UndefOr[java.lang.String] = js.native
+  var text: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String/HTMLElement/Ext.Element) */
-  var textEl: js.UndefOr[js.Any] = js.native
+  var textEl: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Updates the progress bar value and optionally its text
     * @param value Number A floating point value between 0 and 1 (e.g., .5)
@@ -52,23 +52,23 @@ trait IProgressBar extends IComponent {
       /* animate */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Updates the progress bar text
     * @param text String The string to display in the progress text element
     * @returns Ext.ProgressBar this
     */
-  var updateText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], this.type]] = js.native
+  var updateText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], this.type]] = js.undefined
   
   /** [Config Option] (Number) */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
   /** [Method] Initiates an auto updating progress bar
     * @param config Object Configuration options
     * @returns Ext.ProgressBar this
     */
   @JSName("wait")
-  var wait_FIProgressBar: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], this.type]] = js.native
+  var wait_FIProgressBar: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], this.type]] = js.undefined
 }
 object IProgressBar {
   
@@ -88,7 +88,7 @@ object IProgressBar {
     def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def setInitRenderData(value: () => _): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
+    def setInitRenderData(value: () => js.Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)

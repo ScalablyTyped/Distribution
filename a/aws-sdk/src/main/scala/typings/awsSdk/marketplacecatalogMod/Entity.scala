@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entity extends StObject {
   
   /**
     * The identifier for the entity.
     */
-  var Identifier: js.UndefOr[typings.awsSdk.marketplacecatalogMod.Identifier] = js.native
+  var Identifier: js.UndefOr[typings.awsSdk.marketplacecatalogMod.Identifier] = js.undefined
   
   /**
     * The type of entity.
     */
-  var Type: EntityType = js.native
+  var Type: EntityType
 }
 object Entity {
   

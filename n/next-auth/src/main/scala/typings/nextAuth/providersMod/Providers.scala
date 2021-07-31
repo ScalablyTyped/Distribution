@@ -2,57 +2,55 @@ package typings.nextAuth.providersMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Providers extends StObject {
   
-  var Apple: typings.nextAuth.providersMod.Apple = js.native
+  var Apple: typings.nextAuth.providersMod.Apple
   
-  var Auth0: typings.nextAuth.providersMod.Auth0 = js.native
+  var Auth0: typings.nextAuth.providersMod.Auth0
   
-  var Basecamp: typings.nextAuth.providersMod.Basecamp = js.native
+  var Basecamp: typings.nextAuth.providersMod.Basecamp
   
-  var BattleNet: typings.nextAuth.providersMod.BattleNet = js.native
+  var BattleNet: typings.nextAuth.providersMod.BattleNet
   
-  var Box: typings.nextAuth.providersMod.Box = js.native
+  var Box: typings.nextAuth.providersMod.Box
   
-  var Cognito: typings.nextAuth.providersMod.Cognito = js.native
+  var Cognito: typings.nextAuth.providersMod.Cognito
   
-  var Credentials: typings.nextAuth.providersMod.Credentials = js.native
+  var Credentials: typings.nextAuth.providersMod.Credentials
   
-  var Discord: typings.nextAuth.providersMod.Discord = js.native
+  var Discord: typings.nextAuth.providersMod.Discord
   
-  var Email: typings.nextAuth.providersMod.Email = js.native
+  var Email: typings.nextAuth.providersMod.Email
   
-  var Facebook: typings.nextAuth.providersMod.Facebook = js.native
+  var Facebook: typings.nextAuth.providersMod.Facebook
   
-  var GitHub: typings.nextAuth.providersMod.GitHub = js.native
+  var GitHub: typings.nextAuth.providersMod.GitHub
   
-  var GitLab: typings.nextAuth.providersMod.GitLab = js.native
+  var GitLab: typings.nextAuth.providersMod.GitLab
   
-  var Google: typings.nextAuth.providersMod.Google = js.native
+  var Google: typings.nextAuth.providersMod.Google
   
-  var IdentityServer4: typings.nextAuth.providersMod.IdentityServer4 = js.native
+  var IdentityServer4: typings.nextAuth.providersMod.IdentityServer4
   
-  var LinkedIn: typings.nextAuth.providersMod.LinkedIn = js.native
+  var LinkedIn: typings.nextAuth.providersMod.LinkedIn
   
-  var Mixer: typings.nextAuth.providersMod.Mixer = js.native
+  var Mixer: typings.nextAuth.providersMod.Mixer
   
-  var Okta: typings.nextAuth.providersMod.Okta = js.native
+  var Okta: typings.nextAuth.providersMod.Okta
   
-  var Reddit: typings.nextAuth.providersMod.Reddit = js.native
+  var Reddit: typings.nextAuth.providersMod.Reddit
   
-  var Slack: typings.nextAuth.providersMod.Slack = js.native
+  var Slack: typings.nextAuth.providersMod.Slack
   
-  var Spotify: typings.nextAuth.providersMod.Spotify = js.native
+  var Spotify: typings.nextAuth.providersMod.Spotify
   
-  var Twitch: typings.nextAuth.providersMod.Twitch = js.native
+  var Twitch: typings.nextAuth.providersMod.Twitch
   
-  var Twitter: typings.nextAuth.providersMod.Twitter = js.native
+  var Twitter: typings.nextAuth.providersMod.Twitter
   
-  var Yandex: typings.nextAuth.providersMod.Yandex = js.native
+  var Yandex: typings.nextAuth.providersMod.Yandex
 }
 object Providers {
   

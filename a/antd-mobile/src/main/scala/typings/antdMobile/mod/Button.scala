@@ -3,7 +3,6 @@ package typings.antdMobile.mod
 import typings.antdMobile.buttonMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile", "Button")
@@ -24,6 +23,10 @@ object Button {
     @scala.inline
     def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
     
+    @JSImport("antd-mobile", "Button.defaultProps.inline")
+    @js.native
+    val `inline`: Boolean = js.native
+    
     @JSImport("antd-mobile", "Button.defaultProps.loading")
     @js.native
     def loading: Boolean = js.native
@@ -41,9 +44,5 @@ object Button {
     def size: String = js.native
     @scala.inline
     def size_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
-    
-    @JSImport("antd-mobile", "Button.defaultProps.inline")
-    @js.native
-    val `inline`: Boolean = js.native
   }
 }

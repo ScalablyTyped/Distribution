@@ -2,15 +2,13 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SentimentAnalysisResult. */
-@js.native
 trait ISentimentAnalysisResult extends StObject {
   
   /** SentimentAnalysisResult queryTextSentiment */
-  var queryTextSentiment: js.UndefOr[ISentiment | Null] = js.native
+  var queryTextSentiment: js.UndefOr[ISentiment | Null] = js.undefined
 }
 object ISentimentAnalysisResult {
   

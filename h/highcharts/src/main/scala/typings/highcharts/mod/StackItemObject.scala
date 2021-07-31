@@ -2,51 +2,49 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackItemObject extends StObject {
   
   /**
     * Alignment settings
     */
-  var alignOptions: AlignObject = js.native
+  var alignOptions: AlignObject
   
   /**
     * Related axis
     */
-  var axis: Axis = js.native
+  var axis: Axis
   
   /**
     * Cumulative value of the stacked data points
     */
-  var cumulative: Double = js.native
+  var cumulative: Double
   
   /**
     * True if on the negative side
     */
-  var isNegative: Boolean = js.native
+  var isNegative: Boolean
   
   /**
     * Related SVG element
     */
-  var label: SVGElement = js.native
+  var label: SVGElement
   
   /**
     * Related stack options
     */
-  var options: YAxisStackLabelsOptions = js.native
+  var options: YAxisStackLabelsOptions
   
   /**
     * Total value of the stacked data points
     */
-  var total: Double = js.native
+  var total: Double
   
   /**
     * Shared x value of the stack
     */
-  var x: Double = js.native
+  var x: Double
 }
 object StackItemObject {
   

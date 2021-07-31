@@ -3,14 +3,13 @@ package typings.auth0.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data
-  extends /* propName */ StringDictionary[js.Any] {
+  extends StObject
+     with /* propName */ StringDictionary[js.Any] {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Data {
   

@@ -2,19 +2,17 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AzureSubscription extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var subscriptionId: String = js.native
+  var subscriptionId: String
   
-  var subscriptionTenantId: String = js.native
+  var subscriptionTenantId: String
   
-  var subscriptionTenantName: String = js.native
+  var subscriptionTenantName: String
 }
 object AzureSubscription {
   

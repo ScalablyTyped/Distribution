@@ -16,11 +16,12 @@ import typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.error
 import typings.amapJsApiGeocoder.anon.Info
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Geocoder extends EventEmitter {
+trait Geocoder
+  extends StObject
+     with EventEmitter {
   
   /**
     * 根据给定坐标进行解析
@@ -70,18 +71,17 @@ trait Geocoder extends EventEmitter {
 }
 object Geocoder {
   
-  @js.native
   trait BatchReGeocodeResult extends StObject {
     
     /**
       * 状态说明
       */
-    var info: String = js.native
+    var info: String
     
     /**
       * 批量逆地理编码结果
       */
-    var regeocodes: js.Array[ReGeocode] = js.native
+    var regeocodes: js.Array[ReGeocode]
   }
   object BatchReGeocodeResult {
     
@@ -105,23 +105,22 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait BuildingArea extends StObject {
     
     /**
       * 唯一标识
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * 中心点经纬度
       */
-    var location: LngLat = js.native
+    var location: LngLat
     
     /**
       * 名称
       */
-    var name: String = js.native
+    var name: String
   }
   object BuildingArea {
     
@@ -145,43 +144,42 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait Cross extends StObject {
     
     /**
       * 与查询点的相对方位
       */
-    var direction: String = js.native
+    var direction: String
     
     /**
       * 道路离查询点最近距离
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 第一条道路id
       */
-    var first_id: String = js.native
+    var first_id: String
     
     /**
       * 第一条道路名称
       */
-    var first_name: String = js.native
+    var first_name: String
     
     /**
       * 经纬度
       */
-    var location: LngLat = js.native
+    var location: LngLat
     
     /**
       * 第二条道路id
       */
-    var second_id: String = js.native
+    var second_id: String
     
     /**
       * 第二条道路名称
       */
-    var second_name: String = js.native
+    var second_name: String
   }
   object Cross {
     
@@ -225,15 +223,14 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait EventMap extends StObject {
     
     var complete: Event_[
         typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.complete, 
         GeocodeResult | js.Object | ReGeocodeResult | BatchReGeocodeResult
-      ] = js.native
+      ]
     
-    var error: Event_[typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.error, Info] = js.native
+    var error: Event_[typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.error, Info]
   }
   object EventMap {
     
@@ -257,33 +254,32 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait Geocode extends StObject {
     
     /**
       * 区域编码
       */
-    var adcode: String = js.native
+    var adcode: String
     
     /**
       * 地址组成元素
       */
-    var addressComponent: GeocodeAddressComponent = js.native
+    var addressComponent: GeocodeAddressComponent
     
     /**
       * 格式化地址
       */
-    var formattedAddress: String = js.native
+    var formattedAddress: String
     
     /**
       * 给定地址匹配级别
       */
-    var level: String = js.native
+    var level: String
     
     /**
       * 坐标
       */
-    var location: LngLat = js.native
+    var location: LngLat
   }
   object Geocode {
     
@@ -319,63 +315,62 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait GeocodeAddressComponent extends StObject {
     
     /**
       * 楼/大厦
       */
-    var building: String = js.native
+    var building: String
     
     /**
       * 楼类型
       */
-    var buildingType: String = js.native
+    var buildingType: String
     
     /**
       * 城市
       */
-    var city: String = js.native
+    var city: String
     
     /**
       * 城市编码
       */
-    var citycode: String = js.native
+    var citycode: String
     
     /**
       * 区
       */
-    var district: String = js.native
+    var district: String
     
     /**
       * 社区
       */
-    var neighborhood: String = js.native
+    var neighborhood: String
     
     /**
       * 社区类型
       */
-    var neighborhoodType: String = js.native
+    var neighborhoodType: String
     
     /**
       * 省
       */
-    var province: String = js.native
+    var province: String
     
     /**
       * 街道
       */
-    var street: String = js.native
+    var street: String
     
     /**
       * 门牌号
       */
-    var streetNumber: String = js.native
+    var streetNumber: String
     
     /**
       * 乡镇
       */
-    var township: String = js.native
+    var township: String
   }
   object GeocodeAddressComponent {
     
@@ -435,23 +430,22 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait GeocodeResult extends StObject {
     
     /**
       * 地理编码结果
       */
-    var geocodes: js.Array[Geocode] = js.native
+    var geocodes: js.Array[Geocode]
     
     /**
       * 状态说明
       */
-    var info: String = js.native
+    var info: String
     
     /**
       * 地理编码结果数目
       */
-    var resultNum: String = js.native
+    var resultNum: String
   }
   object GeocodeResult {
     
@@ -478,33 +472,32 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * 是否批量查询
       */
-    var batch: js.UndefOr[Boolean] = js.native
+    var batch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 城市
       */
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
     /**
       * 是否返回详细信息
       */
-    var extensions: js.UndefOr[base | all] = js.native
+    var extensions: js.UndefOr[base | all] = js.undefined
     
     /**
       * 语言类型
       */
-    var lang: js.UndefOr[Lang] = js.native
+    var lang: js.UndefOr[Lang] = js.undefined
     
     /**
       * 中心点
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -549,35 +542,34 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait ReGeocode extends StObject {
     
     /**
       * 地址组成元素
       */
-    var addressComponent: ReGeocodeAddressComponent = js.native
+    var addressComponent: ReGeocodeAddressComponent
     
-    var aois: js.UndefOr[js.Array[ReGeocodeAoi]] = js.native
+    var aois: js.UndefOr[js.Array[ReGeocodeAoi]] = js.undefined
     
     /**
       * 道路路口列表
       */
-    var crosses: js.Array[Cross] = js.native
+    var crosses: js.Array[Cross]
     
     /**
       * 格式化地址
       */
-    var formattedAddress: String = js.native
+    var formattedAddress: String
     
     /**
       * 兴趣点列表
       */
-    var pois: js.Array[ReGeocodePoi] = js.native
+    var pois: js.Array[ReGeocodePoi]
     
     /**
       * 道路信息列表
       */
-    var roads: js.Array[Road] = js.native
+    var roads: js.Array[Road]
   }
   object ReGeocode {
     
@@ -631,73 +623,72 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait ReGeocodeAddressComponent extends StObject {
     
     /**
       * 区域编码
       */
-    var adcode: String = js.native
+    var adcode: String
     
     /**
       * 楼/大厦
       */
-    var building: String = js.native
+    var building: String
     
     /**
       * 楼类型
       */
-    var buildingType: String = js.native
+    var buildingType: String
     
     /**
       * 所属商圈信息
       */
-    var businessAreas: js.Array[BuildingArea] = js.native
+    var businessAreas: js.Array[BuildingArea]
     
     /**
       * 城市
       */
-    var city: String = js.native
+    var city: String
     
     /**
       * 城市编码
       */
-    var citycode: String = js.native
+    var citycode: String
     
     /**
       * 区
       */
-    var district: String = js.native
+    var district: String
     
     /**
       * 社区类型
       */
-    var neighborhood: String = js.native
+    var neighborhood: String
     
     /**
       * 社区
       */
-    var neighborhoodType: String = js.native
+    var neighborhoodType: String
     
     /**
       * 省
       */
-    var province: String = js.native
+    var province: String
     
     /**
       * 街道
       */
-    var street: String = js.native
+    var street: String
     
     /**
       * 门牌号
       */
-    var streetNumber: String = js.native
+    var streetNumber: String
     
     /**
       * 乡镇
       */
-    var township: String = js.native
+    var township: String
   }
   object ReGeocodeAddressComponent {
     
@@ -768,20 +759,19 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait ReGeocodeAoi extends StObject {
     
-    var adcode: String = js.native
+    var adcode: String
     
-    var area: String = js.native
+    var area: String
     
-    var id: String = js.native
+    var id: String
     
-    var location: LngLat = js.native
+    var location: LngLat
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ReGeocodeAoi {
     
@@ -815,53 +805,52 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait ReGeocodePoi extends StObject {
     
     /**
       * 址信息
       */
-    var address: String = js.native
+    var address: String
     
     /**
       * 商圈名称
       */
-    var businessArea: String = js.native
+    var businessArea: String
     
     /**
       * 该Poi相对于请求坐标的方向
       */
-    var direction: String = js.native
+    var direction: String
     
     /**
       * 该Poi到请求坐标的距离
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 唯一标识
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * 坐标
       */
-    var location: LngLat = js.native
+    var location: LngLat
     
     /**
       * 名称
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * 电话
       */
-    var tel: String = js.native
+    var tel: String
     
     /**
       * 类型
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object ReGeocodePoi {
     
@@ -914,18 +903,17 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait ReGeocodeResult extends StObject {
     
     /**
       * 状态说明
       */
-    var info: String = js.native
+    var info: String
     
     /**
       * 逆地理编码结果
       */
-    var regeocode: ReGeocode = js.native
+    var regeocode: ReGeocode
   }
   object ReGeocodeResult {
     
@@ -946,33 +934,32 @@ object Geocoder {
     }
   }
   
-  @js.native
   trait Road extends StObject {
     
     /**
       * 与查询点的相对方位
       */
-    var direction: String = js.native
+    var direction: String
     
     /**
       * 道路离查询点最近距离
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 唯一标识
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * 道路上离查询点最近的点坐标
       */
-    var location: LngLat = js.native
+    var location: LngLat
     
     /**
       * 名称
       */
-    var name: String = js.native
+    var name: String
   }
   object Road {
     

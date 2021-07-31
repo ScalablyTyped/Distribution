@@ -8,23 +8,21 @@ import typings.gestalt.gestaltStrings.xl
 import typings.gestalt.gestaltStrings.xs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvatarProps extends StObject {
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var outline: js.UndefOr[Boolean] = js.native
+  var outline: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[xs | sm | md | lg | xl | fit] = js.native
+  var size: js.UndefOr[xs | sm | md | lg | xl | fit] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var verified: js.UndefOr[Boolean] = js.native
+  var verified: js.UndefOr[Boolean] = js.undefined
 }
 object AvatarProps {
   

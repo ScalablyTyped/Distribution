@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGatewayGroupRequest extends StObject {
   
   /**
     * The updated description of the gateway group.
     */
-  var Description: js.UndefOr[GatewayGroupDescription] = js.native
+  var Description: js.UndefOr[GatewayGroupDescription] = js.undefined
   
   /**
     * The ARN of the gateway group to update.
     */
-  var GatewayGroupArn: Arn = js.native
+  var GatewayGroupArn: Arn
   
   /**
     * The updated name of the gateway group.
     */
-  var Name: js.UndefOr[GatewayGroupName] = js.native
+  var Name: js.UndefOr[GatewayGroupName] = js.undefined
 }
 object UpdateGatewayGroupRequest {
   

@@ -2,13 +2,11 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database flags for Cloud SQL instances.
   */
-@js.native
 trait SchemaDatabaseFlags extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaDatabaseFlags extends StObject {
     * be specified with underscores, not hyphens. For more information, see
     * Configuring Database Flags in the Cloud SQL documentation.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the flag. Booleans should be set to on for true and off for
     * false. This field must be omitted if the flag doesn&#39;t take a value.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaDatabaseFlags {
   

@@ -2,19 +2,17 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Thickness extends StObject {
   
-  var color: js.UndefOr[String | Transform] = js.native
+  var color: js.UndefOr[String | Transform] = js.undefined
   
-  var thickness: js.UndefOr[String | Transform] = js.native
+  var thickness: js.UndefOr[String | Transform] = js.undefined
   
-  var x: js.UndefOr[String] = js.native
+  var x: js.UndefOr[String] = js.undefined
   
-  var y: js.UndefOr[String] = js.native
+  var y: js.UndefOr[String] = js.undefined
 }
 object Thickness {
   

@@ -8,577 +8,575 @@ import typings.storybookComponents.inputMod.Sizes
 import typings.storybookComponents.inputMod.ValidationStates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.PropsWithChildren<std.Pick</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_react-textarea-autosize.TextareaAutosizeProps * / any, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'wrap' | 'autoComplete' | 'cols' | 'maxLength' | 'minLength' | 'readOnly' | 'required' | 'rows' | 'dirName' | 'maxRows' | 'minRows' | 'onHeightChange' | 'cacheMeasurements'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps & react.react.RefAttributes<any> & @emotion/styled-base.@emotion/styled-base/types/helper.Omit<std.Pick</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_react-textarea-autosize.TextareaAutosizeProps * / any, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'wrap' | 'autoComplete' | 'cols' | 'maxLength' | 'minLength' | 'readOnly' | 'required' | 'rows' | 'dirName' | 'maxRows' | 'minRows' | 'onHeightChange' | 'cacheMeasurements'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, 'theme'> & @emotion/styled-base.anon.0<@storybook/theming.@storybook/theming.Theme>> */
-@js.native
 trait PropsWithChildrenPickanyc extends StObject {
   
-  var about: js.UndefOr[js.Any] = js.native
+  var about: js.UndefOr[js.Any] = js.undefined
   
-  var accessKey: js.UndefOr[js.Any] = js.native
+  var accessKey: js.UndefOr[js.Any] = js.undefined
   
-  var align: js.UndefOr[Alignments] = js.native
+  var align: js.UndefOr[Alignments] = js.undefined
   
-  var `aria-activedescendant`: js.UndefOr[js.Any] = js.native
+  var `aria-activedescendant`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[js.Any] = js.native
+  var `aria-atomic`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[js.Any] = js.native
+  var `aria-autocomplete`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-busy`: js.UndefOr[js.Any] = js.native
+  var `aria-busy`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-checked`: js.UndefOr[js.Any] = js.native
+  var `aria-checked`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-colcount`: js.UndefOr[js.Any] = js.native
+  var `aria-colcount`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-colindex`: js.UndefOr[js.Any] = js.native
+  var `aria-colindex`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-colspan`: js.UndefOr[js.Any] = js.native
+  var `aria-colspan`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-controls`: js.UndefOr[js.Any] = js.native
+  var `aria-controls`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-current`: js.UndefOr[js.Any] = js.native
+  var `aria-current`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-describedby`: js.UndefOr[js.Any] = js.native
+  var `aria-describedby`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-details`: js.UndefOr[js.Any] = js.native
+  var `aria-details`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[js.Any] = js.native
+  var `aria-disabled`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[js.Any] = js.native
+  var `aria-dropeffect`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-errormessage`: js.UndefOr[js.Any] = js.native
+  var `aria-errormessage`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[js.Any] = js.native
+  var `aria-expanded`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-flowto`: js.UndefOr[js.Any] = js.native
+  var `aria-flowto`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[js.Any] = js.native
+  var `aria-grabbed`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[js.Any] = js.native
+  var `aria-haspopup`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[js.Any] = js.native
+  var `aria-hidden`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-invalid`: js.UndefOr[js.Any] = js.native
+  var `aria-invalid`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-keyshortcuts`: js.UndefOr[js.Any] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-label`: js.UndefOr[js.Any] = js.native
+  var `aria-label`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-labelledby`: js.UndefOr[js.Any] = js.native
+  var `aria-labelledby`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-level`: js.UndefOr[js.Any] = js.native
+  var `aria-level`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-live`: js.UndefOr[js.Any] = js.native
+  var `aria-live`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-modal`: js.UndefOr[js.Any] = js.native
+  var `aria-modal`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[js.Any] = js.native
+  var `aria-multiline`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[js.Any] = js.native
+  var `aria-multiselectable`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-orientation`: js.UndefOr[js.Any] = js.native
+  var `aria-orientation`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-owns`: js.UndefOr[js.Any] = js.native
+  var `aria-owns`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-placeholder`: js.UndefOr[js.Any] = js.native
+  var `aria-placeholder`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-posinset`: js.UndefOr[js.Any] = js.native
+  var `aria-posinset`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-pressed`: js.UndefOr[js.Any] = js.native
+  var `aria-pressed`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[js.Any] = js.native
+  var `aria-readonly`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-relevant`: js.UndefOr[js.Any] = js.native
+  var `aria-relevant`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-required`: js.UndefOr[js.Any] = js.native
+  var `aria-required`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-roledescription`: js.UndefOr[js.Any] = js.native
+  var `aria-roledescription`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-rowcount`: js.UndefOr[js.Any] = js.native
+  var `aria-rowcount`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-rowindex`: js.UndefOr[js.Any] = js.native
+  var `aria-rowindex`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-rowspan`: js.UndefOr[js.Any] = js.native
+  var `aria-rowspan`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-selected`: js.UndefOr[js.Any] = js.native
+  var `aria-selected`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-setsize`: js.UndefOr[js.Any] = js.native
+  var `aria-setsize`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-sort`: js.UndefOr[js.Any] = js.native
+  var `aria-sort`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-valuemax`: js.UndefOr[js.Any] = js.native
+  var `aria-valuemax`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-valuemin`: js.UndefOr[js.Any] = js.native
+  var `aria-valuemin`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-valuenow`: js.UndefOr[js.Any] = js.native
+  var `aria-valuenow`: js.UndefOr[js.Any] = js.undefined
   
-  var `aria-valuetext`: js.UndefOr[js.Any] = js.native
+  var `aria-valuetext`: js.UndefOr[js.Any] = js.undefined
   
-  var autoCapitalize: js.UndefOr[js.Any] = js.native
+  var autoCapitalize: js.UndefOr[js.Any] = js.undefined
   
-  var autoComplete: js.UndefOr[js.Any] = js.native
+  var autoComplete: js.UndefOr[js.Any] = js.undefined
   
-  var autoCorrect: js.UndefOr[js.Any] = js.native
+  var autoCorrect: js.UndefOr[js.Any] = js.undefined
   
-  var autoFocus: js.UndefOr[js.Any] = js.native
+  var autoFocus: js.UndefOr[js.Any] = js.undefined
   
-  var autoSave: js.UndefOr[js.Any] = js.native
+  var autoSave: js.UndefOr[js.Any] = js.undefined
   
-  var cacheMeasurements: js.UndefOr[js.Any] = js.native
+  var cacheMeasurements: js.UndefOr[js.Any] = js.undefined
   
-  var children: js.UndefOr[js.Any] with js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[js.Any] & js.UndefOr[ReactNode]
   
-  var className: js.UndefOr[js.Any] = js.native
+  var className: js.UndefOr[js.Any] = js.undefined
   
-  var color: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[js.Any] = js.undefined
   
-  var cols: js.UndefOr[js.Any] = js.native
+  var cols: js.UndefOr[js.Any] = js.undefined
   
-  var contentEditable: js.UndefOr[js.Any] = js.native
+  var contentEditable: js.UndefOr[js.Any] = js.undefined
   
-  var contextMenu: js.UndefOr[js.Any] = js.native
+  var contextMenu: js.UndefOr[js.Any] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var dangerouslySetInnerHTML: js.UndefOr[js.Any] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[js.Any] = js.undefined
   
-  var datatype: js.UndefOr[js.Any] = js.native
+  var datatype: js.UndefOr[js.Any] = js.undefined
   
-  var defaultChecked: js.UndefOr[js.Any] = js.native
+  var defaultChecked: js.UndefOr[js.Any] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var dir: js.UndefOr[js.Any] = js.native
+  var dir: js.UndefOr[js.Any] = js.undefined
   
-  var dirName: js.UndefOr[js.Any] = js.native
+  var dirName: js.UndefOr[js.Any] = js.undefined
   
-  var disabled: js.UndefOr[js.Any] = js.native
+  var disabled: js.UndefOr[js.Any] = js.undefined
   
-  var draggable: js.UndefOr[js.Any] = js.native
+  var draggable: js.UndefOr[js.Any] = js.undefined
   
-  var form: js.UndefOr[js.Any] = js.native
+  var form: js.UndefOr[js.Any] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[js.Any] = js.native
+  var hidden: js.UndefOr[js.Any] = js.undefined
   
-  var id: js.UndefOr[js.Any] = js.native
+  var id: js.UndefOr[js.Any] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.native
+  var inlist: js.UndefOr[js.Any] = js.undefined
   
-  var inputMode: js.UndefOr[js.Any] = js.native
+  var inputMode: js.UndefOr[js.Any] = js.undefined
   
-  var is: js.UndefOr[js.Any] = js.native
+  var is: js.UndefOr[js.Any] = js.undefined
   
-  var itemID: js.UndefOr[js.Any] = js.native
+  var itemID: js.UndefOr[js.Any] = js.undefined
   
-  var itemProp: js.UndefOr[js.Any] = js.native
+  var itemProp: js.UndefOr[js.Any] = js.undefined
   
-  var itemRef: js.UndefOr[js.Any] = js.native
+  var itemRef: js.UndefOr[js.Any] = js.undefined
   
-  var itemScope: js.UndefOr[js.Any] = js.native
+  var itemScope: js.UndefOr[js.Any] = js.undefined
   
-  var itemType: js.UndefOr[js.Any] = js.native
+  var itemType: js.UndefOr[js.Any] = js.undefined
   
-  var key: js.UndefOr[Key | Null] = js.native
+  var key: js.UndefOr[Key | Null] = js.undefined
   
-  var lang: js.UndefOr[js.Any] = js.native
+  var lang: js.UndefOr[js.Any] = js.undefined
   
-  var maxLength: js.UndefOr[js.Any] = js.native
+  var maxLength: js.UndefOr[js.Any] = js.undefined
   
-  var maxRows: js.UndefOr[js.Any] = js.native
+  var maxRows: js.UndefOr[js.Any] = js.undefined
   
-  var minLength: js.UndefOr[js.Any] = js.native
+  var minLength: js.UndefOr[js.Any] = js.undefined
   
-  var minRows: js.UndefOr[js.Any] = js.native
+  var minRows: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[js.Any] = js.native
+  var name: js.UndefOr[js.Any] = js.undefined
   
-  var onAbort: js.UndefOr[js.Any] = js.native
+  var onAbort: js.UndefOr[js.Any] = js.undefined
   
-  var onAbortCapture: js.UndefOr[js.Any] = js.native
+  var onAbortCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationEnd: js.UndefOr[js.Any] = js.native
+  var onAnimationEnd: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationEndCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationIteration: js.UndefOr[js.Any] = js.native
+  var onAnimationIteration: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationIterationCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationIterationCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationStart: js.UndefOr[js.Any] = js.native
+  var onAnimationStart: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationStartCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAuxClick: js.UndefOr[js.Any] = js.native
+  var onAuxClick: js.UndefOr[js.Any] = js.undefined
   
-  var onAuxClickCapture: js.UndefOr[js.Any] = js.native
+  var onAuxClickCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onBeforeInput: js.UndefOr[js.Any] = js.native
+  var onBeforeInput: js.UndefOr[js.Any] = js.undefined
   
-  var onBeforeInputCapture: js.UndefOr[js.Any] = js.native
+  var onBeforeInputCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onBlur: js.UndefOr[js.Any] = js.native
+  var onBlur: js.UndefOr[js.Any] = js.undefined
   
-  var onBlurCapture: js.UndefOr[js.Any] = js.native
+  var onBlurCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCanPlay: js.UndefOr[js.Any] = js.native
+  var onCanPlay: js.UndefOr[js.Any] = js.undefined
   
-  var onCanPlayCapture: js.UndefOr[js.Any] = js.native
+  var onCanPlayCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCanPlayThrough: js.UndefOr[js.Any] = js.native
+  var onCanPlayThrough: js.UndefOr[js.Any] = js.undefined
   
-  var onCanPlayThroughCapture: js.UndefOr[js.Any] = js.native
+  var onCanPlayThroughCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onChange: js.UndefOr[js.Any] = js.native
+  var onChange: js.UndefOr[js.Any] = js.undefined
   
-  var onChangeCapture: js.UndefOr[js.Any] = js.native
+  var onChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onClick: js.UndefOr[js.Any] = js.native
+  var onClick: js.UndefOr[js.Any] = js.undefined
   
-  var onClickCapture: js.UndefOr[js.Any] = js.native
+  var onClickCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionEnd: js.UndefOr[js.Any] = js.native
+  var onCompositionEnd: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionEndCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionStart: js.UndefOr[js.Any] = js.native
+  var onCompositionStart: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionStartCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionUpdate: js.UndefOr[js.Any] = js.native
+  var onCompositionUpdate: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionUpdateCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionUpdateCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onContextMenu: js.UndefOr[js.Any] = js.native
+  var onContextMenu: js.UndefOr[js.Any] = js.undefined
   
-  var onContextMenuCapture: js.UndefOr[js.Any] = js.native
+  var onContextMenuCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCopy: js.UndefOr[js.Any] = js.native
+  var onCopy: js.UndefOr[js.Any] = js.undefined
   
-  var onCopyCapture: js.UndefOr[js.Any] = js.native
+  var onCopyCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCut: js.UndefOr[js.Any] = js.native
+  var onCut: js.UndefOr[js.Any] = js.undefined
   
-  var onCutCapture: js.UndefOr[js.Any] = js.native
+  var onCutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDoubleClick: js.UndefOr[js.Any] = js.native
+  var onDoubleClick: js.UndefOr[js.Any] = js.undefined
   
-  var onDoubleClickCapture: js.UndefOr[js.Any] = js.native
+  var onDoubleClickCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDrag: js.UndefOr[js.Any] = js.native
+  var onDrag: js.UndefOr[js.Any] = js.undefined
   
-  var onDragCapture: js.UndefOr[js.Any] = js.native
+  var onDragCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragEnd: js.UndefOr[js.Any] = js.native
+  var onDragEnd: js.UndefOr[js.Any] = js.undefined
   
-  var onDragEndCapture: js.UndefOr[js.Any] = js.native
+  var onDragEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragEnter: js.UndefOr[js.Any] = js.native
+  var onDragEnter: js.UndefOr[js.Any] = js.undefined
   
-  var onDragEnterCapture: js.UndefOr[js.Any] = js.native
+  var onDragEnterCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragExit: js.UndefOr[js.Any] = js.native
+  var onDragExit: js.UndefOr[js.Any] = js.undefined
   
-  var onDragExitCapture: js.UndefOr[js.Any] = js.native
+  var onDragExitCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragLeave: js.UndefOr[js.Any] = js.native
+  var onDragLeave: js.UndefOr[js.Any] = js.undefined
   
-  var onDragLeaveCapture: js.UndefOr[js.Any] = js.native
+  var onDragLeaveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragOver: js.UndefOr[js.Any] = js.native
+  var onDragOver: js.UndefOr[js.Any] = js.undefined
   
-  var onDragOverCapture: js.UndefOr[js.Any] = js.native
+  var onDragOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragStart: js.UndefOr[js.Any] = js.native
+  var onDragStart: js.UndefOr[js.Any] = js.undefined
   
-  var onDragStartCapture: js.UndefOr[js.Any] = js.native
+  var onDragStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDrop: js.UndefOr[js.Any] = js.native
+  var onDrop: js.UndefOr[js.Any] = js.undefined
   
-  var onDropCapture: js.UndefOr[js.Any] = js.native
+  var onDropCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDurationChange: js.UndefOr[js.Any] = js.native
+  var onDurationChange: js.UndefOr[js.Any] = js.undefined
   
-  var onDurationChangeCapture: js.UndefOr[js.Any] = js.native
+  var onDurationChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEmptied: js.UndefOr[js.Any] = js.native
+  var onEmptied: js.UndefOr[js.Any] = js.undefined
   
-  var onEmptiedCapture: js.UndefOr[js.Any] = js.native
+  var onEmptiedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEncrypted: js.UndefOr[js.Any] = js.native
+  var onEncrypted: js.UndefOr[js.Any] = js.undefined
   
-  var onEncryptedCapture: js.UndefOr[js.Any] = js.native
+  var onEncryptedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEnded: js.UndefOr[js.Any] = js.native
+  var onEnded: js.UndefOr[js.Any] = js.undefined
   
-  var onEndedCapture: js.UndefOr[js.Any] = js.native
+  var onEndedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onError: js.UndefOr[js.Any] = js.native
+  var onError: js.UndefOr[js.Any] = js.undefined
   
-  var onErrorCapture: js.UndefOr[js.Any] = js.native
+  var onErrorCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onFocus: js.UndefOr[js.Any] = js.native
+  var onFocus: js.UndefOr[js.Any] = js.undefined
   
-  var onFocusCapture: js.UndefOr[js.Any] = js.native
+  var onFocusCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onGotPointerCapture: js.UndefOr[js.Any] = js.native
+  var onGotPointerCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onGotPointerCaptureCapture: js.UndefOr[js.Any] = js.native
+  var onGotPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onHeightChange: js.UndefOr[js.Any] = js.native
+  var onHeightChange: js.UndefOr[js.Any] = js.undefined
   
-  var onInput: js.UndefOr[js.Any] = js.native
+  var onInput: js.UndefOr[js.Any] = js.undefined
   
-  var onInputCapture: js.UndefOr[js.Any] = js.native
+  var onInputCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onInvalid: js.UndefOr[js.Any] = js.native
+  var onInvalid: js.UndefOr[js.Any] = js.undefined
   
-  var onInvalidCapture: js.UndefOr[js.Any] = js.native
+  var onInvalidCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyDown: js.UndefOr[js.Any] = js.native
+  var onKeyDown: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyDownCapture: js.UndefOr[js.Any] = js.native
+  var onKeyDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyPress: js.UndefOr[js.Any] = js.native
+  var onKeyPress: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyPressCapture: js.UndefOr[js.Any] = js.native
+  var onKeyPressCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyUp: js.UndefOr[js.Any] = js.native
+  var onKeyUp: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyUpCapture: js.UndefOr[js.Any] = js.native
+  var onKeyUpCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoad: js.UndefOr[js.Any] = js.native
+  var onLoad: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadCapture: js.UndefOr[js.Any] = js.native
+  var onLoadCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadStart: js.UndefOr[js.Any] = js.native
+  var onLoadStart: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadStartCapture: js.UndefOr[js.Any] = js.native
+  var onLoadStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadedData: js.UndefOr[js.Any] = js.native
+  var onLoadedData: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadedDataCapture: js.UndefOr[js.Any] = js.native
+  var onLoadedDataCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadedMetadata: js.UndefOr[js.Any] = js.native
+  var onLoadedMetadata: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadedMetadataCapture: js.UndefOr[js.Any] = js.native
+  var onLoadedMetadataCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLostPointerCapture: js.UndefOr[js.Any] = js.native
+  var onLostPointerCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLostPointerCaptureCapture: js.UndefOr[js.Any] = js.native
+  var onLostPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseDown: js.UndefOr[js.Any] = js.native
+  var onMouseDown: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseDownCapture: js.UndefOr[js.Any] = js.native
+  var onMouseDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseEnter: js.UndefOr[js.Any] = js.native
+  var onMouseEnter: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseLeave: js.UndefOr[js.Any] = js.native
+  var onMouseLeave: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseMove: js.UndefOr[js.Any] = js.native
+  var onMouseMove: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseMoveCapture: js.UndefOr[js.Any] = js.native
+  var onMouseMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseOut: js.UndefOr[js.Any] = js.native
+  var onMouseOut: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseOutCapture: js.UndefOr[js.Any] = js.native
+  var onMouseOutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseOver: js.UndefOr[js.Any] = js.native
+  var onMouseOver: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseOverCapture: js.UndefOr[js.Any] = js.native
+  var onMouseOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseUp: js.UndefOr[js.Any] = js.native
+  var onMouseUp: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseUpCapture: js.UndefOr[js.Any] = js.native
+  var onMouseUpCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPaste: js.UndefOr[js.Any] = js.native
+  var onPaste: js.UndefOr[js.Any] = js.undefined
   
-  var onPasteCapture: js.UndefOr[js.Any] = js.native
+  var onPasteCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPause: js.UndefOr[js.Any] = js.native
+  var onPause: js.UndefOr[js.Any] = js.undefined
   
-  var onPauseCapture: js.UndefOr[js.Any] = js.native
+  var onPauseCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPlay: js.UndefOr[js.Any] = js.native
+  var onPlay: js.UndefOr[js.Any] = js.undefined
   
-  var onPlayCapture: js.UndefOr[js.Any] = js.native
+  var onPlayCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPlaying: js.UndefOr[js.Any] = js.native
+  var onPlaying: js.UndefOr[js.Any] = js.undefined
   
-  var onPlayingCapture: js.UndefOr[js.Any] = js.native
+  var onPlayingCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerCancel: js.UndefOr[js.Any] = js.native
+  var onPointerCancel: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerCancelCapture: js.UndefOr[js.Any] = js.native
+  var onPointerCancelCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerDown: js.UndefOr[js.Any] = js.native
+  var onPointerDown: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerDownCapture: js.UndefOr[js.Any] = js.native
+  var onPointerDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerEnter: js.UndefOr[js.Any] = js.native
+  var onPointerEnter: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerEnterCapture: js.UndefOr[js.Any] = js.native
+  var onPointerEnterCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerLeave: js.UndefOr[js.Any] = js.native
+  var onPointerLeave: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerLeaveCapture: js.UndefOr[js.Any] = js.native
+  var onPointerLeaveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerMove: js.UndefOr[js.Any] = js.native
+  var onPointerMove: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerMoveCapture: js.UndefOr[js.Any] = js.native
+  var onPointerMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerOut: js.UndefOr[js.Any] = js.native
+  var onPointerOut: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerOutCapture: js.UndefOr[js.Any] = js.native
+  var onPointerOutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerOver: js.UndefOr[js.Any] = js.native
+  var onPointerOver: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerOverCapture: js.UndefOr[js.Any] = js.native
+  var onPointerOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerUp: js.UndefOr[js.Any] = js.native
+  var onPointerUp: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerUpCapture: js.UndefOr[js.Any] = js.native
+  var onPointerUpCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onProgress: js.UndefOr[js.Any] = js.native
+  var onProgress: js.UndefOr[js.Any] = js.undefined
   
-  var onProgressCapture: js.UndefOr[js.Any] = js.native
+  var onProgressCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onRateChange: js.UndefOr[js.Any] = js.native
+  var onRateChange: js.UndefOr[js.Any] = js.undefined
   
-  var onRateChangeCapture: js.UndefOr[js.Any] = js.native
+  var onRateChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onReset: js.UndefOr[js.Any] = js.native
+  var onReset: js.UndefOr[js.Any] = js.undefined
   
-  var onResetCapture: js.UndefOr[js.Any] = js.native
+  var onResetCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onScroll: js.UndefOr[js.Any] = js.native
+  var onScroll: js.UndefOr[js.Any] = js.undefined
   
-  var onScrollCapture: js.UndefOr[js.Any] = js.native
+  var onScrollCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSeeked: js.UndefOr[js.Any] = js.native
+  var onSeeked: js.UndefOr[js.Any] = js.undefined
   
-  var onSeekedCapture: js.UndefOr[js.Any] = js.native
+  var onSeekedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSeeking: js.UndefOr[js.Any] = js.native
+  var onSeeking: js.UndefOr[js.Any] = js.undefined
   
-  var onSeekingCapture: js.UndefOr[js.Any] = js.native
+  var onSeekingCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSelect: js.UndefOr[js.Any] = js.native
+  var onSelect: js.UndefOr[js.Any] = js.undefined
   
-  var onSelectCapture: js.UndefOr[js.Any] = js.native
+  var onSelectCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onStalled: js.UndefOr[js.Any] = js.native
+  var onStalled: js.UndefOr[js.Any] = js.undefined
   
-  var onStalledCapture: js.UndefOr[js.Any] = js.native
+  var onStalledCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSubmit: js.UndefOr[js.Any] = js.native
+  var onSubmit: js.UndefOr[js.Any] = js.undefined
   
-  var onSubmitCapture: js.UndefOr[js.Any] = js.native
+  var onSubmitCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSuspend: js.UndefOr[js.Any] = js.native
+  var onSuspend: js.UndefOr[js.Any] = js.undefined
   
-  var onSuspendCapture: js.UndefOr[js.Any] = js.native
+  var onSuspendCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTimeUpdate: js.UndefOr[js.Any] = js.native
+  var onTimeUpdate: js.UndefOr[js.Any] = js.undefined
   
-  var onTimeUpdateCapture: js.UndefOr[js.Any] = js.native
+  var onTimeUpdateCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchCancel: js.UndefOr[js.Any] = js.native
+  var onTouchCancel: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchCancelCapture: js.UndefOr[js.Any] = js.native
+  var onTouchCancelCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchEnd: js.UndefOr[js.Any] = js.native
+  var onTouchEnd: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchEndCapture: js.UndefOr[js.Any] = js.native
+  var onTouchEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchMove: js.UndefOr[js.Any] = js.native
+  var onTouchMove: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchMoveCapture: js.UndefOr[js.Any] = js.native
+  var onTouchMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchStart: js.UndefOr[js.Any] = js.native
+  var onTouchStart: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchStartCapture: js.UndefOr[js.Any] = js.native
+  var onTouchStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTransitionEnd: js.UndefOr[js.Any] = js.native
+  var onTransitionEnd: js.UndefOr[js.Any] = js.undefined
   
-  var onTransitionEndCapture: js.UndefOr[js.Any] = js.native
+  var onTransitionEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onVolumeChange: js.UndefOr[js.Any] = js.native
+  var onVolumeChange: js.UndefOr[js.Any] = js.undefined
   
-  var onVolumeChangeCapture: js.UndefOr[js.Any] = js.native
+  var onVolumeChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onWaiting: js.UndefOr[js.Any] = js.native
+  var onWaiting: js.UndefOr[js.Any] = js.undefined
   
-  var onWaitingCapture: js.UndefOr[js.Any] = js.native
+  var onWaitingCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onWheel: js.UndefOr[js.Any] = js.native
+  var onWheel: js.UndefOr[js.Any] = js.undefined
   
-  var onWheelCapture: js.UndefOr[js.Any] = js.native
+  var onWheelCapture: js.UndefOr[js.Any] = js.undefined
   
-  var placeholder: js.UndefOr[js.Any] = js.native
+  var placeholder: js.UndefOr[js.Any] = js.undefined
   
-  var prefix: js.UndefOr[js.Any] = js.native
+  var prefix: js.UndefOr[js.Any] = js.undefined
   
-  var property: js.UndefOr[js.Any] = js.native
+  var property: js.UndefOr[js.Any] = js.undefined
   
-  var radioGroup: js.UndefOr[js.Any] = js.native
+  var radioGroup: js.UndefOr[js.Any] = js.undefined
   
-  var readOnly: js.UndefOr[js.Any] = js.native
+  var readOnly: js.UndefOr[js.Any] = js.undefined
   
-  var ref: js.UndefOr[Ref[_]] = js.native
+  var ref: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var required: js.UndefOr[js.Any] = js.native
+  var required: js.UndefOr[js.Any] = js.undefined
   
-  var resource: js.UndefOr[js.Any] = js.native
+  var resource: js.UndefOr[js.Any] = js.undefined
   
-  var results: js.UndefOr[js.Any] = js.native
+  var results: js.UndefOr[js.Any] = js.undefined
   
-  var role: js.UndefOr[js.Any] = js.native
+  var role: js.UndefOr[js.Any] = js.undefined
   
-  var rows: js.UndefOr[js.Any] = js.native
+  var rows: js.UndefOr[js.Any] = js.undefined
   
-  var security: js.UndefOr[js.Any] = js.native
+  var security: js.UndefOr[js.Any] = js.undefined
   
-  var size: js.UndefOr[Sizes] = js.native
+  var size: js.UndefOr[Sizes] = js.undefined
   
-  var slot: js.UndefOr[js.Any] = js.native
+  var slot: js.UndefOr[js.Any] = js.undefined
   
-  var spellCheck: js.UndefOr[js.Any] = js.native
+  var spellCheck: js.UndefOr[js.Any] = js.undefined
   
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
   
-  var suppressContentEditableWarning: js.UndefOr[js.Any] = js.native
+  var suppressContentEditableWarning: js.UndefOr[js.Any] = js.undefined
   
-  var suppressHydrationWarning: js.UndefOr[js.Any] = js.native
+  var suppressHydrationWarning: js.UndefOr[js.Any] = js.undefined
   
-  var tabIndex: js.UndefOr[js.Any] = js.native
+  var tabIndex: js.UndefOr[js.Any] = js.undefined
   
-  var theme: js.UndefOr[typings.storybookTheming.typesMod.Theme] = js.native
+  var theme: js.UndefOr[typings.storybookTheming.typesMod.Theme] = js.undefined
   
-  var title: js.UndefOr[js.Any] = js.native
+  var title: js.UndefOr[js.Any] = js.undefined
   
-  var translate: js.UndefOr[js.Any] = js.native
+  var translate: js.UndefOr[js.Any] = js.undefined
   
-  var typeof: js.UndefOr[js.Any] = js.native
+  var typeof: js.UndefOr[js.Any] = js.undefined
   
-  var unselectable: js.UndefOr[js.Any] = js.native
+  var unselectable: js.UndefOr[js.Any] = js.undefined
   
-  var valid: js.UndefOr[ValidationStates] = js.native
+  var valid: js.UndefOr[ValidationStates] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
   
-  var vocab: js.UndefOr[js.Any] = js.native
+  var vocab: js.UndefOr[js.Any] = js.undefined
   
-  var wrap: js.UndefOr[js.Any] = js.native
+  var wrap: js.UndefOr[js.Any] = js.undefined
 }
 object PropsWithChildrenPickanyc {
   
   @scala.inline
-  def apply(children: js.UndefOr[js.Any] with js.UndefOr[ReactNode]): PropsWithChildrenPickanyc = {
+  def apply(children: js.UndefOr[js.Any] & js.UndefOr[ReactNode]): PropsWithChildrenPickanyc = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropsWithChildrenPickanyc]
   }
@@ -929,7 +927,7 @@ object PropsWithChildrenPickanyc {
     def setCacheMeasurementsUndefined: Self = StObject.set(x, "cacheMeasurements", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.UndefOr[js.Any] with js.UndefOr[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    def setChildren(value: js.UndefOr[js.Any] & js.UndefOr[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setClassName(value: js.Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -2129,10 +2127,10 @@ object PropsWithChildrenPickanyc {
     def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)

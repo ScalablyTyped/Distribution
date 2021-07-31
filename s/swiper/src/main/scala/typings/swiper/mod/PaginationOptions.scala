@@ -6,100 +6,98 @@ import typings.swiper.swiperStrings.fraction
 import typings.swiper.swiperStrings.progressbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginationOptions extends StObject {
   
   /**
     * CSS class name of currently active pagination bullet
     */
-  var bulletActiveClass: js.UndefOr[String] = js.native
+  var bulletActiveClass: js.UndefOr[String] = js.undefined
   
   /**
     * CSS class name of single pagination bullet
     */
-  var bulletClass: js.UndefOr[String] = js.native
+  var bulletClass: js.UndefOr[String] = js.undefined
   
   /**
     * Defines which HTML tag will be use to represent single pagination bullet. Only for bullets pagination type.
     */
-  var bulletElement: js.UndefOr[String] = js.native
+  var bulletElement: js.UndefOr[String] = js.undefined
   
   /**
     * If true then clicking on pagination button will cause transition to appropriate slide. Only for bullets pagination type
     */
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * CSS class name set to pagination when it is clickable
     */
-  var clickableClass: js.UndefOr[String] = js.native
+  var clickableClass: js.UndefOr[String] = js.undefined
   
   /**
     * CSS class name of the element with currently active index in "fraction" pagination
     */
-  var currentClass: js.UndefOr[String] = js.native
+  var currentClass: js.UndefOr[String] = js.undefined
   
   /**
     * Good to enable if you use bullets pagination with a lot of slides. So it will keep only few bullets visible at the same time.
     */
-  var dynamicBullets: js.UndefOr[Boolean] = js.native
+  var dynamicBullets: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of main bullets visible when dynamicBullets enabled.
     */
-  var dynamicMainBullets: js.UndefOr[Double] = js.native
+  var dynamicMainBullets: js.UndefOr[Double] = js.undefined
   
   /**
     * String with CSS selector or HTML element of the container with pagination
     */
-  var el: SelectableElement = js.native
+  var el: SelectableElement
   
   /**
     * format fraction pagination current number. Function receives current number,
     * and you need to return formatted value
     */
-  var formatFractionCurrent: js.UndefOr[js.Function1[/* number */ Double, Double]] = js.native
+  var formatFractionCurrent: js.UndefOr[js.Function1[/* number */ Double, Double]] = js.undefined
   
   /**
     * format fraction pagination total number. Function receives total number, and you
     * need to return formatted value
     */
-  var formatFractionTotal: js.UndefOr[js.Function1[/* number */ Double, Double]] = js.native
+  var formatFractionTotal: js.UndefOr[js.Function1[/* number */ Double, Double]] = js.undefined
   
   /**
     * CSS class name of pagination when it becomes inactive
     */
-  var hiddenClass: js.UndefOr[String] = js.native
+  var hiddenClass: js.UndefOr[String] = js.undefined
   
   /**
     * Toggle (hide/true) pagination container visibility after click on Slider's container
     */
-  var hideOnClick: js.UndefOr[Boolean] = js.native
+  var hideOnClick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The beginning of the modifier CSS class name that will be added to pagination depending on parameters
     */
-  var modifierClass: js.UndefOr[String] = js.native
+  var modifierClass: js.UndefOr[String] = js.undefined
   
   /**
     * CSS class name of pagination progressbar fill element
     */
-  var progressbarFillClass: js.UndefOr[String] = js.native
+  var progressbarFillClass: js.UndefOr[String] = js.undefined
   
   /**
     * Makes pagination progressbar opposite to Swiper's `direction` parameter, means vertical progressbar for horizontal swiper
     * direction and horizontal progressbar for vertical swiper direction
     */
-  var progressbarOpposite: js.UndefOr[Boolean] = js.native
+  var progressbarOpposite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This parameter allows totally customize pagination bullets, you need to pass here a function that accepts index number of
     * pagination bullet and required element class name (className). Only for bullets pagination type
     */
-  var renderBullet: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Unit]] = js.native
+  var renderBullet: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Unit]] = js.undefined
   
   /**
     * This parameter is required for custom pagination type where you have to specify
@@ -115,27 +113,27 @@ trait PaginationOptions extends StObject {
     */
   var renderCustom: js.UndefOr[
     js.Function3[/* swiper */ Swiper, /* current */ Double, /* total */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * This parameter allows to customize "fraction" pagination html. Only for fraction pagination type
     */
-  var renderFraction: js.UndefOr[js.Function2[/* currentClass */ String, /* totalClass */ String, Unit]] = js.native
+  var renderFraction: js.UndefOr[js.Function2[/* currentClass */ String, /* totalClass */ String, Unit]] = js.undefined
   
   /**
     * This parameter allows to customize "progress" pagination. Only for progress pagination type
     */
-  var renderProgressbar: js.UndefOr[js.Function1[/* progressbarFillClass */ String, Unit]] = js.native
+  var renderProgressbar: js.UndefOr[js.Function1[/* progressbarFillClass */ String, Unit]] = js.undefined
   
   /**
     * CSS class name of the element with total number of "snaps" in "fraction" pagination
     */
-  var totalClass: js.UndefOr[String] = js.native
+  var totalClass: js.UndefOr[String] = js.undefined
   
   /**
     * String with type of pagination. Can be "bullets", "fraction", "progressbar" or "custom"
     */
-  var `type`: js.UndefOr[bullets | fraction | progressbar | custom] = js.native
+  var `type`: js.UndefOr[bullets | fraction | progressbar | custom] = js.undefined
 }
 object PaginationOptions {
   

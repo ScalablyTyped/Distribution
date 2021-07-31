@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchMatch extends StObject {
   
   /**
     * Line with match content.
     */
-  var lineContent: String = js.native
+  var lineContent: String
   
   /**
     * Line number in resource content.
     */
-  var lineNumber: Double = js.native
+  var lineNumber: Double
 }
 object SearchMatch {
   

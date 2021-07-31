@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BundlesListResponse extends StObject {
   
   /** All bundles. */
-  var bundles: js.UndefOr[js.Array[Bundle]] = js.native
+  var bundles: js.UndefOr[js.Array[Bundle]] = js.undefined
   
   /** The kind of this response ("androidpublisher#bundlesListResponse"). */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object BundlesListResponse {
   

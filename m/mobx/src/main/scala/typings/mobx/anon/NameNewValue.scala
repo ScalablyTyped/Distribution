@@ -6,19 +6,19 @@ import typings.mobx.observableobjectMod.IObjectWillChange
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NameNewValue[T] extends IObjectWillChange[T] {
+trait NameNewValue[T]
+  extends StObject
+     with IObjectWillChange[T] {
   
-  var name: PropertyKey = js.native
+  var name: PropertyKey
   
-  var newValue: js.Any = js.native
+  var newValue: js.Any
   
-  var `object`: T = js.native
+  var `object`: T
   
-  var `type`: update | add = js.native
+  var `type`: update | add
 }
 object NameNewValue {
   
@@ -31,7 +31,7 @@ object NameNewValue {
   }
   
   @scala.inline
-  implicit class NameNewValueMutableBuilder[Self <: NameNewValue[_], T] (val x: Self with NameNewValue[T]) extends AnyVal {
+  implicit class NameNewValueMutableBuilder[Self <: NameNewValue[?], T] (val x: Self & NameNewValue[T]) extends AnyVal {
     
     @scala.inline
     def setName(value: PropertyKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

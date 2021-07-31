@@ -2,25 +2,23 @@ package typings.nodeRedEditorClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewTools extends StObject {
   
   /**
     * Aligns all selected nodes to the current grid
     */
-  def alignSelectionToGrid(): Unit = js.native
+  def alignSelectionToGrid(): Unit
   
-  def init(): Unit = js.native
+  def init(): Unit
   
   /**
     * Moves all of the selected nodes by the specified amount
     * @param dx
     * @param dy
     */
-  def moveSelection(dx: Double, dy: Double): Unit = js.native
+  def moveSelection(dx: Double, dy: Double): Unit
 }
 object ViewTools {
   

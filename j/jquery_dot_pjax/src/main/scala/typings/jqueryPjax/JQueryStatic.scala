@@ -3,10 +3,8 @@ package typings.jqueryPjax
 import typings.jquery.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
   /**
@@ -17,8 +15,23 @@ trait JQueryStatic extends StObject {
     * - push: a boolean indicates whether to pushState the URL. Default is true.
     * - replace: a boolean indicates whether to use replaceState instead of pushState. Default is false.
     */
-  def pjax(): JQueryXHR = js.native
-  def pjax(options: PjaxSettings): JQueryXHR = js.native
+  def pjax(): JQueryXHR
+  def pjax(options: PjaxSettings): JQueryXHR
   @JSName("pjax")
-  var pjax_Original: PjaxStatic = js.native
+  var pjax_Original: PjaxStatic
+}
+object JQueryStatic {
+  
+  @scala.inline
+  def apply(pjax: PjaxStatic): JQueryStatic = {
+    val __obj = js.Dynamic.literal(pjax = pjax.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQueryStatic]
+  }
+  
+  @scala.inline
+  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setPjax(value: PjaxStatic): Self = StObject.set(x, "pjax", value.asInstanceOf[js.Any])
+  }
 }

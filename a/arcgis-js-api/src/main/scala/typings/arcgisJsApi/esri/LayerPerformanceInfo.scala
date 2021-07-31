@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html)
   */
-@js.native
 trait LayerPerformanceInfo extends StObject {
   
   /**
@@ -18,35 +16,35 @@ trait LayerPerformanceInfo extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#displayedNumberOfFeatures)
     */
-  var displayedNumberOfFeatures: Double = js.native
+  var displayedNumberOfFeatures: Double
   
   /**
     * The layer corresponding to the memory usage information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#layer)
     */
-  var layer: Layer = js.native
+  var layer: Layer
   
   /**
     * The maximum number of features that can be displayed in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#maximumNumberOfFeatures)
     */
-  var maximumNumberOfFeatures: Double = js.native
+  var maximumNumberOfFeatures: Double
   
   /**
     * An estimate of the memory currently in use by the layer, in bytes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#memory)
     */
-  var memory: Double = js.native
+  var memory: Double
   
   /**
     * The total number of features contained in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#totalNumberOfFeatures)
     */
-  var totalNumberOfFeatures: Double = js.native
+  var totalNumberOfFeatures: Double
 }
 object LayerPerformanceInfo {
   

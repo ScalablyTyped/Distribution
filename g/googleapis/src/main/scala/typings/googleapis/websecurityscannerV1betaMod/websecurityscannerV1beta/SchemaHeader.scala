@@ -2,24 +2,22 @@ package typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a HTTP Header.
   */
-@js.native
 trait SchemaHeader extends StObject {
   
   /**
     * Header name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Header value.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaHeader {
   

@@ -10,9 +10,9 @@ Common logging functionality used within @keystonejs/* packages.
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/logger |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 395420 |
+| # releases         | 8 |
+| # dependents       | 1 |
+| # downloads        | 402891 |
 | # stars            | 0 |
 
 ## Links

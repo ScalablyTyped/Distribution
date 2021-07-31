@@ -2,11 +2,11 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMessageBox extends ISheet {
+trait IMessageBox
+  extends StObject
+     with ISheet {
   
   /** [Method] Displays a standard read only message box with an OK button comparable to the basic JavaScript alert prompt
     * @param title String The title bar text.
@@ -23,10 +23,10 @@ trait IMessageBox extends ISheet {
       /* scope */ js.UndefOr[js.Any], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Array/Object) */
-  var buttons: js.UndefOr[js.Any] = js.native
+  var buttons: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Displays a confirmation message box with Yes and No buttons comparable to JavaScript s confirm
     * @param title String The title bar text.
@@ -43,95 +43,95 @@ trait IMessageBox extends ISheet {
       /* scope */ js.UndefOr[js.Any], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Number) */
-  var defaultTextHeight: js.UndefOr[Double] = js.native
+  var defaultTextHeight: js.UndefOr[Double] = js.undefined
   
   /** [Method] Returns the value of buttons
     * @returns Array/Object
     */
-  var getButtons: js.UndefOr[js.Function0[_]] = js.native
+  var getButtons: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of defaultTextHeight
     * @returns Number
     */
-  var getDefaultTextHeight: js.UndefOr[js.Function0[Double]] = js.native
+  var getDefaultTextHeight: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of layout
     * @returns Object
     */
-  var getLayout: js.UndefOr[js.Function0[_]] = js.native
+  var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of prompt
     * @returns Object
     */
-  var getPrompt: js.UndefOr[js.Function0[_]] = js.native
+  var getPrompt: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of title
     * @returns String
     */
-  var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Config Option] (String) */
-  var icon: js.UndefOr[java.lang.String] = js.native
+  var icon: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var iconCls: js.UndefOr[java.lang.String] = js.native
+  var iconCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var message: js.UndefOr[java.lang.String] = js.native
+  var message: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var msg: js.UndefOr[java.lang.String] = js.native
+  var msg: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Object) */
-  var prompt: js.UndefOr[js.Any] = js.native
+  var prompt: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Sets the value of buttons
     * @param buttons Array/Object The new value.
     */
-  var setButtons: js.UndefOr[js.Function1[/* buttons */ js.UndefOr[js.Any], Unit]] = js.native
+  var setButtons: js.UndefOr[js.Function1[/* buttons */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultTextHeight
     * @param defaultTextHeight Number The new value.
     */
-  var setDefaultTextHeight: js.UndefOr[js.Function1[/* defaultTextHeight */ js.UndefOr[Double], Unit]] = js.native
+  var setDefaultTextHeight: js.UndefOr[js.Function1[/* defaultTextHeight */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets icon
     * @param iconCls String A CSS class name or empty string to clear the icon.
     * @returns Ext.MessageBox this
     */
-  var setIcon: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], this.type]] = js.native
+  var setIcon: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], this.type]] = js.undefined
   
   /** [Method] Sets the value of iconCls
     * @param iconCls String The new value.
     */
-  var setIconCls: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setIconCls: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of message
     * @param message String The new value.
     */
-  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of prompt
     * @param prompt Object The new value.
     */
-  var setPrompt: js.UndefOr[js.Function1[/* prompt */ js.UndefOr[js.Any], Unit]] = js.native
+  var setPrompt: js.UndefOr[js.Function1[/* prompt */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of title
     * @param title String The new value.
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.native
+  var title: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Sets the value of message
     * @param message String The new value.
     * @returns Ext.MessageBox this
     */
-  var updateText: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], this.type]] = js.native
+  var updateText: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], this.type]] = js.undefined
 }
 object IMessageBox {
   
@@ -173,7 +173,7 @@ object IMessageBox {
     def setDefaultTextHeightUndefined: Self = StObject.set(x, "defaultTextHeight", js.undefined)
     
     @scala.inline
-    def setGetButtons(value: () => _): Self = StObject.set(x, "getButtons", js.Any.fromFunction0(value))
+    def setGetButtons(value: () => js.Any): Self = StObject.set(x, "getButtons", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetButtonsUndefined: Self = StObject.set(x, "getButtons", js.undefined)
@@ -185,13 +185,13 @@ object IMessageBox {
     def setGetDefaultTextHeightUndefined: Self = StObject.set(x, "getDefaultTextHeight", js.undefined)
     
     @scala.inline
-    def setGetLayout(value: () => _): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
     
     @scala.inline
-    def setGetPrompt(value: () => _): Self = StObject.set(x, "getPrompt", js.Any.fromFunction0(value))
+    def setGetPrompt(value: () => js.Any): Self = StObject.set(x, "getPrompt", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetPromptUndefined: Self = StObject.set(x, "getPrompt", js.undefined)

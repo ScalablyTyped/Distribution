@@ -2,26 +2,24 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRootFoldersRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token.
     */
-  var AuthenticationToken: AuthenticationHeaderType = js.native
+  var AuthenticationToken: AuthenticationHeaderType
   
   /**
     * The maximum number of items to return.
     */
-  var Limit: js.UndefOr[LimitType] = js.native
+  var Limit: js.UndefOr[LimitType] = js.undefined
   
   /**
     * The marker for the next set of results. (You received this marker from a previous call.)
     */
-  var Marker: js.UndefOr[PageMarkerType] = js.native
+  var Marker: js.UndefOr[PageMarkerType] = js.undefined
 }
 object DescribeRootFoldersRequest {
   

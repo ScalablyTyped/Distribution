@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters extends StObject {
   
   /**
     * The column delimiter. For example, in a CSV format, a comma (`,`) is the typical column delimiter.
     */
-  var recordColumnDelimiter: String = js.native
+  var recordColumnDelimiter: String
   
   /**
     * The row delimiter. For example, in a CSV format, `\n` is the typical row delimiter.
     */
-  var recordRowDelimiter: String = js.native
+  var recordRowDelimiter: String
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters {
   

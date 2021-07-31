@@ -10,8 +10,8 @@ A wrapper around the imagemagick cli
 | Full name          | imagemagick |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 221 |
-| # downloads        | 1115370 |
+| # dependents       | 224 |
+| # downloads        | 1163014 |
 | # stars            | 45 |
 
 ## Links

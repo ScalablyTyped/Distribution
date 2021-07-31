@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
   */
-@js.native
 trait PlusNavigatorPermissionNames extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusNavigatorPermissionNames extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var CAMERA: js.UndefOr[String] = js.native
+  var CAMERA: js.UndefOr[String] = js.undefined
   
   /**
     * 访问系统联系人权限
@@ -27,7 +25,7 @@ trait PlusNavigatorPermissionNames extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var CONTACTS: js.UndefOr[String] = js.native
+  var CONTACTS: js.UndefOr[String] = js.undefined
   
   /**
     * 访问系统相册权限
@@ -35,7 +33,7 @@ trait PlusNavigatorPermissionNames extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var GALLERY: js.UndefOr[String] = js.native
+  var GALLERY: js.UndefOr[String] = js.undefined
   
   /**
     * 定位权限
@@ -43,7 +41,7 @@ trait PlusNavigatorPermissionNames extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var LOCATION: js.UndefOr[String] = js.native
+  var LOCATION: js.UndefOr[String] = js.undefined
   
   /**
     * 消息通知权限
@@ -51,7 +49,7 @@ trait PlusNavigatorPermissionNames extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var NOTIFITION: js.UndefOr[String] = js.native
+  var NOTIFITION: js.UndefOr[String] = js.undefined
   
   /**
     * 录音权限
@@ -59,7 +57,7 @@ trait PlusNavigatorPermissionNames extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var RECORD: js.UndefOr[String] = js.native
+  var RECORD: js.UndefOr[String] = js.undefined
   
   /**
     * 创建桌面快捷方式权限
@@ -67,7 +65,7 @@ trait PlusNavigatorPermissionNames extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var SHORTCUT: js.UndefOr[String] = js.native
+  var SHORTCUT: js.UndefOr[String] = js.undefined
 }
 object PlusNavigatorPermissionNames {
   

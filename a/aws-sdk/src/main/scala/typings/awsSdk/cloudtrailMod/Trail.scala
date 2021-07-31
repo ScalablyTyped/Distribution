@@ -2,91 +2,89 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Trail extends StObject {
   
   /**
     * Specifies an Amazon Resource Name (ARN), a unique identifier that represents the log group to which CloudTrail logs will be delivered.
     */
-  var CloudWatchLogsLogGroupArn: js.UndefOr[String] = js.native
+  var CloudWatchLogsLogGroupArn: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group.
     */
-  var CloudWatchLogsRoleArn: js.UndefOr[String] = js.native
+  var CloudWatchLogsRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies if the trail has custom event selectors.
     */
-  var HasCustomEventSelectors: js.UndefOr[Boolean] = js.native
+  var HasCustomEventSelectors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether a trail has insight types specified in an InsightSelector list.
     */
-  var HasInsightSelectors: js.UndefOr[Boolean] = js.native
+  var HasInsightSelectors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The region in which the trail was created.
     */
-  var HomeRegion: js.UndefOr[String] = js.native
+  var HomeRegion: js.UndefOr[String] = js.undefined
   
   /**
     * Set to True to include AWS API calls from AWS global services such as IAM. Otherwise, False.
     */
-  var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.native
+  var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether the trail exists only in one region or exists in all regions.
     */
-  var IsMultiRegionTrail: js.UndefOr[Boolean] = js.native
+  var IsMultiRegionTrail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether the trail is an organization trail.
     */
-  var IsOrganizationTrail: js.UndefOr[Boolean] = js.native
+  var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the format:  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether log file validation is enabled.
     */
-  var LogFileValidationEnabled: js.UndefOr[Boolean] = js.native
+  var LogFileValidationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of the trail set by calling CreateTrail. The maximum length is 128 characters.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the Amazon S3 bucket into which CloudTrail delivers your trail files. See Amazon S3 Bucket Naming Requirements.
     */
-  var S3BucketName: js.UndefOr[String] = js.native
+  var S3BucketName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery. For more information, see Finding Your CloudTrail Log Files.The maximum length is 200 characters.
     */
-  var S3KeyPrefix: js.UndefOr[String] = js.native
+  var S3KeyPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the ARN of the Amazon SNS topic that CloudTrail uses to send notifications when log files are delivered. The format of a topic ARN is:  arn:aws:sns:us-east-2:123456789012:MyTopic 
     */
-  var SnsTopicARN: js.UndefOr[String] = js.native
+  var SnsTopicARN: js.UndefOr[String] = js.undefined
   
   /**
     * This field is no longer in use. Use SnsTopicARN.
     */
-  var SnsTopicName: js.UndefOr[String] = js.native
+  var SnsTopicName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the ARN of the trail. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
     */
-  var TrailARN: js.UndefOr[String] = js.native
+  var TrailARN: js.UndefOr[String] = js.undefined
 }
 object Trail {
   

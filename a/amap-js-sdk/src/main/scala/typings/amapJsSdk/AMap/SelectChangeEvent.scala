@@ -3,21 +3,19 @@ package typings.amapJsSdk.AMap
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectChangeEvent extends StObject {
   
-  var data: Poi = js.native
+  var data: Poi
   
-  var id: String = js.native
+  var id: String
   
-  var listElement: HTMLLIElement = js.native
+  var listElement: HTMLLIElement
   
-  var marker: Marker = js.native
+  var marker: Marker
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object SelectChangeEvent {
   

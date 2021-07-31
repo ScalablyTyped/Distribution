@@ -2,22 +2,22 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Declarative event action that redirects a network request to a transparent image. */
-@js.native
-trait RedirectToTransparentImage extends OnRequestActions {
+trait RedirectToTransparentImage
+  extends StObject
+     with OnRequestActions {
   
-  val instanceType: String = js.native
+  val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToTransparentImage = js.native
+  val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToTransparentImage
 }
 object RedirectToTransparentImage {
   
   @scala.inline
-  def apply(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToTransparentImage): RedirectToTransparentImage = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def apply(instanceType: String): RedirectToTransparentImage = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RedirectToTransparentImage")
     __obj.asInstanceOf[RedirectToTransparentImage]
   }
   

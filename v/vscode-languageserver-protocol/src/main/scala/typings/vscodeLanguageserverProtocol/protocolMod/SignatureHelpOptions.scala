@@ -2,11 +2,11 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SignatureHelpOptions extends WorkDoneProgressOptions {
+trait SignatureHelpOptions
+  extends StObject
+     with WorkDoneProgressOptions {
   
   /**
     * List of characters that re-trigger signature help.
@@ -16,12 +16,12 @@ trait SignatureHelpOptions extends WorkDoneProgressOptions {
     *
     * @since 3.15.0
     */
-  var retriggerCharacters: js.UndefOr[js.Array[String]] = js.native
+  var retriggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of characters that trigger signature help.
     */
-  var triggerCharacters: js.UndefOr[js.Array[String]] = js.native
+  var triggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SignatureHelpOptions {
   

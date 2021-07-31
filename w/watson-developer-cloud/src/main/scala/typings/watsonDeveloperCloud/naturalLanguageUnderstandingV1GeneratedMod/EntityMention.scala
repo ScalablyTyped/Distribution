@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** EntityMention. */
-@js.native
 trait EntityMention extends StObject {
   
   /** Character offsets indicating the beginning and end of the mention in the analyzed text. */
-  var location: js.UndefOr[js.Array[Double]] = js.native
+  var location: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Entity mention text. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object EntityMention {
   

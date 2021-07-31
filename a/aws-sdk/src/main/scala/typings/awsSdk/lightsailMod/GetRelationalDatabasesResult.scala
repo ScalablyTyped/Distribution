@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRelationalDatabasesResult extends StObject {
   
   /**
     * The token to advance to the next page of results from your request. A next page token is not returned if there are no more results to display. To get the next page of results, perform another GetRelationalDatabases request and specify the next page token using the pageToken parameter.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * An object describing the result of your get relational databases request.
     */
-  var relationalDatabases: js.UndefOr[RelationalDatabaseList] = js.native
+  var relationalDatabases: js.UndefOr[RelationalDatabaseList] = js.undefined
 }
 object GetRelationalDatabasesResult {
   

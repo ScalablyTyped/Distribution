@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobResult extends StObject {
   
   /**
     * Contains the configuration parameters and status for the job specified in the Describe Job request.
     */
-  var Job: js.UndefOr[JobDescriptor] = js.native
+  var Job: js.UndefOr[JobDescriptor] = js.undefined
 }
 object DescribeJobResult {
   

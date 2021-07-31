@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRoomSkillParameterRequest extends StObject {
   
   /**
     * The room skill parameter key for which to remove details.
     */
-  var ParameterKey: RoomSkillParameterKey = js.native
+  var ParameterKey: RoomSkillParameterKey
   
   /**
     * The ARN of the room from which to remove the room skill parameter details.
     */
-  var RoomArn: js.UndefOr[Arn] = js.native
+  var RoomArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ID of the skill from which to remove the room skill parameter details.
     */
-  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId = js.native
+  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId
 }
 object DeleteRoomSkillParameterRequest {
   

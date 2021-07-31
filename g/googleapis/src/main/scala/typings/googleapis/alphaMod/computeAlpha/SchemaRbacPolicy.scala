@@ -2,26 +2,24 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRbacPolicy extends StObject {
   
   /**
     * Name of the RbacPolicy.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The list of permissions.
     */
-  var permissions: js.UndefOr[js.Array[SchemaPermission]] = js.native
+  var permissions: js.UndefOr[js.Array[SchemaPermission]] = js.undefined
   
   /**
     * The list of principals.
     */
-  var principals: js.UndefOr[js.Array[SchemaPrincipal]] = js.native
+  var principals: js.UndefOr[js.Array[SchemaPrincipal]] = js.undefined
 }
 object SchemaRbacPolicy {
   

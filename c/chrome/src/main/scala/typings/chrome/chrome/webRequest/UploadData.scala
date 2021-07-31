@@ -3,17 +3,15 @@ package typings.chrome.chrome.webRequest
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadData extends StObject {
   
   /** Optional. An ArrayBuffer with a copy of the data. */
-  var bytes: js.UndefOr[ArrayBuffer] = js.native
+  var bytes: js.UndefOr[ArrayBuffer] = js.undefined
   
   /** Optional. A string with the file's path and name. */
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
 }
 object UploadData {
   

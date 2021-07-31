@@ -5,24 +5,24 @@ import typings.awsSdkClientPinpointBrowser.typesSegmentResponseMod.UnmarshalledS
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteSegmentOutputMod {
   
-  @js.native
-  trait DeleteSegmentOutput extends OutputTypesUnion {
+  trait DeleteSegmentOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * Segment definition.
       */
-    var SegmentResponse: UnmarshalledSegmentResponse = js.native
+    var SegmentResponse: UnmarshalledSegmentResponse
   }
   object DeleteSegmentOutput {
     

@@ -3,100 +3,99 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerformanceMetricsDetails
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var document_count: js.UndefOr[Double] = js.native
+  var document_count: js.UndefOr[Double] = js.undefined
   
-  var document_size: js.UndefOr[Double] = js.native
+  var document_size: js.UndefOr[Double] = js.undefined
   
-  var domContentLoaded: js.UndefOr[Double] = js.native
+  var domContentLoaded: js.UndefOr[Double] = js.undefined
   
-  var estimatedInputLatency: js.UndefOr[Double] = js.native
+  var estimatedInputLatency: js.UndefOr[Double] = js.undefined
   
-  var firstCPUIdle: js.UndefOr[Double] = js.native
+  var firstCPUIdle: js.UndefOr[Double] = js.undefined
   
-  var firstContentfulPaint: js.UndefOr[Double] = js.native
+  var firstContentfulPaint: js.UndefOr[Double] = js.undefined
   
-  var firstInteractive: js.UndefOr[Double] = js.native
+  var firstInteractive: js.UndefOr[Double] = js.undefined
   
-  var firstMeaningfulPaint: js.UndefOr[Double] = js.native
+  var firstMeaningfulPaint: js.UndefOr[Double] = js.undefined
   
-  var firstPaint: js.UndefOr[Double] = js.native
+  var firstPaint: js.UndefOr[Double] = js.undefined
   
-  var firstVisualChange: js.UndefOr[Double] = js.native
+  var firstVisualChange: js.UndefOr[Double] = js.undefined
   
-  var font_count: js.UndefOr[Double] = js.native
+  var font_count: js.UndefOr[Double] = js.undefined
   
-  var font_size: js.UndefOr[Double] = js.native
+  var font_size: js.UndefOr[Double] = js.undefined
   
-  var image_count: js.UndefOr[Double] = js.native
+  var image_count: js.UndefOr[Double] = js.undefined
   
-  var image_size: js.UndefOr[Double] = js.native
+  var image_size: js.UndefOr[Double] = js.undefined
   
-  var lastVisualChange: js.UndefOr[Double] = js.native
+  var lastVisualChange: js.UndefOr[Double] = js.undefined
   
-  var load: js.UndefOr[Double] = js.native
+  var load: js.UndefOr[Double] = js.undefined
   
-  var mainDocumentTransferSize: js.UndefOr[Double] = js.native
+  var mainDocumentTransferSize: js.UndefOr[Double] = js.undefined
   
-  var maxRtt: js.UndefOr[Double] = js.native
+  var maxRtt: js.UndefOr[Double] = js.undefined
   
-  var maxServerLatency: js.UndefOr[Double] = js.native
+  var maxServerLatency: js.UndefOr[Double] = js.undefined
   
-  var numFonts: js.UndefOr[Double] = js.native
+  var numFonts: js.UndefOr[Double] = js.undefined
   
-  var numRequests: js.UndefOr[Double] = js.native
+  var numRequests: js.UndefOr[Double] = js.undefined
   
-  var numScripts: js.UndefOr[Double] = js.native
+  var numScripts: js.UndefOr[Double] = js.undefined
   
-  var numStylesheets: js.UndefOr[Double] = js.native
+  var numStylesheets: js.UndefOr[Double] = js.undefined
   
-  var numTasks: js.UndefOr[Double] = js.native
+  var numTasks: js.UndefOr[Double] = js.undefined
   
-  var numTasksOver100ms: js.UndefOr[Double] = js.native
+  var numTasksOver100ms: js.UndefOr[Double] = js.undefined
   
-  var numTasksOver10ms: js.UndefOr[Double] = js.native
+  var numTasksOver10ms: js.UndefOr[Double] = js.undefined
   
-  var numTasksOver25ms: js.UndefOr[Double] = js.native
+  var numTasksOver25ms: js.UndefOr[Double] = js.undefined
   
-  var numTasksOver500ms: js.UndefOr[Double] = js.native
+  var numTasksOver500ms: js.UndefOr[Double] = js.undefined
   
-  var numTasksOver50ms: js.UndefOr[Double] = js.native
+  var numTasksOver50ms: js.UndefOr[Double] = js.undefined
   
-  var other_count: js.UndefOr[Double] = js.native
+  var other_count: js.UndefOr[Double] = js.undefined
   
-  var other_size: js.UndefOr[Double] = js.native
+  var other_size: js.UndefOr[Double] = js.undefined
   
-  var requestsCount: js.UndefOr[Double] = js.native
+  var requestsCount: js.UndefOr[Double] = js.undefined
   
-  var requestsSize: js.UndefOr[Double] = js.native
+  var requestsSize: js.UndefOr[Double] = js.undefined
   
-  var rtt: js.UndefOr[Double] = js.native
+  var rtt: js.UndefOr[Double] = js.undefined
   
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
   
-  var script_count: js.UndefOr[Double] = js.native
+  var script_count: js.UndefOr[Double] = js.undefined
   
-  var script_size: js.UndefOr[Double] = js.native
+  var script_size: js.UndefOr[Double] = js.undefined
   
-  var speedIndex: js.UndefOr[Double] = js.native
+  var speedIndex: js.UndefOr[Double] = js.undefined
   
-  var stylesheet_count: js.UndefOr[Double] = js.native
+  var stylesheet_count: js.UndefOr[Double] = js.undefined
   
-  var stylesheet_size: js.UndefOr[Double] = js.native
+  var stylesheet_size: js.UndefOr[Double] = js.undefined
   
-  var throughput: js.UndefOr[Double] = js.native
+  var throughput: js.UndefOr[Double] = js.undefined
   
-  var timeToFirstByte: js.UndefOr[Double] = js.native
+  var timeToFirstByte: js.UndefOr[Double] = js.undefined
   
-  var totalByteWeight: js.UndefOr[Double] = js.native
+  var totalByteWeight: js.UndefOr[Double] = js.undefined
   
-  var totalTaskTime: js.UndefOr[Double] = js.native
+  var totalTaskTime: js.UndefOr[Double] = js.undefined
 }
 object PerformanceMetricsDetails {
   

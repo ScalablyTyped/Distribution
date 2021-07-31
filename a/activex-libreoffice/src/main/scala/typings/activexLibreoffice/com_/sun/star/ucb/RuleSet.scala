@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A {@link RuleSet} is applied to a folder. It consists of a sequence of rules. Each rule consists of a sequence of RuleTerms describing the objects to
   * which the rule should by applied and the {@link RuleAction} which should be performed on the matching objects.
   */
-@js.native
 trait RuleSet extends StObject {
   
   /** is a flag indicating whether the rules apply to folders, too. */
-  var HandleFolder: Boolean = js.native
+  var HandleFolder: Boolean
   
   /** contains a number of rules. */
-  var Rules: SafeArray[Rule] = js.native
+  var Rules: SafeArray[Rule]
 }
 object RuleSet {
   

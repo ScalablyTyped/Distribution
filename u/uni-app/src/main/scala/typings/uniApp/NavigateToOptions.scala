@@ -12,16 +12,14 @@ import typings.uniApp.uniAppStrings.auto
 import typings.uniApp.uniAppStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigateToOptions extends StObject {
   
   /**
     * 窗口显示动画的持续时间，单位为 ms
     */
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * 窗口显示的动画类型
@@ -38,27 +36,27 @@ trait NavigateToOptions extends StObject {
     */
   var animationType: js.UndefOr[
     auto | none | `slide-in-right` | `slide-in-left` | `slide-in-top` | `slide-in-bottom` | `fade-in` | `zoom-out` | `zoom-fade-out` | `pop-in`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 接口调用成功的回调函数
     */
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 需要跳转的应用内非 tabBar 的页面的路径 , 路径后可以带参数
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object NavigateToOptions {
   

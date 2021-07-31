@@ -8,21 +8,19 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AddDisposeCallback extends StObject {
     
-    def addDisposeCallback(node: typings.std.Element, callback: js.Function): Unit = js.native
+    def addDisposeCallback(node: typings.std.Element, callback: js.Function): Unit
     
-    def cleanNode(node: Node): typings.std.Element = js.native
+    def cleanNode(node: Node): typings.std.Element
     
-    def removeDisposeCallback(node: typings.std.Element, callback: js.Function): Unit = js.native
+    def removeDisposeCallback(node: typings.std.Element, callback: js.Function): Unit
     
-    def removeNode(node: Node): Unit = js.native
+    def removeNode(node: Node): Unit
   }
   object AddDisposeCallback {
     
@@ -54,14 +52,13 @@ object anon {
     }
   }
   
-  @js.native
   trait AddTemplate extends StObject {
     
-    def addTemplate(templateName: String, templateMarkup: String): Unit = js.native
+    def addTemplate(templateName: String, templateMarkup: String): Unit
     
-    def createJavaScriptEvaluatorBlock(script: String): String = js.native
+    def createJavaScriptEvaluatorBlock(script: String): String
     
-    def renderTemplateSource(templateSource: js.Object, bindingContext: KnockoutBindingContext, options: js.Object): js.Array[Node] = js.native
+    def renderTemplateSource(templateSource: js.Object, bindingContext: KnockoutBindingContext, options: js.Object): js.Array[Node]
   }
   object AddTemplate {
     
@@ -100,17 +97,16 @@ object anon {
     def memoizeBindingAttributeSyntax(htmlString: String, templateEngine: KnockoutTemplateEngine): js.Any = js.native
   }
   
-  @js.native
   trait BindingRewriteValidators extends StObject {
     
-    var bindingRewriteValidators: js.Any = js.native
+    var bindingRewriteValidators: js.Any
     
-    def parseObjectLiteral(objectLiteralString: String): js.Array[_] = js.native
+    def parseObjectLiteral(objectLiteralString: String): js.Array[js.Any]
   }
   object BindingRewriteValidators {
     
     @scala.inline
-    def apply(bindingRewriteValidators: js.Any, parseObjectLiteral: String => js.Array[_]): BindingRewriteValidators = {
+    def apply(bindingRewriteValidators: js.Any, parseObjectLiteral: String => js.Array[js.Any]): BindingRewriteValidators = {
       val __obj = js.Dynamic.literal(bindingRewriteValidators = bindingRewriteValidators.asInstanceOf[js.Any], parseObjectLiteral = js.Any.fromFunction1(parseObjectLiteral))
       __obj.asInstanceOf[BindingRewriteValidators]
     }
@@ -122,20 +118,19 @@ object anon {
       def setBindingRewriteValidators(value: js.Any): Self = StObject.set(x, "bindingRewriteValidators", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setParseObjectLiteral(value: String => js.Array[_]): Self = StObject.set(x, "parseObjectLiteral", js.Any.fromFunction1(value))
+      def setParseObjectLiteral(value: String => js.Array[js.Any]): Self = StObject.set(x, "parseObjectLiteral", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Clear extends StObject {
     
-    def clear(node: typings.std.Element): Boolean = js.native
+    def clear(node: typings.std.Element): Boolean
     
-    def get(node: typings.std.Element, key: String): js.Any = js.native
+    def get(node: typings.std.Element, key: String): js.Any
     
-    def getAll(node: typings.std.Element, createIfNotFound: Boolean): js.Any = js.native
+    def getAll(node: typings.std.Element, createIfNotFound: Boolean): js.Any
     
-    def set(node: typings.std.Element, key: String, value: js.Any): Unit = js.native
+    def set(node: typings.std.Element, key: String, value: js.Any): Unit
   }
   object Clear {
     
@@ -167,10 +162,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ControlsDescendantBindings extends StObject {
     
-    var controlsDescendantBindings: Boolean = js.native
+    var controlsDescendantBindings: Boolean
   }
   object ControlsDescendantBindings {
     
@@ -188,10 +182,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Dictindex extends /* index */ NumberDictionary[Node] {
+  trait Dictindex
+    extends StObject
+       with /* index */ NumberDictionary[Node] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object Dictindex {
     
@@ -209,10 +204,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Element extends StObject {
     
-    var element: Node = js.native
+    var element: Node
   }
   object Element {
     
@@ -231,34 +225,41 @@ object anon {
   }
   
   @js.native
-  trait Instance extends Instantiable0[KnockoutNativeTemplateEngine] {
+  trait Instance
+    extends StObject
+       with Instantiable0[KnockoutNativeTemplateEngine] {
     
     var instance: KnockoutNativeTemplateEngine = js.native
   }
   
   @js.native
   trait Instantiable
-    extends Instantiable1[/* element */ typings.std.Element, KnockoutTemplateSourcesDomElement]
+    extends StObject
+       with Instantiable1[/* element */ typings.std.Element, KnockoutTemplateSourcesDomElement]
   
   @js.native
-  trait InstantiableInstance extends Instantiable0[KnockoutBindingProvider] {
+  trait InstantiableInstance
+    extends StObject
+       with Instantiable0[KnockoutBindingProvider] {
     
     var instance: KnockoutBindingProvider = js.native
   }
   
   @js.native
   trait InstantiableKnockoutTemplateAnonymous
-    extends Instantiable1[/* element */ typings.std.Element, KnockoutTemplateAnonymous]
+    extends StObject
+       with Instantiable1[/* element */ typings.std.Element, KnockoutTemplateAnonymous]
   
   @js.native
-  trait InstantiableKnockoutTemplateEngine extends Instantiable0[KnockoutTemplateEngine]
+  trait InstantiableKnockoutTemplateEngine
+    extends StObject
+       with Instantiable0[KnockoutTemplateEngine]
   
-  @js.native
   trait Method extends StObject {
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object Method {
     
@@ -282,12 +283,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ReadValue extends StObject {
     
-    def readValue(element: HTMLElement): js.Any = js.native
+    def readValue(element: HTMLElement): js.Any
     
-    def writeValue(element: HTMLElement, value: js.Any): Unit = js.native
+    def writeValue(element: HTMLElement, value: js.Any): Unit
   }
   object ReadValue {
     

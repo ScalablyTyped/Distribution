@@ -2,13 +2,13 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DoctorTreatmentStep extends PatientTreatmentStep {
+trait DoctorTreatmentStep
+  extends StObject
+     with PatientTreatmentStep {
   
-  def treat(): js.Promise[Unit] = js.native
+  def treat(): js.Promise[Unit]
 }
 object DoctorTreatmentStep {
   

@@ -4,16 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var user: js.UndefOr[Email] = js.native
+    var user: js.UndefOr[Email] = js.undefined
   }
   object Dictkey {
     
@@ -34,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Email {
     
@@ -67,20 +65,19 @@ object anon {
   }
   
   /* Inlined std.Partial<@sentry/core.@sentry/core/dist/integrations/inboundfilters.InboundFiltersOptions> */
-  @js.native
   trait PartialInboundFiltersOpti extends StObject {
     
-    var allowUrls: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var allowUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
-    var blacklistUrls: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var blacklistUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
-    var denyUrls: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var denyUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
-    var ignoreErrors: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var ignoreErrors: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
-    var ignoreInternal: js.UndefOr[Boolean] = js.native
+    var ignoreInternal: js.UndefOr[Boolean] = js.undefined
     
-    var whitelistUrls: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var whitelistUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
   }
   object PartialInboundFiltersOpti {
     

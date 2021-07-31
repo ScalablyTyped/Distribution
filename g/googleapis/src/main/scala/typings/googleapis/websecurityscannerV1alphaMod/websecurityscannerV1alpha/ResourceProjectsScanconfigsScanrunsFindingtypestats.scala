@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/websecurityscanner/v1alpha", "websecurityscanner_v1alpha.Resource$Projects$Scanconfigs$Scanruns$Findingtypestats")
@@ -31,7 +30,7 @@ class ResourceProjectsScanconfigsScanrunsFindingtypestats protected () extends S
     */
   def list(): GaxiosPromise[SchemaListFindingTypeStatsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFindingTypeStatsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFindingTypeStatsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListFindingTypeStatsResponse] = js.native
   def list(params: ParamsResourceProjectsScanconfigsScanrunsFindingtypestatsList): GaxiosPromise[SchemaListFindingTypeStatsResponse] = js.native
   def list(
     params: ParamsResourceProjectsScanconfigsScanrunsFindingtypestatsList,

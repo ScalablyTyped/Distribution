@@ -3,15 +3,13 @@ package typings.nodeZendesk.mod
 import typings.nodeZendesk.anon.Comment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Macros {
   
-  @js.native
   trait ApplyTicketResponsePayload extends StObject {
     
-    var result: Comment = js.native
+    var result: Comment
   }
   object ApplyTicketResponsePayload {
     
@@ -33,6 +31,6 @@ object Macros {
   trait Methods extends StObject {
     
     def applyTicket(ticketId: ZendeskID, macroId: Double): js.Promise[ApplyTicketResponsePayload] = js.native
-    def applyTicket(ticketId: ZendeskID, macroId: Double, cb: ZendeskCallback[_, _]): ApplyTicketResponsePayload = js.native
+    def applyTicket(ticketId: ZendeskID, macroId: Double, cb: ZendeskCallback[js.Any, js.Any]): ApplyTicketResponsePayload = js.native
   }
 }

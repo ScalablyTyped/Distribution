@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.anon.Options
 import typings.officeUiFabricReact.dropdownTypesMod.IDropdownProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "DropdownBase")

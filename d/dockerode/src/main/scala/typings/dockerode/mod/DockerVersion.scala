@@ -5,33 +5,31 @@ import typings.dockerode.anon.NameString
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DockerVersion extends StObject {
   
-  var ApiVersion: String = js.native
+  var ApiVersion: String
   
-  var Arch: String = js.native
+  var Arch: String
   
-  var BuildTime: Date = js.native
+  var BuildTime: Date
   
-  var Components: js.Array[Details] = js.native
+  var Components: js.Array[Details]
   
-  var GitCommit: String = js.native
+  var GitCommit: String
   
-  var GoVersion: String = js.native
+  var GoVersion: String
   
-  var KernelVersion: String = js.native
+  var KernelVersion: String
   
-  var MinAPIVersion: String = js.native
+  var MinAPIVersion: String
   
-  var Os: String = js.native
+  var Os: String
   
-  var Platform: NameString = js.native
+  var Platform: NameString
   
-  var Version: String = js.native
+  var Version: String
 }
 object DockerVersion {
   

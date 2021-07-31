@@ -2,14 +2,12 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<std.Partial<auth0.auth0.CreateClientGrant>, 'scope'> */
-@js.native
 trait UpdateClientGrant extends StObject {
   
-  var scope: js.UndefOr[js.Array[String]] = js.native
+  var scope: js.UndefOr[js.Array[String]] = js.undefined
 }
 object UpdateClientGrant {
   

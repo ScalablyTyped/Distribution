@@ -11,8 +11,8 @@ RESTful HTTP client library
 | Full name          | rest |
 | Keywords           | rest, http, client, rest-template, spring, cujojs |
 | # releases         | 0 |
-| # dependents       | 106 |
-| # downloads        | 891409 |
+| # dependents       | 105 |
+| # downloads        | 966010 |
 | # stars            | 26 |
 
 ## Links

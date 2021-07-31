@@ -3,31 +3,29 @@ package typings.reactNativeFs.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadDirItem extends StObject {
   
-  var ctime: js.UndefOr[Date] = js.native
+  var ctime: js.UndefOr[Date] = js.undefined
   
   // Is the file just a file?
-  def isDirectory(): Boolean = js.native
+  def isDirectory(): Boolean
   
   // Size in bytes
-  def isFile(): Boolean = js.native
+  def isFile(): Boolean
   
   // The creation date of the file (iOS only)
-  var mtime: js.UndefOr[Date] = js.native
+  var mtime: js.UndefOr[Date] = js.undefined
   
   // The last modified date of the file
-  var name: String = js.native
+  var name: String
   
   // The name of the item
-  var path: String = js.native
+  var path: String
   
   // The absolute path to the item
-  var size: String = js.native
+  var size: String
 }
 object ReadDirItem {
   

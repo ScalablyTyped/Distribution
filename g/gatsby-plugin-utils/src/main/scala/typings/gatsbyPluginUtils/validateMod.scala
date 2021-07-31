@@ -4,22 +4,22 @@ import typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod.ObjectSchema
 import typings.gatsbyPluginUtils.typesMod.IPluginInfoOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validateMod {
   
-  @JSImport("gatsby-plugin-utils/dist/validate", "validateOptionsSchema")
+  @JSImport("gatsby-plugin-utils/dist/validate", JSImport.Namespace)
   @js.native
-  def validateOptionsSchema(pluginSchema: ObjectSchema[_], pluginOptions: IPluginInfoOptions): js.Promise[IPluginInfoOptions] = js.native
-  @JSImport("gatsby-plugin-utils/dist/validate", "validateOptionsSchema")
-  @js.native
-  def validateOptionsSchema(pluginSchema: ObjectSchema[_], pluginOptions: IPluginInfoOptions, options: IOptions): js.Promise[IPluginInfoOptions] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def validateOptionsSchema(pluginSchema: ObjectSchema[js.Any], pluginOptions: IPluginInfoOptions): js.Promise[IPluginInfoOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOptionsSchema")(pluginSchema.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IPluginInfoOptions]]
+  @scala.inline
+  def validateOptionsSchema(pluginSchema: ObjectSchema[js.Any], pluginOptions: IPluginInfoOptions, options: IOptions): js.Promise[IPluginInfoOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOptionsSchema")(pluginSchema.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IPluginInfoOptions]]
+  
   trait IOptions extends StObject {
     
-    var validateExternalRules: js.UndefOr[Boolean] = js.native
+    var validateExternalRules: js.UndefOr[Boolean] = js.undefined
   }
   object IOptions {
     

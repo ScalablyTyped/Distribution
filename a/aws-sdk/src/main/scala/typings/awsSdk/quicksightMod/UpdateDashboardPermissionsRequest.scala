@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDashboardPermissionsRequest extends StObject {
   
   /**
     * The ID of the AWS account that contains the dashboard whose permissions you're updating.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID for the dashboard.
     */
-  var DashboardId: RestrictiveResourceId = js.native
+  var DashboardId: RestrictiveResourceId
   
   /**
     * The permissions that you want to grant on this resource.
     */
-  var GrantPermissions: js.UndefOr[UpdateResourcePermissionList] = js.native
+  var GrantPermissions: js.UndefOr[UpdateResourcePermissionList] = js.undefined
   
   /**
     * The permissions that you want to revoke from this resource.
     */
-  var RevokePermissions: js.UndefOr[UpdateResourcePermissionList] = js.native
+  var RevokePermissions: js.UndefOr[UpdateResourcePermissionList] = js.undefined
 }
 object UpdateDashboardPermissionsRequest {
   

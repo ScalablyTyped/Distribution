@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FlowSchemaStatus represents the current state of a FlowSchema.
   */
-@js.native
 trait FlowSchemaStatus extends StObject {
   
   /**
     * `conditions` is a list of the current states of FlowSchema.
     */
-  var conditions: js.UndefOr[Input[js.Array[Input[FlowSchemaCondition]]]] = js.native
+  var conditions: js.UndefOr[Input[js.Array[Input[FlowSchemaCondition]]]] = js.undefined
 }
 object FlowSchemaStatus {
   

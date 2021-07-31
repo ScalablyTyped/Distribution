@@ -4,13 +4,13 @@ import typings.geolib.typesMod.GeolibAltitudeInputValue
 import typings.geolib.typesMod.GeolibInputAltitude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Alt extends GeolibInputAltitude {
+trait Alt
+  extends StObject
+     with GeolibInputAltitude {
   
-  var alt: js.UndefOr[GeolibAltitudeInputValue] = js.native
+  var alt: js.UndefOr[GeolibAltitudeInputValue] = js.undefined
 }
 object Alt {
   

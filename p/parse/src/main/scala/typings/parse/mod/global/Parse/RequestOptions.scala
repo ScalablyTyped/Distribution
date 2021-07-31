@@ -2,23 +2,21 @@ package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOptions extends StObject {
   
-  var batchSize: js.UndefOr[Double] = js.native
+  var batchSize: js.UndefOr[Double] = js.undefined
   
-  var include: js.UndefOr[String | js.Array[String]] = js.native
+  var include: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var installationId: js.UndefOr[String] = js.native
+  var installationId: js.UndefOr[String] = js.undefined
   
-  var progress: js.UndefOr[js.Function] = js.native
+  var progress: js.UndefOr[js.Function] = js.undefined
   
-  var sessionToken: js.UndefOr[String] = js.native
+  var sessionToken: js.UndefOr[String] = js.undefined
   
-  var useMasterKey: js.UndefOr[Boolean] = js.native
+  var useMasterKey: js.UndefOr[Boolean] = js.undefined
 }
 object RequestOptions {
   

@@ -11,8 +11,8 @@ Strip emoji from a string in Node.js and browsers.
 | Full name          | emoji-strip |
 | Keywords           | emoji, strip, remove, emoticons |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 491294 |
+| # dependents       | 17 |
+| # downloads        | 493856 |
 | # stars            | 1 |
 
 ## Links

@@ -3,21 +3,21 @@ package typings.webpack.anon
 import typings.webpack.ignorePluginMod.IgnorePluginOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CheckContext extends IgnorePluginOptions {
+trait CheckContext
+  extends StObject
+     with IgnorePluginOptions {
   
   /**
   			 * A filter function for context
   			 */
-  var checkContext: js.UndefOr[js.Function1[/* context */ String, Boolean]] = js.native
+  var checkContext: js.UndefOr[js.Function1[/* context */ String, Boolean]] = js.undefined
   
   /**
   			 * A filter function for resource and context
   			 */
-  var checkResource: js.UndefOr[js.Function2[/* resource */ String, /* context */ String, Boolean]] = js.native
+  var checkResource: js.UndefOr[js.Function2[/* resource */ String, /* context */ String, Boolean]] = js.undefined
 }
 object CheckContext {
   

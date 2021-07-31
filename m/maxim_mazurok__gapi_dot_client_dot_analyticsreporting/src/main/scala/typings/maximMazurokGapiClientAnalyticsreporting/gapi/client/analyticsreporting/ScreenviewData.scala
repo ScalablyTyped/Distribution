@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreenviewData extends StObject {
   
   /** The application name. */
-  var appName: js.UndefOr[String] = js.native
+  var appName: js.UndefOr[String] = js.undefined
   
   /** Mobile manufacturer or branded name. Eg: "Google", "Apple" etc. */
-  var mobileDeviceBranding: js.UndefOr[String] = js.native
+  var mobileDeviceBranding: js.UndefOr[String] = js.undefined
   
   /** Mobile device model. Eg: "Pixel", "iPhone" etc. */
-  var mobileDeviceModel: js.UndefOr[String] = js.native
+  var mobileDeviceModel: js.UndefOr[String] = js.undefined
   
   /** The name of the screen. */
-  var screenName: js.UndefOr[String] = js.native
+  var screenName: js.UndefOr[String] = js.undefined
 }
 object ScreenviewData {
   

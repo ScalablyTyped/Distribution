@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowsBasedSli extends StObject {
   
   /** A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters) specifying a TimeSeries with ValueType = BOOL. The window is good if any true values appear in the window. */
-  var goodBadMetricFilter: js.UndefOr[String] = js.native
+  var goodBadMetricFilter: js.UndefOr[String] = js.undefined
   
   /** A window is good if its performance is high enough. */
-  var goodTotalRatioThreshold: js.UndefOr[PerformanceThreshold] = js.native
+  var goodTotalRatioThreshold: js.UndefOr[PerformanceThreshold] = js.undefined
   
   /** A window is good if the metric's value is in a good range, averaged across returned streams. */
-  var metricMeanInRange: js.UndefOr[MetricRange] = js.native
+  var metricMeanInRange: js.UndefOr[MetricRange] = js.undefined
   
   /** A window is good if the metric's value is in a good range, summed across returned streams. */
-  var metricSumInRange: js.UndefOr[MetricRange] = js.native
+  var metricSumInRange: js.UndefOr[MetricRange] = js.undefined
   
   /** Duration over which window quality is evaluated. Must be an integer fraction of a day and at least 60s. */
-  var windowPeriod: js.UndefOr[String] = js.native
+  var windowPeriod: js.UndefOr[String] = js.undefined
 }
 object WindowsBasedSli {
   

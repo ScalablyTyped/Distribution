@@ -2,143 +2,141 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryEvent extends StObject {
   
-  var activityFailedEventDetails: js.UndefOr[ActivityFailedEventDetails] = js.native
+  var activityFailedEventDetails: js.UndefOr[ActivityFailedEventDetails] = js.undefined
   
   /**
     * Contains details about an activity schedule event that failed during an execution.
     */
-  var activityScheduleFailedEventDetails: js.UndefOr[ActivityScheduleFailedEventDetails] = js.native
+  var activityScheduleFailedEventDetails: js.UndefOr[ActivityScheduleFailedEventDetails] = js.undefined
   
-  var activityScheduledEventDetails: js.UndefOr[ActivityScheduledEventDetails] = js.native
+  var activityScheduledEventDetails: js.UndefOr[ActivityScheduledEventDetails] = js.undefined
   
-  var activityStartedEventDetails: js.UndefOr[ActivityStartedEventDetails] = js.native
+  var activityStartedEventDetails: js.UndefOr[ActivityStartedEventDetails] = js.undefined
   
-  var activitySucceededEventDetails: js.UndefOr[ActivitySucceededEventDetails] = js.native
+  var activitySucceededEventDetails: js.UndefOr[ActivitySucceededEventDetails] = js.undefined
   
-  var activityTimedOutEventDetails: js.UndefOr[ActivityTimedOutEventDetails] = js.native
+  var activityTimedOutEventDetails: js.UndefOr[ActivityTimedOutEventDetails] = js.undefined
   
-  var executionAbortedEventDetails: js.UndefOr[ExecutionAbortedEventDetails] = js.native
+  var executionAbortedEventDetails: js.UndefOr[ExecutionAbortedEventDetails] = js.undefined
   
-  var executionFailedEventDetails: js.UndefOr[ExecutionFailedEventDetails] = js.native
+  var executionFailedEventDetails: js.UndefOr[ExecutionFailedEventDetails] = js.undefined
   
-  var executionStartedEventDetails: js.UndefOr[ExecutionStartedEventDetails] = js.native
+  var executionStartedEventDetails: js.UndefOr[ExecutionStartedEventDetails] = js.undefined
   
-  var executionSucceededEventDetails: js.UndefOr[ExecutionSucceededEventDetails] = js.native
+  var executionSucceededEventDetails: js.UndefOr[ExecutionSucceededEventDetails] = js.undefined
   
-  var executionTimedOutEventDetails: js.UndefOr[ExecutionTimedOutEventDetails] = js.native
+  var executionTimedOutEventDetails: js.UndefOr[ExecutionTimedOutEventDetails] = js.undefined
   
   /**
     * The id of the event. Events are numbered sequentially, starting at one.
     */
-  var id: EventId = js.native
+  var id: EventId
   
-  var lambdaFunctionFailedEventDetails: js.UndefOr[LambdaFunctionFailedEventDetails] = js.native
+  var lambdaFunctionFailedEventDetails: js.UndefOr[LambdaFunctionFailedEventDetails] = js.undefined
   
-  var lambdaFunctionScheduleFailedEventDetails: js.UndefOr[LambdaFunctionScheduleFailedEventDetails] = js.native
+  var lambdaFunctionScheduleFailedEventDetails: js.UndefOr[LambdaFunctionScheduleFailedEventDetails] = js.undefined
   
-  var lambdaFunctionScheduledEventDetails: js.UndefOr[LambdaFunctionScheduledEventDetails] = js.native
+  var lambdaFunctionScheduledEventDetails: js.UndefOr[LambdaFunctionScheduledEventDetails] = js.undefined
   
   /**
     * Contains details about a lambda function that failed to start during an execution.
     */
-  var lambdaFunctionStartFailedEventDetails: js.UndefOr[LambdaFunctionStartFailedEventDetails] = js.native
+  var lambdaFunctionStartFailedEventDetails: js.UndefOr[LambdaFunctionStartFailedEventDetails] = js.undefined
   
   /**
     * Contains details about a lambda function that terminated successfully during an execution.
     */
-  var lambdaFunctionSucceededEventDetails: js.UndefOr[LambdaFunctionSucceededEventDetails] = js.native
+  var lambdaFunctionSucceededEventDetails: js.UndefOr[LambdaFunctionSucceededEventDetails] = js.undefined
   
-  var lambdaFunctionTimedOutEventDetails: js.UndefOr[LambdaFunctionTimedOutEventDetails] = js.native
+  var lambdaFunctionTimedOutEventDetails: js.UndefOr[LambdaFunctionTimedOutEventDetails] = js.undefined
   
   /**
     * Contains details about an iteration of a Map state that was aborted.
     */
-  var mapIterationAbortedEventDetails: js.UndefOr[MapIterationEventDetails] = js.native
+  var mapIterationAbortedEventDetails: js.UndefOr[MapIterationEventDetails] = js.undefined
   
   /**
     * Contains details about an iteration of a Map state that failed.
     */
-  var mapIterationFailedEventDetails: js.UndefOr[MapIterationEventDetails] = js.native
+  var mapIterationFailedEventDetails: js.UndefOr[MapIterationEventDetails] = js.undefined
   
   /**
     * Contains details about an iteration of a Map state that was started.
     */
-  var mapIterationStartedEventDetails: js.UndefOr[MapIterationEventDetails] = js.native
+  var mapIterationStartedEventDetails: js.UndefOr[MapIterationEventDetails] = js.undefined
   
   /**
     * Contains details about an iteration of a Map state that succeeded.
     */
-  var mapIterationSucceededEventDetails: js.UndefOr[MapIterationEventDetails] = js.native
+  var mapIterationSucceededEventDetails: js.UndefOr[MapIterationEventDetails] = js.undefined
   
   /**
     * Contains details about Map state that was started.
     */
-  var mapStateStartedEventDetails: js.UndefOr[MapStateStartedEventDetails] = js.native
+  var mapStateStartedEventDetails: js.UndefOr[MapStateStartedEventDetails] = js.undefined
   
   /**
     * The id of the previous event.
     */
-  var previousEventId: js.UndefOr[EventId] = js.native
+  var previousEventId: js.UndefOr[EventId] = js.undefined
   
-  var stateEnteredEventDetails: js.UndefOr[StateEnteredEventDetails] = js.native
+  var stateEnteredEventDetails: js.UndefOr[StateEnteredEventDetails] = js.undefined
   
-  var stateExitedEventDetails: js.UndefOr[StateExitedEventDetails] = js.native
+  var stateExitedEventDetails: js.UndefOr[StateExitedEventDetails] = js.undefined
   
   /**
     * Contains details about the failure of a task.
     */
-  var taskFailedEventDetails: js.UndefOr[TaskFailedEventDetails] = js.native
+  var taskFailedEventDetails: js.UndefOr[TaskFailedEventDetails] = js.undefined
   
   /**
     * Contains details about a task that was scheduled.
     */
-  var taskScheduledEventDetails: js.UndefOr[TaskScheduledEventDetails] = js.native
+  var taskScheduledEventDetails: js.UndefOr[TaskScheduledEventDetails] = js.undefined
   
   /**
     * Contains details about a task that failed to start.
     */
-  var taskStartFailedEventDetails: js.UndefOr[TaskStartFailedEventDetails] = js.native
+  var taskStartFailedEventDetails: js.UndefOr[TaskStartFailedEventDetails] = js.undefined
   
   /**
     * Contains details about a task that was started.
     */
-  var taskStartedEventDetails: js.UndefOr[TaskStartedEventDetails] = js.native
+  var taskStartedEventDetails: js.UndefOr[TaskStartedEventDetails] = js.undefined
   
   /**
     * Contains details about a task that where the submit failed.
     */
-  var taskSubmitFailedEventDetails: js.UndefOr[TaskSubmitFailedEventDetails] = js.native
+  var taskSubmitFailedEventDetails: js.UndefOr[TaskSubmitFailedEventDetails] = js.undefined
   
   /**
     * Contains details about a submitted task.
     */
-  var taskSubmittedEventDetails: js.UndefOr[TaskSubmittedEventDetails] = js.native
+  var taskSubmittedEventDetails: js.UndefOr[TaskSubmittedEventDetails] = js.undefined
   
   /**
     * Contains details about a task that succeeded.
     */
-  var taskSucceededEventDetails: js.UndefOr[TaskSucceededEventDetails] = js.native
+  var taskSucceededEventDetails: js.UndefOr[TaskSucceededEventDetails] = js.undefined
   
   /**
     * Contains details about a task that timed out.
     */
-  var taskTimedOutEventDetails: js.UndefOr[TaskTimedOutEventDetails] = js.native
+  var taskTimedOutEventDetails: js.UndefOr[TaskTimedOutEventDetails] = js.undefined
   
   /**
     * The date and time the event occurred.
     */
-  var timestamp: Timestamp = js.native
+  var timestamp: Timestamp
   
   /**
     * The type of the event.
     */
-  var `type`: HistoryEventType = js.native
+  var `type`: HistoryEventType
 }
 object HistoryEvent {
   

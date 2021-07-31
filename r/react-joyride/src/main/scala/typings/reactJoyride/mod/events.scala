@@ -12,48 +12,35 @@ import typings.reactJoyride.reactJoyrideStrings.tourColonstart
 import typings.reactJoyride.reactJoyrideStrings.tourColonstatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait events extends StObject {
   
-  var BEACON: beacon = js.native
+  var BEACON: beacon
   
-  var ERROR: error = js.native
+  var ERROR: error
   
-  var STEP_AFTER: stepColonafter = js.native
+  var STEP_AFTER: stepColonafter
   
-  var STEP_BEFORE: stepColonbefore = js.native
+  var STEP_BEFORE: stepColonbefore
   
-  var TARGET_NOT_FOUND: errorColontarget_not_found = js.native
+  var TARGET_NOT_FOUND: errorColontarget_not_found
   
-  var TOOLTIP: tooltip = js.native
+  var TOOLTIP: tooltip
   
-  var TOOLTIP_CLOSE: close = js.native
+  var TOOLTIP_CLOSE: close
   
-  var TOUR_END: tourColonend = js.native
+  var TOUR_END: tourColonend
   
-  var TOUR_START: tourColonstart = js.native
+  var TOUR_START: tourColonstart
   
-  var TOUR_STATUS: tourColonstatus = js.native
+  var TOUR_STATUS: tourColonstatus
 }
 object events {
   
   @scala.inline
-  def apply(
-    BEACON: beacon,
-    ERROR: error,
-    STEP_AFTER: stepColonafter,
-    STEP_BEFORE: stepColonbefore,
-    TARGET_NOT_FOUND: errorColontarget_not_found,
-    TOOLTIP: tooltip,
-    TOOLTIP_CLOSE: close,
-    TOUR_END: tourColonend,
-    TOUR_START: tourColonstart,
-    TOUR_STATUS: tourColonstatus
-  ): events = {
-    val __obj = js.Dynamic.literal(BEACON = BEACON.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], STEP_AFTER = STEP_AFTER.asInstanceOf[js.Any], STEP_BEFORE = STEP_BEFORE.asInstanceOf[js.Any], TARGET_NOT_FOUND = TARGET_NOT_FOUND.asInstanceOf[js.Any], TOOLTIP = TOOLTIP.asInstanceOf[js.Any], TOOLTIP_CLOSE = TOOLTIP_CLOSE.asInstanceOf[js.Any], TOUR_END = TOUR_END.asInstanceOf[js.Any], TOUR_START = TOUR_START.asInstanceOf[js.Any], TOUR_STATUS = TOUR_STATUS.asInstanceOf[js.Any])
+  def apply(): events = {
+    val __obj = js.Dynamic.literal(BEACON = "beacon", ERROR = "error", STEP_AFTER = "step:after", STEP_BEFORE = "step:before", TARGET_NOT_FOUND = "error:target_not_found", TOOLTIP = "tooltip", TOOLTIP_CLOSE = "close", TOUR_END = "tour:end", TOUR_START = "tour:start", TOUR_STATUS = "tour:status")
     __obj.asInstanceOf[events]
   }
   

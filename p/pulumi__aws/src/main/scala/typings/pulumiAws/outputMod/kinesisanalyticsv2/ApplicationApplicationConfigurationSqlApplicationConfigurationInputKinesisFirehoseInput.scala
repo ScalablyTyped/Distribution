@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput extends StObject {
   
   /**
     * The ARN of the delivery stream.
     */
-  var resourceArn: String = js.native
+  var resourceArn: String
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput {
   

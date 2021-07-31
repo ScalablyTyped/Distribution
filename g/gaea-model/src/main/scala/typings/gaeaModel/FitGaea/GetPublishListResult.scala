@@ -2,17 +2,15 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPublishListResult extends StObject {
   
   // 描述
-  var description: String = js.native
+  var description: String
   
   // 版本
-  var version: String = js.native
+  var version: String
 }
 object GetPublishListResult {
   

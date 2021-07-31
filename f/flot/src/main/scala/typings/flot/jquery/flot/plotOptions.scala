@@ -2,31 +2,29 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait plotOptions extends StObject {
   
-  var colors: js.UndefOr[js.Array[_]] = js.native
+  var colors: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var grid: js.UndefOr[gridOptions] = js.native
+  var grid: js.UndefOr[gridOptions] = js.undefined
   
-  var hooks: js.UndefOr[typings.flot.jquery.flot.hooks] = js.native
+  var hooks: js.UndefOr[typings.flot.jquery.flot.hooks] = js.undefined
   
-  var interaction: js.UndefOr[typings.flot.jquery.flot.interaction] = js.native
+  var interaction: js.UndefOr[typings.flot.jquery.flot.interaction] = js.undefined
   
-  var legend: js.UndefOr[legendOptions] = js.native
+  var legend: js.UndefOr[legendOptions] = js.undefined
   
-  var series: js.UndefOr[seriesOptions] = js.native
+  var series: js.UndefOr[seriesOptions] = js.undefined
   
-  var xaxes: js.UndefOr[js.Array[axisOptions]] = js.native
+  var xaxes: js.UndefOr[js.Array[axisOptions]] = js.undefined
   
-  var xaxis: js.UndefOr[axisOptions] = js.native
+  var xaxis: js.UndefOr[axisOptions] = js.undefined
   
-  var yaxes: js.UndefOr[js.Array[axisOptions]] = js.native
+  var yaxes: js.UndefOr[js.Array[axisOptions]] = js.undefined
   
-  var yaxis: js.UndefOr[axisOptions] = js.native
+  var yaxis: js.UndefOr[axisOptions] = js.undefined
 }
 object plotOptions {
   
@@ -40,7 +38,7 @@ object plotOptions {
   implicit class plotOptionsMutableBuilder[Self <: plotOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setColors(value: js.Array[_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)

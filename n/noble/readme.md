@@ -10,8 +10,8 @@ A Node.js BLE (Bluetooth Low Energy) central library.
 | Full name          | noble |
 | Keywords           | bluetooth, BLE, bluetooth low energy, bluetooth smart, central |
 | # releases         | 0 |
-| # dependents       | 227 |
-| # downloads        | 64821 |
+| # dependents       | 228 |
+| # downloads        | 56882 |
 | # stars            | 30 |
 
 ## Links

@@ -12,7 +12,7 @@ jQuery Responsive notification plugin
 | Keywords           | jQuery, plugin, notification, responsive, messagebox, css3, animation, window, ajax loading |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 11899 |
+| # downloads        | 11592 |
 | # stars            | 0 |
 
 ## Links

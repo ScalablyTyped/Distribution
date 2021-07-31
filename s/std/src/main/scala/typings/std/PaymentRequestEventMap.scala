@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentRequestEventMap extends StObject {
   
-  var shippingaddresschange: Event = js.native
+  var shippingaddresschange: Event
   
-  var shippingoptionchange: Event = js.native
+  var shippingoptionchange: Event
 }
 object PaymentRequestEventMap {
   

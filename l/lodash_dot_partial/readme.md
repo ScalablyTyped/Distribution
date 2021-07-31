@@ -11,8 +11,8 @@ The lodash method `_.partial` exported as a module.
 | Full name          | lodash.partial |
 | Keywords           | lodash-modularized, partial |
 | # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 8529689 |
+| # dependents       | 79 |
+| # downloads        | 7870206 |
 | # stars            | 0 |
 
 ## Links

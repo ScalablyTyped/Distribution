@@ -2,22 +2,21 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Blocks movement of all creeps.
   */
-@js.native
 trait StructureWall
-  extends Structure[STRUCTURE_WALL]
+  extends StObject
+     with Structure[STRUCTURE_WALL]
      with AnyStructure
      with ConcreteStructure[js.Any] {
   
   /**
     * The amount of game ticks when the wall will disappear (only for automatically placed border walls at the start of the game).
     */
-  var ticksToLive: Double = js.native
+  var ticksToLive: Double
 }
 object StructureWall {
   

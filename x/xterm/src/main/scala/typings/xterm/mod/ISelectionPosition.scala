@@ -2,34 +2,32 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object representing a selection within the terminal.
   */
-@js.native
 trait ISelectionPosition extends StObject {
   
   /**
     * The end column of the selection.
     */
-  var endColumn: Double = js.native
+  var endColumn: Double
   
   /**
     * The end row of the selection.
     */
-  var endRow: Double = js.native
+  var endRow: Double
   
   /**
     * The start column of the selection.
     */
-  var startColumn: Double = js.native
+  var startColumn: Double
   
   /**
     * The start row of the selection.
     */
-  var startRow: Double = js.native
+  var startRow: Double
 }
 object ISelectionPosition {
   

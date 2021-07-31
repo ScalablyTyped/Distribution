@@ -3,29 +3,27 @@ package typings.firebaseAdmin.messagingMod.messaging
 import typings.firebaseAdmin.firebaseNamespaceApiMod.FirebaseArrayIndexError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingTopicManagementResponse extends StObject {
   
   /**
     * An array of errors corresponding to the provided registration token(s). The
     * length of this array will be equal to [`failureCount`](#failureCount).
     */
-  var errors: js.Array[FirebaseArrayIndexError] = js.native
+  var errors: js.Array[FirebaseArrayIndexError]
   
   /**
     * The number of registration tokens that could not be subscribed to the topic
     * and resulted in an error.
     */
-  var failureCount: Double = js.native
+  var failureCount: Double
   
   /**
     * The number of registration tokens that were successfully subscribed to the
     * topic.
     */
-  var successCount: Double = js.native
+  var successCount: Double
 }
 object MessagingTopicManagementResponse {
   

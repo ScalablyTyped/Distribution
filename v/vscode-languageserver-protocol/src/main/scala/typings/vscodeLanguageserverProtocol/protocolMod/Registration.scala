@@ -2,27 +2,25 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Registration extends StObject {
   
   /**
     * The id used to register the request. The id can be used to deregister
     * the request again.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The method to register for.
     */
-  var method: String = js.native
+  var method: String
   
   /**
     * Options necessary for the registration.
     */
-  var registerOptions: js.UndefOr[js.Any] = js.native
+  var registerOptions: js.UndefOr[js.Any] = js.undefined
 }
 object Registration {
   

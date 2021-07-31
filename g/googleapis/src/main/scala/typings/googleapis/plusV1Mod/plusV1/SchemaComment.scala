@@ -6,69 +6,67 @@ import typings.googleapis.anon.Verification
 import typings.googleapis.anon.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaComment extends StObject {
   
   /**
     * The person who posted this comment.
     */
-  var actor: js.UndefOr[Verification] = js.native
+  var actor: js.UndefOr[Verification] = js.undefined
   
   /**
     * ETag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of this comment.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The activity this comment replied to.
     */
-  var inReplyTo: js.UndefOr[js.Array[IdUrl]] = js.native
+  var inReplyTo: js.UndefOr[js.Array[IdUrl]] = js.undefined
   
   /**
     * Identifies this resource as a comment. Value: &quot;plus#comment&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The object of this comment.
     */
-  var `object`: js.UndefOr[ObjectType] = js.native
+  var `object`: js.UndefOr[ObjectType] = js.undefined
   
   /**
     * People who +1&#39;d this comment.
     */
-  var plusoners: js.UndefOr[`7`] = js.native
+  var plusoners: js.UndefOr[`7`] = js.undefined
   
   /**
     * The time at which this comment was initially published. Formatted as an
     * RFC 3339 timestamp.
     */
-  var published: js.UndefOr[String] = js.native
+  var published: js.UndefOr[String] = js.undefined
   
   /**
     * Link to this comment resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which this comment was last updated. Formatted as an RFC 3339
     * timestamp.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /**
     * This comment&#39;s verb, indicating what action was performed. Possible
     * values are:   - &quot;post&quot; - Publish content to the stream.
     */
-  var verb: js.UndefOr[String] = js.native
+  var verb: js.UndefOr[String] = js.undefined
 }
 object SchemaComment {
   

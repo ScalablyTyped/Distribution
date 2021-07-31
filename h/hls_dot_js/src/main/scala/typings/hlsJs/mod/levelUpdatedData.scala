@@ -2,15 +2,13 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait levelUpdatedData extends StObject {
   
-  var details: LevelDetails = js.native
+  var details: LevelDetails
   
-  var level: Double = js.native
+  var level: Double
 }
 object levelUpdatedData {
   

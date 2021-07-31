@@ -2,41 +2,39 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Update extends StObject {
   
   /**
     * The Unix epoch timestamp in seconds for when the update was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.native
+  var createdAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Any errors associated with a Failed update.
     */
-  var errors: js.UndefOr[ErrorDetails] = js.native
+  var errors: js.UndefOr[ErrorDetails] = js.undefined
   
   /**
     * A UUID that is used to track the update.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A key-value map that contains the parameters associated with the update.
     */
-  var params: js.UndefOr[UpdateParams] = js.native
+  var params: js.UndefOr[UpdateParams] = js.undefined
   
   /**
     * The current status of the update.
     */
-  var status: js.UndefOr[UpdateStatus] = js.native
+  var status: js.UndefOr[UpdateStatus] = js.undefined
   
   /**
     * The type of the update.
     */
-  var `type`: js.UndefOr[UpdateType] = js.native
+  var `type`: js.UndefOr[UpdateType] = js.undefined
 }
 object Update {
   

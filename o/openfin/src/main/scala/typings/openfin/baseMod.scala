@@ -8,7 +8,6 @@ import typings.openfin.transportMod.default
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
@@ -403,17 +402,21 @@ object baseMod {
   
   @JSImport("openfin/_v2/api/base", "Reply")
   @js.native
-  class Reply[TOPIC /* <: String */, TYPE /* <: String | Unit */] () extends Identity {
+  class Reply[TOPIC /* <: String */, TYPE /* <: String | Unit */] ()
+    extends StObject
+       with Identity {
     
     var topic: TOPIC = js.native
     
     var `type`: TYPE = js.native
+    
+    /* CompleteClass */
+    var uuid: String = js.native
   }
   
-  @js.native
   trait SubOptions extends StObject {
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
   }
   object SubOptions {
     

@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents accept language information used in the Accept-Language HTTP header on an HTTP request. */
-@js.native
 trait HttpLanguageRangeWithQualityHeaderValue extends StObject {
   
   /** Gets the value of the language-range information from the HttpLanguageRangeWithQualityHeaderValue used in the Accept-Language HTTP header. */
-  var languageRange: String = js.native
+  var languageRange: String
   
   /** Gets the value of the qvalue or quality factor from the HttpLanguageRangeWithQualityHeaderValue used in the Accept-Language HTTP header. */
-  var quality: Double = js.native
+  var quality: Double
 }
 object HttpLanguageRangeWithQualityHeaderValue {
   

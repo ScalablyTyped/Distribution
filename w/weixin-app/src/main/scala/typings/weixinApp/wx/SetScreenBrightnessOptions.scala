@@ -2,17 +2,16 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // 设备-----屏幕亮度
-@js.native
 trait SetScreenBrightnessOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 屏幕亮度值，范围 0~1，0 最暗，1 最亮 */
-  var value: Double = js.native
+  var value: Double
 }
 object SetScreenBrightnessOptions {
   

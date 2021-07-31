@@ -2,13 +2,11 @@ package typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Alternative hypotheses (a.k.a. n-best list).
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative extends StObject {
   
   /**
@@ -19,17 +17,17 @@ trait SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative extends S
     * field as it is not guaranteed to be accurate or consistent. The default
     * of 0.0 is a sentinel value indicating `confidence` was not set.
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Transcript text representing the words that the user spoke.
     */
-  var transcript: js.UndefOr[String] = js.native
+  var transcript: js.UndefOr[String] = js.undefined
   
   /**
     * A list of word-specific information for each recognized word.
     */
-  var words: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1WordInfo]] = js.native
+  var words: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1WordInfo]] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative {
   

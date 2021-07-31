@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackParameters extends StObject {
   
-  var ParameterKey: String = js.native
+  var ParameterKey: String
   
-  var ParameterValue: String = js.native
+  var ParameterValue: String
 }
 object StackParameters {
   

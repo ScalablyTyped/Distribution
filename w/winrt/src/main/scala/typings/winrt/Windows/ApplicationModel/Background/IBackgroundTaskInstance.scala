@@ -2,25 +2,23 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBackgroundTaskInstance extends StObject {
   
-  def getDeferral(): BackgroundTaskDeferral = js.native
+  def getDeferral(): BackgroundTaskDeferral
   
-  var instanceId: String = js.native
+  var instanceId: String
   
-  var oncanceled: js.Any = js.native
+  var oncanceled: js.Any
   
-  var progress: Double = js.native
+  var progress: Double
   
-  var suspendedCount: Double = js.native
+  var suspendedCount: Double
   
-  var task: BackgroundTaskRegistration = js.native
+  var task: BackgroundTaskRegistration
   
-  var triggerDetails: js.Any = js.native
+  var triggerDetails: js.Any
 }
 object IBackgroundTaskInstance {
   

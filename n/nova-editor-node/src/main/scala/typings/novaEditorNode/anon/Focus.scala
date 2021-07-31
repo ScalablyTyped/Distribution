@@ -2,17 +2,15 @@ package typings.novaEditorNode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Focus extends StObject {
   
-  var focus: js.UndefOr[Boolean] = js.native
+  var focus: js.UndefOr[Boolean] = js.undefined
   
-  var reveal: js.UndefOr[Double] = js.native
+  var reveal: js.UndefOr[Double] = js.undefined
   
-  var select: js.UndefOr[Boolean] = js.native
+  var select: js.UndefOr[Boolean] = js.undefined
 }
 object Focus {
   

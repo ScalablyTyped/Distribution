@@ -4,17 +4,17 @@ import typings.mongorito.anon.Args
 import typings.mongorito.mod.ActionTypes.CALL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CallAction extends Action {
+trait CallAction
+  extends StObject
+     with Action {
   
-  var args: js.Array[Args] = js.native
+  var args: js.Array[Args]
   
-  var method: String = js.native
+  var method: String
   
-  var `type`: CALL = js.native
+  var `type`: CALL
 }
 object CallAction {
   

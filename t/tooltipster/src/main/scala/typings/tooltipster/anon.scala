@@ -3,23 +3,21 @@ package typings.tooltipster
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
     /** this is the distance between the bottom side of the origin and the top of the viewport */
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
     /** this is the distance between the right side of the origin and the left of the viewport */
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -46,42 +44,41 @@ object anon {
     }
   }
   
-  @js.native
   trait Click extends StObject {
     
     /**
       * When a mouse click happens anywhere in the page. However, if the interactive option is set to true, 
       * a click happening inside the tooltip will not close it.
       */
-    var click: js.UndefOr[Boolean] = js.native
+    var click: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When the mouse goes away from the origin. The delay option is taken into account as the delay before 
       * closing.
       */
-    var mouseleave: js.UndefOr[Boolean] = js.native
+    var mouseleave: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When the origin is clicked by a mouse. This mimics a behavior that browsers usually have and is meant 
       * to be used with the mouseenter open trigger.
       */
-    var originClick: js.UndefOr[Boolean] = js.native
+    var originClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When scrolling happens in the window or in a scrollable area which is a parent of the origin.
       */
-    var scroll: js.UndefOr[Boolean] = js.native
+    var scroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When the finger taps (ie presses and releases) anywhere in the touch screen.
       */
-    var tap: js.UndefOr[Boolean] = js.native
+    var tap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When the finger is removed from the touch screen or if the interaction was stopped by the device. The 
       * delayTouch option is taken into account as the delay before closing.
       */
-    var touchleave: js.UndefOr[Boolean] = js.native
+    var touchleave: js.UndefOr[Boolean] = js.undefined
   }
   object Click {
     
@@ -132,26 +129,25 @@ object anon {
     }
   }
   
-  @js.native
   trait FixedLineage extends StObject {
     
     /** the origin has a fixed lineage if itself or one of its ancestors has a fixed position */
-    var fixedLineage: Boolean = js.native
+    var fixedLineage: Boolean
     
-    var offset: Bottom = js.native
+    var offset: Bottom
     
-    var size: Height = js.native
+    var size: Height
     
     /** if the origin is a map area, this will hold the associated image element */
-    var usemapImage: HTMLImageElement | Null = js.native
+    var usemapImage: HTMLImageElement | Null
     
-    var windowOffset: Bottom = js.native
+    var windowOffset: Bottom
   }
   object FixedLineage {
     
     @scala.inline
     def apply(fixedLineage: Boolean, offset: Bottom, size: Height, windowOffset: Bottom): FixedLineage = {
-      val __obj = js.Dynamic.literal(fixedLineage = fixedLineage.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], windowOffset = windowOffset.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(fixedLineage = fixedLineage.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], windowOffset = windowOffset.asInstanceOf[js.Any], usemapImage = null)
       __obj.asInstanceOf[FixedLineage]
     }
     
@@ -178,12 +174,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -204,12 +199,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Left {
     
@@ -230,30 +224,29 @@ object anon {
     }
   }
   
-  @js.native
   trait Mouseenter extends StObject {
     
     /**
       * When the origin is clicked by a mouse.
       */
-    var click: js.UndefOr[Boolean] = js.native
+    var click: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When a mouse comes over the origin. The delay option is taken into account as the delay before 
       * opening.
       */
-    var mouseenter: js.UndefOr[Boolean] = js.native
+    var mouseenter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When the origin is tapped (ie pressed and then released) on a touch screen.
       */
-    var tap: js.UndefOr[Boolean] = js.native
+    var tap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When the origin is pressed on a touch screen. The delayTouch option is taken into account as the 
       * delay before opening.
       */
-    var touchstart: js.UndefOr[Boolean] = js.native
+    var touchstart: js.UndefOr[Boolean] = js.undefined
   }
   object Mouseenter {
     
@@ -292,12 +285,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Scroll extends StObject {
     
-    var scroll: Left = js.native
+    var scroll: Left
     
-    var size: Height = js.native
+    var size: Height
   }
   object Scroll {
     
@@ -318,10 +310,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var size: Height = js.native
+    var size: Height
   }
   object Size {
     

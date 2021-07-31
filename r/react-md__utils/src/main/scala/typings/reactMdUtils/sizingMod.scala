@@ -24,10 +24,13 @@ import typings.std.HTMLElement
 import typings.std.OrientationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sizingMod {
+  
+  @JSImport("@react-md/utils/types/sizing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/utils/types/sizing", "AppSizeContext")
   @js.native
@@ -35,11 +38,14 @@ object sizingMod {
   
   object AppSizeListener {
     
-    @JSImport("@react-md/utils/types/sizing", "AppSizeListener")
-    @js.native
+    @scala.inline
     def apply(
       hasChildrenOnChangePhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize: AppSizeListenerProps
-    ): ReactElement = js.native
+    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOnChangePhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
+    @JSImport("@react-md/utils/types/sizing", "AppSizeListener")
+    @js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -135,9 +141,12 @@ object sizingMod {
   
   object ResizeListener {
     
+    @scala.inline
+    def apply(hasOnResizeOptionsImmediate: ResizeListenerProps): Null = ^.asInstanceOf[js.Dynamic].apply(hasOnResizeOptionsImmediate.asInstanceOf[js.Any]).asInstanceOf[Null]
+    
     @JSImport("@react-md/utils/types/sizing", "ResizeListener")
     @js.native
-    def apply(hasOnResizeOptionsImmediate: ResizeListenerProps): Null = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -167,9 +176,12 @@ object sizingMod {
   
   object ResizeObserver {
     
+    @scala.inline
+    def apply(hasDisableHeightDisableWidthClassNameComponentTargetOnResize: ResizeObserverProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasDisableHeightDisableWidthClassNameComponentTargetOnResize.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@react-md/utils/types/sizing", "ResizeObserver")
     @js.native
-    def apply(hasDisableHeightDisableWidthClassNameComponentTargetOnResize: ResizeObserverProps): ReactElement | Null = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -213,92 +225,61 @@ object sizingMod {
   @js.native
   val TabletOnly: FC[MediaOnlyProps] = js.native
   
-  @JSImport("@react-md/utils/types/sizing", "getOrientationType")
-  @js.native
-  def getOrientationType(): OrientationType = js.native
+  @scala.inline
+  def getOrientationType(): OrientationType = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrientationType")().asInstanceOf[OrientationType]
   
-  @JSImport("@react-md/utils/types/sizing", "toWidthPart")
-  @js.native
-  def toWidthPart_max(v: js.UndefOr[QuerySize], prefix: max): String = js.native
-  @JSImport("@react-md/utils/types/sizing", "toWidthPart")
-  @js.native
-  def toWidthPart_min(v: js.UndefOr[QuerySize], prefix: min): String = js.native
+  @scala.inline
+  def toWidthPart_max(v: Unit, prefix: max): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toWidthPart")(v.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toWidthPart_max(v: QuerySize, prefix: max): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toWidthPart")(v.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@react-md/utils/types/sizing", "useAppSize")
-  @js.native
-  def useAppSize(): AppSize = js.native
+  @scala.inline
+  def toWidthPart_min(v: Unit, prefix: min): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toWidthPart")(v.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toWidthPart_min(v: QuerySize, prefix: min): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toWidthPart")(v.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@react-md/utils/types/sizing", "useAppSizeMedia")
-  @js.native
-  def useAppSizeMedia(): AppSize = js.native
-  @JSImport("@react-md/utils/types/sizing", "useAppSizeMedia")
-  @js.native
+  @scala.inline
+  def useAppSize(): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSize")().asInstanceOf[AppSize]
+  
+  @scala.inline
+  def useAppSizeMedia(): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")().asInstanceOf[AppSize]
+  @scala.inline
   def useAppSizeMedia(
     hasPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize: AppSizeOptions
-  ): AppSize = js.native
+  ): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")(hasPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize.asInstanceOf[js.Any]).asInstanceOf[AppSize]
   
-  @JSImport("@react-md/utils/types/sizing", "useMediaQuery")
-  @js.native
-  def useMediaQuery(query: String): Boolean = js.native
-  @JSImport("@react-md/utils/types/sizing", "useMediaQuery")
-  @js.native
-  def useMediaQuery(
-    query: String,
-    defaultValue: js.UndefOr[scala.Nothing],
-    disabled: js.UndefOr[scala.Nothing],
-    checkImmediately: Boolean
-  ): Boolean = js.native
-  @JSImport("@react-md/utils/types/sizing", "useMediaQuery")
-  @js.native
-  def useMediaQuery(query: String, defaultValue: js.UndefOr[scala.Nothing], disabled: Boolean): Boolean = js.native
-  @JSImport("@react-md/utils/types/sizing", "useMediaQuery")
-  @js.native
-  def useMediaQuery(
-    query: String,
-    defaultValue: js.UndefOr[scala.Nothing],
-    disabled: Boolean,
-    checkImmediately: Boolean
-  ): Boolean = js.native
-  @JSImport("@react-md/utils/types/sizing", "useMediaQuery")
-  @js.native
-  def useMediaQuery(query: String, defaultValue: Boolean): Boolean = js.native
-  @JSImport("@react-md/utils/types/sizing", "useMediaQuery")
-  @js.native
-  def useMediaQuery(
-    query: String,
-    defaultValue: Boolean,
-    disabled: js.UndefOr[scala.Nothing],
-    checkImmediately: Boolean
-  ): Boolean = js.native
-  @JSImport("@react-md/utils/types/sizing", "useMediaQuery")
-  @js.native
-  def useMediaQuery(query: String, defaultValue: Boolean, disabled: Boolean): Boolean = js.native
-  @JSImport("@react-md/utils/types/sizing", "useMediaQuery")
-  @js.native
-  def useMediaQuery(query: String, defaultValue: Boolean, disabled: Boolean, checkImmediately: Boolean): Boolean = js.native
+  @scala.inline
+  def useMediaQuery(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def useMediaQuery(query: String, defaultValue: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def useMediaQuery(query: String, defaultValue: Boolean, disabled: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def useMediaQuery(query: String, defaultValue: Boolean, disabled: Boolean, checkImmediately: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], checkImmediately.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def useMediaQuery(query: String, defaultValue: Boolean, disabled: Unit, checkImmediately: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], checkImmediately.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def useMediaQuery(query: String, defaultValue: Unit, disabled: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def useMediaQuery(query: String, defaultValue: Unit, disabled: Boolean, checkImmediately: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], checkImmediately.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def useMediaQuery(query: String, defaultValue: Unit, disabled: Unit, checkImmediately: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], checkImmediately.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@react-md/utils/types/sizing", "useOrientation")
-  @js.native
-  def useOrientation(): OrientationType = js.native
-  @JSImport("@react-md/utils/types/sizing", "useOrientation")
-  @js.native
-  def useOrientation(defaultValue: OrientationType): OrientationType = js.native
+  @scala.inline
+  def useOrientation(): OrientationType = ^.asInstanceOf[js.Dynamic].applyDynamic("useOrientation")().asInstanceOf[OrientationType]
+  @scala.inline
+  def useOrientation(defaultValue: OrientationType): OrientationType = ^.asInstanceOf[js.Dynamic].applyDynamic("useOrientation")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[OrientationType]
   
-  @JSImport("@react-md/utils/types/sizing", "useResizeListener")
-  @js.native
-  def useResizeListener(hasOnResizeOptionsImmediateEnabled: ResizeListenerOptions): Unit = js.native
+  @scala.inline
+  def useResizeListener(hasOnResizeOptionsImmediateEnabled: ResizeListenerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeListener")(hasOnResizeOptionsImmediateEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@react-md/utils/types/sizing", "useResizeObserver")
-  @js.native
-  def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E]): EnsuredRefs[E] = js.native
-  @JSImport("@react-md/utils/types/sizing", "useResizeObserver")
-  @js.native
-  def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E], options: UseResizeObserverOptions[E]): EnsuredRefs[E] = js.native
-  @JSImport("@react-md/utils/types/sizing", "useResizeObserver")
-  @js.native
-  def useResizeObserver[E /* <: HTMLElement */](options: UseResizeObserverV1Options[E]): Unit = js.native
+  @scala.inline
+  def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E]): EnsuredRefs[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any]).asInstanceOf[EnsuredRefs[E]]
+  @scala.inline
+  def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E], options: UseResizeObserverOptions[E]): EnsuredRefs[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EnsuredRefs[E]]
+  @scala.inline
+  def useResizeObserver[E /* <: HTMLElement */](options: UseResizeObserverV1Options[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@react-md/utils/types/sizing", "useWidthMediaQuery")
-  @js.native
-  def useWidthMediaQuery(hasMinMax: WidthMediaQuery with WidthMediaQuerys): Boolean = js.native
+  @scala.inline
+  def useWidthMediaQuery(hasMinMax: WidthMediaQuery & WidthMediaQuerys): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useWidthMediaQuery")(hasMinMax.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

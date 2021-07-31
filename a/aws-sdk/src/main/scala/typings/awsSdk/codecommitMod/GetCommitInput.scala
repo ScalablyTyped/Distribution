@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCommitInput extends StObject {
   
   /**
     * The commit ID. Commit IDs are the full SHA ID of the commit.
     */
-  var commitId: ObjectId = js.native
+  var commitId: ObjectId
   
   /**
     * The name of the repository to which the commit was made.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object GetCommitInput {
   

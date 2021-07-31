@@ -3,31 +3,29 @@ package typings.baiduApp.swan.ai
 import typings.baiduApp.swan.DataResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoiceRecognizerTask extends StObject {
   
   // 停止;
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   // 识别完成;
-  def onError(callback: js.Function1[/* res */ VoiceErrorResponse, Unit]): Unit = js.native
+  def onError(callback: js.Function1[/* res */ VoiceErrorResponse, Unit]): Unit
   
   // ;有识别结果返回
-  def onFinish(callback: js.Function1[/* res */ DataResponse, Unit]): Unit = js.native
+  def onFinish(callback: js.Function1[/* res */ DataResponse, Unit]): Unit
   
   // 引擎准备就绪，可以开始说话;
-  def onRecognize(callback: js.Function1[/* res */ VoiceRecognizeResponse, Unit]): Unit = js.native
+  def onRecognize(callback: js.Function1[/* res */ VoiceRecognizeResponse, Unit]): Unit
   
   // 取消;
-  def onStart(callback: js.Function0[Unit]): Unit = js.native
+  def onStart(callback: js.Function0[Unit]): Unit
   
-  def start(options: VoiceRecognizerStart): Unit = js.native
+  def start(options: VoiceRecognizerStart): Unit
   
   // 开始;
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object VoiceRecognizerTask {
   

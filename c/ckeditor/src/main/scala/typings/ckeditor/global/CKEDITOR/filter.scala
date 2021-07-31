@@ -4,13 +4,13 @@ import typings.ckeditor.CKEDITOR.filter.allowedContentRules
 import typings.ckeditor.CKEDITOR.filter.transformationTools
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CKEDITOR.filter")
 @js.native
 class filter protected ()
-  extends typings.ckeditor.CKEDITOR.filter {
+  extends StObject
+     with typings.ckeditor.CKEDITOR.filter {
   def this(editorOrRules: typings.ckeditor.CKEDITOR.editor) = this()
   def this(editorOrRules: allowedContentRules) = this()
 }

@@ -8,24 +8,25 @@ import typings.node.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("hashring", JSImport.Namespace)
   @js.native
-  class ^ protected () extends HashRing {
+  class ^ protected ()
+    extends StObject
+       with HashRing {
     def this(servers: Servers) = this()
     def this(servers: Servers, algorithm: String) = this()
     def this(servers: Servers, algorithm: js.Function1[/* key */ String, String | Buffer]) = this()
-    def this(servers: Servers, algorithm: js.UndefOr[scala.Nothing], options: PartialHashRingOptions) = this()
     def this(servers: Servers, algorithm: String, options: PartialHashRingOptions) = this()
     def this(
       servers: Servers,
       algorithm: js.Function1[/* key */ String, String | Buffer],
       options: PartialHashRingOptions
     ) = this()
+    def this(servers: Servers, algorithm: Unit, options: PartialHashRingOptions) = this()
   }
   
   @js.native
@@ -79,9 +80,9 @@ object mod {
       * @param unique Don't return duplicate servers. Defaults to true.
       */
     def range(key: String): js.Array[String] = js.native
-    def range(key: String, size: js.UndefOr[scala.Nothing], unique: Boolean): js.Array[String] = js.native
     def range(key: String, size: Double): js.Array[String] = js.native
     def range(key: String, size: Double, unique: Boolean): js.Array[String] = js.native
+    def range(key: String, size: Unit, unique: Boolean): js.Array[String] = js.native
     
     /**
       * Remove a server from the hash ring.
@@ -104,7 +105,6 @@ object mod {
     def swap(from: String, to: String): this.type = js.native
   }
   
-  @js.native
   trait HashRingOptions extends StObject {
     
     /**
@@ -118,13 +118,13 @@ object mod {
       *
       * Set this to `hash_ring` if you want to use 3.
       */
-    var compatibility: hash_ring | ketama = js.native
+    var compatibility: hash_ring | ketama
     
     /**
       * The default port number which will removed from the server address
       * to provide ketama compatibility.
       */
-    var `default port`: Double = js.native
+    var `default port`: Double
     
     /**
       * We use a simple LRU cache
@@ -133,20 +133,20 @@ object mod {
       *
       * It defaults to 5000.
       */
-    var `max cache size`: Double = js.native
+    var `max cache size`: Double
     
     /**
       * The amount of replicas per server.
       * Defaults to 4.
       */
-    var replicas: Double = js.native
+    var replicas: Double
     
     /**
       * The amount of virtual nodes per server,
       * defaults to 40 as this generates 160 points per server
       * as used by ketama hashing.
       */
-    var `vnode count`: Double = js.native
+    var `vnode count`: Double
   }
   object HashRingOptions {
     
@@ -185,12 +185,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ServerConfig extends StObject {
     
-    var vnodes: Double = js.native
+    var vnodes: Double
     
-    var weight: Double = js.native
+    var weight: Double
   }
   object ServerConfig {
     

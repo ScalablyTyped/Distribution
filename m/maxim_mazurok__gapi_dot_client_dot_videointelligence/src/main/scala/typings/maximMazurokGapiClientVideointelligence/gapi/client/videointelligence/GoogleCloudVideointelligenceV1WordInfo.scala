@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1WordInfo extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait GoogleCloudVideointelligenceV1WordInfo extends StObject {
     * the top alternative. This field is not guaranteed to be accurate and users should not rely on it to be always provided. The default of 0.0 is a sentinel value indicating
     * `confidence` was not set.
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Time offset relative to the beginning of the audio, and corresponding to the end of the spoken word. This field is only set if `enable_word_time_offsets=true` and only in the top
     * hypothesis. This is an experimental feature and the accuracy of the time offset can vary.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A distinct integer value is assigned for every speaker within the audio. This field specifies which one of those speakers was detected to have spoken this word. Value
     * ranges from 1 up to diarization_speaker_count, and is only set if speaker diarization is enabled.
     */
-  var speakerTag: js.UndefOr[Double] = js.native
+  var speakerTag: js.UndefOr[Double] = js.undefined
   
   /**
     * Time offset relative to the beginning of the audio, and corresponding to the start of the spoken word. This field is only set if `enable_word_time_offsets=true` and only in the top
     * hypothesis. This is an experimental feature and the accuracy of the time offset can vary.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** The word corresponding to this set of information. */
-  var word: js.UndefOr[String] = js.native
+  var word: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1WordInfo {
   

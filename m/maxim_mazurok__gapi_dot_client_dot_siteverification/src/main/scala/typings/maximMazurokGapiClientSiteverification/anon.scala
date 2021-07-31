@@ -4,37 +4,35 @@ import typings.maximMazurokGapiClientSiteverification.gapi.client.siteverificati
 import typings.maximMazurokGapiClientSiteverification.gapi.client.siteverification.SiteVerificationWebResourceResource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alt extends StObject {
     
     /** Data format for the response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** The id of a verified site or domain. */
-    var id: String = js.native
+    var id: String
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Deprecated. Please use quotaUser instead. */
-    var userIp: js.UndefOr[String] = js.native
+    var userIp: js.UndefOr[String] = js.undefined
   }
   object Alt {
     
@@ -94,32 +92,31 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /** Data format for the response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: SiteVerificationWebResourceGettokenRequest = js.native
+    var resource: SiteVerificationWebResourceGettokenRequest
     
     /** Deprecated. Please use quotaUser instead. */
-    var userIp: js.UndefOr[String] = js.native
+    var userIp: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -179,35 +176,34 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
     /** Data format for the response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** The id of a verified site or domain. */
-    var id: String = js.native
+    var id: String
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: SiteVerificationWebResourceResource = js.native
+    var resource: SiteVerificationWebResourceResource
     
     /** Deprecated. Please use quotaUser instead. */
-    var userIp: js.UndefOr[String] = js.native
+    var userIp: js.UndefOr[String] = js.undefined
   }
   object Id {
     
@@ -270,14 +266,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Identifier extends StObject {
     
     /** The site identifier. If the type is set to SITE, the identifier is a URL. If the type is set to INET_DOMAIN, the site identifier is a domain name. */
-    var identifier: js.UndefOr[String] = js.native
+    var identifier: js.UndefOr[String] = js.undefined
     
     /** The site type. Can be SITE or INET_DOMAIN (domain name). */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Identifier {
     
@@ -304,29 +299,28 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
     /** Data format for the response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Deprecated. Please use quotaUser instead. */
-    var userIp: js.UndefOr[String] = js.native
+    var userIp: js.UndefOr[String] = js.undefined
   }
   object Key {
     
@@ -383,35 +377,34 @@ object anon {
     }
   }
   
-  @js.native
   trait Oauthtoken extends StObject {
     
     /** Data format for the response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: SiteVerificationWebResourceResource = js.native
+    var resource: SiteVerificationWebResourceResource
     
     /** Deprecated. Please use quotaUser instead. */
-    var userIp: js.UndefOr[String] = js.native
+    var userIp: js.UndefOr[String] = js.undefined
     
     /** The method to use for verifying a site or domain. */
-    var verificationMethod: String = js.native
+    var verificationMethod: String
   }
   object Oauthtoken {
     
@@ -474,32 +467,31 @@ object anon {
     }
   }
   
-  @js.native
   trait PrettyPrint extends StObject {
     
     /** Data format for the response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Deprecated. Please use quotaUser instead. */
-    var userIp: js.UndefOr[String] = js.native
+    var userIp: js.UndefOr[String] = js.undefined
     
     /** The method to use for verifying a site or domain. */
-    var verificationMethod: String = js.native
+    var verificationMethod: String
   }
   object PrettyPrint {
     

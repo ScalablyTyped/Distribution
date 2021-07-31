@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * offers some settings which are allowed even for objects which are not yet inserted into a draw page.
   * @deprecated Deprecatedreplaced by com::sun::star::lang::XServiceName
   */
-@js.native
-trait XShapeDescriptor extends XInterface {
+trait XShapeDescriptor
+  extends StObject
+     with XInterface {
   
   /** @returns the programmatic name of the shape type. */
-  val ShapeType: String = js.native
+  val ShapeType: String
   
   /** @returns the programmatic name of the shape type. */
-  def getShapeType(): String = js.native
+  def getShapeType(): String
 }
 object XShapeDescriptor {
   

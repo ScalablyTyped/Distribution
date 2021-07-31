@@ -2,19 +2,19 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesFlushSyncedParams extends GenericParams {
+trait IndicesFlushSyncedParams
+  extends StObject
+     with GenericParams {
   
-  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
   
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: NameList = js.native
+  var index: NameList
 }
 object IndicesFlushSyncedParams {
   

@@ -6,30 +6,23 @@ import typings.chromeApps.chromeAppsStrings.MAX_ATTEMPTS_EXCEEDED
 import typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INVALIDPIN extends StObject {
   
-  var INVALID_PIN: typings.chromeApps.chromeAppsStrings.INVALID_PIN = js.native
+  var INVALID_PIN: typings.chromeApps.chromeAppsStrings.INVALID_PIN
   
-  var INVALID_PUK: typings.chromeApps.chromeAppsStrings.INVALID_PUK = js.native
+  var INVALID_PUK: typings.chromeApps.chromeAppsStrings.INVALID_PUK
   
-  var MAX_ATTEMPTS_EXCEEDED: typings.chromeApps.chromeAppsStrings.MAX_ATTEMPTS_EXCEEDED = js.native
+  var MAX_ATTEMPTS_EXCEEDED: typings.chromeApps.chromeAppsStrings.MAX_ATTEMPTS_EXCEEDED
   
-  var UNKNOWN_ERROR: typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR = js.native
+  var UNKNOWN_ERROR: typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR
 }
 object INVALIDPIN {
   
   @scala.inline
-  def apply(
-    INVALID_PIN: INVALID_PIN,
-    INVALID_PUK: INVALID_PUK,
-    MAX_ATTEMPTS_EXCEEDED: MAX_ATTEMPTS_EXCEEDED,
-    UNKNOWN_ERROR: UNKNOWN_ERROR
-  ): INVALIDPIN = {
-    val __obj = js.Dynamic.literal(INVALID_PIN = INVALID_PIN.asInstanceOf[js.Any], INVALID_PUK = INVALID_PUK.asInstanceOf[js.Any], MAX_ATTEMPTS_EXCEEDED = MAX_ATTEMPTS_EXCEEDED.asInstanceOf[js.Any], UNKNOWN_ERROR = UNKNOWN_ERROR.asInstanceOf[js.Any])
+  def apply(): INVALIDPIN = {
+    val __obj = js.Dynamic.literal(INVALID_PIN = "INVALID_PIN", INVALID_PUK = "INVALID_PUK", MAX_ATTEMPTS_EXCEEDED = "MAX_ATTEMPTS_EXCEEDED", UNKNOWN_ERROR = "UNKNOWN_ERROR")
     __obj.asInstanceOf[INVALIDPIN]
   }
   

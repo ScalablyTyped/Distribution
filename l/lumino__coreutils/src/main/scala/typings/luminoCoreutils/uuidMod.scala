@@ -2,12 +2,15 @@ package typings.luminoCoreutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uuidMod {
   
   object UUID {
+    
+    @JSImport("@lumino/coreutils/types/uuid", "UUID")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A function which generates UUID v4 identifiers.
@@ -21,8 +24,7 @@ object uuidMod {
       * turn will use the underlying `crypto` module of the platform if
       * it is available. The fallback for randomness is `Math.random`.
       */
-    @JSImport("@lumino/coreutils/types/uuid", "UUID.uuid4")
-    @js.native
-    def uuid4(): String = js.native
+    @scala.inline
+    def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
   }
 }

@@ -2,7 +2,6 @@ package typings.cliSpinners
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -327,18 +326,17 @@ object mod {
   @js.native
   val weather: Spinner = js.native
   
-  @js.native
   trait Spinner extends StObject {
     
     /**
     		A list of frames to show for the spinner.
     		*/
-    val frames: js.Array[String] = js.native
+    val frames: js.Array[String]
     
     /**
     		Recommended interval.
     		*/
-    val interval: Double = js.native
+    val interval: Double
   }
   object Spinner {
     

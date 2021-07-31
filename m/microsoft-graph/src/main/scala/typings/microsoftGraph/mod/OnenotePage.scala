@@ -2,50 +2,50 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnenotePage extends OnenoteEntitySchemaObjectModel {
+trait OnenotePage
+  extends StObject
+     with OnenoteEntitySchemaObjectModel {
   
   // The page's HTML content.
-  var content: js.UndefOr[NullableOption[_]] = js.native
+  var content: js.UndefOr[NullableOption[js.Any]] = js.undefined
   
   // The URL for the page's HTML content. Read-only.
-  var contentUrl: js.UndefOr[NullableOption[String]] = js.native
+  var contentUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier of the application that created the page. Read-only.
-  var createdByAppId: js.UndefOr[NullableOption[String]] = js.native
+  var createdByAppId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601
     * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
     * '2014-01-01T00:00:00Z'. Read-only.
     */
-  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The indentation level of the page. Read-only.
-  var level: js.UndefOr[NullableOption[Double]] = js.native
+  var level: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Links for opening the page. The oneNoteClientURL link opens the page in the OneNote native client if it 's installed.
     * The oneNoteWebUrl link opens the page in OneNote on the web. Read-only.
     */
-  var links: js.UndefOr[NullableOption[PageLinks]] = js.native
+  var links: js.UndefOr[NullableOption[PageLinks]] = js.undefined
   
   // The order of the page within its parent section. Read-only.
-  var order: js.UndefOr[NullableOption[Double]] = js.native
+  var order: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The notebook that contains the page. Read-only.
-  var parentNotebook: js.UndefOr[NullableOption[Notebook]] = js.native
+  var parentNotebook: js.UndefOr[NullableOption[Notebook]] = js.undefined
   
   // The section that contains the page. Read-only.
-  var parentSection: js.UndefOr[NullableOption[OnenoteSection]] = js.native
+  var parentSection: js.UndefOr[NullableOption[OnenoteSection]] = js.undefined
   
   // The title of the page.
-  var title: js.UndefOr[NullableOption[String]] = js.native
+  var title: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var userTags: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var userTags: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object OnenotePage {
   
@@ -59,7 +59,7 @@ object OnenotePage {
   implicit class OnenotePageMutableBuilder[Self <: OnenotePage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setContent(value: NullableOption[_]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContentNull: Self = StObject.set(x, "content", null)

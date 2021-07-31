@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountUser extends StObject {
   
   /** Whether user is an admin. */
-  var admin: js.UndefOr[Boolean] = js.native
+  var admin: js.UndefOr[Boolean] = js.undefined
   
   /** User's email address. */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /** Whether user is an order manager. */
-  var orderManager: js.UndefOr[Boolean] = js.native
+  var orderManager: js.UndefOr[Boolean] = js.undefined
   
   /** Whether user can access payment statements. */
-  var paymentsAnalyst: js.UndefOr[Boolean] = js.native
+  var paymentsAnalyst: js.UndefOr[Boolean] = js.undefined
   
   /** Whether user can manage payment settings. */
-  var paymentsManager: js.UndefOr[Boolean] = js.native
+  var paymentsManager: js.UndefOr[Boolean] = js.undefined
 }
 object AccountUser {
   

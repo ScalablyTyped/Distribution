@@ -3,7 +3,6 @@ package typings.athenajs.mod
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Scene")
@@ -64,13 +63,13 @@ class Scene () extends StObject {
   def setLayerPriority(layer: Double, background: Boolean): Unit = js.native
   
   def setMap(map: JSObject): Unit = js.native
-  def setMap(map: JSObject, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def setMap(map: JSObject, x: Double): Unit = js.native
   def setMap(map: JSObject, x: Double, y: Double): Unit = js.native
+  def setMap(map: JSObject, x: Unit, y: Double): Unit = js.native
   def setMap(map: Map): Unit = js.native
-  def setMap(map: Map, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def setMap(map: Map, x: Double): Unit = js.native
   def setMap(map: Map, x: Double, y: Double): Unit = js.native
+  def setMap(map: Map, x: Unit, y: Double): Unit = js.native
   
   def setOpacity(opacity: Double): Unit = js.native
   

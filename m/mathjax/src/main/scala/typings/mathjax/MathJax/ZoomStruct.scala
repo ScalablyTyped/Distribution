@@ -2,26 +2,24 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoomStruct extends StObject {
   
   /*The vertical offset from the top of the span to the baseline of the mathematics*/
-  var Y: Double = js.native
+  var Y: Double
   
   /*The height of the original mathematics element*/
-  var mH: Double = js.native
+  var mH: Double
   
   /*The width of the original mathematics element*/
-  var mW: Double = js.native
+  var mW: Double
   
   /*The height of the zoomed math*/
-  var zH: Double = js.native
+  var zH: Double
   
   /*The width of the zoomed math*/
-  var zW: Double = js.native
+  var zW: Double
 }
 object ZoomStruct {
   

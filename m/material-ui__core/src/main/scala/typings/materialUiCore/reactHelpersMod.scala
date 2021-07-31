@@ -7,57 +7,50 @@ import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactHelpersMod {
   
-  @JSImport("@material-ui/core/utils/reactHelpers", "cloneChildrenWithClassName")
+  @JSImport("@material-ui/core/utils/reactHelpers", JSImport.Namespace)
   @js.native
-  def cloneChildrenWithClassName[T](children: ReactNode, className: String): js.Array[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@material-ui/core/utils/reactHelpers", "isMuiElement")
-  @js.native
-  def isMuiElement(element: js.Any, muiNames: js.Array[String]): /* is @material-ui/core.@material-ui/core/utils/reactHelpers.NamedMuiElement */ Boolean = js.native
+  @scala.inline
+  def cloneChildrenWithClassName[T](children: ReactNode, className: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneChildrenWithClassName")(children.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@material-ui/core/utils/reactHelpers", "setRef")
-  @js.native
-  def setRef[T](): Unit = js.native
-  @JSImport("@material-ui/core/utils/reactHelpers", "setRef")
-  @js.native
-  def setRef[T](ref: js.UndefOr[scala.Nothing], value: T): Unit = js.native
-  @JSImport("@material-ui/core/utils/reactHelpers", "setRef")
-  @js.native
-  def setRef[T](ref: js.Function1[/* instance */ T | Null, Unit]): Unit = js.native
-  @JSImport("@material-ui/core/utils/reactHelpers", "setRef")
-  @js.native
-  def setRef[T](ref: js.Function1[/* instance */ T | Null, Unit], value: T): Unit = js.native
-  @JSImport("@material-ui/core/utils/reactHelpers", "setRef")
-  @js.native
-  def setRef[T](ref: Null, value: T): Unit = js.native
-  @JSImport("@material-ui/core/utils/reactHelpers", "setRef")
-  @js.native
-  def setRef[T](ref: RefObject[T]): Unit = js.native
-  @JSImport("@material-ui/core/utils/reactHelpers", "setRef")
-  @js.native
-  def setRef[T](ref: RefObject[T], value: T): Unit = js.native
+  @scala.inline
+  def isMuiElement(element: js.Any, muiNames: js.Array[String]): /* is @material-ui/core.@material-ui/core/utils/reactHelpers.NamedMuiElement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMuiElement")(element.asInstanceOf[js.Any], muiNames.asInstanceOf[js.Any])).asInstanceOf[/* is @material-ui/core.@material-ui/core/utils/reactHelpers.NamedMuiElement */ Boolean]
   
-  type NamedMuiComponent = ComponentType[js.Object] with MuiName
+  @scala.inline
+  def setRef[T](): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")().asInstanceOf[Unit]
+  @scala.inline
+  def setRef[T](ref: js.Function1[/* instance */ T | Null, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setRef[T](ref: js.Function1[/* instance */ T | Null, Unit], value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setRef[T](ref: Null, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setRef[T](ref: Unit, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setRef[T](ref: RefObject[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setRef[T](ref: RefObject[T], value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  type NamedMuiComponent = ComponentType[js.Object] & MuiName
+  
   trait NamedMuiElement extends StObject {
     
-    var key: String | Double | Null = js.native
+    var key: String | Double | Null
     
-    var props: StandardPropsnevernever = js.native
+    var props: StandardPropsnevernever
     
-    var `type`: NamedMuiComponent = js.native
+    var `type`: NamedMuiComponent
   }
   object NamedMuiElement {
     
     @scala.inline
     def apply(props: StandardPropsnevernever, `type`: NamedMuiComponent): NamedMuiElement = {
-      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NamedMuiElement]
     }

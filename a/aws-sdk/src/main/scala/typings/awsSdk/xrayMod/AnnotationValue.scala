@@ -2,26 +2,24 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationValue extends StObject {
   
   /**
     * Value for a Boolean annotation.
     */
-  var BooleanValue: js.UndefOr[NullableBoolean] = js.native
+  var BooleanValue: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Value for a Number annotation.
     */
-  var NumberValue: js.UndefOr[NullableDouble] = js.native
+  var NumberValue: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * Value for a String annotation.
     */
-  var StringValue: js.UndefOr[String] = js.native
+  var StringValue: js.UndefOr[String] = js.undefined
 }
 object AnnotationValue {
   

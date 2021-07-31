@@ -8,11 +8,12 @@ import typings.kendoUi.kendo.geometry.Point
 import typings.kendoUi.kendo.ui.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Map extends Widget {
+trait Map
+  extends StObject
+     with Widget {
   
   def center(): Location = js.native
   def center(center: js.Any): Unit = js.native

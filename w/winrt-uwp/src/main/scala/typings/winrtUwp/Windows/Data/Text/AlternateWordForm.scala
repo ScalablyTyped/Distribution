@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Data.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Identifies an alternate form of the word represented by a WordSegment object.. For example, this may contain a number in a normalized format. */
-@js.native
 trait AlternateWordForm extends StObject {
   
   /** Gets the text of the alternate word form identified by this AlternateWordForm object. */
-  var alternateText: String = js.native
+  var alternateText: String
   
   /** Gets the normalization format for this current AlternateWordForm object. */
-  var normalizationFormat: AlternateNormalizationFormat = js.native
+  var normalizationFormat: AlternateNormalizationFormat
   
   /** Gets the TextSegment that identifies the source text's sub-string for which this AlternateWordForm object is an alternate. */
-  var sourceTextSegment: TextSegment = js.native
+  var sourceTextSegment: TextSegment
 }
 object AlternateWordForm {
   

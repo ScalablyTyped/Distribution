@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2NumericalStatsResult extends StObject {
   
   /** Maximum value appearing in the column. */
-  var maxValue: js.UndefOr[GooglePrivacyDlpV2Value] = js.native
+  var maxValue: js.UndefOr[GooglePrivacyDlpV2Value] = js.undefined
   
   /** Minimum value appearing in the column. */
-  var minValue: js.UndefOr[GooglePrivacyDlpV2Value] = js.native
+  var minValue: js.UndefOr[GooglePrivacyDlpV2Value] = js.undefined
   
   /** List of 99 values that partition the set of field values into 100 equal sized buckets. */
-  var quantileValues: js.UndefOr[js.Array[GooglePrivacyDlpV2Value]] = js.native
+  var quantileValues: js.UndefOr[js.Array[GooglePrivacyDlpV2Value]] = js.undefined
 }
 object GooglePrivacyDlpV2NumericalStatsResult {
   

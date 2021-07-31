@@ -6,52 +6,52 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTabledataList extends StandardParameters {
+trait ParamsResourceTabledataList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Dataset ID of the table to read
     */
-  var datasetId: js.UndefOr[String] = js.native
+  var datasetId: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to return
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Page token, returned by a previous call, identifying the result set
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Project ID of the table to read
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * List of fields to return (comma-separated). If unspecified, all fields
     * are returned
     */
-  var selectedFields: js.UndefOr[String] = js.native
+  var selectedFields: js.UndefOr[String] = js.undefined
   
   /**
     * Zero-based index of the starting row to read
     */
-  var startIndex: js.UndefOr[String] = js.native
+  var startIndex: js.UndefOr[String] = js.undefined
   
   /**
     * Table ID of the table to read
     */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTabledataList {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelExportTaskMessage extends StObject {
   
   /**
     * The identifier of the snapshot export task to cancel.
     */
-  var ExportTaskIdentifier: String = js.native
+  var ExportTaskIdentifier: String
 }
 object CancelExportTaskMessage {
   

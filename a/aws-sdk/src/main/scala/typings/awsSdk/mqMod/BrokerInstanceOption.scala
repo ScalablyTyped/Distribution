@@ -2,41 +2,39 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokerInstanceOption extends StObject {
   
   /**
     * The list of available az.
     */
-  var AvailabilityZones: js.UndefOr[listOfAvailabilityZone] = js.native
+  var AvailabilityZones: js.UndefOr[listOfAvailabilityZone] = js.undefined
   
   /**
     * The type of broker engine.
     */
-  var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.native
+  var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.undefined
   
   /**
     * The type of broker instance.
     */
-  var HostInstanceType: js.UndefOr[string] = js.native
+  var HostInstanceType: js.UndefOr[string] = js.undefined
   
   /**
     * The broker's storage type.
     */
-  var StorageType: js.UndefOr[BrokerStorageType] = js.native
+  var StorageType: js.UndefOr[BrokerStorageType] = js.undefined
   
   /**
     * The list of supported deployment modes.
     */
-  var SupportedDeploymentModes: js.UndefOr[listOfDeploymentMode] = js.native
+  var SupportedDeploymentModes: js.UndefOr[listOfDeploymentMode] = js.undefined
   
   /**
     * The list of supported engine versions.
     */
-  var SupportedEngineVersions: js.UndefOr[listOfString] = js.native
+  var SupportedEngineVersions: js.UndefOr[listOfString] = js.undefined
 }
 object BrokerInstanceOption {
   

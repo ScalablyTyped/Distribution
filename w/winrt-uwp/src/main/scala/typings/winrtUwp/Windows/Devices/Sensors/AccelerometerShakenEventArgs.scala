@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the accelerometer-shaken event. */
-@js.native
 trait AccelerometerShakenEventArgs extends StObject {
   
   /** Gets the time at which the sensor reported the shaken event. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object AccelerometerShakenEventArgs {
   

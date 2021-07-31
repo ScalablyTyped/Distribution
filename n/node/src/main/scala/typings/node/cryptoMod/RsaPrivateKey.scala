@@ -3,24 +3,22 @@ package typings.node.cryptoMod
 import typings.node.NodeJS.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RsaPrivateKey extends StObject {
   
-  var key: KeyLike = js.native
+  var key: KeyLike
   
   /**
     * @default 'sha1'
     */
-  var oaepHash: js.UndefOr[String] = js.native
+  var oaepHash: js.UndefOr[String] = js.undefined
   
-  var oaepLabel: js.UndefOr[TypedArray] = js.native
+  var oaepLabel: js.UndefOr[TypedArray] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
 }
 object RsaPrivateKey {
   

@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.ui.dialogs.XExecutableDialog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Here, **system wide registered** means registered on the (one and only) instance of the {@link com.sun.star.sdb.DatabaseContext} service.
   */
-@js.native
 trait DatasourceAdministrationDialog
-  extends XPropertySet
+  extends StObject
+     with XPropertySet
      with XExecutableDialog
      with XInitialization {
   
@@ -30,10 +29,10 @@ trait DatasourceAdministrationDialog
     *
     * This property can't be set while the dialog is being displayed.
     */
-  var ParentWindow: XWindow = js.native
+  var ParentWindow: XWindow
   
   /** the title of the (dialog) window */
-  var Title: String = js.native
+  var Title: String
 }
 object DatasourceAdministrationDialog {
   
@@ -48,7 +47,7 @@ object DatasourceAdministrationDialog {
     execute: () => Double,
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyValue: String => js.Any,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,

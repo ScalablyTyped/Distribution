@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BandedRange extends StObject {
   
   /** The id of the banded range. */
-  var bandedRangeId: js.UndefOr[Double] = js.native
+  var bandedRangeId: js.UndefOr[Double] = js.undefined
   
   /**
     * Properties for column bands. These properties are applied on a column- by-column basis throughout all the columns in the range. At least one of row_properties or column_properties
     * must be specified.
     */
-  var columnProperties: js.UndefOr[BandingProperties] = js.native
+  var columnProperties: js.UndefOr[BandingProperties] = js.undefined
   
   /** The range over which these properties are applied. */
-  var range: js.UndefOr[GridRange] = js.native
+  var range: js.UndefOr[GridRange] = js.undefined
   
   /**
     * Properties for row bands. These properties are applied on a row-by-row basis throughout all the rows in the range. At least one of row_properties or column_properties must be
     * specified.
     */
-  var rowProperties: js.UndefOr[BandingProperties] = js.native
+  var rowProperties: js.UndefOr[BandingProperties] = js.undefined
 }
 object BandedRange {
   

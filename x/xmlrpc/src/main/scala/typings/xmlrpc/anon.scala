@@ -4,17 +4,15 @@ import typings.std.Date
 import typings.xmlrpc.mod.HeadersProcessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Expires extends StObject {
     
-    var expires: Date = js.native
+    var expires: Date
     
-    var secure: Boolean = js.native
+    var secure: Boolean
   }
   object Expires {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Pass extends StObject {
     
-    var pass: String = js.native
+    var pass: String
     
-    var user: String = js.native
+    var user: String
   }
   object Pass {
     
@@ -61,10 +58,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Processors extends StObject {
     
-    var processors: js.Array[HeadersProcessor] = js.native
+    var processors: js.Array[HeadersProcessor]
   }
   object Processors {
     

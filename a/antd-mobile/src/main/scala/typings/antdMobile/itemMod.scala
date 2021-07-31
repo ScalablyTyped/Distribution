@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemMod {
@@ -38,22 +37,21 @@ object itemMod {
   trait Item
     extends Component[PopoverItemProps, js.Any, js.Any]
   
-  @js.native
   trait PopoverItemProps extends StObject {
     
-    var activeStyle: js.UndefOr[CSSProperties] = js.native
+    var activeStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var firstItem: js.UndefOr[String] = js.native
+    var firstItem: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PopoverItemProps {
     

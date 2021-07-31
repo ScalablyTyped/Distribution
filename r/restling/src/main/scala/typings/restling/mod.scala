@@ -1,233 +1,196 @@
 package typings.restling
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.bluebird.mod.^
 import typings.node.httpMod.ServerResponse
 import typings.restling.anon.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("restling", "allAsync")
+  @JSImport("restling", JSImport.Namespace)
   @js.native
-  def allAsync(requests: js.Array[Options]): ^[js.Array[RestlingResult]] = js.native
-  @JSImport("restling", "allAsync")
-  @js.native
-  def allAsync(requests: StringDictionary[Options]): ^[StringDictionary[RestlingResult]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("restling", "del")
-  @js.native
-  def del(url: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "del")
-  @js.native
-  def del(url: String, options: RestlingOptions): ^[RestlingResult] = js.native
+  @scala.inline
+  def allAsync(requests: js.Array[Options]): typings.bluebird.mod.^[js.Array[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Array[RestlingResult]]]
+  @scala.inline
+  def allAsync(requests: StringDictionary[Options]): typings.bluebird.mod.^[StringDictionary[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[StringDictionary[RestlingResult]]]
   
-  @JSImport("restling", "get")
-  @js.native
-  def get(url: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "get")
-  @js.native
-  def get(url: String, options: RestlingOptions): ^[RestlingResult] = js.native
+  @scala.inline
+  def del(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def del(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @JSImport("restling", "head")
-  @js.native
-  def head(url: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "head")
-  @js.native
-  def head(url: String, options: RestlingOptions): ^[RestlingResult] = js.native
+  @scala.inline
+  def get(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def get(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @JSImport("restling", "json")
-  @js.native
-  def json(url: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "json")
-  @js.native
-  def json(url: String, data: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], method: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "json")
-  @js.native
-  def json(url: String, data: js.UndefOr[scala.Nothing], options: RestlingOptions): ^[RestlingResult] = js.native
-  @JSImport("restling", "json")
-  @js.native
-  def json(url: String, data: js.UndefOr[scala.Nothing], options: RestlingOptions, method: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "json")
-  @js.native
-  def json(url: String, data: js.Any): ^[RestlingResult] = js.native
-  @JSImport("restling", "json")
-  @js.native
-  def json(url: String, data: js.Any, options: js.UndefOr[scala.Nothing], method: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "json")
-  @js.native
-  def json(url: String, data: js.Any, options: RestlingOptions): ^[RestlingResult] = js.native
-  @JSImport("restling", "json")
-  @js.native
-  def json(url: String, data: js.Any, options: RestlingOptions, method: String): ^[RestlingResult] = js.native
+  @scala.inline
+  def head(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def head(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @JSImport("restling", "patch")
-  @js.native
-  def patch(url: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "patch")
-  @js.native
-  def patch(url: String, options: RestlingOptions): ^[RestlingResult] = js.native
+  @scala.inline
+  def json(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def json(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def json(url: String, data: js.Any, options: Unit, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def json(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def json(url: String, data: js.Any, options: RestlingOptions, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def json(url: String, data: Unit, options: Unit, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def json(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def json(url: String, data: Unit, options: RestlingOptions, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @JSImport("restling", "patchJson")
-  @js.native
-  def patchJson(url: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "patchJson")
-  @js.native
-  def patchJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlingOptions): ^[RestlingResult] = js.native
-  @JSImport("restling", "patchJson")
-  @js.native
-  def patchJson(url: String, data: js.Any): ^[RestlingResult] = js.native
-  @JSImport("restling", "patchJson")
-  @js.native
-  def patchJson(url: String, data: js.Any, options: RestlingOptions): ^[RestlingResult] = js.native
+  @scala.inline
+  def patch(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def patch(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @JSImport("restling", "post")
-  @js.native
-  def post(url: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "post")
-  @js.native
-  def post(url: String, options: RestlingOptions): ^[RestlingResult] = js.native
+  @scala.inline
+  def patchJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def patchJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def patchJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def patchJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @JSImport("restling", "postJson")
-  @js.native
-  def postJson(url: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "postJson")
-  @js.native
-  def postJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlingOptions): ^[RestlingResult] = js.native
-  @JSImport("restling", "postJson")
-  @js.native
-  def postJson(url: String, data: js.Any): ^[RestlingResult] = js.native
-  @JSImport("restling", "postJson")
-  @js.native
-  def postJson(url: String, data: js.Any, options: RestlingOptions): ^[RestlingResult] = js.native
+  @scala.inline
+  def post(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def post(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @JSImport("restling", "put")
-  @js.native
-  def put(url: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "put")
-  @js.native
-  def put(url: String, options: RestlingOptions): ^[RestlingResult] = js.native
+  @scala.inline
+  def postJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def postJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def postJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def postJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @JSImport("restling", "putJson")
-  @js.native
-  def putJson(url: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "putJson")
-  @js.native
-  def putJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlingOptions): ^[RestlingResult] = js.native
-  @JSImport("restling", "putJson")
-  @js.native
-  def putJson(url: String, data: js.Any): ^[RestlingResult] = js.native
-  @JSImport("restling", "putJson")
-  @js.native
-  def putJson(url: String, data: js.Any, options: RestlingOptions): ^[RestlingResult] = js.native
+  @scala.inline
+  def put(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def put(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @JSImport("restling", "request")
-  @js.native
-  def request(url: String): ^[RestlingResult] = js.native
-  @JSImport("restling", "request")
-  @js.native
-  def request(url: String, options: RestlingOptions): ^[RestlingResult] = js.native
+  @scala.inline
+  def putJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def putJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def putJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def putJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @JSImport("restling", "settleAsync")
-  @js.native
-  def settleAsync(requests: js.Array[Options]): ^[js.Array[RestlingResult]] = js.native
-  @JSImport("restling", "settleAsync")
-  @js.native
-  def settleAsync(requests: StringDictionary[Options]): ^[StringDictionary[RestlingResult]] = js.native
+  @scala.inline
+  def request(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  @scala.inline
+  def request(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  
+  @scala.inline
+  def settleAsync(requests: js.Array[Options]): typings.bluebird.mod.^[js.Array[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("settleAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Array[RestlingResult]]]
+  @scala.inline
+  def settleAsync(requests: StringDictionary[Options]): typings.bluebird.mod.^[StringDictionary[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("settleAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[StringDictionary[RestlingResult]]]
   
   type RestlerOptionsHeader = StringDictionary[String]
   
-  @js.native
   trait RestlingOptions extends StObject {
     
     /**
       * OAuth Bearer Token.
       */
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
     /**
       *  HTTP Agent instance to use. If not defined globalAgent will be used. If false opts out of connection pooling with an Agent, defaults request to Connection: close.
       */
-    var agent: js.UndefOr[js.Any] = js.native
+    var agent: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A http.Client instance if you want to reuse or implement some kind of connection pooling.
       */
-    var client: js.UndefOr[js.Any] = js.native
+    var client: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Data to be added to the body of the request.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Encoding of the response body
       */
-    var decoding: js.UndefOr[String] = js.native
+    var decoding: js.UndefOr[String] = js.undefined
     
     /**
       * Encoding of the request body.
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * If set will recursively follow redirects.
       */
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A hash of HTTP headers to be sent.
       */
-    var headers: js.UndefOr[RestlerOptionsHeader] = js.native
+    var headers: js.UndefOr[RestlerOptionsHeader] = js.undefined
     
     /**
       * Request method
       */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /**
       * If set the data passed will be formatted as <code>multipart/form-encoded</code>.
       */
-    var multipart: js.UndefOr[Boolean] = js.native
+    var multipart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that will be called on the returned data. Use any of predefined <code>restler.parsers</code>.
       */
-    var parser: js.UndefOr[js.Any] = js.native
+    var parser: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Basic auth password.
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * Query string variables as a javascript object, will override the querystring in the URL.
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /**
       * If true, the server certificate is verified against the list of supplied CAs.
       * An 'error' event is emitted if verification fails. Verification happens at the connection level, before the HTTP request is sent.
       */
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Emit the timeout event when the response does not return within the said value (in ms).
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Basic auth username.
       */
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
     /**
       * Options for xml2js.
       */
-    var xml2js: js.UndefOr[js.Any] = js.native
+    var xml2js: js.UndefOr[js.Any] = js.undefined
   }
   object RestlingOptions {
     
@@ -344,12 +307,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RestlingResult extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var response: js.UndefOr[ServerResponse] = js.native
+    var response: js.UndefOr[ServerResponse] = js.undefined
   }
   object RestlingResult {
     

@@ -2,21 +2,19 @@ package typings.mobxReactDevtools
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: js.UndefOr[Double | String] = js.native
+    var bottom: js.UndefOr[Double | String] = js.undefined
     
-    var left: js.UndefOr[Double | String] = js.native
+    var left: js.UndefOr[Double | String] = js.undefined
     
-    var right: js.UndefOr[Double | String] = js.native
+    var right: js.UndefOr[Double | String] = js.undefined
     
-    var top: js.UndefOr[Double | String] = js.native
+    var top: js.UndefOr[Double | String] = js.undefined
   }
   object Bottom {
     
@@ -55,16 +53,15 @@ object anon {
     }
   }
   
-  @js.native
   trait GraphEnabled extends StObject {
     
-    var graphEnabled: js.UndefOr[Boolean] = js.native
+    var graphEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var logEnabled: js.UndefOr[Boolean] = js.native
+    var logEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var logFilter: js.UndefOr[js.Function1[/* p */ js.Any, Boolean]] = js.native
+    var logFilter: js.UndefOr[js.Function1[/* p */ js.Any, Boolean]] = js.undefined
     
-    var updatesEnabled: js.UndefOr[Boolean] = js.native
+    var updatesEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object GraphEnabled {
     
@@ -103,10 +100,9 @@ object anon {
     }
   }
   
-  @js.native
   trait HighlightTimeout extends StObject {
     
-    var highlightTimeout: js.UndefOr[Double] = js.native
+    var highlightTimeout: js.UndefOr[Double] = js.undefined
   }
   object HighlightTimeout {
     

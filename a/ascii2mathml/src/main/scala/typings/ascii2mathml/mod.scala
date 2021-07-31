@@ -7,7 +7,6 @@ import typings.ascii2mathml.ascii2mathmlStrings.ltr
 import typings.ascii2mathml.ascii2mathmlStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,24 +15,23 @@ object mod extends Shortcut {
   @js.native
   val ^ : typings.ascii2mathml.mod.ascii2mathml = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var annotate: js.UndefOr[Boolean] = js.native
+    var annotate: js.UndefOr[Boolean] = js.undefined
     
-    var bare: js.UndefOr[Boolean] = js.native
+    var bare: js.UndefOr[Boolean] = js.undefined
     
-    var colSep: js.UndefOr[String] = js.native
+    var colSep: js.UndefOr[String] = js.undefined
     
-    var decimalMark: js.UndefOr[String] = js.native
+    var decimalMark: js.UndefOr[String] = js.undefined
     
-    var dir: js.UndefOr[ltr | rtl] = js.native
+    var dir: js.UndefOr[ltr | rtl] = js.undefined
     
-    var display: js.UndefOr[`inline` | block] = js.native
+    var display: js.UndefOr[`inline` | block] = js.undefined
     
-    var rowSep: js.UndefOr[String] = js.native
+    var rowSep: js.UndefOr[String] = js.undefined
     
-    var standalone: js.UndefOr[Boolean] = js.native
+    var standalone: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

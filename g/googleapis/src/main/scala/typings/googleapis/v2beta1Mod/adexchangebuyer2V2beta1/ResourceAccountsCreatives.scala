@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Creatives")
@@ -32,7 +31,7 @@ class ResourceAccountsCreatives protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaCreative] = js.native
   def create(callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreative] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreative] = js.native
   def create(params: ParamsResourceAccountsCreativesCreate): GaxiosPromise[SchemaCreative] = js.native
   def create(params: ParamsResourceAccountsCreativesCreate, callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
   def create(
@@ -64,7 +63,7 @@ class ResourceAccountsCreatives protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCreative] = js.native
   def get(callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreative] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreative] = js.native
   def get(params: ParamsResourceAccountsCreativesGet): GaxiosPromise[SchemaCreative] = js.native
   def get(params: ParamsResourceAccountsCreativesGet, callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
   def get(
@@ -96,7 +95,7 @@ class ResourceAccountsCreatives protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListCreativesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCreativesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCreativesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListCreativesResponse] = js.native
   def list(params: ParamsResourceAccountsCreativesList): GaxiosPromise[SchemaListCreativesResponse] = js.native
   def list(
     params: ParamsResourceAccountsCreativesList,
@@ -131,7 +130,7 @@ class ResourceAccountsCreatives protected () extends StObject {
     */
   def stopWatching(): GaxiosPromise[SchemaEmpty] = js.native
   def stopWatching(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def stopWatching(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def stopWatching(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def stopWatching(params: ParamsResourceAccountsCreativesStopwatching): GaxiosPromise[SchemaEmpty] = js.native
   def stopWatching(params: ParamsResourceAccountsCreativesStopwatching, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def stopWatching(
@@ -162,7 +161,7 @@ class ResourceAccountsCreatives protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaCreative] = js.native
   def update(callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreative] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreative] = js.native
   def update(params: ParamsResourceAccountsCreativesUpdate): GaxiosPromise[SchemaCreative] = js.native
   def update(params: ParamsResourceAccountsCreativesUpdate, callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
   def update(
@@ -194,7 +193,7 @@ class ResourceAccountsCreatives protected () extends StObject {
     */
   def watch(): GaxiosPromise[SchemaEmpty] = js.native
   def watch(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def watch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def watch(params: ParamsResourceAccountsCreativesWatch): GaxiosPromise[SchemaEmpty] = js.native
   def watch(params: ParamsResourceAccountsCreativesWatch, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def watch(

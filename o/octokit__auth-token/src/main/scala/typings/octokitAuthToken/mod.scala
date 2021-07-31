@@ -5,7 +5,6 @@ import typings.octokitAuthToken.typesMod.StrategyInterface
 import typings.octokitAuthToken.typesMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,12 +13,11 @@ object mod {
   @js.native
   val createTokenAuth: StrategyInterface = js.native
   
-  @js.native
   trait Types extends StObject {
     
-    var Authentication: typings.octokitAuthToken.typesMod.Authentication = js.native
+    var Authentication: typings.octokitAuthToken.typesMod.Authentication
     
-    var StrategyOptions: Token = js.native
+    var StrategyOptions: Token
   }
   object Types {
     

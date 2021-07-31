@@ -3,33 +3,31 @@ package typings.lyricist.mod
 import typings.lyricist.anon.Features
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
-  var api_path: String = js.native
+  var api_path: String
   
-  var avatar: Avatar = js.native
+  var avatar: Avatar
   
-  var current_user_metadata: Features = js.native
+  var current_user_metadata: Features
   
-  var header_image_url: String = js.native
+  var header_image_url: String
   
-  var human_readable_role_for_display: String = js.native
+  var human_readable_role_for_display: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var iq: Double = js.native
+  var iq: Double
   
-  var login: String = js.native
+  var login: String
   
-  var name: String = js.native
+  var name: String
   
-  var role_for_display: String = js.native
+  var role_for_display: String
   
-  var url: String = js.native
+  var url: String
 }
 object User {
   

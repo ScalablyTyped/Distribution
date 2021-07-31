@@ -11,10 +11,6 @@ import typings.reactNavigationRouters.anon.SourceTargetType
 import typings.reactNavigationRouters.anon.TargetType
 import typings.reactNavigationRouters.anon.Type
 import typings.reactNavigationRouters.reactNavigationRoutersBooleans.`false`
-import typings.reactNavigationRouters.reactNavigationRoutersStrings.POP
-import typings.reactNavigationRouters.reactNavigationRoutersStrings.POP_TO_TOP
-import typings.reactNavigationRouters.reactNavigationRoutersStrings.PUSH
-import typings.reactNavigationRouters.reactNavigationRoutersStrings.REPLACE
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.stack
 import typings.reactNavigationRouters.typesMod.DefaultRouterOptions
 import typings.reactNavigationRouters.typesMod.NavigationRoute
@@ -24,44 +20,46 @@ import typings.std.Extract
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackRouterMod {
   
-  @JSImport("@react-navigation/routers/lib/typescript/src/StackRouter", JSImport.Default)
+  @JSImport("@react-navigation/routers/lib/typescript/src/StackRouter", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(options: StackRouterOptions): Router[
     StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | PayloadSourceTargetType | Type | PayloadSource | TargetType | PayloadSourceTarget | SourceTargetType
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Router[
+    StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
+    Source | Payload | PayloadSourceTargetType | Type | PayloadSource | TargetType | PayloadSourceTarget | SourceTargetType
+  ]]
   
   object StackActions {
     
-    @JSImport("@react-navigation/routers/lib/typescript/src/StackRouter", "StackActions.pop")
+    @JSImport("@react-navigation/routers/lib/typescript/src/StackRouter", "StackActions")
     @js.native
-    def pop(): StackActionType = js.native
-    @JSImport("@react-navigation/routers/lib/typescript/src/StackRouter", "StackActions.pop")
-    @js.native
-    def pop(count: Double): StackActionType = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@react-navigation/routers/lib/typescript/src/StackRouter", "StackActions.popToTop")
-    @js.native
-    def popToTop(): StackActionType = js.native
+    @scala.inline
+    def pop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")().asInstanceOf[StackActionType]
+    @scala.inline
+    def pop(count: Double): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(count.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
     
-    @JSImport("@react-navigation/routers/lib/typescript/src/StackRouter", "StackActions.push")
-    @js.native
-    def push(name: String): StackActionType = js.native
-    @JSImport("@react-navigation/routers/lib/typescript/src/StackRouter", "StackActions.push")
-    @js.native
-    def push(name: String, params: js.Object): StackActionType = js.native
+    @scala.inline
+    def popToTop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("popToTop")().asInstanceOf[StackActionType]
     
-    @JSImport("@react-navigation/routers/lib/typescript/src/StackRouter", "StackActions.replace")
-    @js.native
-    def replace(name: String): StackActionType = js.native
-    @JSImport("@react-navigation/routers/lib/typescript/src/StackRouter", "StackActions.replace")
-    @js.native
-    def replace(name: String, params: js.Object): StackActionType = js.native
+    @scala.inline
+    def push(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
+    @scala.inline
+    def push(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
+    
+    @scala.inline
+    def replace(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
+    @scala.inline
+    def replace(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
   }
   
   @js.native
@@ -115,54 +113,53 @@ object stackRouterMod {
   object StackActionType {
     
     @scala.inline
-    def PayloadSource(payload: Name, `type`: REPLACE): typings.reactNavigationRouters.anon.PayloadSource = {
+    def PayloadSource(payload: Name): typings.reactNavigationRouters.anon.PayloadSource = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("REPLACE")
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.PayloadSource]
     }
     
     @scala.inline
-    def PayloadSourceTarget(payload: Count, `type`: POP): typings.reactNavigationRouters.anon.PayloadSourceTarget = {
+    def PayloadSourceTarget(payload: Count): typings.reactNavigationRouters.anon.PayloadSourceTarget = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("POP")
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.PayloadSourceTarget]
     }
     
     @scala.inline
-    def SourceTargetType(`type`: POP_TO_TOP): typings.reactNavigationRouters.anon.SourceTargetType = {
+    def SourceTargetType(): typings.reactNavigationRouters.anon.SourceTargetType = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("POP_TO_TOP")
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.SourceTargetType]
     }
     
     @scala.inline
-    def TargetType(payload: Name, `type`: PUSH): typings.reactNavigationRouters.anon.TargetType = {
+    def TargetType(payload: Name): typings.reactNavigationRouters.anon.TargetType = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("PUSH")
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.TargetType]
     }
   }
   
   /* Inlined @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.NavigationState<ParamList> & {  type :'stack'} */
-  @js.native
   trait StackNavigationState[ParamList /* <: ParamListBase */] extends StObject {
     
-    val history: js.UndefOr[js.Array[_]] = js.native
+    val history: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    val index: Double = js.native
+    val index: Double
     
-    val key: String = js.native
+    val key: String
     
-    val routeNames: js.Array[Extract[/* keyof ParamList */ String, String]] = js.native
+    val routeNames: js.Array[Extract[/* keyof ParamList */ String, String]]
     
-    val routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]] = js.native
+    val routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]
     
-    val stale: `false` = js.native
+    val stale: `false`
     
     /**
       * Type of the router, in this case, it's stack.
       */
-    val `type`: String with stack = js.native
+    val `type`: String & stack
   }
   object StackNavigationState {
     
@@ -172,19 +169,18 @@ object stackRouterMod {
       key: String,
       routeNames: js.Array[Extract[/* keyof ParamList */ String, String]],
       routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]],
-      stale: `false`,
-      `type`: String with stack
+      `type`: String & stack
     ): StackNavigationState[ParamList] = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = stale.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackNavigationState[ParamList]]
     }
     
     @scala.inline
-    implicit class StackNavigationStateMutableBuilder[Self <: StackNavigationState[_], ParamList /* <: ParamListBase */] (val x: Self with StackNavigationState[ParamList]) extends AnyVal {
+    implicit class StackNavigationStateMutableBuilder[Self <: StackNavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & StackNavigationState[ParamList]) extends AnyVal {
       
       @scala.inline
-      def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
@@ -214,7 +210,7 @@ object stackRouterMod {
       def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setType(value: String with stack): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: String & stack): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

@@ -12,7 +12,7 @@ React Native Sortable List component
 | Keywords           | react-native, ios, react-component |
 | # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 186322 |
+| # downloads        | 183995 |
 | # stars            | 1 |
 
 ## Links

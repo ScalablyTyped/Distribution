@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheParameterGroupStatus extends StObject {
   
   /**
     * A list of the cache node IDs which need to be rebooted for parameter changes to be applied. A node ID is a numeric identifier (0001, 0002, etc.).
     */
-  var CacheNodeIdsToReboot: js.UndefOr[CacheNodeIdsList] = js.native
+  var CacheNodeIdsToReboot: js.UndefOr[CacheNodeIdsList] = js.undefined
   
   /**
     * The name of the cache parameter group.
     */
-  var CacheParameterGroupName: js.UndefOr[String] = js.native
+  var CacheParameterGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of parameter updates.
     */
-  var ParameterApplyStatus: js.UndefOr[String] = js.native
+  var ParameterApplyStatus: js.UndefOr[String] = js.undefined
 }
 object CacheParameterGroupStatus {
   

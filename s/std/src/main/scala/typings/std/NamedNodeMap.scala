@@ -3,12 +3,13 @@ package typings.std
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A collection of Attr objects. Objects inside a NamedNodeMap are not in any particular order, unlike NodeList, although they may be accessed by an index as in an array. */
 @js.native
-trait NamedNodeMap extends /* index */ NumberDictionary[Attr] {
+trait NamedNodeMap
+  extends StObject
+     with /* index */ NumberDictionary[Attr] {
   
   def getNamedItem(qualifiedName: java.lang.String): Attr | Null = js.native
   

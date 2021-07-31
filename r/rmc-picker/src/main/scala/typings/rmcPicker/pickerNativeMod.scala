@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.rmcPicker.pickerTypesMod.IPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerNativeMod {
@@ -14,10 +13,13 @@ object pickerNativeMod {
   class default () extends Picker
   object default {
     
-    /* static member */
-    @JSImport("rmc-picker/lib/Picker.native", "default.Item")
+    @JSImport("rmc-picker/lib/Picker.native", JSImport.Default)
     @js.native
-    def Item(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def Item(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")().asInstanceOf[Unit]
     
     /* static member */
     object defaultProps {

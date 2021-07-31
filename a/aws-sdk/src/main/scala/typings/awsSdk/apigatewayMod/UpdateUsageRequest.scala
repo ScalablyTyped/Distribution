@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUsageRequest extends StObject {
   
   /**
     * [Required] The identifier of the API key associated with the usage plan in which a temporary extension is granted to the remaining quota.
     */
-  var keyId: String = js.native
+  var keyId: String
   
   /**
     * A list of update operations to be applied to the specified resource and in the order specified in this list.
     */
-  var patchOperations: js.UndefOr[ListOfPatchOperation] = js.native
+  var patchOperations: js.UndefOr[ListOfPatchOperation] = js.undefined
   
   /**
     * [Required] The Id of the usage plan associated with the usage data.
     */
-  var usagePlanId: String = js.native
+  var usagePlanId: String
 }
 object UpdateUsageRequest {
   

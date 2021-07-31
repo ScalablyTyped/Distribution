@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sigmajs.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Camera extends StObject {
   
-  var angle: Double = js.native
+  var angle: Double
   
-  def cameraPosition(x: Double, y: Double): X = js.native
+  def cameraPosition(x: Double, y: Double): X
   
-  def goTo(settings: StringDictionary[js.Any]): Unit = js.native
+  def goTo(settings: StringDictionary[js.Any]): Unit
   
-  def graphPosition(x: Double, y: Double): X = js.native
+  def graphPosition(x: Double, y: Double): X
   
-  var ratio: Double = js.native
+  var ratio: Double
   
-  var readPrefix: String = js.native
+  var readPrefix: String
   
-  def settings(setting: String): js.Any = js.native
+  def settings(setting: String): js.Any
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Camera {
   

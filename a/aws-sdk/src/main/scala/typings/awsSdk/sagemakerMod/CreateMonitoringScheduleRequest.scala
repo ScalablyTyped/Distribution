@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMonitoringScheduleRequest extends StObject {
   
   /**
     * The configuration object that specifies the monitoring schedule and defines the monitoring job.
     */
-  var MonitoringScheduleConfig: typings.awsSdk.sagemakerMod.MonitoringScheduleConfig = js.native
+  var MonitoringScheduleConfig: typings.awsSdk.sagemakerMod.MonitoringScheduleConfig
   
   /**
     * The name of the monitoring schedule. The name must be unique within an AWS Region within an AWS account.
     */
-  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName = js.native
+  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName
   
   /**
     * (Optional) An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateMonitoringScheduleRequest {
   

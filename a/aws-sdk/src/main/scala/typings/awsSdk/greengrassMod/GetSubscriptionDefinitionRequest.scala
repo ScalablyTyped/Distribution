@@ -2,16 +2,14 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSubscriptionDefinitionRequest extends StObject {
   
   /**
     * The ID of the subscription definition.
     */
-  var SubscriptionDefinitionId: string = js.native
+  var SubscriptionDefinitionId: string
 }
 object GetSubscriptionDefinitionRequest {
   

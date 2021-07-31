@@ -2,13 +2,13 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.Control")
 @js.native
 abstract class Control protected ()
-  extends typings.openui5.sap.ui.core.Control {
+  extends StObject
+     with typings.openui5.sap.ui.core.Control {
   /**
     * Creates and initializes a new control with the given <code>sId</code> and settings.The set of
     * allowed entries in the <code>mSettings</code> object depends on the concretesubclass and is

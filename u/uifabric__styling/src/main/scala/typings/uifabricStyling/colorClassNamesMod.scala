@@ -2,7 +2,6 @@ package typings.uifabricStyling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorClassNamesMod {
@@ -11,584 +10,583 @@ object colorClassNamesMod {
   @js.native
   val ColorClassNames: IColorClassNames = js.native
   
-  @js.native
   trait IColorClassNames extends StObject {
     
-    var black: String = js.native
+    var black: String
     
-    var blackBackground: String = js.native
+    var blackBackground: String
     
-    var blackBackgroundHover: String = js.native
+    var blackBackgroundHover: String
     
-    var blackBorder: String = js.native
+    var blackBorder: String
     
-    var blackBorderHover: String = js.native
+    var blackBorderHover: String
     
-    var blackHover: String = js.native
+    var blackHover: String
     
-    var blackTranslucent40: String = js.native
+    var blackTranslucent40: String
     
-    var blackTranslucent40Background: String = js.native
+    var blackTranslucent40Background: String
     
-    var blackTranslucent40BackgroundHover: String = js.native
+    var blackTranslucent40BackgroundHover: String
     
-    var blackTranslucent40Border: String = js.native
+    var blackTranslucent40Border: String
     
-    var blackTranslucent40BorderHover: String = js.native
+    var blackTranslucent40BorderHover: String
     
-    var blackTranslucent40Hover: String = js.native
+    var blackTranslucent40Hover: String
     
-    var blue: String = js.native
+    var blue: String
     
-    var blueBackground: String = js.native
+    var blueBackground: String
     
-    var blueBackgroundHover: String = js.native
+    var blueBackgroundHover: String
     
-    var blueBorder: String = js.native
+    var blueBorder: String
     
-    var blueBorderHover: String = js.native
+    var blueBorderHover: String
     
-    var blueDark: String = js.native
+    var blueDark: String
     
-    var blueDarkBackground: String = js.native
+    var blueDarkBackground: String
     
-    var blueDarkBackgroundHover: String = js.native
+    var blueDarkBackgroundHover: String
     
-    var blueDarkBorder: String = js.native
+    var blueDarkBorder: String
     
-    var blueDarkBorderHover: String = js.native
+    var blueDarkBorderHover: String
     
-    var blueDarkHover: String = js.native
+    var blueDarkHover: String
     
-    var blueHover: String = js.native
+    var blueHover: String
     
-    var blueLight: String = js.native
+    var blueLight: String
     
-    var blueLightBackground: String = js.native
+    var blueLightBackground: String
     
-    var blueLightBackgroundHover: String = js.native
+    var blueLightBackgroundHover: String
     
-    var blueLightBorder: String = js.native
+    var blueLightBorder: String
     
-    var blueLightBorderHover: String = js.native
+    var blueLightBorderHover: String
     
-    var blueLightHover: String = js.native
+    var blueLightHover: String
     
-    var blueMid: String = js.native
+    var blueMid: String
     
-    var blueMidBackground: String = js.native
+    var blueMidBackground: String
     
-    var blueMidBackgroundHover: String = js.native
+    var blueMidBackgroundHover: String
     
-    var blueMidBorder: String = js.native
+    var blueMidBorder: String
     
-    var blueMidBorderHover: String = js.native
+    var blueMidBorderHover: String
     
-    var blueMidHover: String = js.native
+    var blueMidHover: String
     
-    var green: String = js.native
+    var green: String
     
-    var greenBackground: String = js.native
+    var greenBackground: String
     
-    var greenBackgroundHover: String = js.native
+    var greenBackgroundHover: String
     
-    var greenBorder: String = js.native
+    var greenBorder: String
     
-    var greenBorderHover: String = js.native
+    var greenBorderHover: String
     
-    var greenDark: String = js.native
+    var greenDark: String
     
-    var greenDarkBackground: String = js.native
+    var greenDarkBackground: String
     
-    var greenDarkBackgroundHover: String = js.native
+    var greenDarkBackgroundHover: String
     
-    var greenDarkBorder: String = js.native
+    var greenDarkBorder: String
     
-    var greenDarkBorderHover: String = js.native
+    var greenDarkBorderHover: String
     
-    var greenDarkHover: String = js.native
+    var greenDarkHover: String
     
-    var greenHover: String = js.native
+    var greenHover: String
     
-    var greenLight: String = js.native
+    var greenLight: String
     
-    var greenLightBackground: String = js.native
+    var greenLightBackground: String
     
-    var greenLightBackgroundHover: String = js.native
+    var greenLightBackgroundHover: String
     
-    var greenLightBorder: String = js.native
+    var greenLightBorder: String
     
-    var greenLightBorderHover: String = js.native
+    var greenLightBorderHover: String
     
-    var greenLightHover: String = js.native
+    var greenLightHover: String
     
-    var magenta: String = js.native
+    var magenta: String
     
-    var magentaBackground: String = js.native
+    var magentaBackground: String
     
-    var magentaBackgroundHover: String = js.native
+    var magentaBackgroundHover: String
     
-    var magentaBorder: String = js.native
+    var magentaBorder: String
     
-    var magentaBorderHover: String = js.native
+    var magentaBorderHover: String
     
-    var magentaDark: String = js.native
+    var magentaDark: String
     
-    var magentaDarkBackground: String = js.native
+    var magentaDarkBackground: String
     
-    var magentaDarkBackgroundHover: String = js.native
+    var magentaDarkBackgroundHover: String
     
-    var magentaDarkBorder: String = js.native
+    var magentaDarkBorder: String
     
-    var magentaDarkBorderHover: String = js.native
+    var magentaDarkBorderHover: String
     
-    var magentaDarkHover: String = js.native
+    var magentaDarkHover: String
     
-    var magentaHover: String = js.native
+    var magentaHover: String
     
-    var magentaLight: String = js.native
+    var magentaLight: String
     
-    var magentaLightBackground: String = js.native
+    var magentaLightBackground: String
     
-    var magentaLightBackgroundHover: String = js.native
+    var magentaLightBackgroundHover: String
     
-    var magentaLightBorder: String = js.native
+    var magentaLightBorder: String
     
-    var magentaLightBorderHover: String = js.native
+    var magentaLightBorderHover: String
     
-    var magentaLightHover: String = js.native
+    var magentaLightHover: String
     
-    var neutralDark: String = js.native
+    var neutralDark: String
     
-    var neutralDarkBackground: String = js.native
+    var neutralDarkBackground: String
     
-    var neutralDarkBackgroundHover: String = js.native
+    var neutralDarkBackgroundHover: String
     
-    var neutralDarkBorder: String = js.native
+    var neutralDarkBorder: String
     
-    var neutralDarkBorderHover: String = js.native
+    var neutralDarkBorderHover: String
     
-    var neutralDarkHover: String = js.native
+    var neutralDarkHover: String
     
-    var neutralLight: String = js.native
+    var neutralLight: String
     
-    var neutralLightBackground: String = js.native
+    var neutralLightBackground: String
     
-    var neutralLightBackgroundHover: String = js.native
+    var neutralLightBackgroundHover: String
     
-    var neutralLightBorder: String = js.native
+    var neutralLightBorder: String
     
-    var neutralLightBorderHover: String = js.native
+    var neutralLightBorderHover: String
     
-    var neutralLightHover: String = js.native
+    var neutralLightHover: String
     
-    var neutralLighter: String = js.native
+    var neutralLighter: String
     
-    var neutralLighterAlt: String = js.native
+    var neutralLighterAlt: String
     
-    var neutralLighterAltBackground: String = js.native
+    var neutralLighterAltBackground: String
     
-    var neutralLighterAltBackgroundHover: String = js.native
+    var neutralLighterAltBackgroundHover: String
     
-    var neutralLighterAltBorder: String = js.native
+    var neutralLighterAltBorder: String
     
-    var neutralLighterAltBorderHover: String = js.native
+    var neutralLighterAltBorderHover: String
     
-    var neutralLighterAltHover: String = js.native
+    var neutralLighterAltHover: String
     
-    var neutralLighterBackground: String = js.native
+    var neutralLighterBackground: String
     
-    var neutralLighterBackgroundHover: String = js.native
+    var neutralLighterBackgroundHover: String
     
-    var neutralLighterBorder: String = js.native
+    var neutralLighterBorder: String
     
-    var neutralLighterBorderHover: String = js.native
+    var neutralLighterBorderHover: String
     
-    var neutralLighterHover: String = js.native
+    var neutralLighterHover: String
     
-    var neutralPrimary: String = js.native
+    var neutralPrimary: String
     
-    var neutralPrimaryAlt: String = js.native
+    var neutralPrimaryAlt: String
     
-    var neutralPrimaryAltBackground: String = js.native
+    var neutralPrimaryAltBackground: String
     
-    var neutralPrimaryAltBackgroundHover: String = js.native
+    var neutralPrimaryAltBackgroundHover: String
     
-    var neutralPrimaryAltBorder: String = js.native
+    var neutralPrimaryAltBorder: String
     
-    var neutralPrimaryAltBorderHover: String = js.native
+    var neutralPrimaryAltBorderHover: String
     
-    var neutralPrimaryAltHover: String = js.native
+    var neutralPrimaryAltHover: String
     
-    var neutralPrimaryBackground: String = js.native
+    var neutralPrimaryBackground: String
     
-    var neutralPrimaryBackgroundHover: String = js.native
+    var neutralPrimaryBackgroundHover: String
     
-    var neutralPrimaryBorder: String = js.native
+    var neutralPrimaryBorder: String
     
-    var neutralPrimaryBorderHover: String = js.native
+    var neutralPrimaryBorderHover: String
     
-    var neutralPrimaryHover: String = js.native
+    var neutralPrimaryHover: String
     
-    var neutralQuaternary: String = js.native
+    var neutralQuaternary: String
     
-    var neutralQuaternaryAlt: String = js.native
+    var neutralQuaternaryAlt: String
     
-    var neutralQuaternaryAltBackground: String = js.native
+    var neutralQuaternaryAltBackground: String
     
-    var neutralQuaternaryAltBackgroundHover: String = js.native
+    var neutralQuaternaryAltBackgroundHover: String
     
-    var neutralQuaternaryAltBorder: String = js.native
+    var neutralQuaternaryAltBorder: String
     
-    var neutralQuaternaryAltBorderHover: String = js.native
+    var neutralQuaternaryAltBorderHover: String
     
-    var neutralQuaternaryAltHover: String = js.native
+    var neutralQuaternaryAltHover: String
     
-    var neutralQuaternaryBackground: String = js.native
+    var neutralQuaternaryBackground: String
     
-    var neutralQuaternaryBackgroundHover: String = js.native
+    var neutralQuaternaryBackgroundHover: String
     
-    var neutralQuaternaryBorder: String = js.native
+    var neutralQuaternaryBorder: String
     
-    var neutralQuaternaryBorderHover: String = js.native
+    var neutralQuaternaryBorderHover: String
     
-    var neutralQuaternaryHover: String = js.native
+    var neutralQuaternaryHover: String
     
-    var neutralSecondary: String = js.native
+    var neutralSecondary: String
     
-    var neutralSecondaryAlt: String = js.native
+    var neutralSecondaryAlt: String
     
-    var neutralSecondaryAltBackground: String = js.native
+    var neutralSecondaryAltBackground: String
     
-    var neutralSecondaryAltBackgroundHover: String = js.native
+    var neutralSecondaryAltBackgroundHover: String
     
-    var neutralSecondaryAltBorder: String = js.native
+    var neutralSecondaryAltBorder: String
     
-    var neutralSecondaryAltBorderHover: String = js.native
+    var neutralSecondaryAltBorderHover: String
     
-    var neutralSecondaryAltHover: String = js.native
+    var neutralSecondaryAltHover: String
     
-    var neutralSecondaryBackground: String = js.native
+    var neutralSecondaryBackground: String
     
-    var neutralSecondaryBackgroundHover: String = js.native
+    var neutralSecondaryBackgroundHover: String
     
-    var neutralSecondaryBorder: String = js.native
+    var neutralSecondaryBorder: String
     
-    var neutralSecondaryBorderHover: String = js.native
+    var neutralSecondaryBorderHover: String
     
-    var neutralSecondaryHover: String = js.native
+    var neutralSecondaryHover: String
     
-    var neutralTertiary: String = js.native
+    var neutralTertiary: String
     
-    var neutralTertiaryAlt: String = js.native
+    var neutralTertiaryAlt: String
     
-    var neutralTertiaryAltBackground: String = js.native
+    var neutralTertiaryAltBackground: String
     
-    var neutralTertiaryAltBackgroundHover: String = js.native
+    var neutralTertiaryAltBackgroundHover: String
     
-    var neutralTertiaryAltBorder: String = js.native
+    var neutralTertiaryAltBorder: String
     
-    var neutralTertiaryAltBorderHover: String = js.native
+    var neutralTertiaryAltBorderHover: String
     
-    var neutralTertiaryAltHover: String = js.native
+    var neutralTertiaryAltHover: String
     
-    var neutralTertiaryBackground: String = js.native
+    var neutralTertiaryBackground: String
     
-    var neutralTertiaryBackgroundHover: String = js.native
+    var neutralTertiaryBackgroundHover: String
     
-    var neutralTertiaryBorder: String = js.native
+    var neutralTertiaryBorder: String
     
-    var neutralTertiaryBorderHover: String = js.native
+    var neutralTertiaryBorderHover: String
     
-    var neutralTertiaryHover: String = js.native
+    var neutralTertiaryHover: String
     
-    var orange: String = js.native
+    var orange: String
     
-    var orangeBackground: String = js.native
+    var orangeBackground: String
     
-    var orangeBackgroundHover: String = js.native
+    var orangeBackgroundHover: String
     
-    var orangeBorder: String = js.native
+    var orangeBorder: String
     
-    var orangeBorderHover: String = js.native
+    var orangeBorderHover: String
     
-    var orangeHover: String = js.native
+    var orangeHover: String
     
-    var orangeLight: String = js.native
+    var orangeLight: String
     
-    var orangeLightBackground: String = js.native
+    var orangeLightBackground: String
     
-    var orangeLightBackgroundHover: String = js.native
+    var orangeLightBackgroundHover: String
     
-    var orangeLightBorder: String = js.native
+    var orangeLightBorder: String
     
-    var orangeLightBorderHover: String = js.native
+    var orangeLightBorderHover: String
     
-    var orangeLightHover: String = js.native
+    var orangeLightHover: String
     
-    var orangeLighter: String = js.native
+    var orangeLighter: String
     
-    var orangeLighterBackground: String = js.native
+    var orangeLighterBackground: String
     
-    var orangeLighterBackgroundHover: String = js.native
+    var orangeLighterBackgroundHover: String
     
-    var orangeLighterBorder: String = js.native
+    var orangeLighterBorder: String
     
-    var orangeLighterBorderHover: String = js.native
+    var orangeLighterBorderHover: String
     
-    var orangeLighterHover: String = js.native
+    var orangeLighterHover: String
     
-    var purple: String = js.native
+    var purple: String
     
-    var purpleBackground: String = js.native
+    var purpleBackground: String
     
-    var purpleBackgroundHover: String = js.native
+    var purpleBackgroundHover: String
     
-    var purpleBorder: String = js.native
+    var purpleBorder: String
     
-    var purpleBorderHover: String = js.native
+    var purpleBorderHover: String
     
-    var purpleDark: String = js.native
+    var purpleDark: String
     
-    var purpleDarkBackground: String = js.native
+    var purpleDarkBackground: String
     
-    var purpleDarkBackgroundHover: String = js.native
+    var purpleDarkBackgroundHover: String
     
-    var purpleDarkBorder: String = js.native
+    var purpleDarkBorder: String
     
-    var purpleDarkBorderHover: String = js.native
+    var purpleDarkBorderHover: String
     
-    var purpleDarkHover: String = js.native
+    var purpleDarkHover: String
     
-    var purpleHover: String = js.native
+    var purpleHover: String
     
-    var purpleLight: String = js.native
+    var purpleLight: String
     
-    var purpleLightBackground: String = js.native
+    var purpleLightBackground: String
     
-    var purpleLightBackgroundHover: String = js.native
+    var purpleLightBackgroundHover: String
     
-    var purpleLightBorder: String = js.native
+    var purpleLightBorder: String
     
-    var purpleLightBorderHover: String = js.native
+    var purpleLightBorderHover: String
     
-    var purpleLightHover: String = js.native
+    var purpleLightHover: String
     
-    var red: String = js.native
+    var red: String
     
-    var redBackground: String = js.native
+    var redBackground: String
     
-    var redBackgroundHover: String = js.native
+    var redBackgroundHover: String
     
-    var redBorder: String = js.native
+    var redBorder: String
     
-    var redBorderHover: String = js.native
+    var redBorderHover: String
     
-    var redDark: String = js.native
+    var redDark: String
     
-    var redDarkBackground: String = js.native
+    var redDarkBackground: String
     
-    var redDarkBackgroundHover: String = js.native
+    var redDarkBackgroundHover: String
     
-    var redDarkBorder: String = js.native
+    var redDarkBorder: String
     
-    var redDarkBorderHover: String = js.native
+    var redDarkBorderHover: String
     
-    var redDarkHover: String = js.native
+    var redDarkHover: String
     
-    var redHover: String = js.native
+    var redHover: String
     
-    var teal: String = js.native
+    var teal: String
     
-    var tealBackground: String = js.native
+    var tealBackground: String
     
-    var tealBackgroundHover: String = js.native
+    var tealBackgroundHover: String
     
-    var tealBorder: String = js.native
+    var tealBorder: String
     
-    var tealBorderHover: String = js.native
+    var tealBorderHover: String
     
-    var tealDark: String = js.native
+    var tealDark: String
     
-    var tealDarkBackground: String = js.native
+    var tealDarkBackground: String
     
-    var tealDarkBackgroundHover: String = js.native
+    var tealDarkBackgroundHover: String
     
-    var tealDarkBorder: String = js.native
+    var tealDarkBorder: String
     
-    var tealDarkBorderHover: String = js.native
+    var tealDarkBorderHover: String
     
-    var tealDarkHover: String = js.native
+    var tealDarkHover: String
     
-    var tealHover: String = js.native
+    var tealHover: String
     
-    var tealLight: String = js.native
+    var tealLight: String
     
-    var tealLightBackground: String = js.native
+    var tealLightBackground: String
     
-    var tealLightBackgroundHover: String = js.native
+    var tealLightBackgroundHover: String
     
-    var tealLightBorder: String = js.native
+    var tealLightBorder: String
     
-    var tealLightBorderHover: String = js.native
+    var tealLightBorderHover: String
     
-    var tealLightHover: String = js.native
+    var tealLightHover: String
     
-    var themeDark: String = js.native
+    var themeDark: String
     
-    var themeDarkAlt: String = js.native
+    var themeDarkAlt: String
     
-    var themeDarkAltBackground: String = js.native
+    var themeDarkAltBackground: String
     
-    var themeDarkAltBackgroundHover: String = js.native
+    var themeDarkAltBackgroundHover: String
     
-    var themeDarkAltBorder: String = js.native
+    var themeDarkAltBorder: String
     
-    var themeDarkAltBorderHover: String = js.native
+    var themeDarkAltBorderHover: String
     
-    var themeDarkAltHover: String = js.native
+    var themeDarkAltHover: String
     
-    var themeDarkBackground: String = js.native
+    var themeDarkBackground: String
     
-    var themeDarkBackgroundHover: String = js.native
+    var themeDarkBackgroundHover: String
     
-    var themeDarkBorder: String = js.native
+    var themeDarkBorder: String
     
-    var themeDarkBorderHover: String = js.native
+    var themeDarkBorderHover: String
     
-    var themeDarkHover: String = js.native
+    var themeDarkHover: String
     
-    var themeDarker: String = js.native
+    var themeDarker: String
     
-    var themeDarkerBackground: String = js.native
+    var themeDarkerBackground: String
     
-    var themeDarkerBackgroundHover: String = js.native
+    var themeDarkerBackgroundHover: String
     
-    var themeDarkerBorder: String = js.native
+    var themeDarkerBorder: String
     
-    var themeDarkerBorderHover: String = js.native
+    var themeDarkerBorderHover: String
     
-    var themeDarkerHover: String = js.native
+    var themeDarkerHover: String
     
-    var themeLight: String = js.native
+    var themeLight: String
     
-    var themeLightBackground: String = js.native
+    var themeLightBackground: String
     
-    var themeLightBackgroundHover: String = js.native
+    var themeLightBackgroundHover: String
     
-    var themeLightBorder: String = js.native
+    var themeLightBorder: String
     
-    var themeLightBorderHover: String = js.native
+    var themeLightBorderHover: String
     
-    var themeLightHover: String = js.native
+    var themeLightHover: String
     
-    var themeLighter: String = js.native
+    var themeLighter: String
     
-    var themeLighterAlt: String = js.native
+    var themeLighterAlt: String
     
-    var themeLighterAltBackground: String = js.native
+    var themeLighterAltBackground: String
     
-    var themeLighterAltBackgroundHover: String = js.native
+    var themeLighterAltBackgroundHover: String
     
-    var themeLighterAltBorder: String = js.native
+    var themeLighterAltBorder: String
     
-    var themeLighterAltBorderHover: String = js.native
+    var themeLighterAltBorderHover: String
     
-    var themeLighterAltHover: String = js.native
+    var themeLighterAltHover: String
     
-    var themeLighterBackground: String = js.native
+    var themeLighterBackground: String
     
-    var themeLighterBackgroundHover: String = js.native
+    var themeLighterBackgroundHover: String
     
-    var themeLighterBorder: String = js.native
+    var themeLighterBorder: String
     
-    var themeLighterBorderHover: String = js.native
+    var themeLighterBorderHover: String
     
-    var themeLighterHover: String = js.native
+    var themeLighterHover: String
     
-    var themePrimary: String = js.native
+    var themePrimary: String
     
-    var themePrimaryBackground: String = js.native
+    var themePrimaryBackground: String
     
-    var themePrimaryBackgroundHover: String = js.native
+    var themePrimaryBackgroundHover: String
     
-    var themePrimaryBorder: String = js.native
+    var themePrimaryBorder: String
     
-    var themePrimaryBorderHover: String = js.native
+    var themePrimaryBorderHover: String
     
-    var themePrimaryHover: String = js.native
+    var themePrimaryHover: String
     
-    var themeSecondary: String = js.native
+    var themeSecondary: String
     
-    var themeSecondaryBackground: String = js.native
+    var themeSecondaryBackground: String
     
-    var themeSecondaryBackgroundHover: String = js.native
+    var themeSecondaryBackgroundHover: String
     
-    var themeSecondaryBorder: String = js.native
+    var themeSecondaryBorder: String
     
-    var themeSecondaryBorderHover: String = js.native
+    var themeSecondaryBorderHover: String
     
-    var themeSecondaryHover: String = js.native
+    var themeSecondaryHover: String
     
-    var themeTertiary: String = js.native
+    var themeTertiary: String
     
-    var themeTertiaryBackground: String = js.native
+    var themeTertiaryBackground: String
     
-    var themeTertiaryBackgroundHover: String = js.native
+    var themeTertiaryBackgroundHover: String
     
-    var themeTertiaryBorder: String = js.native
+    var themeTertiaryBorder: String
     
-    var themeTertiaryBorderHover: String = js.native
+    var themeTertiaryBorderHover: String
     
-    var themeTertiaryHover: String = js.native
+    var themeTertiaryHover: String
     
-    var white: String = js.native
+    var white: String
     
-    var whiteBackground: String = js.native
+    var whiteBackground: String
     
-    var whiteBackgroundHover: String = js.native
+    var whiteBackgroundHover: String
     
-    var whiteBorder: String = js.native
+    var whiteBorder: String
     
-    var whiteBorderHover: String = js.native
+    var whiteBorderHover: String
     
-    var whiteHover: String = js.native
+    var whiteHover: String
     
-    var whiteTranslucent40: String = js.native
+    var whiteTranslucent40: String
     
-    var whiteTranslucent40Background: String = js.native
+    var whiteTranslucent40Background: String
     
-    var whiteTranslucent40BackgroundHover: String = js.native
+    var whiteTranslucent40BackgroundHover: String
     
-    var whiteTranslucent40Border: String = js.native
+    var whiteTranslucent40Border: String
     
-    var whiteTranslucent40BorderHover: String = js.native
+    var whiteTranslucent40BorderHover: String
     
-    var whiteTranslucent40Hover: String = js.native
+    var whiteTranslucent40Hover: String
     
-    var yellow: String = js.native
+    var yellow: String
     
-    var yellowBackground: String = js.native
+    var yellowBackground: String
     
-    var yellowBackgroundHover: String = js.native
+    var yellowBackgroundHover: String
     
-    var yellowBorder: String = js.native
+    var yellowBorder: String
     
-    var yellowBorderHover: String = js.native
+    var yellowBorderHover: String
     
-    var yellowHover: String = js.native
+    var yellowHover: String
     
-    var yellowLight: String = js.native
+    var yellowLight: String
     
-    var yellowLightBackground: String = js.native
+    var yellowLightBackground: String
     
-    var yellowLightBackgroundHover: String = js.native
+    var yellowLightBackgroundHover: String
     
-    var yellowLightBorder: String = js.native
+    var yellowLightBorder: String
     
-    var yellowLightBorderHover: String = js.native
+    var yellowLightBorderHover: String
     
-    var yellowLightHover: String = js.native
+    var yellowLightHover: String
   }
   object IColorClassNames {
     

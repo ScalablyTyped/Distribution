@@ -2,19 +2,17 @@ package typings.pgFormat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ident extends StObject {
     
-    var ident: js.UndefOr[String] = js.native
+    var ident: js.UndefOr[String] = js.undefined
     
-    var literal: js.UndefOr[String] = js.native
+    var literal: js.UndefOr[String] = js.undefined
     
-    var string: js.UndefOr[String] = js.native
+    var string: js.UndefOr[String] = js.undefined
   }
   object Ident {
     
@@ -47,10 +45,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Pattern extends StObject {
     
-    var pattern: Ident = js.native
+    var pattern: Ident
   }
   object Pattern {
     

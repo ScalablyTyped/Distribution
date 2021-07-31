@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hostedPrivateVirtualInterfaceAccepterMod {
@@ -54,6 +53,10 @@ object hostedPrivateVirtualInterfaceAccepterMod {
   /* static members */
   object HostedPrivateVirtualInterfaceAccepter {
     
+    @JSImport("@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter", "HostedPrivateVirtualInterfaceAccepter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HostedPrivateVirtualInterfaceAccepter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -63,55 +66,49 @@ object hostedPrivateVirtualInterfaceAccepterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter", "HostedPrivateVirtualInterfaceAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): HostedPrivateVirtualInterfaceAccepter = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter", "HostedPrivateVirtualInterfaceAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): HostedPrivateVirtualInterfaceAccepter = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter", "HostedPrivateVirtualInterfaceAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedPrivateVirtualInterfaceAccepterState): HostedPrivateVirtualInterfaceAccepter = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter", "HostedPrivateVirtualInterfaceAccepter.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): HostedPrivateVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HostedPrivateVirtualInterfaceAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): HostedPrivateVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedPrivateVirtualInterfaceAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedPrivateVirtualInterfaceAccepterState): HostedPrivateVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[HostedPrivateVirtualInterfaceAccepter]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: HostedPrivateVirtualInterfaceAccepterState,
       opts: CustomResourceOptions
-    ): HostedPrivateVirtualInterfaceAccepter = js.native
+    ): HostedPrivateVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedPrivateVirtualInterfaceAccepter]
     
     /**
       * Returns true if the given object is an instance of HostedPrivateVirtualInterfaceAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter", "HostedPrivateVirtualInterfaceAccepter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter.HostedPrivateVirtualInterfaceAccepter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter.HostedPrivateVirtualInterfaceAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter.HostedPrivateVirtualInterfaceAccepter */ Boolean]
   }
   
-  @js.native
   trait HostedPrivateVirtualInterfaceAccepterArgs extends StObject {
     
     /**
       * The ID of the Direct Connect gateway to which to connect the virtual interface.
       */
-    val dxGatewayId: js.UndefOr[Input[String]] = js.native
+    val dxGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the Direct Connect virtual interface to accept.
       */
-    val virtualInterfaceId: Input[String] = js.native
+    val virtualInterfaceId: Input[String]
     
     /**
       * The ID of the virtual private gateway to which to connect the virtual interface.
       */
-    val vpnGatewayId: js.UndefOr[Input[String]] = js.native
+    val vpnGatewayId: js.UndefOr[Input[String]] = js.undefined
   }
   object HostedPrivateVirtualInterfaceAccepterArgs {
     
@@ -147,33 +144,32 @@ object hostedPrivateVirtualInterfaceAccepterMod {
     }
   }
   
-  @js.native
   trait HostedPrivateVirtualInterfaceAccepterState extends StObject {
     
     /**
       * The ARN of the virtual interface.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Direct Connect gateway to which to connect the virtual interface.
       */
-    val dxGatewayId: js.UndefOr[Input[String]] = js.native
+    val dxGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the Direct Connect virtual interface to accept.
       */
-    val virtualInterfaceId: js.UndefOr[Input[String]] = js.native
+    val virtualInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the virtual private gateway to which to connect the virtual interface.
       */
-    val vpnGatewayId: js.UndefOr[Input[String]] = js.native
+    val vpnGatewayId: js.UndefOr[Input[String]] = js.undefined
   }
   object HostedPrivateVirtualInterfaceAccepterState {
     

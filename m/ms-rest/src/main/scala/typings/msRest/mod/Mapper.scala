@@ -2,23 +2,23 @@ package typings.msRest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Mapper extends BaseMapperType {
+trait Mapper
+  extends StObject
+     with BaseMapperType {
   
-  var isConstant: js.UndefOr[Boolean] = js.native
+  var isConstant: js.UndefOr[Boolean] = js.undefined
   
-  var nullable: js.UndefOr[Boolean] = js.native
+  var nullable: js.UndefOr[Boolean] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var serializedName: String = js.native
+  var serializedName: String
   
-  var `type`: BaseMapperType = js.native
+  var `type`: BaseMapperType
 }
 object Mapper {
   

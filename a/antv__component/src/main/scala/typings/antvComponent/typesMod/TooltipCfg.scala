@@ -2,102 +2,102 @@ package typings.antvComponent.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TooltipCfg extends HtmlComponentCfg {
+trait TooltipCfg
+  extends StObject
+     with HtmlComponentCfg {
   
   /**
     * 容器的模板
     * @type {string}
     */
-  var containerTpl: js.UndefOr[String] = js.native
+  var containerTpl: js.UndefOr[String] = js.undefined
   
   /**
     * crosshairs 的类型， x,y,xy
     * @type {string}
     */
-  var crosshairs: js.UndefOr[String] = js.native
+  var crosshairs: js.UndefOr[String] = js.undefined
   
   /**
     * crosshairs 限制的区域
     * @type {Region}
     */
-  var crosshairsRegion: js.UndefOr[Region] = js.native
+  var crosshairsRegion: js.UndefOr[Region] = js.undefined
   
   /**
     * 默认的各个 dom 的样式
     * @type {object}
     */
-  var defaultStyles: js.UndefOr[js.Object] = js.native
+  var defaultStyles: js.UndefOr[js.Object] = js.undefined
   
   /**
     * 传入各个 dom 的样式
     * @type {object}
     */
   @JSName("domStyles")
-  var domStyles_TooltipCfg: js.UndefOr[js.Object] = js.native
+  var domStyles_TooltipCfg: js.UndefOr[js.Object] = js.undefined
   
   /**
     * 是否跟随鼠标移动，会影响 x，y的定位
     * @type {boolean}
     */
-  var follow: js.UndefOr[Boolean] = js.native
+  var follow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 列表项的模板
     * @type {[type]}
     */
-  var itemTpl: js.UndefOr[String] = js.native
+  var itemTpl: js.UndefOr[String] = js.undefined
   
   /**
     * 列表项集合
     * @type {ListItem[]}
     */
-  var items: js.Array[ListItem] = js.native
+  var items: js.Array[ListItem]
   
   /**
     * 偏移量，同 position 相关
     * @type {number}
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * 位置，top, bottom, left, right
     * @type {string}
     */
-  var position: js.UndefOr[TooltipPosition] = js.native
+  var position: js.UndefOr[TooltipPosition] = js.undefined
   
   /**
     * tooltip 限制的区域
     * @type {Region}
     */
-  var region: js.UndefOr[Region] = js.native
+  var region: js.UndefOr[Region] = js.undefined
   
   /**
     * 位置 x
     * @type {number}
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * 根据 x 定位的 crosshair 的模板
     * @type {string}
     */
-  var xCrosshairTpl: js.UndefOr[String] = js.native
+  var xCrosshairTpl: js.UndefOr[String] = js.undefined
   
   /**
     * 位置 y
     * @type {number}
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
   /**
     * 根据 y 定位的 crosshair 的模板
     * @type {[type]}
     */
-  var yCrosshairTpl: js.UndefOr[String] = js.native
+  var yCrosshairTpl: js.UndefOr[String] = js.undefined
 }
 object TooltipCfg {
   

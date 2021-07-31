@@ -2,16 +2,14 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEndPointStateOutput extends StObject {
   
   /**
     * Information about the health of the instances.
     */
-  var InstanceStates: js.UndefOr[typings.awsSdk.elbMod.InstanceStates] = js.native
+  var InstanceStates: js.UndefOr[typings.awsSdk.elbMod.InstanceStates] = js.undefined
 }
 object DescribeEndPointStateOutput {
   

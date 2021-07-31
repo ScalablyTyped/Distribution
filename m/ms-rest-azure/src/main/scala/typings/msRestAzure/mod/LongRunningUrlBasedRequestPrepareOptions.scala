@@ -4,13 +4,13 @@ import typings.msRest.mod.Mapper
 import typings.msRest.mod.UrlBasedRequestPrepareOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LongRunningUrlBasedRequestPrepareOptions extends UrlBasedRequestPrepareOptions {
+trait LongRunningUrlBasedRequestPrepareOptions
+  extends StObject
+     with UrlBasedRequestPrepareOptions {
   
-  var deserializationMapperForTerminalResponse: js.UndefOr[Mapper] = js.native
+  var deserializationMapperForTerminalResponse: js.UndefOr[Mapper] = js.undefined
 }
 object LongRunningUrlBasedRequestPrepareOptions {
   

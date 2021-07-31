@@ -5,10 +5,13 @@ import typings.recast.anon.Column
 import typings.recast.optionsMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linesMod {
+  
+  @JSImport("recast/lib/lines", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("recast/lib/lines", "Lines")
   @js.native
@@ -31,10 +34,10 @@ object linesMod {
     
     def concat(args: (String | Lines)*): Lines = js.native
     
-    def eachPos(callback: js.Function1[/* pos */ Pos, _]): Unit = js.native
-    def eachPos(callback: js.Function1[/* pos */ Pos, _], startPos: js.UndefOr[scala.Nothing], skipSpaces: Boolean): Unit = js.native
-    def eachPos(callback: js.Function1[/* pos */ Pos, _], startPos: Pos): Unit = js.native
-    def eachPos(callback: js.Function1[/* pos */ Pos, _], startPos: Pos, skipSpaces: Boolean): Unit = js.native
+    def eachPos(callback: js.Function1[/* pos */ Pos, js.Any]): Unit = js.native
+    def eachPos(callback: js.Function1[/* pos */ Pos, js.Any], startPos: Unit, skipSpaces: Boolean): Unit = js.native
+    def eachPos(callback: js.Function1[/* pos */ Pos, js.Any], startPos: Pos): Unit = js.native
+    def eachPos(callback: js.Function1[/* pos */ Pos, js.Any], startPos: Pos, skipSpaces: Boolean): Unit = js.native
     
     def firstPos(): Column = js.native
     
@@ -78,21 +81,21 @@ object linesMod {
     def prevPos(pos: Pos, skipSpaces: Boolean): Boolean = js.native
     
     def skipSpaces(pos: Pos): Position | Null = js.native
-    def skipSpaces(pos: Pos, backward: js.UndefOr[scala.Nothing], modifyInPlace: Boolean): Position | Null = js.native
     def skipSpaces(pos: Pos, backward: Boolean): Position | Null = js.native
     def skipSpaces(pos: Pos, backward: Boolean, modifyInPlace: Boolean): Position | Null = js.native
+    def skipSpaces(pos: Pos, backward: Unit, modifyInPlace: Boolean): Position | Null = js.native
     
     def slice(): Lines = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Pos): Lines = js.native
+    def slice(start: Unit, end: Pos): Lines = js.native
     def slice(start: Pos): Lines = js.native
     def slice(start: Pos, end: Pos): Lines = js.native
     
     def sliceString(): String = js.native
-    def sliceString(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], options: Options): String = js.native
-    def sliceString(start: js.UndefOr[scala.Nothing], end: Pos): String = js.native
-    def sliceString(start: js.UndefOr[scala.Nothing], end: Pos, options: Options): String = js.native
+    def sliceString(start: Unit, end: Unit, options: Options): String = js.native
+    def sliceString(start: Unit, end: Pos): String = js.native
+    def sliceString(start: Unit, end: Pos, options: Options): String = js.native
     def sliceString(start: Pos): String = js.native
-    def sliceString(start: Pos, end: js.UndefOr[scala.Nothing], options: Options): String = js.native
+    def sliceString(start: Pos, end: Unit, options: Options): String = js.native
     def sliceString(start: Pos, end: Pos): String = js.native
     def sliceString(start: Pos, end: Pos, options: Options): String = js.native
     
@@ -109,42 +112,34 @@ object linesMod {
     def trimRight(): Lines = js.native
   }
   
-  @JSImport("recast/lib/lines", "concat")
-  @js.native
-  def concat(elements: js.Any): Lines = js.native
+  @scala.inline
+  def concat(elements: js.Any): Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(elements.asInstanceOf[js.Any]).asInstanceOf[Lines]
   
-  @JSImport("recast/lib/lines", "countSpaces")
-  @js.native
-  def countSpaces(spaces: js.Any): Double = js.native
-  @JSImport("recast/lib/lines", "countSpaces")
-  @js.native
-  def countSpaces(spaces: js.Any, tabWidth: Double): Double = js.native
+  @scala.inline
+  def countSpaces(spaces: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countSpaces")(spaces.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def countSpaces(spaces: js.Any, tabWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countSpaces")(spaces.asInstanceOf[js.Any], tabWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("recast/lib/lines", "fromString")
-  @js.native
-  def fromString(string: String): Lines = js.native
-  @JSImport("recast/lib/lines", "fromString")
-  @js.native
-  def fromString(string: String, options: Options): Lines = js.native
-  @JSImport("recast/lib/lines", "fromString")
-  @js.native
-  def fromString(string: Lines): Lines = js.native
-  @JSImport("recast/lib/lines", "fromString")
-  @js.native
-  def fromString(string: Lines, options: Options): Lines = js.native
+  @scala.inline
+  def fromString(string: String): Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any]).asInstanceOf[Lines]
+  @scala.inline
+  def fromString(string: String, options: Options): Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Lines]
+  @scala.inline
+  def fromString(string: Lines): Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any]).asInstanceOf[Lines]
+  @scala.inline
+  def fromString(string: Lines, options: Options): Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Lines]
   
-  @js.native
   trait LineInfo extends StObject {
     
-    val indent: Double = js.native
+    val indent: Double
     
-    val line: String = js.native
+    val line: String
     
-    val locked: Boolean = js.native
+    val locked: Boolean
     
-    val sliceEnd: Double = js.native
+    val sliceEnd: Double
     
-    val sliceStart: Double = js.native
+    val sliceStart: Double
   }
   object LineInfo {
     

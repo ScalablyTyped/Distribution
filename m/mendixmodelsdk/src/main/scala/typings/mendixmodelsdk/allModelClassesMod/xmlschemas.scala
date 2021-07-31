@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
 import typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlschemas {
@@ -79,9 +78,8 @@ object xmlschemas {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "xmlschemas.XmlElement.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement]
     
     /**
       * Creates and returns a new XmlElement instance in the SDK and on the server.
@@ -92,9 +90,8 @@ object xmlschemas {
       *  6.6.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "xmlschemas.XmlElement.createInElementUnderChildren")
-    @js.native
-    def createInElementUnderChildren(container: Element): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement = js.native
+    @scala.inline
+    def createInElementUnderChildren(container: Element): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement]
     
     /**
       * Creates and returns a new XmlElement instance in the SDK and on the server.
@@ -105,9 +102,8 @@ object xmlschemas {
       *  6.6.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "xmlschemas.XmlElement.createInJsonStructureUnderElements")
-    @js.native
-    def createInJsonStructureUnderElements(container: JsonStructure): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement = js.native
+    @scala.inline
+    def createInJsonStructureUnderElements(container: JsonStructure): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "xmlschemas.XmlElement.structureTypeName")
@@ -248,9 +244,8 @@ object xmlschemas {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "xmlschemas.XmlSchema.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchema = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchema]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "xmlschemas.XmlSchema.structureTypeName")
@@ -292,9 +287,8 @@ object xmlschemas {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "xmlschemas.XmlSchemaEntry.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry]
     
     /**
       * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
@@ -302,9 +296,8 @@ object xmlschemas {
       * of the parent webservices.WsdlDescription element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "xmlschemas.XmlSchemaEntry.createInWsdlDescriptionUnderSchemaEntries")
-    @js.native
-    def createInWsdlDescriptionUnderSchemaEntries(container: WsdlDescription): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry = js.native
+    @scala.inline
+    def createInWsdlDescriptionUnderSchemaEntries(container: WsdlDescription): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWsdlDescriptionUnderSchemaEntries")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry]
     
     /**
       * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
@@ -312,9 +305,8 @@ object xmlschemas {
       * of the parent XmlSchema element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "xmlschemas.XmlSchemaEntry.createInXmlSchemaUnderEntries")
-    @js.native
-    def createInXmlSchemaUnderEntries(container: typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchema): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry = js.native
+    @scala.inline
+    def createInXmlSchemaUnderEntries(container: typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchema): typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInXmlSchemaUnderEntries")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "xmlschemas.XmlSchemaEntry.structureTypeName")

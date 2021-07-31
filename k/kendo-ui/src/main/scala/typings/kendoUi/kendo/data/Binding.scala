@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.kendoUi.kendo.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Binding extends Observable {
+trait Binding
+  extends StObject
+     with Observable {
   
   def change(e: js.Object): Unit = js.native
   
@@ -20,7 +21,7 @@ trait Binding extends Observable {
   
   var observable: Boolean = js.native
   
-  var parents: js.Array[_] = js.native
+  var parents: js.Array[js.Any] = js.native
   
   var path: String = js.native
   

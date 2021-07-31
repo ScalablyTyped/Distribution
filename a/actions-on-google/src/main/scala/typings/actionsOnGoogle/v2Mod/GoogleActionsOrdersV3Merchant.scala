@@ -2,36 +2,34 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3Merchant extends StObject {
   
   /**
     * Merchant's address.
     */
-  var address: js.UndefOr[GoogleActionsV2Location] = js.native
+  var address: js.UndefOr[GoogleActionsV2Location] = js.undefined
   
   /**
     * Optional ID assigned to merchant if any.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The image associated with the merchant.
     */
-  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
   
   /**
     * The name of the merchant like \"Panera Bread\".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Merchant's phone numbers.
     */
-  var phoneNumbers: js.UndefOr[js.Array[GoogleActionsOrdersV3PhoneNumber]] = js.native
+  var phoneNumbers: js.UndefOr[js.Array[GoogleActionsOrdersV3PhoneNumber]] = js.undefined
 }
 object GoogleActionsOrdersV3Merchant {
   

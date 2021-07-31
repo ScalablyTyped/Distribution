@@ -5,15 +5,13 @@ import typings.storybookAddonKnobs.arrayMod.ArrayTypeKnob
 import typings.storybookAddonKnobs.arrayMod.ArrayTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Knob extends StObject {
   
-  var knob: Validator[ArrayTypeKnob] = js.native
+  var knob: Validator[ArrayTypeKnob]
   
-  var onChange: Validator[js.Function1[/* value */ ArrayTypeKnobValue, ArrayTypeKnobValue]] = js.native
+  var onChange: Validator[js.Function1[/* value */ ArrayTypeKnobValue, ArrayTypeKnobValue]]
 }
 object Knob {
   

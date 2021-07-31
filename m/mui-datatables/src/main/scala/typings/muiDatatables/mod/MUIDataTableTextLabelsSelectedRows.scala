@@ -2,17 +2,15 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableTextLabelsSelectedRows extends StObject {
   
-  var delete: String = js.native
+  var delete: String
   
-  var deleteAria: String = js.native
+  var deleteAria: String
   
-  var text: String = js.native
+  var text: String
 }
 object MUIDataTableTextLabelsSelectedRows {
   

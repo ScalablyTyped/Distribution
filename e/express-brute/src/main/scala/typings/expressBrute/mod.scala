@@ -10,7 +10,6 @@ import typings.expressServeStaticCore.mod.Query
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,7 +20,9 @@ object mod {
     */
   @JSImport("express-brute", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ExpressBrute {
+  class ^ protected ()
+    extends StObject
+       with ExpressBrute {
     /**
       * @summary Constructor.
       * @constructor
@@ -29,6 +30,37 @@ object mod {
       */
     def this(store: js.Any) = this()
     def this(store: js.Any, options: Options) = this()
+    
+    /**
+      * @summary Generates middleware that will bounce requests with the same key and IP address that happen faster than the current wait time by calling failCallback.
+      * @param {Object} options The options.
+      */
+    /* CompleteClass */
+    override def getMiddleware(options: Middleware): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    
+    /**
+      * @summary Middleware that will bounce requests that happen faster than the current wait time by calling failCallback.
+      * @param {Request}     request     The HTTP request.
+      * @param {Response}    response    The HTTP response.
+      * @param {Function}    next        The next middleware.
+      * @return {RequestHandler} The Request handler.
+      */
+    /* CompleteClass */
+    override def prevent(
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      response: Response_[js.Any],
+      next: NextFunction
+    ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    
+    /**
+      * @summary Resets the wait time between requests back to its initial value.
+      * @param {string}      ip      The IP address.
+      * @param {string}      key     The key. response.
+      * @param {Function}    next    The next middleware.
+      * @return {RequestHandler} The Request handler.
+      */
+    /* CompleteClass */
+    override def reset(ip: String, key: String, next: NextFunction): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
   }
   
   @JSImport("express-brute", "FailForbidden")
@@ -81,14 +113,13 @@ object mod {
     * @summary Middleware.
     * @class
     */
-  @js.native
   trait ExpressBrute extends StObject {
     
     /**
       * @summary Generates middleware that will bounce requests with the same key and IP address that happen faster than the current wait time by calling failCallback.
       * @param {Object} options The options.
       */
-    def getMiddleware(options: Middleware): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def getMiddleware(options: Middleware): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
     
     /**
       * @summary Middleware that will bounce requests that happen faster than the current wait time by calling failCallback.
@@ -97,7 +128,11 @@ object mod {
       * @param {Function}    next        The next middleware.
       * @return {RequestHandler} The Request handler.
       */
-    def prevent(request: Request_[ParamsDictionary, _, _, Query], response: Response_[_], next: NextFunction): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def prevent(
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      response: Response_[js.Any],
+      next: NextFunction
+    ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
     
     /**
       * @summary Resets the wait time between requests back to its initial value.
@@ -106,15 +141,15 @@ object mod {
       * @param {Function}    next    The next middleware.
       * @return {RequestHandler} The Request handler.
       */
-    def reset(ip: String, key: String, next: NextFunction): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def reset(ip: String, key: String, next: NextFunction): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
   }
   object ExpressBrute {
     
     @scala.inline
     def apply(
-      getMiddleware: Middleware => RequestHandler[ParamsDictionary, _, _, Query],
-      prevent: (Request_[ParamsDictionary, _, _, Query], Response_[_], NextFunction) => RequestHandler[ParamsDictionary, _, _, Query],
-      reset: (String, String, NextFunction) => RequestHandler[ParamsDictionary, _, _, Query]
+      getMiddleware: Middleware => RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
+      prevent: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
+      reset: (String, String, NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
     ): ExpressBrute = {
       val __obj = js.Dynamic.literal(getMiddleware = js.Any.fromFunction1(getMiddleware), prevent = js.Any.fromFunction3(prevent), reset = js.Any.fromFunction3(reset))
       __obj.asInstanceOf[ExpressBrute]
@@ -124,15 +159,15 @@ object mod {
     implicit class ExpressBruteMutableBuilder[Self <: ExpressBrute] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetMiddleware(value: Middleware => RequestHandler[ParamsDictionary, _, _, Query]): Self = StObject.set(x, "getMiddleware", js.Any.fromFunction1(value))
+      def setGetMiddleware(value: Middleware => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "getMiddleware", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPrevent(
-        value: (Request_[ParamsDictionary, _, _, Query], Response_[_], NextFunction) => RequestHandler[ParamsDictionary, _, _, Query]
+        value: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
       ): Self = StObject.set(x, "prevent", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setReset(value: (String, String, NextFunction) => RequestHandler[ParamsDictionary, _, _, Query]): Self = StObject.set(x, "reset", js.Any.fromFunction3(value))
+      def setReset(value: (String, String, NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "reset", js.Any.fromFunction3(value))
     }
   }
   
@@ -144,14 +179,13 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait MemoryStoreOptions extends StObject {
     
     /**
       * @summary Key prefix.
       * @type {string}
       */
-    var prefix: String = js.native
+    var prefix: String
   }
   object MemoryStoreOptions {
     
@@ -169,20 +203,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Middleware extends StObject {
     
     /**
       * @summary Allows you to override the value of failCallback for this middleware.
       * @type {FailCallback}
       */
-    var failCallback: js.UndefOr[FailCallback] = js.native
+    var failCallback: js.UndefOr[FailCallback] = js.undefined
     
     /**
       * @summary Disregard IP address when matching requests if set to true. Defaults to false.
       * @type {boolean}
       */
-    var ignoreIP: js.UndefOr[Boolean] = js.native
+    var ignoreIP: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @summary Key.
@@ -190,12 +223,12 @@ object mod {
       */
     var key: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
-          /* res */ Response_[_], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
           /* next */ NextFunction, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Middleware {
     
@@ -224,7 +257,7 @@ object mod {
       
       @scala.inline
       def setKey(
-        value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], /* next */ NextFunction) => _
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "key", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -232,48 +265,47 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * @summary Specify whether or not a simplified reset method should be attached at req.brute.reset. The simplified method takes only a callback, and resets all ExpressBrute middleware that was called on the current request. If multiple instances of ExpressBrute have middleware on the same request, only those with attachResetToRequest set to true will be reset (default: true)
       */
-    var attachResetToRequest: js.UndefOr[Boolean] = js.native
+    var attachResetToRequest: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @summary Gets called with (req, res, next, nextValidRequestDate) when a request is rejected (default: `ExpressBrute.FailForbidden`)
       */
-    var failCallback: js.UndefOr[FailCallback] = js.native
+    var failCallback: js.UndefOr[FailCallback] = js.undefined
     
     /**
       * @summary The number of retires the user has before they need to start waiting (default: 2)
       */
-    var freeRetries: js.UndefOr[Double] = js.native
+    var freeRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * @summary Gets called whenever an error occurs with the persistent store from which ExpressBrute cannot recover. It is passed an object containing the properties message (a description of the message), parent (the error raised by the session store), and [key, ip] or [req, res, next] depending on whether or the error occurs during reset or in the middleware itself.
       */
-    var handleStoreError: js.UndefOr[js.Function] = js.native
+    var handleStoreError: js.UndefOr[js.Function] = js.undefined
     
     /**
       * @summary The length of time (in seconds since the last request) to remember the number of requests that have been made by an IP. By default it will be set to maxWait * the number of attempts before you hit maxWait to discourage simply waiting for the lifetime to expire before resuming an attack. With default values this is about 6 hours.
       */
-    var lifetime: js.UndefOr[Double] = js.native
+    var lifetime: js.UndefOr[Double] = js.undefined
     
     /**
       * @summary The maximum amount of time (in milliseconds) between requests the user needs to wait (default: 15 minutes). The wait for a given request is determined by adding the time the user needed to wait for the previous two requests.
       */
-    var maxWait: js.UndefOr[Double] = js.native
+    var maxWait: js.UndefOr[Double] = js.undefined
     
     /**
       * @summary The initial wait time (in milliseconds) after the user runs out of retries (default: 500 milliseconds)
       */
-    var minWait: js.UndefOr[Double] = js.native
+    var minWait: js.UndefOr[Double] = js.undefined
     
     /**
       * @summary Defines whether the lifetime counts from the time of the last request that ExpressBrute didn't prevent for a given IP (true) or from of that IP's first request (false). Useful for allowing limits over fixed periods of time, for example: a limited number of requests per day. (Default: true).
       */
-    var refreshTimeoutOnRequest: js.UndefOr[Boolean] = js.native
+    var refreshTimeoutOnRequest: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -340,10 +372,9 @@ object mod {
   
   object expressServeStaticCoreAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      var brute: js.UndefOr[Reset] = js.native
+      var brute: js.UndefOr[Reset] = js.undefined
     }
     object Request {
       

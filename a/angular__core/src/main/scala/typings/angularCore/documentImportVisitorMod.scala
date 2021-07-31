@@ -8,7 +8,6 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentImportVisitorMod {
@@ -41,20 +40,19 @@ object documentImportVisitorMod {
   @js.native
   val PLATFORM_BROWSER_IMPORT: /* "@angular/platform-browser" */ String = js.native
   
-  @js.native
   trait ResolvedDocumentImport extends StObject {
     
-    var commonImport: NamedImports | Null = js.native
+    var commonImport: NamedImports | Null
     
-    var documentElement: ImportSpecifier | Null = js.native
+    var documentElement: ImportSpecifier | Null
     
-    var platformBrowserImport: NamedImports | Null = js.native
+    var platformBrowserImport: NamedImports | Null
   }
   object ResolvedDocumentImport {
     
     @scala.inline
     def apply(): ResolvedDocumentImport = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(commonImport = null, documentElement = null, platformBrowserImport = null)
       __obj.asInstanceOf[ResolvedDocumentImport]
     }
     

@@ -2,7 +2,6 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,9 +33,9 @@ trait FlashPath extends StObject {
   
   /// Creates a shape on the Stage by using the current stroke and fill settings.
   def makeShape(): Unit = js.native
-  def makeShape(bSupressFill: js.UndefOr[scala.Nothing], bSupressStroke: Boolean): Unit = js.native
   def makeShape(bSupressFill: Boolean): Unit = js.native
   def makeShape(bSupressFill: Boolean, bSupressStroke: Boolean): Unit = js.native
+  def makeShape(bSupressFill: Unit, bSupressStroke: Boolean): Unit = js.native
   
   /// Read-only; an integer representing the number of points in the path.
   var nPts: Double = js.native

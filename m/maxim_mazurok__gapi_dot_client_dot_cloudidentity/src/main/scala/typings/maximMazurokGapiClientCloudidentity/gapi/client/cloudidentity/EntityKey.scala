@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityKey extends StObject {
   
   /**
     * The ID of the entity. For Google-managed entities, the `id` should be the email address of an existing group or user. For external-identity-mapped entities, the `id` must be a
     * string conforming to the Identity Source's requirements. Must be unique within a `namespace`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The namespace in which the entity exists. If not specified, the `EntityKey` represents a Google-managed entity such as a Google user or a Google Group. If specified, the `EntityKey`
     * represents an external-identity-mapped group. The namespace must correspond to an identity source created in Admin Console and must be in the form of
     * `identitysources/{identity_source_id}.
     */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
 }
 object EntityKey {
   

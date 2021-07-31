@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsToOnPremisesInstancesInput extends StObject {
   
   /**
     * The names of the on-premises instances to which to add tags.
     */
-  var instanceNames: InstanceNameList = js.native
+  var instanceNames: InstanceNameList
   
   /**
     * The tag key-value pairs to add to the on-premises instances. Keys and values are both required. Keys cannot be null or empty strings. Value-only tags are not allowed.
     */
-  var tags: TagList = js.native
+  var tags: TagList
 }
 object AddTagsToOnPremisesInstancesInput {
   

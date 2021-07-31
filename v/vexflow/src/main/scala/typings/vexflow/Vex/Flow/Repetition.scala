@@ -3,24 +3,24 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.anon.GetContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Repetition extends StaveModifier {
+trait Repetition
+  extends StObject
+     with StaveModifier {
   
-  def draw(stave: Stave, x: Double): Repetition = js.native
+  def draw(stave: Stave, x: Double): Repetition
   
-  def drawCodaFixed(stave: Stave, x: Double): Repetition = js.native
+  def drawCodaFixed(stave: Stave, x: Double): Repetition
   
-  def drawSignoFixed(stave: Stave, x: Double): Repetition = js.native
+  def drawSignoFixed(stave: Stave, x: Double): Repetition
   
   //inconsistent name: drawSignoFixed -> drawSegnoFixed
-  def drawSymbolText(stave: Stave, x: Double, text: String, draw_coda: Boolean): Repetition = js.native
+  def drawSymbolText(stave: Stave, x: Double, text: String, draw_coda: Boolean): Repetition
   
-  def setShiftX(x: Double): Repetition = js.native
+  def setShiftX(x: Double): Repetition
   
-  def setShiftY(y: Double): Repetition = js.native
+  def setShiftY(y: Double): Repetition
 }
 object Repetition {
   
@@ -48,6 +48,73 @@ object Repetition {
     __obj.asInstanceOf[Repetition]
   }
   
+  @js.native
+  sealed trait `type` extends StObject
+  @JSGlobal("Vex.Flow.Repetition.type")
+  @js.native
+  object `type` extends StObject {
+    
+    @js.native
+    sealed trait CODA_LEFT
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait CODA_RIGHT
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait DC
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait DC_AL_CODA
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait DC_AL_FINE
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait DS
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait DS_AL_CODA
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait DS_AL_FINE
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait FINE
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait NONE
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait SEGNO_LEFT
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait SEGNO_RIGHT
+      extends StObject
+         with `type`
+  }
+  
   @scala.inline
   implicit class RepetitionMutableBuilder[Self <: Repetition] (val x: Self) extends AnyVal {
     
@@ -68,48 +135,5 @@ object Repetition {
     
     @scala.inline
     def setSetShiftY(value: Double => Repetition): Self = StObject.set(x, "setShiftY", js.Any.fromFunction1(value))
-  }
-  
-  @js.native
-  sealed trait `type` extends StObject
-  @JSGlobal("Vex.Flow.Repetition.type")
-  @js.native
-  object `type` extends StObject {
-    
-    @js.native
-    sealed trait CODA_LEFT extends `type`
-    
-    @js.native
-    sealed trait CODA_RIGHT extends `type`
-    
-    @js.native
-    sealed trait DC extends `type`
-    
-    @js.native
-    sealed trait DC_AL_CODA extends `type`
-    
-    @js.native
-    sealed trait DC_AL_FINE extends `type`
-    
-    @js.native
-    sealed trait DS extends `type`
-    
-    @js.native
-    sealed trait DS_AL_CODA extends `type`
-    
-    @js.native
-    sealed trait DS_AL_FINE extends `type`
-    
-    @js.native
-    sealed trait FINE extends `type`
-    
-    @js.native
-    sealed trait NONE extends `type`
-    
-    @js.native
-    sealed trait SEGNO_LEFT extends `type`
-    
-    @js.native
-    sealed trait SEGNO_RIGHT extends `type`
   }
 }

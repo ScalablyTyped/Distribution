@@ -15,7 +15,6 @@ import typings.reactNativePhotoView.reactNativePhotoViewStrings.fitStart
 import typings.reactNativePhotoView.reactNativePhotoViewStrings.fitXY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,46 +22,45 @@ object mod {
   @JSImport("react-native-photo-view", JSImport.Default)
   @js.native
   class default ()
-    extends Component[ReactNativePhotoViewProps with ViewProps, js.Object, js.Any]
+    extends Component[ReactNativePhotoViewProps & ViewProps, js.Object, js.Any]
   
-  type ReactNativePhotoView = Component[ReactNativePhotoViewProps with ViewProps, js.Object, js.Any]
+  type ReactNativePhotoView = Component[ReactNativePhotoViewProps & ViewProps, js.Object, js.Any]
   
-  @js.native
   trait ReactNativePhotoViewProps extends StObject {
     
-    var androidScaleType: js.UndefOr[center | centerCrop | centerInside | fitCenter | fitStart | fitEnd | fitXY] = js.native
+    var androidScaleType: js.UndefOr[center | centerCrop | centerInside | fitCenter | fitStart | fitEnd | fitXY] = js.undefined
     
-    var androidZoomTransitionDuration: js.UndefOr[Double] = js.native
+    var androidZoomTransitionDuration: js.UndefOr[Double] = js.undefined
     
-    var fadeDuration: js.UndefOr[Double] = js.native
+    var fadeDuration: js.UndefOr[Double] = js.undefined
     
-    var loadingIndicatorSource: js.UndefOr[ImageSourcePropType] = js.native
+    var loadingIndicatorSource: js.UndefOr[ImageSourcePropType] = js.undefined
     
-    var maximumZoomScale: js.UndefOr[Double] = js.native
+    var maximumZoomScale: js.UndefOr[Double] = js.undefined
     
-    var minimumZoomScale: js.UndefOr[Double] = js.native
+    var minimumZoomScale: js.UndefOr[Double] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLoadEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoadEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLoadStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoadStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onProgress: js.UndefOr[js.Function2[/* loaded */ Double, /* total */ Double, Unit]] = js.native
+    var onProgress: js.UndefOr[js.Function2[/* loaded */ Double, /* total */ Double, Unit]] = js.undefined
     
-    var onScale: js.UndefOr[js.Function2[/* scale */ Double, /* target */ js.UndefOr[ReactElement], Unit]] = js.native
+    var onScale: js.UndefOr[js.Function2[/* scale */ Double, /* target */ js.UndefOr[ReactElement], Unit]] = js.undefined
     
-    var onTap: js.UndefOr[js.Function2[/* point */ X, /* target */ js.UndefOr[ReactElement], Unit]] = js.native
+    var onTap: js.UndefOr[js.Function2[/* point */ X, /* target */ js.UndefOr[ReactElement], Unit]] = js.undefined
     
-    var onViewTap: js.UndefOr[js.Function2[/* point */ X, /* target */ js.UndefOr[ReactElement], Unit]] = js.native
+    var onViewTap: js.UndefOr[js.Function2[/* point */ X, /* target */ js.UndefOr[ReactElement], Unit]] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.native
+    var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.native
+    var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var source: js.UndefOr[ImageSourcePropType] = js.native
+    var source: js.UndefOr[ImageSourcePropType] = js.undefined
   }
   object ReactNativePhotoViewProps {
     

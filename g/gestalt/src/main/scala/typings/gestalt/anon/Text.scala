@@ -2,15 +2,13 @@ package typings.gestalt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Text extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var text: js.Any = js.native
+  var text: js.Any
 }
 object Text {
   

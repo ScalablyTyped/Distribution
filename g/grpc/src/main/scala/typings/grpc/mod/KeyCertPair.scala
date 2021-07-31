@@ -3,21 +3,19 @@ package typings.grpc.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyCertPair extends StObject {
   
   /**
     * The server's certificate chain
     */
-  var cert_chain: Buffer = js.native
+  var cert_chain: Buffer
   
   /**
     * The server's private key
     */
-  var private_key: Buffer = js.native
+  var private_key: Buffer
 }
 object KeyCertPair {
   

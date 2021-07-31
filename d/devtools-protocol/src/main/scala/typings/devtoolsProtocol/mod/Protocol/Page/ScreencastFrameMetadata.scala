@@ -3,46 +3,44 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.Network.TimeSinceEpoch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreencastFrameMetadata extends StObject {
   
   /**
     * Device screen height in DIP.
     */
-  var deviceHeight: Double = js.native
+  var deviceHeight: Double
   
   /**
     * Device screen width in DIP.
     */
-  var deviceWidth: Double = js.native
+  var deviceWidth: Double
   
   /**
     * Top offset in DIP.
     */
-  var offsetTop: Double = js.native
+  var offsetTop: Double
   
   /**
     * Page scale factor.
     */
-  var pageScaleFactor: Double = js.native
+  var pageScaleFactor: Double
   
   /**
     * Position of horizontal scroll in CSS pixels.
     */
-  var scrollOffsetX: Double = js.native
+  var scrollOffsetX: Double
   
   /**
     * Position of vertical scroll in CSS pixels.
     */
-  var scrollOffsetY: Double = js.native
+  var scrollOffsetY: Double
   
   /**
     * Frame swap timestamp.
     */
-  var timestamp: js.UndefOr[TimeSinceEpoch] = js.native
+  var timestamp: js.UndefOr[TimeSinceEpoch] = js.undefined
 }
 object ScreencastFrameMetadata {
   

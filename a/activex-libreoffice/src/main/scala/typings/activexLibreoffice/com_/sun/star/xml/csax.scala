@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object csax {
@@ -18,24 +17,25 @@ object csax {
     * Because there is no interface parameter in these methods, so using this interface to transfer SAX event is thought to have better performance than
     * using the XDocumentHandler interface, in case of when UNO C++/Java bridge is involved.
     */
-  @js.native
-  trait XCompressedDocumentHandler extends XInterface {
+  trait XCompressedDocumentHandler
+    extends StObject
+       with XInterface {
     
-    def compressedCharacters(aChars: String): Unit = js.native
+    def compressedCharacters(aChars: String): Unit
     
-    def compressedEndDocument(): Unit = js.native
+    def compressedEndDocument(): Unit
     
-    def compressedEndElement(aName: String): Unit = js.native
+    def compressedEndElement(aName: String): Unit
     
-    def compressedIgnorableWhitespace(aWhitespaces: String): Unit = js.native
+    def compressedIgnorableWhitespace(aWhitespaces: String): Unit
     
-    def compressedProcessingInstruction(aTarget: String, aData: String): Unit = js.native
+    def compressedProcessingInstruction(aTarget: String, aData: String): Unit
     
-    def compressedSetDocumentLocator(columnNumber: Double, lineNumber: Double, publicId: String, systemId: String): Unit = js.native
+    def compressedSetDocumentLocator(columnNumber: Double, lineNumber: Double, publicId: String, systemId: String): Unit
     
-    def compressedStartDocument(): Unit = js.native
+    def compressedStartDocument(): Unit
     
-    def compressedStartElement(aName: String, aAttributes: SeqEquiv[XMLAttribute]): Unit = js.native
+    def compressedStartElement(aName: String, aAttributes: SeqEquiv[XMLAttribute]): Unit
   }
   object XCompressedDocumentHandler {
     
@@ -87,14 +87,13 @@ object csax {
   }
   
   /** A struct to keep information of an element's attribute. */
-  @js.native
   trait XMLAttribute extends StObject {
     
     /** the attribute name */
-    var sName: String = js.native
+    var sName: String
     
     /** the attribute value */
-    var sValue: String = js.native
+    var sValue: String
   }
   object XMLAttribute {
     

@@ -2,30 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SharedInsight extends Entity {
+trait SharedInsight
+  extends StObject
+     with Entity {
   
   // Details about the shared item. Read only.
-  var lastShared: js.UndefOr[NullableOption[SharingDetail]] = js.native
+  var lastShared: js.UndefOr[NullableOption[SharingDetail]] = js.undefined
   
-  var lastSharedMethod: js.UndefOr[NullableOption[Entity]] = js.native
+  var lastSharedMethod: js.UndefOr[NullableOption[Entity]] = js.undefined
   
   /**
     * Used for navigating to the item that was shared. For file attachments, the type is fileAttachment. For linked
     * attachments, the type is driveItem.
     */
-  var resource: js.UndefOr[NullableOption[Entity]] = js.native
+  var resource: js.UndefOr[NullableOption[Entity]] = js.undefined
   
   // Reference properties of the shared document, such as the url and type of the document. Read-only
-  var resourceReference: js.UndefOr[NullableOption[ResourceReference]] = js.native
+  var resourceReference: js.UndefOr[NullableOption[ResourceReference]] = js.undefined
   
   // Properties that you can use to visualize the document in your experience. Read-only
-  var resourceVisualization: js.UndefOr[NullableOption[ResourceVisualization]] = js.native
+  var resourceVisualization: js.UndefOr[NullableOption[ResourceVisualization]] = js.undefined
   
-  var sharingHistory: js.UndefOr[NullableOption[js.Array[SharingDetail]]] = js.native
+  var sharingHistory: js.UndefOr[NullableOption[js.Array[SharingDetail]]] = js.undefined
 }
 object SharedInsight {
   

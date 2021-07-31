@@ -2,51 +2,49 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceRefresh extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.native
+  var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The date and time at which the instance refresh ended.
     */
-  var EndTime: js.UndefOr[TimestampType] = js.native
+  var EndTime: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The instance refresh ID.
     */
-  var InstanceRefreshId: js.UndefOr[XmlStringMaxLen255] = js.native
+  var InstanceRefreshId: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The number of instances remaining to update before the instance refresh is complete.
     */
-  var InstancesToUpdate: js.UndefOr[typings.awsSdk.autoscalingMod.InstancesToUpdate] = js.native
+  var InstancesToUpdate: js.UndefOr[typings.awsSdk.autoscalingMod.InstancesToUpdate] = js.undefined
   
   /**
     * The percentage of the instance refresh that is complete. For each instance replacement, Amazon EC2 Auto Scaling tracks the instance's health status and warm-up time. When the instance's health status changes to healthy and the specified warm-up time passes, the instance is considered updated and added to the percentage complete.
     */
-  var PercentageComplete: js.UndefOr[IntPercent] = js.native
+  var PercentageComplete: js.UndefOr[IntPercent] = js.undefined
   
   /**
     * The date and time at which the instance refresh began.
     */
-  var StartTime: js.UndefOr[TimestampType] = js.native
+  var StartTime: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The current status for the instance refresh operation:    Pending - The request was created, but the operation has not started.    InProgress - The operation is in progress.    Successful - The operation completed successfully.    Failed - The operation failed to complete. You can troubleshoot using the status reason and the scaling activities.     Cancelling - An ongoing operation is being cancelled. Cancellation does not roll back any replacements that have already been completed, but it prevents new replacements from being started.     Cancelled - The operation is cancelled.   
     */
-  var Status: js.UndefOr[InstanceRefreshStatus] = js.native
+  var Status: js.UndefOr[InstanceRefreshStatus] = js.undefined
   
   /**
     * Provides more details about the current status of the instance refresh. 
     */
-  var StatusReason: js.UndefOr[XmlStringMaxLen1023] = js.native
+  var StatusReason: js.UndefOr[XmlStringMaxLen1023] = js.undefined
 }
 object InstanceRefresh {
   

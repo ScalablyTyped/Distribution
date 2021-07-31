@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object targetMod {
@@ -58,6 +57,10 @@ object targetMod {
   /* static members */
   object Target {
     
+    @JSImport("@pulumi/aws/appautoscaling/target", "Target")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Target resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,60 +70,54 @@ object targetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appautoscaling/target", "Target.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Target = js.native
-    @JSImport("@pulumi/aws/appautoscaling/target", "Target.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Target = js.native
-    @JSImport("@pulumi/aws/appautoscaling/target", "Target.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TargetState): Target = js.native
-    @JSImport("@pulumi/aws/appautoscaling/target", "Target.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TargetState, opts: CustomResourceOptions): Target = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Target]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Target]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TargetState): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Target]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TargetState, opts: CustomResourceOptions): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Target]
     
     /**
       * Returns true if the given object is an instance of Target.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appautoscaling/target", "Target.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/target.Target */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/target.Target */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appautoscaling/target.Target */ Boolean]
   }
   
-  @js.native
   trait TargetArgs extends StObject {
     
     /**
       * The max capacity of the scalable target.
       */
-    val maxCapacity: Input[Double] = js.native
+    val maxCapacity: Input[Double]
     
     /**
       * The min capacity of the scalable target.
       */
-    val minCapacity: Input[Double] = js.native
+    val minCapacity: Input[Double]
     
     /**
       * The resource type and unique identifier string for the resource associated with the scaling policy. Documentation can be found in the `ResourceId` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val resourceId: Input[String] = js.native
+    val resourceId: Input[String]
     
     /**
       * The ARN of the IAM role that allows Application AutoScaling to modify your scalable target on your behalf. This defaults to an IAM Service-Linked Role for most services and custom IAM Roles are ignored by the API for those namespaces. See the [AWS Application Auto Scaling documentation](https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-roles) for more information about how this service interacts with IAM.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The scalable dimension of the scalable target. Documentation can be found in the `ScalableDimension` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val scalableDimension: Input[String] = js.native
+    val scalableDimension: Input[String]
     
     /**
       * The AWS service namespace of the scalable target. Documentation can be found in the `ServiceNamespace` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val serviceNamespace: Input[String] = js.native
+    val serviceNamespace: Input[String]
   }
   object TargetArgs {
     
@@ -162,38 +159,37 @@ object targetMod {
     }
   }
   
-  @js.native
   trait TargetState extends StObject {
     
     /**
       * The max capacity of the scalable target.
       */
-    val maxCapacity: js.UndefOr[Input[Double]] = js.native
+    val maxCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The min capacity of the scalable target.
       */
-    val minCapacity: js.UndefOr[Input[Double]] = js.native
+    val minCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The resource type and unique identifier string for the resource associated with the scaling policy. Documentation can be found in the `ResourceId` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val resourceId: js.UndefOr[Input[String]] = js.native
+    val resourceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the IAM role that allows Application AutoScaling to modify your scalable target on your behalf. This defaults to an IAM Service-Linked Role for most services and custom IAM Roles are ignored by the API for those namespaces. See the [AWS Application Auto Scaling documentation](https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-roles) for more information about how this service interacts with IAM.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The scalable dimension of the scalable target. Documentation can be found in the `ScalableDimension` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val scalableDimension: js.UndefOr[Input[String]] = js.native
+    val scalableDimension: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS service namespace of the scalable target. Documentation can be found in the `ServiceNamespace` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val serviceNamespace: js.UndefOr[Input[String]] = js.native
+    val serviceNamespace: js.UndefOr[Input[String]] = js.undefined
   }
   object TargetState {
     

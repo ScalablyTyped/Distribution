@@ -2,25 +2,25 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InlineQueryResultLocationBase extends InlineQueryResultBase {
+trait InlineQueryResultLocationBase
+  extends StObject
+     with InlineQueryResultBase {
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var thumb_height: js.UndefOr[Double] = js.native
+  var thumb_height: js.UndefOr[Double] = js.undefined
   
-  var thumb_url: js.UndefOr[String] = js.native
+  var thumb_url: js.UndefOr[String] = js.undefined
   
-  var thumb_width: js.UndefOr[Double] = js.native
+  var thumb_width: js.UndefOr[Double] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object InlineQueryResultLocationBase {
   

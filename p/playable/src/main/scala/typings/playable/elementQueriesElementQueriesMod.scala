@@ -4,36 +4,60 @@ import typings.playable.anon.Prefix
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementQueriesElementQueriesMod {
   
   @JSImport("playable/dist/src/modules/ui/core/element-queries/element-queries", JSImport.Default)
   @js.native
-  class default protected () extends ElementQueries {
+  class default protected ()
+    extends StObject
+       with ElementQueries {
     def this(element: HTMLElement) = this()
     def this(element: HTMLElement, hasPrefix: Prefix) = this()
-  }
-  
-  @js.native
-  trait ElementQueries extends StObject {
     
+    /* CompleteClass */
     var _element: js.Any = js.native
     
+    /* CompleteClass */
     var _getQueryAttributeValue: js.Any = js.native
     
+    /* CompleteClass */
     var _queries: js.Any = js.native
     
+    /* CompleteClass */
     var _queryPrefix: js.Any = js.native
     
+    /* CompleteClass */
     var _setQueryAttribute: js.Any = js.native
     
-    def destroy(): Unit = js.native
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
     
-    def getQueries(): Unit = js.native
+    /* CompleteClass */
+    override def getQueries(): Unit = js.native
     
-    def setWidth(width: Double): Unit = js.native
+    /* CompleteClass */
+    override def setWidth(width: Double): Unit = js.native
+  }
+  
+  trait ElementQueries extends StObject {
+    
+    var _element: js.Any
+    
+    var _getQueryAttributeValue: js.Any
+    
+    var _queries: js.Any
+    
+    var _queryPrefix: js.Any
+    
+    var _setQueryAttribute: js.Any
+    
+    def destroy(): Unit
+    
+    def getQueries(): Unit
+    
+    def setWidth(width: Double): Unit
   }
   object ElementQueries {
     

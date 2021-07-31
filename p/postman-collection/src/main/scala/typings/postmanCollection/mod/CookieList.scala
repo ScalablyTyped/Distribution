@@ -2,7 +2,6 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postman-collection", "CookieList")
@@ -13,7 +12,10 @@ class CookieList protected () extends PropertyList[Cookie] {
 /* static members */
 object CookieList {
   
-  @JSImport("postman-collection", "CookieList.isCookieList")
+  @JSImport("postman-collection", "CookieList")
   @js.native
-  def isCookieList(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isCookieList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCookieList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

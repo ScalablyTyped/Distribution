@@ -2,84 +2,82 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkConnection extends StObject {
   
   // Name of the application managing the network connection (for example, Facebook or SMTP).
-  var applicationName: js.UndefOr[NullableOption[String]] = js.native
+  var applicationName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Destination IP address (of the network connection).
-  var destinationAddress: js.UndefOr[NullableOption[String]] = js.native
+  var destinationAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Destination domain portion of the destination URL. (for example 'www.contoso.com').
-  var destinationDomain: js.UndefOr[NullableOption[String]] = js.native
+  var destinationDomain: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Location (by IP address mapping) associated with the destination of a network connection.
-  var destinationLocation: js.UndefOr[NullableOption[String]] = js.native
+  var destinationLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Destination port (of the network connection).
-  var destinationPort: js.UndefOr[NullableOption[String]] = js.native
+  var destinationPort: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Network connection URL/URI string - excluding parameters. (for example 'www.contoso.com/products/default.html')
-  var destinationUrl: js.UndefOr[NullableOption[String]] = js.native
+  var destinationUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Network connection direction. Possible values are: unknown, inbound, outbound.
-  var direction: js.UndefOr[NullableOption[ConnectionDirection]] = js.native
+  var direction: js.UndefOr[NullableOption[ConnectionDirection]] = js.undefined
   
   /**
     * Date when the destination domain was registered. The Timestamp type represents date and time information using ISO 8601
     * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var domainRegisteredDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var domainRegisteredDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The local DNS name resolution as it appears in the host's local DNS cache (for example, in case the 'hosts' file was
     * tampered with).
     */
-  var localDnsName: js.UndefOr[NullableOption[String]] = js.native
+  var localDnsName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Network Address Translation destination IP address.
-  var natDestinationAddress: js.UndefOr[NullableOption[String]] = js.native
+  var natDestinationAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Network Address Translation destination port.
-  var natDestinationPort: js.UndefOr[NullableOption[String]] = js.native
+  var natDestinationPort: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Network Address Translation source IP address.
-  var natSourceAddress: js.UndefOr[NullableOption[String]] = js.native
+  var natSourceAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Network Address Translation source port.
-  var natSourcePort: js.UndefOr[NullableOption[String]] = js.native
+  var natSourcePort: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Network protocol. Possible values are: unknown, ip, icmp, igmp, ggp, ipv4, tcp, pup, udp, idp, ipv6, ipv6RoutingHeader,
     * ipv6FragmentHeader, ipSecEncapsulatingSecurityPayload, ipSecAuthenticationHeader, icmpV6, ipv6NoNextHeader,
     * ipv6DestinationOptions, nd, raw, ipx, spx, spxII.
     */
-  var protocol: js.UndefOr[NullableOption[SecurityNetworkProtocol]] = js.native
+  var protocol: js.UndefOr[NullableOption[SecurityNetworkProtocol]] = js.undefined
   
   /**
     * Provider generated/calculated risk score of the network connection. Recommended value range of 0-1, which equates to a
     * percentage.
     */
-  var riskScore: js.UndefOr[NullableOption[String]] = js.native
+  var riskScore: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Source (i.e. origin) IP address (of the network connection).
-  var sourceAddress: js.UndefOr[NullableOption[String]] = js.native
+  var sourceAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Location (by IP address mapping) associated with the source of a network connection.
-  var sourceLocation: js.UndefOr[NullableOption[String]] = js.native
+  var sourceLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Source (i.e. origin) IP port (of the network connection).
-  var sourcePort: js.UndefOr[NullableOption[String]] = js.native
+  var sourcePort: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Network connection status. Possible values are: unknown, attempted, succeeded, blocked, failed.
-  var status: js.UndefOr[NullableOption[ConnectionStatus]] = js.native
+  var status: js.UndefOr[NullableOption[ConnectionStatus]] = js.undefined
   
   // Parameters (suffix) of the destination URL.
-  var urlParameters: js.UndefOr[NullableOption[String]] = js.native
+  var urlParameters: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object NetworkConnection {
   

@@ -3,23 +3,21 @@ package typings.storybookApi.anon
 import typings.storybookApi.refsMod.ComposedRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ref extends StObject {
   
-  var ref: ComposedRef = js.native
+  var ref: ComposedRef
   
-  var refId: String = js.native
+  var refId: String
   
-  var source: String = js.native
+  var source: String
   
-  var sourceLocation: String = js.native
+  var sourceLocation: String
   
-  var sourceType: String = js.native
+  var sourceType: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Ref {
   

@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecurrencePattern extends StObject {
   
   // The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-  var dayOfMonth: js.UndefOr[Double] = js.native
+  var dayOfMonth: js.UndefOr[Double] = js.undefined
   
   /**
     * A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday,
@@ -17,32 +15,32 @@ trait RecurrencePattern extends StObject {
     * one day, the event falls on the first day that satisfies the pattern. Required if type is weekly, relativeMonthly, or
     * relativeYearly.
     */
-  var daysOfWeek: js.UndefOr[NullableOption[js.Array[DayOfWeek]]] = js.native
+  var daysOfWeek: js.UndefOr[NullableOption[js.Array[DayOfWeek]]] = js.undefined
   
   /**
     * The first day of the week. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
     * Default is sunday. Required if type is weekly.
     */
-  var firstDayOfWeek: js.UndefOr[NullableOption[DayOfWeek]] = js.native
+  var firstDayOfWeek: js.UndefOr[NullableOption[DayOfWeek]] = js.undefined
   
   /**
     * Specifies on which instance of the allowed days specified in daysOfsWeek the event occurs, counted from the first
     * instance in the month. The possible values are: first, second, third, fourth, last. Default is first. Optional and used
     * if type is relativeMonthly or relativeYearly.
     */
-  var index: js.UndefOr[NullableOption[WeekIndex]] = js.native
+  var index: js.UndefOr[NullableOption[WeekIndex]] = js.undefined
   
   /**
     * The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
     * Required.
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   // The month in which the event occurs. This is a number from 1 to 12.
-  var month: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.undefined
   
   // The recurrence pattern type: daily, weekly, absoluteMonthly, relativeMonthly, absoluteYearly, relativeYearly. Required.
-  var `type`: js.UndefOr[NullableOption[RecurrencePatternType]] = js.native
+  var `type`: js.UndefOr[NullableOption[RecurrencePatternType]] = js.undefined
 }
 object RecurrencePattern {
   

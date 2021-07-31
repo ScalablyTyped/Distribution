@@ -4,7 +4,6 @@ import typings.std.Float32Array
 import typings.three.webXRMod.DOMPointInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "XRRigidTransform")

@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SliderVisibleElements extends Object {
+trait SliderVisibleElements
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to display labels for slider thumbs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#VisibleElements)
     */
-  var labels: js.UndefOr[Boolean] = js.native
+  var labels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to display [min](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#min) or [max](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#max) range values on the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#VisibleElements)
     */
-  var rangeLabels: js.UndefOr[Boolean] = js.native
+  var rangeLabels: js.UndefOr[Boolean] = js.undefined
 }
 object SliderVisibleElements {
   

@@ -5,32 +5,32 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used for collecting and executing a set of SQL statements. */
-@js.native
-trait XBatchExecution extends XInterface {
+trait XBatchExecution
+  extends StObject
+     with XInterface {
   
   /**
     * adds a SQL command to the current batch of commands for the statement object.
     * @param sql the SQL statement which should be appended to the batch.
     * @throws SQLException if a database access error occurs.
     */
-  def addBatch(sql: String): Unit = js.native
+  def addBatch(sql: String): Unit
   
   /**
     * makes the set of commands in the current batch empty.
     * @throws SQLException if a database access error occurs.
     */
-  def clearBatch(): Unit = js.native
+  def clearBatch(): Unit
   
   /**
     * submits a batch of commands to the database for execution.
     * @returns an array of update counts containing one element for each command in the batch. The array is ordered according to the order in which commands wer
     * @throws SQLException if a database access error occurs.
     */
-  def executeBatch(): SafeArray[Double] = js.native
+  def executeBatch(): SafeArray[Double]
 }
 object XBatchExecution {
   

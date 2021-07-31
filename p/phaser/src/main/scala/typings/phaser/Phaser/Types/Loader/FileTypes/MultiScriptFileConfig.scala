@@ -3,31 +3,29 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiScriptFileConfig extends StObject {
   
   /**
     * The default file extension to use if no url is provided.
     */
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
   /**
     * The key of the file. Must be unique within the Loader.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * An array of absolute or relative URLs to load the script files from. They are processed in the order given in the array.
     */
-  var url: js.UndefOr[js.Array[String]] = js.native
+  var url: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Extra XHR Settings specifically for these files.
     */
-  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
 }
 object MultiScriptFileConfig {
   

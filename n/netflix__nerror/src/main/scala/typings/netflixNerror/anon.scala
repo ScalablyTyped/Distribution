@@ -10,14 +10,14 @@ import typings.netflixNerror.mod.VError.Options
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable3[
+    extends StObject
+       with Instantiable3[
           (/* options */ Error) | (/* options */ Options), 
           /* message */ String, 
           /* params (repeated) */ js.Any, 

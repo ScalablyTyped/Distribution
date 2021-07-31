@@ -2,26 +2,24 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCanaryRunsRequest extends StObject {
   
   /**
     * Specify this parameter to limit how many runs are returned each time you use the GetCanaryRuns operation. If you omit this parameter, the default of 100 is used.
     */
-  var MaxResults: js.UndefOr[MaxSize100] = js.native
+  var MaxResults: js.UndefOr[MaxSize100] = js.undefined
   
   /**
     * The name of the canary that you want to see runs for.
     */
-  var Name: CanaryName = js.native
+  var Name: CanaryName
   
   /**
     * A token that indicates that there is more data available. You can use this token in a subsequent GetCanaryRuns operation to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object GetCanaryRunsRequest {
   

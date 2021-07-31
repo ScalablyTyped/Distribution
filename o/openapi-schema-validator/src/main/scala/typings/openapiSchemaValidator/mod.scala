@@ -5,25 +5,35 @@ import typings.openapiTypes.mod.IJsonSchema
 import typings.openapiTypes.mod.OpenAPI.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("openapi-schema-validator", JSImport.Default)
   @js.native
-  class default protected () extends OpenAPISchemaValidator {
+  class default protected ()
+    extends StObject
+       with OpenAPISchemaValidator {
     def this(args: OpenAPISchemaValidatorArgs) = this()
+    
+    /**
+      * Validate the provided OpenAPI doc against this validator's schema version and
+      * return the results.
+      */
+    /* CompleteClass */
+    override def validate(doc: Document): OpenAPISchemaValidatorResult = js.native
+    
+    /* CompleteClass */
+    var validator: js.Any = js.native
   }
   
-  @js.native
   trait IOpenAPISchemaValidator extends StObject {
     
     /**
       * Validate the provided OpenAPI doc against this validator's schema version and
       * return the results.
       */
-    def validate(doc: Document): OpenAPISchemaValidatorResult = js.native
+    def validate(doc: Document): OpenAPISchemaValidatorResult
   }
   object IOpenAPISchemaValidator {
     
@@ -41,10 +51,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait OpenAPISchemaValidator extends IOpenAPISchemaValidator {
+  trait OpenAPISchemaValidator
+    extends StObject
+       with IOpenAPISchemaValidator {
     
-    var validator: js.Any = js.native
+    var validator: js.Any
   }
   object OpenAPISchemaValidator {
     
@@ -62,12 +73,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenAPISchemaValidatorArgs extends StObject {
     
-    var extensions: js.UndefOr[IJsonSchema] = js.native
+    var extensions: js.UndefOr[IJsonSchema] = js.undefined
     
-    var version: Double | String = js.native
+    var version: Double | String
   }
   object OpenAPISchemaValidatorArgs {
     
@@ -91,10 +101,9 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenAPISchemaValidatorResult extends StObject {
     
-    var errors: js.Array[ErrorObject] = js.native
+    var errors: js.Array[ErrorObject]
   }
   object OpenAPISchemaValidatorResult {
     

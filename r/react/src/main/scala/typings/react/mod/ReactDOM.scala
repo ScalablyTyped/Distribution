@@ -61,12 +61,11 @@ import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactDOM
-  extends ReactHTML
+  extends StObject
+     with ReactHTML
      with ReactSVG
 object ReactDOM {
   

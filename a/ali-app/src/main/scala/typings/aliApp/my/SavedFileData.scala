@@ -2,15 +2,13 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region 文件 https://docs.alipay.com/mini/api/file
-@js.native
 trait SavedFileData extends StObject {
   
   /** 文件保存路径 */
-  var apFilePath: String = js.native
+  var apFilePath: String
 }
 object SavedFileData {
   

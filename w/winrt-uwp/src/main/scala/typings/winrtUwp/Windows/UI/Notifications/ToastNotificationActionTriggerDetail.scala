@@ -2,16 +2,14 @@ package typings.winrtUwp.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToastNotificationActionTriggerDetail extends StObject {
   
-  var argument: js.Any = js.native
+  var argument: js.Any
   
   /* unmapped type */
-  var userInput: js.Any = js.native
+  var userInput: js.Any
 }
 object ToastNotificationActionTriggerDetail {
   

@@ -2,33 +2,31 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rule extends StObject {
   
-  var all: js.UndefOr[js.Array[String]] = js.native
+  var all: js.UndefOr[js.Array[String]] = js.undefined
   
-  var any: js.UndefOr[js.Array[String]] = js.native
+  var any: js.UndefOr[js.Array[String]] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var excludeHidden: js.UndefOr[Boolean] = js.native
+  var excludeHidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var impact: js.UndefOr[ImpactValue] = js.native
+  var impact: js.UndefOr[ImpactValue] = js.undefined
   
-  var matches: js.UndefOr[String] = js.native
+  var matches: js.UndefOr[String] = js.undefined
   
-  var none: js.UndefOr[js.Array[String]] = js.native
+  var none: js.UndefOr[js.Array[String]] = js.undefined
   
-  var pageLevel: js.UndefOr[Boolean] = js.native
+  var pageLevel: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Rule {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomAmi extends StObject {
   
   /**
     * THe ID of the image used to create the custom AMI.
     */
-  var ImageId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ImageId] = js.native
+  var ImageId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ImageId] = js.undefined
   
   /**
     * The type of virtualization used to create the custom AMI.
     */
-  var VirtualizationType: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VirtualizationType] = js.native
+  var VirtualizationType: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VirtualizationType] = js.undefined
 }
 object CustomAmi {
   

@@ -11,8 +11,8 @@ create lexicographic string keys for positive integers without zero-padding
 | Full name          | lexicographic-integer |
 | Keywords           | lexicographic, encoding, pack, padding, integer |
 | # releases         | 0 |
-| # dependents       | 49 |
-| # downloads        | 10412 |
+| # dependents       | 51 |
+| # downloads        | 17181 |
 | # stars            | 0 |
 
 ## Links

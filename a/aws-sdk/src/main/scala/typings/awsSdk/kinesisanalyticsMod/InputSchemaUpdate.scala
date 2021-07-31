@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputSchemaUpdate extends StObject {
   
   /**
     * A list of RecordColumn objects. Each object describes the mapping of the streaming source element to the corresponding column in the in-application stream. 
     */
-  var RecordColumnUpdates: js.UndefOr[RecordColumns] = js.native
+  var RecordColumnUpdates: js.UndefOr[RecordColumns] = js.undefined
   
   /**
     * Specifies the encoding of the records in the streaming source. For example, UTF-8.
     */
-  var RecordEncodingUpdate: js.UndefOr[RecordEncoding] = js.native
+  var RecordEncodingUpdate: js.UndefOr[RecordEncoding] = js.undefined
   
   /**
     * Specifies the format of the records on the streaming source.
     */
-  var RecordFormatUpdate: js.UndefOr[RecordFormat] = js.native
+  var RecordFormatUpdate: js.UndefOr[RecordFormat] = js.undefined
 }
 object InputSchemaUpdate {
   

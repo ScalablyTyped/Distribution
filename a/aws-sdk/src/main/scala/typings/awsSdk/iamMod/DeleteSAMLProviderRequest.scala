@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSAMLProviderRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the SAML provider to delete.
     */
-  var SAMLProviderArn: arnType = js.native
+  var SAMLProviderArn: arnType
 }
 object DeleteSAMLProviderRequest {
   

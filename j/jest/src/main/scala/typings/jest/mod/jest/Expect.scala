@@ -4,7 +4,6 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -82,7 +81,7 @@ trait Expect extends StObject {
     */
   def extend(obj: ExpectExtendMap): Unit = js.native
   
-  def getState(): MatcherState with (Record[String, _]) = js.native
+  def getState(): MatcherState & (Record[String, js.Any]) = js.native
   
   /**
     * Verifies that at least one assertion is called during a test.

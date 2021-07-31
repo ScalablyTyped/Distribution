@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details for a network registration state change notification. */
-@js.native
 trait MobileBroadbandNetworkRegistrationStateChangeTriggerDetails extends StObject {
   
   /** Gets the collection of network registration state changes associated with this notification. */
-  var networkRegistrationStateChanges: IVectorView[MobileBroadbandNetworkRegistrationStateChange] = js.native
+  var networkRegistrationStateChanges: IVectorView[MobileBroadbandNetworkRegistrationStateChange]
 }
 object MobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
   

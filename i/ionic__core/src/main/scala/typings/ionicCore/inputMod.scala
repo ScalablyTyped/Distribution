@@ -29,14 +29,15 @@ import typings.std.HTMLInputElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputMod {
   
   @JSImport("@ionic/core/dist/types/components/input/input", "Input")
   @js.native
-  class Input () extends ComponentInterface {
+  class Input ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * If the value of the type attribute is `"file"`, then this attribute will indicate the types of files that the server accepts, otherwise it will be ignored. The value must be a comma-separated list of unique content type specifiers.

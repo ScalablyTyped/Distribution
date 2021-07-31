@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserCollection extends ClientObjectCollection[User] {
+trait UserCollection
+  extends StObject
+     with ClientObjectCollection[User] {
   
   def add(parameters: UserCreationInformation): User = js.native
   

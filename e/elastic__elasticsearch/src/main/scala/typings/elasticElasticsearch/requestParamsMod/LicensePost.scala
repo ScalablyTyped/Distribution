@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LicensePost[T] extends Generic {
+trait LicensePost[T]
+  extends StObject
+     with Generic {
   
-  var acknowledge: js.UndefOr[Boolean] = js.native
+  var acknowledge: js.UndefOr[Boolean] = js.undefined
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
 }
 object LicensePost {
   
@@ -21,7 +21,7 @@ object LicensePost {
   }
   
   @scala.inline
-  implicit class LicensePostMutableBuilder[Self <: LicensePost[_], T] (val x: Self with LicensePost[T]) extends AnyVal {
+  implicit class LicensePostMutableBuilder[Self <: LicensePost[?], T] (val x: Self & LicensePost[T]) extends AnyVal {
     
     @scala.inline
     def setAcknowledge(value: Boolean): Self = StObject.set(x, "acknowledge", value.asInstanceOf[js.Any])

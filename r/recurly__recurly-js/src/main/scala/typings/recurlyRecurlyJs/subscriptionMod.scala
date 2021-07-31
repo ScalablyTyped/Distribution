@@ -8,15 +8,13 @@ import typings.recurlyRecurlyJs.promiseMod.PricingPromise
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionMod {
   
-  @js.native
   trait AddonOptions extends StObject {
     
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
   }
   object AddonOptions {
     
@@ -37,10 +35,9 @@ object subscriptionMod {
     }
   }
   
-  @js.native
   trait PlanOptions extends StObject {
     
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
   }
   object PlanOptions {
     
@@ -65,8 +62,9 @@ object subscriptionMod {
   
   @js.native
   trait SubscriptionPricingInstance
-    extends PricingInstance[SubscriptionPricingPromise]
-       with SubscriptionPricingMethods {
+    extends StObject
+       with SubscriptionPricingMethods
+       with PricingInstance[SubscriptionPricingPromise] {
     
     def attach(element: String): Unit = js.native
     def attach(element: HTMLElement): Unit = js.native
@@ -97,12 +95,20 @@ object subscriptionMod {
   @js.native
   trait SubscriptionPricingPromise
     extends PricingPromise[SubscriptionPricingState, SubscriptionPricingMethods]
-       with SubscriptionPricingInstance
+       with SubscriptionPricingInstance {
+    
+    /* InferMemberOverrides */
+    override def `then`[B](
+      onFulfilled: js.Function1[SubscriptionPricingState, B | js.Thenable[B]],
+      onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]
+    ): js.Thenable[B] & js.Promise[B] = js.native
+    /* InferMemberOverrides */
+    override def `then`[B](onFulfilled: Unit, onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Thenable[B] & js.Promise[B] = js.native
+  }
   
-  @js.native
   trait SubscriptionPricingState extends StObject {
     
-    var price: Base = js.native
+    var price: Base
   }
   object SubscriptionPricingState {
     
@@ -120,14 +126,13 @@ object subscriptionMod {
     }
   }
   
-  @js.native
   trait SubscriptionPricingStateTax extends StObject {
     
-    var rate: String = js.native
+    var rate: String
     
-    var region: String = js.native
+    var region: String
     
-    var tax_type: String = js.native
+    var tax_type: String
   }
   object SubscriptionPricingStateTax {
     

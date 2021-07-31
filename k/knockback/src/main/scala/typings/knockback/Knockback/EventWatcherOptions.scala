@@ -2,19 +2,17 @@ package typings.knockback.Knockback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventWatcherOptions extends StObject {
   
-  def emitter(newEmitter: js.Any): Unit = js.native
+  def emitter(newEmitter: js.Any): Unit
   
-  var event_selector: String = js.native
+  var event_selector: String
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  def update(newValue: js.Any): Unit = js.native
+  def update(newValue: js.Any): Unit
 }
 object EventWatcherOptions {
   

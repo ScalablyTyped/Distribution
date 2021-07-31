@@ -2,16 +2,14 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocEventObject extends StObject {
   
   @JSName("InfoPath.DocEventObject_typekey")
-  var InfoPathDotDocEventObject_typekey: DocEventObject = js.native
+  var InfoPathDotDocEventObject_typekey: DocEventObject
   
-  val XDocument: _XDocument = js.native
+  val XDocument: _XDocument
 }
 object DocEventObject {
   

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object footerToolbarMod {
@@ -17,14 +16,13 @@ object footerToolbarMod {
   
   type FooterToolbar = Component[FooterToolbarProps, js.Any, js.Any]
   
-  @js.native
   trait FooterToolbarProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var extra: ReactNode = js.native
+    var extra: ReactNode
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object FooterToolbarProps {
     

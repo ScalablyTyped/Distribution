@@ -2,22 +2,20 @@ package typings.muiDatatables.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsToolbar> */
-@js.native
 trait PartialMUIDataTableTextLaDownloadCsv extends StObject {
   
-  var downloadCsv: js.UndefOr[String] = js.native
+  var downloadCsv: js.UndefOr[String] = js.undefined
   
-  var filterTable: js.UndefOr[String] = js.native
+  var filterTable: js.UndefOr[String] = js.undefined
   
-  var print: js.UndefOr[String] = js.native
+  var print: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
-  var viewColumns: js.UndefOr[String] = js.native
+  var viewColumns: js.UndefOr[String] = js.undefined
 }
 object PartialMUIDataTableTextLaDownloadCsv {
   

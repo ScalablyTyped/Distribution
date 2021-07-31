@@ -2,21 +2,19 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumerateRangesSpecifier extends StObject {
   
   /**
     * Whether neighboring ranges with the same protection should be coalesced. The default is false.
     */
-  var coalesce: Boolean = js.native
+  var coalesce: Boolean
   
   /**
     * Minimum protection required to be included in the result.
     */
-  var protection: PageProtection = js.native
+  var protection: PageProtection
 }
 object EnumerateRangesSpecifier {
   

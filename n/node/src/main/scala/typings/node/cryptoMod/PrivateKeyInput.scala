@@ -6,19 +6,17 @@ import typings.node.nodeStrings.pkcs8
 import typings.node.nodeStrings.sec1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrivateKeyInput extends StObject {
   
-  var format: js.UndefOr[KeyFormat] = js.native
+  var format: js.UndefOr[KeyFormat] = js.undefined
   
-  var key: String | Buffer = js.native
+  var key: String | Buffer
   
-  var passphrase: js.UndefOr[String | Buffer] = js.native
+  var passphrase: js.UndefOr[String | Buffer] = js.undefined
   
-  var `type`: js.UndefOr[pkcs1 | pkcs8 | sec1] = js.native
+  var `type`: js.UndefOr[pkcs1 | pkcs8 | sec1] = js.undefined
 }
 object PrivateKeyInput {
   

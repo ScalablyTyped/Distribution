@@ -2,13 +2,15 @@ package typings.sharepoint.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Available only in SharePoint Online*/
 object Verify {
   
-  @JSGlobal("Verify.ArgumentType")
+  @JSGlobal("Verify")
   @js.native
-  def ArgumentType(arg: String, expected: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ArgumentType(arg: String, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ArgumentType")(arg.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

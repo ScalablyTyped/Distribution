@@ -4,31 +4,29 @@ import typings.aureliaBinding.mod.Expression
 import typings.aureliaBinding.mod.Scope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LetBinding extends StObject {
   
   /**
     * Connects the binding to a scope.
     */
-  def bind(source: Scope): Unit = js.native
+  def bind(source: Scope): Unit
   
   /**
     * The expression to access/assign/connect the binding source property.
     */
-  var sourceExpression: Expression = js.native
+  var sourceExpression: Expression
   
   /**
     * Disconnects the binding from a scope.
     */
-  def unbind(): Unit = js.native
+  def unbind(): Unit
   
   /**
     * Assigns a value to the target.
     */
-  def updateTarget(value: js.Any): Unit = js.native
+  def updateTarget(value: js.Any): Unit
 }
 object LetBinding {
   

@@ -2,21 +2,19 @@ package typings.leafletGeosearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenStreetMapProviderOptionsPolygonOutput extends StObject {
   
-  var polygon_geojson: js.UndefOr[Double] = js.native
+  var polygon_geojson: js.UndefOr[Double] = js.undefined
   
-  var polygon_kml: js.UndefOr[Double] = js.native
+  var polygon_kml: js.UndefOr[Double] = js.undefined
   
-  var polygon_svg: js.UndefOr[Double] = js.native
+  var polygon_svg: js.UndefOr[Double] = js.undefined
   
-  var polygon_text: js.UndefOr[Double] = js.native
+  var polygon_text: js.UndefOr[Double] = js.undefined
   
-  var polygon_threshold: js.UndefOr[String] = js.native
+  var polygon_threshold: js.UndefOr[String] = js.undefined
 }
 object OpenStreetMapProviderOptionsPolygonOutput {
   

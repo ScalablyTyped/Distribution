@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDomainConfigurationResponse extends StObject {
   
   /**
     * The ARN of the domain configuration that was updated.
     */
-  var domainConfigurationArn: js.UndefOr[DomainConfigurationArn] = js.native
+  var domainConfigurationArn: js.UndefOr[DomainConfigurationArn] = js.undefined
   
   /**
     * The name of the domain configuration that was updated.
     */
-  var domainConfigurationName: js.UndefOr[ReservedDomainConfigurationName] = js.native
+  var domainConfigurationName: js.UndefOr[ReservedDomainConfigurationName] = js.undefined
 }
 object UpdateDomainConfigurationResponse {
   

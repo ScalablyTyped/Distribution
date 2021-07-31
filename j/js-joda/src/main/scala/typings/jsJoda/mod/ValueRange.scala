@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "ValueRange")
@@ -33,16 +32,17 @@ class ValueRange protected () extends StObject {
 }
 object ValueRange {
   
-  /* static member */
-  @JSImport("js-joda", "ValueRange.of")
+  @JSImport("js-joda", "ValueRange")
   @js.native
-  def of(minSmallest: Double, minLargest: Double, maxSmallest: Double, maxLargest: Double): ValueRange = js.native
+  val ^ : js.Any = js.native
+  
   /* static member */
-  @JSImport("js-joda", "ValueRange.of")
-  @js.native
-  def of(min: Double, maxSmallest: Double, maxLargest: Double): ValueRange = js.native
+  @scala.inline
+  def of(minSmallest: Double, minLargest: Double, maxSmallest: Double, maxLargest: Double): ValueRange = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(minSmallest.asInstanceOf[js.Any], minLargest.asInstanceOf[js.Any], maxSmallest.asInstanceOf[js.Any], maxLargest.asInstanceOf[js.Any])).asInstanceOf[ValueRange]
   /* static member */
-  @JSImport("js-joda", "ValueRange.of")
-  @js.native
-  def of(min: Double, max: Double): ValueRange = js.native
+  @scala.inline
+  def of(min: Double, maxSmallest: Double, maxLargest: Double): ValueRange = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(min.asInstanceOf[js.Any], maxSmallest.asInstanceOf[js.Any], maxLargest.asInstanceOf[js.Any])).asInstanceOf[ValueRange]
+  /* static member */
+  @scala.inline
+  def of(min: Double, max: Double): ValueRange = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValueRange]
 }

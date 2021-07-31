@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Tail")
@@ -36,9 +35,8 @@ object Tail {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Tail.create")
-  @js.native
-  def create(model: IModel): Tail = js.native
+  @scala.inline
+  def create(model: IModel): Tail = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Tail]
   
   /**
     * Creates and returns a new Tail instance in the SDK and on the server.
@@ -46,9 +44,8 @@ object Tail {
     * of the parent ListOperationAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Tail.createIn")
-  @js.native
-  def createIn(container: ListOperationAction): Tail = js.native
+  @scala.inline
+  def createIn(container: ListOperationAction): Tail = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Tail]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Tail.structureTypeName")

@@ -2,25 +2,23 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait standardSettings extends StObject {
   
-  var AM: js.Array[String] = js.native
+  var AM: js.Array[String]
   
-  var PM: js.Array[String] = js.native
+  var PM: js.Array[String]
   
-  var days: daySettings = js.native
+  var days: daySettings
   
-  var firstDay: Double = js.native
+  var firstDay: Double
   
-  var months: monthSettings = js.native
+  var months: monthSettings
   
-  var patterns: patternSettings = js.native
+  var patterns: patternSettings
   
-  var twoDigitYearMax: Double = js.native
+  var twoDigitYearMax: Double
 }
 object standardSettings {
   

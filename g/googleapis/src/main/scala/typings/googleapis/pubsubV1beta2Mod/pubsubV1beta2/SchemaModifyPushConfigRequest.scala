@@ -2,13 +2,11 @@ package typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the ModifyPushConfig method.
   */
-@js.native
 trait SchemaModifyPushConfigRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaModifyPushConfigRequest extends StObject {
     * given subscription and allow messages to be pulled and acknowledged -
     * effectively pausing the subscription if `Pull` is not called.
     */
-  var pushConfig: js.UndefOr[SchemaPushConfig] = js.native
+  var pushConfig: js.UndefOr[SchemaPushConfig] = js.undefined
 }
 object SchemaModifyPushConfigRequest {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SamplingStatisticSummary extends StObject {
   
   /**
     * The number of requests recorded with borrowed reservoir quota.
     */
-  var BorrowCount: js.UndefOr[Integer] = js.native
+  var BorrowCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of requests that matched the rule.
     */
-  var RequestCount: js.UndefOr[Integer] = js.native
+  var RequestCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The name of the sampling rule.
     */
-  var RuleName: js.UndefOr[String] = js.native
+  var RuleName: js.UndefOr[String] = js.undefined
   
   /**
     * The number of requests recorded.
     */
-  var SampledCount: js.UndefOr[Integer] = js.native
+  var SampledCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The start time of the reporting window.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.xrayMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.xrayMod.Timestamp] = js.undefined
 }
 object SamplingStatisticSummary {
   

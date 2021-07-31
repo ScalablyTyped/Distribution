@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneServiceVersion extends Object {
+trait SceneServiceVersion
+  extends StObject
+     with Object {
   
   /**
     * The major version of the scene layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SceneService.html#version)
     */
-  var major: Double = js.native
+  var major: Double
   
   /**
     * The minor version of the scene layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SceneService.html#version)
     */
-  var minor: Double = js.native
+  var minor: Double
   
   /**
     * The complete version string of the scene layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SceneService.html#version)
     */
-  var versionString: String = js.native
+  var versionString: String
 }
 object SceneServiceVersion {
   

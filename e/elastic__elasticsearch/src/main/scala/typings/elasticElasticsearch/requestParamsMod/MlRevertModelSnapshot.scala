@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlRevertModelSnapshot[T] extends Generic {
+trait MlRevertModelSnapshot[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var delete_intervening_results: js.UndefOr[Boolean] = js.native
+  var delete_intervening_results: js.UndefOr[Boolean] = js.undefined
   
-  var job_id: String = js.native
+  var job_id: String
   
-  var snapshot_id: String = js.native
+  var snapshot_id: String
 }
 object MlRevertModelSnapshot {
   
@@ -25,7 +25,7 @@ object MlRevertModelSnapshot {
   }
   
   @scala.inline
-  implicit class MlRevertModelSnapshotMutableBuilder[Self <: MlRevertModelSnapshot[_], T] (val x: Self with MlRevertModelSnapshot[T]) extends AnyVal {
+  implicit class MlRevertModelSnapshotMutableBuilder[Self <: MlRevertModelSnapshot[?], T] (val x: Self & MlRevertModelSnapshot[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

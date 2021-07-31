@@ -7,33 +7,31 @@ import typings.openlayers.mod.ProjectionLike
 import typings.openlayers.mod.olx.LogoOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CartoDBOptions extends StObject {
   
-  var account: String = js.native
+  var account: String
   
-  var attributions: js.UndefOr[AttributionLike] = js.native
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
   
-  var cacheSize: js.UndefOr[Double] = js.native
+  var cacheSize: js.UndefOr[Double] = js.undefined
   
-  var config: js.UndefOr[GlobalObject] = js.native
+  var config: js.UndefOr[GlobalObject] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var logo: js.UndefOr[String | LogoOptions] = js.native
+  var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var map: js.UndefOr[String] = js.native
+  var map: js.UndefOr[String] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var projection: ProjectionLike = js.native
+  var projection: ProjectionLike
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object CartoDBOptions {
   

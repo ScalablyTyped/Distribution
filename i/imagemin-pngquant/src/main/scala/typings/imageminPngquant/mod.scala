@@ -4,19 +4,19 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("imagemin-pngquant", JSImport.Default)
+  @JSImport("imagemin-pngquant", JSImport.Namespace)
   @js.native
-  def default(): Plugin = js.native
-  @JSImport("imagemin-pngquant", JSImport.Default)
-  @js.native
-  def default(options: Options): Plugin = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
+  @scala.inline
+  def default(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  
   trait Options extends StObject {
     
     /**
@@ -25,13 +25,13 @@ object mod {
     	Values: 0...1
     	@default 1
     	*/
-    var dithering: js.UndefOr[Double | Boolean] = js.native
+    var dithering: js.UndefOr[Double | Boolean] = js.undefined
     
     /**
     	Truncate number of least significant bits of color (per channel).
     	Use this when image will be output on low-depth displays (e.g. 16-bit RGB). pngquant will make almost-opaque pixels fully opaque and will reduce amount of semi-transparent colors.
     	*/
-    var posterize: js.UndefOr[Double] = js.native
+    var posterize: js.UndefOr[Double] = js.undefined
     
     /**
     	Instructs pngquant to use the least amount of colors required to meet or exceed the max quality. If conversion results in quality below the min quality the image won't be saved.
@@ -39,26 +39,26 @@ object mod {
     	Values: `[0...1, 0...1]`
     	@example [0.3, 0.5]
     	*/
-    var quality: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var quality: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
     /**
     	Speed `10` has 5% lower quality, but is about 8 times faster than the default. Speed `11` disables dithering and lowers compression level.
     	Values: `1` (brute-force) to `11` (fastest)
     	@default 3
     	*/
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
     /**
     	Remove optional metadata.
     	@default false
     	*/
-    var strip: js.UndefOr[Boolean] = js.native
+    var strip: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Print verbose status messages.
     	@default false
     	*/
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

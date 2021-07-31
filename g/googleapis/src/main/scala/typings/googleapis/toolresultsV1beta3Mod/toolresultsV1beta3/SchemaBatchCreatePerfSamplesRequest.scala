@@ -2,20 +2,18 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request must provide up to a maximum of 5000 samples to be created; a
   * larger sample size will cause an INVALID_ARGUMENT error
   */
-@js.native
 trait SchemaBatchCreatePerfSamplesRequest extends StObject {
   
   /**
     * The set of PerfSamples to create should not include existing timestamps
     */
-  var perfSamples: js.UndefOr[js.Array[SchemaPerfSample]] = js.native
+  var perfSamples: js.UndefOr[js.Array[SchemaPerfSample]] = js.undefined
 }
 object SchemaBatchCreatePerfSamplesRequest {
   

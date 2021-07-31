@@ -10,9 +10,9 @@ TypeScript typings for Recommender API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.recommender |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 92 |
+| # downloads        | 1109 |
 | # stars            | 0 |
 
 ## Links

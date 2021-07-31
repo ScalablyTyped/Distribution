@@ -2,25 +2,23 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaRepositoryCheckOffensiveCommentResponseMod {
   
-  @js.native
   trait MediaRepositoryCheckOffensiveCommentResponseRootObject extends StObject {
     
-    var bully_classifier: String = js.native
+    var bully_classifier: String
     
-    var hate_classifier: String = js.native
+    var hate_classifier: String
     
-    var is_offensive: Boolean = js.native
+    var is_offensive: Boolean
     
-    var sexual_classifier: String = js.native
+    var sexual_classifier: String
     
-    var spam_classifier: String = js.native
+    var spam_classifier: String
     
-    var status: String = js.native
+    var status: String
   }
   object MediaRepositoryCheckOffensiveCommentResponseRootObject {
     

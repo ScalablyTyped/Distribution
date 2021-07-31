@@ -2,7 +2,6 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -15,44 +14,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.reactNative.mod.ViewPropsIOS because Already inherited
 - typings.reactNative.mod.ViewPropsAndroid because Already inherited
 - typings.reactNative.mod.ViewProps because Already inherited
-- typings.reactNative.mod.RefreshControlPropsAndroid because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, collapsable, focusable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined colors, enabled, progressBackgroundColor, size, progressViewOffset */ @js.native
-trait RefreshControlProps extends RefreshControlPropsIOS {
+- typings.reactNative.mod.RefreshControlPropsAndroid because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, collapsable, focusable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined colors, enabled, progressBackgroundColor, size, progressViewOffset */ trait RefreshControlProps
+  extends StObject
+     with RefreshControlPropsIOS {
   
   /**
     * The colors (at least one) that will be used to draw the refresh indicator.
     */
-  var colors: js.UndefOr[js.Array[ColorValue]] = js.native
+  var colors: js.UndefOr[js.Array[ColorValue]] = js.undefined
   
   /**
     * Whether the pull to refresh functionality is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Called when the view starts refreshing.
     */
-  var onRefresh: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRefresh: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * The background color of the refresh indicator.
     */
-  var progressBackgroundColor: js.UndefOr[ColorValue] = js.native
+  var progressBackgroundColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Progress view top offset
     * @platform android
     */
-  var progressViewOffset: js.UndefOr[Double] = js.native
+  var progressViewOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the view should be indicating an active refresh.
     */
-  var refreshing: Boolean = js.native
+  var refreshing: Boolean
   
   /**
     * Size of the refresh indicator, see RefreshControl.SIZE.
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object RefreshControlProps {
   

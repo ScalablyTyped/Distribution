@@ -4,23 +4,21 @@ import typings.gatsbyTransformerRemark.anon.Absolute
 import typings.gatsbyTransformerRemark.gatsbyTransformerRemarkStrings.`gatsby-transformer-remark`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait RemarkConfig extends StObject {
     
-    var options: js.UndefOr[RemarkOptions] = js.native
+    var options: js.UndefOr[RemarkOptions] = js.undefined
     
-    var resolve: `gatsby-transformer-remark` = js.native
+    var resolve: `gatsby-transformer-remark`
   }
   object RemarkConfig {
     
     @scala.inline
-    def apply(resolve: `gatsby-transformer-remark`): RemarkConfig = {
-      val __obj = js.Dynamic.literal(resolve = resolve.asInstanceOf[js.Any])
+    def apply(): RemarkConfig = {
+      val __obj = js.Dynamic.literal(resolve = "gatsby-transformer-remark")
       __obj.asInstanceOf[RemarkConfig]
     }
     
@@ -38,34 +36,33 @@ object mod {
     }
   }
   
-  @js.native
   trait RemarkOptions extends StObject {
     
     /** CommonMark mode (default: true) */
-    var commonmark: js.UndefOr[Boolean] = js.native
+    var commonmark: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @see https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/#example-excerpts
       */
-    var excerpt_separator: js.UndefOr[String] = js.native
+    var excerpt_separator: js.UndefOr[String] = js.undefined
     
     /** Footnotes mode (default: true) */
-    var footnotes: js.UndefOr[Boolean] = js.native
+    var footnotes: js.UndefOr[Boolean] = js.undefined
     
     /** GitHub Flavored Markdown mode (default: true) */
-    var gfm: js.UndefOr[Boolean] = js.native
+    var gfm: js.UndefOr[Boolean] = js.undefined
     
     /** Pedantic mode (default: true) */
-    var pedantic: js.UndefOr[Boolean] = js.native
+    var pedantic: js.UndefOr[Boolean] = js.undefined
     
     /** Plugins configs */
-    var plugins: js.UndefOr[js.Array[_]] = js.native
+    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Pass default options to the plugin generating tableOfContents
       * @see https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/#configuring-the-tableofcontents
       */
-    var tableOfContents: js.UndefOr[Absolute] = js.native
+    var tableOfContents: js.UndefOr[Absolute] = js.undefined
   }
   object RemarkOptions {
     
@@ -109,7 +106,7 @@ object mod {
       def setPedanticUndefined: Self = StObject.set(x, "pedantic", js.undefined)
       
       @scala.inline
-      def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)

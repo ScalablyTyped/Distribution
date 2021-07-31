@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDashboard.DynamicLookUpValuesLoaded event.
   */
-@js.native
-trait ASPxClientDynamicLookUpValuesLoadedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientDynamicLookUpValuesLoadedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the dashboard parameter name whose values have been loaded.
     */
-  var ParameterName: String = js.native
+  var ParameterName: String
 }
 object ASPxClientDynamicLookUpValuesLoadedEventArgs {
   
